@@ -21,11 +21,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: c60405331ebab909e8056d4800bd43b208c92493
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60087149"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68193794"
 ---
 # <a name="uml-activity-diagrams-reference"></a>Diagramas de actividades UML: Referencia
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -58,7 +58,7 @@ Un *diagrama de actividades* muestra un proceso empresarial o un proceso de soft
   
 ||||  
 |-|-|-|  
-|**Shape**|**Element**|**Descripción y propiedades principales**|  
+|**Forma**|**Element**|**Descripción y propiedades principales**|  
 |1|**Acción**|Paso de la actividad en el que los usuarios o el software realizan alguna tarea.<br /><br /> La acción se puede iniciar cuando un token llega a todos sus flujos entrantes. Cuando termina, los tokens se envían en todos los flujos salientes.<br /><br /> -   **Cuerpo** -especifica la acción en detalle.<br />-   **Lenguaje** -el idioma de la expresión de cuerpo.<br />-   **Local Postconditions** -las restricciones que deben cumplirse cuando finaliza la ejecución. Objetivo alcanzado por la acción.<br />-   **Local Preconditions** -las restricciones que deben cumplirse antes de que comience la ejecución.|  
 |2|**Flujo de control**|Conector que muestra el flujo de control entre las acciones. Para interpretar el diagrama, imagine que un token fluye de una acción a la siguiente.<br /><br /> Para crear un flujo de control, use el **conector** herramienta.|  
 |3|**Nodo inicial**|Indica la primera acción o las primeras acciones de la actividad. Cuando se inicia la actividad, un token fluye desde el nodo inicial.|  
@@ -79,7 +79,7 @@ Un *diagrama de actividades* muestra un proceso empresarial o un proceso de soft
   
 ||||  
 |-|-|-|  
-|**Shape**|**Element**|**Descripción**|  
+|**Forma**|**Element**|**Descripción**|  
 |11|**Nodo de bifurcación**|Divide un único flujo en flujos simultáneos. Cada token entrante genera un token en cada conector saliente.|  
 |12|**Únase a nodo**|Combina flujos simultáneos en un único flujo. Cuando cada flujo entrante tiene un token en espera, se genera un token en la salida.|  
 |13|**Enviar acción de señal**|Acción que envía un mensaje o una señal a otra actividad o a un subproceso simultáneo de la misma actividad. El tipo y el contenido del mensaje están implícitos en el título de la acción o se especifican en los comentarios adicionales.<br /><br /> La acción puede enviar datos de la señal, que se pueden pasar a la acción de un flujo de objeto o terminal de entrada (16).|  
@@ -92,7 +92,7 @@ Un *diagrama de actividades* muestra un proceso empresarial o un proceso de soft
   
 ||||  
 |-|-|-|  
-|**Shape**|**Element**|**Descripción**|  
+|**Forma**|**Element**|**Descripción**|  
 |15|**Nodo de objeto**|Representa los datos que pasan por un flujo.<br /><br /> -   **Ordenación** : cómo se almacenan varios tokens.<br />-   **Selección** -invoca un proceso que se puede definir en otro diagrama, que filtra los datos.<br />-   **Límite superior** -0 indica que los datos deben pasar directamente a lo largo del flujo; \* indica que se pueden almacenar datos en el flujo.<br />-   **Tipo** -el tipo de objetos se almacenan y se transmiten.|  
 |16|**Entrada de Pin**|Representa los datos que puede recibir una acción cuando se ejecuta.<br /><br /> -   **Tipo** -el tipo de objetos que se transmiten.|  
 |17|**Terminal de salida**|Representa los datos que genera una acción cuando se ejecuta.<br /><br /> -   **Tipo** -el tipo de objetos que se transmiten.|  

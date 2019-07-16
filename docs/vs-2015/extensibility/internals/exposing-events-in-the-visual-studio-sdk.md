@@ -12,11 +12,11 @@ caps.latest.revision: 17
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 7056497c505bbb355287416e468e411b4e5a2a62
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58988297"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68196684"
 ---
 # <a name="exposing-events-in-the-visual-studio-sdk"></a>Exposición de eventos en Visual Studio SDK
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -54,7 +54,7 @@ ms.locfileid: "58988297"
   
  "AutomationProjectItemEvents"="devuelve el objeto AutomationProjectItemsEvents"  
   
-|Name|Tipo|Intervalo|Descripción|  
+|NOMBRE|Type|Intervalo|DESCRIPCIÓN|  
 |----------|----------|-----------|-----------------|  
 |Predeterminado (@)|REG_SZ|sin usar|Sin usar. Puede usar el campo de datos para la documentación.|  
 |AutomationProjectsEvents|REG_SZ|Nombre de su objeto de evento.|Solo el nombre de clave es relevante. Puede usar el campo de datos para la documentación.<br /><br /> Este ejemplo se incluye en el proyecto básico de ejemplo.|  
@@ -71,7 +71,7 @@ Modelo de automatización de eventos
   
  AutomationEvents.h y AutomationEvents.cpp contienen declaraciones e implementaciones de las clases en la tabla siguiente.  
   
-|Clase|Descripción|  
+|Clase|DESCRIPCIÓN|  
 |-----------|-----------------|  
 |`CAutomationEvents`|Implementa un objeto de raíz de evento recuperado de la `DTE.Events` objeto.|  
 |`CProjectsEventsContainer` y `CProjectItemsEventsContainer`|Implementar los objetos de origen de eventos que se activan los eventos correspondientes.|  

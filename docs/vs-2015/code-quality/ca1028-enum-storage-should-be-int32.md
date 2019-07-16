@@ -16,11 +16,11 @@ author: gewarren
 ms.author: gewarren
 manager: wpickett
 ms.openlocfilehash: e79eb7e0ed33184103cc772c13515959cf973ecc
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58996902"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68192808"
 ---
 # <a name="ca1028-enum-storage-should-be-int32"></a>CA1028: El almacenamiento de la enumeración debe ser de tipo Int32
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ ms.locfileid: "58996902"
 |Categoría|Microsoft.Design|
 |Cambio problemático|Problemático|
 
-## <a name="cause"></a>Motivo
+## <a name="cause"></a>Causa
  El tipo subyacente de una enumeración pública no es <xref:System.Int32?displayProperty=fullName>.
 
 ## <a name="rule-description"></a>Descripción de la regla
@@ -46,7 +46,7 @@ ms.locfileid: "58996902"
 
 ## <a name="example-of-a-violation"></a>Ejemplo de una infracción
 
-### <a name="description"></a>Descripción
+### <a name="description"></a>DESCRIPCIÓN
  El ejemplo siguiente muestra dos enumeraciones que no usan el tipo de datos subyacente recomendado.
 
 ### <a name="code"></a>Código
@@ -55,7 +55,7 @@ ms.locfileid: "58996902"
 
 ## <a name="example-of-how-to-fix"></a>Ejemplo de cómo corregir
 
-### <a name="description"></a>Descripción
+### <a name="description"></a>DESCRIPCIÓN
  En el ejemplo siguiente se corrige la infracción anterior cambiando el tipo de datos subyacente <xref:System.Int32>.
 
 ### <a name="code"></a>Código

@@ -12,11 +12,11 @@ caps.latest.revision: 20
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 3b5de061449844b87d60d7a700b1e1c22e1e1282
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58998472"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68195035"
 ---
 # <a name="ide-defined-commands-for-extending-project-systems"></a>Comandos definidos por el IDE para ampliar sistemas del proyecto
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -28,7 +28,7 @@ Cuando desea ampliar sistemas del proyecto, puede usar los comandos y proporcion
 ## <a name="command-menus"></a>Menús de comandos  
  La siguiente tabla muestra los menús de comandos que son ubicaciones útiles para colocar los comandos de alto nivel que invocan un extensor de proyecto.  
   
-|Menú de comandos|Descripción|  
+|Menú de comandos|DESCRIPCIÓN|  
 |------------------|-----------------|  
 |IDM_VS_MENU_PROJECT|El **proyecto** menú de nivel superior.|  
 |IDM_VS_TOOL_PROJWIN|El **el Explorador de soluciones** barra de herramientas.|  
@@ -36,7 +36,7 @@ Cuando desea ampliar sistemas del proyecto, puede usar los comandos y proporcion
 ## <a name="shortcut-menus"></a>Menús contextuales  
  La siguiente tabla muestra los menús contextuales que se aplican cuando se selecciona un solo nodo en el **el Explorador de soluciones**, o cuando hay varias selecciones homogéneas en el **el Explorador de soluciones**, que es cuando todos los nodos seleccionados son del mismo tipo.  
   
-|Menú contextual|Descripción|  
+|Menú contextual|DESCRIPCIÓN|  
 |-------------------|-----------------|  
 |<xref:Microsoft.VisualStudio.Shell.VsMenus.IDM_VS_CTXT_PROJNODE>|Se aplica cuando se selecciona el nodo del proyecto.|  
 |<xref:Microsoft.VisualStudio.Shell.VsMenus.IDM_VS_CTXT_ITEMNODE>|Se aplica cuando se selecciona un archivo.|  
@@ -47,7 +47,7 @@ Cuando desea ampliar sistemas del proyecto, puede usar los comandos y proporcion
   
  La siguiente tabla muestra los menús contextuales que se aplican cuando la selección en el **el Explorador de soluciones** abarca varias jerarquías  
   
-|Menú contextual|Descripción|  
+|Menú contextual|DESCRIPCIÓN|  
 |-------------------|-----------------|  
 |IDM_VS_CTXT_XPROJ_SLNPROJ|Se aplica cuando la selección actual contiene el nodo de la solución y los nodos raíz del proyecto.|  
 |IDM_VS_CTXT_XPROJ_SLNITEM|Se aplica cuando la selección actual contiene los elementos de proyecto y el nodo de solución.|  
@@ -58,7 +58,7 @@ Cuando desea ampliar sistemas del proyecto, puede usar los comandos y proporcion
 ## <a name="command-groups"></a>Grupos de comandos  
  La siguiente tabla muestra los grupos de comandos que puede usar al extender los proyectos y que puede tener acceso a través de la <xref:Microsoft.VisualStudio.Shell.VsMenus.IDM_VS_CTXT_PROJNODE> menú contextual.  
   
-|Grupo de comandos|Descripción|  
+|Grupo de comandos|DESCRIPCIÓN|  
 |-------------------|-----------------|  
 |IDG_VS_CTXT_PROJECT_BUILD|Comandos para crear, volver a generar e implementar el proyecto.|  
 |IDG_VS_CTXT_COMPILELINK|Comandos para compilar y vincular el proyecto.|  

@@ -12,22 +12,22 @@ author: gewarren
 ms.author: gewarren
 manager: wpickett
 ms.openlocfilehash: 57d3c21371cc824573e29657d0b41253e556f4c3
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60072258"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68201137"
 ---
 # <a name="working-in-the-code-analysis-rule-set-editor"></a>Trabajar en el editor de conjuntos de reglas de análisis de código
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 El editor de conjunto de reglas de análisis de código le permite especificar las reglas que se incluyen en un conjunto de reglas personalizado y especificar la acción. También puede especificar la acción que se realizará cuando el análisis de código detecta una infracción de la regla.  
   
-|Acción|Descripción|  
+|.|DESCRIPCIÓN|  
 |------------|-----------------|  
 |**Advertencia**|Genera una advertencia en el **lista de errores** ventana.|  
 |**Error**|Genera un error en la **lista de errores** ventana.|  
-|**Ninguno**|Deshabilita la regla.|  
+|**None**|Deshabilita la regla.|  
   
  El editor muestra las reglas en una estructura de árbol que agrupa las reglas por una regla de establece el campo especificado. Para agregar o quitar las reglas de un conjunto de reglas, realice uno o varios de los pasos siguientes:  
   
@@ -42,7 +42,7 @@ El editor de conjunto de reglas de análisis de código le permite especificar l
   
  En la tabla siguiente describe los controles de la barra de herramientas del editor de conjunto de reglas.  
   
-|ToolBar (control)|Descripción|  
+|ToolBar (control)|DESCRIPCIÓN|  
 |---------------------|-----------------|  
 |**Expandir todo**|Muestra las reglas en todos los grupos.|  
 |**Contraer todo**|Oculta las reglas en todos los grupos.|  
@@ -60,11 +60,11 @@ El editor de conjunto de reglas de análisis de código le permite especificar l
   
  En la tabla siguiente se describe los campos de un conjunto de reglas.  
   
-|Campo|Descripción|  
+|Campo|DESCRIPCIÓN|  
 |-----------|-----------------|  
 |**ID**|El identificador de la regla.|  
 |**Categoría**|Además de su pertenencia a conjuntos de reglas, reglas de análisis de código también se agrupan por categoría. Para obtener más información, consulte [Code Analysis for Managed Code Warnings](../code-quality/code-analysis-for-managed-code-warnings.md).|  
-|**Name**|El título de la regla.|  
+|**Nombre**|El título de la regla.|  
 |**Espacio de nombres**|El espacio de nombres de la regla.|  
 |**Tipo de destino**|Indica si la regla es para nativo, administrado o código base de datos.|  
 |**Acción**|La acción realizada cuando se infringe la regla en una ejecución de análisis de código.<br /><br /> **Advertencia** -genera una advertencia.<br /><br /> **Error** -genera un error.<br /><br /> **Ninguno** -deshabilita la regla.<br /><br /> Puede editar el campo de acción. El valor None es igual que desmarcar la casilla de verificación de la regla.|  

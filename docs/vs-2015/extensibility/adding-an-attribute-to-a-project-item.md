@@ -11,11 +11,11 @@ caps.latest.revision: 5
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 1740ac4dfdeb64d5b4b2b0aab264845de9c186dd
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60117621"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68184817"
 ---
 # <a name="adding-an-attribute-to-a-project-item"></a>Adición de un atributo a un elemento de proyecto
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

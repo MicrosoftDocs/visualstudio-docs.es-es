@@ -10,11 +10,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 11d8e3c4ad6c17b000dbf076928c4b1b2c584973
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60076268"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68187083"
 ---
 # <a name="writing-user-commands-and-actions"></a>Escribir acciones y comandos de usuario
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,7 +31,7 @@ Puede personalizar un lenguaje específico de dominio agregando comandos al diag
   
 - [Cómo: Interceptar un clic en una forma o decorador](../modeling/how-to-intercept-a-click-on-a-shape-or-decorator.md) : permitir que el usuario haga clic en a través de un elemento a otro elemento que hace referencia.  
   
-- [Cómo: Programar el comportamiento de copiar y pegar - redirección](../misc/how-to-program-copy-and-paste-behavior-redirect.md) : cómo usar ElementOperations.  
+- [Procedimientos: Programar el comportamiento de copiar y pegar - redirección](../misc/how-to-program-copy-and-paste-behavior-redirect.md) : cómo usar ElementOperations.  
   
 - [Cómo: Acceder a la selección actual y restringirla](../modeling/how-to-access-and-constrain-the-current-selection.md)  
   

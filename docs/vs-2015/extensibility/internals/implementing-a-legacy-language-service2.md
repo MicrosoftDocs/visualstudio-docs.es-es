@@ -11,22 +11,22 @@ caps.latest.revision: 27
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 1a5f419b3b4c55538e8aa46d5aefb3f7e21369be
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58987157"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68192707"
 ---
 # <a name="implementing-a-legacy-language-service"></a>Implementar un servicio de lenguaje heredado
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 Para implementar un servicio de lenguaje mediante managed package framework (MPF), debe derivar una clase de la <xref:Microsoft.VisualStudio.Package.LanguageService> clase e implementar los siguientes métodos y propiedades abstractos:  
   
-- El método <xref:Microsoft.VisualStudio.Package.LanguageService.GetLanguagePreferences%2A>   
+- El método <xref:Microsoft.VisualStudio.Package.LanguageService.GetLanguagePreferences%2A>  
   
-- El método <xref:Microsoft.VisualStudio.Package.LanguageService.GetScanner%2A>   
+- El método <xref:Microsoft.VisualStudio.Package.LanguageService.GetScanner%2A>  
   
-- El método <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A>   
+- El método <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A>  
   
 - La propiedad <xref:Microsoft.VisualStudio.Package.LanguageService.Name%2A>  
   
@@ -195,7 +195,7 @@ namespace TestLanguagePackage
   
 ### <a name="in-the-languageservice-class"></a>En la clase LanguageService  
   
-|Método|Clase devuelta|Descripción|  
+|Método|Clase devuelta|DESCRIPCIÓN|  
 |------------|--------------------|-----------------|  
 |<xref:Microsoft.VisualStudio.Package.LanguageService.CreateCodeWindowManager%2A>|<xref:Microsoft.VisualStudio.Package.CodeWindowManager>|Para admitir las adiciones personalizadas a la vista de texto.|  
 |<xref:Microsoft.VisualStudio.Package.LanguageService.CreateDocumentProperties%2A>|<xref:Microsoft.VisualStudio.Package.DocumentProperties>|Para admitir las propiedades personalizadas del documento.|  
@@ -212,7 +212,7 @@ namespace TestLanguagePackage
   
 ### <a name="in-the-source-class"></a>En la clase de origen  
   
-|Método|Clase devuelta|Descripción|  
+|Método|Clase devuelta|DESCRIPCIÓN|  
 |------------|--------------------|-----------------|  
 |<xref:Microsoft.VisualStudio.Package.Source.CreateCompletionSet%2A>|<xref:Microsoft.VisualStudio.Package.CompletionSet>|Para personalizar la presentación de las listas de finalización de IntelliSense (este método suelen no reemplazar).|  
 |<xref:Microsoft.VisualStudio.Package.Source.CreateErrorTaskItem%2A>|<xref:Microsoft.VisualStudio.Package.DocumentTask>|Para admitir marcadores en la lista de tareas de la lista de errores; en concreto, compatibilidad con las características más allá de abrir el archivo y saltar a la línea que produjo el error.|  
@@ -222,7 +222,7 @@ namespace TestLanguagePackage
   
 ### <a name="in-the-authoringscope-class"></a>En la clase AuthoringScope  
   
-|Método|Clase devuelta|Descripción|  
+|Método|Clase devuelta|DESCRIPCIÓN|  
 |------------|--------------------|-----------------|  
 |<xref:Microsoft.VisualStudio.Package.AuthoringScope.GetDeclarations%2A>|<xref:Microsoft.VisualStudio.Package.Declarations>|Proporciona una lista de declaraciones como miembros o tipos. Este método debe implementarse, pero puede devolver un valor null. Si este método devuelve un objeto válido, el objeto debe ser una instancia de la versión de la <xref:Microsoft.VisualStudio.Package.Declarations> clase.|  
 |<xref:Microsoft.VisualStudio.Package.AuthoringScope.GetMethods%2A>|<xref:Microsoft.VisualStudio.Package.Methods>|Proporciona una lista de firmas de método para un contexto determinado. Este método debe implementarse, pero puede devolver un valor null. Si este método devuelve un objeto válido, el objeto debe ser una instancia de la versión de la <xref:Microsoft.VisualStudio.Package.Methods> clase.|  

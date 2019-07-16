@@ -19,11 +19,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: bfcfadf13074c3fc1dc82fce51f449453ca03b11
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54763366"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68201910"
 ---
 # <a name="creating-project-and-item-templates"></a>Creación de plantillas de proyectos y elementos
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,7 +35,7 @@ Las plantillas de proyectos y elementos de [!INCLUDE[vsprvs](../includes/vsprvs-
   
  Estas plantillas proporcionan a los usuarios un punto de partida para empezar a crear proyectos o ampliar proyectos actuales. Las plantillas de proyecto proporcionan los archivos necesarios para un tipo de proyecto determinado, incluyen referencias de ensamblado estándar y establecen propiedades de proyecto y opciones de compilador predeterminadas. Las plantillas de elemento pueden abarcar desde un único archivo vacío con la extensión de nombre de archivo correcta hasta un elemento de varios archivos con, por ejemplo, archivos de código fuente con código auxiliar, archivos de información de diseñador y recursos incrustados.  
   
- Además de las plantillas instaladas en los cuadros de diálogo **Nuevo proyecto** y **Agregar nuevo elemento**, puede crear sus propias plantillas o descargar y usar plantillas creadas por la comunidad. Para obtener más información, vea [Cómo: Crear plantillas de proyectos](../ide/how-to-create-project-templates.md) y [Cómo: Crear plantillas de elementos](../ide/how-to-create-item-templates.md).  
+ Además de las plantillas instaladas en los cuadros de diálogo **Nuevo proyecto** y **Agregar nuevo elemento**, puede crear sus propias plantillas o descargar y usar plantillas creadas por la comunidad. Para obtener más información, consulte [Cómo Crear plantillas de proyecto](../ide/how-to-create-project-templates.md) y [Cómo: Crear plantillas de elementos](../ide/how-to-create-item-templates.md).  
   
 ## <a name="contents-of-a-template"></a>Contenido de una plantilla  
  Todas las plantillas de proyecto y elemento, ya estén instaladas en [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] o hayan sido creadas por usted, funcionan según los mismos principios y tienen un contenido similar. Todas las plantillas contienen los siguientes elementos:  
@@ -47,11 +47,11 @@ Las plantillas de proyectos y elementos de [!INCLUDE[vsprvs](../includes/vsprvs-
   Cuando estos archivos se comprimen en un archivo .zip y se colocan en la carpeta correcta, [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] los muestra de forma automática. Las plantillas de proyecto aparecen en la sección **Mis plantillas** de los cuadros de diálogo **Nuevo proyecto** y las plantillas de elemento aparecen en el cuadro de diálogo **Agregar nuevo elemento**. Para obtener más información sobre las carpetas de plantillas, vea [Cómo: Buscar y organizar plantillas](../ide/how-to-locate-and-organize-project-and-item-templates.md).  
   
 ## <a name="starter-kits"></a>Starter Kits  
- Starter Kits son plantillas mejoradas que se pueden compartir con otros integrantes de la comunidad. Un Starter Kit incluye ejemplos de código de compilación, documentación y otros recursos para ayudar a los usuarios a obtener información sobre las nuevas herramientas y técnicas de programación y, al mismo tiempo, crear aplicaciones útiles y prácticas. El contenido y los procedimientos básicos de los Starter Kits son idénticos a los de las plantillas. Para obtener más información, vea [Cómo: Crear Starter Kits](../ide/how-to-create-starter-kits.md).  
+ Starter Kits son plantillas mejoradas que se pueden compartir con otros integrantes de la comunidad. Un Starter Kit incluye ejemplos de código de compilación, documentación y otros recursos para ayudar a los usuarios a obtener información sobre las nuevas herramientas y técnicas de programación y, al mismo tiempo, crear aplicaciones útiles y prácticas. El contenido y los procedimientos básicos de los Starter Kits son idénticos a los de las plantillas. Para obtener más información, consulte [Cómo Crear Starter Kits](../ide/how-to-create-starter-kits.md).  
   
 ## <a name="see-also"></a>Vea también  
- [Cómo: Crear plantillas de proyecto](../ide/how-to-create-project-templates.md)   
+ [Procedimientos: Crear plantillas de proyecto](../ide/how-to-create-project-templates.md)   
  [Cómo: Crear plantillas de elementos](../ide/how-to-create-item-templates.md)   
  [Parámetros de plantilla](../ide/template-parameters.md)   
  [Personalizar plantillas](../ide/customizing-project-and-item-templates.md)   
- [Cómo: Crear Starter Kits](../ide/how-to-create-starter-kits.md)
+ [Cómo: crear Starter Kits](../ide/how-to-create-starter-kits.md)

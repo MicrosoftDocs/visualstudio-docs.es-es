@@ -11,11 +11,11 @@ caps.latest.revision: 15
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: b7cdaeb02f77d3775096f840a513f68e531b1299
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58988447"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68199372"
 ---
 # <a name="removal-of-source-control-information-from-proj-and-sln-files"></a>Eliminación de la información de control de código fuente de archivos .Proj y .Sln
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

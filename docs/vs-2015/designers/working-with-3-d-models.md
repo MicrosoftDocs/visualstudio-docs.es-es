@@ -10,11 +10,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: d5d52f517e40ff7f61db904b81104bf1940938d5
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54798457"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68187463"
 ---
 # <a name="working-with-3-d-models"></a>Trabajar con modelos 3D
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,7 +30,7 @@ Puede usar el Editor de modelos en [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 
   
 ## <a name="related-topics"></a>Temas relacionados  
   
-|Title|Descripción|  
+|Título|DESCRIPCIÓN|  
 |-----------|-----------------|  
 |[Editor de modelos](../designers/model-editor.md)|Describe cómo usar el Editor de modelos para trabajar con modelos 3D.|  
 |[Ejemplos del Editor de modelos](../designers/model-editor-examples.md)|Proporciona vínculos a temas que muestran cómo usar el Editor de modelos para realizar tareas comunes de modelado 3D.|

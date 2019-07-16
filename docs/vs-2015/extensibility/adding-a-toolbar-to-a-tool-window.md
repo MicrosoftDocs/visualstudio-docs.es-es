@@ -12,11 +12,11 @@ caps.latest.revision: 49
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 2c5df1ce1721c63b5c5cfc3c5b94929da088660f
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60077015"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68184880"
 ---
 # <a name="adding-a-toolbar-to-a-tool-window"></a>Adición de una barra de herramientas a una ventana de herramientas
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -113,7 +113,7 @@ Este tutorial muestra cómo agregar una barra de herramientas a una ventana de h
   
      Debería ver una barra de herramientas (parece que el icono predeterminado) en la parte superior izquierda de la ventana de herramientas, justo debajo del título.  
   
-3. En la barra de herramientas, haga clic en el icono para mostrar el mensaje **TWTestCommandPackage dentro de TWToolbar.TWTestCommand.MenuItemCallback()**.  
+3. En la barra de herramientas, haga clic en el icono para mostrar el mensaje **TWTestCommandPackage dentro de TWToolbar.TWTestCommand.MenuItemCallback()** .  
   
 ## <a name="see-also"></a>Vea también  
  [Adición de una barra de herramientas](../extensibility/adding-a-toolbar.md)
