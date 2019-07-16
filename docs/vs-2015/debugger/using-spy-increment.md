@@ -12,11 +12,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 3e12ebef8d6c06c6c5c3c227c5534488970d78ad
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58987961"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68183970"
 ---
 # <a name="using-spy"></a>Usar Spy++
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,16 +33,16 @@ Spy ++ (SPYXX. (EXE) es una utilidad basada en Win32 que le ofrece una vista gr�
  [Barra de herramientas de Spy++](../debugger/spy-increment-toolbar.md)  
  Describe los comandos disponibles en la barra de herramientas de Spy ++.  
   
- [Cómo: Presentación de vistas de Spy++](../debugger/how-to-display-spy-increment-views.md)  
+ [Procedimientos: Presentación de vistas de Spy++](../debugger/how-to-display-spy-increment-views.md)  
  Cómo mostrar la vista de Windows, vista de mensajes, vista procesos y vista de subprocesos.  
   
- [Cómo: Actualización de la vista](../debugger/how-to-refresh-the-view.md)  
+ [Procedimientos: Actualización de la vista](../debugger/how-to-refresh-the-view.md)  
  Explica el comando Refresh.  
   
- [Cómo: Cambio de fuentes](../debugger/how-to-change-fonts.md)  
+ [Procedimientos: Cambio de fuentes](../debugger/how-to-change-fonts.md)  
  Explica cómo cambiar la manera en que se muestra una vista.  
   
- [Cómo: Expansión y contracción de árboles de Spy++](../debugger/how-to-expand-and-collapse-spy-increment-trees.md)  
+ [Procedimientos: Expansión y contracción de árboles de Spy++](../debugger/how-to-expand-and-collapse-spy-increment-trees.md)  
  Explica cómo manipular una vista.  
   
 ## <a name="related-sections"></a>Secciones relacionadas  

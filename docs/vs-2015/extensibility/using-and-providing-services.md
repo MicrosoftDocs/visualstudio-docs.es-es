@@ -13,22 +13,22 @@ caps.latest.revision: 42
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 7f58e29797e9a7760aa0f48c68868199f51b3c92
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58988219"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68177439"
 ---
 # <a name="using-and-providing-services"></a>Uso y prestación de servicios
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Un servicio es un contrato entre dos VSPackages. Un VSPackage ofrece un conjunto específico de interfaces para otro paquete de VS consumir. Por ejemplo, [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ofrece el <xref:Microsoft.VisualStudio.Shell.Interop.SVsActivityLog> atenderla a cualquier VSPackage cargas. Este servicio proporciona la <xref:Microsoft.VisualStudio.Shell.Interop.IVsActivityLog> interfaz, que puede usarse para escribir en el registro de actividad. Para obtener más información, vea [Cómo: Usar el registro de actividad](../extensibility/how-to-use-the-activity-log.md).  
+Un servicio es un contrato entre dos VSPackages. Un VSPackage ofrece un conjunto específico de interfaces para otro paquete de VS consumir. Por ejemplo, [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ofrece el <xref:Microsoft.VisualStudio.Shell.Interop.SVsActivityLog> atenderla a cualquier VSPackage cargas. Este servicio proporciona la <xref:Microsoft.VisualStudio.Shell.Interop.IVsActivityLog> interfaz, que puede usarse para escribir en el registro de actividad. Para obtener más información, consulte [Cómo Usar el registro de actividad](../extensibility/how-to-use-the-activity-log.md).  
   
  Los paquetes VSPackage pueden ofrecer servicios de su cuenta desde la <xref:Microsoft.VisualStudio.Shell.Interop.IProfferService> interfaz...  
   
  Visual Studio ofrece servicios importantes, como las siguientes:  
   
-|Servicio IDE|Descripción|  
+|Servicio IDE|DESCRIPCIÓN|  
 |-----------------|-----------------|  
 |<xref:Microsoft.VisualStudio.Shell.Interop.SVsShell>|Proporciona acceso al IDE de servicios de tratar con funcionalidad básica, VSPackages y el registro.|  
 |<xref:Microsoft.VisualStudio.Shell.Interop.SVsUIShell>|Proporciona básica basada en ventanas y funcionalidad relacionada con la interfaz de usuario en el IDE, como la capacidad para crear herramientas y ventanas de documento.|  
@@ -41,10 +41,10 @@ Un servicio es un contrato entre dos VSPackages. Un VSPackage ofrece un conjunto
  [Cómo: Obtener un servicio](../extensibility/how-to-get-a-service.md)  
  Se describe cómo solicitar (consumir) un servicio.  
   
- [Cómo: Proporcionar un servicio](../extensibility/how-to-provide-a-service.md)  
+ [Procedimientos: Prestar un servicio](../extensibility/how-to-provide-a-service.md)  
  Describe cómo proporcionar un servicio.  
   
- [Cómo: Proporciona un servicio asincrónico de Visual Studio](../extensibility/how-to-provide-an-asynchronous-visual-studio-service.md)  
+ [Cómo: Prestar un servicio asincrónico de Visual Studio](../extensibility/how-to-provide-an-asynchronous-visual-studio-service.md)  
  Describe cómo proporcionar un servicio asincrónico.  
   
  [Cómo: Solucionar problemas de servicios](../extensibility/how-to-troubleshoot-services.md)  

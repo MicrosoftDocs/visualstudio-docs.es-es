@@ -16,11 +16,11 @@ author: gewarren
 ms.author: gewarren
 manager: wpickett
 ms.openlocfilehash: 42c6f0d333d1f7ee3f657b9c57c4154e9f824128
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59659779"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68201679"
 ---
 # <a name="ca1822-mark-members-as-static"></a>CA1822: Marcar miembros como estáticos
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,7 +34,7 @@ Para obtener la documentación más reciente de Visual Studio, consulte [CA1822:
 |Categoría|Microsoft.Performance|  
 |Cambio problemático|No problemático: si el miembro no es visible fuera del ensamblado, independientemente del cambio que realice.<br /><br /> No problemático: si simplemente cambia el miembro a un miembro de instancia con el `this` palabra clave.<br /><br /> Problemático: si cambia al miembro de un miembro de instancia a un miembro estático y está visible fuera del ensamblado.|  
   
-## <a name="cause"></a>Motivo  
+## <a name="cause"></a>Causa  
  Un miembro que no tiene acceso a datos de instancia no está marcado como estático (compartido en [!INCLUDE[vbprvb](../includes/vbprvb-md.md)]).  
   
 ## <a name="rule-description"></a>Descripción de la regla  

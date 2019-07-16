@@ -9,11 +9,11 @@ caps.latest.revision: 8
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 5f3ed2d3f8bc52b21f6a87ac7d6da00f665f6b28
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60096535"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68181347"
 ---
 # <a name="ux-essentials-for-visual-studio"></a>Conceptos básicos de UX para Visual Studio
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

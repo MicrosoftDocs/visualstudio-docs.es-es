@@ -17,11 +17,11 @@ author: gewarren
 ms.author: gewarren
 manager: wpickett
 ms.openlocfilehash: 13ea687ea9ca68693af7e2aa5c22881a36207d2e
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58994884"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68200446"
 ---
 # <a name="ca1062-validate-arguments-of-public-methods"></a>CA1062: Validar argumentos de métodos públicos
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ ms.locfileid: "58994884"
 |Categoría|Microsoft.Design|
 |Cambio problemático|No trascendental|
 
-## <a name="cause"></a>Motivo
+## <a name="cause"></a>Causa
  Un método visible externamente desreferencia uno de sus argumentos de referencia sin comprobar si dicho argumento es `null` (`Nothing` en Visual Basic).
 
 ## <a name="rule-description"></a>Descripción de la regla

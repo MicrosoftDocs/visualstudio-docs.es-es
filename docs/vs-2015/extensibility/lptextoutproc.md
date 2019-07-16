@@ -17,11 +17,11 @@ caps.latest.revision: 22
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: f14942ffd59ce2c6eacf7da2d0d1ab252d58e2cb
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60100513"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68194445"
 ---
 # <a name="lptextoutproc"></a>LPTEXTOUTPROC
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -47,7 +47,7 @@ typedef LONG (*LPTEXTOUTPROC) (
  mesg_type  
  El tipo de mensaje. En la tabla siguiente se enumera los valores admitidos para este parámetro.  
   
-|Valor|Descripción|  
+|Valor|DESCRIPCIÓN|  
 |-----------|-----------------|  
 |`SCC_MSG_INFO, SCC_MSG_WARNING, SCC_MSG_ERROR`|Se considera el mensaje de Error, advertencia o información.|  
 |`SCC_MSG_STATUS`|El mensaje muestra el estado y se puede mostrar en la barra de estado.|  
@@ -61,7 +61,7 @@ typedef LONG (*LPTEXTOUTPROC) (
   
 ## <a name="return-value"></a>Valor devuelto  
   
-|Valor|Descripción|  
+|Valor|DESCRIPCIÓN|  
 |-----------|-----------------|  
 |SCC_MSG_RTN_OK|Se muestra la cadena o la operación se completó correctamente.|  
 |SCC_MSG_RTN_CANCEL|El usuario desea cancelar la operación.|  

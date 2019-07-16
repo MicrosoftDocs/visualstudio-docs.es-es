@@ -1,5 +1,5 @@
 ---
-title: IEnumDebugPropertyInfo2 | Microsoft Docs
+title: IEnumDebugPropertyInfo2 | Documentos de Microsoft
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,11 +13,11 @@ caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: ee305083957f6d2f2ada09aec1747497fcf6db68
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58987141"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68147822"
 ---
 # <a name="ienumdebugpropertyinfo2"></a>IEnumDebugPropertyInfo2
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -39,7 +39,7 @@ IEnumDebugPropertyInfo2 : IUnknown
 ## <a name="methods-in-vtable-order"></a>Métodos en orden de Vtable  
  La tabla siguiente muestran los métodos de `IEnumDebugPropertyInfo2`.  
   
-|Método|Descripción|  
+|Método|DESCRIPCIÓN|  
 |------------|-----------------|  
 |[Siguiente](../../../extensibility/debugger/reference/ienumdebugpropertyinfo2-next.md)|Recupera un número especificado de [DEBUG_PROPERTY_INFO](../../../extensibility/debugger/reference/debug-property-info.md) estructuras en una secuencia de enumeración.|  
 |[Skip](../../../extensibility/debugger/reference/ienumdebugpropertyinfo2-skip.md)|Omite un número especificado de [DEBUG_PROPERTY_INFO](../../../extensibility/debugger/reference/debug-property-info.md) estructuras en una secuencia de enumeración.|  

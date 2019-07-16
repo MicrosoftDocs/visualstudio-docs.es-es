@@ -14,11 +14,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: bd60c855bacaf62beec47c9f977d0ab220ce7ca6
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54791947"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68145544"
 ---
 # <a name="tier-interactions-view"></a>Interacciones de capas (Vista)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,9 +39,9 @@ La generación de perfiles de interacción de capas proporciona información adi
   
 ## <a name="master-pane"></a>Panel principal  
   
-|Columna|Descripción|  
+|Columna|DESCRIPCIÓN|  
 |------------|-----------------|  
-|**Name**|-   Para una fila de nivel superior, el nombre de la página web o del proceso del que se generaron perfiles.<br />-   Para una fila de conexión de base de datos, el nombre del servidor que hospeda la base de datos.|  
+|**Nombre**|-   Para una fila de nivel superior, el nombre de la página web o del proceso del que se generaron perfiles.<br />-   Para una fila de conexión de base de datos, el nombre del servidor que hospeda la base de datos.|  
 |**Base de datos**|El nombre de la base de datos (solo filas de conexión de base de datos).|  
 |**Recuento**|El número total de solicitudes generadas por el proceso, la página web o la conexión de base de datos.|  
 |**Tiempo total transcurrido**|El tiempo total dedicado a ejecutar cualquier solicitud del proceso, la página web o la conexión de base de datos.|  
@@ -51,7 +51,7 @@ La generación de perfiles de interacción de capas proporciona información adi
   
 ## <a name="database-connection-details-pane"></a>Panel Detalles de conexión de la base de datos  
   
-|Columna|Descripción|  
+|Columna|DESCRIPCIÓN|  
 |------------|-----------------|  
 |**Texto de comando**|La consulta SQL de la solicitud.|  
 |**Número de consultas**|El número de veces que se ejecutó la consulta.|  

@@ -14,11 +14,11 @@ author: gewarren
 ms.author: gewarren
 manager: wpickett
 ms.openlocfilehash: 26a9d65ed21eed00820a7968617c610e4b11c153
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60055683"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68201359"
 ---
 # <a name="how-to-customize-the-code-analysis-dictionary"></a>Procedimiento Personalizar el diccionario de análisis de código
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -62,9 +62,9 @@ Análisis de código usa un diccionario integrado para comprobar los identificad
 ## <a name="custom-dictionary-elements"></a>Elementos del diccionario personalizado  
  Puede modificar el comportamiento del diccionario de análisis de código mediante la adición de términos como texto interno de los siguientes elementos en el diccionario personalizado:  
   
-- [Dictionary/Words/Recognized/Word](../code-quality/how-to-customize-the-code-analysis-dictionary.md#BKMK_DictionaryWordsRecognizedWord)  
+- [/ Palabras/reconoce/palabra del diccionario](../code-quality/how-to-customize-the-code-analysis-dictionary.md#BKMK_DictionaryWordsRecognizedWord)  
   
-- [Dictionary/Words/Unrecognized/Word](../code-quality/how-to-customize-the-code-analysis-dictionary.md#BKMK_DictionaryWordsUnrecognizedWord)  
+- [/ Palabras/no reconocida/palabra del diccionario](../code-quality/how-to-customize-the-code-analysis-dictionary.md#BKMK_DictionaryWordsUnrecognizedWord)  
   
 - [Diccionario/palabras/en desuso o término [@PreferredAlternate]](../code-quality/how-to-customize-the-code-analysis-dictionary.md#BKMK_DictionaryWordsDeprecatedTermPreferredAlternate)  
   
@@ -74,7 +74,7 @@ Análisis de código usa un diccionario integrado para comprobar los identificad
   
 - [Dictionary/Acronyms/CasingExceptions/Acronym](../code-quality/how-to-customize-the-code-analysis-dictionary.md#BKMK_DictionaryAcronymsCasingExceptionsAcronym)  
   
-### <a name="BKMK_DictionaryWordsRecognizedWord"></a> Dictionary/Words/Recognized/Word  
+### <a name="BKMK_DictionaryWordsRecognizedWord"></a> / Palabras/reconoce/palabra del diccionario  
  Para incluir un término en la lista de términos que identifica el análisis de código escrito correctamente, agregue el término como el texto interno de un elemento de la palabra/diccionario/palabras/reconoce. Términos de los elementos de la palabra/diccionario/palabras/reconoce no distinguen mayúsculas de minúsculas.  
   
  **Ejemplo**  
@@ -214,7 +214,7 @@ Análisis de código usa un diccionario integrado para comprobar los identificad
   
 - [CA1704: Los identificadores deberían tener la ortografía correcta](../code-quality/ca1704-identifiers-should-be-spelled-correctly.md)  
   
-### <a name="BKMK_DictionaryWordsDiscreteExceptionsTerm"></a> Dictionary/Words/DiscreteExceptions/Term  
+### <a name="BKMK_DictionaryWordsDiscreteExceptionsTerm"></a> Término/diccionario/palabras/DiscreteExceptions  
  Para excluir un término en la lista de términos que análisis de código se identifica como una sola, discreto word cuando se activa el término por las reglas de mayúsculas y minúsculas de las palabras compuestas, agregar el término como texto interno de un elemento de diccionario, palabras, DiscreteExceptions/Term. El término en el elemento del diccionario, palabras, DiscreteExceptions/Term no distingue mayúsculas de minúsculas.  
   
  **Ejemplo**  
@@ -239,7 +239,7 @@ Análisis de código usa un diccionario integrado para comprobar los identificad
   
 - [CA1702: En las palabras compuestas se deberían escribirse correctamente](../code-quality/ca1702-compound-words-should-be-cased-correctly.md)  
   
-### <a name="BKMK_DictionaryAcronymsCasingExceptionsAcronym"></a> Dictionary/Acronyms/CasingExceptions/Acronym  
+### <a name="BKMK_DictionaryAcronymsCasingExceptionsAcronym"></a> Acrónimo/diccionario/acrónimos/CasingExceptions  
  Para incluir un acrónimo en la lista de términos que identifica el análisis de código como está escrita correctamente y para indicar cómo las reglas de la sigla cuando se activa el término por el uso de mayúsculas y minúsculas de las palabras compuestas, agregar el término como el texto interno de un diccionario, acrónimos/CasingExceptions / Elemento Acronym. El acrónimo en el elemento Acronym/diccionario/acrónimos/CasingExceptions distingue mayúsculas de minúsculas.  
   
  **Ejemplo**  

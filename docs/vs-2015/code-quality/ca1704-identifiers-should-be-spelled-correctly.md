@@ -16,11 +16,11 @@ author: gewarren
 ms.author: gewarren
 manager: wpickett
 ms.openlocfilehash: d77e5ffcb7cc6688ea07cd99760e79e8f92aeb43
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58996415"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68189234"
 ---
 # <a name="ca1704-identifiers-should-be-spelled-correctly"></a>CA1704: La ortografía de los identificadores debe ser correcta
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ ms.locfileid: "58996415"
 |Categoría|Microsoft.Naming|
 |Cambio problemático|Problemático|
 
-## <a name="cause"></a>Motivo
+## <a name="cause"></a>Causa
  El nombre de un identificador contiene una o varias palabras que la biblioteca de correctores ortográficos de Microsoft no reconoce. Esta regla no comprueba los constructores ni los miembros con nombres especiales como obtener y establecer los descriptores de acceso de propiedad.
 
 ## <a name="rule-description"></a>Descripción de la regla

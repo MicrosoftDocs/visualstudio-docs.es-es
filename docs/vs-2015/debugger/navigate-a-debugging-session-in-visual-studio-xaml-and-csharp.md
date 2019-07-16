@@ -15,11 +15,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: b5b8d24f01f7882e8c760918119a03a1c489c727
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60059882"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68156896"
 ---
 # <a name="navigate-a-debugging-session-in-visual-studio-xaml-and-c"></a>Navegar por una sesión de depuración en Visual Studio (Xaml y C#)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -82,7 +82,7 @@ En este inicio rápido se muestra cómo navegar por las sesiones de depuración 
 
  **Depure el método paso a paso.** En el **depurar** menú, elija **paso a paso** (teclado: F11).
 
- ![Current line](../debugger/media/dbg-basics-currentline.png "DBG_Basics_CurrentLine")
+ ![Línea actual](../debugger/media/dbg-basics-currentline.png "DBG_Basics_CurrentLine")
 
  Tenga en cuenta que el depurador se desplaza a la siguiente línea, que es una llamada al método Example1. Seleccione Paso a paso por instrucciones de nuevo. El depurador se mueve al punto de entrada del método Example1. Esto indica que el método se ha cargado en la pila de llamadas y se ha asignado la memoria para las variables locales.
 
@@ -100,7 +100,7 @@ En este inicio rápido se muestra cómo navegar por las sesiones de depuración 
 
   Mantenga el ratón sobre la variable `a`. Observe su nombre, valor y tipo de datos. Mantenga el ratón sobre la variable `methodTrack`. Apunte de nuevo el nombre, el valor y el tipo de datos.
 
-  **También ahora, observa su nombre, valor y tipo de datos.** En el cuadro de diálogo **Depurar** , diríjase a **Ventanas**y seleccione **Variables locales**. (Teclado: Alt+4).
+  **También ahora, observa su nombre, valor y tipo de datos.** En el cuadro de diálogo **Depurar** , diríjase a **Ventanas**y seleccione **Variables locales**. (Teclado: ALT+ 4).
 
   ![Ventana variables locales](../debugger/media/dbg-basics-localswindow.png "DBG_Basics_LocalsWindow")
 

@@ -13,11 +13,11 @@ caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 7fa9d6a440f0e7ad1f4c55463b025965621a21e5
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58989315"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68157413"
 ---
 # <a name="idebugproperty3getstringcharlength"></a>IDebugProperty3::GetStringCharLength
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -40,7 +40,7 @@ int GetStringCharLength(
   
 #### <a name="parameters"></a>Parámetros  
   
-|Parámetro|Descripción|  
+|Parámetro|DESCRIPCIÓN|  
 |---------------|-----------------|  
 |`pLen`|[out] Devuelve el número de caracteres de cadena de la propiedad.|  
   

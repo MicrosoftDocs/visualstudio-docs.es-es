@@ -13,11 +13,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 917c88056709cfbeb89ce3f19d9c8da9866feb4e
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60054617"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68182861"
 ---
 # <a name="extend-uml-models-and-diagrams"></a>Ampliar modelos y diagramas UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -76,7 +76,7 @@ En este tema se resumen los distintos mecanismos mediante los que se pueden ampl
   
  Los desarrolladores de Fabrikam crean código que establece automáticamente el color de un elemento en función de su estereotipo. De este modo, resulta sencillo para los usuarios distinguir los distintos roles que juegan los elementos en los modelos.  
   
- Para obtener más información, vea [Cómo: Responder a los cambios en un modelo UML](../misc/how-to-respond-to-changes-in-a-uml-model.md).  
+ Para obtener más información, consulte [Cómo Responder a los cambios en un modelo UML](../misc/how-to-respond-to-changes-in-a-uml-model.md).  
   
 ## <a name="model-bus"></a>Model Bus  
  Model Bus permite obtener acceso a un diagrama o modelo desde otro diagrama o extensión de [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] . Entre otras cosas, esto le permite compartir información entre varios modelos, de modo que varias personas pueden trabajar al mismo tiempo en el modelo combinado.  

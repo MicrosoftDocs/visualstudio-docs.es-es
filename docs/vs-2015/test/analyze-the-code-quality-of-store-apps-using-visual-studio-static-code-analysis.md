@@ -10,11 +10,11 @@ author: erickson-doug
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 19cb42eeac68a4a6ec112c8edade9b67e7f39116
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54783511"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68151609"
 ---
 # <a name="analyze-the-code-quality-of-store-apps-using-visual-studio-static-code-analysis"></a>Analizar la calidad del código de las aplicaciones de la Tienda utilizando análisis de código estático de Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

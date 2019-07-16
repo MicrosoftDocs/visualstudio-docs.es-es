@@ -13,11 +13,11 @@ caps.latest.revision: 25
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 209d8066d232c63364a045aee6b8dd2153033666
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58987535"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68186450"
 ---
 # <a name="templatedata-element-visual-studio-templates"></a>TemplateData (Elemento, Plantillas de Visual Studio)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,7 +25,7 @@ ms.locfileid: "58987535"
 Clasifica la plantilla y define cómo se muestra en el cuadro de diálogo **Nuevo proyecto** o **Agregar nuevo elemento** .  
   
  \<VSTemplate>  
- \<TemplateData>  
+ \<TemplateData >  
   
 ## <a name="syntax"></a>Sintaxis  
   
@@ -47,9 +47,9 @@ Clasifica la plantilla y define cómo se muestra en el cuadro de diálogo **Nuev
   
 ### <a name="child-elements"></a>Elementos secundarios  
   
-|Elemento|Descripción|  
+|Elemento|DESCRIPCIÓN|  
 |-------------|-----------------|  
-|[Name](../extensibility/name-element-visual-studio-templates.md)|Elemento necesario.<br /><br /> Especifica el nombre de la plantilla tal como aparece en el el **nuevo proyecto** o **Agregar nuevo elemento** cuadro de diálogo.|  
+|[Nombre](../extensibility/name-element-visual-studio-templates.md)|Elemento necesario.<br /><br /> Especifica el nombre de la plantilla tal como aparece en el el **nuevo proyecto** o **Agregar nuevo elemento** cuadro de diálogo.|  
 |[Descripción](../extensibility/description-element-visual-studio-templates.md)|Elemento necesario.<br /><br /> Especifica la descripción de la plantilla tal como aparece en el el **nuevo proyecto** o **Agregar nuevo elemento** cuadro de diálogo.|  
 |[Iconos](../extensibility/icon-element-visual-studio-templates.md)|Elemento necesario.<br /><br /> Especifica la ruta de acceso y el nombre de archivo del archivo de imagen que actúa como el icono, que aparece en cualquiera de los **nuevo proyecto** o el **Agregar nuevo elemento** cuadro de diálogo, para la plantilla.|  
 |[ProjectType](../extensibility/projecttype-element-visual-studio-templates.md)|Elemento necesario.<br /><br /> Clasifica la plantilla de proyecto para que aparezca en el grupo especificado en el **nuevo proyecto** cuadro de diálogo.|  
@@ -74,7 +74,7 @@ Clasifica la plantilla y define cómo se muestra en el cuadro de diálogo **Nuev
   
 ### <a name="parent-elements"></a>Elementos primarios  
   
-|Elemento|Descripción|  
+|Elemento|DESCRIPCIÓN|  
 |-------------|-----------------|  
 |[VSTemplate](../extensibility/vstemplate-element-visual-studio-templates.md)|Elemento necesario.<br /><br /> Contiene todos los metadatos de la plantilla de proyecto, la plantilla de elemento o el starter kit de.|  
   

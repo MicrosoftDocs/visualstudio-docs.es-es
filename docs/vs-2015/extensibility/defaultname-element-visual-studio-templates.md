@@ -13,11 +13,11 @@ caps.latest.revision: 16
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 0bc3a18c47b78a312f3bca3762cc4ff3d658a70e
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58999759"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68185286"
 ---
 # <a name="defaultname-element-visual-studio-templates"></a>DefaultName (Elemento, Plantillas de Visual Studio)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,8 +25,8 @@ ms.locfileid: "58999759"
 Especifica el nombre que el sistema del proyecto de Visual Studio generará para el proyecto o elemento cuando se crea.  
   
  \<VSTemplate>  
- \<TemplateData>  
- \<DefaultName>  
+ \<TemplateData >  
+ \<DefaultName >  
   
 ## <a name="syntax"></a>Sintaxis  
   
@@ -47,7 +47,7 @@ Especifica el nombre que el sistema del proyecto de Visual Studio generará para
   
 ### <a name="parent-elements"></a>Elementos primarios  
   
-|Elemento|Descripción|  
+|Elemento|DESCRIPCIÓN|  
 |-------------|-----------------|  
 |[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Elemento necesario.<br /><br /> Clasifica la plantilla y define cómo se muestra en el cuadro de diálogo **Nuevo proyecto** o **Agregar nuevo elemento** .|  
   

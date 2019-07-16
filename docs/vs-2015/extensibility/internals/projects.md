@@ -15,11 +15,11 @@ caps.latest.revision: 44
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: a251af12ccf4be5f0f48f789ac59fedaed3299b0
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58996708"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68183949"
 ---
 # <a name="projects"></a>Proyectos
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -36,7 +36,7 @@ En Visual Studio, los proyectos son contenedores que los desarrolladores usan pa
  [Proyectos web](../../extensibility/internals/web-projects.md)  
  Explica el proyecto Web, que a su vez crear aplicaciones Web.  
   
- [Nueva generación de proyectos: Internamente, la primera parte](../../extensibility/internals/new-project-generation-under-the-hood-part-one.md) y [nueva generación de proyectos: Internamente, la segunda parte](../../extensibility/internals/new-project-generation-under-the-hood-part-two.md)  
+ [Generación de nuevos proyectos: Internamente, la primera parte](../../extensibility/internals/new-project-generation-under-the-hood-part-one.md) y [nueva generación de proyectos: Aspectos técnicos (parte 2)](../../extensibility/internals/new-project-generation-under-the-hood-part-two.md)  
  Explica lo que realmente sucede cuando se crea un nuevo proyecto.  
   
  [Muestras de VSSDK](../../misc/vssdk-samples.md)  

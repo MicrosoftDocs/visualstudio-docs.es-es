@@ -17,11 +17,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: a3c24d8aa984ddc947d3c532020974a196192940
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60082391"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68179064"
 ---
 # <a name="net-memory-allocations-view"></a>Vista de asignaciones de memoria de .NET
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,9 +41,9 @@ La vista de asignaciones enumera los tipos que se han creado durante la generaci
   
 - Para mostrar la ruta de acceso más activa, haga clic con el botón derecho en el tipo o función y, a continuación, haga clic en **Expandir ruta de acceso activa**.  
   
-|Columna|Descripción|  
+|Columna|DESCRIPCIÓN|  
 |------------|-----------------|  
-|**Name**|Nombre del tipo o función asignado.|  
+|**Nombre**|Nombre del tipo o función asignado.|  
 |**Identificador del proceso**|Identificador de proceso (PID) de la ejecución de generación de perfiles.|  
 |**Nombre de proceso**|Nombre del proceso.|  
 |**Nombre del módulo**|Nombre del módulo que contiene el tipo o la función.|  

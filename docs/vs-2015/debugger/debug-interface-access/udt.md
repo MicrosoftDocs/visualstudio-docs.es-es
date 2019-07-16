@@ -18,21 +18,21 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 97a0df64f06a8e0530884c5e1b532763066c709b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58997152"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68202397"
 ---
 # <a name="udt"></a>UDT
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 Cada clase, estructura y unión se identifican mediante un `SymTagUDT` símbolos. Cada miembro, función o tipo anidado, datos y cada clase base, aparece como un elemento secundario de clase del tipo definido por el usuario (UDT).  
   
-## <a name="properties"></a>Propiedades  
+## <a name="properties"></a>Properties (Propiedades)  
  La siguiente tabla muestra propiedades adicionales de válido para este tipo de símbolo.  
   
-|Property|Tipo de datos|Descripción|  
+|Propiedad|Tipo de datos|DESCRIPCIÓN|  
 |--------------|---------------|-----------------|  
 |[IDiaSymbol::get_classParent](../../debugger/debug-interface-access/idiasymbol-get-classparent.md)|`IDiaSymbol*`|Símbolos para el elemento primario de clase, si existe.|  
 |[IDiaSymbol::get_classParentId](../../debugger/debug-interface-access/idiasymbol-get-classparentid.md)|`DWORD`|Id. del símbolo de clase primaria.|  

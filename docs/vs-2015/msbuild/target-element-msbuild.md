@@ -20,11 +20,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: f14815502a33fb7d49a10c2724c57a4a0d86e9f7
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59651453"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68144318"
 ---
 # <a name="target-element-msbuild"></a>Elemento Target (MSBuild)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -59,7 +59,7 @@ Contiene un conjunto de tareas para que [!INCLUDE[vstecmsbuild](../includes/vste
   
 ### <a name="attributes"></a>Atributos  
   
-|Atributo|Descripción|  
+|Atributo|DESCRIPCIÓN|  
 |---------------|-----------------|  
 |`Name`|Atributo necesario.<br /><br /> Nombre del destino.|  
 |`Condition`|Atributo opcional.<br /><br /> La condición que se va a evaluar. Si la condición se evalúa como `false`, el destino no ejecutará el cuerpo del destino ni los destinos que se establecen en el atributo `DependsOnTargets`. Para obtener más información sobre las condiciones, consulte [Condiciones](../msbuild/msbuild-conditions.md).|  
@@ -74,7 +74,7 @@ Contiene un conjunto de tareas para que [!INCLUDE[vstecmsbuild](../includes/vste
   
 ### <a name="child-elements"></a>Elementos secundarios  
   
-|Elemento|Descripción|  
+|Elemento|DESCRIPCIÓN|  
 |-------------|-----------------|  
 |[Task](../msbuild/task-element-msbuild.md)|Crea y ejecuta una instancia de una tarea [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)]. Puede haber cero o más tareas en un destino.|  
 |[PropertyGroup](../msbuild/propertygroup-element-msbuild.md)|Contiene un conjunto de elementos `Property` definidos por el usuario. A partir de .NET Framework 3.5, un elemento `Target` puede contener elementos `PropertyGroup`.|  
@@ -83,7 +83,7 @@ Contiene un conjunto de tareas para que [!INCLUDE[vstecmsbuild](../includes/vste
   
 ### <a name="parent-elements"></a>Elementos primarios  
   
-|Elemento|Descripción|  
+|Elemento|DESCRIPCIÓN|  
 |-------------|-----------------|  
 |[Proyecto](../msbuild/project-element-msbuild.md)|Elemento raíz necesario de un archivo de proyecto [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] .|  
   

@@ -18,19 +18,20 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c394e909ec7ff51a7c6baf0bac85df3d2fce7b78
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a050724733ad87d0c583639fe3b0acfd2d6299f7
+ms.sourcegitcommit: 748d9cd7328a30f8c80ce42198a94a4b5e869f26
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62928490"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67890569"
 ---
 # <a name="how-to-specify-the-clickonce-offline-or-online-install-mode"></a>Procedimiento Especificación del modo de instalación en línea y sin conexión de ClickOnce
 El `Install Mode` para un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicación determina si la aplicación estará disponible en línea o sin conexión. Cuando se elige **la aplicación solo está disponible en línea**, el usuario debe tener acceso a la [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] ubicación (una página Web o un recurso compartido de archivos) para ejecutar la aplicación de publicación. Cuando se elige **la aplicación también está disponible sin conexión**, la aplicación agrega entradas a la **iniciar** menú y el **agregar o quitar programas** cuadro de diálogo; el usuario es puede ejecutar la aplicación cuando no están conectados.
 
- El `Install Mode` se pueden establecer en el **publicar** página de la **Diseñador de proyectos**.
+El `Install Mode` se pueden establecer en el **publicar** página de la **Diseñador de proyectos**.
 
- **Tenga en cuenta** el `Install Mode` también se puede establecer mediante el Asistente para publicación. Para obtener más información, vea [Cómo: Publicación de una aplicación ClickOnce mediante el Asistente para publicación](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md).
+> [!NOTE]
+> El `Install Mode` también se puede establecer mediante el Asistente para publicación. Para obtener más información, vea [Cómo: Publicación de una aplicación ClickOnce mediante el Asistente para publicación](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md).
 
 ### <a name="to-make-a-clickonce-application-available-online-only"></a>Para que una aplicación ClickOnce esté disponible solo en línea
 
@@ -52,5 +53,5 @@ El `Install Mode` para un [!INCLUDE[ndptecclick](../deployment/includes/ndpteccl
 
 ## <a name="see-also"></a>Vea también
 - [Publicar aplicaciones ClickOnce](../deployment/publishing-clickonce-applications.md)
-- [Cómo: publicar una aplicación ClickOnce mediante el Asistente para publicación](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)
+- [Procedimientos: publicar una aplicación ClickOnce mediante el Asistente para publicación](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)
 - [Selección de una estrategia de implementación de ClickOnce](../deployment/choosing-a-clickonce-deployment-strategy.md)

@@ -17,11 +17,11 @@ author: gewarren
 ms.author: gewarren
 manager: wpickett
 ms.openlocfilehash: 679df7b916740ad1a45d624f9f50d38c94d64caf
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58997414"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68201559"
 ---
 # <a name="ca2231-overload-operator-equals-on-overriding-valuetypeequals"></a>CA2231: Sobrecargar el operador equals al invalidar ValueType.Equals
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ ms.locfileid: "58997414"
 |Categoría|Microsoft.Usage|
 |Cambio problemático|No trascendental|
 
-## <a name="cause"></a>Motivo
+## <a name="cause"></a>Causa
  Un tipo de valor invalida <xref:System.Object.Equals%2A?displayProperty=fullName> pero no implementa el operador de igualdad.
 
 ## <a name="rule-description"></a>Descripción de la regla

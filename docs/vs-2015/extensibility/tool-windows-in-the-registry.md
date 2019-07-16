@@ -11,13 +11,13 @@ caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 8cedb95ccd98c3d5bd5e05086cfd1b53b0f97cd9
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58995185"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68186383"
 ---
-# <a name="tool-windows-in-the-registry"></a>Herramienta Windows en el registro
+# <a name="tool-windows-in-the-registry"></a>Ventanas de herramientas del Registro
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Los VSPackages que proporcionan las ventanas de herramientas se debe registrar con [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] como proveedores de la ventana de herramientas. Ventanas de herramientas creadas con la plantilla de paquete de Visual Studio hace esto de forma predeterminada. Proveedores de ventana de herramientas tienen las claves del registro del sistema que especifican los atributos de visibilidad, como tamaño predeterminado de la ventana de herramienta y la ubicación, el GUID de la ventana que actúa como el panel de ventana de herramientas y el estilo de acoplamiento.  

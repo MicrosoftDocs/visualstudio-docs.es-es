@@ -9,16 +9,16 @@ caps.latest.revision: 18
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 97f238b51e3f4ad3bbb32bdbdc134089c0cb7e99
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60099109"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68147177"
 ---
 # <a name="isolating-code-under-test-with-microsoft-fakes"></a>Aislar el código probado con Microsoft Fakes
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Microsoft Fakes ayuda a aislar el código que se está probando mediante la sustitución de otras partes de la aplicación con *código auxiliar* o *correcciones de compatibilidad (shim)*. Se trata de pequeños fragmentos de código que están bajo el control de las pruebas. Al aislar código para pruebas, sabe que, en caso de error, la causa está localizada ahí y no en alguna otra parte. El código auxiliar y las correcciones de compatibilidad (shims) también permiten probar el código aunque no funcionen otras partes de la aplicación todavía.  
+Microsoft Fakes ayuda a aislar el código que se está probando mediante la sustitución de otras partes de la aplicación con *código auxiliar* o *correcciones de compatibilidad (shim)* . Se trata de pequeños fragmentos de código que están bajo el control de las pruebas. Al aislar código para pruebas, sabe que, en caso de error, la causa está localizada ahí y no en alguna otra parte. El código auxiliar y las correcciones de compatibilidad (shims) también permiten probar el código aunque no funcionen otras partes de la aplicación todavía.  
   
  Fakes tiene dos versiones:  
   

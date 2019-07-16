@@ -13,11 +13,11 @@ caps.latest.revision: 17
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: f02591eac6a3f69ae5513aa9dc0abed381cd1c8a
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58995732"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68200106"
 ---
 # <a name="sccgetextendedcapabilities-function"></a>SccGetExtendedCapabilities (Función)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -47,7 +47,7 @@ SCCRTN SccGetExtendedCapabilities(
 ## <a name="return-value"></a>Valor devuelto  
  La implementación de complemento de control de origen de esta función debe devolver uno de los valores siguientes:  
   
-|Valor|Descripción|  
+|Value|DESCRIPCIÓN|  
 |-----------|-----------------|  
 |SCC_OK|La operación de capacidad get que se completó correctamente.|  
 |SCC_E_UNKNOWNERROR<br /><br /> SCC_E_NONSPECIFICERROR|Error desconocido o no especificado.|  

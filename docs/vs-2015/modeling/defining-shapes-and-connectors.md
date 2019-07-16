@@ -10,11 +10,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 761e0e77a0fe9f6f32f08045d81f6eab815801dd
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60112330"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68181891"
 ---
 # <a name="defining-shapes-and-connectors"></a>Definir formas y conectores
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,7 +36,7 @@ Hay varios tipos básicos de formas que puede usar para mostrar información en 
   
   Hay los siguientes tipos de formas disponibles:  
   
-|Tipo de forma|Descripción|  
+|Tipo de forma|DESCRIPCIÓN|  
 |----------------|-----------------|  
 |Forma geométrica|Forma elíptica o rectangular con fines generales. Puede mostrar elementos Decorator de texto e icono en posiciones específicas relativas a los límites de la forma.<br /><br /> Para anidar formas dentro de formas geométricas, vea [anidar formas](../modeling/nesting-shapes.md).|  
 |Forma de compartimiento|Rectángulo que contiene un encabezado y compartimientos, como una clase UML. Cada compartimiento puede contener una lista de filas de texto.<br /><br /> Normalmente, las filas representan elementos incrustados debajo del elemento al que representa la forma. Para ver un ejemplo, cree un DSL con la plantilla de solución Class Diagrams (Diagramas de clases).|  

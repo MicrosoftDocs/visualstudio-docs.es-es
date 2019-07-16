@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 120696fe335245775c6ea7188efc059ae9e71342
-ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.openlocfilehash: 466df3030793603319cf73085910a164fd222e29
+ms.sourcegitcommit: 748d9cd7328a30f8c80ce42198a94a4b5e869f26
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "66263700"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67890594"
 ---
 # <a name="how-to-modify-a-standard-menu-command-in-a-domain-specific-language"></a>Procedimiento Modificar un comando de menú estándar en un lenguaje específico de dominio
 
@@ -65,7 +65,8 @@ Cree un nuevo archivo que contiene una declaración parcial de la clase de conju
     { internal partial class Language1CommandSet { ...
     ```
 
-     **Tenga en cuenta** si usó la plantilla de archivo de clase para crear el nuevo archivo, debe corregir el espacio de nombres y el nombre de clase.
+    > [!NOTE]
+    > Si usó la plantilla de archivo de clase para crear el nuevo archivo, debe corregir el espacio de nombres y el nombre de clase.
 
 ## <a name="override-the-command-methods"></a>Invalidar los métodos de comando
 

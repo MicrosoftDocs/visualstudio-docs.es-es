@@ -24,13 +24,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 1bf57ae0d8d2b9b499897baadc7f2c4450086bf2
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58988344"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68195319"
 ---
-# <a name="debugging-preparation-c-f-and-visual-basic-project-types"></a>Preparación de la depuración: Tipos de proyectos de C#, F# y Visual Basic
+# <a name="debugging-preparation-c-f-and-visual-basic-project-types"></a>Preparación de la depuración: Tipos de proyectos de C#, F# y Visual Basic
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 En los temas de esta sección se describe cómo se depuran los tipos de proyectos de C#, F# y [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] creados mediante las plantillas de proyecto de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  

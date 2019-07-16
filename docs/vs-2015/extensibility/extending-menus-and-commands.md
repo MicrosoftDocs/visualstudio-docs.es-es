@@ -13,11 +13,11 @@ caps.latest.revision: 50
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 83d9dc45863f1ed1b5e11c17b9e922b62b0186dc
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58999579"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68204531"
 ---
 # <a name="extending-menus-and-commands"></a>Ampliación de menús y comandos
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

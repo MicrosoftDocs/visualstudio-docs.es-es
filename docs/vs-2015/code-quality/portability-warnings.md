@@ -16,11 +16,11 @@ author: gewarren
 ms.author: gewarren
 manager: wpickett
 ms.openlocfilehash: 7c8f195f2219cfa2c81b24a3e04ddc559dc98a06
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58996422"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68142209"
 ---
 # <a name="portability-warnings"></a>advertencias de portabilidad
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,7 +29,7 @@ Advertencias de portabilidad compatibles con la portabilidad entre diferentes si
   
 ## <a name="in-this-section"></a>En esta sección  
   
-|Regla|Descripción|  
+|Regla|DESCRIPCIÓN|  
 |----------|-----------------|  
 |[CA1900: Campos de tipo de valor deberían ser portátiles](../code-quality/ca1900-value-type-fields-should-be-portable.md)|Esta regla comprueba que las estructuras declaradas mediante un atributo de diseño explícito se alinearán correctamente cuando se calculan las referencias a código no administrado en sistemas operativos de 64 bits.|  
 |[CA1901: Las declaraciones P/Invoke deben ser portátiles](../code-quality/ca1901-p-invoke-declarations-should-be-portable.md)|Esta regla se evalúa como el tamaño de cada parámetro y el valor devuelto de P/Invoke y comprueba que su tamaño sea correcto al calcular las referencias a código no administrado en sistemas operativos de 32 bits y 64 bits.|  

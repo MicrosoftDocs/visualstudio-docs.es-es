@@ -13,11 +13,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 6567b4ff4ee7c798ac82c5d33ea50ac206fcd692
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60039051"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68146171"
 ---
 # <a name="customizing-project-and-item-templates"></a>Personalizar plantillas de proyectos y de elementos
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,18 +36,18 @@ Una vez que se han creado las plantillas de proyecto y elemento, puede personali
   
 - Personalizar los asistentes que crean proyectos a partir de plantillas.  
   
-     Para obtener más información, vea [Cómo: Usar asistentes con plantillas de proyecto](../extensibility/how-to-use-wizards-with-project-templates.md).  
+     Para obtener más información, consulte [Cómo Usar asistentes con plantillas de proyecto](../extensibility/how-to-use-wizards-with-project-templates.md).  
   
 ## <a name="related-sections"></a>Secciones relacionadas  
  [Crear plantillas para proyectos y elementos en Visual Studio](../ide/creating-project-and-item-templates.md)  
   
  [Cómo: Solucionar problemas de plantillas](../ide/how-to-troubleshoot-templates.md)  
   
- [Cómo: crear plantillas de proyecto](../ide/how-to-create-project-templates.md)  
+ [Procedimientos: crear plantillas de proyecto](../ide/how-to-create-project-templates.md)  
   
  [Cómo: crear plantillas de elemento](../ide/how-to-create-item-templates.md)  
   
- [Cómo: crear Starter Kits](../ide/how-to-create-starter-kits.md)  
+ [Procedimientos: crear Starter Kits](../ide/how-to-create-starter-kits.md)  
   
  [Referencia de esquema de plantillas de Visual Studio](../extensibility/visual-studio-template-schema-reference.md)  
   

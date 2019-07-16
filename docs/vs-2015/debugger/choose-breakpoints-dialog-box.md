@@ -26,11 +26,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 5977eb6bad9063e1ef08502cac53159a37c27151
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58998601"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68161620"
 ---
 # <a name="choose-breakpoints-dialog-box"></a>Cuadro de diálogo Elegir puntos de interrupción
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,7 +43,7 @@ El cuadro de diálogo **Elegir puntos de interrupción** se abre al intentar est
  **All**  
  Selecciona todos los puntos de interrupción que aparecen en el cuadro **Puntos de interrupción**.  
   
- **Ninguno**  
+ **None**  
  Borra todos los puntos de interrupción que aparecen en el cuadro **Puntos de interrupción**.  
   
 ## <a name="see-also"></a>Vea también  

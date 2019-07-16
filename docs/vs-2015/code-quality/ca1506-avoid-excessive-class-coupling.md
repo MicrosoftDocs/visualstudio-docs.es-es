@@ -16,11 +16,11 @@ author: gewarren
 ms.author: gewarren
 manager: wpickett
 ms.openlocfilehash: 1c5a5e070892f7efc096b0f8e24952bb9d139969
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58996245"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68189285"
 ---
 # <a name="ca1506-avoid-excessive-class-coupling"></a>CA1506: Evitar el acoplamiento excesivo de clases
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ ms.locfileid: "58996245"
 |Categoría|Microsoft.Maintainability|
 |Cambio problemático|Problemático|
 
-## <a name="cause"></a>Motivo
+## <a name="cause"></a>Causa
  Un tipo o método está emparejada con muchos otros tipos.
 
 ## <a name="rule-description"></a>Descripción de la regla

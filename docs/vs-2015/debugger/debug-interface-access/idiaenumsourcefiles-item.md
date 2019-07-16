@@ -14,11 +14,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 62dce70d3ebf05694b453d13e1f11529dd21e8ce
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58995153"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68189773"
 ---
 # <a name="idiaenumsourcefilesitem"></a>IDiaEnumSourceFiles::Item
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -35,7 +35,7 @@ HRESULT Item ( 
 ```  
   
 #### <a name="parameters"></a>Parámetros  
- índice  
+ index  
  [in] Índice de la [IDiaSourceFile](../../debugger/debug-interface-access/idiasourcefile.md) objeto va a recuperar. El índice está en el intervalo de 0 a `count`-1, donde `count` devuelto por la [Idiaenumsourcefiles](../../debugger/debug-interface-access/idiaenumsourcefiles-get-count.md) método.  
   
  sourceFile  

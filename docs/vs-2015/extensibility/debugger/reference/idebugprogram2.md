@@ -1,5 +1,5 @@
 ---
-title: IDebugProgram2 | Microsoft Docs
+title: IDebugProgram2 | Documentos de Microsoft
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,11 +13,11 @@ caps.latest.revision: 19
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 372c119b6a841d7d4b349e85548914f7641b53d1
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58986841"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68148648"
 ---
 # <a name="idebugprogram2"></a>IDebugProgram2
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -39,7 +39,7 @@ IDebugProgram2 : IUnknown
 ## <a name="methods-in-vtable-order"></a>Métodos en orden de Vtable  
  La tabla siguiente muestran los métodos de `IDebugProgram2`.  
   
-|Método|Descripción|  
+|Método|DESCRIPCIÓN|  
 |------------|-----------------|  
 |[EnumThreads](../../../extensibility/debugger/reference/idebugprogram2-enumthreads.md)|Enumera los subprocesos que se ejecutan en este programa.|  
 |[GetName](../../../extensibility/debugger/reference/idebugprogram2-getname.md)|Obtiene el nombre del programa.|  

@@ -14,11 +14,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 54d09a037fff08b1c34f9a0b5e1fbf018cd10bc3
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58997435"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68161407"
 ---
 # <a name="idiaimagedata"></a>IDiaImageData
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -34,7 +34,7 @@ IDiaImageData : IUnknown
 ## <a name="methods-in-vtable-order"></a>Métodos en orden de Vtable  
  La tabla siguiente muestran los métodos de `IDiaImageData`.  
   
-|Método|Descripción|  
+|Método|DESCRIPCIÓN|  
 |------------|-----------------|  
 |[IDiaImageData::get_relativeVirtualAddress](../../debugger/debug-interface-access/idiaimagedata-get-relativevirtualaddress.md)|Recupera la ubicación en la memoria virtual del módulo con respecto a la aplicación.|  
 |[IDiaImageData::get_virtualAddress](../../debugger/debug-interface-access/idiaimagedata-get-virtualaddress.md)|Recupera la ubicación en la memoria virtual de la imagen.|  

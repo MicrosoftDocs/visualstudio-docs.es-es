@@ -15,13 +15,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 185494623e019ef666374bd46e52bca0d58738f4
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60077673"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68185938"
 ---
-# <a name="how-to-compare-performance-data-files"></a>Procedimiento Comparar archivos de datos de rendimiento
+# <a name="how-to-compare-performance-data-files"></a>Procedimiento Comparación de archivos de datos de rendimiento
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Puede crear un informe o una vista de comparación ("Diff") para comparar los resultados de dos archivos de datos de generador de perfiles diferentes (.vsp o .vsps). La comparación muestra las diferencias, reducciones de rendimiento y mejoras producidas de una sesión de generación de perfiles a la otra.  
@@ -58,4 +58,4 @@ Puede crear un informe o una vista de comparación ("Diff") para comparar los re
   
 2. En la ventana **Seleccionar archivos de análisis para compararlos**, busque y seleccione el archivo de análisis **Archivo de línea base** (.vsp o .vsps) y el **Archivo de comparación** (.vsp o .vsps).  
   
-3. Haga clic en **Aceptar**.
+3. Haga clic en **OK**.

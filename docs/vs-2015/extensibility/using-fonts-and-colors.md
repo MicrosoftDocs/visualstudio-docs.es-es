@@ -15,11 +15,11 @@ caps.latest.revision: 28
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 42ebc9414e3e5bb10f2468ed7f5f4fb4900e4ec6
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58988185"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68177223"
 ---
 # <a name="using-fonts-and-colors"></a>Uso de fuentes y colores
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,7 +41,7 @@ El [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)] proporciona compatibilidad par
   
  Este enfoque requiere un VSPackage implementar el <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorDefaultsProvider> interfaz y las interfaces relacionadas.  
   
- [Cómo: Obtener acceso a la combinación de colores y fuentes integradas](../extensibility/how-to-access-the-built-in-fonts-and-color-scheme.md)  
+ [Cómo: Acceder al esquema integrado de fuentes y colores](../extensibility/how-to-access-the-built-in-fonts-and-color-scheme.md)  
  Describe cómo definir y registrar una categoría mediante el uso de colores y fuentes integradas para iniciar el uso de colores y fuentes proporcionados por el sistema.  
   
 ## <a name="reference"></a>Referencia  

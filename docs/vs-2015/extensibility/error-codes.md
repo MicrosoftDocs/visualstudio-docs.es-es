@@ -13,18 +13,18 @@ caps.latest.revision: 20
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: fef596fdfa9bb29fac38c72890392c33a86b31d2
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58987442"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68204557"
 ---
 # <a name="error-codes"></a>Códigos de error
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Cuando una función de la API de complemento de Control de origen devuelve un error, se espera a ser uno de los siguientes códigos de error. Todos los errores son negativos, son positivos, advertencias o los códigos de error informativo y correcta es 0.  
   
-|Código de error|Valor|Descripción|  
+|Código de error|Valor|DESCRIPCIÓN|  
 |----------------|-----------|-----------------|  
 |`SCC_I_SHARESUBPROJOK`|7|Complemento admite la adición de archivos de control de código fuente en dos pasos. Para obtener más información, consulte [SccSetOption](../extensibility/sccsetoption-function.md).|  
 |`SCC_I_FILEDIFFERS`|6|El archivo local es diferente del archivo en la base de datos de control de código fuente (por ejemplo, [SccDiff](../extensibility/sccdiff-function.md) pueden devolver este valor).|  

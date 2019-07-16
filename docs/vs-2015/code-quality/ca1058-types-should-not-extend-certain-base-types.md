@@ -16,11 +16,11 @@ author: gewarren
 ms.author: gewarren
 manager: wpickett
 ms.openlocfilehash: 1ce67a70b6cbe955ef13bf6475a672bcbb687d95
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60046544"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68200450"
 ---
 # <a name="ca1058-types-should-not-extend-certain-base-types"></a>CA1058: Los tipos no deben ampliar ciertos tipos base
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ ms.locfileid: "60046544"
 |Categoría|Microsoft.Design|
 |Cambio problemático|Problemático|
 
-## <a name="cause"></a>Motivo
+## <a name="cause"></a>Causa
  Un tipo visible externamente extiende algunos tipos base. Actualmente, esta regla notifica los tipos que derivan de los siguientes tipos:
 
 - <xref:System.ApplicationException?displayProperty=fullName>
