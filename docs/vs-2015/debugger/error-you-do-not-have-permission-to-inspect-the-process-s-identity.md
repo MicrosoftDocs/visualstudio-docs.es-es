@@ -15,11 +15,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: d66eacb1b7f5205ea430d7154f67d05bdd047a74
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60080753"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68157520"
 ---
 # <a name="error-you-do-not-have-permission-to-inspect-the-process39s-identity"></a>Error: No tiene permiso para inspeccionar el proceso&#39;identidad s
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -46,7 +46,7 @@ No tiene permiso para inspeccionar la identidad del proceso. Probablemente se de
   
 7. En el **propiedades de Terminal Services** ventana, vaya a la **General** pestaña y establezca **tipo de inicio** a **Manual**.  
   
-8. Haga clic en **Aceptar**.  
+8. Haga clic en **OK**.  
   
 9. Reinicie el equipo.  
   
@@ -64,7 +64,7 @@ No tiene permiso para inspeccionar la identidad del proceso. Probablemente se de
   
 4. En **Escritorio remoto**, seleccione **Permitir que los usuarios se conecten de manera remota a este equipo**.  
   
-5. Haga clic en **Aceptar**.  
+5. Haga clic en **OK**.  
   
 ## <a name="see-also"></a>Vea también  
  [Errores de la depuración remota y sus soluciones](../debugger/remote-debugging-errors-and-troubleshooting.md)

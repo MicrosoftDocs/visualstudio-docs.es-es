@@ -11,13 +11,13 @@ caps.latest.revision: 19
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 0920999eee7460c8bf697e245bae55a3641b8e18
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60101176"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68184282"
 ---
-# <a name="contained-languages"></a>Lenguajes contenidos
+# <a name="contained-languages"></a>Lenguajes incluidos
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)] 
 
 *Contenidos de lenguajes* son lenguajes contenidos en otros lenguajes. Por ejemplo, HTML en [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] páginas pueden contener [!INCLUDE[csprcs](../includes/csprcs-md.md)] o [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] secuencias de comandos. Una arquitectura de doble lenguaje es necesaria para el editor de archivos .aspx proporcionar IntelliSense, colores y otras características de edición para el código HTML y el lenguaje de scripting.  

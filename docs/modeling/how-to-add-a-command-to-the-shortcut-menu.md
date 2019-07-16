@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ab220b8a21db60918462e4c060ce613171e3faad
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 372c30caa15ef8783aa1fead479087e7618e707b
+ms.sourcegitcommit: 748d9cd7328a30f8c80ce42198a94a4b5e869f26
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63442364"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67890658"
 ---
 # <a name="how-to-add-a-command-to-the-shortcut-menu"></a>Procedimiento Agregar un comando al menú contextual
 
@@ -32,7 +32,7 @@ En resumen, los pasos se realizan en el proyecto DslPackage como sigue:
    Para obtener ejemplos, vea el [sitio Web de SDK de visualización y modelado](http://go.microsoft.com/fwlink/?LinkID=185579).
 
 > [!NOTE]
-> También puede modificar el comportamiento de algunos comandos existentes, como Cortar, Pegar, Seleccionar todo e Imprimir invalidando los métodos en CommandSet.cs. Para obtener más información, vea [Cómo: Modificar un comando de menú estándar](../modeling/how-to-modify-a-standard-menu-command-in-a-domain-specific-language.md).
+> También puede modificar el comportamiento de algunos comandos existentes, como Cortar, Pegar, Seleccionar todo e Imprimir invalidando los métodos en CommandSet.cs. Para obtener más información, consulte [Cómo Modificar un comando de menú estándar](../modeling/how-to-modify-a-standard-menu-command-in-a-domain-specific-language.md).
 
 ## <a name="define-a-command-using-mef"></a>Definir un comando mediante MEF
 
@@ -167,7 +167,8 @@ La clase de conjunto de comandos deriva de <xref:Microsoft.VisualStudio.Modeling
 
      `{ internal partial class Language1CommandSet { ...`
 
-     **Tenga en cuenta** si usó la plantilla de clase para crear el nuevo archivo, debe corregir el espacio de nombres y el nombre de clase.
+     > [!NOTE]
+     > Si usó la plantilla de clase para crear el nuevo archivo, debe corregir el espacio de nombres y el nombre de clase.
 
 Normalmente, el código del conjunto de comandos tendrá que exportar los siguientes espacios de nombres:
 
@@ -240,7 +241,7 @@ Un método OnStatus no debería cambiar el estado del almacén.
 ### <a name="define-what-the-command-does"></a>Definir la acción del comando
  Para cada comando, defina un método `OnMenu...` que realice la acción necesaria cuando el usuario haga clic en el comando de menú.
 
- Si realiza cambios en los elementos de modelo, debe hacerlo dentro de una transacción. Para obtener más información, vea [Cómo: Modificar un comando de menú estándar](../modeling/how-to-modify-a-standard-menu-command-in-a-domain-specific-language.md).
+ Si realiza cambios en los elementos de modelo, debe hacerlo dentro de una transacción. Para obtener más información, consulte [Cómo Modificar un comando de menú estándar](../modeling/how-to-modify-a-standard-menu-command-in-a-domain-specific-language.md).
 
  En este ejemplo, `ClassShape`, `ModelClass` y `Comment` son tipos que se definen en el DSL, y derivan de la plantilla de diagrama de clases de DSL.
 
@@ -330,11 +331,11 @@ protected override IList<MenuCommand> GetMenuCommands()
 
 4. Haga clic con el botón secundario en varios elementos del diagrama para comprobar que el comando aparece correctamente habilitado o deshabilitado, y que se muestra o se oculta correctamente según el elemento seleccionado.
 
-## <a name="troubleshoot"></a>Solucionar problemas
+## <a name="troubleshoot"></a>Solución de problemas
 
 **Comando no aparece en el menú:**
 
-- El comando solo aparecerá en las instancias de depuración de Visual Studio, hasta que instale el paquete de DSL. Para obtener más información, vea [Implementación de soluciones de lenguaje específico de dominio](../modeling/deploying-domain-specific-language-solutions.md).
+- El comando solo aparecerá en las instancias de depuración de Visual Studio, hasta que instale el paquete de DSL. Para obtener más información, vea [Implementación de soluciones de lenguaje específico de dominio](msi-and-vsix-deployment-of-a-dsl.md).
 
 - Asegúrese de que la muestra experimental tiene la extensión de nombre de archivo correcta para este DSL. Para comprobar la extensión de nombre de archivo, abra DslDefinition.dsl en la instancia principal de Visual Studio. Después, en DSL Explorer (Explorador de DSL), haga clic en el nodo Editor y en Properties (Propiedades). En la ventana Properties (Propiedades), haga clic en la propiedad FileExtension.
 
@@ -361,8 +362,8 @@ protected override IList<MenuCommand> GetMenuCommands()
 ## <a name="see-also"></a>Vea también
 
 - [Escribir código para personalizar lenguajes específicos de dominio](../modeling/writing-code-to-customise-a-domain-specific-language.md)
-- [Cómo: Modificar comandos de menú estándar](../modeling/how-to-modify-a-standard-menu-command-in-a-domain-specific-language.md)
-- [Implementar soluciones de lenguajes específicos de dominio](../modeling/deploying-domain-specific-language-solutions.md)
+- [Procedimientos: Modificar comandos de menú estándar](../modeling/how-to-modify-a-standard-menu-command-in-a-domain-specific-language.md)
+- [Implementar soluciones de lenguajes específicos de dominio](msi-and-vsix-deployment-of-a-dsl.md)
 - [Código de ejemplo: Diagramas de circuitos](https://code.msdn.microsoft.com/Visualization-Modeling-SDK-763778e8)
 
 [!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]

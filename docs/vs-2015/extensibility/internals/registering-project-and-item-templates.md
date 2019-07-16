@@ -15,11 +15,11 @@ caps.latest.revision: 28
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: a06e7a292d960e675ad4b0de97499557542fef1c
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58995015"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68185836"
 ---
 # <a name="registering-project-and-item-templates"></a>Registro de plantillas para proyectos y elementos
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -39,7 +39,7 @@ Tipos de proyecto deben registrar los directorios donde se encuentran sus planti
 "ProjectTemplatesDir"="C:\\MyProduct\\MyProjectTemplates"  
 ```  
   
-|Name|Tipo|Descripción|  
+|NOMBRE|Type|DESCRIPCIÓN|  
 |----------|----------|-----------------|  
 |@|REG_SZ|Nombre predeterminado de los proyectos de este tipo.|  
 |DisplayName|REG_SZ|Id. de recurso del nombre que deben recuperarse de la DLL satélite registrados en los paquetes.|  
@@ -57,7 +57,7 @@ Tipos de proyecto deben registrar los directorios donde se encuentran sus planti
 "SortPriority"=dword:00000064  
 ```  
   
-|Name|Tipo|Descripción|  
+|NOMBRE|Type|DESCRIPCIÓN|  
 |----------|----------|-----------------|  
 |@|REG_SZ|Identificador de recurso para las plantillas Agregar elemento.|  
 |TemplatesDir|REG_SZ|Ruta de acceso de los elementos de proyecto que se muestra en el cuadro de diálogo para la **Agregar nuevo elemento** asistente.|  
@@ -84,7 +84,7 @@ Tipos de proyecto deben registrar los directorios donde se encuentran sus planti
 "SortPriority"=dword:00000064  
 ```  
   
-|Name|Tipo|Descripción|  
+|NOMBRE|Type|DESCRIPCIÓN|  
 |----------|----------|-----------------|  
 |CommonFindFilesFilter|REG_DWORD|Hace que el filtro de uno de los filtros comunes en el **buscar en archivos** cuadro de diálogo. Los filtros comunes se muestran en la lista de filtros antes de los filtros de marcado no tan comunes.|  
 |CommonOpenFilesFilter|REG_DWORD|Hace que el filtro de uno de los filtros comunes en el **abrir archivo** cuadro de diálogo. Los filtros comunes se muestran en la lista de filtros antes de los filtros de marcado no tan comunes.|  

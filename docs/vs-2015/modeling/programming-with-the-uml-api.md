@@ -13,11 +13,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: e85fc0add84f6f6097355d1fc7a58cc954c8e538
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60111758"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68158872"
 ---
 # <a name="programming-with-the-uml-api"></a>Programar con la API de UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

@@ -12,11 +12,11 @@ caps.latest.revision: 16
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 0a992e551a99ea1963f18e58cd00546e2f528915
-ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "59001914"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68162620"
 ---
 # <a name="enumerations-visual-studio-debugging"></a>Enumeraciones (depuración de Visual Studio)
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]

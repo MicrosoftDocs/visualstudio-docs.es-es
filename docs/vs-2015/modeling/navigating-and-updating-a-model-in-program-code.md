@@ -12,11 +12,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 260d726ef9f6478292fe80c7fd90ffc4a807265d
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60110809"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68158937"
 ---
 # <a name="navigating-and-updating-a-model-in-program-code"></a>Navegar y actualizar un modelo en el código del programa
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -78,7 +78,7 @@ Puede escribir código para crear y eliminar elementos del modelo, establecer su
   
 ## <a name="navigation"></a> Navegar por el modelo  
   
-### <a name="properties"></a>Propiedades  
+### <a name="properties"></a>Properties (Propiedades)  
  Propiedades del dominio que se definen en la definición de DSL se convierten en propiedades que puede tener acceso en el código de programa:  
   
  `Person henry = ...;`  
@@ -364,7 +364,7 @@ using (Transaction t = targetDiagram.Store.
 |Relación de dominio|<xref:Microsoft.VisualStudio.Modeling.ElementLink>|  
 |Forma|<xref:Microsoft.VisualStudio.Modeling.Diagrams.NodeShape>|  
 |Conector|<xref:Microsoft.VisualStudio.Modeling.Diagrams.BinaryLinkShape>|  
-|Diagram|<xref:Microsoft.VisualStudio.Modeling.Diagrams.Diagram>|  
+|Diagrama|<xref:Microsoft.VisualStudio.Modeling.Diagrams.Diagram>|  
   
  Normalmente, un elemento en un diagrama representa un elemento de modelo. Normalmente (pero no siempre), un <xref:Microsoft.VisualStudio.Modeling.Diagrams.NodeShape> representa una instancia de la clase de dominio y un <xref:Microsoft.VisualStudio.Modeling.Diagrams.BinaryLinkShape> representa una instancia de la relación de dominio. El <xref:Microsoft.VisualStudio.Modeling.Diagrams.PresentationViewsSubject> relación vincula una forma de nodo o vínculo al elemento de modelo que representa.  
   
@@ -510,7 +510,7 @@ partial class MyDiagram
  También puede establecer el color y otras propiedades expuestas de conectores con este método.  
   
 ### <a name="use-transactions"></a>Usar transacciones  
- Formas, conectores y diagramas son subtipos de <xref:Microsoft.VisualStudio.Modeling.ModelElement> y en vivo en el Store. Por lo tanto, debe realizar cambios en ellos solo dentro de una transacción. Para obtener más información, vea [Cómo: Usar transacciones para actualizar el modelo](../modeling/how-to-use-transactions-to-update-the-model.md).  
+ Formas, conectores y diagramas son subtipos de <xref:Microsoft.VisualStudio.Modeling.ModelElement> y en vivo en el Store. Por lo tanto, debe realizar cambios en ellos solo dentro de una transacción. Para obtener más información, consulte [Cómo Usar transacciones para actualizar el modelo](../modeling/how-to-use-transactions-to-update-the-model.md).  
   
 ## <a name="docdata"></a> Vista de documento y los datos del documento  
  ![Diagrama de clases de tipos de diagrama estándar](../modeling/media/dsldiagramsanddocs.png "DSLDiagramsandDocs")  
@@ -522,6 +522,6 @@ partial class MyDiagram
  <xref:Microsoft.VisualStudio.Modeling.ModelElement>   
  [Validación en los lenguajes específicos de dominio](../modeling/validation-in-a-domain-specific-language.md)   
  [Generar código a partir de un lenguaje específico de dominio](../modeling/generating-code-from-a-domain-specific-language.md)   
- [Cómo: Usar transacciones para actualizar el modelo](../modeling/how-to-use-transactions-to-update-the-model.md)   
+ [Procedimientos: Usar transacciones para actualizar el modelo](../modeling/how-to-use-transactions-to-update-the-model.md)   
  [Integrar modelos utilizando Modelbus de Visual Studio](../modeling/integrating-models-by-using-visual-studio-modelbus.md)   
  [Responder a los cambios y propagarlos](../modeling/responding-to-and-propagating-changes.md)

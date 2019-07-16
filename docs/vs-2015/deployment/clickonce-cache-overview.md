@@ -18,11 +18,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 58ea758ea10e2c58ff123a2bc991f14191db0aa1
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58998771"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68151667"
 ---
 # <a name="clickonce-cache-overview"></a>Información general sobre la memoria caché de ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,7 +31,7 @@ Todos los [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] aplicaciones, s
   
  Al proporcionar una única ubicación para el almacenamiento de la aplicación, [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] tiene sobre la tarea de administrar la instalación física de una aplicación del usuario. La memoria caché también ayuda a aislar las aplicaciones manteniendo los ensamblados y archivos de datos para todas las aplicaciones y sus distintas versiones independientes entre sí. Por ejemplo, cuando actualiza un [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] aplicación, que la versión y sus recursos de datos se proporcionan con sus propios directorios en la memoria caché.  
   
-## <a name="cache-storage-quota"></a>Cache Storage Quota  
+## <a name="cache-storage-quota"></a>Cuota de almacenamiento de caché  
  [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] las aplicaciones que se hospedan en línea están restringidas en la cantidad de espacio que pueden ocupar mediante una cuota que limita el tamaño de la [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] memoria caché. El tamaño de caché se aplica a todas las aplicaciones del usuario en línea; una sola aplicación de confianza parcial, en línea se limita a ocupar la mitad del espacio de cuota. Las aplicaciones instaladas no están limitadas por el tamaño de caché y no cuentan para el límite de caché. Para todas las [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] aplicaciones, la memoria caché se conserva únicamente la versión actual y la versión instalada previamente.  
   
  De forma predeterminada, los equipos cliente tienen 250 MB de almacenamiento en línea [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] aplicaciones. Archivos de datos no cuentan para este límite. Un administrador del sistema puede ampliar o reducir esta cuota en un equipo cliente en particular cambiando la clave del registro, HKEY_CURRENT_USER\Software\Classes\Software\Microsoft\Windows\CurrentVersion\Deployment\OnlineAppQuotaInKB, que es un valor DWORD expresa el tamaño de caché en kilobytes. Por ejemplo, para reducir el tamaño de caché a 50 MB, cambiaría este valor a 51200.  

@@ -15,11 +15,11 @@ author: mikeblome
 ms.author: mblome
 manager: jillfra
 ms.openlocfilehash: dcd862b6ff9c94b8de3fc8b5a56164549fefe8ca
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60099512"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68142019"
 ---
 # <a name="walkthrough-analyzing-cc-code-for-defects"></a>Tutorial: Analizar código de C/C++ en busca de defectos
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -78,7 +78,7 @@ Este tutorial muestra cómo analizar el código de C/C ++ en previsión de defec
   
 2. En el **lista de errores**, haga doble clic en la siguiente advertencia:  
   
-     warning C6230: Conversión implícita entre tipos semánticamente diferentes: usando HRESULT en un contexto booleano.  
+     Advertencia C6230: Conversión implícita entre tipos semánticamente diferentes: usando HRESULT en un contexto booleano.  
   
      El editor de código muestra la línea que produjo la advertencia en la función `bool``ProcessDomain()`. Esta advertencia indica que se está utilizando un valor de HRESULT en una instrucción 'if' donde se espera un resultado booleano.  
   
@@ -90,7 +90,7 @@ Este tutorial muestra cómo analizar el código de C/C ++ en previsión de defec
   
 4. En el **lista de errores**, haga doble clic en la siguiente advertencia:  
   
-     warning C6282: Operador incorrecto: asignación de constante en el contexto de la prueba. ¿Pretendía indicar ==?  
+     Advertencia C6282: Operador incorrecto: asignación de constante en el contexto de la prueba. ¿Pretendía indicar ==?  
   
 5. Corregir esta advertencia mediante la comprobación de igualdad. El código debe ser similar al código siguiente:  
   

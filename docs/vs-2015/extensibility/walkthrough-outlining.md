@@ -11,11 +11,11 @@ caps.latest.revision: 31
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 7c1dd3d28b9978b52c95b5ff905d57720ed10f5d
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60054710"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68201955"
 ---
 # <a name="walkthrough-outlining"></a>Tutorial: esquematizar
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -134,4 +134,4 @@ Puede implementar características basadas en lenguaje como mediante la definici
 4. Debe haber una región de esquematización que incluye dos llaves. Debe ser capaz de hacer clic en el signo menos a la izquierda de la llave de apertura para contraer la región de esquematización. Cuando la región se contrae, el símbolo de puntos suspensivos (...) debe aparecer a la izquierda de la región contraída y un menú emergente que contiene el texto **mantenga el puntero de texto** debe aparecer al mover el puntero sobre los puntos suspensivos.  
   
 ## <a name="see-also"></a>Vea también  
- [Tutorial: Vinculación de un tipo de contenido a una extensión de nombre de archivo](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)
+ [Tutorial: Vinculación de un tipo de contenido con una extensión de nombre de archivo](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)

@@ -13,11 +13,11 @@ caps.latest.revision: 16
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 602a823e4066aff40d1f6271a20b480bb4a92f5b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58995261"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68158433"
 ---
 # <a name="idebugexpression2evaluatesync"></a>IDebugExpression2::EvaluateSync
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -60,7 +60,7 @@ int EvaluateSync(
 ## <a name="return-value"></a>Valor devuelto  
  Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error. Algunos códigos de error típicos son:  
   
-|Error|Descripción|  
+|Error|DESCRIPCIÓN|  
 |-----------|-----------------|  
 |E_EVALUATE_BUSY_WITH_EVALUATION|Se está evaluando la otra expresión, y no se admite la evaluación de expresión simultáneas.|  
 |E_EVALUATE_TIMEOUT|Evaluación de tiempo de espera.|  

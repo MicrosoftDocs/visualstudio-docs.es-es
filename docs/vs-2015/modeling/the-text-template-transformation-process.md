@@ -12,11 +12,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 0f92b4053006aa5da3c28d9330b372466f84d0fd
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60113994"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68199958"
 ---
 # <a name="the-text-template-transformation-process"></a>El proceso de transformación de las plantillas de texto
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,10 +29,10 @@ El proceso de transformación de plantillas de texto toma un archivo de plantill
   
 ## <a name="components"></a>Componentes  
   
-|Componente|Descripción|Puede personalizar (Sí/No)|  
+|Componente|DESCRIPCIÓN|Puede personalizar (Sí/No)|  
 |---------------|-----------------|------------------------------|  
 |Motor de|El componente del motor controla el proceso de transformación de plantillas de texto|No.|  
-|administrador de flujos de trabajo|El host es la interfaz entre el motor y el entorno del usuario. [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] es un host del proceso de transformación de texto.|Sí. Puede escribir un host personalizado.|  
+|Host|El host es la interfaz entre el motor y el entorno del usuario. [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] es un host del proceso de transformación de texto.|Sí. Puede escribir un host personalizado.|  
 |Procesadores de directivas|Procesadores de directivas son clases que controlan las directivas en plantillas de texto. Puede usar directivas para proporcionar datos a una plantilla de texto desde un origen de entrada.|Sí. Puede escribir procesadores de directivas personalizadas|  
   
 ## <a name="the-engine"></a>El motor de  
