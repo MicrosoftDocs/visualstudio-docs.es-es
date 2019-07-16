@@ -10,11 +10,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 86c13f7c710e462e1edd45acbf68fa4642d3d422
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60099447"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68150669"
 ---
 # <a name="sorting-filtering-and-grouping-xml-schema-explorer"></a>Ordenar, filtrar y agrupar (Explorador de esquemas XML)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,7 +28,7 @@ En este tema se describe las opciones que están disponibles a través de la **o
   
 - **Mostrar archivos de esquema**.  
   
-- **Mostrar compositores (secuencia/choice/all)**.  
+- **Mostrar compositores (secuencia/choice/all)** .  
   
 ## <a name="sorting-options"></a>Opciones de ordenación  
  Están disponibles las opciones de ordenación siguientes: El valor predeterminado es **ordenar por tipo**. Las opciones de ordenación no se aplican a archivos ni espacios de nombres.  

@@ -28,11 +28,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: e79fadcab1a4f00c084d675c3267b5886772fe2c
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58988583"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68199880"
 ---
 # <a name="ltdependencygt-element-clickonce-application"></a>&lt;dependencia&gt; elemento (aplicación ClickOnce)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -99,23 +99,23 @@ Identifica una dependencia de plataforma o ensamblado que se requiere para la ap
   
  `dependentOS` admite los siguientes atributos.  
   
-|Atributo|Descripción|  
+|Atributo|DESCRIPCIÓN|  
 |---------------|-----------------|  
 |`supportUrl`|Opcional. Especifica una dirección URL de soporte técnico para la plataforma dependiente. Esta dirección URL se muestra al usuario si se encuentra la plataforma requerida.|  
 |`description`|Opcional. Se describe en forma legible, el sistema operativo descrito por el `dependentOS` elemento.|  
   
 ### <a name="osversioninfo"></a>osVersionInfo  
- Obligatorio. Este elemento es un elemento secundario del elemento `dependentOS` y contiene el elemento `os` . Este elemento no tiene atributos.  
+ Necesario. Este elemento es un elemento secundario del elemento `dependentOS` y contiene el elemento `os` . Este elemento no tiene atributos.  
   
 ### <a name="os"></a>Elementos y atributos  
- Obligatorio. Este elemento es un elemento secundario del elemento `osVersionInfo` . Este elemento tiene los atributos siguientes.  
+ Necesario. Este elemento es un elemento secundario del elemento `osVersionInfo` . Este elemento tiene los atributos siguientes.  
   
-|Atributo|Descripción|  
+|Atributo|DESCRIPCIÓN|  
 |---------------|-----------------|  
-|`majorVersion`|Obligatorio. Especifica el número de versión principal del sistema operativo.|  
-|`minorVersion`|Obligatorio. Especifica el número de versión secundaria del sistema operativo.|  
-|`buildNumber`|Obligatorio. Especifica el número de compilación del sistema operativo.|  
-|`servicePackMajor`|Obligatorio. Especifica el número principal de service pack del sistema operativo.|  
+|`majorVersion`|Necesario. Especifica el número de versión principal del sistema operativo.|  
+|`minorVersion`|Necesario. Especifica el número de versión secundaria del sistema operativo.|  
+|`buildNumber`|Necesario. Especifica el número de compilación del sistema operativo.|  
+|`servicePackMajor`|Necesario. Especifica el número principal de service pack del sistema operativo.|  
 |`servicePackMinor`|Opcional. Especifica el número secundario de service pack del sistema operativo.|  
 |`productType`|Opcional. Identifica el valor de tipo de producto. Valores válidos son `server`, `workstation` y `domainController`. Por ejemplo, para Windows 2000 Professional, este valor de atributo es `workstation`.|  
 |`suiteType`|Opcional. Identifica un conjunto de productos disponible en el sistema o el tipo de configuración del sistema. Los valores válidos son `backoffice`, `blade`, `datacenter`, `enterprise`, `home`, `professional`, `smallbusiness`, `smallbusinessRestricted` y `terminal`. Por ejemplo, para Windows 2000 Professional, este valor de atributo es `professional`.|  
@@ -125,21 +125,21 @@ Identifica una dependencia de plataforma o ensamblado que se requiere para la ap
   
  `dependentAssembly` tiene los siguientes atributos.  
   
-|Atributo|Descripción|  
+|Atributo|DESCRIPCIÓN|  
 |---------------|-----------------|  
-|`dependencyType`|Obligatorio. Especifica el tipo de dependencia. Los valores válidos son `preprequisite` y `install`. Un `install` ensamblado se instala como parte de la [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] aplicación. Un `prerequisite` ensamblado debe estar presente en la caché de ensamblados global (GAC) antes de la [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] puede instalar la aplicación.|  
-|`allowDelayedBinding`|Obligatorio. Especifica si el ensamblado se puede cargar mediante programación en tiempo de ejecución.|  
+|`dependencyType`|Necesario. Especifica el tipo de dependencia. Los valores válidos son `preprequisite` y `install`. Un `install` ensamblado se instala como parte de la [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] aplicación. Un `prerequisite` ensamblado debe estar presente en la caché de ensamblados global (GAC) antes de la [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] puede instalar la aplicación.|  
+|`allowDelayedBinding`|Necesario. Especifica si el ensamblado se puede cargar mediante programación en tiempo de ejecución.|  
 |`group`|Opcional. Si el `dependencyType` atributo está establecido en `install`, designa un grupo de ensamblados con nombre que solo se instalan a petición. Para obtener más información, vea [Tutorial: Descarga de ensamblados a petición con la API de implementación ClickOnce mediante el diseñador](../deployment/walkthrough-downloading-assemblies-on-demand-with-the-clickonce-deployment-api-using-the-designer.md).<br /><br /> Si establece en `framework` y `dependencyType` atributo está establecido en `prerequisite`, designa el ensamblado como parte de .NET Framework. No se comprueba la caché de ensamblado global (GAC) para este ensamblado cuando se instala en [!INCLUDE[net_v40_short](../includes/net-v40-short-md.md)] y versiones posteriores.|  
 |`codeBase`|Obligatorio cuando el `dependencyType` atributo está establecido en `install`. La ruta de acceso al ensamblado dependiente. Puede ser una ruta de acceso absoluta o una ruta de acceso en relación con el código del manifiesto a la base. Esta ruta de acceso debe ser un URI válido en orden para el manifiesto del ensamblado sea válido.|  
 |`size`|Obligatorio cuando el `dependencyType` atributo está establecido en `install`. El tamaño del ensamblado dependiente, en bytes.|  
   
 ### <a name="assemblyidentity"></a>assemblyIdentity  
- Obligatorio. Este elemento es un elemento secundario del elemento `dependentAssembly` y tiene los atributos siguientes.  
+ Necesario. Este elemento es un elemento secundario del elemento `dependentAssembly` y tiene los atributos siguientes.  
   
-|Atributo|Descripción|  
+|Atributo|DESCRIPCIÓN|  
 |---------------|-----------------|  
-|`name`|Obligatorio. Identifica el nombre de la aplicación.|  
-|`version`|Obligatorio. Especifica el número de versión de la aplicación en el formato siguiente: `major.minor.build.revision`|  
+|`name`|Necesario. Identifica el nombre de la aplicación.|  
+|`version`|Necesario. Especifica el número de versión de la aplicación en el formato siguiente: `major.minor.build.revision`|  
 |`publicKeyToken`|Opcional. Especifica una cadena hexadecimal de 16 caracteres que representa los últimos 8 bytes de la `SHA-1` valor hash de la clave pública con la que se firma la aplicación o el ensamblado. La clave pública utilizada para firmar el catálogo debe ser 2048 bits o más.|  
 |`processorArchitecture`|Opcional. Especifica el procesador. Los valores válidos son `x86` para Windows de 32 bits y `I64` para Windows de 64 bits.|  
 |`language`|Opcional. Identifica los códigos de idioma de dos partes, como EN-US, del ensamblado.|  
@@ -155,14 +155,14 @@ Identifica una dependencia de plataforma o ensamblado que se requiere para la ap
 ### <a name="dsigtransform"></a>dsig: Transform  
  El `dsig:Transform` elemento es un elemento secundario necesario de la `dsig:Transforms` elemento. El elemento `dsig:Transform` tiene los atributos siguientes:  
   
-|Atributo|Descripción|  
+|Atributo|DESCRIPCIÓN|  
 |---------------|-----------------|  
 |`Algorithm`|El algoritmo utilizado para calcular la síntesis de este archivo. Actualmente el único valor utilizado por [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] es `urn:schemas-microsoft-com:HashTransforms.Identity`.|  
   
 ### <a name="dsigdigestmethod"></a>dsig:DigestMethod  
  El `dsig:DigestMethod` elemento es un elemento secundario necesario de la `hash` elemento. El elemento `dsig:DigestMethod` tiene los atributos siguientes:  
   
-|Atributo|Descripción|  
+|Atributo|DESCRIPCIÓN|  
 |---------------|-----------------|  
 |`Algorithm`|El algoritmo utilizado para calcular la síntesis de este archivo. Actualmente el único valor utilizado por [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] es `http://www.w3.org/2000/09/xmldsig#sha1`.|  
   

@@ -1,5 +1,5 @@
 ---
-title: Filtrar Mostrar las propiedades de mensaje | Documentos de Microsoft
+title: Procedimiento Mostrar las propiedades de mensaje | Documentos de Microsoft
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -12,13 +12,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: b440d2883a06b41b751b6ae84e41b118e864cfec
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58999655"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68205373"
 ---
-# <a name="how-to-display-message-properties"></a>Filtrar Presentación de las propiedades de los mensajes
+# <a name="how-to-display-message-properties"></a>Procedimiento Presentación de las propiedades de los mensajes
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Para obtener más información acerca de un mensaje que aparece en [vista mensajes](../debugger/messages-view.md), utilice el [cuadro de diálogo de propiedades de mensaje](../debugger/message-properties-dialog-box.md).  

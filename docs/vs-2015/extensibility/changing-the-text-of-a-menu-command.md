@@ -13,11 +13,11 @@ caps.latest.revision: 26
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: d8fd3fc01a5dd3e10e633b876b719695d6b26c18
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60072986"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68184493"
 ---
 # <a name="changing-the-text-of-a-menu-command"></a>Cambio del texto de un comando de menú
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
