@@ -6,13 +6,12 @@ manager: evelynp
 ms.date: 03/14/2018
 ms.topic: conceptual
 description: Suscripciones de Visual Studio en un Contrato de servicios y productos de Microsoft (MPSA)
-searchscope: VS Subscription
-ms.openlocfilehash: ac051650c26dc2dbb7c6ee6d9405963536dd98c9
-ms.sourcegitcommit: 25570fb5fb197318a96d45160eaf7def60d49b2b
+ms.openlocfilehash: 30437703029128232c82d0f4cc4441f09cbd9123
+ms.sourcegitcommit: 208395bc122f8d3dae3f5e5960c42981cc368310
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/30/2019
-ms.locfileid: "66402174"
+ms.lasthandoff: 07/10/2019
+ms.locfileid: "67784401"
 ---
 # <a name="visual-studio-subscriptions-in-a-microsoft-products-and-services-agreement-mpsa"></a>Suscripciones de Visual Studio en un Contrato de servicios y productos de Microsoft (MPSA)
 

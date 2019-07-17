@@ -6,13 +6,12 @@ manager: evelynp
 ms.date: 10/03/2017
 ms.topic: conceptual
 description: Sepa cómo obtener y administrar las claves de producto en las suscripciones de Visual Studio.
-searchscope: VS Subscription
-ms.openlocfilehash: 74d13602dd27669233cd40ebdd2f5e165c09079a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d4874f5b0d429db7102facfe7f4747d68134fca2
+ms.sourcegitcommit: 208395bc122f8d3dae3f5e5960c42981cc368310
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62977737"
+ms.lasthandoff: 07/10/2019
+ms.locfileid: "67785024"
 ---
 # <a name="using-product-keys-in-visual-studio-subscriptions"></a>Uso de claves de producto en suscripciones de Visual Studio
 
@@ -55,7 +54,7 @@ Según cuál sea el producto, hay disponibles diversos tipos de clave.
 
 ### <a name="product-key-types"></a>Tipos de clave de producto
 
-|    Tipo de clave           |    Descripción                                                                                                                                                                                                           |
+|    Tipo de clave           |    DESCRIPCIÓN                                                                                                                                                                                                           |
 |-------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 |    No es aplicable                    |    No se requiere clave para instalar este producto.                                                       |
 |    Venta directa                     |    Las claves comerciales permiten varias activaciones y se usan para compilaciones minoristas del producto. En muchos casos se permiten 10 activaciones por clave, aunque a menudo se permiten más en el mismo equipo.                                                       |

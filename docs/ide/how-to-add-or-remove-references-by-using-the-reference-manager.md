@@ -21,12 +21,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 32bc3b0a06b7bfb8c012239b256460ad832ac3a1
-ms.sourcegitcommit: d4920babfc3d24a3fe1d4bf446ed3fe73b344467
+ms.openlocfilehash: b0c20408fc7fc2bc15056c9668c90b5870ecf446
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/17/2019
-ms.locfileid: "67160168"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67825488"
 ---
 # <a name="how-to-add-or-remove-references-by-using-the-reference-manager"></a>Procedimiento Agregar o quitar referencias con el Administrador de referencias
 
@@ -105,33 +105,33 @@ No se deben agregar referencias de archivos a resultados de otro proyecto de la 
 
 - Desplace o copie el ensamblado en una de las ubicaciones siguientes:
 
-   - Directorio del proyecto actual. (Puede buscar estos ensamblados utilizando la ficha **Examinar** .)
+  - Directorio del proyecto actual. (Puede buscar estos ensamblados utilizando la ficha **Examinar** .)
 
-   - Otros directorios del proyecto de la misma solución. (Puede buscar estos ensamblados mediante la pestaña **Proyectos**).
+  - Otros directorios del proyecto de la misma solución. (Puede buscar estos ensamblados mediante la pestaña **Proyectos**).
 
-    \- o -
+  \- o -
 
 - Establezca una clave del Registro que especifique la ubicación de los ensamblados que se van a mostrar:
 
-   Para un sistema operativo de 32 bits, agregue una de las siguientes claves del Registro.
+  Para un sistema operativo de 32 bits, agregue una de las siguientes claves del Registro.
 
-   - `[HKEY_CURRENT_USER\SOFTWARE\Microsoft\.NETFramework\<VersionMinimum>\AssemblyFoldersEx\MyAssemblies]@="<AssemblyLocation>"`
+  - `[HKEY_CURRENT_USER\SOFTWARE\Microsoft\.NETFramework\<VersionMinimum>\AssemblyFoldersEx\MyAssemblies]@="<AssemblyLocation>"`
 
-   - `[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\.NETFramework\<VersionMinimum>\AssemblyFoldersEx\MyAssemblies]@="<AssemblyLocation>"`
+  - `[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\.NETFramework\<VersionMinimum>\AssemblyFoldersEx\MyAssemblies]@="<AssemblyLocation>"`
 
-   Para un sistema operativo de 64 bits, agregue una de las siguientes claves del Registro en un subárbol del Registro de 32 bits.
+  Para un sistema operativo de 64 bits, agregue una de las siguientes claves del Registro en un subárbol del Registro de 32 bits.
 
-   - `[HKEY_CURRENT_USER\SOFTWARE\Wow6432Node\Microsoft\.NETFramework\<VersionMinimum>\AssemblyFoldersEx\MyAssemblies]@="<AssemblyLocation>"`
+  - `[HKEY_CURRENT_USER\SOFTWARE\Wow6432Node\Microsoft\.NETFramework\<VersionMinimum>\AssemblyFoldersEx\MyAssemblies]@="<AssemblyLocation>"`
 
-   - `[HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\.NETFramework\<VersionMinimum>\AssemblyFoldersEx\MyAssemblies]@="<AssemblyLocation>"`
+  - `[HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\.NETFramework\<VersionMinimum>\AssemblyFoldersEx\MyAssemblies]@="<AssemblyLocation>"`
 
-   *\<VersionMinimum\>* es la versión del marco más antigua aplicable. Si *\<VersionMinimum\>* es v3.0, las carpetas especificadas en *AssemblyFoldersEx* se aplican a proyectos cuyo destino es .NET Framework 3.0 y versiones posteriores.
+  *\<VersionMinimum\>* es la versión del marco más antigua aplicable. Si *\<VersionMinimum\>* es v3.0, las carpetas especificadas en *AssemblyFoldersEx* se aplican a proyectos cuyo destino es .NET Framework 3.0 y versiones posteriores.
 
-   *\<AssemblyLocation\>* es el directorio de los ensamblados que quiere que aparezcan en el cuadro de diálogo **Agregar referencia**, por ejemplo, *C:\MyAssemblies*.
+  *\<AssemblyLocation\>* es el directorio de los ensamblados que quiere que aparezcan en el cuadro de diálogo **Agregar referencia**, por ejemplo, *C:\MyAssemblies*.
 
-   La creación de la clave del Registro en el nodo `HKEY_LOCAL_MACHINE` permite que todos los usuarios vean los ensamblados de la ubicación especificada en el cuadro de diálogo **Agregar referencia**. Crear la clave del Registro en el nodo `HKEY_CURRENT_USER` únicamente afecta a la configuración del usuario actual.
+  La creación de la clave del Registro en el nodo `HKEY_LOCAL_MACHINE` permite que todos los usuarios vean los ensamblados de la ubicación especificada en el cuadro de diálogo **Agregar referencia**. Crear la clave del Registro en el nodo `HKEY_CURRENT_USER` únicamente afecta a la configuración del usuario actual.
 
-   Abra de nuevo el cuadro de diálogo **Agregar referencia**. Los ensamblados deben aparecer en la pestaña **.NET**. Si no es así, asegúrese de que los ensamblados se encuentren en el directorio *AssemblyLocation* especificado, reinicie Visual Studio e inténtelo de nuevo.
+  Abra de nuevo el cuadro de diálogo **Agregar referencia**. Los ensamblados deben aparecer en la pestaña **.NET**. Si no es así, asegúrese de que los ensamblados se encuentren en el directorio *AssemblyLocation* especificado, reinicie Visual Studio e inténtelo de nuevo.
 
 ## <a name="projects-tab"></a>Pestaña Proyectos
 

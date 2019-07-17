@@ -6,13 +6,12 @@ manager: evelynp
 ms.date: 12/19/2018
 ms.topic: conceptual
 description: Vea cómo activar el beneficio de Azure que se incluye con la suscripción de Visual Studio.
-searchscope: VS Subscription
-ms.openlocfilehash: e48430ecfb2632c9ed2cd80341055a75c9d86461
-ms.sourcegitcommit: 91c7f1b525e0c22d938bc4080ba4ceac2483474f
+ms.openlocfilehash: 542f460e6c228564e05affd9467f6deaaf2b0506
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/12/2019
-ms.locfileid: "67032208"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67823743"
 ---
 # <a name="use-microsoft-azure-in-visual-studio-subscriptions"></a>Usar Microsoft Azure en suscripciones de Visual Studio
 
@@ -108,7 +107,7 @@ Si cree que ha recibido este correo electrónico por error, póngase en contacto
 ## <a name="support-resources"></a>Recursos de soporte técnico
 
 - ¿Necesita ayuda con Azure?  Consulte estos recursos:
-    - Soporte técnico: [https://azure.microsoft.com/support/options/](https://azure.microsoft.com/support/options/)
-    - [Documentación de Azure](/azure/)
+  - Soporte técnico: [https://azure.microsoft.com/support/options/](https://azure.microsoft.com/support/options/)
+  - [Documentación de Azure](/azure/)
 - Para obtener ayuda con las ventas, las suscripciones, las cuentas y la facturación para suscripciones de Visual Studio, póngase en contacto con el [soporte para suscripciones](https://visualstudio.microsoft.com/subscriptions/support/) de Visual Studio.
 - ¿Tiene alguna pregunta sobre el IDE de Visual Studio, Azure DevOps Services u otros productos o servicios de Visual Studio?  Visite el [soporte técnico de Visual Studio](https://visualstudio.microsoft.com/support/).

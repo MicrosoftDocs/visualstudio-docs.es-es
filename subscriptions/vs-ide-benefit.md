@@ -6,13 +6,12 @@ manager: lank
 ms.date: 04/03/2019
 ms.topic: conceptual
 description: Obtenga información sobre cómo descargar e instalar el IDE de Visual Studio incluido en la suscripción a Visual Studio.
-searchscope: VS Subscription
-ms.openlocfilehash: 1614df094c043c4b3a758409c1cff3c73b56abf6
-ms.sourcegitcommit: 32144a09ed46e7223ef7dcab647a9f73afa2dd55
+ms.openlocfilehash: 6b3e53604eb275b6fec867ef2470c57d47aaa510
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/05/2019
-ms.locfileid: "67586931"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67824652"
 ---
 # <a name="using-the-visual-studio-2019-benefit"></a>Uso de la ventaja de Visual Studio 2019
 
@@ -79,6 +78,6 @@ Para descargar el IDE:
 
 ## <a name="support-resources"></a>Recursos de soporte técnico
 - Si necesita ayuda con el IDE de Visual Studio, consulte estos recursos:
-    - Soporte técnico: [https://visualstudio.microsoft.com/support/](https://visualstudio.microsoft.com/support/)
-    - [Documentación](/visualstudio/)
+  - Soporte técnico: [https://visualstudio.microsoft.com/support/](https://visualstudio.microsoft.com/support/)
+  - [Documentación](/visualstudio/)
 - Para obtener ayuda con las ventas, las suscripciones, las cuentas y la facturación para suscripciones de Visual Studio, póngase en contacto con el [soporte para suscripciones](https://visualstudio.microsoft.com/subscriptions/support/) de Visual Studio.

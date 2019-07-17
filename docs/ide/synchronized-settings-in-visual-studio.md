@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1ff663a7d2a22f152b3a0b9081623766535f9a53
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 9f567e07ea085844672f04194e4a4ffc5a9318e4
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62950421"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67824810"
 ---
 # <a name="synchronize-visual-studio-settings-across-multiple-computers"></a>Sincronizar la configuración de Visual Studio en varios equipos
 
@@ -31,19 +31,19 @@ De forma predeterminada, se sincroniza la configuración siguiente:
 
 - Las siguientes opciones en las páginas **Herramientas** > **Opciones**:
 
-   - La configuración de uso de mayúsculas y minúsculas de la barra de menús y de Tema en la página de opciones **Entorno** > **General**.
+  - La configuración de uso de mayúsculas y minúsculas de la barra de menús y de Tema en la página de opciones **Entorno** > **General**.
 
-   - Todos los valores de la página de opciones **Entorno** > **Fuentes y colores**.
+  - Todos los valores de la página de opciones **Entorno** > **Fuentes y colores**.
 
-   - Todos los métodos abreviados de teclado en la página de opciones **Entorno** > **Teclado**.
+  - Todos los métodos abreviados de teclado en la página de opciones **Entorno** > **Teclado**.
 
-   - Todos los valores de la página de opciones **Entorno** > **Pestañas y ventanas**.
+  - Todos los valores de la página de opciones **Entorno** > **Pestañas y ventanas**.
 
-   - Todos los valores de la página de opciones **Entorno** > **Inicio**.
+  - Todos los valores de la página de opciones **Entorno** > **Inicio**.
 
-   - Todos los valores de las páginas de opciones **Editor de texto**, por ejemplo, las [preferencias de estilo del código](code-styles-and-quick-actions.md).
+  - Todos los valores de las páginas de opciones **Editor de texto**, por ejemplo, las [preferencias de estilo del código](code-styles-and-code-cleanup.md).
 
-   - Todos los valores de las páginas de opciones **Diseñador XAML**.
+  - Todos los valores de las páginas de opciones **Diseñador XAML**.
 
 ## <a name="turn-off-synchronized-settings-on-a-particular-computer"></a>Desactivar la configuración sincronizada en un equipo concreto
 

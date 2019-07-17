@@ -6,17 +6,17 @@ helpviewer_keywords:
 - Help Viewer, logical operators in search
 - logical operators in search [Help Viewer]
 ms.assetid: 0c38ae7d-3e20-4d47-a020-9677cd285916
-author: gewarren
-ms.author: gewarren
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0005198cc20c31d1819399193350dc9dda191ab4
-ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.openlocfilehash: 0e241df6c32fc1b0a8e88942fe5d0d178c37b9bf
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "66261253"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67824898"
 ---
 # <a name="logical-and-advanced-operators-in-search-expressions"></a>Operadores lógicos y avanzados en expresiones de búsqueda
 

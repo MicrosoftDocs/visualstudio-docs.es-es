@@ -7,12 +7,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 8721d85c7fb3aba513a15fe276adbb2b17496351
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: dc94f3486a4a290dbcdff40303f58b8b42f3f9d9
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62990497"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67825864"
 ---
 # <a name="troubleshoot-code-coverage"></a>Solucionar problemas de cobertura de código
 
@@ -97,11 +97,11 @@ Resolución: hay dos posibles tipos de errores que se indican a continuación.
 
 - **Error de expresión regular**
 
-     Cada cadena del archivo es una expresión regular. Revise cada una de ellas en busca de errores y, en particular, busque:
+  Cada cadena del archivo es una expresión regular. Revise cada una de ellas en busca de errores y, en particular, busque:
 
-    - Paréntesis no coincidentes (...) o paréntesis sin escape \\(...\\). Si desea asociar un paréntesis en la cadena de búsqueda, debe indicar su secuencia de escape. Por ejemplo, para hacer coincidir una función, use: `.*MyFunction\(double\)`
+  - Paréntesis no coincidentes (...) o paréntesis sin escape \\(...\\). Si desea asociar un paréntesis en la cadena de búsqueda, debe indicar su secuencia de escape. Por ejemplo, para hacer coincidir una función, use: `.*MyFunction\(double\)`
 
-    - Asterisco o signo más al principio de una expresión. Para asociar cualquier cadena de caracteres, use un punto seguido de un asterisco: `.*`
+  - Asterisco o signo más al principio de una expresión. Para asociar cualquier cadena de caracteres, use un punto seguido de un asterisco: `.*`
 
 ### <a name="custom-runsettings-file-with-incorrect-exclusions"></a>Archivo .runsettings personalizado con exclusiones incorrectas
 

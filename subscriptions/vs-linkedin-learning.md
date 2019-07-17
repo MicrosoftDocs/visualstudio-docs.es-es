@@ -6,13 +6,12 @@ manager: evelynp
 ms.date: 12/19/2018
 ms.topic: conceptual
 description: Obtenga información sobre el beneficio de LinkedIn Learning incluido como parte de una suscripción a LinkedIn Premium incluida en suscripciones seleccionadas de Visual Studio.
-searchscope: VS Subscription
-ms.openlocfilehash: eee217bf15a89d24799997c926d598288cec5277
-ms.sourcegitcommit: 91c7f1b525e0c22d938bc4080ba4ceac2483474f
+ms.openlocfilehash: 2ae1bd5442a062514525df3d1bada70eba71a81d
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/12/2019
-ms.locfileid: "67032859"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67824797"
 ---
 # <a name="the-linkedin-learning-benefit-in-visual-studio-subscriptions"></a>Beneficio de LinkedIn Learning en suscripciones de Visual Studio
 
@@ -110,7 +109,7 @@ R:  No, la oferta de LinkedIn Learning solo está disponible para nuevos suscrip
 
 ## <a name="support-resources"></a>Recursos de soporte técnico
 - ¿Necesita ayuda con LinkedIn Learning?  Consulte estos recursos:
-    - Ayuda con el [uso de LinkedIn Learning](https://www.linkedin.com/help/learning).
-    - Ayuda con preguntas generales sobre [LinkedIn](https://www.linkedin.com/help/linkedin), como la creación de cuentas y perfiles y el mantenimiento de la red.
+  - Ayuda con el [uso de LinkedIn Learning](https://www.linkedin.com/help/learning).
+  - Ayuda con preguntas generales sobre [LinkedIn](https://www.linkedin.com/help/linkedin), como la creación de cuentas y perfiles y el mantenimiento de la red.
 - Para obtener ayuda con las ventas, las suscripciones, las cuentas y la facturación para suscripciones de Visual Studio, póngase en contacto con el [soporte para suscripciones](https://visualstudio.microsoft.com/subscriptions/support/) de Visual Studio.
 - ¿Tiene alguna pregunta sobre el IDE de Visual Studio, Azure DevOps Services u otros productos o servicios de Visual Studio?  Visite el [soporte técnico de Visual Studio](https://visualstudio.microsoft.com/support/).

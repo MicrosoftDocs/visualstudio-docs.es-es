@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b90a80ffb958fb08a39a4f3b7f4350aa80d830d2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 41e15982734731defabd79416c73eef4538f0c04
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62788757"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67824241"
 ---
 # <a name="manage-test-controllers-and-test-agents"></a>Administrar controladores de pruebas y agentes de pruebas
 
@@ -76,7 +76,7 @@ Quizás desee agregar un agente de prueba a un controlador de pruebas diferente 
         > [!WARNING]
         > Puede poner en peligro la seguridad si inicia sesión automáticamente o deshabilita el protector de pantalla. Si habilita el inicio de sesión automático, otros usuarios podrán iniciar ese equipo y utilizar la cuenta que se usa para el inicio de sesión automático. Si deshabilita el protector de pantalla, es posible que el equipo no pida al usuario que inicie sesión para desbloquearlo. De este modo, cualquier usuario podrá obtener acceso al equipo si tienen acceso físico a él. Si habilita estas características en un equipo, debe asegurarse de que estos equipos están físicamente protegidos. Por ejemplo, estos equipos se encuentran en un laboratorio físicamente protegido. Si desactiva **Comprobar que el protector de pantalla esté deshabilitado**, no se habilitará el protector de pantalla.
 
-3. Para registrar este agente con un controlador de pruebas diferente, seleccione **Registrar con controlador de pruebas**. Escriba el nombre del controlador de pruebas seguido de un signo de dos puntos (**:**) y el número de puerto que use en **Registrar el agente de prueba con el siguiente controlador de pruebas**. Por ejemplo, escriba **agent1:6901**.
+3. Para registrar este agente con un controlador de pruebas diferente, seleccione **Registrar con controlador de pruebas**. Escriba el nombre del controlador de pruebas seguido de un signo de dos puntos ( **:** ) y el número de puerto que use en **Registrar el agente de prueba con el siguiente controlador de pruebas**. Por ejemplo, escriba **agent1:6901**.
 
     > [!NOTE]
     > El número de puerto predeterminado es 6901.
@@ -114,7 +114,7 @@ Para poder quitar un agente de prueba, es necesario que esté sin conexión.
 
 El agente de prueba puede encontrarse en uno de los siguientes estados:
 
-|Situación|Descripción|
+|Situación|DESCRIPCIÓN|
 |-|-----------------|
 |Ejecutando prueba|Ejecutar pruebas|
 |Listo|Disponible para la ejecución de pruebas y para la recopilación de datos y diagnósticos.|
@@ -140,7 +140,7 @@ Para cambiar el estado y otras configuraciones de un agente de prueba, siga los 
 
 1. Cambie las siguientes propiedades de agente de prueba según corresponda:
 
-|Propiedad del agente de prueba|Descripción|
+|Propiedad del agente de prueba|DESCRIPCIÓN|
 |-|-----------------|
 |**Peso**|Sirve para distribuir la carga cuando se utilizan agentes de prueba con diferentes niveles de rendimiento. Por ejemplo, un agente de prueba con un peso de 100 recibe dos veces la carga de un agente de prueba con un peso de 50.|
 |**Conmutación de IP**|Sirve para configurar la conmutación de IP. La conmutación de IP permite que un agente de prueba envíe solicitudes a un servidor utilizando un intervalo de direcciones IP. De esta forma se simulan llamadas procedentes de diferentes equipos cliente.<br /><br /> La conmutación de IP es importante si la prueba de carga accede a una granja de servidores web. La mayoría de los equilibradores de carga establecen una afinidad entre un cliente y un servidor web determinado mediante la dirección IP del cliente. Si aparentemente todas las solicitudes proceden del mismo cliente, el equilibrador de carga no equilibrará la carga. Para obtener un buen equilibrio de carga en la granja de servidores web, asegúrese de que las solicitudes procedan de un intervalo de direcciones IP. **Nota:**  Puede especificar un adaptador de red o usar **(Todas sin asignar)** para seleccionar de forma automática una dirección que no esté en uso. <br /><br /> Para poder usar la característica de conmutación de IP, es preciso que el servicio Visual Studio Test Agent se ejecute como usuario del grupo Administradores de ese equipo de agente. Este usuario se selecciona durante la instalación del agente, pero se puede cambiar modificando las propiedades del servicio y reiniciándolo.<br /><br /> Para comprobar que la conmutación de IP funciona correctamente, habilite el registro de IIS en el servidor web y utilice la funcionalidad de registro de IIS para comprobar que las solicitudes proceden de las direcciones IP configuradas.|
@@ -186,25 +186,25 @@ En el momento de agregar roles para la aplicación a la configuración de prueba
 
 - No hay ningún agente disponible para el rol que debe ejecutar las pruebas. No se pueden ejecutar las pruebas. Podrá realizar una de las siguientes acciones y, a continuación, ejecutar de nuevo las pruebas:
 
-    - Podrá esperar a que haya un agente disponible para este rol a fin de ejecutar las pruebas.
+  - Podrá esperar a que haya un agente disponible para este rol a fin de ejecutar las pruebas.
 
-    - Si hay algún agente sin conexión que se pueda utilizar para este rol, podrá reiniciar el agente de modo que esté disponible.
+  - Si hay algún agente sin conexión que se pueda utilizar para este rol, podrá reiniciar el agente de modo que esté disponible.
 
-    - Podrá agregar al controlador de pruebas otro agente con las propiedades correctas para ese rol.
+  - Podrá agregar al controlador de pruebas otro agente con las propiedades correctas para ese rol.
 
-    - Podrá cambiar las propiedades de agente para este rol en la configuración de pruebas para habilitar otros agentes que desee utilizar.
+  - Podrá cambiar las propiedades de agente para este rol en la configuración de pruebas para habilitar otros agentes que desee utilizar.
 
 - No hay ningún agente disponible para uno o varios roles que ejecutan los adaptadores de datos de diagnóstico. Se pueden ejecutar las pruebas, pero no se puede ejecutar el adaptador de datos de diagnóstico. Podrá ejecutar las pruebas sin adaptador de datos de diagnóstico o podrá realizar una de las siguientes acciones y ejecutar de nuevo las pruebas:
 
-    - Podrá esperar a que haya un agente disponible para estos roles.
+  - Podrá esperar a que haya un agente disponible para estos roles.
 
-    - Si hay algún agente sin conexión que se pueda usar para este rol, deberá cambiar su estado a En línea desde **Administrar controlador de pruebas** en el menú **Prueba**. Además, es posible que tenga que reiniciar el agente si ha estado desconectado del controlador.
+  - Si hay algún agente sin conexión que se pueda usar para este rol, deberá cambiar su estado a En línea desde **Administrar controlador de pruebas** en el menú **Prueba**. Además, es posible que tenga que reiniciar el agente si ha estado desconectado del controlador.
 
-    - Compruebe que los agentes que necesite para esta ejecución de pruebas no estén ejecutando pruebas. Podrá comprobar el estado de cualquier agente desde **Administrar controlador de pruebas** en el menú **Prueba**.
+  - Compruebe que los agentes que necesite para esta ejecución de pruebas no estén ejecutando pruebas. Podrá comprobar el estado de cualquier agente desde **Administrar controlador de pruebas** en el menú **Prueba**.
 
-    - Podrá agregar al controlador de pruebas otro agente con las propiedades correctas para el rol.
+  - Podrá agregar al controlador de pruebas otro agente con las propiedades correctas para el rol.
 
-    - Podrá cambiar las propiedades de agente para el rol en la configuración de pruebas para habilitar otros agentes que desee utilizar.
+  - Podrá cambiar las propiedades de agente para el rol en la configuración de pruebas para habilitar otros agentes que desee utilizar.
 
 ## <a name="load-tests-from-delay-signed-assemblies"></a>Cargar pruebas de ensamblados con firma retardada
 

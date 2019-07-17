@@ -6,13 +6,12 @@ manager: evelynp
 ms.date: 04/10/2018
 ms.topic: conceptual
 description: Cómo agregar una identidad alternativa a la suscripción de Visual Studio para usar Azure DevOps y Azure
-searchscope: vs subscription
-ms.openlocfilehash: 63a372d4a0e0e70a008f86a36aae73516bf42458
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: bec00f6e49ce04781ad69a56b30637b375000b6e
+ms.sourcegitcommit: 208395bc122f8d3dae3f5e5960c42981cc368310
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62428108"
+ms.lasthandoff: 07/10/2019
+ms.locfileid: "67784716"
 ---
 # <a name="identities-for-visual-studio-subscribers"></a>Identidades de los suscriptores de Visual Studio
 

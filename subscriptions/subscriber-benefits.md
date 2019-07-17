@@ -6,13 +6,12 @@ manager: lank
 ms.date: 06/28/2019
 ms.topic: conceptual
 description: Obtenga información sobre las ventajas incluidas en su suscripción de Visual Studio
-searchscope: VS Subscription
-ms.openlocfilehash: 27ec141156de16c4bca8862ed88f89731924d1af
-ms.sourcegitcommit: 32144a09ed46e7223ef7dcab647a9f73afa2dd55
+ms.openlocfilehash: 1677b280723fd3b2302dcc0c987c09fda5e4ec9b
+ms.sourcegitcommit: 208395bc122f8d3dae3f5e5960c42981cc368310
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/05/2019
-ms.locfileid: "67586987"
+ms.lasthandoff: 07/10/2019
+ms.locfileid: "67784848"
 ---
 # <a name="benefits-included-in-your-visual-studio-subscription"></a>Ventajas incluidas en su suscripción de Visual Studio
 

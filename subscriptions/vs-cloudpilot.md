@@ -6,13 +6,12 @@ manager: lank
 ms.date: 12/19/2018
 ms.topic: conceptual
 description: Obtenga información sobre la ventaja de CloudPilot disponible en las suscripciones de Visual Studio.
-searchscope: VS Subscription
-ms.openlocfilehash: 38b857ee9ba385f3b7be12be725712f338b248f7
-ms.sourcegitcommit: 91c7f1b525e0c22d938bc4080ba4ceac2483474f
+ms.openlocfilehash: 66de81b30d8eeb315353aa0b6aa37e75c50a19d6
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/12/2019
-ms.locfileid: "67032581"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67825919"
 ---
 # <a name="the-cloudpilot-benefit-in-visual-studio-subscriptions"></a>Ventaja de CloudPilot para suscripciones de Visual Studio
 
@@ -76,9 +75,9 @@ CloudPilot, de UnifyCloud, está diseñado para ayudar a los desarrolladores a t
 
 ## <a name="support-resources"></a>Recursos de soporte técnico
 - ¿Necesita ayuda con el uso de CloudPilot?  Consulte estos recursos:
-    - Para consultas sobre productos UnifyCloud, [póngase en contacto con UnifyCloud](https://www.unifycloud.com/contacts/).
-    - [Manual del usuario de CloudPilot](https://www.cloudatlasinc.com/cloudpilot/doc/CloudPilot-User-Manual.pdf )
-    - [Enviar una solicitud de soporte técnico](https://support.datacamp.com/hc/requests/new)
+  - Para consultas sobre productos UnifyCloud, [póngase en contacto con UnifyCloud](https://www.unifycloud.com/contacts/).
+  - [Manual del usuario de CloudPilot](https://www.cloudatlasinc.com/cloudpilot/doc/CloudPilot-User-Manual.pdf )
+  - [Enviar una solicitud de soporte técnico](https://support.datacamp.com/hc/requests/new)
 
 - Para obtener ayuda con las ventas, las suscripciones, las cuentas y la facturación para suscripciones de Visual Studio, póngase en contacto con el [soporte para suscripciones](https://visualstudio.microsoft.com/subscriptions/support/) de Visual Studio.
 - ¿Tiene alguna pregunta sobre el IDE de Visual Studio, Azure DevOps Services u otros productos o servicios de Visual Studio?  Visite el [soporte técnico de Visual Studio](https://visualstudio.microsoft.com/support/).

@@ -6,13 +6,12 @@ manager: evelynp
 ms.date: 12/19/2018
 ms.topic: conceptual
 description: Obtenga información sobre la suscripción de aprendizaje de DataCamp incluida en la suscripción de Visual Studio seleccionada.
-searchscope: VS Subscription
-ms.openlocfilehash: 8e29f5d13c9869995aad0b7a6793304b677d54ba
-ms.sourcegitcommit: 91c7f1b525e0c22d938bc4080ba4ceac2483474f
+ms.openlocfilehash: 5f5b327bb5b1c328fe746fdbafc1a7550eefacd6
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/12/2019
-ms.locfileid: "67032166"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67825342"
 ---
 # <a name="the-datacamp-training-benefit-in-visual-studio-subscriptions"></a>Beneficio de aprendizaje de DataCamp en suscripciones de Visual Studio
 
@@ -82,8 +81,8 @@ Puede parar en cualquier momento y reanudar el curso en la siguiente sesión.  S
 
 ## <a name="support-resources"></a>Recursos de soporte técnico
 - ¿Necesita ayuda con el uso de DataCamp?  Consulte estos recursos:
-    - [Comunidad de DataCamp](https://www.datacamp.com/community/tutorials), que incluye tutoriales y foros.
-    - [Centro de ayuda de DataCamp](https://support.datacamp.com/hc), donde puede buscar temas de soporte técnico y consultar preguntas de usuarios de solicitudes.
-    - [Enviar una solicitud de soporte técnico](https://support.datacamp.com/hc/requests/new)
+  - [Comunidad de DataCamp](https://www.datacamp.com/community/tutorials), que incluye tutoriales y foros.
+  - [Centro de ayuda de DataCamp](https://support.datacamp.com/hc), donde puede buscar temas de soporte técnico y consultar preguntas de usuarios de solicitudes.
+  - [Enviar una solicitud de soporte técnico](https://support.datacamp.com/hc/requests/new)
 - Para obtener ayuda con las ventas, las suscripciones, las cuentas y la facturación para suscripciones de Visual Studio, póngase en contacto con el [soporte para suscripciones](https://visualstudio.microsoft.com/subscriptions/support/) de Visual Studio.
 - ¿Tiene alguna pregunta sobre el IDE de Visual Studio, Azure DevOps Services u otros productos o servicios de Visual Studio?  Visite el [soporte técnico de Visual Studio](https://visualstudio.microsoft.com/support/).

@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: 1c3d0e7d30778580ac09bfd4476e44280c775a2c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b8654c9a414549c4e1fee4515d359bfce4555df8
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62844047"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67823829"
 ---
 # <a name="work-with-elements-in-xaml-designer"></a>Trabajar con elementos en el Diseñador XAML
 
@@ -43,15 +43,15 @@ Para cambiar el orden de distribución en capas, realice una de estas acciones:
 
 - En la ventana Esquema del documento o en la mesa de trabajo, haga clic con el botón derecho en el elemento cuyo orden de distribución en capas quiere cambiar, elija **Orden** y, después, haga clic en una de las opciones siguientes:
 
-   - **Traer al frente** para traer el elemento al primer plano del orden.
+  - **Traer al frente** para traer el elemento al primer plano del orden.
 
-   - **Traer adelante** para traer el elemento un nivel hacia adelante en el orden.
+  - **Traer adelante** para traer el elemento un nivel hacia adelante en el orden.
 
-   - **Enviar atrás** para enviar el elemento un nivel hacia atrás en el orden.
+  - **Enviar atrás** para enviar el elemento un nivel hacia atrás en el orden.
 
-   - **Enviar al fondo** para enviar el elemento a la última posición del orden.
+  - **Enviar al fondo** para enviar el elemento a la última posición del orden.
 
-   Cambie la propiedad **ZIndex** en la sección **Diseño** en la ventana Propiedades. En el caso de los elementos superpuestos, la propiedad **ZIndex** tiene prioridad sobre el orden de los elementos que se muestran en la ventana Esquema del documento. Cuando los elementos se superponen, aparece un elemento con un valor **ZIndex** más alto delante.
+  Cambie la propiedad **ZIndex** en la sección **Diseño** en la ventana Propiedades. En el caso de los elementos superpuestos, la propiedad **ZIndex** tiene prioridad sobre el orden de los elementos que se muestran en la ventana Esquema del documento. Cuando los elementos se superponen, aparece un elemento con un valor **ZIndex** más alto delante.
 
 ## <a name="change-the-alignment-of-an-element"></a>Cambio de la alineación de un elemento
 

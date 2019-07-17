@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3cc0cdb635c90275289f96c55ae68976ffc5edc9
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 8217a6aa349a31921ed454e76ddea306785dea9d
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62569685"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67825897"
 ---
 # <a name="compare-properties-and-items"></a>Comparación de propiedades y elementos
 Las propiedades y elementos de MSBuild se utilizan para pasar información a las tareas, evaluar condiciones y almacenar valores a los que se puede hacer referencia en el archivo del proyecto.
@@ -93,15 +93,15 @@ Sin embargo, esto no es todo. Cuando se define una propiedad, una definición de
 
 - Durante la fase de evaluación de una compilación:
 
-    - Las propiedades se definen y modifican en el orden en que aparecen. Las funciones de propiedad se ejecutan. Los valores de propiedad en la forma $(PropertyName) se expanden dentro de las expresiones. El valor de propiedad se establece en la expresión expandida.
+  - Las propiedades se definen y modifican en el orden en que aparecen. Las funciones de propiedad se ejecutan. Los valores de propiedad en la forma $(PropertyName) se expanden dentro de las expresiones. El valor de propiedad se establece en la expresión expandida.
 
-    - Las definiciones de elementos se definen y modifican en el orden en que aparecen. Las funciones de propiedad ya se han expandido dentro de las expresiones. Los valores de metadatos se establecen en las expresiones expandidas.
+  - Las definiciones de elementos se definen y modifican en el orden en que aparecen. Las funciones de propiedad ya se han expandido dentro de las expresiones. Los valores de metadatos se establecen en las expresiones expandidas.
 
-    - Los tipos de elemento se definen y modifican en el orden en que aparecen. Los valores de elemento en la forma @(ItemType) se expanden. Las transformaciones de elemento también se expanden. Las funciones de propiedad ya se han expandido dentro de las expresiones. La lista de elementos y los valores de metadatos se establecen en las expresiones expandidas.
+  - Los tipos de elemento se definen y modifican en el orden en que aparecen. Los valores de elemento en la forma @(ItemType) se expanden. Las transformaciones de elemento también se expanden. Las funciones de propiedad ya se han expandido dentro de las expresiones. La lista de elementos y los valores de metadatos se establecen en las expresiones expandidas.
 
 - Durante la fase de ejecución de una compilación:
 
-    - Las propiedades y los elementos que se definen dentro de los destinos se evalúan conjuntamente en el orden en que aparecen. Las funciones de propiedad se ejecutan y los valores de propiedad se expanden dentro de las expresiones. Los valores de elemento y las transformaciones de elemento también se expanden. Los valores de propiedad, de tipo de elemento y de metadatos se establecen en las expresiones expandidas.
+  - Las propiedades y los elementos que se definen dentro de los destinos se evalúan conjuntamente en el orden en que aparecen. Las funciones de propiedad se ejecutan y los valores de propiedad se expanden dentro de las expresiones. Los valores de elemento y las transformaciones de elemento también se expanden. Los valores de propiedad, de tipo de elemento y de metadatos se establecen en las expresiones expandidas.
 
 ### <a name="subtle-effects-of-the-evaluation-order"></a>Efectos sutiles del orden de evaluación
 En la fase de evaluación de una compilación, la evaluación de propiedades precede a la evaluación de elementos. No obstante, las propiedades pueden tener valores que parezcan depender de valores de elemento. Considere el script siguiente.

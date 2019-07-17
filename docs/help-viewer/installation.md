@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - installing Help Viewer
 - Help Viewer, installing
-author: gewarren
-ms.author: gewarren
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d61b101b4abf3829eed824ddf434af976cd4b276
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 192647adcda620d94ab516f6be30b4d37859e3c8
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62824647"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67824912"
 ---
 # <a name="microsoft-help-viewer-installation"></a>Instalación del Visor de Ayuda de Microsoft
 
@@ -37,7 +37,7 @@ Otra manera de instalar fácilmente el Visor de Ayuda de Microsoft es a través 
 
    ![Cuadro de búsqueda](media/installation/quick-launch.png)
 
-1. Elija el resultado denominado **Visor de Ayuda (componente individual)**.
+1. Elija el resultado denominado **Visor de Ayuda (componente individual)** .
 
 1. En el cuadro de diálogo que aparece, haga clic en el botón **Instalar**.
 

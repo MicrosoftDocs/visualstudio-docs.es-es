@@ -6,13 +6,12 @@ manager: evelynp
 ms.date: 12/19/2018
 ms.topic: conceptual
 description: Obtenga información sobre la suscripción de Power BI Pro incluida en la suscripción de Visual Studio seleccionada.
-searchscope: VS Subscription
-ms.openlocfilehash: 75c749d31e28ecdc463b0777744370680309fad7
-ms.sourcegitcommit: 91c7f1b525e0c22d938bc4080ba4ceac2483474f
+ms.openlocfilehash: d696a72cc1ab411c9bd01671d9b57e335f751261
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/12/2019
-ms.locfileid: "67031970"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67824628"
 ---
 # <a name="power-bi-pro-in-visual-studio-subscriptions"></a>Power BI Pro en suscripciones de Visual Studio
 
@@ -111,9 +110,9 @@ R:  No.  La ventaja de Power BI Pro no se puede agregar a inquilinos de administ
 
 ## <a name="support-resources"></a>Recursos de soporte técnico
 - ¿Necesita ayuda con Power BI Pro?
-    - Consulte la [documentación en línea](/power-bi/).
-    - ¿Tiene problemas con la suscripción?  Consulte [Registro en Power BI como usuario individual](/power-bi/service-self-service-signup-for-power-bi).
-    - Explore los principales problemas, obtenga ayuda de la comunidad o envíe una incidencia de soporte técnico en la [página de soporte técnico](https://powerbi.microsoft.com/support/).
+  - Consulte la [documentación en línea](/power-bi/).
+  - ¿Tiene problemas con la suscripción?  Consulte [Registro en Power BI como usuario individual](/power-bi/service-self-service-signup-for-power-bi).
+  - Explore los principales problemas, obtenga ayuda de la comunidad o envíe una incidencia de soporte técnico en la [página de soporte técnico](https://powerbi.microsoft.com/support/).
 - Para obtener ayuda con las ventas, las suscripciones, las cuentas y la facturación para suscripciones de Visual Studio, póngase en contacto con el [soporte para suscripciones](https://visualstudio.microsoft.com/subscriptions/support/) de Visual Studio.
 - ¿Tiene alguna pregunta sobre el IDE de Visual Studio, Azure DevOps Services u otros productos o servicios de Visual Studio?  Visite el [soporte técnico de Visual Studio](https://visualstudio.microsoft.com/support/).
 

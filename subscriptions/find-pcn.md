@@ -6,13 +6,12 @@ manager: evelynp
 ms.date: 12/29/2017
 ms.topic: conceptual
 description: Obtenga información sobre cómo buscar el número de cliente público (PCN) o el número de autorización
-searchscope: VS Subscription
-ms.openlocfilehash: b24654828cb0e44d6e064c01825feaaaff4558b0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ed9604d31a52aab8fa52a48ec627fc7ae7ec3288
+ms.sourcegitcommit: f369ff7e84b0216f01570a486c7be80ca6d0e61a
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62946136"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "68250679"
 ---
 # <a name="how-do-i-locate-my-public-customer-number-pcn-or-authorization-number"></a>¿Dónde está el "número de cliente público" o el "número de autorización"?
 
