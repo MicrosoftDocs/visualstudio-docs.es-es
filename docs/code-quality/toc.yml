@@ -690,6 +690,14 @@
                   href: ca3077-insecure-processing-in-api-design-xml-document-and-xml-text-reader.md
                 - name: 'CA3147: Marcar los controladores de verbo con ValidateAntiForgeryToken'
                   href: ca3147-mark-verb-handlers-with-validateantiforgerytoken.md
+                - name: 'CA5361: No deshabilitar el uso de cifrado seguro de SChannel'
+                  href: ca5361.md
+                - name: 'CA5364: No usar protocolos de seguridad en desuso'
+                  href: ca5364.md
+                - name: 'CA5378: No deshabilitar ServicePointManagerSecurityProtocols'
+                  href: ca5378.md
+                - name: 'CA5386: Evitar codificar el valor SecurityProtocolType de forma rígida'
+                  href: ca5386.md
             - name: Advertencias de uso
               items:
                 - name: Información general
