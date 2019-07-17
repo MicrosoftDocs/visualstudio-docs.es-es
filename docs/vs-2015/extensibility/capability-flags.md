@@ -11,18 +11,18 @@ caps.latest.revision: 25
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 831a52818cfc5c7b75c01a9551b70cd26b95dbcf
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58999537"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68184519"
 ---
 # <a name="capability-flags"></a>Marcas de capacidad
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 El SCC_CAP_*xxx* marcas son marcadores de bits que se utiliza para indicar las capacidades de un complemento de control de código fuente. El SCC_EXCAP_*xxx* marcas son incrementales marcas que indican las capacidades ampliadas y resolver en valores enteros.  
   
-|Código de capacidad|Valor|Descripción|  
+|Código de capacidad|Valor|DESCRIPCIÓN|  
 |---------------------|-----------|-----------------|  
 |`SCC_CAP_REMOVE`|0x00000001L|Admite la [SccRemove](../extensibility/sccremove-function.md) y comando.|  
 |`SCC_CAP_RENAME`|0x00000002L|Admite la [SccRename](../extensibility/sccrename-function.md) y comando.|  
@@ -52,7 +52,7 @@ El SCC_CAP_*xxx* marcas son marcadores de bits que se utiliza para indicar las c
   
 ## <a name="capability-bits-added-in-version-12"></a>Bits de capacidad agregadas en la versión 1.2  
   
-|Código de capacidad|Valor|Descripción|  
+|Código de capacidad|Value|DESCRIPCIÓN|  
 |---------------------|-----------|-----------------|  
 |`SCC_CAP_CREATESUBPROJECT`|0x00010000L|Admite la [SccCreateSubProject](../extensibility/scccreatesubproject-function.md).|  
 |`SCC_CAP_GETPARENTPROJECT`|0x00020000L|Admite la [SccGetParentProjectPath](../extensibility/sccgetparentprojectpath-function.md).|  
@@ -65,7 +65,7 @@ El SCC_CAP_*xxx* marcas son marcadores de bits que se utiliza para indicar las c
 ## <a name="capability-bits-added-in-version-13"></a>Bits de capacidad agregados en la versión 1.3  
  Estas marcas se pasan una vez a la [SccGetExtendedCapabilities](../extensibility/sccgetextendedcapabilities-function.md) función para determinar si se admite la capacidad.  
   
-|Código de la capacidad ampliada|Valor|Descripción|  
+|Código de la capacidad ampliada|Valor|DESCRIPCIÓN|  
 |------------------------------|-----------|-----------------|  
 |`SCC_EXCAP_CHECKOUT_LOCALVER`|1|Admite la `SCC_CHECKOUT_LOCALVER` opción desprotecciones.|  
 |`SCC_EXCAP_BACKGROUND_GET`|2|Admite la [SccBackgroundGet](../extensibility/sccbackgroundget-function.md).|  

@@ -9,11 +9,11 @@ caps.latest.revision: 5
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 681df08c02813e209738e629495190ad889caf31
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60095807"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68202091"
 ---
 # <a name="menus-and-commands-for-visual-studio"></a>Menús y comandos para Visual Studio
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -93,7 +93,7 @@ ms.locfileid: "60095807"
 
 - Proyecto
 
-- Compilar
+- Compilación
 
 - Depuración
 
@@ -283,7 +283,7 @@ ms.locfileid: "60095807"
 
 - **Siga las instrucciones de Windows para determinar qué modificador teclas emplear.** Usar combinaciones de teclas Ctrl para los comandos que tienen efectos a gran escala, como los comandos que se aplican a todo el documento. Usar combinaciones de teclas de desplazamiento para los comandos que amplían o complementan las acciones de tecla de método abreviado estándar. No use combinaciones Ctrl + Alt.
 
-- **Quitar accesos directos extraños.** Si tiene una característica heredada, considere la posibilidad de quitar los accesos directos que se utilizan con poca extreme (que tenga menos de 10 veces en los datos del CEIP) o poca moderado (que tenga menos de 100 veces desde los datos del CEIP) si una clave de acceso proporciona acceso rápido al mismo comando. Por ejemplo: C ALT, H, abrirá y contenido de la Ayuda.
+- **Quitar accesos directos extraños.** Si tiene una característica heredada, considere la posibilidad de quitar los accesos directos que se utilizan con poca extreme (que tenga menos de 10 veces en los datos del CEIP) o poca moderado (que tenga menos de 100 veces desde los datos del CEIP) si una clave de acceso proporciona acceso rápido al mismo comando. Por ejemplo:  C ALT, H, abrirá y contenido de la Ayuda.
 
   No es una manera sencilla de comprobar la disponibilidad de acceso directo. Si desea agregar un acceso directo, siga estos pasos:
 

@@ -14,11 +14,11 @@ caps.latest.revision: 17
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 42f901fa31b3b682c7e19c98f5707adb3b4fb3f3
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60093922"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68193848"
 ---
 # <a name="querychangesfunc"></a>QUERYCHANGESFUNC
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -46,7 +46,7 @@ typedef BOOL (*QUERYCHANGESFUNC)(
 ## <a name="return-value"></a>Valor devuelto  
  El IDE devuelve un código de error adecuado:  
   
-|Valor|Descripción|  
+|Valor|DESCRIPCIÓN|  
 |-----------|-----------------|  
 |SCC_OK|Continuar el procesamiento.|  
 |SCC_I_OPERATIONCANCELED|Detener el procesamiento.|  
@@ -84,7 +84,7 @@ struct QUERYCHANGESDATA_W
  dwChangeType  
  Que indica el estado del archivo de código:  
   
-|Código|Descripción|  
+|Código|DESCRIPCIÓN|  
 |----------|-----------------|  
 |`SCC_CHANGE_UNKNOWN`|No puede saber qué ha cambiado.|  
 |`SCC_CHANGE_UNCHANGED`|Ningún cambio de nombre para este archivo.|  

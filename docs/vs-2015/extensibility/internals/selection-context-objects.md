@@ -12,11 +12,11 @@ caps.latest.revision: 14
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 7e1a43997d56f8d89f194fb83d20c1f160378873
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60092193"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68187433"
 ---
 # <a name="selection-context-objects"></a>Objetos de contexto de selección
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

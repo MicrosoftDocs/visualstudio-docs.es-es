@@ -13,18 +13,18 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: d69bbe2145648c1bdb993cb6a4e45b26ae602b2a
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54755391"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68203499"
 ---
 # <a name="shortcut-keys-help-viewer"></a>Teclas de método abreviado (Visor de Ayuda)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Puede navegar por el Visor de Ayuda de Microsoft con las teclas de método abreviado de la tabla siguiente:  
   
-|Área|Pulsación de tecla|Acción|  
+|Área|Pulsación de tecla|.|  
 |----------|---------------|------------|  
 |Configuración de|Espacio|Usar en lugar de Entrar en cualquier lugar excepto en los campos de edición.|  
 |Configuración de|F1|Abrir Ayuda sobre el elemento de la interfaz de usuario actual.|  
@@ -44,7 +44,7 @@ Puede navegar por el Visor de Ayuda de Microsoft con las teclas de método abrev
 |Navegadores|Alt + F<br /><br /> O BIEN<br /><br /> Ctrl + Mayús + F|Mostrar la pestaña **Favoritos**.|  
 |Navegadores|Alt + S<br /><br /> O BIEN<br /><br /> Ctrl + E<br /><br /> O BIEN<br /><br /> Ctrl + Mayús + S|Mostrar la pestaña **Buscar**.|  
 |Navegadores|Alt + M<br /><br /> O BIEN<br /><br /> Ctrl + Mayús + M|Mostrar la pestaña **Administrar contenido**.|  
-|Tema|Tecla del menú contextual<br /><br /> O<br /><br /> Mayús + F10|Mostrar el menú contextual para el elemento de interfaz de usuario actual.|  
+|Tema|Tecla del menú contextual<br /><br /> OR<br /><br /> Mayús + F10|Mostrar el menú contextual para el elemento de interfaz de usuario actual.|  
 |Tema|Flecha arriba|Desplazarse hacia el inicio del documento una línea cada vez.|  
 |Tema|Flecha abajo|Desplazarse hacia el final del documento una línea cada vez.|  
 |Tema|Retroceder Página|Desplazarse hacia el inicio del documento una pantalla cada vez.|  

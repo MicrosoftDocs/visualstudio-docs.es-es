@@ -14,13 +14,13 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 26482e844a4850efb1c50b15e51e4153baf1f9ab
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60076001"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68186262"
 ---
-# <a name="how-to-update-existing-templates"></a>Procedimiento Actualizar plantillas existentes
+# <a name="how-to-update-existing-templates"></a>Procedimiento Actualización de plantillas existentes
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Después de crear una plantilla y comprimir los archivos en un archivo .zip, es posible que desee modificarla. Puede hacerlo al cambiar los archivos de la misma de forma manual o al exportar una nueva plantilla de un proyecto basado en la plantilla.  
@@ -53,7 +53,7 @@ Después de crear una plantilla y comprimir los archivos en un archivo .zip, es 
   
 4. Abra, modifique y guarde el archivo XML .vstemplate para controlar el comportamiento actualizado o los nuevos archivos. Para obtener más información sobre el esquema .vstemplate, vea [Visual Studio Template Schema Reference](../extensibility/visual-studio-template-schema-reference.md) (Referencia de esquema de plantillas de Visual Studio). Para obtener más información sobre lo que se puede parametrizar en los archivos de origen, consulte [parámetros de plantilla](../ide/template-parameters.md)  
   
-5. Seleccione los archivos en la plantilla, haga clic en, haga clic en **enviar a**y, a continuación, haga clic en **carpeta comprimida (zip)**. Los archivos seleccionados se comprimen en un archivo .zip.  
+5. Seleccione los archivos en la plantilla, haga clic en, haga clic en **enviar a**y, a continuación, haga clic en **carpeta comprimida (zip)** . Los archivos seleccionados se comprimen en un archivo .zip.  
   
 6. Coloque el nuevo archivo .zip en el mismo directorio que el antiguo.  
   

@@ -17,11 +17,11 @@ author: gewarren
 ms.author: gewarren
 manager: wpickett
 ms.openlocfilehash: 3f942a83754828888232091cf9b0c2c48566ce15
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58987704"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68201233"
 ---
 # <a name="performance-warnings"></a>advertencias de rendimiento
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,7 +30,7 @@ Las advertencias de rendimiento compatibles con aplicaciones y bibliotecas de al
   
 ## <a name="in-this-section"></a>En esta sección  
   
-|Regla|Descripción|  
+|Regla|DESCRIPCIÓN|  
 |----------|-----------------|  
 |[CA1800: No convertir innecesariamente](../code-quality/ca1800-do-not-cast-unnecessarily.md)|Las conversiones duplicadas reducen el rendimiento, sobre todo cuando se realizan en instrucciones de iteración compactas.|  
 |[CA1801: Revisar parámetros sin utilizar](../code-quality/ca1801-review-unused-parameters.md)|Una firma de método incluye un parámetro que no se utiliza en el cuerpo del método.|  

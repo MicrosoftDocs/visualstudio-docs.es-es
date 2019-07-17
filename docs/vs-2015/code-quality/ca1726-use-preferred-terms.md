@@ -15,11 +15,11 @@ author: gewarren
 ms.author: gewarren
 manager: wpickett
 ms.openlocfilehash: 67dab4c732faa04af44800f740d78c4ce4f9dc80
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59664117"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68143161"
 ---
 # <a name="ca1726-use-preferred-terms"></a>CA1726: Utilizar términos preferidos
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ Para obtener la documentación más reciente de Visual Studio, consulte [CA1726:
 |Categoría|Microsoft.Naming|  
 |Cambio problemático|Problemático: cuando se desencadena en ensamblados<br /><br /> No problemático: cuando se desencadena en los parámetros de tipo|  
   
-## <a name="cause"></a>Motivo  
+## <a name="cause"></a>Causa  
  El nombre de un identificador visible externamente incluye un término para el que existe un término alternativo más apropiado. Como alternativa, el nombre incluye el término marca o marcas.  
   
 ## <a name="rule-description"></a>Descripción de la regla  
@@ -49,7 +49,7 @@ Para obtener la documentación más reciente de Visual Studio, consulte [CA1726:
 |`Didnt`|`DidNot`|
 |`Doesnt`|`DoesNot`|
 |`Dont`|`DoNot`|
-|`Flag` o `Flags`|No hay ningún término de reemplazo. No utilizar.|
+|`Flag` o `Flags`|No hay ningún término de reemplazo. No usar.|
 |`Hadnt`|`HadNot`|
 |`Hasnt`|`HasNot`|
 |`Havent`|`HaveNot`|

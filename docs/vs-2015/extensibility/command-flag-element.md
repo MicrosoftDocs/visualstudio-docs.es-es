@@ -12,11 +12,11 @@ caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 39b2377dd1599d58eac4ca967ca540d8ce0e6847
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58998775"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68184363"
 ---
 # <a name="command-flag-element"></a>Command Flag (Elemento)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,7 +37,7 @@ Modifica su elemento primario.
   
 ### <a name="child-elements"></a>Elementos secundarios  
   
-|Valor|Descripción|  
+|Valor|DESCRIPCIÓN|  
 |-----------|-----------------|  
 |AllowParams|Indica que los usuarios pueden especificar parámetros de comando en el **comando** ventana cuando escribe el nombre canónico del comando.<br /><br /> Válido para: `Button`|  
 |AlwaysCreate|Incluso si no tiene botones ni grupos, se crea el menú.<br /><br /> Válido para: `Menu`|  
@@ -72,7 +72,7 @@ Modifica su elemento primario.
   
 ### <a name="parent-elements"></a>Elementos primarios  
   
-|Elemento|Descripción|  
+|Elemento|DESCRIPCIÓN|  
 |-------------|-----------------|  
 |[Buttons (Elemento)](../extensibility/buttons-element.md)|Proporciona un grupo para [elemento Button](../extensibility/button-element.md) elementos.|  
 |[Menus (Elemento)](../extensibility/menus-element.md)|Define todos los menús que implementa un paquete VSPackage.|  
