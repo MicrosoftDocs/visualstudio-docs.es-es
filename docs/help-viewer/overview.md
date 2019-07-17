@@ -14,17 +14,17 @@ helpviewer_keywords:
 - Help Viewer, navigating
 - toolbar [Help Viewer]
 ms.assetid: 74e41666-2ce8-4ac0-a0e5-3723d1e322c2
-author: gewarren
-ms.author: gewarren
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c79b685382eff3e6ca5a37fa9fb087136595dc76
-ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.openlocfilehash: 9c9c9bf7e6447f222b63ad9a07c0e27ce4567374
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66746954"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67824877"
 ---
 # <a name="microsoft-help-viewer"></a>Visor de Ayuda de Microsoft
 
@@ -53,7 +53,7 @@ Puede buscar información en el contenido instalado mediante las pestañas de na
 
 ### <a name="navigation-tabs"></a>Pestañas de navegación
 
-|Tab|Descripción|
+|Tab|DESCRIPCIÓN|
 |---|-----------|
 |Contenido|Muestra el contenido instalado como una jerarquía (tabla de contenido). Puede especificar criterios para filtrar los títulos que aparecen.|
 |Índice|Muestra una lista alfabética de términos indexados. Puede buscar en el índice, especificar criterios para filtrar las entradas y requerir que las entradas contengan o empiecen con el texto que se especifica.|

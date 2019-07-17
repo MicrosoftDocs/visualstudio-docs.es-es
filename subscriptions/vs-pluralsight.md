@@ -6,13 +6,12 @@ manager: evelynp
 ms.date: 01/25/2019
 ms.topic: conceptual
 description: Obtenga información sobre la suscripción de aprendizaje de Pluralsight incluida en la suscripción de Visual Studio.
-searchscope: VS Subscription
-ms.openlocfilehash: cc96d9c088a270342be792a2e7514e172a72ea45
-ms.sourcegitcommit: 91c7f1b525e0c22d938bc4080ba4ceac2483474f
+ms.openlocfilehash: bc80d8d799a0cca92bfa78cb1e96424f227fe9ef
+ms.sourcegitcommit: 208395bc122f8d3dae3f5e5960c42981cc368310
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/12/2019
-ms.locfileid: "67032779"
+ms.lasthandoff: 07/10/2019
+ms.locfileid: "67784876"
 ---
 # <a name="pluralsight-training-benefits-in-visual-studio-subscriptions"></a>Ventajas de aprendizaje de Pluralsight en las suscripciones de Visual Studio
 

@@ -6,13 +6,12 @@ manager: evelynp
 ms.date: 12/11/2017
 ms.topic: conceptual
 description: Cómo asignar las suscripciones de Visual Studio a los usuarios finales, para partners MPN.
-searchscope: VS Subscription
-ms.openlocfilehash: 8a0a0f3b6b093c023a8a0129c34d16aa75fffdaf
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: ca0865f876cfad10cbd7c6744f938fef839f7d55
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63412399"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67823198"
 ---
 # <a name="managing-visual-studio-subscriptions-offered-through-the-microsoft-partner-network-mpn"></a>Administrar las suscripciones de Visual Studio ofrecidas a través de Microsoft Partner Network (MPN)
 
@@ -61,7 +60,7 @@ Suscriptor de Microsoft Action Pack y suscripciones de Visual Studio
 - Detalles relativos a la [suscripción a Visual Studio](https://partner.microsoft.com/membership/msdn-subscriptions) de Microsoft Partner Network.
 
 - [Program Administrator Guide to Software and Online Services Benefits](https://assets.microsoft.com/Program-Administrator-Guide-to-Software-and-Online-Services-Benefits_1.pdf) (Guía del administrador de programas para los beneficios de software y servicios en línea) de Microsoft Partner Network
-    - Pág 6: Assigning Contact Roles and Visual Studio subscriptions for Action Pack (Asignar roles de contacto y suscripciones de Visual Studio para Action Pack)
+  - Pág 6: Assigning Contact Roles and Visual Studio subscriptions for Action Pack (Asignar roles de contacto y suscripciones de Visual Studio para Action Pack)
 
 > [!NOTE]
 > Se requiere el rol Contacto técnico para las suscripciones de Visual Studio.

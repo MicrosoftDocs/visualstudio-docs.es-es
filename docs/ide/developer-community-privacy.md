@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c45f4b374e553115462a010c4a61cc2d4a0a3e9c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 942ae41322d6a08bc8de0c450577f2eccb45772a
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62978410"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67823370"
 ---
 # <a name="developer-community-data-privacy"></a>Privacidad de datos de la Comunidad de desarrolladores
 
@@ -64,24 +64,24 @@ Si se inicia **Report a problem** (Notificar un problema) desde Visual Studio, r
 
 - Archivos de registro del depurador web, si existen:
 
-   - *%TEMP%\vscode-chrome-debug.txt*
+  - *%TEMP%\vscode-chrome-debug.txt*
 
-   - *%TEMP%\vscode-node-debug2.txt*
+  - *%TEMP%\vscode-node-debug2.txt*
 
-   - *%TEMP%\vscode-edge-debug.txt*
+  - *%TEMP%\vscode-edge-debug.txt*
 
 - Una captura de pantalla, si opta por incluirla
 
 - Datos de grabación, si decide incluir una grabación, que incluya:
 
-   - Pasos para reproducir el problema
+  - Pasos para reproducir el problema
 
-   - Archivo de seguimiento ETL
+  - Archivo de seguimiento ETL
 
-   - Archivo de volcado de memoria
+  - Archivo de volcado de memoria
 
-    > [!NOTE]
-    > Puede eliminar cualquiera de los datos de grabación que no quiera enviar antes de enviar el informe.
+  > [!NOTE]
+  > Puede eliminar cualquiera de los datos de grabación que no quiera enviar antes de enviar el informe.
 
 ## <a name="see-also"></a>Vea también
 

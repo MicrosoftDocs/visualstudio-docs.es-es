@@ -9,12 +9,12 @@ ms.assetid: d1c10fb9-cfeb-4e7f-9991-2d1e1103699e
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 5e25e9c5c92d32f2b68d8ce4b967fbf191e78554
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 6811365023f7030d46bf6c611ecb09a5990a7492
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62976216"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67825774"
 ---
 # <a name="walkthrough-using-the-virtual-user-activity-chart-to-isolate-issues"></a>Tutorial: Uso del diagrama de actividad del usuario virtual para aislar problemas
 
@@ -30,9 +30,9 @@ El Diagrama de actividad del usuario virtual permite visualizar la actividad del
 
 - Complete estos procedimientos:
 
-    - [Registrar y ejecutar una prueba de rendimiento web](/azure/devops/test/load-test/run-performance-tests-app-before-release#recordtests)
+  - [Registrar y ejecutar una prueba de rendimiento web](/azure/devops/test/load-test/run-performance-tests-app-before-release#recordtests)
 
-    - [Crear y ejecutar una prueba de carga](/azure/devops/test/load-test/run-performance-tests-app-before-release#create-a-load-test)
+  - [Crear y ejecutar una prueba de carga](/azure/devops/test/load-test/run-performance-tests-app-before-release#create-a-load-test)
 
 ## <a name="open-the-colorwebapp-solution-created-in-the-previous-walkthroughs"></a>Abrir la solución ColorWebApp creada en los tutoriales anteriores
 
@@ -69,7 +69,7 @@ Después de haber ejecutado la prueba de carga y recopilado los datos de activid
 
 3. En la herramienta **Ampliar período de tiempo** que hay bajo el **Diagrama de detalles del usuario virtual**, ajuste los controles deslizantes izquierdo y derecho hasta que ambos estén cerca del icono de infracción del umbral. Esto cambiará la escala de tiempo en el **Diagrama de actividad del usuario virtual**.
 
-4. En **Leyenda de detalles**, active la casilla correspondiente a **(Resaltar errores)**. Observe que el usuario virtual que produjo la infracción del umbral aparece resaltado.
+4. En **Leyenda de detalles**, active la casilla correspondiente a **(Resaltar errores)** . Observe que el usuario virtual que produjo la infracción del umbral aparece resaltado.
 
 5. En el panel **Resultados del filtro**, desactive las casillas **Mostrar resultados correctos** y **HttpError**, pero deje activada la casilla **ValidationRuleError**.
 

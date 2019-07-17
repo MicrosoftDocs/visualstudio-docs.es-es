@@ -7,12 +7,12 @@ ms.date: 04/02/2019
 ms.topic: article
 ms.technology: vs-ide-install
 ms.assetid: 25CD47A4-5B32-4734-8EF3-E24A02AABF29
-ms.openlocfilehash: d8312733c92ab2802c9594459d5e855b5600a352
-ms.sourcegitcommit: 7fbfb2a1d43ce72545096c635df2b04496b0be71
+ms.openlocfilehash: ca5c3133e3f03d4e68449156b35d6643c637a11b
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/09/2019
-ms.locfileid: "67692823"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67825547"
 ---
 # <a name="introduction-to-azure-functions"></a>Introducción a Azure Functions
 
@@ -138,14 +138,14 @@ Hay un valor importante que es posible que tenga que configurar: `FUNCTIONS_EXTE
 ## <a name="available-function-templates"></a>Plantillas de función disponibles
 
 - **Desencadenador de GitHub**: responder a los eventos que se producen en los repositorios de GitHub. Para obtener más información, vea la página [Creación de una función desencadenada por Webhook de GitHub](/azure/azure-functions/functions-create-github-webhook-triggered-function)
-    - Autor del comentario de GitHub: esta función se ejecutará cuando reciba un webhook de GitHub para un problema o solicitud de incorporación de cambios y agregue un comentario.
-    - WebHook de GitHub: esta función se ejecutará cuando reciba un WebHook de GitHub.
+  - Autor del comentario de GitHub: esta función se ejecutará cuando reciba un webhook de GitHub para un problema o solicitud de incorporación de cambios y agregue un comentario.
+  - WebHook de GitHub: esta función se ejecutará cuando reciba un WebHook de GitHub.
 
 - **HTTP**: desencadena la ejecución del código mediante una solicitud HTTP. Hay plantillas explícitas para los siguientes desencadenadores HTTP:
-    - Desencadenador HTTP
-    - Http GET CRUD
-    - Http POST CRUD
-    - Desencadenador HTTP con parámetros
+  - Desencadenador HTTP
+  - Http GET CRUD
+  - Http POST CRUD
+  - Desencadenador HTTP con parámetros
 
 - **Temporizador**: ejecutar una limpieza u otras tareas de lote en una programación predefinida. Esta plantilla tiene dos campos: un nombre y una programación, que es una expresión de CRON de seis campos. Para obtener más información, vea la página [Cree una función en Azure que se desencadena mediante un temporizador](/azure/azure-functions/functions-create-scheduled-function)
 

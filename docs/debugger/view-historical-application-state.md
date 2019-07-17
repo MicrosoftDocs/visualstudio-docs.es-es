@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6249a5ab4a8beef8ff8af766d4bac5a0e110ad66
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 83d444cb5e3345d79ca6e1422982c0ecd37e4287
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65676588"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67825525"
 ---
 # <a name="inspect-previous-app-states-using-intellitrace-step-back-in-visual-studio-visual-studio-enterprise"></a>Inspección de los estados de aplicación anteriores mediante el retroceso de IntelliTrace en Visual Studio (Visual Studio Enterprise)
 
@@ -36,7 +36,7 @@ En este tutorial va a:
 
 1. Abra la configuración **Herramientas** > **Opciones** > **IntelliTrace** y seleccione la opción **Eventos e instantáneas de IntelliTrace**.
 
-    A partir de Visual Studio 2017 Enterprise versión 15.9 versión preliminar 2, esta opción es **Instantáneas de IntelliTrace (administradas y nativas)**.
+    A partir de Visual Studio 2017 Enterprise versión 15.9 versión preliminar 2, esta opción es **Instantáneas de IntelliTrace (administradas y nativas)** .
 
     ![Habilitar el modo de instantáneas y eventos de IntelliTrace](../debugger/media/intellitrace-enable-snapshots.png "Habilitar el modo de instantáneas y eventos de IntelliTrace")
 
@@ -119,8 +119,8 @@ El impacto en el rendimiento general de ejecución paso a paso depende de la apl
 
 * Cuando se toma una instantánea del proceso de la aplicación en una aplicación que utiliza un archivo asignado a memoria persistente, el proceso con la instantánea mantiene un bloqueo exclusivo en el archivo asignado a memoria (incluso después de que el proceso primario haya liberado el bloqueo). Otros procesos todavía pueden leer pero no escribir en el archivo asignado a la memoria.
 
-    Solución:
-    * Desactive todas las instantáneas finalizando la sesión de depuración.
+  Solución:
+  * Desactive todas las instantáneas finalizando la sesión de depuración.
 
 * Al depurar una aplicación cuyo proceso tiene un gran número de regiones de memoria exclusiva, como una aplicación que carga un gran número de archivos DLL, el rendimiento de la ejecución paso a paso con instantáneas habilitadas puede verse afectado. Este problema se corregirá en una futura versión de Windows. Si experimenta este problema, póngase en contacto con nosotros en stepback@microsoft.com.
 

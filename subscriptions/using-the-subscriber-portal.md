@@ -6,13 +6,12 @@ manager: evelynp
 ms.date: 01/04/2018
 ms.topic: conceptual
 description: Obtenga información sobre toda la gama de ventajas disponibles en el portal de suscripciones de Visual Studio
-searchscope: VS Subscription
-ms.openlocfilehash: fcf8d9c9ddd88fd6f00c0b59c92c5e51af7a6ca1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: eab622c843a7099b5a75ca953d55666be849b246
+ms.sourcegitcommit: 208395bc122f8d3dae3f5e5960c42981cc368310
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62809168"
+ms.lasthandoff: 07/10/2019
+ms.locfileid: "67784782"
 ---
 # <a name="using-the-subscriber-portal---myvisualstudiocom"></a>Uso del Portal de suscriptor: my.visualstudio.com
 

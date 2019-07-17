@@ -20,12 +20,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 5d41fbe3233c3564af5cab93c8adfeaa7cc3bc24
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: d210dba035c53ba5574bb470247db8b6714a5c97
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63446306"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67826097"
 ---
 # <a name="analyze-javascript-memory-usage-in-uwp-apps"></a>Análisis del uso de memoria de JavaScript en aplicaciones de UWP
 El analizador de memoria de JavaScript está disponible en Visual Studio para ayudarle a entender el uso de memoria y a localizar fugas de memoria en las aplicaciones para UWP creadas para Windows con JavaScript. Las aplicaciones compatibles comprenden las aplicaciones universales de Windows.
@@ -255,14 +255,14 @@ El analizador de memoria de JavaScript está disponible en Visual Studio para ay
 
   Para filtrar información diferencial entre instantáneas, elige uno de los filtros **Ámbito** de la parte superior de las vistas diferenciales.
 
-- **Objetos dejados de la instantánea n.º \<número>**. Este filtro muestra la diferencia entre los objetos agregados al montón y quitados de él con respecto a la instantánea de línea de base y la anterior. Por ejemplo, si el resumen de instantánea muestra +205/-195 en el recuento de objetos, este filtro te mostrará los diez objetos que se agregaron pero no se quitaron.
+- **Objetos dejados de la instantánea n.º \<número>** . Este filtro muestra la diferencia entre los objetos agregados al montón y quitados de él con respecto a la instantánea de línea de base y la anterior. Por ejemplo, si el resumen de instantánea muestra +205/-195 en el recuento de objetos, este filtro te mostrará los diez objetos que se agregaron pero no se quitaron.
 
   > [!TIP]
   > Para mostrar la información más útil en este filtro, siga los pasos descritos en [Isolate a memory leak](#isolate-a-memory-leak).
 
-- **Objetos agregados entre las instantáneas n.º \<número> y \<número>**. Este filtro muestra todos los objetos agregados al montón desde la instantánea anterior.
+- **Objetos agregados entre las instantáneas n.º \<número> y \<número>** . Este filtro muestra todos los objetos agregados al montón desde la instantánea anterior.
 
-- **Todos los objetos de la instantánea n.º \<número>**. Este valor de filtro no filtra ningún objeto en el montón.
+- **Todos los objetos de la instantánea n.º \<número>** . Este valor de filtro no filtra ningún objeto en el montón.
 
   Para mostrar las referencias de objeto que no coinciden con el filtro **Ámbito** actual, seleccione **Mostrar referencias no coincidentes** en la lista de configuración ![Lista desplegable de configuración en el analizador de memoria](../profiling/media/js_mem_settings.png "JS_Mem_Settings") de la esquina superior derecha del panel. Si habilita este valor, las referencias no coincidentes se muestran con un texto gris.
 
@@ -355,11 +355,11 @@ if (performance && performance.mark) {
 
 - Buscar objetos que se conserven en memoria involuntariamente después de que el usuario haya navegado a una nueva página. Esta es una causa frecuente de los problemas de memoria. Por ejemplo:
 
-    - El uso incorrecto de la función [URL.CreateObjectUrl](https://developer.mozilla.org/docs/Web/API/URL/createObjectURL) puede producir este problema.
+  - El uso incorrecto de la función [URL.CreateObjectUrl](https://developer.mozilla.org/docs/Web/API/URL/createObjectURL) puede producir este problema.
 
-    - Algunos objetos pueden proporcionar un método `dispose` y recomendaciones de uso. Por ejemplo, debería llamar a `dispose` en [WinJS.Binding.List](/previous-versions/windows/apps/hh700774\(v\=win.10\)) si llama al método `createFiltered` de la lista y luego sale de una página.
+  - Algunos objetos pueden proporcionar un método `dispose` y recomendaciones de uso. Por ejemplo, debería llamar a `dispose` en [WinJS.Binding.List](/previous-versions/windows/apps/hh700774\(v\=win.10\)) si llama al método `createFiltered` de la lista y luego sale de una página.
 
-    - Podrías tener que quitar uno o varios agentes de escucha de eventos. Para obtener más información, consulta [View DOM event listeners](/visualstudio/debugger/quickstart-debug-html-and-css).
+  - Podrías tener que quitar uno o varios agentes de escucha de eventos. Para obtener más información, consulta [View DOM event listeners](/visualstudio/debugger/quickstart-debug-html-and-css).
 
 - Mira la última parte de [este vídeo](https://channel9.msdn.com/Events/Build/2013/3-316) de la conferencia Build 2013 sobre el analizador de memoria de JavaScript.
 
@@ -367,8 +367,8 @@ if (performance && performance.mark) {
 
 - Considera la posibilidad de modificar temporalmente el código para aislar problemas. Por ejemplo, puedes:
 
-    - Usar los comandos del analizador de memoria, `console.takeSnapshot` y `performance.mark`. (Vea [Associate source code with memory usage data](#associate-source-code-with-memory-usage-data).)
+  - Usar los comandos del analizador de memoria, `console.takeSnapshot` y `performance.mark`. (Vea [Associate source code with memory usage data](#associate-source-code-with-memory-usage-data).)
 
-         Puedes usar estos comandos para intentar aislar los problemas que no se pueden aislar manualmente tomando una instantánea del montón.
+    Puedes usar estos comandos para intentar aislar los problemas que no se pueden aislar manualmente tomando una instantánea del montón.
 
-    - Crea un objeto de prueba y realiza un seguimiento de él en las vistas del analizador de memoria de JavaScript, como la vista Tipos. Por ejemplo, puedes adjuntar un objeto muy grande a otro para ver si un objeto o elemento determinado se ha detectado durante la recolección de elementos no utilizados.
+  - Crea un objeto de prueba y realiza un seguimiento de él en las vistas del analizador de memoria de JavaScript, como la vista Tipos. Por ejemplo, puedes adjuntar un objeto muy grande a otro para ver si un objeto o elemento determinado se ha detectado durante la recolección de elementos no utilizados.

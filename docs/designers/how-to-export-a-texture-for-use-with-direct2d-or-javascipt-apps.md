@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c878d898aa12644cc7a53ee9f12b351cd54c9d8d
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: 44b6c0cfa1adf8ff1378dd8a426ab531ae90e096
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65459203"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67824612"
 ---
 # <a name="how-to-export-a-texture-for-use-with-direct2d-or-javascript-apps"></a>Procedimiento Exportación de una textura para usarla con aplicaciones de Direct2D o JavaScript
 
@@ -25,11 +25,11 @@ Este documento muestra estas actividades:
 
 - Configurar la canalización de contenido de la imagen para generar una textura que se pueda usar en una aplicación de Direct2D o JavaScript.
 
-    - Generar un archivo *.dds* comprimido en bloques.
+  - Generar un archivo *.dds* comprimido en bloques.
 
-    - Generar valores alfa premultiplicados.
+  - Generar valores alfa premultiplicados.
 
-    - Deshabilitar la generación de mapa MIP.
+  - Deshabilitar la generación de mapa MIP.
 
 ## <a name="rendering-conventions-in-direct2d"></a>Representación de convenciones en Direct2D
 
@@ -39,11 +39,11 @@ Las texturas que se usan en el contexto de Direct2D deben cumplir estas convenci
 
 - La textura se debe proporcionar en formato *.dds*, usando uno de estos formatos de compresión de bloques:
 
-   - Compresión BC1_UNORM
+  - Compresión BC1_UNORM
 
-   - Compresión BC2_UNORM
+  - Compresión BC2_UNORM
 
-   - Compresión BC3_UNORM
+  - Compresión BC3_UNORM
 
 - No se admiten los mapas MIP.
 
@@ -53,12 +53,12 @@ Las texturas que se usan en el contexto de Direct2D deben cumplir estas convenci
 
 2. Configure el archivo de textura para que sea procesado por la canalización de contenido de imagen. En el **Explorador de soluciones**, abra el menú contextual del archivo de textura que acaba de crear y seleccione **Propiedades**. En la página **Propiedades de configuración** > **General**, establezca la propiedad **Tipo de elemento** en **Canalización de contenido de la imagen**. Asegúrese de que la propiedad **Contenido** esté establecida en **Sí** y **Excluir de la compilación** esté establecido en **No**, y, después, seleccione el botón **Aplicar**. Aparece la página de propiedades de configuración de **Canalización de contenido de la imagen**.
 
-3. Establezca el formato de salida en uno de los formatos comprimidos en bloques. En **Propiedades de configuración** > **Canalización de contenido de la imagen** > , en la página **General**, establezca la propiedad **Compress** en **Compresión BC3_UNORM (/compress: BC3_UNORM)**. Podría elegir cualquiera de los otros formatos BC1, BC2 o BC3, según sus requisitos. Direct2D no admite actualmente las texturas BC4, BC5, BC6 o BC7. Para obtener más información sobre los diferentes formatos BC, vea la página web sobre la [compresión de bloques (Direct3D 10)](/windows/desktop/direct3d10/d3d10-graphics-programming-guide-resources-block-compression).
+3. Establezca el formato de salida en uno de los formatos comprimidos en bloques. En **Propiedades de configuración** > **Canalización de contenido de la imagen** > , en la página **General**, establezca la propiedad **Compress** en **Compresión BC3_UNORM (/compress: BC3_UNORM)** . Podría elegir cualquiera de los otros formatos BC1, BC2 o BC3, según sus requisitos. Direct2D no admite actualmente las texturas BC4, BC5, BC6 o BC7. Para obtener más información sobre los diferentes formatos BC, vea la página web sobre la [compresión de bloques (Direct3D 10)](/windows/desktop/direct3d10/d3d10-graphics-programming-guide-resources-block-compression).
 
    > [!NOTE]
    > El formato de compresión especificado determina el formato del archivo generado por la canalización de contenido de la imagen. Esto es diferente de la propiedad **Formato** de la imagen de origen en el Editor de imágenes, que determina el formato del archivo de imagen de origen tal como está almacenado en disco, es decir, el *formato de trabajo*. Normalmente, no quiere un formato de trabajo comprimido.
 
-4. Configure la canalización de contenido de imagen para producir una salida que use alfa premultiplicado. En **Propiedades de configuración** > **Canalización de contenido de la imagen** >  en la página **General**, establezca la propiedad **Convertir en formato alfa premultiplicado** en **Sí (/generatepremultipliedalpha)**.
+4. Configure la canalización de contenido de imagen para producir una salida que use alfa premultiplicado. En **Propiedades de configuración** > **Canalización de contenido de la imagen** >  en la página **General**, establezca la propiedad **Convertir en formato alfa premultiplicado** en **Sí (/generatepremultipliedalpha)** .
 
 5. Configure la canalización de contenido de la imagen para que no genere mapas MIP. En la página **Propiedades de configuración** > **Canalización de contenido de la imagen** > **General**, establezca la propiedad **Generar Mips** en **No**.
 

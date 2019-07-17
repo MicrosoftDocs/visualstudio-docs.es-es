@@ -3,17 +3,17 @@ title: Búsqueda de temas (Visor de Ayuda)
 ms.date: 11/02/2017
 ms.topic: conceptual
 ms.assetid: 683f1b0c-1551-4bba-91fe-3855f03fdd69
-author: gewarren
-ms.author: gewarren
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4e186bf0aa362f153ad3e6f57c39abc55c558270
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 52818e4f676d6ae9f4c02f26ad8e354b206cb2b8
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62824303"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67824994"
 ---
 # <a name="how-to-search-for-topics"></a>Procedimiento Búsqueda de temas
 
@@ -44,7 +44,7 @@ Puede crear búsquedas más selectivas que devuelvan solo los temas que le inter
 
 En la tabla siguiente se incluyen algunas reglas y directrices básicas para realizar consultas de búsqueda en la ayuda.
 
-|Sintaxis|Descripción|
+|Sintaxis|DESCRIPCIÓN|
 |------------|-----------------|
 |Distinción de mayúsculas y minúsculas|Las búsquedas no distinguen entre mayúsculas y minúsculas. Desarrolle los criterios de búsqueda usando caracteres en mayúsculas o en minúsculas. Por ejemplo, "OLE" y "ole" devuelven los mismos resultados.|
 |Combinaciones de caracteres|No es posible buscar una sola letra (a-z) o un solo número (0-9). Si intenta buscar ciertas palabras reservadas, por ejemplo "y", "de" y "con", estas se omitirán. Para obtener más información, vea [Palabras omitidas en las búsquedas](#stopwords) más adelante en este tema.|

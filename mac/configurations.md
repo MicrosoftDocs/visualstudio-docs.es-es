@@ -5,12 +5,12 @@ author: heiligerdankgesang
 ms.author: dominicn
 ms.date: 04/14/2017
 ms.assetid: 78107CFA-9308-4293-A92A-9B552A259E15
-ms.openlocfilehash: 62f7f2a8ebdafcccc6082edce2c4a7f1d91ff48e
-ms.sourcegitcommit: 7fbfb2a1d43ce72545096c635df2b04496b0be71
+ms.openlocfilehash: 0bd35d415a60ea64c479b19cb506c58c2c346cc0
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/09/2019
-ms.locfileid: "67693099"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67826072"
 ---
 # <a name="understanding-build-configurations"></a>Descripción de las configuraciones de compilación
 
@@ -51,21 +51,21 @@ Aquellas actividades distintas a `MainLauncher` deberán tener `Exported=true` a
 En la siguiente lista se proporcionan algunos ejemplos de datos que se podrían incluir en configuraciones de ejecución:
 
 * Proyecto de .NET normal
-    * Aplicación de inicio alternativa
-    * Argumentos de inicio
-    * Directorio de trabajo
-    * Variables de entorno
-    * Opciones del entorno de ejecución Mono (para usarse solo al ejecutar en Mono)
+  * Aplicación de inicio alternativa
+  * Argumentos de inicio
+  * Directorio de trabajo
+  * Variables de entorno
+  * Opciones del entorno de ejecución Mono (para usarse solo al ejecutar en Mono)
 * Proyecto de Android
-    * Punto de entrada (actividad, servicio, receptor)
-    * Datos y argumentos de intención
+  * Punto de entrada (actividad, servicio, receptor)
+  * Datos y argumentos de intención
 * Proyecto de iOS
-    * Modo (Normal, Recuperación de cambios)
+  * Modo (Normal, Recuperación de cambios)
 * Proyecto de extensión de iOS
-    * Aplicación de inicio: predeterminada o personalizada
+  * Aplicación de inicio: predeterminada o personalizada
 * Proyecto de WatchKit
-    * Modo (Vista rápida, Notificación)
-    * Carga de notificaciones
+  * Modo (Vista rápida, Notificación)
+  * Carga de notificaciones
 
 ## <a name="see-also"></a>Vea también
 

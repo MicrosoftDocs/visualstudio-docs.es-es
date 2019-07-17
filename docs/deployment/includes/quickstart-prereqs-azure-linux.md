@@ -1,10 +1,10 @@
 ---
 ms.openlocfilehash: 29aedc73173de34723f0db846a26c82cbde64f41
-ms.sourcegitcommit: b468d71052a1b8a697f477ab23a3644de139f1e9
-ms.translationtype: MT
+ms.sourcegitcommit: 748d9cd7328a30f8c80ce42198a94a4b5e869f26
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/19/2019
-ms.locfileid: "67256565"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "68143622"
 ---
 ## <a name="prerequisites"></a>Requisitos previos
 

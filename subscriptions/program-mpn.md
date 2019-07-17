@@ -6,13 +6,12 @@ manager: evelynp
 ms.date: 12/19/2018
 ms.topic: conceptual
 description: Información detallada sobre qué suscripciones se ofrecen, las reglas que se aplican y cuántas suscripciones se ofrecen en MPN.
-searchscope: VS Subscription
-ms.openlocfilehash: a91dc4954a7455505867027a365f5a23a3ef0a46
-ms.sourcegitcommit: 283f2dbce044a18e9f6ac6398f6fc78e074ec1ed
+ms.openlocfilehash: 133b9561b6276329e17104b17f0687172b94a574
+ms.sourcegitcommit: f369ff7e84b0216f01570a486c7be80ca6d0e61a
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/16/2019
-ms.locfileid: "65805306"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "68250668"
 ---
 # <a name="visual-studio-subscriptions-offered-to-partners-in-the-microsoft-partner-network-mpn"></a>Suscripciones de Visual Studio ofrecidas a partners de Microsoft Partner Network (MPN)
 Los partners que hayan obtenido una competencia o que hayan adquirido el Action Pack en MPN pueden optar a usar suscripciones de Visual Studio. Estas suscripciones se proporcionan con licencia por usuario y son válidas solo si están asignadas a un determinado nombre de usuario que trabaja en la compañía asociada.

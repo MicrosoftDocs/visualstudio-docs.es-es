@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6ebd05843e5a80f95a6eb30809440e6e5a188d0e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: fc2f56df75cd9abadde8474057f762118c6a840a
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62822981"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67826087"
 ---
 # <a name="best-practices-for-coded-ui-tests"></a>Procedimientos recomendados para las pruebas de IU codificadas
 
@@ -62,11 +62,11 @@ Las interfaces de usuario cambian frecuentemente durante el desarrollo. Estas so
 
 - Si un control tiene una aserción que ya no es válida:
 
-    - Elimine el método que contiene la aserción.
+  - Elimine el método que contiene la aserción.
 
-    - Quite la llamada a este método desde el método de prueba.
+  - Quite la llamada a este método desde el método de prueba.
 
-    - Agregue una aserción nueva arrastrando el botón de cruz hasta el control de la IU, abra la asignación de IU y agregue la nueva aserción.
+  - Agregue una aserción nueva arrastrando el botón de cruz hasta el control de la IU, abra la asignación de IU y agregue la nueva aserción.
 
 Para obtener más información sobre cómo registrar pruebas automatizadas de IU, vea [Usar la automatización de IU para probar el código](../test/use-ui-automation-to-test-your-code.md).
 

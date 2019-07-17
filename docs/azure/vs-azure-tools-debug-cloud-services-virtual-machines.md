@@ -10,12 +10,12 @@ ms.workload: azure-vs
 ms.date: 11/11/2016
 ms.author: mikejo
 ms.technology: vs-ide-debug
-ms.openlocfilehash: c29158be17320e8d7f842386a00c44ac86bf5513
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 7c3d67bddced5e7d335f019273f8c008da6c8e59
+ms.sourcegitcommit: 748d9cd7328a30f8c80ce42198a94a4b5e869f26
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62550776"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67890650"
 ---
 # <a name="debugging-an-azure-cloud-service-or-virtual-machine-in-visual-studio"></a>Depuración de una máquina virtual o un servicio en la nube de Azure en Visual Studio
 
@@ -39,7 +39,8 @@ El emulador simula el servicio Azure Compute y se ejecuta en el entorno local pa
 
 3. Recorra la aplicación: seleccione los comandos del menú **Depurar** y establezca puntos de interrupción en el código. A medida que recorre la aplicación en el depurador, los paneles se actualizan con el estado actual de la aplicación. Cuando se detiene la depuración, se elimina la implementación de aplicaciones. Si la aplicación incluye un rol web y ha establecido la propiedad acción de inicio para iniciar el explorador web, Visual Studio inicia la aplicación web en el explorador. Si cambia el número de instancias de un rol en la configuración del servicio, debe detener el servicio en la nube y, luego, reinicie la depuración para que pueda depurar estas nuevas instancias del rol.
 
-    **Nota:** cuando se deja de ejecutar o depurar el servicio, el emulador de proceso y el emulador de almacenamiento locales no se detienen. Debe detenerlos explícitamente en el área de notificación.
+    > [!NOTE]
+    > cuando se deja de ejecutar o depurar el servicio, el emulador de proceso y el emulador de almacenamiento locales no se detienen. Debe detenerlos explícitamente en el área de notificación.
 
 ## <a name="debug-a-cloud-service-in-azure"></a>Depuración de un servicio en la nube en Azure
 
@@ -145,7 +146,8 @@ Los proyectos ASP.NET de Visual Studio ofrecen una opción para crear una práct
 
     ![Cuadro de diálogo Crear nuevo proyecto ASP.NET](./media/vs-azure-tools-debug-cloud-services-virtual-machines/IC746723.png)
 
-    **Nota:** se le pedirá que inicie sesión en la cuenta de Azure si todavía no lo ha hecho.
+    > [!NOTE]
+    > se le pedirá que inicie sesión en la cuenta de Azure si todavía no lo ha hecho.
 
 3. Seleccione los distintos valores de configuración de la máquina virtual y después seleccione **Aceptar**. Consulte [Máquinas virtuales](http://go.microsoft.com/fwlink/?LinkId=623033) para obtener más información.
 

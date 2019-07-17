@@ -11,11 +11,11 @@ ms.prod: visual-studio-windows
 ms.technology: vs-installation
 ms.topic: include
 ms.openlocfilehash: 1690db12318a347ac7446fb094d02308e5aa46d5
-ms.sourcegitcommit: b468d71052a1b8a697f477ab23a3644de139f1e9
+ms.sourcegitcommit: 748d9cd7328a30f8c80ce42198a94a4b5e869f26
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/19/2019
-ms.locfileid: "67259619"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "68176860"
 ---
 ## <a name="test-controller"></a>Test Controller
 
@@ -25,7 +25,7 @@ ms.locfileid: "67259619"
 
 ### <a name="components-included-by-this-workload"></a>Componentes incluidos en esta carga de trabajo
 
-Id. de componente | NOMBRE | Versión | Tipo de dependencia
+Id. de componente | nombre | Versión | Tipo de dependencia
 --- | --- | --- | ---
 Microsoft.VisualStudio.ComponentGroup.TestTools.TestController | Características principales de Test Controller | 15.6.27309.0 | Obligatorio
 
@@ -33,6 +33,6 @@ Microsoft.VisualStudio.ComponentGroup.TestTools.TestController | Característica
 
 Estos son componentes que no están incluidos en ninguna carga de trabajo, pero que pueden seleccionarse como un componente individual.
 
-Id. de componente | NOMBRE | Versión
+Id. de componente | nombre | Versión
 --- | --- | ---
 N/D | N/D | N/D

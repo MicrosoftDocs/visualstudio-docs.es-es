@@ -6,13 +6,12 @@ manager: evelynp
 ms.date: 12/19/2018
 ms.topic: conceptual
 description: Obtenga información sobre el beneficio de Office 365 Developer incluido en su suscripción de Visual Studio.
-searchscope: VS Subscription
-ms.openlocfilehash: 12851dcb19824ceccb16bacbba2fdeec29c7df47
-ms.sourcegitcommit: 91c7f1b525e0c22d938bc4080ba4ceac2483474f
+ms.openlocfilehash: 9b31b1d1195e47dcf1f38351306a0c59a4472298
+ms.sourcegitcommit: f369ff7e84b0216f01570a486c7be80ca6d0e61a
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/12/2019
-ms.locfileid: "67032724"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "68250814"
 ---
 # <a name="the-office-365-developer-subscription-benefit-in-visual-studio-subscriptions"></a>Beneficio de suscripción de Office 365 Developer en suscripciones de Visual Studio
 

@@ -6,13 +6,12 @@ manager: evelynp
 ms.date: 01/02/2018
 ms.topic: conceptual
 description: Puede producirse un error en el inicio de sesión si se utilizan alias o nombres descriptivos
-searchscope: VS Subscription
-ms.openlocfilehash: ac3f9df365e0b7924b615c2ae8cbb70d93d04948
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 7285c1ede495a1aa2603216f2a9e9fe9f89331ea
+ms.sourcegitcommit: 208395bc122f8d3dae3f5e5960c42981cc368310
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62946189"
+ms.lasthandoff: 07/10/2019
+ms.locfileid: "67783688"
 ---
 # <a name="signing-in-to-visual-studio-subscriptions-may-fail-when-using-aliases"></a>Posible error en el inicio de sesión en suscripciones de Visual Studio al utilizar alias
 

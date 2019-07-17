@@ -6,13 +6,12 @@ manager: evelynp
 ms.date: 03/02/2018
 ms.topic: conceptual
 description: Preguntas sobre facturación para suscripciones de nube.
-searchscope: VS Subscription
-ms.openlocfilehash: ab02b40926225860536b277b22c3f16768a56731
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 858707358062386191c526810644f110bd7ac58d
+ms.sourcegitcommit: f369ff7e84b0216f01570a486c7be80ca6d0e61a
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62810536"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "68250737"
 ---
 # <a name="visual-studio-cloud-subscriptions-billing-faq"></a>Preguntas más frecuentes sobre facturación relativas a suscripciones de nube de Visual Studio
 
@@ -43,7 +42,7 @@ R: La forma más sencilla de saber si tiene los privilegios adecuados consiste e
 Deberá seleccionar una suscripción de Azure (que es una cuenta de facturación) de una lista que se abre con las suscripciones de Azure que están vinculadas actualmente a su nombre de usuario.
 Dado que el nombre de la suscripción de Azure se establece de forma predeterminada en el tipo de cuenta de facturación que se posea ("Pago por uso", "Contrato Enterprise", etc.), suele quedar claro si la suscripción de Azure forma parte de su Contrato Enterprise.
 
-Otro método consiste en intentar tener acceso a [Azure Enterprise Portal](http://ea.azure.com).  Si puede tener acceso a este portal correctamente, significa que ya tiene el rol de administrador de la organización o de propietario de la cuenta. Solo los propietarios de cuentas pueden configurar nuevas cuentas de facturación de Azure en un Contrato Enterprise. Si no puede tener acceso a Azure Enterprise Portal, pregunte en su empresa para averiguar quién es el administrador de la organización y pida a esa persona que lo agregue como propietario de la cuenta en Azure Enterprise Portal.  Si no encuentra a esta persona, puede [cursar un vale de soporte](https://aka.ms/AzureEntSupport) y solicitar la información de contacto.  Para el vale de soporte necesitará el nombre de su organización y el número de inscripción de Contrato Enterprise.
+Otro método consiste en intentar tener acceso a [Azure Enterprise Portal](https://ea.azure.com).  Si puede tener acceso a este portal correctamente, significa que ya tiene el rol de administrador de la organización o de propietario de la cuenta. Solo los propietarios de cuentas pueden configurar nuevas cuentas de facturación de Azure en un Contrato Enterprise. Si no puede tener acceso a Azure Enterprise Portal, pregunte en su empresa para averiguar quién es el administrador de la organización y pida a esa persona que lo agregue como propietario de la cuenta en Azure Enterprise Portal.  Si no encuentra a esta persona, puede [cursar un vale de soporte](https://aka.ms/AzureEntSupport) y solicitar la información de contacto.  Para el vale de soporte necesitará el nombre de su organización y el número de inscripción de Contrato Enterprise.
 
 ### <a name="q-can-i-use-the-azure-monetary-commitment-funds-from-my-enterprise-agreement-to-buy-visual-studio-cloud-subscriptions"></a>P: ¿Puedo usar el crédito del compromiso monetario de Azure de mi Contrato Enterprise para adquirir una suscripción de nube de Visual Studio?
 

@@ -29,12 +29,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fcfab3a14e8dfab6bdfb62b32839ebcbd69d21af
-ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.openlocfilehash: 811565d6e4189eb04b33ce07fe04718def905922
+ms.sourcegitcommit: f369ff7e84b0216f01570a486c7be80ca6d0e61a
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66746926"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "68250638"
 ---
 # <a name="create-and-configure-type-members-in-class-designer"></a>Crear y configurar miembros de tipo en el Diseñador de clases
 
@@ -122,7 +122,8 @@ Puede crear un miembro con cualquiera de las herramientas siguientes:
 
 4. Si lo desea, puede especificar de forma opcional otros detalles sobre el miembro, como su tipo.
 
-     **Nota:** También puede usar métodos abreviados de teclado para crear miembros. Para obtener más información, vea [Métodos abreviados de teclado y de mouse en el diagrama de clases y la ventana de detalles de clase](keyboard-and-mouse-shortcuts-in-the-class-diagram-and-class-details-window.md).
+    > [!NOTE]
+    > También puede usar métodos abreviados de teclado para crear miembros. Para obtener más información, vea [Métodos abreviados de teclado y de mouse en el diagrama de clases y la ventana de detalles de clase](keyboard-and-mouse-shortcuts-in-the-class-diagram-and-class-details-window.md).
 
 ## <a name="modify-type-members"></a>Modificar miembros de tipo
 
@@ -150,7 +151,7 @@ Cada fila de miembro muestra los elementos siguientes:
 
 - **Modificador de miembro**
 
-     Cambie el modificador de visibilidad de un miembro a `Public` (`public`), `Private` (`private`), `Friend` (`internal`) `Protected` (`protected`), `Protected``Friend` (`protected``internal`) o `Default`.
+     Cambie el modificador de visibilidad de un miembro a `Public` (`public`), `Private` (`private`), `Friend` (`internal`) `Protected` (`protected`), `Protected Friend` (`protected internal`) o `Default`.
 
 - **\<agregar miembro>**
 

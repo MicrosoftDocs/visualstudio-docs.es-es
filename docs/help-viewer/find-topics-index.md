@@ -10,17 +10,17 @@ helpviewer_keywords:
 - index filtering [Help Viewer]
 - Help Viewer, index filtering
 ms.assetid: cb071e93-f297-459c-a6fa-8ae0dabc42a4
-author: gewarren
-ms.author: gewarren
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d66162b740aa9c6fbd284f44d5f93c88ebe8974d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 0f80b0d63bc7e7fdb89f69607e4529e18f26cc30
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62557455"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67825943"
 ---
 # <a name="find-topics-by-using-the-help-viewer-index"></a>Búsqueda de temas con el índice del visor de la Ayuda
 

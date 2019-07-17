@@ -6,13 +6,12 @@ manager: evelynp
 ms.date: 03/28/2018
 ms.topic: conceptual
 description: Configurar los administradores de suscripciones de nube
-searchscope: VS Subscription
-ms.openlocfilehash: 34479c21ec3cb0672b8d2354595c971b062bba56
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 85371dd77b99fc5013843bb815082cc0f84cff33
+ms.sourcegitcommit: f369ff7e84b0216f01570a486c7be80ca6d0e61a
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62945827"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "68250692"
 ---
 # <a name="set-up-administrators-for-visual-studio-cloud-subscriptions"></a>Configurar los administradores de suscripciones de nube de Visual Studio
 

@@ -6,17 +6,17 @@ helpviewer_keywords:
 - shortcut keys [Help Viewer]
 - Help Viewer, shortcut keys
 ms.assetid: ec14c85d-7efb-441c-a46b-bee34a227e39
-author: gewarren
-ms.author: gewarren
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5da8de5c392862c196fa03a69806ffb877af881c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: da8a90be59199abd569c37b43a61728c00695fa9
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62975617"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67821959"
 ---
 # <a name="shortcut-keys-in-help-viewer"></a>Teclas de método abreviado en el Visor de Ayuda
 
@@ -59,7 +59,7 @@ Puede navegar por el **Visor de Ayuda de Microsoft** con las teclas de método a
 |Tema|**Ctrl**+**Tab**|Cambiar entre pestañas de izquierda a derecha.|
 |Tema|**Ctrl**+**Mayús**+**Tab**|Cambiar entre pestañas de derecha a izquierda.|
 |Tema|**Ctrl**+**W**|Cerrar la pestaña actual.|
-|Tema|**Ctrl**+**_Número_**|Cambiar a una pestaña determinada donde **_Número_** está comprendido entre 1 y 9 e indica la pestaña en secuencia.|
+|Tema|**Ctrl**+ **_Número_**|Cambiar a una pestaña determinada donde **_Número_** está comprendido entre 1 y 9 e indica la pestaña en secuencia.|
 |Tema|**Ctrl**+**Alt**+**F4**|Cerrar otras pestañas de contenido.|
 |Tema|**Ctrl**+**Mayús**+**Signo más**|Aumentar el zoom en un 10 %.|
 |Tema|**Ctrl**+**Signo menos**|Disminuir el zoom en un 10 %.|

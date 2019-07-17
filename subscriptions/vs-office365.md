@@ -6,13 +6,12 @@ manager: lank
 ms.date: 12/19/2018
 ms.topic: conceptual
 description: Obtenga información sobre la ventaja de Office 365 que se incluye en algunas suscripciones de Visual Studio.
-searchscope: VS Subscription
-ms.openlocfilehash: 33e70c6208505df175161b248a60e0527f7b2a6b
-ms.sourcegitcommit: 91c7f1b525e0c22d938bc4080ba4ceac2483474f
+ms.openlocfilehash: 625d9ccf24c17b96afc9c79cc3b280c009e80fec
+ms.sourcegitcommit: f369ff7e84b0216f01570a486c7be80ca6d0e61a
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/12/2019
-ms.locfileid: "67032828"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "68250775"
 ---
 # <a name="office-365-proplus-in-visual-studio-subscriptions"></a>Office 365 ProPlus en suscripciones de Visual Studio
 

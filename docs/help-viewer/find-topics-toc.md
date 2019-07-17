@@ -10,17 +10,17 @@ helpviewer_keywords:
 - Contents tab [Help Viewer]
 - table of contents filtering [Help Viewer]
 ms.assetid: 8b98464d-2b05-4710-ad68-5647e78c6b7b
-author: gewarren
-ms.author: gewarren
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e75a732ddc9c56e7305e4ebbfec6a188fb6df2bb
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: bd55a95675505648179161ae3fb7cacea6a83104
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62951330"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67825074"
 ---
 # Procedimiento para buscar temas en la tabla de contenido
 
@@ -31,7 +31,7 @@ En la pestaña **Contenido**, puede usar la tabla de contenido (TDC) para buscar
 
 ## Filtrar la TDC
 
-Puede filtrar la TDC para limitar el ámbito de temas que aparecen en la pestaña **Contenido**. Los títulos se muestran en la lista solo si contienen la raíz del término que especifique. Por ejemplo, si especifica "solucionar" como un filtro, solo aparecerán los títulos que contengan "solucionar" o "solucionar problemas". Los nodos cuyos títulos no contienen el término se contraen en un único nodo con puntos suspensivos (**...**).
+Puede filtrar la TDC para limitar el ámbito de temas que aparecen en la pestaña **Contenido**. Los títulos se muestran en la lista solo si contienen la raíz del término que especifique. Por ejemplo, si especifica "solucionar" como un filtro, solo aparecerán los títulos que contengan "solucionar" o "solucionar problemas". Los nodos cuyos títulos no contienen el término se contraen en un único nodo con puntos suspensivos ( **...** ).
 
 1. Elija la pestaña **Contenido**.
 

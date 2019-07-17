@@ -6,13 +6,12 @@ manager: evelynp
 ms.date: 12/19/2018
 ms.topic: conceptual
 description: Obtenga información sobre la cuenta de desarrollador de Windows que se incluye con la suscripción de Visual Studio.
-searchscope: VS Subscription
-ms.openlocfilehash: aacd9dab6353d3cfde727717c67c400f6e17514f
-ms.sourcegitcommit: 91c7f1b525e0c22d938bc4080ba4ceac2483474f
+ms.openlocfilehash: 37718671d2b0287920b3b1dbce36ab61affbf223
+ms.sourcegitcommit: f369ff7e84b0216f01570a486c7be80ca6d0e61a
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/12/2019
-ms.locfileid: "67032738"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "68250754"
 ---
 # <a name="windows-developer-account-in-visual-studio-subscriptions"></a>Cuenta de desarrollador de Windows en suscripciones de Visual Studio
 

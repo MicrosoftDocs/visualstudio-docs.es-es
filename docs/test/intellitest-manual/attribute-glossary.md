@@ -9,12 +9,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 5cb5fcac8f9cc509718648fa9bd6db0f18d01b33
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: aada3c1053ed30521d8c7116c887061650a083dc
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66349226"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67825314"
 ---
 # <a name="attribute-glossary"></a>Glosario de atributos
 
@@ -25,7 +25,7 @@ ms.locfileid: "66349226"
   * [PexClass](#pexclass)
   * [PexGenericArguments](#pexgenericarguments)
   * [PexMethod](#pexmethod)
-     - [PexExplorationAttributeBase](#pexexplorationattributebase)
+    * [PexExplorationAttributeBase](#pexexplorationattributebase)
 
 * **Microsoft.Pex.Framework.Settings**
   * [PexAssemblySettings](#pexassemblysettings)

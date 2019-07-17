@@ -17,12 +17,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - uwp
-ms.openlocfilehash: cc7c049e0b1c5962b831e9084685b205acda38fd
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: 8dac5c929289b9a891f7dc5cb1bf803e1abd5b3a
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63433460"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67826114"
 ---
 # <a name="analyze-html-ui-responsiveness-in-universal-windows-apps"></a>Análisis de la capacidad de respuesta de la IU HTML en aplicaciones de UWP
 En este tema, se describe cómo aislar los problemas de rendimiento en las aplicaciones mediante el generador de perfiles de la capacidad de respuesta de la interfaz de usuario, una herramienta de rendimiento disponible para las aplicaciones universales de Windows.
@@ -254,9 +254,9 @@ if (performance.mark && performance.measure) {
 
 - Ver las horas de inicio, la duración y las horas de finalización aproximadas para un evento en una vista de escala de tiempo y de cuadrícula. El gráfico de detalles de la escala de tiempo puede mostrar períodos que van desde 30 milisegundos a 30 segundos en la vista de cuadrícula, según el estado de zoom. Para los valores de duración:
 
-    - Los tiempos inclusivos representan la duración del evento, incluyendo los elementos secundarios del evento. En la vista de cuadrícula, este valor aparece en primer lugar.
+  - Los tiempos inclusivos representan la duración del evento, incluyendo los elementos secundarios del evento. En la vista de cuadrícula, este valor aparece en primer lugar.
 
-    - Los tiempos exclusivos representan la duración del evento, sin incluir los elementos secundarios del evento. En la vista de cuadrícula, este valor aparece entre paréntesis.
+  - Los tiempos exclusivos representan la duración del evento, sin incluir los elementos secundarios del evento. En la vista de cuadrícula, este valor aparece entre paréntesis.
 
 - Expandir un evento en la jerarquía para ver sus elementos secundarios. Los elementos secundarios del evento son otros eventos generados por el evento primario. Por ejemplo, un evento DOM puede tener agentes de escucha de eventos que aparecen como elementos secundarios. Un agente de escucha de eventos puede tener otros eventos resultantes, como un evento de presentación.
 
@@ -264,12 +264,12 @@ if (performance.mark && performance.measure) {
 
 - Puedes ver los detalles de cada evento en el panel de detalles (panel derecho). Las propiedades varían en función de cada evento, como muestran estos ejemplos:
 
-    - Para los temporizadores, los agentes de escucha de eventos (eventos DOM) y las devoluciones de llamada de fotogramas de animación, la propiedad **Función de devolución de llamada** incluye un vínculo a la ubicación del código fuente, así como el nombre del controlador de eventos o de la función de devolución de llamada.
+  - Para los temporizadores, los agentes de escucha de eventos (eventos DOM) y las devoluciones de llamada de fotogramas de animación, la propiedad **Función de devolución de llamada** incluye un vínculo a la ubicación del código fuente, así como el nombre del controlador de eventos o de la función de devolución de llamada.
 
-    - Para los temporizadores, los agentes de escucha de eventos (eventos DOM), los eventos de diseño y las devoluciones de llamada de fotogramas de animación, aparece un resumen codificado por colores del evento seleccionado y todos sus elementos secundarios en la sección **Resumen de tiempo inclusivo** (el anillo codificado por colores). Cada segmento codificado por colores de la imagen representa un tipo de evento. La información sobre herramientas proporciona el nombre del tipo de evento.
+  - Para los temporizadores, los agentes de escucha de eventos (eventos DOM), los eventos de diseño y las devoluciones de llamada de fotogramas de animación, aparece un resumen codificado por colores del evento seleccionado y todos sus elementos secundarios en la sección **Resumen de tiempo inclusivo** (el anillo codificado por colores). Cada segmento codificado por colores de la imagen representa un tipo de evento. La información sobre herramientas proporciona el nombre del tipo de evento.
 
-    > [!TIP]
-    > El gráfico de detalles de la escala de tiempo y el **Resumen de tiempo inclusivo** pueden ayudarte a identificar áreas que deben optimizarse. Si alguna de estas vistas muestra un gran número de pequeñas tareas, el evento puede ser un posible candidato para optimización. Por ejemplo, una aplicación puede estar actualizando elementos DOM con frecuencia, lo que produce un gran número de eventos de diseño y de análisis de código HTML. Podrías optimizar el rendimiento procesando este trabajo por lotes.
+  > [!TIP]
+  > El gráfico de detalles de la escala de tiempo y el **Resumen de tiempo inclusivo** pueden ayudarte a identificar áreas que deben optimizarse. Si alguna de estas vistas muestra un gran número de pequeñas tareas, el evento puede ser un posible candidato para optimización. Por ejemplo, una aplicación puede estar actualizando elementos DOM con frecuencia, lo que produce un gran número de eventos de diseño y de análisis de código HTML. Podrías optimizar el rendimiento procesando este trabajo por lotes.
 
 ### <a name="FilterTimelineDetails"></a> Filtrar detalles de la escala de tiempo
  Puedes filtrar la vista de detalles de escala de tiempo de un evento concreto si seleccionas **Filtro para evento** en el menú contextual de ese evento. Cuando eliges esta opción, el ámbito de la escala de tiempo y la cuadrícula se ajusta al evento seleccionado. La selección del gráfico de uso de CPU también limita su ámbito a ese evento específico.
