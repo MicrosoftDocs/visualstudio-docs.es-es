@@ -18,11 +18,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 63d9dd0844cb3e7422f8d78a0ee2e3cb4e0b1fab
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59664792"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68196060"
 ---
 # <a name="installing-database-systems-tools-and-samples"></a>Instalación de sistemas de base de datos, herramientas y ejemplos
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

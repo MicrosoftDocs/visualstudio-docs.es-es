@@ -1,5 +1,5 @@
 ---
-title: 'Área de prueba 6: Delete | Microsoft Docs'
+title: 'Área de prueba 6: Eliminar | Documentos de Microsoft'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -12,11 +12,11 @@ caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 3ffe786b5bc5f6d0bb0233fbb431988e0145611d
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60094877"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68155931"
 ---
 # <a name="test-area-6-delete"></a>Área de prueba 6: Eliminar
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -46,7 +46,7 @@ Esta área de prueba de complemento de control de código fuente trata las accio
   
 - El elemento aún existe en el almacén de control de código fuente, incluso después de la eliminación y se debe purgar manualmente.  
   
-|Acción|Pasos de prueba|Resultados esperados para comprobar|  
+|.|Pasos de prueba|Resultados esperados para comprobar|  
 |------------|----------------|--------------------------------|  
 |Eliminar un proyecto de cliente|1.  Cree un proyecto de cliente.<br />2.  Agregue la solución al control de código fuente.<br />3.  Quitar todo el proyecto de solución|Comportamiento esperado común.|  
 |Eliminar un archivo vacío|1.  Cree un proyecto de cliente.<br />2.  Agregue un archivo de cero bytes al proyecto.<br />3.  Agregue la solución al control de código fuente.<br />4.  Seleccione el archivo, elimínelo.|Comportamiento esperado común.|  

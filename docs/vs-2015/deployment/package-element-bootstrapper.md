@@ -17,11 +17,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 62c19953d1c4d82c0040e728fc2c2645c68589c9
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58996542"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68157683"
 ---
 # <a name="ltpackagegt-element-bootstrapper"></a>&lt;Paquete&gt; (elemento, arranque)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -146,10 +146,10 @@ El `Package` es el elemento de nivel superior XML dentro de un archivo de paquet
 ## <a name="elements-and-attributes"></a>Elementos y atributos  
  El `Package` elemento es necesario. Tiene los siguientes atributos.  
   
-|Atributo|Descripción|  
+|Atributo|DESCRIPCIÓN|  
 |---------------|-----------------|  
-|`Culture`|Obligatorio. Define la referencia cultural para este paquete, que determina el idioma que se usará. Este atributo es una clave en el `Strings` elemento, que se enumera las cadenas específicas de referencias culturales para nombres de producto y los mensajes de error durante la instalación.|  
-|`Name`|Obligatorio. El nombre del paquete que se muestra al desarrollador dentro de una herramienta como [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Este atributo es una clave en el `Strings` elemento, que debe contener un `String` elemento con el `Name` y `Culture` establecer propiedades para que coincida con el `Name` y `Culture` propiedades de `Package`.|  
+|`Culture`|Necesario. Define la referencia cultural para este paquete, que determina el idioma que se usará. Este atributo es una clave en el `Strings` elemento, que se enumera las cadenas específicas de referencias culturales para nombres de producto y los mensajes de error durante la instalación.|  
+|`Name`|Necesario. El nombre del paquete que se muestra al desarrollador dentro de una herramienta como [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Este atributo es una clave en el `Strings` elemento, que debe contener un `String` elemento con el `Name` y `Culture` establecer propiedades para que coincida con el `Name` y `Culture` propiedades de `Package`.|  
 |`LicenseAgreement`|Opcional. Especifica el nombre del archivo en el paquete de distribución que contiene el contrato de licencia de usuario final (CLUF).  Este archivo puede ser texto sin formato (.txt) o formato de texto enriquecido. (.rtf)|  
   
 ## <a name="example"></a>Ejemplo  

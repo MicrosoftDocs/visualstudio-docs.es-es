@@ -15,11 +15,11 @@ author: gewarren
 ms.author: gewarren
 manager: wpickett
 ms.openlocfilehash: 02b92ac92e545ab30405d195d85a97a4ef2e3806
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58988236"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68151088"
 ---
 # <a name="ca1012-abstract-types-should-not-have-constructors"></a>CA1012: Los tipos abstractos no deberían tener constructores
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,7 +31,7 @@ ms.locfileid: "58988236"
 |Categoría|Microsoft.Design|
 |Cambio problemático|Poco problemático|
 
-## <a name="cause"></a>Motivo
+## <a name="cause"></a>Causa
  Un tipo público es abstracto y tiene un constructor público.
 
 ## <a name="rule-description"></a>Descripción de la regla

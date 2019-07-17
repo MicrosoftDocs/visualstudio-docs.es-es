@@ -29,12 +29,12 @@ caps.latest.revision: 62
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 083c866b10fac257cacf954dfccbcb3875aec53a
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 15b9921514f76d788430c1eda66603e9fc446361
+ms.sourcegitcommit: 748d9cd7328a30f8c80ce42198a94a4b5e869f26
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65702637"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67891023"
 ---
 # <a name="attach-to-running-processes-with-the-visual-studio-debugger"></a>Crear asociaciones con procesos en ejecución con el depurador de Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -65,7 +65,7 @@ Puede usar esta capacidad para depurar aplicaciones que se ejecutan en un equipo
 
     2. En el cuadro de diálogo **Seleccionar tipo de código** , haga clic en **Depurar estos tipos de código** y seleccione los tipos que va a depurar.
 
-    3. Haga clic en **Aceptar**.
+    3. Haga clic en **OK**.
 
 4. Haga clic en **Adjuntar**.
 
@@ -86,7 +86,8 @@ Puede usar esta capacidad para depurar aplicaciones que se ejecutan en un equipo
 
    1. Escriba el nombre en el cuadro de lista **Calificador** .
 
-      >**Tenga en cuenta** si, en pasos posteriores, no se puede conectar con el nombre del equipo remoto, use la dirección IP. (El número de puerto puede aparecer automáticamente después de seleccionar el proceso. También puede escribir manualmente. En la ilustración siguiente, 4020 es el puerto predeterminado para el depurador remoto.)
+      > [!NOTE]
+      > Si, en pasos posteriores, no se puede conectar con el nombre del equipo remoto, use la dirección IP. (El número de puerto puede aparecer automáticamente después de seleccionar el proceso. También puede escribir manualmente. En la ilustración siguiente, 4020 es el puerto predeterminado para el depurador remoto.)
 
    2. Haga clic en la flecha desplegable del cuadro de lista **Calificador** y seleccione el nombre del equipo en la lista desplegable.
 
@@ -106,7 +107,7 @@ Puede usar esta capacidad para depurar aplicaciones que se ejecutan en un equipo
 
 ## <a name="additional-info"></a>Información adicional
 
-Puede tener asociados varios programas mientras realiza la depuración, pero sólo un programa estará activo en el depurador en cada momento. Puede establecer el programa activo en la barra de herramientas **Ubicación de depuración** o en la ventana **Procesos** . Para obtener más información, vea [Cómo: Establecer el programa actual](https://msdn.microsoft.com/7e1d7fa5-0e40-44cf-8c41-d3dba31c969e).
+Puede tener asociados varios programas mientras realiza la depuración, pero sólo un programa estará activo en el depurador en cada momento. Puede establecer el programa activo en la barra de herramientas **Ubicación de depuración** o en la ventana **Procesos** . Para obtener más información, consulte [Cómo Establecer el programa actual](https://msdn.microsoft.com/7e1d7fa5-0e40-44cf-8c41-d3dba31c969e).
 
 Si intenta asociar a un proceso que pertenece a una cuenta de usuario que no es de confianza, aparecerá un cuadro de diálogo de confirmación con una advertencia de seguridad. Para obtener más información, consulte [advertencia de seguridad: Adjuntar a un proceso que pertenezca a un usuario que no sea de confianza puede ser peligroso. Si la información siguiente parece sospechosa o no está seguro, no la adjunte a este proceso](/visualstudio/debugger/security-warning-attaching-to-a-process-owned-by-an-untrusted-user?view=vs-2015).
 
@@ -126,7 +127,7 @@ Para algunos tipos de aplicación (por ejemplo, las aplicaciones de Windows Stor
 |Depurar una aplicación administrada o nativa en el equipo local|Use asociar al proceso o [depuración estándar](../debugger/getting-started-with-the-debugger.md)|*appname*.exe|Para obtener acceso rápidamente el cuadro de diálogo, utilice **CTRL + ALT + P** y, a continuación, escriba la primera letra del nombre del proceso.|
 |Depurar aplicaciones ASP.NET en el equipo local después de iniciar la aplicación sin el depurador|Use asociar al proceso|iiexpress.exe|Esto puede resultar útil para realizar la aplicación carga más rápida, por ejemplo, (por ejemplo) al generar perfiles. |
 |Depuración remota de ASP.NET 4 o 4.5 en un servidor IIS|Utilizar las herramientas remotas y asociar al proceso|w3wp.exe|Consulte [Remote Debugging ASP.NET en un equipo remoto de IIS](../debugger/remote-debugging-aspnet-on-a-remote-iis-7-5-computer.md)|
-|Depuración remota de ASP.NET Core en un servidor IIS|Utilizar las herramientas remotas y asociar al proceso|dnx.exe|Implementación de aplicaciones, consulte [publicar en IIS](https://docs.asp.net/en/latest/publishing/iis.html). Para la depuración, vea [Remote Debugging ASP.NET en un equipo remoto de IIS](../debugger/remote-debugging-aspnet-on-a-remote-iis-7-5-computer.md)|
+|Depuración remota de ASP.NET Core en un servidor IIS|Utilizar las herramientas remotas y asociar al proceso|DNX.exe|Implementación de aplicaciones, consulte [publicar en IIS](https://docs.asp.net/en/latest/publishing/iis.html). Para la depuración, vea [Remote Debugging ASP.NET en un equipo remoto de IIS](../debugger/remote-debugging-aspnet-on-a-remote-iis-7-5-computer.md)|
 |Depurar otros tipos de aplicaciones compatibles en un proceso de servidor|Usar herramientas remotas (si el servidor es remoto) y asociar al proceso|Iexplore.exe u otros procesos|Si es necesario, utilice el Administrador de tareas para ayudar a identificar el proceso. Consulte [depuración remota](../debugger/remote-debugging.md) y las secciones posteriores de este tema.|
 |Depuración remota de una aplicación de escritorio de Windows|F5 y herramientas remotas|N/D| Consulte [depuración remota](../debugger/remote-debugging.md)|
 |Depuración remota de una aplicación Universal de Windows (UWP), OneCore, HoloLens o IoT|Depurar paquete de aplicaciones instalado|N/D|Use **depurar / otros destinos de depuración / depurar paquete de la aplicación instalado** en lugar de **asociar al proceso**|
@@ -169,7 +170,7 @@ En algunos escenarios de depuración locales, puede depurar en Visual Studio sin
 
    3. En el cuadro de diálogo **Seleccionar tipo de código** , seleccione **Depurar estos tipos de código** y el tipo de código que no se haya asociado correctamente. Borre cualquier otro código.
 
-   4. Haga clic en **Aceptar**. El cuadro de diálogo **Seleccionar tipo de código** se cierra.
+   4. Haga clic en **OK**. El cuadro de diálogo **Seleccionar tipo de código** se cierra.
 
    5. En el cuadro de diálogo **Asociar al proceso** , haga clic en **Asociar**.
 

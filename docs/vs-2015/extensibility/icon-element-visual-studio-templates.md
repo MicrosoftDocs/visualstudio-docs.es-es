@@ -13,11 +13,11 @@ caps.latest.revision: 15
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 3de31652af7bc3fd2da3c5e67e37df8e9ff120e8
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58997112"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68204001"
 ---
 # <a name="icon-element-visual-studio-templates"></a>Icon (Elemento, Plantillas de Visual Studio)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,7 +25,7 @@ ms.locfileid: "58997112"
 Especifica la ruta de acceso y el nombre de archivo del archivo de imagen que actúa como el icono, que aparece en cualquiera de los **nuevo proyecto** o el **Agregar nuevo elemento** cuadro de diálogo, para la plantilla.  
   
  \<VSTemplate>  
- \<TemplateData>  
+ \<TemplateData >  
  \<Icono >  
   
 ## <a name="syntax"></a>Sintaxis  
@@ -45,22 +45,22 @@ Especifica la ruta de acceso y el nombre de archivo del archivo de imagen que ac
   
 ### <a name="attributes"></a>Atributos  
   
-|Atributo|Descripción|  
+|Atributo|DESCRIPCIÓN|  
 |---------------|-----------------|  
-|`Package`|Atributo opcional para escenarios de usuario avanzada.<br /><br /> Identificador de un GUID que especifica el paquete de Visual Studio.|  
-|`ID`|Atributo opcional para escenarios de usuario avanzada.<br /><br /> Especifica el identificador de recurso de Visual Studio.|  
+|`Package`|Atributo opcional para escenarios de usuario avanzada.<br /><br /> Un identificador GUID que especifica el id. paquete de Visual Studio.|  
+|`ID`|Atributo opcional para escenarios de usuario avanzada.<br /><br /> Especifica el identificador de recurso de Visual Studio.|  
   
 ### <a name="child-elements"></a>Elementos secundarios  
  Ninguno.  
   
 ### <a name="parent-elements"></a>Elementos primarios  
   
-|Elemento|Descripción|  
+|Elemento|DESCRIPCIÓN|  
 |-------------|-----------------|  
 |[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Elemento necesario.<br /><br /> Clasifica la plantilla y define cómo se muestra en el cuadro de diálogo **Nuevo proyecto** o **Agregar nuevo elemento** .|  
   
 ## <a name="text-value"></a>Valor de texto  
- Se requiere un valor de texto a menos que el `Package` y `ID` se usan los atributos.  
+ Se requiere un valor de texto a menos que se usen los atributos `Package` y `ID`.  
   
  El texto proporciona la ruta de acceso y el nombre del icono de la plantilla que va a aparecer en el **nuevo proyecto** cuadro de diálogo.  
   

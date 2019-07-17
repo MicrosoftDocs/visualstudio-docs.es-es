@@ -14,21 +14,21 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 5e1a1819178961ae0a4ccd02286d6a166fd18b8f
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58995567"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68164403"
 ---
 # <a name="custom-debug-interface-access-sdk"></a>Personalizado (Debug Interface Access SDK)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 Algunos compiladores introducen símbolos que no se identifican mediante cualquiera de los tipos de símbolo estándar de léxico. Estos símbolos se identifican mediante un `SymTagCustom` etiqueta.  
   
-## <a name="properties"></a>Propiedades  
+## <a name="properties"></a>Properties (Propiedades)  
  En la tabla siguiente muestra las propiedades que son válidas para este tipo de símbolo.  
   
-|Property|Tipo de datos|Descripción|  
+|Propiedad|Tipo de datos|DESCRIPCIÓN|  
 |--------------|---------------|-----------------|  
 |[IDiaSymbol::get_dataBytes](../../debugger/debug-interface-access/idiasymbol-get-databytes.md)|`BYTE`|Matriz de datos asociadas con el símbolo.|  
 |[IDiaSymbol::get_symIndexId](../../debugger/debug-interface-access/idiasymbol-get-symindexid.md)|`DWORD`|Id. de índice de símbolo.|  

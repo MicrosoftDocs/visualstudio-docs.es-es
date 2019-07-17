@@ -10,11 +10,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: c8520084b57fdf0f831f62626593832d03c25636
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60107871"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68183921"
 ---
 # <a name="updating-shapes-and-connectors-to-reflect-the-model"></a>Actualizar formas y conectores para reflejar el modelo
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ using Microsoft.VisualStudio.Modeling.Diagrams;
 ## <a name="set-shape-map-properties-to-control-the-visibility-of-a-decorator"></a>Establecer las propiedades de mapa de formas para controlar la visibilidad de un elemento decorator  
  Puede controlar la visibilidad de un elemento decorator sin necesidad de escribir código de programa, mediante la configuración de la asignación entre la forma y la clase de dominio en la definición de DSL. Para obtener más información, vea los temas siguientes:  
   
-- [Cómo: Controlar la visibilidad de un elemento Decorator-redirigir](../misc/how-to-control-the-visibility-of-a-decorator-redirect.md)  
+- [Procedimientos: Controlar la visibilidad de un elemento Decorator-redirigir](../misc/how-to-control-the-visibility-of-a-decorator-redirect.md)  
   
 - [Cómo definir lenguajes específicos de dominio](../modeling/how-to-define-a-domain-specific-language.md)  
   

@@ -12,11 +12,11 @@ caps.latest.revision: 9
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 2086473bc484fed4e8e351f0c3838074557586c9
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58988304"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68194079"
 ---
 # <a name="parent-element"></a>Elemento Parent
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,17 +34,17 @@ El elemento primario de un cuadro combinado o botón sólo puede ser un grupo. E
   
 ### <a name="attributes"></a>Atributos  
   
-|Atributo|Descripción|  
+|Atributo|DESCRIPCIÓN|  
 |---------------|-----------------|  
-|guid|Obligatorio. Identificador de comando de GUID o identificador de GUID.|  
-|id|Obligatorio. Id. de GUID/ID el identificador de comando.|  
+|GUID|Necesario. Identificador de comando de GUID o identificador de GUID.|  
+|id|Necesario. Id. de GUID/ID el identificador de comando.|  
   
 ### <a name="child-elements"></a>Elementos secundarios  
- Ninguna  
+ None  
   
 ### <a name="parent-elements"></a>Elementos primarios  
   
-|Elemento|Descripción|  
+|Elemento|DESCRIPCIÓN|  
 |-------------|-----------------|  
 |[CommandTable (Elemento)](../extensibility/commandtable-element.md)|Define todos los elementos que representan los comandos que un paquete VSPackage proporciona al entorno de desarrollo integrado (IDE). Por ejemplo, los elementos de menú, menús, barras de herramientas y cuadros combinados.|  
 |[Buttons (Elemento)](../extensibility/buttons-element.md)|Grupos [elemento Button](../extensibility/button-element.md) elementos.|  

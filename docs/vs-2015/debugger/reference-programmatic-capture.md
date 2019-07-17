@@ -10,11 +10,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 8cebeb7eb651c11b5f560b981df30213fc726c66
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58994959"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68162262"
 ---
 # <a name="reference-programmatic-capture"></a>Referencia (captura mediante programación)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,13 +25,13 @@ Diagnóstico de gráficos admite el control mediante programación de sus caract
   
 ### <a name="classes"></a>Clases  
   
-|Name|Descripción|  
+|Name|DESCRIPCIÓN|  
 |----------|-----------------|  
 |[Case VsgDbg](../debugger/vsgdbg-class.md)|Representa la interfaz a través de la que se controla mediante programación el componente de aplicación de diagnóstico de gráficos.|  
   
 ### <a name="preprocessor-symbols"></a>Símbolos de preprocesador  
   
-|Name|Descripción|  
+|NOMBRE|DESCRIPCIÓN|  
 |----------|-----------------|  
 |[DONT_SAVE_VSGLOG_TO_TEMP](../debugger/dont-save-vsglog-to-temp.md)|Define por su presencia si el archivo de registro de gráficos se guarda en el directorio de archivos temporales del usuario.|  
 |[VSG_DEFAULT_RUN_FILENAME](../debugger/vsg-default-run-filename.md)|Define el nombre de archivo predeterminado del archivo de registro de gráficos.|  
@@ -39,7 +39,7 @@ Diagnóstico de gráficos admite el control mediante programación de sus caract
   
 ## <a name="related-articles"></a>Artículos relacionados  
   
-|Título|Descripción|  
+|Título|DESCRIPCIÓN|  
 |-----------|-----------------|  
 |[Capturing Graphics Information](../debugger/capturing-graphics-information.md)|Muestra cómo capturar información de gráficos desde la aplicación basada en DirectX para que pueda utilizar las herramientas de Diagnóstico de gráficos de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] con el fin de diagnosticar problemas de representación.|  
 |[Información general](../debugger/overview-of-visual-studio-graphics-diagnostics.md)|Muestra cómo Diagnóstico de gráficos puede ayudarle a depurar errores de representación en juegos y aplicaciones de DirectX.|

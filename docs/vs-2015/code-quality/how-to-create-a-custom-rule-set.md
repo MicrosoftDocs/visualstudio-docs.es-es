@@ -14,11 +14,11 @@ author: gewarren
 ms.author: gewarren
 manager: wpickett
 ms.openlocfilehash: 909242aaf8dd4caaee7af75e40554aaff648df68
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: HT
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60045660"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68201366"
 ---
 # <a name="how-to-create-a-custom-rule-set"></a>Procedimiento Crear un conjunto de reglas personalizadas
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -112,5 +112,5 @@ En [!INCLUDE[vsUltShort](../includes/vsultshort-md.md)], [!INCLUDE[vsPreShort](.
 - Para agregar o quitar conjuntos de reglas predeterminados para el conjunto de reglas actual de Microsoft, haga clic en **agregar o quitar conjuntos de reglas secundarios**.  
   
 ## <a name="see-also"></a>Vea también  
- [Cómo: Configurar análisis de código para un proyecto de código administrado](../code-quality/how-to-configure-code-analysis-for-a-managed-code-project.md)   
+ [Procedimientos: Configurar análisis de código para un proyecto de código administrado](../code-quality/how-to-configure-code-analysis-for-a-managed-code-project.md)   
  [Referencia del conjunto de reglas Análisis de código](../code-quality/code-analysis-rule-set-reference.md)

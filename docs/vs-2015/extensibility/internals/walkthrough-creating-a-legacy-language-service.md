@@ -11,11 +11,11 @@ caps.latest.revision: 20
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 56323447d1d4134939c8fd7550778d2c946bfe19
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60061377"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68144409"
 ---
 # <a name="walkthrough-creating-a-legacy-language-service"></a>Tutorial: Creación de un servicio de lenguaje heredado
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -44,15 +44,15 @@ Mediante las clases de lenguaje de framework (MPF) paquete administrado para imp
   
      Puede utilizar cualquier nombre que desee. Estos procedimientos detallados aquí suponen MyLanguagePackage como el nombre.  
   
-3. Seleccione [!INCLUDE[csprcs](../../includes/csprcs-md.md)] como el idioma y la opción para generar un nuevo archivo de clave. Haga clic en **Siguiente**.  
+3. Seleccione [!INCLUDE[csprcs](../../includes/csprcs-md.md)] como el idioma y la opción para generar un nuevo archivo de clave. Haga clic en **Next**.  
   
-4. Escriba la información correspondiente de la empresa y el paquete. Haga clic en **Siguiente**.  
+4. Escriba la información correspondiente de la empresa y el paquete. Haga clic en **Next**.  
   
-5. Seleccione **comando de menú**. Haga clic en **Siguiente**.  
+5. Seleccione **comando de menú**. Haga clic en **Next**.  
   
      Si no desea utilizar con fragmentos de código, puede haga clic en Finalizar y omitir el paso siguiente.  
   
-6. Escriba **Insertar fragmento de código** como el **nombre de comando** y `cmdidInsertSnippet` para el **identificador de comando**. Haga clic en **Finalizar**.  
+6. Escriba **Insertar fragmento de código** como el **nombre de comando** y `cmdidInsertSnippet` para el **identificador de comando**. Haga clic en **Finalizar**  
   
      El **nombre de comando** y **identificador de comando** puede ser lo que quiera, estos son solo ejemplos.  
   

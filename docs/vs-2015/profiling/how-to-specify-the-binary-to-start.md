@@ -16,13 +16,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 919e84393cf4aef929a504aadbefe905afe24bfb
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60098433"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68203432"
 ---
-# <a name="how-to-specify-the-binary-to-start"></a>Procedimiento Especificar el binario de inicio
+# <a name="how-to-specify-the-binary-to-start"></a>Procedimiento Especificación del binario de inicio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Para generar perfiles de binarios, como los archivos DLL, debe escribir información en el cuadro de diálogo **\<Destino > Páginas de propiedades**. Esta información indica dónde puede encontrar el proyecto DLL la aplicación que realiza la llamada.  
@@ -45,7 +45,7 @@ Para generar perfiles de binarios, como los archivos DLL, debe escribir informac
   
 6. En el cuadro de texto **Directorio de trabajo**, especifique la ubicación del directorio.  
   
-7. Haga clic en **Aceptar**.  
+7. Haga clic en **OK**.  
   
 ## <a name="see-also"></a>Vea también  
  [Configurar sesiones de rendimiento](../profiling/configuring-performance-sessions.md)

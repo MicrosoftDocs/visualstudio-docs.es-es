@@ -20,13 +20,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: cd3cbbcd740c0f124b8ab4379204a9d425cd541c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60039549"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68205401"
 ---
-# <a name="how-to-debug-web-applications"></a>Procedimiento Depurar aplicaciones Web
+# <a name="how-to-debug-web-applications"></a>Procedimiento Depuración de aplicaciones web
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] es la tecnología principal para desarrollar aplicaciones Web en [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. El depurador de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] proporciona herramientas muy eficaces para depurar aplicaciones web [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] localmente o en un servidor remoto. Este tema describe cómo depurar un [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] proyecto durante el desarrollo. Para obtener información sobre cómo depurar un [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] ya implementada en un servidor de producción de aplicaciones Web, consulte [depurar aplicaciones Web implementadas](../debugger/debugging-deployed-web-applications.md).  
@@ -39,7 +39,7 @@ ms.locfileid: "60039549"
   
 - El archivo de configuración de la aplicación (Web.config) se debe establecer en modo de depuración. El modo de depuración hace que [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] genere símbolos para los archivos generados dinámicamente y permite al depurador asociarse a la aplicación [!INCLUDE[vstecasp](../includes/vstecasp-md.md)]. [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] establece esto automáticamente al empezar a depurar si se creó el proyecto a partir de la plantilla de proyectos web.  
   
-- Para obtener más información, vea [Cómo: Habilitar la depuración de aplicaciones ASP.NET](../debugger/how-to-enable-debugging-for-aspnet-applications.md).  
+- Para obtener más información, consulte [Cómo Habilitar la depuración de aplicaciones ASP.NET](../debugger/how-to-enable-debugging-for-aspnet-applications.md).  
   
 ### <a name="to-debug-a-web-application-during-development"></a>Para depurar una aplicación Web durante la fase de desarrollo  
   
@@ -56,4 +56,4 @@ ms.locfileid: "60039549"
 ## <a name="see-also"></a>Vea también  
  [Depurar script y aplicaciones web](../debugger/debugging-web-applications-and-script.md)   
  [Depurar aplicaciones de ASP.NET y AJAX](../debugger/debugging-aspnet-and-ajax-applications.md)   
- [Cómo: Habilitación de la depuración de aplicaciones de ASP.NET](../debugger/how-to-enable-debugging-for-aspnet-applications.md)
+ [Procedimientos: Habilitación de la depuración de aplicaciones de ASP.NET](../debugger/how-to-enable-debugging-for-aspnet-applications.md)

@@ -10,11 +10,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 623da37807e0fd61041bfeb9ab411ce0cb96d4b5
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60091128"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68164493"
 ---
 # <a name="how-to-create-an-xml-document-based-on-an-xsd-schema"></a>Procedimiento Crear un documento XML basado en un esquema XSD
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

@@ -16,11 +16,11 @@ author: gewarren
 ms.author: gewarren
 manager: wpickett
 ms.openlocfilehash: cff617adf2b31ef773de3bc41db7245346795bee
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59657134"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68142383"
 ---
 # <a name="ca2238-implement-serialization-methods-correctly"></a>CA2238: Implementar métodos de serialización correctamente
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,7 +34,7 @@ Para obtener la documentación más reciente de Visual Studio, consulte [CA2238:
 |Categoría|Microsoft.Usage|  
 |Cambio problemático|Importante: si el método es visible fuera del ensamblado.<br /><br /> Non-problemático: si el método no es visible fuera del ensamblado.|  
   
-## <a name="cause"></a>Motivo  
+## <a name="cause"></a>Causa  
  Un método que controla un evento de serialización no especifica la firma correcta, el tipo de valor devuelto ni la visibilidad.  
   
 ## <a name="rule-description"></a>Descripción de la regla  

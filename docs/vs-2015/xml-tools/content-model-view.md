@@ -10,11 +10,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: f85169ebb6460ac42031aec7c75ff2e29154a9ed
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60109134"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68164510"
 ---
 # <a name="content-model-view"></a>Vista Modelo de contenido
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,7 +43,7 @@ La vista Modelo de contenido proporciona una representación gráfica de los nod
 ## <a name="context-menus"></a>Menús contextuales  
  Al hacer clic con el botón secundario en un elemento de la superficie de diseño o el panel Área de trabajo, aparece un menú contextual. En la siguiente tabla se describen las opciones que están disponibles para la superficie de diseño de la vista Modelo de contenido.  
   
-|Opción|Descripción|  
+|Opción|DESCRIPCIÓN|  
 |------------|-----------------|  
 |**Mostrar en el Explorador de esquemas XML**|Coloca el foco en el Explorador de esquemas y resalta el nodo del conjunto de esquemas.|  
 |**Mostrar en vista de gráfico**|Cambia a la vista Gráfico.|  
@@ -55,7 +55,7 @@ La vista Modelo de contenido proporciona una representación gráfica de los nod
   
  En la tabla siguiente se describen las opciones disponibles para el panel Área de trabajo.  
   
-|Opción|Descripción|  
+|Opción|DESCRIPCIÓN|  
 |------------|-----------------|  
 |**Mostrar en el Explorador de esquemas XML**|Coloca el foco en el Explorador de esquemas y resalta el nodo del conjunto de esquemas.|  
 |**Mostrar en vista de gráfico**|Cambia a la vista Gráfico.|  
@@ -75,7 +75,7 @@ La vista Modelo de contenido proporciona una representación gráfica de los nod
   
  ![Barra de herramientas de diseñador de esquemas XML](../xml-tools/media/xsdcontentmodelviewtoolbar.gif "XSDContentModelViewToolbar")  
   
-|Opción|Descripción|  
+|Opción|DESCRIPCIÓN|  
 |------------|-----------------|  
 |**Mostrar vista inicio**|Se activa en el [iniciar vista de](../xml-tools/start-view.md). Esta vista puede obtenerse mediante el método abreviado de teclado: **CTRL + 1**.|  
 |**Mostrar vista modelo de contenido**|Se activa en el [vista modelo de contenido](../xml-tools/content-model-view.md). Esta vista puede obtenerse mediante el método abreviado de teclado: **CTRL + 2**.|  

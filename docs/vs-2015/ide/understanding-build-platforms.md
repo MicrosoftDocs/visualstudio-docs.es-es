@@ -18,11 +18,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 2f39bc76329ec891a6e239f7cd2ad816eea1979e
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54761951"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68193364"
 ---
 # <a name="understanding-build-platforms"></a>Descripción de las plataformas de compilación
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,13 +30,13 @@ ms.locfileid: "54761951"
 Puede almacenar versiones diferentes de las propiedades de solución y de proyecto que se aplican a distintas plataformas de destino. Por ejemplo, puede crear una configuración de depuración destinada a una plataforma x86 y una configuración de depuración destinada a una plataforma x64. Puede cambiar rápidamente la plataforma activa para poder compilar fácilmente varias configuraciones.  
   
 ## <a name="in-this-section"></a>En esta sección  
- [Configurar proyectos para plataformas de destino](../ide/how-to-configure-projects-to-target-platforms.md)  
+ [Cómo: configurar proyectos para plataformas de destino](../ide/how-to-configure-projects-to-target-platforms.md)  
  Explica cómo configurar un proyecto destinado a una plataforma específica.  
   
- [Configurar proyectos para múltiples plataformas de destino](../ide/how-to-configure-projects-to-target-multiple-platforms.md)  
+ [Cómo: Configuración de proyectos para destinarlos a varias plataformas](../ide/how-to-configure-projects-to-target-multiple-platforms.md)  
  Explica cómo configurar un proyecto destinado a varias plataformas.  
   
 ## <a name="see-also"></a>Vea también  
- [Tutorial: Compilar una aplicación](../ide/walkthrough-building-an-application.md)   
+ [Tutorial: Creación de una aplicación](../ide/walkthrough-building-an-application.md)   
  [Compilar y limpiar proyectos y soluciones en Visual Studio](../ide/building-and-cleaning-projects-and-solutions-in-visual-studio.md)   
  [Compilar y generar en Visual Studio](../ide/compiling-and-building-in-visual-studio.md)

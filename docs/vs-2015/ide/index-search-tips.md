@@ -15,11 +15,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 1072d38adac020a1b9976d17f98ddf8882d7cb22
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60044218"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68178822"
 ---
 # <a name="index-search-tips"></a>Sugerencias para la búsqueda en el índice
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,7 +29,7 @@ Puede encontrar información en el índice mediante el uso de palabras clave. En
 ## <a name="index-search-tips"></a>Sugerencias para la búsqueda en el índice  
  El uso del índice es un proceso sencillo; sin embargo, saber cómo escribir mejor las palabras claves puede aumentar la productividad de las búsquedas en el índice.  
   
-### <a name="general-guidelines"></a>Instrucciones generales  
+### <a name="general-guidelines"></a>Directrices generales  
   
 - Desplácese por las entradas del índice. No todos los temas se indexan del mismo modo, y el que podría resultar más útil podría aparecer más arriba o más abajo en la lista de lo previsto.  
   

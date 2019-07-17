@@ -16,11 +16,11 @@ author: gewarren
 ms.author: gewarren
 manager: wpickett
 ms.openlocfilehash: 75e67cdd058939837441bd969ac8629a6fc65dcc
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58986747"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68200362"
 ---
 # <a name="ca1306-set-locale-for-data-types"></a>CA1306: Establecer configuración regional de tipos de datos
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ ms.locfileid: "58986747"
 |Categoría|Microsoft.Globalization|
 |Cambio problemático|Poco problemático|
 
-## <a name="cause"></a>Motivo
+## <a name="cause"></a>Causa
  Un método o constructor crea uno o varios <xref:System.Data.DataTable?displayProperty=fullName> o <xref:System.Data.DataSet?displayProperty=fullName> instancias y no estableció explícitamente la propiedad de configuración regional (<xref:System.Data.DataTable.Locale%2A?displayProperty=fullName> o <xref:System.Data.DataSet.Locale%2A?displayProperty=fullName>).
 
 ## <a name="rule-description"></a>Descripción de la regla

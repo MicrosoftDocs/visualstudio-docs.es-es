@@ -1,5 +1,5 @@
 ---
-title: IDebugProcessSecurity::GetUserName | Microsoft Docs
+title: IDebugProcessSecurity::GetUserName | Documentos de Microsoft
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -11,11 +11,11 @@ caps.latest.revision: 5
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 17a6ef52d7df1c60b0cb6581a7e15eeaf67e7875
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58998692"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68202787"
 ---
 # <a name="idebugprocesssecuritygetusername"></a>IDebugProcessSecurity::GetUserName
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]

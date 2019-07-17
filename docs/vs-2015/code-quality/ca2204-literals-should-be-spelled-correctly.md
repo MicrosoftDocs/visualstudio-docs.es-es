@@ -16,11 +16,11 @@ author: gewarren
 ms.author: gewarren
 manager: wpickett
 ms.openlocfilehash: a08cb7cee2af51ade4b94dbf675ff83d7da456e2
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58997404"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68142505"
 ---
 # <a name="ca2204-literals-should-be-spelled-correctly"></a>CA2204: Los literales deben estar escritos correctamente
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ ms.locfileid: "58997404"
 |Categoría|Microsoft.Usage|
 |Cambio problemático|No trascendental|
 
-## <a name="cause"></a>Motivo
+## <a name="cause"></a>Causa
  Un método pasa una cadena literal que se usa en un parámetro o una propiedad que requiere una cadena traducida y la cadena literal contiene una o varias palabras que no son reconocidas por la biblioteca de correctores ortográficos de Microsoft.
 
 ## <a name="rule-description"></a>Descripción de la regla

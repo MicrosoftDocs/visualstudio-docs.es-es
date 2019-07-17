@@ -17,12 +17,12 @@ caps.latest.revision: 36
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 190ada55d5f46d159c6765e9af83d672b654313d
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 6b95ac29f3084bf8899249039ffbaa7da8c2294f
+ms.sourcegitcommit: 748d9cd7328a30f8c80ce42198a94a4b5e869f26
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65688156"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67890462"
 ---
 # <a name="walkthrough-writing-a-visualizer-in-c"></a>Tutorial: Escribir un visualizador en C\#
 
@@ -39,13 +39,13 @@ El código del visualizador debe colocarse en un archivo DLL, el cual será leí
 
 1. En el **archivo** menú, elija **New** y, a continuación, haga clic en **nuevo proyecto**.
 
-2. En el **nuevo proyecto** cuadro de diálogo **tipo de proyecto**s, seleccione **Visual C#**.
+2. En el **nuevo proyecto** cuadro de diálogo **tipo de proyecto**s, seleccione **Visual C#** .
 
 3. En el **plantillas** , seleccione **biblioteca de clases**.
 
 4. En el cuadro **Nombre**, escriba un nombre adecuado para la biblioteca de clases como, por ejemplo, MyFirstVisualizer.
 
-5. Haga clic en **Aceptar**.
+5. Haga clic en **OK**.
 
    Después de crear la biblioteca de clases, debe agregar una referencia a Microsoft.VisualStudio.DebuggerVisualizers.DLL, para poder utilizar las clases que allí se definen. No obstante, antes de agregar la referencia, debe cambiar los nombres de algunas clases para que sean significativos.
 
@@ -62,7 +62,7 @@ El código del visualizador debe colocarse en un archivo DLL, el cual será leí
 
 4. En el cuadro de diálogo **Agregar referencia**, en la ficha **.NET**, elija Microsoft.VisualStudio.DebuggerVisualizers.DLL.
 
-5. Haga clic en **Aceptar**.
+5. Haga clic en **OK**.
 
 6. En DebuggerSide.cs, agregue la instrucción siguiente a las instrucciones `using`:
 
@@ -106,7 +106,7 @@ El código del visualizador debe colocarse en un archivo DLL, el cual será leí
 
 2. En el cuadro de diálogo **Agregar referencia**, en la ficha **.NET**, elija System.Windows.Forms.DLL.
 
-3. Haga clic en **Aceptar**.
+3. Haga clic en **OK**.
 
 4. En DebuggerSide.cs, agregue la instrucción siguiente a las instrucciones `using`:
 
@@ -170,7 +170,7 @@ El código del visualizador debe colocarse en un archivo DLL, el cual será leí
 
 3. En el cuadro **Nombre**, escriba un nombre significativo para la aplicación de consola, como `MyTestConsole`.
 
-4. Haga clic en **Aceptar**.
+4. Haga clic en **OK**.
 
    Ahora, debe agregar las referencias necesarias para que MyTestConsole pueda llamar a MyFirstVisualizer.
 
@@ -180,13 +180,13 @@ El código del visualizador debe colocarse en un archivo DLL, el cual será leí
 
 2. En el cuadro de diálogo **Agregar referencia**, en la ficha **.NET**, elija Microsoft.VisualStudio.DebuggerVisualizers.DLL.
 
-3. Haga clic en **Aceptar**.
+3. Haga clic en **OK**.
 
 4. Haga clic con el botón derecho en **MyTestConsole** y elija nuevamente **Agregar referencia**.
 
 5. En el cuadro de diálogo **Agregar referencia**, haga clic en la ficha **Proyectos** y después haga clic en MyFirstVisualizer.
 
-6. Haga clic en **Aceptar**.
+6. Haga clic en **OK**.
 
    A continuación, agregará el código para finalizar el instrumento de prueba.
 
@@ -196,7 +196,8 @@ El código del visualizador debe colocarse en un archivo DLL, el cual será leí
 
 2. Cambie el nombre Program.cs por un nombre más significativo, como TestConsole.cs.
 
-    **Tenga en cuenta** [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] cambia automáticamente la declaración de clase de TestConsole.cs para que coincida con el nuevo nombre de archivo.
+    > [!NOTE]
+    > [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] cambia automáticamente la declaración de clase de TestConsole.cs para que coincida con el nuevo nombre del archivo.
 
 3. En TestConsole.cs, agregue el siguiente código a las instrucciones `using`:
 
@@ -221,7 +222,7 @@ El código del visualizador debe colocarse en un archivo DLL, el cual será leí
 
     Se iniciará la aplicación de consola y aparecerá el visualizador, que mostrará la cadena "Hello, World".
 
-   Enhorabuena. Acaba de compilar y probar el primer visualizador.
+   ¡Enhorabuena! Acaba de compilar y probar el primer visualizador.
 
    Si desea utilizar el visualizador en [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], en lugar de simplemente llamarlo desde el instrumento de prueba, tendrá que instalarlo. Para obtener más información, vea [Cómo: instalar un visualizador](../debugger/how-to-install-a-visualizer.md).
 
@@ -234,13 +235,13 @@ El código del visualizador debe colocarse en un archivo DLL, el cual será leí
 
 1. En el menú **Archivo**, elija **Agregar** y después haga clic en **Nuevo proyecto**.
 
-2. En el **Agregar nuevo proyecto** cuadro de diálogo **tipo de proyecto**s, seleccione **Visual C#**.
+2. En el **Agregar nuevo proyecto** cuadro de diálogo **tipo de proyecto**s, seleccione **Visual C#** .
 
 3. En el **plantillas** , seleccione **biblioteca de clases**.
 
 4. En el cuadro **Nombre**, escriba un nombre adecuado para la biblioteca de clases como, por ejemplo, MySecondVisualizer.
 
-5. Haga clic en **Aceptar**.
+5. Haga clic en **OK**.
 
    A continuación, puede agregarle un elemento del visualizador:
 

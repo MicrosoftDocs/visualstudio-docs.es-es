@@ -11,11 +11,11 @@ caps.latest.revision: 29
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 280b5b517089ad9e5b38cb00dc9b14c68253d1e6
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60108170"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68202046"
 ---
 # <a name="walkthrough-displaying-signature-help"></a>Tutorial: Mostrar ayuda de firma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -247,4 +247,4 @@ Ayuda para la firma (también conocido como *información de parámetros*) muest
 4. Después de escribir el paréntesis de apertura, debería ver una información sobre herramientas que muestra una lista de las dos firmas para el `add()` método.  
   
 ## <a name="see-also"></a>Vea también  
- [Tutorial: Vinculación de un tipo de contenido a una extensión de nombre de archivo](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)
+ [Tutorial: Vinculación de un tipo de contenido con una extensión de nombre de archivo](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)

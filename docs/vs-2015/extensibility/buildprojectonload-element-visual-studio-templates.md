@@ -9,11 +9,11 @@ caps.latest.revision: 9
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 464c427008c739f23431c58bd647aaa3b1f5609d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58986978"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68184652"
 ---
 # <a name="buildprojectonload-element-visual-studio-templates"></a>BuildProjectOnload (Elemento, Plantillas de Visual Studio)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -21,7 +21,7 @@ ms.locfileid: "58986978"
 Al crear y agregarlos a una solución se basa solo nuevos proyectos. No se compila la solución completa.  
   
  \<VSTemplate>  
- \<TemplateData>  
+ \<TemplateData >  
  \<BuildProjectOnLoad>  
   
 ## <a name="syntax"></a>Sintaxis  
@@ -41,7 +41,7 @@ Al crear y agregarlos a una solución se basa solo nuevos proyectos. No se compi
   
 ### <a name="parent-elements"></a>Elementos primarios  
   
-|Elemento|Descripción|  
+|Elemento|DESCRIPCIÓN|  
 |-------------|-----------------|  
 |TemplateData|Clasifica la plantilla y define cómo aparece tanto en el **nuevo proyecto** y **Agregar nuevo elemento** cuadros de diálogo.|  
   

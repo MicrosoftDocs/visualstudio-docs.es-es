@@ -13,11 +13,11 @@ author: mikeblome
 ms.author: mblome
 manager: jillfra
 ms.openlocfilehash: 9e85944e93b952b8239015761e8fb364cb265291
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60112109"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68201429"
 ---
 # <a name="demo-sample"></a>Ejemplo de demostración
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -56,13 +56,13 @@ El procedimiento siguiente muestra cómo crear el ejemplo de [Tutorial: Análisi
   
 3. En la lista **General**, seleccione el texto de la columna situada junto a **Extensión de destino** y escriba **.lib**.  
   
-4. En **Valores predeterminados del proyecto** , haga clic en la columna situada junto a **Tipo de configuración** y luego haga clic en **Biblioteca estática (.lib)**.  
+4. En **Valores predeterminados del proyecto** , haga clic en la columna situada junto a **Tipo de configuración** y luego haga clic en **Biblioteca estática (.lib)** .  
   
 ### <a name="add-the-header-and-source-file-to-the-codedefects-project"></a>Agregar el archivo de encabezado y código fuente al proyecto CodeDefects  
   
 1. En Explorador de soluciones, expanda **CodeDefects**, haga clic con el botón derecho en **Archivos de encabezado**, haga clic en **Agregar** y luego en **Nuevo elemento**.  
   
-2. En el cuadro de diálogo **Agregar nuevo elemento**, haga clic en **Código** y luego en **Archivo de encabezado (.h)**.  
+2. En el cuadro de diálogo **Agregar nuevo elemento**, haga clic en **Código** y luego en **Archivo de encabezado (.h)** .  
   
 3. En el cuadro **Nombre**, escriba **Bug.cpp** y haga clic en **Agregar**.  
   
@@ -90,7 +90,7 @@ El procedimiento siguiente muestra cómo crear el ejemplo de [Tutorial: Análisi
   
 5. En Explorador de soluciones, haga clic con el botón derecho en **Archivos de código fuente**, seleccione **Nuevo** y haga clic en **Nuevo elemento**.  
   
-6. En el cuadro de diálogo **Agregar nuevo elemento**, haga clic en **Archivo C++ (.cpp)**.  
+6. En el cuadro de diálogo **Agregar nuevo elemento**, haga clic en **Archivo C++ (.cpp)** .  
   
 7. En el cuadro **Nombre**, escriba **Bug.cpp** y haga clic en **Agregar**.  
   
@@ -170,13 +170,13 @@ El procedimiento siguiente muestra cómo crear el ejemplo de [Tutorial: Análisi
   
 6. En la lista **General**, seleccione el texto de la columna situada junto a **Extensión de destino** y escriba **.lib**.  
   
-7. En **Valores predeterminados del proyecto** , haga clic en la columna situada junto a **Tipo de configuración** y luego haga clic en **Biblioteca estática (.lib)**.  
+7. En **Valores predeterminados del proyecto** , haga clic en la columna situada junto a **Tipo de configuración** y luego haga clic en **Biblioteca estática (.lib)** .  
   
 ### <a name="add-the-header-file-and-source-file-to-the-annotations-project"></a>Agregar el archivo de encabezado y código fuente al proyecto Annotations  
   
 1. En Explorador de soluciones, expanda **Annotations**, haga clic con el botón derecho en **Archivos de encabezado**, haga clic en **Agregar** y luego en **Nuevo elemento**.  
   
-2. En el cuadro de diálogo **Agregar nuevo elemento**, haga clic en **Archivo de encabezado (.h)**.  
+2. En el cuadro de diálogo **Agregar nuevo elemento**, haga clic en **Archivo de encabezado (.h)** .  
   
 3. En el cuadro **Nombre**, escriba **annotations.h** y haga clic en **Agregar**.  
   
@@ -199,7 +199,7 @@ El procedimiento siguiente muestra cómo crear el ejemplo de [Tutorial: Análisi
   
 5. En Explorador de soluciones, haga clic con el botón derecho en **Archivos de código fuente**, seleccione **Nuevo** y haga clic en **Nuevo elemento**.  
   
-6. En el cuadro de diálogo **Agregar nuevo elemento**, haga clic en **Código** y luego en **Archivo C++ (.cpp)**.  
+6. En el cuadro de diálogo **Agregar nuevo elemento**, haga clic en **Código** y luego en **Archivo C++ (.cpp)** .  
   
 7. En el cuadro **Nombre**, escriba **annotations.cpp** y haga clic en **Agregar**.  
   

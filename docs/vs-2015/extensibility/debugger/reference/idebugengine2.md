@@ -1,5 +1,5 @@
 ---
-title: IDebugEngine2 | Microsoft Docs
+title: IDebugEngine2 | Documentos de Microsoft
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,11 +13,11 @@ caps.latest.revision: 16
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 0c011a530bbd4323546257a40334a4b8a0f57bdb
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58997973"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68195911"
 ---
 # <a name="idebugengine2"></a>IDebugEngine2
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -39,7 +39,7 @@ IDebugEngine2 : IUnknown
 ## <a name="methods-in-vtable-order"></a>Métodos en orden de Vtable  
  La tabla siguiente muestran los métodos de `IDebugEngine2`.  
   
-|Método|Descripción|  
+|Método|DESCRIPCIÓN|  
 |------------|-----------------|  
 |[EnumPrograms](../../../extensibility/debugger/reference/idebugengine2-enumprograms.md)|Crea un enumerador para todos los programas que se está depurando mediante una DE.|  
 |[Asociar](../../../extensibility/debugger/reference/idebugengine2-attach.md)|Asocia un DE a un programa.|  

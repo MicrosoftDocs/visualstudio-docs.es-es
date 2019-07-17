@@ -13,11 +13,11 @@ caps.latest.revision: 17
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: d8a5a91a0300f256b66970403a3431edf0fe757e
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58988673"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68189532"
 ---
 # <a name="scccheckin-function"></a>SccCheckin (Función)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -63,7 +63,7 @@ SCCRTN SccCheckin (
 ## <a name="return-value"></a>Valor devuelto  
  La implementación de complemento de control de origen de esta función debe devolver uno de los valores siguientes:  
   
-|Valor|Descripción|  
+|Valor|DESCRIPCIÓN|  
 |-----------|-----------------|  
 |SCC_OK|Los archivos se ha protegido correctamente.|  
 |SCC_E_FILENOTCONTROLLED|El archivo seleccionado no está bajo control de código fuente.|  

@@ -1,5 +1,5 @@
 ---
-title: 'Tutorial: XSLT Profiler | Microsoft Docs'
+title: 'Tutorial: XSLT Profiler | Documentos de Microsoft'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-xml-tools
@@ -10,11 +10,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: db9937a09c8260bd595b6c0311501920bf960aaf
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60100318"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68158595"
 ---
 # <a name="walkthrough-xslt-profiler"></a>Tutorial: Generador de perfiles XSLT
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

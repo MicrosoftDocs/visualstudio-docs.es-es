@@ -16,11 +16,11 @@ author: gewarren
 ms.author: gewarren
 manager: wpickett
 ms.openlocfilehash: b447b111cedc30aa23f3aaad0fbc964a5d8a2bd2
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59669359"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68189172"
 ---
 # <a name="ca1709-identifiers-should-be-cased-correctly"></a>CA1709: Los identificadores deben utilizar las mayúsculas y minúsculas correctamente
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,7 +34,7 @@ Para obtener la documentación más reciente de Visual Studio, consulte [CA1709:
 |Categoría|Microsoft.Naming|  
 |Cambio problemático|Problemático: cuando se desencadena en los ensamblados, espacios de nombres, tipos, miembros y parámetros.<br /><br /> Indivisible - cuando se desencadena en los parámetros de tipo genérico.|  
   
-## <a name="cause"></a>Motivo  
+## <a name="cause"></a>Causa  
  El nombre de un identificador no utilizando las mayúsculas correctamente.  
   
  \- o -  
@@ -62,7 +62,7 @@ Para obtener la documentación más reciente de Visual Studio, consulte [CA1709:
 ## <a name="when-to-suppress-warnings"></a>Cuándo suprimir advertencias  
  Es seguro suprimir esta advertencia si tiene sus propias convenciones de nomenclatura, o si el identificador representa un nombre propio, por ejemplo, el nombre de una empresa u otra tecnología.  
   
- También puede agregar términos específicos, abreviaturas y acrónimos que a un diccionario personalizado del análisis de código. Condiciones especificadas en el diccionario no hará que las infracciones de esta regla. Para obtener más información, vea [Cómo: Personalizar el diccionario de análisis de código](../code-quality/how-to-customize-the-code-analysis-dictionary.md)  
+ También puede agregar términos específicos, abreviaturas y acrónimos que a un diccionario personalizado del análisis de código. Condiciones especificadas en el diccionario no hará que las infracciones de esta regla. Para obtener más información, consulte [Cómo Personalizar el diccionario de análisis de código](../code-quality/how-to-customize-the-code-analysis-dictionary.md)  
   
 ## <a name="related-rules"></a>Reglas relacionadas  
  [CA1708: Los identificadores deben diferenciarse por algo más que el caso](../code-quality/ca1708-identifiers-should-differ-by-more-than-case.md)

@@ -12,11 +12,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 65f659b64b6a1e29e1e25ae344dd8033e631de09
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54804113"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68157768"
 ---
 # <a name="summary-view---resource-contention-view"></a>Vista Resumen: vista de contención de recursos
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,9 +33,9 @@ La vista Resumen muestra información sobre los eventos de la aplicación en el 
   
  **Recursos más contenidos** incluye los siguientes datos para cada recurso.  
   
-|Columna|Descripción|  
+|Columna|DESCRIPCIÓN|  
 |------------|-----------------|  
-|**Name**|Nombre del recurso.|  
+|**Nombre**|Nombre del recurso.|  
 |**Porcentaje de contenciones**|El porcentaje de todos los eventos de contención de los datos de generación de perfiles que eran contenciones de este recurso.|  
   
 ## <a name="most-contended-thread"></a>Subprocesos más contenidos  
@@ -43,8 +43,8 @@ La vista Resumen muestra información sobre los eventos de la aplicación en el 
   
  **Subprocesos más contenidos** incluye los siguientes datos para cada subproceso.  
   
-|Columna|Descripción|  
+|Columna|DESCRIPCIÓN|  
 |------------|-----------------|  
 |**ID**|Identifiador del subproceso.|  
-|**Name**|Nombre del proceso que posee el subproceso.|  
+|**Nombre**|Nombre del proceso que posee el subproceso.|  
 |**Porcentaje de contenciones**|El porcentaje de todos los eventos de contención de los datos de generación de perfiles que eran contenciones de este recurso.|

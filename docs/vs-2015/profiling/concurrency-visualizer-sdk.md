@@ -12,18 +12,18 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 4fb6543f5e741010ae19e706ee4a87352d678390
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60063795"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68150330"
 ---
 # <a name="concurrency-visualizer-sdk"></a>SDK del Visualizador de simultaneidad
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Puede instrumentar el código fuente mediante el uso del SDK del visualizador de simultaneidad para mostrar información adicional en el visualizador de simultaneidad. Puede asociar los datos adicionales a fases y eventos en el código. Estas visualizaciones adicionales se denominan *marcadores*.  Para obtener un tutorial de introducción, consulte [Introducción al SDK del visualizador de simultaneidad](http://go.microsoft.com/fwlink/?LinkId=235405).  
   
-## <a name="properties"></a>Propiedades  
+## <a name="properties"></a>Properties (Propiedades)  
  Las marcas, los intervalos y los mensajes tienen dos propiedades: categoría e importancia. En el cuadro de diálogo [Configuración avanzada](../profiling/advanced-settings-dialog-box-concurrency-visualizer.md), puede utilizar estas propiedades para filtrar el conjunto de marcadores que se muestran. Además, estas propiedades afectan a la representación visual de los marcadores. Por ejemplo, el tamaño de las marcas se utiliza para representar la importancia. Además, el color se utiliza para indicar la categoría.  
   
 ## <a name="basic-usage"></a>Uso básico  
@@ -124,7 +124,7 @@ Puede instrumentar el código fuente mediante el uso del SDK del visualizador de
   
 ## <a name="related-topics"></a>Temas relacionados  
   
-|Título|Descripción|  
+|Título|DESCRIPCIÓN|  
 |-----------|-----------------|  
 |[Referencia de la biblioteca C++](../profiling/cpp-library-reference.md)|Describe la API del visualizador de simultaneidad de C++.|  
 |[Referencia de la biblioteca C](../profiling/c-library-reference.md)|Describe la API del visualizador de simultaneidad de C.|  

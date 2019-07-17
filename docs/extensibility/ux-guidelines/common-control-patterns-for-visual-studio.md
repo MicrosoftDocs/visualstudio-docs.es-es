@@ -8,12 +8,12 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c96e3798c79fcca03052dc597270312f374f1b33
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 33becb67adb0453adef111ca2c8fb0d2b2e6edfc
+ms.sourcegitcommit: 748d9cd7328a30f8c80ce42198a94a4b5e869f26
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66312298"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67890974"
 ---
 # <a name="common-control-patterns-for-visual-studio"></a>Patrones de Control comunes para Visual Studio
 ## <a name="BKMK_CommonControls"></a> Controles comunes
@@ -252,7 +252,7 @@ Evite los botones de comando de ventanas de herramientas, o si necesita más de 
 
 ### <a name="common-buttons"></a>Botones comunes
 
-#### <a name="text"></a>Texto
+#### <a name="text"></a>Text
 Siga las instrucciones de escritura de [UI texto y la terminología](../../extensibility/ux-guidelines/ui-text-and-help-for-visual-studio.md#BKMK_UITextAndTerminology).
 
 #### <a name="visual-style"></a>Estilo Visual
@@ -296,7 +296,8 @@ Directrices para usar el botón:
 #### <a name="graphical-buttons"></a>Botones gráficos
 Algunos de los botones deben utilizar siempre una imagen gráfica y nunca incluyen texto para ahorrar espacio y evitar problemas de localización. A menudo se usan en otras listas que se puede ordenar y selectores de campo.
 
-> **Nota:** Los usuarios tienen que tabulador para ir a estos botones (no hay ninguna clave de acceso), colóquelos en un orden significativo. Mapa del `name` propiedad del botón a la acción que se tarda para que los lectores de pantalla interpretan correctamente la acción del botón.
+> [!NOTE]
+> Los usuarios tienen que tabulador para ir a estos botones (no hay ninguna clave de acceso), colóquelos en un orden significativo. Mapa del `name` propiedad del botón a la acción que se tarda para que los lectores de pantalla interpretan correctamente la acción del botón.
 
 | Función | Botón |
 | --- | --- |
@@ -340,7 +341,7 @@ El diseño de botón de expansión utilizado por Windows y Visual Studio deben c
 
 ![Incorrecta: estilo incorrecto del nodo de la vista de árbol](../../extensibility/ux-guidelines/media/070705-2_treeviewincorrect1.png "070705 2_TreeViewIncorrect1")<br />Incorrecta: estilo incorrecto del nodo de la vista de árbol
 
-#### <a name="selection"></a>Selección
+#### <a name="selection"></a>Número de selección
 Cuando se selecciona un nodo dentro de la vista de árbol, debe expandir el resaltado para todo el ancho del control de vista de árbol. Esto ayuda a los usuarios a identificar claramente qué elemento ha seleccionado. Colores de selección deben reflejar el tema actual de Visual Studio.
 
 ![Correcto: resaltado del nodo seleccionado se ajusta a todo el ancho del control de vista de árbol. ](../../extensibility/ux-guidelines/media/070705-1_treeviewcorrect.png "070705 1_TreeViewCorrect")<br />Correcto: resaltado del nodo seleccionado se ajusta a todo el ancho del control de vista de árbol.
@@ -383,7 +384,7 @@ Un control de trid es un control complejo que contiene una vista de árbol dentr
 
 - **Flecha derecha:** Expanda un nodo. Después de que el nodo está expandido, debe continuar navegar a la columna más cercana a la derecha. Exploración debe detenerse al final de la fila.
 
-- **Tab:** Navega a la celda más cercana a la derecha.  Al final de la fila, navegación sigue a la siguiente fila.
+- **Pestaña:** Navega a la celda más cercana a la derecha.  Al final de la fila, navegación sigue a la siguiente fila.
 
 - **Mayús + Tab:** Navega a la celda más cercana a la izquierda.  Al principio de la fila, navegación sigue a la celda situada en la fila anterior.
 

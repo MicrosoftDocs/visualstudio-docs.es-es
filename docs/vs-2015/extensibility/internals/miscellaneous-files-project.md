@@ -14,11 +14,11 @@ caps.latest.revision: 14
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 9c128475ad9f5cb71b98325bbece4e524507a08b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58995896"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68179783"
 ---
 # <a name="miscellaneous-files-project"></a>Proyecto de archivos varios
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -27,7 +27,7 @@ Cuando un usuario abre elementos del proyecto, el IDE asigna al proyecto archivo
   
  Los proyectos de desempeñan un papel importante en determinar qué editor se utiliza cuando un usuario abre un elemento de proyecto. Un proyecto puede diseñarse para abrir determinados archivos con un editor específico del proyecto o un editor estándar.  
   
- Normalmente, un editor específico del proyecto requiere que el usuario tiene un conocimiento especial o usar interfaces especiales del proyecto. Para obtener más información, vea [Cómo: Apertura de editores específicos del proyecto](../../extensibility/how-to-open-project-specific-editors.md).  
+ Normalmente, un editor específico del proyecto requiere que el usuario tiene un conocimiento especial o usar interfaces especiales del proyecto. Para obtener más información, consulte [Cómo Apertura de editores específicos del proyecto](../../extensibility/how-to-open-project-specific-editors.md).  
   
  Un editor estándar puede abrir cualquier archivo de una extensión específica en cualquier proyecto. El usuario puede personalizar algunos editores estándares, como el [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] editor de texto, para los proyectos, pero siguen conservar su carácter público. Editores estándar se crean mediante el <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenStandardEditor%2A> método.  
   

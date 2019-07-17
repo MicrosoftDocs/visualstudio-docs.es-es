@@ -12,11 +12,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: bd5a1ae4abc2e0b5c508b7b77160bbf8da3bb45e
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58988552"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68203223"
 ---
 # <a name="attach-reference-strings-to-uml-model-elements"></a>Adjuntar cadenas de referencia a elementos de modelo UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,7 +34,7 @@ Puede escribir código para asociar cadenas arbitrarias a elementos de modelo. U
   
  `using Microsoft.VisualStudio.ArchitectureTools.Extensibility.Uml;`  
   
-|Llamada al método|Descripción|  
+|Llamada al método|DESCRIPCIÓN|  
 |-----------------|-----------------|  
 |`element.AddReference (nameString, valueString, duplicatesAllowed)`|Crea un objeto `IReference` con el nombre y las cadenas de valores proporcionados, y lo vincula a `element`. Devuelve `IReference`.<br /><br /> Produce una excepción si `duplicatesAllowed` es false y ya hay un objeto `IReference` con el mismo nombre asociado a `element`.|  
 |`element.GetReferences(name)`|Devuelve todos los objetos `IReference` vinculados a `element` que tienen el `name` proporcionado.|  

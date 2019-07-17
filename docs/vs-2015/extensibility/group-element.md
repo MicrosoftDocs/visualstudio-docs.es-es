@@ -12,13 +12,13 @@ caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 35c332682b609f6620f96cc8eb8499cca921d399
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58995307"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68204275"
 ---
-# <a name="group-element"></a>Group (Elemento)
+# <a name="group-element"></a>Elemento Group
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Define un grupo de comandos del VSPackage.  
@@ -36,23 +36,23 @@ Define un grupo de comandos del VSPackage.
   
 ### <a name="attributes"></a>Atributos  
   
-|Atributo|Descripción|  
+|Atributo|DESCRIPCIÓN|  
 |---------------|-----------------|  
-|guid|Obligatorio. GUID del identificador de comando/identificador de GUID.|  
-|id|Obligatorio. Id. del identificador de comando/identificador de GUID.|  
-|priority|Opcional. Un valor numérico que especifica la prioridad.|  
+|GUID|Necesario. GUID del identificador de comando/identificador de GUID.|  
+|id|Necesario. Id. del identificador de comando/identificador de GUID.|  
+|prioridad|Opcional. Un valor numérico que especifica la prioridad.|  
 |Condición|Opcional. Consulte [atributos condicionales](../extensibility/vsct-xml-schema-conditional-attributes.md).|  
   
 ### <a name="child-elements"></a>Elementos secundarios  
   
-|Elemento|Descripción|  
+|Elemento|DESCRIPCIÓN|  
 |-------------|-----------------|  
 |Primario|Opcional. El elemento primario del botón.|  
 |Anotación|Comentario opcional.|  
   
 ### <a name="parent-elements"></a>Elementos primarios  
   
-|Elemento|Descripción|  
+|Elemento|DESCRIPCIÓN|  
 |-------------|-----------------|  
 |[Groups (Elemento)](../extensibility/groups-element.md)|Contiene entradas que definen los grupos de comandos de un paquete VSPackage.|  
   

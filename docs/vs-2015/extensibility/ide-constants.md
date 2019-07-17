@@ -17,11 +17,11 @@ caps.latest.revision: 24
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 18256996d829d34117caa11f4e581d8e54d738b1
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58997858"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68204037"
 ---
 # <a name="ide-constants"></a>Constantes de IDE
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,7 +30,7 @@ La <xref:Microsoft.VisualStudio.VSConstants> clase proporciona las constantes qu
   
 ## <a name="logical-and-physical-views"></a>Vistas lógicas y físicas  
   
-|Valor|Descripción|  
+|Value|DESCRIPCIÓN|  
 |-----------|-----------------|  
 |[LOGVIEWID_Code_guid](/dotnet/api/microsoft.visualstudio.vsconstants.logviewid.code_guid?view=visualstudiosdk-2015)|<xref:Microsoft.VisualStudio.VSConstants.GUID_VSStandardCommandSet97> `cmdidOpenWith` los controladores deben pasar este valor para el <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenStandardEditor%2A> método para obtener el **abrir con** cuadro de diálogo, en este caso en las vistas de código posible.|  
 |[LOGVIEWID_Debugging_guid](/dotnet/api/microsoft.visualstudio.vsconstants.logviewid.debugging_guid?view=visualstudiosdk-2015)|<xref:Microsoft.VisualStudio.VSConstants.GUID_VSStandardCommandSet97> `cmdidOpenWith` los controladores de este valor para pasar el <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenStandardEditor%2A> método para obtener el **abrir con** cuadro de diálogo, en este caso se rellena con posibles <xref:Microsoft.VisualStudio.VSConstants.LOGVIEWID.Debugging_guid> depuración de las vistas que se asignan a la misma vista que <xref:Microsoft.VisualStudio.VSConstants.LOGVIEWID.Code_guid>.|  
@@ -41,16 +41,16 @@ La <xref:Microsoft.VisualStudio.VSConstants> clase proporciona las constantes qu
   
 ## <a name="editor-factory-flags"></a>Editor de marcas de fábrica  
   
-|Valor|Descripción|  
+|Valor|DESCRIPCIÓN|  
 |-----------|-----------------|  
 |[CEF.CloneFile](/dotnet/api/microsoft.visualstudio.vsconstants.cef?view=visualstudiosdk-2015)|Una marca obsoleta combinada bit a bit como primer parámetro de la <xref:Microsoft.VisualStudio.Package.EditorFactory.CreateEditorInstance%2A> método.|  
 |[CEF.CloneFile](/dotnet/api/microsoft.visualstudio.vsconstants.cef?view=visualstudiosdk-2015)|Combine bit a bit como primer parámetro de la <xref:Microsoft.VisualStudio.Package.EditorFactory.CreateEditorInstance%2A>, método, esto indica el generador de editores debe realizar las correcciones necesarias.|  
 |[CEF.CloneFile](/dotnet/api/microsoft.visualstudio.vsconstants.cef?view=visualstudiosdk-2015)|Combine bit a bit como primer parámetro de la <xref:Microsoft.VisualStudio.Package.EditorFactory.CreateEditorInstance%2A> método, esta marca es mutuamente exclusiva de [CEF. CloneFile](/dotnet/api/microsoft.visualstudio.vsconstants.cef?view=visualstudiosdk-2015).|  
 |[CEF.CloneFile](/dotnet/api/microsoft.visualstudio.vsconstants.cef?view=visualstudiosdk-2015)|Combine bit a bit como primer parámetro de la <xref:Microsoft.VisualStudio.Package.EditorFactory.CreateEditorInstance%2A> método, esto indica el generador de editores debe crear el editor sin mostrar una interfaz de usuario (UI).|  
   
-## <a name="visual-studio-errors"></a>Visual Studio Errors  
+## <a name="visual-studio-errors"></a>Errores de Visual Studio  
   
-|Valor|Descripción|  
+|Valor|DESCRIPCIÓN|  
 |-----------|-----------------|  
 |<xref:Microsoft.VisualStudio.VSConstants.VS_E_BUSY>|Una constante devuelta por las interfaces al comportamiento asincrónico cuando el objeto en cuestión ya no está disponible|  
 |<xref:Microsoft.VisualStudio.VSConstants.VS_E_INCOMPATIBLEDOCDATA>|Un error HRESULT específico de Visual Studio para "datos incompatibles de documento".|  
@@ -66,7 +66,7 @@ La <xref:Microsoft.VisualStudio.VSConstants> clase proporciona las constantes qu
   
 ## <a name="visual-studio-constants"></a>Constantes de Visual Studio  
   
-|Valor|Descripción|  
+|Value|DESCRIPCIÓN|  
 |-----------|-----------------|  
 |<xref:Microsoft.VisualStudio.VSConstants.VS_S_PROJECTFORWARDED>|Un error HRESULT que es específico de Visual Studio y que indica "Proyecto reenviado".|  
 |<xref:Microsoft.VisualStudio.VSConstants.VS_S_TBXMARKER>|Una constante específica de Visual Studio para un "marcador de cuadro de herramientas".|  
@@ -83,9 +83,9 @@ La <xref:Microsoft.VisualStudio.VSConstants> clase proporciona las constantes qu
   
 |Constante|Valor|
 |--------------|-----------|
-|[SelectionElement.DocumentFrame](<xref:Microsoft.VisualStudio.VSConstants.SelectionElement#Microsoft_VisualStudio_VSConstants_SelectionElement_DocumentFrame>)|0x2|
+|[SelectionElement.DocumentFrame](<xref:Microsoft.VisualStudio.VSConstants.SelectionElement#Microsoft_VisualStudio_VSConstants_SelectionElement_DocumentFrame>)|0 x 2|
 |[SelectionElement.PropertyBrowserSID](<xref:Microsoft.VisualStudio.VSConstants.SelectionElement#Microsoft_VisualStudio_VSConstants_SelectionElement_PropertyBrowserSID>)|0x4|
-|[SelectionElement.StartupProject](<xref:Microsoft.VisualStudio.VSConstants.SelectionElement#Microsoft_VisualStudio_VSConstants_SelectionElement_StartupProject>)|0x3|
+|[SelectionElement.StartupProject](<xref:Microsoft.VisualStudio.VSConstants.SelectionElement#Microsoft_VisualStudio_VSConstants_SelectionElement_StartupProject>)|0 x 3|
 |[SelectionElement.UndoManager](<xref:Microsoft.VisualStudio.VSConstants.SelectionElement#Microsoft_VisualStudio_VSConstants_SelectionElement_UndoManager>)|0x0|
 |[SelectionElement.UserContext](<xref:Microsoft.VisualStudio.VSConstants.SelectionElement#Microsoft_VisualStudio_VSConstants_SelectionElement_UserContext>)|0x5|
 |[SelectionElement.WindowFrame](<xref:Microsoft.VisualStudio.VSConstants.SelectionElement#Microsoft_VisualStudio_VSConstants_SelectionElement_WindowFrame>)|0x1| 
@@ -93,7 +93,7 @@ La <xref:Microsoft.VisualStudio.VSConstants> clase proporciona las constantes qu
 ## <a name="vsselelemid"></a>VSSELELEMID  
  Constantes usadas para indicar un nuevo estado de selección.  
   
-|Constante|Valor|  
+|Constante|Value|  
 |--------------|-----------|  
 |<xref:Microsoft.VisualStudio.VSConstants.VSSELELEMID>|2|  
 |<xref:Microsoft.VisualStudio.VSConstants.VSSELELEMID>|7|  
@@ -106,7 +106,7 @@ La <xref:Microsoft.VisualStudio.VSConstants> clase proporciona las constantes qu
   
 ## <a name="component-selector-dialog-constants"></a>Constantes de cuadro de diálogo Selector de componentes  
   
-|Constante|Valor|  
+|Constante|Value|  
 |--------------|-----------|  
 |<xref:Microsoft.VisualStudio.VSConstants.CPDN_SELCHANGED>|WM_USER + 1280|  
 |<xref:Microsoft.VisualStudio.VSConstants.CPDN_SELDBLCLICK>|WM_USER + 1281|  

@@ -11,11 +11,11 @@ caps.latest.revision: 19
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: d288f2d007fd0f923021847179326069959d3698
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58988133"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68197022"
 ---
 # <a name="contributing-to-the-add-new-item-dialog-box"></a>Contribución al cuadro de diálogo Agregar nuevo elemento
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

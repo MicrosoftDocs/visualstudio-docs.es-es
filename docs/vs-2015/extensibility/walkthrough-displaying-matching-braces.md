@@ -11,11 +11,11 @@ caps.latest.revision: 28
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: caaafd0143d3b09a51518ee5f54a02b06dbf10aa
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60084939"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68165788"
 ---
 # <a name="walkthrough-displaying-matching-braces"></a>Tutorial: Mostrar llaves que coincidan
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -125,4 +125,4 @@ Puede implementar características basadas en lenguaje como definiendo las llave
 4. Al colocar el símbolo de intercalación antes de una llave de apertura, debe aparecer resaltada dicha llave y la llave de cierre correspondiente. Al colocar el cursor justo después de la llave de cierre, debe aparecer resaltada dicha llave y la llave de apertura correspondiente.  
   
 ## <a name="see-also"></a>Vea también  
- [Tutorial: Vinculación de un tipo de contenido a una extensión de nombre de archivo](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)
+ [Tutorial: Vinculación de un tipo de contenido con una extensión de nombre de archivo](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)

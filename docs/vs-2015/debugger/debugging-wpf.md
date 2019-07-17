@@ -18,11 +18,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: aa2706f2013c348524b64900418fa02f47b4d26c
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58999229"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68152845"
 ---
 # <a name="debugging-wpf"></a>Depurar WPF
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,10 +31,10 @@ ms.locfileid: "58999229"
   
 ## <a name="related-topics"></a>Temas relacionados  
   
-|Título|Descripción|  
+|Título|DESCRIPCIÓN|  
 |-----------|-----------------|  
 |[Cómo: Uso del visualizador de árboles de WPF](../debugger/how-to-use-the-wpf-tree-visualizer.md)|Puede usar el visualizador de árboles de WPF para explorar el árbol visual de un objeto de WPF y ver las propiedades de dependencia de WPF para los objetos contenidos en ese árbol. En este tema se describe la interfaz de usuario del visualizador de árboles de WPF.|  
-|[Cómo: Presentación de información de seguimiento de WPF](../debugger/how-to-display-wpf-trace-information.md)|[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] puede recibir información de seguimiento de la depuración de las aplicaciones WPF y mostrar esa información en la ventana **Salida**. En este tema se describe cómo habilitar y personalizar la presentación de la información de seguimiento de WPF.|  
+|[Procedimientos: Presentación de información de seguimiento de WPF](../debugger/how-to-display-wpf-trace-information.md)|[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] puede recibir información de seguimiento de la depuración de las aplicaciones WPF y mostrar esa información en la ventana **Salida**. En este tema se describe cómo habilitar y personalizar la presentación de la información de seguimiento de WPF.|  
   
 ## <a name="see-also"></a>Vea también  
  [Depurar código administrado](../debugger/debugging-managed-code.md)

@@ -12,11 +12,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 9a7f81a100b2c2311444732434df0f5c5599742a
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58995296"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68161615"
 ---
 # <a name="class-tab-window-properties-dialog-box"></a>Pestaña Clase (Cuadro de diálogo Propiedades de la ventana)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,7 +25,7 @@ Use la **clase** ficha para mostrar información sobre la clase de la ventana se
   
  Las siguientes opciones están disponibles en el **clase** pestaña:  
   
-|Entrada|Descripción|  
+|Entrada|DESCRIPCIÓN|  
 |-----------|-----------------|  
 |**Nombre de la clase**|El nombre (o número ordinal) de esta clase de ventana.|  
 |**Estilos de clase**|Una combinación de códigos de estilo de clase.|  

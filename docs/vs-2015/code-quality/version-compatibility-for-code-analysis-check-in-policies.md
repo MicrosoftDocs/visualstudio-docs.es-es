@@ -13,11 +13,11 @@ author: gewarren
 ms.author: gewarren
 manager: wpickett
 ms.openlocfilehash: 0a63ead03baffaa0ce8047220ff1ce8a33c88be8
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60082235"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68201163"
 ---
 # <a name="version-compatibility-for-code-analysis-check-in-policies"></a>Compatibilidad de versiones para las directivas de protección de análisis de código
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

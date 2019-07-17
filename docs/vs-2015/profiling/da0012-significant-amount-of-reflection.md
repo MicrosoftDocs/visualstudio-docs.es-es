@@ -1,5 +1,5 @@
 ---
-title: 'DA0012: Cantidad significativa de reflexión | Microsoft Docs'
+title: 'DA0012: Cantidad considerable de reflexión | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -15,13 +15,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: ae0f361d4bbfe48b3133e50c360f66387d555814
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54770778"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68187864"
 ---
-# <a name="da0012-significant-amount-of-reflection"></a>DA0012: Cantidad significativa de reflexión
+# <a name="da0012-significant-amount-of-reflection"></a>DA0012: Cantidad considerable de reflexión
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Id. de regla | DA0012 |  
@@ -30,7 +30,7 @@ Id. de regla | DA0012 |
 | Mensaje | Se puede estar usando reflexión en exceso. Es una operación que consume muchos recursos.|  
 | Tipo de regla | Advertencia |  
   
-## <a name="cause"></a>Motivo  
+## <a name="cause"></a>Causa  
  Las llamadas a métodos System.Reflection, como InvokeMember y GetMember, o a métodos Type, como MemberInvoke, constituyen una proporción considerable de los datos de generación de perfiles. Cuando sea posible, considere la posibilidad de reemplazar estos métodos con enlace anticipado a los métodos de ensamblados dependientes.  
   
 ## <a name="rule-description"></a>Descripción de la regla  

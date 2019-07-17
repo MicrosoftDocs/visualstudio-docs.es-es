@@ -10,11 +10,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 82247c2510d64f712cc4b703154ea16a4bb7e7e1
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59647451"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68150656"
 ---
 # <a name="xml-schemas-dialog-box"></a>Cuadro de diálogo Esquemas XML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -24,7 +24,7 @@ El **esquemas XML** cuadro de diálogo se usa para seleccionar qué esquemas XML
  Puede tener acceso a la **esquemas XML** cuadro de diálogo haciendo clic en el **esquemas** botón en la ventana Propiedades del documento, o bien seleccionando **esquemas** desde el **XML** menú.  
   
 ## <a name="uielement-list"></a>Lista de UIElement  
- **Use**  
+ **Uso**  
  Seleccione cómo usar el esquema XML.  
   
 - **Automática**. Aunque este esquema no se utiliza en el documento actual, está disponible para la asociación automática. Si el documento XML declara un espacio de nombres que coincide con el `targetNamespace` de este esquema, el esquema se asociará automáticamente y se incluirá en el conjunto de esquemas.  
@@ -47,5 +47,5 @@ El **esquemas XML** cuadro de diálogo se usa para seleccionar qué esquemas XML
   
 ## <a name="see-also"></a>Vea también  
  [Componentes del Editor XML](../xml-tools/xml-editor-components.md)   
- [Cómo: Seleccionar los esquemas XML que se usarán](../xml-tools/how-to-select-the-xml-schemas-to-use.md)   
+ [Procedimientos: Seleccionar los esquemas XML que se usarán](../xml-tools/how-to-select-the-xml-schemas-to-use.md)   
  [Caché de esquema](../xml-tools/schema-cache.md)

@@ -12,11 +12,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 98d54f1e43090e8e1cacf8aecac9eebd18ffcbd7
-ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58355375"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68203804"
 ---
 # <a name="optimize-visual-studio-startup-time"></a>Optimizar el tiempo de inicio de Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,7 +31,7 @@ Si Visual Studio detecta un inicio lento, aparece un mensaje emergente avisándo
 
 ![Administrar el rendimiento de Visual Studio: elemento emergente](../ide/media/vside-perfdialog-popup.PNG "Administrar el rendimiento de Visual Studio: elemento emergente")
 
-El cuadro de diálogo **Administrar el rendimiento de Visual Studio** tiene dos categorías: **Extensiones** y **Ventanas de herramientas**.
+El **administrar el rendimiento de Visual Studio** cuadro de diálogo tiene dos categorías: **Extensiones** y **herramienta Windows**.
 
 ### <a name="control-extensions"></a>Controlar extensiones
 Si una extensión está ralentizando el inicio de Visual Studio, la extensión aparece en el cuadro **Administrar el rendimiento de Visual Studio** cuando selecciona uno de los tipos de extensión. Si el impacto en el tiempo de inicio (que aparece en la sección **Impacto**) es inaceptablemente alto, puede seleccionar el botón **Deshabilitar** para deshabilitar siempre la extensión en el inicio. Puede volver a habilitar la extensión en futuras sesiones con el cuadro de diálogo Administrador de extensiones o Administrar el rendimiento de Visual Studio.
@@ -43,8 +43,8 @@ Además de las extensiones de inicio, también puede deshabilitar las extensione
 ### <a name="control-tool-windows"></a>Controlar las ventanas de herramientas
 Si una ventana de herramientas está ralentizando el inicio de Visual Studio, puede optar por dejarla en su comportamiento predeterminado (lo que no le proporciona ningún beneficio en la velocidad de inicio) o puede invalidar este comportamiento seleccionando uno de los dos siguientes:
 
-- **No mostrar ventana al inicio:** Si elige esta opción, la ventana de herramientas especificada siempre estará cerrada cuando abra Visual Studio, incluso si se ha quedado abierta en una sesión anterior. Puede abrir la ventana de herramientas desde el menú.
-- **Ocultar ventana automáticamente al inicio:** Si una ventana de herramientas se ha quedado abierta en una sesión anterior, al elegir esta opción se contraerá el grupo de ventanas de herramientas en el inicio para evitar la inicialización de la ventana de herramientas. Esta es una buena opción si usa una ventana de herramientas frecuentemente, porque esta todavía está disponible, pero ya no afecta negativamente al tiempo de inicio de Visual Studio.
+- **No mostrar ventana al inicio:** Si elige esta opción, la ventana de herramientas especificada siempre se cerrará cuando se abre Visual Studio, incluso si se queda abierto en una sesión anterior. Puede abrir la ventana de herramientas desde el menú.
+- **Ocultar ventana automáticamente al inicio:** Si una ventana de herramientas se ha quedado abierta en una sesión anterior, si elige esta opción se contraerá de grupo de la ventana de herramientas en el inicio para evitar la inicialización de la ventana de herramientas. Esta es una buena opción si usa una ventana de herramientas frecuentemente, porque esta todavía está disponible, pero ya no afecta negativamente al tiempo de inicio de Visual Studio.
 
 ![Administrar el rendimiento de Visual Studio: ventanas de herramientas](../ide/media/vside-perfdialog-toolwindows.PNG "Administrar el rendimiento de Visual Studio: ventanas de herramientas")
 

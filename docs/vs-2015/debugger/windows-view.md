@@ -14,11 +14,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 636feaa6d7d29b016012cb17cf5a333133680509
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58996541"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68183494"
 ---
 # <a name="windows-view"></a>Vista Ventanas
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,7 +35,7 @@ Vista de ventanas de Spy++
  Cuando la vista de Windows tiene el foco, puede usar la herramienta de búsqueda en el [cuadro de diálogo Buscar ventana](../debugger/window-search-dialog-box.md) para mostrar información de cualquier ventana abierta en el sistema.  
   
 ## <a name="in-this-section"></a>En esta sección  
- [Cómo: Uso de la herramienta de búsqueda](../debugger/how-to-use-the-finder-tool.md)  
+ [Procedimientos: Uso de la herramienta de búsqueda](../debugger/how-to-use-the-finder-tool.md)  
  Muestra cómo esta herramienta examina las ventanas para las propiedades o los mensajes.  
   
  [Cómo: Búsqueda de una ventana en la vista Ventanas](../debugger/how-to-search-for-a-window-in-windows-view.md)  

@@ -13,11 +13,11 @@ caps.latest.revision: 14
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: b28fe0e696b23724758bd877b6031287290f879e
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60068787"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68194469"
 ---
 # <a name="locationfield-element-visual-studio-project-templates"></a>LocationField (Elemento, Plantillas de proyecto de Visual Studio)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,7 +25,7 @@ ms.locfileid: "60068787"
 Especifica si el **ubicación** cuadro de texto en el **nuevo proyecto** cuadro de diálogo está habilitado, deshabilitado u oculto para la plantilla de proyecto.  
   
  \<VSTemplate>  
- \<TemplateData>  
+ \<TemplateData >  
  \<LocationField>  
   
 ## <a name="syntax"></a>Sintaxis  
@@ -45,7 +45,7 @@ Especifica si el **ubicación** cuadro de texto en el **nuevo proyecto** cuadro 
   
 ### <a name="parent-elements"></a>Elementos primarios  
   
-|Elemento|Descripción|  
+|Elemento|DESCRIPCIÓN|  
 |-------------|-----------------|  
 |[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Elemento necesario.<br /><br /> Clasifica la plantilla y define cómo muestra en el **nuevo proyecto**.|  
   

@@ -16,11 +16,11 @@ author: gewarren
 ms.author: gewarren
 manager: wpickett
 ms.openlocfilehash: fb59a99057895859ebb38027f66e33dd5161486d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58998599"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68201265"
 ---
 # <a name="maintainability-warnings"></a>advertencias de mantenimiento
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,7 +29,7 @@ Advertencias de mantenimiento admiten mantenimiento de la biblioteca y aplicaci�
   
 ## <a name="in-this-section"></a>En esta sección  
   
-|Regla|Descripción|  
+|Regla|DESCRIPCIÓN|  
 |----------|-----------------|  
 |[CA1500: Los nombres de variable no deben coincidir con los nombres de campo](../code-quality/ca1500-variable-names-should-not-match-field-names.md)|Un método de instancia declara un parámetro o una variable local cuyo nombre coincide con un campo de instancia del tipo declarativo, lo que conduce a errores.|  
 |[CA1501: Evite una herencia excesiva](../code-quality/ca1501-avoid-excessive-inheritance.md)|Un tipo tiene más de cuatro niveles de profundidad en su jerarquía de herencia. Las jerarquías de tipos con demasiados niveles de anidación pueden resultar difíciles de seguir, comprender y mantener.|  

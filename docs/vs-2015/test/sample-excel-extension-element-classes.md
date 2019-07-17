@@ -1,5 +1,5 @@
 ---
-title: 'Extensión de Excel: Element (clases) | Microsoft Docs'
+title: 'Extensión de Excel: Element (clases) | Documentos de Microsoft'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-test
@@ -9,13 +9,13 @@ caps.latest.revision: 11
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 052ef261270b2cd6e66d71bbbb0c9cc3d12696eb
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54796046"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68194902"
 ---
-# <a name="sample-excel-extension-element-classes"></a>Extensión de Excel: Clases de elementos
+# <a name="sample-excel-extension-element-classes"></a>Extensión de Excel: Element (Clases)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 La extensión usa clases que derivan de <xref:Microsoft.VisualStudio.TestTools.UITest.Extension.UITechnologyElement> y representan el control de la hoja de cálculo y el control de la celda en [!INCLUDE[ofprexcel](../includes/ofprexcel-md.md)].  

@@ -12,11 +12,11 @@ caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 90650b8b3c3432fce05b03a25033977e68f60fca
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60112955"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68203122"
 ---
 # <a name="test-area-8-plug-in-switching"></a>Área de prueba 8: Cambio de los complementos
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -41,7 +41,7 @@ El [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] el entorno de desarrollo inte
 #### <a name="expected-behavior"></a>Comportamiento esperado  
  Cuando un usuario carga una solución que está bajo control de código fuente, la solución se carga automáticamente y el complemento de control de origen correspondiente se selecciona como actual.  
   
-|Acción|Pasos de prueba|Resultados esperados para comprobar|  
+|.|Pasos de prueba|Resultados esperados para comprobar|  
 |------------|----------------|--------------------------------|  
 |Cambio de complemento de control de origen automática|1.  Seleccione complemento bajo prueba como actual (**herramientas** -> **opciones** -> **Control de código fuente** -> **complemento Selección**.)<br />2.  Cree un nuevo proyecto.<br />3.  Agregue la solución al control de código fuente.<br />4.  Seleccione otro complemento (por ejemplo, [!INCLUDE[vsvss](../../includes/vsvss-md.md)]).<br />5.  Acepte Descargando mensaje de solución.<br />6.  Vuelva a abrir la solución desde el disco.|Se abre la solución.<br /><br /> Complemento sometida a prueba es el complemento de control de código fuente actual.|  
   
@@ -50,7 +50,7 @@ El [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] el entorno de desarrollo inte
 #### <a name="expected-behavior"></a>Comportamiento esperado  
  La solución puede tener su complemento de control de código fuente asociado puede cambiar.  
   
-|Acción|Pasos de prueba|Resultados esperados para comprobar|  
+|.|Pasos de prueba|Resultados esperados para comprobar|  
 |------------|----------------|--------------------------------|  
 |Cambio de complemento para una solución|1.  Seleccione complemento bajo prueba como actual (**herramientas** -> **opciones** -> **Control de código fuente** -> **complemento Selección**).<br />2.  Cree un nuevo proyecto y solución.<br />3.  Agregue la solución al control de código fuente.<br />4.  Desenlazar la solución desde control de código fuente (mediante el **cambiar Control de código fuente** cuadro de diálogo).<br />5.  Seleccione otro complemento (por ejemplo, [!INCLUDE[vsvss](../../includes/vsvss-md.md)]).<br />6.  Si descarga, vuelva a cargar la solución desde el disco.<br />7.  Agregue la solución al control de código fuente.<br />8.  Desenlazar la solución desde control de código fuente (mediante **cambiar Control de código fuente** cuadro de diálogo).<br />9. Seleccione el complemento sometida a prueba de nuevo.<br />10. Recargue la solución desde el disco si se descargan.<br />11. Enlazar la solución en la ubicación original (con el **cambiar Control de código fuente** cuadro de diálogo).|Solución se agrega al control de código fuente utilizando el complemento.|  
   

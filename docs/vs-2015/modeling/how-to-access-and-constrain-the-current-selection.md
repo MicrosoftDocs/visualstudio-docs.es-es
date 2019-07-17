@@ -12,11 +12,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: c3f6d0d481b91f7c475a37d33d43d47aff69ac8d
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60114033"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68181740"
 ---
 # <a name="how-to-access-and-constrain-the-current-selection"></a>Procedimiento Acceder a la selección actual y restringirla
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,16 +32,16 @@ Al escribir un controlador de comandos o gestos para su lenguaje específico de 
   
 1. La <xref:Microsoft.VisualStudio.Modeling.Shell.CommandSet> clase define los siguientes miembros que pueden utilizarse para tener acceso a la selección actual.  
   
-    |Miembro|Descripción|  
+    |Member|DESCRIPCIÓN|  
     |------------|-----------------|  
     |Método <xref:Microsoft.VisualStudio.Modeling.Shell.CommandSetLibrary.IsAnyDocumentSelectionCompartment%2A>|Devuelve `true` si alguno de los elementos seleccionados en el Diseñador de modelos es una forma de compartimiento; en caso contrario, `false`.|  
     |Método <xref:Microsoft.VisualStudio.Modeling.Shell.CommandSetLibrary.IsDiagramSelected%2A>|Devuelve `true` si el diagrama está seleccionado en el Diseñador de modelos; de lo contrario, `false`.|  
     |Método <xref:Microsoft.VisualStudio.Modeling.Shell.CommandSetLibrary.IsSingleDocumentSelection%2A>|Devuelve `true` si exactamente un elemento está seleccionado en el Diseñador de modelos; en caso contrario, `false`.|  
     |Método <xref:Microsoft.VisualStudio.Modeling.Shell.CommandSetLibrary.IsSingleSelection%2A>|Devuelve `true` si exactamente un elemento está seleccionado en la ventana activa; en caso contrario, `false`.|  
-    |Propiedad <xref:Microsoft.VisualStudio.Modeling.Shell.CommandSetLibrary.CurrentDocumentSelection%2A>|Obtiene una colección de solo lectura de los elementos seleccionados en el Diseñador de modelos.|  
-    |Propiedad <xref:Microsoft.VisualStudio.Modeling.Shell.CommandSetLibrary.CurrentSelection%2A>|Obtiene una colección de solo lectura de los elementos seleccionados en la ventana activa.|  
-    |Propiedad <xref:Microsoft.VisualStudio.Modeling.Shell.CommandSetLibrary.SingleDocumentSelection%2A>|Obtiene el elemento primario de la selección en el Diseñador de modelos.|  
-    |Propiedad <xref:Microsoft.VisualStudio.Modeling.Shell.CommandSetLibrary.SingleSelection%2A>|Obtiene el elemento primario de la selección en la ventana activa.|  
+    |Propiedad<xref:Microsoft.VisualStudio.Modeling.Shell.CommandSetLibrary.CurrentDocumentSelection%2A>|Obtiene una colección de solo lectura de los elementos seleccionados en el Diseñador de modelos.|  
+    |Propiedad<xref:Microsoft.VisualStudio.Modeling.Shell.CommandSetLibrary.CurrentSelection%2A>|Obtiene una colección de solo lectura de los elementos seleccionados en la ventana activa.|  
+    |Propiedad<xref:Microsoft.VisualStudio.Modeling.Shell.CommandSetLibrary.SingleDocumentSelection%2A>|Obtiene el elemento primario de la selección en el Diseñador de modelos.|  
+    |Propiedad<xref:Microsoft.VisualStudio.Modeling.Shell.CommandSetLibrary.SingleSelection%2A>|Obtiene el elemento primario de la selección en la ventana activa.|  
   
 2. El <xref:Microsoft.VisualStudio.Modeling.Shell.CommandSet.CurrentDocView%2A> propiedad de la <xref:Microsoft.VisualStudio.Modeling.Shell.CommandSet> clase proporciona acceso a la <xref:Microsoft.VisualStudio.Modeling.Shell.DiagramDocView> objeto que representa la ventana del Diseñador de modelos y proporciona acceso adicional de los elementos seleccionados en el Diseñador de modelos.  
   

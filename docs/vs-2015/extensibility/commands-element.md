@@ -14,13 +14,13 @@ caps.latest.revision: 18
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 194768a3b540511996e1d99e6450a7a9b24ebc74
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58994965"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68184295"
 ---
-# <a name="commands-element"></a>Commands (Elemento)
+# <a name="commands-element"></a>Elemento Commands
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Representa la colección de comandos en la barra de herramientas de VSPackage. La colección puede tener hasta cinco subsecciones, como sigue: menús, botones, grupos, combos y mapas de bits.  
@@ -44,13 +44,13 @@ Representa la colección de comandos en la barra de herramientas de VSPackage. L
   
 ### <a name="attributes"></a>Atributos  
   
-|Atributo|Descripción|  
+|Atributo|DESCRIPCIÓN|  
 |---------------|-----------------|  
 |paquete|Un GUID que identifica el paquete VSPackage que proporciona los comandos.<br /><br /> Por ejemplo, los paquetes = "guidVsPackage1Pkg".|  
   
 ### <a name="child-elements"></a>Elementos secundarios  
   
-|Elemento|Descripción|  
+|Elemento|DESCRIPCIÓN|  
 |-------------|-----------------|  
 |[Menus (Elemento)](../extensibility/menus-element.md)|Define todos los menús que implementa un paquete VSPackage.|  
 |[Groups (Elemento)](../extensibility/groups-element.md)|Contiene entradas que definen los grupos de comandos en un VSPackage.|  
@@ -60,7 +60,7 @@ Representa la colección de comandos en la barra de herramientas de VSPackage. L
   
 ### <a name="parent-elements"></a>Elementos primarios  
   
-|Elemento|Descripción|  
+|Elemento|DESCRIPCIÓN|  
 |-------------|-----------------|  
 |[CommandTable (Elemento)](../extensibility/commandtable-element.md)|Define todos los elementos que representan los comandos que un paquete VSPackage proporciona al IDE. Posibles elementos son elementos de menú, barras de herramientas, menús y cuadros combinados.|  
   

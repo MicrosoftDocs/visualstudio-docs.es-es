@@ -11,13 +11,13 @@ caps.latest.revision: 21
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 2de1fc8440bd33a526da62dbb4c7937800484aaa
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60117881"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68197766"
 ---
-# <a name="editor-factories"></a>Generadores de editores
+# <a name="editor-factories"></a>Generadores del editor
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Un generador de editores crea objetos de editor y los coloca en un marco de ventana que se conoce como una vista física. Crea los datos del documento y los objetos de vista de documento que son necesarios para crear editores y diseñadores. Un generador de editores debe crear el editor de núcleo de Visual Studio y en cualquier editor estándar. Opcionalmente, también se puede crear un editor personalizado con un generador de editores.  

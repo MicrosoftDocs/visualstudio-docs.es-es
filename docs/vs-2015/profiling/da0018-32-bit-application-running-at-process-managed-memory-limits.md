@@ -14,13 +14,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 6418a39d7e53a3edaa48b3cd003d35d95cba386e
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54773292"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68194947"
 ---
-# <a name="da0018-32-bit-application-running-at-process-managed-memory-limits"></a>DA0018: Una aplicación de 32 bits se está ejecutando en límites de memoria administrados del proceso
+# <a name="da0018-32-bit-application-running-at-process-managed-memory-limits"></a>DA0018: Aplicación de 32 bits ejecutándose con límites de memoria administrada de procesos
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Id. de regla | DA0018 |  
@@ -31,7 +31,7 @@ Id. de regla | DA0018 |
   
  Al generar perfiles mediante los métodos de muestreo, memoria de .NET o contención de recursos, debe reunir al menos 10 ejemplos para activar esta regla.  
   
-## <a name="cause"></a>Motivo  
+## <a name="cause"></a>Causa  
  Los datos del sistema recopilados durante la ejecución de generación de perfiles indican que los montones de memoria de .NET Framework se aproximaron al tamaño máximo que los montones administrados pueden alcanzar en un proceso de 32 bits. Este tamaño máximo es un valor predeterminado. Se basa en la cantidad total de espacio de direcciones de proceso que se puede asignar para los bytes privados. El valor notificado es el valor máximo observado de los montones mientras estaba activo el proceso del que se generaron perfiles. Considere la posibilidad de volver a generar perfiles mediante el método de generación de perfiles de memoria de .NET y optimizar el uso de recursos administrados por la aplicación.  
   
  Cuando el tamaño de los montones administrados se aproxima al límite predeterminado, tal vez deba invocarse el proceso de recolección de elementos no utilizados automática con más frecuencia. Esto aumenta la sobrecarga de administración de memoria.  
@@ -54,7 +54,7 @@ Id. de regla | DA0018 |
   
 - optimizar el uso de la aplicación de recursos de memoria administrada  
   
-   o bien  
+   -o bien-  
   
 - tomar medidas para aligerar las restricciones arquitectónicas sobre el tamaño máximo de memoria virtual para un proceso de 32 bits  
   

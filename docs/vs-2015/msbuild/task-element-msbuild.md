@@ -18,11 +18,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 6683aac3c5a4314df6fde3d72dd9085b6608d8a3
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59669580"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68202267"
 ---
 # <a name="task-element-msbuild"></a>Elemento de tarea (MSBuild)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -55,15 +55,15 @@ Crea y ejecuta una instancia de una tarea [!INCLUDE[vstecmsbuild](../includes/vs
   
 ### <a name="child-elements"></a>Elementos secundarios  
   
-|Elemento|Descripción|  
+|Elemento|DESCRIPCIÓN|  
 |-------------|-----------------|  
 |[Salida](../msbuild/output-element-msbuild.md)|Almacena salidas de la tarea en el archivo de proyecto. Puede haber cero o más elementos `Output` en una tarea.|  
   
 ### <a name="parent-elements"></a>Elementos primarios  
   
-|Elemento|Descripción|  
+|Elemento|DESCRIPCIÓN|  
 |-------------|-----------------|  
-|[Target](../msbuild/target-element-msbuild.md)|Elemento contenedor para tareas de [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)].|  
+|[Destino](../msbuild/target-element-msbuild.md)|Elemento contenedor para tareas de [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)].|  
   
 ## <a name="remarks"></a>Comentarios  
  Un elemento `Task` en un archivo de proyecto [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] crea una instancia de una tarea, establece propiedades en ella y la ejecuta. El elemento `Output` almacena los parámetros de salida en propiedades o elementos que se usarán en otro lugar en el archivo de proyecto.  

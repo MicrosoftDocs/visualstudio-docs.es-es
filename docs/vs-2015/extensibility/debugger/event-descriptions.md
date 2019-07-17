@@ -11,11 +11,11 @@ caps.latest.revision: 8
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 5aff88047d6b1f79544af927751d7a053eeda218
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58987129"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68152817"
 ---
 # <a name="event-descriptions"></a>Descripciones de eventos
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -24,7 +24,7 @@ Cada tipo de evento tiene un propósito específico.
   
 ## <a name="events-and-the-reasons-for-their-use"></a>Eventos y los motivos para su uso  
   
-|evento|Descripción|  
+|Evento|DESCRIPCIÓN|  
 |-----------|-----------------|  
 |Activar eventos de documentos|Se producen cuando el motor de depuración (DE) desea el IDE para abrir o recuperar un documento al primer plano.|  
 |Evento de error de punto de interrupción o punto de interrupción enlazado|Se envía cuando se enlaza a un punto de interrupción o cuando no se puede enlazar a un punto de interrupción y se devuelve un error.|  

@@ -12,11 +12,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 1a8b67e5c784e24b1af71089d33e7db60cb1f92c
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58998654"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68190384"
 ---
 # <a name="integrate-uml-models-with-other-models-and-tools"></a>Integrar modelos UML con otros modelos y herramientas
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -72,7 +72,7 @@ Los modelos UML pueden integrarse con otros modelos y con lenguajes específicos
   
    Para obtener más información, consulte [definir un controlador de gestos en un diagrama de modelado](../modeling/define-a-gesture-handler-on-a-modeling-diagram.md) y [Cómo: Agregar un controlador de arrastrar y colocar](../modeling/how-to-add-a-drag-and-drop-handler.md).  
   
-## <a name="samples"></a>Muestras  
+## <a name="samples"></a>Ejemplos  
  Vea el ejemplo de código [vinculan elementos UML a diagramas u otros archivos](http://go.microsoft.com/fwlink/?LinkId=213813). El ejemplo permite a los usuarios arrastrar un archivo a cualquier elemento UML y después abrir el archivo haciendo doble clic en el elemento. Por ejemplo, se puede vincular un diagrama de actividades a un elemento de casos de uso. Un icono muestra los elementos que tienen vínculos.  
   
  En este ejemplo de código se muestran las técnicas siguientes:  

@@ -12,11 +12,11 @@ caps.latest.revision: 16
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: c6eb76eba76567f2966323d4058c9e752cb6fb69
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58996070"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68200981"
 ---
 # <a name="providing-automation-for-vspackages"></a>Provisión de automatización de VSPackages
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -31,7 +31,7 @@ Hay dos formas principales para proporcionar automatización para los VSPackages
 #### <a name="projects"></a>Proyectos  
  Los paquetes VSPackage pueden extender el modelo de automatización para nuevos tipos de proyecto a través de sus propios objetos específicos de VSPackage. El propósito principal de proporcionar los nuevos objetos de automatización para el VSPackage es diferenciar el único proyecto objetos desde una <xref:Microsoft.VisualStudio.VCProjectEngine.VCProject> o un <xref:VSLangProj80.VSProject2> objeto. Esta diferencia resulta útil cuando desea proporcionar una manera única o recorrer en iteración el tipo de proyecto, además de otros tipos de proyecto, debe aparecen en paralelo en una solución. Para obtener más información, consulte [exponer objetos del proyecto](../../extensibility/internals/exposing-project-objects.md).  
   
-#### <a name="events"></a>Eventos  
+#### <a name="events"></a>Events  
  La arquitectura de eventos del entorno ofrece otro lugar para anexar sus propios objetos específicos de VSPackage. Por ejemplo, al crear sus propios objetos de evento único, puede ampliar el modelo de eventos del entorno para los proyectos. Es posible que desee proporcionar sus propios eventos cuando se agrega un nuevo elemento a su propio tipo de proyecto. Para obtener más información, consulte [exponer eventos](../../extensibility/internals/exposing-events-in-the-visual-studio-sdk.md).  
   
 #### <a name="window-objects"></a>Window (Objetos)  

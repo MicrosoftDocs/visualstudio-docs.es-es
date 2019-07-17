@@ -10,11 +10,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: f4c9c027487fcefd29b486d6c58fa45f9e347f60
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54776293"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68195204"
 ---
 # <a name="direct-selection-tool-modifier-keys-in-blend"></a>Teclas modificadoras de la herramienta Selección directa en Blend
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -23,16 +23,16 @@ En la tabla siguiente se enumeran los métodos abreviados que se pueden usar par
   
 |Para esta acción|Haga esto|Puntero|  
 |-----------------------|-------------|-------------|  
-|Hacer que aparezcan manipuladores de tangente para un punto de un trazado|Hacer clic en un punto del trazado|![](../designers/media/cfcc5f41-a666-4524-a958-50b9051130ca.png "cfcc5f41-a666-4524-a958-50b9051130ca")<br /><br /> Puntero para mover un punto|  
-|Mover un punto de un trazado|Arrastrar un punto de un trazado|![](../designers/media/cfcc5f41-a666-4524-a958-50b9051130ca.png "cfcc5f41-a666-4524-a958-50b9051130ca")<br /><br /> Puntero para mover un punto|  
-|Hacer que aparezcan manipuladores de tangente para un segmento entre dos puntos de un trazado|Hacer clic en un segmento de un trazado|![](../designers/media/2ace930f-98fa-410b-92cf-7a4b88503ee7.png "2ace930f-98fa-410b-92cf-7a4b88503ee7")<br /><br /> Mover puntero de segmento|  
-|Mover un segmento entre dos puntos de un trazado|Arrastre un segmento de un trazado|![](../designers/media/2ace930f-98fa-410b-92cf-7a4b88503ee7.png "2ace930f-98fa-410b-92cf-7a4b88503ee7")<br /><br /> Mover puntero de segmento|  
-|Cambiar el ángulo de una tangente para un punto de un trazado|Haga clic en un punto o un segmento de un trazado para que aparezcan los manipuladores de tangente y, a continuación, arrastre uno de los extremos de la tangente|![](../designers/media/beb1a907-1e50-450c-aab3-4d7026f5e426.png "beb1a907-1e50-450c-aab3-4d7026f5e426")<br /><br /> Mover puntero de tangente|  
-|Crear un punto en un vértice agudo o reducir la tangente a cero|Desplazar el puntero sobre un punto, mantener presionada la tecla ALT y hacer clic en el punto|![](../designers/media/21197b10-aba4-4a9d-8145-647d0ba8e518.png "21197b10-aba4-4a9d-8145-647d0ba8e518")<br /><br /> Convertir puntero de punto|  
-|Convertir un vértice agudo suave (o, si ya es suave, cambiar el ángulo de la curva a medida que pasa por el punto en que se ha hecho clic)|Desplazar el puntero sobre un punto, mantener presionada la tecla ALT y arrastrar el punto|![](../designers/media/21197b10-aba4-4a9d-8145-647d0ba8e518.png "21197b10-aba4-4a9d-8145-647d0ba8e518")<br /><br /> Convertir puntero de punto|  
-|Cambiar un segmento de curva a una línea recta|Desplazar el puntero sobre un segmento de un trazado, mantener presionada la tecla ALT y hacer clic en el segmento|![](../designers/media/975a855a-8536-441f-97ed-2f1496e416bf.png "975a855a-8536-441f-97ed-2f1496e416bf")<br /><br /> Convertir puntero de segmento|  
-|Tomar un segmento y convertirlo en una curva para que pase por la posición del mouse|Desplazar el puntero sobre un segmento de un trazado, mantener presionada la tecla ALT y arrastrar el segmento|![](../designers/media/975a855a-8536-441f-97ed-2f1496e416bf.png "975a855a-8536-441f-97ed-2f1496e416bf")<br /><br /> Convertir puntero de segmento|  
-|Ajustar un extremo de una tangente de forma independiente al otro lado|Seleccionar directamente un punto o un segmento, mantener presionada la tecla ALT y arrastrar un extremo de la tangente|![](../designers/media/923951da-4081-4f8b-bebc-0f1f64d87504.png "923951da-4081-4f8b-bebc-0f1f64d87504")<br /><br /> Convertir puntero de tangente|  
+|Hacer que aparezcan los manipuladores de tangente de un punto en un trazado|Haga clic en un punto de un trazado|![](../designers/media/cfcc5f41-a666-4524-a958-50b9051130ca.png "cfcc5f41-a666-4524-a958-50b9051130ca")<br /><br /> Puntero para mover un punto|  
+|Mover un punto de un trazado|Arrastre un punto de un trazado|![](../designers/media/cfcc5f41-a666-4524-a958-50b9051130ca.png "cfcc5f41-a666-4524-a958-50b9051130ca")<br /><br /> Puntero para mover un punto|  
+|Hacer que aparezcan los manipuladores de tangente de un segmento entre dos puntos de un trazado|Haga clic en un segmento de un trazado|![](../designers/media/2ace930f-98fa-410b-92cf-7a4b88503ee7.png "2ace930f-98fa-410b-92cf-7a4b88503ee7")<br /><br /> Puntero para mover un segmento|  
+|Mover un segmento entre dos puntos de un trazado|Arrastrar un segmento de un trazado|![](../designers/media/2ace930f-98fa-410b-92cf-7a4b88503ee7.png "2ace930f-98fa-410b-92cf-7a4b88503ee7")<br /><br /> Puntero para mover un segmento|  
+|Cambiar el ángulo de una tangente para un punto de un trazado|Hacer clic en un punto o segmento de un trazado para que aparezcan los manipuladores de tangente y, a continuación, arrastrar uno de los extremos de tangente|![](../designers/media/beb1a907-1e50-450c-aab3-4d7026f5e426.png "beb1a907-1e50-450c-aab3-4d7026f5e426")<br /><br /> Puntero para mover una tangente|  
+|Crear un punto en un vértice agudo o reducir la tangente a cero|Desplazar el puntero sobre un punto, mantener presionada la tecla ALT y hacer clic en el punto|![](../designers/media/21197b10-aba4-4a9d-8145-647d0ba8e518.png "21197b10-aba4-4a9d-8145-647d0ba8e518")<br /><br /> Puntero para convertir un punto|  
+|Suavizar un vértice agudo (o, si ya está suavizado, cambiar el ángulo de la curva que pasa por el punto en el que ha hecho clic)|Desplazar el puntero sobre un punto, mantener presionada la tecla ALT y arrastrar el punto|![](../designers/media/21197b10-aba4-4a9d-8145-647d0ba8e518.png "21197b10-aba4-4a9d-8145-647d0ba8e518")<br /><br /> Puntero para convertir un punto|  
+|Convertir un segmento curvo en una línea recta|Desplazar el puntero sobre un segmento de un trazado, mantener presionada la tecla ALT y hacer clic en el segmento|![](../designers/media/975a855a-8536-441f-97ed-2f1496e416bf.png "975a855a-8536-441f-97ed-2f1496e416bf")<br /><br /> Puntero para convertir un segmento|  
+|Seleccionar un segmento y curvarlo para que pase por la posición del puntero|Desplazar el puntero sobre un segmento de un trazado, mantener presionada la tecla ALT y arrastrar el segmento|![](../designers/media/975a855a-8536-441f-97ed-2f1496e416bf.png "975a855a-8536-441f-97ed-2f1496e416bf")<br /><br /> Puntero para convertir un segmento|  
+|Ajustar un extremo de una tangente de manera independiente del otro extremo|Seleccionar directamente un punto o un segmento, mantener presionada la tecla ALT y arrastrar un extremo de la tangente|![](../designers/media/923951da-4081-4f8b-bebc-0f1f64d87504.png "923951da-4081-4f8b-bebc-0f1f64d87504")<br /><br /> Puntero para convertir una tangente|  
   
 ## <a name="see-also"></a>Vea también  
  [Métodos abreviados de teclado y teclas modificadoras](../designers/keyboard-shortcuts-and-modifier-keys-in-blend.md)   

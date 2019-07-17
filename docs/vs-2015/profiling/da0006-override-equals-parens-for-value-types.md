@@ -15,11 +15,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 2229edad7ff338251fea23740343e23f87aa2792
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54793037"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68158680"
 ---
 # <a name="da0006-override-equals-for-value-types"></a>DA0006: Reemplazar Equals() para tipos de valor
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,7 +30,7 @@ Id. de regla | DA0006 |
 | Mensaje | Reemplaza Equals y el operador de igualdad en los tipos de valor. |  
 | Tipo de mensaje | Advertencia |  
   
-## <a name="cause"></a>Motivo  
+## <a name="cause"></a>Causa  
  Las llamadas al método Equals o a los operadores de igualdad de un tipo de valor público constituyen una proporción considerable de los datos de generación de perfiles. Considere la posibilidad de implementar un método más eficaz.  
   
 ## <a name="rule-description"></a>Descripción de la regla  

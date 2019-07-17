@@ -20,11 +20,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 027e713ccb966528d0468050df30e4265b574198
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58986625"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68151427"
 ---
 # <a name="edit-and-continue-visual-c"></a>Editar y continuar (Visual C#)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,8 +37,8 @@ Con Editar y continuar para C#, puede realizar cambios en el código en modo de 
   
  Si se habilita Editar y continuar, los cambios admitidos se aplican automáticamente cuando se utiliza un comando de ejecución del depurador, como **Continuar**, **Paso**, **Establecer instrucción siguiente**, o cuando se realiza una evaluación de función en una ventana del depurador.  
   
- Para obtener más información, vea [Cómo: Uso de Editar y continuar (C#)](../debugger/how-to-use-edit-and-continue-csharp.md).  
+ Para obtener más información, consulte [Cómo Uso de Editar y continuar (C#)](../debugger/how-to-use-edit-and-continue-csharp.md).  
   
 ## <a name="see-also"></a>Vea también  
- [Cómo: Uso de Editar y continuar (C#)](../debugger/how-to-use-edit-and-continue-csharp.md)   
+ [Procedimientos: Uso de Editar y continuar (C#)](../debugger/how-to-use-edit-and-continue-csharp.md)   
  [Cambios admitidos en el código (C#)](../debugger/supported-code-changes-csharp.md)

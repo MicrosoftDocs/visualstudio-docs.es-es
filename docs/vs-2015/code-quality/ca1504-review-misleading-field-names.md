@@ -16,11 +16,11 @@ author: gewarren
 ms.author: gewarren
 manager: wpickett
 ms.openlocfilehash: 2203e99974e5f232e8c90badef7c28921b971cdb
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58988464"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68191199"
 ---
 # <a name="ca1504-review-misleading-field-names"></a>CA1504: Revisar los nombres de campos erróneos
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ ms.locfileid: "58988464"
 |Categoría|Microsoft.Maintainability|
 |Cambio problemático|Poco problemático|
 
-## <a name="cause"></a>Motivo
+## <a name="cause"></a>Causa
  El nombre de un campo de instancia empieza por "s_" o el nombre de un `static` (`Shared` en [!INCLUDE[vbprvb](../includes/vbprvb-md.md)]) campo empieza por "m_".
 
 ## <a name="rule-description"></a>Descripción de la regla

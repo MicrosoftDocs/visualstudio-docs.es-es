@@ -10,11 +10,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: ce0aadf455e95895309bbae4f23eb84c75935428
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60049872"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68201873"
 ---
 # <a name="customizing-intellisense-for-requirejs"></a>Personalizar IntelliSense para RequireJS
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

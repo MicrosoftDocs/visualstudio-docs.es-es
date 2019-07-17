@@ -10,13 +10,13 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 26dc068ca15de93cc2b0a3ac68b83d1d351bcad4
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60110601"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68187717"
 ---
-# <a name="walkthrough-creating-a-realistic-3-d-billiard-ball"></a>Tutorial: Crear una bola de billar 3D realista
+# <a name="walkthrough-creating-a-realistic-3-d-billiard-ball"></a>Tutorial: Creación de una bola de billar en 3D realista
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 En este tutorial se muestra cómo crear una bola de billar 3D realista mediante el Diseñador de sombras y el Editor de imágenes de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. La apariencia 3D de la bola de billar se logra combinando varias técnicas de sombreador con los recursos apropiados de textura.  
@@ -215,7 +215,7 @@ En este tutorial se muestra cómo crear una bola de billar 3D realista mediante 
    En esta imagen final, observe que los efectos que ha agregado se unen para crear una bola de billar muy convincente. La forma, textura e iluminación crean la apariencia básica de un objeto 3D, y los reflejos y los brillos especulares hacen que la bola de billar resulte más interesante y se integre mejor en su entorno.  
   
 ## <a name="see-also"></a>Vea también  
- [Cómo: Exportar un sombreador](../designers/how-to-export-a-shader.md)   
+ [Procedimientos: Exportar un sombreador](../designers/how-to-export-a-shader.md)   
  [Cómo: Aplicar a un sombreador a un modelo 3D](../designers/how-to-apply-a-shader-to-a-3-d-model.md)   
  [Diseñador de sombras](../designers/shader-designer.md)   
  [Editor de imágenes](../designers/image-editor.md)   

@@ -16,11 +16,11 @@ author: gewarren
 ms.author: gewarren
 manager: wpickett
 ms.openlocfilehash: e21585a7a56fde2fb46ea86adde92eecfd1a4565
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58997137"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68201695"
 ---
 # <a name="ca1815-override-equals-and-operator-equals-on-value-types"></a>CA1815: Invalidar Equals y el operador Equals en los tipos de valores
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ ms.locfileid: "58997137"
 |Categoría|Microsoft.Performance|
 |Cambio problemático|Poco problemático|
 
-## <a name="cause"></a>Motivo
+## <a name="cause"></a>Causa
  Un tipo de valor público no invalida <xref:System.Object.Equals%2A?displayProperty=fullName>, o no implementa el operador de igualdad (==). Esta regla no comprueba las enumeraciones.
 
 ## <a name="rule-description"></a>Descripción de la regla
@@ -46,7 +46,7 @@ ms.locfileid: "58997137"
 
 ## <a name="example-of-a-violation"></a>Ejemplo de una infracción
 
-### <a name="description"></a>Descripción
+### <a name="description"></a>DESCRIPCIÓN
  El ejemplo siguiente muestra una estructura (tipo de valor) que infringe esta regla.
 
 ### <a name="code"></a>Código
@@ -54,7 +54,7 @@ ms.locfileid: "58997137"
 
 ## <a name="example-of-how-to-fix"></a>Ejemplo de cómo corregir
 
-### <a name="description"></a>Descripción
+### <a name="description"></a>DESCRIPCIÓN
  En el ejemplo siguiente se corrige la infracción anterior invalidando <xref:System.ValueType.Equals%2A?displayProperty=fullName> e implementar los operadores de igualdad (==,! =).
 
 ### <a name="code"></a>Código

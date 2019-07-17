@@ -11,11 +11,11 @@ caps.latest.revision: 37
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: db4e63beb1e3d4ff53e547492ae9eae7ee8001e8
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60045023"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68202012"
 ---
 # <a name="walkthrough-displaying-statement-completion"></a>Tutorial: Mostrar la finalización de instrucciones
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -204,4 +204,4 @@ Puede implementar la finalización de instrucciones en lenguaje mediante la defi
 4. A medida que escribe primero "a" y, a continuación, "d", se debe mostrar una lista que contiene "suma" y "adaptación". Tenga en cuenta que está seleccionada la suma. Cuando se escribe otra "d", la lista debe contener sólo "suma", que ahora está seleccionado. Puede confirmar la "suma" presionando la tecla BARRA ESPACIADORA, Tab o ENTRAR o descartar la lista escribiendo Esc o cualquier otra clave.  
   
 ## <a name="see-also"></a>Vea también  
- [Tutorial: Vinculación de un tipo de contenido a una extensión de nombre de archivo](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)
+ [Tutorial: Vinculación de un tipo de contenido con una extensión de nombre de archivo](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)

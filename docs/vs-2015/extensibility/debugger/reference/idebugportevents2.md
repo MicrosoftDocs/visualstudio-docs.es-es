@@ -13,11 +13,11 @@ caps.latest.revision: 19
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 5e0f6455e6df8db88b1aae1a7b7f6965c0ee524b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58997091"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68188530"
 ---
 # <a name="idebugportevents2"></a>IDebugPortEvents2
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -39,7 +39,7 @@ IDebugPortEvents2 : IUnknown
 ## <a name="methods-in-vtable-order"></a>Métodos en orden de Vtable  
  En la tabla siguiente se muestra el método de `IDebugPortEvents2`.  
   
-|Método|Descripción|  
+|Método|DESCRIPCIÓN|  
 |------------|-----------------|  
 |[Event](../../../extensibility/debugger/reference/idebugportevents2-event.md)|Envía eventos que describen la creación y destrucción de procesos y programas en el puerto.|  
   

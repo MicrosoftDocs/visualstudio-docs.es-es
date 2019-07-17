@@ -11,11 +11,11 @@ caps.latest.revision: 21
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 563f38cd2dc3854918fe637fdc11afe1d1a49b64
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58998349"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68184370"
 ---
 # <a name="command-handling"></a>Control de comandos
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,9 +29,9 @@ El editor puede definir nuevos comandos. Normalmente, los comandos se muestran e
 ## <a name="adding-commands-to-the-editor-context-menu"></a>Adición de comandos en el menú contextual del Editor  
  Para agregar un comando al menú contextual, primero debe definir un conjunto de comandos de menú que pertenecen a un grupo específico. El siguiente ejemplo se tomó del archivo .vsct generado como parte del tutorial [Tutorial: Agregar características a un Editor personalizado](../extensibility/walkthrough-adding-features-to-a-custom-editor.md):  
   
- \<Menu guid="guidCustomEditorCmdSet" id="IDMX_RTF" priority="0x0000" type="Context">  
+ \<Guid del menú = "guidCustomEditorCmdSet" id = "IDMX_RTF" prioridad = "0 x 0000" type = "Context" >  
   
- \<Parent guid="guidCustomEditorCmdSet" id="0"/>  
+ \<Guid del elemento primario = "guidCustomEditorCmdSet" id = "0" / >  
   
  \<Cadenas >  
   
@@ -43,7 +43,7 @@ El editor puede definir nuevos comandos. Normalmente, los comandos se muestran e
   
  \</ Menú >  
   
- \</Menus>  
+ \</ Menús >  
   
  El texto anterior agrega un comando de menú contextual con el texto **menú contextual de CustomEditor**. El GUID del menú es que los del conjunto de comandos que se crea con este editor, y el tipo es "Contexto".  
   

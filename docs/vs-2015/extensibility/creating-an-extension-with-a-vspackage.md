@@ -9,11 +9,11 @@ caps.latest.revision: 6
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: ddad7149db75aa662f9427a301c04eaf925146f9
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60097055"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68197420"
 ---
 # <a name="creating-an-extension-with-a-vspackage"></a>Creación de una extensión con un VSPackage
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -75,4 +75,4 @@ En este tutorial se muestra cómo crear un proyecto de VSIX y agregar un element
   
 3. Compile la solución y comience la depuración. Aparece la instancia experimental.  
   
-4. Abra una solución en la instancia experimental. Debería ver un cuadro de mensaje que dice **primer paquete dentro de Initialize()**.
+4. Abra una solución en la instancia experimental. Debería ver un cuadro de mensaje que dice **primer paquete dentro de Initialize()** .

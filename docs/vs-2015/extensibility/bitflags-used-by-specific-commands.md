@@ -11,11 +11,11 @@ caps.latest.revision: 25
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 43dc083812bc172fe4a9f80335742b3faab2e1f4
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58996503"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68184694"
 ---
 # <a name="bitflags-used-by-specific-commands"></a>Marcas de bits usadas por comandos específicos
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,14 +25,14 @@ El comportamiento de una serie de funciones en la API de complemento de Control 
 ## <a name="checked-out-flag"></a>Desprotegido marca  
  Este indicador puede establecerse para cualquier el [SccAdd](../extensibility/sccadd-function.md) o [SccCheckin](../extensibility/scccheckin-function.md).  
   
-|Marcar|Valor|Descripción|  
+|Marcar|Valor|DESCRIPCIÓN|  
 |----------|-----------|-----------------|  
 |`SCC_KEEP_CHECKEDOUT`|0x1000|Mantener el archivo desprotegido.|  
   
 ## <a name="add-flags"></a>Agregue marcadores  
  Estas marcas se usan por el [SccAdd](../extensibility/sccadd-function.md).  
   
-|Marcar|Valor|Descripción|  
+|Marcar|Valor|DESCRIPCIÓN|  
 |----------|-----------|-----------------|  
 |`SCC_FILETYPE_AUTO`|0x00|Se espera el complemento de control de código fuente para detectar automáticamente si el archivo es texto o binario.|  
 |`SCC_FILETYPE_TEXT`|0x01|Tipo de archivo es texto.|  
@@ -42,7 +42,7 @@ El comportamiento de una serie de funciones en la API de complemento de Control 
 ## <a name="diff-flags"></a>Marcas de comparación  
  El [SccDiff](../extensibility/sccdiff-function.md) estas marcas se utiliza para definir el ámbito de una operación de comparación. El `SCC_DIFF_QD_xxx` marcas son mutuamente excluyentes. Si se especifica uno de ellos, no hay comentarios visuales son que se asignará. En "diff rápido" (PC), el complemento no determina cómo el archivo es diferente, sólo si es diferente. Si ninguna de estas marcas se especifica, que se realiza una "diferencia visual"; se calcula y se muestran las diferencias de archivo detallada. Si no se admite el PC solicitado, el complemento se mueve a la siguiente mejor. Por ejemplo, si el IDE solicita una suma de comprobación y el complemento no lo admite, el complemento no un contenido completo Compruebe (todavía mucho más rápido que una presentación visual).  
   
-|Marcar|Valor|Descripción|  
+|Marcar|Valor|DESCRIPCIÓN|  
 |----------|-----------|-----------------|  
 |`SCC_DIFF_IGNORECASE`|0x0002|Omitir las diferencias de caja.|  
 |`SCC_DIFF_IGNORESPACE`|0x0004|Omitir las diferencias de espacio en blanco. **Nota:**  El `SCC_DIFF_IGNORECASE` y `SCC_DIFF_IGNORESPACE` marcas son marcadores de bits opcional.|  
@@ -54,14 +54,14 @@ El comportamiento de una serie de funciones en la API de complemento de Control 
 ## <a name="populatelist-flag"></a>Marca PopulateList  
  Esta marca se usa por la [SccPopulateList](../extensibility/sccpopulatelist-function.md) en el `fOptions` parámetro.  
   
-|Marcar|Valor|Descripción|  
+|Marcar|Valor|DESCRIPCIÓN|  
 |----------|-----------|-----------------|  
 |`SCC_PL_DIR`|0x00000001L|El IDE está pasando los directorios, no archivos.|  
   
 ## <a name="populatedirlist-flags"></a>Marcas de PopulateDirList  
  Estas marcas se usan por el [SccPopulateDirList](../extensibility/sccpopulatedirlist-function.md) en el `fOptions` parámetro.  
   
-|Valor de opción|Valor|Descripción|  
+|Valor de opción|Value|DESCRIPCIÓN|  
 |------------------|-----------|-----------------|  
 |SCC_PDL_ONELEVEL|0x0000|Examinar solo un nivel de directorios para los directorios (es decir, el valor predeterminado).|  
 |SCC_PDL_RECURSIVE|0x0001|Recursivamente examine todos los directorios en cada directorio determinado.|  
@@ -70,7 +70,7 @@ El comportamiento de una serie de funciones en la API de complemento de Control 
 ## <a name="openproject-flags"></a>Marcas de OpenProject  
  Estas marcas se usan por el [SccOpenProject](../extensibility/sccopenproject-function.md) en el `dwFlags` parámetro.  
   
-|Valor de opción|Valor|Descripción|  
+|Valor de opción|Value|DESCRIPCIÓN|  
 |------------------|-----------|-----------------|  
 |SCC_OP_CREATEIFNEW|0x00000001L|Si el proyecto no existe en el control de código fuente, créela. Si no se establece esta marca, solicite el usuario para el proyecto que cree (a menos que `SCC_OP_SILENTOPEN` indicador se especifica).|  
 |SCC_OP_SILENTOPEN|0x00000002L|No preguntar al usuario crear un proyecto. simplemente devuelva `SCC_E_UNKNOWNPROJECT`.|  
@@ -78,7 +78,7 @@ El comportamiento de una serie de funciones en la API de complemento de Control 
 ## <a name="get-flags"></a>Obtener marcas  
  Estas marcas se usan por el [SccGet](../extensibility/sccget-function.md) y [SccCheckout](../extensibility/scccheckout-function.md).  
   
-|Marcar|Valor|Descripción|  
+|Marcar|Value|DESCRIPCIÓN|  
 |----------|-----------|-----------------|  
 |`SCC_GET_ALL`|0x00000001L|El IDE está pasando los directorios, no archivos: Obtener todos los archivos en estos directorios.|  
 |`SCC_GET_RECURSIVE`|0x00000002L|El IDE está pasando directorios: Obtenga estos directorios y todos sus subdirectorios.|  
@@ -86,7 +86,7 @@ El comportamiento de una serie de funciones en la API de complemento de Control 
 ## <a name="noption-values"></a>Valores de nOption  
  Estas marcas se usan por el [SccSetOption](../extensibility/sccsetoption-function.md) en el `nOption` parámetro.  
   
-|Marcar|Valor|Descripción|  
+|Marcar|Valor|DESCRIPCIÓN|  
 |----------|-----------|-----------------|  
 |`SCC_OPT_EVENTQUEUE`|0x00000001L|Establecer estado de la cola de eventos.|  
 |`SCC_OPT_USERDATA`|0x00000002L|Especificar los datos de usuario para `SCC_OPT_NAMECHANGEPFN`.|  
@@ -95,10 +95,10 @@ El comportamiento de una serie de funciones en la API de complemento de Control 
 |`SCC_OPT_SCCCHECKOUTONLY`|0x00000005L|Deshabilitar la desprotección de interfaz de usuario del complemento de control de origen y no se establece el directorio de trabajo.|  
 |`SCC_OPT_SHARESUBPROJ`|0x00000006L|Agregar desde el sistema de control de código fuente para especificar un directorio de trabajo. Intente compartir en el proyecto asociado, si es un descendiente directo.|  
   
-## <a name="dwval-bitflags"></a>dwVal Bitflags  
+## <a name="dwval-bitflags"></a>dwVal marcadores de bits  
  Estas marcas se usan por el [SccSetOption](../extensibility/sccsetoption-function.md) en el `dwVal` parámetro.  
   
-|Marcar|Valor|Descripción|Utilizado por `nOption` valor|  
+|Marcar|Valor|DESCRIPCIÓN|Utilizado por `nOption` valor|  
 |----------|-----------|-----------------|-----------------------------|  
 |`SCC_OPT_EQ_DISABLE`|0x00L|Suspende la actividad de la cola de eventos.|`SCC_OPT_EVENTQUEUE`|  
 |`SCC_OPT_EQ_ENABLE`|0x01L|Habilita el registro de cola de eventos.|`SCC_OPT_EVENTQUEUE`|  

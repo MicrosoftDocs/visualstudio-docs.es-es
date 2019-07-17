@@ -1,5 +1,5 @@
 ---
-title: IEnumDebugAddresses | Microsoft Docs
+title: IEnumDebugAddresses | Documentos de Microsoft
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,11 +13,11 @@ caps.latest.revision: 7
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 2373a26da1f6c3b327bea3a6f2402beb7d8bce45
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58987022"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68196141"
 ---
 # <a name="ienumdebugaddresses"></a>IEnumDebugAddresses
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -39,7 +39,7 @@ IEnumDebugAdresses : IUnknown
 ## <a name="methods-in-vtable-order"></a>Métodos en orden de Vtable  
  Esta interfaz implementa los métodos siguientes.  
   
-|Método|Descripción|  
+|Método|DESCRIPCIÓN|  
 |------------|-----------------|  
 |[Siguiente](../../../extensibility/debugger/reference/ienumdebugaddresses-next.md)|Recupera el siguiente conjunto de [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) objetos de la enumeración.|  
 |[Skip](../../../extensibility/debugger/reference/ienumdebugaddresses-skip.md)|Omite un número especificado de entradas.|  

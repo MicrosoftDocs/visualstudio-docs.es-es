@@ -17,11 +17,11 @@ author: gewarren
 ms.author: gewarren
 manager: wpickett
 ms.openlocfilehash: 0efbec121e08d026145d8762b574847fbd4a2b88
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60045647"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68143137"
 ---
 # <a name="ca1801-review-unused-parameters"></a>CA1801: Revisar parámetros sin utilizar
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,7 +35,7 @@ Para obtener la documentación más reciente de Visual Studio, consulte [CA1801:
 |Categoría|Microsoft.Usage|  
 |Cambio problemático|No problemático: si el miembro no es visible fuera del ensamblado, independientemente del cambio que realice.<br /><br /> Non-problemático: si cambia el miembro para usar el parámetro dentro del cuerpo.<br /><br /> Problemático: Si quita el parámetro y está visible fuera del ensamblado.|  
   
-## <a name="cause"></a>Motivo  
+## <a name="cause"></a>Causa  
  Una firma de método incluye un parámetro que no se utiliza en el cuerpo del método. Esta regla no examina los métodos siguientes:  
   
 - Métodos que se hace referencia a un delegado.  

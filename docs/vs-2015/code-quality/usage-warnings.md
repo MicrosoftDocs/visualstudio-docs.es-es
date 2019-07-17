@@ -16,11 +16,11 @@ author: gewarren
 ms.author: gewarren
 manager: wpickett
 ms.openlocfilehash: 679c12eb99e3cad7486384999a2393e09dbd277f
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "59002188"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68142112"
 ---
 # <a name="usage-warnings"></a>advertencias de uso
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,7 +29,7 @@ Advertencias de uso admiten el uso correcto de .NET Framework.
   
 ## <a name="in-this-section"></a>En esta sección  
   
-|Regla|Descripción|  
+|Regla|DESCRIPCIÓN|  
 |----------|-----------------|  
 |[CA1801: Revisar parámetros sin utilizar](../code-quality/ca1801-review-unused-parameters.md)|Una firma de método incluye un parámetro que no se utiliza en el cuerpo del método.|  
 |[CA1806: No omitir resultados del método](../code-quality/ca1806-do-not-ignore-method-results.md)|Se crea un nuevo objeto pero nunca se utiliza, o se llama a un método que crea y devuelve una nueva cadena y esta nunca se utiliza, o un método COM o P/Invoke devuelve un código de error o HRESULT que nunca se utiliza.|  

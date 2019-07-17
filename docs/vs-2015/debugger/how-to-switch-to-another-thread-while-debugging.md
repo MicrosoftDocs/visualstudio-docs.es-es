@@ -17,13 +17,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 8f481a0b1cb2142dc7dbfe11e17ac627753cebf0
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60052446"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68176516"
 ---
-# <a name="how-to-switch-to-another-thread-while-debugging"></a>Procedimiento Cambiar a otro subproceso durante la depuración
+# <a name="how-to-switch-to-another-thread-while-debugging"></a>Procedimiento Cambio a otro subproceso durante la depuración
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Al depurar una aplicación multithreading, puede utilizar uno de los métodos existentes para intercambiar entre el contexto del subproceso en el que ha estado trabajando y otro subproceso.  

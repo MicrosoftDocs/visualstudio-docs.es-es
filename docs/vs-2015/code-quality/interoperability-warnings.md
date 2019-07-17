@@ -16,11 +16,11 @@ author: gewarren
 ms.author: gewarren
 manager: wpickett
 ms.openlocfilehash: da9651e06df0f3de046e894df747f88ac528b813
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58998760"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68201281"
 ---
 # <a name="interoperability-warnings"></a>advertencias de interoperabilidad
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,7 +29,7 @@ Advertencias de interoperabilidad admiten la interacción con los clientes COM.
   
 ## <a name="in-this-section"></a>En esta sección  
   
-|Regla|Descripción|  
+|Regla|DESCRIPCIÓN|  
 |----------|-----------------|  
 |[CA1400: Deben existir puntos de entrada P/Invoke](../code-quality/ca1400-p-invoke-entry-points-should-exist.md)|Un método público o protegido se marca con el atributo System.Runtime.InteropServices.DllImportAttribute. No se pudo encontrar la biblioteca no administrada o el método no coincide con una función de la biblioteca.|  
 |[CA1401: P/Invoke no deben estar visibles](../code-quality/ca1401-p-invokes-should-not-be-visible.md)|Un método público o protegido en un tipo público tiene el atributo System.Runtime.InteropServices.DllImportAttribute (también se implementa mediante la palabra clave Declare en Visual Basic). No se deberían exponer estos métodos.|  

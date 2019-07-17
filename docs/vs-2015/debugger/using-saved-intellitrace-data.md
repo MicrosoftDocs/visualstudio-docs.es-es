@@ -16,12 +16,12 @@ caps.latest.revision: 112
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: b1e22447581deee70c133dfdb4c42df6630e26ad
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: e7c8f17bb454c7dc58a355774206b760aac2bdfe
+ms.sourcegitcommit: 748d9cd7328a30f8c80ce42198a94a4b5e869f26
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67823457"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67891086"
 ---
 # <a name="using-saved-intellitrace-data"></a>Uso de datos de IntelliTrace guardados
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -61,7 +61,7 @@ Inicie la depuración desde un archivo de registro de IntelliTrace (.iTrace) par
   
   - En **Todos los vínculos**, busque el archivo .iTrace. Ábralo.  
 
-        \- or -  
+    \- o -  
 
   - En **Pasos de reproducción**, elija el vínculo **IntelliTrace** .  
   

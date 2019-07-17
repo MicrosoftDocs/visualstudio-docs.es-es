@@ -12,11 +12,11 @@ author: erickson-doug
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 1a4e356c3427f5bd49e8f496f0464d7fd23b12bc
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54779202"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68144853"
 ---
 # <a name="troubleshooting-quality-tools"></a>Solucionar problemas de las herramientas de calidad
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

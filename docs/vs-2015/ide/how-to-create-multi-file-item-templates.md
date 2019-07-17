@@ -14,13 +14,13 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: c6c6dde1880881bfb236909fde6ce6deb6bf596f
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60056914"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68201844"
 ---
-# <a name="how-to-create-multi-file-item-templates"></a>Procedimiento Creación de plantillas de elementos de varios archivos
+# <a name="how-to-create-multi-file-item-templates"></a>Procedimiento Creación de plantillas de elemento de varios archivos
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Puede que las plantillas de elementos solo especifiquen un elemento, pero a veces el elemento se compone de varios archivos. Por ejemplo, una plantilla de elemento de Windows Forms para Visual Basic requiere los tres archivos siguientes:  
@@ -53,9 +53,9 @@ Puede que las plantillas de elementos solo especifiquen un elemento, pero a vece
   
      Cuando se agrega un elemento derivado de esta plantilla a un proyecto, los nombres de archivo se basarán en el nombre que ha escrito el usuario en el cuadro de diálogo **Agregar nuevo elemento**.  
   
-3. Seleccione los archivos que se incluirán en la plantilla, haga clic con el botón derecho en la selección, elija **Enviar a** y, después, **Carpeta comprimida (en zip)**. Los archivos seleccionados se comprimen en un archivo .zip.  
+3. Seleccione los archivos que se incluirán en la plantilla, haga clic con el botón derecho en la selección, elija **Enviar a** y, después, **Carpeta comprimida (en zip)** . Los archivos seleccionados se comprimen en un archivo .zip.  
   
-4. Coloque el archivo .zip en la ubicación de la plantilla de elemento del usuario. De forma predeterminada, el directorio es \Mis documentos\Visual Studio *Versión*\Templates\ItemTemplates\\. Para obtener más información, vea [Cómo: Buscar y organizar plantillas](../ide/how-to-locate-and-organize-project-and-item-templates.md).  
+4. Coloque el archivo .zip en la ubicación de la plantilla de elemento del usuario. De forma predeterminada, el directorio es \Mis documentos\Visual Studio *Versión*\Templates\ItemTemplates\\. Para obtener más información, consulte [Cómo Buscar y organizar plantillas](../ide/how-to-locate-and-organize-project-and-item-templates.md).  
   
 ## <a name="example"></a>Ejemplo  
  En el ejemplo siguiente, se muestra una plantilla de Windows Forms de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Cuando se crea un elemento basado en esta plantilla, los nombres de los tres archivos creados coincidirán con el nombre especificado en el cuadro de diálogo **Agregar nuevo elemento**.  

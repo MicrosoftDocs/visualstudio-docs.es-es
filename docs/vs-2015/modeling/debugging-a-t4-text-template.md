@@ -13,11 +13,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 08e74dbb5fefcdaa0959690c7eb1633bca2a8bc6
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58994923"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68164577"
 ---
 # <a name="debugging-a-t4-text-template"></a>Depurar una plantilla de texto T4
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,7 +39,7 @@ Puede establecer puntos de interrupción en plantillas de texto. Para depurar un
 ## <a name="common-errors-and-fixes"></a>Errores frecuentes y soluciones  
  En la tabla siguiente se enumeran los errores más comunes y sus soluciones.  
   
-|Mensaje de error|Descripción|Soluciones|  
+|Mensaje de error|DESCRIPCIÓN|Solución|  
 |-------------------|-----------------|--------------|  
 |Error al cargar la clase base '{0}' de la que se hereda la clase Transformation.|Se produce si no se encuentra la clase base especificada en el parámetro `inherits` en una directiva de plantilla. El mensaje proporciona el número de línea de la directiva de plantilla.|Asegúrese de que existe la clase especificada y de que el ensamblado en el que esta se encuentra se ha especificado en una directiva de ensamblado.|  
 |No se pudo resolver incluir texto para el archivo:{0}|Se produce cuando no se encuentra una plantilla incluida. El mensaje proporciona el nombre del archivo de inclusión solicitado.|Asegúrese de que la ruta de acceso del archivo es relativa a la ruta de acceso de la plantilla original, el archivo está en una ubicación que está registrada con el host o hay una ruta de acceso completa al archivo.|  
@@ -53,7 +53,7 @@ Puede establecer puntos de interrupción en plantillas de texto. Para depurar un
 ## <a name="warning-descriptions-and-fixes"></a>Descripciones de advertencias y soluciones  
  En la tabla siguiente se enumeran las advertencias más frecuentes junto con sus soluciones, si están disponibles.  
   
-|Mensaje de advertencia|Descripción|Soluciones|  
+|Mensaje de advertencia|DESCRIPCIÓN|Solución|  
 |---------------------|-----------------|--------------|  
 |Cargando el archivo de inclusión '{0}' devolvió una cadena nula o vacía.|Se produce si un archivo de plantilla de texto incluido está vacío. El mensaje proporciona el nombre del archivo incluido.|Quite la directiva de inclusión o asegúrese de que el archivo tiene algún contenido.|  
 |Compilando transformación:|Antepone esta cadena a todos los errores o advertencias que se originan en el compilador cuando este compila la transformación. Esta cadena significa que el compilador produjo un error o una advertencia.|Si tiene algún problema para encontrar el archivo DLL, puede que sea necesario proporcionar la ruta de acceso completa o un nombre seguro completo si el archivo DLL está en la GAC.|  
@@ -71,7 +71,7 @@ Puede establecer puntos de interrupción en plantillas de texto. Para depurar un
 |Un parámetro obligatorio '{0}'para la directiva'{1}' no se encontró. Se omitirá la directiva.|Se produce cuando el sistema no proporciona un parámetro de directiva necesario. El mensaje proporciona el nombre del parámetro que falta, el nombre de la directiva y el número de línea.|Proporcione el parámetro que falta.|  
 |El procesador denominado '{0}'no es compatible con la directiva denominada'{1}'. Se omitirá la directiva.|Se produce cuando un procesador de directivas no admite una directiva. El mensaje proporciona el nombre y número de línea de la directiva que provoca el error, junto con el nombre del procesador de directivas.|Corrija el nombre de la directiva.|  
 |La directiva de inclusión para el archivo '{0}' produce un bucle infinito.|Se muestra si se especifican directivas de inclusión circulares (por ejemplo, el archivo A incluye el archivo B, que incluye el archivo A).|No especifique directivas de inclusión circulares.|  
-|Ejecutando transformación:|Antepone esta cadena a todos los errores o advertencias que se generan mientras se ejecuta la transformación.|No es aplicable.|  
+|Ejecutando transformación:|Antepone esta cadena a todos los errores o advertencias que se generan mientras se ejecuta la transformación.|No aplicable.|  
 |Se encontró una etiqueta inicial o final inesperada dentro de un bloque. Asegúrese de que no escribió una etiqueta inicial o final por error y de que no tiene bloques anidados en la plantilla.|Muestra si tiene inesperado \<# o #>. Es decir, si tiene un \<# después de otra etiqueta de apertura que no se ha cerrado, o si tiene un símbolo #> cuando no hay ninguna etiqueta de apertura sin cerrar antes. El mensaje proporciona el número de línea de la etiqueta no coincidente.|Quite la etiqueta de apertura o de cierre no coincidente, o utilice un carácter de escape.|  
 |Se especificó una directiva con formato incorrecto. Se omitirá la directiva. Especifique la directiva en el formato `<#@ name [parametername="parametervalue"]*  #>`|Lo muestra el analizador si una directiva no se especifica en el formato correcto. El mensaje proporciona el número de línea de la directiva incorrecta.|Asegúrese de que todas las directivas se encuentran en el formulario `<#@ name [parametername="parametervalue"]*  #>`. Para obtener más información, consulte [directivas de plantilla de texto T4](../modeling/t4-text-template-directives.md).|  
 |No se pudo cargar el ensamblado '{0}'para el procesador de directivas registrado'{1}'<br /><br /> {2}|Se produce cuando el host no puede cargar un procesador de directivas. El mensaje identifica el ensamblado proporcionado para el procesador de directivas y el nombre del procesador de directivas.|Asegúrese de que el procesador de directivas está registrado correctamente y de que el ensamblado existe.|  

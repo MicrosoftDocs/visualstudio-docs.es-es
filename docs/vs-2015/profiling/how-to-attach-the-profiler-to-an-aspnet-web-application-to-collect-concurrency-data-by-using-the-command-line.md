@@ -10,11 +10,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: d720779019ab4106fa6c4b727e9994f168a2d8f2
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60102294"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68179282"
 ---
 # <a name="how-to-attach-the-profiler-to-an-aspnet-web-application-to-collect-concurrency-data-by-using-the-command-line"></a>Procedimiento Adjuntar al Profiler a una aplicación Web ASP.NET para recopilar datos de simultaneidad mediante la línea de comandos
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,13 +35,13 @@ En este tema se describe cómo utilizar las herramientas de línea de comandos d
 
    - La opción [/start](../profiling/start.md) inicializa el generador de perfiles para recopilar datos de contención de recursos.  
 
-   - La opción [/output](../profiling/output.md)**:**`OutputFile` es necesaria con **/start**. `OutputFile` especifica el nombre y la ubicación del archivo de datos de generación de perfiles (.vsp).  
+   - La opción [/output](../profiling/output.md) **:** `OutputFile` es necesaria con **/start**. `OutputFile` especifica el nombre y la ubicación del archivo de datos de generación de perfiles (.vsp).  
 
      Puede utilizar cualquier opción de la tabla siguiente con la opción **/start**.  
 
-   |                               Opción                               |                                                                     Descripción                                                                      |
+   |                               Opción                               |                                                                     DESCRIPCIÓN                                                                      |
    |--------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------|
-   | [/user](../profiling/user-vsperfcmd.md) **:**[`Domain\`]`UserName` |                           Especifica el dominio y el nombre de usuario opcionales de la cuenta a la que se va a conceder acceso al generador de perfiles.                           |
+   | [/user](../profiling/user-vsperfcmd.md) **:** [`Domain\`]`UserName` |                           Especifica el dominio y el nombre de usuario opcionales de la cuenta a la que se va a conceder acceso al generador de perfiles.                           |
    |           [/crosssession](../profiling/crosssession.md)            |                                               Habilita la generación de perfiles de procesos en otros inicios de sesión.                                                |
    |  [/wincounter](../profiling/wincounter.md) **:** `WinCounterPath`  |                                      Especifica un contador de rendimiento de Windows que se va a recopilar durante la generación de perfiles.                                       |
    |       [/automark](../profiling/automark.md) **:** `Interval`       | Utilizar solo con **/wincounter**. Especifica el número de milisegundos entre eventos de recopilación de contadores de rendimiento de Windows. El valor predeterminado es 500. |
@@ -49,7 +49,7 @@ En este tema se describe cómo utilizar las herramientas de línea de comandos d
 
 2. Inicie la aplicación ASP.NET de la manera habitual.  
 
-3. Escriba el siguiente comando para adjuntar el generador de perfiles al proceso de trabajo de ASP.NET: **VSPerfCmd /attach:**`PID` [**/targetclr:**`Version`]  
+3. Escriba el siguiente comando para adjuntar el generador de perfiles al proceso de trabajo de ASP.NET: **VSPerfCmd /attach:** `PID` [ **/targetclr:** `Version`]  
 
    - `PID` especifica el identificador o nombre del proceso de trabajo de ASP.NET. Puede ver los identificadores de todos los procesos que se están ejecutando en el Administrador de tareas de Windows.  
 
@@ -62,11 +62,11 @@ En este tema se describe cómo utilizar las herramientas de línea de comandos d
 
 - Los pares de opciones de VSPerfCmd de la tabla siguiente inician y detienen la recolección de datos. Especifique cada opción en una línea de comandos diferente. Puede activar y desactivar la recolección de datos varias veces.  
 
-    |Opción|Descripción|  
+    |Opción|DESCRIPCIÓN|  
     |------------|-----------------|  
-    |[/globalon /globaloff](../profiling/globalon-and-globaloff.md)|Inicia (**/globalon**) o detiene (**/globaloff**) la recolección de datos para todos los procesos.|  
-    |[/processon](../profiling/processon-and-processoff.md) **:** `PID`  [processoff](../profiling/processon-and-processoff.md) **:** `PID`|Inicia (**/processon**) o detiene (**/processoff**) la recolección de datos para el proceso que especifica el identificador de proceso (`PID`).|  
-    |[/attach](../profiling/attach.md) **:**{`PID`&#124;`ProcName`} [/detach](../profiling/detach.md)[**:**{`PID`&#124;`ProcName`}]|**/attach** inicia la recolección de datos para el proceso especificado por el identificador de proceso (`PID`) o por el nombre de proceso (*ProcName*). **/detach** detiene la recolección de datos para el proceso especificado o para todos los procesos si no se especifica uno.|  
+    |[/globalon /globaloff](../profiling/globalon-and-globaloff.md)|Inicia ( **/globalon**) o detiene ( **/globaloff**) la recolección de datos para todos los procesos.|  
+    |[/processon](../profiling/processon-and-processoff.md) **:** `PID`  [processoff](../profiling/processon-and-processoff.md) **:** `PID`|Inicia ( **/processon**) o detiene ( **/processoff**) la recolección de datos para el proceso que especifica el identificador de proceso (`PID`).|  
+    |[/attach](../profiling/attach.md) **:** {`PID`&#124;`ProcName`} [/detach](../profiling/detach.md)[ **:** {`PID`&#124;`ProcName`}]|**/attach** inicia la recolección de datos para el proceso especificado por el identificador de proceso (`PID`) o por el nombre de proceso (*ProcName*). **/detach** detiene la recolección de datos para el proceso especificado o para todos los procesos si no se especifica uno.|  
 
 ## <a name="ending-the-profiling-session"></a>Finalizar la sesión de generación de perfiles  
  Para finalizar la sesión de generación de perfiles, el generador de perfiles no debe estar recopilando datos. Para detener la recolección de datos de una aplicación de la que se generan el perfil con el método de simultaneidad, reinicie el proceso de trabajo de ASP.NET o invoque la opción **VSPerfCmd /detach**. Después, invoque la opción **VSPerfCmd /shutdown** para desactivar el generador de perfiles y cerrar el archivo de datos de generación de perfiles. El comando **VSPerfClrEnv /globaloff** borra las variables de entorno de generación de perfiles, pero la configuración del sistema no se restablece hasta que se reinicia el equipo.  

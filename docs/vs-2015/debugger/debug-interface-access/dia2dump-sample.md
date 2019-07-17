@@ -15,11 +15,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: a817720c1ad73b666e0c9a586bb583120a2533c1
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60092024"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68197591"
 ---
 # <a name="dia2dump-sample"></a>Ejemplo Dia2dump
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

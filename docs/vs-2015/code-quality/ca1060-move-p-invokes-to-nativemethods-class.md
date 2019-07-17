@@ -16,11 +16,11 @@ author: gewarren
 ms.author: gewarren
 manager: wpickett
 ms.openlocfilehash: f47fa4326da9914171e5014decbd6d6923c2f02e
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58997234"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68200478"
 ---
 # <a name="ca1060-move-pinvokes-to-nativemethods-class"></a>CA1060: Mover P/Invokes a la clase NativeMethods
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ ms.locfileid: "58997234"
 |Categoría|Microsoft.Design|
 |Cambio problemático|Problemático|
 
-## <a name="cause"></a>Motivo
+## <a name="cause"></a>Causa
  Un método utiliza servicios de invocación de plataforma para tener acceso a código no administrado y no es un miembro de uno de los **NativeMethods** clases.
 
 ## <a name="rule-description"></a>Descripción de la regla
@@ -66,7 +66,7 @@ ms.locfileid: "58997234"
 
 ## <a name="nativemethods-example"></a>Ejemplo de NativeMethods
 
-### <a name="description"></a>Descripción
+### <a name="description"></a>DESCRIPCIÓN
  Dado que el **NativeMethods** no se debe marcar la clase mediante el uso de **SuppressUnmanagedCodeSecurityAttribute**, requerirá P/Invokes se colocan en él **UnmanagedCode** permiso. Dado que la mayoría de las aplicaciones se ejecuta desde el equipo local y ejecuta con plena confianza, esto no suele ser un problema. Sin embargo, si va a desarrollar bibliotecas reutilizables, puede definir un **SafeNativeMethods** o **UnsafeNativeMethods** clase.
 
  El ejemplo siguiente se muestra un **Interaction.Beep** método que encapsula el **MessageBeep** función desde user32.dll. El **MessageBeep** P/Invoke se coloca en el **NativeMethods** clase.
@@ -77,7 +77,7 @@ ms.locfileid: "58997234"
 
 ## <a name="safenativemethods-example"></a>Ejemplo de SafeNativeMethods
 
-### <a name="description"></a>Descripción
+### <a name="description"></a>DESCRIPCIÓN
  Los métodos P/Invoke que se pueden exponer de forma segura a cualquier aplicación y que no tienen efectos secundarios deben colocarse en una clase que se denomina **SafeNativeMethods**. No es necesario solicitar permisos y no tiene mucha atención a donde se les llama desde.
 
  El ejemplo siguiente se muestra un **Environment.TickCount** propiedad que ajusta la **GetTickCount** función desde kernel32.dll.
@@ -88,7 +88,7 @@ ms.locfileid: "58997234"
 
 ## <a name="unsafenativemethods-example"></a>Ejemplo de UnsafeNativeMethods
 
-### <a name="description"></a>Descripción
+### <a name="description"></a>DESCRIPCIÓN
  Los métodos que no se puede llamar de forma segura y que podría provocar efectos secundarios de P/Invoke deben colocarse en una clase que se denomina **UnsafeNativeMethods**. Estos métodos deben comprobarse exhaustivamente para asegurarse de que no se exponen al usuario involuntariamente. La regla [CA2118: Revise el uso de SuppressUnmanagedCodeSecurityAttribute](../code-quality/ca2118-review-suppressunmanagedcodesecurityattribute-usage.md) puede ayudarle con esto. Como alternativa, los métodos deben tener otro permiso que se requiere en lugar de **UnmanagedCode** cuando usen.
 
  El ejemplo siguiente se muestra un **Cursor.Hide** método que encapsula el **ShowCursor** función desde user32.dll.

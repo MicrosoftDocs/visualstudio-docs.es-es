@@ -16,11 +16,11 @@ author: gewarren
 ms.author: gewarren
 manager: wpickett
 ms.openlocfilehash: 2da7faabb05d2f6eaf2ec345f9bae19401953093
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58988177"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68142548"
 ---
 # <a name="ca2205-use-managed-equivalents-of-win32-api"></a>CA2205: Utilizar equivalentes administrados de la API Win32
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ ms.locfileid: "58988177"
 |Categoría|Microsoft.Usage|
 |Cambio problemático|No trascendental|
 
-## <a name="cause"></a>Motivo
+## <a name="cause"></a>Causa
  Una invocación de plataforma se define el método y existe un método con la funcionalidad equivalente en el [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] biblioteca de clases.
 
 ## <a name="rule-description"></a>Descripción de la regla

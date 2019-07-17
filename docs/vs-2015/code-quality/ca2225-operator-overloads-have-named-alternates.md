@@ -16,11 +16,11 @@ author: gewarren
 ms.author: gewarren
 manager: wpickett
 ms.openlocfilehash: aa90a1e97b563ef549cb3f628fcf9130a364c50a
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58997407"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68201615"
 ---
 # <a name="ca2225-operator-overloads-have-named-alternates"></a>CA2225: Las sobrecargas del operador tienen alternativas con nombre
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ ms.locfileid: "58997407"
 |Categoría|Microsoft.Usage|
 |Cambio problemático|No trascendental|
 
-## <a name="cause"></a>Motivo
+## <a name="cause"></a>Causa
  Se detectó una sobrecarga del operador y no se encontró el método alternativo con el nombre esperado.
 
 ## <a name="rule-description"></a>Descripción de la regla
@@ -53,7 +53,7 @@ ms.locfileid: "58997407"
 |/=|/=|/=|Dividir|
 |==|=|==|Es igual a|
 |^|Xor|^|Xor|
-|^=|Xor=|^=|Xor|
+|^=|Xor =|^=|Xor|
 |>|>|>|Comparar|
 |>=|>=|>=|Comparar|
 |++|N/D|++|Incremento|
@@ -62,7 +62,7 @@ ms.locfileid: "58997407"
 |<<=|<<=|<<=|Izq|
 |<|<|<|Comparar|
 |<=|<=|\<=|Comparar|
-|&&|N/D|&&|LogicalAnd|
+|&&|N/D|&&|AND lógico|
 |&#124;&#124;|N/D|&#124;&#124;|LogicalOr|
 |!|N/D|!|LogicalNot|
 |%|Mod|%|Mod o resto|
@@ -77,7 +77,7 @@ ms.locfileid: "58997407"
 |true|IsTrue|N/D|IsTrue (propiedad)|
 |-(unario)|N/D|-|negar|
 |+ (unario)|N/D|+|Signo más|
-|False|IsFalse|False|IsTrue (propiedad)|
+|false|IsFalse|False|IsTrue (propiedad)|
 
  N/D == no se puede sobrecargar en el idioma seleccionado.
 

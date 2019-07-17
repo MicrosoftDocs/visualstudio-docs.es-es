@@ -14,21 +14,21 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 9dfa9f1efa266a95e0580717b06cee4b9d2a7725
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58995318"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68164441"
 ---
 # <a name="compilandenv"></a>CompilandEnv
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 El compilador puede incluir variables de entorno adicionales con los símbolos. Hay un `SymTagCompilandEnv` símbolo para cada una de estas variables.  
   
-## <a name="properties"></a>Propiedades  
+## <a name="properties"></a>Properties (Propiedades)  
  En la tabla siguiente muestra las propiedades que son válidas para este tipo de símbolo.  
   
-|Property|Tipo de datos|Descripción|  
+|Propiedad|Tipo de datos|DESCRIPCIÓN|  
 |--------------|---------------|-----------------|  
 |[IDiaSymbol::get_lexicalParent](../../debugger/debug-interface-access/idiasymbol-get-lexicalparent.md)|`IDiaSymbol*`|Símbolo de la operación de compilación principal.|  
 |[IDiaSymbol::get_lexicalParentId](../../debugger/debug-interface-access/idiasymbol-get-lexicalparentid.md)|`DWORD`|Id. del símbolo léxico primario.|  

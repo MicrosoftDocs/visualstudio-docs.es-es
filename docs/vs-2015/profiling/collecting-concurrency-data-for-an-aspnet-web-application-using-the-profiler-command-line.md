@@ -13,11 +13,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 73270acd97ac4555ade609601d92327235a2f3c7
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54752361"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68144904"
 ---
 # <a name="collecting-concurrency-data-for-an-aspnet-web-application-using-the-profiler-command-line"></a>Recopilar datos de simultaneidad para una aplicación web ASP.NET con la línea de comandos del generador de perfiles
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,7 +28,7 @@ El método de simultaneidad de las herramientas de generación de perfiles de [!
   
 |Tarea|Contenido relacionado|  
 |----------|---------------------|  
-|Adjuntar el generador de perfiles a una aplicación ASP.NET en ejecución|-   [Cómo: Asociación del generador de perfiles a una aplicación ASP.NET para recopilar datos de simultaneidad](../profiling/how-to-attach-the-profiler-to-an-aspnet-web-application-to-collect-concurrency-data-by-using-the-command-line.md)|  
+|Adjuntar el generador de perfiles a una aplicación ASP.NET en ejecución|-   [Instrucciones: Asociación del generador de perfiles a una aplicación ASP.NET para recopilar datos de simultaneidad](../profiling/how-to-attach-the-profiler-to-an-aspnet-web-application-to-collect-concurrency-data-by-using-the-command-line.md)|  
   
 ## <a name="reference"></a>Referencia  
  [Referencia de las herramientas de generación de perfiles de la línea de comandos](../profiling/command-line-profiling-tools-reference.md)  

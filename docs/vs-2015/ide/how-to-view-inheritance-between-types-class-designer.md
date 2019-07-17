@@ -1,5 +1,5 @@
 ---
-title: Procedimiento Ver la herencia entre tipos (Diseñador de clases) | Microsoft Docs
+title: Procedimiento Ver la herencia entre tipos (Diseñador de clases) | Documentos de Microsoft
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
@@ -16,16 +16,16 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 95fc42cd3d13a0613e865b8a0294c74ca016155c
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54782241"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68178802"
 ---
-# <a name="how-to-view-inheritance-between-types-class-designer"></a>Cómo: Ver la herencia entre tipos (Diseñador de clases)
+# <a name="how-to-view-inheritance-between-types-class-designer"></a>Procedimiento Ver la herencia entre tipos (Diseñador de clases)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Si existe, la relación de herencia entre un tipo base y sus tipos derivados se puede buscar en un diagrama de clases del Diseñador de clases. Para crear una relación de herencia, si no existe ninguna, entre dos tipos, vea [Cómo: Crear la herencia entre tipos (Diseñador de clases)](../ide/how-to-create-inheritance-between-types-class-designer.md).  
+Si existe, la relación de herencia entre un tipo base y sus tipos derivados se puede buscar en un diagrama de clases del Diseñador de clases. Para crear una relación de herencia entre dos tipos si no existe ninguna, vea [Cómo: Crear la herencia entre tipos (Diseñador de clases)](../ide/how-to-create-inheritance-between-types-class-designer.md).  
   
 ### <a name="to-find-the-base-type"></a>Para buscar el tipo base  
   
@@ -48,5 +48,5 @@ Si existe, la relación de herencia entre un tipo base y sus tipos derivados se 
    También puede hacer clic con el botón derecho en el tipo cuyos tipos derivados quiera mostrar y elegir **Mostrar clases derivadas** o **Mostrar interfaces derivadas**.  
   
 ## <a name="see-also"></a>Vea también  
- [Cómo: Crear asociaciones entre tipos (Diseñador de clases)](../ide/how-to-create-associations-between-types-class-designer.md)   
+ [Procedimientos: Crear asociaciones entre tipos (Diseñador de clases)](../ide/how-to-create-associations-between-types-class-designer.md)   
  [Ver tipos y relaciones (Diseñador de clases)](../ide/viewing-types-and-relationships-class-designer.md)

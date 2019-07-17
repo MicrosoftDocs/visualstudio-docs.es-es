@@ -12,11 +12,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 8344050d26286263e0c33974b976e4ae25ff18de
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58997164"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68192754"
 ---
 # <a name="graphics-event-call-stack"></a>Pila de llamadas de eventos de gráficos
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,9 +35,9 @@ La pila de llamadas de eventos gráficos del Analizador de gráficos de Visual S
 ### <a name="graphics-event-call-stack-information"></a>Información de la Pila de llamadas de eventos gráficos  
  La Pila de llamadas de eventos no admite los eventos anteriores a la trama ni los eventos definidos por el usuario. La pila de llamadas de eventos gráficos se muestra en formato de tabla.  
   
-|Columna|Descripción|  
+|Columna|DESCRIPCIÓN|  
 |------------|-----------------|  
-|**Name**|Símbolo que identifica de forma única la función que contiene el sitio de llamada. El símbolo de depuración de la función se muestra cuando está disponible. Cuando no lo está, se muestra el desplazamiento de función.|  
+|**Nombre**|Símbolo que identifica de forma única la función que contiene el sitio de llamada. El símbolo de depuración de la función se muestra cuando está disponible. Cuando no lo está, se muestra el desplazamiento de función.|  
 |**Archivo**|El nombre de archivo del archivo de código fuente o el archivo de biblioteca que contiene el sitio de llamada.|  
 |**Ubicación**|El número de línea del sitio de llamada.|  
   

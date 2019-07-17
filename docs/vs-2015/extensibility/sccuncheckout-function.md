@@ -13,11 +13,11 @@ caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 3ae5ecd7568a10936479f72f92e9914132f2dcdf
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58998164"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68190861"
 ---
 # <a name="sccuncheckout-function"></a>SccUncheckout (Función)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -59,7 +59,7 @@ SCCRTN SccUncheckout (
 ## <a name="return-value"></a>Valor devuelto  
  La implementación de complemento de control de origen de esta función debe devolver uno de los valores siguientes:  
   
-|Valor|Descripción|  
+|Valor|DESCRIPCIÓN|  
 |-----------|-----------------|  
 |SCC_OK|Deshacer desprotección fue correcta.|  
 |SCC_E_FILENOTCONTROLLED|El archivo seleccionado no está bajo control de código fuente.|  

@@ -13,11 +13,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 4b39ac28776b1af71e2cccb601776f5518ff9e99
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54803954"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68176618"
 ---
 # <a name="collecting-detailed-timing-data-for-a-stand-alone-application-by-using-the-profiler-command-line"></a>Recopilar datos detallados de tiempo para una aplicación independiente mediante la línea de comandos del generador de perfiles
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,8 +28,8 @@ En esta sección se describen los procedimientos y las opciones para recopilar d
   
 |Tarea|Contenido relacionado|  
 |----------|---------------------|  
-|**Generar perfiles de una aplicación de .NET Framework mediante la instrumentación**|-   [Cómo: Instrumentación de un componente de .NET y recopilar datos de control de tiempo detallados](../profiling/how-to-instrument-a-stand-alone-dotnet-framework-component-and-collect-timing-data-with-the-profiler-from-the-command-line.md)|  
-|**Generar perfiles de una aplicación de C/C++ mediante la instrumentación**|-   [Cómo: Instrumentación de un componente nativo y recopilar datos de control de tiempo detallados](../profiling/how-to-instrument-a-native-stand-alone-component-and-collect-timing-data-with-the-profiler-from-the-command-line.md)|  
+|**Generar perfiles de una aplicación de .NET Framework mediante la instrumentación**|-   [Instrucciones: Instrumentación de un componente de .NET y recopilar datos de control de tiempo detallados](../profiling/how-to-instrument-a-stand-alone-dotnet-framework-component-and-collect-timing-data-with-the-profiler-from-the-command-line.md)|  
+|**Generar perfiles de una aplicación de C/C++ mediante la instrumentación**|-   [Instrucciones: Instrumentación de un componente nativo y recopilar datos de control de tiempo detallados](../profiling/how-to-instrument-a-native-stand-alone-component-and-collect-timing-data-with-the-profiler-from-the-command-line.md)|  
 |**Agregar datos de interacción de capas**|-   [Recopilar datos de interacción de capas](../profiling/adding-tier-interaction-data-from-the-command-line.md)|  
   
 ## <a name="related-tasks"></a>Tareas relacionadas  

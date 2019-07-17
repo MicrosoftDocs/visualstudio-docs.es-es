@@ -23,11 +23,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: e8a7bd540f5c8a99145b892d080d8cb54e57d968
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60061182"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68152112"
 ---
 # <a name="display-related-data-in-wpf-applications"></a>Mostrar datos relacionados en aplicaciones WPF
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

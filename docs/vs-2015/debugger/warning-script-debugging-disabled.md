@@ -17,11 +17,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 36065120dc636f0004f0e00d8b17a0059a680723
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60105596"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68161382"
 ---
 # <a name="warning-script-debugging-disabled"></a>Advertencia: Depuración de scripts deshabilitada
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,13 +38,13 @@ La depuración de script está deshabilitada actualmente en Internet Explorer
   
 3. En la pestaña **Opciones avanzadas**, observe la categoría **Examinar** en el cuadro **Configuración**.  
   
-4. Desactive **Deshabilitar la depuración de scripts (Internet Explorer)**.  
+4. Desactive **Deshabilitar la depuración de scripts (Internet Explorer)** .  
   
-5. Haga clic en **Aceptar**.  
+5. Haga clic en **OK**.  
   
 6. Salga y reinicie Internet Explorer.  
   
      La nueva configuración estará ahora en vigor.  
   
 ## <a name="see-also"></a>Vea también  
- [Cómo: Asociación a script](../debugger/how-to-attach-to-script.md)
+ [Procedimientos: Asociación a script](../debugger/how-to-attach-to-script.md)

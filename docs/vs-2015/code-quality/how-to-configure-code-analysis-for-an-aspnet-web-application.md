@@ -12,11 +12,11 @@ author: gewarren
 ms.author: gewarren
 manager: wpickett
 ms.openlocfilehash: 8e75f5a584dd0522240f8b4d45cb28107bca38e3
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: HT
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60113418"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68201394"
 ---
 # <a name="how-to-configure-code-analysis-for-an-aspnet-web-application"></a>Procedimiento Configurar el análisis de código para una aplicación web ASP.NET
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

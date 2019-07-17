@@ -15,11 +15,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 1055136562d59412a6187524dc6023c55ef2dc3c
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59659038"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68158664"
 ---
 # <a name="da0010-expensive-gethashcode"></a>DA0010: GetHashCode que consume muchos recursos
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,10 +31,10 @@ Para obtener la documentación más reciente de Visual Studio, consulte [DA0010:
 |Identificador de regla|DA0010|  
 |Categoría|Uso de .NET Framework|  
 |Métodos de generación de perfiles|Muestreo<br /><br /> Memoria de .NET|  
-|Mensaje|Las funciones GetHashCode deben consumir pocos recursos y no asignar ninguna memoria. Reduzca la complejidad de la función de código hash si es posible.|  
+|Message|Las funciones GetHashCode deben consumir pocos recursos y no asignar ninguna memoria. Reduzca la complejidad de la función de código hash si es posible.|  
 |Tipo de mensaje|Advertencia|  
   
-## <a name="cause"></a>Motivo  
+## <a name="cause"></a>Causa  
  Las llamadas al método GetHashCode del tipo constituyen una proporción considerable de los datos de generación de perfiles o el método asigna memoria.  
   
 ## <a name="rule-description"></a>Descripción de la regla  

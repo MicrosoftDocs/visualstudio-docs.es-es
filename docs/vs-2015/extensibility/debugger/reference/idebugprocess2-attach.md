@@ -1,5 +1,5 @@
 ---
-title: IDebugProcess2::Attach | Microsoft Docs
+title: IDebugProcess2::Attach | Documentos de Microsoft
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,11 +13,11 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 4d4664f164675c445510d8976f33577684dbd1d2
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58989384"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68188099"
 ---
 # <a name="idebugprocess2attach"></a>IDebugProcess2::Attach
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -60,7 +60,7 @@ int Attach( 
 ## <a name="return-value"></a>Valor devuelto  
  Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error. En la tabla siguiente se muestra otros posibles valores.  
   
-|Valor|Descripción|  
+|Valor|DESCRIPCIÓN|  
 |-----------|-----------------|  
 |`E_ATTACH_DEBUGGER_ALREADY_ATTACHED`|El proceso especificado ya está asociado al depurador.|  
 |`E_ATTACH_DEBUGGEE_PROCESS_SECURITY_VIOLATION`|Se ha producido una infracción de seguridad durante el procedimiento de conexión.|  

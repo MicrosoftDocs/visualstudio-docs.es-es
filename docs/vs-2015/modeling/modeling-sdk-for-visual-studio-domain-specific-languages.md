@@ -13,11 +13,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 7bcfe986877305c55f6b459b8c519e4f12f5a503
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "59002189"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68159030"
 ---
 # <a name="modeling-sdk-for-visual-studio---domain-specific-languages"></a>Modelar el SDK de Visual Studio - Lenguajes específicos de dominio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -76,6 +76,6 @@ Mediante el SDK de modelado para [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] (M
 
  [Ediciones de Visual Studio compatibles con el SDK de visualización y modelado](../modeling/supported-visual-studio-editions-for-visualization-amp-modeling-sdk.md)
 
- [Cómo: Migrar un lenguaje específico de dominio a una nueva versión](../modeling/how-to-migrate-a-domain-specific-language-to-a-new-version.md)
+ [Procedimientos: Migrar un lenguaje específico de dominio a una nueva versión](../modeling/how-to-migrate-a-domain-specific-language-to-a-new-version.md)
 
  [Referencia de API para modelar el SDK de Visual Studio](../modeling/api-reference-for-modeling-sdk-for-visual-studio.md)

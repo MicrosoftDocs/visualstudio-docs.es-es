@@ -16,11 +16,11 @@ author: gewarren
 ms.author: gewarren
 manager: wpickett
 ms.openlocfilehash: 3182a254ed5e22c560523911f87dc852708a9eb1
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58997007"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68201594"
 ---
 # <a name="ca2227-collection-properties-should-be-read-only"></a>CA2227: Las propiedades de la colección deben ser de solo lectura
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ ms.locfileid: "58997007"
 |Categoría|Microsoft.Usage|
 |Cambio problemático|Problemático|
 
-## <a name="cause"></a>Motivo
+## <a name="cause"></a>Causa
  Una propiedad de escritura visible externamente es un tipo que implementa <xref:System.Collections.ICollection?displayProperty=fullName>. La regla omite las matrices, los indizadores (propiedades con el nombre 'Item') y conjuntos de permisos.
 
 ## <a name="rule-description"></a>Descripción de la regla

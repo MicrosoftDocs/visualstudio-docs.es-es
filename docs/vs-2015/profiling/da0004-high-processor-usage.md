@@ -1,5 +1,5 @@
 ---
-title: 'DA0004: Alto uso del procesador | Microsoft Docs'
+title: 'DA0004: Uso intenso del procesador | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -15,13 +15,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: a0e14a7400b937c56c2aac49a43d1d59cf96eba0
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54762529"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68158697"
 ---
-# <a name="da0004-high-processor-usage"></a>DA0004: Alto uso del procesador
+# <a name="da0004-high-processor-usage"></a>DA0004: Uso intenso del procesador
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Id. de regla | DA0004 |  
@@ -32,7 +32,7 @@ Id. de regla | DA0004 |
   
  Al generar perfiles mediante los métodos de muestreo, memoria de .NET o contención de recursos, debe reunir al menos 10 ejemplos para activar esta regla.  
   
-## <a name="cause"></a>Motivo  
+## <a name="cause"></a>Causa  
  La utilización del procesador (CPU) fue considerablemente alta al generar perfiles de datos recopilados mediante el método de instrumentación. Considere la posibilidad de utilizar el método de generación de perfiles por muestreo al generar perfiles de una aplicación enlazada a la CPU.  
   
 ## <a name="rule-description"></a>Descripción de la regla  

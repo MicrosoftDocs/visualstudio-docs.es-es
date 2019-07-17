@@ -12,13 +12,13 @@ caps.latest.revision: 9
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 1af78bd58c42cf1312e36621011802e908c9e919
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58999687"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68186392"
 ---
-# <a name="tool-window-display-configuration"></a>Configuración de pantalla de ventana de herramienta
+# <a name="tool-window-display-configuration"></a>Configuración para mostrar de la ventana de herramientas
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Cuando registra un VSPackage una ventana de herramientas, la posición predeterminada, tamaño, estilo de acoplamiento y otra información de visibilidad se especifica en los valores opcionales. Para obtener más información sobre el registro de la ventana de herramienta, consulte [herramienta de Windows en el registro](../extensibility/tool-windows-in-the-registry.md)  
@@ -37,9 +37,9 @@ HKEY_LOCAL_MACHINE\
               (Default)       = reg_sz: <Package GUID>Name            = reg_sz: <name of tool window>Float           = reg_sz: <position>Style           = reg_sz: <dock style>Window          = reg_sz: <window GUID>Orientation     = reg_sz: <orientation>DontForceCreate = reg_dword: 0x00000000  
 ```  
   
-|Name|Tipo|Datos|Descripción|  
+|NOMBRE|Type|Datos|DESCRIPCIÓN|  
 |----------|----------|----------|-----------------|  
-|Name|REG_SZ|"Nombre corto se incluye aquí"|Un nombre corto que describe la ventana de herramientas. Se usa solo como referencia en el registro.|  
+|NOMBRE|REG_SZ|"Nombre corto se incluye aquí"|Un nombre corto que describe la ventana de herramientas. Se usa solo como referencia en el registro.|  
 |Float|REG_SZ|"X1, Y1, X2, Y2"|Cuatro valores separados por comas. X1, Y1 es la coordenada de la esquina superior izquierda de la ventana de herramientas. X2, Y2 es la coordenada de la esquina inferior derecha. Todos los valores están en coordenadas de pantalla.|  
 |Estilo|REG_SZ|"MDI"<br /><br /> "Flotar"<br /><br /> "Vinculado"<br /><br /> "Pestañas"<br /><br /> "AlwaysFloat"|Una palabra clave especifica inicial Mostrar estado de la ventana de herramientas.<br /><br /> "MDI" = acoplada con ventana MDI.<br /><br /> "Flotar" = flotante.<br /><br /> "Vinculado" = vinculada con otra ventana (especificado en la entrada de la ventana).<br /><br /> "Pestañas" = combinado con otra ventana de herramientas.<br /><br /> "AlwaysFloat" = no se puede acoplar.<br /><br /> Para obtener más información, vea la siguiente sección de comentarios.|  
 |Ventana|REG_SZ|*\<GUID>*|El GUID de una ventana a la que la ventana de herramientas se puede vincular o con pestañas. El GUID puede pertenecer a uno de sus propias ventanas o una de las ventanas en el [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] IDE.|  
@@ -86,9 +86,9 @@ HKEY_LOCAL_MACHINE\
                 <GUID>    = reg_sz:  
 ```  
   
-|Name|Tipo|Datos|Descripción|  
+|NOMBRE|Type|Datos|DESCRIPCIÓN|  
 |----------|----------|----------|-----------------|  
-|(Predeterminado)|REG_SZ|Ninguna|Deje en blanco.|  
+|(Predeterminado)|REG_SZ|None|Deje en blanco.|  
 |*\<GUID>*|REG_DWORD o REG_SZ|0 o una cadena descriptiva.|Opcional. Nombre de la entrada debe ser el GUID de un comando que requiere la visibilidad. El valor contiene solo una cadena de carácter informativo. Normalmente, el valor es un `reg_dword` establecido en 0.|  
   
 ### <a name="example"></a>Ejemplo  

@@ -17,11 +17,11 @@ author: gewarren
 ms.author: gewarren
 manager: wpickett
 ms.openlocfilehash: 237091c4304b6d6fef90197d503f84fe86c12b9e
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58996002"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68142341"
 ---
 # <a name="code-analysis-for-managed-code-warnings"></a>Análisis de código de las advertencias de código administrado
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,14 +30,14 @@ La herramienta de análisis de código administrado proporciona advertencias que
   
  En la tabla siguiente se muestra el tipo de información que se proporciona para cada advertencia.  
   
-|Elemento|Descripción|  
+|Elemento|DESCRIPCIÓN|  
 |----------|-----------------|  
-|Tipo|TypeName de la regla.|  
+|Type|TypeName de la regla.|  
 |Identificador de comprobación|Identificador único de la regla. CheckId y Categoría se usan para la supresión en el código fuente de una advertencia.|  
 |Categoría|Categoría de la advertencia.|  
 |Cambio problemático|Indica si la corrección para una infracción de la regla es un cambio problemático. Se entiende por cambio problemático que un ensamblado que tenga una dependencia en el destino que produjo la infracción no se vuelva a compilar con la nueva versión modificada o genere un error en tiempo de ejecución debido al cambio. Cuando hay disponibles varias correcciones y al menos una es un cambio problemático y otra no, se especifican "Problemático" y "No problemático".|  
-|Motivo|El código administrado específico que provoca que la regla genere una advertencia.|  
-|Descripción|Describe los problemas que están detrás de la advertencia.|  
+|Causa|El código administrado específico que provoca que la regla genere una advertencia.|  
+|DESCRIPCIÓN|Describe los problemas que están detrás de la advertencia.|  
 |Cómo corregir infracciones|Explica cómo cambiar el código fuente para cumplir la regla y evitar que se genere una advertencia.|  
 |Cuándo suprimir advertencias|Describe cuándo es seguro suprimir una advertencia de la regla.|  
 |Código de ejemplo|Ejemplos que infringen la regla y ejemplos corregidos que cumplen la regla.|  

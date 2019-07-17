@@ -11,13 +11,13 @@ caps.latest.revision: 19
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: a7d58d1477b9d7f58242f8cb4db7c3c360c248b9
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60094130"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68184463"
 ---
-# <a name="changing-view-settings-by-using-the-legacy-api"></a>Cambie la configuración de vista mediante la API heredada
+# <a name="changing-view-settings-by-using-the-legacy-api"></a>Cambio de la configuración de vista mediante la API heredada API
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Configuración de las características del editor de núcleo, como el ajuste de palabra, margen de selección y el espacio virtual, puede cambiarse por el usuario por medio de la **opciones** cuadro de diálogo. Sin embargo, también es posible cambiar esta configuración mediante programación.  

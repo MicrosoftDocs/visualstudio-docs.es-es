@@ -16,11 +16,11 @@ author: gewarren
 ms.author: gewarren
 manager: wpickett
 ms.openlocfilehash: 795d48b96392057a3f96cf3a67f3c49de8aee9b9
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60052173"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68203087"
 ---
 # <a name="ca1824-mark-assemblies-with-neutralresourceslanguageattribute"></a>CA1824: Marcar los ensamblados con NeutralResourcesLanguageAttribute
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ ms.locfileid: "60052173"
 |Categoría|Microsoft.Performance|
 |Cambio problemático|Poco problemático|
 
-## <a name="cause"></a>Motivo
+## <a name="cause"></a>Causa
  Un ensamblado contiene un **ResX**-recurso basado en pero no tiene el <xref:System.Resources.NeutralResourcesLanguageAttribute?displayProperty=fullName> aplicado a él.
 
 ## <a name="rule-description"></a>Descripción de la regla
@@ -51,7 +51,7 @@ ms.locfileid: "60052173"
 
 3. En el **información de ensamblado** diálogo cuadro, seleccione el idioma de la **idioma neutro** lista desplegable.
 
-4. Haga clic en **Aceptar**.
+4. Haga clic en **OK**.
 
 ## <a name="when-to-suppress-warnings"></a>Cuándo suprimir advertencias
  Es admisible para suprimir una advertencia de esta regla. Sin embargo, podría disminuir el rendimiento de inicio.

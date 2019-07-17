@@ -20,11 +20,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: e28ebd46a03983e60ebdd3fc22dd55d85249f710
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54774878"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68188857"
 ---
 # <a name="code-snippets"></a>Fragmentos de código
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -48,7 +48,7 @@ finally
   
 ```  
   
- Puede insertar este fragmento de código haciendo clic en **Insertar fragmento de código** en el menú contextual de la ventana de código y, después, en **Visual C#**. A continuación, escriba `tryf` y pulse el tabulador. También puede escribir `tryf` y pulsar el tabulador dos veces seguidas.  
+ Puede insertar este fragmento de código haciendo clic en **Insertar fragmento de código** en el menú contextual de la ventana de código y, después, en **Visual C#** . A continuación, escriba `tryf` y pulse el tabulador. También puede escribir `tryf` y pulsar el tabulador dos veces seguidas.  
   
  Un ejemplo de un fragmento de código rodear con: en el acceso directo de C++ `if` se puede utilizar como un fragmento de código de inserción o como un fragmento de código rodear con. Si selecciona una línea de código (por ejemplo, `return FALSE;`) y, después, hace clic en **Rodear con** y en **si**, el fragmento de código se expande alrededor de la línea:  
   
@@ -86,7 +86,7 @@ End Property
  Puede agregar y eliminar directorios de fragmentos de código con los botones **Agregar** y **Eliminar** del cuadro de diálogo **Administrador de fragmentos de código**. Para agregar fragmentos de código individuales, utilice el botón **Importar**.  
   
 ## <a name="see-also"></a>Vea también  
- [Tutorial: Crear un fragmento de código](../ide/walkthrough-creating-a-code-snippet.md)   
+ [Tutorial: Creación de un fragmento de código](../ide/walkthrough-creating-a-code-snippet.md)   
  [Cómo: Distribuir fragmentos de código](../ide/how-to-distribute-code-snippets.md)   
  [Procedimientos recomendados para usar fragmentos de código](../ide/best-practices-for-using-code-snippets.md)   
  [Solucionar problemas con fragmentos de código](../ide/troubleshooting-snippets.md)   

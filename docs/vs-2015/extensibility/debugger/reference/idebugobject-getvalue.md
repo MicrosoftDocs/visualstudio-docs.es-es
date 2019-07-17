@@ -13,11 +13,11 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: de6e6888cfce338ebcee90e722f07e900ce25d0b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58997968"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68180532"
 ---
 # <a name="idebugobjectgetvalue"></a>IDebugObject::GetValue
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]

@@ -14,21 +14,21 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 9b178883db5da6d069b1606b0058b6773962140e
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58987176"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68149110"
 ---
 # <a name="pointertype"></a>PointerType
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 Cada puntero se identifica mediante un `SymTagPointerType` símbolos.  
   
-## <a name="properties"></a>Propiedades  
+## <a name="properties"></a>Properties (Propiedades)  
  La siguiente tabla muestra propiedades adicionales de válido para este tipo de símbolo.  
   
-|Property|Tipo de datos|Descripción|  
+|Propiedad|Tipo de datos|DESCRIPCIÓN|  
 |--------------|---------------|-----------------|  
 |[IDiaSymbol::get_constType](../../debugger/debug-interface-access/idiasymbol-get-consttype.md)|`BOOL`|`TRUE` Si el puntero está marcado como una constante.|  
 |[IDiaSymbol::get_length](../../debugger/debug-interface-access/idiasymbol-get-length.md)|`ULONGLONG`|Tamaño, en bytes, del puntero.|  
