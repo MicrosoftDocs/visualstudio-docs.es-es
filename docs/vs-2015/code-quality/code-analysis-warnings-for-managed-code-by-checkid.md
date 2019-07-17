@@ -260,11 +260,11 @@ author: gewarren
 ms.author: gewarren
 manager: wpickett
 ms.openlocfilehash: 91dcea4d9d16a6e846a66e4a5590dedfdc62b90f
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58996125"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68201467"
 ---
 # <a name="code-analysis-warnings-for-managed-code-by-checkid"></a>Advertencias de análisis de código para código administrado por CheckId
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -440,7 +440,7 @@ En la tabla siguiente se enumeran las advertencias de análisis de código para 
 |CA2118|[CA2118: Revisar el uso de SuppressUnmanagedCodeSecurityAttribute](../code-quality/ca2118-review-suppressunmanagedcodesecurityattribute-usage.md)|SuppressUnmanagedCodeSecurityAttribute cambia el comportamiento del sistema de seguridad predeterminado por miembros que ejecutan código no administrado que utiliza la interoperabilidad COM o la invocación de sistema operativo. Este atributo se utiliza principalmente para aumentar el rendimiento; sin embargo, las mejoras de rendimiento suponen riesgos de seguridad importantes.|  
 |CA2119|[CA2119: Sellar los métodos que satisfacen las interfaces privadas](../code-quality/ca2119-seal-methods-that-satisfy-private-interfaces.md)|Un tipo público heredable proporciona una implementación de método reemplazable de una interfaz interna (de tipo "Friend" en [!INCLUDE[vbprvb](../includes/vbprvb-md.md)]). Para corregir una infracción de esta regla, impida que el método se invalide fuera del ensamblado.|  
 |CA2120|[CA2120: Proteger los constructores de serialización](../code-quality/ca2120-secure-serialization-constructors.md)|Este tipo tiene un constructor que toma un objeto System.Runtime.Serialization.SerializationInfo y un objeto System.Runtime.Serialization.StreamingContext (la firma del constructor de serialización). Una comprobación de seguridad no protege este constructor, pero protege uno o más constructores regulares del tipo.|  
-|CA2121|[CA2121: Los constructores estáticos deberían ser privados](../code-quality/ca2121-static-constructors-should-be-private.md)|El sistema llama al constructor estático antes de crear la primera instancia del tipo o antes de hacer referencia a cualquier miembro estático. Si un constructor estático no es privado, se puede llamar a través de un código distinto del sistema. En función de las operaciones que se realizan en el constructor, esto puede producir un comportamiento inesperado.|  
+|CA2121|[CA2121: Los constructores estáticos deben ser privados](../code-quality/ca2121-static-constructors-should-be-private.md)|El sistema llama al constructor estático antes de crear la primera instancia del tipo o antes de hacer referencia a cualquier miembro estático. Si un constructor estático no es privado, se puede llamar a través de un código distinto del sistema. En función de las operaciones que se realizan en el constructor, esto puede producir un comportamiento inesperado.|  
 |CA2122|[CA2122: No exponer indirectamente métodos con peticiones de vínculo](../code-quality/ca2122-do-not-indirectly-expose-methods-with-link-demands.md)|Un miembro público o protegido tiene peticiones de vínculos y lo llama un miembro que no realiza ninguna comprobación de seguridad. Una solicitud de vínculo sólo comprueba los permisos del llamador inmediato.|  
 |CA2123|[CA2123: Las peticiones de vínculo deben ser idénticas de base](../code-quality/ca2123-override-link-demands-should-be-identical-to-base.md)|Esta regla compara un método con su método base, que es una interfaz o un método virtual de otro tipo y, a continuación, compara las solicitudes de vínculos en cada uno. Si se infringe esta regla, un llamador malintencionado puede omitir la petición de vínculo tan solo con llamar al método no seguro.|  
 |CA2124|[CA2124: Incluir finally vulnerables externa cláusulas try](../code-quality/ca2124-wrap-vulnerable-finally-clauses-in-outer-try.md)|Un método público o protegido contiene un bloque try/finally. El bloque finally aparece para restablecer el estado de seguridad y no se incluye a sí mismo en un bloque finally.|  

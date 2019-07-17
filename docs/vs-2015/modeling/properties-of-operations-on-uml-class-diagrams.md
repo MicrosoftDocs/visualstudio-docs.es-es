@@ -14,11 +14,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: f98a3211bebf832009b84fac0fc1305a4162c610
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59668449"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68154822"
 ---
 # <a name="properties-of-operations-on-uml-class-diagrams"></a>Propiedades de las operaciones de diagramas de clases de UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,15 +44,15 @@ En un diagrama de clases UML, puede agregar *operaciones* a clases e interfaces.
 
  Vea la sección siguiente para obtener una descripción completa de estas propiedades.  
 
-## <a name="properties"></a>Propiedades  
+## <a name="properties"></a>Properties (Propiedades)  
  Estas son las propiedades de una operación en una clase o interfaz de un diagrama de clases UML.  
 
  Para ver las propiedades de una operación, haga clic en la operación en la clase o interfaz en el diagrama y, a continuación, haga clic en **propiedades**. Las propiedades aparecen en la **propiedades** ventana.  
 
-|      Propiedad       |   Default    |                                                                                                                                                                                 Descripción                                                                                                                                                                                 |
+|      Propiedad       |   Valor predeterminado    |                                                                                                                                                                                 DESCRIPCIÓN                                                                                                                                                                                 |
 |---------------------|--------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|      **Name**       | (un nombre nuevo) |                                                                                                                                                                Debe ser único dentro del tipo contenedor.                                                                                                                                                                 |
-|   **Parámetros**    |    (ninguno)    |      Una lista que tiene el formato <em>nombre</em>**:**<em>tipo</em>**,** <em>nombre</em>**:**  <em>Tipo</em>**,...** Haga clic en **[...]**  para editar la lista.<br /><br /> Los tipos pueden ser tipos primitivos o tipos que se definen en el modelo. Si escribe un nombre para un nuevo tipo en esta propiedad, se agregará un tipo a la sección **Tipos sin especificar** del Explorador de modelos UML.      |
+|      **Nombre**       | (un nombre nuevo) |                                                                                                                                                                Debe ser único dentro del tipo contenedor.                                                                                                                                                                 |
+|   **Parámetros**    |    (ninguno)    |      Una lista que tiene el formato <em>nombre</em> **:** <em>tipo</em> **,** <em>nombre</em> **:**  <em>Tipo</em> **,...** Haga clic en **[...]**  para editar la lista.<br /><br /> Los tipos pueden ser tipos primitivos o tipos que se definen en el modelo. Si escribe un nombre para un nuevo tipo en esta propiedad, se agregará un tipo a la sección **Tipos sin especificar** del Explorador de modelos UML.      |
 |   **Tipo de valor devuelto**   |    (ninguno)    |                                                                               **(ninguno)** , o un tipo primitivo o un tipo que se define en el modelo. Si escribe un nombre para un nuevo tipo en esta propiedad, se agregará un tipo a la sección **Tipos sin especificar** del Explorador de modelos UML.                                                                                |
 | **Condiciones posteriores**  |    (ninguno)    |                                                                                                                         Una condición opcional que especifica una relación entre el estado del sistema antes y después de la ejecución de la operación.                                                                                                                         |
 |  **Condiciones previas**  |    (ninguno)    |                                                                                                                            Una condición opcional que especifica las suposiciones acerca del estado del sistema antes de iniciarse la ejecución de la operación.                                                                                                                            |

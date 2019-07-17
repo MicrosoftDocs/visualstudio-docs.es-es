@@ -11,11 +11,11 @@ caps.latest.revision: 20
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 02e2c7ee92ab138de7bee0d58835898f3bd0a58b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58998682"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68160616"
 ---
 # <a name="source-control-plug-in-api-functions"></a>Funciones de API de complemento de control de código fuente
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -24,7 +24,7 @@ La API de complemento de Control de código fuente proporciona las siguientes fu
   
 ## <a name="initialization-and-housekeeping-functions"></a>Inicialización y funciones de mantenimiento  
   
-|Función|Descripción|  
+|Función|DESCRIPCIÓN|  
 |--------------|-----------------|  
 |[SccCloseProject](../extensibility/scccloseproject-function.md)|Cierra un proyecto.|  
 |[SccGetCommandOptions](../extensibility/sccgetcommandoptions-function.md)|Pide al usuario para las opciones avanzadas para el comando especificado.|  
@@ -36,7 +36,7 @@ La API de complemento de Control de código fuente proporciona las siguientes fu
   
 ## <a name="core-source-control-functions"></a>Funciones principales de Control de código fuente  
   
-|Función|Descripción|  
+|Función|DESCRIPCIÓN|  
 |--------------|-----------------|  
 |[SccAdd](../extensibility/sccadd-function.md)|Agrega una matriz de los archivos especificados por los nombres de ruta de acceso completa para el sistema de control de código fuente.|  
 |[SccAddFromScc](../extensibility/sccaddfromscc-function.md)|Permite al usuario examinar los archivos que ya están en el sistema de control de código fuente y, a continuación, realizar esas partes de los archivos del proyecto actual.|  
@@ -58,7 +58,7 @@ La API de complemento de Control de código fuente proporciona las siguientes fu
 ## <a name="functions-that-support-additional-capability-version-12-of-the-source-control-plug-in-api"></a>Funciones que admiten la capacidad adicional (versión 1.2 de la API de complemento de Control de código fuente)  
  Este grupo de funciones que define la funcionalidad adicional que se incluye en la versión 1.2 de la API de complemento de Control de código fuente. Proporcionan acceso a características de control de código fuente y las capacidades más avanzadas.  
   
-|Función|Descripción|  
+|Función|DESCRIPCIÓN|  
 |--------------|-----------------|  
 |[SccBeginBatch](../extensibility/sccbeginbatch-function.md)|Inicia una operación por lotes.|  
 |[SccCreateSubProject](../extensibility/scccreatesubproject-function.md)|Crea un subproyecto con el nombre especificado en un proyecto existente del elemento primario.|  
@@ -72,7 +72,7 @@ La API de complemento de Control de código fuente proporciona las siguientes fu
 ## <a name="functions-that-support-advanced-capability-version-13-of-the-source-control-plug-in-api"></a>Funciones que admiten funcionalidad avanzada (versión 1.3 de la API de complemento de Control de código fuente)  
  Este grupo de funciones que define la funcionalidad adicional que se incluye en la versión 1.3 de la API de complemento de Control de código fuente. Proporcionan acceso a características de control de código fuente y las capacidades más avanzadas.  
   
-|Función|Descripción|  
+|Función|DESCRIPCIÓN|  
 |--------------|-----------------|  
 |[SccAddFilesFromSCC](../extensibility/sccaddfilesfromscc-function.md)|Agrega una lista de archivos de control de código fuente al proyecto actual.|  
 |[SccBackgroundGet](../extensibility/sccbackgroundget-function.md)|Recupera una lista de archivos de control de código fuente sin una interfaz de usuario.|  

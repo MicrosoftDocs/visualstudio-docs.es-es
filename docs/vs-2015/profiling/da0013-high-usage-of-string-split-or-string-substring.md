@@ -18,11 +18,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: d6ff05e7e8cc74eacb00b5ec8ff42bd48faaa12c
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54773165"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68159196"
 ---
 # <a name="da0013-high-usage-of-stringsplit-or-stringsubstring"></a>DA0013: Uso intenso de String.Split o String.Substring
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ Id. de regla | DA0013 |
 | Mensaje | Considere la posibilidad de reducir el uso de las funciones String.Split y String.Substring. |  
 | Tipo de regla | Advertencia |  
   
-## <a name="cause"></a>Motivo  
+## <a name="cause"></a>Causa  
  Las llamadas a los métodos System.String.Split o System.String.Substring son una parte significativa de los datos de generación de perfiles. Considere la posibilidad de utilizar System.String.IndexOf o System.String.IndexOfAny si va a probar la existencia de una subcadena en una cadena.  
   
 ## <a name="rule-description"></a>Descripción de la regla  

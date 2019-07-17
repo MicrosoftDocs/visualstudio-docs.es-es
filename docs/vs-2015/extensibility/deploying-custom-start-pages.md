@@ -12,11 +12,11 @@ caps.latest.revision: 22
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 1cdd172c2960024da8b12735764161d36498c4e2
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60039147"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68162105"
 ---
 # <a name="deploying-custom-start-pages"></a>Implementación de páginas de inicio personalizadas
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,7 +41,7 @@ Puede implementar páginas principales personalizadas mediante la implementació
   
 - Mediante la adición de los archivos de la página de inicio personalizados a un proyecto de VSIX vacío. Para obtener más información, consulte [plantilla de proyecto VSIX](../extensibility/vsix-project-template.md).  
   
-- Al crear manualmente un archivo .vsix. Para obtener más información, vea [Cómo: Empaquetar manualmente una extensión (implementación VSIX)](../misc/how-to-manually-package-an-extension-vsix-deployment.md).  
+- Al crear manualmente un archivo .vsix. Para obtener más información, consulte [Cómo Empaquetar manualmente una extensión (implementación VSIX)](../misc/how-to-manually-package-an-extension-vsix-deployment.md).  
   
   Para Visual Studio reconocer una página de inicio, la `Content Element` de manifiesto de VSIX debe contener un `CustomExtension Element` que tiene el `Type` atributo establecido en `"StartPage"`. Aparece una extensión de la página de inicio que se ha instalado mediante la implementación de VSIX en el **Personalizar página principal** lista el **inicio** opciones de página como **[instalado la extensión]** *Nombre de la extensión*.  
   

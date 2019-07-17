@@ -14,13 +14,13 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 394c9adf6794ae6e6c547a46e1fe469e0c642ba8
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60096457"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68176681"
 ---
-# <a name="how-to-create-multi-project-templates"></a>Procedimiento Crear plantillas de varios proyectos
+# <a name="how-to-create-multi-project-templates"></a>Procedimiento Creación de plantillas de varios proyectos
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Las plantillas de varios proyectos actúan como contenedores de dos o más proyectos. Cuando se crea un proyecto basado en una plantilla de varios proyectos a partir del cuadro de diálogo **Nuevo proyecto**, todos los proyectos de la plantilla se agregan a la solución.  
@@ -81,11 +81,11 @@ Las plantillas de varios proyectos actúan como contenedores de dos o más proye
   
 1. Cree los proyectos que se incluirán en la plantilla de varios proyectos.  
   
-2. Cree los archivos .vstemplate de cada proyecto. Para obtener más información, vea [Cómo: Crear plantillas de proyecto](../ide/how-to-create-project-templates.md).  
+2. Cree los archivos .vstemplate de cada proyecto. Para obtener más información, consulte [Cómo Crear plantillas de proyecto](../ide/how-to-create-project-templates.md).  
   
 3. Cree un archivo raíz .vstemplate que contenga los metadatos de la plantilla de varios proyectos. Para más información, vea el primer ejemplo de la sección siguiente.  
   
-4. Seleccione los archivos y las carpetas que se incluirán en la plantilla, haga clic con el botón derecho en la selección, haga clic en **Enviar a** y, después, en **Carpeta comprimida (en zip)**. Los archivos y las carpetas se comprimen en un archivo .zip.  
+4. Seleccione los archivos y las carpetas que se incluirán en la plantilla, haga clic con el botón derecho en la selección, haga clic en **Enviar a** y, después, en **Carpeta comprimida (en zip)** . Los archivos y las carpetas se comprimen en un archivo .zip.  
   
 5. Coloque el archivo de plantilla .zip en el directorio de plantillas de proyecto de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. De forma predeterminada, este directorio es \Mis documentos\Visual Studio *Versión*\Templates\ProjectTemplates\\.  
   

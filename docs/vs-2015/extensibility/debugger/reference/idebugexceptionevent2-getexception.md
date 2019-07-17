@@ -1,5 +1,5 @@
 ---
-title: IDebugExceptionEvent2::GetException | Microsoft Docs
+title: IDebugExceptionEvent2::GetException | Documentos de Microsoft
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,11 +13,11 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: a0e19dc924101fcceb93948272fc1e83353e2815
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58996202"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68163794"
 ---
 # <a name="idebugexceptionevent2getexception"></a>IDebugExceptionEvent2::GetException
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -46,7 +46,7 @@ int GetException( 
  Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.  
   
 ## <a name="remarks"></a>Comentarios  
- [Solo en C++] El llamador es responsable de liberar cualquier cadena de la [EXCEPTION_INFO](../../../extensibility/debugger/reference/exception-info.md) estructura, así como de liberar el [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) objeto de la estructura.  
+ [C++ sólo] El llamador es responsable de liberar cualquier cadena de la [EXCEPTION_INFO](../../../extensibility/debugger/reference/exception-info.md) estructura, así como de liberar el [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) objeto de la estructura.  
   
 ## <a name="see-also"></a>Vea también  
  [IDebugExceptionEvent2](../../../extensibility/debugger/reference/idebugexceptionevent2.md)   

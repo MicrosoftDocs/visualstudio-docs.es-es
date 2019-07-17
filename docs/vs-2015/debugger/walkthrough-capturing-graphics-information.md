@@ -10,11 +10,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 9ebd0453347084d1662c6bc7837fc1e96f498fbd
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60053889"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68151470"
 ---
 # <a name="walkthrough-capturing-graphics-information"></a>Tutorial: Capturar información de gráficos
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

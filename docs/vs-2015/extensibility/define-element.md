@@ -12,11 +12,11 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 8cc543a07176f307641c53a2ef3e132881821ce7
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58986649"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68162154"
 ---
 # <a name="define-element"></a>Define (Elemento)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,10 +34,10 @@ Define un par de nombre y valor de símbolo. Este símbolo se puede evaluar medi
   
 ### <a name="attributes"></a>Atributos  
   
-|Atributo|Descripción|  
+|Atributo|DESCRIPCIÓN|  
 |---------------|-----------------|  
-|name|Obligatorio. El nombre del símbolo:<br /><br /> name="Mode"|  
-|value|Obligatorio. El valor del símbolo:<br /><br /> value="Standard"|  
+|Nombre|Necesario. El nombre del símbolo:<br /><br /> nombre = "Mode"|  
+|valor|Necesario. El valor del símbolo:<br /><br /> value="Standard"|  
 |Condición|Opcional. Para obtener más información, consulte [atributos condicionales](../extensibility/vsct-xml-schema-conditional-attributes.md).|  
   
 ### <a name="child-elements"></a>Elementos secundarios  
@@ -45,7 +45,7 @@ Define un par de nombre y valor de símbolo. Este símbolo se puede evaluar medi
   
 ### <a name="parent-elements"></a>Elementos primarios  
   
-|Elemento|Descripción|  
+|Elemento|DESCRIPCIÓN|  
 |-------------|-----------------|  
 |[CommandTable (Elemento)](../extensibility/commandtable-element.md)|Define todos los elementos que representan los comandos que un paquete VSPackage proporciona al entorno de desarrollo integrado (IDE). Por ejemplo, los elementos de menú, menús, barras de herramientas y cuadros combinados.|  
   

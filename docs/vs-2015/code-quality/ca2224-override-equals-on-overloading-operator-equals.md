@@ -17,11 +17,11 @@ author: gewarren
 ms.author: gewarren
 manager: wpickett
 ms.openlocfilehash: b4c16ed5858f18456af59c4cc26f2e0d56e6006a
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58987988"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68142467"
 ---
 # <a name="ca2224-override-equals-on-overloading-operator-equals"></a>CA2224: Invalidar Equals al sobrecargar operadores de igualdad
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ ms.locfileid: "58987988"
 |Categoría|Microsoft.Usage|
 |Cambio problemático|No trascendental|
 
-## <a name="cause"></a>Motivo
+## <a name="cause"></a>Causa
  Un tipo público implementa el operador de igualdad, pero no invalida <xref:System.Object.Equals%2A?displayProperty=fullName>.
 
 ## <a name="rule-description"></a>Descripción de la regla
@@ -49,7 +49,7 @@ ms.locfileid: "58987988"
 
 ## <a name="examples-of-inconsistent-equality-definitions"></a>Ejemplos de definiciones de igualdad incoherentes
 
-### <a name="description"></a>Descripción
+### <a name="description"></a>DESCRIPCIÓN
  El ejemplo siguiente muestra un tipo con definiciones incoherentes de igualdad. `BadPoint` Cambie el significado de igualdad proporcionando una implementación personalizada del operador de igualdad, pero no invalida <xref:System.Object.Equals%2A> para que se comporte de forma idéntica.
 
 ### <a name="code"></a>Código
@@ -88,7 +88,7 @@ ms.locfileid: "58987988"
 **b == bcopy? Sí**
 ## <a name="class-example"></a>Ejemplo de clase
 
-### <a name="description"></a>Descripción
+### <a name="description"></a>DESCRIPCIÓN
  El ejemplo siguiente muestra una clase (tipo de referencia) que infringe esta regla.
 
 ### <a name="code"></a>Código
@@ -101,7 +101,7 @@ ms.locfileid: "58987988"
 
 ## <a name="structure-example"></a>Ejemplo de estructura
 
-### <a name="description"></a>Descripción
+### <a name="description"></a>DESCRIPCIÓN
  El ejemplo siguiente muestra una estructura (tipo de valor) que infringe esta regla.
 
 ### <a name="code"></a>Código

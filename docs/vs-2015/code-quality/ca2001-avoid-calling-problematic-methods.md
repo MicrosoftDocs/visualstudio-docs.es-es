@@ -16,11 +16,11 @@ author: gewarren
 ms.author: gewarren
 manager: wpickett
 ms.openlocfilehash: 26f50580c8d29e24b25a9dad520a81d22a3dfc0c
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58996253"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68189069"
 ---
 # <a name="ca2001-avoid-calling-problematic-methods"></a>CA2001: Evitar llamar a métodos problemáticos
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ ms.locfileid: "58996253"
 |Categoría|Microsoft.Reliability|
 |Cambio problemático|Poco problemático|
 
-## <a name="cause"></a>Motivo
+## <a name="cause"></a>Causa
  Un miembro llama a un método potencialmente peligroso o problemático.
 
 ## <a name="rule-description"></a>Descripción de la regla
@@ -40,7 +40,7 @@ ms.locfileid: "58996253"
 
  Cuando un miembro llama a uno de los métodos siguientes, se produce una infracción de esta regla.
 
-|Método|Descripción|
+|Método|DESCRIPCIÓN|
 |------------|-----------------|
 |<xref:System.GC.Collect%2A?displayProperty=fullName>|Una llamada a GC. Collect puede afectar significativamente al rendimiento de la aplicación y no suele ser necesario. Para obtener más información, consulte el [Performance Tidbits de Mariani](http://go.microsoft.com/fwlink/?LinkId=169256) entrada de blog en MSDN.|
 |<xref:System.Threading.Thread.Resume%2A?displayProperty=fullName><br /><br /> <xref:System.Threading.Thread.Suspend%2A?displayProperty=fullName>|Thread.Suspend y Thread.Resume han quedado en desuso debido a un comportamiento impredecible.  Use otras clases en el <xref:System.Threading> espacio de nombres, como <xref:System.Threading.Monitor>, <xref:System.Threading.Mutex>, y <xref:System.Threading.Semaphore> para sincronizar los subprocesos o proteger recursos.|

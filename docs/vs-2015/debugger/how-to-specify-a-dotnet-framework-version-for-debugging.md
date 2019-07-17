@@ -18,13 +18,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 4c785c419ead31ad90e2b20ae7f48af778598bb6
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60042771"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68176561"
 ---
-# <a name="how-to-specify-a-net-framework-version-for-debugging"></a>Procedimiento Especificar una versión de .NET Framework para la depuración
+# <a name="how-to-specify-a-net-framework-version-for-debugging"></a>Procedimiento Especificación de una versión de .NET Framework para la depuración
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 El depurador de [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] puede depurar versiones anteriores de Microsoft [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] así como la versión actual. Si inicia una aplicación desde Visual Studio, el depurador siempre puede identificar la versión correcta de [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] para la aplicación que se está depurando. Si ya se está ejecutando la aplicación y usa **adjuntar a**, el depurador no siempre puede identificar una versión anterior de la [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]. Si esto ocurre, aparecerá un mensaje de error que indica,  
@@ -55,9 +55,9 @@ El depurador de [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] puede
   
 6. Haga doble clic en **CLRVersionForDebugging**.  
   
-7. En el cuadro **Editar cadena**, escriba el número de versión de .NET Framework en el cuadro **Valor**. Por ejemplo: V1.1.4322  
+7. En el cuadro **Editar cadena**, escriba el número de versión de .NET Framework en el cuadro **Valor**. Por ejemplo:  V1.1.4322  
   
-8. Haga clic en **Aceptar**.  
+8. Haga clic en **OK**.  
   
 9. Cierre el **Editor del Registro**.  
   

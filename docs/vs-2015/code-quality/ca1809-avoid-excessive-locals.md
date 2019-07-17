@@ -16,11 +16,11 @@ author: gewarren
 ms.author: gewarren
 manager: wpickett
 ms.openlocfilehash: 64002b9b99d1b861fa3378710cb0bb8d9219c99d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58996450"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68158004"
 ---
 # <a name="ca1809-avoid-excessive-locals"></a>CA1809: Evitar las variables locales excesivas
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ ms.locfileid: "58996450"
 |Categoría|Microsoft.Performance|
 |Cambio problemático|Poco problemático|
 
-## <a name="cause"></a>Motivo
+## <a name="cause"></a>Causa
  Un miembro contiene más de 64 variables locales, algunas de las cuales podrían ser generado por el compilador.
 
 ## <a name="rule-description"></a>Descripción de la regla

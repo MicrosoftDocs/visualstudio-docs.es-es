@@ -9,11 +9,11 @@ caps.latest.revision: 7
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 257c5944ee1939849c4163fef518abf513183998
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60095820"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68176972"
 ---
 # <a name="colors-and-styling-for-visual-studio"></a>Colores y estilos para Visual Studio
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -160,7 +160,7 @@ Dim myColor As Color = ColorTranslator.FromWin32((Integer)win32Color)
 #### <a name="helper-classes-and-methods-for-managed-code"></a>Clases auxiliares y métodos para código administrado
  Para código administrado, biblioteca de Managed Package Framework del shell (Microsoft.VisualStudio.Shell.12.0.dll) contiene un par de clases auxiliares que facilita el uso de colores con temas.
 
- Los métodos auxiliares en el **Microsoft.VisualStudio.Shell.VsColors** incluyen clases de MPF **GetThemedGDIColor()** y **GetThemedWPFColor()**. Esos métodos auxiliares devuelven el valor de color de entrada de un tema System.Drawing.Color o System.Windows.Media.Color, que se usará en formularios Windows Forms o WPF UI.
+ Los métodos auxiliares en el **Microsoft.VisualStudio.Shell.VsColors** incluyen clases de MPF **GetThemedGDIColor()** y **GetThemedWPFColor()** . Esos métodos auxiliares devuelven el valor de color de entrada de un tema System.Drawing.Color o System.Windows.Media.Color, que se usará en formularios Windows Forms o WPF UI.
 
 ```
 IVsUIShell5 shell5;
@@ -272,7 +272,7 @@ protected override void Dispose(bool disposing)
 ### <a name="system-color-set"></a>Conjunto de colores del sistema
  La tabla en [WPF Team Blog: Referencia de SystemColors](http://blogs.msdn.com/b/wpf/archive/2010/11/30/systemcolors-reference.aspx) indica el conjunto completo de los nombres de colores del sistema y los matices correspondientes aparece en cada tema.
 
- Al aplicar este conjunto de colores para la interfaz de usuario limitado *se espera que perderá detalles sutiles que estaban presentes en los temas "normales"*. Este es un ejemplo de interfaz de usuario con colores gris sutiles que sirven para distinguir las áreas en una ventana de herramientas. Cuando se combina con la misma ventana que se muestra en el modo de contraste alto, puede ver que todos los fondos son el mismo matiz y se indican los bordes de esas áreas con borde por sí solo:
+ Al aplicar este conjunto de colores para la interfaz de usuario limitado *se espera que perderá detalles sutiles que estaban presentes en los temas "normales"* . Este es un ejemplo de interfaz de usuario con colores gris sutiles que sirven para distinguir las áreas en una ventana de herramientas. Cuando se combina con la misma ventana que se muestra en el modo de contraste alto, puede ver que todos los fondos son el mismo matiz y se indican los bordes de esas áreas con borde por sí solo:
 
  ![Ventana propiedades](../../extensibility/ux-guidelines/media/030303-a-propertieswindow.png "030303 a_PropertiesWindow")
 
@@ -348,7 +348,7 @@ protected override void Dispose(bool disposing)
 
  Llenar el registro con dos valores:
 
-|Name|Tipo|Datos|Descripción|
+|NOMBRE|Type|Datos|DESCRIPCIÓN|
 |----------|----------|----------|-----------------|
 |Categoría|REG_SZ|GUID|Crea un GUID para identificar la categoría|
 |Paquete|REG_SZ|GUID|El GUID del servicio de VSPackage que admite la categoría|
@@ -360,7 +360,7 @@ protected override void Dispose(bool disposing)
 
  Llenar el registro con dos valores:
 
-|Name|Tipo|Datos|Descripción|
+|NOMBRE|Type|Datos|DESCRIPCIÓN|
 |----------|----------|----------|-----------------|
 |Categoría|REG_SZ|GUID|Crea un GUID para identificar la categoría|
 |Paquete|REG_SZ|GUID|El GUID del servicio de VSPackage que admite la categoría|

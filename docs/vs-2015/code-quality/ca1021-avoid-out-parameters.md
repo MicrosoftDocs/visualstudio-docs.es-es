@@ -16,11 +16,11 @@ author: gewarren
 ms.author: gewarren
 manager: wpickett
 ms.openlocfilehash: b52d5a97fc3c2e3a6bf5b4bb938bad9da50d3a7d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: HT
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58997006"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68144827"
 ---
 # <a name="ca1021-avoid-out-parameters"></a>CA1021: Evitar los parámetros out
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ ms.locfileid: "58997006"
 |Categoría|Microsoft.Design|
 |Cambio problemático|Problemático|
 
-## <a name="cause"></a>Motivo
+## <a name="cause"></a>Causa
  Un método público o protegido en un tipo público tiene un `out` parámetro.
 
 ## <a name="rule-description"></a>Descripción de la regla
@@ -84,7 +84,7 @@ ms.locfileid: "58997006"
 **ABCDE 12345**
 ## <a name="try-pattern-methods"></a>Pruebe los métodos de patrón
 
-### <a name="description"></a>Descripción
+### <a name="description"></a>DESCRIPCIÓN
  Los métodos que implementan el **intente\<algo >** modelo, como <xref:System.Int32.TryParse%2A?displayProperty=fullName>, no producir esta infracción. El ejemplo siguiente muestra una estructura (tipo de valor) que implementa el <xref:System.Int32.TryParse%2A?displayProperty=fullName> método.
 
 ### <a name="code"></a>Código
