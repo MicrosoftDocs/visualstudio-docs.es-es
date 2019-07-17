@@ -11,11 +11,11 @@ caps.latest.revision: 9
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 8c106a04e809e772ac3b8a77192fb2f101161e9c
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58998247"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68194236"
 ---
 # <a name="modifying-the-isolated-shell-by-using-the-vsct-file"></a>Modificación del Shell aislado mediante el uso de la. Archivo de Vsct
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,7 +44,7 @@ El proyecto de interfaz de usuario para un proyecto de Visual Studio shell aisla
 ## <a name="referenced-files"></a>Archivos que se hace referencia  
  El archivo .vsct predeterminado para una aplicación hace referencia a los siguientes archivos. Estos archivos se encuentran en el subdirectorio \VisualStudioIntegration\Common\Inc\ del directorio de instalación del SDK de Visual Studio.  
   
-|Archivo|Descripción|  
+|Archivo|DESCRIPCIÓN|  
 |----------|-----------------|  
 |wbids.h|Identidades de la interfaz de usuario para el paquete Web examinar.|  
 |AppIDCmdUsed.vsct|Tabla de comandos para los elementos principales de la interfaz de usuario de Visual Studio.|  
