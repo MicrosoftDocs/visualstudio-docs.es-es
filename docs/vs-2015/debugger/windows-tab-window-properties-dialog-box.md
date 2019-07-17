@@ -12,11 +12,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: c474a85499b221a3ee1d5dfd6befb872f6710f63
-ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "58999784"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68159691"
 ---
 # <a name="windows-tab-window-properties-dialog-box"></a>Pestaña Ventanas (Cuadro de diálogo Propiedades de la ventana)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,7 +25,7 @@ Use la **Windows** ficha para mostrar información sobre windows relacionadas co
   
  Las siguientes opciones están disponibles en el **Windows** pestaña:  
   
-|Entrada|Descripción|  
+|Entrada|DESCRIPCIÓN|  
 |-----------|-----------------|  
 |**Ventana siguiente**|El identificador de la siguiente ventana relacionada en la misma secuencia (orden Z) se muestra en la vista de árbol de la ventana ("none" Si no hay ninguna ventana siguiente). Elija esta entrada para ver las propiedades de la siguiente ventana.|  
 |**Ventana anterior**|El identificador de la ventana del mismo nivel anterior en la misma secuencia (orden Z) se muestra en la vista de árbol de la ventana ("none" Si no hay ninguna ventana anterior). Elija esta entrada para ver las propiedades de la ventana anterior.|  

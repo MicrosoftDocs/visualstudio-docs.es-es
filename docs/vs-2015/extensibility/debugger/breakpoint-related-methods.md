@@ -12,11 +12,11 @@ caps.latest.revision: 9
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 47ba1529521fdce042512a38d32ad2ca2eb3cb82
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60085564"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68146432"
 ---
 # <a name="breakpoint-related-methods"></a>Métodos relacionados con el punto de interrupción
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -27,7 +27,7 @@ Un motor de depuración (DE) debe admitir la configuración de puntos de interru
   
      Solicita a través de la interfaz de usuario y enlazar correctamente a una ubicación del código especificado  
   
-- Pendiente  
+- Pending  
   
      Solicita a través de la interfaz de usuario pero no está enlazado a actual aún instrucciones  
   
@@ -38,7 +38,7 @@ Un motor de depuración (DE) debe admitir la configuración de puntos de interru
   
  Creación y uso de puntos de interrupción pendientes requieren la implementación de la [IDebugEngine2::CreatePendingBreakpoint](../../extensibility/debugger/reference/idebugengine2-creatependingbreakpoint.md) método, así como los métodos siguientes de [IDebugPendingBreakpoint2](../../extensibility/debugger/reference/idebugpendingbreakpoint2.md) interfaces.  
   
-|Método|Descripción|  
+|Método|DESCRIPCIÓN|  
 |------------|-----------------|  
 |[CanBind](../../extensibility/debugger/reference/idebugpendingbreakpoint2-canbind.md)|Determina si un pendiente de punto de interrupción, puede enlazar a una ubicación del código.|  
 |[Bind](../../extensibility/debugger/reference/idebugpendingbreakpoint2-bind.md)|Enlaza un especificado pendiente de punto de interrupción a una o varias ubicaciones de código.|  
@@ -53,7 +53,7 @@ Un motor de depuración (DE) debe admitir la configuración de puntos de interru
   
  Pendiente de los puntos de interrupción que se enlazan a un código ubicación requieren la implementación de las siguientes acciones [IDebugBoundBreakpoint2](../../extensibility/debugger/reference/idebugboundbreakpoint2.md) métodos.  
   
-|Método|Descripción|  
+|Método|DESCRIPCIÓN|  
 |------------|-----------------|  
 |[GetPendingBreakpoint](../../extensibility/debugger/reference/idebugboundbreakpoint2-getpendingbreakpoint.md)|Obtiene el punto de interrupción pendiente que contiene un punto de interrupción.|  
 |[GetState](../../extensibility/debugger/reference/idebugboundbreakpoint2-getstate.md)|Obtiene el estado de un punto de interrupción enlazado.|  
@@ -63,21 +63,21 @@ Un motor de depuración (DE) debe admitir la configuración de puntos de interru
   
  Resolución y solicitar información requieren la implementación de las siguientes acciones [IDebugBreakpointResolution2](../../extensibility/debugger/reference/idebugbreakpointresolution2.md) métodos.  
   
-|Método|Descripción|  
+|Método|DESCRIPCIÓN|  
 |------------|-----------------|  
 |[GetBreakpointType](../../extensibility/debugger/reference/idebugbreakpointresolution2-getbreakpointtype.md)|Obtiene el tipo del punto de interrupción representado por una resolución.|  
 |[GetResolutionInfo](../../extensibility/debugger/reference/idebugbreakpointresolution2-getresolutioninfo.md)|Obtiene la información de resolución de punto de interrupción que describe un punto de interrupción.|  
   
  Resolución de errores que pueden producirse durante el enlace requiere la implementación de las siguientes acciones [IDebugErrorBreakpoint2](../../extensibility/debugger/reference/idebugerrorbreakpoint2.md) métodos.  
   
-|Método|Descripción|  
+|Método|DESCRIPCIÓN|  
 |------------|-----------------|  
 |[GetPendingBreakpoint](../../extensibility/debugger/reference/idebugerrorbreakpoint2-getpendingbreakpoint.md)|Obtiene el punto de interrupción pendiente que contiene un punto de interrupción de error.|  
 |[GetBreakpointResolution](../../extensibility/debugger/reference/idebugerrorbreakpoint2-getbreakpointresolution.md)|Obtiene la resolución de errores de punto de interrupción que describe un punto de interrupción de error.|  
   
  Resolución de errores que pueden producirse durante el enlace también requiere los siguientes métodos de [IDebugErrorBreakpointResolution2](../../extensibility/debugger/reference/idebugerrorbreakpointresolution2.md).  
   
-|Método|Descripción|  
+|Método|DESCRIPCIÓN|  
 |------------|-----------------|  
 |[GetBreakpointType](../../extensibility/debugger/reference/idebugerrorbreakpointresolution2-getbreakpointtype.md)|Obtiene el tipo de punto de interrupción.|  
 |[GetResolutionInfo](../../extensibility/debugger/reference/idebugerrorbreakpointresolution2-getresolutioninfo.md)|Obtiene la información de resolución de un punto de interrupción.|  

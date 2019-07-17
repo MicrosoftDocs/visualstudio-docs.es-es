@@ -1,9 +1,9 @@
 ---
 ms.openlocfilehash: 57e6ed360e1c43a35d42d735d65fee26956052c8
-ms.sourcegitcommit: b468d71052a1b8a697f477ab23a3644de139f1e9
+ms.sourcegitcommit: 748d9cd7328a30f8c80ce42198a94a4b5e869f26
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/19/2019
-ms.locfileid: "67258388"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "68194420"
 ---
 Programa Visual Studio Industry Partner

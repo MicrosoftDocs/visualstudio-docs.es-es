@@ -15,11 +15,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: a8fc6c951f1da3fc37fe8e1189a3ec8de9609a48
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60069602"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68144650"
 ---
 # <a name="how-to-debug-aspnet-based-workflows-legacy"></a>Procedimiento Depurar los flujos de trabajo basados en ASP.NET (heredado)
 En este tema se describe cómo depurar aplicaciones [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] basadas en [!INCLUDE[wf](../includes/wf-md.md)] que tienen como destino [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] o [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)] en [!INCLUDE[wfd1](../includes/wfd1-md.md)] heredado.  
@@ -46,7 +46,7 @@ En este tema se describe cómo depurar aplicaciones [!INCLUDE[vstecasp](../inclu
   
 7. Seleccione **depurar estos tipos de código** y seleccione **flujo de trabajo**.  
   
-8. Haga clic en **Aceptar**.  
+8. Haga clic en **OK**.  
   
 9. Haga clic en **Adjuntar**.  
   

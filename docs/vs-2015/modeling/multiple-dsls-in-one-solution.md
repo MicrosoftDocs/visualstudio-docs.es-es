@@ -10,11 +10,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: d70794dddc02605c76c1af330a49af4be917c0e3
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60050145"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68159014"
 ---
 # <a name="multiple-dsls-in-one-solution"></a>Varios DSL en una solución
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,7 +27,7 @@ Puede empaquetar varios DSL como parte de una única solución para que se insta
   
 1. Cree dos o más soluciones de DSL y un proyecto de VSIX, y agregue todos los proyectos a una única solución.  
   
-   - Para crear un nuevo proyecto de VSIX: En el **nuevo proyecto** cuadro de diálogo, seleccione **Visual C#**, **extensibilidad**, **proyecto VSIX**.  
+   - Para crear un nuevo proyecto de VSIX: En el **nuevo proyecto** cuadro de diálogo, seleccione **Visual C#** , **extensibilidad**, **proyecto VSIX**.  
   
    - Cree dos o más soluciones de DSL en el directorio de soluciones VSIX.  
   
@@ -47,7 +47,7 @@ Puede empaquetar varios DSL como parte de una única solución para que se insta
   
 2. Combine los manifiestos VSIX de los DSL:  
   
-   1. Abra _Suproyectovsix_**\source.extension.manifest**.  
+   1. Abra _Suproyectovsix_ **\source.extension.manifest**.  
   
    2. Para cada DSL, elija **agregar contenido** y agregue:  
   
@@ -59,7 +59,7 @@ Puede empaquetar varios DSL como parte de una única solución para que se insta
   
 3. Compile la solución.  
   
-   El VSIX resultante instalará ambos DSL. Puede probarlos mediante F5 o implementar _Suproyectovsix_**\bin\Debug\\\*.vsix**.  
+   El VSIX resultante instalará ambos DSL. Puede probarlos mediante F5 o implementar _Suproyectovsix_ **\bin\Debug\\\*.vsix**.  
   
 ## <a name="see-also"></a>Vea también  
  [Integrar modelos utilizando Modelbus de Visual Studio](../modeling/integrating-models-by-using-visual-studio-modelbus.md)   

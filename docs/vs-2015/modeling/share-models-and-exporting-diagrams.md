@@ -13,11 +13,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 4d2fd2af8a68ee72ec26b52a4c26a829d94376ef
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58998154"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68199842"
 ---
 # <a name="share-models-and-exporting-diagrams"></a>Compartir modelos y exportar diagramas
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -51,7 +51,7 @@ En Visual Studio, puede compartir modelos y diagramas con sus compañeros de div
   
 ## <a name="related-topics"></a>Temas relacionados  
   
-|Título|Descripción|  
+|Título|DESCRIPCIÓN|  
 |-----------|-----------------|  
 |[Administrar modelos y diagramas con control de versiones](../modeling/manage-models-and-diagrams-under-version-control.md)|Los usuarios de Visual Studio pueden trabajar en un modelo compartido.|  
 |[Estructurar la solución de modelado](../modeling/structure-your-modeling-solution.md)|Uso compartido de los modelos en un proyecto de tamaño grande o mediano.|  

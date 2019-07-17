@@ -21,11 +21,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 073fc84d15cb31b4f7a4cc635524ab08a724911e
-ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/27/2019
-ms.locfileid: "59002300"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68147842"
 ---
 # <a name="how-can-i-debug-an-access-violation"></a>Cómo depurar una infracción de acceso
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ ms.locfileid: "59002300"
 Descripción del problema  
  El programa produce una infracción de acceso. ¿Cómo se puede depurar este error?  
   
-## <a name="solution"></a>Soluciones  
+## <a name="solution"></a>Solución  
  Si se produce una infracción de acceso en una línea de código que desreferencia varios punteros, puede ser difícil averiguar qué puntero produjo la infracción de acceso. A partir de Visual Studio 2015 Update 1, el cuadro de diálogo de excepción ahora indica explícitamente el puntero que produjo la infracción de acceso.  
   
  Por ejemplo, con el siguiente código, debería obtener una infracción de acceso:  

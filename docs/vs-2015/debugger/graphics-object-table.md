@@ -14,11 +14,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 86279ff4e1721007814163787bd9ed06edc9fb13
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58999413"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68161168"
 ---
 # <a name="graphics-object-table"></a>Tabla de objetos gráficos
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,10 +37,10 @@ La Tabla de objetos gráficos en el análisis de gráficos de Visual Studio le a
 ### <a name="graphics-object-table-format"></a>Formato de la Tabla de objetos gráficos  
  La Tabla de objetos gráficos muestra los objetos y recursos de Direct3D que admiten el fotograma asociado al evento seleccionado; por ejemplo, objetos de estado, búferes, sombreadores, texturas y otros recursos. Los objetos que se crearon en un fotograma anterior pero que no se usan durante el fotograma capturado se omiten de la tabla de objetos. Los objetos que se han destruido en eventos anteriores durante el fotograma capturado se omiten en los eventos posteriores. Los objetos que no se establecen en D3D10Device o D3D11DeviceContext aparecen como texto en gris. Los objetos se muestran en un formato de tabla.  
   
-|Columna|Descripción|  
+|Columna|DESCRIPCIÓN|  
 |------------|-----------------|  
 |**Identificador**|Identificador de objeto.|  
-|**Name**|Información específica de la aplicación que se ha establecido en el objeto mediante la función `SetPrivateData` de Direct3D (normalmente para proporcionar información de identificación adicional sobre un objeto).|  
+|**Nombre**|Información específica de la aplicación que se ha establecido en el objeto mediante la función `SetPrivateData` de Direct3D (normalmente para proporcionar información de identificación adicional sobre un objeto).|  
 |**Type**|Tipo del objeto.|  
 |**Active**|Muestra "*" para un objeto que se estableció en D3D10Device o D3D11DeviceContext durante el fotograma capturado.<br /><br /> Esto corresponde a los objetos que se muestran como texto gris, pero proporciona una entrada de columna que se puede utilizar como ayuda para ordenar la tabla de objetos.|  
 |**Size**|Tamaño del objeto en bytes.|  
@@ -79,7 +79,7 @@ La Tabla de objetos gráficos en el análisis de gráficos de Visual Studio le a
   
  También puede alternar la casilla **Mostrar desplazamientos** para mostrar u ocultar el desplazamiento de cada elemento en el búfer.  
   
-|Tipo|Descripción|  
+|Type|DESCRIPCIÓN|  
 |----------|-----------------|  
 |**float**|Valor de punto flotante de 32 bits.|  
 |**float2**|Vector que contiene dos valores de punto flotante de 32 bits.|  

@@ -12,11 +12,11 @@ author: gewarren
 ms.author: gewarren
 manager: wpickett
 ms.openlocfilehash: 27593a450f7c2a1b34c1c84bc1d4e7ea5bb5919f
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60091881"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68142252"
 ---
 # <a name="how-to-enforce-maintainable-code-with-a-code-analysis-check-in-policy"></a>Procedimiento Exigir código de mantenimiento con una directiva de protección de análisis de código
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -57,7 +57,7 @@ Los desarrolladores pueden usar la herramienta de métricas de código para medi
   
     - Además, si desea que una infracción de regla para evitar que una compilación, seleccione el **Tratar advertencia como un Error** casilla de verificación situada junto a la descripción de la regla.  
   
-3. Haga clic en **Aceptar**. Ahora, la nueva directiva de protección se aplica a las protecciones futuras.  
+3. Haga clic en **OK**. Ahora, la nueva directiva de protección se aplica a las protecciones futuras.  
   
 ## <a name="see-also"></a>Vea también  
  [Valores de las métricas de código](../code-quality/code-metrics-values.md)   

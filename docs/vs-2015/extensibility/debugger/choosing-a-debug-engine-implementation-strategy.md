@@ -11,11 +11,11 @@ caps.latest.revision: 7
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 6b03e69892da217d84d56b39b7df61784907d2b0
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60117699"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68183471"
 ---
 # <a name="choosing-a-debug-engine-implementation-strategy"></a>Elección de una estrategia de implementación del motor de depuración
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

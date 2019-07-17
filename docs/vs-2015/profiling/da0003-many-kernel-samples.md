@@ -15,11 +15,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: ad9a0671595d4628932ff4f2db41a137e060c4d1
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60076490"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68158707"
 ---
 # <a name="da0003-many-kernel-samples"></a>DA0003: Muchas muestras de kernel
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,7 +30,7 @@ Id. de regla | DA0003 |
 | Mensaje | Tener una proporción elevada de muestras en modo Kernel. Esto podría indicar un gran volumen de actividad de E/S o una alta tasa de cambio de contexto. Considere la posibilidad de volver a generar perfiles para la aplicación mediante el modo Instrumentación.|  
 | Tipo de regla | Información |  
   
-## <a name="cause"></a>Motivo  
+## <a name="cause"></a>Causa  
  Una proporción considerable de las muestras de la pila de llamadas recopiladas para la aplicación se estaban ejecutando en modo kernel. Considere la posibilidad de generar perfiles para la aplicación mediante un método de generación de perfiles diferente.  
   
 ## <a name="rule-description"></a>Descripción de la regla  

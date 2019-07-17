@@ -13,11 +13,11 @@ caps.latest.revision: 14
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: baa6059a1668be5507994921cb96ac3ed1cfd5fe
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58999152"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68200013"
 ---
 # <a name="sccquerychanges-function"></a>SccQueryChanges (Función)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -55,7 +55,7 @@ SCCRTN SccQueryChanges(
 ## <a name="return-value"></a>Valor devuelto  
  La implementación de complemento de control de origen de esta función debe devolver uno de los valores siguientes:  
   
-|Valor|Descripción|  
+|Value|DESCRIPCIÓN|  
 |-----------|-----------------|  
 |SCC_OK|El proceso de consulta se completó correctamente.|  
 |SCC_E_PROJNOTOPEN|No se ha abierto el proyecto en control de código fuente.|  
