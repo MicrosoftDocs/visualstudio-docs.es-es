@@ -10,11 +10,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 110f380f7450d611de5786fb865bdee8e64195f6
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54764176"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68184988"
 ---
 # <a name="parameter-nodes"></a>Nodos de parámetros
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -23,14 +23,14 @@ En el Diseñador de sombras, los nodos de parámetro representan entradas al som
   
 ## <a name="parameter-node-reference"></a>Referencia de nodos de parámetro  
   
-|Nodo|Detalles|Propiedades|  
+|Nodo|Detalles|Properties (Propiedades)|  
 |----------|-------------|----------------|  
-|**Posición global de la cámara**|Posición de la cámara en el espacio global.<br /><br /> **Salida:**<br /><br /> `Output`: `float4`<br /> Posición de la cámara.|Ninguna|  
-|**Dirección de la luz**|El vector que define la dirección en la que se proyecta la luz desde una fuente de luz en el espacio global.<br /><br /> Se puede usar para calcular las contribuciones de reflexión especular y de iluminación en el espacio global.<br /><br /> **Salida:**<br /><br /> `Output`: `float3`<br /> El vector desde el píxel actual a una fuente de luz.|Ninguna|  
+|**Posición global de la cámara**|Posición de la cámara en el espacio global.<br /><br /> **Salida:**<br /><br /> `Output`: `float4`<br /> Posición de la cámara.|None|  
+|**Dirección de la luz**|El vector que define la dirección en la que se proyecta la luz desde una fuente de luz en el espacio global.<br /><br /> Se puede usar para calcular las contribuciones de reflexión especular y de iluminación en el espacio global.<br /><br /> **Salida:**<br /><br /> `Output`: `float3`<br /> El vector desde el píxel actual a una fuente de luz.|None|  
 |**Color ambiental de material**|La contribución de color difuso del píxel actual que se atribuye a la iluminación indirecta.<br /><br /> El color difuso de un píxel simula cómo interactúa la iluminación con superficies desiguales. Se puede usar el parámetro Color ambiental de material para determinar aproximadamente cómo contribuye la iluminación indirecta a la apariencia de un objeto en el mundo real.<br /><br /> **Salida:**<br /><br /> `Output`: `float4`<br /> El color difuso del píxel actual debido a la iluminación indirecta o ambiental.|**Acceso**<br /> **Público** para que esta propiedad se pueda establecer desde el Editor de modelos. De lo contrario, **Privado**.<br /><br /> **Valor**<br /> El color difuso del píxel actual debido a la iluminación indirecta o ambiental.|  
 |**Color difuso de material**|Un color que describe cómo difumina la iluminación directa el píxel actual.<br /><br /> El color difuso de un píxel simula cómo interactúa la iluminación con superficies desiguales. Se puede usar el parámetro Color difuso de material para cambiar cómo difumina el píxel actual la iluminación directa, es decir, la luz direccional, puntual y focal.<br /><br /> **Salida:**<br /><br /> `Output`: `float4`<br /> Un color que describe cómo difumina la iluminación directa el píxel actual.|**Acceso**<br /> **Público** para que esta propiedad se pueda establecer desde el Editor de modelos. De lo contrario, **Privado**.<br /><br /> **Valor**<br /> Un color que describe cómo difumina la iluminación directa el píxel actual.|  
 |**Color emisor de luz de material**|La contribución de color del píxel actual que se atribuye a la iluminación que se le proporciona.<br /><br /> Se puede usar para simular un objeto resplandeciente, es decir, aquel que proporciona su propia luz. Esta luz no afecta a otros objetos.<br /><br /> **Salida:**<br /><br /> `Output`: `float4`<br /> La contribución de color del píxel actual debida a la iluminación propia proporcionada.|**Acceso**<br /> **Público** para que esta propiedad se pueda establecer desde el Editor de modelos. De lo contrario, **Privado**.<br /><br /> **Valor**<br /> La contribución de color del píxel actual debida a la iluminación propia proporcionada.|  
 |**Reflexión especular de material**|Un color que describe cómo refleja la iluminación directa el píxel actual.<br /><br /> El color especular de un píxel simula cómo interactúa la iluminación con superficies suaves y reflectantes. Se puede usar el parámetro Reflexión especular de material para cambiar cómo refleja el píxel actual la iluminación directa, es decir, la luz direccional, puntual y focal.<br /><br /> **Salida:**<br /><br /> `Output`: `float4`<br /> Un color que describe cómo refleja la iluminación directa el píxel actual.|**Acceso**<br /> **Público** para que esta propiedad se pueda establecer desde el Editor de modelos. De lo contrario, **Privado**.<br /><br /> **Valor**<br /> Un color que describe cómo refleja la iluminación directa el píxel actual.|  
 |**Potencia especular de material**|Valor escalar que describe la intensidad de los reflejos especulares.<br /><br /> Cuanto mayor sea la potencia especular, más intensidad y alcance tiene la iluminación especular.<br /><br /> **Salida:**<br /><br /> `Output`: `float`<br /> Un término exponencial que describe la intensidad de los reflejos especulares en el píxel actual.|**Acceso**<br /> **Público** para que esta propiedad se pueda establecer desde el Editor de modelos. De lo contrario, **Privado**.<br /><br /> **Valor**<br /> El exponente que define la intensidad de los reflejos especulares en el píxel actual.|  
-|**Tiempo normalizado**|El tiempo en segundos, normalizado en el intervalo [0, 1], de forma que cuando el tiempo llega a 1, se restablece en 0.<br /><br /> Se puede usar como parámetro en los cálculos del sombreador, por ejemplo, para animar coordenadas de textura, valores de color u otros atributos.<br /><br /> **Salida:**<br /><br /> `Output`: `float`<br /> El tiempo normalizado, en segundos.|Ninguna|  
-|**Tiempo**|Tiempo en segundos.<br /><br /> Se puede usar como parámetro en los cálculos del sombreador, por ejemplo, para animar coordenadas de textura, valores de color u otros atributos.<br /><br /> **Salida:**<br /><br /> `Output`: `float`<br /> El tiempo, en segundos.|Ninguna|
+|**Tiempo normalizado**|El tiempo en segundos, normalizado en el intervalo [0, 1], de forma que cuando el tiempo llega a 1, se restablece en 0.<br /><br /> Se puede usar como parámetro en los cálculos del sombreador, por ejemplo, para animar coordenadas de textura, valores de color u otros atributos.<br /><br /> **Salida:**<br /><br /> `Output`: `float`<br /> El tiempo normalizado, en segundos.|None|  
+|**Tiempo**|Tiempo en segundos.<br /><br /> Se puede usar como parámetro en los cálculos del sombreador, por ejemplo, para animar coordenadas de textura, valores de color u otros atributos.<br /><br /> **Salida:**<br /><br /> `Output`: `float`<br /> El tiempo, en segundos.|None|

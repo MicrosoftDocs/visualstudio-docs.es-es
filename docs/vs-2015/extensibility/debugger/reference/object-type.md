@@ -13,11 +13,11 @@ caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: fc23045fa70554133eba3a7f1326681bf31ea379
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58986849"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68205138"
 ---
 # <a name="objecttype"></a>OBJECT_TYPE
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -117,7 +117,7 @@ public enum enum_OBJECT_TYPE { 
  Se pasa como argumento a la [CreatePrimitiveObject](../../../extensibility/debugger/reference/idebugfunctionobject-createprimitiveobject.md) y [CreateArrayObject](../../../extensibility/debugger/reference/idebugfunctionobject-createarrayobject.md) métodos.  
   
 ## <a name="requirements"></a>Requisitos  
- Header: ee.h  
+ Encabezado: ee.h  
   
  Espacio de nombres:  Microsoft.VisualStudio.Debugger.Interop  
   

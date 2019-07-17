@@ -16,11 +16,11 @@ author: gewarren
 ms.author: gewarren
 manager: wpickett
 ms.openlocfilehash: 32bf1596e4994f3cfdb2df179bb5d7f1a743f289
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58987054"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68201653"
 ---
 # <a name="ca1823-avoid-unused-private-fields"></a>CA1823: Evitar los campos privados sin utilizar
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ ms.locfileid: "58987054"
 |Categoría|Microsoft.Performance|
 |Cambio problemático|Poco problemático|
 
-## <a name="cause"></a>Motivo
+## <a name="cause"></a>Causa
  Esta regla se comunica cuando un campo privado en el código existe pero no se usa en cualquier ruta de acceso del código.
 
 ## <a name="rule-description"></a>Descripción de la regla

@@ -1,5 +1,5 @@
 ---
-title: Filtrar Vista de mensajes de control | Documentos de Microsoft
+title: Procedimiento Vista de mensajes de control | Documentos de Microsoft
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -13,13 +13,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 66e7b546b507f1f96dbd4aa4a62b4db501eff2fc
-ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "58988120"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68185159"
 ---
-# <a name="how-to-control-messages-view"></a>Filtrar Controlar la vista Mensajes
+# <a name="how-to-control-messages-view"></a>Procedimiento Controlar la vista Mensajes
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Con Spy ++, tiene un gran control sobre el contenido de un [vista mensajes](../debugger/messages-view.md) ventana. También puede [iniciar y detener](../debugger/how-to-start-and-stop-the-message-log-display.md) mostrando los mensajes en cualquier momento y se puede especificar:  

@@ -13,11 +13,11 @@ caps.latest.revision: 29
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: c7154395be43f6a0b07e9f2557d94fa594ef5ba4
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59647206"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68150787"
 ---
 # <a name="shipping-visual-studio-extensions"></a>Suministro de extensiones de Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -51,7 +51,7 @@ Cuando haya terminado de desarrollar la extensión, puede instalarla en otros eq
 
 ## <a name="related-topics"></a>Temas relacionados
 
-|Título|Descripción|
+|Título|DESCRIPCIÓN|
 |-----------|-----------------|
 |[Introducción a la plantilla de proyecto VSIX](../extensibility/getting-started-with-the-vsix-project-template.md)|Explica cómo usar la plantilla de proyecto VSIX para instalar una plantilla de proyecto personalizado.|
 |[Anatomía de un paquete VSIX](../extensibility/anatomy-of-a-vsix-package.md)|Describe los componentes de un paquete VSIX.|

@@ -14,11 +14,11 @@ author: gewarren
 ms.author: gewarren
 manager: wpickett
 ms.openlocfilehash: 26d8412318efd2292fd0f5a0f0ef52fe36c7d06c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: HT
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60116295"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68201145"
 ---
 # <a name="walkthrough-analyzing-managed-code-for-code-defects"></a>Tutorial: Analizar código administrado en busca de defectos de código
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ En este tutorial, analizar un proyecto administrado en previsión de defectos de
   
 ## <a name="prerequisites"></a>Requisitos previos  
   
-- [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)].  
+- [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)]  
   
 ## <a name="create-a-class-library"></a>Crear una biblioteca de clases  
   

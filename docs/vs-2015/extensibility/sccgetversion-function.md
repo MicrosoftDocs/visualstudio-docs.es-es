@@ -13,11 +13,11 @@ caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: a4e548f1f2b82a97206cdf41174a8c1c7d61e885
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58988313"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68200048"
 ---
 # <a name="sccgetversion-function"></a>SccGetVersion (Función)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,7 +36,7 @@ LONG SccGetVersion(void);
 ## <a name="return-value"></a>Valor devuelto  
  Un `LONG` tipo de datos que contiene el número de versión de la API de complemento de Control de origen compatibles:  
   
-|WORD|Descripción|  
+|WORD|DESCRIPCIÓN|  
 |----------|-----------------|  
 |HIWORD|Versión principal|  
 |LOWORD|Versión secundaria|  

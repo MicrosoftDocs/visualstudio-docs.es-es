@@ -15,11 +15,11 @@ author: mikeblome
 ms.author: mblome
 manager: jillfra
 ms.openlocfilehash: ba14fdbc23968fcaf10355f73517ab6cd54f8797
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58988511"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68142182"
 ---
 # <a name="specifying-when-and-where-an-annotation-applies"></a>Especificar cuándo y dónde se aplica una anotación
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,7 +29,7 @@ Cuando una anotación es condicional, puede requerir otras anotaciones para espe
 ## <a name="structural-annotations"></a>Anotaciones estructurales  
  Para controlar cuándo y dónde se aplican las anotaciones, utilice las siguientes anotaciones estructurales.  
   
-|Anotación|Descripción|  
+|Anotación|DESCRIPCIÓN|  
 |----------------|-----------------|  
 |`_At_(expr, anno-list)`|`expr` es una expresión que da como resultado un valor l. Las anotaciones en `anno-list` se aplican al objeto que recibe el nombre de `expr`. Para cada anotación en `anno-list`, `expr` se interpreta en condición previa si la anotación se interpreta en condición previa y en if condición posterior se interpreta la anotación en la condición posterior.|  
 |`_At_buffer_(expr, iter, elem-count, anno-list)`|`expr` es una expresión que da como resultado un valor l. Las anotaciones en `anno-list` se aplican al objeto que recibe el nombre de `expr`. Para cada anotación en `anno-list`, `expr` se interpreta en condición previa si la anotación se interpreta en la condición previa y en if condición posterior se interpreta la anotación en la condición posterior.<br /><br /> `iter` es el nombre de una variable de ámbito de la anotación (incluye `anno-list`). `iter` tiene un tipo implícito `long`. Las variables con el mismo nombre en cualquier ámbito de inclusión están ocultos de la evaluación.<br /><br /> `elem-count` es una expresión que se evalúa como un entero.|  

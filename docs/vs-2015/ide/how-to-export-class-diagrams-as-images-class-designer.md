@@ -14,11 +14,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: c859e4488a4e1ef6d843ffe27f5b342ea1a92e0b
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60049963"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68182894"
 ---
 # <a name="how-to-export-class-diagrams-as-images-class-designer"></a>Procedimiento Exportar los diagramas de clases como imágenes (Diseñador de clases)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,5 +38,5 @@ Para exportar un diagrama de clase creado a partir de código del proyecto, guá
      Para actualizar automáticamente las imágenes exportadas que están vinculadas a otros documentos, exporte de nuevo el diagrama en Visual Studio.  
   
 ## <a name="see-also"></a>Vea también  
- [Cómo: Imprimir diagramas de clases (Diseñador de clases)](../ide/how-to-print-class-diagrams-class-designer.md)   
+ [Procedimientos: Imprimir diagramas de clases (Diseñador de clases)](../ide/how-to-print-class-diagrams-class-designer.md)   
  [Trabajar con diagramas de clases (Diseñador de clases)](../ide/working-with-class-diagrams-class-designer.md)

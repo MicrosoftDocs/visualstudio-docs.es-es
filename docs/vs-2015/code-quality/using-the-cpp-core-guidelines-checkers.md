@@ -10,11 +10,11 @@ author: mikeblome
 ms.author: mblome
 manager: jillfra
 ms.openlocfilehash: c0fb306cb7326464af847f09b319e8e702c76831
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58998102"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68142087"
 ---
 # <a name="using-the-c-core-guidelines-checkers"></a>Usar los comprobadores de C++ Core Guidelines
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -51,7 +51,7 @@ C++ Core Guidelines son un conjunto de directrices, reglas y procedimientos reco
   
    ![Página de propiedades de configuración de extensiones de análisis de código](../code-quality/media/cppcorecheck-codeanalysis-extensions.png "CPPCoreCheck_CodeAnalysis_Extensions")  
   
-   Para habilitar o deshabilitar los conjuntos de reglas de C++ Core Check, abra el **páginas de propiedades** cuadro de diálogo para el proyecto. En **propiedades de configuración**, expanda **análisis de código**, **extensiones**. En la lista desplegable junto al control **habilitar C++ Core Check (lanzamiento)** o **habilitar C++ Core Check (Experimental)**, elija **Sí** o **No**. Elija **Aceptar** o **aplicar** para guardar los cambios.  
+   Para habilitar o deshabilitar los conjuntos de reglas de C++ Core Check, abra el **páginas de propiedades** cuadro de diálogo para el proyecto. En **propiedades de configuración**, expanda **análisis de código**, **extensiones**. En la lista desplegable junto al control **habilitar C++ Core Check (lanzamiento)** o **habilitar C++ Core Check (Experimental)** , elija **Sí** o **No**. Elija **Aceptar** o **aplicar** para guardar los cambios.  
   
 ## <a name="check-types-bounds-and-lifetimes"></a>Compruebe los tipos, límites y duraciones  
  El paquete de C++ Core Check contiene actualmente los comprobadores de la [seguridad de tipos](http://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#SS-type), [delimita seguridad](http://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#SS-bounds), y [seguridad duración](http://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#SS-lifetime) perfiles.  
@@ -90,15 +90,15 @@ int main()
   **1 >---compilación iniciada: Proyecto: CoreCheckExample, configuración: Depurar Win32:**  
 **----**  
 **1 > CoreCheckExample.cpp**  
-**1>  CoreCheckExample.vcxproj -> C:\Users\username\documents\visual studio 2015\P**  
+**1 > CoreCheckExample.vcxproj -> C:\Users\username\documents\visual studio 2015\P**  
 **rojects\CoreCheckExample\Debug\CoreCheckExample.exe**  
-**1>  CoreCheckExample.vcxproj -> C:\Users\username\documents\visual studio 2015\P**  
-**rojects\CoreCheckExample\Debug\CoreCheckExample.pdb (Full PDB)**  
-**c:\users\username\documents\visual studio 2015\projects\corecheckexample\coreche**  
+**1 > CoreCheckExample.vcxproj -> C:\Users\username\documents\visual studio 2015\P**  
+**rojects\CoreCheckExample\Debug\CoreCheckExample.pdb (PDB completo)**  
+**c:\Users\Username\Documents\Visual studio 2015\projects\corecheckexample\coreche**  
 **ckexample\corecheckexample.cpp(6): advertencia C26494: La variable 'arr' es uninitializ**  
 **Ed. siempre debe inicializarse un objeto. (type.5: http://go.microsoft.com/fwlink/p/?Link**  
 **ID. = 620421)**  
-**c:\users\username\documents\visual studio 2015\projects\corecheckexample\coreche**  
+**c:\Users\Username\Documents\Visual studio 2015\projects\corecheckexample\coreche**  
 **ckexample\corecheckexample.cpp(7): advertencia C26485: Expresión 'arr': No hay matriz a**  
  **decadencia de puntero. (bounds.3: http://go.microsoft.com/fwlink/p/?LinkID=620415)**  
 **=== La compilación: 1 correctos, 0 incorrectos, 0 actualizados, 0 omitidos ===** The C++ Core Guidelines sirven para ayudarle a escribir código mejor y más seguro. Sin embargo, si tiene una instancia que no debe aplicarse una regla o un perfil, es fácil que la suprima directamente en el código. Puede usar el `gsl::suppress` atributo para impedir que C++ Core Check detectar e informes de cualquier infracción de una regla en el bloque de código siguiente. Puede marcar las instrucciones individuales para suprimir reglas específicas. Incluso puede suprimir todo el perfil bounds escribiendo `[[gsl::suppress(bounds)]]` sin necesidad de incluir un número específico de regla.  

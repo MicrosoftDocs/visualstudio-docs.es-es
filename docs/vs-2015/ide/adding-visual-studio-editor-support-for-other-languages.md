@@ -16,11 +16,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 366ec5de66c3070e30d7d4f98662732a7892437b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54758820"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68148251"
 ---
 # <a name="adding-visual-studio-editor-support-for-other-languages"></a>Agregar compatibilidad con otros lenguajes en el editor de Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -72,15 +72,15 @@ Obtenga información sobre la manera en que el editor de Visual Studio admite la
 
  En esta ruta de acceso base, agregue las carpetas siguientes si se aplican a su situación:
 
-|Nombre de carpeta|Descripción|
+|Nombre de carpeta|DESCRIPCIÓN|
 |-----------------|-----------------|
-|\\*\<nombre del lenguaje>*|Carpeta del lenguaje. Reemplace *\<nombre del lenguaje>* por el nombre del lenguaje. Por ejemplo, **\Matlab**.|
+|\\ *\<nombre del lenguaje>*|Carpeta del lenguaje. Reemplace *\<nombre del lenguaje>* por el nombre del lenguaje. Por ejemplo, **\Matlab**.|
 |\Syntaxes|Carpeta de la gramática. Contiene los archivos .json de la gramática para el lenguaje, como **Matlab.json**.|
 |\Snippets|Carpeta de fragmentos de código. Contiene fragmentos de código para el lenguaje.|
 
- En Windows, %userprofile% se resuelve como la ruta de acceso c:\Usuarios\\*\<nombre de usuario>*. Si la carpeta de extensiones no existe en el sistema, debe crearla. Si la carpeta ya existe, estará oculta.
+ En Windows, %userprofile% se resuelve como la ruta de acceso c:\Usuarios\\ *\<nombre de usuario>* . Si la carpeta de extensiones no existe en el sistema, debe crearla. Si la carpeta ya existe, estará oculta.
 
- Para obtener más información sobre cómo crear gramáticas TextMate, vea [TextMate – Introduction to Language Grammars: How to add source code syntax highlighting embedded in HTML](https://developmentality.wordpress.com/2011/02/08/textmate-introduction-to-language-grammars/) (TextMate. Introducción a las gramáticas de lenguaje: cómo agregar resaltado de sintaxis de código origen insertado en HTML) y [Notes on how to create a Language Grammar and Custom Theme for a Textmate Bundle](https://benparizek.com/notebook/notes-on-how-to-create-a-language-grammar-and-custom-theme-for-a-textmate-bundle) (Notas sobre cómo crear una gramática de lenguaje y un tema personalizado para un lote de Textmate).
+ Para obtener más información sobre cómo crear gramáticas TextMate, vea [TextMate: Introducción a las gramáticas de lenguaje: How to add source code syntax highlighting embedded in HTML](https://developmentality.wordpress.com/2011/02/08/textmate-introduction-to-language-grammars/) (TextMate - Introducción a las gramáticas de lenguaje: Cómo agregar resaltado de sintaxis de código fuente insertada en HTML) y [Notes on how to create a Language Grammar and Custom Theme for a Textmate Bundle](https://benparizek.com/notebook/notes-on-how-to-create-a-language-grammar-and-custom-theme-for-a-textmate-bundle) (Notas sobre cómo crear una gramática de lenguaje y un tema personalizado para un lote de TextMate).
 
 ## <a name="see-also"></a>Vea también
- [Visual Studio 2013 que se vaya a mejoras](https://blogs.msdn.microsoft.com/mvpawardprogram/2013/10/22/visual-studio-2013-navigate-to-improvements/) [Tutorial: crear un fragmento de código](../ide/walkthrough-creating-a-code-snippet.md) [Tutorial: mostrar la finalización de instrucciones](../extensibility/walkthrough-displaying-statement-completion.md)
+ [Visual Studio 2013 que se vaya a mejoras](https://blogs.msdn.microsoft.com/mvpawardprogram/2013/10/22/visual-studio-2013-navigate-to-improvements/) [Tutorial: Creación de un fragmento de código](../ide/walkthrough-creating-a-code-snippet.md) [Tutorial: Mostrar la finalización de instrucciones](../extensibility/walkthrough-displaying-statement-completion.md)

@@ -12,11 +12,11 @@ caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 792ac8a0859481fd97b2eaee4bd66753f0460a37
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60042541"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68204134"
 ---
 # <a name="how-to-open-standard-editors"></a>Procedimiento Abrir editores estándar
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -54,6 +54,6 @@ Al abrir un editor estándar, permite que el IDE de determinar un editor estánd
 ## <a name="see-also"></a>Vea también  
  <xref:Microsoft.VisualStudio.OLE.Interop.IServiceProvider>   
  [Abrir y guardar elementos de proyecto](../extensibility/internals/opening-and-saving-project-items.md)   
- [Cómo: Abrir editores específicos del proyecto](../extensibility/how-to-open-project-specific-editors.md)   
+ [Procedimientos: Abrir editores específicos del proyecto](../extensibility/how-to-open-project-specific-editors.md)   
  [Cómo: Abrir editores para documentos abiertos](../extensibility/how-to-open-editors-for-open-documents.md)   
  [Visualización de archivos mediante el comando Abrir archivo](../extensibility/internals/displaying-files-by-using-the-open-file-command.md)

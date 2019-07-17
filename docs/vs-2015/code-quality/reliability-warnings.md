@@ -16,11 +16,11 @@ author: gewarren
 ms.author: gewarren
 manager: wpickett
 ms.openlocfilehash: 328e374a12b45c4a139d5e59c33be3a7bd74ac3d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58987207"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68142197"
 ---
 # <a name="reliability-warnings"></a>advertencias de confiabilidad
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,7 +29,7 @@ Advertencias de confiabilidad admiten la confiabilidad de la biblioteca y aplica
   
 ## <a name="in-this-section"></a>En esta sección  
   
-|Regla|Descripción|  
+|Regla|DESCRIPCIÓN|  
 |----------|-----------------|  
 |[CA2000: Eliminar objetos antes de perder el ámbito](../code-quality/ca2000-dispose-objects-before-losing-scope.md)|Dado que podría producirse un evento excepcional que evitaría que el finalizador de un objeto se ejecutase, el objeto debe estar disponible en su lugar antes de que todas las referencias a él estén fuera del ámbito.|  
 |[CA2001: Evite llamar a métodos problemáticos](../code-quality/ca2001-avoid-calling-problematic-methods.md)|Un miembro llama a un método potencialmente peligroso o problemático.|  

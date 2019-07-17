@@ -10,11 +10,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 6a0b46a4aaa780357faa38a9ee4b01d04b1a0ba1
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60110939"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68178862"
 ---
 # <a name="how-to-exclude-projects-from-a-build"></a>Procedimiento Excluir proyectos de una compilación
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,7 +43,7 @@ Para compilar una solución no es necesario compilar todos los proyectos que con
   
 1. En la barra de menús, elija **Compilar**, **Administrador de configuración**.  
   
-2. En la lista **Configuración de soluciones activas**, pulse **\<Nueva>**.  
+2. En la lista **Configuración de soluciones activas**, pulse **\<Nueva>** .  
   
 3. En el cuadro **Nombre**, escriba un nombre para la configuración de soluciones.  
   
@@ -57,5 +57,5 @@ Para compilar una solución no es necesario compilar todos los proyectos que con
   
 ## <a name="see-also"></a>Vea también  
  [Descripción de las configuraciones de compilación](../ide/understanding-build-configurations.md)   
- [Cómo: Crear y editar configuraciones](../ide/how-to-create-and-edit-configurations.md)   
- [Cómo: Compilación de varias configuraciones simultáneamente](../ide/how-to-build-multiple-configurations-simultaneously.md)
+ [Procedimientos: Crear y editar configuraciones](../ide/how-to-create-and-edit-configurations.md)   
+ [Procedimientos: Compilación de varias configuraciones simultáneamente](../ide/how-to-build-multiple-configurations-simultaneously.md)

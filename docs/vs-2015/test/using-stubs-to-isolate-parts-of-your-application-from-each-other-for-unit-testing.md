@@ -9,11 +9,11 @@ caps.latest.revision: 19
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 5ed075cbc5bdc49159024a81cfcf1c3afb04cc6a
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60076882"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68185720"
 ---
 # <a name="using-stubs-to-isolate-parts-of-your-application-from-each-other-for-unit-testing"></a>Usar stubs para aislar las partes de la aplicación entre sí para la prueba unitaria
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -471,7 +471,7 @@ StubBehaviors.Current =
   
 ## <a name="external-resources"></a>Recursos externos  
   
-### <a name="guidance"></a>Orientación  
+### <a name="guidance"></a>Guía  
  [Pruebas para entrega continua con Visual Studio 2012 – capítulo 2: Pruebas unitarias: Prueba del interior](http://go.microsoft.com/fwlink/?LinkID=255188)  
   
 ## <a name="see-also"></a>Vea también  

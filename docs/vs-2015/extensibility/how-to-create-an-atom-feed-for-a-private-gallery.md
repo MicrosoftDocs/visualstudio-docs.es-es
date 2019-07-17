@@ -1,5 +1,5 @@
 ---
-title: Filtrar Crear un átomo fuentes de distribución para una galería privada | Documentos de Microsoft
+title: Procedimiento Crear un átomo fuentes de distribución para una galería privada | Documentos de Microsoft
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -12,13 +12,13 @@ caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: f6d4ba78028774e8fbf8e281afa2855781dab43a
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58998795"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68204210"
 ---
-# <a name="how-to-create-an-atom-feed-for-a-private-gallery"></a>Filtrar Crear una fuente Atom para una galería privada
+# <a name="how-to-create-an-atom-feed-for-a-private-gallery"></a>Procedimiento Crear una fuente Atom para una galería privada
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Puede crear un átomo (RSS) de la fuente en una ubicación de la intranet que contiene las extensiones y agrega la fuente a **extensiones y actualizaciones** como una galería privada. Para más información, vea [Private Galleries](../extensibility/private-galleries.md) (Galerías privadas).  

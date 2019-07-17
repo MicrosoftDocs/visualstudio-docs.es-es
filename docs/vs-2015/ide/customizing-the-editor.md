@@ -13,11 +13,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 54e2e44650179cafb4fd4cc9169ac27810bbdf91
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54804824"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68183345"
 ---
 # <a name="customizing-the-editor"></a>Personalizar el editor
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,13 +27,13 @@ Puede personalizar el formato, las pestañas, las fuentes y los colores, Intelli
 ## <a name="in-this-section"></a>En esta sección  
  En estos temas se explica cómo ajustar la apariencia y el comportamiento del editor de texto y código.  
   
- [Cómo: Cambiar las mayúsculas y minúsculas en el editor](../ide/how-to-change-text-case-in-the-editor.md)  
+ [Procedimientos: Cambiar las mayúsculas y minúsculas en el editor](../ide/how-to-change-text-case-in-the-editor.md)  
  Explica cómo cambiar mayúsculas y minúsculas en el código.  
   
- [Cómo: Administrar las ventanas del editor](../ide/how-to-manage-editor-windows.md)  
+ [Procedimientos: Administrar las ventanas del editor](../ide/how-to-manage-editor-windows.md)  
  Muestra cómo manipular las ventanas del editor.  
   
- [Cómo: Administrar los modos del editor](../ide/how-to-manage-editor-modes.md)  
+ [Procedimientos: Administrar los modos del editor](../ide/how-to-manage-editor-modes.md)  
  Explica cómo utilizar los modos de pantalla completa y espacio virtual.  
   
 ## <a name="see-also"></a>Vea también  

@@ -10,11 +10,11 @@ author: gregvanl
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: c6875e13baa83d349020f50a3fe448a87ec5fd30
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60114826"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68197398"
 ---
 # <a name="creating-custom-project-and-item-templates"></a>Creación de plantillas de proyectos y de elementos personalizadas
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

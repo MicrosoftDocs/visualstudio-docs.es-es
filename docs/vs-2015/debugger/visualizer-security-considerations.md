@@ -18,11 +18,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 51c79c34520c36e51599d4d6135784f493673b62
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58987216"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68146460"
 ---
 # <a name="visualizer-security-considerations"></a>Consideraciones de seguridad del visualizador
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,6 +42,6 @@ Escribir datos en un visualizador implica poner en riesgo la seguridad. En la ac
   
 ## <a name="see-also"></a>Vea también  
  [Arquitectura de un visualizador](../debugger/visualizer-architecture.md)   
- [Cómo: Escritura de un visualizador](../debugger/how-to-write-a-visualizer.md)   
+ [Procedimientos: Escritura de un visualizador](../debugger/how-to-write-a-visualizer.md)   
  [Creación de visualizadores personalizados](../debugger/create-custom-visualizers-of-data.md)   
  [Ver datos en el depurador](../debugger/viewing-data-in-the-debugger.md)

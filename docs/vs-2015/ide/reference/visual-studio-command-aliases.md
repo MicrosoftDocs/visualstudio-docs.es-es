@@ -18,11 +18,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 573c120aafdf520b137e3fb50251ed8606f5c43a
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59654378"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68160893"
 ---
 # <a name="visual-studio-command-aliases"></a>Visual Studio Command Aliases
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -90,7 +90,7 @@ Los alias permiten escribir un comando en el cuadro **Buscar/Comando** o en la v
 |[ShowWebBrowser (Comando)](../../ide/reference/showwebbrowser-command.md)|nav navigate|View.ShowWebBrowser|
 |Marcador siguiente|NextBook|Edit.NextBookmark|
 |[Nuevo archivo (Comando)](../../ide/reference/new-file-command.md)|nf|File.NewFile|
-|nuevo proyecto|np NewProj|File.NewProject|
+|Nuevo proyecto|np NewProj|File.NewProject|
 |[Abrir archivo (comando)](../../ide/reference/open-file-command.md)|of Open|File.OpenFile|
 |[Abrir proyecto (Comando)](../../ide/reference/open-project-command.md)|op|File.OpenProject|
 |Contraer a definiciones/Detener esquematización|OutlineDefs StopOutlining|Edit.CollapsetoDefinitions|
@@ -98,19 +98,19 @@ Los alias permiten escribir un comando en el cuadro **Buscar/Comando** o en la v
 |Información de parámetros|ParamInfo|Edit.ParameterInfo|
 |Paso a paso para salir|pr|Debug.StepOut|
 |Marcador anterior|PrevBook|Edit.PreviousBookmark|
-|Imprimir archivo|print|File.Print|
+|Imprimir archivo|imprimir|File.Print|
 |Ventana Propiedades|props|View.PropertiesWindow|
 |Detener|q|Debug.StopDebugging|
 |Redo|redo|Edit.Redo|
 |Ventana Registros|registers|Debug.Registers|
 |Ejecutar hasta el cursor|rtc|Debug.RunToCursor|
-|Guardar los elementos seleccionados|save|File.SaveSelectedItems|
+|Guardar los elementos seleccionados|Guardar|File.SaveSelectedItems|
 |Guardar todo|SaveAll|File.SaveAll|
 |Guardar como|SaveAs|File.SaveSelectedItemsAs|
 |[Shell (comando)](../../ide/reference/shell-command.md)|shell|Tools.Shell|
 |Detener Buscar en archivos|StopFind|Edit.FindInFiles /stop|
 |Cambiar delimitador|SwapAnchor|Edit.SwapAnchor|
-|Paso a paso por instrucciones|m|Debug.StepInto|
+|Paso a paso por instrucciones|t|Debug.StepInto|
 |Aplicar tabulación a la selección|tabify|Edit.TabifySelection|
 |Ventana Lista de tareas|TaskList|View.TaskList|
 |Ventana Subprocesos|Subprocesos|Debug.Threads|

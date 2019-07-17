@@ -15,11 +15,11 @@ author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.openlocfilehash: a3fe0233f08f33535be4b02cc06c29d919d75169
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59651168"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68180256"
 ---
 # <a name="use-command-line-parameters-to-install-visual-studio"></a>Usar parámetros de la línea de comandos para instalar Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,7 +35,7 @@ Al instalar Visual Studio 2015 desde un símbolo del sistema, puede usar los sig
 
 Los parámetros de la línea de comandos de Visual Studio no distinguen mayúsculas de minúsculas.
 
-|Parámetro|Descripción|
+|Parámetro|DESCRIPCIÓN|
 |---------------|-----------------|
 |**/?**<br /><br /> **/help**<br /><br /> **/h**|Muestra los parámetros de la línea de comandos.|
 |**/AddRemoveFeatures**|Especifica qué características se van a agregar o quitar del producto instalado.|

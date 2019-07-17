@@ -16,11 +16,11 @@ author: gewarren
 ms.author: gewarren
 manager: wpickett
 ms.openlocfilehash: 37c8193a166849f1361a66c640b1a414d3900fca
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59667331"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68189124"
 ---
 # <a name="ca1715-identifiers-should-have-correct-prefix"></a>CA1715: Los identificadores deben tener el prefijo correcto
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,7 +34,7 @@ Para obtener la documentación más reciente de Visual Studio, consulte [CA1715:
 |Categoría|Microsoft.Naming|  
 |Cambio problemático|Problemático: cuando se desencadena en interfaces.<br /><br /> Indivisible - cuando se genera en parámetros de tipo genérico.|  
   
-## <a name="cause"></a>Motivo  
+## <a name="cause"></a>Causa  
  El nombre de una interfaz visible externamente no empieza por una mayúscula 'I'.  
   
  -o bien-  

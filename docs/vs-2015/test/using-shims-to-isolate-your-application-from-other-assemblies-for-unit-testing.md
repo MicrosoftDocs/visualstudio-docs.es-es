@@ -9,11 +9,11 @@ caps.latest.revision: 14
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: ddbcac3073dec1e7f21d381d30978589f1cdd792
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60113916"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68185743"
 ---
 # <a name="using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing"></a>Usar correcciones de compatibilidad (shim) para aislar la aplicación de otros ensamblados para la prueba unitaria
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -503,10 +503,10 @@ ShimFile.WriteAllTextStringString = shim;
   
 ## <a name="external-resources"></a>Recursos externos  
   
-### <a name="guidance"></a>Orientación  
+### <a name="guidance"></a>Guía  
  [Pruebas para entrega continua con Visual Studio 2012 – capítulo 2: Pruebas unitarias: Prueba del interior](http://go.microsoft.com/fwlink/?LinkID=255188)  
   
 ## <a name="see-also"></a>Vea también  
  [Aislar el código en pruebas con Microsoft Fakes](../test/isolating-code-under-test-with-microsoft-fakes.md)   
- [Blog de Peter Provost: Visual Studio 2012 Shims](http://www.peterprovost.org/blog/2012/04/25/visual-studio-11-fakes-part-2)   
+ [Blog de Peter Provost: Correcciones de compatibilidad Visual Studio 2012](http://www.peterprovost.org/blog/2012/04/25/visual-studio-11-fakes-part-2)   
  [Vídeo (1 hora 16 minutos): Las pruebas un-testable Code with Fakes en Visual Studio 2012](http://go.microsoft.com/fwlink/?LinkId=261837)

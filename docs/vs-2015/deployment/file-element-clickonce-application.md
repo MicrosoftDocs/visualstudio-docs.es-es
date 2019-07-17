@@ -24,11 +24,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 88fce548d5adbd6d4dc930db767fd3e52690490b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58998077"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68148778"
 ---
 # <a name="ltfilegt-element-clickonce-application"></a>&lt;archivo&gt; elemento (aplicación ClickOnce)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -89,10 +89,10 @@ Identifica todos los archivos nonassembly descargado y usado por la aplicación.
 ## <a name="elements-and-attributes"></a>Elementos y atributos  
  El elemento `file` es opcional. El elemento tiene los atributos siguientes.  
   
-|Atributo|Descripción|  
+|Atributo|DESCRIPCIÓN|  
 |---------------|-----------------|  
-|`name`|Obligatorio. Identifica el nombre del archivo.|  
-|`size`|Obligatorio. Especifica el tamaño, en bytes, del archivo.|  
+|`name`|Necesario. Identifica el nombre del archivo.|  
+|`size`|Necesario. Especifica el tamaño, en bytes, del archivo.|  
 |`group`|Opcional, si la `optional` atributo no se especifica o se establece en `false`; es necesario si `optional` es `true`. El nombre del grupo al que pertenece este archivo. El nombre puede ser cualquier valor de cadena Unicode elegido por el desarrollador y se usa para descargar archivos a petición con la <xref:System.Deployment.Application.ApplicationDeployment> clase.|  
 |`optional`|Opcional. Especifica si este archivo debe descargar cuando la aplicación es la primera ejecución, o si el archivo debe residir únicamente en el servidor hasta que la aplicación lo solicita a petición. Si `false` o undefined, el archivo se descarga cuando la aplicación se ejecuta o se instala en primer lugar. Si `true`, un `group` debe especificarse para que el manifiesto de aplicación sea válido. `optional` no puede ser true si `writeableType` se especifica con el valor `applicationData`.|  
 |`writeableType`|Opcional. Especifica que este archivo es un archivo de datos. Actualmente, el único valor válido es: `applicationData`.|  
@@ -100,20 +100,20 @@ Identifica todos los archivos nonassembly descargado y usado por la aplicación.
 ## <a name="typelib"></a>typelib  
  El `typelib` elemento es un elemento secundario opcional del elemento file. El elemento describe la biblioteca de tipos al que pertenece el componente COM. El elemento tiene los atributos siguientes.  
   
-|Atributo|Descripción|  
+|Atributo|DESCRIPCIÓN|  
 |---------------|-----------------|  
-|`tlbid`|Obligatorio. El GUID asignado a la biblioteca de tipos.|  
-|`version`|Obligatorio. El número de versión de la biblioteca de tipos.|  
-|`helpdir`|Obligatorio. El directorio que contiene los archivos de ayuda para el componente. Puede ser de longitud cero.|  
+|`tlbid`|Necesario. El GUID asignado a la biblioteca de tipos.|  
+|`version`|Necesario. El número de versión de la biblioteca de tipos.|  
+|`helpdir`|Necesario. El directorio que contiene los archivos de ayuda para el componente. Puede ser de longitud cero.|  
 |`resourceid`|Opcional. La representación de cadena hexadecimal del identificador de configuración regional (LCID). Es uno a cuatro dígitos hexadecimales sin un prefijo 0 x y sin ceros iniciales. El LCID puede tener un identificador de subidioma neutro.|  
 |`flags`|Opcional. La representación de cadena de los marcadores de biblioteca de tipos para esta biblioteca de tipos. En concreto, debe ser uno de "RESTRICTED", "CONTROL", "HIDDEN" y "HASDISKIMAGE".|  
   
 ## <a name="comclass"></a>comClass  
  El `comClass` elemento es un elemento secundario opcional de la `file` elemento, pero es necesario si la [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] aplicación contiene un componente COM intenta implementar mediante COM sin registro. El elemento tiene los atributos siguientes.  
   
-|Atributo|Descripción|  
+|Atributo|DESCRIPCIÓN|  
 |---------------|-----------------|  
-|`clsid`|Obligatorio. El identificador de clase del componente COM expresado como un GUID.|  
+|`clsid`|Necesario. El identificador de clase del componente COM expresado como un GUID.|  
 |`description`|Opcional. Nombre de la clase.|  
 |`threadingModel`|Opcional. El modelo de subprocesos utilizado por las clases de COM en proceso. Si esta propiedad es null, no se utiliza ningún modelo de subprocesos. El componente se crea en el subproceso principal del cliente y las llamadas de otros subprocesos se calculan las referencias a este subproceso. La siguiente lista muestra los valores válidos:<br /><br /> `Apartment`, `Free`, `Both`y `Neutral`.|  
 |`tlbid`|Opcional. GUID de la biblioteca de tipos para este componente COM.|  
@@ -127,9 +127,9 @@ Identifica todos los archivos nonassembly descargado y usado por la aplicación.
 ## <a name="cominterfaceexternalproxystub"></a>comInterfaceExternalProxyStub  
  El `comInterfaceExternalProxyStub` elemento es un elemento secundario opcional de la `file` elemento, pero puede ser necesario si la [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] aplicación contiene un componente COM intenta implementar mediante COM sin registro. El elemento contiene los siguientes atributos.  
   
-|Atributo|Descripción|  
+|Atributo|DESCRIPCIÓN|  
 |---------------|-----------------|  
-|`iid`|Obligatorio. La interfaz de identificador (IID) que atienden a este proxy. El IID debe tener las llaves que lo rodea.|  
+|`iid`|Necesario. La interfaz de identificador (IID) que atienden a este proxy. El IID debe tener las llaves que lo rodea.|  
 |`baseInterface`|Opcional. El IID de la interfaz desde la que hace referencia la interfaz `iid` derivada.|  
 |`numMethods`|Opcional. El número de métodos implementados por la interfaz.|  
 |`name`|Opcional. El nombre de la interfaz tal y como aparecerá en el código.|  
@@ -139,9 +139,9 @@ Identifica todos los archivos nonassembly descargado y usado por la aplicación.
 ## <a name="cominterfaceproxystub"></a>comInterfaceProxyStub  
  El `comInterfaceProxyStub` elemento es un elemento secundario opcional de la `file` elemento, pero puede ser necesario si la [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] aplicación contiene un componente COM intenta implementar mediante COM sin registro. El elemento contiene los siguientes atributos.  
   
-|Atributo|Descripción|  
+|Atributo|DESCRIPCIÓN|  
 |---------------|-----------------|  
-|`iid`|Obligatorio. La interfaz de identificador (IID) que atienden a este proxy. El IID debe tener las llaves que lo rodea.|  
+|`iid`|Necesario. La interfaz de identificador (IID) que atienden a este proxy. El IID debe tener las llaves que lo rodea.|  
 |`baseInterface`|Opcional. El IID de la interfaz desde la que hace referencia la interfaz `iid` derivada.|  
 |`numMethods`|Opcional. El número de métodos implementados por la interfaz.|  
 |`Name`|Opcional. El nombre de la interfaz tal y como aparecerá en el código.|  
@@ -152,9 +152,9 @@ Identifica todos los archivos nonassembly descargado y usado por la aplicación.
 ## <a name="windowclass"></a>windowClass  
  El `windowClass` elemento es un elemento secundario opcional de la `file` elemento, pero puede ser necesario si la [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] aplicación contiene un componente COM intenta implementar mediante COM sin registro. El elemento hace referencia a una clase de ventana definida por el componente COM que debe tener una versión que se aplican a él. El elemento contiene los siguientes atributos.  
   
-|Atributo|Descripción|  
+|Atributo|DESCRIPCIÓN|  
 |---------------|-----------------|  
-|`versioned`|Opcional. Controles de la ventana interna que la clase utilizada en el registro de nombre contiene la versión del ensamblado que contiene la clase de ventana. El valor de este atributo puede ser `yes` o `no`. De manera predeterminada, es `yes`. El valor `no` solo debe usarse si la misma clase de ventana se define mediante un componente en paralelo y un componente no-side-by-side equivalente y desea tratarlos como la misma clase de ventana. Tenga en cuenta que se aplican las reglas habituales sobre el registro de la clase de ventana: solo el primer componente que se registra la clase de ventana podrán registrarla, porque no tiene una versión que se aplica a él.|  
+|`versioned`|Opcional. Controles de la ventana interna que la clase utilizada en el registro de nombre contiene la versión del ensamblado que contiene la clase de ventana. El valor de este atributo puede ser `yes` o `no`. El valor predeterminado es `yes`. El valor `no` solo debe usarse si la misma clase de ventana se define mediante un componente en paralelo y un componente no-side-by-side equivalente y desea tratarlos como la misma clase de ventana. Tenga en cuenta que se aplican las reglas habituales sobre el registro de la clase de ventana: solo el primer componente que se registra la clase de ventana podrán registrarla, porque no tiene una versión que se aplica a él.|  
   
 ## <a name="hash"></a>hash  
  El `hash` elemento es un elemento secundario opcional de la `file` elemento. El elemento `hash` no tiene atributos.  
@@ -169,14 +169,14 @@ Identifica todos los archivos nonassembly descargado y usado por la aplicación.
 ## <a name="dsigtransform"></a>dsig: Transform  
  El `dsig:Transform` elemento es un elemento secundario necesario de la `dsig:Transforms` elemento. El elemento `dsig:Transform` tiene los atributos siguientes:  
   
-|Atributo|Descripción|  
+|Atributo|DESCRIPCIÓN|  
 |---------------|-----------------|  
 |`Algorithm`|El algoritmo utilizado para calcular la síntesis de este archivo. Actualmente el único valor utilizado por [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] es `urn:schemas-microsoft-com:HashTransforms.Identity`.|  
   
 ## <a name="dsigdigestmethod"></a>dsig:DigestMethod  
  El `dsig:DigestMethod` elemento es un elemento secundario necesario de la `hash` elemento. El elemento `dsig:DigestMethod` tiene los atributos siguientes:  
   
-|Atributo|Descripción|  
+|Atributo|DESCRIPCIÓN|  
 |---------------|-----------------|  
 |`Algorithm`|El algoritmo utilizado para calcular la síntesis de este archivo. Actualmente el único valor utilizado por [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] es `http://www.w3.org/2000/09/xmldsig#sha1`.|  
   

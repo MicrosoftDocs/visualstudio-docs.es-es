@@ -11,11 +11,11 @@ caps.latest.revision: 25
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 370f88ce4d8fc372ce31e1e85e88d5379f4e1ba5
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58998478"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68183395"
 ---
 # <a name="source-control-plug-in-architecture"></a>Arquitectura de complemento de control de código fuente
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

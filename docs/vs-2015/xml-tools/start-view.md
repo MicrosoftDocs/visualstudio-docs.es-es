@@ -10,11 +10,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: cb0cc75abced1d94fbedccf46b8953df78db7d28
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59651258"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68150713"
 ---
 # <a name="start-view"></a>Vista Inicio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,7 +38,7 @@ La vista Inicio es el punto de lanzamiento del Diseñador de esquemas XML (XSD).
   
  Los siguientes botones están habilitados en la barra de herramientas del Diseñador XML cuando está activa la vista Inicio:  
   
-|Opción|Descripción|  
+|Opción|DESCRIPCIÓN|  
 |------------|-----------------|  
 |**Mostrar vista inicio**|Cambia a la vista Inicio. Esta vista puede obtenerse mediante el método abreviado de teclado: **CTRL + 1**.|  
 |**Mostrar vista modelo de contenido**|Cambia a la vista Modelo de contenido. Esta vista puede obtenerse mediante el método abreviado de teclado: **CTRL + 2**.|  

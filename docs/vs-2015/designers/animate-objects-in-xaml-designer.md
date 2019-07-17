@@ -10,11 +10,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 7846ade8dba2ce849acf62311e508c157b07dd3e
-ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54805514"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68186736"
 ---
 # <a name="animate-objects-in-xaml-designer"></a>Animar objetos en el Diseñador XAML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

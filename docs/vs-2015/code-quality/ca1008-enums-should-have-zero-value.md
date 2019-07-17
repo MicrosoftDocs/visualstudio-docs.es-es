@@ -16,11 +16,11 @@ author: gewarren
 ms.author: gewarren
 manager: wpickett
 ms.openlocfilehash: e9b607c3a3fd7992bf8947c003d240d3d5b1d312
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58997881"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68182615"
 ---
 # <a name="ca1008-enums-should-have-zero-value"></a>CA1008: Las enumeraciones deben tener un valor igual a cero
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ ms.locfileid: "58997881"
 |Categoría|Microsoft.Design|
 |Cambio problemático|No problemático: cuando se le pida que agregue un **ninguno** valor a una enumeración sin marca. Problemático: cuando se le pedirá que cambie el nombre o quitar cualquier valor de enumeración.|
 
-## <a name="cause"></a>Motivo
+## <a name="cause"></a>Causa
  Una enumeración sin un aplicada <xref:System.FlagsAttribute?displayProperty=fullName> no define un miembro que tiene un valor de cero; o una enumeración que tiene un aplicada <xref:System.FlagsAttribute> define un miembro que tiene un valor de cero, pero su nombre no es 'None' o la enumeración define varios con valor cero miembros.
 
 ## <a name="rule-description"></a>Descripción de la regla

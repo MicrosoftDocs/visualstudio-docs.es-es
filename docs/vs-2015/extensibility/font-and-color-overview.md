@@ -12,13 +12,13 @@ caps.latest.revision: 23
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 0a20cfa2372b1e55652ffcebe6d173cff86140a6
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58987180"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68204347"
 ---
-# <a name="font-and-color-overview"></a>Información general de Color y fuente
+# <a name="font-and-color-overview"></a>Introducción a fuentes y colores
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Este tema describe la configuración de fuente y color del texto en el [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] el entorno de desarrollo integrado (IDE). También se presentan los conceptos de categorías y mostrar los elementos, y describe cómo VSPackages y el editor principal de utilizan los atributos de texto.  
@@ -73,7 +73,7 @@ Este tema describe la configuración de fuente y color del texto en el [!INCLUDE
   
 - Tanto la capacidad de usar los elementos de visualización integradas de la **EditorCategory texto** y a ampliarlos.  
   
-   Para obtener más información, vea [Cómo: Usar elementos coloreables integrados](../extensibility/internals/how-to-use-built-in-colorable-items.md) y [elementos coloreables personalizados](../extensibility/internals/custom-colorable-items.md).  
+   Para obtener más información, consulte [Cómo Usar elementos coloreables integrados](../extensibility/internals/how-to-use-built-in-colorable-items.md) y [elementos coloreables personalizados](../extensibility/internals/custom-colorable-items.md).  
   
 - Persistencia automática del estado de ambos integrados y personalizado actual mostrar los elementos con el **Editor de texto** categoría.  
   

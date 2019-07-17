@@ -13,11 +13,11 @@ caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: cb0df475098a0fb0675327cece6dd9c643a0c4d7
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58997121"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68147962"
 ---
 # <a name="sccwillcreatesccfile-function"></a>SccWillCreateSccFile (Función)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -51,7 +51,7 @@ SCCRTN SccWillCreateSccFile(
 ## <a name="return-value"></a>Valor devuelto  
  La implementación de complemento de control de origen de esta función debe devolver uno de los valores siguientes:  
   
-|Valor|Descripción|  
+|Valor|DESCRIPCIÓN|  
 |-----------|-----------------|  
 |SCC_OK|Correcto.|  
 |SCC_E_INVALIDFILEPATH|Una de las rutas de acceso de la matriz no es válida.|  

@@ -10,11 +10,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 14b4ac689109e29baa4ee06c668b208d0d5227b0
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60072778"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68159717"
 ---
 # <a name="graphics-diagnostics-examples"></a>Ejemplos de diagnóstico de gráficos
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ Estos ejemplos muestran cómo depurar problemas de presentación en aplicaciones
  Puede utilizar el Diagnóstico de gráficos para depurar la aplicación Direct3D en un dispositivo basado en ARM mediante la depuración remota. Para obtener más información, vea [Cómo: Uso de Diagnóstico de gráficos con un dispositivo ARM](../debugger/how-to-use-graphics-diagnostics-with-an-arm-device.md)  
   
 ## <a name="playing-back-graphics-information"></a>Reproducción de la información de gráficos  
- Después de capturar información de gráficos desde una aplicación en ejecución, puede reproducir los eventos capturados para diagnosticar problemas de presentación. Para reproducirlos, puede utilizar su equipo de desarrollo o un equipo o dispositivo remoto al que esté conectado. Para obtener más información, vea [Cómo: Cambio de la máquina de reproducción de Diagnóstico de gráficos](../debugger/how-to-change-the-graphics-diagnostics-playback-machine.md).  
+ Después de capturar información de gráficos desde una aplicación en ejecución, puede reproducir los eventos capturados para diagnosticar problemas de presentación. Para reproducirlos, puede utilizar su equipo de desarrollo o un equipo o dispositivo remoto al que esté conectado. Para obtener más información, consulte [Cómo Cambio de la máquina de reproducción de Diagnóstico de gráficos](../debugger/how-to-change-the-graphics-diagnostics-playback-machine.md).  
   
 ## <a name="debugging-missing-objects"></a>Depuración de objetos ausentes  
  Un objeto (u objetos) ausente es uno de los problemas de presentación más habituales con los que se encuentran los desarrolladores de gráficos. Este tipo de problema puede ser difícil de diagnosticar porque hay varios tipos de errores que pueden causar que parezca que un objeto que ha desaparecido. Las causas habituales de los objetos ausentes incluyen un estado del dispositivo mal configurado, problemas en la transformación de la geometría de los objetos o una canalización de gráficos mal configurada.  

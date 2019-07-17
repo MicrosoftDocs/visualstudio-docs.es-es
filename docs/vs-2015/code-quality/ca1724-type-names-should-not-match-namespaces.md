@@ -16,11 +16,11 @@ author: gewarren
 ms.author: gewarren
 manager: wpickett
 ms.openlocfilehash: 7fe95e08d2265baf06c6da265996ffcd579f0d1f
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58995692"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68143185"
 ---
 # <a name="ca1724-type-names-should-not-match-namespaces"></a>CA1724: Los nombres de tipo no deben coincidir con los espacios de nombres
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ ms.locfileid: "58995692"
 |Categoría|Microsoft.Naming|
 |Cambio problemático|Problemático|
 
-## <a name="cause"></a>Motivo
+## <a name="cause"></a>Causa
  Un nombre de tipo coincide con un [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] espacios de nombres en una comparación entre mayúsculas y minúsculas.
 
 ## <a name="rule-description"></a>Descripción de la regla

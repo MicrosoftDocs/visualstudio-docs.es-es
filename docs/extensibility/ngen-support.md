@@ -8,12 +8,12 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 02fe3ec6787eec0846f709ac65555260a3c03165
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 24f1b0a26875bbbf8dfc4ac7db1049f7309d9aa2
+ms.sourcegitcommit: 748d9cd7328a30f8c80ce42198a94a4b5e869f26
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66343983"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67891119"
 ---
 # <a name="ngen-support-in-vsix-v3"></a>Compatibilidad con Ngen en VSIX v3
 
@@ -37,7 +37,7 @@ Hay 4 propiedades que se pueden establecer:
 
 1. **Ngen** (Boolean): si es true, el instalador de Visual Studio le "ngen" del ensamblado.
 2. **Aplicación Ngen** (cadena) - Ngen proporciona la oportunidad de usar una aplicación *app.config* archivo con el fin de resolver las dependencias de ensamblado. Este valor debe establecerse en una aplicación cuya *app.config* que desea usar (relativa al directorio de instalación de Visual Studio).
-3. **Arquitectura Ngen** (enumeración): la arquitectura para compilar el ensamblado de forma nativa. Las opciones son: una. B NotSpecified. X86 c. X64 d. Todas
+3. **Arquitectura Ngen** (enumeración): la arquitectura para compilar el ensamblado de forma nativa. Las opciones son: una. B NotSpecified. X86 c. X64 d. Todo
 4. **Prioridad Ngen** (entero entre 1 y 3) - nivel de la prioridad de Ngen está documentada en [niveles de prioridad de Ngen.exe](/dotnet/framework/tools/ngen-exe-native-image-generator#priority-levels).
 
 Este es un vistazo a la **propiedades** ventana en acción:
@@ -55,9 +55,10 @@ Esto agregará los metadatos para la referencia de proyecto dentro del proyecto 
     <NgenArchitecture>X86</NgenArchitecture>
     <NgenPriority>2</NgenPriority>
 </ProjectReference>
- ```
+```
 
- >**Nota:** Puede editar el archivo .csproj directamente, si lo prefiere.
+> [!NOTE]
+> Puede editar el archivo .csproj directamente, si lo prefiere.
 
 ## <a name="extra-information"></a>Información adicional
 

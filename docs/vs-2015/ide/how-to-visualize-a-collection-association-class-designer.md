@@ -17,11 +17,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 490ee064903a0e2d119da891681da719e237acec
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60049413"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68178783"
 ---
 # <a name="how-to-visualize-a-collection-association-class-designer"></a>Procedimiento Visualizar una asociación de colecciones (Diseñador de clases)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,6 +39,6 @@ Las propiedades y campos que son colecciones de otros tipos se pueden mostrar en
      La propiedad o el campo se muestra como una línea de asociación que se vincula al tipo recopilado.  
   
 ## <a name="see-also"></a>Vea también  
- [Cómo: Crear asociaciones entre tipos (Diseñador de clases)](../ide/how-to-create-associations-between-types-class-designer.md)   
+ [Procedimientos: Crear asociaciones entre tipos (Diseñador de clases)](../ide/how-to-create-associations-between-types-class-designer.md)   
  [Diseñar clases y tipos (Diseñador de clases)](../ide/designing-classes-and-types-class-designer.md)   
  [Ver tipos y relaciones (Diseñador de clases)](../ide/viewing-types-and-relationships-class-designer.md)

@@ -8,12 +8,12 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1241edd105c948f1094948229a91851b7c38bbed
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 8634ab15a10b59fc21de390e0633d6d91793616d
+ms.sourcegitcommit: 748d9cd7328a30f8c80ce42198a94a4b5e869f26
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67824331"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67891037"
 ---
 # <a name="fonts-and-formatting-for-visual-studio"></a>Fuentes y formato de Visual Studio
 ## <a name="BKMK_TheEnvironmentFont"></a> La fuente del entorno
@@ -90,7 +90,8 @@ window.ShowModal()
 ### <a name="BKMK_Formatting"></a> Formato de referencia (escalado o poner en negrita)
  Algunos cuadros de diálogo requieren determinado texto esté en negrita o un tamaño distinto de la fuente del entorno. Anteriormente, las fuentes mayores que la fuente del entorno se codificaron como "`environment font +2`" o similar. Uso de los fragmentos de código proporcionado admitirá valores altos de PPP monitores y asegúrese de que el texto para mostrar aparece siempre en el tamaño correcto y peso (como la luz o Semilight).
 
-> **Nota: Antes de aplicar formato, asegúrese de que está siguiendo las directrices recogidas en [estilo de texto](../../extensibility/ux-guidelines/fonts-and-formatting-for-visual-studio.md#BKMK_TextStyle).**
+> [!NOTE]
+> Antes de aplicar formato, asegúrese de que está siguiendo las directrices recogidas en [estilo de texto](../../extensibility/ux-guidelines/fonts-and-formatting-for-visual-studio.md#BKMK_TextStyle). **
 
  Para escalar la fuente del entorno, establezca el estilo del TextBlock o Label como se indica. Cada uno de estos fragmentos de código, que se usan correctamente, generará la fuente correcta, incluidas las variaciones de tamaño y peso adecuadas.
 
@@ -457,7 +458,7 @@ protected static void SetFontStyles(Control topControl, Control parent, Font ref
 
 |||
 |-|-|
-|**Uso:**<br /><br /> : Encabezados de sección en los cuadros de diálogo de firma<br />-Nodos superior en la vista de árbol<br />-Navegación por tabulación vertical<br /><br /> **Hacer:** Caso de uso de oración<br /><br /> **No:**<br /><br /> -En negrita, cursiva o negrita cursiva<br />-Use para el texto de cuerpo<br />-Usar controles estándar de Visual Studio<br />-Usar ventanas de herramientas|**Aparece como:** 11 pt Segoe UI<br /><br /> **Ejemplo Visual:**<br /><br /> ![Ejemplo de encabezado con fuente del entorno 122%](../../extensibility/ux-guidelines/media/0202-e_ef122.png "0202 e_EF122")|
+|**Uso:**<br /><br /> : Encabezados de sección en los cuadros de diálogo de firma<br />-Nodos superior en la vista de árbol<br />-Navegación por tabulación vertical<br /><br /> **Hacer:** Caso de uso de oración<br /><br /> **No:**<br /><br /> -En negrita, cursiva o negrita cursiva<br />-Use para el texto de cuerpo<br />-Usar controles estándar de Visual Studio<br />-Usar ventanas de herramientas|**Aparece como:** pt 11 Segoe UI<br /><br /> **Ejemplo Visual:**<br /><br /> ![Ejemplo de encabezado con fuente del entorno 122%](../../extensibility/ux-guidelines/media/0202-e_ef122.png "0202 e_EF122")|
 
 #### <a name="environment-font--bold"></a>Fuente del entorno + negrita
 

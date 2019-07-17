@@ -22,11 +22,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: ac304d695c13fde2b69aafbb903493ad9865bf87
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "59002548"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68187808"
 ---
 # <a name="creating-bootstrapper-packages"></a>Crear paquetes de arranque
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -70,7 +70,7 @@ El programa de instalación es un instalador genérico que se puede configurar p
   
   `package.xml`  
   
-  Por último, copie los archivos redistribuibles en la ubicación de la carpeta del programa previo. Para obtener más información, vea [Cómo: Crear un paquete de arranque localizado](../deployment/how-to-create-a-localized-bootstrapper-package.md).  
+  Por último, copie los archivos redistribuibles en la ubicación de la carpeta del programa previo. Para obtener más información, consulte [Cómo Crear un paquete de arranque localizado](../deployment/how-to-create-a-localized-bootstrapper-package.md).  
   
 ```  
 \Program Files\Microsoft Visual Studio 14.0\SDK\Bootstrapper\Packages  
@@ -100,7 +100,7 @@ HKLM\Software\Wow6432Node\Microsoft\GenericBootstrapper\11.0
   
  La tabla siguiente muestra las propiedades que el programa previo rellena automáticamente.  
   
-|Property|Descripción|  
+|Propiedad|DESCRIPCIÓN|  
 |--------------|-----------------|  
 |ApplicationName|El nombre de la aplicación.|  
 |ProcessorArchitecture|El procesador y los bits por palabra de la plataforma de destino de un ejecutable. Los valores son los siguientes:<br /><br /> -   Intel<br />-   IA64<br />-   AMD64|  

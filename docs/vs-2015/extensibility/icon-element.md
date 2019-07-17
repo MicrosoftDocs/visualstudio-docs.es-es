@@ -12,11 +12,11 @@ caps.latest.revision: 6
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: ca5ced87596b5e40ae70e3faa06e58493da3d8ab
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58999102"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68203994"
 ---
 # <a name="icon-element"></a>Icon (Elemento)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,20 +34,20 @@ El atributo guid de la etiqueta de icono es el guid de un mapa de bits definido.
   
 ### <a name="attributes"></a>Atributos  
   
-|Atributo|Descripción|  
+|Atributo|DESCRIPCIÓN|  
 |---------------|-----------------|  
-|guid|Obligatorio. El guid de un mapa de bits definido.|  
-|id|Obligatorio. Selecciona la ranura en la Tira de mapa de bits.|  
+|GUID|Necesario. El guid de un mapa de bits definido.|  
+|id|Necesario. Selecciona la ranura en la Tira de mapa de bits.|  
   
 ### <a name="child-elements"></a>Elementos secundarios  
   
-|Elemento|Descripción|  
+|Elemento|DESCRIPCIÓN|  
 |-------------|-----------------|  
 |Ninguno.|Ninguno.|  
   
 ### <a name="parent-elements"></a>Elementos primarios  
   
-|Elemento|Descripción|  
+|Elemento|DESCRIPCIÓN|  
 |-------------|-----------------|  
 |[Buttons (Elemento)](../extensibility/buttons-element.md)||  
   

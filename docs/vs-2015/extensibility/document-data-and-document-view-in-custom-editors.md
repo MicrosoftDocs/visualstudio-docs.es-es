@@ -11,11 +11,11 @@ caps.latest.revision: 24
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 2f73ffde43f2ef3608ae492a9643f7920243d818
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58987698"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68204686"
 ---
 # <a name="document-data-and-document-view-in-custom-editors"></a>Datos de documento y vista de documento en editores personalizados
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

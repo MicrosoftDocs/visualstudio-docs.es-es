@@ -12,11 +12,11 @@ caps.latest.revision: 21
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 5238274d66296a21e15b47d1a090ab01c1a1299d
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60046297"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68201974"
 ---
 # <a name="walkthrough-publishing-a-visual-studio-extension"></a>Tutorial: Publicar una extensión de Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -57,7 +57,7 @@ En este tutorial se muestra cómo publicar una extensión de Visual Studio en la
 
 6. En **paso 1: Tipo de extensión**, seleccione **herramienta** y, a continuación, haga clic en **siguiente**.
 
-7. En **paso 2: Cargar**, puede elegir cargar directamente a la Galería de Visual Studio o agregar un vínculo a su propio sitio Web. En este caso seleccione **gustaría cargar mi herramienta**. El **seleccione el control** aparece el cuadro. Haga clic en **examinar** y, a continuación, seleccione TestPublish.vsix en la carpeta \bin\Release del proyecto. Haga clic en **Siguiente**.
+7. En **paso 2: Cargar**, puede elegir cargar directamente a la Galería de Visual Studio o agregar un vínculo a su propio sitio Web. En este caso seleccione **gustaría cargar mi herramienta**. El **seleccione el control** aparece el cuadro. Haga clic en **examinar** y, a continuación, seleccione TestPublish.vsix en la carpeta \bin\Release del proyecto. Haga clic en **Next**.
 
 8. En **paso 3: Información básica**, se muestran los campos del archivo source.extension.vsixmanifest. Seleccione un **categoría** y agregue **etiquetas** para ayudar a los usuarios encontrar la extensión. Es posible que desea agregar un resumen y (la descripción debe ser al menos de 280 caracteres de longitud) una descripción más detallada. Deje **tipo de extensión** como **no es una extensión de Microsoft** y **categoría de costo** como **prueba**.
 

@@ -17,13 +17,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 532427618f476e1e187d8a1c88749810f9d157c9
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54803545"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68152639"
 ---
-# <a name="da0029-unsupported-clr-version"></a>DA0029: Versión de CLR incompatible
+# <a name="da0029-unsupported-clr-version"></a>DA0029: Versión de CLR no admitida
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Id. de regla | DA0029 |  
@@ -32,7 +32,7 @@ Id. de regla | DA0029 |
 | Mensaje | Se detectó una versión CLR no admitida durante la recolección. Puede que los símbolos administrados no se resuelvan correctamente.|  
 | Tipo de regla | Información. |  
   
-## <a name="cause"></a>Motivo  
+## <a name="cause"></a>Causa  
  Está intentando generar perfiles de una aplicación que usa [!INCLUDE[net_v11_long](../includes/net-v11-long-md.md)], que no es compatible con las herramientas de generación de perfiles.  
   
 ## <a name="rule-description"></a>Descripción de la regla  

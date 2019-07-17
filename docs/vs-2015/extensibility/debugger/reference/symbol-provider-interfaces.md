@@ -13,11 +13,11 @@ caps.latest.revision: 15
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: c409175fb39207bc0e83a521577ad6d641731691
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58995142"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68204865"
 ---
 # <a name="symbol-provider-interfaces"></a>Interfaces de proveedor de símbolos
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -27,7 +27,7 @@ Los siguientes son las Interfaces de control de símbolos para el [!INCLUDE[vsip
 ## <a name="discussion"></a>Discusión  
  Estas interfaces se usan para evaluar las variables en una pila de llamadas durante el modo de interrupción. Se implementan solo para proveedores de símbolos en tiempo de ejecución de common language (SP).  
   
-|Interfaz|Implementado por|Descripción|  
+|Interfaz|Implementado por|DESCRIPCIÓN|  
 |---------------|--------------------|-----------------|  
 |[IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md)|SP|Representa la dirección de un elemento.|  
 |[IDebugAddress2](../../../extensibility/debugger/reference/idebugaddress2.md)|SP|Representa la dirección de un elemento, que proporciona acceso al identificador de proceso.|  
@@ -42,7 +42,7 @@ Los siguientes son las Interfaces de control de símbolos para el [!INCLUDE[vsip
 |[IDebugDynamicField](../../../extensibility/debugger/reference/idebugdynamicfield.md)|SP|La interfaz base para cualquier tipo que se puede determinar en tiempo de ejecución.|  
 |[IDebugDynamicFieldCOMPlus](../../../extensibility/debugger/reference/idebugdynamicfieldcomplus.md)|SP|Representa un campo dinámico para un [IDebugBinder](../../../extensibility/debugger/reference/idebugbinder.md) objeto.|  
 |[IDebugEnumField](../../../extensibility/debugger/reference/idebugenumfield.md)|SP|Representa un tipo de enumeración.|  
-|[IDebugExtendedField](../../../extensibility/debugger/reference/idebugextendedfield.md)|Sp|Amplía los tipos de campos disponibles para admitir tipos genéricos de código administrado.|  
+|[IDebugExtendedField](../../../extensibility/debugger/reference/idebugextendedfield.md)|SP|Amplía los tipos de campos disponibles para admitir tipos genéricos de código administrado.|  
 |[IDebugField](../../../extensibility/debugger/reference/idebugfield.md)|SP|La clase base para todos los campos; Representa una descripción de un símbolo o el tipo.|  
 |[IDebugGenericFieldDefinition](../../../extensibility/debugger/reference/idebuggenericfielddefinition.md)|SP|Representa la definición de un campo para un tipo genérico de código administrado.|  
 |[IDebugGenericFieldInstance](../../../extensibility/debugger/reference/idebuggenericfieldinstance.md)|SP|Representa una instancia de un campo para un tipo genérico de código administrado.|  
