@@ -13,11 +13,11 @@ caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: c406e66b1008f0bb2aad95a427e1329d4269f1f6
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58989028"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68158069"
 ---
 # <a name="opening-and-saving-project-items"></a>Apertura y guardado de elementos de proyecto
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -31,10 +31,10 @@ Cuando se agrega un nuevo tipo de proyecto, debe administrar la apertura y el al
  [Visualización de archivos mediante el comando Abrir con](../../extensibility/internals/displaying-files-by-using-the-open-with-command.md)  
  Proporciona una explicación detallada, paso a paso de cómo el IDE controla la **abrir con** comando, solicitar la apertura de un archivo que tiene algunas opciones de editores estándar.  
   
- [Cómo: Abrir editores específicos del proyecto](../../extensibility/how-to-open-project-specific-editors.md)  
+ [Procedimientos: Abrir editores específicos de proyecto](../../extensibility/how-to-open-project-specific-editors.md)  
  Proporciona instrucciones paso a paso para especificar que los archivos de un tipo determinado en el proyecto deben abrirse con un editor específico del proyecto.  
   
- [Cómo: Abrir editores estándar](../../extensibility/how-to-open-standard-editors.md)  
+ [Procedimientos: Abrir editores estándar](../../extensibility/how-to-open-standard-editors.md)  
  Proporciona instrucciones paso a paso para especificar cómo se habilita el IDE abrir un editor estándar para los archivos en el tipo de proyecto.  
   
  [Cómo: Abrir editores para documentos abiertos](../../extensibility/how-to-open-editors-for-open-documents.md)  

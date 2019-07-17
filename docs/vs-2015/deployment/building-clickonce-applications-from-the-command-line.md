@@ -18,11 +18,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 2625a8d4caa7dd53e9ce86395a98622f91d686b3
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58996122"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68155716"
 ---
 # <a name="building-clickonce-applications-from-the-command-line"></a>Compilar aplicaciones ClickOnce desde la línea de comandos
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -160,7 +160,7 @@ msbuild /target:publish /property:BootstrapperEnabled=false
 ## <a name="installurl-supporturl-publishurl-and-updateurl"></a>InstallURL, SupportUrl, PublishURL y UpdateURL  
  En la tabla siguiente se muestra las cuatro opciones de dirección URL para la implementación de ClickOnce.  
   
-|Opción de dirección URL|Descripción|  
+|Opción de dirección URL|DESCRIPCIÓN|  
 |----------------|-----------------|  
 |`PublishURL`|Necesario si va a publicar la aplicación ClickOnce para un sitio Web.|  
 |`InstallURL`|Opcional. Establezca esta opción de dirección URL si la instalación de sitio es diferente de la `PublishURL`. Por ejemplo, puede establecer el `PublishURL` a una ruta de acceso FTP y un conjunto el `InstallURL` a una dirección URL de Web.|  

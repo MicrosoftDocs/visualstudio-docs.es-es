@@ -15,21 +15,21 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 579ac6a70b379364870425e78cee41ac0840a214
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58995979"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68164005"
 ---
 # <a name="compiland"></a>Compiland
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 Hay un `SymTagCompiland` para cada operación de compilación vinculado con el archivo .exe de símbolos. Información de la operación de compilación se divide entre los símbolos con un `SymTagCompiland` etiqueta, que se pueda recuperar sin la carga de símbolos adicionales de la operación de compilación, así como símbolos con un `SymTagCompilandDetails` etiqueta, lo que puede requerir la carga de símbolos adicionales.  
   
-## <a name="properties"></a>Propiedades  
+## <a name="properties"></a>Properties (Propiedades)  
  En la tabla siguiente muestra las propiedades que son válidas para este tipo de símbolo.  
   
-|Property|Tipo de datos|Descripción|  
+|Propiedad|Tipo de datos|DESCRIPCIÓN|  
 |--------------|---------------|-----------------|  
 |[IDiaSymbol::get_editAndContinueEnabled](../../debugger/debug-interface-access/idiasymbol-get-editandcontinueenabled.md)|`BOOL`|`TRUE` Si Editar y continuar se habilitó en la compilación.|  
 |[IDiaSymbol::get_lexicalParent](../../debugger/debug-interface-access/idiasymbol-get-lexicalparent.md)|`IDiaSymbol*`|Símbolos para el archivo .exe.|  

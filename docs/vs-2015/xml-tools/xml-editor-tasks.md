@@ -10,11 +10,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 56cda28a66d7d956ef46ed335765fe8fab430301
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59649633"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68158559"
 ---
 # <a name="xml-editor-tasks"></a>Tareas del Editor XML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,16 +25,16 @@ En esta sección se explica cómo puede completar tareas comunes con el Editor X
  [Tutorial: Uso de características del editor XML](../xml-tools/walkthrough-using-xml-editor-features.md)  
  Demuestra cómo utilizar algunas de las características del Editor XML.  
   
- [Cómo: Selección de los esquemas XML que se van a usar](../xml-tools/how-to-select-the-xml-schemas-to-use.md)  
+ [Procedimientos: Selección de los esquemas XML que se van a usar](../xml-tools/how-to-select-the-xml-schemas-to-use.md)  
  Describe cómo seleccionar el esquema XML que se va a usar la validación.  
   
- [Cómo: Creación de un esquema XML a partir de un documento XML](../xml-tools/how-to-create-an-xml-schema-from-an-xml-document.md)  
+ [Procedimientos: Creación de un esquema XML a partir de un documento XML](../xml-tools/how-to-create-an-xml-schema-from-an-xml-document.md)  
  Describe cómo crear un esquema XML.  
   
  [Cómo: Ejecución de una transformación XSLT desde el editor XML](../xml-tools/how-to-execute-an-xslt-transformation-from-the-xml-editor.md)  
  Describe cómo ejecutar una transformación XSLT.  
   
- [Cómo: Edición de archivos XML](../xml-tools/how-to-edit-xml-files.md)  
+ [Procedimientos: Edición de archivos XML](../xml-tools/how-to-edit-xml-files.md)  
  Describe cómo comenzar a editar archivos XML.  
   
  [Cómo: Utilizar fragmentos XML](../xml-tools/how-to-use-xml-snippets.md).  

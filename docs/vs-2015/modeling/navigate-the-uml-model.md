@@ -12,11 +12,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: b61492d992d37d7377e73185202bfbdd97063195
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60116672"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68158989"
 ---
 # <a name="navigate-the-uml-model"></a>Navegar por el modelo UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -120,7 +120,7 @@ foreach (IShape<IInterface> in
 ```  
   
 ## <a name="accessing-another-model-or-diagrams"></a>Tener acceso a otro modelo o diagramas  
- Puede realizar lo siguiente:  
+ Puede:  
   
 - Use Model Bus de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] para crear vínculos entre elementos de modelos diferentes. Para obtener más información, consulte [integrar modelos UML con otros modelos y herramientas](../modeling/integrate-uml-models-with-other-models-and-tools.md).  
   

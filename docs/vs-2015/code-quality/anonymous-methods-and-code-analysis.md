@@ -14,11 +14,11 @@ author: gewarren
 ms.author: gewarren
 manager: wpickett
 ms.openlocfilehash: b8b3f64a0b5f70067367e98d7e1d1471fc670099
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58987264"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68157062"
 ---
 # <a name="anonymous-methods-and-code-analysis"></a>Métodos anónimos y análisis de código
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -108,7 +108,7 @@ class Class
   
  Una clase podría contener un método anónimo insertado que asigna un valor a un campo que tiene varios constructores. En este caso, las advertencias y métricas están asociados con todos los constructores a menos que el constructor se encadena a otro constructor en la misma clase.  
   
- Por ejemplo, en la clase siguiente, cualquier advertencia que se encuentran en la declaración de **anonymousMethod** debe emitirse contra **Class (int)** y **Class (String)** pero no contra **Class()**.  
+ Por ejemplo, en la clase siguiente, cualquier advertencia que se encuentran en la declaración de **anonymousMethod** debe emitirse contra **Class (int)** y **Class (String)** pero no contra **Class()** .  
   
 ```vb  
   

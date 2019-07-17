@@ -12,11 +12,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 6e135b92cad94f2154341ca79c785d9e40ccb000
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60064757"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68160279"
 ---
 # <a name="setting-general-performance-session-options"></a>Establecer opciones generales de sesión de rendimiento
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -50,4 +50,4 @@ Puede establecer el método de recolección y las convenciones de nomenclatura d
   
 |||  
 |-|-|  
-|**Informe**. De forma predeterminada, el archivo de datos de generación de perfiles (.vsp) recibe el nombre de la aplicación de la que se generan perfiles y se sitúa en la carpeta de la solución o el proyecto. También se anexa al nombre una cadena de fecha y, en los archivos de datos que tendrían nombres duplicados, un número incrementado. Estas opciones se pueden modificar.|-   [Cómo: Establecimiento de opciones de nombre de archivo de datos de rendimiento](../profiling/how-to-set-performance-data-file-name-options.md)|
+|**Informe**. De forma predeterminada, el archivo de datos de generación de perfiles (.vsp) recibe el nombre de la aplicación de la que se generan perfiles y se sitúa en la carpeta de la solución o el proyecto. También se anexa al nombre una cadena de fecha y, en los archivos de datos que tendrían nombres duplicados, un número incrementado. Estas opciones se pueden modificar.|-   [Instrucciones: Establecimiento de opciones de nombre de archivo de datos de rendimiento](../profiling/how-to-set-performance-data-file-name-options.md)|

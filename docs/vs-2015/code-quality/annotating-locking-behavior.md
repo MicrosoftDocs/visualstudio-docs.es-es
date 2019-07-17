@@ -34,11 +34,11 @@ author: mikeblome
 ms.author: mblome
 manager: jillfra
 ms.openlocfilehash: 66c4aafb380d50ec0faafce931b8ce73e5138e6f
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60052394"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68157112"
 ---
 # <a name="annotating-locking-behavior"></a>Anotar comportamiento de bloqueo
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -51,7 +51,7 @@ Para evitar errores de simultaneidad en el programa multiproceso, siempre que si
   
  Anotaciones de SAL de simultaneidad están diseñadas para ayudarle a especificar bloqueos efectos secundarios, el bloqueo de responsabilidad, tutela de datos, jerarquía de orden de bloqueo y otros comportamientos de bloqueo esperado. Mediante la realización de las reglas implícitas explícitas, las anotaciones de SAL simultaneidad proporcionan una manera coherente para documentar cómo el código usa las reglas de bloqueos. Las anotaciones de simultaneidad también mejoran la capacidad de herramientas de análisis de código para encontrar las condiciones de carrera, interbloqueos, las operaciones de sincronización no coincidentes y otros errores sutiles de simultaneidad.  
   
-## <a name="general-guidelines"></a>Instrucciones generales  
+## <a name="general-guidelines"></a>Directrices generales  
  Mediante el uso de anotaciones, puede indicar los contratos que están implícitos en las definiciones de función entre implementaciones (destinatarios) y los clientes (llamadores) y las invariantes express y otras propiedades del programa que puede mejoran el análisis.  
   
  SAL admite muchos tipos diferentes de primitivas de bloqueo, por ejemplo, secciones críticas, exclusiones mutuas, bloqueos de giro y otros objetos de recursos. Muchas de las anotaciones de simultaneidad toman una expresión de bloqueo como un parámetro. Por convención, se indica un bloqueo mediante la expresión de ruta de acceso del objeto subyacente de bloqueo.  
@@ -67,7 +67,7 @@ Para evitar errores de simultaneidad en el programa multiproceso, siempre que si
 ## <a name="locking-annotations"></a>Anotaciones de bloqueos  
  En la tabla siguiente se enumera las anotaciones de bloqueos.  
   
-|Anotación|Descripción|  
+|Anotación|DESCRIPCIÓN|  
 |----------------|-----------------|  
 |`_Acquires_exclusive_lock_(expr)`|Anota una función e indica que en la entrada de estado de la función aumenta en uno el recuento de bloqueo exclusivo del objeto de bloqueo que se denomina por `expr`.|  
 |`_Acquires_lock_(expr)`|Anota una función e indica que en la entrada de estado de la función aumenta en uno el recuento de bloqueos del objeto de bloqueo que se denomina por `expr`.|  
@@ -91,7 +91,7 @@ Para evitar errores de simultaneidad en el programa multiproceso, siempre que si
 ## <a name="sal-intrinsics-for-unexposed-locking-objects"></a>Intrínsecos de SAL para objetos de bloqueo no expuestos  
  Ciertos objetos de bloqueo no se exponen mediante la implementación de las funciones de bloqueos asociadas.  En la tabla siguiente se enumera las variables intrínsecas de SAL que habilitan las anotaciones en las funciones que operan en los objetos de bloqueo no expuestos.  
   
-|Anotación|Descripción|  
+|Anotación|DESCRIPCIÓN|  
 |----------------|-----------------|  
 |`_Global_cancel_spin_lock_`|Describe el bloqueo de giro de cancelación.|  
 |`_Global_critical_region_`|Describe la región crítica.|  
@@ -101,7 +101,7 @@ Para evitar errores de simultaneidad en el programa multiproceso, siempre que si
 ## <a name="shared-data-access-annotations"></a>Anotaciones de acceso de datos compartidos  
  En la tabla siguiente se enumera las anotaciones para el acceso a datos compartidos.  
   
-|Anotación|Descripción|  
+|Anotación|DESCRIPCIÓN|  
 |----------------|-----------------|  
 |`_Guarded_by_(expr)`|Anota una variable e indica que cada vez que se accede a la variable, el recuento de bloqueos del objeto de bloqueo que se denomina por `expr` como mínimo.|  
 |`_Interlocked_`|Anota una variable y es equivalente a `_Guarded_by_(_Global_interlock_)`.|  
