@@ -15,11 +15,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: d047980a6d0b33dbe74182eec23b55aa4487799e
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59664575"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68199232"
 ---
 # <a name="go-to-line"></a>Ir a la línea
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -29,7 +29,7 @@ Este cuadro de diálogo permite desplazarse a una línea específica del documen
  Número de línea (1 - `n`)  
  Le permite introducir el número de la línea del documento activo a la que se quiere desplazar. El número introducido debe estar comprendido entre 1 y `n`, el número de líneas del documento actual.  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Otras referencias  
  [Establecer marcadores en el código](../../ide/setting-bookmarks-in-code.md)   
  [Buscar y reemplazar texto](../../ide/finding-and-replacing-text.md)   
  [Escribir código](../../ide/writing-code-in-the-code-and-text-editor.md)

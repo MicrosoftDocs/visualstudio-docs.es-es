@@ -20,11 +20,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 6590464b78d6b5452ce266d701aefc0f739185b3
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59648162"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68155946"
 ---
 # <a name="propertygroup-element-msbuild"></a>Elemento PropertyGroup (MSBuild)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -48,19 +48,19 @@ Contiene un conjunto de elementos [Property](../msbuild/property-element-msbuild
   
 ### <a name="attributes"></a>Atributos  
   
-|Atributo|Descripción|  
+|Atributo|DESCRIPCIÓN|  
 |---------------|-----------------|  
 |Condición|Atributo opcional.<br /><br /> Condición que se va a evaluar. Para obtener más información, consulte [Condiciones](../msbuild/msbuild-conditions.md).|  
   
 ### <a name="child-elements"></a>Elementos secundarios  
   
-|Elemento|Descripción|  
+|Elemento|DESCRIPCIÓN|  
 |-------------|-----------------|  
 |[Property](../msbuild/property-element-msbuild.md)|Elemento opcional.<br /><br /> Un nombre de propiedad definido por el usuario, que contiene el valor de propiedad. Puede haber cero o más elementos *Property* en un elemento `PropertyGroup`.|  
   
 ### <a name="parent-elements"></a>Elementos primarios  
   
-|Elemento|Descripción|  
+|Elemento|DESCRIPCIÓN|  
 |-------------|-----------------|  
 |[Proyecto](../msbuild/project-element-msbuild.md)|Elemento raíz necesario de un archivo de proyecto [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] .|  
   
@@ -75,6 +75,6 @@ Contiene un conjunto de elementos [Property](../msbuild/property-element-msbuild
 </PropertyGroup>  
 ```  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Otras referencias  
  [Referencia de esquemas de archivo del proyecto](../msbuild/msbuild-project-file-schema-reference.md)  
  [Propiedades de MSBuild](msbuild-properties1.md)

@@ -20,11 +20,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 48e867cd0993106247f7105c1102f4e1407a4fed
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59662743"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68190897"
 ---
 # <a name="message-task"></a>Message (Tarea)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,7 +34,7 @@ Registra un mensaje durante una compilación.
 ## <a name="parameters"></a>Parámetros  
  En la siguiente tabla se describen los parámetros de la tarea `Message`.  
   
-|Parámetro|Descripción|  
+|Parámetro|DESCRIPCIÓN|  
 |---------------|-----------------|  
 |`Importance`|Parámetro `String` opcional.<br /><br /> Especifica la importancia del mensaje. Este parámetro puede tener un valor de `high`, `normal` o `low`. El valor predeterminado es `normal`.|  
 |`Text`|Parámetro `String` opcional.<br /><br /> El texto del error que se va a registrar.|  
@@ -61,6 +61,6 @@ Registra un mensaje durante una compilación.
 </Project>  
 ```  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Otras referencias  
  [Referencia de tareas](../msbuild/msbuild-task-reference.md)   
  [Obtener registros de compilación](../msbuild/obtaining-build-logs-with-msbuild.md)

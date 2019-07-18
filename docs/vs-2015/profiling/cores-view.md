@@ -14,11 +14,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 869980fe7bbb773d566dffd38088b003e3a97a3d
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54763013"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68145642"
 ---
 # <a name="cores-view"></a>Vista de núcleos
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,7 +29,7 @@ En la vista Núcleos se muestra cómo se asignó la ejecución de subprocesos a 
   
  El área de la leyenda tiene una entrada para cada color del gráfico. Cada entrada muestra el color y el nombre del subproceso, el número de cambios de contexto entre núcleos, el número total de cambios de contexto y el porcentaje de cambios de contexto que atraviesan núcleos. La leyenda se ordena por el número de cambios de contexto entre núcleos, en orden decreciente. Enumera únicamente los subprocesos ejecutados durante el intervalo de tiempo mostrado.  La lista se actualiza si hace zoom o un movimiento panorámico.  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Otras referencias  
  [Visualizador de simultaneidad](../profiling/concurrency-visualizer.md)   
  [Vista Utilización](../profiling/utilization-view.md)   
  [Vista de subprocesos](../profiling/threads-view-parallel-performance.md)

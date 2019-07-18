@@ -10,11 +10,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 83dc76e3e92a05f936d94c8cd0f6a2b9b69e4cc1
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60073558"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68192826"
 ---
 # <a name="start"></a>Iniciar
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -51,7 +51,7 @@ VSPerfCmd.exe /Start:Method /Output:FileName [Options]
  **CrossSession**|**CS**  
  Habilita la generación de perfiles entre procesos. Los nombres de opción **CrossSession** y **CS** son compatibles.  
   
- **User:**[`domain\`]`username`  
+ **User:** [`domain\`]`username`  
  Permite el acceso de cliente al monitor desde la cuenta especificada.  
   
  **WinCounter:** `Path` [**Automark**:`n`]  
@@ -63,7 +63,7 @@ VSPerfCmd.exe /Start:Method /Output:FileName [Options]
  **Status**  
  **Status** se aplica a los procesos de los que se generan perfiles. Muestra los procesos y subprocesos y su estado de perfil actual (On/Off). Por ejemplo, si se detiene un proceso, **Status** no lo indicará en el informe. **Status** mostrará que ya se han generado perfiles del proceso o no.  
   
- **Shutdown**[**:**`Timeout`]  
+ **Shutdown**[ **:** `Timeout`]  
  Desactiva el generador de perfiles.  
   
 ## <a name="example"></a>Ejemplo  
@@ -74,7 +74,7 @@ VSPerfCmd.exe /Start:Sample /Output:TestApp.exe.vsp
 VSPerfCmd.exe /Launch:TestApp.exe  
 ```  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Otras referencias  
  [VSPerfCmd](../profiling/vsperfcmd.md)   
  [Generar perfiles para aplicaciones independientes](../profiling/command-line-profiling-of-stand-alone-applications.md)   
  [Generar perfiles para aplicaciones web ASP.NET](../profiling/command-line-profiling-of-aspnet-web-applications.md)   

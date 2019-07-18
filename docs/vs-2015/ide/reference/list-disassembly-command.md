@@ -15,11 +15,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: d361e5231d72df81fae164818bbe8341442c9f89
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59666265"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68199176"
 ---
 # <a name="list-disassembly-command"></a>Mostrar desensamblador (Comando)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -61,7 +61,7 @@ Debug.ListDisassembly [/count:number] [/endaddress:expression]
 >Debug.ListDisassembly  
 ```  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Otras referencias  
  [Comando Mostrar pila de llamadas](../../ide/reference/list-call-stack-command.md)   
  [Mostrar subprocesos (Comando)](../../ide/reference/list-threads-command.md)   
  [Comandos de Visual Studio](../../ide/reference/visual-studio-commands.md)   

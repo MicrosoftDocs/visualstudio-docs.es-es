@@ -13,11 +13,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 93451d6d49082621df48c734de951e6a4bc7e281
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60059362"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68156633"
 ---
 # <a name="how-to-display-an-item-list-separated-with-commas"></a>Cómo: Mostrar una lista de elementos separados por comas
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -46,7 +46,7 @@ Cuando se trabaja con listas de elementos en [!INCLUDE[vstecmsbuildengine](../in
      `@(TXTFile, ', ')`  
   
 ## <a name="example"></a>Ejemplo  
- En este ejemplo, la tarea [Exec](../msbuild/exec-task.md) ejecuta la herramienta findstr para buscar cadenas de texto especificadas en el archivo Phrases.txt. En el comando findstr, las cadenas de búsqueda literal se indican mediante el modificador **/c:**, por lo que el separador de elementos `/c:` se inserta entre los elementos de la lista de elementos `@(Phrase)`.  
+ En este ejemplo, la tarea [Exec](../msbuild/exec-task.md) ejecuta la herramienta findstr para buscar cadenas de texto especificadas en el archivo Phrases.txt. En el comando findstr, las cadenas de búsqueda literal se indican mediante el modificador **/c:** , por lo que el separador de elementos `/c:` se inserta entre los elementos de la lista de elementos `@(Phrase)`.  
   
  En este ejemplo, el comando de línea de comandos equivalente es:  
   
@@ -69,6 +69,6 @@ Cuando se trabaja con listas de elementos en [!INCLUDE[vstecmsbuildengine](../in
 </Project>  
 ```  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Otras referencias  
  [Referencia de MSBuild](../msbuild/msbuild-reference.md)   
  [Elementos](../msbuild/msbuild-items.md)

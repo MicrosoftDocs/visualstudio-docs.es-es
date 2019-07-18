@@ -13,11 +13,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 041e83f8d71679ffb26d24be37f353e39fbc08e6
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54765849"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68148287"
 ---
 # <a name="accessibility-features-of-the-help-viewer"></a>Características de accesibilidad del Visor de Ayuda
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,5 +39,5 @@ Microsoft ha asumido el compromiso de facilitar el acceso de todos los usuarios 
 ## <a name="internet-explorer-options"></a>Opciones de Internet Explorer  
  Puede hacer el Visor de Ayuda más accesible cambiando las opciones de Internet Explorer que se relacionan con la apariencia de las páginas web. Para obtener más información, vea [Personalizar el Visor de Ayuda](../ide/customize-the-help-viewer.md).  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Otras referencias  
  [Visor de Ayuda de Microsoft](../ide/microsoft-help-viewer.md)

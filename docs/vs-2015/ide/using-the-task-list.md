@@ -17,11 +17,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 9c9526b2deaafb36e991afce6d29ace47f8564ba
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60091413"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68179334"
 ---
 # <a name="using-the-task-list"></a>Usar la Lista de tareas
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -113,7 +113,7 @@ Use la **Lista de tareas** para hacer un seguimiento de los comentarios de códi
   
 2. En el cuadro de diálogo **Opciones** abra el **Editor de texto**.  
   
-3. En **C/C++**, elija **Ver**y establezca **Enumerar tareas de comentario** como **Falso**.  
+3. En **C/C++** , elija **Ver**y establezca **Enumerar tareas de comentario** como **Falso**.  
   
 ## <a name="shortcuts"></a> Accesos directos  
  Un *acceso directo* es un marcador en el código al que se le realiza el seguimiento en la **Lista de tareas**; su icono es diferente al de los marcadores normales. Haga doble clic en el acceso directo en la **Lista de tareas** para ir a la ubicación correspondiente en el código.  
@@ -126,5 +126,5 @@ Use la **Lista de tareas** para hacer un seguimiento de los comentarios de códi
   
      Para navegar por los accesos directos en el código, elija un acceso directo de la lista y, después, elija **Tarea siguiente** o **Tarea anterior** en el menú contextual.  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Otras referencias  
  [Lista de tareas, Entorno, Opciones (Cuadro de diálogo)](../ide/reference/task-list-environment-options-dialog-box.md)

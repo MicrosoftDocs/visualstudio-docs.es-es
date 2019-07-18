@@ -19,11 +19,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: afdeda6c18c20af1b7f82e42cedc4aadac13ebcb
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59661678"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68178372"
 ---
 # <a name="advanced-security-settings-dialog-box"></a>Cuadro de diálogo Configuración de seguridad avanzada
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -46,5 +46,5 @@ Este cuadro de diálogo permite especificar la configuración de seguridad relac
  **Depurar esta aplicación como si se hubiera descargado de la siguiente dirección URL:**  
  Si necesita que la aplicación tenga acceso al sitio web o recurso compartido de servidor correspondiente a la **Dirección URL de instalación** especificada en la página **Publicar**, escriba esa dirección URL aquí. Esta opción solo está disponible cuando está seleccionada la opción **Conceder a la aplicación acceso al sitio de origen**.  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Otras referencias  
  [Página Seguridad, Diseñador de proyectos](../../ide/reference/security-page-project-designer.md)

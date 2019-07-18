@@ -15,11 +15,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 010d2c395d77be590b3d8d3bc26fc83aaa63adfa
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59660611"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68199262"
 ---
 # <a name="go-to-command"></a>Ir a (Comando)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -49,7 +49,7 @@ Edit.GoTo [linenumber]
 >Edit.GoTo 125  
 ```  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Otras referencias  
  [Comandos de Visual Studio](../../ide/reference/visual-studio-commands.md)   
  [Ventana Comandos](../../ide/reference/command-window.md)   
  [Cuadro Buscar/Comando](../../ide/find-command-box.md)   

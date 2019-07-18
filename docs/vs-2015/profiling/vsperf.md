@@ -10,11 +10,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: ee221f0c1da32694e869177399981cc16ce901f4
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60099473"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68145292"
 ---
 # <a name="vsperf"></a>VSPerf
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -69,6 +69,6 @@ Utilice la herramienta de línea de comandos **VsPerf** para:
 |**/detach**|Detiene la recopilación de datos, pero permite que los procesos de destino sigan ejecutándose.|  
 |**/status**|Muestra el estado del generador de perfiles.|  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Otras referencias  
  [Herramientas de rendimiento en aplicaciones de Windows 8 y Windows Server 2012](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md)   
  [Generación de perfiles desde la línea de comandos](../profiling/using-the-profiling-tools-from-the-command-line.md)

@@ -15,11 +15,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 94fc8d858e2db9bd1e00bb8770cf52672a900ab0
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60065005"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68178347"
 ---
 # <a name="how-to-escape-special-characters-in-msbuild"></a>Cómo: Utilizar caracteres de escape especiales en MSBuild
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,6 +45,6 @@ Ciertos caracteres tienen un significado especial en archivos del proyecto de [!
   
 - Utilice la notación %*xx* en lugar del carácter especial, en que *xx* representa el valor hexadecimal del carácter ASCII. Por ejemplo, para usar un asterisco (*) como un carácter literal, utilice el valor `%2A`.  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Otras referencias  
  [Conceptos de MSBuild](../msbuild/msbuild-concepts.md)   
  [Elementos de](../msbuild/msbuild-items.md) [MSBuild](msbuild.md)

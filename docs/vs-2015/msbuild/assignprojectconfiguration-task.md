@@ -15,11 +15,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: e2091fad7e527990e8ed89ea8622cf41c1ae1ac4
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59668606"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68187035"
 ---
 # <a name="assignprojectconfiguration-task"></a>AssignProjectConfiguration (Tarea)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,7 +29,7 @@ Esta tarea acepta cadenas de configuración de lista y las asigna a los proyecto
 ## <a name="task-parameters"></a>Parámetros de tareas  
  En la siguiente tabla se describen los parámetros de la tarea `AssignProjectConfiguration`.  
   
-|Parámetro|Descripción|  
+|Parámetro|DESCRIPCIÓN|  
 |---------------|-----------------|  
 |`SolutionConfigurationContents`|Parámetro de salida `string` opcional.<br /><br /> Contiene una cadena XML que incluye una configuración de proyecto para cada proyecto. Las configuraciones se asignan a los proyectos con nombre.|  
 |`DefaultToVcxPlatformMapping`|Parámetro de salida `string` opcional.<br /><br /> Contiene una lista delimitada por puntos y coma de asignaciones de los nombres de plataforma que utilizan<br /><br /> la mayoría de los tipos a los que usan los archivos .vcxproj.<br /><br /> Por ejemplo:<br /><br /> `"AnyCPU=Win32;X86=Win32;X64=X64"`|  
@@ -46,6 +46,6 @@ Esta tarea acepta cadenas de configuración de lista y las asigna a los proyecto
 ## <a name="remarks"></a>Comentarios  
  Además de los parámetros mencionados anteriormente, esta tarea hereda los parámetros de la clase <xref:Microsoft.Build.Tasks.TaskExtension>, que a su vez hereda de la clase <xref:Microsoft.Build.Utilities.Task>. Para obtener una lista de estos parámetros adicionales y sus descripciones, vea [TaskExtension Base Class](../msbuild/taskextension-base-class.md).  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Otras referencias  
  [Tareas](../msbuild/msbuild-tasks.md)   
  [Referencia de tareas](../msbuild/msbuild-task-reference.md)

@@ -21,11 +21,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 49d25d49554c587bcaaba8ef09bac967d4b5599a
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59660676"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68157376"
 ---
 # <a name="setenv-task"></a>SetEnv (Tarea)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,7 +35,7 @@ Establece o elimina el valor de una variable de entorno especificada.
 ## <a name="parameters"></a>Parámetros  
  En la siguiente tabla, se describen los parámetros de la tarea **SetEnv**.  
   
-|Parámetro|Descripción|  
+|Parámetro|DESCRIPCIÓN|  
 |---------------|-----------------|  
 |**Name**|Parámetro obligatorio de tipo **String**.<br /><br /> Nombre de una variable de entorno.|  
 |**OutputEnvironmentVariable**|Parámetro de salida de tipo **String** opcional.<br /><br /> Contiene el valor que se asigna a la variable de entorno especificada por el parámetro **Name**.|  
@@ -45,5 +45,5 @@ Establece o elimina el valor de una variable de entorno especificada.
   
 ## <a name="remarks"></a>Comentarios  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Otras referencias  
  [Referencia de tareas](../msbuild/msbuild-task-reference.md)

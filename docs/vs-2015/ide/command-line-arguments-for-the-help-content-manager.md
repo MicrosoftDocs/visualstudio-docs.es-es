@@ -10,11 +10,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: ae1643b4a01c9bcab3878ec82b1808444cdc7712
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54778635"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68188817"
 ---
 # <a name="command-line-arguments-for-the-help-content-manager"></a>Argumentos de línea de comandos para Help Content Manager
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -88,6 +88,6 @@ UpdateAlreadyRunning = 1300 – (Signals that the update didn't run because anot
   
 ```  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Otras referencias  
  [Guía del administrador del Visor de Ayuda](../ide/help-viewer-administrator-guide.md)   
  [Invalidaciones de Help Content Manager](../ide/help-content-manager-overrides.md)

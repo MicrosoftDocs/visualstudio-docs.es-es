@@ -14,11 +14,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: a0d95d4593939b878194d2aeef79bdd0a8ad946a
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54756522"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68160637"
 ---
 # <a name="execution-profile-report"></a>Informe del perfil de ejecución
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,7 +31,7 @@ El informe del perfil de ejecución es un perfil de muestreo tradicional. Se tom
   
   En la tabla siguiente se muestran las columnas del informe.  
   
-|Columna|Descripción|  
+|Columna|DESCRIPCIÓN|  
 |------------|-----------------|  
 |nombre|El nombre de la función para cada nivel de la pila de llamadas.|  
 |Muestras inclusivas|Número total de muestras recopiladas para todas las pilas que se acumulan en este nivel del árbol de pila de llamadas. El número inclusivo es la suma de muestras exclusivas de esta función y de contadores inclusivos para todos sus nodos secundarios.|  
@@ -42,5 +42,5 @@ El informe del perfil de ejecución es un perfil de muestreo tradicional. Se tom
   
  Esta tabla de informe se puede ver en la vista [Tiempo de ejecución (vista de subprocesos)](../profiling/execution-time-threads-view.md).  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Otras referencias  
  [Vista de subprocesos](../profiling/threads-view-parallel-performance.md)

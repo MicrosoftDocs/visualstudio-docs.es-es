@@ -17,11 +17,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 68e5dcc5ff2e78fe87bbaad639c93f5532ea74fe
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60065680"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68163386"
 ---
 # <a name="run-devenvexe"></a>/Run (devenv.exe)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -55,7 +55,7 @@ devenv {/run|/r} {SolutionName|ProjectName}
 devenv /run "C:\Documents and Settings\someuser\My Documents\Visual Studio\Projects\MySolution\MySolution.sln"  
 ```  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Otras referencias  
  [Modificadores de línea de comandos para Devenv](../../ide/reference/devenv-command-line-switches.md)   
  [/Runexit (devenv.exe)](../../ide/reference/runexit-devenv-exe.md)   
  [/Build (devenv.exe)](../../ide/reference/build-devenv-exe.md)   

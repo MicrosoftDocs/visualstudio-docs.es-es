@@ -10,11 +10,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 1a550b4a6634604594da0893e3f420fd9c38ca3c
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59650738"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68181016"
 ---
 # <a name="msbuild-target-framework-and-target-platform"></a>Plataforma de destino de MSBuild
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -85,5 +85,5 @@ Un proyecto se puede compilar para su ejecución en una *plataforma de destino*,
   
 ```  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Otras referencias  
  [Compatibilidad con múltiples versiones (multi-targeting)](../msbuild/msbuild-multitargeting-overview.md)

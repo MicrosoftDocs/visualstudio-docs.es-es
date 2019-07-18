@@ -18,11 +18,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 1705fd2b79f8b5044aa4ffa0b65801d6db6c7f33
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59665563"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68198958"
 ---
 # <a name="xsltransformation-task"></a>XslTransformation (Tarea)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ Transforma una entrada XML mediante una transformación XSL o una transformació
 ## <a name="parameters"></a>Parámetros  
  En la siguiente tabla se describen los parámetros de la tarea `XslTransformation` .  
   
-|Parámetro|Descripción|  
+|Parámetro|DESCRIPCIÓN|  
 |---------------|-----------------|  
 |`OutputPaths`|Parámetro <xref:Microsoft.Build.Framework.ITaskItem>`[]` requerido.<br /><br /> Especifica los archivos de salida de la transformación XML.|  
 |`Parameters`|Parámetro `String` opcional.<br /><br /> Especifica los parámetros del documento de entrada XSLT.|  
@@ -45,6 +45,6 @@ Transforma una entrada XML mediante una transformación XSL o una transformació
 ## <a name="remarks"></a>Comentarios  
  Además de tener los parámetros que se enumeran en la tabla, esta tarea hereda los parámetros de la clase <xref:Microsoft.Build.Tasks.TaskExtension>, que a su vez hereda de la clase <xref:Microsoft.Build.Utilities.Task>. Para obtener una lista de estos parámetros adicionales y sus descripciones, vea [TaskExtension Base Class](../msbuild/taskextension-base-class.md).  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Otras referencias  
  [Tareas](../msbuild/msbuild-tasks.md)   
  [Referencia de tareas](../msbuild/msbuild-task-reference.md)

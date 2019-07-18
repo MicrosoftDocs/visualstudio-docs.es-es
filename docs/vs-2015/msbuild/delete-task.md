@@ -20,11 +20,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: ea1411925c6858bceaea3e2e190ecb1a5f2c7f89
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59662171"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68196554"
 ---
 # <a name="delete-task"></a>Delete (Tarea)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,7 +34,7 @@ Elimina los archivos especificados.
 ## <a name="parameters"></a>Parámetros  
  En la siguiente tabla se describen los parámetros de la tarea `Delete` .  
   
-|Parámetro|Descripción|  
+|Parámetro|DESCRIPCIÓN|  
 |---------------|-----------------|  
 |`DeletedFiles`|Parámetro de salida <xref:Microsoft.Build.Framework.ITaskItem>`[]` opcional.<br /><br /> Especifica los archivos que se eliminaron correctamente.|  
 |`Files`|Parámetro <xref:Microsoft.Build.Framework.ITaskItem>`[]` requerido.<br /><br /> Especifica los archivos que se van a eliminar.|  
@@ -59,6 +59,6 @@ Elimina los archivos especificados.
 </Project>  
 ```  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Otras referencias  
  [Tareas](../msbuild/msbuild-tasks.md)   
  [Referencia de tareas](../msbuild/msbuild-task-reference.md)

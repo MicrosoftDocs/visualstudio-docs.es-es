@@ -20,11 +20,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: acf285c895e5160e850b6bc8f20f920279a5e26c
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59659285"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68154788"
 ---
 # <a name="otherwise-element-msbuild"></a>Elemento Otherwise (MSBuild)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -58,7 +58,7 @@ Especifica el bloque de código que se ejecutará solo si las condiciones de tod
   
 ### <a name="child-elements"></a>Elementos secundarios  
   
-|Elemento|Descripción|  
+|Elemento|DESCRIPCIÓN|  
 |-------------|-----------------|  
 |[Choose](../msbuild/choose-element-msbuild.md)|Elemento opcional.<br /><br /> Evalúa los elementos secundarios para seleccionar una sección de código y ejecutarla. Puede haber cero o más elementos `Choose` en un elemento `Otherwise`.|  
 |[ItemGroup](../msbuild/itemgroup-element-msbuild.md)|Elemento opcional.<br /><br /> Contiene un conjunto de elementos [Item](../msbuild/item-element-msbuild.md) definidos por el usuario. Puede haber cero o más elementos `ItemGroup` en un elemento `Otherwise`.|  
@@ -66,7 +66,7 @@ Especifica el bloque de código que se ejecutará solo si las condiciones de tod
   
 ### <a name="parent-elements"></a>Elementos primarios  
   
-|Elemento|Descripción|  
+|Elemento|DESCRIPCIÓN|  
 |-------------|-----------------|  
 |[Choose](../msbuild/choose-element-msbuild.md)|Evalúa los elementos secundarios para seleccionar una sección de código y ejecutarla.|  
   
@@ -123,6 +123,6 @@ Especifica el bloque de código que se ejecutará solo si las condiciones de tod
 </Project>  
 ```  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Otras referencias  
  [Construcciones condicionales](../msbuild/msbuild-conditional-constructs.md)   
  [Referencia de esquemas de archivo del proyecto](../msbuild/msbuild-project-file-schema-reference.md)

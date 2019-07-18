@@ -13,11 +13,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: ed19c5b95351f8e9c34255a915fc6a446800f761
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59669945"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68163339"
 ---
 # <a name="set-current-process"></a>Establecer el proceso actual
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -43,7 +43,7 @@ Debug.SetCurrentProcess index
 >Debug.SetCurrentProcess 1  
 ```  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Otras referencias  
  [Comandos de Visual Studio](../../ide/reference/visual-studio-commands.md)   
  [Ventana Comandos](../../ide/reference/command-window.md)   
  [Visual Studio Command Aliases](../../ide/reference/visual-studio-command-aliases.md)

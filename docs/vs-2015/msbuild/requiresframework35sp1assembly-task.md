@@ -18,11 +18,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: ada207a619021922b999d0e821ecf27ba48dbb38
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59650647"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68158738"
 ---
 # <a name="requiresframework35sp1assembly-task"></a>RequiresFramework35SP1Assembly (Tarea)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ Determina si la aplicación requiere .NET Framework 3.5 SP1.
 ## <a name="parameters"></a>Parámetros  
  En la siguiente tabla se describen los parámetros de la tarea `RequiresFramework35SP1Assembly` .  
   
-|Parámetro|Descripción|  
+|Parámetro|DESCRIPCIÓN|  
 |---------------|-----------------|  
 |`Assemblies`|Parámetro <xref:Microsoft.Build.Framework.ITaskItem>`[]` opcional.<br /><br /> Especifica los ensamblados a los que se hace referencia en la aplicación.|  
 |`CreateDesktopShortcut`|Parámetro `Boolean` opcional.<br /><br /> Si es `true`, crea un icono de acceso directo en el escritorio durante la instalación.|  
@@ -49,6 +49,6 @@ Determina si la aplicación requiere .NET Framework 3.5 SP1.
 ## <a name="remarks"></a>Comentarios  
  Además de tener los parámetros que se enumeran en la tabla, esta tarea hereda los parámetros de la clase <xref:Microsoft.Build.Tasks.TaskExtension>, que a su vez hereda de la clase <xref:Microsoft.Build.Utilities.Task>. Para obtener una lista de estos parámetros adicionales y sus descripciones, vea [TaskExtension Base Class](../msbuild/taskextension-base-class.md).  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Otras referencias  
  [Tareas](../msbuild/msbuild-tasks.md)   
  [Referencia de tareas](../msbuild/msbuild-task-reference.md)

@@ -12,11 +12,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: b27b185e659fc3a1f0adca4379896543a1eb87ea
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54834592"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68187848"
 ---
 # <a name="instruction-pointers-ips-view---contention-data"></a>Vista Punteros de instrucción (IP): Datos de contención
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,7 +25,7 @@ La vista Punteros de instrucción de datos de contención muestra los datos de l
   
  En la siguiente tabla se explican los valores de las columnas de la vista Punteros de instrucción.  
   
-|Columna|Descripción|  
+|Columna|DESCRIPCIÓN|  
 |------------|-----------------|  
 |**Tiempo de bloqueo exclusivo**|El tiempo de bloqueo en esta función.|  
 |**Porcentaje de tiempo de bloqueo exclusivo**|El porcentaje de tiempo de bloqueo mientras se ejecutaba la instrucción.|  
@@ -45,7 +45,7 @@ La vista Punteros de instrucción de datos de contención muestra los datos de l
 |**Línea de inicio del origen**|El número de línea en el archivo de origen en el que comienza esta instrucción.|  
 |**Línea de finalización del origen**|El número de línea en el archivo de origen en el que finaliza esta instrucción.|  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Otras referencias  
  [Cómo: Personalizar las columnas de la vista de informes](../profiling/how-to-customize-report-view-columns.md)   
  [Vista Punteros de instrucción (IP)](../profiling/instruction-pointers-ips-view.md)   
  [Vista Punteros de instrucción (IP): muestreo](../profiling/instruction-pointers-ips-view-dotnet-memory-sampling-data.md)   

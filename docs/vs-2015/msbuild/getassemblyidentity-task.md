@@ -20,11 +20,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 9b4a578d1d22c6e912fd3f7edc203195dbba8987
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59666083"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68178395"
 ---
 # <a name="getassemblyidentity-task"></a>GetAssemblyIdentity (Tarea)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,7 +34,7 @@ Recupera las identidades de ensamblado de los archivos especificados y genera la
 ## <a name="task-parameters"></a>Parámetros de tareas  
  En la siguiente tabla se describen los parámetros de la tarea `GetAssemblyIdentity`.  
   
-|Parámetro|Descripción|  
+|Parámetro|DESCRIPCIÓN|  
 |---------------|-----------------|  
 |`Assemblies`|Parámetro de salida <xref:Microsoft.Build.Framework.ITaskItem>`[]` opcional.<br /><br /> Contiene las identidades de ensamblado recuperadas.|  
 |`AssemblyFiles`|Parámetro <xref:Microsoft.Build.Framework.ITaskItem>`[]` requerido.<br /><br /> Especifica los archivos de los que se recuperarán las identidades.|  
@@ -65,6 +65,6 @@ Recupera las identidades de ensamblado de los archivos especificados y genera la
 </Project>  
 ```  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Otras referencias  
  [Tareas](../msbuild/msbuild-tasks.md)   
  [Referencia de tareas](../msbuild/msbuild-task-reference.md)

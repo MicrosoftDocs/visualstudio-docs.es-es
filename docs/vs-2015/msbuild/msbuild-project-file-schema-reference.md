@@ -17,11 +17,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 847fa53acad63cec151222521ed8f85090c52080
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59660533"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68158861"
 ---
 # <a name="msbuild-project-file-schema-reference"></a>Referencia de esquemas del archivo de proyecto MSBuild
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -57,7 +57,7 @@ Proporciona una tabla de todos los elementos de esquema XML [!INCLUDE[vstecmsbui
 |[Elemento UsingTask (MSBuild)](../msbuild/usingtask-element-msbuild.md)|ParameterGroup<br /><br /> TaskBody|AssemblyFile<br /><br /> AssemblyName<br /><br /> Condición<br /><br /> TaskFactory<br /><br /> TaskName|  
 |[Elemento When (MSBuild)](../msbuild/when-element-msbuild.md)|Elegir<br /><br /> ItemGroup<br /><br /> PropertyGroup|Condición|  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Otras referencias  
  [Referencia de tareas](../msbuild/msbuild-task-reference.md)   
  [Condiciones](../msbuild/msbuild-conditions.md)   
  [Referencia de MSBuild](../msbuild/msbuild-reference.md)  

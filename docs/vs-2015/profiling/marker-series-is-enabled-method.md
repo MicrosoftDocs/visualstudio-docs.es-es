@@ -14,11 +14,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 9ccef8ebbf63835a71027643b518280d5f4f867b
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54797957"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68156418"
 ---
 # <a name="markerseriesisenabled-method"></a>marker_series::is_enabled (Método)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,5 +49,5 @@ bool is_enabled(
   
  **Espacio de nombres:** Concurrency::diagnostic  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Otras referencias  
  [Clase marker_series](../profiling/marker-series-class.md)

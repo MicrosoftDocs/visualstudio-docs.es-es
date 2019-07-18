@@ -17,11 +17,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 19fa9c35011e42905c1f26ed34da405be61d0aba
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59649568"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68181082"
 ---
 # <a name="msbuild-reserved-and-well-known-properties"></a>Propiedades reservadas y conocidas de MSBuild
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ ms.locfileid: "59649568"
 ## <a name="reserved-and-well-known-properties"></a>Propiedades reservadas y conocidas  
  En la tabla siguiente se describen las propiedades predefinidas de [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)].  
   
-|Propiedad.|Descripción|Reservadas o conocidas|  
+|Propiedad.|DESCRIPCIÓN|Reservadas o conocidas|  
 |--------------|-----------------|-----------------------------|  
 |`MSBuildBinPath`|Ruta de acceso absoluta de la carpeta donde se encuentran los archivos binarios de [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] que se están utilizando actualmente (por ejemplo, C:\Windows\Microsoft.Net\Framework\\*versionNumber*). Esta propiedad es útil si necesita hacer referencia a los archivos del directorio de [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)].<br /><br /> No incluya la barra diagonal inversa final en esta propiedad.|Reservada|  
 |`MSBuildExtensionsPath`|Introducida en .NET Framework 4: no hay ninguna diferencia entre los valores predeterminados de `MSBuildExtensionsPath` y de `MSBuildExtensionsPath32`. Puede establecer la variable de entorno `MSBUILDLEGACYEXTENSIONSPATH` en un valor distinto de null para habilitar el comportamiento del valor predeterminado de `MSBuildExtensionsPath` en versiones anteriores.<br /><br /> En .NET Framework 3.5 y en versiones anteriores, el valor predeterminado de `MSBuildExtensionsPath` apunta a la ruta de la subcarpeta de MSBuild bajo la carpeta \Archivos de programa\ o \Archivos de programa (x86), según el valor de bits del proceso actual. Por ejemplo, para un proceso de 32 bits en un equipo de 64 bits, esta propiedad apunta a la carpeta \Archivos de programa (x86). Para un proceso de 64 bits en un equipo de 64 bits, esta propiedad apunta a la carpeta \Archivos de programa.<br /><br /> No incluya la barra diagonal inversa final en esta propiedad.<br /><br /> Esta ubicación es un lugar útil para colocar archivos de destino personalizados. Por ejemplo, podría instalar archivos de destino en \Archivos de programa\MSBuild\MisArchivos\Northwind.targets y, a continuación, importarlos en archivos de proyecto con este código XML:<br /><br /> `<Import Project="$(MSBuildExtensionsPath)\MyFiles\Northwind.targets"/>`|Conocida|  
@@ -59,5 +59,5 @@ ms.locfileid: "59649568"
 |`MSBuildToolsPath`|Ruta de acceso de instalación de la versión de [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] que se asocia al valor de `MSBuildToolsVersion`.<br /><br /> No incluya la barra diagonal inversa final de la ruta.<br /><br /> Esta propiedad no se puede invalidar.|Reservada|  
 |`MSBuildToolsVersion`|Versión del conjunto de herramientas de [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] que se utilizará para compilar el proyecto.<br /><br /> Nota: Un conjunto de herramientas de [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] consta de tareas, destinos y herramientas que se utilizan para compilar una aplicación. Las herramientas incluyen compiladores como csc.exe y vbc.exe. Para obtener más información, consulte [Conjunto de herramientas (ToolsVersion)](../msbuild/msbuild-toolset-toolsversion.md) y [Configuraciones de conjuntos de herramientas estándar y personalizados](../msbuild/standard-and-custom-toolset-configurations.md).|Reservada|  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Otras referencias  
  [Referencia de MSBuild](../msbuild/msbuild-reference.md) [Propiedades de MSBuild](msbuild-properties1.md)

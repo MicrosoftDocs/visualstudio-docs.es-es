@@ -14,11 +14,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 793b0e49a8e2dcb38b5b2421f09bd2b2ad3d7eed
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54774593"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68160320"
 ---
 # <a name="report-based-on-visible-time-range"></a>Informe basado en el intervalo de tiempo visible
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,7 +27,7 @@ La vista Perfil muestra los informes que se basan en los canales y el intervalo 
   
  Puede encontrar más información sobre los datos de las tablas aquí.  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Otras referencias  
  [No hay actividad de subprocesos para mostrar](../profiling/no-thread-activity-to-show-threads-view.md)   
  [Informe del perfil de ejecución](../profiling/execution-profile-report.md)   
  [Hora de sincronización](../profiling/synchronization-time.md)   

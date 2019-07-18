@@ -11,11 +11,11 @@ caps.latest.revision: 41
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 37e0ae51589d85ac52ec962fb3cb193fc37a7ad4
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60081260"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68147906"
 ---
 # <a name="best-practices-for-coded-ui-tests"></a>Procedimientos recomendados para las pruebas de IU codificadas
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -86,7 +86,7 @@ this.UIMap.ClickSubmit();
 Playback.PlaybackSettings.WaitForReadyLevel = WaitForReadyLevel.UIThreadOnly;  
 ```  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Otras referencias  
  <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UIMap.UIMap>   
  <xref:Microsoft.VisualStudio.TestTools.UITesting>   
  [Usar UI Automation para probar el código](../test/use-ui-automation-to-test-your-code.md)   

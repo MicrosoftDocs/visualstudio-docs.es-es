@@ -13,11 +13,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: ac74dde41a2d6cea0a768cfc89838cc34ce41afd
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54799147"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68179321"
 ---
 # <a name="ltvaluegt-javascript"></a>&lt;value&gt; (JavaScript)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,7 +49,7 @@ Especifica información de documentación de las funciones `get` y `set` para pr
   Opcional. Si `type` es `Number`, especifica si la propiedad es un entero. Establézcalo en `true` para indicar que la propiedad es un entero; de lo contrario, establézcalo en `false`. Visual Studio no utiliza este atributo para proporcionar información de IntelliSense.  
   
   `domElement`  
-  Opcional. Este atributo está en desuso; el atributo `type` tiene prioridad sobre este. Este atributo especifica si la propiedad documentada es un elemento DOM. Establézcalo en `true` para especificar que la propiedad es un elemento DOM; de lo contrario, establézcalo en `false`. Si el atributo `type` no se establece y `domElement` se establece en `true`, IntelliSense trata la propiedad documentada como `HTMLElement` al realizar la finalización de instrucciones.  
+  Opcional. Este atributo está desusado; el atributo `type` tiene prioridad sobre este. Este atributo especifica si la propiedad documentada es un elemento DOM. Establézcalo en `true` para especificar que la propiedad es un elemento DOM; de lo contrario, establézcalo en `false`. Si el atributo `type` no se establece y `domElement` se establece en `true`, IntelliSense trata la propiedad documentada como `HTMLElement` al realizar la finalización de instrucciones.  
   
   `mayBeNull`  
   Opcional. Especifica si la propiedad documentada se puede establecer en NULL. Establézcalo en `true` para indicar que la propiedad se puede establecer en NULL; de lo contrario, establézcalo en `false`. El valor predeterminado es `false`. Visual Studio no utiliza este atributo para proporcionar información de IntelliSense.  
@@ -61,13 +61,13 @@ Especifica información de documentación de las funciones `get` y `set` para pr
   Opcional. Si `type` es `Array` y `elementType` es `Number`, este atributo especifica si los elementos de la matriz son enteros. Establézcalo en `true` para indicar que los elementos de la matriz son enteros; de lo contrario, establézcalo en `false`. Visual Studio no utiliza este atributo para proporcionar información de IntelliSense.  
   
   `elementDomElement`  
-  Opcional. Este atributo está en desuso; el atributo `elementType` tiene prioridad sobre este. Si `type` es `Array`, este atributo especifica si los elementos de la matriz son elementos DOM. Establézcalo en `true` para especificar que los elementos son elementos DOM; de lo contrario, establézcalo en `false`. Si el atributo `elementType` no se establece y `elementDomElement` se establece en `true`, IntelliSense trata cada elemento de la matriz como `HTMLElement` al realizar la finalización de instrucciones.  
+  Opcional. Este atributo está desusado; el atributo `elementType` tiene prioridad sobre este. Si `type` es `Array`, este atributo especifica si los elementos de la matriz son elementos DOM. Establézcalo en `true` para especificar que los elementos son elementos DOM; de lo contrario, establézcalo en `false`. Si el atributo `elementType` no se establece y `elementDomElement` se establece en `true`, IntelliSense trata cada elemento de la matriz como `HTMLElement` al realizar la finalización de instrucciones.  
   
   `elementMayBeNull`  
   Opcional. Si `type` es `Array`, especifica si los elementos de la matriz se pueden establecer en NULL. Establézcalo en `true` para indicar que los elementos de la matriz se pueden establecer en NULL; de lo contrario, establézcalo en `false`. El valor predeterminado es `false`. Visual Studio no utiliza este atributo para proporcionar información de IntelliSense.  
   
   `locid`  
-  Opcional. Identificador de la información de localización sobre la propiedad. El identificador es un identificador de miembro o corresponde al valor del atributo `name` en un paquete de mensajes definido por los metadatos de OpenAjax. El tipo de identificador depende del formato especificado en el [ \<loc >](../ide/loc-javascript.md) elemento.  
+  Opcional. Identificador de la información de localización sobre la propiedad. El identificador es un identificador de miembro o corresponde al valor del atributo `name` en un paquete de mensajes definido por los metadatos de OpenAjax. El tipo de identificador depende del formato especificado en el elemento [\<loc>](../ide/loc-javascript.md).  
   
   `description`  
   Opcional. Una descripción de la propiedad.  
@@ -88,5 +88,5 @@ function Sys$CancelEventArgs$get_cancel() {
 }  
 ```  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Otras referencias  
  [Comentarios de documentación XML](../ide/xml-documentation-comments-javascript.md)

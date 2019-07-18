@@ -20,11 +20,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: ea16950e47760e89204503413fd98811e781d059
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59649763"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68184060"
 ---
 # <a name="createproperty-task"></a>CreateProperty (Tarea)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,7 +34,7 @@ Rellena las propiedades con los valores pasados. Esto permite que los valores se
 ## <a name="attributes"></a>Atributos  
  En la siguiente tabla se describen los parámetros de la tarea `CreateProperty` .  
   
-|Parámetro|Descripción|  
+|Parámetro|DESCRIPCIÓN|  
 |---------------|-----------------|  
 |`Value`|Parámetro de salida `String` opcional.<br /><br /> Especifica el valor que se copiará en la nueva propiedad.|  
 |`ValueSetByTask`|Parámetro de salida `String` opcional.<br /><br /> Contiene el mismo valor que el parámetro `Value`. Use este parámetro únicamente cuando quiera impedir que [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] establezca la propiedad de salida cuando omita el destino que lo contiene porque las salidas están actualizadas.|  
@@ -69,6 +69,6 @@ Rellena las propiedades con los valores pasados. Esto permite que los valores se
   
  Después de ejecutar el proyecto, el valor de la propiedad `NewFile` es `Module1.vb`.  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Otras referencias  
  [Referencia de tareas](../msbuild/msbuild-task-reference.md)   
  [Tareas](../msbuild/msbuild-tasks.md)

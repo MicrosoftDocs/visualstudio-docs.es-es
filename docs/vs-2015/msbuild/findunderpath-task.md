@@ -20,11 +20,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 1c679352fb8db81379ab93e800efa9f631773c36
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59666616"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68149740"
 ---
 # <a name="findunderpath-task"></a>FindUnderPath (Tarea)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,7 +34,7 @@ Determina qué elementos de la colección de elementos especificada tienen rutas
 ## <a name="parameters"></a>Parámetros  
  En la siguiente tabla se describen los parámetros de la tarea `FindUnderPath` .  
   
-|Parámetro|Descripción|  
+|Parámetro|DESCRIPCIÓN|  
 |---------------|-----------------|  
 |`Files`|Parámetro <xref:Microsoft.Build.Framework.ITaskItem>`[]` opcional.<br /><br /> Especifica los archivos cuyas rutas de acceso deben compararse con la ruta de acceso especificada por el parámetro `Path`.|  
 |`InPath`|Parámetro de salida <xref:Microsoft.Build.Framework.ITaskItem>`[]` opcional.<br /><br /> Contiene los elementos que se han encontrado en la ruta de acceso especificada.|  
@@ -75,7 +75,7 @@ Determina qué elementos de la colección de elementos especificada tienen rutas
 </Project>  
 ```  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Otras referencias  
  [Referencia de tareas](../msbuild/msbuild-task-reference.md)   
  [Tareas](../msbuild/msbuild-tasks.md)   
  [Conceptos de MSBuild](../msbuild/msbuild-concepts.md)

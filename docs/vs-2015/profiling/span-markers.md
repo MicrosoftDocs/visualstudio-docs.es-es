@@ -12,11 +12,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 8f733ccec12e422a11532b8012836422d14d93b9
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54798038"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68198325"
 ---
 # <a name="span-markers"></a>Marcadores de intervalo
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,6 +38,6 @@ Los colores de las cinco primeras categorías de intervalo
  ![Un marcador de agregación de intervalo en el visualizador de simultaneidad](../profiling/media/cvmarkerspanaggregate.png "CVMarkerSpanAggregate")  
 Un marcador de agregación de intervalo  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Otras referencias  
  [Marcadores del visualizador de simultaneidad](../profiling/concurrency-visualizer-markers.md)   
  [SDK del visualizador de simultaneidad](../profiling/concurrency-visualizer-sdk.md)

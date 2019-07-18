@@ -14,11 +14,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 94e8e87f4440644f76906a70ea09a46282b109c2
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59670360"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68163368"
 ---
 # <a name="safemode-devenvexe"></a>/SafeMode (devenv.exe)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -34,7 +34,7 @@ devenv /SafeMode
 ## <a name="remarks"></a>Comentarios  
  Este modificador evita que se carguen todos los VSPackages de terceros cuando se inicia [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)], lo que garantiza una ejecución estable.  
   
-## <a name="description"></a>Descripción  
+## <a name="description"></a>DESCRIPCIÓN  
  En el ejemplo siguiente, se inicia [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] en modo seguro.  
   
 ## <a name="code"></a>Código  
@@ -43,5 +43,5 @@ devenv /SafeMode
 Devenv.exe /SafeMode  
 ```  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Otras referencias  
  [Modificadores de línea de comandos para Devenv](../../ide/reference/devenv-command-line-switches.md)

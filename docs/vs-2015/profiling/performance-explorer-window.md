@@ -15,11 +15,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: a370ae802408ecc821de4cd15824f9d1fca42b75
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60105336"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68195528"
 ---
 # <a name="performance-explorer-window"></a>Ventana Explorador de rendimiento
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -54,7 +54,7 @@ La ventana **Explorador de rendimiento** del entorno de desarrollo integrado (ID
   
 - **Informes**: muestra los nombres de archivos de datos del generador de perfiles que se generan para la sesión. Haga clic con el botón derecho en **Informes** para agregar un informe existente o comparar dos archivos de datos del generador de perfiles. Haga clic con el botón derecho en un nombre de informe para abrir, quitar o exportar un archivo de datos del generador de perfiles.  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Otras referencias  
  [Temas de introducción](../profiling/overviews-performance-tools.md)   
  [Configurar sesiones de rendimiento](../profiling/configuring-performance-sessions.md)   
  [Controlar la recopilación de datos](../profiling/controlling-data-collection.md)

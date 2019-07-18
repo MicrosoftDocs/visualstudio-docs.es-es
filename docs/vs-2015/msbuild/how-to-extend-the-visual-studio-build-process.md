@@ -1,5 +1,5 @@
 ---
-title: Procedimiento para ampliar el proceso de compilación | Microsoft Docs
+title: Ampliación del proceso de compilación | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: msbuild
@@ -15,13 +15,13 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 789c60da5be841721ab3a999120e2fe560ffd588
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60108607"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68156602"
 ---
-# <a name="how-to-extend-the-visual-studio-build-process"></a>Procedimiento para ampliar el proceso de compilación de Visual Studio
+# <a name="how-to-extend-the-visual-studio-build-process"></a>Cómo: Extender el proceso de compilación de Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 El proceso de compilación [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] se define mediante una serie de archivos .targets [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] que se importan en el archivo del proyecto. Uno de estos archivos importados, Microsoft.Common.targets, se puede extender para que pueda ejecutar tareas personalizadas en varios puntos del proceso de compilación. En este tema se explican dos métodos que puede usar para extender el proceso de compilación de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]:
@@ -55,10 +55,10 @@ El proceso de compilación [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] se defin
 
    En la tabla siguiente se muestran todos los destinos de Microsoft.Common.targets que puede reemplazar de forma segura.
 
-|Nombre de destino|Descripción|
+|Nombre de destino|DESCRIPCIÓN|
 |-----------------|-----------------|
 |`BeforeCompile`, `AfterCompile`|Las tareas insertadas en uno de estos destinos se ejecutan antes o después de realizar la compilación básica. La mayoría de las personalizaciones se realiza en uno de estos dos destinos.|
-|`BeforeBuild`, `AfterBuild`|Las tareas insertadas en uno de estos destinos se ejecutarán antes o después de todo lo demás en la compilación. **Nota:**  Los destinos `BeforeBuild` y `AfterBuild` ya están definidos en los comentarios al final de la mayoría de los archivos del proyecto. Esto le permite agregar con facilidad eventos previos y posteriores a la compilación del archivo del proyecto.|
+|`BeforeBuild`, `AfterBuild`|Las tareas insertadas en uno de estos destinos se ejecutarán antes o después de todo lo demás en la compilación. **Nota**: Los destinos `BeforeBuild` y `AfterBuild` ya están definidos en los comentarios al final de la mayoría de los archivos del proyecto. Esto le permite agregar con facilidad eventos previos y posteriores a la compilación del archivo del proyecto.|
 |`BeforeRebuild`, `AfterRebuild`|Las tareas insertadas en uno de estos destinos se ejecutan antes o después de invocar la funcionalidad de la recompilación básica. El orden de ejecución de destino en Microsoft.Common.targets es: `BeforeRebuild`, `Clean`, `Build` y, a continuación, `AfterRebuild`.|
 |`BeforeClean`, `AfterClean`|Las tareas insertadas en uno de estos destinos se ejecutan antes o después de invocar la funcionalidad de la limpieza básica.|
 |`BeforePublish`, `AfterPublish`|Las tareas insertadas en uno de estos destinos se ejecutan antes o después de invocar la funcionalidad de la publicación básica.|
@@ -119,11 +119,11 @@ El proceso de compilación [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] se defin
 
 ### <a name="commonly-overridden-dependson-properties"></a>Propiedades "DependsOn" que normalmente se reemplazan
 
-|Nombre de la propiedad|Descripción|
+|Nombre de la propiedad|DESCRIPCIÓN|
 |-------------------|-----------------|
 |`BuildDependsOn`|La propiedad que se debe reemplazar si quiere insertar destinos personalizados antes o después del proceso de compilación completo.|
 |`CleanDependsOn`|La propiedad que se debe reemplazar si quiere limpiar el resultado del proceso de compilación personalizado.|
 |`CompileDependsOn`|La propiedad que se debe reemplazar si quiere insertar procesos personalizados antes o después del paso de compilación.|
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Otras referencias
  [Integración de Visual Studio](../msbuild/visual-studio-integration-msbuild.md) [Conceptos de MSBuild](../msbuild/msbuild-concepts.md) [Archivos .targets](../msbuild/msbuild-dot-targets-files.md)
