@@ -16,11 +16,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 65d78387c6d60d0b432db9aab175fbfe8dc2869b
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59666551"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68203565"
 ---
 # <a name="print-command"></a>Imprimir (Comando)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -58,7 +58,7 @@ Debug.Print text
 >Debug.Print varA  
 ```  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Otras referencias  
  [Evaluar instrucción (Comando)](../../ide/reference/evaluate-statement-command.md)   
  [Comandos de Visual Studio](../../ide/reference/visual-studio-commands.md)   
  [Ventana Comandos](../../ide/reference/command-window.md)   

@@ -18,11 +18,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: ef216c1220cbfda37da579d3ea2dfdd32837ab75
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54833692"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68195569"
 ---
 # <a name="object-lifetime-view"></a>Vista Duración del objeto
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,7 +35,7 @@ La vista Duración del objeto está disponible cuando se activa **Also collect .
   
 ## <a name="general"></a>General  
   
-|Columna|Descripción|  
+|Columna|DESCRIPCIÓN|  
 |------------|-----------------|  
 |**Nombre de la clase**|Nombre de clase del tipo asignado.|  
 |**Identificador del proceso**|El identificador del proceso de la ejecución de generación de perfiles.|  
@@ -46,7 +46,7 @@ La vista Duración del objeto está disponible cuando se activa **Also collect .
 ## <a name="instance-data"></a>Datos de instancia  
  Datos de instancia indica el número de objetos del tipo que se crearon en la generación de perfiles y la generación en la que se desasignaron objetos por parte del recolector de elementos no utilizados.  
   
-|Columna|Descripción|  
+|Columna|DESCRIPCIÓN|  
 |------------|-----------------|  
 |**Instancias**|Número de asignaciones de objetos de este tipo.|  
 |**Total de instancias %**|Porcentaje del número total de asignaciones que se realizaron en la generación de perfiles.|  
@@ -58,7 +58,7 @@ La vista Duración del objeto está disponible cuando se activa **Also collect .
 ## <a name="size-byte-data"></a>Tamaño (bytes) de datos  
  El tamaño (bytes) de datos indica el número de objetos del tipo que se crearon en la generación de perfiles y la cantidad de memoria que se reclamó en cada generación en la que se desasignaron los objetos.  
   
-|Columna|Descripción|  
+|Columna|DESCRIPCIÓN|  
 |------------|-----------------|  
 |**Total de bytes asignados**|Número total de bytes de todas las instancias del tipo.|  
 |**Total de bytes %**|Porcentaje del número total de bytes asignados en la generación de perfiles, que se asignaron para instancias de este tipo.|  
@@ -69,10 +69,10 @@ La vista Duración del objeto está disponible cuando se activa **Also collect .
 ## <a name="large-object-heap-data"></a>Tamaño de montón de objetos grandes  
  El asignador de memoria de .NET administra objetos muy grandes en una ubicación que es independiente del montón administrado estándar. Los datos de montón de objeto grande indican el número y el tamaño de los objetos del tipo que se administraron en esta ubicación.  
   
-|Columna|Descripción|  
+|Columna|DESCRIPCIÓN|  
 |------------|-----------------|  
 |**Instancias de montón de objeto grande recopiladas**|Número de instancias de este tipo que se encontraban en el montón de objeto grande y que se recopilaron en la generación de perfiles.|  
 |**Bytes de montón de objeto grande recopilados**|Tamaño, en bytes, de las instancias de este tipo que se encontraban en el montón de objeto grande y que se recopilaron en la generación de perfiles.|  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Otras referencias  
  [Vistas de datos de memoria de .NET](../profiling/dotnet-memory-data-views.md)

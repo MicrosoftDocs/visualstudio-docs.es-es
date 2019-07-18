@@ -13,11 +13,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 5025cc3e9dc0e13c3ae4658d129f5d0ac94f6fd6
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60062144"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68156595"
 ---
 # <a name="how-to-ignore-errors-in-tasks"></a>Cómo: Pasar errores por alto en las tareas
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -64,7 +64,7 @@ A veces, quiere que una compilación tolere errores en determinadas tareas. Si s
 </Project>  
 ```  
   
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Otras referencias
 [MSBuild](msbuild.md)  
  [Referencia de tareas](../msbuild/msbuild-task-reference.md)   
  [Tareas](../msbuild/msbuild-tasks.md)

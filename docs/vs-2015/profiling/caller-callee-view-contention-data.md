@@ -12,11 +12,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 2f60e8eedeeb7106a7a95a33a4a5cc794194861c
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54797004"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68164567"
 ---
 # <a name="caller--callee-view----contention-data"></a>Vista Llamador y destinatario: datos de contención
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,7 +29,7 @@ La vista Llamador y destinatario muestra información de contención para una fu
   
  **Funciones llamadas por la función actual** se muestra en la cuadrícula inferior e incluye información de contención para las funciones de destinatario (secundarias) de la función seleccionada cuando la función actual llamó a la función secundaria.  
   
-|Columna|Descripción|  
+|Columna|DESCRIPCIÓN|  
 |------------|-----------------|  
 |**Type**|El contexto de la función:<br /><br /> -   **0**: la función actual<br />-   **1**: una función que llama a la función actual<br />-   **2**: una función llamada por la función actual<br /><br /> Solo disponible en los informes de línea de comandos de [VSPerfReport](../profiling/vsperfreport.md).|  
 |**Tiempo de bloqueo exclusivo**|-En la función actual, el tiempo durante el cual esta función no pudo ejecutar código en el cuerpo de la función. No se incluye el tiempo de bloqueo de las funciones a las que llamó la función.<br />- En una función de llamador, la parte del tiempo de bloqueo exclusivo de la función actual que transcurrió cuando esta función llamó a la función actual.<br />-En una función de destinatario, el tiempo durante el cual esta función no pudo ejecutar su propio código cuando la función actual llamó a esta función. No se incluye el tiempo de bloqueo de las funciones secundarias a las que llamó la función de destinatario.|  
@@ -50,7 +50,7 @@ La vista Llamador y destinatario muestra información de contención para una fu
 |**Nombre de la función raíz**|El nombre de la función actual. Solo disponible en los informes de línea de comandos de [VSPerfReport](../profiling/vsperfreport.md).|  
 |**Archivo de código fuente**|Archivo de origen que contiene la definición de esta función.|  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Otras referencias  
  [Cómo: Personalizar las columnas de la vista de informes](../profiling/how-to-customize-report-view-columns.md)   
  [Vista Llamador y destinatario](../profiling/caller-callee-view.md)   
  [Vista Llamador y destinatario: datos de muestreo](../profiling/caller-callee-view-sampling-data.md)   

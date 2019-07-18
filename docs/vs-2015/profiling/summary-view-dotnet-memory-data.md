@@ -12,11 +12,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 61fe6d3982828d1e2a8ae4aeaba3d89b1b75f4f9
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54803064"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68193316"
 ---
 # <a name="summary-view---net-memory-data"></a>Vista Resumen: datos de memoria de .NET
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,7 +29,7 @@ La vista Resumen muestra información sobre las funciones de .NET y los tipos qu
 ## <a name="functions-allocating-most-memory"></a>Funciones que asignan la mayoría de la memoria  
  Enumera las funciones que asignaron el mayor número de bytes de memoria en la generación de perfiles.  
   
-|Columna|Descripción|  
+|Columna|DESCRIPCIÓN|  
 |------------|-----------------|  
 |**Name**|Nombre de la función.|  
 |**Porcentaje de bytes**|El porcentaje de todos los bytes asignados en la generación de perfiles que fueron asignados por esta función o una función secundaria a la que llamó esta función.|  
@@ -37,7 +37,7 @@ La vista Resumen muestra información sobre las funciones de .NET y los tipos qu
 ## <a name="types-with-most-memory-allocated"></a>Tipos con más memoria asignada  
  Enumera los tipos para los que se asignó el mayor número de bytes de memoria en la generación de perfiles.  
   
-|Columna|Descripción|  
+|Columna|DESCRIPCIÓN|  
 |------------|-----------------|  
 |**Name**|Nombre del tipo.|  
 |**Porcentaje de bytes**|El porcentaje de todos los bytes asignados en la generación de perfiles que se asignaron para este tipo.|  
@@ -45,11 +45,11 @@ La vista Resumen muestra información sobre las funciones de .NET y los tipos qu
 ## <a name="types-with-most-instances"></a>Tipos con más instancias  
  Enumera los tipos que se crearon más veces durante la generación de perfiles. tenía  
   
-|Columna|Descripción|  
+|Columna|DESCRIPCIÓN|  
 |------------|-----------------|  
 |**Name**|Nombre del tipo.|  
 |**Porcentaje de instancias**|Porcentaje del número total de objetos .NET creados en la ejecución de generación de perfiles que eran instancias de este tipo.|  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Otras referencias  
  [Vista Resumen](../profiling/summary-view-sampling-data.md)   
  [Vista Resumen](../profiling/summary-view-instrumentation-data.md)

@@ -16,11 +16,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 90aff3fb3d3cbb596708bde1db8ff171198a5a60
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59669126"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68199110"
 ---
 # <a name="list-threads-command"></a>Mostrar subprocesos (Comando)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -46,7 +46,7 @@ Debug.ListThreads [index]
 >Debug.ListThreads   
 ```  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Otras referencias  
  [Comando Mostrar pila de llamadas](../../ide/reference/list-call-stack-command.md)   
  [Mostrar desensamblador (Comando)](../../ide/reference/list-disassembly-command.md)   
  [Comandos de Visual Studio](../../ide/reference/visual-studio-commands.md)   

@@ -11,11 +11,11 @@ caps.latest.revision: 25
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 46226d241db04cad0f4859650dc2aff855b72f08
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60102034"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68155608"
 ---
 # <a name="anatomy-of-a-coded-ui-test"></a>Anatomía de una prueba de IU codificada
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -267,7 +267,7 @@ public void MyTestCleanup()
   
  El archivo `UIMap.uitest` no se puede editar directamente. Pero puede modificar la prueba con el generador de pruebas automatizadas de IU, lo que modifica automáticamente los archivos `UIMap.uitest` y [UIMap.Designer.cs](#UIMapDesignerFile).  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Otras referencias  
  <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UIMap.UIMap>   
  <xref:Microsoft.VisualStudio.TestTools.UITesting.WinControls>   
  <xref:Microsoft.VisualStudio.TestTools.UITesting.HtmlControls>   

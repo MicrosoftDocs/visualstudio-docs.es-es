@@ -16,11 +16,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: da82cbd8426b1a9af08e27577cdb76ca4a64d2e2
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54776103"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68148221"
 ---
 # <a name="vsperfcmd"></a>VSPerfCmd
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ VSPerfCmd [/U] [/options]
   
  En las tablas siguientes se describen las opciones de la herramienta **VSPerfCmd.exe**.  
   
-|Opción|Descripción|  
+|Opción|DESCRIPCIÓN|  
 |------------|-----------------|  
 |**U**|Se escribe la salida de la consola redirigida como Unicode. Esta debe ser la primera opción especificada.|  
 |[Start](../profiling/start.md) **:** `mode`|Inicia el servicio de generación de perfiles en el modo especificado.|  
@@ -59,7 +59,7 @@ VSPerfCmd [/U] [/options]
 ## <a name="sampling-method-options"></a>Opciones del método de muestreo  
  Las siguientes opciones solo están disponibles cuando se usa el método de generación de perfiles de muestreo.  
   
-|Opción|Descripción|  
+|Opción|DESCRIPCIÓN|  
 |------------|-----------------|  
 |[Launch](../profiling/launch.md) **:** *Executable*|Inicia la aplicación específica y empieza a generar perfiles.|  
 |[Args](../profiling/args.md) **:** *Arguments*|Especifica los argumentos de la línea de comandos que se van a pasar a la aplicación iniciada.|  
@@ -71,7 +71,7 @@ VSPerfCmd [/U] [/options]
 ### <a name="sampling-interval-options"></a>Opciones del intervalo de muestreo  
  Las opciones siguientes especifican el tipo y la duración de los intervalos de muestreo. El valor predeterminado es **Timer**. También puede especificar un contador de CPU como intervalo mediante la opción **Counter**. Estas opciones solo se pueden especificar con **Launch** o con la primera opción **Attach** de una sesión de generación de perfiles.  
   
-|Opción|Descripción|  
+|Opción|DESCRIPCIÓN|  
 |------------|-----------------|  
 |[PF](../profiling/pf.md)[ **:** _n_]|Muestrea en cada error de página número n (valor predeterminado: 10).|  
 |[Sys](../profiling/sys-vsperfcmd.md)[ **:** _n_]|Muestrea en cada llamada del sistema número n (valor predeterminado: 10).|  
@@ -82,7 +82,7 @@ VSPerfCmd [/U] [/options]
   
  Las opciones de administración deben ejecutarse en un símbolo del sistema que se ejecute con credenciales administrativas.  
   
-|Opción|Descripción|  
+|Opción|DESCRIPCIÓN|  
 |------------|-----------------|  
 |**Admin:Security** \<**ALLOW&#124;DENY**> *Right*[ *Right*] \<*User*&#124;*Group*>|Permite o deniega al usuario o grupo especificados el acceso a los servicios de generación de perfiles.<br /><br /> `Right` puede ser:<br /><br /> CrossSession: concede al usuario acceso al servicio para realizar la generación de perfiles entre sesiones.<br /><br /> SampleProfiling: concede al usuario acceso al controlador para habilitar la generación de perfiles de muestreo. También se usa para tener acceso a la información de transición del núcleo durante la generación de perfiles de seguimiento.<br /><br /> FullAccess: concede al usuario acceso de tipo CrossSession y SampleProfiling.|  
 |**Admin:Security, List**|Muestra el estado actual de los servicios de generación de perfiles y enumera los permisos de usuario.|  
@@ -92,7 +92,7 @@ VSPerfCmd [/U] [/options]
 ## <a name="vsperfcmd-driver"></a>VSPerfCmd /Driver  
  La opción **VSPerfCmd /Driver** ahora está obsoleta. Use la opción **VsPerfCmdAdmin** para esta funcionalidad.  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Otras referencias  
  [VSInstr](../profiling/vsinstr.md)   
  [VSPerfMon](../profiling/vsperfmon.md)   
  [VSPerfReport](../profiling/vsperfreport.md)

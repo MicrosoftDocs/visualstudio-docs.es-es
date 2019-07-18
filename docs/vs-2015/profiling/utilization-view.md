@@ -14,11 +14,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 238d821795aaa4e9ef0ac06e117316450b46fda4
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54795837"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68145362"
 ---
 # <a name="utilization-view"></a>Vista de utilización
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -51,6 +51,6 @@ La **Vista de utilización** muestra información acerca de la CPU, la GPU y otr
 ## <a name="zooming"></a>Zoom  
  Para ampliar el gráfico de utilización de CPU o el gráfico de actividad de GPU, seleccione una sección o utilice el control deslizante de zoom sobre el gráfico. La configuración de zoom se conserva cuando se cambia a otras vistas. Para reducir, use el control deslizante de zoom. También puede hacer zoom presionando Ctrl + rueda del mouse.  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Otras referencias  
  [Visualizador de simultaneidad](../profiling/concurrency-visualizer.md)   
  [Vista Núcleos](../profiling/cores-view.md)

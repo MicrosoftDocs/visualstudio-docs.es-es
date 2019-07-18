@@ -16,11 +16,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 8398f07cf6fa6bd2702b2d84ab0d29dcd614ed32
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59652312"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68157805"
 ---
 # <a name="replace-in-files-command"></a>Reemplazar en archivos (Comando)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -93,7 +93,7 @@ Edit.ReplaceinFiles findwhat replacewith [/all] [/case]
 >Edit.ReplaceinFiles btnCancel btnReset /lookin:"c:/my visual studio projects" /ext:.cls /text2  
 ```  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Otras referencias  
  [Buscar y reemplazar texto](../../ide/finding-and-replacing-text.md)   
  [Reemplazar en archivos](../../ide/replace-in-files.md)   
  [Ventana Comandos](../../ide/reference/command-window.md)   

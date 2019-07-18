@@ -16,11 +16,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: e2e945eb2faa492f576a0fd0a15fc0bd0e9b208e
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59652428"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68199035"
 ---
 # <a name="open-project-command"></a>Abrir proyecto (Comando)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -51,7 +51,7 @@ File.OpenProject filename
 >File.OpenProject "C:\My Projects\Test1\Test1.vbproj"  
 ```  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Otras referencias  
  [Comandos de Visual Studio](../../ide/reference/visual-studio-commands.md)   
  [Ventana Comandos](../../ide/reference/command-window.md)   
  [Cuadro Buscar/Comando](../../ide/find-command-box.md)   

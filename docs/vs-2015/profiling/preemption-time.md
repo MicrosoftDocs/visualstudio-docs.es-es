@@ -14,11 +14,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 6fd209f65464126650106eb4509cd3de39ad8c25
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54752644"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68198064"
 ---
 # <a name="preemption-time"></a>Tiempo de adelantamiento
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,5 +33,5 @@ Estos segmentos de la escala de tiempo están asociados al tiempo de bloqueo que
   
   La información sobre herramientas de un segmento preferente muestra el nombre del proceso o subproceso que produjo el adelantamiento. Sin embargo, esto no implica que el proceso o subproceso que se adelantó se ejecutara durante todo el período de adelantamiento.  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Otras referencias  
  [Vista de subprocesos](../profiling/threads-view-parallel-performance.md)

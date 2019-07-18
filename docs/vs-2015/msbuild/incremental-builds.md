@@ -12,11 +12,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: eb11467d8d59e7af11741d7719da2858ac1a784c
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59654040"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68192883"
 ---
 # <a name="incremental-builds"></a>Compilaciones incrementales
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -81,5 +81,5 @@ Las compilaciones incrementales son compilaciones que se optimizan para que no s
   
  Esto crea la propiedad CompileRan y le proporciona el valor `true`, pero solo si se ejecuta el destino. Si el destino se omite, no se crea CompileRan.  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Otras referencias  
  [Destinos](../msbuild/msbuild-targets.md)

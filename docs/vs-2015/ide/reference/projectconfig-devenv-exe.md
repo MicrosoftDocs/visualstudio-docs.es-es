@@ -22,11 +22,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 4b956fb09681f6f4a1f916f4b108028f69f009cd
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60044205"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68200898"
 ---
 # <a name="projectconfig-devenvexe"></a>/ProjectConfig (devenv.exe)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -79,7 +79,7 @@ devenv SolutionName {/build|/clean|/rebuild|/deploy} SolnConfigName [/project Pr
 devenv "C:\Documents and Settings\someuser\My Documents\Visual Studio\Projects\MySolution\MySolution.sln" /build Debug /project "CSharpWinApp\CSharpWinApp.csproj" /projectconfig Debug   
 ```  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Otras referencias  
  [Modificadores de línea de comandos para Devenv](../../ide/reference/devenv-command-line-switches.md)   
  [/Project (devenv.exe)](../../ide/reference/project-devenv-exe.md)   
  [/Build (devenv.exe)](../../ide/reference/build-devenv-exe.md)   

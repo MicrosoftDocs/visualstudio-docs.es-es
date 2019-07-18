@@ -18,11 +18,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: eefe0160328f1eb6b3fe841742547efe8be50ec1
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59664835"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68158276"
 ---
 # <a name="property-element-msbuild"></a>Elemento Property (MSBuild)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,7 +45,7 @@ Contiene un valor y un nombre de propiedad definidos por el usuario. Cada propie
   
 ### <a name="attributes"></a>Atributos  
   
-|Atributo|Descripción|  
+|Atributo|DESCRIPCIÓN|  
 |---------------|-----------------|  
 |`Condition`|Atributo opcional.<br /><br /> Condición que se va a evaluar. Para obtener más información, consulte [Condiciones](../msbuild/msbuild-conditions.md).|  
   
@@ -54,7 +54,7 @@ Contiene un valor y un nombre de propiedad definidos por el usuario. Cada propie
   
 ### <a name="parent-elements"></a>Elementos primarios  
   
-|Elemento|Descripción|  
+|Elemento|DESCRIPCIÓN|  
 |-------------|-----------------|  
 |[PropertyGroup](../msbuild/propertygroup-element-msbuild.md)|Elemento de agrupamiento de las propiedades.|  
   
@@ -76,6 +76,6 @@ Contiene un valor y un nombre de propiedad definidos por el usuario. Cada propie
 </PropertyGroup>  
 ```  
   
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Otras referencias
 [Propiedades de MSBuild](msbuild-properties1.md)  
  [Referencia de esquemas de archivo del proyecto](../msbuild/msbuild-project-file-schema-reference.md)

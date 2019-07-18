@@ -15,11 +15,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: e1c32e062cf2a5406f235133fb646a16d21707cb
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59646794"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68190410"
 ---
 # <a name="clean-devenvexe"></a>/Clean (devenv.exe)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -60,7 +60,7 @@ Devenv "C:\Documents and Settings\someuser\My Documents\Visual Studio\Projects\M
 devenv "C:\Documents and Settings\someuser\My Documents\Visual Studio\Projects\MySolution\MySolution.sln" /Clean /project "CSharpWinApp\CSharpWinApp.csproj" /projectconfig "Debug"   
 ```  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Otras referencias  
  [Modificadores de línea de comandos para Devenv](../../ide/reference/devenv-command-line-switches.md)   
  [/Build (devenv.exe)](../../ide/reference/build-devenv-exe.md)   
  [/Rebuild (devenv.exe)](../../ide/reference/rebuild-devenv-exe.md)   

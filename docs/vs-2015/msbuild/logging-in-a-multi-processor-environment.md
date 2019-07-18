@@ -13,11 +13,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 35184f6ef724a9f0e803a10c9bda2c6981313ed6
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59664770"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68205977"
 ---
 # <a name="logging-in-a-multi-processor-environment"></a>Registrar en un entorno de varios procesadores
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -73,6 +73,6 @@ Culture=neutral
   
  Un asterisco (*) separa los dos nombres de registrador en el modificador `/dl`.  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Otras referencias  
  [Registradores de compilación](../msbuild/build-loggers.md)   
  [Crear registradores de reenvío](../msbuild/creating-forwarding-loggers.md)

@@ -13,11 +13,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 8620e5a372d764fef3a75126af52a6212ecc6cd8
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54774638"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68161972"
 ---
 # <a name="performance-report-view-filter"></a>Filtro de vista Informe de rendimiento
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,7 +26,7 @@ La ventana Filtro de vista Informe de rendimiento se encuentra en la parte super
   
  Puede modificar cada cláusula de filtro para restringir los resultados. Las siguientes columnas están disponibles en el generador de filtros.  
   
-|Elemento de filtro|Descripción|  
+|Elemento de filtro|DESCRIPCIÓN|  
 |-----------------|-----------------|  
 |Y/O|Elija **Y** si tanto esta cláusula como la siguiente deben ser true para coincidir con un resultado. Elija **O** si esta cláusula o la siguiente pueden ser true para coincidir con un resultado.|  
 |Campo|Seleccione el campo que se utilizará en la cláusula de filtro de la lista de campos de datos que están disponibles en el archivo de informe actual.|  
@@ -39,6 +39,6 @@ La ventana Filtro de vista Informe de rendimiento se encuentra en la parte super
   
  Para guardar el filtro, haga clic en **Exportar filtro** en la barra de herramientas de Informe de rendimiento y después especifique una ubicación y un nombre para el archivo .vspf. Para cargar un filtro previamente guardado, haga clic en **Importar filtro** y busque el archivo de filtro guardado. Los archivos de filtro también pueden utilizarse para filtrar archivos de datos en equipos que tengan instaladas las herramientas independientes de generación de perfiles. Para obtener más información, consulte [VSPerfReport](../profiling/vsperfreport.md).  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Otras referencias  
  [Analizar datos de herramientas de rendimiento](../profiling/analyzing-performance-tools-data.md)   
  [VSPerfReport](../profiling/vsperfreport.md)

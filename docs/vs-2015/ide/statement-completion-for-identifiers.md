@@ -13,11 +13,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 89f507c2f4d01cf5e3e1e983cfcb5bafd9d9a7dd
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54787657"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68152913"
 ---
 # <a name="statement-completion-for-identifiers"></a>Finalización de instrucciones para identificadores
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -60,5 +60,5 @@ JavaScript no permite explícita de tipos para las declaraciones de variable. Co
   
   Puede reemplazar la lista de finalización de un objeto mediante el uso de comentarios de documentación XML o las características de extensibilidad de IntelliSense para JavaScript. Con estas características, puede proporcionar información de tipo y la información de IntelliSense más descriptiva cuando es posible que no estarían disponible. Para obtener más información, consulte [extender IntelliSense para JavaScript](../ide/extending-javascript-intellisense.md) y [crear comentarios de documentación XML](../ide/create-xml-documentation-comments-for-javascript-intellisense.md).  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Otras referencias  
  [IntelliSense para JavaScript](../ide/javascript-intellisense.md)

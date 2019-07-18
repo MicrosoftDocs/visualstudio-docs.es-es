@@ -15,11 +15,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: f774458eb63d9e56b99a635e7b32309375a903ef
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59669242"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68199361"
 ---
 # <a name="evaluate-statement-command"></a>Evaluar instrucción (Comando)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -61,7 +61,7 @@ Debug.EvaluateStatement text
 >Debug.EvaluateStatement(a+b)  
 ```  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Otras referencias  
  [Imprimir (Comando)](../../ide/reference/print-command.md)   
  [Comandos de Visual Studio](../../ide/reference/visual-studio-commands.md)   
  [Ventana Comandos](../../ide/reference/command-window.md)   

@@ -15,11 +15,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: f8c64bb19d65540f8c72be9acb1c5f59deb3c8f9
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60075368"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68156647"
 ---
 # <a name="how-to-clean-a-build"></a>Cómo: Limpiar los resultados de una compilación
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -101,7 +101,7 @@ Cuando se limpia una compilación, se eliminan todos los archivos intermedios y 
 </Project>  
 ```  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Otras referencias  
  [Tarea Exec](../msbuild/exec-task.md)   
  [Tarea MakeDir](../msbuild/makedir-task.md)   
  [Tarea RemoveDir](../msbuild/removedir-task.md)   

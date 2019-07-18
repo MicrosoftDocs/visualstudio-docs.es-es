@@ -11,11 +11,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: dfa68202d7f73d45b8422bb34c90954528d6af7b
-ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58324778"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68177978"
 ---
 # <a name="getting-started-with-debugging-in-visual-studio-2015"></a>Introducción a la depuración en Visual Studio 2015
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,7 +44,7 @@ Visual Studio 2015 proporciona un conjunto integrado y eficaz de herramientas de
 
  Para empezar, use **Depuración** y **x86** como configuración de compilación y plataforma, respectivamente. Cuando haya terminado la codificación y la depuración, cambie la configuración a **Versión** y elija una plataforma de destino específica. (Las versiones anteriores de Visual Studio proporcionan una plataforma predeterminada **AnyCPU** para los proyectos de código de .NET).
 
- Nota: al compilar un proyecto, se usan también los valores de configuración y plataforma para determinar la ruta de acceso al directorio del proyecto que se creará para almacenar el archivo ejecutable. Normalmente, esta es **\<ruta-al-proyecto>\\<nombre-proyecto>\>\\<configuración\>\\<plataforma\>**. Por ejemplo, un proyecto con una configuración de `Debug` y una plataforma de `x86` se encontraría en `Projects\MyProjectNameHere\MyProjectNameHere\bin\Debug\x86`. Esto puede ser útil si tiene sus propias herramientas o scripts que administran estos ejecutables compilados.
+ Nota: al compilar un proyecto, se usan también los valores de configuración y plataforma para determinar la ruta de acceso al directorio del proyecto que se creará para almacenar el archivo ejecutable. Normalmente, esta es **\<ruta-al-proyecto>\\<nombre-proyecto>\>\\<configuración\>\\<plataforma\>** . Por ejemplo, un proyecto con una configuración de `Debug` y una plataforma de `x86` se encontraría en `Projects\MyProjectNameHere\MyProjectNameHere\bin\Debug\x86`. Esto puede ser útil si tiene sus propias herramientas o scripts que administran estos ejecutables compilados.
 
 ### <a name="building-your-code"></a>Compilar el código
  Una vez configurada la compilación, es el momento de compilar el proyecto. La manera más sencilla de hacerlo es presionar F7, pero también puede iniciar la compilación seleccionando **Compilar->Compilar solución** en el menú principal.
@@ -190,5 +190,5 @@ Visual Studio 2015 proporciona un conjunto integrado y eficaz de herramientas de
 
  Para obtener más información sobre las pruebas unitarias en Visual Studio 2015 y cómo pueden ayudarle a crear código de mejor calidad, lea [Conceptos básicos de las pruebas unitarias](../test/unit-test-basics.md).
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Otras referencias
  [Depuración en Visual Studio](../debugger/debugging-in-visual-studio.md) [preparación y la configuración del depurador](../debugger/debugger-settings-and-preparation.md) [depurar aplicaciones de 64 bits](../debugger/debug-64-bit-applications.md) [conceptos básicos del depurador](../debugger/debugger-basics.md)

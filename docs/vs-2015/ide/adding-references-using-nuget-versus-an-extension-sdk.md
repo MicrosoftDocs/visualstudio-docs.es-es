@@ -13,11 +13,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: e89b677113a04f286be3201a6b76d78fd5d191c2
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60044023"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68148315"
 ---
 # <a name="adding-references-using-nuget-versus-an-extension-sdk"></a>Agregar referencias usando NuGet en lugar de un SDK de extensión
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -70,5 +70,5 @@ Puede proporcionar un paquete para el consumo en proyectos de Visual Studio medi
 |El mecanismo está disponible para todas las ediciones de Visual Studio.|Y|El SDK admite todas las ediciones de Visual Studio, desde Visual Studio Express hasta [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)].|Y|NuGet admite todas las ediciones de Visual Studio, desde Express hasta [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)].|  
 |El mecanismo está disponible para todos los tipos de proyecto.|N|El SDK admite las aplicaciones de [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] a partir de [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)].|N|Puede revisar una lista de los proyectos permitidos.|  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Otras referencias  
  [Administrar referencias en un proyecto](../ide/managing-references-in-a-project.md)

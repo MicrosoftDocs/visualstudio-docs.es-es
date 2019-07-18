@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: f4de6750b7497e971af1096a0970495f3d4363a5
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54780574"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68160024"
 ---
 # <a name="cores-view-logical-cores"></a>Núcleos lógicos de la vista Núcleos
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Cada nombre de canal representa uno de los núcleos lógicos que existen en el sistema para el que se genera el perfil. La nomenclatura cuenta desde 0 hasta el número total de núcleos lógicos. Por ejemplo, un sistema de cuatro núcleos contará desde el núcleo lógico 0 hasta el núcleo lógico 3.  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Otras referencias  
  [Vista Núcleos](../profiling/cores-view.md)

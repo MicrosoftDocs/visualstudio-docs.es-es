@@ -10,11 +10,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: e955eaacd2f290558c5d786439373a9cc8febb35
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54802608"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68158289"
 ---
 # <a name="user-accounts-and-updates"></a>Cuentas de usuario y actualizaciones
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,5 +31,5 @@ Visual Studio es un entorno conectado. Al iniciar sesión habilita el acceso a t
 |[Cómo desbloquear Visual Studio](../ide/how-to-unlock-visual-studio.md)|Describe cómo desbloquear Visual Studio en distintos escenarios.|  
 |[Notificaciones](../ide/visual-studio-notifications.md)|Describe cómo le notifica Visual Studio cuando algún componente, como un SDK o el propio Visual Studio, tiene una actualización disponible.|  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Otras referencias  
  [IDE de Visual Studio](../ide/visual-studio-ide.md)

@@ -26,11 +26,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: bb859fe5e66dbfcc1f43dfff3c0744c84066054b
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54758833"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68158319"
 ---
 # <a name="using-intellisense"></a>Using IntelliSense
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -61,7 +61,7 @@ IntelliSense es el término general que se usa para describir varias caracterís
   
  ![Información de parámetros](../ide/media/vs2015-param-info.png "VS2015_param_Info")  
   
- Cuando se anotan funciones y parámetros con comentarios de documentación XML, los comentarios se muestran como Información de parámetros. Para obtener más información, vea [Proporcionar comentarios del código XML](../ide/supplying-xml-code-comments.md).  
+ Cuando se agregan funciones y parámetros con comentarios de documentación XML, los comentarios se muestran como Información de parámetros. Para obtener más información, vea [Proporcionar comentarios del código XML](../ide/supplying-xml-code-comments.md).  
   
  Para invocar manualmente la información de parámetros, haga clic en **Editar/IntelliSense/Información de parámetros**, presione CTRL+MAYÚS+BARRA ESPACIADORA o haga clic en el botón **Información de parámetros** de la barra de herramientas del editor.  
   
@@ -101,7 +101,7 @@ MessageBox( hWnd, "String literal|") )
   
  **Las opciones automáticas están desactivadas.** De forma predeterminada, IntelliSense funciona automáticamente, pero puede deshabilitarlo. También puede invocar una característica IntelliSense incluso cuando la finalización de instrucciones automática se encuentre deshabilitada.  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Otras referencias  
  [Opciones de IntelliSense específicas de Visual Basic](../ide/visual-basic-specific-intellisense.md)   
  [IntelliSense para Visual C#](../ide/visual-csharp-intellisense.md)   
  [IntelliSense para JavaScript](../ide/javascript-intellisense.md)   

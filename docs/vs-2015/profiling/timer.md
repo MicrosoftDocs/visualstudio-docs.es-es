@@ -10,11 +10,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 1e5f6c6db903b3ecced2ac3ebc4aaa0a3e60910c
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54790421"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68145499"
 ---
 # <a name="timer"></a>Temporizador
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,16 +49,16 @@ VSPerfCmd.exe {/Launch:AppName|/Attach:PID} /Timer[:Cycles] [Options]
 ## <a name="invalid-options"></a>Opciones no válidas  
  Las opciones siguientes no se pueden especificar en la misma línea de comandos que **Temporizador**.  
   
- **PF**[**:**`Events`]  
+ **PF**[ **:** `Events`]  
  Establece el evento de muestreo en los errores de página y, opcionalmente, establece el intervalo del muestreo en `Events`. El intervalo PF predeterminado es 10.  
   
- **Sys**[**:**`Events`]  
+ **Sys**[ **:** `Events`]  
  Establece el evento de muestreo en las llamadas al sistema operativo y, opcionalmente, establece el intervalo del muestreo en `Events`. El intervalo Sys predeterminado es 10.  
   
- **Counter**[**:**`Name,Reload,FriendlyName`]  
+ **Counter**[ **:** `Name,Reload,FriendlyName`]  
  Establece el evento de muestreo en el contador de rendimiento de la CPU especificado por `Name` y establece el intervalo de muestreo en `Reload`.  
   
- **GC**[**:**{**Allocation**&#124;**Lifetime**}]  
+ **GC**[ **:** {**Allocation**&#124;**Lifetime**}]  
  Recopila datos de memoria de .NET. Mediante la opción (**Allocation**) predeterminada, se recopilan datos en cada evento de asignación de memoria. Cuando se especifica el parámetro **Lifetime**, también se recopilan datos en cada evento de recolección de elementos no utilizados.  
   
 ## <a name="example"></a>Ejemplo  
@@ -69,7 +69,7 @@ VSPerfCmd.exe /Start:Sample /Output:TestApp.exe.vsp
 VSPerfCmd.exe /Launch:TestApp.exe /Timer:1000000  
 ```  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Otras referencias  
  [VSPerfCmd](../profiling/vsperfcmd.md)   
  [Generar perfiles para aplicaciones independientes](../profiling/command-line-profiling-of-stand-alone-applications.md)   
  [Generar perfiles para aplicaciones web ASP.NET](../profiling/command-line-profiling-of-aspnet-web-applications.md)   

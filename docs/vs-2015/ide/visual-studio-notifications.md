@@ -10,11 +10,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 9aacdbf7bbde890abd0b7ac03f5cd5d714d6c9c8
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54800000"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68154940"
 ---
 # <a name="visual-studio-notifications"></a>Notificaciones de Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,5 +33,5 @@ Visual Studio tiene un sistema de notificación que le avisa a diversos eventos:
 
    ![Icono de notificación de Visual Studio](../ide/media/vs2015-notificationicon.png "vs2015_NotificationIcon")
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Otras referencias
  [IDE de Visual Studio](../ide/visual-studio-ide.md)
