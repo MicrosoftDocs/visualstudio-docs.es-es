@@ -3,17 +3,16 @@ title: Novedades de las suscripciones de Visual Studio
 description: Obtenga información sobre las características nuevas y actualizadas que puede usar para administrar las suscripciones de Visual Studio.
 ms.custom: ''
 ms.date: 06/27/2019
-searchscope: VS Subscription
 ms.topic: conceptual
 author: evanwindom
 ms.author: lank
 manager: lank
-ms.openlocfilehash: 6984d4aab23817707280af6bce47deee8d79adf7
-ms.sourcegitcommit: 0cd282a7584b9bfd4df7882f8fdf3ad8a270e219
+ms.openlocfilehash: 8dd4063e6250ccf2f54a88f08ef0c6e2b378fe8b
+ms.sourcegitcommit: 748d9cd7328a30f8c80ce42198a94a4b5e869f26
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/28/2019
-ms.locfileid: "67465120"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67891072"
 ---
 # <a name="what39s-new-in-visual-studio-subscriptions"></a>Novedades de las suscripciones de Visual Studio
 
@@ -21,7 +20,7 @@ Actualizamos el paquete de las ventajas de la suscripción a menudo para que le 
 
 ## <a name="2019-q1-january-march"></a>T1 de 2019 (de enero a marzo)
 
-### <a name="maximum-usage-added-to-subscriptions-administration-portalhttpsmanagevisualstuidocom"></a>Uso máximo agregado al [portal de administración de suscripciones](https://manage.visualstuido.com)
+### <a name="maximum-usage-added-to-subscriptions-administration-portalhttpsmanagevisualstudiocom"></a>Uso máximo agregado al [portal de administración de suscripciones](https://manage.visualstudio.com)
 Esta nueva característica del portal de administración de suscripciones de Visual Studio permite realizar un seguimiento de cuántas suscripciones ha comprado y asignado, así como identificar el número máximo de suscripciones de cada nivel que haya asignado, tanto durante el último año como a lo largo de la duración de sus contratos. Esto puede ayudarle a entender el uso de la suscripción actual y planear futuras compras. 
 
   > [!div class="mx-imgBorder"]
@@ -34,7 +33,7 @@ Para obtener más información, consulte nuestro artículo sobre [uso máximo](m
 ## <a name="2019-q2-april-june"></a>T2 de 2019 (de abril a junio)
 
 ### <a name="visual-studio-with-github-enterprise-subscriptions"></a>Suscripciones de Visual Studio con GitHub Enterprise
-En la conferencia //build de mayo, Microsoft anunció que los clientes con contrato Enterprise ahora pueden comprar suscripciones de Visual Studio que incluyen GitHub Enterprise.  Es una manera fácil de adquirir suscripciones de Visual Studio y GitHub Enterprise por un único precio más bajo.  
+En la conferencia //build de mayo, Microsoft anunció que los clientes con contrato Enterprise ahora pueden comprar suscripciones de Visual Studio que incluyen GitHub Enterprise.  Es una manera fácil de adquirir suscripciones de Visual Studio y GitHub Enterprise por un único precio más bajo.  
 
 GitHub Enterprise está disponible con suscripciones de Visual Studio Enterprise y Professional de adquiridas a través de contratos Enterprise. También hay una oferta de mejora que le permite agregar GitHub Enterprise incluso si su contrato de Enterprise no tiene que renovarse.
 

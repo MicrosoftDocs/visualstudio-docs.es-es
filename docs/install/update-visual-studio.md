@@ -2,7 +2,7 @@
 title: Actualizar Visual Studio
 titleSuffix: ''
 description: Obtenga información sobre cómo actualizar Visual Studio a la versión más reciente, paso a paso.
-ms.date: 06/19/2019
+ms.date: 07/11/2019
 ms.custom: seodec18
 ms.topic: conceptual
 ms.prod: visual-studio-windows
@@ -10,17 +10,19 @@ ms.technology: vs-installation
 helpviewer_keywords:
 - update [Visual Studio]
 - change [Visual Studio]
+f1_keywords:
+- VS.ToolsOptionsPages.Environment.ProductUpdates
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: dc87d6e7c6115a915d2bb7fc9f3d187e1a4d8e7d
-ms.sourcegitcommit: b593bb889f049fcbdff502c30b73178ed17dbdf0
+ms.openlocfilehash: 9ed8ce37351d8129107711e6fd079622050d6aa0
+ms.sourcegitcommit: f369ff7e84b0216f01570a486c7be80ca6d0e61a
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/20/2019
-ms.locfileid: "67290654"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "68250577"
 ---
 # <a name="update-visual-studio-to-the-most-recent-release"></a>Actualización de Visual Studio a la versión más reciente
 
@@ -44,7 +46,7 @@ Se ha simplificado la experiencia de instalación y actualización para que resu
 
 Cuando haya una actualización, aparecerá la correspondiente marca de notificaciones en Visual Studio.
 
-1. Guarde el trabajo.
+1. No olvide guardar su trabajo.
 
 1. Haga clic en la marca de notificaciones para abrir el Centro de **notificaciones** y, después, elija la actualización que desea instalar.
 
@@ -70,7 +72,7 @@ Cuando haya una actualización, aparecerá la correspondiente marca de notificac
 
 Puede buscar una actualización y, a continuación, instalarla desde la barra de menús de Visual Studio.
 
-1. Guarde el trabajo.
+1. No olvide guardar su trabajo.
 
 1. Elija **Ayuda** > **Buscar actualizaciones**.
 
@@ -87,7 +89,7 @@ Puede buscar una actualización y, a continuación, instalarla desde la barra de
 
 Al igual que en versiones anteriores de Visual Studio, puede usar el Instalador de Visual Studio para instalar una actualización.
 
-1. Guarde el trabajo.
+1. No olvide guardar su trabajo.
 
 1. Abra el instalador. El instalador de Visual Studio podría necesitar una actualización antes de continuar.
 
@@ -200,7 +202,7 @@ Aquí mostramos cómo actualizar Visual&nbsp;Studio&nbsp;2019.
 
 Puede buscar una actualización y, a continuación, instalarla mediante la barra de menús o el cuadro de búsqueda de Visual Studio 2019.
 
-### <a name="open-visual-studio"></a>Abra Visual Studio.
+### <a name="open-visual-studio"></a>Apertura de Visual Studio
 
 1. En el menú **Inicio** de Windows, elija **Visual Studio 2019**.
 
@@ -257,6 +259,27 @@ Puede buscar una actualización y, a continuación, instalarla mediante la barra
 1. En el cuadro de diálogo **La actualización se ha descargado y está lista para instalarse**, elija **Actualizar**.
 
    Visual Studio se actualiza, se cierra y vuelve a abrirse.
+
+## <a name="customize-update-settings"></a>Personalización de la configuración de las actualizaciones
+
+Puede personalizar la configuración de las actualizaciones en Visual Studio de diferentes maneras; por ejemplo, puede cambiar el modo de instalación o seleccionar la opción de descargas automáticas.
+
+Hay dos modos de instalación disponibles:
+
+* **Instalación durante la descarga**
+* **Descarga e instalación en dos pasos independientes**.
+
+También puede elegir la opción **Descargar actualizaciones automáticamente**, que permite descargar las actualizaciones cuando el equipo está inactivo.
+
+Esta es la manera de hacerlo:
+
+1. En la barra de menús, seleccione **Herramientas** > **Opciones**.
+
+2. Expanda **Entorno** y, después, elija **Actualizaciones del producto**.
+
+    ![Configuración de las actualizaciones en Visual Studio](media/vs-2019/update-settings-options.png)
+
+3. Elija el modo de instalación y las opciones de descarga automática que quiera para las actualizaciones de Visual Studio.
 
 ::: moniker-end
 
