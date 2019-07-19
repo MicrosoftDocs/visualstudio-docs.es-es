@@ -1,5 +1,5 @@
 ---
-title: Directrices de experiencia de usuario de Visual Studio | Documentos de Microsoft
+title: Instrucciones para la experiencia del usuario de Visual Studio | Microsoft Docs
 ms.date: 10/05/2018
 ms.topic: conceptual
 ms.assetid: 3abbe495-cbbc-4982-a809-38bda34553a7
@@ -8,22 +8,22 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b1f82142a66ad5c967e8f790e6dc70fca6b53496
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: f01ddcd75aa02a9444f014898efd114ebdcd59d6
+ms.sourcegitcommit: 57866dd72fd0e15ce61128df70729b427a2d02eb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66310756"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "68315120"
 ---
 # <a name="visual-studio-user-experience-guidelines"></a>Instrucciones para la experiencia de usuario de Visual Studio
-Si diseña las nuevas características para Visual Studio, siga las instrucciones para la experiencia de usuario de Visual Studio. Estas instrucciones contienen información sobre los modelos comunes de usuario y patrones de interacción para que los diseñadores de nuevas interfaces de usuario (UI) pueden crear experiencias de usuario perfecta y coherente dentro del entorno de desarrollo.
+Siga las instrucciones de la experiencia del usuario de Visual Studio si diseña nuevas características para Visual Studio. Estas instrucciones contienen información sobre los modelos de usuario y patrones de interacción comunes para que los diseñadores de nuevas interfaces de usuario (UI) puedan crear experiencias de usuario que sean perfectas y coherentes en el entorno de desarrollo.
 
 Si desarrolla software para productos de Microsoft, aprenda a usar estos recursos:
 
-- El [Windows User Experience Interaction Guidelines](https://developer.microsoft.com/windows/desktop) son los aspectos básicos de apariencia y comportamiento de escritorio de Windows.
+- Las [instrucciones de interacción](https://docs.microsoft.com/windows/win32/uxguide/guidelines) de la experiencia del usuario de Windows son los aspectos básicos del comportamiento y la apariencia del escritorio de Windows.
 
-- Estas directrices de Visual Studio, que son directrices específicas de la plataforma que sustituyen a las directrices generales de Windows siempre que sea apropiado para nuestro entorno.
+- Estas instrucciones de Visual Studio, que son instrucciones específicas de la plataforma que sustituyen a las directrices generales de Windows siempre que sea adecuado para nuestro entorno.
 
-- El [controles y patrones para aplicaciones UWP](/windows/uwp/design/controls-and-patterns) son una referencia para detectar patrones emergentes que puede usarse en algunas instancias dentro de Visual Studio.
+- Los [controles y patrones de las aplicaciones para UWP](/windows/uwp/design/controls-and-patterns) son una referencia para patrones emergentes que se pueden usar en algunas instancias de Visual Studio.
 
-Estas instrucciones le proporcionan información sobre qué hacer cuando se diseña para Visual Studio y, en algunos casos también se incluye información sobre cómo hacerlo. Para obtener más información de implementación y para obtener información sobre interfaces de programación (API que le permiten escribir código para soluciones que integran en el entorno de desarrollo integrado (IDE) de Visual Studio) de aplicación específica, use el [Kit de desarrollo de Software (SDK) de visual Studio](../visual-studio-sdk.md).
+Estas instrucciones proporcionan información sobre lo que se debe hacer al diseñar para Visual Studio y, en algunos casos, también se incluye información sobre cómo hacerlo. Para obtener información más detallada sobre la implementación y obtener información sobre las interfaces de programación de aplicaciones (API) específicas que le permiten escribir código para las soluciones que se integran en el entorno de desarrollo integrado (IDE) de Visual Studio, use el [Visual Kit de desarrollo de software (SDK) de Studio](../visual-studio-sdk.md).
