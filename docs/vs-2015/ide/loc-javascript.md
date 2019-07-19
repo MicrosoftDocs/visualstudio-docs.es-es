@@ -13,11 +13,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 8029dc6282e7b5a4ff9075257bcb1b6213a4a6b4
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54758536"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68186101"
 ---
 # <a name="ltlocgt-javascript"></a>&lt;loc&gt; (JavaScript)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,7 +36,7 @@ Especifica la ubicación y el tipo de archivo asociado que proporciona informaci
  Opcional. Nombre raíz del archivo asociado que contiene información de localización para la referencia cultural neutra. Cuando Visual Studio busca información de localización, intenta encontrar una versión específica de la referencia cultural de este archivo. Por ejemplo, si `filename` es jquery.xml, Visual Studio busca la carpeta específica de la referencia cultural correcta (como JA) en la misma ubicación que el archivo .js que contiene el elemento `<loc>`. Si encuentra la carpeta específica de la referencia cultural, comprueba si existe un archivo jquery.xml en ella. Si no encuentra el archivo correcto, utiliza en su lugar reglas administradas de ubicación de recursos. El valor predeterminado para `filename` es el nombre del archivo actual, pero con una extensión .xml en lugar de .js.  
   
  `format`  
- Opcional. Tipo de archivo asociado utilizado para la localización. Utilice `messagebundle` para especificar el uso de paquetes de mensajes definidos por los metadatos de Open Ajax. El formato recomendado es `messagebundle`. Sin embargo, este formato no se admite en Microsoft Ajax ni en archivos .winmd. Utilice `vsdoc` para especificar el formato de localización estándar de .NET Framework utilizado por Microsoft Ajax y Windows Runtime. Este atributo es opcional. `vsdoc` es el formato predeterminado.  
+ Opcional. Tipo de archivo asociado utilizado para la localización. Utilice `messagebundle` para especificar el uso de paquetes de mensajes definidos por los metadatos de Open Ajax. El formato recomendado es `messagebundle`. Sin embargo, este formato no se admite en Microsoft Ajax ni en archivos .winmd. Utilice `vsdoc` para especificar el formato de localización estándar de .NET Framework utilizado por Microsoft Ajax y Windows en tiempo de ejecución. Este atributo es opcional. `vsdoc` es el formato predeterminado.  
   
 ## <a name="remarks"></a>Comentarios  
  El elemento `<loc>` debe aparecer al principio del archivo, en la misma sección que el elemento `<reference>`. Las reglas de uso del elemento `<loc>` son iguales que las del elemento `<reference>`. Para obtener más información, vea la sección "Directivas Reference" en [IntelliSense para JavaScript](../ide/javascript-intellisense.md).  
@@ -103,5 +103,5 @@ function illuminate(a)
   
 ```  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Otras referencias  
  [Comentarios de documentación XML](../ide/xml-documentation-comments-javascript.md)

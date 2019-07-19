@@ -43,7 +43,7 @@ Ofrece una lista de los nombres de las actividades de flujo de trabajo que está
 Namespace\
 Muestra la jerarquía del espacio de nombres .NET que define la estructura de la actividad.
 
-Nombre de ensamblado
+Nombre de ensamblado\
 Muestra el nombre y la versión del ensamblado .NET que contiene la actividad.
 
 Directory\

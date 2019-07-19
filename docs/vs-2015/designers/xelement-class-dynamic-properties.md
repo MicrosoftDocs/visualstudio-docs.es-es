@@ -10,20 +10,20 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 1b6d4c2d7b83ede687e7335627770a5576003463
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54796160"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68148065"
 ---
 # <a name="xelement-class-dynamic-properties"></a>Propiedades dinámicas de la clase XElement
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Esta sección describen las propiedades dinámicas de la <xref:System.Xml.Linq.XElement?displayProperty=fullName>[t] (<!-- TODO: review code entity reference <xref:assetId:///t?qualifyHint=False&amp;autoUpgrade=True>  -->) clase.  
+En esta sección se describen las propiedades dinámicas de la clase <xref:System.Xml.Linq.XElement?displayProperty=fullName>[t](<!-- TODO: review code entity reference <xref:assetId:///t?qualifyHint=False&amp;autoUpgrade=True>  -->).  
   
 ## <a name="in-this-section"></a>En esta sección  
   
-|Tema|Descripción|  
+|Tema|DESCRIPCIÓN|  
 |-----------|-----------------|  
 |[Attribute](../designers/attribute-xelement-dynamic-property.md)|Obtiene un indizador que se usa para el atributo que se corresponde con un nombre expandido especificado.|  
 |[Element](../designers/element-xelement-dynamic-property.md)|Obtiene un indizador que se usa para recuperar el elemento secundario que se corresponde con un nombre expandido especificado.|  
@@ -32,7 +32,7 @@ Esta sección describen las propiedades dinámicas de la <xref:System.Xml.Linq.X
 |[Valor](../designers/value-xelement-dynamic-property.md)|Obtiene o establece el contenido de un elemento.|  
 |[Xml](../designers/xml-xelement-dynamic-property.md)|Obtiene la representación XML sin formato de un elemento.|  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Otras referencias  
  <xref:System.Xml.Linq.XElement?displayProperty=fullName>   
  [Propiedades dinámicas de LINQ to XML](../designers/linq-to-xml-dynamic-properties.md)   
  [Propiedades dinámicas de la clase XAttribute](../designers/xattribute-class-dynamic-properties.md)
