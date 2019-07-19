@@ -14,11 +14,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 0efeb7fb0eb481d0b8d62ff4a9ebf9daad98c39f
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54782299"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68147240"
 ---
 # <a name="blocking-time-profile-report"></a>Informe de perfil de bloqueo de tiempo
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,7 +34,7 @@ Los informes de perfil proporcionan datos agregados de tiempo de bloqueo para la
 ## <a name="blocking-time-report-columns"></a>Columnas del informe de tiempo de bloqueo  
  En la siguiente tabla se muestran las columnas de cada informe de tiempo de bloqueo.  
   
-|Nombre de columna|Descripción|  
+|Nombre de columna|DESCRIPCIÓN|  
 |-----------------|-----------------|  
 |nombre|El nombre de la función para cada nivel de la pila de llamadas.|  
 |Instancias|El número de instancias de la llamada de bloqueo para el período de tiempo visible.|  
@@ -61,5 +61,5 @@ Los informes de perfil proporcionan datos agregados de tiempo de bloqueo para la
 ### <a name="ui-processing"></a>Procesamiento de IU  
  En el informe de procesamiento de IU se muestran las llamadas responsables de los segmentos de bloqueo que bloquean los bloques de procesamiento de IU y los tiempos de bloqueo agregados de cada pila de llamadas. Para obtener más información, consulte [Tiempo de procesamiento de IU](../profiling/ui-processing-time.md).  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Otras referencias  
  [Vista de subprocesos](../profiling/threads-view-parallel-performance.md)
