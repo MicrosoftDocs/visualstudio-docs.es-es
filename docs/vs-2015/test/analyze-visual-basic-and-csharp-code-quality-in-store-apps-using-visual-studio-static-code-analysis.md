@@ -1,5 +1,5 @@
 ---
-title: Análisis de Visual Basic y C# calidad en las aplicaciones de Store utilizando análisis de código estático de código
+title: Analizar Visual Basic y C# la calidad del código en las aplicaciones de la tienda mediante análisis de código estático
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-test
@@ -8,15 +8,15 @@ f1_keywords:
 - vs.codeanalysis.propertypages.csvb.express
 ms.assetid: cab553fc-19a9-4cbf-858e-8200258ffe50
 caps.latest.revision: 16
-author: erickson-doug
+author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c59b4123a3fbc957a99da7178d0d8ec288a06708
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 7510b7fac5dfc633b88bd9f53347118a02227b92
+ms.sourcegitcommit: 59e5758036223ee866f3de5e3c0ab2b6dbae97b6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65686549"
+ms.lasthandoff: 07/23/2019
+ms.locfileid: "68416647"
 ---
 # <a name="analyze-visual-basic-and-c-code-quality-in-store-apps-using-visual-studio-static-code-analysis"></a>Analizar la calidad del código de Visual Basic y C# en las aplicaciones de las aplicaciones de la Tienda con el análisis de código estático de Visual Studio
 
@@ -51,7 +51,7 @@ Se aplica a Windows y Windows Phone] (.. /Image/windows_and_phone_content.png "w
 
 1. Haga clic con el botón derecho en el nombre del proyecto en el Explorador de soluciones y seleccione **Propiedades**.
 
-2. En la página de propiedades del proyecto, elija **Análisis de código** y, después, **Habilitar análisis de código al compilar (define la constante CODE_ANALYSIS)**.
+2. En la página de propiedades del proyecto, elija **Análisis de código** y, después, **Habilitar análisis de código al compilar (define la constante CODE_ANALYSIS)** .
 
    Se compila la solución y se ejecuta el análisis de código. Los resultados aparecen en la ventana Análisis de código.
 
