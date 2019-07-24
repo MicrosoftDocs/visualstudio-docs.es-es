@@ -12,17 +12,17 @@ f1_keywords:
 helpviewer_keywords:
 - build platforms [Visual Studio]
 ms.assetid: c1e5da1b-cda1-4545-b46c-0440fba27485
-author: gewarren
-ms.author: gewarren
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3deab6ab77dabe981ada88d5d960c2fe3c8e2a1f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 4a2c95a460f7e3003db5cdec67e5bf142295719a
+ms.sourcegitcommit: 59e5758036223ee866f3de5e3c0ab2b6dbae97b6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62821460"
+ms.lasthandoff: 07/23/2019
+ms.locfileid: "68416930"
 ---
 # <a name="understand-build-platforms"></a>Descripción de las plataformas de compilación
 

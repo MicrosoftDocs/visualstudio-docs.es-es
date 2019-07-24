@@ -3,24 +3,22 @@ title: Anonimización de datos de suscriptor de Visual Studio | Microsoft Docs
 author: evanwindom
 ms.author: lank
 manager: lank
-ms.date: 10/31/2018
+ms.date: 07/19/2019
 ms.topic: conceptual
 description: Obtenga información sobre cómo se anonimizan los datos del suscriptor cuando se pierde el acceso a las suscripciones.
-ms.openlocfilehash: 1d4e4c5f2e1946a75a70ab4ddb49f000c951cd97
-ms.sourcegitcommit: 208395bc122f8d3dae3f5e5960c42981cc368310
+ms.openlocfilehash: 8ba1a462083281c2228f2d6e25c42485ead8aa19
+ms.sourcegitcommit: 485881e6ba872c7b28a7b17ceaede845e5bea4fe
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/10/2019
-ms.locfileid: "67783653"
+ms.lasthandoff: 07/22/2019
+ms.locfileid: "68377961"
 ---
 # <a name="anonymization-of-visual-studio-subscriber-information"></a>Anonimización de información de suscriptor de Visual Studio
-
 Cuando se produce un evento que bloquea el uso que realiza un suscriptor de una suscripción, como la expiración de una suscripción o la eliminación de la cuenta de inicio de sesión del suscriptor, la información personal del usuario como su nombre y la cuenta de inicio de sesión se desordenan para volverlos inutilizables.  Esto se hace para proteger la información personal del suscriptor.
 
 [!INCLUDE [GDPR-related guidance](includes/gdpr-intro-sentence.md)]
 
 ## <a name="when-does-anonymization-occur"></a>¿Cuando se produce la anonimización?
-
 Los eventos que inutilizan una suscripción para un suscriptor desencadenarán la anonimización.  La rapidez con la que se produce la anonimización depende del tipo de suscripción y del evento que la desencadene. Vea la tabla siguiente para obtener más información.
 
 | Tipo de suscripción                                                                                                                       | Evento que desencadena la anonimización                                                                                                     | Cuando se produce la anonimización |
@@ -32,7 +30,6 @@ Los eventos que inutilizan una suscripción para un suscriptor desencadenarán l
 | Todas las suscripciones                                                                                                                       | Se quita un suscriptor del inquilino al que está asociado con la cuenta de Azure Active Directory                                | Inmediatamente               |
 
 ## <a name="faq"></a>Preguntas más frecuentes
-
 ### <a name="q--does-the-anonymization-of-the-subscribers-personal-information-cause-them-to-lose-access-to-the-subscription"></a>P:  ¿La anonimización de datos personales del suscriptor causa que pierda el acceso a la suscripción?
 R:  No.  La anonimización se produce en respuesta a un evento que provoca la pérdida de acceso a la suscripción, pero no provoca la pérdida de acceso.
 
@@ -40,5 +37,4 @@ R:  No.  La anonimización se produce en respuesta a un evento que provoca la p�
 R:  Sí, siempre y cuando la suscripción no haya expirado, pueden reasignarse a otro suscriptor.
 
 ## <a name="next-steps"></a>Pasos siguientes
-
 Obtenga información sobre cómo evitar la anonimización [vinculando las identidades de AAD y de MSA](/azure/active-directory/b2b/add-users-administrator).

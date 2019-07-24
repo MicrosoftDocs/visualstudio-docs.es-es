@@ -4,17 +4,17 @@ ms.date: 11/04/2016
 ms.technology: vs-ide-compile
 ms.topic: conceptual
 ms.assetid: 75d38b76-26d6-4f43-bbe7-cbacd7cc81e7
-author: gewarren
-ms.author: gewarren
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e40f414b3b3ea6bc151ef036deb0b5d80464ba46
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 0dc172723005b6781a63b3a3956b12152d73bb0f
+ms.sourcegitcommit: 59e5758036223ee866f3de5e3c0ab2b6dbae97b6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62429150"
+ms.lasthandoff: 07/23/2019
+ms.locfileid: "68415592"
 ---
 # <a name="how-to-view-save-and-configure-build-log-files"></a>Procedimiento Visualización, guardado y configuración de archivos de registro de compilación
 
@@ -50,7 +50,7 @@ Si compila un proyecto mediante MSBuild, puede crear un archivo *.txt* para guar
 
 3. En la lista **Detalles de la salida de la compilación del proyecto de MSBuild**, seleccione uno de los valores siguientes y, después, elija el botón **Aceptar**.
 
-    |Nivel de detalle|Descripción|
+    |Nivel de detalle|DESCRIPCIÓN|
     | - |-----------------|
     |**Silencioso**|Muestra un resumen solo de la compilación.|
     |**Mínima**|Muestra un resumen de la compilación y los errores, las advertencias y los mensajes que están clasificados como muy importantes.|

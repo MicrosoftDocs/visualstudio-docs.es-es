@@ -3,15 +3,15 @@ title: Conjunto Visual Studio + GitHub | Microsoft Docs
 author: evanwindom
 ms.author: lank
 manager: lank
-ms.date: 04/15/2019
+ms.date: 07/19/2019
 ms.topic: conceptual
 description: Obtenga más información sobre el nuevo conjunto Visual Studio + GitHub
-ms.openlocfilehash: 6f14a484c365bcbede89c1cc4ac056a97f9ec013
-ms.sourcegitcommit: 208395bc122f8d3dae3f5e5960c42981cc368310
+ms.openlocfilehash: 1d7b55a32c796747d50fac8dae14d6af2f847c46
+ms.sourcegitcommit: 485881e6ba872c7b28a7b17ceaede845e5bea4fe
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/10/2019
-ms.locfileid: "67783443"
+ms.lasthandoff: 07/22/2019
+ms.locfileid: "68377655"
 ---
 # <a name="introducing-visual-studio-subscriptions-with-github-enterprise"></a>Introducción a las suscripciones de Visual Studio con GitHub Enterprise  
 
@@ -62,15 +62,12 @@ Si no está familiarizado con GitHub, aquí tiene algunos recursos que pueden re
 ## <a name="frequently-asked-questions"></a>Preguntas más frecuentes
 
 ### <a name="q--where-is-my-github-subscription"></a>P:  ¿Dónde está mi suscripción de GitHub?
-
 R:  El proceso para configurar la suscripción de GitHub puede tardar un rato.  Si lleva tiempo esperando y no ha ocurrido nada, puede ponerse en contacto con el administrador de GitHub.  Es posible que el administrador todavía esté trabajando en ello o haya optado por no asignarle una suscripción de GitHub. 
 
 ### <a name="q--how-do-i-reach-my-github-administrator"></a>P:  ¿Cómo puedo ponerme en contacto con el administrador de GitHub?
-
 R:  Si usa el servidor de GitHub Enterprise, puede hacer clic en el vínculo **Soporte** situado en la parte inferior del cliente para contactar con el administrador.
 
 ### <a name="q-do-i-get-the-full-visual-studio-subscription-professional-or-enterprise-or-do-i-just-get-the-ide-with-this-offering"></a>P: Con esta oferta, ¿obtengo la suscripción completa de Visual Studio (Professional o Enterprise) o simplemente obtengo el entorno de desarrollo integrado?
-
 R:  Junto con una suscripción de GitHub Enterprise, recibirá una suscripción de Visual Studio completa.  Recibirá todas las ventajas, como las descargas de software, los servicios en la nube, el soporte técnico y las ventajas para socios, incluidas en esas suscripciones, como si hubiera adquirido la suscripción por separado.
 
 ## <a name="support-resources"></a>Recursos de soporte técnico
@@ -81,5 +78,4 @@ R:  Junto con una suscripción de GitHub Enterprise, recibirá una suscripción 
 - Obtenga [soporte técnico](https://support.microsoft.com/en-us/supportforbusiness/productselection?sapId=b77fe80f-5417-80bd-4b2a-275cf0018c24) para GitHub Enterprise.   
 
 ## <a name="next-steps"></a>Pasos siguientes
-
 Si no está familiarizado con GitHub, vaya a [GitHub Learning Lab](https://lab.github.com/), que lo guiará por una serie de proyectos divertidos y prácticos con los que compartirá comentarios útiles a lo largo del camino.

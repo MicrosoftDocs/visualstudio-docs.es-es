@@ -21,21 +21,21 @@ helpviewer_keywords:
 - projects [Visual Studio], build configuration
 - solutions [Visual Studio], build configuration
 ms.assetid: 934c727d-3a22-429c-bd13-3552cecf2e24
-author: gewarren
-ms.author: gewarren
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 030b581f44535c62b950b5b54c15aa36232711e2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 453e27df58e8a12baa3821def6c66fc1391401d3
+ms.sourcegitcommit: 59e5758036223ee866f3de5e3c0ab2b6dbae97b6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62821762"
+ms.lasthandoff: 07/23/2019
+ms.locfileid: "68416962"
 ---
 # <a name="understand-build-configurations"></a>Descripción de las configuraciones de compilación
 
-Se pueden almacenar diferentes configuraciones de propiedades de solución y de proyecto para utilizar en distintos tipos de compilaciones. Para crear, seleccionar, modificar o eliminar una configuración, se puede usar el **Administrador de configuración**. Para abrirlo, en la barra de menús, seleccione **Compilación** > **, Administrador de configuración**, o simplemente escriba **Configuración** en el cuadro de búsqueda. También se puede usar la lista **Configuraciones de soluciones** de la barra de herramientas **Estándar** para seleccionar una configuración o abrir el **Administrador de configuración**.
+Se pueden almacenar diferentes configuraciones de propiedades de solución y de proyecto para utilizar en distintos tipos de compilaciones. Para crear, seleccionar, modificar o eliminar una configuración, se puede usar el **Administrador de configuración**. Para abrirlo, en la barra de menús, seleccione **Compilación** >  **, Administrador de configuración**, o simplemente escriba **Configuración** en el cuadro de búsqueda. También se puede usar la lista **Configuraciones de soluciones** de la barra de herramientas **Estándar** para seleccionar una configuración o abrir el **Administrador de configuración**.
 
 > [!NOTE]
 > Este tema se aplica a Visual Studio para Windows. En el caso de Visual Studio para Mac, vea [Descripción de las configuraciones de compilación en Visual Studio para Mac](/visualstudio/mac/configurations).
@@ -72,7 +72,7 @@ La configuración de soluciones activas también proporciona contexto al IDE. Po
 ## <a name="how-visual-studio-assigns-project-configurations"></a>Cómo asigna Visual Studio las configuraciones de proyecto
  Si se define una nueva configuración de soluciones y no se copian valores de una configuración existente, Visual Studio utiliza los siguientes criterios para asignar las configuraciones de proyecto predeterminadas. Los criterios se evalúan en el orden mostrado.
 
-1. Si un proyecto tiene un nombre de configuración (*\<nombre de configuración> \<nombre de plataforma>*) que coincide exactamente con el nombre de la nueva configuración de soluciones, se asignará dicha configuración. En los nombres de configuraciones no se distingue entre mayúsculas y minúsculas.
+1. Si un proyecto tiene un nombre de configuración ( *\<nombre de configuración> \<nombre de plataforma>* ) que coincide exactamente con el nombre de la nueva configuración de soluciones, se asignará dicha configuración. En los nombres de configuraciones no se distingue entre mayúsculas y minúsculas.
 
 2. Si el proyecto tiene un nombre de configuración en el que la parte del nombre de configuración coincide con la nueva configuración de soluciones, se asigna esa configuración, independientemente de que la parte de plataforma coincida o no.
 
@@ -83,9 +83,9 @@ La configuración de soluciones activas también proporciona contexto al IDE. Po
 
  Visual Studio utiliza los siguientes criterios para asignar configuraciones de soluciones.
 
-- Si una configuración de proyectos no especifica ninguna plataforma o especifica solo una, se busca o se agrega una configuración de soluciones cuyo nombre coincida con el de la nueva configuración de proyecto. El nombre predeterminado de esta configuración de soluciones no incluye el nombre de plataforma, sino que adopta el formato *\<nombre de la configuración del proyecto>*.
+- Si una configuración de proyectos no especifica ninguna plataforma o especifica solo una, se busca o se agrega una configuración de soluciones cuyo nombre coincida con el de la nueva configuración de proyecto. El nombre predeterminado de esta configuración de soluciones no incluye el nombre de plataforma, sino que adopta el formato *\<nombre de la configuración del proyecto>* .
 
-- Si un proyecto admite varias plataformas, se busca o se agrega una configuración de soluciones para cada plataforma admitida. El nombre de cada configuración de soluciones incluye tanto el nombre de configuración del proyecto como el nombre de la plataforma y tiene el formato *\<nombre de la configuración del proyecto> \<nombre de plataforma>*.
+- Si un proyecto admite varias plataformas, se busca o se agrega una configuración de soluciones para cada plataforma admitida. El nombre de cada configuración de soluciones incluye tanto el nombre de configuración del proyecto como el nombre de la plataforma y tiene el formato *\<nombre de la configuración del proyecto> \<nombre de plataforma>* .
 
 ## <a name="see-also"></a>Vea también
 

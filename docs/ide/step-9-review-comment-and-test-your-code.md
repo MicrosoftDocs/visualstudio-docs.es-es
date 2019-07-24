@@ -2,18 +2,21 @@
 title: 'Paso 9: Revisar, comentar y probar el código'
 ms.date: 11/04/2016
 ms.topic: conceptual
+dev_langs:
+- csharp
+- vb
 ms.assetid: f26f79ba-c91b-4164-b87f-679a1b231c09
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 899b4ffee17849bf1165def3025506eb75d940a0
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: 8ad984f82d6d3bdcabf3a5a6952751cfa944a0eb
+ms.sourcegitcommit: 59e5758036223ee866f3de5e3c0ab2b6dbae97b6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63435432"
+ms.lasthandoff: 07/23/2019
+ms.locfileid: "68416619"
 ---
 # <a name="step-9-review-comment-and-test-your-code"></a>Paso 9: Revisar, comentar y probar el código
 A continuación, se agrega un comentario al código. Un comentario es una nota que no cambia la forma de comportarse del programa. Hace que resulte más fácil entender el código a la persona que lo lee. Agregar comentarios al código es un hábito recomendable. En Visual C#, se utilizan dos barras diagonales (//) para marcar una línea como comentario. En Visual Basic, se utiliza una comilla sencilla (') para marcar una línea como comentario. Después de agregar un comentario, se prueba el programa. Es recomendable ejecutar y probar el código con frecuencia mientras trabaja en sus proyectos para que pueda detectar y corregir pronto cualquier problema, antes de que la complejidad del código aumente. Esto se denomina *prueba iterativa*.
@@ -57,7 +60,7 @@ A continuación, se agrega un comentario al código. Un comentario es una nota q
     > [!TIP]
     > El IDE se ha creado para facilitar la tarea de escribir código. Los *fragmentos de código* constituyen una manera de conseguirlo. Un fragmento de código es un acceso directo que se expande para crear un bloque pequeño de código.
     >
-    >  Puede ver todos los fragmentos de código disponibles. En la barra de menús, elija **Herramientas** > **Administrador de fragmentos de código**. En Visual C#, el fragmento de código `if` está en **Visual C#**. En Visual Basic, los fragmentos de código `if` están en **Condicionales y bucles** > **Code Patterns** (Patrones de código). Este administrador se puede utilizar para examinar los fragmentos de código existentes o agregar los suyos propios.
+    >  Puede ver todos los fragmentos de código disponibles. En la barra de menús, elija **Herramientas** > **Administrador de fragmentos de código**. En Visual C#, el fragmento de código `if` está en **Visual C#** . En Visual Basic, los fragmentos de código `if` están en **Condicionales y bucles** > **Code Patterns** (Patrones de código). Este administrador se puede utilizar para examinar los fragmentos de código existentes o agregar los suyos propios.
     >
     >  Para activar un fragmento de código mientras está especificando el código, escríbalo y elija la tecla **Tab**. Muchos fragmentos de código aparecen en la ventana **IntelliSense**, motivo por el cual la tecla **Tab** se elige dos veces: la primera para seleccionar el fragmento de código en la ventana **IntelliSense** y la segunda para indicarle al IDE que lo use. (IntelliSense admite el fragmento de código `if`, pero no el fragmento de código `ifelse`.)
 
