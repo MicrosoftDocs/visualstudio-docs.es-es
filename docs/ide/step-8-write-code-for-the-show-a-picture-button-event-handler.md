@@ -2,18 +2,21 @@
 title: 'Paso 8: Escribir código para el controlador de eventos del botón Mostrar una imagen'
 ms.date: 11/04/2016
 ms.topic: conceptual
+dev_langs:
+- csharp
+- vb
 ms.assetid: 07f4ec00-cda4-42f4-98bb-37edc7167de7
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 61bb5391f52bcfc587664259821d02ff2786acd3
-ms.sourcegitcommit: 51dad3e11d7580567673e0d426ab3b0a17584319
+ms.openlocfilehash: 01193111cd1c9e89dbdf32847499b6f79008b27d
+ms.sourcegitcommit: 59e5758036223ee866f3de5e3c0ab2b6dbae97b6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/10/2019
-ms.locfileid: "66820685"
+ms.lasthandoff: 07/23/2019
+ms.locfileid: "68416950"
 ---
 # <a name="step-8-write-code-for-the-show-a-picture-button-event-handler"></a>Paso 8: Escribir código para el controlador de eventos del botón Mostrar una imagen
 

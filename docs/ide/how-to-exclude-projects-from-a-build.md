@@ -4,17 +4,17 @@ ms.date: 11/04/2016
 ms.technology: vs-ide-compile
 ms.topic: conceptual
 ms.assetid: 17a837ca-5db9-46cd-b5a7-b14ad1d2c47d
-author: gewarren
-ms.author: gewarren
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 24ca736d65a889c0bbada24412ebedecbe6970ce
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 54e65c411afe9815696112dfbcc99bcb9433c4db
+ms.sourcegitcommit: 59e5758036223ee866f3de5e3c0ab2b6dbae97b6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62428981"
+ms.lasthandoff: 07/23/2019
+ms.locfileid: "68416868"
 ---
 # <a name="how-to-exclude-projects-from-a-build"></a>Procedimiento Exclusión de proyectos de una compilación
 
@@ -42,7 +42,7 @@ Para obtener más información, vea [Descripción de las configuraciones de comp
 
 1. En la barra de menús, elija **Compilar** > **Administrador de configuración**.
 
-2. En la lista **Configuración de soluciones activas**, pulse **\<Nueva>**.
+2. En la lista **Configuración de soluciones activas**, pulse **\<Nueva>** .
 
 3. En el cuadro **Nombre**, escriba un nombre para la configuración de soluciones.
 

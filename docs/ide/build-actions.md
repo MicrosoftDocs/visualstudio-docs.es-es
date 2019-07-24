@@ -3,17 +3,17 @@ title: Acciones de compilación para archivos
 ms.date: 11/19/2018
 ms.technology: vs-ide-compile
 ms.topic: reference
-author: gewarren
-ms.author: gewarren
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7820cbbe0477000c2a822e94f5204906d65025fa
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 061a3cce8d1d29b57c02de4506a809994bf12910
+ms.sourcegitcommit: 59e5758036223ee866f3de5e3c0ab2b6dbae97b6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62975641"
+ms.lasthandoff: 07/23/2019
+ms.locfileid: "68416499"
 ---
 # <a name="build-actions"></a>Acciones de compilación
 

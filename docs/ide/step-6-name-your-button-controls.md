@@ -2,18 +2,21 @@
 title: 'Paso 6: Asignar un nombre a los controles de botón'
 ms.date: 11/04/2016
 ms.topic: conceptual
+dev_langs:
+- csharp
+- vb
 ms.assetid: 56b3baa3-651e-4ad4-8942-e334c5c57158
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9dbee780f2153003e870dbe0dbbb15b721a009df
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: 2051ac669c52480d62ee0d0a79c5a165bff502fc
+ms.sourcegitcommit: 59e5758036223ee866f3de5e3c0ab2b6dbae97b6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63442020"
+ms.lasthandoff: 07/23/2019
+ms.locfileid: "68416610"
 ---
 # <a name="step-6-name-your-button-controls"></a>Paso 6: Asignar un nombre a los controles de botón
 Hay solo un <xref:System.Windows.Forms.PictureBox> en el formulario. Al agregarlo, el IDE lo denominó automáticamente **pictureBox1**. Solamente hay un <xref:System.Windows.Forms.CheckBox>, denominado **checkBox1**. Pronto, escribirá código, y ese código hará referencia a CheckBox y PictureBox. Como no hay más que un ejemplar de cada control, entenderá lo que significan los términos **pictureBox1** o **checkBox1** cuando los vea en su código.
@@ -27,7 +30,7 @@ Hay solo un <xref:System.Windows.Forms.PictureBox> en el formulario. Al agregarl
 
 ## <a name="to-name-your-button-controls"></a>Para dar un nombre a los controles de botón
 
-1. En el formulario, elija el botón **Cerrar** . (Si todavía están seleccionados todos los botones, elija la tecla **Esc** para cancelar la selección). Desplácese en la ventana **Propiedades** hasta que vea la propiedad **(Name)**. (La propiedad **(Name)** se encuentra cerca de la parte superior cuando las propiedades están por orden alfabético). Cambie el nombre a **closeButton**, como se muestra en la siguiente imagen.
+1. En el formulario, elija el botón **Cerrar** . (Si todavía están seleccionados todos los botones, elija la tecla **Esc** para cancelar la selección). Desplácese en la ventana **Propiedades** hasta que vea la propiedad **(Name)** . (La propiedad **(Name)** se encuentra cerca de la parte superior cuando las propiedades están por orden alfabético). Cambie el nombre a **closeButton**, como se muestra en la siguiente imagen.
 
      ![Ventana Propiedades mostrando el nombre closeButton](../ide/media/express_setnameproperty.png)
 **Properties** window with **closeButton** name

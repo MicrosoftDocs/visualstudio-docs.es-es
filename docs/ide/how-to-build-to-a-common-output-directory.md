@@ -8,17 +8,17 @@ helpviewer_keywords:
 - builds [Visual Studio], common directory
 - common directory
 ms.assetid: 1fcc2c48-07cb-4c4f-9556-36945e7dfc4e
-author: gewarren
-ms.author: gewarren
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 373a70c3a33258be6b9f618fa190fde4b9b80b0e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a1e669789d2117b4bd2ee550dfffb147e46620c4
+ms.sourcegitcommit: 59e5758036223ee866f3de5e3c0ab2b6dbae97b6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62547824"
+ms.lasthandoff: 07/23/2019
+ms.locfileid: "68416750"
 ---
 # <a name="how-to-build-to-a-common-output-directory"></a>Procedimiento Compilación en un directorio de salida común
 

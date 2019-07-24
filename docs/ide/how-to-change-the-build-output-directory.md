@@ -6,17 +6,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - output directory, changing
 ms.assetid: a8333c89-afb2-4b1d-b2e2-9146da852402
-author: gewarren
-ms.author: gewarren
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f9dce876b477dfb802b9cf64214af2ca1cec6a4e
-ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
+ms.openlocfilehash: e006be2099d5132ce7445f1e8fe74b0f2752c260
+ms.sourcegitcommit: 59e5758036223ee866f3de5e3c0ab2b6dbae97b6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "66715355"
+ms.lasthandoff: 07/23/2019
+ms.locfileid: "68416818"
 ---
 # <a name="how-to-change-the-build-output-directory"></a>Procedimiento Cambiar el directorio de salida de compilación
 

@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1039f46e0d2dcf3c18138e66e77e62dadb36a3f2
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: 37597d1e1f4fde2b2e81e7aa7868c0aaff935337
+ms.sourcegitcommit: 59e5758036223ee866f3de5e3c0ab2b6dbae97b6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63443614"
+ms.lasthandoff: 07/23/2019
+ms.locfileid: "68416853"
 ---
 # <a name="msbuild-inline-tasks"></a>Tareas insertadas de MSBuild
 Las tareas de MSBuild se crean normalmente compilando una clase que implementa la interfaz <xref:Microsoft.Build.Framework.ITask>. Para obtener más información, consulte [Tareas](../msbuild/msbuild-tasks.md).
@@ -129,7 +129,7 @@ Log.LogError("Hello, world!");
 
 ```xml
 <ParameterGroup>
-    <Text />
+  <Text />
 </ParameterGroup>
 ```
 
@@ -145,9 +145,9 @@ Por ejemplo,
 
 ```xml
 <ParameterGroup>
-    <Expression Required="true" />
-      <Files ParameterType="Microsoft.Build.Framework.ITaskItem[]" Required="true" />
-    <Tally ParameterType="System.Int32" Output="true" />
+  <Expression Required="true" />
+  <Files ParameterType="Microsoft.Build.Framework.ITaskItem[]" Required="true" />
+  <Tally ParameterType="System.Int32" Output="true" />
 </ParameterGroup>
 ```
 

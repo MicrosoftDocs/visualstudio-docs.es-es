@@ -6,17 +6,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - build events, customizing
 ms.assetid: 69e935a5-e208-4bcd-865c-3e5f9b047ca8
-author: gewarren
-ms.author: gewarren
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c1acd55ad9ea2d671730a656a673fd1f2ca3aa19
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: 8367400df14f9a5e5c846a6df52e1a5fc7b8ec21
+ms.sourcegitcommit: 59e5758036223ee866f3de5e3c0ab2b6dbae97b6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63430877"
+ms.lasthandoff: 07/23/2019
+ms.locfileid: "68416733"
 ---
 # <a name="specify-custom-build-events-in-visual-studio"></a>Especificar eventos de compilación personalizados en Visual Studio
 
@@ -28,7 +28,7 @@ Mediante la especificación de un evento de compilación personalizado, puede ej
 
 - C# y F#--[Cómo: Especificar eventos de compilación (C#)](../ide/how-to-specify-build-events-csharp.md).
 
-- Visual C++: [Especificar eventos de compilación](/cpp/ide/specifying-build-events).
+- Visual C++: [Especificar eventos de compilación](/cpp/build/specifying-build-events).
 
 ## <a name="syntax"></a>Sintaxis
 

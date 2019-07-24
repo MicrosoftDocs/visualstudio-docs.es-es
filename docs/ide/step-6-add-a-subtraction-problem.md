@@ -2,18 +2,21 @@
 title: 'Paso 6: Agregar un problema de resta'
 ms.date: 11/04/2016
 ms.topic: conceptual
+dev_langs:
+- csharp
+- vb
 ms.assetid: 59204ef9-24bd-4f81-b85f-e3168e518a3e
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6eb94423150a8a3a43183020ee87d52494355aed
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d429d2921f252e97bfe7c233a9fe963f7f91299b
+ms.sourcegitcommit: 59e5758036223ee866f3de5e3c0ab2b6dbae97b6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62996653"
+ms.lasthandoff: 07/23/2019
+ms.locfileid: "68416552"
 ---
 # <a name="step-6-add-a-subtraction-problem"></a>Paso 6: Agregar un problema de resta
 En la sexta parte de este tutorial, agregará un problema de resta y aprenderá a realizar las tareas siguientes:
