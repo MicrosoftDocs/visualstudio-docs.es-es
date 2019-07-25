@@ -18,7 +18,6 @@
 #### [Inicio de sesión con una cuenta profesional o educativa](sign-in-work.md)
 #### [Inicio de sesión con GitHub](sign-in-github.md)
 #### [Identidades alternativas](vs-alternate-identity.md)
-#### [Inicio de sesión con alias](aliasing.md)
 #### [Problemas de inicio de sesión](sign-in-issues.md)
 #### [Anonimización de los datos de suscriptor](anonymization.md)
 ### [Información general del portal de suscripciones](using-the-subscriber-portal.md)
@@ -60,6 +59,9 @@
 #### [Demostraciones en Internet](internet-demos.md)
 ## Administradores
 ### [Responsabilidades del administrador](admin-responsibilities.md)
+#### [Inventario de preproducción](admin-inventory.md)
+#### [Administración de equipos grandes y contratistas externos](manage-teams.md)
+#### [Seguimiento de las asignaciones de usuarios y tramitación de pedidos](assignments-orders.md)
 ### [Licencias por volumen](volume-license-admins.md)
 ### Incorporación de su organización
 #### [Incorporación posterior a la migración](post-migration-onboarding.md)
@@ -78,6 +80,7 @@
 #### [Sobreasignaciones](handle-overclaimed-license.md)
 #### [Uso máximo](maximum-usage.md)
 #### [Suscripciones expiradas](handle-expired-license.md)
+#### [Suscriptores que usan alias](aliasing.md)
 #### [Suscriptores con inicios de sesión con el correo electrónico personal](personal-email-sign-ins.md)
 ### [Administración de Visual Studio con GitHub Enterprise](assign-github.md)
 ## Recursos
