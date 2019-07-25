@@ -8,16 +8,16 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b25eebad9efc70e4fda45131e232983e81961625
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 1bcc560c1e0cabd222da68e98de18d7b8bef6ec6
+ms.sourcegitcommit: 0f5f7955076238742f2071d286ad8e896f3a6cad
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62840374"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "68483407"
 ---
 # <a name="how-to-edit-xml-files"></a>Procedimiento Edición de archivos XML
 
-El editor XML es el nuevo editor de archivos XML. Se puede utilizar en un archivo XML independiente o en uno asociado con un proyecto de Visual Studio. El editor XML está asociado con las siguientes extensiones de archivo: *.config*, *.dtd*, *.xml*, *.xsd*, *.xdr*, *.xsl*, *.xslt*, y *.vssettings*. El editor XML también está asociado con ningún otro tipo de archivo que tiene no hay registrado un editor específico y que contiene el contenido XML o DTD.
+El editor XML es el nuevo editor de archivos XML. Se puede utilizar en un archivo XML independiente o en uno asociado con un proyecto de Visual Studio. El editor XML está asociado con las siguientes extensiones de archivo: *. config*, *. DTD*, *. XML*, *. xsd*, *. XDR*, *. xsl*, *. XSLT*y *. vssettings*. El editor XML también está asociado a cualquier otro tipo de archivo que no tenga registrado ningún editor específico y que contenga contenido XML o DTD.
 
 > [!NOTE]
 > Los documentos XHTML son manejados con el Editor HTML.
@@ -26,62 +26,62 @@ Para editar un archivo XML, haga doble clic en el archivo que desea editar.
 
 ## <a name="add-a-new-xml-file-to-a-project"></a>Agregar un nuevo archivo XML a un proyecto
 
-1. Desde el **proyecto** menú, seleccione **Agregar nuevo elemento**.
+1. En el menú **proyecto** , seleccione **Agregar nuevo elemento**.
 
-2. Seleccione **archivo XML** desde el **plantillas** panel.
+2. Seleccione **archivo XML** en el panel **plantillas** .
 
-3. Escriba el nombre de archivo en el **nombre** campo y presione **agregar**.
+3. Escriba el nombre de archivo en el campo **nombre** y presione **Agregar**.
 
    El archivo XML se agrega al proyecto y se abre en el editor XML. El archivo contiene la declaración XML predeterminada, `<?xml version="1.0" encoding="utf-8" ?>`.
 
 ## <a name="add-an-existing-xml-file-to-a-project"></a>Agregar un archivo XML existente a un proyecto
 
-1. Desde el **proyecto** menú, seleccione **Agregar elemento existente**.
+1. En el menú **proyecto** , seleccione **Agregar elemento existente**.
 
-   El **Agregar elemento existente** aparece el cuadro de diálogo.
+   Aparece el cuadro de diálogo **Agregar elemento existente** .
 
-2. Seleccione un archivo XML y presione **agregar**.
+2. Seleccione un archivo XML y presione **Agregar**.
 
-## <a name="create-a-new-xml-or-xslt-file"></a>Cree un nuevo archivo XML o XSLT
+## <a name="create-a-new-xml-or-xslt-file"></a>Crear un nuevo archivo XML o XSLT
 
-1. Desde el **archivo** menú, seleccione **New**.
+1. En el menú **archivo** , seleccione **nuevo**.
 
-   El **nuevo archivo** aparece el cuadro de diálogo.
+   Aparecerá el cuadro de diálogo **nuevo archivo** .
 
-2. Seleccione **archivo XML** para crear un nuevo archivo XML; o bien, seleccione **archivo XSLT** para crear una nueva hoja de estilos XSLT.
+2. Seleccione **archivo XML** para crear un nuevo archivo XML. o bien, seleccione **archivo XSLT** para crear una nueva hoja de estilos XSLT.
 
 3. Haga clic en **Abrir**.
 
-## <a name="create-an-empty-project-for-xml-files"></a>Crear un proyecto vacío para los archivos XML
+## <a name="create-an-empty-project-for-xml-files"></a>Crear un proyecto vacío para archivos XML
 
 ::: moniker range="vs-2017"
 
-1. Desde el **archivo** menú, seleccione **New** > **proyecto**.
+1. En el menú **archivo** , seleccione **nuevo** > **proyecto**.
 
    Aparecerá el cuadro de diálogo **Nuevo proyecto** .
 
-2. Seleccione el lenguaje de código de su elección, seleccione **proyecto vacío**.
+2. Seleccione el lenguaje de código que desee y, a continuación, seleccione la plantilla **proyecto vacío (.NET Framework)** .
 
-3. Haga clic en **Aceptar**.
+3. Haga clic en **OK**.
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-1. Desde el **archivo** menú, seleccione **New** > **proyecto**.
+1. En el menú **archivo** , seleccione **nuevo** > **proyecto**.
 
-2. Escriba **proyecto vacío** en el cuadro de búsqueda de la plantilla, seleccione la **proyecto vacío (.NET Framework)** plantilla y, a continuación, haga clic en **siguiente**.
+2. Escriba **proyecto vacío** en el cuadro de búsqueda de plantillas, seleccione la plantilla **proyecto vacío (.NET Framework)** y, a continuación, haga clic en **siguiente**.
 
-3. Haga clic en **Crear**.
+3. Haga clic en **Create**(Crear).
 
 ::: moniker-end
 
 4. Agregue archivos XML al proyecto.
 
-   El editor XML busca los esquemas que agregue a este proyecto y los utiliza para la validación e IntelliSense en cualquier XML, esquema o los archivos XSLT que edite mientras este proyecto está abierto.
+   El editor XML busca los esquemas que agrega a este proyecto y los utiliza para la validación e IntelliSense en cualquier archivo XML, esquema o XSLT que edite mientras este proyecto está abierto.
 
 ## <a name="see-also"></a>Vea también
 
 - [Editor XML](../xml-tools/xml-editor.md)
-- [Propiedades del documento XML, ventana Propiedades](../xml-tools/xml-document-properties-properties-window.md)
-- [Cómo: Crear un esquema XML de un documento XML](../xml-tools/how-to-create-an-xml-schema-from-an-xml-document.md)
+- [Propiedades de documento XML, ventana Propiedades](../xml-tools/xml-document-properties-properties-window.md)
+- [Cómo: Crear un esquema XML a partir de un documento XML](../xml-tools/how-to-create-an-xml-schema-from-an-xml-document.md)
