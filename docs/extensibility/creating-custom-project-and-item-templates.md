@@ -8,12 +8,12 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8fbe1a4decebd68b80e6cbe8728c5de84a44c641
-ms.sourcegitcommit: 485881e6ba872c7b28a7b17ceaede845e5bea4fe
+ms.openlocfilehash: dff4d3566dcfb4b40f1008eed09371e42459c3a5
+ms.sourcegitcommit: 9fc8b144d4ed1c46aba87c0b7e1d24454e0eea9d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/22/2019
-ms.locfileid: "68377756"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "68493118"
 ---
 # <a name="create-custom-project-and-item-templates"></a>Crear plantillas de proyecto y de elemento personalizadas
 
@@ -36,7 +36,6 @@ En el caso de escenarios de creación de plantillas básicas, debe usar el Asist
 
 ![selección de proyecto de plantilla de proyecto](media/project-template-selection.png)
 
-
 2. Agregue y quite elementos del proyecto según sea necesario para el proyecto. No quite el archivo de proyecto editable, el archivo *AssemblyInfo* o el archivo *. vstemplate* .
 
 3. Actualice el archivo *. vstemplate* para reflejar las adiciones y eliminaciones. El elemento de [proyecto](../extensibility/project-element-visual-studio-templates.md) debe contener un elemento [ProjectItem](../extensibility/projectitem-element-visual-studio-item-templates.md) para cada archivo que se va a incluir en la plantilla.
@@ -49,7 +48,7 @@ En el caso de escenarios de creación de plantillas básicas, debe usar el Asist
 
      Visual Studio crea un archivo *. zip* que contiene la plantilla. No está implementado y no está disponible en la instancia experimental.
 
-## <a name="create-an-item-template"></a>Crear una plantilla de elemento
+## <a name="create-an-item-template"></a>Creación de una plantilla de elemento
 
 1. Cree un proyecto de plantilla de elemento.
 

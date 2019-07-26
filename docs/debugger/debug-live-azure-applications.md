@@ -12,12 +12,12 @@ manager: jillfra
 ms.workload:
 - aspnet
 - azure
-ms.openlocfilehash: 9bbd0aa8ea3d98077154225fb3a35aec5545ccfa
-ms.sourcegitcommit: 59e5758036223ee866f3de5e3c0ab2b6dbae97b6
+ms.openlocfilehash: fae6be8932731e5589dbc27f5084bcbc509680c1
+ms.sourcegitcommit: 9fc8b144d4ed1c46aba87c0b7e1d24454e0eea9d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "68415735"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "68493317"
 ---
 # <a name="debug-live-aspnet-azure-apps-using-the-snapshot-debugger"></a>Depuración de aplicaciones de Azure de ASP.NET en vivo con Snapshot Debugger
 
@@ -109,7 +109,6 @@ En este tutorial va a:
 ## <a name="take-a-snapshot"></a>Realización de una instantánea
 
 Una vez que se establece un acoplamiento, puede generar manualmente una instantánea en la vista de explorador del sitio web y ejecutar la línea de código marcada o esperar a que los usuarios generen uno a partir de su uso del sitio.
-
 
 ## <a name="inspect-snapshot-data"></a>Inspección de los datos de instantánea
 
