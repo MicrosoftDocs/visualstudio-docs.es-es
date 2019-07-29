@@ -1,6 +1,6 @@
 ---
 title: Convenciones de lenguaje de .NET para EditorConfig
-ms.date: 06/17/2019
+ms.date: 07/17/2019
 ms.topic: reference
 dev_langs:
 - CSharp
@@ -13,23 +13,22 @@ manager: jillfra
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: 0ddb6173095b8d4fd552e108f458a271321511c7
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 5305ee8db1161415f038ec6cc149c9e88edb9589
+ms.sourcegitcommit: 485881e6ba872c7b28a7b17ceaede845e5bea4fe
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67823301"
+ms.lasthandoff: 07/22/2019
+ms.locfileid: "68377936"
 ---
 # <a name="language-conventions"></a>Convenciones de lenguaje
 
-Convenciones de lenguaje de EditorConfig en Visual Studio se dividen en dos categorías:
-
-- [Configuración del estilo de código de .NET](#net-code-style-settings)
-
-- [Configuración del estilo de código de C#](#c-code-style-settings)
+Las convenciones de lenguaje de EditorConfig en Visual Studio se dividen en dos categorías: las que se aplican a Visual Basic y C# y las que son específicas de C#. Las convenciones de lenguaje afectan al modo en que se usan diversos aspectos de un lenguaje de programación, por ejemplo, los modificadores y los paréntesis.
 
 > [!TIP]
-> Para ver los ejemplos de código en el lenguaje de programación preferido, elíjalo con el selector de lenguajes en la esquina superior derecha de la ventana del explorador.
+> - Use los vínculos de **este artículo** para ir a las diferentes secciones de la página.
+> - Para ver los ejemplos de código en el lenguaje de programación preferido, elíjalo con el selector de lenguajes en la esquina superior derecha de la ventana del explorador.
+>
+>   ![Control de selector de lenguaje de codificación](media/code-language-picker.png)
 
 ## <a name="rule-format"></a>Formato de regla
 
@@ -83,6 +82,7 @@ Las reglas de estilo de esta sección son aplicables a C# y Visual Basic.
   - dotnet\_style\_prefer\_is\_null\_check\_over\_reference\_equality\_method
   - dotnet\_style\_prefer\_conditional\_expression\_over\_assignment
   - dotnet\_style\_prefer\_conditional\_expression\_over\_return
+  - dotnet\_style\_prefer\_compound\_assignment
 - [Preferencias de la comprobación de "NULL"](#null-checking-preferences)
   - dotnet\_style\_coalesce_expression
   - dotnet\_style\_null_propagation
@@ -555,6 +555,7 @@ dotnet_style_prefer_inferred_anonymous_type_member_names = true:suggestion
 dotnet_style_prefer_auto_properties = true:silent
 dotnet_style_prefer_conditional_expression_over_assignment = true:suggestion
 dotnet_style_prefer_conditional_expression_over_return = true:suggestion
+dotnet_style_prefer_compound_assignment = true:suggestion
 ```
 
 #### <a name="dotnetstyleobjectinitializer"></a>dotnet\_style\_object_initializer
@@ -871,6 +872,34 @@ Else
 End If
 ```
 
+#### <a name="dotnetstyleprefercompoundassignment"></a>dotnet\_style\_prefer\_compound\_assignment
+
+|||
+|-|-|
+| **Nombre de la regla** | dotnet_style_prefer_compound_assignment |
+| **Identificador de la regla** | IDE0054 |
+| **Lenguajes aplicables** | C# y Visual Basic |
+| **Valores** | `true`: se prefieren expresiones de [asignación compuesta](/dotnet/csharp/language-reference/operators/assignment-operator#compound-assignment)<br /><br />`false`: no se prefieren expresiones de asignación compuesta |
+| **Valor predeterminado de Visual Studio** | `true:suggestion` |
+
+Ejemplos de código:
+
+```csharp
+// dotnet_style_prefer_compound_assignment = true
+x += 1;
+
+// dotnet_style_prefer_compound_assignment = false
+x = x + 1;
+```
+
+```vb
+' dotnet_style_prefer_compound_assignment = true
+x += 1
+
+' dotnet_style_prefer_compound_assignment = false
+x = x + 1
+```
+
 ### <a name="null-checking-preferences"></a>Preferencias de la comprobación de NULL
 
 Las reglas de estilo de esta sección tienen que ver con el uso de las preferencias de la comprobación de NULL.
@@ -944,6 +973,57 @@ Dim v = If(o Is Nothing, Nothing, o.ToString()) ' or
 Dim v = If(o IsNot Nothing, o.ToString(), Nothing)
 ```
 
+## <a name="net-code-quality-settings"></a>Configuración de la calidad del código .NET
+
+Las reglas de calidad de esta sección se aplican al código de C# y Visual Basic. Se usan para configurar analizadores de código incorporados en el entorno de desarrollo integrado (IDE) de Visual Studio. Para obtener información sobre cómo configurar analizadores de FxCop con un archivo EditorConfig, vea [Configurar los analizadores de FxCop](../code-quality/configure-fxcop-analyzers.md).
+
+- [Preferencias de parámetros](#parameter-preferences)
+  - dotnet\_code\_quality\_unused\_parameters
+
+### <a name="parameter-preferences"></a>Preferencias de parámetros
+
+Las reglas de calidad de esta sección se refieren a parámetros de método.
+
+Estas reglas podrían aparecer en un archivo *.editorconfig* como sigue:
+
+```ini
+# CSharp and Visual Basic code quality settings:
+[*.{cs,vb}]
+dotnet_code_quality_unused_parameters = all:suggestion
+```
+
+#### <a name="dotnetcodequalityunusedparameters"></a>dotnet\_code\_quality\_unused\_parameters
+
+|||
+|-|-|
+| **Nombre de la regla** | dotnet_code_quality_unused_parameters |
+| **Identificador de la regla** | IDE0060 |
+| **Lenguajes aplicables** | C# y Visual Basic |
+| **Valores** | `all`: se marcan métodos con cualquier accesibilidad que contengan parámetros no usados<br /><br />`non_public`: solo se marcan métodos no públicos que contengan parámetros no usados |
+| **Valor predeterminado de Visual Studio** | `all:suggestion` |
+
+Ejemplos de código:
+
+```csharp
+// dotnet_code_quality_unused_parameters = all:suggestion
+public int GetNum() { return 1; }
+
+// dotnet_code_quality_unused_parameters = non_public:suggestion
+public int GetNum(int arg1) { return 1; }
+```
+
+```vb
+' dotnet_code_quality_unused_parameters = all:suggestion
+Public Function GetNum()
+    Return 1
+End Function
+
+' dotnet_code_quality_unused_parameters = non_public:suggestion
+Public Function GetNum(arg1 As Integer)
+    Return 1
+End Function
+```
+
 ## <a name="c-code-style-settings"></a>Configuración del estilo de código de C#
 
 Las reglas de estilo de esta sección solo son aplicables a C#.
@@ -959,20 +1039,32 @@ Las reglas de estilo de esta sección solo son aplicables a C#.
   - csharp\_style\_expression\_bodied_properties
   - csharp\_style\_expression\_bodied_indexers
   - csharp\_style\_expression\_bodied_accessors
+  - csharp\_style\_expression\_bodied_lambdas
+  - csharp\_style\_expression\_bodied\_local_functions
 - [Coincidencia de patrones](#pattern-matching)
   - csharp\_style\_pattern\_matching\_over\_is\_with\_cast_check
   - csharp\_style\_pattern\_matching\_over\_as\_with\_null_check
 - [Declaraciones de variables insertadas](#inlined-variable-declarations)
   - csharp\_style\_inlined\_variable_declaration
-- [Preferencias de nivel de expresión](#expression-level-preferences)
+- [Preferencias de nivel de expresión](#c-expression-level-preferences)
   - csharp\_prefer\_simple\_default_expression
-  - csharp\_style\_deconstructed\_variable_declaration
-  - csharp\_style\_pattern\_local\_over\_anonymous_function
-- [Preferencias de la comprobación de "NULL"](#null-checking-preferences)
+- [Preferencias de la comprobación de "NULL"](#c-null-checking-preferences)
   - csharp\_style\_throw_expression
   - csharp\_style\_conditional\_delegate_call
 - [Preferencias de bloques de código](#code-block-preferences)
   - csharp\_prefer_braces
+- [Preferencias de valores no usados](#unused-value-preferences)
+  - csharp\_style\_unused\_value\_expression\_statement_preference
+  - csharp\_style\_unused\_value\_assignment_preference
+- [Preferencias de índices y rangos](#index-and-range-preferences)
+  - csharp\_style\_prefer\_index_operator
+  - csharp\_style\_prefer\_range_operator
+- [Preferencias varias](#miscellaneous-preferences)
+  - csharp\_style\_deconstructed\_variable_declaration
+  - csharp\_style\_pattern\_local\_over\_anonymous_function
+  - csharp\_using\_directive\_placement
+  - csharp\_prefer\_static\_local_function
+  - csharp\_prefer\_simple\_using_statement
 
 ### <a name="implicit-and-explicit-types"></a>Tipos implícitos y explícitos
 
@@ -1063,6 +1155,8 @@ csharp_style_expression_bodied_operators = false:silent
 csharp_style_expression_bodied_properties = true:suggestion
 csharp_style_expression_bodied_indexers = true:suggestion
 csharp_style_expression_bodied_accessors = true:suggestion
+csharp_style_expression_bodied_lambdas = true:silent
+csharp_style_expression_bodied_local_functions = false:silent
 ```
 
 #### <a name="csharpstyleexpressionbodiedmethods"></a>csharp\_style\_expression\_bodied_methods
@@ -1072,7 +1166,7 @@ csharp_style_expression_bodied_accessors = true:suggestion
 | **Nombre de la regla** | csharp_style_expression_bodied_methods |
 | **Identificador de la regla** | IDE0022 |
 | **Lenguajes aplicables** | C# 6.0+  |
-| **Valores** | `true`: se prefieren miembros con forma de expresión para los métodos.<br /><br />`when_on_single_line`: se prefieren miembros con forma de expresión para los métodos cuando sean una sola línea.<br /><br />`false`: se prefieren cuerpos de bloque para los métodos. |
+| **Valores** | `true`: se prefieren cuerpos de expresión para los métodos<br /><br />`when_on_single_line`: se prefieren cuerpos de expresión para los métodos cuando van a ser una sola línea<br /><br />`false`: se prefieren cuerpos de bloque para los métodos. |
 | **Valor predeterminado de Visual Studio** | `false:silent` |
 
 Ejemplos de código:
@@ -1091,8 +1185,8 @@ public int GetAge() { return this.Age; }
 |-|-|
 | **Nombre de la regla** | csharp_style_expression_bodied_constructors |
 | **Identificador de la regla** | IDE0021 |
-| **Lenguajes aplicables** | C# 7.0+  |
-| **Valores** | `true`: se prefieren miembros con forma de expresión para los constructores.<br /><br />`when_on_single_line`: se prefieren miembros con forma de expresión para los constructores cuando sean una sola línea.<br /><br />`false`: se prefieren cuerpos de bloque para los constructores. |
+| **Lenguajes aplicables** | C# 7.0+ |
+| **Valores** | `true`: se prefieren cuerpos de expresión para los constructores<br /><br />`when_on_single_line`: se prefieren cuerpos de expresión para los constructores cuando van a ser una sola línea<br /><br />`false`: se prefieren cuerpos de bloque para los constructores. |
 | **Valor predeterminado de Visual Studio** | `false:silent` |
 
 Ejemplos de código:
@@ -1111,8 +1205,8 @@ public Customer(int age) { Age = age; }
 |-|-|
 | **Nombre de la regla** | csharp_style_expression_bodied_operators |
 | **Identificador de la regla** | IDE0023 e IDE0024 |
-| **Lenguajes aplicables** | C# 7.0+  |
-| **Valores** | `true`: se prefieren miembros con forma de expresión para los operadores.<br /><br />`when_on_single_line`: se prefieren miembros con forma de expresión para los operadores cuando sean una sola línea.<br /><br />`false`: se prefieren cuerpos de bloque para los operadores. |
+| **Lenguajes aplicables** | C# 7.0+ |
+| **Valores** | `true`: se prefieren cuerpos de expresión para los operadores<br /><br />`when_on_single_line`: se prefieren cuerpos de expresión para los operadores cuando van a ser una sola línea<br /><br />`false`: se prefieren cuerpos de bloque para los operadores. |
 | **Valor predeterminado de Visual Studio** | `false:silent` |
 
 Ejemplos de código:
@@ -1133,8 +1227,8 @@ public static ComplexNumber operator + (ComplexNumber c1, ComplexNumber c2)
 |-|-|
 | **Nombre de la regla** | csharp_style_expression_bodied_properties |
 | **Identificador de la regla** | IDE0025 |
-| **Lenguajes aplicables** | C# 7.0+  |
-| **Valores** | `true`: se prefieren miembros con forma de expresión para las propiedades.<br /><br />`when_on_single_line`: se prefieren miembros con forma de expresión para las propiedades cuando sean una sola línea.<br /><br />`false`: se prefieren cuerpos de bloque para las propiedades. |
+| **Lenguajes aplicables** | C# 7.0+ |
+| **Valores** | `true`: se prefieren cuerpos de expresión para las propiedades<br /><br />`when_on_single_line`: se prefieren cuerpos de expresión para las propiedades cuando van a ser una sola línea<br /><br />`false`: se prefieren cuerpos de bloque para las propiedades. |
 | **Valor predeterminado de Visual Studio** | `true:silent` |
 
 Ejemplos de código:
@@ -1153,8 +1247,8 @@ public int Age { get { return _age; }}
 |-|-|
 | **Nombre de la regla** | csharp_style_expression_bodied_indexers |
 | **Identificador de la regla** | IDE0026 |
-| **Lenguajes aplicables** | C# 7.0+  |
-| **Valores** | `true`: se prefieren miembros con forma de expresión para los indexadores.<br /><br />`when_on_single_line`: se prefieren miembros con forma de expresión para los indexadores cuando sean una sola línea.<br /><br />`false`: se prefieren cuerpos de bloque para los indexadores. |
+| **Lenguajes aplicables** | C# 7.0+ |
+| **Valores** | `true`: se prefieren cuerpos de expresión para los indizadores<br /><br />`when_on_single_line`: se prefieren cuerpos de expresión para los indizadores cuando van a ser una sola línea<br /><br />`false`: se prefieren cuerpos de bloque para los indexadores. |
 | **Valor predeterminado de Visual Studio** | `true:silent` |
 
 Ejemplos de código:
@@ -1173,8 +1267,8 @@ public T this[int i] { get { return _values[i]; } }
 |-|-|
 | **Nombre de la regla** | csharp_style_expression_bodied_accessors |
 | **Identificador de la regla** | IDE0027 |
-| **Lenguajes aplicables** | C# 7.0+  |
-| **Valores** | `true`: se prefieren miembros con forma de expresión para los descriptores de acceso.<br /><br />`when_on_single_line`: se prefieren miembros con forma de expresión para los descriptores de acceso cuando sean una sola línea.<br /><br />`false`: se prefieren cuerpos de bloque para los descriptores de acceso. |
+| **Lenguajes aplicables** | C# 7.0+ |
+| **Valores** | `true`: se prefieren cuerpos de expresión para los descriptores de acceso<br /><br />`when_on_single_line`: se prefieren cuerpos de expresión para los descriptores de acceso cuando van a ser una sola línea<br /><br />`false`: se prefieren cuerpos de bloque para los descriptores de acceso. |
 | **Valor predeterminado de Visual Studio** | `true:silent` |
 
 Ejemplos de código:
@@ -1185,6 +1279,58 @@ public int Age { get => _age; set => _age = value; }
 
 // csharp_style_expression_bodied_accessors = false
 public int Age { get { return _age; } set { _age = value; } }
+```
+
+#### <a name="csharpstyleexpressionbodiedlambdas"></a>csharp\_style\_expression\_bodied_lambdas
+
+|||
+|-|-|
+| **Nombre de la regla** | csharp_style_expression_bodied_lambdas |
+| **Identificador de la regla** | IDE0053 |
+| **Valores** | `true`: se prefieren cuerpos de expresión para las expresiones lambda<br /><br />`when_on_single_line`: se prefieren cuerpos de expresión para las expresiones lambda cuando van a ser una sola línea<br /><br />`false`: se prefieren cuerpos de bloque para las expresiones lambda |
+| **Valor predeterminado de Visual Studio** | `true:silent` |
+
+Ejemplos de código:
+
+```csharp
+// csharp_style_expression_bodied_lambdas = true
+Func<int, int> square = x => x * x;
+
+// csharp_style_expression_bodied_lambdas = false
+Func<int, int> square = x => { return x * x; };
+```
+
+#### <a name="csharpstyleexpressionbodiedlocalfunctions"></a>csharp\_style\_expression\_bodied\_local_functions
+
+A partir de C# 7.0, C# admite [funciones locales](/dotnet/csharp/programming-guide/classes-and-structs/local-functions). Las funciones locales son métodos privados de un tipo que están anidados en otro miembro.
+
+|||
+|-|-|
+| **Nombre de la regla** | csharp_style_expression_bodied_local_functions |
+| **Identificador de la regla** | IDE0061 |
+| **Lenguajes aplicables** | C# 7.0+ |
+| **Valores** | `true`: se prefieren cuerpos de expresión para las funciones locales<br /><br />`when_on_single_line`: se prefieren cuerpos de expresión para las funciones locales cuando van a ser una sola línea<br /><br />`false`: se prefieren cuerpos de bloque para las funciones locales |
+| **Valor predeterminado de Visual Studio** | `false:silent` |
+
+Ejemplos de código:
+
+```csharp
+// csharp_style_expression_bodied_local_functions = true
+void M()
+{
+    Hello();
+    void Hello() => Console.WriteLine("Hello");
+}
+
+// csharp_style_expression_bodied_local_functions = false
+void M()
+{
+    Hello();
+    void Hello()
+    {
+        Console.WriteLine("Hello");
+    }
+}
 ```
 
 ### <a name="pattern-matching"></a>Detección de patrones
@@ -1206,7 +1352,7 @@ csharp_style_pattern_matching_over_as_with_null_check = true:suggestion
 |-|-|
 | **Nombre de la regla** | csharp_style_pattern_matching_over_is_with_cast_check |
 | **Identificador de la regla** | IDE0020 |
-| **Lenguajes aplicables** | C# 7.0+  |
+| **Lenguajes aplicables** | C# 7.0+ |
 | **Valores** | `true`: se prefieren la coincidencia de patrones en lugar de expresiones `is` con conversiones de tipo.<br /><br />`false`: se prefieren expresiones `is` con conversiones de tipo en lugar de la coincidencia de patrones. |
 | **Valor predeterminado de Visual Studio** | `true:suggestion` |
 
@@ -1226,7 +1372,7 @@ if (o is int) {var i = (int)o; ... }
 |-|-|
 | **Nombre de la regla** | csharp_style_pattern_matching_over_as_with_null_check |
 | **Identificador de la regla** | IDE0019 |
-| **Lenguajes aplicables** | C# 7.0+  |
+| **Lenguajes aplicables** | C# 7.0+ |
 | **Valores** | `true`: se prefiere la coincidencia de patrones en lugar de expresiones `as` con comprobaciones NULL para determinar si algo es de un tipo determinado.<br /><br />`false`: se prefieren expresiones `as` con comprobaciones NULL en lugar de la coincidencia de patrones para determinar si algo es de un tipo determinado. |
 | **Valor predeterminado de Visual Studio** | `true:suggestion` |
 
@@ -1251,7 +1397,7 @@ Esta regla de estilo se aplica a si las variables `out` se declaran como alinead
 |-|-|
 | **Nombre de la regla** | csharp_style_inlined_variable_declaration |
 | **Identificador de la regla** | IDE0018 |
-| **Lenguajes aplicables** | C# 7.0+  |
+| **Lenguajes aplicables** | C# 7.0+ |
 | **Valores** | `true`: se prefiere que las variables `out` se declaren como alineadas en la lista de argumentos de una llamada de método, siempre que sea posible.<br /><br />`false`: se prefiere que las variables `out` se declaren antes de la llamada al método. |
 | **Valor predeterminado de Visual Studio** | `true:suggestion` |
 
@@ -1274,9 +1420,9 @@ Ejemplo del archivo *.editorconfig*:
 csharp_style_inlined_variable_declaration = true:suggestion
 ```
 
-### <a name="expression-level-preferences"></a>Preferencias de nivel de expresión
+### <a name="c-expression-level-preferences"></a>Preferencias de nivel de expresión de C#
 
-Las reglas de estilo de esta sección hacen referencia a las preferencias de nivel de expresión, incluido el uso de [expresiones predeterminadas](/dotnet/csharp/programming-guide/statements-expressions-operators/default-value-expressions#default-literal-and-type-inference), variables deconstruidas y funciones locales sobre funciones anónimas.
+Las reglas de estilo de esta sección se refieren a las preferencias de nivel de expresión.
 
 Ejemplo del archivo *.editorconfig*:
 
@@ -1284,8 +1430,6 @@ Ejemplo del archivo *.editorconfig*:
 # CSharp code style settings:
 [*.cs]
 csharp_prefer_simple_default_expression = true:suggestion
-csharp_style_deconstructed_variable_declaration = true:suggestion
-csharp_style_pattern_local_over_anonymous_function = true:suggestion
 ```
 
 #### <a name="csharpprefersimpledefaultexpression"></a>csharp\_prefer\_simple\_default_expression
@@ -1310,62 +1454,7 @@ void DoWork(CancellationToken cancellationToken = default) { ... }
 void DoWork(CancellationToken cancellationToken = default(CancellationToken)) { ... }
 ```
 
-#### <a name="csharpstyledeconstructedvariabledeclaration"></a>csharp\_style\_deconstructed\_variable_declaration
-
-|||
-|-|-|
-| **Nombre de la regla** | csharp_style_deconstructed_variable_declaration |
-| **Identificador de la regla** | IDE0042 |
-| **Lenguajes aplicables** | C# 7.0+  |
-| **Valores** | `true`: se prefiere la declaración de variable deconstruida.<br /><br />`false`: no se prefiere la deconstrucción de las declaraciones de variable. |
-| **Valor predeterminado de Visual Studio** | `true:suggestion` |
-
-Ejemplos de código:
-
-```csharp
-// csharp_style_deconstructed_variable_declaration = true
-var (name, age) = GetPersonTuple();
-Console.WriteLine($"{name} {age}");
-
-(int x, int y) = GetPointTuple();
-Console.WriteLine($"{x} {y}");
-
-// csharp_style_deconstructed_variable_declaration = false
-var person = GetPersonTuple();
-Console.WriteLine($"{person.name} {person.age}");
-
-(int x, int y) point = GetPointTuple();
-Console.WriteLine($"{point.x} {point.y}");
-```
-
-#### <a name="csharpstylepatternlocaloveranonymousfunction"></a>csharp\_style\_pattern\_local\_over\_anonymous_function
-
-|||
-|-|-|
-| **Nombre de la regla** | csharp_style_pattern_local_over_anonymous_function |
-| **Identificador de la regla** | IDE0039 |
-| **Lenguajes aplicables** | C# 7.0+  |
-| **Valores** | `true`: se prefieren las funciones locales sobre las funciones anónimas.<br /><br />`false`: se prefieren las funciones anónimas sobre las funciones locales. |
-| **Valor predeterminado de Visual Studio** | `true:suggestion` |
-
-Ejemplos de código:
-
-```csharp
-// csharp_style_pattern_local_over_anonymous_function = true
-int fibonacci(int n)
-{
-    return n <= 1 ? 1 : fibonacci(n-1) + fibonacci(n-2);
-}
-
-// csharp_style_pattern_local_over_anonymous_function = false
-Func<int, int> fibonacci = null;
-fibonacci = (int n) =>
-{
-    return n <= 1 ? 1 : fibonacci(n - 1) + fibonacci(n - 2);
-};
-```
-
-### <a name="null-checking-preferences"></a>Preferencias de la comprobación de NULL
+### <a name="c-null-checking-preferences"></a>Preferencias de comprobación de NULL de C#
 
 Estas reglas de estilo están relacionadas con la sintaxis de la comprobación de `null`, incluido el uso de expresiones `throw` o instrucciones `throw`, y si se realiza una comprobación de NULL o se usa el operador de incorporación condicional (`?.`) al invocar una [expresión lambda](/dotnet/csharp/lambda-expressions).
 
@@ -1384,7 +1473,7 @@ csharp_style_conditional_delegate_call = false:suggestion
 |-|-|
 | **Nombre de la regla** | csharp_style_throw_expression |
 | **Identificador de la regla** | IDE0016 |
-| **Lenguajes aplicables** | C# 7.0+  |
+| **Lenguajes aplicables** | C# 7.0+ |
 | **Valores** | `true`: se prefiere el uso de expresiones `throw` en lugar de instrucciones `throw`.<br /><br />`false`: se prefiere el uso de instrucciones `throw` en lugar de expresiones `throw`. |
 | **Valor predeterminado de Visual Studio** | `true:suggestion` |
 
@@ -1449,6 +1538,285 @@ if (test) { this.Display(); }
 
 // csharp_prefer_braces = false
 if (test) this.Display();
+```
+
+### <a name="unused-value-preferences"></a>Preferencias de valores no usados
+
+Estas reglas de estilo se refieren a expresiones no usadas y asignaciones de valores.
+
+Ejemplo del archivo *.editorconfig*:
+
+```ini
+# CSharp code style settings:
+[*.cs]
+csharp_style_unused_value_expression_statement_preference = discard_variable:silent
+csharp_style_unused_value_assignment_preference = discard_variable:suggestion
+```
+
+#### <a name="csharpstyleunusedvalueexpressionstatementpreference"></a>csharp_style_unused_value_expression_statement_preference
+
+|||
+|-|-|
+| **Nombre de la regla** | csharp_style_unused_value_expression_statement_preference |
+| **Identificador de la regla** | IDE0058 |
+| **Lenguajes aplicables** | C# |
+| **Valores** | `discard_variable`: se prefiere asignar una expresión no usada a un [descarte](/dotnet/csharp/discards) <br /><br />`unused_local_variable`: se prefiere asignar una expresión no usada a una variable local |
+| **Valor predeterminado de Visual Studio** | `discard_variable:silent` |
+
+Ejemplos de código:
+
+```csharp
+// Original code:
+System.Convert.ToInt32("35");
+
+// After code fix for IDE0058:
+
+// csharp_style_unused_value_expression_statement_preference = discard_variable
+_ = System.Convert.ToInt32("35");
+
+// csharp_style_unused_value_expression_statement_preference = unused_local_variable
+var unused = Convert.ToInt32("35");
+```
+
+#### <a name="csharpstyleunusedvalueassignmentpreference"></a>csharp_style_unused_value_assignment_preference
+
+|||
+|-|-|
+| **Nombre de la regla** | csharp_style_unused_value_assignment_preference |
+| **Identificador de la regla** | IDE0059 |
+| **Lenguajes aplicables** | C# |
+| **Valores** | `discard_variable`: se prefiere usar un [descarte](/dotnet/csharp/discards) al asignar un valor que no se usa<br /><br />`unused_local_variable`: se prefiere usar una variable local al asignar un valor que no se usa |
+| **Valor predeterminado de Visual Studio** | `discard_variable:suggestion` |
+
+Ejemplos de código:
+
+```csharp
+// csharp_style_unused_value_assignment_preference = discard_variable
+int GetCount(Dictionary<string, int> wordCount, string searchWord)
+{
+    _ = wordCount.TryGetValue(searchWord, out var count);
+    return count;
+}
+
+// csharp_style_unused_value_assignment_preference = unused_local_variable
+int GetCount(Dictionary<string, int> wordCount, string searchWord)
+{
+    var unused = wordCount.TryGetValue(searchWord, out var count);
+    return count;
+}
+```
+
+### <a name="index-and-range-preferences"></a>Preferencias de índices y rangos
+
+Estas reglas de estilo se refieren al uso de operadores de índice y rango, que están disponibles en C# 8.0 y versiones posteriores.
+
+Ejemplo del archivo *.editorconfig*:
+
+```ini
+# CSharp code style settings:
+[*.cs]
+csharp_style_prefer_index_operator = true:suggestion
+csharp_style_prefer_range_operator = true:suggestion
+```
+
+#### <a name="csharpstylepreferindexoperator"></a>csharp\_style\_prefer\_index_operator
+
+|||
+|-|-|
+| **Nombre de la regla** | csharp_style_prefer_index_operator |
+| **Identificador de la regla** | IDE0056 |
+| **Lenguajes aplicables** | C# 8.0+ |
+| **Valores** | `true`: se prefiere usar el operador `^` al calcular un índice del final de una colección<br /><br />`false`: no se prefiere usar el operador `^` al calcular un índice del final de una colección |
+| **Valor predeterminado de Visual Studio** | `true:suggestion` |
+
+Ejemplos de código:
+
+```csharp
+// csharp_style_prefer_index_operator = true
+string[] names = { "Archimedes", "Pythagoras", "Euclid" };
+var index = names[^1];
+
+// csharp_style_prefer_index_operator = false
+string[] names = { "Archimedes", "Pythagoras", "Euclid" };
+var index = names[names.Length - 1];
+```
+
+#### <a name="csharpstylepreferrangeoperator"></a>csharp\_style\_prefer\_range_operator
+
+|||
+|-|-|
+| **Nombre de la regla** | csharp_style_prefer_range_operator |
+| **Identificador de la regla** | IDE0057 |
+| **Lenguajes aplicables** | C# 8.0+ |
+| **Valores** | `true`: se prefiere usar el operador de rango `..` al extraer un "segmento" de una colección<br /><br />`false`: no se prefiere usar el operador de rango `..` al extraer un "segmento" de una colección |
+| **Valor predeterminado de Visual Studio** | `true:suggestion` |
+
+Ejemplos de código:
+
+```csharp
+// csharp_style_prefer_range_operator = true
+string sentence = "the quick brown fox";
+var sub = sentence[0..^4];
+
+// csharp_style_prefer_range_operator = false
+string sentence = "the quick brown fox";
+var sub = sentence.Substring(0, sentence.Length - 4);
+```
+
+### <a name="miscellaneous-preferences"></a>Preferencias varias
+
+Esta sección contiene reglas de estilo varias.
+
+Ejemplo del archivo *.editorconfig*:
+
+```ini
+# CSharp code style settings:
+[*.cs]
+csharp_style_deconstructed_variable_declaration = true:suggestion
+csharp_style_pattern_local_over_anonymous_function = true:suggestion
+csharp_using_directive_placement = outside_namespace:silent
+csharp_prefer_static_local_function = true:suggestion
+csharp_prefer_simple_using_statement = true:suggestion
+```
+
+#### <a name="csharpstyledeconstructedvariabledeclaration"></a>csharp\_style\_deconstructed\_variable_declaration
+
+|||
+|-|-|
+| **Nombre de la regla** | csharp_style_deconstructed_variable_declaration |
+| **Identificador de la regla** | IDE0042 |
+| **Lenguajes aplicables** | C# 7.0+ |
+| **Valores** | `true`: se prefiere la declaración de variable deconstruida.<br /><br />`false`: no se prefiere la deconstrucción de las declaraciones de variable. |
+| **Valor predeterminado de Visual Studio** | `true:suggestion` |
+
+Ejemplos de código:
+
+```csharp
+// csharp_style_deconstructed_variable_declaration = true
+var (name, age) = GetPersonTuple();
+Console.WriteLine($"{name} {age}");
+
+(int x, int y) = GetPointTuple();
+Console.WriteLine($"{x} {y}");
+
+// csharp_style_deconstructed_variable_declaration = false
+var person = GetPersonTuple();
+Console.WriteLine($"{person.name} {person.age}");
+
+(int x, int y) point = GetPointTuple();
+Console.WriteLine($"{point.x} {point.y}");
+```
+
+#### <a name="csharpstylepatternlocaloveranonymousfunction"></a>csharp\_style\_pattern\_local\_over\_anonymous_function
+
+A partir de C# 7.0, C# admite [funciones locales](/dotnet/csharp/programming-guide/classes-and-structs/local-functions). Las funciones locales son métodos privados de un tipo que están anidados en otro miembro.
+
+|||
+|-|-|
+| **Nombre de la regla** | csharp_style_pattern_local_over_anonymous_function |
+| **Identificador de la regla** | IDE0039 |
+| **Lenguajes aplicables** | C# 7.0+ |
+| **Valores** | `true`: se prefieren las funciones locales sobre las funciones anónimas.<br /><br />`false`: se prefieren las funciones anónimas sobre las funciones locales. |
+| **Valor predeterminado de Visual Studio** | `true:suggestion` |
+
+Ejemplos de código:
+
+```csharp
+// csharp_style_pattern_local_over_anonymous_function = true
+int fibonacci(int n)
+{
+    return n <= 1 ? 1 : fibonacci(n-1) + fibonacci(n-2);
+}
+
+// csharp_style_pattern_local_over_anonymous_function = false
+Func<int, int> fibonacci = null;
+fibonacci = (int n) =>
+{
+    return n <= 1 ? 1 : fibonacci(n - 1) + fibonacci(n - 2);
+};
+```
+
+#### <a name="csharpusingdirectiveplacement"></a>csharp\_using\_directive_placement
+
+|||
+|-|-|
+| **Nombre de la regla** | csharp_using_directive_placement |
+| **Identificador de la regla** | IDE0065 |
+| **Lenguajes aplicables** | C# |
+| **Valores** | `outside_namespace`: se prefiere colocar las directivas `using` fuera del espacio de nombres<br /><br />`inside_namespace`: se prefiere colocar las directivas `using` dentro del espacio de nombres |
+| **Valor predeterminado de Visual Studio** | `outside_namespace:silent` |
+
+Ejemplos de código:
+
+```csharp
+// csharp_using_directive_placement = outside_namespace
+using System;
+
+namespace Conventions
+{
+    ...
+}
+
+// csharp_using_directive_placement = inside_namespace
+namespace Conventions
+{
+    using System;
+    ...
+}
+```
+
+#### <a name="csharppreferstaticlocalfunction"></a>csharp\_prefer\_static\_local_function
+
+|||
+|-|-|
+| **Nombre de la regla** | csharp_prefer_static_local_function |
+| **Identificador de la regla** | IDE0062 |
+| **Lenguajes aplicables** | C# 8.0+ |
+| **Valores** | `true`: se prefiere marcar las funciones locales como `static`<br /><br />`false`: no se prefiere marcar las funciones locales como `static` |
+| **Valor predeterminado de Visual Studio** | `true:suggestion` |
+
+Ejemplos de código:
+
+```csharp
+// csharp_prefer_static_local_function = true
+void M()
+{
+    Hello();
+    static void Hello()
+    {
+        Console.WriteLine("Hello");
+    }
+}
+
+// csharp_prefer_static_local_function = false
+void M()
+{
+    Hello();
+    void Hello()
+    {
+        Console.WriteLine("Hello");
+    }
+}
+```
+
+#### <a name="csharpprefersimpleusingstatement"></a>csharp\_prefer\_simple\_using_statement
+
+|||
+|-|-|
+| **Nombre de la regla** | csharp_prefer_simple_using_statement |
+| **Identificador de la regla** | IDE0063 |
+| **Lenguajes aplicables** | C# 8.0+ |
+| **Valores** | `true`: se prefiere usar una instrucción `using` *simple*<br /><br />`false`: no se prefiere usar una instrucción `using` *simple* |
+| **Valor predeterminado de Visual Studio** | `true:suggestion` |
+
+Ejemplos de código:
+
+```csharp
+// csharp_prefer_simple_using_statement = true
+using var a = b;
+
+// csharp_prefer_simple_using_statement = false
+using (var a = b) { }
 ```
 
 ## <a name="see-also"></a>Vea también

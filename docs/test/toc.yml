@@ -54,9 +54,9 @@
       items:
         - name: 'Tutorial: Crear y ejecutar pruebas unitarias en código administrado'
           href: walkthrough-creating-and-running-unit-tests-for-managed-code.md
-        - name: 'Inicio rápido: Desarrollo controlado por pruebas con el Explorador de pruebas'
+        - name: 'Tutorial: Desarrollo mediante pruebas'
           href: quick-start-test-driven-development-with-test-explorer.md
-        - name: Usar miembros de Microsoft.VisualStudio.TestTools.UnitTesting en pruebas unitarias
+        - name: Usar la API MSTest en pruebas unitarias
           href: using-microsoft-visualstudio-testtools-unittesting-members-in-unit-tests.md
         - name: Usar las clases Assert
           href: using-the-assert-classes.md
@@ -72,13 +72,13 @@
               href: code-generation-compilation-and-naming-conventions-in-microsoft-fakes.md
         - name: Pruebas unitarias orientadas a datos
           items:
-            - name: Crear una prueba unitaria controlada por datos
+            - name: Creación de una prueba unitaria controlada por datos
               href: how-to-create-a-data-driven-unit-test.md
-            - name: 'Tutorial: Uso de un archivo de configuración para definir un origen de datos'
+            - name: Uso de un archivo de configuración para definir un origen de datos
               href: walkthrough-using-a-configuration-file-to-define-a-data-source.md
         - name: Pruebas unitarias para métodos genéricos
           href: unit-tests-for-generic-methods.md
-        - name: Configurar pruebas unitarias cuyo destino sea una versión anterior de .NET Framework
+        - name: Configuración de pruebas unitarias como destino para una versión anterior de .NET
           href: how-to-configure-unit-tests-to-target-an-earlier-version-of-the-dotnet-framework.md
     - name: Pruebas unitarias para código de C/C++
       items:

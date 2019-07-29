@@ -12,12 +12,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: fc45c25dcc9de1cdf1991525401e2d53bd86cdb3
-ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.openlocfilehash: 563dcd4d91e23c019edf5a777b70453f40091d69
+ms.sourcegitcommit: 57866dd72fd0e15ce61128df70729b427a2d02eb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "66261988"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "68315246"
 ---
 # <a name="tutorial-create-a-nodejs-and-react-app-in-visual-studio"></a>Tutorial: Crear una aplicación Node.js y React en Visual Studio
 
@@ -72,7 +72,7 @@ webpack empaqueta archivos JavaScript para que puedan ejecutarse en un explorado
 
 * Debe tener instalado el runtime de Node.js.
 
-    Este tutorial se ha probado con la versión 8.11.2.
+    Este tutorial se ha probado con la versión 10.16.0.
 
     Si todavía no lo tiene instalado, instale la versión LTS desde el sitio web de [Node.js](https://nodejs.org/en/download/). En general, Visual Studio detecta automáticamente el entorno de ejecución de Node.js instalado. Si no detecta un runtime instalado, puede configurar el proyecto para que haga referencia al runtime instalado en la página de propiedades (después de crear un proyecto, haga clic con el botón derecho en el nodo del proyecto y elija **Propiedades**).
 
@@ -318,7 +318,19 @@ En los pasos anteriores, se agregó *webpack-config.js* al proyecto. A continuac
 
     ![Cargar archivos modificados](../javascript/media/tutorial-nodejs-react-reload-files.png)
 
-Cada vez que realice cambios en *app.tsx*, debe volver a ejecutar el comando webpack.
+Cada vez que realice cambios en *app.tsx*, debe volver a ejecutar el comando webpack. Para automatizar este paso, agregue un script de compilación para transpilar el JSX.
+
+## <a name="add-a-build-script-to-transpile-the-jsx"></a>Agregar un script de compilación para transpilar el JSX
+
+En las versiones más recientes de Node.js, se requiere un script de compilación. En lugar de transpilar el JSX en la línea de comandos (como se muestra en la sección anterior), puede hacerlo al compilar desde Visual Studio.
+
+* Abra *package.json* y agregue la siguiente sección después de la sección `dependencies`:
+
+   ```json
+   "scripts": {
+    "build": "webpack-cli app.tsx --config webpack-config.js"
+   }
+   ```
 
 ## <a name="run-the-app"></a>Ejecutar la aplicación
 
@@ -331,7 +343,7 @@ Cada vez que realice cambios en *app.tsx*, debe volver a ejecutar el comando web
     ![Seleccionar Chrome como destino de depuración](../javascript/media/tutorial-nodejs-react-debug-target.png)
     ::: moniker-end
 
-    Si Chrome está disponible en la máquina, pero no aparece como opción, elija **Explorar con** en la lista desplegable de destino de depuración y seleccione Chrome como el destino de explorador predeterminado (elija **Establecer como predeterminado**).
+    Si Chrome está disponible en el equipo, pero no aparece como opción, seleccione **Explorador web (nombre del explorador)**  > **Google Chrome** en la lista desplegable de destino de depuración y seleccione Chrome como destino de explorador predeterminado.
 
 1. Para ejecutar la aplicación, presione **F5** (**Depurar** > **Iniciar depuración**) o en el botón de flecha verde.
 
