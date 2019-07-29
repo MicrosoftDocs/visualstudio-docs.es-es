@@ -10,18 +10,16 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 35b0348788cfa23dd389b0647e24b7ac0aa0b7a1
-ms.sourcegitcommit: 16bcaca215de75479695738d3c2d703c78c3500e
+ms.openlocfilehash: 048fb4474caae6b7cc81a8c62061e879e7556c58
+ms.sourcegitcommit: 8562a337cc9f674c756a4a0b2c7e288ebd61b51e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/21/2019
-ms.locfileid: "67309822"
+ms.lasthandoff: 07/19/2019
+ms.locfileid: "68345706"
 ---
 # <a name="net-naming-conventions-for-editorconfig"></a>Convenciones de nomenclatura .NET para EditorConfig
 
 Las convenciones de nomenclatura están relacionadas con los nombres de elementos de código como clases, propiedades y métodos. Por ejemplo, puede especificar que los miembros públicos deben escribirse en mayúsculas, o que los métodos asincrónicos deben terminar en "Async". Puede aplicar estas reglas si las especifica en un [archivo .editorconfig](../ide/create-portable-custom-editor-options.md). Las infracciones de reglas de nomenclatura aparecen en la **lista de errores** o como una sugerencia debajo del nombre, según la gravedad que elija para la regla. No es necesario compilar el proyecto para ver las infracciones.
-
-Las convenciones de nomenclatura deben ordenarse de la más específica a la menos específica en el archivo EditorConfig. La primera regla encontrada que se puede aplicar es la única que se aplica. Sin embargo, si hay varias *propiedades* de regla con el mismo nombre, la prioridad la tiene la última propiedad encontrada con ese nombre. Para más información, consulte [Prioridad y jerarquía de los archivos](create-portable-custom-editor-options.md#file-hierarchy-and-precedence).
 
 Para cada convención de nomenclatura, debe especificar los símbolos a los que se aplica, un estilo de nomenclatura y una gravedad de aplicación de la convención, con las propiedades que se describen a continuación. El orden de las propiedades no es importante.
 
@@ -44,19 +42,19 @@ Para describir el tipo de símbolos a los que se aplica la regla de nomenclatura
 En la lista siguiente se muestran los valores permitidos y puede especificar varios valores si los separa con una coma.
 
 - \* (use este valor para especificar todos los símbolos)
-- espacio de nombres
-- class
+- namespace
+- clase
 - struct
 - interfaz
 - enum
 - propiedad
-- method
+- método
 - campo
-- event
+- evento
 - delegado
-- Parámetro
+- parámetro
 - type_parameter
-- local
+- locales
 - local_function
 
 ### <a name="accessibility-levels-of-symbols"></a>Niveles de accesibilidad de símbolos
@@ -68,13 +66,13 @@ Para describir los niveles de accesibilidad de los símbolos a los que quiere ap
 En la lista siguiente se muestran los valores permitidos y puede especificar varios valores si los separa con una coma.
 
 - \* (use este valor para especificar todos los niveles de accesibilidad)
-- público
+- public
 - internal o friend
-- privado
+- private
 - protected
 - protected\_internal o protected_friend
 - private\_protected
-- local
+- locales
 
    El nivel de accesibilidad `local` se aplica a los símbolos definidos dentro de un método. Es útil para definir las convenciones de nomenclatura de los símbolos cuya accesibilidad no puede especificarse en el código. Por ejemplo, si especifica `applicable_accessibilities = local` en una convención de nomenclatura para las constantes (`required_modifiers = const`), la regla se aplica únicamente a las constantes definidas dentro de un método y no a las definidas en un tipo.
 
@@ -169,11 +167,27 @@ Gravedad | Efecto
 ------------ | -------------
 Ninguno o silencioso | Cuando no se sigue este estilo, no se muestra nada al usuario, pero el código generado automáticamente sigue este estilo.
 suggestion | Cuando no se sigue este estilo, se muestra al usuario como una sugerencia (como puntos debajo de los dos primeros caracteres). No tiene ningún efecto en tiempo de compilación.
-Warning (Advertencia) | Cuando no se sigue este estilo, se muestra una advertencia del compilador en la **lista de errores**.
+warning | Cuando no se sigue este estilo, se muestra una advertencia del compilador en la **lista de errores**.
 error | Cuando no se sigue este estilo, se muestra un error del compilador en la **lista de errores**.
 
 > [!NOTE]
 > No tiene que volver a compilar el proyecto para ver las infracciones de reglas de nomenclatura. Aparecen mientras se modifica el código, ya sea en la **lista de errores** o como una sugerencia.
+
+## <a name="rule-order"></a>Orden de las reglas
+
+::: moniker range="vs-2017"
+
+Las convenciones de nomenclatura deben ordenarse de la más específica a la menos específica en el archivo EditorConfig. La primera regla encontrada que se puede aplicar es la única que se aplica. Sin embargo, si hay varias *propiedades* de regla con el mismo nombre, la prioridad la tiene la última propiedad encontrada con ese nombre. Para más información, consulte [Prioridad y jerarquía de los archivos](create-portable-custom-editor-options.md#file-hierarchy-and-precedence).
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+A partir de la versión 16.2 de Visual Studio 2019, no importa el orden en el que se definan las reglas de nomenclatura de un archivo EditorConfig. Por el contrario, Visual Studio ordena las reglas de nomenclatura automáticamente según la definición de las propias reglas. La [extensión EditorConfig Language Service](https://marketplace.visualstudio.com/items?itemName=MadsKristensen.EditorConfig) puede analizar un archivo EditorConfig y notificar los casos en los que el orden de las reglas en el archivo es diferente al que va a usar el compilador en tiempo de ejecución.
+
+Si usa una versión anterior de Visual Studio, las convenciones de nomenclatura deben ordenarse de la más a la menos específica en el archivo EditorConfig. La primera regla encontrada que se puede aplicar es la única que se aplica. Sin embargo, si hay varias *propiedades* de regla con el mismo nombre, la prioridad la tiene la última propiedad encontrada con ese nombre. Para más información, consulte [Prioridad y jerarquía de los archivos](create-portable-custom-editor-options.md#file-hierarchy-and-precedence).
+
+::: moniker-end
 
 ## <a name="default-naming-styles"></a>Estilos de nomenclatura predeterminados
 

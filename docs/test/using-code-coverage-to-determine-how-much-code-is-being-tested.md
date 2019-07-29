@@ -1,6 +1,6 @@
 ---
 title: Pruebas de cobertura de código
-ms.date: 09/18/2018
+ms.date: 07/23/2019
 ms.topic: conceptual
 helpviewer_keywords:
 - code coverage
@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a76b40e2a9848b0f80e755d15a9bd6e65fcf51da
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 4a25fbffa21a7caeab1cf5910e1da95d7fba09e5
+ms.sourcegitcommit: 59e5758036223ee866f3de5e3c0ab2b6dbae97b6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62973131"
+ms.lasthandoff: 07/23/2019
+ms.locfileid: "68416448"
 ---
 # <a name="use-code-coverage-to-determine-how-much-code-is-being-tested"></a>Usar cobertura de código para determinar la cantidad de código que se está probando
 
@@ -47,7 +47,7 @@ La característica de cobertura de código solo está disponible en la edición 
 > [!TIP]
 > - Asegúrese de que la optimización del compilador está desactivada.
 > - Si está trabajando con código no administrado (nativo), utilice una compilación de depuración.
-> - Asegúrese de que está generando los archivos .pdb (símbolo) para cada ensamblado.
+> - Asegúrese de que está generando archivos .pdb (símbolo) para cada ensamblado.
 
 Si no obtiene los resultados esperados, consulte [Solución de problemas de cobertura de código](../test/troubleshooting-code-coverage.md). No olvide ejecutar la cobertura de código de nuevo después de actualizar el código. Los resultados de cobertura y color de código no se actualizan automáticamente después de modificar el código o al ejecutar pruebas.
 
@@ -55,9 +55,10 @@ Si no obtiene los resultados esperados, consulte [Solución de problemas de cobe
 
 La cobertura de código se cuenta en *bloques*. Un bloque es un fragmento de código con un punto de entrada y de salida exactamente.  Si el flujo de control del programa pasa a través de un bloque durante una serie de pruebas, ese bloque se cuenta como cubierto. El número de veces que se utiliza el bloque no tiene ningún efecto en el resultado.
 
-También se pueden mostrar los resultados en líneas eligiendo **Agregar o quitar columnas** en el encabezado de tabla. Si la serie de pruebas probó todos los bloques de código en cualquier línea de código, se cuenta como una línea. Siempre que una línea contenga algunos bloques de código que se han ejecutado y otros que no, se cuenta como una línea parcial.
+También se pueden mostrar los resultados en líneas eligiendo **Agregar o quitar columnas** en el encabezado de tabla. Algunos usuarios prefieren un recuento de líneas porque los porcentajes corresponden más al tamaño de los fragmentos que aparece en el código fuente. Un bloque grande de cálculo contaría como un único bloque aunque ocupe muchas líneas.
 
-Algunos usuarios prefieren un recuento de líneas porque los porcentajes corresponden más al tamaño de los fragmentos que aparece en el código fuente. Un bloque grande de cálculo contaría como un único bloque aunque ocupe muchas líneas.
+> [!TIP]
+> Una línea de código puede contener más de un bloque de código. Si este es el caso y la serie de pruebas emplea todos los bloques de código en la línea, se cuenta como una línea. Si en la línea se emplean algunos bloques de código, pero no todos, se cuenta como una línea parcial.
 
 ## <a name="manage-code-coverage-results"></a>Administrar resultados de cobertura de código
 

@@ -1,17 +1,17 @@
 ---
 title: Uso de claves de producto | Microsoft Docs
 author: evanwindom
-ms.author: jaunger
-manager: evelynp
-ms.date: 10/03/2017
+ms.author: lank
+manager: lank
+ms.date: 07/20/2019
 ms.topic: conceptual
 description: Sepa cómo obtener y administrar las claves de producto en las suscripciones de Visual Studio.
-ms.openlocfilehash: d4874f5b0d429db7102facfe7f4747d68134fca2
-ms.sourcegitcommit: 208395bc122f8d3dae3f5e5960c42981cc368310
+ms.openlocfilehash: 35dee0a03aa50e40b60d4207dcd6e830c9c27383
+ms.sourcegitcommit: 485881e6ba872c7b28a7b17ceaede845e5bea4fe
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/10/2019
-ms.locfileid: "67785024"
+ms.lasthandoff: 07/22/2019
+ms.locfileid: "68377693"
 ---
 # <a name="using-product-keys-in-visual-studio-subscriptions"></a>Uso de claves de producto en suscripciones de Visual Studio
 
@@ -42,13 +42,18 @@ Si reclamó la cantidad máxima de claves disponible para su suscripción dentro
 
 Nuestros estudios revelan que el número de claves de producto que incluye la suscripción es suficiente para la mayoría de suscriptores. Si necesita más claves, puede enviar una solicitud al [servicio al cliente](https://visualstudio.microsoft.com/subscriptions/support/) de suscripciones de Visual Studio que se evaluará caso a caso.
 
-## <a name="locating-and-claiming-product-keys"></a>Búsqueda y reclamación de claves de producto
-Debe iniciar sesión en su suscripción de Visual Studio para ver las claves de producto. Encontrará las claves de producto individuales si selecciona el vínculo azul **Obtener clave** de un determinado producto en la página [Descargas](https://my.visualstudio.com/downloads).  Todas las claves también se encuentran disponibles en la página [Claves de producto](https://my.visualstudio.com/productkeys?wt.mc_id=o~msft~docs). Si hay varias claves para un solo producto, en la columna Notas de la descarga aparecerán unas notas para ayudarle a identificar qué clave se debe usar.
-> [!div class="mx-imgBorder"]
-> ![Obtención de la clave desde la página Descargas](_img/product-keys/download-get-key.png)
+## <a name="accessing-product-keys"></a>Acceso a claves de producto
+Debe iniciar sesión en su suscripción de Visual Studio para ver las claves de producto. Encontrará las claves de producto individuales si selecciona el vínculo azul **Obtener clave** de un determinado producto en la página [Descargas](https://my.visualstudio.com/downloads).  Si hay varias claves para un solo producto, en la columna Notas de la descarga aparecerán unas notas para ayudarle a identificar qué clave se debe usar.
 
 A veces se unen varias ediciones del producto en una sola descarga. En estos casos, la clave del producto que se introduce determina la edición del producto que se instalará.
 Algunas claves se proporcionan de manera automática, como las claves "estáticas", que puede usar todas las veces necesarias, ya que la activación no es obligatoria. Para reclamar otras claves, seleccione el vínculo **Obtener clave** del producto en cuestión.
+> [!div class="mx-imgBorder"]
+> ![Obtención de la clave desde la página Descargas](_img/product-keys/download-get-key.png)
+
+Todas las claves también se encuentran disponibles en la página [Claves de producto](https://my.visualstudio.com/productkeys?wt.mc_id=o~msft~docs). En esta página puede encontrar claves estáticas que sirven para todos los usuarios de un producto, obtener claves personalizadas solo para uso propio, ver el estado de los límites de reclamación de claves y exportar todas las claves de producto. 
+
+> [!div class="mx-imgBorder"]
+> ![Página Claves de producto](_img/product-keys/product-keys-page.png)
 
 Según cuál sea el producto, hay disponibles diversos tipos de clave.
 
@@ -70,46 +75,7 @@ Según cuál sea el producto, hay disponibles diversos tipos de clave.
 
 Puede reclamar una clave en la página de descarga del producto, o bien buscar la clave que necesita en la página [Claves de producto](https://my.visualstudio.com/productkeys).
 
-### <a name="claiming-product-keys"></a>Reclamación de claves de producto
-Solo los suscriptores con suscripciones activas pueden descargar productos y reclamar claves de producto.  Puede exportar las claves reclamadas desde la página [Claves de producto](https://my.visualstudio.com/productkeys) mientras su suscripción esté activa.
-
-Para reclamar una clave de producto:
-1. Inicie sesión en su suscripción de Visual Studio.  Debe iniciar sesión para descargar productos o reclamar claves de producto.
-2. Haga clic en la pestaña [Claves de producto](https://my.visualstudio.com/productkeys?wt.mc_id=o~msft~docs).
-3. Las claves de producto aparecen ordenadas alfabéticamente por nombre de producto.  Puede ir al nombre del producto que quiera o buscarlo con la barra de búsqueda que hay en la parte superior de la página.
-   > [!div class="mx-imgBorder"]
-   > ![Búsqueda de la clave de producto](_img/product-keys/visio-product-key-cropped.png)
-
-En este ejemplo, usamos la barra de búsqueda para encontrar una clave de producto de Visio 2010.
-Como puede ver, hay varias versiones de Visio 2010.  Ya se ha reclamado una clave de Visio Standard 2010 y otra de Visio 2010 Premium, y ambos productos tienen cuatro claves restantes.  Las claves que se han reclamado son claves comerciales y se muestran como tal en la página.  Observe que en la columna **Notas** puede incluir una breve nota sobre las claves reclamadas.  Puede usar esta información junto con la fecha reflejada en la columna **Reclamado** para llevar un seguimiento de las claves reclamadas.  Por ejemplo, en las notas puede dejar constancia de cuándo ha activado una instalación del producto con la clave.
-
-### <a name="exporting-your-claimed-keys"></a>Exportación de claves reclamadas
-Puede exportar una lista de todas las claves que ha reclamado, junto con una amplia selección de claves estáticas y de otro tipo que se marcan automáticamente como "reclamadas".
-
-> [!IMPORTANT]
-> Si la suscripción expira, ya no podrá reclamar claves nuevas ni exportar las claves que ya haya reclamado.
-
-Para exportar las claves, basta con hacer clic en el vínculo **Export all keys** (Exportar todas las claves) en el extremo derecho de la página Claves de producto.  Se creará un archivo .xml llamado KeysExport.xml y podrá optar entre abrirlo o guardarlo.  Debe abrir el archivo con una aplicación capaz de administrar archivos .xml.  Por ejemplo, puede abrir el archivo como libro de solo lectura en Excel.
-
-## <a name="internet-demonstrations-via-terminal-services"></a>Demostraciones en Internet a través de Terminal Services
-Con una suscripción de Visual Studio, podrá brindar a los usuarios finales acceso a demostraciones de sus programas en Internet a través de Terminal Services (Windows Server 2003 o Windows Server 2008) o Servicios de Escritorio remoto (Windows Server 2008 R2 o versiones posteriores). De este modo, hasta 200 usuarios anónimos pueden tener acceso de manera simultánea a la demostración. Su demostración no debe usar datos de producción. La licencia de los suscriptores de Visual Studio se concede para que muestren sus aplicaciones a los usuarios finales. La demostración en Internet a través de Terminal Services (TS) o Servicios de Escritorio remoto (RDS) es el único escenario en que usuarios finales sin una suscripción de Visual Studio pueden interactuar con la aplicación de demostración si la licencia del software se obtuvo a través de suscripciones de Visual Studio.
-
-Esto es además de los derechos de desarrollo y pruebas, en los que los suscriptores de Visual Studio pueden usar tantas conexiones a RDS o TS como sea necesario.
-
-### <a name="enabling-rds-access"></a>Habilitación del acceso RDS
-Los suscriptores de Visual Studio pueden aumentar el número de usuarios que pueden tener acceso a Windows Server a través de RDS escribiendo una clave de producto suministrada en la pestaña [Claves de producto](https://my.visualstudio.com/productkeys?wt.mc_id=o~msft~docs) en el [portal de suscriptores](https://my.visualstudio.com?wt.mc_id=o~msft~docs). Para obtener una clave de producto, conéctese a la página Claves de producto y desplácese hacia abajo a la versión de Windows Server que ejecuta. Busque "Conexiones de < usuario o dispositivo > de Servicios de Escritorio remoto de Windows Server < versión > R2" y haga clic en el vínculo **Claim Key** (Reclamar clave). Por ejemplo, si usa RDS en Windows Server 2012 R2 y su implementación usa CAL de usuario, elija "Conexiones de usuario de Servicios de Escritorio remoto de Windows Server 2012 (50)".
-Hay disponibles cinco claves de cada tipo para Windows Server 2008 R2 y cada clave admitirá 20 conexiones. En el caso de Windows Server 2012 R2, se proporcionan cuatro claves de cada tipo y cada una admitirá 50 conexiones.
-
-#### <a name="to-enable-additional-connections-in-windows-server"></a>Para habilitar más conexiones en Windows Server:
-1. Abra el Administrador de servidores.
-2. Abra la lista de servidores en el panel de navegación izquierdo.
-3. Haga clic con el botón derecho en su servidor de licencias y elija "Instalar licencias".
-4. Siga los pasos del asistente.  Cuando seleccione el tipo de contrato, elija "Paquete de licencias (venta directa)" y escriba la clave de producto que obtuvo en Mi portal.
-
-Los usuarios finales pueden conectarse para tener acceso a aplicaciones a través de RDS si se cumplen las condiciones siguientes:
-- Los usuarios deben ser anónimos (en un estado no autenticado).
-- Las conexiones deben realizarse a través de Internet.
-- Se pueden usar hasta 200 conexiones de usuarios simultáneas para las demostraciones de la aplicación.
-- Las claves de producto para habilitar las conexiones de usuarios las debe obtener un suscriptor de Visual Studio.
-
-Si necesita instrucciones para configurar la Administración de licencias de Escritorio remoto en su servidor, vea [RD Licensing Configuration on Windows Server 2012](http://blogs.technet.com/b/askperf/archive/2013/09/20/rd-licensing-configuration-on-windows-server-2012.aspx) (Configuración de la Administración de licencias de Escritorio remoto en Windows Server 2012). Si tiene alguna pregunta, visite el [foro de Servicios de Escritorio remoto de Microsoft](https://social.technet.microsoft.com/Forums/windowsserver/home?forum=winserverTS).
+## <a name="next-steps"></a>Pasos siguientes
+Para reclamar claves, visite https://my.visualstudio.com/productkeys.  
+Obtenga información sobre la [Búsqueda y reclamación de claves](find-keys.md).
+También puede obtener información sobre el uso de claves de producto para admitir [Demostraciones en Internet](internet-demos.md).

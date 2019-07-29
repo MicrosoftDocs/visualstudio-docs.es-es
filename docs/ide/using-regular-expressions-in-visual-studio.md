@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b20cf3692cf76f602eb11b0a53a1669c919f1679
-ms.sourcegitcommit: 9753c7544cec852ca5efd0834e0956d9e53a5734
+ms.openlocfilehash: c4e461fd69e048e406fbe062ff297da9baab3696
+ms.sourcegitcommit: 8562a337cc9f674c756a4a0b2c7e288ebd61b51e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "67043575"
+ms.lasthandoff: 07/19/2019
+ms.locfileid: "68345753"
 ---
 # <a name="use-regular-expressions-in-visual-studio"></a>Usar expresiones regulares en Visual Studio
 
@@ -29,7 +29,7 @@ Visual Studio usa [expresiones regulares de .NET](/dotnet/standard/base-types/re
 
 ## <a name="regular-expression-examples"></a>Ejemplos de expresiones regulares
 
-Las siguientes tablas contienen algunos caracteres de expresión regular, operadores, construcciones y ejemplos de patrones. Para obtener una referencia más completa, consulte el artículo de [lenguaje de expresiones regulares](/dotnet/standard/base-types/regular-expression-language-quick-reference).
+La siguiente tabla contiene algunos ejemplos de caracteres de expresión regular, operadores, construcciones y patrones. Para obtener una referencia más completa, consulte el artículo de [lenguaje de expresiones regulares](/dotnet/standard/base-types/regular-expression-language-quick-reference).
 
 |Propósito|Expresión|Ejemplo|
 |-------------|----------------|-------------|
@@ -45,7 +45,7 @@ Las siguientes tablas contienen algunos caracteres de expresión regular, operad
 |Delimitar la cadena coincidente al final del archivo|$|`end$` coincide con "end" solo cuando aparece al final del archivo.|
 |Coincidencia con cualquier carácter único de un conjunto|[abc]|`b[abc]` coincide con "ba", "bb" y "bc".|
 |Coincidir con cualquier carácter de un intervalo de caracteres|[a-f]|`be[n-t]` coincide con "bet" en "between", "ben" en "beneath" y "bes" en "beside", pero no "below".|
-|Capturar y numerar implícitamente la expresión contenida entre paréntesis|()|`([a-z])X\1` coincide con "aXa" y "bXb", pero no con "aXb". "\1" hace referencia al primer grupo de expresión "[a-z]".|
+|Capturar y numerar implícitamente la expresión contenida entre paréntesis|()|`([a-z])X\1` coincide con "aXa" y "bXb", pero no con "aXb". "\1" hace referencia al primer grupo de expresión "[a-z]". Para obtener más información, vea [Grupos de captura y patrones de reemplazo](#capture-groups-and-replacement-patterns). |
 |Invalidar una coincidencia|(?!abc)|`real(?!ity)` coincide con "real" en "realty" y "really", pero no con "reality". También encuentra el segundo “real” (pero no el primero) en “realityreal”.|
 |Coincidencia con cualquier carácter que no está en un conjunto determinado de caracteres. Para obtener más información, consulte [Grupo de caracteres negativos](/dotnet/standard/base-types/character-classes-in-regular-expressions#negative-character-group-).|[^abc]|`be[^n-t]` coincide con "bef" en "before", "beh" en "behind" y "bel" en "below", pero no con "beneath".|
 |Coincidencia con la expresión situada antes o después del símbolo.|&#124;|`(sponge\|mud) bath` coincide con "sponge bath" y "mud bath".|
