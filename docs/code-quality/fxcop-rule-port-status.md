@@ -1,5 +1,5 @@
 ---
-title: Estado del puerto de regla de FxCop
+title: Estado del puerto de la regla de FxCop
 ms.date: 05/21/2019
 ms.topic: reference
 helpviewer_keywords:
@@ -10,22 +10,22 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 4a458a50be6161e320b3ffbbe702e21f9f502c77
-ms.sourcegitcommit: 74c5360186731de07828764eb32ea1033a8c2275
+ms.openlocfilehash: 2e635f2cbbeda67c4fbed760eb7e57dfcf140d15
+ms.sourcegitcommit: ce1ab8a25c66a83e60eab80ed8e1596fe66dd85c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/03/2019
-ms.locfileid: "67559668"
+ms.lasthandoff: 07/29/2019
+ms.locfileid: "68604871"
 ---
-# <a name="fxcop-rule-port-status"></a>Estado del puerto de regla de FxCop
+# <a name="fxcop-rule-port-status"></a>Estado del puerto de la regla de FxCop
 
-Si anteriormente ha usado el análisis de código estático en una versión anterior de Visual Studio, quizás se pregunte cuál de esas reglas están disponibles en la implementación actual como [analizadores de FxCop](install-fxcop-analyzers.md). Esta página enumera las reglas que se transfieren, así como los que aún no se ha trasladado y determinar si hay planes para migrarlas.
+Si anteriormente usó el análisis de código estático en una versión anterior de Visual Studio, es posible que se pregunte qué reglas están disponibles en la implementación actual como [analizadores de FxCop](install-fxcop-analyzers.md). En esta página se enumeran las reglas que se portan, así como las que no se han migrado y si hay planes para trasladarlas.
 
 ## <a name="ported-rules"></a>Reglas migradas
 
-El [página de documentación generado automáticamente](https://github.com/dotnet/roslyn-analyzers/blob/master/src/Microsoft.CodeAnalysis.FxCopAnalyzers/Microsoft.CodeAnalysis.FxCopAnalyzers.md) en los analizadores de roslyn repositorio tiene la lista más actualizada de las reglas que se han trasladado a los analizadores de FxCop. Esa página también tiene información adicional, por ejemplo, si la regla está habilitada de forma predeterminada y si tiene asociado un *corrección de código*. ([Correcciones de código](../ide/quick-actions.md) están disponibles en el menú de icono de bombilla de Visual Studio con un solo clic correcciones.)
+La [Página de documentación](https://github.com/dotnet/roslyn-analyzers/blob/master/src/Microsoft.CodeAnalysis.FxCopAnalyzers/Microsoft.CodeAnalysis.FxCopAnalyzers.md) autogenerada del repositorio Roslyn-analizadores tiene la lista más actualizada de reglas que se han trasladado a los analizadores de FxCop. Esa página también tiene información adicional, por ejemplo, si la regla está habilitada de forma predeterminada y si tiene una *corrección de código*asociada. (Las correcciones de[código](../ide/quick-actions.md) son correcciones con un solo clic disponibles en el menú del icono de bombilla de Visual Studio).
 
-A partir de la fecha de esta página, la lista de FxCop reglas que se han trasladado a [analizadores de FxCop](install-fxcop-analyzers.md) incluye:
+A partir de la fecha de esta página, la lista de reglas de FxCop que se han trasladado a los analizadores de [FxCop](install-fxcop-analyzers.md) incluye:
 
 Identificador de la regla | Título
 --------|---------
@@ -35,14 +35,14 @@ Identificador de la regla | Título
 [CA1008](ca1008-enums-should-have-zero-value.md) | Las enumeraciones deben tener un valor igual a cero
 [CA1010](ca1010-collections-should-implement-generic-interface.md) | Las colecciones deben implementar la interfaz genérica
 [CA1012](ca1012-abstract-types-should-not-have-constructors.md) | Los tipos abstractos no deberían tener constructores
-[CA1014](ca1014-mark-assemblies-with-clscompliantattribute.md) | Marque los ensamblados con CLSCompliant
-[CA1016](ca1016-mark-assemblies-with-assemblyversionattribute.md) | Marque los ensamblados con la versión del ensamblado
-[CA1017](ca1017-mark-assemblies-with-comvisibleattribute.md) | Marque los ensamblados con ComVisible
+[CA1014](ca1014-mark-assemblies-with-clscompliantattribute.md) | Marcar ensamblados con CLSCompliant
+[CA1016](ca1016-mark-assemblies-with-assemblyversionattribute.md) | Marcar ensamblados con versión de ensamblado
+[CA1017](ca1017-mark-assemblies-with-comvisibleattribute.md) | Marcar ensamblados con ComVisible
 [CA1018](ca1018-mark-attributes-with-attributeusageattribute.md) | Marcar atributos con AttributeUsageAttribute
 [CA1019](ca1019-define-accessors-for-attribute-arguments.md) | Definir descriptores de acceso para los argumentos de atributo
 [CA1024](ca1024-use-properties-where-appropriate.md) | Utilizar las propiedades donde corresponda
 [CA1027](ca1027-mark-enums-with-flagsattribute.md) | Marcar enumeraciones con FlagsAttribute
-[CA1028](ca1028-enum-storage-should-be-int32.md) | Almacenamiento de la enumeración debe ser de tipo Int32
+[CA1028](ca1028-enum-storage-should-be-int32.md) | El almacenamiento de enumeración debe ser Int32
 [CA1030](ca1030-use-events-where-appropriate.md) | Utilizar eventos cuando sea apropiado
 [CA1031](ca1031-do-not-catch-general-exception-types.md) | No capturar los tipos de excepción general
 [CA1032](ca1032-implement-standard-exception-constructors.md) | Implementar constructores de excepción estándar
@@ -51,26 +51,26 @@ Identificador de la regla | Título
 [CA1036](ca1036-override-methods-on-comparable-types.md) | Invalidar métodos en tipos comparables
 [CA1040](ca1040-avoid-empty-interfaces.md) | Evitar las interfaces vacías
 [CA1041](ca1041-provide-obsoleteattribute-message.md) | Proporcionar un mensaje ObsoleteAttribute
-[CA1043](ca1043-use-integral-or-string-argument-for-indexers.md) | Entero de uso o el argumento de cadena para los indizadores
+[CA1043](ca1043-use-integral-or-string-argument-for-indexers.md) | Usar el argumento integral o de cadena para los indizadores
 [CA1044](ca1044-properties-should-not-be-write-only.md) | Las propiedades no deben ser de solo escritura
 [CA1050](ca1050-declare-types-in-namespaces.md) | Declarar tipos en espacios de nombres
 [CA1051](ca1051-do-not-declare-visible-instance-fields.md) | No declarar campos de instancia visibles
-[CA1052](ca1052-static-holder-types-should-be-sealed.md) | Los tipos titulares estáticos deben ser estáticos o NotInheritable (vea la nota que sigue a esta tabla)
-[CA1053](ca1053-static-holder-types-should-not-have-constructors.md) | Los tipos titulares estáticos no deben tener constructores (vea la nota que sigue a esta tabla)
+[CA1052](ca1052-static-holder-types-should-be-sealed.md) | Los tipos de titulares estáticos deben ser estáticos o NotInheritable
+[CA1053](ca1053-static-holder-types-should-not-have-constructors.md) | Los tipos de titulares estáticos no deben tener constructores (CA1053 es parte de [CA1052](ca1052-static-holder-types-should-be-sealed.md) para los analizadores de FxCop)
 [CA1054](ca1054-uri-parameters-should-not-be-strings.md) | Los parámetros de URI no deben ser cadenas
-[CA1055](ca1055-uri-return-values-should-not-be-strings.md) | URI devuelven valores no deben ser cadenas
+[CA1055](ca1055-uri-return-values-should-not-be-strings.md) | Los valores devueltos de URI no deben ser cadenas
 [CA1056](ca1056-uri-properties-should-not-be-strings.md) | Las propiedades URI no deben ser cadenas
 [CA1058](ca1058-types-should-not-extend-certain-base-types.md) | Los tipos no deben ampliar ciertos tipos base
-[CA1060](ca1060-move-p-invokes-to-nativemethods-class.md) | Mover elementos PInvoke a clases de métodos nativos
+[CA1060](ca1060-move-p-invokes-to-nativemethods-class.md) | Move pinvokes a la clase de métodos nativos
 [CA1061](ca1061-do-not-hide-base-class-methods.md) | No ocultar métodos de clase base
 [CA1062](ca1062-validate-arguments-of-public-methods.md) | Validar argumentos de métodos públicos
-[CA1063](ca1063-implement-idisposable-correctly.md) | Implemente IDisposable correctamente
+[CA1063](ca1063-implement-idisposable-correctly.md) | Implementar IDisposable correctamente
 [CA1064](ca1064-exceptions-should-be-public.md) | Las excepciones deben ser públicas
 [CA1065](ca1065-do-not-raise-exceptions-in-unexpected-locations.md) | No producir excepciones en ubicaciones inesperadas
-CA1066 | Tipo {0} deben implementar IEquatable\<T > porque reemplaza Equals
-CA1067 | Invalidar Object.Equals(object) al implementar IEquatable\<T >
-CA1068 | CancellationToken parámetros deben proceder último
-CA1200 | Evite el uso de etiquetas de cref con un prefijo
+CA1066 | El {0} tipo debe implementar\<IEquatable T > porque invalida Equals
+CA1067 | Invalide Object. Equals (Object) al\<implementar IEquatable T >
+CA1068 | Los parámetros de CancellationToken deben aparecer en último lugar
+CA1200 | Evitar el uso de etiquetas CREF con un prefijo
 [CA1303](ca1303-do-not-pass-literals-as-localized-parameters.md) | No pasar literales como parámetros localizados
 [CA1304](ca1304-specify-cultureinfo.md) | Especificar CultureInfo
 [CA1305](ca1305-specify-iformatprovider.md) | Especificar IFormatProvider
@@ -82,9 +82,9 @@ CA1200 | Evite el uso de etiquetas de cref con un prefijo
 [CA1502](ca1502-avoid-excessive-complexity.md) | Evitar una complejidad excesiva
 [CA1505](ca1505-avoid-unmaintainable-code.md) | Evitar código que no se puede mantener
 [CA1506](ca1506-avoid-excessive-class-coupling.md) | Evitar el acoplamiento excesivo de clases
-[CA1507](ca1507.md) | Usar nameof para expresar los nombres de símbolos
-CA1508 | Evitar código muerto condicional
-CA1509 | Entrada no válida en el archivo de especificación de reglas de métricas de código
+[CA1507](ca1507.md) | Usar nombre para expresar nombres de símbolos
+CA1508 | Evitar código condicional inactivo
+CA1509 | Entrada no válida en el archivo de especificación de regla de métricas de código
 [CA1707](ca1707-identifiers-should-not-contain-underscores.md) | Los identificadores no deben contener caracteres de subrayado
 [CA1708](ca1708-identifiers-should-differ-by-more-than-case.md) | Los identificadores se deben diferenciar en algo más que en el uso de mayúsculas y minúsculas
 [CA1710](ca1710-identifiers-should-have-correct-suffix.md) | Los identificadores deben tener un sufijo correcto
@@ -94,12 +94,12 @@ CA1509 | Entrada no válida en el archivo de especificación de reglas de métri
 [CA1715](ca1715-identifiers-should-have-correct-prefix.md) | Los identificadores deben tener el prefijo correcto
 [CA1716](ca1716-identifiers-should-not-match-keywords.md) | Los identificadores no deben coincidir con palabras clave
 [CA1717](ca1717-only-flagsattribute-enums-should-have-plural-names.md) | Solo las enumeraciones FlagsAttribute deben tener nombres en plural
-[CA1720](ca1720-identifiers-should-not-contain-type-names.md) | Identificador contiene el nombre de tipo
+[CA1720](ca1720-identifiers-should-not-contain-type-names.md) | El identificador contiene el nombre de tipo
 [CA1721](ca1721-property-names-should-not-match-get-methods.md) | Los nombres de propiedades no deben coincidir con los métodos get
-[CA1724](ca1724-type-names-should-not-match-namespaces.md) | Los nombres de tipo no deberían coincidir con los espacios de nombres
+[CA1724](ca1724-type-names-should-not-match-namespaces.md) | Los nombres de tipo no deben coincidir con los espacios de nombres
 [CA1725](ca1725-parameter-names-should-match-base-declaration.md) | Los nombres de parámetro deben coincidir con la declaración base
 [CA1801](ca1801-review-unused-parameters.md) | Revisar parámetros sin utilizar
-[CA1802](ca1802-use-literals-where-appropriate.md) | Usar literales cuando sea apropiado
+[CA1802](ca1802-use-literals-where-appropriate.md) | Usar literales cuando corresponda
 [CA1806](ca1806-do-not-ignore-method-results.md) | No omitir resultados del método
 [CA1810](ca1810-initialize-reference-type-static-fields-inline.md) | Inicializar campos estáticos de tipo de referencia insertados
 [CA1812](ca1812-avoid-uninstantiated-internal-classes.md) | Evitar las clases internas sin instancia
@@ -109,23 +109,23 @@ CA1509 | Entrada no válida en el archivo de especificación de reglas de métri
 [CA1816](ca1816-call-gc-suppressfinalize-correctly.md) | Los métodos Dispose deben llamar a SuppressFinalize
 [CA1819](ca1819-properties-should-not-return-arrays.md) | Las propiedades no deben devolver matrices
 [CA1820](ca1820-test-for-empty-strings-using-string-length.md) | Comprobar si las cadenas están vacías mediante la longitud de cadena
-[CA1821](ca1821-remove-empty-finalizers.md) | Quitar los finalizadores vacíos
+[CA1821](ca1821-remove-empty-finalizers.md) | Quitar finalizadores vacíos
 [CA1822](ca1822-mark-members-as-static.md) | Marcar miembros como estáticos
 [CA1823](ca1823-avoid-unused-private-fields.md) | Evitar los campos privados sin utilizar
 [CA1824](ca1824-mark-assemblies-with-neutralresourceslanguageattribute.md) | Marcar los ensamblados con NeutralResourcesLanguageAttribute
-CA1825 | Evitar las asignaciones de la matriz de longitud cero.
-CA1826 | No use métodos Enumerable en colecciones indexables. En su lugar, usar la colección directamente
+CA1825 | Evite las asignaciones de matrices de longitud cero.
+CA1826 | No use métodos enumerables en colecciones indizables. En su lugar, use la colección directamente
 [CA2000](ca2000-dispose-objects-before-losing-scope.md) | Desechar objetos antes de perder el ámbito
 [CA2002](ca2002-do-not-lock-on-objects-with-weak-identity.md) | No bloquear objetos con identidad débil
-[CA2007](ca2007-do-not-directly-await-task.md) | Considere la posibilidad de llamar a ConfigureAwait en la tarea en espera
-CA2008 | No cree tareas sin pasar TaskScheduler
-CA2009 | No llame a ToImmutableCollection en un valor ImmutableCollection
-CA2010 | Consumir siempre el valor devuelto por los métodos marcados con PreserveSigAttribute
+[CA2007](ca2007-do-not-directly-await-task.md) | Considere la posibilidad de llamar a ConfigureAwait en la tarea esperada
+CA2008 | No crear tareas sin pasar un TaskScheduler
+CA2009 | No llamar a ToImmutableCollection en un valor de ImmutableCollection
+CA2010 | Usar siempre el valor devuelto por los métodos marcados con PreserveSigAttribute
 [CA2100](ca2100-review-sql-queries-for-security-vulnerabilities.md) | Revisar consultas SQL para comprobar si tienen vulnerabilidades de seguridad
 [CA2101](ca2101-specify-marshaling-for-p-invoke-string-arguments.md) | Especificar serialización en argumentos de cadena P/Invoke
 [CA2119](ca2119-seal-methods-that-satisfy-private-interfaces.md) | Sellar los métodos que satisfacen las interfaces privadas
 [CA2153](ca2153-avoid-handling-corrupted-state-exceptions.md) | No capturar excepciones de estado dañadas
-[CA2200](ca2200-rethrow-to-preserve-stack-details.md) | Reiniciar para mantener los detalles de la pila.
+[CA2200](ca2200-rethrow-to-preserve-stack-details.md) | Vuelva a iniciar para conservar los detalles de la pila.
 [CA2201](ca2201-do-not-raise-reserved-exception-types.md) | No provocar tipos de excepción reservados
 [CA2207](ca2207-initialize-value-type-static-fields-inline.md) | Inicializar campos estáticos de tipo de valor insertados
 [CA2208](ca2208-instantiate-argument-exceptions-correctly.md) | Crear instancias de las excepciones del argumento correctamente
@@ -135,20 +135,20 @@ CA2010 | Consumir siempre el valor devuelto por los métodos marcados con Preser
 [CA2216](ca2216-disposable-types-should-declare-finalizer.md) | Los tipos descartables deben declarar el finalizador
 [CA2217](ca2217-do-not-mark-enums-with-flagsattribute.md) | No marcar enumeraciones con FlagsAttribute
 [CA2218](ca2218-override-gethashcode-on-overriding-equals.md) | Invalidar el método GetHashCode al invalidar el método Equals
-[CA2219](ca2219-do-not-raise-exceptions-in-exception-clauses.md) | No producir excepciones en cláusulas finally
-[CA2224](ca2224-override-equals-on-overloading-operator-equals.md) | Invalidar Equals al sobrecargar operadores es igual a
+[CA2219](ca2219-do-not-raise-exceptions-in-exception-clauses.md) | No producir excepciones en cláusulas Finally
+[CA2224](ca2224-override-equals-on-overloading-operator-equals.md) | Invalidar Equals al sobrecargar el operador Equals
 [CA2225](ca2225-operator-overloads-have-named-alternates.md) | Las sobrecargas del operador tienen alternativas con nombre
 [CA2226](ca2226-operators-should-have-symmetrical-overloads.md) | Los operadores deben tener sobrecargas simétricas
 [CA2227](ca2227-collection-properties-should-be-read-only.md) | Las propiedades de la colección deben ser de solo lectura
 [CA2229](ca2229-implement-serialization-constructors.md) | Implementar constructores de serialización
-[CA2231](ca2231-overload-operator-equals-on-overriding-valuetype-equals.md) | Sobrecarga del operador es igual al invalidar el valor de tipo es igual a
-[CA2234](ca2234-pass-system-uri-objects-instead-of-strings.md) | Pasar objetos de uri en lugar de cadenas de sistema
+[CA2231](ca2231-overload-operator-equals-on-overriding-valuetype-equals.md) | Sobrecargar el operador de igualdad al reemplazar el tipo de valor es igual a
+[CA2234](ca2234-pass-system-uri-objects-instead-of-strings.md) | Pasar objetos URI del sistema en lugar de cadenas
 [CA2235](ca2235-mark-all-non-serializable-fields.md) | Marcar todos los campos no serializables
 [CA2237](ca2237-mark-iserializable-types-with-serializableattribute.md) | Marcar los tipos ISerializable con serializable
 [CA2241](ca2241-provide-correct-arguments-to-formatting-methods.md) | Proporcionar argumentos correctos a los métodos de formato
 [CA2242](ca2242-test-for-nan-correctly.md) | Comprobar NaN correctamente
 [CA2243](ca2243-attribute-string-literals-should-parse-correctly.md) | Los literales de cadena de atributo se deben analizar correctamente
-CA2244 | No se duplican las inicializaciones de elemento indizado
+CA2244 | No duplicar inicializaciones de elementos indizados
 [CA2300](ca2300-do-not-use-insecure-deserializer-binaryformatter.md) | No usar el deserializador no seguro BinaryFormatter
 [CA2301](ca2301-do-not-call-binaryformatter-deserialize-without-first-setting-binaryformatter-binder.md) | No llamar a BinaryFormatter.Deserialize sin establecer primero BinaryFormatter.Binder
 [CA2302](ca2302-ensure-binaryformatter-binder-is-set-before-calling-binaryformatter-deserialize.md) | Asegurarse de que BinaryFormatter.Binder está establecido antes de llamar a BinaryFormatter.Deserialize
@@ -171,47 +171,44 @@ CA2244 | No se duplican las inicializaciones de elemento indizado
 [CA3010](ca3010-review-code-for-xaml-injection-vulnerabilities.md) | Revisión de código en busca de vulnerabilidades de inyección de XAML
 [CA3011](ca3011-review-code-for-dll-injection-vulnerabilities.md) | Revisión de código en busca de vulnerabilidades de inyección de DLL
 [CA3012](ca3012-review-code-for-regex-injection-vulnerabilities.md) | Revisión de código en busca de vulnerabilidades de inyección de expresiones regulares
-CA3061 | No agregue el esquema de dirección URL
+CA3061 | No agregar esquema por dirección URL
 [CA3075](ca3075-insecure-dtd-processing.md) | Procesamiento de DTD no seguro en XML
-[CA3076](ca3076-insecure-xslt-script-execution.md) | Procesamiento de secuencias de comandos XSLT no seguro.
+[CA3076](ca3076-insecure-xslt-script-execution.md) | Procesamiento de script XSLT no seguro.
 [CA3077](ca3077-insecure-processing-in-api-design-xml-document-and-xml-text-reader.md) | Procesamiento inseguro en el diseño de API, XmlDocument y XmlTextReader
-[CA3147](ca3147-mark-verb-handlers-with-validateantiforgerytoken.md) | Controladores de Mark verbo con validación el Token antifalsificación
+[CA3147](ca3147-mark-verb-handlers-with-validateantiforgerytoken.md) | Marcar los controladores de verbos con validar token antifalsificación
 [CA5350](ca5350-do-not-use-weak-cryptographic-algorithms.md) | No usar algoritmos criptográficos no seguros
-[CA5351](ca5351-do-not-use-broken-cryptographic-algorithms.md) | No Use algoritmos criptográficos rotos
-CA5358 | No Use modos de cifrado no seguros
-CA5359 | No deshabilite la validación de certificados
-CA5360 | No llame a métodos peligrosos en la deserialización
-CA5361 | No deshabilite SChannel uso de criptografía fuerte
-CA5362 | ¿Se refieren Self en una clase Serializable
-CA5363 | Deshabilitar la validación de solicitudes
-CA5364 | No Use protocolos de seguridad en desuso
-CA5365 | Deshabilitar comprobación de encabezado de HTTP
-CA5366 | Usar XmlReader para leer del conjunto de datos Xml
-CA5367 | No se serializan los tipos con los campos de puntero
-CA5368 | Establece ViewStateUserKey para clases derivadas de página
+[CA5351](ca5351-do-not-use-broken-cryptographic-algorithms.md) | No usar algoritmos criptográficos rotos
+CA5358 | No usar modos de cifrado no seguros
+CA5359 | No deshabilitar la validación de certificados
+CA5360 | No llamar a métodos peligrosos en la deserialización
+CA5361 | No deshabilite el uso de SChannel de cifrado seguro
+CA5362 | No hacer referencia a sí mismo en una clase serializable
+CA5363 | No deshabilitar la validación de solicitudes
+CA5364 | No usar protocolos de seguridad en desuso
+CA5365 | No deshabilitar la comprobación de encabezados HTTP
+CA5366 | Usar XmlReader para leer el XML de DataSet
+CA5367 | No serializar tipos con campos de puntero
+CA5368 | Establecer ViewStateUserKey para las clases derivadas de Page
 CA5369 | Usar XmlReader para deserializar
-CA5370 | Usar XmlReader para lector de validación
-CA5371 | Usar XmlReader para leer de esquema
+CA5370 | Usar XmlReader para validar el lector
+CA5371 | Usar XmlReader para leer el esquema
 CA5372 | Usar XmlReader para XPathDocument
-CA5373 | No utilice la función de derivación de claves obsoleto
-CA5374 | No Use XslTransform
-CA5375 | No Use la firma de acceso compartido de cuenta
-CA5376 | Usar httpsonly a SharedAccessProtocol
-CA5377 | Usar la directiva de acceso de nivel de contenedor
-CA5378 | No deshabilite ServicePointManagerSecurityProtocols
-CA5379 | No Use el algoritmo de derivación de clave débil (función)
-CA9999 | Discrepancia de versiones del analizador
+CA5373 | No usar la función de derivación de clave obsoleta
+CA5374 | No usar XslTransform
+CA5375 | No usar firma de acceso compartido de cuenta
+CA5376 | Uso de SharedAccessProtocol HttpsOnly
+CA5377 | Usar la Directiva de acceso de nivel de contenedor
+CA5378 | No deshabilitar ServicePointManagerSecurityProtocols
+CA5379 | No usar algoritmo de función de derivación de clave débil
+CA9999 | Versión de analizador no coincidente
 
-> [!NOTE]
-> CA1052 reglas y CA1053 de la implementación original de FxCop se combinan en una única regla, CA1052, en los analizadores de FxCop.
+## <a name="unported-rules"></a>Reglas no trasladadas
 
-## <a name="unported-rules"></a>Reglas de protección
-
-El conjunto de reglas que aún no se ha trasladado a [analizadores de FxCop](install-fxcop-analyzers.md) consta de reglas que no han migrado aún pero aún [se puede portar](#rules-that-may-be-ported)y aquellos que están en desuso y [no seráportada](#deprecated-rules).
+El conjunto de reglas que no se han migrado a los analizadores de [FxCop](install-fxcop-analyzers.md) consta de reglas que todavía no se [pueden portar](#rules-that-may-be-ported)y que están desusadas y que [no se portan](#deprecated-rules).
 
 ### <a name="rules-that-may-be-ported"></a>Reglas que se pueden portar
 
-Las siguientes reglas de análisis de código estático de FxCop aún no ha implementado aún como analizadores, pero aún pueden ser. Esto podría ser debido a una bloquea razón técnica o simplemente que la regla es la prioridad más baja. Para obtener más información sobre el estado de migración de cada regla, haga clic en el vínculo en el **seguimiento problema** columna.
+Las siguientes reglas de análisis de código estático de FxCop todavía no se han implementado como analizadores, pero todavía pueden ser. Esto puede deberse a una razón técnica de bloqueo o simplemente a que la regla tiene una prioridad más baja. Para obtener más información acerca del estado de portabilidad de cada regla, haga clic en el vínculo de la columna **problema de seguimiento** .
 
 Identificador de la regla | Problema de seguimiento
 --- | ---
@@ -274,7 +271,7 @@ Identificador de la regla | Problema de seguimiento
 
 ### <a name="deprecated-rules"></a>Reglas en desuso
 
-Las siguientes reglas de análisis de código estático de FxCop están en desuso y no se pueden implementar como analizadores. Para obtener más información, puede buscar por Id. de regla (por ejemplo, **CA1009**) en el [página de problemas de GitHub de analizadores de roslyn](https://github.com/dotnet/roslyn-analyzers/issues?utf8=%E2%9C%93&q=is:issue+label:FxCop-Port).
+Las siguientes reglas de análisis de código estático de FxCop están desusadas y no se implementarán como analizadores. Para obtener más información, puede buscar por el identificador de regla (por ejemplo, **CA1009**) en la [Página de problemas de github Roslyn-analizadores](https://github.com/dotnet/roslyn-analyzers/issues?utf8=%E2%9C%93&q=is:issue+label:FxCop-Port).
 
 - [CA1009](ca1009-declare-event-handlers-correctly.md)
 - [CA1020](ca1020-avoid-namespaces-with-few-types.md)
@@ -349,4 +346,4 @@ Las siguientes reglas de análisis de código estático de FxCop están en desus
 
 ## <a name="see-also"></a>Vea también
 
-- [Reglas de Microsoft.CodeAnalysis.FxCopAnalyzers](https://github.com/dotnet/roslyn-analyzers/blob/master/src/Microsoft.CodeAnalysis.FxCopAnalyzers/Microsoft.CodeAnalysis.FxCopAnalyzers.md)
+- [Reglas de Microsoft. CodeAnalysis. FxCopAnalyzers](https://github.com/dotnet/roslyn-analyzers/blob/master/src/Microsoft.CodeAnalysis.FxCopAnalyzers/Microsoft.CodeAnalysis.FxCopAnalyzers.md)
