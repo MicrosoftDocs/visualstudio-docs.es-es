@@ -1,6 +1,7 @@
 ---
-title: Procedimiento Firmar manifiestos de implementación y aplicación
+title: 'Procedimientos para: Firmar manifiestos de implementación y aplicación'
 ms.date: 11/04/2016
+ms.technology: vs-ide-deployment
 ms.topic: conceptual
 helpviewer_keywords:
 - manifests [Visual Studio]
@@ -12,27 +13,27 @@ helpviewer_keywords:
 - key files [Visual Studio]
 - assemblies [Visual Studio], signing
 ms.assetid: 64173505-8bfb-41cf-a0de-b9075173f3a2
-author: gewarren
-ms.author: gewarren
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 85a0dcb3b10db33605f1411615210928cde565fc
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 01ccad0c1cdcde27d1d43b832ce7e4ca4da7b716
+ms.sourcegitcommit: 85d66dc9fea3fa49018263064876b15aeb6f9584
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62946926"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68461605"
 ---
-# <a name="how-to-sign-application-and-deployment-manifests"></a>Procedimiento Firmar manifiestos de implementación y aplicación
+# <a name="how-to-sign-application-and-deployment-manifests"></a>Procedimientos para: Firmar manifiestos de implementación y aplicación
 
 Si quiere publicar una aplicación mediante la implementación ClickOnce, los manifiestos de aplicación e implementación deben estar firmados con un par de claves pública y privada mediante la tecnología Authenticode. Puede firmar los manifiestos con un certificado del almacén de certificados de Windows o un archivo de clave.
 
- Para obtener más información sobre la implementación ClickOnce, consulte [Seguridad e implementación ClickOnce](../deployment/clickonce-security-and-deployment.md).
+Para obtener más información sobre la implementación ClickOnce, consulte [Seguridad e implementación ClickOnce](../deployment/clickonce-security-and-deployment.md).
 
- Firmar los manifiestos de ClickOnce es opcional para aplicaciones basadas en *.exe*. Para obtener más información, consulte la sección "Generar manifiestos sin firmar" de este documento.
+Firmar los manifiestos de ClickOnce es opcional para aplicaciones basadas en *.exe*. Para obtener más información, consulte la sección "Generar manifiestos sin firmar" de este documento.
 
- Para obtener información sobre cómo crear archivos de clave, vea [Cómo: Crear un par de claves privada y pública](/dotnet/framework/app-domains/how-to-create-a-public-private-key-pair).
+Para obtener información sobre cómo crear archivos de clave, vea [Cómo: Crear un par de claves privada y pública](/dotnet/framework/app-domains/how-to-create-a-public-private-key-pair).
 
 > [!NOTE]
 > Visual Studio solo admite archivos de claves de intercambio de información personal (PFX) que tienen la extensión *.pfx*. En cambio, puede seleccionar otros tipos de certificados desde el almacén de certificados de Windows del usuario actual si hace clic en **Seleccionar del almacén** en la página **Firma** de las propiedades del proyecto.
@@ -60,7 +61,7 @@ Si quiere publicar una aplicación mediante la implementación ClickOnce, los ma
 
      Aparece el cuadro de diálogo **Seleccionar archivo**.
 
-3. En el cuadro de diálogo **Seleccionar archivo**, vaya a la ubicación del archivo de claves (*.pfx*) que quiere usar y después haga clic en **Abrir**.
+3. En el cuadro de diálogo **Seleccionar archivo**, vaya a la ubicación del archivo de claves ( *.pfx*) que quiere usar y después haga clic en **Abrir**.
 
     > [!NOTE]
     > Esta opción solo admite archivos que tengan la extensión *.pfx*. Si tiene un archivo de claves o un certificado en otro formato, almacénelo en el almacén de certificados de Windows y seleccione el certificado como se describe en el procedimiento anterior. El propósito del certificado seleccionado debe incluir firma de código.
@@ -84,7 +85,7 @@ Firmar los manifiestos de ClickOnce es opcional para aplicaciones basadas en *.e
 > [!IMPORTANT]
 > Los manifiestos sin firmar pueden simplificar el desarrollo y las pruebas de la aplicación. En cambio, los manifiestos sin firmar introducen riesgos de seguridad considerables en un entorno de producción. Considere solo el uso de manifiestos sin firmar si la aplicación ClickOnce se ejecuta en equipos de una intranet que está completamente aislada de Internet u otros orígenes de código malintencionado.
 
- De manera predeterminada, ClickOnce genera de forma automática manifiestos firmados a menos que se excluyan de forma específica uno o varios archivos del código hash generado. En otras palabras, si se incluyen todos los archivos en el código hash, la aplicación se publica con manifiestos firmados, incluso si la casilla **Firmar los manifiestos de ClickOnce** está desactivada.
+De manera predeterminada, ClickOnce genera de forma automática manifiestos firmados a menos que se excluyan de forma específica uno o varios archivos del código hash generado. En otras palabras, si se incluyen todos los archivos en el código hash, la aplicación se publica con manifiestos firmados, incluso si la casilla **Firmar los manifiestos de ClickOnce** está desactivada.
 
 ### <a name="to-generate-unsigned-manifests-and-include-all-files-in-the-generated-hash"></a>Para generar manifiestos sin firmar e incluir todos los archivos en el código hash generado
 
@@ -92,7 +93,7 @@ Firmar los manifiestos de ClickOnce es opcional para aplicaciones basadas en *.e
 
 2. En la página **Firma**, desactive la casilla **Firmar los manifiestos de ClickOnce**.
 
-3. Restablezca la versión de publicación para que solo esté disponible una versión de la aplicación. De manera predeterminada, Visual Studio incrementa de forma automática el número de revisión de la versión de publicación cada vez que se publica una aplicación. Para obtener más información, vea [Cómo: Establecimiento de la versión de publicación de ClickOnce](../deployment/how-to-set-the-clickonce-publish-version.md).
+3. Restablezca la versión de publicación para que solo esté disponible una versión de la aplicación. De manera predeterminada, Visual Studio incrementa de forma automática el número de revisión de la versión de publicación cada vez que se publica una aplicación. Para obtener más información, consulte [Instrucciones: Establecimiento de la versión de publicación de ClickOnce](../deployment/how-to-set-the-clickonce-publish-version.md).
 
 4. Publique la aplicación.
 
@@ -110,6 +111,6 @@ Firmar los manifiestos de ClickOnce es opcional para aplicaciones basadas en *.e
 ## <a name="see-also"></a>Vea también
 
 - [Ensamblados con nombre seguro](/dotnet/framework/app-domains/strong-named-assemblies)
-- [Cómo: Crear un par de claves privada y pública](/dotnet/framework/app-domains/how-to-create-a-public-private-key-pair)
+- [Uso de Crear un par de claves privada y pública](/dotnet/framework/app-domains/how-to-create-a-public-private-key-pair)
 - [Página Firma, Diseñador de proyectos](../ide/reference/signing-page-project-designer.md)
 - [Seguridad e implementación ClickOnce](../deployment/clickonce-security-and-deployment.md)

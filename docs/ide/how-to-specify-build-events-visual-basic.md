@@ -1,6 +1,7 @@
 ---
-title: Procedimiento Especificación de eventos de compilación (Visual Basic)
+title: 'Procedimientos para: Especificación de eventos de compilación (Visual Basic)'
 ms.date: 11/04/2016
+ms.technology: vs-ide-compile
 ms.topic: conceptual
 helpviewer_keywords:
 - pre-build events
@@ -9,19 +10,19 @@ helpviewer_keywords:
 - build events [Visual Studio]
 - builds [Visual Studio], events
 ms.assetid: 40dc83bf-a7c5-4a14-816a-fa0980b6e4c3
-author: gewarren
-ms.author: gewarren
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e9dc571576346aa246452cdebf0a147468d6dfea
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c516b6fc412d393d0528536afe0bb69629c87c44
+ms.sourcegitcommit: 85d66dc9fea3fa49018263064876b15aeb6f9584
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62549338"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68461503"
 ---
-# <a name="how-to-specify-build-events-visual-basic"></a>Procedimiento Especificación de eventos de compilación (Visual Basic)
+# <a name="how-to-specify-build-events-visual-basic"></a>Procedimientos para: Especificación de eventos de compilación (Visual Basic)
 
 Los eventos de compilación en Visual Basic se pueden usar para ejecutar scripts, macros u otras acciones como parte del proceso de compilación. Los eventos anteriores a la compilación se producen antes de la compilación; los eventos posteriores a la compilación se producen después de la compilación.
 
@@ -43,7 +44,7 @@ Los eventos de compilación se especifican en el cuadro de diálogo **Eventos de
 4. Escriba los argumentos de línea de comandos para la acción anterior o posterior a la compilación y después haga clic en **Aceptar**.
 
     > [!NOTE]
-    > Agregue una instrucción `call` antes de todos los comandos posteriores a la compilación que ejecutan archivos *.bat*. Por ejemplo: `call C:\MyFile.bat` o `call C:\MyFile.bat call C:\MyFile2.bat`.
+    > Agregue una instrucción `call` antes de todos los comandos posteriores a la compilación que ejecutan archivos *.bat*. Por ejemplo, `call C:\MyFile.bat` o `call C:\MyFile.bat call C:\MyFile2.bat`.
 
     > [!NOTE]
     > Si su evento anterior o posterior a la compilación no se completa correctamente, puede finalizar la compilación haciendo que la acción del evento salga con un código distinto de cero (0), que indica que la acción se ha realizado correctamente.
@@ -62,9 +63,9 @@ En el procedimiento siguiente se muestra cómo establecer la versión de sistema
 
 ### <a name="to-create-an-exe-command-to-change-the-application-manifest"></a>Para crear un comando .exe para cambiar el manifiesto de aplicación
 
-1. Cree una aplicación de consola para el comando. En el menú **Archivo**, haga clic en **Nuevo** y después haga clic en **Proyecto**.
+1. Cree una aplicación de consola para el comando. En el menú **Archivo**, haga clic en **Nuevo** y en **Proyecto**.
 
-2. En el cuadro de diálogo **Nuevo proyecto**, en el nodo **Visual Basic**, seleccione **Windows** y, después, la plantilla **Aplicación de consola**. Dé un nombre al proyecto `ChangeOSVersionVB`.
+2. En el cuadro de diálogo **Nuevo proyecto**, en el nodo **Visual Basic**, seleccione **Windows** y, después, la plantilla **Aplicación de consola**. Asigne el nombre al proyecto `ChangeOSVersionVB`.
 
 3. En *Module1.vb*, agregue la línea siguiente a las demás instrucciones `Imports` de la parte superior del archivo:
 
@@ -117,7 +118,7 @@ En el procedimiento siguiente se muestra cómo establecer la versión de sistema
 
    El comando toma dos argumentos. El primero es la ruta al manifiesto de aplicación (es decir, la carpeta en la que el proceso de compilación crea el manifiesto, normalmente *\<NombreDelProyecto>.publish*). El segundo es la nueva versión del sistema operativo.
 
-5. En el menú **Compilar** , haga clic en **Compilar solución**.
+5. En el menú **Compilar**, haga clic en **Compilar solución**.
 
 6. Copie el archivo *.exe* en un directorio, por ejemplo, *C:\TEMP\ChangeOSVersionVB.exe*.
 
@@ -125,9 +126,9 @@ En el procedimiento siguiente se muestra cómo establecer la versión de sistema
 
 ### <a name="to-invoke-a-post-build-event-to-change-the-application-manifest"></a>Para invocar un evento posterior a la compilación para cambiar el manifiesto de aplicación
 
-1. Cree una aplicación Windows para que se publique el proyecto. En el menú **Archivo**, haga clic en **Nuevo** y después haga clic en **Proyecto**.
+1. Cree una aplicación Windows para que se publique el proyecto. En el menú **Archivo**, haga clic en **Nuevo** y en **Proyecto**.
 
-2. En el cuadro de diálogo **Nuevo proyecto**, en el nodo **Visual Basic**, seleccione **Escritorio de Windows** y, después, la plantilla **Aplicación de Windows Forms**. Dé un nombre al proyecto `VBWinApp`.
+2. En el cuadro de diálogo **Nuevo proyecto**, en el nodo **Visual Basic**, seleccione **Escritorio de Windows** y, después, la plantilla **Aplicación de Windows Forms**. Asigne el nombre al proyecto `VBWinApp`.
 3. Con el proyecto seleccionado en el **Explorador de soluciones** y, en el menú **Proyecto**, haga clic en **Propiedades**.
 
 4. En el **Diseñador de proyectos**, vaya a la página **Publicar** y establezca **Ubicación de publicación** en *C:\TEMP*.
@@ -167,4 +168,4 @@ En el procedimiento siguiente se muestra cómo establecer la versión de sistema
 - [Página Compilación, Diseñador de proyectos (Visual Basic)](../ide/reference/compile-page-project-designer-visual-basic.md)
 - [Panel Publicar, Diseñador de proyectos](../ide/reference/publish-page-project-designer.md)
 - [Línea de comandos del evento anterior/posterior a la compilación (Cuadro de diálogo)](../ide/reference/pre-build-event-post-build-event-command-line-dialog-box.md)
-- [Cómo: Especificar eventos de compilación (C#)](../ide/how-to-specify-build-events-csharp.md)
+- [Uso de Especificar eventos de compilación (C#)](../ide/how-to-specify-build-events-csharp.md)

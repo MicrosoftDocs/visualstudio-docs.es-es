@@ -1,23 +1,24 @@
 ---
 title: Configuración de compilación avanzada (Cuadro de diálogo, C#)
 ms.date: 06/20/2017
+ms.technology: vs-ide-compile
 ms.topic: reference
 f1_keywords:
 - cs.AdvancedBuildSettings
 helpviewer_keywords:
 - Build options [C#], advanced
 ms.assetid: 141f2dee-1563-4ce6-ba37-32920b082519
-author: gewarren
-ms.author: gewarren
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 908f79b40b17eba5c0e3f518e6d7f2f3ae58e9c7
-ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.openlocfilehash: 306cecc6bdc194e0022c056ac0a87e2ab063d20b
+ms.sourcegitcommit: 85d66dc9fea3fa49018263064876b15aeb6f9584
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66745020"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68461882"
 ---
 # <a name="advanced-build-settings-dialog-box-c"></a>Configuración de compilación avanzada (Cuadro de diálogo, C#)
 
@@ -55,7 +56,7 @@ Especifica si una instrucción aritmética de enteros que no está en el ámbito
 
 Especifica si se importará mscorlib.dll al programa, definiendo la totalidad del espacio de nombres <xref:System>. Active esta casilla si quiere definir o crear sus propios objetos y espacios de nombres <xref:System>. Para obtener más información, consulte [/nostdlib (Opciones del compilador de C#)](/dotnet/csharp/language-reference/compiler-options/nostdlib-compiler-option).
 
-## <a name="output"></a>Salida
+## <a name="output"></a>Output
 
 Las opciones siguientes le permiten especificar opciones de salida avanzadas.
 
@@ -63,7 +64,7 @@ Las opciones siguientes le permiten especificar opciones de salida avanzadas.
 
 Especifica el tipo de información de depuración generado por el compilador. Para obtener información sobre cómo configurar el rendimiento de depuración de una aplicación, consulte [Facilitar la depuración de una imagen](/dotnet/framework/debug-trace-profile/making-an-image-easier-to-debug). Esta configuración tiene las siguientes opciones:
 
-- **none**
+- **Ninguna**
 
    Especifica que no se generará ninguna información de depuración.
 
@@ -93,7 +94,7 @@ Especifica el tamaño de las secciones del archivo de salida. Los valores válid
 
 Especifica la dirección base preferida para cargar una DLL. La dirección base predeterminada para un archivo DLL se establece mediante Common Language Runtime de .NET Framework. Para obtener más información, consulte [/baseaddress (Opciones del compilador de C#)](/dotnet/csharp/language-reference/compiler-options/baseaddress-compiler-option).
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Otras referencias
 
 - [Opciones del compilador de C#](/dotnet/csharp/language-reference/compiler-options/index)
 - [Página Compilar (Diseñador de proyectos) (C#)](../../ide/reference/build-page-project-designer-csharp.md)

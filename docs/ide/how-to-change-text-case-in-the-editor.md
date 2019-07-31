@@ -11,14 +11,14 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3b8b11b01afa1d78aef9403acd13a305e36b2613
-ms.sourcegitcommit: 485881e6ba872c7b28a7b17ceaede845e5bea4fe
+ms.openlocfilehash: 92e4e5e90e7b808e50f30c3a1d6527cdb7cfb4c2
+ms.sourcegitcommit: ce1ab8a25c66a83e60eab80ed8e1596fe66dd85c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/22/2019
-ms.locfileid: "68377983"
+ms.lasthandoff: 07/29/2019
+ms.locfileid: "68605816"
 ---
-# <a name="how-to-change-text-case-in-the-editor"></a>Procedimiento para cambiar las mayúsculas y minúsculas en el editor
+# <a name="how-to-change-text-case-in-the-editor"></a>Procedimientos para: para cambiar las mayúsculas y minúsculas en el editor
 
 Puede usar comandos de menú o métodos abreviados de teclado para convertir las mayúsculas y minúsculas del texto seleccionado todas a mayúsculas o todas a minúsculas.
 
@@ -38,5 +38,4 @@ Puede usar comandos de menú o métodos abreviados de teclado para convertir las
 
 ## <a name="see-also"></a>Vea también
 
-- [Cuadro de diálogo Opciones del editor de texto](../ide/reference/text-editor-options-dialog-box.md)
 - [Características del editor de código](../ide/writing-code-in-the-code-and-text-editor.md)

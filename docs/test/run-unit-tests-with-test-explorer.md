@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 03ca4a3b247375f18f3889ae7c63b1405ca942a4
-ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.openlocfilehash: 68ed41eeecde853459bc9c817d84bd433788084c
+ms.sourcegitcommit: 9fc8b144d4ed1c46aba87c0b7e1d24454e0eea9d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66747778"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "68493298"
 ---
 # <a name="run-unit-tests-with-test-explorer"></a>Ejecutar pruebas unitarias con el Explorador de pruebas
 
@@ -29,7 +29,7 @@ El **Explorador de pruebas** puede ejecutar pruebas de varios proyectos de prueb
 
 Al compilar el proyecto de prueba, las pruebas aparecen en el Explorador de pruebas. Si el Explorador de pruebas no está visible, elija **Prueba** en el menú de Visual Studio, elija **Ventanas**y, después, **Explorador de pruebas**.
 
-![Explorador de pruebas unitarias](../test/media/ute_failedpassednotrunsummary.png)
+![Explorador de pruebas](../test/media/ute_failedpassednotrunsummary.png)
 
 Al ejecutar, escribir y volver a ejecutar las pruebas, el Explorador de pruebas muestra los resultados en los grupos predeterminados de **Pruebas no superadas**, **Pruebas superadas**, **Pruebas omitidas** y **Pruebas no ejecutadas**. Puede cambiar la manera en que el Explorador de pruebas agrupa las pruebas.
 
@@ -37,9 +37,9 @@ Desde la barra de herramientas del **Explorador de pruebas** puede realizar gran
 
 ![Ejecutar pruebas desde la barra de herramientas del Explorador de pruebas](../test/media/ute_toolbar.png)
 
-### <a name="run-tests"></a>Ejecutar pruebas
+### <a name="run-tests"></a>Ejecución de las pruebas
 
-Puede ejecutar todas las pruebas de la solución, todas las pruebas de un grupo o un conjunto de pruebas seleccionado. Realice una de las siguientes acciones:
+Puede ejecutar todas las pruebas de la solución, todas las pruebas de un grupo o un conjunto de pruebas seleccionado. Realice una de las operaciones siguientes:
 
 - Para ejecutar todas las pruebas de una solución, elija **Ejecutar todas**.
 
@@ -53,7 +53,7 @@ Según se vayan ejecutando las pruebas, se animará la **barra de superado o no 
 
 ### <a name="run-tests-after-every-build"></a>Ejecutar pruebas después de cada compilación
 
-|Botón|Descripción|
+|Botón|DESCRIPCIÓN|
 |-|-|
 |![Ejecutar después de compilar](../test/media/ute_runafterbuild_btn.png)|Para ejecutar pruebas unitarias después de cada compilación local, elija **Prueba** en el menú estándar, o **Ejecutar pruebas después de compilar** en la barra de herramientas del **Explorador de pruebas**.|
 
@@ -100,9 +100,9 @@ Para cambiar la forma en que se organizan las pruebas, haga clic en la flecha ab
 
 ### <a name="test-explorer-groups"></a>Grupos del Explorador de pruebas
 
-|Agrupar|Descripción|
+|Grupo|DESCRIPCIÓN|
 |-|-----------------|
-|**Duración**|Agrupa las pruebas por tiempo de ejecución: **Rápido**, **Medio**y **Lento**.|
+|**Duration**|Agrupa las pruebas por tiempo de ejecución: **Rápido**, **Medio**y **Lento**.|
 |**Resultado**|Agrupa las pruebas por resultados de ejecución: **Pruebas no superadas**, **Pruebas omitidas**y **Pruebas superadas**.|
 |**Rasgos**|Agrupa las pruebas por los pares categoría-valor definidos. La sintaxis para especificar los valores y las categorías de rasgo se define desde el marco de pruebas unitarias.|
 |**Proyecto**|Agrupa las pruebas por el nombre de los proyectos.|
@@ -115,7 +115,7 @@ Por lo general, un rasgo es un par nombre-valor de categoría, pero también pue
 
 En el marco de pruebas unitarias de Microsoft para aplicaciones administradas, el par nombre-valor de rasgo se define en un atributo  <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute> . El marco de pruebas también contiene estos rasgos predefinidos:
 
-|Rasgo|Descripción|
+|Rasgo|DESCRIPCIÓN|
 |-|-----------------|
 |<xref:Microsoft.VisualStudio.TestTools.UnitTesting.OwnerAttribute>|La categoría de propietario se define desde el marco de pruebas unitarias y requiere un valor de cadena del propietario.|
 |<xref:Microsoft.VisualStudio.TestTools.UnitTesting.PriorityAttribute>|La categoría de prioridad se define desde el marco de pruebas unitarias y requiere un valor entero de la prioridad.|
@@ -145,7 +145,7 @@ Para filtrar por otros criterios:
 > [!NOTE]
 > Las búsquedas distinguen entre mayúsculas y minúsculas, y coinciden con la cadena especificada en cualquier parte del valor de criterios.
 
-|Calificador:|Descripción|
+|Calificador:|DESCRIPCIÓN|
 |-|-----------------|
 |**Rasgo**|Busca coincidencias en el valor y en la categoría de rasgo. La sintaxis para especificar los valores y las categorías de rasgo se define en el marco de pruebas unitarias.|
 |**Proyecto**|Busca coincidencias en los nombres de proyecto de prueba.|
@@ -228,3 +228,4 @@ Las pruebas se pueden ejecutar desde el **Explorador de pruebas**, haciendo clic
 
 - [Haga una prueba unitaria de su código](../test/unit-test-your-code.md)
 - [Ejecutar una prueba unitaria como un proceso de 64 bits](../test/run-a-unit-test-as-a-64-bit-process.md)
+- [Preguntas más frecuentes sobre el Explorador de pruebas](test-explorer-faq.md)
