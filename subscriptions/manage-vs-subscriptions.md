@@ -6,12 +6,12 @@ manager: lank
 ms.date: 07/17/2019
 ms.topic: conceptual
 description: Obtener información sobre cómo sacar el máximo partido de las suscripciones de Visual Studio
-ms.openlocfilehash: 553513bf41184389b921f392962f22f26561094f
-ms.sourcegitcommit: 485881e6ba872c7b28a7b17ceaede845e5bea4fe
+ms.openlocfilehash: dcbcbc9c11dc5c695a1ca2ed523ad982ff18f5c5
+ms.sourcegitcommit: 9fc8b144d4ed1c46aba87c0b7e1d24454e0eea9d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/22/2019
-ms.locfileid: "68378066"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "68493359"
 ---
 # <a name="managing-subscriptions"></a>Administrar las suscripciones
 
@@ -73,7 +73,6 @@ Puede cambiar fácilmente la información de contacto y las preferencias en el p
 3. En la pestaña **Acerca de**, puede cambiar su nombre, correo electrónico, país o región, imagen de perfil y preferencias de contacto. En la pestaña **Preferencias**, puede seleccionar el idioma preferido, el formato de fecha y hora, la zona horaria y el tema de la interfaz de usuario.
 4. Cuando haya acabado de realizar los cambios, haga clic en **Guardar**.
 5. Haga clic en el botón **Atrás** del explorador para volver a la página de beneficios.
-
 
 ### <a name="setting-communications-preferences"></a>Establecimiento de preferencias de comunicaciones
 Si desea recibir actualizaciones periódicas sobre su suscripción y ventajas, incluido el boletín de instancias de Visual Studio Subscription mensual, [actualice sus preferencias](https://app.vsaex.visualstudio.com/me?workflowID=devprogram&tab=edit) marcando la casilla para instancias de Visual Studio Subscription en su perfil de Visual Studio. Puede cambiar estas preferencias y anular la suscripción en cualquier momento. 
