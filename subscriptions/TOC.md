@@ -12,7 +12,7 @@
 ##### [Suscripciones para asociados](program-mpn.md)
 ##### [Administración de suscripciones para MPN](manage-mpn-subscriptions.md)
 #### [Microsoft for Startups](program-startups.md)
-### Iniciar sesión 
+### Inicio de sesión 
 #### [Activación de suscripciones comerciales](activate-store-subscriptions.md)
 #### [Inicio de sesión con cuentas de Microsoft](sign-in-msa.md)
 #### [Inicio de sesión con una cuenta profesional o educativa](sign-in-work.md)
@@ -40,7 +40,7 @@
 ##### [Cuenta de desarrollador de Windows](vs-windows-dev.md)
 #### Desarrollo profesional
 ##### [DataCamp](vs-datacamp.md)
-##### [Aprendizaje de LinkedIn](vs-linkedin-learning.md)
+##### [LinkedIn Learning](vs-linkedin-learning.md)
 ##### [Suscripción a MSDN Magazine](vs-msdn.md)
 ##### [Pluralsight](vs-pluralsight.md)
 #### Soporte técnico 
@@ -71,22 +71,23 @@
 #### [Vídeo de incorporación](https://youtu.be/plSu6fpi7UI)
 ### Uso del portal de administración
 #### [Información general](using-admin-portal.md)
-#### [Asignación de suscripciones](assign-license.md)
-#### [Reenvío de correos electrónicos de asignación](resend-assignment-email.md)
-#### [Edición de suscripciones](edit-license.md)
-#### [Eliminación de suscripciones](delete-license.md)
+#### Asignación de suscripciones
+##### [Agregar usuarios únicos](assign-license.md)
+##### [Agregar varios usuarios](assign-license-bulk.md)
+#### [Editar suscripciones](edit-license.md)
+#### [Eliminar suscripciones](delete-license.md)
 #### [Búsqueda de una suscripción](search-license.md)
-#### [Exportación de suscripciones](exporting-subscriptions.md)
+#### [Exportar suscripciones](exporting-subscriptions.md)
 #### [Sobreasignaciones](handle-overclaimed-license.md)
 #### [Uso máximo](maximum-usage.md)
 #### [Suscripciones expiradas](handle-expired-license.md)
 #### [Suscriptores que usan alias](aliasing.md)
-#### [Suscriptores con inicios de sesión con el correo electrónico personal](personal-email-sign-ins.md)
+#### [Suscriptores con inicio de sesión con el correo electrónico personal](personal-email-sign-ins.md)
 ### [Administración de Visual Studio con GitHub Enterprise](assign-github.md)
 ## Recursos
-### [Artículo de licencias de Visual Studio](https://aka.ms/vslicensing)
+### [Notas sobre la concesión de licencias de Visual Studio](https://aka.ms/vslicensing)
 ### [Comparación de opciones de suscripción y precios](https://visualstudio.microsoft.com/vs/pricing)
 ### [Comparación de las características de los IDE de Visual Studio](https://visualstudio.microsoft.com/vs/compare)
 ### [Soporte técnico para suscripciones y administración de Visual Studio](https://visualstudio.microsoft.com/support/support-overview-vs)
-### [Términos de licencias por volumen](https://www.microsoft.com/licensing/product-licensing/products.aspx)
+### [Términos de las licencias por volumen](https://www.microsoft.com/licensing/product-licensing/products.aspx)
 ### [Acuerdo de productos y servicios de Microsoft (MPSA)](https://www.microsoft.com/licensing/mpsa/default.aspx)
