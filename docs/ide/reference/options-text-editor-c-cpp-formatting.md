@@ -13,15 +13,15 @@ helpviewer_keywords:
 ms.assetid: cb6f1cbb-5305-48da-a8e8-33fd70775d46
 author: mikeblome
 ms.author: mblome
-manager: wpickett
+manager: markl
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 95683c93558f67457f0868a76f52d1334e7a6712
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b866d09dbd448950a641ebb59501c13c3bf35188
+ms.sourcegitcommit: 85d66dc9fea3fa49018263064876b15aeb6f9584
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62817627"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68461805"
 ---
 # <a name="options-text-editor-cc-formatting"></a>Opciones, editor de texto, C/C++, formato
 
@@ -56,7 +56,7 @@ La página también tiene opciones para configurar la compatibilidad con [ClangF
 
 La compatibilidad con ClangFormat está habilitada de forma predeterminada. Puede elegir cuál de estas convenciones de formato comunes quiere aplicar a todos los proyectos: LLVM, Google, Chromium, Mozilla o WebKit. También puede crear un archivo de formato .clang o _clang de definición de formato personalizado. Si este archivo está presente en una carpeta de proyecto, Visual Studio lo usará para dar formato a todos los archivos de código fuente en esa carpeta y en sus subcarpetas.
 
-De forma predeterminada, Visual Studio ejecuta clangformat.exe en segundo plano y aplica formato a medida que escribe. También puede especificar que solo se ejecute manualmente en los comandos de formato invocados manualmente **Dar formato al documento (Ctrl+K, Ctrl+D)** o **Dar formato a la selección (Ctrl+K, Ctrl+F)**.
+De forma predeterminada, Visual Studio ejecuta clangformat.exe en segundo plano y aplica formato a medida que escribe. También puede especificar que solo se ejecute manualmente en los comandos de formato invocados manualmente **Dar formato al documento (Ctrl+K, Ctrl+D)** o **Dar formato a la selección (Ctrl+K, Ctrl+F)** .
 
 ## <a name="indentation-new-lines-spacing-wrapping-pages"></a>Páginas de sangría, nuevas líneas, ajuste del espaciado
 

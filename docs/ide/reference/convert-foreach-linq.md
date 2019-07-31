@@ -1,5 +1,6 @@
 ---
 title: Convertir un bucle ForEach en LINQ
+descritpion: Convert any foreach loop that uses an IEnumerable to a LINQ query or a LINQ call form (also known as a LINQ method).
 ms.date: 02/20/2019
 ms.topic: reference
 author: kendrahavens
@@ -9,12 +10,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: 7893ed676372cce94d883353139de91ef639aeb0
-ms.sourcegitcommit: 614d5b99576ea27a41957cd94062dc95cbd29c1c
+ms.openlocfilehash: baa1f32bb981e6d244555baef2a00d03933cdd6c
+ms.sourcegitcommit: 0f5f7955076238742f2071d286ad8e896f3a6cad
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/10/2019
-ms.locfileid: "65531849"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "68483717"
 ---
 # <a name="convert-a-foreach-loop-to-linq"></a>Convertir un bucle ForEach en LINQ
 
@@ -37,11 +38,11 @@ Esta refactorización se aplica a lo siguiente:
 
     ![Muestra de ForEach con IEnumerable](media/convert-foreach-to-LINQ.png)
 
-2. Presione **Ctrl**+**.** para activar el menú **Acciones rápidas y refactorizaciones**.
+2. Presione **Ctrl**+ **.** para activar el menú **Acciones rápidas y refactorizaciones**.
 
    ![Muestra de conversión en un menú LINQ](media/convert-foreach-to-LINQ-codefix.png)
 
-3. Seleccione **Convertir a LINQ** o **Convertir a LINQ (formulario de llamada)**.
+3. Seleccione **Convertir a LINQ** o **Convertir a LINQ (formulario de llamada)** .
 
    ![Muestra de resultado de consulta LINQ](media/convert-foreach-to-LINQ-result.png)
 

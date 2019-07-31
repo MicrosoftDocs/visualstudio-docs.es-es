@@ -1,5 +1,5 @@
 ---
-title: Procedimiento Mostrar las direcciones URL como vínculos en el editor
+title: 'Procedimientos para: Mostrar las direcciones URL como vínculos en el editor'
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,14 +12,14 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c03d9d48ca098932a09e42116deb3ba7ee14a623
-ms.sourcegitcommit: 614d5b99576ea27a41957cd94062dc95cbd29c1c
+ms.openlocfilehash: 63a44407c891464f39693a2d69e5a32d22b6e993
+ms.sourcegitcommit: ce1ab8a25c66a83e60eab80ed8e1596fe66dd85c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/10/2019
-ms.locfileid: "65531656"
+ms.lasthandoff: 07/29/2019
+ms.locfileid: "68605693"
 ---
-# <a name="how-to-display-urls-as-links-in-the-editor"></a>Procedimiento Mostrar las direcciones URL como vínculos en el editor
+# <a name="how-to-display-urls-as-links-in-the-editor"></a>Procedimientos para: Mostrar las direcciones URL como vínculos en el editor
 
 Puede elegir que el editor de código trate los localizadores uniformes de recursos (direcciones URL) en el código como vínculos activos. Cuando use esta característica, las direcciones URL:
 
@@ -37,7 +37,7 @@ Puede elegir que el editor de código trate los localizadores uniformes de recur
 
 3. Para cambiar la opción de un único lenguaje, expanda la carpeta para ese lenguaje y pulse **General**.
 
-     -O bien-
+     O bien:
 
      Para cambiar la opción de todos los lenguajes, expanda la carpeta **Todos los lenguajes** y pulse **General**.
 
@@ -45,5 +45,4 @@ Puede elegir que el editor de código trate los localizadores uniformes de recur
 
 ## <a name="see-also"></a>Vea también
 
-- [Editor de texto, Opciones (cuadro de diálogo)](../../ide/reference/text-editor-options-dialog-box.md)
 - [Características del editor de código](../../ide/writing-code-in-the-code-and-text-editor.md)

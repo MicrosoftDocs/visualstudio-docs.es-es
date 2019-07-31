@@ -14,14 +14,14 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7936f5a4de6b9feef64819ed85efb7d2ae55002e
-ms.sourcegitcommit: 614d5b99576ea27a41957cd94062dc95cbd29c1c
+ms.openlocfilehash: 8b1eb807143e7ee5c3283a88cff12f13515486fb
+ms.sourcegitcommit: ce1ab8a25c66a83e60eab80ed8e1596fe66dd85c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/10/2019
-ms.locfileid: "65531544"
+ms.lasthandoff: 07/29/2019
+ms.locfileid: "68605400"
 ---
-# <a name="how-to-change-fonts-and-colors-for-the-editor-in-visual-studio"></a>Procedimiento Cambiar las fuentes y los colores del editor de Visual Studio
+# <a name="how-to-change-fonts-and-colors-for-the-editor-in-visual-studio"></a>Procedimientos para: Cambiar las fuentes y los colores del editor de Visual Studio
 
 Puede cambiar la fuente predeterminada, ajustar el tamaño de fuente y cambiar los colores de primer plano y de fondo de diverso texto de **Mostrar los elementos** en el editor de código. Al cambiar la configuración de fuente, tenga en cuenta la información siguiente:
 
@@ -46,10 +46,9 @@ Puede cambiar la fuente predeterminada, ajustar el tamaño de fuente y cambiar l
     > [!TIP]
     > Haga clic en **Usar predeterminadas** para restablecer las opciones predeterminadas.
 
-5. Haga clic en **Aceptar**.
+5. Haga clic en **OK**.
 
 ## <a name="see-also"></a>Vea también
 
-- [Cuadro de diálogo Opciones del editor de texto](../../ide/reference/text-editor-options-dialog-box.md)
 - [Características del editor de código](../../ide/writing-code-in-the-code-and-text-editor.md)
-- [Cómo: Cambiar fuentes y colores en Visual Studio](../../ide/how-to-change-fonts-and-colors-in-visual-studio.md)
+- [Uso de Cambiar fuentes y colores en Visual Studio](../../ide/how-to-change-fonts-and-colors-in-visual-studio.md)

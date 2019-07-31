@@ -2,19 +2,19 @@
 title: Fragmentos de código de Visual C++
 ms.date: 11/04/2016
 ms.topic: reference
-author: gewarren
-ms.author: gewarren
-manager: jillfra
+author: mikeblome
+ms.author: mblome
+manager: markl
 dev_langs:
 - CPP
 ms.workload:
 - cplusplus
-ms.openlocfilehash: de27b201dadb23bb8209ebee24b34386f8fa5127
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 9c1bcef00116e0c5f09099344926d924113e5982
+ms.sourcegitcommit: 85d66dc9fea3fa49018263064876b15aeb6f9584
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62581765"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68461622"
 ---
 # <a name="visual-c-code-snippets"></a>Fragmentos de código de Visual C++
 
@@ -24,7 +24,7 @@ Hay dos opciones: agregar un fragmento de código en una ubicación concreta del
 
 ## <a name="insert-a-code-snippet"></a>Insertar un fragmento de código
 
-Para insertar un fragmento de código, abra un archivo de código de C++ (*.cpp* o *.h*), haga clic en cualquier parte dentro del archivo y elija entre las acciones siguientes:
+Para insertar un fragmento de código, abra un archivo de código de C++ ( *.cpp* o *.h*), haga clic en cualquier parte dentro del archivo y elija entre las acciones siguientes:
 
 - Haga clic con el botón derecho para ver el menú contextual y seleccione **Insertar fragmento de código**.
 
@@ -64,7 +64,7 @@ A continuación, puede reemplazar el 0 por la condición correcta.
 
 ## <a name="where-can-i-find-a-complete-list-of-the-c-code-snippets"></a>¿Dónde puedo encontrar una lista completa de los fragmentos de código de C++?
 
-Para ver la lista completa de los fragmentos de código de C++, vaya a **Administrador de fragmentos de código** (en el menú **Herramientas**) y establezca el **Lenguaje** en **Visual C++**. En la ventana inferior, expanda **Visual C++**. Verá los nombres de todos los fragmentos de código de C++ en orden alfabético.
+Para ver la lista completa de los fragmentos de código de C++, vaya a **Administrador de fragmentos de código** (en el menú **Herramientas**) y establezca el **Lenguaje** en **Visual C++** . En la ventana inferior, expanda **Visual C++** . Verá los nombres de todos los fragmentos de código de C++ en orden alfabético.
 
 La mayoría de los nombres de los fragmentos de código se explican por sí mismos, pero algunos pueden ser confusos.
 
@@ -144,7 +144,7 @@ for (int i = length - 1; i >= 0; i--)
 
 ## <a name="the-destructor-snippet-"></a>El fragmento de código de destructor (~)
 
-El fragmento de código de destructor (**~**) muestra un comportamiento diferente según el contexto. Si se inserta este fragmento de código dentro de una clase, proporciona un destructor para esa clase. Por ejemplo, dado el siguiente código:
+El fragmento de código de destructor ( **~** ) muestra un comportamiento diferente según el contexto. Si se inserta este fragmento de código dentro de una clase, proporciona un destructor para esa clase. Por ejemplo, dado el siguiente código:
 
 ```cpp
 class SomeClass {
