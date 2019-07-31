@@ -6,12 +6,12 @@ manager: lank
 ms.date: 07/19/2019
 ms.topic: conceptual
 description: Aprenda a usar claves de producto para admitir demostraciones en Internet a través de Terminal Services y habilitar el acceso a RDS
-ms.openlocfilehash: 34fa32f22582ccde69cbc54c86a3442ad92a7c96
-ms.sourcegitcommit: 485881e6ba872c7b28a7b17ceaede845e5bea4fe
+ms.openlocfilehash: 19faa64b7eeaebc1b92ca965f686795b31e00e7e
+ms.sourcegitcommit: 9fc8b144d4ed1c46aba87c0b7e1d24454e0eea9d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/22/2019
-ms.locfileid: "68377978"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "68493381"
 ---
 # <a name="internet-demonstrations-via-terminal-services"></a>Demostraciones en Internet a través de Terminal Services
 Con una suscripción de Visual Studio, podrá brindar a los usuarios finales acceso a demostraciones de sus programas en Internet a través de Terminal Services (Windows Server 2003 o Windows Server 2008) o Servicios de Escritorio remoto (Windows Server 2008 R2 o versiones posteriores). De este modo, hasta 200 usuarios anónimos pueden tener acceso de manera simultánea a la demostración. Su demostración no debe usar datos de producción. La licencia de los suscriptores de Visual Studio se concede para que muestren sus aplicaciones a los usuarios finales. La demostración en Internet a través de Terminal Services (TS) o Servicios de Escritorio remoto (RDS) es el único escenario en que usuarios finales sin una suscripción de Visual Studio pueden interactuar con la aplicación de demostración si la licencia del software se obtuvo a través de suscripciones de Visual Studio.
@@ -38,4 +38,3 @@ Los usuarios finales pueden conectarse para tener acceso a aplicaciones a travé
 Si necesita orientación para implementar RDS, vea la serie de blogs de varias partes sobre la **implementación de sesiones de Servicios de Escritorio remoto (RDS) 2012** en https://techcommunity.microsoft.com/t5/Ask-The-Performance-Team/bg-p/AskPerf. 
 
 Si tiene alguna pregunta, visite el [foro de Servicios de Escritorio remoto de Microsoft](https://social.technet.microsoft.com/Forums/windowsserver/home?forum=winserverTS).
-
