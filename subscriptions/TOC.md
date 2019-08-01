@@ -12,7 +12,7 @@
 ##### [Suscripciones para asociados](program-mpn.md)
 ##### [Administración de suscripciones para MPN](manage-mpn-subscriptions.md)
 #### [Microsoft for Startups](program-startups.md)
-### Inicio de sesión 
+### Iniciar sesión 
 #### [Activación de suscripciones comerciales](activate-store-subscriptions.md)
 #### [Inicio de sesión con cuentas de Microsoft](sign-in-msa.md)
 #### [Inicio de sesión con una cuenta profesional o educativa](sign-in-work.md)
@@ -40,7 +40,7 @@
 ##### [Cuenta de desarrollador de Windows](vs-windows-dev.md)
 #### Desarrollo profesional
 ##### [DataCamp](vs-datacamp.md)
-##### [LinkedIn Learning](vs-linkedin-learning.md)
+##### [Aprendizaje de LinkedIn](vs-linkedin-learning.md)
 ##### [Suscripción a MSDN Magazine](vs-msdn.md)
 ##### [Pluralsight](vs-pluralsight.md)
 #### Soporte técnico 
@@ -61,10 +61,8 @@
 ### [Responsabilidades del administrador](admin-responsibilities.md)
 #### [Inventario de preproducción](admin-inventory.md)
 #### [Administración de equipos grandes y contratistas externos](manage-teams.md)
-#### [Seguimiento de las asignaciones de usuarios y tramitación de pedidos](assignments-orders.md)
-### [Licencias por volumen](volume-license-admins.md)
+#### [Seguimiento de la asignación de usuarios y tramitación de pedidos](assignments-orders.md)
 ### Incorporación de su organización
-#### [Incorporación posterior a la migración](post-migration-onboarding.md)
 #### [Migración de licencias Open y Open](open-migration.md)
 #### [MPSA](mpsa.md)
 #### [Suscripciones de nube](cloud-admin.md)
