@@ -1,5 +1,5 @@
 ---
-title: Mostrar información personalizada con DebuggerDisplay | Microsoft Docs
+title: Mostrar información personalizada mediante DebuggerDisplay | Microsoft Docs
 ms.date: 01/09/2019
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: af666497deb20f3c2d9125b4beb452f24cabbbd2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 1f8046ba598873329e6aa9fcea344504f15b4dbc
+ms.sourcegitcommit: 5694c5236fa32ba7f5bc1236a853f725ec7557e9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62929610"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "68680585"
 ---
-# <a name="tell-the-debugger-what-to-show-using-the-debuggerdisplay-attribute-c-visual-basic-f-ccli"></a>Indicar al depurador qué muestra el uso del atributo DebuggerDisplay (C#, Visual Basic, F#, C++/CLI)
-El atributo <xref:System.Diagnostics.DebuggerDisplayAttribute> controla la forma en que se muestra un objeto, una propiedad o un campo en las ventanas de variables del depurador. Este atributo se puede aplicar a tipos, delegados, propiedades, campos y ensamblados.
+# <a name="tell-the-debugger-what-to-show-using-the-debuggerdisplay-attribute-c-visual-basic-f-ccli"></a>Indicar al depurador qué Mostrar mediante el atributo DebuggerDisplay (C#, Visual Basic, F#, C++/CLI)
+El atributo <xref:System.Diagnostics.DebuggerDisplayAttribute> controla la forma en que se muestra un objeto, una propiedad o un campo en las ventanas de variables del depurador. Este atributo se puede aplicar a tipos, delegados, propiedades, campos y ensamblados. Si se aplica a un tipo base, el atributo también se aplica a una subclase.
 
 El atributo `DebuggerDisplay` tiene un argumento único, que es una cadena que se va a mostrar en la columna de valor de las instancias del tipo. Esta cadena puede contener llaves (`{` y `}`). El texto encerrado entre llaves se evalúa como un campo, una propiedad o un método.
 
@@ -32,7 +32,7 @@ La evaluación de esta llamada implícita a `ToString()` por parte del depurador
 > Si la casilla **Mostrar la estructura de los objetos en ventanas de variables** está seleccionada en el cuadro de diálogo **Herramientas / Opciones/ Depuración** , se omite el atributo `DebuggerDisplay` .
 
 > [!NOTE]
-> Para código nativo, este atributo solo se admite en C++código /CLI.
+> En el caso de código nativo, este atributo solo C++se admite en el código/CLI.
 
 En la tabla siguiente se muestran algunos posibles usos del atributo `DebuggerDisplay` y resultados de ejemplo.
 
@@ -43,7 +43,7 @@ En la tabla siguiente se muestran algunos posibles usos del atributo `DebuggerDi
 
 `DebuggerDisplay` también puede aceptar parámetros con nombre.
 
-|Parámetros|Finalidad|
+|Parámetros|Propósito|
 |----------------|-------------|
 |`Name`, `Type`|Estos parámetros afectan a las columnas **Nombre** y **Tipo** de las ventanas de variables. (Se pueden establecer en cadenas mediante la misma sintaxis que el constructor). El uso excesivo o incorrecto de estos parámetros puede generar resultados confusos.|
 |`Target`, `TargetTypeName`|Especifica el tipo de destino cuando se utiliza el atributo en el nivel de ensamblado.|
@@ -90,15 +90,15 @@ public sealed class MyClass
 }
 ```
 
-El ", nq" sufijo indica el evaluador de expresiones para quitar las comillas al mostrar el valor final (nq no = comillas).
+El sufijo ", NQ" indica al evaluador de expresiones que quite las comillas al mostrar el valor final (NQ = sin comillas).
 
 ## <a name="example"></a>Ejemplo
 En el ejemplo de código siguiente se muestra cómo utilizar `DebuggerDisplay`, junto con `DebuggerBrowseable` y `DebuggerTypeProxy`. Cuando se ve en una ventana de variables del depurador, como la ventana **Inspección** , genera una expansión similar a la siguiente:
 
 |**Name**|**Valor**|**Type**|
 |--------------|---------------|--------------|
-|Key|"three"|object {string}|
-|Valor|3|object {int}|
+|Clave|"three"|object {string}|
+|Value|3|object {int}|
 
 ```csharp
 [DebuggerDisplay("{value}", Name = "{key}")]
