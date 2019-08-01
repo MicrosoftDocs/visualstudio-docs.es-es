@@ -1,5 +1,5 @@
 ---
-title: FRAMEINFO | Documentos de Microsoft
+title: FRAMEINFO | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -15,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 1209036bced88cffb3681be0ceedd28942714419
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: eb6a4a9f7408e5bcd03da464bfbc8ade3fa39e7e
+ms.sourcegitcommit: 5694c5236fa32ba7f5bc1236a853f725ec7557e9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66344461"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "68681093"
 ---
 # <a name="frameinfo"></a>FRAMEINFO
 Describe un marco de pila.
@@ -65,49 +65,49 @@ public struct FRAMEINFO {
 
 ## <a name="members"></a>Miembros
 `m_dwValidFields`\
-Una combinación de marcas de la [FRAMEINFO_FLAGS](../../../extensibility/debugger/reference/frameinfo-flags.md) enumeración que especifica qué campos se rellenan.
+Combinación de marcas de la enumeración [FRAMEINFO_FLAGS](../../../extensibility/debugger/reference/frameinfo-flags.md) que especifica qué campos se rellenan.
 
 `m_bstrFuncName`\
-El nombre de función asociado con el marco de pila.
+Nombre de función asociado al marco de pila.
 
 `m_bstrReturnType`\
-El tipo de valor devuelto asociado con el marco de pila.
+El tipo de valor devuelto asociado al marco de pila.
 
 `m_bstrArgs`\
-Los argumentos para la función asociada con el marco de pila.
+Argumentos de la función asociada al marco de pila.
 
 `m_bstrLanguage`\
-El idioma en que se implementará la función.
+Lenguaje en el que se implementa la función.
 
 `m_bstrModule`\
-El nombre de módulo asociado con el marco de pila.
+Nombre del módulo asociado al marco de pila.
 
 `m_addrMin`\
-La dirección de pila física mínima.
+Dirección de la pila física mínima.
 
 `m_addrMAX`\
-La dirección de pila física máximo.
+Dirección de la pila física máxima.
 
 `m_pFrame`\
-El [IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md) objeto que representa este marco de pila.
+Objeto [IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md) que representa este marco de pila.
 
-`m_pFrame`\
-El [IDebugModule2](../../../extensibility/debugger/reference/idebugmodule2.md) objeto que representa el módulo que contiene este marco de pila.
-
-`m_fHasDebugInfo`\
-Distinto de cero (`TRUE`) si no existe información de depuración en el periodo especificado.
+`m_pModule`\
+El objeto [IDebugModule2](../../../extensibility/debugger/reference/idebugmodule2.md) que representa el módulo que contiene este marco de pila.
 
 `m_fHasDebugInfo`\
-Distinto de cero (`TRUE`) si el marco de pila está asociado con el código que ya no es válido.
+Distinto de cero (`TRUE`) si la información de depuración existe en el marco especificado.
 
-`m_fHasDebugInfo`\
-Distinto de cero (`TRUE`) si el marco de pila se anota con el Administrador de depuración de la sesión (SDM).
+`m_fStaleCode`\
+Distinto de cero (`TRUE`) si el marco de pila está asociado a código que ya no es válido.
+
+`m_fAnnotatedFrame`\
+Distinto de cero (`TRUE`) si el administrador de depuración de la sesión (SDM) anota el marco de pila.
 
 ## <a name="remarks"></a>Comentarios
-Esta estructura se pasa a la [GetInfo](../../../extensibility/debugger/reference/idebugstackframe2-getinfo.md) método que deben rellenarse. Esta estructura también está incluida en una lista que se encuentra en la [IEnumDebugFrameInfo2](../../../extensibility/debugger/reference/ienumdebugframeinfo2.md) interfaz que, a su vez, se devuelve desde una llamada a la [EnumFrameInfo](../../../extensibility/debugger/reference/idebugthread2-enumframeinfo.md) método.
+Esta estructura se pasa al método [GetInfo](../../../extensibility/debugger/reference/idebugstackframe2-getinfo.md) que se va a rellenar. Esta estructura también se incluye en una lista incluida en la interfaz [IEnumDebugFrameInfo2](../../../extensibility/debugger/reference/ienumdebugframeinfo2.md) que, a su vez, se devuelve desde una llamada al método [EnumFrameInfo](../../../extensibility/debugger/reference/idebugthread2-enumframeinfo.md) .
 
 ## <a name="requirements"></a>Requisitos
-Encabezado: msdbg.h
+Encabezado: msdbg. h
 
 Espacio de nombres:  Microsoft.VisualStudio.Debugger.Interop
 
