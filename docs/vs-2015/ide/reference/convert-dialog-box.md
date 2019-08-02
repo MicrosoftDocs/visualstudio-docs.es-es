@@ -16,10 +16,10 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 5dfd699c600875cbf2706eb78890b6e89ea92568
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 3e74ec49a54e5c3da7631f4466128cdf4384af6b
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 08/02/2019
 ms.locfileid: "65705867"
 ---
 # <a name="convert-dialog-box"></a>Convertir (Cuadro de diálogo)
@@ -39,6 +39,6 @@ El cuadro de diálogo **Convertir** le permite seleccionar una herramienta de co
   
 2. Seleccione la herramienta que sea adecuada para su aplicación.  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Otras referencias  
  [(NO ESTÁ EN LA COMPILACIÓN) Cómo: Actualizar un proyecto de Visual Basic 6.0](https://msdn.microsoft.com/c0421e57-5bba-422e-934d-ec42ab9f2af9)   
  [Portar, migrar y actualizar proyectos de Visual Studio](../../porting/porting-migrating-and-upgrading-visual-studio-projects.md)
