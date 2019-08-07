@@ -10,12 +10,12 @@ manager: jillfra
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: ce4184cd3864cad787a4e4f8afc084445fa3c828
-ms.sourcegitcommit: 01c3c9dcade5d913bde2c7efa8c931a7b04e6cd0
+ms.openlocfilehash: aee0029553391c30fb29eb1f9fa7aba01968e5ed
+ms.sourcegitcommit: b56dc6fadc6c924beed36bb4c2ccc16cf6bcfa1c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2019
-ms.locfileid: "67365296"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "68740154"
 ---
 # <a name="quickstart-create-your-first-python-web-app-using-visual-studio"></a>Inicio rápido: Creación de la primera aplicación web de Python con Visual Studio
 
@@ -33,7 +33,7 @@ Si todavía no ha instalado Visual Studio, vaya a la página de [descargas de Vi
 
 ::: moniker-end
 
-## <a name="create-the-project"></a>Creación del proyecto
+## <a name="create-the-project"></a>Crear el proyecto
 
 Los pasos siguientes crean un proyecto vacío que actúa como un contenedor para la aplicación:
 
@@ -165,9 +165,9 @@ Ahora está listo para agregar un poco de código de Python para implementar una
 
 **Pregunta: ¿Dónde puedo obtener más información sobre Flask?**
 
-**Respuesta**: Consulte la documentación de Flask, empezando por el [inicio rápido de Flask](http://flask.pocoo.org/docs/0.12/quickstart/#quickstart).
+**Respuesta**: Consulte la documentación de Flask, empezando por el [inicio rápido de Flask](https://flask.palletsprojects.com/en/1.1.x/quickstart/#quickstart).
 
-## <a name="run-the-application"></a>Ejecución de la aplicación
+## <a name="run-the-application"></a>Ejecutar la aplicación
 
 1. Haga clic con el botón derecho en *app.py* en el **Explorador de soluciones** y seleccione **Establecer como archivo de inicio**. Este comando identifica el archivo de código que se va a iniciar en Python cuando se ejecuta la aplicación.
 

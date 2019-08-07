@@ -1,6 +1,7 @@
 ---
 title: Página Seguridad, Diseñador de proyectos
 ms.date: 11/04/2016
+ms.technology: vs-ide-deployment
 ms.topic: reference
 f1_keywords:
 - vb.ProjectPropertiesSecurity
@@ -8,21 +9,21 @@ f1_keywords:
 helpviewer_keywords:
 - Project Designer, Security page
 - Security page in Project Designer
-author: gewarren
-ms.author: gewarren
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fe78b2473fc58166edb124924673ff0c49ba92a4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 2115acae1e77bdacfa926c472940659c549cff65
+ms.sourcegitcommit: 85d66dc9fea3fa49018263064876b15aeb6f9584
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62945497"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68461298"
 ---
 # <a name="security-page-project-designer"></a>Página Seguridad, Diseñador de proyectos
 
-La página **Seguridad** del **Diseñador de proyectos** se usa para configurar las opciones de seguridad de acceso del código para las aplicaciones que se implementan con la implementación de [!INCLUDE[ndptecclick](../../deployment/includes/ndptecclick_md.md)]. Para obtener más información, vea [Code Access Security for ClickOnce Applications](../../deployment/code-access-security-for-clickonce-applications.md) (Seguridad de acceso del código para aplicaciones ClickOnce).
+La página **Seguridad** del **Diseñador de proyectos** se usa para configurar las opciones de seguridad de acceso del código para las aplicaciones que se implementan con la implementación de ClickOnce. Para más información, vea [Code Access Security for ClickOnce Applications](../../deployment/code-access-security-for-clickonce-applications.md) (Seguridad de acceso del código para aplicaciones ClickOnce).
 
  Para obtener acceso a la página **Seguridad**, haga clic en un nodo de proyecto en el **Explorador de soluciones** y, después, en el menú **Proyecto**, haga clic en **Propiedades**. Cuando se muestre el **Diseñador de proyectos**, haga clic en la pestaña **Seguridad**.
 
@@ -65,21 +66,21 @@ La página **Seguridad** del **Diseñador de proyectos** se usa para configurar 
 
  **Editar XML de permisos**
 
- Abre la plantilla de manifiesto de aplicación (app.manifest) para configurar los permisos del conjunto de permisos **(Personalizado)**.
+ Abre la plantilla de manifiesto de aplicación (app.manifest) para configurar los permisos del conjunto de permisos **(Personalizado)** .
 
- **Avanzadas**
+ **Avanzado**
 
  Abre el cuadro de diálogo [Configuración de seguridad avanzada](../../ide/reference/advanced-security-settings-dialog-box.md), que se usa para configurar las opciones de depuración de la aplicación con permisos restringidos. Estas configuraciones se comprueban durante la depuración, y las excepciones de los permisos indican que la aplicación puede necesitar más permisos de los definidos en una zona.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Otras referencias
 
 - <xref:System.Security.Permissions.WebBrowserPermission>
 - <xref:System.Security.Permissions.MediaPermission>
 - [Seguridad de acceso del código para aplicaciones ClickOnce](../../deployment/code-access-security-for-clickonce-applications.md)
-- [Cómo: Habilitación de la configuración de seguridad ClickOnce](../../deployment/how-to-enable-clickonce-security-settings.md)
-- [Cómo: Establecimiento de una zona de seguridad para una aplicación ClickOnce](../../deployment/how-to-set-a-security-zone-for-a-clickonce-application.md)
-- [Cómo: Establecimiento de permisos personalizados para una aplicación ClickOnce](../../deployment/how-to-set-custom-permissions-for-a-clickonce-application.md)
-- [Cómo: Depuración de una aplicación ClickOnce con permisos restringidos](../../deployment/how-to-debug-a-clickonce-application-with-restricted-permissions.md)
+- [Uso de Habilitación de la configuración de seguridad ClickOnce](../../deployment/how-to-enable-clickonce-security-settings.md)
+- [Uso de Establecimiento de una zona de seguridad para una aplicación ClickOnce](../../deployment/how-to-set-a-security-zone-for-a-clickonce-application.md)
+- [Uso de Establecimiento de permisos personalizados para una aplicación ClickOnce](../../deployment/how-to-set-custom-permissions-for-a-clickonce-application.md)
+- [Uso de Depuración de una aplicación ClickOnce con permisos restringidos](../../deployment/how-to-debug-a-clickonce-application-with-restricted-permissions.md)
 - [Seguridad e implementación ClickOnce](../../deployment/clickonce-security-and-deployment.md)
 - [Referencia de propiedades del proyecto](../../ide/reference/project-properties-reference.md)
 - [Configuración de seguridad avanzada (Cuadro de diálogo)](../../ide/reference/advanced-security-settings-dialog-box.md)

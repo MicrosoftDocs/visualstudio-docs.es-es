@@ -1,23 +1,22 @@
 ---
-title: Edición de suscripciones en el Portal de administrador | Microsoft Docs
+title: Edición de suscripciones en el Portal de administración | Microsoft Docs
 author: evanwindom
-ms.author: jaunger
-manager: evelynp
-ms.date: 10/03/2017
+ms.author: lank
+manager: lank
+ms.date: 07/28/2019
 ms.topic: conceptual
 description: Obtenga más información sobre cómo los administradores pueden editar asignaciones de suscripción.
-ms.openlocfilehash: 7245facbaf966593160bc44dc15bc2fd71622347
-ms.sourcegitcommit: 208395bc122f8d3dae3f5e5960c42981cc368310
+ms.openlocfilehash: e55cee74f861973e3cc29e3f19dc9b31a107f437
+ms.sourcegitcommit: ce1ab8a25c66a83e60eab80ed8e1596fe66dd85c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/10/2019
-ms.locfileid: "67783473"
+ms.lasthandoff: 07/29/2019
+ms.locfileid: "68605666"
 ---
-# <a name="editing-visual-studio-subscription-assignments"></a>Edición de las asignaciones de suscripción de Visual Studio
-
+# <a name="edit-visual-studio-subscription-assignments"></a>Edición de asignaciones de suscripciones de Visual Studio
 Como administrador de suscripciones, puede hacer cambios en las suscripciones asignadas a personas de su organización.  En este artículo se describen los tipos de cambios que puede realizar y se proporcionan los pasos necesarios.
 
-## <a name="making-changes-to-subscriber-information"></a>Aplicación de cambios en la información del suscriptor
+## <a name="change-subscriber-information"></a>Cambio de la información del suscriptor
 Puede editar la información del suscriptor para corregir los errores o actualizarla.
 
 Para editar un suscriptor, seleccione los puntos suspensivos (...) que aparecen junto a la dirección de correo electrónico del suscriptor al mantener el mouse sobre él. Aparecerá una lista desplegable.  Seleccione **Editar** para modificar los detalles del suscriptor. También puede hacer doble clic en la fila del suscriptor en la cuadrícula para abrir la ventana de edición.
@@ -29,8 +28,7 @@ Puede actualizar nombre del suscriptor, los apellidos, el país, el idioma y las
    > [!NOTE]
    > Si tiene que cambiar el nivel de suscripción de un suscriptor, primero debe eliminar el usuario del portal y volverlo a agregar. Los niveles de suscripción no son editables.
 
-## <a name="editing-multiple-subscribers-using-bulk-edit"></a>Edición en masa de varios suscriptores
-
+## <a name="edit-multiple-subscribers-using-bulk-edit"></a>Edición en masa de varios suscriptores
 Puede editar varios suscriptores a la vez mediante el proceso de edición en masa. Esta característica se usa principalmente en organizaciones que están efectuando cambios en la dirección de correo electrónico corporativa o cuando una organización ha decidido restringir el acceso a las descargas.
 
    > [!IMPORTANT]
@@ -49,3 +47,7 @@ Puede editar varios suscriptores a la vez mediante el proceso de edición en mas
    > ![Edición de una licencia: carga de archivos de ediciones en masa](_img/edit-license/edit-license-bulk-file-upload1.png)
 
 5. Cuando haya cargado el archivo, verá una notificación en la que se le indicará que se ha realizado correctamente. En este momento, los cambios se reflejarán en la información del suscriptor.
+
+## <a name="next-steps"></a>Pasos siguientes
+- Si necesita ayuda para encontrar una suscripción determinada, consulte [Búsqueda de suscripciones](search-license.md).
+- ¿Necesita crear una lista de todas las suscripciones?  Consulte [Exportar suscripciones](exporting-subscriptions.md).

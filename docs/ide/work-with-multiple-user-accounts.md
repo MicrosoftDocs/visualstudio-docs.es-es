@@ -1,18 +1,18 @@
 ---
 title: Trabajar con varias cuentas de usuario
-ms.date: 12/10/2018
+ms.date: 07/23/2019
 ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 371cdc85648b8b058267540b305162adf371c4f6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 6a49f7fe74977495c3e2a99e7311d4349ccd67bd
+ms.sourcegitcommit: 0f5f7955076238742f2071d286ad8e896f3a6cad
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62581902"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "68483548"
 ---
 # <a name="work-with-multiple-user-accounts"></a>Trabajar con varias cuentas de usuario
 
@@ -55,7 +55,19 @@ La próxima vez que abra el **Explorador de servidores**, se mostrarán los recu
 
 Azure Active Directory (AAD) ofrece compatibilidad con el inicio de sesión único de usuario final en las aplicaciones web ASP.NET MVC o autenticación AD en los servicios de API web. La autenticación de dominio es diferente de la autenticación de cuentas de usuario individuales; los usuarios que tienen acceso a su dominio de Active Directory pueden usar las cuentas de AAD que poseen para conectarse a sus aplicaciones web. Las aplicaciones de Office 365 también pueden utilizar la autenticación de dominio.
 
-Para ver esto en acción, cree un proyecto **Aplicación web ASP.NET**. En el cuadro de diálogo **Nuevo proyecto ASP.NET**, elija **Cambiar autenticación**. El Asistente para autenticación aparece y le permite elegir qué tipo de autenticación se utilizará en la aplicación.
+::: moniker range="vs-2017"
+
+Para ver cómo funciona, cree un proyecto de **Aplicación web ASP.NET Core**. En el cuadro de diálogo **Nueva aplicación web ASP.NET Core**, elija la plantilla **Aplicación web** y, luego, elija **Cambiar autenticación**.
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+Para ver cómo funciona, cree un proyecto de **Aplicación web ASP.NET Core**. En la página **Crear una aplicación web ASP.NET Core**, elija la plantilla **Aplicación web** y, luego, elija **Cambiar** en **Autenticación**.
+
+::: moniker-end
+
+Aparece el cuadro de diálogo **Cambiar autenticación**, donde puede elegir el tipo de autenticación que se va a usar en la aplicación.
 
 ![Cuadro de diálogo de autenticación de cambio de ASP.NET](../ide/media/vs2015_change_authentication.png)
 

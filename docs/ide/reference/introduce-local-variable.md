@@ -1,5 +1,6 @@
 ---
 title: Introducción de una variable local
+description: Genere una variable local para reemplazar una expresión existente. Seleccione la expresión, haga clic con el botón derecho y seleccione el menú Acciones rápidas y refactorizaciones y seleccione Introducir una variable local para todos los casos de "expresión".
 ms.date: 01/26/2018
 ms.topic: reference
 author: gewarren
@@ -7,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 5564752fcecfe2d7a1b2d0bf7632a9cebe3d9353
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 43f54072d495cfdd6607ccb033ffd1a1713ad8bb
+ms.sourcegitcommit: 0f5f7955076238742f2071d286ad8e896f3a6cad
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62541043"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "68483694"
 ---
 # <a name="introduce-a-local-variable-in-visual-studio"></a>Introducción de una variable local en Visual Basic
 
@@ -43,7 +44,7 @@ Esta generación de código se aplica a:
 2. A continuación, realice alguno de los siguientes procedimientos:
 
    - **Teclado**
-      - Presione **Ctrl**+**.** para activar el menú **Acciones rápidas y refactorizaciones**.
+      - Presione **Ctrl**+ **.** para activar el menú **Acciones rápidas y refactorizaciones**.
    - **Mouse**
       - Haga clic con el botón derecho y seleccione el menú **Acciones rápidas y refactorizaciones**.
       - Haga clic en el botón ![icono de destornillador](media/screwdriver.png) que aparece en el margen izquierdo si el cursor de texto ya está en la línea con la expresión resaltada.

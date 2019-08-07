@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 38c621a09c6a000c9e3c7e52caa99569f7e5d781
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 32e62131b2a66052ad4712b434c7b6f2b89065d0
+ms.sourcegitcommit: 9fc8b144d4ed1c46aba87c0b7e1d24454e0eea9d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62821719"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "68493289"
 ---
 # <a name="intellisense-in-visual-studio"></a>IntelliSense en Visual Studio
 
@@ -70,7 +70,7 @@ Para invocar manualmente la información rápida, elija **Edición** > **Intelli
 
 Si una función está sobrecargada, es posible que IntelliSense no muestre información para todas las formas de la sobrecarga.
 
-Para desactivar información rápida del código de C++, vaya a **Herramientas** > **Opciones** > **Editor de texto** > **C/C++** > **Avanzadas** y establezca **Información rápida automática** en `false`.
+Para desactivar información rápida del código de C++, vaya a **Herramientas** > **Opciones** > **Editor de texto** > **C/C++**  > **Avanzadas** y establezca **Información rápida automática** en `false`.
 
 ## <a name="complete-word"></a>Palabra completa
 
@@ -79,6 +79,17 @@ La opción Palabra completa escribe el resto del nombre de una variable, un coma
 ## <a name="intellisense-options"></a>Opciones de IntelliSense
 
 Las opciones de IntelliSense están activadas de forma predeterminada. Para desactivarla, haga clic en **Herramientas** > **Opciones** > **Editor de texto** y anule la selección de **Información de parámetros** o de **Lista de miembros automática** si no quiere usar la característica Lista de miembros.
+
+## <a name="intellisense-icons"></a>Iconos de IntelliSense
+Los iconos de IntelliSense pueden transmitir un significado adicional con los modificadores de icono. Se trata de estrellas, corazones y candados superpuestos encima del icono del objeto que transmiten un significado de protegido, interno o privado, respectivamente.
+
+|    Icono    |    Accesibilidad    |    DESCRIPCIÓN    |
+|------------|--------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------|
+| ![Modificador de icono público](../ide/media/intellisensePublicNoModifier.png)       |    Clase pública    |    El acceso no está restringido.   |
+| ![Modificador de icono protegido](../ide/media/intellisenseProtectedModifier.png)       |    Clase protegida    |    El acceso está limitado a la clase contenedora o a los tipos derivados de la clase contenedora.    |
+| ![Modificador de icono interno protegido](../ide/media/intellisenseProtectedInternalModifier.png)       |    Clase interna protegida    |    El acceso está limitado al ensamblado actual o a los tipos derivados de la clase contenedora.    |
+| ![Modificador de icono interno](../ide/media/intellisenseInternalModifier.png)       |    Clase interna    |    El acceso está limitado al ensamblado actual.    |
+|![Modificador de icono privado](../ide/media/intellisensePrivateModifier.png)        |    Clase privada    |    El acceso está limitado a la clase contenedora o a los tipos derivados de la clase contenedora que hay en el ensamblado actual. (Disponible desde C# 7.2.)    |
 
 ## <a name="troubleshoot-intellisense"></a>Solución de problemas de IntelliSense
 

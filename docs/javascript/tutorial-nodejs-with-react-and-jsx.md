@@ -12,20 +12,20 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 563dcd4d91e23c019edf5a777b70453f40091d69
-ms.sourcegitcommit: 57866dd72fd0e15ce61128df70729b427a2d02eb
+ms.openlocfilehash: 048e0409a5af77c512f0ee768d95d61259426fb9
+ms.sourcegitcommit: 9cfd3ef6c65f671a26322320818212a1ed5955fe
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "68315246"
+ms.lasthandoff: 07/26/2019
+ms.locfileid: "68533367"
 ---
 # <a name="tutorial-create-a-nodejs-and-react-app-in-visual-studio"></a>Tutorial: Crear una aplicación Node.js y React en Visual Studio
 
 Visual Studio permite crear fácilmente un proyecto de Node.js y usar IntelliSense y otras características integradas compatibles con Node.js. En este tutorial para Visual Studio, se crea un proyecto de aplicación web de Node.js a partir de una plantilla de Visual Studio. A continuación, se crea una aplicación sencilla con React.
 
-En este tutorial aprenderá a:
+En este tutorial, aprenderá a:
 > [!div class="checklist"]
-> * Crear un proyecto de Node.js
+> * Creación de un proyecto Node.js
 > * Agregar paquetes de npm
 > * Agregar código de React a la aplicación
 > * Transpilar JSX
@@ -82,7 +82,7 @@ En primer lugar, cree un proyecto de aplicación web de Node.js.
 
 1. Abra Visual Studio.
 
-1. Cree un nuevo proyecto.
+1. Crear un nuevo proyecto.
 
     ::: moniker range=">=vs-2019"
     Presione **Esc** para cerrar la ventana de inicio. Presione **Ctrl + Q** para abrir el cuadro de búsqueda, escriba **Node.js**, elija **Aplicación web en blanco de Node.js** (JavaScript). En el cuadro de diálogo que se abre, elija **Crear**.
@@ -113,7 +113,7 @@ Esta aplicación requiere una serie de módulos de npm para ejecutarse correctam
 * react
 * react-dom
 * express
-* ruta de acceso
+* path
 * ts-loader
 * typescript
 * webpack
@@ -322,7 +322,7 @@ Cada vez que realice cambios en *app.tsx*, debe volver a ejecutar el comando web
 
 ## <a name="add-a-build-script-to-transpile-the-jsx"></a>Agregar un script de compilación para transpilar el JSX
 
-En las versiones más recientes de Node.js, se requiere un script de compilación. En lugar de transpilar el JSX en la línea de comandos (como se muestra en la sección anterior), puede hacerlo al compilar desde Visual Studio.
+A partir de Visual Studio 2019, se requiere un script de compilación. En lugar de transpilar el JSX en la línea de comandos (como se muestra en la sección anterior), puede hacerlo al compilar desde Visual Studio.
 
 * Abra *package.json* y agregue la siguiente sección después de la sección `dependencies`:
 
@@ -332,7 +332,7 @@ En las versiones más recientes de Node.js, se requiere un script de compilació
    }
    ```
 
-## <a name="run-the-app"></a>Ejecutar la aplicación
+## <a name="run-the-app"></a>Ejecución de la aplicación
 
 1. Seleccione Chrome como el destino de depuración actual.
 

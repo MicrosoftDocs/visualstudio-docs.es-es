@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: befbb09d347043ae304702618506d193344e23ba
-ms.sourcegitcommit: fd5a5b057df3d733f5224c305096907989811f85
+ms.openlocfilehash: cae7a02c774773d08c287dde7df59ff62fdbec58
+ms.sourcegitcommit: 9cfd3ef6c65f671a26322320818212a1ed5955fe
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/18/2019
-ms.locfileid: "67195246"
+ms.lasthandoff: 07/26/2019
+ms.locfileid: "68533349"
 ---
 # <a name="overview-of-net-compiler-platform-analyzers"></a>Introducción a los analizadores de .NET Compiler Platform
 
@@ -80,9 +80,9 @@ La captura de pantalla siguiente muestra la salida de compilación de línea de 
 
 No se puede establecer la gravedad de las reglas de los analizadores que se han instalado como una extensión de Visual Studio. Para configurar la [gravedad de las reglas](../code-quality/use-roslyn-analyzers.md#rule-severity), instale los analizadores como paquetes NuGet.
 
-### <a name="categories"></a>Categorías
+## <a name="categories"></a>Categorías
 
-A continuación se muestran los distintos tipos de analizadores que ayudan a analizar el código. 
+A continuación se muestran los distintos tipos de analizadores que ayudan a analizar el código:
 
 - Analizadores recomendados de Microsoft: [Analizadores de FxCop](../code-quality/fxcop-analyzers.yml)
 - Analizadores IDE de Visual Studio: [EditorConfig](../ide/code-styles-and-code-cleanup.md)

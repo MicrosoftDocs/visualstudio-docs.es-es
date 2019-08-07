@@ -1,5 +1,6 @@
 ---
 title: Refactorización de traslado de un tipo a un archivo coincidente
+description: Mueva un tipo a un archivo independiente con el mismo nombre. Haga clic con el botón derecho en el tipo, seleccione Acciones rápidas y refactorizaciones y elija Mover tipo a <TypeName>.cs.
 ms.date: 01/26/2018
 ms.topic: reference
 author: gewarren
@@ -10,12 +11,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 31e3b12f6a19ea64e43f7a5e00e3c795cc7358e0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 3021e08d3cfb601a67f51e53c97d2eba60c397a5
+ms.sourcegitcommit: 0f5f7955076238742f2071d286ad8e896f3a6cad
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62540760"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "68483654"
 ---
 # <a name="move-a-type-to-a-matching-file-refactoring"></a>Refactorización de traslado de un tipo a un archivo coincidente
 
@@ -45,7 +46,7 @@ Esta refactorización se aplica a lo siguiente:
 
 2. A continuación, realice alguno de los siguientes procedimientos:
 
-   - Presione **Ctrl**+**.**
+   - Presione **Ctrl**+ **.**
    - Haga clic con el botón derecho en el nombre del tipo y seleccione **Acciones rápidas y refactorizaciones**
 
 1. Seleccione **Mover tipo a *TypeName*.cs** desde el menú, donde *TypeName* es el nombre del tipo que seleccionó.

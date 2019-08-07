@@ -6,7 +6,7 @@
 ## [Instalar y usar detrás de un firewall o proxy](install-behind-a-firewall-or-proxy-server.md)
 ## [Instalar una versión preliminar](install-preview.md)
 ## [Actualizar](update.md)
-## [Desinstalar](uninstall.md)
+## [Desinstalación](uninstall.md)
 
 # Cuentas de usuario
 ## [Información general](user-accounts.md)
@@ -26,7 +26,7 @@
 ### [Información general](managing-references-in-a-project.md)
 ### [Tutorial: Incluir un paquete NuGet en el proyecto](nuget-walkthrough.md)
 ## [Administrar recursos de la aplicación](managing-app-resources.md)
-## [Cómo: abrir varias soluciones o instancias](open-multiple-solutions.md)
+## [Uso de abrir varias soluciones o instancias](open-multiple-solutions.md)
 
 # Editor de código fuente
 ## [Características del editor](source-editor.md)
@@ -48,9 +48,9 @@
 ## [Información general](compiling-and-building.md)
 ## [Compilar y limpiar proyectos y soluciones](building-and-cleaning-projects-and-solutions.md)
 ## [Acciones de compilación](build-actions.md)
-## [Cómo: Establecimiento de varios proyectos de inicio](set-startup-projects.md)
+## [Uso de Establecimiento de varios proyectos de inicio](set-startup-projects.md)
 ## [Personalizar el sistema de compilación](customizing-build-system.md)
-## Configuraciones
+## Configurations
 ### [Descripción de las configuraciones de compilación](configurations.md)
 ### [Crear y editar configuraciones](create-and-edit-configurations.md)
 
@@ -95,7 +95,7 @@
 
 # [Accesibilidad](accessibility.md)
 
-# Solución de problemas
+# solución de problemas
 ## [Registros y excepciones](troubleshooting.md)
 ## [Programa para la mejora de la experiencia del usuario de Visual Studio](visual-studio-experience-improvement-program.md)
 ## [Notificar un problema](report-a-problem.md)
@@ -104,3 +104,11 @@
 
 # [Notas de la versión](https://docs.microsoft.com/visualstudio/releasenotes/vs2019-mac-relnotes)
 # [Notas de la versión preliminar](https://docs.microsoft.com/visualstudio/releasenotes/vs2019-mac-preview-relnotes)
+# Ejemplos
+## [Ejemplos destacados](samples.yml)
+## [Todos los ejemplos de ASP.NET Core](https://docs.microsoft.com/samples/browse/?products=aspnet-core)
+## [Todos los ejemplos de .NET Core](https://docs.microsoft.com/samples/browse/?products=dotnet-core)
+## [Todos los ejemplos de Xamarin.Forms](https://docs.microsoft.com/xamarin/xamarin-forms/samples/)
+## [Todos los ejemplos de Xamarin.iOS](https://docs.microsoft.com/xamarin/ios/samples/)
+## [Todos los ejemplos de Xamarin.Android](https://docs.microsoft.com/xamarin/android/samples/)
+## [Todos los ejemplos de Xamarin.Mac](https://docs.microsoft.com/xamarin/mac/samples/)

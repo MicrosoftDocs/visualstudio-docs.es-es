@@ -3,24 +3,22 @@ title: Ventaja de CAST Highlight en las suscripciones de Visual Studio | Microso
 author: evanwindom
 ms.author: lank
 manager: lank
-ms.date: 12/19/2018
+ms.date: 07/30/2019
 ms.topic: conceptual
 description: Obtenga información sobre la ventaja de CAST Highlight disponible en las suscripciones de Visual Studio.
-ms.openlocfilehash: c990682fa107364c181403863d3dbefc5a1f3891
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 50d892c5da4d39ebd2b379a2b16b8c9ca69d061d
+ms.sourcegitcommit: 5694c5236fa32ba7f5bc1236a853f725ec7557e9
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67823684"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "68681204"
 ---
 # <a name="the-cast-highlight-benefit-in-visual-studio-subscriptions"></a>Ventaja de CAST Highlight para suscripciones de Visual Studio
-
 Los desarrolladores necesitan información clave sobre su software al realizar la migración a la nube. Con CAST Highlight, los suscriptores de Visual Studio Enterprise pueden examinar rápidamente su código fuente de aplicación para identificar la preparación de la nube de sus aplicaciones para la migración a Azure y supervisar el progreso de su aplicación tanto durante una migración como después.
 
 Los suscriptores de Visual Studio Enterprise pueden obtener una suscripción gratuita de un mes con todas las características de CAST Highlight para hasta cinco aplicaciones por suscriptor.
 
 ## <a name="activation-steps"></a>Pasos para la activación
-
 1. Inicie sesión en [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs).
 
 2. Busque el icono de la ventaja de CAST Highlight en la categoría "Herramientas" y haga clic en **Obtener código**.
@@ -39,9 +37,6 @@ Los suscriptores de Visual Studio Enterprise pueden obtener una suscripción gra
    > Las activaciones de la ventaja de CAST Highlight se limitan a diez por organización.  Si ya se han consumido las diez activaciones de su organización, no podrá activar la ventaja de CAST Highlight y recibirá un correo electrónico con información más detallada.
 
 0. Después de enviar su información, verá una página de confirmación de la recepción de su solicitud.
-
-    > [!div class="mx-imgBorder"]
-    > ![Página de agradecimiento de CAST Highlight](_img/vs-cast-highlight/vs-cast-highlight-thankyou.png)
 
 0. El equipo de CAST evaluará su solicitud y se comunicará con usted para finalizar la creación de su cuenta.
 
@@ -78,7 +73,6 @@ Tras la aprobación de su solicitud, recibirá un segundo correo electrónico en
    > Asegúrese de hacer clic en el vínculo de activación en el correo electrónico que recibirá.  De lo contrario, no podrá acceder a su suscripción de CAST Highlight. Si no ve el correo electrónico en la bandeja de entrada, recuerde comprobar las carpetas de correo no deseado.
 
 ## <a name="eligibility"></a>Elegibilidad
-
 | Nivel de suscripción                                                 |     Canales                                            | Prestación                                                          | ¿Renovable?    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
 | Visual Studio Enterprise (estándar)   | Licencia por volumen, Azure, venta directa | Evaluación de 5 aplicaciones durante 30 días|  No.  Disponible solo para nuevos suscriptores          |
@@ -104,7 +98,6 @@ Tras la aprobación de su solicitud, recibirá un segundo correo electrónico en
 - ¿Tiene alguna pregunta sobre el IDE de Visual Studio, Azure DevOps Services u otros productos o servicios de Visual Studio?  Visite el [soporte técnico de Visual Studio](https://visualstudio.microsoft.com/support/).
 
 ## <a name="next-steps"></a>Pasos siguientes
-
 Si todavía no ha activado la ventaja de Azure incluida en la suscripción, visite [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs) y haga clic en el icono de Azure de la categoría Herramientas para configurar la suscripción de Azure y canjear los créditos de Azure.
 
 Y no olvide consultar la demostración, el manual del usuario y los vídeos del tutorial que se mencionan en el correo electrónico de Greg.

@@ -23,12 +23,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: aca4869126a6756c15b2eb2c2be61613b1a58e74
-ms.sourcegitcommit: 91c7f1b525e0c22d938bc4080ba4ceac2483474f
+ms.openlocfilehash: f494674acdf8b272029ad02a762897b379212ae4
+ms.sourcegitcommit: 9cfd3ef6c65f671a26322320818212a1ed5955fe
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/12/2019
-ms.locfileid: "67032557"
+ms.lasthandoff: 07/26/2019
+ms.locfileid: "68533352"
 ---
 # <a name="first-look-at-deployment-in-visual-studio"></a>Primer vistazo a la implementación en Visual Studio
 
@@ -46,7 +46,7 @@ La implementación en una carpeta local se suele usar para las pruebas, o para i
 
 - **Escritorio de Windows**: puede publicar una aplicación de escritorio de Windows en una carpeta mediante la implementación de ClickOnce. A continuación, los usuarios podrán instalar la aplicación con un solo clic. Para más información, vea [Implementación de una aplicación de escritorio con ClickOnce](how-to-publish-a-clickonce-application-using-the-publish-wizard.md) (C# y Visual Basic). Para C++ y CLR, vea [Implementación de ClickOnce para aplicaciones de Visual C++](/cpp/windows/clickonce-deployment-for-visual-cpp-applications), o bien, para C y C ++, vea [Implementación de una aplicación de Visual C++ mediante un proyecto de instalación](/cpp/windows/walkthrough-deploying-a-visual-cpp-application-by-using-a-setup-project).
 
-## <a name="publish-to-azure"></a>Publicar en Azure
+## <a name="publish-to-azure"></a>Publicación en Azure
 
 - **ASP.NET**, **ASP.NET Core**, **Python** y **Node.js**: Publique en Azure App Service o Azure App Service para Linux (con contenedores) mediante uno de los métodos siguientes.
 
@@ -105,7 +105,11 @@ Si va a implementar una aplicación de UWP para probar en un dispositivo, vea [R
 
 Si necesita una instalación más compleja de una aplicación de escritorio de lo que [ClickOnce](how-to-publish-a-clickonce-application-using-the-publish-wizard.md) puede proporcionar, puede crear un paquete de Windows Installer (un archivo de instalación MSI o EXE), o bien un programa previo personalizado.
 
-- Se puede crear un paquete de instalador basado en MSI mediante la [extensión WiX Toolset Visual Studio 2017](https://marketplace.visualstudio.com/items?itemName=RobMensching.WixToolsetVisualStudio2017Extension). Se trata de un conjunto de herramientas de línea de comandos.
+- Se puede crear un paquete de instalador basado en MSI mediante la [extensión WiX Toolset](https://marketplace.visualstudio.com/items?itemName=WixToolset.WiXToolset). Se trata de un conjunto de herramientas de línea de comandos.
+
+   ::: moniker range=">=vs-2019"
+   En Visual Studio 2019, obtenga la [extensión WiX Toolset de Visual Studio 2019](https://marketplace.visualstudio.com/items?itemName=WixToolset.WixToolsetVisualStudio2019Extension).
+   ::: moniker-end
 
 - Se puede crear un paquete de instalador EXE o MSI mediante [InstallShield](https://www.flexerasoftware.com/producer/products/software-installation/installshield-software-installer/tab/requirements) de Flexera Software. InstallShield se puede usar con Visual Studio 2017 y versiones posteriores (no se admite Community Edition). Tenga en cuenta que InstallShield Limited Edition ya no se incluye con Visual Studio y no se admite en Visual Studio 2017 y versiones posteriores; póngase en contacto con [Flexera Software](http://learn.flexerasoftware.com/content/IS-EVAL-InstallShield-Limited-Edition-Visual-Studio) para consultar sobre su disponibilidad futura.
 
@@ -133,7 +137,7 @@ Puede usar Azure Pipelines para habilitar la implementación continua de la apli
 
 ## <a name="deployment-for-other-app-types"></a>Implementación de otros tipos de aplicaciones
 
-| Tipo de aplicación | Escenario de implementación | Link |
+| Tipo de aplicación | Escenario de implementación | Vínculo |
 | --- | --- | --- |
 | **Aplicación de Office** | Puede publicar un complemento de Office desde Visual Studio. | [Implementar y publicar un complemento de Office](https://dev.office.com/docs/add-ins/publish/publish) |
 | **Servicio OData o WCF** | Otras aplicaciones pueden usar los servicios RIA de WCF que se implementen en un servidor web. | [Desarrollo e implementación de WCF Data Services](/dotnet/framework/data/wcf/developing-and-deploying-wcf-data-services) |

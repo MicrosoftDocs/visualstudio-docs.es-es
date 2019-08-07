@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c51042ee5a154c09245a28645cf2e432ff6e694c
-ms.sourcegitcommit: 51dad3e11d7580567673e0d426ab3b0a17584319
+ms.openlocfilehash: c4d129d823c662a96a2186ea24989922d4af7442
+ms.sourcegitcommit: 044bb54cb4552c8f4651feb11d62e52726117e75
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/10/2019
-ms.locfileid: "66820755"
+ms.lasthandoff: 07/30/2019
+ms.locfileid: "68661964"
 ---
 # <a name="unit-test-basics"></a>Conceptos básicos de las pruebas unitarias
 
@@ -232,14 +232,24 @@ La barra de herramientas del **Explorador de pruebas** le ayuda a detectar, orga
 
 Se puede elegir **Ejecutar todas** para ejecutar todas las pruebas o bien **Ejecutar** para elegir un subconjunto de pruebas que se desea ejecutar. Después de ejecutar un conjunto de pruebas, aparecerá un resumen de la serie de pruebas en la parte inferior de la ventana **Explorador de pruebas**. Seleccione una prueba para ver los detalles de esa prueba en el panel inferior. Seleccione **Abrir prueba** en el menú contextual (teclado: **F12**) para mostrar el código fuente de la prueba seleccionada.
 
+::: moniker range="vs-2017"
+
 Si las pruebas individuales no tienen ninguna dependencia que impida que se ejecuten en cualquier orden, active la ejecución de pruebas paralelas con el botón de alternancia ![UTE&#95;parallelicon&#45;small](../test/media/ute_parallelicon-small.png) en la barra de herramientas. Esto puede reducir considerablemente el tiempo necesario para ejecutar todas las pruebas.
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+Si las pruebas individuales no tienen ninguna dependencia que impida que se ejecuten en cualquier orden, active la ejecución de pruebas paralelas en el menú de configuración de la barra de herramientas. Esto puede reducir considerablemente el tiempo necesario para ejecutar todas las pruebas.
+
+::: moniker-end
 
 ### <a name="run-tests-after-every-build"></a>Ejecutar pruebas después de cada compilación
 
 > [!WARNING]
 > La ejecución de pruebas unitarias después de cada compilación solo se admite en Visual Studio Enterprise.
 
-|Botón|Descripción|
+|Botón|DESCRIPCIÓN|
 |-|-|
 |![Ejecutar después de compilar](../test/media/ute_runafterbuild_btn.png)|Para ejecutar pruebas unitarias después de cada compilación local, elija **Prueba** en el menú estándar o **Ejecutar pruebas después de compilar** en la barra de herramientas del **Explorador de pruebas**.|
 
@@ -249,7 +259,7 @@ Si tiene un gran número de pruebas, puede escribir en el cuadro de búsqueda de
 
 ![Categorías de filtro de búsqueda](../test/media/ute_searchfilter.png)
 
-|Botón|Descripción|
+|Botón|DESCRIPCIÓN|
 |-|-|
 |![Botón de grupo Explorador de pruebas](../test/media/ute_groupby_btn.png)|Para agrupar las pruebas por categoría, elija el botón **Agrupar por** .|
 

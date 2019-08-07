@@ -1,5 +1,5 @@
 ---
-title: Procedimiento Escribir pruebas unitarias para archivos DLL de C++
+title: 'Procedimientos para: Escribir pruebas unitarias para archivos DLL de C++'
 ms.date: 06/13/2019
 ms.topic: conceptual
 ms.author: mblome
@@ -7,16 +7,16 @@ manager: markl
 ms.workload:
 - cplusplus
 author: mikeblome
-ms.openlocfilehash: 38d792ad9264c007dab296b65aa330dfa142769e
-ms.sourcegitcommit: ab06cde69d862440b4277bcd9bf02e7b50593a1b
+ms.openlocfilehash: 1e9e77cd3b6cd02810873127bf9173eac80d7e74
+ms.sourcegitcommit: 044bb54cb4552c8f4651feb11d62e52726117e75
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "67132150"
+ms.lasthandoff: 07/30/2019
+ms.locfileid: "68661909"
 ---
-# <a name="how-to-write-unit-tests-for-c-dlls"></a>Procedimiento Escribir pruebas unitarias para archivos DLL de C++
+# <a name="how-to-write-unit-tests-for-c-dlls"></a>Procedimientos para: Escribir pruebas unitarias para archivos DLL de C++
 
-En este tutorial se describe cómo desarrollar una DLL de C++ nativa creando antes una prueba. Estos son los pasos básicos:
+En este tutorial se describe cómo desarrollar una DLL de C++ nativa creando antes una prueba. Los pasos básicos son los siguientes:
 
 1. [Crear un proyecto de prueba nativo](#create_test_project). El proyecto de prueba está en la misma solución que el proyecto de DLL.
 
@@ -49,7 +49,7 @@ En este tutorial se describe cómo desarrollar una DLL de C++ nativa creando ant
 
      ![Proyecto de prueba con TEST&#95;CLASS y TEST&#95;METHOD](../test/media/utecpp2.png)
 
-     Tenga en cuenta que:
+     Tenga en lo siguiente:
 
     - Cada prueba se define mediante `TEST_METHOD(YourTestName){...}`.
 
@@ -88,7 +88,7 @@ En este tutorial se describe cómo desarrollar una DLL de C++ nativa creando ant
 
 En los pasos que hay a continuación se muestra cómo crear un proyecto de DLL en Visual Studio 2019.
 
-1. Cree un proyecto de C++ con el **Asistente para escritorio de Windows**: Haga clic con el botón derecho en la solución en el **Explorador de soluciones** y elija **Agregar** > **Nuevo proyecto**. Establezca el valor de **Lenguaje** en C++ y escriba "windows" en el cuadro de búsqueda. Elija **Asistente para escritorio de Windows** en la lista de resultados. 
+1. Cree un proyecto de C++ con el **Asistente para escritorio de Windows**: Haga clic con el botón derecho en la solución en el **Explorador de soluciones** y elija **Agregar** > **Nuevo proyecto**. Establezca el valor de **Lenguaje** en C++ y escriba "windows" en el cuadro de búsqueda. Elija **Asistente para escritorio de Windows** en la lista de resultados.
 
      En este tutorial, el proyecto se llama `RootFinder`.
 
@@ -321,10 +321,21 @@ En los pasos que hay a continuación se muestra cómo crear un proyecto de DLL e
 
 6. Ahora, todas las pruebas pasan.
 
-     ![Todas las pruebas se realizan correctamente](../test/media/ute_ult_alltestspass.png)
+   ![Todas las pruebas se realizan correctamente](../test/media/ute_ult_alltestspass.png)
+
+::: moniker range="vs-2017"
 
 > [!TIP]
 > Si las pruebas individuales no tienen ninguna dependencia que impida que se ejecuten en cualquier orden, active la ejecución de pruebas paralelas con el botón de alternancia ![UTE&#95;parallelicon&#45;small](../test/media/ute_parallelicon-small.png) en la barra de herramientas. Esto puede reducir considerablemente el tiempo necesario para ejecutar todas las pruebas.
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+> [!TIP]
+> Si las pruebas individuales no tienen ninguna dependencia que impida que se ejecuten en cualquier orden, active la ejecución de pruebas paralelas en el menú de configuración de la barra de herramientas. Esto puede reducir considerablemente el tiempo necesario para ejecutar todas las pruebas.
+
+::: moniker-end
 
 ## <a name="refactor"></a> Refactorizar el código sin cambiar las pruebas
 
@@ -353,7 +364,7 @@ En los pasos que hay a continuación se muestra cómo crear un proyecto de DLL e
 
 - **Pruebas de protección.** Puede exigir que se realicen algunas pruebas antes de que cualquier miembro del equipo proteja código en el control de código fuente. Normalmente, se trata de un subconjunto de las pruebas de comprobación.
 
-     También puede asignar un nivel mínimo de cobertura de código.
+   También puede asignar un nivel mínimo de cobertura de código.
 
 ## <a name="see-also"></a>Vea también
 

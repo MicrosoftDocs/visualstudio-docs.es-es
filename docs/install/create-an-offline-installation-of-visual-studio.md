@@ -1,7 +1,7 @@
 ---
 title: Creación de una instalación sin conexión
 description: Obtenga información sobre cómo instalar Visual Studio sin conexión cuando la conexión a internet no sea de confianza o disponga de poco ancho de banda.
-ms.date: 04/16/2019
+ms.date: 07/24/2019
 ms.custom: seodec18
 ms.topic: conceptual
 f1_keywords:
@@ -16,12 +16,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: aa728615f74d8422b1e0c7a9cdd531281bc18e32
-ms.sourcegitcommit: 01c3c9dcade5d913bde2c7efa8c931a7b04e6cd0
+ms.openlocfilehash: 616c27f16b4fca9be6f8dab3cdf70fafae52f193
+ms.sourcegitcommit: 0f5f7955076238742f2071d286ad8e896f3a6cad
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2019
-ms.locfileid: "67365241"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "68483506"
 ---
 # <a name="create-an-offline-installation-of-visual-studio"></a>Crear una instalación sin conexión de Visual Studio
 
@@ -133,8 +133,19 @@ Abra un símbolo del sistema y use uno de los comandos de los ejemplos siguiente
     vs_community.exe --layout c:\vslayout --lang en-US
     ```
 
-  > [!NOTE]
-  > Un diseño completo de Visual Studio requiere como mínimo 35 GB de espacio en disco. Vea [Usar parámetros de la línea de comandos para instalar Visual Studio](use-command-line-parameters-to-install-visual-studio.md) para más información sobre cómo crear un diseño solo con los componentes que quiere instalar.
+::: moniker range="vs-2017"
+
+   > [!NOTE]
+   > Un diseño completo de Visual Studio requiere como mínimo 35 GB de espacio en disco. Para más información, consulte [Requisitos del sistema](/visualstudio/productinfo/vs2017-system-requirements-vs/). Y para más información sobre cómo crear un diseño solo con los componentes que quiere instalar, consulte [Usar parámetros de la línea de comandos para instalar Visual Studio](use-command-line-parameters-to-install-visual-studio.md).
+
+::: moniker-end
+
+::: moniker range="vs-2019"
+
+   > [!NOTE]
+   > Un diseño completo de Visual Studio requiere como mínimo 35 GB de espacio en disco. Para más información, consulte [Requisitos del sistema](/visualstudio/releases/2019/system-requirements/). Y para más información sobre cómo crear un diseño solo con los componentes que quiere instalar, consulte [Usar parámetros de la línea de comandos para instalar Visual Studio](use-command-line-parameters-to-install-visual-studio.md).
+
+::: moniker-end
 
 Si quiere instalar un idioma distinto del inglés, cambie `en-US` a una configuración regional de la [lista de configuraciones regionales de idioma](#list-of-language-locales). Después, use la [lista de los componentes y cargas de trabajo disponibles](workload-and-component-ids.md) para personalizar aún más la memoria caché de instalación.
 

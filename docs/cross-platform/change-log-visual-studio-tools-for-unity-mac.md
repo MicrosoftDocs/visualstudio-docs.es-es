@@ -10,16 +10,110 @@ ms.author: johmil
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: e5bc02948d410d465d7ac1be798ff17ebc5daaf9
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: ff2bcce9e041ff28393020c48563fe345c4fa076
+ms.sourcegitcommit: 044bb54cb4552c8f4651feb11d62e52726117e75
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67821512"
+ms.lasthandoff: 07/30/2019
+ms.locfileid: "68661819"
 ---
 # <a name="change-log-visual-studio-tools-for-unity-mac"></a>Registro de cambios (Visual Studio Tools para Unity, Mac)
 
 Registro de cambios de Visual Studio Tools para Unity.
+
+## <a name="2200"></a>2.2.0.0
+
+Publicado el 25 de julio de 2019
+
+### <a name="bug-fixes"></a>Corrección de errores
+
+- **Evaluación:**
+
+  - Se ha corregido la inspección con los tipos IntPtr.
+
+- **Depurador:**
+
+  - Se ha corregido el control de puntos de captura y puntos de interrupción de función.
+
+## <a name="2130"></a>2.1.3.0
+
+Publicado el 9 de julio de 2019
+
+### <a name="new-features"></a>Características nuevas
+
+- **Depurador:**
+
+  - Se ha agregado compatibilidad con la captura de subclases de excepciones.
+
+  - Se ha agregado compatibilidad con el protocolo MDS 2.51.
+
+- **Integración:**
+
+  - Se ha agregado compatibilidad con archivos asmdef.
+
+  - Cambio al modo de cambio de nombre cuando se agrega un archivo desde una plantilla (para imitar el comportamiento del editor de Unity).
+
+### <a name="bug-fixes"></a>Corrección de errores
+
+- **Integración:**
+
+  - Se ha corregido el control de los mensajes con formato incorrecto al comunicarse con reproductores de Unity.
+
+- **Evaluación:**
+
+  - Se ha corregido el control de los espacios de nombres en las expresiones.
+
+## <a name="2120"></a>2.1.2.0
+
+Publicado el 2 de julio de 2019
+
+### <a name="bug-fixes"></a>Corrección de errores
+
+- **Evaluación:**
+
+  - Se ha corregido la generación de informes de errores con expresiones no analizables.
+
+## <a name="2110"></a>2.1.1.0
+
+Publicado el 27 de junio de 2019
+
+### <a name="new-features"></a>Características nuevas
+
+- **Integración:**
+
+  - Se ha actualizado la API MonoBehaviour a 2019.1.
+
+### <a name="bug-fixes"></a>Corrección de errores
+
+- **Integración:**
+
+  - Se ha corregido el rendimiento del explorador de proyectos de Unity.
+
+  - Se ha corregido la notificación de advertencias y errores que se genera cuando está habilitada la compilación ligera.
+
+  - Se ha corregido el rendimiento de la compilación ligera.
+
+## <a name="2100"></a>2.1.0.0
+
+Publicado el 20 de junio de 2019
+
+### <a name="new-features"></a>Características nuevas
+
+- **Integración:**
+
+  - Se ha deshabilitado la compilación completa para los proyectos de Unity, en favor del uso de los errores y advertencias de IntelliSense. De hecho, Unity crea una solución de Visual Studio con proyectos de biblioteca de clases que representan lo que Unity hace internamente. Dicho esto, el resultado de la compilación en Visual Studio nunca se utiliza o selecciona por Unity, ya que su canal de compilación está cerrado. La compilación en Visual Studio solo está consumiendo recursos para nada. Si necesita una compilación completa porque tiene herramientas o una configuración que dependen de ella, puede deshabilitar esta optimización (Herramientas/Opciones/Tools para Unity/Deshabilitar la compilación completa de proyectos).
+  
+  - Se ha agregado compatibilidad para paquetes de Unity en el Explorador de proyectos de Unity. Solo son visibles los paquetes a los que se hace referencia (mediante manifest.json en la carpeta Packages) y los paquetes locales (insertados en la carpeta Packages).
+
+## <a name="2021"></a>2.0.2.1
+
+Publicado el 30 de mayo de 2019
+
+### <a name="new-features"></a>Características nuevas
+
+- **Integración:**
+
+  - Se ha agregado un icono personalizado para los destinos de ejecución de Unity.
 
 ## <a name="2020"></a>2.0.2.0
 
@@ -35,16 +129,17 @@ Publicada el 2 de abril de 2019
 
   - Se ha agregado un menú contextual para el nuevo editor.
 
-### <a name="bug-fixes"></a>Correcciones de errores
+### <a name="bug-fixes"></a>Corrección de errores
 
 - **Depurador:**
 
   - Se han corregido el filtrado de ensamblados y la inspección de marcos con marcos vacíos.
 
 ## <a name="2011"></a>2.0.1.1
+ 
  Publicada el 26 de marzo de 2019
 
-### <a name="bug-fixes"></a>Correcciones de errores
+### <a name="bug-fixes"></a>Corrección de errores
 
 - **Integración:**
 
@@ -80,13 +175,14 @@ Publicada el 5 de marzo de 2019
 
   - Se actualizado la API ScriptableObject.
 
-### <a name="bug-fixes"></a>Correcciones de errores
+### <a name="bug-fixes"></a>Corrección de errores
 
 - **Integración:**
 
   - Se han quitado los espacios de nombres de las plantillas.
 
 ## <a name="2003"></a>2.0.0.3
+ 
  Publicada el 5 de marzo de 2019
 
 ### <a name="new-features"></a>Características nuevas
@@ -103,7 +199,7 @@ Publicada el 5 de marzo de 2019
 
   - Se ha agregado compatibilidad con las funciones locales.
 
-### <a name="bug-fixes"></a>Correcciones de errores
+### <a name="bug-fixes"></a>Corrección de errores
 
 - **Depurador:**
 
@@ -119,7 +215,7 @@ Publicada el 4 de febrero de 2019
 
   - Se ha actualizado la API MonoBehaviour.
 
-### <a name="bug-fixes"></a>Correcciones de errores
+### <a name="bug-fixes"></a>Corrección de errores
 
 - **Depurador:**
 
@@ -129,7 +225,7 @@ Publicada el 4 de febrero de 2019
 
 Publicada el 4 de diciembre de 2018
 
-### <a name="bug-fixes"></a>Correcciones de errores
+### <a name="bug-fixes"></a>Corrección de errores
 
 - **Integración:**
 
@@ -154,7 +250,7 @@ Publicada el 4 de diciembre de 2018
 
   - Se ha agregado compatibilidad con las pseudovariables (identificadores de excepción y objetos).
 
-### <a name="bug-fixes"></a>Correcciones de errores
+### <a name="bug-fixes"></a>Corrección de errores
 
 - **Depurador:**
 
@@ -170,7 +266,7 @@ Publicado el 13 de noviembre de 2018
 
   - Se ha agregado más información del cliente (IP, nombre del equipo) en el cuadro de diálogo Adjuntar.
 
-### <a name="bug-fixes"></a>Correcciones de errores
+### <a name="bug-fixes"></a>Corrección de errores
 
 - **Depurador:**
 
@@ -186,7 +282,7 @@ Publicado el 13 de noviembre de 2018
 
 Publicado el 24 de julio de 2018
 
-### <a name="bug-fixes"></a>Correcciones de errores
+### <a name="bug-fixes"></a>Corrección de errores
 
 - **Integración:**
 
@@ -196,7 +292,7 @@ Publicado el 24 de julio de 2018
 
 Publicado el 10 de julio de 2018
 
-### <a name="bug-fixes"></a>Correcciones de errores
+### <a name="bug-fixes"></a>Corrección de errores
 
 - **Integración:**
 
@@ -206,7 +302,7 @@ Publicado el 10 de julio de 2018
 
 Publicado el 26 de junio de 2018
 
-### <a name="bug-fixes"></a>Correcciones de errores
+### <a name="bug-fixes"></a>Corrección de errores
 
 - **Asistentes:**
 
@@ -268,7 +364,7 @@ Publicado el 5 de marzo de 2018
 
 Publicado el 24 de enero de 2018
 
-### <a name="bug-fixes"></a>Correcciones de errores
+### <a name="bug-fixes"></a>Corrección de errores
 
 - **Generación de proyectos:**
 
@@ -284,7 +380,7 @@ Publicado el 24 de enero de 2018
 
 Publicado el 23 de enero de 2018
 
-### <a name="bug-fixes"></a>Correcciones de errores
+### <a name="bug-fixes"></a>Corrección de errores
 
 - **Integración:**
 
@@ -300,7 +396,7 @@ Publicado el 13 de diciembre de 2017
 
   - Se ha agregado compatibilidad con .NET Standard.
 
-### <a name="bug-fixes"></a>Correcciones de errores
+### <a name="bug-fixes"></a>Corrección de errores
 
 - **Integración:**
 
@@ -310,7 +406,7 @@ Publicado el 13 de diciembre de 2017
 
 Publicado el 12 de diciembre de 2017
 
-### <a name="bug-fixes"></a>Correcciones de errores
+### <a name="bug-fixes"></a>Corrección de errores
 
 - **Integración:**
 
@@ -342,7 +438,7 @@ Publicado el 23 de octubre de 2017
 
   - Se ha agregado compatibilidad con archivos de símbolo de depuración portátiles.
 
-### <a name="bug-fixes"></a>Correcciones de errores
+### <a name="bug-fixes"></a>Corrección de errores
 
 - **Generación de proyectos:**
 
@@ -402,7 +498,7 @@ Publicado el 12 de julio de 2017
 
   - Se corrigieron las definiciones con niveles de API.
 
-### <a name="bug-fixes"></a>Correcciones de errores
+### <a name="bug-fixes"></a>Corrección de errores
 
 - **Integración:**
 
@@ -412,7 +508,7 @@ Publicado el 12 de julio de 2017
 
 Publicado el 4 de mayo de 2017
 
-### <a name="bug-fixes"></a>Correcciones de errores
+### <a name="bug-fixes"></a>Corrección de errores
 
 - **Integración:**
 
