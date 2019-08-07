@@ -194,8 +194,6 @@
                   href: ide/managing-references-in-a-project.md
                 - name: Agregar o quitar referencias con el Administrador de referencias
                   href: ide/how-to-add-or-remove-references-by-using-the-reference-manager.md
-                - name: Agregar referencias con NuGet en lugar de un SDK de extensión
-                  href: ide/adding-references-using-nuget-versus-an-extension-sdk.md
                 - name: Agregar o quitar espacios de nombres importados (Visual Basic)
                   href: ide/how-to-add-or-remove-imported-namespaces-visual-basic.md
                 - name: Solucionar problemas de referencias rotas
