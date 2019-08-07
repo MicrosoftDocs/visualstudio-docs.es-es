@@ -1,6 +1,7 @@
 ---
 title: Solución de problemas y creación de registros para MSBuild
 ms.date: 06/27/2019
+ms.technology: vs-ide-compile
 ms.topic: conceptual
 helpviewer_keywords:
 - msbuild logs"
@@ -14,12 +15,12 @@ dev_langs:
 ms.workload:
 - multiple
 ms.description: Generate build logs for msbuild projects to collect helpful information when troubleshooting issues.
-ms.openlocfilehash: c3db56ac7ea60ce88beae6698c974ac91373ed00
-ms.sourcegitcommit: 6f7a740750b2cd17ea2275c3d046caebc9782917
+ms.openlocfilehash: 8e302814571a5f7f37cfe02b2750f57dacb54c25
+ms.sourcegitcommit: 85d66dc9fea3fa49018263064876b15aeb6f9584
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "67518201"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68461479"
 ---
 # <a name="troubleshoot-and-create-logs-for-msbuild-problems"></a>Solución de problemas y creación de registros para MSBuild
 
@@ -68,7 +69,7 @@ El valor de "MyMetadata" para el elemento "MyFile.txt" se evaluará en "B" duran
 
 ## <a name="incremental-build-is-building-more-than-it-should"></a>La compilación incremental está compilando más de lo que debería
 
-Si MSBuild está volviendo a compilar innecesariamente un proyecto o un elemento de proyecto, cree un registro de compilación detallado o binario. Puede buscar en el registro el archivo que se ha creado o compilado innecesariamente. La salida tendrá un aspecto similar a este:
+Si MSBuild está volviendo a compilar innecesariamente un proyecto o un elemento de proyecto, cree un registro de compilación detallado o binario. Puede buscar en el registro el archivo que se creó o compiló innecesariamente. El resultado es parecido a este:
 
 ```output
   Task "CL"
@@ -117,10 +118,10 @@ Se creará un archivo Msbuild.binlog en el directorio desde el que ejecutó MSBu
 
 1. En el menú principal de Visual Studio, vaya a **Herramientas** > **Opciones** > **Proyectos y soluciones** >**Compilar y ejecutar**.
 1. Establezca el **nivel de detalle de la compilación del proyecto de Msbuild** en **Detallado** en los dos cuadros combinados. El primero controla el nivel de detalle de la compilación en la **Ventana de salida** y el segundo controla el nivel de detalle de la compilación en el archivo \<nombreproyecto\>.log que se crea en el directorio intermedio de cada proyecto durante la compilación.
-1. Desde un símbolo del sistema para desarrolladores de Visual Studio, escriba uno de estos comandos, sustituyendo sus valores reales de ruta de acceso y configuración:
+2. Desde un símbolo del sistema para desarrolladores de Visual Studio, escriba uno de estos comandos, sustituyendo sus valores reales de ruta de acceso y configuración:
 
     ```cmd
-    Msbuild /p:Configuration="MyConfiguration";Platform="x86" /fl MySolution.sln 
+    Msbuild /p:Configuration="MyConfiguration";Platform="x86" /fl MySolution.sln
     ```
 
     o

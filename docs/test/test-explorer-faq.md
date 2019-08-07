@@ -14,14 +14,25 @@ ms.workload:
 - multiple
 author: kendrahavens
 manager: jillfra
-ms.openlocfilehash: 2efecd936dea0d764058b795457e89cdc700d902
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 0dda73a4bbea2813131cc0695655eed7ea3409ca
+ms.sourcegitcommit: 044bb54cb4552c8f4651feb11d62e52726117e75
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62429513"
+ms.lasthandoff: 07/30/2019
+ms.locfileid: "68662002"
 ---
 # <a name="visual-studio-test-explorer-faq"></a>Preguntas frecuentes del Explorador de pruebas de Visual Studio
+
+::: moniker range=">=vs-2019"
+## <a name="where-is-group-by-traits-in-visual-studio-2019"></a>¿Dónde se agrupa por rasgos en Visual Studio 2019?
+Esta agrupación de rasgos se ha movido a una columna. Con la jerarquía de varios niveles y personalizable de la versión 16.2 de Visual Studio 2019, pensamos que incluir rasgos como una agrupación creaba una complejidad visual innecesaria. Queremos conocer su opinión sobre este diseño. https://developercommunity.visualstudio.com/content/problem/588029/no-longer-able-to-group-by-trait-in-test-explorer.html
+
+Por ahora, puede hacer clic con el botón derecho en la columna en el Explorador de pruebas y seleccionar Columnas. Marque la columna Rasgos y aparecerá en el Explorador de pruebas. Ahora puede filtrar esta columna por los rasgos que le interesen.
+
+![Mostrar la columna Rasgos](media/vs-2019/trait-column.png)
+![Filtrar la columna Rasgos](media/vs-2019/trait-column-filter.png)
+
+::: moniker-end
 
 ## <a name="dynamic-test-discovery"></a>Detección de pruebas dinámicas
 
@@ -122,7 +133,7 @@ Los proyectos de prueba recientes de UWP especifican una propiedad de compilaci�
 
 **System.AggregateException: Se produjeron uno o varios errores. ---> System.InvalidOperationException: No se encontró el siguiente TestContainer {} en Microsoft.VisualStudio.TestWindow.Controller.TestContainerProvider \<GetTestContainerAsync>d__61.MoveNext()** .
 
-Para corregir este error:
+Para solucionar este error:
 
 - Actualice la propiedad de compilación del proyecto de prueba con el siguiente código:
 

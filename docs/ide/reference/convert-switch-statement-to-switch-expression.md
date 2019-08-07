@@ -9,12 +9,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: ecb7750301101a2607c17e68b5e919623a03caba
-ms.sourcegitcommit: 7eb2fb21805d92f085126f3a820ac274f2216b4e
+ms.openlocfilehash: cc13cffe8352d9fb57f5bb991c3af615eddb2a14
+ms.sourcegitcommit: b56dc6fadc6c924beed36bb4c2ccc16cf6bcfa1c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/22/2019
-ms.locfileid: "67329058"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "68740050"
 ---
 # <a name="convert-switch-statement-to-switch-expression"></a>Conversión de una instrucción switch en una expresión switch
 
@@ -30,7 +30,7 @@ Esta refactorización se aplica a lo siguiente:
 
 ## <a name="how-to"></a>Procedimiento
 
-1. En el archivo de proyecto, [establezca la versión de idioma en la versión preliminar](/dotnet/csharp/language-reference/configure-language-version#set-the-language-version-in-visual-studio) puesto que las expresiones `switch` son una nueva característica de C# 8.0.
+1. En el archivo de proyecto, [establezca la versión de idioma en la versión preliminar](/dotnet/csharp/language-reference/configure-language-version#edit-the-project-file) puesto que las expresiones `switch` son una nueva característica de C# 8.0.
 2. Coloque el cursor en la palabra clave `switch` y presione **Ctrl**+ **.** para activar el menú **Acciones rápidas y refactorizaciones**.
 3. Seleccione **Convert switch statement to expression** (Convertir una instrucción switch en una expresión).
 

@@ -2,7 +2,7 @@
 title: Novedades de Visual Studio 2019
 titleSuffix: ''
 description: Obtenga más información sobre las nuevas características de Visual Studio 2019.
-ms.date: 06/29/2019
+ms.date: 07/23/2019
 helpviewer_keywords:
 - Visual Studio, what's new
 - what's new [Visual Studio]
@@ -15,16 +15,16 @@ ms.technology: vs-ide-general
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: 6b5387fa61686d85e02c200a0a50cffa9e5aa155
-ms.sourcegitcommit: c7b9ab1bc19d74b635c19b1937e92c590dafd736
+ms.openlocfilehash: dd4ae23899871644f61f3bb903fc2c4ad7880b53
+ms.sourcegitcommit: 9fc8b144d4ed1c46aba87c0b7e1d24454e0eea9d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/03/2019
-ms.locfileid: "67552876"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "68493329"
 ---
 # <a name="whats-new-in-visual-studio-2019"></a>Novedades de Visual Studio 2019
 
-**Actualizado para la [versión 16.1](/visualstudio/releases/2019/release-notes/)**
+**Actualizado para la [versión 16.2](/visualstudio/releases/2019/release-notes/)**
 
 >[!div class="button"]
 >[Descargar Visual Studio 2019](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2019)
@@ -39,7 +39,7 @@ Este es un resumen de alto nivel de todas las novedades:
 
 Si quiere ver una lista completa de todas las novedades de esta versión, consulte las [notas de la versión](/visualstudio/releases/2019/release-notes/).
 
-## <a name="develop"></a>Desarrollar
+## <a name="develop"></a>Desarrollo
 
 Vea el vídeo siguiente para obtener más información sobre cómo puede ahorrar tiempo con las nuevas características. <br><br>*Duración del vídeo: 3 minutos*
 
@@ -102,6 +102,12 @@ Con el lanzamiento de Visual Studio 2019, se está convirtiendo a Visual Studio 
 
 Para obtener más información, consulte la entrada de blog [Better multi-monitor experience with Visual Studio 2019](https://devblogs.microsoft.com/visualstudio/a-better-multi-monitor-experience-with-visual-studio-2019/) (Una mejor experiencia de varios monitores con Visual Studio 2019).
 
+### <a name="test-explorer"></a>Explorador de pruebas
+
+**Novedades de la versión 16.2** Se ha actualizado el Explorador de pruebas para mejorar el control de conjuntos de pruebas de gran tamaño y ofrecer un filtrado más sencillo, comandos más reconocibles, vistas de listas de reproducción por pestañas y columnas personalizables que permiten ajustar de forma precisa qué información de prueba se muestra.
+
+   ![Captura de pantalla que muestra las mejoras de la interfaz de usuario en el Explorador de pruebas](media/vs-2019/test-explorer-ui.png)
+
 ## <a name="collaborate"></a>Colaborar
 
 Vea el vídeo siguiente para obtener más información sobre cómo puede recurrir al equipo para solucionar problemas. <br><br>*Duración del vídeo: 4:22 minutos*
@@ -140,7 +146,7 @@ Se ha incluido una nueva extensión que puede descargar para su uso con Visual S
 
 Para obtener más información, vea la entrada de blog [Code reviews using the Visual Studio Pull Requests extension](https://devblogs.microsoft.com/visualstudio/code-reviews-using-the-visual-studio-pull-requests-extension/) (Revisiones de código mediante la extensión Solicitudes de incorporación de cambios de Visual Studio).
 
-## <a name="debug"></a>Depuración
+## <a name="debug"></a>Depurar
 
 Vea el vídeo siguiente para obtener más información sobre cómo centrarse en un destino concreto al depurar. <br><br>*Duración del vídeo: 3:54 minutos*
 
@@ -178,7 +184,13 @@ Agregamos compatibilidad con las aplicaciones de ASP.NET (escritorio y core) que
 
 Para más información, vea la página [Depuración de aplicaciones de Azure de ASP.NET en vivo con Snapshot Debugger](../debugger/debug-live-azure-applications.md) y la entrada de blog [Introducing Time Travel Debugging for Visual Studio Enterprise 2019](https://devblogs.microsoft.com/visualstudio/introducing-time-travel-debugging-for-visual-studio-enterprise-2019/) (Presentación de la depuración de viaje en el tiempo para Visual Studio Enterprise 2019).
 
-## <a name="whats-next"></a>Pasos adicionales
+### <a name="microsoft-edge-insider-support"></a>Soporte técnico de Microsoft Edge Insider
+
+**Novedades de la versión 16.2**: Puede establecer un punto de interrupción en una aplicación de JavaScript e iniciar una sesión de depuración mediante el explorador [Microsoft Edge Insider](https://www.microsoftedgeinsider.com/). Al hacerlo, Visual Studio abre una nueva ventana del explorador con la depuración habilitada, que puede usar para recorrer el código JavaScript de la aplicación en Visual Studio.
+
+   ![Captura de pantalla que muestra la representación de código JavaScript en un explorador](media/vs-2019/edge-chromium-breakpoint.png)
+
+## <a name="whats-next"></a>Pasos siguientes
 
 Actualizamos Visual Studio 2019 a menudo con nuevas características que pueden mejorar aún más su experiencia de desarrollo. Para obtener más información sobre las últimas innovaciones, vea el [blog de Visual Studio](https://devblogs.microsoft.com/visualstudio/). Y, para consultar un registro de las versiones en versión preliminar hasta la fecha, vea las [Notas de la versión preliminar](/visualstudio/releases/2019/release-notes-preview/).
 
@@ -194,9 +206,8 @@ Actualizamos Visual Studio 2019 a menudo con nuevas características que pueden 
 
 ## <a name="see-also"></a>Vea también
 
-* [Presentación de Visual Studio 2019](https://devblogs.microsoft.com/visualstudio/visual-studio-2019-code-faster-work-smarter-create-the-future/)
 * [Notas de la versión de Visual Studio 2019](/visualstudio/releases/2019/release-notes/)
 * [Novedades de Visual Studio 2019 SDK](../extensibility/whats-new-visual-studio-2019-sdk.md)
-* [Visual Studio 2019 para Mac ya está disponible](https://devblogs.microsoft.com/visualstudio/visual-studio-2019-for-mac-is-now-available/)
+* [Notas de la versión de Visual Studio 2019 para Mac](/visualstudio/releasenotes/vs2019-mac-relnotes/)
 * [Conferencia Microsoft Build 2019](https://www.microsoft.com/build)
 * [Conferencia sobre Microsoft Connect(); 2018](https://www.microsoft.com/connectevent)

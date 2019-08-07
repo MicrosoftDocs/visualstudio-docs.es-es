@@ -42,14 +42,14 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2ef04af4fda717d3f2fa6a90ba6b9ffdc681d5a6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: e15357220c9a9d74d4b08fdd97d4f808ff770b9a
+ms.sourcegitcommit: ce1ab8a25c66a83e60eab80ed8e1596fe66dd85c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62817864"
+ms.lasthandoff: 07/29/2019
+ms.locfileid: "68606051"
 ---
-# <a name="options-text-editor-all-languages"></a>Opciones, Editor de texto, Todos los lenguajes
+# <a name="options-dialog-box-text-editor--all-languages"></a>Cuadro de diálogo Opciones: Editor de texto \> Todos los lenguajes
 
 Este cuadro de diálogo le permite cambiar el comportamiento predeterminado del Editor de código. Estas opciones también se aplican a otros editores basados en el Editor de código, como la vista de origen del diseñador HTML. Para abrir este cuadro de diálogo, seleccione **Opciones** del menú **Herramientas**. En la carpeta **Editor de texto**, expanda la subcarpeta **Todos los lenguajes** y, después, pulse **General**.
 
@@ -68,7 +68,7 @@ Cuando está seleccionada, IntelliSense muestra las listas emergentes de miembro
 
 Cuando está seleccionada, se acortan las listas emergentes de finalización de instrucciones mostrando solo los elementos que más se usan. Los demás elementos se filtran en la lista.
 
-**Información de parámetros**
+**Información del parámetro**
 
 Cuando está seleccionada esta casilla, la sintaxis completa del procedimiento o la declaración actual se muestra en el punto de inserción del editor, con todos los parámetros disponibles. El siguiente parámetro que se puede asignar aparecerá en negrita.
 
@@ -124,7 +124,7 @@ Esta opción no tiene ningún efecto en el comando Copiar o Cortar cuando la lí
 > [!TIP]
 > Con el fin de poder mostrar indicadores para los espacios, tabuladores y fines de la línea, y distinguir así las líneas con sangría de las que están completamente en blanco, en el menú **Edición** seleccione **Opciones avanzadas** y pulse **Ver espacios en blanco**.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Otras referencias
 
 - [Opciones, editor de texto, todos los lenguajes, pestañas](../../ide/reference/options-text-editor-all-languages-tabs.md)
 - [General, Entorno, Opciones (Cuadro de diálogo)](../../ide/reference/general-environment-options-dialog-box.md)

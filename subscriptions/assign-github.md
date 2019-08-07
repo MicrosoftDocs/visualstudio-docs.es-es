@@ -1,26 +1,24 @@
 ---
-title: Conjunto Visual Studio + GitHub | Microsoft Docs
+title: Conjunto de productos Visual Studio + GitHub Enterprise | Microsoft Docs
 author: evanwindom
 ms.author: lank
 manager: lank
-ms.date: 04/23/2019
+ms.date: 07/28/2019
 ms.topic: conceptual
-description: Administración de suscripciones en el conjunto Visual Studio + GitHub
-ms.openlocfilehash: 875f91f19aee33d290933e6a5455a4dead78d6f0
-ms.sourcegitcommit: 208395bc122f8d3dae3f5e5960c42981cc368310
+description: Administración de suscripciones en el conjunto de productos Visual Studio + GitHub Enterprise
+ms.openlocfilehash: 0f297eac1d6b2bc5fe322be305fab7f268f3d041
+ms.sourcegitcommit: ce1ab8a25c66a83e60eab80ed8e1596fe66dd85c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/10/2019
-ms.locfileid: "67783635"
+ms.lasthandoff: 07/29/2019
+ms.locfileid: "68605388"
 ---
-# <a name="managing-visual-studio-subscriptions-with-github-enterprise"></a>Administración de suscripciones de Visual Studio con GitHub Enterprise
-
+# <a name="manage-visual-studio-subscriptions-with-github-enterprise"></a>Administración de suscripciones de Visual Studio con GitHub Enterprise
 Los clientes que tengan contratos Enterprise (EA) con Microsoft pueden comprar un nuevo conjunto de suscripciones que junta las suscripciones estándar de Visual Studio y GitHub Enterprise. Es la forma fácil y económica para los suscriptores de Visual Studio de adquirir GitHub Enterprise. 
 
 Cuando su empresa adquiere suscripciones de Visual Studio con GitHub Enterprise, las suscripciones se aprovisionan y se administran en dos partes.
 
-## <a name="managing-visual-studio-subscriptions"></a>Administración de suscripciones de Visual Studio
-
+## <a name="manage-visual-studio-subscriptions"></a>Administración de suscripciones de Visual Studio
 Cuando su empresa adquiere suscripciones de Visual Studio con GitHub Enterprise, la parte de Visual Studio de las suscripciones se aprovisiona inmediatamente y las suscripciones están disponibles para asignarlas y administrarlas en el portal [Administración de suscripciones](https://manage.visualstudio.com) de Visual Studio. 
 
 Para obtener más información sobre cómo administrar las suscripciones, consulte estos temas:
@@ -35,8 +33,7 @@ Para obtener más información sobre cómo administrar las suscripciones, consul
 >
 > Es responsabilidad del cliente asegurarse de que para cada suscripción de GitHub que se asigne haya una suscripción de Visual Studio con GitHub correspondiente asignada en el portal de administración para seguir cumpliendo los requisitos de licencia para esta suscripción.
 
-## <a name="managing-github-enterprise-subscriptions"></a>Administración de suscripciones de GitHub Enterprise
-
+## <a name="manage-github-enterprise-subscriptions"></a>Administración de suscripciones de GitHub Enterprise
 Cuando se compran suscripciones de GitHub Enterprise, GitHub se asocia con los clientes para ayudarlos a crear y configurar las organizaciones que accederán a GitHub y a identificar a los administradores.  A continuación, estos administradores reciben una notificación en que se les comunica que se han configurado como administradores.  
 
 Puesto que este proceso es más complejo, puede pasar varios días una vez compradas las suscripciones antes de que las organizaciones y los administradores estén completamente configurados.
@@ -44,7 +41,6 @@ Puesto que este proceso es más complejo, puede pasar varios días una vez compr
 GitHub está disponible como GitHub.com basado en la nube o como el servidor de GitHub Enterprise de instalación local.  Los procesos para administrar las dos versiones son diferentes.  GitHub ofrece una variedad de temas de ayuda y guías del administrador que lo ayudarán a administrar las suscripciones de GitHub Enterprise.  A continuación, hemos incluido vínculos a temas seleccionados.  
 
 ### <a name="githubcom"></a>GitHub.com 
-
 Para obtener más información sobre cómo administrar GitHub.com, consulte los temas siguientes en la [Ayuda de GitHub](https://help.github.com/en).
 - [Lista completa de temas de ayuda](https://help.github.com/en)
 - [Administrar la pertenencia en su organización](https://help.github.com/en/articles/managing-membership-in-your-organization)
@@ -56,7 +52,6 @@ Para obtener más información sobre cómo administrar GitHub.com, consulte los 
 - [Administrar el acceso a los repositorios de su organización](https://help.github.com/en/articles/managing-access-to-your-organizations-repositories)
 
 ### <a name="github-enterprise-server"></a>Servidor de GitHub Enterprise
-
 La Ayuda de GitHub ofrece una variedad de guías del administrador para responder a preguntas y proporcionar sugerencias sobre la administración de la implementación del servidor de GitHub Enterprise en su organización.
 
 - [Ver todas las guías de administrador](https://help.github.com/en/enterprise/2.16/admin)
@@ -70,7 +65,6 @@ La Ayuda de GitHub ofrece una variedad de guías del administrador para responde
 - [Instalación y configuración del servidor de GitHub Enterprise ](https://help.github.com/en/enterprise/2.16/admin/installation)
 
 ## <a name="support-resources"></a>Recursos de soporte técnico
-
 - Puede encontrar respuestas a preguntas en una amplia gama de temas de GitHub en la [Ayuda de GitHub](https://help.github.com/en).
 - Obtenga ayuda de otros usuarios de GitHub en el [Foro de la comunidad de GitHub](https://github.community/).
 - Para obtener ayuda con las ventas, las suscripciones, las cuentas y la facturación para suscripciones de Visual Studio, póngase en contacto con el [soporte para suscripciones](https://visualstudio.microsoft.com/subscriptions/support/) de Visual Studio.
@@ -78,5 +72,4 @@ La Ayuda de GitHub ofrece una variedad de guías del administrador para responde
 - Obtenga [soporte técnico](https://support.microsoft.com/en-us/supportforbusiness/productselection?sapId=b77fe80f-5417-80bd-4b2a-275cf0018c24) para GitHub Enterprise.   
 
 ## <a name="next-steps"></a>Pasos siguientes
-
 Para obtener más información sobre cómo administrar las suscripciones de Visual Studio con GitHub Enterprise, visite el [portal de administración de suscripciones](https://visualstudio.microsoft.com/subscriptions-administration/) de Visual Studio.

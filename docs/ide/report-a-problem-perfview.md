@@ -15,12 +15,12 @@ dev_langs:
 ms.workload:
 - multiple
 ms.description: Use perfview.exe to collect ETL traces for troubleshooting issues with Visual Studio
-ms.openlocfilehash: baae89b7bf45a4848c571f75e37c6cc0d203d459
-ms.sourcegitcommit: 6f7a740750b2cd17ea2275c3d046caebc9782917
+ms.openlocfilehash: 6b1f61888fa642ed544c6da7d1cf77c43b52b2d9
+ms.sourcegitcommit: 85d66dc9fea3fa49018263064876b15aeb6f9584
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "67518191"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68461550"
 ---
 # <a name="collect-an-etl-trace-with-perfview"></a>Recopilación del seguimiento de ETL con PerfView
 

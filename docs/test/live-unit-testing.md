@@ -9,12 +9,12 @@ author: rpetrusha
 ms.author: ronpet
 ms.workload:
 - dotnet
-ms.openlocfilehash: ce9a1a2da7397dbc7ce4235391c962cada7d59eb
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 2cbde88ee12118f9f59271f897e81ec18c24eb4e
+ms.sourcegitcommit: 044bb54cb4552c8f4651feb11d62e52726117e75
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62786553"
+ms.lasthandoff: 07/30/2019
+ms.locfileid: "68662056"
 ---
 # <a name="live-unit-testing-with-visual-studio"></a>Live Unit Testing con Visual Studio
 
@@ -145,7 +145,7 @@ Hay algunas diferencias entre la ejecución y actualización automáticas de res
 
 - La ejecución o depuración de pruebas desde la ventana Explorador de pruebas ejecuta binarios normales, mientras que Live Unit Testing ejecuta binarios instrumentados.
 - Live Unit Testing no crea un nuevo dominio de aplicación para ejecutar las pruebas, sino que ejecuta pruebas del dominio predeterminado. Las pruebas que se ejecutan desde la ventana **Explorador de pruebas** crean un nuevo dominio de aplicación.
-- Live Unit Testing ejecuta pruebas secuencialmente en cada ensamblado de prueba. Si ejecuta varias pruebas desde la ventana **Explorador de pruebas** y selecciona el botón **Ejecutar pruebas en paralelo**, las pruebas se ejecutan en paralelo.
+- Live Unit Testing ejecuta pruebas secuencialmente en cada ensamblado de prueba. En la ventana **Explorador de pruebas**, puede elegir una opción para ejecutar varias pruebas en paralelo.
 
 ## <a name="live-unit-testing-and-large-solutions"></a>Live Unit Testing y soluciones de gran tamaño
 
@@ -166,7 +166,7 @@ Para seleccionar proyectos individuales en pruebas unitarias, haga lo siguiente 
 
 **Exclusión de pruebas individuales de la ventana del editor de código**
 
-Puede usar la ventana del editor de código para incluir o excluir métodos de prueba individuales. Haga clic con el botón derecho en la firma del método de prueba en la ventana del editor de código y seleccione **Live Tests** (Pruebas en vivo)  > **Incluir [el método seleccionado]**, **Live Tests** (Pruebas en vivo)  > **Excluir [el método seleccionado]** o **Live Tests** (Pruebas en vivo)  > **Excluir todo excepto [el método seleccionado]**, donde "el método seleccionado" es el nombre del método que seleccionó en la ventana de código.
+Puede usar la ventana del editor de código para incluir o excluir métodos de prueba individuales. Haga clic con el botón derecho en la firma del método de prueba en la ventana del editor de código y seleccione **Live Tests** (Pruebas en vivo)  > **Incluir [el método seleccionado]** , **Live Tests** (Pruebas en vivo)  > **Excluir [el método seleccionado]** o **Live Tests** (Pruebas en vivo)  > **Excluir todo excepto [el método seleccionado]** , donde "el método seleccionado" es el nombre del método que seleccionó en la ventana de código.
 
 **Exclusión de pruebas mediante programación**
 

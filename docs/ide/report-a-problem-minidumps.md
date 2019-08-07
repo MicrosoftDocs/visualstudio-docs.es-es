@@ -14,16 +14,16 @@ dev_langs:
 ms.workload:
 - multiple
 ms.description: Collect minidumps to send to Microsoft for help with troubleshooting issues with Visual Studio
-ms.openlocfilehash: eefcbefa8b728afa677e7bd04fd538633ae117f0
-ms.sourcegitcommit: 6f7a740750b2cd17ea2275c3d046caebc9782917
+ms.openlocfilehash: 7d0580e04968a01dc8e447a9ee35f2b1c5934ccf
+ms.sourcegitcommit: 85d66dc9fea3fa49018263064876b15aeb6f9584
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "67518181"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68461656"
 ---
 # <a name="create-minidumps-for-a-visual-studio-process-with-all-call-stacks"></a>Creación de minivolcados para un proceso de Visual Studio con todas las pilas de llamadas
 
-En algunos casos, Microsoft podría solicitar un minivolcado de un proceso de Visual Studio en ejecución con la información para todas las pilas de llamadas. Para recopilar esta información, siga estos pasos:
+En algunos casos, Microsoft podría solicitar un minivolcado de un proceso de Visual Studio en ejecución con la información de todas las pilas de llamadas. Para recopilar esta información, siga estos pasos:
 
 ## <a name="create-the-minidump-file"></a>Creación del archivo de minivolcado
 
@@ -40,7 +40,6 @@ En algunos casos, Microsoft podría solicitar un minivolcado de un proceso de Vi
 ## <a name="get-the-call-stacks-from-the-minidump"></a>Obtención de las pilas de llamadas desde el minivolcado
 
 1. Abra el archivo de volcado en Visual Studio.
-
 1. Vaya a **Herramientas** > **Opciones** > **Depuración** > **Símbolos** y asegúrese de que **Servidores de símbolos de Microsoft** tiene activado **Ubicaciones del archivo de símbolos (.pdb)** .
 1. Abra la ventana **Comando** (**Ver** > **Otras ventanas** > **Ventana Comandos**).
 1. Escriba "~*k". La ventana muestra las pilas de llamadas de todos los subprocesos.

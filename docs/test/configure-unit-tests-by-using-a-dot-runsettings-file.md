@@ -7,12 +7,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 9715edff9083a0e99fa52075426d11ea92b7b6e2
-ms.sourcegitcommit: d4920babfc3d24a3fe1d4bf446ed3fe73b344467
+ms.openlocfilehash: c291eb614a69d88116c6af228304e19a6295bba2
+ms.sourcegitcommit: 044bb54cb4552c8f4651feb11d62e52726117e75
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/17/2019
-ms.locfileid: "67160205"
+ms.lasthandoff: 07/30/2019
+ms.locfileid: "68662029"
 ---
 # <a name="configure-unit-tests-by-using-a-runsettings-file"></a>Configuración de pruebas unitarias con un archivo *.runsettings*
 
@@ -184,9 +184,9 @@ El elemento **RunConfiguration** puede incluir los siguientes elementos:
 |**ResultsDirectory**||Directorio en el que se colocan los resultados de las pruebas.|
 |**TargetFrameworkVersion**|Framework40|`FrameworkCore10` para orígenes de .NET Core, `FrameworkUap10` para orígenes basados en UWP, `Framework45` para .NET Framework 4.5 y versiones superiores, `Framework40` para .NET Framework 4.0 y `Framework35` para .NET Framework 3.5.<br /><br />Este valor especifica qué versión del marco de pruebas unitarias se usa para detectar y ejecutar las pruebas. Puede ser diferente de la versión de la plataforma .NET que especifique en las propiedades de compilación del proyecto de prueba unitaria.<br /><br />Si omite el elemento `TargetFrameworkVersion` del archivo *.runsettings*, la plataforma determinará de forma automática la versión de Framework en función de los archivos binarios compilados.|
 |**TargetPlatform**|x86|x86, x64|
-|**TreatTestAdapterErrorsAsWarnings**|False|false, true|
+|**TreatTestAdapterErrorsAsWarnings**|false|false, true|
 |**TestAdaptersPaths**||Una o varias rutas de acceso al directorio donde se encuentran los TestAdapters|
-|**MaxCpuCount**|1|Este valor controla el grado de ejecución de pruebas paralelas cuando se ejecutan pruebas unitarias, mediante los núcleos disponibles en el equipo. El motor de ejecución de pruebas se inicia como un proceso distinto en cada núcleo disponible y proporciona a cada núcleo un contenedor con las pruebas que se van a ejecutar. Un contenedor puede ser un ensamblado, un archivo DLL o un artefacto relevante. El contenedor de pruebas es la unidad de programación. En cada contenedor, las pruebas se ejecutan según el marco de pruebas. Si hay muchos contenedores, a medida que los procesos finalizan la ejecución de las pruebas en un contenedor, se les proporciona el siguiente contenedor disponible.<br /><br />El valor de MaxCpuCount puede ser:<br /><br />n, donde 1 <= n <= número de núcleos: se inician hasta n procesos<br /><br />n, donde n = cualquier otro valor: el número de procesos que se inician puede ser como máximo el número de núcleos disponibles|
+|**MaxCpuCount**|1|Este valor controla el grado de ejecución de pruebas paralelas cuando se ejecutan pruebas unitarias, mediante los núcleos disponibles en la máquina. El motor de ejecución de pruebas se inicia como un proceso distinto en cada núcleo disponible y proporciona a cada núcleo un contenedor con las pruebas que se van a ejecutar. Un contenedor puede ser un ensamblado, un archivo DLL o un artefacto relevante. El contenedor de pruebas es la unidad de programación. En cada contenedor, las pruebas se ejecutan según el marco de pruebas. Si hay muchos contenedores, a medida que los procesos finalizan la ejecución de las pruebas en un contenedor, se les proporciona el siguiente contenedor disponible.<br /><br />El valor de MaxCpuCount puede ser:<br /><br />n, donde 1 <= n <= número de núcleos: se inician hasta n procesos<br /><br />n, donde n = cualquier otro valor: el número de procesos que se inician puede ser como máximo el número de núcleos disponibles|
 |**TestSessionTimeout**||Permite a los usuarios terminar una sesión de prueba cuando esta supera un tiempo de espera especificado. La configuración de un tiempo de espera garantiza que los recursos se utilicen de manera conveniente y que las sesiones de prueba se limiten a un tiempo establecido. Esta opción está disponible en **Visual Studio 2017, versión 15.5** y posteriores.|
 
 ### <a name="diagnostic-data-adapters-data-collectors"></a>Adaptadores de datos de diagnóstico (recopiladores de datos)
@@ -256,18 +256,18 @@ Para usar parámetros de serie de pruebas, agregue un campo <xref:Microsoft.Visu
 
 Estos valores son específicos del adaptador de pruebas que ejecuta métodos de prueba con el atributo <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute> .
 
-|Configuración|Default|Valores|
+|Configuración|Valor predeterminado|Valores|
 |-|-|-|
-|**ForcedLegacyMode**|False|En Visual Studio 2012, el adaptador MSTest se optimizó para que fuera más rápido y escalable. Es posible que parte del comportamiento, como el orden en que se ejecutan las pruebas, no sea exactamente igual que en ediciones anteriores de Visual Studio. Establezca este valor en **true** para utilizar el adaptador de pruebas más antiguo.<br /><br />Por ejemplo, es posible usar este valor si tiene un archivo *app.config* especificado para una prueba unitaria.<br /><br />Se recomienda que considere la refactorización de las pruebas para poder usar el adaptador más reciente.|
-|**IgnoreTestImpact**|False|La característica de impacto de pruebas asigna prioridades a las pruebas afectadas por cambios recientes, cuando se ejecuta en MSTest o desde Microsoft Test Manager. Esta configuración desactiva la característica. Para obtener más información, vea [¿Qué pruebas se deben ejecutar desde una compilación anterior?](https://msdn.microsoft.com/library/dd286589).|
+|**ForcedLegacyMode**|false|En Visual Studio 2012, el adaptador MSTest se optimizó para que fuera más rápido y escalable. Es posible que parte del comportamiento, como el orden en que se ejecutan las pruebas, no sea exactamente igual que en ediciones anteriores de Visual Studio. Establezca este valor en **true** para utilizar el adaptador de pruebas más antiguo.<br /><br />Por ejemplo, es posible usar este valor si tiene un archivo *app.config* especificado para una prueba unitaria.<br /><br />Se recomienda que considere la refactorización de las pruebas para poder usar el adaptador más reciente.|
+|**IgnoreTestImpact**|false|La característica de impacto de pruebas asigna prioridades a las pruebas afectadas por cambios recientes, cuando se ejecuta en MSTest o desde Microsoft Test Manager. Esta configuración desactiva la característica. Para obtener más información, vea [¿Qué pruebas se deben ejecutar desde una compilación anterior?](https://msdn.microsoft.com/library/dd286589).|
 |**SettingsFile**||Puede especificar un archivo de configuración de pruebas para usarlo con el adaptador MSTest aquí. También puede especificar un archivo de configuración de pruebas seleccionando **Prueba** > **Configuración de pruebas** > **Seleccionar archivo de configuración de pruebas**.<br /><br />Si especifica este valor, también debe establecer **ForcedlegacyMode** en **true**.<br /><br />`<ForcedLegacyMode>true</ForcedLegacyMode>`|
-|**KeepExecutorAliveAfterLegacyRun**|False|Una vez completada una serie de pruebas, se cierra MSTest. Cualquier proceso que se inicie como parte de la prueba también se elimina. Si quiere mantener activo el ejecutor de pruebas, establezca este valor en **true**. Por ejemplo, podría usar esta configuración para mantener el explorador en ejecución entre pruebas de IU codificadas.|
+|**KeepExecutorAliveAfterLegacyRun**|false|Una vez completada una serie de pruebas, se cierra MSTest. Cualquier proceso que se inicie como parte de la prueba también se elimina. Si quiere mantener activo el ejecutor de pruebas, establezca este valor en **true**. Por ejemplo, podría usar esta configuración para mantener el explorador en ejecución entre pruebas de IU codificadas.|
 |**DeploymentEnabled**|true|Si el valor se establece en **false**, los elementos de implementación especificados en el método de prueba no se copian al directorio de implementación.|
 |**CaptureTraceOutput**|true|Puede escribir en el seguimiento de depuración desde su método de prueba mediante <xref:System.Diagnostics.Trace.WriteLine%2A?displayProperty=nameWithType>.|
 |**DeleteDeploymentDirectoryAfterTestRunIsComplete**|true|Para conservar el directorio de implementación después de una serie de pruebas, establezca este valor en **false**.|
-|**MapInconclusiveToFailed**|False|Si una prueba finaliza un estado no concluyente, se le asigna el estado Omitido en el **Explorador de pruebas**. Si quiere que las pruebas no concluyentes se muestren como Error, establezca el valor en **true**.|
-|**InProcMode**|False|Si quiere que las pruebas se ejecuten en el mismo proceso que el adaptador MSTest, establezca este valor en **true**. Este valor proporciona una pequeña mejora del rendimiento. Pero si una prueba finaliza con una excepción, el resto de pruebas no se ejecutarán.|
-|**AssemblyResolution**|False|Puede especificar rutas de acceso a ensamblados adicionales cuando busque y ejecute pruebas unitarias. Por ejemplo, puede utilizar estas rutas de acceso para los ensamblados de dependencias que no estén en el mismo directorio que el ensamblado de pruebas. Para especificar una ruta de acceso, use un elemento **Directory Path**. Las rutas de acceso pueden incluir variables de entorno.<br /><br />`<AssemblyResolution>  <Directory Path="D:\myfolder\bin\" includeSubDirectories="false"/> </AssemblyResolution>`|
+|**MapInconclusiveToFailed**|false|Si una prueba finaliza un estado no concluyente, se le asigna el estado Omitido en el **Explorador de pruebas**. Si quiere que las pruebas no concluyentes se muestren como Error, establezca el valor en **true**.|
+|**InProcMode**|false|Si quiere que las pruebas se ejecuten en el mismo proceso que el adaptador MSTest, establezca este valor en **true**. Este valor proporciona una pequeña mejora del rendimiento. Pero si una prueba finaliza con una excepción, el resto de pruebas no se ejecutarán.|
+|**AssemblyResolution**|false|Puede especificar rutas de acceso a ensamblados adicionales cuando busque y ejecute pruebas unitarias. Por ejemplo, puede utilizar estas rutas de acceso para los ensamblados de dependencias que no estén en el mismo directorio que el ensamblado de pruebas. Para especificar una ruta de acceso, use un elemento **Directory Path**. Las rutas de acceso pueden incluir variables de entorno.<br /><br />`<AssemblyResolution>  <Directory Path="D:\myfolder\bin\" includeSubDirectories="false"/> </AssemblyResolution>`|
 
 ## <a name="see-also"></a>Vea también
 

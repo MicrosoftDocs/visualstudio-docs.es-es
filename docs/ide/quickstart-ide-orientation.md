@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5f039081309f29e0cd86b3d56ae102b4e55d82ad
-ms.sourcegitcommit: 51dad3e11d7580567673e0d426ab3b0a17584319
+ms.openlocfilehash: 063024605f142cd2d836eb9322274e7b81cdd9f0
+ms.sourcegitcommit: 0f5f7955076238742f2071d286ad8e896f3a6cad
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/10/2019
-ms.locfileid: "66820979"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "68483785"
 ---
 # <a name="quickstart-first-look-at-the-visual-studio-ide"></a>Inicio rápido: Primer vistazo al IDE de Visual Studio
 
@@ -71,7 +71,7 @@ Para seguir examinando las características de Visual Studio, se va a crear un n
 
    ![Búsqueda de plantillas de proyecto en la página de inicio de Visual Studio](media/start-page-search-templates.png)
 
-   Visual Studio proporciona varios tipos de plantillas de proyecto que ayudan a comenzar a codificar rápidamente. Elija una plantilla de proyecto **Console App (.NET Framework)** de C#. (Si es desarrollador de Visual Basic, C++, Javascript u otro lenguaje, también puede crear un proyecto en uno de esos lenguajes. La interfaz de usuario que se muestra es similar para todos los lenguajes de programación).
+   Visual Studio proporciona varios tipos de plantillas de proyecto que ayudan a comenzar a codificar rápidamente. Elija una plantilla del proyecto **Aplicación de consola (.NET Core)** en C#. (Si es desarrollador de Visual Basic, C++, Javascript u otro lenguaje, también puede crear un proyecto en uno de esos lenguajes. La interfaz de usuario que se muestra es similar para todos los lenguajes de programación).
 
 1. En el cuadro de diálogo **Nuevo proyecto** que aparece, acepte el nombre de proyecto predeterminado y haga clic en **Aceptar**.
 
@@ -87,13 +87,13 @@ Para seguir examinando las características de Visual Studio, se va a crear un n
 
    ![Cuadro de diálogo Nuevo proyecto de Visual Studio 2019](media/vs-2019/create-a-new-project.png)
 
-1. Si seleccionó C#, Visual Basic o F# como el lenguaje, seleccione la plantilla **Aplicación de consola (.NET Framework)** y haga clic en **Siguiente**. (Si seleccionó otro lenguaje, elija cualquier plantilla. La interfaz de usuario que se muestra es similar para todos los lenguajes de programación).
+1. Si seleccionó C#, Visual Basic o F# como lenguaje, seleccione la plantilla **Aplicación de consola (.NET Framework)** y, luego, elija **Siguiente**. (Si seleccionó otro lenguaje, elija cualquier plantilla. La interfaz de usuario que se muestra es similar para todos los lenguajes de programación).
 
 1. En la página **Configure su nuevo proyecto**, acepte el nombre y la ubicación predeterminados del proyecto y haga clic en **Crear**.
 
 ::: moniker-end
 
-   Se crea el proyecto y se abre un archivo denominado *Program.cs* en la ventana **Editor**. En el **Editor** se muestra el contenido de los archivos y es donde se va a realizar la mayor parte del trabajo de codificación en Visual Studio.
+   Se crea el proyecto y se abre un archivo denominado *Program.cs* en la ventana **Editor**. En el **Editor** se muestra el contenido de los archivos y es donde se va a realizar la mayor parte del trabajo de codificación en Visual Studio.
 
    ![Editor en Visual Studio](media/editor.png)
 
@@ -127,7 +127,7 @@ En la **Lista de errores** se muestran los errores, las advertencias y los mensa
 
 ![Lista de errores en Visual Studio](media/quickstart-IDE-error-list.png)
 
-## <a name="output-window"></a>Resultados (ventana)
+## <a name="output-window"></a>Ventana de salida
 
 En la ventana **Resultados** se muestran los mensajes de resultados de la compilación del proyecto y del proveedor de control de código fuente.
 

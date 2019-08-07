@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c27950e104b6064bdaf3b8b4a8fe4a760fa4e677
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: cc3d88fd07ec5d345b3e8697ef69b193ece0fac1
+ms.sourcegitcommit: ce1ab8a25c66a83e60eab80ed8e1596fe66dd85c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62792902"
+ms.lasthandoff: 07/29/2019
+ms.locfileid: "68604899"
 ---
 # <a name="accounts-environment-options-dialog-box"></a>Cuentas, Entorno, Opciones (Cuadro de diálogo)
 
@@ -33,7 +33,7 @@ Si se selecciona esta opción, el comportamiento de Visual Studio cambia cuando 
 
 ## <a name="registered-azure-clouds"></a>Nubes de Azure registradas
 
-Esta sección muestra las instancias de nube de Azure a las que el usuario accede mediante una o varias de las cuentas que usa para iniciar sesión en Visual Studio. Por ejemplo, podría tener acceso a una instancia privada de Azure en el centro de datos de su compañía, o puede que tenga acceso a una instancia soberana o gubernamental de Azure, como Azure en China o Azure Gobierno de EE.UU. La instancia de nube de Azure global aparece de forma predeterminada en la lista y se no puede quitar.
+Esta sección muestra las instancias de nube de Azure a las que el usuario accede mediante una o varias de las cuentas que usa para iniciar sesión en Visual Studio. Por ejemplo, podría tener acceso a una instancia privada de Azure en el centro de datos de su compañía, o puede que tenga acceso a una instancia soberana o gubernamental de Azure, como Azure China Vianet 21 o Azure Gobierno de EE.UU. La instancia de nube de Azure global aparece de forma predeterminada en la lista y se no puede quitar.
 
 Registre una nube de Azure adicional seleccionando el botón **Agregar**. El cuadro de diálogo **Agregar nueva nube de Azure** muestra las distintas instancias de nube de Azure conocidas a las que se puede conectar, aunque también puede escribir la dirección URL de un punto de conexión de Azure privado.
 
@@ -47,4 +47,3 @@ Tras registrar una nube de Azure adicional, puede elegir en qué nube de Azure q
 - [Inicio de sesión en Visual Studio](../signing-in-to-visual-studio.md)
 - [Trabajar con varias cuentas de usuario](../work-with-multiple-user-accounts.md)
 - [Configuración del entorno](../environment-settings.md)
-- [Opciones de entorno (Cuadro de diálogo)](../../ide/reference/environment-options-dialog-box.md)

@@ -6,17 +6,17 @@ ms.date: 12/04/2017
 ms.topic: tutorial
 author: corob-msft
 ms.author: corob
-manager: jillfra
+manager: markl
 dev_langs:
 - CPP
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a132787a5af0aca9b42775931b343b89710ce91b
-ms.sourcegitcommit: 9753c7544cec852ca5efd0834e0956d9e53a5734
+ms.openlocfilehash: 0caebc01e2a1db85a38f967b47226e998cfc69d6
+ms.sourcegitcommit: 85d66dc9fea3fa49018263064876b15aeb6f9584
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "67043401"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68461688"
 ---
 # <a name="get-started-with-c-in-visual-studio"></a>Introducción a C++ en Visual Studio
 
@@ -38,7 +38,7 @@ Para seguir este inicio rápido, se necesita una copia de Visual Studio 2019 que
 
 ::: moniker-end
 
-## <a name="create-a-console-app"></a>Crear una aplicación de consola
+## <a name="create-a-console-app"></a>Creación de una aplicación de consola
 
 Abra Visual Studio si aún no se está ejecutando.
 

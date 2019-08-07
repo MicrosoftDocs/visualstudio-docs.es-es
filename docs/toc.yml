@@ -14,7 +14,7 @@
       href: ide/advanced-feature-overview.md
 - name: Instalación
   items:
-    - name: Instalación de Visual Studio
+    - name: Instalar Visual Studio
       href: install/install-visual-studio.md
     - name: Instalación sin conexión
       items:
@@ -138,7 +138,7 @@
     - name: Orientación de Visual Studio
       displayName: Feature tour
       href: ide/quickstart-ide-orientation.md
-    - name: 'C++: Creación de una aplicación de consola'
+    - name: 'C++: Crear una aplicación de consola'
       href: ide/getting-started-with-cpp-in-visual-studio.md
     - name: 'Python: Creación de una aplicación web'
       href: ide/quickstart-python.md
@@ -148,9 +148,9 @@
       href: ide/quickstart-fsharp.md
     - name: 'C#: Creación de una aplicación web'
       href: ide/quickstart-aspnet-core.md
-    - name: 'C#: Creación de una aplicación de consola'
+    - name: 'C#: Crear una aplicación de consola'
       href: ide/quickstart-csharp-console.md
-    - name: 'Visual Basic: Creación de una aplicación de consola'
+    - name: 'Visual Basic: Crear una aplicación de consola'
       href: ide/quickstart-visual-basic-console.md
 - name: Tutoriales
   items:
@@ -168,7 +168,7 @@
       href: javascript/
 - name: Guías de procedimientos
   items:
-    - name: Desarrollo
+    - name: Desarrollar
       items:
         - name: 'Índice: Uso del IDE para escribir código'
           href: ide/index-writing-code.md
@@ -178,7 +178,7 @@
           items:
             - name: Trabajar con soluciones y proyectos
               href: ide/solutions-and-projects-in-visual-studio.md
-            - name: Creación de un nuevo proyecto
+            - name: Crear un proyecto nuevo
               href: ide/create-new-project.md
             - name: Crear soluciones y proyectos
               href: ide/creating-solutions-and-projects.md
@@ -194,8 +194,6 @@
                   href: ide/managing-references-in-a-project.md
                 - name: Agregar o quitar referencias con el Administrador de referencias
                   href: ide/how-to-add-or-remove-references-by-using-the-reference-manager.md
-                - name: Agregar referencias con NuGet en lugar de un SDK de extensión
-                  href: ide/adding-references-using-nuget-versus-an-extension-sdk.md
                 - name: Agregar o quitar espacios de nombres importados (Visual Basic)
                   href: ide/how-to-add-or-remove-imported-namespaces-visual-basic.md
                 - name: Solucionar problemas de referencias rotas
@@ -218,7 +216,7 @@
               href: ide/how-to-specify-an-application-icon-visual-basic-csharp.md
             - name: Establecimiento de la plataforma de destino
               href: ide/visual-studio-multi-targeting-overview.md
-            - name: Crear plantillas
+            - name: Creación de plantillas
               items:
                 - name: Crear plantillas de proyecto y elemento
                   href: ide/creating-project-and-item-templates.md
@@ -252,7 +250,7 @@
               href: ide/visual-studio-ide-64-bit-support.md
         - name: Desarrollar sin proyectos o soluciones
           items:
-            - name: 'Procedimientos para: Desarrollo sin proyecto'
+            - name: Procedimiento Desarrollo sin proyecto
               displayName: Open folder
               href: ide/develop-code-in-visual-studio-without-projects-or-solutions.md
             - name: Personalizar las tareas de compilación y depuración
@@ -352,6 +350,8 @@
                     - name: Información general
                       displayName: refactoring
                       href: ide/refactoring-in-visual-studio.md
+                    - name: Agregar comprobaciones de todos parámetros nulos
+                      href: ide/reference/add-null-checks-for-all-parameters.md
                     - name: Cambiar signatura del método
                       href: ide/reference/change-method-signature.md
                     - name: Conversión de un tipo anónimo en clase
@@ -592,7 +592,7 @@
       href: designers/designing-user-interfaces.md
     - name: Desarrollar aplicaciones con el Diseñador de flujo de trabajo >>
       href: workflow-designer/developing-applications-with-the-workflow-designer.md
-    - name: Compilación y creación
+    - name: Compilar y generar
       items:
         - name: Información general
           displayName: Compile build
@@ -671,7 +671,7 @@
       href: extensibility/visual-studio-sdk.md
     - name: Analizar y modelar la arquitectura >>
       href: modeling/analyze-and-model-your-architecture.md
-    - name: Trucos y sugerencias
+    - name: Sugerencias y trucos
       items:
         - name: Características de productividad
           href: ide/productivity-features.md
@@ -724,13 +724,13 @@
               href: ide/how-to-unlock-visual-studio.md
     - name: Rendimiento de Visual Studio
       items:
-        - name: Optimización del rendimiento
+        - name: Optimizar el rendimiento
           href: ide/optimize-visual-studio-performance.md
         - name: Tiempo de inicio
           href: ide/optimize-visual-studio-startup-time.md
         - name: Carga de una solución filtrada
           href: ide/filtered-solutions.md
-        - name: Trucos y sugerencias
+        - name: Sugerencias y trucos
           href: ide/visual-studio-performance-tips-and-tricks.md
     - name: Accesibilidad
       items:
@@ -922,9 +922,9 @@
                       href: ide/reference/options-text-editor-all-languages-scroll-bars.md
                     - name: Tabulaciones
                       href: ide/reference/options-text-editor-all-languages-tabs.md
-                - name: Básica
+                - name: Básico
                   items:
-                    - name: Avanzado
+                    - name: Avanzadas
                       href: ide/reference/options-text-editor-basic-visual-basic.md
                     - name: Estilo de código
                       href: ide/code-styles-and-code-cleanup.md
@@ -932,7 +932,7 @@
                       href: ide/visual-basic-specific-intellisense.md
                 - name: 'C#'
                   items:
-                    - name: Avanzado
+                    - name: Avanzadas
                       href: ide/reference/options-text-editor-csharp-advanced.md
                     - name: Estilo de código > Formato
                       href: ide/reference/options-text-editor-csharp-formatting.md
@@ -940,17 +940,17 @@
                       href: ide/reference/options-text-editor-csharp-intellisense.md
                 - name: C/C++
                   items:
-                    - name: Avanzado
+                    - name: Avanzadas
                       href: ide/reference/options-text-editor-c-cpp-advanced.md
-                    - name: Experimental
+                    - name: Habilitación de características
                       href: ide/reference/options-text-editor-c-cpp-experimental.md
-                    - name: Aplicación de formato
+                    - name: Formato
                       href: ide/reference/options-text-editor-c-cpp-formatting.md
                     - name: Ver
                       href: ide/reference/options-text-editor-c-cpp-view.md
                 - name: 'F#'
                   items:
-                    - name: Avanzado
+                    - name: Avanzadas
                       href: ide/reference/options-text-editor-fsharp-advanced.md
                     - name: Correcciones de código
                       href: ide/reference/options-text-editor-fsharp-code-fixes.md
@@ -960,7 +960,7 @@
                       href: ide/reference/options-text-editor-fsharp-intellisense.md
                 - name: HTML (Web Forms)
                   items:
-                    - name: Aplicación de formato
+                    - name: Formato
                       href: ide/reference/options-text-editor-html-formatting.md
                     - name: Varios
                       href: ide/reference/options-text-editor-html-miscellaneous.md
@@ -970,37 +970,37 @@
                   items:
                     - name: Validación de código
                       href: ide/reference/options-text-editor-javascript-code-validation.md
-                    - name: Aplicación de formato
+                    - name: Formato
                       href: ide/reference/options-text-editor-javascript-formatting.md
                     - name: IntelliSense
                       href: ide/reference/options-text-editor-javascript-intellisense.md
                     - name: Detección de errores
                       href: ide/reference/options-text-editor-javascript-linting.md
-                    - name: proyecto
+                    - name: Proyecto
                       href: ide/reference/options-text-editor-javascript-project.md
                 - name: U-SQL
                   items:
-                    - name: Aplicación de formato
+                    - name: Formato
                       href: ide/reference/options-text-editor-usql-formatting.md
                     - name: IntelliSense
                       href: ide/reference/options-text-editor-usql-intellisense.md
                 - name: XAML
                   items:
-                    - name: Aplicación de formato
+                    - name: Formato
                       href: ide/reference/options-text-editor-xaml-formatting.md
                     - name: Varios
                       href: ide/reference/options-text-editor-xaml-miscellaneous.md
                 - name: XML
                   items:
-                    - name: Aplicación de formato
+                    - name: Formato
                       href: ide/reference/options-text-editor-xml-formatting.md
                     - name: Varios
                       href: ide/reference/options-text-editor-xml-miscellaneous.md
             - name: XAML Designer
               href: ide/reference/xaml-designer.md
-        - name: Ventana de salida
+        - name: Resultados (ventana)
           href: ide/reference/output-window.md
-        - name: Project Properties
+        - name: Propiedades del proyecto
           items:
             - name: Referencia
               displayName: Project properties
@@ -1155,7 +1155,7 @@
               href: help-viewer/find-topics-index.md
             - name: Buscar temas en la tabla de contenido
               href: help-viewer/find-topics-toc.md
-            - name: Search
+            - name: Buscar
               items:
                 - name: Buscar temas
                   href: help-viewer/find-topics.md

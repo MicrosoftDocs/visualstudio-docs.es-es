@@ -10,18 +10,16 @@ dev_langs:
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.workload:
-- uwp
-ms.openlocfilehash: 0c0d13603a2575a826a53bf145fd1f0218571243
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 58f83616985556d762ae05a0a97c6263e2e6d7a4
+ms.sourcegitcommit: 90c3187d804ad7544367829d07ed4b47d3f8a72d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62892864"
+ms.lasthandoff: 08/06/2019
+ms.locfileid: "68821560"
 ---
 # <a name="walkthrough-bind-to-data-in-xaml-designer"></a>Tutorial: Enlace a datos en el Diseñador XAML
 
-En el diseñador XAML, puedes establecer las propiedades de enlace de datos con la mesa de trabajo y la ventana Propiedades. En el ejemplo de este tutorial se muestra cómo enlazar datos a un control. En concreto, el tutorial muestra cómo crear una clase simple de carro de la compra que tenga una propiedad [DependencyProperty](/uwp/api/Windows.UI.Xaml.DependencyProperty) denominada `ItemCount` y luego enlazar la propiedad `ItemCount` a la propiedad **Text** de un control [TextBlock](/uwp/api/Windows.UI.Xaml.Controls.TextBlock).
+En el diseñador XAML, puedes establecer las propiedades de enlace de datos con la mesa de trabajo y la ventana Propiedades. En el ejemplo de este tutorial se muestra cómo enlazar datos a un control. En concreto, el tutorial muestra cómo crear una clase simple de carro de la compra que tenga una propiedad [DependencyProperty](xref:Windows.UI.Xaml.DependencyProperty) denominada `ItemCount` y luego enlazar la propiedad `ItemCount` a la propiedad **Text** de un control [TextBlock](xref:Windows.UI.Xaml.Controls.TextBlock).
 
 ## <a name="to-create-a-class-to-use-as-a-data-source"></a>Para crear una clase con el fin de usarla como origen de datos
 
@@ -65,7 +63,7 @@ En el diseñador XAML, puedes establecer las propiedades de enlace de datos con 
    End Class
    ```
 
-   Este código establece un valor de 0 como el número predeterminado de elementos mediante el objeto [PropertyMetadata](/uwp/api/Windows.UI.Xaml.PropertyMetadata).
+   Este código establece un valor de 0 como el número predeterminado de elementos mediante el objeto [PropertyMetadata](xref:Windows.UI.Xaml.PropertyMetadata).
 
 1. En el menú **Archivo**, elija **Compilar** > **Compilar solución**.
 
@@ -73,7 +71,7 @@ En el diseñador XAML, puedes establecer las propiedades de enlace de datos con 
 
 1. En el Explorador de soluciones, abra el menú contextual de **MainWindow.xaml** y elija **Diseñador de vistas**.
 
-1. En el cuadro de herramientas, elija un control [Grid](/uwp/api/Windows.UI.Xaml.Controls.Grid) y agréguelo al formulario.
+1. En el cuadro de herramientas, elija un control [Grid](xref:Windows.UI.Xaml.Controls.Grid) y agréguelo al formulario.
 
 1. Con el control `Grid` seleccionado, en la ventana Propiedades, elija el botón **Nuevo** situado junto a la propiedad **DataContext**.
 
