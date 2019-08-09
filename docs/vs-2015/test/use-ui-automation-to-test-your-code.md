@@ -17,12 +17,12 @@ ms.assetid: ad9e3eaa-ab86-436e-95b8-dc20eb1f8b2a
 caps.latest.revision: 87
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 9e2cc2f08032d9281e3c86990201315fb8bf3937
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 54a050fc6d9d585be2613a27ca177dc77af61121
+ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67825542"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68871631"
 ---
 # <a name="use-ui-automation-to-test-your-code"></a>Usar UI Automation para probar el código
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -168,7 +168,7 @@ Las pruebas automatizadas que controlan la aplicación a través de la interfaz 
 - ![Requisito previo](../test/media/prereq.png "Prereq") Puede agregar un método de limpieza de pruebas, identificado mediante un atributo [TestCleanup], que ejecute código al final de cada método de prueba. Por ejemplo, el método para cerrar la aplicación podría invocarse desde el método TestCleanup.
 
 ### <a name="VerifyingCodeUsingCUITGenerateAssertions"></a> Validar las propiedades de los controles de IU
- Puede usar el **Generador de pruebas de IU codificadas** para agregar un control de interfaz de usuario a <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UIMap.UIMap> para la prueba o generar código para un método de validación que usa una aserción para un control de IU.
+ Puede usar el **generador de pruebas de IU codificadas** para agregar un control de interfaz de usuario (IU) al [UIMap](/previous-versions/dd580454(v=vs.140)) para la prueba, o para generar código para un método de validación que utiliza una aserción para un control de IU.
 
  Para generar aserciones para los controles de IU, elija la herramienta **Agregar aserciones** del generador de pruebas de IU codificadas y arrástrela al control de la aplicación en pruebas que desea comprobar si es correcto. Cuando el cuadro rodee el control, suelte el mouse. El código de clase de control se crea inmediatamente en el archivo `UIMap.Designer.cs`.
 
@@ -220,8 +220,8 @@ Las pruebas automatizadas que controlan la aplicación a través de la interfaz 
   }
   ```
 
-  *El control que deseo seleccionar pierde el foco y desaparece cuando intento seleccionar la herramienta Agregar aserciones en el generador de pruebas de IU codificadas. ¿Cómo se selecciona el control? * 
-   **Seleccionar un control oculto mediante el teclado**
+  *El control que deseo seleccionar pierde el foco y desaparece cuando intento seleccionar la herramienta Agregar aserciones en el generador de pruebas de IU codificadas. Cómo seleccionar el control? Seleccionar un **control oculto mediante el teclado** * 
+  
 
   A veces, al [agregar controles y validar sus propiedades](#VerifyingCodeUsingCUITGenerateAssertions), es posible que tenga que usar el teclado. Por ejemplo, al intentar grabar una prueba de IU codificada que usa un control de menú contextual, la lista de elementos del menú del control perderá el foco y desaparecerá cuando se intente seleccionar la herramienta Agregar aserciones desde el generador de pruebas de IU codificadas. Esto se muestra en la ilustración siguiente, donde el menú contextual de Internet Explorer perderá el foco y desaparecerá si intenta seleccionarlo con la herramienta Agregar aserciones.
 
@@ -449,7 +449,7 @@ Mouse.Hover(uIItem1Text, new Point(87, 9));
 
 - [Ejecutar pruebas automatizadas en Microsoft Test Manager](https://msdn.microsoft.com/0632f265-63fe-4859-a413-9bb934c66835)
 
-- [Cómo: Configurar y ejecutar pruebas programadas después de compilar la aplicación](https://msdn.microsoft.com/32acfeb1-b1aa-4afb-8cfe-cc209e6183fd)
+- [Procedimientos: Configurar y ejecutar pruebas programadas después de compilar la aplicación](https://msdn.microsoft.com/32acfeb1-b1aa-4afb-8cfe-cc209e6183fd)
 
 - [Ejecutar pruebas en el proceso de compilación](https://msdn.microsoft.com/library/d05743a1-c5cf-447e-bed9-bed3cb595e38)
 
@@ -465,14 +465,14 @@ Mouse.Hover(uIItem1Text, new Point(87, 9));
 
 - [Extender las pruebas de IU codificadas y las grabaciones de acciones para la compatibilidad con Microsoft Excel](../test/extending-coded-ui-tests-and-action-recordings-to-support-microsoft-excel.md)
 
-  Las pruebas de IU codificadas se suelen usar para automatizar las pruebas manuales. Para obtener más información, consulte [pruebas para entrega continua con Visual Studio 2012 – capítulo 5: Automatizar pruebas del sistema](http://go.microsoft.com/fwlink/?LinkID=255196). Para obtener más información acerca de las pruebas manuales, consulte [[retirado] Crear casos de prueba manuales mediante Microsoft Test Manager](https://msdn.microsoft.com/library/9989e184-c8e4-444b-998d-a1a5ec94461e). Para obtener más información sobre las pruebas del sistema automatizadas, consulte [Crear pruebas automatizadas mediante Microsoft Test Manager](https://msdn.microsoft.com/7b5075ee-ddfe-411d-b1d4-94283550a5d0).
+  Las pruebas de IU codificadas se suelen usar para automatizar las pruebas manuales. Para obtener orientación adicional, [Vea pruebas para la entrega continua con Visual Studio 2012 – capítulo 5: Automatizar las pruebas](http://go.microsoft.com/fwlink/?LinkID=255196)del sistema. Para obtener más información acerca de las pruebas manuales, consulte [[retirado] Crear casos de prueba manuales mediante Microsoft Test Manager](https://msdn.microsoft.com/library/9989e184-c8e4-444b-998d-a1a5ec94461e). Para obtener más información sobre las pruebas del sistema automatizadas, consulte [Crear pruebas automatizadas mediante Microsoft Test Manager](https://msdn.microsoft.com/7b5075ee-ddfe-411d-b1d4-94283550a5d0).
 
 ## <a name="external-resources"></a>Recursos externos
 
 ### <a name="guidance"></a>Guía
-- [Pruebas para entrega continua con Visual Studio 2012 – capítulo 2: Pruebas unitarias: Prueba del interior](http://go.microsoft.com/fwlink/?LinkID=255188)
+- [Pruebas para la entrega continua con Visual Studio 2012 – capítulo 2: Pruebas unitarias: Probar el interior](http://go.microsoft.com/fwlink/?LinkID=255188)
 
-- [Pruebas para entrega continua con Visual Studio 2012 – capítulo 5: Automatizar pruebas del sistema](http://go.microsoft.com/fwlink/?LinkID=255196)
+- [Pruebas para la entrega continua con Visual Studio 2012 – capítulo 5: Automatizar pruebas del sistema](http://go.microsoft.com/fwlink/?LinkID=255196)
 
 ### <a name="faq"></a>Preguntas más frecuentes
 - [Preguntas más frecuentes sobre las pruebas de IU codificadas - 1](http://go.microsoft.com/fwlink/?LinkID=230576)
@@ -484,7 +484,7 @@ Mouse.Hover(uIItem1Text, new Point(87, 9));
 
 ## <a name="see-also"></a>Vea también
 
-- <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UIMap.UIMap>
+- [UIMap](/previous-versions/dd580454(v=vs.140))
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert>
 - [Mejorar la calidad del código](https://msdn.microsoft.com/library/73baa961-c21f-43fe-bb92-3f59ae9b5945)
 - [Tutorial: Crear, editar y mantener una prueba automatizada de IU](../test/walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md)

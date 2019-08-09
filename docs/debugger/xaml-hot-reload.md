@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2728f26319b3d395381d60f136fba7d0c20da977
-ms.sourcegitcommit: 90c3187d804ad7544367829d07ed4b47d3f8a72d
+ms.openlocfilehash: 0acacac883153990861385c96eeb3379c464f97f
+ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/06/2019
-ms.locfileid: "68822144"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68871000"
 ---
 # <a name="write-and-debug-running-xaml-code-with-xaml-hot-reload-in-visual-studio"></a>Escribir y depurar código XAML en ejecución con la recarga activa de XAML en Visual Studio
 
@@ -53,7 +53,7 @@ A continuación se indican las limitaciones conocidas de la recarga activa de XA
 Es posible que se produzcan los siguientes errores al usar la recarga activa de XAML.
 
 |Mensaje de error|DESCRIPCIÓN|
-|-|-|-|
+|-|-|
 |Error al comprobar el evento|Error indica que está intentando conectar un evento a uno de los controles, lo que no se admite mientras la aplicación se está ejecutando.|
 |Editar y continuar de XAML no ha encontrado elementos para actualizar.|Se produce un error cuando se edita XAML que no se puede actualizar en la aplicación.</br> A veces, este error puede solucionarse mediante la aplicación en ejecución para navegar a una vista en la que se usa el código XAML.</br> A veces, este error significa que no se puede aplicar el cambio específico hasta que se reinicie la sesión de depuración. |
 |Este cambio no se admite durante una sesión de depuración.|Error indica que el cambio que está intentando no es compatible con la recarga activa de XAML. Detenga la sesión de depuración, realice el cambio y, a continuación, reinicie la sesión de depuración.|

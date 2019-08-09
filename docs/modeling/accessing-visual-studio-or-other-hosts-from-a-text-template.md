@@ -8,14 +8,14 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a75dc86a45c78f6b57d5a326c8c342eca70b26e0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 26845b3878a89ea52a3f77f9a0a8d23363877edd
+ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62960468"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68870686"
 ---
-# <a name="access-visual-studio-or-other-hosts-from-a-text-template"></a>Acceder a Visual Studio u otros hosts desde una plantilla de texto
+# <a name="access-visual-studio-or-other-hosts-from-a-text-template"></a>Acceso a Visual Studio u otros hosts desde una plantilla de texto
 
 En una plantilla de texto, puede usar los métodos y propiedades expuestos por el host que ejecuta la plantilla. Visual Studio es un ejemplo de un host.
 
@@ -24,7 +24,7 @@ En una plantilla de texto, puede usar los métodos y propiedades expuestos por e
 
 ## <a name="obtain-access-to-the-host"></a>Obtener acceso al host
 
-Para tener acceso al host, establezca `hostspecific="true"` en el `template` directiva. Ahora puede usar `this.Host`, que tiene el tipo <xref:Microsoft.VisualStudio.TextTemplating.ITextTemplatingEngineHost>. El <xref:Microsoft.VisualStudio.TextTemplating.ITextTemplatingEngineHost> tipo tiene miembros que puede usar, por ejemplo, para resolver los nombres de archivo y registro de errores.
+Para tener acceso al host, establezca `hostspecific="true"` en el `template` directiva. Ahora puede usar `this.Host`, que tiene el tipo [ITextTemplatingEngineHost](/previous-versions/visualstudio/visual-studio-2012/bb126505(v=vs.110)). El tipo [ITextTemplatingEngineHost](/previous-versions/visualstudio/visual-studio-2012/bb126505(v=vs.110)) tiene miembros que se pueden usar para resolver nombres de archivo y registrar errores, por ejemplo.
 
 ### <a name="resolve-file-names"></a>Resolver nombres de archivo
 
