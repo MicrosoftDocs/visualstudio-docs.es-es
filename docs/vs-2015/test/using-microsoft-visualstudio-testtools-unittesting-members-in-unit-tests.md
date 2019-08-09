@@ -8,12 +8,12 @@ ms.assetid: 0fa335fd-e442-448f-913f-25a19df90a93
 caps.latest.revision: 8
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 8bbf75bfe218945453d25440c868a95675168631
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 93a62b6fe5493b78a3c18c1adb87761cdb894670
+ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65705883"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68871558"
 ---
 # <a name="using-microsoftvisualstudiotesttoolsunittesting-members-in-unit-tests"></a>Usar miembros de Microsoft.VisualStudio.TestTools.UnitTesting en pruebas unitarias
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,7 +30,7 @@ El marco de pruebas unitarias es compatible con pruebas unitarias en [!INCLUDE[v
 > `[TestClassAttribute()]`
 
 ### <a name="elements-used-for-data-driven-testing"></a>Elementos utilizados para pruebas controladas por datos
- Utilice los siguientes elementos para configurar pruebas unitarias controladas por datos. Para obtener más información, vea el tema sobre [cómo Crear una prueba unitaria controlada por datos](../test/how-to-create-a-data-driven-unit-test.md) y [Tutorial: Uso de un archivo de configuración para definir un origen de datos](../test/walkthrough-using-a-configuration-file-to-define-a-data-source.md).
+ Utilice los siguientes elementos para configurar pruebas unitarias controladas por datos. Para obtener más información, vea el tema sobre [cómo Crear una prueba](../test/how-to-create-a-data-driven-unit-test.md) unitaria controlada por datos y [un tutorial: Usar un archivo de configuración para definir un origen](../test/walkthrough-using-a-configuration-file-to-define-a-data-source.md)de datos.
 
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.DataAccessMethod>
 
@@ -106,7 +106,7 @@ El marco de pruebas unitarias es compatible con pruebas unitarias en [!INCLUDE[v
 
 ## <a name="test-configuration-classes"></a>Clases de configuración de prueba
 
-- <xref:Microsoft.TeamFoundation.TestManagement.Client.ObjectTypes>
+- [ObjectTypes](/previous-versions/visualstudio/visual-studio-2013/dd987428(v=vs.120))
 
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestConfigurationSection>
 
