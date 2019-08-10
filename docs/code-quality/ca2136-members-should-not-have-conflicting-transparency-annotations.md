@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7b73148800c60280ed72e0d5f8014cfe6b97d217
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 1dcef8fbfd61b8cd8c946f76d6fcb93dc46f1654
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62542214"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68920632"
 ---
 # <a name="ca2136-members-should-not-have-conflicting-transparency-annotations"></a>CA2136: Los miembros no deben tener anotaciones de transparencia en conflicto
 
@@ -31,19 +31,19 @@ ms.locfileid: "62542214"
 |Categoría|Microsoft.Security|
 |Cambio problemático|Problemático|
 
-## <a name="cause"></a>Motivo
- Esta regla se desencadena cuando un miembro de tipo se marca con un <xref:System.Security> atributo de seguridad que tiene una transparencia diferente que el atributo de seguridad de un contenedor del miembro.
+## <a name="cause"></a>Causa
+Esta regla se desencadena cuando un miembro de tipo se marca <xref:System.Security> con un atributo de seguridad que tiene una transparencia diferente que el atributo de seguridad de un contenedor del miembro.
 
 ## <a name="rule-description"></a>Descripción de la regla
- Los atributos de transparencia se aplican de los elementos de código de ámbito mayor a los elementos de ámbito menor. Los atributos de transparencia de los elementos de código con mayor ámbito tienen prioridad sobre los atributos de transparencia de los elementos de código incluidos en el primer elemento. Por ejemplo, una clase marcada con el <xref:System.Security.SecurityCriticalAttribute> atributo no puede contener un método marcado con el <xref:System.Security.SecuritySafeCriticalAttribute> atributo.
+Los atributos de transparencia se aplican de los elementos de código de ámbito mayor a los elementos de ámbito menor. Los atributos de transparencia de los elementos de código con mayor ámbito tienen prioridad sobre los atributos de transparencia de los elementos de código incluidos en el primer elemento. Por ejemplo, una clase marcada con el <xref:System.Security.SecurityCriticalAttribute> atributo no puede contener un método marcado con el <xref:System.Security.SecuritySafeCriticalAttribute> atributo.
 
 ## <a name="how-to-fix-violations"></a>Cómo corregir infracciones
- Para corregir esta infracción, quite el atributo de seguridad desde el elemento de código que tiene un ámbito inferior o cambie su atributo para que sea el mismo que el elemento de código que lo contiene.
+Para corregir esta infracción, quite el atributo de seguridad del elemento de código que tiene un ámbito inferior o cambie el atributo para que sea el mismo que el elemento de código contenedor.
 
-## <a name="when-to-suppress-warnings"></a>Cuándo Suprimir advertencias
- No suprima las advertencias de esta regla.
+## <a name="when-to-suppress-warnings"></a>Cuándo suprimir advertencias
+No suprima las advertencias de esta regla.
 
 ## <a name="example"></a>Ejemplo
- En el ejemplo siguiente, un método está marcado con el <xref:System.Security.SecuritySafeCriticalAttribute> atributo y es un miembro de una clase marcada con el <xref:System.Security.SecurityCriticalAttribute> atributo. El atributo de prueba de errores de seguridad se debe quitar.
+En el ejemplo siguiente, un método se marca con el <xref:System.Security.SecuritySafeCriticalAttribute> atributo y es miembro de una clase marcada con el <xref:System.Security.SecurityCriticalAttribute> atributo. Se debe quitar el atributo Safe Security.
 
- [!code-csharp[FxCop.Security.CA2136.TransparencyAnnotationsShouldNotConflict#1](../code-quality/codesnippet/CSharp/ca2136-members-should-not-have-conflicting-transparency-annotations_1.cs)]
+[!code-csharp[FxCop.Security.CA2136.TransparencyAnnotationsShouldNotConflict#1](../code-quality/codesnippet/CSharp/ca2136-members-should-not-have-conflicting-transparency-annotations_1.cs)]

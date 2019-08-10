@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 4c0aa3fe5c45e34445c49c4b3a5f0abad1e98739
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 78917bcd4c67e1da205595bac07c8e0e5947318d
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62779342"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68923060"
 ---
 # <a name="ca1018-mark-attributes-with-attributeusageattribute"></a>CA1018: Marcar atributos con AttributeUsageAttribute
 
@@ -33,30 +33,30 @@ ms.locfileid: "62779342"
 |Categoría|Microsoft.Design|
 |Cambio problemático|Problemático|
 
-## <a name="cause"></a>Motivo
- El <xref:System.AttributeUsageAttribute?displayProperty=fullName> atributo no está presente en el atributo personalizado.
+## <a name="cause"></a>Causa
+El <xref:System.AttributeUsageAttribute?displayProperty=fullName> atributo no está presente en el atributo personalizado.
 
 ## <a name="rule-description"></a>Descripción de la regla
- Al definir un atributo personalizado, márquelo utilizando <xref:System.AttributeUsageAttribute> para indicar dónde se puede aplicar el atributo personalizado en el código fuente. El significado de un atributo y el uso que se le va a dar determinará sus ubicaciones válidas en código. Por ejemplo, podría definir un atributo que identifica a la persona responsable de mantener y mejorar cada tipo en una biblioteca y que siempre se asigna la responsabilidad en el nivel de tipo. En este caso, los compiladores deben habilitar el atributo en clases, enumeraciones e interfaces, pero no deben habilitar en los métodos, eventos o propiedades. Procedimientos y directivas organizativas podrían dictar si el atributo debe estar habilitado en los ensamblados.
+Al definir un atributo personalizado, márquelo <xref:System.AttributeUsageAttribute> con para indicar dónde se puede aplicar el atributo personalizado en el código fuente. El significado de un atributo y el uso que se le va a dar determinará sus ubicaciones válidas en código. Por ejemplo, podría definir un atributo que identifique a la persona responsable de mantener y mejorar cada tipo en una biblioteca, y esa responsabilidad siempre se asigna en el nivel de tipo. En este caso, los compiladores deberían habilitar el atributo en las clases, enumeraciones e interfaces, pero no deben habilitarlo en métodos, eventos o propiedades. Las directivas y los procedimientos de la organización determinarán si el atributo debe estar habilitado en los ensamblados.
 
- El <xref:System.AttributeTargets?displayProperty=fullName> enumeración define los destinos que se pueden especificar para un atributo personalizado. Si se omite <xref:System.AttributeUsageAttribute>, el atributo personalizado será válido para todos los destinos, como se define en el `All` valor <xref:System.AttributeTargets> enumeración.
+La <xref:System.AttributeTargets?displayProperty=fullName> enumeración define los destinos que se pueden especificar para un atributo personalizado. Si se omite <xref:System.AttributeUsageAttribute>, el atributo personalizado será válido para todos los destinos, tal y como se `All` define en <xref:System.AttributeTargets> el valor de enumeración.
 
 ## <a name="how-to-fix-violations"></a>Cómo corregir infracciones
- Para corregir una infracción de esta regla, especifique los destinos para el atributo con <xref:System.AttributeUsageAttribute>. Vea el ejemplo siguiente.
+Para corregir una infracción de esta regla, especifique los destinos para el atributo <xref:System.AttributeUsageAttribute>mediante. Consulte el ejemplo siguiente.
 
-## <a name="when-to-suppress-warnings"></a>Cuándo Suprimir advertencias
- Debe corregir una infracción de esta regla en lugar de excluir el mensaje. Incluso si el atributo hereda <xref:System.AttributeUsageAttribute>, el atributo debe estar presente para simplificar el mantenimiento del código.
+## <a name="when-to-suppress-warnings"></a>Cuándo suprimir advertencias
+Debe corregir una infracción de esta regla en lugar de excluir el mensaje. Incluso si el atributo hereda <xref:System.AttributeUsageAttribute>, el atributo debe estar presente para simplificar el mantenimiento del código.
 
 ## <a name="example"></a>Ejemplo
- El siguiente ejemplo define dos atributos. `BadCodeMaintainerAttribute` omite incorrectamente la <xref:System.AttributeUsageAttribute> instrucción, y `GoodCodeMaintainerAttribute` implementa correctamente el atributo que se describe anteriormente en esta sección. Tenga en cuenta que la propiedad `DeveloperName` requerido por la regla de diseño [CA1019: Definir descriptores de acceso para los argumentos de atributo](../code-quality/ca1019-define-accessors-for-attribute-arguments.md) y se incluye por razones de integridad.
+En el ejemplo siguiente se definen dos atributos. `BadCodeMaintainerAttribute`omite incorrectamente la <xref:System.AttributeUsageAttribute> instrucción y `GoodCodeMaintainerAttribute` implementa correctamente el atributo que se ha descrito anteriormente en esta sección. Tenga en cuenta que `DeveloperName` la regla [de diseño requiere la propiedad CA1019: Definir los descriptores de](../code-quality/ca1019-define-accessors-for-attribute-arguments.md) acceso para los argumentos de atributo y se incluye por integridad.
 
- [!code-csharp[FxCop.Design.AttributeUsage#1](../code-quality/codesnippet/CSharp/ca1018-mark-attributes-with-attributeusageattribute_1.cs)]
- [!code-vb[FxCop.Design.AttributeUsage#1](../code-quality/codesnippet/VisualBasic/ca1018-mark-attributes-with-attributeusageattribute_1.vb)]
+[!code-csharp[FxCop.Design.AttributeUsage#1](../code-quality/codesnippet/CSharp/ca1018-mark-attributes-with-attributeusageattribute_1.cs)]
+[!code-vb[FxCop.Design.AttributeUsage#1](../code-quality/codesnippet/VisualBasic/ca1018-mark-attributes-with-attributeusageattribute_1.vb)]
 
 ## <a name="related-rules"></a>Reglas relacionadas
- [CA1019: Definir descriptores de acceso para los argumentos de atributo](../code-quality/ca1019-define-accessors-for-attribute-arguments.md)
+[CA1019: Definir los descriptores de acceso para los argumentos de atributo](../code-quality/ca1019-define-accessors-for-attribute-arguments.md)
 
- [CA1813: Evitar atributos no sellados](../code-quality/ca1813-avoid-unsealed-attributes.md)
+[CA1813: Evitar atributos no sellados](../code-quality/ca1813-avoid-unsealed-attributes.md)
 
 ## <a name="see-also"></a>Vea también
 

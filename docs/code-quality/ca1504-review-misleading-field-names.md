@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0c58a0a27c11aea2954d4950b742a8928f98732e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: df6ab704c2dfdbf8ebdf8eb42f56d8d64600736f
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62546328"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68921826"
 ---
 # <a name="ca1504-review-misleading-field-names"></a>CA1504: Revisar los nombres de campos erróneos
 
@@ -27,17 +27,17 @@ ms.locfileid: "62546328"
 |-|-|
 |TypeName|ReviewMisleadingFieldNames|
 |Identificador de comprobación|CA1504|
-|Categoría|Microsoft.Maintainability|
+|Categoría|Microsoft. mantenibilidad|
 |Cambio problemático|Poco problemático|
 
-## <a name="cause"></a>Motivo
- El nombre de un campo de instancia empieza por "s_" o el nombre de un `static` (`Shared` en [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]) campo empieza por "m_".
+## <a name="cause"></a>Causa
+El nombre de un campo de instancia comienza por "s_" o el nombre de `static` un`Shared` campo [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)](en) comienza por "m_".
 
 ## <a name="rule-description"></a>Descripción de la regla
- Los nombres de campo que empiezan por "s_" están asociados con datos estáticos entre varios usuarios. De forma similar, los nombres de campo que empiezan por "m_" se asocian con datos de instancia (miembro). Para mantener más fácilmente el código, los nombres deben seguir las convenciones de usadas general.
+Muchos usuarios asocian los nombres de campo que empiezan por "s_" a los datos estáticos. Del mismo modo, los nombres de campo que empiezan por "m_" están asociados a datos de instancia (miembro). Para que el código sea más fácil de mantener, los nombres deben seguir las convenciones de uso general.
 
 ## <a name="how-to-fix-violations"></a>Cómo corregir infracciones
- Para corregir una infracción de esta regla, cambie el nombre del campo con el prefijo adecuado. Como alternativa, hacer que el campo está de acuerdo con el sufijo actual agregando o quitando la `static` modificador.
+Para corregir una infracción de esta regla, cambie el nombre del campo con el prefijo adecuado. Como alternativa, haga que el campo esté de acuerdo con el sufijo actual agregando `static` o quitando el modificador.
 
-## <a name="when-to-suppress-warnings"></a>Cuándo Suprimir advertencias
- No suprima las advertencias de esta regla.
+## <a name="when-to-suppress-warnings"></a>Cuándo suprimir advertencias
+No suprima las advertencias de esta regla.

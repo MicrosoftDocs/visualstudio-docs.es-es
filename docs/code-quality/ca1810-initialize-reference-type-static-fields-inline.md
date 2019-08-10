@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 1fca9742a4fe5e778c0b172adad7996dcad58ca4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 8838de46c6b14f698194f343aebec30402452970
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62796876"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68921528"
 ---
 # <a name="ca1810-initialize-reference-type-static-fields-inline"></a>CA1810: Inicializar campos estáticos de tipo de referencia insertados
 
@@ -33,34 +33,34 @@ ms.locfileid: "62796876"
 |Categoría|Microsoft.Performance|
 |Cambio problemático|Poco problemático|
 
-## <a name="cause"></a>Motivo
- Un tipo de referencia declara un constructor estático explícito.
+## <a name="cause"></a>Causa
+Un tipo de referencia declara un constructor estático explícito.
 
 ## <a name="rule-description"></a>Descripción de la regla
- Cuando un tipo declara un constructor estático explícito, el compilador Just-In-Time (JIT) agrega una comprobación a cada constructor de instancia y a cada método estático del tipo para asegurarse de que se ha llamado anteriormente al constructor estático. La inicialización estática se desencadena cuando se tiene acceso a cualquier miembro estático o cuando se crea una instancia del tipo. Sin embargo, la inicialización estática no se desencadena si se declara una variable del tipo pero no lo utilice, que puede ser importante si la inicialización cambia el estado global.
+Cuando un tipo declara un constructor estático explícito, el compilador Just-In-Time (JIT) agrega una comprobación a cada constructor de instancia y a cada método estático del tipo para asegurarse de que se ha llamado anteriormente al constructor estático. La inicialización estática se desencadena cuando se tiene acceso a cualquier miembro estático o cuando se crea una instancia del tipo. Sin embargo, la inicialización estática no se desencadena si se declara una variable del tipo pero no se usa, lo que puede ser importante si la inicialización cambia el estado global.
 
- Cuando todos los datos estáticos está alineada inicializado y no se declara un constructor estático explícito, agregan los compiladores de lenguaje intermedio (MSIL) de Microsoft la `beforefieldinit` indicador y un constructor estático implícito, que inicializa los datos estáticos para el tipo MSIL definición. Cuando se encuentra el compilador JIT la `beforefieldinit` marca, la mayoría de los casos no se agregan las comprobaciones del constructor estático. Se garantiza que la inicialización estática que se produzca en algún momento antes de que se tiene acceso a los campos estáticos, pero no antes de invoca un constructor de instancia o método estático. Tenga en cuenta que la inicialización estática puede producirse en cualquier momento después de declara una variable del tipo.
+Cuando todos los datos estáticos se inicializan en línea y no se declara un constructor estático explícito, los compiladores del lenguaje intermedio de Microsoft `beforefieldinit` (MSIL) agregan la marca y un constructor estático implícito, que inicializa los datos estáticos, al tipo de MSIL. definir. Cuando el compilador JIT encuentra la `beforefieldinit` marca, no se agrega la mayor parte del tiempo que las comprobaciones del constructor estático. Se garantiza que la inicialización estática se produce en algún momento antes de que se tenga acceso a los campos estáticos, pero no antes de que se invoque un método estático o un constructor de instancia. Tenga en cuenta que la inicialización estática puede producirse en cualquier momento después de declarar una variable del tipo.
 
- Las comprobaciones del constructor estático pueden reducir el rendimiento. A menudo se usa un constructor estático solo para inicializar campos estáticos, en cuyo caso debe solo asegurarse de que la inicialización estática se produce antes del primer acceso a un campo estático. El `beforefieldinit` comportamiento es adecuado para estos y muchos otros tipos. No es adecuado sólo cuando la inicialización estática afecta al estado global y se cumple una de las siguientes acciones:
+Las comprobaciones del constructor estático pueden reducir el rendimiento. A menudo, solo se usa un constructor estático para inicializar campos estáticos, en cuyo caso solo debe asegurarse de que la inicialización estática se produce antes del primer acceso de un campo estático. El `beforefieldinit` comportamiento es adecuado para estos y otros tipos. Solo es apropiado cuando la inicialización estática afecta al estado global y se cumple una de las siguientes condiciones:
 
-- El efecto sobre el estado global es costoso y no es necesario si no se utiliza el tipo.
+- El efecto en el estado global es costoso y no es necesario si no se utiliza el tipo.
 
-- Los efectos de estado global se pueden acceder sin tener acceso a los campos estáticos del tipo.
+- Se puede tener acceso a los efectos globales de estado sin tener acceso a los campos estáticos del tipo.
 
 ## <a name="how-to-fix-violations"></a>Cómo corregir infracciones
- Para corregir una infracción de esta regla, inicialice todos los datos estáticos cuando se declara y quite el constructor estático.
+Para corregir una infracción de esta regla, inicialice todos los datos estáticos cuando se declara y quite el constructor estático.
 
-## <a name="when-to-suppress-warnings"></a>Cuándo Suprimir advertencias
- Es seguro suprimir una advertencia de esta regla si el rendimiento no es una preocupación; o si los cambios de estado global causados por la inicialización estática son costosos o deben garantizarse que se produzca antes de que se llama a un método estático del tipo o se crea una instancia del tipo.
+## <a name="when-to-suppress-warnings"></a>Cuándo suprimir advertencias
+Es seguro suprimir una advertencia de esta regla si el rendimiento no es un problema. o bien, si los cambios de estado global causados por la inicialización estática son caros o se debe garantizar que se produzcan antes de que se llame a un método estático del tipo o se cree una instancia del tipo.
 
 ## <a name="example"></a>Ejemplo
 
-El ejemplo siguiente muestra un tipo, `StaticConstructor`, que infringe la regla y un tipo, `NoStaticConstructor`, que reemplaza el constructor estático con la inicialización en línea para cumplir la regla.
+En el ejemplo siguiente se muestra un `StaticConstructor`tipo,, que infringe la regla y un tipo `NoStaticConstructor`,, que reemplaza el constructor estático con la inicialización alineada para satisfacer la regla.
 
 [!code-csharp[FxCop.Performance.RefTypeStaticCtor#1](../code-quality/codesnippet/CSharp/ca1810-initialize-reference-type-static-fields-inline_1.cs)]
 [!code-vb[FxCop.Performance.RefTypeStaticCtor#1](../code-quality/codesnippet/VisualBasic/ca1810-initialize-reference-type-static-fields-inline_1.vb)]
 
-Tenga en cuenta la adición de la `beforefieldinit` marca en la definición de MSIL para el `NoStaticConstructor` clase.
+Observe la adición de la `beforefieldinit` marca en la definición de MSIL para `NoStaticConstructor` la clase.
 
 ```
 .class public auto ansi StaticConstructor
@@ -76,4 +76,4 @@ extends [mscorlib]System.Object
 
 ## <a name="related-rules"></a>Reglas relacionadas
 
-- [CA2207: Inicializar campos estáticos de tipo de valor insertados](../code-quality/ca2207-initialize-value-type-static-fields-inline.md)
+- [CA2207 Inicializar campos estáticos de tipo de valor insertados](../code-quality/ca2207-initialize-value-type-static-fields-inline.md)

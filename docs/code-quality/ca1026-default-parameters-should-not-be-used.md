@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a5dc7f7e62526050eeabdb91a557bbdf0fbcf6da
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 888e1b5d551e357eb732dfe3f7661d51cbdf089d
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62779526"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68923141"
 ---
 # <a name="ca1026-default-parameters-should-not-be-used"></a>CA1026: No deben usarse parámetros predeterminados
 
@@ -30,27 +30,27 @@ ms.locfileid: "62779526"
 |Categoría|Microsoft.Design|
 |Cambio problemático|Problemático|
 
-## <a name="cause"></a>Motivo
- Un tipo visible externamente contiene un método visible externamente que utiliza un parámetro predeterminado.
+## <a name="cause"></a>Causa
+Un tipo visible externamente contiene un método visible externamente que utiliza un parámetro predeterminado.
 
 ## <a name="rule-description"></a>Descripción de la regla
- Se permiten los métodos que utilizan parámetros predeterminados en el Common Language Specification (CLS); Sin embargo, CLS permite que los compiladores omitan los valores que se asignan a estos parámetros. Código que se escribe para los compiladores omitan los valores de parámetro predeterminado debe proporcionar explícitamente los argumentos para cada parámetro predeterminado. Para mantener el comportamiento que desea en lenguajes de programación, se deben reemplazar los métodos que utilizan parámetros predeterminados con sobrecargas de método que proporcionan los parámetros predeterminados.
+Los métodos que utilizan parámetros predeterminados se permiten en el Common Language Specification (CLS); sin embargo, CLS permite a los compiladores omitir los valores que se asignan a estos parámetros. El código que se escribe para los compiladores que omiten los valores de parámetro predeterminados debe proporcionar explícitamente argumentos para cada parámetro predeterminado. Para mantener el comportamiento que desea en los lenguajes de programación, los métodos que utilizan parámetros predeterminados deben reemplazarse por sobrecargas de método que proporcionan los parámetros predeterminados.
 
- Cuando tiene acceso a código administrado, el compilador omite los valores de parámetros predeterminados de extensión administrada de C++. El compilador de Visual Basic admite métodos que tienen parámetros predeterminados que usan el [opcional](/dotnet/visual-basic/language-reference/modifiers/optional) palabra clave.
+El compilador omite los valores de los parámetros predeterminados C++ para la extensión administrada para cuando tiene acceso al código administrado. El compilador Visual Basic admite métodos que tienen parámetros predeterminados que utilizan la palabra clave [opcional](/dotnet/visual-basic/language-reference/modifiers/optional) .
 
 ## <a name="how-to-fix-violations"></a>Cómo corregir infracciones
- Para corregir una infracción de esta regla, reemplace el método que utiliza los parámetros predeterminados con sobrecargas de método que proporcionan los parámetros predeterminados.
+Para corregir una infracción de esta regla, reemplace el método que usa los parámetros predeterminados con sobrecargas de método que proporcionan los parámetros predeterminados.
 
-## <a name="when-to-suppress-warnings"></a>Cuándo Suprimir advertencias
- No suprima las advertencias de esta regla.
+## <a name="when-to-suppress-warnings"></a>Cuándo suprimir advertencias
+No suprima las advertencias de esta regla.
 
 ## <a name="example"></a>Ejemplo
- El ejemplo siguiente muestra un método que utiliza los parámetros predeterminados y los métodos sobrecargados que proporcionan una funcionalidad equivalente.
+En el ejemplo siguiente se muestra un método que usa parámetros predeterminados y los métodos sobrecargados que proporcionan una funcionalidad equivalente.
 
- [!code-vb[FxCop.Design.DefaultParameters#1](../code-quality/codesnippet/VisualBasic/ca1026-default-parameters-should-not-be-used_1.vb)]
+[!code-vb[FxCop.Design.DefaultParameters#1](../code-quality/codesnippet/VisualBasic/ca1026-default-parameters-should-not-be-used_1.vb)]
 
 ## <a name="related-rules"></a>Reglas relacionadas
- [CA1025: Reemplaza argumentos repetitivos con una matriz de parámetros](../code-quality/ca1025-replace-repetitive-arguments-with-params-array.md)
+[CA1025: Reemplazar argumentos repetitivos con una matriz params](../code-quality/ca1025-replace-repetitive-arguments-with-params-array.md)
 
 ## <a name="see-also"></a>Vea también
- [Independencia del lenguaje y componentes independientes del lenguaje](/dotnet/standard/language-independence-and-language-independent-components)
+[Independencia del lenguaje y componentes independientes del lenguaje](/dotnet/standard/language-independence-and-language-independent-components)

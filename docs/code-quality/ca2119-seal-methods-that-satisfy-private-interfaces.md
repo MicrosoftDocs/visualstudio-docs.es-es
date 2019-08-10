@@ -18,12 +18,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 4c019e98e7f1311b6521dff563cb8e7bb0a2356e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 02e69a97468675cd6f7530793581c15717465d6f
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62544030"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68921059"
 ---
 # <a name="ca2119-seal-methods-that-satisfy-private-interfaces"></a>CA2119: Sellar los métodos que satisfacen las interfaces privadas
 
@@ -34,41 +34,41 @@ ms.locfileid: "62544030"
 |Categoría|Microsoft.Security|
 |Cambio problemático|Problemático|
 
-## <a name="cause"></a>Motivo
- Un tipo público heredable proporciona una implementación de método reemplazable de una `internal` (`Friend` en Visual Basic) interfaz.
+## <a name="cause"></a>Causa
+Un tipo público heredable proporciona una implementación de método reemplazable de `internal` una`Friend` interfaz (en Visual Basic).
 
 ## <a name="rule-description"></a>Descripción de la regla
- Los métodos de interfaz tienen accesibilidad pública, que no se puede cambiar el tipo de implementación. Una interfaz interna crea un contrato que no está pensado para implementarse fuera del ensamblado que define la interfaz. Un tipo público que implemente un método de una interfaz interna con el `virtual` (`Overridable` en Visual Basic) modificador permite que el método que sea reemplazado por un tipo derivado que está fuera del ensamblado. Si un segundo tipo en el ensamblado de definición llama al método y espera un contrato solo para uso interno, comportamiento podría estar en peligro cuando, en su lugar, se ejecuta el método invalidado en el ensamblado externo. Esto crea una vulnerabilidad de seguridad.
+Los métodos de interfaz tienen accesibilidad pública, que el tipo de implementación no puede cambiar. Una interfaz interna crea un contrato que no está diseñado para implementarse fuera del ensamblado que define la interfaz. Un tipo público que implementa un método de una interfaz interna mediante el `virtual` modificador (`Overridable` en Visual Basic) permite que un tipo derivado que está fuera del ensamblado invalide el método. Si un segundo tipo del ensamblado de definición llama al método y espera un contrato solo interno, el comportamiento puede verse comprometido cuando, en su lugar, se ejecuta el método invalidado en el ensamblado externo. Esto crea una vulnerabilidad de seguridad.
 
 ## <a name="how-to-fix-violations"></a>Cómo corregir infracciones
- Para corregir una infracción de esta regla, evitar que el método se invalide fuera del ensamblado utilizando uno de los siguientes:
+Para corregir una infracción de esta regla, evite que el método se invalide fuera del ensamblado mediante una de las siguientes acciones:
 
-- Convierta el tipo declarativo `sealed` (`NotInheritable` en Visual Basic).
+- Cree el tipo `sealed` declarativo`NotInheritable` (en Visual Basic).
 
-- Cambie la accesibilidad del tipo declarativo para `internal` (`Friend` en Visual Basic).
+- Cambie la accesibilidad del tipo declarativo a `internal` (`Friend` en Visual Basic).
 
 - Quite todos los constructores públicos del tipo declarativo.
 
-- Implemente el método sin utilizar el `virtual` modificador.
+- Implemente el método sin usar `virtual` el modificador.
 
-- Implementar el método de forma explícita.
+- Implemente el método explícitamente.
 
-## <a name="when-to-suppress-warnings"></a>Cuándo Suprimir advertencias
- Es seguro suprimir una advertencia de esta regla si, tras una revisión exhaustiva, existe ningún problema de seguridad que puede ser aprovechable si se reemplaza el método fuera del ensamblado.
+## <a name="when-to-suppress-warnings"></a>Cuándo suprimir advertencias
+Es seguro suprimir una advertencia de esta regla si, después de una revisión cuidadosa, no existe ningún problema de seguridad que pueda ser aprovechable si el método se invalida fuera del ensamblado.
 
 ## <a name="example-1"></a>Ejemplo 1
- El ejemplo siguiente muestra un tipo, `BaseImplementation`, que infringe esta regla.
+En el ejemplo siguiente se muestra un `BaseImplementation`tipo,, que infringe esta regla.
 
- [!code-cpp[FxCop.Security.SealMethods1#1](../code-quality/codesnippet/CPP/ca2119-seal-methods-that-satisfy-private-interfaces_1.cpp)]
- [!code-csharp[FxCop.Security.SealMethods1#1](../code-quality/codesnippet/CSharp/ca2119-seal-methods-that-satisfy-private-interfaces_1.cs)]
- [!code-vb[FxCop.Security.SealMethods1#1](../code-quality/codesnippet/VisualBasic/ca2119-seal-methods-that-satisfy-private-interfaces_1.vb)]
+[!code-cpp[FxCop.Security.SealMethods1#1](../code-quality/codesnippet/CPP/ca2119-seal-methods-that-satisfy-private-interfaces_1.cpp)]
+[!code-csharp[FxCop.Security.SealMethods1#1](../code-quality/codesnippet/CSharp/ca2119-seal-methods-that-satisfy-private-interfaces_1.cs)]
+[!code-vb[FxCop.Security.SealMethods1#1](../code-quality/codesnippet/VisualBasic/ca2119-seal-methods-that-satisfy-private-interfaces_1.vb)]
 
 ## <a name="example-2"></a>Ejemplo 2
- El ejemplo siguiente aprovecha la implementación del método virtual del ejemplo anterior.
+En el ejemplo siguiente se aprovecha la implementación del método virtual del ejemplo anterior.
 
- [!code-cpp[FxCop.Security.SealMethods2#1](../code-quality/codesnippet/CPP/ca2119-seal-methods-that-satisfy-private-interfaces_2.cpp)]
- [!code-csharp[FxCop.Security.SealMethods2#1](../code-quality/codesnippet/CSharp/ca2119-seal-methods-that-satisfy-private-interfaces_2.cs)]
- [!code-vb[FxCop.Security.SealMethods2#1](../code-quality/codesnippet/VisualBasic/ca2119-seal-methods-that-satisfy-private-interfaces_2.vb)]
+[!code-cpp[FxCop.Security.SealMethods2#1](../code-quality/codesnippet/CPP/ca2119-seal-methods-that-satisfy-private-interfaces_2.cpp)]
+[!code-csharp[FxCop.Security.SealMethods2#1](../code-quality/codesnippet/CSharp/ca2119-seal-methods-that-satisfy-private-interfaces_2.cs)]
+[!code-vb[FxCop.Security.SealMethods2#1](../code-quality/codesnippet/VisualBasic/ca2119-seal-methods-that-satisfy-private-interfaces_2.vb)]
 
 ## <a name="see-also"></a>Vea también
 

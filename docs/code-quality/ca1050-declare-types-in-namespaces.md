@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 8cac669b96f362d6da73e3eb2f373137c3d9bdd3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 869ff99243349ae01c63da0a7d9e6544761cbd39
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62778523"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68922498"
 ---
 # <a name="ca1050-declare-types-in-namespaces"></a>CA1050: Declarar tipos en espacios de nombres
 
@@ -33,26 +33,26 @@ ms.locfileid: "62778523"
 |Categoría|Microsoft.Design|
 |Cambio problemático|Problemático|
 
-## <a name="cause"></a>Motivo
- Se define un tipo público o protegido fuera del ámbito de un espacio de nombres.
+## <a name="cause"></a>Causa
+Un tipo público o protegido se define fuera del ámbito de un espacio de nombres con nombre.
 
 ## <a name="rule-description"></a>Descripción de la regla
- Los tipos se declaran en los espacios de nombres para evitar conflictos de nombres y como una manera de organizar los tipos relacionados en una jerarquía de objetos. Tipos que están fuera de cualquier espacio de nombres están en un espacio de nombres global que no se puede hacer referencia en el código.
+Los tipos se declaran en los espacios de nombres para evitar conflictos de nombres y como una manera de organizar los tipos relacionados en una jerarquía de objetos. Los tipos que están fuera de un espacio de nombres con nombre se encuentran en un espacio de nombres global al que no se puede hacer referencia en el código.
 
 ## <a name="how-to-fix-violations"></a>Cómo corregir infracciones
- Para corregir una infracción de esta regla, coloque el tipo en un espacio de nombres.
+Para corregir una infracción de esta regla, coloque el tipo en un espacio de nombres.
 
-## <a name="when-to-suppress-warnings"></a>Cuándo Suprimir advertencias
- Aunque nunca debe suprimir una advertencia de esta regla, es seguro hacerlo cuando el ensamblado nunca se usará junto con otros ensamblados.
-
-## <a name="example"></a>Ejemplo
- El ejemplo siguiente muestra una biblioteca que tiene un tipo declarado incorrectamente fuera de un espacio de nombres y un tipo que tiene el mismo nombre declarado en un espacio de nombres.
-
- [!code-csharp[FxCop.Design.TypesLiveInNamespaces#1](../code-quality/codesnippet/CSharp/ca1050-declare-types-in-namespaces_1.cs)]
- [!code-vb[FxCop.Design.TypesLiveInNamespaces#1](../code-quality/codesnippet/VisualBasic/ca1050-declare-types-in-namespaces_1.vb)]
+## <a name="when-to-suppress-warnings"></a>Cuándo suprimir advertencias
+Aunque nunca tenga que suprimir una advertencia de esta regla, es seguro hacerlo cuando el ensamblado nunca se usará junto con otros ensamblados.
 
 ## <a name="example"></a>Ejemplo
- La aplicación siguiente utiliza la biblioteca que se definió anteriormente. Tenga en cuenta que el tipo que se declara fuera de un espacio de nombres se crea cuando el nombre `Test` no está calificada con un espacio de nombres. Tenga en cuenta también que para tener acceso a la `Test` escriba `Goodspace`, se requiere el nombre del espacio de nombres.
+En el ejemplo siguiente se muestra una biblioteca que tiene un tipo declarado incorrectamente fuera de un espacio de nombres y un tipo con el mismo nombre declarado en un espacio de nombres.
 
- [!code-csharp[FxCop.Design.TestTypesLive#1](../code-quality/codesnippet/CSharp/ca1050-declare-types-in-namespaces_2.cs)]
- [!code-vb[FxCop.Design.TestTypesLive#1](../code-quality/codesnippet/VisualBasic/ca1050-declare-types-in-namespaces_2.vb)]
+[!code-csharp[FxCop.Design.TypesLiveInNamespaces#1](../code-quality/codesnippet/CSharp/ca1050-declare-types-in-namespaces_1.cs)]
+[!code-vb[FxCop.Design.TypesLiveInNamespaces#1](../code-quality/codesnippet/VisualBasic/ca1050-declare-types-in-namespaces_1.vb)]
+
+## <a name="example"></a>Ejemplo
+La siguiente aplicación usa la biblioteca que se definió anteriormente. Tenga en cuenta que el tipo que se declara fuera de un espacio de nombres `Test` se crea cuando el nombre no está calificado por un espacio de nombres. Tenga en cuenta también que para `Test` tener acceso `Goodspace`al tipo en, el nombre del espacio de nombres es obligatorio.
+
+[!code-csharp[FxCop.Design.TestTypesLive#1](../code-quality/codesnippet/CSharp/ca1050-declare-types-in-namespaces_2.cs)]
+[!code-vb[FxCop.Design.TestTypesLive#1](../code-quality/codesnippet/VisualBasic/ca1050-declare-types-in-namespaces_2.vb)]

@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3e4e7aa59d273242bd8b97fd4f2777b7edcb5990
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: de64e0271370a3cdcc6f0963dbf06925621b9b65
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62806672"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68920189"
 ---
 # <a name="ca2223-members-should-differ-by-more-than-return-type"></a>CA2223: Los miembros deben diferenciarse por algo más que por un tipo de valor devuelto
 
@@ -30,20 +30,20 @@ ms.locfileid: "62806672"
 |Categoría|Microsoft.Usage|
 |Cambio problemático|Problemático|
 
-## <a name="cause"></a>Motivo
- Dos miembros públicos o protegidos tienen firmas idénticas, salvo por el tipo de valor devuelto.
+## <a name="cause"></a>Causa
+Dos miembros públicos o protegidos tienen firmas que son idénticas salvo el tipo de valor devuelto.
 
 ## <a name="rule-description"></a>Descripción de la regla
- Aunque common language runtime permite el uso de tipos de valor devuelto para diferenciar miembros idénticos, esta característica no está en Common Language Specification ni es una característica común de los lenguajes de programación. NET. Cuando los miembros difieren solo por tipo de valor devuelto, los desarrolladores y herramientas de desarrollo podrían no correctamente distinguir entre ellos.
+Aunque el Common Language Runtime permite el uso de tipos de valor devuelto para diferenciar entre miembros idénticos, esta característica no está en el Common Language Specification, ni tampoco es una característica común de los lenguajes de programación de .NET. Cuando los miembros solo difieren en el tipo de valor devuelto, es posible que los desarrolladores y las herramientas de desarrollo no distingan correctamente entre ellos.
 
 ## <a name="how-to-fix-violations"></a>Cómo corregir infracciones
- Para corregir una infracción de esta regla, cambiar el diseño de los miembros, por lo que son únicos solo según sus nombres y tipos de parámetro, o no exponen a los miembros.
+Para corregir una infracción de esta regla, cambie el diseño de los miembros para que sean únicos según sus nombres y tipos de parámetros, o no expongan los miembros.
 
-## <a name="when-to-suppress-warnings"></a>Cuándo Suprimir advertencias
- No suprima las advertencias de esta regla.
+## <a name="when-to-suppress-warnings"></a>Cuándo suprimir advertencias
+No suprima las advertencias de esta regla.
 
 ## <a name="example"></a>Ejemplo
- El ejemplo siguiente, en lenguaje intermedio de Microsoft (MSIL), muestra un tipo que infringe esta regla. Tenga en cuenta que no se infringe esta regla mediante el uso de C# o Visual Basic.
+En el ejemplo siguiente, en lenguaje intermedio de Microsoft (MSIL), se muestra un tipo que infringe esta regla. Tenga en cuenta que esta regla no se puede infringir con C# o Visual Basic.
 
 ```
 .namespace UsageLibrary

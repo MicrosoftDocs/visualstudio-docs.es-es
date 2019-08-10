@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: da6448a414437a07b545a999b35031f82e9a8689
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c5cc12d5d0a62f8d2530f13fcf860aba4e118ca4
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62546191"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68921850"
 ---
 # <a name="ca1415-declare-pinvokes-correctly"></a>CA1415: Declarar elementos P/Invoke correctamente
 
@@ -28,24 +28,24 @@ ms.locfileid: "62546191"
 |TypeName|DeclarePInvokesCorrectly|
 |Identificador de comprobación|CA1415|
 |Categoría|Microsoft.Interoperability|
-|Cambio problemático|No problemático: si el valor de P/Invoke que declara el parámetro no puede verse fuera del ensamblado. Problemático: si P/Invoke que declara el parámetro puede verse fuera del ensamblado.|
+|Cambio problemático|No problemático: Si la P/Invoke que declara el parámetro no se puede considerar fuera del ensamblado. Interrumpir: Si la P/Invoke que declara el parámetro puede verse fuera del ensamblado.|
 
-## <a name="cause"></a>Motivo
- Una plataforma de invocación de método se ha declarado incorrectamente.
+## <a name="cause"></a>Causa
+No se ha declarado correctamente un método de invocación de plataforma.
 
 ## <a name="rule-description"></a>Descripción de la regla
- Una plataforma de invocación de método tiene acceso al código no administrado y se define utilizando el `Declare` palabra clave en [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] o <xref:System.Runtime.InteropServices.DllImportAttribute?displayProperty=fullName>. Actualmente, esta regla busca declaraciones de métodos que tienen como destino las funciones de Win32 que tienen un puntero a un parámetro de estructura OVERLAPPED de invocación de plataforma y el parámetro administrado correspondiente no es un puntero a un <xref:System.Threading.NativeOverlapped?displayProperty=fullName> estructura.
+Un método de invocación de plataforma tiene acceso al código no administrado y se define `Declare` mediante la [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] palabra clave <xref:System.Runtime.InteropServices.DllImportAttribute?displayProperty=fullName>en o. Actualmente, esta regla busca declaraciones de método de invocación de plataforma que tienen como destino funciones de Win32 que tienen un puntero a un parámetro de estructura superpuesto y el parámetro administrado <xref:System.Threading.NativeOverlapped?displayProperty=fullName> correspondiente no es un puntero a una estructura.
 
 ## <a name="how-to-fix-violations"></a>Cómo corregir infracciones
- Para corregir una infracción de esta regla, debe declarar correctamente la plataforma de invocación de método.
+Para corregir una infracción de esta regla, declare correctamente el método de invocación de plataforma.
 
-## <a name="when-to-suppress-warnings"></a>Cuándo Suprimir advertencias
- No suprima las advertencias de esta regla.
+## <a name="when-to-suppress-warnings"></a>Cuándo suprimir advertencias
+No suprima las advertencias de esta regla.
 
 ## <a name="example"></a>Ejemplo
- El ejemplo siguiente muestra los métodos que infringen la regla y que cumplen la regla de invocación de plataforma.
+En el ejemplo siguiente se muestran métodos de invocación de plataforma que infringen la regla y satisfacen la regla.
 
- [!code-csharp[FxCop.Interoperability.DeclarePInvokes#1](../code-quality/codesnippet/CSharp/ca1415-declare-p-invokes-correctly_1.cs)]
+[!code-csharp[FxCop.Interoperability.DeclarePInvokes#1](../code-quality/codesnippet/CSharp/ca1415-declare-p-invokes-correctly_1.cs)]
 
 ## <a name="see-also"></a>Vea también
- [Interoperating with Unmanaged Code](/dotnet/framework/interop/index) (Interoperar con código no administrado)
+[Interoperating with Unmanaged Code](/dotnet/framework/interop/index) (Interoperar con código no administrado)

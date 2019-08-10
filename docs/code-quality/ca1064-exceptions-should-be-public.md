@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8196d4c48bfb93735b62c6f24cb08ec462e64c91
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b17ccfe66875588ac19c587ff6fcbd889d1e6a44
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62788586"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68922316"
 ---
 # <a name="ca1064-exceptions-should-be-public"></a>CA1064: Las excepciones deben ser públicas
 
@@ -30,21 +30,21 @@ ms.locfileid: "62788586"
 |Categoría|Microsoft.Design|
 |Cambio problemático|No trascendental|
 
-## <a name="cause"></a>Motivo
- Una excepción no pública se deriva directamente de <xref:System.Exception>, <xref:System.SystemException>, o <xref:System.ApplicationException>.
+## <a name="cause"></a>Causa
+Una excepción no pública deriva directamente de <xref:System.Exception>, <xref:System.SystemException>o <xref:System.ApplicationException>.
 
 ## <a name="rule-description"></a>Descripción de la regla
- Una excepción interna solo está visible dentro de su propio ámbito interno. Cuando la excepción esté fuera del ámbito interno, sólo se podrá usar la excepción base para detectarla. Si la excepción interna se hereda de <xref:System.Exception>, <xref:System.SystemException>, o <xref:System.ApplicationException>, el código externo no tendrá información suficiente para saber qué hacer con la excepción.
+Una excepción interna solo es visible dentro de su propio ámbito interno. Cuando la excepción esté fuera del ámbito interno, sólo se podrá usar la excepción base para detectarla. Si la excepción interna se hereda de <xref:System.Exception>, <xref:System.SystemException>, o <xref:System.ApplicationException>, el código externo no tendrá información suficiente para saber qué hacer con la excepción.
 
- Pero, si el código tiene una excepción pública que más adelante se utiliza como base para una excepción interna, es razonable suponer que el código más out será capaz de hacer algo inteligente con la excepción base. La excepción pública tendrá más información que los proporcionados por <xref:System.Exception>, <xref:System.SystemException>, o <xref:System.ApplicationException>.
+Sin embargo, si el código tiene una excepción pública que se usa más adelante como base para una excepción interna, es razonable asumir que el código más allá podrá hacer algo inteligente con la excepción base. La excepción pública tendrá más información de la que proporciona <xref:System.Exception>, <xref:System.SystemException>o <xref:System.ApplicationException>.
 
 ## <a name="how-to-fix-violations"></a>Cómo corregir infracciones
- Hacer pública la excepción o derive la excepción interna de una excepción pública que no sea <xref:System.Exception>, <xref:System.SystemException>, o <xref:System.ApplicationException>.
+Haga que la excepción sea pública o derive la excepción interna de una excepción pública que no <xref:System.Exception>sea <xref:System.SystemException>, o <xref:System.ApplicationException>.
 
-## <a name="when-to-suppress-warnings"></a>Cuándo Suprimir advertencias
- Suprimir un mensaje de esta regla si está seguro de todos los casos que detectará la excepción privada dentro de su propio ámbito interno.
+## <a name="when-to-suppress-warnings"></a>Cuándo suprimir advertencias
+Suprima un mensaje de esta regla si está seguro de que la excepción privada se detectará dentro de su propio ámbito interno.
 
 ## <a name="example"></a>Ejemplo
- Esta regla se desencadena en el primer método de ejemplo, FirstCustomException porque la clase de excepción se deriva directamente de la excepción y es interna. La regla se desencadena en la clase SecondCustomException porque aunque la clase también se deriva directamente de excepción, la clase se ha declarado pública. La tercera clase también desencadena la regla porque no se deriva directamente de <xref:System.Exception?displayProperty=fullName>, <xref:System.SystemException?displayProperty=fullName>, o <xref:System.ApplicationException?displayProperty=fullName>.
+Esta regla se desencadena en el primer método de ejemplo, FirstCustomException porque la clase de excepción deriva directamente de la excepción y es interna. La regla no se activa en la clase SecondCustomException porque aunque la clase también deriva directamente de la excepción, la clase se declara Public. La tercera clase tampoco desencadena la regla porque no se deriva directamente de <xref:System.Exception?displayProperty=fullName>, <xref:System.SystemException?displayProperty=fullName>o <xref:System.ApplicationException?displayProperty=fullName>.
 
- [!code-csharp[FxCop.Design.ExceptionsShouldBePublic.CA1064#1](../code-quality/codesnippet/CSharp/ca1064-exceptions-should-be-public_1.cs)]
+[!code-csharp[FxCop.Design.ExceptionsShouldBePublic.CA1064#1](../code-quality/codesnippet/CSharp/ca1064-exceptions-should-be-public_1.cs)]

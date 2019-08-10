@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a1774b3feb2da4939420bf75506892aac6dedd72
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c37affc585653807912d00c1cfe365853fd6260b
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62797530"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68921810"
 ---
 # <a name="ca1600-do-not-use-idle-process-priority"></a>CA1600: No utilizar la prioridad del proceso inactiva
 
@@ -30,14 +30,14 @@ ms.locfileid: "62797530"
 |Categoría|Microsoft.Mobility|
 |Cambio problemático|Problemático|
 
-## <a name="cause"></a>Motivo
- Esta regla se produce cuando se establecen los procesos en `ProcessPriorityClass.Idle`.
+## <a name="cause"></a>Causa
+Esta regla se produce cuando los procesos se `ProcessPriorityClass.Idle`establecen en.
 
 ## <a name="rule-description"></a>Descripción de la regla
- No establezca la prioridad de proceso en Idle. Los procesos que tienen `System.Diagnostics.ProcessPriorityClass.Idle` ocupan la CPU cuando estaría inactiva y, por lo tanto, se bloqueará en espera.
+No establezca la prioridad de proceso en Idle. Los procesos que `System.Diagnostics.ProcessPriorityClass.Idle` tienen ocuparán la CPU cuando de otro modo estuvieran inactivos y, por tanto, se bloquearán en modo de espera.
 
 ## <a name="how-to-fix-violations"></a>Cómo corregir infracciones
- Establezca los procesos en `ProcessPriorityClass.BelowNormal`.
+Establezca procesos en `ProcessPriorityClass.BelowNormal`.
 
-## <a name="when-to-suppress-warnings"></a>Cuándo Suprimir advertencias
- Esta regla se debe suprimir solo cuando se requiere la prioridad del proceso inactiva y las consideraciones de movilidad pueden hacer caso omiso sin ningún riesgo.
+## <a name="when-to-suppress-warnings"></a>Cuándo suprimir advertencias
+Esta regla solo se debe suprimir cuando se requiere la prioridad del proceso inactivo y las consideraciones de movilidad se pueden omitir de forma segura.

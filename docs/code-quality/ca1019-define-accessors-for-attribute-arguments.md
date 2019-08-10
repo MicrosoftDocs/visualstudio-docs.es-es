@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 4e9491a608087565e84274d47c601b0629737d2f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 8422427997db291aa24bc8a8bacfdc59abe35998
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62779355"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68923072"
 ---
 # <a name="ca1019-define-accessors-for-attribute-arguments"></a>CA1019: Definir descriptores de acceso para los argumentos de atributo
 
@@ -33,43 +33,43 @@ ms.locfileid: "62779355"
 |Categoría|Microsoft.Design|
 |Cambio problemático|Poco problemático|
 
-## <a name="cause"></a>Motivo
- En su constructor, un atributo define los argumentos que no tienen propiedades correspondientes.
+## <a name="cause"></a>Causa
+En su constructor, un atributo define los argumentos que no tienen las propiedades correspondientes.
 
 ## <a name="rule-description"></a>Descripción de la regla
- Los atributos pueden definir argumentos obligatorios que deben especificarse al aplicar el atributo a un destino. Éstos también se denominan argumentos posicionales porque se proporcionan para atribuir constructores como parámetros posicionales. Para cada argumento obligatorio, el atributo debe proporcionar también una propiedad de sólo lectura correspondiente de modo que el valor del argumento se pueda recuperar en tiempo de ejecución. Esta regla comprueba que para cada parámetro de constructor, ha definido la propiedad correspondiente.
+Los atributos pueden definir argumentos obligatorios que deben especificarse al aplicar el atributo a un destino. Éstos también se denominan argumentos posicionales porque se proporcionan para atribuir constructores como parámetros posicionales. Para cada argumento obligatorio, el atributo debe proporcionar también una propiedad de sólo lectura correspondiente de modo que el valor del argumento se pueda recuperar en tiempo de ejecución. Esta regla comprueba que, para cada parámetro de constructor, se ha definido la propiedad correspondiente.
 
- Los atributos también pueden definir argumentos opcionales, que también se denominan argumentos con nombre. Estos argumentos se proporcionan para atribuir constructores por nombre y deben tener una propiedad de lectura/escritura correspondiente.
+Los atributos también pueden definir argumentos opcionales, que también se denominan argumentos con nombre. Estos argumentos se proporcionan para atribuir constructores por nombre y deben tener una propiedad de lectura/escritura correspondiente.
 
- Para los argumentos obligatorios y opcionales, las propiedades correspondientes y los parámetros del constructor deben utilizar el mismo nombre pero distintas mayúsculas y minúsculas. Propiedades usan casillas Pascal de mayúsculas y minúsculas y mayúsculas y minúsculas tipo camel de uso de parámetros.
+En el caso de los argumentos obligatorios y opcionales, las propiedades y los parámetros de constructor correspondientes deben usar el mismo nombre pero diferentes mayúsculas y minúsculas. Las propiedades usan mayúsculas y minúsculas Pascal y los parámetros usan mayúsculas y minúsculas Camel.
 
 ## <a name="how-to-fix-violations"></a>Cómo corregir infracciones
- Para corregir una infracción de esta regla, agregue una propiedad de solo lectura para cada parámetro de constructor que no tiene uno.
+Para corregir una infracción de esta regla, agregue una propiedad de solo lectura para cada parámetro del constructor que no tenga ninguno.
 
-## <a name="when-to-suppress-warnings"></a>Cuándo Suprimir advertencias
- Suprima una advertencia de esta regla si no desea que el valor del argumento obligatorio sea recuperable.
+## <a name="when-to-suppress-warnings"></a>Cuándo suprimir advertencias
+Suprima una advertencia de esta regla si no desea que se pueda recuperar el valor del argumento obligatorio.
 
 ## <a name="custom-attributes-example"></a>Ejemplo de atributos personalizados
 
-El ejemplo siguiente muestra dos atributos que definen un parámetro obligatorio (posicional). La primera implementación del atributo está definida de forma incorrecta. La segunda implementación es correcta.
+En el ejemplo siguiente se muestran dos atributos que definen un parámetro obligatorio (posicional). La primera implementación del atributo está definida incorrectamente. La segunda implementación es correcta.
 
 [!code-csharp[FxCop.Design.AttributeAccessors#1](../code-quality/codesnippet/CSharp/ca1019-define-accessors-for-attribute-arguments_1.cs)]
 [!code-vb[FxCop.Design.AttributeAccessors#1](../code-quality/codesnippet/VisualBasic/ca1019-define-accessors-for-attribute-arguments_1.vb)]
 
 ## <a name="positional-and-named-arguments"></a>Argumentos posicionales y con nombre
 
-Los argumentos posicionales y con nombre dejar claro a los consumidores de la biblioteca que los argumentos son obligatorios para el atributo y que los argumentos son opcionales.
+Los argumentos con nombre y posicionales lo hacen claro a los consumidores de la biblioteca qué argumentos son obligatorios para el atributo y qué argumentos son opcionales.
 
-El ejemplo siguiente muestra una implementación de un atributo que tiene argumentos posicionales y con nombre:
+En el ejemplo siguiente se muestra una implementación de un atributo que tiene argumentos posicionales y con nombre:
 
 [!code-csharp[FxCop.Design.AttributeAccessorsNamed#1](../code-quality/codesnippet/CSharp/ca1019-define-accessors-for-attribute-arguments_2.cs)]
 
-El ejemplo siguiente muestra cómo aplicar el atributo personalizado a dos propiedades:
+En el ejemplo siguiente se muestra cómo aplicar el atributo personalizado a dos propiedades:
 
 [!code-csharp[FxCop.Design.AttributeAccessorsNamedApplied#1](../code-quality/codesnippet/CSharp/ca1019-define-accessors-for-attribute-arguments_3.cs)]
 
 ## <a name="related-rules"></a>Reglas relacionadas
- [CA1813: Evitar atributos no sellados](../code-quality/ca1813-avoid-unsealed-attributes.md)
+[CA1813: Evitar atributos no sellados](../code-quality/ca1813-avoid-unsealed-attributes.md)
 
 ## <a name="see-also"></a>Vea también
- [Atributos](/dotnet/standard/design-guidelines/attributes)
+[Atributos](/dotnet/standard/design-guidelines/attributes)

@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2e57607cdfa8790c9b9fd4e692956f7bb823981a
-ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.openlocfilehash: 7d972198898dd1a4cafa5280c129db38bb3e4982
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66744855"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68921298"
 ---
 # <a name="ca1903-use-only-api-from-targeted-framework"></a>CA1903: Usar solo API de la versión de .NET Framework de destino
 
@@ -27,44 +27,44 @@ ms.locfileid: "66744855"
 |-|-|
 |TypeName|UseOnlyApiFromTargetedFramework|
 |Identificador de comprobación|CA1903|
-|Categoría|Microsoft.Portability|
-|Cambio problemático|Problemático: cuando se produce en la firma de un tipo o miembro visible externamente.<br /><br /> Indivisible - cuando se desencadena en el cuerpo de un método.|
+|Categoría|Microsoft. portabilidad|
+|Cambio problemático|Problemático: cuando se desencadena con la firma de un miembro o tipo visible externamente.<br /><br /> No problemático: cuando se desencadena en el cuerpo de un método.|
 
-## <a name="cause"></a>Motivo
- Un miembro o tipo utiliza un miembro o tipo que se introdujo en un service pack que no se incluyó en .NET framework de destino del proyecto.
+## <a name="cause"></a>Causa
+Un miembro o tipo está utilizando un miembro o tipo que se presentó en una Service Pack que no se incluyó con el marco de trabajo de destino del proyecto.
 
 ## <a name="rule-description"></a>Descripción de la regla
- Se han incluido nuevos miembros y tipos en .NET Framework 2.0 Service Pack 1 y 2, Service Pack 1 y 2 de .NET Framework 3.0 y .NET Framework 3.5 Service Pack 1. Los proyectos que tienen como destino las versiones principales de .NET Framework pueden tomar dependencias involuntariamente en estas nuevas API. Para evitar esta dependencia, esta regla se desencadena en los usos de los nuevos miembros y tipos que no se incluyeron con .NET framework de destino del proyecto de forma predeterminada.
+Los nuevos miembros y tipos se incluyeron en .NET Framework 2,0 Service Pack 1 y 2, .NET Framework 3,0 Service Pack 1 y 2 y .NET Framework 3,5 Service Pack 1. Los proyectos que tienen como destino las versiones principales del .NET Framework pueden tomar dependencias de estas nuevas API de forma involuntaria. Para evitar esta dependencia, esta regla se desencadena en los usos de los nuevos miembros y tipos que no se incluyeron de forma predeterminada con la plataforma de destino del proyecto.
 
- **.NET Framework de destino y las dependencias del módulo de servicio**
+**Dependencias de Service Pack y de la plataforma de destino**
 
 |||
 |-|-|
-|Cuando es la plataforma de destino|Se desencadena en los usos de los miembros que se introdujo en|
-|.NET Framework 2.0|.NET framework 2.0 SP1, .NET Framework 2.0 SP2|
-|.NET Framework 3.0|.NET framework 2.0 SP1, .NET Framework 2.0 SP2, .NET Framework 3.0 SP1, .NET Framework 3.0 SP2|
+|Cuando la plataforma de destino es|Se desencadena en los usos de los miembros introducidos en|
+|.NET Framework 2.0|.NET Framework 2,0 SP1, .NET Framework 2,0 SP2|
+|.NET Framework 3.0|.NET Framework 2,0 SP1, .NET Framework 2,0 SP2, .NET Framework 3,0 SP1, .NET Framework 3,0 SP2|
 |.NET Framework 3,5|.NET Framework 3.5 SP1|
 |.NET Framework 4|N/D|
 
- Para cambiar la plataforma de destino de un proyecto, vea [Cómo: Tener como destino una versión de .NET](../ide/how-to-target-a-version-of-the-dotnet-framework.md).
+Para cambiar el marco de trabajo de destino de [un proyecto, consulte Cómo: Establecer una versión de .NET como destino](../ide/how-to-target-a-version-of-the-dotnet-framework.md).
 
 ## <a name="how-to-fix-violations"></a>Cómo corregir infracciones
- Para quitar la dependencia en el service pack, quite todos los usos del nuevo miembro o tipo. Si se trata de una dependencia deliberada, suprimir la advertencia o desactivar esta regla.
+Para quitar la dependencia del Service Pack, quite todos los usos del nuevo miembro o tipo. Si se trata de una dependencia deliberada, suprima la advertencia o desactive esta regla.
 
-## <a name="when-to-suppress-warnings"></a>Cuándo Suprimir advertencias
- No suprima una advertencia de esta regla si no se trata de una dependencia deliberada en el service pack especificado. En esta situación, la aplicación podría no ejecutarse en sistemas sin este service pack instalado. Suprimir la advertencia o desactivar esta regla si se trata de una dependencia deliberada.
-
-## <a name="example"></a>Ejemplo
- El ejemplo siguiente muestra una clase que utiliza el tipo DateTimeOffset que solo está disponible en .NET 2.0 Service Pack 1. Este ejemplo requiere que .NET Framework 2.0 se ha seleccionado en la lista desplegable de .NET Framework de destino en las propiedades del proyecto.
-
- [!code-csharp[FxCop.Portability.UseOnlyApiFromTargetedFramework#1](../code-quality/codesnippet/CSharp/ca1903-use-only-api-from-targeted-framework_1.cs)]
+## <a name="when-to-suppress-warnings"></a>Cuándo suprimir advertencias
+No suprima una advertencia de esta regla si no se trata de una dependencia deliberada en el Service Pack especificado. En esta situación, es posible que la aplicación no se ejecute en sistemas sin este Service Pack instalado. Suprima la advertencia o desactive esta regla si se trata de una dependencia deliberada.
 
 ## <a name="example"></a>Ejemplo
- El ejemplo siguiente corrige la infracción descrita anteriormente reemplazando los usos del tipo DateTimeOffset con el tipo de fecha y hora.
+En el ejemplo siguiente se muestra una clase que usa el tipo DateTimeOffset que solo está disponible en el Service Pack 1 de .NET 2,0. En este ejemplo se requiere que se haya seleccionado .NET Framework 2,0 en la lista desplegable plataforma de destino en las propiedades del proyecto.
 
- [!code-csharp[FxCop.Portability.UseOnlyApiFromTargetedFramework2#1](../code-quality/codesnippet/CSharp/ca1903-use-only-api-from-targeted-framework_2.cs)]
+[!code-csharp[FxCop.Portability.UseOnlyApiFromTargetedFramework#1](../code-quality/codesnippet/CSharp/ca1903-use-only-api-from-targeted-framework_1.cs)]
+
+## <a name="example"></a>Ejemplo
+En el ejemplo siguiente se corrige la infracción descrita previamente reemplazando los usos del tipo DateTimeOffset con el tipo DateTime.
+
+[!code-csharp[FxCop.Portability.UseOnlyApiFromTargetedFramework2#1](../code-quality/codesnippet/CSharp/ca1903-use-only-api-from-targeted-framework_2.cs)]
 
 ## <a name="see-also"></a>Vea también
 
 - [Portability Warnings](../code-quality/portability-warnings.md)
-- [Plataforma de destino de la información general](../ide/visual-studio-multi-targeting-overview.md)
+- [Información general sobre destinos de Framework](../ide/visual-studio-multi-targeting-overview.md)

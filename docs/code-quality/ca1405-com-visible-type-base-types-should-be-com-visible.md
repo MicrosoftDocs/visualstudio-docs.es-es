@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 65bddd599bb544e000ca1d1269b84e53f51843bb
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 56e6e7a53f5f8b07d1afc8b68ef641c576524316
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62546077"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68922066"
 ---
 # <a name="ca1405-com-visible-type-base-types-should-be-com-visible"></a>CA1405: Los tipos base de tipos visibles a través de COM deben ser visibles a través de COM
 
@@ -33,23 +33,23 @@ ms.locfileid: "62546077"
 |Categoría|Microsoft.Interoperability|
 |Cambio problemático|DependsOnFix|
 
-## <a name="cause"></a>Motivo
- Un tipo visible del modelo de objetos componentes (COM) se deriva de un tipo que no es visible para COM.
+## <a name="cause"></a>Causa
+Un tipo visible del modelo de objetos componentes (COM) deriva de un tipo que no es visible para COM.
 
 ## <a name="rule-description"></a>Descripción de la regla
- Cuando un tipo visible COM agrega miembros en una nueva versión, debe cumplir las instrucciones estrictas para evitar que los clientes COM que se enlazan a la versión actual. Un tipo que no es visible para COM se da por supuesto que no tiene que seguir estas reglas de control de versiones de COM cuando agrega nuevos miembros. Sin embargo, si un visibles para COM tipo deriva del tipo visible COM y expone una interfaz de clase de <xref:System.Runtime.InteropServices.ClassInterfaceType?displayProperty=fullName> o <xref:System.Runtime.InteropServices.ClassInterfaceType> (valor predeterminado), todos los miembros públicos del tipo base (a menos que se marcado específicamente como COM invisibles, que sería redundante) se expone a COM. Si el tipo base agrega a nuevos miembros en una versión posterior, todos los clientes COM que se enlazan a la interfaz de clase del tipo derivado que se interrumpa. Los tipos visibles COM deben derivar solo de los tipos visibles COM para reducir la posibilidad de que los clientes COM.
+Cuando un tipo visible para COM agrega miembros en una nueva versión, debe cumplir instrucciones estrictas para evitar la interrupción de los clientes COM que se enlazan a la versión actual. Un tipo que no es visible para COM presupone que no tiene que seguir estas reglas de control de versiones COM cuando agrega nuevos miembros. Sin embargo, si un tipo visible com se deriva del tipo com invisible y expone una interfaz de clase de <xref:System.Runtime.InteropServices.ClassInterfaceType?displayProperty=fullName> o <xref:System.Runtime.InteropServices.ClassInterfaceType> (valor predeterminado), todos los miembros públicos del tipo base (a menos que se marquen específicamente como com invisible, que serían redundantes) se exponen a COM. Si el tipo base agrega nuevos miembros en una versión posterior, los clientes COM que se enlazan a la interfaz de clase del tipo derivado podrían interrumpirse. Los tipos visibles para COM solo se deben derivar de tipos visibles para COM para reducir la posibilidad de interrumpir los clientes COM.
 
 ## <a name="how-to-fix-violations"></a>Cómo corregir infracciones
- Para corregir una infracción de esta regla, hacer que los tipos base visibles para COM o el tipo derivado COM sea invisible.
+Para corregir una infracción de esta regla, haga que los tipos base COM sean visibles o el tipo derivado de COM invisible.
 
-## <a name="when-to-suppress-warnings"></a>Cuándo Suprimir advertencias
- No suprima las advertencias de esta regla.
+## <a name="when-to-suppress-warnings"></a>Cuándo suprimir advertencias
+No suprima las advertencias de esta regla.
 
 ## <a name="example"></a>Ejemplo
- El ejemplo siguiente muestra un tipo que infringe la regla.
+En el ejemplo siguiente se muestra un tipo que infringe la regla.
 
- [!code-vb[FxCop.Interoperability.ComBaseTypes#1](../code-quality/codesnippet/VisualBasic/ca1405-com-visible-type-base-types-should-be-com-visible_1.vb)]
- [!code-csharp[FxCop.Interoperability.ComBaseTypes#1](../code-quality/codesnippet/CSharp/ca1405-com-visible-type-base-types-should-be-com-visible_1.cs)]
+[!code-vb[FxCop.Interoperability.ComBaseTypes#1](../code-quality/codesnippet/VisualBasic/ca1405-com-visible-type-base-types-should-be-com-visible_1.vb)]
+[!code-csharp[FxCop.Interoperability.ComBaseTypes#1](../code-quality/codesnippet/CSharp/ca1405-com-visible-type-base-types-should-be-com-visible_1.cs)]
 
 ## <a name="see-also"></a>Vea también
 

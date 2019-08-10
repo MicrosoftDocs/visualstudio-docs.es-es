@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 623416e557759ace1ad6403ef8ef977df01da39e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d83da42a029d746899bfaccf5d62f8856a040611
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62545490"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68921117"
 ---
 # <a name="ca2114-method-security-should-be-a-superset-of-type"></a>CA2114: La seguridad del método debe ser un supraconjunto del tipo
 
@@ -30,21 +30,21 @@ ms.locfileid: "62545490"
 |Categoría|Microsoft.Security|
 |Cambio problemático|Problemático|
 
-## <a name="cause"></a>Motivo
- Un tipo tiene seguridad declarativa y uno de sus métodos tiene seguridad declarativa para la misma acción de seguridad y la acción de seguridad no es [peticiones de vínculo](/dotnet/framework/misc/link-demands), y los permisos comprobados por el tipo no son un subconjunto de los permisos comprueba el método.
+## <a name="cause"></a>Causa
+Un tipo tiene seguridad declarativa y uno de sus métodos tiene seguridad declarativa para la misma acción de seguridad, y la acción de seguridad no es una [solicitud de vínculo](/dotnet/framework/misc/link-demands)y los permisos comprobados por el tipo no son un subconjunto de los permisos comprobados por el método.
 
 ## <a name="rule-description"></a>Descripción de la regla
- Un método no debe tener tanto un seguridad declarativa de nivel de método y el nivel de tipo para la misma acción. No se combinan las dos comprobaciones; se aplica solo a la demanda de nivel de método. Por ejemplo, si un tipo solicita permiso `X`, y uno de sus métodos solicita permiso `Y`, código no tiene que tener el permiso `X` para ejecutar el método.
+Un método no debe tener una seguridad declarativa de nivel de método y de nivel de tipo para la misma acción. Las dos comprobaciones no se combinan; solo se aplica la demanda de nivel de método. Por ejemplo, si un tipo exige el `X`permiso y uno de sus métodos exige el `Y`permiso, el código no tiene que tener `X` permiso para ejecutar el método.
 
 ## <a name="how-to-fix-violations"></a>Cómo corregir infracciones
- Revise el código para asegurarse de que ambas acciones son necesarias. Si se requieren ambas acciones, debe asegurarse de que la acción de nivel de método incluye la seguridad especificada en el nivel de tipo. Por ejemplo, si el tipo solicita permiso `X`, y su método también debe solicitar permiso `Y`, debe solicitar explícitamente el método `X` y `Y`.
+Revise el código para asegurarse de que se requieren ambas acciones. Si se requieren ambas acciones, asegúrese de que la acción de nivel de método incluye la seguridad especificada en el nivel de tipo. Por ejemplo, si el tipo solicita el `X`permiso y su método también debe exigir `Y`el permiso, el método debe `X` solicitar `Y`explícitamente y.
 
-## <a name="when-to-suppress-warnings"></a>Cuándo Suprimir advertencias
- Es seguro suprimir una advertencia de esta regla si el método no requiere la seguridad especificada por el tipo. Sin embargo, esto no es un escenario normal y podría indicar una necesidad de revisar cuidadosamente el diseño.
+## <a name="when-to-suppress-warnings"></a>Cuándo suprimir advertencias
+Es seguro suprimir una advertencia de esta regla si el método no requiere la seguridad especificada por el tipo. Sin embargo, esto no es un escenario normal y podría indicar una necesidad de una revisión cuidadosa del diseño.
 
 ## <a name="example-1"></a>Ejemplo 1
 
-El ejemplo siguiente utiliza los permisos de entorno para demostrar los peligros de infringir esta regla. En este ejemplo, el código de la aplicación crea una instancia del tipo protegido antes de denegar el permiso necesario para el tipo. En un escenario de amenazas del mundo real, la aplicación necesitaría otra manera de obtener una instancia del objeto.
+En el ejemplo siguiente se usan permisos de entorno para mostrar los peligros de infringir esta regla. En este ejemplo, el código de aplicación crea una instancia del tipo protegido antes de denegar el permiso requerido por el tipo. En un escenario de amenazas real, la aplicación requeriría otra manera de obtener una instancia del objeto.
 
 En el ejemplo siguiente, la biblioteca solicita permiso de escritura para un tipo y permiso de lectura para un método.
 
@@ -52,7 +52,7 @@ En el ejemplo siguiente, la biblioteca solicita permiso de escritura para un tip
 
 ## <a name="example-2"></a>Ejemplo 2
 
-El siguiente código de aplicación muestra la vulnerabilidad de la biblioteca, aunque no cumple el requisito de seguridad de nivel de tipo llamando al método.
+El siguiente código de aplicación muestra la vulnerabilidad de la biblioteca llamando al método aunque no cumple el requisito de seguridad de nivel de tipo.
 
 [!code-csharp[FxCop.Security.TestMethodLevelSecurity#1](../code-quality/codesnippet/CSharp/ca2114-method-security-should-be-a-superset-of-type_2.cs)]
 

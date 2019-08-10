@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c8d80c4e9a21c29ce7b34a3998e241b11713f355
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: df19d31abe88c6d12bafc933ba740badb832eb16
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62545705"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68921071"
 ---
 # <a name="ca2106-secure-asserts"></a>CA2106: Proteger las aserciones
 
@@ -30,17 +30,17 @@ ms.locfileid: "62545705"
 |Categoría|Microsoft.Security|
 |Cambio problemático|Problemático|
 
-## <a name="cause"></a>Motivo
- Un método valida un permiso y no realiza ninguna comprobación de seguridad en el llamador.
+## <a name="cause"></a>Causa
+Un método valida un permiso y no realiza ninguna comprobación de seguridad en el autor de la llamada.
 
 ## <a name="rule-description"></a>Descripción de la regla
- Validar un permiso de seguridad sin realizar ninguna comprobación de seguridad puede dejar una debilidad de seguridad explotable en el código. Un recorrido de pila de seguridad se detiene cuando se impone un permiso de seguridad. Si valida un permiso sin realizar ninguna comprobación en el llamador, el llamador podría ejecutar código indirectamente mediante el uso de sus permisos. Aserciones sin comprobaciones de seguridad están permitidas si está seguro de que la aserción no se puede usar de manera perjudicial. Una aserción es inofensiva, si el código que se llama es inocuo, o si los usuarios no pueden pasar información arbitraria al código que llama.
+Validar un permiso de seguridad sin realizar ninguna comprobación de seguridad puede dejar una debilidad de seguridad explotable en el código. Un recorrido de pila de seguridad se detiene cuando se impone un permiso de seguridad. Si valida un permiso sin realizar ninguna comprobación en el autor de la llamada, el llamador podría ejecutar el código indirectamente mediante sus permisos. Se permiten aserciones sin comprobaciones de seguridad si está seguro de que la aserción no se puede usar de forma dañina. Una aserción es inofensiva si el código al que se llama es inofensivo o si los usuarios no pueden pasar información arbitraria al código al que llama.
 
 ## <a name="how-to-fix-violations"></a>Cómo corregir infracciones
- Para corregir una infracción de esta regla, agregar una petición de seguridad para el método o su tipo declarativo.
+Para corregir una infracción de esta regla, agregue una solicitud de seguridad al método o a su tipo declarativo.
 
-## <a name="when-to-suppress-warnings"></a>Cuándo Suprimir advertencias
- Suprima una advertencia de esta regla solo después de revisar cuidadosamente la seguridad.
+## <a name="when-to-suppress-warnings"></a>Cuándo suprimir advertencias
+Suprima una advertencia de esta regla solo después de una revisión cuidadosa de la seguridad.
 
 ## <a name="see-also"></a>Vea también
 

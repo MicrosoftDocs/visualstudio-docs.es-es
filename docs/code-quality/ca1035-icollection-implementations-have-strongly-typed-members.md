@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ecf1db06ba3b78c6033b143b55f41cc203441973
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a20feb514b87f2906fd4db32dfb38d3d9b661999
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62779071"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68922826"
 ---
 # <a name="ca1035-icollection-implementations-have-strongly-typed-members"></a>CA1035: Las implementaciones de ICollection tienen miembros fuertemente tipados
 
@@ -30,31 +30,31 @@ ms.locfileid: "62779071"
 |Categoría|Microsoft.Design|
 |Cambio problemático|Problemático|
 
-## <a name="cause"></a>Motivo
- Un tipo público o protegido implementa <xref:System.Collections.ICollection?displayProperty=fullName> pero no proporciona un método fuertemente tipado para <xref:System.Collections.ICollection.CopyTo%2A?displayProperty=fullName>. La versión fuertemente tipada de <xref:System.Collections.ICollection.CopyTo%2A> debe aceptar dos parámetros y no puede tener un <xref:System.Array?displayProperty=fullName> o una matriz de <xref:System.Object?displayProperty=fullName> como su primer parámetro.
+## <a name="cause"></a>Causa
+Un tipo público o protegido implementa <xref:System.Collections.ICollection?displayProperty=fullName> pero no proporciona un método fuertemente tipado para. <xref:System.Collections.ICollection.CopyTo%2A?displayProperty=fullName> La versión fuertemente tipada de <xref:System.Collections.ICollection.CopyTo%2A> debe aceptar dos parámetros y no puede <xref:System.Array?displayProperty=fullName> tener o una matriz de <xref:System.Object?displayProperty=fullName> como su primer parámetro.
 
 ## <a name="rule-description"></a>Descripción de la regla
- Esta regla requiere <xref:System.Collections.ICollection> miembros de las implementaciones proporcionen fuertemente tipados para que los usuarios no deben convertir los argumentos en el <xref:System.Object> escriba cuando utilicen la funcionalidad proporcionada por la interfaz. Esta regla supone que el tipo que implementa <xref:System.Collections.ICollection> hace así para administrar una colección de instancias de un tipo que es más fuerte que <xref:System.Object>.
+Esta regla requiere <xref:System.Collections.ICollection> que las implementaciones proporcionen miembros fuertemente tipados para que los usuarios no tengan que convertir los <xref:System.Object> argumentos al tipo cuando utilicen la funcionalidad proporcionada por la interfaz. Esta regla supone que el tipo que implementa <xref:System.Collections.ICollection> lo hace para administrar una colección de instancias de un tipo que es más seguro que. <xref:System.Object>
 
- <xref:System.Collections.ICollection> implementa la interfaz <xref:System.Collections.IEnumerable?displayProperty=fullName>. Si los objetos de la colección extienden <xref:System.ValueType?displayProperty=fullName>, debe proporcionar un miembro fuertemente tipado para <xref:System.Collections.IEnumerable.GetEnumerator%2A> para evitar la disminución del rendimiento que esté provocado por la conversión boxing. Esto no es necesario cuando los objetos de la colección son un tipo de referencia.
+ <xref:System.Collections.ICollection> implementa la interfaz <xref:System.Collections.IEnumerable?displayProperty=fullName>. Si los objetos de la colección se <xref:System.ValueType?displayProperty=fullName>extienden, debe proporcionar un miembro fuertemente tipado <xref:System.Collections.IEnumerable.GetEnumerator%2A> para para evitar la disminución del rendimiento que se debe a la conversión boxing. Esto no es necesario cuando los objetos de la colección son un tipo de referencia.
 
- Para implementar una versión fuertemente tipada de un miembro de interfaz, implemente los miembros de interfaz explícitamente mediante el uso de nombres en el formulario `InterfaceName.InterfaceMemberName`, tales como <xref:System.Collections.ICollection.CopyTo%2A>. Los miembros de interfaz explícita utilicen los tipos de datos que se declaran por la interfaz. Implemente los miembros fuertemente tipados con el nombre de miembro de interfaz, como <xref:System.Collections.ICollection.CopyTo%2A>. Declare los miembros fuertemente tipados como pública y declarar los parámetros y devuelven los valores sean del tipo seguro que está administrado por la colección. Los tipos seguros reemplace tipos más débiles como <xref:System.Object> y <xref:System.Array> que se declaran mediante la interfaz.
+Para implementar una versión fuertemente tipada de un miembro de interfaz, implemente los miembros de interfaz explícitamente utilizando nombres `InterfaceName.InterfaceMemberName`en el formulario <xref:System.Collections.ICollection.CopyTo%2A>, como. Los miembros de interfaz explícitos usan los tipos de datos declarados por la interfaz. Implemente los miembros fuertemente tipados mediante el nombre del miembro de interfaz, <xref:System.Collections.ICollection.CopyTo%2A>como. Declare los miembros fuertemente tipados como públicos y declare los parámetros y los valores devueltos para que sean del tipo seguro administrado por la colección. Los tipos seguros reemplazan a los tipos más <xref:System.Object> débiles <xref:System.Array> como y que se declaran mediante la interfaz.
 
 ## <a name="how-to-fix-violations"></a>Cómo corregir infracciones
- Para corregir una infracción de esta regla, implemente el miembro de interfaz explícitamente (declararlo como <xref:System.Collections.ICollection.CopyTo%2A>). Agregar público fuertemente tipado declarado el miembro, como `CopyTo`, y pase una matriz fuertemente tipada como su primer parámetro.
+Para corregir una infracción de esta regla, implemente explícitamente el miembro de interfaz <xref:System.Collections.ICollection.CopyTo%2A>(declárela como). Agregue el miembro con establecimiento inflexible de tipos, `CopyTo`declarado como, y haga que tome una matriz fuertemente tipada como su primer parámetro.
 
-## <a name="when-to-suppress-warnings"></a>Cuándo Suprimir advertencias
- Suprima una advertencia de esta regla si implementa una nueva colección basada en objetos, como un árbol binario, donde los tipos que extienden la nueva colección determinan el tipo seguro. Estos tipos deben cumplir esta regla y exponer miembros fuertemente tipados.
+## <a name="when-to-suppress-warnings"></a>Cuándo suprimir advertencias
+Suprima una advertencia de esta regla si implementa una nueva colección basada en objetos, como un árbol binario, donde los tipos que extienden la nueva colección determinan el tipo seguro. Estos tipos deben cumplir esta regla y exponer miembros fuertemente tipados.
 
 ## <a name="example"></a>Ejemplo
- En el ejemplo siguiente se muestra la forma correcta para implementar <xref:System.Collections.ICollection>.
+En el ejemplo siguiente se muestra la manera correcta <xref:System.Collections.ICollection>de implementar.
 
- [!code-csharp[FxCop.Design.ICollectionStrongTypes#1](../code-quality/codesnippet/CSharp/ca1035-icollection-implementations-have-strongly-typed-members_1.cs)]
+[!code-csharp[FxCop.Design.ICollectionStrongTypes#1](../code-quality/codesnippet/CSharp/ca1035-icollection-implementations-have-strongly-typed-members_1.cs)]
 
 ## <a name="related-rules"></a>Reglas relacionadas
- [CA1038: Los enumeradores deben estar fuertemente tipados](../code-quality/ca1038-enumerators-should-be-strongly-typed.md)
+[CA1038: Los enumeradores deben tener establecimiento inflexible de tipos](../code-quality/ca1038-enumerators-should-be-strongly-typed.md)
 
- [CA1039: Las listas están fuertemente tipadas](../code-quality/ca1039-lists-are-strongly-typed.md)
+[CA1039: Las listas están fuertemente tipadas](../code-quality/ca1039-lists-are-strongly-typed.md)
 
 ## <a name="see-also"></a>Vea también
 

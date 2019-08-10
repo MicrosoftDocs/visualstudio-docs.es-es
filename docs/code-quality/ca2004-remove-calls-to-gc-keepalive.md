@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4520649050e6e4004b2c8864d5c081897852826c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a716da8eb0fb1b741c302ed32408e63a4933567b
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62808371"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68921133"
 ---
 # <a name="ca2004-remove-calls-to-gckeepalive"></a>CA2004: Quitar las llamadas a GC.KeepAlive
 
@@ -30,14 +30,14 @@ ms.locfileid: "62808371"
 |Categoría|Microsoft.Reliability|
 |Cambio problemático|Poco problemático|
 
-## <a name="cause"></a>Motivo
- Clases utilizan `SafeHandle` pero sigue sin contener las llamadas a `GC.KeepAlive`.
+## <a name="cause"></a>Causa
+Las clases `SafeHandle` usan pero todavía contienen llamadas `GC.KeepAlive`a.
 
 ## <a name="rule-description"></a>Descripción de la regla
- Si va a convertir a `SafeHandle` uso, quite todas las llamadas a `GC.KeepAlive` (objeto). En este caso, las clases no debe llamar a `GC.KeepAlive`, suponiendo que no tienen un finalizador sino que se basan en `SafeHandle` para completar el identificador del sistema operativo para ellos.  Aunque el costo de dejar en una llamada a `GC.KeepAlive` puede ser insignificante con relación al rendimiento, la percepción de que una llamada a `GC.KeepAlive` es necesaria o suficiente para solucionar el problema que puedan existir ya no hace que el código sea más difícil de un período de duración mantener.
+Si está convirtiendo a `SafeHandle` uso, quite todas las llamadas `GC.KeepAlive` a (Object). En este caso, las clases no deben llamar `GC.KeepAlive`a, suponiendo que no tienen un finalizador sino que se basan en `SafeHandle` para completar el identificador del sistema operativo.  Aunque el costo de dejar en una llamada a `GC.KeepAlive` puede ser insignificante según lo medido por el rendimiento, la percepción de `GC.KeepAlive` que una llamada a es necesaria o suficiente para solucionar un problema de duración que puede que ya no exista hace que el código sea más difícil de manteni.
 
 ## <a name="how-to-fix-violations"></a>Cómo corregir infracciones
- Quite las llamadas a `GC.KeepAlive`.
+Quite las llamadas `GC.KeepAlive`a.
 
-## <a name="when-to-suppress-warnings"></a>Cuándo Suprimir advertencias
- Puede suprimir esta advertencia solo si no es técnicamente correcta convertir a `SafeHandle` uso en la clase.
+## <a name="when-to-suppress-warnings"></a>Cuándo suprimir advertencias
+Puede suprimir esta advertencia solo si no es técnicamente correcta para realizar la conversión `SafeHandle` al uso en la clase.

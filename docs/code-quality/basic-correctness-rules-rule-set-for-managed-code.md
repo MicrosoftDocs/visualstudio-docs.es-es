@@ -8,19 +8,19 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: f659a7aa9d078ed5ee2f8685be006aaaa2450fa0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ce48ece2801096b2b657df41bcaa0a744e67bd45
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62560056"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68919566"
 ---
 # <a name="basic-correctness-rules-rule-set-for-managed-code"></a>Conjunto de reglas Reglas de corrección básicas para código administrado
-El conjunto de reglas reglas de corrección básicas se centra en errores lógicos y errores comunes en el uso de las API del marco de trabajo. Las reglas de corrección básicas se incluyen las reglas en el conjunto de reglas reglas mínimas recomendadas. Para obtener más información, consulte [pravidel administra reglas recomendadas para código administrado](../code-quality/managed-recommended-rules-rule-set-for-managed-code.md) debe incluir este conjunto de reglas para ampliar la lista de advertencias que las reglas mínimas recomendadas.
+El conjunto de reglas reglas de corrección básicas se centra en los errores de lógica y los errores comunes en el uso de las API de .NET Framework. Las reglas de corrección básicas incluyen las reglas del conjunto de reglas reglas mínimas recomendadas. Para obtener más información, vea [conjunto de reglas reglas recomendadas administradas para código administrado](../code-quality/managed-recommended-rules-rule-set-for-managed-code.md) . debe incluir este conjunto de reglas para ampliar la lista de advertencias que notifican las reglas mínimas recomendadas.
 
- En la tabla siguiente se describe todas las reglas en el conjunto de reglas reglas de corrección básicas de Microsoft.
+En la tabla siguiente se describen todas las reglas del conjunto de reglas reglas de corrección básicas de Microsoft.
 
-|Regla|Descripción|
+|Regla|DESCRIPCIÓN|
 |----------|-----------------|
 |[CA1001](../code-quality/ca1001-types-that-own-disposable-fields-should-be-disposable.md)|Los tipos que poseen campos descartables deben ser descartables|
 |[CA1009](../code-quality/ca1009-declare-event-handlers-correctly.md)|Declarar los controladores de evento correctamente|

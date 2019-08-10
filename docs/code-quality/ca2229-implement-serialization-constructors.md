@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2353c342b38a9dca42500c8997dcebb03137c91c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 11dfa98bb348f874a2774454cc465fb80cb71750
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62806594"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68920161"
 ---
 # <a name="ca2229-implement-serialization-constructors"></a>CA2229: Implementar constructores de serialización
 
@@ -30,31 +30,31 @@ ms.locfileid: "62806594"
 |Categoría|Microsoft.Usage|
 |Cambio problemático|No trascendental|
 
-## <a name="cause"></a>Motivo
- El tipo implementa la <xref:System.Runtime.Serialization.ISerializable?displayProperty=fullName> interfaz, no es un delegado o interfaz y una de las siguientes condiciones es verdadera:
+## <a name="cause"></a>Causa
+El tipo implementa la <xref:System.Runtime.Serialization.ISerializable?displayProperty=fullName> interfaz, no es un delegado o una interfaz, y una de las siguientes condiciones es verdadera:
 
-- El tipo no tiene un constructor que toma un <xref:System.Runtime.Serialization.SerializationInfo?displayProperty=fullName> objeto y un <xref:System.Runtime.Serialization.StreamingContext?displayProperty=fullName> objeto (la firma del constructor de serialización).
+- El tipo no tiene un constructor que tome un <xref:System.Runtime.Serialization.SerializationInfo?displayProperty=fullName> objeto y un <xref:System.Runtime.Serialization.StreamingContext?displayProperty=fullName> objeto (la firma del constructor de serialización).
 
-- El tipo está sellado y el modificador de acceso de su constructor de serialización no está protegida (familia).
+- El tipo no está sellado y el modificador de acceso de su constructor de serialización no está protegido (familia).
 
 - El tipo está sellado y el modificador de acceso de su constructor de serialización no es privado.
 
 ## <a name="rule-description"></a>Descripción de la regla
- Esta regla es relevante para los tipos que admiten la serialización personalizada. Un tipo admite la serialización personalizada si implementa el <xref:System.Runtime.Serialization.ISerializable> interfaz. Se requiere el constructor de serialización para deserializar o volver a crear los objetos que se han serializado utilizando el <xref:System.Runtime.Serialization.ISerializable.GetObjectData%2A?displayProperty=fullName> método.
+Esta regla es relevante para los tipos que admiten la serialización personalizada. Un tipo admite la serialización personalizada si implementa la <xref:System.Runtime.Serialization.ISerializable> interfaz. El constructor de serialización es necesario para deserializar o volver a crear los objetos que se han serializado mediante <xref:System.Runtime.Serialization.ISerializable.GetObjectData%2A?displayProperty=fullName> el método.
 
 ## <a name="how-to-fix-violations"></a>Cómo corregir infracciones
- Para corregir una infracción de esta regla, implemente el constructor de serialización. Para una clase sellada, marque el constructor como privado; de lo contrario, márquelo como protegido.
+Para corregir una infracción de esta regla, implemente el constructor de serialización. Para una clase sellada, marque el constructor como privado; de lo contrario, márquelo como protegido.
 
-## <a name="when-to-suppress-warnings"></a>Cuándo Suprimir advertencias
- No suprima una infracción de la regla. El tipo no será deserializable y no funcionará en muchos escenarios.
+## <a name="when-to-suppress-warnings"></a>Cuándo suprimir advertencias
+No suprima una infracción de la regla. No se puede deserializar el tipo y no funcionará en muchos escenarios.
 
 ## <a name="example"></a>Ejemplo
- El ejemplo siguiente muestra un tipo que cumple la regla.
+En el ejemplo siguiente se muestra un tipo que cumple la regla.
 
- [!code-csharp[FxCop.Usage.ISerializableCtor#1](../code-quality/codesnippet/CSharp/ca2229-implement-serialization-constructors_1.cs)]
+[!code-csharp[FxCop.Usage.ISerializableCtor#1](../code-quality/codesnippet/CSharp/ca2229-implement-serialization-constructors_1.cs)]
 
 ## <a name="related-rules"></a>Reglas relacionadas
- [CA2237: Marcar los tipos ISerializable con SerializableAttribute](../code-quality/ca2237-mark-iserializable-types-with-serializableattribute.md)
+[CA2237: Marcar tipos ISerializable con SerializableAttribute](../code-quality/ca2237-mark-iserializable-types-with-serializableattribute.md)
 
 ## <a name="see-also"></a>Vea también
 

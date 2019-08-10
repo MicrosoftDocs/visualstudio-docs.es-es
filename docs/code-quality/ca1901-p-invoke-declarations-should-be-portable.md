@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0c4216b52fa4a23848a82548c36c34592deacc0b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 4a45b7061ae9d183ec7ee02a3b733ee9340b3689
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62545464"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68921300"
 ---
 # <a name="ca1901-pinvoke-declarations-should-be-portable"></a>CA1901: Las declaraciones P/Invoke deben ser portátiles
 
@@ -27,27 +27,27 @@ ms.locfileid: "62545464"
 |-|-|
 |TypeName|PInvokeDeclarationsShouldBePortable|
 |Identificador de comprobación|CA1901|
-|Categoría|Microsoft.Portability|
-|Cambio problemático|Importante: si el valor de P/Invoke es visible fuera del ensamblado. No problemático: si el valor de P/Invoke no está visible fuera del ensamblado.|
+|Categoría|Microsoft. portabilidad|
+|Cambio problemático|Interrumpir: Si la P/Invoke es visible fuera del ensamblado. No problemático: Si la P/Invoke no es visible fuera del ensamblado.|
 
-## <a name="cause"></a>Motivo
- Esta regla se evalúa como el tamaño de cada parámetro y el valor devuelto de P/Invoke y comprueba que su tamaño, al serializar a código no administrado en plataformas de 32 bits y 64 bits, es correcto. La infracción de esta regla más común consiste en pasar un entero de tamaño fijo donde se requiere una variable dependiente de la plataforma, el tamaño del puntero.
+## <a name="cause"></a>Causa
+Esta regla evalúa el tamaño de cada parámetro y el valor devuelto de P/Invoke y comprueba que su tamaño, cuando se calculan las referencias a código no administrado en plataformas de 32 bits y de 64 bits, es correcto. La infracción más común de esta regla es pasar un entero de tamaño fijo en el que se requiere una variable de tamaño de puntero dependiente de la plataforma.
 
 ## <a name="rule-description"></a>Descripción de la regla
- Cualquiera de los siguientes escenarios infringe esta regla se produce:
+Uno de los escenarios siguientes infringe esta regla:
 
-- El valor devuelto o parámetro se escribe como un entero de tamaño fijo cuando se debe escribir como un `IntPtr`.
+- El valor devuelto o el parámetro se escribe como un entero de tamaño fijo cuando se debe escribir como `IntPtr`.
 
-- El valor devuelto o parámetro que se escribe como un `IntPtr` cuando debe escribirse como un entero de tamaño fijo.
+- El valor devuelto o el parámetro se escribe como `IntPtr` cuando se debe escribir como un entero de tamaño fijo.
 
 ## <a name="how-to-fix-violations"></a>Cómo corregir infracciones
- Puede corregir esta infracción usando `IntPtr` o `UIntPtr` para representar los identificadores en lugar de `Int32` o `UInt32`.
+`IntPtr` Puede corregir esta infracción mediante o `UIntPtr` para representar controladores en lugar de `Int32` o `UInt32`.
 
-## <a name="when-to-suppress-warnings"></a>Cuándo Suprimir advertencias
- No debe suprimir esta advertencia.
+## <a name="when-to-suppress-warnings"></a>Cuándo suprimir advertencias
+No debe suprimir esta advertencia.
 
 ## <a name="example"></a>Ejemplo
- El ejemplo siguiente muestra una infracción de esta regla.
+En el ejemplo siguiente se muestra una infracción de esta regla.
 
 ```csharp
 internal class NativeMethods
@@ -58,7 +58,7 @@ internal class NativeMethods
 }
 ```
 
- En este ejemplo, el `nIconIndex` parámetro se declara como un `IntPtr`, que es de 4 bytes en una plataforma de 32 bits y 8 bytes en una plataforma de 64 bits. En la declaración no administrada que sigue, puede ver que `nIconIndex` es un entero sin signo de 4 bytes en todas las plataformas.
+En este ejemplo, el `nIconIndex` parámetro se declara `IntPtr`como, que tiene 4 bytes de ancho en una plataforma de 32 bits y 8 bytes de ancho en una plataforma de 64 bits. En la declaración no administrada que se muestra a continuación, puede `nIconIndex` ver que es un entero sin signo de 4 bytes en todas las plataformas.
 
 ```csharp
 HICON ExtractIcon(HINSTANCE hInst, LPCTSTR lpszExeFileName,
@@ -66,7 +66,7 @@ HICON ExtractIcon(HINSTANCE hInst, LPCTSTR lpszExeFileName,
 ```
 
 ## <a name="example"></a>Ejemplo
- Para corregir la infracción, cambie la declaración a la siguiente:
+Para corregir la infracción, cambie la declaración a lo siguiente:
 
 ```csharp
 internal class NativeMethods{
@@ -77,4 +77,4 @@ internal class NativeMethods{
 ```
 
 ## <a name="see-also"></a>Vea también
- [Portability Warnings](../code-quality/portability-warnings.md)
+[Portability Warnings](../code-quality/portability-warnings.md)
