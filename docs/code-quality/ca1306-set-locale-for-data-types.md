@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 47faa5e496585940f61f94bb6dfb0b8d9d70f752
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 893844741c848bee759f56dd027c9976a21902e8
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62797513"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68922789"
 ---
 # <a name="ca1306-set-locale-for-data-types"></a>CA1306: Establecer configuración regional de tipos de datos
 
@@ -27,25 +27,25 @@ ms.locfileid: "62797513"
 |-|-|
 |TypeName|SetLocaleForDataTypes|
 |Identificador de comprobación|CA1306|
-|Categoría|Microsoft.Globalization|
+|Categoría|Microsoft. Globalization|
 |Cambio problemático|Poco problemático|
 
-## <a name="cause"></a>Motivo
- Un método o constructor crea uno o varios <xref:System.Data.DataTable?displayProperty=fullName> o <xref:System.Data.DataSet?displayProperty=fullName> instancias y no estableció explícitamente la propiedad de configuración regional (<xref:System.Data.DataTable.Locale%2A?displayProperty=fullName> o <xref:System.Data.DataSet.Locale%2A?displayProperty=fullName>).
+## <a name="cause"></a>Causa
+Un método o constructor creó una o varias <xref:System.Data.DataTable?displayProperty=fullName> instancias <xref:System.Data.DataSet?displayProperty=fullName> de o y no estableció explícitamente la propiedad de configuración<xref:System.Data.DataTable.Locale%2A?displayProperty=fullName> regional <xref:System.Data.DataSet.Locale%2A?displayProperty=fullName>(o).
 
 ## <a name="rule-description"></a>Descripción de la regla
- La configuración regional determina los elementos de presentación específicos de la referencia cultural para los datos, como el formato para valores numéricos, símbolos de divisa y criterio de ordenación. Cuando creas un <xref:System.Data.DataTable> o <xref:System.Data.DataSet>, debe establecer explícitamente la configuración regional. De forma predeterminada, la configuración regional para estos tipos es la referencia cultural actual. Para los datos que se almacenan en un archivo o base de datos y se comparten de forma global, normalmente se debe establecer la configuración regional en la referencia cultural (<xref:System.Globalization.CultureInfo.InvariantCulture%2A?displayProperty=fullName>). Cuando los datos se comparten entre referencias culturales, utilizando la configuración regional predeterminada puede hacer que el contenido de la <xref:System.Data.DataTable> o <xref:System.Data.DataSet> se presente o interpretará incorrectamente.
+La configuración regional determina los elementos de presentación específicos de la referencia cultural para los datos, como el formato utilizado para los valores numéricos, los símbolos de moneda y el criterio de ordenación. Al crear <xref:System.Data.DataTable> o <xref:System.Data.DataSet>, debe establecer la configuración regional explícitamente. De forma predeterminada, la configuración regional de estos tipos es la referencia cultural actual. En el caso de los datos que se almacenan en una base de datos o un archivo y se comparten de forma global, la configuración regional debe establecerse normalmente en la referencia cultural de todos los idiomas (<xref:System.Globalization.CultureInfo.InvariantCulture%2A?displayProperty=fullName>). Cuando los datos se comparten entre las referencias culturales, el uso de la configuración regional predeterminada puede <xref:System.Data.DataTable> hacer <xref:System.Data.DataSet> que el contenido de o se presente o se interprete de forma incorrecta.
 
 ## <a name="how-to-fix-violations"></a>Cómo corregir infracciones
- Para corregir una infracción de esta regla, establezca explícitamente la configuración regional para la <xref:System.Data.DataTable> o <xref:System.Data.DataSet>.
+Para corregir una infracción de esta regla, establezca explícitamente la configuración regional <xref:System.Data.DataTable> de <xref:System.Data.DataSet>o.
 
-## <a name="when-to-suppress-warnings"></a>Cuándo Suprimir advertencias
- Es seguro suprimir una advertencia de esta regla cuando la biblioteca o la aplicación es para un público limitado local, no se comparten los datos o la configuración predeterminada produce el comportamiento deseado en todos los escenarios admitidos.
+## <a name="when-to-suppress-warnings"></a>Cuándo suprimir advertencias
+Es seguro suprimir una advertencia de esta regla cuando la biblioteca o aplicación es para un público local limitado, no se comparten los datos, o la configuración predeterminada produce el comportamiento deseado en todos los escenarios admitidos.
 
 ## <a name="example"></a>Ejemplo
- En el ejemplo siguiente se crean dos <xref:System.Data.DataTable> instancias.
+En el ejemplo siguiente se <xref:System.Data.DataTable> crean dos instancias de.
 
- [!code-csharp[FxCop.Globalization.DataTable#1](../code-quality/codesnippet/CSharp/ca1306-set-locale-for-data-types_1.cs)]
+[!code-csharp[FxCop.Globalization.DataTable#1](../code-quality/codesnippet/CSharp/ca1306-set-locale-for-data-types_1.cs)]
 
 ## <a name="see-also"></a>Vea también
 

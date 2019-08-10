@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2417266da44c4af38e37eb8e0f67ac13a5a7823e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 7acbb9d0127dd2ddb6668e72db8fa88124ec2b3c
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62808245"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68921425"
 ---
 # <a name="ca2103-review-imperative-security"></a>CA2103: Revisar la seguridad imperativa
 
@@ -30,19 +30,19 @@ ms.locfileid: "62808245"
 |Categoría|Microsoft.Security|
 |Cambio problemático|Problemático|
 
-## <a name="cause"></a>Motivo
- Un método utiliza la seguridad imperativa y podría estar creando el permiso utilizando la información de estado y los valores devueltos que pueden cambiar mientras la solicitud está activa.
+## <a name="cause"></a>Causa
+Un método utiliza la seguridad imperativa y podría estar creando el permiso utilizando la información de estado y los valores devueltos que pueden cambiar mientras la solicitud está activa.
 
 ## <a name="rule-description"></a>Descripción de la regla
- Seguridad imperativa utiliza objetos administrados para especificar los permisos y las acciones de seguridad durante la ejecución de código, en comparación con la seguridad declarativa, que utiliza los atributos para almacenar los permisos y las acciones en los metadatos. La seguridad imperativa es muy flexible, ya que puede establecer el estado de un objeto de permiso y seleccionar acciones de seguridad mediante la información que no está disponible en tiempo de ejecución. Flexibilidad junto con la que produce el riesgo de que la información en tiempo de ejecución que se utiliza para determinar que el estado de un permiso no permanecen sin cambios siempre y cuando la acción está en vigor.
+La seguridad imperativa utiliza objetos administrados para especificar permisos y acciones de seguridad durante la ejecución del código, en comparación con la seguridad declarativa, que utiliza atributos para almacenar permisos y acciones en los metadatos. La seguridad imperativa es muy flexible, ya que puede establecer el estado de un objeto de permiso y seleccionar acciones de seguridad mediante la información que no está disponible hasta el tiempo de ejecución. Junto con esa flexibilidad, existe el riesgo de que la información en tiempo de ejecución que se usa para determinar el estado de un permiso no se modifique, siempre y cuando la acción esté en vigor.
 
- Utilice la seguridad declarativa siempre que sea posible. Las demandas declarativas son más fáciles de entender.
+Utilice la seguridad declarativa siempre que sea posible. Las peticiones declarativas son más fáciles de entender.
 
 ## <a name="how-to-fix-violations"></a>Cómo corregir infracciones
- Revise las demandas de seguridad imperativa para asegurarse de que el estado del permiso no se basa en información que puede cambiar mientras se está usando el permiso.
+Revise las demandas de seguridad imperativa para asegurarse de que el estado del permiso no se basa en la información que puede cambiar siempre que se use el permiso.
 
-## <a name="when-to-suppress-warnings"></a>Cuándo Suprimir advertencias
- Es seguro suprimir una advertencia de esta regla si el permiso no se basa en datos que cambian. Sin embargo, es mejor cambiar la petición imperativa a su equivalente declarativo.
+## <a name="when-to-suppress-warnings"></a>Cuándo suprimir advertencias
+Es seguro suprimir una advertencia de esta regla si el permiso no depende de los datos modificados. Sin embargo, es mejor cambiar la demanda imperativa a su equivalente declarativo.
 
 ## <a name="see-also"></a>Vea también
 

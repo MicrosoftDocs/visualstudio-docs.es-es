@@ -8,21 +8,21 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 7c2a9570eeae6d9545bb91f7f1ed0c57df3a9c92
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 92b0d6b96adf75acc0b695466dca342f8dca59fa
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62571373"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68919539"
 ---
 # <a name="basic-design-guideline-rules-rule-set-for-managed-code"></a>Conjunto de reglas Reglas de directrices de diseño básicas para código administrado
-Puede usar el conjunto de reglas reglas de directrices de diseño básicas de Microsoft a centrar en hacer que el código sea más fácil de entender y utilizar. Debe incluir este conjunto de reglas si el proyecto incluye código de bibliotecas o si desea exigir procedimientos recomendados para el código que es fácil de mantener.
+Puede usar el conjunto de reglas reglas de directrices de diseño básico de Microsoft para centrarse en facilitar la comprensión y el uso del código. Debe incluir este conjunto de reglas si el proyecto incluye código de biblioteca o si desea aplicar las prácticas recomendadas para el código que sea fácil de mantener.
 
- Las reglas de directrices de diseño básico incluye todas las reglas en el conjunto de reglas reglas mínimas recomendadas de Microsoft. Para obtener una lista de las reglas mínimas, consulte [pravidel administra reglas recomendadas para código administrado](../code-quality/managed-recommended-rules-rule-set-for-managed-code.md).
+Las reglas de directrices de diseño básicas incluyen todas las reglas del conjunto de reglas reglas mínimas de Recommeded de Microsoft. Para obtener una lista de las reglas mínimas, vea conjunto de reglas [reglas recomendadas administradas para código administrado](../code-quality/managed-recommended-rules-rule-set-for-managed-code.md).
 
- En la tabla siguiente se describe todas las reglas en el conjunto de reglas reglas de directrices de diseño básicas de Microsoft.
+En la tabla siguiente se describen todas las reglas del conjunto de reglas reglas de directrices de diseño básicas de Microsoft.
 
-|Regla|Descripción|
+|Regla|DESCRIPCIÓN|
 |----------|-----------------|
 |[CA1001](../code-quality/ca1001-types-that-own-disposable-fields-should-be-disposable.md)|Los tipos que poseen campos descartables deben ser descartables|
 |[CA1009](../code-quality/ca1009-declare-event-handlers-correctly.md)|Declarar los controladores de evento correctamente|

@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d8dba144740a2a39494323a456cddf90131e35c6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ee39ffbfd2e73a14fd42d574cef92a24784d1ad4
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62545888"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68921669"
 ---
 # <a name="ca1713-events-should-not-have-before-or-after-prefix"></a>CA1713: Los eventos no deben tener prefijos antes ni después
 
@@ -30,16 +30,16 @@ ms.locfileid: "62545888"
 |Categoría|Microsoft.Naming|
 |Cambio problemático|Problemático|
 
-## <a name="cause"></a>Motivo
- El nombre de un evento empieza por 'Before' o 'After'.
+## <a name="cause"></a>Causa
+El nombre de un evento empieza por ' Before ' o ' After '.
 
 ## <a name="rule-description"></a>Descripción de la regla
- Los nombres de evento deben describir la acción que provoca el evento. Para nombrar los eventos relacionados que se provocan en una secuencia específica, utilice el tiempo presente o pasado para indicar la posición relativa en la secuencia de acciones. Por ejemplo, cuando asigne nombres a un par de eventos que se generan al cerrar un recurso, es posible que asígnele 'Closing' y 'Cerrado', en lugar de 'BeforeClose' y 'AfterClose'.
+Los nombres de evento deben describir la acción que genera el evento. Para nombrar los eventos relacionados que se provocan en una secuencia específica, utilice el tiempo presente o pasado para indicar la posición relativa en la secuencia de acciones. Por ejemplo, al asignar un nombre a un par de eventos que se genera al cerrar un recurso, puede asignarle el nombre ' closing ' y ' Closed ', en lugar de ' BeforeClose ' y ' AfterClose '.
 
- Las convenciones de nomenclatura proporcionan una apariencia común para las bibliotecas destinadas a Common Language Runtime. Esto reduce la curva de aprendizaje necesaria para las nuevas bibliotecas de software y aumenta la confianza del cliente respecto a que la biblioteca se haya desarrollado por parte de un especialista en desarrollo de código administrado.
+Las convenciones de nomenclatura proporcionan una apariencia común para las bibliotecas destinadas a Common Language Runtime. Esto reduce la curva de aprendizaje necesaria para las nuevas bibliotecas de software y aumenta la confianza del cliente respecto a que la biblioteca se haya desarrollado por parte de un especialista en desarrollo de código administrado.
 
 ## <a name="how-to-fix-violations"></a>Cómo corregir infracciones
- Quite el prefijo del nombre de evento y considere la posibilidad de cambiar el nombre que se usará el tiempo presente o pasado de un verbo.
+Quite el prefijo del nombre del evento y considere la posibilidad de cambiar el nombre para utilizar el pasador presente o pasado de un verbo.
 
-## <a name="when-to-suppress-warnings"></a>Cuándo Suprimir advertencias
- No suprima las advertencias de esta regla.
+## <a name="when-to-suppress-warnings"></a>Cuándo suprimir advertencias
+No suprima las advertencias de esta regla.

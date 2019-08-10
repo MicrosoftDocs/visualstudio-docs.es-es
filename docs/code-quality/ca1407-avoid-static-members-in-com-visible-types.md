@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5b09122aebdc02b9eacb32df596914a0a08a9ea9
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 631be1a93318cd24af4251fefbc710294fa52bf7
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62546263"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68922008"
 ---
 # <a name="ca1407-avoid-static-members-in-com-visible-types"></a>CA1407: Evitar los miembros estáticos en tipos visibles a través de COM
 
@@ -30,17 +30,17 @@ ms.locfileid: "62546263"
 |Categoría|Microsoft.Interoperability|
 |Cambio problemático|Poco problemático|
 
-## <a name="cause"></a>Motivo
- Un tipo marcado específicamente como visible para el modelo de objetos componentes (COM) contiene un `public``static` método.
+## <a name="cause"></a>Causa
+Un tipo que está marcado específicamente como visible para el modelo de objetos componentes (com) `public``static` contiene un método.
 
 ## <a name="rule-description"></a>Descripción de la regla
- No es compatible con COM `static` métodos.
+COM no admite `static` métodos.
 
- Esta regla omite la propiedad y descriptores de acceso de eventos, métodos o métodos que se marcan mediante el uso de la sobrecarga de operadores la <xref:System.Runtime.InteropServices.ComRegisterFunctionAttribute?displayProperty=fullName> atributo o la <xref:System.Runtime.InteropServices.ComUnregisterFunctionAttribute?displayProperty=fullName> atributo.
+Esta regla omite los descriptores de acceso de propiedades y eventos, métodos de sobrecarga de operadores o métodos marcados mediante el <xref:System.Runtime.InteropServices.ComRegisterFunctionAttribute?displayProperty=fullName> atributo o el <xref:System.Runtime.InteropServices.ComUnregisterFunctionAttribute?displayProperty=fullName> atributo.
 
- De forma predeterminada, los siguientes son visibles para COM: ensamblados, tipos públicos, los miembros de instancia públicos en tipos públicos y todos los miembros de tipos de valor público.
+De forma predeterminada, los siguientes elementos son visibles para COM: ensamblados, tipos públicos, miembros de instancia pública en tipos públicos y todos los miembros de tipos de valor públicos.
 
- Para esta regla que se produzca, un nivel de ensamblado <xref:System.Runtime.InteropServices.ComVisibleAttribute> debe establecerse en `false` y la clase - <xref:System.Runtime.InteropServices.ComVisibleAttribute> debe establecerse en `true`, como se muestra en el código siguiente.
+Para que se produzca esta regla, debe establecerse <xref:System.Runtime.InteropServices.ComVisibleAttribute> un nivel de ensamblado en `false` y la <xref:System.Runtime.InteropServices.ComVisibleAttribute> clase debe establecerse `true`en, como se muestra en el código siguiente.
 
 ```csharp
 using System;
@@ -60,38 +60,38 @@ namespace Samples
 ```
 
 ## <a name="how-to-fix-violations"></a>Cómo corregir infracciones
- Para corregir una infracción de esta regla, cambie el diseño para utilizar un método de instancia que proporciona la misma funcionalidad que el `static` método.
+Para corregir una infracción de esta regla, cambie el diseño para utilizar un método de instancia que proporcione la misma funcionalidad `static` que el método.
 
-## <a name="when-to-suppress-warnings"></a>Cuándo Suprimir advertencias
- Es seguro suprimir una advertencia de esta regla si un cliente COM no requiere acceso a la funcionalidad proporcionada por el `static` método.
+## <a name="when-to-suppress-warnings"></a>Cuándo suprimir advertencias
+Es seguro suprimir una advertencia de esta regla si un cliente com no requiere acceso a la funcionalidad proporcionada por el `static` método.
 
-## <a name="example-violation"></a>Infracción de ejemplo
+## <a name="example-violation"></a>Ejemplo de infracción
 
-### <a name="description"></a>Descripción
- El ejemplo siguiente se muestra un `static` método que infringe esta regla.
+### <a name="description"></a>DESCRIPCIÓN
+En el ejemplo siguiente se `static` muestra un método que infringe esta regla.
 
 ### <a name="code"></a>Código
- [!code-csharp[FxCop.Interoperability.ComVisibleStaticMembersViolation#1](../code-quality/codesnippet/CSharp/ca1407-avoid-static-members-in-com-visible-types_1.cs)]
+[!code-csharp[FxCop.Interoperability.ComVisibleStaticMembersViolation#1](../code-quality/codesnippet/CSharp/ca1407-avoid-static-members-in-com-visible-types_1.cs)]
 
 ### <a name="comments"></a>Comentarios
- En este ejemplo, el **Book.FromPages** método no se puede llamar desde COM.
+En este ejemplo, no se puede llamar al método **book. FromPages** desde com.
 
-## <a name="example-fix"></a>Corrección del ejemplo
+## <a name="example-fix"></a>Corrección de ejemplo
 
-### <a name="description"></a>Descripción
- Para corregir la infracción en el ejemplo anterior, puede cambiar el método a un método de instancia, pero no tiene sentido en esta instancia. Una solución mejor es aplicar explícitamente `ComVisible(false)` al método para dejar claro a otros desarrolladores que no se vean el método desde COM.
+### <a name="description"></a>DESCRIPCIÓN
+Para corregir la infracción en el ejemplo anterior, podría cambiar el método a un método de instancia, pero esto no tiene sentido en esta instancia. Una solución mejor es aplicar `ComVisible(false)` explícitamente al método para que resulte claro a otros desarrolladores que el método no se puede visualizar desde com.
 
- El ejemplo siguiente aplica <xref:System.Runtime.InteropServices.ComRegisterFunctionAttribute> al método.
+El siguiente ejemplo se <xref:System.Runtime.InteropServices.ComRegisterFunctionAttribute> aplica al método.
 
 ### <a name="code"></a>Código
- [!code-csharp[FxCop.Interoperability.ComVisibleStaticMembersFixed#1](../code-quality/codesnippet/CSharp/ca1407-avoid-static-members-in-com-visible-types_2.cs)]
+[!code-csharp[FxCop.Interoperability.ComVisibleStaticMembersFixed#1](../code-quality/codesnippet/CSharp/ca1407-avoid-static-members-in-com-visible-types_2.cs)]
 
 ## <a name="related-rules"></a>Reglas relacionadas
- [CA1017: Marque los ensamblados con ComVisibleAttribute](../code-quality/ca1017-mark-assemblies-with-comvisibleattribute.md)
+[CA1017: Marcar ensamblados con ComVisibleAttribute](../code-quality/ca1017-mark-assemblies-with-comvisibleattribute.md)
 
- [CA1406: Evite argumentos Int64 para clientes Visual Basic 6](../code-quality/ca1406-avoid-int64-arguments-for-visual-basic-6-clients.md)
+[CA1406: Evite argumentos Int64 para clientes de Visual Basic 6](../code-quality/ca1406-avoid-int64-arguments-for-visual-basic-6-clients.md)
 
- [CA1413: Evite campos no públicos en tipos de valor visibles COM](../code-quality/ca1413-avoid-non-public-fields-in-com-visible-value-types.md)
+[CA1413: Evitar campos no públicos en tipos de valor visibles para COM](../code-quality/ca1413-avoid-non-public-fields-in-com-visible-value-types.md)
 
 ## <a name="see-also"></a>Vea también
- [Interoperating with Unmanaged Code](/dotnet/framework/interop/index) (Interoperar con código no administrado)
+[Interoperating with Unmanaged Code](/dotnet/framework/interop/index) (Interoperar con código no administrado)

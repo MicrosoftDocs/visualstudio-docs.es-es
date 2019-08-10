@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 203fc14097e0c6d2fbdaee1689deffdfe814eb63
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 5f3c118b097dbcd9eba8a5755672bde9c11cb13a
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62541902"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68920303"
 ---
 # <a name="ca2215-dispose-methods-should-call-base-class-dispose"></a>CA2215: Los métodos Dispose deben llamar al método Dispose de la clase base
 
@@ -31,27 +31,27 @@ ms.locfileid: "62541902"
 |Categoría|Microsoft.Usage|
 |Cambio problemático|No trascendental|
 
-## <a name="cause"></a>Motivo
- Un tipo que implementa <xref:System.IDisposable?displayProperty=fullName> hereda de un tipo que también implementa <xref:System.IDisposable>. El <xref:System.IDisposable.Dispose%2A> método del tipo heredado no llama a la <xref:System.IDisposable.Dispose%2A> método del tipo primario.
+## <a name="cause"></a>Causa
+Un tipo que implementa <xref:System.IDisposable?displayProperty=fullName> hereda de un tipo que también <xref:System.IDisposable>implementa. El <xref:System.IDisposable.Dispose%2A> método del tipo de herencia no llama al <xref:System.IDisposable.Dispose%2A> método del tipo primario.
 
 ## <a name="rule-description"></a>Descripción de la regla
- Si un tipo hereda de un tipo desechable, debe llamar a la <xref:System.IDisposable.Dispose%2A> método del tipo base desde dentro de su propio <xref:System.IDisposable.Dispose%2A> método. Una llamada al método del tipo base Dispose garantiza que se liberen los recursos creados por el tipo base.
+Si un tipo hereda de un tipo descartable, debe llamar al <xref:System.IDisposable.Dispose%2A> método del tipo base desde su propio <xref:System.IDisposable.Dispose%2A> método. Llamar al método de tipo base Dispose garantiza que se liberen los recursos creados por el tipo base.
 
 ## <a name="how-to-fix-violations"></a>Cómo corregir infracciones
- Para corregir una infracción de esta regla, llame a `base`.<xref:System.IDisposable.Dispose%2A> en su <xref:System.IDisposable.Dispose%2A> método.
+Para corregir una infracción de esta regla, `base`llame a.<xref:System.IDisposable.Dispose%2A> en el <xref:System.IDisposable.Dispose%2A> método.
 
-## <a name="when-to-suppress-warnings"></a>Cuándo Suprimir advertencias
- Es seguro suprimir una advertencia de esta regla si la llamada a `base`.<xref:System.IDisposable.Dispose%2A> se produce en un nivel más profundo que realiza la llamada a las comprobaciones de la regla.
-
-## <a name="example"></a>Ejemplo
- El ejemplo siguiente muestra un tipo `TypeA` que implementa <xref:System.IDisposable>.
-
- [!code-csharp[FxCop.Usage.IDisposablePattern#1](../code-quality/codesnippet/CSharp/ca2215-dispose-methods-should-call-base-class-dispose_1.cs)]
+## <a name="when-to-suppress-warnings"></a>Cuándo suprimir advertencias
+Es seguro suprimir una advertencia de esta regla si la llamada a `base`.<xref:System.IDisposable.Dispose%2A> se produce en un nivel de llamada más profundo que las comprobaciones de la regla.
 
 ## <a name="example"></a>Ejemplo
- El ejemplo siguiente muestra un tipo `TypeB` que hereda del tipo `TypeA` y llama correctamente a su <xref:System.IDisposable.Dispose%2A> método.
+En el ejemplo siguiente se muestra `TypeA` un tipo que <xref:System.IDisposable>implementa.
 
- [!code-vb[FxCop.Usage.IDisposableBaseCalled#1](../code-quality/codesnippet/VisualBasic/ca2215-dispose-methods-should-call-base-class-dispose_2.vb)]
+[!code-csharp[FxCop.Usage.IDisposablePattern#1](../code-quality/codesnippet/CSharp/ca2215-dispose-methods-should-call-base-class-dispose_1.cs)]
+
+## <a name="example"></a>Ejemplo
+En el ejemplo siguiente se muestra `TypeB` un tipo que hereda de `TypeA` Type y llama correctamente <xref:System.IDisposable.Dispose%2A> a su método.
+
+[!code-vb[FxCop.Usage.IDisposableBaseCalled#1](../code-quality/codesnippet/VisualBasic/ca2215-dispose-methods-should-call-base-class-dispose_2.vb)]
 
 ## <a name="see-also"></a>Vea también
 

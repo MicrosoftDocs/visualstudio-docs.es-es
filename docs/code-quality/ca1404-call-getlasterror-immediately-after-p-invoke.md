@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 2cd6e3228d67b8dd04cda15549f6b1d172d02916
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 03add1625c4d59bb180f9f0f08692e67bee8047b
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62546165"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68922077"
 ---
 # <a name="ca1404-call-getlasterror-immediately-after-pinvoke"></a>CA1404: Llamar a GetLastError inmediatamente después de P/Invoke
 
@@ -33,14 +33,14 @@ ms.locfileid: "62546165"
 |Categoría|Microsoft.Interoperability|
 |Cambio problemático|Poco problemático|
 
-## <a name="cause"></a>Motivo
+## <a name="cause"></a>Causa
 
-Se realiza una llamada a la <xref:System.Runtime.InteropServices.Marshal.GetLastWin32Error%2A?displayProperty=fullName> método o el equivalente de Win32 `GetLastError` función y la llamada que se incluye inmediatamente anterior no es una plataforma de invocación de método.
+Se realiza una llamada al <xref:System.Runtime.InteropServices.Marshal.GetLastWin32Error%2A?displayProperty=fullName> método o a la función de Win32 `GetLastError` equivalente, y la llamada que viene inmediatamente antes de no es un método de invocación de plataforma.
 
 ## <a name="rule-description"></a>Descripción de la regla
- Una plataforma de invocación de método tiene acceso al código no administrado y se define utilizando el `Declare` palabra clave en [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] o <xref:System.Runtime.InteropServices.DllImportAttribute?displayProperty=fullName> atributo. Por lo general, en caso de error, las funciones no administradas llamar a Win32 `SetLastError` función para establecer un código de error que está asociado con el error. El llamador de la función con errores, las llamadas Win32 `GetLastError` función para recuperar el código de error y determinar la causa del error. El código de error se mantiene por subproceso y se sobrescribe con la siguiente llamada a `SetLastError`. Después de una llamada a una plataforma con errores de invocación de método, el código administrado puede recuperar el código de error mediante una llamada a la <xref:System.Runtime.InteropServices.Marshal.GetLastWin32Error%2A> método. Dado que el código de error que pueda sobrescribirse mediante llamadas internas desde otros métodos de la biblioteca de clases administradas, el `GetLastError` o <xref:System.Runtime.InteropServices.Marshal.GetLastWin32Error%2A> debe llamarse al método inmediatamente después de la invocación de plataforma llamada al método.
+Un método de invocación de plataforma tiene acceso al código no administrado y se define `Declare` mediante la [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] palabra clave <xref:System.Runtime.InteropServices.DllImportAttribute?displayProperty=fullName> en o el atributo. Normalmente, en caso de error, las funciones no administradas `SetLastError` llaman a la función de Win32 para establecer un código de error asociado al error. El autor de la llamada de la función failed `GetLastError` llama a la función de Win32 para recuperar el código de error y determinar la causa del error. El código de error se mantiene por subproceso y se sobrescribe con la siguiente llamada a `SetLastError`. Después de una llamada a un método de invocación de plataforma con errores, el código administrado puede recuperar <xref:System.Runtime.InteropServices.Marshal.GetLastWin32Error%2A> el código de error llamando al método. Dado que las llamadas internas de otros métodos de biblioteca de clases administradas pueden sobrescribir el código de `GetLastError` error <xref:System.Runtime.InteropServices.Marshal.GetLastWin32Error%2A> , se debe llamar al método o inmediatamente después de la llamada al método de invocación de plataforma.
 
- La regla omite las llamadas a los siguientes miembros administrados cuando se producen entre la llamada a la plataforma de invocación de método y la llamada a <xref:System.Runtime.InteropServices.Marshal.GetLastWin32Error%2A>. Estos miembros no cambian el error de código y son útiles para determinar el éxito de algunas plataformas invocan llamadas a métodos.
+La regla omite las llamadas a los siguientes miembros administrados cuando se producen entre la llamada al método de invocación de plataforma y <xref:System.Runtime.InteropServices.Marshal.GetLastWin32Error%2A>la llamada a. Estos miembros no cambian el código de error y son útiles para determinar el éxito de algunas llamadas a métodos de invocación de plataforma.
 
 - <xref:System.IntPtr.Zero?displayProperty=fullName>
 
@@ -51,24 +51,24 @@ Se realiza una llamada a la <xref:System.Runtime.InteropServices.Marshal.GetLast
 - <xref:System.Runtime.InteropServices.SafeHandle.IsInvalid%2A?displayProperty=fullName>
 
 ## <a name="how-to-fix-violations"></a>Cómo corregir infracciones
- Para corregir una infracción de esta regla, mueva la llamada a <xref:System.Runtime.InteropServices.Marshal.GetLastWin32Error%2A> para que sigue inmediatamente a la llamada a la plataforma de invocación de método.
+Para corregir una infracción de esta regla, mueva la llamada <xref:System.Runtime.InteropServices.Marshal.GetLastWin32Error%2A> a para que siga inmediatamente a la llamada al método de invocación de plataforma.
 
-## <a name="when-to-suppress-warnings"></a>Cuándo Suprimir advertencias
- Es seguro suprimir una advertencia de esta regla si el código entre la plataforma de invocar la llamada al método y el <xref:System.Runtime.InteropServices.Marshal.GetLastWin32Error%2A> llamada al método no puede producir explícitamente o implícitamente cambiar el código de error.
+## <a name="when-to-suppress-warnings"></a>Cuándo suprimir advertencias
+Es seguro suprimir una advertencia de esta regla si el código entre la llamada al método de invocación de <xref:System.Runtime.InteropServices.Marshal.GetLastWin32Error%2A> plataforma y la llamada al método no pueden hacer que el código de error cambie de forma explícita o implícita.
 
 ## <a name="example"></a>Ejemplo
- El ejemplo siguiente muestra un método que infringe la regla y un método que cumple la regla.
+En el ejemplo siguiente se muestra un método que infringe la regla y un método que cumple la regla.
 
- [!code-vb[FxCop.Interoperability.LastErrorPInvoke#1](../code-quality/codesnippet/VisualBasic/ca1404-call-getlasterror-immediately-after-p-invoke_1.vb)]
- [!code-csharp[FxCop.Interoperability.LastErrorPInvoke#1](../code-quality/codesnippet/CSharp/ca1404-call-getlasterror-immediately-after-p-invoke_1.cs)]
+[!code-vb[FxCop.Interoperability.LastErrorPInvoke#1](../code-quality/codesnippet/VisualBasic/ca1404-call-getlasterror-immediately-after-p-invoke_1.vb)]
+[!code-csharp[FxCop.Interoperability.LastErrorPInvoke#1](../code-quality/codesnippet/CSharp/ca1404-call-getlasterror-immediately-after-p-invoke_1.cs)]
 
 ## <a name="related-rules"></a>Reglas relacionadas
- [CA1060: Mueva P/Invokes a la clase NativeMethods](../code-quality/ca1060-move-p-invokes-to-nativemethods-class.md)
+[CA1060: Movimiento P/Invoke a la clase NativeMethods](../code-quality/ca1060-move-p-invokes-to-nativemethods-class.md)
 
- [CA1400: Deben existir puntos de entrada P/Invoke](../code-quality/ca1400-p-invoke-entry-points-should-exist.md)
+[CA1400: Deben existir puntos de entrada P/Invoke](../code-quality/ca1400-p-invoke-entry-points-should-exist.md)
 
- [CA1401: P/Invoke no deben estar visibles](../code-quality/ca1401-p-invokes-should-not-be-visible.md)
+[CA1401: Las invocacións P/no deben ser visibles](../code-quality/ca1401-p-invokes-should-not-be-visible.md)
 
- [CA2101: Especifique serialización para argumentos de cadena P/Invoke](../code-quality/ca2101-specify-marshaling-for-p-invoke-string-arguments.md)
+[CA2101: Especificar serialización para argumentos de cadena P/Invoke](../code-quality/ca2101-specify-marshaling-for-p-invoke-string-arguments.md)
 
- [CA2205: Utilizar equivalentes administrados de la API Win32](../code-quality/ca2205-use-managed-equivalents-of-win32-api.md)
+[CA2205: Usar equivalentes administrados de la API Win32](../code-quality/ca2205-use-managed-equivalents-of-win32-api.md)

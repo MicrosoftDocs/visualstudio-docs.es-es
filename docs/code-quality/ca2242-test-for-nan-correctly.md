@@ -16,12 +16,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 43c2dd1f6a23c3df4d77207efb49531b97b3b381
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 8912cb6eeec8009364936a42d572f4f3d83fae5e
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62541407"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68919918"
 ---
 # <a name="ca2242-test-for-nan-correctly"></a>CA2242: Comprobar NaN correctamente
 
@@ -32,20 +32,20 @@ ms.locfileid: "62541407"
 |Categoría|Microsoft.Usage|
 |Cambio problemático|No trascendental|
 
-## <a name="cause"></a>Motivo
- Una expresión prueba un valor respecto <xref:System.Single.NaN?displayProperty=fullName> o <xref:System.Double.NaN?displayProperty=fullName>.
+## <a name="cause"></a>Causa
+Una expresión prueba un valor con <xref:System.Single.NaN?displayProperty=fullName> o <xref:System.Double.NaN?displayProperty=fullName>.
 
 ## <a name="rule-description"></a>Descripción de la regla
- <xref:System.Double.NaN?displayProperty=fullName>, que representa un elemento no numérico, se produce cuando una operación aritmética es indefinida. Cualquier expresión que comprueba la igualdad entre un valor y <xref:System.Double.NaN?displayProperty=fullName> siempre devuelve `false`. Cualquier expresión que comprueba la desigualdad entre un valor y <xref:System.Double.NaN?displayProperty=fullName> siempre devuelve `true`.
+ <xref:System.Double.NaN?displayProperty=fullName>, que representa un valor no numérico, se produce cuando una operación aritmética no está definida. Cualquier expresión que comprueba la igualdad entre un valor <xref:System.Double.NaN?displayProperty=fullName> y siempre `false`devuelve. Cualquier expresión que comprueba la desigualdad entre un valor y <xref:System.Double.NaN?displayProperty=fullName> siempre devuelve `true`.
 
 ## <a name="how-to-fix-violations"></a>Cómo corregir infracciones
- Para corregir una infracción de esta regla y determinar con precisión si representa un valor <xref:System.Double.NaN?displayProperty=fullName>, utilice <xref:System.Single.IsNaN%2A?displayProperty=fullName> o <xref:System.Double.IsNaN%2A?displayProperty=fullName> para probar el valor.
+Para corregir una infracción de esta regla y determinar con precisión si un valor <xref:System.Double.NaN?displayProperty=fullName>representa, <xref:System.Single.IsNaN%2A?displayProperty=fullName> use <xref:System.Double.IsNaN%2A?displayProperty=fullName> o para probar el valor.
 
-## <a name="when-to-suppress-warnings"></a>Cuándo Suprimir advertencias
- No suprima las advertencias de esta regla.
+## <a name="when-to-suppress-warnings"></a>Cuándo suprimir advertencias
+No suprima las advertencias de esta regla.
 
 ## <a name="example"></a>Ejemplo
- El ejemplo siguiente muestra dos expresiones que prueban incorrectamente un valor contra <xref:System.Double.NaN?displayProperty=fullName> y una expresión que se utiliza correctamente <xref:System.Double.IsNaN%2A?displayProperty=fullName> para probar el valor.
+En el ejemplo siguiente se muestran dos expresiones que prueban incorrectamente un <xref:System.Double.NaN?displayProperty=fullName> valor en y una expresión que <xref:System.Double.IsNaN%2A?displayProperty=fullName> usa correctamente para probar el valor.
 
- [!code-vb[FxCop.Usage.TestForNaN#1](../code-quality/codesnippet/VisualBasic/ca2242-test-for-nan-correctly_1.vb)]
- [!code-csharp[FxCop.Usage.TestForNaN#1](../code-quality/codesnippet/CSharp/ca2242-test-for-nan-correctly_1.cs)]
+[!code-vb[FxCop.Usage.TestForNaN#1](../code-quality/codesnippet/VisualBasic/ca2242-test-for-nan-correctly_1.vb)]
+[!code-csharp[FxCop.Usage.TestForNaN#1](../code-quality/codesnippet/CSharp/ca2242-test-for-nan-correctly_1.cs)]

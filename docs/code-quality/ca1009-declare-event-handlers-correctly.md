@@ -18,12 +18,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: c3c5d2df6be4fef281d91794b5b71bfa0c3e653f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a98ec47688f289fadba66401aca9fcee7b602cdc
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62779680"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68923566"
 ---
 # <a name="ca1009-declare-event-handlers-correctly"></a>CA1009: Declarar los controladores de evento correctamente
 
@@ -34,32 +34,32 @@ ms.locfileid: "62779680"
 |Categoría|Microsoft.Design|
 |Cambio problemático|Problemático|
 
-## <a name="cause"></a>Motivo
- Un delegado que controla un evento público o protegido no tiene la firma correcta, devuelve el tipo o los nombres de parámetro.
+## <a name="cause"></a>Causa
+Un delegado que controla un evento público o protegido no tiene la firma, el tipo de valor devuelto o los nombres de parámetro correctos.
 
 ## <a name="rule-description"></a>Descripción de la regla
- Los métodos de control de eventos toman dos parámetros. El primero es de tipo <xref:System.Object?displayProperty=fullName> y se denomina 'sender'. Éste es el objeto que provocó el evento. El segundo parámetro es de tipo <xref:System.EventArgs?displayProperty=fullName> y se denomina 'e'. Estos son los datos están asociados a este evento. Por ejemplo, si el evento se desencadena cuando se abre un archivo, los datos de evento normalmente contienen el nombre del archivo.
+Los métodos de control de eventos toman dos parámetros. El primero es de tipo <xref:System.Object?displayProperty=fullName> y se denomina ' Sender '. Éste es el objeto que provocó el evento. El segundo parámetro es de tipo <xref:System.EventArgs?displayProperty=fullName> y se denomina ' e '. Estos son los datos están asociados a este evento. Por ejemplo, si el evento se genera cada vez que se abre un archivo, los datos del evento normalmente contienen el nombre del archivo.
 
- Métodos de controlador de eventos no deben devolver un valor. En el lenguaje de programación C#, esto se indica mediante el tipo de valor devuelto `void`. Un controlador de eventos puede invocar varios métodos en varios objetos. Si se permiten los métodos que devuelven un valor, se produciría varios valores devueltos para cada evento, y solo el valor de este último método se invocó estaría disponible.
+Los métodos de controlador de eventos no deben devolver un valor. En el C# lenguaje de programación, esto se indica mediante el tipo `void`de valor devuelto. Un controlador de eventos puede invocar varios métodos en varios objetos. Si se permite que los métodos devuelvan un valor, se producirán varios valores devueltos para cada evento y solo estará disponible el valor del último método que se invocó.
 
 ## <a name="how-to-fix-violations"></a>Cómo corregir infracciones
- Para corregir una infracción de esta regla, corrija la firma, tipo de valor devuelto o los nombres de parámetro del delegado. Para obtener más información, vea el ejemplo siguiente.
+Para corregir una infracción de esta regla, corrija la firma, el tipo de valor devuelto o los nombres de parámetro del delegado. Para obtener más información, vea el ejemplo siguiente.
 
-## <a name="when-to-suppress-warnings"></a>Cuándo Suprimir advertencias
- No suprima las advertencias de esta regla.
+## <a name="when-to-suppress-warnings"></a>Cuándo suprimir advertencias
+No suprima las advertencias de esta regla.
 
 ## <a name="example"></a>Ejemplo
- El ejemplo siguiente muestra a un delegado que es adecuado para controlar los eventos. Los métodos que pueden invocarse mediante este controlador de eventos cumplen con la firma que se especifica en las instrucciones de diseño. `AlarmEventHandler` es el nombre de tipo del delegado. `AlarmEventArgs` se deriva de la clase base de datos de evento, <xref:System.EventArgs>, y contiene datos de eventos de alarma.
+En el ejemplo siguiente se muestra un delegado adecuado para controlar eventos. Los métodos que puede invocar este controlador de eventos cumplen con la firma que se especifica en las instrucciones de diseño. `AlarmEventHandler`es el nombre de tipo del delegado. `AlarmEventArgs`deriva de la clase base para los datos de evento <xref:System.EventArgs>, y contiene los datos de eventos de alarma.
 
- [!code-cpp[FxCop.Design.EventsTwoParams#1](../code-quality/codesnippet/CPP/ca1009-declare-event-handlers-correctly_1.cpp)]
- [!code-csharp[FxCop.Design.EventsTwoParams#1](../code-quality/codesnippet/CSharp/ca1009-declare-event-handlers-correctly_1.cs)]
- [!code-vb[FxCop.Design.EventsTwoParams#1](../code-quality/codesnippet/VisualBasic/ca1009-declare-event-handlers-correctly_1.vb)]
+[!code-cpp[FxCop.Design.EventsTwoParams#1](../code-quality/codesnippet/CPP/ca1009-declare-event-handlers-correctly_1.cpp)]
+[!code-csharp[FxCop.Design.EventsTwoParams#1](../code-quality/codesnippet/CSharp/ca1009-declare-event-handlers-correctly_1.cs)]
+[!code-vb[FxCop.Design.EventsTwoParams#1](../code-quality/codesnippet/VisualBasic/ca1009-declare-event-handlers-correctly_1.vb)]
 
 ## <a name="related-rules"></a>Reglas relacionadas
- [CA2109: Revisar los controladores de eventos visibles](../code-quality/ca2109-review-visible-event-handlers.md)
+[CA2109: Revisar los controladores de eventos visibles](../code-quality/ca2109-review-visible-event-handlers.md)
 
 ## <a name="see-also"></a>Vea también
 
 - <xref:System.EventArgs?displayProperty=fullName>
 - <xref:System.Object?displayProperty=fullName>
-- [Controlar y provocar eventos](/dotnet/standard/events/index)
+- [Control y generación de eventos](/dotnet/standard/events/index)

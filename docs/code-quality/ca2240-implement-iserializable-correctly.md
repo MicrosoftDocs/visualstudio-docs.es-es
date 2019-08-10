@@ -18,12 +18,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 9ef3e012b3a818c60be23278fe622a40330f3b43
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 1a6d9acc3a74505f766fbf9cfe26fc6878fdbb4b
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62541485"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68920043"
 ---
 # <a name="ca2240-implement-iserializable-correctly"></a>CA2240: Implementar ISerializable correctamente
 
@@ -34,38 +34,38 @@ ms.locfileid: "62541485"
 |Categoría|Microsoft.Usage|
 |Cambio problemático|No trascendental|
 
-## <a name="cause"></a>Motivo
+## <a name="cause"></a>Causa
 
-Un tipo visible externamente es asignable a la <xref:System.Runtime.Serialization.ISerializable?displayProperty=fullName> interfaz y una de las siguientes condiciones es true:
+Un tipo visible externamente se puede asignar a la <xref:System.Runtime.Serialization.ISerializable?displayProperty=fullName> interfaz y se cumple una de las condiciones siguientes:
 
-- El tipo hereda pero no invalida el <xref:System.Runtime.Serialization.ISerializable.GetObjectData%2A?displayProperty=fullName> método y el tipo declara campos de instancia que no están marcados con el <xref:System.NonSerializedAttribute?displayProperty=fullName> atributo.
+- El tipo hereda pero no invalida el <xref:System.Runtime.Serialization.ISerializable.GetObjectData%2A?displayProperty=fullName> método y el tipo declara los campos de instancia que no están marcados con el <xref:System.NonSerializedAttribute?displayProperty=fullName> atributo.
 
-- El tipo no está sellado y el tipo implementa un <xref:System.Runtime.Serialization.ISerializable.GetObjectData%2A> método que no es externamente visible y reemplazable.
+- El tipo no está sellado y el tipo implementa un <xref:System.Runtime.Serialization.ISerializable.GetObjectData%2A> método que no es visible externamente y reemplazable.
 
 ## <a name="rule-description"></a>Descripción de la regla
- Los campos que se declaran en un tipo que hereda de la instancia la <xref:System.Runtime.Serialization.ISerializable?displayProperty=fullName> interfaz no se incluyen automáticamente en el proceso de serialización. Para incluir los campos, el tipo debe implementar la <xref:System.Runtime.Serialization.ISerializable.GetObjectData%2A> método y el constructor de serialización. Si no se deben serializar los campos, aplicar el <xref:System.NonSerializedAttribute> a los campos para indicar explícitamente la decisión de atributo.
+Los campos de instancia que se declaran en un tipo <xref:System.Runtime.Serialization.ISerializable?displayProperty=fullName> que hereda la interfaz no se incluyen automáticamente en el proceso de serialización. Para incluir los campos, el tipo debe implementar el <xref:System.Runtime.Serialization.ISerializable.GetObjectData%2A> método y el constructor de serialización. Si no se deben serializar los campos, aplique el <xref:System.NonSerializedAttribute> atributo a los campos para indicar explícitamente la decisión.
 
- En los tipos que no están sellados, las implementaciones de la <xref:System.Runtime.Serialization.ISerializable.GetObjectData%2A> método debe ser visible externamente. Por lo tanto, el método se puede llamar a tipos derivados y es reemplazable.
+En los tipos que no están sellados, las <xref:System.Runtime.Serialization.ISerializable.GetObjectData%2A> implementaciones del método deberían estar visibles externamente. Por lo tanto, los tipos derivados pueden llamar al método y se puede reemplazar.
 
 ## <a name="how-to-fix-violations"></a>Cómo corregir infracciones
- Para corregir una infracción de esta regla, asegúrese del <xref:System.Runtime.Serialization.ISerializable.GetObjectData%2A> método visible y reemplazable y asegúrese de que todos los campos de instancia se incluyen en el proceso de serialización o se marca explícitamente con la <xref:System.NonSerializedAttribute> atributo.
+Para corregir una infracción de esta regla, haga <xref:System.Runtime.Serialization.ISerializable.GetObjectData%2A> que el método sea visible y se pueda reemplazar y asegúrese de que todos los campos de instancia se incluyen en el proceso <xref:System.NonSerializedAttribute> de serialización o que se marcan explícitamente con el atributo.
 
-## <a name="when-to-suppress-warnings"></a>Cuándo Suprimir advertencias
- No suprima las advertencias de esta regla.
-
-## <a name="example"></a>Ejemplo
- El ejemplo siguiente muestra dos tipos serializables que infringen la regla.
-
- [!code-csharp[FxCop.Usage.ImplementISerializableCorrectly#1](../code-quality/codesnippet/CSharp/ca2240-implement-iserializable-correctly_1.cs)]
- [!code-cpp[FxCop.Usage.ImplementISerializableCorrectly#1](../code-quality/codesnippet/CPP/ca2240-implement-iserializable-correctly_1.cpp)]
- [!code-vb[FxCop.Usage.ImplementISerializableCorrectly#1](../code-quality/codesnippet/VisualBasic/ca2240-implement-iserializable-correctly_1.vb)]
+## <a name="when-to-suppress-warnings"></a>Cuándo suprimir advertencias
+No suprima las advertencias de esta regla.
 
 ## <a name="example"></a>Ejemplo
- En el ejemplo siguiente se corrige las dos anteriores infracciones proporcionando una implementación reemplazable de <xref:System.Runtime.Serialization.ISerializable.GetObjectData> en la clase Book y proporcionando una implementación de `GetObjectData` en la clase de biblioteca.
+En el ejemplo siguiente se muestran dos tipos serializables que infringen la regla.
 
- [!code-cpp[FxCop.Usage.ImplementISerializableCorrectly2#1](../code-quality/codesnippet/CPP/ca2240-implement-iserializable-correctly_2.cpp)]
- [!code-csharp[FxCop.Usage.ImplementISerializableCorrectly2#1](../code-quality/codesnippet/CSharp/ca2240-implement-iserializable-correctly_2.cs)]
- [!code-vb[FxCop.Usage.ImplementISerializableCorrectly2#1](../code-quality/codesnippet/VisualBasic/ca2240-implement-iserializable-correctly_2.vb)]
+[!code-csharp[FxCop.Usage.ImplementISerializableCorrectly#1](../code-quality/codesnippet/CSharp/ca2240-implement-iserializable-correctly_1.cs)]
+[!code-cpp[FxCop.Usage.ImplementISerializableCorrectly#1](../code-quality/codesnippet/CPP/ca2240-implement-iserializable-correctly_1.cpp)]
+[!code-vb[FxCop.Usage.ImplementISerializableCorrectly#1](../code-quality/codesnippet/VisualBasic/ca2240-implement-iserializable-correctly_1.vb)]
+
+## <a name="example"></a>Ejemplo
+En el ejemplo siguiente se corrigen las dos infracciones anteriores proporcionando una implementación reemplazable de <xref:System.Runtime.Serialization.ISerializable.GetObjectData> en la clase Book y proporcionando una implementación de `GetObjectData` en la clase Library.
+
+[!code-cpp[FxCop.Usage.ImplementISerializableCorrectly2#1](../code-quality/codesnippet/CPP/ca2240-implement-iserializable-correctly_2.cpp)]
+[!code-csharp[FxCop.Usage.ImplementISerializableCorrectly2#1](../code-quality/codesnippet/CSharp/ca2240-implement-iserializable-correctly_2.cs)]
+[!code-vb[FxCop.Usage.ImplementISerializableCorrectly2#1](../code-quality/codesnippet/VisualBasic/ca2240-implement-iserializable-correctly_2.vb)]
 
 ## <a name="related-rules"></a>Reglas relacionadas
 
@@ -73,6 +73,6 @@ Un tipo visible externamente es asignable a la <xref:System.Runtime.Serializatio
 - [CA2229: implementar constructores de serialización](../code-quality/ca2229-implement-serialization-constructors.md)
 - [CA2238: Implementar métodos de serialización correctamente](../code-quality/ca2238-implement-serialization-methods-correctly.md)
 - [CA2235: Marcar todos los campos no serializables](../code-quality/ca2235-mark-all-non-serializable-fields.md)
-- [CA2237: Marcar los tipos ISerializable con SerializableAttribute](../code-quality/ca2237-mark-iserializable-types-with-serializableattribute.md)
-- [CA2239: Proporcionar métodos de deserialización para campos opcionales](../code-quality/ca2239-provide-deserialization-methods-for-optional-fields.md)
+- [CA2237: Marcar tipos ISerializable con SerializableAttribute](../code-quality/ca2237-mark-iserializable-types-with-serializableattribute.md)
+- [CA2239 Proporcionar métodos de deserialización para campos opcionales](../code-quality/ca2239-provide-deserialization-methods-for-optional-fields.md)
 - [CA2120: Proteger los constructores de serialización](../code-quality/ca2120-secure-serialization-constructors.md)

@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: de5ab1fac368f1da1ceea39df19b198a22d999c1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ee5b1d92a6c7a813eea6efb409d3c2a22f68547c
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62808294"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68921122"
 ---
 # <a name="ca2109-review-visible-event-handlers"></a>CA2109: Revisar los controladores de eventos visibles
 
@@ -30,36 +30,36 @@ ms.locfileid: "62808294"
 |Categoría|Microsoft.Security|
 |Cambio problemático|Problemático|
 
-## <a name="cause"></a>Motivo
- Se detectó un método de control de eventos público o protegido.
+## <a name="cause"></a>Causa
+Se detectó un método de control de eventos público o protegido.
 
 ## <a name="rule-description"></a>Descripción de la regla
- Un método visible externamente de control de eventos presenta un problema de seguridad que requiere la revisión.
+Un método de control de eventos visible externamente presenta un problema de seguridad que requiere revisión.
 
-No exponga métodos de control de eventos, a menos que sea absolutamente necesario. Un controlador de eventos, un tipo de delegado que invoca el método expuesto puede agregarse a cualquier evento siempre que coincidan las firmas de controlador de eventos. Eventos potencialmente se pueden generar cualquier código y con frecuencia son generados por código de plena confianza del sistema en respuesta a las acciones del usuario como hacer clic en un botón. Agregar una comprobación de seguridad a un método de control de eventos no evita que código registrar un controlador de eventos que se invoca el método.
+No exponga métodos de control de eventos a menos que sea absolutamente necesario. Se puede Agregar un controlador de eventos, un tipo de delegado, que invoca el método expuesto a cualquier evento, siempre y cuando el controlador y las firmas de eventos coincidan. Los eventos pueden ser generados por cualquier código y se suelen generar mediante código del sistema de plena confianza en respuesta a las acciones del usuario, como hacer clic en un botón. Agregar una comprobación de seguridad a un método de control de eventos no impide que el código registre un controlador de eventos que invoca el método.
 
- Una demanda no puede proteger de forma confiable un método invocado por un controlador de eventos. Ayuda de las solicitudes de seguridad proteger el código de los llamadores de confianza mediante el examen de los llamadores situados en la pila de llamadas. El código que agrega un controlador de eventos a un evento no es necesariamente presente en la pila de llamadas cuando se ejecutan los métodos del controlador de eventos. Por lo tanto, la pila de llamadas podría haber sólo llamadores de plena confianza cuando se invoca el método de controlador de eventos. Esto hace que las demandas realizadas por el método de controlador de eventos se realice correctamente. Además, se puede declarar el permiso exigido cuando se invoca el método. Por estas razones, sólo puede evaluarse el riesgo de no corregir una infracción de esta regla después de revisar el método de control de eventos. Cuando revise el código, tenga en cuenta lo siguiente:
+Una demanda no puede proteger de forma confiable un método invocado por un controlador de eventos. Las peticiones de seguridad ayudan a proteger el código de los llamadores que no son de confianza mediante el examen de los llamadores en la pila de llamadas. El código que agrega un controlador de eventos a un evento no está necesariamente presente en la pila de llamadas cuando se ejecutan los métodos del controlador de eventos. Por lo tanto, la pila de llamadas podría tener solo llamadores de plena confianza cuando se invoca el método de controlador de eventos. Esto hace que las peticiones realizadas por el método del controlador de eventos se realicen correctamente. Además, el permiso exigido podría ser imponerse cuando se invoca el método. Por estos motivos, el riesgo de no corregir una infracción de esta regla solo se puede evaluar después de revisar el método de control de eventos. Al revisar el código, tenga en cuenta los siguientes problemas:
 
-- ¿El controlador de eventos lleva a cabo ninguna operación peligrosa o explotable, como validar los permisos o suprimir el permiso de código no administrado?
+- ¿El controlador de eventos realiza cualquier operación peligrosa o explotable, como la aserción de permisos o la supresión de permisos de código no administrado?
 
-- ¿Cuáles son las amenazas de seguridad a y desde el código porque se puede ejecutar en cualquier momento con sólo altamente llamadores en la pila de confianza?
+- ¿Cuáles son las amenazas de seguridad hacia y desde el código porque puede ejecutarse en cualquier momento solo con llamadores de gran confianza en la pila?
 
 ## <a name="how-to-fix-violations"></a>Cómo corregir infracciones
- Para corregir una infracción de esta regla, revise el método y evaluar las siguientes:
+Para corregir una infracción de esta regla, revise el método y evalúe lo siguiente:
 
-- ¿Puede hacer que el método de control de eventos no públicos?
+- ¿Se puede hacer que el método de control de eventos no sea público?
 
-- ¿Puede mover toda la funcionalidad peligrosa fuera el controlador de eventos?
+- ¿Puede trasladar toda la funcionalidad peligrosa fuera del controlador de eventos?
 
-- ¿Si se impone una petición de seguridad, esto se puede realizar en alguna otra manera?
+- Si se impone una demanda de seguridad, ¿se puede realizar de alguna otra manera?
 
-## <a name="when-to-suppress-warnings"></a>Cuándo Suprimir advertencias
- Suprima una advertencia de esta regla solo después de revisar cuidadosamente la seguridad para asegurarse de que el código no supongan una amenaza de seguridad.
+## <a name="when-to-suppress-warnings"></a>Cuándo suprimir advertencias
+Suprima una advertencia de esta regla solo después de una revisión de seguridad minuciosa para asegurarse de que el código no plantea una amenaza de seguridad.
 
 ## <a name="example"></a>Ejemplo
- El código siguiente muestra un método de control de eventos que se puede usar incorrectamente por código malintencionado.
+En el código siguiente se muestra un método de control de eventos que puede ser inutilizable por código malintencionado.
 
- [!code-csharp[FxCop.Security.EventSecLib#1](../code-quality/codesnippet/CSharp/ca2109-review-visible-event-handlers_1.cs)]
+[!code-csharp[FxCop.Security.EventSecLib#1](../code-quality/codesnippet/CSharp/ca2109-review-visible-event-handlers_1.cs)]
 
 ## <a name="see-also"></a>Vea también
 

@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9b05228ef22dee20506b728164d22976feb662ae
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: bf5bb8320a8876582cc325ecf973c83593777193
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62545021"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68920496"
 ---
 # <a name="ca2142-transparent-code-should-not-be-protected-with-linkdemands"></a>CA2142: El código transparente no debe protegerse con LinkDemands
 
@@ -26,21 +26,21 @@ ms.locfileid: "62545021"
 |Categoría|Microsoft.Security|
 |Cambio problemático|Problemático|
 
-## <a name="cause"></a>Motivo
- Un método transparente requiere un <xref:System.Security.Permissions.SecurityAction> u otra demanda de seguridad.
+## <a name="cause"></a>Causa
+Un método transparente requiere una <xref:System.Security.Permissions.SecurityAction> u otra demanda de seguridad.
 
 ## <a name="rule-description"></a>Descripción de la regla
- Esta regla se desencadena en los métodos transparentes que requieren LinkDemands tenga acceso a ellos. El código transparente en seguridad no debería ser responsable de comprobar la seguridad de una operación y, por consiguiente, no debería exigir permisos. Porque se supone que los métodos transparentes seguridad neutra, no deberían tomar las decisiones de seguridad. Además, el código crítico seguro, que tomar decisiones sobre seguridad, no debería basarse en el código transparente que haya realizado previamente una decisión.
+Esta regla se desencadena en métodos transparentes que requieren LinkDemands para tener acceso a ellos. El código transparente en seguridad no debería ser responsable de comprobar la seguridad de una operación y, por consiguiente, no debería exigir permisos. Dado que se supone que los métodos transparentes son independientes de la seguridad, no deben tomar ninguna decisión de seguridad. Además, el código crítico seguro, que toma decisiones de seguridad, no debe confiar en el código transparente para que previamente haya tomado tal decisión.
 
 ## <a name="how-to-fix-violations"></a>Cómo corregir infracciones
- Para corregir una infracción de esta regla, quite la petición de vínculo en el método transparente o marque el método con <xref:System.Security.SecuritySafeCriticalAttribute> comprueba si está realizando la seguridad de atributo, como las peticiones de seguridad.
+Para corregir una infracción de esta regla, quite la petición de vínculo en el método transparente o marque el <xref:System.Security.SecuritySafeCriticalAttribute> método con el atributo si está realizando comprobaciones de seguridad, como las demandas de seguridad.
 
-## <a name="when-to-suppress-warnings"></a>Cuándo Suprimir advertencias
- No suprima las advertencias de esta regla.
+## <a name="when-to-suppress-warnings"></a>Cuándo suprimir advertencias
+No suprima las advertencias de esta regla.
 
 ## <a name="example"></a>Ejemplo
- En el ejemplo siguiente, la regla se desencadena en el método porque el método es transparente y se marca con LinkDemand <xref:System.Security.PermissionSet> que contiene un <xref:System.Security.Permissions.SecurityAction>.
+En el ejemplo siguiente, la regla se desencadena en el método porque el método es transparente y está marcado con una <xref:System.Security.PermissionSet> LinkDemand que <xref:System.Security.Permissions.SecurityAction>contiene.
 
- [!code-csharp[FxCop.Security.CA2142.TransparentMethodsShouldNotBeProtectedWithLinkDemands#1](../code-quality/codesnippet/CSharp/ca2142-transparent-code-should-not-be-protected-with-linkdemands_1.cs)]
+[!code-csharp[FxCop.Security.CA2142.TransparentMethodsShouldNotBeProtectedWithLinkDemands#1](../code-quality/codesnippet/CSharp/ca2142-transparent-code-should-not-be-protected-with-linkdemands_1.cs)]
 
- No suprima las advertencias de esta regla.
+No suprima las advertencias de esta regla.

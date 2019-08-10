@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f4ac6947f8424c3b9aa7429ee378b4bb89be73ca
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 8d1c2f76258be3b0be6409bffd002fd916883ab2
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62545246"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68921538"
 ---
 # <a name="ca1809-avoid-excessive-locals"></a>CA1809: Evitar las variables locales excesivas
 
@@ -30,17 +30,17 @@ ms.locfileid: "62545246"
 |Categoría|Microsoft.Performance|
 |Cambio problemático|Poco problemático|
 
-## <a name="cause"></a>Motivo
- Un miembro contiene más de 64 variables locales, algunas de las cuales podrían ser generado por el compilador.
+## <a name="cause"></a>Causa
+Un miembro contiene más de 64 variables locales, algunas de las cuales podrían ser generadas por el compilador.
 
 ## <a name="rule-description"></a>Descripción de la regla
- Una optimización de rendimiento común es almacenar un valor en un registro del procesador en lugar de en memoria, lo que se conoce como *registrar* el valor. Common language runtime considera que un máximo de 64 variables locales para su registro. Las variables que no se registren se colocan en la pila y se deben mover a un registro antes de la manipulación. Para permitir la posibilidad de que todas las variables locales, obtener registren, limite el número de variables locales a 64.
+Una optimización de rendimiento común consiste en almacenar un valor en un registro del procesador en lugar de en la memoria, lo que se conoce como *registrar* el valor. El Common Language Runtime considera hasta 64 variables locales para el registro. Las variables que no están registradas se colocan en la pila y deben moverse a un registro antes de la manipulación. Para permitir la posibilidad de que se registren todas las variables locales, limite el número de variables locales a 64.
 
 ## <a name="how-to-fix-violations"></a>Cómo corregir infracciones
- Para corregir una infracción de esta regla, refactorice la implementación para utilizar no más de 64 variables locales.
+Para corregir una infracción de esta regla, refactorice la implementación para que no use más de 64 variables locales.
 
-## <a name="when-to-suppress-warnings"></a>Cuándo Suprimir advertencias
- Es seguro suprimir una advertencia de esta regla, o para deshabilitar la regla, si el rendimiento no es un problema.
+## <a name="when-to-suppress-warnings"></a>Cuándo suprimir advertencias
+Es seguro suprimir una advertencia de esta regla o deshabilitar la regla si el rendimiento no es un problema.
 
 ## <a name="related-rules"></a>Reglas relacionadas
- [CA1804: Quitar a variables locales no utilizadas](../code-quality/ca1804-remove-unused-locals.md)
+[CA1804: Quitar variables locales no usadas](../code-quality/ca1804-remove-unused-locals.md)

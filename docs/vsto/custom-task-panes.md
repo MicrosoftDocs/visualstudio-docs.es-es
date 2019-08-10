@@ -25,12 +25,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 89c762fb9777af8ac5e24875e879d2f24d0249e0
-ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
+ms.openlocfilehash: 766c93bb45380098af984db256d36d1e0948e56f
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 08/09/2019
-ms.locfileid: "68872129"
+ms.locfileid: "68926719"
 ---
 # <a name="custom-task-panes"></a>Paneles de tareas personalizados
   Los paneles de tareas son paneles de interfaz de usuario que normalmente están acoplados a un lado de una ventana en una aplicación de Microsoft Office. Los paneles de tareas personalizados proporcionan una manera de crear su propio panel de tareas y ofrecer a los usuarios una interfaz conocida para acceder a las características de la solución. Por ejemplo, la interfaz puede contener controles que ejecutan código para modificar documentos o mostrar datos de un origen de datos.
@@ -56,7 +56,7 @@ ms.locfileid: "68872129"
 
 2. Cree una instancia del panel de tareas personalizado pasando el control de usuario al objeto <xref:Microsoft.Office.Tools.CustomTaskPaneCollection> en su complemento de VSTO. Esta colección devuelve un nuevo objeto <xref:Microsoft.Office.Tools.CustomTaskPane> que puede usar para modificar el aspecto del panel de tareas y responder a eventos de usuario.
 
-   Para obtener más información, vea [Cómo: Agregar un panel de tareas personalizado a una](../vsto/how-to-add-a-custom-task-pane-to-an-application.md)aplicación.
+   Para obtener más información, consulte [Cómo Agregar un panel de tareas personalizado a una](../vsto/how-to-add-a-custom-task-pane-to-an-application.md)aplicación.
 
 ### <a name="create-the-user-interface"></a>Crear la interfaz de usuario
  Todos los paneles de tareas personalizados que se crean con las herramientas de desarrollo de Office en Visual Studio contienen un objeto <xref:System.Windows.Forms.UserControl>. Este control de usuario proporciona la interfaz de usuario de su panel de tareas personalizado. Puede crear el control de usuario en tiempo de diseño o en tiempo de ejecución. Si crea el control de usuario en tiempo de diseño, puede usar el Diseñador de Windows Forms para construir la interfaz de usuario de su panel de tareas.
@@ -124,7 +124,7 @@ ms.locfileid: "68872129"
 
  Para limpiar los recursos que usa el panel de tareas mientras el complemento de VSTO se está ejecutando, use los métodos <xref:Microsoft.Office.Tools.CustomTaskPaneCollection.Remove%2A> o <xref:Microsoft.Office.Tools.CustomTaskPaneCollection.RemoveAt%2A>. Estos métodos quitan el objeto <xref:Microsoft.Office.Tools.CustomTaskPane> especificado de la colección `CustomTaskPanes` y llaman al método <xref:Microsoft.Office.Tools.CustomTaskPane.Dispose%2A> del objeto.
 
- [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] limpia automáticamente los recursos que usa el panel de tareas personalizado cuando se descarga el complemento de VSTO. No llame a los <xref:Microsoft.Office.Tools.CustomTaskPaneCollection.Remove%2A> métodos <xref:Microsoft.Office.Tools.CustomTaskPaneCollection.RemoveAt%2A> o en el `ThisAddIn_Shutdown` controlador de eventos del proyecto. Estos métodos producirán <xref:System.ObjectDisposedException>, ya que [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] limpia los recursos que usa el objeto <xref:Microsoft.Office.Tools.CustomTaskPane> antes de llamar a `ThisAddIn_Shutdown`. Para obtener más información `ThisAddIn_Shutdown`sobre, vea [eventos en proyectos de Office](../vsto/events-in-office-projects.md) .
+ [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] limpia automáticamente los recursos que usa el panel de tareas personalizado cuando se descarga el complemento de VSTO. No llame a los <xref:Microsoft.Office.Tools.CustomTaskPaneCollection.Remove%2A> métodos <xref:Microsoft.Office.Tools.CustomTaskPaneCollection.RemoveAt%2A> o en el `ThisAddIn_Shutdown` controlador de eventos del proyecto. Estos métodos producirán <xref:System.ObjectDisposedException>, ya que [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] limpia los recursos que usa el objeto <xref:Microsoft.Office.Tools.CustomTaskPane> antes de llamar a `ThisAddIn_Shutdown`. Para obtener más información `ThisAddIn_Shutdown`sobre, vea [eventos en proyectos de Office](../vsto/events-in-office-projects.md).
 
 ## <a name="Managing"></a>Administrar paneles de tareas personalizados en varias ventanas de aplicación
  Cuando se crea un panel de tareas personalizado en una aplicación que usa varias ventanas para mostrar documentos y otros elementos, deberá llevar a cabo otros pasos para asegurarse de que el panel de tareas está visible cuando el usuario así lo espere.

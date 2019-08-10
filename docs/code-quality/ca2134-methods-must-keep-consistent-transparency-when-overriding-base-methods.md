@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 67114c20a7fcf5e8ff01773d8777b23d3caf3d91
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 8ca28f364307d4a2b73235bc6541cb8aa01abd56
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62542329"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68920658"
 ---
 # <a name="ca2134-methods-must-keep-consistent-transparency-when-overriding-base-methods"></a>CA2134: Los métodos deben mantener una transparencia coherente al invalidar métodos base
 
@@ -26,26 +26,26 @@ ms.locfileid: "62542329"
 |Categoría|Microsoft.Security|
 |Cambio problemático|Problemático|
 
-## <a name="cause"></a>Motivo
- Esta regla se desencadena cuando un método marcado con el <xref:System.Security.SecurityCriticalAttribute> invalida un método que es transparente o está marcado con el <xref:System.Security.SecuritySafeCriticalAttribute>. La regla también se desencadena cuando un método que es transparente o está marcado con el <xref:System.Security.SecuritySafeCriticalAttribute> invalida un método marcado con un <xref:System.Security.SecurityCriticalAttribute>.
+## <a name="cause"></a>Causa
+Esta regla se desencadena cuando un método marcado con <xref:System.Security.SecurityCriticalAttribute> invalida un método que es transparente o está marcado <xref:System.Security.SecuritySafeCriticalAttribute>con. La regla también se desencadena cuando un método que es transparente o está marcado <xref:System.Security.SecuritySafeCriticalAttribute> con reemplaza un método marcado con un. <xref:System.Security.SecurityCriticalAttribute>
 
- Se aplica la regla al invalidar un método virtual o implementar una interfaz.
+Se aplica la regla al invalidar un método virtual o implementar una interfaz.
 
 ## <a name="rule-description"></a>Descripción de la regla
- Esta regla se desencadena en los intentos de cambiar la accesibilidad de seguridad de un método más arriba la cadena de herencia. Por ejemplo, si un método virtual en una clase base es transparente o crítico para la seguridad, la clase derivada debe invalidarlo con un método transparente o crítico para la seguridad. Por el contrario, si el virtual es crítico para la seguridad, la clase derivada debe reemplazar con un método crítico de seguridad. Se aplica la misma regla para implementar los métodos de interfaz.
+Esta regla se desencadena en los intentos de cambiar la accesibilidad de seguridad de un método más allá de la cadena de herencia. Por ejemplo, si un método virtual de una clase base es transparente o crítico para la seguridad, la clase derivada debe reemplazarlo con un método transparente o crítico para la seguridad. Por el contrario, si el virtual es crítico para la seguridad, la clase derivada debe reemplazarlo por un método crítico para la seguridad. La misma regla se aplica a la implementación de métodos de interfaz.
 
- Las reglas de transparencia se aplican cuando el código está compilado en lugar de en tiempo de ejecución, de forma JIT para que el cálculo de transparencia no tiene información de tipo dinámico. Por lo tanto, el resultado del cálculo de transparencia debe poder determinar únicamente a partir de los tipos estáticos que se va a la compilación JIT, independientemente del tipo dinámico.
+Las reglas de transparencia se aplican cuando se compila el código JIT en lugar de hacerlo en tiempo de ejecución, de modo que el cálculo de transparencia no tiene información de tipo dinámico. Por consiguiente, el resultado del cálculo de transparencia debe poder determinarse únicamente a partir de los tipos estáticos que se van a compilar con JIT, independientemente del tipo dinámico.
 
 ## <a name="how-to-fix-violations"></a>Cómo corregir infracciones
- Para corregir una infracción de esta regla, cambie la transparencia del método que se reemplace un método virtual o implementar una interfaz para que coincida con la transparencia de la memoria virtual o el método de interfaz.
+Para corregir una infracción de esta regla, cambie la transparencia del método que invalide un método virtual o implemente una interfaz para que coincida con la transparencia del método virtual o de la interfaz.
 
-## <a name="when-to-suppress-warnings"></a>Cuándo Suprimir advertencias
- No suprima las advertencias de esta regla. Las infracciones de esta regla dará como resultado un tiempo de ejecución <xref:System.TypeLoadException> para ensamblados que utilizan la transparencia de nivel 2.
+## <a name="when-to-suppress-warnings"></a>Cuándo suprimir advertencias
+No suprima las advertencias de esta regla. Las infracciones de esta regla darán lugar <xref:System.TypeLoadException> a un tiempo de ejecución para los ensamblados que usan la transparencia de nivel 2.
 
 ## <a name="examples"></a>Ejemplos
 
 ### <a name="code"></a>Código
- [!code-csharp[FxCop.Security.CA2134.MethodsMustOverrideWithConsistentTransparency#1](../code-quality/codesnippet/CSharp/ca2134-methods-must-keep-consistent-transparency-when-overriding-base-methods_1.cs)]
+[!code-csharp[FxCop.Security.CA2134.MethodsMustOverrideWithConsistentTransparency#1](../code-quality/codesnippet/CSharp/ca2134-methods-must-keep-consistent-transparency-when-overriding-base-methods_1.cs)]
 
 ## <a name="see-also"></a>Vea también
- [Código transparente en seguridad, nivel 2](/dotnet/framework/misc/security-transparent-code-level-2)
+[Código transparente en seguridad, nivel 2](/dotnet/framework/misc/security-transparent-code-level-2)

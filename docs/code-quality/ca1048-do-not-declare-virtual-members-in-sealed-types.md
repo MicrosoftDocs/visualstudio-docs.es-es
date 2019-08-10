@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 84db1db9061eff1373ee3ad4f0316a1f3dba0474
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 430ed0b23d62bd46a9764bfb0a3834e0decd476b
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62778715"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68922593"
 ---
 # <a name="ca1048-do-not-declare-virtual-members-in-sealed-types"></a>CA1048: No declarar miembros virtuales en tipos sellados
 
@@ -30,21 +30,21 @@ ms.locfileid: "62778715"
 |Categoría|Microsoft.Design|
 |Cambio problemático|Problemático|
 
-## <a name="cause"></a>Motivo
- Un tipo público está sellado y declara un método que se encuentra tanto `virtual` (`Overridable` en Visual Basic) y no final. Esta regla no informa de las infracciones para tipos de delegado, que deben seguir este patrón.
+## <a name="cause"></a>Causa
+Un tipo público está sellado y declara un método que es Both `virtual` (`Overridable` en Visual Basic) y no final. Esta regla no notifica las infracciones de los tipos de delegado, que deben seguir este patrón.
 
 ## <a name="rule-description"></a>Descripción de la regla
- Los tipos declaran los métodos como virtuales para que los tipos heredados puedan reemplazar la implementación del método virtual. Por definición, no puede heredar de un tipo sealed, pasa a un método virtual en un tipo sealed no tiene sentido.
+Los tipos declaran los métodos como virtuales para que los tipos heredados puedan reemplazar la implementación del método virtual. Por definición, no se puede heredar de un tipo sellado, lo que hace que un método virtual en un tipo sellado no tenga sentido.
 
- Los compiladores de Visual Basic y C# no permiten tipos que infringen esta regla.
+El Visual Basic y C# los compiladores no permiten a los tipos infringir esta regla.
 
 ## <a name="how-to-fix-violations"></a>Cómo corregir infracciones
- Para corregir una infracción de esta regla, hacer que el método no virtual o convierta el tipo puede heredar.
+Para corregir una infracción de esta regla, haga que el método sea no virtual o haga que el tipo sea heredable.
 
-## <a name="when-to-suppress-warnings"></a>Cuándo Suprimir advertencias
- No suprima las advertencias de esta regla. Lo que deja el tipo en su estado actual puede causar problemas de mantenimiento y no proporciona ninguna ventaja.
+## <a name="when-to-suppress-warnings"></a>Cuándo suprimir advertencias
+No suprima las advertencias de esta regla. Si se deja el tipo en su estado actual, se pueden producir problemas de mantenimiento y no se proporciona ninguna ventaja.
 
 ## <a name="example"></a>Ejemplo
- El ejemplo siguiente muestra un tipo que infringe esta regla.
+En el ejemplo siguiente se muestra un tipo que infringe esta regla.
 
- [!code-cpp[FxCop.Design.SealedVirtual#1](../code-quality/codesnippet/CPP/ca1048-do-not-declare-virtual-members-in-sealed-types_1.cpp)]
+[!code-cpp[FxCop.Design.SealedVirtual#1](../code-quality/codesnippet/CPP/ca1048-do-not-declare-virtual-members-in-sealed-types_1.cpp)]

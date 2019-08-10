@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fc6db6dff5ee4c4e4d387399dbf79277046d6c02
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 6b3c3fe41332d488d180ddafbedfe29da1a3855e
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62797443"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68921788"
 ---
 # <a name="ca1601-do-not-use-timers-that-prevent-power-state-changes"></a>CA1601: No utilizar temporizadores que impidan los cambios de estado de energía
 
@@ -30,14 +30,14 @@ ms.locfileid: "62797443"
 |Categoría|Microsoft.Mobility|
 |Cambio problemático|Problemático|
 
-## <a name="cause"></a>Motivo
- Un temporizador tiene un intervalo establecido que se produzca más de una vez por segundo.
+## <a name="cause"></a>Causa
+Un temporizador tiene un intervalo establecido para que tenga lugar más de una vez por segundo.
 
 ## <a name="rule-description"></a>Descripción de la regla
- No sondear más de una vez por segundo o utilizar temporizadores que se producen con más frecuencia que una vez por segundo. Una actividad periódica más frecuente hará que la CPU no esté disponible, e interferirá con los temporizadores de inactividad para ahorro de energía, que apagan el monitor y el disco duro.
+No sondear más de una vez por segundo o usar temporizadores que se producen con más frecuencia que una vez por segundo. Una actividad periódica más frecuente hará que la CPU no esté disponible, e interferirá con los temporizadores de inactividad para ahorro de energía, que apagan el monitor y el disco duro.
 
 ## <a name="how-to-fix-violations"></a>Cómo corregir infracciones
- Establecer los intervalos de temporizador que se produzcan menos de una vez por segundo.
+Establezca intervalos de temporizador para que se produzcan menos de una vez por segundo.
 
-## <a name="when-to-suppress-warnings"></a>Cuándo Suprimir advertencias
- Esta regla se debe suprimir sólo si desencadenar el temporizador de más de una vez por segundo es necesario y las consideraciones de movilidad se pueden omitir.
+## <a name="when-to-suppress-warnings"></a>Cuándo suprimir advertencias
+Esta regla solo se debe suprimir si se requiere la activación del temporizador más de una vez por segundo y las consideraciones de movilidad se pueden omitir sin ningún riesgo.

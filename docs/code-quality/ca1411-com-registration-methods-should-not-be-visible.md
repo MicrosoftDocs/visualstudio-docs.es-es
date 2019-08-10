@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: bd721edab080de7708ac395e2a7d7e486c504fba
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 4f6f40308255e0496b2bcccddf4299e83ea93100
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62546380"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68922049"
 ---
 # <a name="ca1411-com-registration-methods-should-not-be-visible"></a>CA1411: Los métodos de registro COM no deben ser visibles
 
@@ -33,27 +33,27 @@ ms.locfileid: "62546380"
 |Categoría|Microsoft.Interoperability|
 |Cambio problemático|Problemático|
 
-## <a name="cause"></a>Motivo
+## <a name="cause"></a>Causa
 
-Un método marcado con el <xref:System.Runtime.InteropServices.ComRegisterFunctionAttribute?displayProperty=fullName> o <xref:System.Runtime.InteropServices.ComUnregisterFunctionAttribute?displayProperty=fullName> atributo es visible externamente.
+Un método marcado con el <xref:System.Runtime.InteropServices.ComRegisterFunctionAttribute?displayProperty=fullName> <xref:System.Runtime.InteropServices.ComUnregisterFunctionAttribute?displayProperty=fullName> atributo o es visible externamente.
 
 ## <a name="rule-description"></a>Descripción de la regla
- Cuando un ensamblado se registra con el modelo de objetos componentes (COM), se agregan entradas al registro para cada tipo COM-visible en el ensamblado. Los métodos marcados con el <xref:System.Runtime.InteropServices.ComRegisterFunctionAttribute> y <xref:System.Runtime.InteropServices.ComUnregisterFunctionAttribute> atributos se denominan durante los procesos de registro y anulación del registro, respectivamente, para ejecutar código de usuario que es específico para el registro o anulación del registro de estos tipos. No se debe llamar a este código fuera de estos procesos.
+Cuando un ensamblado se registra con el modelo de objetos componentes (COM), las entradas se agregan al registro para cada tipo visible para COM en el ensamblado. Los métodos marcados con los <xref:System.Runtime.InteropServices.ComRegisterFunctionAttribute> atributos <xref:System.Runtime.InteropServices.ComUnregisterFunctionAttribute> y se llaman durante los procesos de registro y anulación de registro, respectivamente, para ejecutar código de usuario específico del registro o anulación del registro de estos tipos. No se debe llamar a este código fuera de estos procesos.
 
 ## <a name="how-to-fix-violations"></a>Cómo corregir infracciones
- Para corregir una infracción de esta regla, cambie la accesibilidad del método que `private` o `internal` (`Friend` en [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]).
+Para corregir una infracción de esta regla, cambie la accesibilidad del método a `private` o `internal` (`Friend` en [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]).
 
-## <a name="when-to-suppress-warnings"></a>Cuándo Suprimir advertencias
- No suprima las advertencias de esta regla.
+## <a name="when-to-suppress-warnings"></a>Cuándo suprimir advertencias
+No suprima las advertencias de esta regla.
 
 ## <a name="example"></a>Ejemplo
- El ejemplo siguiente muestra dos métodos que infringen la regla.
+En el ejemplo siguiente se muestran dos métodos que infringen la regla.
 
- [!code-csharp[FxCop.Interoperability.ComRegistration2#1](../code-quality/codesnippet/CSharp/ca1411-com-registration-methods-should-not-be-visible_1.cs)]
- [!code-vb[FxCop.Interoperability.ComRegistration2#1](../code-quality/codesnippet/VisualBasic/ca1411-com-registration-methods-should-not-be-visible_1.vb)]
+[!code-csharp[FxCop.Interoperability.ComRegistration2#1](../code-quality/codesnippet/CSharp/ca1411-com-registration-methods-should-not-be-visible_1.cs)]
+[!code-vb[FxCop.Interoperability.ComRegistration2#1](../code-quality/codesnippet/VisualBasic/ca1411-com-registration-methods-should-not-be-visible_1.vb)]
 
 ## <a name="related-rules"></a>Reglas relacionadas
- [CA1410: Métodos de registro COM se deben asociar](../code-quality/ca1410-com-registration-methods-should-be-matched.md)
+[CA1410: Se debe coincidir con los métodos de registro COM](../code-quality/ca1410-com-registration-methods-should-be-matched.md)
 
 ## <a name="see-also"></a>Vea también
 

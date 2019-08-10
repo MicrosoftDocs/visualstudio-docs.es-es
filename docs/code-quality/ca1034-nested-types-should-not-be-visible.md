@@ -18,12 +18,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: fb01065fed41a30f26e15d7295fabc03fb3f1f4f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a086ad80bd13fb18f866769db34d72cae3e67496
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62779083"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68922862"
 ---
 # <a name="ca1034-nested-types-should-not-be-visible"></a>CA1034: Los tipos anidados no deben ser visibles
 
@@ -34,28 +34,28 @@ ms.locfileid: "62779083"
 |Categoría|Microsoft.Design|
 |Cambio problemático|Problemático|
 
-## <a name="cause"></a>Motivo
+## <a name="cause"></a>Causa
 
-Un tipo visible externamente contiene una declaración de tipos visibles externamente. Las enumeraciones anidadas y los tipos protegidos están exentos de esta regla.
+Un tipo visible externamente contiene una declaración de tipos visible externamente. Las enumeraciones anidadas y los tipos protegidos están exentos de esta regla.
 
 ## <a name="rule-description"></a>Descripción de la regla
- Un tipo anidado es un tipo declarado dentro del ámbito de otro tipo. Los tipos anidados son útiles para encapsular los detalles de la implementación privada del tipo contenedor. Los tipos anidados, utilizados para este propósito, no deben ser visibles externamente.
+Un tipo anidado es un tipo declarado dentro del ámbito de otro tipo. Los tipos anidados son útiles para encapsular los detalles de la implementación privada del tipo contenedor. Los tipos anidados, utilizados para este propósito, no deben ser visibles externamente.
 
- No utilice tipos anidados visibles externamente para agrupación lógica o para evitar conflictos de nombres; en su lugar, use los espacios de nombres.
+No utilice tipos anidados visibles externamente para la Agrupación lógica o para evitar colisiones de nombres; en su lugar, use los espacios de nombres.
 
- Los tipos anidados incluyen la noción de accesibilidad de miembro, que algunos programadores no entienden con claridad.
+Los tipos anidados incluyen la noción de accesibilidad de miembros, que algunos programadores no entienden claramente.
 
- Los tipos protegidos pueden usarse en subclases y los tipos anidados en escenarios de personalización avanzada.
+Los tipos protegidos se pueden utilizar en subclases y tipos anidados en escenarios de personalización anticipada.
 
 ## <a name="how-to-fix-violations"></a>Cómo corregir infracciones
- Si no desea que el tipo anidado que esté visible externamente, cambie la accesibilidad del tipo. En caso contrario, quite el tipo anidado de su elemento primario. Si el propósito del anidamiento es clasificar el tipo anidado, utilice un espacio de nombres para crear la jerarquía en su lugar.
+Si no desea que el tipo anidado esté visible externamente, cambie la accesibilidad del tipo. De lo contrario, quite el tipo anidado de su elemento primario. Si el propósito de la anidación es categorizar el tipo anidado, use un espacio de nombres para crear la jerarquía en su lugar.
 
-## <a name="when-to-suppress-warnings"></a>Cuándo Suprimir advertencias
- No suprima las advertencias de esta regla.
+## <a name="when-to-suppress-warnings"></a>Cuándo suprimir advertencias
+No suprima las advertencias de esta regla.
 
 ## <a name="example"></a>Ejemplo
- El ejemplo siguiente muestra un tipo que infringe la regla.
+En el ejemplo siguiente se muestra un tipo que infringe la regla.
 
- [!code-cpp[FxCop.Design.NestedTypes#1](../code-quality/codesnippet/CPP/ca1034-nested-types-should-not-be-visible_1.cpp)]
- [!code-csharp[FxCop.Design.NestedTypes#1](../code-quality/codesnippet/CSharp/ca1034-nested-types-should-not-be-visible_1.cs)]
- [!code-vb[FxCop.Design.NestedTypes#1](../code-quality/codesnippet/VisualBasic/ca1034-nested-types-should-not-be-visible_1.vb)]
+[!code-cpp[FxCop.Design.NestedTypes#1](../code-quality/codesnippet/CPP/ca1034-nested-types-should-not-be-visible_1.cpp)]
+[!code-csharp[FxCop.Design.NestedTypes#1](../code-quality/codesnippet/CSharp/ca1034-nested-types-should-not-be-visible_1.cs)]
+[!code-vb[FxCop.Design.NestedTypes#1](../code-quality/codesnippet/VisualBasic/ca1034-nested-types-should-not-be-visible_1.vb)]

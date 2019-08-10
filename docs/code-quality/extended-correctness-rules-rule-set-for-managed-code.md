@@ -8,21 +8,21 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 19dec66e4f281af37a0ef66a114b9c26b48ce163
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 62d11a73d8e8e4510269f73cfb83d946b6ff864b
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62816639"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68923996"
 ---
 # <a name="extended-correctness-rules-rule-set-for-managed-code"></a>Conjunto de reglas Reglas de corrección extendidas para código administrado
-El conjunto de reglas reglas de corrección extendidas de Microsoft maximiza los errores de lógica y framework uso notificados por el análisis de código. Se pone especial énfasis en escenarios específicos como la interoperabilidad COM y aplicaciones móviles. Considere incluir este conjunto de reglas si alguno de estos escenarios se aplica a su proyecto o para buscar problemas adicionales en el proyecto.
+El conjunto de reglas reglas de corrección extendidas de Microsoft maximiza los errores de uso de la lógica y el marco de trabajo que se indican en el análisis de código. Se pone especial énfasis en escenarios específicos como la interoperabilidad COM y las aplicaciones móviles. Debe considerar la posibilidad de incluir este conjunto de reglas si alguno de estos escenarios se aplica a su proyecto o para buscar problemas adicionales en el proyecto.
 
- El conjunto de reglas reglas de corrección extendidas de Microsoft incluye las reglas establecidas en la regla de reglas de corrección básicas de Microsoft. Las reglas de corrección básicas se incluyen las reglas establecidas en la regla de reglas mínimas recomendadas de Microsoft. Para obtener más información, consulte [establecen reglas de corrección básicas para código administrado](../code-quality/basic-correctness-rules-rule-set-for-managed-code.md) y [pravidel administra reglas recomendadas para código administrado](../code-quality/managed-recommended-rules-rule-set-for-managed-code.md)
+El conjunto de reglas reglas de corrección extendidas de Microsoft incluye las reglas que se encuentran en el conjunto de reglas reglas de corrección básicas de Microsoft. Las reglas de corrección básicas incluyen las reglas que se encuentran en el conjunto de reglas reglas mínimas recomendadas de Microsoft. Para obtener más información, vea [conjunto de reglas reglas de corrección básicas para código administrado](../code-quality/basic-correctness-rules-rule-set-for-managed-code.md) y [conjunto de reglas reglas recomendadas administradas para código administrado](../code-quality/managed-recommended-rules-rule-set-for-managed-code.md)
 
- En la tabla siguiente se describe todas las reglas en el conjunto de reglas reglas de corrección extendidas de Microsoft.
+En la tabla siguiente se describen todas las reglas del conjunto de reglas reglas de corrección extendidas de Microsoft.
 
-|Regla|Descripción|
+|Regla|DESCRIPCIÓN|
 |----------|-----------------|
 |[CA1001](../code-quality/ca1001-types-that-own-disposable-fields-should-be-disposable.md)|Los tipos que poseen campos descartables deben ser descartables|
 |[CA1009](../code-quality/ca1009-declare-event-handlers-correctly.md)|Declarar los controladores de evento correctamente|
