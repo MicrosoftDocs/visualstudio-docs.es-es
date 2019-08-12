@@ -10,28 +10,28 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e72b279d55cbe11f6232ff1f91c8fee443d9c283
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: f054bd91f16bb7621d4beebe7631a49cb406132e
+ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62969324"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68870471"
 ---
 # <a name="process-text-templates-by-using-a-custom-host"></a>Procesar plantillas de texto mediante un host personalizado
 
-El *transformación de plantilla de texto* procesar toma un *plantilla de texto* archivo como entrada y produce un archivo de texto como salida. El motor de transformación de texto puede llamar desde una extensión de Visual Studio o desde una aplicación independiente que se ejecuta en una máquina donde está instalado Visual Studio. Sin embargo, debe proporcionar un *host de plantillas de texto*. Esta clase conecta la plantilla al entorno, localizando recursos como ensamblados y archivos de inclusión, y trabajando con los mensajes de error y resultado.
+El proceso de *transformación de plantillas de texto* toma un archivo de plantilla de *texto* como entrada y genera un archivo de texto como salida. Puede llamar al motor de transformación de texto desde una extensión de Visual Studio o desde una aplicación independiente que se ejecuta en un equipo en el que está instalado Visual Studio. Sin embargo, debe proporcionar un *host de plantillas de texto*. Esta clase conecta la plantilla al entorno, localizando recursos como ensamblados y archivos de inclusión, y trabajando con los mensajes de error y resultado.
 
 > [!TIP]
-> Si está escribiendo una extensión o paquete que se ejecutará dentro de Visual Studio, considere la posibilidad de utilizar el servicio de plantillas de texto, en lugar de escribir su propio host. Para obtener más información, consulte [invocar la transformación de texto en una extensión de VS](../modeling/invoking-text-transformation-in-a-vs-extension.md).
+> Si está escribiendo un paquete o una extensión que se ejecutará en Visual Studio, considere la posibilidad de usar el servicio de plantillas de texto, en lugar de escribir su propio host. Para obtener más información, consulte [invocar la transformación de texto en una extensión de vs](../modeling/invoking-text-transformation-in-a-vs-extension.md).
 
 > [!NOTE]
-> No se recomienda utilizar las transformaciones de plantilla de texto en aplicaciones de servidor. No se recomienda utilizar las transformaciones de plantilla de texto excepto en un subproceso único. Esto se debe a que el motor de plantillas de texto vuelve a utilizar un AppDomain único para traducir, compilar y ejecutar plantillas. El código traducido no es seguro para subprocesos. El motor está diseñado para procesar los archivos en serie, tal como están en un proyecto de Visual Studio en tiempo de diseño.
+> No se recomienda utilizar las transformaciones de plantilla de texto en aplicaciones de servidor. No se recomienda utilizar las transformaciones de plantilla de texto excepto en un subproceso único. Esto se debe a que el motor de plantillas de texto vuelve a utilizar un AppDomain único para traducir, compilar y ejecutar plantillas. El código traducido no es seguro para subprocesos. El motor está diseñado para procesar archivos en serie, tal como están en un proyecto de Visual Studio en tiempo de diseño.
 >
-> Para las aplicaciones de tiempo de ejecución, considere el uso de plantillas de texto preprocesadas: vea [generación de texto en tiempo de ejecución con plantillas de texto T4](../modeling/run-time-text-generation-with-t4-text-templates.md).
+> En el caso de las aplicaciones en tiempo de ejecución, considere la posibilidad de usar plantillas de texto preprocesadas: vea [generación de texto en tiempo de ejecución con plantillas de texto T4](../modeling/run-time-text-generation-with-t4-text-templates.md).
 
-Si la aplicación utiliza un conjunto de plantillas que se corrigen en tiempo de compilación, resulta más sencillo usar plantillas de texto preprocesadas. También puede usar este enfoque si la aplicación se ejecutará en un equipo en el que no está instalado Visual Studio. Para obtener más información, consulte [generación de texto en tiempo de ejecución con plantillas de texto T4](../modeling/run-time-text-generation-with-t4-text-templates.md).
+Si la aplicación utiliza un conjunto de plantillas que se corrigen en tiempo de compilación, resulta más sencillo usar plantillas de texto preprocesadas. También puede usar este enfoque si la aplicación se ejecutará en una máquina en la que Visual Studio no esté instalado. Para obtener más información, vea [generación de texto en tiempo de ejecución con plantillas de texto T4](../modeling/run-time-text-generation-with-t4-text-templates.md).
 
-## <a name="execute-a-text-template-in-your-application"></a>Ejecutar una plantilla de texto en la aplicación
+## <a name="execute-a-text-template-in-your-application"></a>Ejecución de una plantilla de texto en la aplicación
 
 Para ejecutar una plantilla de texto, se llama al método ProcessTemplate de <xref:Microsoft.VisualStudio.TextTemplating.Engine?displayProperty=fullName>:
 
@@ -44,19 +44,19 @@ string output = engine.ProcessTemplate(templateString, host);
 
  La aplicación debe encontrar y proporcionar la plantilla y debe trabajar con el resultado.
 
- En el parámetro `host`, debe proporcionar una clase que implemente <xref:Microsoft.VisualStudio.TextTemplating.ITextTemplatingEngineHost>. El motor lo vuelve a llamar.
+ En el `host` parámetro, debe proporcionar una clase que implemente [ITextTemplatingEngineHost](/previous-versions/visualstudio/visual-studio-2012/bb126505(v=vs.110)). El motor lo vuelve a llamar.
 
  El host debe poder registrar errores, resolver referencias a archivos de ensamblado e inclusión, proporciona un dominio de aplicación en el que se pueda ejecutar la plantilla, y llamar el procesador adecuado para cada directiva.
 
- <xref:Microsoft.VisualStudio.TextTemplating.Engine?displayProperty=fullName> se define en **Microsoft.VisualStudio.TextTemplating.\*. 0.log dll**, y <xref:Microsoft.VisualStudio.TextTemplating.ITextTemplatingEngineHost> se define en **Microsoft.VisualStudio.TextTemplating.Interfaces.\*. 0.log dll**.
+ <xref:Microsoft.VisualStudio.TextTemplating.Engine?displayProperty=fullName>se define en **Microsoft. VisualStudio. TextTemplating.\* 0. dll**y [ITextTemplatingEngineHost](/previous-versions/visualstudio/visual-studio-2012/bb126505(v=vs.110)) se definen en **Microsoft. VisualStudio. TextTemplating. interfaces.\*. 0. dll**.
 
 ## <a name="in-this-section"></a>En esta sección
- [Tutorial: Creación de un Host de plantilla de texto personalizado](../modeling/walkthrough-creating-a-custom-text-template-host.md) se muestra cómo crear un host de plantilla de texto personalizado que hace que la funcionalidad de la plantilla de texto que estén disponibles fuera de Visual Studio.
+ [Tutorial: Al crear un host](../modeling/walkthrough-creating-a-custom-text-template-host.md) de plantilla de texto personalizado se muestra cómo crear un host de plantilla de texto personalizado que hace que la funcionalidad de la plantilla de texto esté disponible fuera de Visual Studio.
 
 ## <a name="reference"></a>Referencia
- <xref:Microsoft.VisualStudio.TextTemplating.ITextTemplatingEngineHost>
+ [ITextTemplatingEngineHost](/previous-versions/visualstudio/visual-studio-2012/bb126505(v=vs.110))
 
 ## <a name="related-sections"></a>Secciones relacionadas
 
 - [El proceso de transformación de plantillas de texto](../modeling/the-text-template-transformation-process.md) describe cómo funciona la transformación de texto y qué partes se pueden personalizar.
-- [Crear procesadores de directiva de plantilla de texto personalizado T4](../modeling/creating-custom-t4-text-template-directive-processors.md) proporciona una visión general del texto de los procesadores de directivas de plantilla.
+- [Creación de procesadores de directivas de plantilla de texto T4 personalizadas](../modeling/creating-custom-t4-text-template-directive-processors.md) proporciona una introducción a los procesadores de directivas de plantilla de texto.
