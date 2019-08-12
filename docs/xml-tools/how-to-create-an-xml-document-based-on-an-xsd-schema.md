@@ -8,24 +8,24 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d4ba0106a1494c7e7e8d56c3e902a3436f657712
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 7739f33bad62667fdc7be8704237ebdd3932739c
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62783347"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68918561"
 ---
 # <a name="how-to-create-an-xml-document-based-on-an-xsd-schema"></a>Procedimiento Creación de un documento XML basado en un esquema XSD
 
-El **generar XML de ejemplo** característica genera un archivo XML de ejemplo basado en el archivo de esquema XML (XSD).
+La característica **generar XML de ejemplo** genera un archivo XML de ejemplo basado en el archivo de esquema XML (XSD).
 
- Puede usar esta opción en los escenarios siguientes:
+Puede usar esta opción en los escenarios siguientes:
 
 - Si desea comprender el uso de varias construcciones en un esquema dado.
 
 - Confirmar que el esquema hace aquello que estaba previsto.
 
-El **generar XML de ejemplo** característica solo está disponible en los elementos globales y requiere un conjunto de esquemas XML válido.
+La característica **generar XML de ejemplo** solo está disponible en los elementos globales y requiere un conjunto de esquemas XML válido.
 
 Esta característica suele generar documentos XML válidos. Sin embargo, si el esquema contiene uno o varios de los siguientes elementos, la muestra podría no ser válida:
 
@@ -41,11 +41,11 @@ Además, observe que el contenido de `xs:base64Binary` solo se generará si apar
 
 ## <a name="to-generate-an-xml-instance-document-based-on-the-xsd-file"></a>Para generar un documento de instancia XML basado en el archivo XSD
 
-1. Siga los pasos de [Cómo: Crear y editar un archivo de esquema XSD](../xml-tools/how-to-create-and-edit-an-xsd-schema-file.md).
+1. Siga los pasos que [se describen en cómo: Crear y editar un archivo](../xml-tools/how-to-create-and-edit-an-xsd-schema-file.md)de esquema XSD.
 
-2. En el [Explorador de esquemas XML](../xml-tools/xml-schema-explorer.md), haga clic en el `PurchaseOrder` elemento global. Seleccione **generar XML de ejemplo**.
+2. En el [Explorador de esquemas XML](../xml-tools/xml-schema-explorer.md), haga clic `PurchaseOrder` con el botón secundario en el elemento global. Seleccione **generar XML de ejemplo**.
 
-     Cuando se selecciona esta opción, PurchaseOrder. *xml* archivo con el siguiente contenido XML de ejemplo se genera y se abre en el editor XML:
+     Cuando se selecciona esta opción, el PurchaseOrder. el archivo *XML* con el siguiente contenido XML de ejemplo se generará y se abrirá en el editor XML:
 
     ```xml
     <?xml version="1.0" encoding="utf-8"?>
