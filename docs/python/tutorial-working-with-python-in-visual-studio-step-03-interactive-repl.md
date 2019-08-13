@@ -11,12 +11,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 14015c01b487bfe7963d36154ff2dc9b599d7c49
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 3576e34b52e524b88300c089c2beda0be6ed0e28
+ms.sourcegitcommit: b56dc6fadc6c924beed36bb4c2ccc16cf6bcfa1c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62430890"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "68740027"
 ---
 # <a name="step-3-use-the-interactive-repl-window"></a>Paso 3: Uso de la ventana interactiva de REPL
 
@@ -24,9 +24,12 @@ ms.locfileid: "62430890"
 
 La ventana **interactiva** de Visual Studio para Python proporciona una experiencia de lectura-evaluación-impresión-repetición (REPL) que reduce considerablemente el ciclo habitual de edición-compilación-depuración. La ventana **interactiva** proporciona todas las funciones de la experiencia de REPL de la línea de comandos de Python. También resulta muy fácil intercambiar el código con archivos de código fuente en el editor de Visual Studio, que en otros casos es complicado con la línea de comandos.
 
+> [!NOTE]
+> Si tiene problemas con REPL, asegúrese de tener instalados los paquetes `ipython` y `ipykernel`. Si necesita instalar paquetes, consulte la [pestaña de los paquetes de los entornos de Python](https://docs.microsoft.com/en-us/visualstudio/python/python-environments-window-tab-reference#packages-tab).
+
 1. Abra la ventana **interactiva** haciendo clic con el botón derecho en el entorno de Python del proyecto en el **Explorador de soluciones** (por ejemplo, **Python 3.6 (32 bits)** como se muestra en un gráfico anterior) y seleccione **Abrir ventana interactiva**. Como alternativa, puede seleccionar **Ver** > **Otras ventanas** > **Ventanas interactivas de Python** en el menú principal de Visual Studio.
 
-1. Se abre la ventana **interactiva** debajo del editor, con el símbolo estándar del sistema de REPL de Python **>>>**. La lista desplegable **Plataforma** permite seleccionar un intérprete específico con el que trabajar. En muchas ocasiones también querrá aumentar el tamaño de la ventana **interactiva**, lo que puede hacer si arrastra el separador entre las dos ventanas:
+1. Se abre la ventana **interactiva** debajo del editor, con el símbolo estándar del sistema de REPL de Python **>>>** . La lista desplegable **Plataforma** permite seleccionar un intérprete específico con el que trabajar. En muchas ocasiones también querrá aumentar el tamaño de la ventana **interactiva**, lo que puede hacer si arrastra el separador entre las dos ventanas:
 
     ![Ventana interactiva de Python y arrastre para cambiar el tamaño](media/vs-getting-started-python-11-interactive1b.png)
 
