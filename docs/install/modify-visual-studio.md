@@ -3,7 +3,7 @@ title: Modificar Visual Studio
 titleSuffix: ''
 description: Obtenga información sobre cómo modificar Visual Studio, paso a paso.
 ms.custom: H1Hack27Feb2017,seodec18
-ms.date: 06/25/2019
+ms.date: 07/31/2019
 ms.topic: conceptual
 helpviewer_keywords:
 - modify Visual Studio
@@ -18,12 +18,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 287ad470a94689b92cacb443c2b5f88eb30f5a70
-ms.sourcegitcommit: 01c3c9dcade5d913bde2c7efa8c931a7b04e6cd0
+ms.openlocfilehash: ad5b8a0c261ed967710480b0abd3a2b9d34f01ce
+ms.sourcegitcommit: 5694c5236fa32ba7f5bc1236a853f725ec7557e9
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2019
-ms.locfileid: "67365409"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "68681393"
 ---
 # <a name="modify-visual-studio-by-adding-or-removing-workloads-and-components"></a>Modificación de Visual Studio mediante la incorporación o la eliminación de cargas de trabajo y componentes
 
@@ -86,7 +86,7 @@ Esta es la manera de hacerlo.
 
      Por ejemplo, en un equipo que ejecuta Windows 10, seleccione **Iniciar** y, después, desplácese hasta la letra **I** donde lo verá como **Instalador de Visual Studio**.
 
-     ![Apertura del Instalador de Visual Studio](media/vs2019-visual-studio-installer.png "Apertura del Instalador de Visual Studio")
+     ![Apertura del Instalador de Visual Studio desde Windows](media/vs-2019/vs-installer-windows-start.png "Apertura del Instalador de Visual Studio")
 
      > [!NOTE]
      > También pude encontrar el instalador de Visual Studio en la siguiente ubicación:
@@ -97,7 +97,7 @@ Esta es la manera de hacerlo.
 
 1. En el instalador, busque la edición de Visual Studio que haya instalado y, luego, elija **Modificar**.
 
-     ![Actualización o modificación de Visual Studio](media/vs-2019/vs-installer-modify.png "Actualización o modificación de Visual Studio 2017")
+     ![Actualización o modificación de Visual Studio](media/vs-2019/vs-installer-modify.png "Actualización o modificación de Visual Studio 2019")
 
 1. En la pestaña **Cargas de trabajo**, seleccione o anule la selección de las cargas de trabajo que quiera instalar o desinstalar.
 

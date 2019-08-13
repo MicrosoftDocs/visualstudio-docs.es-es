@@ -5,12 +5,12 @@ author: conceptdev
 ms.author: crdun
 ms.date: 04/17/2019
 ms.assetid: 2C4AAC2E-3B4A-4496-8BE0-1F5A7F81D1CA
-ms.openlocfilehash: 0ee6ffc7bd1567a86bc361f55e00c52ccecddd61
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 13b8d40a6ab31d7178e95a3896afa1c85c804f6c
+ms.sourcegitcommit: a124076dfd6b4e5aecda4d01984fee7b0c034745
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67824446"
+ms.lasthandoff: 08/05/2019
+ms.locfileid: "68787641"
 ---
 # <a name="accessibility"></a>Accesibilidad
 
@@ -57,7 +57,7 @@ Establecer **Acceso de teclado completo** en **Todos los controles** permite nav
 
 Para habilitar o deshabilitar VoiceOver, presione **&#8984; + F5**
 
-Los comandos de VoiceOver aparecen en esta guía como **VO+*tecla***, donde **VO** se refiere al modificador establecido en la aplicación **Utilidad VoiceOver**. El modificador predeterminado es **Ctrl + Alt**. Por ejemplo, dependiendo del modificador de VoiceOver que use, **VO + M** significará **Ctrl + Alt + M**. Para no extendernos demasiado, las teclas de dirección se mencionarán como **Izquierda** y **Derecha**, etc.
+Los comandos de VoiceOver aparecen en esta guía como **VO+_tecla_** , donde **VO** se refiere al modificador establecido en la aplicación **Utilidad VoiceOver**. El modificador predeterminado es **Ctrl + Alt**. Por ejemplo, dependiendo del modificador de VoiceOver que use, **VO + M** significará **Ctrl + Alt + M**. Para no extendernos demasiado, las teclas de dirección se mencionarán como **Izquierda** y **Derecha**, etc.
 
 Para navegar en la interfaz de usuario de Visual Studio para Mac, use estas combinaciones de teclas:
 

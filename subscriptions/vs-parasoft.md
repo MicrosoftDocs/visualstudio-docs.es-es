@@ -1,17 +1,17 @@
 ---
 title: Beneficio de Parasoft Virtualize/SOAtest Professional Desktop | Microsoft Docs
 author: evanwindom
-ms.author: jaunger
-manager: evelynp
-ms.date: 12/19/2018
+ms.author: lank
+manager: lank
+ms.date: 07/31/2019
 ms.topic: conceptual
 description: Vea cómo activar la suscripción de Parasoft Virtualize/SOA Test Professional que se incluye con la suscripción de Visual Studio.
-ms.openlocfilehash: bd867a47b4b42c3327d60ccab05735f0554409ad
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 64aa689780dc30a5a6fcadf3e31ec24d3289056a
+ms.sourcegitcommit: a124076dfd6b4e5aecda4d01984fee7b0c034745
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67824643"
+ms.lasthandoff: 08/05/2019
+ms.locfileid: "68787707"
 ---
 # <a name="parasoft-virtualizesoatest-professional-desktop-in-visual-studio-subscriptions"></a>Parasoft Virtualize/SOAtest Professional Desktop en suscripciones de Visual Studio
 
@@ -27,7 +27,10 @@ Realice pruebas antes y más a menudo.  Simule y pruebe el comportamiento de apl
 
 3. Se le redirigirá al sitio web de Parasoft, donde podrá crear una cuenta.  Simplemente especifique su información de contacto y haga clic en **Enviar**.
    > [!div class="mx-imgBorder"]
-   > ![Creación de cuenta de la ventaja Parasoft](_img/vs-parasoft/vs-parasoft-account-cropped.png)
+   > ![Creación de cuenta de la ventaja Parasoft](_img/vs-parasoft/vs-parasoft-new-account.png)
+
+   > [!Note]
+   > En la tabla de la página se muestra el precio de un año completo, más un descuento de Visual Studio. Este precio se aplicará DESPUÉS de haber usado la suscripción por seis meses.  
 
 4. Cuando haya creado la cuenta, verá una notificación en la que se le indicará que se le ha enviado un correo electrónico con las instrucciones de descarga.  (Recuerde comprobar las carpetas de spam o de correo no deseado si no ve el correo electrónico en la Bandeja de entrada).
 
@@ -56,14 +59,12 @@ Realice pruebas antes y más a menudo.  Simule y pruebe el comportamiento de apl
 14. Especifique dónde quiere que se instale el acceso directo para la aplicación y haga clic en **Siguiente**.
 
 15. El certificado de la entidad de certificación raíz web de SOAtest se requiere para determinadas pruebas funcionales en sitios HTTPS.  Elija el certificado de CA raíz y haga clic en **Siguiente**.
-    > [!div class="mx-imgBorder"]
-    > ![Certificado CA raíz de la ventaja Parasoft](_img/vs-parasoft/vs-parasoft-install-root-ca.png)
+    > [!NOTE]
+    > Parasoft recomienda que elija instalar el certificado.
 
 16. Elija si quiere que se creen los iconos de escritorio e inicio rápido durante la instalación y haga clic en **Siguiente**.
 
 17. Confirme las opciones que ha seleccionado y haga clic en **Instalar** para empezar a instalar el software.
-    > [!div class="mx-imgBorder"]
-    > ![Ventaja Parasoft lista para instalar](_img/vs-parasoft/vs-parasoft-ready-to-install.png)
 
 18. Cuando se haya completado la instalación, haga clic en **Finalizar**. Ya está listo para empezar a usar la ventaja Parasoft Virtualize/SOAtest Professional Desktop.
 
@@ -89,3 +90,6 @@ Realice pruebas antes y más a menudo.  Simule y pruebe el comportamiento de apl
   - Centro de recursos de Parasoft: https://www.parasoft.com/resources/
 - Para obtener ayuda con las ventas, las suscripciones, las cuentas y la facturación para suscripciones de Visual Studio, póngase en contacto con el [soporte para suscripciones](https://visualstudio.microsoft.com/subscriptions/support/) de Visual Studio.
 - ¿Tiene alguna pregunta sobre el IDE de Visual Studio, Azure DevOps Services u otros productos o servicios de Visual Studio?  Visite el [soporte técnico de Visual Studio](https://visualstudio.microsoft.com/support/).
+
+## <a name="next-steps"></a>Pasos siguientes
+Para usar su propio espacio aislado de desarrollo, active sus [créditos de Azure](vs-azure.md). 

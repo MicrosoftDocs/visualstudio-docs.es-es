@@ -10,12 +10,12 @@ f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.Basic.Code_Style.General
 ms.workload:
 - multiple
-ms.openlocfilehash: c31a04d5471224ed8433bba70baa5bd1dae9125e
-ms.sourcegitcommit: 7eb2fb21805d92f085126f3a820ac274f2216b4e
+ms.openlocfilehash: 4c7bb8f3e94a761023a19a5ea3361073b73d9f3b
+ms.sourcegitcommit: 90c3187d804ad7544367829d07ed4b47d3f8a72d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/22/2019
-ms.locfileid: "67328758"
+ms.lasthandoff: 08/06/2019
+ms.locfileid: "68822432"
 ---
 # <a name="code-style-preferences"></a>Preferencias de estilo del código
 
@@ -58,7 +58,7 @@ Las opciones que se establecen en esta ventana se aplican a la cuenta de persona
 
 ### <a name="preference-and-severity"></a>Preferencia y gravedad
 
-Para cada configuración de estilo de código de esta página, puede establecer los valores de **Preferencia** y **Gravedad** con las listas desplegables de cada línea. La gravedad se puede establecer en **Ninguno**, **Sugerencia**, **Advertencia** o **Error**. Si desea habilitar las [Acciones rápidas](../ide/quick-actions.md) para un estilo de código, asegúrese de que el valor **Gravedad** se establece en un valor distinto de **Ninguno**. El icono de bombilla ![Bombilla](media/light-bulb-dropdown.png), de bombilla de error ![Bombilla de error](media/error-bulb.png) o de destornillador ![Destornillador](media/screwdriver.png) de **Acciones rápidas** aparece cuando se usa un estilo no preferido, y puede elegir una opción en la lista **Acciones rápidas** para volver a escribir código de forma automática para el estilo preferido.
+Para cada configuración de estilo de código de esta página, puede establecer los valores de **Preferencia** y **Gravedad** con las listas desplegables de cada línea. La gravedad se puede establecer en **Solo refactorización**, **Sugerencia**, **Advertencia** o **Error**. Si desea habilitar las [Acciones rápidas](../ide/quick-actions.md) para un estilo de código, asegúrese de que el valor **Gravedad** se establece en un valor distinto de **Solo refactorización**. El icono de bombilla ![Bombilla](media/light-bulb-dropdown.png), de bombilla de error ![Bombilla de error](media/error-bulb.png) o de destornillador ![Destornillador](media/screwdriver.png) de **Acciones rápidas** aparece cuando se usa un estilo no preferido, y puede elegir una opción en la lista **Acciones rápidas** para volver a escribir código de forma automática para el estilo preferido.
 
 ## <a name="apply-code-styles"></a>Aplicación de estilos de código
 

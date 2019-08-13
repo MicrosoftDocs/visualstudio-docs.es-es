@@ -2,7 +2,7 @@
 title: Desinstalar Visual Studio
 titleSuffix: ''
 description: Obtenga información sobre cómo desinstalar Visual Studio, paso a paso.
-ms.date: 03/30/2019
+ms.date: 07/31/2019
 ms.custom: seodec18
 ms.topic: conceptual
 f1_keywords:
@@ -16,12 +16,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 759a1e2c5ba1c3ecff983e1d2ca3903471b7f5fe
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 9e9212bc5dda2ea69f685077eb2cbe86470d4064
+ms.sourcegitcommit: 5694c5236fa32ba7f5bc1236a853f725ec7557e9
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62951389"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "68681352"
 ---
 # <a name="uninstall-visual-studio"></a>Desinstalar Visual Studio
 
@@ -34,7 +34,7 @@ Esta página le guía a través de la desinstalación de Visual Studio, nuestro 
 
 1. Busque el instalador de Visual Studio en su equipo.
 
-     Por ejemplo, en un equipo que ejecuta la Actualización de aniversario de Windows 10 o posterior, seleccione **Iniciar** y desplácese hasta la letra **V** donde lo verá como **Instalador de Visual Studio**.
+     Por ejemplo, en un equipo que ejecuta la Actualización de aniversario de Windows 10 o posterior, seleccione **Iniciar** y desplácese hasta la letra **V** donde lo verá como **Instalador de Visual Studio**.
 
      ![Instalador de Visual Studio](media/vs2017-locate-the-visual-studio-installer.PNG "Encontrar el instalador de Microsoft Visual Studio")
 
@@ -51,7 +51,7 @@ Si cambia de idea más tarde y quiere volver a instalar Visual Studio 2017, inic
 
 ## <a name="uninstall-visual-studio-installer"></a>Desinstalación del instalador de Visual Studio
 
-Para quitar completamente todas las instalaciones de Visual Studio 2017 así como el Instalador de Visual Studio de la máquina, desinstálelo desde Aplicaciones y características.
+Para quitar completamente todas las instalaciones de Visual Studio 2017 y el Instalador de Visual Studio de la máquina, desinstálelo desde Aplicaciones y características.
 
 1. En Windows 10, escriba **Aplicaciones y características** en el cuadro "Escriba aquí para ejecutar la búsqueda".
 1. Busque **Microsoft Visual Studio 2017** (o **Visual Studio 2017**).
@@ -67,7 +67,7 @@ Para quitar completamente todas las instalaciones de Visual Studio 2017 así com
 
      Por ejemplo, en un equipo que ejecuta Windows 10, seleccione **Iniciar** y, después, desplácese hasta la letra **I** donde lo verá como **Instalador de Visual Studio**.
 
-     ![Apertura del Instalador de Visual Studio](media/vs2019-visual-studio-installer.png "Apertura del Instalador de Visual Studio")
+     ![Apertura del Instalador de Visual Studio](media/vs-2019/vs-installer-windows-start.png "Apertura del Instalador de Visual Studio")
 
      > [!NOTE]
      > También pude encontrar el instalador de Visual Studio en la siguiente ubicación:
@@ -88,7 +88,7 @@ Si cambia de opinión más tarde y quiere volver a instalar Visual Studio 2019
 
 ## <a name="uninstall-visual-studio-installer"></a>Desinstalación del instalador de Visual Studio
 
-Para quitar todas las instalaciones de Visual Studio 2019 así como el Instalador de Visual Studio de la máquina, desinstálelo desde Aplicaciones y características.
+Para quitar todas las instalaciones de Visual Studio 2019 y el Instalador de Visual Studio de la máquina, desinstálelo desde Aplicaciones y características.
 
 1. En Windows 10, escriba **Aplicaciones y características** en el cuadro "Escriba aquí para ejecutar la búsqueda".
 1. Busque **Visual Studio 2019**.

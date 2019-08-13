@@ -1,19 +1,17 @@
 ---
 title: Métodos abreviados de teclado para el Diseñador XAML
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 ms.assetid: 40211cc7-294a-4943-85a4-941ad6418dad
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.workload:
-- uwp
-ms.openlocfilehash: 1d0f655fb4b5b2bb23b19f7fcaf5106307c10895
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: e9a3260733ce67cde32aa8800b160314cf1ed8bb
+ms.sourcegitcommit: 90c3187d804ad7544367829d07ed4b47d3f8a72d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62896764"
+ms.lasthandoff: 08/06/2019
+ms.locfileid: "68821778"
 ---
 # <a name="keyboard-shortcuts-for-xaml-designer"></a>Métodos abreviados de teclado para el Diseñador XAML
 
@@ -31,7 +29,7 @@ Esta tabla enumera los métodos abreviados que están disponibles para trabajar 
 |Seleccionar un elemento único|Presione **Tab** para seleccionar elementos en el orden en que aparecen en el documento. (también puede seleccionar elementos mediante las teclas de dirección).|
 |Seleccionar varios elementos|Mantenga presionada la tecla **Mayús** mientras selecciona cada elemento.|
 |Seleccionar varios elementos no adyacentes|Mantenga presionada la tecla **Ctrl** mientras selecciona los primeros y últimos elementos.|
-|Mover elementos seleccionados|Presione las teclas de dirección (mantenga presionada la tecla **Mayús** para aumentar la distancia para desplazarse por la pulsación de tecla).|
+|Mover elementos seleccionados|Presione las teclas de dirección. (Puede mantener presionada la tecla **Mayús** para aumentar la distancia para desplazarse por pulsación de tecla).|
 |Girar un elemento en incrementos de 15 grados|Mantenga presionada la tecla **Mayús** al girar el elemento.|
 |Seleccionar todos los elementos|Presione **Ctrl**+**A**.|
 |Desactivar la selección de todos los elementos|Presione **Ctrl**+**Mayús**+**A**.|

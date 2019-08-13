@@ -6,18 +6,16 @@ ms.assetid: ac600581-8fc8-49e3-abdf-1569a3483d74
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.workload:
-- uwp
-ms.openlocfilehash: bc22f9dcbe348f46ae624e5c06706d328633e784
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 4f588395284891bab61a575f088931e2fc244bce
+ms.sourcegitcommit: 90c3187d804ad7544367829d07ed4b47d3f8a72d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62846075"
+ms.lasthandoff: 08/06/2019
+ms.locfileid: "68822107"
 ---
 # <a name="debug-or-disable-project-code-in-xaml-designer"></a>Depuración o deshabilitación de código de proyecto en el Diseñador XAML
 
-En muchos casos, las excepciones no controladas del Diseñador **XAML** pueden deberse a un código de proyecto que intenta acceder a propiedades o métodos que devuelven valores distintos o funcionan de manera diferente cuando se ejecuta la aplicación en el diseñador. Puede depurar el código del proyecto en otra instancia de Visual Studio para resolver estas excepciones o evitarlas temporalmente al deshabilitar el código del proyecto en el diseñador.
+En muchos casos, las excepciones no controladas del Diseñador XAML pueden deberse a un código de proyecto que intenta acceder a propiedades o métodos que devuelven valores distintos o funcionan de manera diferente cuando se ejecuta la aplicación en el diseñador. Puede depurar el código del proyecto en otra instancia de Visual Studio para resolver estas excepciones o evitarlas temporalmente al deshabilitar el código del proyecto en el diseñador.
 
 El código del proyecto incluye:
 
@@ -49,7 +47,7 @@ Cuando se deshabilita el código del proyecto, Visual Studio muestra marcadores 
 
      ![Instancias del diseñador de XAML en el Administrador de tareas](../designers/media/xaml_taskmanager.png)
 
-3. En Visual Studio, abra la página XAML, que contiene el código o el control que desea depurar.
+3. En Visual Studio, abra la página XAML, que contiene el código o el control que desea depurar.
 
 4. Abra una nueva instancia de Visual Studio, y luego abra una segunda instancia del proyecto.
 

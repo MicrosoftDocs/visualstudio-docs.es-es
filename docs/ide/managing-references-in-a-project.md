@@ -1,6 +1,6 @@
 ---
 title: Administrar referencias en un proyecto
-ms.date: 04/11/2018
+ms.date: 08/02/2019
 ms.topic: conceptual
 f1_keywords:
 - vs.ProjectPropertiesReferencePaths
@@ -21,12 +21,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 57cbff868cfdedb45b1973908ddb250ad09ea19e
-ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.openlocfilehash: 77b52e66d0278d7e9f8446fe728cca285c8418fa
+ms.sourcegitcommit: a124076dfd6b4e5aecda4d01984fee7b0c034745
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66747048"
+ms.lasthandoff: 08/05/2019
+ms.locfileid: "68787634"
 ---
 # <a name="manage-references-in-a-project"></a>Administrar referencias en un proyecto
 
@@ -45,6 +45,8 @@ Puede agregar una referencia a los siguientes tipos de componentes y servicios:
 - componentes COM
 
 - Otros ensamblados o bibliotecas de clases de proyectos de la misma solución
+
+- Proyectos compartidos
 
 - servicios Web XML
 
@@ -109,16 +111,20 @@ Para obtener más información, vea [Información general sobre destinos de Fram
 
 ## <a name="project-to-project-references"></a>Referencias entre proyectos
 
-Las referencias entre proyectos son referencias a proyectos que contienen ensamblados. Puede crearlas en la pestaña **Proyecto** . Visual Studio puede encontrar un ensamblado cuando se le proporciona una ruta de acceso al proyecto.
+Las referencias de proyecto a proyecto son referencias a proyectos que contienen ensamblados. Para crear referencias de proyecto, use la pestaña **Proyectos** del cuadro de diálogo Administrador de referencias. Visual Studio puede encontrar un ensamblado cuando se le proporciona una ruta de acceso al proyecto.
 
 Si tiene un proyecto que genera un ensamblado, debe hacer referencia al proyecto y no usar una referencia de archivo (ver abajo). La ventaja de una referencia de proyecto a proyecto es que crea una dependencia entre los proyectos en el sistema de compilación. El proyecto dependiente se compilará si ha cambiado desde la última vez que se compiló el proyecto que hace referencia. Una referencia a un archivo no crea una dependencia de compilación, por lo que es posible compilar el proyecto que hace referencia sin compilar el proyecto dependiente y la referencia puede quedar obsoleta. (Es decir, el proyecto puede hacer referencia a una versión previamente compilada del proyecto). Esto puede dar lugar a varias versiones de un solo archivo DLL que se requiere en el directorio *bin*, lo cual no es posible. Si se produce este conflicto, verá un mensaje como "Advertencia: la dependencia 'archivo' del proyecto 'proyecto' no se puede copiar en el directorio de ejecución porque sobrescribiría la referencia 'archivo'". Para obtener más información, vea [Solucionar problemas de referencias rotas](../ide/troubleshooting-broken-references.md) y [Cómo: Creación y eliminación de dependencias del proyecto](../ide/how-to-create-and-remove-project-dependencies.md).
 
 > [!NOTE]
 > Se crea una referencia de archivo en lugar de una referencia entre proyectos si la versión de destino de .NET Framework de un proyecto es la versión 4.5, y la del otro proyecto es la versión 2, 3, 3.5 o 4.0.
 
+## <a name="shared-project-references"></a>Referencias de proyectos compartidos
+
+A diferencia de la mayoría de los demás tipos de proyecto, un *proyecto compartido* no tiene ninguna salida binaria. En su lugar, el código se compila en cada proyecto que hace referencia a él. Los [Proyectos compartidos](/xamarin/cross-platform/app-fundamentals/shared-projects?tabs=windows) le permiten escribir código común al que distintos proyectos de aplicaciones hacen referencia. El código se compila como parte de cada proyecto de referencia y puede incluir directivas de compilador para ayudar a incorporar una funcionalidad específica de la plataforma en el código base compartido. Agregue una referencia a un proyecto compartido en la pestaña **Proyectos compartidos** del cuadro de diálogo Administrador de referencias.
+
 ## <a name="file-references"></a>Referencias de archivo
 
-Las referencias a archivos son referencias directas a ensamblados fuera del contexto de un proyecto de Visual Studio. Se crean mediante los comandos de la pestaña **Examinar** del **Administrador de referencias**. Use una referencia de archivo cuando solo tenga un ensamblado o un componente, y no el proyecto que lo crea como salida.
+Las referencias a archivos son referencias directas a ensamblados fuera del contexto de un proyecto de Visual Studio. Se crean mediante la pestaña **Examinar** del cuadro de diálogo Administrador de referencias. Use una referencia de archivo cuando solo tenga un ensamblado o un componente, y no el proyecto que lo crea como salida.
 
 ## <a name="see-also"></a>Vea también
 

@@ -1,5 +1,6 @@
 ---
-title: Teclas modificadoras de la herramienta Pluma en fusión
+title: Teclas modificadoras de la herramienta Pluma
+titleSuffix: Blend for Visual Studio
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: c3ab14c6-a320-46db-a6b3-7fd1ca261587
@@ -8,14 +9,15 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3f2aa8515dbe444ea3968714400b751d661b2a81
-ms.sourcegitcommit: 51dad3e11d7580567673e0d426ab3b0a17584319
+ms.openlocfilehash: 7e68e06a371f039c7d08b56b89305b1fe932a54a
+ms.sourcegitcommit: 90c3187d804ad7544367829d07ed4b47d3f8a72d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/10/2019
-ms.locfileid: "66820447"
+ms.lasthandoff: 08/06/2019
+ms.locfileid: "68822114"
 ---
-# <a name="pen-tool-modifier-keys-in-blend"></a>Teclas modificadoras de la herramienta Pluma en fusión
+# <a name="pen-tool-modifier-keys-in-blend-for-visual-studio"></a>Teclas modificadoras de la herramienta Pluma en Blend para Visual Studio
+
 En la tabla siguiente se enumeran los métodos abreviados que se pueden usar para modificar un trazado al crearlo con la herramienta **Pluma** ![Pen tool](../designers/media/d514358f-185a-412f-a55d-36633b25dc8a.png). También se puede usar la herramienta **Pluma** para agregar o eliminar puntos de un trazado existente, o para unir dos trazados existentes.
 
 |Para esta acción|Haga esto|Puntero|
@@ -36,7 +38,6 @@ En la tabla siguiente se enumeran los métodos abreviados que se pueden usar par
 
 ## <a name="see-also"></a>Vea también
 
-- [Métodos abreviados de teclado y teclas modificadoras](../designers/keyboard-shortcuts-and-modifier-keys-in-blend.md)
 - [Teclas modificadoras de la mesa de trabajo](../designers/artboard-modifier-keys-in-blend.md)
 - [Teclas modificadoras de la herramienta Selección directa](../designers/direct-selection-tool-modifier-keys-in-blend.md)
 - [Dibujar formas y trazados](../designers/draw-shapes-and-paths.md)

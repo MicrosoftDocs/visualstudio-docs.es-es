@@ -1,6 +1,7 @@
 ---
 title: Dibujar formas y trazados
-ms.date: 11/04/2016
+titleSuffix: Blend for Visual Studio
+ms.date: 07/31/2019
 ms.topic: conceptual
 ms.assetid: d5378c59-e2e5-49f0-91f1-aa82d984a33c
 author: gewarren
@@ -8,87 +9,95 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 222826121b270da93bc4bdd867b21fc62730cb07
-ms.sourcegitcommit: 51dad3e11d7580567673e0d426ab3b0a17584319
+ms.openlocfilehash: 948f18ef9abbea1b54346a86b950b90a82ade1ba
+ms.sourcegitcommit: 90c3187d804ad7544367829d07ed4b47d3f8a72d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/10/2019
-ms.locfileid: "66820435"
+ms.lasthandoff: 08/06/2019
+ms.locfileid: "68821899"
 ---
 # <a name="draw-shapes-and-paths"></a>Dibujar formas y trazados
 
 En el Diseñador XAML, una *forma* es exactamente lo que esperaría. por ejemplo: un rectángulo, un círculo o una elipse. Un *trazado* es una versión más flexible de una forma Puede cambiar su apariencia o combinarlos para crear formas nuevas.
 
-Las formas y los trazados usan gráficos vectoriales, por lo que se adaptan bien a pantallas de alta resolución. Si quiere obtener más información sobre los gráficos vectoriales, consulte [What are Vector Graphics](https://www.youtube.com/watch?v=MoCSwF0n-io) (¿Qué son los gráficos vectoriales) o [vector graphics](http://www.webopedia.com/TERM/V/vector_graphics.html)(Gráficos vectoriales).
+Las formas y los trazados usan gráficos vectoriales, por lo que se adaptan bien a pantallas de alta resolución.
 
-## <a name="Shape"></a> Dibujar una forma
- Las formas se encuentran en el panel **Activos** .
+## <a name="draw-a-shape"></a>Dibujar una forma
 
- ![Categoría Formas en el panel Activos](../designers/media/b4_shapes_assetspanel.png)
+Busque formas en la ventana **Recursos**.
 
- Arrastre la forma que desee a la mesa de trabajo. Después puede utilizar los controladores de la forma para escalar, girar, mover o sesgar la forma.
+![Categoría Formas en la ventana Recursos](../designers/media/blend-shapes.png)
 
- ![Handles](../designers/media/84261e83-3091-4490-ab58-4218b188439e.png)
+Arrastre la forma que desee a la mesa de trabajo. Después, use los controladores de la forma para escalar, girar, mover o sesgar la forma.
 
-## <a name="Path"></a> Dibujar un trazado
- Un trazado se compone de varias líneas y curvas conectadas. Utilice un trazado para crear formas interesantes que no están disponibles en el panel **Activos** .
+![Handles](../designers/media/84261e83-3091-4490-ab58-4218b188439e.png)
 
- Los trazados se pueden dibujar con una línea, una pluma o un lápiz, herramientas que se encuentran en el panel **Herramientas** .
+## <a name="draw-a-path"></a>Dibujar un trazado
 
- ![Herramienta lápiz](../designers/media/717956a8-b6a5-4e37-8af3-70bcfc78c82a.png) ![Opciones de la herramienta Lápiz](../designers/media/8fbbbb21-be83-4cf6-903b-3a49f00c9860.png)
+Un trazado se compone de varias líneas y curvas conectadas. Use un trazado para crear formas interesantes que no están disponibles en la ventana **Recursos**.
+
+Los trazados se pueden dibujar con una línea, una pluma o un lápiz, Puede encontrar estas herramientas en la ventana **Herramientas**.
 
 ### <a name="draw-a-straight-line"></a>Dibujar una línea recta
- Use la herramienta **Lápiz** ![Herramienta Lápiz](../designers/media/894f8612-e0ed-4e00-84cf-a9bc8f38fc54.png) o la herramienta **Línea** ![Herramienta Línea](../designers/media/eb618397-5283-48be-8396-3449be7b6fbf.png).
 
- **Uso de la herramienta Lápiz** ![Herramienta Lápiz](../designers/media/894f8612-e0ed-4e00-84cf-a9bc8f38fc54.png)
+Use la herramienta **Pluma** o la herramienta **Línea**.
 
- En la mesa de trabajo, haga clic una vez para definir el punto inicial y vuelva a hacer clic para definir el final de la línea.
+**Uso de la herramienta Pluma**
 
- **Uso de la herramienta Línea** ![Herramienta Línea](../designers/media/eb618397-5283-48be-8396-3449be7b6fbf.png)
+En la mesa de trabajo, haga clic una vez para definir el punto inicial y vuelva a hacer clic para definir el final de la línea.
 
- En la mesa de trabajo, arrastre desde el punto en el que desea que empiece la línea y después suelte en el punto en el que desea que finalice.
+**Uso de la herramienta Línea**
+
+En la mesa de trabajo, arrastre desde el punto en el que desea que empiece la línea y después suelte en el punto en el que desea que finalice.
 
 ### <a name="draw-a-curve"></a>Dibujar una curva
- Use la herramienta **Lápiz** ![Herramienta Lápiz](../designers/media/894f8612-e0ed-4e00-84cf-a9bc8f38fc54.png).
 
- En la mesa de trabajo, haga clic una vez para definir el punto inicial de una línea y, a continuación, haga clic y arrastre el puntero para crear la curva deseada.
+Use la herramienta **Pluma**.
 
- Si desea cerrar el trazado, haga clic en el primer punto en la línea.
+En la mesa de trabajo, haga clic una vez para definir el punto inicial de una línea y, a continuación, haga clic y arrastre el puntero para crear la curva deseada.
+
+Si desea cerrar el trazado, haga clic en el primer punto en la línea.
 
 ### <a name="change-the-shape-of-a-curve"></a>Cambiar la forma de una curva
- Use la herramienta **Selección directa** ![Herramienta Selección directa](../designers/media/6dd6571f-c116-451d-8dd2-1f88b8406362.png).
 
- Haga clic en la forma y después arrastre cualquier punto de la forma para cambiar la curva.
+Use la herramienta **Selección directa**.
+
+Haga clic en la forma y después arrastre cualquier punto de la forma para cambiar la curva.
 
 ### <a name="draw-a-free-form-path"></a>Dibujar un trazado de forma libre
- Use la herramienta **Lápiz** ![Herramienta Lápiz](../designers/media/509dc167-734f-46c9-b012-987ee63450cd.png).
 
- En la mesa de trabajo, dibuje un trazado de forma libre como si estuviera usando un lápiz real.
+Use la herramienta **Lápiz**.
+
+En la mesa de trabajo, dibuje un trazado de forma libre como si estuviera usando un lápiz real.
 
 ### <a name="remove-part-of-a-path"></a>Quitar parte de un trazado
- Use la herramienta **Selección directa** ![Herramienta Selección directa](../designers/media/6dd6571f-c116-451d-8dd2-1f88b8406362.png).
 
- Seleccione el trazado que contiene el segmento que desea eliminar y después haga clic en el botón **Eliminar** .
+Use la herramienta **Selección directa**.
+
+Seleccione el trazado que contiene el segmento que desea eliminar y después haga clic en el botón **Eliminar** .
 
 ### <a name="remove-a-point-in-a-path"></a>Quitar un punto de un trazado
- Use la herramienta **Selección** ![Herramienta Selección](../designers/media/2ff91340-477e-4efa-a0f7-af20851e4daa.png) y la herramienta **Lápiz** ![Herramienta Lápiz](../designers/media/894f8612-e0ed-4e00-84cf-a9bc8f38fc54.png).
 
- Use la herramienta **Selección** ![Herramienta Selección](../designers/media/2ff91340-477e-4efa-a0f7-af20851e4daa.png) para seleccionar el trazado. Después, use la herramienta **Lápiz** ![Herramienta Lápiz](../designers/media/894f8612-e0ed-4e00-84cf-a9bc8f38fc54.png) para hacer clic en el punto que quiera quitar.
+Use la herramienta **Selección** para seleccionar el trazado. A continuación, use la herramienta **Pluma** para hacer clic en el punto que desea quitar.
 
 ### <a name="add-a-point-to-a-path"></a>Agregar un punto en un trazado
- Use la herramienta **Selección** ![Herramienta Selección](../designers/media/2ff91340-477e-4efa-a0f7-af20851e4daa.png) y la herramienta **Lápiz** ![Herramienta Lápiz](../designers/media/894f8612-e0ed-4e00-84cf-a9bc8f38fc54.png).
 
- Use la herramienta **Selección** ![Herramienta Selección](../designers/media/2ff91340-477e-4efa-a0f7-af20851e4daa.png) para seleccionar el trazado. Use la herramienta **Pluma** ![Herramienta Lápiz](../designers/media/894f8612-e0ed-4e00-84cf-a9bc8f38fc54.png) para hacer clic en cualquier lugar del trazado en el que quiera agregar el punto.
+Use la herramienta **Selección** para seleccionar el trazado. Use la herramienta **Pluma** para hacer clic en cualquier lugar del trazado en el que desee agregar el punto.
 
-## <a name="Convert"></a> Convertir una forma en un trazado
- Para modificar una forma de la misma forma que se modifica un trazado, convierta la forma en un trazado.
+## <a name="convert-a-shape-to-a-path"></a>Convertir una forma en un trazado
 
- **Vea un vídeo corto:** ![Configurar las características instaladas](../designers/media/bldadminconsoleinitialconfigicon.png) [Trabajo con trazados: Convertir una forma en un trazado](https://www.youtube.com/watch?v=Io5bC0-nH6Q#t=147).
+Para modificar una forma de la misma forma que se modifica un trazado, convierta la forma en un trazado. Seleccione la forma y, luego, seleccione **Formato** > **Trazado** > **Convertir en trazado**.
 
-## <a name="Combine"></a> Combinar trazados
- Los trazados y las formas se pueden combinar en un único trazado.
+**Vea un vídeo corto:** ![Configurar las características instaladas](../designers/media/bldadminconsoleinitialconfigicon.png) [Trabajo con trazados: Convertir una forma en un trazado](https://www.youtube.com/watch?v=Io5bC0-nH6Q#t=147).
 
- ![Combinar trazados](../designers/media/2df17a5d-a338-4ef4-96c5-dae51cc1ca8a.png)
+> [!NOTE]
+> Actualmente, **Convertir en trazado** no está disponible para las aplicaciones de UWP con una `TargetPlatformVersion` de 10.0.16299.0 o posterior, como mínimo.
+
+## <a name="combine-paths"></a>Combinar trazados
+
+Los trazados y las formas se pueden combinar en un único trazado.
+
+![Combinar trazados](../designers/media/2df17a5d-a338-4ef4-96c5-dae51cc1ca8a.png)
 
 |||||
 |-|-|-|-|
@@ -96,24 +105,22 @@ Las formas y los trazados usan gráficos vectoriales, por lo que se adaptan bien
 |![Unir](../designers/media/b1_2.png)|Unir|![Excluir superposición](../designers/media/b1_5.png)|Excluir superposición|
 |![Dividir](../designers/media/b1_3.png)|Dividir|![Restar](../designers/media/b1_6.png)|Restar|
 
- **Vea un vídeo corto:** ![Configurar las características instaladas](../designers/media/bldadminconsoleinitialconfigicon.png) [Trabajo con trazados: Combinar trazados](https://www.youtube.com/watch?v=Io5bC0-nH6Q#t=195).
+**Vea un vídeo corto:** ![Configurar las características instaladas](../designers/media/bldadminconsoleinitialconfigicon.png) [Trabajo con trazados: Combinar trazados](https://www.youtube.com/watch?v=Io5bC0-nH6Q#t=195).
 
-## <a name="Compound"></a> Crear un trazado compuesto
- Cuando se crea un trazado compuesto, las partes en intersección de los trazados se restan del resultado final y el trazado resultante adopta las propiedades visuales del trazado situado al fondo.
+## <a name="create-a-compound-path"></a>Crear un trazado compuesto
 
- Una vez creados, los trazados compuestos se pueden separar en cualquier momento.
+Cuando se crea un trazado compuesto, las partes en intersección de los trazados se restan del resultado final y el trazado resultante adopta las propiedades visuales del trazado situado al fondo.
 
- ![Crear un trazado compuesto](../designers/media/2157a8aa-d9a7-4de4-8de5-b10d28f08a84.png)
+Una vez creados, los trazados compuestos se pueden separar en cualquier momento.
 
- **Vea un vídeo corto:** ![Configurar las características instaladas](../designers/media/bldadminconsoleinitialconfigicon.png) [Trabajo con trazados: Crear un trazado compuesto](https://www.youtube.com/watch?v=Io5bC0-nH6Q).
+![Crear un trazado compuesto](../designers/media/2157a8aa-d9a7-4de4-8de5-b10d28f08a84.png)
 
-## <a name="Clipping"></a> Crear un trazado de recorte
- Un trazado de recorte es un trazado o forma que se aplica a otro objeto, ocultando así las partes del objeto con máscara que sobresalen del trazado de recorte.
+**Vea un vídeo corto:** ![Configurar las características instaladas](../designers/media/bldadminconsoleinitialconfigicon.png) [Trabajo con trazados: Crear un trazado compuesto](https://www.youtube.com/watch?v=Io5bC0-nH6Q).
 
- ![Trazado de recorte](../designers/media/22471e98-a841-4f39-a3ef-36090cf5a625.png)
+## <a name="create-a-clipping-path"></a>Crear un trazado de recorte
 
- **Vea un vídeo corto:** ![Configurar las características instaladas](../designers/media/bldadminconsoleinitialconfigicon.png) [Trabajo con trazados: Crear un trazado de recorte](https://www.youtube.com/watch?v=Io5bC0-nH6Q#t=232).
+Un trazado de recorte es un trazado o forma que se aplica a otro objeto, ocultando así las partes del objeto con máscara que sobresalen del trazado de recorte.
 
-## <a name="see-also"></a>Vea también
+![Trazado de recorte](../designers/media/22471e98-a841-4f39-a3ef-36090cf5a625.png)
 
-- [Crear una IU con Blend para Visual Studio](../designers/creating-a-ui-by-using-blend-for-visual-studio.md)
+**Vea un vídeo corto:** ![Configurar las características instaladas](../designers/media/bldadminconsoleinitialconfigicon.png) [Trabajo con trazados: Crear un trazado de recorte](https://www.youtube.com/watch?v=Io5bC0-nH6Q#t=232).

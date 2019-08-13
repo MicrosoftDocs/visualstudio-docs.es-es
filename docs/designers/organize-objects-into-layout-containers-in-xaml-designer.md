@@ -6,24 +6,22 @@ ms.assetid: 29c80c38-0fa3-48d6-b3a8-3b864f482e44
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.workload:
-- uwp
-ms.openlocfilehash: 1937ab28af9b4c5c09bb12e2938a2aaa907fe8e6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d0401d810f5f97b0306290faff2cfeb1785ba14f
+ms.sourcegitcommit: 90c3187d804ad7544367829d07ed4b47d3f8a72d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62893589"
+ms.lasthandoff: 08/06/2019
+ms.locfileid: "68821937"
 ---
 # <a name="organize-objects-into-layout-containers-in-xaml-designer"></a>Organizar objetos en contenedores de diseño en el Diseñador XAML
 
 En este artículo se describen los paneles y controles de diseño del Diseñador XAML.
 
-Piense en qué parte de la página quiere que aparezcan los objetos como imágenes, botones y vídeos. Tal vez desee que aparezcan en filas y columnas, en una sola línea vertical u horizontal, o en posiciones fijas.
+Piense en qué parte de la página desea que aparezcan los objetos&mdash;como imágenes, botones y vídeos. Tal vez desee que aparezcan en filas y columnas, en una sola línea vertical u horizontal, o en posiciones fijas.
 
 Después de que haya considerado el aspecto que tendría la página, seleccione un panel de diseño. Todas las páginas tienen uno como punto de partida, ya que se necesita algo donde agregar los objetos. De manera predeterminada, es una **Cuadrícula**, pero puede cambiar esta configuración.
 
-Los paneles de diseño le ayudarán a organizar los objetos en una página, pero no solo sirven para eso. Además, facilitan el diseño en diferentes tamaños y resoluciones de pantalla. Cuando los usuarios ejecutan la aplicación, todo lo que contiene el panel de diseño cambia de tamaño para coincidir con el espacio real en pantalla de sus dispositivos. Por supuesto, si no quiere que el diseño actúe de ese modo, puede invalidar este comportamiento en todo o parte del diseño. Para controlarlo, puede utilizar propiedades de alto y ancho.
+Los paneles de diseño le ayudarán a organizar los objetos en una página, pero no solo sirven para eso. Además, facilitan el diseño en diferentes tamaños y resoluciones de pantalla. Cuando los usuarios ejecutan la aplicación, todo lo que contiene el panel de diseño cambia de tamaño para coincidir con el espacio real en pantalla de sus dispositivos. Por supuesto, si no desea que el diseño actúe de ese modo, puede invalidar este comportamiento en todo o parte del diseño. Para controlarlo, puede utilizar propiedades de alto y ancho.
 
 ## <a name="layout-panels"></a>Paneles de diseño
 
@@ -41,9 +39,9 @@ Organice los objetos en filas y columnas.
 
 Organice los objetos en regiones de cuadrícula iguales o uniformes. Este panel es excelente para organizar una lista de imágenes.
 
-![Panel de diseño UniformGrid](../designers/media/928b9284-a7e8-4678-875a-656b80b78076.png)
-
 (Disponible solo para proyectos de WPF).
+
+![Panel de diseño UniformGrid](../designers/media/928b9284-a7e8-4678-875a-656b80b78076.png)
 
 ### <a name="canvas"></a>Canvas
 
@@ -93,7 +91,7 @@ Muestre información u opciones a los usuarios en una ventana. Solo puede agrega
 
 ### <a name="scrollviewer"></a>ScrollViewer
 
-Permita que los usuarios se desplacen hacia abajo en una página o parte de una página. Puede agregar un solo objeto a un control **ScrollViewer** así que resulta muy adecuado agregar un panel de diseño como una **Cuadrícula** o **StackPanel**.
+Permita que los usuarios se desplacen hacia abajo en una página o parte de una página. Puede agregar un solo objeto a un control **ScrollViewer** así que resulta adecuado agregar un panel de diseño como una **Cuadrícula** o **StackPanel**.
 
 ![Control de diseño ScrollViewer](../designers/media/06b326d4-f23d-41a6-b26b-e1aff37572a7.png)
 

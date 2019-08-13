@@ -1,5 +1,6 @@
 ---
-title: Teclas modificadoras de la herramienta Selección directa en Blend
+title: Teclas modificadoras de la herramienta Selección directa
+titleSuffix: Blend for Visual Studio
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 21f9b951-dc2b-4d09-bd70-75caed8fb964
@@ -8,14 +9,15 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b606cbc3857ac1b30713e2c78b9c85045bcb42ff
-ms.sourcegitcommit: 51dad3e11d7580567673e0d426ab3b0a17584319
+ms.openlocfilehash: 088c66e73c912ef6f282b7addb8debcd73b766e5
+ms.sourcegitcommit: 90c3187d804ad7544367829d07ed4b47d3f8a72d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/10/2019
-ms.locfileid: "66820389"
+ms.lasthandoff: 08/06/2019
+ms.locfileid: "68821825"
 ---
-# <a name="direct-selection-tool-modifier-keys-in-blend"></a>Teclas modificadoras de la herramienta Selección directa en Blend
+# <a name="direct-selection-tool-modifier-keys-in-blend-for-visual-studio"></a>Teclas modificadoras de la herramienta Selección directa en Blend para Visual Studio
+
 En la tabla siguiente se muestran los accesos directos que puede usar para modificar la forma de un trazado existente con la herramienta **Selección directa** ![Direct selection tool](../designers/media/6dd6571f-c116-451d-8dd2-1f88b8406362.png). Para agregar puntos a un trazado, quitar puntos de un trazado o unir dos trazados existentes, use la herramienta **Pluma**.
 
 |Para esta acción|Haga esto|Puntero|
@@ -33,7 +35,6 @@ En la tabla siguiente se muestran los accesos directos que puede usar para modif
 
 ## <a name="see-also"></a>Vea también
 
-- [Métodos abreviados de teclado y teclas modificadoras](../designers/keyboard-shortcuts-and-modifier-keys-in-blend.md)
 - [Teclas modificadoras de la mesa de trabajo](../designers/artboard-modifier-keys-in-blend.md)
 - [Teclas modificadoras de la herramienta Pluma](../designers/pen-tool-modifier-keys-in-blend.md)
 - [Dibujar formas y trazados](../designers/draw-shapes-and-paths.md)

@@ -1,21 +1,22 @@
 ---
-title: Beneficio de la Comunidad Azure en las suscripciones de Visual Studio | Microsoft Docs
+title: Ventaja Soporte técnico de la Comunidad de Azure en Visual Studio Subscription | Microsoft Docs
 author: evanwindom
-ms.author: jaunger
-manager: evelynp
-ms.date: 12/19/2018
+ms.author: lank
+manager: lank
+ms.date: 07/29/2019
 ms.topic: conceptual
-description: Obtenga información sobre la ventaja Comunidad Azure incluida en las suscripciones de Visual Studio.
-ms.openlocfilehash: 9cd166d2e6be64713e6e79569133eea887568da1
-ms.sourcegitcommit: f369ff7e84b0216f01570a486c7be80ca6d0e61a
+description: Obtenga información sobre la ventaja Soporte técnico de la Comunidad de Azure incluida en las suscripciones de Visual Studio.
+ms.openlocfilehash: 0f03d269ab316801a75cbb3b1b618d722ec46b89
+ms.sourcegitcommit: 5694c5236fa32ba7f5bc1236a853f725ec7557e9
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "68250820"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "68681251"
 ---
-# <a name="azure-community"></a>Comunidad Azure
-
+# <a name="azure-community-support-forum-in-visual-studio-subscriptions"></a>Foro de soporte técnico de la Comunidad de Azure en las suscripciones de Visual Studio
 Obtenga ayuda directamente del equipo de Azure en los foros de soporte seleccionados a través de la Comunidad Azure.  El beneficio de la Comunidad Azure proporciona acceso a una colección de foros que se centran en los temas relacionados con Azure.
+
+## <a name="available-topics"></a>Temas disponibles
 
 |                                       |                                                    |                                      |
 |---------------------------------------|----------------------------------------------------|--------------------------------------|
@@ -27,7 +28,7 @@ Obtenga ayuda directamente del equipo de Azure en los foros de soporte seleccion
 | [Portal de administración de Azure](https://social.msdn.microsoft.com/Forums/home?forum=windowsazuremanagement&filter=alltypes&sort=lastpostdesc)               | [Azure Backup](https://social.msdn.microsoft.com/forums/home?forum=windowsazureonlinebackup&filter=alltypes&sort=lastpostdesc)                                       | [Azure Stack](https://social.msdn.microsoft.com/forums/home?forum=AzureStack&filter=alltypes&sort=lastpostdesc)                          |
 | [Azure Virtual Machines](https://social.msdn.microsoft.com/Forums/home?forum=WAVirtualMachinesforWindows&filter=alltypes&sort=lastpostdesc)                | [Azure Site Recovery](https://social.msdn.microsoft.com/forums/home?forum=hypervrecovmgr&filter=alltypes&sort=lastpostdesc)                                | [Azure Marketplace](https://social.msdn.microsoft.com/forums/home?forum=DataMarket&filter=alltypes&sort=lastpostdesc)                    |
 
-## <a name="activation-steps"></a>Pasos para la activación
+## <a name="get-started"></a>Primeros pasos
 Empezar a usar la Comunidad Azure es un proceso sencillo.
 1. Inicie sesión en [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs).
 
@@ -66,3 +67,6 @@ La disponibilidad de la ventaja Comunidad Azure depende del nivel de suscripció
 - [Documentación de Azure](/azure/).
 - ¿Necesita ayuda con las ventas, las suscripciones, las cuentas y la facturación para suscripciones de Visual Studio?  Póngase en contacto con el [soporte técnico de suscripciones](https://visualstudio.microsoft.com/subscriptions/support/) de Visual Studio.
 - ¿Tiene alguna pregunta sobre el IDE de Visual Studio, Azure DevOps Services u otros productos o servicios de Visual Studio?  Visite el [soporte técnico de Visual Studio](https://visualstudio.microsoft.com/support/).
+
+## <a name="next-steps"></a>Pasos siguientes
+¿Sabía que muchas de las suscripciones de Visual Studio incluyen créditos de Azure?  Descubra cómo [activar](vs-azure.md) los suyos.

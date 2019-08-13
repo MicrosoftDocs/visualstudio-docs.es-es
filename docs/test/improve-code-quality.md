@@ -10,12 +10,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 435eb2571f709f3ed5df4effbfdf3b5f4970457b
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: 153624ec6f0bdb13e4d89a92edf977d0badc7e62
+ms.sourcegitcommit: 3e74ec49a54e5c3da7631f4466128cdf4384af6b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65461396"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "68712216"
 ---
 # <a name="testing-tools-in-visual-studio"></a>Herramientas de prueba de Visual Studio
 
@@ -28,7 +28,13 @@ Las herramientas de prueba de Visual Studio pueden ayudarle a usted y a su equip
 
 La ventana del **Explorador de pruebas** ayuda a los desarrolladores a crear, administrar y ejecutar pruebas unitarias. Puede usar el marco de pruebas unitarias de Microsoft o uno de los marcos de terceros y de código abierto.
 
+::: moniker range="vs-2017"
 ![Explorador de pruebas de Visual Studio](media/devtest-testexplorer.png)
+::: moniker-end
+
+::: moniker range="vs-2019"
+![Explorador de pruebas de Visual Studio 16.2](media/vs-2019/test-explorer-16-2.PNG)
+::: moniker-end
 
 * [Introducción a las pruebas unitarias](unit-test-your-code.md)
 * [Ejecutar pruebas unitarias con el Explorador de pruebas](run-unit-tests-with-test-explorer.md)
