@@ -11,18 +11,18 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f9eee42d9e3a48f77153e5bd94f72a975ab27843
-ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.openlocfilehash: 21de3480ff3ac2d6733aacff6bcf714f910e7022
+ms.sourcegitcommit: 90c3187d804ad7544367829d07ed4b47d3f8a72d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "66263390"
+ms.lasthandoff: 08/06/2019
+ms.locfileid: "68821886"
 ---
 # <a name="how-to-create-and-apply-a-resource"></a>Cómo crear y aplicar un recurso
 
-Los estilos y las plantillas de elementos del diseñador XAML se almacenan en entidades reutilizables denominadas recursos. Los estilos permiten establecer las propiedades de los elementos y volver a usar esos valores para lograr una apariencia coherente entre distintos elementos. Una propiedad [ControlTemplate](/uwp/api/Windows.UI.Xaml.Controls.ControlTemplate) define la apariencia de un control y también puede aplicarse como un recurso. Para obtener más información, vea [Inicio rápido: Aplicar estilos a controles](http://go.microsoft.com/fwlink/?LinkID=248239) e [Inicio rápido: Plantillas de control](http://go.microsoft.com/fwlink/?LinkID=247982).
+Los estilos y las plantillas de elementos del diseñador XAML se almacenan en entidades reutilizables denominadas recursos. Los estilos permiten establecer las propiedades de los elementos y volver a usar esos valores para lograr una apariencia coherente entre distintos elementos. Una propiedad [ControlTemplate](xref:Windows.UI.Xaml.Controls.ControlTemplate) define la apariencia de un control y también puede aplicarse como un recurso. Para más información, consulte [Estilos XAML](/windows/uwp/design/controls-and-patterns/xaml-styles) y [Plantillas de control](/windows/uwp/design/controls-and-patterns/control-templates).
 
-Siempre que crea un recurso a partir de una propiedad existente, [Style](/uwp/api/Windows.UI.Xaml.Style) o `ControlTemplate`, el cuadro de diálogo **Crear recurso** permite definir el recurso en el nivel de aplicación, nivel de documento o nivel de elemento. Estos niveles determinan dónde se puede usar el recurso. Por ejemplo, si define el recurso en el nivel de elemento, solo se podrá aplicar el recurso al elemento para el que lo creó. También puede almacenar el recurso en un [diccionario de recursos](/windows/uwp/design/controls-and-patterns/resourcedictionary-and-xaml-resource-references): un archivo independiente que puede volver a usar en otro proyecto.
+Siempre que crea un recurso a partir de una propiedad existente, [Style](xref:Windows.UI.Xaml.Style) o [ControlTemplate](xref:Windows.UI.Xaml.Controls.ControlTemplate), el cuadro de diálogo **Crear recurso** permite definir el recurso en el nivel de aplicación, el nivel de documento o el nivel de elemento. Estos niveles determinan dónde se puede usar el recurso. Por ejemplo, si define el recurso en el nivel de elemento, solo se podrá aplicar el recurso al elemento para el que lo creó. También puede almacenar el recurso en un [diccionario de recursos](/windows/uwp/design/controls-and-patterns/resourcedictionary-and-xaml-resource-references): un archivo independiente que puede volver a usar en otro proyecto.
 
 ## <a name="create-a-new-resource"></a>Creación de un recurso nuevo
 
@@ -63,7 +63,7 @@ Siempre que crea un recurso a partir de una propiedad existente, [Style](/uwp/ap
      > [!NOTE]
      > **Editar plantilla** se aplica a las plantillas de control. **Editar plantillas adicionales** se aplica a otros tipos de plantilla.
 
-     Puede aplicar recursos siempre que sean compatibles. Por ejemplo, puede aplicar un recurso de pincel a la propiedad **Foreground** de un control <xref:Windows.UI.Xaml.Controls.TextBox>.
+     Puede aplicar recursos siempre que sean compatibles. Por ejemplo, puede aplicar un recurso de pincel a la propiedad **Foreground** de un control [TextBox](xref:Windows.UI.Xaml.Controls.TextBox).
 
 ## <a name="edit-a-resource"></a>Edición de un recurso
 

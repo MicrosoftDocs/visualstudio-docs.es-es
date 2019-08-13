@@ -1,6 +1,6 @@
 ---
 title: Agregar referencias en el Administrador de referencias
-ms.date: 04/11/2018
+ms.date: 08/02/2019
 ms.topic: conceptual
 f1_keywords:
 - VS.ReferenceManager
@@ -21,26 +21,28 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b0c20408fc7fc2bc15056c9668c90b5870ecf446
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 584c807670e5e5ba0bc4fa1b381dca30474212e7
+ms.sourcegitcommit: a124076dfd6b4e5aecda4d01984fee7b0c034745
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67825488"
+ms.lasthandoff: 08/05/2019
+ms.locfileid: "68787889"
 ---
 # <a name="how-to-add-or-remove-references-by-using-the-reference-manager"></a>Procedimiento Agregar o quitar referencias con el Administrador de referencias
 
-Puede usar el cuadro de diálogo **Administrador de referencias** para agregar y administrar referencias a componentes que usted, Microsoft u otra empresa hayan desarrollado. Si va a desarrollar una aplicación de Windows universal, el proyecto hará referencia automáticamente a todos los archivos DLL correctos del SDK de Windows. Si va a desarrollar una aplicación .NET, el proyecto hará referencia automáticamente a *mscorlib.dll*. Algunas API de .NET se exponen en los componentes que debe agregar manualmente. Las referencia a los componentes COM o a los componentes personalizados tienen que agregarse manualmente.
+Puede usar el cuadro de diálogo Administrador de referencias para agregar y administrar referencias a componentes que usted, Microsoft u otra empresa hayan desarrollado. Si va a desarrollar una aplicación de Windows universal, el proyecto hará referencia automáticamente a todos los archivos DLL correctos del SDK de Windows. Si va a desarrollar una aplicación .NET, el proyecto hará referencia automáticamente a *mscorlib.dll*. Algunas API de .NET se exponen en los componentes que debe agregar manualmente. Las referencia a los componentes COM o a los componentes personalizados tienen que agregarse manualmente.
 
 ## <a name="reference-manager-dialog-box"></a>Cuadro de diálogo Administrador de referencias
 
-En el cuadro de diálogo **Administrador de referencias** se muestran distintas categorías en el lado izquierdo, según el tipo de proyecto:
+En el cuadro de diálogo Administrador de referencias se muestran distintas categorías en el lado izquierdo, según el tipo de proyecto:
 
-- **Ensamblados**, con los subgrupos **Framework** y **Extensiones**.
+- **Ensamblados**, con los subgrupos **Marco** y **Extensiones**.
 
-- **COM**, donde se enumeran todos los componentes a los que se puede hacer referencia.
+- **COM**, donde se enumeran todos los componentes COM a los que se puede hacer referencia.
 
-- **Solución**, con el subgrupo **Proyectos**.
+- **Proyectos**
+
+- **Proyectos compartidos**
 
 - **Windows**, con los subgrupos **Principal** y **Extensiones**. Puede explorar las referencias del SDK de Windows o los SDK de extensión mediante el **Examinador de objetos**.
 
@@ -62,7 +64,7 @@ Al agregar manualmente una referencia a cualquiera de los espacios de nombres En
 
 Todos los proyectos de escritorio contienen una referencia implícita a **mscorlib**. Los proyectos de Visual Basic contienen una referencia implícita a <xref:Microsoft.VisualBasic>. Todos los proyectos contienen una referencia implícita a **System.Core**, aunque se quite de la lista de referencias.
 
-Si un tipo de proyecto no admite ensamblados, la pestaña no aparecerá en el cuadro de diálogo **Administrador de referencias**.
+Si un tipo de proyecto no admite ensamblados, la pestaña no aparecerá en el cuadro de diálogo Administrador de referencias.
 
 La pestaña **Ensamblados** consta de dos subpestañas:
 
@@ -142,6 +144,10 @@ Un proyecto puede hacer referencia a otro proyecto con una versión del marco de
 > [!NOTE]
 > Un proyecto cuyo destino es .NET Framework 4 no es compatible con un proyecto que tiene como destino .NET Framework 4 Client Profile.
 
+## <a name="shared-projects-tab"></a>Pestaña Proyectos compartidos
+
+Agregue una referencia a un proyecto compartido en la pestaña **Proyectos compartidos** del cuadro de diálogo Administrador de referencias. Los [Proyectos compartidos](/xamarin/cross-platform/app-fundamentals/shared-projects?tabs=windows) le permiten escribir código común al que distintos proyectos de aplicaciones hacen referencia.
+
 ## <a name="universal-windows-tab"></a>Pestaña Windows universal
 
 La pestaña **Windows universal** muestra todos los SDK que son específicos de las plataformas en las que se ejecutan sistemas operativos Windows.
@@ -155,28 +161,28 @@ Los proyectos de aplicación Windows universal hacen referencia de forma predet
 
 El subgrupo **Extensiones** muestra los SDK del usuario que amplían la plataforma Windows de destino.
 
-Un SDK es una colección de archivos que Visual Studio trata como un único componente. En la pestaña **Extensiones**, los SDK que se aplican al proyecto desde el que se ha invocado el cuadro de diálogo **Administrador de referencias** se muestran como entradas individuales. Cuando se agrega a un proyecto, todo el contenido de los SDK lo usa Visual Studio, de modo que el usuario no necesita realizar ninguna acción adicional para usar el contenido de los SDK en IntelliSense, cuadro de herramientas, diseñadores, Explorador de objetos, compilación, implementación, depuración y empaquetado.
+Un SDK es una colección de archivos que Visual Studio trata como un único componente. En la pestaña **Extensiones**, los SDK que se aplican al proyecto desde el que se ha invocado el cuadro de diálogo Administrador de referencias se muestran como entradas individuales. Cuando se agrega a un proyecto, todo el contenido de los SDK lo usa Visual Studio, de modo que el usuario no necesita realizar ninguna acción adicional para usar el contenido de los SDK en IntelliSense, cuadro de herramientas, diseñadores, Explorador de objetos, compilación, implementación, depuración y empaquetado.
 
 Para más información sobre cómo mostrar el SDK en la pestaña **Extensiones**, vea [Creación de un Kit de desarrollo de software](../extensibility/creating-a-software-development-kit.md).
 
 > [!NOTE]
-> Si un proyecto hace referencia a un SDK que depende de otro SDK, Visual Studio no usará el segundo SDK a menos que se agregue manualmente una referencia al segundo SDK. Cuando un usuario elige un SDK en la pestaña **Extensiones**, el cuadro de diálogo **Administrador de referencias** ayuda a identificar las dependencias del SDK al mostrar todas las dependencias del SDK en el panel de detalles.
+> Si un proyecto hace referencia a un SDK que depende de otro SDK, Visual Studio no usará el segundo SDK a menos que se agregue manualmente una referencia al segundo SDK. Cuando un usuario elige un SDK en la pestaña **Extensiones**, el cuadro de diálogo Administrador de referencias ayuda a identificar las dependencias del SDK al mostrar todas las dependencias del SDK en el panel de detalles.
 
-Si un tipo de proyecto no admite extensiones, esta pestaña no aparecerá en el cuadro de diálogo **Administrador de referencias**.
+Si un tipo de proyecto no admite extensiones, esta pestaña no aparecerá en el cuadro de diálogo Administrador de referencias.
 
 ## <a name="com-tab"></a>Pestaña COM
 
 La pestaña **COM** muestra todos los componentes COM a los que se puede hacer referencia. Si desea agregar una referencia a una DLL COM registrada que contiene un manifiesto interno, quite primero la DLL del Registro. Si no lo hace, Visual Studio agregará la referencia del ensamblado como un control ActiveX, en lugar de como una DLL nativa.
 
-Si un tipo de proyecto no admite COM, la pestaña no aparecerá en el cuadro de diálogo **Administrador de referencias**.
+Si un tipo de proyecto no admite COM, la pestaña no aparecerá en el cuadro de diálogo Administrador de referencias.
 
-## <a name="browse-button"></a>Botón Examinar
+## <a name="browse"></a>Explorar
 
 Puede usar el botón **Examinar** para buscar un componente en el sistema de archivos.
 
 Un proyecto puede hacer referencia a un componente con una versión del marco de destino diferente. Por ejemplo, se podría crear una aplicación destinada a .NET Framework 4.7 pero que haga referencia a un componente destinado a .NET Framework 4. Para obtener más información, vea [Información general sobre destinos de Framework](../ide/visual-studio-multi-targeting-overview.md).
 
-Evite agregar referencias de archivo a resultados de otro proyecto de la misma solución, ya que se pueden producir errores de compilación. En lugar de ello, use la pestaña **Solución** del cuadro de diálogo **Administrador de referencias** para crear referencias entre proyectos. Esto facilita el desarrollo en equipo, permitiendo una mejor administración de las bibliotecas de clases que se crean en los proyectos. Para más información, vea [Solucionar problemas de referencias rotas](../ide/troubleshooting-broken-references.md).
+Evite agregar referencias de archivo a resultados de otro proyecto de la misma solución, ya que se pueden producir errores de compilación. En lugar de ello, use la pestaña **Solución** del cuadro de diálogo Administrador de referencias para crear referencias entre proyectos. Esto facilita el desarrollo en equipo, permitiendo una mejor administración de las bibliotecas de clases que se crean en los proyectos. Para más información, vea [Solucionar problemas de referencias rotas](../ide/troubleshooting-broken-references.md).
 
 No puede buscar un SDK y agregarlo al proyecto. Solo puede buscar un archivo (por ejemplo, un ensamblado o *.winmd*) y agregarlo al proyecto.
 
@@ -201,7 +207,7 @@ Los grupos **Ensamblados**, **COM**, **Windows** y **Examinar** tienen cada uno 
 
 ## <a name="search"></a>Buscar
 
-La barra de búsqueda del cuadro de diálogo **Administrador de referencias** funciona según la pestaña que tiene el foco. Por ejemplo, si el usuario escribe "System" en la barra de búsqueda mientras la pestaña **Solución** tiene el foco, la búsqueda no devuelve ningún resultado a menos que la solución conste de un nombre de proyecto que contenga "System".
+La barra de búsqueda del cuadro de diálogo Administrador de referencias funciona según la pestaña que tiene el foco. Por ejemplo, si el usuario escribe "System" en la barra de búsqueda mientras la pestaña **Solución** tiene el foco, la búsqueda no devuelve ningún resultado a menos que la solución conste de un nombre de proyecto que contenga "System".
 
 ## <a name="see-also"></a>Vea también
 

@@ -1,26 +1,22 @@
 ---
 title: Mejore sus aptitudes de ciencia de datos hoy mismo con el beneficio de DataCamp en las suscripciones de Visual Studio seleccionadas. | Microsoft Docs
 author: evanwindom
-ms.author: jaunger
-manager: evelynp
-ms.date: 12/19/2018
+ms.author: lank
+manager: lank
+ms.date: 07/30/2019
 ms.topic: conceptual
 description: Obtenga información sobre la suscripción de aprendizaje de DataCamp incluida en la suscripción de Visual Studio seleccionada.
-ms.openlocfilehash: 5f5b327bb5b1c328fe746fdbafc1a7550eefacd6
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 64176f5a58641bf51434c99eee914a8ac176da56
+ms.sourcegitcommit: 5694c5236fa32ba7f5bc1236a853f725ec7557e9
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67825342"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "68681637"
 ---
 # <a name="the-datacamp-training-benefit-in-visual-studio-subscriptions"></a>Beneficio de aprendizaje de DataCamp en suscripciones de Visual Studio
-
 Entre las suscripciones de Visual Studio válidas se incluyen las suscripciones a DataCamp.  Con DataCamp, puede obtener información sobre todas las aptitudes ciencia de datos que necesita cómodamente desde el explorador. Puede elegir cuándo y qué aprender. Al no tener que instalar ningún software ni cumplir ningún requisito de hardware en particular, ahora el aprendizaje de ciencia de datos es más fácil que nunca.
 
-La duración del beneficio de DataCamp depende de su suscripción de Visual Studio.
-
 ## <a name="activation-steps"></a>Pasos para la activación
-
 1. Inicie sesión en [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs).
 
 2. Busque el icono de la prestación DataCamp en la categoría "Desarrollo profesional" y haga clic en **Activar**.
@@ -28,9 +24,7 @@ La duración del beneficio de DataCamp depende de su suscripción de Visual Stud
    > ![Icono de la prestación DataCamp](_img/vs-datacamp/vs-datacamp-tile-2.png)
 
 3. En la página de DataCamp, puede crear una cuenta.  Puede especificar una dirección de correo electrónico y una contraseña o iniciar sesión con cuentas de Facebook, LinkedIn o Google existentes.  Una vez que haya proporcionado su información de inicio de sesión, haga clic en **Get Started** (Comenzar).
-   > [!div class="mx-imgBorder"]
-   > ![Crear cuenta de DataCamp](_img/vs-datacamp/vs-datacamp-create-account.png)
-   >
+
    > [!NOTE]
    > Cuando empiece a crear la cuenta, es posible que reciba el mensaje de error siguiente: ¡Vaya!  Your promo code is invalid or expired". (Lo sentimos, el código de promoción no es válido o expiró).  Esto sucede porque el código de promoción expira unos minutos después de su creación.  Si recibe este mensaje, solo tiene que volver a la página [Beneficios](https://my.visualstudio.com/benefits) y hacer clic en el vínculo **Activar** en el icono de beneficio de DataCamp.
 
@@ -62,7 +56,6 @@ Puede parar en cualquier momento y reanudar el curso en la siguiente sesión.  S
 > ![Continuar con la formación de DataCamp](_img/vs-datacamp/vs-datacamp-continue-training.png)
 
 ## <a name="eligibility"></a>Elegibilidad
-
 | Nivel de suscripción                                                 |     Canales                                            | Prestación                                                          | ¿Renovable?    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
 | Visual Studio Enterprise (estándar)   | Licencia por volumen, Azure, venta directa | 3 meses       |  No.  Disponible solo para nuevos suscriptores          |
@@ -86,3 +79,9 @@ Puede parar en cualquier momento y reanudar el curso en la siguiente sesión.  S
   - [Enviar una solicitud de soporte técnico](https://support.datacamp.com/hc/requests/new)
 - Para obtener ayuda con las ventas, las suscripciones, las cuentas y la facturación para suscripciones de Visual Studio, póngase en contacto con el [soporte para suscripciones](https://visualstudio.microsoft.com/subscriptions/support/) de Visual Studio.
 - ¿Tiene alguna pregunta sobre el IDE de Visual Studio, Azure DevOps Services u otros productos o servicios de Visual Studio?  Visite el [soporte técnico de Visual Studio](https://visualstudio.microsoft.com/support/).
+
+## <a name="next-steps"></a>Pasos siguientes
+Revise más oportunidades de desarrollo profesional en la suscripción:
+- [Pluralsight](vs-pluralsight.md)
+- [Aprendizaje de LinkedIn](vs-linkedin-learning.md)
+- [MSDN Magazine](vs-msdn.md)

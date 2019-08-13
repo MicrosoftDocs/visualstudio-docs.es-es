@@ -1,5 +1,6 @@
 ---
-title: Modificar el estilo de objetos en Blend
+title: Modificación del estilo de objetos
+titleSuffix: Blend for Visual Studio
 ms.date: 11/04/2016
 ms.topic: conceptual
 author: gewarren
@@ -7,14 +8,14 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 727bf173336a25f380cc938c3252530f86f22ab8
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 53a2071e17898fc77aba8a5d51dda77ea2927187
+ms.sourcegitcommit: 90c3187d804ad7544367829d07ed4b47d3f8a72d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62845310"
+ms.lasthandoff: 08/06/2019
+ms.locfileid: "68821965"
 ---
-# <a name="modify-the-style-of-objects-in-blend"></a>Modificar el estilo de objetos en Blend
+# <a name="modify-the-style-of-objects-in-blend-for-visual-studio"></a>Modificación del estilo de los objetos en Blend para Visual Studio
 
 La manera más fácil de personalizar un objeto es establecer propiedades en el panel **Propiedades**.
 
@@ -46,9 +47,9 @@ Cree un pincel visual a partir de un control como un botón. Las ilustraciones s
 
 Puede diseñar la apariencia y el comportamiento de un control una vez y aplicar ese diseño a otros controles para no tener que hacerlo de manera individual.
 
-**¿Debe usar un estilo?**: Si quiere establecer las propiedades predeterminadas (como el color de un botón), use un *estilo*. Puede modificar un control incluso después de aplicarle un estilo.
+**¿Debe usar un estilo?** : Si quiere establecer las propiedades predeterminadas (como el color de un botón), use un *estilo*. Puede modificar un control incluso después de aplicarle un estilo.
 
-**¿Debe usar una plantilla?**: Si quiere cambiar la estructura de un control, use una *plantilla*. Imagine que convierte un gráfico o un logotipo en un botón. El control no se puede modificar después de aplicarle una plantilla.
+**¿Debe usar una plantilla?** : Si quiere cambiar la estructura de un control, use una *plantilla*. Imagine que convierte un gráfico o un logotipo en un botón. El control no se puede modificar después de aplicarle una plantilla.
 
 ### <a name="create-a-template-or-style"></a>Crear una plantilla o un estilo
 
@@ -84,11 +85,11 @@ Haga clic con el botón derecho en un objeto en la ventana [Objetos y escala de 
 
 ### <a name="restore-the-default-style-or-template-of-a-control"></a>Restaurar el estilo o la plantilla predeterminados de un control
 
-Seleccione el control y, en la ventana [Propiedades](../designers/creating-a-ui-by-using-blend-for-visual-studio.md#properties-window), busque la propiedad **Estilo** o **Plantilla**. Elija **Opciones avanzadas** y, después, haga clic en **Restablecer** en el menú contextual.
+Seleccione el control y, en la ventana **Propiedades****, busque la propiedad **Estilo** o **Plantilla**. Elija **Opciones avanzadas** y, después, haga clic en **Restablecer** en el menú contextual.
 
-## <a name="visual-states-change-the-appearance-of-a-control-based-on-its-state"></a>Estados visuales: Cambiar la apariencia de un control según su estado
+## <a name="visual-states"></a>Estados visuales
 
-Los controles pueden tener una apariencia visual distinta según las interacciones del usuario. Por ejemplo, cuando un usuario hace clic en un botón, puede hacer que este se vuelva verde o que se ejecute una animación. El tiempo entre estados visuales se puede alargar o acortar mediante el uso de las transiciones.
+Los estados visuales le permiten cambiar la apariencia de un control según su estado. Los controles pueden tener una apariencia visual distinta según las interacciones del usuario. Por ejemplo, cuando un usuario hace clic en un botón, puede hacer que este se vuelva verde o que se ejecute una animación. El tiempo entre estados visuales se puede alargar o acortar mediante el uso de las transiciones.
 
 ![Mouse sobre el estado](../designers/media/a95c671a-5639-40b9-83db-1e6b214330d5.png)
 

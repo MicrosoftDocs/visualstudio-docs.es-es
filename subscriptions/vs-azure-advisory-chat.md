@@ -1,24 +1,22 @@
 ---
 title: Beneficio de chat de asesoramiento de Azure en las suscripciones de Visual Studio | Microsoft Docs
 author: evanwindom
-ms.author: jaunger
-manager: evelynp
-ms.date: 12/19/2018
+ms.author: lank
+manager: lank
+ms.date: 07/29/2019
 ms.topic: conceptual
 description: Obtenga información sobre cómo aprovechar la ventaja Chat de asesoramiento de Azure incluida en las suscripciones de Visual Studio.
-ms.openlocfilehash: d3bdcdff9244a0ddab4f7be4fc030a0d4e189583
-ms.sourcegitcommit: f369ff7e84b0216f01570a486c7be80ca6d0e61a
+ms.openlocfilehash: bd5de6c74260ebdb040d16695a180a2eaed8e361
+ms.sourcegitcommit: 5694c5236fa32ba7f5bc1236a853f725ec7557e9
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "68250843"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "68681728"
 ---
 # <a name="azure-advisory-chat"></a>Chat de asesoramiento de Azure
-
 ¡Obtenga ayuda para empezar a usar Azure en tiempo real! Incluye asesoramiento para los servicios PaaS de Azure.  El beneficio de chat de asesoramiento de Azure está disponible en Visual Studio Enterprise estándar y las suscripciones a la nube anuales.
 
 ## <a name="activation-steps"></a>Pasos para la activación
-
 El empleo de Chat de asesoramiento de Azure es sencillo.
 1. Inicie sesión en [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs).
 2. Busque el icono de chat de asesoramiento de Azure en la sección Soporte técnico y haga clic en **Chatear ahora**.
@@ -34,7 +32,6 @@ El empleo de Chat de asesoramiento de Azure es sencillo.
     > ![Chat de Azure Advisor](_img/vs-azure-advisory/vs-azure-advisory-chat.png)
 
 ## <a name="eligibility"></a>Elegibilidad
-
 |                                                      Nivel de suscripción                                                      |     Canales      |    Prestación    | ¿Renovable? |
 |------------------------------------------------------------------------------------------------------------------------------|-------------------|---------------|------------|
 |                                      Visual Studio Enterprise (estándar)                                       | Licencia por volumen, Azure, venta directa |   Un año    |    Sí     |
@@ -57,3 +54,6 @@ El empleo de Chat de asesoramiento de Azure es sencillo.
 ## <a name="support-resources"></a>Recursos de soporte técnico
 - Para obtener ayuda con las ventas, las suscripciones, las cuentas y la facturación para suscripciones de Visual Studio, póngase en contacto con el [soporte para suscripciones](https://visualstudio.microsoft.com/subscriptions/support/) de Visual Studio.
 - ¿Tiene alguna pregunta sobre el IDE de Visual Studio, Azure DevOps Services u otros productos o servicios de Visual Studio?  Visite el [soporte técnico de Visual Studio](https://visualstudio.microsoft.com/support/).
+
+## <a name="next-steps"></a>Pasos siguientes
+Muchas suscripciones de Visual Studio incluyen créditos de Azure.  Si todavía no activó los suyos, revise la [ventaja de Azure](vs-azure.md). 

@@ -3,15 +3,15 @@ title: Disponibilidad de productos para descargas de software en suscripciones d
 author: evanwindom
 ms.author: lank
 manager: lank
-ms.date: 07/11/2019
+ms.date: 07/29/2019
 ms.topic: conceptual
 description: Obtenga más información sobre la disponibilidad de productos en descargas de software para suscripciones de Visual Studio
-ms.openlocfilehash: 8377168808f3d143d3845cddf06e361f113f1642
-ms.sourcegitcommit: 57866dd72fd0e15ce61128df70729b427a2d02eb
+ms.openlocfilehash: 2b6e53ab959d91b269c4235a1438af36eae24e11
+ms.sourcegitcommit: 5694c5236fa32ba7f5bc1236a853f725ec7557e9
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "68315396"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "68681693"
 ---
 # <a name="product-availability-for-software-downloads-in-visual-studio-subscriptions"></a>Disponibilidad de productos para descargas de software en suscripciones de Visual Studio
 Una de sus prestaciones como suscriptor es el acceso a un amplio abanico de descargas de software.
@@ -38,4 +38,5 @@ El número y tipo de descargas dependen del nivel de la suscripción y las inscr
 ¿No sabe con seguridad qué suscripción usa?  Conéctese a [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) para ver todas las suscripciones asignadas a su dirección de correo electrónico. Si no ve todas las suscripciones, es posible que haya una o varias asignadas a una dirección de correo electrónico diferente.  Debe iniciar sesión con esa dirección de correo electrónico para ver esas suscripciones.
 
 ## <a name="next-steps"></a>Pasos siguientes
-Es posible que algunas descargas de software requieran una clave de producto para instalarse y activarse.  Vea el artículo sobre claves de producto para obtener más información sobre cómo obtener y administrar las claves de producto. 
+- Es posible que algunas descargas de software requieran una clave de producto para instalarse y activarse.  Consulte el artículo sobre [claves de producto](product-keys.md) para más información sobre cómo obtener y administrar las claves de producto. 
+- Obtenga información sobre cómo [descargar software](download-software.md).

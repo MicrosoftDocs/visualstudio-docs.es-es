@@ -1,6 +1,6 @@
 ---
 title: ResolveComReference (Tarea) | Microsoft Docs
-ms.date: 11/04/2016
+ms.date: 07/25/2019
 ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/msbuild/2003#ResolveComReference
@@ -18,20 +18,22 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 123aa52b5062d8ac083f054074df2c65ba77f80d
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: ecefab48babc2938a4995ec8232e0aa7a06dae3c
+ms.sourcegitcommit: 5694c5236fa32ba7f5bc1236a853f725ec7557e9
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63431298"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "68681109"
 ---
 # <a name="resolvecomreference-task"></a>Tarea ResolveComReference
+
 Toma una lista de uno o varios nombres de biblioteca de tipos o archivos *.tlb* y resuelve esas bibliotecas de tipos en ubicaciones de disco.
 
 ## <a name="parameters"></a>Parámetros
+
  En la siguiente tabla se describen los parámetros de la tarea `ResolveCOMReference` .
 
-|Parámetro|Descripción|
+|Parámetro|DESCRIPCIÓN|
 |---------------|-----------------|
 |`DelaySign`|Parámetro `Boolean` opcional.<br /><br /> Si `true`, coloca la clave pública en el ensamblado. Si `false`, firma completamente el ensamblado.|
 |`EnvironmentVariables`|Parámetro `String[]` opcional.<br /><br /> Matriz de pares de variables de entorno, separados por signos igual. Estas variables se pasan a spawned *tlbimp.exe* y *aximp.exe* y, además, pasan el bloque de entorno normal o lo invalidan de manera selectiva.|
@@ -52,29 +54,37 @@ Toma una lista de uno o varios nombres de biblioteca de tipos o archivos *.tlb* 
 |`WrapperOutputDirectory`|Parámetro `String` opcional.<br /><br /> Ubicación en el disco donde se coloca el ensamblado de interoperabilidad generado. Si estos metadatos de elementos no se especifican, la tarea usa la ruta de acceso absoluta del directorio donde se encuentra el archivo del proyecto.|
 
 ## <a name="typelibnames-item-metadata"></a>Metadatos de elementos TypeLibNames
+
  En la tabla siguiente se describen los metadatos de elementos disponibles para los elementos que se han pasado al parámetro `TypeLibNames`.
 
-|Metadatos|Descripción|
+|Metadatos|DESCRIPCIÓN|
 |--------------|-----------------|
 |`GUID`|Metadatos de elementos necesarios.<br /><br /> GUID de la biblioteca de tipos. Si estos metadatos de elementos no se especifican, se produce un error en la tarea.|
 |`VersionMajor`|Metadatos de elementos necesarios.<br /><br /> La versión principal de la biblioteca de tipos. Si estos metadatos de elementos no se especifican, se produce un error en la tarea.|
 |`VersionMinor`|Metadatos de elementos necesarios.<br /><br /> La versión secundaria de la biblioteca de tipos. Si estos metadatos de elementos no se especifican, se produce un error en la tarea.|
+|`EmbedInteropTypes`|Metadatos `Boolean` opcionales.<br /><br />  Si `true`, inserte los tipos de interoperabilidad de esta referencia directamente en el ensamblado en lugar de generar un archivo DLL de interoperabilidad.|
 |`LocaleIdentifier`|Metadatos de elementos opcionales.<br /><br /> El identificador de configuración regional (o LCID) de la biblioteca de tipos. Esto se especifica como un valor de 32 bits que identifica el lenguaje humano preferido por un usuario, una región o una aplicación. Si estos metadatos de elementos no se especifican, la tarea usa un identificador de configuración regional predeterminado de "0".|
 |`WrapperTool`|Metadatos de elementos opcionales.<br /><br /> Especifica la herramienta contenedor que se usa para generar el contenedor de ensamblado para esta biblioteca de tipos. Si estos metadatos de elementos no se especifican, la tarea usa una herramienta contenedor predeterminada de "tlbimp". Las opciones que no distinguen mayúsculas de minúsculas disponibles de typelibs son:<br /><br /> -   `Primary`: Use esta herramienta contenedor cuando quiera usar un ensamblado de interoperabilidad primario que ya se ha generado para el componente COM. Cuando use esta herramienta contenedor, no especifique un directorio de salida del contenedor porque provocará un error en la tarea.<br />-   `TLBImp`: Use esta herramienta contenedor cuando quiera generar un ensamblado de interoperabilidad para el componente COM.<br />-   `AXImp`: use esta herramienta contenedor cuando quiera generar un ensamblado de interoperabilidad para un control ActiveX.|
 
 ## <a name="typelibfiles-item-metadata"></a>Metadatos de elementos TypeLibFiles
+
  En la tabla siguiente se describen los metadatos de elementos disponibles para los elementos que se han pasado al parámetro `TypeLibFiles`.
 
-|Metadatos|Descripción|
+|Metadatos|DESCRIPCIÓN|
 |--------------|-----------------|
+|`EmbedInteropTypes`|Parámetro `Boolean` opcional.<br /><br />  Si `true`, inserte los tipos de interoperabilidad de esta referencia directamente en el ensamblado en lugar de generar un archivo DLL de interoperabilidad.|
 |`WrapperTool`|Metadatos de elementos opcionales.<br /><br /> Especifica la herramienta contenedor que se usa para generar el contenedor de ensamblado para esta biblioteca de tipos. Si estos metadatos de elementos no se especifican, la tarea usa una herramienta contenedor predeterminada de "tlbimp". Las opciones que no distinguen mayúsculas de minúsculas disponibles de typelibs son:<br /><br /> -   `Primary`: Use esta herramienta contenedor cuando quiera usar un ensamblado de interoperabilidad primario que ya se ha generado para el componente COM. Cuando use esta herramienta contenedor, no especifique un directorio de salida del contenedor porque provocará un error en la tarea.<br />-   `TLBImp`: Use esta herramienta contenedor cuando quiera generar un ensamblado de interoperabilidad para el componente COM.<br />-   `AXImp`: Use esta herramienta contenedor cuando quiera generar un ensamblado de interoperabilidad para un control ActiveX.|
 
 > [!NOTE]
 > Cuanta más información proporcione para identificar de manera exclusiva una biblioteca de tipos, mayor será la posibilidad de que la tarea resuelva el archivo correcto en el disco.
 
 ## <a name="remarks"></a>Comentarios
- Además de los parámetros enumerados anteriormente, esta tarea hereda los parámetros de la clase <xref:Microsoft.Build.Utilities.Task>. Para obtener una lista de estos parámetros adicionales y sus descripciones, consulte [Task Base (Clase)](../msbuild/task-base-class.md).
+
+Además de los parámetros enumerados anteriormente, esta tarea hereda los parámetros de la clase <xref:Microsoft.Build.Utilities.Task>. Para obtener una lista de estos parámetros adicionales y sus descripciones, consulte [Task Base (Clase)](../msbuild/task-base-class.md).
+
+No es necesario registrar un archivo DLL COM en la máquina para que esta tarea funcione.
 
 ## <a name="see-also"></a>Vea también
+
 - [Tareas](../msbuild/msbuild-tasks.md)
 - [Referencia de tareas](../msbuild/msbuild-task-reference.md)
