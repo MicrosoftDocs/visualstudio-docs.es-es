@@ -12,12 +12,12 @@ ms.assetid: 3c4f7874-081a-4ec4-9510-4d6d7d863a11
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 8444fa5910658ab92643b2110483efc059560674
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d7cb81f191b2fd14b21a2724feab496ad05c1eef
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62990658"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68918056"
 ---
 # <a name="specify-virtual-network-types-in-a-load-test-scenario"></a>Especificar tipos de redes virtuales en un escenario de prueba de carga
 
@@ -86,16 +86,16 @@ Los desarrolladores y evaluadores de aplicaciones basados en red pueden utilizar
 
 ## <a name="about-the-mix-control"></a>Control de combinaciones
 
- El control de combinación permite ajustar el porcentaje de carga que se distribuye entre las pruebas, entre los tipos de exploradores o entre los tipos de redes en un escenario de prueba de carga. Para ajustar los valores de porcentajes, mueva los controles deslizantes. El ajuste de la combinación para los tipos de redes especifica la probabilidad de que un usuario virtual ejecute un perfil de red específico en un escenario de prueba de carga.
+El control de combinación permite ajustar el porcentaje de carga que se distribuye entre las pruebas, entre los tipos de exploradores o entre los tipos de redes en un escenario de prueba de carga. Para ajustar los valores de porcentajes, mueva los controles deslizantes. El ajuste de la combinación para los tipos de redes especifica la probabilidad de que un usuario virtual ejecute un perfil de red específico en un escenario de prueba de carga.
 
- Al mover un control deslizante, cambian los valores de porcentaje de todos los elementos disponibles. Si tiene más de dos elementos, la cantidad que agregue o quite se distribuirá uniformemente entre los demás elementos. Es posible reemplazar este comportamiento. Si activa la casilla de la columna de bloqueo de un elemento determinado, bloqueará el valor de porcentaje especificado para dicho elemento. Entonces, cuando mueva un control deslizante, la cantidad que agregue o quite sólo se aplicará a los elementos desbloqueados restantes.
+Al mover un control deslizante, cambian los valores de porcentaje de todos los elementos disponibles. Si tiene más de dos elementos, la cantidad que agregue o quite se distribuirá uniformemente entre los demás elementos. Es posible reemplazar este comportamiento. Si activa la casilla de la columna de bloqueo de un elemento determinado, bloqueará el valor de porcentaje especificado para dicho elemento. Entonces, cuando mueva un control deslizante, la cantidad que agregue o quite sólo se aplicará a los elementos desbloqueados restantes.
 
- El botón **Distribuir** se usa para asignar los valores de porcentaje de forma equitativa entre todos los elementos. Por ejemplo, si tiene tres elementos, al elegir **Distribuir**, los valores de porcentaje se establecen en 34, 33 y 33.
+El botón **Distribuir** se usa para asignar los valores de porcentaje de forma equitativa entre todos los elementos. Por ejemplo, si tiene tres elementos, al elegir **Distribuir**, los valores de porcentaje se establecen en 34, 33 y 33.
 
 > [!WARNING]
 > El botón **Distribuir** reemplaza a cualquier elemento que esté bloqueado.
 
- También es posible escribir directamente los valores de porcentaje en la columna **%**, en lugar de usar los controles deslizantes. Si escribe un valor de porcentaje directamente, los demás elementos no se ajustarán automáticamente.
+También es posible escribir directamente los valores de porcentaje en la columna **%** , en lugar de usar los controles deslizantes. Si escribe un valor de porcentaje directamente, los demás elementos no se ajustarán automáticamente.
 
 > [!NOTE]
 > Los controles deslizantes se deshabilitan cuando el total no suma un 100 % o cuando los valores de porcentaje especificados en la columna **%** son decimales.

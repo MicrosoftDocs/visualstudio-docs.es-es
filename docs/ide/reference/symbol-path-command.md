@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 23a7a59ca23dc444bcdc714ade2fce5bedb87e8c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 3792f3d6f86faf0b58e8cf8f1b76984ba3bd5d80
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62945133"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68925997"
 ---
 # <a name="symbol-path-command"></a>Ruta de acceso de símbolos (Comando)
 Establece la lista de directorios para que el depurador busque símbolos.
@@ -31,28 +31,28 @@ Debug.SymbolPath pathname1;pathname2;... pathnameN
 ```
 
 ## <a name="arguments"></a>Argumentos
- `pathname`
+`pathname`
 
- Opcional. Lista de rutas de acceso delimitada por puntos y comas para que el depurador busque símbolos.
+Opcional. Lista de rutas de acceso delimitada por puntos y comas para que el depurador busque símbolos.
 
 ## <a name="remarks"></a>Comentarios
- Si no se especifica ningún `pathname`, el comando muestra las rutas de acceso de símbolos actuales.
+Si no se especifica ningún `pathname`, el comando muestra las rutas de acceso de símbolos actuales.
 
 ## <a name="example"></a>Ejemplo
- En este ejemplo, se agregan dos rutas de acceso a la lista de directorios de símbolos.
+En este ejemplo, se agregan dos rutas de acceso a la lista de directorios de símbolos.
 
 ```
 Debug.SymbolPath C:\Symbol Path 1;C:\Symbol Path 2
 ```
 
 ## <a name="example"></a>Ejemplo
- En este ejemplo, se muestra una lista delimitada por puntos y comas de rutas de acceso de símbolos actuales.
+En este ejemplo, se muestra una lista delimitada por puntos y comas de rutas de acceso de símbolos actuales.
 
 ```
 Debug.SymbolPath
 ```
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Otras referencias
 
 - [Ventana Comandos](../../ide/reference/command-window.md)
 - [Comandos de Visual Studio](../../ide/reference/visual-studio-commands.md)

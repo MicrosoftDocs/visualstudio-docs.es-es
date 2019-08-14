@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1d466a320d9acd968bfab07b7e8a595dde10ad9c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 89be89bb3befa6f6ab9e67f6e98ae4d7b1b94e64
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62557068"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68926204"
 ---
 # <a name="list-modules-command"></a>Mostrar módulos (Comando)
 Enumera los módulos del proceso actual.
@@ -33,50 +33,50 @@ Debug.ListModules [/Address:yes|no] [/Name:yes|no] [/Order:yes|no]
 ```
 
 #### <a name="parameters"></a>Parámetros
- /Address:`yes|no`
+/Address:`yes|no`
 
- Opcional. Especifica si se muestran las direcciones de memoria de los módulos. El valor predeterminado es `yes`.
+Opcional. Especifica si se muestran las direcciones de memoria de los módulos. El valor predeterminado es `yes`.
 
- /Name:`yes|no`
+/Name:`yes|no`
 
- Opcional. Especifica si se muestran los nombres de los módulos. El valor predeterminado es `yes`.
+Opcional. Especifica si se muestran los nombres de los módulos. El valor predeterminado es `yes`.
 
- /Order:`yes|no`
+/Order:`yes|no`
 
- Opcional. Especifica si se muestra el orden de los módulos. El valor predeterminado es `no`.
+Opcional. Especifica si se muestra el orden de los módulos. El valor predeterminado es `no`.
 
- /Path:`yes|no`
+/Path:`yes|no`
 
- Opcional. Especifica si se muestran las rutas de acceso de los módulos. El valor predeterminado es `yes`.
+Opcional. Especifica si se muestran las rutas de acceso de los módulos. El valor predeterminado es `yes`.
 
- /Process:`yes|no`
+/Process:`yes|no`
 
- Opcional. Especifica si se muestran los procesos de los módulos. El valor predeterminado es `no`.
+Opcional. Especifica si se muestran los procesos de los módulos. El valor predeterminado es `no`.
 
- /SymbolFile:`yes|no`
+/SymbolFile:`yes|no`
 
- Opcional. Especifica si se muestran los archivos de símbolos de los módulos. El valor predeterminado es `no`.
+Opcional. Especifica si se muestran los archivos de símbolos de los módulos. El valor predeterminado es `no`.
 
- /SymbolStatus:`yes|no`
+/SymbolStatus:`yes|no`
 
- Opcional. Especifica si se muestran los estados de símbolos de los módulos. El valor predeterminado es `yes`.
+Opcional. Especifica si se muestran los estados de símbolos de los módulos. El valor predeterminado es `yes`.
 
- /Timestamp:`yes|no`
+/Timestamp:`yes|no`
 
- Opcional. Especifica si se muestran las marcas de tiempo de los módulos. El valor predeterminado es `no`.
+Opcional. Especifica si se muestran las marcas de tiempo de los módulos. El valor predeterminado es `no`.
 
- /Version:`yes|no`
+/Version:`yes|no`
 
- Opcional. Especifica si se muestran las versiones de los módulos. El valor predeterminado es `no`.
+Opcional. Especifica si se muestran las versiones de los módulos. El valor predeterminado es `no`.
 
 ## <a name="example"></a>Ejemplo
- En este ejemplo se enumeran los nombres de módulo, las direcciones y las marcas de tiempo del proceso actual.
+En este ejemplo se enumeran los nombres de módulo, las direcciones y las marcas de tiempo del proceso actual.
 
 ```
 Debug.ListModules /Address:yes /Name:yes /Order:no /Path:no /Process:no /SymbolFile:no /SymbolStatus:no /Timestamp:yes /Version:no
 ```
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Otras referencias
 
 - [Comandos de Visual Studio](../../ide/reference/visual-studio-commands.md)
 - [Ventana Comandos](../../ide/reference/command-window.md)

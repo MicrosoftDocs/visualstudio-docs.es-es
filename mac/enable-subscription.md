@@ -1,16 +1,16 @@
 ---
-title: Habilitación de suscripción para Visual Studio para Mac
+title: Habilitación de la suscripción
 description: En este artículo se describe cómo usar la cuenta Microsoft para habilitar la suscripción y desbloquear las características de Visual Studio para Mac.
 author: asb3993
 ms.author: amburns
 ms.date: 05/06/2018
 ms.assetid: 898DFEB8-5757-4CCE-8AD2-8BC7706F5855
-ms.openlocfilehash: 8124a5facadd209307b2c2020b852e3f8a603b90
-ms.sourcegitcommit: 7fbfb2a1d43ce72545096c635df2b04496b0be71
+ms.openlocfilehash: 862edbac114eedf42cfd799a89eb4b828d1f499a
+ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/09/2019
-ms.locfileid: "67691526"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68872112"
 ---
 # <a name="enable-subscription"></a>Habilitación de la suscripción
 

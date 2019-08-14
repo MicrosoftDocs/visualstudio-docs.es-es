@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 71a1be7841cb25cebafe951419006bb8b635093c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 6dc4bddefe0240a8e53babeec1fdce4f83ce5ef1
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62970166"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68926222"
 ---
 # <a name="list-disassembly-command"></a>Mostrar desensamblador (Comando)
 Inicia el proceso de depuración y le permite especificar cómo se deben tratar los errores.
@@ -32,31 +32,31 @@ Debug.ListDisassembly [/count:number] [/endaddress:expression]
 ```
 
 ## <a name="switches"></a>Modificadores
- Cada modificador se puede invocar mediante su forma completa o una forma abreviada.
+Cada modificador se puede invocar mediante su forma completa o una forma abreviada.
 
- /count: `number` [o] /c: `number` [o] /length: `number` [o] /l: `number`
+/count: `number` [o] /c: `number` [o] /length: `number` [o] /l: `number`
 
- Opcional. Número de instrucciones que se van a mostrar. El valor predeterminado es 8.
+Opcional. Número de instrucciones que se van a mostrar. El valor predeterminado es 8.
 
- /endaddress: `expression` [o] /e: `expression`
+/endaddress: `expression` [o] /e: `expression`
 
- Opcional. Dirección en la que se va a detener el desensamblado.
+Opcional. Dirección en la que se va a detener el desensamblado.
 
- /codebytes:`yes`&#124;`no` [o] /bytes:`yes`&#124;`no` [o] /b:`yes`&#124;`no`
+/codebytes:`yes`&#124;`no` [o] /bytes:`yes`&#124;`no` [o] /b:`yes`&#124;`no`
 
- Opcional. Indica si se deben mostrar bytes de código. El valor predeterminado es `no`.
+Opcional. Indica si se deben mostrar bytes de código. El valor predeterminado es `no`.
 
- /source:`yes`&#124;`no` [o] /s:`yes`&#124;`no`
+/source:`yes`&#124;`no` [o] /s:`yes`&#124;`no`
 
- Opcional. Indica si se debe mostrar código fuente. El valor predeterminado es `no`.
+Opcional. Indica si se debe mostrar código fuente. El valor predeterminado es `no`.
 
- /symbolnames:`yes`&#124;`no` [o] /names:`yes`&#124;`no` [o] /n:`yes`&#124;`no`
+/symbolnames:`yes`&#124;`no` [o] /names:`yes`&#124;`no` [o] /n:`yes`&#124;`no`
 
- Opcional. Indica si se deben mostrar nombres de símbolos. El valor predeterminado es `yes`.
+Opcional. Indica si se deben mostrar nombres de símbolos. El valor predeterminado es `yes`.
 
  [/linenumbers:`yes`&#124;`no`]
 
- Opcional. Permite la visualización de los números de línea asociados con el código fuente. El modificador /source debe tener un valor de `yes` para usar el modificador /linenumbers.
+Opcional. Permite la visualización de los números de línea asociados con el código fuente. El modificador /source debe tener un valor de `yes` para usar el modificador /linenumbers.
 
 ## <a name="example"></a>Ejemplo
 
@@ -64,7 +64,7 @@ Debug.ListDisassembly [/count:number] [/endaddress:expression]
 >Debug.ListDisassembly
 ```
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Otras referencias
 
 - [Mostrar pila de llamadas (Comando)](../../ide/reference/list-call-stack-command.md)
 - [Mostrar subprocesos (Comando)](../../ide/reference/list-threads-command.md)

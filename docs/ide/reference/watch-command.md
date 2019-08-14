@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a6965378151bb44db1024ac4e9a49de618f410dc
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 0ac779dc902a331a45b600113a11db5364293f74
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62789005"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68925948"
 ---
 # <a name="watch-command"></a>Inspección (Comando)
 Crea y abre una instancia especificada de una ventana **Inspección** . Puede usar una ventana **Inspección** para calcular los valores de variables, expresiones y registros, para editar estos valores y para guardar los resultados.
@@ -30,12 +30,13 @@ Debug.Watch[index]
 ```
 
 ## <a name="arguments"></a>Argumentos
- `index`
 
- Obligatorio. El número de instancia de la ventana Inspección.
+`index`\
+Obligatorio. El número de instancia de la ventana Inspección.
 
 ## <a name="remarks"></a>Comentarios
- `index` debe ser un entero. Los valores válidos son 1, 2, 3 o 4.
+
+`index` debe ser un entero. Los valores válidos son 1, 2, 3 o 4.
 
 ## <a name="example"></a>Ejemplo
 
@@ -43,7 +44,7 @@ Debug.Watch[index]
 >Debug.Watch1
 ```
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Otras referencias
 
 - [Ventanas de variables locales y automáticas](../../debugger/autos-and-locals-windows.md)
 - [Establece una inspección en Variables mediante la inspección y las ventanas de inspección rápida en Visual Studio](../../debugger/watch-and-quickwatch-windows.md)

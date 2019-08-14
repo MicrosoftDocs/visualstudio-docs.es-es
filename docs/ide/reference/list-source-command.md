@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8dcecdaa206964e6c8a5aebcadc958fe2c1ee1e5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: f162590fafaa263e9cc4233744e5f2ba39c8ce6f
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62946861"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68926179"
 ---
 # <a name="list-source-command"></a>Mostrar código fuente (Comando)
 Muestra las líneas de código fuente especificadas.
@@ -32,34 +32,34 @@ Debug.ListSource [/Count:number] [/Current] [/File:filename]
 ```
 
 ## <a name="switches"></a>Modificadores
- /Count:`number`
+/Count:`number`
 
- Opcional. Especifica el número de líneas que se van a mostrar.
+Opcional. Especifica el número de líneas que se van a mostrar.
 
- /Current
+/Current
 
- Opcional. Muestra la línea actual.
+Opcional. Muestra la línea actual.
 
- /File:`filename`
+/File:`filename`
 
- Opcional. Ruta de acceso del archivo que se va a mostrar. Si no se especifica ningún nombre de archivo, el comando muestra el código fuente para la línea de la instrucción actual.
+Opcional. Ruta de acceso del archivo que se va a mostrar. Si no se especifica ningún nombre de archivo, el comando muestra el código fuente para la línea de la instrucción actual.
 
- /Line:`number`
+/Line:`number`
 
- Opcional. Muestra un número de línea concreto.
+Opcional. Muestra un número de línea concreto.
 
- /ShowLineNumbers:`yes|no`
+/ShowLineNumbers:`yes|no`
 
- Opcional. Especifica si se mostrarán o no los números de línea.
+Opcional. Especifica si se mostrarán o no los números de línea.
 
 ## <a name="example"></a>Ejemplo
- En este ejemplo se muestra el código fuente desde la línea 4 del archivo Form1.vb, con los números de línea visibles.
+En este ejemplo se muestra el código fuente desde la línea 4 del archivo Form1.vb, con los números de línea visibles.
 
 ```
 Debug.ListSource /File:"C:\Visual Studio Projects\Form1.vb" /Line:4 /ShowLineNumbers:yes
 ```
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Otras referencias
 
 - [Comandos de Visual Studio](../../ide/reference/visual-studio-commands.md)
 - [Ventana Comandos](../../ide/reference/command-window.md)

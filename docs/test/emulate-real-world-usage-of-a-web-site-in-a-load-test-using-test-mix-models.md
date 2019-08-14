@@ -9,12 +9,12 @@ ms.assetid: b7fae849-0538-40d1-ab35-2bb3a0fe4393
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 1c946fa81c46af38daac469e0de7a00abafb3394
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: 167dc55e5df18033a9bf16e8aa66e37db9fc6fea
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65461582"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68918338"
 ---
 # <a name="test-mix-models-overview"></a>Información general sobre los modelos de combinación de pruebas
 
@@ -52,7 +52,7 @@ Para cada prueba de la combinación, puede especificar un porcentaje que determi
 Si utiliza estos valores, la siguiente prueba que se inicia se basa en los porcentajes asignados. Para ello no se tiene en cuenta el número de usuarios virtuales que ejecutan actualmente cada prueba.
 
 ### <a name="PercentageBasedonVirtualUsers"></a> Porcentaje basado en los usuarios virtuales
- Este modelo de combinación de pruebas determina el porcentaje de usuarios virtuales que ejecutarán una prueba determinada. Si utiliza este modelo de combinación de pruebas, la siguiente prueba que se inicia no se basa sólo en los porcentajes asignados, sino también en el porcentaje de usuarios virtuales que ejecutan actualmente una determinada prueba. En cualquier punto de la prueba de carga, el número de usuarios que ejecutan una determinada prueba coincide de la forma más precisa posible con la distribución asignada.
+Este modelo de combinación de pruebas determina el porcentaje de usuarios virtuales que ejecutarán una prueba determinada. Si utiliza este modelo de combinación de pruebas, la siguiente prueba que se inicia no se basa sólo en los porcentajes asignados, sino también en el porcentaje de usuarios virtuales que ejecutan actualmente una determinada prueba. En cualquier punto de la prueba de carga, el número de usuarios que ejecutan una determinada prueba coincide de la forma más precisa posible con la distribución asignada.
 
 ### <a name="PacingTestMix"></a> Combinación de pruebas a un ritmo regulado
 
@@ -69,7 +69,7 @@ Si utiliza el modelo de combinación de pruebas a ritmo regulado, el motor de ti
 La opción **Tiempo de reflexión entre iteraciones de la prueba** no se aplica cuando se usa la combinación de pruebas a un ritmo regulado.
 
 #### <a name="apply-distribution-to-pacing-delay"></a>Aplicar distribución a intervalo de velocidad
- El valor de la propiedad **Aplicar distribución a intervalo de velocidad** en un escenario de prueba de carga se puede establecer en true o en false:
+El valor de la propiedad **Aplicar distribución a intervalo de velocidad** en un escenario de prueba de carga se puede establecer en true o en false:
 
 - **True**: El escenario aplica retrasos de distribución estadística típicos especificados por el valor de la columna **Pruebas por usuario y por hora** del cuadro de diálogo **Editar combinación de pruebas**. Para más información, consulte [Editar modelos de combinación de pruebas para especificar la probabilidad de que un usuario virtual ejecute una prueba](../test/edit-test-mix-models-to-specify-the-probability-of-a-virtual-user-running-a-test.md).
 
@@ -82,13 +82,13 @@ La opción **Tiempo de reflexión entre iteraciones de la prueba** no se aplica 
   Para obtener más información, vea [Cómo: Aplicar distribución a intervalo de velocidad en un modelo de combinación de pruebas basado en el ritmo del usuario](../test/how-to-apply-distribution-to-pacing-delay-when-using-a-user-pace-test-mix-model.md).
 
 ### <a name="SequentialOrder"></a> Orden secuencial
- Al seleccionar la opción Por orden de pruebas secuencial permite a los usuarios virtuales ejecutar todas las pruebas del escenario en el orden con que se definieron las pruebas.
+Al seleccionar la opción Por orden de pruebas secuencial permite a los usuarios virtuales ejecutar todas las pruebas del escenario en el orden con que se definieron las pruebas.
 
 ## <a name="test-iterations-property"></a>Propiedad de iteraciones de prueba
- En las propiedades de parámetros de ejecución, puede especificar un valor para la propiedad Iteraciones de prueba. Este valor es el número de iteraciones de pruebas que se ejecutan en una prueba de carga. Una vez iniciado el número especificado de iteraciones de pruebas, no se iniciará ninguna otra iteración de pruebas cualquiera que sea la configuración de los perfiles de carga. Cuando el número de iteraciones de pruebas especificado se completa, la prueba de carga finaliza. Para obtener más información, vea [Cómo: Especificar el número de iteraciones de prueba en los parámetros de ejecución de una prueba de carga](../test/how-to-specify-the-number-of-test-iterations-in-a-load-test.md).
+En las propiedades de parámetros de ejecución, puede especificar un valor para la propiedad Iteraciones de prueba. Este valor es el número de iteraciones de pruebas que se ejecutan en una prueba de carga. Una vez iniciado el número especificado de iteraciones de pruebas, no se iniciará ninguna otra iteración de pruebas cualquiera que sea la configuración de los perfiles de carga. Cuando el número de iteraciones de pruebas especificado se completa, la prueba de carga finaliza. Para obtener más información, vea [Cómo: Especificar el número de iteraciones de prueba en los parámetros de ejecución de una prueba de carga](../test/how-to-specify-the-number-of-test-iterations-in-a-load-test.md).
 
 ## <a name="initialize-and-terminate-tests"></a>Pruebas de inicialización y terminación
- Puede seleccionar pruebas que se ejecuten al principio y al final de la sesión de pruebas de carga de cada usuario virtual. Para más información, consulte [Editar modelos de combinación de pruebas para especificar la probabilidad de que un usuario virtual ejecute una prueba](../test/edit-test-mix-models-to-specify-the-probability-of-a-virtual-user-running-a-test.md).
+Puede seleccionar pruebas que se ejecuten al principio y al final de la sesión de pruebas de carga de cada usuario virtual. Para más información, consulte [Editar modelos de combinación de pruebas para especificar la probabilidad de que un usuario virtual ejecute una prueba](../test/edit-test-mix-models-to-specify-the-probability-of-a-virtual-user-running-a-test.md).
 
 - **Prueba de inicialización**. Cada usuario virtual ejecuta esta prueba antes que cualquier otra prueba de la combinación.
 
