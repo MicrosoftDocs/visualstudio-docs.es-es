@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c111c3a3b1c97a75d97baa625438052fbcae5a98
-ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.openlocfilehash: bbc53a1582a2a4f76de2ea402544137405f5d9f3
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66746382"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68926146"
 ---
 # <a name="references-page-project-designer-visual-basic"></a>Página Referencias, Diseñador de proyectos (Visual Basic)
 
@@ -46,41 +46,41 @@ Haga clic en este botón para tener acceso al cuadro de diálogo **Rutas de acce
 
  **Referencias**
 
- Esta lista muestra todas las referencias del proyecto, usadas o sin usar.
+Esta lista muestra todas las referencias del proyecto, usadas o sin usar.
 
  **Add**
 
- Haga clic en este botón para agregar una referencia o una referencia web a la lista **Referencias**.
+Haga clic en este botón para agregar una referencia o una referencia web a la lista **Referencias**.
 
- Pulse **Referencia** para agregar una referencia a su proyecto con el cuadro de diálogo Agregar referencia.
+Pulse **Referencia** para agregar una referencia a su proyecto con el cuadro de diálogo Agregar referencia.
 
- Elija **Referencia web** para agregar una referencia web a su proyecto con el cuadro de diálogo **Agregar referencia web**.
+Elija **Referencia web** para agregar una referencia web a su proyecto con el cuadro de diálogo **Agregar referencia web**.
 
  **Remove**
 
- Seleccione una o más referencias en la lista **Referencias**, después, haga clic en este botón para eliminarlas.
+Seleccione una o más referencias en la lista **Referencias**, después, haga clic en este botón para eliminarlas.
 
  **Actualizar referencia web**
 
- Seleccione una referencia web en la lista **Referencias** y haga clic en este botón para actualizarla.
+Seleccione una referencia web en la lista **Referencias** y haga clic en este botón para actualizarla.
 
  **Espacios de nombres importados**
 
- Puede escribir su propio espacio de nombres en este cuadro y hacer clic en **Agregar importación del usuario** para agregarlo a la lista de espacios de nombres.
+Puede escribir su propio espacio de nombres en este cuadro y hacer clic en **Agregar importación del usuario** para agregarlo a la lista de espacios de nombres.
 
- Puede crear alias para los espacios de nombres importados por el usuario. Para realizar esto, escriba el alias y el espacio de nombres en el formato *alias*=*espacio de nombres*. Esto es útil si está usando espacios de nombres largos, por ejemplo: `Http= MyOrg.ObjectLib.Internet.WebRequestMethods.Http`.
+Puede crear alias para los espacios de nombres importados por el usuario. Para realizar esto, escriba el alias y el espacio de nombres en el formato *alias*=*espacio de nombres*. Esto es útil si está usando espacios de nombres largos, por ejemplo: `Http= MyOrg.ObjectLib.Internet.WebRequestMethods.Http`.
 
  **Agregar importación del usuario**
 
- Haga clic en este botón para agregar el espacio de nombres especificado en el cuadro **Espacios de nombres importados** a la lista de espacios de nombres importados. El botón solo está activo si el espacio de nombres especificado todavía no está en la lista.
+Haga clic en este botón para agregar el espacio de nombres especificado en el cuadro **Espacios de nombres importados** a la lista de espacios de nombres importados. El botón solo está activo si el espacio de nombres especificado todavía no está en la lista.
 
  **Lista de espacios de nombres**
 
- Esta lista muestra todos los espacios de nombres disponibles. Las casillas de los espacios de nombres incluidas en el proyecto están seleccionadas.
+Esta lista muestra todos los espacios de nombres disponibles. Las casillas de los espacios de nombres incluidas en el proyecto están seleccionadas.
 
  **Actualizar importación del usuario**
 
- Seleccione un espacio de nombres especificado por el usuario en la lista de espacios de nombres, escriba el nombre por el que quiere reemplazarlo en el cuadro **Espacios de nombres importados** y, después, haga clic en este botón para cambiar al nuevo espacio de nombres. El botón está activo solo si el espacio de nombres seleccionado es uno que ha agregado a la lista con el botón **Agregar importación del usuario**. Puede agregar:
+Seleccione un espacio de nombres especificado por el usuario en la lista de espacios de nombres, escriba el nombre por el que quiere reemplazarlo en el cuadro **Espacios de nombres importados** y, después, haga clic en este botón para cambiar al nuevo espacio de nombres. El botón está activo solo si el espacio de nombres seleccionado es uno que ha agregado a la lista con el botón **Agregar importación del usuario**. Puede agregar:
 
 - Clases o espacios de nombres, como <xref:System.Math?displayProperty=fullName>.
 
@@ -88,7 +88,7 @@ Haga clic en este botón para tener acceso al cuadro de diálogo **Rutas de acce
 
 - Espacios de nombres XML, como `<xmlns:xsl="http://www.w3.org/1999/XSL/Transform">`.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Otras referencias
 
 - [Administrar referencias en un proyecto](../../ide/managing-references-in-a-project.md)
 - [Cómo: Agregar o quitar espacios de nombres importados (Visual Basic)](../../ide/how-to-add-or-remove-imported-namespaces-visual-basic.md)

@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 50b86a32cb055eded71535b84b6b09fd59f78595
-ms.sourcegitcommit: ce1ab8a25c66a83e60eab80ed8e1596fe66dd85c
+ms.openlocfilehash: 6883e556cd70adddd45fd442d338e10d1cafa1e2
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/29/2019
-ms.locfileid: "68605938"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68926191"
 ---
 # <a name="property-pages-javascript"></a>Página de propiedades, JavaScript
 
@@ -40,11 +40,11 @@ Utilice las siguientes opciones para seleccionar la configuración y la platafor
 
  **Configuración**
 
- Especifica las opciones de configuración para mostrar o modificar. Los valores son **Depurar** (valor predeterminado), **Liberar**, **Todas las configuraciones** o una configuración definida por el usuario. Para obtener más información, consulte [Instrucciones: Establecer configuraciones Debug y Release en Visual Studio](../../debugger/how-to-set-debug-and-release-configurations.md).
+Especifica las opciones de configuración para mostrar o modificar. Los valores son **Depurar** (valor predeterminado), **Liberar**, **Todas las configuraciones** o una configuración definida por el usuario. Para obtener más información, vea [Cómo: Establecer configuraciones Debug y Release en Visual Studio](../../debugger/how-to-set-debug-and-release-configurations.md).
 
  **Plataforma**
 
- Especifica la configuración de plataforma para mostrar o modificar. Los valores son **Cualquier CPU** (valor predeterminado para aplicaciones [!INCLUDE[win8_appname_long](../../debugger/includes/win8_appname_long_md.md)]), **x64**, **ARM**, **x86** o una plataforma definida por el usuario. Para obtener más información, consulte [Instrucciones: Establecer configuraciones Debug y Release en Visual Studio](../../debugger/how-to-set-debug-and-release-configurations.md).
+Especifica la configuración de plataforma para mostrar o modificar. Los valores son **Cualquier CPU** (valor predeterminado para aplicaciones [!INCLUDE[win8_appname_long](../../debugger/includes/win8_appname_long_md.md)]), **x64**, **ARM**, **x86** o una plataforma definida por el usuario. Para obtener más información, vea [Cómo: Establecer configuraciones Debug y Release en Visual Studio](../../debugger/how-to-set-debug-and-release-configurations.md).
 
 ## <a name="general-page"></a>Página general
 
@@ -55,13 +55,13 @@ Utilice las siguientes opciones para establecer las propiedades generales del pr
 
  **Ruta de acceso de salida**
 
- Especifica la ubicación de los archivos de salida para la configuración del proyecto. La ruta de acceso es relativa. Si escribe una ruta de acceso absoluta, se guarda la ruta de acceso absoluta en el proyecto. La ruta de acceso predeterminada es bin\Debug.
+Especifica la ubicación de los archivos de salida para la configuración del proyecto. La ruta de acceso es relativa. Si escribe una ruta de acceso absoluta, se guarda la ruta de acceso absoluta en el proyecto. La ruta de acceso predeterminada es bin\Debug.
 
- Cuando utiliza las configuraciones de compilación simplificadas, el sistema del proyecto determina si se debe generar una depuración o versión de lanzamiento. Al hacer clic en **Depurar**,  > **Iniciar depuración** (o presionar **F5**), la compilación se coloca en la ubicación de depuración sin tener en cuenta la **ruta de acceso de salida** que especifique. En cambio, el comando **Compilar solución** en el menú **Compilar** la coloca en la ubicación que especifique. Para habilitar configuraciones de compilación avanzadas, en la barra de menús, elija **Herramientas** > **Opciones**. En el cuadro de diálogo **Opciones**, expanda **Proyectos y soluciones**, seleccione **General** y, después, desactive la casilla **Mostrar configuraciones de compilación avanzadas**. Esta opción permite controlar manualmente todos los valores de configuración y si se crea una versión de depuración o lanzamiento.
+Cuando utiliza las configuraciones de compilación simplificadas, el sistema del proyecto determina si se debe generar una depuración o versión de lanzamiento. Al hacer clic en **Depurar**,  > **Iniciar depuración** (o presionar **F5**), la compilación se coloca en la ubicación de depuración sin tener en cuenta la **ruta de acceso de salida** que especifique. En cambio, el comando **Compilar solución** en el menú **Compilar** la coloca en la ubicación que especifique. Para habilitar configuraciones de compilación avanzadas, en la barra de menús, elija **Herramientas** > **Opciones**. En el cuadro de diálogo **Opciones**, expanda **Proyectos y soluciones**, seleccione **General** y, después, desactive la casilla **Mostrar configuraciones de compilación avanzadas**. Esta opción permite controlar manualmente todos los valores de configuración y si se crea una versión de depuración o lanzamiento.
 
  **Idioma predeterminado**
 
- Especifica el idioma predeterminado del proyecto. La opción de idioma seleccionada en el Panel de control **Reloj, idioma y región** especifica el idioma preferido del usuario. Al especificar un idioma predeterminado para el proyecto, se asegura de que se usan los recursos de idioma predeterminados especificados si el idioma preferido del usuario no coincide con los recursos de idioma proporcionados en la aplicación.
+Especifica el idioma predeterminado del proyecto. La opción de idioma seleccionada en el Panel de control **Reloj, idioma y región** especifica el idioma preferido del usuario. Al especificar un idioma predeterminado para el proyecto, se asegura de que se usan los recursos de idioma predeterminados especificados si el idioma preferido del usuario no coincide con los recursos de idioma proporcionados en la aplicación.
 
 ## <a name="debug-page"></a>Página de depuración
 
@@ -72,7 +72,7 @@ Utilice las siguientes opciones para establecer las propiedades para depurar el 
 
  **Depurador para iniciar**
 
- Especifica el host predeterminado para el depurador.
+Especifica el host predeterminado para el depurador.
 
 - Seleccione **Equipo Local** para iniciar la aplicación en el equipo host de Visual Studio. Para obtener más información, vea [Ejecutar aplicaciones en el equipo local](../../debugger/start-a-debugging-session-for-a-store-app-in-visual-studio-vb-csharp-cpp-and-xaml.md).
 

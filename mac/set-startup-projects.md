@@ -1,5 +1,5 @@
 ---
-title: Establecimiento de varios proyectos de inicio en Visual Studio para Mac
+title: Establecimiento de varios proyectos de inicio
 description: En este artículo se describe cómo configurar varios proyectos para que se inicien al ejecutar o depurar.
 author: sayedihashimi
 ms.author: sayedha
@@ -7,12 +7,12 @@ ms.date: 02/21/2019
 ms.topic: conceptual
 ms.prod: visual-studio-mac
 ms.assetid: fd354fff-ce6b-4505-a815-84a2311e39ba
-ms.openlocfilehash: cd76eaf30dd0151216a503bbaf1d76414ed56eef
-ms.sourcegitcommit: 9753c7544cec852ca5efd0834e0956d9e53a5734
+ms.openlocfilehash: 3c7c3e00615463ba657ad93022f60ca856e026d6
+ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "67043491"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68872376"
 ---
 # <a name="set-multiple-startup-projects"></a>Establecimiento de varios proyectos de inicio
 
