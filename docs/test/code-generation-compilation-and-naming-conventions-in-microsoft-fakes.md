@@ -7,12 +7,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 554fe9c8d8f30c13f667566a76349e237f5ddb0f
-ms.sourcegitcommit: ba5e072c9fedeff625a1332f22dcf3644d019f51
+ms.openlocfilehash: d9d60db348be719c4fa45243d22ca6b617b72407
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/31/2019
-ms.locfileid: "66432292"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68918463"
 ---
 # <a name="code-generation-compilation-and-naming-conventions-in-microsoft-fakes"></a>Generación de código, compilación y convenciones de nomenclatura en Microsoft Fakes
 
@@ -110,9 +110,9 @@ El generador de código de Fakes genera tipos de correcciones de compatibilidad 
 [assembly: InternalsVisibleTo("FileSystem.Tests")]
 ```
 
- **Tipos internos de ensamblados con nombre seguro**
+**Tipos internos de ensamblados con nombre seguro**
 
- Si el ensamblado corregido para compatibilidad tiene un nombre seguro y desea acceder a los tipos internos del ensamblado:
+Si el ensamblado corregido para compatibilidad tiene un nombre seguro y desea acceder a los tipos internos del ensamblado:
 
 - El ensamblado de prueba y el ensamblado de Fakes deben tener un nombre seguro.
 
@@ -179,11 +179,11 @@ En los proyectos de prueba unitaria, agregue una referencia a los ensamblados de
 
 En un entorno de Team Build, todos los resultados de la compilación se combinan en un solo directorio. Si varios proyectos utilizan Fakes, podría darse que los ensamblados de Fakes de una versión diferente se reemplacen entre sí. Por ejemplo, tanto TestProject1 fakes *mscorlib.dll* de .NET Framework 2.0 como TestProject2 fakes *mscorlib.dll* para .NET Framework 4 generarían un ensamblado de Fakes *mscorlib.Fakes.dll*.
 
- Para evitar este problema, Fakes debe crear automáticamente nombres de ensamblado de Fakes cualificados para la versión para las referencias que no son del proyecto al agregar los archivos *.fakes*. Un nombre de ensamblado de Fakes cualificado para la versión inserta un número de versión cuando se crea el nombre del ensamblado de Fakes:
+Para evitar este problema, Fakes debe crear automáticamente nombres de ensamblado de Fakes cualificados para la versión para las referencias que no son del proyecto al agregar los archivos *.fakes*. Un nombre de ensamblado de Fakes cualificado para la versión inserta un número de versión cuando se crea el nombre del ensamblado de Fakes:
 
- Dado un ensamblado MyAssembly y una versión 1.2.3.4, el nombre del ensamblado de Fakes es MyAssembly.1.2.3.4.Fakes.
+Dado un ensamblado MyAssembly y una versión 1.2.3.4, el nombre del ensamblado de Fakes es MyAssembly.1.2.3.4.Fakes.
 
- Puede cambiar o quitar esta versión modificando el atributo Version del elemento Assembly en el archivo *.fakes*:
+Puede cambiar o quitar esta versión modificando el atributo Version del elemento Assembly en el archivo *.fakes*:
 
 ```xml
 attribute of the Assembly element in the .fakes:
@@ -197,7 +197,7 @@ attribute of the Assembly element in the .fakes:
 
 ### <a name="shim-type-and-stub-type-naming-conventions"></a>Convenciones de nomenclatura del tipo de correcciones de compatibilidad (shim) y del tipo de stub
 
- **Espacios de nombres**
+**Espacios de nombres**
 
 - El sufijo .fakes se agrega al espacio de nombres.
 

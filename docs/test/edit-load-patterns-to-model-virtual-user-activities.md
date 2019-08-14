@@ -10,12 +10,12 @@ ms.assetid: 0ba0363b-7f50-4bde-a919-0e3bce7bc115
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 299cca5249872b1be7f20cf4fca8c0dcd563794c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 5459f1b82dd83905f2672d198f503a741778287b
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62784251"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68926533"
 ---
 # <a name="edit-load-patterns-to-model-virtual-user-activities"></a>Editar los modelos de carga para modelar las actividades de usuarios virtuales
 
@@ -32,36 +32,36 @@ El modelo de carga es un componente de un escenario. Los escenarios, junto con s
 
 ### <a name="constant"></a>Constante
 
- El modelo de carga constante se utiliza para especificar una carga de usuarios que no cambia durante la prueba de carga. Por ejemplo, cuando ejecuta una prueba de humo en una aplicación web, tal vez desee establecer una carga constante y ligera de 10 usuarios.
+El modelo de carga constante se utiliza para especificar una carga de usuarios que no cambia durante la prueba de carga. Por ejemplo, cuando ejecuta una prueba de humo en una aplicación web, tal vez desee establecer una carga constante y ligera de 10 usuarios.
 
 #### <a name="constant-load-pattern-considerations"></a>Consideraciones sobre el modelo de carga constante
 
- Los modelos de carga constante se usan para ejecutar la misma carga de usuario durante la ejecución de una prueba de carga. Tenga cuidado cuando use un modelo de carga constante con un recuento de usuarios elevado porque se puede hacer una demanda irrazonable y poco realista al servidor o servidores de prueba de carga. Por ejemplo, si la prueba de carga contiene una prueba web que comienza con la solicitud de una página principal y configura la prueba con una carga constante de 1000 usuarios, se enviarán las 1000 primeras solicitudes a la página principal lo más rápidamente posible. Esta puede no ser una simulación realista de acceso al sitio web. Para mitigarlo, considere el uso de un modelo de carga por pasos que aumenta gradualmente a 1000 usuarios o especifique un período de preparación en los parámetros de ejecución de la prueba de carga. Si se especifica un período de preparación, la prueba de carga aumentará gradualmente la carga durante dicho período de forma automática. Para más información, consulte [Configurar el retraso de la hora de inicio del escenario](../test/configure-scenario-start-delays.md).
+Los modelos de carga constante se usan para ejecutar la misma carga de usuario durante la ejecución de una prueba de carga. Tenga cuidado cuando use un modelo de carga constante con un recuento de usuarios elevado porque se puede hacer una demanda irrazonable y poco realista al servidor o servidores de prueba de carga. Por ejemplo, si la prueba de carga contiene una prueba web que comienza con la solicitud de una página principal y configura la prueba con una carga constante de 1000 usuarios, se enviarán las 1000 primeras solicitudes a la página principal lo más rápidamente posible. Esta puede no ser una simulación realista de acceso al sitio web. Para mitigarlo, considere el uso de un modelo de carga por pasos que aumenta gradualmente a 1000 usuarios o especifique un período de preparación en los parámetros de ejecución de la prueba de carga. Si se especifica un período de preparación, la prueba de carga aumentará gradualmente la carga durante dicho período de forma automática. Para más información, consulte [Configurar el retraso de la hora de inicio del escenario](../test/configure-scenario-start-delays.md).
 
 ### <a name="step"></a>Paso
 
- El modelo de carga de pasos se utiliza para especificar una carga de usuarios que aumenta en el tiempo hasta una carga de usuarios máxima definida. Para incrementar las cargas paso a paso, especifique **Recuento inicial de usuarios**, **Recuento máximo de usuarios**, **Duración del paso (segundos)** y **Recuento de usuarios por pasos**.
+El modelo de carga de pasos se utiliza para especificar una carga de usuarios que aumenta en el tiempo hasta una carga de usuarios máxima definida. Para incrementar las cargas paso a paso, especifique **Recuento inicial de usuarios**, **Recuento máximo de usuarios**, **Duración del paso (segundos)** y **Recuento de usuarios por pasos**.
 
- Por ejemplo, una carga por pasos con un **Recuento inicial de usuarios** de uno, un **Recuento máximo de usuarios** de 100, una **Duración del paso (segundos)** de 10 y un **Recuento de usuarios por pasos** de 1 crea un modelo de carga de usuarios que empieza en 1 y se incrementa en 1 cada 10 segundos hasta que se llega a 100 usuarios.
+Por ejemplo, una carga por pasos con un **Recuento inicial de usuarios** de uno, un **Recuento máximo de usuarios** de 100, una **Duración del paso (segundos)** de 10 y un **Recuento de usuarios por pasos** de 1 crea un modelo de carga de usuarios que empieza en 1 y se incrementa en 1 cada 10 segundos hasta que se llega a 100 usuarios.
 
 > [!NOTE]
 > Si la duración total de la prueba es inferior al tiempo necesario para llegar paso a paso a la carga máxima de usuarios, la prueba se detiene cuando se agota la duración y no alcanza el objetivo de **Recuento máximo de usuarios**.
 
- Puede utilizar el objetivo por pasos para aumentar la carga hasta que el servidor llegue a un punto en que el rendimiento disminuye de manera considerable. A medida que aumente la carga, el servidor se quedará finalmente sin recursos. La carga por pasos resulta una buena forma de determinar el número de usuarios con el que esto ocurre. Con la carga por pasos, también tiene que supervisar atentamente los recursos de agente para asegurarse de que los agentes pueden generar la carga deseada.
+Puede utilizar el objetivo por pasos para aumentar la carga hasta que el servidor llegue a un punto en que el rendimiento disminuye de manera considerable. A medida que aumente la carga, el servidor se quedará finalmente sin recursos. La carga por pasos resulta una buena forma de determinar el número de usuarios con el que esto ocurre. Con la carga por pasos, también tiene que supervisar atentamente los recursos de agente para asegurarse de que los agentes pueden generar la carga deseada.
 
- Por lo general, debe efectuar varias ejecuciones con pasos de distinta duración y diferentes recuentos de usuarios por paso para obtener buenas medidas para una carga determinada. Es frecuente que las cargas muestren un pico inicial en cada paso cuando se agrega a los usuarios. Mantener la carga en esa tasa le permite medir el rendimiento del sistema cuando éste se recupere del pico inicial.
+Por lo general, debe efectuar varias ejecuciones con pasos de distinta duración y diferentes recuentos de usuarios por paso para obtener buenas medidas para una carga determinada. Es frecuente que las cargas muestren un pico inicial en cada paso cuando se agrega a los usuarios. Mantener la carga en esa tasa le permite medir el rendimiento del sistema cuando éste se recupere del pico inicial.
 
 #### <a name="step-load-pattern-considerations"></a>Consideraciones sobre el modelo de carga por pasos
 
- Se puede usar un modelo de carga de pasos para aumentar la carga en el servidor o los servidores mientras se ejecuta la prueba de carga, de forma que se vea cómo varía el rendimiento a medida que aumenta la carga de usuarios. Por ejemplo, para observar el rendimiento del servidor o servidores cuando aumenta la carga de usuarios a 2000, ejecute una prueba de carga de 10 horas utilizando un modelo de carga de pasos con las siguientes propiedades:
+Se puede usar un modelo de carga de pasos para aumentar la carga en el servidor o los servidores mientras se ejecuta la prueba de carga, de forma que se vea cómo varía el rendimiento a medida que aumenta la carga de usuarios. Por ejemplo, para observar el rendimiento del servidor o servidores cuando aumenta la carga de usuarios a 2000, ejecute una prueba de carga de 10 horas utilizando un modelo de carga de pasos con las siguientes propiedades:
 
 - **Recuento inicial de usuarios**: 100
 
 - **Recuento máximo de usuarios**: 2000
 
-- **Duración del paso (segundos)**: 1800
+- **Duración del paso (segundos)** : 1800
 
-- **Tiempo de rampa de paso (segundos)**: 20
+- **Tiempo de rampa de paso (segundos)** : 20
 
 - **Recuento de usuarios por pasos**: 100
 
@@ -69,7 +69,7 @@ El modelo de carga es un componente de un escenario. Los escenarios, junto con s
 
 ### <a name="goal-based"></a>Basado en objetivos
 
- Un modelo de carga basado en objetivos se parece al modelo de pasos, pero ajusta la carga de usuarios en función de umbrales del contador de rendimiento frente a ajustes periódicos de la carga de usuarios. Las cargas basadas en objetivos son útiles para una serie de propósitos diferentes:
+Un modelo de carga basado en objetivos se parece al modelo de pasos, pero ajusta la carga de usuarios en función de umbrales del contador de rendimiento frente a ajustes periódicos de la carga de usuarios. Las cargas basadas en objetivos son útiles para una serie de propósitos diferentes:
 
 - Maximizar el resultado de los agentes: mida la métrica limitadora de claves en el agente para maximizar el resultado de los agentes. Normalmente, es la CPU; sin embargo, también podría ser la memoria.
 
@@ -93,17 +93,17 @@ El modelo de carga es un componente de un escenario. Los escenarios, junto con s
 |Límites de recuento de usuarios|Incremento del recuento máximo de usuarios|5|
 |Límites de recuento de usuarios|Recuento mínimo de usuarios|1|
 
- Esta configuración hace que el **Analizador de pruebas de carga** ajuste la carga de usuarios entre 1 y 100 durante una ejecución de prueba de tal forma que el **Contador** de `% Processor Time` de WebServer01 oscile entre `70%` y `90%.`.
+Esta configuración hace que el **Analizador de pruebas de carga** ajuste la carga de usuarios entre 1 y 100 durante una ejecución de prueba de tal forma que el **Contador** de `% Processor Time` de WebServer01 oscile entre `70%` y `90%.`.
 
- El tamaño de cada ajuste de la carga de usuarios se determina mediante los valores de **Incremento del recuento máximo de usuarios** y **Disminución del recuento máximo de usuarios**. Los límites de recuento de usuarios se establecen mediante las propiedades **Recuento máximo de usuarios** y **Recuento mínimo de usuarios**.
+El tamaño de cada ajuste de la carga de usuarios se determina mediante los valores de **Incremento del recuento máximo de usuarios** y **Disminución del recuento máximo de usuarios**. Los límites de recuento de usuarios se establecen mediante las propiedades **Recuento máximo de usuarios** y **Recuento mínimo de usuarios**.
 
 #### <a name="goal-based-load-pattern-considerations"></a>Consideraciones sobre el modelo de carga basado en objetivos
 
- Un modelo de carga basado en objetivos es útil cuando se desea determinar el número de usuarios que el sistema puede admitir antes de llegar a un nivel de utilización de servicios. Esta opción funciona mejor cuando ya se ha identificado el recurso que limita en el sistema (es decir, el cuello de botella).
+Un modelo de carga basado en objetivos es útil cuando se desea determinar el número de usuarios que el sistema puede admitir antes de llegar a un nivel de utilización de servicios. Esta opción funciona mejor cuando ya se ha identificado el recurso que limita en el sistema (es decir, el cuello de botella).
 
- Por ejemplo, suponga que sabe que el recurso que límite el sistema es la CPU del servidor de bases de datos, y desea ver cuántos usuarios se admiten cuando la CPU está ocupada al 75% aproximadamente. Puede utilizar un modelo de carga basado en objetivos con el fin de mantener el valor "% tiempo de procesador" del contador de rendimiento entre el 70 y el 80 por ciento.
+Por ejemplo, suponga que sabe que el recurso que límite el sistema es la CPU del servidor de bases de datos, y desea ver cuántos usuarios se admiten cuando la CPU está ocupada al 75% aproximadamente. Puede utilizar un modelo de carga basado en objetivos con el fin de mantener el valor "% tiempo de procesador" del contador de rendimiento entre el 70 y el 80 por ciento.
 
- Un aspecto que hay que controlar es si algún otro recurso está limitando el rendimiento del sistema. Dichos recursos pueden hacer que el objetivo especificado por el modelo de carga nunca se alcance. Asimismo, la carga de usuario sigue subiendo hasta alcanzar el valor especificado en **Recuento máximo de usuarios**. Esta no es normalmente la carga deseada, de modo que hay que tener cuidado sobre la opción del contador de rendimiento en el modelo de carga basado en objetivos.
+Un aspecto que hay que controlar es si algún otro recurso está limitando el rendimiento del sistema. Dichos recursos pueden hacer que el objetivo especificado por el modelo de carga nunca se alcance. Asimismo, la carga de usuario sigue subiendo hasta alcanzar el valor especificado en **Recuento máximo de usuarios**. Esta no es normalmente la carga deseada, de modo que hay que tener cuidado sobre la opción del contador de rendimiento en el modelo de carga basado en objetivos.
 
 ## <a name="tasks"></a>Tareas
 
@@ -116,12 +116,12 @@ El modelo de carga es un componente de un escenario. Los escenarios, junto con s
 
 ## <a name="change-the-load-pattern"></a>Cambio del modelo de carga
 
- Después de crear la prueba de carga con el **Asistente para prueba de carga nueva**, puede usar el **Editor de pruebas de carga** para cambiar las propiedades del modelo de carga asociadas a un escenario a niveles en los que se cumplan los objetivos de la prueba.
+Después de crear la prueba de carga con el **Asistente para prueba de carga nueva**, puede usar el **Editor de pruebas de carga** para cambiar las propiedades del modelo de carga asociadas a un escenario a niveles en los que se cumplan los objetivos de la prueba.
 
 > [!NOTE]
 > Para obtener una lista completa de las propiedades de los escenarios de pruebas de carga y sus descripciones, consulte [Propiedades de los escenarios de prueba de carga](../test/load-test-scenario-properties.md).
 
- Un modelo de carga especifica el número de usuarios virtuales activos durante una prueba de carga y la velocidad con que se agregan nuevos usuarios. Puede elegir entre las tres tramas disponibles: la de pasos, la constante y la basada en objetivos. Para más información, consulte [Specify the number of virtual users with load patterns in a load test scenario](../test/edit-load-patterns-to-model-virtual-user-activities.md) (Especificar el número de usuarios virtuales con modelos de carga en un escenario de prueba de carga).
+Un modelo de carga especifica el número de usuarios virtuales activos durante una prueba de carga y la velocidad con que se agregan nuevos usuarios. Puede elegir entre las tres tramas disponibles: la de pasos, la constante y la basada en objetivos. Para más información, consulte [Specify the number of virtual users with load patterns in a load test scenario](../test/edit-load-patterns-to-model-virtual-user-activities.md) (Especificar el número de usuarios virtuales con modelos de carga en un escenario de prueba de carga).
 
 > [!NOTE]
 > También puede cambiar las propiedades de carga mediante programación usando un complemento de prueba de carga. Para obtener más información, vea [Cómo: Crear un complemento de prueba de carga](../test/how-to-create-a-load-test-plug-in.md).

@@ -11,12 +11,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ea4d559921fc7cf387116d013906891c74a4ed8c
-ms.sourcegitcommit: 90c3187d804ad7544367829d07ed4b47d3f8a72d
+ms.openlocfilehash: 5828fb114a4df559c46dd6ae7f64887ab48e7429
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/06/2019
-ms.locfileid: "68822352"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68919521"
 ---
 # <a name="accessibility-tips-and-tricks-for-visual-studio"></a>Sugerencias y trucos de accesibilidad de Visual Studio
 
@@ -29,7 +29,7 @@ También se indica cómo usar anotaciones para revelar información útil sobre 
 
 ## <a name="save-your-ide-settings"></a>Guardar la configuración del IDE
 
- Puede personalizar la experiencia del IDE si guarda el diseño de ventanas, el esquema de asignación de teclado y otras preferencias. Para más información, vea [Personalizar el IDE de Visual Studio](../../ide/personalizing-the-visual-studio-ide.md).
+Puede personalizar la experiencia del IDE si guarda el diseño de ventanas, el esquema de asignación de teclado y otras preferencias. Para más información, vea [Personalizar el IDE de Visual Studio](../../ide/personalizing-the-visual-studio-ide.md).
 
 ## <a name="modify-your-ide-for-high-contrast-viewing"></a>Modificar el IDE para la visualización de alto contraste
 

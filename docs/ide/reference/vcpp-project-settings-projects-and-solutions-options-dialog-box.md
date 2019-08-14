@@ -18,12 +18,12 @@ ms.author: corob
 manager: markl
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9410806cbb2fa7fc5579fc7c63cee8a6bed56f79
-ms.sourcegitcommit: 85d66dc9fea3fa49018263064876b15aeb6f9584
+ms.openlocfilehash: c7acd0d8f9c6d15f9f20c42f59c3bd5562884ac3
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68461559"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68918884"
 ---
 # <a name="vc-project-settings-projects-and-solutions-options-dialog-box"></a>Configuración de proyecto de VC++, Proyectos y soluciones, Opciones (Cuadro de diálogo)
 
@@ -49,11 +49,11 @@ Este cuadro de diálogo le permite definir la configuración del proyecto y la c
 
  **Sí**
 
- Muestra las variables de entorno en el archivo de registro de compilación. Esta opción especifica que se muestren todas las variables de entorno en el archivo de registro de compilación durante las compilaciones de proyectos de C++.
+Muestra las variables de entorno en el archivo de registro de compilación. Esta opción especifica que se muestren todas las variables de entorno en el archivo de registro de compilación durante las compilaciones de proyectos de C++.
 
  **No**
 
- Las variables de entorno se excluyen del archivo de registro de compilación.
+Las variables de entorno se excluyen del archivo de registro de compilación.
 
 ## <a name="build-timing"></a>Tiempo de compilación
 
@@ -63,7 +63,7 @@ Este cuadro de diálogo le permite definir la configuración del proyecto y la c
 
  **No**
 
- Desactiva el registro de compilación.
+Desactiva el registro de compilación.
 
 ## <a name="maximum-concurrent-c-compilations"></a>Máximo de compilaciones de C++ concurrentes
 

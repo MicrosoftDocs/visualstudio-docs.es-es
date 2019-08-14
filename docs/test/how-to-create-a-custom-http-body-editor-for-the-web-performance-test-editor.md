@@ -8,12 +8,12 @@ ms.assetid: a0b2d8ff-3e2a-487e-9172-90047174f336
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 624d06dd44812269bcff1e67cf048fbb077e90ea
-ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.openlocfilehash: 30ce24b0cb48e88ddb77cf3576d40f95ed022ba0
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66745826"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68926521"
 ---
 # <a name="how-to-create-a-custom-http-body-editor-for-the-web-performance-test-editor"></a>Procedimiento para crear un editor de cuerpo HTTP personalizado para el Editor de pruebas de rendimiento web
 
@@ -117,9 +117,9 @@ Se crea una instancia del <xref:System.Windows.Forms.UserControl> MessageEditorC
 private MessageEditorControl messageEditorControl
 ```
 
- La instancia de messageEditorControl se hospeda dentro del cuadro de diálogo de complemento creado por el método <xref:Microsoft.VisualStudio.TestTools.WebTesting.IStringHttpBodyEditorPlugin.CreateEditor*>. Además, el <xref:System.Windows.Forms.RichTextBox> de messageEditorControl se rellena con el contenido de <xref:Microsoft.VisualStudio.TestTools.WebTesting.IHttpBody>. Sin embargo, la creación del complemento no se puede producir a menos que <xref:Microsoft.VisualStudio.TestTools.WebTesting.IStringHttpBodyEditorPlugin.SupportsContentType*> devuelva `true`. En el caso de este editor, <xref:Microsoft.VisualStudio.TestTools.WebTesting.IStringHttpBodyEditorPlugin.SupportsContentType*> devuelve `true` si <xref:Microsoft.VisualStudio.TestTools.WebTesting.IHttpBody.ContentType*> en <xref:Microsoft.VisualStudio.TestTools.WebTesting.IHttpBody> contiene "xml".
+La instancia de messageEditorControl se hospeda dentro del cuadro de diálogo de complemento creado por el método <xref:Microsoft.VisualStudio.TestTools.WebTesting.IStringHttpBodyEditorPlugin.CreateEditor*>. Además, el <xref:System.Windows.Forms.RichTextBox> de messageEditorControl se rellena con el contenido de <xref:Microsoft.VisualStudio.TestTools.WebTesting.IHttpBody>. Sin embargo, la creación del complemento no se puede producir a menos que <xref:Microsoft.VisualStudio.TestTools.WebTesting.IStringHttpBodyEditorPlugin.SupportsContentType*> devuelva `true`. En el caso de este editor, <xref:Microsoft.VisualStudio.TestTools.WebTesting.IStringHttpBodyEditorPlugin.SupportsContentType*> devuelve `true` si <xref:Microsoft.VisualStudio.TestTools.WebTesting.IHttpBody.ContentType*> en <xref:Microsoft.VisualStudio.TestTools.WebTesting.IHttpBody> contiene "xml".
 
- Cuando se completa la edición del texto de la cadena y el usuario hace clic en **Aceptar** en el cuadro de diálogo del complemento, se llama a <xref:Microsoft.VisualStudio.TestTools.WebTesting.IStringHttpBodyEditorPlugin.GetNewValue*> para obtener el texto editado como una cadena y actualizar el **Texto de la cadena** de la solicitud en el Editor de pruebas de rendimiento web.
+Cuando se completa la edición del texto de la cadena y el usuario hace clic en **Aceptar** en el cuadro de diálogo del complemento, se llama a <xref:Microsoft.VisualStudio.TestTools.WebTesting.IStringHttpBodyEditorPlugin.GetNewValue*> para obtener el texto editado como una cadena y actualizar el **Texto de la cadena** de la solicitud en el Editor de pruebas de rendimiento web.
 
 ### <a name="create-a-class-and-implement-the-istringhttpbodyeditorplugin-interface"></a>Creación de una clase e implementación de la interfaz IStringHttpBodyEditorPlugin
 

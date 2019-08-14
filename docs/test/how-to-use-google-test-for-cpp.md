@@ -8,16 +8,16 @@ manager: markl
 ms.workload:
 - cplusplus
 author: mikeblome
-ms.openlocfilehash: 8e918878048eec7dae04b6d9269f664b9e99c567
-ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
+ms.openlocfilehash: 73f62e8b74864af0292a9cc3ab1eb325d679d2ea
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65226342"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68926748"
 ---
 # <a name="how-to-use-google-test-for-c-in-visual-studio"></a>Cómo usar Google Test para C++ en Visual Studio
 
-En Visual Studio 2017 y versiones posteriores, Google Test se integra en el IDE de Visual Studio como un componente predeterminado de la carga de trabajo **Desarrollo para el escritorio con C++**. Para comprobar que está instalado en su equipo, abra al Instalador de Visual Studio y busque Google Test en la lista de componentes de carga de trabajo:
+En Visual Studio 2017 y versiones posteriores, Google Test se integra en el IDE de Visual Studio como un componente predeterminado de la carga de trabajo **Desarrollo para el escritorio con C++** . Para comprobar que está instalado en su equipo, abra al Instalador de Visual Studio y busque Google Test en la lista de componentes de carga de trabajo:
 
 ![Instalar Google Test](media/cpp-google-component.png)
 
@@ -49,13 +49,13 @@ En Visual Studio 2017 y versiones posteriores, Google Test se integra en el IDE 
 
 En el cuadro de diálogo **Configuración del proyecto de prueba** que se abre, puede elegir el proyecto que quiere probar. Cuando se elige un proyecto, Visual Studio agrega una referencia al proyecto seleccionado. Si no se elige ninguno, deberá agregar manualmente las referencias a los proyectos que quiere probar. Al elegir entre vínculos estáticos y dinámicos para los archivos binarios de Google Test, las consideraciones son las mismas que para cualquier programa de C++. Para más información, vea [DLLs in Visual C++](/cpp/build/dlls-in-visual-cpp) (DLL en Visual C++).
 
- ![Configurar el proyecto Google Test](media/cpp-gtest-config.png)
+![Configurar el proyecto Google Test](media/cpp-gtest-config.png)
 
 ## <a name="set-additional-options"></a>Definir más opciones
 
 En el menú principal, elija **Herramientas** > **Opciones** > **Test Adapter para Google Test** para definir más opciones. Vea la documentación de Google Test para más información sobre estas opciones.
 
- ![Configuración del proyecto de Google Test](media/cpp-gtest-settings.png)
+![Configuración del proyecto de Google Test](media/cpp-gtest-settings.png)
 
 ## <a name="add-include-directives"></a>Agregar directivas include
 

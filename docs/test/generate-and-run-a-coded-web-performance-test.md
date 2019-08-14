@@ -14,12 +14,12 @@ dev_langs:
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: a6f1c524b879d5d5476491a8979d86449f3d43c0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 49691b2031d1d935871a73833924e9dc4aa46dcd
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63002568"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68918407"
 ---
 # <a name="generate-and-run-a-coded-web-performance-test"></a>Generar y ejecutar una prueba de rendimiento web codificada
 
@@ -85,16 +85,16 @@ Las pruebas de rendimiento web se graban al examinar la aplicación web. Las pru
 ## <a name="qa"></a>Preguntas y respuestas
 
 ### <a name="q-can-i-run-more-than-one-test-at-a-time"></a>P: ¿Se pueden ejecutar varias pruebas al mismo tiempo?
- **R:** Sí, use el menú contextual (botón derecho) en el **Explorador de soluciones**.
+**R:** Sí, use el menú contextual (botón derecho) en el **Explorador de soluciones**.
 
 ### <a name="q-should-i-add-a-data-source-before-or-after-i-generate-a-coded-test"></a>P: ¿Debo agregar un origen de datos antes o después de generar una prueba codificada?
- **R:** Es más fácil agregar un [origen de datos](../test/add-a-data-source-to-a-web-performance-test.md) antes de generar la prueba automatizada porque el código se generará de forma automática.
+**R:** Es más fácil agregar un [origen de datos](../test/add-a-data-source-to-a-web-performance-test.md) antes de generar la prueba automatizada porque el código se generará de forma automática.
 
- Cuando ejecuta una prueba codificada con un origen de datos, puede aparecer el siguiente mensaje de error:
+Cuando ejecuta una prueba codificada con un origen de datos, puede aparecer el siguiente mensaje de error:
 
- **No se pudo ejecutar la prueba \<nombre de la prueba> en el agente \<nombre_equipo>: Referencia a objeto no establecida como instancia de un objeto.**
+**No se pudo ejecutar la prueba \<nombre de la prueba> en el agente \<nombre_equipo>: Referencia a objeto no establecida como instancia de un objeto.**
 
- Este error se puede producir porque ha definido DataSourceAttribute para la clase de prueba de rendimiento web sin su correspondiente DataBindingAttribute. Para resolver este error, agregue un atributo DataBindingAttribute adecuado, elimínelo o márquelo como comentario fuera del código.
+Este error se puede producir porque ha definido DataSourceAttribute para la clase de prueba de rendimiento web sin su correspondiente DataBindingAttribute. Para resolver este error, agregue un atributo DataBindingAttribute adecuado, elimínelo o márquelo como comentario fuera del código.
 
 ### <a name="q-should-i-add-validation-and-extraction-rules-before-or-after-i-generate-a-coded-test"></a>P: ¿Debo agregar reglas de validación y de extracción antes o después de generar una prueba codificada?
- **R:** Es más fácil agregar reglas de validación y extracción antes de generar la prueba automatizada; pero se recomienda usar [pruebas automatizadas de IU](../test/use-ui-automation-to-test-your-code.md) para la validación.
+**R:** Es más fácil agregar reglas de validación y extracción antes de generar la prueba automatizada; pero se recomienda usar [pruebas automatizadas de IU](../test/use-ui-automation-to-test-your-code.md) para la validación.

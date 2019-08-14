@@ -14,18 +14,18 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 201702c794d70c32c0aeef410ad981d891d25d05
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: 9c443f966265f70a729e2fd433353c4856a1f8c6
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63438199"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68924046"
 ---
 # <a name="how-to-add-or-remove-imported-namespaces-visual-basic"></a>Procedimiento Agregar o quitar espacios de nombres importados (Visual Basic)
 
 Importar un espacio de nombres le permite usar elementos de ese espacio de nombres en su código sin calificar completamente el elemento. Por ejemplo, si quiere tener acceso al método `Create` en la clase `System.Messaging.MessageQueue`, puede importar el espacio de nombres `System.Messaging` y simplemente hacer referencia al elemento que necesita en el código como `MessageQueue.Create`.
 
- Los espacios de nombres importados se administran en la página **Referencias** del **Diseñador de proyectos**. Las importaciones que especifique en este cuadro de diálogo se pasan directamente al compilador (*/imports*) y se aplican a todos los archivos de su proyecto. Use la instrucción `Imports` para usar un espacio de nombres en un archivo de código fuente único.
+Los espacios de nombres importados se administran en la página **Referencias** del **Diseñador de proyectos**. Las importaciones que especifique en este cuadro de diálogo se pasan directamente al compilador ( */imports*) y se aplican a todos los archivos de su proyecto. Use la instrucción `Imports` para usar un espacio de nombres en un archivo de código fuente único.
 
 ### <a name="to-add-an-imported-namespace"></a>Para agregar un espacio de nombres importado
 
@@ -47,9 +47,9 @@ Importar un espacio de nombres le permite usar elementos de ese espacio de nombr
 3. En la lista **Espacios de nombres importados**, desactive la casilla del espacio de nombres que quiere quitar.
 
 ## <a name="user-imports"></a>Importaciones de usuarios
- Las importaciones de usuarios le permiten importar una clase específica dentro de un espacio de nombres en lugar del espacio de nombres completo. Por ejemplo, su aplicación puede tener una importación para el espacio de nombres <xref:System.Diagnostics>, pero la única clase dentro de ese espacio de nombres en la que está interesado es la clase `Debug`. Puede definir <xref:System.Diagnostics.Debug> como una importación de usuarios y, después, quitar la importación para <xref:System.Diagnostics>.
+Las importaciones de usuarios le permiten importar una clase específica dentro de un espacio de nombres en lugar del espacio de nombres completo. Por ejemplo, su aplicación puede tener una importación para el espacio de nombres <xref:System.Diagnostics>, pero la única clase dentro de ese espacio de nombres en la que está interesado es la clase `Debug`. Puede definir <xref:System.Diagnostics.Debug> como una importación de usuarios y, después, quitar la importación para <xref:System.Diagnostics>.
 
- Si posteriormente cambia de idea y decide que realmente necesitaba la clase `EventLog`, puede especificar <xref:System.Diagnostics.EventLog> como una importación de usuarios y sobrescribir <xref:System.Diagnostics.Debug> con la función de actualización.
+Si posteriormente cambia de idea y decide que realmente necesitaba la clase `EventLog`, puede especificar <xref:System.Diagnostics.EventLog> como una importación de usuarios y sobrescribir <xref:System.Diagnostics.Debug> con la función de actualización.
 
 ### <a name="to-add-a-user-import"></a>Para agregar una importación de usuarios
 

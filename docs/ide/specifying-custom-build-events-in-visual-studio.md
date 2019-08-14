@@ -11,18 +11,18 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8367400df14f9a5e5c846a6df52e1a5fc7b8ec21
-ms.sourcegitcommit: 59e5758036223ee866f3de5e3c0ab2b6dbae97b6
+ms.openlocfilehash: 620ffa1ea23c2c892e8385bd9e81a07fb640411a
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "68416733"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68918906"
 ---
 # <a name="specify-custom-build-events-in-visual-studio"></a>Especificar eventos de compilación personalizados en Visual Studio
 
 Mediante la especificación de un evento de compilación personalizado, puede ejecutar automáticamente comandos antes de que iniciar o finalizar una compilación. Por ejemplo, puede ejecutar un archivo *.bat* antes de iniciar una compilación o copiar archivos nuevos en una carpeta una vez finalizada la compilación. Los eventos de compilación se ejecutan solo si se alcanzan correctamente esos puntos en el proceso de compilación.
 
- Para obtener información específica sobre el lenguaje de programación que está usando, vea los temas siguientes:
+Para obtener información específica sobre el lenguaje de programación que está usando, vea los temas siguientes:
 
 - Visual Basic--[Cómo: Especificar eventos de compilación (Visual Basic)](../ide/how-to-specify-build-events-visual-basic.md).
 
@@ -34,7 +34,7 @@ Mediante la especificación de un evento de compilación personalizado, puede ej
 
 Los eventos de compilación siguen la misma sintaxis que los comandos de DOS, pero puede usar macros para crear eventos más fácilmente. Para obtener una lista de las macros disponibles, vea [Pre-build Event/Post-build Event command line dialog box](../ide/reference/pre-build-event-post-build-event-command-line-dialog-box.md) (Línea de comandos del evento anterior/posterior a la compilación (Cuadro de diálogo)).
 
- Para obtener mejores resultados, siga estas sugerencias de formato:
+Para obtener mejores resultados, siga estas sugerencias de formato:
 
 - Agregue una instrucción `call` delante de todos los eventos de compilación que ejecutan archivos *.bat*.
 

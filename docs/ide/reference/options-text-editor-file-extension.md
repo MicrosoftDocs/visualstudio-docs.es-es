@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 412a8489c3d7092aa87803f7dd3af5c7495b17a7
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 13c79a4cae482990369fc8218bf0b7226ab05942
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62778624"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68919056"
 ---
 # <a name="options-text-editor-file-extension"></a>Opciones, editor de texto, extensión de archivo
 
@@ -36,7 +36,7 @@ Escriba la extensión de archivo cuyo editor asociado en el IDE quiere definir.
 
 **Editor**
 
- Seleccione el diseñador o el editor del IDE en el que se abrirán los documentos con esta extensión de archivo. Cuando selecciona una opción "con codificación", se muestra un cuadro de diálogo, siempre que abra un documento que le permita seleccionar un esquema de codificación.
+Seleccione el diseñador o el editor del IDE en el que se abrirán los documentos con esta extensión de archivo. Cuando selecciona una opción "con codificación", se muestra un cuadro de diálogo, siempre que abra un documento que le permita seleccionar un esquema de codificación.
 
 **Add**
 

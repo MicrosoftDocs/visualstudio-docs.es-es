@@ -19,12 +19,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 81245640c8c73b77dc563c28f1d3d20168203029
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ec9b86958f2e3b3e768b321db17e707dced1d78b
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62793089"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68926272"
 ---
 # <a name="accessibility-products-and-services-from-microsoft"></a>Servicios y productos de Microsoft para mejorar la accesibilidad
 
@@ -46,19 +46,19 @@ Microsoft ha asumido el compromiso de facilitar el acceso de todos los usuarios 
 
 ## <a name="windows"></a> Características de accesibilidad de Windows
 
- El sistema operativo Windows tiene muchas características de accesibilidad integradas que son útiles para personas que tienen dificultades para escribir o usar un mouse, son ciegas o tienen poca visión, o son sordas o tienen dificultades auditivas. Las características se instalan durante la instalación. Para más información sobre estas características, consulte la Ayuda de Windows y el [Sitio web de accesibilidad de Microsoft](http://go.microsoft.com/fwlink/?LinkId=8431).
+El sistema operativo Windows tiene muchas características de accesibilidad integradas que son útiles para personas que tienen dificultades para escribir o usar un mouse, son ciegas o tienen poca visión, o son sordas o tienen dificultades auditivas. Las características se instalan durante la instalación. Para más información sobre estas características, consulte la Ayuda de Windows y el [Sitio web de accesibilidad de Microsoft](http://go.microsoft.com/fwlink/?LinkId=8431).
 
 ### <a name="free-step-by-step-tutorials"></a>Tutoriales paso a paso gratuitos
 
- Microsoft ofrece una serie de tutoriales paso a paso que proporcionan los procedimientos detallados para definir las opciones de accesibilidad y la configuración del equipo. Esta información se presenta en un formato en columnas que permite aprender a utilizar el teclado, el mouse o una combinación de ambos.
+Microsoft ofrece una serie de tutoriales paso a paso que proporcionan los procedimientos detallados para definir las opciones de accesibilidad y la configuración del equipo. Esta información se presenta en un formato en columnas que permite aprender a utilizar el teclado, el mouse o una combinación de ambos.
 
- Para encontrar los tutoriales detallados de los productos de Microsoft, consulte el sitio web de [accesibilidad de Microsoft](http://go.microsoft.com/fwlink/?LinkId=8431).
+Para encontrar los tutoriales detallados de los productos de Microsoft, consulte el sitio web de [accesibilidad de Microsoft](http://go.microsoft.com/fwlink/?LinkId=8431).
 
 ### <a name="assistive-technology-products-for-windows"></a>Productos de tecnología de asistencia para Windows
 
- Está disponible una amplia variedad de productos de tecnología de asistencia para facilitar el uso de los equipos por parte de usuarios con discapacidades. Encontrará un catálogo de los productos de tecnología de asistencia que funcionan con Windows en el [Sitio web de accesibilidad de Microsoft](http://go.microsoft.com/fwlink/?LinkId=8431).
+Está disponible una amplia variedad de productos de tecnología de asistencia para facilitar el uso de los equipos por parte de usuarios con discapacidades. Encontrará un catálogo de los productos de tecnología de asistencia que funcionan con Windows en el [Sitio web de accesibilidad de Microsoft](http://go.microsoft.com/fwlink/?LinkId=8431).
 
- Si usa tecnología de ayuda, asegúrese de ponerse en contacto con el proveedor de esta tecnología antes de actualizar el software o el hardware para ver si existen posibles problemas de compatibilidad.
+Si usa tecnología de ayuda, asegúrese de ponerse en contacto con el proveedor de esta tecnología antes de actualizar el software o el hardware para ver si existen posibles problemas de compatibilidad.
 
 ## <a name="altfortmats"></a> Documentación en formatos alternativos
 

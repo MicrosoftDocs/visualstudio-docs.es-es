@@ -10,12 +10,12 @@ ms.assetid: 8a4ba300-425d-447c-91d9-c53f4345feee
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 197df09d54500e16ca4f904662693bdfc983f7b3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d3cd641a6361a8cf555e722ccd6c42414f5bdbe7
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62822812"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68926441"
 ---
 # <a name="analyze-load-test-results-using-the-load-test-analyzer"></a>Analizar los resultados de pruebas de carga con el Analizador de pruebas de carga
 
@@ -37,11 +37,11 @@ Puede completar estas tareas tanto si ejecuta la prueba de carga desde Visual St
 
 ## <a name="differences-between-analyzing-a-running-and-a-completed-load-test"></a>Diferencias entre el análisis de una prueba de carga en ejecución y una completada
 
- Al ejecutar una prueba de carga, el **Analizador de pruebas de carga** se muestra en una pestaña independiente, junto con el nombre de la prueba de carga y la hora a la que se inició la prueba (por ejemplo, **PruebaCarga1 [12:40 p.m.]**). Cuando se ejecuta una prueba de carga, se mantiene en la memoria un conjunto más reducido de los datos de contadores de rendimiento. Puede supervisar este conjunto de datos cuando se ejecuta la prueba de carga. Al término de la prueba de carga, puede analizar el conjunto de datos completo de la base de datos. Hay diferencias en cuanto a los datos que se muestran cuando se ejecuta una prueba de carga y los datos que puede ver después de que se haya completado una prueba de carga. Por ejemplo, los datos de tiempo de respuesta del 90 y el 95 por ciento no se calculan hasta que la prueba de carga se ha completado. También hay algunas diferencias en la funcionalidad de las herramientas disponibles para analizar los datos.
+Al ejecutar una prueba de carga, el **Analizador de pruebas de carga** se muestra en una pestaña independiente, junto con el nombre de la prueba de carga y la hora a la que se inició la prueba (por ejemplo, **PruebaCarga1 [12:40 p.m.]** ). Cuando se ejecuta una prueba de carga, se mantiene en la memoria un conjunto más reducido de los datos de contadores de rendimiento. Puede supervisar este conjunto de datos cuando se ejecuta la prueba de carga. Al término de la prueba de carga, puede analizar el conjunto de datos completo de la base de datos. Hay diferencias en cuanto a los datos que se muestran cuando se ejecuta una prueba de carga y los datos que puede ver después de que se haya completado una prueba de carga. Por ejemplo, los datos de tiempo de respuesta del 90 y el 95 por ciento no se calculan hasta que la prueba de carga se ha completado. También hay algunas diferencias en la funcionalidad de las herramientas disponibles para analizar los datos.
 
- Al ejecutar la prueba de carga, hay dos vistas disponibles: **Gráficos** y **Tablas**. La vista **Gráficos** permite representar mediante gráficos los contadores de rendimiento que se recopilan. La vista **Tablas** ofrece información sobre cada una de las pruebas, páginas, transacciones y solicitudes que se recopilan. También obtiene una tabla que enumera los errores.
+Al ejecutar la prueba de carga, hay dos vistas disponibles: **Gráficos** y **Tablas**. La vista **Gráficos** permite representar mediante gráficos los contadores de rendimiento que se recopilan. La vista **Tablas** ofrece información sobre cada una de las pruebas, páginas, transacciones y solicitudes que se recopilan. También obtiene una tabla que enumera los errores.
 
- De forma predeterminada, cuando la ejecución de la prueba de carga se ha completado, se muestra la vista **Resumen**. Puede cambiar entre las vistas **Resumen**, **Gráficos**, **Tablas** y **Detalles** mediante la barra de herramientas. El **Analizador de pruebas de carga** se puede acoplar o dejar flotante usando las técnicas habituales de manipulación de ventanas de Visual Studio. Al analizar ejecuciones de pruebas de carga completadas, puede tener abiertos varios **analizadores de prueba de carga** al mismo tiempo para comparar diferentes ejecuciones de pruebas de carga.
+De forma predeterminada, cuando la ejecución de la prueba de carga se ha completado, se muestra la vista **Resumen**. Puede cambiar entre las vistas **Resumen**, **Gráficos**, **Tablas** y **Detalles** mediante la barra de herramientas. El **Analizador de pruebas de carga** se puede acoplar o dejar flotante usando las técnicas habituales de manipulación de ventanas de Visual Studio. Al analizar ejecuciones de pruebas de carga completadas, puede tener abiertos varios **analizadores de prueba de carga** al mismo tiempo para comparar diferentes ejecuciones de pruebas de carga.
 
 ## <a name="tasks"></a>Tareas
 

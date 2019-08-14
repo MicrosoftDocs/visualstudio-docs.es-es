@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9120b3076dff1620f6ec5b9ff77041126932481a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d6d0b694f9703c6260d95ad03e085fcdf774dc52
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62557104"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68919138"
 ---
 # <a name="list-memory-command"></a>Mostrar memoria (Comando)
 Muestra el contenido del intervalo de memoria especificado.
@@ -32,41 +32,41 @@ Debug.ListMemory [/ANSI|Unicode] [/Count:number] [/Format:formattype]
 ```
 
 ## <a name="arguments"></a>Argumentos
- `expression`
+`expression`
 
- Opcional. Dirección de memoria desde la que se va a empezar a mostrar la memoria.
+Opcional. Dirección de memoria desde la que se va a empezar a mostrar la memoria.
 
 ## <a name="switches"></a>Modificadores
- /ANSI&#124;Unicode
+/ANSI&#124;Unicode
 
- Opcional. Muestra la memoria como caracteres correspondientes a los bytes de memoria, ya sean ANSI o Unicode.
+Opcional. Muestra la memoria como caracteres correspondientes a los bytes de memoria, ya sean ANSI o Unicode.
 
- /Count:`number`
+/Count:`number`
 
- Opcional. Determina el número de bytes de memoria que se muestran, empezando por `expression`.
+Opcional. Determina el número de bytes de memoria que se muestran, empezando por `expression`.
 
- /Format:`formattype`
+/Format:`formattype`
 
- Opcional. Tipo de formato para ver la información de memoria en la ventana **Memoria**. Puede ser OneByte, TwoBytes, FourBytes, EightBytes, Float (32 bits) o Double (64 bits). Si se usa OneByte, `/Unicode` no está disponible.
+Opcional. Tipo de formato para ver la información de memoria en la ventana **Memoria**. Puede ser OneByte, TwoBytes, FourBytes, EightBytes, Float (32 bits) o Double (64 bits). Si se usa OneByte, `/Unicode` no está disponible.
 
- /Hex&#124;Signed&#124;Unsigned
+/Hex&#124;Signed&#124;Unsigned
 
- Opcional. Especifica el formato de visualización de números: con signo, sin signo o hexadecimal.
+Opcional. Especifica el formato de visualización de números: con signo, sin signo o hexadecimal.
 
 ## <a name="remarks"></a>Comentarios
- En lugar de escribir un comando **Debug.ListMemory** completo con todos los modificadores, puede invocar el comando mediante los alias predefinidos con ciertos modificadores preestablecidos en los valores especificados. Por ejemplo, en lugar de especificar:
+En lugar de escribir un comando **Debug.ListMemory** completo con todos los modificadores, puede invocar el comando mediante los alias predefinidos con ciertos modificadores preestablecidos en los valores especificados. Por ejemplo, en lugar de especificar:
 
 ```cmd
 >Debug.ListMemory /Format:float /Count:30 /Unicode
 ```
 
- puede escribir:
+puede escribir:
 
 ```cmd
 >df /Count:30 /Unicode
 ```
 
- A continuación se muestra una lista de los alias disponibles para el comando **Debug.ListMemory**:
+A continuación se muestra una lista de los alias disponibles para el comando **Debug.ListMemory**:
 
 |Alias|Comandos y modificadores|
 |-----------| - |
@@ -85,7 +85,7 @@ Debug.ListMemory [/ANSI|Unicode] [/Count:number] [/Format:formattype]
 >Debug.ListMemory /Format:float /Count:30 /Unicode
 ```
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Otras referencias
 
 - [Mostrar pila de llamadas (Comando)](../../ide/reference/list-call-stack-command.md)
 - [Mostrar subprocesos (Comando)](../../ide/reference/list-threads-command.md)

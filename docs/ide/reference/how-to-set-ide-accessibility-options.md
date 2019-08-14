@@ -11,12 +11,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a69f821a27d6fed4fe478122344d1a7afbc8f8c7
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 7a0b5835333bf8cd41ab653108054e2d3dd4c73e
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62789805"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68919280"
 ---
 # <a name="how-to-set-ide-accessibility-options"></a>Procedimiento Establecimiento de opciones de accesibilidad de IDE
 
@@ -32,17 +32,17 @@ Además, [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] admite los
 
 ## <a name="editors-dialogs-and-tool-windows"></a>Editores, cuadros de diálogo y ventanas de herramientas
 
- De manera predeterminada, los cuadros de diálogo y las ventanas de herramientas en [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] usan el mismo tamaño de fuente y los mismos colores que el sistema operativo. La configuración del color del marco del IDE, los cuadros de diálogo, las barras de herramientas y las ventanas de herramientas se basan en una combinación de colores: clara u oscura. Puede cambiar el tema de color actual en [General, Entorno, Opciones (Cuadro de diálogo)](../../ide/reference/general-environment-options-dialog-box.md).
+De manera predeterminada, los cuadros de diálogo y las ventanas de herramientas en [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] usan el mismo tamaño de fuente y los mismos colores que el sistema operativo. La configuración del color del marco del IDE, los cuadros de diálogo, las barras de herramientas y las ventanas de herramientas se basan en una combinación de colores: clara u oscura. Puede cambiar el tema de color actual en [General, Entorno, Opciones (Cuadro de diálogo)](../../ide/reference/general-environment-options-dialog-box.md).
 
- También puede mostrar ventanas emergentes en la vista Código del editor. Estas ventanas pueden indicarle los miembros disponibles en el objeto actual y los parámetros para completar una función o instrucción. Estas ventanas pueden resultar útiles si tiene dificultades para escribir. En cambio, interfieren con el foco del editor de código, que puede ser problemático para algunos usuarios. Puede desactivar estas ventanas abriendo el cuadro de diálogo Opciones y desactivar **Lista de miembros automática** e **Información de parámetros** en el **Editor de texto**, **Todos los lenguajes**, página **General** en el cuadro de diálogo **Opciones**.
+También puede mostrar ventanas emergentes en la vista Código del editor. Estas ventanas pueden indicarle los miembros disponibles en el objeto actual y los parámetros para completar una función o instrucción. Estas ventanas pueden resultar útiles si tiene dificultades para escribir. En cambio, interfieren con el foco del editor de código, que puede ser problemático para algunos usuarios. Puede desactivar estas ventanas abriendo el cuadro de diálogo Opciones y desactivar **Lista de miembros automática** e **Información de parámetros** en el **Editor de texto**, **Todos los lenguajes**, página **General** en el cuadro de diálogo **Opciones**.
 
- Puede reorganizar las ventanas del entorno de desarrollo integrado (IDE) para adaptarse mejor a su manera de trabajar. Puede acoplar, hacer flotante, ocultar u ocultar automáticamente cada ventana de herramientas.
+Puede reorganizar las ventanas del entorno de desarrollo integrado (IDE) para adaptarse mejor a su manera de trabajar. Puede acoplar, hacer flotante, ocultar u ocultar automáticamente cada ventana de herramientas.
 
- Para obtener más información sobre cómo cambiar los diseños de ventanas, vea [Personalizar los diseños de ventana](../../ide/customizing-window-layouts-in-visual-studio.md).
+Para obtener más información sobre cómo cambiar los diseños de ventanas, vea [Personalizar los diseños de ventana](../../ide/customizing-window-layouts-in-visual-studio.md).
 
 ### <a name="changing-the-size-of-text"></a>Cambio del tamaño del texto
 
- Puede cambiar la configuración de las ventanas de herramientas basadas en texto, como la ventana **Comandos**, la ventana **Inmediato** y la ventana **Salida**, en el panel **Fuentes y colores** de las opciones de **Entorno** en el cuadro de diálogo **Herramientas**. Cuando la opción **[Todas las ventanas de herramientas de texto]** está seleccionada en la lista desplegable **Mostrar configuración para**, la configuración predeterminada se muestra como **Predeterminada** en las listas desplegables **Primer plano del elemento** y **Fondo del elemento**. También puede cambiar la configuración de cómo se muestra el texto en el editor.
+Puede cambiar la configuración de las ventanas de herramientas basadas en texto, como la ventana **Comandos**, la ventana **Inmediato** y la ventana **Salida**, en el panel **Fuentes y colores** de las opciones de **Entorno** en el cuadro de diálogo **Herramientas**. Cuando la opción **[Todas las ventanas de herramientas de texto]** está seleccionada en la lista desplegable **Mostrar configuración para**, la configuración predeterminada se muestra como **Predeterminada** en las listas desplegables **Primer plano del elemento** y **Fondo del elemento**. También puede cambiar la configuración de cómo se muestra el texto en el editor.
 
 #### <a name="to-change-the-size-of-text-in-text-based-tool-windows-and-editors"></a>Para cambiar el tamaño del texto en las ventanas de herramientas basadas en texto y en los editores
 
@@ -54,7 +54,7 @@ Además, [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] admite los
 
      Para cambiar el tamaño de fuente del texto en un editor, pulse **Editor de texto**.
 
-     Para cambiar el tamaño de fuente del texto en ventanas de herramientas basadas en texto, pulse **[Todas las ventanas de herramientas de texto]**.
+     Para cambiar el tamaño de fuente del texto en ventanas de herramientas basadas en texto, pulse **[Todas las ventanas de herramientas de texto]** .
 
      Para cambiar el tamaño de fuente del texto de información sobre herramientas en un editor, pulse **Información sobre herramientas del editor**.
 
@@ -73,7 +73,7 @@ Además, [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] admite los
 
 ### <a name="change-the-colors-that-are-used-in-the-ide"></a>Cambio de los colores que se usan en el IDE
 
- También puede decidir cambiar los colores predeterminados del texto, los indicadores de margen, el espacio en blanco y los elementos de código en el editor.
+También puede decidir cambiar los colores predeterminados del texto, los indicadores de margen, el espacio en blanco y los elementos de código en el editor.
 
 > [!NOTE]
 > Para usar colores de alto contraste para todas las ventanas de aplicaciones en su sistema operativo, presione <strong>ALT+</strong> izquierda y **MAYÚS+IMPR PANT** izquierda. Si [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] está abierto, cierre y vuelve a abrir [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] para implementar completamente los colores de alto contraste.
@@ -94,7 +94,7 @@ Además, [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] admite los
 
 ## <a name="toolbars"></a>Barras de herramientas
 
- Para mejorar la accesibilidad y la facilidad de uso de la barra de herramientas, puede agregar texto a los botones de la barra de herramientas.
+Para mejorar la accesibilidad y la facilidad de uso de la barra de herramientas, puede agregar texto a los botones de la barra de herramientas.
 
 ### <a name="to-assign-text-to-toolbar-buttons"></a>Para asignar texto a los botones de la barra de herramientas
 

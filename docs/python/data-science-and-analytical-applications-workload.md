@@ -9,12 +9,12 @@ manager: jillfra
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: dbebf486680375622e6dc313a71e82f541107fc8
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 20ebd6def9fcac2336ca13118300737b66142812
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62958390"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68926395"
 ---
 # <a name="install-data-science-support-in-visual-studio"></a>Instalación de la compatibilidad con ciencia de datos en Visual Studio
 
@@ -106,7 +106,7 @@ Para obtener más información:
 
 Además de lo que se incluye directamente en la carga de trabajo Aplicaciones de ciencia de datos y de análisis, el servicio Azure Notebooks y el SDK de Azure para Python también son útiles para la ciencia de datos.
 
-Azure SDK para Python facilita el uso y la administración de los servicios de Microsoft Azure en aplicaciones que se ejecutan en Windows, Mac y Linux. Para más información, vea [SDK de Azure para Python](../python/azure-sdk-for-python.md)
+Azure SDK para Python facilita el uso y la administración de los servicios de Microsoft Azure en aplicaciones que se ejecutan en Windows, Mac y Linux. Para más información, vea [SDK de Azure para Python](../python/azure-sdk-for-python.md).
 
 Azure Notebooks (actualmente en versión preliminar) proporciona acceso en línea gratuito a Jupyter Notebooks que se ejecutan en la nube en Microsoft Azure. El servicio incluye blocs de notas de ejemplo de Python, R y F# para que pueda comenzar. Visite [notebooks.azure.com](https://notebooks.azure.com/).
 

@@ -15,12 +15,12 @@ ms.technology: vs-ide-general
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: dd4ae23899871644f61f3bb903fc2c4ad7880b53
-ms.sourcegitcommit: 9fc8b144d4ed1c46aba87c0b7e1d24454e0eea9d
+ms.openlocfilehash: 1f4a055f62fe76c701858f82b4778f7a3b19fa0a
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "68493329"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68918782"
 ---
 # <a name="whats-new-in-visual-studio-2019"></a>Novedades de Visual Studio 2019
 
@@ -39,7 +39,7 @@ Este es un resumen de alto nivel de todas las novedades:
 
 Si quiere ver una lista completa de todas las novedades de esta versión, consulte las [notas de la versión](/visualstudio/releases/2019/release-notes/).
 
-## <a name="develop"></a>Desarrollo
+## <a name="develop"></a>Desarrollar
 
 Vea el vídeo siguiente para obtener más información sobre cómo puede ahorrar tiempo con las nuevas características. <br><br>*Duración del vídeo: 3 minutos*
 
@@ -65,7 +65,7 @@ Para invocar las refactorizaciones, basta con presionar **Ctrl+.** y seleccionar
 
 [Visual Studio IntelliCode](/visualstudio/intellicode/) mejora los esfuerzos de desarrollo de software mediante inteligencia artificial (IA). IntelliCode se entrena en 2000 proyectos de código abierto de GitHub, cada uno con más de 100 estrellas, para generar sus recomendaciones.
 
- ![Animación de IntelliCode en Visual Studio 2019](media/vs-2019/IntelliCode.gif)
+![Animación de IntelliCode en Visual Studio 2019](media/vs-2019/IntelliCode.gif)
 
 Estas son algunas formas en las que Visual Studio IntelliCode le puede ayudar a aumentar su productividad:
 
@@ -146,7 +146,7 @@ Se ha incluido una nueva extensión que puede descargar para su uso con Visual S
 
 Para obtener más información, vea la entrada de blog [Code reviews using the Visual Studio Pull Requests extension](https://devblogs.microsoft.com/visualstudio/code-reviews-using-the-visual-studio-pull-requests-extension/) (Revisiones de código mediante la extensión Solicitudes de incorporación de cambios de Visual Studio).
 
-## <a name="debug"></a>Depurar
+## <a name="debug"></a>Depuración
 
 Vea el vídeo siguiente para obtener más información sobre cómo centrarse en un destino concreto al depurar. <br><br>*Duración del vídeo: 3:54 minutos*
 
@@ -190,7 +190,7 @@ Para más información, vea la página [Depuración de aplicaciones de Azure de 
 
    ![Captura de pantalla que muestra la representación de código JavaScript en un explorador](media/vs-2019/edge-chromium-breakpoint.png)
 
-## <a name="whats-next"></a>Pasos siguientes
+## <a name="whats-next"></a>Pasos adicionales
 
 Actualizamos Visual Studio 2019 a menudo con nuevas características que pueden mejorar aún más su experiencia de desarrollo. Para obtener más información sobre las últimas innovaciones, vea el [blog de Visual Studio](https://devblogs.microsoft.com/visualstudio/). Y, para consultar un registro de las versiones en versión preliminar hasta la fecha, vea las [Notas de la versión preliminar](/visualstudio/releases/2019/release-notes-preview/).
 
