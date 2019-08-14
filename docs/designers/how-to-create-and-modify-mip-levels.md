@@ -8,18 +8,18 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 50543a1f0191847beb4f849d56517cd0f12a1f7c
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: 026916a86609f665fdb8329b9c9eacf147be51e3
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63408614"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68924266"
 ---
 # <a name="how-to-create-and-modify-mip-levels"></a>Procedimiento Crear y modificar niveles de MIP
 En este documento se muestra cómo usar el **Editor de imágenes** para generar y modificar *niveles de MIP* con nivel de detalle (LoD) del espacio de textura.
 
 ## <a name="generating-mip-levels"></a>Generar niveles de MIP
- La *generación de mapas MIP* es una técnica que se usa para aumentar la velocidad de representación y reducir los artefactos de alias en objetos con textura, para lo que se calculan previamente y se almacenan varias copias de una textura de diferentes tamaños. Cada copia, conocida como nivel de MIP, tiene la mitad del ancho y del alto de la copia anterior. Cuando una textura se representa en la superficie de un objeto, se elige automáticamente el nivel de MIP que se corresponde mejor con el área del espacio de pantalla de la superficie con textura. Esto significa que el hardware gráfico no tiene que filtrar las texturas demasiado grandes para mantener una calidad visual coherente. Aunque el costo de memoria de almacenar los niveles de MIP es aproximadamente un 33 % más alto que el de la textura original por sí sola, las mejoras del rendimiento y de la calidad de imagen lo justifican.
+La *generación de mapas MIP* es una técnica que se usa para aumentar la velocidad de representación y reducir los artefactos de alias en objetos con textura, para lo que se calculan previamente y se almacenan varias copias de una textura de diferentes tamaños. Cada copia, conocida como nivel de MIP, tiene la mitad del ancho y del alto de la copia anterior. Cuando una textura se representa en la superficie de un objeto, se elige automáticamente el nivel de MIP que se corresponde mejor con el área del espacio de pantalla de la superficie con textura. Esto significa que el hardware gráfico no tiene que filtrar las texturas demasiado grandes para mantener una calidad visual coherente. Aunque el costo de memoria de almacenar los niveles de MIP es aproximadamente un 33 % más alto que el de la textura original por sí sola, las mejoras del rendimiento y de la calidad de imagen lo justifican.
 
 #### <a name="to-generate-mip-levels"></a>Para generar niveles de MIP
 
@@ -30,7 +30,7 @@ En este documento se muestra cómo usar el **Editor de imágenes** para generar 
      Observe que los botones para **ir al nivel de MIP siguiente** e **ir al nivel de MIP anterior** aparecen ahora en la barra de herramientas del **modo Editor de imágenes**. Si se muestra la ventana **Propiedades**, observe también que las propiedades de solo lectura **Nivel de Mip** y **Número de niveles de MIP** aparecen ahora en las propiedades de la imagen.
 
 ## <a name="modifying-mip-levels"></a>Modificar niveles de MIP
- Para lograr efectos especiales o aumentar la calidad de la imagen a niveles de detalle específicos, puede modificar cada nivel de MIP individualmente. Por ejemplo, puede asignar a un objeto con textura una apariencia diferente a distancia (cuanto mayor sea la distancia, menores serán los niveles de MIP), o puede asegurarse de que las texturas que contienen texto o símbolos sigan siendo legibles incluso en niveles de MIP más pequeños.
+Para lograr efectos especiales o aumentar la calidad de la imagen a niveles de detalle específicos, puede modificar cada nivel de MIP individualmente. Por ejemplo, puede asignar a un objeto con textura una apariencia diferente a distancia (cuanto mayor sea la distancia, menores serán los niveles de MIP), o puede asegurarse de que las texturas que contienen texto o símbolos sigan siendo legibles incluso en niveles de MIP más pequeños.
 
 #### <a name="to-modify-an-individual-mip-level"></a>Para modificar un nivel de MIP individual
 

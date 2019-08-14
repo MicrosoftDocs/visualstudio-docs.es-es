@@ -11,12 +11,12 @@ ms.assetid: 1cd63c4b-4f74-4133-b675-5e8fbeab25f3
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: f9623022d5e0132c8b099757a5af85a3ddd62ed1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 37dfd7b0aa8aed1ce94f3d4364c5b61a0957a223
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62788933"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68926622"
 ---
 # <a name="manage-load-test-results-in-the-load-test-results-repository"></a>Administrar resultados de pruebas de carga en el repositorio de resultados de pruebas de carga
 
@@ -33,13 +33,13 @@ Visual Studio Enterprise proporciona conjuntos de contadores con nombre que reco
 
 ## <a name="sql-server-versions"></a>Versiones de SQL Server
 
- Para usar pruebas de carga, puede emplear LocalDB de SQL Server Express, que se instala con Visual Studio. Es el servidor de base de datos predeterminado para las pruebas de carga (incluida la integración de Microsoft Excel). SQL Server Express LocalDB es un modo de ejecución de SQL Server Express destinado a desarrolladores de programas. La instalación de SQL Server Express LocalDB copia un conjunto mínimo de archivos necesario para iniciar el motor de base de datos de SQL Server.
+Para usar pruebas de carga, puede emplear LocalDB de SQL Server Express, que se instala con Visual Studio. Es el servidor de base de datos predeterminado para las pruebas de carga (incluida la integración de Microsoft Excel). SQL Server Express LocalDB es un modo de ejecución de SQL Server Express destinado a desarrolladores de programas. La instalación de SQL Server Express LocalDB copia un conjunto mínimo de archivos necesario para iniciar el motor de base de datos de SQL Server.
 
- Si el equipo prevé necesidades de base de datos intensivas, o si los proyectos superan la capacidad de LocalDB de SQL Server Express, debería considerar la actualización a SQL Express o a la versión completa de SQL Server a fin de proporcionar potencial de escalado adicional. Si actualiza SQL Server, los archivos MDF y LDF para LocalDB de SQL Server Express se almacenan en la carpeta de perfil de usuario. Estos archivos se pueden usar para importar la base de datos de pruebas de carga a SQL Server Express o SQL Server.
+Si el equipo prevé necesidades de base de datos intensivas, o si los proyectos superan la capacidad de LocalDB de SQL Server Express, debería considerar la actualización a SQL Express o a la versión completa de SQL Server a fin de proporcionar potencial de escalado adicional. Si actualiza SQL Server, los archivos MDF y LDF para LocalDB de SQL Server Express se almacenan en la carpeta de perfil de usuario. Estos archivos se pueden usar para importar la base de datos de pruebas de carga a SQL Server Express o SQL Server.
 
 ## <a name="load-test-results-store-considerations"></a>Consideraciones sobre el almacén de resultados de pruebas de carga
 
- Cuando se instala Visual Studio Enterprise, el almacén de resultados de pruebas de carga se configura para usar una instancia de SQL Express que se instala en el equipo. SQL Express se limita a utilizar un máximo de 4 GB de espacio en disco. Si va a ejecutar muchas pruebas de carga en un período largo de tiempo, debe considerar configurar el almacén de resultados de pruebas de carga para utilizar una instancia completa de SQL Server si está disponible.
+Cuando se instala Visual Studio Enterprise, el almacén de resultados de pruebas de carga se configura para usar una instancia de SQL Express que se instala en el equipo. SQL Express se limita a utilizar un máximo de 4 GB de espacio en disco. Si va a ejecutar muchas pruebas de carga en un período largo de tiempo, debe considerar configurar el almacén de resultados de pruebas de carga para utilizar una instancia completa de SQL Server si está disponible.
 
 ## <a name="load-test-analyzer-tasks"></a>Tareas del Analizador de pruebas de carga
 
@@ -52,9 +52,9 @@ Visual Studio Enterprise proporciona conjuntos de contadores con nombre que reco
 
 ## <a name="related-tasks"></a>Tareas relacionadas
 
- [Analizar los resultados de pruebas de carga](../test/analyze-load-test-results-using-the-load-test-analyzer.md)
+[Analizar los resultados de pruebas de carga](../test/analyze-load-test-results-using-the-load-test-analyzer.md)
 
- Puede ver los resultados de una prueba de carga en ejecución y una completada con el **Analizador de pruebas de carga**.
+Puede ver los resultados de una prueba de carga en ejecución y una completada con el **Analizador de pruebas de carga**.
 
 ## <a name="see-also"></a>Vea también
 

@@ -13,12 +13,12 @@ manager: jillfra
 ms.workload:
 - dotnet
 author: gewarren
-ms.openlocfilehash: b04a8eabd5b7bdbc5053a30a95609b86b6e61674
-ms.sourcegitcommit: 51dad3e11d7580567673e0d426ab3b0a17584319
+ms.openlocfilehash: 2c7a81eefc48626a57d15f99579e151390b52fb9
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/10/2019
-ms.locfileid: "66820919"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68926792"
 ---
 # <a name="walkthrough-create-and-run-unit-tests-for-managed-code"></a>Tutorial: Crear y ejecutar pruebas unitarias en código administrado
 
@@ -465,7 +465,7 @@ public void Debit_WhenAmountIsMoreThanBalance_ShouldThrowArgumentOutOfRange()
 Las mejoras en el código de prueba condujeron a métodos de prueba más eficaces e informativos. Pero lo que es más importante, también mejoraron el código sometido a prueba.
 
 > [!TIP]
-> En este tutorial se utiliza el marco de pruebas unitarias de Microsoft para código administrado. El **Explorador de pruebas** también puede ejecutar pruebas desde marcos de pruebas unitarias de terceros que tengan adaptadores para el **Explorador de pruebas**. Para obtener más información, consulte [Instalar marcos de prueba unitaria de terceros](../test/install-third-party-unit-test-frameworks.md)
+> En este tutorial se utiliza el marco de pruebas unitarias de Microsoft para código administrado. El **Explorador de pruebas** también puede ejecutar pruebas desde marcos de pruebas unitarias de terceros que tengan adaptadores para el **Explorador de pruebas**. Para más información, vea [Instalar marcos de prueba unitaria de terceros](../test/install-third-party-unit-test-frameworks.md).
 
 ## <a name="see-also"></a>Vea también
 

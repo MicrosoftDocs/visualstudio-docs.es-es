@@ -7,12 +7,12 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 889195101123e98207b0b25f05b0aa24355abc95
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: 5c10a624d78c1dc362c9d0e5d7c0e58e24efc3cf
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65461617"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68918367"
 ---
 # <a name="overview-of-test-agents-and-test-controllers-for-running-load-tests"></a>Información general sobre agentes y controladores de pruebas para ejecutar pruebas de carga
 
@@ -69,17 +69,17 @@ El controlador de pruebas proporciona una arquitectura general para ejecutar las
 
 El agente de prueba se ejecuta como un servicio que realiza escuchas de solicitudes del controlador de pruebas para iniciar una nueva prueba. Cuando el agente de prueba recibe una solicitud, el servicio del agente de prueba inicia un proceso en el que se ejecutan las pruebas. Todos los agentes de prueba ejecutan la misma prueba de carga.
 
- El administrador asigna un peso a los agentes de prueba y la carga se distribuye según el peso de cada uno de ellos. Por ejemplo, si el agente de prueba 1 tiene un peso de 30, el agente de prueba 2 tiene un peso de 70 y la carga se establece en 1000 usuarios, entonces el agente 1 simulará 300 usuarios virtuales, mientras que el agente 2 simulará 700 usuarios virtuales. Vea [Administrar controladores de pruebas y agentes de pruebas con Visual Studio](../test/manage-test-controllers-and-test-agents.md).
+El administrador asigna un peso a los agentes de prueba y la carga se distribuye según el peso de cada uno de ellos. Por ejemplo, si el agente de prueba 1 tiene un peso de 30, el agente de prueba 2 tiene un peso de 70 y la carga se establece en 1000 usuarios, entonces el agente 1 simulará 300 usuarios virtuales, mientras que el agente 2 simulará 700 usuarios virtuales. Vea [Administrar controladores de pruebas y agentes de pruebas con Visual Studio](../test/manage-test-controllers-and-test-agents.md).
 
- El agente de prueba toma como entrada un conjunto de pruebas y un conjunto de parámetros de simulación. Un concepto clave es que las pruebas son independientes del equipo donde se ejecutan.
+El agente de prueba toma como entrada un conjunto de pruebas y un conjunto de parámetros de simulación. Un concepto clave es que las pruebas son independientes del equipo donde se ejecutan.
 
 ## <a name="test-controller-and-test-agent-connection-points"></a>Puntos de conexión del controlador y el agente de pruebas
 
 La siguiente ilustración muestra los puntos de conexión entre el controlador de prueba, el agente de prueba y el cliente. Describe qué puertos se usan para las conexiones entrantes y salientes, así como las restricciones de seguridad empleadas en estos puertos.
 
- ![Puertos y seguridad del controlador y el agente de pruebas](./media/test-controller-agent-firewall.png)
+![Puertos y seguridad del controlador y el agente de pruebas](./media/test-controller-agent-firewall.png)
 
- Para obtener más información, vea [Configuración de los puertos para los controladores de pruebas y los agentes de pruebas](../test/configure-ports-for-test-controllers-and-test-agents.md).
+Para obtener más información, vea [Configuración de los puertos para los controladores de pruebas y los agentes de pruebas](../test/configure-ports-for-test-controllers-and-test-agents.md).
 
 ## <a name="test-controller-and-agent-installation-information"></a>Información de instalación del controlador y el agente de pruebas
 

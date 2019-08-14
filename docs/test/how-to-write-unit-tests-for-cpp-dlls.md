@@ -7,34 +7,34 @@ manager: markl
 ms.workload:
 - cplusplus
 author: mikeblome
-ms.openlocfilehash: 56608e5c930dc94afbb9e8e7d78a8e95b8e2f88b
-ms.sourcegitcommit: ab06cde69d862440b4277bcd9bf02e7b50593a1b
+ms.openlocfilehash: f9f17b129b0d5d85abacb0723b57703db74bcbea
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "67132167"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68926666"
 ---
 # <a name="write-unit-tests-for-c-dlls-in-visual-studio"></a>Escribir pruebas unitarias para DLL de C/C++ en Visual Studio
 
- Hay varias maneras de probar código de DLL, dependiendo de si dicho código exporta las funciones que quiere probar. Elija una de las siguientes formas:
+Hay varias maneras de probar código de DLL, dependiendo de si dicho código exporta las funciones que quiere probar. Elija una de las siguientes formas:
 
- **Las pruebas unitarias solo llaman a funciones que se exportan desde la DLL:** Agregue un proyecto de prueba independiente como se describe en [Escritura de pruebas unitarias para C/C++](writing-unit-tests-for-c-cpp.md). En el proyecto de prueba, agregue una referencia al proyecto DLL.
+**Las pruebas unitarias solo llaman a funciones que se exportan desde la DLL:** Agregue un proyecto de prueba independiente como se describe en [Escritura de pruebas unitarias para C/C++](writing-unit-tests-for-c-cpp.md). En el proyecto de prueba, agregue una referencia al proyecto DLL.
 
- Vaya al procedimiento [Para hacer referencia a funciones exportadas del proyecto DLL](#projectRef).
+Vaya al procedimiento [Para hacer referencia a funciones exportadas del proyecto DLL](#projectRef).
 
- **La DLL se compila como un archivo .exe:** Agregue un proyecto de prueba independiente. Vincúlelo al archivo objeto de salida.
+**La DLL se compila como un archivo .exe:** Agregue un proyecto de prueba independiente. Vincúlelo al archivo objeto de salida.
 
- Vaya al procedimiento [Para vincular las pruebas a los archivos de biblioteca u objeto](#objectRef).
+Vaya al procedimiento [Para vincular las pruebas a los archivos de biblioteca u objeto](#objectRef).
 
- **Las pruebas unitarias llaman a funciones que no son miembro y que no se exportan desde la DLL, y la DLL se puede compilar como una biblioteca estática:** Cambie el proyecto DLL para que se compile como un archivo *.lib*. Agregue un proyecto de prueba independiente que haga referencia al proyecto en pruebas.
+**Las pruebas unitarias llaman a funciones que no son miembro y que no se exportan desde la DLL, y la DLL se puede compilar como una biblioteca estática:** Cambie el proyecto DLL para que se compile como un archivo *.lib*. Agregue un proyecto de prueba independiente que haga referencia al proyecto en pruebas.
 
- Este método tiene la ventaja de permitir que las pruebas usen miembros no exportados, pero sigue manteniendo las pruebas en un proyecto independiente.
+Este método tiene la ventaja de permitir que las pruebas usen miembros no exportados, pero sigue manteniendo las pruebas en un proyecto independiente.
 
- Vaya al procedimiento [Para cambiar la DLL a una biblioteca estática](#staticLink).
+Vaya al procedimiento [Para cambiar la DLL a una biblioteca estática](#staticLink).
 
- **Las pruebas unitarias deben llamar a funciones que no son miembro y que no se han exportado, y el código debe compilarse como una biblioteca de vínculos dinámicos (DLL):** Agregue las pruebas unitarias en el mismo proyecto que el código de producto.
+**Las pruebas unitarias deben llamar a funciones que no son miembro y que no se han exportado, y el código debe compilarse como una biblioteca de vínculos dinámicos (DLL):** Agregue las pruebas unitarias en el mismo proyecto que el código de producto.
 
- Vaya al procedimiento [Para agregar pruebas unitarias en el mismo proyecto](#sameProject).
+Vaya al procedimiento [Para agregar pruebas unitarias en el mismo proyecto](#sameProject).
 
 ## <a name="create-the-tests"></a>Crear las pruebas
 
@@ -93,7 +93,7 @@ ms.locfileid: "67132167"
       1. En el menú **Archivo**, seleccione **Nuevo** > **Proyecto**. En el cuadro de diálogo **Agregar un proyecto nuevo** establezca el valor de **Lenguaje** en C++ y escriba "prueba" en el cuadro de búsqueda. Después, elija el **proyecto de prueba unitaria de tipo nativo**.
 
       ::: moniker-end
-      
+
       ::: moniker range="vs-2017"
 
       1. En el menú **Archivo**, seleccione **Nuevo** > **Proyecto** > **Visual C++** > **Prueba** > **Proyecto de prueba unitaria de C++** .

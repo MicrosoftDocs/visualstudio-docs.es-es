@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 131afbaf4fcbdf5456a6276a36c551a47b663eec
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 895b797ad07018a9f4d4bf4c14b7f358a26f8eaa
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62897790"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68924413"
 ---
 # <a name="how-to-create-a-basic-phong-shader"></a>Procedimiento Crear un sombreador Phong básico
 
@@ -44,20 +44,20 @@ Antes de empezar, asegúrese de que se muestran la ventana **Propiedades** y el 
 > [!NOTE]
 > Para demostrar mejor el efecto del sombreador en esta ilustración, se especificó un color naranja mediante el parámetro **MaterialDiffuse** del sombreador y un acabado de aspecto metálico mediante los parámetros **MaterialSpecular** y **MaterialSpecularPower**. Para obtener información sobre los parámetros de materiales, vea la sección Vista previa de sombreadores en [Diseñador de sombras](../designers/shader-designer.md).
 
- ![Gráfico de sombreador y vista previa de su efecto](../designers/media/digit-lighting-graph.png)
+![Gráfico de sombreador y vista previa de su efecto](../designers/media/digit-lighting-graph.png)
 
- Es posible que algunas formas proporcionen mejores vistas previas para algunos sombreadores. Para más información sobre cómo obtener una vista previa de los sombreadores en el Diseñador de sombras, vea la sección Vista previa de sombreadores en [Diseñador de sombras](../designers/shader-designer.md)
+Es posible que algunas formas proporcionen mejores vistas previas para algunos sombreadores. Para más información sobre cómo obtener una vista previa de los sombreadores en el Diseñador de sombras, vea la sección Vista previa de sombreadores en [Diseñador de sombras](../designers/shader-designer.md)
 
- La siguiente ilustración muestra el sombreador descrito en este documento aplicado a un modelo 3D. La propiedad **MaterialSpecular** se establece en (1,00, 0,50, 0,20, 0,00) y su propiedad **MaterialSpecularPower** se establece en 16.
+La siguiente ilustración muestra el sombreador descrito en este documento aplicado a un modelo 3D. La propiedad **MaterialSpecular** se establece en (1,00, 0,50, 0,20, 0,00) y su propiedad **MaterialSpecularPower** se establece en 16.
 
 > [!NOTE]
 > La propiedad **MaterialSpecular** determina el acabado aparente del material de la superficie. Una superficie muy brillante como el cristal o el plástico suele tener un color especular que es un tono brillante de blanco. Una superficie metálica suele tener un color especular próximo al color difuso. Una superficie con acabado satinado suele tener un color especular que es un tono oscuro de gris.
 >
 > La propiedad **MaterialSpecularPower** determina la intensidad de los reflejos especulares. Las potencias especulares altas simulan reflejos más opacos y localizados. Las potencias especulares muy bajas simulan reflejos intensos y circulares que pueden saturar en exceso y ocultar el color de toda la superficie.
 
- ![Iluminación Phong aplicada a un modelo](../designers/media/digit-lighting-model.png)
+![Iluminación Phong aplicada a un modelo](../designers/media/digit-lighting-model.png)
 
- Para obtener más información sobre cómo aplicar un sombreador a un modelo 3D, vea [Cómo: Aplicar un sombreador a un modelo en 3D](../designers/how-to-apply-a-shader-to-a-3-d-model.md).
+Para obtener más información sobre cómo aplicar un sombreador a un modelo 3D, vea [Cómo: Aplicar un sombreador a un modelo en 3D](../designers/how-to-apply-a-shader-to-a-3-d-model.md).
 
 ## <a name="see-also"></a>Vea también
 

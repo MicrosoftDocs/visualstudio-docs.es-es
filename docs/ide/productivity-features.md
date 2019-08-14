@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d5116c2a979a45414046f0058d85ccbf0d179e24
-ms.sourcegitcommit: 9753c7544cec852ca5efd0834e0956d9e53a5734
+ms.openlocfilehash: f351ffefae818beb1f51eaa41fbeea1eab81de16
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "67046856"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68919474"
 ---
 # <a name="productivity-tips-for-visual-studio"></a>Sugerencias de productividad para Visual Studio
 
@@ -46,7 +46,7 @@ Escriba código más rápidamente con las características siguientes.
 
 ## <a name="navigate-within-your-code"></a>Navegar dentro del código
 
- Puede usar diversas técnicas para buscar determinadas ubicaciones del código e ir a ellas con más rapidez.
+Puede usar diversas técnicas para buscar determinadas ubicaciones del código e ir a ellas con más rapidez.
 
 - **Establecer marcadores en líneas de código**. Puede usar marcadores para navegar rápidamente a líneas de código concretas de un archivo.
 

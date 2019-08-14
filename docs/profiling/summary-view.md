@@ -15,19 +15,19 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e95e532e97253fc8ba338e27879d80dd9d664118
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 66d44ff0c2c2406e9ba4508c835deab571b70e44
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62420110"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68926492"
 ---
 # <a name="summary-view"></a>Vista Resumen
 En la vista Resumen se muestra información sobre las funciones o los objetos más exigentes en una generación de perfiles. Esta vista proporciona un gráfico de escala de tiempo y dos o más listas de las funciones o los objetos más exigentes según las métricas de rendimiento del método de generación de perfiles. Los datos de esta vista dependen del método de generación de perfiles utilizado (muestreo, instrumentación o simultaneidad) y de si se ha recopilado la asignación de memoria de .NET.
 
  Para todas las vistas Resumen, salvo la de datos de simultaneidad, el gráfico de escala de tiempo de la vista Resumen muestra la utilización del procesador (CPU) de la aplicación de la que se generan perfiles durante el tiempo en que se ha producido la generación de perfiles.
 
-- Si especifica un segmento de tiempo en el gráfico, puede volver a analizar los datos para ese segmento o acercar la presentación de la escala de tiempo al segmento especificado. Para obtener más información, vea [Cómo: Filtrar vistas de informe desde la escala de tiempo de resumen](../profiling/how-to-filter-report-views-from-the-summary-timeline.md)
+- Si especifica un segmento de tiempo en el gráfico, puede volver a analizar los datos para ese segmento o acercar la presentación de la escala de tiempo al segmento especificado. Para obtener más información, vea [Cómo: Filtrar vistas de informe desde la escala de tiempo de resumen](../profiling/how-to-filter-report-views-from-the-summary-timeline.md).
 
 - Puede hacer clic en una función en una lista de la vista Resumen para abrir la vista Detalles de la función. También puede hacer clic con el botón derecho en la función para acceder a otras opciones de vista.
 
