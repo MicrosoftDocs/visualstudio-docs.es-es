@@ -1,5 +1,5 @@
 ---
-title: Migración de extensibilidad del Diseñador XAML
+title: Migración de extensibilidad de Diseñador XAML
 ms.date: 07/09/2019
 ms.topic: conceptual
 author: lutzroeder
@@ -9,45 +9,45 @@ dev_langs:
 - csharp
 - vb
 monikerRange: vs-2019
-ms.openlocfilehash: 4485e9a11cb4770477374deed651fbff2df6df52
-ms.sourcegitcommit: 748d9cd7328a30f8c80ce42198a94a4b5e869f26
+ms.openlocfilehash: 6ffa8888529586e23d6f9762c3ec5b724c708ca5
+ms.sourcegitcommit: ab2c49ce72ccf44b27b5c8852466d15a910453a6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/15/2019
-ms.locfileid: "67890314"
+ms.lasthandoff: 08/14/2019
+ms.locfileid: "69024554"
 ---
-# <a name="xaml-designer-extensibility-migration"></a>Migración de extensibilidad del Diseñador XAML
+# <a name="xaml-designer-extensibility-migration"></a>Migración de extensibilidad del diseñador XAML
 
-En Visual Studio 2019, el Diseñador XAML admite dos arquitecturas diferentes: la arquitectura del Diseñador de aislamiento y la arquitectura de la superficie de aislamiento más reciente. Esta transición de la arquitectura es necesario para admitir tiempos de ejecución de destino que no se puede hospedar en un proceso de .NET Framework. Mover a la arquitectura de aislamiento superficie presenta cambios importantes en el modelo de extensibilidad de terceros. En este artículo se describe estos cambios que están disponibles en el canal de versión preliminar 16.2 de Visual Studio de 2019.
+En Visual Studio 2019, el diseñador XAML admite dos arquitecturas diferentes: la arquitectura de aislamiento del diseñador y la arquitectura de aislamiento de superficie más reciente. Esta transición de arquitectura es necesaria para admitir los tiempos de ejecución de destino que no se pueden hospedar en un proceso de .NET Framework. Al pasar a la arquitectura de aislamiento de superficie, se introducen cambios importantes en el modelo de extensibilidad de terceros. En este artículo se describen estos cambios, que están disponibles en Visual Studio 2019 a partir de la versión 16,3.
 
-**Aislamiento de diseñador** se utiliza el Diseñador de WPF para los proyectos que tienen como destino .NET Framework y admite *. design.dll* extensiones. Las extensiones de terceros, bibliotecas de controles y código de usuario se cargan en un proceso externo (*XDesProc.exe*) junto con el código del diseñador real y los paneles de diseñador.
+El diseñador de WPF usa el **aislamiento de diseñador** para los proyectos que tienen como destino el .NET Framework y admiten las extensiones. *Design. dll* . El código de usuario, las bibliotecas de control y las extensiones de terceros se cargan en un proceso externo (*XDesProc. exe*) junto con el código y los paneles del diseñador reales.
 
-**Aislamiento de superficie** se usa el diseñador UWP. También se usa el Diseñador de WPF para los proyectos que tienen como destino .NET Core. De forma aislada expuesta, bibliotecas de código y el control de usuario solo se cargan en un proceso independiente, mientras el diseñador y sus paneles se cargan en el proceso de Visual Studio (*DevEnv.exe*). El tiempo de ejecución utilizado para la ejecución de las bibliotecas de código y el control de usuario es diferente del usado por .NET Framework para el diseñador real y el código de extensibilidad de terceros.
+El diseñador UWP usa el **aislamiento de superficie** . El diseñador de WPF también lo usa para los proyectos que tienen como destino .NET Core. En el aislamiento de superficie, solo se cargan el código de usuario y las bibliotecas de control en un proceso independiente, mientras que el diseñador y sus paneles se cargan en el proceso de Visual Studio (*DevEnv. exe*). El tiempo de ejecución que se usa para ejecutar el código de usuario y las bibliotecas de controles es diferente del que utiliza el .NET Framework para el diseñador real y el código de extensibilidad de terceros.
 
-![arquitectura de migración de extensibilidad](media/xaml-designer-extensibility-migration-architecture.png)
+![extensibilidad: arquitectura de migración](media/xaml-designer-extensibility-migration-architecture.png)
 
-Debido a esta transición de la arquitectura, las extensiones de terceros ya no se cargan en el mismo proceso que las bibliotecas de control de terceros. Las extensiones ya no pueden tener dependencias directas en las bibliotecas de control o acceder directamente a objetos en tiempo de ejecución. Las extensiones que se han escrito previamente para la arquitectura de diseñador aislamiento mediante el *Microsoft.Windows.Extensibility.dll* API se debe migrar a un nuevo enfoque para trabajar con la arquitectura de la superficie de aislamiento. En la práctica, una extensión existente debe compilarse con los nuevos ensamblados de la API de extensibilidad. Tipos de acceso al control de tiempo de ejecución a través de [typeof](/dotnet/csharp/language-reference/keywords/typeof) o las instancias en tiempo de ejecución deben reemplazarse o quitar porque ahora se cargan bibliotecas de controles en un proceso diferente.
+Debido a esta transición de arquitectura, las extensiones de terceros ya no se cargan en el mismo proceso que las bibliotecas de control de terceros. Las extensiones ya no pueden tener dependencias directas en bibliotecas de controles ni acceder directamente a objetos en tiempo de ejecución. Las extensiones que se escribieron previamente para la arquitectura de aislamiento de diseñador mediante la API *Microsoft. Windows. Extensibility. dll* se deben migrar a un nuevo enfoque para trabajar con la arquitectura de aislamiento de superficie. En la práctica, se debe compilar una extensión existente con los nuevos ensamblados de la API de extensibilidad. El acceso a los tipos de control en tiempo de ejecución a través de [typeof](/dotnet/csharp/language-reference/keywords/typeof) o instancias en tiempo de ejecución se debe reemplazar o quitar, ya que las bibliotecas de control ahora se cargan en un proceso diferente.
 
-## <a name="new-extensibility-api-assemblies"></a>Nuevos ensamblados de la API de extensibilidad
+## <a name="new-extensibility-api-assemblies"></a>Nuevos ensamblados de API de extensibilidad
 
-Los nuevos ensamblados de la API de extensibilidad son similares a los ensamblados de API de extensibilidad existentes, pero siguen un esquema de nomenclatura diferente para diferenciarlos. De forma similar, los nombres de espacio de nombres han cambiado para reflejar los nuevos nombres de ensamblado.
+Los nuevos ensamblados de API de extensibilidad son similares a los ensamblados de la API de extensibilidad existentes, pero siguen un esquema de nomenclatura diferente para diferenciarlos. Del mismo modo, los nombres de los espacios de nombres han cambiado para reflejar los nuevos nombres de ensamblado.
 
-| Ensamblado de la API de diseñador aislamiento            | Ensamblado de aislamiento superficie de API                       |
+| Ensamblado de API de aislamiento del diseñador            | Ensamblado de API de aislamiento de superficie                       |
 |:------------------------------------------ |:---------------------------------------------------- |
 | Microsoft.Windows.Design.Extensibility.dll | Microsoft.VisualStudio.DesignTools.Extensibility.dll |
 | Microsoft.Windows.Design.Interaction.dll   | Microsoft.VisualStudio.DesignTools.Interaction.dll   |
 
-## <a name="new-file-extension-and-discovery"></a>Detección y la nueva extensión de archivo
+## <a name="new-file-extension-and-discovery"></a>Nueva extensión de archivo y detección
 
-En lugar de usar el *. design.dll* nueva superficie se detectarán las extensiones mediante el uso de extensión de archivo del *. designtools.dll* la extensión de archivo. *. design.dll* y *. designtools.dll* extensiones pueden existir en la misma *diseño* subcarpeta.
+En lugar de utilizar la extensión de archivo *. Design. dll* , se detectarán nuevas extensiones de Surface mediante la extensión de archivo *. designtools. dll* . las extensiones. *Design. dll* y *. designtools. dll* pueden existir en la misma subcarpeta de *diseño* .
 
-Mientras se compilan las bibliotecas de controles de terceros para el tiempo de ejecución de destino real (.NET Core o UWP), el *. designtools.dll* extensión siempre se debe compilar como un ensamblado de .NET Framework.
+Mientras que las bibliotecas de control de terceros se compilan para el tiempo de ejecución de destino real (.NET Core o UWP), la extensión *. designtools. dll* se debe compilar siempre como un ensamblado de .NET Framework.
 
-## <a name="decouple-attribute-tables-from-runtime-types"></a>Desacoplar las tablas de atributos de tipos en tiempo de ejecución
+## <a name="decouple-attribute-tables-from-runtime-types"></a>Desacoplar tablas de atributos de tipos en tiempo de ejecución
 
-El modelo de extensibilidad de la superficie de aislamiento no permite que las extensiones dependen de las bibliotecas de control real y, por lo tanto, las extensiones no pueden hacer referencia a tipos desde la biblioteca de controles. Por ejemplo, *MyLibrary.designtools.dll* no debe tener una dependencia en *MyLibrary.dll*.
+El modelo de extensibilidad de aislamiento de superficie no permite que las extensiones dependan de las bibliotecas de control reales y, por lo tanto, las extensiones no pueden hacer referencia a los tipos de la biblioteca de controles. Por ejemplo, *myLibrary. designtools. dll* no debe tener una dependencia en *myLibrary. dll*.
 
-Estas dependencias eran más comunes al registrar los metadatos de tipos a través de las tablas de atributos. Tipos de código de extensión que se hace referencia a la biblioteca de controles directamente a través de [typeof](/dotnet/csharp/language-reference/keywords/typeof) o [GetType](/dotnet/visual-basic/language-reference/operators/gettype-operator) se sustituye en las nuevas API mediante el uso de nombres de tipo basados en cadenas:
+Estas dependencias eran más comunes al registrar metadatos para tipos a través de tablas de atributos. El código de extensión que hace referencia a los tipos de biblioteca de controles directamente a través de [typeof](/dotnet/csharp/language-reference/keywords/typeof) o [GetType](/dotnet/visual-basic/language-reference/operators/gettype-operator) se sustituye en las nuevas API mediante el uso de nombres de tipo basados en cadenas:
 
 ```csharp
 using Microsoft.VisualStudio.DesignTools.Extensibility.Metadata;
@@ -94,7 +94,7 @@ End Class
 
 ## <a name="feature-providers-and-model-api"></a>Proveedores de características y API de modelo
 
-Proveedores de características se implementan en ensamblados de extensión y se cargan en el proceso de Visual Studio. `FeatureAttribute` seguirán haciendo referencia a tipos de proveedor de características directamente mediante [typeof](/dotnet/csharp/language-reference/keywords/typeof).
+Los proveedores de características se implementan en ensamblados de extensión y se cargan en el proceso de Visual Studio. `FeatureAttribute`seguirá haciendo referencia a los tipos de proveedor de características directamente mediante [typeof](/dotnet/csharp/language-reference/keywords/typeof).
 
 Actualmente, se admiten los siguientes proveedores de características:
 
@@ -104,9 +104,9 @@ Actualmente, se admiten los siguientes proveedores de características:
 * `ParentAdapter`
 * `PlacementAdapter`
 
-Dado que los proveedores de características ahora se cargan en un proceso diferente de las bibliotecas de código y control de tiempo de ejecución real, ya no son tener acceso directamente a objetos en tiempo de ejecución. En su lugar, todas las interacciones de este tipo deben convertirse para usar las API basadas en modelos correspondientes. La API del modelo se ha actualizado y el acceso a <xref:System.Type> o <xref:System.Object> sea ya no está disponible o se ha reemplazado por `TypeIdentifier` y `TypeDefinition`.
+Dado que los proveedores de características se cargan ahora en un proceso diferente del código en tiempo de ejecución y las bibliotecas de control reales, ya no pueden tener acceso a los objetos en tiempo de ejecución directamente. En su lugar, todas estas interacciones deben convertirse para usar las API basadas en modelos correspondientes. La API de modelo se ha actualizado y el acceso <xref:System.Type> a <xref:System.Object> o ya no está disponible o se ha reemplazado `TypeIdentifier` por `TypeDefinition`y.
 
-`TypeIdentifier` Representa una cadena sin un nombre de ensamblado que identifica un tipo. Un `TypeIdenfifier` se puede resolver como un `TypeDefinition` para consultar información adicional sobre el tipo. `TypeDefinition` no se almacenará en caché las instancias en el código de extensión.
+`TypeIdentifier`representa una cadena sin un nombre de ensamblado que identifica un tipo. Un `TypeIdenfifier` se puede resolver `TypeDefinition` como para consultar información adicional sobre el tipo. `TypeDefinition`las instancias no se pueden almacenar en caché en el código de la extensión.
 
 ```csharp
 TypeDefinition type = ModelFactory.ResolveType(
@@ -128,13 +128,13 @@ If type?.IsSubclassOf(buttonType) Then
 End If
 ```
 
-Las API se quitan del conjunto de API de extensibilidad aislamiento superficie:
+API quitadas del conjunto de API de extensibilidad de aislamiento de Surface:
 
 * `ModelFactory.CreateItem(EditingContext context, object item)`
 * `ViewItem.PlatformObject`
 * `ModelProperty.DefaultValue`
 
-Las API que usan `TypeIdentifier` en lugar de <xref:System.Type>:
+API que usan `TypeIdentifier` en lugar de <xref:System.Type>:
 
 * `ModelFactory.CreateItem(EditingContext context, Type itemType, params object[] arguments)`
 * `ModelFactory.CreateItem(EditingContext context, Type itemType, CreateOptions options, params object[] arguments)`
@@ -150,12 +150,12 @@ Las API que usan `TypeIdentifier` en lugar de <xref:System.Type>:
 * `ParentAdpater.CanParent(ModelItem parent, Type childType)`
 * `ParentAdapter.RedirectParent(ModelItem parent, Type childType)`
 
-Las API que usan `TypeIdentifier` en lugar de <xref:System.Type> y ya no admiten argumentos de constructor:
+Las API que `TypeIdentifier` utilizan en lugar <xref:System.Type> de y ya no admiten argumentos de constructor:
 
 * `ModelFactory.CreateItem(EditingContext context, TypeIdentifier typeIdentifier, params object[] arguments)`
 * `ModelFactory.CreateItem(EditingContext context, TypeIdentifier typeIdentifier, CreateOptions options, params object[] arguments)`
 
-Las API que usan `TypeDefinition` en lugar de <xref:System.Type>:
+API que usan `TypeDefinition` en lugar de <xref:System.Type>:
 
 * `ModelFactory.ResolveType(EditingContext context, TypeIdentifier typeIdentifier)`
 * `ValueTranslationService.GetProperties(Type itemType)`
@@ -173,7 +173,7 @@ Las API que usan `TypeDefinition` en lugar de <xref:System.Type>:
 * `AdapterService.GetAdapter<TAdapterType>(Type itemType)`
 * `AdapterService.GetAdapter(Type adapterType, Type itemType)`
 
-Las API que usan `ModelItem` en lugar de <xref:System.Object>:
+API que usan `ModelItem` en lugar de <xref:System.Object>:
 
 * `ModelItemCollection.Insert(int index, object value)`
 * `ModelItemCollection.Remove(object value)`
@@ -182,7 +182,12 @@ Las API que usan `ModelItem` en lugar de <xref:System.Object>:
 * `ModelItemDictionary.Remove(object key)`
 * `ModelItemDictionary.TryGetValue(object key, out ModelItem value)`
 
-Conoce los tipos primitivos como `Int32`, `String`, o `Thickness` puede pasarse a la API del modelo como instancias de .NET Framework y se convertirá en el objeto correspondiente en el proceso de destino en tiempo de ejecución. Por ejemplo:
+Además, `ModelItem` las API `SetValue` como solo admiten instancias de tipos primitivos o tipos de .NET Framework integrados que se pueden convertir para el tiempo de ejecución de destino. Actualmente se admiten estos tipos:
+
+* Tipos de `Boolean`.NET Framework primitivos: `Char`, `DateTime` `Byte`, `Double`, `Enum`,, ,`Int16` ,,`Int32` ,`SByte` ,, `Guid` `Int64` `Nullable` , `Single`, `String`, `Type`, `UInt16`, `UInt32`, `UInt64`,`Uri`
+* Tipos de .NET Framework de WPF conocidos (y tipos derivados `Brush`) `Color`: `CompositeTransform`, `CornerRadius`, `Duration`, `EasingFunctionBase`, `EasingMode`, `EllipseGeometry`, `FontFamily`, `GeneralTransform`, `Geometry` ,, , `GradientStopCollection`, `GradientStop`, `GridLength`, `ImageSource`, `InlineCollection`, `Inline`, `KeySpline`, `Material`, `Matrix`, `PathFigureCollection`, `PathFigure`, `PathSegmentCollection`, `PathSegment`, `Path`, `PointCollection`, `Point`, `PropertyPath`, `Rect`, `RepeatBehavior`, `Setter`, `Size`, `StaticResource`, `TextAlignment`, `TextDecorationCollection`, `ThemeResourceExtension`, `Thickness`, `TimeSpan`, `Transform3D`,`TransformCollection`
+
+Por ejemplo:
 
 ```csharp
 using Microsoft.VisualStudio.DesignTools.Extensibility.Features;
@@ -212,10 +217,10 @@ Public Class MyControlDefaultInitializer
 End Class
 ```
 
-Más ejemplos de código están disponibles en el [xaml designer extensibility muestras](https://github.com/microsoft/xaml-designer-extensibility-samples) repositorio.
+Puede encontrar más ejemplos de código en el repositorio [XAML-Designer-Extensibility-samples](https://github.com/microsoft/xaml-designer-extensibility-samples) .
 
-## <a name="limited-support-for-designdll-extensions"></a>Compatibilidad limitada. design.dll extensiones
+## <a name="limited-support-for-designdll-extensions"></a>Compatibilidad limitada para las extensiones. Design. dll
 
-Si cualquier *. designtools.dll* extensión se descubre para una biblioteca de controles, que se carga primero y detección de *. design.dll* extensiones se omite.
+Si se detecta alguna extensión *. designtools. dll* para una biblioteca de controles, se carga primero y la detección de las extensiones *. Design. dll* se omite.
 
-Si no hay ningún *. designtools.dll* extensiones están presentes, pero un *. design.dll* se encuentra la extensión, intente cargar este ensamblado para extraer la información de la tabla de atributos para admitir el servicio de lenguaje XAML el editor básico y escenarios de inspector de propiedad. Este mecanismo está limitado en el ámbito. No permite la carga de extensiones del Diseñador de aislamiento para ejecutar los proveedores de características, pero es posible que proporcionan compatibilidad básica para bibliotecas de controles WPF existentes.
+Si no hay extensiones *. designtools. dll* presentes pero se encuentra una extensión *. Design. dll* , el servicio de lenguaje XAML intenta cargar este ensamblado para extraer la información de la tabla de atributos para admitir escenarios básicos del editor y del inspector de propiedad. Este mecanismo está limitado en el ámbito. No permite la carga de extensiones de aislamiento del diseñador para ejecutar proveedores de características, pero puede proporcionar compatibilidad básica con las bibliotecas de controles WPF existentes.
