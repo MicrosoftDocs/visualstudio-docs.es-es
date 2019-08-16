@@ -996,6 +996,12 @@
                       href: ide/reference/options-text-editor-xml-formatting.md
                     - name: Varios
                       href: ide/reference/options-text-editor-xml-miscellaneous.md
+            - name: Diseñador de Windows Forms
+              items:
+                - name: General
+                  href: ide/reference/options-windows-forms-designer.md
+                - name: Personalización de IU de datos
+                  href: ide/reference/options-windows-forms-designer-data-ui-customization.md
             - name: XAML Designer
               href: ide/reference/xaml-designer.md
         - name: Resultados (ventana)

@@ -93,6 +93,10 @@
                   href: l2dbform-xaml-cs-source-code.md
 - name: Windows Forms
   items:
+    - name: Información general del Diseñador de Windows Forms
+      href: windows-forms-designer-overview.md
+    - name: Introducción a Diseñador de Windows Forms
+      href: walkthrough-windows-forms-designer.md
     - name: 'Tutorial 1: Creación de un visor de imágenes (C#)'
       items:
         - name: Información general

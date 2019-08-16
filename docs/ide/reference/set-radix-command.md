@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 70b61dff4ebe7486c2e04e4fd3061cd4110feca1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 13341d8cb6a708f4e10f211bd47b79a75e1b6e2a
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62952040"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68926036"
 ---
 # <a name="set-radix-command"></a>Establecer base (Comando)
 Establece o devuelve la base numérica que se ha usado para mostrar valores enteros.
@@ -30,18 +30,18 @@ Debug.SetRadix [10 | 16 | hex | dec]
 ```
 
 ## <a name="arguments"></a>Argumentos
- `10` o `16` o `hex` o `dec`
+`10` o `16` o `hex` o `dec`
 
- Opcional. Indica decimal (10 o dec) o hexadecimal (16 o hex). Si se omite un argumento, se devuelve el valor base actual.
+Opcional. Indica decimal (10 o dec) o hexadecimal (16 o hex). Si se omite un argumento, se devuelve el valor base actual.
 
 ## <a name="example"></a>Ejemplo
- En este ejemplo se establece el entorno para mostrar valores enteros en formato hexadecimal.
+En este ejemplo se establece el entorno para mostrar valores enteros en formato hexadecimal.
 
 ```cmd
 >Debug.SetRadix hex
 ```
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Otras referencias
 
 - [Comandos de Visual Studio](../../ide/reference/visual-studio-commands.md)
 - [Ventana Comandos](../../ide/reference/command-window.md)

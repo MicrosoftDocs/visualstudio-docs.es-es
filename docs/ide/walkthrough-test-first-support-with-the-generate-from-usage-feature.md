@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 186713daa3d4c913926779f79ffc61ff488578d5
-ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.openlocfilehash: 039c022cc5a8883e5687630f5243d8652ff036e7
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "66262852"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68925848"
 ---
 # <a name="walkthrough-test-first-development-with-the-generate-from-usage-feature"></a>Tutorial: Desarrollo basado en pruebas previas con la característica de generación a partir del uso
 
@@ -26,9 +26,9 @@ En este tema se muestra cómo usar la característica [Generar a partir del uso]
 
  El*desarrollo de prueba previa* es un enfoque de diseño de software en el que primero se escriben pruebas unitarias basadas en las especificaciones del producto y, a continuación, se escribe el código fuente que se necesita para que las pruebas se realicen correctamente. Visual Studio admite el desarrollo de prueba previa mediante la generación de nuevos tipos y miembros en el código fuente al hacerles referencia en los casos de prueba, antes de que se definan.
 
- Visual Studio genera los nuevos tipos y miembros con una interrupción mínima del flujo de trabajo. Puede crear códigos auxiliares para tipos, métodos, propiedades, campos o constructores sin abandonar su ubicación actual en el código. Al abrir un cuadro de diálogo para especificar opciones para la generación de tipos, el foco vuelve inmediatamente al archivo abierto actual cuando se cierra el cuadro de diálogo.
+Visual Studio genera los nuevos tipos y miembros con una interrupción mínima del flujo de trabajo. Puede crear códigos auxiliares para tipos, métodos, propiedades, campos o constructores sin abandonar su ubicación actual en el código. Al abrir un cuadro de diálogo para especificar opciones para la generación de tipos, el foco vuelve inmediatamente al archivo abierto actual cuando se cierra el cuadro de diálogo.
 
- La característica **Generar a partir del uso** puede usarse con marcos de pruebas que se integran con Visual Studio. En este tema se muestra el marco de pruebas unitarias de Microsoft.
+La característica **Generar a partir del uso** puede usarse con marcos de pruebas que se integran con Visual Studio. En este tema se muestra el marco de pruebas unitarias de Microsoft.
 
 [!INCLUDE[note_settings_general](../data-tools/includes/note_settings_general_md.md)]
 
