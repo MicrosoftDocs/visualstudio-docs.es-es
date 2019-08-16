@@ -9,12 +9,12 @@ ms.assetid: 1118c604-4b1b-4b21-a04e-45995b676fa8
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: b8548fb33e5a4b9156701e12231324e3f59c88f2
-ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.openlocfilehash: e2330f5d1c47c9fc3cc578f286be005710b08f59
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66747246"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68918200"
 ---
 # <a name="how-to-create-an-add-in-for-the-web-performance-test-results-viewer"></a>Procedimiento Creación de un complemento para el Visor de resultados de pruebas de rendimiento web
 
@@ -43,9 +43,9 @@ Cree o abra una solución no destinada a producción con la que pueda experiment
 
 Un complemento es un archivo DLL compilado que se ejecuta dentro del entorno de desarrollo integrado (IDE) de Visual Studio. El compilador ayuda a proteger la propiedad intelectual y mejora el rendimiento. A pesar de que los complementos se pueden crear manualmente, es posible que le resulte más sencillo usar el **Asistente para complementos**. Este asistente crea un complemento funcional, aunque básico, que se puede ejecutar inmediatamente después de haberlo creado. Una vez que el **Asistente para complementos** genere el programa básico, puede agregarle código y personalizarlo.
 
- El **Asistente para complementos** le permite proporcionar un nombre para mostrar y una descripción para el complemento. Ambos aparecerán en el **Administrador de complementos**. Además, puede dejar que el asistente genere código que agrega al menú **Herramientas** un comando para abrir el complemento. También puede optar por mostrar un cuadro **Acerca de** personalizado para el complemento. Cuando se complete el asistente, aparecerá un proyecto nuevo con una sola clase que implementa el complemento. La clase se denomina Connect.
+El **Asistente para complementos** le permite proporcionar un nombre para mostrar y una descripción para el complemento. Ambos aparecerán en el **Administrador de complementos**. Además, puede dejar que el asistente genere código que agrega al menú **Herramientas** un comando para abrir el complemento. También puede optar por mostrar un cuadro **Acerca de** personalizado para el complemento. Cuando se complete el asistente, aparecerá un proyecto nuevo con una sola clase que implementa el complemento. La clase se denomina Connect.
 
- El **Administrador de complementos** se usa al final de este artículo.
+El **Administrador de complementos** se usa al final de este artículo.
 
 ### <a name="to-create-an-add-in-by-using-the-add-in-wizard"></a>Para crear un complemento con el Asistente para complementos
 
@@ -326,9 +326,9 @@ Para mejorar la seguridad evitando que complementos malintencionados se activen 
 
 Además, esta página de opciones permite especificar las carpetas en las que Visual Studio busca los archivos de registro *.AddIn*. Esto mejora la seguridad porque permite limitar las ubicaciones donde se pueden leer los archivos de registro *.AddIn*. Esto ayuda a evitar que se usen involuntariamente archivos *.AddIn* malintencionados.
 
- **Configuración de seguridad de complementos**
+**Configuración de seguridad de complementos**
 
- La configuración en la página de opciones relativa a la seguridad de los complementos es la siguiente:
+La configuración en la página de opciones relativa a la seguridad de los complementos es la siguiente:
 
 - **Permitir la carga de componentes de complementos.** Esta opción está seleccionada de forma predeterminada. Cuando se activa, es posible cargar complementos en Visual Studio. De lo contrario, no es posible cargar complementos en Visual Studio.
 
