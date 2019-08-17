@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 47bbb39cadb6a092f71ebd7b3907f34fcc2782ce
-ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
+ms.openlocfilehash: 9a51ac9509cf891c05166d46e4b72b862c0dc723
+ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "65842048"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "69547081"
 ---
 # <a name="ca1716-identifiers-should-not-match-keywords"></a>CA1716: Los identificadores no deben coincidir con palabras clave
 
@@ -30,15 +30,15 @@ ms.locfileid: "65842048"
 |Categoría|Microsoft.Naming|
 |Cambio problemático|Problemático|
 
-## <a name="cause"></a>Motivo
+## <a name="cause"></a>Causa
 
-El nombre de un espacio de nombres, tipo, o virtual o miembro de interfaz que coincida con una palabra clave reservada en un lenguaje de programación.
+El nombre de un espacio de nombres, tipo o miembro virtual o de interfaz coincide con una palabra clave reservada en un lenguaje de programación.
 
-De forma predeterminada, esta regla solo se examina visible externamente espacios de nombres, tipos y miembros, pero se trata de [configurable](#configurability).
+De forma predeterminada, esta regla solo examina los espacios de nombres, tipos y miembros visibles externamente, pero esto es [configurable](#configurability).
 
 ## <a name="rule-description"></a>Descripción de la regla
 
-Los identificadores para los espacios de nombres, tipos y virtual y los miembros de interfaz no deberían coincidir con palabras clave definidas por los lenguajes que tienen como destino common language runtime. Según el idioma que se usa y la palabra clave, las ambigüedades y errores del compilador pueden dificultar la biblioteca usar.
+Los identificadores de los espacios de nombres, los tipos y los miembros virtuales y de interfaz no deben coincidir con las palabras clave definidas por los lenguajes que tienen como destino el Common Language Runtime. Dependiendo del lenguaje que se use y de la palabra clave, los errores del compilador y las ambigüedades pueden dificultar el uso de la biblioteca.
 
 Esta regla comprueba las palabras clave en los idiomas siguientes:
 
@@ -46,22 +46,22 @@ Esta regla comprueba las palabras clave en los idiomas siguientes:
 - C#
 - C++/CLI
 
-Comparación entre mayúsculas y minúsculas se utiliza para las palabras clave de Visual Basic, y se usa la comparación distingue mayúsculas de minúsculas para los demás idiomas.
+La comparación sin distinción entre mayúsculas y minúsculas se usa para palabras clave de Visual Basic y la comparación con distinción entre mayúsculas y minúsculas se usa para los demás idiomas.
 
 ## <a name="how-to-fix-violations"></a>Cómo corregir infracciones
 
-Seleccione un nombre que no aparece en la lista de palabras clave.
+Seleccione un nombre que no aparezca en la lista de palabras clave.
 
-## <a name="when-to-suppress-warnings"></a>Cuándo Suprimir advertencias
+## <a name="when-to-suppress-warnings"></a>Cuándo suprimir advertencias
 
-Puede suprimir una advertencia de esta regla si está convencido de que el identificador de no confundir a los usuarios de la API, y que la biblioteca se puede usar en todos los idiomas disponibles en. NET.
+Puede suprimir una advertencia de esta regla si está convencido de que el identificador no confundirá a los usuarios de la API y que la biblioteca se puede usar en todos los idiomas disponibles en .NET.
 
-## <a name="configurability"></a>Capacidad de configuración
+## <a name="configurability"></a>Configurabilidad
 
-Si ejecuta esta regla de [analizadores de FxCop](install-fxcop-analyzers.md) (y no a través de análisis de código estático), puede configurar qué partes de su código base para ejecutar esta regla en, en función de su accesibilidad. Por ejemplo, para especificar que debe ejecutarse la regla sólo con respecto a la superficie de API no públicos, agregue el siguiente par clave-valor a un archivo .editorconfig en el proyecto:
+Si está ejecutando esta regla desde los [analizadores de FxCop](install-fxcop-analyzers.md) (y no con el análisis heredado), puede configurar en qué partes del código base ejecutar esta regla, según su accesibilidad. Por ejemplo, para especificar que la regla se debe ejecutar solo en la superficie de API no pública, agregue el siguiente par clave-valor a un archivo. editorconfig en el proyecto:
 
 ```ini
 dotnet_code_quality.ca1716.api_surface = private, internal
 ```
 
-Puede configurar esta opción para simplemente esta regla, para todas las reglas o para todas las reglas de esta categoría (convenciones de nomenclatura). Para obtener más información, consulte [analizadores de FxCop configurar](configure-fxcop-analyzers.md).
+Puede configurar esta opción solo para esta regla, para todas las reglas o para todas las reglas de esta categoría (nomenclatura). Para obtener más información, vea [configurar analizadores de FxCop](configure-fxcop-analyzers.md).

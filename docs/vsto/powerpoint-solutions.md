@@ -1,6 +1,6 @@
 ---
 title: Soluciones de PowerPoint
-ms.date: 02/02/2017
+ms.date: 08/14/2019
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -17,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 9d2c85a4af986c62d3e3f3c3a3f4333baa2975ee
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 70968682a8221b88859fd561c9f678aced2911b9
+ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68926427"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "69551469"
 ---
 # <a name="powerpoint-solutions"></a>Soluciones de PowerPoint
   Visual Studio ofrece plantillas de proyecto que puede usarse para crear complementos de VSTO para Microsoft Office Outlook. Los complementos de VSTO se pueden usar para automatizar PowerPoint, ampliar las características de PowerPoint o personalizar la interfaz de usuario (UI) de PowerPoint.
@@ -31,8 +31,7 @@ ms.locfileid: "68926427"
 
  [!INCLUDE[appliesto_pptallapp](../vsto/includes/appliesto-pptallapp-md.md)]
 
-> [!NOTE]
-> ¿Está interesado en desarrollar soluciones que amplíen la experiencia de Office en [varias plataformas](https://dev.office.com/add-in-availability)? Consulte el nuevo [modelo de complementos de Office](https://dev.office.com/docs/add-ins/overview/office-add-ins). Los complementos de Office tienen una pequeña superficie en comparación con las soluciones y los complementos de VSTO, y puede compilarlos con casi cualquier tecnología de programación web, como HTML5, JavaScript, CSS3 y XML.
+[!include[Add-ins note](includes/addinsnote.md)]
 
  ![vínculo a vídeo](../vsto/media/playvideo.gif "vínculo a vídeo") Para ver una demostración en vídeo relacionada, vea [cómo: ¿Crear un complemento para Microsoft PowerPoint? ](http://go.microsoft.com/fwlink/?LinkId=132767).
 
@@ -69,7 +68,7 @@ ms.locfileid: "68926427"
 |----------|--------------------------|
 |Crear un panel de tareas personalizado.|[Paneles de tareas personalizados](../vsto/custom-task-panes.md)|
 |Agregar pestañas personalizadas a la cinta.|[Información general sobre la cinta](../vsto/ribbon-overview.md)|
-|Agregar grupos personalizados a una pestaña integrada en la cinta.|[Cómo: Personalizar una pestaña integrada](../vsto/how-to-customize-a-built-in-tab.md)|
+|Agregar grupos personalizados a una pestaña integrada en la cinta.|[Procedimientos: Personalizar una pestaña integrada](../vsto/how-to-customize-a-built-in-tab.md)|
 
  Para obtener más información sobre cómo personalizar la interfaz de usuario de PowerPoint y otras aplicaciones Microsoft Office, consulte Personalización de la [interfaz de usuario de Office](../vsto/office-ui-customization.md).
 

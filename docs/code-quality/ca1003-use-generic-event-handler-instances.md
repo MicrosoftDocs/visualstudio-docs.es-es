@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 66bb2b2229608c1a7710b7c5c71cbc0d701234e3
-ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
+ms.openlocfilehash: a1ef4258d1b095395be34c7004e3f783b973897d
+ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "66714378"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "69547879"
 ---
 # <a name="ca1003-use-generic-event-handler-instances"></a>CA1003: Utilizar instancias genéricas de controlador de eventos
 
@@ -33,44 +33,44 @@ ms.locfileid: "66714378"
 |Categoría|Microsoft.Design|
 |Cambio problemático|Problemático|
 
-## <a name="cause"></a>Motivo
+## <a name="cause"></a>Causa
 
-Un tipo contiene a un delegado que devuelve void y cuya firma contiene dos parámetros (el primero un objeto y el segundo un tipo asignable a EventArgs) y el contenedor .NET destinos de ensamblado.
+Un tipo contiene un delegado que devuelve void y cuya firma contiene dos parámetros (el primero es un objeto y el segundo un tipo que se puede asignar a EventArgs) y el ensamblado contenedor tiene como destino .NET.
 
-De forma predeterminada, esta regla busca solo en tipos visibles externamente, pero se trata de [configurable](#configurability).
+De forma predeterminada, esta regla solo examina los tipos visibles externamente, pero esto es [configurable](#configurability).
 
 ## <a name="rule-description"></a>Descripción de la regla
 
-Antes de. NET, para pasar información personalizada al controlador de eventos, un nuevo delegado tuvo que se puede declarar que especificó una clase que se derivó de la <xref:System.EventArgs?displayProperty=fullName> clase. En. NET, el tipo genérico <xref:System.EventHandler%601?displayProperty=fullName> delegado permite que cualquier clase que se deriva de <xref:System.EventArgs> para usarse junto con el controlador de eventos.
+Antes de .net, para pasar información personalizada al controlador de eventos, se tenía que declarar un nuevo delegado que especifica una clase que se deriva de la <xref:System.EventArgs?displayProperty=fullName> clase. En .net, el delegado <xref:System.EventHandler%601?displayProperty=fullName> genérico permite que cualquier clase derivada de <xref:System.EventArgs> se use junto con el controlador de eventos.
 
 ## <a name="how-to-fix-violations"></a>Cómo corregir infracciones
 
-Para corregir una infracción de esta regla, quite el delegado y reemplace su uso con el <xref:System.EventHandler%601?displayProperty=fullName> delegar.
+Para corregir una infracción de esta regla, quite el delegado y reemplace su uso con el <xref:System.EventHandler%601?displayProperty=fullName> delegado.
 
-Si el delegado es generado automáticamente por el compilador de Visual Basic, cambie la sintaxis de la declaración de evento para usar el <xref:System.EventHandler%601?displayProperty=fullName> delegar.
+Si el delegado se genera automáticamente mediante el compilador Visual Basic, cambie la sintaxis de la declaración de evento para <xref:System.EventHandler%601?displayProperty=fullName> usar el delegado.
 
-## <a name="when-to-suppress-warnings"></a>Cuándo Suprimir advertencias
+## <a name="when-to-suppress-warnings"></a>Cuándo suprimir advertencias
 
 No suprima las advertencias de esta regla.
 
-## <a name="configurability"></a>Capacidad de configuración
+## <a name="configurability"></a>Configurabilidad
 
-Si ejecuta esta regla de [analizadores de FxCop](install-fxcop-analyzers.md) (y no a través de análisis de código estático), puede configurar qué partes de su código base para ejecutar esta regla en, en función de su accesibilidad. Por ejemplo, para especificar que debe ejecutarse la regla sólo con respecto a la superficie de API no públicos, agregue el siguiente par clave-valor a un archivo .editorconfig en el proyecto:
+Si está ejecutando esta regla desde los [analizadores de FxCop](install-fxcop-analyzers.md) (y no con el análisis heredado), puede configurar en qué partes del código base ejecutar esta regla, según su accesibilidad. Por ejemplo, para especificar que la regla se debe ejecutar solo en la superficie de API no pública, agregue el siguiente par clave-valor a un archivo. editorconfig en el proyecto:
 
 ```ini
 dotnet_code_quality.ca1003.api_surface = private, internal
 ```
 
-Puede configurar esta opción para simplemente esta regla, para todas las reglas o para todas las reglas de esta categoría (diseño). Para obtener más información, consulte [analizadores de FxCop configurar](configure-fxcop-analyzers.md).
+Puede configurar esta opción solo para esta regla, para todas las reglas o para todas las reglas de esta categoría (diseño). Para obtener más información, vea [configurar analizadores de FxCop](configure-fxcop-analyzers.md).
 
 ## <a name="example"></a>Ejemplo
 
-El ejemplo siguiente muestra a un delegado que infringe la regla. En el ejemplo de Visual Basic, los comentarios describen cómo modificar el ejemplo para cumplir la regla. Por ejemplo, C#, sigue un ejemplo que muestra el código modificado.
+En el ejemplo siguiente se muestra un delegado que infringe la regla. En el Visual Basic ejemplo, los comentarios describen cómo modificar el ejemplo para satisfacer la regla. En el C# ejemplo siguiente, se muestra el código modificado.
 
 [!code-vb[FxCop.Design.CustomEventHandler#1](../code-quality/codesnippet/VisualBasic/ca1003-use-generic-event-handler-instances_1.vb)]
 [!code-csharp[FxCop.Design.CustomEventHandler#1](../code-quality/codesnippet/CSharp/ca1003-use-generic-event-handler-instances_1.cs)]
 
-El fragmento de código siguiente quita la declaración de delegado del ejemplo anterior, que cumple la regla. Reemplaza su uso en el `ClassThatRaisesEvent` y `ClassThatHandlesEvent` métodos utilizando el <xref:System.EventHandler%601?displayProperty=fullName> delegar.
+En el fragmento de código siguiente se quita la declaración de delegado del ejemplo anterior, que cumple la regla. Reemplaza su uso en los `ClassThatRaisesEvent` métodos y `ClassThatHandlesEvent` mediante el <xref:System.EventHandler%601?displayProperty=fullName> delegado.
 
 [!code-csharp[FxCop.Design.GenericEventHandler#1](../code-quality/codesnippet/CSharp/ca1003-use-generic-event-handler-instances_2.cs)]
 
@@ -78,11 +78,11 @@ El fragmento de código siguiente quita la declaración de delegado del ejemplo 
 
 - [CA1005: Evite parámetros excesivos en tipos genéricos](../code-quality/ca1005-avoid-excessive-parameters-on-generic-types.md)
 - [CA1010: Las colecciones deben implementar la interfaz genérica](../code-quality/ca1010-collections-should-implement-generic-interface.md)
-- [CA1000: No declarar a miembros estáticos en tipos genéricos](../code-quality/ca1000-do-not-declare-static-members-on-generic-types.md)
+- [CA1000: No declarar miembros estáticos en tipos genéricos](../code-quality/ca1000-do-not-declare-static-members-on-generic-types.md)
 - [CA1002: No exponer listas genéricas](../code-quality/ca1002-do-not-expose-generic-lists.md)
-- [CA1006: No anidar tipos genéricos en firmas de miembro](../code-quality/ca1006-do-not-nest-generic-types-in-member-signatures.md)
-- [CA1004: Métodos genéricos deben proporcionar un parámetro de tipo](../code-quality/ca1004-generic-methods-should-provide-type-parameter.md)
-- [CA1007: Utilizar valores genéricos cuando sea apropiado](../code-quality/ca1007-use-generics-where-appropriate.md)
+- [CA1006: No anide tipos genéricos en firmas de miembro](../code-quality/ca1006-do-not-nest-generic-types-in-member-signatures.md)
+- [CA1004: Los métodos genéricos deben proporcionar un parámetro de tipo](../code-quality/ca1004-generic-methods-should-provide-type-parameter.md)
+- [CA1007: Usar genéricos cuando sea necesario](../code-quality/ca1007-use-generics-where-appropriate.md)
 
 ## <a name="see-also"></a>Vea también
 

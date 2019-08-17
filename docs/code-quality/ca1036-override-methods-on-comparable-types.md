@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4d08644ede6b9b28496cff585624ea37858afd49
-ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
+ms.openlocfilehash: 2a4e04e1afdbecdc9c333ea43a52bff3123d448a
+ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "65842289"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "69547621"
 ---
 # <a name="ca1036-override-methods-on-comparable-types"></a>CA1036: Invalidar métodos en tipos comparables
 
@@ -30,19 +30,19 @@ ms.locfileid: "65842289"
 |Categoría|Microsoft.Design|
 |Cambio problemático|Poco problemático|
 
-## <a name="cause"></a>Motivo
+## <a name="cause"></a>Causa
 
-Un tipo implementa la <xref:System.IComparable?displayProperty=fullName> interfaz y no invalida <xref:System.Object.Equals%2A?displayProperty=fullName> o no sobrecarga el operador específico del lenguaje para la igualdad, desigualdad, menor-que o mayor-que. La regla no informa de una infracción si el tipo hereda solo una implementación de la interfaz.
+Un tipo implementa la <xref:System.IComparable?displayProperty=fullName> interfaz y no invalida <xref:System.Object.Equals%2A?displayProperty=fullName> o no sobrecarga el operador específico del lenguaje para la igualdad, desigualdad, menor que o mayor que. La regla no notifica una infracción si el tipo hereda solo una implementación de la interfaz.
 
-De forma predeterminada, esta regla solo se examina los tipos públicos y protegidos, pero se trata de [configurable](#configurability).
+De forma predeterminada, esta regla solo examina los tipos públicos y protegidos, pero esto es [configurable](#configurability).
 
 ## <a name="rule-description"></a>Descripción de la regla
 
-Los tipos que definen un criterio de ordenación personalizados implementan la <xref:System.IComparable> interfaz. El <xref:System.IComparable.CompareTo%2A> método devuelve un valor entero que indica el orden correcto para que dos instancias del tipo. Esta regla identifica los tipos que establezca un criterio de ordenación. Establecer un criterio de ordenación implica que el significado normal de igualdad, desigualdad, menor-que y mayor-que no son aplicables. Cuando se proporciona una implementación de <xref:System.IComparable>, normalmente debe invalidar también <xref:System.Object.Equals%2A> para que devuelva valores que sean coherentes con <xref:System.IComparable.CompareTo%2A>. Si invalida <xref:System.Object.Equals%2A> y son de codificación en un lenguaje que admite las sobrecargas de operador, también debe proporcionar los operadores que son coherentes con <xref:System.Object.Equals%2A>.
+Los tipos que definen un criterio de ordenación <xref:System.IComparable> personalizado implementan la interfaz. El <xref:System.IComparable.CompareTo%2A> método devuelve un valor entero que indica el criterio de ordenación correcto para dos instancias del tipo. Esta regla identifica los tipos que establecen un criterio de ordenación. Establecer un criterio de ordenación implica que no se aplica el significado ordinario de igualdad, desigualdad, menor que y mayor que. Cuando se proporciona una implementación de <xref:System.IComparable>, normalmente también se debe invalidar <xref:System.Object.Equals%2A> para que devuelva valores que sean coherentes con <xref:System.IComparable.CompareTo%2A>. Si invalida <xref:System.Object.Equals%2A> y está codificando en un lenguaje que admite sobrecargas de operador, también debe proporcionar operadores coherentes con <xref:System.Object.Equals%2A>.
 
 ## <a name="how-to-fix-violations"></a>Cómo corregir infracciones
 
-Para corregir una infracción de esta regla, invalidar <xref:System.Object.Equals%2A>. Si su lenguaje de programación admite la sobrecarga de operadores, proporcione los siguientes operadores:
+Para corregir una infracción de esta regla, <xref:System.Object.Equals%2A>invalide. Si el lenguaje de programación admite la sobrecarga de operadores, proporcione los operadores siguientes:
 
 - op_Equality
 - op_Inequality
@@ -58,27 +58,27 @@ En C#, los tokens que se usan para representar estos operadores son los siguient
 >
 ```
 
-## <a name="when-to-suppress-warnings"></a>Cuándo Suprimir advertencias
+## <a name="when-to-suppress-warnings"></a>Cuándo suprimir advertencias
 
-Es seguro suprimir una advertencia de regla CA1036 si se ha provocado la infracción a la falta de operadores y el lenguaje de programación no admite la sobrecarga de operadores, como sucede con Visual Basic. Si determina que la implementación de los operadores no tiene sentido en el contexto de la aplicación, también es seguro suprimir una advertencia de esta regla cuando se desencadena en los operadores de igualdad distintos op_Equality. Sin embargo, debe invalidar siempre op_Equality y el operador == si invalida <xref:System.Object.Equals%2A?displayProperty=nameWithType>.
+Es seguro suprimir una advertencia de la regla CA1036 cuando la infracción está causada por operadores que faltan y el lenguaje de programación no admite la sobrecarga de operadores, como es el caso de Visual Basic. Si determina que la implementación de los operadores no tiene sentido en el contexto de la aplicación, también es seguro suprimir una advertencia de esta regla cuando se activa en operadores de igualdad distintos de op_Equality. Sin embargo, siempre debe reemplazar op_Equality y el operador = = si invalida <xref:System.Object.Equals%2A?displayProperty=nameWithType>.
 
-## <a name="configurability"></a>Capacidad de configuración
+## <a name="configurability"></a>Configurabilidad
 
-Si ejecuta esta regla de [analizadores de FxCop](install-fxcop-analyzers.md) (y no a través de análisis de código estático), puede configurar qué partes de su código base para ejecutar esta regla en, en función de su accesibilidad. Por ejemplo, para especificar que debe ejecutarse la regla sólo con respecto a la superficie de API no públicos, agregue el siguiente par clave-valor a un archivo .editorconfig en el proyecto:
+Si está ejecutando esta regla desde los [analizadores de FxCop](install-fxcop-analyzers.md) (y no con el análisis heredado), puede configurar en qué partes del código base ejecutar esta regla, según su accesibilidad. Por ejemplo, para especificar que la regla se debe ejecutar solo en la superficie de API no pública, agregue el siguiente par clave-valor a un archivo. editorconfig en el proyecto:
 
 ```ini
 dotnet_code_quality.ca1036.api_surface = private, internal
 ```
 
-Puede configurar esta opción para simplemente esta regla, para todas las reglas o para todas las reglas de esta categoría (diseño). Para obtener más información, consulte [analizadores de FxCop configurar](configure-fxcop-analyzers.md).
+Puede configurar esta opción solo para esta regla, para todas las reglas o para todas las reglas de esta categoría (diseño). Para obtener más información, vea [configurar analizadores de FxCop](configure-fxcop-analyzers.md).
 
 ## <a name="examples"></a>Ejemplos
 
-El código siguiente contiene un tipo que implementa correctamente <xref:System.IComparable>. Comentarios de código identifican los métodos que satisfacen diversas reglas que están relacionados con <xref:System.Object.Equals%2A> y <xref:System.IComparable> interfaz.
+El código siguiente contiene un tipo que implementa <xref:System.IComparable>correctamente. Los comentarios de código identifican los métodos que cumplen varias reglas que <xref:System.Object.Equals%2A> están relacionadas <xref:System.IComparable> con y la interfaz.
 
 [!code-csharp[FxCop.Design.IComparable#1](../code-quality/codesnippet/CSharp/ca1036-override-methods-on-comparable-types_1.cs)]
 
-El siguiente código de aplicación comprueba el comportamiento de la <xref:System.IComparable> implementación que se mostró anteriormente.
+El siguiente código de aplicación comprueba el comportamiento de <xref:System.IComparable> la implementación que se mostró anteriormente.
 
 [!code-csharp[FxCop.Design.TestIComparable#1](../code-quality/codesnippet/CSharp/ca1036-override-methods-on-comparable-types_2.cs)]
 

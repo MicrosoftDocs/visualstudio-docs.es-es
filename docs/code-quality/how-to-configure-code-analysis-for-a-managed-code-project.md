@@ -13,21 +13,21 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: f3c8fbde60e247ca9ec5fe82c9a16f28aded2abc
-ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
+ms.openlocfilehash: a1b09b77eb051d32a3aabb929e9058786215cfb4
+ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "66715063"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "69551051"
 ---
-# <a name="how-to-configure-static-code-analysis-for-managed-code"></a>Procedimiento Configurar el análisis de código estático para código administrado
+# <a name="how-to-configure-legacy-analysis-for-managed-code"></a>Procedimiento Configurar el análisis heredado para código administrado
 
-En Visual Studio, puede elegir entre una lista de análisis de código [conjuntos de reglas](../code-quality/rule-set-reference.md) para aplicar a un proyecto de código administrado. De forma predeterminada, el **reglas mínimas recomendadas de Microsoft** se selecciona el conjunto de reglas, pero puede aplicar una regla diferente establecer si lo desea. Conjuntos de reglas pueden aplicarse a uno o varios proyectos en una solución.
+En Visual Studio, puede elegir en una lista de [conjuntos de reglas](../code-quality/rule-set-reference.md) de análisis de código para aplicarlos a un proyecto de código administrado. De forma predeterminada, el **reglas mínimas recomendadas de Microsoft** se selecciona el conjunto de reglas, pero puede aplicar una regla diferente establecer si lo desea. Conjuntos de reglas pueden aplicarse a uno o varios proyectos en una solución.
 
-Para obtener información sobre cómo configurar un conjunto de reglas para aplicaciones web ASP.NET, vea [Cómo: Configurar análisis de código para una aplicación web ASP.NET](../code-quality/how-to-configure-code-analysis-for-an-aspnet-web-application.md).
+Para obtener información sobre cómo configurar un conjunto de reglas para las aplicaciones Web de [ASP.net, consulte Cómo: Configurar el análisis de código para una aplicación](../code-quality/how-to-configure-code-analysis-for-an-aspnet-web-application.md)Web ASP.net.
 
 > [!NOTE]
-> En este artículo se aplica a análisis de código estático y no a [analizadores de Roslyn](use-roslyn-analyzers.md), que no ejecutan análisis de código después de la compilación.
+> Este artículo se aplica al análisis heredado y no a los [analizadores de código basados en .net Compiler Platform](use-roslyn-analyzers.md), que no ejecutan el análisis de código después de la compilación.
 
 ## <a name="configure-a-rule-set-for-a-net-framework-project"></a>Configurar un conjunto de reglas para un proyecto de .NET Framework
 
@@ -77,4 +77,4 @@ De forma predeterminada, todos los proyectos administrados de una solución se a
 ## <a name="see-also"></a>Vea también
 
 - [Referencia del conjunto de reglas Análisis de código](../code-quality/rule-set-reference.md)
-- [Cómo: Configurar análisis de código para una aplicación web ASP.NET](../code-quality/how-to-configure-code-analysis-for-an-aspnet-web-application.md)
+- [Cómo: Configurar el análisis de código para una aplicación Web de ASP.NET](../code-quality/how-to-configure-code-analysis-for-an-aspnet-web-application.md)

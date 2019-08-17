@@ -1,6 +1,6 @@
 ---
-title: Procedimiento Mostrar la pestaña Programador en la cinta de opciones
-ms.date: 02/02/2017
+title: Procedimiento Mostrar la pestaña programador en la cinta de opciones
+ms.date: 08/14/2019
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -13,56 +13,58 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 6a9a11f42acae44c441aca8cb06a1a363fea5a73
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 7b6641cca4ef2288452b2f6959482b311a5b07a4
+ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63418855"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "69551777"
 ---
-# <a name="how-to-show-the-developer-tab-on-the-ribbon"></a>Procedimiento Mostrar la pestaña Programador en la cinta de opciones
-  Para tener acceso a la **Developer** pestaña en la cinta de una aplicación de Office, debe configurarlo para mostrar esa pestaña, ya que no aparece de forma predeterminada. Por ejemplo, debe mostrar esa pestaña si desea agregar un <xref:Microsoft.Office.Tools.Word.GroupContentControl> a una personalización de nivel de documento para Word.
+# <a name="how-to-show-the-developer-tab-on-the-ribbon"></a>Procedimiento Mostrar la pestaña programador en la cinta de opciones
+  Para tener acceso a la pestaña **desarrollador** de la cinta de opciones de una aplicación de Office, debe configurarla para mostrar esa pestaña, ya que no aparece de forma predeterminada. Por ejemplo, debe mostrar esa pestaña si desea agregar un <xref:Microsoft.Office.Tools.Word.GroupContentControl> a una personalización de nivel de documento para Word.
 
 > [!NOTE]
-> Esta guía se aplica únicamente a aplicaciones de Office 2010 o versiones posteriores. Si desea mostrar esta pestaña en 2007 Microsoft Office System, vea la siguiente versión de este tema [Cómo: Mostrar la pestaña Programador en la cinta de opciones](https://web.archive.org/web/20140303033431/msdn.microsoft.com/library/bb608625(v=vs.90).aspx
-).
+> Esta guía se aplica únicamente a aplicaciones de Office 2010 o versiones posteriores. Si desea mostrar esta pestaña en el sistema Microsoft Office 2007, consulte la siguiente versión de este tema [: Mostrar la pestaña programador en la cinta](https://web.archive.org/web/20140303033431/msdn.microsoft.com/library/bb608625(v=vs.90).aspx
+)de opciones.
 
  [!INCLUDE[appliesto_ribbon](../vsto/includes/appliesto-ribbon-md.md)]
 
 > [!NOTE]
-> No tiene acceso un **Developer** ficha.
+> El acceso no tiene una pestaña **desarrollador** .
+
+[!include[Add-ins note](includes/addinsnote.md)]
 
 ## <a name="to-show-the-developer-tab"></a>Para mostrar la pestaña Desarrollador
 
-1. Inicie cualquiera de las aplicaciones de Office compatibles con este tema. Consulte la **se aplica a:** Nota anteriormente en este tema.
+1. Inicie cualquiera de las aplicaciones de Office compatibles con este tema. Vea la nota **se aplica a:** anteriormente en este tema.
 
-2. En el **archivo** ficha, elija la **opciones** botón.
+2. En la pestaña **archivo** , elija el botón **Opciones** .
 
-     La siguiente ilustración muestra el **archivo** pestaña y **opciones** botón de Office 2010.
+     En la siguiente ilustración se muestra la pestaña **archivo** y el botón **opciones** en Office 2010.
 
-     ![Selección de archivo, opciones de Outlook 2010](../vsto/media/vsto-office-file-tab.png "Elegir archivo, opciones de Outlook 2010")
+     ![Elegir archivo, opciones en Outlook 2010](../vsto/media/vsto-office-file-tab.png "Elegir archivo, opciones en Outlook 2010")
 
-     La siguiente ilustración muestra el **archivo** ficha en Office 2013.
+     En la siguiente ilustración se muestra la pestaña **archivo** de Office 2013.
 
-     ![La pestaña de archivo en Outlook 2013](../vsto/media/vsto-office2013-filetab.png "pestaña del archivo de Outlook 2013")
+     ![Pestaña archivo en Outlook 2013](../vsto/media/vsto-office2013-filetab.png "Pestaña archivo en Outlook 2013")
 
-     La siguiente ilustración muestra el **opciones** botón en Office 2013.
+     En la siguiente ilustración se muestra el botón **Opciones** de Office 2013.
 
-     ![El botón Opciones en Outlook 2013 Preview](../vsto/media/vsto-office2013-optionsbutton.png "el botón Opciones en Outlook 2013 Preview")
+     ![Botón Opciones de Outlook 2013 Preview](../vsto/media/vsto-office2013-optionsbutton.png "Botón Opciones de Outlook 2013 Preview")
 
-3. En el _ApplicationName_**opciones** diálogo cuadro, elija el **personalizar la cinta de opciones** botón.
+3. En el cuadro de diálogo Opciones de _applicationName_, elija el botón **personalizar la cinta** de**Opciones** .
 
-     La siguiente ilustración muestra el **opciones** cuadro de diálogo y el **personalizar la cinta de opciones** botón en Excel 2010. La ubicación de este botón es similar en el resto de las aplicaciones que se enumeran en la sección "Se aplica a" cerca de la parte superior de este tema.
+     La siguiente ilustración muestra el cuadro de diálogo Opciones y el botón **personalizar la cinta** de **opciones** en Excel 2010. La ubicación de este botón es similar en el resto de las aplicaciones que se enumeran en la sección "Se aplica a" cerca de la parte superior de este tema.
 
-     ![El botón Personalizar la cinta de opciones](../vsto/media/vsto-office2010-customizeribbonbutton.png "botón Personalizar la cinta")
+     ![Botón personalizar la cinta de] opciones (../vsto/media/vsto-office2010-customizeribbonbutton.png "Botón personalizar la cinta de") opciones
 
-4. En la lista de pestañas principales, seleccione el **Developer** casilla de verificación.
+4. En la lista de pestañas principales, active la casilla **desarrollador** .
 
-     La siguiente ilustración muestra el **Developer** casilla de verificación en Word 2010 y [!INCLUDE[Word_15_short](../vsto/includes/word-15-short-md.md)]. La ubicación de esta casilla de verificación es similar en el resto de las aplicaciones que se enumeran en la sección "Se aplica a" cerca de la parte superior de este tema.
+     En la siguiente ilustración se muestra la casilla **programador** en Word 2010 [!INCLUDE[Word_15_short](../vsto/includes/word-15-short-md.md)]y. La ubicación de esta casilla de verificación es similar en el resto de las aplicaciones que se enumeran en la sección "Se aplica a" cerca de la parte superior de este tema.
 
-     ![La casilla de verificación desarrollador en el cuadro de diálogo Opciones de Word](../vsto/media/vsto-office2010-developercheckbox.png "para desarrolladores de la casilla de verificación en el cuadro de diálogo Opciones de Word")
+     ![Casilla Desarrollador en el cuadro de diálogo Opciones de Word](../vsto/media/vsto-office2010-developercheckbox.png "Casilla Desarrollador en el cuadro de diálogo Opciones de Word")
 
-5. Elija la **Aceptar** botón para cerrar el **opciones** cuadro de diálogo.
+5. Elija el botón **Aceptar** para cerrar el cuadro de diálogo **Opciones** .
 
 ## <a name="see-also"></a>Vea también
 - [Personalización de la interfaz de usuario de Office](../vsto/office-ui-customization.md)

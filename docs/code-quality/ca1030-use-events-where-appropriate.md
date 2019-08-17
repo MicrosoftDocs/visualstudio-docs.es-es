@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f9a3d2ef30018c7fe57f1e7d728ba1dd152f56f5
-ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
+ms.openlocfilehash: ad0659241e75c862b3d82c64a7e8b2ad3ccada21
+ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "66714294"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "69547677"
 ---
 # <a name="ca1030-use-events-where-appropriate"></a>CA1030: Utilizar eventos cuando sea apropiado
 
@@ -30,37 +30,37 @@ ms.locfileid: "66714294"
 |Categoría|Microsoft.Design|
 |Cambio problemático|Poco problemático|
 
-## <a name="cause"></a>Motivo
+## <a name="cause"></a>Causa
 
 Un nombre de método comienza con uno de los siguientes:
 
 - AddOn
-- RemoveOn
-- Fuego
-- Raise
+- Cambio de movimiento
+- Inflama
+- Generar
 
-De forma predeterminada, esta regla solo se examina métodos visibles externamente, pero se trata de [configurable](#configurability).
+De forma predeterminada, esta regla solo examina los métodos visibles externamente, pero esto es [configurable](#configurability).
 
 ## <a name="rule-description"></a>Descripción de la regla
 
-Esta regla detecta métodos que tienen nombres que normalmente se utilizarían para eventos. Los eventos siguen el patrón de diseño publicación-suscripción u observador; se utilizan cuando un cambio de estado en un objeto debe comunicarse con otros objetos. Si se llama un método en respuesta a un cambio de estado claramente definido, se debe llamar al método mediante un controlador de eventos. Los objetos que llaman al método deben provocar eventos en lugar de llamar directamente al método.
+Esta regla detecta métodos que tienen nombres que normalmente se utilizarían para eventos. Los eventos siguen el modelo de diseño de observador o publicación-suscripción. se utilizan cuando un cambio de estado en un objeto debe comunicarse con otros objetos. Si se llama a un método en respuesta a un cambio de estado claramente definido, un controlador de eventos debe invocar el método. Los objetos que llaman al método deben provocar eventos en lugar de llamar directamente al método.
 
-Algunos ejemplos comunes de los eventos se encuentran en las aplicaciones de interfaz de usuario que hace que un segmento de código para ejecutar una acción del usuario como hacer clic en un botón. El modelo de evento de .NET no se limita a las interfaces de usuario. Se debe usar en cualquier lugar que debe comunicar el estado cambia a uno o más objetos.
+Algunos ejemplos comunes de eventos se encuentran en las aplicaciones de la interfaz de usuario, en las que una acción del usuario, como hacer clic en un botón, hace que se ejecute un segmento de código. El modelo de eventos de .NET no se limita a las interfaces de usuario. Debe usarse en cualquier lugar en el que deba comunicar los cambios de estado a uno o varios objetos.
 
 ## <a name="how-to-fix-violations"></a>Cómo corregir infracciones
 
-Si el método se llama cuando cambia el estado de un objeto, considere la posibilidad de cambiar el diseño para utilizar el modelo de evento. NET.
+Si se llama al método cuando cambia el estado de un objeto, considere la posibilidad de cambiar el diseño para usar el modelo de eventos de .NET.
 
-## <a name="when-to-suppress-warnings"></a>Cuándo Suprimir advertencias
+## <a name="when-to-suppress-warnings"></a>Cuándo suprimir advertencias
 
-Suprima una advertencia de esta regla si el método no funciona con el modelo de evento. NET.
+Suprima una advertencia de esta regla si el método no funciona con el modelo de eventos de .NET.
 
-## <a name="configurability"></a>Capacidad de configuración
+## <a name="configurability"></a>Configurabilidad
 
-Si ejecuta esta regla de [analizadores de FxCop](install-fxcop-analyzers.md) (y no a través de análisis de código estático), puede configurar qué partes de su código base para ejecutar esta regla en, en función de su accesibilidad. Por ejemplo, para especificar que debe ejecutarse la regla sólo con respecto a la superficie de API no públicos, agregue el siguiente par clave-valor a un archivo .editorconfig en el proyecto:
+Si está ejecutando esta regla desde los [analizadores de FxCop](install-fxcop-analyzers.md) (y no con el análisis heredado), puede configurar en qué partes del código base ejecutar esta regla, según su accesibilidad. Por ejemplo, para especificar que la regla se debe ejecutar solo en la superficie de API no pública, agregue el siguiente par clave-valor a un archivo. editorconfig en el proyecto:
 
 ```ini
 dotnet_code_quality.ca1030.api_surface = private, internal
 ```
 
-Puede configurar esta opción para simplemente esta regla, para todas las reglas o para todas las reglas de esta categoría (diseño). Para obtener más información, consulte [analizadores de FxCop configurar](configure-fxcop-analyzers.md).
+Puede configurar esta opción solo para esta regla, para todas las reglas o para todas las reglas de esta categoría (diseño). Para obtener más información, vea [configurar analizadores de FxCop](configure-fxcop-analyzers.md).

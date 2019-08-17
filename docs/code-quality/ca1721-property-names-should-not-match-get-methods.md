@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: bf16a9edf25132aa8b58702f01563b8d7ccf109a
-ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
+ms.openlocfilehash: 44028caf027191846fa653db06abbe4027fdde8d
+ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "65841493"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "69547091"
 ---
 # <a name="ca1721-property-names-should-not-match-get-methods"></a>CA1721: Los nombres de propiedades no deben coincidir con los métodos get
 
@@ -33,46 +33,46 @@ ms.locfileid: "65841493"
 |Categoría|Microsoft.Naming|
 |Cambio problemático|Problemático|
 
-## <a name="cause"></a>Motivo
+## <a name="cause"></a>Causa
 
-El nombre de un miembro comienza con 'Get' y en caso contrario, coincide con el nombre de una propiedad. Por ejemplo, un tipo que contiene un método que se denomina 'GetColor' y una propiedad que se denomina 'Color' provocara una infracción de regla.
+El nombre de un miembro comienza con ' get ' y, de lo contrario, coincide con el nombre de una propiedad. Por ejemplo, un tipo que contiene un método denominado ' GetColor ' y una propiedad denominada ' color ' provocan una infracción de la regla.
 
-De forma predeterminada, esta regla solo se examina los miembros visibles externamente y las propiedades, pero se trata de [configurable](#configurability).
+De forma predeterminada, esta regla solo examina los miembros y las propiedades visibles externamente, pero esto es [configurable](#configurability).
 
 ## <a name="rule-description"></a>Descripción de la regla
 
 Las propiedades y métodos "Get" deberían tener nombres que distingan claramente su función.
 
-Las convenciones de nomenclatura proporcionan una apariencia común para las bibliotecas destinadas a Common Language Runtime. Esta coherencia reduce el tiempo necesario para obtener información sobre una nueva biblioteca de software y aumenta la confianza del cliente que la biblioteca fue desarrollada por alguien que tenga experiencia en desarrollo de código administrado.
+Las convenciones de nomenclatura proporcionan una apariencia común para las bibliotecas destinadas a Common Language Runtime. Esta coherencia reduce el tiempo necesario para aprender una nueva biblioteca de software y aumenta la confianza de los clientes de que la biblioteca fue desarrollada por alguien que tenga experiencia en el desarrollo de código administrado.
 
 ## <a name="how-to-fix-violations"></a>Cómo corregir infracciones
 
-Cambie el nombre para que no coincide con el nombre de un método que va precedido de 'Get'.
+Cambie el nombre para que no coincida con el nombre de un método que tiene el prefijo ' get '.
 
-## <a name="when-to-suppress-warnings"></a>Cuándo Suprimir advertencias
+## <a name="when-to-suppress-warnings"></a>Cuándo suprimir advertencias
 
 No suprima las advertencias de esta regla.
 
 > [!NOTE]
-> Si se produce el método "Get" implementando IExtenderProvider (interfaz), se puede excluir esta advertencia.
+> Esta advertencia se puede excluir si el método "Get" se debe a la implementación de la interfaz IExtenderProvider.
 
-## <a name="configurability"></a>Capacidad de configuración
+## <a name="configurability"></a>Configurabilidad
 
-Si ejecuta esta regla de [analizadores de FxCop](install-fxcop-analyzers.md) (y no a través de análisis de código estático), puede configurar qué partes de su código base para ejecutar esta regla en, en función de su accesibilidad. Por ejemplo, para especificar que debe ejecutarse la regla sólo con respecto a la superficie de API no públicos, agregue el siguiente par clave-valor a un archivo .editorconfig en el proyecto:
+Si está ejecutando esta regla desde los [analizadores de FxCop](install-fxcop-analyzers.md) (y no con el análisis heredado), puede configurar en qué partes del código base ejecutar esta regla, según su accesibilidad. Por ejemplo, para especificar que la regla se debe ejecutar solo en la superficie de API no pública, agregue el siguiente par clave-valor a un archivo. editorconfig en el proyecto:
 
 ```ini
 dotnet_code_quality.ca1721.api_surface = private, internal
 ```
 
-Puede configurar esta opción para simplemente esta regla, para todas las reglas o para todas las reglas de esta categoría (convenciones de nomenclatura). Para obtener más información, consulte [analizadores de FxCop configurar](configure-fxcop-analyzers.md).
+Puede configurar esta opción solo para esta regla, para todas las reglas o para todas las reglas de esta categoría (nomenclatura). Para obtener más información, vea [configurar analizadores de FxCop](configure-fxcop-analyzers.md).
 
 ## <a name="example"></a>Ejemplo
 
-El ejemplo siguiente contiene un método y propiedad que infringen esta regla.
+El ejemplo siguiente contiene un método y una propiedad que infringen esta regla.
 
 [!code-csharp[FxCop.Naming.GetMethod#1](../code-quality/codesnippet/CSharp/ca1721-property-names-should-not-match-get-methods_1.cs)]
 [!code-vb[FxCop.Naming.GetMethod#1](../code-quality/codesnippet/VisualBasic/ca1721-property-names-should-not-match-get-methods_1.vb)]
 
 ## <a name="related-rules"></a>Reglas relacionadas
 
-- [CA1024: Utilizar las propiedades donde corresponda](../code-quality/ca1024-use-properties-where-appropriate.md)
+- [CA1024: Usar propiedades cuando corresponda](../code-quality/ca1024-use-properties-where-appropriate.md)

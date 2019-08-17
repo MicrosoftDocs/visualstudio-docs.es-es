@@ -10,16 +10,16 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 2e635f2cbbeda67c4fbed760eb7e57dfcf140d15
-ms.sourcegitcommit: ce1ab8a25c66a83e60eab80ed8e1596fe66dd85c
+ms.openlocfilehash: d6d891001bbb46e01049c2c8d71bb25372bb8c29
+ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/29/2019
-ms.locfileid: "68604871"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "69551058"
 ---
 # <a name="fxcop-rule-port-status"></a>Estado del puerto de la regla de FxCop
 
-Si anteriormente usó el análisis de código estático en una versión anterior de Visual Studio, es posible que se pregunte qué reglas están disponibles en la implementación actual como [analizadores de FxCop](install-fxcop-analyzers.md). En esta página se enumeran las reglas que se portan, así como las que no se han migrado y si hay planes para trasladarlas.
+Si anteriormente usó el análisis de código estático en Visual Studio, es posible que se pregunte qué reglas están disponibles en la implementación actual como [analizadores de FxCop](install-fxcop-analyzers.md). En esta página se enumeran las reglas que se portan, así como las que no se han migrado y si hay planes para trasladarlas.
 
 ## <a name="ported-rules"></a>Reglas migradas
 
@@ -208,7 +208,7 @@ El conjunto de reglas que no se han migrado a los analizadores de [FxCop](instal
 
 ### <a name="rules-that-may-be-ported"></a>Reglas que se pueden portar
 
-Las siguientes reglas de análisis de código estático de FxCop todavía no se han implementado como analizadores, pero todavía pueden ser. Esto puede deberse a una razón técnica de bloqueo o simplemente a que la regla tiene una prioridad más baja. Para obtener más información acerca del estado de portabilidad de cada regla, haga clic en el vínculo de la columna **problema de seguimiento** .
+Las siguientes reglas de análisis heredado de FxCop todavía no se han implementado como analizadores, pero todavía pueden ser. Esto puede deberse a una razón técnica de bloqueo o simplemente a que la regla tiene una prioridad más baja. Para obtener más información acerca del estado de portabilidad de cada regla, haga clic en el vínculo de la columna **problema de seguimiento** .
 
 Identificador de la regla | Problema de seguimiento
 --- | ---
@@ -271,7 +271,7 @@ Identificador de la regla | Problema de seguimiento
 
 ### <a name="deprecated-rules"></a>Reglas en desuso
 
-Las siguientes reglas de análisis de código estático de FxCop están desusadas y no se implementarán como analizadores. Para obtener más información, puede buscar por el identificador de regla (por ejemplo, **CA1009**) en la [Página de problemas de github Roslyn-analizadores](https://github.com/dotnet/roslyn-analyzers/issues?utf8=%E2%9C%93&q=is:issue+label:FxCop-Port).
+Las siguientes reglas de análisis heredado de FxCop están desusadas y no se implementarán como analizadores. Para obtener más información, puede buscar por el identificador de regla (por ejemplo, **CA1009**) en la [Página de problemas de github Roslyn-analizadores](https://github.com/dotnet/roslyn-analyzers/issues?utf8=%E2%9C%93&q=is:issue+label:FxCop-Port).
 
 - [CA1009](ca1009-declare-event-handlers-correctly.md)
 - [CA1020](ca1020-avoid-namespaces-with-few-types.md)
