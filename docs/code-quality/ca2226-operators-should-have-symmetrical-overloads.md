@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 73f11638d8ba5ca373c8fb1479be8d862e62b247
-ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
+ms.openlocfilehash: 4557b61afab08c7db05c734c6f2ac927a40edb71
+ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "65841410"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "69546855"
 ---
 # <a name="ca2226-operators-should-have-symmetrical-overloads"></a>CA2226: Los operadores deben tener sobrecargas simétricas
 
@@ -30,40 +30,40 @@ ms.locfileid: "65841410"
 |Categoría|Microsoft.Usage|
 |Cambio problemático|No trascendental|
 
-## <a name="cause"></a>Motivo
+## <a name="cause"></a>Causa
 
 Un tipo implementa el operador de igualdad o de desigualdad y no implementa el operador opuesto.
 
-De forma predeterminada, esta regla busca solo en tipos visibles externamente, pero se trata de [configurable](#configurability).
+De forma predeterminada, esta regla solo examina los tipos visibles externamente, pero esto es [configurable](#configurability).
 
 ## <a name="rule-description"></a>Descripción de la regla
 
-No hay ningún caso donde no es aplicable a las instancias de un tipo de igualdad o desigualdad y no está definido el operador opuesto. Tipos normalmente implementan el operador de desigualdad devolviendo el valor negado del operador de igualdad.
+No hay circunstancias en las que la igualdad o la desigualdad se aplican a las instancias de un tipo, y el operador opuesto es indefinido. Normalmente, los tipos implementan el operador de desigualdad devolviendo el valor negado del operador de igualdad.
 
-El compilador de C# emite un error para las infracciones de esta regla.
+El C# compilador emite un error para las infracciones de esta regla.
 
 ## <a name="how-to-fix-violations"></a>Cómo corregir infracciones
 
-Para corregir una infracción de esta regla, implemente tanto la igualdad y desigualdad o quite el que está presente.
+Para corregir una infracción de esta regla, implemente los operadores de igualdad y desigualdad, o bien Quite el que está presente.
 
-## <a name="when-to-suppress-warnings"></a>Cuándo Suprimir advertencias
+## <a name="when-to-suppress-warnings"></a>Cuándo suprimir advertencias
 
-No suprima las advertencias de esta regla. Si lo hace, su tipo no funcionará de forma que sea coherente con. NET.
+No suprima las advertencias de esta regla. Si lo hace, el tipo no funcionará de forma coherente con .NET.
 
-## <a name="configurability"></a>Capacidad de configuración
+## <a name="configurability"></a>Configurabilidad
 
-Si ejecuta esta regla de [analizadores de FxCop](install-fxcop-analyzers.md) (y no a través de análisis de código estático), puede configurar qué partes de su código base para ejecutar esta regla en, en función de su accesibilidad. Por ejemplo, para especificar que debe ejecutarse la regla sólo con respecto a la superficie de API no públicos, agregue el siguiente par clave-valor a un archivo .editorconfig en el proyecto:
+Si está ejecutando esta regla desde los [analizadores de FxCop](install-fxcop-analyzers.md) (y no con el análisis heredado), puede configurar en qué partes del código base ejecutar esta regla, según su accesibilidad. Por ejemplo, para especificar que la regla se debe ejecutar solo en la superficie de API no pública, agregue el siguiente par clave-valor a un archivo. editorconfig en el proyecto:
 
 ```ini
 dotnet_code_quality.ca2226.api_surface = private, internal
 ```
 
-Puede configurar esta opción para simplemente esta regla, para todas las reglas o para todas las reglas de esta categoría (uso). Para obtener más información, consulte [analizadores de FxCop configurar](configure-fxcop-analyzers.md).
+Puede configurar esta opción solo para esta regla, para todas las reglas o para todas las reglas de esta categoría (uso). Para obtener más información, vea [configurar analizadores de FxCop](configure-fxcop-analyzers.md).
 
 ## <a name="related-rules"></a>Reglas relacionadas
 
-- [CA1046: No sobrecargar el operador de igualdad en los tipos de referencia](../code-quality/ca1046-do-not-overload-operator-equals-on-reference-types.md)
-- [CA2225: Las sobrecargas del operador tienen alternativas con nombre](../code-quality/ca2225-operator-overloads-have-named-alternates.md)
-- [CA2224: Invalidar equals al sobrecargar operadores de igualdad](../code-quality/ca2224-override-equals-on-overloading-operator-equals.md)
-- [CA2218: Invalidar el método GetHashCode al invalidar Equals](../code-quality/ca2218-override-gethashcode-on-overriding-equals.md)
+- [CA1046: No sobrecargar el operador Equals en los tipos de referencia](../code-quality/ca1046-do-not-overload-operator-equals-on-reference-types.md)
+- [CA2225 Las sobrecargas de operador tienen alternativas con nombre](../code-quality/ca2225-operator-overloads-have-named-alternates.md)
+- [CA2224 Invalidar Equals al sobrecargar el operador Equals](../code-quality/ca2224-override-equals-on-overloading-operator-equals.md)
+- [CA2218: Invalidar GetHashCode al reemplazar Equals](../code-quality/ca2218-override-gethashcode-on-overriding-equals.md)
 - [CA2231: sobrecargar el operador equals al invalidar ValueType.Equals](../code-quality/ca2231-overload-operator-equals-on-overriding-valuetype-equals.md)

@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 154d7d36c949ac361f938aa7d8608251c2a9adee
-ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
+ms.openlocfilehash: 93fd892baaf54d79c3a2387b8961a2f4c1bb2cdb
+ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "65841908"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "69547326"
 ---
 # <a name="ca1710-identifiers-should-have-correct-suffix"></a>CA1710: Los identificadores deben tener un sufijo correcto
 
@@ -30,19 +30,19 @@ ms.locfileid: "65841908"
 |Categoría|Microsoft.Naming|
 |Cambio problemático|Problemático|
 
-## <a name="cause"></a>Motivo
+## <a name="cause"></a>Causa
 
 Un identificador no tiene el sufijo correcto.
 
-De forma predeterminada, esta regla solo se examina los identificadores visibles externamente, pero se trata de [configurable](#configurability).
+De forma predeterminada, esta regla solo examina los identificadores visibles externamente, pero esto es [configurable](#configurability).
 
 ## <a name="rule-description"></a>Descripción de la regla
 
-Por convención, los nombres de tipos que extienden determinados tipos bases o que implementan algunas interfaces, o tipos derivados de estos tipos, tienen un sufijo que está asociado con el tipo base o interfaz.
+Por Convención, los nombres de tipos que extienden determinados tipos base o que implementan determinadas interfaces, o tipos derivados de estos tipos, tienen un sufijo que está asociado con el tipo base o la interfaz.
 
 Las convenciones de nomenclatura proporcionan una apariencia común para las bibliotecas destinadas a Common Language Runtime. Esto reduce la curva de aprendizaje necesaria para las nuevas bibliotecas de software y aumenta la confianza del cliente respecto a que la biblioteca se haya desarrollado por parte de un especialista en desarrollo de código administrado.
 
-En la tabla siguiente se enumera los tipos bases e interfaces que tienen asociados los sufijos.
+En la tabla siguiente se enumeran los tipos base y las interfaces que tienen sufijos asociados.
 
 |Tipo base/Interfaz|Sufijo|
 |--------------------------|------------|
@@ -52,7 +52,7 @@ En la tabla siguiente se enumera los tipos bases e interfaces que tienen asociad
 |<xref:System.Collections.ICollection?displayProperty=fullName>|Collection|
 |<xref:System.Collections.IDictionary?displayProperty=fullName>|Dictionary|
 |<xref:System.Collections.IEnumerable?displayProperty=fullName>|Collection|
-|<xref:System.Collections.Queue?displayProperty=fullName>|Colección o una cola|
+|<xref:System.Collections.Queue?displayProperty=fullName>|Colección o cola|
 |<xref:System.Collections.Stack?displayProperty=fullName>|Colección o pila|
 |<xref:System.Collections.Generic.ICollection%601?displayProperty=fullName>|Collection|
 |<xref:System.Collections.Generic.IDictionary%602?displayProperty=fullName>|Dictionary|
@@ -61,53 +61,53 @@ En la tabla siguiente se enumera los tipos bases e interfaces que tienen asociad
 |<xref:System.IO.Stream?displayProperty=fullName>|Secuencia|
 |<xref:System.Security.IPermission?displayProperty=fullName>|Permiso|
 |<xref:System.Security.Policy.IMembershipCondition?displayProperty=fullName>|Condición|
-|Un delegado de controlador de eventos.|EventHandler|
+|Delegado de controlador de eventos.|EventHandler|
 
-Los tipos que implementan <xref:System.Collections.ICollection> y son un tipo de estructura de datos generalizado, como un diccionario, una pila o una cola, se permiten los nombres que proporcionan información significativa sobre el uso previsto del tipo.
+Los tipos que <xref:System.Collections.ICollection> implementan y son un tipo generalizado de estructura de datos, como un diccionario, una pila o una cola, son nombres permitidos que proporcionan información significativa sobre el uso previsto del tipo.
 
-Los tipos que implementan <xref:System.Collections.ICollection> y son una colección de elementos específicos tienen nombres que terminan con la palabra 'Collection'. Por ejemplo, una colección de <xref:System.Collections.Queue> objetos tendría el nombre "QueueCollection". El sufijo 'Collection' significa que se pueden enumerar los miembros de la colección utilizando el `foreach` (`For Each` en [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]) instrucción.
+Los tipos que <xref:System.Collections.ICollection> implementan y son una colección de elementos específicos tienen nombres que terminan con la palabra ' Collection '. Por ejemplo, una colección de <xref:System.Collections.Queue> objetos tendría el nombre "QueueCollection". El sufijo ' Collection ' indica que los miembros de la colección se pueden enumerar mediante la `foreach` instrucción (`For Each` in [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]).
 
-Los tipos que implementan <xref:System.Collections.IDictionary> tienen nombres que terminan con la palabra "Diccionario", incluso si el tipo también implementa <xref:System.Collections.IEnumerable> o <xref:System.Collections.ICollection>. Las convenciones de nomenclatura de sufijo 'Collection' y 'Diccionario' permiten que los usuarios distinguir entre los siguientes dos modelos de enumeración.
+Los tipos que <xref:System.Collections.IDictionary> implementan tienen nombres que terminan con la palabra ' Dictionary ' incluso si el tipo <xref:System.Collections.IEnumerable> también <xref:System.Collections.ICollection>implementa o. Las convenciones de nomenclatura de los sufijos ' Collection ' y ' Dictionary ' permiten a los usuarios distinguir entre los dos patrones de enumeración siguientes.
 
-Tipos con el sufijo 'Collection' siguen este patrón de enumeración.
+Los tipos con el sufijo ' Collection ' siguen este patrón de enumeración.
 
 ```
 foreach(SomeType x in SomeCollection) { }
 ```
 
-Los tipos con el sufijo "Diccionario de" siguen este patrón de enumeración.
+Los tipos con el sufijo ' Dictionary ' siguen este patrón de enumeración.
 
 ```
 foreach(SomeType x in SomeDictionary.Values) { }
 ```
 
-Un <xref:System.Data.DataSet> objeto consta de una colección de <xref:System.Data.DataTable> objetos, que consisten en colecciones de <xref:System.Data.DataColumn?displayProperty=fullName> y <xref:System.Data.DataRow?displayProperty=fullName> objetos, entre otros. Estas colecciones implementan <xref:System.Collections.ICollection> a través de la base de <xref:System.Data.InternalDataCollectionBase?displayProperty=fullName> clase.
+Un <xref:System.Data.DataSet> objeto consta de una colección de <xref:System.Data.DataTable> objetos, que se componen <xref:System.Data.DataColumn?displayProperty=fullName> de <xref:System.Data.DataRow?displayProperty=fullName> colecciones de objetos y, entre otros. Estas colecciones se <xref:System.Collections.ICollection> implementan a <xref:System.Data.InternalDataCollectionBase?displayProperty=fullName> través de la clase base.
 
 ## <a name="how-to-fix-violations"></a>Cómo corregir infracciones
 
-Cambie el nombre del tipo tiene el sufijo con el término correcto.
+Cambie el nombre del tipo para que tenga como sufijo el término correcto.
 
-## <a name="when-to-suppress-warnings"></a>Cuándo Suprimir advertencias
+## <a name="when-to-suppress-warnings"></a>Cuándo suprimir advertencias
 
-Es seguro suprimir una advertencia al utilizar el sufijo 'Collection' Si el tipo es una estructura de datos generalizada que podría extenderse o que va a contener un conjunto arbitrario de elementos diversos. En este caso, un nombre que proporcione información significativa sobre la implementación, rendimiento u otras características de la estructura de datos podría tener sentido (por ejemplo, BinaryTree). En casos donde el tipo representa una colección de un tipo específico (por ejemplo, StringCollection), no suprima una advertencia de esta regla porque el sufijo indica que el tipo se puede enumerar mediante el uso de un `foreach` instrucción.
+Es seguro suprimir una advertencia para usar el sufijo ' Collection ' si el tipo es una estructura de datos generalizada que podría extenderse o que contendrá un conjunto arbitrario de diversos elementos. En este caso, un nombre que proporcione información significativa sobre la implementación, el rendimiento u otras características de la estructura de datos podría tener sentido (por ejemplo, BinaryTree). En los casos en los que el tipo representa una colección de un tipo específico (por ejemplo, StringCollection), no suprima una advertencia de esta regla porque el sufijo indica que el tipo se puede enumerar `foreach` mediante una instrucción.
 
-Para otros sufijos, no suprima una advertencia de esta regla. El sufijo permite el uso previsto sea evidente desde el nombre de tipo.
+En el caso de otros sufijos, no suprima una advertencia de esta regla. El sufijo permite que el uso previsto sea evidente a partir del nombre de tipo.
 
-## <a name="configurability"></a>Capacidad de configuración
+## <a name="configurability"></a>Configurabilidad
 
-Si ejecuta esta regla de [analizadores de FxCop](install-fxcop-analyzers.md) (y no a través de análisis de código estático), puede configurar qué partes de su código base para ejecutar esta regla en, en función de su accesibilidad. Por ejemplo, para especificar que debe ejecutarse la regla sólo con respecto a la superficie de API no públicos, agregue el siguiente par clave-valor a un archivo .editorconfig en el proyecto:
+Si está ejecutando esta regla desde los [analizadores de FxCop](install-fxcop-analyzers.md) (y no con el análisis heredado), puede configurar en qué partes del código base ejecutar esta regla, según su accesibilidad. Por ejemplo, para especificar que la regla se debe ejecutar solo en la superficie de API no pública, agregue el siguiente par clave-valor a un archivo. editorconfig en el proyecto:
 
 ```ini
 dotnet_code_quality.ca1710.api_surface = private, internal
 ```
 
-Puede configurar esta opción para simplemente esta regla, para todas las reglas o para todas las reglas de esta categoría (convenciones de nomenclatura). Para obtener más información, consulte [analizadores de FxCop configurar](configure-fxcop-analyzers.md).
+Puede configurar esta opción solo para esta regla, para todas las reglas o para todas las reglas de esta categoría (nomenclatura). Para obtener más información, vea [configurar analizadores de FxCop](configure-fxcop-analyzers.md).
 
 ## <a name="related-rules"></a>Reglas relacionadas
 
-[CA1711: Los identificadores no deberían tener el sufijo incorrecto](../code-quality/ca1711-identifiers-should-not-have-incorrect-suffix.md)
+[CA1711: Los identificadores no deben tener un sufijo incorrecto](../code-quality/ca1711-identifiers-should-not-have-incorrect-suffix.md)
 
 ## <a name="see-also"></a>Vea también
 
 - [Atributos](/dotnet/standard/design-guidelines/attributes)
-- [Controlar y provocar eventos](/dotnet/standard/events/index)
+- [Control y generación de eventos](/dotnet/standard/events/index)

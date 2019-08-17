@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: jillfra
 dev_langs:
 - CSharp
-ms.openlocfilehash: 3f35e450f17a671b800d003b94ceb5ebc2321c90
-ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
+ms.openlocfilehash: 0d3ab899ad660c637492a4c3d229779481184e95
+ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "65841399"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "69547010"
 ---
 # <a name="ca2007-do-not-directly-await-a-task"></a>CA2007: No esperar una tarea directamente
 
@@ -28,31 +28,31 @@ ms.locfileid: "65841399"
 |Categoría|Microsoft.Reliability|
 |Cambio problemático|Poco problemático|
 
-## <a name="cause"></a>Motivo
+## <a name="cause"></a>Causa
 
-Un método asincrónico [espera](/dotnet/csharp/language-reference/keywords/await) un <xref:System.Threading.Tasks.Task> directamente.
+Un método asincrónico [espera](/dotnet/csharp/language-reference/keywords/await) <xref:System.Threading.Tasks.Task> directamente.
 
 ## <a name="rule-description"></a>Descripción de la regla
 
-Cuando un método asincrónico espera una <xref:System.Threading.Tasks.Task> directamente, se produce la continuación en el mismo subproceso que creó la tarea. Este comportamiento puede ser costoso en términos de rendimiento y puede provocar un interbloqueo en el subproceso de interfaz de usuario. Considere la posibilidad de llamar a <xref:System.Threading.Tasks.Task.ConfigureAwait(System.Boolean)?displayProperty=nameWithType> para señalar su intención de continuación.
+Cuando un método asincrónico espera <xref:System.Threading.Tasks.Task> directamente, la continuación se produce en el mismo subproceso que creó la tarea. Este comportamiento puede ser costoso en términos de rendimiento y puede dar lugar a un interbloqueo en el subproceso de la interfaz de usuario. Considere la <xref:System.Threading.Tasks.Task.ConfigureAwait(System.Boolean)?displayProperty=nameWithType> posibilidad de llamar a para señalar su intención de continuación.
 
-Esta regla se introdujo con [analizadores de FxCop](install-fxcop-analyzers.md) y no existe en "legacy" (análisis de código estático) FxCop.
+Esta regla se presentó con los analizadores de [FxCop](install-fxcop-analyzers.md) y no existe en el análisis de FxCop heredado.
 
 ## <a name="how-to-fix-violations"></a>Cómo corregir infracciones
 
-Para corregir las infracciones, llame a <xref:System.Threading.Tasks.Task.ConfigureAwait%2A> en la espera <xref:System.Threading.Tasks.Task>. Puede pasar `true` o `false` para el `continueOnCapturedContext` parámetro.
+Para corregir las infracciones <xref:System.Threading.Tasks.Task.ConfigureAwait%2A> , llame a en <xref:System.Threading.Tasks.Task>el Await. Puede pasar `true` o `false` para el `continueOnCapturedContext` parámetro.
 
-- Una llamada a `ConfigureAwait(true)` en la tarea tiene el mismo comportamiento que no explícitamente una llamada a <xref:System.Threading.Tasks.Task.ConfigureAwait%2A>. Al llamar explícitamente a este método, está indicándole que los lectores intencionadamente desea realizar la continuación en el contexto de sincronización originales.
+- Llamar `ConfigureAwait(true)` a en la tarea tiene el mismo comportamiento que no llamar <xref:System.Threading.Tasks.Task.ConfigureAwait%2A>explícitamente a. Al llamar explícitamente a este método, está permitiendo a los lectores saber que desea realizar la continuación en el contexto de sincronización original.
 
-- Llamar a `ConfigureAwait(false)` en la tarea para programar continuaciones al grupo de subprocesos, lo que evita un interbloqueo en el subproceso de interfaz de usuario. Pasar `false` es una buena opción para las bibliotecas de independiente de la aplicación.
+- Llame `ConfigureAwait(false)` a en la tarea para programar continuaciones en el grupo de subprocesos, evitando así un interbloqueo en el subproceso de la interfaz de usuario. Pasar `false` es una buena opción para las bibliotecas independientes de la aplicación.
 
-## <a name="when-to-suppress-warnings"></a>Cuándo Suprimir advertencias
+## <a name="when-to-suppress-warnings"></a>Cuándo suprimir advertencias
 
-Puede suprimir esta advertencia si sabe que el consumidor no es una aplicación de interfaz gráfica de usuario o si el consumidor no tiene un <xref:System.Threading.SynchronizationContext>.
+Puede suprimir esta advertencia si sabe que el consumidor no es una aplicación de interfaz gráfica de usuario (GUI) o si el consumidor no tiene un <xref:System.Threading.SynchronizationContext>.
 
 ## <a name="example"></a>Ejemplo
 
-El fragmento de código siguiente genera la advertencia:
+El siguiente fragmento de código genera la ADVERTENCIA:
 
 ```csharp
 public async Task Execute()
@@ -62,7 +62,7 @@ public async Task Execute()
 }
 ```
 
-Para corregir la infracción, llame a <xref:System.Threading.Tasks.Task.ConfigureAwait%2A> en la espera <xref:System.Threading.Tasks.Task>:
+Para corregir la infracción, <xref:System.Threading.Tasks.Task.ConfigureAwait%2A> llame a en <xref:System.Threading.Tasks.Task>Await:
 
 ```csharp
 public async Task Execute()
@@ -72,9 +72,9 @@ public async Task Execute()
 }
 ```
 
-## <a name="configurability"></a>Capacidad de configuración
+## <a name="configurability"></a>Configurabilidad
 
-Puede configurar si desea excluir los métodos asincrónicos que no devuelven un valor de esta regla. Para excluir estos tipos de métodos, agregue el siguiente par clave-valor a un archivo .editorconfig en el proyecto:
+Puede configurar si desea excluir métodos asincrónicos que no devuelven un valor de esta regla. Para excluir estos tipos de métodos, agregue el siguiente par clave-valor a un archivo. editorconfig en el proyecto:
 
 ```ini
 # Package version 2.9.0 and later
@@ -84,15 +84,15 @@ dotnet_code_quality.CA2007.exclude_async_void_methods = true
 dotnet_code_quality.CA2007.skip_async_void_methods = true
 ```
 
-También puede configurar qué tipos de ensamblado al que aplicar esta regla de salida. Por ejemplo, para esta regla solo se aplican al código que genera una aplicación de consola o una biblioteca de vínculos dinámicos (es decir, no una interfaz de usuario aplicación), agregue el siguiente par clave-valor a un archivo .editorconfig en el proyecto:
+También puede configurar los tipos de ensamblado de salida a los que aplicar esta regla. Por ejemplo, para aplicar esta regla solo al código que produce una aplicación de consola o una biblioteca vinculada dinámicamente (es decir, no una aplicación de interfaz de usuario), agregue el siguiente par clave-valor a un archivo. editorconfig en el proyecto:
 
 ```ini
 dotnet_code_quality.CA2007.output_kind = ConsoleApplication, DynamicallyLinkedLibrary
 ```
 
-Para obtener más información, consulte [analizadores de FxCop configurar](configure-fxcop-analyzers.md).
+Para obtener más información, vea [configurar analizadores de FxCop](configure-fxcop-analyzers.md).
 
 ## <a name="see-also"></a>Vea también
 
-- [¿Espera una tarea con ConfigureAwait (false)?](https://github.com/Microsoft/vs-threading/blob/master/doc/cookbook_vs.md#should-i-await-a-task-with-configureawaitfalse)
+- [¿Debo esperar una tarea con ConfigureAwait (false)?](https://github.com/Microsoft/vs-threading/blob/master/doc/cookbook_vs.md#should-i-await-a-task-with-configureawaitfalse)
 - [Instalar analizadores de FxCop en Visual Studio](install-fxcop-analyzers.md)

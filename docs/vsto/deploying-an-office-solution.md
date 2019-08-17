@@ -1,6 +1,6 @@
 ---
 title: Implementar una solución de Office
-ms.date: 02/02/2017
+ms.date: 08/14/2019
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -23,18 +23,17 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: d48d534d0f8783b803b9c5ade17a693a03ef37d9
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: abe4951c8ef748231e8c2f0167253caf49fbf1eb
+ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63441861"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "69551594"
 ---
 # <a name="deploy-an-office-solution"></a>Implementar una solución de Office
   Puede implementar soluciones de Office mediante ClickOnce o Windows Installer. Si usa ClickOnce, se reducirá el número de pasos que requiere la implementación y actualización de la solución. Si utiliza Windows Installer, obtendrá control sobre cómo se instala la solución y qué páginas muestra el programa de instalación cuando los usuarios instalan la solución.
 
-> [!NOTE]
-> ¿Está interesado en desarrollar soluciones que amplían la experiencia de Office a través de [varias plataformas](https://dev.office.com/add-in-availability)? Visite el nuevo [modelo de complementos de Office](https://dev.office.com/docs/add-ins/overview/office-add-ins). Complementos de Office tienen una superficie pequeña en comparación con las soluciones y los complementos de VSTO, y puede crearlas con prácticamente cualquier tecnología, como HTML5, CSS3, JavaScript y XML de programación web.
+[!include[Add-ins note](includes/addinsnote.md)]
 
 ## <a name="deploy-a-solution-by-using-clickonce"></a>Implementar una solución mediante ClickOnce
  Al implementar una solución mediante ClickOnce, esta se publica en una ubicación centralizada donde los usuarios pueden instalarla y ejecutarla. Puede actualizar la solución sin tener que distribuir un nuevo programa de instalación a los usuarios.  Esta opción de implementación es más sencilla, pero no puede mostrar a los usuarios las páginas de instalación personalizadas. Además, las soluciones se deben instalar varias veces en cualquier equipo que tenga más de un usuario. Consulte [implementar una solución de Office mediante ClickOnce](../vsto/deploying-an-office-solution-by-using-clickonce.md).
@@ -46,4 +45,4 @@ ms.locfileid: "63441861"
 - [Proteger soluciones de Office](../vsto/securing-office-solutions.md)
 - [Implementar una solución de Office mediante ClickOnce](../vsto/deploying-an-office-solution-by-using-clickonce.md)
 - [Implementar una solución de Office mediante Windows Installer](../vsto/deploying-an-office-solution-by-using-windows-installer.md)
-- [Solución de problemas de implementación de soluciones de Office](../vsto/troubleshooting-office-solution-deployment.md)
+- [Solucionar problemas de implementación de soluciones de Office](../vsto/troubleshooting-office-solution-deployment.md)

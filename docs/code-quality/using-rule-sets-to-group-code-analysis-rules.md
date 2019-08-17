@@ -11,26 +11,26 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c95b442835289265d197b6806c6d87fa051f2c1b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: bae627e08faed01ab0efc8e64373ff86ed5c877e
+ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62825089"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "69548024"
 ---
 # <a name="use-rule-sets-to-group-code-analysis-rules"></a>Usar conjuntos de reglas para agrupar reglas de análisis de código
 
-Al configurar el análisis de código en Visual Studio, puede elegir entre una lista de integrados *conjuntos de reglas*. Un conjunto de reglas es una agrupación de reglas de análisis de código que identifican problemas concretos y condiciones específicas para ese proyecto. Por ejemplo, puede aplicar un conjunto de reglas que se ha diseñado para examinar el código para las API disponibles públicamente. También puede aplicar un conjunto de reglas que incluye todas las reglas disponibles.
+Al configurar el análisis de código en Visual Studio, puede elegir en una lista de *conjuntos de reglas*integrados. Un conjunto de reglas es una agrupación de reglas de análisis de código que identifican problemas de destino y condiciones específicas para ese proyecto. Por ejemplo, puede aplicar un conjunto de reglas diseñado para examinar el código de las API disponibles públicamente. También puede aplicar un conjunto de reglas que incluya todas las reglas disponibles.
 
-Puede personalizar un conjunto de reglas mediante la adición o eliminación de reglas o cambiando los niveles de gravedad de regla aparezca como advertencias o errores en el **lista de errores**. Los conjuntos de reglas personalizados pueden satisfacer una necesidad de su entorno de desarrollo determinado. Al personalizar un conjunto de reglas, el editor de conjunto de reglas proporciona búsqueda y las herramientas para ayudarle en el proceso de filtrado.
+Puede personalizar un conjunto de reglas agregando o eliminando reglas o cambiando el gravedad de la regla para que aparezca como advertencias o errores en el **lista de errores**. Los conjuntos de reglas personalizados pueden satisfacer una necesidad de su entorno de desarrollo determinado. Al personalizar un conjunto de reglas, el editor de conjuntos de reglas proporciona herramientas de búsqueda y filtrado que le ayudarán en el proceso.
 
-Conjuntos de reglas que están disponibles para [análisis estático de código administrado](how-to-configure-code-analysis-for-a-managed-code-project.md), [análisis de código C++](using-rule-sets-to-specify-the-cpp-rules-to-run.md), y [analizadores de Roslyn](analyzer-rule-sets.md).
+Los conjuntos de reglas están disponibles para el análisis de [código administrado](analyzer-rule-sets.md), el [análisis heredado de código administrado](how-to-configure-code-analysis-for-a-managed-code-project.md)y [ C++ el análisis de código](using-rule-sets-to-specify-the-cpp-rules-to-run.md).
 
-## <a name="rule-set-format"></a>Formato de conjunto de reglas
+## <a name="rule-set-format"></a>Formato del conjunto de reglas
 
-Se especifica un conjunto de reglas en formato XML en un *.ruleset* archivo. Las reglas, que constan de un identificador y un *acción*, se agrupan por identificador de analizador y el espacio de nombres en el archivo.
+Un conjunto de reglas se especifica en formato XML en un archivo *. ruleset* . Las reglas, que constan de un identificador y una *acción*, se agrupan por identificador y espacio de nombres del analizador en el archivo.
 
-El contenido de un *.ruleset* archivo es similar a este código XML:
+El contenido de un archivo *. ruleset* tiene un aspecto similar al de este XML:
 
 ```xml
 <RuleSet Name="Rules for Hello World project" Description="These rules focus on critical issues for the Hello World app." ToolsVersion="10.0">
@@ -54,11 +54,11 @@ El contenido de un *.ruleset* archivo es similar a este código XML:
 ```
 
 > [!TIP]
-> Es más fácil [editar un conjunto de reglas](../code-quality/working-in-the-code-analysis-rule-set-editor.md) en el gráfico **Editor de conjunto de reglas** de forma manual.
+> Es más fácil [editar un conjunto de reglas](../code-quality/working-in-the-code-analysis-rule-set-editor.md) en el **Editor de conjuntos de reglas** gráfico que a mano.
 
 ## <a name="specify-a-rule-set-for-a-project"></a>Especificar un conjunto de reglas para un proyecto
 
-La regla establecida para un proyecto especificado por el **CodeAnalysisRuleSet** propiedad en el archivo de proyecto de Visual Studio. Por ejemplo:
+La propiedad **CodeAnalysisRuleSet** del archivo de proyecto de Visual Studio especifica el conjunto de reglas para un proyecto. Por ejemplo:
 
 ```xml
 <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">

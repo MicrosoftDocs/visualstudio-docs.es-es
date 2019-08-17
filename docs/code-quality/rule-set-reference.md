@@ -9,21 +9,21 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: eeb6f4842bab5586cdea1db8ae2d2dd914c88b3c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d746756bdbb6af5fa9d8758ffb984907e371b119
+ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62825369"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "69550830"
 ---
 # <a name="code-analysis-rule-set-reference"></a>Referencia del conjunto de reglas Análisis de código
 
-Al configurar análisis de código estático para los proyectos de código administrado en Visual Studio, puede elegir entre una lista de integrados *conjuntos de reglas*. Puede usar uno de estos conjuntos de reglas integrados, o bien puede [personalizar un conjunto de reglas](../code-quality/how-to-create-a-custom-rule-set.md) para satisfacer sus requisitos de proyecto.
+Al configurar el análisis heredado para proyectos de código administrado en Visual Studio, puede elegir en una lista de conjuntos de *reglas*integrados. Puede usar uno de estos conjuntos de reglas integrados, o bien puede [personalizar un conjunto de reglas](../code-quality/how-to-create-a-custom-rule-set.md) para satisfacer sus requisitos de proyecto.
 
 Los temas de esta sección describen la regla integrada conjuntos y las reglas (o advertencias) que contienen.
 
 > [!NOTE]
-> Los conjuntos de reglas en esta sección se refieren a análisis de código estático. Para obtener información acerca de los conjuntos de reglas disponibles para los paquetes del analizador de Roslyn, vea [usar conjuntos de reglas con analizadores de Roslyn](analyzer-rule-sets.md).
+> Los conjuntos de reglas de esta sección pertenecen al análisis heredado. Para obtener información sobre los conjuntos de reglas disponibles para los paquetes del analizador de código, vea [usar conjuntos de reglas con analizadores de código](analyzer-rule-sets.md).
 
 - [Conjunto de reglas Todas las reglas](all-rules-rule-set.md)
 - [Conjunto de reglas Reglas de corrección básicas para código administrado](basic-correctness-rules-rule-set-for-managed-code.md)

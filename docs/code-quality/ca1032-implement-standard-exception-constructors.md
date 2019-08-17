@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ad062154b8213d021c8c265aaf287d3a9335d0e4
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 4b294b267aa7bb1a2912ed42807ac0f878c87838
+ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68922879"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "69547657"
 ---
 # <a name="ca1032-implement-standard-exception-constructors"></a>CA1032: Implementar constructores de excepción estándar
 
@@ -44,7 +44,7 @@ Los tipos de excepción deben implementar los tres constructores siguientes:
 
 - Public NewException (cadena, excepción)
 
-Además, si está ejecutando análisis de código estático de FxCop heredado en lugar de los analizadores de [FxCop basados en Roslyn](../code-quality/roslyn-analyzers-overview.md), la ausencia de un cuarto constructor también genera una infracción:
+Además, si ejecuta el análisis de FxCop heredado en lugar de los [analizadores de FxCop basados en .net Compiler Platform](../code-quality/roslyn-analyzers-overview.md), la ausencia de un cuarto constructor también genera una infracción:
 
 - NewException protegido o privado (SerializationInfo, StreamingContext)
 

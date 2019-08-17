@@ -1,6 +1,6 @@
 ---
 title: Referencia administrada (desarrollo de Office en Visual Studio)
-ms.date: 02/02/2017
+ms.date: 08/14/2019
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -13,18 +13,17 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f8ff9a196fb459359502e4c9f8599fbdeff3e1ce
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: da10833f8340d5308321038bb0500ca8408b40bb
+ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63438803"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "69551770"
 ---
 # <a name="managed-reference-office-development-in-visual-studio"></a>Referencia administrada (desarrollo de Office en Visual Studio)
-  Esta sección contiene documentación de referencia de API para los espacios de nombres y los tipos que se utilizan en los proyectos de Office que abordan [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] o [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)]. Para obtener documentación de referencia de API sobre los espacios de nombres y tipos que se usan en proyectos de Office destinados a .NET Framework 3.5, vea la siguiente sección de referencia en la documentación de Visual Studio: [ http://go.microsoft.com/fwlink/?LinkId=160658 ](http://go.microsoft.com/fwlink/?LinkId=160658).
+  Esta sección contiene documentación de referencia de API para los espacios de nombres y los tipos que se utilizan en los proyectos de Office que abordan [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] o [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)]. Para obtener documentación de referencia de API sobre los espacios de nombres y los tipos que se usan en los proyectos de Office destinados a la .NET Framework 3,5, vea la siguiente [http://go.microsoft.com/fwlink/?LinkId=160658](http://go.microsoft.com/fwlink/?LinkId=160658)sección de referencia en la documentación de Visual Studio:.
 
-> [!NOTE]
-> ¿Está interesado en desarrollar soluciones que amplían la experiencia de Office a través de [varias plataformas](https://dev.office.com/add-in-availability)? Visite el nuevo [modelo de complementos de Office](https://dev.office.com/docs/add-ins/overview/office-add-ins). Complementos de Office tienen una superficie pequeña en comparación con las soluciones y complementos VSTO, y puede crearlas con prácticamente cualquier tecnología, como HTML5, CSS3, JavaScript y XML de programación web.
+[!include[Add-ins note](includes/addinsnote.md)]
 
 ## <a name="in-this-section"></a>En esta sección
  <xref:Microsoft.Office.Tools>
@@ -72,7 +71,7 @@ ms.locfileid: "63438803"
  Contiene las clases de la tarea MSBuild que se usan para crear proyectos de Office.
 
 ## <a name="see-also"></a>Vea también
-- [Visual Studio tools para Office runtime overview](../vsto/visual-studio-tools-for-office-runtime-overview.md)
-- [Introducción a &#40;desarrollo de Office en Visual Studio&#41;](../vsto/getting-started-office-development-in-visual-studio.md)
-- [Tutoriales y ejemplos de desarrollo de office](../vsto/office-development-samples-and-walkthroughs.md)
+- [Información general de Visual Studio Tools para Office Runtime](../vsto/visual-studio-tools-for-office-runtime-overview.md)
+- [Introducción &#40;al desarrollo de Office en Visual Studio&#41;](../vsto/getting-started-office-development-in-visual-studio.md)
+- [Ejemplos y tutoriales de desarrollo de Office](../vsto/office-development-samples-and-walkthroughs.md)
 - [Diseñar y crear soluciones de Office](../vsto/designing-and-creating-office-solutions.md)
