@@ -9,12 +9,12 @@ caps.latest.revision: 14
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 00957e742f5731d43881df4f0ff9e18bfd7cf773
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 3df1139f34c17055703b1ffcbbe2711d5750b9a8
+ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62555586"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68870045"
 ---
 # <a name="how-to-use-the-concurrency-visualizer-markers-sdk"></a>Cómo Usar el SDK de marcadores del visualizador de simultaneidad
 
@@ -90,7 +90,7 @@ Este tema muestra cómo usar el SDK del visualizador de simultaneidad para crear
     using Microsoft.ConcurrencyVisualizer.Instrumentation;
     ```
 
-3. Agregue código para crear tres intervalos en la serie de marcadores predeterminada y escriba una marca, un mensaje y una alerta para cada intervalo. Crear un <xref:Microsoft.ConcurrencyVisualizer.Instrumentation.Span> objeto mediante una llamada a la (estático) [EnterSpan]<!-- TODO: review code entity reference <xref:assetId:///EnterSpan?qualifyHint=False&amp;autoUpgrade=True>  -->) método. Para escribir en la serie predeterminada, use los métodos de escritura estáticos de la clase <xref:Microsoft.ConcurrencyVisualizer.Instrumentation.Markers>.
+3. Agregue código para crear tres intervalos en la serie de marcadores predeterminada y escriba una marca, un mensaje y una alerta para cada intervalo. Cree un objeto [span](/previous-versions/hh694189(v=vs.140)) llamando al método estático `EnterSpan` . Para escribir en la serie predeterminada, use los métodos de escritura estáticos de la clase [markers](/previous-versions/hh694099(v=vs.140)).
 
     ```vb
     Dim flagSpan As Span = Markers.EnterSpan("flag span")
@@ -132,7 +132,7 @@ Este tema muestra cómo usar el SDK del visualizador de simultaneidad para crear
 
      ![Visualizador de simultaneidad con marcadores y alertas](../profiling/media/cvmarkersmanaged.png "CvMarkersManaged")
 
-5. Agregue código para crear series de marcadores de cliente con el método <xref:Microsoft.ConcurrencyVisualizer.Instrumentation.Markers.CreateMarkerSeries%2A> estático. La clase <xref:Microsoft.ConcurrencyVisualizer.Instrumentation.MarkerSeries> contiene métodos para crear intervalos y escribir marcas, mensajes y alertas.
+5. Agregue código para crear series de marcadores de cliente mediante el método estático [CreateMarkerSeries](/previous-versions/hh694171(v=vs.140)) . La clase [marcadores](/previous-versions/hh694127(v=vs.140)) contiene métodos para crear intervalos y escribir marcas, mensajes y alertas.
 
     ```vb
     Dim flagSeries As MarkerSeries = Markers.DefaultWriter.CreateMarkerSeries("flag series")

@@ -1,7 +1,7 @@
 # [Suscripciones de Visual Studio](index.md)
 ## [Novedades](whats-new-in-subscriptions.md)
 ## Suscripciones
-### Compra de suscripciones
+### Comprar suscripciones
 #### [Minoristas](https://visualstudio.microsoft.com/vs/pricing)
 #### Nube 
 ##### [Información general](vscloud-overview.md)
@@ -10,9 +10,9 @@
 #### [Visual Studio con GitHub Enterprise](access-github.md)
 #### Microsoft Partner Network
 ##### [Suscripciones para asociados](program-mpn.md)
-##### [Administración de suscripciones para MPN](manage-mpn-subscriptions.md)
+##### [Administración de las suscripciones de mi MPN](manage-mpn-subscriptions.md)
 #### [Microsoft for Startups](program-startups.md)
-### Iniciar sesión 
+### Inicio de sesión 
 #### [Activación de suscripciones comerciales](activate-store-subscriptions.md)
 #### [Inicio de sesión con cuentas de Microsoft](sign-in-msa.md)
 #### [Inicio de sesión con una cuenta profesional o educativa](sign-in-work.md)
