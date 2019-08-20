@@ -8,17 +8,18 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 62d11a73d8e8e4510269f73cfb83d946b6ff864b
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 9ec1bdaf421e3976872a3460dc22fecd24b4386b
+ms.sourcegitcommit: b83fefa8177c5554cbe2c59c4d102cbc534f7cc6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68923996"
+ms.lasthandoff: 08/19/2019
+ms.locfileid: "69585113"
 ---
 # <a name="extended-correctness-rules-rule-set-for-managed-code"></a>Conjunto de reglas Reglas de corrección extendidas para código administrado
+
 El conjunto de reglas reglas de corrección extendidas de Microsoft maximiza los errores de uso de la lógica y el marco de trabajo que se indican en el análisis de código. Se pone especial énfasis en escenarios específicos como la interoperabilidad COM y las aplicaciones móviles. Debe considerar la posibilidad de incluir este conjunto de reglas si alguno de estos escenarios se aplica a su proyecto o para buscar problemas adicionales en el proyecto.
 
-El conjunto de reglas reglas de corrección extendidas de Microsoft incluye las reglas que se encuentran en el conjunto de reglas reglas de corrección básicas de Microsoft. Las reglas de corrección básicas incluyen las reglas que se encuentran en el conjunto de reglas reglas mínimas recomendadas de Microsoft. Para obtener más información, vea [conjunto de reglas reglas de corrección básicas para código administrado](../code-quality/basic-correctness-rules-rule-set-for-managed-code.md) y [conjunto de reglas reglas recomendadas administradas para código administrado](../code-quality/managed-recommended-rules-rule-set-for-managed-code.md)
+El conjunto de reglas reglas de corrección extendidas de Microsoft incluye las reglas que se encuentran en el conjunto de reglas [reglas de corrección básicas](../code-quality/basic-correctness-rules-rule-set-for-managed-code.md) , que contiene las reglas que se encuentran en el conjunto de reglas [reglas recomendadas administradas](../code-quality/managed-recommended-rules-rule-set-for-managed-code.md) .
 
 En la tabla siguiente se describen todas las reglas del conjunto de reglas reglas de corrección extendidas de Microsoft.
 

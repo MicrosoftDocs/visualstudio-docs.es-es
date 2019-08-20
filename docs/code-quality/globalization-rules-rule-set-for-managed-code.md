@@ -8,21 +8,22 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 28199eb9fa09e2096939ffa8e678eb9812a61b1f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ffba6b69e1f67b369f3d99c1b54a88448df8a41b
+ms.sourcegitcommit: b83fefa8177c5554cbe2c59c4d102cbc534f7cc6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62816405"
+ms.lasthandoff: 08/19/2019
+ms.locfileid: "69584982"
 ---
 # <a name="globalization-rules-rule-set-for-managed-code"></a>Conjunto de reglas Reglas de globalización para código administrado
-Puede usar el conjunto de reglas reglas de globalización de Microsoft a centrarse en los problemas que pueden impedir que los datos en su aplicación aparezca correctamente en diferentes idiomas, configuraciones regionales y referencias culturales. Debe incluir este conjunto de reglas si la aplicación se localiza globalizadas, o ambos.
 
-|Regla|Descripción|
+Utilice el conjunto de reglas reglas de globalización de Microsoft para centrarse en los problemas que podrían impedir que los datos de la aplicación aparezcan correctamente en diferentes idiomas, configuraciones regionales y referencias culturales. Debe incluir este conjunto de reglas si la aplicación está localizada, globalizada o ambas.
+
+|Regla|DESCRIPCIÓN|
 |----------|-----------------|
 |[CA1300](../code-quality/ca1300-specify-messageboxoptions.md)|Especificar MessageBoxOptions|
 |[CA1301](../code-quality/ca1301-avoid-duplicate-accelerators.md)|Evitar los aceleradores duplicados|
-|[CA1302](../code-quality/ca1302-do-not-hardcode-locale-specific-strings.md)|No codificar las cadenas específicas de configuración regional|
+|[CA1302](../code-quality/ca1302-do-not-hardcode-locale-specific-strings.md)|No codificar cadenas específicas de la configuración regional|
 |[CA1303](../code-quality/ca1303-do-not-pass-literals-as-localized-parameters.md)|No pasar literales como parámetros localizados|
 |[CA1304](../code-quality/ca1304-specify-cultureinfo.md)|Especificar CultureInfo|
 |[CA1305](../code-quality/ca1305-specify-iformatprovider.md)|Especificar IFormatProvider|

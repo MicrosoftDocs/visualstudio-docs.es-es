@@ -8,17 +8,18 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 72182607369094781050b94b1003398479dfe2cb
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: 1131f9cf0e77fd4fe68e4bc5c033491aa6dd34e1
+ms.sourcegitcommit: b83fefa8177c5554cbe2c59c4d102cbc534f7cc6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65459135"
+ms.lasthandoff: 08/19/2019
+ms.locfileid: "69585193"
 ---
 # <a name="security-rules-rule-set-for-managed-code"></a>Conjunto de reglas Reglas de seguridad para código administrado
-Debe incluir el conjunto de reglas reglas de seguridad de Microsoft a maximizar el número de posibles problemas de seguridad que se notifican.
 
-|Regla|Descripción|
+Utilice el conjunto de reglas reglas de seguridad de Microsoft para el análisis de código heredado con el fin de maximizar el número de posibles problemas de seguridad que se muestran.
+
+|Regla|DESCRIPCIÓN|
 |----------|-----------------|
 |[CA2100](../code-quality/ca2100-review-sql-queries-for-security-vulnerabilities.md)|Revisar consultas SQL para comprobar si tienen vulnerabilidades de seguridad|
 |[CA2102](../code-quality/ca2102-catch-non-clscompliant-exceptions-in-general-handlers.md)|Detectar las excepciones que no son CLSCompliant en los controladores generales|
@@ -66,12 +67,12 @@ Debe incluir el conjunto de reglas reglas de seguridad de Microsoft a maximizar 
 |[CA2300](ca2300-do-not-use-insecure-deserializer-binaryformatter.md)|No usar el deserializador no seguro BinaryFormatter|
 |[CA2301](ca2301-do-not-call-binaryformatter-deserialize-without-first-setting-binaryformatter-binder.md)|No llamar a BinaryFormatter.Deserialize sin establecer primero BinaryFormatter.Binder|
 |[CA2302](ca2302-ensure-binaryformatter-binder-is-set-before-calling-binaryformatter-deserialize.md)|Asegurarse de que BinaryFormatter.Binder está establecido antes de llamar a BinaryFormatter.Deserialize|
-|[CA2305](ca2305-do-not-use-insecure-deserializer-losformatter.md)|No use deserializador inseguro LosFormatter|
-|[CA2310](ca2310-do-not-use-insecure-deserializer-netdatacontractserializer.md)|No use deserializador inseguro NetDataContractSerializer|
-|[CA2311](ca2311-do-not-deserialize-without-first-setting-netdatacontractserializer-binder.md)|No se puedan deserializar sin establecer primero NetDataContractSerializer.Binder|
+|[CA2305](ca2305-do-not-use-insecure-deserializer-losformatter.md)|No usar el deserializador no seguro LosFormatter|
+|[CA2310](ca2310-do-not-use-insecure-deserializer-netdatacontractserializer.md)|No usar el deserializador no seguro NetDataContractSerializer|
+|[CA2311](ca2311-do-not-deserialize-without-first-setting-netdatacontractserializer-binder.md)|No deserializar sin establecer primero NetDataContractSerializer.Binder|
 |[CA2312](ca2312-ensure-netdatacontractserializer-binder-is-set-before-deserializing.md)|Asegúrese de que se establece NetDataContractSerializer.Binder antes de deserializar|
-|[CA2315](ca2315-do-not-use-insecure-deserializer-objectstateformatter.md)|No use deserializador inseguro ObjectStateFormatter|
-|[CA2321](ca2321.md)|No se puedan deserializar con JavaScriptSerializer mediante un SimpleTypeResolver|
+|[CA2315](ca2315-do-not-use-insecure-deserializer-objectstateformatter.md)|No usar el deserializador no seguro ObjectStateFormatter|
+|[CA2321](ca2321.md)|No deserializar con JavaScriptSerializer mediante SimpleTypeResolver|
 |[CA2322](ca2322.md)|Asegúrese de que JavaScriptSerializer no se ha inicializado con SimpleTypeResolver antes de deserializar|
 |[CA3001](../code-quality/ca3001-review-code-for-sql-injection-vulnerabilities.md)|Revisión de código en busca de vulnerabilidades de inyección de SQL|
 |[CA3002](../code-quality/ca3002-review-code-for-xss-vulnerabilities.md)|Revisión de código en busca de vulnerabilidades de XSS|
