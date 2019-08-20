@@ -8,17 +8,20 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: c07471290756acc74289a552fcafde746c020e71
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 2060c9c2db3dd3d60efb07b1e23c445a47d54b5d
+ms.sourcegitcommit: b83fefa8177c5554cbe2c59c4d102cbc534f7cc6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62823548"
+ms.lasthandoff: 08/19/2019
+ms.locfileid: "69585057"
 ---
 # <a name="managed-recommended-rules-rule-set-for-managed-code"></a>Conjunto de reglas Reglas recomendadas administradas para código administrado
-Puede usar el conjunto de reglas reglas recomendadas administradas de Microsoft a centrarse en los problemas más graves del código administrado, incluidas posibles vulnerabilidades de seguridad, bloqueos de la aplicación y otros errores de diseño y lógica importantes. Debe incluir este conjunto de reglas en cualquier conjunto de reglas personalizados que cree para sus proyectos.
 
-|Regla|Descripción|
+Utilice el conjunto de reglas reglas recomendadas administradas por Microsoft para centrarse en los problemas más críticos del código administrado, incluidas posibles vulnerabilidades de seguridad, bloqueos de la aplicación y otros errores de diseño y lógica importantes. Este conjunto de reglas incluye todas las reglas del conjunto de reglas [reglas mínimas administradas](managed-minimum-rules-rule-set-for-managed-code.md) .
+
+Incluya este conjunto de reglas en cualquier conjunto de reglas personalizado que cree para sus proyectos.
+
+|Regla|DESCRIPCIÓN|
 |----------|-----------------|
 |[CA1001](../code-quality/ca1001-types-that-own-disposable-fields-should-be-disposable.md)|Los tipos que poseen campos descartables deben ser descartables|
 |[CA1009](../code-quality/ca1009-declare-event-handlers-correctly.md)|Declarar los controladores de evento correctamente|

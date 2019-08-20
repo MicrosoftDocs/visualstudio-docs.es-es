@@ -8,22 +8,22 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: cf5b486e8298b6438b774481a839c0f6433cdbed
-ms.sourcegitcommit: 92a04c57ac0a49f304fa2ea5043436f30068c3cd
+ms.openlocfilehash: b2270caa0cf7db230fa030cb620d51f1677d9dec
+ms.sourcegitcommit: b83fefa8177c5554cbe2c59c4d102cbc534f7cc6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/21/2019
-ms.locfileid: "65975902"
+ms.lasthandoff: 08/19/2019
+ms.locfileid: "69585069"
 ---
 # <a name="extended-design-guidelines-rules-rule-set-for-managed-code"></a>Conjunto de reglas Reglas de directrices de diseño ampliadas para código administrado
 
-El conjunto de reglas reglas de directrices de diseño extendidas de Microsoft se expande en las reglas de directrices de diseño básicas para maximizar los problemas de facilidad de uso y mantenimiento que se notifican. Se pone especial énfasis en las directrices de nomenclatura. Considere incluir este conjunto de reglas si el proyecto incluye código de bibliotecas o si desea exigir los más altos estándares para escribir código fácil de mantener.
+El conjunto de reglas reglas de directrices de diseño extendido de Microsoft amplía las reglas de directrices de diseño básicas para maximizar los problemas de facilidad de uso y mantenimiento que se indican. Se pone especial énfasis en las directrices de nomenclatura. Debe considerar la posibilidad de incluir este conjunto de reglas si el proyecto incluye código de biblioteca o si desea aplicar los estándares más altos para escribir código que sea fácil de mantener.
 
-Las reglas de directrices de diseño extendidas incluyen todas las reglas de directrices de diseño básicas de Microsoft. Las reglas de directrices de diseño básico incluye todas las reglas mínimas recomendadas de Microsoft. Para obtener más información, consulte [de conjunto de reglas de reglas de directrices de diseño básicas para código administrado](../code-quality/basic-design-guideline-rules-rule-set-for-managed-code.md) y [pravidel administra reglas recomendadas para código administrado](../code-quality/managed-recommended-rules-rule-set-for-managed-code.md)
+Las reglas de directrices de diseño extendidas incluyen todas las reglas del conjunto de reglas [reglas de directrices de diseño básicas](../code-quality/basic-design-guideline-rules-rule-set-for-managed-code.md) , que incluye las reglas del conjunto de reglas [reglas recomendadas administradas](../code-quality/managed-recommended-rules-rule-set-for-managed-code.md) .
 
-En la tabla siguiente se describe todas las reglas en el conjunto de reglas reglas de directrices de diseño extendidas de Microsoft.
+En la tabla siguiente se describen todas las reglas del conjunto de reglas reglas de directrices de diseño extendido de Microsoft.
 
-|Regla|Descripción|
+|Regla|DESCRIPCIÓN|
 |----------|-----------------|
 |[CA1001](../code-quality/ca1001-types-that-own-disposable-fields-should-be-disposable.md)|Los tipos que poseen campos descartables deben ser descartables|
 |[CA1009](../code-quality/ca1009-declare-event-handlers-correctly.md)|Declarar los controladores de evento correctamente|

@@ -10,18 +10,18 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3c0be66559802188503c3b8f8c1c2cf2955dbd8a
-ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
+ms.openlocfilehash: 68410fd43f182873c27e3d5fed742bed7ba8a4ed
+ms.sourcegitcommit: b83fefa8177c5554cbe2c59c4d102cbc534f7cc6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69547943"
+ms.lasthandoff: 08/19/2019
+ms.locfileid: "69585135"
 ---
 # <a name="rule-sets-for-analyzer-packages"></a>Conjuntos de reglas para paquetes de analizador
 
 Los conjuntos de reglas predefinidos se incluyen en algunos paquetes del analizador de NuGet. Por ejemplo, los conjuntos de reglas que se incluyen con el paquete del analizador de NuGet [Microsoft. CodeAnalysis. FxCopAnalyzers](https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers/) (a partir de la versión 2.6.2 Critical () habilitan o deshabilitan reglas en función de su categoría, como la seguridad, la nomenclatura o el rendimiento. El uso de conjuntos de reglas facilita la rápida consulta únicamente de las infracciones de reglas que pertenecen a una determinada categoría de regla.
 
-Si va a migrar desde el análisis de "FxCop" heredado al análisis de código basado en .NET Compiler Platform, estos conjuntos de reglas permiten seguir usando las mismas configuraciones de reglas que usó anteriormente.
+Si va a migrar desde el análisis de "FxCop" heredado al análisis de código basado en .NET Compiler Platform, estos conjuntos de reglas permiten seguir usando configuraciones de reglas similares a [las que se usaron previamente](rule-set-reference.md).
 
 ## <a name="use-analyzer-package-rule-sets"></a>Usar conjuntos de reglas de paquetes de analizador
 
@@ -58,7 +58,7 @@ Los conjuntos de reglas del analizador predefinido incluyen tres conjuntos de re
 
 Además, hay dos conjuntos de reglas para cada categoría de reglas en el paquete, como el rendimiento o la seguridad. Un conjunto de reglas habilita todas las reglas de la categoría y un conjunto de reglas respeta la gravedad y la configuración de habilitación predeterminadas para cada regla de la categoría.
 
-El paquete del analizador de NuGet [Microsoft. CodeAnalysis. FxCopAnalyzers](https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers/) incluye conjuntos de reglas para las siguientes categorías, que coinciden con los conjuntos de reglas disponibles para el análisis heredado:
+El paquete del analizador de NuGet [Microsoft. CodeAnalysis. FxCopAnalyzers](https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers/) incluye conjuntos de reglas para las siguientes categorías:
 
 - diseño
 - en línea

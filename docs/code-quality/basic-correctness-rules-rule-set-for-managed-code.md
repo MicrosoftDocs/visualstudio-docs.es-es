@@ -8,15 +8,16 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: ce48ece2801096b2b657df41bcaa0a744e67bd45
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: a76d1c5d2268c0119fc6822167537b500371cdb5
+ms.sourcegitcommit: b83fefa8177c5554cbe2c59c4d102cbc534f7cc6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68919566"
+ms.lasthandoff: 08/19/2019
+ms.locfileid: "69585015"
 ---
 # <a name="basic-correctness-rules-rule-set-for-managed-code"></a>Conjunto de reglas Reglas de corrección básicas para código administrado
-El conjunto de reglas reglas de corrección básicas se centra en los errores de lógica y los errores comunes en el uso de las API de .NET Framework. Las reglas de corrección básicas incluyen las reglas del conjunto de reglas reglas mínimas recomendadas. Para obtener más información, vea [conjunto de reglas reglas recomendadas administradas para código administrado](../code-quality/managed-recommended-rules-rule-set-for-managed-code.md) . debe incluir este conjunto de reglas para ampliar la lista de advertencias que notifican las reglas mínimas recomendadas.
+
+El conjunto de reglas reglas de corrección básicas se centra en los errores de lógica y los errores comunes en el uso de las API de .NET Framework. Las reglas de corrección básicas incluyen las reglas del conjunto de reglas [reglas recomendadas administradas](managed-recommended-rules-rule-set-for-managed-code.md) .
 
 En la tabla siguiente se describen todas las reglas del conjunto de reglas reglas de corrección básicas de Microsoft.
 
