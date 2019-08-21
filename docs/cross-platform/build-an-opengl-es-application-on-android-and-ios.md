@@ -12,12 +12,12 @@ ms.author: corob
 manager: jillfra
 ms.workload:
 - xplat-cplusplus
-ms.openlocfilehash: aa8ffe308f8a1181ed18af52ba7537c46007de94
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: b235576f21b63a7be4170f36abf58bed9fab9df3
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66317647"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68923901"
 ---
 # <a name="build-an-opengl-es-application-on-android-and-ios"></a>Crear una aplicación de OpenGL ES en Android e iOS
 
@@ -158,7 +158,7 @@ Para implementar una aplicación iOS en un dispositivo iOS, debe configurar la f
 1. Elija el dispositivo iOS en la barra de herramientas para ejecutar la aplicación en el dispositivo asociado a su equipo Mac. Si no se inicia la aplicación, compruebe que el dispositivo concede permiso para que la aplicación implementada se ejecute en el dispositivo. Para configurar este permiso, vaya a **Configuración** > **General** > **Administración de dispositivos** en el dispositivo. Seleccione la cuenta de la aplicación de desarrolladores, confíe en ella y verifique la aplicación. Intente volver a ejecutar la aplicación desde Visual Studio.
 
    ![Aplicación iOS en dispositivos iOS](../cross-platform/media/cppmdd-opengles-iosdevice.png "CPPMDD_OpenGLES_iOSDevice")
-   
+
    Cuando la aplicación se inicia, puede establecer puntos de interrupción y usar el depurador de Visual Studio para examinar locales, ver la pila de llamadas e inspeccionar los valores.
 
    ![Depurador en un punto de interrupción en una aplicación para iOS](../cross-platform/media/cppmdd_opengles_iosdebug.png "CPPMDD_OpenGLES_iOSDebug")

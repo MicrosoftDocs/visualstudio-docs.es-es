@@ -1,7 +1,7 @@
 ---
 title: Creación de una instalación basada en red
 description: Obtenga información sobre cómo crear un punto de instalación de red para la implementación de Visual Studio dentro de una empresa.
-ms.date: 04/26/2019
+ms.date: 08/06/2019
 ms.custom: seodec18
 ms.topic: conceptual
 helpviewer_keywords:
@@ -15,12 +15,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: c0ac63fda69290bef28604cda7524a318c01edc8
-ms.sourcegitcommit: 01c3c9dcade5d913bde2c7efa8c931a7b04e6cd0
+ms.openlocfilehash: 766e3a35c6f9b775373fb7a096000177cfee131d
+ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2019
-ms.locfileid: "67365335"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68870777"
 ---
 # <a name="create-a-network-installation-of-visual-studio"></a>Creación de una instalación de red de Visual Studio
 
@@ -39,7 +39,7 @@ El archivo ejecutable o, para ser más específicos, un archivo de programa prev
 
 ::: moniker range="vs-2017"
 
-|Edition | Descargar|
+|Edición | Descargar|
 |-------------|-----------------------|
 |Visual Studio Enterprise | [**vs_enterprise.exe**](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=enterprise&rel=15&utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=network+install&utm_content=download+vs2017) |
 |Visual Studio Professional | [**vs_professional.exe**](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=professional&rel=15&utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=network+install&utm_content=download+vs2017) |
@@ -50,7 +50,7 @@ Otros programas previos admitidos incluyen [vs_buildtools.exe](https://aka.ms/vs
 
 ::: moniker range="vs-2019"
 
-|Edition | Descargar|
+|Edición | Descargar|
 |-------------|-----------------------|
 |Visual Studio Enterprise | [**vs_enterprise.exe**](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=enterprise&rel=16&utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=network+install&utm_content=download+vs2019) |
 |Visual Studio Professional | [**vs_professional.exe**](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=professional&rel=16&utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=network+install&utm_content=download+vs2019) |
@@ -85,6 +85,8 @@ Consulte [Automatización de la instalación de Visual Studio con un archivo de 
 ## <a name="copy-the-layout-to-a-network-share"></a>Copia del diseño en un recurso compartido de red
 
 Hospede el diseño en un recurso compartido de red para que se pueda ejecutar desde otras máquinas.
+
+En el ejemplo siguiente se usa [xcopy](/windows-server/administration/windows-commands/xcopy/). También puede usar [robocopy](/windows-server/administration/windows-commands/robocopy/), si quiere.  
 
 ::: moniker range="vs-2017"
 

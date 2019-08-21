@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 11ebe64bf1e3034230a9697fef0c072fc89ef282
-ms.sourcegitcommit: 3e74ec49a54e5c3da7631f4466128cdf4384af6b
+ms.openlocfilehash: 7a3839a28ce0c37c5ccf43ca1f8ddba1ecd52365
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "68711401"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68918169"
 ---
 # <a name="run-unit-tests-with-test-explorer"></a>Ejecutar pruebas unitarias con el Explorador de pruebas
 
@@ -169,7 +169,7 @@ Puede definir sus propios niveles de la jerarquía y del grupo por **Estado** y,
 |**Clase**|Agrupa las pruebas por clase contenedora.|
 ::: moniker-end
 
-### <a name="group-by-traits"></a>Agrupar por rasgos
+### <a name="traits"></a>Rasgos
 
 Por lo general, un rasgo es un par nombre-valor de categoría, pero también puede ser una sola categoría. Los rasgos se pueden asignar a los métodos identificados como métodos de prueba desde el marco de pruebas unitarias. Un marco de pruebas unitarias puede definir categorías de rasgo. Si lo desea, puede agregar valores a las categorías de rasgo para definir sus propios pares nombre-valor de categoría. La sintaxis para especificar los valores y las categorías de rasgo se define desde el marco de pruebas unitarias.
 
@@ -187,7 +187,7 @@ En el marco de pruebas unitarias de Microsoft para aplicaciones administradas, e
 
 **Rasgos del marco de pruebas unitarias de Microsoft para C++**
 
- Vea [How to use the Microsoft Unit Testing Framework for C++](how-to-use-microsoft-test-framework-for-cpp.md) (Cómo usar el marco de pruebas unitarias de Microsoft para C++).
+Vea [How to use the Microsoft Unit Testing Framework for C++](how-to-use-microsoft-test-framework-for-cpp.md) (Cómo usar el marco de pruebas unitarias de Microsoft para C++).
 
 ## <a name="create-custom-playlists"></a>Crear listas de reproducción personalizadas
 
@@ -215,7 +215,7 @@ La lista de reproducción en una nueva pestaña del Explorador de pruebas. Puede
 
 ![La lista de reproducción se abre en una nueva pestaña del Explorador de pruebas](../test/media/vs-2019/test-explorer-playlist-tab-16-2.png)
 
-**Para agregar pruebas a una lista de reproducción**, elija una o varias pruebas en el Explorador de pruebas. Haga clic con el botón derecho y elija **Agregar a lista de reproducción** > **Nueva lista de reproducción**. 
+**Para agregar pruebas a una lista de reproducción**, elija una o varias pruebas en el Explorador de pruebas. Haga clic con el botón derecho y elija **Agregar a lista de reproducción** > **Nueva lista de reproducción**.
 
 **Para abrir una lista de reproducción**, elija el icono de lista de reproducción en la barra de herramientas de Visual Studio y seleccione un archivo de lista de reproducción guardado anteriormente desde el menú.
 ::: moniker-end
@@ -229,7 +229,7 @@ Los [grupos](#test-explorer-groups) también están disponibles como columnas en
 
 ### <a name="filter-sort-and-rearrange-test-columns"></a>Filtrar, ordenar y reorganizar columnas de prueba
 
-Las columnas se pueden filtrar, ordenar y reorganizar. 
+Las columnas se pueden filtrar, ordenar y reorganizar.
 * Para filtrar según rasgos específicos, haga clic en el icono de filtro ubicado en la parte superior de la columna Rasgos.
 
   ![Filtro de columna](../test/media/vs-2019/test-explorer-filter-column-16-2.png)
@@ -302,7 +302,7 @@ Para diagnosticar por qué tarda demasiado un método de prueba, selecciónelo e
 
 ### <a name="analyze-unit-test-code-coverage"></a>Analizar la cobertura de código de prueba unitaria
 
-Con la herramienta de cobertura de código de Visual Studio se puede determinar la cantidad del código de producto que las pruebas unitarias están probando realmente. La cobertura de código se puede ejecutar en pruebas seleccionadas o en todas las pruebas de una solución.
+Es posible determinar la cantidad de código de producto que las pruebas unitarias están probando realmente con la herramienta de cobertura de código de Visual Studio, disponible en la edición Visual Studio Enterprise. La cobertura de código se puede ejecutar en pruebas seleccionadas o en todas las pruebas de una solución.
 
 Para ejecutar la cobertura de código en los métodos de prueba de una solución:
 
@@ -331,6 +331,8 @@ Las pruebas se pueden ejecutar desde el **Explorador de pruebas**, haciendo clic
 |-|------------------------|
 |TestExplorer.DebugAllTestsInContext|**Ctrl**+**R**, **Ctrl**+**T**|
 |TestExplorer.RunAllTestsInContext|**Ctrl**+**R**, **T**|
+|TestExplorer.RunAllTests|**Ctrl**+**R**, **A**|
+|TestExplorer.RepeatLastRun|**Ctrl**+**R**, **L**|
 
 > [!NOTE]
 > No se puede ejecutar una prueba en una clase abstracta, ya que las pruebas solo se definen en las clases abstractas, no se crean instancias. Para ejecutar pruebas en las clases abstractas, cree una clase que se derive de la clase abstracta.

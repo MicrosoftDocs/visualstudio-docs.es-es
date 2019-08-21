@@ -1,5 +1,5 @@
 ---
-title: Introducción a la creación de juegos con Unity en Visual Studio para Mac
+title: Introducción a la creación de juegos con Unity
 description: Introducción a Unity y Visual Studio para Mac
 author: asb3993
 ms.author: amburns
@@ -7,14 +7,14 @@ ms.date: 05/20/2019
 ms.topic: article
 ms.technology: vs-ide-general
 ms.assetid: D07FA43B-9D18-4DFA-8343-CD538FAD84DB
-ms.openlocfilehash: 8f14d21468336dba220a76ad8978f136d50f96f1
-ms.sourcegitcommit: cc5fd59e5dc99181601b7db8b28d7f8a83a36bab
+ms.openlocfilehash: dd69156b1397ba6232d9143f54b0de1ef4506ecc
+ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2019
-ms.locfileid: "66836164"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68873451"
 ---
-# <a name="getting-started-building-games-with-unity-in-visual-studio-for-mac"></a>Introducción a la creación de juegos con Unity en Visual Studio para Mac 
+# <a name="getting-started-building-games-with-unity-in-visual-studio-for-mac"></a>Introducción a la creación de juegos con Unity en Visual Studio para Mac
 
 Unity es un motor de juego que permite desarrollar juegos en C#. En este tutorial se muestra cómo empezar a desarrollar y depurar juegos de Unity con Visual Studio para Mac y la extensión Visual Studio for Mac Tools for Unity junto con el entorno de Unity.
 
@@ -92,11 +92,11 @@ Este laboratorio está destinado a desarrolladores familiarizados con C#, aunque
 
     ![Propiedades de GameObject](media/unity-image12.png)
 
-17. Cambie el nombre del objeto **Cubo**, que tiene el nombre **"Cubo"** de forma predeterminada, a **"Enemigo"**. Asegúrese de presionar **Entrar** para guardar el cambio. Este va a ser el cubo enemigo de este juego sencillo.
+17. Cambie el nombre del objeto **Cubo**, que tiene el nombre **"Cubo"** de forma predeterminada, a **"Enemigo"** . Asegúrese de presionar **Entrar** para guardar el cambio. Este va a ser el cubo enemigo de este juego sencillo.
 
     ![Propiedad de cambio de nombre del objeto Cubo](media/unity-image13.png)
 
-18. Agregue otro objeto **Cubo** a la escena mediante el mismo proceso anterior y póngale el nombre **"Jugador"**.
+18. Agregue otro objeto **Cubo** a la escena mediante el mismo proceso anterior y póngale el nombre **"Jugador"** .
 
     ![Cambio de nombre del segundo objeto Cubo](media/unity-image14.png)
 
@@ -112,7 +112,7 @@ Este laboratorio está destinado a desarrolladores familiarizados con C#, aunque
 
     ![Movimiento de un cubo a lo largo del eje](media/unity-image17.png)
 
-22. Ahora puede agregar algún código para controlar la lógica de Enemigo de modo que persiga a Jugador. Haga clic con el botón derecho en la carpeta **Recursos** del panel **Proyecto** y seleccione **Crear > Script de C#**.
+22. Ahora puede agregar algún código para controlar la lógica de Enemigo de modo que persiga a Jugador. Haga clic con el botón derecho en la carpeta **Recursos** del panel **Proyecto** y seleccione **Crear > Script de C#** .
 
     ![Acción contextual Script de C#](media/unity-image18.png)
 
@@ -124,7 +124,7 @@ Este laboratorio está destinado a desarrolladores familiarizados con C#, aunque
 
     ![Resaltado que muestra la incorporación del script al objeto del juego](media/unity-image20.png)
 
-25. Seleccione **Archivo > Guardar escenas** para guardar la escena actual. Asígnele el nombre **"MyScene"**.
+25. Seleccione **Archivo > Guardar escenas** para guardar la escena actual. Asígnele el nombre **"MyScene"** .
 
 ## <a name="task-2-working-with-visual-studio-for-mac-tools-for-unity"></a>Tarea 2: Trabajo con Visual Studio for Mac Tools for Unity
 
@@ -156,7 +156,7 @@ Este laboratorio está destinado a desarrolladores familiarizados con C#, aunque
         public float Speed = 50;
         private Transform _playerTransform;
         private Transform _myTransform;
-        
+
         void Start()
         {
             var player = GameObject.FindGameObjectWithTag("Player");
@@ -250,7 +250,7 @@ Este laboratorio está destinado a desarrolladores familiarizados con C#, aunque
 
 ## <a name="task-4-exploring-unity-features-in-visual-studio-for-mac"></a>Tarea 4: Examen de las características de Unity en Visual Studio para Mac
 
-1. Visual Studio para Mac proporciona acceso rápido a documentación de Unity en el editor de código. Coloque el cursor en algún lugar del símbolo **Vector3** dentro del método **Update** y presione **⌘ Comando + '**.
+1. Visual Studio para Mac proporciona acceso rápido a documentación de Unity en el editor de código. Coloque el cursor en algún lugar del símbolo **Vector3** dentro del método **Update** y presione **⌘ Comando + '** .
 
     ![Selección de método en el editor de Visual Studio para Mac](media/unity-image38.png)
 
@@ -262,7 +262,7 @@ Este laboratorio está destinado a desarrolladores familiarizados con C#, aunque
 
     ![Acción contextual Nuevo MonoBehaviour](media/unity-image40.png)
 
-4. La clase recién creada proporciona código auxiliar para los métodos **Start** y **Update**. Después de la llave de cierre del método **Update**, comience a escribir **"onmouseup"**. A medida que escribe, observe que IntelliSense de Visual Studio rápidamente sugiere el método que planea implementar. Selecciónelo en la lista Autocompletar proporcionada. Rellena un código auxiliar del método automáticamente, incluidos los parámetros.
+4. La clase recién creada proporciona código auxiliar para los métodos **Start** y **Update**. Después de la llave de cierre del método **Update**, comience a escribir **"onmouseup"** . A medida que escribe, observe que IntelliSense de Visual Studio rápidamente sugiere el método que planea implementar. Selecciónelo en la lista Autocompletar proporcionada. Rellena un código auxiliar del método automáticamente, incluidos los parámetros.
 
     ![IntelliSense en Visual Studio para Mac](media/unity-image41.png)
 

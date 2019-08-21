@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6a49f7fe74977495c3e2a99e7311d4349ccd67bd
-ms.sourcegitcommit: 0f5f7955076238742f2071d286ad8e896f3a6cad
+ms.openlocfilehash: a68b22b5a4fedb7d3548ac3aceda7c4dc109bebe
+ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "68483548"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68870870"
 ---
 # <a name="work-with-multiple-user-accounts"></a>Trabajar con varias cuentas de usuario
 
@@ -33,7 +33,7 @@ Inicie sesión en Visual Studio con una cuenta Microsoft o una cuenta profesiona
 
 ### <a name="access-your-azure-account-in-server-explorer"></a>Obtener acceso a su cuenta de Azure en el Explorador de servidores
 
-Presione **CTRL**+**Alt**+**S** para abrir **Explorador de servidores**. Expanda el nodo **Azure** y fíjese en que contiene los recursos disponibles en la cuenta de Azure que está asociada con la cuenta que ha usado para iniciar sesión en Visual Studio. El aspecto debe ser similar al de la siguiente imagen:
+Para abrir el Explorador de servidores, elija **Ver** > **Explorador de servidores** (o, si usa la [configuración de entorno](../ide/environment-settings.md) "General", presione **Ctrl**+**Alt**+**S**). Expanda el nodo **Azure** y fíjese en que contiene los recursos disponibles en la cuenta de Azure que está asociada con la cuenta que ha usado para iniciar sesión en Visual Studio. El aspecto debe ser similar al de la siguiente imagen:
 
 ![Explorador de servidores con el nodo Azure expandido](../ide/media/work-with-multiple-user-accounts/server-explorer.png)
 

@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fc2f56df75cd9abadde8474057f762118c6a840a
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 896531325b3630b97a5cc076955fae6201defac6
+ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67826087"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68870204"
 ---
 # <a name="best-practices-for-coded-ui-tests"></a>Procedimientos recomendados para las pruebas de IU codificadas
 
@@ -42,11 +42,11 @@ Utilice las siguientes directrices para crear una prueba de IU codificada flexib
 
 - Si cambia la interfaz de usuario (UI), vuelva a grabar los métodos de prueba o los métodos de aserción, o vuelva a grabar las secciones afectadas de un método de prueba existente.
 
-- Crear un archivo <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UIMap.UIMap> para cada módulo en la aplicación sometida a prueba. Para obtener más información, vea [Probar una aplicación grande con varios mapas de IU](../test/testing-a-large-application-with-multiple-ui-maps.md).
+- Cree un archivo [UIMap](/previous-versions/dd580454(v=vs.140)) separado para cada módulo de la aplicación bajo prueba. Para obtener más información, vea [Probar una aplicación grande con varios mapas de IU](../test/testing-a-large-application-with-multiple-ui-maps.md).
 
 - En la aplicación sometida a prueba, utilice nombres descriptivos al crear los controles de IU. Esto proporciona más significado y facilidad de uso a los nombres de control generados automáticamente.
 
-- Si está creando las aserciones mediante codificación con la API, cree un método para cada aserción en la parte de la clase <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UIMap.UIMap> que está en el archivo *UIMap.cs*. Para ejecutar la aserción, llame a este método desde el método de prueba.
+- Si está creando las aserciones mediante codificación con la API, cree un método para cada aserción en la parte de la clase [UIMap](/previous-versions/dd580454(v=vs.140)) que está en el archivo *UIMap.cs*. Para ejecutar la aserción, llame a este método desde el método de prueba.
 
 - Si está codificando directamente con la API, utilice en el código las propiedades y los métodos de las clases generadas en el archivo *UIMap.Designer.cs* siempre que pueda. Estas clases hacen que el trabajo sea más fácil y más fiable, y le ayudarán a ser más productivo.
 
@@ -87,7 +87,7 @@ Playback.PlaybackSettings.WaitForReadyLevel = WaitForReadyLevel.UIThreadOnly;
 
 ## <a name="see-also"></a>Vea también
 
-- <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UIMap.UIMap>
+- [UIMap](/previous-versions/dd580454(v=vs.140))
 - <xref:Microsoft.VisualStudio.TestTools.UITesting>
 - [Usar la automatización de la interfaz de usuario para probar el código](../test/use-ui-automation-to-test-your-code.md)
 - [Crear pruebas automatizadas de IU](../test/use-ui-automation-to-test-your-code.md)
