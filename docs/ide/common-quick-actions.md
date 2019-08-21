@@ -11,12 +11,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 3364010ad9470d4431e6407e40b6a6b1cc96476a
-ms.sourcegitcommit: 0f5f7955076238742f2071d286ad8e896f3a6cad
+ms.openlocfilehash: 2ceedf18b936c0b1e8553ceb3bb1fdbc75035dfa
+ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "68483734"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "69551448"
 ---
 # <a name="common-quick-actions"></a>Acciones rápidas comunes
 
@@ -58,7 +58,7 @@ Function MyFunction as Integer
 End Function
 ```
 
-| Identificador del error: | Lenguajes aplicables | Versión admitida |
+| Identificador del error: | Lenguajes aplicables | Versión compatible |
 | ------- | -------------------- | ---------------- |
 | CS0103, BC30002 | C# y Visual Basic | Visual Studio 2015 Update 2 |
 
@@ -88,7 +88,7 @@ private void MyMethod()
 }
 ```
 
-| Identificador del error: | Lenguajes aplicables | Versión admitida |
+| Identificador del error: | Lenguajes aplicables | Versión compatible |
 | ------- | -------------------- | ---------------- |
 | CS8300, BC37284 | C# y Visual Basic | Visual Studio 2017 versión 15.3 |
 
@@ -98,7 +98,7 @@ private void MyMethod()
 
 La acción rápida **Eliminar instrucciones Using innecesarias/Quitar instrucciones Import innecesarias** quita todas las instrucciones `using` y `Import` sin usar del archivo actual. Cuando se seleccione este elemento, las importaciones de espacios de nombres sin usar se quitarán.
 
-| Lenguajes aplicables | Versión admitida |
+| Lenguajes aplicables | Versión compatible |
 | -------------------- | ---------------- |
 | C# y Visual Basic | Visual Studio 2015 RTW |
 
@@ -126,7 +126,7 @@ Dim number as Integer = CType(3, Integer)
 Dim number as Integer = 3
 ```
 
-| Id. de diagnóstico | Lenguajes aplicables | Versión admitida |
+| Id. de diagnóstico | Lenguajes aplicables | Versión compatible |
 | ------- | -------------------- | ---------------- |
 | IDE0004 | C# y Visual Basic | Visual Studio 2015 RTW |
 
@@ -153,13 +153,13 @@ public MyMethod()
 }
 ```
 
-| Id. de diagnóstico | Lenguajes aplicables | Versión admitida |
+| Id. de diagnóstico | Lenguajes aplicables | Versión compatible |
 | ------- | -------------------- | ---------------- |
 | CS0219, BC42024 | C# y Visual Basic | Visual Studio 2017 versión 15.3 |
 
 ### <a name="remove-type-from-default-value-expression"></a>Quitar el tipo de la expresión de valor predeterminado
 
-Esta acción rápida quita el tipo de valor de una expresión de valor predeterminado y usa el [literal default](/dotnet/csharp/programming-guide/statements-expressions-operators/default-value-expressions#default-literal-and-type-inference) cuando el compilador puede deducir el tipo de la expresión.
+Esta acción rápida quita el tipo de valor de una expresión de valor predeterminado y usa el [literal default](/dotnet/csharp/language-reference/operators/default#default-literal) cuando el compilador puede deducir el tipo de la expresión.
 
 ```csharp
 // Before
@@ -171,7 +171,7 @@ void DoWork(CancellationToken cancellationToken = default(CancellationToken)) { 
 void DoWork(CancellationToken cancellationToken = default) { ... }
 ```
 
-| Id. de diagnóstico | Lenguajes aplicables | Versión admitida |
+| Id. de diagnóstico | Lenguajes aplicables | Versión compatible |
 | ------- | -------------------- | ---------------- |
 | IDE0034 | C# 7.1+ | Visual Studio 2017 versión 15.3 |
 
@@ -210,7 +210,7 @@ Imports System.Diagnostics
 Debug.WriteLine("Hello")
 ```
 
-| Id. de diagnóstico | Lenguajes aplicables | Versión admitida |
+| Id. de diagnóstico | Lenguajes aplicables | Versión compatible |
 | ------- | -------------------- | ---------------- |
 | CS0103, BC30451 | C# y Visual Basic| Visual Studio 2015 Update 2 |
 
@@ -279,7 +279,7 @@ Select Case myEnum
 End Select
 ```
 
-| Id. de diagnóstico | Lenguajes aplicables | Versión admitida |
+| Id. de diagnóstico | Lenguajes aplicables | Versión compatible |
 | ------- | -------------------- | ---------------- |
 | IDE0010 | C# y Visual Basic| Visual Studio 2017 versión 15.3 |
 
@@ -313,7 +313,7 @@ class MyClass
 }
 ```
 
-| Lenguajes aplicables | Versión admitida |
+| Lenguajes aplicables | Versión compatible |
 | -------------------- | ---------------- |
 | C# y Visual Basic| Visual Studio 2017 versión 15.3 |
 
@@ -329,7 +329,7 @@ var date = new DateTime(1997, 7, 8);
 var date = new DateTime(year: 1997, month: 7, day: 8);
 ```
 
-| Lenguajes aplicables | Versión admitida |
+| Lenguajes aplicables | Versión compatible |
 | -------------------- | ---------------- |
 | C# y Visual Basic| Visual Studio 2017 versión 15.3 |
 
@@ -351,7 +351,7 @@ if (true)
 }
 ```
 
-| Id. de diagnóstico | Lenguajes aplicables | Versión admitida |
+| Id. de diagnóstico | Lenguajes aplicables | Versión compatible |
 | ------- | -------------------- | ---------------- |
 | IDE0011 | C# | Visual Studio 2017 RTW |
 
@@ -385,7 +385,7 @@ static private int thisFieldIsPublic;
 private static int thisFieldIsPublic;
 ```
 
-| Id. de diagnóstico | Lenguajes aplicables | Versión admitida |
+| Id. de diagnóstico | Lenguajes aplicables | Versión compatible |
 | ------- | -------------------- | ---------------- |
 | IDE0036 | C# y Visual Basic| Versión 15.5 de Visual Studio 2017 |
 | IDE0040 | C# y Visual Basic| Versión 15.5 de Visual Studio 2017 |
@@ -443,7 +443,7 @@ Select Case obj
 End Select
 ```
 
-| Lenguajes aplicables | Versión admitida |
+| Lenguajes aplicables | Versión compatible |
 | -------------------- | ---------------- |
 | C# y Visual Basic| Visual Studio 2017 versión 15.3 |
 
@@ -475,7 +475,7 @@ Dim num as Integer = 3
 Dim s As String = $"My string with {num} in the middle"
 ```
 
-| Lenguajes aplicables | Versión admitida |
+| Lenguajes aplicables | Versión compatible |
 | -------------------- | ---------------- |
 | C# 6.0+ y Visual Basic 14+ | Visual Studio 2017 RTW |
 
@@ -505,7 +505,7 @@ c.Age = 21
 Dim c = New Customer() With {.Age = 21}
 ```
 
-| Id. de diagnóstico | Lenguajes aplicables | Versión admitida |
+| Id. de diagnóstico | Lenguajes aplicables | Versión compatible |
 | ------- | -------------------- | ---------------- |
 | IDE0017 | C# y Visual Basic | Visual Studio 2017 RTW |
 
@@ -539,7 +539,7 @@ list.Add(3)
 Dim list = New List(Of Integer) From {1, 2, 3}
 ```
 
-| Id. de diagnóstico | Lenguajes aplicables | Versión admitida |
+| Id. de diagnóstico | Lenguajes aplicables | Versión compatible |
 | ------- | -------------------- | ---------------- |
 | IDE0028 | C# y Visual Basic | Visual Studio 2017 RTW |
 
@@ -580,7 +580,7 @@ Public Property Name As String
 End Property
 ```
 
-| Lenguajes aplicables | Versión admitida |
+| Lenguajes aplicables | Versión compatible |
 | -------------------- | ---------------- |
 | C# y Visual Basic | Versión 15.5 de Visual Studio 2017 |
 
@@ -633,7 +633,7 @@ class MyClass4
 }
 ```
 
-| Id. de diagnóstico | Lenguajes aplicables | Versión admitida |
+| Id. de diagnóstico | Lenguajes aplicables | Versión compatible |
 | ------- | -------------------- | ---------------- |
 | IDE0021-27 | C# 6.0+ | Visual Studio 2017 RTW |
 
@@ -660,7 +660,7 @@ int fibonacci(int n)
 
 ### <a name="convert-referenceequals-to-is-null"></a>Convertir "ReferenceEquals" en "es null"
 
-| Id. de diagnóstico | Lenguajes aplicables | Versión admitida |
+| Id. de diagnóstico | Lenguajes aplicables | Versión compatible |
 | ------- | -------------------- | ---------------- |
 | IDE0041 | C# 7.0+ | Versión 15.5 de Visual Studio 2017 |
 
@@ -684,7 +684,7 @@ if (value is null)
 }
 ```
 
-| Id. de diagnóstico | Lenguajes aplicables | Versión admitida |
+| Id. de diagnóstico | Lenguajes aplicables | Versión compatible |
 | ------- | -------------------- | ---------------- |
 | IDE0039 | C# 7.0+ | Versión 15.5 de Visual Studio 2017 |
 
@@ -726,7 +726,7 @@ if (o is string s)
 }
 ```
 
-| Id. de diagnóstico | Lenguajes aplicables | Versión admitida |
+| Id. de diagnóstico | Lenguajes aplicables | Versión compatible |
 | ------- | -------------------- | ---------------- |
 | IDE0020 | C# 7.0+ | Visual Studio 2017 RTW |
 | IDE0019 | C# 7.0+ | Visual Studio 2017 RTW |
@@ -755,7 +755,7 @@ Dim countdown As Integer = 2097152
 Dim countdown As Integer = &H200000
 ```
 
-| Lenguajes aplicables | Versión admitida |
+| Lenguajes aplicables | Versión compatible |
 | ------- | -------------------- | ---------------- |
 | C# 7.0+ y Visual Basic 14+ | Visual Studio 2017 versión 15.3 |
 
@@ -783,7 +783,7 @@ Dim countdown As Integer = 1000000
 Dim countdown As Integer = 1_000_000
 ```
 
-| Lenguajes aplicables | Versión admitida |
+| Lenguajes aplicables | Versión compatible |
 | ------- | -------------------- | ---------------- |
 | C# 7.0+ y Visual Basic 14+ | Visual Studio 2017 versión 15.3 |
 
@@ -815,7 +815,7 @@ Dim customer As (name As String, age As Integer) = GetCustomer()
 Dim name = customer.name
 ```
 
-| Id. de diagnóstico | Lenguajes aplicables | Versión admitida |
+| Id. de diagnóstico | Lenguajes aplicables | Versión compatible |
 | ------- | -------------------- | ---------------- |
 | IDE0033 | C# 7.0+ y Visual Basic 15+ | Visual Studio 2017 RTW |
 
@@ -843,10 +843,10 @@ var tuple = (age: age, name: name);
 var tuple = (age, name);
 ```
 
-| Id. de diagnóstico | Lenguajes aplicables | Versión admitida |
+| Id. de diagnóstico | Lenguajes aplicables | Versión compatible |
 | ------- | -------------------- | ---------------- |
-| IDE0037 | C# | Visual Studio 2017 v. 15,5 |
-| IDE0037 | C# 7.1+ | Visual Studio 2017 v. 15,5 |
+| IDE0037 | C# | Visual Studio 2017 v. 15.5 |
+| IDE0037 | C# 7.1+ | Visual Studio 2017 v. 15.5 |
 
 ### <a name="deconstruct-tuple-declaration"></a>Deconstruir la declaración de tupla
 
@@ -870,9 +870,9 @@ Console.WriteLine($"{name} {age}");
 Console.WriteLine($"{x} {y}");
 ```
 
-| Id. de diagnóstico | Lenguajes aplicables | Versión admitida |
+| Id. de diagnóstico | Lenguajes aplicables | Versión compatible |
 | ------- | -------------------- | ---------------- |
-| IDE0042 | C# 7.0+ | Visual Studio 2017 v. 15,5 |
+| IDE0042 | C# 7.0+ | Visual Studio 2017 v. 15.5 |
 
 ### <a name="make-method-synchronous"></a>Convertir un método en sincrónico
 
@@ -908,7 +908,7 @@ Function MyAsyncMethod() As Integer
 End Function
 ```
 
-| Identificador del error: | Lenguajes aplicables | Versión admitida |
+| Identificador del error: | Lenguajes aplicables | Versión compatible |
 | ------- | -------------------- | ---------------- |
 | CS1998, BC42356 | C# y Visual Basic | Visual Studio 2015 Update 2 |
 
@@ -946,7 +946,7 @@ Async Function MyAsyncMethod() As Task(Of Integer)
 End Function
 ```
 
-| Identificador del error: | Lenguajes aplicables | Versión admitida |
+| Identificador del error: | Lenguajes aplicables | Versión compatible |
 | ------- | -------------------- | ---------------- |
 | CS4032, BC37057 | C# y Visual Basic | Visual Studio 2017 |
 
