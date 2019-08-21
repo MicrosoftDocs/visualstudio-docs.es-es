@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fcf217f2826bf618db2288107fafeff091e6a2bd
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: b0bda0d52a50ef3f92d8cecc4156922779f2af5e
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67824688"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68926653"
 ---
 # <a name="use-coded-ui-test-to-test-your-code"></a>Usar pruebas automatizadas de IU para probar el código
 
@@ -158,7 +158,7 @@ Si no quiere iniciar y detener la aplicación, el explorador o la base de datos 
 
 ## <a name="validate-the-properties-of-ui-controls"></a>Validar las propiedades de los controles de IU
 
-Puede usar el **Generador de pruebas de IU codificadas** para agregar un control de interfaz de usuario a <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UIMap.UIMap> para la prueba o generar código para un método de validación que usa una aserción para un control de IU.
+Puede usar el **Generador de pruebas de IU codificadas** para agregar un control de interfaz de usuario a [UIMap](/previous-versions/dd580454(v=vs.140)) para la prueba o generar código para un método de validación que usa una aserción para un control de IU.
 
 Para generar aserciones para los controles de IU, elija la herramienta **Agregar aserciones** del **Generador de pruebas automatizadas de IU** y arrástrela al control de la aplicación en pruebas que quiere comprobar si es correcto. Cuando el cuadro rodee el control, suelte el mouse. El código de clase de control se crea inmediatamente en el archivo *UIMap.Designer.cs*.
 
@@ -402,10 +402,10 @@ Para obtener y establecer los valores de propiedad específicos del control de I
 
 Con controles que derivan de <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl>, como [HtmlList](xref:Microsoft.VisualStudio.TestTools.UITesting.HtmlControls.HtmlList) o [WinComboBox](xref:Microsoft.VisualStudio.TestTools.UITesting.WinControls.WinComboBox), puede obtener o establecer directamente sus valores de propiedad. En el código siguiente se muestran algunos ejemplos:
 
- ```csharp
- int i = myHtmlList.ItemCount;
- myWinCheckBox.Checked = true;
- ```
+```csharp
+int i = myHtmlList.ItemCount;
+myWinCheckBox.Checked = true;
+```
 
 ### <a name="to-get-properties-from-ui-test-controls"></a>Para obtener las propiedades de los controles de prueba de IU
 
@@ -455,7 +455,6 @@ Las pruebas automatizadas de IU se suelen usar para automatizar las pruebas manu
 
 - [Grabar y reproducir pruebas manuales](/azure/devops/test/mtm/record-play-back-manual-tests?view=vsts)
 - [Xamarin.UITest](/appcenter/test-cloud/uitest/)
-- <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UIMap.UIMap>
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert>
 - [Tutorial: Crear, editar y mantener una prueba automatizada de IU](../test/walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md)
 - [Crear una prueba automatizada de IU para probar una aplicación de UWP](test-uwp-app-with-coded-ui-test.md)

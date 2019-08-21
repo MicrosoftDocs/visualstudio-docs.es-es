@@ -18,12 +18,12 @@ ms.topic: conceptual
 ms.workload:
 - multiple
 monikerRange: vs-2017
-ms.openlocfilehash: eabfb7ffd365ab377bc80997138a4f3368db488d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 4fd3bde36b81dde254f3447d46bd05ffc41c6cde
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62583547"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68925903"
 ---
 # <a name="whats-new-in-visual-studio-2017"></a>Novedades de Visual Studio 2017
 
@@ -36,14 +36,14 @@ ms.locfileid: "62583547"
 
 Este es un resumen general de los cambios que hemos realizado desde la versión anterior, Visual Studio 2015:
 
-* **[Redefinición de los aspectos básicos](#redefined-fundamentals)**. Una nueva experiencia de instalación significa que puede instalar más rápidamente e instalar lo que desee cuando lo necesite.
-* **[Rendimiento y productividad](#performance-and-productivity)**. Nos hemos centrado en nuevas y modernas funciones de desarrollo de escritorio, en la nube y móviles. Además, Visual Studio se inicia más rápido, tiene mejor capacidad de respuesta y usa menos memoria que antes.
-* **[Desarrollo de aplicaciones en la nube con Azure](#cloud-app-development-with-azure)**. Se trata de un conjunto integrado de herramientas de Azure que le permite crear con facilidad aplicaciones principalmente destinadas a la nube con la tecnología de Microsoft Azure. Visual Studio facilita la configuración, la compilación, la depuración, el empaquetado y la implementación de aplicaciones y servicios en Azure.
-* **[Desarrollo de aplicaciones para Windows](#windows-app-development)**. Use las plantillas de UWP en Visual Studio 2017 para crear un proyecto único para todos los dispositivos Windows 10&ndash; PC, tableta, teléfono, Xbox, HoloLens, Surface Hub y mucho más.
-* **[Desarrollo de aplicaciones móviles](#mobile-app-development)**. Innove y obtenga resultados rápidamente con Xamarin, que unifica los requisitos móviles multiplataforma en un código base principal y un conjunto de aptitudes.
-* **[Desarrollo multiplataforma](#cross-platform-development)**. Distribuya software en cualquier plataforma de destino sin problemas. Extienda los procesos de DevOps a SQL Server por medio de Redgate Data Tools y automatice con seguridad las implementaciones de base de datos desde Visual Studio. O use .NET Core para escribir aplicaciones y bibliotecas que se ejecuten sin modificarse en sistemas operativos Windows, Linux y macOS.
-* **[Desarrollo de juegos](#games-development)**. Con Visual Studio Tools para Unity (VSTU), puede usar Visual Studio para escribir scripts de editor y juegos en C# y, a continuación, usar su eficaz depurador para buscar y corregir errores.
-* **[Desarrollo de IA](#ai-development)**. Con Visual Studio Tools for AI, puede usar las características de productividad de Visual Studio para acelerar la innovación de IA. Compile, pruebe e implemente las soluciones de aprendizaje profundo e inteligencia artificial que se integran fácilmente con Azure Machine Learning para conseguir capacidades de experimentación sólidas.
+* **[Redefinición de los aspectos básicos](#redefined-fundamentals)** . Una nueva experiencia de instalación significa que puede instalar más rápidamente e instalar lo que desee cuando lo necesite.
+* **[Rendimiento y productividad](#performance-and-productivity)** . Nos hemos centrado en nuevas y modernas funciones de desarrollo de escritorio, en la nube y móviles. Además, Visual Studio se inicia más rápido, tiene mejor capacidad de respuesta y usa menos memoria que antes.
+* **[Desarrollo de aplicaciones en la nube con Azure](#cloud-app-development-with-azure)** . Se trata de un conjunto integrado de herramientas de Azure que le permite crear con facilidad aplicaciones principalmente destinadas a la nube con la tecnología de Microsoft Azure. Visual Studio facilita la configuración, la compilación, la depuración, el empaquetado y la implementación de aplicaciones y servicios en Azure.
+* **[Desarrollo de aplicaciones para Windows](#windows-app-development)** . Use las plantillas de UWP en Visual Studio 2017 para crear un proyecto único para todos los dispositivos Windows 10&ndash; PC, tableta, teléfono, Xbox, HoloLens, Surface Hub y mucho más.
+* **[Desarrollo de aplicaciones móviles](#mobile-app-development)** . Innove y obtenga resultados rápidamente con Xamarin, que unifica los requisitos móviles multiplataforma en un código base principal y un conjunto de aptitudes.
+* **[Desarrollo multiplataforma](#cross-platform-development)** . Distribuya software en cualquier plataforma de destino sin problemas. Extienda los procesos de DevOps a SQL Server por medio de Redgate Data Tools y automatice con seguridad las implementaciones de base de datos desde Visual Studio. O use .NET Core para escribir aplicaciones y bibliotecas que se ejecuten sin modificarse en sistemas operativos Windows, Linux y macOS.
+* **[Desarrollo de juegos](#games-development)** . Con Visual Studio Tools para Unity (VSTU), puede usar Visual Studio para escribir scripts de editor y juegos en C# y, a continuación, usar su eficaz depurador para buscar y corregir errores.
+* **[Desarrollo de IA](#ai-development)** . Con Visual Studio Tools for AI, puede usar las características de productividad de Visual Studio para acelerar la innovación de IA. Compile, pruebe e implemente las soluciones de aprendizaje profundo e inteligencia artificial que se integran fácilmente con Azure Machine Learning para conseguir capacidades de experimentación sólidas.
 
 > [!NOTE]
 > Para una lista completa de las características y funcionalidades nuevas de Visual Studio 2017, consulte las [notas de la versión actual](/visualstudio/releasenotes/vs2017-relnotes?context=visualstudio/default&contextView=vs-2017). Para inspeccionar las ofertas de características futuras, consulte las [notas de la versión preliminar](/visualstudio/releasenotes/vs2017-preview-relnotes?context=visualstudio/default&contextView=vs-2017).
@@ -60,7 +60,7 @@ El cambio más importante que verá cuando instale Visual Studio es su nueva exp
 
 Seleccione las cargas de trabajo que requiere y cámbielas cuando sea necesario.
 
- ![Cuadro de diálogo del programa de instalación de Visual Studio 2017](../install/media/install-visual-studio-enterprise.png)
+![Cuadro de diálogo del programa de instalación de Visual Studio 2017](../install/media/install-visual-studio-enterprise.png)
 
 También tiene diferentes opciones para configurar la instalación:
 
@@ -108,11 +108,11 @@ Roaming Extension Manager realiza un seguimiento de todas las extensiones que in
 
 Cuando use Roaming Extension Manager, verá tres tipos de icono en la lista:
 
-* ![Icono de extensión en movimiento](media/vs2017ide-roamedicon.png) **_Extensión en movimiento_**: una extensión que forma parte de esta lista de itinerancia, pero que no está instalada en el equipo.
+* ![Icono de extensión en movimiento](media/vs2017ide-roamedicon.png) **_Extensión en movimiento_** : una extensión que forma parte de esta lista de itinerancia, pero que no está instalada en el equipo.
   (Puede instalarlas mediante el botón **Descargar**).
-* ![Icono de extensión en movimiento e instalada](media/vs2017ide-roamedinstalledicon.png) **_Extensión en movimiento e instalada_**: todas las extensiones que forman parte de la lista Itinerancia y están instaladas en el entorno de desarrollo.
+* ![Icono de extensión en movimiento e instalada](media/vs2017ide-roamedinstalledicon.png) **_Extensión en movimiento e instalada_** : todas las extensiones que forman parte de la lista Itinerancia y están instaladas en el entorno de desarrollo.
   (Si decide que no quiere usar un perfil itinerante, puede quitarlas mediante el botón **Detener itinerancia**).
-* ![Icono de extensión instalada](media/vs2017ide-installedicon.png) **_Extensión instalada_**: todas las extensiones que están instaladas en este entorno, pero que no forman parte de la lista Itinerancia.
+* ![Icono de extensión instalada](media/vs2017ide-installedicon.png) **_Extensión instalada_** : todas las extensiones que están instaladas en este entorno, pero que no forman parte de la lista Itinerancia.
   (Puede agregar extensiones a la lista de itinerancia mediante el botón **Iniciar itinerancia**).
 
 Todas las extensiones que descargue con la sesión iniciada se agregan a la lista como **Extensión con perfil itinerante e instalada**. La extensión pasa a formar parte de la lista Itinerancia, que le proporciona acceso a ella desde cualquier equipo.
@@ -178,7 +178,7 @@ Se ha actualizado la experiencia de navegación para ayudarle a llegar de A a B 
 
 * **Ir a implementación** (**CTRL**+**F12**) &ndash; Navegue desde cualquier tipo base o miembro a sus diversas implementaciones.
 
-* **Ir a todo** (**CTRL**+**T** o **CTRL**+**,**) &ndash; Navegue directamente a cualquier declaración de archivo/tipo/miembro/símbolo. Puede filtrar la lista de resultados o usar la sintaxis de consulta (por ejemplo, "f searchTerm" para los archivos, "t searchTerm" para los tipos, etc.).
+* **Ir a todo** (**CTRL**+**T** o **CTRL**+ **,** ) &ndash; Navegue directamente a cualquier declaración de archivo/tipo/miembro/símbolo. Puede filtrar la lista de resultados o usar la sintaxis de consulta (por ejemplo, "f searchTerm" para los archivos, "t searchTerm" para los tipos, etc.).
 
   ![Se ha mejorado la opción "Ir a Todo"](media/vs2017ide-navigation-go-to.png)
 
@@ -262,7 +262,7 @@ Para más información, consulte [Depuración de aplicaciones ASP.NET activas co
 
 Plataforma universal de Windows (UWP) es la plataforma de aplicaciones de Windows 10. Puede desarrollar aplicaciones para UWP con solo un conjunto de API, un paquete de la aplicación y un almacén para llegar a todos los dispositivos Windows 10 &ndash; PC, tableta, teléfono, Xbox, HoloLens, Surface Hub y mucho más. UWP admite distintos tamaños de pantalla y una variedad de modelos de interacción, ya sea táctil, mouse y teclado, un dispositivo de juego o un lápiz. La base de las aplicaciones de UWP es la idea de que los usuarios quieren que sus experiencias sean móviles en TODOS sus dispositivos y que quieren usar el dispositivo que sea más conveniente o productivo para la tarea en cuestión.
 
- ![Plataforma universal de Windows](../cross-platform/media/uwp_coreextensions.png)
+![Plataforma universal de Windows](../cross-platform/media/uwp_coreextensions.png)
 
 Elija el lenguaje de desarrollo de su preferencia&mdash;desde C#, Visual Basic, C++ o JavaScript&mdash;para crear una aplicación Plataforma universal de Windows para dispositivos con Windows 10. Visual Studio 2017 proporciona una plantilla de aplicaciones de UWP para cada lenguaje que le permite crear un solo proyecto para todos los dispositivos. Una vez que se finaliza el trabajo, puede generar un paquete de la aplicación y enviarlo a Microsoft Store desde Visual Studio para que la aplicación quede a disposición de los clientes en cualquier dispositivo Windows 10.
 
@@ -366,8 +366,8 @@ Para más información, consulte la página [Visual Studio Tools para IA](../ai/
 
 Actualizamos Visual Studio 2017 a menudo con nuevas características que pueden mejorar aún más su experiencia de desarrollo. Este es un resumen de algunas de nuestras actualizaciones más importantes que se encuentran en versión preliminar experimental:
 
-* **[Live Share](https://visualstudio.microsoft.com/services/live-share/)**, una nueva herramienta que le permite compartir un código base y su contexto con un compañero de equipo, de forma que se establezca una colaboración bidireccional instantánea directamente desde Visual Studio. Con Live Share, un compañero de equipo puede leer, navegar, editar y depurar un proyecto que ha compartido con él de forma segura y sin problemas.<br><br>Para obtener más información, vea [Live Share FAQ](/visualstudio/liveshare/faq) (Preguntas frecuentes sobre Live Share).<br><br>
-* **[IntelliCode](https://visualstudio.microsoft.com/services/intellicode/)**, una nueva funcionalidad que mejora el desarrollo de software al usar IA para ofrecer mejores finalizaciones de código relacionadas con el contexto, guiar a los desarrolladores para que escriban código para los patrones y estilos de su equipo, encontrar problemas de código difíciles de captar y centrar las revisiones de código en áreas que importan de verdad. <br><br>Para obtener más información, vea [Preguntas más frecuentes de IntelliCode](/visualstudio/intellicode/faq).
+* **[Live Share](https://visualstudio.microsoft.com/services/live-share/)** , una nueva herramienta que le permite compartir un código base y su contexto con un compañero de equipo, de forma que se establezca una colaboración bidireccional instantánea directamente desde Visual Studio. Con Live Share, un compañero de equipo puede leer, navegar, editar y depurar un proyecto que ha compartido con él de forma segura y sin problemas.<br><br>Para obtener más información, vea [Live Share FAQ](/visualstudio/liveshare/faq) (Preguntas frecuentes sobre Live Share).<br><br>
+* **[IntelliCode](https://visualstudio.microsoft.com/services/intellicode/)** , una nueva funcionalidad que mejora el desarrollo de software al usar IA para ofrecer mejores finalizaciones de código relacionadas con el contexto, guiar a los desarrolladores para que escriban código para los patrones y estilos de su equipo, encontrar problemas de código difíciles de captar y centrar las revisiones de código en áreas que importan de verdad. <br><br>Para obtener más información, vea [Preguntas más frecuentes de IntelliCode](/visualstudio/intellicode/faq).
 
 ¿Quiere saber más sobre lo que se está preparando de Visual Studio 2017? Vea la página [Guía básica de Visual Studio](/visualstudio/productinfo/vs2018-roadmap).
 
@@ -377,11 +377,11 @@ Y no olvide de revisar la versión más reciente, [Visual Studio 2019](whats-n
 
 ¿Por qué enviar comentarios al equipo de Visual Studio? Porque tomamos los comentarios de los clientes muy en serio. Estos impulsan muchas de nuestras acciones.
 
-Si quiere realizar sugerencias sobre cómo podemos mejorar Visual Studio u obtener más información sobre las opciones de soporte técnico de los productos, vea la página [Hable con nosotros](talk-to-us.md).
+Si quiere realizar sugerencias sobre cómo podemos mejorar Visual Studio u obtener más información sobre las opciones de soporte técnico de los productos, consulte la página [Envíenos sus comentarios](feedback-options.md).
 
 ### <a name="report-a-problem"></a>Notificar un problema
 
- A veces, un mensaje no es suficiente para transmitir el impacto completo de un problema que ha detectado. Si experimenta un bloqueo u otro problema de rendimiento, puede compartir fácilmente los pasos de reproducción y los archivos auxiliares (como capturas de pantalla y archivos de seguimiento y volcado del montón) con nosotros mediante la herramienta **Notificar un problema**. Para obtener más información sobre cómo usar esta herramienta, vea la página [Cómo notificar un problema](how-to-report-a-problem-with-visual-studio.md).
+A veces, un mensaje no es suficiente para transmitir el impacto completo de un problema que ha detectado. Si experimenta un bloqueo u otro problema de rendimiento, puede compartir fácilmente los pasos de reproducción y los archivos auxiliares (como capturas de pantalla y archivos de seguimiento y volcado del montón) con nosotros mediante la herramienta **Notificar un problema**. Para obtener más información sobre cómo usar esta herramienta, vea la página [Cómo notificar un problema](how-to-report-a-problem-with-visual-studio.md).
 
 ## <a name="see-also"></a>Vea también
 

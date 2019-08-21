@@ -9,12 +9,12 @@ ms.date: 11/13/2017
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: 15888341bf3cc7a4e9f4739ed37283e11c5ce75e
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: a81c1869bf7587aa30dbc02f0e9aec4c97776e5f
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67821405"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68918042"
 ---
 # <a name="installation"></a>Instalación
 
@@ -37,14 +37,14 @@ Puede descargar las herramientas desde [Visual Studio Marketplace](https://aka.m
 
 ## <a name="prepare-your-local-machine"></a>Preparar el equipo local
 
-Antes de entrenar modelos de aprendizaje profundo en el equipo local, asegúrese de tener instalados los requisitos previos aplicables. Asimismo, debe confirmar que tiene la versión más reciente de los controladores y las bibliotecas de la GPU NVIDIA (si tiene una). También debe asegurarse de que tiene instalado Python y las bibliotecas de Python, como NumPy y SciPy, y los marcos de aprendizaje profundo adecuados, como Microsoft Cognitive Toolkit (CNTK), TensorFlow, Caffe2, MXNet, Keras, Theano, PyTorch y Chainer, que tenga previsto usar en el proyecto.
+Antes de entrenar modelos de aprendizaje profundo en el equipo local, asegúrese de tener instalados los requisitos previos aplicables. Asimismo, debe confirmar que tiene la versión más reciente de los controladores y las bibliotecas de la GPU NVIDIA (si tiene una). Asegúrese también de que tiene instalado Python y las bibliotecas de Python, como NumPy y SciPy, y los marcos de aprendizaje profundo adecuados, como Microsoft Cognitive Toolkit (CNTK), TensorFlow, Caffe2, MXNet, Keras, Theano, PyTorch y Chainer, que tenga previsto usar en el proyecto.
 
 > [!NOTE]
 > La introducción al software de las siguientes subsecciones se ha extraído de sus correspondientes páginas principales.
 
 ### <a name="nvidia-gpu-driver"></a>Controlador de GPU NVIDIA
 
-Los marcos de aprendizaje profundo usan la GPU NVIDIA para permitir que los equipos aprendan a una velocidad, precisión y escala que vayan hacia una inteligencia artificial genuina. Si su equipo tiene tarjetas GPU NVIDIA, vaya [aquí](http://www.nvidia.com/Download/index.aspx) o pruebe a actualizar el SO para instalar el controlador más reciente.
+Los marcos de aprendizaje profundo usan la GPU NVIDIA para permitir que los equipos aprendan a una velocidad, precisión y escala que vayan hacia una inteligencia artificial genuina. Si el equipo tiene tarjetas GPU NVIDIA, consulte [Descargas de controladores NVIDIA](http://www.nvidia.com/Download/index.aspx) o pruebe actualizar el sistema operativo para instalar el controlador más reciente.
 
 ### <a name="cuda"></a>CUDA
 
@@ -52,7 +52,7 @@ Los marcos de aprendizaje profundo usan la GPU NVIDIA para permitir que los equi
 
 Para instalar CUDA
 
-- Visite este [sitio](https://developer.nvidia.com/cuda-80-ga2-download-archive) para descargar e instalar CUDA.
+- Visite este [sitio](https://developer.nvidia.com/cuda-80-ga2-download-archive), descargue CUDA e instálelo.
 - Instale las bibliotecas en tiempo de ejecución de CUDA y, luego, agregue la ruta de acceso binaria de CUDA a la variable de entorno %PATH% o $Path.
 - En Windows, esta ruta de acceso es "C:\Archivos de programa\NVIDIA GPU Computing Toolkit\CUDA\v8.0\bin" de forma predeterminada.
 
@@ -137,7 +137,7 @@ pip3.5 install -U numpy scipy
 > [!NOTE]
 > Actualmente, no admite macOS.
 
-Para instalar el paquete de Python de CNTK, vea [How to install CNTK](https://docs.microsoft.com/cognitive-toolkit/Setup-CNTK-on-your-machine) (Cómo instalar CNTK).
+Para instalar el paquete de Python de CNTK, consulte [cómo instalar CNTK](https://docs.microsoft.com/cognitive-toolkit/Setup-CNTK-on-your-machine).
 
 ### <a name="tensorflow"></a>TensorFlow
 
@@ -174,9 +174,9 @@ Para instalar MXNet, ejecute el siguiente comando en un terminal:
 
 ### <a name="keras"></a>Keras
 
-[Keras](https://keras.io/) es una API de redes neuronales de alto nivel escrita en Python y capaz de ejecutarse sobre CNTK, TensorFlow o Theano. Se desarrolló haciendo especial hincapié en permitir una experimentación lo más rápida posible. Poder pasar de la idea al resultado en el menor tiempo posible es fundamental para realizar una investigación adecuada.
+[Keras](https://keras.io/) es una API de redes neuronales de alto nivel escrita en Python que es capaz de ejecutarse sobre CNTK, TensorFlow o Theano. Se desarrolló haciendo especial hincapié en permitir una experimentación lo más rápida posible. Poder pasar de la idea al resultado en el menor tiempo posible es fundamental para realizar una investigación adecuada.
 
-Para instalar Keras, ejecute el siguiente comando en un terminal:
+Para instalar Keras, ejecute el comando siguiente en un terminal:
 
 ```bash
 pip3.5 install Keras==2.0.9
@@ -186,7 +186,7 @@ pip3.5 install Keras==2.0.9
 
 [Theano](http://deeplearning.net/software/theano/) es una biblioteca de Python que permite definir, optimizar y evaluar eficazmente expresiones matemáticas relativas a matrices multidimensionales.
 
-Para instalar Theano, ejecute el siguiente comando en un terminal:
+Para instalar Theano, ejecute el comando siguiente en un terminal:
 
 ```bash
 pip3.5 install Theano==0.9.0
@@ -239,7 +239,7 @@ pip3.5 install torchvision
 
 ### <a name="chainer"></a>Chainer
 
-[Chainer](https://chainer.org/) es un marco de aprendizaje profundo basado en Python cuya principal característica es la flexibilidad. Proporciona API de diferenciación automática basadas en el **método de definir mediante ejecución** (conocido como gráficos de cálculo dinámicos). También ofrece API de alto nivel orientadas a objetos con las que se pueden generar y entrenar redes neuronales.
+[Chainer](https://chainer.org/) es un marco de aprendizaje profundo basado en Python cuya principal característica es la flexibilidad. Brinda API de diferenciación automática basadas en el enfoque de definir mediante ejecución (conocido también como gráficos de cálculo dinámicos). También ofrece API de alto nivel orientadas a objetos para generar y entrenar redes neuronales.
 
 Para permitir la compatibilidad con CUDA, instale [CuPy](https://github.com/cupy/cupy):
 
@@ -250,7 +250,7 @@ pip3.5 install cupy
 > [!NOTE]
 > En Windows, necesita la versión 2015 de [Visual Studio](https://visualstudio.microsoft.com/) o [Microsoft Visual C++ Build Tools](https://visualstudio.microsoft.com/visual-cpp-build-tools/) para poder compilar CuPy con CUDA 8.0.
 
-Para instalar Chainer, ejecute el siguiente comando en un terminal:
+Para instalar Chainer, ejecute el comando siguiente en un terminal:
 
 ```bash
 pip3.5 install chainer==3.0.0

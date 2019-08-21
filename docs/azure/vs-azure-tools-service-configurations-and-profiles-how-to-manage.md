@@ -9,12 +9,12 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 8/11/2017
 ms.author: ghogen
-ms.openlocfilehash: 353b98ae0ab186a4ff665566a8f3b7600db66274
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b91e2df31ae0e188d0d1e0e3076ab410bf8c2296
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62569032"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68919831"
 ---
 # <a name="how-to-manage-service-configurations-and-profiles"></a>Administración de configuraciones de servicio y perfiles
 ## <a name="overview"></a>Información general
@@ -81,7 +81,7 @@ Al ejecutar el asistente por primera vez, se crea un perfil predeterminado. Visu
 7. Seleccione los botones **Anterior** y **Siguiente** para mostrar cada página del Asistente para publicación y luego personalice la configuración para este perfil. Para más información vea [Asistente para publicar aplicación de Azure](http://go.microsoft.com/fwlink/p/?LinkID=623085) .
 8. Cuando termine de personalizar la configuración, seleccione **Siguiente** para volver a la página de configuración. El perfil se guarda cuando se publica el servicio usando estos valores o al seleccionar **Guardar** junto a la lista de perfiles.
 
-### <a name="to-rename-or-delete-a-profile"></a>Para cambiar el nombre de un perfil o eliminarlo 
+### <a name="to-rename-or-delete-a-profile"></a>Para cambiar el nombre de un perfil o eliminarlo
 1. Abra el menú contextual del proyecto de Azure y seleccione **Publicar**.
 2. En la lista **Perfil de destino**, seleccione **Administrar**.
 3. En el cuadro de diálogo **Administrar perfiles**, seleccione el perfil que quiere eliminar y luego seleccione **Quitar**.
@@ -96,4 +96,4 @@ Al ejecutar el asistente por primera vez, se crea un perfil predeterminado. Visu
 5. (Opcional) Haga clic en **Publicar** para publicar el servicio en la nube con los nuevos valores de configuración. Si no desea publicar su servicio en la nube en este momento y cierra al Asistente para publicación, Visual Studio le pregunta si desea guardar los cambios en el perfil.
 
 ## <a name="next-steps"></a>Pasos siguientes
-Para obtener información acerca de cómo configurar otras partes de su proyecto de Azure desde Visual Studio, consulte [Configurar un proyecto de Azure](http://go.microsoft.com/fwlink/p/?LinkID=623075)
+Para información sobre cómo configurar otras partes de su proyecto de Azure desde Visual Studio, consulte [Configurar un proyecto de Azure](http://go.microsoft.com/fwlink/p/?LinkID=623075).

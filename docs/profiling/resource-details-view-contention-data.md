@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7c4c3922f8f41f950ede7065e2e15ece07890ba6
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 6328ea53c90b5a5a7ba50fde5a00e29fadacaaa7
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67825851"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68924514"
 ---
 # <a name="resource-details-view---contention-data"></a>Vista Detalles de recursos: datos de contención
 La vista Detalles de recursos presenta un gráfico de escala de tiempo de los eventos de bloqueo originados por las contenciones sobre un recurso seleccionado. Un evento de bloqueo se produce cuando un subproceso se ve obligado a suspender la ejecución porque otro subproceso ha bloqueado el acceso al recurso.
@@ -54,7 +54,7 @@ La vista Detalles de recursos presenta un gráfico de escala de tiempo de los ev
 
 - En el gráfico de escala de tiempo, haga clic en **Total**.
 
-     Aparece la vista Contenciones del recurso. Para obtener más información, consulte [Vista Contenciones del recurso](../profiling/resource-contentions-view-contention-data.md)
+     Aparece la vista Contenciones del recurso. Para más información, consulte [Vista Contenciones del recurso](../profiling/resource-contentions-view-contention-data.md).
 
 #### <a name="to-view-all-the-contention-events-of-a-thread"></a>Para ver todos los eventos de contención de un subproceso
 
