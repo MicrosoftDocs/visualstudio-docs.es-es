@@ -412,8 +412,10 @@
                       href: ide/reference/convert-var-to-explicit-type.md
                     - name: Usar expresión lambda o cuerpo de bloques
                       href: ide/reference/use-block-body-lambda.md
-                    - name: 'Asignaciones, variables y parámetros de valores sin usar'
+                    - name: 'Parámetros, variables y asignaciones de valor sin usar'
                       href: ide/reference/unused-values-parameters.md
+                    - name: Encapsulado y alineación de cadenas de llamada
+                      href: ide/reference/wrap-and-align-call-chains.md
                     - name: 'Encapsulado, sangría y alineación de parámetros'
                       href: ide/reference/wrap-align-indent-parameters.md
                 - name: 'Tutorial: Generación de código a partir del uso'

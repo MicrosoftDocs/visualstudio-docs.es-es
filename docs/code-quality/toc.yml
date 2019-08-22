@@ -162,31 +162,31 @@
           items:
             - name: Información general
               href: rule-set-reference.md
-            - name: Conjunto de reglas Todas las reglas
+            - name: Todas las reglas
               href: all-rules-rule-set.md
-            - name: Conjunto de reglas Reglas de corrección básicas para código administrado
+            - name: Reglas de corrección básicas
               href: basic-correctness-rules-rule-set-for-managed-code.md
-            - name: Conjunto de reglas Reglas de directrices de diseño básicas para código administrado
+            - name: Reglas de directrices de diseño básicas
               href: basic-design-guideline-rules-rule-set-for-managed-code.md
-            - name: Conjunto de reglas Reglas de corrección extendidas para código administrado
+            - name: Reglas de corrección extendidas
               href: extended-correctness-rules-rule-set-for-managed-code.md
-            - name: Conjunto de reglas Reglas de directrices de diseño ampliadas para código administrado
+            - name: Reglas de directrices de diseño extendidas
               href: extended-design-guidelines-rules-rule-set-for-managed-code.md
-            - name: Conjunto de reglas Reglas de globalización para código administrado
+            - name: Reglas de globalización
               href: globalization-rules-rule-set-for-managed-code.md
-            - name: Conjunto de reglas Reglas mínimas administradas para código administrado
+            - name: Reglas mínimas administradas
               href: managed-minimum-rules-rule-set-for-managed-code.md
-            - name: Conjunto de reglas Reglas recomendadas administradas para código administrado
+            - name: Reglas recomendadas administradas
               href: managed-recommended-rules-rule-set-for-managed-code.md
-            - name: Conjunto de reglas Reglas mínimas mixtas
+            - name: Reglas mínimas combinadas
               href: mixed-minimum-rules-rule-set.md
-            - name: Conjunto de reglas Reglas recomendadas mixtas
+            - name: Reglas recomendadas combinadas
               href: mixed-recommended-rules-rule-set.md
-            - name: Conjunto de reglas Reglas mínimas nativas
+            - name: Reglas mínimas nativas
               href: native-minimum-rules-rule-set.md
-            - name: Conjunto de reglas Reglas recomendadas nativas
+            - name: Reglas recomendadas nativas
               href: native-recommended-rules-rule-set.md
-            - name: Conjunto de reglas Reglas de seguridad para código administrado
+            - name: Reglas de seguridad
               href: security-rules-rule-set-for-managed-code.md
         - name: Suprimir advertencias
           href: in-source-suppression-overview.md
