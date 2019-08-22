@@ -97,77 +97,91 @@
       href: windows-forms-designer-overview.md
     - name: Introducción a Diseñador de Windows Forms
       href: walkthrough-windows-forms-designer.md
-    - name: 'Tutorial 1: Creación de un visor de imágenes (C#)'
+    - name: Organizar controles >>
+      href: /dotnet/framework/winforms/controls/arranging-controls-on-windows-forms
+    - name: Crear un control enlazado a datos >>
+      href: /dotnet/framework/winforms/how-to-create-a-simple-bound-control-on-a-windows-form
+    - name: Crear controles personalizados >>
+      href: /dotnet/framework/winforms/controls/developing-windows-forms-controls-at-design-time
+    - name: Deshabilitar el reconocimiento de PPP en el Diseñador de Windows Forms
+      href: disable-dpi-awareness.md
+    - name: Referencia
       items:
-        - name: Información general
-          displayName: Tutorial 1 Picture viewer
-          href: ../ide/tutorial-1-create-a-picture-viewer.md
-        - name: 'Paso 1: Crear un proyecto de aplicación de Windows Forms'
-          href: ../ide/step-1-create-a-windows-forms-application-project.md
-        - name: 'Paso 2: Ejecutar el programa'
-          href: ../ide/step-2-run-your-program.md
-        - name: 'Paso 3: Establecer las propiedades del formulario'
-          href: ../ide/step-3-set-your-form-properties.md
-        - name: 'Paso 4: Diseñar un formulario con un control TableLayoutPanel'
-          href: ../ide/step-4-lay-out-your-form-with-a-tablelayoutpanel-control.md
-        - name: 'Paso 5: Agregar controles al formulario'
-          href: ../ide/step-5-add-controls-to-your-form.md
-        - name: 'Paso 6: Asignar un nombre a los controles de botón'
-          href: ../ide/step-6-name-your-button-controls.md
-        - name: 'Paso 7: Agregar componentes de diálogo al formulario'
-          href: ../ide/step-7-add-dialog-components-to-your-form.md
-        - name: 'Paso 8: Escribir código para el controlador de eventos del botón Mostrar una imagen'
-          href: ../ide/step-8-write-code-for-the-show-a-picture-button-event-handler.md
-        - name: 'Paso 9: Revisar, comentar y probar el código'
-          href: ../ide/step-9-review-comment-and-test-your-code.md
-        - name: 'Paso 10: Escribir código para botones adicionales y una casilla'
-          href: ../ide/step-10-write-code-for-additional-buttons-and-a-check-box.md
-        - name: 'Paso 11: Ejecutar el programa y probar otras características'
-          href: ../ide/step-11-run-your-program-and-try-other-features.md
-    - name: 'Tutorial 2: Creación de una prueba matemática cronometrada (C#)'
+        - name: API System.Windows.Forms
+          href: /dotnet/api/system.windows.forms
+    - name: Tutoriales
       items:
-        - name: Información general
-          displayName: Tutorial 2 Timed math quiz
-          href: ../ide/tutorial-2-create-a-timed-math-quiz.md
-        - name: 'Paso 1: Crear un proyecto y agregar etiquetas al formulario'
-          href: ../ide/step-1-create-a-project-and-add-labels-to-your-form.md
-        - name: 'Paso 2: Crear un problema de suma aleatoria'
-          href: ../ide/step-2-create-a-random-addition-problem.md
-        - name: 'Paso 3: Agregar un temporizador de cuenta atrás'
-          href: ../ide/step-3-add-a-countdown-timer.md
-        - name: 'Paso 4: Agregar el método CheckTheAnswer()'
-          href: ../ide/step-4-add-the-checktheanswer-parens-method.md
-        - name: 'Paso 5: Agregar controladores de eventos Enter para los controles NumericUpDown'
-          href: ../ide/step-5-add-enter-event-handlers-for-the-numericupdown-controls.md
-        - name: 'Paso 6: Agregar un problema de resta'
-          href: ../ide/step-6-add-a-subtraction-problem.md
-        - name: 'Paso 7: Agregar problemas de multiplicación y división'
-          href: ../ide/step-7-add-multiplication-and-division-problems.md
-        - name: 'Paso 8: Personalizar la prueba'
-          href: ../ide/step-8-customize-the-quiz.md
-    - name: 'Tutorial 3: Creación de un juego de formar parejas (C#)'
-      items:
-        - name: Información general
-          displayName: Tutorial 3 Matching game
-          href: ../ide/tutorial-3-create-a-matching-game.md
-        - name: 'Paso 1: Crear un proyecto y agregar una tabla a un formulario'
-          href: ../ide/step-1-create-a-project-and-add-a-table-to-your-form.md
-        - name: 'Paso 2: Agregar un objeto aleatorio y una lista de iconos'
-          href: ../ide/step-2-add-a-random-object-and-a-list-of-icons.md
-        - name: 'Paso 3: Asignar un icono aleatorio a cada etiqueta'
-          href: ../ide/step-3-assign-a-random-icon-to-each-label.md
-        - name: 'Paso 4: Agregar un controlador de eventos Click a cada etiqueta'
-          href: ../ide/step-4-add-a-click-event-handler-to-each-label.md
-        - name: 'Paso 5: Agregar referencias a etiquetas'
-          href: ../ide/step-5-add-label-references.md
-        - name: 'Paso 6: Agregar un temporizador'
-          href: ../ide/step-6-add-a-timer.md
-        - name: 'Paso 7: Mantener visibles los pares'
-          href: ../ide/step-7-keep-pairs-visible.md
-        - name: 'Paso 8: Agregar un método para comprobar si el jugador ganó'
-          href: ../ide/step-8-add-a-method-to-verify-whether-the-player-won.md
-        - name: 'Paso 9: Probar otras características'
-          href: ../ide/step-9-try-other-features.md
+        - name: 'Tutorial 1: Creación de un visor de imágenes (C#)'
+          items:
+            - name: Información general
+              displayName: Tutorial 1 Picture viewer
+              href: ../ide/tutorial-1-create-a-picture-viewer.md
+            - name: 'Paso 1: Crear un proyecto de aplicación de Windows Forms'
+              href: ../ide/step-1-create-a-windows-forms-application-project.md
+            - name: 'Paso 2: Ejecutar el programa'
+              href: ../ide/step-2-run-your-program.md
+            - name: 'Paso 3: Establecer las propiedades del formulario'
+              href: ../ide/step-3-set-your-form-properties.md
+            - name: 'Paso 4: Diseñar un formulario con un control TableLayoutPanel'
+              href: ../ide/step-4-lay-out-your-form-with-a-tablelayoutpanel-control.md
+            - name: 'Paso 5: Agregar controles al formulario'
+              href: ../ide/step-5-add-controls-to-your-form.md
+            - name: 'Paso 6: Asignar un nombre a los controles de botón'
+              href: ../ide/step-6-name-your-button-controls.md
+            - name: 'Paso 7: Agregar componentes de diálogo al formulario'
+              href: ../ide/step-7-add-dialog-components-to-your-form.md
+            - name: 'Paso 8: Escribir código para el controlador de eventos del botón Mostrar una imagen'
+              href: ../ide/step-8-write-code-for-the-show-a-picture-button-event-handler.md
+            - name: 'Paso 9: Revisar, comentar y probar el código'
+              href: ../ide/step-9-review-comment-and-test-your-code.md
+            - name: 'Paso 10: Escribir código para botones adicionales y una casilla'
+              href: ../ide/step-10-write-code-for-additional-buttons-and-a-check-box.md
+            - name: 'Paso 11: Ejecutar el programa y probar otras características'
+              href: ../ide/step-11-run-your-program-and-try-other-features.md
+        - name: 'Tutorial 2: Creación de una prueba matemática cronometrada (C#)'
+          items:
+            - name: Información general
+              displayName: Tutorial 2 Timed math quiz
+              href: ../ide/tutorial-2-create-a-timed-math-quiz.md
+            - name: 'Paso 1: Crear un proyecto y agregar etiquetas al formulario'
+              href: ../ide/step-1-create-a-project-and-add-labels-to-your-form.md
+            - name: 'Paso 2: Crear un problema de suma aleatoria'
+              href: ../ide/step-2-create-a-random-addition-problem.md
+            - name: 'Paso 3: Agregar un temporizador de cuenta atrás'
+              href: ../ide/step-3-add-a-countdown-timer.md
+            - name: 'Paso 4: Agregar el método CheckTheAnswer()'
+              href: ../ide/step-4-add-the-checktheanswer-parens-method.md
+            - name: 'Paso 5: Agregar controladores de eventos Enter para los controles NumericUpDown'
+              href: ../ide/step-5-add-enter-event-handlers-for-the-numericupdown-controls.md
+            - name: 'Paso 6: Agregar un problema de resta'
+              href: ../ide/step-6-add-a-subtraction-problem.md
+            - name: 'Paso 7: Agregar problemas de multiplicación y división'
+              href: ../ide/step-7-add-multiplication-and-division-problems.md
+            - name: 'Paso 8: Personalizar la prueba'
+              href: ../ide/step-8-customize-the-quiz.md
+        - name: 'Tutorial 3: Creación de un juego de formar parejas (C#)'
+          items:
+            - name: Información general
+              displayName: Tutorial 3 Matching game
+              href: ../ide/tutorial-3-create-a-matching-game.md
+            - name: 'Paso 1: Crear un proyecto y agregar una tabla a un formulario'
+              href: ../ide/step-1-create-a-project-and-add-a-table-to-your-form.md
+            - name: 'Paso 2: Agregar un objeto aleatorio y una lista de iconos'
+              href: ../ide/step-2-add-a-random-object-and-a-list-of-icons.md
+            - name: 'Paso 3: Asignar un icono aleatorio a cada etiqueta'
+              href: ../ide/step-3-assign-a-random-icon-to-each-label.md
+            - name: 'Paso 4: Agregar un controlador de eventos Click a cada etiqueta'
+              href: ../ide/step-4-add-a-click-event-handler-to-each-label.md
+            - name: 'Paso 5: Agregar referencias a etiquetas'
+              href: ../ide/step-5-add-label-references.md
+            - name: 'Paso 6: Agregar un temporizador'
+              href: ../ide/step-6-add-a-timer.md
+            - name: 'Paso 7: Mantener visibles los pares'
+              href: ../ide/step-7-keep-pairs-visible.md
+            - name: 'Paso 8: Agregar un método para comprobar si el jugador ganó'
+              href: ../ide/step-8-add-a-method-to-verify-whether-the-player-won.md
+            - name: 'Paso 9: Probar otras características'
+              href: ../ide/step-9-try-other-features.md
 - name: Recursos 3D
   items:
     - name: Trabajar con recursos en 3D para juegos y aplicaciones
