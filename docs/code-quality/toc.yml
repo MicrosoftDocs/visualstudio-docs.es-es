@@ -658,6 +658,16 @@
                   href: ca2321.md
                 - name: 'CA2322: Asegúrese de que JavaScriptSerializer no se ha inicializado con SimpleTypeResolver antes de deserializar'
                   href: ca2322.md
+                - name: 'CA2326: No usar valores TypeNameHandling que no sean None'
+                  href: ca2326.md
+                - name: 'CA2327: No usar valores JsonSerializerSettings no seguros'
+                  href: ca2327.md
+                - name: 'CA2328: Asegurarse de que los valores JsonSerializerSettings sean seguros'
+                  href: ca2328.md
+                - name: 'CA2329: No deserializar con JsonSerializer y una configuración no segura'
+                  href: ca2329.md
+                - name: 'CA2330: Asegurarse de que la configuración de JsonSerializer es segura al deserializar'
+                  href: ca2330.md
                 - name: 'CA3001: Revisión de código en busca de vulnerabilidades de inyección de SQL'
                   href: ca3001-review-code-for-sql-injection-vulnerabilities.md
                 - name: 'CA3002: Revisión de código en busca de vulnerabilidades de XSS'
