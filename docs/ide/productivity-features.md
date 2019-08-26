@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f351ffefae818beb1f51eaa41fbeea1eab81de16
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: e4f238046e671371a1fe83a3f5b9552b3956be8f
+ms.sourcegitcommit: 5b34052a1c7d86179d7898ed532babb2d9dad4a3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68919474"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69490665"
 ---
 # <a name="productivity-tips-for-visual-studio"></a>Sugerencias de productividad para Visual Studio
 
@@ -24,7 +24,7 @@ Para obtener información sobre métodos abreviados de teclado útiles, vea [Mé
 
 Escriba código más rápidamente con las características siguientes.
 
-- **Usar comandos prácticos**. Visual Studio contiene varios comandos que le ayudarán a realizar las tareas de edición comunes con mayor rapidez. Por ejemplo, puede elegir un comando para duplicar fácilmente una línea de código sin tener que copiarla, cambiar la posición del cursor y luego pegarla. Elija **Editar** > **Duplicar** o presione **Ctrl**+**E**,**V**. También puede expandir o contraer una selección de texto rápidamente; para ello, seleccione **Edición** > **Avanzado** > **Expandir selección** o **Edición** > **Avanzado** > **Contraer selección**, o bien presione **Mayús**+**Alt**+ **=** o **Mayús**+**Alt**+ **-** .
+- **Usar comandos prácticos**. Visual Studio contiene varios comandos que le ayudarán a realizar las tareas de edición comunes con mayor rapidez. Por ejemplo, puede elegir un comando para duplicar fácilmente una línea de código sin tener que copiarla, cambiar la posición del cursor y luego pegarla. Elija **Editar** > **Duplicar** o presione **Ctrl**+**E**,**V**. También puede expandir o contraer una selección de texto rápidamente; para ello, seleccione **Edición** > **Avanzado** > **Expandir selección** o **Edición** > **Avanzado** > **Contraer selección**, o bien presione **Mayús**+**Alt**+**=** o **Mayús**+**Alt**+**-**.
 
 - **Usar IntelliSense**. Cuando se escribe código en el editor, aparece información de IntelliSense, como Lista de miembros, Información de parámetros, Información rápida, ayuda para las signaturas y Palabra completa. Estas características admiten la coincidencia aproximada de texto; por ejemplo, las listas de resultados para Lista de miembros no solo incluyen las entradas que comienzan con los caracteres que escribió, sino también entradas que contienen la combinación de caracteres en cualquier lugar de sus nombres. Para obtener más información, vea [Usar IntelliSense](../ide/using-intellisense.md).
 
@@ -36,7 +36,7 @@ Escriba código más rápidamente con las características siguientes.
 
      Para insertar un fragmento de código, en la barra de menús, elija**Editar** > **IntelliSense** > **Insertar fragmento de código** o **Delimitar con**, o abra el menú contextual en un archivo y seleccione **Fragmento de código** > **Insertar fragmento de código** o **Delimitar con**. Para obtener más información, vea [Fragmentos de código](../ide/code-snippets.md).
 
-- **Corregir errores de código alineados**. Las acciones rápidas le permiten refactorizar, generar o modificar el código de otra manera fácilmente con una sola acción. Estas acciones se pueden aplicar con los iconos de destornillador ![icono de destornillador](media/screwdriver-icon.png) o de bombilla ![icono de bombilla](media/light-bulb-icon.png) o presionando **Alt**+**Entrar** o **Ctrl**+ **.** cuando el cursor esté en la línea de código adecuada. Para obtener más información, vea [Acciones rápidas](quick-actions.md).
+- **Corregir errores de código alineados**. Las acciones rápidas le permiten refactorizar, generar o modificar el código de otra manera fácilmente con una sola acción. Estas acciones se pueden aplicar con los iconos de destornillador ![icono de destornillador](media/screwdriver-icon.png) o de bombilla ![icono de bombilla](media/light-bulb-icon.png) o presionando **Alt**+**Entrar** o **Ctrl**+**.** cuando el cursor esté en la línea de código adecuada. Para obtener más información, vea [Acciones rápidas](quick-actions.md).
 
 - **Mostrar y editar la definición de un elemento de código**. Puede mostrar y editar rápidamente el módulo en el que se define un elemento de código, como un miembro, una variable o un valor local.
 
@@ -142,6 +142,7 @@ En cualquier momento, puede trabajar en varios archivos de código y desplazarse
 
 ## <a name="see-also"></a>Vea también
 
+- [Entrada de blog de sugerencias y trucos de Visual Studio](https://devblogs.microsoft.com/visualstudio/visual-studio-tips-and-tricks/)
 - [Métodos abreviados de teclado predeterminados para comandos de uso frecuente](../ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md)
 - [Cómo: Personalizar menús y barras de herramientas](../ide/how-to-customize-menus-and-toolbars-in-visual-studio.md)
 - [Tutorial: Creación de una aplicación sencilla](../get-started/csharp/tutorial-wpf.md)

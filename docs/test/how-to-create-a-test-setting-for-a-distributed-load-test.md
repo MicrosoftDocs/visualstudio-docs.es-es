@@ -8,14 +8,14 @@ ms.assetid: b63d4b71-3b74-4872-b2d1-f0bd1a9a8544
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 1e55e4fd2e67c07110fcd3351e492ec94ccc47fa
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 0f947d8a4994c8a515a707f34a07065358194e09
+ms.sourcegitcommit: 5b34052a1c7d86179d7898ed532babb2d9dad4a3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62950246"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69490671"
 ---
-# <a name="how-to-create-a-test-setting-for-a-distributed-load-test"></a>Procedimiento Crear una configuración de pruebas para una prueba de carga distribuida
+# <a name="how-to-create-a-test-settings-file-for-a-distributed-load-test"></a>Procedimiento Creación de un archivo de configuración de pruebas para una prueba de carga distribuida
 
 Establezca la *configuración de pruebas* de sus pruebas de carga para que pueda distribuir dichas pruebas entre varias máquinas por medio de agentes de prueba y controladores de pruebas. También puede establecer la configuración de pruebas para usar *adaptadores de datos de diagnóstico*, que especifican los tipos de datos que se van a recopilar o cómo afectan a los equipos de pruebas cuando se ejecutan las pruebas de carga desde Visual Studio.
 
@@ -39,9 +39,7 @@ El controlador de pruebas tendrá agentes que se pueden utilizar para cada rol e
 
 Siga estos procedimientos con el fin de crear y quitar de una solución una configuración de pruebas para las pruebas de carga que desea ejecutar desde Visual Studio.
 
-## <a name="create-a-test-setting-for-a-distributed-load-test"></a>Crear una configuración de pruebas para una prueba de carga distribuida
-
-### <a name="to-add-a-test-settings-for-a-distributed-load-test"></a>Para agregar una configuración de pruebas para una prueba de carga distribuida
+## <a name="create-a-test-settings-file"></a>Creación de un archivo de configuración de pruebas
 
 1. En el **Explorador de soluciones**, haga clic con el botón derecho en **Elementos de la solución**, elija **Agregar** y luego **Nuevo elemento**.
 
@@ -55,15 +53,9 @@ Siga estos procedimientos con el fin de crear y quitar de una solución una conf
 
      El nuevo archivo de la configuración de pruebas aparece en el **Explorador de soluciones**, en la carpeta **Elementos de la solución**.
 
-    > [!NOTE]
-    > La lista de configuraciones de pruebas que se muestra en Visual Studio Enterprise procede de la lista de archivos de configuración de pruebas de la carpeta **Elementos de la solución**. Por ejemplo, se muestran los archivos de configuración de pruebas en la carpeta **Elementos de la solución** cuando se usa la opción **Seleccionar configuración de pruebas activa** en el menú **Prueba**. Esto significa que, si se mueve un archivo de configuración de pruebas a otra ubicación de la jerarquía de la solución, ya no podrá usarse como configuración de pruebas en el entorno de desarrollo integrado de Visual Studio.
-
 5. Se muestra el cuadro de diálogo **Configuración de pruebas**. La página **General** está seleccionada.
 
      Ahora, puede modificar y guardar los valores de la configuración de pruebas.
-
-    > [!NOTE]
-    > Cada configuración de pruebas que se crea aparece como una opción para las opciones **Seleccionar configuración de pruebas activa** y **Editar configuraciones de pruebas** del menú **Prueba**.
 
 6. En **Nombre**, escriba el nombre de la configuración de pruebas.
 
@@ -182,14 +174,11 @@ Siga estos procedimientos con el fin de crear y quitar de una solución una conf
 
 28. Para guardar la configuración de pruebas, elija **Guardar como**. Escriba el nombre del archivo que quiera en **Nombre del objeto**.
 
-    > [!NOTE]
-    > Si debe cambiar la configuración de pruebas, elija **Prueba**; después, elija **Editar configuraciones de pruebas** y señale la configuración de pruebas que creó.
-
-### <a name="to-remove-a-test-settings-from-your-solution"></a>Para quitar una configuración de pruebas de la solución
+## <a name="remove-a-test-settings-file-from-your-solution"></a>Eliminación de un archivo de configuración de pruebas de la solución
 
 En la carpeta **Elementos de la solución** del **Explorador de soluciones**, haga clic con el botón derecho en la configuración de pruebas que quiera quitar y luego elija **Quitar**.
 
-El archivo de la configuración de pruebas se quitará de la solución. Este cambio se refleja en la lista de opciones que figura en las opciones **Seleccionar configuración de pruebas activa** y **Editar configuraciones de pruebas** del menú **Prueba**.
+El archivo de la configuración de pruebas se quitará de la solución.
 
 ## <a name="see-also"></a>Vea también
 

@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 897c3a82f5add84ad343c100b93fd8a4d2663610
-ms.sourcegitcommit: d4920babfc3d24a3fe1d4bf446ed3fe73b344467
+ms.openlocfilehash: 04a130528edbe8ab3aae0a24d69315b934b19d54
+ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/17/2019
-ms.locfileid: "67160054"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "69551428"
 ---
 # <a name="application-page-project-designer-c"></a>Página de aplicación, Diseñador de proyectos (C#)
 
@@ -81,9 +81,9 @@ Para obtener más información sobre los redireccionamientos, vea [Redirecting a
 
 **Objeto de inicio**
 
-Define el punto de entrada que se llamará cuando se cargue la aplicación. Normalmente, esto se establece en el formulario principal de la aplicación o en el procedimiento `Main` que debe ejecutarse cuando se inicia la aplicación. Dado que las bibliotecas de clases no tienen un punto de entrada, su única opción para esta propiedad es **(Sin establecer)** .
+Define el punto de entrada que se llamará cuando se cargue la aplicación. Normalmente, esto se establece en el formulario principal de la aplicación o en el procedimiento `Main` que debe ejecutarse cuando se inicia la aplicación. Dado que las bibliotecas de clases no tienen un punto de entrada, su única opción para esta propiedad es **(Sin establecer)**.
 
-De forma predeterminada, en un proyecto de aplicación de WPF, esta opción está establecida en **(Sin establecer)** . La otra opción es \[projectname].App. En un proyecto de WPF, debe establecer el URI de inicio para cargar un recurso de UI cuando se inicia la aplicación. Para ello, abra el archivo *Application.xaml* del proyecto y establezca la propiedad `StartupUri` en un archivo *.xaml* del proyecto, como *Window1.xaml*. Para obtener una lista de elementos raíz aceptables, vea <xref:System.Windows.Application.StartupUri%2A>. También tiene que definir un método `public static void Main()` en una clase del proyecto. Esta clase aparecerá en la lista **Objeto de inicio** como *ProjectName.ClassName*. Después, puede seleccionar la clase como el objeto de inicio.
+De forma predeterminada, en un proyecto de aplicación de WPF, esta opción está establecida en **(Sin establecer)**. La otra opción es \[projectname].App. En un proyecto de WPF, debe establecer el URI de inicio para cargar un recurso de UI cuando se inicia la aplicación. Para ello, abra el archivo *Application.xaml* del proyecto y establezca la propiedad `StartupUri` en un archivo *.xaml* del proyecto, como *Window1.xaml*. Para obtener una lista de elementos raíz aceptables, vea <xref:System.Windows.Application.StartupUri%2A>. También tiene que definir un método `public static void Main()` en una clase del proyecto. Esta clase aparecerá en la lista **Objeto de inicio** como *ProjectName.ClassName*. Después, puede seleccionar la clase como el objeto de inicio.
 
 Para obtener más información, vea [/main (Opciones del compilador de C#)](/dotnet/csharp/language-reference/compiler-options/main-compiler-option). Para obtener acceso a esta propiedad mediante programación, vea <xref:VSLangProj.ProjectProperties.StartupObject%2A>.
 
@@ -97,13 +97,15 @@ Las opciones **Recursos** ayudan a configurar los valores de recursos de la apli
 
 **Icono y manifiesto**
 
-De manera predeterminada, este botón de radio está seleccionado y las opciones **Icono** y **Manifiesto** están habilitadas. Esto le permite seleccionar su propio icono o seleccionar opciones de generación de manifiestos diferentes. Deje este botón de radio seleccionado a menos que vaya a proporcionar un archivo de recursos para el proyecto.
+De manera predeterminada, este botón de radio está seleccionado y las opciones **Icono** y **Manifiesto** están habilitadas. Esto permite seleccionar su propio icono o seleccionar otras opciones de generación de manifiestos. Deje este botón de radio seleccionado a menos que vaya a proporcionar un archivo de recursos para el proyecto.
 
 **Iconos**
 
 Establece el archivo *.ico* que quiere usar como icono del programa. Haga clic en **Examinar** para buscar un gráfico existente o escriba el nombre del archivo que quiere. Para obtener más información, vea [/win32icon (Opciones del compilador de C#)](/dotnet/csharp/language-reference/compiler-options/win32icon-compiler-option).
 
 Para obtener acceso a esta propiedad mediante programación, vea <xref:VSLangProj.ProjectProperties.ApplicationIcon%2A>.
+
+Para más información sobre cómo crear un icono, vea [Editor de imágenes para iconos](/cpp/windows/image-editor-for-icons).
 
 **Manifest**
 
@@ -119,4 +121,6 @@ Selecciona una opción de generación de manifiesto cuando la aplicación se eje
 
 Seleccione este botón de radio si va a proporcionar un archivo de recursos para el proyecto. Al seleccionar esta opción se deshabilitan las opciones **Icono** y **Manifiesto**.
 
-Escriba un nombre de ruta o use el botón Examinar ( **...** ) para agregar un archivo de recursos de Win32 al proyecto.
+Escriba un nombre de ruta o use el botón Examinar (**...**) para agregar un archivo de recursos de Win32 al proyecto.
+
+Para más información, vea [Creación de archivos de recursos para aplicaciones .NET](/dotnet/framework/resources/creating-resource-files-for-desktop-apps).

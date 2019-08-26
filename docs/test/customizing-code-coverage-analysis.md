@@ -7,12 +7,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 8749cd7757796a1b716b1ac9db086d3155f94694
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 5bd7fa0bcff67573e61d40a2172e17620910a421
+ms.sourcegitcommit: 5b34052a1c7d86179d7898ed532babb2d9dad4a3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62965564"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69490627"
 ---
 # <a name="customize-code-coverage-analysis"></a>Personalizar el análisis de cobertura de código
 
@@ -30,18 +30,38 @@ Para personalizar la cobertura de código, siga estos pasos:
 
 1. Agregue un archivo de parámetros de ejecución a la solución. En el **Explorador de soluciones**, en el menú contextual de la solución, seleccione **Agregar** > **Nuevo elemento** y seleccione **Archivo XML**. Guarde el archivo con un nombre como *CodeCoverage.runsettings*.
 
-1. Agregue el contenido que se muestra en el archivo de ejemplo al final del artículo y después personalícelo de acuerdo con sus necesidades como se describe en las secciones siguientes.
+2. Agregue el contenido que se muestra en el archivo de ejemplo al final del artículo y después personalícelo de acuerdo con sus necesidades como se describe en las secciones siguientes.
 
-1. Para seleccionar el archivo de parámetros de ejecución, en el menú **Prueba**, elija **Configuración de pruebas** > **Seleccionar archivo de configuración de pruebas**. Para especificar un archivo de parámetros de ejecución para ejecutar pruebas desde la línea de comandos o en un flujo de trabajo de compilación, vea [Configure unit tests by using a *.runsettings* file](../test/configure-unit-tests-by-using-a-dot-runsettings-file.md#specify-a-run-settings-file) (Configurar pruebas unitarias utilizando el archivo .runsettings).
+::: moniker range="vs-2017"
+
+3. Para seleccionar el archivo de parámetros de ejecución, en el menú **Prueba**, elija **Configuración de pruebas** > **Seleccionar archivo de configuración de pruebas**. Para especificar un archivo de parámetros de ejecución para ejecutar pruebas desde la línea de comandos o en un flujo de trabajo de compilación, vea [Configure unit tests by using a *.runsettings* file](../test/configure-unit-tests-by-using-a-dot-runsettings-file.md#specify-a-run-settings-file) (Configurar pruebas unitarias utilizando el archivo .runsettings).
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+3. Para seleccionar el archivo de parámetros de ejecución, en el **Explorador de pruebas**, seleccione la flecha del botón **Configuración** y, después, seleccione **Seleccionar archivo de configuración**. Para especificar un archivo de parámetros de ejecución para ejecutar pruebas desde la línea de comandos o en un flujo de trabajo de compilación, vea [Configure unit tests by using a *.runsettings* file](../test/configure-unit-tests-by-using-a-dot-runsettings-file.md#specify-a-run-settings-file) (Configurar pruebas unitarias utilizando el archivo .runsettings).
+
+::: moniker-end
 
    Al seleccionar **Analizar cobertura de código**, la información de configuración se lee desde el archivo de parámetros de ejecución.
 
    > [!TIP]
    > Los anteriores resultados de cobertura de y colores de código no se ocultan automáticamente al ejecutar pruebas o actualizar el código.
 
+::: moniker range="vs-2017"
+
 Para desactivar y activar la configuración personalizada, anule la selección o seleccione el archivo en el menú **Prueba** > **Configuración de pruebas**.
 
 ![Menú de configuración de pruebas con archivo de configuración personalizado](../test/media/codecoverage-settingsfile.png)
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+Para desactivar y activar la configuración personalizada, anule la selección o seleccione el archivo en el menú **Configuración** en el **Explorador** .
+
+::: moniker-end
 
 ### <a name="specify-symbol-search-paths"></a>Especificar rutas de búsqueda de símbolos
 
@@ -89,7 +109,7 @@ Si el campo **Incluir** está vacío, el procesamiento de cobertura de código i
 
 Los nodos de inclusión y exclusión usan expresiones regulares. Para obtener más información, vea [Usar expresiones regulares en Visual Studio](../ide/using-regular-expressions-in-visual-studio.md). Las expresiones regulares no son iguales que los caracteres comodín. En concreto:
 
-- **.\\** * coincide con una cadena de caracteres cualquiera
+- **.\*** coincide con una cadena de caracteres cualquiera
 
 - **\\.** coincide con un punto (".")
 

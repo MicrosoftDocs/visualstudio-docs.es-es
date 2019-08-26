@@ -1,6 +1,6 @@
 ---
 title: Datos fundamentales de las pruebas unitarias
-ms.date: 06/06/2019
+ms.date: 08/07/2019
 ms.topic: conceptual
 f1_keywords:
 - vs.UnitTest.CreateUnitTest
@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 39e5529ae777fe1cee69e669ce20fb919eceb5ef
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: e439ab3ca22fdb26992164c3927269a0f58a1f3b
+ms.sourcegitcommit: 5b34052a1c7d86179d7898ed532babb2d9dad4a3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68925818"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69490718"
 ---
 # <a name="unit-test-basics"></a>Conceptos básicos de las pruebas unitarias
 
@@ -40,7 +40,12 @@ Para obtener una introducción a las pruebas unitarias que le guíe directamente
 
 En este artículo, se utiliza el desarrollo de una aplicación ficticia denominada `MyBank` como ejemplo. No es necesario el código real para seguir las explicaciones de este tema. Los métodos de prueba se escriben en C# y presentan mediante el Marco de pruebas unitarias de Microsoft para código administrado. Sin embargo, los conceptos se transfieren fácilmente a otros lenguajes y marcos de trabajo.
 
+::: moniker range="vs-2017"
 ![Solución MyBank](../test/media/ute_mybanksolution.png)
+::: moniker-end
+::: moniker range=">=vs-2019"
+![Solución MyBank 2019](../test/media/vs-2019/basics-mybank-solution.png)
+::: moniker-end
 
 Nuestro primer intento de un diseño para la aplicación `MyBank` incluye un componente de cuentas que representa una cuenta individual y sus transacciones con el banco, así como un componente de base de datos que representa la funcionalidad para agregar y administrar las cuentas individuales.
 
@@ -69,7 +74,7 @@ public void Withdraw(double amount)
     }
     else
     {
-        throw new ArgumentException(amount, "Withdrawal exceeds balance!")
+        throw new ArgumentException(nameof(amount), "Withdrawal exceeds balance!");
     }
 }
 ```
@@ -84,18 +89,28 @@ En general, es más rápido generar el proyecto de prueba unitaria y los código
 
 1. En la ventana del editor de código, haga clic con el botón derecho y seleccione [**Crear pruebas unitarias**](create-unit-tests-menu.md) en el menú contextual.
 
+   ::: moniker range="vs-2017"
    ![Desde la ventana del editor, vea el menú contextual](../test/media/createunittestsrightclick.png)
+   ::: moniker-end
+   ::: moniker range=">=vs-2019"
+   ![Desde la ventana del editor, vea el menú contextual](../test/media/vs-2019/basics-create-unit-tests.png)
+   ::: moniker-end
 
    > [!NOTE]
    > El comando de menú **Crear pruebas unitarias** solo está disponible en el caso de código administrado que tiene como destino .NET Framework (pero no .NET Core).
 
 2. Haga clic en **Aceptar** para aceptar los valores predeterminados al crear las pruebas unitarias o cambiar los valores usados para crear las pruebas unitarias y el proyecto que las engloba, y asignarles un nombre. Puede seleccionar el código que se agrega de forma predeterminada a los métodos de prueba unitaria.
 
-    ![Cuadro de diálogo Crear pruebas unitarias en Visual Studio](../test/media/create-unit-tests.png)
+   ![Cuadro de diálogo Crear pruebas unitarias en Visual Studio](../test/media/create-unit-tests.png)
 
 3. El código auxiliar de prueba unitaria se crea en un proyecto de prueba unitaria nuevo para todos los métodos de la clase.
 
-    ![Se crean las pruebas unitarias](../test/media/createunittestsstubs.png)
+   ::: moniker range="vs-2017"
+   ![Se crean las pruebas unitarias](../test/media/createunittestsstubs.png)
+   ::: moniker-end
+   ::: moniker range=">=vs-2019"
+   ![Se crean las pruebas unitarias](../test/media/vs-2019/basics-test-stub.png)
+   ::: moniker-end
 
 4. Avance para saber cómo [agregar código a los métodos de prueba unitaria](#write-your-tests) (de modo que la prueba sea significativa) y cómo agregar pruebas unitarias adicionales para probar exhaustivamente el código.
 
@@ -218,9 +233,14 @@ public void My_Test ()
 
 Al compilar el proyecto de prueba, las pruebas aparecen en el **Explorador de pruebas**. Si el **Explorador de pruebas** no está visible, elija **Prueba** en el menú de Visual Studio, elija **Ventanas** y, después, **Explorador de pruebas**.
 
+::: moniker range="vs-2017"
 ![Explorador de pruebas unitarias](../test/media/ute_failedpassednotrunsummary.png)
+::: moniker-end
+::: moniker range=">=vs-2019"
+![Explorador de pruebas unitarias](../test/media/vs-2019/basics-test-explorer.png)
+::: moniker-end
 
-Al ejecutar, escribir y volver a ejecutar las pruebas, la vista predeterminada del **Explorador de pruebas** muestra los resultados en grupos de **Pruebas no superadas**, **Pruebas superadas**, **Pruebas omitidas** y **Pruebas no ejecutadas**. Se puede elegir el título de un grupo para abrir la vista en la que se muestran todas las pruebas de ese grupo.
+Al ejecutar, escribir y volver a ejecutar las pruebas, el **Explorador de pruebas** puede mostrar los resultados en grupos clasificados como **Pruebas no superadas**, **Pruebas superadas**, **Pruebas omitidas** y **Pruebas no ejecutadas**. En la barra de herramientas puede elegir diferentes opciones de agrupación.
 
 También puede filtrar las pruebas en cualquier vista haciendo coincidir texto del cuadro de búsqueda a nivel global o seleccionando uno de los filtros predefinidos. Se puede ejecutar cualquier selección de las pruebas en cualquier momento. Los resultados de una serie de pruebas son inmediatamente visibles en la barra de éxito/error de la parte superior de la ventana del explorador. Los detalles de un resultado del método de prueba se muestran al seleccionar la prueba.
 
@@ -228,9 +248,14 @@ También puede filtrar las pruebas en cualquier vista haciendo coincidir texto d
 
 La barra de herramientas del **Explorador de pruebas** le ayuda a detectar, organizar y ejecutar las pruebas que le interesan.
 
+::: moniker range="vs-2017"
 ![Ejecutar pruebas desde la barra de herramientas del Explorador de pruebas](../test/media/ute_toolbar.png)
+::: moniker-end
+::: moniker range=">=vs-2019"
+![Ejecutar pruebas desde la barra de herramientas del Explorador de pruebas](../test/media/vs-2019/test-explorer-toolbar-diagram-16-2.png)
+::: moniker-end
 
-Se puede elegir **Ejecutar todas** para ejecutar todas las pruebas o bien **Ejecutar** para elegir un subconjunto de pruebas que se desea ejecutar. Después de ejecutar un conjunto de pruebas, aparecerá un resumen de la serie de pruebas en la parte inferior de la ventana **Explorador de pruebas**. Seleccione una prueba para ver los detalles de esa prueba en el panel inferior. Seleccione **Abrir prueba** en el menú contextual (teclado: **F12**) para mostrar el código fuente de la prueba seleccionada.
+Se puede elegir **Ejecutar todas** para ejecutar todas las pruebas o bien **Ejecutar** para elegir un subconjunto de pruebas que se desea ejecutar. Seleccione una prueba para ver sus detalles correspondientes en el panel Detalles de la prueba. Seleccione **Abrir prueba** en el menú contextual (teclado: **F12**) para mostrar el código fuente de la prueba seleccionada.
 
 ::: moniker range="vs-2017"
 
@@ -246,18 +271,33 @@ Si las pruebas individuales no tienen ninguna dependencia que impida que se ejec
 
 ### <a name="run-tests-after-every-build"></a>Ejecutar pruebas después de cada compilación
 
-> [!WARNING]
-> La ejecución de pruebas unitarias después de cada compilación solo se admite en Visual Studio Enterprise.
+::: moniker range="vs-2017"
 
 |Botón|DESCRIPCIÓN|
 |-|-|
-|![Ejecutar después de compilar](../test/media/ute_runafterbuild_btn.png)|Para ejecutar pruebas unitarias después de cada compilación local, elija **Prueba** en el menú estándar o **Ejecutar pruebas después de compilar** en la barra de herramientas del **Explorador de pruebas**.|
+|![Ejecutar después de compilar](../test/media/ute_runafterbuild_btn.png)|Para ejecutar pruebas unitarias después de cada compilación local, elija **Prueba** en el menú estándar, o **Ejecutar pruebas después de compilar** en la barra de herramientas del **Explorador de pruebas**.|
+
+> [!NOTE]
+> La ejecución de pruebas unitarias después de cada compilación requiere Visual Studio 2017 Enterprise Edition o Visual Studio 2019. En Visual Studio 2019, la característica está disponible en las ediciones Community y Professional, además de en la edición Enterprise.
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+Para ejecutar las pruebas unitarias después de cada compilación local, abra el icono de configuración en la barra de herramientas del Explorador de pruebas y seleccione **Ejecutar pruebas después de compilar**.
+
+::: moniker-end
 
 ### <a name="filter-and-group-the-test-list"></a>Filtrar y agrupar la lista de pruebas
 
-Si tiene un gran número de pruebas, puede escribir en el cuadro de búsqueda del **Explorador de pruebas** para filtrar la lista por la cadena especificada. Para limitar aún más el evento de filtro, elija una opción de la lista de filtros.
+Si tiene muchas pruebas, puede escribir en el cuadro de búsqueda del **Explorador de pruebas** para filtrar la lista por la cadena especificada. Para limitar aún más el evento de filtro, elija una opción de la lista de filtros.
 
+::: moniker range="vs-2017"
 ![Categorías de filtro de búsqueda](../test/media/ute_searchfilter.png)
+::: moniker-end
+::: moniker range=">=vs-2019"
+![Categorías de filtro de búsqueda](../test/media/vs-2019/test-explorer-search-filter-16-2.png)
+::: moniker-end
 
 |Botón|DESCRIPCIÓN|
 |-|-|
@@ -282,9 +322,14 @@ Más información sobre la [depuración de pruebas unitarias](../debugger/debugg
 
 **P: Si uso TDD, ¿cómo puedo generar el código a partir de las pruebas?**
 
-**R:** Use IntelliSense para generar clases y métodos en el código del proyecto. Escriba una instrucción en un método de prueba que llame a la clase o método que desea generar y, a continuación, abra el menú de IntelliSense bajo la llamada. Si la llamada es a un constructor de la nueva clase, elija **Generar nuevo tipo** en el menú y siga el asistente para insertar la clase en el proyecto de código. Si la llamada es a un método, elija **Generar nuevo método** en el menú de IntelliSense.
+**R:** Use Acciones rápidas para generar clases y métodos en el código del proyecto. Escriba una instrucción en un método de prueba que llame a la clase o al método que quiera generar y, después, abra la bombilla que aparece debajo del error. Si la llamada es a un constructor de la nueva clase, elija **Generar tipo** en el menú y siga el asistente para insertar la clase en el proyecto de código. Si la llamada es a un método, elija **Generar método** en el menú de IntelliSense.
 
-![Menú de IntelliSense Generar código auxiliar del método](../test/media/ute_generatemethodstubintellisense.png)
+::: moniker range="vs-2017"
+![Menú de acción rápida Generar código auxiliar del método](../test/media/ute_generatemethodstubintellisense.png)
+::: moniker-end
+::: moniker range=">=vs-2019"
+![Menú de acción rápida Generar código auxiliar del método](../test/media/vs-2019/basics-generate-method-tdd.png)
+::: moniker-end
 
 **P: ¿Puedo crear pruebas unitarias que acepten varios conjuntos de datos como entrada para ejecutar la prueba?**
 
@@ -320,7 +365,7 @@ Más información sobre [pruebas unitarias controladas por datos](../test/how-to
 
 **P: ¿Puedo ver la cantidad de código que se prueba en las pruebas unitarias?**
 
-**R:** Sí. Con la herramienta de cobertura de código de Visual Studio se puede determinar la cantidad del código que las pruebas unitarias están probando realmente. Se admiten los lenguajes nativos y administrados, así como todos los marcos de pruebas unitarias que pueda ejecutar el Marco de pruebas unitarias.
+**R:** Sí. Con la herramienta de cobertura de código de Visual Studio se puede determinar la cantidad del código que las pruebas unitarias están probando realmente en Visual Studio Enterprise. Se admiten los lenguajes nativos y administrados, así como todos los marcos de pruebas unitarias que pueda ejecutar el Marco de pruebas unitarias.
 
 La cobertura de código se puede ejecutar en pruebas seleccionadas o en todas las pruebas de una solución. La ventana **Resultados de la cobertura de código** muestra el porcentaje de bloques de código de producto que se han ejecutado por línea, función, clase, espacio de nombres y módulo.
 

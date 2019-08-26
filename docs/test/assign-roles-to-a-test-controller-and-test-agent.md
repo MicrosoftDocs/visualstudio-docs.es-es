@@ -12,16 +12,16 @@ ms.assetid: 57ed43ae-4e67-4139-8aec-3e9fceb0a745
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: eb62e668d7077e1be96ff7a282628b76b426898f
-ms.sourcegitcommit: 13ab9a5ab039b070b9cd9251d0b83dd216477203
+ms.openlocfilehash: dc7936041746872fdf30ce3159506d93c378376d
+ms.sourcegitcommit: 5b34052a1c7d86179d7898ed532babb2d9dad4a3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66177793"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69490599"
 ---
 # <a name="assign-roles-to-a-test-controller-and-test-agent"></a>Asignar roles a un controlador de pruebas y a un agente de pruebas
 
-En este tutorial, se muestra cómo crear y configurar un entorno de prueba que usa un controlador de pruebas y agente de prueba para distribuir las pruebas entre varias máquinas, mediante Visual Studio. Además, en este tutorial se muestra cómo agregar adaptadores de datos y de diagnóstico a la configuración de pruebas.
+En este artículo se explica cómo crear y configurar un entorno de prueba que usa un controlador de pruebas y un agente de prueba para distribuir las pruebas entre varias máquinas, todo ello mediante Visual Studio. También se describe cómo agregar adaptadores de datos y de diagnóstico a la configuración de pruebas.
 
 [!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
@@ -48,9 +48,6 @@ En este tutorial, se muestra cómo crear y configurar un entorno de prueba que u
      Se muestra el cuadro de diálogo **Configuración de pruebas**. La página **General** está seleccionada.
 
      Ahora, puede modificar y guardar los valores de la configuración de pruebas.
-
-    > [!NOTE]
-    > Cada configuración de pruebas que se crea aparece como una opción para las opciones **Seleccionar configuración de pruebas activa** y **Editar configuraciones de pruebas** del menú **Prueba**.
 
 5. En **Nombre**, escriba el nombre de la configuración de pruebas.
 
@@ -98,7 +95,17 @@ En este tutorial, se muestra cómo crear y configurar un entorno de prueba que u
 
 7. Elija **Cerrar**.
 
-8. En el menú Probar, seleccione **Seleccionar configuración de pruebas activa** y, luego, elija **TestSettingDistributedTestWalkthrough.testsettings**.
+::: moniker range="vs-2017"
+
+8. En el menú Probar, seleccione **Seleccionar archivo de configuración de pruebas** y, luego, elija *TestSettingDistributedTestWalkthrough.testsettings*.
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+8. En el **Explorador de pruebas**, seleccione la flecha del botón **Configuración** y, después, seleccione **Seleccionar archivo de configuración**. Busque y seleccione el archivo *TestSettingDistributedTestWalkthrough.testsettings*.
+
+::: moniker-end
 
 9. Ejecute la prueba como de costumbre.
 
