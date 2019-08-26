@@ -18,12 +18,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: be29a8eff4e36df04721e8f946b9b2b0ebae3145
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 3f1ddb1f1d39255c14e03d114891145c8f2dece5
+ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62945019"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "69551180"
 ---
 # <a name="set-defaults-for-enterprise-deployments-of-visual-studio"></a>Establecimiento de valores predeterminados para implementaciones empresariales de Visual Studio
 
@@ -55,6 +55,7 @@ Puede establecer los siguientes valores del Registro:
 | `CachePath` | `REG_SZ` o `REG_EXPAND_SZ` | %ProgramData%\Microsoft\VisualStudio\Packages | El directorio donde se almacenan los manifiestos de paquete y, opcionalmente, las cargas. Para más información, vea la página [Deshabilitación o traslado de la caché de paquetes](disable-or-move-the-package-cache.md). |
 | `KeepDownloadedPayloads` | `REG_DWORD` | 1 | Mantenga instaladas las cargas de paquetes incluso después de estar instaladas. Puede cambiar el valor en cualquier momento. Al deshabilitar la directiva, se quitan las cargas de paquetes almacenadas en caché de la instancia reparada o modificada. Para más información, vea la página [Deshabilitación o traslado de la caché de paquetes](disable-or-move-the-package-cache.md). |
 | `SharedInstallationPath` | `REG_SZ` o `REG_EXPAND_SZ` | %ProgramFiles(x86)%\Microsoft Visual Studio\Shared | El directorio donde están instalados algunos paquetes compartidos entre versiones de instancias de Visual Studio. Puede cambiar el valor en cualquier momento, pero el cambio solo afectará a futuras instalaciones. Los productos que ya están instalados en la ubicación antigua no se deben mover, ya que es posible que dejen de funcionar correctamente. |
+| `BackgroundDownloadDisabled` |`REG_DWORD` | 1 | Impida que el programa de instalación descargue actualizaciones automáticamente relativas a cualquier producto de Visual Studio instalado. Puede cambiar el valor en cualquier momento. |
 
 > [!IMPORTANT]
 > Si cambia la directiva del registro `CachePath` después de una instalación, debe mover la caché de paquetes existente a la nueva ubicación y asegurarse de que esté protegida de forma que `SYSTEM` y `Administrators` tengan acceso de control total y `Everyone`, de lectura.

@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 942ae41322d6a08bc8de0c450577f2eccb45772a
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 86578a300da8ea1cdb739db4d1c02505a6d97180
+ms.sourcegitcommit: 9e5e8b6e9a3b6614723e71cc23bb434fe4218c9c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67823370"
+ms.lasthandoff: 08/20/2019
+ms.locfileid: "69634850"
 ---
 # <a name="developer-community-data-privacy"></a>Privacidad de datos de la Comunidad de desarrolladores
 
@@ -54,21 +54,19 @@ Si se inicia **Report a problem** (Notificar un problema) desde Visual Studio, r
 
 - Archivo de registro de actividad en memoria de Visual Studio
 
-- Archivos PerfWatson, si la colección Watson está habilitada, desde la carpeta *VSFeedbackPerfWatsonData*
+- Archivos PerfWatson, si la colección Watson está habilitada
 
-- Archivos de registro LiveShare, si existen, desde la carpeta *VSFeedbackVSRTCLogs*
+- Archivos de registro de LiveShare, si existen
 
-- Archivos de registro de Xamarin, si existen, desde *%LOCALAPPDATA%\Xamarin\Logs*
+- Archivos de registro de Xamarin, si existen
 
-- Archivos de registro de NuGet, si existen, desde *%TEMP%\NuGetScratch\nuget-dg\nugetSpec.dg*
+- Archivos de registro de NuGet, si existen
 
-- Archivos de registro del depurador web, si existen:
+- Archivos de registro del depurador web, si existen
 
-  - *%TEMP%\vscode-chrome-debug.txt*
+- Registros del centro de servicio y registros de errores de MEF, si existen
 
-  - *%TEMP%\vscode-node-debug2.txt*
-
-  - *%TEMP%\vscode-edge-debug.txt*
+- Registros de Python, si existen
 
 - Una captura de pantalla, si opta por incluirla
 

@@ -1,6 +1,6 @@
 ---
 title: Preguntas más frecuentes sobre el Explorador de pruebas
-ms.date: 11/07/2018
+ms.date: 08/14/2019
 ms.topic: conceptual
 helpviewer_keywords:
 - Test Explorer
@@ -14,16 +14,16 @@ ms.workload:
 - multiple
 author: kendrahavens
 manager: jillfra
-ms.openlocfilehash: 0dda73a4bbea2813131cc0695655eed7ea3409ca
-ms.sourcegitcommit: 044bb54cb4552c8f4651feb11d62e52726117e75
+ms.openlocfilehash: a37cdea4206dafe657dc8cf8adbbcf98ce18afc9
+ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/30/2019
-ms.locfileid: "68662002"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "69551860"
 ---
 # <a name="visual-studio-test-explorer-faq"></a>Preguntas frecuentes del Explorador de pruebas de Visual Studio
-
 ::: moniker range=">=vs-2019"
+
 ## <a name="where-is-group-by-traits-in-visual-studio-2019"></a>¿Dónde se agrupa por rasgos en Visual Studio 2019?
 Esta agrupación de rasgos se ha movido a una columna. Con la jerarquía de varios niveles y personalizable de la versión 16.2 de Visual Studio 2019, pensamos que incluir rasgos como una agrupación creaba una complejidad visual innecesaria. Queremos conocer su opinión sobre este diseño. https://developercommunity.visualstudio.com/content/problem/588029/no-longer-able-to-group-by-trait-in-test-explorer.html
 
@@ -31,25 +31,29 @@ Por ahora, puede hacer clic con el botón derecho en la columna en el Explorador
 
 ![Mostrar la columna Rasgos](media/vs-2019/trait-column.png)
 ![Filtrar la columna Rasgos](media/vs-2019/trait-column-filter.png)
-
 ::: moniker-end
 
 ## <a name="dynamic-test-discovery"></a>Detección de pruebas dinámicas
 
 **El Explorador de pruebas no detecta las pruebas definidas dinámicamente (por ejemplo, teorías, adaptadores personalizados, rasgos personalizados, #ifdefs, etc.) ¿Cómo puedo detectar estas pruebas?**
 
+::: moniker range=">=vs-2019"
+Compile el proyecto para ejecutar la detección basada en ensamblados.
+::: moniker-end
+::: moniker range="vs-2017"
 Compile el proyecto y asegúrese de que está activada la detección basada en ensamblados en **Herramientas** > **Opciones** > **Prueba**.
-
+::: moniker-end
 La [detección de pruebas en tiempo real](https://go.microsoft.com/fwlink/?linkid=862824) es la detección de pruebas basada en el origen. No puede detectar las pruebas que usan teorías, adaptadores personalizados, rasgos personalizados, instrucciones `#ifdef`, etc. porque ya están definidas en tiempo de ejecución. Se requiere una compilación para que estas pruebas se puedan detectar con precisión. En las versiones 15.6 y posteriores de Visual Studio 2017, la detección basada en ensamblados (el detector tradicional) se ejecuta solo tras las compilaciones. Esta opción significa que la detección de pruebas en tiempo real detecta tantas pruebas como sea posible mientras está editando, y la detección basada en ensamblados permite que aparezcan pruebas definidas dinámicamente después de una compilación. La detección de pruebas en tiempo real mejora la capacidad de respuesta, pero sigue permitiendo la obtención de resultados completos y precisos tras una compilación.
 
 ## <a name="test-explorer--plus-symbol"></a>Signo "+" (más) en el Explorador de pruebas
 
 **¿Qué significa el signo "+" (más) que aparece en la línea superior del Explorador de pruebas?**
 
-El signo "+" (más) indica que se pueden detectar más pruebas después de una compilación siempre y cuando la detección basada en ensamblados esté activada. Este símbolo aparece si se detectan pruebas definidas dinámicamente en el proyecto.
+El signo "+" (más) indica que se pueden detectar más pruebas después de una compilación cuando se lleva a cabo una detección basada en ensamblados. Este símbolo aparece si se detectan pruebas definidas dinámicamente en el proyecto.
 
 ![Línea de resumen del signo más](media/testex-plussymbol.png)
 
+::: moniker range="vs-2017"
 ## <a name="assembly-based-discovery"></a>Detección basada en ensamblados
 
 **La detección basada en ensamblados ha dejado de funcionar en mi proyecto. ¿Cómo puedo volver a activarla?**
@@ -57,12 +61,13 @@ El signo "+" (más) indica que se pueden detectar más pruebas después de una c
 Vaya a **Herramientas** > **Opciones** > **Prueba** y active la casilla **Detectar también las pruebas de los ensamblados compilados después de las compilaciones**.
 
 ![Opción basada en ensamblados](media/testex-toolsoptions.png)
+::: moniker-end
 
 ## <a name="real-time-test-discovery"></a>Detección de pruebas en tiempo real
 
 **Ahora aparecen pruebas en el Explorador de pruebas mientras escribo, sin tener que compilar el proyecto. ¿Qué ha cambiado?**
 
-Esta característica se denomina [Detección de pruebas en tiempo real](https://go.microsoft.com/fwlink/?linkid=862824). Usa un analizador de Roslyn para detectar pruebas y rellenar el Explorador de pruebas en tiempo real sin necesidad de que se compile el proyecto. Vea la pregunta frecuente n.º 1 para obtener más información sobre el comportamiento de la detección de pruebas en las pruebas definidas dinámicamente, como teorías o rasgos personalizados.
+Esta característica se denomina [Detección de pruebas en tiempo real](https://go.microsoft.com/fwlink/?linkid=862824). Usa un analizador de Roslyn para detectar pruebas y rellenar el Explorador de pruebas en tiempo real sin necesidad de que se compile el proyecto. Para más información sobre el comportamiento de la detección de pruebas en las pruebas definidas dinámicamente, como teorías o rasgos personalizados, vea [Detección de pruebas dinámicas](#dynamic-test-discovery).
 
 ## <a name="real-time-test-discovery-compatibility"></a>Compatibilidad de la detección de pruebas en tiempo real
 
@@ -92,7 +97,7 @@ En la vista de jerarquía, las pruebas se ordenan alfabéticamente, y no por su 
 
 ## <a name="test-explorer-hierarchy-view"></a>Vista de jerarquía del Explorador de pruebas
 
-**En la vista de jerarquía, hay iconos de pasados, con errores, omitidos y no ejecutados junto a los grupos Proyecto, Espacio de nombres y Clase. ¿Qué significan estos iconos?**
+**En la vista de jerarquía, hay iconos de pruebas superadas, no superadas, omitidas y no ejecutadas junto a las agrupaciones de nodo primario. ¿Qué significan estos iconos?**
 
 Los iconos situados junto a los grupos Proyecto, Espacio de nombres y Clase reflejan el estado de las pruebas de ese grupo. Vea la siguiente tabla.
 
@@ -110,6 +115,7 @@ El filtro de ruta de acceso de archivo del cuadro de búsqueda **Explorador de p
 
 En Visual Studio 2019, se quitará alguna ventana de prueba de API que anteriormente se han marcado como públicas pero nunca se documentaron oficialmente. Se marcaron como "obsoletas" en Visual Studio 2017 para proporcionar advertencias prematuras a los mantenedores de extensiones. Que nosotros sepamos, muy pocas extensiones encontraron estas API y tenían una dependencia en ellas. Entre estas se incluyen `IGroupByProvider`, `IGroupByProvider<T>`, `KeyComparer`, `ISearchFilter`, `ISearchFilterToken`, `ISearchToken` y `SearchFilterTokenType`. Si este cambio afecta a su extensión, háganoslo saber enviando un error a la [Comunidad de desarrolladores](https://developercommunity.visualstudio.com).
 
+::: moniker range="vs-2017"
 ## <a name="test-adapter-nuget-reference"></a>Referencia de NuGet del adaptador de prueba
 
 **En la versión 15.8 de Visual Studio 2017 mis pruebas se detectan, pero no se ejecutan.**
@@ -124,6 +130,7 @@ En lugar de usar las extensiones del adaptador de prueba, los proyectos deben us
 > Si usa NUnit 2 Test Adapter y no puede migrar a NUnit 3 Test Adapter, puede desactivar este nuevo comportamiento de detección en la versión 15.8 de Visual Studio en **Herramientas** > **Opciones** > **Prueba**.
 
 ![Comportamiento del adaptador de explorador de pruebas en las opciones de las herramientas](media/testex-adapterbehavior.png)
+::: moniker-end
 
 ## <a name="uwp-testcontainer-was-not-found"></a>No se encuentra TestContainer de UWP
 
@@ -131,9 +138,9 @@ En lugar de usar las extensiones del adaptador de prueba, los proyectos deben us
 
 Los proyectos de prueba recientes de UWP especifican una propiedad de compilación de plataforma de prueba que permite un mejor rendimiento para identificar las aplicaciones de prueba. Si tiene un proyecto de prueba de UWP que se haya inicializado antes de Visual Studio versión 15.7, puede ver este error en **Salida** > **Pruebas**:
 
-**System.AggregateException: Se produjeron uno o varios errores. ---> System.InvalidOperationException: No se encontró el siguiente TestContainer {} en Microsoft.VisualStudio.TestWindow.Controller.TestContainerProvider \<GetTestContainerAsync>d__61.MoveNext()** .
+**System.AggregateException: Se produjeron uno o varios errores. ---> System.InvalidOperationException: No se encontró el siguiente TestContainer {} en Microsoft.VisualStudio.TestWindow.Controller.TestContainerProvider \<GetTestContainerAsync>d__61.MoveNext()**.
 
-Para solucionar este error:
+Para corregir este error:
 
 - Actualice la propiedad de compilación del proyecto de prueba con el siguiente código:
 
