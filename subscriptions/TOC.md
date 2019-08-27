@@ -12,7 +12,7 @@
 ##### [Suscripciones para asociados](program-mpn.md)
 ##### [Administración de las suscripciones de mi MPN](manage-mpn-subscriptions.md)
 #### [Microsoft for Startups](program-startups.md)
-### Inicio de sesión 
+### Iniciar sesión 
 #### [Activación de suscripciones comerciales](activate-store-subscriptions.md)
 #### [Inicio de sesión con cuentas de Microsoft](sign-in-msa.md)
 #### [Inicio de sesión con una cuenta profesional o educativa](sign-in-work.md)
@@ -22,6 +22,7 @@
 #### [Anonimización de los datos de suscriptor](anonymization.md)
 ### [Información general del portal de suscripciones](using-the-subscriber-portal.md)
 ### [Administración de las suscripciones](manage-vs-subscriptions.md)
+### [Contactar con el administrador de suscripciones](contact-my-admin.md)
 ### Ventajas
 #### Herramientas
 ##### [Crédito de Azure](vs-azure.md)
@@ -40,7 +41,7 @@
 ##### [Cuenta de desarrollador de Windows](vs-windows-dev.md)
 #### Desarrollo profesional
 ##### [DataCamp](vs-datacamp.md)
-##### [Aprendizaje de LinkedIn](vs-linkedin-learning.md)
+##### [LinkedIn Learning](vs-linkedin-learning.md)
 ##### [Suscripción a MSDN Magazine](vs-msdn.md)
 ##### [Pluralsight](vs-pluralsight.md)
 #### Soporte técnico 
@@ -58,17 +59,22 @@
 #### [Búsqueda y reclamación de claves](find-keys.md)
 #### [Demostraciones en Internet](internet-demos.md)
 ## Administradores
-### [Responsabilidades del administrador](admin-responsibilities.md)
+### Responsabilidades del administrador
+#### [Responsabilidades del administrador](admin-responsibilities.md)
 #### [Inventario de preproducción](admin-inventory.md)
 #### [Administración de equipos grandes y contratistas externos](manage-teams.md)
 #### [Seguimiento de la asignación de usuarios y tramitación de pedidos](assignments-orders.md)
-### Incorporación de su organización
-#### [Migración de licencias Open y Open](open-migration.md)
+### Acceso al portal de administración
+#### [Licencia por volumen](volume-license.md)
 #### [MPSA](mpsa.md)
 #### [Suscripciones de nube](cloud-admin.md)
-#### [Vídeo de incorporación](https://youtu.be/plSu6fpi7UI)
+#### [Asociados que administran suscripciones de clientes](open-migration.md)
+#### [Tutorial en vídeo: Acceso al portal de administración](https://youtu.be/plSu6fpi7UI)
 ### Uso del portal de administración
+#### [Superadministradores y administradores](admin-roles.md)
+#### [Establecimiento de las preferencias del contrato](admin-prefs.md)
 #### [Información general](using-admin-portal.md)
+#### [Tutorial en vídeo: Uso del portal de administración](https://www.youtube.com/watch?v=XG-E-IDjA-w&list=PLReL099Y5nReJhZ6o8CQFPSBgzGCHX99_&index=3&t=0s)
 #### Asignación de suscripciones
 ##### [Agregar usuarios únicos](assign-license.md)
 ##### [Agregar varios usuarios](assign-license-bulk.md)
@@ -81,7 +87,7 @@
 #### [Suscripciones expiradas](handle-expired-license.md)
 #### [Suscriptores que usan alias](aliasing.md)
 #### [Suscriptores con inicio de sesión con el correo electrónico personal](personal-email-sign-ins.md)
-### [Administración de Visual Studio con GitHub Enterprise](assign-github.md)
+#### [Administración de Visual Studio con GitHub Enterprise](assign-github.md)
 ## Recursos
 ### [Notas sobre la concesión de licencias de Visual Studio](https://aka.ms/vslicensing)
 ### [Comparación de opciones de suscripción y precios](https://visualstudio.microsoft.com/vs/pricing)
