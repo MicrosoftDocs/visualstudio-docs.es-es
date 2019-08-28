@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 6362d3f14065aaf9661e85266753642e4201ca48
-ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
+ms.openlocfilehash: 5c5af5c98be92e52c356e0f20eaf437f66878690
+ms.sourcegitcommit: 8a699df154464387f327691dce507d7c3d0e2aab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69548041"
+ms.lasthandoff: 08/27/2019
+ms.locfileid: "70060447"
 ---
 # <a name="use-code-analyzers"></a>Usar analizadores de código
 
@@ -62,6 +62,18 @@ Para cambiar el conjunto de reglas activo de un proyecto, vaya a la pestaña **a
 
 Puede configurar la gravedad de las reglas del analizador,o diagnósticos, si [instala los analizadores](../code-quality/install-roslyn-analyzers.md) como un paquete NuGet. En la tabla siguiente se muestran las opciones de gravedad de los diagnósticos:
 
+
+::: moniker range="vs-2019"
+|Severity|Comportamiento en tiempo de compilación|Comportamiento del editor|
+|-|-|-|
+|Error|Las infracciones aparecen como *errores* en el **lista de errores** y en la salida de la compilación de línea de comandos y provocan un error en las compilaciones.|El código infractor se subraya con un ondulado rojo y se marca con un pequeño cuadro rojo en la barra de desplazamiento.|
+|Advertencia|Las infracciones aparecen como *advertencias* en el **lista de errores** y en la salida de la compilación de línea de comandos, pero no provocan errores en las compilaciones.|El código infractor se subraya con un ondulado de color verde y se marca con un pequeño cuadro verde en la barra de desplazamiento.|
+|Sugerencia|Las infracciones aparecen como *mensajes* en el **lista de errores**y no en todos los resultados de la compilación de línea de comandos.|El código infractor se subraya con un ondulado de color gris y se marca con un pequeño cuadro gris en la barra de desplazamiento.|
+|Silent|No es visible para el usuario.|No es visible para el usuario. Sin embargo, el diagnóstico se envía al motor de diagnóstico del IDE.|
+|None|Se han suprimido por completo.|Se han suprimido por completo.|
+::: moniker-end
+
+::: moniker range="< vs-2019"
 |Severity|Comportamiento en tiempo de compilación|Comportamiento del editor|
 |-|-|-|
 |Error|Las infracciones aparecen como *errores* en el **lista de errores** y en la salida de la compilación de línea de comandos y provocan un error en las compilaciones.|El código infractor se subraya con un ondulado rojo y se marca con un pequeño cuadro rojo en la barra de desplazamiento.|
@@ -69,6 +81,7 @@ Puede configurar la gravedad de las reglas del analizador,o diagnósticos, si [i
 |Info|Las infracciones aparecen como *mensajes* en el **lista de errores**y no en todos los resultados de la compilación de línea de comandos.|El código infractor se subraya con un ondulado de color gris y se marca con un pequeño cuadro gris en la barra de desplazamiento.|
 |Hidden|No es visible para el usuario.|No es visible para el usuario. Sin embargo, el diagnóstico se envía al motor de diagnóstico del IDE.|
 |None|Se han suprimido por completo.|Se han suprimido por completo.|
+::: moniker-end
 
 Además, puede "restablecer" la gravedad de una regla si la establece en el valor **predeterminado**. Cada diagnóstico tiene una gravedad predeterminada que puede verse en la ventana **propiedades** .
 
