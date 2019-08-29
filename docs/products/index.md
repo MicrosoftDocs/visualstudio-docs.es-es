@@ -3,15 +3,15 @@ layout: HubPage
 hide_bc: true
 title: Productos de Visual Studio | Microsoft Docs
 description: Explore la familia de productos de Visual Studio.
-ms.topic: landing-page
+ms.topic: hub-page
 ms.date: 07/02/2019
 searchScope: []
-ms.openlocfilehash: 82cff703b1ef538267c0d1b34d82111576cf66da
-ms.sourcegitcommit: 8a699df154464387f327691dce507d7c3d0e2aab
+ms.openlocfilehash: c499b8f1ecf80fefe911d3f9fa2cb918e40f125e
+ms.sourcegitcommit: cf8c0fef2b9690595e99ce3802586cdd55fd37c2
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/27/2019
-ms.locfileid: "70060423"
+ms.lasthandoff: 08/28/2019
+ms.locfileid: "70107871"
 ---
 <!-- markdownlint-disable MD033 -->
 <div id="main" class="v2">
