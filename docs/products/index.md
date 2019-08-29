@@ -6,12 +6,12 @@ description: Explore la familia de productos de Visual Studio.
 ms.topic: landing-page
 ms.date: 07/02/2019
 searchScope: []
-ms.openlocfilehash: 41dd59cf67be1a476707a7ed3a18a263132fbfca
-ms.sourcegitcommit: 32144a09ed46e7223ef7dcab647a9f73afa2dd55
+ms.openlocfilehash: 82cff703b1ef538267c0d1b34d82111576cf66da
+ms.sourcegitcommit: 8a699df154464387f327691dce507d7c3d0e2aab
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/05/2019
-ms.locfileid: "67586807"
+ms.lasthandoff: 08/27/2019
+ms.locfileid: "70060423"
 ---
 <!-- markdownlint-disable MD033 -->
 <div id="main" class="v2">
@@ -82,7 +82,7 @@ ms.locfileid: "67586807"
                                 </a>
                             </li>
                             <li>
-                                <a href="/appcenter/" title="Centro de aplicaciones de Visual Studio">
+                                <a href="/appcenter/" title="Visual Studio App Center">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -101,7 +101,7 @@ ms.locfileid: "67586807"
                                 </a>
                             </li>
                             <li>
-                                <a href="/visualstudio/subscriptions/" title="Suscripciones de Visual Studio">
+                                <a href="/visualstudio/subscriptions/" title="Suscripciones de Visual Studio">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -119,49 +119,10 @@ ms.locfileid: "67586807"
                                     </div>
                                 </a>
                             </li>
-                            <li>
-                                <a href="/azure/devops/" title="Azure DevOps Services">
-                                    <div class="cardSize">
-                                        <div class="cardPadding">
-                                            <div class="card">
-                                                <div class="cardImageOuter">
-                                                    <div class="cardImage">
-                                                        <img data-scaleimage="./images/vs-team-services.svg" src="./images/vs-team-services.svg" alt="Azure DevOps Services - formerly Visual Studio Team Services (VSTS)" />
-                                                    </div>
-                                                </div>
-                                                <div class="cardText">
-                                                    <h3>Azure DevOps Services</h3>
-                                                    <p>Aumente la productividad del equipo con informes y herramientas de proyectos de Agile. Compile, pruebe e implemente proyectos a partir del control de código fuente con herramientas modernas de CI/CD.</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="/tfs/" title="Azure DevOps Server">
-                                    <div class="cardSize">
-                                        <div class="cardPadding">
-                                            <div class="card">
-                                                <div class="cardImageOuter">
-                                                    <div class="cardImage">
-                                                        <img data-scaleimage="./images/vs-team-services.svg" src="./images/vs-team-services.svg" alt="Azure DevOps Server - formerly Team Foundation Server (TFS)" />
-                                                    </div>
-                                                </div>
-                                                <div class="cardText">
-                                                    <h3>Azure DevOps Server</h3>
-                                                    <p>Instale, actualice y administre sus implementaciones locales.</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
                         </ul>
                     </li>
                 </ul>
             </li>
         </ul>
-        <p>Azure DevOps Services ha reemplazado a Visual Studio Team Services, y Team Foundation Server (TFS) ahora ha pasado a llamarse Azure DevOps Server. Consulte <a href="/azure/devops/user-guide/what-happened-vsts?view=vsts">What happened to Visual Studio Team Services?</a> (¿Qué ha ocurrido con Visual Studio Team Services?) y <a href="/tfs/server/tfs-is-now-azure-devops-server">Team Foundation Server is now Azure DevOps Server</a> (Team Foundation Server es ahora Azure DevOps Server).</p>
     </div>
 </div>
