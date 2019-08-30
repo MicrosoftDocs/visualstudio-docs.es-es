@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1d012c0902aa82eb057f9d69c0b85b13262e847a
-ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
+ms.openlocfilehash: 97ecddfa317eb522a8ce29a53482df5581912dad
+ms.sourcegitcommit: 673b9364fc9a96b027662dcb4cf5d61cab60ef11
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "66747619"
+ms.lasthandoff: 08/21/2019
+ms.locfileid: "69891244"
 ---
 # <a name="user-permissions-and-visual-studio"></a>Permisos de usuario y Visual Studio
 
@@ -40,7 +40,8 @@ En el IDE de Visual Studio puede hacerlo prácticamente todo como un usuario nor
 ||Depurar en zona para Aplicaciones XAML del explorador (XBAP).|[WPF Host (PresentationHost.exe)](/dotnet/framework/wpf/app-development/wpf-host-presentationhost-exe)|
 ||Usar el emulador para depurar proyectos de servicios en la nube para Microsoft Azure.|[Depurar un servicio en la nube en Visual Studio](/azure/vs-azure-tools-debug-cloud-services-virtual-machines)|
 ||Configurar firewall para depuración remota.|[Depuración remota](../debugger/remote-debugging.md)|
-|Herramientas de rendimiento|Generar perfiles de una aplicación.|[Guía básica para la generación de perfiles de rendimiento](../profiling/beginners-guide-to-performance-profiling.md)|
+|Herramientas de rendimiento|Asociar a una aplicación con privilegios elevados.|[Guía básica para la generación de perfiles de rendimiento](../profiling/beginners-guide-to-performance-profiling.md)|
+||Usar el generador de perfiles de GPU.|[Generación de perfiles de GPU](../profiling/gpu-usage.md)|
 |Implementación|Implementar una aplicación web en Internet Information Services (IIS) en un equipo local.|[Implementación de una aplicación web de ASP.NET con Visual Studio](/aspnet/web-forms/overview/older-versions-getting-started/deployment-to-a-hosting-provider/)|
 
 ## <a name="run-visual-studio-as-an-administrator"></a>Ejecutar Visual Studio como administrador

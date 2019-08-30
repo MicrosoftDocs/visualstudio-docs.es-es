@@ -1,20 +1,20 @@
 ---
-title: Administración de pedidos Open y Open License | Microsoft Docs
+title: Administración por parte de los asociados de las suscripciones a Visual Studio para los clientes | Microsoft Docs
 author: evanwindom
 ms.author: lank
 manager: lank
-ms.date: 07/23/2019
+ms.date: 08/21/2019
 ms.topic: conceptual
-description: Aprenda sobre la administración de pedidos de suscripciones con los programas Open y Open License.
-ms.openlocfilehash: ecbd5c4b861683742ec8b9e3d9fca571932ae887
-ms.sourcegitcommit: ce1ab8a25c66a83e60eab80ed8e1596fe66dd85c
+description: Obtenga información sobre la manera en que los asociados pueden administrar las suscripciones a Visual Studio para los clientes.
+ms.openlocfilehash: 8a1e0bcaac4cc66f0c1682010102a657c47e770b
+ms.sourcegitcommit: c90a998716b3dfa614dedc61a1bea515364efbec
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/29/2019
-ms.locfileid: "68605831"
+ms.lasthandoff: 08/23/2019
+ms.locfileid: "70000897"
 ---
-# <a name="open-and-open-license-management-for-new-orders"></a>Administración de licencias Open y Open License para nuevos pedidos
-Para administrar suscripciones en el [Portal de administración de suscripciones](https://manage.visualstudio.com) de Visual Studio, hay algunos pasos que deben seguir los asociados y los clientes. Este es el proceso:
+# <a name="partners-managing-subscriptions-on-behalf-of-customers"></a>Administración por parte de los asociados de suscripciones en nombre de los clientes
+Para administrar suscripciones en el [portal de administración de suscripciones](https://manage.visualstudio.com) de Visual Studio, hay que seguir una serie de pasos. Este es el proceso:
 - Los socios realizarán un nuevo pedido de parte de un cliente, e indicarán la dirección de correo electrónico de trabajo del cliente.
 - El cliente recibirá una notificación en la que se le invita a asignar administradores y acceder a sus suscripciones en el [Portal de administración de suscripciones de Visual Studio](https://manage.visualstudio.com).
 - Para que los asociados administren suscripciones en nombre de los clientes, tendrán que registrarse en el portal de administración. Aquí se explican las distintas formas de acceder (similar al proceso de agregar-abrir).
@@ -38,6 +38,7 @@ Se aplica a los nuevos asociados que realizan pedidos de Open License, pero que 
 
 > [!NOTE]
 > El cliente recibirá un correo de notificación que informa de que se ha agregado un socio a la licencia Open. Puede optar por quitar el acceso del socio.
+
 
 ## <a name="new-partners-visiting-the-visual-studio-subscriptions-administration-portal-directly"></a>Nuevos asociados que visitan directamente el Portal de administración de suscripciones de Visual Studio
 Este escenario se aplica a los nuevos asociados que ya han realizado nuevos pedidos de Open License, pero que aún no se han registrado en [Microsoft Business Center](https://www.microsoft.com/Licensing/servicecenter/default.aspx) y van directamente al [Portal de administración de suscripciones de Visual Studio](https://manage.visualstudio.com).  Siga estos pasos:
