@@ -10,12 +10,12 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 7442eebcd566470616382367fbdaad5cce774155
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 90035e99c13484bd1b49e59350489ed1090b5f4e
+ms.sourcegitcommit: 673b9364fc9a96b027662dcb4cf5d61cab60ef11
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62950341"
+ms.lasthandoff: 08/21/2019
+ms.locfileid: "69891265"
 ---
 # <a name="template-parameters"></a>Parámetros de plantilla
 
@@ -47,7 +47,7 @@ Los parámetros de plantilla se declaran en el formato $*parámetro*$. Por ejemp
 
 En la tabla siguiente se muestran los parámetros de plantilla reservados que se pueden usar en cualquier plantilla:
 
-|Parámetro|Descripción|
+|Parámetro|DESCRIPCIÓN|
 |---------------|-----------------|
 |clrversion|Versión actual del Common Language Runtime (CLR).|
 |ext_*|Agrega el prefijo `ext_` a cualquier parámetro para hacer referencia a las variables de la plantilla principal. Por ejemplo: `ext_safeprojectname`.|
@@ -57,7 +57,8 @@ En la tabla siguiente se muestran los parámetros de plantilla reservados que se
 |projectname|Nombre especificado por el usuario al crear el proyecto.|
 |registeredorganization|Valor de la clave del Registro de HKLM\Software\Microsoft\Windows NT\CurrentVersion\RegisteredOrganization.|
 |rootnamespace|Espacio de nombres raíz del proyecto actual. Este parámetro solo se aplica a las plantillas de elementos.|
-|safeitemname|Igual que `itemname`, pero con todos los caracteres no seguros y los espacios quitados.|
+|safeitemname|Igual que `itemname`, pero con todos los caracteres no seguros y los espacios reemplazados por caracteres de subrayado.|
+|safeitemrootname|Igual a `safeitemname`.|
 |safeprojectname|Nombre especificado por el usuario al crear el proyecto, tras quitar todos los caracteres no seguros y los espacios.|
 |hora|Hora actual en el formato DD/MM/AAAA 00:00:00.|
 |SpecificSolutionName|Nombre de la solución. Cuando se activa "Crear directorio para la solución", `SpecificSolutionName` tiene el nombre de la solución. Cuando no se activa "Crear directorio para la solución", `SpecificSolutionName` está en blanco.|

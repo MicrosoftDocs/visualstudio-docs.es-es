@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7a3839a28ce0c37c5ccf43ca1f8ddba1ecd52365
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: d18f510b3b30207079b644e540d8b5db22609f97
+ms.sourcegitcommit: 673b9364fc9a96b027662dcb4cf5d61cab60ef11
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68918169"
+ms.lasthandoff: 08/21/2019
+ms.locfileid: "69891335"
 ---
 # <a name="run-unit-tests-with-test-explorer"></a>Ejecutar pruebas unitarias con el Explorador de pruebas
 
@@ -96,7 +96,7 @@ Para ejecutar las pruebas unitarias después de cada compilación local, abra el
 
 ## <a name="view-test-results"></a>Ver los resultados de las pruebas
 
-Al ejecutar, escribir y volver a ejecutar las pruebas, el Explorador de pruebas muestra los resultados en los grupos de **Pruebas no superadas**, **Pruebas superadas**, **Pruebas omitidas** y **Pruebas no ejecutadas**. El panel de detalles de la parte inferior del Explorador de pruebas muestra un resumen de la ejecución de la prueba.
+Al ejecutar, escribir y volver a ejecutar las pruebas, el Explorador de pruebas muestra los resultados en los grupos de **Pruebas no superadas**, **Pruebas superadas**, **Pruebas omitidas** y **Pruebas no ejecutadas**. El panel de detalles de la parte inferior o lateral del Explorador de pruebas muestra un resumen de la serie de pruebas.
 
 ### <a name="view-test-details"></a>Ver detalles de la prueba
 
@@ -181,7 +181,7 @@ En el marco de pruebas unitarias de Microsoft para aplicaciones administradas, e
 |-|-----------------|
 |<xref:Microsoft.VisualStudio.TestTools.UnitTesting.OwnerAttribute>|La categoría de propietario se define desde el marco de pruebas unitarias y requiere un valor de cadena del propietario.|
 |<xref:Microsoft.VisualStudio.TestTools.UnitTesting.PriorityAttribute>|La categoría de prioridad se define desde el marco de pruebas unitarias y requiere un valor entero de la prioridad.|
-|<xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestCategoryAttribute>|El atributo TestCategory permite proporcionar una categoría sin ningún valor. Las categorías que define el atributo TestCategory también pueden ser categorías del atributo TestProperty.|
+|<xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestCategoryAttribute>|El atributo TestCategory permite proporcionar una categoría sin ningún valor.|
 |<xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute>|El atributo TestProperty permite definir un par categoría-valor de rasgo.|
 
 
@@ -215,7 +215,7 @@ La lista de reproducción en una nueva pestaña del Explorador de pruebas. Puede
 
 ![La lista de reproducción se abre en una nueva pestaña del Explorador de pruebas](../test/media/vs-2019/test-explorer-playlist-tab-16-2.png)
 
-**Para agregar pruebas a una lista de reproducción**, elija una o varias pruebas en el Explorador de pruebas. Haga clic con el botón derecho y elija **Agregar a lista de reproducción** > **Nueva lista de reproducción**.
+**Para crear una lista de reproducción**, elija una o varias pruebas en el Explorador de pruebas. Haga clic con el botón derecho y elija **Agregar a lista de reproducción** > **Nueva lista de reproducción**.
 
 **Para abrir una lista de reproducción**, elija el icono de lista de reproducción en la barra de herramientas de Visual Studio y seleccione un archivo de lista de reproducción guardado anteriormente desde el menú.
 ::: moniker-end
@@ -236,7 +236,7 @@ Las columnas se pueden filtrar, ordenar y reorganizar.
 
 * Para cambiar el orden de las columnas, haga clic en un encabezado de columna y arrástrelo a la izquierda o a la derecha.
 
-* Para ordenar una columna, haga clic en el encabezado de la columna. No todas las columnas se pueden ordenar.
+* Para ordenar una columna, haga clic en el encabezado de la columna. No todas las columnas se pueden ordenar. También puede ordenar por una columna secundaria si mantiene presionada la tecla **Mayús** y hace clic en un encabezado de columna adicional.
 
   ![Orden de columna](../test/media/vs-2019/test-explorer-sort-column-16-2.png)
 ::: moniker-end
@@ -253,7 +253,7 @@ Para filtrar por otros criterios:
 
 2. Elija un criterio nuevo.
 
-3. Escriba el valor de filtro entre comillas.
+3. Escriba el valor de filtro entre comillas. Si quiere buscar una coincidencia exacta en la cadena en lugar de una coincidencia que contenga el valor, use un signo igual (=) en lugar de dos puntos (:).
 
 ::: moniker range="vs-2017"
 ![Filtrar pruebas en el Explorador de pruebas](../test/media/ute_filtertestlist.png)
@@ -265,15 +265,28 @@ Para filtrar por otros criterios:
 > [!NOTE]
 > Las búsquedas distinguen entre mayúsculas y minúsculas, y coinciden con la cadena especificada en cualquier parte del valor de criterios.
 
+::: moniker range="vs-2017"
 |Calificador:|DESCRIPCIÓN|
 |-|-----------------|
 |**Rasgo**|Busca coincidencias en el valor y en la categoría de rasgo. La sintaxis para especificar los valores y las categorías de rasgo se define en el marco de pruebas unitarias.|
 |**Proyecto**|Busca coincidencias en los nombres de proyecto de prueba.|
 |**Mensaje de error**|Busca coincidencias en los mensajes de error definidos por el usuario que devuelven las aserciones con errores.|
 |**Ruta de acceso del archivo**|Busca coincidencias en el nombre de archivo completo de los archivos de origen de prueba.|
-|**Nombre completo**|Busca coincidencias en el nombre de archivo completo de los métodos, las clases y los espacios de nombres de prueba.|
+|**Nombre completo**|Busca coincidencias en el nombre completo de los métodos, las clases y los espacios de nombres de prueba.|
 |**Salida**|Busca en los mensajes de error definidos por el usuario que se escriben en los resultados estándar (stdout) o en los errores estándar (stderr). La sintaxis para especificar los mensajes de salida se define en el marco de pruebas unitarias.|
 |**Resultado**|Busca coincidencias en los nombres de categoría del Explorador de pruebas: **Pruebas no superadas**, **Pruebas omitidas**y **Pruebas superadas**.|
+::: moniker-end
+::: moniker range=">=vs-2019"
+|Calificador:|DESCRIPCIÓN|
+|-|-----------------|
+|**Estado**|Busca coincidencias en los nombres de categoría del Explorador de pruebas: **Pruebas no superadas**, **Pruebas omitidas**y **Pruebas superadas**.|
+|**Rasgos**|Busca coincidencias en el valor y en la categoría de rasgo. La sintaxis para especificar los valores y las categorías de rasgo se define en el marco de pruebas unitarias.|
+|**Nombre completo**|Busca coincidencias en el nombre completo de los métodos, las clases y los espacios de nombres de prueba.|
+|**Proyecto**|Busca coincidencias en los nombres de proyecto de prueba.|
+|**Marco de destino**|Busca coincidencias en los nombres de categoría del Explorador de pruebas: **Pruebas no superadas**, **Pruebas omitidas**y **Pruebas superadas**.|
+|**Espacio de nombres**|Busca coincidencias en los espacios de nombres de prueba.|
+|**Clase**|Busca coincidencias en los nombres de clase de prueba.|
+::: moniker-end
 
 Puede excluir un subconjunto de resultados de un filtro con la sintaxis siguiente:
 

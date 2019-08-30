@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e439ab3ca22fdb26992164c3927269a0f58a1f3b
-ms.sourcegitcommit: 5b34052a1c7d86179d7898ed532babb2d9dad4a3
+ms.openlocfilehash: 5060b2a3b532de26d78eca4ce16661768748bbd7
+ms.sourcegitcommit: 673b9364fc9a96b027662dcb4cf5d61cab60ef11
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "69490718"
+ms.lasthandoff: 08/21/2019
+ms.locfileid: "69891340"
 ---
 # <a name="unit-test-basics"></a>Conceptos básicos de las pruebas unitarias
 
@@ -209,7 +209,7 @@ Para obtener más información sobre los marcos de pruebas unitarias de Microsof
 
 ## <a name="set-timeouts-for-unit-tests"></a>Establecer tiempos de espera de conexión para las pruebas unitarias
 
-Para establecer un tiempo de espera en un método de prueba individual:
+Si usa el marco MSTest, puede usar <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TimeoutAttribute> para establecer un tiempo de espera en un método de prueba individual:
 
 ```csharp
 [TestMethod]

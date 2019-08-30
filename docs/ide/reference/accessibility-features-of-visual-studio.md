@@ -1,8 +1,10 @@
 ---
 title: Características de accesibilidad de Visual Studio
 description: Obtenga más información sobre las características y las utilidades de accesibilidad que ayudan a que tanto el sistema operativo Windows como el conjunto de desarrollo Visual Studio sean más accesibles para todos, incluidas las personas con discapacidades.
-ms.date: 08/22/2017
+ms.date: 08/23/2019
 ms.topic: conceptual
+ms.prod: visual-studio-windows
+ms.technology: vs-ide-general
 helpviewer_keywords:
 - Visual Studio, accessibility
 - accessibility [Visual Studio]
@@ -12,17 +14,14 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 342d3288d647018af7faf42ab3e669bb8a62594f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 6b91cc92abca856e3a23e7b1154e378c99923fcf
+ms.sourcegitcommit: 8a699df154464387f327691dce507d7c3d0e2aab
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62793162"
+ms.lasthandoff: 08/27/2019
+ms.locfileid: "70060371"
 ---
 # <a name="accessibility-features-of-visual-studio"></a>Características de accesibilidad de Visual Studio
-
-> [!TIP]
-> Para más información sobre las actualizaciones de accesibilidad recientes, vea la entrada de blog [Accessibility improvements in Visual Studio 2017 version 15.3](https://devblogs.microsoft.com/visualstudio/accessibility-improvements-in-visual-studio-2017-version-15-3/) (Mejoras de accesibilidad en Visual Studio 2017 versión 15.3).
 
 Además de las características y utilidades de accesibilidad de Windows, las características siguientes hacen que Visual Studio sea más accesible para personas con discapacidades:
 
@@ -39,12 +38,9 @@ Además de las características y utilidades de accesibilidad de Windows, las ca
 > [!NOTE]
 > Este tema se aplica a Visual Studio para Windows. En el caso de Visual Studio para Mac, vea [Accesibilidad de Visual Studio para Mac](/visualstudio/mac/accessibility).
 
-> [!IMPORTANT]
-> La información de esta sección solo se aplica a los usuarios que obtengan la licencia de los productos Microsoft en Estados Unidos. Si ha obtenido este producto fuera de Estados Unidos, puede usar la tarjeta de información de subsidiaria que se incluye con el paquete de software o puede visitar la [página de información de contacto de Soporte técnico de Microsoft](http://support.microsoft.com/ContactUs) y hacer clic en el vínculo **Locate Microsoft Offices Worldwide** (Buscar oficinas de Microsoft en todo el mundo) (cerca de la parte inferior de la página). Esta página proporciona una lista de números de teléfono y direcciones de servicios de soporte técnico de Microsoft. Puede ponerse en contacto con la subsidiaria para averiguar si los tipos de productos y servicios que se describen en esta sección están disponibles en su zona. La información sobre accesibilidad está disponible en otros idiomas, incluido japonés y francés.
-
 Para obtener más información, vea los temas siguientes:
 
-- [Cómo: Establecer opciones de accesibilidad del IDE](../../ide/reference/how-to-set-ide-accessibility-options.md)
+- [Cómo: Establecimiento de opciones de accesibilidad de IDE](../../ide/reference/how-to-set-ide-accessibility-options.md)
 
 - [Cómo: Uso exclusivo del teclado](../../ide/reference/how-to-use-the-keyboard-exclusively.md)
 
@@ -53,6 +49,16 @@ Para obtener más información, vea los temas siguientes:
 - [Sugerencias y trucos de accesibilidad](../../ide/reference/accessibility-tips-and-tricks.md)
 
 - [Cómo: Cambiar las fuentes y los colores](../../ide/how-to-change-fonts-and-colors-in-visual-studio.md)
+
+> [!IMPORTANT]
+> La información de esta página podría aplicarse únicamente a los usuarios que obtengan la licencia de los productos Microsoft en Estados Unidos. Si adquirió este producto fuera de Estados Unidos, visite el sitio web [Accesibilidad de Microsoft](http://go.microsoft.com/fwlink/?LinkId=8431) para obtener una lista de los números de teléfono y las direcciones de los servicios de atención al cliente de Microsoft. Puede ponerse en contacto con la subsidiaria para averiguar si el tipo de productos y servicios que se describen en esta página están disponibles en su área. La información sobre accesibilidad también está disponible en otros idiomas.
+
+::: moniker range="vs-2017"
+
+> [!TIP]
+> Para más información sobre las actualizaciones de accesibilidad recientes, vea la entrada de blog [Accessibility improvements in Visual Studio 2017 version 15.3](https://devblogs.microsoft.com/visualstudio/accessibility-improvements-in-visual-studio-2017-version-15-3/) (Mejoras de accesibilidad en Visual Studio 2017 versión 15.3).
+
+::: moniker-end
 
 ## <a name="see-also"></a>Vea también
 

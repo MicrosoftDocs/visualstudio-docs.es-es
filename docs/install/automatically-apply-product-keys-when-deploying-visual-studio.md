@@ -12,12 +12,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 3f1cdc3d8516271cd397c1d22118ca21a92f78cd
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: dabaf63e205d3e76432767743e323c90ed389846
+ms.sourcegitcommit: 673b9364fc9a96b027662dcb4cf5d61cab60ef11
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62974220"
+ms.lasthandoff: 08/21/2019
+ms.locfileid: "69891309"
 ---
 # <a name="automatically-apply-product-keys-when-deploying-visual-studio"></a>Aplicación automática de claves de producto durante la implementación de Visual Studio
 
@@ -100,6 +100,9 @@ Si `StorePID.exe` aplica correctamente la clave de producto, devuelve un valor `
 | `PID_ACTION_NOUPGRADE`    | 6    |
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
+
+> [!NOTE]
+> Para solucionar problemas de instancias virtuales, ejecute *C:\Archivos de programa (x86)\Microsoft Visual Studio \<version\>\Common7\IDE\DDConfigCA.exe*.
 
 ## <a name="see-also"></a>Vea también
 

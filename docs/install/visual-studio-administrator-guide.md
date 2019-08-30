@@ -17,12 +17,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 9a586a0ab0d6b7a3ab34ef581e2ba6f5348232c2
-ms.sourcegitcommit: 7eb2fb21805d92f085126f3a820ac274f2216b4e
+ms.openlocfilehash: 89f34d027ec238b1e34724924ffb163267d56dc0
+ms.sourcegitcommit: 0bd63f3bc429ae059b9df6e45c6b8dcae6152940
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/22/2019
-ms.locfileid: "67328796"
+ms.lasthandoff: 08/26/2019
+ms.locfileid: "70026471"
 ---
 # <a name="visual-studio-administrator-guide"></a>Guía del administrador de Visual Studio
 
@@ -95,7 +95,7 @@ Antes de implementar Visual Studio en la organización, hay algunas decisiones q
 
 * (Opcional) [Aplique una clave de producto de licencia por volumen](automatically-apply-product-keys-when-deploying-visual-studio.md?view=vs-2019) como parte del script de instalación para que los usuarios no tengan que activar el software por separado.
 
-* (Opcional) Actualice el diseño de red para [controlar cuándo y dónde se entregan las actualizaciones de producto a los usuarios finales](controlling-updates-to-visual-studio-deployments.md?view=vs-2019).
+* (Opcional) Actualice el diseño de red para [controlar cuándo y desde dónde se entregan las actualizaciones de producto a los usuarios finales](controlling-updates-to-visual-studio-deployments.md?view=vs-2019).
 
 * (Opcional) Establezca directivas del Registro que afecten a la implementación de Visual Studio, por ejemplo, dónde se instalan algunos paquetes compartidos con otras versiones o instancias, [dónde se almacenan en caché los paquetes](set-defaults-for-enterprise-deployments.md?view=vs-2019) o [si los paquetes se almacenan en caché](disable-or-move-the-package-cache.md?view=vs-2019).
 
@@ -134,7 +134,7 @@ Tenemos varias herramientas disponibles para ayudarle a [detectar y administrar 
 
 * (Opcional) [Aplique una clave de producto de licencia por volumen](automatically-apply-product-keys-when-deploying-visual-studio.md?view=vs-2017) como parte del script de instalación para que los usuarios no tengan que activar el software por separado.
 
-* (Opcional) Actualice el diseño de red para [controlar cuándo y dónde se entregan las actualizaciones de producto a los usuarios finales](controlling-updates-to-visual-studio-deployments.md?view=vs-2017).
+* (Opcional) Actualice el diseño de red para [controlar cuándo y desde dónde se entregan las actualizaciones de producto a los usuarios finales](controlling-updates-to-visual-studio-deployments.md?view=vs-2017).
 
 * (Opcional) Establezca directivas del Registro que afecten a la implementación de Visual Studio, por ejemplo, dónde se instalan algunos paquetes compartidos con otras versiones o instancias, [dónde se almacenan en caché los paquetes](set-defaults-for-enterprise-deployments.md?view=vs-2019) o [si los paquetes se almacenan en caché](disable-or-move-the-package-cache.md?view=vs-2017).
 
