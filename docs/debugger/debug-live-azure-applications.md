@@ -12,12 +12,12 @@ manager: jillfra
 ms.workload:
 - aspnet
 - azure
-ms.openlocfilehash: fae6be8932731e5589dbc27f5084bcbc509680c1
-ms.sourcegitcommit: 9fc8b144d4ed1c46aba87c0b7e1d24454e0eea9d
+ms.openlocfilehash: 6944c930ba6357fffeebba417a32cd167bd4debd
+ms.sourcegitcommit: 44e9b1d9230fcbbd081ee81be9d4be8a485d8502
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "68493317"
+ms.lasthandoff: 08/30/2019
+ms.locfileid: "70179831"
 ---
 # <a name="debug-live-aspnet-azure-apps-using-the-snapshot-debugger"></a>Depuración de aplicaciones de Azure de ASP.NET en vivo con Snapshot Debugger
 
@@ -37,7 +37,7 @@ En este tutorial va a:
 * Snapshot Debugger solo está disponible a partir de Visual Studio 2017 Enterprise versión 15,5 o superior con la **carga de trabajo de desarrollo de Azure**. (En la pestaña **Componentes individuales**, puede encontrarlo en **Depuración y pruebas** > **Snapshot Debugger**).
 
    ::: moniker range=">=vs-2019"
-   Si aún no está instalado, instale [Visual Studio 2019](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019). Si va a actualizar desde una instalación anterior de Visual Studio, ejecute el Instalador de Visual Studio y compruebe el componente Snapshot Debugger en la **carga de trabajo de desarrollo de ASP.net y Web**.
+   Si aún no está instalado, instale [Visual Studio 2019](https://visualstudio.microsoft.com/downloads). Si va a actualizar desde una instalación anterior de Visual Studio, ejecute el Instalador de Visual Studio y compruebe el componente Snapshot Debugger en la **carga de trabajo de desarrollo de ASP.net y Web**.
    ::: moniker-end
    ::: moniker range="<=vs-2017"
    Si aún no está instalado, instale [Visual Studio 2017 Enterprise, versión 15.5](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download) o posterior. Si va a actualizar desde una instalación anterior de Visual Studio 2017, ejecute el Instalador de Visual Studio y compruebe el componente Snapshot Debugger en la **carga de trabajo de desarrollo de ASP.net y Web**.
