@@ -12,7 +12,7 @@
 ##### [Suscripciones para asociados](program-mpn.md)
 ##### [Administración de las suscripciones de mi MPN](manage-mpn-subscriptions.md)
 #### [Microsoft for Startups](program-startups.md)
-### Iniciar sesión 
+### Inicio de sesión 
 #### [Activación de suscripciones comerciales](activate-store-subscriptions.md)
 #### [Inicio de sesión con cuentas de Microsoft](sign-in-msa.md)
 #### [Inicio de sesión con una cuenta profesional o educativa](sign-in-work.md)
@@ -41,11 +41,10 @@
 ##### [Cuenta de desarrollador de Windows](vs-windows-dev.md)
 #### Desarrollo profesional
 ##### [DataCamp](vs-datacamp.md)
-##### [LinkedIn Learning](vs-linkedin-learning.md)
+##### [Aprendizaje de LinkedIn](vs-linkedin-learning.md)
 ##### [Suscripción a MSDN Magazine](vs-msdn.md)
 ##### [Pluralsight](vs-pluralsight.md)
 #### Soporte técnico 
-##### [Chat de Azure Advisor](vs-azure-advisory-chat.md)
 ##### [Comunidad Azure](vs-azure-community.md)
 ##### [Soporte técnico de Concierge](vs-concierge-chat.md)
 ##### [Soporte técnico](vs-tech-support.md)
