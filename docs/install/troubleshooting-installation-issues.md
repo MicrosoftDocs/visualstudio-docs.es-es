@@ -15,12 +15,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 5ea7b0c934dfeeee6825c558868388a65a8bdcd2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: fbecfb7e74b38bb935414e701618cef361bf0506
+ms.sourcegitcommit: 44e9b1d9230fcbbd081ee81be9d4be8a485d8502
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62997445"
+ms.lasthandoff: 08/30/2019
+ms.locfileid: "70180026"
 ---
 # <a name="troubleshoot-visual-studio-installation-and-upgrade-issues"></a>Solución de problemas de instalación y actualización de Visual Studio
 
@@ -71,7 +71,7 @@ El programa previo del instalador de Visual Studio es un ejecutable mínimo de p
 
 1. Cierre el instalador de Visual Studio.
 2. Elimine el directorio del instalador de Visual Studio. Normalmente, el directorio es `C:\Program Files (x86)\Microsoft Visual Studio\Installer`.
-3. Ejecute al programa previo del instalador de Visual Studio. Puede encontrar el programa previo en su carpeta de descargas con un nombre de archivo que sigue un patrón `vs_[Visual Studio edition]__*.exe`. Si no encuentra esa aplicación, puede descargar el programa previo; para ello, vaya a la página de [descargas de Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019) y haga clic en **Descargar** en su edición de Visual Studio. Entonces, ejecute el ejecutable para restablecer sus metadatos de instalación.
+3. Ejecute al programa previo del instalador de Visual Studio. Puede encontrar el programa previo en su carpeta de descargas con un nombre de archivo que sigue un patrón `vs_[Visual Studio edition]__*.exe`. Si no encuentra esa aplicación, puede descargar el programa previo; para ello, vaya a la página de [descargas de Visual Studio](https://visualstudio.microsoft.com/downloads) y haga clic en **Descargar** en su edición de Visual Studio. Entonces, ejecute el ejecutable para restablecer sus metadatos de instalación.
 4. Intente instalar o actualizar de nuevo Visual Studio. Si el Instalador sigue dando error, vaya al paso siguiente.
 
 ::: moniker-end

@@ -15,12 +15,12 @@ dev_langs:
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: 5497b0a343960e3f9e7e606e45c41f188b2bdcba
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: bef87392ca9e08e38950f5e3eed53223dd38bd00
+ms.sourcegitcommit: 44e9b1d9230fcbbd081ee81be9d4be8a485d8502
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67823646"
+ms.lasthandoff: 08/30/2019
+ms.locfileid: "70180242"
 ---
 # <a name="tutorial-create-a-simple-c-console-app-in-visual-studio"></a>Tutorial: Creación de una aplicación de consola de C# sencilla en Visual Studio
 
@@ -34,7 +34,7 @@ Si todavía no ha instalado Visual Studio, vaya a la página de [descargas de Vi
 
 ::: moniker range="vs-2019"
 
-Si todavía no ha instalado Visual Studio, vaya a la página de [descargas de Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019) para instalarlo de forma gratuita.
+Si todavía no ha instalado Visual Studio, vaya a la página de [descargas de Visual Studio](https://visualstudio.microsoft.com/downloads) para instalarlo de forma gratuita.
 
 ::: moniker-end
 

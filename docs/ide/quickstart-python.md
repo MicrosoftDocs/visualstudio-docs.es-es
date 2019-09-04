@@ -10,12 +10,12 @@ manager: jillfra
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: aee0029553391c30fb29eb1f9fa7aba01968e5ed
-ms.sourcegitcommit: b56dc6fadc6c924beed36bb4c2ccc16cf6bcfa1c
+ms.openlocfilehash: cbb06ac800fd21e2354b04fb2e7e46306da7ed72
+ms.sourcegitcommit: 44e9b1d9230fcbbd081ee81be9d4be8a485d8502
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/02/2019
-ms.locfileid: "68740154"
+ms.lasthandoff: 08/30/2019
+ms.locfileid: "70180346"
 ---
 # <a name="quickstart-create-your-first-python-web-app-using-visual-studio"></a>Inicio rápido: Creación de la primera aplicación web de Python con Visual Studio
 
@@ -29,7 +29,7 @@ Si todavía no ha instalado Visual Studio, vaya a la página de [descargas de Vi
 
 ::: moniker range=">=vs-2019"
 
-Si todavía no ha instalado Visual Studio, vaya a la página de [descargas de Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019) para instalarlo de forma gratuita. En el instalador, asegúrese de seleccionar la carga de trabajo **Desarrollo de Python**.
+Si todavía no ha instalado Visual Studio, vaya a la página de [descargas de Visual Studio](https://visualstudio.microsoft.com/downloads) para instalarlo de forma gratuita. En el instalador, asegúrese de seleccionar la carga de trabajo **Desarrollo de Python**.
 
 ::: moniker-end
 

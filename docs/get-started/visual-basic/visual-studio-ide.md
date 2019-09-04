@@ -11,12 +11,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 7dfcc4a01dfd5e9b63dc16afa0c2b3286419c193
-ms.sourcegitcommit: 51dad3e11d7580567673e0d426ab3b0a17584319
+ms.openlocfilehash: dc1bddc83e094289eb2364e7d88b56536ab18bd2
+ms.sourcegitcommit: 44e9b1d9230fcbbd081ee81be9d4be8a485d8502
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/10/2019
-ms.locfileid: "66820657"
+ms.lasthandoff: 08/30/2019
+ms.locfileid: "70180229"
 ---
 # <a name="welcome-to-the-visual-studio-ide--visual-basic"></a>Le damos la bienvenida al IDE de Visual Studio | Visual Basic
 
@@ -203,7 +203,7 @@ Para empezar, [descargue Visual Studio](https://visualstudio.microsoft.com/vs/ol
 
 ::: moniker range=">=vs-2019"
 
-Para empezar, [descargue Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019) e instálelo en su sistema. El instalador modular le permite elegir e instalar *cargas de trabajo*, que son grupos de características necesarias para el lenguaje de programación o la plataforma que prefiera. Siga los pasos para [crear un programa](#create-a-program) y no se olvide de seleccionar la carga de trabajo **Desarrollo multiplataforma de .NET Core** durante la instalación.
+Para empezar, [descargue Visual Studio](https://visualstudio.microsoft.com/downloads) e instálelo en su sistema. El instalador modular le permite elegir e instalar *cargas de trabajo*, que son grupos de características necesarias para el lenguaje de programación o la plataforma que prefiera. Siga los pasos para [crear un programa](#create-a-program) y no se olvide de seleccionar la carga de trabajo **Desarrollo multiplataforma de .NET Core** durante la instalación.
 
 ::: moniker-end
 

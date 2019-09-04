@@ -1,16 +1,17 @@
 ---
 title: Implementación de aplicaciones web de ASP.NET Core
 description: Información sobre la implementación de aplicaciones web de ASP.NET Core en Visual Studio para Mac.
+ms.topic: overview
 author: sayedihashimi
 ms.author: sayedha
 ms.date: 01/25/2019
 ms.assetid: d746292d-0570-424a-bf43-e16ab85bbf0d
-ms.openlocfilehash: db0d564a4ea2cdd641f03fc94df63eaf9fc3e3d0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 98169016921df5397fafb5a77c214357c18a0ae8
+ms.sourcegitcommit: cf8c0fef2b9690595e99ce3802586cdd55fd37c2
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62965508"
+ms.lasthandoff: 08/28/2019
+ms.locfileid: "70107980"
 ---
 # <a name="aspnet-core-web-app-deployment"></a>Implementación de aplicaciones web de ASP.NET Core
 

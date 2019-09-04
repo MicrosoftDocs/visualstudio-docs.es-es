@@ -11,12 +11,12 @@ dev_langs:
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: c24803f3817aa8461f9445e390fe44853d2d27c5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 990106f7f3ca97ae38a20170ca6ed2e1d699d4e4
+ms.sourcegitcommit: 44e9b1d9230fcbbd081ee81be9d4be8a485d8502
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62953350"
+ms.lasthandoff: 08/30/2019
+ms.locfileid: "70180314"
 ---
 # <a name="quickstart-use-visual-studio-to-create-your-first-aspnet-core-web-service-in-f"></a>Inicio rápido: Usar Visual Studio para crear el primer servicio web de ASP.NET Core en F\#
 
@@ -30,7 +30,7 @@ Si todavía no ha instalado Visual Studio, vaya a la página de [descargas de Vi
 
 ::: moniker range="vs-2019"
 
-Si todavía no ha instalado Visual Studio, vaya a la página de [descargas de Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019) para instalarlo de forma gratuita.
+Si todavía no ha instalado Visual Studio, vaya a la página de [descargas de Visual Studio](https://visualstudio.microsoft.com/downloads) para instalarlo de forma gratuita.
 
 ::: moniker-end
 

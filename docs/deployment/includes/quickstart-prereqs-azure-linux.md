@@ -1,16 +1,16 @@
 ---
-ms.openlocfilehash: 29aedc73173de34723f0db846a26c82cbde64f41
-ms.sourcegitcommit: 748d9cd7328a30f8c80ce42198a94a4b5e869f26
+ms.openlocfilehash: 6c2065eee7663b627623bf7c68a4a94027c9be57
+ms.sourcegitcommit: 44e9b1d9230fcbbd081ee81be9d4be8a485d8502
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/15/2019
-ms.locfileid: "68143622"
+ms.lasthandoff: 08/30/2019
+ms.locfileid: "70197185"
 ---
 ## <a name="prerequisites"></a>Requisitos previos
 
 ::: moniker range=">=vs-2019"
 
-* [Visual Studio 2019](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019) instalado con las cargas de trabajo adecuadas para el lenguaje elegido:
+* [Visual Studio 2019](https://visualstudio.microsoft.com/downloads) instalado con las cargas de trabajo adecuadas para el lenguaje elegido:
   * ASP.NET: **Desarrollo de ASP.NET y web**
 ::: moniker-end
 ::: moniker range="vs-2017"

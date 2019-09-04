@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 070de03f56f6d9d10a9e6a41516ffcb67837e90e
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 7e7ddccf321259ff8f4de2522404fdc42617a810
+ms.sourcegitcommit: 44e9b1d9230fcbbd081ee81be9d4be8a485d8502
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65680307"
+ms.lasthandoff: 08/30/2019
+ms.locfileid: "70180186"
 ---
 # <a name="tutorial-learn-to-debug-visual-basic-code-using-visual-studio"></a>Tutorial: Aprender a depurar código de Visual Basic con Visual Studio
 
@@ -55,7 +55,7 @@ Si todavía no ha instalado Visual Studio, vaya a la página de [descargas de Vi
 
 ::: moniker range="vs-2019"
 
-Si todavía no ha instalado Visual Studio, vaya a la página de [descargas de Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019) para instalarlo de forma gratuita.
+Si todavía no ha instalado Visual Studio, vaya a la página de [descargas de Visual Studio](https://visualstudio.microsoft.com/downloads) para instalarlo de forma gratuita.
 
 ::: moniker-end
 
@@ -69,10 +69,10 @@ Si tiene que instalar la carga de trabajo pero ya tiene Visual Studio, vaya a **
     Presione **Esc** para cerrar la ventana de inicio. Presione **Ctrl + Q** para abrir el cuadro de búsqueda, escriba **visual basic**, elija **Plantillas** y luego, **Create new Console App (.NET Framework) project** (Crear proyecto de aplicación de consola [.NET Framework]). En el cuadro de diálogo que se abre, escriba un nombre como **get-started-debugging** y luego elija **Crear**.
     ::: moniker-end
     ::: moniker range="vs-2017"
-    En la barra de menús superior, seleccione **Archivo** > **Nuevo** > **Proyecto**. En el panel izquierdo del cuadro de diálogo **Nuevo proyecto**, en **Visual Basic**, elija **Escritorio de Windows** y luego, en el panel central, **Aplicación de consola (.NET Framework)**. Luego, escriba un nombre como **get-started-debugging** y haga clic en **Aceptar**.
+    En la barra de menús superior, seleccione **Archivo** > **Nuevo** > **Proyecto**. En el panel izquierdo del cuadro de diálogo **Nuevo proyecto**, en **Visual Basic**, elija **Escritorio de Windows** y luego, en el panel central, **Aplicación de consola (.NET Framework)** . Luego, escriba un nombre como **get-started-debugging** y haga clic en **Aceptar**.
     ::: moniker-end
 
-    Si no ve la plantilla de proyecto **Aplicación de consola (.NET Framework)**, vaya a **Herramientas** > **Obtener herramientas y características…** y se abrirá el instalador de Visual Studio. Elija la carga de trabajo **Desarrollo de escritorio de .NET** y, luego, seleccione **Modificar**.
+    Si no ve la plantilla de proyecto **Aplicación de consola (.NET Framework)** , vaya a **Herramientas** > **Obtener herramientas y características…** y se abrirá el instalador de Visual Studio. Elija la carga de trabajo **Desarrollo de escritorio de .NET** y, luego, seleccione **Modificar**.
 
     Visual Studio crea el proyecto.
 

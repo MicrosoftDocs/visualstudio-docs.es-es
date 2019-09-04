@@ -6,12 +6,12 @@ ms.author: ghogen
 ms.date: 06/06/2019
 ms.technology: vs-azure
 ms.topic: quickstart
-ms.openlocfilehash: 09209393ea32b4eb9b86a8c0c4263103ee5de344
-ms.sourcegitcommit: 0cd282a7584b9bfd4df7882f8fdf3ad8a270e219
+ms.openlocfilehash: bcc30ec13096b37d7540c187d11c846d6c575093
+ms.sourcegitcommit: 44e9b1d9230fcbbd081ee81be9d4be8a485d8502
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/28/2019
-ms.locfileid: "67467108"
+ms.lasthandoff: 08/30/2019
+ms.locfileid: "70179923"
 ---
 # <a name="quickstart-use-docker-with-a-react-single-page-app-in-visual-studio"></a>Inicio rápido: Uso de Docker con una aplicación de página única de React en Visual Studio
 
@@ -26,7 +26,7 @@ Con Visual Studio, es muy fácil compilar, depurar y ejecutar aplicaciones ASP.
 ::: moniker-end
 ::: moniker range=">=vs-2019"
 * [Docker Desktop](https://hub.docker.com/editions/community/docker-ce-desktop-windows)
-* [Visual Studio 2019](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019) con las cargas de trabajo **Desarrollo web**, **Azure Tools** o **Desarrollo multiplataforma de .NET Core** instaladas
+* [Visual Studio 2019](https://visualstudio.microsoft.com/downloads) con las cargas de trabajo **Desarrollo web**, **Azure Tools** o **Desarrollo multiplataforma de .NET Core** instaladas
 * [Herramientas de desarrollo de .NET Core 2.2](https://dotnet.microsoft.com/download/dotnet-core/2.2) para el desarrollo con .NET Core 2.2
 * Para publicar en Azure Container Registry, una suscripción de Azure. [Regístrese para obtener una evaluación gratuita](https://azure.microsoft.com/offers/ms-azr-0044p/).
 ::: moniker-end

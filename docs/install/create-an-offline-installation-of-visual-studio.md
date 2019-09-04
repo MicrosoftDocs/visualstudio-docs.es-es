@@ -16,12 +16,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 616c27f16b4fca9be6f8dab3cdf70fafae52f193
-ms.sourcegitcommit: 0f5f7955076238742f2071d286ad8e896f3a6cad
+ms.openlocfilehash: 599eef257894c0619252a4c2db23b304e4439d70
+ms.sourcegitcommit: 44e9b1d9230fcbbd081ee81be9d4be8a485d8502
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "68483506"
+ms.lasthandoff: 08/30/2019
+ms.locfileid: "70180033"
 ---
 # <a name="create-an-offline-installation-of-visual-studio"></a>Crear una instalación sin conexión de Visual Studio
 
@@ -33,7 +33,7 @@ Hemos diseñado Visual Studio 2017 para que funcione bien en una variedad de con
 
 ::: moniker range="vs-2019"
 
-Hemos diseñado Visual Studio 2019 para que funcione bien en una variedad de configuraciones de red y de equipos. Aunque se recomienda que pruebe el [instalador web de Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019) &mdash;que es un archivo pequeño y le permite estar actualizado con todas las correcciones y características más recientes&mdash; somos conscientes de que es posible que no pueda hacerlo.
+Hemos diseñado Visual Studio 2019 para que funcione bien en una variedad de configuraciones de red y de equipos. Aunque se recomienda que pruebe el [instalador web de Visual Studio](https://visualstudio.microsoft.com/downloads) &mdash;que es un archivo pequeño y le permite estar actualizado con todas las correcciones y características más recientes&mdash; somos conscientes de que es posible que no pueda hacerlo.
 
 ::: moniker-end
 
@@ -79,7 +79,7 @@ Para comenzar, descargue el programa previo de Visual Studio para la edición el
 
 ::: moniker range="vs-2017"
 
-| Edition                    | Archivo                                                                    |
+| Edición                    | Archivo                                                                    |
 |----------------------------|-------------------------------------------------------------------------|
 | Comunidad de Visual Studio    | [vs_community.exe](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=community&rel=15&utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=offline+install&utm_content=download+vs2017)       |
 | Visual Studio Professional | [vs_professional.exe](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=professional&rel=15&utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=offline+install&utm_content=download+vs2017) |
@@ -89,7 +89,7 @@ Para comenzar, descargue el programa previo de Visual Studio para la edición el
 
 ::: moniker range="vs-2019"
 
-| Edition                    | Archivo                                                                    |
+| Edición                    | Archivo                                                                    |
 |----------------------------|-------------------------------------------------------------------------|
 | Comunidad de Visual Studio    | [vs_community.exe](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=community&rel=16&utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=offline+install&utm_content=download+vs2019)       |
 | Visual Studio Professional | [vs_professional.exe](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=professional&rel=16&utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=offline+install&utm_content=download+vs2019) |
@@ -171,11 +171,11 @@ c:\vslayout\vs_community.exe --add Microsoft.VisualStudio.Workload.ManagedDeskto
 
 ### <a name="list-of-language-locales"></a>Lista de configuraciones regionales de idioma
 
-| **Idioma-configuración regional** | **Lenguaje** |
+| **Idioma-configuración regional** | **Idioma** |
 | ----------------------- | --------------- |
 | cs-CZ | Checo |
 | de-DE | Alemán |
-| en-US | English |
+| en-US | Inglés |
 | es-ES | Español |
 | fr-FR | Francés |
 | it-IT | Italiano |

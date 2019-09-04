@@ -6,12 +6,12 @@ ms.author: jomatthi
 ms.date: 05/06/2018
 ms.assetid: 852B6A9D-AEFA-4EF4-A5DD-94A506019D20
 ms.custom: video
-ms.openlocfilehash: b047222f67d75bbc092a731c8de1ca1ba6d94cf7
-ms.sourcegitcommit: 7fbfb2a1d43ce72545096c635df2b04496b0be71
+ms.openlocfilehash: 767c08505877391d71ca085097a0464d516f4f24
+ms.sourcegitcommit: cf8c0fef2b9690595e99ce3802586cdd55fd37c2
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/09/2019
-ms.locfileid: "67692163"
+ms.lasthandoff: 08/28/2019
+ms.locfileid: "70108026"
 ---
 # <a name="working-with-git"></a>Trabajo con Git
 
@@ -59,7 +59,7 @@ Estas permiten las acciones siguientes:
 
 ## <a name="switching-branches"></a>Cambio de ramas
 
-De forma predeterminada, la primera rama creada en un repositorio se conoce como rama  **maestra** . Técnicamente no hay diferencias entre la rama maestra y las demás, aunque la maestra es la que en los equipos de desarrollo se suele considerar como la rama "activa" o de "producción".
+De forma predeterminada, la primera rama creada en un repositorio se conoce como rama **maestra**. Técnicamente no hay diferencias entre la rama maestra y las demás, aunque la maestra es la que en los equipos de desarrollo se suele considerar como la rama "activa" o de "producción".
 
 Se puede crear una línea independiente de desarrollo al ramificar la rama maestra (o cualquier otra rama, de hecho). Esto proporciona una nueva versión de la rama maestra en un momento dado, lo que permite el desarrollo independientemente de lo que está "activo". El empleo de ramas de este modo se suele usar para características de desarrollo de software
 

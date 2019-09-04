@@ -1,7 +1,6 @@
 ---
 title: Publicación en Azure App Service
 ms.date: 01/17/2019
-ms.topic: quickstart
 helpviewer_keywords:
 - deployment, website
 ms.assetid: 8524a4c5-97a9-41ac-a2a0-034efb9bfc57
@@ -12,12 +11,12 @@ ms.prod: visual-studio-mac
 ms.custom: video
 ms.workload:
 - azure
-ms.openlocfilehash: 48cf25a7164fabc96924897c0a4a28bbbe4bea74
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 335f94ddbf0b06eb1a8de093baee98b0b3105369
+ms.sourcegitcommit: fe212f8960d7882a1b0fdae9e22f008996aacf3c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62988570"
+ms.lasthandoff: 09/03/2019
+ms.locfileid: "70222775"
 ---
 # <a name="publish-a-web-app-to-azure-app-service-using-visual-studio-for-mac"></a>Publicación de una aplicación web en Azure App Service mediante Visual Studio para Mac
 
@@ -57,7 +56,7 @@ Puede usar la herramienta Publicar para publicar aplicaciones ASP.NET Core en Az
 
     Puede cambiar la suscripción a la que se asociará el App Service mediante la lista desplegable **Suscripción**.
 
-    Puede seleccionar un **Grupo de recursos** existente mediante la lista desplegable o puede crear uno nuevo con el botón **+**.
+    Puede seleccionar un **Grupo de recursos** existente mediante la lista desplegable o puede crear uno nuevo con el botón **+** .
 
     Para el plan de App Service, seleccione uno existente o cree uno nuevo mediante el botón de radio **Personalizado**.
 

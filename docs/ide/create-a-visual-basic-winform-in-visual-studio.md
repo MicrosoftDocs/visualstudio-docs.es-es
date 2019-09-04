@@ -13,12 +13,12 @@ dev_langs:
 - vb
 ms.workload:
 - multiple
-ms.openlocfilehash: 4619a56bfe052a1fb191af8edfd1cef8b376617b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c031a047a0331eea0f8397a303d2b5cb0af650e6
+ms.sourcegitcommit: 44e9b1d9230fcbbd081ee81be9d4be8a485d8502
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62976815"
+ms.lasthandoff: 08/30/2019
+ms.locfileid: "70180136"
 ---
 # <a name="create-a-windows-forms-app-in-visual-studio-with-visual-basic"></a>Creación de una aplicación de Windows Forms en Visual Studio con Visual Basic
 
@@ -32,7 +32,7 @@ Si todavía no ha instalado Visual Studio, vaya a la página de [descargas de Vi
 
 ::: moniker range="vs-2019"
 
-Si todavía no ha instalado Visual Studio, vaya a la página de [descargas de Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019) para instalarlo de forma gratuita.
+Si todavía no ha instalado Visual Studio, vaya a la página de [descargas de Visual Studio](https://visualstudio.microsoft.com/downloads) para instalarlo de forma gratuita.
 
 > [!NOTE]
 > Algunas de las capturas de pantalla de este tutorial usan el tema oscuro. Si no está usando el tema oscuro pero le gustaría hacerlo, vea la página [Guía de inicio rápido: personalizar el IDE y el editor de Visual Studio](../ide/quickstart-personalize-the-ide.md) para obtener información sobre cómo hacerlo.
@@ -49,9 +49,9 @@ En primer lugar, crearemos un proyecto de aplicación de Visual Basic. En el tip
 
 2. En la barra de menús superior, elija **Archivo** > **Nuevo** > **Proyecto**.
 
-3. En el cuadro de diálogo **Nuevo proyecto** del panel izquierdo, expanda **Visual Basic** y seleccione **Escritorio de Windows**. En el panel central, elija **Aplicación de Windows Forms (.NET Framework)**. Luego, asigne al archivo el nombre `HelloWorld`.
+3. En el cuadro de diálogo **Nuevo proyecto** del panel izquierdo, expanda **Visual Basic** y seleccione **Escritorio de Windows**. En el panel central, elija **Aplicación de Windows Forms (.NET Framework)** . Luego, asigne al archivo el nombre `HelloWorld`.
 
-     Si no ve la plantilla de proyecto **Aplicación de Windows Forms (.NET Framework)**, cancele haciendo clic fuera del cuadro de diálogo **Nuevo proyecto** y, en la barra de menús superior, elija **Herramientas** > **Get Tools and Features** (Obtener herramientas y características). Se iniciará el Instalador de Visual Studio. Elija la carga de trabajo **Desarrollo de escritorio de .NET** y, luego, seleccione **Modificar**.
+     Si no ve la plantilla de proyecto **Aplicación de Windows Forms (.NET Framework)** , cancele haciendo clic fuera del cuadro de diálogo **Nuevo proyecto** y, en la barra de menús superior, elija **Herramientas** > **Get Tools and Features** (Obtener herramientas y características). Se iniciará el Instalador de Visual Studio. Elija la carga de trabajo **Desarrollo de escritorio de .NET** y, luego, seleccione **Modificar**.
 
      ![Carga de trabajo de .NET Core en el instalador de Visual Studio](../ide/media/install-dot-net-desktop-env.png)
 
@@ -72,7 +72,7 @@ En primer lugar, crearemos un proyecto de aplicación de Visual Basic. En el tip
    ![Elija la plantilla Visual Basic para la Aplicación de Windows Forms (.NET Framework).](../get-started/visual-basic/media/vs-2019/vb-create-new-project-search-winforms-filtered.png)
 
    > [!NOTE]
-   > Si no ve la plantilla **Aplicación de Windows Forms (.NET Framework)**, puede instalarla desde la ventana **Crear un proyecto**. En el mensaje **¿No encuentra lo que busca?**, elija el vínculo **Instalar más herramientas y características**.
+   > Si no ve la plantilla **Aplicación de Windows Forms (.NET Framework)** , puede instalarla desde la ventana **Crear un proyecto**. En el mensaje **¿No encuentra lo que busca?** , elija el vínculo **Instalar más herramientas y características**.
    >
    > ![Vínculo "Instalar más herramientas y características" del mensaje "¿No encuentra lo que busca?" que aparece en la ventana "Crear proyecto"](../get-started/media/vs-2019/not-finding-what-looking-for.png) 
    > 
@@ -130,7 +130,7 @@ Ya hemos agregado un control de botón para crear una acción, así que ahora va
 
 ### <a name="add-code-to-the-form"></a>Agregar código al formulario
 
-1. En la ventana **Form1.vb &#91;Diseño&#93;**, haga doble clic en el botón **Click this** para abrir la ventana **Form1.vb**.
+1. En la ventana **Form1.vb &#91;Diseño&#93;** , haga doble clic en el botón **Click this** para abrir la ventana **Form1.vb**.
 
       (También puede expandir **Form1.vb** en el **Explorador de soluciones** y luego hacer clic en **Form1**).
 
@@ -146,7 +146,7 @@ Ya hemos agregado un control de botón para crear una acción, así que ahora va
 
    Ocurrirán varias cosas. En el IDE de Visual Studio, se abrirá la ventana **Herramientas de diagnóstico** y, también, una ventana **Salida**. Pero fuera del IDE se abre un cuadro de diálogo **Form1**. En él verá el botón **Click this** y el texto **Label1**.
 
-2. Haga clic en el botón **Click this** en el cuadro de diálogo **Form1**. Observe cómo el texto **Label1** cambia a **Hello World!**.
+2. Haga clic en el botón **Click this** en el cuadro de diálogo **Form1**. Observe cómo el texto **Label1** cambia a **Hello World!** .
 
     ![Cuadro de diálogo Form1 con el texto Label1 ](../ide/media/vb-form1-dialog-hello-world.png)
 

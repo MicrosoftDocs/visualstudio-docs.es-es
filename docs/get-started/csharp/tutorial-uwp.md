@@ -14,12 +14,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: a2a65534cda2571c36bb0c2caa16bf2f3394a804
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: dab237eeb99f4d4d67652dba583bf9851b6d6175
+ms.sourcegitcommit: 44e9b1d9230fcbbd081ee81be9d4be8a485d8502
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63435053"
+ms.lasthandoff: 08/30/2019
+ms.locfileid: "70180467"
 ---
 # <a name="tutorial-create-your-first-universal-windows-platform-application-in-visual-studio-with-xaml-and-c35"></a>Tutorial: Creación de la primera aplicación para la Plataforma universal de Windows en Visual Studio con XAML y C&#35;
 
@@ -29,7 +29,7 @@ En esta introducción al Entorno de desarrollo integrado (IDE) de Visual Studio,
 Si todavía no ha instalado Visual Studio, vaya a la página de [descargas de Visual Studio](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download) para instalarlo de forma gratuita.
 ::: moniker-end
 ::: moniker range="vs-2019"
-Si todavía no ha instalado Visual Studio, vaya a la página de [descargas de Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019) para instalarlo de forma gratuita.
+Si todavía no ha instalado Visual Studio, vaya a la página de [descargas de Visual Studio](https://visualstudio.microsoft.com/downloads) para instalarlo de forma gratuita.
 ::: moniker-end
 
 ## <a name="create-a-project"></a>Crear un proyecto
@@ -41,12 +41,12 @@ En primer lugar, cree un proyecto de la Plataforma universal de Windows. En el t
 
 1. En la barra de menús superior, elija **Archivo** > **Nuevo** > **Proyecto**.
 
-1. En el panel izquierdo del cuadro de diálogo **Nuevo proyecto**, expanda **Visual C#** y, a continuación, elija **Windows Universal**. En el panel central, elija **Aplicación vacía (Windows universal)**. Luego, asigne el nombre *HelloWorld* al proyecto y elija **Aceptar**.
+1. En el panel izquierdo del cuadro de diálogo **Nuevo proyecto**, expanda **Visual C#** y, a continuación, elija **Windows Universal**. En el panel central, elija **Aplicación vacía (Windows universal)** . Luego, asigne el nombre *HelloWorld* al proyecto y elija **Aceptar**.
 
    ![Plantilla de proyecto de Windows universal en el cuadro de diálogo Nuevo proyecto en el IDE de Visual Studio](media/new-project-csharp-uwp-helloworld.png)
 
    > [!NOTE]
-   > Si no ve la plantilla de proyecto **Aplicación vacía (Windows universal)**, haga clic en el vínculo **Abrir el instalador de Visual Studio** en el panel izquierdo del cuadro de diálogo **Nuevo proyecto**.<br><br>![Haga clic en el vínculo Abrir el instalador de Visual Studio del cuadro de diálogo Nuevo proyecto](../../ide/media/vb-open-visual-studio-installer-hello-world.png)<br><br>Se iniciará el Instalador de Visual Studio. Elija la carga de trabajo **Desarrollo de la Plataforma universal de Windows** y, después, elija **Modificar**.<br><br>![Carga de trabajo de desarrollo de la Plataforma universal de Windows en el instalador de Visual Studio](media/uwp-dev-workload.png)
+   > Si no ve la plantilla de proyecto **Aplicación vacía (Windows universal)** , haga clic en el vínculo **Abrir el instalador de Visual Studio** en el panel izquierdo del cuadro de diálogo **Nuevo proyecto**.<br><br>![Haga clic en el vínculo Abrir el instalador de Visual Studio del cuadro de diálogo Nuevo proyecto](../../ide/media/vb-open-visual-studio-installer-hello-world.png)<br><br>Se iniciará el Instalador de Visual Studio. Elija la carga de trabajo **Desarrollo de la Plataforma universal de Windows** y, después, elija **Modificar**.<br><br>![Carga de trabajo de desarrollo de la Plataforma universal de Windows en el instalador de Visual Studio](media/uwp-dev-workload.png)
 
 1. Acepte la **versión de destino** predeterminada y la configuración de la **versión mínima** en el cuadro de diálogo **Nuevo proyecto de la Plataforma universal de Windows**.
 
@@ -61,7 +61,7 @@ En primer lugar, cree un proyecto de la Plataforma universal de Windows. En el t
    ![Captura de pantalla de Crear un nuevo proyecto](media/vs-2019/uwp-create-new-project.png)
 
    > [!NOTE]
-   > Si no ve la plantilla de proyecto **Aplicación vacía (Windows universal)**, haga clic en el vínculo **Instalar más herramientas y características**.<br><br>![Clic en el vínculo Instalar más herramientas y características](media/vs-2019/uwp-not-finding.png)<br><br>Se iniciará el Instalador de Visual Studio. Elija la carga de trabajo **Desarrollo de la Plataforma universal de Windows** y, después, elija **Modificar**.<br><br>![Carga de trabajo de desarrollo de la Plataforma universal de Windows en el instalador de Visual Studio](media/uwp-dev-workload.png)
+   > Si no ve la plantilla de proyecto **Aplicación vacía (Windows universal)** , haga clic en el vínculo **Instalar más herramientas y características**.<br><br>![Clic en el vínculo Instalar más herramientas y características](media/vs-2019/uwp-not-finding.png)<br><br>Se iniciará el Instalador de Visual Studio. Elija la carga de trabajo **Desarrollo de la Plataforma universal de Windows** y, después, elija **Modificar**.<br><br>![Carga de trabajo de desarrollo de la Plataforma universal de Windows en el instalador de Visual Studio](media/uwp-dev-workload.png)
 
 1. Acepte la **versión de destino** predeterminada y la configuración de la **versión mínima** en el cuadro de diálogo **Nuevo proyecto de la Plataforma universal de Windows**.
 
