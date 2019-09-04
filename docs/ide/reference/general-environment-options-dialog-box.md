@@ -20,12 +20,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c4024209ac0c1b2766b67984710b8349c6d66d91
-ms.sourcegitcommit: ce1ab8a25c66a83e60eab80ed8e1596fe66dd85c
+ms.openlocfilehash: eb1dbbcc4adf8305aad119ac8a4cb223e0f89902
+ms.sourcegitcommit: 44e9b1d9230fcbbd081ee81be9d4be8a485d8502
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/29/2019
-ms.locfileid: "68605445"
+ms.lasthandoff: 08/30/2019
+ms.locfileid: "70180283"
 ---
 # <a name="options-dialog-box-environment--general"></a>Cuadro de diálogo Opciones: Entorno \> General
 
@@ -62,7 +62,7 @@ Especifica si Visual Studio establece el ajuste de forma automática en la exper
 ::: moniker range="vs-2017"
 
 > [!TIP]
-> Windows 10 tiene una opción que dice **Permitir que Windows intente corregir las aplicaciones para que no se vean borrosas**. Se recomienda **activar** dicha configuración si Visual Studio aparece borroso en el monitor. Considere la posibilidad de actualizar a [Visual Studio 2019](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019), que ha mejorado significativamente la claridad de presentación, porque se trata de una aplicación que reconoce los puntos por pulgada por monitor.
+> Windows 10 tiene una opción que dice **Permitir que Windows intente corregir las aplicaciones para que no se vean borrosas**. Se recomienda **activar** dicha configuración si Visual Studio aparece borroso en el monitor. Considere la posibilidad de actualizar a [Visual Studio 2019](https://visualstudio.microsoft.com/downloads), que ha mejorado significativamente la claridad de presentación, porque se trata de una aplicación que reconoce los puntos por pulgada por monitor.
 
 ::: moniker-end
 

@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: f0bd256f293cefc037a8950bdecd3615fad483f3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 3bfe4b1a172158740705e392c573de7911016583
+ms.sourcegitcommit: 44e9b1d9230fcbbd081ee81be9d4be8a485d8502
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62819578"
+ms.lasthandoff: 08/30/2019
+ms.locfileid: "70179869"
 ---
 # <a name="develop-apps-for-the-universal-windows-platform-uwp"></a>Desarrollar aplicaciones para la Plataforma universal de Windows (UWP)
 
@@ -52,7 +52,7 @@ Esta es la lista del software que necesita:
 
 - [Windows 10](http://windows.microsoft.com/windows/downloads). Visual Studio 2019 solo admite el desarrollo para UWP en Windows 10. Para obtener más información, vea [Destinatarios de la plataforma](/visualstudio/releases/2019/compatibility/) y [Requisitos del sistema](/visualstudio/releases/2019/system-requirements/) de Visual Studio.
 
-- [Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019). También necesitará la carga de trabajo opcional de desarrollo de la Plataforma universal de Windows.
+- [Visual Studio](https://visualstudio.microsoft.com/downloads). También necesitará la carga de trabajo opcional de desarrollo de la Plataforma universal de Windows.
 
      ![Carga de trabajo de UWP](media/uwp_workload.png)
 

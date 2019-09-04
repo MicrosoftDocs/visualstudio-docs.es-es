@@ -4,15 +4,14 @@ description: Utilizar un archivo de editorconfig para permitir estilos de codifi
 author: cobey
 ms.author: cobey
 ms.date: 05/06/2018
-ms.topic: article
 ms.technology: vs-ide-install
 ms.assetid: 26A0DE31-2FBF-4E1B-99FB-083111AA1680
-ms.openlocfilehash: a628f4635373dd9bd02eeefa01697fedaeb170c1
-ms.sourcegitcommit: 7fbfb2a1d43ce72545096c635df2b04496b0be71
+ms.openlocfilehash: 8115715950881168e282cd205ea2dd3e64d89f97
+ms.sourcegitcommit: cf8c0fef2b9690595e99ce3802586cdd55fd37c2
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/09/2019
-ms.locfileid: "67691582"
+ms.lasthandoff: 08/28/2019
+ms.locfileid: "70108293"
 ---
 # <a name="creating-and-editing-a-custom-editorconfig-file"></a>Crear y editar un archivo EditorConfig personalizado
 

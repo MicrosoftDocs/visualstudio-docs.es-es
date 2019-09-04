@@ -9,12 +9,12 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 11/11/2016
 ms.author: ghogen
-ms.openlocfilehash: f598ddd3175353103d478dca9828536346e247cd
-ms.sourcegitcommit: 13ab9a5ab039b070b9cd9251d0b83dd216477203
+ms.openlocfilehash: cd19c619eca4505eab4c332783a678bf5e7ba87a
+ms.sourcegitcommit: 44e9b1d9230fcbbd081ee81be9d4be8a485d8502
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66177269"
+ms.lasthandoff: 08/30/2019
+ms.locfileid: "70179794"
 ---
 # <a name="using-windows-powershell-scripts-to-publish-to-dev-and-test-environments"></a>Utilizar scripts de Windows PowerShell para la publicación en entornos de desarrollo y pruebas
 
@@ -24,7 +24,7 @@ Mediante estos scripts, puede aprovisionar versiones personalizadas (también co
 
 ## <a name="prerequisites"></a>Requisitos previos
 
-* Visual Studio 2015 o posterior con la **carga de trabajo de Azure** instalada o Visual Studio 2013 y Azure SDK 2.3 o posterior. Vea las [descargas de Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019). (No necesita Azure SDK para generar los scripts para proyectos web. Esta característica es para proyectos web, no para los roles web de Cloud Services).
+* Visual Studio 2015 o posterior con la **carga de trabajo de Azure** instalada o Visual Studio 2013 y Azure SDK 2.3 o posterior. Vea las [descargas de Visual Studio](https://visualstudio.microsoft.com/downloads). (No necesita Azure SDK para generar los scripts para proyectos web. Esta característica es para proyectos web, no para los roles web de Cloud Services).
 * Azure PowerShell 0.7.4 o posterior. Consulte [Instalación y configuración de Azure PowerShell](/powershell/azure/overview).
 * [Windows PowerShell 3.0](http://go.microsoft.com/?linkid=9811175) o posterior.
 

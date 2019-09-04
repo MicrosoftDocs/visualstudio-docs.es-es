@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c4e461fd69e048e406fbe062ff297da9baab3696
-ms.sourcegitcommit: 8562a337cc9f674c756a4a0b2c7e288ebd61b51e
+ms.openlocfilehash: 755554b73fc80df151550f36e1846e07db70bcd8
+ms.sourcegitcommit: fe212f8960d7882a1b0fdae9e22f008996aacf3c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/19/2019
-ms.locfileid: "68345753"
+ms.lasthandoff: 09/03/2019
+ms.locfileid: "70222745"
 ---
 # <a name="use-regular-expressions-in-visual-studio"></a>Usar expresiones regulares en Visual Studio
 
@@ -48,7 +48,7 @@ La siguiente tabla contiene algunos ejemplos de caracteres de expresión regular
 |Capturar y numerar implícitamente la expresión contenida entre paréntesis|()|`([a-z])X\1` coincide con "aXa" y "bXb", pero no con "aXb". "\1" hace referencia al primer grupo de expresión "[a-z]". Para obtener más información, vea [Grupos de captura y patrones de reemplazo](#capture-groups-and-replacement-patterns). |
 |Invalidar una coincidencia|(?!abc)|`real(?!ity)` coincide con "real" en "realty" y "really", pero no con "reality". También encuentra el segundo “real” (pero no el primero) en “realityreal”.|
 |Coincidencia con cualquier carácter que no está en un conjunto determinado de caracteres. Para obtener más información, consulte [Grupo de caracteres negativos](/dotnet/standard/base-types/character-classes-in-regular-expressions#negative-character-group-).|[^abc]|`be[^n-t]` coincide con "bef" en "before", "beh" en "behind" y "bel" en "below", pero no con "beneath".|
-|Coincidencia con la expresión situada antes o después del símbolo.|&#124;|`(sponge\|mud) bath` coincide con "sponge bath" y "mud bath".|
+|Coincidencia con la expresión situada antes o después del símbolo.|&#124;|`(sponge|mud) bath` coincide con "sponge bath" y "mud bath".|
 |[Escape del carácter](/dotnet/standard/base-types/character-escapes-in-regular-expressions) que sigue a la barra diagonal inversa.| \\ |`\^` coincide con el carácter ^.|
 |Especificación del número de apariciones del carácter o grupo precedente. Para obtener más información, consulte el artículo de [coincidencia exacta n veces](/dotnet/standard/base-types/quantifiers-in-regular-expressions#match-exactly-n-times-n).|{n}, donde "n" es el número de apariciones|`x(ab){2}x` coincide con "xababx" y `x(ab){2,3}x` coincide con "xababx" y "xabababx", pero no con "xababababx".|
 |[Coincidencia con el texto en una clase de caracteres Unicode](/dotnet/standard/base-types/character-classes-in-regular-expressions#unicode-category-or-unicode-block-p). Para obtener más información sobre las clases de caracteres Unicode, consulte el artículo de [propiedades de caracteres Unicode estándar 5.2](http://www.unicode.org/versions/Unicode5.2.0/ch04.pdf).|\p{X}, donde "X" es el número de Unicode.|`\p{Lu}` coincide con "T" y "D" en "Thomas Doe".|

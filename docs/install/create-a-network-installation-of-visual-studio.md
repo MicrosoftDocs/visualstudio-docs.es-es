@@ -15,12 +15,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 766e3a35c6f9b775373fb7a096000177cfee131d
-ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
+ms.openlocfilehash: 1d18d3a3de423cc63569911bbe49477b5e6f5f26
+ms.sourcegitcommit: 44e9b1d9230fcbbd081ee81be9d4be8a485d8502
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68870777"
+ms.lasthandoff: 08/30/2019
+ms.locfileid: "70180296"
 ---
 # <a name="create-a-network-installation-of-visual-studio"></a>Creación de una instalación de red de Visual Studio
 
@@ -249,7 +249,7 @@ A medida que estén disponibles actualizaciones de productos, puede que quiera [
 ::: moniker range="vs-2019"
 
 > [!NOTE]
-> Los programas previos de Visual Studio que están disponibles en [visualstudio.microsoft.com](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019) permiten descargar e instalar la versión de Visual Studio más reciente disponible cada vez que se ejecutan.
+> Los programas previos de Visual Studio que están disponibles en [visualstudio.microsoft.com](https://visualstudio.microsoft.com/downloads) permiten descargar e instalar la versión de Visual Studio más reciente disponible cada vez que se ejecutan.
 >
 > Por tanto, si descarga hoy un *programa previo* de Visual Studio y lo ejecuta de aquí a seis meses, se instalará la versión de Visual Studio que esté disponible en el momento que ejecute el programa previo.
 >
