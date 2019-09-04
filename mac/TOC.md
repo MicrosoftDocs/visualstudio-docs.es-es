@@ -57,7 +57,6 @@
 
 # Control de versiones
 ## [Información general](version-control.md)
-## [Control de versiones TF](tf-version-control.md)
 ## [Configurar un repositorio GIT](set-up-git-repository.md)
 ## [Trabajar con GIT](working-with-git.md)
 ## [Configurar un repositorio de Subversion](set-up-subversion-repository.md)
@@ -100,6 +99,7 @@
 ## [Registros y excepciones](troubleshooting.md)
 ## [Programa para la mejora de la experiencia del usuario de Visual Studio](visual-studio-experience-improvement-program.md)
 ## [Notificar un problema](report-a-problem.md)
+## [Solución de problemas: ¿Visual Studio para Mac es compatible con Control de versiones de Team Foundation?](tf-version-control.md)
 ## [Solución de problemas: ¿Por qué no puedo ver todas las plantillas?](troubleshooting-no-templates.md)
 ## [Solución de problemas: Se producen errores en el actualizador al recuperar información](updater-troubleshooting.md)
 
