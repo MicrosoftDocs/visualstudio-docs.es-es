@@ -7,12 +7,12 @@ ms.topic: landing-page
 ms.author: mikejo
 author: mikejo5000
 manager: jillfra
-ms.openlocfilehash: de80c61a9cd264f0b538e8efa5ebab6dc34b1ced
-ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.openlocfilehash: fdeac0d553c8fce13b23cd1d926b1b7c472d1da4
+ms.sourcegitcommit: fe212f8960d7882a1b0fdae9e22f008996aacf3c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "66263186"
+ms.lasthandoff: 09/03/2019
+ms.locfileid: "70222590"
 ---
 # <a name="deployment-in-visual-studio"></a>Implementación en Visual Studio
 
@@ -107,6 +107,24 @@ Visual Studio proporciona diferentes herramientas para ayudarle a implementar su
                     </div>
                     <div class="cardText">
                         <h3>Implementación en App Service en Linux</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </a>
+    </li>
+    <li>
+        <a href="/nuget/quickstart/create-and-publish-a-package-using-visual-studio">
+        <div class="cardSize">
+            <div class="cardPadding">
+                <div class="card">
+                    <div class="cardImageOuter">
+                        <div class="cardImage">
+                            <img src="https://docs.microsoft.com/media/logos/logo_nuget.svg" alt="Publish NuGet packages">
+                        </div>
+                    </div>
+                    <div class="cardText">
+                        <h3>Creación y publicación de paquetes NuGet (.NET)</h3>
                     </div>
                 </div>
             </div>

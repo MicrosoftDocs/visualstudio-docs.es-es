@@ -8,12 +8,12 @@ metadata:
   description: Aprenda a usar Visual Studio para desarrollar aplicaciones, servicios y herramientas en el idioma de su elección para cualquier dispositivo y plataforma.
   ms.topic: hub-page
   monikerRange: '>=vs-2017'
-  ms.openlocfilehash: b24bc5b3e1427a6f3675398e05a639b45c376571
-  ms.sourcegitcommit: d2b234e0a4a875c3cba09321cdf246842670d872
+  ms.openlocfilehash: 22c6d731d3c7bfaefb6ee0d89d7bae088d86c035
+  ms.sourcegitcommit: fe212f8960d7882a1b0fdae9e22f008996aacf3c
   ms.translationtype: HT
   ms.contentlocale: es-ES
-  ms.lasthandoff: 07/01/2019
-  ms.locfileid: "67493710"
+  ms.lasthandoff: 09/03/2019
+  ms.locfileid: "70222662"
 highlightedContent:
   items:
   - title: Configuración e instalación
@@ -135,7 +135,7 @@ additionalContent:
       summary: Ejecute pruebas en sus proyectos.
       url: test/improve-code-quality.md
     - title: Implementar
-      summary: Comparta sus aplicaciones mediante Web Deploy, InstallShield, Integración continua y más.
+      summary: Comparta sus aplicaciones y su código mediante Web Deploy, InstallShield, NuGet, Integración continua y más medios.
       url: deployment/index.md
     - title: Control de versiones
       summary: Comparta código mediante tecnologías de control de versiones como Git y TFVC.
@@ -192,7 +192,7 @@ additionalContent:
         url: cross-platform/visual-studio-tools-for-unity.md
       - text: Desarrollo móvil con JavaScript
         url: /visualstudio/cross-platform/tools-for-cordova/?view=toolsforcordova-2017
-        note: (Visual Studio 2017 and 2015 only)
+        note: (Solo Visual Studio 2017 y 2015)
       - text: Desarrollo móvil con C++
         url: /visualstudio/cross-platform/
       - text: Desarrollo de juegos con C++
