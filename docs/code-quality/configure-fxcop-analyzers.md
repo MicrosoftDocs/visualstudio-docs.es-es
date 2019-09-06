@@ -9,23 +9,23 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 0152ae9f76ea1318f717c41a70d3d46351c9021a
-ms.sourcegitcommit: 2bbcba305fd0f8800fd3d9aa16f7647ee27f3a4b
+ms.openlocfilehash: 68c175a55c9e60e870a5466a831aaae50d62dced
+ms.sourcegitcommit: 9c07ae6fb18204ea080c8248994a683fa12e5c82
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/17/2019
-ms.locfileid: "68300608"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "70293448"
 ---
 # <a name="configure-fxcop-analyzers"></a>Configurar analizadores FxCop
 
-Los [analizadores de FxCop](install-fxcop-analyzers.md) se componen de las reglas de "FxCop" más importantes del análisis de código estático, convertidas en analizadores de Roslyn. Puede configurar los analizadores de código FxCop de dos maneras:
+Los [analizadores de FxCop](install-fxcop-analyzers.md) se componen de las reglas de "FxCop" más importantes del análisis heredado, que se convierten en analizadores de código basados en .net Compiler Platform. Puede configurar los analizadores de código FxCop de dos maneras:
 
 - Con un [conjunto de reglas](#fxcop-analyzer-rule-sets), que le permite habilitar o deshabilitar la regla y establecer la gravedad de las infracciones de reglas individuales.
 
-- A partir de la versión 2.6.3 del paquete de NuGet [Microsoft. CodeAnalysis. FxCopAnalyzers](https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers) , a través de un [archivo. editorconfig](#editorconfig-file). Las [Opciones](fxcop-analyzer-options.md) configurables permiten restringir qué partes del código base se van a analizar.
+- A partir de la versión 2.6.3 del paquete de NuGet [Microsoft. CodeAnalysis. FxCopAnalyzers](https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers) , a través de un [archivo. editorconfig](#editorconfig-file). Las [Opciones configurables](fxcop-analyzer-options.md) permiten restringir qué partes del código base se van a analizar.
 
 > [!TIP]
-> Para obtener información sobre las diferencias entre el análisis de código estático de FxCop y los analizadores de FxCop, consulte [p + f sobre analizadores](fxcop-analyzers-faq.md)de FxCop.
+> Para obtener información sobre las diferencias entre el análisis heredado y los analizadores de FxCop, consulte [p + f sobre analizadores de FxCop](fxcop-analyzers-faq.md).
 
 ## <a name="fxcop-analyzer-rule-sets"></a>Conjuntos de reglas del analizador de FxCop
 
@@ -42,11 +42,14 @@ El paquete de NuGet del analizador de FxCop incluye conjuntos de reglas predefin
 - seguridad
 - uso
 
-Para obtener más información, vea [conjuntos de reglas para los analizadores de Roslyn](analyzer-rule-sets.md).
+Para obtener más información, vea [conjuntos de reglas para los analizadores de código](analyzer-rule-sets.md).
 
 ## <a name="editorconfig-file"></a>Archivo EditorConfig
 
-Puede configurar reglas del analizador agregando pares clave-valor a un archivo [. editorconfig](https://editorconfig.org) . Un archivo de configuración puede ser [específico de un proyecto](#per-project-configuration) o puede compartirse entre dos o más proyectos. [](#shared-configuration)
+Puede configurar las reglas del analizador de FxCop agregando pares clave-valor a un archivo [. editorconfig](https://editorconfig.org) . Un archivo de configuración puede ser [específico de un proyecto](#per-project-configuration) o puede [compartirse](#shared-configuration) entre dos o más proyectos.
+
+> [!NOTE]
+> No se pueden configurar reglas FxCop heredadas mediante un archivo. editorconfig.
 
 ### <a name="per-project-configuration"></a>Configuración por proyecto
 
@@ -61,7 +64,7 @@ Actualmente no hay compatibilidad jerárquica con los archivos. editorconfig "co
 
 ### <a name="shared-configuration"></a>Configuración compartida
 
-Puede compartir un archivo. editorconfig para la configuración del analizador entre dos o más proyectos, pero requiere algunos pasos adicionales.
+Puede compartir un archivo. editorconfig para la configuración del analizador de FxCop entre dos o más proyectos, pero requiere algunos pasos adicionales.
 
 1. Guarde el archivo *. editorconfig* en una ubicación común.
 
@@ -90,7 +93,7 @@ Puede compartir un archivo. editorconfig para la configuración del analizador e
 4. Vuelva a cargar el proyecto.
 
 > [!NOTE]
-> No se pueden configurar reglas FxCop heredadas (análisis de código estático FxCop) mediante un archivo. editorconfig.
+> La ubicación compartida arbitraria del archivo EditorConfig que se describe aquí solo se aplica a la configuración de analizadores de FxCop. Para otras opciones, como la sangría y el estilo de código, el archivo EditorConfig siempre debe colocarse en la carpeta del proyecto o en una carpeta principal.
 
 ## <a name="option-scopes"></a>Ámbitos de opción
 
