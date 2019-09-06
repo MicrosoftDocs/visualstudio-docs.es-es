@@ -1,18 +1,18 @@
 ---
 title: Suscripciones de Visual Studio
-Author: evanwindom
-Ms.author: tglee
-Manager: lank
+author: evanwindom
+ms.author: lank
+manager: lank
 layout: LandingPage
-Ms.date: 06/25/2018
-Ms.topic: landing-page
-Description: Bienvenido a las suscripciones de Visual Studio
-ms.openlocfilehash: 25337098dded67d28df1cea03a47ec8c28646763
-ms.sourcegitcommit: 57866dd72fd0e15ce61128df70729b427a2d02eb
+ms.date: 06/25/2018
+ms.topic: landing-page
+description: Bienvenido a las suscripciones de Visual Studio
+ms.openlocfilehash: 9c2981ddf109a253f55e4c72dd4e88ceb2c820ff
+ms.sourcegitcommit: 9f11537a721e69879a612979a1aca98f40bb4d4d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "68315219"
+ms.lasthandoff: 09/05/2019
+ms.locfileid: "70383703"
 ---
 # <a name="visual-studio-subscriptions"></a>Suscripciones de Visual Studio
 
