@@ -1,52 +1,51 @@
 ---
 title: Control de versiones de Team Foundation (TFVC)
-description: Conectarse desde Visual Studio para Mac a Team Foundation Server/Azure DevOps Services con Control de versiones de Team Foundation (TFVC).
+description: Guía de solución de problemas sobre TFVC y macOS.
 author: jmatthiesen
 ms.author: jomatthi
-ms.date: 06/25/2019
-ms.topic: article
+ms.date: 09/02/2019
 ms.technology: vs-ide-general
 ms.assetid: 52D3D26A-4D01-4FD1-AAA1-AE7D7BD39746
-ms.openlocfilehash: 378d1eaf1d57818a976f41a81c1098d75bb12e48
-ms.sourcegitcommit: 7fbfb2a1d43ce72545096c635df2b04496b0be71
+ms.openlocfilehash: fc300ccd37ade6418ef093306441afe4d10080e2
+ms.sourcegitcommit: fe212f8960d7882a1b0fdae9e22f008996aacf3c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/09/2019
-ms.locfileid: "67691954"
+ms.lasthandoff: 09/03/2019
+ms.locfileid: "70222756"
 ---
-# <a name="connecting-to-team-foundation-version-control"></a>Conectarse a Control de versiones de Team Foundation
+# <a name="does-visual-studio-for-mac-support-team-foundation-version-control"></a>¿Es compatible Visual Studio para Mac con Control de versiones de Team Foundation?
 
-> [!NOTE]
-> Para una mejor experiencia de control de versiones en macOS, se recomienda usar Git en lugar del Control de versiones de Team Foundation (TFVC). Git es compatible con Visual Studio para Mac y es la opción predeterminada para los repositorios hospedados en Team Foundation Server (TFS)/Azure DevOps. Para más información sobre cómo usar Git con TFS/Azure DevOps, vea el artículo [Configurar un repositorio Git](/visualstudio/mac/set-up-git-repository).
-> 
-> Si anteriormente utilizaba la versión preliminar de la extensión TFVC para Visual Studio para Mac, ya no se admite en Visual Studio 2019 para Mac.
+> [!CAUTION]
+> La extensión TFVC en versión preliminar para Visual Studio para Mac ya no se admite en Visual Studio 2019 para Mac.
 
-Azure Repos ofrece dos modelos de control de versiones: [Git](/azure/devops/repos/git/?view=azure-devops), un sistema de control de versiones distribuido, y el [Control de versiones de Team Foundation](/azure/devops/repos/tfvc/index?view=azure-devops) (TFVC), un sistema de control de versiones centralizado.
 
-Visual Studio para Mac proporciona compatibilidad total con repositorios Git, pero requiere algunas soluciones alternativas para trabajar con TFVC. Si usa TFVC para el control de versiones hoy en día, estas son algunas soluciones que puede usar para acceder al código fuente hospedado en TFVC:
+## <a name="alternative-version-control-options-in-visual-studio-for-mac"></a>Opciones de control de versiones alternativas en Visual Studio para Mac
 
-* [Uso de Visual Studio Code y de la extensión de Azure Repos para una UI gráfica](#use-visual-studio-code-and-the-azure-repos-extension)
-* [Conexión al repositorio con el cliente de la línea de comandos de Team Explorer Everywhere (TEE-CLC)](#connecting-using-the-team-explorer-everywhere-command-line-client)
+Para una mejor experiencia de control de versiones en macOS, se recomienda usar **Git** en lugar de Control de versiones de Team Foundation (TFVC). 
 
-El resto de la información de este artículo lo guiará en las opciones indicadas anteriormente.
+Git es compatible con Visual Studio para Mac y es la opción predeterminada para los repositorios hospedados en Team Foundation Server (TFS)/Azure DevOps. Para más información sobre cómo usar Git con TFS/Azure DevOps, consulte la guía [Configurar un repositorio Git](/visualstudio/mac/set-up-git-repository).
 
-## <a name="requirements"></a>Requisitos
+## <a name="unsupported-workarounds-for-tfvc"></a>Soluciones alternativas no admitidas para TFVC
 
-* Visual Studio Community, Professional o Enterprise para Mac, versión 7.8 y posterior.
-* Azure DevOps Services, Team Foundation Server 2013 y versiones posteriores o Azure DevOps Server 2018 y versiones posteriores.
-* Un proyecto en Azure DevOps Services o Team Foundation Server/Azure DevOps Server, configurado para que use el Control de versiones de Team Foundation.
+Aunque Visual Studio para Mac no es compatible oficialmente con TFVC, en el resto de esta guía se proporcionan algunas soluciones alternativas para trabajar con TFVC en macOS. Si usa TFVC para el control de versiones hoy en día, estas son algunas soluciones que puede usar para acceder al código fuente hospedado en TFVC:
 
-## <a name="use-visual-studio-code-and-the-azure-repos-extension"></a>Uso de Visual Studio Code y de la extensión de Azure Repos
+* Opción 1. [Uso de Visual Studio Code y la extensión de Azure Repos para una UI gráfica](#use-visual-studio-code-and-the-azure-repos-extension)
+* Opción 2. [Conexión al repositorio con el cliente de la línea de comandos de Team Explorer Everywhere (TEE-CLC)](#connecting-using-the-team-explorer-everywhere-command-line-client)
+
+### Opción 1. <a id="use-visual-studio-code-and-the-azure-repos-extension"></a> Uso de Visual Studio Code y la extensión Azure Repos
 
 Si le gusta trabajar con una interfaz gráfica para administrar los archivos en el control de versiones, la extensión de Azure Repos para Visual Studio Code proporciona una solución compatible de Microsoft. Para comenzar, descargue [Visual Studio Code](https://code.visualstudio.com) y, a continuación, obtenga información sobre cómo [configurar la extensión de Azure Repos](https://marketplace.visualstudio.com/items?itemName=ms-vsts.team).
 
-## <a name="connecting-using-the-team-explorer-everywhere-command-line-client"></a>Conexión con el cliente de la línea de comandos de Team Explorer Everywhere
+### Opción 2. <a id="connecting-using-the-team-explorer-everywhere-command-line-client"></a> Conexión con el cliente de la línea de comandos de Team Explorer Everywhere
+
+> [!IMPORTANT]
+> Según el archivo Léame de Team Explorer Everywhere, este proyecto [ya no se mantiene](https://github.com/microsoft/team-explorer-everywhere).
 
 Si se siente cómodo con el uso del Terminal de macOS, entonces el cliente de la línea de comandos de Team Explorer Everywhere (TEE-CLC) ofrece un método compatible de conexión al origen en TFVC.
 
 Puede completar los pasos siguientes para configurar la conexión con TFVC y confirmar los cambios.
 
-### <a name="setting-up-the-tee-clc"></a>Configuración de la TEE-CLC
+#### <a name="setting-up-the-tee-clc"></a>Configuración de la TEE-CLC
 
 Hay dos formas de instalar la TEE-CLC.
 
@@ -70,7 +69,7 @@ Una vez instalada la TEE-CLC, puede ejecutar el comando `tf eula` para ver y ace
 
 Por último, para autenticarse en su entorno de TFS/Azure DevOps, deberá crear un token de acceso personal en el servidor. Obtenga más información sobre la [autenticación con tokens de acceso personal](https://docs.microsoft.com/azure/devops/integrate/get-started/authentication/pats?view=azure-devops). Al crear un token de acceso personal para usarlo con TFVC, asegúrese de proporcionar acceso total al configurar el token.
 
-### <a name="using-the-tee-clc-to-connect-to-your-repo"></a>Uso de la TEE-CLC para conectarse a su repositorio
+#### <a name="using-the-tee-clc-to-connect-to-your-repo"></a>Uso de la TEE-CLC para conectarse a su repositorio
 
 Para conectarse a su código fuente, primero debe crear un área de trabajo mediante el comando `tf workspace`. Por ejemplo, los siguientes comandos establecen conexión con una organización de Azure DevOps Services denominada "MyOrganization": 
 
@@ -93,7 +92,7 @@ Por último, use el siguiente comando para obtener los archivos de origen del se
 tf get
 ```
 
-### <a name="committing-changes-using-the-tee-clc"></a>Confirmación de los cambios mediante la TEE-CLC
+#### <a name="committing-changes-using-the-tee-clc"></a>Confirmación de los cambios mediante la TEE-CLC
 
 Una vez realizados los cambios de los archivos en Visual Studio para Mac, puede cambiar al Terminal para registrar las modificaciones. El comando `tf add` se usa para agregar archivos a la lista de los cambios pendientes que se van a registrar y el comando `tf checkin` realiza el registro real en el servidor. El comando `checkin` incluye parámetros para agregar un comentario o asociar un elemento de trabajo relacionado. En el siguiente fragmento de código, se agregan al registro todos los archivos en una carpeta `WebApp.Services` de forma recursiva. A continuación, el código se registra con un comentario y se asocia con un elemento de trabajo con el identificador "42".
 
@@ -107,6 +106,6 @@ Para obtener más información sobre los comandos mencionados aquí u otros, pue
 
 `tf help`
 
-### <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Vea también
 
 - [Develop and share your code in TFVC using Visual Studio (on Windows)](/azure/devops/repos/tfvc/share-your-code-in-tfvc-vs) (Desarrollar y compartir el código en TFVC con Visual Studio (en Windows))

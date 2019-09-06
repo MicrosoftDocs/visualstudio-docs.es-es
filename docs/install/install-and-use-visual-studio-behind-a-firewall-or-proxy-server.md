@@ -17,20 +17,20 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 38a243c965199e75622ceff43e742424d3e4977a
-ms.sourcegitcommit: 92a04c57ac0a49f304fa2ea5043436f30068c3cd
+ms.openlocfilehash: e102636793c306a4e8141294ad2573b57f03e889
+ms.sourcegitcommit: 44e9b1d9230fcbbd081ee81be9d4be8a485d8502
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/21/2019
-ms.locfileid: "65976210"
+ms.lasthandoff: 08/30/2019
+ms.locfileid: "70180003"
 ---
 # <a name="install-and-use-visual-studio-and-azure-services-behind-a-firewall-or-proxy-server"></a>Instalación y uso de Visual Studio y de servicios de Azure detrás de un firewall o servidor proxy
 
 Si usted o la organización usa medidas de seguridad como un firewall o un servidor proxy, hay direcciones URL de dominio que quizá quiera agregar a una "lista de permitidas", así como puertos y protocolos que quiera abrir para tener la mejor experiencia posible a la hora de instalar y usar Visual Studio y los servicios de Azure.
 
-* **[Instalación de Visual Studio](#install-visual-studio)**: en estas tablas se incluyen las direcciones URL de dominio que se van a agregar a una lista de permitidas para que tenga acceso a todos los componentes y las cargas de trabajo que quiera.
+* **[Instalación de Visual Studio](#install-visual-studio)** : en estas tablas se incluyen las direcciones URL de dominio que se van a agregar a una lista de permitidas para que tenga acceso a todos los componentes y las cargas de trabajo que quiera.
 
-* **[Uso de Visual Studio y de servicios de Azure](#use-visual-studio-and-azure-services)**: en esta tabla se incluyen las direcciones URL de dominio que se van a agregar a una lista de permitidas, así como los puertos y protocolos que se van a abrir para que tenga acceso a todas las características y los servicios que quiera.
+* **[Uso de Visual Studio y de servicios de Azure](#use-visual-studio-and-azure-services)** : en esta tabla se incluyen las direcciones URL de dominio que se van a agregar a una lista de permitidas, así como los puertos y protocolos que se van a abrir para que tenga acceso a todas las características y los servicios que quiera.
 
 > [!NOTE]
 > Este artículo se ha escrito para Visual Studio en Windows, pero alguna información también se aplica a la [Instalación de Visual Studio para Mac](/visualstudio/mac/install-behind-a-firewall-or-proxy-server) detrás de un servidor proxy o firewall.
@@ -122,7 +122,7 @@ Para asegurarse de que tiene acceso a todo lo que necesita cuando usa Visual Stu
 | Azure Stream Analytics <br><br>HDInsight | Management.azure.com | https | 443 | Se utiliza para ver, enviar, ejecutar y administrar trabajos de ASA. <br><br> Se utiliza para examinar clústeres de HDI y para enviar, diagnosticar y depurar trabajos de HDI. |
 | Azure Data Lake | &#42;.azuredatalakestore.net <br>&#42;.azuredatalakeanalytics.net | https | 443 | Se utiliza para compilar, enviar, ver, diagnosticar y depurar trabajos; también para examinar archivos ADLS, y para cargar y descargar archivos. |
 | Servicio de empaquetado | [cuenta].visualstudio.com <br/> [cuenta].\*.visualstudio.com <br/> \*.blob.core.windows.net <br/> registry.npmjs.org </br> nodejs.org <br/> dist.nuget.org <br/> nuget.org | https | 443 | \*.npmjs.org, \*.nuget.org y \*.nodejs.org solo son necesarios para determinados escenarios de tareas de compilación (por ejemplo: Instalador de la herramienta de NuGet, instalador de la herramienta Nodo) o si piensa usar canales de subida públicos con las fuentes. Los otros tres dominios son necesarios para la funcionalidad principal del servicio de empaquetado. |
-| Azure DevOps Services | \*.vsassets.io <br/> static2.sharepointonline.com | | | Usado para conectar con Azure DevOps Services |
+| Azure DevOps Services | \*.vsassets.io <br/> static2.sharepointonline.com <br/> dev.azure.com | | | Usado para conectar con Azure DevOps Services |
 | | | | | |
 
 ## <a name="troubleshoot-network-related-errors"></a>Solución de problemas de errores relacionados con la red

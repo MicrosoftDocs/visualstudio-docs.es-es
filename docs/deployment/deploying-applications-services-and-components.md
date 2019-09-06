@@ -23,12 +23,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f494674acdf8b272029ad02a762897b379212ae4
-ms.sourcegitcommit: 9cfd3ef6c65f671a26322320818212a1ed5955fe
+ms.openlocfilehash: cf78e17d4d804c94392da045a90c98869319d185
+ms.sourcegitcommit: fe212f8960d7882a1b0fdae9e22f008996aacf3c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/26/2019
-ms.locfileid: "68533352"
+ms.lasthandoff: 09/03/2019
+ms.locfileid: "70222613"
 ---
 # <a name="first-look-at-deployment-in-visual-studio"></a>Primer vistazo a la implementación en Visual Studio
 
@@ -46,7 +46,7 @@ La implementación en una carpeta local se suele usar para las pruebas, o para i
 
 - **Escritorio de Windows**: puede publicar una aplicación de escritorio de Windows en una carpeta mediante la implementación de ClickOnce. A continuación, los usuarios podrán instalar la aplicación con un solo clic. Para más información, vea [Implementación de una aplicación de escritorio con ClickOnce](how-to-publish-a-clickonce-application-using-the-publish-wizard.md) (C# y Visual Basic). Para C++ y CLR, vea [Implementación de ClickOnce para aplicaciones de Visual C++](/cpp/windows/clickonce-deployment-for-visual-cpp-applications), o bien, para C y C ++, vea [Implementación de una aplicación de Visual C++ mediante un proyecto de instalación](/cpp/windows/walkthrough-deploying-a-visual-cpp-application-by-using-a-setup-project).
 
-## <a name="publish-to-azure"></a>Publicación en Azure
+## <a name="publish-to-azure"></a>Publicar en Azure
 
 - **ASP.NET**, **ASP.NET Core**, **Python** y **Node.js**: Publique en Azure App Service o Azure App Service para Linux (con contenedores) mediante uno de los métodos siguientes.
 
@@ -97,6 +97,13 @@ Desde Visual Studio, puede crear paquetes de aplicaciones para su implementació
 
     ![Puente de dispositivo de escritorio](../deployment/media/feature-tour-desktop-bridge.png)
 
+## <a name="deploy-net-packages-to-nugetorg"></a>Implementación de paquetes .NET en NuGet.org
+
+Para implementar código agrupado en "paquetes" que contengan código compilado (como archivos DLL) junto con otro contenido necesario en los proyectos que consumen estos paquetes, puede usar Visual Studio para crear el paquete NuGet y una herramienta de la CLI para emitir el comando de implementación final.
+
+- [Creación y publicación de un paquete .NET Standard](/nuget/quickstart/create-and-publish-a-package-using-visual-studio)
+- [Creación y publicación de un paquete de .NET Framework](/nuget/quickstart/create-and-publish-a-package-using-visual-studio-net-framework)
+
 ## <a name="deploy-to-a-device-uwp"></a>Implementar en un dispositivo (UWP)
 
 Si va a implementar una aplicación de UWP para probar en un dispositivo, vea [Run UWP apps on a remote machine in Visual Studio](../debugger/run-windows-store-apps-on-a-remote-machine.md) (Ejecutar aplicaciones de UWP en un equipo remoto en Visual Studio).
@@ -137,7 +144,7 @@ Puede usar Azure Pipelines para habilitar la implementación continua de la apli
 
 ## <a name="deployment-for-other-app-types"></a>Implementación de otros tipos de aplicaciones
 
-| Tipo de aplicación | Escenario de implementación | Vínculo |
+| Tipo de aplicación | Escenario de implementación | Link |
 | --- | --- | --- |
 | **Aplicación de Office** | Puede publicar un complemento de Office desde Visual Studio. | [Implementar y publicar un complemento de Office](https://dev.office.com/docs/add-ins/publish/publish) |
 | **Servicio OData o WCF** | Otras aplicaciones pueden usar los servicios RIA de WCF que se implementen en un servidor web. | [Desarrollo e implementación de WCF Data Services](/dotnet/framework/data/wcf/developing-and-deploying-wcf-data-services) |
