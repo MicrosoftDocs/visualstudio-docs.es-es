@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e35641371ebac33c7a89426290927b6045bc4e3e
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 8db5921b7f4ce4722389ca10765f079db10bf04a
+ms.sourcegitcommit: fe212f8960d7882a1b0fdae9e22f008996aacf3c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68924078"
+ms.lasthandoff: 09/03/2019
+ms.locfileid: "70222687"
 ---
 # <a name="code-snippets-schema-reference"></a>Referencia de esquemas de fragmentos de código
 
@@ -121,7 +121,7 @@ Hay tres atributos disponibles para el elemento Code:
    |`SQL`|Identifica un fragmento de código SQL.|
    |`HTML`|Identifica un fragmento de código HTML.|
 
-- **Kind**: atributo _opcional_ que especifica el tipo de código que contiene el fragmento de código y la ubicación en la que debe insertarse un fragmento de código para que se compile. El valor puede ser uno de los siguientes:
+- **Kind**: atributo _opcional_ que especifica el tipo de código que contiene el fragmento de código. El valor puede ser uno de los siguientes:
 
    |Valor|DESCRIPCIÓN|
    |-----|-----------|

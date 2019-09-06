@@ -116,7 +116,7 @@ A continuación, descargue el archivo de programa previo de Visual Studio. Para 
 
 ::: moniker-end
 
-## <a name="step-3---install-the-visual-studio-installer"></a>Paso 3: Desinstalar el Instalador de Visual Studio
+## <a name="step-3---install-the-visual-studio-installer"></a>Paso 3: Instalar el Instalador de Visual Studio
 
 Ejecute el archivo de programa previo para instalar el Instalador de Visual Studio. Este nuevo instalador ligero incluye todo lo necesario para instalar y personalizar Visual Studio.
 
