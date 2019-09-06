@@ -5,19 +5,19 @@ description: Una lista de las versiones de lanzamiento y los números de compila
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.date: 08/20/2019
+ms.date: 09/04/2019
 ms.topic: reference
 ms.custom: seodec18
 ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: d9d67ce7365a60bd744e0237d95b41f9dea2c641
-ms.sourcegitcommit: 673b9364fc9a96b027662dcb4cf5d61cab60ef11
+ms.openlocfilehash: e498e5667a7467c1621b10549cb1f67e6583a05b
+ms.sourcegitcommit: 9f11537a721e69879a612979a1aca98f40bb4d4d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/21/2019
-ms.locfileid: "69891319"
+ms.lasthandoff: 09/05/2019
+ms.locfileid: "70383729"
 ---
 # <a name="visual-studio-build-numbers-and-release-dates"></a>Números de compilación y fechas de lanzamiento de Visual Studio
 
@@ -29,6 +29,7 @@ En la tabla siguiente se enumeran los números de compilación y las fechas de v
 
 | **Versión**| **Canal** | **Fecha de lanzamiento** | **Versión de compilación** |
 | ---------------------- | ----------- | ---------------- | ----------------- |
+| 16.3.0 | Versión preliminar 3 | 4 de septiembre de 2019 | 16.3.29230.61 |
 | 16.2.3 | Release | 20 de agosto de 2019 | 16.2.29215.179 |
 | 16.2.2 | Release | 13 de agosto de 2019 | 16.2.29209.62 |
 | 16.3.0 | Preview 2 | 13 de agosto de 2019 | 16.3.29209.152 |
@@ -186,7 +187,7 @@ En la tabla siguiente se enumeran los números de compilación y las fechas de l
 | 15.5.1 | Release | 7 de diciembre de 2017 | 15.0.27130.2003 |
 | 15.6.0 (versión preliminar 1) | Vista previa | 7 de diciembre de 2017 | 15.6.27205.0 |
 | 15.0.7 | Release | 6 de diciembre de 2017 | 15.0.26228.18 |
-| 15.5 | Release | 4 de diciembre de 2017 | 15.0.27130.0 |
+| 15.5.0 | Release | 4 de diciembre de 2017 | 15.0.27130.0 |
 | 15.5.0 (versión preliminar 5) | Vista previa | 30 de noviembre de 2017 | 15.0.27128.1 |
 | 15.4.5 | Release | 27 de noviembre de 2017 | 15.0.27004.2010 |
 | 15.5.0 (versión preliminar 4) | Vista previa | 14 de noviembre de 2017 | 15.0.27110.0 |
@@ -198,7 +199,7 @@ En la tabla siguiente se enumeran los números de compilación y las fechas de l
 | 15.5.0 (versión preliminar 2) | Vista previa | 23 de octubre de 2017 | 15.0.27019.1 |
 | 15.4.1 | Release | 19 de octubre de 2017 | 15.0.27004.2005 |
 | 15.5 (versión preliminar 1) | Vista previa | 11 de octubre de 2017 | 15.0.27009.1 |
-| 15.4 | Release | 9 de octubre de 2017 | 15.0.27004.2002 |
+| 15.4.0 | Release | 9 de octubre de 2017 | 15.0.27004.2002 |
 | 15.4 (versión preliminar 6) | Vista previa | 9 de octubre de 2017| 15.0.27004.20002 |
 | 15.4 (versión preliminar 5) | Vista previa | 6 de octubre de 2017 | 15.0.27004.2000 |
 | 15.4 (versión preliminar 4) | Vista previa | 2 de octubre de 2017 | 15.0.26929.2 |
@@ -214,7 +215,7 @@ En la tabla siguiente se enumeran los números de compilación y las fechas de l
 | 15.3.1 (versión preliminar 1) | Vista previa | 18 de agosto de 2017 | 15.0.26730.08 |
 | 15.3.1  | Release | 18 de agosto de 2017 | 15.0.26730.08 |
 | 15.4 (versión preliminar 1) | Vista previa | 24 de agosto de 2017 | 15.0.26823.1 |
-| 15.3 | Release | 14 de agosto de 2017 | 15.0.26730.3 |
+| 15.3.0 | Release | 14 de agosto de 2017 | 15.0.26730.3 |
 | 15.3 (versión preliminar 7.1) | Vista previa | 11 de agosto de 2017 | 15.0.26730.3 |
 | 15.3 (versión preliminar 7) | Vista previa | 1 de agosto de 2017 | 15.0.26730.0 |
 | 15.3 (versión preliminar 6) | Vista previa | 26 de julio de 2017 | 15.0.26724.1 |
@@ -232,14 +233,14 @@ En la tabla siguiente se enumeran los números de compilación y las fechas de l
 | 15.2.1  | Release | 12 de mayo de 2017 | 15.0.26430.6 |
 | 15.3 (versión preliminar 1.1) | Vista previa | 11 de mayo de 2017 | 15.0.26510.0 |
 | 15.3 (versión preliminar 1) | Vista previa | 10 de mayo de 2017 | 15.0.26507.0 |
-| 15.2 | Release | 10 de mayo de 2017 | 15.0.26430.4 |
+| 15.2.0 | Release | 10 de mayo de 2017 | 15.0.26430.4 |
 | 15.2 (versión preliminar 4) | Vista previa | 3 de mayo de 2017 | 15.0.26430.1 |
 | 15.2 (versión preliminar 3) | Vista previa | 26 de abril de 2017 | 15.0.26424.2 |
 | 15.2 (versión preliminar 2) | Vista previa | 20 de abril de 2017 | 15.0.26419.1 |
 | 15.2 (versión preliminar 1) | Vista previa | 17 de abril de 2017 | 15.0.26412.1 |
 | 15.1.2  | Release | 17 de abril de 2017 | 15.0.26403.7 |
 | 15.1.1 | Release | 10 de abril de 2017 | 15.0.26403.3 |
-| 15.1 | Release | 5 de abril de 2017 | 15.0.26403.0 |
+| 15.1.0 | Release | 5 de abril de 2017 | 15.0.26403.0 |
 | 15.0.3  | Release | 31 de marzo de 2017 | 15.0.26228.12 |
 | 15.0.2 | Release | 28 de marzo de 2017 | 15.0.26228.10 |
 | 15.1 (versión preliminar 3) | Vista previa | 27 de marzo de 2017 | 15.0.26323.1 |
