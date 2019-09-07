@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f9a0714082e0fce744fe74eaa4e4aefee5a41867
-ms.sourcegitcommit: 01c3c9dcade5d913bde2c7efa8c931a7b04e6cd0
+ms.openlocfilehash: a73ce207d8efb0c6309ba52648c7231f89bc7984
+ms.sourcegitcommit: 0f44ec8ba0263056ad04d2d0dc904ad4206ce8fc
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2019
-ms.locfileid: "67365374"
+ms.lasthandoff: 09/06/2019
+ms.locfileid: "70766042"
 ---
 # <a name="ca1801-review-unused-parameters"></a>CA1801: Revisar parámetros sin utilizar
 
@@ -29,54 +29,56 @@ ms.locfileid: "67365374"
 |TypeName|ReviewUnusedParameters|
 |Identificador de comprobación|CA1801|
 |Categoría|Microsoft.Usage|
-|Cambio problemático|No problemático: si el miembro no es visible fuera del ensamblado, independientemente del cambio que realice.<br /><br /> No problemático: si cambia el miembro para usar el parámetro dentro del cuerpo.<br /><br /> Problemático: Si quita el parámetro y está visible fuera del ensamblado.|
+|Cambio problemático|No problemático: Si el miembro no es visible fuera del ensamblado, independientemente del cambio que realice.<br /><br /> No problemático: Si cambia el miembro para usar el parámetro dentro de su cuerpo.<br /><br /> Problemático: Si quita el parámetro y es visible fuera del ensamblado.|
 
-## <a name="cause"></a>Motivo
+## <a name="cause"></a>Causa
 
-Una firma de método incluye un parámetro que no se usa en el cuerpo del método.
+Una signatura de método incluye un parámetro que no se usa en el cuerpo del método.
 
 Esta regla no examina los siguientes tipos de métodos:
 
-- Métodos que se hace referencia a un delegado.
+- Métodos a los que hace referencia un delegado.
 
-- Métodos que se usan como controladores de eventos.
+- Métodos usados como controladores de eventos.
 
-- Los métodos declarados con el `abstract` (`MustOverride` en Visual Basic) modificador.
+- Métodos declarados `abstract` con`MustOverride` el modificador (en Visual Basic).
 
-- Los métodos declarados con el `virtual` (`Overridable` en Visual Basic) modificador.
+- Métodos declarados `virtual` con`Overridable` el modificador (en Visual Basic).
 
-- Los métodos declarados con el `override` (`Overrides` en Visual Basic) modificador.
+- Métodos declarados `override` con`Overrides` el modificador (en Visual Basic).
 
-- Los métodos declarados con el `extern` (`Declare` instrucción en Visual Basic) modificador.
+- Métodos declarados `extern` con`Declare` el modificador (instrucción in Visual Basic).
+
+Si está utilizando [analizadores de FxCop](install-fxcop-analyzers.md), esta regla no marca los parámetros que se denominan con el símbolo de [descarte](/dotnet/csharp/discards) , `_`por `_1`ejemplo, `_2`, y. Esto reduce el ruido de advertencia en los parámetros que son necesarios para los requisitos de firma, por ejemplo, un método que se usa como delegado, un parámetro con atributos especiales o un parámetro cuyo valor es implícitamente accesible en tiempo de ejecución en un marco de trabajo, pero no se hace referencia a él en codifica.
 
 ## <a name="rule-description"></a>Descripción de la regla
 
-Revise los parámetros de métodos no virtuales que no se usan en el cuerpo del método para asegurarse de que no hay exactitud en torno al error para tener acceso a ellos. Parámetros sin usar conllevan un costo de mantenimiento y rendimiento.
+Revise los parámetros de los métodos no virtuales que no se usan en el cuerpo del método para asegurarse de que no existe ninguna incorrección en torno al error de acceso. Los parámetros sin usar incurren en costos de mantenimiento y rendimiento.
 
-A veces, una infracción de esta regla puede señalar a un error en el método de implementación. Por ejemplo, el parámetro debe haberse utilizado en el cuerpo del método. Suprimir advertencias de esta regla si el parámetro tiene que existir por compatibilidad con versiones anteriores.
+A veces, una infracción de esta regla puede apuntar a un error de implementación en el método. Por ejemplo, el parámetro se debería haber utilizado en el cuerpo del método. Suprima las advertencias de esta regla si el parámetro debe existir debido a la compatibilidad con versiones anteriores.
 
 ## <a name="how-to-fix-violations"></a>Cómo corregir infracciones
 
-Para corregir una infracción de esta regla, quite el parámetro sin usar (un cambio importante) o utilizar el parámetro en el cuerpo del método (un cambio de no separación).
+Para corregir una infracción de esta regla, quite el parámetro sin usar (un cambio importante) o use el parámetro en el cuerpo del método (un cambio no problemático).
 
-## <a name="when-to-suppress-warnings"></a>Cuándo Suprimir advertencias
+## <a name="when-to-suppress-warnings"></a>Cuándo suprimir advertencias
 
 Es seguro suprimir una advertencia de esta regla:
 
-- Para código previamente distribuido para que la solución sería un cambio importante.
+- En código enviado previamente para el que la corrección sería un cambio importante.
 
-- Para el `this` parámetro en un método de extensión personalizada para <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert?displayProperty=nameWithType>. Las funciones de la <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert> clase son estáticos, por lo que no es necesario para tener acceso a la `this` parámetro en el cuerpo del método.
+- Para el `this` parámetro de un método de extensión personalizado <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert?displayProperty=nameWithType>para. Las funciones de la <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert> clase son estáticas, por lo que no es necesario tener `this` acceso al parámetro en el cuerpo del método.
 
 ## <a name="example"></a>Ejemplo
 
-El ejemplo siguiente muestra dos métodos. Un método infringe la regla y el otro método cumple la regla.
+En el ejemplo siguiente se muestran dos métodos. Un método infringe la regla y el otro método cumple la regla.
 
 [!code-csharp[FxCop.Usage.ReviewUnusedParameters#1](../code-quality/codesnippet/CSharp/ca1801-review-unused-parameters_1.cs)]
 
 ## <a name="related-rules"></a>Reglas relacionadas
 
-[CA1811: Evitar código privado fuera de lugar](../code-quality/ca1811-avoid-uncalled-private-code.md)
+[CA1811: Evitar código privado no llamado](../code-quality/ca1811-avoid-uncalled-private-code.md)
 
-[CA1812: Evitar las clases internas sin instancia](../code-quality/ca1812-avoid-uninstantiated-internal-classes.md)
+[CA1812: Evitar clases internas sin instancias](../code-quality/ca1812-avoid-uninstantiated-internal-classes.md)
 
-[CA1804: Quitar a variables locales no utilizadas](../code-quality/ca1804-remove-unused-locals.md)
+[CA1804: Quitar variables locales no usadas](../code-quality/ca1804-remove-unused-locals.md)

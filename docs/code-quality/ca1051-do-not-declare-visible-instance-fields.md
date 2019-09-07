@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c5dd8a4b2d0b32a8c52f75dee6fd765a7ea6ec9a
-ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
+ms.openlocfilehash: 455ab619f293981c5ebd3afba6336c63f2fe7f49
+ms.sourcegitcommit: 0f44ec8ba0263056ad04d2d0dc904ad4206ce8fc
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69547559"
+ms.lasthandoff: 09/06/2019
+ms.locfileid: "70766054"
 ---
 # <a name="ca1051-do-not-declare-visible-instance-fields"></a>CA1051: No declarar campos de instancia visibles
 
@@ -38,9 +38,11 @@ De forma predeterminada, esta regla solo examina los tipos visibles externamente
 
 ## <a name="rule-description"></a>Descripción de la regla
 
-El uso principal de un campo debe ser como un detalle de implementación. Los campos deben `private` ser `internal` o y deben exponerse mediante propiedades. Es tan fácil acceder a una propiedad a medida que se tiene acceso a un campo, y el código de los descriptores de acceso de una propiedad puede cambiar a medida que las características del tipo se expanden sin introducir cambios importantes. Las propiedades que devuelven el valor de un campo privado o interno están optimizadas para realizarse en par con el acceso a un campo. un aumento del rendimiento muy bajo se asocia al uso de campos visibles externamente en las propiedades.
+El uso principal de un campo debe ser como un detalle de implementación. Los campos deben `private` ser `internal` o y deben exponerse mediante propiedades. Es tan fácil tener acceso a una propiedad, ya que tiene acceso a un campo, y el código de los descriptores de acceso de una propiedad puede cambiar a medida que las características del tipo se expanden sin introducir cambios importantes.
 
-Externamente visible hace referencia `public`a los niveles `protected internal` de`Public`accesibilidad `Protected`, `protected` `Protected Friend` y (, y en Visual Basic).
+Las propiedades que devuelven el valor de un campo privado o interno están optimizadas para realizarse en par con el acceso a un campo. la ganancia de rendimiento del uso de campos visibles externamente en lugar de propiedades es mínima. *Externamente visible* hace referencia `public`a los niveles `protected internal` de`Public`accesibilidad `Protected`, `protected`y `Protected Friend` (, y en Visual Basic).
+
+Además, los campos públicos no se pueden proteger mediante [peticiones de vínculo](/dotnet/framework/misc/link-demands). Para obtener más información, [vea CA2112: Los tipos seguros no deben exponer](../code-quality/ca2112-secured-types-should-not-expose-fields.md)los campos. (Las peticiones de vínculo no son aplicables a las aplicaciones .NET Core).
 
 ## <a name="how-to-fix-violations"></a>Cómo corregir infracciones
 
@@ -48,7 +50,12 @@ Para corregir una infracción de esta regla, haga que `private` el `internal` ca
 
 ## <a name="when-to-suppress-warnings"></a>Cuándo suprimir advertencias
 
-No suprima las advertencias de esta regla. Los campos visibles externamente no proporcionan ninguna ventaja que no esté disponible para las propiedades. Además, los campos públicos no se pueden proteger mediante [peticiones de vínculo](/dotnet/framework/misc/link-demands). Consulte [CA2112: Los tipos seguros no deben exponer](../code-quality/ca2112-secured-types-should-not-expose-fields.md)los campos.
+Solo debe suprimir esta advertencia si está seguro de que los consumidores necesitan acceso directo al campo. Para la mayoría de las aplicaciones, los campos expuestos no proporcionan ventajas de rendimiento o mantenimiento con respecto a las propiedades.
+
+Los consumidores pueden necesitar acceso de campo en las situaciones siguientes:
+
+- en ASP.NET controles de contenido de formularios Web Forms
+- Cuando la plataforma de destino hace uso `ref` de para modificar los campos, como los marcos de modelo-vista-ViewModel (MVVM) para WPF y UWP
 
 ## <a name="configurability"></a>Configurabilidad
 
