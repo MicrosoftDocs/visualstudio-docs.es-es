@@ -1,5 +1,5 @@
 ---
-title: Referencia de esquema 2.0 del paquete de idioma VSIX | Microsoft Docs
+title: Referencia del esquema del paquete de idioma VSIX 2,0 | Microsoft Docs
 ms.date: 10/26/2017
 ms.topic: conceptual
 helpviewer_keywords:
@@ -8,42 +8,40 @@ helpviewer_keywords:
 - localize package
 - localize extension
 ms.assetid: 2a2932bc-cdbe-4d32-91fa-a3e0474f9098
-ms.author: dagriffe
-author: dgriffen
+ms.author: zorio
+author: zoeyr
 manager: jillfra
-ms.workload:
-- dagriffe
-ms.openlocfilehash: acea36031b98693e1d618986720d9932f76a0a63
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: fe6d4bd9e82950d77925dda1560b5c204633d392
+ms.sourcegitcommit: dae5dfd626277b58ebd7b21a75757f683f1eacc5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62953106"
+ms.lasthandoff: 09/06/2019
+ms.locfileid: "70739330"
 ---
-# <a name="vsix-language-pack-schema-20-reference"></a>Referencia de esquema 2.0 del paquete de idioma VSIX
+# <a name="vsix-language-pack-schema-20-reference"></a>Referencia del esquema del paquete de idioma VSIX 2,0
 
-El esquema del paquete de idioma de VSIX proporciona información de instalación localizada para paquetes VSIX. La versión 2.0 de este esquema es compatible con los elementos adicionales de localización.
+El esquema del paquete de idioma VSIX proporciona información de instalación localizada para los paquetes VSIX. La versión 2,0 de este esquema admite elementos de localización adicionales.
 
 ## <a name="language-pack-schema"></a>Esquema del paquete de idioma
 
-El elemento raíz del archivo de paquete de idioma es `<PackageLanguagePackManifest>`, con un atributo de `Version`, que es la versión del formato de paquete de idioma. En este artículo se describe la versión 2.0 del formato de paquete de idioma, que se especifica en el manifiesto estableciendo el `Version` en el valor `Version="2.0.0"`. El elemento raíz contiene exactamente un elemento secundario `<Metadata>` elemento.
+El elemento raíz del archivo de paquete de idioma `<PackageLanguagePackManifest>`es, con un atributo `Version`de, que es la versión del formato del paquete de idioma. En este artículo se describe la versión 2,0 del formato de paquete de idioma, que se especifica en el `Version` manifiesto estableciendo el atributo `Version="2.0.0"`en el valor. El elemento raíz contiene exactamente un elemento `<Metadata>` secundario.
 
 ### <a name="packagelanguagepackmanifest-element"></a>Elemento PackageLanguagePackManifest
 
-Dentro de la `<PackageLanguagePackManifest>` elemento debe existir el elemento siguiente:
+Dentro del `<PackageLanguagePackManifest>` elemento debe existir el siguiente elemento:
 
-|Título|Descripción|
+|Título|DESCRIPCIÓN|
 |-----------|-----------------|
-|`<Metadata>`| El elemento contenedor para todos los metadatos de paquete localizado
+|`<Metadata>`| El elemento contenedor para todos los metadatos de paquete localizados
 
-### <a name="metadata-element"></a>Elemento de metadatos
+### <a name="metadata-element"></a>Elemento metadata
 
-Dentro de la `<Metadata>` elemento puede tener los siguientes elementos:
+Dentro del `<Metadata>` elemento puede tener los elementos siguientes:
 
-|Título|Descripción|
+|Título|DESCRIPCIÓN|
 |-----------|-----------------|
-|`<DisplayName>`|El nombre localizado de la extensión que se instalará|
-|`<Description>`|La descripción adaptada de la extensión que se instalará|
+|`<DisplayName>`|Nombre localizado de la extensión que se va a instalar.|
+|`<Description>`|La descripción localizada de la extensión que se va a instalar.|
 |`<License>`| Una ruta de acceso a una versión localizada de la licencia de la extensión|
 |`<MoreInfo>`| Un vínculo a información localizada sobre la extensión|
 |`<ReleaseNotes>`| Una ruta de acceso o un vínculo a una versión localizada de las notas de la versión|
@@ -67,8 +65,8 @@ Dentro de la `<Metadata>` elemento puede tener los siguientes elementos:
 
 ## <a name="see-also"></a>Vea también
 
-|Título|Descripción|
+|Título|DESCRIPCIÓN|
 |-----------|-----------------|
-|[Adaptación de paquetes VSIX](../extensibility/localizing-vsix-packages.md)|Muestra cómo proporcionar soporte de instalación localizada para un paquete VSIX.|
-|[Referencia de esquema 2.0 de extensión VSIX](../extensibility/vsix-extension-schema-2-0-reference.md)|Un manifiesto VSIX describe el contenido de un *.vsix* archivo de implementación. El archivo de implementación le permite instalar una extensión de Visual Studio mediante el **extensiones y actualizaciones** cuadro de diálogo.|
-|[Búsqueda y uso de extensiones de Visual Studio](../ide/finding-and-using-visual-studio-extensions.md)|Se muestra cómo usar el **extensiones y actualizaciones** cuadro de diálogo para instalar, quitar, activar y desactivar extensiones.|
+|[Localizar paquetes VSIX](../extensibility/localizing-vsix-packages.md)|Muestra cómo proporcionar compatibilidad con la instalación localizada para un paquete VSIX.|
+|[Referencia del esquema de extensión VSIX 2,0](../extensibility/vsix-extension-schema-2-0-reference.md)|Un manifiesto VSIX describe el contenido de un archivo de implementación *. vsix* . El archivo de implementación permite instalar una extensión de Visual Studio mediante el cuadro de diálogo **extensiones y actualizaciones** .|
+|[Búsqueda y uso de extensiones de Visual Studio](../ide/finding-and-using-visual-studio-extensions.md)|Muestra cómo usar el cuadro de diálogo **extensiones y actualizaciones** para instalar, quitar, activar y desactivar extensiones.|
