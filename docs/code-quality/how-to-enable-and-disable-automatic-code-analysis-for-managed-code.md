@@ -7,31 +7,31 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 4878c25021d87e91f6a575d11a876d7aac2455d5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ec0a8a3f04830115d343fcef611cfbd338163395
+ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62816248"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "69551036"
 ---
 # <a name="how-to-enable-and-disable-automatic-code-analysis-for-managed-code"></a>Procedimiento Habilitar y deshabilitar el análisis de código automático para código administrado
 
-Puede configurar el análisis de código (estático) para ejecutar después de cada compilación de un proyecto de código administrado. Puede establecer propiedades de análisis para cada configuración de compilación de código diferente, por ejemplo, debug y release.
+Puede configurar el análisis de código (estático) para que se ejecute después de cada compilación de un proyecto de código administrado. Puede establecer distintas propiedades de análisis de código para cada configuración de compilación, por ejemplo, Debug y Release.
 
-En este artículo se aplica a análisis de código estático sólo a y el análisis de código en vivo no con [analizadores de código Roslyn](roslyn-analyzers-overview.md).
+Este artículo se aplica solo al análisis heredado y no al análisis de código activo mediante [analizadores de código](roslyn-analyzers-overview.md).
 
 ## <a name="to-enable-or-disable-automatic-code-analysis"></a>Para habilitar o deshabilitar el análisis de código automático
 
-1. En **el Explorador de soluciones**, haga clic en el proyecto y, a continuación, elija **propiedades**.
+1. En **Explorador de soluciones**, haga clic con el botón secundario en el proyecto y elija **propiedades**.
 
-1. En el cuadro de diálogo Propiedades del proyecto, elija el **análisis de código** ficha.
+1. En el cuadro de diálogo Propiedades del proyecto, elija la pestaña **análisis de código** .
 
    > [!TIP]
-   > Los tipos de proyecto más reciente como las aplicaciones de .NET Core y .NET Standard no tienen un **análisis de código** ficha. Análisis de código estático no está disponible para estos tipos de proyecto, pero todavía puede obtener análisis de código en vivo con [analizadores de código Roslyn](roslyn-analyzers-overview.md). Para suprimir las advertencias de los analizadores de Roslyn de código, consulte la nota al final de este artículo.
+   > Los tipos de proyecto más recientes como las aplicaciones .NET Core y .NET Standard no tienen una pestaña **análisis de código** . El análisis heredado no está disponible para estos tipos de proyecto, pero puede obtener análisis de código en directo mediante [analizadores de código basados en .net Compiler Platform](roslyn-analyzers-overview.md). Para suprimir las advertencias de los analizadores de código, consulte la nota al final de este artículo.
 
-1. Especifique el tipo de compilación en **configuración** y la plataforma de destino en **plataforma**.
+1. Especifique el tipo de compilación en la **configuración** y la plataforma de destino en **plataforma**.
 
-1. Para habilitar o deshabilitar el análisis de código automático, active o desactive el **Habilitar análisis de código al compilar** casilla de verificación.
+1. Para habilitar o deshabilitar el análisis de código automático, Active o desactive la casilla **Habilitar análisis de código al compilar** .
 
 > [!NOTE]
-> El **Habilitar análisis de código al compilar** casilla de verificación sólo afecta a los análisis de código estático. No se ve afectada [analizadores de código Roslyn](roslyn-analyzers-overview.md), que siempre se ejecutan en la compilación si se instaló como un paquete de NuGet. Si desea borrar errores del analizador desde la **lista de errores**, puede suprimir todas las infracciones actuales eligiendo **analizar** > **ejecutar análisis de código y suprimir activo Problemas** en la barra de menús. Para obtener más información, consulte [suprimir infracciones](use-roslyn-analyzers.md#suppress-violations).
+> La casilla **Habilitar análisis de código al compilar** solo afecta al análisis heredado. No afecta a los [analizadores de código basados en .net Compiler Platform](roslyn-analyzers-overview.md), que siempre se ejecutan en la compilación si se instalan como un paquete NuGet. Si desea borrar los errores del analizador del **lista de errores**, puede suprimir todas las infracciones actuales eligiendo **analizar** > **Ejecutar Análisis de código y suprimir problemas activos** en la barra de menús. Para obtener más información, vea [suprimir infracciones](use-roslyn-analyzers.md#suppress-violations).
