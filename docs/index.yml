@@ -8,12 +8,14 @@ metadata:
   description: Aprenda a usar Visual Studio para desarrollar aplicaciones, servicios y herramientas en el idioma de su elección para cualquier dispositivo y plataforma.
   ms.topic: hub-page
   monikerRange: '>=vs-2017'
-  ms.openlocfilehash: 22c6d731d3c7bfaefb6ee0d89d7bae088d86c035
-  ms.sourcegitcommit: fe212f8960d7882a1b0fdae9e22f008996aacf3c
+  f1_keywords:
+  - MSDNSTART
+  ms.openlocfilehash: 0853a20309869e5cde753685f20584bbd0a3e7dd
+  ms.sourcegitcommit: 78e2637e4fbfadd4509b55276816b64f5c24c606
   ms.translationtype: HT
   ms.contentlocale: es-ES
-  ms.lasthandoff: 09/03/2019
-  ms.locfileid: "70222662"
+  ms.lasthandoff: 09/10/2019
+  ms.locfileid: "70864659"
 highlightedContent:
   items:
   - title: Configuración e instalación
