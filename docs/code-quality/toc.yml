@@ -692,6 +692,8 @@
                   href: ca3011-review-code-for-dll-injection-vulnerabilities.md
                 - name: 'CA3012: Revisión de código en busca de vulnerabilidades de inyección de expresiones regulares'
                   href: ca3012-review-code-for-regex-injection-vulnerabilities.md
+                - name: 'CA3061: No agregar esquema por dirección URL'
+                  href: ca3061.md
                 - name: 'CA3075: Procesamiento no seguro de DTD'
                   href: ca3075-insecure-dtd-processing.md
                 - name: 'CA3076: Ejecución del script XSLT no segura'
@@ -702,12 +704,30 @@
                   href: ca3147-mark-verb-handlers-with-validateantiforgerytoken.md
                 - name: 'CA5361: No deshabilitar el uso de cifrado seguro de SChannel'
                   href: ca5361.md
+                - name: 'CA5363: No deshabilitar la validación de solicitudes'
+                  href: ca5363.md
                 - name: 'CA5364: No usar protocolos de seguridad en desuso'
                   href: ca5364.md
+                - name: 'CA5369: Usar XmlReader para deserializar'
+                  href: ca5369.md
+                - name: 'CA5370: Usar XmlReader para validar el lector'
+                  href: ca5370.md
+                - name: 'CA5371: Usar XmlReader para leer el esquema'
+                  href: ca5371.md
+                - name: 'CA5372: Usar XmlReader para XPathDocument'
+                  href: ca5372.md
+                - name: 'CA5373: No usar la función de derivación de clave obsoleta'
+                  href: ca5373.md
                 - name: 'CA5378: No deshabilitar ServicePointManagerSecurityProtocols'
                   href: ca5378.md
+                - name: 'CA5380: No agregar certificados al almacén raíz'
+                  href: ca5380.md
+                - name: 'CA5381: Asegurar que no se agregan certificados al almacén raíz'
+                  href: ca5381.md
                 - name: 'CA5386: Evitar codificar el valor SecurityProtocolType de forma rígida'
                   href: ca5386.md
+                - name: 'CA5389: No agregar la ruta de acceso del elemento de archivo a la ruta de acceso del sistema de archivos de destino'
+                  href: ca5389.md
                 - name: 'CA5397: No usar valores SslProtocols en desuso'
                   href: ca5397.md
                 - name: 'CA5398: Evitar valores SslProtocols codificados de forma rígida'
