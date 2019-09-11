@@ -15,19 +15,19 @@ ms.technology: vs-ide-general
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: 1f4a055f62fe76c701858f82b4778f7a3b19fa0a
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 2c9526a0cbf33278bbc3cab8120bb20ab0f5377a
+ms.sourcegitcommit: 9c07ae6fb18204ea080c8248994a683fa12e5c82
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68918782"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "70293715"
 ---
 # <a name="whats-new-in-visual-studio-2019"></a>Novedades de Visual Studio 2019
 
 **Actualizado para la [versión 16.2](/visualstudio/releases/2019/release-notes/)**
 
 >[!div class="button"]
->[Descargar Visual Studio 2019](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2019)
+>[Descargar Visual Studio 2019](https://visualstudio.microsoft.com/downloads)
 
 Con Visual Studio 2019, recibirá las mejores herramientas y servicios para cualquier desarrollador, aplicación y plataforma. Independientemente de si usa Visual Studio por primera vez o si ya lo ha usado durante años, esta nueva versión le gustará mucho.
 
