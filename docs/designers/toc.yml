@@ -118,7 +118,7 @@
               href: ../ide/tutorial-1-create-a-picture-viewer.md
             - name: 'Paso 1: Crear un proyecto de aplicación de Windows Forms'
               href: ../ide/step-1-create-a-windows-forms-application-project.md
-            - name: 'Paso 2: Ejecutar el programa'
+            - name: 'Paso 2: Ejecutar la aplicación'
               href: ../ide/step-2-run-your-program.md
             - name: 'Paso 3: Establecer las propiedades del formulario'
               href: ../ide/step-3-set-your-form-properties.md
@@ -136,7 +136,7 @@
               href: ../ide/step-9-review-comment-and-test-your-code.md
             - name: 'Paso 10: Escribir código para botones adicionales y una casilla'
               href: ../ide/step-10-write-code-for-additional-buttons-and-a-check-box.md
-            - name: 'Paso 11: Ejecutar el programa y probar otras características'
+            - name: 'Paso 11: Ejecutar la aplicación y probar otras características'
               href: ../ide/step-11-run-your-program-and-try-other-features.md
         - name: 'Tutorial 2: Creación de una prueba matemática cronometrada (C#)'
           items:
