@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 53bd2139d5b81ed743cdfd92fe76cb575dcc6487
-ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
+ms.openlocfilehash: ae41d9ac30567a32780af422c3af1e2b0d6a63ae
+ms.sourcegitcommit: b761a4a457646d04adfda510c8837734ee4d8f17
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69547894"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70929772"
 ---
 # <a name="code-analysis-faq"></a>Preguntas más frecuentes sobre análisis de código
 
@@ -24,7 +24,7 @@ Esta página contiene respuestas a algunas preguntas frecuentes sobre el anális
 
 **P**: ¿Debo usar el análisis de código o EditorConfig para comprobar el estilo de código?
 
-**R**: Los archivos. editorconfig y de análisis de código funcionan en mano. Al definir estilos de código [en un archivo. editorconfig](../ide/editorconfig-code-style-settings-reference.md) o en la página de [Opciones editor de texto](../ide/code-styles-and-code-cleanup.md) , en realidad está configurando los analizadores de código integrados en Visual Studio. Los archivos EditorConfig también se pueden usar para configurar algunos paquetes del analizador de terceros, como los analizadores de [FxCop](configure-fxcop-analyzers.md).
+**R**: Los archivos. editorconfig y de análisis de código funcionan en mano. Al definir estilos de código [en un archivo. editorconfig](../ide/editorconfig-code-style-settings-reference.md) o en la página de [Opciones editor de texto](../ide/code-styles-and-code-cleanup.md) , en realidad está configurando los analizadores de código integrados en Visual Studio. Los archivos EditorConfig también se pueden usar para configurar algunos paquetes del analizador de NuGet, como los [analizadores de FxCop](configure-fxcop-analyzers.md).
 
 ## <a name="editorconfig-versus-rule-sets"></a>EditorConfig frente a conjuntos de reglas
 
@@ -32,7 +32,7 @@ Esta página contiene respuestas a algunas preguntas frecuentes sobre el anális
 
 **R**: Los conjuntos de reglas y los archivos. editorconfig son maneras mutuamente excluyentes de configurar analizadores. Pueden coexistir. Los [conjuntos de reglas](analyzer-rule-sets.md) permiten habilitar y deshabilitar reglas y establecer su gravedad. Los archivos EditorConfig ofrecen otras maneras de configurar reglas. En el caso de los analizadores de FxCop, los archivos. editorconfig permiten [definir los tipos de código que se van a analizar](fxcop-analyzer-options.md). En el caso de los analizadores integrados en Visual Studio, los archivos. editorconfig permiten [definir los estilos de código preferidos](../ide/editorconfig-code-style-settings-reference.md) para un código base.
 
-Además de los conjuntos de reglas y los archivos. editorconfig, algunos analizadores de terceros se configuran mediante el uso de archivos de texto marcados C# como [archivos adicionales](../ide/build-actions.md#build-action-values) para los compiladores de y VB.
+Además de los conjuntos de reglas y los archivos. editorconfig, algunos analizadores se configuran mediante el uso de archivos de texto marcados como [archivos adicionales](../ide/build-actions.md#build-action-values) para los C# compiladores de y VB.
 
 > [!NOTE]
 > Los archivos EditorConfig no se pueden usar para configurar el análisis heredado, mientras que los conjuntos de reglas pueden.
@@ -49,13 +49,13 @@ Además de los conjuntos de reglas y los archivos. editorconfig, algunos analiza
 
 **R**: El IDE de Visual Studio incluye analizadores integrados que buscan problemas de estilo de código y calidad. Estas reglas le ayudan a usar las nuevas características del lenguaje a medida que se introducen y mejoran el mantenimiento del código. Los analizadores de IDE se actualizan continuamente con cada versión de Visual Studio.
 
-Los analizadores de [StyleCop](https://github.com/DotNetAnalyzers/StyleCopAnalyzers) son analizadores de terceros instalados como un paquete NuGet que comprueban la coherencia de estilo en el código. En general, las reglas de StyleCop permiten establecer preferencias personales para un código base sin recomendar un estilo sobre otro.
+Los [analizadores de StyleCop](https://github.com/DotNetAnalyzers/StyleCopAnalyzers) son analizadores de terceros instalados como un paquete NuGet que comprueban la coherencia de estilo en el código. En general, las reglas de StyleCop permiten establecer preferencias personales para un código base sin recomendar un estilo sobre otro.
 
 ## <a name="code-analyzers-versus-legacy-analysis"></a>Analizadores de código frente al análisis heredado
 
 **P**: ¿Cuál es la diferencia entre el análisis heredado y el análisis de código basado en .NET Compiler Platform?
 
-**R**: el análisis de código basado en .net Compiler Platform analiza el código fuente en tiempo real y durante la compilación, mientras que el análisis heredado analiza los archivos binarios una vez completada la compilación. Para obtener más información, consulte [preguntas más frecuentes sobre](fxcop-analyzers-faq.md) [el análisis basado en .net Compiler Platform frente al análisis heredado](roslyn-analyzers-overview.md#net-compiler-platform-based-analysis-versus-legacy-analysis) y los analizadores de FxCop.
+**R**: el análisis de código basado en .net Compiler Platform analiza el código fuente en tiempo real y durante la compilación, mientras que el análisis heredado analiza los archivos binarios una vez completada la compilación. Para obtener más información, consulte preguntas más frecuentes sobre [el análisis basado en .net Compiler Platform frente al análisis heredado](roslyn-analyzers-overview.md#net-compiler-platform-based-analysis-versus-legacy-analysis) y los [analizadores de FxCop](fxcop-analyzers-faq.md).
 
 ## <a name="see-also"></a>Vea también
 
