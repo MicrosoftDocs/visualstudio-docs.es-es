@@ -14,160 +14,164 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: db966d2c0ac048bd650500ed6ab191e6bc867e36
-ms.sourcegitcommit: 9753c7544cec852ca5efd0834e0956d9e53a5734
+ms.openlocfilehash: 61c1efea7340425090adbdd1c9bc865c4a056d42
+ms.sourcegitcommit: 0e482cfc15f809b564c3de61646f29ecd7bfcba6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "67043305"
+ms.lasthandoff: 09/14/2019
+ms.locfileid: "70987763"
 ---
-# <a name="learn-productivity-tips-and-tricks-for-the-debugger-in-visual-studio"></a>Obtenga información sobre sugerencias de productividad y trucos del depurador de Visual Studio
+# <a name="learn-productivity-tips-and-tricks-for-the-debugger-in-visual-studio"></a>Obtenga información sobre sugerencias y trucos de productividad para el depurador en Visual Studio
 
-Lea este tema para aprender algunas sugerencias de productividad y trucos para el depurador de Visual Studio. Para conocer las características básicas del depurador, vea [primero analicemos el depurador](../debugger/debugger-feature-tour.md). En este tema, trataremos algunas áreas que no están incluidos en la Guía de características.
+Lea este tema para obtener información sobre algunas sugerencias y trucos de productividad para el depurador de Visual Studio. Para ver las características básicas del depurador, vea [primer vistazo al depurador](../debugger/debugger-feature-tour.md). En este tema, trataremos algunas áreas que no se incluyen en la guía de características.
 
-## <a name="pin-data-tips"></a>Sugerencias de datos de PIN
+## <a name="pin-data-tips"></a>Anclar sugerencias de datos
 
-Si con frecuencia el mouse sobre sugerencias de datos durante la depuración, puede anclar la sugerencia de datos para la variable para tener acceso rápido. La variable permanece anclada incluso después de reiniciar. Para anclar la información sobre datos, haga clic en el icono de anclaje al mantener el mouse sobre él. Puede anclar varias variables.
+Si con frecuencia mantiene el mouse sobre las sugerencias de datos durante la depuración, es posible que desee anclar la sugerencia de datos de la variable para obtener un acceso rápido. La variable permanece anclada incluso después de reiniciar. Para anclar la información sobre datos, haga clic en el icono de anclaje mientras mantiene el puntero sobre él. Puede anclar varias variables.
 
 ![Anclar una sugerencia de datos](../debugger/media/dbg-tips-data-tips-pinned.png "PinningDataTip")
 
-## <a name="edit-your-code-and-continue-debugging-c-vb-c"></a>El código de editar y continuar con la depuración (C#, VB, C++)
+## <a name="edit-your-code-and-continue-debugging-c-vb-c"></a>Edite el código y continúe con laC#depuración C++(, VB,)
 
-En la mayoría de los idiomas compatible con Visual Studio, puede editar el código en el medio de una sesión de depuración y continuar con la depuración. Para usar esta característica, haga clic en el código con el cursor mientras está en pausa en el depurador, realizar ediciones y presione **F5**, **F10**, o **F11** para continuar la depuración.
+En la mayoría de los lenguajes compatibles con Visual Studio, puede modificar el código en medio de una sesión de depuración y continuar con la depuración. Para usar esta característica, haga clic en el código con el cursor mientras está en pausa en el depurador, realice las modificaciones y presione **F5**, **F10**o **F11** para continuar con la depuración.
 
-![Editar y continuar con la depuración](../debugger/media/dbg-tips-edit-and-continue.gif "EditAndContinue")
+![Editar y continuar depuración](../debugger/media/dbg-tips-edit-and-continue.gif "EditAndContinue")
 
-Para obtener más información sobre el uso de la característica y las limitaciones de características, consulte [editar y continuar](../debugger/edit-and-continue.md).
+Para obtener más información sobre el uso de la característica y sobre las limitaciones de las características, vea [Editar y continuar](../debugger/edit-and-continue.md).
 
-## <a name="debug-issues-that-are-hard-to-reproduce"></a>Depurar los problemas que son difíciles de reproducir
+## <a name="edit-xaml-code-and-continue-debugging"></a>Editar código XAML y continuar la depuración
 
-Si es difícil o requiere tiempo volver a crear un estado determinado en la aplicación, considere la posibilidad de si el uso de un punto de interrupción condicional puede ayudar. Puede usar [puntos de interrupción condicionales](../debugger/using-breakpoints.md#BKMK_Specify_a_breakpoint_condition_using_a_code_expression) y filtrar los puntos de interrupción para evitar interrumpir el código de la aplicación hasta que la aplicación entra en un estado deseado (por ejemplo, un estado en el que una variable está almacenando datos incorrectos). Puede establecer las condiciones de uso de expresiones, los filtros, recuentos de visitas y así sucesivamente.
+Para modificar el código XAML durante una sesión de depuración, vea [escribir y depurar código XAML en ejecución con la recarga activa de XAML](xaml-hot-reload.md).
+
+## <a name="debug-issues-that-are-hard-to-reproduce"></a>Problemas de depuración que son difíciles de reproducir
+
+Si es difícil o lento volver a crear un estado determinado en la aplicación, considere si el uso de un punto de interrupción condicional puede ser útil. Puede usar [puntos de interrupción condicionales](../debugger/using-breakpoints.md#BKMK_Specify_a_breakpoint_condition_using_a_code_expression) y filtrar puntos de interrupción para evitar la interrupción del código de la aplicación hasta que la aplicación entre en un estado deseado (por ejemplo, un estado en el que una variable almacena datos incorrectos). Puede establecer condiciones mediante expresiones, filtros, recuentos de visitas, etc.
 
 #### <a name="to-create-a-conditional-breakpoint"></a>Para crear un punto de interrupción condicional
 
-1. Haga clic en un icono de punto de interrupción (el círculo rojo) y elija **condiciones**.
+1. Haga clic con el botón secundario en un icono de punto de interrupción (la esfera roja) y elija **condiciones**.
 
-2. En el **configuración de punto de interrupción** ventana, escriba una expresión.
+2. En la ventana **configuración del punto de interrupción** , escriba una expresión.
 
     ![Punto de interrupción condicional](../debugger/media/dbg-multithreaded-conditional-breakpoint.png "ConditionalBreakpoint")
 
-3. Si está interesado en otro tipo de condición, seleccione **filtro** en lugar de **expresión condicional** en el **configuración de punto de interrupción** cuadro de diálogo y, después, siga las sugerencias de filtro.
+3. Si está interesado en otro tipo de condición, seleccione **filtrar** en lugar de **expresión condicional** en el cuadro de diálogo **configuración del punto de interrupción** y, a continuación, siga las sugerencias de filtro.
 
-## <a name="configure-the-data-to-show-in-the-debugger"></a>Configurar los datos que se va a mostrar en el depurador
+## <a name="configure-the-data-to-show-in-the-debugger"></a>Configurar los datos que se van a mostrar en el depurador
 
-Para C#, Visual Basic, y C++ (C++solo código /CLI), puede indicar al depurador qué información se va a mostrar con el [DebuggerDisplay](../debugger/using-the-debuggerdisplay-attribute.md) atributo. Para C++ código, puede hacer el misma uso [visualizaciones de Natvis](create-custom-views-of-native-objects.md).
+Para C#, Visual Basic y C++ (C++solo en el código/CLI), puede indicar al depurador qué información se debe mostrar mediante el atributo [DebuggerDisplay](../debugger/using-the-debuggerdisplay-attribute.md) . Para C++ el código, puede hacer lo mismo con las [visualizaciones de Natvis](create-custom-views-of-native-objects.md).
 
 ## <a name="change-the-execution-flow"></a>Cambio del flujo de ejecución
 
-Con el depurador pausó en una línea de código, use el mouse para captar el puntero de flecha amarilla en la parte izquierda. Mueva el puntero de flecha amarilla a un punto diferente en la ruta de acceso de ejecución de código. A continuación, utilice F5 o un comando de paso para continuar ejecutando la aplicación.
+Con el depurador en pausa en una línea de código, use el mouse para obtener el puntero de flecha amarillo situado a la izquierda. Mueva el puntero de flecha amarillo a un punto diferente en la ruta de acceso de ejecución del código. A continuación, use F5 o un comando STEP para continuar con la ejecución de la aplicación.
 
-![Mueva el puntero de ejecución](../debugger/media/dbg-tour-move-the-execution-pointer.gif "mover el puntero de ejecución")
+![Movimiento del puntero de ejecución](../debugger/media/dbg-tour-move-the-execution-pointer.gif "Movimiento del puntero de ejecución")
 
 Al cambiar el flujo de ejecución, puede, por ejemplo, comprobar las diferentes rutas de ejecución de código o volver a ejecutar código sin tener que reiniciar el depurador.
 
 > [!WARNING]
-> A menudo es necesario tener cuidado con esta característica, ya que puede ser que vea una advertencia en la información en pantalla. También puede ser que reciba otras advertencias. Mover el puntero no puede revertir la aplicación a un estado anterior de la aplicación.
+> A menudo es necesario tener cuidado con esta característica, ya que puede ser que vea una advertencia en la información en pantalla. También puede ser que reciba otras advertencias. Al mover el puntero no se puede revertir la aplicación a un estado anterior de la aplicación.
 
-## <a name="track-an-out-of-scope-object-c-visual-basic"></a>Realizar un seguimiento de un objeto fuera de ámbito (C#, Visual Basic)
+## <a name="track-an-out-of-scope-object-c-visual-basic"></a>Realizar un seguimiento de un objeto fuera de ámbitoC#(, Visual Basic)
 
-Es fácil ver las variables mediante las ventanas del depurador, como la **inspección** ventana. Sin embargo, cuando una variable se sale del ámbito en el **inspección** ventana, es posible que observe que está atenuado. En algunos escenarios de aplicación, puede cambiar el valor de una variable, incluso cuando la variable está fuera del ámbito, y desea verlo estrechamente (por ejemplo, una variable puede recibir recolectado). Puede realizar un seguimiento de la variable mediante la creación de un identificador de objeto para él en el **inspección** ventana.
+Es fácil ver las variables mediante ventanas del depurador, como la ventana **inspección** . Sin embargo, cuando una variable sale del ámbito en la ventana **inspección** , es posible que observe que está atenuada. En algunos escenarios de aplicación, el valor de una variable puede cambiar incluso cuando la variable está fuera del ámbito, y es posible que desee verla en estrecha profundidad (por ejemplo, una variable puede obtener la recolección de elementos no utilizados). Puede realizar el seguimiento de la variable creando un identificador de objeto para ella en la ventana **inspección** .
 
 #### <a name="to-create-an-object-id"></a>Para crear un identificador de objeto
 
-1. Establezca un punto de interrupción cerca de una variable que se desea realizar un seguimiento.
+1. Establezca un punto de interrupción cerca de una variable de la que desee realizar un seguimiento.
 
-2. Iniciar el depurador (**F5**) y detenga el punto de interrupción.
+2. Inicie el depurador (**F5**) y deténgase en el punto de interrupción.
 
-3. Busque la variable en el **variables locales** ventana (**Depurar > Windows > variables locales**), haga clic en la variable y seleccione **Make Object ID**.
+3. Busque la variable en la ventana **variables locales** (**depurar > Windows > variables locales**), haga clic con el botón derecho en la variable y seleccione **crear ID**. de objeto.
 
     ![Crear un identificador de objeto](../debugger/media/dbg-tips-watch-create-object-id.png "CreateObjectID")
 
 4. Debería ver el símbolo **$** junto con un número en la ventana **Locales** . Esta variable es el identificador de objeto.
 
-5. Haga clic en la variable de Id. de objeto y elija **Agregar inspección**.
+5. Haga clic con el botón derecho en la variable de ID. de objeto y elija **Agregar inspección**.
 
-Para obtener más información, consulte [crear un identificador de objeto](../debugger/watch-and-quickwatch-windows.md#bkmk_objectIds).
+Para obtener más información, vea [crear un identificador de objeto](../debugger/watch-and-quickwatch-windows.md#bkmk_objectIds).
 
-## <a name="view-return-values-for-functions"></a>Ver los valores devueltos para funciones
+## <a name="view-return-values-for-functions"></a>Ver valores devueltos para funciones
 
-Para ver los valores devueltos para las funciones, examine las funciones que aparecen en la **automático** ventana mientras se recorre el código. Para ver el valor devuelto para una función, asegúrese de que ya se ha ejecutado la función que le interese (presione **F10** una vez si están detenidos actualmente en la llamada de función). Si se cierra la ventana, utilice **Depurar > Windows > automático** para abrir el **automático** ventana.
+Para ver los valores devueltos de las funciones, examine las funciones que aparecen en la ventana **automático** mientras se recorre el código. Para ver el valor devuelto de una función, asegúrese de que ya se ha ejecutado la función que le interesa (presione **F10** una vez si está detenido actualmente en la llamada de función). Si la ventana está cerrada, use **Debug > Windows > automático** para abrir la ventana **automático** .
 
-![Ventana de autos](../debugger/media/dbg-tips-autos-window.png "AutosWindow")
+![Ventana automático](../debugger/media/dbg-tips-autos-window.png "AutosWindow")
 
-Además, puede escribir funciones en el **inmediato** ventana para ver los valores devueltos. (Abrirla con **Depurar > Windows > inmediato**.)
+Además, puede escribir funciones en la ventana **inmediato** para ver los valores devueltos. (Ábralo mediante **Depurar > Windows > inmediato**).
 
-![Ventana Inmediato](../debugger/media/dbg-tips-immediate-window.png "ImmediateWindow")
+![Ventana inmediato](../debugger/media/dbg-tips-immediate-window.png "ImmediateWindow")
 
-También puede usar [pseudovariables](../debugger/pseudovariables.md) en el **inspección** y **inmediato** ventana, como `$ReturnValue`.
+También puede usar [pseudovariables](../debugger/pseudovariables.md) en las ventanas **inspección** e **inmediato** , como `$ReturnValue`.
 
-## <a name="string_visualizer"></a>Inspeccionar las cadenas en un visualizador
+## <a name="string_visualizer"></a>Inspeccionar cadenas en un visualizador
 
-Cuando se trabaja con cadenas, puede ser útil ver toda la cadena con formato. Para ver un texto sin formato, una cadena JSON, HTML o XML, haga clic en el icono de lupa ![VisualizerIcon](../debugger/media/dbg-tips-visualizer-icon.png "icono visualizador") al mantener el mouse sobre una variable que contiene un valor de cadena.
+Al trabajar con cadenas, puede resultar útil ver toda la cadena con formato. Para ver una cadena de texto sin formato, XML, HTML o JSON, haga clic en el icono del(../debugger/media/dbg-tips-visualizer-icon.png "visualizador") ![VisualizerIcon]icono de lupa mientras mantiene el puntero sobre una variable que contiene un valor de cadena.
 
 ![Abrir un visualizador de cadenas](../debugger/media/dbg-tips-string-visualizers.png "OpenStringVisualizer")
 
-Un visualizador de cadenas puede ayudarle a averiguar si una cadena es un formato incorrecto, según el tipo de cadena. Por ejemplo, un espacio en blanco **valor** campo indica la cadena no se reconoce el tipo de visualizador. Para obtener más información, consulte [cuadro de diálogo del visualizador de cadena](../debugger/string-visualizer-dialog-box.md).
+Un visualizador de cadenas puede ayudarle a averiguar si una cadena tiene un formato incorrecto, dependiendo del tipo de cadena. Por ejemplo, un campo de **valor** en blanco indica que el tipo de visualizador no reconoce la cadena. Para obtener más información, vea [cuadro de diálogo visualizador de cadenas](../debugger/string-visualizer-dialog-box.md).
 
 ![Visualizador de cadenas JSON](../debugger/media/dbg-tips-string-visualizer-json.png "JSONStringVisualizer")
 
-Para algunos otros tipos como objetos DataSet y DataTable que aparecen en las ventanas del depurador, también puede abrir un visualizador integrado.
+En el caso de otros tipos, como los objetos DataSet y DataTable que aparecen en las ventanas del depurador, también puede abrir un visualizador integrado.
 
 ## <a name="break-into-code-on-handled-exceptions"></a>Interrumpir el código en las excepciones controladas
 
-El depurador interrumpe el código en excepciones no controladas. Sin embargo, se tratan las excepciones (por ejemplo, las excepciones que se producen dentro de un `try/catch` bloque) también puede ser una fuente de errores y desee investigar cuando se producen. Puede configurar el depurador para interrumpir el código para las excepciones controladas también mediante la configuración de opciones en el **configuración de excepciones** cuadro de diálogo. Abra este cuadro de diálogo eligiendo **Depurar > Windows > configuración de excepciones**.
+El depurador se interrumpe en el código en las excepciones no controladas. Sin embargo, las excepciones controladas (como las excepciones que `try/catch` se producen dentro de un bloque) también pueden ser una fuente de errores y es posible que desee investigar cuando se producen. Puede configurar el depurador para que divida en el código para las excepciones controladas también mediante la configuración de opciones en el cuadro de diálogo **configuración de excepciones** . Para abrir este cuadro de diálogo, elija **Depurar > configuración de excepciones de Windows >** .
 
-El **configuración de excepciones** cuadro de diálogo le permite indicar al depurador para interrumpir el código en excepciones específicas. En la ilustración siguiente, el depurador interrumpe el código cada vez que un `System.NullReferenceException` se produce. Para obtener más información, consulte [administrar excepciones](../debugger/managing-exceptions-with-the-debugger.md).
+El cuadro de diálogo **configuración de excepciones** permite indicar al depurador que interrumpa el código en las excepciones específicas. En la ilustración siguiente, el depurador se interrumpe en el código `System.NullReferenceException` cada vez que se produce una. Para obtener más información, consulte [Administración de excepciones](../debugger/managing-exceptions-with-the-debugger.md).
 
-![Cuadro de diálogo de configuración de excepciones](../debugger/media/dbg-tips-exception-settings.png "ExceptionSettingsDialogBox")
+![Cuadro de diálogo Configuración de excepciones](../debugger/media/dbg-tips-exception-settings.png "ExceptionSettingsDialogBox")
 
-## <a name="debug-deadlocks-and-race-conditions"></a>Depurar los interbloqueos y condiciones de carrera
+## <a name="debug-deadlocks-and-race-conditions"></a>Depurar interbloqueos y condiciones de carrera
 
-Si tiene que depurar los tipos de problemas que son comunes a las aplicaciones multiproceso, a menudo resulta útil para ver la ubicación de los subprocesos durante la depuración. Puede hacerlo fácilmente mediante el **Mostrar subprocesos en código fuente** botón.
+Si necesita depurar los tipos de problemas comunes a las aplicaciones multiproceso, a menudo resulta útil ver la ubicación de los subprocesos durante la depuración. Puede hacerlo fácilmente con el botón **Mostrar subprocesos en el origen** .
 
 #### <a name="to-show-threads-in-your-source-code"></a>Para mostrar los subprocesos en el código fuente
 
-1. Durante la depuración, haga clic en el **Mostrar subprocesos en código fuente** botón ![Mostrar subprocesos en código fuente](../debugger/media/dbg-multithreaded-show-threads.png "ThreadMarker") en el **depurar** barra de herramientas.
+1. Durante la depuración, haga clic en el botón **Mostrar subprocesos en el origen** ![Mostrar subprocesos en el origen](../debugger/media/dbg-multithreaded-show-threads.png "ThreadMarker") en la barra de herramientas **depurar** .
 
-2. Examine el margen interno izquierdo de la ventana. En esta línea, verá un *marcador de subproceso* icono ![marcador de subproceso](../debugger/media/dbg-thread-marker.png "ThreadMarker") que es similar a dos hilos. El marcador de subproceso indica que un subproceso se ha detenido en esa ubicación.
+2. Examine el margen interno izquierdo de la ventana. En esta línea, verá un icono de *marcador de subproceso* (../debugger/media/dbg-thread-marker.png "ThreadMarker") ![marcador de subprocesos]que se parece a dos subprocesos de tela. El marcador de subproceso indica que un subproceso se ha detenido en esa ubicación.
 
-    Tenga en cuenta que un marcador de subproceso es posible que se ocultan parcialmente por un punto de interrupción.
+    Observe que un punto de interrupción puede ocultar parcialmente un marcador de subproceso.
 
 3. Desplace el puntero sobre el marcador de subproceso. Aparece la Información sobre datos. En ella se indican el nombre y el número de id. de subproceso de cada subproceso detenido.
 
-    También puede ver la ubicación de los subprocesos en la [ventana Pilas paralelas](../debugger/get-started-debugging-multithreaded-apps.md).
+    También puede ver la ubicación de los subprocesos en la [ventana pilas paralelas](../debugger/get-started-debugging-multithreaded-apps.md).
 
-## <a name="examine-payloads-for-web-services-and-network-resources-uwp"></a>Examine las cargas para servicios web y los recursos de red (UWP)
+## <a name="examine-payloads-for-web-services-and-network-resources-uwp"></a>Examen de cargas para servicios web y recursos de red (UWP)
 
-En aplicaciones UWP, puede analizar las operaciones de red realizadas mediante la `Windows.Web.Http` API. Puede usar esta herramienta para ayudar a depurar los servicios web y los recursos de red. Para usar la herramienta, seleccione **Depurar > Performance Profiler**. Seleccione **red**y, a continuación, elija **iniciar**. En la aplicación, recorra el escenario que use `Windows.Web.Http` y, después, seleccione **Detener recolección** para generar el informe.
+En las aplicaciones UWP, puede analizar las operaciones de red realizadas `Windows.Web.Http` mediante la API. Puede usar esta herramienta para ayudar a depurar los servicios web y los recursos de red. Para usar la herramienta, seleccione **Depurar > generador de perfiles de rendimiento**. Seleccione **red**y, a continuación, elija **iniciar**. En la aplicación, recorra el escenario que use `Windows.Web.Http` y, después, seleccione **Detener recolección** para generar el informe.
 
-![Uso de la herramienta de generación de perfiles de red](../profiling/media/prof-tour-network-usage.png "NetworkUsageProfTool")
+![Herramienta de generación de perfiles de uso de red](../profiling/media/prof-tour-network-usage.png "NetworkUsageProfTool")
 
 Seleccione una operación en la vista de resumen para ver más detalles.
 
-![Información detallada en la herramienta de uso de la red](../profiling/media/prof-tour-network-usage-details.png "DetailedViewNetworkUsage")
+![Información detallada en la herramienta uso de red](../profiling/media/prof-tour-network-usage-details.png "DetailedViewNetworkUsage")
 
 Para obtener más información, vea [Network Usage](../profiling/network-usage.md) (Uso de red).
 
-## <a name="modules_window"></a> Familiarizarse con cómo el depurador se asocia a la aplicación (C#, C++, Visual Basic, F#)
+## <a name="modules_window"></a>Familiarícese con el modo en que el depurador se asocia aC#la C++aplicación (, F#, Visual Basic)
 
-Para asociar a la aplicación en ejecución, el depurador carga los archivos de símbolos (.pdb) generados para la misma versión exacta de la aplicación que está intentando depurar. En algunos escenarios, algunos conocimientos de los archivos de símbolos pueden resultar útil. Puede examinar cómo Visual Studio carga los archivos de símbolos mediante el **módulos** ventana.
+Para asociar a la aplicación en ejecución, el depurador carga los archivos de símbolos (. pdb) generados para la misma compilación exacta de la aplicación que está intentando depurar. En algunos escenarios, un pequeño conocimiento de los archivos de símbolos puede ser útil. Puede examinar cómo Visual Studio carga los archivos de símbolos mediante la ventana **módulos** .
 
-Abra el **módulos** ventana durante la depuración seleccionando **Depurar > Windows > módulos**. El **módulos** ventana puede indicarle qué módulos el depurador se trata como código de usuario, o [ *mi código*](../debugger/just-my-code.md)y el símbolo de estado para el módulo de carga. En la mayoría de los escenarios, el depurador busca automáticamente los archivos de símbolos para el código de usuario, pero si desea ir a (o depurar) código de .NET framework, código del sistema o código de la biblioteca de terceros, se requieren pasos adicionales para obtener los archivos de símbolos correctos.
+Para abrir la ventana **módulos** durante la depuración, seleccione **depurar > módulos de Windows >** . La ventana **módulos** puede indicarle qué módulos trata el depurador como código de usuario, o [*mi código*](../debugger/just-my-code.md), y el estado de carga de símbolos para el módulo. En la mayoría de los escenarios, el depurador busca automáticamente los archivos de símbolos para el código de usuario, pero si desea entrar en el código de .NET Framework, el código del sistema o el código de la biblioteca de terceros, se necesitan pasos adicionales para obtener los archivos de símbolos correctos.
 
 ![Ver información de símbolos en la ventana módulos](../debugger/media/dbg-tips-modules-window.png "ViewSymbolInformation")
 
-Puede cargar información de símbolos directamente desde el **módulos** ventana con el botón secundario y eligiendo **cargar símbolos**.
+Puede cargar la información de símbolos directamente desde la ventana **módulos** ; para ello, haga clic con el botón secundario y elija **cargar símbolos**.
 
-En ocasiones, los desarrolladores de aplicaciones distribuyen aplicaciones sin los archivos de símbolos correspondientes (para reducir la superficie), pero mantener una copia del símbolo de coincidencia de archivos para la compilación para que puede depurar una versión posterior.
+A veces, los desarrolladores de aplicaciones envían aplicaciones sin los archivos de símbolos coincidentes (para reducir la superficie), pero conservan una copia de los archivos de símbolos coincidentes de la compilación para que puedan depurar una versión de lanzamiento más adelante.
 
-Para averiguar cómo el depurador clasifica el código como código de usuario, consulte [solo mi código](../debugger/just-my-code.md). Para obtener más información acerca de los archivos de símbolos, vea [especificar archivos de código fuente y símbolos (.pdb) en el depurador de Visual Studio](specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md).
+Para averiguar cómo el depurador clasifica el código como código de usuario, vea [solo mi código](../debugger/just-my-code.md). Para obtener más información acerca de los archivos de símbolos, consulte [especificar archivos de código fuente y símbolos (. pdb) en el depurador de Visual Studio](specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md).
 
 ## <a name="learn-more"></a>Más información
 
-Para otras recomendaciones y trucos y obtener información más detallada, vea estas entradas de blog:
+Para obtener sugerencias y trucos adicionales e información más detallada, consulte estas entradas de blog:
 
-- [7 ataques conocidos menor para la depuración en Visual Studio](https://devblogs.microsoft.com/visualstudio/7-lesser-known-hacks-for-debugging-in-visual-studio/)
-- [7 gemas ocultas de Visual Studio](https://devblogs.microsoft.com/visualstudio/7-hidden-gems-in-visual-studio-2017/)
+- [7 hackers menos conocidos para la depuración en Visual Studio](https://devblogs.microsoft.com/visualstudio/7-lesser-known-hacks-for-debugging-in-visual-studio/)
+- [7 gemas ocultas en Visual Studio](https://devblogs.microsoft.com/visualstudio/7-hidden-gems-in-visual-studio-2017/)
 
 ## <a name="see-also"></a>Vea también
 
