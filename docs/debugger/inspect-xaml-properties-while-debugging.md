@@ -1,5 +1,5 @@
 ---
-title: Inspeccionar las propiedades XAML durante la depuración | Documentos de Microsoft
+title: Inspeccionar las propiedades XAML durante la depuración | Microsoft Docs
 ms.date: 03/06/2017
 ms.topic: conceptual
 ms.assetid: 390edde4-7b8d-4c89-8d69-55106b7e6b11
@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: d5b04a64ea75458d23e64e83a405a103ae70a100
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: fdb973718e56279e7bfb04c9d412bcd83410223d
+ms.sourcegitcommit: 0e482cfc15f809b564c3de61646f29ecd7bfcba6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62906085"
+ms.lasthandoff: 09/14/2019
+ms.locfileid: "70987747"
 ---
 # <a name="inspect-xaml-properties-while-debugging"></a>Inspeccionar las propiedades XAML durante la depuración
 Puede obtener una vista en tiempo real del código XAML en ejecución con **Árbol visual dinámico** y **Live Property Explorer**. Estas herramientas le proporcionan una vista de árbol de los elementos de interfaz de usuario de la aplicación XAML en ejecución y le muestran las propiedades en tiempo de ejecución de cualquier elemento de interfaz de usuario que seleccione.
@@ -23,7 +23,7 @@ Puede usar estas herramientas en las siguientes configuraciones:
 |Tipo de aplicación|Sistema operativo y herramientas|
 |-----------------|--------------------------------|
 |Aplicaciones de Windows Presentation Foundation (4.0 y versiones posteriores)|Windows 7 y versiones posteriores|
-|Aplicaciones Windows universales|Windows 10 y versiones posteriores, con el [Windows 10 SDK](https://dev.windows.com/en-us/downloads/windows-10-sdk)|
+|Aplicaciones Windows universales|Windows 10 y versiones posteriores, con el [SDK de Windows 10](https://dev.windows.com/en-us/downloads/windows-10-sdk)|
 
 ## <a name="looking-at-elements-in-the-live-visual-tree"></a>Inspeccionar elementos en Live Visual Tree
 Comencemos con una aplicación WPF muy sencilla que tiene una vista de lista y un botón. Al hacer clic en el botón, se agrega otro elemento a la lista. Los elementos con números pares se muestran en color gris, mientras que los elementos con números impares se muestran de color amarillo.
@@ -73,11 +73,11 @@ Compile la solución y comience la depuración. La configuración de compilació
 
 Cuando aparezca la ventana, haga clic un par de veces en el botón **Agregar elemento**. Verá algo parecido a esto:
 
-![Ventana principal de la aplicación](../debugger/media/livevisualtree-app.png "LiveVIsualTree-App")
+![Ventana principal de la aplicación](../debugger/media/livevisualtree-app.png "LiveVIsualTree: aplicación")
 
 Abra la ventana **Live Visual Tree** (**Depurar > Ventanas > Live Visual Tree** o búsquela en el lado izquierdo del IDE). Arrástrela de su posición de acoplamiento, de modo que podamos ver esta ventana junto con la ventana **Live Properties**. En la ventana **Árbol visual dinámico**, expanda el nodo **ContentPresenter**. Debe contener nodos para el botón y el cuadro de lista. Expanda el cuadro de lista (y luego **ScrollContentPresenter** e **ItemsPresenter**) para buscar los elementos del cuadro de lista. La ventana debe ser similar a la que se muestra a continuación:
 
-![ListBoxItems en el árbol Visual](../debugger/media/livevisualtree-listboxitems.png "LiveVisualTree ListBoxItems")
+![Elementos ListBoxItem en el árbol visual dinámico](../debugger/media/livevisualtree-listboxitems.png "LiveVisualTree-elementos ListBoxItem")
 
 Vuelva a la ventana de la aplicación y agregue algunos elementos más. Debería ver más elementos del cuadro de lista en **Live Visual Tree**.
 
@@ -89,7 +89,7 @@ La estructura real del XAML tiene muchos elementos que probablemente no le inter
 
 **Mostrar adornos de diseño en la aplicación en ejecución**. Puede habilitar este modo al seleccionar el botón que está justo a la derecha del botón Habilitar selección. Cuando la opción **Mostrar adornos de diseño** está activada, la ventana de la aplicación muestra líneas horizontales y verticales a lo largo de los límites del objeto seleccionado para que pueda ver lo que alinea, así como rectángulos que muestran los márgenes. Por ejemplo, active **Habilitar selección** y **Mostrar diseño**, y seleccione el bloque de texto **Agregar elemento** en la aplicación. Debería ver el nodo del bloque de texto en **Live Visual Tree** y las propiedades del bloque de texto en **Live Property Viewer**, así como las líneas horizontales y verticales en los límites del bloque de texto.
 
-![LivePropertyViewer en DisplayLayout](../debugger/media/livevisualtreelivepropertyviewer-displaylayout.png "LiveVisualTreeLivePropertyViewer DisplayLayout")
+![LivePropertyViewer en DisplayLayout](../debugger/media/livevisualtreelivepropertyviewer-displaylayout.png "LiveVisualTreeLivePropertyViewer-DisplayLayout")
 
 **Obtener una vista previa de la selección**. Puede habilitar este modo seleccionando el tercer botón de la izquierda en la barra de herramientas de Live Visual Tree. Este modo muestra el XAML donde se ha declarado el elemento, siempre y cuando tenga acceso al código fuente de la aplicación. Seleccione **Habilitar selección** y **Obtener una vista previa de la selección** y, luego, seleccione el botón de nuestra aplicación de prueba. Se abre el archivo MainWindow.xaml en Visual Studio y se coloca el cursor en la línea en la que se define el botón.
 
@@ -103,3 +103,7 @@ Puede usar estas herramientas XAML, aunque no disponga del código fuente. Al ad
 3. La aplicación comienza a ejecutarse.
 
 4. En la segunda instancia de Visual Studio, abra **Live Visual Tree** (**Depurar > Ventanas > Live Visual Tree**). Debería ver los elementos de interfaz de usuario **TestXaml** y debería poder manipularlos como lo hizo al depurar directamente la aplicación.
+
+## <a name="see-also"></a>Vea también
+
+[Escribir y depurar código XAML en ejecución con recarga activa de XAML](xaml-hot-reload.md)
