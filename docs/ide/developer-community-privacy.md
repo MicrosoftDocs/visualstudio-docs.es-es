@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 86578a300da8ea1cdb739db4d1c02505a6d97180
-ms.sourcegitcommit: 9e5e8b6e9a3b6614723e71cc23bb434fe4218c9c
+ms.openlocfilehash: 447a06d64691af1d77a634179631ce7822b6d43d
+ms.sourcegitcommit: 78e2637e4fbfadd4509b55276816b64f5c24c606
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/20/2019
-ms.locfileid: "69634850"
+ms.lasthandoff: 09/10/2019
+ms.locfileid: "70864692"
 ---
 # <a name="developer-community-data-privacy"></a>Privacidad de datos de la Comunidad de desarrolladores
 
@@ -68,8 +68,14 @@ Si se inicia **Report a problem** (Notificar un problema) desde Visual Studio, r
 
 - Registros de Python, si existen
 
-- Una captura de pantalla, si opta por incluirla
+- Registros de Windows Forms, si existen
 
+> [!NOTE]
+> Los archivos de registro se envían a Microsoft solo cuando se proporciona el permiso mediante el envío del informe de problemas con el que se incluyen. Puede ver los archivos que se incluyen en el paso "Resumen" de la ventana "Notificar un problema" (vea la captura de pantalla incluida en esta nota). Los registros recopilados se almacenan en la carpeta %temp% y se limpian periódicamente y después de cada carga. Si no quiere incluir un registro en el informe de problemas, elimine el archivo de la carpeta %temp% antes de enviar el informe.  
+  > ![Notificar un problema: resumen de los registros recopilados](media/report-a-problem-logs-collected.png)
+
+- Una captura de pantalla, si opta por incluirla
+  
 - Datos de grabación, si decide incluir una grabación, que incluya:
 
   - Pasos para reproducir el problema

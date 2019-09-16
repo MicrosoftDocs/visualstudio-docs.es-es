@@ -10,12 +10,12 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 90035e99c13484bd1b49e59350489ed1090b5f4e
-ms.sourcegitcommit: 673b9364fc9a96b027662dcb4cf5d61cab60ef11
+ms.openlocfilehash: 2fbc9d95a6e334c3dcd788c4b686a222c417b0df
+ms.sourcegitcommit: 0f44ec8ba0263056ad04d2d0dc904ad4206ce8fc
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/21/2019
-ms.locfileid: "69891265"
+ms.lasthandoff: 09/06/2019
+ms.locfileid: "70766111"
 ---
 # <a name="template-parameters"></a>Parámetros de plantilla
 
@@ -61,7 +61,7 @@ En la tabla siguiente se muestran los parámetros de plantilla reservados que se
 |safeitemrootname|Igual a `safeitemname`.|
 |safeprojectname|Nombre especificado por el usuario al crear el proyecto, tras quitar todos los caracteres no seguros y los espacios.|
 |hora|Hora actual en el formato DD/MM/AAAA 00:00:00.|
-|SpecificSolutionName|Nombre de la solución. Cuando se activa "Crear directorio para la solución", `SpecificSolutionName` tiene el nombre de la solución. Cuando no se activa "Crear directorio para la solución", `SpecificSolutionName` está en blanco.|
+|specifiedSolutionName|Nombre de la solución. Cuando se activa "Crear directorio para la solución", `specifiedSolutionName` tiene el nombre de la solución. Cuando no se activa "Crear directorio para la solución", `specifiedSolutionName` está en blanco.|
 |userdomain|Dominio del usuario actual.|
 |username|Nombre de usuario actual.|
 |webnamespace|Nombre del sitio web actual. Este parámetro se usa en la plantilla de formulario web para garantizar que los nombres de clase sean únicos. Si el sitio web está en el directorio raíz del servidor web, este parámetro de plantilla se resuelve como el directorio raíz del servidor web.|
