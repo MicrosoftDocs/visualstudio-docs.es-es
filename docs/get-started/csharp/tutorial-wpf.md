@@ -14,22 +14,26 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: d146416190924c8f1835ef17bc0fb622fcc53e03
-ms.sourcegitcommit: 44e9b1d9230fcbbd081ee81be9d4be8a485d8502
+ms.openlocfilehash: facd2ed28ae4eb3e34843bff331567c4c8c55526
+ms.sourcegitcommit: 78e2637e4fbfadd4509b55276816b64f5c24c606
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/30/2019
-ms.locfileid: "70180222"
+ms.lasthandoff: 09/10/2019
+ms.locfileid: "70864808"
 ---
 # <a name="tutorial-create-a-simple-application-with-c"></a>Tutorial: Crear una aplicación sencilla con C\#
 
 Tras completar este tutorial, estará familiarizado con muchas de las herramientas, cuadros de diálogo y diseñadores que puede usar para desarrollar aplicaciones con Visual Studio. Creará una aplicación "Hola mundo", diseñará la interfaz de usuario, agregará código y depurará errores, mientras aprende a trabajar en el entorno de desarrollo integrado ([IDE](visual-studio-ide.md)).
 
+## <a name="prerequisites"></a>Requisitos previos
+
 ::: moniker range="vs-2017"
-Si todavía no ha instalado Visual Studio, vaya a la página de [descargas de Visual Studio](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download) para instalarlo de forma gratuita.
+Si todavía no ha instalado Visual Studio, vaya a la página de [descargas de Visual Studio](https://visualstudio.microsoft.com/vs/older-downloads/?) para instalarlo de forma gratuita.
 ::: moniker-end
 ::: moniker range=">=vs-2019"
-Si todavía no ha instalado Visual Studio, vaya a la página de [descargas de Visual Studio](https://visualstudio.microsoft.com/downloads) para instalarlo de forma gratuita.
+
+- Si todavía no ha instalado Visual Studio, vaya a la página de [descargas de Visual Studio](https://visualstudio.microsoft.com/downloads/) para instalarlo de forma gratuita.
+- Para este tutorial puede usar .NET Framework o .NET Core. .NET Core es el marco más reciente y moderno. .NET Core requiere la versión 16.3 de Visual Studio 2019 o posterior.
 ::: moniker-end
 
 ## <a name="configure-the-ide"></a>Configurar el IDE
@@ -76,9 +80,12 @@ Cuando cree una aplicación en Visual Studio, primero creará un proyecto y una 
 
    ![Ver la ventana "Crear un proyecto nuevo"](../../get-started/media/vs-2019/start-window-create-new-project.png "Captura de pantalla de la ventana \"Crear un proyecto nuevo\"")
 
-1. En la pantalla **Crear un nuevo proyecto**, busque "WPF", elija **Aplicación de WPF (.NET Framework)** y haga clic en **Siguiente**.
+1. En la pantalla **Crear un proyecto nuevo**, busque "WPF", elija **Aplicación WPF (.NET Core)** y después seleccione **Siguiente**.
 
    ![Plantilla de aplicación de WPF en el cuadro de diálogo "Crear un proyecto nuevo"](media/vs-2019/exploreide-newprojectcsharp-vs2019.png "Captura de pantalla de la plantilla de aplicación de WPF en el cuadro de diálogo \"Crear un proyecto nuevo\"")
+
+   > [!NOTE]
+   > Es posible que encuentre dos plantillas de escritorio de WPF, una para .NET Framework y otra para .NET Core. La plantilla de .NET Core está disponible en la versión 16.3 de Visual Studio 2019 y versiones posteriores. Puede usar cualquiera de ellas para este tutorial, pero se recomienda .NET Core para el desarrollo nuevo.
 
 1. En la pantalla siguiente, asígnele al proyecto el nombre **HelloWPFApp** y haga clic en **Crear**.
 
@@ -99,19 +106,11 @@ Después de crear el proyecto, puede personalizarlo. Para ello, elija **Ventana 
 
 ### <a name="change-the-name-of-mainwindowxaml"></a>Cambiar el nombre de MainWindow.xaml
 
-Asignemos a MainWindow un nombre más específico.
-
-1. En el **Explorador de soluciones**, seleccione *MainWindow.xaml*. Debería ver la ventana **Propiedades**, pero, si no es así, seleccione el menú **Ver** y el elemento **Ventana de propiedades**. (O bien, presione **F4**).
-
-1. Cambie la propiedad **Nombre de archivo** a `Greetings.xaml`.
-
-     ![Ventana Propiedades con el nombre de archivo resaltado](../media/exploreide-filenameinpropertieswindow.png "Captura de pantalla de la ventana Propiedades con el nombre de archivo resaltado")
-
-     El **Explorador de soluciones** muestra que el nombre de archivo es ahora *Greetings.xaml* y que el nombre del archivo de código anidado es ahora *Greetings.xaml.cs*. Este archivo de código está anidado bajo el nodo del archivo *.xaml* para mostrar que están muy relacionados entre sí.
-
-     ![Ventana Propiedades y ventana Explorador de soluciones con el nombre de archivo Greetings](../media/exploreide-greetingsfilename.png "Captura de pantalla de la ventana Propiedades y la ventana Explorador de soluciones con el nombre de archivo Greetings")     
+Asignemos a MainWindow un nombre más específico. En el **Explorador de soluciones**, haga clic con el botón derecho en *MainWindow.xaml* y seleccione **Cambiar nombre**. Cambie el nombre del archivo por *Greetings.xaml*.
 
 ## <a name="design-the-user-interface-ui"></a>Diseñar la interfaz de usuario (IU)
+
+Si el diseñador no está abierto, seleccione *Greetings.xaml* y presione **Mayús**+**F7** para abrirlo.
 
 Agregaremos tres tipos de controles a esta aplicación: un control <xref:System.Windows.Controls.TextBlock>, dos controles <xref:System.Windows.Controls.RadioButton> y un control <xref:System.Windows.Controls.Button>.
 
@@ -123,7 +122,7 @@ Agregaremos tres tipos de controles a esta aplicación: un control <xref:System.
 
      ![Cuando de herramientas con el control TextBlock resaltado](../media/exploreide-textblocktoolbox.png "Captura de pantalla de la ventana Cuadro de herramientas con el control TextBlock resaltado")
 
-1. Agregue un control TextBlock a la superficie de diseño. Para ello, elija el elemento **TextBlock** y arrástrelo a la ventana en la superficie de diseño. Centre el control cerca de la parte superior de la ventana.
+1. Agregue un control TextBlock a la superficie de diseño. Para ello, elija el elemento **TextBlock** y arrástrelo a la ventana en la superficie de diseño. Centre el control cerca de la parte superior de la ventana. En Visual Studio 2019 y versiones posteriores, puede usar las guías de color rojo para centrar el control.
 
     La ventana debería ser similar a la siguiente ilustración:
 
@@ -159,7 +158,7 @@ Después, agregará dos controles [RadioButton](/dotnet/framework/wpf/controls/r
 
      ![Ventana Cuadro de herramientas con el control RadioButton seleccionado](../media/exploreide-radiobuttontoolbox.png "Captura de pantalla de la ventana Cuadro de herramientas con el control RadioButton seleccionado")
 
-1. Agregue dos controles RadioButton a la superficie de diseño. Para ello, elija el elemento **RadioButton** y arrástrelo a la ventana en la superficie de diseño. Mueva los botones (para hacerlo, selecciónelos y use las teclas de dirección) de modo que aparezcan uno junto al otro bajo el control TextBlock.
+1. Agregue dos controles RadioButton a la superficie de diseño. Para ello, elija el elemento **RadioButton** y arrástrelo a la ventana en la superficie de diseño. Mueva los botones (para hacerlo, selecciónelos y use las teclas de dirección) de modo que aparezcan uno junto al otro bajo el control TextBlock. Use las guías de color rojo para alinear los controles.
 
    La ventana debe ser similar a la que se muestra a continuación:
 
@@ -175,11 +174,7 @@ A continuación, podrá agregar el texto para mostrar de cada control RadioButto
 
 ### <a name="add-display-text-for-each-radio-button"></a>Agregar el texto para mostrar de cada botón de radio
 
-1. En la superficie de diseño, abra el menú contextual de HelloButton. Para ello, presione el botón derecho del mouse encima de HelloButton. Elija **Editar texto** y, luego, escriba `Hello` (Hola).
-
-1. Abra el menú contextual de GoodbyeButton. Para ello, presione el botón derecho del mouse encima de GoodbyeButton. Elija **Editar texto** y, luego, escriba `Goodbye` (Adiós).
-
-   El marcado XAML ahora debería ser similar al del ejemplo siguiente:
+1. Cambie el atributo **Content** de los controles `HelloButton` y `GoodbyeButton` por `"Hello"` y `"Goodbye"` en el código XAML. El marcado XAML ahora debería ser similar al del ejemplo siguiente:
 
    ```xaml
    <Grid>
@@ -211,7 +206,7 @@ El último elemento de la interfaz de usuario que agregará es un control [Butto
 
 ### <a name="add-the-button-control"></a>Agregar el control Button
 
-1. En el **Cuadro de herramientas**, busque el control **Botón** y, después, agréguelo a la superficie de diseño en los controles RadioButton. Para ello, arrástrelo al formulario de la vista de diseño.
+1. En el **Cuadro de herramientas**, busque el control **Botón** y, después, agréguelo a la superficie de diseño en los controles RadioButton. Para ello, arrástrelo al formulario de la vista de diseño. Si usa Visual Studio 2019 o una versión posterior, una línea de color rojo le ayuda a centrar el control.
 
 1. En la vista XAML, cambie el valor de **Content** del control de botón de `Content="Button"` a `Content="Display"` y, después, guarde los cambios.
 
@@ -239,7 +234,7 @@ Cuando se ejecuta esta aplicación, aparece un cuadro de mensaje después de que
      Se abre *Greetings.xaml.cs* con el cursor en el evento `Button_Click`.
 
     ```csharp
-    private void Button_Click_1(object sender, RoutedEventArgs e)
+    private void Button_Click(object sender, RoutedEventArgs e)
     {
 
     }
@@ -286,7 +281,16 @@ Hemos cambiado el nombre de *MainWindow.xaml* a *Greetings.xaml* al comienzo de 
 
 1. Cambie `StartupUri="MainWindow.xaml"` a `StartupUri="Greetings.xaml"` y después guarde los cambios.
 
-Vuelva a iniciar el depurador (presione **F5**). Debería ver la ventana **Greetings** de la aplicación. Ahora, cierre la ventana de la aplicación para detener la depuración.
+Vuelva a iniciar el depurador (presione **F5**). Debería ver la ventana **Greetings** de la aplicación.
+
+::: moniker range="vs-2017"
+![Captura de pantalla de la aplicación en ejecución](media/exploreide-wpf-running-app.png)
+::: moniker-end
+::: moniker range=">=vs-2019"
+![Captura de pantalla de la aplicación en ejecución](media/vs-2019/exploreide-wpf-running-app.png)
+::: moniker-end
+
+Ahora, cierre la ventana de la aplicación para detener la depuración.
 
 ### <a name="debug-with-breakpoints"></a>Depurar con puntos de interrupción
 
@@ -325,6 +329,12 @@ Puede probar el código durante la depuración. Para ello, agregue algunos punto
 1. Cierre la ventana de la aplicación para detener la depuración.
 
 1. En la barra de menús, elija **Depurar** > **Deshabilitar todos los puntos de interrupción**.
+
+### <a name="view-a-representation-of-the-ui-elements"></a>Visualización de una representación de los elementos de la interfaz de usuario
+
+En la aplicación en ejecución, debería ver un widget que aparece en la parte superior de la ventana. Se trata de una aplicación auxiliar en tiempo de ejecución que proporciona acceso rápido a algunas características de depuración útiles. Haga clic en el primer botón, **Ir al árbol visual dinámico**. Debería ver una ventana con un árbol que contiene todos los elementos visuales de la página. Expanda los nodos para buscar los botones que ha agregado.
+
+![Captura de pantalla de la ventana Árbol visual dinámico](media/vs-2019/exploreide-live-visual-tree.png)
 
 ### <a name="build-a-release-version-of-the-application"></a>Compilar una versión de lanzamiento de la aplicación
 

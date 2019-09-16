@@ -17,12 +17,12 @@ dev_langs:
 - CPP
 ms.workload:
 - multiple
-ms.openlocfilehash: 98dadaed75cf16ae6ae35da9d6589355a63bd35c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 89de993337ecd214c7771faf17b24f90fa5e0110
+ms.sourcegitcommit: 0f44ec8ba0263056ad04d2d0dc904ad4206ce8fc
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62975258"
+ms.lasthandoff: 09/06/2019
+ms.locfileid: "70766252"
 ---
 # <a name="code-snippets"></a>Fragmentos de código
 
@@ -31,7 +31,7 @@ Los fragmentos de código son pequeños bloques de código reutilizable que se p
 > [!NOTE]
 > Este tema se aplica a Visual Studio para Windows. En el caso de Visual Studio para Mac, vea [Fragmentos de código (Visual Studio para Mac)](/visualstudio/mac/snippets).
 
-Hay fragmentos de código disponibles para una gran variedad de lenguajes, entre otros, C#, C++, Visual Basic, XML y T-SQL. Para ver todos los fragmentos de código instalados disponibles de un lenguaje, abra el **Administrador de fragmentos de código** desde el menú **Herramientas** en Visual Studio y elija el lenguaje en la parte superior del menú desplegable.
+Hay fragmentos de código disponibles para una gran variedad de lenguajes, entre otros, C#, C++, Visual Basic, XML y T-SQL. Para ver todos los fragmentos de código instalados disponibles de un lenguaje, abra el **Administrador de fragmentos de código** desde el menú **Herramientas** (o bien, presione **Ctrl**+**K**, **Ctrl**+**B**) y elija el lenguaje en el menú desplegable de la parte superior.
 
 ![Cuadro de diálogo Administrador de fragmentos de código](media/code-snippets-manager.png)
 
@@ -41,7 +41,7 @@ Estas son las formas en general de tener acceso a los fragmentos de código:
 
 - En el menú contextual del editor de código, elija **Fragmento de código** > **Insertar fragmento de código**.
 
-- En el teclado, presione **Ctrl**+**K**+**X**.
+- En el teclado, presione **Ctrl**+**K**,**Ctrl**+**X**
 
 ## <a name="expansion-snippets-and-surround-with-snippets"></a>Fragmentos de código de expansión y fragmentos de código envolventes
 
@@ -60,7 +60,7 @@ finally
 }
 ```
 
-Para insertar este fragmento de código, haga clic en **Insertar fragmento de código** en el menú contextual de la ventana de código y, después, en **Visual C#**, escriba `tryf` y presione la tecla **TAB**. También puede escribir `tryf` y presionar **TAB** dos veces.
+Para insertar este fragmento de código, haga clic en **Insertar fragmento de código** en el menú contextual de la ventana de código y, después, en **Visual C#** , escriba `tryf` y presione la tecla **TAB**. También puede escribir `tryf` y presionar **TAB** dos veces.
 
 Un ejemplo de un fragmento de código rodear con: en el acceso directo de C++ `if` se puede utilizar como un fragmento de código de inserción o como un fragmento de código rodear con. Si selecciona una línea de código (por ejemplo, `return FALSE;`) y, después, hace clic en **Envolver con** > **if**, el fragmento de código se expandirá alrededor de la línea:
 

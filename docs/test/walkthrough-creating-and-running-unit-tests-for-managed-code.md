@@ -13,12 +13,12 @@ manager: jillfra
 ms.workload:
 - dotnet
 author: gewarren
-ms.openlocfilehash: 2c7a81eefc48626a57d15f99579e151390b52fb9
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 4b9e30d70aa90645d05d3bf7b530056feec752ca
+ms.sourcegitcommit: 9f11537a721e69879a612979a1aca98f40bb4d4d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68926792"
+ms.lasthandoff: 09/05/2019
+ms.locfileid: "70383720"
 ---
 # <a name="walkthrough-create-and-run-unit-tests-for-managed-code"></a>Tutorial: Crear y ejecutar pruebas unitarias en código administrado
 
@@ -429,7 +429,7 @@ public void Debit_WhenAmountIsMoreThanBalance_ShouldThrowArgumentOutOfRange()
 
 ### <a name="retest-rewrite-and-reanalyze"></a>Vuelva a probar, reescriba y vuelva a analizar
 
-Imagine que hay un error en el método sometido a prueba y que el método `Debit` ni produce una excepción <xref:System.ArgumentOutOfRangeException> ni tampoco muestra el mensaje correcto con la excepción. Actualmente, el método de prueba no trata este caso. Si el valor de `debitAmount` es válido (es decir, menor que el saldo pero mayor que cero), no se detecta ninguna excepción, por lo que la comprobación nunca se desencadena. Sí, el método de prueba se completa correctamente. Esto no es bueno, porque quiere que el método de prueba no se supere si no se produce ninguna excepción.
+Imagine que hay un error en el método sometido a prueba y que el método `Debit` ni produce una excepción <xref:System.ArgumentOutOfRangeException> ni tampoco muestra el mensaje correcto con la excepción. Actualmente, el método de prueba no trata este caso. Si el valor de `debitAmount` es válido (es decir, menor que el saldo y mayor que cero), no se detecta ninguna excepción, por lo que la aserción nunca se desencadena. Sí, el método de prueba se completa correctamente. Esto no es bueno, porque quiere que el método de prueba no se supere si no se produce ninguna excepción.
 
 Se trata de un error en el método de prueba. Para resolver el problema, agregue una validación <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert.Fail%2A> al final del método de prueba para controlar el caso donde no se produce ninguna excepción.
 

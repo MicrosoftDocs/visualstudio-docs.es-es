@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 39287eb2b1aec27dcb0c08c40875ce579b3a6bea
-ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.openlocfilehash: 9df54befff79b82703cb363fea92536285c68232
+ms.sourcegitcommit: 4dfe098ac0df294aad63e6b384d6575980798ca3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66745780"
+ms.lasthandoff: 09/11/2019
+ms.locfileid: "70888028"
 ---
 # <a name="csc-task"></a>Csc (tarea)
 Contiene *csc.exe* y genera archivos ejecutables ( *.exe*), archivos de biblioteca de vínculos dinámicos ( *.dll*) o archivos de módulos de códigos ( *.netmodule*). Para obtener más información sobre *csc.exe*, vea [Opciones del compilador de C#](/dotnet/csharp/language-reference/compiler-options/index).
@@ -31,7 +31,7 @@ Contiene *csc.exe* y genera archivos ejecutables ( *.exe*), archivos de bibliote
 ## <a name="parameters"></a>Parámetros
 En la siguiente tabla se describen los parámetros de la tarea `Csc` .
 
-| Parámetro | Descripción |
+| Parámetro | DESCRIPCIÓN |
 |------------------------------| - |
 | `AdditionalLibPaths` | Parámetro `String[]` opcional.<br /><br /> Especifica más directorios donde buscar referencias. Para obtener más información, vea [-lib (Opciones del compilador de C#)](/dotnet/csharp/language-reference/compiler-options/lib-compiler-option). |
 | `AddModules` | Parámetro `String` opcional.<br /><br /> Especifica uno o varios módulos que formarán parte del ensamblado. Para obtener más información, vea [-addmodule (Opciones del compilador de C#)](/dotnet/csharp/language-reference/compiler-options/addmodule-compiler-option). |
@@ -42,7 +42,7 @@ En la siguiente tabla se describen los parámetros de la tarea `Csc` .
 | `CodePage` | Parámetro `Int32` opcional.<br /><br /> Especifica la página de códigos que se va a usar para todos los archivos de código fuente de la compilación. Para obtener más información, vea [-codepage (Opciones del compilador de C#)](/dotnet/csharp/language-reference/compiler-options/codepage-compiler-option). |
 | `DebugType` | Parámetro `String` opcional.<br /><br /> Especifica el tipo de depuración. `DebugType` puede ser `full` o `pdbonly`. El valor predeterminado es `full`, que permite a un depurador adjuntarlo a un programa en ejecución. Especificar `pdbonly` permite depurar el código fuente cuando el programa se inicia en el depurador, pero solo mostrará el ensamblador cuando el programa que se ejecuta está asociado al depurador.<br /><br /> Este parámetro invalida el parámetro `EmitDebugInformation`.<br /><br /> Para obtener más información, vea [-debug (Opciones del compilador de C#)](/dotnet/csharp/language-reference/compiler-options/debug-compiler-option). |
 | `DefineConstants` | Parámetro `String` opcional.<br /><br /> Define los símbolos de preprocesador. Para obtener más información, vea [-define (Opciones del compilador de C#)](/dotnet/csharp/language-reference/compiler-options/define-compiler-option). |
-| `DelaySign` | Parámetro `Boolean` opcional.<br /><br /> Si `true`, especifica que quiere un ensamblado completamente firmado. Si `false`, especifica que solo quiere colocar la clave pública en el ensamblado.<br /><br /> Este parámetro no tiene ningún efecto a menos que se utilice con el parámetro `KeyFile` o `KeyContainer`.<br /><br /> Para obtener más información, vea [-delaysign (Opciones del compilador de C#)](/dotnet/csharp/language-reference/compiler-options/delaysign-compiler-option). |
+| `DelaySign` | Parámetro `Boolean` opcional.<br /><br /> Si `true`, especifica que solo quiere colocar la clave pública en el ensamblado. Si `false`, especifica que quiere un ensamblado completamente firmado.<br /><br /> Este parámetro no tiene ningún efecto a menos que se utilice con el parámetro `KeyFile` o `KeyContainer`.<br /><br /> Para obtener más información, vea [-delaysign (Opciones del compilador de C#)](/dotnet/csharp/language-reference/compiler-options/delaysign-compiler-option). |
 | `Deterministic` | Parámetro `Boolean` opcional.<br/><br/> Si es `true`, hace que el compilador genere un ensamblado cuyo contenido binario es idéntico en todas las compilaciones si las entradas son idénticas.<br/><br/>Para obtener más información, vea [-deterministic (Opciones del compilador de C#)](/dotnet/csharp/language-reference/compiler-options/deterministic-compiler-option). |
 | `DisabledWarnings` | Parámetro `String` opcional.<br /><br /> Especifica la lista de advertencias que se va a desactivar. Para obtener más información, vea [-nowarn (Opciones del compilador de C#)](/dotnet/csharp/language-reference/compiler-options/nowarn-compiler-option). |
 | `DocumentationFile` | Parámetro `String` opcional.<br /><br /> Procesa los comentarios de documentación generando un archivo XML. Para obtener más información, vea [-doc (Opciones del compilador de C#)](/dotnet/csharp/language-reference/compiler-options/doc-compiler-option). |
