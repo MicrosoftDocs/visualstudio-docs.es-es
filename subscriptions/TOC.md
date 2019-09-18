@@ -35,6 +35,7 @@
 ##### [Suscripción de Office 365](vs-office365.md)
 ##### [Parasoft](vs-parasoft.md)
 ##### [Power BI Pro](vs-pbi.md)
+##### [RStudio](vs-rstudio.md)
 ##### [Visual Studio App Center](vs-visual-studio-app-center.md)
 ##### [IDE de Visual Studio](vs-ide-benefit.md)
 ##### [WhiteSource Bolt](vs-whitesource.md)
