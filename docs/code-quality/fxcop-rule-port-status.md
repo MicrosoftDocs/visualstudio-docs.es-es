@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: d6d891001bbb46e01049c2c8d71bb25372bb8c29
-ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
+ms.openlocfilehash: 07a5130edd534008b4343ab439bf20bf63bc3cde
+ms.sourcegitcommit: 2db01751deeee7b2bdb1db25419ea6706e6fcdf8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69551058"
+ms.lasthandoff: 09/17/2019
+ms.locfileid: "71062414"
 ---
 # <a name="fxcop-rule-port-status"></a>Estado del puerto de la regla de FxCop
 
@@ -23,9 +23,9 @@ Si anteriormente usó el análisis de código estático en Visual Studio, es pos
 
 ## <a name="ported-rules"></a>Reglas migradas
 
-La [Página de documentación](https://github.com/dotnet/roslyn-analyzers/blob/master/src/Microsoft.CodeAnalysis.FxCopAnalyzers/Microsoft.CodeAnalysis.FxCopAnalyzers.md) autogenerada del repositorio Roslyn-analizadores tiene la lista más actualizada de reglas que se han trasladado a los analizadores de FxCop. Esa página también tiene información adicional, por ejemplo, si la regla está habilitada de forma predeterminada y si tiene una *corrección de código*asociada. (Las correcciones de[código](../ide/quick-actions.md) son correcciones con un solo clic disponibles en el menú del icono de bombilla de Visual Studio).
+La [Página de documentación autogenerada](https://github.com/dotnet/roslyn-analyzers/blob/master/src/Microsoft.CodeAnalysis.FxCopAnalyzers/Microsoft.CodeAnalysis.FxCopAnalyzers.md) del repositorio Roslyn-analizadores tiene la lista más actualizada de reglas que se han trasladado a los analizadores de FxCop. Esa página también tiene información adicional, por ejemplo, si la regla está habilitada de forma predeterminada y si tiene una *corrección de código*asociada. (Las[correcciones de código](../ide/quick-actions.md) son correcciones con un solo clic disponibles en el menú del icono de bombilla de Visual Studio).
 
-A partir de la fecha de esta página, la lista de reglas de FxCop que se han trasladado a los analizadores de [FxCop](install-fxcop-analyzers.md) incluye:
+A partir de la fecha de esta página, la lista de reglas de FxCop que se han trasladado a los [analizadores de FxCop](install-fxcop-analyzers.md) incluye:
 
 Identificador de la regla | Título
 --------|---------
@@ -69,7 +69,7 @@ Identificador de la regla | Título
 [CA1065](ca1065-do-not-raise-exceptions-in-unexpected-locations.md) | No producir excepciones en ubicaciones inesperadas
 CA1066 | El {0} tipo debe implementar\<IEquatable T > porque invalida Equals
 CA1067 | Invalide Object. Equals (Object) al\<implementar IEquatable T >
-CA1068 | Los parámetros de CancellationToken deben aparecer en último lugar
+[CA1068](ca1068.md) | Los parámetros de CancellationToken deben aparecer en último lugar
 CA1200 | Evitar el uso de etiquetas CREF con un prefijo
 [CA1303](ca1303-do-not-pass-literals-as-localized-parameters.md) | No pasar literales como parámetros localizados
 [CA1304](ca1304-specify-cultureinfo.md) | Especificar CultureInfo
@@ -204,7 +204,7 @@ CA9999 | Versión de analizador no coincidente
 
 ## <a name="unported-rules"></a>Reglas no trasladadas
 
-El conjunto de reglas que no se han migrado a los analizadores de [FxCop](install-fxcop-analyzers.md) consta de reglas que todavía no se [pueden portar](#rules-that-may-be-ported)y que están desusadas y que [no se portan](#deprecated-rules).
+El conjunto de reglas que no se han migrado a los [analizadores de FxCop](install-fxcop-analyzers.md) consta de reglas que todavía no se [pueden portar](#rules-that-may-be-ported)y que están desusadas y que [no se portan](#deprecated-rules).
 
 ### <a name="rules-that-may-be-ported"></a>Reglas que se pueden portar
 

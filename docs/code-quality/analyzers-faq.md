@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ae41d9ac30567a32780af422c3af1e2b0d6a63ae
-ms.sourcegitcommit: b761a4a457646d04adfda510c8837734ee4d8f17
+ms.openlocfilehash: 26e48664c40db018df60f2b6d600fab0767a7b72
+ms.sourcegitcommit: 2db01751deeee7b2bdb1db25419ea6706e6fcdf8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "70929772"
+ms.lasthandoff: 09/17/2019
+ms.locfileid: "71062164"
 ---
 # <a name="code-analysis-faq"></a>Preguntas más frecuentes sobre análisis de código
 
@@ -24,15 +24,15 @@ Esta página contiene respuestas a algunas preguntas frecuentes sobre el anális
 
 **P**: ¿Debo usar el análisis de código o EditorConfig para comprobar el estilo de código?
 
-**R**: Los archivos. editorconfig y de análisis de código funcionan en mano. Al definir estilos de código [en un archivo. editorconfig](../ide/editorconfig-code-style-settings-reference.md) o en la página de [Opciones editor de texto](../ide/code-styles-and-code-cleanup.md) , en realidad está configurando los analizadores de código integrados en Visual Studio. Los archivos EditorConfig también se pueden usar para configurar algunos paquetes del analizador de NuGet, como los [analizadores de FxCop](configure-fxcop-analyzers.md).
+**R**: Los archivos de análisis de código y EditorConfig funcionan a la mano. Al definir estilos de código [en un archivo EditorConfig](../ide/editorconfig-code-style-settings-reference.md) o en la página de [Opciones editor de texto](../ide/code-styles-and-code-cleanup.md) , en realidad está configurando los analizadores de código integrados en Visual Studio. Los archivos EditorConfig también se pueden usar para configurar algunos paquetes del analizador de NuGet, como los [analizadores de FxCop](configure-fxcop-analyzers.md).
 
 ## <a name="editorconfig-versus-rule-sets"></a>EditorConfig frente a conjuntos de reglas
 
-**P**: ¿Debo configurar mis analizadores mediante un conjunto de reglas o un archivo. editorconfig?
+**P**: ¿Debo configurar mis analizadores mediante un conjunto de reglas o un archivo EditorConfig?
 
-**R**: Los conjuntos de reglas y los archivos. editorconfig son maneras mutuamente excluyentes de configurar analizadores. Pueden coexistir. Los [conjuntos de reglas](analyzer-rule-sets.md) permiten habilitar y deshabilitar reglas y establecer su gravedad. Los archivos EditorConfig ofrecen otras maneras de configurar reglas. En el caso de los analizadores de FxCop, los archivos. editorconfig permiten [definir los tipos de código que se van a analizar](fxcop-analyzer-options.md). En el caso de los analizadores integrados en Visual Studio, los archivos. editorconfig permiten [definir los estilos de código preferidos](../ide/editorconfig-code-style-settings-reference.md) para un código base.
+**R**: Los conjuntos de reglas y los archivos EditorConfig pueden coexistir y se pueden usar para configurar los analizadores. Los [conjuntos de reglas](analyzer-rule-sets.md) permiten habilitar y deshabilitar reglas y establecer su gravedad. Los archivos EditorConfig ofrecen otras maneras de configurar reglas. En el caso de los analizadores de FxCop, los archivos EditorConfig permiten [definir los tipos de código que se van a analizar](fxcop-analyzer-options.md). En el caso de los analizadores de estilo de código integrados en Visual Studio, los archivos EditorConfig permiten [definir los estilos de código preferidos](../ide/editorconfig-code-style-settings-reference.md) para un código base.
 
-Además de los conjuntos de reglas y los archivos. editorconfig, algunos analizadores se configuran mediante el uso de archivos de texto marcados como [archivos adicionales](../ide/build-actions.md#build-action-values) para los C# compiladores de y VB.
+Además de los conjuntos de reglas y los archivos EditorConfig, algunos analizadores se configuran mediante el uso de archivos de texto marcados como [archivos adicionales](../ide/build-actions.md#build-action-values) para los C# compiladores de y VB.
 
 > [!NOTE]
 > Los archivos EditorConfig no se pueden usar para configurar el análisis heredado, mientras que los conjuntos de reglas pueden.
