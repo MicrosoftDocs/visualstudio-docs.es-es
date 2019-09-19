@@ -9,19 +9,19 @@ ms.devlang:
 - csharp
 - vb
 dev_langs:
-- csharp
-- vb
+- CSharp
+- VB
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 26bfd4d74580fecd15b1891895e5ae28a18f3296
-ms.sourcegitcommit: 4dfe098ac0df294aad63e6b384d6575980798ca3
+ms.openlocfilehash: 744fd81fe8121936def42277b442d8e54ea88786
+ms.sourcegitcommit: 2db01751deeee7b2bdb1db25419ea6706e6fcdf8
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/11/2019
-ms.locfileid: "70887957"
+ms.lasthandoff: 09/17/2019
+ms.locfileid: "71062866"
 ---
 # <a name="step-8-write-code-for-the-show-a-picture-button-event-handler"></a>Paso 8: Escribir código para el controlador de eventos del botón Mostrar una imagen
 
@@ -42,6 +42,9 @@ IntelliSense intenta determinar lo que se quiere hacer a continuación y salta d
 1. Escriba una `i` en la línea vacía entre las dos llaves `{ }`. (En Visual Basic, escriba en la línea vacía entre `Private Sub...` y `End Sub`). Se abre una ventana **IntelliSense**, como se muestra en la imagen siguiente.
 
     ![IntelliSense con código de Visual C&#35;](../ide/media/express_ifintellisense.png)
+
+    > [!NOTE]
+    > Es posible que el código no muestre controladores de eventos en letras "camelCase".
 
 1. En la ventana **IntelliSense** se debe resaltar la palabra `if`. (De lo contrario, escriba una `f` minúscula, y lo hará). Observe cómo aparece un cuadro de *información sobre herramientas* junto a la ventana **IntelliSense** con la descripción, **Fragmento de código para la instrucción if**. (En Visual Basic, la información sobre herramientas dice también que se trata de un fragmento de código, pero con una redacción ligeramente diferente.) Como quiere usar ese fragmento, pulse la tecla **Tab** para insertar `if` en el código. Pulse de nuevo la tecla **Tab** para usar el fragmento de código `if`. (Si ha hecho clic en alguna otra parte y ha desaparecido la ventana **IntelliSense**, borre la `i`con la tecla de retroceso y vuelva a escribirla; se volverá a abrir la ventana **IntelliSense**).
 

@@ -1,28 +1,36 @@
 ---
 title: 'Paso 2: Crear un problema de suma aleatoria'
 ms.date: 11/04/2016
-ms.topic: conceptual
-dev_langs:
+ms.topic: tutorial
+ms.prod: visual-studio-windows
+ms.technology: vs-ide-general
+ms.devlang:
 - csharp
 - vb
+dev_langs:
+- CSharp
+- VB
 ms.assetid: 6461c4cf-f2aa-4bf5-91ed-06820a4f893d
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d5b83edaec6b81c3a2c5699184c62dbd70d71913
-ms.sourcegitcommit: 59e5758036223ee866f3de5e3c0ab2b6dbae97b6
+ms.openlocfilehash: 941cc454220848d95ed2bf161fa4709868a6ac74
+ms.sourcegitcommit: 541a0556958201ad6626bc8638406ad02640f764
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "68416882"
+ms.lasthandoff: 09/18/2019
+ms.locfileid: "71079594"
 ---
 # <a name="step-2-create-a-random-addition-problem"></a>Paso 2: Crear un problema de suma aleatoria
+
 En la segunda parte del tutorial, agregará problemas de matemáticas basados en números aleatorios para crear una prueba desafiante. También puede crear un método denominado `StartTheQuiz()` que establezca los problemas e inicie el temporizador de cuenta atrás. Más adelante en este tutorial, agregará los problemas de resta, multiplicación y división.
 
 > [!NOTE]
-> Este tema forma parte de una serie de tutoriales sobre conceptos de codificación básicos. Para obtener información general sobre el tutorial, vea [Tutorial 2: Crear una prueba matemática cronometrada](../ide/tutorial-2-create-a-timed-math-quiz.md).
+> Este tema forma parte de una serie de tutoriales sobre conceptos de codificación básicos.
+> - Para obtener información general sobre el tutorial, vea [Tutorial 2: Crear una prueba matemática cronometrada](../ide/tutorial-2-create-a-timed-math-quiz.md).
+> - Para descargar una versión completa del código, consulte [Ejemplo completo del tutorial de cuestionario de matemáticas](https://code.msdn.microsoft.com/Complete-Math-Quiz-8581813c).
 
 ## <a name="to-create-a-random-addition-problem"></a>Para crear un problema de suma aleatoria
 
@@ -36,6 +44,9 @@ En la segunda parte del tutorial, agregará problemas de matemáticas basados en
 
      [!code-csharp[VbExpressTutorial3Step2#1](../ide/codesnippet/CSharp/step-2-create-a-random-addition-problem_1.cs)]
      [!code-vb[VbExpressTutorial3Step2#1](../ide/codesnippet/VisualBasic/step-2-create-a-random-addition-problem_1.vb)]
+
+   > [!IMPORTANT]
+   > Use el control del lenguaje de programación situado en la parte superior derecha de esta página para ver el fragmento de código de C# o el de Visual Basic.<br><br>![Control de lenguaje de programación para Docs.Microsoft.com](../ide/media/docs-programming-language-control.png)
 
      Ha agregado un objeto aleatorio al formulario y lo ha denominado **randomizer**.
 
@@ -60,7 +71,8 @@ En la segunda parte del tutorial, agregará problemas de matemáticas basados en
 
      Observe que cuando escribe el punto (.) después de `randomizer` en el código, se abre una ventana de IntelliSense en la que se muestran todos los métodos del objeto aleatorio a los que puede llamar. Por ejemplo, IntelliSense muestra el método `Next()` de la forma siguiente.
 
-     ![Método Next](../ide/media/express_randomwhite.png) Método Next
+     ![Método Next](../ide/media/express_randomwhite.png)<br/>
+*Método Next*
 
      Cuando escribe un punto después de un objeto, IntelliSense muestra una lista de los miembros del objeto, como las propiedades, métodos y eventos.
 
@@ -87,14 +99,15 @@ En la segunda parte del tutorial, agregará problemas de matemáticas basados en
 
 8. Guarde el código, ejecútelo y, después, pulse el botón **Iniciar**.
 
-     Aparece un problema de suma aleatoria, tal y como se muestra en la ilustración siguiente.
+     Aparece un problema de suma aleatoria, tal y como se muestra en la captura de pantalla siguiente.
 
-     ![Problema de sumas aleatorias](../ide/media/express_additionproblem.png) Problema de sumas aleatorias
+     ![Problema de sumas aleatorias](../ide/media/express_additionproblem.png)<br/>
+*Problema de sumas aleatorias*
 
      En el siguiente paso del tutorial, agregará la suma.
 
 ## <a name="to-continue-or-review"></a>Para continuar o revisar
 
-- Para ir al siguiente paso del tutorial, vea [Paso 3: Agregar un temporizador de cuenta atrás](../ide/step-3-add-a-countdown-timer.md).
+- Para ir al siguiente paso del tutorial, vea **[Paso 3: Agregar un temporizador de cuenta atrás](../ide/step-3-add-a-countdown-timer.md)** .
 
 - Para volver al paso anterior del tutorial, vea [Paso 1: Crear un proyecto y agregar etiquetas al formulario](../ide/step-1-create-a-project-and-add-labels-to-your-form.md).

@@ -2,7 +2,7 @@
 title: 'Tutorial: Introducción a Visual Basic'
 description: Aprenda a crear aplicaciones de consola de Visual Basic en Visual Studio mediante un procedimiento paso a paso.
 ms.custom: seodec18, get-started
-ms.date: 03/23/2019
+ms.date: 09/11/2019
 ms.technology: vs-ide-general
 ms.prod: visual-studio-windows
 ms.topic: tutorial
@@ -14,12 +14,12 @@ dev_langs:
 - vb
 ms.workload:
 - multiple
-ms.openlocfilehash: 899c47154a3d55811579ff01786096f35272593a
-ms.sourcegitcommit: 44e9b1d9230fcbbd081ee81be9d4be8a485d8502
+ms.openlocfilehash: eb0bbc0cdf7aff548053c813cdf1b29ed1fed080
+ms.sourcegitcommit: b60a00ac3165364ee0e53f7f6faef8e9fe59ec4a
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/30/2019
-ms.locfileid: "70180422"
+ms.lasthandoff: 09/11/2019
+ms.locfileid: "70913306"
 ---
 # <a name="tutorial-get-started-with-visual-basic-in-visual-studio"></a>Tutorial: Introducción a Visual Basic en Visual Studio
 
@@ -47,7 +47,7 @@ En primer lugar, se creará un proyecto de aplicación de Visual Basic. En el ti
 
 2. En la barra de menús superior, elija **Archivo** > **Nuevo** > **Proyecto**.
 
-3. En el panel de la izquierda del cuadro de diálogo **Nuevo proyecto**, expanda **Visual Basic** y seleccione **.NET Core**. En el panel central, elija **Aplicación de consola (.NET Core)** . Después, asigne el nombre *HelloWorld* al archivo.
+3. En el panel de la izquierda del cuadro de diálogo **Nuevo proyecto**, expanda **Visual Basic** y seleccione **.NET Core**. En el panel central, elija **Aplicación de consola (.NET Core)** . Luego, asigne el nombre *WhatIsYourName* al proyecto.
 
    ![Plantilla de proyecto Aplicación de consola (.NET Core) en el cuadro de diálogo Nuevo proyecto en el IDE de Visual Studio](media/new-project-vb-dotnetcore-whatisyourname-console-app.png)
 

@@ -14,26 +14,29 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d22bf8af86605d414d933d16cd5dd7f8d24a6154
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ba701d123e739bc2dfa24ff798aef5338c51f532
+ms.sourcegitcommit: b60a00ac3165364ee0e53f7f6faef8e9fe59ec4a
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62946152"
+ms.lasthandoff: 09/11/2019
+ms.locfileid: "70913182"
 ---
 # <a name="how-to-extend-the-visual-studio-build-process"></a>Procedimiento para ampliar el proceso de compilación de Visual Studio
 El proceso de compilación de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] se define mediante una serie de archivos *.targets* de [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] que se importan en el archivo de proyecto. Uno de estos archivos importados, *Microsoft.Common.targets*, se puede extender para que pueda ejecutar tareas personalizadas en varios puntos del proceso de compilación. En este artículo se explican dos métodos que puede usar para extender el proceso de compilación de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]:
 
-- Reemplazar destinos predefinidos concretos definidos en *Microsoft.Common.targets*.
+- Reemplazar destinos predefinidos específicos definidos en los destinos comunes (*Microsoft.Common.targets* o los archivos que importa).
 
-- Reemplazar las propiedades "DependsOn" definidas en *Microsoft.Common.targets*.
+- Reemplazar las propiedades "DependsOn" definidas en los destinos comunes.
 
 ## <a name="override-predefined-targets"></a>Reemplazar destinos predefinidos
-El archivo *Microsoft.Common.targets* contiene un conjunto de destinos vacíos predefinidos al que se llama antes y después de algunos de los destinos principales del proceso de compilación. Por ejemplo, [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] llama al destino `BeforeBuild` antes del destino `CoreBuild` principal y al destino `AfterBuild` después del destino `CoreBuild`. De forma predeterminada, los destinos vacíos de *Microsoft.Common.targets* no hacen nada, pero puede reemplazar su comportamiento predeterminado si define los destinos que quiere en un archivo de proyecto que importa *Microsoft.Common.targets*. Al reemplazar los destinos predefinidos, puede usar tareas de [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] para tener más control sobre el proceso de compilación.
+Los destinos comunes contienen un conjunto de destinos vacíos predefinidos al que se llama antes y después de algunos de los destinos principales del proceso de compilación. Por ejemplo, [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] llama al destino `BeforeBuild` antes del destino `CoreBuild` principal y al destino `AfterBuild` después del destino `CoreBuild`. De forma predeterminada, los destinos vacíos de los destinos comunes no hacen nada, pero puede reemplazar su comportamiento predeterminado si define los destinos que quiere en un archivo de proyecto que importa los destinos comunes. Al reemplazar los destinos predefinidos, puede usar tareas de [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] para tener más control sobre el proceso de compilación.
+
+> [!NOTE]
+> Los proyectos de estilo de SDK tienen una importación implícita de destinos *después de la última línea del archivo del proyecto*. Esto significa que no se pueden reemplazar los destinos predeterminados a menos que se especifiquen las importaciones manualmente, tal como se describe en [Cómo: usar SDK de proyecto de MSBuild](how-to-use-project-sdk.md).
 
 #### <a name="to-override-a-predefined-target"></a>Para reemplazar un destino predefinido
 
-1. Identifique un destino predefinido de *Microsoft.Common.targets* que quiera reemplazar. Consulte la tabla siguiente para ver la lista completa de destinos que puede reemplazar de forma segura.
+1. Identifique un destino predefinido de los destinos comunes que quiera reemplazar. Consulte la tabla siguiente para ver la lista completa de destinos que puede reemplazar de forma segura.
 
 2. Defina el destino o los destinos al final del archivo del proyecto, inmediatamente antes de la etiqueta `</Project>`. Por ejemplo:
 
@@ -51,9 +54,9 @@ El archivo *Microsoft.Common.targets* contiene un conjunto de destinos vacíos p
 
 3. Compile el archivo del proyecto.
 
-En la tabla siguiente se muestran todos los destinos de *Microsoft.Common.targets* que puede reemplazar de forma segura.
+En la tabla siguiente se muestran todos los destinos incluidos en los destinos comunes que puede reemplazar de forma segura.
 
-|Nombre de destino|Descripción|
+|Nombre de destino|DESCRIPCIÓN|
 |-----------------|-----------------|
 |`BeforeCompile`, `AfterCompile`|Las tareas insertadas en uno de estos destinos se ejecutan antes o después de que se realice la compilación básica. La mayoría de las personalizaciones se realiza en uno de estos dos destinos.|
 |`BeforeBuild`, `AfterBuild`|Las tareas insertadas en uno de estos destinos se ejecutan antes o después de todo lo demás de la compilación. **Nota:**  Los destinos `BeforeBuild` y `AfterBuild` ya están definidos en los comentarios al final de la mayoría de los archivos de proyecto, lo que permite agregar con facilidad eventos anteriores y posteriores a la compilación al archivo de proyecto.|
@@ -66,7 +69,7 @@ En la tabla siguiente se muestran todos los destinos de *Microsoft.Common.target
 ## <a name="override-dependson-properties"></a>Reemplazar propiedades DependsOn
 Reemplazar destinos predefinidos es una manera sencilla de extender el proceso de compilación, pero, dado que [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] evalúa la definición de destinos secuencialmente, no hay manera de evitar que otro proyecto que importe su proyecto reemplace los destinos que ya ha reemplazado. Por lo tanto, por ejemplo, el último destino `AfterBuild` definido en el archivo del proyecto, después de que se hayan importado todos los demás proyectos, será el que se utiliza durante la compilación.
 
-Para protegerse de reemplazos de destinos imprevistos, puede reemplazar las propiedades DependsOn que se usan en los atributos `DependsOnTargets` en el archivo *Microsoft.Common.targets*. Por ejemplo, el valor del atributo `DependsOnTargets` del destino `Build` es `"$(BuildDependsOn)"`. Tenga en cuenta que:
+Para protegerse de reemplazos de destinos imprevistos, puede reemplazar las propiedades DependsOn que se usan en los atributos `DependsOnTargets` en los destinos comunes. Por ejemplo, el valor del atributo `DependsOnTargets` del destino `Build` es `"$(BuildDependsOn)"`. Tenga en cuenta que:
 
 ```xml
 <Target Name="Build" DependsOnTargets="$(BuildDependsOn)"/>
@@ -107,7 +110,7 @@ Los proyectos que importan los archivos del proyecto pueden reemplazar estas pro
 
 #### <a name="to-override-a-dependson-property"></a>Para reemplazar una propiedad DependsOn
 
-1. Identifique una propiedad DependsOn predefinida de *Microsoft.Common.targets* que quiera reemplazar. Vea la tabla siguiente para obtener una lista de las propiedades DependsOn que normalmente se reemplazan.
+1. Identifique una propiedad DependsOn predefinida en los destinos comunes que quiera reemplazar. Vea la tabla siguiente para obtener una lista de las propiedades DependsOn que normalmente se reemplazan.
 
 2. Defina otra instancia de la propiedad o de las propiedades al final del archivo del proyecto. Incluya la propiedad original, por ejemplo `$(BuildDependsOn)`, en la propiedad nueva.
 
@@ -117,7 +120,7 @@ Los proyectos que importan los archivos del proyecto pueden reemplazar estas pro
 
 ### <a name="commonly-overridden-dependson-properties"></a>Propiedades DependsOn que normalmente se reemplazan
 
-|Nombre de la propiedad|Descripción|
+|Nombre de la propiedad|DESCRIPCIÓN|
 |-------------------|-----------------|
 |`BuildDependsOn`|La propiedad que se debe reemplazar si quiere insertar destinos personalizados antes o después del proceso de compilación completo.|
 |`CleanDependsOn`|La propiedad que se debe reemplazar si quiere limpiar el resultado del proceso de compilación personalizado.|

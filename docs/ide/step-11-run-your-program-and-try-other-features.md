@@ -1,6 +1,6 @@
 ---
-title: 'Paso 11: Ejecución de la aplicación y prueba de otras características'
-ms.date: 08/30/2019
+title: 'Paso 11: Ejecutar el visor de imágenes y probar otras características'
+ms.date: 09/11/2019
 ms.assetid: 656614d0-4fe7-4a67-8edc-c10919377d09
 ms.topic: tutorial
 ms.prod: visual-studio-windows
@@ -13,16 +13,16 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3e82e0002255a406f02f85cbb2636be1aa249529
-ms.sourcegitcommit: 4dfe098ac0df294aad63e6b384d6575980798ca3
+ms.openlocfilehash: 672156f9c1274189e904c79eb74a0c01e10f3a60
+ms.sourcegitcommit: b60a00ac3165364ee0e53f7f6faef8e9fe59ec4a
 ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 09/11/2019
-ms.locfileid: "70887952"
+ms.locfileid: "70913125"
 ---
-# <a name="step-11-run-your-app-and-try-other-features"></a>Paso 11: Ejecución de la aplicación y prueba de otras características
+# <a name="step-11-run-your-picture-viewer-app-and-try-other-features"></a>Paso 11: Ejecutar el visor de imágenes y probar otras características
 
-La aplicación está finalizada y lista para ejecutarse. Puede ejecutarla y establecer el color de fondo del control <xref:System.Windows.Forms.PictureBox>. Para obtener más información e intentar mejorar la aplicación, cambie el color del formulario, personalice los botones y la casilla, y cambie las propiedades del formulario.
+La aplicación de visor de imágenes está finalizada y lista para ejecutarse. Puede ejecutarla y establecer el color de fondo del control <xref:System.Windows.Forms.PictureBox>. Para obtener más información e intentar mejorar la aplicación, cambie el color del formulario, personalice los botones y la casilla, y cambie las propiedades del formulario.
 
 ## <a name="how-to-run-your-app-and-set-the-background-color"></a>Procedimientos para ejecutar la aplicación y establecer el color de fondo
 

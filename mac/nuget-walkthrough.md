@@ -1,57 +1,49 @@
 ---
 title: Incluir un paquete NuGet en el proyecto
-description: En este documento se explica cómo incluir un paquete NuGet en un proyecto de Xamarin. Le guía a lo largo del proceso de búsqueda y descarga de un paquete, además de presentar las características de integración del IDE.
+description: En este documento se explica cómo incluir un paquete NuGet en un proyecto mediante Visual Studio para Mac. Le guía a lo largo del proceso de búsqueda y descarga de un paquete, además de presentar las características de integración del IDE.
 author: jmatthiesen
 ms.author: jomatthi
-ms.date: 04/24/2019
+ms.date: 09/17/2019
 ms.assetid: 5C800815-0B13-4B27-B017-95FCEF1A0EA2
-ms.custom: video
-ms.openlocfilehash: 5d38afb0dd3adc1db253b7b2c290925716bd5bf9
-ms.sourcegitcommit: 78e4836fe0f45b7079271330aff449dff6fd9685
+ms.custom: conceptual
+ms.openlocfilehash: 22b2e07509403d8e19e3a3e920d45b064c2e51c0
+ms.sourcegitcommit: 541a0556958201ad6626bc8638406ad02640f764
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/17/2019
-ms.locfileid: "68303796"
+ms.lasthandoff: 09/18/2019
+ms.locfileid: "71079532"
 ---
-# <a name="include-a-nuget-package-in-your-project"></a>Incluir un paquete NuGet en el proyecto
+# <a name="install-and-manage-nuget-packages-in-visual-studio-for-mac"></a>Instalación y administración de paquetes NuGet en Visual Studio para Mac
 
-NuGet es el administrador de paquetes más popular para el desarrollo de .NET y está integrado en Visual Studio para Mac y Visual Studio en Windows. Puede buscar y agregar paquetes a proyectos de Xamarin, .NET Core y ASP.NET mediante cualquier IDE.
+La interfaz de usuario del Administrador de paquetes NuGet en Visual Studio para Mac le permite instalar, desinstalar y actualizar fácilmente paquetes NuGet en proyectos y soluciones. Puede buscar y agregar paquetes a los proyectos de .NET Core, ASP.NET Core y Xamarin.
 
 En este artículo se explica cómo incluir un paquete NuGet en un proyecto y se muestra la cadena de herramientas que hace que el proceso se desarrolle sin problemas.
 
-## <a name="nuget-in-visual-studio-for-mac"></a>NuGet en Visual Studio para Mac
+Para obtener una introducción al uso de NuGet en Visual Studio para Mac, consulte [Inicio rápido: instalación y uso de un paquete en Visual Studio para Mac](/nuget/quickstart/install-and-use-a-package-in-visual-studio-mac)
 
-Para mostrar la funcionalidad de los paquetes NuGet, primero se va a crear una nueva aplicación y se le va a agregar un paquete. Luego se tratan las características del IDE que ayudan a administrar paquetes.
+## <a name="find-and-install-a-package"></a>Búsqueda e instalación de un paquete
 
-## <a name="create-a-new-project"></a>Crear un proyecto nuevo
+1. Con un proyecto abierto en Visual Studio para Mac, haga clic con el botón derecho en la carpeta **Dependencias** (carpeta **Paquetes** si se usa un proyecto de Xamarin) del **Panel de solución** y seleccione **Agregar paquetes**.
 
-En primer lugar, cree un proyecto denominado `HelloNuget` como se muestra a continuación. Este ejemplo muestra la plantilla de aplicación de vista única de iOS, aunque cualquier tipo de proyecto compatible funcionaría:
+    ![Acción contextual de adición de nuevo paquete NuGet](media/nuget-walkthrough-PackagesMenu.png)
 
-![Crear nuevo proyecto de iOS](media/nuget-walkthrough-NewProject.png)
+2. Con esto se abre la ventana **Agregar paquetes**. Asegúrese de que la lista desplegable Origen de la esquina superior izquierda del cuadro de diálogo está establecida en `nuget.org`.
 
-## <a name="adding-a-package"></a>Adición de un paquete
+    ![Lista de paquetes NuGet](media/nuget-walkthrough-AddPackages1.png)
 
-Con el proyecto abierto en Visual Studio para Mac, haga clic con el botón derecho en la carpeta **Paquetes** del **Panel de solución** y seleccione **Agregar paquetes NuGet**:
+3. Use el cuadro de búsqueda de la esquina superior derecha para buscar un paquete determinado, por ejemplo `EntityFramework`. Si encuentra un paquete que quiera usar, selecciónelo y haga clic en el botón **Agregar paquete** para iniciar la instalación.
 
-![Acción contextual de adición de nuevo paquete NuGet](media/nuget-walkthrough-PackagesMenu.png)
+    ![Adición de paquete NuGet de Azure](media/nuget-walkthrough-AddPackages2.png)
 
-Con esto se abre la ventana **Agregar paquetes**. Asegúrese de que la lista desplegable Origen esté establecida en `nuget.org`:
+4. Una vez que el paquete se ha descargado, se agrega al proyecto. La solución cambiará en función del tipo de proyecto que esté editando:
 
-![Lista desplegable Origen](media/nuget-walkthrough-Source.png)
+    **Proyectos de Xamarin**
+    * El nodo **Referencias** contiene una lista de todos los ensamblados que forman parte de un paquete NuGet.
+    * El nodo **Paquetes** muestra cada paquete NuGet descargado. Puede actualizar esta lista o quitar un paquete de ella.
+    
+    **Proyectos de .NET Core**
 
-Cuando la ventana se abre, carga una lista de paquetes del origen de paquetes predeterminado: nuget.org. Los resultados iniciales presentan el siguiente aspecto:
-
-![Lista de paquetes NuGet](media/nuget-walkthrough-AddPackages1.png)
-
-Use el cuadro de búsqueda de la esquina superior derecha para buscar un paquete determinado, por ejemplo `azure mobile`. Si encuentra un paquete que quiera usar, selecciónelo y haga clic en el botón **Agregar paquete** para iniciar la instalación.
-
-![Adición de paquete NuGet de Azure](media/nuget-walkthrough-AddPackages2.png)
-
-Una vez que el paquete se ha descargado, se agrega al proyecto. La solución cambia de este modo:
-
-* El nodo **Referencias** contiene una lista de todos los ensamblados que forman parte de un paquete NuGet.
-* El nodo **Paquetes** muestra cada paquete NuGet descargado. Puede actualizar esta lista o quitar un paquete de ella.
-* Se agrega un archivo **packages.config** al proyecto. El IDE usa este archivo XML para realizar un seguimiento de a qué versiones del paquete se hace referencia en este proyecto. Este archivo no se debe editar manualmente, sino que debe mantenerse en el control de versiones. Tenga en cuenta que se puede usar un archivo project.json en lugar de un archivo packages.config. El archivo project.json es un nuevo formato de archivo de paquete presentado con NuGet 3 que admite la restauración transitiva. Puede ver información más detallada sobre project.json en la [documentación de NuGet](https://docs.microsoft.com/NuGet/Schema/Project-Json). Hay que agregar el archivo project.json manualmente y cerrar el proyecto y volverlo a abrir antes de usar el archivo project.json en Visual Studio para Mac.
+    El nodo **Dependencias > NuGet** muestra cada paquete NuGet descargado. Puede actualizar esta lista o quitar un paquete de ella.
 
 ## <a name="using-nuget-packages"></a>Uso de paquetes NuGet
 
@@ -63,31 +55,32 @@ Asegúrese de agregar cualquier directiva `using` necesaria a la parte superior 
 using Newtonsoft.Json;
 ```
 
-La mayoría de los paquetes NuGet proporcionan información adicional, como un Léame o un vínculo de página de proyecto al origen de NuGet. Normalmente puede encontrar un vínculo a este en el texto del paquete en la página Agregar paquetes:
-
-[Vínculo a la página Ver proyecto](media/nuget-walkthrough-project-page.png)
-
 <a name="Package_Updates" class="injected"></a>
 
-## <a name="package-updates"></a>Actualizaciones de paquetes
+## <a name="updating-packages"></a>Actualización de paquetes
 
-Las actualizaciones de paquetes se pueden hacer todas a la vez, al hacer clic con el botón derecho en el nodo **Paquetes** o individualmente en cada componente.
+Las actualizaciones de paquetes se pueden hacer todas a la vez, al hacer clic con el botón derecho en el nodo **Dependencias** (o el nodo **Paquetes** para proyectos de Xamarin) o individualmente en cada componente.
 
-Haga clic con el botón derecho en **Paquetes** para acceder al menú contextual:
+Haga clic con el botón derecho en **Dependencias** para acceder al menú contextual:
 
 ![Menú Paquetes](media/nuget-walkthrough-PackagesMenu.png)
 
-* **Agregar paquetes NuGet**: abre la ventana para agregar más paquetes al proyecto.
+* **Administrar paquetes NuGet**: abre la ventana para agregar más paquetes al proyecto.
 * **Actualizar**: comprueba el servidor de origen de cada paquete y descarga las versiones más recientes.
 * **Restaurar**: descarga todos los paquetes que faltan (sin actualizar los paquetes existentes a versiones más recientes).
 
 Las opciones Actualizar y Restaurar también están disponibles en el nivel de solución y afectan a todos los proyectos de esta.
 
-También puede hacer clic con el botón derecho en paquetes individuales para acceder a un menú contextual:
+En el Panel de solución, puede ver la versión de un paquete que está instalada actualmente y hacer clic con el botón derecho en el paquete que se va a actualizar.
 
-![Menú Paquetes](media/nuget-walkthrough-PackageMenu.png)
+![Menú Paquetes con las opciones para Actualizar, Quitar y Refrescar.](media/nuget-walkthrough-PackageMenu.png)
 
-* **Número de versión**: el número de versión es un elemento de menú deshabilitado que solo se proporciona con fines informativos.
+También verá una notificación junto al nombre del paquete cuando haya disponible una nueva versión de un paquete, de tal forma que pueda decidir si quiere actualizarlo.
+
+![Notificación que se muestra cuando hay disponible una nueva versión del paquete.](media/nuget-walkthrough-package-update-available.png)
+
+En el menú que se muestra, tiene dos opciones:
+
 * **Actualizar**: comprueba el servidor de origen y descarga una versión más reciente (si la hubiera).
 * **Quitar**: quita el paquete de este proyecto y quita los ensamblados correspondientes de las referencias del proyecto.
 

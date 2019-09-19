@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1a160d28a3953196a53673b64ae7d9ef9974a731
-ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.openlocfilehash: 00d64b060b340302107ddffaf1d69cad802a283b
+ms.sourcegitcommit: b60a00ac3165364ee0e53f7f6faef8e9fe59ec4a
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66747433"
+ms.lasthandoff: 09/11/2019
+ms.locfileid: "70913288"
 ---
 # <a name="visual-studio-integration-msbuild"></a>Integración de Visual Studio (MSBuild)
 Visual Studio hospeda [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] para cargar y compilar proyectos administrados. Puesto que [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] es responsable del proyecto, prácticamente cualquier proyecto con el formato de [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] puede utilizarse correctamente en [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], aunque el proyecto lo haya creado una herramienta diferente y tenga un proceso de compilación personalizado.
@@ -176,7 +176,7 @@ Condition=" '$(Something)|$(Configuration)|$(SomethingElse)' == 'xxx|Debug|yyy' 
    El sistema de proyectos llama a un destino con el nombre conocido `ResolveNativeReferences`. Este destino debe generar elementos con el nombre de tipo `NativeReferenceFile`. Los elementos deben tener todos los metadatos de los elementos de entrada recorridos, además de un nuevo fragmento de metadatos denominado `OriginalItemSpec`, que contiene la especificación del elemento original de la referencia.
 
 ## <a name="performance-shortcuts"></a>Métodos abreviados de rendimiento
- Si inicia la depuración en la interfaz de usuario de Visual Studio (con la tecla F5 o la opción **Depurar** > **Iniciar depuración** en la barra de menús), el proceso de compilación utiliza una comprobación de actualización rápida para mejorar el rendimiento. En algunos casos en los que las compilaciones personalizadas crean archivos que, a su vez, se compilan, la comprobación de actualización rápida no identifica correctamente los archivos modificados. Los proyectos que necesitan otras comprobaciones de actualización más completas pueden desactivar la comprobación rápida estableciendo la variable de entorno `DISABLEFASTUPTODATECHECK=1`. O bien, los proyectos pueden establecerla como una propiedad de MSBuild en el proyecto o en un archivo que el proyecto importe.
+ Si usa el IDE de Visual Studio para iniciar la depuración (con la tecla F5 o la opción **Depurar** > **Iniciar depuración** en la barra de menús), o para compilar el proyecto (por ejemplo, **Compilar** > **Compilar solución**), el proceso de compilación utiliza una comprobación de actualización rápida para mejorar el rendimiento. En algunos casos en los que las compilaciones personalizadas crean archivos que, a su vez, se compilan, la comprobación de actualización rápida no identifica correctamente los archivos modificados. Los proyectos que necesitan otras comprobaciones de actualización más completas pueden desactivar la comprobación rápida estableciendo la variable de entorno `DISABLEFASTUPTODATECHECK=1`. O bien, los proyectos pueden establecerla como una propiedad de MSBuild en el proyecto o en un archivo que el proyecto importe.
 
  Para las compilaciones periódicas en Visual Studio, no se aplica la comprobación de actualización rápida y el proyecto se compilará como si se invocara la compilación en un símbolo del sistema.
 

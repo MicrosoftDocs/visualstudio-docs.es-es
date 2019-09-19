@@ -9,19 +9,19 @@ ms.devlang:
 - csharp
 - vb
 dev_langs:
-- csharp
-- vb
+- CSharp
+- VB
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fc843cceea35d196e3f9719a0690764611865600
-ms.sourcegitcommit: 4dfe098ac0df294aad63e6b384d6575980798ca3
+ms.openlocfilehash: 397f65639b6ac277aa6975964ba8317adea58a49
+ms.sourcegitcommit: 2db01751deeee7b2bdb1db25419ea6706e6fcdf8
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/11/2019
-ms.locfileid: "70887980"
+ms.lasthandoff: 09/17/2019
+ms.locfileid: "71062854"
 ---
 # <a name="step-6-name-your-button-controls"></a>Paso 6: Asignar un nombre a los controles de botón
 
@@ -52,7 +52,7 @@ Puede comprobar los nombres eligiendo la lista desplegable de selección de cont
 *Pestaña ***Form1.cs*** con código de C#*
 
     > [!NOTE]
-    > En su lugar, es posible que la pestaña Form1.cs muestre **showButton** como **ShowButton**.
+    > En su lugar, es posible que la pestaña Form1.cs o Form1.vb muestre **showButton** como **ShowButton**.
 
 1. Céntrese en esta parte del código.
 
@@ -64,7 +64,7 @@ Puede comprobar los nombres eligiendo la lista desplegable de selección de cont
 
     ```vb
         Private Sub showButton_Click() Handles showButton.Click
-    
+
     End Sub
     ```
 
@@ -83,8 +83,11 @@ Puede comprobar los nombres eligiendo la lista desplegable de selección de cont
     A continuación se muestra el nuevo código que aparece en el editor de código.
 
     [!code-csharp[VbExpressTutorial1Step6_#2](../ide/codesnippet/CSharp/step-6-name-your-button-controls_2.cs)]
-    
+
     [!code-vb[VbExpressTutorial1Step6_#2](../ide/codesnippet/VisualBasic/step-6-name-your-button-controls_2.vb)]
+
+    > [!NOTE]
+    > Es posible que el código no muestre controladores de eventos en letras "camelCase".
 
     Los cinco métodos que ha agregado se denominan *controladores de eventos*, porque la aplicación los llama cada vez que se produce un evento (por ejemplo, cuando un usuario elige un botón o activa una casilla).
 

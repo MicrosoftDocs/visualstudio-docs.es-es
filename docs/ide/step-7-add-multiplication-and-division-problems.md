@@ -1,25 +1,36 @@
 ---
 title: 'Paso 7: Agregar problemas de multiplicación y división'
 ms.date: 11/04/2016
-ms.topic: conceptual
-dev_langs:
+ms.topic: tutorial
+ms.prod: visual-studio-windows
+ms.technology: vs-ide-general
+ms.devlang:
 - csharp
 - vb
+dev_langs:
+- CSharp
+- VB
 ms.assetid: e638959e-f6a4-4eb4-b2e9-f63b7855cf8f
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 887af3a439e1f6e0f21d5ca68061d2f9977dfac7
-ms.sourcegitcommit: 59e5758036223ee866f3de5e3c0ab2b6dbae97b6
+ms.openlocfilehash: b367c83b449959e102e1adff124d9c871eff9a23
+ms.sourcegitcommit: 541a0556958201ad6626bc8638406ad02640f764
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "68416537"
+ms.lasthandoff: 09/18/2019
+ms.locfileid: "71079293"
 ---
 # <a name="step-7-add-multiplication-and-division-problems"></a>Paso 7: Agregar problemas de multiplicación y división
+
 En la séptima parte de este tutorial, agregará los problemas de multiplicación y división, pero primero piense en cómo realizar ese cambio. Piense en el paso inicial, que requiere almacenar valores.
+
+> [!NOTE]
+> Este tema forma parte de una serie de tutoriales sobre conceptos de codificación básicos.
+> - Para obtener información general sobre el tutorial, vea [Tutorial 2: Crear una prueba matemática cronometrada](../ide/tutorial-2-create-a-timed-math-quiz.md).
+> - Para descargar una versión completa del código, consulte [Ejemplo completo del tutorial de cuestionario de matemáticas](https://code.msdn.microsoft.com/Complete-Math-Quiz-8581813c).
 
 ## <a name="to-add-multiplication-and-division-problems"></a>Para agregar problemas de multiplicación y división
 
@@ -27,6 +38,9 @@ En la séptima parte de este tutorial, agregará los problemas de multiplicació
 
      [!code-vb[VbExpressTutorial3Step7#15](../ide/codesnippet/VisualBasic/step-7-add-multiplication-and-division-problems_1.vb)]
      [!code-csharp[VbExpressTutorial3Step7#15](../ide/codesnippet/CSharp/step-7-add-multiplication-and-division-problems_1.cs)]
+
+     > [!IMPORTANT]
+     > Use el control del lenguaje de programación situado en la parte superior derecha de esta página para ver el fragmento de código de C# o el de Visual Basic.<br><br>![Control de lenguaje de programación para Docs.Microsoft.com](../ide/media/docs-programming-language-control.png)
 
 2. Tal como hizo antes, modifique el método `StartTheQuiz()` para rellenar los problemas de multiplicación y división con números aleatorios.
 
@@ -49,11 +63,11 @@ En la séptima parte de este tutorial, agregará los problemas de multiplicació
 
      Los jugadores deben responder a cuatro problemas para completarla, como se muestra en la ilustración siguiente.
 
-     ![Prueba matemática con cuatro problemas](../ide/media/express_finishedquiz.png)
-**Math quiz** with four problems
+     ![Prueba matemática con cuatro problemas](../ide/media/express_finishedquiz.png)<br/>
+***Cuestionario de matemáticas*** *con cuatro problemas*
 
 ## <a name="to-continue-or-review"></a>Para continuar o revisar
 
-- Para ir al siguiente paso del tutorial, vea [Paso 8: Personalizar la prueba](../ide/step-8-customize-the-quiz.md).
+- Para ir al siguiente paso del tutorial, vea **[Paso 8: Personalizar el cuestionario](../ide/step-8-customize-the-quiz.md)** .
 
 - Para volver al paso anterior del tutorial, vea [Paso 6: Agregar un problema de resta](../ide/step-6-add-a-subtraction-problem.md).

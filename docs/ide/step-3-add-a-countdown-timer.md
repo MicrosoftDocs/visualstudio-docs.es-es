@@ -1,28 +1,36 @@
 ---
 title: 'Paso 3: Agregar un temporizador de cuenta atrás'
 ms.date: 11/04/2016
-ms.topic: conceptual
-dev_langs:
+ms.topic: tutorial
+ms.prod: visual-studio-windows
+ms.technology: vs-ide-general
+ms.devlang:
 - csharp
 - vb
+dev_langs:
+- CSharp
+- VB
 ms.assetid: 62670a2b-efdc-45c6-9646-9b17eeb33dcb
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 86e19e99bc6732ddadabdb3e308dcf8e0def41fa
-ms.sourcegitcommit: 59e5758036223ee866f3de5e3c0ab2b6dbae97b6
+ms.openlocfilehash: 67c2b34bf37f5f1b0ea7fb5222c6fcb8655fcc74
+ms.sourcegitcommit: 541a0556958201ad6626bc8638406ad02640f764
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "68416713"
+ms.lasthandoff: 09/18/2019
+ms.locfileid: "71079557"
 ---
 # <a name="step-3-add-a-countdown-timer"></a>Paso 3: Agregar un temporizador de cuenta atrás
+
 En la tercera parte de este tutorial, agregará un temporizador de cuenta atrás para el seguimiento del número de segundos que quedan para que el jugador finalice.
 
 > [!NOTE]
-> Este tema forma parte de una serie de tutoriales sobre conceptos de codificación básicos. Para obtener información general sobre el tutorial, vea [Tutorial 2: Crear una prueba matemática cronometrada](../ide/tutorial-2-create-a-timed-math-quiz.md).
+> Este tema forma parte de una serie de tutoriales sobre conceptos de codificación básicos.
+> - Para obtener información general sobre el tutorial, vea [Tutorial 2: Crear una prueba matemática cronometrada](../ide/tutorial-2-create-a-timed-math-quiz.md).
+> - Para descargar una versión completa del código, consulte [Ejemplo completo del tutorial de cuestionario de matemáticas](https://code.msdn.microsoft.com/Complete-Math-Quiz-8581813c).
 
 ## <a name="to-add-a-countdown-timer"></a>Para agregar un temporizador de cuenta atrás
 
@@ -30,6 +38,9 @@ En la tercera parte de este tutorial, agregará un temporizador de cuenta atrás
 
      [!code-vb[VbExpressTutorial3Step3#5](../ide/codesnippet/VisualBasic/step-3-add-a-countdown-timer_1.vb)]
      [!code-csharp[VbExpressTutorial3Step3#5](../ide/codesnippet/CSharp/step-3-add-a-countdown-timer_1.cs)]
+
+   > [!IMPORTANT]
+   > Use el control del lenguaje de programación situado en la parte superior derecha de esta página para ver el fragmento de código de C# o el de Visual Basic.<br><br>![Control de lenguaje de programación para Docs.Microsoft.com](../ide/media/docs-programming-language-control.png)
 
      Ahora necesita un método que cuente realmente los segundos, como un temporizador, y que genere un evento después del tiempo especificado.
 
@@ -57,7 +68,7 @@ En la tercera parte de este tutorial, agregará un temporizador de cuenta atrás
      Hemos agregado una instrucción `if else`, que es la manera de indicar a los programas que tomen decisiones. Una instrucción `if else` tiene el siguiente aspecto.
 
     > [!NOTE]
-    > El ejemplo siguiente tiene solo fines ilustrativos. No lo agregue al proyecto.
+    > El ejemplo siguiente tiene solo fines de demostración. No lo agregue al proyecto.
 
     ```vb
     If (something that your program will check) Then
@@ -102,10 +113,11 @@ En la tercera parte de este tutorial, agregará un temporizador de cuenta atrás
 
      El temporizador iniciará la cuenta atrás. Cuando se agota el tiempo, la prueba finaliza y se muestra la respuesta. En la ilustración siguiente se muestra la prueba en curso.
 
-     ![Prueba matemática en curso](../ide/media/express_addcountdown.png) Prueba matemática en curso
+     ![Prueba matemática en curso](../ide/media/express_addcountdown.png)<br/>
+*Prueba matemática en curso*
 
 ## <a name="to-continue-or-review"></a>Para continuar o revisar
 
-- Para ir al siguiente paso del tutorial, vea [Paso 4: Agregar el método CheckTheAnswer()](../ide/step-4-add-the-checktheanswer-parens-method.md).
+- Para ir al siguiente paso del tutorial, vea **[Paso 4: Agregar el método CheckTheAnswer()](../ide/step-4-add-the-checktheanswer-parens-method.md)** .
 
 - Para volver al paso anterior del tutorial, vea [Paso 2: Crear un problema de suma aleatoria](../ide/step-2-create-a-random-addition-problem.md).

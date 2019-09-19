@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a5c37466ea3f37bca80933cdc069d40f84099790
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 249b8aa88b11643ed0b353df25bef3a054ef5e55
+ms.sourcegitcommit: 0e482cfc15f809b564c3de61646f29ecd7bfcba6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65679763"
+ms.lasthandoff: 09/14/2019
+ms.locfileid: "70987787"
 ---
 # <a name="first-look-at-the-visual-studio-debugger"></a>Primer vistazo al depurador de Visual Studio
 
@@ -115,6 +115,16 @@ Haga clic en el botón **Reiniciar** ![Reiniciar aplicación](../debugger/media/
 El botón **Reiniciar** permite ahorrar tiempo, ya que hace que no sea necesario detener la aplicación y reiniciar el depurador. El depurador se detiene en el primer punto de interrupción que se alcanza al ejecutar el código.
 
 Si quiere detener el depurador y volver al editor de código, puede presionar el botón rojo ![Detener depuración](../debugger/media/dbg-tour-stop-debugging.png "Stop Debugging") en lugar de **Reiniciar**.
+
+## <a name="edit-your-code-and-continue-debugging-c-vb-c-xaml"></a>Edición del código y continuación de la depuración (C#, VB, C++, XAML)
+
+En la mayoría de los lenguajes compatibles con Visual Studio, puede editar el código en medio de una sesión de depuración y continuar con la depuración. Para usar esta característica, haga clic en el código con el cursor mientras está en pausa en el depurador, realice las ediciones y presione **F5**, **F10** o **F11** para continuar con la depuración.
+
+![Edición de código y depuración continua](../debugger/media/dbg-tips-edit-and-continue.gif "EditAndContinue")
+
+Para obtener más información sobre el uso de la característica y las limitaciones de esta, consulte [Editar y continuar](../debugger/edit-and-continue.md).
+
+Para modificar el código XAML durante una sesión de depuración, consulte [Escribir y depurar código XAML en ejecución con la recarga frecuente de XAML](xaml-hot-reload.md).
 
 ## <a name="inspect-variables-with-data-tips"></a>Inspeccionar variables con información sobre datos
 

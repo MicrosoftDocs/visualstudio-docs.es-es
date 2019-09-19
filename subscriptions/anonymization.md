@@ -6,12 +6,12 @@ manager: lank
 ms.date: 07/19/2019
 ms.topic: conceptual
 description: Obtenga información sobre cómo se anonimizan los datos del suscriptor cuando se pierde el acceso a las suscripciones.
-ms.openlocfilehash: 8ba1a462083281c2228f2d6e25c42485ead8aa19
-ms.sourcegitcommit: 485881e6ba872c7b28a7b17ceaede845e5bea4fe
+ms.openlocfilehash: d15fce8d5e1a64066a42cea69b770f55c9607f06
+ms.sourcegitcommit: 02acadb912faced7eaffe27c2c19104bf0428bcd
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/22/2019
-ms.locfileid: "68377961"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70936912"
 ---
 # <a name="anonymization-of-visual-studio-subscriber-information"></a>Anonimización de información de suscriptor de Visual Studio
 Cuando se produce un evento que bloquea el uso que realiza un suscriptor de una suscripción, como la expiración de una suscripción o la eliminación de la cuenta de inicio de sesión del suscriptor, la información personal del usuario como su nombre y la cuenta de inicio de sesión se desordenan para volverlos inutilizables.  Esto se hace para proteger la información personal del suscriptor.
@@ -36,5 +36,10 @@ R:  No.  La anonimización se produce en respuesta a un evento que provoca la p�
 ### <a name="q--im-an-administrator-for-my-organizations-subscriptions--if-one-of-my-subscribers-information-is-anonymized-can-that-subscription-be-reassigned-to-another-user"></a>P:  Soy administrador de suscripciones de mi organización.  ¿Si se anonimiza la información de uno de mis suscriptores, esa suscripción puede reasignarse a otro usuario?
 R:  Sí, siempre y cuando la suscripción no haya expirado, pueden reasignarse a otro suscriptor.
 
+### <a name="q-how-can-i-prevent-anonymization-caused-by-deleting-a-sign-in-email-address"></a>P: ¿Cómo se puede evitar la anonimización que provoca la eliminación de una dirección de correo electrónico de inicio de sesión?
+R:  Hay dos maneras de impedir la incidencia:
+- Implemente un sistema de administración de identidad único, ya sea MSA o AAD, pero no ambos.  
+- Asocie las identidades de AAD y MSA a través de los inquilinos. 
+
 ## <a name="next-steps"></a>Pasos siguientes
-Obtenga información sobre cómo evitar la anonimización [vinculando las identidades de AAD y de MSA](/azure/active-directory/b2b/add-users-administrator).
+Obtenga información sobre cómo evitar la anonimización [asociando las identidades de AAD y MSA](/azure/active-directory/b2b/add-users-administrator).

@@ -1,6 +1,6 @@
 ---
 title: Usar puntos de seguimiento en el depurador | Microsoft Docs
-ms.date: 9/4/2019
+ms.date: 9/17/2019
 ms.topic: conceptual
 helpviewer_keywords:
 - tracepoints, about tracepoints
@@ -9,12 +9,12 @@ ms.author: sashe
 manager: AndSter
 ms.workload:
 - multiple
-ms.openlocfilehash: fe9d96290474283164ed9761a0cb9aa7734f1a9d
-ms.sourcegitcommit: 2db01751deeee7b2bdb1db25419ea6706e6fcdf8
-ms.translationtype: HT
+ms.openlocfilehash: 7680b305fad6f8ea1d7961ec5a70ddafd578c77d
+ms.sourcegitcommit: 6993bcb0d2b0067b1b7b7899bfba52c31c70b7e7
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/17/2019
-ms.locfileid: "71069035"
+ms.lasthandoff: 09/18/2019
+ms.locfileid: "71095254"
 ---
 # <a name="use-tracepoints-in-the-visual-studio-debugger"></a>Usar puntos de seguimiento en el depurador de Visual Studio
 
@@ -96,7 +96,6 @@ Si desea imprimir el valor del contador cuando cambie la iteración del `for` bu
 
 ![Expresión condicional cuando se cambia](../debugger/media/conditionalexpressionwhenchanged.png "Expresión condicional cuando se cambia")
 
-
 El comportamiento de la opción **When Changed** es diferente para los diferentes lenguajes de programación.
 
 - En el caso de código nativo, el depurador no considera la primera evaluación de la condición como un cambio, por lo que no alcanza el punto de seguimiento en la primera evaluación.
@@ -133,3 +132,11 @@ Aunque los puntos de seguimiento están diseñados para que la depuración sea u
 A veces, al inspeccionar una propiedad o atributo de un objeto, su valor puede cambiar. Esto no es un error causado por la propia característica de punto de seguimiento, pero merece la pena mencionar que el uso de puntos de seguimiento para inspeccionar objetos no evita estas modificaciones accidentales.
 
 La forma en que se evalúan las expresiones en el cuadro de mensaje de **acción** puede ser diferente del lenguaje que se usa actualmente para el desarrollo. Por ejemplo, para generar una cadena, no es necesario ajustar un mensaje entre comillas, aunque normalmente se use `Debug.WriteLine()` o. `console.log()` Además, la sintaxis de la llave`{ }`() para las expresiones de salida también puede ser diferente de la Convención para generar valores en el lenguaje de desarrollo. (Sin embargo, el contenido dentro de las llaves (`{ }`) debe escribirse con la sintaxis del lenguaje de desarrollo.
+
+## <a name="see-also"></a>Vea también
+
+- [¿Qué es la depuración?](../debugger/what-is-debugging.md)
+- [Escriba mejor C# código mediante Visual Studio](../debugger/write-better-code-with-visual-studio.md)
+- [Primer vistazo a la depuración](../debugger/debugger-feature-tour.md)
+- [Expresiones en el depurador](expressions-in-the-debugger.md)
+- [Uso de puntos de interrupción](../debugger/using-breakpoints.md)
