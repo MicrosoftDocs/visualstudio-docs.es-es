@@ -1,5 +1,5 @@
 ---
-title: Las cuentas de usuario y actualizaciones | Microsoft Docs
+title: Cuentas de usuario y actualizaciones | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
@@ -9,15 +9,19 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: e955eaacd2f290558c5d786439373a9cc8febb35
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 4ecd7a4d237a53a19286790346f790b82b981f60
+ms.sourcegitcommit: 2db01751deeee7b2bdb1db25419ea6706e6fcdf8
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68158289"
+ms.lasthandoff: 09/17/2019
+ms.locfileid: "71062874"
 ---
 # <a name="user-accounts-and-updates"></a>Cuentas de usuario y actualizaciones
+
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
+
+> [!WARNING]
+> Visual Studio 2015 no puede tener acceso a los recursos configurados para el acceso condicional. Para trabajar con esos recursos, actualice a Visual Studio 2017 o posterior.
 
 Visual Studio es un entorno conectado. Al iniciar sesión habilita el acceso a todos los servicios asociados a su cuenta de usuario y a todas las cuentas vinculadas a la misma. La configuración de su cuenta se traspasa allá donde use Visual Studio. Puede configurar niveles de permisos en una instancia específica de Visual Studio para usuarios individuales. Además, Visual Studio le informa cuando cualquier componente de la instalación, como un SDK, tiene actualización disponible.  
   
@@ -31,5 +35,6 @@ Visual Studio es un entorno conectado. Al iniciar sesión habilita el acceso a t
 |[Cómo desbloquear Visual Studio](../ide/how-to-unlock-visual-studio.md)|Describe cómo desbloquear Visual Studio en distintos escenarios.|  
 |[Notificaciones](../ide/visual-studio-notifications.md)|Describe cómo le notifica Visual Studio cuando algún componente, como un SDK o el propio Visual Studio, tiene una actualización disponible.|  
   
-## <a name="see-also"></a>Otras referencias  
- [IDE de Visual Studio](../ide/visual-studio-ide.md)
+## <a name="see-also"></a>Vea también
+
+- [IDE de Visual Studio](../ide/visual-studio-ide.md)
