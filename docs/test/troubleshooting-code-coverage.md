@@ -7,12 +7,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 7aef839027639770e60292210aaddf998c97fce0
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: abd5075d04f26b9795695bfcd4fcd387e1a15d24
+ms.sourcegitcommit: 541a0556958201ad6626bc8638406ad02640f764
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68926542"
+ms.lasthandoff: 09/18/2019
+ms.locfileid: "71079577"
 ---
 # <a name="troubleshoot-code-coverage"></a>Solucionar problemas de cobertura de código
 
@@ -56,6 +56,8 @@ Explicación: el motor de cobertura de código requiere que cada ensamblado teng
 El archivo *.pdb* se debe generar a partir de la misma compilación que los archivos *.dll* o *.exe*.
 
 Resolución: asegúrese de que la configuración de compilación genere el archivo *.pdb*. Si los archivos *.pdb* no se actualizan cuando se compila el proyecto, abra las propiedades del proyecto, seleccione la página **Compilación**, elija **Avanzadas** e inspeccione **Info. de depuración**.
+
+En el caso de proyectos C++, asegúrese de que los archivos .pdb generados tienen información de depuración completa. Abra las propiedades del proyecto y compruebe que la opción **Enlazador** > **Depurar** > **Generar información de depuración** está establecida en **Generar información de depuración optimizada para compartir y publicar (/DEBUG:FULL)** .
 
 Si los archivos *.pdb* y *.dll* o *.exe* están en distintos lugares, copie el archivo *.pdb* en el mismo directorio. También es posible configurar el motor de cobertura de código para que busque archivos *.pdb* en otra ubicación. Para obtener más información, vea [Personalizar el análisis de cobertura de código](../test/customizing-code-coverage-analysis.md).
 

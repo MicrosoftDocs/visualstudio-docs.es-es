@@ -6,12 +6,12 @@ manager: lank
 ms.date: 07/29/2019
 ms.topic: conceptual
 description: Vea cómo activar la ventaja de soporte técnico que se incluye con la suscripción de Visual Studio.
-ms.openlocfilehash: 705ec75afc2ba870b5e596f63e27fae92fbedf58
-ms.sourcegitcommit: 5694c5236fa32ba7f5bc1236a853f725ec7557e9
+ms.openlocfilehash: 6474cf3322b878055053eaaf1f1943ebc546b206
+ms.sourcegitcommit: 02acadb912faced7eaffe27c2c19104bf0428bcd
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "68681593"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70936906"
 ---
 # <a name="activate-and-use-the-technical-support-benefit-in-visual-studio-subscriptions"></a>Activación y uso de la ventaja de soporte técnico en suscripciones de Visual Studio
 La ventaja de soporte técnico en suscripciones de Visual Studio sirve para resolver problemas break-fix en **entornos de no producción** para productos que siguen en la fase de soporte técnico general del [ciclo de vida de soporte](https://support.microsoft.com/lifecycle/search). Las suscripciones de nube anuales y estándar de Visual Studio Enterprise reciben cuatro incidentes, mientras que las suscripciones de nube anuales y estándar de Visual Studio Professional reciben dos, con validez de un año a partir de la activación de la ventaja. La activación de la ventaja debe producirse mientras la suscripción está activa.
@@ -23,6 +23,13 @@ La ventaja de soporte técnico en suscripciones de Visual Studio sirve para reso
 > No todas las suscripciones de un nivel determinado son aptas para recibir los incidentes de soporte técnico. Las suscripciones que se adquieren a través de FTE, NFR, MPN, MCT y otros programas no reciben incidentes de soporte técnico. Si su suscripción no es apta para recibir incidentes de soporte técnico, el icono Soporte técnico no aparecerá en las ventajas disponibles.
 
 **Para enviar una solicitud de soporte técnico mediante la ventaja, primero debe activarla.  Siga los pasos de la siguiente sección para realizar la activación.**
+
+## <a name="supported-products"></a>Productos compatibles 
+Las Herramientas de desarrollo como el IDE de Visual Studio y Azure DevOps Server recibirán soporte técnico estándar y extendido a través de las suscripciones de Visual Studio.
+
+Los productos que no son de desarrollador (como SQL, Windows o SharePoint) descargados de las suscripciones de Visual Studio solo son válidos para soporte técnico estándar. Estos productos solo tienen licencia para entornos de desarrollo con el fin de diseñar, desarrollar, probar o demostrar aplicaciones. Estos productos no tienen licencia para entornos de producción.
+
+Descripciones de nivel de producto: expanda **Planes de soporte técnico no disponibles** si ve que el Plan de soporte técnico no se puede usar para el soporte técnico con el producto especificado (Código: 8). No se puede usar el contrato de soporte técnico para la versión de producto que se ha seleccionado.
 
 ## <a name="how-to-activate-the-benefit"></a>Cómo activar la ventaja
 1. Vaya a https://my.visualstudio.com/Benefits, baje hasta la sección de soporte técnico y haga clic en **Chat para activar** en el icono de soporte técnico.

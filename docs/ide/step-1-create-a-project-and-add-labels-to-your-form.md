@@ -1,28 +1,33 @@
 ---
 title: 'Paso 1: Crear un proyecto y agregar etiquetas al formulario'
 ms.date: 05/31/2019
-ms.topic: conceptual
+ms.topic: tutorial
 ms.prod: visual-studio-windows
 ms.technology: vs-ide-general
 ms.assetid: f44e50be-a5f5-4d77-9cff-dd52374c3f74
+ms.devlang:
+- csharp
+- vb
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3c04e0700a9913548b33e1ef3e9092f774cddc77
-ms.sourcegitcommit: aeb1a1135dd789551e15aa5124099a5fe3f0f32b
+ms.openlocfilehash: 88ec1c96bea4ebbe3465a489354d90fbbe906858
+ms.sourcegitcommit: 0e482cfc15f809b564c3de61646f29ecd7bfcba6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/04/2019
-ms.locfileid: "66501136"
+ms.lasthandoff: 09/14/2019
+ms.locfileid: "70987948"
 ---
 # <a name="step-1-create-a-project-and-add-labels-to-your-form"></a>Paso 1: Crear un proyecto y agregar etiquetas al formulario
 
 Como primeros pasos para desarrollar esta prueba, creará el proyecto y agregará etiquetas, un botón y otros controles a un formulario. También establecerá las propiedades de cada control que agregue. El proyecto contendrá el formulario, los controles y (más adelante en el tutorial) el código. El botón inicia la prueba, las etiquetas muestran los problemas de la prueba y los demás controles muestran las respuestas de la prueba y el tiempo que queda para finalizarla.
 
 > [!NOTE]
-> Este tema forma parte de una serie de tutoriales sobre conceptos de codificación básicos. Para obtener información general sobre el tutorial, vea [Tutorial 2: Crear una prueba matemática cronometrada](../ide/tutorial-2-create-a-timed-math-quiz.md).
+> Este tema forma parte de una serie de tutoriales sobre conceptos de codificación básicos. 
+> - Para obtener información general sobre el tutorial, vea [Tutorial 2: Crear una prueba matemática cronometrada](../ide/tutorial-2-create-a-timed-math-quiz.md). 
+> - Para descargar una versión completa del código, consulte [Ejemplo completo del tutorial de cuestionario de matemáticas](https://code.msdn.microsoft.com/Complete-Math-Quiz-8581813c).
 
 ## <a name="to-create-a-project-for-a-form"></a>Para crear un proyecto para un formulario
 
@@ -102,7 +107,7 @@ Como primeros pasos para desarrollar esta prueba, creará el proyecto y agregar�
 
 7. Seleccione el signo más ( **+** ) situado junto a la propiedad **Font** y, después, cambie el valor de la propiedad **Size** a **15,75**.
 
-     Puede cambiar varias propiedades de fuente, tal y como se muestra en la imagen siguiente.
+     Puede cambiar varias propiedades de fuente, tal y como se muestra en la captura de pantalla siguiente.
 
      ![Ventana Propiedades mostrando el tamaño de fuente](../ide/media/express_setfontsize.png)
 
@@ -150,7 +155,7 @@ Como primeros pasos para desarrollar esta prueba, creará el proyecto y agregar�
 
 16. Cambie el valor de la propiedad **(Name**) del control NumericUpDown a **suma**.
 
-     Ha creado la primera fila, como se muestra en la imagen siguiente.
+     Se ha creado la primera fila, tal como se muestra en la ilustración siguiente.
 
      ![Primera fila de prueba matemática](../ide/media/express_firstrow.png)
 
@@ -200,7 +205,7 @@ Como primeros pasos para desarrollar esta prueba, creará el proyecto y agregar�
 
 7. Establezca el valor de la propiedad **TabIndex** del control de suma NumericUpDown en **2**, del control de diferencia en **3**, del control de producto en **4** y del control de cociente en **5**.
 
-     El formulario debería tener el mismo aspecto que la ilustración siguiente.
+     El formulario debe ser similar al de la captura de pantalla siguiente.
 
      ![Formulario de prueba matemática inicial](../ide/media/express_formlaidout.png)
 
@@ -208,6 +213,6 @@ Como primeros pasos para desarrollar esta prueba, creará el proyecto y agregar�
 
 ## <a name="to-continue-or-review"></a>Para continuar o revisar
 
-- Para ir al siguiente paso del tutorial, vea [Paso 2: Crear un problema de suma aleatoria](../ide/step-2-create-a-random-addition-problem.md).
+- Para ir al siguiente paso del tutorial, vea **[Paso 2: Crear un problema de suma aleatoria](../ide/step-2-create-a-random-addition-problem.md)** .
 
 - Para volver al tema de información general, vea [Tutorial 2: Crear una prueba matemática cronometrada](../ide/tutorial-2-create-a-timed-math-quiz.md).

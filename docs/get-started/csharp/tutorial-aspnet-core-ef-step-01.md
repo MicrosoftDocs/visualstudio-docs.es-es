@@ -17,12 +17,12 @@ dev_langs:
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: 6668648668ab71e033d1341d71ecf5c7c2a47554
-ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.openlocfilehash: 1851c497579d45aa45c36dc1cd20945ce2b9c1e1
+ms.sourcegitcommit: 6c55c40da74ed8969dcba56acbd30458fdb69c5a
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "66261722"
+ms.lasthandoff: 09/13/2019
+ms.locfileid: "70977443"
 ---
 # <a name="tutorial-create-your-first-aspnet-core-app-using-entity-framework-with-visual-studio-2019"></a>Tutorial: Creación de la primera aplicación de ASP.NET Core mediante Entity Framework con Visual Studio 2019
 
@@ -88,9 +88,9 @@ Tenga en cuenta que para la mayoría de las plantillas de proyecto también pued
 - Cuentas profesionales o educativas. Esta opción usa Active Directory, Azure AD u Office 365 para la autenticación.
 - Autenticación de Windows. Conveniente para las aplicaciones de intranet.
 
-Seleccione la plantilla de aplicación web estándar sin autenticación y haga clic en **Aceptar**.
+Seleccione la plantilla de aplicación web estándar sin autenticación y haga clic en **Crear**.
 
-![Elegir opciones de proyecto de ASP.NET Core en Visual Studio 2019](media/vs-2019/vs2019-choose-aspnetcore-project.png)
+![Elección de opciones de proyecto de ASP.NET Core en Visual Studio 2019](media/vs-2019/vs2019-choose-aspnetcore-project.png)
 
 ## <a name="next-steps"></a>Pasos siguientes
 

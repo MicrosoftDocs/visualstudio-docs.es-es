@@ -12,12 +12,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c0c7f3695be87f6cb4081b3aa02fc7a129869a4c
-ms.sourcegitcommit: 9c07ae6fb18204ea080c8248994a683fa12e5c82
+ms.openlocfilehash: 51bda0a85735bf2b1dae5044b9e4ab8e5384f8ae
+ms.sourcegitcommit: 0e482cfc15f809b564c3de61646f29ecd7bfcba6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/04/2019
-ms.locfileid: "70293693"
+ms.lasthandoff: 09/14/2019
+ms.locfileid: "70987873"
 ---
 # <a name="tutorial-2-create-a-timed-math-quiz"></a>Tutorial 2: Crear una prueba matemática cronometrada
 
@@ -31,7 +31,7 @@ En este tutorial, se compila un juego de prueba matemática en el que el jugador
 
 - Realizar operaciones aritméticas básicas en el código.
 
-Cuando termine, la prueba matemática se parecerá a la siguiente imagen, pero tendrá otros números:
+Cuando termine, el cuestionario se parecerá a la siguiente captura de pantalla, pero tendrá otros números:
 
 ![Prueba matemática con cuatro problemas](../ide/media/express_finishedquiz.png)
 
@@ -40,7 +40,7 @@ Cuando termine, la prueba matemática se parecerá a la siguiente imagen, pero t
 Para descargar una versión completa de la prueba, vea [Complete Math Quiz tutorial sample](https://code.msdn.microsoft.com/Complete-Math-Quiz-8581813c) (Ejemplo completo del tutorial de prueba matemática).
 
 > [!NOTE]
-> En este tutorial, se trata tanto Visual C# como Visual Basic, por lo que deberá centrarse en la información específica del lenguaje de programación que use.
+> En este tutorial, se trata tanto C# como Visual Basic, por lo que deberá centrarse en la información específica del lenguaje de programación que use.
 
 ## <a name="related-topics"></a>Temas relacionados
 

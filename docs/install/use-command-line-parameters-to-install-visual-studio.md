@@ -2,7 +2,7 @@
 title: Usar parámetros de la línea de comandos para instalar Visual Studio
 titleSuffix: ''
 description: Obtenga información sobre cómo usar parámetros de línea de comandos para controlar o personalizar la instalación de Visual Studio.
-ms.date: 03/30/2019
+ms.date: 09/11/2019
 ms.custom: seodec18
 ms.topic: conceptual
 f1_keywords:
@@ -17,12 +17,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 8e999df4fc1269025c9adc038c1a17dd586a3081
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 1f9e5d1dadd9caf95b8e6cb8e5fec70daf984ac9
+ms.sourcegitcommit: b60a00ac3165364ee0e53f7f6faef8e9fe59ec4a
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62951316"
+ms.lasthandoff: 09/11/2019
+ms.locfileid: "70913243"
 ---
 # <a name="use-command-line-parameters-to-install-visual-studio"></a>Usar parámetros de la línea de comandos para instalar Visual Studio
 
@@ -32,7 +32,7 @@ Cuando instala Visual Studio desde un símbolo del sistema, puede usar diversos 
 - Automatizar el proceso de instalación.
 - Crear una caché (diseño) de los archivos de instalación para su uso posterior.
 
-Las opciones de la línea de comandos se usan junto con el programa previo de instalación, que es el archivo pequeño (de aproximadamente 1 MB) que inicia el proceso de descarga. El programa previo es el primer ejecutable que se inicia cuando se realiza la descarga desde el sitio de Visual Studio. Use los vínculos siguientes para obtener un vínculo directo a la versión más reciente del programa previo para la edición del producto que está instalando:
+Las opciones de la línea de comandos se usan junto con el programa previo de instalación, que es el archivo pequeño (de 1 MB) que inicia el proceso de descarga. El programa previo es el primer ejecutable que se inicia cuando se realiza la descarga desde el sitio de Visual Studio. Use los vínculos siguientes para obtener un vínculo directo a la versión más reciente del programa previo para la edición del producto que está instalando:
 
 ::: moniker range="vs-2017"
 
@@ -56,7 +56,7 @@ Las opciones de la línea de comandos se usan junto con el programa previo de in
 
 > Sintaxis: `vs_enterprise.exe [command] <options>...`
 
-(Reemplace `vs_enterprise.exe` según corresponda para la edición del producto que está instalando.
+Reemplace `vs_enterprise.exe` según corresponda para la edición del producto que se está instalando. (Como alternativa, se puede usar `vs_installer.exe`.)
 
 >[!TIP]
 > Para más ejemplos de cómo usar la línea de comandos para instalar Visual Studio, consulte la página de [ejemplos de parámetros de la línea de comandos](command-line-parameter-examples.md).
@@ -112,7 +112,7 @@ Las opciones de la línea de comandos se usan junto con el programa previo de in
 | **Opciones de instalación avanzadas** | **Descripción** |
 | ----------------------- | --------------- |
 | `--channelId <id>` | **Opcional**: identificador del canal correspondiente a la instancia que se va a instalar. Es necesario para el comando de instalación, y se omite para otros comandos si se especifica `--installPath`. |
-| `--channelUri <uri>` | **Opcional**: el URI del manifiesto del canal. Si no se quiere efectuar actualizaciones, `--channelUri` puede apuntar a un archivo inexistente (por ejemplo, --channelUri C:\doesntExist.chman). Se puede usar para el comando de instalación; se ignora para los demás comandos. |
+| `--channelUri <uri>` | **Opcional**: el URI del manifiesto del canal. Si no se quieren las actualizaciones, `--channelUri` puede apuntar a un archivo no existente (por ejemplo,--channelUri C:\doesntExist.chman). Esto puede usarse para el comando de instalación; se ignora para los demás comandos. |
 | `--installChannelUri <uri>` | **Opcional**: el URI del manifiesto del canal que se va a usar para la instalación. El URI especificado por `--channelUri`, que debe especificarse cuando se especifica `--installChannelUri`, se usa para detectar actualizaciones. Esto puede usarse para el comando de instalación; se ignora para los demás comandos. |
 | `--installCatalogUri <uri>` | **Opcional**: el URI del manifiesto del catálogo que se va a usar para la instalación. Si se especifica, el administrador del canal intenta descargar el manifiesto del catálogo de este URI antes de usar el URI en el manifiesto del canal de instalación. Este parámetro se usa para admitir la instalación sin conexión, donde la caché de diseño se creará con el catálogo del producto que ya se ha descargado. Esto puede usarse para el comando de instalación; se ignora para los demás comandos. |
 | `--productId <id>` | **Opcional**: el id. del producto de la instancia que se instalará. Se rellena previamente en condiciones normales de instalación. |
@@ -154,14 +154,7 @@ Para una lista de los identificadores de componente y carga de trabajo ordenados
 
 En función del resultado de la operación, la variable de entorno `%ERRORLEVEL%` se establece en uno de los valores siguientes:
 
-| **Valor** | **Resultado** |
-| --------- | ---------- |
-| 0 | Operación completada correctamente |
-| 1602 | Operación cancelada |
-| 3010 | Operación completada correctamente, pero la instalación requiere reiniciar el equipo para que se pueda usar |
-| 5004 | Operación cancelada |
-| 5007 | Operación bloqueada: el equipo no cumple los requisitos |
-| Otros | Condición de error: consulte los registros para obtener más información |
+[!INCLUDE[install-error-codes-md](includes/install-error-codes-md.md)]
 
 Cada operación genera varios archivos de registro en el directorio `%TEMP%` que indican el progreso de la instalación. Ordene la carpeta por fecha y busque los archivos que empiecen por `dd_bootstrapper`, `dd_client` y `dd_setup` para el programa previo, la aplicación del instalador y el motor de configuración, respectivamente.
 

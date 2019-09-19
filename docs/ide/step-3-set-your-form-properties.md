@@ -13,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: da1ca71cb420bcc2bbc6ba00eb1eca5deaa2b2c9
-ms.sourcegitcommit: 4dfe098ac0df294aad63e6b384d6575980798ca3
+ms.openlocfilehash: 1cf71ca26a26aecceb605c0483499bc0b0e24d30
+ms.sourcegitcommit: b60a00ac3165364ee0e53f7f6faef8e9fe59ec4a
 ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 09/11/2019
-ms.locfileid: "70887900"
+ms.locfileid: "70913150"
 ---
 # <a name="step-3-set-your-form-properties"></a>Paso 3: Establecer las propiedades del formulario
 
@@ -77,7 +77,7 @@ Después, se usa la ventana **Propiedades** para cambiar la apariencia del formu
 
 * Para ir al siguiente paso del tutorial, vea **[Paso 4: Diseño de un formulario con un control TableLayoutPanel](../ide/step-4-lay-out-your-form-with-a-tablelayoutpanel-control.md)** .
 
-* Para volver al paso anterior del tutorial, vea [Paso 2: Ejecución de la aplicación Visor de imágenes(../ide/step-2-run-your-program.md).
+* Para volver al paso anterior del tutorial, vea [Paso 2: Ejecutar la aplicación de visor de imágenes](../ide/step-2-run-your-program.md).
 
 ## <a name="see-also"></a>Vea también
 

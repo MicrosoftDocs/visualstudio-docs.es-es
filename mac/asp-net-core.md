@@ -6,12 +6,12 @@ ms.author: sayedha
 ms.date: 04/02/2019
 ms.assetid: 6E8B0C90-33D6-4546-8207-CE0787584565
 ms.custom: video
-ms.openlocfilehash: 9dcd1b65e9d8ea60f082304b4f84a7108efb99a6
-ms.sourcegitcommit: 7fbfb2a1d43ce72545096c635df2b04496b0be71
+ms.openlocfilehash: d07849a362779f3fad8f7544899dc23b9d4538d6
+ms.sourcegitcommit: b60a00ac3165364ee0e53f7f6faef8e9fe59ec4a
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/09/2019
-ms.locfileid: "67692943"
+ms.lasthandoff: 09/11/2019
+ms.locfileid: "70913325"
 ---
 # <a name="getting-started-with-aspnet-core"></a>Introducción a ASP.NET Core
 
@@ -38,7 +38,7 @@ Hay una serie de proyectos que le proporcionarán una plantilla predefinida para
 
 ![Opciones de proyecto de ASP.NET](media/asp-net-core-2019-new-asp-core.png)
 
-Seleccione **ASP.NET Core Empty Web Application** (Aplicación web vacía de ASP.NET Core) y pulse **Siguiente**. Asígnele un nombre al proyecto y pulse **Crear**. Esto crea una aplicación de ASP.NET Core, que debería parecerse a la imagen siguiente:
+Seleccione **ASP.NET Core Empty Web Application** (Aplicación web vacía de ASP.NET Core) y pulse **Siguiente**. Asígnele un nombre al proyecto y pulse **Crear**. Esto crea una nueva aplicación de ASP.NET Core. En el panel izquierdo del Panel de solución, expanda la segunda flecha y luego seleccione **Startup.cs**. Debería tener un aspecto similar a la imagen siguiente:
 
 ![Vista de nuevo proyecto vacío de ASP.NET Core](media/asp-net-core-2019-empty-project.png)
 

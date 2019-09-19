@@ -11,14 +11,12 @@ dev_langs:
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.workload:
-- multiple
-ms.openlocfilehash: f6aa9cb62bc0ae956a85acd75d1a9615a2283133
-ms.sourcegitcommit: f42b5318c5c93e2b5ecff44f408fab8bcdfb193d
+ms.openlocfilehash: 24bc4c54e455f43aa5fd5fee0ce0d5a44042e497
+ms.sourcegitcommit: b60a00ac3165364ee0e53f7f6faef8e9fe59ec4a
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2019
-ms.locfileid: "69976774"
+ms.lasthandoff: 09/11/2019
+ms.locfileid: "70913217"
 ---
 # <a name="use-code-coverage-to-determine-how-much-code-is-being-tested"></a>Usar cobertura de código para determinar la cantidad de código que se está probando
 
@@ -28,33 +26,51 @@ El análisis de cobertura de código puede aplicarse al código administrado (CL
 
 La cobertura de código es una opción al ejecutar métodos de prueba mediante el Explorador de pruebas. La tabla de salida muestra el porcentaje de código que se ejecuta en cada ensamblado, clase y método. Además, el editor de código fuente muestra qué código se ha probado.
 
+::: moniker range="vs-2017"
+
 ![Resultados de cobertura de código con colores](../test/media/codecoverage1.png)
+
+::: moniker-end
 
 ## <a name="requirements"></a>Requisitos
 
 La característica de cobertura de código solo está disponible en la edición Visual Studio Enterprise.
 
-## <a name="to-analyze-code-coverage-on-unit-tests-in-test-explorer"></a>Para analizar la cobertura de código en pruebas unitarias en el Explorador de pruebas
+## <a name="analyze-code-coverage"></a>Análisis de la cobertura de código
 
 ::: moniker range="vs-2017"
+
 1. En el menú **Prueba**, elija **Analizar cobertura de código**.
+
 ::: moniker-end
+
 ::: moniker range=">=vs-2019"
-1. En el **Explorador de pruebas**, seleccione **Analizar cobertura de código** en el menú **Ejecutar**.
+
+1. En el **Explorador de pruebas**, seleccione **Analizar cobertura de código para todas las pruebas** en el menú **Ejecutar**.
+
+   ![Menú Análisis de la cobertura de código en VS 2019](../test/media/vs-2019/analyze-code-coverage.png)
+
+   Si el **Explorador de pruebas** no está abierto, ábralo seleccionando **Prueba** > **Windows** > **Explorador de pruebas** o presione **Ctrl**+**E**,**T**.
+
 ::: moniker-end
 
-2. Para ver qué líneas se han ejecutado, elija ![Icono Mostrar colores en cobertura de código](../test/media/codecoverage-showcoloringicon.png) **Mostrar colores en cobertura de código**.
+2. Después de que se hayan ejecutado las pruebas, para ver qué líneas se han ejecutado, elija ![Icono Mostrar colores en cobertura de código](../test/media/codecoverage-showcoloringicon.png) **Mostrar colores en cobertura de código** en la ventana **Resultados de cobertura de código**. De forma predeterminada, el código que se incluye en las pruebas se resalta en color azul claro.
 
-   Para modificar los colores o usar la negrita, elija **Herramientas** > **Opciones** > **Entorno** > **Fuentes y colores** > **Mostrar valores para: Editor de texto**. En **Mostrar los elementos**, ajuste los elementos de cobertura.
+   > [!TIP]
+   > Para cambiar los colores o usar la negrita, elija **Herramientas** > **Opciones** > **Entorno** > **Fuentes y colores** > **Mostrar valores para: Editor de texto**. En **Mostrar los elementos**, ajuste la configuración de los elementos "Cobertura", por ejemplo, **Área de cobertura no modificada**.
+   >
+   > ![Fuentes y colores de cobertura de código](media/vs-2019/coverage-fonts-and-colors.png)
 
 3. Si los resultados muestran una cobertura baja, investigue qué partes del código no se están ensayando y escriba más pruebas para abarcarlas. Los equipos de desarrollo normalmente aspiran a una cobertura de código de un 80 %. En algunas situaciones, una cobertura menor es aceptable. Por ejemplo, una cobertura menor es aceptable cuando el código se genera a partir de una plantilla estándar.
 
 > [!TIP]
-> - Asegúrese de que la optimización del compilador está desactivada.
+> - Desactive la optimización del compilador.
 > - Si está trabajando con código no administrado (nativo), utilice una compilación de depuración.
-> - Asegúrese de que está generando archivos .pdb (símbolo) para cada ensamblado.
+> - Genere archivos. pdb (símbolo) para cada ensamblado.
 
-Si no obtiene los resultados esperados, consulte [Solución de problemas de cobertura de código](../test/troubleshooting-code-coverage.md). No olvide ejecutar la cobertura de código de nuevo después de actualizar el código. Los resultados de cobertura y color de código no se actualizan automáticamente después de modificar el código o al ejecutar pruebas.
+Si no obtiene los resultados esperados, consulte [Solución de problemas de cobertura de código](../test/troubleshooting-code-coverage.md).
+
+No olvide ejecutar la cobertura de código de nuevo después de actualizar el código. Los resultados de cobertura y color de código no se actualizan automáticamente después de modificar el código o al ejecutar pruebas.
 
 ## <a name="report-in-blocks-or-lines"></a>Informar en bloques o líneas
 
