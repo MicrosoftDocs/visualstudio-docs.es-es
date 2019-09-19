@@ -332,8 +332,17 @@
                   href: ca1064-exceptions-should-be-public.md
                 - name: 'CA1065: No producir excepciones en ubicaciones inesperadas'
                   href: ca1065-do-not-raise-exceptions-in-unexpected-locations.md
+                - name: 'CA1068: Los parámetros CancellationToken deben aparecer en último lugar'
+                  href: ca1068.md
                 - name: 'CA2210: Los ensamblados deben tener nombres seguros válidos'
                   href: ca2210-assemblies-should-have-valid-strong-names.md
+            - name: Advertencias de documentación
+              items:
+                - name: Información general
+                  displayName: documentation warnings
+                  href: documentation-warnings.md
+                - name: 'CA1200: Evitar el uso de etiquetas cref con un prefijo'
+                  href: ca1200.md
             - name: Advertencias de globalización
               items:
                 - name: Información general
@@ -514,6 +523,8 @@
                   href: ca1823-avoid-unused-private-fields.md
                 - name: 'CA1824: Marcar los ensamblados con NeutralResourcesLanguageAttribute'
                   href: ca1824-mark-assemblies-with-neutralresourceslanguageattribute.md
+                - name: 'CA1825: Evitar asignaciones de matrices de longitud cero'
+                  href: ca1825.md
             - name: Advertencias de portabilidad
               items:
                 - name: Información general
@@ -1030,7 +1041,7 @@
           href: c26812.md
         - name: C26814
           href: c26814.md
-    - name: Advertencias de C/C++
+    - name: advertencias de C/C++
       items:
         - name: Información general
           displayName: C++ warnings
