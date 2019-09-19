@@ -5,19 +5,19 @@ description: Una lista de las versiones de lanzamiento y los números de compila
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.date: 09/10/2019
+ms.date: 09/16/2019
 ms.topic: reference
 ms.custom: seodec18
 ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 79d16498b146a09f22d542423d4b691a2573e80d
-ms.sourcegitcommit: 4dfe098ac0df294aad63e6b384d6575980798ca3
+ms.openlocfilehash: f489d453e75031ddb9bd26e59cd4af182301c159
+ms.sourcegitcommit: 2db01751deeee7b2bdb1db25419ea6706e6fcdf8
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/11/2019
-ms.locfileid: "70888001"
+ms.lasthandoff: 09/17/2019
+ms.locfileid: "71062384"
 ---
 # <a name="visual-studio-build-numbers-and-release-dates"></a>Números de compilación y fechas de lanzamiento de Visual Studio
 
@@ -29,10 +29,11 @@ En la tabla siguiente se enumeran los números de compilación y las fechas de v
 
 | **Versión**| **Canal** | **Fecha de lanzamiento** | **Versión de compilación** |
 | ---------------------- | ----------- | ---------------- | ----------------- |
+| 16.3.0 | Preview 4 | 16 de septiembre de 2019 | 16.3.29311.281 |
 | 16.2.5 | Release | 10 de septiembre de 2019 | 16.2.29306.81 |
 | 16.0.8 | Release | 10 de septiembre de 2019 | 16.0.28803.584 |
 | 16.2.4 | Release | 5 de septiembre de 2019 | 16.2.29230.47 |
-| 16.3.0 | Versión preliminar 3 | 4 de septiembre de 2019 | 16.3.29230.61 |
+| 16.3.0 | Preview 3 | 4 de septiembre de 2019 | 16.3.29230.61 |
 | 16.2.3 | Release | 20 de agosto de 2019 | 16.2.29215.179 |
 | 16.2.2 | Release | 13 de agosto de 2019 | 16.2.29209.62 |
 | 16.3.0 | Preview 2 | 13 de agosto de 2019 | 16.3.29209.152 |
@@ -40,12 +41,12 @@ En la tabla siguiente se enumeran los números de compilación y las fechas de v
 | 16.2.1 | Release | 6 de agosto de 2019 | 16.2.29201.188 |
 | 16.2.0 | Release | 24 de julio de 2019 | 16.2.29123.88 |
 | 16.3.0 | Versión preliminar 1 | 24 de julio de 2019 | 16.3.29123.89 |
-| 16.2.0 | Versión preliminar 4 | 16 de julio de 2019 | 16.2.29111.141 |
+| 16.2.0 | Preview 4 | 16 de julio de 2019 | 16.2.29111.141 |
 | 16.1.6 | Release | 9 de julio de 2019 | 16.1.29102.190 |
 | 16.0.6 | Release | 9 de julio de 2019 | 16.0.28803.540 |
 | 16.1.5 | Release | 2 de julio de 2019 | 16.1.29025.244 |
 | 16.1.4 | Release | 25 de junio de 2019 | 16.1.29020.237 |
-| 16.2.0 | Versión preliminar 3 | 25 de junio de 2019 | 16.2.29021.104 |
+| 16.2.0 | Preview 3 | 25 de junio de 2019 | 16.2.29021.104 |
 | 16.1.3 | Release | 11 de junio de 2019 | 16.1.29009.5 |
 | 16.2.0 | Preview 2 | 11 de junio de 2019 | 16.2.29006.145 |
 | 16.0.5 | Release | 11 de junio de 2019 | 16.0.28803.514 |
@@ -54,7 +55,7 @@ En la tabla siguiente se enumeran los números de compilación y las fechas de v
 | 16.1.0 | Release | 21 de mayo de 2019 | 16.1.28917.181 |
 | 16.2.0 | Versión preliminar 1 | 21 de mayo de 2019 | 16.2.28917.182 |
 | 16.0.4 | Release | 14 de mayo de 2019 | 16.0.28803.452 |
-| 16.1.0 | Versión preliminar 3 | 6 de mayo de 2019 | 16.1.28902.138 |
+| 16.1.0 | Preview 3 | 6 de mayo de 2019 | 16.1.28902.138 |
 | 16.0.3 | Release | 30 de abril de 2019 | 16.0.28803.352 |
 | 16.1.0 | Preview 2 | 23 de abril de 2019 | 16.1.28822.285 |
 | 16.0.2 | Release | 18 de abril de 2019 | 16.0.28803.202 |
