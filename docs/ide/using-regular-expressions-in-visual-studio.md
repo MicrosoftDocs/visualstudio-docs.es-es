@@ -1,6 +1,6 @@
 ---
 title: Usar expresiones regulares
-ms.date: 06/12/2019
+ms.date: 09/13/2019
 ms.topic: conceptual
 f1_keywords:
 - vsregularexpressionhelp
@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: aaea2e8a2c4fbbead563bd9565cf84466e00c75c
-ms.sourcegitcommit: 9c07ae6fb18204ea080c8248994a683fa12e5c82
+ms.openlocfilehash: 380201259cc19c15b68ea9142308f21b901a9241
+ms.sourcegitcommit: b02c40c1ba193e38b5ace14590a6d57590d3270f
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/04/2019
-ms.locfileid: "70293434"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71012583"
 ---
 # <a name="use-regular-expressions-in-visual-studio"></a>Usar expresiones regulares en Visual Studio
 
@@ -35,33 +35,30 @@ La siguiente tabla contiene algunos ejemplos de caracteres de expresión regular
 |-------------|----------------|-------------|
 |Coincidencia con cualquier carácter (excepto un salto de línea). Para obtener más información, consulte [Cualquier carácter](/dotnet/standard/base-types/character-classes-in-regular-expressions#any-character-).|.|`a.o` coincide con "aro" en "around" y "abo" en "about", pero no con "acro" en "across"|
 |Coincidencia con cero o más apariciones de la expresión anterior (coincidencias con tantos caracteres como sea posible). Para obtener más información, consulte el artículo de [coincidencia con cero o más veces](/dotnet/standard/base-types/quantifiers-in-regular-expressions#match-zero-or-more-times-).|*|`a*r` coincide con "r" en "rack", "ar" en "ark" y "aar" en "aardvark".|
-|Coincidencia con cualquier carácter cero o más veces (carácter comodín \*)|.*|`c.*e` coincide con "cke" en "racket", "comme" en "comment" y "code" en "code"|
-|Coincidencia con una o más apariciones de la expresión anterior (coincidencia con tantos caracteres como sea posible). Para obtener más información, consulte el artículo de [coincidencia con una o más veces](/dotnet/standard/base-types/quantifiers-in-regular-expressions#match-one-or-more-times-).|+|`e.+d` coincide con "eed" en "feeder", pero no con "ed"|
-|Coincidencia con cualquier carácter una o más veces (carácter comodín ?)|.+|`e.+e` coincide con "eede" en "feeder", pero no con "ee"|
-|Coincidencia con cero o más apariciones de la expresión anterior (coincidencia con el menor número de caracteres posible). Para obtener más información, consulte el artículo de [coincidencia con cero o más veces (coincidencia diferida)](/dotnet/standard/base-types/quantifiers-in-regular-expressions#match-zero-or-more-times-lazy-match-).|*?|`e.*?e` coincide con "ee" en "feeder", pero no con "eede"|
-|Coincidencia con una o más apariciones de la expresión anterior (coincidencia con el menor número de caracteres posible). Para obtener más información, consulte el artículo de [coincidencia con uno o más veces (coincidencia diferida)](/dotnet/standard/base-types/quantifiers-in-regular-expressions#match-one-or-more-times-lazy-match-).|+?|`e.+?e` coincide con "ente" y "erprise" en "enterprise", pero no con toda la palabra "enterprise"|
+|Coincidencia con cualquier carácter cero o más veces.|.*|`c.*e` coincide con "cke" en "racket", "comme" en "comment" y "code" en "code"|
+|Coincidencia con una o más apariciones de la expresión anterior (coincidencia con tantos caracteres como sea posible). Para obtener más información, consulte el artículo de [coincidencia con una o más veces](/dotnet/standard/base-types/quantifiers-in-regular-expressions#match-one-or-more-times-).|+|`e+d` coincide con "eed" en "feeder" y "ed" en "faded".|
+|Buscar cualquier carácter coincidente una o más veces.|.+|`e.+e` coincide con "eede" in "feeder" pero no encuentra ninguna coincidencia en "feed".|
+|Coincidencia con cero o más apariciones de la expresión anterior (coincidencia con el menor número de caracteres posible). Para obtener más información, consulte el artículo de [coincidencia con cero o más veces (coincidencia diferida)](/dotnet/standard/base-types/quantifiers-in-regular-expressions#match-zero-or-more-times-lazy-match-).|*?|`\w*?d` coincide con "fad" y "ed" en "faded", pero no con toda la palabra "faded" debido a la coincidencia diferida.|
+|Coincidencia con una o más apariciones de la expresión anterior (coincidencia con el menor número de caracteres posible). Para obtener más información, consulte el artículo de [coincidencia con uno o más veces (coincidencia diferida)](/dotnet/standard/base-types/quantifiers-in-regular-expressions#match-one-or-more-times-lazy-match-).|+?|`e\w+?` coincide con "ee" en "asleep" y "ed" en "faded", pero no encuentra ninguna coincidencia en "fade".|
 |Delimitación de la cadena coincidente al [principio de una cadena o línea](/dotnet/standard/base-types/anchors-in-regular-expressions#start-of-string-or-line-).|^|`^car` coincide con la palabra "car" solo cuando aparece al principio de una línea|
-|Delimitación de la cadena coincidente al [final de una línea](/dotnet/standard/base-types/anchors-in-regular-expressions#end-of-string-or-line-).|\r?$|`end\r?$` coincide con "end" solo cuando aparece al final de una línea|
-|Delimitar la cadena coincidente al final del archivo|$|`end$` coincide con "end" solo cuando aparece al final del archivo|
+|Delimitación de la cadena coincidente al [final de una línea](/dotnet/standard/base-types/anchors-in-regular-expressions#end-of-string-or-line-).|\r?$|`car\r?$` coincide con "car" solo cuando aparece al final de una línea.|
+|Delimitar la cadena coincidente al final del archivo|$|`car$` coincide con "car" solo cuando aparece al final del archivo.|
 |Coincidencia con cualquier carácter único de un conjunto|[abc]|`b[abc]` coincide con "ba", "bb" y "bc"|
-|Coincidir con cualquier carácter de un intervalo de caracteres|[a-f]|`be[n-t]` coincide con "bet" en "between", "ben" en "beneath" y "bes" en "beside", pero no "below"|
+|Coincidir con cualquier carácter de un intervalo de caracteres|[a-f]|`be[n-t]` coincide con "bet" en "between", "ben" en "beneath" y "bes" en "beside", pero no encuentra ninguna coincidencia en "below".|
 |Capturar y numerar implícitamente la expresión contenida entre paréntesis|()|`([a-z])X\1` coincide con "aXa" y "bXb", pero no con "aXb". "\1" hace referencia al primer grupo de expresión "[a-z]". Para obtener más información, vea [Grupos de captura y patrones de reemplazo](#capture-groups-and-replacement-patterns). |
 |Invalidar una coincidencia|(?!abc)|`real(?!ity)` coincide con "real" en "realty" y "really", pero no con "reality". También encuentra el segundo “real” (pero no el primero) en “realityreal”.|
-|Coincidencia con cualquier carácter que no está en un conjunto determinado de caracteres. Para obtener más información, consulte [Grupo de caracteres negativos](/dotnet/standard/base-types/character-classes-in-regular-expressions#negative-character-group-).|[^abc]|`be[^n-t]` coincide con "bef" en "before", "beh" en "behind" y "bel" en "below", pero no con "beneath"|
+|Coincidencia con cualquier carácter que no está en un conjunto determinado de caracteres. Para obtener más información, consulte [Grupo de caracteres negativos](/dotnet/standard/base-types/character-classes-in-regular-expressions#negative-character-group-).|[^abc]|`be[^n-t]` coincide con "bef" en "before", "beh" en "behind" y "bel" en "below", pero no encuentra ninguna coincidencia en "beneath".|
 |Coincidencia con la expresión situada antes o después del símbolo.|&#124;|`(sponge|mud) bath` coincide con "sponge bath" y "mud bath"|
 |[Escape del carácter](/dotnet/standard/base-types/character-escapes-in-regular-expressions) que sigue a la barra diagonal inversa.| \\ |`\^` coincide con el carácter ^|
 |Especificación del número de apariciones del carácter o grupo precedente. Para obtener más información, consulte el artículo de [coincidencia exacta n veces](/dotnet/standard/base-types/quantifiers-in-regular-expressions#match-exactly-n-times-n).|{n}, donde "n" es el número de apariciones|`x(ab){2}x` coincide con "xababx"<br/>`x(ab){2,3}x` coincide con "xababx" y "xabababx", pero no con "xababababx"|
 |[Coincidencia con el texto en una clase de caracteres Unicode](/dotnet/standard/base-types/character-classes-in-regular-expressions#unicode-category-or-unicode-block-p). Para obtener más información sobre las clases de caracteres Unicode, consulte el artículo de [propiedades de caracteres Unicode estándar 5.2](http://www.unicode.org/versions/Unicode5.2.0/ch04.pdf).|\p{X}, donde "X" es el número de Unicode.|`\p{Lu}` coincide con "T" y "D" en "Thomas Doe"|
-|[Coincidencia con un límite de palabra](/dotnet/standard/base-types/anchors-in-regular-expressions#word-boundary-b).|\b (fuera de una clase de caracteres `\b` especifica un límite de palabras y dentro de una clase de caracteres `\b` un retroceso).|`\bin` coincide con "in" en "inside", pero no con "pinto"|
+|[Coincidencia con un límite de palabra](/dotnet/standard/base-types/anchors-in-regular-expressions#word-boundary-b).|\b (fuera de una clase de caracteres `\b` especifica un límite de palabras y dentro de una clase de caracteres `\b` un retroceso).|`\bin` coincide con "in" en "inside", pero no encuentra ninguna coincidencia en "pinto".|
 |Coincidencia con un salto de línea (es decir, con un retorno de carro seguido de una nueva línea).|\r?\n|`End\r?\nBegin` coincide con "End" y "Begin" solo cuando "End" es la última cadena en una línea y "Begin" es la primera cadena en la línea siguiente|
 |Coincidencia con cualquier [carácter de una palabra](/dotnet/standard/base-types/character-classes-in-regular-expressions#word-character-w).|\w|`a\wd` coincide con "add" y "a1d", pero no con "a d"|
 |Coincidencia con cualquier [carácter de espacio en blanco](/dotnet/standard/base-types/character-classes-in-regular-expressions#whitespace-character-s).|\s|`Public\sInterface` coincide con la frase "Public Interface"|
-|Coincidencia con cualquier [carácter de dígito decimal](/dotnet/standard/base-types/character-classes-in-regular-expressions#decimal-digit-character-d).|\d|`\d` coincide con "3" en "3456", "2" en "23" y "1" en "1"|
-|Coincidir con un carácter Unicode|\uXXXX donde XXXX especifica el valor del carácter Unicode.|`\u0065` coincide con el carácter "e"|
-|Coincidir con un identificador|\b[\_\w-[0-9]][\_\w]*\b|Coincide con "type1", pero no con "&type1" ni "#define"|
-|Coincidir con una cadena entre comillas|((\\".+?\\")&#124;('.+?'))|Coincide con cualquier cadena entre comillas simples o dobles|
-|Coincidir con un número hexadecimal|\b0[xX]([0-9a-fA-F]+\)\b|Coincide con "0xc67f", pero no con "0xc67g"|
-|Coincidir con enteros y decimales|\b[0-9]*\\.\*[0-9]+\b|Coincide con "1,333"|
+|Coincidencia con cualquier [carácter de dígito decimal](/dotnet/standard/base-types/character-classes-in-regular-expressions#decimal-digit-character-d).|\d|`\d` coincide con "4" y "0" en "wd40".|
+
+`\b0[xX]([0-9a-fA-F]+\)\b` es un ejemplo de expresión regular que combina algunos de los operadores y construcciones para que coincida con un número hexadecimal. Esta expresión coincide con "0xc67f", pero no con "0xc67g".
 
 > [!TIP]
 > En sistemas operativos Windows, la mayoría de las líneas terminan en "\r\n" (un retorno de carro seguido de una nueva línea). Estos caracteres no se ven, pero están presentes en el editor y se pasan al servicio de expresiones regulares de .NET.
