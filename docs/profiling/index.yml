@@ -1,0 +1,60 @@
+### YamlMime:Landing
+title: Cálculo del rendimiento de las aplicaciones en Visual Studio
+summary: La generación de perfiles y las herramientas de diagnóstico le ayudan a diagnosticar el uso de CPU y memoria, y otros problemas de nivel de aplicación. Con estas herramientas, puede acumular los datos de rendimiento mientras ejecuta la aplicación.
+metadata:
+  title: Medición del rendimiento en Visual Studio
+  description: Obtenga información sobre cómo usar Visual Studio para medir el rendimiento mediante las herramientas de generación de perfiles.
+  ms.topic: landing-page
+  author: mikejo5000
+  ms.author: mikejo
+  manager: jillfra
+  ms.date: 09/17/2019
+  ms.openlocfilehash: fcb3e40870d6f916cf754368359a90215ce1b665
+  ms.sourcegitcommit: 53bc4c11b82882ab658e34c65ae374060f823531
+  ms.translationtype: HT
+  ms.contentlocale: es-ES
+  ms.lasthandoff: 09/19/2019
+  ms.locfileid: "71130624"
+landingContent:
+- title: Acerca de la generación de perfiles
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: Un primer vistazo a las herramientas de generación de perfiles
+      url: profiling-feature-tour.md
+  - linkListType: concept
+    links:
+    - text: Formas de ejecutar las herramientas de generación de perfiles
+      url: running-profiling-tools-with-or-without-the-debugger.md
+- title: Primeros pasos
+  linkLists:
+  - linkListType: quickstart
+    links:
+    - text: Análisis del uso de CPU (C#, Visual Basic)
+      url: quickstart-cpu-usage-managed.md
+    - text: Análisis del uso de CPU (C++)
+      url: quickstart-cpu-usage-native.md
+    - text: Análisis del uso de CPU (ASP.NET)
+      url: quickstart-cpu-usage-aspnet.md
+  - linkListType: tutorial
+    links:
+    - text: Introducción al análisis del uso de CPU
+      url: beginners-guide-to-performance-profiling.md
+    - text: Introducción a la medición del uso de la memoria
+      url: beginners-guide-to-performance-profiling.md
+- title: Más herramientas de rendimiento
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: Sugerencias de rendimiento
+      url: perftips.md
+    - text: Análisis del consumo de recursos (XAML)
+      url: application-timeline.md
+    - text: Análisis del uso de la GPU (Direct3D)
+      url: gpu-usage.md
+    - text: Análisis del uso de la red (UWP)
+      url: network-usage.md
+    - text: Análisis del uso de la energía (UWP)
+      url: analyze-energy-use-in-store-apps.md
+    - text: Explorador de rendimiento (heredado)
+      url: performance-explorer.md
