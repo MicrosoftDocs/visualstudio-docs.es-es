@@ -1,6 +1,6 @@
 ---
-title: Conjuntos de reglas del analizador
-ms.date: 04/22/2019
+title: Conjuntos de reglas del analizador de FxCop
+ms.date: 09/23/2019
 ms.topic: conceptual
 helpviewer_keywords:
 - analyzer packages, rule sets
@@ -10,16 +10,27 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 68410fd43f182873c27e3d5fed742bed7ba8a4ed
-ms.sourcegitcommit: b83fefa8177c5554cbe2c59c4d102cbc534f7cc6
+ms.openlocfilehash: da1567dd088ecc060f031e59827ff33024e9e955
+ms.sourcegitcommit: 88f576ac32af31613c1a10c1548275e1ce029f4f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2019
-ms.locfileid: "69585135"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "71185955"
 ---
 # <a name="rule-sets-for-analyzer-packages"></a>Conjuntos de reglas para paquetes de analizador
 
 Los conjuntos de reglas predefinidos se incluyen en algunos paquetes del analizador de NuGet. Por ejemplo, los conjuntos de reglas que se incluyen con el paquete del analizador de NuGet [Microsoft. CodeAnalysis. FxCopAnalyzers](https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers/) (a partir de la versión 2.6.2 Critical () habilitan o deshabilitan reglas en función de su categoría, como la seguridad, la nomenclatura o el rendimiento. El uso de conjuntos de reglas facilita la rápida consulta únicamente de las infracciones de reglas que pertenecen a una determinada categoría de regla.
+
+Un conjunto de reglas es una agrupación de reglas de análisis de código que identifican problemas de destino y condiciones específicas. Los conjuntos de reglas permiten habilitar o deshabilitar reglas y establecer la gravedad de las infracciones de reglas individuales. El paquete de NuGet del analizador de FxCop incluye conjuntos de reglas predefinidos para las siguientes categorías de reglas:
+
+- diseño
+- en línea
+- mantenimiento
+- asignar nombre
+- rendimiento
+- confiabilidad
+- seguridad
+- uso
 
 Si va a migrar desde el análisis de "FxCop" heredado al análisis de código basado en .NET Compiler Platform, estos conjuntos de reglas permiten seguir usando configuraciones de reglas similares a [las que se usaron previamente](rule-set-reference.md).
 
@@ -74,5 +85,5 @@ El paquete del analizador de NuGet [Microsoft. CodeAnalysis. FxCopAnalyzers](htt
 - [Preguntas más frecuentes sobre analizadores](analyzers-faq.md)
 - [Introducción a los analizadores de .NET Compiler Platform](roslyn-analyzers-overview.md)
 - [Instalar analizadores](install-roslyn-analyzers.md)
-- [Usar analizadores](use-roslyn-analyzers.md)
+- [Configurar analizadores](use-roslyn-analyzers.md)
 - [Usar conjuntos de reglas para agrupar reglas de análisis de código](using-rule-sets-to-group-code-analysis-rules.md)
