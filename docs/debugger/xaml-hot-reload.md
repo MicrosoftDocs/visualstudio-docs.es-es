@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: aedc785a86966cf6425dfe35c5925efc9b78a509
-ms.sourcegitcommit: b02c40c1ba193e38b5ace14590a6d57590d3270f
+ms.openlocfilehash: ff5e70d4ec2831df18ce1b100e70730e2978201e
+ms.sourcegitcommit: 88f576ac32af31613c1a10c1548275e1ce029f4f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71012604"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "71186570"
 ---
 # <a name="write-and-debug-running-xaml-code-with-xaml-hot-reload-in-visual-studio"></a>Escribir y depurar código XAML en ejecución con la recarga activa de XAML en Visual Studio
 
@@ -49,17 +49,17 @@ A continuación se indican las limitaciones conocidas de la recarga activa de XA
 
 |Limitación|WPF|UWP|Notas|
 |-|-|-|-|
-|Cableado de eventos a controles mientras la aplicación se está ejecutando|No admitido|No compatible|Vea el error: *Error al comprobar el evento*. Tenga en cuenta que en WPF puede hacer referencia a un controlador de eventos existente. En aplicaciones UWP, no se admite la referencia a un controlador de eventos existente.|
+|Cableado de eventos a controles mientras la aplicación se está ejecutando|No admitido|No compatibles|Vea el error: *Error al comprobar el evento*. Tenga en cuenta que en WPF puede hacer referencia a un controlador de eventos existente. En aplicaciones UWP, no se admite la referencia a un controlador de eventos existente.|
 |Crear objetos de recursos en un diccionario de recursos como los de la página o la ventana de la aplicación o *app. Xaml*|Se admite a partir de Visual Studio 2019 Update 2|Compatible|Ejemplo: agregar un `SolidColorBrush` a un diccionario de recursos para su uso `StaticResource`como.</br>Nota: Los recursos estáticos, convertidores de estilo y otros elementos que se escriben en un diccionario de recursos se pueden aplicar/usar al usar la recarga activa de XAML. Solo se admite la creación del recurso.</br> Cambiar la propiedad del `Source` Diccionario de recursos.|
-|Agregar nuevos controles, clases, ventanas u otros archivos al proyecto mientras la aplicación se está ejecutando|No admitido|No admitido|None|
-|Administración de paquetes NuGet (agregar, quitar o actualizar paquetes)|No admitido|No admitido|None|
+|Agregar nuevos controles, clases, ventanas u otros archivos al proyecto mientras la aplicación se está ejecutando|No admitido|No admitido|Ninguna|
+|Administración de paquetes NuGet (agregar, quitar o actualizar paquetes)|No admitido|No admitido|Ninguna|
 |Cambiar el enlace de datos que usa la extensión de marcado {x:Bind}|N/D|Se admite a partir de Visual Studio 2019|Esto requiere la versión 1809 de Windows 10 (compilación 10.0.17763). No se admite en Visual Studio 2017 o versiones anteriores.|
 
-## <a name="error-messages"></a>mensajes de error
+## <a name="error-messages"></a>Mensajes de error
 
 Es posible que se produzcan los siguientes errores al usar la recarga activa de XAML.
 
-|Mensaje de error|DESCRIPCIÓN|
+|Mensaje de error|Descripción|
 |-|-|
 |Error al comprobar el evento|Error indica que está intentando conectar un evento a uno de los controles, lo que no se admite mientras la aplicación se está ejecutando.|
 |Este cambio no es compatible con la recarga activa de XAML y no se aplicará durante la sesión de depuración.|Error indica que el cambio que está intentando no es compatible con la recarga activa de XAML. Detenga la sesión de depuración, realice el cambio y, a continuación, reinicie la sesión de depuración. Si encuentra un escenario no admitido que le gustaría ver como compatible, use la nueva opción "sugerir una característica" de la comunidad de [desarrolladores de Visual Studio](https://developercommunity.visualstudio.com/spaces/8/index.html). |
@@ -68,3 +68,4 @@ Es posible que se produzcan los siguientes errores al usar la recarga activa de 
 
 * [Solución de problemas de recarga activa de XAML](xaml-hot-reload-troubleshooting.md)
 * [Recarga activa de XAML para Xamarin. Forms](/xamarin/xamarin-forms/xaml/hot-reload)
+* [Editar y continuar (Visual C#)](../debugger/edit-and-continue-visual-csharp.md)
