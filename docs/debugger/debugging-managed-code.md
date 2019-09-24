@@ -1,6 +1,6 @@
 ---
 title: Depurar código administrado | Microsoft Docs
-ms.date: 11/04/2016
+ms.date: 09/23/2019
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -16,16 +16,16 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: a5cf348b06bca6127690c7b5a7301881bdf75078
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c94de629026cfa1b78429aaf2209b81eead7da4f
+ms.sourcegitcommit: ea182703e922c74725045afc251bcebac305068a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62851874"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71211204"
 ---
-# <a name="debugging-managed-code"></a>Depurar código administrado
+# <a name="debug-managed-code-c-visual-basic-f-ccli"></a>Depurar códigoC#administrado (, F#Visual Basic C++,,/CLI)
 
-En esta sección se tratan problemas y técnicas de depuración comunes para aplicaciones administradas, o aplicaciones escritas en lenguajes basados en Common Language Runtime, como Visual Basic, C# y C++. Las técnicas descritas a continuación son técnicas de alto nivel. [Primer vistazo al depurador](../debugger/debugger-feature-tour.md).
+En esta sección se tratan problemas y técnicas de depuración comunes para aplicaciones administradas o aplicaciones escritas en lenguajes que tienen como C#destino el C++Common Language Runtime, como Visual Basic, y/CLI. Las técnicas descritas a continuación son técnicas de alto nivel. [Primer vistazo al depurador](../debugger/debugger-feature-tour.md).
 
 ## <a name="in-this-section"></a>En esta sección
 
@@ -38,7 +38,7 @@ Describe aserciones en el código administrado, que prueban condiciones especifi
 [Instrucciones Stop en Visual Basic](../debugger/stop-statements-in-visual-basic.md)\
 Describe la instrucción `Stop`, que proporciona una alternativa al establecimiento de un punto de interrupción. También se proporciona código de ejemplo, junto con comparaciones entre las instrucciones `Stop` y `End`, así como entre las instrucciones `Stop` y `Assert`.
 
-[Tutorial: Depurar un formulario Windows Forms](../debugger/walkthrough-debugging-a-windows-form.md)\
+[Tutorial: Depurar un Windows Form](../debugger/walkthrough-debugging-a-windows-form.md)\
 Ofrece instrucciones paso a paso para crear un Windows Form y para depurar dicho formulario. Un Windows Form, un componente estándar de una aplicación para Windows administrada, es una de las aplicaciones administradas más comunes. En este tutorial se utiliza Visual C# y Visual Basic, pero normalmente las técnicas para crear un formulario Windows Forms con C++ son similares.
 
 [Depuración en el método OnStart](../debugger/how-to-debug-the-onstart-method.md)\
@@ -81,7 +81,7 @@ Describe problemas y técnicas de depuración comunes que pueden aparecer en la 
 
 ## <a name="see-also"></a>Vea también
 
-- [Tutorial: Depurar controles de formularios personalizados de Windows en tiempo de diseño](/dotnet/framework/winforms/controls/walkthrough-debugging-custom-windows-forms-controls-at-design-time)
+- [Tutorial: Depurar controles de Windows Forms personalizados en tiempo de diseño](/dotnet/framework/winforms/controls/walkthrough-debugging-custom-windows-forms-controls-at-design-time)
 - [Seguridad del depurador](../debugger/debugger-security.md)
-- [Depurar en Visual Studio](../debugger/index.md)
+- [Depurar en Visual Studio](../debugger/index.yml)
 - [Primer vistazo al depurador](../debugger/debugger-feature-tour.md)

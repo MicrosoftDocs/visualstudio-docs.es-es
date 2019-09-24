@@ -1,5 +1,5 @@
 ---
-title: Novedades del depurador de Visual Studio 2017 | Microsoft Docs
+title: Novedades del depurador en Visual Studio 2017 | Microsoft Docs
 titleSuffix: ''
 ms.date: 01/22/2018
 ms.topic: conceptual
@@ -20,18 +20,18 @@ manager: jillfra
 ms.workload:
 - multiple
 monikerRange: vs-2017
-ms.openlocfilehash: 9c6f2eb4be56be8cf5e25c3238a91819df3bc574
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 130387fedce065948ebe09ea605e32cf89ad820b
+ms.sourcegitcommit: ea182703e922c74725045afc251bcebac305068a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62901408"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71210592"
 ---
 # <a name="whats-new-for-the-debugger-in-visual-studio-2017"></a>Novedades del depurador de Visual Studio 2017
 
 El depurador incluye estas nuevas características:
 
-- Novedades de la versión 15.5, el **Snapshot Debugger** toma una instantánea de sus aplicaciones en producción cuando se ejecuta el código que le interesen. Para indicar al depurador que tome una instantánea, establezca puntos de acoplamiento y puntos de registro en el código. El depurador le permite ver exactamente qué salió mal, sin afectar el tráfico de la aplicación de producción. El Depurador de instantáneas puede permitirle disminuir considerablemente el tiempo que tarda en resolver los problemas que se producen en los entornos de producción.
+- Como novedad en la versión 15,5, el **Snapshot Debugger** toma una instantánea de las aplicaciones en producción cuando se ejecuta código que le interesa. Para indicar al depurador que tome una instantánea, establezca puntos de acoplamiento y puntos de registro en el código. El depurador le permite ver exactamente qué salió mal, sin afectar el tráfico de la aplicación de producción. El Depurador de instantáneas puede permitirle disminuir considerablemente el tiempo que tarda en resolver los problemas que se producen en los entornos de producción.
 
     La colección de instantáneas está disponible para las siguientes aplicaciones web que se ejecutan en Azure App Service:
 
@@ -40,7 +40,7 @@ El depurador incluye estas nuevas características:
 
     Para obtener más información, vea [Depurar aplicaciones de ASP.NET Azure activas con el depurador de instantáneas](../debugger/debug-live-azure-applications.md).
 
-- Novedades de la versión 15.5 de Visual Studio Enterprise solo, **step-back de IntelliTrace** automáticamente toma una instantánea de la aplicación en cada punto de interrupción y el depurador de evento de paso. Las instantáneas registradas le permiten volver a puntos de interrupción anteriores y ver el estado de la aplicación tal y como estaba en un momento anterior. La característica step-back de IntelliTrace puede permitirle ahorrar tiempo cuando desea ver el estado anterior de la aplicación, pero no desea reiniciar la depuración ni volver a crear el estado de aplicación que se desea.
+- Novedad de la versión 15,5 solo en Visual Studio Enterprise, **IntelliTrace Step-Back** toma automáticamente una instantánea de la aplicación en cada evento de paso del depurador y punto de interrupción. Las instantáneas registradas le permiten volver a puntos de interrupción anteriores y ver el estado de la aplicación tal y como estaba en un momento anterior. La característica step-back de IntelliTrace puede permitirle ahorrar tiempo cuando desea ver el estado anterior de la aplicación, pero no desea reiniciar la depuración ni volver a crear el estado de aplicación que se desea.
 
     Para poder navegar y ver las instantáneas, use los botones **Retroceder paso a paso** y **Avanzar paso a paso** en la barra de herramientas de depuración. Estos botones permiten navegar por los eventos que aparecen en la pestaña **Eventos** en la ventana **Herramientas de diagnóstico**.
 
@@ -48,29 +48,29 @@ El depurador incluye estas nuevas características:
 
     Para obtener más información, vea la página [Inspeccionar el estado de aplicación anterior mediante step-back de IntelliTrace en Visual Studio](../debugger/view-historical-application-state.md).
 
-- El **aplicación auxiliar de excepciones** reemplaza el Asistente de excepciones y aparece en un cuadro de diálogo no modal donde se produjo el error. El **aplicación auxiliar de excepciones** proporciona un acceso más rápido a las excepciones internas, análisis adicionales por el depurador (si está disponible) y acceso inmediato a la **configuración de excepciones** para la excepción. También se pueden arrastrar a la aplicación auxiliar de excepciones a una vista flotante si está bloqueando algo que necesita para ver.
+- La **aplicación auxiliar de excepciones** reemplaza al asistente de excepciones y aparece en un cuadro de diálogo no modal en el que se produjo el error. La **aplicación auxiliar de excepciones** proporciona un acceso más rápido a cualquier excepción interna, un análisis adicional por parte del depurador (si está disponible) y el acceso inmediato a la **configuración de excepción** para la excepción. También se puede arrastrar la aplicación auxiliar de excepciones a una vista flotante si está bloqueando algo que necesite ver.
 
-    Por ejemplo, un **NullReferenceException** muestra ahora la variable que tiene la referencia nula (información adicional).
+    Por ejemplo, una **excepción NullReferenceException** muestra ahora la variable que tiene la referencia nula (información adicional).
 
-    ![Aplicación auxiliar de excepciones del depurador](../debugger/media/dbg-exception-helper.png "DbgExceptionHelper")
+    ![Aplicación auxiliar de excepciones del depurador] (../debugger/media/dbg-exception-helper.png "DbgExceptionHelper")
 
     Para obtener más información, vea la publicación del blog [Using the New Exception Helper in Visual Studio](https://blogs.msdn.microsoft.com/visualstudioalm/2016/03/31/using-the-new-exception-helper-in-visual-studio-15-preview/) (Usar el nuevo asistente de excepciones en Visual Studio).
 
-- Ahora puede ejecutar en una línea de código mientras está en pausa en el depurador seleccionando el **ejecutar hasta aquí** icono de flecha verde (verá el icono al mantener el mouse sobre una línea de código). Esto elimina la necesidad de establecer puntos de interrupción temporales.
+- Ahora puede ejecutar una línea de código mientras se encuentra en pausa en el depurador; para ello, seleccione el icono de flecha verde **ejecutar hasta aquí** (puede ver el icono mientras se mantiene el puntero sobre una línea de código). Esto elimina la necesidad de establecer puntos de interrupción temporales.
 
-    ![Depurador de ejecución, haga clic en](../debugger/media/dbg-run-to-click.png "DbgRunToClick")
+    ![Ejecución del depurador para hacer clic] (../debugger/media/dbg-run-to-click.png "DbgRunToClick")
 
-- Puede establecer condiciones en las excepciones en el **configuración de excepciones** cuadro de diálogo (puede hacerlo mediante el uso de la **Editar condición** icono en el cuadro de diálogo Configuración de excepciones o mediante el menú contextual en el excepción.) Las condiciones admitidas actualmente incluyen los nombres de módulo para incluir o excluir de la excepción.
+- Puede establecer condiciones en excepciones en el cuadro de diálogo **configuración de excepciones** (puede hacerlo mediante el icono **Editar condición** en el cuadro de diálogo Configuración de excepciones o mediante el menú contextual en la excepción). Las condiciones admitidas actualmente incluyen los nombres de módulo que se van a incluir o excluir para la excepción.
 
-    ![Las condiciones de una excepción](../debugger/media/dbg-conditional-exception.png "DbgConditionalException")
+    ![Condiciones de una excepción] (../debugger/media/dbg-conditional-exception.png "DbgConditionalException")
 
-- Adjuntar al cuadro de diálogo incluye una nueva característica de búsqueda que puede ayudarle a identificar rápidamente el proceso que se debe adjuntar a proceso.
+- El cuadro de diálogo asociar al proceso incluye una nueva característica de búsqueda que puede ayudarle a identificar con mayor rapidez el proceso al que debe asociarse.
 
-    ![Búsqueda en asociar al proceso](../debugger/media/dbg-attach-to-process-search.png "DbgAttachToProcessSearch")
+    ![Buscar en asociar al proceso] (../debugger/media/dbg-attach-to-process-search.png "DbgAttachToProcessSearch")
 
-Para obtener más información sobre estas nuevas características, consulte el [notas de la versión [!include[vs_dev15](../misc/includes/vs_dev15_md.md)] ](/visualstudio/releasenotes/vs2017-relnotes).
+Para obtener más información sobre estas nuevas características, consulte las [notas de [!include[vs_dev15](../misc/includes/vs_dev15_md.md)]la versión de ](/visualstudio/releasenotes/vs2017-relnotes).
 
 ## <a name="see-also"></a>Vea también
 
-- [Depurar en Visual Studio](../debugger/index.md)
+- [Depurar en Visual Studio](../debugger/index.yml)
 - [Primer vistazo al depurador](../debugger/debugger-feature-tour.md)
