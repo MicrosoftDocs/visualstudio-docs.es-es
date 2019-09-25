@@ -128,7 +128,7 @@ Habilite las conexiones para las direcciones URL siguientes:
 
 - static2.sharepointonline.com (hospeda los recursos que Visual Studio usa en el kit de tejido interfaz de la usuario de Office, como las fuentes)
 
-- &#42.nuget.org (para las conexiones de NuGet)
+- &#42;.nuget.org (para las conexiones de NuGet)
 
   > [!NOTE]
   > Es posible que las direcciones URL de servidores NuGet privados no se incluyan en la lista. Puede buscar los servidores NuGet que se utilizan en %APPData%\Nuget\NuGet.Config.

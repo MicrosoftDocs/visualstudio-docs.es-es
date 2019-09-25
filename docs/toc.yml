@@ -1,4 +1,4 @@
-- name: Documentación de Visual Studio
+- name: Documentación del IDE de Visual Studio
   href: ide/index.yml
   pdf_name: Visual Studio documentation
 - name: Información general
