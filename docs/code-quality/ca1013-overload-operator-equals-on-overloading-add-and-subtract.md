@@ -21,12 +21,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 8c82e7303ea4016974be04c3d8745cb2011017f0
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 2bb5fd5c0e68b5dcffc212af03294d94d04d2abe
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68923161"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71236331"
 ---
 # <a name="ca1013-overload-operator-equals-on-overloading-add-and-subtract"></a>CA1013: El operador de sobrecarga es igual que la suma y resta de sobrecarga
 
@@ -35,15 +35,15 @@ ms.locfileid: "68923161"
 |TypeName|OverloadOperatorEqualsOnOverloadingAddAndSubtract|
 |Identificador de comprobación|CA1013|
 |Categoría|Microsoft.Design|
-|Cambio problemático|Poco problemático|
+|Cambio importante|Poco problemático|
 
-## <a name="cause"></a>Causa
+## <a name="cause"></a>Motivo
 Un tipo público o protegido implementa los operadores de suma o resta sin implementar el operador de igualdad.
 
 ## <a name="rule-description"></a>Descripción de la regla
 Cuando las instancias de un tipo se pueden combinar mediante operaciones como suma y resta, casi siempre se debe definir la igualdad que se va `true` a devolver para dos instancias cualesquiera que tengan los mismos valores constituyentes.
 
-No se puede usar el operador de igualdad predeterminado en una implementación sobrecargada del operador de igualdad. Si lo hace, se producirá un desbordamiento de pila. Para implementar el operador de igualdad, use el método Object. Equals en su implementación de. Consulte el ejemplo siguiente.
+No se puede usar el operador de igualdad predeterminado en una implementación sobrecargada del operador de igualdad. Si lo hace, se producirá un desbordamiento de pila. Para implementar el operador de igualdad, use el método Object. Equals en su implementación de. Vea el ejemplo siguiente.
 
 ```vb
 If (Object.ReferenceEquals(left, Nothing)) Then

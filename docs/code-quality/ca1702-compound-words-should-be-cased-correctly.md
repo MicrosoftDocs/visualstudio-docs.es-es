@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f78ea4f44c48d2740df58def03a6335bce6637a2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 5480d3dde926dfe31b018a5cd0b1ea6a5813063b
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62545937"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71234337"
 ---
 # <a name="ca1702-compound-words-should-be-cased-correctly"></a>CA1702: En las palabras compuestas se deben utilizar mayúsculas y minúsculas correctamente
 
@@ -28,7 +28,7 @@ ms.locfileid: "62545937"
 |TypeName|CompoundWordsShouldBeCasedCorrectly|
 |Identificador de comprobación|CA1702|
 |Categoría|Microsoft.Naming|
-|Cambio problemático|Importante cuando se desencadena en ensamblados.<br /><br /> Indivisible: cuando se desencadena en parámetros de tipo.|
+|Cambio importante|Problemático: cuando se desencadena en ensamblados.<br /><br /> No problemático: cuando se desencadena en parámetros de tipo.|
 
 ## <a name="cause"></a>Motivo
 
@@ -36,17 +36,17 @@ El nombre de un identificador contiene varias palabras y al menos una de ellas p
 
 ## <a name="rule-description"></a>Descripción de la regla
 
-El nombre del identificador se divide en palabras que se basan en las mayúsculas y minúsculas. La biblioteca de correctores ortográficos de Microsoft comprueba cada combinación de dos palabras contigua. Si lo reconoce, el identificador genera una infracción de la regla. Ejemplos de palabras compuestas que originan una infracción son "CheckSum" y "MultiPart", que debería escribirse como "Checksum" y "Multipart", respectivamente. Debido al uso común anterior, se generan varias excepciones a la regla, y se marcan algunas palabras únicas, como "Toolbar" y "Filename", que deberían escribirse como dos palabras distintas (en este caso, "ToolBar" y "FileName").
+El nombre del identificador se divide en palabras que se basan en el uso de mayúsculas y minúsculas. La biblioteca del corrector ortográfico de Microsoft comprueba cada combinación de dos palabras contiguas. Si se reconoce, el identificador produce una infracción de la regla. Ejemplos de palabras compuestas que causan una infracción son "CheckSum" y "multipart", que deben usarse como "checksum" y "multipart", respectivamente. Debido al uso común anterior, hay varias excepciones integradas en la regla y se marcan varias palabras individuales, como "Toolbar" y "filename", que deben usarse como dos palabras distintas (en este caso, "ToolBar" y "FileName").
 
 Las convenciones de nomenclatura proporcionan una apariencia común para las bibliotecas destinadas a Common Language Runtime. Esto reduce la curva de aprendizaje necesaria para las nuevas bibliotecas de software y aumenta la confianza del cliente respecto a que la biblioteca se haya desarrollado por parte de un especialista en desarrollo de código administrado.
 
 ## <a name="how-to-fix-violations"></a>Cómo corregir infracciones
 
-Cambie el nombre por lo que es con grafía correctamente.
+Cambie el nombre para que sea correcto.
 
 ## <a name="language"></a>Lenguaje
 
-El corrector ortográfico comprueba actualmente sólo con los diccionarios de la referencia cultural en inglés. Puede cambiar la referencia cultural de su proyecto en el archivo de proyecto, agregando la **CodeAnalysisCulture** elemento.
+El corrector ortográfico comprueba actualmente únicamente los diccionarios de referencia cultural basados en inglés. Puede cambiar la referencia cultural del proyecto en el archivo del proyecto agregando el elemento **CodeAnalysisCulture** .
 
 Por ejemplo:
 
@@ -57,17 +57,17 @@ Por ejemplo:
 ```
 
 > [!IMPORTANT]
-> Si la referencia cultural se establece en algo distinto de una referencia cultural de inglés, esta regla de análisis de código se deshabilita de forma silenciosa.
+> Si establece la referencia cultural en algo distinto de una referencia cultural basada en inglés, esta regla de análisis de código se deshabilita de forma silenciosa.
 
-## <a name="when-to-suppress-warnings"></a>Cuándo Suprimir advertencias
+## <a name="when-to-suppress-warnings"></a>Cuándo suprimir advertencias
 
-Es seguro suprimir una advertencia de esta regla si el diccionario ortográfico reconoce ambas partes de la palabra compuesta y se pretende utilizar dos palabras.
+Es seguro suprimir una advertencia de esta regla si el diccionario ortográfico reconoce ambas partes de la palabra compuesta y el objetivo es usar dos palabras.
 
 ## <a name="related-rules"></a>Reglas relacionadas
 
-- [CA1701: Palabras compuestas de la cadena de recursos deberían escribirse correctamente](../code-quality/ca1701-resource-string-compound-words-should-be-cased-correctly.md)
-- [CA1709: Los identificadores deberían escribirse correctamente](../code-quality/ca1709-identifiers-should-be-cased-correctly.md)
-- [CA1708: Los identificadores deben diferenciarse por algo más que el caso](../code-quality/ca1708-identifiers-should-differ-by-more-than-case.md)
+- [CA1701: Las palabras compuestas de cadena de recurso deben tener mayúsculas y minúsculas](../code-quality/ca1701-resource-string-compound-words-should-be-cased-correctly.md)
+- [CA1709: Los identificadores deben usar mayúsculas y minúsculas correctamente](../code-quality/ca1709-identifiers-should-be-cased-correctly.md)
+- [CA1708: Los identificadores deben diferir más que el uso de mayúsculas y minúsculas](../code-quality/ca1708-identifiers-should-differ-by-more-than-case.md)
 
 ## <a name="see-also"></a>Vea también
 

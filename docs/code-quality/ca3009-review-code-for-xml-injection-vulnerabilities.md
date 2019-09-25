@@ -10,12 +10,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 2f0b0ba39c8edee9b2b8df608b47a00e6353538f
-ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
+ms.openlocfilehash: 37ba7e8664c6fa24e302dbebd38643a0c451114c
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "65841066"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71237241"
 ---
 # <a name="ca3009-review-code-for-xml-injection-vulnerabilities"></a>CA3009: Revisión de código en busca de vulnerabilidades de inyección de XML
 
@@ -24,31 +24,31 @@ ms.locfileid: "65841066"
 |TypeName|ReviewCodeForXmlInjectionVulnerabilities|
 |Identificador de comprobación|CA3009|
 |Categoría|Microsoft.Security|
-|Cambio problemático|No trascendental|
+|Cambio importante|Poco problemático|
 
 ## <a name="cause"></a>Motivo
 
-Entrada de solicitud HTTP potencialmente no confiable alcanza la salida XML sin procesar.
+La entrada de la solicitud HTTP que podría no ser de confianza alcanza la salida XML sin formato.
 
 ## <a name="rule-description"></a>Descripción de la regla
 
-Al trabajar con entradas no seguras, esté atento a ataques de inyección de código XML. Un atacante puede usar la inserción de XML para insertar caracteres especiales en un documento XML, hacer que el documento no válido XML. O bien, un atacante malintencionada podría insertar nodos XML de su elección.
+Al trabajar con una entrada que no es de confianza, tenga en cuentan los ataques por inyección de XML. Un atacante puede usar la inyección XML para insertar caracteres especiales en un documento XML, lo que convierte el documento en XML no válido. O bien, un atacante podría insertar de forma malintencionada los nodos XML de su elección.
 
-Esta regla intenta encontrar la entrada de las solicitudes HTTP para llegar a una operación de escritura XML sin formato.
-
-> [!NOTE]
-> Esta regla no puede realizar un seguimiento de datos a través de ensamblados. Por ejemplo, si un ensamblado lee la entrada de solicitud HTTP y, a continuación, pasa a otro ensamblado que escribe XML sin formato, esta regla no genera una advertencia.
+Esta regla intenta buscar la entrada de las solicitudes HTTP que llegan a una escritura XML sin formato.
 
 > [!NOTE]
-> Hay un límite configurable para profundidad esta regla analizará el flujo de datos a través de llamadas de método. Consulte [Configuration Analyzer](https://github.com/dotnet/roslyn-analyzers/blob/master/docs/Analyzer%20Configuration.md#dataflow-analysis) acerca de cómo configurar el límite en un archivo EditorConfig.
+> Esta regla no puede realizar el seguimiento de los datos entre ensamblados. Por ejemplo, si un ensamblado lee la entrada de la solicitud HTTP y, a continuación, la pasa a otro ensamblado que escribe XML sin formato, esta regla no generará ninguna advertencia.
+
+> [!NOTE]
+> Existe un límite configurable en cuanto a la profundidad con que esta regla analizará el flujo de datos a través de las llamadas a métodos. Vea [configuración del analizador](https://github.com/dotnet/roslyn-analyzers/blob/master/docs/Analyzer%20Configuration.md#dataflow-analysis) para saber cómo configurar el límite en un archivo EditorConfig.
 
 ## <a name="how-to-fix-violations"></a>Cómo corregir infracciones
 
-No escriba el XML sin formato. En su lugar, use métodos o propiedades que codificar XML su entrada.
+No escriba XML sin formato. En su lugar, use métodos o propiedades que codifiquen en XML su entrada.
 
-O bien, de entrada antes de escribir el XML sin formato de codificación XML.
+O bien, codifique la entrada XML antes de escribir XML sin formato.
 
-## <a name="when-to-suppress-warnings"></a>Cuándo Suprimir advertencias
+## <a name="when-to-suppress-warnings"></a>Cuándo suprimir advertencias
 
 No suprima las advertencias de esta regla.
 

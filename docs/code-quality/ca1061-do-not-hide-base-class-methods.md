@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8f13ac29028472384cfadbf9c397e578f6509670
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: eacd20dee0758ff481b259807ba52bb78b26f5d2
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68922423"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71235386"
 ---
 # <a name="ca1061-do-not-hide-base-class-methods"></a>CA1061: No ocultar métodos de clase base
 
@@ -28,9 +28,9 @@ ms.locfileid: "68922423"
 |TypeName|DoNotHideBaseClassMethods|
 |Identificador de comprobación|CA1061|
 |Categoría|Microsoft.Design|
-|Cambio problemático|Problemático|
+|Cambio importante|Problemático|
 
-## <a name="cause"></a>Causa
+## <a name="cause"></a>Motivo
 Un tipo derivado declara un método con el mismo nombre y con el mismo número de parámetros que uno de sus métodos base; uno o varios parámetros son un tipo base del parámetro correspondiente en el método base; y cualquier parámetro restante tiene tipos que son idénticos a los parámetros correspondientes en el método base.
 
 ## <a name="rule-description"></a>Descripción de la regla

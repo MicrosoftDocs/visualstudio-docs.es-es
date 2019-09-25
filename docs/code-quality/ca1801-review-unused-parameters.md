@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a73ce207d8efb0c6309ba52648c7231f89bc7984
-ms.sourcegitcommit: 0f44ec8ba0263056ad04d2d0dc904ad4206ce8fc
+ms.openlocfilehash: 6de48bf273a5c93afcd14e7bab2c5d4c4c4b5a7c
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70766042"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71233824"
 ---
 # <a name="ca1801-review-unused-parameters"></a>CA1801: Revisar parámetros sin utilizar
 
@@ -29,9 +29,9 @@ ms.locfileid: "70766042"
 |TypeName|ReviewUnusedParameters|
 |Identificador de comprobación|CA1801|
 |Categoría|Microsoft.Usage|
-|Cambio problemático|No problemático: Si el miembro no es visible fuera del ensamblado, independientemente del cambio que realice.<br /><br /> No problemático: Si cambia el miembro para usar el parámetro dentro de su cuerpo.<br /><br /> Problemático: Si quita el parámetro y es visible fuera del ensamblado.|
+|Cambio importante|No problemático: Si el miembro no es visible fuera del ensamblado, independientemente del cambio que realice.<br /><br /> No problemático: Si cambia el miembro para usar el parámetro dentro de su cuerpo.<br /><br /> Problemático: Si quita el parámetro y es visible fuera del ensamblado.|
 
-## <a name="cause"></a>Causa
+## <a name="cause"></a>Motivo
 
 Una signatura de método incluye un parámetro que no se usa en el cuerpo del método.
 

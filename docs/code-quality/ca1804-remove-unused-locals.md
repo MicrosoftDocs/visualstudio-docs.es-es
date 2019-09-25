@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: bd3e9c56bb02995d9b99b57bb2799ab69b51a42d
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 0a83d0afffc50c7697fad98c4dc49e31770d63d4
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68921566"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71233749"
 ---
 # <a name="ca1804-remove-unused-locals"></a>CA1804: Quitar variables locales no utilizadas
 
@@ -31,9 +31,9 @@ ms.locfileid: "68921566"
 |TypeName|RemoveUnusedLocals|
 |Identificador de comprobación|CA1804|
 |Categoría|Microsoft.Performance|
-|Cambio problemático|Poco problemático|
+|Cambio importante|Poco problemático|
 
-## <a name="cause"></a>Causa
+## <a name="cause"></a>Motivo
 Un método declara una variable local, pero no utiliza la variable, excepto posiblemente como el destinatario de una instrucción de asignación. Para el análisis de esta regla, el ensamblado probado se debe compilar con información de depuración y el archivo de base de datos de programa (. pdb) asociado debe estar disponible.
 
 ## <a name="rule-description"></a>Descripción de la regla

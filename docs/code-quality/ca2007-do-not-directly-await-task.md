@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: jillfra
 dev_langs:
 - CSharp
-ms.openlocfilehash: 0d3ab899ad660c637492a4c3d229779481184e95
-ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
+ms.openlocfilehash: cf07c997f933e6aacf3eff29ae204ecd0bedb036
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69547010"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71233075"
 ---
 # <a name="ca2007-do-not-directly-await-a-task"></a>CA2007: No esperar una tarea directamente
 
@@ -26,9 +26,9 @@ ms.locfileid: "69547010"
 |TypeName|DoNotDirectlyAwaitATaskAnalyzer|
 |Identificador de comprobación|CA2007|
 |Categoría|Microsoft.Reliability|
-|Cambio problemático|Poco problemático|
+|Cambio importante|Poco problemático|
 
-## <a name="cause"></a>Causa
+## <a name="cause"></a>Motivo
 
 Un método asincrónico [espera](/dotnet/csharp/language-reference/keywords/await) <xref:System.Threading.Tasks.Task> directamente.
 
@@ -36,7 +36,7 @@ Un método asincrónico [espera](/dotnet/csharp/language-reference/keywords/awai
 
 Cuando un método asincrónico espera <xref:System.Threading.Tasks.Task> directamente, la continuación se produce en el mismo subproceso que creó la tarea. Este comportamiento puede ser costoso en términos de rendimiento y puede dar lugar a un interbloqueo en el subproceso de la interfaz de usuario. Considere la <xref:System.Threading.Tasks.Task.ConfigureAwait(System.Boolean)?displayProperty=nameWithType> posibilidad de llamar a para señalar su intención de continuación.
 
-Esta regla se presentó con los analizadores de [FxCop](install-fxcop-analyzers.md) y no existe en el análisis de FxCop heredado.
+Esta regla se presentó con los [analizadores de FxCop](install-fxcop-analyzers.md) y no existe en el análisis de FxCop heredado.
 
 ## <a name="how-to-fix-violations"></a>Cómo corregir infracciones
 

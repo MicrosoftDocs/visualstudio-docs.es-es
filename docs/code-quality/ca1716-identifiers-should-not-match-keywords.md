@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9a51ac9509cf891c05166d46e4b72b862c0dc723
-ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
+ms.openlocfilehash: 7a3f030c9c64d975d93aa2aeee90d37f765a6a63
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69547081"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71234055"
 ---
 # <a name="ca1716-identifiers-should-not-match-keywords"></a>CA1716: Los identificadores no deben coincidir con palabras clave
 
@@ -28,9 +28,9 @@ ms.locfileid: "69547081"
 |TypeName|IdentifiersShouldNotMatchKeywords|
 |Identificador de comprobación|CA1716|
 |Categoría|Microsoft.Naming|
-|Cambio problemático|Problemático|
+|Cambio importante|Problemático|
 
-## <a name="cause"></a>Causa
+## <a name="cause"></a>Motivo
 
 El nombre de un espacio de nombres, tipo o miembro virtual o de interfaz coincide con una palabra clave reservada en un lenguaje de programación.
 

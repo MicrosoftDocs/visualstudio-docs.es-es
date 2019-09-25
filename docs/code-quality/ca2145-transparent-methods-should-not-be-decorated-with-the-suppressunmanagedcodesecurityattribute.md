@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a9269a0862dacf928cffb31f722f382271d5f0e7
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 3cca385c346a7daa8aaddb377f999506ffb1abaa
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62542124"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71232053"
 ---
 # <a name="ca2145-transparent-methods-should-not-be-decorated-with-the-suppressunmanagedcodesecurityattribute"></a>CA2145: Los métodos transparentes no deben ser representativos con el atributo SuppressUnmanagedCodeSecurityAttribute
 
@@ -24,21 +24,21 @@ ms.locfileid: "62542124"
 |TypeName|TransparentMethodsShouldNotUseSuppressUnmanagedCodeSecurity|
 |Identificador de comprobación|CA2145|
 |Categoría|Microsoft.Security|
-|Cambio problemático|Problemático|
+|Cambio importante|Problemático|
 
 ## <a name="cause"></a>Motivo
 
-Un método transparente, un método marcado con el <xref:System.Security.SecuritySafeCriticalAttribute> método o un tipo que contiene un método está marcado con el <xref:System.Security.SuppressUnmanagedCodeSecurityAttribute> atributo.
+Un método transparente, un método marcado con el <xref:System.Security.SecuritySafeCriticalAttribute> método o un tipo que contiene un método se marca con el <xref:System.Security.SuppressUnmanagedCodeSecurityAttribute> atributo.
 
 ## <a name="rule-description"></a>Descripción de la regla
 
-Los métodos representativos con el <xref:System.Security.SuppressUnmanagedCodeSecurityAttribute> atributo tienen una LinkDemand implícita colocada en cualquier método que lo llama. Esta LinkDemand requiere que el código de llamada sea crítico para la seguridad. Marcar el método que utiliza SuppressUnmanagedCodeSecurity con el <xref:System.Security.SecurityCriticalAttribute> atributo hace que este requisito más obvio para los llamadores del método.
+Los métodos decorados <xref:System.Security.SuppressUnmanagedCodeSecurityAttribute> con el atributo tienen una LinkDemand implícita colocada en cualquier método que la llame. Esta LinkDemand requiere que el código de llamada sea crítico para la seguridad. Marcar el método que utiliza SuppressUnmanagedCodeSecurity con el <xref:System.Security.SecurityCriticalAttribute> atributo hace que este requisito sea más obvio para los llamadores del método.
 
 ## <a name="how-to-fix-violations"></a>Cómo corregir infracciones
 
-Para corregir una infracción de esta regla, marque el método o tipo con el <xref:System.Security.SecurityCriticalAttribute> atributo.
+Para corregir una infracción de esta regla, marque el método o el tipo <xref:System.Security.SecurityCriticalAttribute> con el atributo.
 
-## <a name="when-to-suppress-warnings"></a>Cuándo Suprimir advertencias
+## <a name="when-to-suppress-warnings"></a>Cuándo suprimir advertencias
 
 No suprima las advertencias de esta regla.
 

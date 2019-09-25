@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 5c1038d0d7e7d20c28cdd0cb52804461376a4e89
-ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
+ms.openlocfilehash: 385b2d451d8202356d56ab7b1a5fd5158d267f1c
+ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69551688"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71253736"
 ---
 # <a name="office-primary-interop-assemblies"></a>ensamblados de interoperabilidad primarios de Office
 
@@ -37,7 +37,7 @@ En este tema se describen los aspectos siguientes del uso de PIA de Microsoft Of
 
 - [Lista completa de ensamblados de interoperabilidad primarios para aplicaciones de Microsoft Office](#pialist)
 
-Para más información sobre los ensamblados de interoperabilidad primarios, vea ensamblados de interoperabilidad [primarios](/previous-versions/dotnet/netframework-4.0/aax7sdch(v=vs.100)).
+Para más información sobre los ensamblados de interoperabilidad primarios, vea [ensamblados de interoperabilidad primarios](/previous-versions/dotnet/netframework-4.0/aax7sdch(v=vs.100)).
 
 <a name="separateassemblies"></a>
 
@@ -66,7 +66,7 @@ A partir de Visual Studio 2017, estas copias de los PIA se instalan en las sigui
 - (o *% ProgramFiles (x86)% \ Microsoft Visual Studio\Shared\Visual Studio Tools for Office\PIA\* en sistemas operativos de 64 bits)
 
 > [!NOTE]
-> En el caso de las versiones anteriores de Visual Studio, estos Pia se instalarán en la carpeta Visual Studio Tools for Office\PIA en la carpeta *% ProgramFiles% de esa versión de Visual Studio.  
+> En el caso de las versiones anteriores de Visual Studio, estos Pia se instalarán en la carpeta Visual Studio Tools for Office\PIA en la carpeta *% ProgramFiles% de esa versión de Visual Studio.
 > Por ejemplo: *% ProgramFiles (x86)% \ Microsoft Visual Studio 14.0 \ Visual Studio Tools para Office\PIA\*
 
 ### <a name="primary-interop-assemblies-in-the-global-assembly-cache"></a>Ensamblados de interoperabilidad primarios en la caché global de ensamblados
@@ -81,7 +81,7 @@ Los PIA de Office no son obligatorios en los equipos de los usuarios finales par
 
 Cada plantilla de proyecto de Office en Visual Studio está diseñada para funcionar con una sola aplicación de Microsoft Office. Para usar características de varias aplicaciones de Microsoft Office o para usar características de una aplicación o un componente que no tenga un proyecto en Visual Studio, debe agregar una referencia a los PIA necesarios.
 
-En la mayoría de los casos, debe agregar referencias a los PIA que instala Visual Studio en el `%ProgramFiles(x86)%\Microsoft Visual Studio\Shared\Visual Studio Tools for Office\PIA\` directorio. Estas versiones de los ensamblados aparecen en la pestaña **marco** del cuadro de diálogo **Administrador de referencias** . Para obtener más información, consulte [Cómo Aplicaciones de Office de destino a través](../vsto/how-to-target-office-applications-through-primary-interop-assemblies.md)de ensamblados de interoperabilidad primarios
+En la mayoría de los casos, debe agregar referencias a los PIA que instala Visual Studio en el `%ProgramFiles(x86)%\Microsoft Visual Studio\Shared\Visual Studio Tools for Office\PIA\` directorio. Estas versiones de los ensamblados aparecen en la pestaña **marco** del cuadro de diálogo **Administrador de referencias** . Para obtener más información, vea [Cómo: Aplicaciones de Office de destino a través](../vsto/how-to-target-office-applications-through-primary-interop-assemblies.md)de ensamblados de interoperabilidad primarios
 
 Si ha instalado y registrado los PIA en la caché global de ensamblados, estas versiones de los ensamblados aparecen en la pestaña **COM** del cuadro de diálogo **Administrador de referencias** . Debe evitar agregar referencias a estas versiones de los ensamblados, puesto que se pueden producir algunos problemas de desarrollo al usarlas. Por ejemplo, si ha registrado distintas versiones de los PIA en la caché global de ensamblados, el proyecto se enlazará automáticamente a la última versión del ensamblado que se registró, aunque especifique una versión distinta en la pestaña **COM** del cuadro de diálogo **Administrador de referencias** .
 

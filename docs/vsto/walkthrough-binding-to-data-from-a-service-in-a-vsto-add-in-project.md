@@ -14,21 +14,21 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 60aefd40c48dc3789ab84ee5873aa6a53f4ee3fe
-ms.sourcegitcommit: b56dc6fadc6c924beed36bb4c2ccc16cf6bcfa1c
+ms.openlocfilehash: 74a43a0c601fa8a96c8737644bf5bd0261f59796
+ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/02/2019
-ms.locfileid: "68740120"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71254054"
 ---
 # <a name="walkthrough-bind-to-data-from-a-service-in-a-vsto-add-in-project"></a>Tutorial: Enlazar a datos de un servicio en un proyecto de complemento de VSTO
   Puede enlazar datos a controles host en proyectos de complemento de VSTO. Este tutorial muestra cómo agregar controles a un documento de Microsoft Office Word, enlazar los controles a los datos recuperados de MSDN Content Service y responder a eventos en tiempo de ejecución.
 
- **Se aplica a:** La información de este tema se aplica a los proyectos de nivel de aplicación de Word 2010. Para obtener más información, consulte [Características disponibles por aplicación y tipo de proyecto de Office](../vsto/features-available-by-office-application-and-project-type.md).
+ **Se aplica a:** La información de este tema se aplica a los proyectos de nivel de aplicación de Word 2010. Para obtener más información, consulta [Features Available by Office Application and Project Type](../vsto/features-available-by-office-application-and-project-type.md).
 
  En este tutorial se muestran las tareas siguientes:
 
-- Agregar un <xref:Microsoft.Office.Tools.Word.RichTextContentControl> control a un documento en tiempo de ejecución.
+- Agregar un control <xref:Microsoft.Office.Tools.Word.RichTextContentControl> a un documento en tiempo de ejecución.
 
 - Enlazar <xref:Microsoft.Office.Tools.Word.RichTextContentControl> el control a los datos de un servicio Web.
 
@@ -50,7 +50,7 @@ ms.locfileid: "68740120"
 
 1. Cree un proyecto de complemento VSTO de Word con el nombre **MTPS Content Service**mediante Visual Basic o C#.
 
-     Para obtener más información, consulte [Cómo Cree proyectos de Office en Visual](../vsto/how-to-create-office-projects-in-visual-studio.md)Studio.
+     Para obtener más información, vea [Cómo: Cree proyectos de Office en Visual](../vsto/how-to-create-office-projects-in-visual-studio.md)Studio.
 
      Visual Studio abre el archivo `ThisAddIn.vb` o `ThisAddIn.cs` y agrega el proyecto al **Explorador de soluciones**.
 
@@ -73,8 +73,8 @@ ms.locfileid: "68740120"
 
 6. En el cuadro de diálogo **Asistente para agregar referencias** , haga clic en **Finalizar**.
 
-## <a name="add-a-content-control-and-bind-to-data-at-runtime"></a>Agregar un control de contenido y enlazar a datos en tiempo de ejecución
- En los proyectos de complemento de VSTO, se agregan y se enlazan controles en tiempo de ejecución. En este tutorial, configure el control de contenido para recuperar datos del servicio Web cuando un usuario hace clic dentro del control.
+## <a name="add-a-content-control-and-bind-to-data-at-run-time"></a>Agregar un control de contenido y enlazar a datos en tiempo de ejecución
+ En proyectos de complemento VSTO, se agregan y se enlazan controles en tiempo de ejecución. En este tutorial, configure el control de contenido para recuperar datos del servicio Web cuando un usuario hace clic dentro del control.
 
 ### <a name="to-add-a-content-control-and-bind-to-data"></a>Para agregar un control de contenido y enlazar a datos
 

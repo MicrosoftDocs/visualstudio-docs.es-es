@@ -1,5 +1,5 @@
 ---
-title: Procedimiento Rellenar los controles ListObject con datos
+title: Procedimiento Relleno de controles ListObject con datos
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -17,19 +17,19 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f65f6de7cfb336eb001de47fb6562b7200391419
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a0916ca11d4df5f6b69376d7223143afbb407f6e
+ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62967992"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71255891"
 ---
-# <a name="how-to-fill-listobject-controls-with-data"></a>Procedimiento Rellenar los controles ListObject con datos
+# <a name="how-to-fill-listobject-controls-with-data"></a>Procedimiento Relleno de controles ListObject con datos
   Puede utilizar el enlace de datos como una manera de agregar datos rápidamente al documento. Después de enlazar datos a un objeto de lista, puede desconectar el objeto de lista para que muestre los datos, pero ya no esté enlazado al origen de datos.
 
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]
 
- ![vínculo a vídeo](../vsto/media/playvideo.gif "vínculo al vídeo") para una demostración en vídeo relacionada, vea [¿cómo lo hago?: ¿Crear una lista de Excel que está conectado a una lista de SharePoint? ](http://go.microsoft.com/fwlink/?LinkID=130263).
+ ![vínculo a vídeo](../vsto/media/playvideo.gif "vínculo a vídeo") Para ver una demostración en vídeo relacionada, vea [cómo: ¿Desea crear una lista de Excel conectada a una lista de SharePoint? ](http://go.microsoft.com/fwlink/?LinkID=130263).
 
 ### <a name="to-bind-data-to-a-listobject-control"></a>Para enlazar datos a un control ListObject
 
@@ -59,7 +59,7 @@ ms.locfileid: "62967992"
  En este ejemplo de código se supone que dispone de un elemento <xref:Microsoft.Office.Tools.Excel.ListObject> existente denominado `list1` en la hoja de cálculo en la que aparece este código.
 
 ## <a name="see-also"></a>Vea también
-- [Extender documentos de Word y libros de Excel en complementos VSTO en tiempo de ejecución](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)
+- [Ampliar documentos de Word y libros de Excel en complementos de VSTO en tiempo de ejecución](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)
 - [Controles en documentos de Office](../vsto/controls-on-office-documents.md)
 - [Agregar controles a documentos de Office en tiempo de ejecución](../vsto/adding-controls-to-office-documents-at-run-time.md)
 - [Cómo: Asignar columnas ListObject a datos](../vsto/how-to-map-listobject-columns-to-data.md)

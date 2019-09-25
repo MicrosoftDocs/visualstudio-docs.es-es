@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 864918b7ce394e9f096c6fa9dea9389957983177
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 9ff614d9fdc4b250bd91abf24908b33d71a182df
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68921774"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71234148"
 ---
 # <a name="ca1709-identifiers-should-be-cased-correctly"></a>CA1709: Los identificadores deben utilizar las mayúsculas y minúsculas correctamente
 
@@ -28,9 +28,9 @@ ms.locfileid: "68921774"
 |TypeName|IdentifiersShouldBeCasedCorrectly|
 |Identificador de comprobación|CA1709|
 |Categoría|Microsoft.Naming|
-|Cambio problemático|Problemático: cuando se produce en ensamblados, espacios de nombres, tipos, miembros y parámetros.<br /><br /> No problemático: cuando se activa en parámetros de tipo genérico.|
+|Cambio importante|Problemático: cuando se produce en ensamblados, espacios de nombres, tipos, miembros y parámetros.<br /><br /> No problemático: cuando se activa en parámetros de tipo genérico.|
 
-## <a name="cause"></a>Causa
+## <a name="cause"></a>Motivo
 
 El nombre de un identificador no tiene mayúsculas y minúsculas correctamente.
 
@@ -62,7 +62,7 @@ Cambie el nombre para que sea correcto.
 
 Es seguro suprimir esta advertencia si tiene sus propias convenciones de nomenclatura, o si el identificador representa un nombre adecuado, por ejemplo, el nombre de una empresa o una tecnología.
 
-También puede Agregar términos, abreviaturas y acrónimos específicos a un diccionario personalizado de análisis de código. Los términos especificados en el diccionario personalizado no producirán infracciones de esta regla. Para obtener más información, consulte [Cómo Personalizar el diccionario](../code-quality/how-to-customize-the-code-analysis-dictionary.md)de análisis de código.
+También puede Agregar términos, abreviaturas y acrónimos específicos a un diccionario personalizado de análisis de código. Los términos especificados en el diccionario personalizado no producirán infracciones de esta regla. Para obtener más información, vea [Cómo: Personalizar el diccionario](../code-quality/how-to-customize-the-code-analysis-dictionary.md)de análisis de código.
 
 ## <a name="related-rules"></a>Reglas relacionadas
 

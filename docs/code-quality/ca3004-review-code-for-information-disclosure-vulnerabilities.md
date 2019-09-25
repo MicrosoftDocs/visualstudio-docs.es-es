@@ -10,12 +10,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 8e8c8c58a01b9527df472907c8b55a9d175dd91d
-ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
+ms.openlocfilehash: 4965c9df3c2256511b8e44de8d388a9155d0d8f9
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "65841610"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71237380"
 ---
 # <a name="ca3004-review-code-for-information-disclosure-vulnerabilities"></a>CA3004: Revisión de código en busca de vulnerabilidades de divulgación de información
 
@@ -24,31 +24,31 @@ ms.locfileid: "65841610"
 |TypeName|ReviewCodeForInformationDisclosureVulnerabilities|
 |Identificador de comprobación|CA3004|
 |Categoría|Microsoft.Security|
-|Cambio problemático|No trascendental|
+|Cambio importante|Poco problemático|
 
 ## <a name="cause"></a>Motivo
 
-Mensaje de una excepción, seguimiento de la pila o representación de cadena llega a la salida de web.
+El mensaje de una excepción, el seguimiento de la pila o la representación de cadena alcanza la salida Web.
 
 ## <a name="rule-description"></a>Descripción de la regla
 
-Divulgación de información de excepción proporciona visión general de los aspectos internos de la aplicación, lo que puede ayudar a los atacantes encontrar otras vulnerabilidades aprovechar de los atacantes.
+Al revelar la información de la excepción, se ofrece a los atacantes información sobre el funcionamiento interno de la aplicación, lo que puede ayudar a los atacantes a encontrar otras vulnerabilidades que se puedan aprovechar.
 
-Esta regla intenta buscar un mensaje de excepción, seguimiento de la pila o representación de cadena que se va a utilizar en una respuesta HTTP.
-
-> [!NOTE]
-> Esta regla no puede realizar un seguimiento de datos a través de ensamblados. Por ejemplo, si un ensamblado detecta una excepción y, a continuación, pasa a otro ensamblado que genera la excepción, esta regla no genera una advertencia.
+Esta regla intenta buscar un mensaje de excepción, un seguimiento de la pila o una representación de cadena que se envía a una respuesta HTTP.
 
 > [!NOTE]
-> Hay un límite configurable para profundidad esta regla analizará el flujo de datos a través de llamadas de método. Consulte [Configuration Analyzer](https://github.com/dotnet/roslyn-analyzers/blob/master/docs/Analyzer%20Configuration.md#dataflow-analysis) acerca de cómo configurar el límite en un archivo EditorConfig.
+> Esta regla no puede realizar el seguimiento de los datos entre ensamblados. Por ejemplo, si un ensamblado detecta una excepción y, a continuación, la pasa a otro ensamblado que genera la excepción, esta regla no generará una advertencia.
+
+> [!NOTE]
+> Existe un límite configurable en cuanto a la profundidad con que esta regla analizará el flujo de datos a través de las llamadas a métodos. Vea [configuración del analizador](https://github.com/dotnet/roslyn-analyzers/blob/master/docs/Analyzer%20Configuration.md#dataflow-analysis) para saber cómo configurar el límite en un archivo EditorConfig.
 
 ## <a name="how-to-fix-violations"></a>Cómo corregir infracciones
 
-No información de excepción a las respuestas HTTP de salida. En su lugar, proporcione un mensaje de error genérico. Consulte [página de control de errores de OWASP](https://www.owasp.org/index.php/Error_Handling) para obtener más instrucciones.
+No genere información de excepción en las respuestas HTTP. En su lugar, proporcione un mensaje de error genérico. Consulte [la página de control de errores de OWASP](https://www.owasp.org/index.php/Error_Handling) para obtener más información.
 
-## <a name="when-to-suppress-warnings"></a>Cuándo Suprimir advertencias
+## <a name="when-to-suppress-warnings"></a>Cuándo suprimir advertencias
 
-Si sabe que es la salida web dentro del límite de confianza de la aplicación y nunca se expone fuera, no pasa nada suprimir esta advertencia. Esto es poco frecuente. Tenga en cuenta que pueden cambiar el límite de confianza de la aplicación y los flujos de datos con el tiempo.
+Si sabe que la salida web está dentro del límite de confianza de la aplicación y nunca se expone fuera, es correcto suprimir esta advertencia. Esto no es habitual. Tenga en cuenta que el límite de confianza de la aplicación y los flujos de datos pueden cambiar con el tiempo.
 
 ## <a name="pseudo-code-examples"></a>Ejemplos de pseudocódigo
 

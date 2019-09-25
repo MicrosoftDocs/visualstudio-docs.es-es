@@ -10,12 +10,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: b66e28804e85b04b1492a20828c42a9b5efd3cf8
-ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
+ms.openlocfilehash: 42808b3961b18a23f594800f9d0782c908c9b1ba
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "65841036"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71237178"
 ---
 # <a name="ca3012-review-code-for-regex-injection-vulnerabilities"></a>CA3012: Revisión de código en busca de vulnerabilidades de inyección de expresiones regulares
 
@@ -24,36 +24,36 @@ ms.locfileid: "65841036"
 |TypeName|ReviewCodeForRegexInjectionVulnerabilities|
 |Identificador de comprobación|CA3012|
 |Categoría|Microsoft.Security|
-|Cambio problemático|No trascendental|
+|Cambio importante|Poco problemático|
 
 ## <a name="cause"></a>Motivo
 
-Entrada de solicitud HTTP potencialmente no confiable alcanza una expresión regular.
+Una entrada de solicitud HTTP que podría no ser de confianza llega a una expresión regular.
 
 ## <a name="rule-description"></a>Descripción de la regla
 
-Al trabajar con entradas no seguras, esté atento a ataques de inyección de regex. Un atacante puede usar la inserción de regex para modificar una expresión regular, para que la expresión regular coincida con los resultados no deseados o para hacer que la expresión regular consumir cantidad excesiva de CPU resultante en un ataque de denegación de servicio de forma malintencionada.
+Al trabajar con una entrada que no es de confianza, tenga en cuentan los ataques por inyección de Regex. Un atacante puede usar la inyección de Regex para modificar de forma malintencionada una expresión regular, para hacer que el regex coincida con los resultados imprevistos o para hacer que la expresión regular consuma una CPU excesiva, lo que produce un ataque de denegación de servicio.
 
-Esta regla intenta encontrar la entrada de las solicitudes HTTP para llegar a una expresión regular.
-
-> [!NOTE]
-> Esta regla no puede realizar un seguimiento de datos a través de ensamblados. Por ejemplo, si un ensamblado lee la entrada de solicitud HTTP y, a continuación, pasa a otro ensamblado que se crea una expresión regular, esta regla no genera una advertencia.
+Esta regla intenta buscar la entrada de las solicitudes HTTP que llegan a una expresión regular.
 
 > [!NOTE]
-> Hay un límite configurable para profundidad esta regla analizará el flujo de datos a través de llamadas de método. Consulte [Configuration Analyzer](https://github.com/dotnet/roslyn-analyzers/blob/master/docs/Analyzer%20Configuration.md#dataflow-analysis) acerca de cómo configurar el límite en un archivo EditorConfig.
+> Esta regla no puede realizar el seguimiento de los datos entre ensamblados. Por ejemplo, si un ensamblado lee la entrada de la solicitud HTTP y, a continuación, la pasa a otro ensamblado que crea una expresión regular, esta regla no generará una advertencia.
+
+> [!NOTE]
+> Existe un límite configurable en cuanto a la profundidad con que esta regla analizará el flujo de datos a través de las llamadas a métodos. Vea [configuración del analizador](https://github.com/dotnet/roslyn-analyzers/blob/master/docs/Analyzer%20Configuration.md#dataflow-analysis) para saber cómo configurar el límite en un archivo EditorConfig.
 
 ## <a name="how-to-fix-violations"></a>Cómo corregir infracciones
 
-Se incluyen algunas de las mitigaciones frente a inyecciones de regex:
+Algunas mitigaciones de las inyecciones de Regex incluyen:
 
-- Use siempre un [coincide con el tiempo de espera](/dotnet/standard/base-types/best-practices#use-time-out-values) al utilizar expresiones regulares.
-- Evite el uso de expresiones regulares según la entrada del usuario.
-- Caracteres especiales de escape de entrada del usuario mediante una llamada a <xref:System.Text.RegularExpressions.Regex.Escape%2A?displayProperty=fullName> u otro método.
-- Permitir solo especial que no son caracteres de entrada del usuario.
+- Use siempre un [tiempo de espera de coincidencia](/dotnet/standard/base-types/best-practices#use-time-out-values) al usar expresiones regulares.
+- Evite el uso de expresiones regulares basadas en datos proporcionados por el usuario.
+- Caracteres especiales de escape de la entrada del <xref:System.Text.RegularExpressions.Regex.Escape%2A?displayProperty=fullName> usuario mediante una llamada a u otro método.
+- Permita solo caracteres no especiales de los datos proporcionados por el usuario.
 
-## <a name="when-to-suppress-warnings"></a>Cuándo Suprimir advertencias
+## <a name="when-to-suppress-warnings"></a>Cuándo suprimir advertencias
 
-Si sabe que está usando un [coincide con el tiempo de espera](/dotnet/standard/base-types/best-practices#use-time-out-values) y la entrada del usuario es libre de caracteres especiales, no pasa nada suprimir esta advertencia.
+Si sabe que está usando un [tiempo de espera de coincidencia](/dotnet/standard/base-types/best-practices#use-time-out-values) y la entrada del usuario no tiene caracteres especiales, es correcto suprimir esta advertencia.
 
 ## <a name="pseudo-code-examples"></a>Ejemplos de pseudocódigo
 

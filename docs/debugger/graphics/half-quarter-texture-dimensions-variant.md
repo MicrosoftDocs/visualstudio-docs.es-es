@@ -1,5 +1,5 @@
 ---
-title: Variante de dimensiones de textura mitad / cuarto | Documentos de Microsoft
+title: Variante de dimensiones de textura de medio trimestre | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 282e9bbb-51aa-4cd0-8e5c-0901268c29e5
@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ff7a0595da00aa6f575999499c9596ffc1424fc4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 620300d1727adc41d5655bd33dde87ad592bba1c
+ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62895630"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71252985"
 ---
 # <a name="halfquarter-texture-dimensions-variant"></a>MItad/cuarto (Variante de dimensiones de textura)
 Reduce las dimensiones de la textura en texturas que no son objetivos de presentación.
@@ -41,7 +41,7 @@ Reduce las dimensiones de la textura en texturas que no son objetivos de present
   Si las asignaciones de MIP están habilitadas para la textura, la variante reduce el número de niveles de MIP como corresponda, uno menos cuando se escala a la mitad del tamaño y dos menos cuando se escala a un cuarto.
 
 ## <a name="example"></a>Ejemplo
- Esta variante modifica el tamaño de las texturas en el tiempo de ejecución antes de llamar a `CreateTexture2D`. No recomendamos este procedimiento para el código de producción, porque las texturas a tamaño completo consumen más espacio de disco y porque el paso adicional puede aumentar significativamente los tiempos de carga en la aplicación, especialmente para las texturas comprimidas, que requieren una gran cantidad de recursos técnicos para codificar. En su lugar, recomendamos que cambie el tamaño las texturas sin conexión utilizando un editor o un procesador de imágenes que forme parte de la canalización integrada. Estos procedimientos reducen los requisitos de espacio en disco, eliminan la sobrecarga del tiempo de ejecución en la aplicación y proporcionan más tiempo de procesamiento para que pueda mantener la mejor calidad de imagen al reducir o comprimir las texturas.
+ Esta variante cambia el tamaño de las texturas en tiempo de ejecución antes `CreateTexture2D`de llamar a. No recomendamos este procedimiento para el código de producción, porque las texturas a tamaño completo consumen más espacio de disco y porque el paso adicional puede aumentar significativamente los tiempos de carga en la aplicación, especialmente para las texturas comprimidas, que requieren una gran cantidad de recursos técnicos para codificar. En su lugar, recomendamos que cambie el tamaño las texturas sin conexión utilizando un editor o un procesador de imágenes que forme parte de la canalización integrada. Estos procedimientos reducen los requisitos de espacio en disco, eliminan la sobrecarga del tiempo de ejecución en la aplicación y proporcionan más tiempo de procesamiento para que pueda mantener la mejor calidad de imagen al reducir o comprimir las texturas.
 
 ## <a name="see-also"></a>Vea también
 - [Variante de generación Mip-map](mip-map-generation-variant.md)

@@ -15,36 +15,36 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: a54c9d5322b35092d635edd00e3b200ee67997a9
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: e7b80db6f8f54c897a370d53db56773ad8296f6e
+ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62945224"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71255780"
 ---
 # <a name="accessibility-in-office-projects"></a>Accesibilidad en proyectos de Office
 
-Microsoft Visual Studio y Microsoft Office incluyen muchas características de accesibilidad que permiten crear soluciones personalizadas que satisfagan los requisitos de accesibilidad estándar. Microsoft publica directrices para mejorar la accesibilidad en la Web. Para obtener más información, consulte el [sitio Web de accesibilidad](http://go.microsoft.com/fwlink/?LinkID=37113).
+Microsoft Visual Studio e Microsoft Office incluyen muchas características de accesibilidad que permiten crear soluciones personalizadas que cumplan los requisitos de accesibilidad estándar. Microsoft publica instrucciones para la accesibilidad en la Web. Para obtener más información, consulte el [sitio web de accesibilidad](http://go.microsoft.com/fwlink/?LinkID=37113).
 
-En la mayoría de los casos, los proyectos de Office en Visual Studio cumplen accesibilidad estándares o expone propiedades que se pueden establecer para que sea accesible sus soluciones. Sin embargo, hay algunas características con acceso limitado.
+En la mayoría de los casos, los proyectos de Office en Visual Studio cumplen con los estándares de accesibilidad o expone propiedades que se pueden establecer para que las soluciones sean accesibles. Sin embargo, hay algunas características que tienen una accesibilidad limitada.
 
 [!INCLUDE[appliesto_all](../vsto/includes/appliesto-all-md.md)]
 
 ## <a name="accessibility-at-design-time"></a>Accesibilidad en tiempo de diseño
 
-### <a name="use-shortcut-keys-in-document-level-projects"></a>Usar teclas de método abreviado en proyectos de nivel de documento
- Cuando un documento de Microsoft Office Word o un libro de Microsoft Office Excel está abierto en Visual Studio, sólo una aplicación a la vez recibe los comandos de teclas de método abreviado. De forma predeterminada, Visual Studio recibe todos los comandos de teclas de método abreviado, pero puede hacer que Word o Excel recibirlos cuando el documento tiene el foco seleccionando **combinación de teclado dinámico** en el **configuración del teclado** página de la **opciones** cuadro de diálogo. Para obtener más información, consulte [teclado de Microsoft Office Word, configuración de teclado de Microsoft Office, cuadro de diálogo Opciones](../vsto/microsoft-office-word-keyboard-microsoft-office-keyboard-settings-options-dialog-box.md) y [teclado de Microsoft Office Excel, configuración de teclado de Microsoft Office, cuadro de diálogo Opciones](../vsto/microsoft-office-excel-keyboard-microsoft-office-keyboard-settings-options-dialog-box.md).
+### <a name="use-shortcut-keys-in-document-level-projects"></a>Usar las teclas de método abreviado en los proyectos de nivel de documento
+ Cuando un documento de Microsoft Office Word o un libro de Excel Microsoft Office está abierto en Visual Studio, solo una aplicación a la vez recibe los comandos de tecla de método abreviado. De forma predeterminada, Visual Studio recibe todos los comandos de teclas de método abreviado, pero puede hacer que Word o Excel los reciban cuando el documento tenga el foco seleccionando **esquema de teclado dinámico** en la página **configuración del teclado** del cuadro de diálogo **Opciones** . Para obtener más información, vea [Microsoft Office teclado de Word, Microsoft Office configuración del teclado, opciones (cuadro de diálogo](../vsto/microsoft-office-word-keyboard-microsoft-office-keyboard-settings-options-dialog-box.md) ) y [Microsoft Office teclado de Excel, Microsoft Office configuración del teclado, opciones (cuadro de diálogo](../vsto/microsoft-office-excel-keyboard-microsoft-office-keyboard-settings-options-dialog-box.md)).
 
-### <a name="display-shortcut-keys-for-the-ribbon-in-document-level-projects"></a>Mostrar teclas de método abreviado de la cinta de opciones en los proyectos de nivel de documento
- Cuando un documento de Word o un libro de Excel se abre en Visual Studio, no se puede presionar la **Alt** tecla para ver las teclas de método abreviado para las fichas y controles en la cinta de opciones. Para ver las teclas de método abreviado mientras está abierto en el diseñador del documento o libro, realice los pasos siguientes.
+### <a name="display-shortcut-keys-for-the-ribbon-in-document-level-projects"></a>Mostrar teclas de método abreviado para la cinta de opciones en proyectos de nivel de documento
+ Cuando un documento de Word o un libro de Excel está abierto en Visual Studio, no puede presionar la tecla **Alt** para ver las teclas de método abreviado de las pestañas y los controles de la cinta de opciones. Para ver las teclas de método abreviado mientras el documento o libro está abierto en el diseñador, realice los pasos siguientes.
 
-#### <a name="to-view-shortcut-keys-for-ribbon-tabs-and-controls-in-the-designer"></a>Para ver las teclas de método abreviado para las fichas y controles Ribbon en el diseñador
+#### <a name="to-view-shortcut-keys-for-ribbon-tabs-and-controls-in-the-designer"></a>Para ver las teclas de método abreviado para las pestañas y controles de la cinta de opciones en el diseñador
 
-1. En Visual Studio, en el **herramientas** menú, haga clic en **opciones**.
+1. En Visual Studio, en el menú **herramientas** , haga clic en **Opciones**.
 
-2. Expanda el **Office Tools** nodo y seleccione **teclado de Microsoft Office Excel** o **teclado de Microsoft Office Word**, según corresponda.
+2. Expanda el nodo **herramientas de Office** y seleccione **Microsoft Office teclado de Excel** o **Microsoft Office teclado de Word**, según corresponda.
 
-3. Seleccione **combinación de teclado dinámico**.
+3. Seleccione **esquema de teclado dinámico**.
 
      Aparece un mensaje que indica que debe reiniciar Visual Studio para que el cambio surta efecto.
 
@@ -52,41 +52,41 @@ En la mayoría de los casos, los proyectos de Office en Visual Studio cumplen ac
 
 5. Reinicie Visual Studio y vuelva a abrir el proyecto.
 
-6. Abra el diseñador para el proyecto de documento o libro.
+6. Abra el diseñador de documentos o libros del proyecto.
 
-7. Presione **F6** para mostrar las teclas de método abreviado de la cinta de opciones.
+7. Presione **F6** para mostrar las teclas de método abreviado de la cinta.
 
-## <a name="accessibility-at-runtime"></a>Accesibilidad en tiempo de ejecución
+## <a name="accessibility-at-run-time"></a>Accesibilidad en tiempo de ejecución
 
-### <a name="windows-forms-controls-on-office-documents"></a>Controles de Windows Forms en documentos de Office
- Controles de formularios Windows Forms exponen las propiedades de accesibilidad para proporcionar información sobre el control a las ayudas de accesibilidad, como lectores de pantalla. Puede aprovechar estas propiedades de accesibilidad cuando los controles están en un documento de Office en una personalización de nivel de documento. Para obtener más información, consulte [proporcionar información de accesibilidad de controles de Windows Forms](/dotnet/framework/winforms/controls/providing-accessibility-information-for-controls-on-a-windows-form).
+### <a name="windows-forms-controls-on-office-documents"></a>Windows Forms controles en documentos de Office
+ Windows Forms controles exponen propiedades de accesibilidad para proporcionar información sobre el control a las ayudas de accesibilidad, como lectores de pantalla. Puede aprovechar estas propiedades de accesibilidad cuando los controles se encuentran en un documento de Office en una personalización de nivel de documento. Para obtener más información, vea [proporcionar información de accesibilidad para los controles de Windows Forms](/dotnet/framework/winforms/controls/providing-accessibility-information-for-controls-on-a-windows-form).
 
- Sin embargo, existen algunas limitaciones de accesibilidad en tiempo de ejecución cuando se hospedan controles de formularios Windows Forms en un libro de Excel o un documento de Word:
+ Sin embargo, hay algunas limitaciones de accesibilidad en tiempo de ejecución cuando Windows Forms controles se hospedan en un libro de Excel o en un documento de Word:
 
-- No se puede pestaña de un control a otro.
+- No se puede tabular de un control a otro.
 
-- Se deshabilitan los controles en un documento al cambiar la configuración del zoom del documento a cualquier cosa que no sea 100%.
+- Los controles de un documento se deshabilitan cuando se cambia la configuración de zoom del documento a un valor distinto del 100%.
 
-  Para obtener información acerca de las limitaciones de los controles de Windows Forms en documentos, consulte [controla las limitaciones de los formularios Windows Forms en documentos de Office](../vsto/limitations-of-windows-forms-controls-on-office-documents.md).
+  Para obtener información sobre las limitaciones de los controles de Windows Forms en documentos, vea [limitaciones de los controles de Windows Forms en los documentos de Office](../vsto/limitations-of-windows-forms-controls-on-office-documents.md).
 
 ### <a name="actions-panes-and-custom-task-panes"></a>Paneles de acciones y paneles de tareas personalizados
- Cuando un panel de acciones o el panel de tareas personalizado tiene el foco, obtener acceso a los controles de la misma manera que para acceder a los controles en una aplicación de Windows Forms. Para mover el cursor entre el panel de acciones y el documento, puede presionar **F6**.
+ Cuando un panel de acciones o un panel de tareas personalizado tiene el foco, tiene acceso a los controles de la misma forma que lo haría con los controles de una aplicación Windows Forms. Para desplazar el cursor entre el panel de acciones y el documento, puede presionar **F6**.
 
- Para obtener más información acerca de los paneles de acciones y paneles de tareas personalizados, vea [información general sobre el panel de acciones](../vsto/actions-pane-overview.md) y [paneles de tareas personalizados](../vsto/custom-task-panes.md).
+ Para obtener más información sobre los paneles de acciones y los paneles de tareas personalizados, vea [información general del panel de acciones](../vsto/actions-pane-overview.md) y [paneles de tareas personalizados](../vsto/custom-task-panes.md).
 
 ### <a name="display-modes"></a>Modos de presentación
 
 Visual Studio tiene las siguientes limitaciones relacionadas con los modos de presentación:
 
-- Controles en un documento de Word o una hoja de cálculo de Excel se deshabilitan cuando se cambia la configuración del zoom del documento a cualquier cosa que no sea 100%.
+- Los controles de un documento de Word o de una hoja de cálculo de Excel se deshabilitan cuando se cambia la configuración de zoom del documento a un valor distinto del 100%.
 
-- El **nuevo proyecto** cuadro de diálogo no muestra los controles correctamente si un usuario cambia las opciones de accesibilidad del equipo a **Usar contraste alto**.
+- El cuadro de diálogo **nuevo proyecto** no muestra los controles correctamente si un usuario cambia las opciones de accesibilidad del equipo para **utilizar contraste alto**.
 
-Puede usar el Ampliador para superar estas limitaciones. El Ampliador es una utilidad de presentación de Windows que crea una ventana independiente que muestra una parte ampliada de la pantalla.
+Puede usar el ampliador para superar estas limitaciones. La lupa es una utilidad de visualización de Windows que crea una ventana independiente que muestra una parte ampliada de la pantalla.
 
 ## <a name="see-also"></a>Vea también
 
-- [Desarrollar soluciones de Office](../vsto/developing-office-solutions.md)
+- [Desarrollo de soluciones de Office](../vsto/developing-office-solutions.md)
 - [Controles en documentos de Office](../vsto/controls-on-office-documents.md)
 - [Accesibilidad para personas con discapacidades](../ide/reference/accessibility-for-people-with-disabilities.md)
 - [Características de accesibilidad de Visual Studio](../ide/reference/accessibility-features-of-visual-studio.md)

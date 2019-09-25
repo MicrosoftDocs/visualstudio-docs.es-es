@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cf9475ad208a229057700fa2965984fbdcb17abf
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: e333e53fea1b965b250bdc97924e93728d55805a
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68923102"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71236180"
 ---
 # <a name="ca1021-avoid-out-parameters"></a>CA1021: Evitar los parámetros out
 
@@ -28,9 +28,9 @@ ms.locfileid: "68923102"
 |TypeName|AvoidOutParameters|
 |Identificador de comprobación|CA1021|
 |Categoría|Microsoft.Design|
-|Cambio problemático|Problemático|
+|Cambio importante|Problemático|
 
-## <a name="cause"></a>Causa
+## <a name="cause"></a>Motivo
 Un método público o protegido en un tipo público tiene un `out` parámetro.
 
 ## <a name="rule-description"></a>Descripción de la regla
@@ -85,7 +85,7 @@ Passing by return value:
 
 ## <a name="try-pattern-methods"></a>Probar métodos de patrón
 
-### <a name="description"></a>DESCRIPCIÓN
+### <a name="description"></a>Descripción
 Los métodos que implementan el <xref:System.Int32.TryParse%2A?displayProperty=fullName>patrón **try\<algo >** , como, no provocan esta infracción. En el ejemplo siguiente se muestra una estructura (tipo de valor) que <xref:System.Int32.TryParse%2A?displayProperty=fullName> implementa el método.
 
 ### <a name="code"></a>Código

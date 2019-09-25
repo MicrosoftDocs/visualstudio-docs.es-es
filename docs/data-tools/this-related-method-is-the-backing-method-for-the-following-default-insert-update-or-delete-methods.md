@@ -8,26 +8,26 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: a5ae70462079589ba2b63ee50cf0b7a0570e056a
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: 11c5c7d3c8078aa420074e9e32bb132489b169c8
+ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65457841"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71252945"
 ---
 # <a name="this-related-method-is-the-backing-method-for-the-following-default-insert-update-or-delete-methods"></a>Este método relacionado es el método de copia de seguridad para los siguientes métodos de inserción, actualización o eliminación
 
-Este método relacionado es el método de copia de seguridad predeterminado para el siguiente `Insert`, `Update`, o `Delete` métodos. Si se elimina, estos métodos se eliminarán también. ¿Desea continuar?
+Este método relacionado es el método de respaldo para los siguientes `Insert`métodos `Update`, o `Delete` predeterminados. Si se elimina, estos métodos se eliminarán también. ¿Desea continuar?
 
-Seleccionado `DataContext` método se utiliza actualmente como uno de los `Insert`, `Update`, o `Delete` métodos para una de las clases de entidad en el **Object Relational Designer**. La clase de entidad que estaba utilizando este método para revertir al comportamiento de tiempo de ejecución predeterminado para realizar la inserción, eliminación de las causas del método seleccionado actualizar o eliminar durante una actualización.
+El método `DataContext` seleccionado se usa actualmente como uno de los `Insert`métodos `Update`, o `Delete` para una de las clases de entidad en Object Relational **Designer**. Al eliminar el método seleccionado, la clase de entidad que estaba utilizando este método se revierte al comportamiento predeterminado en tiempo de ejecución para realizar la inserción, actualización o eliminación durante una actualización.
 
 ## <a name="selected-method-options"></a>Opciones del método seleccionado
 
-- Para eliminar el método seleccionado, provocando la clase de entidad usar las actualizaciones en tiempo de ejecución, haga clic en **Sí**.
+- Para eliminar el método seleccionado, haciendo que la clase de entidad use las actualizaciones en tiempo de ejecución, haga clic en **sí**.
 
-   El método seleccionado se elimina y las clases que usaban este método para invalidar el comportamiento de actualización se revierten al comportamiento predeterminado del motor en tiempo de ejecución LINQ to SQL.
+   El método seleccionado se elimina y las clases que usaban este método para invalidar el comportamiento de la actualización se revierten a usar el comportamiento predeterminado en tiempo de ejecución LINQ to SQL.
 
-- Para cerrar el cuadro de mensaje, el método seleccionado sin cambios, haga clic en **No**.
+- Para cerrar el cuadro de mensaje y dejar el método seleccionado sin cambios, haga clic en **no**.
 
    El cuadro de mensaje se cierra y no se realiza ninguna modificación.
 

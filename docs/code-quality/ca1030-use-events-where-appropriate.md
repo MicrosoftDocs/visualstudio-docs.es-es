@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ad0659241e75c862b3d82c64a7e8b2ad3ccada21
-ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
+ms.openlocfilehash: 28d71fbfc10532f7c9420ea7e847ef4c29b88854
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69547677"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71236075"
 ---
 # <a name="ca1030-use-events-where-appropriate"></a>CA1030: Utilizar eventos cuando sea apropiado
 
@@ -28,16 +28,16 @@ ms.locfileid: "69547677"
 |TypeName|UseEventsWhereAppropriate|
 |Identificador de comprobación|CA1030|
 |Categoría|Microsoft.Design|
-|Cambio problemático|Poco problemático|
+|Cambio importante|Poco problemático|
 
-## <a name="cause"></a>Causa
+## <a name="cause"></a>Motivo
 
 Un nombre de método comienza con uno de los siguientes:
 
 - AddOn
 - Cambio de movimiento
 - Inflama
-- Generar
+- generar
 
 De forma predeterminada, esta regla solo examina los métodos visibles externamente, pero esto es [configurable](#configurability).
 

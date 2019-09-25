@@ -18,12 +18,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: a98ec47688f289fadba66401aca9fcee7b602cdc
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: e923730213ca31a4429d8547fdaaf980692f9a96
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68923566"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71236476"
 ---
 # <a name="ca1009-declare-event-handlers-correctly"></a>CA1009: Declarar los controladores de evento correctamente
 
@@ -32,9 +32,9 @@ ms.locfileid: "68923566"
 |TypeName|DeclareEventHandlersCorrectly|
 |Identificador de comprobación|CA1009|
 |Categoría|Microsoft.Design|
-|Cambio problemático|Problemático|
+|Cambio importante|Problemático|
 
-## <a name="cause"></a>Causa
+## <a name="cause"></a>Motivo
 Un delegado que controla un evento público o protegido no tiene la firma, el tipo de valor devuelto o los nombres de parámetro correctos.
 
 ## <a name="rule-description"></a>Descripción de la regla

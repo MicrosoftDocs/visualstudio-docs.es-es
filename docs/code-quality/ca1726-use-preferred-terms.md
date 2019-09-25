@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e4e068fee014d767b7afcdf8183ac6611b299f36
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 3f359f7aa24ada0edf2c98a7d527ed715df85086
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68921583"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71233919"
 ---
 # <a name="ca1726-use-preferred-terms"></a>CA1726: Utilizar términos preferidos
 
@@ -27,9 +27,9 @@ ms.locfileid: "68921583"
 |TypeName|UsePreferredTerms|
 |Identificador de comprobación|CA1726|
 |Categoría|Microsoft.Naming|
-|Cambio problemático|Problemático: cuando se desencadena en ensamblados<br /><br /> Sin interrupción: cuando se desencadena en parámetros de tipo|
+|Cambio importante|Problemático: cuando se desencadena en ensamblados<br /><br /> Sin interrupción: cuando se desencadena en parámetros de tipo|
 
-## <a name="cause"></a>Causa
+## <a name="cause"></a>Motivo
 
 El nombre de un identificador visible externamente incluye un término para el que existe un término alternativo más apropiado. O bien, el nombre incluye el término marca o marcas.
 
@@ -47,7 +47,7 @@ Esta regla analiza un identificador en tokens. Cada token único y cada combinac
 |`Didnt`|`DidNot`|
 |`Doesnt`|`DoesNot`|
 |`Dont`|`DoNot`|
-|`Flag` o `Flags`|No hay ningún término de reemplazo. No usar.|
+|`Flag` o `Flags`|No hay ningún término de reemplazo. No utilizar.|
 |`Hadnt`|`HadNot`|
 |`Hasnt`|`HasNot`|
 |`Havent`|`HaveNot`|

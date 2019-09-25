@@ -32,12 +32,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 292852207a595d34f35a433a86f6554b5e68cf9e
-ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
+ms.openlocfilehash: 93470ebcea306d3cea762d60e061994b2bf27cc8
+ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68872032"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71253851"
 ---
 # <a name="program-vsto-add-ins"></a>Complementos de VSTO de programa
   Cuando se amplía una aplicación de Microsoft Office mediante la creación de un complemento VSTO, el código se escribe directamente en la clase `ThisAddIn` de su proyecto. Puede usar esta clase para realizar tareas tales como tener acceso al modelo de objetos de la aplicación host de Microsoft Office, personalizar la interfaz de usuario (UI) de la aplicación y exponer objetos del complemento VSTO en otras soluciones de Office.
@@ -130,7 +130,7 @@ Excel.Workbook newWorkbook = Globals.ThisAddIn.Application.Workbooks.Add(System.
  En proyectos de complementos VSTO de Outlook, la clase `ThisAddIn` se deriva de la clase `Microsoft.Office.Tools.Outlook.OutlookAddIn` en proyectos destinados a .NET Framework 3.5, y de la clase <xref:Microsoft.Office.Tools.Outlook.OutlookAddInBase> en proyectos destinados a [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)]. Estas clases base proporcionan funciones adicionales para admitir las áreas de formulario. Para obtener más información sobre las áreas de formulario, consulte [crear áreas de formulario de Outlook](../vsto/creating-outlook-form-regions.md).
 
 ## <a name="customize-the-user-interface-of-microsoft-office-applications"></a>Personalización de la interfaz de usuario de Microsoft Office aplicaciones
- Puede personalizar mediante programación la interfaz de usuario de las aplicaciones de Microsoft Office mediante un complemento VSTO. Por ejemplo, puede personalizar la cinta de opciones, mostrar un panel de tareas personalizado o crear un área de formulario personalizada en Outlook. Para obtener más información, consulte Personalización de la [interfaz de usuario de Office](../vsto/office-ui-customization.md).
+ Puede personalizar mediante programación la interfaz de usuario de las aplicaciones de Microsoft Office mediante un complemento VSTO. Por ejemplo, puede personalizar la cinta de opciones, mostrar un panel de tareas personalizado o crear un área de formulario personalizada en Outlook. Para obtener más información, consulte [Personalización](../vsto/office-ui-customization.md)de la interfaz de usuario de Office.
 
  Visual Studio proporciona diseñadores y clases que puede utilizar para crear paneles de tareas personalizados, personalizaciones de la cinta de opciones y áreas de formulario de Outlook. Estos diseñadores y clases ayudan a simplificar el proceso de personalización de estas características. Para obtener más información, vea [paneles de tareas personalizados](../vsto/custom-task-panes.md), [Diseñador de la cinta](../vsto/ribbon-designer.md)de opciones y [crear áreas de formulario de Outlook](../vsto/creating-outlook-form-regions.md).
 
@@ -149,6 +149,6 @@ Excel.Workbook newWorkbook = Globals.ThisAddIn.Application.Workbooks.Add(System.
 - [Llamar a código en complementos de VSTO desde otras soluciones de Office](../vsto/calling-code-in-vsto-add-ins-from-other-office-solutions.md)
 - [Tutorial: Llamar a código en un complemento de VSTO desde VBA](../vsto/walkthrough-calling-code-in-a-vsto-add-in-from-vba.md)
 - [Personalización de las características de la interfaz de usuario mediante interfaces de extensibilidad](../vsto/customizing-ui-features-by-using-extensibility-interfaces.md)
-- [Procedimientos: Crear proyectos de Office en Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md)
+- [Cómo: Crear proyectos de Office en Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md)
 - [Arquitectura de complementos VSTO](../vsto/architecture-of-vsto-add-ins.md)
 - [Escribir código en soluciones de Office](../vsto/writing-code-in-office-solutions.md)

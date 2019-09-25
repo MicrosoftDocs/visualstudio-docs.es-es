@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: dc7f4a82b9a75e4d189e969712472f06b4019b73
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 38de3597d3693b072fec12f64211af4469851627
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68920878"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71232539"
 ---
 # <a name="ca2120-secure-serialization-constructors"></a>CA2120: Proteger los constructores de serializaciones
 
@@ -28,9 +28,9 @@ ms.locfileid: "68920878"
 |TypeName|SecureSerializationConstructors|
 |Identificador de comprobación|CA2120|
 |Categoría|Microsoft.Security|
-|Cambio problemático|Problemático|
+|Cambio importante|Problemático|
 
-## <a name="cause"></a>Causa
+## <a name="cause"></a>Motivo
 El tipo implementa la <xref:System.Runtime.Serialization.ISerializable?displayProperty=fullName> interfaz, no es un delegado o una interfaz y se declara en un ensamblado que permite llamadores parcialmente confiables. El tipo tiene un constructor que toma un <xref:System.Runtime.Serialization.SerializationInfo?displayProperty=fullName> objeto y un <xref:System.Runtime.Serialization.StreamingContext?displayProperty=fullName> objeto (la firma del constructor de serialización). Este constructor no está protegido por una comprobación de seguridad, pero uno o varios de los constructores normales del tipo están protegidos.
 
 ## <a name="rule-description"></a>Descripción de la regla

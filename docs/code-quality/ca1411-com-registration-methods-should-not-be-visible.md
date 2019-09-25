@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 4f6f40308255e0496b2bcccddf4299e83ea93100
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: e9582fb6bbdbda8aefbb60e2c69d16380eec3dff
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68922049"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71234756"
 ---
 # <a name="ca1411-com-registration-methods-should-not-be-visible"></a>CA1411: Los métodos de registro COM no deben ser visibles
 
@@ -31,9 +31,9 @@ ms.locfileid: "68922049"
 |TypeName|ComRegistrationMethodsShouldNotBeVisible|
 |Identificador de comprobación|CA1411|
 |Categoría|Microsoft.Interoperability|
-|Cambio problemático|Problemático|
+|Cambio importante|Problemático|
 
-## <a name="cause"></a>Causa
+## <a name="cause"></a>Motivo
 
 Un método marcado con el <xref:System.Runtime.InteropServices.ComRegisterFunctionAttribute?displayProperty=fullName> <xref:System.Runtime.InteropServices.ComUnregisterFunctionAttribute?displayProperty=fullName> atributo o es visible externamente.
 

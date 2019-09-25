@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 89edba30a95d61268aebb26de8d973f6201c0fcf
-ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
+ms.openlocfilehash: 54f7d3a0efc2f6199c030c8dd488de3b5b158240
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "66714754"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71231725"
 ---
 # <a name="ca2210-assemblies-should-have-valid-strong-names"></a>CA2210: Los ensamblados deben tener nombres seguros válidos
 
@@ -28,73 +28,73 @@ ms.locfileid: "66714754"
 |TypeName|AssembliesShouldHaveValidStrongNames|
 |Identificador de comprobación|CA2210|
 |Categoría|Microsoft.Design|
-|Cambio problemático|No trascendental|
+|Cambio importante|Poco problemático|
 
 ## <a name="cause"></a>Motivo
 
-Un ensamblado no está firmado con un nombre seguro, no se puede comprobar el nombre seguro o no es válida sin la configuración del registro actual del equipo.
+Un ensamblado no está firmado con un nombre seguro, no se pudo comprobar el nombre seguro o el nombre seguro no sería válido sin la configuración del registro actual del equipo.
 
 ## <a name="rule-description"></a>Descripción de la regla
 
-Esta regla recupera y comprueba el nombre seguro de un ensamblado. Se produce una infracción si se cumple alguna de las siguientes acciones:
+Esta regla recupera y comprueba el nombre seguro de un ensamblado. Se produce una infracción si se cumple alguna de las siguientes condiciones:
 
 - El ensamblado no tiene un nombre seguro.
 
-- El ensamblado se modificó después de iniciar sesión.
+- El ensamblado se modificó después de la firma.
 
-- El ensamblado está firmado con retraso.
+- El ensamblado tiene firma retrasada.
 
 - El ensamblado se firmó incorrectamente o no se pudo firmar.
 
-- El ensamblado requiere la configuración del registro pasar la comprobación. Por ejemplo, la herramienta de nombre seguro (Sn.exe) se usó para omitir la comprobación del ensamblado.
+- El ensamblado requiere la configuración del registro para pasar la comprobación. Por ejemplo, se usó la herramienta de nombre seguro (SN. exe) para omitir la comprobación del ensamblado.
 
-El nombre seguro protege los clientes de cargar inconscientemente un ensamblado con el que se ha alterado. Los ensamblados sin nombres seguros sólo deben implementarse en escenarios muy limitados. Si se comparten o se distribuyen ensamblados que no están correctamente firmados, el ensamblado puede manipularse, el Common Language Runtime podría no cargar el ensamblado o el usuario podría deshabilitar la comprobación del equipo. Un ensamblado sin un nombre seguro tiene las siguientes desventajas:
+El nombre seguro protege los clientes de cargar inconscientemente un ensamblado con el que se ha alterado. Los ensamblados sin nombres seguros sólo deben implementarse en escenarios muy limitados. Si se comparten o se distribuyen ensamblados que no están correctamente firmados, el ensamblado puede manipularse, el Common Language Runtime podría no cargar el ensamblado o el usuario podría deshabilitar la comprobación del equipo. Un ensamblado sin nombre seguro tiene los siguientes inconvenientes:
 
-- No se puede comprobar sus orígenes.
+- No se pueden comprobar sus orígenes.
 
-- Common language runtime no puede advertir a los usuarios si se han modificado el contenido del ensamblado.
+- El Common Language Runtime no puede advertir a los usuarios si se ha modificado el contenido del ensamblado.
 
-- No se pueden cargar en la caché global de ensamblados.
+- No se puede cargar en la caché global de ensamblados.
 
-Tenga en cuenta que para cargar y analizar un ensamblado con firma retrasada, debe deshabilitar la comprobación del ensamblado.
+Tenga en cuenta que para cargar y analizar un ensamblado con firma retrasada, debe deshabilitar la comprobación para el ensamblado.
 
 ## <a name="how-to-fix-violations"></a>Cómo corregir infracciones
 
 ### <a name="create-a-key-file"></a>Crear un archivo de clave
 
-Use uno de los siguientes procedimientos:
+Use uno de los procedimientos siguientes:
 
-- Use la [herramienta Assembly Linker (Al.exe)](/dotnet/framework/tools/al-exe-assembly-linker).
+- Use la [herramienta Assembly Linker (al. exe)](/dotnet/framework/tools/al-exe-assembly-linker).
 
-- Para .NET Framework 2.0, usar el `/keyfile` o `/keycontainer` opción del compilador [/keyfile (especificar clave o par de claves para firmar un ensamblado)](/cpp/build/reference/keyfile-specify-key-or-key-pair-to-sign-an-assembly) o [/KEYCONTAINER (especificar un contenedor de claves para firmar un ensamblado)](/cpp/build/reference/keycontainer-specify-a-key-container-to-sign-an-assembly) opción del vinculador en C++).
+- Para el .NET Framework 2,0, use la opción `/keyfile` de `/keycontainer` compilador o la opción de compilador [/keyfile (especificar la clave o par de claves para firmar un ensamblado)](/cpp/build/reference/keyfile-specify-key-or-key-pair-to-sign-an-assembly) o la opción del enlazador [/keycontainer (especificar un contenedor de claves para firmar un ensamblado)](/cpp/build/reference/keycontainer-specify-a-key-container-to-sign-an-assembly) en C++).
 
-- Para .NET Framework v1.0 o v1.1, use el <xref:System.Reflection.AssemblyKeyFileAttribute?displayProperty=fullName> o <xref:System.Reflection.AssemblyKeyNameAttribute?displayProperty=fullName> atributo.
+- Para la .NET Framework v 1.0 o v 1.1, use el <xref:System.Reflection.AssemblyKeyFileAttribute?displayProperty=fullName> atributo o. <xref:System.Reflection.AssemblyKeyNameAttribute?displayProperty=fullName>
 
 ### <a name="sign-your-assembly-with-a-strong-name-in-visual-studio"></a>Firmar el ensamblado con un nombre seguro en Visual Studio
 
 1. En Visual Studio, abra la solución.
 
-2. En **el Explorador de soluciones**, haga clic en el proyecto y, a continuación, haga clic en **propiedades.**
+2. En **Explorador de soluciones**, haga clic con el botón secundario en el proyecto y, a continuación, haga clic en **propiedades.**
 
-3. Haga clic en el **firma** pestaña y seleccione el **firmar el ensamblado** casilla de verificación.
+3. Haga clic en la pestaña **firma** y active la casilla **firmar el ensamblado** .
 
-4. Desde **elegir un archivo de clave de nombre seguro**, seleccione **New**.
+4. En **Elija un archivo de clave de nombre seguro**, seleccione **nuevo**.
 
-   El **crear clave de nombre seguro** mostrará la ventana.
+   Se mostrará la ventana **crear clave de nombre seguro** .
 
 5. En **nombre de archivo de clave**, escriba un nombre para la clave de nombre seguro.
 
 6. Elija si desea proteger la clave con una contraseña y, a continuación, haga clic en **Aceptar**.
 
-7. En **el Explorador de soluciones**, haga clic en el proyecto y, a continuación, haga clic en **compilar**.
+7. En **Explorador de soluciones**, haga clic con el botón secundario en el proyecto y, a continuación, haga clic en **compilar**.
 
 ### <a name="sign-your-assembly-with-a-strong-name-outside-visual-studio"></a>Firmar el ensamblado con un nombre seguro fuera de Visual Studio
 
-Use la [herramienta nombre seguro (Sn.exe)](/dotnet/framework/tools/sn-exe-strong-name-tool).
+Use la [herramienta de nombre seguro (SN. exe)](/dotnet/framework/tools/sn-exe-strong-name-tool).
 
-## <a name="when-to-suppress-warnings"></a>Cuándo Suprimir advertencias
+## <a name="when-to-suppress-warnings"></a>Cuándo suprimir advertencias
 
-Sólo suprima una advertencia de esta regla si el ensamblado se usa en un entorno donde no es una preocupación manipule el contenido.
+Suprima solo una advertencia de esta regla si el ensamblado se usa en un entorno en el que la alteración del contenido no es un problema.
 
 ## <a name="see-also"></a>Vea también
 

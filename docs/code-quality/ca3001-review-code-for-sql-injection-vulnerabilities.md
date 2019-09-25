@@ -10,12 +10,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 603dc08650ca5e54cac3f590f5d32de98e3ae5da
-ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
+ms.openlocfilehash: bd454ffad1efc9d7df84d88630fe71eebc8ca6fc
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "65841456"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71238118"
 ---
 # <a name="ca3001-review-code-for-sql-injection-vulnerabilities"></a>CA3001: Revisión de código en busca de vulnerabilidades de inyección de SQL
 
@@ -24,31 +24,31 @@ ms.locfileid: "65841456"
 |TypeName|ReviewCodeForSqlInjectionsVulnerabilities|
 |Identificador de comprobación|CA3001|
 |Categoría|Microsoft.Security|
-|Cambio problemático|No trascendental|
+|Cambio importante|Poco problemático|
 
 ## <a name="cause"></a>Motivo
 
-Entrada de solicitud HTTP potencialmente no confiable alcanza el texto de un comando SQL.
+Una entrada de solicitud HTTP que podría no ser de confianza alcanza el texto de un comando SQL.
 
 ## <a name="rule-description"></a>Descripción de la regla
 
-Al trabajar con entradas no seguras y comandos SQL, esté atento ataques de inyección SQL. Un ataque de inyección SQL puede ejecutar los comandos SQL malintencionados, poner en peligro la seguridad e integridad de la aplicación. Las técnicas típicas incluyen el uso de un apóstrofo o comilla simple para delimitadores cadenas literales, dos guiones para un comentario y un punto y coma para el final de una instrucción. Para obtener más información, consulte [inyección de código SQL](/sql/relational-databases/security/sql-injection).
+Al trabajar con comandos SQL y de entrada que no son de confianza, tenga en cuentan los ataques por inyección de SQL. Un ataque por inyección de SQL puede ejecutar comandos SQL malintencionados, poniendo en peligro la seguridad y la integridad de la aplicación. Las técnicas típicas incluyen el uso de una comilla simple o un apóstrofo para delimitar cadenas literales, dos guiones para un comentario y un punto y coma para el final de una instrucción. Para obtener más información, consulte [inyección de SQL](/sql/relational-databases/security/sql-injection).
 
-Esta regla intenta encontrar la entrada de las solicitudes HTTP para alcanzar el texto de un comando SQL.
-
-> [!NOTE]
-> Esta regla no puede realizar un seguimiento de datos a través de ensamblados. Por ejemplo, si un ensamblado lee la entrada de solicitud HTTP y, a continuación, pasa a otro ensamblado que se ejecuta el comando SQL, esta regla no genera una advertencia.
+Esta regla intenta buscar la entrada de las solicitudes HTTP que llegan al texto de un comando SQL.
 
 > [!NOTE]
-> Hay un límite configurable para profundidad esta regla analizará el flujo de datos a través de llamadas de método. Consulte [Configuration Analyzer](https://github.com/dotnet/roslyn-analyzers/blob/master/docs/Analyzer%20Configuration.md#dataflow-analysis) acerca de cómo configurar el límite en un archivo EditorConfig.
+> Esta regla no puede realizar el seguimiento de los datos entre ensamblados. Por ejemplo, si un ensamblado lee la entrada de la solicitud HTTP y, a continuación, la pasa a otro ensamblado que ejecuta el comando SQL, esta regla no generará ninguna advertencia.
+
+> [!NOTE]
+> Existe un límite configurable en cuanto a la profundidad con que esta regla analizará el flujo de datos a través de las llamadas a métodos. Vea [configuración del analizador](https://github.com/dotnet/roslyn-analyzers/blob/master/docs/Analyzer%20Configuration.md#dataflow-analysis) para saber cómo configurar el límite en un archivo EditorConfig.
 
 ## <a name="how-to-fix-violations"></a>Cómo corregir infracciones
 
-Use los comandos SQL con parámetros o los procedimientos almacenados con parámetros que contiene la entrada que no se confía.
+Use comandos SQL con parámetros o procedimientos almacenados con parámetros que contengan la entrada que no sea de confianza.
 
-## <a name="when-to-suppress-warnings"></a>Cuándo Suprimir advertencias
+## <a name="when-to-suppress-warnings"></a>Cuándo suprimir advertencias
 
-Es seguro suprimir una advertencia de esta regla si sabe que siempre se valida la entrada en un conjunto conocido de prueba de errores de caracteres.
+Es seguro suprimir una advertencia de esta regla si sabe que la entrada siempre se valida con respecto a un conjunto de caracteres seguro conocido.
 
 ## <a name="pseudo-code-examples"></a>Ejemplos de pseudocódigo
 
@@ -107,7 +107,7 @@ Namespace VulnerableWebApp
 End Namespace
 ```
 
-### <a name="parameterized-solution"></a>Solución con parámetros
+### <a name="parameterized-solution"></a>Solución parametrizada
 
 ```csharp
 using System;

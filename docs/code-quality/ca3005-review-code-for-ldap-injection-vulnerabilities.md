@@ -10,12 +10,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 10b9091df08368674511b770158ea47c247aade7
-ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
+ms.openlocfilehash: c0c99d5d0adb145a061693f8a83b1f674e05eed4
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "65841369"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71237343"
 ---
 # <a name="ca3005-review-code-for-ldap-injection-vulnerabilities"></a>CA3005: Revisión de código en busca de vulnerabilidades de inyección de LDAP
 
@@ -24,36 +24,36 @@ ms.locfileid: "65841369"
 |TypeName|ReviewCodeForLdapInjectionVulnerabilities|
 |Identificador de comprobación|CA3005|
 |Categoría|Microsoft.Security|
-|Cambio problemático|No trascendental|
+|Cambio importante|Poco problemático|
 
 ## <a name="cause"></a>Motivo
 
-Entrada de solicitud HTTP potencialmente no confiable alcanza una instrucción de LDAP.
+Una entrada de solicitud HTTP que podría no ser de confianza llega a una instrucción LDAP.
 
 ## <a name="rule-description"></a>Descripción de la regla
 
-Al trabajar con entradas no seguras, esté atento a ataques de inyección de protocolo ligero de acceso a directorios (LDAP). Un atacante puede ejecutar instrucciones LDAP malintencionadas frente a los directorios de información. Las aplicaciones que usan la entrada del usuario para construir instrucciones dinámicas de LDAP para acceder a los servicios de directorio son especialmente vulnerables.
+Cuando trabaje con una entrada que no sea de confianza, tenga en cuentan los ataques por inyección de Protocolo ligero de acceso a directorios (LDAP). Un atacante podría ejecutar instrucciones LDAP malintencionadas en directorios de información. Las aplicaciones que usan datos proporcionados por el usuario para construir instrucciones LDAP dinámicas para tener acceso a los servicios de directorio son especialmente vulnerables.
 
-Esta regla intenta encontrar la entrada de las solicitudes HTTP para alcanzar una instrucción de LDAP.
-
-> [!NOTE]
-> Esta regla no puede realizar un seguimiento de datos a través de ensamblados. Por ejemplo, si un ensamblado lee la entrada de solicitud HTTP y, a continuación, pasa a otro ensamblado que se ejecuta una instrucción de LDAP, esta regla no genera una advertencia.
+Esta regla intenta buscar la entrada de las solicitudes HTTP que llegan a una instrucción LDAP.
 
 > [!NOTE]
-> Hay un límite configurable para profundidad esta regla analizará el flujo de datos a través de llamadas de método. Consulte [Configuration Analyzer](https://github.com/dotnet/roslyn-analyzers/blob/master/docs/Analyzer%20Configuration.md#dataflow-analysis) acerca de cómo configurar el límite en un archivo EditorConfig.
+> Esta regla no puede realizar el seguimiento de los datos entre ensamblados. Por ejemplo, si un ensamblado lee la entrada de la solicitud HTTP y, a continuación, la pasa a otro ensamblado que ejecuta una instrucción LDAP, esta regla no generará ninguna advertencia.
+
+> [!NOTE]
+> Existe un límite configurable en cuanto a la profundidad con que esta regla analizará el flujo de datos a través de las llamadas a métodos. Vea [configuración del analizador](https://github.com/dotnet/roslyn-analyzers/blob/master/docs/Analyzer%20Configuration.md#dataflow-analysis) para saber cómo configurar el límite en un archivo EditorConfig.
 
 ## <a name="how-to-fix-violations"></a>Cómo corregir infracciones
 
-La parte controlado por el usuario de las instrucciones de LDAP, considere uno de:
-- Permitir solo una lista segura de los caracteres que no son especiales.
-- No permitir caracteres especiales
+Para la parte controlada por el usuario de las instrucciones LDAP, considere uno de los siguientes:
+- Permitir solo una lista segura de caracteres no especiales.
+- No permitir carácter especial
 - Caracteres especiales de escape.
 
-Consulte [hoja de referencia rápida de OWASP LDAP inyección prevención](https://github.com/OWASP/CheatSheetSeries/blob/master/cheatsheets/LDAP_Injection_Prevention_Cheat_Sheet.md) para obtener más instrucciones.
+Consulte [la hoja](https://github.com/OWASP/CheatSheetSeries/blob/master/cheatsheets/LDAP_Injection_Prevention_Cheat_Sheet.md) de referencia de prevención de inyección LDAP de OWASP para obtener más información.
 
-## <a name="when-to-suppress-warnings"></a>Cuándo Suprimir advertencias
+## <a name="when-to-suppress-warnings"></a>Cuándo suprimir advertencias
 
-Si conoce la entrada se ha validado o caracteres de escape para que sean seguras, es correcto suprimir esta advertencia.
+Si sabe que la entrada se ha validado o no es segura, puede suprimir esta advertencia.
 
 ## <a name="pseudo-code-examples"></a>Ejemplos de pseudocódigo
 

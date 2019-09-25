@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 396208b9594e46aa179c3eebddc5a552ce0fca3c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 6e5c50f607253304b05dd7ab9350646a0df05e70
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62779539"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71236227"
 ---
 # <a name="ca1020-avoid-namespaces-with-few-types"></a>CA1020: Evitar los espacios de nombres con pocos tipos
 
@@ -28,7 +28,7 @@ ms.locfileid: "62779539"
 |TypeName|AvoidNamespacesWithFewTypes|
 |Identificador de comprobación|CA1020|
 |Categoría|Microsoft.Design|
-|Cambio problemático|Problemático|
+|Cambio importante|Problemático|
 
 ## <a name="cause"></a>Motivo
 
@@ -36,15 +36,15 @@ Un espacio de nombres distinto del espacio de nombres global contiene menos de c
 
 ## <a name="rule-description"></a>Descripción de la regla
 
-Asegúrese de que cada uno de los espacios de nombres tiene una organización lógica y que existe un motivo válido para los tipos en un espacio de nombres apenas lleno. Los espacios de nombres deben contener tipos que se utilizan conjuntamente en la mayoría de los escenarios. Cuando sus aplicaciones son mutuamente excluyentes, tipos deben estar en espacios de nombres independientes. Por ejemplo, el <xref:System.Web.UI> espacio de nombres contiene tipos que se usan en aplicaciones web, y el <xref:System.Windows.Forms> espacio de nombres contiene tipos que se usan en [!INCLUDE[TLA#tla_mswin](../code-quality/includes/tlasharptla_mswin_md.md)]-aplicaciones basadas en. Aunque ambos espacios de nombres tienen tipos que controlan aspectos de la interfaz de usuario, estos tipos no están diseñados para su uso en la misma aplicación. Por lo tanto, se encuentran en espacios de nombres independientes. Organización del espacio de nombres especial también puede resultar útil porque aumenta la detectabilidad de una característica. Mediante el examen de la jerarquía del espacio de nombres, los consumidores de la biblioteca deben ser capaz de encontrar los tipos que implementan una característica.
+Asegúrese de que cada uno de los espacios de nombres tiene una organización lógica y que existe un motivo válido para colocar los tipos en un espacio de nombres rellenado de forma dispersa. Los espacios de nombres deben contener tipos que se usan juntos en la mayoría de los escenarios. Cuando las aplicaciones son mutuamente excluyentes, los tipos se deben encontrar en espacios de nombres independientes. Por ejemplo, el <xref:System.Web.UI> espacio de nombres contiene tipos que se usan en aplicaciones web y <xref:System.Windows.Forms> el espacio de nombres contiene tipos que [!INCLUDE[TLA#tla_mswin](../code-quality/includes/tlasharptla_mswin_md.md)]se usan en aplicaciones basadas en. Aunque ambos espacios de nombres tienen tipos que controlan aspectos de la interfaz de usuario, estos tipos no están diseñados para su uso en la misma aplicación. Por lo tanto, se encuentran en espacios de nombres independientes. La organización del espacio de nombres meticuloso también puede ser útil porque aumenta la capacidad de detección de una característica. Al examinar la jerarquía de espacios de nombres, los consumidores de la biblioteca deben poder localizar los tipos que implementan una característica.
 
 > [!NOTE]
-> No se deben combinar los permisos y los tipos de tiempo de diseño en otros espacios de nombres para cumplir con esta directriz. Estos tipos pertenecen a sus propios espacios de nombres por debajo de su espacio de nombres principal y los espacios de nombres deben terminar en `.Design` y `.Permissions`, respectivamente.
+> Los tipos y permisos en tiempo de diseño no se deben combinar en otros espacios de nombres para cumplir esta directriz. Estos tipos pertenecen a sus propios espacios de nombres debajo del espacio de nombres principal y los espacios de nombres `.Design` deben `.Permissions`terminar en y, respectivamente.
 
 ## <a name="how-to-fix-violations"></a>Cómo corregir infracciones
 
-Para corregir una infracción de esta regla, intente combinar los espacios de nombres que contienen solo unos pocos tipos en un único espacio de nombres.
+Para corregir una infracción de esta regla, intente combinar los espacios de nombres que contienen solo unos pocos tipos en un espacio de nombres único.
 
-## <a name="when-to-suppress-warnings"></a>Cuándo Suprimir advertencias
+## <a name="when-to-suppress-warnings"></a>Cuándo suprimir advertencias
 
-Es seguro suprimir una advertencia de esta regla cuando el espacio de nombres no contiene tipos que se usan con los tipos en otros espacios de nombres.
+Es seguro suprimir una advertencia de esta regla cuando el espacio de nombres no contiene tipos que se utilizan con los tipos en los otros espacios de nombres.

@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 97f56e406d00de1891647c4211d21336f9d1a266
-ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
+ms.openlocfilehash: 413119f7cdf473f3038ae212ac812d1987641bb1
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69547042"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71233548"
 ---
 # <a name="ca1815-override-equals-and-operator-equals-on-value-types"></a>CA1815: Invalidar Equals y el operador Equals en los tipos de valores
 
@@ -28,9 +28,9 @@ ms.locfileid: "69547042"
 |TypeName|OverrideEqualsAndOperatorEqualsOnValueTypes|
 |Identificador de comprobación|CA1815|
 |Categoría|Microsoft.Performance|
-|Cambio problemático|Poco problemático|
+|Cambio importante|Poco problemático|
 
-## <a name="cause"></a>Causa
+## <a name="cause"></a>Motivo
 
 Un tipo de valor no invalida <xref:System.Object.Equals%2A?displayProperty=fullName> o no implementa el operador de igualdad (= =). Esta regla no comprueba las enumeraciones.
 

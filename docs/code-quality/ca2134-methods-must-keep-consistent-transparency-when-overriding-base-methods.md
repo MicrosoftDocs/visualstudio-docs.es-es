@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8ca28f364307d4a2b73235bc6541cb8aa01abd56
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 517588826983613c71a74296914b1dfeb3eaa2b4
+ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68920658"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71253313"
 ---
 # <a name="ca2134-methods-must-keep-consistent-transparency-when-overriding-base-methods"></a>CA2134: Los métodos deben mantener una transparencia coherente al invalidar métodos base
 
@@ -24,9 +24,9 @@ ms.locfileid: "68920658"
 |TypeName|MethodsMustOverrideWithConsistentTransparency|
 |Identificador de comprobación|CA2134|
 |Categoría|Microsoft.Security|
-|Cambio problemático|Problemático|
+|Cambio importante|Problemático|
 
-## <a name="cause"></a>Causa
+## <a name="cause"></a>Motivo
 Esta regla se desencadena cuando un método marcado con <xref:System.Security.SecurityCriticalAttribute> invalida un método que es transparente o está marcado <xref:System.Security.SecuritySafeCriticalAttribute>con. La regla también se desencadena cuando un método que es transparente o está marcado <xref:System.Security.SecuritySafeCriticalAttribute> con reemplaza un método marcado con un. <xref:System.Security.SecurityCriticalAttribute>
 
 Se aplica la regla al invalidar un método virtual o implementar una interfaz.
@@ -34,13 +34,13 @@ Se aplica la regla al invalidar un método virtual o implementar una interfaz.
 ## <a name="rule-description"></a>Descripción de la regla
 Esta regla se desencadena en los intentos de cambiar la accesibilidad de seguridad de un método más allá de la cadena de herencia. Por ejemplo, si un método virtual de una clase base es transparente o crítico para la seguridad, la clase derivada debe reemplazarlo con un método transparente o crítico para la seguridad. Por el contrario, si el virtual es crítico para la seguridad, la clase derivada debe reemplazarlo por un método crítico para la seguridad. La misma regla se aplica a la implementación de métodos de interfaz.
 
-Las reglas de transparencia se aplican cuando se compila el código JIT en lugar de hacerlo en tiempo de ejecución, de modo que el cálculo de transparencia no tiene información de tipo dinámico. Por consiguiente, el resultado del cálculo de transparencia debe poder determinarse únicamente a partir de los tipos estáticos que se van a compilar con JIT, independientemente del tipo dinámico.
+Las reglas de transparencia se aplican cuando el código está compilado JIT en lugar de en tiempo de ejecución, de modo que el cálculo de transparencia no tiene información de tipo dinámico. Por consiguiente, el resultado del cálculo de transparencia debe poder determinarse únicamente a partir de los tipos estáticos que se van a compilar con JIT, independientemente del tipo dinámico.
 
 ## <a name="how-to-fix-violations"></a>Cómo corregir infracciones
 Para corregir una infracción de esta regla, cambie la transparencia del método que invalide un método virtual o implemente una interfaz para que coincida con la transparencia del método virtual o de la interfaz.
 
 ## <a name="when-to-suppress-warnings"></a>Cuándo suprimir advertencias
-No suprima las advertencias de esta regla. Las infracciones de esta regla darán lugar <xref:System.TypeLoadException> a un tiempo de ejecución para los ensamblados que usan la transparencia de nivel 2.
+No suprima las advertencias de esta regla. Las infracciones de esta regla dan como resultado un <xref:System.TypeLoadException> tiempo de ejecución para los ensamblados que usan la transparencia de nivel 2.
 
 ## <a name="examples"></a>Ejemplos
 

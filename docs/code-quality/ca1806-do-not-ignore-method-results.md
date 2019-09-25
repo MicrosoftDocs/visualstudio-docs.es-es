@@ -16,12 +16,12 @@ dev_langs:
 - CSharp
 - VB
 manager: jillfra
-ms.openlocfilehash: 2e68fb6b4c40c165a09ae2631a2ad0a64bf52fbc
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 2bf4833aebdb6a92b9bd05294dd314dc2967738e
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68921555"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71233684"
 ---
 # <a name="ca1806-do-not-ignore-method-results"></a>CA1806: No omitir resultados del método
 
@@ -30,9 +30,9 @@ ms.locfileid: "68921555"
 |TypeName|DoNotIgnoreMethodResults|
 |Identificador de comprobación|CA1806|
 |Categoría|Microsoft.Usage|
-|Cambio problemático|No trascendental|
+|Cambio importante|Poco problemático|
 
-## <a name="cause"></a>Causa
+## <a name="cause"></a>Motivo
 
 Hay varias razones posibles para esta ADVERTENCIA:
 

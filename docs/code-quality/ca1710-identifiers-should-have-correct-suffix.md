@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 93fd892baaf54d79c3a2387b8961a2f4c1bb2cdb
-ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
+ms.openlocfilehash: 50c67c614c4ece8f1925f4133f749a1c5747fe31
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69547326"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71234164"
 ---
 # <a name="ca1710-identifiers-should-have-correct-suffix"></a>CA1710: Los identificadores deben tener un sufijo correcto
 
@@ -28,9 +28,9 @@ ms.locfileid: "69547326"
 |TypeName|IdentifiersShouldHaveCorrectSuffix|
 |Identificador de comprobación|CA1710|
 |Categoría|Microsoft.Naming|
-|Cambio problemático|Problemático|
+|Cambio importante|Problemático|
 
-## <a name="cause"></a>Causa
+## <a name="cause"></a>Motivo
 
 Un identificador no tiene el sufijo correcto.
 

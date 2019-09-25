@@ -18,12 +18,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: e968cef6491e1c24d98e5f64248b5104db8c5b65
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 4f26faf16cc8a9a8235596aef68e5af5c3b4401e
+ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62797406"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71253303"
 ---
 # <a name="ca1502-avoid-excessive-complexity"></a>CA1502: Evitar una complejidad excesiva
 
@@ -31,44 +31,44 @@ ms.locfileid: "62797406"
 |-|-|
 |TypeName|AvoidExcessiveComplexity|
 |Identificador de comprobación|CA1502|
-|Categoría|Microsoft.Maintainability|
-|Cambio problemático|Poco problemático|
+|Categoría|Microsoft. mantenibilidad|
+|Cambio importante|Poco problemático|
 
 ## <a name="cause"></a>Motivo
 
-Un método tiene una complejidad ciclomática excesiva.
+Un método tiene una complejidad de ciclomática excesiva.
 
 ## <a name="rule-description"></a>Descripción de la regla
 
-*Complejidad ciclomática* mide el número de rutas de acceso independientes linealmente a través del método, que viene determinado por el número y la complejidad de las bifurcaciones condicionales. Una complejidad ciclomática baja generalmente indica un método que es fácil de entender, probar y mantener. La complejidad ciclomática se calcula a partir de un gráfico de flujo de control del método y se proporciona como sigue:
+La *complejidad ciclomática* mide el número de rutas de acceso independientes de forma lineal a través del método, que viene determinado por el número y la complejidad de las bifurcaciones condicionales. Generalmente, una complejidad de ciclomática baja indica un método que es fácil de entender, probar y mantener. La complejidad ciclomática se calcula a partir de un gráfico de flujo de control del método y se proporciona de la siguiente manera:
 
-complejidad ciclomática = número de bordes - el número de nodos + 1
+complejidad ciclomática = el número de límites (el número de nodos + 1)
 
-Un *nodo* representa un punto de bifurcación de la lógica y una *edge* representa una línea entre los nodos.
+Un *nodo* representa un punto de bifurcación lógico y un *borde* representa una línea entre los nodos.
 
-La regla emite una infracción cuando la complejidad ciclomática es más de 25.
+La regla notifica una infracción cuando la complejidad ciclomática es superior a 25.
 
-Puede aprender más acerca de las métricas de código en [medir la complejidad del código administrado](../code-quality/code-metrics-values.md).
+Puede obtener más información sobre las métricas de código en [la medida de la complejidad del código administrado](../code-quality/code-metrics-values.md).
 
 ## <a name="how-to-fix-violations"></a>Cómo corregir infracciones
 
 Para corregir una infracción de esta regla, refactorice el método para reducir su complejidad ciclomática.
 
-## <a name="when-to-suppress-warnings"></a>Cuándo Suprimir advertencias
+## <a name="when-to-suppress-warnings"></a>Cuándo suprimir advertencias
 
-Es seguro suprimir una advertencia de esta regla si no se puede reducir fácilmente la complejidad y el método es fácil de entender, probar y mantener. En concreto, un método que contiene una gran `switch` (`Select` en [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]) instrucción es un candidato para la exclusión. El riesgo de desestabilizar el código base en tiempo de ejecución en el ciclo de desarrollo o introducir un cambio inesperado en el comportamiento de tiempo de ejecución en código previamente distribuido puede descompensar las ventajas de mantenimiento de refactorización del código.
+Es seguro suprimir una advertencia de esta regla si la complejidad no se puede reducir fácilmente y el método es fácil de entender, probar y mantener. En concreto, un método que contiene una instrucción `switch` grande`Select` ( [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]in) es un candidato para la exclusión. El riesgo de desestabilizadores la base de código tardíamente en el ciclo de desarrollo o la introducción de un cambio inesperado en el comportamiento en tiempo de ejecución en el código enviado anteriormente podría superar las ventajas de mantenimiento de la refactorización del código.
 
-## <a name="how-cyclomatic-complexity-is-calculated"></a>¿Cómo se calcula la complejidad ciclomática
+## <a name="how-cyclomatic-complexity-is-calculated"></a>Cómo se calcula la complejidad de ciclomática
 
-La complejidad ciclomática se calcula sumando 1 al siguiente:
+La complejidad ciclomática se calcula agregando 1 a lo siguiente:
 
-- Número de bifurcaciones (como `if`, `while`, y `do`)
+- Número de bifurcaciones ( `if`como, `while`y) `do`
 
-- Número de `case` instrucciones en un `switch`
+- Número de `case` instrucciones en un`switch`
 
 ## <a name="example"></a>Ejemplo
 
-Los ejemplos siguientes muestran los métodos que tienen diferentes complejidad ciclomática.
+En los ejemplos siguientes se muestran métodos que tienen diferentes complejidades de ciclomática.
 
 **Complejidad ciclomática de 1**
 
@@ -102,7 +102,7 @@ Los ejemplos siguientes muestran los métodos que tienen diferentes complejidad 
 
 ## <a name="related-rules"></a>Reglas relacionadas
 
-[CA1501: Evite una herencia excesiva](../code-quality/ca1501-avoid-excessive-inheritance.md)
+[CA1501: Evitar una herencia excesiva](../code-quality/ca1501-avoid-excessive-inheritance.md)
 
 ## <a name="see-also"></a>Vea también
 

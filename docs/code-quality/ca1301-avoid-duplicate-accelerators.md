@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 16cd44f00db13027d737b6a6b496877075ac6fa9
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 5f50be12f4d601161ec20659bbb6b710e5a7cf24
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68922272"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71235165"
 ---
 # <a name="ca1301-avoid-duplicate-accelerators"></a>CA1301: Evitar los aceleradores duplicados
 
@@ -28,9 +28,9 @@ ms.locfileid: "68922272"
 |TypeName|AvoidDuplicateAccelerators|
 |Identificador de comprobación|CA1301|
 |Categoría|Microsoft. Globalization|
-|Cambio problemático|Poco problemático|
+|Cambio importante|Poco problemático|
 
-## <a name="cause"></a>Causa
+## <a name="cause"></a>Motivo
 Un tipo extiende <xref:System.Windows.Forms.Control?displayProperty=fullName> y contiene dos o más controles de nivel superior que tienen claves de acceso idénticas que se almacenan en un archivo de recursos.
 
 ## <a name="rule-description"></a>Descripción de la regla

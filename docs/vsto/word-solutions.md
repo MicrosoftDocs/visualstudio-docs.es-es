@@ -26,12 +26,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 5c8837c1c95dc5f032a10773645f93a46ec29662
-ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
+ms.openlocfilehash: 3cef71cc5f6c4e25d04e6045be7059d81c06b484
+ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69551211"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71254937"
 ---
 # <a name="word-solutions"></a>soluciones para Word
   Visual Studio proporciona plantillas de proyecto que puede usar para crear personalizaciones de nivel de documento y complementos de VSTO para Microsoft Office Word. Puede usar estas soluciones para automatizar Word, ampliar las características de Word y personalizar la interfaz de usuario (IU) de Word. Para obtener más información sobre las diferencias entre las personalizaciones de nivel de documento y los complementos de VSTO, consulte [ &#40;información&#41;general sobre el desarrollo de soluciones de Office VSTO](../vsto/office-solutions-development-overview-vsto.md).
@@ -58,19 +58,19 @@ ms.locfileid: "69551211"
 ## <a name="doclevel"></a>Desarrollar personalizaciones de nivel de documento para Word
  Una personalización de nivel de documento para Microsoft Office Word se compone de un ensamblado asociado a un documento específico. Normalmente, el ensamblado amplía el documento personalizando la interfaz de usuario y automatizando Word. A diferencia de los complementos de VSTO, que están asociados a Word en sí, la funcionalidad que implementa en una personalización está disponible únicamente cuando el documento asociado se abre en Word.
 
- Para crear un proyecto de personalización de nivel de documento para Word, use las plantillas de proyecto de documento o de plantilla de Word en el cuadro de diálogo **Nuevo proyecto** de Visual Studio. Para obtener más información, consulte [Cómo Cree proyectos de Office en Visual](../vsto/how-to-create-office-projects-in-visual-studio.md)Studio.
+ Para crear un proyecto de personalización de nivel de documento para Word, use las plantillas de proyecto de documento o de plantilla de Word en el cuadro de diálogo **Nuevo proyecto** de Visual Studio. Para obtener más información, vea [Cómo: Cree proyectos de Office en Visual](../vsto/how-to-create-office-projects-in-visual-studio.md)Studio.
 
  Para obtener más información sobre cómo funcionan las personalizaciones de nivel de documento, la [arquitectura de las personalizaciones de nivel de documento](../vsto/architecture-of-document-level-customizations.md).
 
 ### <a name="word-customization-programming-model"></a>Modelo de programación de la personalización de Word
  Al crear un proyecto de nivel de documento para Word, Visual Studio genera una clase, llamada `ThisDocument`, que es la base de su solución. Esta clase representa el documento asociado a la solución y proporciona un punto de partida para escribir el código.
 
- Para obtener más información sobre `ThisDocument` la clase y otras características que puede usar en un proyecto de nivel de documento, consulte personalizaciones de [nivel de documento de programa](../vsto/programming-document-level-customizations.md).
+ Para obtener más información sobre `ThisDocument` la clase y otras características que puede usar en un proyecto de nivel de documento, consulte [personalizaciones de nivel de documento de programa](../vsto/programming-document-level-customizations.md).
 
 ## <a name="applevel"></a>Desarrollo de complementos de VSTO para Word
  Un complemento de VSTO para Microsoft Office Word está formado por un ensamblado cargado por Word. Normalmente, el ensamblado amplía Word personalizando la interfaz de usuario y automatizando Word. A diferencia de las personalizaciones de nivel de documento, que están asociadas a un documento concreto, la funcionalidad que implementa en un complemento de VSTO no está restringida a ningún documento individual.
 
- Para crear un proyecto de complemento de VSTO para Word, use las plantillas de proyecto de complementos de Word en el cuadro de diálogo **Nuevo proyecto** de Visual Studio. Para obtener más información, consulte [Cómo Cree proyectos de Office en Visual](../vsto/how-to-create-office-projects-in-visual-studio.md)Studio.
+ Para crear un proyecto de complemento de VSTO para Word, use las plantillas de proyecto de complementos de Word en el cuadro de diálogo **Nuevo proyecto** de Visual Studio. Para obtener más información, vea [Cómo: Cree proyectos de Office en Visual](../vsto/how-to-create-office-projects-in-visual-studio.md)Studio.
 
  Para obtener información general sobre cómo funcionan los complementos de VSTO, consulte [Architecture of VSTO Add-ins](../vsto/architecture-of-vsto-add-ins.md).
 
@@ -88,7 +88,7 @@ ms.locfileid: "69551211"
 |Tarea|Para obtener más información|
 |----------|--------------------------|
 |Personalizar la cinta.|[Información general sobre la cinta](../vsto/ribbon-overview.md)|
-|Agregue controles de Windows Forms o controles extendidos de Word al documento personalizado (para las personalizaciones de nivel de documento) o a cualquier documento abierto (para los complementos de VSTO).|[Procedimientos: Agregar controles Windows Forms a documentos de Office](../vsto/how-to-add-windows-forms-controls-to-office-documents.md)<br /><br /> [Cómo: Agregar controles de contenido a documentos de Word](../vsto/how-to-add-content-controls-to-word-documents.md)<br /><br /> [Cómo: Agregar controles Bookmark a documentos de Word](../vsto/how-to-add-bookmark-controls-to-word-documents.md)|
+|Agregue controles de Windows Forms o controles extendidos de Word al documento personalizado (para las personalizaciones de nivel de documento) o a cualquier documento abierto (para los complementos de VSTO).|[Cómo: Agregar controles Windows Forms a documentos de Office](../vsto/how-to-add-windows-forms-controls-to-office-documents.md)<br /><br /> [Cómo: Agregar controles de contenido a documentos de Word](../vsto/how-to-add-content-controls-to-word-documents.md)<br /><br /> [Cómo: Agregar controles Bookmark a documentos de Word](../vsto/how-to-add-bookmark-controls-to-word-documents.md)|
 
 ### <a name="options-for-document-level-customizations"></a>Opciones para las personalizaciones de nivel de documento
  En la siguiente tabla se enumeran las opciones de personalización disponibles únicamente para las personalizaciones de nivel de documento.
@@ -107,7 +107,7 @@ ms.locfileid: "69551211"
 
 ### <a name="related-topics"></a>Temas relacionados
 
-|Título|DESCRIPCIÓN|
+|Título|Descripción|
 |-----------|-----------------|
 |[Información general sobre el modelo de objetos de Word](../vsto/word-object-model-overview.md)|Ofrece una visión general de los principales tipos que proporciona el modelo de objetos de Word.|
 |[Automatizar Word con objetos extendidos](../vsto/automating-word-by-using-extended-objects.md)|Proporciona información sobre los objetos extendidos (proporcionados por el [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]) que puede usar en las soluciones de Word.|

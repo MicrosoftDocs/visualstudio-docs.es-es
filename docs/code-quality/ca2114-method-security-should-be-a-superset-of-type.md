@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d83da42a029d746899bfaccf5d62f8856a040611
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 536e676a1b2527c466aae741ca7117be507bfb9a
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68921117"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71232755"
 ---
 # <a name="ca2114-method-security-should-be-a-superset-of-type"></a>CA2114: La seguridad del método debe ser un supraconjunto del tipo
 
@@ -28,9 +28,9 @@ ms.locfileid: "68921117"
 |TypeName|MethodSecurityShouldBeASupersetOfType|
 |Identificador de comprobación|CA2114|
 |Categoría|Microsoft.Security|
-|Cambio problemático|Problemático|
+|Cambio importante|Problemático|
 
-## <a name="cause"></a>Causa
+## <a name="cause"></a>Motivo
 Un tipo tiene seguridad declarativa y uno de sus métodos tiene seguridad declarativa para la misma acción de seguridad, y la acción de seguridad no es una [solicitud de vínculo](/dotnet/framework/misc/link-demands)y los permisos comprobados por el tipo no son un subconjunto de los permisos comprobados por el método.
 
 ## <a name="rule-description"></a>Descripción de la regla

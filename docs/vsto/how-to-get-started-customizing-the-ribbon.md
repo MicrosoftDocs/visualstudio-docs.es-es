@@ -15,25 +15,25 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f164a8f1d1c84725530e7a3afab5e63472ae257e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a9b0f1ef704f5dd1426374e23806e5950ed5f6bb
+ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62967903"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71255863"
 ---
 # <a name="how-to-get-started-customizing-the-ribbon"></a>Procedimiento Introducción a la personalización de la cinta de opciones
-  Para personalizar la cinta de opciones de una aplicación de Microsoft Office, agregue un **cinta (diseñador Visual)** o **cinta (XML)** a un proyecto de Office.
+  Para personalizar la cinta de opciones de una aplicación Microsoft Office, agregue un elemento **cinta (diseñador visual)** o **cinta (XML)** a un proyecto de Office.
 
  [!INCLUDE[appliesto_ribbon](../vsto/includes/appliesto-ribbon-md.md)]
 
-### <a name="to-add-a-ribbon-to-a-project"></a>Para agregar una cinta de opciones a un proyecto
+### <a name="to-add-a-ribbon-to-a-project"></a>Para agregar una cinta a un proyecto
 
-1. En el **proyecto** menú, haga clic en **Agregar nuevo elemento**.
+1. En el menú **proyecto** , haga clic en **Agregar nuevo elemento**.
 
-2. En el **Agregar nuevo elemento** cuadro de diálogo, seleccione **cinta (diseñador Visual)** o **cinta (XML)**. Para obtener más información acerca de estas plantillas, consulte [información general de la cinta de opciones](../vsto/ribbon-overview.md).
+2. En el cuadro de diálogo **Agregar nuevo elemento** , seleccione **cinta (diseñador visual)** o **cinta (XML)** . Para obtener más información acerca de estas plantillas, consulte [información general de la cinta](../vsto/ribbon-overview.md)de opciones.
 
-3. En el **nombre** , escriba un nombre para el elemento de la cinta de opciones.
+3. En el cuadro **nombre** , escriba un nombre para el elemento de la cinta de opciones.
 
     Los nombres no pueden contener los caracteres siguientes:
 
@@ -41,7 +41,7 @@ ms.locfileid: "62967903"
 
    - Porcentaje (%)
 
-   - "Y" comercial (&)
+   - Y comercial (&)
 
    - Asterisco (*)
 
@@ -63,15 +63,15 @@ ms.locfileid: "62967903"
 
    - Espacios iniciales o finales (' ')
 
-   - Nombres reservados para Windows o DOS como ("nul", "aux", "Configurar", "com1", "lpt1" etc.)
+   - Nombres reservados para Windows o DOS como ("NUL", "AUX", "con", "COM1", "LPT1", etc.)
 
 4. Haga clic en **Aceptar**.
 
-   El elemento de la cinta de opciones aparece en **el Explorador de soluciones**. Para obtener información sobre los pasos siguientes, vea [información general de la cinta de opciones](../vsto/ribbon-overview.md).
+   El elemento de la cinta de opciones aparece en **Explorador de soluciones**. Para obtener información sobre los pasos siguientes, consulte [información general](../vsto/ribbon-overview.md)de la cinta de opciones.
 
 ## <a name="see-also"></a>Vea también
 - [Obtener acceso a la cinta de opciones en tiempo de ejecución](../vsto/accessing-the-ribbon-at-run-time.md)
 - [Diseñador de la cinta](../vsto/ribbon-designer.md)
 - [Ribbon XML](../vsto/ribbon-xml.md)
-- [Tutorial: Crear una pestaña personalizada usando el Diseñador de cinta de opciones](../vsto/walkthrough-creating-a-custom-tab-by-using-the-ribbon-designer.md)
-- [Tutorial: Crear una pestaña personalizada usando XML de cinta de opciones](../vsto/walkthrough-creating-a-custom-tab-by-using-ribbon-xml.md)
+- [Tutorial: Crear una pestaña personalizada mediante el diseñador de la cinta de opciones](../vsto/walkthrough-creating-a-custom-tab-by-using-the-ribbon-designer.md)
+- [Tutorial: Crear una pestaña personalizada usando XML de la cinta de opciones](../vsto/walkthrough-creating-a-custom-tab-by-using-ribbon-xml.md)

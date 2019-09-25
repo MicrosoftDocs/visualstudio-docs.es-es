@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b655609548d3de293abe2adc0ec3fb5c6fcf297b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 1721fd52c00c5b312c88f19d48b668b12d28f050
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62546113"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71234492"
 ---
 # <a name="ca1506-avoid-excessive-class-coupling"></a>CA1506: Evitar el acoplamiento excesivo de clases
 
@@ -27,26 +27,26 @@ ms.locfileid: "62546113"
 |-|-|
 |TypeName|AvoidExcessiveClassCoupling|
 |Identificador de comprobación|CA1506|
-|Categoría|Microsoft.Maintainability|
-|Cambio problemático|Problemático|
+|Categoría|Microsoft. mantenibilidad|
+|Cambio importante|Problemático|
 
 ## <a name="cause"></a>Motivo
 
-Un tipo o método está emparejada con muchos otros tipos.
+Un tipo o un método se acopla con muchos otros tipos.
 
 ## <a name="rule-description"></a>Descripción de la regla
 
 Esta regla mide el acoplamiento de clase contando el número de referencias de tipo únicas que contiene un tipo o método.
 
-Tipos y métodos que tienen un alto grado de acoplamiento de clases pueden ser difíciles de mantener. Es una buena práctica para tener tipos y métodos que exhiban cohesión baja acoplamiento flexible y alta.
+Los tipos y métodos que tienen un alto grado de acoplamiento de clases pueden ser difíciles de mantener. Es recomendable tener tipos y métodos que muestren un acoplamiento bajo y una cohesión alta.
 
 ## <a name="how-to-fix-violations"></a>Cómo corregir infracciones
 
-Para corregir esta infracción, intente volver a diseñar el tipo o método para reducir el número de tipos al que está acoplado.
+Para corregir esta infracción, intente rediseñar el tipo o el método para reducir el número de tipos a los que está acoplado.
 
-## <a name="when-to-suppress-warnings"></a>Cuándo Suprimir advertencias
+## <a name="when-to-suppress-warnings"></a>Cuándo suprimir advertencias
 
-Excluir esta advertencia cuando el tipo o método se considera fácil de mantener a pesar de su gran número de dependencias en otros tipos.
+Excluya esta advertencia cuando el tipo o el método se considere mantenible a pesar de su gran número de dependencias en otros tipos.
 
 ## <a name="see-also"></a>Vea también
 

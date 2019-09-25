@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: e2c7e7efe348526661b9de74b3631e6795608b99
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 2dca4a038dcd5809863037daf7a96811fb60df05
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68921343"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71233572"
 ---
 # <a name="ca1814-prefer-jagged-arrays-over-multidimensional"></a>CA1814: Preferir matrices escalonadas antes que multidimensionales
 
@@ -31,9 +31,9 @@ ms.locfileid: "68921343"
 |TypeName|PreferJaggedArraysOverMultidimensional|
 |Identificador de comprobación|CA1814|
 |Categoría|Microsoft.Performance|
-|Cambio problemático|Problemático|
+|Cambio importante|Problemático|
 
-## <a name="cause"></a>Causa
+## <a name="cause"></a>Motivo
 Un miembro se declara como una matriz multidimensional.
 
 ## <a name="rule-description"></a>Descripción de la regla

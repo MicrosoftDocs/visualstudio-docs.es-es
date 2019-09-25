@@ -1,5 +1,5 @@
 ---
-title: Diseñador de flujo de trabajo - Diseñador de actividades Persist
+title: Diseñador de flujo de trabajo el diseñador de actividades Persist
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -10,30 +10,30 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2c97d916d00d1c976b4e27381f55e42cbb7cb0db
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 7be70d18b1fc8ff12e2d1fb177b41775954334ed
+ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63004125"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71254845"
 ---
 # <a name="persist-activity-designer"></a>Diseñador de actividades Persist
 
-El **Persist** Diseñador de actividad se usa para crear y configurar un <xref:System.Activities.Statements.Persist> actividad.
+El diseñador de actividades **Persist** se usa para crear y configurar <xref:System.Activities.Statements.Persist> una actividad.
 
 ## <a name="the-persist-activity"></a>Actividad Persist
 
-La actividad <xref:System.Activities.Statements.Persist> guarda un flujo de trabajo en el disco, si es posible. La actividad <xref:System.Activities.Statements.Persist> no se puede ejecutar en una zona que no sea de persistencia como, por ejemplo, dentro de una actividad <xref:System.Activities.Statements.TransactionScope>. Si utiliza una actividad <xref:System.Activities.Statements.Persist> en un ámbito que no sea de persistencia, se produce una excepción en tiempo de ejecución.
+La actividad <xref:System.Activities.Statements.Persist> guarda un flujo de trabajo en el disco, si es posible. La actividad <xref:System.Activities.Statements.Persist> no se puede ejecutar en una zona que no sea de persistencia como, por ejemplo, dentro de una actividad <xref:System.Activities.Statements.TransactionScope>. Si utiliza una <xref:System.Activities.Statements.Persist> actividad en un ámbito de no persistencia, se produce una excepción en tiempo de ejecución.
 
 ### <a name="using-the-persist-activity-designer"></a>Utilizar el diseñador de actividades Persist
 
-El **Persist** Diseñador de actividad puede encontrarse en el **en tiempo de ejecución** categoría de la **cuadro de herramientas**, que se tiene acceso haciendo clic en el **cuadro de herramientas** ficha (como alternativa, seleccione **cuadro de herramientas** desde el **vista** menú o CTRL + ALT + X.)
+El diseñador de actividades **Persist** se puede encontrar en la categoría **tiempo de ejecución** del **cuadro de herramientas**, al que se tiene acceso al hacer clic en la pestaña cuadro de **herramientas** . (de forma alternativa, seleccione **cuadro de herramientas** en el menú **Ver** o Ctrl + Alt + X).
 
-El **Persist** Diseñador de actividad se puede arrastrar desde el **cuadro de herramientas** y colocar en la superficie del Diseñador de flujo de trabajo donde se coloquen normalmente las actividades, tal como en un <xref:System.Activities.Statements.Sequence>. Esto crea un <xref:System.Activities.Statements.Persist> actividad con un valor predeterminado **DisplayName** de Persist. El <xref:System.Activities.Activity.DisplayName%2A> se pueden editar en el encabezado de la **Persist** Diseñador de actividad o en el **DisplayName** cuadro de la cuadrícula de propiedades.
+El diseñador de actividades **Persist** se puede arrastrar desde el **cuadro de herramientas** y colocarlo en la superficie diseñador de flujo de trabajo, donde se coloquen normalmente las actividades <xref:System.Activities.Statements.Sequence>, como en una. Esto crea una <xref:System.Activities.Statements.Persist> actividad con un valor **displayName** predeterminado de Persist. Se puede editar en el encabezado del diseñador de actividades Persist o en el cuadro **displayName** de la cuadrícula de propiedades. <xref:System.Activities.Activity.DisplayName%2A>
 
 ### <a name="the-persist-properties"></a>Propiedades Persist
 
-En la tabla siguiente se muestran las propiedades <xref:System.Activities.Statements.Persist> y se describe cómo se utilizan en el diseñador. Estas propiedades se pueden editar en cuadrícula de propiedades y algunas de ellas se pueden editar en la superficie del Diseñador de flujo de trabajo.
+En la tabla siguiente se muestran las propiedades <xref:System.Activities.Statements.Persist> y se describe cómo se utilizan en el diseñador. Estas propiedades se pueden editar en la cuadrícula de propiedades y algunas de ellas se pueden editar en Diseñador de flujo de trabajo superficie.
 
 |Nombre de la propiedad|Obligatorio|Uso|
 |-|--------------|-|

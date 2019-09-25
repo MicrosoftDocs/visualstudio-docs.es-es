@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0ecc30f3fe16b283c0eb9cc1f369458bb1d7f952
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 3b5bd062ca37ae477f5ab7d52d56fd7e4b4fb71b
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68920808"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71232493"
 ---
 # <a name="ca2123-override-link-demands-should-be-identical-to-base"></a>CA2123: Las peticiones de vínculos de invalidaciones deben ser idénticas a la base
 
@@ -28,9 +28,9 @@ ms.locfileid: "68920808"
 |TypeName|OverrideLinkDemandsShouldBeIdenticalToBase|
 |Identificador de comprobación|CA2123|
 |Categoría|Microsoft.Security|
-|Cambio problemático|Problemático|
+|Cambio importante|Problemático|
 
-## <a name="cause"></a>Causa
+## <a name="cause"></a>Motivo
 Un método público o protegido en un tipo público invalida un método o implementa una interfaz, y no tiene las mismas [peticiones de vínculo](/dotnet/framework/misc/link-demands) que la interfaz o el método virtual.
 
 ## <a name="rule-description"></a>Descripción de la regla

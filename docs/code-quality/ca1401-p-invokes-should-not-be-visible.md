@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: e26daf68e0031358605427b310bb7284d43baf1b
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: d4a0a1c001407d947988497c422fdb8e88dd7c83
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68922134"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71234893"
 ---
 # <a name="ca1401-pinvokes-should-not-be-visible"></a>CA1401: Los elementos P/Invoke no deben estar visibles
 
@@ -31,9 +31,9 @@ ms.locfileid: "68922134"
 |TypeName|PInvokesShouldNotBeVisible|
 |Identificador de comprobación|CA1401|
 |Categoría|Microsoft.Interoperability|
-|Cambio problemático|Problemático|
+|Cambio importante|Problemático|
 
-## <a name="cause"></a>Causa
+## <a name="cause"></a>Motivo
 Un método público o protegido en un tipo público tiene el <xref:System.Runtime.InteropServices.DllImportAttribute?displayProperty=fullName> atributo (también implementado por `Declare` la palabra [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]clave en).
 
 ## <a name="rule-description"></a>Descripción de la regla

@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 430ed0b23d62bd46a9764bfb0a3834e0decd476b
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: be0e1b4865b19930f8ddf7163a36b71123bb3a55
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68922593"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71235708"
 ---
 # <a name="ca1048-do-not-declare-virtual-members-in-sealed-types"></a>CA1048: No declarar miembros virtuales en tipos sellados
 
@@ -28,9 +28,9 @@ ms.locfileid: "68922593"
 |TypeName|DoNotDeclareVirtualMembersInSealedTypes|
 |Identificador de comprobación|CA1048|
 |Categoría|Microsoft.Design|
-|Cambio problemático|Problemático|
+|Cambio importante|Problemático|
 
-## <a name="cause"></a>Causa
+## <a name="cause"></a>Motivo
 Un tipo público está sellado y declara un método que es Both `virtual` (`Overridable` en Visual Basic) y no final. Esta regla no notifica las infracciones de los tipos de delegado, que deben seguir este patrón.
 
 ## <a name="rule-description"></a>Descripción de la regla

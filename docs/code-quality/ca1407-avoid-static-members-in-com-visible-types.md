@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 631be1a93318cd24af4251fefbc710294fa52bf7
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 57450f80a8c630e2186de8804f8bb88974564e46
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68922008"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71234878"
 ---
 # <a name="ca1407-avoid-static-members-in-com-visible-types"></a>CA1407: Evitar los miembros estáticos en tipos visibles a través de COM
 
@@ -28,9 +28,9 @@ ms.locfileid: "68922008"
 |TypeName|AvoidStaticMembersInComVisibleTypes|
 |Identificador de comprobación|CA1407|
 |Categoría|Microsoft.Interoperability|
-|Cambio problemático|Poco problemático|
+|Cambio importante|Poco problemático|
 
-## <a name="cause"></a>Causa
+## <a name="cause"></a>Motivo
 Un tipo que está marcado específicamente como visible para el modelo de objetos componentes (com) `public``static` contiene un método.
 
 ## <a name="rule-description"></a>Descripción de la regla
@@ -67,7 +67,7 @@ Es seguro suprimir una advertencia de esta regla si un cliente com no requiere a
 
 ## <a name="example-violation"></a>Ejemplo de infracción
 
-### <a name="description"></a>DESCRIPCIÓN
+### <a name="description"></a>Descripción
 En el ejemplo siguiente se `static` muestra un método que infringe esta regla.
 
 ### <a name="code"></a>Código
@@ -78,7 +78,7 @@ En este ejemplo, no se puede llamar al método **book. FromPages** desde com.
 
 ## <a name="example-fix"></a>Corrección de ejemplo
 
-### <a name="description"></a>DESCRIPCIÓN
+### <a name="description"></a>Descripción
 Para corregir la infracción en el ejemplo anterior, podría cambiar el método a un método de instancia, pero esto no tiene sentido en esta instancia. Una solución mejor es aplicar `ComVisible(false)` explícitamente al método para que resulte claro a otros desarrolladores que el método no se puede visualizar desde com.
 
 El siguiente ejemplo se <xref:System.Runtime.InteropServices.ComRegisterFunctionAttribute> aplica al método.

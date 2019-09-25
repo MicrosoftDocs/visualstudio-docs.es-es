@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 8422427997db291aa24bc8a8bacfdc59abe35998
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 5cb5631da1bcf455874d459a69216b45062a5754
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68923072"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71236222"
 ---
 # <a name="ca1019-define-accessors-for-attribute-arguments"></a>CA1019: Definir descriptores de acceso para los argumentos de atributo
 
@@ -31,9 +31,9 @@ ms.locfileid: "68923072"
 |TypeName|DefineAccessorsForAttributeArguments|
 |Identificador de comprobación|CA1019|
 |Categoría|Microsoft.Design|
-|Cambio problemático|Poco problemático|
+|Cambio importante|Poco problemático|
 
-## <a name="cause"></a>Causa
+## <a name="cause"></a>Motivo
 En su constructor, un atributo define los argumentos que no tienen las propiedades correspondientes.
 
 ## <a name="rule-description"></a>Descripción de la regla

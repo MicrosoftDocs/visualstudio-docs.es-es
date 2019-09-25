@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 9a09d06a521c4751e3aea78b72b99a8126f4e7ff
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: f4c5f9c001505a76f19f2d675d552124c611f3d5
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68923251"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71236628"
 ---
 # <a name="ca1004-generic-methods-should-provide-type-parameter"></a>CA1004: Los métodos genéricos deben proporcionar un parámetro de tipo
 
@@ -31,9 +31,9 @@ ms.locfileid: "68923251"
 |TypeName|GenericMethodsShouldProvideTypeParameter|
 |Identificador de comprobación|CA1004|
 |Categoría|Microsoft.Design|
-|Cambio problemático|Problemático|
+|Cambio importante|Problemático|
 
-## <a name="cause"></a>Causa
+## <a name="cause"></a>Motivo
 La firma de parámetro de un método genérico visible externamente no contiene tipos que se corresponden con todos los parámetros de tipo del método.
 
 ## <a name="rule-description"></a>Descripción de la regla

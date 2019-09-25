@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5f8a672056c8663c2e27ec730e542083aee9738f
-ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
+ms.openlocfilehash: b3c6298c2186b6a73b4a7ef441b5f4c42c90ff6a
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "66714983"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71231060"
 ---
 # <a name="ca2228-do-not-ship-unreleased-resource-formats"></a>CA2228: No enviar formatos de recursos no lanzados
 
@@ -28,20 +28,20 @@ ms.locfileid: "66714983"
 |TypeName|DoNotShipUnreleasedResourceFormats|
 |Identificador de comprobación|CA2228|
 |Categoría|Microsoft.Usage|
-|Cambio problemático|No trascendental|
+|Cambio importante|Poco problemático|
 
 ## <a name="cause"></a>Motivo
 
-Un archivo de recursos se generó con una versión de .NET que no se admite actualmente.
+Un archivo de recursos se compiló con una versión de .NET que no se admite actualmente.
 
 ## <a name="rule-description"></a>Descripción de la regla
 
-Archivos de recursos que se compilaron con versiones preliminares de .NET no se podrían utilizables las versiones compatibles de. NET.
+Los archivos de recursos que se compilaron con versiones preliminares de .NET podrían no ser utilizados por las versiones compatibles de .NET.
 
 ## <a name="how-to-fix-violations"></a>Cómo corregir infracciones
 
-Para corregir una infracción de esta regla, genere el recurso utilizando una versión compatible de. NET.
+Para corregir una infracción de esta regla, compile el recurso con una versión compatible de .NET.
 
-## <a name="when-to-suppress-warnings"></a>Cuándo Suprimir advertencias
+## <a name="when-to-suppress-warnings"></a>Cuándo suprimir advertencias
 
 No suprima las advertencias de esta regla.

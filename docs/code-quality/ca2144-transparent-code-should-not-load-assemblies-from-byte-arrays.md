@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9ff77d02ef9778112f5229e8104e9a1c1a1cde87
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 33edff9b22559799cef4ad7e03058a5eb212182b
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68920435"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71232007"
 ---
 # <a name="ca2144-transparent-code-should-not-load-assemblies-from-byte-arrays"></a>CA2144: El código transparente no debe cargar ensamblados desde matrices de bytes
 
@@ -24,9 +24,9 @@ ms.locfileid: "68920435"
 |TypeName|TransparentMethodsShouldNotLoadAssembliesFromByteArrays|
 |Identificador de comprobación|CA2144|
 |Categoría|Microsoft.Security|
-|Cambio problemático|Problemático|
+|Cambio importante|Problemático|
 
-## <a name="cause"></a>Causa
+## <a name="cause"></a>Motivo
 Un método transparente carga un ensamblado desde una matriz de bytes mediante uno de los métodos siguientes:
 
 - <xref:System.Reflection.Assembly.Load%2A>

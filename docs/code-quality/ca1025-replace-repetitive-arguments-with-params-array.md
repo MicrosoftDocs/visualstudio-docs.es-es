@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5014bfe809cb5d56a22e971833128d1f48d77319
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: f65d64dd4e881c41b17cd7cb9dc072a6fe800766
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68922966"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71236144"
 ---
 # <a name="ca1025-replace-repetitive-arguments-with-params-array"></a>CA1025: Reemplazar argumentos repetitivos por una matriz de parámetros
 
@@ -28,9 +28,9 @@ ms.locfileid: "68922966"
 |TypeName|ReplaceRepetitiveArgumentsWithParamsArray|
 |Identificador de comprobación|CA1025|
 |Categoría|Microsoft.Design|
-|Cambio problemático|Poco problemático|
+|Cambio importante|Poco problemático|
 
-## <a name="cause"></a>Causa
+## <a name="cause"></a>Motivo
 Un método público o protegido en un tipo público tiene más de tres parámetros y los tres últimos parámetros son del mismo tipo.
 
 ## <a name="rule-description"></a>Descripción de la regla

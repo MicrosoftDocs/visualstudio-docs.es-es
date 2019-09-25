@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 416e45337dafd11a00e98b9adda9f16b02139f9c
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 8a93f776ac6e133b0ebf79d1dfa56f802ff66e5f
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68921651"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71232779"
 ---
 # <a name="ca2111-pointers-should-not-be-visible"></a>CA2111: Los punteros no deben estar visibles
 
@@ -28,9 +28,9 @@ ms.locfileid: "68921651"
 |TypeName|PointersShouldNotBeVisible|
 |Identificador de comprobación|CA2111|
 |Categoría|Microsoft.Security|
-|Cambio problemático|Problemático|
+|Cambio importante|Problemático|
 
-## <a name="cause"></a>Causa
+## <a name="cause"></a>Motivo
 Un campo público o <xref:System.IntPtr?displayProperty=fullName> protegido <xref:System.UIntPtr?displayProperty=fullName> o no es de solo lectura.
 
 ## <a name="rule-description"></a>Descripción de la regla

@@ -16,32 +16,32 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 37633d02f4b7a9a140b41058a39369fde7f64002
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 160897a37ff6a8b335479b42a80f4186f176cab6
+ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62951152"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71254404"
 ---
 # <a name="controls-on-office-documents"></a>Controles en documentos de Office
   Puede utilizar Office Development Tools en Visual Studio para agregar controles de formularios Windows Forms y *controles host* a documentos de Word y hojas de cálculo de Excel. Los controles host son objetos que extienden varios objetos de interfaz de usuario (IU) en los modelos de objetos de Word y Excel.
 
  [!INCLUDE[appliesto_controls](../vsto/includes/appliesto-controls-md.md)]
 
- Al desarrollar proyectos de complemento VSTO para Excel o Word, puede agregar estos controles mediante programación a cualquier documento o libro abierto en tiempo de ejecución.
+ Al desarrollar proyectos de complementos de VSTO para Excel o Word, puede agregar estos controles mediante programación a cualquier documento o libro abierto en tiempo de ejecución.
 
  Al desarrollar proyectos de nivel de documento para Excel o Word, puede agregar estos controles mediante programación en tiempo de ejecución, o puede utilizar el diseñador de Visual Studio para agregar los controles al documento o libro del proyecto en tiempo de diseño.
 
 ## <a name="in-this-section"></a>En esta sección
-- [Elementos host y la información general sobre controles de host](../vsto/host-items-and-host-controls-overview.md)
+- [Información general sobre elementos y controles host](../vsto/host-items-and-host-controls-overview.md)
 
  Describe la funcionalidad de los elementos host y los controles host, incluida la programación con eventos, el enlace de controles a datos, y en qué se diferencian los controles de los objetos nativos.
 
-- [Limitaciones de programación de elementos host y controles host](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)
+- [Limitaciones de programación de elementos y controles host](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)
 
  Describe los problemas que pueden surgir al utilizar elementos host y controles host en el código.
 
-- [Controles de Windows Forms en información general sobre documentos de Office](../vsto/windows-forms-controls-on-office-documents-overview.md)
+- [Información general sobre los controles de Windows Forms en documentos de Office](../vsto/windows-forms-controls-on-office-documents-overview.md)
 
  Proporciona información acerca del uso de controles de formularios Windows Forms en documentos de Excel y Word y cómo se diferencian de los controles de un formulario Windows Forms.
 

@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 78917bcd4c67e1da205595bac07c8e0e5947318d
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 82a1ed8610ce84279f5fde3b802d976a3e766d99
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68923060"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71236250"
 ---
 # <a name="ca1018-mark-attributes-with-attributeusageattribute"></a>CA1018: Marcar atributos con AttributeUsageAttribute
 
@@ -31,9 +31,9 @@ ms.locfileid: "68923060"
 |TypeName|MarkAttributesWithAttributeUsage|
 |Identificador de comprobación|CA1018|
 |Categoría|Microsoft.Design|
-|Cambio problemático|Problemático|
+|Cambio importante|Problemático|
 
-## <a name="cause"></a>Causa
+## <a name="cause"></a>Motivo
 El <xref:System.AttributeUsageAttribute?displayProperty=fullName> atributo no está presente en el atributo personalizado.
 
 ## <a name="rule-description"></a>Descripción de la regla
@@ -42,7 +42,7 @@ Al definir un atributo personalizado, márquelo <xref:System.AttributeUsageAttri
 La <xref:System.AttributeTargets?displayProperty=fullName> enumeración define los destinos que se pueden especificar para un atributo personalizado. Si se omite <xref:System.AttributeUsageAttribute>, el atributo personalizado será válido para todos los destinos, tal y como se `All` define en <xref:System.AttributeTargets> el valor de enumeración.
 
 ## <a name="how-to-fix-violations"></a>Cómo corregir infracciones
-Para corregir una infracción de esta regla, especifique los destinos para el atributo <xref:System.AttributeUsageAttribute>mediante. Consulte el ejemplo siguiente.
+Para corregir una infracción de esta regla, especifique los destinos para el atributo <xref:System.AttributeUsageAttribute>mediante. Vea el ejemplo siguiente.
 
 ## <a name="when-to-suppress-warnings"></a>Cuándo suprimir advertencias
 Debe corregir una infracción de esta regla en lugar de excluir el mensaje. Incluso si el atributo hereda <xref:System.AttributeUsageAttribute>, el atributo debe estar presente para simplificar el mantenimiento del código.

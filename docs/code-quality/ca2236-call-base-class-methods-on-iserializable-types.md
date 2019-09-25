@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 3f0075a6296e839030448c0209c77f1717a5fcb1
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: a9a3070abc1f2bab3f3658589db54b656a635e2b
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68920120"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71238077"
 ---
 # <a name="ca2236-call-base-class-methods-on-iserializable-types"></a>CA2236: Llamar a métodos de clase base en tipos ISerializable
 
@@ -31,9 +31,9 @@ ms.locfileid: "68920120"
 |TypeName|CallBaseClassMethodsOnISerializableTypes|
 |Identificador de comprobación|CA2236|
 |Categoría|Microsoft.Usage|
-|Cambio problemático|No trascendental|
+|Cambio importante|Poco problemático|
 
-## <a name="cause"></a>Causa
+## <a name="cause"></a>Motivo
 Un tipo se deriva de un tipo que implementa la <xref:System.Runtime.Serialization.ISerializable?displayProperty=fullName> interfaz y se cumple una de las condiciones siguientes:
 
 - El tipo implementa el constructor de serialización, es decir, un constructor con la <xref:System.Runtime.Serialization.SerializationInfo?displayProperty=fullName>firma <xref:System.Runtime.Serialization.StreamingContext?displayProperty=fullName> del parámetro, pero no llama al constructor de serialización del tipo base.

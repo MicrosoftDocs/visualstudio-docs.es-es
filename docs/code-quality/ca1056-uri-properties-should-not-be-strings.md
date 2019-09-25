@@ -18,12 +18,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 2d9ff79bc7e276e4070a1df1760c0cfde7ed28b1
-ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
+ms.openlocfilehash: 71e365fa0891e9cb01f7a2860a9c2f13b78072b3
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69547341"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71235533"
 ---
 # <a name="ca1056-uri-properties-should-not-be-strings"></a>CA1056: Las propiedades URI no deben ser cadenas
 
@@ -32,9 +32,9 @@ ms.locfileid: "69547341"
 |TypeName|UriPropertiesShouldNotBeStrings|
 |Identificador de comprobación|CA1056|
 |Categoría|Microsoft.Design|
-|Cambio problemático|Problemático|
+|Cambio importante|Problemático|
 
-## <a name="cause"></a>Causa
+## <a name="cause"></a>Motivo
 
 Un tipo declara una propiedad de cadena cuyo nombre contiene "URI", "URI", "urn", "urn", "URL" o "URL".
 

@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9f8a02ae357dbf36cb4d3e4bd21aaad0fed3a320
-ms.sourcegitcommit: 32144a09ed46e7223ef7dcab647a9f73afa2dd55
+ms.openlocfilehash: 7407fcbe035d02992f414027114d69c257f5f390
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/05/2019
-ms.locfileid: "67586584"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71232922"
 ---
 # <a name="ca2105-array-fields-should-not-be-read-only"></a>CA2105: Los campos de matrices no deben ser de solo lectura
 
@@ -28,35 +28,35 @@ ms.locfileid: "67586584"
 |TypeName|ArrayFieldsShouldNotBeReadOnly|
 |Identificador de comprobación|CA2105|
 |Categoría|Microsoft.Security|
-|Cambio problemático|Problemático|
+|Cambio importante|Problemático|
 
 ## <a name="cause"></a>Motivo
 
-Se declara un campo público o protegido que contiene una matriz de solo lectura.
+Un campo público o protegido que contiene una matriz se declara como de solo lectura.
 
 ## <a name="rule-description"></a>Descripción de la regla
 
-Al aplicar el `readonly` (`ReadOnly` en [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]) no se puede cambiar el modificador en un campo que contiene una matriz, el campo para hacer referencia a una matriz distinta. Sin embargo, se pueden cambiar los elementos de la matriz almacenados en un campo de solo lectura. Código que toma decisiones o realiza operaciones que se basan en los elementos de una matriz de solo lectura que se puede acceder públicamente podría contener una vulnerabilidad de seguridad explotable.
+Al aplicar el `readonly` modificador`ReadOnly` ( [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]en) a un campo que contiene una matriz, el campo no se puede cambiar para hacer referencia a una matriz diferente. Sin embargo, se pueden cambiar los elementos de la matriz almacenados en un campo de solo lectura. El código que toma decisiones o realiza operaciones que se basan en los elementos de una matriz de solo lectura a la que se puede tener acceso públicamente podría contener una vulnerabilidad de seguridad explotable.
 
-Tenga en cuenta que también tiene un campo público infringe la regla de diseño [CA1051: No declarar campos de instancia visibles](../code-quality/ca1051-do-not-declare-visible-instance-fields.md).
+Tenga en cuenta que tener un campo público también infringe la regla [de diseño CA1051: No declare campos](../code-quality/ca1051-do-not-declare-visible-instance-fields.md)de instancia visibles.
 
 ## <a name="how-to-fix-violations"></a>Cómo corregir infracciones
 
-Para corregir la vulnerabilidad de seguridad identificada por esta regla, no confíe en el contenido de una matriz de solo lectura que se puede acceder públicamente. Se recomienda encarecidamente que utilice uno de los procedimientos siguientes:
+Para solucionar la vulnerabilidad de seguridad que se identifica mediante esta regla, no confíe en el contenido de una matriz de solo lectura a la que se pueda tener acceso públicamente. Se recomienda encarecidamente que use uno de los procedimientos siguientes:
 
-- Reemplace la matriz con una colección fuertemente tipada que no se puede cambiar. Para obtener más información, consulta <xref:System.Collections.ReadOnlyCollectionBase?displayProperty=fullName>.
+- Reemplace la matriz por una colección fuertemente tipada que no se pueda cambiar. Para obtener más información, consulta <xref:System.Collections.ReadOnlyCollectionBase?displayProperty=fullName>.
 
-- Reemplace el campo público con un método que devuelve un clon de una matriz privada. Dado que el código no se basa en el clon, no hay ningún riesgo si se modifican los elementos.
+- Reemplace el campo público por un método que devuelva un clon de una matriz privada. Dado que el código no se basa en el clon, no hay ningún riesgo si se modifican los elementos.
 
-Si eligió el segundo enfoque, no debe reemplazar el campo de una propiedad; las propiedades que devuelven matrices afectan negativamente al rendimiento. Para obtener más información, consulte [CA1819: Las propiedades no deberían devolver matrices](../code-quality/ca1819-properties-should-not-return-arrays.md).
+Si elige el segundo enfoque, no Reemplace el campo por una propiedad. las propiedades que devuelven matrices afectan negativamente al rendimiento. Para obtener más información, [vea CA1819: Las propiedades no deben devolver matrices](../code-quality/ca1819-properties-should-not-return-arrays.md).
 
-## <a name="when-to-suppress-warnings"></a>Cuándo Suprimir advertencias
+## <a name="when-to-suppress-warnings"></a>Cuándo suprimir advertencias
 
-Exclusión de una advertencia de esta regla no es recomendable. Se producen casi no hay escenarios donde el contenido de un campo de solo lectura no es importante. Si este es el caso con su escenario, quite el `readonly` modificador en lugar de excluir el mensaje.
+No se recomienda la exclusión de una advertencia de esta regla. Casi no hay escenarios en los que el contenido de un campo de solo lectura no sea importante. Si este es el caso del escenario, quite el `readonly` modificador en lugar de excluir el mensaje.
 
 ## <a name="example-1"></a>Ejemplo 1
 
-Este ejemplo demuestra los peligros de infringir esta regla. La primera parte muestra una biblioteca de ejemplo que tiene un tipo, `MyClassWithReadOnlyArrayField`, que contiene dos campos (`grades` y `privateGrades`) que no son seguras. El campo `grades` es público y, por tanto, es vulnerable a cualquier llamador. El campo `privateGrades` es privado, pero sigue siendo vulnerable porque se devuelve a los autores de llamadas por la `GetPrivateGrades` método. El `securePrivateGrades` campo se expone de forma segura mediante el `GetSecurePrivateGrades` método. Se declara como privado para seguir las buenas prácticas de diseño. La segunda parte muestra código que cambia los valores almacenados en el `grades` y `privateGrades` miembros.
+Este ejemplo muestra los peligros de infringir esta regla. La primera parte muestra una biblioteca de ejemplo que tiene un tipo `MyClassWithReadOnlyArrayField`,, que contiene dos campos`grades` ( `privateGrades`y) que no son seguros. El campo `grades` es público y, por tanto, es vulnerable a cualquier llamador. El campo `privateGrades` es privado pero sigue siendo vulnerable porque lo devuelve el método a los `GetPrivateGrades` llamadores. El campo se expone de forma segura mediante el `GetSecurePrivateGrades` método. `securePrivateGrades` Se declara como privado para seguir los procedimientos de diseño correctos. La segunda parte muestra el código que cambia los valores almacenados `grades` en `privateGrades` los miembros y.
 
 La biblioteca de clases de ejemplo aparece en el ejemplo siguiente.
 
@@ -64,11 +64,11 @@ La biblioteca de clases de ejemplo aparece en el ejemplo siguiente.
 
 ## <a name="example-2"></a>Ejemplo 2
 
-El código siguiente usa la biblioteca de clases de ejemplo para ilustrar los problemas de seguridad de la matriz de solo lectura.
+En el código siguiente se usa la biblioteca de clases de ejemplo para ilustrar los problemas de seguridad de la matriz de solo lectura.
 
 [!code-csharp[FxCop.Security.TestArrayFieldsRead#1](../code-quality/codesnippet/CSharp/ca2105-array-fields-should-not-be-read-only_2.cs)]
 
-El resultado de este ejemplo es:
+La salida de este ejemplo es:
 
 ```text
 Before tampering: Grades: 90, 90, 90 Private Grades: 90, 90, 90  Secure Grades, 90, 90, 90
@@ -77,7 +77,7 @@ After tampering: Grades: 90, 555, 90 Private Grades: 90, 555, 90  Secure Grades,
 
 ## <a name="related-rules"></a>Reglas relacionadas
 
-- [CA2104: No declarar tipos de referencias mutables de solo lectura](../code-quality/ca2104-do-not-declare-read-only-mutable-reference-types.md)
+- [CA2104 No declarar tipos de referencia mutable de solo lectura](../code-quality/ca2104-do-not-declare-read-only-mutable-reference-types.md)
 
 ## <a name="see-also"></a>Vea también
 

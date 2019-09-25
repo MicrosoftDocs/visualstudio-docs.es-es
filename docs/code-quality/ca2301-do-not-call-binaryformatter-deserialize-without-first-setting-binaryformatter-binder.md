@@ -13,12 +13,12 @@ ms.workload:
 f1_keywords:
 - CA2301
 - DoNotCallBinaryFormatterDeserializeWithoutFirstSettingBinaryFormatterBinder
-ms.openlocfilehash: 0291aa4d8130cfdc9b919e0c8430e56ef0f95296
-ms.sourcegitcommit: 673b9364fc9a96b027662dcb4cf5d61cab60ef11
+ms.openlocfilehash: 24bb9c9762a57f7ce97e41a9a8e6c2831a1dde20
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/21/2019
-ms.locfileid: "69891192"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71237766"
 ---
 # <a name="ca2301-do-not-call-binaryformatterdeserialize-without-first-setting-binaryformatterbinder"></a>CA2301: No llamar a BinaryFormatter.Deserialize sin establecer primero BinaryFormatter.Binder
 
@@ -27,9 +27,9 @@ ms.locfileid: "69891192"
 |TypeName|DoNotCallBinaryFormatterDeserializeWithoutFirstSettingBinaryFormatterBinder|
 |Identificador de comprobación|CA2301|
 |Categoría|Microsoft.Security|
-|Cambio problemático|No trascendental|
+|Cambio importante|Poco problemático|
 
-## <a name="cause"></a>Causa
+## <a name="cause"></a>Motivo
 
 Se <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter?displayProperty=nameWithType> llamó a un método de deserialización o se hizo <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter.Binder> referencia a él sin el conjunto de propiedades.
 
@@ -41,7 +41,7 @@ Esta regla busca <xref:System.Runtime.Serialization.Formatters.Binary.BinaryForm
 
 ## <a name="how-to-fix-violations"></a>Cómo corregir infracciones
 
-- Si es posible, use un serializador seguro en su lugar y **no permita que un atacante especifique un tipo arbitrario para**deserializar. Algunos serializadores más seguros incluyen:
+- Si es posible, use un serializador seguro en su lugar y **no permita que un atacante especifique un tipo arbitrario para deserializar**. Algunos serializadores más seguros incluyen:
   - <xref:System.Runtime.Serialization.DataContractSerializer?displayProperty=nameWithType>
   - <xref:System.Runtime.Serialization.Json.DataContractJsonSerializer?displayProperty=nameWithType>
   - <xref:System.Web.Script.Serialization.JavaScriptSerializer?displayProperty=nameWithType>: No usar <xref:System.Web.Script.Serialization.SimpleTypeResolver?displayProperty=nameWithType>nunca. Si debe usar un solucionador de tipos, restrinja los tipos deserializados a una lista de espera.
@@ -121,7 +121,7 @@ Public Class ExampleClass
 End Class
 ```
 
-### <a name="solution"></a>Solución
+### <a name="solution"></a>Soluciones
 
 ```csharp
 using System;

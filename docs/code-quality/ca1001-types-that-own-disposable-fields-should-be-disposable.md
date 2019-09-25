@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: fae67f8c1ffa3b4e6d7cc2f0fbbaf670733f9ff4
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 3bda8fc80992a2246c30e28582eb93b4624ab81c
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68923310"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71236693"
 ---
 # <a name="ca1001-types-that-own-disposable-fields-should-be-disposable"></a>CA1001: Los tipos que poseen campos descartables deben ser descartables
 
@@ -31,9 +31,9 @@ ms.locfileid: "68923310"
 |TypeName|TypesThatOwnDisposableFieldsShouldBeDisposable|
 |Identificador de comprobación|CA1001|
 |Categoría|Microsoft.Design|
-|Cambio problemático|No problemático: Si el tipo no es visible fuera del ensamblado.<br /><br /> Interrumpir: Si el tipo es visible fuera del ensamblado.|
+|Cambio importante|No problemático: Si el tipo no es visible fuera del ensamblado.<br /><br /> Interrumpir: Si el tipo es visible fuera del ensamblado.|
 
-## <a name="cause"></a>Causa
+## <a name="cause"></a>Motivo
 Una clase declara e implementa un campo de instancia que es un <xref:System.IDisposable?displayProperty=fullName> tipo y la clase no implementa. <xref:System.IDisposable>
 
 ## <a name="rule-description"></a>Descripción de la regla

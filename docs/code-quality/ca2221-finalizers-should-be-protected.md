@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e88f22f25ff0620a88685dee93fd5658c302db74
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 827a8ee01575d6d263c8f8ee423de72cfe939e39
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68920241"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71231173"
 ---
 # <a name="ca2221-finalizers-should-be-protected"></a>CA2221: Los finalizadores deben estar protegidos
 
@@ -28,9 +28,9 @@ ms.locfileid: "68920241"
 |TypeName|FinalizersShouldBeProtected|
 |Identificador de comprobación|CA2221|
 |Categoría|Microsoft.Usage|
-|Cambio problemático|No trascendental|
+|Cambio importante|Poco problemático|
 
-## <a name="cause"></a>Causa
+## <a name="cause"></a>Motivo
 Un tipo público implementa un finalizador que no especifica el acceso de familia (protegido).
 
 ## <a name="rule-description"></a>Descripción de la regla

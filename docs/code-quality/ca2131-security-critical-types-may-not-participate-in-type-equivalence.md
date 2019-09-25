@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 521a44b432a5b8ea886b23aab6b39789efe3b1b0
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 802442a71eed3267a71fad9a5a208c9ee82cb556
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68920708"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71232345"
 ---
 # <a name="ca2131-security-critical-types-may-not-participate-in-type-equivalence"></a>CA2131: Los tipos críticos para la seguridad no pueden participar en la equivalencia de tipos
 
@@ -24,9 +24,9 @@ ms.locfileid: "68920708"
 |TypeName|CriticalTypesMustNotParticipateInTypeEquivalence|
 |Identificador de comprobación|CA2131|
 |Categoría|Microsoft.Security|
-|Cambio problemático|Problemático|
+|Cambio importante|Problemático|
 
-## <a name="cause"></a>Causa
+## <a name="cause"></a>Motivo
 Un tipo participa en la equivalencia de tipos y en el propio tipo, o un miembro o campo del tipo, se marca con el <xref:System.Security.SecurityCriticalAttribute> atributo.
 
 ## <a name="rule-description"></a>Descripción de la regla

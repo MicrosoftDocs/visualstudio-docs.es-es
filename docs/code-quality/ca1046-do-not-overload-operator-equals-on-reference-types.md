@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d765bfda87fe184256304b86f145f4f02adb7db6
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 23358d104c891ff9e230f0daad0f5e6ca57b46c2
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68922630"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71235764"
 ---
 # <a name="ca1046-do-not-overload-operator-equals-on-reference-types"></a>CA1046: No sobrecargar el operador de igualdad en los tipos de referencia
 
@@ -28,9 +28,9 @@ ms.locfileid: "68922630"
 |TypeName|DoNotOverrideOperatorEqualsOnReferenceTypes|
 |Identificador de comprobación|CA1046|
 |Categoría|Microsoft.Design|
-|Cambio problemático|Problemático|
+|Cambio importante|Problemático|
 
-## <a name="cause"></a>Causa
+## <a name="cause"></a>Motivo
 Un tipo de referencia público público o anidado sobrecarga el operador de igualdad.
 
 ## <a name="rule-description"></a>Descripción de la regla

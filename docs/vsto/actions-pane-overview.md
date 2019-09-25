@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 6cbade56f80d75e6ab8d735aaf586d45d2dedb42
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 9d2dc3afb69c2febdcd8e59618c43c52ab9294cf
+ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68926681"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71255697"
 ---
 # <a name="actions-pane-overview"></a>Información general del panel de acciones
   Un panel de acciones es un panel de tareas **acciones de documentos** personalizables que se adjunta a un determinado documento de Microsoft Office Word o Microsoft Office libro de Excel. El panel acciones se hospeda dentro del panel de tareas de Office junto con otros paneles de tareas integrados, como el panel de tareas **origen XML** en Excel o el panel de tareas **estilos y formato** de Word. Puede utilizar controles de Windows Forms o WPF para diseñar la interfaz de usuario del panel de acciones.
@@ -40,7 +40,7 @@ ms.locfileid: "68926681"
  [!code-csharp[Trin_VstcoreActionsPaneWord#7](../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneWordCS/ThisDocument.cs#7)]
  [!code-vb[Trin_VstcoreActionsPaneWord#7](../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneWordVB/ThisDocument.vb#7)]
 
- El panel de acciones se vuelve visible en tiempo de ejecución en cuanto se agrega explícitamente un control. Una vez que se muestre el panel de acciones, puede agregar o quitar controles de forma dinámica en respuesta a las acciones del usuario. Normalmente debe agregar el código para mostrar el panel de acciones en el controlador de eventos `Startup` de `ThisDocument` o `ThisWorkbook` para que el panel de acciones esté visible cuando el usuario abra el documento por primera vez. Sin embargo, puede que le interese mostrar el panel de acciones solo como respuesta a una acción del usuario en el documento. Por ejemplo, podría agregar código para el evento `Click` de un control en el documento.
+ El panel de acciones se vuelve visible en tiempo de ejecución desde el momento que usted le agrega un control de forma explícita. Una vez que se muestre el panel de acciones, puede agregar o quitar controles de forma dinámica en respuesta a las acciones del usuario. Normalmente debe agregar el código para mostrar el panel de acciones en el controlador de eventos `Startup` de `ThisDocument` o `ThisWorkbook` para que el panel de acciones esté visible cuando el usuario abra el documento por primera vez. Sin embargo, puede que le interese mostrar el panel de acciones solo como respuesta a una acción del usuario en el documento. Por ejemplo, podría agregar código para el evento `Click` de un control en el documento.
 
 ### <a name="add-multiple-controls-to-the-actions-pane"></a>Agregar varios controles al panel de acciones
  Al agregar varios controles al panel de acciones, debe agrupar los controles en un control de usuario y, a continuación, agregar el control <xref:Microsoft.Office.Tools.ActionsPane.Controls%2A> de usuario a la propiedad. Este proceso incluye los siguientes pasos:
@@ -91,7 +91,7 @@ ms.locfileid: "68926681"
 2. En el grupo **Mostrar u ocultar** , haga clic en el botón de alternancia **acciones de documento** .
 
 ## <a name="program-actions-pane-events"></a>Eventos del panel de acciones de programa
- Puede agregar varios controles de usuario al panel de acciones y, a continuación, escribir código para responder a eventos en el documento mostrando y ocultando los controles de usuario. Si asigna elementos de esquema XML a su documento, puede mostrar determinados controles de usuario en el panel de acciones siempre que el punto de inserción esté dentro de uno de los elementos XML. Para obtener más información, consulte [Cómo Asigne esquemas a documentos de Word dentro de](../vsto/how-to-map-schemas-to-word-documents-inside-visual-studio.md) visual [Studio y cómo: Asignar esquemas a hojas de cálculo en Visual](../vsto/how-to-map-schemas-to-worksheets-inside-visual-studio.md)Studio.
+ Puede agregar varios controles de usuario al panel de acciones y, a continuación, escribir código para responder a eventos en el documento mostrando y ocultando los controles de usuario. Si asigna elementos de esquema XML a su documento, puede mostrar determinados controles de usuario en el panel de acciones siempre que el punto de inserción esté dentro de uno de los elementos XML. Para obtener más información, vea [Cómo: Asigne esquemas a documentos de Word dentro de](../vsto/how-to-map-schemas-to-word-documents-inside-visual-studio.md) visual [Studio y cómo: Asignar esquemas a hojas de cálculo en Visual](../vsto/how-to-map-schemas-to-worksheets-inside-visual-studio.md)Studio.
 
  También puede escribir código para responder a los eventos de cualquier objeto, incluyendo eventos de control host, aplicación o documento. Para obtener más información, vea [Tutorial: Programar contra eventos de un control](../vsto/walkthrough-programming-against-events-of-a-namedrange-control.md)NamedRange.
 
@@ -114,7 +114,7 @@ ms.locfileid: "68926681"
 |FromLeft|Apilar desde la parte izquierda del panel de acciones.|
 |FromRight|Apilar desde la parte derecha del panel de acciones.|
 |FromTop|Apilar desde la parte superior del panel de acciones.|
-|None|Sin orden de apilamiento definido; el desarrollador controla el orden.|
+|Ninguna|Sin orden de apilamiento definido; el desarrollador controla el orden.|
 
  El código siguiente establece la propiedad <xref:Microsoft.Office.Tools.ActionsPane.StackOrder%2A> para que apile los controles de usuario desde la parte superior del panel de acciones.
 
@@ -122,7 +122,7 @@ ms.locfileid: "68926681"
  [!code-vb[Trin_VstcoreActionsPaneExcel#10](../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneExcelVB/ThisWorkbook.vb#10)]
 
 ## <a name="anchor-controls"></a>Delimitar controles
- Si el usuario cambia el tamaño del panel de acciones en tiempo de ejecución, los controles pueden cambiar de tamaño con el panel de acciones. Puede utilizar la propiedad <xref:System.Windows.Forms.Control.Anchor%2A> de un control de Windows Forms para anclar los controles al panel de acciones. También puede anclar de la misma manera los controles de Windows Forms al control de usuario. Para obtener más información, consulte [Cómo Delimite los](/dotnet/framework/winforms/controls/how-to-anchor-controls-on-windows-forms)controles en Windows Forms.
+ Si el usuario cambia el tamaño del panel de acciones en tiempo de ejecución, el tamaño de los controles podría cambiar junto con el panel de acciones. Puede utilizar la propiedad <xref:System.Windows.Forms.Control.Anchor%2A> de un control de Windows Forms para anclar los controles al panel de acciones. También puede anclar de la misma manera los controles de Windows Forms al control de usuario. Para obtener más información, vea [Cómo: Delimite los](/dotnet/framework/winforms/controls/how-to-anchor-controls-on-windows-forms)controles en Windows Forms.
 
 ## <a name="resize-the-actions-pane"></a>Cambiar el tamaño del panel de acciones
  No puede cambiar directamente el tamaño de un <xref:Microsoft.Office.Tools.ActionsPane> porque <xref:Microsoft.Office.Tools.ActionsPane> está incrustado en el panel de tareas. Sin embargo, puede cambiar el ancho del panel de tareas mediante programación estableciendo la propiedad <xref:Microsoft.Office.Core.CommandBar.Width%2A> de la <xref:Microsoft.Office.Core.CommandBar> que representa el panel de tareas. Puede cambiar la altura del panel de tareas si está acoplado horizontalmente o si está flotando.
@@ -141,7 +141,7 @@ ms.locfileid: "68926681"
  [!code-vb[Trin_VstcoreActionsPaneWord#100](../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneWordVB/ThisDocument.vb#100)]
 
 > [!NOTE]
-> Los usuarios finales pueden cambiar manualmente la posición del panel de tareas en cualquier momento. No hay ninguna manera de garantizar que el panel de tareas permanezca acoplado en la posición que indique mediante programación. Sin embargo, puede comprobar los cambios de orientación y asegurarse de que los controles del panel de acciones se apilen en la dirección correcta. Para obtener más información, consulte [Cómo Administrar el diseño de controles en](../vsto/how-to-manage-control-layout-on-actions-panes.md)los paneles de acciones.
+> Los usuarios finales pueden cambiar manualmente la posición del panel de tareas en cualquier momento. No hay ninguna manera de garantizar que el panel de tareas permanezca acoplado en la posición que indique mediante programación. Sin embargo, puede comprobar los cambios de orientación y asegurarse de que los controles del panel de acciones se apilen en la dirección correcta. Para obtener más información, vea [Cómo: Administrar el diseño de controles en](../vsto/how-to-manage-control-layout-on-actions-panes.md)los paneles de acciones.
 
  Establecer las <xref:Microsoft.Office.Tools.ActionsPane.Top%2A> propiedades <xref:Microsoft.Office.Tools.ActionsPane.Left%2A> y de <xref:Microsoft.Office.Tools.ActionsPane> no cambia su posición porque el <xref:Microsoft.Office.Tools.ActionsPane> objeto está incrustado en el panel de tareas.
 
@@ -154,7 +154,7 @@ ms.locfileid: "68926681"
 - [Usar controles de WPF en soluciones de Office](../vsto/using-wpf-controls-in-office-solutions.md)
 - [Personalización de la interfaz de usuario de Office](../vsto/office-ui-customization.md)
 - [Acceso global a objetos en proyectos de Office](../vsto/global-access-to-objects-in-office-projects.md)
-- [Procedimientos: Agregar un panel de acciones a documentos de Word o libros de Excel](../vsto/how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks.md)
+- [Cómo: Agregar un panel de acciones a documentos de Word o libros de Excel](../vsto/how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks.md)
 - [Tutorial: Insertar texto en un documento desde un panel de acciones](../vsto/walkthrough-inserting-text-into-a-document-from-an-actions-pane.md)
 - [Tutorial: Enlazar datos a controles en un panel de acciones de Word](../vsto/walkthrough-binding-data-to-controls-on-a-word-actions-pane.md)
 - [Tutorial: Enlazar datos a controles en un panel de acciones de Excel](../vsto/walkthrough-binding-data-to-controls-on-an-excel-actions-pane.md)

@@ -18,12 +18,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 74484c5f014c9a677c321a0d9fed649f016ea3c9
-ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
+ms.openlocfilehash: b52d98716a774c05ca085e2b7023a5d1faa69baa
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69546883"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71237965"
 ---
 # <a name="ca2234-pass-systemuri-objects-instead-of-strings"></a>CA2234: Pasar objetos System.Uri en lugar de cadenas
 
@@ -32,9 +32,9 @@ ms.locfileid: "69546883"
 |TypeName|PassSystemUriObjectsInsteadOfStrings|
 |Identificador de comprobación|CA2234|
 |Categoría|Microsoft.Usage|
-|Cambio problemático|No trascendental|
+|Cambio importante|Poco problemático|
 
-## <a name="cause"></a>Causa
+## <a name="cause"></a>Motivo
 
 Se realiza una llamada a un método que tiene un parámetro de cadena cuyo nombre contiene "URI", "URI", "urn", "urn", "URL" o "URL" y el tipo declarativo del método contiene una sobrecarga de método correspondiente que tiene <xref:System.Uri?displayProperty=fullName> un parámetro.
 

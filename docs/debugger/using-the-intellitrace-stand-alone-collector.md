@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1e5219e6e3977be59d89b7835413092f1fbeb200
-ms.sourcegitcommit: 5694c5236fa32ba7f5bc1236a853f725ec7557e9
+ms.openlocfilehash: 5fe671b10a701bb355a476ff9bc577bb4cdca71b
+ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "68680632"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71252531"
 ---
 # <a name="using-the-intellitrace-stand-alone-collector-c-visual-basic"></a>Usar el recopilador independiente de IntelliTrace (C#, Visual Basic)
 
@@ -315,7 +315,7 @@ El **recolector independiente IntelliTrace** permite recopilar datos de diagnós
 
   - Puede reducir el tiempo de inicio si deshabilita los eventos que no sean relevantes para la aplicación. Por ejemplo, deshabilite los eventos de Windows Workflow en las aplicaciones que no usen Windows Workflow.
 
-  - Puede mejorar el rendimiento de inicio y en tiempo de ejecución si deshabilita los eventos de Registro en las aplicaciones que accedan al Registro, pero que no muestren problemas con la configuración del Registro.
+  - Puede mejorar el rendimiento del inicio y del tiempo de ejecución si deshabilita los eventos del registro para las aplicaciones que tienen acceso al registro pero no los problemas con la configuración del registro.
 
 - Repase los módulos en el plan de recolección para el que IntelliTrace recopila los datos. Edite el plan de recolección para incluir solo los módulos que le interesen:
 

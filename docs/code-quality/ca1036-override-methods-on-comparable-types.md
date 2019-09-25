@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2a4e04e1afdbecdc9c333ea43a52bff3123d448a
-ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
+ms.openlocfilehash: be340314afe36f3a930474f345715965f566b2d4
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69547621"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71236005"
 ---
 # <a name="ca1036-override-methods-on-comparable-types"></a>CA1036: Invalidar métodos en tipos comparables
 
@@ -28,9 +28,9 @@ ms.locfileid: "69547621"
 |TypeName|OverrideMethodsOnComparableTypes|
 |Identificador de comprobación|CA1036|
 |Categoría|Microsoft.Design|
-|Cambio problemático|Poco problemático|
+|Cambio importante|Poco problemático|
 
-## <a name="cause"></a>Causa
+## <a name="cause"></a>Motivo
 
 Un tipo implementa la <xref:System.IComparable?displayProperty=fullName> interfaz y no invalida <xref:System.Object.Equals%2A?displayProperty=fullName> o no sobrecarga el operador específico del lenguaje para la igualdad, desigualdad, menor que o mayor que. La regla no notifica una infracción si el tipo hereda solo una implementación de la interfaz.
 

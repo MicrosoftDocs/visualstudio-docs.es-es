@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: df19d31abe88c6d12bafc933ba740badb832eb16
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: d4495dcbe951edd3e7eaa3b6ff0d2432bc0a7751
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68921071"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71232876"
 ---
 # <a name="ca2106-secure-asserts"></a>CA2106: Proteger las aserciones
 
@@ -28,9 +28,9 @@ ms.locfileid: "68921071"
 |TypeName|SecureAsserts|
 |Identificador de comprobación|CA2106|
 |Categoría|Microsoft.Security|
-|Cambio problemático|Problemático|
+|Cambio importante|Problemático|
 
-## <a name="cause"></a>Causa
+## <a name="cause"></a>Motivo
 Un método valida un permiso y no realiza ninguna comprobación de seguridad en el autor de la llamada.
 
 ## <a name="rule-description"></a>Descripción de la regla

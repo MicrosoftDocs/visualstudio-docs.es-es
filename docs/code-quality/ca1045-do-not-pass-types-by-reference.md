@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6fd0da0f8b04055622b46087ecb9f12b375d9576
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: c6a8fda526647a1a9f7f999928cb08978a61bd04
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68922858"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71235779"
 ---
 # <a name="ca1045-do-not-pass-types-by-reference"></a>CA1045: No pasar tipos por referencia
 
@@ -28,9 +28,9 @@ ms.locfileid: "68922858"
 |TypeName|DoNotPassTypesByReference|
 |Identificador de comprobación|CA1045|
 |Categoría|Microsoft.Design|
-|Cambio problemático|Problemático|
+|Cambio importante|Problemático|
 
-## <a name="cause"></a>Causa
+## <a name="cause"></a>Motivo
 Un método público o protegido en un tipo público tiene un `ref` parámetro que toma un tipo primitivo, un tipo de referencia o un tipo de valor que no es uno de los tipos integrados.
 
 ## <a name="rule-description"></a>Descripción de la regla

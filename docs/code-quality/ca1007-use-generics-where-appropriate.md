@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: ffb18316b5f009a0f2854c8a158e528f15c92326
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 0d7783bea936b04fcb600563dadea6a65ac5ef5e
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68923206"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71236517"
 ---
 # <a name="ca1007-use-generics-where-appropriate"></a>CA1007: Utilizar valores genéricos cuando sea posible
 
@@ -31,9 +31,9 @@ ms.locfileid: "68923206"
 |TypeName|UseGenericsWhereAppropriate|
 |Identificador de comprobación|CA1007|
 |Categoría|Microsoft.Design|
-|Cambio problemático|Problemático|
+|Cambio importante|Problemático|
 
-## <a name="cause"></a>Causa
+## <a name="cause"></a>Motivo
 Un método visible externamente contiene un parámetro de referencia de <xref:System.Object?displayProperty=fullName>tipo y el ensamblado contenedor tiene como destino .NET Framework 2,0.
 
 ## <a name="rule-description"></a>Descripción de la regla

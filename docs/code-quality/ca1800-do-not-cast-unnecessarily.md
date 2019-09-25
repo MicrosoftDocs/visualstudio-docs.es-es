@@ -17,12 +17,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: 942a9911d0dadbf5f130344735ca9aa504cb71fd
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 85d168e97f422a3965096a334cb2a448406604f9
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68921596"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71233842"
 ---
 # <a name="ca1800-do-not-cast-unnecessarily"></a>CA1800: No convertir innecesariamente
 
@@ -31,9 +31,9 @@ ms.locfileid: "68921596"
 |TypeName|DoNotCastUnnecessarily|
 |Identificador de comprobación|CA1800|
 |Categoría|Microsoft.Performance|
-|Cambio problemático|Poco problemático|
+|Cambio importante|Poco problemático|
 
-## <a name="cause"></a>Causa
+## <a name="cause"></a>Motivo
 Un método realiza conversiones duplicadas en uno de sus argumentos o variables locales.
 
 Para realizar un análisis completo de esta regla, el ensamblado probado se debe compilar con la información de depuración y el archivo de base de datos de programa (. pdb) asociado debe estar disponible.

@@ -4,10 +4,10 @@ ms.topic: include
 ms.date: 08/14/2019
 ms.author: johnhart
 ms.openlocfilehash: 38f6de56d26cbcaf8739ea8458d846c5a2daf721
-ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
+ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/16/2019
+ms.lasthandoff: 09/25/2019
 ms.locfileid: "69547986"
 ---
 > [!NOTE]

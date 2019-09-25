@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7d972198898dd1a4cafa5280c129db38bb3e4982
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 704972127130cc7be991213249ff41212fa40676
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68921298"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71233271"
 ---
 # <a name="ca1903-use-only-api-from-targeted-framework"></a>CA1903: Usar solo API de la versión de .NET Framework de destino
 
@@ -28,9 +28,9 @@ ms.locfileid: "68921298"
 |TypeName|UseOnlyApiFromTargetedFramework|
 |Identificador de comprobación|CA1903|
 |Categoría|Microsoft. portabilidad|
-|Cambio problemático|Problemático: cuando se desencadena con la firma de un miembro o tipo visible externamente.<br /><br /> No problemático: cuando se desencadena en el cuerpo de un método.|
+|Cambio importante|Problemático: cuando se desencadena con la firma de un miembro o tipo visible externamente.<br /><br /> No problemático: cuando se desencadena en el cuerpo de un método.|
 
-## <a name="cause"></a>Causa
+## <a name="cause"></a>Motivo
 Un miembro o tipo está utilizando un miembro o tipo que se presentó en una Service Pack que no se incluyó con el marco de trabajo de destino del proyecto.
 
 ## <a name="rule-description"></a>Descripción de la regla

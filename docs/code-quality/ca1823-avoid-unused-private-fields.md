@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 47a2ad3b64055584551a63a2333e29286783d8cf
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 5f0aa23ff93e193ee06509c1cb635404ec827793
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68921357"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71233359"
 ---
 # <a name="ca1823-avoid-unused-private-fields"></a>CA1823: Evitar los campos privados sin utilizar
 
@@ -28,9 +28,9 @@ ms.locfileid: "68921357"
 |TypeName|AvoidUnusedPrivateFields|
 |Identificador de comprobación|CA1823|
 |Categoría|Microsoft.Performance|
-|Cambio problemático|Poco problemático|
+|Cambio importante|Poco problemático|
 
-## <a name="cause"></a>Causa
+## <a name="cause"></a>Motivo
 Esta regla se muestra cuando existe un campo privado en el código, pero no se usa en ninguna ruta de código.
 
 ## <a name="rule-description"></a>Descripción de la regla

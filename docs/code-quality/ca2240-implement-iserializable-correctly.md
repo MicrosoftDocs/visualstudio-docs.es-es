@@ -18,12 +18,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 1a6d9acc3a74505f766fbf9cfe26fc6878fdbb4b
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 2640fddcde0d8777363a3c56e398e7ff307a20c7
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68920043"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71237876"
 ---
 # <a name="ca2240-implement-iserializable-correctly"></a>CA2240: Implementar ISerializable correctamente
 
@@ -32,9 +32,9 @@ ms.locfileid: "68920043"
 |TypeName|ImplementISerializableCorrectly|
 |Identificador de comprobación|CA2240|
 |Categoría|Microsoft.Usage|
-|Cambio problemático|No trascendental|
+|Cambio importante|Poco problemático|
 
-## <a name="cause"></a>Causa
+## <a name="cause"></a>Motivo
 
 Un tipo visible externamente se puede asignar a la <xref:System.Runtime.Serialization.ISerializable?displayProperty=fullName> interfaz y se cumple una de las condiciones siguientes:
 
