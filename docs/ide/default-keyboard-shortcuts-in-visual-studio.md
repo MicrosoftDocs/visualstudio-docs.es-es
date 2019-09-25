@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f6da512f6322bed074b8009d45e569626afcd996
-ms.sourcegitcommit: 0f44ec8ba0263056ad04d2d0dc904ad4206ce8fc
+ms.openlocfilehash: 106a2be4797bc3c442006f74bce98e4f1e8c9a5c
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70766029"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71238213"
 ---
 # <a name="default-keyboard-shortcuts-in-visual-studio"></a>Métodos abreviados de teclado predeterminados de Visual Studio
 
@@ -794,7 +794,7 @@ Estos métodos abreviados de teclado son *globales*, lo que significa que se pue
 | Edit.CollapseCurrentRegion | **Ctrl+M, Ctrl+S** |
 | Edit.CollapseTag | **Ctrl+M, Ctrl+T** |
 | Edit.CollapseToDefinitions | **Ctrl+M, Ctrl+O** (letra "O") |
-| Edit.ContractSelection | **Mayús+Alt +-** (no solo C++) |
+| Edit.ContractSelection | **Mayús+Alt+-** |
 | Edit.CommentSelection | **Ctrl+K, Ctrl+C** |
 | Edit.CompleteWord | **Ctrl+Barra espaciadora**<br /><br /> o<br /><br /> **Alt+Flecha derecha** |
 | Edit.CopyParameterTip | **Ctrl+Mayús+Alt+C** |
@@ -807,7 +807,7 @@ Estos métodos abreviados de teclado son *globales*, lo que significa que se pue
 | Edit.DocumentStartExtend | **Ctrl+Mayús+Inicio** |
 | Edit.ExpandAllOutlining | **Ctrl+M, Ctrl+X** |
 | Edit.ExpandCurrentRegion | **Ctrl+M, Ctrl+E** |
-| Edit.ExpandSelection | **Mayús+Alt+=** (no solo C++) |
+| Edit.ExpandSelection | **Mayús+Alt+=** |
 | Edit.ExpandSelectiontoContainingBlock | **Mayús+Alt+]** |
 | Edit.FormatDocument | **Ctrl+K, Ctrl+D** |
 | Edit.FormatSelection | **Ctrl+K, Ctrl+F** |
