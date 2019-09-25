@@ -9,12 +9,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: 97ed8dda2ea5d338bc7d60be845fafad6a30b47f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a368a9b8f6d25753993a2cc10ea9ca94734d6709
+ms.sourcegitcommit: 53bc4c11b82882ab658e34c65ae374060f823531
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62777589"
+ms.lasthandoff: 09/19/2019
+ms.locfileid: "71128290"
 ---
 # <a name="analyze-resource-consumption-and-ui-thread-activity-xaml"></a>Análisis del consumo de recursos y la actividad del subproceso de interfaz de usuario (XAML)
 
@@ -66,7 +66,7 @@ Después de obtener los datos de la generación de perfiles, puede seguir estos 
 
 1. Vea la información de los gráficos **Uso del subproceso de UI** y **Rendimiento visual (FPS)** y, luego, use las barras de navegación de la escala de tiempo para seleccionar un intervalo de tiempo que quiera analizar.
 
-2. Con la información de los gráficos **Uso del subproceso de UI** o **Rendimiento visual (FPS)**, examine los detalles de la vista **Detalles de la escala de tiempo** para detectar las posibles causas de cualquier falta de capacidad de respuesta aparente.
+2. Con la información de los gráficos **Uso del subproceso de UI** o **Rendimiento visual (FPS)** , examine los detalles de la vista **Detalles de la escala de tiempo** para detectar las posibles causas de cualquier falta de capacidad de respuesta aparente.
 
 ### <a name="BKMK_Report_scenarios_categories_and_events"></a> Informes de escenarios, categorías y eventos
 
@@ -126,5 +126,5 @@ Utilice la barra de herramientas **Detalles de la escala de tiempo** para ordena
 - [WPF team blog: New UI Performance analysis tool for WPF applications](https://blogs.msdn.microsoft.com/wpf/2015/01/16/new-ui-performance-analysis-tool-for-wpf-applications/) (Blog del equipo de WPF: Nueva herramienta de análisis de rendimiento de interfaz de usuario para aplicaciones para WPF)
 - [Procedimientos recomendados de rendimiento para aplicaciones para UWP con C++, C# y Visual Basic](/previous-versions/windows/apps/hh750313\(v\=win.10\))
 - [Optimizar el rendimiento de las aplicaciones WPF](/dotnet/framework/wpf/advanced/optimizing-wpf-application-performance)
-- [Generación de perfiles en Visual Studio](../profiling/index.md)
+- [Generación de perfiles en Visual Studio](../profiling/index.yml)
 - [Primer vistazo a la generación de perfiles](../profiling/profiling-feature-tour.md)

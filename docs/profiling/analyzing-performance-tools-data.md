@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 34cf1d58250568da1ed64ad0f296f1f8efe43e2a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c70e30a8c8367678c6df156e8ea3a5b76889e468
+ms.sourcegitcommit: 53bc4c11b82882ab658e34c65ae374060f823531
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62777311"
+ms.lasthandoff: 09/19/2019
+ms.locfileid: "71128272"
 ---
 # <a name="analyze-performance-tools-data"></a>Analizar datos de herramientas de rendimiento
 Los informes de rendimiento de las herramientas de generación de perfiles [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] le permiten ver y analizar problemas de rendimiento de la aplicación. En esta sección se proporciona información general de los informes de rendimiento y las vistas que pueden utilizarse para examinar los datos de rendimiento.
@@ -41,5 +41,5 @@ Los informes de rendimiento de las herramientas de generación de perfiles [!INC
 
 ## <a name="see-also"></a>Vea también
 - [Explorador de rendimiento](../profiling/performance-explorer.md)
-- [Generación de perfiles en Visual Studio](../profiling/index.md)
+- [Generación de perfiles en Visual Studio](../profiling/index.yml)
 - [Primer vistazo a la generación de perfiles](../profiling/profiling-feature-tour.md)

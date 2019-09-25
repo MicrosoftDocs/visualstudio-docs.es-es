@@ -19,19 +19,19 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 37326bbe44eed15a562f0d28c01eac02973a2487
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 16443b30ccf6ba03a01df0234695d27e4cd909af
+ms.sourcegitcommit: 88f576ac32af31613c1a10c1548275e1ce029f4f
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62789263"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "71186489"
 ---
 # <a name="useenv-devenvexe"></a>/UseEnv (devenv.exe)
 
 Inicia Visual Studio y carga variables de entorno específicas para la compilación.
 
 > [!NOTE]
-> Este modificador se instala con la carga de trabajo **Desarrollo para el escritorio con C++**.
+> Este modificador se instala con la carga de trabajo **Desarrollo para el escritorio con C++** .
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -51,10 +51,10 @@ devenv /UseEnv {SolutionName|ProjectName}
 
 ## <a name="remarks"></a>Comentarios
 
-Este modificador afecta al IDE de Visual Studio en las propiedades del proyecto para **Directorios de VC++**. Si especifica el modificador `/UseEnv`, en el nodo **Directorios de VC++**, se mostrarán los valores de las variables de entorno PATH, INCLUDE, LIBPATH y LIB. (También se muestran valores para **Directorios de archivos de código fuente** y **Excluir directorios**). De lo contrario, el nodo reemplaza las variables de entorno por cinco valores de directorio: **Directorios de archivos ejecutables**, **Directorios de archivos de inclusión**, **Directorios de referencia**, **Directorios de bibliotecas** y **Directorios de biblioteca WinRT**.
+Este modificador afecta al IDE de Visual Studio en las propiedades del proyecto para **Directorios de VC++** . Si especifica el modificador `/UseEnv`, en el nodo **Directorios de VC++** , se mostrarán los valores de las variables de entorno PATH, INCLUDE, LIBPATH y LIB. (También se muestran valores para **Directorios de archivos de código fuente** y **Excluir directorios**). De lo contrario, el nodo reemplaza las variables de entorno por cinco valores de directorio: **Directorios de archivos ejecutables**, **Directorios de archivos de inclusión**, **Directorios de referencia**, **Directorios de bibliotecas** y **Directorios de biblioteca WinRT**.
 
 > [!TIP]
-> Para acceder a las propiedades del proyecto, haga clic con el botón derecho en un proyecto de C++ y seleccione **Propiedades**. En el cuadro de diálogo **Páginas de propiedades**, seleccione **Propiedades de configuración** y, después, **Directorios de VC++**.
+> Para acceder a las propiedades del proyecto, haga clic con el botón derecho en un proyecto de C++ y seleccione **Propiedades**. En el cuadro de diálogo **Páginas de propiedades**, seleccione **Propiedades de configuración** y, después, **Directorios de VC++** .
 
 Al especificar un nombre de proyecto con este modificador, en la herramienta se muestran las variables de entorno de todos los proyectos en la solución primaria del proyecto.
 
@@ -69,4 +69,4 @@ devenv.exe /useenv "%USERPROFILE%\source\repos\MySolution\MySolution.sln"
 ## <a name="see-also"></a>Vea también
 
 - [Modificadores de línea de comandos para Devenv](../../ide/reference/devenv-command-line-switches.md)
-- [Página de propiedades de directorios de VC++ (Windows)](/cpp/ide/vcpp-directories-property-page)
+- [Página de propiedades de directorios de VC++ (Windows)](/cpp/build/reference/vcpp-directories-property-page)

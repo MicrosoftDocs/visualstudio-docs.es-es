@@ -6,16 +6,16 @@ keywords: ''
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.date: 07/24/2019
+ms.date: 09/23/2019
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 ms.topic: include
-ms.openlocfilehash: eba66e98b356d8d70da87497bcad597b5a7da131
-ms.sourcegitcommit: 0f5f7955076238742f2071d286ad8e896f3a6cad
+ms.openlocfilehash: a9dbd09c35c26b9670b9aceecabbfb3a57093f6e
+ms.sourcegitcommit: 88f576ac32af31613c1a10c1548275e1ce029f4f
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "68484836"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "71210327"
 ---
 ## <a name="test-agent"></a>Test Agent
 
@@ -25,7 +25,7 @@ ms.locfileid: "68484836"
 
 ### <a name="components-included-by-this-workload"></a>Componentes incluidos en esta carga de trabajo
 
-Id. de componente | NOMBRE | Versión | Tipo de dependencia
+Id. de componente | Name | Versión | Tipo de dependencia
 --- | --- | --- | ---
 Microsoft.VisualStudio.ComponentGroup.TestTools.TestAgent | Características principales de Test Agent | 16.0.28315.86 | Obligatorio
 
@@ -33,6 +33,6 @@ Microsoft.VisualStudio.ComponentGroup.TestTools.TestAgent | Características pri
 
 Estos son componentes que no están incluidos en ninguna carga de trabajo, pero que pueden seleccionarse como un componente individual.
 
-Id. de componente | NOMBRE | Versión
+Id. de componente | Name | Versión
 --- | --- | ---
 N/D | N/D | N/D

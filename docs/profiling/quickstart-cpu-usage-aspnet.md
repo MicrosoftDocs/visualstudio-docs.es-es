@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - aspnet
-ms.openlocfilehash: 65d6dbd67debc4673173af29e0c92aa57b58c865
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: cbaaa53fe737761fdd938b7861c371e8e5619acc
+ms.sourcegitcommit: 53bc4c11b82882ab658e34c65ae374060f823531
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65703873"
+ms.lasthandoff: 09/19/2019
+ms.locfileid: "71128170"
 ---
 # <a name="quickstart-analyze-cpu-usage-data-in-visual-studio-aspnet"></a>Inicio rápido: Analizar datos de uso de la CPU en Visual Studio (ASP.NET)
 
@@ -31,7 +31,7 @@ Para ejecutar las herramientas de generación de perfiles con el depurador se re
 
 1. En Visual Studio, seleccione **Archivo** > **Nuevo proyecto**.
 
-1. En **Visual C#**, seleccione **Web** y, después, en el panel central, seleccione **Aplicación web ASP.NET (.NET Framework)**.
+1. En **Visual C#** , seleccione **Web** y, después, en el panel central, seleccione **Aplicación web ASP.NET (.NET Framework)** .
 
     Si no ve la plantilla de proyecto **Aplicación web de ASP.NET**, haga clic en el vínculo **Abrir el instalador de Visual Studio** en el panel izquierdo del cuadro de diálogo **Nuevo proyecto**. Se iniciará el Instalador de Visual Studio. Elija la carga de trabajo **Desarrollo de ASP.NET y web** y después elija **Modificar**.
 
@@ -228,5 +228,5 @@ Se recomienda que, para empezar a analizar los datos, examine la lista de funcio
 
 ## <a name="see-also"></a>Vea también
 
-- [Generación de perfiles en Visual Studio](../profiling/index.md)
+- [Generación de perfiles en Visual Studio](../profiling/index.yml)
 - [Primer vistazo a la generación de perfiles](../profiling/profiling-feature-tour.md)

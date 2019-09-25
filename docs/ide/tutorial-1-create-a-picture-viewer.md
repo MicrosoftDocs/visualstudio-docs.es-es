@@ -5,20 +5,17 @@ ms.assetid: 3071d6df-2b2f-4e95-ab68-bef727323136
 ms.topic: tutorial
 ms.prod: visual-studio-windows
 ms.technology: vs-ide-general
-ms.devlang:
-- csharp
-- vb
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2c0f867179fd78ecb753a9b66cfbdb8479e16c3b
-ms.sourcegitcommit: b60a00ac3165364ee0e53f7f6faef8e9fe59ec4a
+ms.openlocfilehash: 7d9a525ef9da6583a37d5e4d26bfec7d0558cde4
+ms.sourcegitcommit: 6eed0372976c0167b9a6d42ba443f9a474b8bb91
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/11/2019
-ms.locfileid: "70913268"
+ms.lasthandoff: 09/19/2019
+ms.locfileid: "71118664"
 ---
 # <a name="tutorial-1-create-a-picture-viewer"></a>Tutorial 1: Crear un visor de imágenes
 
@@ -71,4 +68,4 @@ Para comenzar el tutorial, empiece por el **[Paso 1: Creación de un proyecto de
 
 * [Más tutoriales de C#](/visualstudio/get-started/csharp/)
 * [Tutoriales de Visual Basic](/visualstudio/get-started/visual-basic/)
-* [Tutoriales de C++](../ide/getting-started-with-cpp-in-visual-studio.md)
+* [Tutoriales de C++](/cpp/get-started/tutorial-console-cpp)

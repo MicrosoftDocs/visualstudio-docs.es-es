@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: f71e17eae1e728ab755d048daee2c0d156425964
-ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.openlocfilehash: fef50748942aaa800cf1181e4c8f8b8a030f99ee
+ms.sourcegitcommit: ea182703e922c74725045afc251bcebac305068a
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66747598"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71211304"
 ---
 # <a name="develop-with-visual-f-in-visual-studio"></a>Desarrollar con Visual F# en Visual Studio
 
@@ -58,7 +58,7 @@ En la tabla siguiente se resumen las características de las propiedades de proy
 
 El **Diseñador de proyectos** consta de varias páginas de propiedades de proyecto agrupadas por funcionalidad relacionada. Las páginas disponibles para los proyectos de F# son principalmente un subconjunto de las disponibles para otros lenguajes; se describen en la tabla siguiente. Se proporcionan vínculos a la página del **Diseñador de proyectos** de C# correspondiente.
 
-|Página del Diseñador de proyectos|Vínculos relacionados|Descripción|
+|Página del Diseñador de proyectos|Vínculos relacionados|DESCRIPCIÓN|
 | - |-------------|-----------|
 |Administración de|[Página de aplicación, Diseñador de proyectos](reference/application-page-project-designer-csharp.md)|Permite especificar la configuración y las propiedades de nivel de aplicación, por ejemplo si se está creando una biblioteca o un archivo ejecutable, qué versión de .NET tiene la aplicación como destino e información sobre la ubicación de almacenamiento de los archivos de recursos que usa la aplicación.|
 |Compilar|[Página Compilación, Diseñador de proyectos](reference/build-page-project-designer-csharp.md)|Permite controlar cómo se compila el código.|
@@ -72,7 +72,7 @@ El **Diseñador de proyectos** consta de varias páginas de propiedades de proye
 
 En la tabla siguiente se resumen las propiedades específicas de F#:
 
-|Página del Diseñador de proyectos|Parámetro|Descripción|
+|Página del Diseñador de proyectos|Parámetro|DESCRIPCIÓN|
 | - |-------|-----------|
 |Compilar|Generar llamadas de cola|Si está seleccionado, permite usar la instrucción de Lenguaje Intermedio de Microsoft (MSIL) de cola. Esto hace que el marco de pila se vuelva a usar para las funciones recursivas de cola. Es equivalente a la opción del compilador `--tailcalls`.|
 |Compilar|Otras marcas|Permite especificar otras opciones de línea de comandos del compilador.|
@@ -81,7 +81,7 @@ En la tabla siguiente se resumen las propiedades específicas de F#:
 
 En F# se admiten las siguientes características de los editores de código y texto de Visual Studio:
 
-|Característica|Descripción|¿Admitida en F#?|
+|Característica|DESCRIPCIÓN|¿Admitida en F#?|
 |-------|-----------|----------------|
 |Comentar automáticamente|Permite escribir o eliminar comentarios en secciones de código.|Sí|
 |Aplicar formato automáticamente|Cambia el formato del código con la sangría y el estilo estándar.|No|
@@ -113,7 +113,7 @@ Para obtener información general sobre la edición de código en Visual Studio 
 
 En la tabla siguiente se resumen las características de IntelliSense compatibles y no compatibles con F#:
 
-|Característica|Descripción|¿Admitida en F#?|
+|Característica|DESCRIPCIÓN|¿Admitida en F#?|
 |-------|-----------|----------------|
 |Implementar interfaces automáticamente|Genera código stub para métodos de interfaz.|Sí|
 |Fragmentos de código|Inserta código de una biblioteca de construcciones de codificación comunes en temas.|No|
@@ -133,7 +133,7 @@ Para obtener información general sobre IntelliSense, vea [Usar IntelliSense](us
 
 En la siguiente tabla se resumen las características disponibles al depurar código de F#:
 
-|Característica|Descripción|¿Admitida en F#?|
+|Característica|DESCRIPCIÓN|¿Admitida en F#?|
 |-------|-----------|----------------|
 |Ventana Automático|Muestra variables automáticas o temporales.|No|
 |Puntos de interrupción|Permite pausar la ejecución de código en puntos concretos durante la depuración.|Sí|
@@ -146,13 +146,13 @@ En la siguiente tabla se resumen las características disponibles al depurar có
 |Paso a paso por instrucciones|Permite avanzar la ejecución e ir a cualquier llamada de función.|Sí|
 |Paso a paso por procedimientos|Permite avanzar la ejecución en el marco de pila actual e ir más allá de cualquier llamada de función.|Sí|
 
-Para obtener información general sobre el depurador de Visual Studio, vea [Depurar en Visual Studio](../debugger/index.md).
+Para obtener información general sobre el depurador de Visual Studio, vea [Depurar en Visual Studio](../debugger/index.yml).
 
 ## <a name="additional-tools"></a>Herramientas adicionales
 
 En la tabla siguiente se resume la compatibilidad con F# de Visual Studio Tools.
 
-|Herramienta|Descripción|¿Admitida en F#?|
+|Herramienta|DESCRIPCIÓN|¿Admitida en F#?|
 |----|-----------|----------------|
 |Jerarquía de llamadas|Muestra la estructura anidada de llamadas de función del código.|No|
 |Métricas de código|Recopila información sobre el código, como recuentos de línea.|No|

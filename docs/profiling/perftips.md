@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0713ae13038991ec65dcbebe350c9085f7d6a94a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 93703bdd4bf2f0046176ceb1f6febd5564f61705
+ms.sourcegitcommit: 53bc4c11b82882ab658e34c65ae374060f823531
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62797945"
+ms.lasthandoff: 09/19/2019
+ms.locfileid: "71128316"
 ---
 # <a name="perftips"></a>Sugerencias de rendimiento
 Los *PerfTips* del depurador de Visual Studio y las **Herramientas de diagnóstico** integradas del depurador le ayudan a supervisar y analizar el rendimiento de la aplicación durante la depuración.
@@ -55,5 +55,5 @@ Los *PerfTips* del depurador de Visual Studio y las **Herramientas de diagnósti
 2. Active o desactive **Habilitar herramientas de diagnóstico durante la depuración**.
 
 ## <a name="see-also"></a>Vea también
-- [Generación de perfiles en Visual Studio](../profiling/index.md)
+- [Generación de perfiles en Visual Studio](../profiling/index.yml)
 - [Primer vistazo a la generación de perfiles](../profiling/profiling-feature-tour.md)

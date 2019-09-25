@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1e59e1bd618cfeb28b93d073997ef451357ee8d0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 16b46d47ec5850a79d78667671c7eb671d859f3e
+ms.sourcegitcommit: 53bc4c11b82882ab658e34c65ae374060f823531
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62830791"
+ms.lasthandoff: 09/19/2019
+ms.locfileid: "71128234"
 ---
 # <a name="analyze-memory-usage-without-the-debugger"></a>Análisis del uso de memoria sin el depurador
 
@@ -121,7 +121,7 @@ Muchos tipos de aplicaciones no son muy interesantes para los desarrolladores de
 
  ![Vínculos a un informe de instantánea en un panel de instantánea](../profiling/media/memuse_snapshotview_snapshotdetailslinks.png "Links to snapshot report in a snapshot pane")
 
-Ambos vínculos abren el mismo informe. La única diferencia es el orden de inicio del árbol **Montón administrado**. El vínculo de tamaño ordena el informe por la columna **Tamaño inclusivo (bytes)**. El vínculo Objetos ordena el informe por la columna **Recuento**. Puede cambiar la columna por la que se ordena o el orden después de abrir el informe.
+Ambos vínculos abren el mismo informe. La única diferencia es el orden de inicio del árbol **Montón administrado**. El vínculo de tamaño ordena el informe por la columna **Tamaño inclusivo (bytes)** . El vínculo Objetos ordena el informe por la columna **Recuento**. Puede cambiar la columna por la que se ordena o el orden después de abrir el informe.
 
 ### <a name="BKMK_Managed_Heap_tree__Snapshot_details_"></a> Árbol Montón administrado (informes de detalles de instantánea)
  El árbol **Montón administrado** enumera los tipos de objetos retenidos en memoria. Expanda un nombre de tipo para ver las diez mayores instancias del tipo, ordenadas por tamaño. Haga clic en un tipo o una instancia para mostrar los árboles **Rutas de acceso al nodo raíz** y **Objetos a los que se hace referencia** para el elemento seleccionado.
@@ -164,7 +164,7 @@ El árbol **Tipos a los que se hace referencia** en un informe de detalles de in
 
 Un informe de diferencias de instantánea muestra los cambios entre una instantánea principal y la anterior. Para abrir un informe de diferencias, haga clic en uno de los vínculos de diferencia en un panel de la instantánea.
 
-Ambos vínculos abren el mismo informe. La única diferencia es el orden de inicio del árbol **Montón administrado** en el informe. El vínculo de tamaño ordena el informe por la columna **Diferencias de tamaño inclusivo (bytes)**. El vínculo Objetos ordena el informe por la columna **Diferencias de recuento**. Puede cambiar la columna por la que se ordena o el orden después de abrir el informe.
+Ambos vínculos abren el mismo informe. La única diferencia es el orden de inicio del árbol **Montón administrado** en el informe. El vínculo de tamaño ordena el informe por la columna **Diferencias de tamaño inclusivo (bytes)** . El vínculo Objetos ordena el informe por la columna **Diferencias de recuento**. Puede cambiar la columna por la que se ordena o el orden después de abrir el informe.
 
  ![Vínculos a un informe de diferencias en un panel de instantánea](../profiling/media/memuse_snapshotview_snapshotdifflinks.png "Links to difference report in a snapshot pane")
 
@@ -201,7 +201,7 @@ En el árbol **Tipos a los que se hace referencia** u **Objetos a los que se hac
 
 ![Tipos a los que se hace referencia en un informe de diferencias](../profiling/media/memuse_snapshotdiff_referencedtypes.png "Referenced Types in a diff report")
 
-El árbol **Tipos a los que se hace referencia** en un informe de diferencias de instantánea tiene las siguientes columnas. Un árbol **Objetos a los que se hacer referencia** tiene las columnas **Instancia**, **Tamaño (Bytes)**, **Tamaño inclusivo (Bytes)** y **Módulo**.
+El árbol **Tipos a los que se hace referencia** en un informe de diferencias de instantánea tiene las siguientes columnas. Un árbol **Objetos a los que se hacer referencia** tiene las columnas **Instancia**, **Tamaño (Bytes)** , **Tamaño inclusivo (Bytes)** y **Módulo**.
 
 |||
 |-|-|
@@ -216,7 +216,7 @@ El árbol **Tipos a los que se hace referencia** en un informe de diferencias de
 
 ## <a name="see-also"></a>Vea también
 - [Memoria de JavaScript](../profiling/javascript-memory.md)
-- [Generación de perfiles en Visual Studio](../profiling/index.md)
+- [Generación de perfiles en Visual Studio](../profiling/index.yml)
 - [Primer vistazo a la generación de perfiles](../profiling/profiling-feature-tour.md)
 - [Procedimientos recomendados de rendimiento para aplicaciones para UWP con C++, C# y Visual Basic](/previous-versions/windows/apps/hh750313\(v\=win.10\))
 - [Diagnosticar problemas de memoria con la nueva herramienta Uso de memoria en Visual Studio](http://go.microsoft.com/fwlink/p/?LinkId=394706)
