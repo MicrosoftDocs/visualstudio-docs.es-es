@@ -18,12 +18,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: f11a93380f149648ece4ae6d71bc9c2f25df5191
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 387eb464959fba522e31f9586998335cb306d844
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68923119"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71236324"
 ---
 # <a name="ca1014-mark-assemblies-with-clscompliantattribute"></a>CA1014: Marcar los ensamblados con CLSCompliantAttribute
 
@@ -32,9 +32,9 @@ ms.locfileid: "68923119"
 |TypeName|MarkAssembliesWithClsCompliant|
 |Identificador de comprobación|CA1014|
 |Categoría|Microsoft.Design|
-|Cambio problemático|Poco problemático|
+|Cambio importante|Poco problemático|
 
-## <a name="cause"></a>Causa
+## <a name="cause"></a>Motivo
 Un ensamblado no tiene aplicado <xref:System.CLSCompliantAttribute?displayProperty=fullName> el atributo.
 
 ## <a name="rule-description"></a>Descripción de la regla

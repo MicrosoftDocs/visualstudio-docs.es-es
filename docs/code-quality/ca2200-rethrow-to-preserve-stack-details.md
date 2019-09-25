@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 55c58f098616a5c3c2d6ad72f56e8eda51f689be
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 5cf7fc6e31b9250392fc3ea447a5b91225640a50
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62796850"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71231908"
 ---
 # <a name="ca2200-rethrow-to-preserve-stack-details"></a>CA2200: Reiniciar para mantener los detalles de la pila
 
@@ -31,27 +31,27 @@ ms.locfileid: "62796850"
 |TypeName|RethrowToPreserveStackDetails|
 |Identificador de comprobación|CA2200|
 |Categoría|Microsoft.Usage|
-|Cambio problemático|No trascendental|
+|Cambio importante|Poco problemático|
 
 ## <a name="cause"></a>Motivo
 
-Se vuelve a producir una excepción y la excepción se especifica explícitamente en el `throw` instrucción.
+Se vuelve a producir una excepción y la excepción se especifica explícitamente en `throw` la instrucción.
 
 ## <a name="rule-description"></a>Descripción de la regla
 
-Una vez que se produce una excepción, parte de la información que lleva es el seguimiento de pila. El seguimiento de pila es una lista de la jerarquía de llamadas de método que empieza por el método que produce la excepción y termina con el método que detecta la excepción. Si se produce una excepción de nuevo mediante la especificación de la excepción en el `throw` instrucción, se reinicia el seguimiento de pila en el método actual y la lista de llamadas de método entre el método original que produjo la excepción y el método actual se pierde. Para mantener la información de seguimiento de pila original con la excepción, utilice el `throw` instrucción sin especificar la excepción.
+Una vez que se produce una excepción, parte de la información que conlleva es el seguimiento de la pila. El seguimiento de la pila es una lista de la jerarquía de llamadas al método que comienza con el método que produce la excepción y termina con el método que detecta la excepción. Si se vuelve a producir una excepción mediante la especificación de la excepción en `throw` la instrucción, el seguimiento de la pila se reinicia en el método actual y se pierde la lista de llamadas a métodos entre el método original que produjo la excepción y el método actual. Para mantener la información de seguimiento de la pila original con la excepción `throw` , use la instrucción sin especificar la excepción.
 
 ## <a name="how-to-fix-violations"></a>Cómo corregir infracciones
 
-Para corregir una infracción de esta regla, vuelva a producir la excepción sin especificar explícitamente la excepción.
+Para corregir una infracción de esta regla, vuelva a producir la excepción sin especificar la excepción explícitamente.
 
-## <a name="when-to-suppress-warnings"></a>Cuándo Suprimir advertencias
+## <a name="when-to-suppress-warnings"></a>Cuándo suprimir advertencias
 
 No suprima las advertencias de esta regla.
 
 ## <a name="example"></a>Ejemplo
 
-El ejemplo siguiente muestra un método, `CatchAndRethrowExplicitly`, lo que infringe la regla y un método, `CatchAndRethrowImplicitly`, que cumple la regla.
+En el ejemplo siguiente se muestra un `CatchAndRethrowExplicitly`método,, que infringe la regla y un método `CatchAndRethrowImplicitly`,, que cumple la regla.
 
 [!code-csharp[FxCop.Usage.Rethrow#1](../code-quality/codesnippet/CSharp/ca2200-rethrow-to-preserve-stack-details_1.cs)]
 [!code-vb[FxCop.Usage.Rethrow#1](../code-quality/codesnippet/VisualBasic/ca2200-rethrow-to-preserve-stack-details_1.vb)]

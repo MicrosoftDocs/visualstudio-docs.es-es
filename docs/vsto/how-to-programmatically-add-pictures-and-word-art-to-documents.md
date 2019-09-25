@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 63b1a72a5b332f27b6bd38d25c16ff3a5981b4fa
-ms.sourcegitcommit: 13ab9a5ab039b070b9cd9251d0b83dd216477203
+ms.openlocfilehash: 45b3030875539035f93bd340354e7041028200d2
+ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66177756"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71253817"
 ---
 # <a name="how-to-programmatically-add-pictures-and-word-art-to-documents"></a>Procedimiento Agregar imágenes y dibujos de Word a documentos mediante programación
   Puede agregar imágenes y objetos de dibujo a los documentos en tiempo de diseño o en tiempo de ejecución. WordArt permite agregar texto decorativo a documentos de Microsoft Office Word. Estos efectos de texto especiales son objetos de dibujo que se pueden personalizar e insertar en el documento.
@@ -35,15 +35,15 @@ ms.locfileid: "66177756"
 
 1. Coloque el cursor donde desea insertar la imagen en el documento.
 
-2. Haga clic en el **insertar** pestaña de la cinta de opciones.
+2. Haga clic en la pestaña **Insertar** de la cinta de opciones.
 
-3. En el **ilustraciones** grupo, haga clic en **imagen**.
+3. En el grupo **ilustraciones** , haga clic en **imagen**.
 
-4. En el **Insertar imagen** cuadro de diálogo, navegue a la imagen que desea insertar y haga clic en **insertar**.
+4. En el cuadro de diálogo **Insertar imagen** , navegue a la imagen que desea insertar y haga clic en **Insertar**.
 
      La imagen se agrega al documento en la ubicación actual del cursor.
 
-## <a name="add-a-picture-at-runtime"></a>Agregar una imagen en tiempo de ejecución
+## <a name="add-a-picture-at-run-time"></a>Agregar una imagen en tiempo de ejecución
  Puede insertar una imagen en un documento en la ubicación actual del cursor.
 
 ### <a name="to-add-a-picture-at-the-cursor-location"></a>Para agregar una imagen en la ubicación del cursor
@@ -60,15 +60,15 @@ ms.locfileid: "66177756"
 
 1. Coloque el cursor donde desea insertar el elemento de WordArt en el documento.
 
-2. Haga clic en el **insertar** pestaña de la cinta de opciones.
+2. Haga clic en la pestaña **Insertar** de la cinta de opciones.
 
-3. En el **texto** grupo, haga clic en **WordArt**y, a continuación, seleccione un estilo de WordArt.
+3. En el grupo **texto** , haga clic en **WordArt**y, a continuación, seleccione un estilo de WordArt.
 
-4. Agregue el texto que desea que aparezca en el documento hasta el **editar texto de WordArt** cuadro de diálogo y haga clic en **Aceptar**.
+4. Agregue el texto que desea que aparezca en el documento al cuadro de diálogo **editar texto de WordArt** y haga clic en **Aceptar**.
 
      El texto se agrega al documento con el estilo de WordArt que seleccionó aplicado.
 
-## <a name="add-wordart-at-runtime"></a>Agregar WordArt en tiempo de ejecución
+## <a name="add-wordart-at-run-time"></a>Agregar WordArt en tiempo de ejecución
  Puede insertar WordArt en un documento en la ubicación actual del cursor. El procedimiento es diferente para las personalizaciones de nivel de documento y los complementos de VSTO.
 
 ### <a name="to-add-wordart-at-the-cursor-location-in-a-document-level-customization"></a>Para agregar WordArt en la ubicación del cursor en una personalización de nivel de documento
@@ -97,7 +97,7 @@ ms.locfileid: "66177756"
 
 ## <a name="compile-the-code"></a>Compilar el código
 
-- Una imagen denominada *SamplePicture.jpg* debe existir en la unidad C.
+- Debe existir una imagen con el nombre *SamplePicture. jpg* en la unidad C.
 
 ## <a name="see-also"></a>Vea también
 - [Cómo: Abrir documentos existentes mediante programación](../vsto/how-to-programmatically-open-existing-documents.md)

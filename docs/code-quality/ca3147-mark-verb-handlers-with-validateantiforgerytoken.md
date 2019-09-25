@@ -9,12 +9,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: 0cd54f932a99ea79bf792ebe4175ddc6a031ddcb
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 01b290a4e4656aef079b27ce3abb2a66d7adeb75
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62541069"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71236981"
 ---
 # <a name="ca3147-mark-verb-handlers-with-validateantiforgerytoken"></a>CA3147: Marcar los controladores de verbo con ValidateAntiForgeryToken
 
@@ -23,39 +23,39 @@ ms.locfileid: "62541069"
 |TypeName|MarkVerbHandlersWithValidateAntiForgeryToken|
 |Identificador de comprobación|CA3147|
 |Categoría|Microsoft.Security|
-|Cambio problemático|No trascendental|
+|Cambio importante|Poco problemático|
 
 ## <a name="cause"></a>Motivo
 
-Un método de acción de controlador de MVC de ASP.NET no está marcado con [ValidateAntiForgeryTokenAttribute](/previous-versions/aspnet/dd492108(v=vs.118)), o un atributo que especifica el verbo HTTP, como [HttpGetAttribute](/previous-versions/aspnet/ee470993(v%3dvs.118)) o [ AcceptVerbsAttribute](/previous-versions/aspnet/dd470553%28v%3dvs.118%29).
+Un método de acción del controlador de MVC de ASP.NET no está marcado con [ValidateAntiForgeryTokenAttribute](/previous-versions/aspnet/dd492108(v=vs.118))o un atributo que especifica el verbo http, como [HttpGetAttribute](/previous-versions/aspnet/ee470993(v%3dvs.118)) o [AcceptVerbsAttribute](/previous-versions/aspnet/dd470553%28v%3dvs.118%29).
 
 ## <a name="rule-description"></a>Descripción de la regla
 
-Al diseñar un controlador ASP.NET MVC, esté atento ataques de falsificación de solicitud entre sitios. Un ataque de falsificación de solicitud entre sitios puede enviar solicitudes malintencionadas de un usuario autenticado al controlador de MVC de ASP.NET. Para obtener más información, consulte [prevención de XSRF/CSRF en ASP.NET MVC y web pages](/aspnet/mvc/overview/security/xsrfcsrf-prevention-in-aspnet-mvc-and-web-pages).
+Al diseñar un controlador ASP.NET MVC, tenga en cuentan los ataques de falsificación de solicitudes entre sitios. Un ataque de falsificación de solicitudes entre sitios puede enviar solicitudes malintencionadas de un usuario autenticado a su controlador ASP.NET MVC. Para obtener más información, vea [prevención de XSRF/CSRF en ASP.NET MVC y Web pages](/aspnet/mvc/overview/security/xsrfcsrf-prevention-in-aspnet-mvc-and-web-pages).
 
-Esta regla comprueba si ese controlador de MVC de ASP.NET los métodos de acción ya sea:
+Esta regla comprueba que los métodos de acción del controlador ASP.NET MVC sean:
 
-- Tiene la [ValidateAntiforgeryTokenAttribute](/previous-versions/aspnet/dd492108%28v%3dvs.118%29) y especifique los verbos HTTP permitidos, sin incluir el HTTP GET.
+- Tenga [ValidateAntiforgeryTokenAttribute](/previous-versions/aspnet/dd492108%28v%3dvs.118%29) y especifique verbos http permitidos, sin incluir HTTP GET.
 
-- Especificar HTTP GET como un verbo permitido.
+- Especifique HTTP GET como verbo permitido.
 
 ## <a name="how-to-fix-violations"></a>Cómo corregir infracciones
 
-- Para acciones de controlador de MVC de ASP.NET que controlan las solicitudes HTTP GET y no tienen efectos secundarios potencialmente dañinos, agregue un [HttpGetAttribute](/previous-versions/aspnet/ee470993%28v%3dvs.118%29) al método.
+- En el caso de las acciones del controlador ASP.NET MVC que controlan las solicitudes HTTP GET y no tienen efectos secundarios potencialmente perjudiciales, agregue un [HttpGetAttribute](/previous-versions/aspnet/ee470993%28v%3dvs.118%29) al método.
 
-   Si tiene un ASP.NET MVC, las solicitudes de acción del controlador que controla HTTP GET y tiene potencialmente perjudiciales efectos como la modificación de datos confidenciales, la aplicación es vulnerable a ataques de falsificación de solicitud entre sitios.  Necesitará volver a diseñar la aplicación para que solamente las solicitudes HTTP POST, PUT o DELETE realizan operaciones confidenciales.
+   Si tiene una acción de controlador de MVC de ASP.NET que controla las solicitudes HTTP GET y tiene efectos secundarios potencialmente perjudiciales, como la modificación de datos confidenciales, la aplicación es vulnerable a los ataques de falsificación de solicitudes entre sitios.  Tendrá que rediseñar la aplicación para que solo las solicitudes HTTP POST, PUT o DELETE realicen operaciones confidenciales.
 
-- Para acciones de controlador de MVC de ASP.NET que controlan la solicitud HTTP POST, PUT o las solicitudes de eliminación, agregue [ValidateAntiForgeryTokenAttribute](/previous-versions/aspnet/dd492108(v=vs.118)) y los atributos que especifican los verbos HTTP permitidos ([AcceptVerbsAttribute](/previous-versions/aspnet/dd470553%28v%3dvs.118%29) [HttpPostAttribute](/previous-versions/aspnet/ee264023%28v%3dvs.118%29), [HttpPutAttribute](/previous-versions/aspnet/ee470909%28v%3dvs.118%29), o [HttpDeleteAttribute](/previous-versions/aspnet/ee470917%28v%3dvs.118%29)). Además, debe llamar a la [HtmlHelper.AntiForgeryToken()](/previous-versions/aspnet/dd504812%28v%3dvs.118%29) método desde la vista de MVC o página web de Razor. Para obtener un ejemplo, vea [examinando los métodos de edición y editar vista](/aspnet/mvc/overview/getting-started/introduction/examining-the-edit-methods-and-edit-view).
+- En el caso de las acciones del controlador ASP.NET MVC que controlan las solicitudes HTTP POST, PUT o DELETE, agregue [ValidateAntiForgeryTokenAttribute](/previous-versions/aspnet/dd492108(v=vs.118)) y atributos especificando los verbos http permitidos ([AcceptVerbsAttribute](/previous-versions/aspnet/dd470553%28v%3dvs.118%29), [HttpPostAttribute](/previous-versions/aspnet/ee264023%28v%3dvs.118%29), [ HttpPutAttribute](/previous-versions/aspnet/ee470909%28v%3dvs.118%29)o [HttpDeleteAttribute](/previous-versions/aspnet/ee470917%28v%3dvs.118%29)). Además, debe llamar al método [HtmlHelper. AntiForgeryToken ()](/previous-versions/aspnet/dd504812%28v%3dvs.118%29) desde la vista de MVC o la Página Web de Razor. Para obtener un ejemplo, vea [examinar los métodos de edición y la vista de edición](/aspnet/mvc/overview/getting-started/introduction/examining-the-edit-methods-and-edit-view).
 
-## <a name="when-to-suppress-warnings"></a>Cuándo Suprimir advertencias
+## <a name="when-to-suppress-warnings"></a>Cuándo suprimir advertencias
 
 Es seguro suprimir una advertencia de esta regla si:
 
-- La acción de controlador de MVC de ASP.NET no tiene efectos perjudiciales.
+- La acción del controlador de MVC de ASP.NET no tiene efectos secundarios dañinos.
 
-- La aplicación valida el token antifalsificación de forma diferente.
+- La aplicación valida el token antifalsificación de otra manera.
 
-## <a name="validateantiforgerytoken-attribute-example"></a>Ejemplo de atributo ValidateAntiForgeryToken
+## <a name="validateantiforgerytoken-attribute-example"></a>Ejemplo del atributo ValidateAntiForgeryToken
 
 ### <a name="violation"></a>Infracción
 
@@ -98,7 +98,7 @@ namespace TestNamespace
 }
 ```
 
-## <a name="httpget-attribute-example"></a>Ejemplo de atributo HttpGet
+## <a name="httpget-attribute-example"></a>Ejemplo del atributo HttpGet
 
 ### <a name="violation"></a>Infracción
 

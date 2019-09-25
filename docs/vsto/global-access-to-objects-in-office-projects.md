@@ -1,5 +1,5 @@
 ---
-title: Acceso global a objetos en los proyectos de Office
+title: Acceso global a objetos en proyectos de Office
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -30,14 +30,14 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 7266e7fa26574332bcb343b552eea2b707a8672b
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: f05f18201a055ac88e4af90d7b8e4d9db8f4e4b6
+ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63427947"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71253441"
 ---
-# <a name="global-access-to-objects-in-office-projects"></a>Acceso global a objetos en los proyectos de Office
+# <a name="global-access-to-objects-in-office-projects"></a>Acceso global a objetos en proyectos de Office
   Cuando se crea un proyecto de Office, Visual Studio genera automáticamente una clase denominada `Globals` en el proyecto. Puede utilizar la clase `Globals` para tener acceso en tiempo de ejecución a diversos elementos del proyecto desde cualquier código del proyecto.
 
  [!INCLUDE[appliesto_all](../vsto/includes/appliesto-all-md.md)]
@@ -49,11 +49,11 @@ ms.locfileid: "63427947"
 
 - La clase `ThisDocument` de un proyecto de documento o plantilla de Word. Puede tener acceso a este objeto mediante la propiedad `Globals.ThisDocument` .
 
-- La `ThisAddIn` clase en un proyecto de complemento VSTO. Puede tener acceso a este objeto mediante la propiedad `Globals.ThisAddIn` .
+- La `ThisAddIn` clase en un proyecto de complemento de VSTO. Puede tener acceso a este objeto mediante la propiedad `Globals.ThisAddIn` .
 
-- Todas las cintas de opciones del proyecto que haya personalizado mediante el Diseñador de la cinta de opciones. Puede tener acceso a las cintas de opciones mediante la propiedad `Globals.Ribbons` . Para obtener más información, consulte [tener acceso a la cinta de opciones en tiempo de ejecución](../vsto/accessing-the-ribbon-at-run-time.md).
+- Todas las cintas de opciones del proyecto que haya personalizado mediante el Diseñador de la cinta de opciones. Puede tener acceso a las cintas de opciones mediante la propiedad `Globals.Ribbons` . Para obtener más información, vea [obtener acceso a la cinta de opciones en tiempo de ejecución](../vsto/accessing-the-ribbon-at-run-time.md).
 
-- Todas las áreas de formulario de Outlook en un proyecto de complemento de VSTO para Outlook. Puede tener acceso a las áreas de formulario mediante la propiedad `Globals.FormRegions` . Para obtener más información, consulte [tener acceso a un área de formulario en tiempo de ejecución](../vsto/accessing-a-form-region-at-run-time.md).
+- Todas las áreas de formulario de Outlook en un proyecto de complemento de VSTO para Outlook. Puede tener acceso a las áreas de formulario mediante la propiedad `Globals.FormRegions` . Para obtener más información, vea [obtener acceso a un área de formulario en tiempo de ejecución](../vsto/accessing-a-form-region-at-run-time.md).
 
 - Un objeto generador que permite crear controles de cinta y hospedar elementos en tiempo de ejecución en los proyectos que tienen como destino [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] o [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)]. Puede tener acceso a este objeto mediante la propiedad `Globals.Factory` . Este objeto es una instancia de una clase que implementa una de las interfaces siguientes:
 
@@ -71,16 +71,16 @@ ms.locfileid: "63427947"
   [!code-csharp[Trin_VstcoreProgramming#1](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingExcelCS/Sheet1.cs#1)]
 
 ## <a name="initialize-the-globals-class"></a>Inicializar la clase Globals
- El código que intenta utilizar el `Globals` clase antes de inicializa el documento o el complemento de VSTO podría producir una excepción de tiempo de ejecución. Por ejemplo, el uso de `Globals` al declarar una variable de nivel de clase podría provocar un error, ya que la clase `Globals` podría no estar inicializada con referencias a todos los elementos host antes de que se creara una instancia del objeto declarado.
+ El código que intente usar la `Globals` clase antes de que se inicialice el documento o el complemento de VSTO podría producir una excepción en tiempo de ejecución. Por ejemplo, el uso de `Globals` al declarar una variable de nivel de clase podría provocar un error, ya que la clase `Globals` podría no estar inicializada con referencias a todos los elementos host antes de que se creara una instancia del objeto declarado.
 
 > [!NOTE]
-> La clase `Globals` nunca se inicializa en tiempo de diseño, sino que el diseñador crea instancias de controles. Esto significa que si crea un control de usuario que utiliza una propiedad de la `Globals` clase desde dentro de una clase de control de usuario, debe comprobar si la propiedad devuelve **null** antes de intentar usar el objeto devuelto.
+> La clase `Globals` nunca se inicializa en tiempo de diseño, sino que el diseñador crea instancias de controles. Esto significa que si crea un control de usuario que utiliza una propiedad de la `Globals` clase desde dentro de una clase de control de usuario, debe comprobar si la propiedad devuelve **null** antes de intentar utilizar el objeto devuelto.
 
 ## <a name="see-also"></a>Vea también
 - [Obtener acceso a la cinta de opciones en tiempo de ejecución](../vsto/accessing-the-ribbon-at-run-time.md)
 - [Obtener acceso a un área de formulario en tiempo de ejecución](../vsto/accessing-a-form-region-at-run-time.md)
-- [Elementos host y la información general sobre controles de host](../vsto/host-items-and-host-controls-overview.md)
-- [Elemento host Document](../vsto/document-host-item.md)
-- [Elemento host Workbook](../vsto/workbook-host-item.md)
-- [Elemento host Worksheet](../vsto/worksheet-host-item.md)
+- [Información general sobre elementos y controles host](../vsto/host-items-and-host-controls-overview.md)
+- [Elemento host de documento](../vsto/document-host-item.md)
+- [Elemento host del libro](../vsto/workbook-host-item.md)
+- [Elemento host de hoja de cálculo](../vsto/worksheet-host-item.md)
 - [Escribir código en soluciones de Office](../vsto/writing-code-in-office-solutions.md)

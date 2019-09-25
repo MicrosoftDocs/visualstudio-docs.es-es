@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: a17c5bdc9e21bdf877206b1dc28596c251049455
-ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
+ms.openlocfilehash: 12371c34c846991a0ec41f5e9d9588c5bde8e4d6
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "66714748"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71233599"
 ---
 # <a name="ca1813-avoid-unsealed-attributes"></a>CA1813: Evitar los atributos no sellados
 
@@ -31,34 +31,34 @@ ms.locfileid: "66714748"
 |TypeName|AvoidUnsealedAttributes|
 |Identificador de comprobación|CA1813|
 |Categoría|Microsoft.Performance|
-|Cambio problemático|Problemático|
+|Cambio importante|Problemático|
 
 ## <a name="cause"></a>Motivo
 
-Un tipo público hereda de <xref:System.Attribute?displayProperty=fullName>, no es abstracta y no está sellado (`NotInheritable` en Visual Basic).
+Un tipo público hereda de <xref:System.Attribute?displayProperty=fullName>, no es abstracto y no está sellado (`NotInheritable` en Visual Basic).
 
 ## <a name="rule-description"></a>Descripción de la regla
 
-.NET proporciona métodos para recuperar los atributos personalizados. De forma predeterminada, estos métodos buscan la jerarquía de herencia de atributo. Por ejemplo, <xref:System.Attribute.GetCustomAttribute%2A?displayProperty=fullName> busca el tipo de atributo especificado o cualquier tipo de atributo que extiende el tipo de atributo especificado. Sellar el atributo elimina la búsqueda a través de la jerarquía de herencia y puede mejorar el rendimiento.
+.NET proporciona métodos para recuperar atributos personalizados. De forma predeterminada, estos métodos buscan la jerarquía de herencia de atributo. Por ejemplo, <xref:System.Attribute.GetCustomAttribute%2A?displayProperty=fullName> busca el tipo de atributo especificado o cualquier tipo de atributo que extienda el tipo de atributo especificado. Al sellar el atributo, se elimina la búsqueda a través de la jerarquía de herencia y puede mejorar el rendimiento.
 
 ## <a name="how-to-fix-violations"></a>Cómo corregir infracciones
 
-Para corregir una infracción de esta regla, selle el tipo de atributo o establecerlo como abstracto.
+Para corregir una infracción de esta regla, selle el tipo de atributo o haga que sea abstracto.
 
-## <a name="when-to-suppress-warnings"></a>Cuándo Suprimir advertencias
+## <a name="when-to-suppress-warnings"></a>Cuándo suprimir advertencias
 
-Es seguro suprimir una advertencia de esta regla. Suprimir solo si está definiendo una jerarquía de atributo y no se puede sellar el atributo o establecerlo como abstracto.
+Es seguro suprimir una advertencia de esta regla. Suprima solo si está definiendo una jerarquía de atributo y no puede sellar el atributo ni hacer que sea abstracto.
 
 ## <a name="example"></a>Ejemplo
 
-El ejemplo siguiente muestra un atributo personalizado que cumple esta regla.
+En el ejemplo siguiente se muestra un atributo personalizado que cumple esta regla.
 
 [!code-csharp[FxCop.Performance.AttributesSealed#1](../code-quality/codesnippet/CSharp/ca1813-avoid-unsealed-attributes_1.cs)]
 [!code-vb[FxCop.Performance.AttributesSealed#1](../code-quality/codesnippet/VisualBasic/ca1813-avoid-unsealed-attributes_1.vb)]
 
 ## <a name="related-rules"></a>Reglas relacionadas
 
-- [CA1019: Definir descriptores de acceso para los argumentos de atributo](../code-quality/ca1019-define-accessors-for-attribute-arguments.md)
+- [CA1019: Definir los descriptores de acceso para los argumentos de atributo](../code-quality/ca1019-define-accessors-for-attribute-arguments.md)
 - [CA1018: Marcar atributos con AttributeUsageAttribute](../code-quality/ca1018-mark-attributes-with-attributeusageattribute.md)
 
 ## <a name="see-also"></a>Vea también

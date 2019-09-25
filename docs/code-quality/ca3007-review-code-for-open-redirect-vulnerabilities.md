@@ -10,12 +10,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: e60d0fad1262138b57f079485bc7455e55c7ec25
-ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
+ms.openlocfilehash: 0226c0e2e66a6543b81cd8ee674a743766b65f3e
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "65841342"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71237268"
 ---
 # <a name="ca3007-review-code-for-open-redirect-vulnerabilities"></a>CA3007: Revisión de código en busca de vulnerabilidades de redireccionamiento abierto
 
@@ -24,37 +24,37 @@ ms.locfileid: "65841342"
 |TypeName|ReviewCodeForOpenRedirectVulnerabilities|
 |Identificador de comprobación|CA3007|
 |Categoría|Microsoft.Security|
-|Cambio problemático|No trascendental|
+|Cambio importante|Poco problemático|
 
 ## <a name="cause"></a>Motivo
 
-Entrada de solicitud HTTP potencialmente no confiable alcanza una redirección de respuesta HTTP.
+Una entrada de solicitud HTTP que podría no ser de confianza alcanza un redireccionamiento de respuesta HTTP.
 
 ## <a name="rule-description"></a>Descripción de la regla
 
-Al trabajar con entradas no seguras, esté atento vulnerabilidades de redireccionamiento abierto. Un atacante puede aprovechar una vulnerabilidad de redireccionamiento abierto para usar su sitio Web para darle el aspecto de una dirección URL válida, pero redirigir un visitante confiado a una suplantación de identidad o a otra página Web malintencionado.
+Al trabajar con una entrada que no es de confianza, tenga en cuentan las vulnerabilidades de redireccionamiento abierto. Un atacante puede aprovechar una vulnerabilidad de redirección abierta para usar el sitio web con el fin de dar la apariencia de una dirección URL legítima, pero redirigir a un visitante que no sospecha a un phishing u otra página web malintencionada.
 
-Esta regla intenta encontrar la entrada de las solicitudes HTTP para llegar a una dirección URL de redireccionamiento HTTP.
-
-> [!NOTE]
-> Esta regla no puede realizar un seguimiento de datos a través de ensamblados. Por ejemplo, si un ensamblado lee la entrada de solicitud HTTP y, a continuación, pasa a otro ensamblado al que responde con una redirección de HTTP, esta regla no genera una advertencia.
+Esta regla intenta buscar la entrada de las solicitudes HTTP que llegan a una dirección URL de redireccionamiento HTTP.
 
 > [!NOTE]
-> Hay un límite configurable para profundidad esta regla analizará el flujo de datos a través de llamadas de método. Consulte [Configuration Analyzer](https://github.com/dotnet/roslyn-analyzers/blob/master/docs/Analyzer%20Configuration.md#dataflow-analysis) acerca de cómo configurar el límite en un archivo EditorConfig.
+> Esta regla no puede realizar el seguimiento de los datos entre ensamblados. Por ejemplo, si un ensamblado lee la entrada de la solicitud HTTP y, a continuación, la pasa a otro ensamblado que responde con una redirección HTTP, esta regla no generará ninguna advertencia.
+
+> [!NOTE]
+> Existe un límite configurable en cuanto a la profundidad con que esta regla analizará el flujo de datos a través de las llamadas a métodos. Vea [configuración del analizador](https://github.com/dotnet/roslyn-analyzers/blob/master/docs/Analyzer%20Configuration.md#dataflow-analysis) para saber cómo configurar el límite en un archivo EditorConfig.
 
 ## <a name="how-to-fix-violations"></a>Cómo corregir infracciones
 
 Algunos enfoques para corregir las vulnerabilidades de redireccionamiento abierto incluyen:
 
-- No permita que los usuarios iniciar redirecciones.
-- No permitir a los usuarios especificar cualquier parte de la dirección URL en un escenario de redirección.
-- Restringir las redirecciones a una predefinido "lista de permitidos" de las direcciones URL.
-- Validar las direcciones URL de redireccionamiento.
-- Si procede, considere la posibilidad de usar una página de declinación de responsabilidades cuando se le redirige a los usuarios fuera de su sitio.
+- No permita a los usuarios iniciar redirecciones.
+- No permita que los usuarios especifiquen ninguna parte de la dirección URL en un escenario de redirección.
+- Restringir redireccionamientos a una "lista de permitidos" predefinida de las direcciones URL.
+- Valide las direcciones URL de redireccionamiento.
+- Si es aplicable, considere la posibilidad de usar una página de declinación de responsabilidades cuando los usuarios se redirijan fuera de su sitio.
 
-## <a name="when-to-suppress-warnings"></a>Cuándo Suprimir advertencias
+## <a name="when-to-suppress-warnings"></a>Cuándo suprimir advertencias
 
-Si sabe que ha validado la entrada para limitarse a direcciones URL previstas, es correcto suprimir esta advertencia.
+Si sabe que ha validado la entrada para que esté restringida a las direcciones URL preparadas, es correcto suprimir esta advertencia.
 
 ## <a name="pseudo-code-examples"></a>Ejemplos de pseudocódigo
 

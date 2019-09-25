@@ -10,12 +10,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 4c9fbb4b8b11b0fce7d3e7530eef80af19b35b73
-ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
+ms.openlocfilehash: a459be8c8ab028581c850f5b5770a95cb70e3510
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "65841029"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71237192"
 ---
 # <a name="ca3011-review-code-for-dll-injection-vulnerabilities"></a>CA3011: Revisión de código en busca de vulnerabilidades de inyección de DLL
 
@@ -24,29 +24,29 @@ ms.locfileid: "65841029"
 |TypeName|ReviewCodeForDllInjectionVulnerabilities|
 |Identificador de comprobación|CA3011|
 |Categoría|Microsoft.Security|
-|Cambio problemático|No trascendental|
+|Cambio importante|Poco problemático|
 
 ## <a name="cause"></a>Motivo
 
-Solicitud HTTP potencialmente no confiable entrada llega a un método que carga un ensamblado.
+Una entrada de solicitud HTTP que podría no ser de confianza llega a un método que carga un ensamblado.
 
 ## <a name="rule-description"></a>Descripción de la regla
 
-Al trabajar con entradas no seguras, esté atento al cargar el código no seguro. Si la aplicación web carga código no seguro, un atacante puede insertar archivos DLL malintencionado en su proceso y ejecutar código malintencionado.
+Al trabajar con una entrada que no es de confianza, tenga en cuentan la carga de código que no es de confianza. Si la aplicación web carga código que no es de confianza, es posible que un atacante pueda insertar archivos dll malintencionados en el proceso y ejecutar código malintencionado.
 
-Esta regla intenta encontrar la entrada de una solicitud HTTP que llegue a un método que carga un ensamblado.
-
-> [!NOTE]
-> Esta regla no puede realizar un seguimiento de datos a través de ensamblados. Por ejemplo, si un ensamblado lee la entrada de solicitud HTTP y, a continuación, pasa a otro ensamblado que carga un ensamblado, esta regla no genera una advertencia.
+Esta regla intenta buscar la entrada de una solicitud HTTP que llega a un método que carga un ensamblado.
 
 > [!NOTE]
-> Hay un límite configurable para profundidad esta regla analizará el flujo de datos a través de llamadas de método. Consulte [Configuration Analyzer](https://github.com/dotnet/roslyn-analyzers/blob/master/docs/Analyzer%20Configuration.md#dataflow-analysis) acerca de cómo configurar el límite en un archivo EditorConfig.
+> Esta regla no puede realizar el seguimiento de los datos entre ensamblados. Por ejemplo, si un ensamblado lee la entrada de la solicitud HTTP y, a continuación, la pasa a otro ensamblado que carga un ensamblado, esta regla no generará ninguna advertencia.
+
+> [!NOTE]
+> Existe un límite configurable en cuanto a la profundidad con que esta regla analizará el flujo de datos a través de las llamadas a métodos. Vea [configuración del analizador](https://github.com/dotnet/roslyn-analyzers/blob/master/docs/Analyzer%20Configuration.md#dataflow-analysis) para saber cómo configurar el límite en un archivo EditorConfig.
 
 ## <a name="how-to-fix-violations"></a>Cómo corregir infracciones
 
-No se cargan archivos DLL que no se confía por el usuario.
+No cargue archivos DLL que no son de confianza de los datos proporcionados por el usuario.
 
-## <a name="when-to-suppress-warnings"></a>Cuándo Suprimir advertencias
+## <a name="when-to-suppress-warnings"></a>Cuándo suprimir advertencias
 
 No suprima las advertencias de esta regla.
 

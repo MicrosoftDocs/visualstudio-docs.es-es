@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8dbfc8081f980b7b9e978da782f1627a88a716a3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: fa04ca237134c1947b5c58b921f87f32a1ecfb16
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62809413"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71234293"
 ---
 # <a name="ca1704-identifiers-should-be-spelled-correctly"></a>CA1704: La ortografía de los identificadores debe ser correcta
 
@@ -28,29 +28,29 @@ ms.locfileid: "62809413"
 |TypeName|IdentifiersShouldBeSpelledCorrectly|
 |Identificador de comprobación|CA1704|
 |Categoría|Microsoft.Naming|
-|Cambio problemático|Problemático|
+|Cambio importante|Problemático|
 
 ## <a name="cause"></a>Motivo
 
-El nombre de un identificador contiene una o varias palabras que la biblioteca de correctores ortográficos de Microsoft no reconoce. Esta regla no comprueba los constructores ni los miembros con nombres especiales como obtener y establecer los descriptores de acceso de propiedad.
+El nombre de un identificador contiene una o varias palabras que la biblioteca de corrector ortográfico de Microsoft no reconoce. Esta regla no comprueba los constructores ni los miembros con nombre especial como Get y set Property descriptores de acceso.
 
 ## <a name="rule-description"></a>Descripción de la regla
 
-Esta regla analiza el identificador en tokens y comprueba la ortografía de cada símbolo. El algoritmo de análisis realiza las siguientes transformaciones:
+Esta regla analiza el identificador en tokens y comprueba la ortografía de cada token. El algoritmo de análisis realiza las transformaciones siguientes:
 
-- Las letras mayúsculas inician un nuevo token. Por ejemplo, MiNombreEsJuan convierte en los tokens "Mi", "Nombre", "Es", "Joe".
+- Las letras mayúsculas inician un nuevo token. Por ejemplo, MyNameIsJoe acorta a "My", "Name", "is", "Joe".
 
-- Para varias letras mayúsculas, la última letra mayúscula inicia un nuevo token. Por ejemplo, GUIEditor convierte en los tokens "GUI", "Editor".
+- En el caso de varias letras mayúsculas, la última letra mayúscula inicia un nuevo token. Por ejemplo, GUIEditor acorta a "GUI", "Editor".
 
-- Se quitan los apóstrofos iniciales y finales. Por ejemplo, 'remitente' convierte en el token "remitente".
+- Se quitan los apóstrofos iniciales y finales. Por ejemplo, "Sender" acorta a "Sender".
 
-- Caracteres de subrayado indican el final de un token y se quitan. Por ejemplo, se acorta Hello_world a "Hello", "world".
+- Los guiones bajos indican el final de un token y se quitan. Por ejemplo, Hello_world acorta a "Hello", "World".
 
-- Se quita y comercial incrustado. Por ejemplo, para & mat convierte en el token "formato".
+- Se quitan las y comercial incrustadas. Por ejemplo, para & paspartú acorta a "format".
 
 ## <a name="language"></a>Lenguaje
 
-El corrector ortográfico comprueba actualmente sólo con los diccionarios de la referencia cultural en inglés. Puede cambiar la referencia cultural de su proyecto en el archivo de proyecto, agregando la **CodeAnalysisCulture** elemento.
+El corrector ortográfico comprueba actualmente únicamente los diccionarios de referencia cultural basados en inglés. Puede cambiar la referencia cultural del proyecto en el archivo del proyecto agregando el elemento **CodeAnalysisCulture** .
 
 Por ejemplo:
 
@@ -61,23 +61,23 @@ Por ejemplo:
 ```
 
 > [!IMPORTANT]
-> Si la referencia cultural se establece en algo distinto de una referencia cultural de inglés, esta regla de análisis de código se deshabilita de forma silenciosa.
+> Si establece la referencia cultural en algo distinto de una referencia cultural basada en inglés, esta regla de análisis de código se deshabilita de forma silenciosa.
 
 ## <a name="how-to-fix-violations"></a>Cómo corregir infracciones
 
-Para corregir una infracción de esta regla, corrija la ortografía de la palabra o agregar la palabra a un diccionario personalizado.
+Para corregir una infracción de esta regla, corrija la ortografía de la palabra o agregue la palabra a un diccionario personalizado.
 
 ### <a name="to-add-words-to-a-custom-dictionary"></a>Para agregar palabras a un diccionario personalizado
 
-Nombre del archivo de diccionario personalizado XML *CustomDictionary.xml*. Coloque el diccionario en el directorio de instalación de la herramienta, el directorio del proyecto, o en el directorio que está asociado con la herramienta en el perfil del usuario (*%USERPROFILE%\Application datos\\...* ). Para saber cómo agregar el diccionario personalizado a un proyecto en Visual Studio, vea [Cómo: Personalizar el diccionario de análisis de código](../code-quality/how-to-customize-the-code-analysis-dictionary.md).
+Asigne al archivo XML del diccionario personalizado el nombre *CustomDictionary. XML*. Coloque el Diccionario en el directorio de instalación de la herramienta, el directorio del proyecto o en el directorio que está asociado a la herramienta en el perfil del usuario ( *%userprofile%\Application Data\\...* ). Para obtener información sobre cómo agregar el diccionario personalizado a un proyecto en Visual Studio, [consulte Cómo: Personalizar el diccionario](../code-quality/how-to-customize-the-code-analysis-dictionary.md)de análisis de código.
 
-- Agregar palabras que no deben causar una infracción a la ruta de acceso Dictionary/Words/Recognized.
+- Agregue palabras que no deben provocar una infracción en el Diccionario/palabras/ruta de acceso reconocida.
 
-- Agregue las palabras que deben causar una infracción a la ruta de acceso Dictionary/Words/Unrecognized.
+- Agregue palabras que produzcan una infracción en el Diccionario/palabras/ruta de acceso no reconocida.
 
-- Agregue las palabras que deben marcarse como obsoletas a la ruta de acceso Dictionary/Words/Deprecated. Consulte el tema de regla relacionado [CA1726: Utilice términos preferidos](../code-quality/ca1726-use-preferred-terms.md) para obtener más información.
+- Agregue palabras que se deben marcar como obsoletas en el Diccionario/palabras/ruta de acceso desusada. Vea el tema [de la regla relacionada CA1726: Use los términos](../code-quality/ca1726-use-preferred-terms.md) preferidos para obtener más información.
 
-- Agregar excepciones a las reglas de grafía a la ruta de acceso de diccionario acrónimos/Acronyms/CasingExceptions.
+- Agregue excepciones a las reglas de mayúsculas y minúsculas de acrónimo a la ruta de acceso Dictionary/acrónimos/CasingExceptions.
 
 El siguiente es un ejemplo de la estructura de un archivo de diccionario personalizado:
 
@@ -104,19 +104,19 @@ El siguiente es un ejemplo de la estructura de un archivo de diccionario persona
 </Dictionary>
 ```
 
-## <a name="when-to-suppress-warnings"></a>Cuándo Suprimir advertencias
+## <a name="when-to-suppress-warnings"></a>Cuándo suprimir advertencias
 
-Suprimir una advertencia de esta regla sólo si la palabra es intencionalmente incorrecta y la palabra se aplica a un conjunto limitado de la biblioteca. Palabras escritas correctamente reducen la curva de aprendizaje necesaria para las nuevas bibliotecas de software.
+Suprima una advertencia de esta regla solo si la palabra está mal escrita y la palabra se aplica a un conjunto limitado de la biblioteca. Las palabras escritas correctamente reducen la curva de aprendizaje necesaria para las nuevas bibliotecas de software.
 
 ## <a name="related-rules"></a>Reglas relacionadas
 
-- [CA2204: Deben escribir correctamente los literales](../code-quality/ca2204-literals-should-be-spelled-correctly.md)
-- [CA1703: Cadenas de recursos deberían tener la ortografía correcta](../code-quality/ca1703-resource-strings-should-be-spelled-correctly.md)
-- [CA1709: Los identificadores deberían escribirse correctamente](../code-quality/ca1709-identifiers-should-be-cased-correctly.md)
-- [CA1708: Los identificadores deben diferenciarse por algo más que el caso](../code-quality/ca1708-identifiers-should-differ-by-more-than-case.md)
-- [CA1707: Los identificadores no deberían contener subrayado](../code-quality/ca1707-identifiers-should-not-contain-underscores.md)
-- [CA1726: Utilizar términos preferidos](../code-quality/ca1726-use-preferred-terms.md)
+- [CA2204: Los literales deben estar escritos correctamente](../code-quality/ca2204-literals-should-be-spelled-correctly.md)
+- [CA1703: Las cadenas de recursos deberían estar escritas correctamente](../code-quality/ca1703-resource-strings-should-be-spelled-correctly.md)
+- [CA1709: Los identificadores deben usar mayúsculas y minúsculas correctamente](../code-quality/ca1709-identifiers-should-be-cased-correctly.md)
+- [CA1708: Los identificadores deben diferir más que el uso de mayúsculas y minúsculas](../code-quality/ca1708-identifiers-should-differ-by-more-than-case.md)
+- [CA1707: Los identificadores no deben contener guiones bajos](../code-quality/ca1707-identifiers-should-not-contain-underscores.md)
+- [CA1726: Usar términos preferidos](../code-quality/ca1726-use-preferred-terms.md)
 
 ## <a name="see-also"></a>Vea también
 
-- [Cómo: Personalizar el diccionario de análisis de código](../code-quality/how-to-customize-the-code-analysis-dictionary.md)
+- [Cómo: Personalizar el diccionario de Análisis de código](../code-quality/how-to-customize-the-code-analysis-dictionary.md)

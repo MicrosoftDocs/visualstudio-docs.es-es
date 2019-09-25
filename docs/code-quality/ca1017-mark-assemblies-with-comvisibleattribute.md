@@ -18,12 +18,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: e6bc88d3932baa5bbb4a723d7a16509831d58146
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 073332738a01cb299b2b185c6fca20131222f981
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68923087"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71236258"
 ---
 # <a name="ca1017-mark-assemblies-with-comvisibleattribute"></a>CA1017: Marcar los ensamblados con ComVisibleAttribute
 
@@ -32,9 +32,9 @@ ms.locfileid: "68923087"
 |TypeName|MarkAssembliesWithComVisible|
 |Identificador de comprobación|CA1017|
 |Categoría|Microsoft.Design|
-|Cambio problemático|Poco problemático|
+|Cambio importante|Poco problemático|
 
-## <a name="cause"></a>Causa
+## <a name="cause"></a>Motivo
 Un ensamblado no tiene aplicado <xref:System.Runtime.InteropServices.ComVisibleAttribute?displayProperty=fullName> el atributo.
 
 ## <a name="rule-description"></a>Descripción de la regla

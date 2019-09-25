@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: eb7dd7df55f67d486d03048860bf3d20f976a70f
-ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
+ms.openlocfilehash: b9e3b3762b127b1f66b43d6c961054b9cef04048
+ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68870713"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71254117"
 ---
 # <a name="access-models-from-text-templates"></a>Acceder a los modelos desde plantillas de texto
 
@@ -63,7 +63,7 @@ Here is a list of elements in the model:
 
 - Para depurar la plantilla `debug="true"` , agregue `template` a la Directiva. La plantilla se abrirá en otra instancia de Visual Studio si se produce una excepción. Si desea interrumpir el depurador en un punto concreto del código, inserte la instrucción.`System.Diagnostics.Debugger.Break();`
 
-   Para obtener más información, vea Depurar [una plantilla de texto T4](../modeling/debugging-a-t4-text-template.md).
+   Para obtener más información, vea [depurar una plantilla de texto T4](../modeling/debugging-a-t4-text-template.md).
 
 ## <a name="about-the-dsl-directive-processor"></a>Acerca del procesador de directivas DSL
  La plantilla puede usar las clases de dominio que definió en la definición de DSL. Se trata de una directiva que suele aparecer cerca del inicio de la plantilla. En el ejemplo anterior, es lo siguiente.
@@ -138,7 +138,7 @@ For Each element As ExampleElement In Me.WorkModel.Elements
 ## <a name="loading-models-dynamically"></a>Cargar modelos dinámicamente
  Si desea determinar en tiempo de ejecución qué modelos se van a cargar, puede cargar dinámicamente un archivo de modelo en el código del programa, en lugar de usar la Directiva específica de DSL.
 
- Sin embargo, una de las funciones de la Directiva específica de DSL es importar el espacio de nombres DSL para que el código de plantilla pueda usar las clases de dominio definidas en ese DSL. Dado que no está utilizando la Directiva, debe agregar  **\<>** de ensamblado e  **\<importar** directivas de > para todos los modelos que puede cargar. Esto es fácil si los diferentes modelos que puede cargar son todas las instancias del mismo DSL.
+ Sin embargo, una de las funciones de la Directiva específica de DSL es importar el espacio de nombres DSL para que el código de plantilla pueda usar las clases de dominio definidas en ese DSL. Dado que no está utilizando la Directiva, debe agregar  **\<> de ensamblado** e  **\<importar** directivas de > para todos los modelos que puede cargar. Esto es fácil si los diferentes modelos que puede cargar son todas las instancias del mismo DSL.
 
  Para cargar el archivo, el método más eficaz es mediante el uso de Visual Studio ModelBus. En un escenario típico, la plantilla de texto usará una directiva específica de DSL para cargar el primer modelo de la manera habitual. Ese modelo contiene referencias de ModelBus a otro modelo. Puede usar ModelBus para abrir el modelo al que se hace referencia y obtener acceso a un elemento determinado. Para obtener más información, consulte [utilizando Visual Studio ModelBus en una plantilla de texto](../modeling/using-visual-studio-modelbus-in-a-text-template.md).
 

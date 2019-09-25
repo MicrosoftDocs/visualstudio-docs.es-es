@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c75c7c240f694b18caacefc0f9b1ee07f54faf36
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 0008767f7d37e2c088dad58a328b025f81090ad8
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68920800"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71232450"
 ---
 # <a name="ca2124-wrap-vulnerable-finally-clauses-in-outer-try"></a>CA2124: Incluir cláusulas finally vulnerables en un bloque try externo
 
@@ -28,9 +28,9 @@ ms.locfileid: "68920800"
 |TypeName|WrapVulnerableFinallyClausesInOuterTry|
 |Identificador de comprobación|CA2124|
 |Categoría|Microsoft.Security|
-|Cambio problemático|No trascendental|
+|Cambio importante|Poco problemático|
 
-## <a name="cause"></a>Causa
+## <a name="cause"></a>Motivo
 En las versiones 1,0 y 1,1 del .NET Framework, un método público o protegido contiene un `try` / / `catch` `finally` bloque. El `finally` bloque parece restablecer el estado de seguridad y no se incluye en `finally` un bloque.
 
 ## <a name="rule-description"></a>Descripción de la regla
@@ -47,7 +47,7 @@ No suprima las advertencias de esta regla.
 
 ## <a name="pseudo-code-example"></a>Ejemplo de pseudocódigo
 
-### <a name="description"></a>DESCRIPCIÓN
+### <a name="description"></a>Descripción
 
 El pseudocódigo siguiente muestra el patrón que detecta esta regla.
 

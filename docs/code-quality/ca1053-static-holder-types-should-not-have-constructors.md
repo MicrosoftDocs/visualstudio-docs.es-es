@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fec59e1d683c7867eb1cad9ae4e796a0815200d4
-ms.sourcegitcommit: ce1ab8a25c66a83e60eab80ed8e1596fe66dd85c
+ms.openlocfilehash: 44bdb8c12b48a983b88e6a035fc1522856b306be
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/29/2019
-ms.locfileid: "68604787"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71235586"
 ---
 # <a name="ca1053-static-holder-types-should-not-have-default-constructors"></a>CA1053: Los tipos titulares estáticos no deben tener constructores predeterminados
 
@@ -28,12 +28,12 @@ ms.locfileid: "68604787"
 |TypeName|StaticHolderTypesShouldNotHaveConstructors|
 |Identificador de comprobación|CA1053|
 |Categoría|Microsoft.Design|
-|Cambio problemático|Problemático|
+|Cambio importante|Problemático|
 
 > [!NOTE]
-> La regla CA1053 se combina [en CA1052: Los tipos de titulares estáticos deben estar sellados](ca1052-static-holder-types-should-be-sealed.md) en los analizadores de [FxCop](fxcop-analyzers.yml).
+> La regla CA1053 se combina [en CA1052: Los tipos de titulares estáticos deben estar sellados](ca1052-static-holder-types-should-be-sealed.md) en los [analizadores de FxCop](fxcop-analyzers.yml).
 
-## <a name="cause"></a>Causa
+## <a name="cause"></a>Motivo
 
 Un tipo público público o anidado declara solo miembros estáticos y tiene un constructor predeterminado.
 

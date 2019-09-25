@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b17ccfe66875588ac19c587ff6fcbd889d1e6a44
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 0ffc12d8d047be1bb13fcac133a61b047152ce3d
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68922316"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71235326"
 ---
 # <a name="ca1064-exceptions-should-be-public"></a>CA1064: Las excepciones deben ser públicas
 
@@ -28,9 +28,9 @@ ms.locfileid: "68922316"
 |TypeName|ExceptionsShouldBePublic|
 |Identificador de comprobación|CA1064|
 |Categoría|Microsoft.Design|
-|Cambio problemático|No trascendental|
+|Cambio importante|Poco problemático|
 
-## <a name="cause"></a>Causa
+## <a name="cause"></a>Motivo
 Una excepción no pública deriva directamente de <xref:System.Exception>, <xref:System.SystemException>o <xref:System.ApplicationException>.
 
 ## <a name="rule-description"></a>Descripción de la regla

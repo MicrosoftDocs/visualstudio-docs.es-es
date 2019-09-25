@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 43ef4165823f59045dda8c05b5679fdd3b795114
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 48cfcfd4feb794137e1634158b5af632aa976c60
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68921083"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71232765"
 ---
 # <a name="ca2112-secured-types-should-not-expose-fields"></a>CA2112: Los tipos seguros no deben exponer campos
 
@@ -28,9 +28,9 @@ ms.locfileid: "68921083"
 |TypeName|SecuredTypesShouldNotExposeFields|
 |Identificador de comprobación|CA2112|
 |Categoría|Microsoft.Security|
-|Cambio problemático|Problemático|
+|Cambio importante|Problemático|
 
-## <a name="cause"></a>Causa
+## <a name="cause"></a>Motivo
 Un tipo público o protegido contiene campos públicos y está protegido por una [petición de vínculo](/dotnet/framework/misc/link-demands).
 
 ## <a name="rule-description"></a>Descripción de la regla

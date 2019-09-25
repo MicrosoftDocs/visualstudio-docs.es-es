@@ -19,10 +19,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 20df85952b4e76e60d6e93067c1f1e7838b692cd
-ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
+ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/16/2019
+ms.lasthandoff: 09/25/2019
 ms.locfileid: "69551719"
 ---
 # <a name="deploy-an-office-solution-by-using-windows-installer"></a>Implementar una solución de Office mediante Windows Installer
@@ -64,7 +64,7 @@ Para obtener información sobre cómo crear un archivo [!INCLUDE[vs_dev10_long](
 ## <a name="Download"></a>Descargar ejemplos
 Este tema hace referencia a los ejemplos descargables siguientes.
 
-|Muestra<br /><br />|DESCRIPCIÓN<br /><br />|
+|Ejemplo<br /><br />|Descripción<br /><br />|
 |----------|---------------|
 |[ExcelAddIn](http://go.microsoft.com/fwlink/?LinkID=275492)<br /><br />|Complemento VSTO de Excel que se puede instalar en un equipo que ejecute una versión de Office de 32 o de 64 bits.<br /><br />|
 |[ExcelWorkbook](http://go.microsoft.com/fwlink/?LinkID=275493)<br /><br />|Personalización de nivel de documento de Excel que se puede instalar en un equipo que ejecute una versión de Office de 32 o de 64 bits.<br /><br />|
@@ -333,7 +333,7 @@ Las instalaciones por usuario solo requieren un instalador, independientemente d
 
 7. Repita este proceso para crear los valores siguientes.
 
-|Tipo de valor<br /><br />|NOMBRE<br /><br />|
+|Tipo de valor<br /><br />|Name<br /><br />|
 |--------------|--------|
 |Valor de cadena<br /><br />|**FriendlyName**<br /><br />|
 |Valor DWORD<br /><br />|**LoadBehavior**<br /><br />|
@@ -376,7 +376,7 @@ Las instalaciones por usuario solo requieren un instalador, independientemente d
 
 ## <a name="ConfigureDocument"></a>Configure a document-level customization
 
-Esta sección solo se aplica si va a implementar una personalización de nivel de documento. Si va a implementar un complemento de VSTO, puede ir inmediatamente a la sección compilar [el proyecto de instalación](#Build) .
+Esta sección solo se aplica si va a implementar una personalización de nivel de documento. Si va a implementar un complemento de VSTO, puede ir inmediatamente a la sección [compilar el proyecto de instalación](#Build) .
 
 Las personalizaciones de nivel de documento no utilizan claves del registro. En su lugar, las propiedades de documento personalizadas contienen la ubicación del manifiesto de implementación.
 
@@ -498,7 +498,7 @@ Para modificar las propiedades personalizadas, se crea un programa que quita la 
 
 8. En la tabla **Contextos del proyecto** , en la columna **Configuración** del proyecto **OfficeAddInSetup** , elija **SingleImage**y, después, elija el botón **Cerrar** .
 
-9. En la barra de menús, > elija compilar**compilación OfficeAddInSetup**.
+9. En la barra de menús > , **Elija compilar** **compilación OfficeAddInSetup**.
 
    Una vez finalizada la compilación, puede buscar el archivo *setup. exe* del proyecto **OfficeAddInSetup** en la siguiente ubicación: <em>OfficeAddInSetupProjectRoot</em> **\OfficeAddInSetup\Express\SingleImage\DiskImages\DISK1\\**
 

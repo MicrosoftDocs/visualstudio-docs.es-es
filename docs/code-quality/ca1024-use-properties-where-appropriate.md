@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 2763d7dd167ad0027509c44b8f9d43523f03976b
-ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
+ms.openlocfilehash: d312618c80abb6a4ce6e1a2676903d85867f4989
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69547798"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71236154"
 ---
 # <a name="ca1024-use-properties-where-appropriate"></a>CA1024: Utilizar las propiedades donde corresponda
 
@@ -31,9 +31,9 @@ ms.locfileid: "69547798"
 |TypeName|UsePropertiesWhereAppropriate|
 |Identificador de comprobación|CA1024|
 |Categoría|Microsoft.Design|
-|Cambio problemático|Problemático|
+|Cambio importante|Problemático|
 
-## <a name="cause"></a>Causa
+## <a name="cause"></a>Motivo
 
 Un método tiene un nombre que empieza por `Get`, no toma ningún parámetro y devuelve un valor que no es una matriz.
 

@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4a45b7061ae9d183ec7ee02a3b733ee9340b3689
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: d878572c4391805773a9a711ee88e7b58f507c65
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68921300"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71233292"
 ---
 # <a name="ca1901-pinvoke-declarations-should-be-portable"></a>CA1901: Las declaraciones P/Invoke deben ser portátiles
 
@@ -28,9 +28,9 @@ ms.locfileid: "68921300"
 |TypeName|PInvokeDeclarationsShouldBePortable|
 |Identificador de comprobación|CA1901|
 |Categoría|Microsoft. portabilidad|
-|Cambio problemático|Interrumpir: Si la P/Invoke es visible fuera del ensamblado. No problemático: Si la P/Invoke no es visible fuera del ensamblado.|
+|Cambio importante|Interrumpir: Si la P/Invoke es visible fuera del ensamblado. No problemático: Si la P/Invoke no es visible fuera del ensamblado.|
 
-## <a name="cause"></a>Causa
+## <a name="cause"></a>Motivo
 Esta regla evalúa el tamaño de cada parámetro y el valor devuelto de P/Invoke y comprueba que su tamaño, cuando se calculan las referencias a código no administrado en plataformas de 32 bits y de 64 bits, es correcto. La infracción más común de esta regla es pasar un entero de tamaño fijo en el que se requiere una variable de tamaño de puntero dependiente de la plataforma.
 
 ## <a name="rule-description"></a>Descripción de la regla

@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ffc94a04d708315cc143afd1556cb8a2f0072e91
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 34f9b8a79e38bdb9b6b097588697e2cd6c3545f7
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68923300"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71236591"
 ---
 # <a name="ca1005-avoid-excessive-parameters-on-generic-types"></a>CA1005: Evitar los parámetros excesivos en tipos genéricos
 
@@ -28,9 +28,9 @@ ms.locfileid: "68923300"
 |TypeName|AvoidExcessiveParametersOnGenericTypes|
 |Identificador de comprobación|CA1005|
 |Categoría|Microsoft.Design|
-|Cambio problemático|Problemático|
+|Cambio importante|Problemático|
 
-## <a name="cause"></a>Causa
+## <a name="cause"></a>Motivo
 Un tipo genérico visible externamente tiene más de dos parámetros de tipo.
 
 ## <a name="rule-description"></a>Descripción de la regla

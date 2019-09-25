@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: df6ab704c2dfdbf8ebdf8eb42f56d8d64600736f
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 31c147c67854dd59f1fb7c9202f553edfb4a77a8
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68921826"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71234504"
 ---
 # <a name="ca1504-review-misleading-field-names"></a>CA1504: Revisar los nombres de campos erróneos
 
@@ -28,9 +28,9 @@ ms.locfileid: "68921826"
 |TypeName|ReviewMisleadingFieldNames|
 |Identificador de comprobación|CA1504|
 |Categoría|Microsoft. mantenibilidad|
-|Cambio problemático|Poco problemático|
+|Cambio importante|Poco problemático|
 
-## <a name="cause"></a>Causa
+## <a name="cause"></a>Motivo
 El nombre de un campo de instancia comienza por "s_" o el nombre de `static` un`Shared` campo [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)](en) comienza por "m_".
 
 ## <a name="rule-description"></a>Descripción de la regla

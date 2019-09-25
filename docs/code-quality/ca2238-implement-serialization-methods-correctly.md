@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: ec40eb3317f541bec92f06d8921fc2f545606d1a
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: b0bbe31f0431b259f60c1fe68a8d9edeffc572d9
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68920082"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71237907"
 ---
 # <a name="ca2238-implement-serialization-methods-correctly"></a>CA2238: Implementar métodos de serialización correctamente
 
@@ -31,9 +31,9 @@ ms.locfileid: "68920082"
 |TypeName|ImplementSerializationMethodsCorrectly|
 |Identificador de comprobación|CA2238|
 |Categoría|Microsoft.Usage|
-|Cambio problemático|Interrumpir: Si el método es visible fuera del ensamblado.<br /><br /> No problemático: Si el método no es visible fuera del ensamblado.|
+|Cambio importante|Interrumpir: Si el método es visible fuera del ensamblado.<br /><br /> No problemático: Si el método no es visible fuera del ensamblado.|
 
-## <a name="cause"></a>Causa
+## <a name="cause"></a>Motivo
 Un método que controla un evento de serialización no especifica la firma correcta, el tipo de valor devuelto ni la visibilidad.
 
 ## <a name="rule-description"></a>Descripción de la regla

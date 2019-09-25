@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4b294b267aa7bb1a2912ed42807ac0f878c87838
-ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
+ms.openlocfilehash: 06fdc566abd9bd16758f224f8a9fe805cddb2c61
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69547657"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71236048"
 ---
 # <a name="ca1032-implement-standard-exception-constructors"></a>CA1032: Implementar constructores de excepción estándar
 
@@ -28,9 +28,9 @@ ms.locfileid: "69547657"
 |TypeName|ImplementStandardExceptionConstructors|
 |Identificador de comprobación|CA1032|
 |Categoría|Microsoft.Design|
-|Cambio problemático|Poco problemático|
+|Cambio importante|Poco problemático|
 
-## <a name="cause"></a>Causa
+## <a name="cause"></a>Motivo
 
 Un tipo extiende <xref:System.Exception?displayProperty=fullName> pero no declara todos los constructores necesarios.
 

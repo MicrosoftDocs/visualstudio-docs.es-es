@@ -18,12 +18,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 502033d2adffd640d2af6ee8d36b0c0f3cd71472
-ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
+ms.openlocfilehash: c9b6e48fb82be5a41c420827a32926630bb725ed
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69547933"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71236490"
 ---
 # <a name="ca1008-enums-should-have-zero-value"></a>CA1008: Las enumeraciones deben tener un valor igual a cero
 
@@ -32,9 +32,9 @@ ms.locfileid: "69547933"
 |TypeName|EnumsShouldHaveZeroValue|
 |Identificador de comprobación|CA1008|
 |Categoría|Microsoft.Design|
-|Cambio problemático|Sin interrupciones: cuando se le pide que agregue un valor **None** a una enumeración sin marca. Interrumpir: cuando se le pida que cambie el nombre o quite los valores de enumeración.|
+|Cambio importante|Sin interrupciones: cuando se le pide que agregue un valor **None** a una enumeración sin marca. Interrumpir: cuando se le pida que cambie el nombre o quite los valores de enumeración.|
 
-## <a name="cause"></a>Causa
+## <a name="cause"></a>Motivo
 
 Una enumeración sin un <xref:System.FlagsAttribute?displayProperty=fullName> elemento aplicado no define ningún miembro que tenga un valor de cero. O bien, una enumeración que tiene <xref:System.FlagsAttribute> un aplicado define un miembro que tiene un valor de cero pero su nombre no es ' none '. O bien, la enumeración define varios miembros de valor cero.
 

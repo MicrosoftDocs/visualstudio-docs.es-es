@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5daf51cd8bef4910a327b8e261f15332ad6522da
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: eb41f2ad4548933d10137e7f72cae59643d33043
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68921621"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71233877"
 ---
 # <a name="ca1722-identifiers-should-not-have-incorrect-prefix"></a>CA1722: Los identificadores no deben tener un prefijo incorrecto
 
@@ -28,9 +28,9 @@ ms.locfileid: "68921621"
 |TypeName|IdentifiersShouldNotHaveIncorrectPrefix|
 |Identificador de comprobación|CA1722|
 |Categoría|Microsoft.Naming|
-|Cambio problemático|Problemático|
+|Cambio importante|Problemático|
 
-## <a name="cause"></a>Causa
+## <a name="cause"></a>Motivo
 Un identificador tiene un prefijo incorrecto.
 
 ## <a name="rule-description"></a>Descripción de la regla

@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 82146c2ac997a0202c20e15492becb89a293f427
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 6763fd9f8999bd590511026f6571db6a747c43bc
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62541928"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71231855"
 ---
 # <a name="ca2204-literals-should-be-spelled-correctly"></a>CA2204: Los literales deben estar escritos correctamente
 
@@ -28,27 +28,27 @@ ms.locfileid: "62541928"
 |TypeName|LiteralsShouldBeSpelledCorrectly|
 |Identificador de comprobación|CA2204|
 |Categoría|Microsoft.Usage|
-|Cambio problemático|No trascendental|
+|Cambio importante|Poco problemático|
 
 ## <a name="cause"></a>Motivo
 
-Una cadena literal se pasa como argumento para un parámetro localizable, o a una propiedad traducible y la cadena contiene una o varias palabras que no son reconocidas por la biblioteca de correctores ortográficos de Microsoft.
+Una cadena literal se pasa como argumento para un parámetro localizable, o a una propiedad localizable, y la cadena contiene una o varias palabras que la biblioteca de corrector ortográfico de Microsoft no reconoce.
 
 ## <a name="rule-description"></a>Descripción de la regla
 
-Esta regla comprueba si una cadena literal que se pasa como un valor a un parámetro o propiedad cuando uno o varios de los casos siguientes es true:
+Esta regla comprueba una cadena literal que se pasa como un valor a un parámetro o propiedad cuando se cumple uno o varios de los casos siguientes:
 
-- El <xref:System.ComponentModel.LocalizableAttribute> atributo del parámetro o la propiedad se establece en true.
+- El <xref:System.ComponentModel.LocalizableAttribute> atributo del parámetro o propiedad está establecido en true.
 
-- El nombre de parámetro o la propiedad contiene "Text", "Mensaje" o "Título".
+- El nombre de la propiedad o el parámetro contiene "Text", "message" o "Caption".
 
-- El nombre de la variable de cadena que se pasa a un <xref:System.Console.Write%2A> o <xref:System.Console.WriteLine> método es "value" o "format".
+- El nombre de la variable de cadena que se pasa a <xref:System.Console.Write%2A> un <xref:System.Console.WriteLine> método o es "Value" o "format".
 
-Esta regla analiza la cadena literal en palabras, dividir en tokens las palabras compuestas y comprueba la ortografía de cada palabra o token. Para obtener información sobre el algoritmo de análisis, consulte [CA1704: Deben escribir correctamente los identificadores](../code-quality/ca1704-identifiers-should-be-spelled-correctly.md).
+Esta regla analiza la cadena literal en palabras, acortando las palabras compuestas y comprueba la ortografía de cada palabra o token. Para obtener información sobre el algoritmo de análisis [, consulte CA1704: Los identificadores deben estar escritos correctamente](../code-quality/ca1704-identifiers-should-be-spelled-correctly.md).
 
 ## <a name="language"></a>Lenguaje
 
-El corrector ortográfico comprueba actualmente sólo con los diccionarios de la referencia cultural en inglés. Puede cambiar la referencia cultural de su proyecto en el archivo de proyecto, agregando la **CodeAnalysisCulture** elemento.
+El corrector ortográfico comprueba actualmente únicamente los diccionarios de referencia cultural basados en inglés. Puede cambiar la referencia cultural del proyecto en el archivo del proyecto agregando el elemento **CodeAnalysisCulture** .
 
 Por ejemplo:
 
@@ -59,17 +59,17 @@ Por ejemplo:
 ```
 
 > [!IMPORTANT]
-> Si la referencia cultural se establece en algo distinto de una referencia cultural de inglés, esta regla de análisis de código se deshabilita de forma silenciosa.
+> Si establece la referencia cultural en algo distinto de una referencia cultural basada en inglés, esta regla de análisis de código se deshabilita de forma silenciosa.
 
 ## <a name="how-to-fix-violations"></a>Cómo corregir infracciones
 
-Para corregir una infracción de esta regla, corrija la ortografía de la palabra o agregar la palabra a un diccionario personalizado. Para obtener información sobre cómo usar los diccionarios personalizados, vea [Cómo: Personalizar el diccionario de análisis de código](../code-quality/how-to-customize-the-code-analysis-dictionary.md).
+Para corregir una infracción de esta regla, corrija la ortografía de la palabra o agregue la palabra a un diccionario personalizado. Para obtener información sobre cómo usar diccionarios personalizados, consulte [cómo: Personalizar el diccionario](../code-quality/how-to-customize-the-code-analysis-dictionary.md)de análisis de código.
 
-## <a name="when-to-suppress-warnings"></a>Cuándo Suprimir advertencias
+## <a name="when-to-suppress-warnings"></a>Cuándo suprimir advertencias
 
-No suprima las advertencias de esta regla. Palabras escritas correctamente reducen la curva de aprendizaje necesaria para las nuevas bibliotecas de software.
+No suprima las advertencias de esta regla. Las palabras escritas correctamente reducen la curva de aprendizaje necesaria para las nuevas bibliotecas de software.
 
 ## <a name="related-rules"></a>Reglas relacionadas
 
-- [CA1704: Los identificadores deberían tener la ortografía correcta](../code-quality/ca1704-identifiers-should-be-spelled-correctly.md)
-- [CA1703: Cadenas de recursos deberían tener la ortografía correcta](../code-quality/ca1703-resource-strings-should-be-spelled-correctly.md)
+- [CA1704: Los identificadores deben estar escritos correctamente](../code-quality/ca1704-identifiers-should-be-spelled-correctly.md)
+- [CA1703: Las cadenas de recursos deberían estar escritas correctamente](../code-quality/ca1703-resource-strings-should-be-spelled-correctly.md)

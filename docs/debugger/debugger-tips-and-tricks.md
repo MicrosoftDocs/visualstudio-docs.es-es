@@ -15,10 +15,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 61c1efea7340425090adbdd1c9bc865c4a056d42
-ms.sourcegitcommit: 0e482cfc15f809b564c3de61646f29ecd7bfcba6
+ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/14/2019
+ms.lasthandoff: 09/25/2019
 ms.locfileid: "70987763"
 ---
 # <a name="learn-productivity-tips-and-tricks-for-the-debugger-in-visual-studio"></a>Obtenga información sobre sugerencias y trucos de productividad para el depurador en Visual Studio
@@ -33,15 +33,15 @@ Si con frecuencia mantiene el mouse sobre las sugerencias de datos durante la de
 
 ## <a name="edit-your-code-and-continue-debugging-c-vb-c"></a>Edite el código y continúe con laC#depuración C++(, VB,)
 
-En la mayoría de los lenguajes compatibles con Visual Studio, puede modificar el código en medio de una sesión de depuración y continuar con la depuración. Para usar esta característica, haga clic en el código con el cursor mientras está en pausa en el depurador, realice las modificaciones y presione **F5**, **F10**o **F11** para continuar con la depuración.
+En la mayoría de los lenguajes compatibles con Visual Studio, puede editar el código en medio de una sesión de depuración y continuar con la depuración. Para usar esta característica, haga clic en el código con el cursor mientras está en pausa en el depurador, realice las ediciones y presione **F5**, **F10** o **F11** para continuar con la depuración.
 
-![Editar y continuar depuración](../debugger/media/dbg-tips-edit-and-continue.gif "EditAndContinue")
+![Edición de código y depuración continua](../debugger/media/dbg-tips-edit-and-continue.gif "EditAndContinue")
 
-Para obtener más información sobre el uso de la característica y sobre las limitaciones de las características, vea [Editar y continuar](../debugger/edit-and-continue.md).
+Para obtener más información sobre el uso de la característica y las limitaciones de esta, consulte [Editar y continuar](../debugger/edit-and-continue.md).
 
 ## <a name="edit-xaml-code-and-continue-debugging"></a>Editar código XAML y continuar la depuración
 
-Para modificar el código XAML durante una sesión de depuración, vea [escribir y depurar código XAML en ejecución con la recarga activa de XAML](xaml-hot-reload.md).
+Para modificar el código XAML durante una sesión de depuración, consulte [Escribir y depurar código XAML en ejecución con la recarga frecuente de XAML](xaml-hot-reload.md).
 
 ## <a name="debug-issues-that-are-hard-to-reproduce"></a>Problemas de depuración que son difíciles de reproducir
 

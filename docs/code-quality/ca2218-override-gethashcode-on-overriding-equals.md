@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5dbd8580f5aaeb88c08d35b50258510cb1a85ba2
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 8699e3434dc9c4cf9d3eccc37916c20ff7f34015
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68920286"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71231186"
 ---
 # <a name="ca2218-override-gethashcode-on-overriding-equals"></a>CA2218: Invalidar el método GetHashCode al invalidar el método Equals
 
@@ -28,9 +28,9 @@ ms.locfileid: "68920286"
 |TypeName|OverrideGetHashCodeOnOverridingEquals|
 |Identificador de comprobación|CA2218|
 |Categoría|Microsoft.Usage|
-|Cambio problemático|No trascendental|
+|Cambio importante|Poco problemático|
 
-## <a name="cause"></a>Causa
+## <a name="cause"></a>Motivo
 Un tipo público invalida <xref:System.Object.Equals%2A?displayProperty=fullName> pero no invalida. <xref:System.Object.GetHashCode%2A?displayProperty=fullName>
 
 ## <a name="rule-description"></a>Descripción de la regla
@@ -62,7 +62,7 @@ No suprima las advertencias de esta regla.
 
 ## <a name="class-example"></a>Ejemplo de clase
 
-### <a name="description"></a>DESCRIPCIÓN
+### <a name="description"></a>Descripción
 En el ejemplo siguiente se muestra una clase (tipo de referencia) que infringe esta regla.
 
 ### <a name="code"></a>Código
@@ -76,7 +76,7 @@ En el ejemplo siguiente se corrige la infracción <xref:System.Object.GetHashCod
 
 ## <a name="structure-example"></a>Ejemplo de estructura
 
-### <a name="description"></a>DESCRIPCIÓN
+### <a name="description"></a>Descripción
 En el ejemplo siguiente se muestra una estructura (tipo de valor) que infringe esta regla.
 
 ### <a name="code"></a>Código

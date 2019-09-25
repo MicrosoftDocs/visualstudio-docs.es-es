@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 532a10740b0617f32e4f970da8dc2a7e2807f792
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: a182beba738e583fad83c3f51d7efa312761906d
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68920472"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71231983"
 ---
 # <a name="ca2143-transparent-methods-should-not-use-security-demands"></a>CA2143: Los métodos transparentes no deben usar peticiones de seguridad
 
@@ -24,9 +24,9 @@ ms.locfileid: "68920472"
 |TypeName|TransparentMethodsShouldNotDemand|
 |Identificador de comprobación|CA2143|
 |Categoría|Microsoft.Security|
-|Cambio problemático|Problemático|
+|Cambio importante|Problemático|
 
-## <a name="cause"></a>Causa
+## <a name="cause"></a>Motivo
 Un tipo o método tranparent se marca mediante declaración con una <xref:System.Security.Permissions.SecurityAction?displayProperty=fullName> `.Demand` petición o el método llama al <xref:System.Security.CodeAccessPermission.Demand%2A?displayProperty=fullName> método.
 
 ## <a name="rule-description"></a>Descripción de la regla

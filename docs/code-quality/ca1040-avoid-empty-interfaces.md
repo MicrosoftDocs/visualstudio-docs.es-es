@@ -18,12 +18,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 491923cb46100e9239b889024ade00022318b6cd
-ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
+ms.openlocfilehash: a316025191ea68b1e63fc849db5b85c8f888a24d
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69547705"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71235863"
 ---
 # <a name="ca1040-avoid-empty-interfaces"></a>CA1040: Evitar las interfaces vacías
 
@@ -32,9 +32,9 @@ ms.locfileid: "69547705"
 |TypeName|AvoidEmptyInterfaces|
 |Identificador de comprobación|CA1040|
 |Categoría|Microsoft.Design|
-|Cambio problemático|Problemático|
+|Cambio importante|Problemático|
 
-## <a name="cause"></a>Causa
+## <a name="cause"></a>Motivo
 
 La interfaz no declara ningún miembro ni implementa dos o más interfaces.
 

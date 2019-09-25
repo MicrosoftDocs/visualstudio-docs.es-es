@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b0d5afd33ffb73c47b0f373f70c56166dbfced6d
-ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
+ms.openlocfilehash: 75f214809d5bfab660b1d559e21d3de3c5ea75fa
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69547128"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71233869"
 ---
 # <a name="ca1725-parameter-names-should-match-base-declaration"></a>CA1725: Los nombres de parámetro deben coincidir con la declaración base
 
@@ -28,9 +28,9 @@ ms.locfileid: "69547128"
 |TypeName|ParameterNamesShouldMatchBaseDeclaration|
 |Identificador de comprobación|CA1725|
 |Categoría|Microsoft.Naming|
-|Cambio problemático|Problemático|
+|Cambio importante|Problemático|
 
-## <a name="cause"></a>Causa
+## <a name="cause"></a>Motivo
 
 El nombre de un parámetro en una invalidación de método no coincide con el nombre del parámetro en la declaración base del método o con el nombre del parámetro en la declaración de interfaz del método.
 

@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: aa45a54a994d19b1a04bc0785f21b88dfeef4475
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: fdbb6012fb1252c90014ba91caf8ad7dacf901c2
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68922126"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71234859"
 ---
 # <a name="ca1402-avoid-overloads-in-com-visible-interfaces"></a>CA1402: Evitar las sobrecargas en interfaces visibles a través de COM
 
@@ -31,9 +31,9 @@ ms.locfileid: "68922126"
 |TypeName|AvoidOverloadsInComVisibleInterfaces|
 |Identificador de comprobación|CA1402|
 |Categoría|Microsoft.Interoperability|
-|Cambio problemático|Problemático|
+|Cambio importante|Problemático|
 
-## <a name="cause"></a>Causa
+## <a name="cause"></a>Motivo
 Una interfaz visible del modelo de objetos componentes (COM) declara métodos sobrecargados.
 
 ## <a name="rule-description"></a>Descripción de la regla

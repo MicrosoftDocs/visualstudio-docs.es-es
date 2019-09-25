@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 725bf599d8d13d345767f5af4d38db619263c23d
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 8e75b12b820b3ff3ac5a26f83148a49ca87c12ad
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68920381"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71231950"
 ---
 # <a name="ca2149-transparent-methods-must-not-call-into-native-code"></a>CA2149: Los métodos transparentes no deben llamar a código nativo
 
@@ -24,9 +24,9 @@ ms.locfileid: "68920381"
 |TypeName|TransparentMethodsMustNotCallNativeCode|
 |Identificador de comprobación|CA2149|
 |Categoría|Microsoft.Security|
-|Cambio problemático|Problemático|
+|Cambio importante|Problemático|
 
-## <a name="cause"></a>Causa
+## <a name="cause"></a>Motivo
 Un método llama a una función nativa a través de un código auxiliar de método como P/Invoke.
 
 ## <a name="rule-description"></a>Descripción de la regla

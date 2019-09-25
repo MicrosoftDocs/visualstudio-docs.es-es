@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 7c07dde4c3b992db30c9fc72a0dfa01f0f13b31e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b99aae681dbe7bbeece557a15d78aed0b3f07f6f
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62806607"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71230830"
 ---
 # <a name="ca2233-operations-should-not-overflow"></a>CA2233: Las operaciones no deben desbordarse
 
@@ -31,32 +31,32 @@ ms.locfileid: "62806607"
 |TypeName|OperationsShouldNotOverflow|
 |Identificador de comprobación|CA2233|
 |Categoría|Microsoft.Usage|
-|Cambio problemático|No trascendental|
+|Cambio importante|Poco problemático|
 
 ## <a name="cause"></a>Motivo
 
-Un método realiza una operación aritmética y no valida los operandos de antemano para evitar el desbordamiento.
+Un método realiza una operación aritmética y no valida los operandos con antelación para evitar el desbordamiento.
 
 ## <a name="rule-description"></a>Descripción de la regla
 
-No realizar operaciones aritméticas sin validar primero los operandos para asegurarse de que el resultado de la operación no está fuera del intervalo de valores posibles para los tipos de datos implicados. Según el contexto de ejecución y los tipos de datos implicados, puede dar lugar a un desbordamiento aritmético en ya sea un <xref:System.OverflowException?displayProperty=fullName> o se descartan los bits más significativos del resultado.
+No realice operaciones aritméticas sin validar primero los operandos para asegurarse de que el resultado de la operación no está fuera del intervalo de valores posibles para los tipos de datos implicados. Dependiendo del contexto de ejecución y de los tipos de datos implicados, el desbordamiento aritmético puede dar lugar <xref:System.OverflowException?displayProperty=fullName> a o a los bits más significativos del resultado descartado.
 
 ## <a name="how-to-fix-violations"></a>Cómo corregir infracciones
 
 Para corregir una infracción de esta regla, valide los operandos antes de realizar la operación.
 
-## <a name="when-to-suppress-warnings"></a>Cuándo Suprimir advertencias
+## <a name="when-to-suppress-warnings"></a>Cuándo suprimir advertencias
 
-Es seguro suprimir una advertencia de esta regla si los valores posibles de los operandos nunca hará que la operación aritmética de desbordamiento.
+Es seguro suprimir una advertencia de esta regla si los valores posibles de los operandos nunca harán que la operación aritmética se desborde.
 
 ## <a name="example-of-a-violation"></a>Ejemplo de una infracción
 
-Un método en el siguiente ejemplo manipula un entero que infringe esta regla. [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] requiere el **quitar** opción desbordamiento de enteros deshabilitará para que esta activación.
+Un método en el ejemplo siguiente manipula un entero que infringe esta regla. [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]requiere que se deshabilite la opción para **quitar** el desbordamiento de enteros para que se active.
 
 [!code-vb[FxCop.Usage.OperationOverflow#1](../code-quality/codesnippet/VisualBasic/ca2233-operations-should-not-overflow_1.vb)]
 [!code-csharp[FxCop.Usage.OperationOverflow#1](../code-quality/codesnippet/CSharp/ca2233-operations-should-not-overflow_1.cs)]
 
-Si se pasa al método en este ejemplo <xref:System.Int32.MinValue?displayProperty=fullName>, la operación sufriría un subdesbordamiento. Esto hace que el bit más significativo del resultado que se descarten. El código siguiente muestra cómo se produce esto.
+Si se pasa <xref:System.Int32.MinValue?displayProperty=fullName>el método en este ejemplo, la operación se subdesbordamiento. Esto hace que se descarte el bit más significativo del resultado. En el código siguiente se muestra cómo se produce esto.
 
 ```csharp
 public static void Main()
@@ -81,32 +81,32 @@ Resultado:
 2147483647
 ```
 
-## <a name="fix-with-input-parameter-validation"></a>Corregir con validación de parámetros de entrada
+## <a name="fix-with-input-parameter-validation"></a>Corrección con validación de parámetros de entrada
 
-El ejemplo siguiente corrige la infracción anterior al validar el valor de entrada.
+En el ejemplo siguiente se corrige la infracción anterior mediante la validación del valor de Input.
 
 [!code-csharp[FxCop.Usage.OperationOverflowFixed#1](../code-quality/codesnippet/CSharp/ca2233-operations-should-not-overflow_2.cs)]
 [!code-vb[FxCop.Usage.OperationOverflowFixed#1](../code-quality/codesnippet/VisualBasic/ca2233-operations-should-not-overflow_2.vb)]
 
 ## <a name="fix-with-a-checked-block"></a>Corregir con un bloque activado
 
-El ejemplo siguiente corrige la infracción anterior ajustando la operación en un bloque activado. Si la operación provoca un desbordamiento, un <xref:System.OverflowException?displayProperty=fullName> se iniciará.
+En el ejemplo siguiente se corrige la infracción anterior ajustando la operación en un bloque activado. Si la operación provoca un desbordamiento, se <xref:System.OverflowException?displayProperty=fullName> iniciará una.
 
-No se admiten los bloques comprobados en [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)].
+Los bloques comprobados no [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]se admiten en.
 
 [!code-csharp[FxCop.Usage.OperationOverflowChecked#1](../code-quality/codesnippet/CSharp/ca2233-operations-should-not-overflow_3.cs)]
 
-## <a name="turn-on-checked-arithmetic-overflowunderflow"></a>Activar el desbordamiento y subdesbordamiento aritmético activado
+## <a name="turn-on-checked-arithmetic-overflowunderflow"></a>Activar desbordamiento o subdesbordamiento aritmético comprobados
 
-Si activa activado desbordamiento y subdesbordamiento aritmético en C#, es equivalente a cada operación de enteros de ajuste en un bloque activado.
+Si activa el desbordamiento o subdesbordamiento aritmético comprobados C#en, es equivalente a ajustar cada operación de entero en un bloque activado.
 
-Para activar comprueba el desbordamiento y subdesbordamiento aritmético en C#:
+Para activar el desbordamiento o subdesbordamiento aritmético comprobados en C#:
 
-1. En **el Explorador de soluciones**, haga clic en el proyecto y elija **propiedades**.
+1. En **Explorador de soluciones**, haga clic con el botón derecho en el proyecto y elija **propiedades**.
 
 2. Seleccione la pestaña **Compilar** y haga clic en **Opciones avanzadas**.
 
-3. Seleccione **comprobación de desbordamiento y subdesbordamiento aritmético** y haga clic en **Aceptar**.
+3. Seleccione **Buscar desbordamiento o** subdesbordamiento aritmético y haga clic en **Aceptar**.
 
 ## <a name="see-also"></a>Vea también
 

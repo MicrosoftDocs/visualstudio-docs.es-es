@@ -11,12 +11,12 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9333f2fb1bff0fdb8a3f0dac8004f66156b8863d
-ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
+ms.openlocfilehash: 5c288764cf9182bc34233d312546f7915eed5975
+ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68870819"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71252177"
 ---
 # <a name="vsix-extension-schema-20-reference"></a>Referencia del esquema de extensión VSIX 2,0
 Un archivo de manifiesto de implementación de VSIX describe el contenido de un paquete VSIX. El formato de archivo se rige por un esquema. La versión 2,0 de este esquema admite la adición de tipos y atributos personalizados.  El esquema del manifiesto es extensible. El cargador de manifiestos omite los elementos y atributos XML que no comprende.
@@ -38,7 +38,7 @@ Un archivo de manifiesto de implementación de VSIX describe el contenido de un 
 
 - `<Assets>`: Esta sección contiene todos los recursos contenidos en este paquete. Sin esta sección, este paquete no mostrará ningún contenido.
 
-- `<AnyElement>*`-El esquema del manifiesto es lo suficientemente flexible como para permitir cualquier otro elemento. Los elementos secundarios no reconocidos por el cargador de manifiestos se exponen en la API del administrador de extensiones como objetos XmlElement adicionales. Con estos elementos secundarios, las extensiones VSIX pueden definir datos adicionales en el archivo de manifiesto que el código que se ejecuta en Visual Studio puede tener acceso en tiempo de ejecución. Vea [Microsoft. VisualStudio. ExtensionManager. IExtension. AdditionalElements](/previous-versions/visualstudio/visual-studio-2013/hh265266(v=vs.120)).
+- `<AnyElement>*`-El esquema del manifiesto es lo suficientemente flexible como para permitir cualquier otro elemento. Los elementos secundarios no reconocidos por el cargador de manifiestos se exponen en la API del administrador de extensiones como objetos XmlElement adicionales. Con estos elementos secundarios, las extensiones VSIX pueden definir datos adicionales en el archivo de manifiesto que el código que se ejecuta en Visual Studio puede obtener acceso en tiempo de ejecución. Vea [Microsoft. VisualStudio. ExtensionManager. IExtension. AdditionalElements](/previous-versions/visualstudio/visual-studio-2013/hh265266(v=vs.120)).
 
 ### <a name="metadata-element"></a>Elemento metadata
  Esta sección son los metadatos sobre el paquete, su identidad e información de publicidad. `<Metadata>`contiene los siguientes elementos:

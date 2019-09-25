@@ -13,12 +13,12 @@ ms.workload:
 f1_keywords:
 - CA2312
 - EnsureNetDataContractSerializerBinderIsSetBeforeDeserializing
-ms.openlocfilehash: 38495a3c8d5a2efb5e5e96785cecbd6d50e9cd00
-ms.sourcegitcommit: 673b9364fc9a96b027662dcb4cf5d61cab60ef11
+ms.openlocfilehash: 03d3e6c4f5e7a3cf4da9f998b75260df522e019f
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/21/2019
-ms.locfileid: "69891121"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71237700"
 ---
 # <a name="ca2312-ensure-netdatacontractserializerbinder-is-set-before-deserializing"></a>CA2312: Asegúrese de que se establece NetDataContractSerializer.Binder antes de deserializar
 
@@ -27,9 +27,9 @@ ms.locfileid: "69891121"
 |TypeName|EnsureNetDataContractSerializerBinderIsSetBeforeDeserializing|
 |Identificador de comprobación|CA2312|
 |Categoría|Microsoft.Security|
-|Cambio problemático|No trascendental|
+|Cambio importante|Poco problemático|
 
-## <a name="cause"></a>Causa
+## <a name="cause"></a>Motivo
 
 Se <xref:System.Runtime.Serialization.NetDataContractSerializer?displayProperty=nameWithType> llamó a un método de deserialización o se hizo <xref:System.Runtime.Serialization.NetDataContractSerializer.Binder> referencia a él y la propiedad puede ser null.
 
@@ -41,7 +41,7 @@ Esta regla busca <xref:System.Runtime.Serialization.NetDataContractSerializer?di
 
 ## <a name="how-to-fix-violations"></a>Cómo corregir infracciones
 
-- Si es posible, use un serializador seguro en su lugar y **no permita que un atacante especifique un tipo arbitrario para**deserializar. Algunos serializadores más seguros incluyen:
+- Si es posible, use un serializador seguro en su lugar y **no permita que un atacante especifique un tipo arbitrario para deserializar**. Algunos serializadores más seguros incluyen:
   - <xref:System.Runtime.Serialization.DataContractSerializer?displayProperty=nameWithType>
   - <xref:System.Runtime.Serialization.Json.DataContractJsonSerializer?displayProperty=nameWithType>
   - <xref:System.Web.Script.Serialization.JavaScriptSerializer?displayProperty=nameWithType>: No usar <xref:System.Web.Script.Serialization.SimpleTypeResolver?displayProperty=nameWithType>nunca. Si debe usar un solucionador de tipos, restrinja los tipos deserializados a una lista de espera.
@@ -142,7 +142,7 @@ Public Class ExampleClass
 End Class
 ```
 
-### <a name="solution"></a>Solución
+### <a name="solution"></a>Soluciones
 
 ```csharp
 using System;

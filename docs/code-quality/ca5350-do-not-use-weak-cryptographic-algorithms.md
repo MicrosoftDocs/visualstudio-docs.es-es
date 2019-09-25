@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bff3ccdb9120a1964f5c55e2d533406eedf01a88
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 4aecd052e86a4c0366a1a43cb985ad50ab8862d8
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62540851"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71236957"
 ---
 # <a name="ca5350-do-not-use-weak-cryptographic-algorithms"></a>CA5350: No usar algoritmos criptográficos no seguros
 
@@ -22,7 +22,7 @@ ms.locfileid: "62540851"
 |TypeName|DoNotUseWeakCryptographicAlgorithms|
 |Identificador de comprobación|CA5350|
 |Categoría|Microsoft.Cryptography|
-|Cambio problemático|No trascendental|
+|Cambio importante|Poco problemático|
 
 > [!NOTE]
 > Esta advertencia se actualizó por última vez en noviembre de 2015.
@@ -47,7 +47,7 @@ Use opciones de criptografía más segura:
 
 - Para las funciones hash SHA1 o RIPEMD160, use los de la familia [SHA-2](/windows/desktop/SecCrypto/hash-and-signature-algorithms) (por ejemplo, <xref:System.Security.Cryptography.SHA512>, <xref:System.Security.Cryptography.SHA384>y <xref:System.Security.Cryptography.SHA256>).
 
-## <a name="when-to-suppress-warnings"></a>Cuándo Suprimir advertencias
+## <a name="when-to-suppress-warnings"></a>Cuándo suprimir advertencias
 
 Suprima una advertencia de esta regla cuando el nivel de protección necesario para los datos no requiera una garantía de seguridad.
 

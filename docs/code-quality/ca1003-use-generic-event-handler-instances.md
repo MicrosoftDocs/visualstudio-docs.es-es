@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: a1ef4258d1b095395be34c7004e3f783b973897d
-ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
+ms.openlocfilehash: c654da177e4a9cf820887cf74977a4c3da5a57b6
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69547879"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71236653"
 ---
 # <a name="ca1003-use-generic-event-handler-instances"></a>CA1003: Utilizar instancias genéricas de controlador de eventos
 
@@ -31,9 +31,9 @@ ms.locfileid: "69547879"
 |TypeName|UseGenericEventHandlerInstances|
 |Identificador de comprobación|CA1003|
 |Categoría|Microsoft.Design|
-|Cambio problemático|Problemático|
+|Cambio importante|Problemático|
 
-## <a name="cause"></a>Causa
+## <a name="cause"></a>Motivo
 
 Un tipo contiene un delegado que devuelve void y cuya firma contiene dos parámetros (el primero es un objeto y el segundo un tipo que se puede asignar a EventArgs) y el ensamblado contenedor tiene como destino .NET.
 

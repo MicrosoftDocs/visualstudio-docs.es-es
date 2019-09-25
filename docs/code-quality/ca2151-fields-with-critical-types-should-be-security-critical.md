@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2b75425d35e51125b0cfe1f76c8c18d7f155a12c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 46cb99f00bbbd9969899121f82ba591980b5b288
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62796748"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71231918"
 ---
 # <a name="ca2151-fields-with-critical-types-should-be-security-critical"></a>CA2151: Los campos con tipos críticos deben ser críticos para la seguridad
 
@@ -22,7 +22,7 @@ ms.locfileid: "62796748"
 |TypeName||
 |Identificador de comprobación|CA2151|
 |Categoría|Microsoft.Security|
-|Cambio problemático|Problemático|
+|Cambio importante|Problemático|
 
 ## <a name="cause"></a>Motivo
 
@@ -48,7 +48,7 @@ Para utilizar tipos críticos para la seguridad, el código que hace referencia 
 
 ## <a name="how-to-fix-violations"></a>Cómo corregir infracciones
 
-Para corregir una infracción de esta regla, marque el campo con el <xref:System.Security.SecurityCriticalAttribute> atributo, o convierta el tipo que es al que hace referencia el campo de seguridad transparente o prueba de errores críticos.
+Para corregir una infracción de esta regla, marque el campo con <xref:System.Security.SecurityCriticalAttribute> el atributo o haga que el tipo al que hace referencia el campo sea transparente para la seguridad o crítico para la seguridad.
 
 ```csharp
 // Fix 1: Make the referencing field security critical
@@ -75,7 +75,7 @@ Para corregir una infracción de esta regla, marque el campo con el <xref:System
    }
 ```
 
-## <a name="when-to-suppress-warnings"></a>Cuándo Suprimir advertencias
+## <a name="when-to-suppress-warnings"></a>Cuándo suprimir advertencias
 
 No suprima las advertencias de esta regla.
 

@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: bd269b099095326a260da7613bf3c2c402e864be
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 746475e60bbe72c4ebfc51f13d0b2d4d0552ff62
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62797687"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71235188"
 ---
 # <a name="ca1300-specify-messageboxoptions"></a>CA1300: Especificar MessageBoxOptions
 
@@ -30,28 +30,28 @@ ms.locfileid: "62797687"
 |-|-|
 |TypeName|SpecifyMessageBoxOptions|
 |Identificador de comprobación|CA1300|
-|Categoría|Microsoft.Globalization|
-|Cambio problemático|Poco problemático|
+|Categoría|Microsoft. Globalization|
+|Cambio importante|Poco problemático|
 
 ## <a name="cause"></a>Motivo
 
-Un método llama a una sobrecarga de la <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> método que no tome un <xref:System.Windows.Forms.MessageBoxOptions?displayProperty=fullName> argumento.
+Un método llama a una sobrecarga del <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> método que no toma un <xref:System.Windows.Forms.MessageBoxOptions?displayProperty=fullName> argumento.
 
 ## <a name="rule-description"></a>Descripción de la regla
 
-Para mostrar un cuadro de mensaje correctamente para las referencias culturales que usan un orden de lectura de derecha a izquierda, pase el [MessageBoxOptions.RightAlign](<xref:System.Windows.Forms.MessageBoxOptions.RightAlign>) y [MessageBoxOptions.RtlReading](<xref:System.Windows.Forms.MessageBoxOptions.RtlReading>) campos a la <xref:System.Windows.Forms.MessageBox.Show%2A> método. Examine el <xref:System.Windows.Forms.Control.RightToLeft%2A?displayProperty=fullName> propiedad del control que contiene para determinar si se usa un orden de lectura de derecha a izquierda.
+Para mostrar un cuadro de mensaje correctamente para las <xref:System.Windows.Forms.MessageBox.Show%2A> referencias culturales que usan un orden de lectura de derecha a izquierda, pase los campos [messageboxoptions. RightAlign](<xref:System.Windows.Forms.MessageBoxOptions.RightAlign>) y [messageboxoptions. RtlReading](<xref:System.Windows.Forms.MessageBoxOptions.RtlReading>) al método. Examine la <xref:System.Windows.Forms.Control.RightToLeft%2A?displayProperty=fullName> propiedad del control contenedor para determinar si se va a usar un orden de lectura de derecha a izquierda.
 
 ## <a name="how-to-fix-violations"></a>Cómo corregir infracciones
 
-Para corregir una infracción de esta regla, llame a una sobrecarga de la <xref:System.Windows.Forms.MessageBox.Show%2A> método que toma un <xref:System.Windows.Forms.MessageBoxOptions> argumento.
+Para corregir una infracción de esta regla, llame a una sobrecarga <xref:System.Windows.Forms.MessageBox.Show%2A> del método que toma <xref:System.Windows.Forms.MessageBoxOptions> un argumento.
 
-## <a name="when-to-suppress-warnings"></a>Cuándo Suprimir advertencias
+## <a name="when-to-suppress-warnings"></a>Cuándo suprimir advertencias
 
-Es seguro suprimir una advertencia de esta regla cuando la biblioteca de código no se puede adaptar para una referencia cultural que se usa un orden de lectura de derecha a izquierda.
+Es seguro suprimir una advertencia de esta regla cuando la biblioteca de código no se localizará para una referencia cultural que use un orden de lectura de derecha a izquierda.
 
 ## <a name="example"></a>Ejemplo
 
-El ejemplo siguiente muestra un método que muestra un cuadro de mensaje que tiene las opciones apropiadas para el orden de lectura de la referencia cultural. Un archivo de recursos que no se muestra, es necesario para compilar el ejemplo. Siga los comentarios en el ejemplo para generar el ejemplo sin un archivo de recursos y probar la característica de derecha a izquierda.
+En el ejemplo siguiente se muestra un método que muestra un cuadro de mensaje con opciones adecuadas para el orden de lectura de la referencia cultural. Un archivo de recursos, que no se muestra, es necesario para compilar el ejemplo. Siga los comentarios del ejemplo para crear el ejemplo sin un archivo de recursos y probar la característica de derecha a izquierda.
 
 [!code-vb[FxCop.Globalization.SpecifyMBOptions#1](../code-quality/codesnippet/VisualBasic/ca1300-specify-messageboxoptions_1.vb)]
 [!code-csharp[FxCop.Globalization.SpecifyMBOptions#1](../code-quality/codesnippet/CSharp/ca1300-specify-messageboxoptions_1.cs)]

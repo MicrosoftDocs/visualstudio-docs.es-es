@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 415b8c95dda3fca084fcb103dfa5e4f39e1a73da
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: ef7b72eade7ea8e4486d5c317c06026bb4d0b95f
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68922527"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71235744"
 ---
 # <a name="ca1049-types-that-own-native-resources-should-be-disposable"></a>CA1049: Los tipos que poseen recursos nativos deben ser descartables
 
@@ -31,9 +31,9 @@ ms.locfileid: "68922527"
 |TypeName|TypesThatOwnNativeResourcesShouldBeDisposable|
 |Identificador de comprobación|CA1049|
 |Categoría|Microsoft.Design|
-|Cambio problemático|Poco problemático|
+|Cambio importante|Poco problemático|
 
-## <a name="cause"></a>Causa
+## <a name="cause"></a>Motivo
 
 Un tipo hace referencia <xref:System.IntPtr?displayProperty=fullName> a un campo <xref:System.UIntPtr?displayProperty=fullName> , un campo o <xref:System.Runtime.InteropServices.HandleRef?displayProperty=fullName> un campo, pero no implementa <xref:System.IDisposable?displayProperty=fullName>.
 

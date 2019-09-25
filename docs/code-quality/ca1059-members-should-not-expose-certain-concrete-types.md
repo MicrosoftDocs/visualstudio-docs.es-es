@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3f24881d04599677c5d45c93fc940286f115d593
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 97ee4e11ceb3380c204d00203b9e81397a39e362
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68922509"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71235461"
 ---
 # <a name="ca1059-members-should-not-expose-certain-concrete-types"></a>CA1059: Los miembros no deben exponer algunos tipos concretos
 
@@ -28,9 +28,9 @@ ms.locfileid: "68922509"
 |TypeName|MembersShouldNotExposeCertainConcreteTypes|
 |Identificador de comprobación|CA1059|
 |Categoría|Microsoft.Design|
-|Cambio problemático|Problemático|
+|Cambio importante|Problemático|
 
-## <a name="cause"></a>Causa
+## <a name="cause"></a>Motivo
 Un miembro visible externamente es un determinado tipo concreto o expone determinados tipos concretos a través de uno de sus parámetros o valor devuelto. Actualmente, esta regla notifica la exposición de los siguientes tipos concretos:
 
 - Tipo derivado de <xref:System.Xml.XmlNode?displayProperty=fullName>.
@@ -42,7 +42,7 @@ En la tabla siguiente se enumeran los tipos concretos específicos y sus reempla
 
 |Tipo concreto|Replacement|
 |-------------------|-----------------|
-|<xref:System.Xml.XPath.XPathDocument>|<xref:System.Xml.XPath.IXPathNavigable?displayProperty=fullName><br /><br /> El uso de la interfaz desacopla el miembro de una implementación concreta de un origen de datos XML.|
+|<xref:System.Xml.XPath.XPathDocument>|<xref:System.Xml.XPath.IXPathNavigable?displayProperty=fullName>.<br /><br /> El uso de la interfaz desacopla el miembro de una implementación concreta de un origen de datos XML.|
 
 ## <a name="how-to-fix-violations"></a>Cómo corregir infracciones
 Para corregir una infracción de esta regla, cambie el tipo concreto a la interfaz sugerida.

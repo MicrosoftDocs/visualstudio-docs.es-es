@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 44028caf027191846fa653db06abbe4027fdde8d
-ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
+ms.openlocfilehash: 805ceb7abf7096df29894a23be6c8e7b1f6bd5b2
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69547091"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71233908"
 ---
 # <a name="ca1721-property-names-should-not-match-get-methods"></a>CA1721: Los nombres de propiedades no deben coincidir con los métodos get
 
@@ -31,9 +31,9 @@ ms.locfileid: "69547091"
 |TypeName|PropertyNamesShouldNotMatchGetMethods|
 |Identificador de comprobación|CA1721|
 |Categoría|Microsoft.Naming|
-|Cambio problemático|Problemático|
+|Cambio importante|Problemático|
 
-## <a name="cause"></a>Causa
+## <a name="cause"></a>Motivo
 
 El nombre de un miembro comienza con ' get ' y, de lo contrario, coincide con el nombre de una propiedad. Por ejemplo, un tipo que contiene un método denominado ' GetColor ' y una propiedad denominada ' color ' provocan una infracción de la regla.
 

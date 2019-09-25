@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8f25b74949c734921c313ae2cf00a2d217029e52
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 7ebbbbe01f1dd23dfc560e019133dacd3517b388
+ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68921387"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71253458"
 ---
 # <a name="ca1822-mark-members-as-static"></a>CA1822: Marcar miembros como estáticos
 
@@ -28,9 +28,9 @@ ms.locfileid: "68921387"
 |TypeName|MarkMethodsAsStatic|
 |Identificador de comprobación|CA1822|
 |Categoría|Microsoft.Performance|
-|Cambio problemático|No problemático: Si el miembro no es visible fuera del ensamblado, independientemente del cambio que realice. No problemático: si simplemente cambia el miembro a un miembro de instancia con la `this` palabra clave.<br /><br /> Problemático: Si cambia el miembro de un miembro de instancia a un miembro estático y es visible fuera del ensamblado.|
+|Cambio importante|No problemático: Si el miembro no es visible fuera del ensamblado, independientemente del cambio que realice. No problemático: si simplemente cambia el miembro a un miembro de instancia con la `this` palabra clave.<br /><br /> Problemático: Si cambia el miembro de un miembro de instancia a un miembro estático y es visible fuera del ensamblado.|
 
-## <a name="cause"></a>Causa
+## <a name="cause"></a>Motivo
 Un miembro que no tiene acceso a los datos de instancia no está marcado como estático [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)](compartido en).
 
 ## <a name="rule-description"></a>Descripción de la regla

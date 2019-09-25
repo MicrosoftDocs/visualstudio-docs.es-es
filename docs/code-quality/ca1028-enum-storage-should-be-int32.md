@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: c91de575abe8b19a5d8f6fca864e2bc452da7cb2
-ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
+ms.openlocfilehash: 47a934a6e35296927eea64465ff8e7007219bec5
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69547651"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71236093"
 ---
 # <a name="ca1028-enum-storage-should-be-int32"></a>CA1028: El almacenamiento de la enumeración debe ser de tipo Int32
 
@@ -31,9 +31,9 @@ ms.locfileid: "69547651"
 |TypeName|EnumStorageShouldBeInt32|
 |Identificador de comprobación|CA1028|
 |Categoría|Microsoft.Design|
-|Cambio problemático|Problemático|
+|Cambio importante|Problemático|
 
-## <a name="cause"></a>Causa
+## <a name="cause"></a>Motivo
 
 El tipo subyacente de una enumeración no <xref:System.Int32?displayProperty=fullName>es.
 

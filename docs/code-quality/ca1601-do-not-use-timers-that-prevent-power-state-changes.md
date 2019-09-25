@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6b3c3fe41332d488d180ddafbedfe29da1a3855e
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 1300b733cbd4808359089787ceebeb0750de6723
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68921788"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71234342"
 ---
 # <a name="ca1601-do-not-use-timers-that-prevent-power-state-changes"></a>CA1601: No utilizar temporizadores que impidan los cambios de estado de energía
 
@@ -28,9 +28,9 @@ ms.locfileid: "68921788"
 |TypeName|DoNotUseTimersThatPreventPowerStateChanges|
 |Identificador de comprobación|CA1601|
 |Categoría|Microsoft.Mobility|
-|Cambio problemático|Problemático|
+|Cambio importante|Problemático|
 
-## <a name="cause"></a>Causa
+## <a name="cause"></a>Motivo
 Un temporizador tiene un intervalo establecido para que tenga lugar más de una vez por segundo.
 
 ## <a name="rule-description"></a>Descripción de la regla

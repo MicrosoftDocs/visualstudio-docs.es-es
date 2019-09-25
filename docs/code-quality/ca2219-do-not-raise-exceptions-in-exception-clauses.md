@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2f8e949e21530654882cba99a7d9fedad8b5b59b
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 3c06f8693034b9943de8072f110f4661b87098a5
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68920263"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71231156"
 ---
 # <a name="ca2219-do-not-raise-exceptions-in-exception-clauses"></a>CA2219: No producir excepciones en cláusulas de excepción
 
@@ -28,9 +28,9 @@ ms.locfileid: "68920263"
 |TypeName|DoNotRaiseExceptionsInExceptionClauses|
 |Identificador de comprobación|CA2219|
 |Categoría|Microsoft.Usage|
-|Cambio problemático|No problemático, problemático|
+|Cambio importante|No problemático, interrupción|
 
-## <a name="cause"></a>Causa
+## <a name="cause"></a>Motivo
 Se produce una excepción desde una `finally`cláusula, filtro o error.
 
 ## <a name="rule-description"></a>Descripción de la regla

@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: de64e0271370a3cdcc6f0963dbf06925621b9b65
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 5283c96a484f47fe280a07c5889b8db877db5ffc
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68920189"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71230998"
 ---
 # <a name="ca2223-members-should-differ-by-more-than-return-type"></a>CA2223: Los miembros deben diferenciarse por algo más que por un tipo de valor devuelto
 
@@ -28,9 +28,9 @@ ms.locfileid: "68920189"
 |TypeName|MembersShouldDifferByMoreThanReturnType|
 |Identificador de comprobación|CA2223|
 |Categoría|Microsoft.Usage|
-|Cambio problemático|Problemático|
+|Cambio importante|Problemático|
 
-## <a name="cause"></a>Causa
+## <a name="cause"></a>Motivo
 Dos miembros públicos o protegidos tienen firmas que son idénticas salvo el tipo de valor devuelto.
 
 ## <a name="rule-description"></a>Descripción de la regla

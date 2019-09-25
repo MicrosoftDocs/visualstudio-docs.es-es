@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c5cc12d5d0a62f8d2530f13fcf860aba4e118ca4
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 99274abee2c05a1bd33e34c9eb02cc928c1b54b0
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68921850"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71234612"
 ---
 # <a name="ca1415-declare-pinvokes-correctly"></a>CA1415: Declarar elementos P/Invoke correctamente
 
@@ -28,9 +28,9 @@ ms.locfileid: "68921850"
 |TypeName|DeclarePInvokesCorrectly|
 |Identificador de comprobación|CA1415|
 |Categoría|Microsoft.Interoperability|
-|Cambio problemático|No problemático: Si la P/Invoke que declara el parámetro no se puede considerar fuera del ensamblado. Interrumpir: Si la P/Invoke que declara el parámetro puede verse fuera del ensamblado.|
+|Cambio importante|No problemático: Si la P/Invoke que declara el parámetro no se puede considerar fuera del ensamblado. Interrumpir: Si la P/Invoke que declara el parámetro puede verse fuera del ensamblado.|
 
-## <a name="cause"></a>Causa
+## <a name="cause"></a>Motivo
 No se ha declarado correctamente un método de invocación de plataforma.
 
 ## <a name="rule-description"></a>Descripción de la regla

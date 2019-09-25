@@ -19,12 +19,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: b3ba92e154e3091f6ec483ba469c3fe60f50ec61
-ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
+ms.openlocfilehash: 837abb051467135b6332b53b2c59e5016d3adff6
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "66744809"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71233061"
 ---
 # <a name="ca2100-review-sql-queries-for-security-vulnerabilities"></a>CA2100: Revisar consultas SQL para comprobar si tienen vulnerabilidades de seguridad
 
@@ -33,23 +33,23 @@ ms.locfileid: "66744809"
 |TypeName|ReviewSqlQueriesForSecurityVulnerabilities|
 |Identificador de comprobación|CA2100|
 |Categoría|Microsoft.Security|
-|Cambio problemático|Poco problemático|
+|Cambio importante|Poco problemático|
 
 ## <a name="cause"></a>Motivo
 
-Un método establece el <xref:System.Data.IDbCommand.CommandText%2A?displayProperty=fullName> propiedad mediante el uso de una cadena que se crea a partir de un argumento de cadena al método.
+Un método establece la <xref:System.Data.IDbCommand.CommandText%2A?displayProperty=fullName> propiedad mediante una cadena que se genera a partir de un argumento de cadena para el método.
 
 ## <a name="rule-description"></a>Descripción de la regla
 
-Esta regla supone que el argumento de cadena contiene datos proporcionados por el usuario. Una cadena de comandos de SQL compilada a partir de datos proporcionados por el usuario es vulnerable a ataques de inserción de SQL. En un ataque de inyección de código SQL, un usuario malintencionado proporciona la entrada que modifica el diseño de una consulta en un intento de dañar o obtener acceso no autorizado a la base de datos subyacente. Las técnicas típicas incluyen la inserción de una comilla o un apóstrofo, que es el delimitador de literal de cadena SQL; dos guiones, lo que significa un comentario SQL; y un punto y coma, que indica que sigue un nuevo comando. Si la entrada del usuario debe formar parte de la consulta, use uno de los siguientes, se muestran en orden de eficacia, para reducir el riesgo de ataque.
+Esta regla supone que el argumento de cadena contiene datos proporcionados por el usuario. Una cadena de comandos de SQL compilada a partir de datos proporcionados por el usuario es vulnerable a ataques de inserción de SQL. En un ataque por inyección de SQL, un usuario malintencionado proporciona datos que alteran el diseño de una consulta en un intento de dañar u obtener acceso no autorizado a la base de datos subyacente. Entre las técnicas típicas se incluye la inserción de una comilla simple o un apóstrofo, que es el delimitador de cadena literal de SQL. dos guiones, lo que significa un comentario SQL; y un punto y coma, que indica que sigue un nuevo comando. Si los datos proporcionados por el usuario deben formar parte de la consulta, use uno de los siguientes, enumerados en orden de efectividad, para reducir el riesgo de ataque.
 
 - Usar un procedimiento almacenado.
 
-- Utilice una cadena de comandos con parámetros.
+- Use una cadena de comandos parametrizada.
 
-- Validar la entrada del usuario para el tipo y el contenido antes de compilar la cadena de comandos.
+- Valide la entrada del usuario para el tipo y el contenido antes de generar la cadena de comando.
 
-Los siguientes tipos de .NET implementan la <xref:System.Data.IDbCommand.CommandText%2A> propiedad o proporcionar constructores que establecen la propiedad mediante un argumento de cadena.
+Los siguientes tipos .net implementan <xref:System.Data.IDbCommand.CommandText%2A> la propiedad o proporcionan constructores que establecen la propiedad mediante un argumento de cadena.
 
 - <xref:System.Data.Odbc.OdbcCommand?displayProperty=fullName> y <xref:System.Data.Odbc.OdbcDataAdapter?displayProperty=fullName>
 
@@ -59,16 +59,16 @@ Los siguientes tipos de .NET implementan la <xref:System.Data.IDbCommand.Command
 
 - <xref:System.Data.SqlClient.SqlCommand?displayProperty=fullName> y <xref:System.Data.SqlClient.SqlDataAdapter?displayProperty=fullName>
 
-Tenga en cuenta que se infringe esta regla cuando se usa el método ToString de un tipo de forma explícita o implícita para construir la cadena de consulta. A continuación se muestra un ejemplo.
+Tenga en cuenta que esta regla se infringe cuando el método ToString de un tipo se usa explícita o implícitamente para construir la cadena de consulta. A continuación se muestra un ejemplo.
 
 ```csharp
 int x = 10;
 string query = "SELECT TOP " + x.ToString() + " FROM Table";
 ```
 
-Dado que un usuario malintencionado puede invalidar el método ToString(), se infringe la regla.
+La regla se infringe porque un usuario malintencionado puede invalidar el método ToString ().
 
-También se infringe la regla cuando se utiliza ToString de forma implícita.
+La regla también se infringe cuando se utiliza ToString implícitamente.
 
 ```csharp
 int x = 10;
@@ -77,15 +77,15 @@ string query = String.Format("SELECT TOP {0} FROM Table", x);
 
 ## <a name="how-to-fix-violations"></a>Cómo corregir infracciones
 
-Para corregir una infracción de esta regla, utilice una consulta parametrizada.
+Para corregir una infracción de esta regla, use una consulta con parámetros.
 
-## <a name="when-to-suppress-warnings"></a>Cuándo Suprimir advertencias
+## <a name="when-to-suppress-warnings"></a>Cuándo suprimir advertencias
 
-Es seguro suprimir una advertencia de esta regla si el texto del comando no contiene ninguna entrada del usuario.
+Es seguro suprimir una advertencia de esta regla si el texto del comando no contiene ninguna entrada de usuario.
 
 ## <a name="example"></a>Ejemplo
 
-El ejemplo siguiente muestra un método, `UnsafeQuery`, que infringe la regla y un método, `SaferQuery`, que cumple la regla mediante el uso de una cadena de comandos con parámetros.
+En el ejemplo siguiente se muestra un `UnsafeQuery`método,, que infringe la regla y un método `SaferQuery`,, que cumple la regla mediante una cadena de comandos parametrizada.
 
 [!code-vb[FxCop.Security.ReviewSqlQueries#1](../code-quality/codesnippet/VisualBasic/ca2100-review-sql-queries-for-security-vulnerabilities_1.vb)]
 [!code-csharp[FxCop.Security.ReviewSqlQueries#1](../code-quality/codesnippet/CSharp/ca2100-review-sql-queries-for-security-vulnerabilities_1.cs)]

@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1dcef8fbfd61b8cd8c946f76d6fcb93dc46f1654
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 7f9455e83d7cb128a34696ae5e849fd0901f1891
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68920632"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71232216"
 ---
 # <a name="ca2136-members-should-not-have-conflicting-transparency-annotations"></a>CA2136: Los miembros no deben tener anotaciones de transparencia en conflicto
 
@@ -29,9 +29,9 @@ ms.locfileid: "68920632"
 |TypeName|TransparencyAnnotationsShouldNotConflict|
 |Identificador de comprobación|CA2136|
 |Categoría|Microsoft.Security|
-|Cambio problemático|Problemático|
+|Cambio importante|Problemático|
 
-## <a name="cause"></a>Causa
+## <a name="cause"></a>Motivo
 Esta regla se desencadena cuando un miembro de tipo se marca <xref:System.Security> con un atributo de seguridad que tiene una transparencia diferente que el atributo de seguridad de un contenedor del miembro.
 
 ## <a name="rule-description"></a>Descripción de la regla

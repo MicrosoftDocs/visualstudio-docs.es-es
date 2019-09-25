@@ -10,12 +10,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 35e41301dcf0a1358b6d063ce557212915b5f591
-ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
+ms.openlocfilehash: 986607d7f42f49c99396bbb021c48bad549930c9
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "65841440"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71237291"
 ---
 # <a name="ca3006-review-code-for-process-command-injection-vulnerabilities"></a>CA3006: Revisión de código en busca de vulnerabilidades de inyección de comandos de procesos
 
@@ -24,32 +24,32 @@ ms.locfileid: "65841440"
 |TypeName|ReviewCodeForProcessCommandInjectionVulnerabilities|
 |Identificador de comprobación|CA3006|
 |Categoría|Microsoft.Security|
-|Cambio problemático|No trascendental|
+|Cambio importante|Poco problemático|
 
 ## <a name="cause"></a>Motivo
 
-Entrada de solicitud HTTP potencialmente no confiable alcanza un comando de proceso.
+Una entrada de solicitud HTTP que podría no ser de confianza llega a un comando de proceso.
 
 ## <a name="rule-description"></a>Descripción de la regla
 
-Al trabajar con entradas no seguras, esté atento ataques de inyección de comandos. Un ataque de inyección de comandos puede ejecutar comandos malintencionados en el sistema operativo subyacente, poner en peligro la seguridad e integridad de su servidor.
+Al trabajar con una entrada que no es de confianza, tenga en cuentan los ataques por inyección de comandos. Un ataque por inyección de comandos puede ejecutar comandos malintencionados en el sistema operativo subyacente, poniendo en peligro la seguridad y la integridad del servidor.
 
-Esta regla intenta encontrar la entrada de las solicitudes HTTP para llegar a un comando de proceso.
-
-> [!NOTE]
-> Esta regla no puede realizar un seguimiento de datos a través de ensamblados. Por ejemplo, si un ensamblado lee la entrada de solicitud HTTP y, a continuación, pasa a otro ensamblado que se inicia un proceso, esta regla no genera una advertencia.
+Esta regla intenta buscar la entrada de las solicitudes HTTP que llegan a un comando de proceso.
 
 > [!NOTE]
-> Hay un límite configurable para profundidad esta regla analizará el flujo de datos a través de llamadas de método. Consulte [Configuration Analyzer](https://github.com/dotnet/roslyn-analyzers/blob/master/docs/Analyzer%20Configuration.md#dataflow-analysis) acerca de cómo configurar el límite en un archivo EditorConfig.
+> Esta regla no puede realizar el seguimiento de los datos entre ensamblados. Por ejemplo, si un ensamblado lee la entrada de la solicitud HTTP y, a continuación, la pasa a otro ensamblado que inicia un proceso, esta regla no generará ninguna advertencia.
+
+> [!NOTE]
+> Existe un límite configurable en cuanto a la profundidad con que esta regla analizará el flujo de datos a través de las llamadas a métodos. Vea [configuración del analizador](https://github.com/dotnet/roslyn-analyzers/blob/master/docs/Analyzer%20Configuration.md#dataflow-analysis) para saber cómo configurar el límite en un archivo EditorConfig.
 
 ## <a name="how-to-fix-violations"></a>Cómo corregir infracciones
 
-- Si es posible, evite iniciar procesos en función de entrada del usuario.
-- Validar la entrada con un conjunto de prueba de errores conocido de caracteres y la longitud.
+- Si es posible, evite iniciar procesos en función de los datos proporcionados por el usuario.
+- Valide la entrada con un conjunto seguro de caracteres y longitud conocidos.
 
-## <a name="when-to-suppress-warnings"></a>Cuándo Suprimir advertencias
+## <a name="when-to-suppress-warnings"></a>Cuándo suprimir advertencias
 
-Si conoce la entrada se ha validado o caracteres de escape para que sean seguras, es seguro suprimir esta advertencia.
+Si sabe que la entrada se ha validado o se ha convertido en un carácter de escape para que sea segura, es seguro suprimir esta advertencia.
 
 ## <a name="pseudo-code-examples"></a>Ejemplos de pseudocódigo
 

@@ -16,12 +16,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 054f809483cf2a9c4647370e2f69187795c5c203
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: fc4504e917daeadc93963c6d6870c00515a5065a
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62545272"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71233162"
 ---
 # <a name="ca2002-do-not-lock-on-objects-with-weak-identity"></a>CA2002: No bloquear objetos con identidad débil
 
@@ -30,21 +30,21 @@ ms.locfileid: "62545272"
 |TypeName|DoNotLockOnObjectsWithWeakIdentity|
 |Identificador de comprobación|CA2002|
 |Categoría|Microsoft.Reliability|
-|Cambio problemático|Poco problemático|
+|Cambio importante|Poco problemático|
 
 ## <a name="cause"></a>Motivo
 
-Un subproceso intenta adquirir un bloqueo en un objeto que tiene identidad débil.
+Un subproceso intenta adquirir un bloqueo en un objeto que tiene una identidad débil.
 
 ## <a name="rule-description"></a>Descripción de la regla
 
 Se dice que un objeto tiene una identidad débil cuando se puede tener acceso directamente a través de los límites del dominio de aplicación. Un subproceso que intenta obtener un bloqueo en un objeto que tiene identidad débil se puede bloquear con un segundo subproceso en un dominio de aplicación diferente que tenga bloqueado el mismo objeto.
 
-Los siguientes tipos tienen una identidad débil y se marcan mediante la regla:
+Los tipos siguientes tienen una identidad débil y están marcados por la regla:
 
 - <xref:System.String>
 
-- Las matrices de tipos de valor, incluidos [tipos enteros](/dotnet/csharp/language-reference/keywords/integral-types-table), [tipos de punto flotante](/dotnet/csharp/language-reference/keywords/floating-point-types-table), y <xref:System.Boolean>.
+- Matrices de tipos de valor, incluidos los [tipos enteros](/dotnet/csharp/language-reference/keywords/integral-types-table), los [tipos de punto flotante](/dotnet/csharp/language-reference/keywords/floating-point-types-table)y <xref:System.Boolean>.
 
 - <xref:System.MarshalByRefObject>
 
@@ -62,9 +62,9 @@ Los siguientes tipos tienen una identidad débil y se marcan mediante la regla:
 
 ## <a name="how-to-fix-violations"></a>Cómo corregir infracciones
 
-Para corregir una infracción de esta regla, utilice un objeto de un tipo que no está en la lista en la sección de descripción.
+Para corregir una infracción de esta regla, use un objeto de un tipo que no esté en la lista de la sección Descripción.
 
-## <a name="when-to-suppress-warnings"></a>Cuándo Suprimir advertencias
+## <a name="when-to-suppress-warnings"></a>Cuándo suprimir advertencias
 
 No suprima las advertencias de esta regla.
 
@@ -74,7 +74,7 @@ No suprima las advertencias de esta regla.
 
 ## <a name="example"></a>Ejemplo
 
-El ejemplo siguiente muestra algunos bloqueos de objeto que infringen la regla.
+En el ejemplo siguiente se muestran algunos bloqueos de objetos que infringen la regla.
 
 [!code-vb[FxCop.Reliability.LockWeakObjects#1](../code-quality/codesnippet/VisualBasic/ca2002-do-not-lock-on-objects-with-weak-identity_1.vb)]
 [!code-csharp[FxCop.Reliability.LockWeakObjects#1](../code-quality/codesnippet/CSharp/ca2002-do-not-lock-on-objects-with-weak-identity_1.cs)]
@@ -83,5 +83,5 @@ El ejemplo siguiente muestra algunos bloqueos de objeto que infringen la regla.
 
 - <xref:System.Threading.Monitor>
 - <xref:System.AppDomain>
-- [lock (instrucción) (C#)](/dotnet/csharp/language-reference/keywords/lock-statement)
-- [SyncLock (instrucción) (Visual Basic)](/dotnet/visual-basic/language-reference/statements/synclock-statement)
+- [Lock (instrucciónC#) ()](/dotnet/csharp/language-reference/keywords/lock-statement)
+- [Instrucción SyncLock (Visual Basic)](/dotnet/visual-basic/language-reference/statements/synclock-statement)

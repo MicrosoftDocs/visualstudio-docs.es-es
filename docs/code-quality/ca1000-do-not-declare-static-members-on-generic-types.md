@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: f10433330642ee06dd7f705cdd8e35333cd8a79d
-ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
+ms.openlocfilehash: 4cc33c51af7d596fb9c784b76f8cc2f255ddf5a5
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69547915"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71236719"
 ---
 # <a name="ca1000-do-not-declare-static-members-on-generic-types"></a>CA1000: No declarar miembros estáticos en tipos genéricos
 
@@ -31,9 +31,9 @@ ms.locfileid: "69547915"
 |TypeName|DoNotDeclareStaticMembersOnGenericTypes|
 |Identificador de comprobación|CA1000|
 |Categoría|Microsoft.Design|
-|Cambio problemático|Problemático|
+|Cambio importante|Problemático|
 
-## <a name="cause"></a>Causa
+## <a name="cause"></a>Motivo
 
 Un tipo genérico contiene un `static` miembro`Shared` (en Visual Basic).
 

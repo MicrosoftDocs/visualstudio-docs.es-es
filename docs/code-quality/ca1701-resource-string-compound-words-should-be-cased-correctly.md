@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8fdae06137586f11de1a30a73894c46c7fb18fa6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ed5ae8c0845755fe626e7e801f500389f9263cf5
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62546289"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71234359"
 ---
 # <a name="ca1701-resource-string-compound-words-should-be-cased-correctly"></a>CA1701: En las palabras compuestas de la cadena de recursos se deben utilizar mayúsculas y minúsculas correctamente
 
@@ -28,43 +28,43 @@ ms.locfileid: "62546289"
 |TypeName|ResourceStringCompoundWordsShouldBeCasedCorrectly|
 |Identificador de comprobación|CA1701|
 |Categoría|Microsoft.Naming|
-|Cambio problemático|Poco problemático|
+|Cambio importante|Poco problemático|
 
 ## <a name="cause"></a>Motivo
 
-Una cadena de recursos contiene una palabra compuesta que no aparece en mayúsculas y minúsculas correctamente.
+Una cadena de recursos contiene una palabra compuesta que no parece ser correcta.
 
 ## <a name="rule-description"></a>Descripción de la regla
 
-Cada palabra de la cadena de recursos se divide en tokens que se basan en las mayúsculas y minúsculas. La biblioteca de correctores ortográficos de Microsoft comprueba cada combinación de dos tokens contiguos. Si la reconoce, la palabra genera una infracción de la regla. Ejemplos de palabras compuestas que originan una infracción son "CheckSum" y "MultiPart", que debería escribirse como "Checksum" y "Multipart", respectivamente. Debido al uso común anterior, se generan varias excepciones a la regla, y se marcan algunas palabras únicas, como "Toolbar" y "Filename", que debería escribirse como dos palabras distintas. En este ejemplo, debería marcarse "ToolBar" y "FileName".
+Cada palabra de la cadena de recursos se divide en tokens que se basan en el uso de mayúsculas y minúsculas. La biblioteca de correctores ortográficos de Microsoft comprueba cada combinación de dos tokens contiguos. Si la reconoce, la palabra genera una infracción de la regla. Ejemplos de palabras compuestas que causan una infracción son "CheckSum" y "multipart", que deben usarse como "checksum" y "multipart", respectivamente. Debido al uso común anterior, hay varias excepciones integradas en la regla y se marcan varias palabras individuales, como "Toolbar" y "filename", que deben usarse como dos palabras distintas. En este ejemplo, se marcaría "ToolBar" y "FileName".
 
 Las convenciones de nomenclatura proporcionan una apariencia común para las bibliotecas destinadas a Common Language Runtime. Esto reduce la curva de aprendizaje necesaria para las nuevas bibliotecas de software y aumenta la confianza del cliente respecto a que la biblioteca se haya desarrollado por parte de un especialista en desarrollo de código administrado.
 
 ## <a name="how-to-fix-violations"></a>Cómo corregir infracciones
 
-Cambiar la palabra para que utilizando las mayúsculas correctamente.
+Cambie la palabra para que sea correcta.
 
-## <a name="change-the-dictionary-language"></a>Cambiar el idioma del diccionario
+## <a name="change-the-dictionary-language"></a>Cambiar el idioma del Diccionario
 
-De forma predeterminada, se utiliza la versión inglesa (en) del corrector ortográfico. Si desea cambiar el idioma del corrector ortográfico, puede hacerlo mediante la adición de uno de los siguientes atributos a la *AssemblyInfo.cs* o *AssemblyInfo.vb* archivo:
+De forma predeterminada, se usa la versión en inglés (en) del corrector ortográfico. Si desea cambiar el idioma del corrector ortográfico, puede hacerlo agregando uno de los siguientes atributos al archivo *AssemblyInfo.CS* o *AssemblyInfo. VB* :
 
-- Use <xref:System.Reflection.AssemblyCultureAttribute> para especificar la referencia cultural, si los recursos están en un ensamblado satélite.
-- Uso <xref:System.Resources.NeutralResourcesLanguageAttribute> para especificar el *referencia cultural neutra* del ensamblado si los recursos están en el mismo ensamblado que el código.
+- Utilice <xref:System.Reflection.AssemblyCultureAttribute> para especificar la referencia cultural si los recursos están en un ensamblado satélite.
+- Utilice <xref:System.Resources.NeutralResourcesLanguageAttribute> para especificar la *referencia cultural neutra* del ensamblado si los recursos se encuentran en el mismo ensamblado que el código.
 
 > [!IMPORTANT]
-> Si la referencia cultural se establece en algo distinto de una referencia cultural de inglés, esta regla de análisis de código se deshabilita de forma silenciosa.
+> Si establece la referencia cultural en algo distinto de una referencia cultural basada en inglés, esta regla de análisis de código se deshabilita de forma silenciosa.
 
-## <a name="when-to-suppress-warnings"></a>Cuándo Suprimir advertencias
+## <a name="when-to-suppress-warnings"></a>Cuándo suprimir advertencias
 
-Es seguro suprimir una advertencia de esta regla si el diccionario ortográfico reconoce ambas partes de la palabra compuesta y se pretende utilizar dos palabras.
+Es seguro suprimir una advertencia de esta regla si el diccionario ortográfico reconoce ambas partes de la palabra compuesta y el objetivo es usar dos palabras.
 
-También puede agregar palabras compuestas a un diccionario personalizado para el corrector ortográfico. Palabras en el diccionario personalizado no causan infracciones. Para obtener más información, vea [Cómo: Personalizar el diccionario de análisis de código](../code-quality/how-to-customize-the-code-analysis-dictionary.md).
+También puede agregar palabras compuestas a un diccionario personalizado para el corrector ortográfico. Las palabras del diccionario personalizado no causan infracciones. Para obtener más información, vea [Cómo: Personalizar el diccionario](../code-quality/how-to-customize-the-code-analysis-dictionary.md)de análisis de código.
 
 ## <a name="related-rules"></a>Reglas relacionadas
 
-- [CA1702: En las palabras compuestas se deberían escribirse correctamente](../code-quality/ca1702-compound-words-should-be-cased-correctly.md)
-- [CA1709: Los identificadores deberían escribirse correctamente](../code-quality/ca1709-identifiers-should-be-cased-correctly.md)
-- [CA1708: Los identificadores deben diferenciarse por algo más que el caso](../code-quality/ca1708-identifiers-should-differ-by-more-than-case.md)
+- [CA1702: Las palabras compuestas deben tener mayúsculas y minúsculas](../code-quality/ca1702-compound-words-should-be-cased-correctly.md)
+- [CA1709: Los identificadores deben usar mayúsculas y minúsculas correctamente](../code-quality/ca1709-identifiers-should-be-cased-correctly.md)
+- [CA1708: Los identificadores deben diferir más que el uso de mayúsculas y minúsculas](../code-quality/ca1708-identifiers-should-differ-by-more-than-case.md)
 
 ## <a name="see-also"></a>Vea también
 

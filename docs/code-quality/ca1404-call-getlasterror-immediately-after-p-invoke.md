@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 03add1625c4d59bb180f9f0f08692e67bee8047b
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: ab789e578dd8603f604cdb00aa5d236250d13670
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68922077"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71235047"
 ---
 # <a name="ca1404-call-getlasterror-immediately-after-pinvoke"></a>CA1404: Llamar a GetLastError inmediatamente después de P/Invoke
 
@@ -31,9 +31,9 @@ ms.locfileid: "68922077"
 |TypeName|CallGetLastErrorImmediatelyAfterPInvoke|
 |Identificador de comprobación|CA1404|
 |Categoría|Microsoft.Interoperability|
-|Cambio problemático|Poco problemático|
+|Cambio importante|Poco problemático|
 
-## <a name="cause"></a>Causa
+## <a name="cause"></a>Motivo
 
 Se realiza una llamada al <xref:System.Runtime.InteropServices.Marshal.GetLastWin32Error%2A?displayProperty=fullName> método o a la función de Win32 `GetLastError` equivalente, y la llamada que viene inmediatamente antes de no es un método de invocación de plataforma.
 

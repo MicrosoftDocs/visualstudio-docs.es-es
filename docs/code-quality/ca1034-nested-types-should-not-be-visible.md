@@ -18,12 +18,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: a086ad80bd13fb18f866769db34d72cae3e67496
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: ead932af202bd1a44464025a1b09baa698acb7b1
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68922862"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71236036"
 ---
 # <a name="ca1034-nested-types-should-not-be-visible"></a>CA1034: Los tipos anidados no deben ser visibles
 
@@ -32,9 +32,9 @@ ms.locfileid: "68922862"
 |TypeName|NestedTypesShouldNotBeVisible|
 |Identificador de comprobación|CA1034|
 |Categoría|Microsoft.Design|
-|Cambio problemático|Problemático|
+|Cambio importante|Problemático|
 
-## <a name="cause"></a>Causa
+## <a name="cause"></a>Motivo
 
 Un tipo visible externamente contiene una declaración de tipos visible externamente. Las enumeraciones anidadas y los tipos protegidos están exentos de esta regla.
 

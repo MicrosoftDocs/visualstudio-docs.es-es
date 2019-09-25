@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f734d0cf28a5aec28ebbf635dd384efe176b1774
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 4bef51c547d4a1614137e0691343bef635aed50d
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68921321"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71233288"
 ---
 # <a name="ca1900-value-type-fields-should-be-portable"></a>CA1900: Los campos de tipo de valor deben ser portátiles
 
@@ -28,9 +28,9 @@ ms.locfileid: "68921321"
 |TypeName|ValueTypeFieldsShouldBePortable|
 |Identificador de comprobación|CA1900|
 |Categoría|Microsoft. portabilidad|
-|Cambio problemático|Interrumpir: Si el campo puede verse fuera del ensamblado.<br /><br /> No problemático: Si el campo no es visible fuera del ensamblado.|
+|Cambio importante|Interrumpir: Si el campo puede verse fuera del ensamblado.<br /><br /> No problemático: Si el campo no es visible fuera del ensamblado.|
 
-## <a name="cause"></a>Causa
+## <a name="cause"></a>Motivo
 Esta regla comprueba que las estructuras que se declaran con diseño explícito se alinearán correctamente cuando se calculen las referencias a código no administrado en sistemas operativos de 64 bits. IA-64 no permite el acceso a memoria no alineada y el proceso se bloqueará si esta infracción no es fija.
 
 ## <a name="rule-description"></a>Descripción de la regla

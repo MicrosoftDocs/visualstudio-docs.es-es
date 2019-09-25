@@ -16,10 +16,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: e07e2612e01453115cf4cd6120d92bfd5b0168bd
-ms.sourcegitcommit: fe212f8960d7882a1b0fdae9e22f008996aacf3c
+ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/03/2019
+ms.lasthandoff: 09/25/2019
 ms.locfileid: "70222655"
 ---
 # <a name="navigate-through-code-with-the-visual-studio-debugger"></a>Desplazarse por el código con el depurador de Visual Studio
@@ -79,7 +79,7 @@ En una llamada a una función anidada, **Paso a paso por instrucciones** llega h
 
 Es posible que no le interese una función durante la depuración o sepa que funciona, como el código de biblioteca bien probado. Puede usar los siguientes comandos para omitir el código. Las funciones siguen ejecutándose, pero el depurador las omite.
 
-|Comando de teclado|Comando de menú Depurar|DESCRIPCIÓN|
+|Comando de teclado|Comando de menú Depurar|Descripción|
 |----------------------|------------------|-----------------|
 |**F10**|**Paso a paso por procedimientos**|Si la línea actual contiene una llamada de función, el **paso por procedimientos** ejecuta el código y suspende la ejecución en la primera línea de código después de que se devuelva la función llamada.|
 |**Mayús**+**F11**|**Paso a paso para salir**|**Paso a paso para salir** continúa ejecutando el código y suspende la ejecución cuando se devuelve la función actual. El depurador omite la función actual.|

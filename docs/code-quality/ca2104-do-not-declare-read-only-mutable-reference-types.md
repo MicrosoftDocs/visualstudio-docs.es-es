@@ -1,5 +1,5 @@
 ---
-title: 'CA2104: No declarar tipos de referencias mutables de solo lectura'
+title: 'CA2104: No declarar tipos de referencia mutable de solo lectura'
 ms.date: 11/01/2018
 ms.topic: reference
 f1_keywords:
@@ -18,12 +18,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 40fdeefc2d664b80bb6e17c109349cb5912b0516
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 8f4f165b4b00f46b478907c9affca672b4c7f113
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62545360"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71232951"
 ---
 # <a name="ca2104-do-not-declare-read-only-mutable-reference-types"></a>CA2104: No declarar tipos de referencias mutables de solo lectura
 
@@ -32,10 +32,10 @@ ms.locfileid: "62545360"
 |TypeName|DoNotDeclareReadOnlyMutableReferenceTypes|
 |Identificador de comprobación|CA2104|
 |Categoría|Microsoft.Security|
-|Cambio problemático|Poco problemático|
+|Cambio importante|Poco problemático|
 
 > [!NOTE]
-> Regla CA2104 está obsoleto y se quitará en una versión futura de Visual Studio. No se implementará como un [analizador](roslyn-analyzers-overview.md) porque el análisis complicado que se necesita para determinar la inmutabilidad de un tipo real.
+> La regla CA2104 está obsoleta y se quitará en una versión futura de Visual Studio. No se implementará como [analizador](roslyn-analyzers-overview.md) debido al análisis complicado necesario para determinar la inmutabilidad real de un tipo.
 
 ## <a name="cause"></a>Motivo
 
@@ -43,25 +43,25 @@ Un tipo visible externamente contiene un campo de sólo lectura visible externam
 
 ## <a name="rule-description"></a>Descripción de la regla
 
-Un tipo que mutable es un tipo cuyos datos de instancia se pueden modificar. La <xref:System.Text.StringBuilder?displayProperty=fullName> clase es un ejemplo de un tipo de referencia mutable. Contiene a miembros que se pueden cambiar el valor de una instancia de la clase. Un ejemplo de un tipo de referencia inmutable es el <xref:System.String?displayProperty=fullName> clase. Una vez se ha creado una instancia, su valor nunca puede cambiar.
+Un tipo que mutable es un tipo cuyos datos de instancia se pueden modificar. La <xref:System.Text.StringBuilder?displayProperty=fullName> clase es un ejemplo de un tipo de referencia mutable. Contiene miembros que pueden cambiar el valor de una instancia de la clase. Un ejemplo de un tipo de referencia inmutable <xref:System.String?displayProperty=fullName> es la clase. Una vez creada la instancia, su valor nunca puede cambiar.
 
-El modificador de solo lectura ([readonly](/dotnet/csharp/language-reference/keywords/readonly) en C#, [ReadOnly](/dotnet/visual-basic/language-reference/modifiers/readonly) en Visual Basic, y [const](/cpp/cpp/const-cpp) en C++) en un tipo de referencia campo (o puntero de C++), se evita que el campo de reemplaza por una instancia diferente del tipo de referencia. Sin embargo, el modificador no impide que los datos de instancia del campo que se modifica mediante el tipo de referencia.
+El modificador de solo lectura ([ReadOnly](/dotnet/csharp/language-reference/keywords/readonly) in C#, [ReadOnly](/dotnet/visual-basic/language-reference/modifiers/readonly) in Visual Basic y [const](/cpp/cpp/const-cpp) in C++) en un campo de tipo de referencia (o puntero C++en) impide que el campo se reemplace por otra instancia del tipo de referencia. Sin embargo, el modificador no impide que los datos de instancia del campo se modifiquen a través del tipo de referencia.
 
-Esta regla puede accidentalmente muestran una infracción en un tipo que es, de hecho, inmutable. En ese caso, es seguro suprimir la advertencia.
+Esta regla puede mostrar accidentalmente una infracción de un tipo que es, de hecho, inmutable. En ese caso, es seguro suprimir la advertencia.
 
-Campos de matriz de solo lectura están exentos de esta regla, pero en su lugar, provoca una infracción de la [CA2105: Campos de matriz deben no ser de solo lectura](../code-quality/ca2105-array-fields-should-not-be-read-only.md) regla.
+Los campos de matriz de solo lectura están exentos de esta regla pero, en su lugar [, provocan una infracción de CA2105: Los campos de matriz no deben ser](../code-quality/ca2105-array-fields-should-not-be-read-only.md) reglas de solo lectura.
 
 ## <a name="how-to-fix-violations"></a>Cómo corregir infracciones
 
-Para corregir una infracción de esta regla, quite el modificador de solo lectura, o bien, si un cambio importante es aceptable, sustituya el campo con un tipo inmutable.
+Para corregir una infracción de esta regla, quite el modificador de solo lectura o, si es aceptable un cambio importante, reemplace el campo por un tipo inmutable.
 
-## <a name="when-to-suppress-warnings"></a>Cuándo Suprimir advertencias
+## <a name="when-to-suppress-warnings"></a>Cuándo suprimir advertencias
 
 Es seguro suprimir una advertencia de esta regla si el tipo de campo es inmutable.
 
 ## <a name="example"></a>Ejemplo
 
-El ejemplo siguiente muestra una declaración de campo que provoca una infracción de esta regla:
+En el ejemplo siguiente se muestra una declaración de campo que provoca una infracción de esta regla:
 
 [!code-cpp[FxCop.Security.MutableReferenceTypes#1](../code-quality/codesnippet/CPP/ca2104-do-not-declare-read-only-mutable-reference-types_1.cpp)]
 [!code-csharp[FxCop.Security.MutableReferenceTypes#1](../code-quality/codesnippet/CSharp/ca2104-do-not-declare-read-only-mutable-reference-types_1.cs)]

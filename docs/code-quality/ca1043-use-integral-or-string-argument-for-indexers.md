@@ -18,12 +18,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: aeec6e202ccb7f3075b04d29bdef7d171ae545f7
-ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
+ms.openlocfilehash: 298c92263903c3799f1e7e184a554f896366566c
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69547689"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71235845"
 ---
 # <a name="ca1043-use-integral-or-string-argument-for-indexers"></a>CA1043: Utilizar un argumento integral o de cadena en indizadores
 
@@ -32,9 +32,9 @@ ms.locfileid: "69547689"
 |TypeName|UseIntegralOrStringArgumentForIndexers|
 |Identificador de comprobación|CA1043|
 |Categoría|Microsoft.Design|
-|Cambio problemático|Problemático|
+|Cambio importante|Problemático|
 
-## <a name="cause"></a>Causa
+## <a name="cause"></a>Motivo
 
 Un tipo contiene un indizador que usa un tipo de índice distinto <xref:System.Int32?displayProperty=fullName>de <xref:System.Int64?displayProperty=fullName>, <xref:System.Object?displayProperty=fullName>, o <xref:System.String?displayProperty=fullName>.
 

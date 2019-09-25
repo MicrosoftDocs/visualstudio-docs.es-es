@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a35bec2395ccec649443df71e87904c71bf635d8
-ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
+ms.openlocfilehash: a2677c2ef5342b795bb684f3ab06bc7cf5195cf7
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69547100"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71233892"
 ---
 # <a name="ca1720-identifiers-should-not-contain-type-names"></a>CA1720: Los identificadores no deben contener nombres de tipo
 
@@ -28,9 +28,9 @@ ms.locfileid: "69547100"
 |TypeName|IdentifiersShouldNotContainTypeNames|
 |Identificador de comprobación|CA1720|
 |Categoría|Microsoft.Naming|
-|Cambio problemático|Problemático|
+|Cambio importante|Problemático|
 
-## <a name="cause"></a>Causa
+## <a name="cause"></a>Motivo
 
 El nombre de un parámetro de un miembro contiene un nombre de tipo de datos.
 
@@ -50,13 +50,13 @@ Los tokens discretos en el nombre del parámetro o miembro se comprueban con los
 - WChar
 - Int8
 - UInt8
-- Breve
+- Short
 - UShort
-- Int
+- Valor int.
 - UInt
-- Entero
+- Integer
 - UInteger
-- long
+- Long
 - ULong
 - Sin signo
 - Firmado
@@ -68,9 +68,9 @@ Además, los nombres de un parámetro también se comprueban con los siguientes 
 
 - Object
 - Obj
-- Boolean
+- Booleano
 - Char
-- Cadena
+- String
 - SByte
 - Byte
 - UByte
@@ -87,9 +87,9 @@ Además, los nombres de un parámetro también se comprueban con los siguientes 
 - UPtr
 - UPointer
 - Single
-- Double
+- Doble
 - Decimal
-- Guid
+- GUID
 
 ## <a name="how-to-fix-violations"></a>Cómo corregir infracciones
 

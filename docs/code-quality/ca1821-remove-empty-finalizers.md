@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f616547738c7c58d61289b2be71c8e56a1a427c8
-ms.sourcegitcommit: 0f44ec8ba0263056ad04d2d0dc904ad4206ce8fc
+ms.openlocfilehash: a93ebea78c9258667d7c6ca10e35d22fc4113f48
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70766071"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71233437"
 ---
 # <a name="ca1821-remove-empty-finalizers"></a>CA1821: Quitar finalizadores vacíos
 
@@ -27,9 +27,9 @@ ms.locfileid: "70766071"
 |TypeName|RemoveEmptyFinalizers|
 |Identificador de comprobación|CA1821|
 |Categoría|Microsoft.Performance|
-|Cambio problemático|Poco problemático|
+|Cambio importante|Poco problemático|
 
-## <a name="cause"></a>Causa
+## <a name="cause"></a>Motivo
 
 Un tipo implementa un finalizador que está vacío, llama solo al finalizador de tipo base o llama únicamente a métodos emitidos condicionalmente.
 

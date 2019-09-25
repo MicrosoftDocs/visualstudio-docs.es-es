@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ce2da2c1ff5b2f74d8b4d6341050c1895b68955a
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: e352eea1b7fcf82cb948315affeae6e30690a4aa
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68922294"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71234970"
 ---
 # <a name="ca1307-specify-stringcomparison"></a>CA1307: Especificar StringComparison
 
@@ -28,9 +28,9 @@ ms.locfileid: "68922294"
 |TypeName|SpecifyStringComparison|
 |Identificador de comprobación|CA1307|
 |Categoría|Microsoft. Globalization|
-|Cambio problemático|Poco problemático|
+|Cambio importante|Poco problemático|
 
-## <a name="cause"></a>Causa
+## <a name="cause"></a>Motivo
 Una operación de comparación de cadenas utiliza una sobrecarga de método que no <xref:System.StringComparison> establece un parámetro.
 
 ## <a name="rule-description"></a>Descripción de la regla

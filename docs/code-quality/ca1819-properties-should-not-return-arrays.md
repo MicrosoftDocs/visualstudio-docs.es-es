@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 9fd738b0c16ede4f71c001036546c335d8ca7186
-ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
+ms.openlocfilehash: 053cb4c55362a4f51b7c8e8049214aa41773f373
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69547034"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71233451"
 ---
 # <a name="ca1819-properties-should-not-return-arrays"></a>CA1819: Las propiedades no deben devolver matrices
 
@@ -31,9 +31,9 @@ ms.locfileid: "69547034"
 |TypeName|PropertiesShouldNotReturnArrays|
 |Identificador de comprobación|CA1819|
 |Categoría|Microsoft.Performance|
-|Cambio problemático|Problemático|
+|Cambio importante|Problemático|
 
-## <a name="cause"></a>Causa
+## <a name="cause"></a>Motivo
 
 Una propiedad devuelve una matriz.
 
