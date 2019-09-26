@@ -123,8 +123,10 @@
           items:
             - name: Información general
               href: configure-fxcop-analyzers.md
-            - name: Opciones de EditorConfig
+            - name: Opciones de ámbito
               href: fxcop-analyzer-options.md
+            - name: Conjunto de reglas predefinidas
+              href: analyzer-rule-sets.md
         - name: Preguntas más frecuentes
           href: fxcop-analyzers-faq.md
     - name: Migración del análisis heredado a los analizadores FxCop
@@ -137,8 +139,6 @@
       items:
         - name: Información general
           href: using-rule-sets-to-group-code-analysis-rules.md
-        - name: Conjuntos de reglas para paquetes de analizador
-          href: analyzer-rule-sets.md
         - name: Configuración de conjuntos de reglas
           href: how-to-configure-code-analysis-for-a-managed-code-project.md
         - name: Configuración del análisis de código para una aplicación web ASP.NET

@@ -1,5 +1,5 @@
 - name: Documentación del depurador
-  href: index.md
+  href: index.yml
 - name: Información general
   items:
     - name: ¿Qué es la depuración?
@@ -450,7 +450,7 @@
               href: how-to-trigger-suspend-resume-and-background-events-for-windows-store-apps-in-visual-studio.md
             - name: Precargar contenido para aplicaciones de Microsoft Store
               href: prefetch-content-for-windows-store-apps.md
-        - name: Código administrado
+        - name: 'Código administrado (C#, Visual Basic, F#)'
           items:
             - name: Depurar código administrado
               href: debugging-managed-code.md
@@ -494,7 +494,7 @@
                   href: how-to-display-wpf-trace-information.md
             - name: 'Depurar F#'
               href: debugging-f-hash.md
-        - name: Código nativo
+        - name: Código de C/C++
           items:
             - name: Depurar código nativo
               href: debugging-native-code.md
@@ -582,7 +582,7 @@
                   href: com-debugging-tools.md
             - name: Depurar código insertado
               href: how-to-debug-injected-code.md
-        - name: Depurar código de GPU
+        - name: Código de GPU
           href: debugging-gpu-code.md
         - name: Diagnóstico de gráficos
           href: graphics/toc.yml
@@ -632,6 +632,10 @@
                       href: error-the-web-server-could-not-find-the-requested-resource.md
                     - name: El servidor Web no está configurado correctamente
                       href: error-the-web-server-is-not-configured-correctly.md
+        - name: Python
+          href: ../python/tutorial-working-with-python-in-visual-studio-step-04-debugging.md
+        - name: JavaScript y TypeScript
+          href: ../javascript/debug-nodejs.md
         - name: Aplicaciones web
           items:
             - name: Depurar aplicaciones web

@@ -17,12 +17,12 @@ ms.assetid: d9550502-0a82-49a6-b005-2caa791fbe02
 author: Joe-Sewell-PreEmptive
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: bf77f2796a224d6fad81c4a1485ba82f8822cfcc
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 53bd95875cf990afee6d356744961d3637f16842
+ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62557427"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71253763"
 ---
 # <a name="dotfuscator-community"></a>Dotfuscator Community
 
@@ -38,7 +38,7 @@ Es importante **proteger su propiedad intelectual**.
 El código de su aplicación contiene detalles de diseño e implementación que se pueden considerar propiedad intelectual.
 Sin embargo, las aplicaciones que se basan en .NET Framework [contienen metadatos importantes y código intermedio de alto nivel][assemblies], con lo que quedan expuestas a la utilización de técnicas de ingeniería inversa mediante el uso de alguna de las muchas herramientas gratuitas y automatizadas que existen.
 Al interrumpir y detener la utilización de técnicas de ingeniería inversa, se puede evitar la divulgación no autorizada de la propiedad intelectual, así como demostrar que el código contiene secretos comerciales.
-Dotfuscator puede [ofuscar][obfuscation] los ensamblados de .NET para obstaculizar la utilización de técnicas de ingeniería inversa, manteniendo el comportamiento de la aplicación original.
+Dotfuscator puede [ofuscar][obfuscation] los ensamblados de .NET para obstaculizar la utilización de técnicas de ingeniería inversa y, al mismo tiempo, mantener el comportamiento de la aplicación original.
 
 También es importante **proteger la integridad de la aplicación**.
 Además de técnicas de ingeniería inversa, los actores malintencionados pueden tratar de piratear su aplicación, modificar su comportamiento en tiempo de ejecución o manipular los datos.
@@ -55,15 +55,15 @@ Dotfuscator Community ofrece una gama de servicios de [consolidación y protecci
 A continuación se presentan algunos ejemplos de [ofuscación de .NET][obfuscation] y otras características de [protección de aplicaciones][app-protection] incluidas en Dotfuscator Community:
 
 * *[Cambio del nombre][renaming]* de los identificadores para dificultar la utilización de técnicas de ingeniería inversa en los ensamblados compilados.
-* *[Antimanipulación][tamper]* para detectar la ejecución de aplicaciones alteradas y finalizar o responder a sesiones alteradas.
-* *[Antidepuración][debug]* para detectar cuando se adjunta un depurador a una aplicación en ejecución y finalizar o responder a sesiones depuradas.
-* *[Dispositivo protegido contra la obtención de privilegios de usuario root][root]* para detectar si la aplicación se está ejecutando en un dispositivo Android con dichos privilegios y finalizar o responder a las sesiones en dispositivos de este tipo.
+* *[Antimanipulación][tamper]* para detectar la ejecución de aplicaciones alteradas y finalizar sesiones alteradas o responder ante ellas.
+* *[Antidepuración][debug]* para detectar cuando se adjunta un depurador a una aplicación en ejecución y finalizar sesiones depuradas o responder ante ellas.
+* *[Dispositivo protegido contra la obtención de privilegios de usuario root][root]* para detectar si la aplicación se está ejecutando en un dispositivo Android con dichos privilegios y finalizar las sesiones en dispositivos de este tipo o responder ante ellas.
 * *[Comportamientos de expiración de aplicaciones][shelflife]* que codifican una fecha de fin de ciclo de vida y finalizan sesiones de aplicación expiradas.
 
 Para obtener información acerca de estas características, incluyendo cómo encajan en su estrategia de protección de aplicaciones, consulte la [página de funcionalidades][capabilities].
 
 Dotfuscator Community ofrece protección básica inmediata.
-Pero hay más medidas de protección para aplicaciones disponibles para los usuarios registrados de Dotfuscator Community, y para los usuarios de ***PreEmptive Protection - Dotfuscator Professional***, el [ofuscador de .NET][net-obfuscator] líder en el mundo.
+Pero hay más medidas de protección para aplicaciones disponibles para los usuarios registrados de Dotfuscator Community, y para los usuarios de ***PreEmptive Protection - Dotfuscator Professional***, el ofuscador de [.NET líder en el mundo][net-obfuscator].
 Para obtener información sobre cómo mejorar Dotfuscator, consulte la [página de actualizaciones][upgrades].
 
 ## <a name="getting-started"></a>Introducción
@@ -72,7 +72,7 @@ Para obtener información sobre cómo mejorar Dotfuscator, consulte la [página 
 
 Para empezar a usar Dotfuscator Community de Visual Studio, escriba `dotfuscator` en el **cuadro de búsqueda** (CTRL+Q).
 
-* Si ya está instalado Dotfuscator Community, el **cuadro de búsqueda** mostrará la opción para iniciar Dotfuscator Community en el encabezado *Menús*. Para detalles, consulte [la página de introducción de la guía de usuario completa de Dotfuscator Community][get-started].
+* Si ya está instalado Dotfuscator Community, el **cuadro de búsqueda** mostrará la opción para iniciar Dotfuscator Community en el encabezado *Menús*. Para conocer los detalles, consulte [la página de introducción de la guía de usuario completa de Dotfuscator Community][get-started].
 * Si Dotfuscator Community todavía no está instalado, el **cuadro de búsqueda** mostrará en su lugar una opción para **instalar PreEmptive Protection - Dotfuscator** en el encabezado *Componentes individuales*. Consulte la [página de instalación][install] para obtener más información.
 
 ::: moniker-end
@@ -81,7 +81,7 @@ Para empezar a usar Dotfuscator Community de Visual Studio, escriba `dotfuscat
 
 Para comenzar a usar Dotfuscator Community desde Visual Studio, escriba `dotfuscator` en la barra de búsqueda de **inicio rápido** (Ctrl+Q).
 
-* Si ya está instalado Dotfuscator Community, **inicio rápido** abrirá la opción de *menú* para iniciar la interfaz de usuario de Dotfuscator Community. Para detalles, consulte [la página de introducción de la guía de usuario completa de Dotfuscator Community][get-started].
+* Si ya está instalado Dotfuscator Community, **inicio rápido** abrirá la opción de *menú* para iniciar la interfaz de usuario de Dotfuscator Community. Para conocer los detalles, consulte [la página de introducción de la guía de usuario completa de Dotfuscator Community][get-started].
 * Si Dotfuscator Community aún no está instalado, **inicio rápido** abrirá la correspondiente opción de *instalación*. Consulte la [página de instalación][install] para obtener más información.
 
 ::: moniker-end
