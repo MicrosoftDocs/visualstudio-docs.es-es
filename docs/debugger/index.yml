@@ -9,12 +9,12 @@ metadata:
   ms.author: mikejo
   manager: jillfra
   ms.date: 09/20/2019
-  ms.openlocfilehash: 2ce5c3c8c9baf6f513f7dca4b4072e02e461a62a
-  ms.sourcegitcommit: ea182703e922c74725045afc251bcebac305068a
+  ms.openlocfilehash: be124cf1dc4a594575347d58439902f8ed99b803
+  ms.sourcegitcommit: 9a3972eb85de5443ac2bc03964c5a251c39b2921
   ms.translationtype: HT
   ms.contentlocale: es-ES
-  ms.lasthandoff: 09/24/2019
-  ms.locfileid: "71213601"
+  ms.lasthandoff: 09/26/2019
+  ms.locfileid: "71301664"
 landingContent:
 - title: Acerca de la depuración
   linkLists:
@@ -74,3 +74,9 @@ landingContent:
       url: using-the-debuggerdisplay-attribute.md
     - text: Depuración remota
       url: remote-debugging.md
+- title: Colaborar
+  linkLists:
+  - linkListType: tutorial
+    links:
+    - text: Escribir y depurar código con Live Share >>
+      url: /visualstudio/liveshare/use/vs
