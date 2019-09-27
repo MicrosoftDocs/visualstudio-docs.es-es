@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: fdb973718e56279e7bfb04c9d412bcd83410223d
-ms.sourcegitcommit: 0e482cfc15f809b564c3de61646f29ecd7bfcba6
+ms.openlocfilehash: 182c9e37764a247ec24b4b477975ccb7b8811c4b
+ms.sourcegitcommit: 4d2620bee4688fb881e09a07ea4a264b99f0743e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/14/2019
-ms.locfileid: "70987747"
+ms.lasthandoff: 09/27/2019
+ms.locfileid: "71322548"
 ---
 # <a name="inspect-xaml-properties-while-debugging"></a>Inspeccionar las propiedades XAML durante la depuración
 Puede obtener una vista en tiempo real del código XAML en ejecución con **Árbol visual dinámico** y **Live Property Explorer**. Estas herramientas le proporcionan una vista de árbol de los elementos de interfaz de usuario de la aplicación XAML en ejecución y le muestran las propiedades en tiempo de ejecución de cualquier elemento de interfaz de usuario que seleccione.
@@ -81,7 +81,10 @@ Abra la ventana **Live Visual Tree** (**Depurar > Ventanas > Live Visual Tree** 
 
 Vuelva a la ventana de la aplicación y agregue algunos elementos más. Debería ver más elementos del cuadro de lista en **Live Visual Tree**.
 
-Ahora echemos un vistazo a las propiedades de uno de los elementos del cuadro de lista. Seleccione el primer elemento del cuadro de lista de **Live Visual Tree** y haga clic en el icono **Mostrar propiedades** de la barra de herramientas. Debería aparecer **Live Property Explorer**. Tenga en cuenta que el campo **Contenido** es «Item1» y el campo **Fondo** es **#FFFFFFE0** (amarillo claro). Vuelva a **Live Visual Tree** y seleccione el segundo elemento del cuadro de lista. **Live Property Explorer** debería mostrar que el campo **Contenido** es «Item2» y que el campo **Fondo** es **#FFD3D3D3** (gris claro).
+Ahora echemos un vistazo a las propiedades de uno de los elementos del cuadro de lista. Seleccione el primer elemento del cuadro de lista de **Live Visual Tree** y haga clic en el icono **Mostrar propiedades** de la barra de herramientas. Debería aparecer **Live Property Explorer**. Tenga en cuenta que el campo de **contenido** es "Item1" y el campo de**color** de **fondo** > es **#FFFFFFE0**. Vuelva a **Live Visual Tree** y seleccione el segundo elemento del cuadro de lista. El **Explorador de propiedades activo** debe mostrar que el campo de **contenido** es "Item2" y el campo de**color** de **fondo** > es **#FFD3D3D3**.
+
+> [!NOTE]
+> Un borde amarillo alrededor de una propiedad en el **Explorador de propiedades activo** significa que el valor de la propiedad se establece a través `Color = {BindingExpression}`de un enlace, como. Un borde verde significa que el valor se establece mediante un recurso, `Color = {StaticResource MyBrush}`como.
 
 La estructura real del XAML tiene muchos elementos que probablemente no le interesen, y si no conoce bien el código tal vez tenga que perder bastante tiempo navegando por el árbol para encontrar lo que está buscando. **Live Visual Tree** tiene un par de maneras que le permiten usar la interfaz de usuario de la aplicación para poder encontrar el elemento que desea examinar.
 
