@@ -666,6 +666,10 @@
               href: how-to-step-into-wcf-services.md
             - name: Depurar un servicio WCF autohospedado
               href: how-to-debug-a-self-hosted-wcf-service.md
+    - name: Colaborar
+      items:
+        - name: Escribir y depurar código con Live Share
+          href: /visualstudio/liveshare/use/vs
     - name: Archivos de volcado de memoria
       items:
         - name: Usar archivos de volcado de memoria
