@@ -1,0 +1,9 @@
+newPRWelcomeComment: >
+  ¡Gracias por contribuir a nuestro contenido localizado! 
+  Todas las colaboraciones a nuestro contenido deben cumplir las siguientes pautas:
+  1. [Guía de estilo de idioma de Microsoft] (https://www.microsoft.com/Language/StyleGuides) que describe cómo se debe leer el texto cuando se traduce del inglés a un idioma diferente.
+  2. [Microsoft Language Portal] (https://www.microsoft.com/language) proporciona **términos** relacionados con la tecnología en inglés y sus correspondientes traducciones, que se utilizan en todos los productos de Microsoft.
+  Al unirse a nuestra creciente comunidad de localización, aprende más sobre el programa de localización de la comunidad y otras formas de contribuir a nuestro programa visitando la [Wiki de localización de la comunidad] (https://github.com/Microsoft/Localization/wiki). También compartimos el proceso de aprobación de PR en esta página, así como algunas sugerencias de <administración de PR>.
+  ¡Siga contribuyendo y logre niveles más altos en las clasificaciones de nuestra [Tabla de clasificación de colaboradores] (https://microsoftl10n.github.io/) a medida que se le recompensa con puntos por sus contribuciones de <localización>!
+
+  Grupo internacional de relaciones con los desarrolladores de Microsoft
