@@ -12,14 +12,14 @@ ms.assetid: af8f7ab1-63ad-4861-afb9-b7a7a2be15e1
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.workload:
-- multiple
-ms.openlocfilehash: c027bc4581919f814b4d93eacba77248349fdf8b
-ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
+dev_langs:
+- CSharp
+ms.openlocfilehash: b4db3074d334fe32f95c4d1b8446921c4e4d47ba
+ms.sourcegitcommit: 16175e0cea6af528e9ec76f0b94690faaf1bed30
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71231085"
+ms.lasthandoff: 09/28/2019
+ms.locfileid: "71481772"
 ---
 # <a name="ca2225-operator-overloads-have-named-alternates"></a>CA2225: Las sobrecargas del operador tienen alternativas con nombre
 
@@ -27,7 +27,7 @@ ms.locfileid: "71231085"
 |-|-|
 |TypeName|OperatorOverloadsHaveNamedAlternates|
 |Identificador de comprobación|CA2225|
-|Categoría|Microsoft.Usage|
+|Category|Microsoft.Usage|
 |Cambio importante|Poco problemático|
 
 ## <a name="cause"></a>Motivo
@@ -38,12 +38,16 @@ De forma predeterminada, esta regla solo examina los tipos visibles externamente
 
 ## <a name="rule-description"></a>Descripción de la regla
 
-La sobrecarga de operadores permite el uso de símbolos para representar los cálculos para un tipo. Por ejemplo, un tipo que sobrecarga el signo más (+) para agregar normalmente tendría un miembro alternativo denominado ' Add '. El miembro alternativo con nombre proporciona acceso a la misma funcionalidad que el operador y se proporciona a los desarrolladores que programan en lenguajes que no admiten operadores sobrecargados.
+La sobrecarga de operadores permite el uso de símbolos para representar los cálculos para un tipo. Por ejemplo, un tipo que sobrecarga el símbolo más `+` para la adición tendría normalmente un miembro alternativo denominado `Add`. El miembro alternativo con nombre proporciona acceso a la misma funcionalidad que el operador. Se proporciona a los desarrolladores que programan en lenguajes que no admiten operadores sobrecargados.
 
-Esta regla examina los operadores enumerados en la tabla siguiente.
+Esta regla examina:
 
-|C#|Visual Basic|C++|Nombre alternativo|
-|---------|------------------|-----------|--------------------|
+- Operadores de conversión implícitos y explícitos en un tipo comprobando los métodos denominados `To<typename>` y `From<typename>`.
+
+- Los operadores enumerados en la tabla siguiente:
+
+|C#|Visual Basic|C++|Nombre del método alternativo|
+|-|-|-|-|
 |+ (binario)|+|+ (binario)|Agregar|
 |+=|+=|+=|Agregar|
 |&|y|&|BitwiseAnd|
@@ -56,14 +60,14 @@ Esta regla examina los operadores enumerados en la tabla siguiente.
 |==|=|==|Es igual a|
 |^|Xor|^|Xor|
 |^=|XOR =|^=|Xor|
-|>|>|>|Comparar|
-|>=|>=|>=|Comparar|
+|>|>|>|CompareTo o compare|
+|>=|>=|>=|CompareTo o compare|
 |++|N/D|++|Incremento|
-|<>|!=|Es igual a|
+|!=|<>|!=|Es igual a|
 |<<|<<|<<|Mayús Izq|
 |<<=|<<=|<<=|Mayús Izq|
-|<|<|<|Comparar|
-|<=|<=|\<=|Comparar|
+|<|<|<|CompareTo o compare|
+|<=|<=|\<=|CompareTo o compare|
 |&&|N/D|&&|LogicalAnd|
 |&#124;&#124;|N/D|&#124;&#124;|Operador lógico|
 |!|N/D|!|LogicalNot|
@@ -79,17 +83,16 @@ Esta regla examina los operadores enumerados en la tabla siguiente.
 |true|IsTrue|N/D|IsTrue (propiedad)|
 |-(unario)|N/D|-|Negar|
 |+ (unario)|N/D|+|Signos|
-|False|IsFalse|False|IsTrue (propiedad)|
+|false|IsFalse|False|IsTrue (propiedad)|
 
-N/A = = no se puede sobrecargar en el idioma seleccionado.
+\* N/A significa que el operador no se puede sobrecargar en el idioma seleccionado.
 
-La regla también comprueba los operadores de conversión implícitos y explícitos`SomeType`de un tipo () comprobando `FromSomeType`los métodos denominados `ToSomeType` y.
-
-En C#, cuando se sobrecarga un operador binario, el operador de asignación correspondiente, si existe, también se sobrecarga implícitamente.
+> [!NOTE]
+> En C#, cuando se sobrecarga un operador binario, el operador de asignación correspondiente, si existe, también se sobrecarga implícitamente.
 
 ## <a name="how-to-fix-violations"></a>Cómo corregir infracciones
 
-Para corregir una infracción de esta regla, implemente el método alternativo para el operador. asígnele el nombre alternativo recomendado.
+Para corregir una infracción de esta regla, implemente el método alternativo para el operador. Asígnele el nombre alternativo recomendado.
 
 ## <a name="when-to-suppress-warnings"></a>Cuándo suprimir advertencias
 

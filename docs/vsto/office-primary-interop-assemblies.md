@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 385b2d451d8202356d56ab7b1a5fd5158d267f1c
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.openlocfilehash: 6a709a59e85f65cf2e0caa0551610dd496bedda5
+ms.sourcegitcommit: 689ba54ea14257d13031de881f5d4fe937a36f56
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71253736"
+ms.lasthandoff: 09/27/2019
+ms.locfileid: "71342501"
 ---
 # <a name="office-primary-interop-assemblies"></a>ensamblados de interoperabilidad primarios de Office
 
@@ -61,13 +61,13 @@ Estas copias de los PIA ayudan a Visual Studio a evitar varios problemas de desa
 
 A partir de Visual Studio 2017, estas copias de los PIA se instalan en las siguientes ubicaciones compartidas en el equipo de desarrollo:
 
-- *%ProgramFiles%\Microsoft Visual Studio\Shared\Visual Studio Tools for Office\PIA\*
+- `%ProgramFiles%\Microsoft Visual Studio\Shared\Visual Studio Tools for Office\PIA\`
 
-- (o *% ProgramFiles (x86)% \ Microsoft Visual Studio\Shared\Visual Studio Tools for Office\PIA\* en sistemas operativos de 64 bits)
+- (o `%ProgramFiles(x86)%\Microsoft Visual Studio\Shared\Visual Studio Tools for Office\PIA\` en los sistemas operativos de 64 bits)
 
 > [!NOTE]
-> En el caso de las versiones anteriores de Visual Studio, estos Pia se instalarán en la carpeta Visual Studio Tools for Office\PIA en la carpeta *% ProgramFiles% de esa versión de Visual Studio.
-> Por ejemplo: *% ProgramFiles (x86)% \ Microsoft Visual Studio 14.0 \ Visual Studio Tools para Office\PIA\*
+> En el caso de las versiones anteriores de Visual Studio, estos Pia se instalarán en la carpeta Visual Studio Tools for Office\PIA en la carpeta `%ProgramFiles%` para esa versión de Visual Studio.
+> Por ejemplo: `%ProgramFiles(x86)%\Microsoft Visual Studio 14.0\Visual Studio Tools for Office\PIA\`
 
 ### <a name="primary-interop-assemblies-in-the-global-assembly-cache"></a>Ensamblados de interoperabilidad primarios en la caché global de ensamblados
 
@@ -86,7 +86,7 @@ En la mayoría de los casos, debe agregar referencias a los PIA que instala Visu
 Si ha instalado y registrado los PIA en la caché global de ensamblados, estas versiones de los ensamblados aparecen en la pestaña **COM** del cuadro de diálogo **Administrador de referencias** . Debe evitar agregar referencias a estas versiones de los ensamblados, puesto que se pueden producir algunos problemas de desarrollo al usarlas. Por ejemplo, si ha registrado distintas versiones de los PIA en la caché global de ensamblados, el proyecto se enlazará automáticamente a la última versión del ensamblado que se registró, aunque especifique una versión distinta en la pestaña **COM** del cuadro de diálogo **Administrador de referencias** .
 
 > [!NOTE]
-> Algunos ensamblados se agregan a un proyecto automáticamente cuando se agrega un ensamblado que hace referencia a ellos. Por ejemplo, las referencias a los ensamblados *Office. dll* y *Microsoft. Vbe. Interop. dll* se agregan automáticamente al agregar una referencia a los ensamblados de Word, Excel, Outlook, Microsoft Forms o Graph.
+> Algunos ensamblados se agregan a un proyecto automáticamente cuando se agrega un ensamblado que hace referencia a ellos. Por ejemplo, las referencias a los ensamblados `Office.dll` y `Microsoft.Vbe.Interop.dll` se agregan automáticamente al agregar una referencia a los ensamblados de Word, Excel, Outlook, Microsoft Forms o Graph.
 
 <a name="pialist"></a>
 
