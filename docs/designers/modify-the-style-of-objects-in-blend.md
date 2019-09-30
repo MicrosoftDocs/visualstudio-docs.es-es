@@ -47,9 +47,9 @@ Cree un pincel visual a partir de un control como un botón. Las ilustraciones s
 
 Puede diseñar la apariencia y el comportamiento de un control una vez y aplicar ese diseño a otros controles para no tener que hacerlo de manera individual.
 
-**¿Debe usar un estilo?** : Si quiere establecer las propiedades predeterminadas (como el color de un botón), use un *estilo*. Puede modificar un control incluso después de aplicarle un estilo.
+**¿Debe usar un estilo?**: Si quiere establecer las propiedades predeterminadas (como el color de un botón), use un *estilo*. Puede modificar un control incluso después de aplicarle un estilo.
 
-**¿Debe usar una plantilla?** : Si quiere cambiar la estructura de un control, use una *plantilla*. Imagine que convierte un gráfico o un logotipo en un botón. El control no se puede modificar después de aplicarle una plantilla.
+**¿Debe usar una plantilla?**: Si quiere cambiar la estructura de un control, use una *plantilla*. Imagine que convierte un gráfico o un logotipo en un botón. El control no se puede modificar después de aplicarle una plantilla.
 
 ### <a name="create-a-template-or-style"></a>Crear una plantilla o un estilo
 
@@ -75,7 +75,7 @@ En el cuadro de diálogo **Crear recurso de estilo**, puede ponerle un nombre al
 
 > [!NOTE]
 > No es posible crear estilos o plantillas para todos los tipos control. Si un control no los admite, el botón de ruta de navegación no aparecerá sobre la mesa de trabajo.
-> Para volver al ámbito de edición del documento principal, haga clic en **Devolver ámbito a**  ![Icono de Devolver ámbito a](../designers/media/55844eb3-ed98-4f20-aa66-a6f5b23eeb2b.png).
+> Para volver al ámbito de edición del documento principal, haga clic en **Devolver ámbito a** ![Icono de Devolver ámbito a](../designers/media/55844eb3-ed98-4f20-aa66-a6f5b23eeb2b.png).
 
 ### <a name="apply-a-style-or-template-to-a-control"></a>Aplicar un estilo o una plantilla a un control
 
@@ -85,7 +85,7 @@ Haga clic con el botón derecho en un objeto en la ventana [Objetos y escala de 
 
 ### <a name="restore-the-default-style-or-template-of-a-control"></a>Restaurar el estilo o la plantilla predeterminados de un control
 
-Seleccione el control y, en la ventana **Propiedades****, busque la propiedad **Estilo** o **Plantilla**. Elija **Opciones avanzadas** y, después, haga clic en **Restablecer** en el menú contextual.
+Seleccione el control y, en la ventana **Propiedades** **, busque la propiedad **Estilo** o **Plantilla**. Elija **Opciones avanzadas** y, después, haga clic en **Restablecer** en el menú contextual.
 
 ## <a name="visual-states"></a>Estados visuales
 
