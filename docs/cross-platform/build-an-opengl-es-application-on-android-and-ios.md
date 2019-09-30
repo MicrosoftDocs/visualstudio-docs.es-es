@@ -135,7 +135,7 @@ Para implementar una aplicación iOS en un dispositivo iOS, debe configurar la f
 
 1. Agregue el ID de Apple inscrito en una cuenta del [Apple Developer Program](https://developer.apple.com/programs/) a Xcode. El ID de Apple se utiliza como identidad de firma para firmar las aplicaciones. Para agregar la identidad de firma en Xcode, abra el menú **Xcode** y elija **Preferencias**. Seleccione **Cuentas** y haga clic en el botón Agregar (+) para agregar el ID de Apple. Vea [Add your Apple ID account](https://help.apple.com/xcode/mac/current/#/devaf282080a) (Agregar una cuenta de ID de Apple) para ver instrucciones detalladas.
 
-1. Desde la configuración de "General" del proyecto DE Xcode, cambie el valor de **	Identificador del lote** a `com.<NameOfVSProject>`, donde `<NameOfVSProject>` es el mismo nombre que el proyecto de solución de Visual Studio que creó. Por ejemplo, si ha creado un proyecto denominado `MyOpenGLESApp` en Visual Studio, establezca **	Identificador del lote** en `com.MyOpenGLESApp`.
+1. Desde la configuración de "General" del proyecto DE Xcode, cambie el valor de **Identificador del lote** a `com.<NameOfVSProject>`, donde `<NameOfVSProject>` es el mismo nombre que el proyecto de solución de Visual Studio que creó. Por ejemplo, si ha creado un proyecto denominado `MyOpenGLESApp` en Visual Studio, establezca **Identificador del lote** en `com.MyOpenGLESApp`.
 
    ![Identificador del lote de Xcode](../cross-platform/media/cppmdd-opengles-iosxcodeid.png "CPPMDD_OpenGLES_iOSXcodeId")
 
