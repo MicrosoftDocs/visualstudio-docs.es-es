@@ -1,7 +1,7 @@
 ---
 title: Ventana de vista de clases, jerarquía de llamadas, examinador de objetos y definición de código
-ms.date: 05/18/2018
-ms.topic: conceptual
+ms.date: 09/19/2019
+ms.topic: reference
 f1_keywords:
 - vs.documentoutline.window
 - vs.objectbrowser
@@ -25,12 +25,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 685915d963e506d86c81a6bc4f7fc62998a0f7d9
-ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.openlocfilehash: 616f62110dbaa18d53b4ecc3cade7737f551e5f9
+ms.sourcegitcommit: a2df993dc5e11c5131dbfcba686f0028a589068f
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66747708"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "71150127"
 ---
 # <a name="view-the-structure-of-code-using-different-tool-windows"></a>Visualización de la estructura del código mediante distintas ventanas de herramienta
 
@@ -68,14 +68,13 @@ El botón **Configuración de vista de clases** de la barra de herramientas incl
 |||
 |-|-|
 |**Mostrar tipos base**|Se muestran los tipos base.|
-|**Mostrar tipos derivados**|Se muestran los tipos derivados.|
+|**Mostrar referencias de proyecto**|Se muestran las referencias del proyecto.|
 |**Mostrar tipos y miembros ocultos**|Se muestran en texto gris claro los tipos y miembros ocultos (los que no están diseñados para que los usen los clientes).|
 |**Mostrar miembros públicos**|Se muestran los miembros públicos.|
 |**Mostrar miembros protegidos**|Se muestran los miembros protegidos.|
 |**Mostrar miembros privados**|Se muestran los miembros privados.|
 |**Mostrar otros miembros**|Se muestran otros tipos de miembros, incluidos los miembros internos (o amigos en Visual Basic).|
 |**Mostrar miembros heredados**|Se muestran los miembros heredados.|
-|**Mostrar métodos de extensión**|Se muestran los métodos de extensión.|
 
 ### <a name="class-view-shortcut-menu"></a>Menú contextual de la Vista de clases
 
@@ -157,7 +156,6 @@ Puede especificar una de las siguientes vistas mediante el botón **Configuraci�
 |**Ver espacios de nombres**|Muestra los espacios de nombres en lugar de los contenedores físicos en el panel izquierdo. Los espacios de nombres almacenados en varios contenedores físicos se combinan.|
 |**Ver contenedores**|Muestra los contenedores físicos en lugar de los espacios de nombres en el panel izquierdo. Los ajustes **Ver espacios de nombres** y **Ver contenedores** son mutuamente excluyentes.|
 |**Mostrar tipos base**|Muestra los tipos base.|
-|**Mostrar tipos derivados**|Muestra los tipos derivados.|
 |**Mostrar tipos y miembros ocultos**|Muestra en texto gris claro los tipos y miembros ocultos (los que no están diseñados para que los usen los clientes).|
 |**Mostrar miembros públicos**|Muestra los miembros públicos.|
 |**Mostrar miembros protegidos**|Muestra los miembros protegidos.|
@@ -168,7 +166,7 @@ Puede especificar una de las siguientes vistas mediante el botón **Configuraci�
 
 ### <a name="object-browser-shortcut-menu-commands"></a>Comandos del menú contextual del Examinador de objetos
 
-En función del tipo de elemento seleccionado, el menú contextual del **Examinador de objetos** puede contener los siguientes comandos:
+En función del tipo de elemento seleccionado, el menú contextual del **Explorador de objetos** puede contener los siguientes comandos:
 
 |||
 |-|-|

@@ -7,12 +7,12 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: f48a690513c80b02683df61a0abf68a3cad58293
-ms.sourcegitcommit: 7eb2fb21805d92f085126f3a820ac274f2216b4e
+ms.openlocfilehash: 6b8602dfb37b1cdad046b012d62f888e77ca5343
+ms.sourcegitcommit: a2df993dc5e11c5131dbfcba686f0028a589068f
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/22/2019
-ms.locfileid: "67328799"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "71150164"
 ---
 # <a name="create-portable-custom-editor-settings-with-editorconfig"></a>Crear opciones de configuración del editor personalizadas y portátiles con EditorConfig
 
@@ -20,7 +20,20 @@ Puede agregar un archivo [EditorConfig](http://editorconfig.org/) al proyecto o 
 
 La configuración de EditorConfig es compatible con varios IDE y editores de código, incluido Visual Studio. Es un componente portátil que acompaña al código y se pueden aplicar estilos de codificación incluso fuera de Visual Studio.
 
-Cuando se agrega un archivo EditorConfig al proyecto en Visual Studio, el formato del código existente no cambia a menos que se dé formato al documento (**Edición** > **Avanzado** > **Dar formato al documento** o **Ctrl**+**K**, **Ctrl**+**D** en el perfil predeterminado). Pero a las nuevas líneas de código se les aplicará formato según la configuración de EditorConfig.
+::: moniker range=">=vs-2019"
+
+Cuando se agrega un archivo EditorConfig al proyecto de Visual Studio, se aplica a las nuevas líneas de código el formato de la configuración de EditorConfig. El formato del código existente no cambia, a menos que ejecute uno de los comandos siguientes:
+
+ - [Limpieza de código](../ide/code-styles-and-code-cleanup.md) (**Ctrl**+**K**, **Ctrl**+**E**), que aplica cualquier configuración de espacio en blanco, como el estilo de sangría, y la configuración de estilo de código seleccionada, como la manera de ordenar las instrucciones `using`.
+ - **Editar** > **Opciones avanzadas** > **Dar formato al documento** (o **Ctrl**+**K**, **Ctrl**+**D** en el perfil predeterminado), que solo aplica la configuración de espacio en blanco, como el estilo de sangría.
+ 
+ ::: moniker-end
+ 
+::: moniker range="=vs-2017"
+
+Cuando se agrega un archivo EditorConfig al proyecto de Visual Studio, se aplica a las nuevas líneas de código el formato de la configuración de EditorConfig. El formato del código existente no cambia a menos que se dé formato al documento (**Editar** > **Opciones avanzadas** > **Dar formato al documento** o **Ctrl**+**K**, **Ctrl**+**D** en el perfil predeterminado). La aplicación de formato al documento solo afecta a la configuración de espacio en blanco, como el estilo de sangría, a menos que se haya configurado la opción Dar formato al documento de modo que [realice una limpieza de código adicional](../ide/code-styles-and-code-cleanup.md#apply-code-styles).
+ 
+ ::: moniker-end
 
 ::: moniker range="vs-2017"
 
@@ -53,13 +66,13 @@ El editor de Visual Studio admite el conjunto principal de [propiedades de Edito
 - charset
 - trim\_trailing_whitespace
 - insert\_final_newline
-- root
+- raíz
 
 La configuración del editor EditorConfig se admiten en todos los lenguajes compatibles con Visual Studio excepto XML. Además, EditorConfig admite convenciones de [estilo de código](../ide/editorconfig-code-style-settings-reference.md), como [lenguaje](../ide/editorconfig-language-conventions.md) y [formato](../ide/editorconfig-formatting-conventions.md) y convenciones de [nomenclatura](../ide/editorconfig-naming-conventions.md) para C# y Visual Basic.
 
 ## <a name="add-and-remove-editorconfig-files"></a>Incorporación y eliminación de los archivos EditorConfig
 
-Cuando se agrega un archivo EditorConfig al proyecto o código base, las nuevas líneas de código que escribe se formatean según este archivo. Sin embargo, el hecho de agregar un archivo EditorConfig no convierte los estilos existentes en los nuevos hasta que aplique formato al documento. Por ejemplo, si tiene sangrías en el archivo cuyo formato se realizó con tabulaciones y agrega un archivo EditorConfig que aplica sangrías con espacios, los caracteres de sangría no se convierten automáticamente en espacios. Cuando aplica formato al documento (**Editar** > **Opciones avanzadas** > **Dar formato al documento** o **Ctrl** + **K**, **Ctrl**+**D**), se aplica la configuración del archivo EditorConfig a las líneas de código existentes.
+Cuando se agrega un archivo EditorConfig al proyecto o código base, las nuevas líneas de código que escribe se formatean según este archivo. Aun así, el hecho de agregar un archivo EditorConfig no convertirá los estilos existentes en los nuevos mientras no aplique formato al documento o ejecute la [Limpieza de código](../ide/code-styles-and-code-cleanup.md). Por ejemplo, si tiene sangrías en el archivo cuyo formato se realizó con tabulaciones y agrega un archivo EditorConfig que aplica sangrías con espacios, los caracteres de sangría no se convierten automáticamente en espacios. Cuando aplica formato al documento (**Editar** > **Opciones avanzadas** > **Dar formato al documento** o **Ctrl** + **K**, **Ctrl**+**D**), se aplica la configuración de espacio en blanco del archivo EditorConfig a las líneas de código existentes.
 
 Si quita un archivo EditorConfig del proyecto o código base y quiere dar formato a nuevas líneas de código de acuerdo con la configuración global del editor, debe cerrar y volver a abrir los archivos de código abiertos.
 

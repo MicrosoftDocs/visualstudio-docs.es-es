@@ -1,21 +1,21 @@
 ---
-title: Conjunto Visual Studio + GitHub | Microsoft Docs
+title: Visual Studio + GitHub | Microsoft Docs
 author: evanwindom
 ms.author: lank
 manager: lank
 ms.date: 07/19/2019
 ms.topic: conceptual
-description: Obtenga más información sobre el nuevo conjunto Visual Studio + GitHub
-ms.openlocfilehash: 1d7b55a32c796747d50fac8dae14d6af2f847c46
-ms.sourcegitcommit: 485881e6ba872c7b28a7b17ceaede845e5bea4fe
+description: Obtenga más información sobre la nueva oferta de Visual Studio + GitHub
+ms.openlocfilehash: 09168bffbdb8caf9e6366335f5d08f5bf81573f9
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/22/2019
-ms.locfileid: "68377655"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71238141"
 ---
 # <a name="introducing-visual-studio-subscriptions-with-github-enterprise"></a>Introducción a las suscripciones de Visual Studio con GitHub Enterprise  
 
-Los clientes que tengan contratos Enterprise (EA) con Microsoft pueden comprar un nuevo conjunto de suscripciones que junta las suscripciones estándar de Visual Studio y GitHub Enterprise. Es una forma fácil y económica para los suscriptores de Visual Studio de adquirir GitHub Enterprise. 
+Los clientes que tengan contratos Enterprise (EA) con Microsoft pueden comprar una nueva oferta de suscripciones que junta las suscripciones estándar de Visual Studio y GitHub Enterprise. Es una forma fácil y económica para los suscriptores de Visual Studio de adquirir GitHub Enterprise. 
 
 - Ahora puede innovar a escala con Visual Studio y GitHub e introducir de manera segura código abierto, comunidad y procedimientos recomendados en su entorno de desarrollo integrado y sus flujos de trabajo.
 - Use los mejores servicios y herramientas de desarrollo para desarrolladores con el conjunto más completo de recursos para crear, implementar y administrar aplicaciones excelentes. 
@@ -28,11 +28,11 @@ Si su organización está realizando un EA nuevo o renovando uno ya existente, e
 - Visual Studio Enterprise con GitHub Enterprise
 - Visual Studio Professional con GitHub Enterprise
 
-Si su organización tiene un contrato Enterprise que todavía no deba renovarse, puede adquirir el SKU "Step-Up" para agregar GitHub Enterprise a las suscripciones existentes de Visual Studio Enterprise o Visual Studio Professional.  A continuación, cuando se renueve su contrato, podrá adquirir el conjunto.
+Si su organización tiene un contrato Enterprise que todavía no deba renovarse, puede adquirir el SKU "Step-Up" para agregar GitHub Enterprise a las suscripciones existentes de Visual Studio Enterprise o Visual Studio Professional. A continuación, cuando se renueve su contrato, podrá adquirir la oferta.
 
 Los SKU existentes para Visual Studio Enterprise, Visual Studio Professional y GitHub Enterprise también continuarán estando disponibles por separado. 
 
-Para obtener más información sobre las ventajas, las opciones y los precios, visite https://visualstudio.microsoft.com/subscriptions/visual-studio-github. 
+Para obtener más información sobre las ventajas y las opciones, visite https://visualstudio.microsoft.com/subscriptions/visual-studio-github. 
 
 ## <a name="getting-your-subscriptions"></a>Obtención de las suscripciones
 
@@ -40,7 +40,7 @@ Las suscripciones de Visual Studio + GitHub Enterprise se asignan en dos partes:
 1. La suscripción de Visual Studio (Enterprise o Professional)
 2. La suscripción de GitHub Enterprise
 
-Cuando su organización adquiere suscripciones, los administradores las asignan.  Las suscripciones de Visual Studio y GitHub Enterprise se asignan por separado.  
+Cuando su organización adquiere suscripciones, los administradores las asignan. Las suscripciones de Visual Studio y GitHub Enterprise se asignan por separado.  
 
 Si se le asigna una suscripción de Visual Studio + GitHub, recibirá un correo electrónico en que se le informará de que el administrador de la suscripción de Visual Studio le ha asignado una suscripción.  En ese momento, podrá verla en https://my.visualstudio.com/subscriptions.  
 

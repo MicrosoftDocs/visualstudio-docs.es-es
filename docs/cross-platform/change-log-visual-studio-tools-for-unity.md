@@ -1,7 +1,7 @@
 ---
 title: Registro de cambios (Visual Studio Tools para Unity, Windows) | Microsoft Docs
 ms.custom: ''
-ms.date: 07/29/2019
+ms.date: 09/18/2019
 ms.technology: vs-unity-tools
 ms.topic: conceptual
 ms.assetid: ea490b7e-fc0d-44b1-858a-a725ce20e396
@@ -10,16 +10,101 @@ ms.author: johmil
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: d9b89be226ca7cafbfe66a14cd606f50678a013a
-ms.sourcegitcommit: 044bb54cb4552c8f4651feb11d62e52726117e75
+ms.openlocfilehash: 713535bb11b4bd9cab4ef1b31507b96fe1c9897a
+ms.sourcegitcommit: 88f576ac32af31613c1a10c1548275e1ce029f4f
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/30/2019
-ms.locfileid: "68661957"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "71185990"
 ---
 # <a name="change-log-visual-studio-tools-for-unity-windows"></a>Registro de cambios (Visual Studio Tools para Unity, Windows)
 
 Registro de cambios de Visual Studio Tools para Unity.
+
+## <a name="4330"></a>4.3.3.0
+
+Fecha de publicación: 23 de septiembre de 2019
+
+### <a name="bug-fixes"></a>Correcciones de errores
+
+- **Integración:**
+
+  - Se han corregido los informes de errores y advertencias de las compilaciones ligeras.
+
+## <a name="4320"></a>4.3.2.0
+
+Fecha de publicación: 16 de septiembre de 2019
+
+### <a name="new-features"></a>Características nuevas
+
+- **Integración:**
+
+  - Hemos aumentado el reconocimiento que tiene Visual Studio para los proyectos de Unity mediante la adición de nuevos diagnósticos específicos para Unity. También hemos hecho que el entorno de desarrollo integrado sea más inteligente suprimiendo los diagnósticos generales de C# que no se aplican a los proyectos de Unity. Por ejemplo, el IDE no mostrará una corrección rápida para cambiar una variable del inspector a `readonly`, lo que le impediría modificar la variable en el editor de Unity.
+    - `UNT0001`: El tiempo de ejecución llama a los mensajes de Unity aunque estén vacíos; no los declare para evitar el procesamiento innecesario por parte del tiempo de ejecución de Unity.
+    - `UNT0002`: La comparación de etiquetas con la igualdad de cadenas es más lenta que el método CompareTag integrado.
+    - `UNT0003`: Se prefiere el uso de la forma genérica de GetComponent para la seguridad de tipos.
+    - `UNT0004`: El mensaje de actualización depende de la velocidad de fotogramas y debe usar Time.deltaTime en lugar de Time.fixedDeltaTime.
+    - `UNT0005`: El mensaje de FixedUpdate no depende de la velocidad de fotogramas y debe usar Time.fixedDeltaTime en lugar de Time.deltaTime.
+    - `UNT0006`: se ha detectado una firma de método incorrecta para este mensaje de Unity.
+    - `UNT0007`: Unity invalida el operador de comparación NULL para objetos de Unity que es incompatible con el uso combinado de NULL.
+    - `UNT0008`: Unity invalida el operador de comparación NULL para objetos de Unity que es incompatible con la propagación de tipo NULL.
+    - `UNT0009`: Al aplicar el atributo InitializeOnLoad a una clase, debe proporcionar un constructor estático. El atributo InitializeOnLoad garantiza que se le llamará cuando se inicie el editor.
+    - `UNT0010`: El componente MonoBehaviours solo debe crearse con AddComponent(). MonoBehaviour es un componente y debe adjuntarse a un elemento GameObject.
+    - `UNT0011`: El componente ScriptableObject solo debe crearse con CreateInstance(). ScriptableObject debe crearse mediante el motor de Unity para controlar los métodos de mensajes de Unity.
+    - `USP0001` para `IDE0029`: los objetos de Unity no deben usar la fusión nula.
+    - `USP0002` para `IDE0031`: los objetos de Unity no deben usar la propagación nula.
+    - `USP0003` para `IDE0051`: los mensajes de Unity se invocan mediante el tiempo de ejecución de Unity.
+    - `USP0004` para `IDE0044`: los campos con un atributo SerializeField no deben ser de solo lectura.
+
+## <a name="4310"></a>4.3.1.0
+
+Fecha de publicación: 4 de septiembre de 2019
+
+### <a name="new-features"></a>Características nuevas
+
+- **Evaluación:**
+
+  - Se ha agregado compatibilidad para mejorar la presentación de tipos, es decir, `List<object>` en lugar de `List'1[[System.Object, <corlib...>]]`.
+
+  - Se ha agregado compatibilidad con el acceso a miembros de puntero, es decir, `p->data->member`.
+
+  - Se ha agregado compatibilidad con las conversiones implícitas en inicializadores de matriz, es decir, `new byte [] {1,2,3,4}`.
+
+## <a name="4300"></a>4.3.0.0
+
+Fecha de publicación: 13 de agosto de 2019
+
+### <a name="new-features"></a>Características nuevas
+
+- **Depurador:**
+
+  - Se ha agregado compatibilidad con el protocolo MDS 2.51.
+
+- **Integración:**
+
+  - Se ha mejorado la ventana para asociar a una instancia de Unity con características de ordenación, búsqueda y actualización. El PID ahora se muestra incluso para los reproductores locales (para lo que se consultan los sockets de escucha del sistema, a fin de recuperar el proceso al que pertenece).
+
+  - Se ha agregado compatibilidad con archivos asmdef.
+
+### <a name="bug-fixes"></a>Correcciones de errores
+
+- **Integración:**
+
+  - Se ha corregido el control de los mensajes con formato incorrecto al comunicarse con reproductores de Unity.
+
+- **Evaluación:**
+
+  - Se ha corregido el control de los espacios de nombres en las expresiones.
+
+  - Se ha corregido la inspección con los tipos IntPtr.
+  
+  - Se han corregido los problemas de ejecución paso a paso con excepciones.
+
+  - Se ha corregido la evaluación de los pseudoidentificadores (como $exception).
+
+  - Se ha evitado el bloqueo al desreferenciar direcciones no válidas.  
+
+  - Se ha corregido el problema con los dominios de aplicación descargados.
 
 ## <a name="4201"></a>4.2.0.1
 
@@ -33,7 +118,7 @@ Publicado el 24 de julio de 2019
   
   - Mejora del almacenamiento en caché de diagnóstico al usar compilaciones rápidas para proyectos de Unity.
 
-### <a name="bug-fixes"></a>Corrección de errores
+### <a name="bug-fixes"></a>Correcciones de errores
 
 - **Integración:**
 
@@ -55,7 +140,7 @@ Publicada el 24 de mayo de 2019
 
   - Se ha actualizado la API MonoBehaviour a 2019.1.
 
-### <a name="bug-fixes"></a>Corrección de errores
+### <a name="bug-fixes"></a>Correcciones de errores
 
 - **Integración:**
 
@@ -79,7 +164,7 @@ Publicada el 21 de mayo de 2019
 
   - Se ha actualizado el mecanismo de extracción de nombres del proyecto con Unity 2019.x.
 
-  - Se ha agregado compatibilidad para paquetes de Unity en el Explorador de proyectos de Unity. Solo son visibles los paquetes a los que se hace referencia (mediante manifest.json en la carpeta ```Packages```) y los paquetes locales (insertados en la carpeta ```Packages```).
+  - Se ha agregado compatibilidad para paquetes de Unity en el Explorador de proyectos de Unity. Solo son visibles los paquetes a los que se hace referencia (mediante manifest.json en la carpeta `Packages`) y los paquetes locales (insertados en la carpeta `Packages`).
 
 - **Generación de proyectos:**
 
@@ -89,9 +174,9 @@ Publicada el 21 de mayo de 2019
 
   - Se ha agregado compatibilidad para nombres calificados con el alias (solo el espacio de nombres global por ahora). Así pues, el evaluador de expresiones acepta ahora tipos con el formato global::namespace.type.
 
-  - Se ha agregado compatibilidad con el formato ```pointer[index]```, que es semánticamente idéntico al formato ```*(pointer+index)``` de desreferencia de puntero.
+  - Se ha agregado compatibilidad con el formato `pointer[index]`, que es semánticamente idéntico al formato `*(pointer+index)` de desreferencia de puntero.
 
-### <a name="bug-fixes"></a>Corrección de errores
+### <a name="bug-fixes"></a>Correcciones de errores
 
 - **Integración:**
 
@@ -111,7 +196,7 @@ Publicada el 21 de mayo de 2019
 
 Publicada el 27 de febrero de 2019
 
-### <a name="bug-fixes"></a>Corrección de errores
+### <a name="bug-fixes"></a>Correcciones de errores
 
 - **Integración:**
 
@@ -129,7 +214,7 @@ Publicada el 13 de febrero de 2019
 
   - Se ha agregado compatibilidad para detectar correctamente procesos de Unity durante la instalación y permitir que el motor de instalación administre mejor los bloqueos de archivo.
 
-  - Se actualizado la API ScriptableObject.
+  - Se ha actualizado la API `ScriptableObject`.
 
 ## <a name="4003"></a>4.0.0.3
 
@@ -139,13 +224,13 @@ Publicada el 31 de enero de 2019
 
 - **Generación de proyectos:**
 
-  - Los campos públicos y serializados ya no generarán advertencias. Hemos suprimido automáticamente las advertencias del compilador CS0649 y IDE0051 en los proyectos de Unity que crearon estos mensajes.
+  - Los campos públicos y serializados ya no generarán advertencias. Hemos suprimido automáticamente las advertencias del compilador `CS0649` y `IDE0051` en los proyectos de Unity que crearon estos mensajes.
 
 - **Integración:**
 
   - Ha mejorado la experiencia del usuario para mostrar las instancias del reproductor y el editor de Unity (ahora se puede cambiar el tamaño de las ventanas, se pueden usar márgenes uniformes y se puede mostrar un control de ajuste de tamaño). Se ha agregado información del identificador del proceso para editores de Unity.
 
-  - Se ha actualizado la API MonoBehaviour.
+  - Se ha actualizado la API `MonoBehaviour`.
 
 - **Evaluación:**
 
@@ -153,7 +238,7 @@ Publicada el 31 de enero de 2019
 
   - Se ha agregado compatibilidad con las pseudovariables (identificadores de excepción y objetos).
 
-### <a name="bug-fixes"></a>Corrección de errores
+### <a name="bug-fixes"></a>Correcciones de errores
 
 - **Integración:**
 
@@ -171,7 +256,7 @@ Publicada el 31 de enero de 2019
 
 Publicada el 23 de enero de 2019
 
-### <a name="bug-fixes"></a>Corrección de errores
+### <a name="bug-fixes"></a>Correcciones de errores
 
 - **Integración:**
 
@@ -205,7 +290,7 @@ Publicada el 10 de diciembre de 2018
 
   - Se ha agregado compatibilidad con la actualización automática de la base de datos de recursos de Unity al guardarla. Esta característica está habilitada de forma predeterminada y desencadenará una recompilación en el lado de Unity al guardar un script en Visual Studio. Puede deshabilitar esta característica en la base de datos de recursos ubicada en Tools\Options\Tools for Unity\Refresh al guardarla.
 
-### <a name="bug-fixes"></a>Corrección de errores
+### <a name="bug-fixes"></a>Correcciones de errores
 
 - **Integración:**
 
@@ -241,7 +326,7 @@ Publicada el 4 de diciembre de 2018
 
 Publicado el 28 de noviembre de 2018
 
-### <a name="bug-fixes"></a>Corrección de errores
+### <a name="bug-fixes"></a>Correcciones de errores
 
 - **Integración:**
 
@@ -251,7 +336,7 @@ Publicado el 28 de noviembre de 2018
 
 Publicado el 19 de noviembre de 2018
 
-### <a name="bug-fixes"></a>Corrección de errores
+### <a name="bug-fixes"></a>Correcciones de errores
 
 - **Depurador:**
 
@@ -261,7 +346,7 @@ Publicado el 19 de noviembre de 2018
 
 Publicado el 15 de noviembre de 2018
 
-### <a name="bug-fixes"></a>Corrección de errores
+### <a name="bug-fixes"></a>Correcciones de errores
 
 - **Integración:**
 
@@ -271,7 +356,7 @@ Publicado el 15 de noviembre de 2018
 
 Publicado el 13 de noviembre de 2018
 
-### <a name="bug-fixes"></a>Corrección de errores
+### <a name="bug-fixes"></a>Correcciones de errores
 
 - **Generación de proyectos:**
 
@@ -281,7 +366,7 @@ Publicado el 13 de noviembre de 2018
 
 Publicado el 20 de septiembre de 2018
 
-### <a name="bug-fixes"></a>Corrección de errores
+### <a name="bug-fixes"></a>Correcciones de errores
 
 - **Depurador:**
 
@@ -291,7 +376,7 @@ Publicado el 20 de septiembre de 2018
 
 Publicado el 27 de agosto de 2018
 
-### <a name="bug-fixes"></a>Corrección de errores
+### <a name="bug-fixes"></a>Correcciones de errores
 
 - **Integración:**
 
@@ -301,7 +386,7 @@ Publicado el 27 de agosto de 2018
 
 Publicado el 20 de agosto de 2018
 
-### <a name="bug-fixes"></a>Corrección de errores
+### <a name="bug-fixes"></a>Correcciones de errores
 
 - **Integración:**
 
@@ -319,7 +404,7 @@ Publicado el 14 de agosto de 2018
 
   - Se agregó compatibilidad para métodos genéricos.
 
-### <a name="bug-fixes"></a>Corrección de errores
+### <a name="bug-fixes"></a>Correcciones de errores
 
 - **Integración:**
 
@@ -329,7 +414,7 @@ Publicado el 14 de agosto de 2018
 
 Publicado el 24 de julio de 2018
 
-### <a name="bug-fixes"></a>Corrección de errores
+### <a name="bug-fixes"></a>Correcciones de errores
 
 - **Generación de proyectos:**
 
@@ -339,7 +424,7 @@ Publicado el 24 de julio de 2018
 
 Publicado el 7 de julio de 2018
 
-### <a name="bug-fixes"></a>Corrección de errores
+### <a name="bug-fixes"></a>Correcciones de errores
 
 - **Generación de proyectos:**
 
@@ -357,7 +442,7 @@ Publicado el 26 de junio de 2018
 
   - Se agregó compatibilidad con la carga de tipo Lazy (optimizando la carga de red y la latencia de respuesta del depurador).
 
-### <a name="bug-fixes"></a>Corrección de errores
+### <a name="bug-fixes"></a>Correcciones de errores
 
 - **Evaluación:**
 
@@ -379,7 +464,7 @@ Publicado el 30 de mayo de 2018
 
   - Se agregó compatibilidad para las gramáticas de textmate para sombreadores (la carga de trabajo de C++ ya no es necesaria para el coloreado de código del sombreador).
 
-### <a name="bug-fixes"></a>Corrección de errores
+### <a name="bug-fixes"></a>Correcciones de errores
 
 - **Generación de proyectos:**
 
@@ -389,7 +474,7 @@ Publicado el 30 de mayo de 2018
 
 Publicado el 7 de mayo de 2018
 
-### <a name="bug-fixes"></a>Corrección de errores
+### <a name="bug-fixes"></a>Correcciones de errores
 
 - **Instalador:**
 
@@ -415,7 +500,7 @@ Publicado el 7 de mayo de 2018
 
   - Se ha mejorado la experiencia de evaluación de la ventana Inspección.
 
-### <a name="bug-fixes"></a>Corrección de errores
+### <a name="bug-fixes"></a>Correcciones de errores
 
 - **Integración:**
 
@@ -435,7 +520,7 @@ Publicado el 13 de marzo de 2018
 
   - Se ha agregado compatibilidad con el nuevo generador de proyectos en Unity 2018.1.
 
-### <a name="bug-fixes"></a>Corrección de errores
+### <a name="bug-fixes"></a>Correcciones de errores
 
 - **Integración:**
 
@@ -449,7 +534,7 @@ Publicado el 13 de marzo de 2018
 
 Publicado el 5 de marzo de 2018
 
-### <a name="bug-fixes"></a>Corrección de errores
+### <a name="bug-fixes"></a>Correcciones de errores
 
 - **Generación de proyectos:**
 
@@ -469,7 +554,7 @@ Publicado el 23 de febrero de 2018
 
   - Se ha agregado compatibilidad con .NET Standard.
 
-### <a name="bug-fixes"></a>Corrección de errores
+### <a name="bug-fixes"></a>Correcciones de errores
 
 - **Generación de proyectos:**
 
@@ -489,7 +574,7 @@ Publicado el 7 de febrero de 2018
 
   - Actualice la superficie de la API de UnityMessage para 2017.3.
 
-### <a name="bug-fixes"></a>Corrección de errores
+### <a name="bug-fixes"></a>Correcciones de errores
 
 - **Integración:**
 
@@ -499,7 +584,7 @@ Publicado el 7 de febrero de 2018
 
 Publicado el 24 de enero de 2018
 
-### <a name="bug-fixes"></a>Corrección de errores
+### <a name="bug-fixes"></a>Correcciones de errores
 
 - **Integración:**
 
@@ -529,7 +614,7 @@ Publicado el 10 de enero de 2018
 
   - Introduzca la versión "Latest" para los asistentes.
 
-### <a name="bug-fixes"></a>Corrección de errores
+### <a name="bug-fixes"></a>Correcciones de errores
 
 - **Generación de proyectos:**
 
@@ -547,7 +632,7 @@ Publicado el 10 de enero de 2018
 
 Publicado el 9 de enero de 2018
 
-### <a name="bug-fixes"></a>Corrección de errores
+### <a name="bug-fixes"></a>Correcciones de errores
 
 - **Integración:**
 
@@ -569,7 +654,7 @@ Publicado el 4 de diciembre de 2017
 
   - Se ha agregado compatibilidad con archivos de símbolo de depuración portátiles.
 
-### <a name="bug-fixes"></a>Corrección de errores
+### <a name="bug-fixes"></a>Correcciones de errores
 
 - **Integración:**
 
@@ -607,7 +692,7 @@ Publicado el 19 de septiembre de 2017
 
   - Se agregó compatibilidad con las conversiones implícitas o explícitas.
 
-### <a name="bug-fixes"></a>Corrección de errores
+### <a name="bug-fixes"></a>Correcciones de errores
 
 - **Evaluación:**
 
@@ -623,7 +708,7 @@ Publicado el 19 de septiembre de 2017
 
 Publicado el 15 de agosto de 2017
 
-### <a name="bug-fixes"></a>Corrección de errores
+### <a name="bug-fixes"></a>Correcciones de errores
 
 - **Generación de proyectos:**
 
@@ -641,7 +726,7 @@ Publicado el 14 de agosto de 2017
 
   - Se agregó compatibilidad minimalista con punteros.
 
-### <a name="bug-fixes"></a>Corrección de errores
+### <a name="bug-fixes"></a>Correcciones de errores
 
 - **Evaluación:**
 
@@ -669,7 +754,7 @@ Publicado el 10 de mayo de 2017
 
   - Se agregó compatibilidad con la limpieza de la caché de MEF.
 
-### <a name="bug-fixes"></a>Corrección de errores
+### <a name="bug-fixes"></a>Correcciones de errores
 
 - **Editor de código:**
 
@@ -697,7 +782,7 @@ Publicado el 7 de abril de 2017
 
   - Se ha agregado compatibilidad para la generación de proyectos "Player" cuando se usa la plataforma Tienda Windows y el back-end il2cpp.
 
-### <a name="bug-fixes"></a>Corrección de errores
+### <a name="bug-fixes"></a>Correcciones de errores
 
 - **Editor de código:**
 
@@ -716,7 +801,7 @@ Publicado el 7 de marzo de 2017
 ## <a name="2820---30-preview-3"></a>2.8.2.0 - 3.0 (versión preliminar 3)
 Publicado el 25 de enero de 2017
 
-### <a name="bug-fixes"></a>Corrección de errores
+### <a name="bug-fixes"></a>Correcciones de errores
 
 - **Generación de proyectos:**
 
@@ -725,7 +810,7 @@ Publicado el 25 de enero de 2017
 ## <a name="2810---30-preview-2"></a>2.8.1.0 (3.0 versión preliminar 2)
 Publicado el 23 de enero de 2017
 
-### <a name="bug-fixes"></a>Corrección de errores
+### <a name="bug-fixes"></a>Correcciones de errores
 
 - **Editor de código:**
 
@@ -794,7 +879,7 @@ Publicado el 17 de noviembre de 2016
 
   - Se cambió a Roslyn para insertar y dar formato a los mensajes de Unity.
 
-### <a name="bug-fixes"></a>Corrección de errores
+### <a name="bug-fixes"></a>Correcciones de errores
 
 - **Depurador:**
 
@@ -836,7 +921,7 @@ Publicado el 14 de julio de 2016
 
   - Se agregaron MonoBehaviors que faltaban.
 
-### <a name="bug-fixes"></a>Corrección de errores
+### <a name="bug-fixes"></a>Correcciones de errores
 
 - **General:**
 
@@ -872,7 +957,7 @@ Publicado el 4 de febrero de 2016
 
   - Se han quitado páginas de propiedades de Visual Studio que no son relevantes para los proyectos de Unity.
 
-### <a name="bug-fixes"></a>Corrección de errores
+### <a name="bug-fixes"></a>Correcciones de errores
 
 - **Generación de proyectos:**
 
@@ -908,7 +993,7 @@ Publicado el 8 de septiembre de 2015
 
 - Compatibilidad con Unity 5.2
 
-### <a name="bug-fixes"></a>Corrección de errores
+### <a name="bug-fixes"></a>Correcciones de errores
 
 - Mostrar elementos de menú en Unity < 4.2
 
@@ -926,7 +1011,7 @@ Publicado el 8 de septiembre de 2015
 
 Publicado el 20 de julio de 2015
 
-### <a name="bug-fixes"></a>Corrección de errores
+### <a name="bug-fixes"></a>Correcciones de errores
 
 - **Integración de Unity:**
 
@@ -961,7 +1046,7 @@ Publicado el 20 de julio de 2015
 ## <a name="1990---20-preview-2"></a>1.9.9.0 - 2.0 (versión preliminar 2)
 Publicado el 2 de abril de 2015
 
-### <a name="new-features"></a>Nuevas características
+### <a name="new-features"></a>Características nuevas
 
 - **Explorador de proyectos de Unity:**
 
@@ -1007,7 +1092,7 @@ Publicado el 2 de abril de 2015
 
 - **IU:** Se ha agregado Visual Studio Tools para Unity al cuadro de diálogo **Opciones** de Visual Studio.
 
-### <a name="bug-fixes"></a>Corrección de errores
+### <a name="bug-fixes"></a>Correcciones de errores
 
 - **Explorador de proyectos de Unity:**
 
@@ -1050,7 +1135,7 @@ Publicado el 2 de abril de 2015
 ## <a name="1980---20-preview"></a>1.9.8.0 - 2.0 (versión preliminar)
 Publicado el 12 de noviembre de 2014
 
-### <a name="new-features"></a>Nuevas características
+### <a name="new-features"></a>Características nuevas
 
 - Compatible con Visual Studio 2015.
 
@@ -1076,7 +1161,7 @@ Publicado el 12 de noviembre de 2014
 
 - Permite abrir sombreadores en Visual Studio desde Unity.
 
-### <a name="bug-fixes"></a>Corrección de errores
+### <a name="bug-fixes"></a>Correcciones de errores
 
 - Se limpian los sockets antes de iniciar el juego en Unity después de que se haya iniciado Adjuntar y reproducir en Visual Studio. Esto corrige algunos problemas de estabilidad de la conexión entre Unity y VS al usar Adjuntar y reproducir.
 
@@ -1090,7 +1175,7 @@ Publicado el 12 de noviembre de 2014
 
 Publicado el 9 de octubre de 2014
 
-### <a name="new-features"></a>Nuevas características
+### <a name="new-features"></a>Características nuevas
 
 - Se ha mejorado la detección de reproductores de Unity.
 
@@ -1098,7 +1183,7 @@ Publicado el 9 de octubre de 2014
 
 - Si no hay documentación local, se establece la documentación en línea de Unity como la documentación predeterminada.
 
-### <a name="bug-fixes"></a>Corrección de errores
+### <a name="bug-fixes"></a>Correcciones de errores
 
 - Se ha corregido un posible bloqueo de Unity al alcanzar un punto de interrupción después de volver a cargar un dominio.
 
@@ -1114,7 +1199,7 @@ Publicado el 9 de octubre de 2014
 
 Publicado el 22 de septiembre de 2014
 
-### <a name="new-features"></a>Nuevas características
+### <a name="new-features"></a>Características nuevas
 
 - Se optimiza el enlazado de un punto de interrupción con ubicaciones de origen.
 
@@ -1126,7 +1211,7 @@ Publicado el 22 de septiembre de 2014
 
 - Se eliminan y se cambia el nombre de archivos .meta al eliminar o cambiar el nombre de archivos desde Visual Studio.
 
-### <a name="bug-fixes"></a>Corrección de errores
+### <a name="bug-fixes"></a>Correcciones de errores
 
 - Se ha corregido el procesamiento de temas de Visual Studio. Anteriormente, los cuadros de diálogo en temas negros podían aparecer vacíos.
 
@@ -1160,7 +1245,7 @@ Publicado el 22 de septiembre de 2014
 
 Publicado el 29 de julio de 2014
 
-### <a name="new-features"></a>Nuevas características
+### <a name="new-features"></a>Características nuevas
 
 - En la ventana Adjuntar depurador de Unity, se ha agregado la capacidad de introducir una dirección IP y un puerto personalizados para depurar.
 
@@ -1184,7 +1269,7 @@ Publicado el 29 de julio de 2014
 
 - Se agrega un comando para sincronizar el Explorador de proyectos de Unity con el documento actual.
 
-### <a name="bug-fixes"></a>Corrección de errores
+### <a name="bug-fixes"></a>Correcciones de errores
 
 - Se han corregido los puntos de interrupción condicionales cuyas condiciones se establecen antes de iniciar al depurador.
 
@@ -1209,7 +1294,7 @@ Publicado el 29 de julio de 2014
 
 Publicado el 7 de enero de 2014
 
-### <a name="new-features"></a>Nuevas características
+### <a name="new-features"></a>Características nuevas
 
 - Solución alternativa de un problema en la capa de red del motor de scripting de Unity en Mavericks para la detección remota de editores.
 
@@ -1223,7 +1308,7 @@ Publicado el 7 de enero de 2014
 
 - Agrega ajuste para deshabilitar la generación de símbolos de depuración de mdb. Esto es útil si usted está generando la mdb.
 
-### <a name="bug-fixes"></a>Corrección de errores
+### <a name="bug-fixes"></a>Correcciones de errores
 
 - Se ha corregido una regresión por la que los archivos abiertos en VS desde Unity 4.2 (o versión más reciente) perdían IntelliSense.
 
@@ -1237,7 +1322,7 @@ Publicado el 7 de enero de 2014
 
 Publicado el 21 de noviembre de 2013
 
-### <a name="new-features"></a>Nuevas características
+### <a name="new-features"></a>Características nuevas
 
 - Se han ajustado los asistentes de MonoBehaviour con las API de Unity 4.3.
 
@@ -1247,7 +1332,7 @@ Publicado el 21 de noviembre de 2013
 
 - Se ha mejorado el aspecto de nuestras llamadas a Debug.Log para que no incluyan el principio de la stacktrace en el mensaje.
 
-### <a name="bug-fixes"></a>Corrección de errores
+### <a name="bug-fixes"></a>Correcciones de errores
 
 - Se ha corregido un error por el que interferíamos con el procesamiento predeterminado de archivos JavaScript en Visual Studio.
 
@@ -1271,7 +1356,7 @@ Publicado el 21 de noviembre de 2013
 
 Publicado el 24 de septiembre de 2013
 
-### <a name="new-features"></a>Nuevas características
+### <a name="new-features"></a>Características nuevas
 
 - Se ha mejorado mucho la velocidad de conexión del depurador.
 
@@ -1289,7 +1374,7 @@ Publicado el 24 de septiembre de 2013
 
 - Se ha mejorado la detección de editores remotos para la vista previa de depuración remota.
 
-### <a name="bug-fixes"></a>Corrección de errores
+### <a name="bug-fixes"></a>Correcciones de errores
 
 - Se ha corregido un error por el que se podía perder un subproceso en VS tras desconectar el depurador.
 
@@ -1313,7 +1398,7 @@ Publicado el 24 de septiembre de 2013
 
 Publicado el 9 de julio de 2013
 
-### <a name="bug-fixes"></a>Corrección de errores
+### <a name="bug-fixes"></a>Correcciones de errores
 
 - Se procesan nombres completos en el evaluador de expresiones.
 
@@ -1337,7 +1422,7 @@ Publicado el 9 de julio de 2013
 
 Publicado el 9 de abril de 2013
 
-### <a name="bug-fixes"></a>Corrección de errores
+### <a name="bug-fixes"></a>Correcciones de errores
 
 - Se ha corregido la implementación local de ensamblados de Unity para la finalización de código en caso de que se produzca un error de E/S (como archivos de sólo lectura o archivos bloqueados por Visual Studio).
 
@@ -1351,7 +1436,7 @@ Publicado el 9 de abril de 2013
 
 Publicado el 25 de marzo de 2013
 
-### <a name="new-features"></a>Nuevas características
+### <a name="new-features"></a>Características nuevas
 
 - Se ha mejorado mucho la velocidad de conexión del depurador.
 
@@ -1381,7 +1466,7 @@ Publicado el 25 de marzo de 2013
 
 - UnityVS ya no solicita actualizar la compilación al guardar el archivo, sino cuando VS compila el proyecto.
 
-### <a name="bug-fixes"></a>Corrección de errores
+### <a name="bug-fixes"></a>Correcciones de errores
 
 - Se ha corregido nuestro perfil de .net personalizado
 
@@ -1421,7 +1506,7 @@ Publicado el 9 de marzo de 2013
 ## <a name="10130"></a>1.0.13.0
 Publicado el 21 de enero de 2013
 
-### <a name="bug-fixes"></a>Corrección de errores
+### <a name="bug-fixes"></a>Correcciones de errores
 
 - Se ha corregido un bloqueo de Visual Studio que podía ocurrir si el código depurado de destino enviaba eventos de subproceso no válidos. Esto solía pasar al depurar un Unity remoto en OSX.
 
@@ -1444,7 +1529,7 @@ Publicado el 21 de enero de 2013
 ## <a name="10120"></a>1.0.12.0
 Publicado el 3 de enero de 2013
 
-### <a name="bug-fixes"></a>Corrección de errores
+### <a name="bug-fixes"></a>Correcciones de errores
 
 - Se ha corregido el bloqueo de Visual Studio que podía producirse cuando Visual Studio estaba eliminando un punto de interrupción.
 
@@ -1463,7 +1548,7 @@ Publicado el 3 de enero de 2013
 ## <a name="10110"></a>1.0.11.0
 Publicado el 28 de noviembre de 2012
 
-### <a name="new-features"></a>Nuevas características
+### <a name="new-features"></a>Características nuevas
 
 - Soporte oficial de Unity 4.
 
@@ -1477,7 +1562,7 @@ Publicado el 28 de noviembre de 2012
 
 - Se ha agregado una [API](../cross-platform/share-the-unity-log-callback-with-vstu.md) para dejar al usuario participar en la LogCallback.
 
-### <a name="bug-fixes"></a>Corrección de errores
+### <a name="bug-fixes"></a>Correcciones de errores
 
 - Se ha corregido la regresión en segundo plano del Explorador de proyectos de Unity en Visual Studio 2012.
 
@@ -1494,7 +1579,7 @@ Publicado el 28 de noviembre de 2012
 ## <a name="10100"></a>1.0.10.0
 Publicado el 9 de octubre de 2012
 
-### <a name="bug-fixes"></a>Corrección de errores
+### <a name="bug-fixes"></a>Correcciones de errores
 
 - Se ha corregido el segundo plano del Explorador de proyectos de Unity en Visual Studio 2010.
 
@@ -1508,7 +1593,7 @@ Publicado el 9 de octubre de 2012
 
 Publicado el 3 de octubre de 2012
 
-### <a name="bug-fixes"></a>Corrección de errores
+### <a name="bug-fixes"></a>Correcciones de errores
 
 - Se ha corregido la generación de proyectos cuando el proyecto de Unity incluye activos reales de JavaScript.
 
@@ -1528,7 +1613,7 @@ Publicado el 3 de octubre de 2012
 
 Publicado el 26 de septiembre de 2012
 
-### <a name="bug-fixes"></a>Corrección de errores
+### <a name="bug-fixes"></a>Correcciones de errores
 
 - Se ha corregido la forma en que nuestro abridor de scripts adquiere la ruta de acceso al proyecto para asegurarse de que sea capaz de abrir Visual Studio y los scripts.
 
@@ -1540,11 +1625,11 @@ Publicado el 26 de septiembre de 2012
 
 Publicado el 14 de septiembre de 2012
 
-### <a name="new-features"></a>Nuevas características
+### <a name="new-features"></a>Características nuevas
 
 - Soporte de Visual Studio 2012.
 
-### <a name="bug-fixes"></a>Corrección de errores
+### <a name="bug-fixes"></a>Correcciones de errores
 
 - Se ha corregido la generación de archivos de proyectos de complementos y del Editor para que coincida con el comportamiento de Unity.
 
@@ -1560,7 +1645,7 @@ Publicado el 12 de septiembre de 2012
 
 Publicado el 10 de septiembre de 2012
 
-### <a name="bug-fixes"></a>Corrección de errores
+### <a name="bug-fixes"></a>Correcciones de errores
 
 - Se ha corregido la generación de archivos de proyecto cuando los scripts o sombreadores tenían un carácter xml no válido.
 
@@ -1570,13 +1655,13 @@ Publicado el 10 de septiembre de 2012
 
 Publicado el 5 de septiembre de 2012
 
-### <a name="new-features"></a>Nuevas características
+### <a name="new-features"></a>Características nuevas
 
 - Conversión automática de símbolos de depuración en Unity.
 
     Si tiene un ensamblado .dll de .NET con su .pdb asociado en la carpeta de activos, simplemente vuelva a importar el ensamblado y UnityVS convertirá el archivo .pdb en un archivo de símbolos de depuración que comprende el motor de scripting de Unity. De este modo, podrá acceder a los ensamblados de .NET desde UnityVS.
 
-### <a name="bug-fixes"></a>Corrección de errores
+### <a name="bug-fixes"></a>Correcciones de errores
 
 - Se ha corregido el bloqueo de UnityVS que tenía lugar durante la depuración como consecuencia de excepciones producidas por métodos o propiedades ubicadas dentro de Unity.
 
@@ -1584,11 +1669,11 @@ Publicado el 5 de septiembre de 2012
 
 Publicado el 4 de septiembre de 2012
 
-### <a name="new-features"></a>Nuevas características
+### <a name="new-features"></a>Características nuevas
 
 - Nueva opción de configuración para deshabilitar el uso de UnityVS para abrir archivos desde Unity.
 
-### <a name="bug-fixes"></a>Corrección de errores
+### <a name="bug-fixes"></a>Correcciones de errores
 
 - Se ha corregido la generación de referencias a UnityEditor para proyectos que no sean del editor.
 
@@ -1600,7 +1685,7 @@ Publicado el 4 de septiembre de 2012
 
 Publicado el 30 de agosto de 2012
 
-### <a name="bug-fixes"></a>Corrección de errores
+### <a name="bug-fixes"></a>Correcciones de errores
 
 - Se ha corregido el conflicto con el depurador de PythonTools.
 
@@ -1612,11 +1697,11 @@ Publicado el 30 de agosto de 2012
 
 Publicado el 28 de agosto de 2012
 
-### <a name="new-features"></a>Nuevas características
+### <a name="new-features"></a>Características nuevas
 
 - Compatibilidad con la vista previa de Unity 4.0 Beta.
 
-### <a name="bug-fixes"></a>Corrección de errores
+### <a name="bug-fixes"></a>Correcciones de errores
 
 - Se ha corregido la inspección de propiedades que producen excepciones.
 

@@ -6,18 +6,18 @@ manager: lank
 ms.date: 07/18/2019
 ms.topic: conceptual
 description: Aprenda a encontrar y descargar títulos de software de Microsoft en suscripciones de Visual Studio
-ms.openlocfilehash: 1386add84ef86b5bf4c255d176b86d5fd9f294f6
-ms.sourcegitcommit: 485881e6ba872c7b28a7b17ceaede845e5bea4fe
+ms.openlocfilehash: 003d27e1c8344c6c4cb22a69e06efc94238bb622
+ms.sourcegitcommit: 6993bcb0d2b0067b1b7b7899bfba52c31c70b7e7
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/22/2019
-ms.locfileid: "68377830"
+ms.lasthandoff: 09/18/2019
+ms.locfileid: "71095404"
 ---
 # <a name="downloading-software-titles-in-visual-studio-subscriptions"></a>Descarga de títulos de software en suscripciones de Visual Studio
 En función de la suscripción de Visual Studio con la que cuente, puede tener a su disposición una amplia variedad de títulos de software de Microsoft.  En este artículo se explica cómo buscar y descargar el software necesario para sacar el máximo partido de la suscripción. 
 
 > [!NOTE]
-> En la página [Descargas](https://my.visualstudio.com/downloads/featured) solo verá las descargas que se incluyan con su suscripción.  Si tiene más de una suscripción o inscripción a un programa, las descargas que aparezcan se corresponderán con la **suscripción de más nivel** que posea, incluso si en ese momento está viendo una suscripción diferente.  Por ejemplo, si tiene una suscripción de Visual Studio Professional y una de Visual Studio Test Professional, ambas asociadas al mismo identificador de inicio de sesión, las descargas que se muestran son las incluidas en la suscripción de nivel Professional, aun cuando esté viendo las ventajas de Dev Essentials.
+> En la página [Descargas](https://my.visualstudio.com/downloads/featured) solo verá las descargas que se incluyan con su suscripción.  Si tiene más de una suscripción o inscripción a un programa, las descargas que aparezcan se corresponderán con la **suscripción de más nivel** que posea, incluso si en ese momento está viendo una suscripción diferente.  Por ejemplo, si tiene una suscripción de Visual Studio Enterprise y una de Visual Studio Professional, ambas asociadas al mismo identificador de inicio de sesión, las descargas que se muestran son las incluidas en la suscripción a Enterprise, aun cuando esté viendo las ventajas de su suscripción a Professional.
 
 ## <a name="how-do-i-find-downloads-in-the-subscriber-portal"></a>¿Cómo se pueden encontrar descargas en el portal de suscriptor?
 Cuando visite la página [Descargas](https://my.visualstudio.com/downloads/featured?wt.mc_id=o~msft~docs), verá las descargas populares organizadas en grupos por tipo de producto.  Puede seleccionar una de las descargas populares que aparecen o buscar un producto usando la barra de búsqueda en la parte superior de la página.

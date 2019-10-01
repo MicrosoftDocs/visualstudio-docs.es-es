@@ -23,16 +23,16 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cf78e17d4d804c94392da045a90c98869319d185
-ms.sourcegitcommit: fe212f8960d7882a1b0fdae9e22f008996aacf3c
+ms.openlocfilehash: 02e8beae03dc2828d81b80813325300fe31b3cea
+ms.sourcegitcommit: 53bc4c11b82882ab658e34c65ae374060f823531
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/03/2019
-ms.locfileid: "70222613"
+ms.lasthandoff: 09/19/2019
+ms.locfileid: "71128158"
 ---
 # <a name="first-look-at-deployment-in-visual-studio"></a>Primer vistazo a la implementación en Visual Studio
 
-Al implementar una aplicación, un servicio o un componente, se distribuye para su instalación en otros equipos, dispositivos o servidores, o en la nube. Elija el método apropiado en Visual Studio para el tipo de implementación que necesita. (Muchos tipos de aplicaciones admiten otras herramientas de implementación, como la implementación mediante línea de comandos o NuGet, que no se tratan aquí).
+Al implementar una aplicación, un servicio o un componente, se distribuye para su instalación en otros equipos, dispositivos o servidores, o en la nube. Elija el método apropiado en Visual Studio para el tipo de implementación que necesita. (Muchos tipos de aplicaciones admiten otras herramientas de implementación, como la implementación mediante línea de comandos, que no se tratan aquí).
 
 Vea los inicios rápidos y los tutoriales para obtener instrucciones de implementación paso a paso. Para obtener información general sobre las opciones de implementación, vea [¿Qué opciones de publicación son las adecuadas para mí?](deploying-applications-services-and-components-resources.md#what-publishing-options-are-right-for-me).
 
@@ -44,7 +44,7 @@ La implementación en una carpeta local se suele usar para las pruebas, o para i
 
     ![Elección de Publicar](../deployment/media/quickstart-publish.png)
 
-- **Escritorio de Windows**: puede publicar una aplicación de escritorio de Windows en una carpeta mediante la implementación de ClickOnce. A continuación, los usuarios podrán instalar la aplicación con un solo clic. Para más información, vea [Implementación de una aplicación de escritorio con ClickOnce](how-to-publish-a-clickonce-application-using-the-publish-wizard.md) (C# y Visual Basic). Para C++ y CLR, vea [Implementación de ClickOnce para aplicaciones de Visual C++](/cpp/windows/clickonce-deployment-for-visual-cpp-applications), o bien, para C y C ++, vea [Implementación de una aplicación de Visual C++ mediante un proyecto de instalación](/cpp/windows/walkthrough-deploying-a-visual-cpp-application-by-using-a-setup-project).
+- **Escritorio de Windows**: puede publicar una aplicación de escritorio de Windows en una carpeta mediante la implementación de ClickOnce. A continuación, los usuarios podrán instalar la aplicación con un solo clic. Para más información, vea [Implementación de una aplicación de escritorio con ClickOnce](how-to-publish-a-clickonce-application-using-the-publish-wizard.md) (C# y Visual Basic). Para C++ y la CLI, vea [Implementación de ClickOnce para aplicaciones de Visual C++](/cpp/windows/clickonce-deployment-for-visual-cpp-applications), o bien, para C y C ++, vea [Implementación de una aplicación de Visual C++ mediante un proyecto de instalación](/cpp/windows/walkthrough-deploying-a-visual-cpp-application-by-using-a-setup-project).
 
 ## <a name="publish-to-azure"></a>Publicar en Azure
 
@@ -83,7 +83,7 @@ La implementación en una carpeta local se suele usar para las pruebas, o para i
 
     También puede implementar aplicaciones y servicios ASP.NET de más maneras. Para obtener más información, vea [Deploying ASP.NET web applications and services](http://www.asp.net/aspnet/overview/deployment) (Implementación de aplicaciones y servicios web ASP.NET).
 
-- **Escritorio de Windows**: puede publicar una aplicación de escritorio de Windows en un servidor web o en un recurso compartido de archivos de red mediante implementación de ClickOnce. A continuación, los usuarios podrán instalar la aplicación con un solo clic. Para más información, vea [Implementación de una aplicación de escritorio con ClickOnce](how-to-publish-a-clickonce-application-using-the-publish-wizard.md) (C# y Visual Basic). Para C++ y CLR, vea [Implementación de ClickOnce para aplicaciones de Visual C++](/cpp/windows/clickonce-deployment-for-visual-cpp-applications), o bien, para C y C ++, vea [Implementación de una aplicación de Visual C++ mediante un proyecto de instalación](/cpp/windows/walkthrough-deploying-a-visual-cpp-application-by-using-a-setup-project).
+- **Escritorio de Windows**: puede publicar una aplicación de escritorio de Windows en un servidor web o en un recurso compartido de archivos de red mediante implementación de ClickOnce. A continuación, los usuarios podrán instalar la aplicación con un solo clic. Para más información, vea [Implementación de una aplicación de escritorio con ClickOnce](how-to-publish-a-clickonce-application-using-the-publish-wizard.md) (C# y Visual Basic). Para C++ y la CLI, vea [Implementación de ClickOnce para aplicaciones de Visual C++](/cpp/windows/clickonce-deployment-for-visual-cpp-applications), o bien, para C y C ++, vea [Implementación de una aplicación de Visual C++ mediante un proyecto de instalación](/cpp/windows/walkthrough-deploying-a-visual-cpp-application-by-using-a-setup-project).
 
 ## <a name="publish-to-microsoft-store"></a>Publicar en Microsoft Store
 
@@ -93,9 +93,9 @@ Desde Visual Studio, puede crear paquetes de aplicaciones para su implementació
 
     ![Crear un paquete de aplicación](../deployment/media/feature-tour-create-app-package.jpg)
 
-- **Escritorio de Windows**: puede implementar en Microsoft Store con Puente de dispositivo de escritorio a partir de Visual Studio 2017 versión 15.4. Para ello, empiece por crear un proyecto de paquete de aplicación de Windows. Para obtener más información, vea [Empaquetar una aplicación de escritorio para Microsoft Store (Puente de dispositivo de escritorio)](/windows/uwp/porting/desktop-to-uwp-packaging-dot-net).
+- **Escritorio de Windows**: puede implementar en Microsoft Store a partir de Visual Studio 2017 versión 15.4. Para ello, empiece por crear un proyecto de paquete de aplicación de Windows. Para obtener más información, vea [Empaquetado de una aplicación de escritorio para Microsoft Store](/windows/msix/desktop/desktop-to-uwp-packaging-dot-net).
 
-    ![Puente de dispositivo de escritorio](../deployment/media/feature-tour-desktop-bridge.png)
+    ![Empaquetado de una aplicación de escritorio](../deployment/media/feature-tour-desktop-bridge.png)
 
 ## <a name="deploy-net-packages-to-nugetorg"></a>Implementación de paquetes .NET en NuGet.org
 

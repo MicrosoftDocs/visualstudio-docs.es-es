@@ -8,12 +8,12 @@ ms.assetid: E2C9420F-A5D5-4472-9020-2B63FB27A133
 ms.technology: vs-unity-tools
 ms.workload:
 - unity
-ms.openlocfilehash: 82556ea0ed043c11cb9098383daf912ff17372ef
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 0fb4560a196404687c60ce67f39b9c0754a24769
+ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62818439"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71253140"
 ---
 # <a name="using-net-4x-in-unity"></a>Uso de .NET 4.x en Unity
 
@@ -335,7 +335,7 @@ public class UsingStaticExample: MonoBehaviour
 
 Al exportar su juego a plataformas como iOS, Unity usará su motor IL2CPP para "transpilar" IL en código de C++, que luego se compilará usando el compilador nativo de la plataforma de destino. En este caso, hay varias características de .NET que no son compatibles, como partes de Reflexión y el uso de la palabra clave `dynamic`. Aunque puede controlar el uso de estas características en su propio código, es posible que tenga problemas al usar archivos DLL y SDK de terceros que no se escribieron pensando en Unity e IL2CPP. Para más información sobre este tema, vea los documentos sobre [restricciones de scripting](https://docs.unity3d.com/Manual/ScriptingRestrictions.html) en el sitio de Unity.
 
-Además, como se mencionó en el ejemplo anterior de Json.NET, Unity intentará eliminar código no utilizado durante el proceso de exportación de IL2CPP.  Aunque normalmente no es un problema, con las bibliotecas que usan Reflexión puede que se eliminen accidentalmente las propiedades o los métodos que se llamarán en tiempo de ejecución y que no se puede determinar en tiempo de exportación.  Para corregir estos problemas, agregue un archivo **link.xml** al proyecto que contiene una lista de ensamblados y espacios de nombres para que no se ejecute el proceso de extracción en ellos.  Para más información, vea los [documentos de Unity sobre la eliminación de código de bytes](https://docs.unity3d.com/Manual/IL2CPP-BytecodeStripping.html).
+Además, como se mencionó en el ejemplo anterior de Json.NET, Unity intentará eliminar código no utilizado durante el proceso de exportación de IL2CPP.  Aunque normalmente no es un problema, con las bibliotecas que usan Reflexión, puede que se eliminen accidentalmente las propiedades o los métodos que se llamarán en tiempo de ejecución y que no se pueden determinar en tiempo de exportación.  Para corregir estos problemas, agregue un archivo **link.xml** al proyecto que contiene una lista de ensamblados y espacios de nombres para que no se ejecute el proceso de extracción en ellos.  Para más información, vea los [documentos de Unity sobre la eliminación de código de bytes](https://docs.unity3d.com/Manual/IL2CPP-BytecodeStripping.html).
 
 ## <a name="net-4x-sample-unity-project"></a>Proyecto de Unity de .NET 4.x de ejemplo
 

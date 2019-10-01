@@ -11,12 +11,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 31f125c11bb364f2650384d8d5894f7f48a9bd3e
-ms.sourcegitcommit: 3cda0d58c5cf1985122b8977b33a171c7359f324
+ms.openlocfilehash: 5e9220df4f9abdb806495e6108fb6039b28e0b7b
+ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/29/2019
-ms.locfileid: "70154919"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71254382"
 ---
 # <a name="step-6-use-the-polls-django-web-project-template"></a>Paso 6: Uso de la plantilla de proyecto web de Django de sondeos
 

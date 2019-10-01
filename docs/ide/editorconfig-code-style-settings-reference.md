@@ -13,20 +13,20 @@ manager: jillfra
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: 4ba419c1dc20b46a08460e20a437e7edf21f2857
-ms.sourcegitcommit: b468d71052a1b8a697f477ab23a3644de139f1e9
+ms.openlocfilehash: d8be11a8705686ade370a8107aad826b7cab9851
+ms.sourcegitcommit: 88f576ac32af31613c1a10c1548275e1ce029f4f
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/19/2019
-ms.locfileid: "67253721"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "71186556"
 ---
 # <a name="net-coding-convention-settings-for-editorconfig"></a>Configuración de la convención de codificación de .NET para EditorConfig
 
 Puede definir y mantener un estilo de código coherente en el código base con el uso de un archivo [EditorConfig](../ide/create-portable-custom-editor-options.md). EditorConfig incluye varias propiedades de formato básicas, como `indent_style` e `indent_size`. En Visual Studio, las convenciones de codificación de .NET también se pueden configurar mediante un archivo EditorConfig. Puede habilitar o deshabilitar convenciones de codificación de .NET individuales y configurar el grado en que quiere que se aplique cada regla, a través de un nivel de gravedad.
 
 > [!TIP]
-> - Al definir las convenciones de codificación en un archivo .editorconfig, configura cómo quiere que los [analizadores de estilo de código](../code-quality/roslyn-analyzers-overview.md) que se integran en Visual Studio para analizar el código. El archivo .editorconfig es el archivo de configuración de estos analizadores.
-> - Las preferencias de estilo del código para Visual Studio también se pueden establecer en el cuadro de diálogo [Opciones del editor de texto](code-styles-and-code-cleanup.md). Sin embargo, la configuración de .editorconfig tiene prioridad y las preferencias que establece en **Opciones** no están asociadas con un proyecto concreto.
+> - Al definir las convenciones de codificación en un archivo EditorConfig, configura cómo quiere que los [analizadores de estilo de código](../code-quality/roslyn-analyzers-overview.md) integrados en Visual Studio analicen el código. El archivo EditorConfig es el archivo de configuración de estos analizadores.
+> - Las preferencias de estilo del código para Visual Studio también se pueden establecer en el cuadro de diálogo [Opciones del editor de texto](code-styles-and-code-cleanup.md). Aun así, la configuración de EditorConfig tiene prioridad y las preferencias que establece en **Opciones** no están asociadas con un proyecto concreto.
 
 ## <a name="convention-categories"></a>Categorías de convención
 

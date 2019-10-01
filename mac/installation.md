@@ -3,16 +3,16 @@ title: Instalación de Visual Studio 2019 para Mac
 description: Instrucciones sobre cómo instalar Visual Studio 2019 para Mac y los componentes adicionales necesarios para el desarrollo multiplataforma.
 author: asb3993
 ms.author: amburns
-ms.date: 04/02/2019
+ms.date: 09/18/2019
 ms.technology: vs-ide-install
 ms.assetid: 22B1F2CD-32AE-464D-80AC-C8AB4786B015
 ms.custom: video
-ms.openlocfilehash: 2086532f0602b4a2509358cbb6d57178a9a1a0d4
-ms.sourcegitcommit: 7fbfb2a1d43ce72545096c635df2b04496b0be71
+ms.openlocfilehash: 3e4a41567b02807dce280426daf59e30ed1876eb
+ms.sourcegitcommit: ea182703e922c74725045afc251bcebac305068a
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/09/2019
-ms.locfileid: "67691459"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71211461"
 ---
 # <a name="install-visual-studio-2019-for-mac"></a>Instalación de Visual Studio 2019 para Mac
 
@@ -44,7 +44,7 @@ Para compilar aplicaciones Xamarin para iOS o macOS, también necesitará lo sig
 
 5. Se mostrará una alerta en la que se le solicitará que acepte los términos de licencia y de privacidad. Haga clic en los vínculos para leerlos y, si está de acuerdo, presione **Continuar**:
 
-    [![Haga clic en los vínculos a los términos de licencia y privacidad y, si está de acuerdo, continúe.](media/install-privacy-sml.png)](media/install-privacy.png#lightbox)
+    [![Haga clic en los vínculos a los términos de licencia y privacidad y, si está de acuerdo, continúe.](media/install-privacy.png)](media/install-privacy.png#lightbox)
 
 6. Se mostrará una lista de las cargas de trabajo disponibles. Seleccione los componentes que quiere usar:
 
@@ -52,18 +52,29 @@ Para compilar aplicaciones Xamarin para iOS o macOS, también necesitará lo sig
 
    Si no desea instalar todas las plataformas, utilice la guía siguiente para ayudarle a elegirlas:
 
-   * **Aplicaciones con Xamarin**:
-      - Xamarin.Forms: seleccione las plataformas **Android** y **iOS**.
-      - Solo iOS: seleccione la plataforma **iOS** (tenga en cuenta que tendrá que instalar [**Xcode**](https://developer.apple.com/xcode/)).
-      - Solo Android: seleccione la plataforma **Android** (tenga en cuenta que tendrá que seleccionar también las dependencias pertinentes).
-      - Solo Mac: seleccione la plataforma **MacOS** (tenga en cuenta que tendrá que instalar [**Xcode**](https://developer.apple.com/xcode/)).
-      - Aplicaciones de Xamarin completamente multiplataforma: seleccione las plataformas **Android**, **iOS**, y **macOS**.
-   * **Aplicaciones de .NET core**: seleccione la plataforma **.NET Core**.
-   * **Aplicaciones web ASP.NET Core**: seleccione la plataforma **.NET Core**.
-   * **Desarrollo de juegos multiplataforma de Unity**: no es necesario instalar plataformas adicionales más allá de Visual Studio para Mac. Consulte la [guía de instalación de Unity](/visualstudio/mac/setup-vsmac-tools-unity) para obtener más información acerca de cómo instalar la extensión de Unity.
+
+|Tipo de aplicación  |Destino  |Selección  |Notas  |
+|---------|---------|---------|---------|
+|**Aplicaciones con Xamarin**| Xamarin.Forms|Seleccione las plataformas **Android** e **iOS**. |Necesitará instalar [**Xcode**](https://developer.apple.com/xcode/). |
+||Solo iOS|Seleccione la plataforma **iOS**.|Necesitará instalar [**Xcode**](https://developer.apple.com/xcode/).|
+||Solo Android|Seleccione la plataforma **Android**.|Tenga en cuenta que tendrá que seleccionar también las dependencias pertinentes.|
+||Solo Mac|Seleccione la plataforma **macOS (Cocoa)** .|Necesitará instalar [**Xcode**](https://developer.apple.com/xcode/).|
+|**Aplicaciones .NET Core**|         |Seleccione la plataforma **.NET Core**.|         |
+|**Aplicaciones web de ASP.NET Core**|         |Seleccione la plataforma **.NET Core**.|         |
+|**Funciones de Azure**|         |Seleccione la plataforma **.NET Core**.|         |
+|**Desarrollo de juegos multiplataforma de Unity**|         |No es necesario instalar plataformas adicionales más allá de Visual Studio para Mac.| Consulte la [guía de instalación de Unity](/visualstudio/mac/setup-vsmac-tools-unity) para obtener más información acerca de cómo instalar la extensión de Unity.|
+
 
 7. Después de haber realizado las selecciones, presione el botón **Instalar**.
-8. El instalador mostrará el progreso a medida que se realice la descarga y la instalación de Visual Studio para Mac, así como de las cargas de trabajo seleccionadas. Es posible que se le solicite que indique la contraseña para conceder los privilegios necesarios para la instalación.
+8. El instalador mostrará el progreso a medida que se realice la descarga y la instalación de Visual Studio para Mac, así como de las cargas de trabajo seleccionadas. Se le solicitará que indique la contraseña para conceder los privilegios necesarios para la instalación.
+
+    [![Elija las características de carga de trabajo opcionales que quiera instalar.](media/installation-progress.png)](media/installation-progress.png#lightbox)
+
+9. Una vez instalado, Visual Studio para Mac le pedirá que personalice su instalación, para lo que deberá iniciar sesión y seleccionar los enlaces de teclado que le gustaría usar:
+
+    [![Inicie sesión en el IDE](media/ide-tour-2019-start-signin.png)](media/ide-tour-2019-start-signin.png#lightbox)
+
+    [![Seleccione los métodos abreviados de teclado que le gustaría usar](media/ide-tour-2019-keyboard-shortcut.png)](media/ide-tour-2019-keyboard-shortcut.png#lightbox)
 
 Si tiene problemas de red al instalar un entorno corporativo, revise las instrucciones de [instalación tras un firewall o proxy](https://docs.microsoft.com/visualstudio/mac/installation#install-visual-studio-for-mac-behind-a-firewall-or-proxy-server).
 
@@ -78,7 +89,7 @@ Para instalar Visual Studio para Mac detrás de un firewall, es necesario que de
 
 Configure la red de modo que permita el acceso a las ubicaciones siguientes:
 
-- [Puntos de conexión de Visual Studio](/visualstudio/install/install-visual-studio-behind-a-firewall-or-proxy-server)
+- [Puntos de conexión de Visual Studio](/visualstudio/mac/install-behind-a-firewall-or-proxy-server)
 
 ## <a name="next-steps"></a>Pasos siguientes
 

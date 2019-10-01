@@ -3,7 +3,7 @@ title: Creación de una aplicación para Plataforma universal de Windows (UWP) c
 description: Creación de una aplicación para UWP en Visual Studio con XAML y C#
 titleSuffix: ''
 ms.custom: seodec18, get-started
-ms.date: 03/23/2019
+ms.date: 09/20/2019
 ms.technology: vs-ide-general
 ms.topic: tutorial
 ms.devlang: CSharp
@@ -14,12 +14,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: dab237eeb99f4d4d67652dba583bf9851b6d6175
-ms.sourcegitcommit: 44e9b1d9230fcbbd081ee81be9d4be8a485d8502
+ms.openlocfilehash: 1be0e656489c4bbff9064db329fb8b015b446297
+ms.sourcegitcommit: 88f576ac32af31613c1a10c1548275e1ce029f4f
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/30/2019
-ms.locfileid: "70180467"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "71186831"
 ---
 # <a name="tutorial-create-your-first-universal-windows-platform-application-in-visual-studio-with-xaml-and-c35"></a>Tutorial: Creación de la primera aplicación para la Plataforma universal de Windows en Visual Studio con XAML y C&#35;
 
@@ -62,6 +62,10 @@ En primer lugar, cree un proyecto de la Plataforma universal de Windows. En el t
 
    > [!NOTE]
    > Si no ve la plantilla de proyecto **Aplicación vacía (Windows universal)** , haga clic en el vínculo **Instalar más herramientas y características**.<br><br>![Clic en el vínculo Instalar más herramientas y características](media/vs-2019/uwp-not-finding.png)<br><br>Se iniciará el Instalador de Visual Studio. Elija la carga de trabajo **Desarrollo de la Plataforma universal de Windows** y, después, elija **Modificar**.<br><br>![Carga de trabajo de desarrollo de la Plataforma universal de Windows en el instalador de Visual Studio](media/uwp-dev-workload.png)
+
+1. Asigne un nombre al proyecto, _HelloWorld_, y seleccione **Crear**.
+
+   ![Pantalla Configurar el proyecto](media/vs-2019/uwp-configure-your-project.png)
 
 1. Acepte la **versión de destino** predeterminada y la configuración de la **versión mínima** en el cuadro de diálogo **Nuevo proyecto de la Plataforma universal de Windows**.
 
@@ -154,13 +158,15 @@ El código usa algunas API de Windows para crear un objeto de síntesis de voz y
 
 ## <a name="run-the-application"></a>Ejecutar la aplicación
 
+
+::: moniker range="vs-2017"
 Es el momento de compilar, implementar y ejecutar la aplicación UWP "Hello World" para ver qué aspecto tiene y cómo suena. Esta es la manera de hacerlo.
 
 1. Use el botón de reproducción (es el que tiene escrito **Máquina local**) para iniciar la aplicación en la máquina local.
 
    ![Seleccionar Equipo local para iniciar y depurar la aplicación UWP](media/uwp-start-or-debug.png)
 
-   (Como alternativa, puede elegir **Depurar** > **Iniciar depuración** en la barra de menús o presionar F5 para iniciar la aplicación).
+   (Como alternativa, puede seleccionar **Depurar** > **Iniciar depuración** en la barra de menús o presionar F5 para iniciar la aplicación).
 
 1. Vea la aplicación, que se muestra poco después de que desaparezca una pantalla de presentación. La aplicación debe tener un aspecto similar al siguiente:
 
@@ -172,9 +178,36 @@ Es el momento de compilar, implementar y ejecutar la aplicación UWP "Hello Worl
 
 1. Para cerrar la aplicación, haga clic en el botón **Detener depuración** de la barra de herramientas. (O bien, elija **Depurar** > **Detener depuración** en la barra de menús o presione Mayús+F5).
 
+::: moniker-end
+::: moniker range=">=vs-2019"
+Es el momento de compilar, implementar y ejecutar la aplicación UWP "Hello World" para ver qué aspecto tiene y cómo suena. Esta es la manera de hacerlo.
+
+1. Use el botón de reproducción (es el que tiene escrito **Máquina local**) para iniciar la aplicación en la máquina local.
+
+   ![Seleccionar Equipo local para iniciar y depurar la aplicación UWP](media/uwp-start-or-debug.png)
+
+   (Como alternativa, puede seleccionar **Depurar** > **Iniciar depuración** en la barra de menús o presionar F5 para iniciar la aplicación).
+
+1. Vea la aplicación, que se muestra poco después de que desaparezca una pantalla de presentación. La aplicación debe tener un aspecto similar al siguiente:
+
+   ![Una aplicación "Hello World" UWP](media/vs-2019/uwp-hello-world-app.png)
+
+1. Haga clic en el botón **Hello World**.
+
+   El dispositivo Windows 10 dirá literalmente: "Hello, World!"
+
+1. Para cerrar la aplicación, haga clic en el botón **Detener depuración** de la barra de herramientas. (O bien, elija **Depurar** > **Detener depuración** en la barra de menús o presione Mayús+F5).
+
+::: moniker-end
+
 ## <a name="next-steps"></a>Pasos siguientes
 
 Enhorabuena por completar este tutorial. Esperamos que haya aprendido algunos conceptos básicos sobre UWP y el IDE de Visual Studio. Para obtener más información, continúe con el tutorial siguiente:
 
 > [!div class="nextstepaction"]
 > [Crear una interfaz de usuario](/windows/uwp/design/basics/xaml-basics-ui)
+
+## <a name="see-also"></a>Vea también
+
+- [Información general sobre UWP](/windows/uwp/get-started/universal-application-platform-guide)
+- [Obtener muestras de aplicaciones para UWP](/windows/uwp/get-started/get-uwp-app-samples)

@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a43be698fd908737c96f9de3cf346b48e84f27fc
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 30ee7364ba925eebb18d66fc8ede2b7983d46116
+ms.sourcegitcommit: ea182703e922c74725045afc251bcebac305068a
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62798682"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71211369"
 ---
 # <a name="make-code-work-in-visual-studio"></a>Hacer que el código funcione en Visual Studio
 
@@ -90,7 +90,7 @@ Las advertencias nuevas o actualizadas se muestran en la pestaña **Lista de err
 
 ## <a name="use-quick-actions-to-fix-or-refactor-code"></a>Uso de Acciones rápidas para corregir o refactorizar el código
 
-Las [acciones rápidas](../ide/quick-actions.md), que están disponibles desde el icono de la bombilla o el destornillador, le permiten refactorizar código alineado. Son una manera fácil de corregir advertencias comunes de forma rápida y eficaz en el código de C#, C++ y Visual Basic. Para obtener acceso a ellas, haga clic con el botón derecho en un subrayado ondulado de advertencia y seleccione **Acciones rápidas y refactorizaciones**. O bien, cuando el cursor se encuentre en la línea con el subrayado ondulado de color, presione **Ctrl**+**.** o bien, haga clic en el icono de la bombilla, la bombilla de error o el destornillador en el margen. Verá una lista de posibles correcciones o refactorizaciones que puede aplicar a esa línea de código.
+Las [acciones rápidas](../ide/quick-actions.md), que están disponibles desde el icono de la bombilla o el destornillador, le permiten refactorizar código alineado. Son una manera fácil de corregir advertencias comunes de forma rápida y eficaz en el código de C#, C++ y Visual Basic. Para obtener acceso a ellas, haga clic con el botón derecho en un subrayado ondulado de advertencia y seleccione **Acciones rápidas y refactorizaciones**. O bien, cuando el cursor se encuentre en la línea con el subrayado ondulado de color, presione **Ctrl**+ **.** o bien, haga clic en el icono de la bombilla, la bombilla de error o el destornillador en el margen. Verá una lista de posibles correcciones o refactorizaciones que puede aplicar a esa línea de código.
 
 ![Vista previa de bombilla de Visual Studio](../ide/media/quick-actions-options.png)
 
@@ -98,7 +98,19 @@ Las acciones rápidas pueden usarse siempre que los analizadores de código dete
 
 ![Texto de No hay disponibles acciones rápidas](../ide/media/vs_ide_gs_debug_light_bulb_no_options.png)
 
-Con experiencia, puede usar rápidamente las teclas de dirección y **CTRL**+**.** para comprobar si hay posibilidades fáciles de refactorización y limpiar el código.
+Con experiencia, puede usar rápidamente las teclas de dirección y **CTRL**+ **.** para comprobar si hay posibilidades fáciles de refactorización y limpiar el código.
+
+::: moniker range="vs-2019"
+
+## <a name="run-code-cleanup"></a>Ejecución de la limpieza de código
+
+Visual Studio proporciona el [formato a petición del archivo de código de C#](code-styles-and-code-cleanup.md#apply-code-styles), incluidas las preferencias de estilo de código, mediante el botón **Limpieza de código** de la parte inferior del editor.
+
+![Botón Limpieza de código de Visual Studio 2019](media/execute-code-cleanup.png)
+
+Además de aplicar al archivo formato de espacios, sangrías, guiones, etc., la **limpieza de código** también aplica un conjunto de convenciones de estilo de código que usted defina. Sus preferencias para cada estilo de código se leen en el [archivo EditorConfig](code-styles-and-code-cleanup.md#code-styles-in-editorconfig-files), si dispone de uno para el proyecto, o desde la [configuración de estilo de código](code-styles-and-code-cleanup.md#code-styles-in-the-options-dialog-box) en el cuadro de diálogo **Opciones**.
+
+::: moniker-end
 
 ## <a name="debug-your-running-code"></a>Depurar el código en ejecución
 
@@ -157,5 +169,5 @@ Para obtener más información sobre las pruebas unitarias en Visual Studio y c�
 ## <a name="see-also"></a>Vea también
 
 - [Primer vistazo al depurador](../debugger/debugger-feature-tour.md)
-- [Más información sobre cómo usar el depurador](../debugger/index.md)
+- [Más información sobre cómo usar el depurador](../debugger/index.yml)
 - [Generación y corrección del código](../ide/code-generation-in-visual-studio.md)

@@ -10,12 +10,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 2ee3b0d82251d01e8ede22be238dc1bca5a4e092
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d50cbfbd517073544ebd172627d24bd7c3878fa5
+ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62536353"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71254212"
 ---
 # <a name="python-projects-in-visual-studio"></a>Proyectos de Python en Visual Studio
 
@@ -77,7 +77,7 @@ Visual Studio ofrece varias maneras de configurar un proyecto de Python, desde c
 
 En la tabla siguiente se muestra un resumen de las plantillas disponibles en Visual Studio 2017 y versiones posteriores (no todas las plantillas están disponibles en todas las versiones anteriores):
 
-| Plantilla | Descripción |
+| Plantilla | DESCRIPCIÓN |
 | --- | --- |
 | [**Desde código de Python existente**](#create-project-from-existing-files) | Crea un proyecto de Visual Studio a partir de código Python existente en una estructura de carpetas.  |
 | **Aplicación de Python** | Estructura básica de proyecto para una nueva aplicación de Python con un solo archivo de origen vacío. De forma predeterminada, el proyecto se ejecuta en el intérprete de la consola del entorno global predeterminado, que se puede cambiar [asignando un entorno diferente](selecting-a-python-environment-for-a-project.md). |
@@ -167,5 +167,8 @@ from System.Windows.Forms import *
 ### <a name="webpi-projects"></a>Proyectos de WebPI
 
 Puede agregar referencias a entradas de producto de WebPI para la implementación en Microsoft Azure Cloud Services donde puede instalar componentes adicionales a través de la fuente de WebPI. De manera predeterminada, la fuente que se muestra es específica de Python e incluye Django, CPython y otros componentes principales. También puede seleccionar su propia fuente tal como se muestra a continuación. Al publicar en Microsoft Azure, una tarea de configuración instala todos los productos a los que se hace referencia.
+
+> [!IMPORTANT]
+> Los proyectos de WebPI no están disponibles en Visual Studio 2017 o Visual Studio 2019.
 
 ![Referencias de WebPI](media/projects-webPI-components.png)

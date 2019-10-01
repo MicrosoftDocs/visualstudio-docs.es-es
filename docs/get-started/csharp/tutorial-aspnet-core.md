@@ -16,12 +16,12 @@ dev_langs:
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: ac544f033e8b021b7ef0a6253fbd0cb65b4450f5
-ms.sourcegitcommit: 44e9b1d9230fcbbd081ee81be9d4be8a485d8502
+ms.openlocfilehash: 4c2e9c890b0b676216a02a526cad5380df4ceb57
+ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/30/2019
-ms.locfileid: "70180470"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71252470"
 ---
 # <a name="tutorial-get-started-with-c-and-aspnet-core-in-visual-studio"></a>Tutorial: Introducción a C# y ASP.NET Core en Visual Studio
 
@@ -129,9 +129,9 @@ Si no ve la plantilla de proyecto **Aplicación web ASP.NET Core**, puede obtene
 
    ![En la ventana "Configurar el nuevo proyecto", asigne al proyecto el nombre "MyCoreApp".](./media/vs-2019/csharp-name-your-aspnet-mycoreapp-project.png)
 
-1. En la ventana **Crear una aplicación web ASP.NET Core**, compruebe que **ASP.NET Core 2.1** aparece en el menú desplegable de la parte superior. Luego, elija **Aplicación Web**, que incluye Razor Pages de ejemplo. Seguidamente, elija **Crear**.
+1. En la ventana **Crear una aplicación web ASP.NET Core**, compruebe que **ASP.NET Core 3.0** aparece en el menú desplegable de la parte superior. Luego, elija **Aplicación Web**, que incluye Razor Pages de ejemplo. Seguidamente, elija **Crear**.
 
-   ![Ventana "Crear una aplicación web ASP.NET Core"](./media/vs-2019/csharp-create-aspnet-core-razor-pages-app.png)
+   ![Ventana "Crear una aplicación web ASP.NET Core"](./media/vs-2019/csharp-create-aspnet-razor-pages-app.png)
 
    Visual Studio se abre en el nuevo proyecto.
 
@@ -141,6 +141,7 @@ Si no ve la plantilla de proyecto **Aplicación web ASP.NET Core**, puede obtene
 
 Esta solución sigue el modelo de diseño **Razor Page**. La diferencia con el modelo de diseño [Modelo-Vista-Controlador (MVC)](/aspnet/core/tutorials/first-mvc-app/start-mvc?view=aspnetcore-2.1&tabs=aspnetcore2x) es que está optimizado para incluir el modelo y el código de control dentro de la misma Razor Page.
 
+::: moniker range="vs-2017"
 ## <a name="tour-your-solution"></a>Recorrido por la solución
 
  1. La plantilla de proyecto crea una solución con un solo proyecto de ASP.NET Core que se denomina _MyCoreApp_. Elija la pestaña **Explorador de soluciones** para ver el contenido.
@@ -169,7 +170,7 @@ Esta solución sigue el modelo de diseño **Razor Page**. La diferencia con el m
 
     Puede colocar contenido estático del sitio &mdash;como CSS, imágenes y bibliotecas de JavaScript&mdash; directamente en las rutas de acceso que quiera.
 
- 1. El proyecto también contiene archivos de configuración que administran la aplicación web en el entorno de ejecución. La [configuración](/aspnet/core/fundamentals/configuration) predeterminada de la aplicación se almacena en *appsettings.json*. Sin embargo, puede invalidar esta configuración mediante el uso de *appsettings.Development.json*. Expanda el archivo **appsettings.json** para ver el archivo **appsettings.Development.json**.
+ 1. El proyecto también contiene archivos de configuración que administran la aplicación web en tiempo de ejecución. La [configuración](/aspnet/core/fundamentals/configuration) predeterminada de la aplicación se almacena en *appsettings.json*. Sin embargo, puede invalidar esta configuración mediante el uso de *appsettings.Development.json*. Expanda el archivo **appsettings.json** para ver el archivo **appsettings.Development.json**.
 
      ![Archivos de configuración en el Explorador de soluciones en Visual Studio](media/csharp-aspnet-razor-solution-explorer-appsettingsjson.png)
 
@@ -216,7 +217,7 @@ Esta solución sigue el modelo de diseño **Razor Page**. La diferencia con el m
      public void OnGet()
      {
          string directory = Environment.CurrentDirectory;
-     Message = String.Format("Your directory is {0}.", directory);
+         Message = String.Format("Your directory is {0}.", directory);
      }
     ```
 
@@ -239,6 +240,110 @@ Esta solución sigue el modelo de diseño **Razor Page**. La diferencia con el m
    ![Visualización de la página Acerca de actualizada que incluye los cambios realizados](media/csharp-aspnet-razor-browser-page-about-changed.png)
 
 1. Cierre el explorador web, presione **Mayús**+**F5** para detener el modo de depuración y cierre Visual Studio.
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+## <a name="tour-your-solution"></a>Recorrido por la solución
+
+ 1. La plantilla de proyecto crea una solución con un solo proyecto de ASP.NET Core que se denomina _MyCoreApp_. Elija la pestaña **Explorador de soluciones** para ver el contenido.
+
+    ![Explorador de soluciones de ASP.NET en Visual Studio para la solución Razor Pages que se denomina MyCoreApp](media/csharp-aspnet-razor-solution-explorer-mycoreapp.png)
+
+ 1. Expanda la carpeta **Páginas**.
+
+     ![Carpeta Páginas del Explorador de soluciones](media/vs-2019/csharp-aspnet-solution-explorer-pages.png)
+
+ 1. Vea el archivo **Index.cshtml** en el editor de código.
+
+     ![Visualización del archivo Index.cshtml en el editor de código de Visual Studio](media/vs-2019/csharp-aspnet-index-cshtml.png)
+
+ 1. Cada archivo .cshtml tiene un archivo de código asociado. Para abrir el archivo de código en el editor, expanda el nodo **Index.cshtml** en Explorador de soluciones y elija el archivo **Index.cshtml.cs**.
+
+     ![Elección del archivo Index.cshtml.cs en el editor de código de Visual Studio](media/vs-2019/csharp-aspnet-choose-index-cshtml.png)
+
+ 1. Vea el archivo **Index.cshtml.cs** en el editor de código.
+
+     ![Visualización del archivo About.cshtml en el editor de código de Visual Studio](media/vs-2019/csharp-aspnet-index-cshtml-editing.png)
+
+ 1. El proyecto contiene una carpeta **wwwroot** que es la raíz del sitio web. Expanda la carpeta para ver su contenido.
+
+     ![Carpeta wwwroot en el Explorador de soluciones en Visual Studio](media/csharp-aspnet-razor-solution-explorer-wwwroot.png)
+
+    Puede colocar contenido estático del sitio &mdash;como CSS, imágenes y bibliotecas de JavaScript&mdash; directamente en las rutas de acceso que quiera.
+
+ 1. El proyecto también contiene archivos de configuración que administran la aplicación web en tiempo de ejecución. La [configuración](/aspnet/core/fundamentals/configuration) predeterminada de la aplicación se almacena en *appsettings.json*. Sin embargo, puede invalidar esta configuración mediante el uso de *appsettings.Development.json*. Expanda el archivo **appsettings.json** para ver el archivo **appsettings.Development.json**.
+
+     ![Archivos de configuración en el Explorador de soluciones en Visual Studio](media/csharp-aspnet-razor-solution-explorer-appsettingsjson.png)
+
+## <a name="run-debug-and-make-changes"></a>Ejecutar, depurar y realizar cambios
+
+1. Haga clic en el botón **IIS Express** del IDE para compilar y ejecutar la aplicación en modo de depuración. (O bien, presione **F5** o elija **Depurar** > **Iniciar depuración** en la barra de menús).
+
+     ![Haga clic en el botón IIS Express de Visual Studio](media/csharp-aspnet-razor-iisexpress.png)
+
+     > [!NOTE]
+     > Si recibe un mensaje de error que indica **No se puede conectar al servidor web "IIS Express"** , cierre Visual Studio y, luego, ábralo mediante la opción **Ejecutar como administrador** que aparece si hace clic con el botón derecho o en el menú contextual. A continuación, vuelva a ejecutar la aplicación.
+     >
+     > También es posible que obtenga un mensaje que le pregunta si desea aceptar un certificado SSL de IIS Express. Para ver el código en un explorador web, elija **Sí** y luego, si recibe un mensaje de advertencia de seguridad de seguimiento, elija **Sí**.
+
+1. Visual Studio inicia una ventana del explorador. Debería ver las páginas **Inicio** y **Privacidad** en la barra de menús.
+
+1. Elija **Privacidad** en la barra de menús.
+
+   La página **Privacidad** del explorador representa el texto que se establece en el archivo *Privacy.cshtml*.
+
+   ![Visualización del texto de la página Privacidad](media/vs-2019/csharp-aspnet-browser-page-privacy.png)
+
+1. Vuelva a Visual Studio y, a continuación, presione **Mayús+F5** para detener el modo de depuración. También se cierra el proyecto en la ventana del explorador.
+
+1. En Visual Studio, abra **Privacy.cshtml** para editarlo. Después, elimine la frase _Use this page to detail your site's privacy policy_ (Use esta página para detallar la directiva de privacidad del sitio) y, en su lugar, agregue _This page is under construction as of @ViewData["TimeStamp"]_ (Esta página está en construcción desde ["TimeStamp"]).
+
+    ![Cambio del texto en el archivo Privacy.cshtml](media/vs-2019/csharp-aspnet-privacy-cshtml-code-changed.png)
+
+1. Ahora, vamos a realizar un cambio en el código. Seleccione **Privacy.cshtml.cs**. Luego, limpie las directivas `using` que se encuentran al inicio del archivo con el siguiente método abreviado:
+
+   Elija cualquiera de las directivas `using` atenuadas y aparecerá una bombilla [Acciones rápidas](../../ide/quick-actions.md) justo debajo del símbolo de intercalación o en el margen izquierdo. Seleccione la bombilla y mueva el puntero sobre **Eliminar instrucciones Using innecesarias**.
+
+   ![Eliminación de las instrucciones Using innecesarias del archivo Privacy.cshtml.cs](media/vs-2019/csharp-aspnet-remove-unnecessary-usings.png)
+
+   Ahora, seleccione **Vista previa de los cambios** para ver lo que cambiará.
+
+   ![Vista previa de los cambios](media/vs-2019/csharp-aspnet-preview-changes.png)
+
+   Elija **Aplicar**. Visual Studio elimina las directivas `using` innecesarias del archivo.
+
+1. Luego, en el método `OnGet()`, cambie el cuerpo por el código siguiente:
+
+     ```csharp
+     public void OnGet()
+     {
+        string dateTime = DateTime.Now.ToShortDateString();
+        ViewData["TimeStamp"] = dateTime;
+     }
+    ```
+
+1. Observe que aparecerán dos caracteres de subrayado ondulados bajo **DateTime**. Los caracteres de subrayado ondulados aparecen porque este tipo está fuera del ámbito.
+
+   ![Errores marcados con caracteres de subrayado ondulados en el método OnGet](media/vs-2019/csharp-aspnet-add-new-onget-method.png)
+
+    Abra la barra de herramientas **Lista de errores** para ver los mismos errores en la lista. Si no ve la barra de herramientas **Lista de errores**, elija **Ver** > **Lista de errores** en la barra de menús superior.
+
+   ![Lista de errores en Visual Studio](media/vs-2019/csharp-aspnet-error-list.png)
+
+1. Solucionemos este problema. En el editor de código, coloque el cursor en cualquiera de las líneas que contienen el error y elija la bombilla Acciones rápidas ubicada en el margen izquierdo. Luego, en el menú desplegable, elija **using System;** para agregar esta directiva al inicio del archivo y solucionar los errores.
+
+   ![Incorporación de la directiva "using System;"](media/vs-2019/csharp-aspnet-add-usings.png)
+
+1. Presione **F5** para abrir el proyecto en el explorador web.
+
+1. En la parte superior del sitio web, seleccione **Privacidad** para ver los cambios.
+
+   ![Visualización de la página Privacidad actualizada que incluye los cambios realizados](media/vs-2019/csharp-aspnet-browser-page-privacy-changed.png)
+
+1. Cierre el explorador web, presione **Mayús**+**F5** para detener el modo de depuración y cierre Visual Studio.
+::: moniker-end
 
 ## <a name="quick-answers-faq"></a>Respuestas rápidas a preguntas frecuentes
 
