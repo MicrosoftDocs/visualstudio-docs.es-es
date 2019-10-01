@@ -14,12 +14,12 @@ metadata:
   ms.technology: vs-acquisition
   dev_langs:
   - VB
-  ms.openlocfilehash: 6e0d373ab1a8fff8271e867171f0cb4900bf0533
-  ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+  ms.openlocfilehash: d3ef8f82785d920f296179b26bada410e6132f52
+  ms.sourcegitcommit: 13decf878b33fc0c5d665a88067170c2861b261b
   ms.translationtype: HT
   ms.contentlocale: es-ES
-  ms.lasthandoff: 09/25/2019
-  ms.locfileid: "71253558"
+  ms.lasthandoff: 09/30/2019
+  ms.locfileid: "71681607"
 landingContent:
 - title: Primeros pasos
   linkLists:
@@ -39,6 +39,8 @@ landingContent:
       url: tutorial-console.md
     - text: Crear una aplicación de escritorio de Windows
       url: tutorial-wpf.md
+    - text: Crear una aplicación de Windows Forms
+      url: ../../ide/create-a-visual-basic-winform-in-visual-studio.md
     - text: Más información sobre el lenguaje de Visual Basic
       url: /dotnet/visual-basic/developing-apps/programming/
 - title: Conocer Visual Studio
