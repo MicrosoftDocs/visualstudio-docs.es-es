@@ -3,36 +3,41 @@ title: Descripción de las configuraciones de compilación
 description: Este artículo describe las diversas configuraciones de compilación en Visual Studio para Mac
 author: heiligerdankgesang
 ms.author: dominicn
-ms.date: 04/14/2017
+ms.date: 09/18/2019
 ms.assetid: 78107CFA-9308-4293-A92A-9B552A259E15
-ms.openlocfilehash: 0bd35d415a60ea64c479b19cb506c58c2c346cc0
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: d1511434a34017a7f0f7da65fe1ea6956d45d497
+ms.sourcegitcommit: 53bc4c11b82882ab658e34c65ae374060f823531
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67826072"
+ms.lasthandoff: 09/19/2019
+ms.locfileid: "71128399"
 ---
 # <a name="understanding-build-configurations"></a>Descripción de las configuraciones de compilación
 
-## <a name="project-build-configurations"></a>Configuraciones de compilación del proyecto
+Se pueden almacenar diferentes configuraciones de propiedades de solución y de proyecto para usar en distintos tipos de compilaciones durante el proceso de desarrollo. Los proyectos que se crean con Visual Studio para Mac mediante una plantilla suelen incluir configuraciones de depuración y lanzamiento que admiten la depuración y la implementación de una aplicación, respectivamente. 
 
-Los proyectos suelen tener varias configuraciones; cambiar entre ellas permite diferentes salidas en tiempo de compilación. Por ejemplo, una configuración de depuración tendrá como resultado símbolos de depuración, lo que permite al depurador resolver nombres de función, parámetros o variables del seguimiento de la pila de una aplicación bloqueada. Aunque esta información adicional es útil durante el desarrollo, conduce a un tamaño de archivo excesivo y no es ideal para la distribución.
+Si quiere crear configuraciones personalizadas, consulte [Creación y edición de configuraciones de compilación](/visualstudio/mac/create-and-edit-configurations).
 
-Cada plataforma tiene configuraciones específicas para su compilación.
+>[!NOTE]
+>Este tema se aplica a Visual Studio para Mac. Para Visual Studio en Windows, consulte [Descripción de las configuraciones de compilación](/visualstudio/ide/understanding-build-configurations).
 
 ## <a name="solution-configurations"></a>Configuraciones de solución
 
-Del mismo modo que las configuraciones de proyecto, las configuraciones de solución se usan para crear configuraciones personalizadas para un proyecto completo. Con la pestaña **Asignaciones de configuración** del elemento **Compilar > Configuraciones**, puede asignar una configuración de destino para cada elemento de la solución, como se muestra en la imagen siguiente:
+Las configuraciones de solución se usan para especificar configuraciones para todos los proyectos de una solución. Con la pestaña **Asignaciones de configuración** del elemento **Compilar > Configuraciones**, puede asignar una configuración de destino para cada elemento de la solución abierta. Esto último se muestra en la imagen siguiente:
 
 ![Opciones de asignación de configuración](media/projects-and-solutions-image3.png)
 
 Para obtener más información sobre configuraciones, vea el vídeo [Configuration Manager](https://www.youtube.com/watch?v=tjSdkqYh5Vg) (Administrador de configuración) de James Montemagno.
 
+## <a name="project-build-configurations"></a>Configuraciones de compilación del proyecto
+
+Los proyectos suelen tener varias configuraciones. La configuración y la plataforma de destino de proyecto se usan conjuntamente para especificar las propiedades que se van a usar al compilarlo. Se puede tener diferentes salidas en tiempo de compilación si se cambia entre las configuraciones. Por ejemplo, una configuración de depuración tendrá como resultado símbolos de depuración, lo que permite al depurador resolver nombres de función, parámetros o variables del seguimiento de la pila de una aplicación bloqueada. Aunque esta información adicional es útil durante el desarrollo, conduce a un tamaño de archivo excesivo y no es ideal para la distribución.
+
+Cada plataforma tiene configuraciones específicas para su compilación. Se puede tener acceso a las páginas de configuración de compilación de los proyectos desde la sección **Compilación** del cuadro de diálogo **Opciones del proyecto**. Para abrir este cuadro de diálogo, haga clic con el botón derecho en el proyecto y seleccione **Opciones**, o bien haga doble clic en el proyecto en el explorador de soluciones.
+
 ## <a name="run-configuration"></a>Configuración de ejecución
 
-En versiones anteriores de Xamarin Studio se podía seleccionar la opción para establecer un proyecto como **proyecto de inicio**, que es el que se ejecuta o depura al usar el comando Ejecutar o Depurar global. Esto se indicaba mediante un tipo de letra negrita para el nombre del proyecto en el panel de este.
-
-En Visual Studio para Mac, en lugar de establecer un proyecto de inicio, se puede establecer una _configuración de ejecución_. Las configuraciones de ejecución se presentan en una lista desplegable de la barra de herramientas, junto al selector de la configuración de compilación, como se muestra a continuación:
+Visual Studio para Mac le permite establecer una _configuración de ejecución_. Las configuraciones de ejecución se presentan en una lista desplegable de la barra de herramientas, junto al selector de la configuración de compilación, como se muestra a continuación:
 
 ![Desplegable de configuración de ejecución](media/projects-and-solutions-image8.png)
 
@@ -42,7 +47,7 @@ Las configuraciones se pueden compartir con otros desarrolladores (en cuyo caso 
 
 ### <a name="android-run-configurations"></a>Configuraciones de ejecución de Android
 
-Las configuraciones de ejecución para proyectos de Android permiten especificar qué actividad, servicio o receptor de difusión iniciar al ejecutar o depurar el proyecto. Puede pasar datos adicionales de intención y establecer marcas de intención para poder probar los componentes con diferentes condiciones de inicio.
+Las configuraciones de ejecución para proyectos de Android permiten especificar qué actividad, servicio o receptor de difusión iniciar al ejecutar o depurar el proyecto. Puede pasar datos adicionales de intención y establecer marcas de intención para probar los componentes con diferentes condiciones de inicio.
 
 Aquellas actividades distintas a `MainLauncher` deberán tener `Exported=true` agregado al atributo Actividad para la depuración en un dispositivo físico o tener filtros de intención definidos.
 

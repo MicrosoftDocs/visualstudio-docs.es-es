@@ -3,14 +3,14 @@ title: Iniciar sesión en Visual Studio para Mac
 description: Cómo iniciar sesión en Visual Studio para Mac
 author: asb3993
 ms.author: amburns
-ms.date: 08/08/2019
+ms.date: 09/18/2019
 ms.assetid: E4CFD03C-03AF-48CA-B409-6DB1CA45E991
-ms.openlocfilehash: a3911826314710f5b47fb248e452b4a10b56e2dd
-ms.sourcegitcommit: 6f3cf7a1bfc81a61f9a603461a1c34fd2221f100
+ms.openlocfilehash: 7b1e912583cf0ac63307bf1c75912059c39fe427
+ms.sourcegitcommit: ea182703e922c74725045afc251bcebac305068a
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/12/2019
-ms.locfileid: "68957359"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71213664"
 ---
 # <a name="sign-in-to-visual-studio-for-mac"></a>Iniciar sesión en Visual Studio para Mac
 
@@ -29,17 +29,17 @@ Si decide no iniciar sesión inmediatamente, podrá usar una copia de evaluació
 > [!TIP]
 > Antes de iniciar sesión en Visual Studio para Mac, asegúrese de que está conectado a Internet. > Las suscripciones solo se pueden activar en línea. Si no está conectado, elija "I'll do this later" (Lo haré más adelante) e inicie sesión con el menú cuando se conecte.
 
-Para iniciar sesión en Visual Studio para Mac, siga estos pasos:
+Para iniciar sesión en Visual Studio para Mac en el primer inicio, siga estos pasos:
 
 1. Haga clic en el botón **Iniciar sesión con Microsoft** en la ventana de inicio de sesión:
 
-    ![Cuadro de diálogo de cuentas en Visual Studio para Mac](media/signing-in-image12.png)
+    ![Cuadro de diálogo de cuentas en Visual Studio para Mac](media/ide-tour-2019-start-signin.png)
 
 2. Escriba sus credenciales de Microsoft:
 
     ![Cuadro de diálogo de credenciales de Microsoft](media/signing-in-image13.png)
 
-3. Cuando haya iniciado sesión, verá la ventana de inicio de Visual Studio 2019 para Mac. Desde aquí, puede abrir o crear un proyecto:
+4. Una vez que haya iniciado sesión, verá una opción para seleccionar métodos abreviados de teclado. Elija la opción que quiera usar y presione **Continuar**. Después, aparecerá la ventana de inicio de Visual Studio 2019 para Mac. Desde aquí, puede abrir o crear un proyecto:
 
     ![Inicio de sesión correcto](media/signing-in-image14.png)
 

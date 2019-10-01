@@ -1,6 +1,6 @@
 ---
 title: Configuración de compilación avanzada (Cuadro de diálogo, C#)
-ms.date: 06/20/2017
+ms.date: 08/05/2019
 ms.technology: vs-ide-compile
 ms.topic: reference
 f1_keywords:
@@ -13,16 +13,16 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 306cecc6bdc194e0022c056ac0a87e2ab063d20b
-ms.sourcegitcommit: 85d66dc9fea3fa49018263064876b15aeb6f9584
+ms.openlocfilehash: c4a1c902047b76ef3b29814d10cfc112ab9c7274
+ms.sourcegitcommit: 88f576ac32af31613c1a10c1548275e1ce029f4f
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68461882"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "71186790"
 ---
-# <a name="advanced-build-settings-dialog-box-c"></a>Configuración de compilación avanzada (Cuadro de diálogo, C#)
+# <a name="advanced-build-settings-dialog-box-c"></a>Cuadro de diálogo Configuración de compilación avanzada (C#)
 
-Use el cuadro de diálogo **Configuración de compilación avanzada** del **Diseñador de proyectos** para especificar las propiedades de configuración de compilación avanzada del proyecto. Este cuadro de diálogo solo se aplica a proyectos de [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)].
+Use el cuadro de diálogo **Configuración de compilación avanzada** del **Diseñador de proyectos** para especificar las propiedades de configuración de compilación avanzada del proyecto. Este cuadro de diálogo solo se aplica a proyectos de C#.
 
 ## <a name="general"></a>General
 
@@ -30,19 +30,19 @@ Las opciones siguientes le permiten establecer la configuración avanzada genera
 
 **Versión de lenguaje**
 
-Especifica la versión del idioma que se va a usar. El conjunto de características es diferente en cada versión, por lo que esta opción se puede usar para forzar al compilador a que permita solo un subconjunto de las características implementadas, o para habilitar solo las características compatibles con un estándar existente. Esta configuración tiene las siguientes opciones:
+::: moniker range=">=vs-2019"
 
-- **default**
+Vincula a [/langversion (opciones del compilador de C#)](/dotnet/csharp/language-reference/compiler-options/langversion-compiler-option), que proporciona información sobre cómo se elige una versión del lenguaje predeterminada en función de la plataforma de destino de un proyecto.
 
-   Se dirige a la versión actual.
+::: moniker-end
 
-- **ISO-1** e **ISO-2**
+::: moniker range="vs-2017"
 
-   Se dirige a las características estándar de ISO-1 e ISO-2, respectivamente.
+Especifica la versión del idioma que se va a usar. El conjunto de características es diferente en cada versión, por lo que esta opción se puede usar para forzar al compilador a que permita solo un subconjunto de las características implementadas, o para habilitar solo las características compatibles con un estándar existente.
 
-- **C# [número de versión]**
+El valor predeterminado es C# 7.0.
 
-   Se dirige a una versión específica de C#. Para obtener más información, consulte [/langversion (Opciones del compilador de C#)](/dotnet/csharp/language-reference/compiler-options/langversion-compiler-option).
+::: moniker-end
 
 **Informe de errores internos del compilador**
 
@@ -56,7 +56,7 @@ Especifica si una instrucción aritmética de enteros que no está en el ámbito
 
 Especifica si se importará mscorlib.dll al programa, definiendo la totalidad del espacio de nombres <xref:System>. Active esta casilla si quiere definir o crear sus propios objetos y espacios de nombres <xref:System>. Para obtener más información, consulte [/nostdlib (Opciones del compilador de C#)](/dotnet/csharp/language-reference/compiler-options/nostdlib-compiler-option).
 
-## <a name="output"></a>Output
+## <a name="output"></a>Salida
 
 Las opciones siguientes le permiten especificar opciones de salida avanzadas.
 
@@ -64,7 +64,7 @@ Las opciones siguientes le permiten especificar opciones de salida avanzadas.
 
 Especifica el tipo de información de depuración generado por el compilador. Para obtener información sobre cómo configurar el rendimiento de depuración de una aplicación, consulte [Facilitar la depuración de una imagen](/dotnet/framework/debug-trace-profile/making-an-image-easier-to-debug). Esta configuración tiene las siguientes opciones:
 
-- **Ninguna**
+- **none**
 
    Especifica que no se generará ninguna información de depuración.
 
@@ -96,5 +96,5 @@ Especifica la dirección base preferida para cargar una DLL. La dirección base 
 
 ## <a name="see-also"></a>Otras referencias
 
-- [Opciones del compilador de C#](/dotnet/csharp/language-reference/compiler-options/index)
-- [Página Compilar (Diseñador de proyectos) (C#)](../../ide/reference/build-page-project-designer-csharp.md)
+- [Opciones del compilador de C#, por orden alfabético](/dotnet/csharp/language-reference/compiler-options/index)
+- [Página Compilar, Diseñador de proyectos (C#)](../../ide/reference/build-page-project-designer-csharp.md)

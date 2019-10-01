@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4c94eaeffee285fcc5d17d5de8bcec0711f2b39b
-ms.sourcegitcommit: 78e2637e4fbfadd4509b55276816b64f5c24c606
+ms.openlocfilehash: 323f941ddb4672de8d52d56cf4e07910531c3df8
+ms.sourcegitcommit: 6993bcb0d2b0067b1b7b7899bfba52c31c70b7e7
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/10/2019
-ms.locfileid: "70864830"
+ms.lasthandoff: 09/18/2019
+ms.locfileid: "71095389"
 ---
 # <a name="welcome-to-the-visual-studio-ide"></a>Le damos la bienvenida al IDE de Visual Studio
 
@@ -42,7 +42,7 @@ Si está listo para profundizar más sobre codificación, siga con uno de los si
 
 - [Usar Visual Studio para crear su primera aplicación Node.js](../ide/quickstart-nodejs.md)
 
-- [Introducción a C++ en Visual Studio](../ide/getting-started-with-cpp-in-visual-studio.md)
+- [Uso de Visual Studio para crear la primera aplicación de consola de C++](/cpp/get-started/tutorial-console-cpp)
 
 ## <a name="see-also"></a>Vea también
 

@@ -1,6 +1,6 @@
 ---
-title: Búsqueda y uso de extensiones
-ms.date: 01/30/2019
+title: Búsqueda e instalación de extensiones
+ms.date: 09/18/2019
 ms.topic: conceptual
 f1_keywords:
 - vs.ExtensionManager
@@ -14,24 +14,30 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7ca0b1defbec345acc02212498453972a3576f20
-ms.sourcegitcommit: 0ef51e3517436a85cfb85bf492722d566ce602c4
+ms.openlocfilehash: 9f86aa6cf99ae910c9b10bc6e93c408ca2c85265
+ms.sourcegitcommit: a2df993dc5e11c5131dbfcba686f0028a589068f
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "65934353"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "71150103"
 ---
-# <a name="find-and-use-visual-studio-extensions"></a>Búsqueda y uso de extensiones de Visual Studio
+# <a name="manage-extensions-for-visual-studio"></a>Administración de extensiones para Visual Studio
 
-Las extensiones de Visual Studio son paquetes de códigos que se ejecutan dentro de Visual Studio y que ofrecen características nuevas o mejoradas de Visual Studio. Encontrará más información sobre las extensiones de Visual Studio aquí: [Visual Studio SDK](../extensibility/visual-studio-sdk.md).
+Las extensiones son paquetes de código que se ejecutan dentro de Visual Studio y que ofrecen características nuevas o mejoradas. Las extensiones pueden ser controles, ejemplos, plantillas, herramientas u otros componentes que agregan funcionalidad a Visual Studio, como [Live Share](https://marketplace.visualstudio.com/items?itemName=MS-vsliveshare.vsls-vs) o [Visual Studio IntelliCode](https://marketplace.visualstudio.com/items?itemName=VisualStudioExptTeam.VSIntelliCode).
+
+Para obtener información sobre la creación de extensiones de Visual Studio, vea [Visual Studio SDK](../extensibility/visual-studio-sdk.md). Para obtener información sobre el uso de extensiones, consulte la página de la extensión en [Visual Studio Marketplace](https://marketplace.visualstudio.com).
 
 ::: moniker range="vs-2017"
+
+## <a name="extensions-and-updates-dialog-box"></a>Cuadro de diálogo Extensiones y actualizaciones
 
 Use el cuadro de diálogo **Extensiones y actualizaciones** para instalar y administrar extensiones de Visual Studio. Para abrir el cuadro de diálogo **Extensiones y actualizaciones**, elija **Herramientas** > **Extensiones y actualizaciones**, o bien escriba **Extensiones** en el cuadro de búsqueda **Inicio rápido**.
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
+
+## <a name="manage-extensions-dialog-box"></a>Cuadro de diálogo Administrar extensiones
 
 Use el cuadro de diálogo **Administrar extensiones** para instalar y administrar extensiones de Visual Studio. Para abrir el cuadro de diálogo **Administrar extensiones**, elija **Extensiones** > **Administrar extensiones**. O bien escriba **Extensiones** en el cuadro de búsqueda y elija **Administrar extensiones**.
 
@@ -41,53 +47,82 @@ Use el cuadro de diálogo **Administrar extensiones** para instalar y administra
 
 En el panel de la izquierda se clasifican las extensiones en función de las que están instaladas, las que están disponibles en Visual Studio Marketplace (**Online**) y las que tienen actualizaciones disponibles. **Roaming Extension Manager** mantiene una lista de todas las extensiones de Visual Studio que se han instalado en cualquier equipo o instancia de Visual Studio. Se ha diseñado para que pueda buscar las extensiones favoritas más fácilmente.
 
-## <a name="find-visual-studio-extensions"></a>Búsqueda de extensiones de Visual Studio
-
-Puede instalar las extensiones desde [Visual Studio Marketplace](https://marketplace.visualstudio.com/vs). Las extensiones pueden ser controles, ejemplos, plantillas, herramientas u otros componentes que agregan funcionalidad a Visual Studio. Visual Studio admite extensiones con el formato de paquete VSIX; esto incluye plantillas de proyecto, plantillas de elementos, elementos del **Cuadro de herramientas** , componentes de Managed Extension Framework (MEF) y VSPackages.
+## <a name="find-and-install-extensions"></a>Búsqueda e instalación de extensiones
 
 ::: moniker range="vs-2017"
 
-También puede descargar e instalar extensiones basadas en MSI, pero el cuadro de diálogo **Extensiones y actualizaciones** no puede habilitarlas ni deshabilitarlas. Visual Studio Marketplace contiene las extensiones VSIX y MSI.
+Puede instalar extensiones desde [Visual Studio Marketplace](https://marketplace.visualstudio.com) o desde el cuadro de diálogo Extensiones y actualizaciones de Visual Studio.
 
-::: moniker-end
+Para instalar extensiones desde Visual Studio:
 
-::: moniker range=">=vs-2019"
+1. En **Herramientas** > **Extensiones y actualizaciones**, busque la extensión que quiere instalar. Si conoce el nombre o parte del nombre de la extensión, puede buscar en la ventana **Búsqueda**.
 
-También puede descargar e instalar extensiones basadas en MSI, pero el cuadro de diálogo **Administrar extensiones** no puede habilitarlas ni deshabilitarlas. Visual Studio Marketplace contiene las extensiones VSIX y MSI.
+2. Seleccione **Descargar**.
 
-::: moniker-end
-
-## <a name="install-or-uninstall-visual-studio-extensions"></a>Instalación o desinstalación de extensiones de Visual Studio
-
-::: moniker range="vs-2017"
-
-En **Herramientas** > **Extensiones y actualizaciones**, busque la extensión que quiere instalar. (Si conoce el nombre o parte del nombre de la extensión, puede buscar en la ventana **Búsqueda**). Haga clic en **Descargar**. Se programa la instalación de la extensión. Una vez que se hayan cerrado todas las instancias de Visual Studio, se instalará la extensión.
+   Se programa la instalación de la extensión. Una vez que se hayan cerrado todas las instancias de Visual Studio, se instalará la extensión.
 
 Si intenta instalar una extensión que tiene dependencias, el instalador comprueba si están instaladas. Si no están instaladas, el cuadro de diálogo **Extensiones y actualizaciones** muestra las dependencias que se deben instalar antes de poder instalar la extensión.
 
+### <a name="install-without-using-the-extensions-and-updates-dialog-box"></a>Instalar sin usar el cuadro de diálogo Extensiones y actualizaciones
+
+Es posible que las extensiones empaquetadas en archivos *.vsix* estén disponibles en otras ubicaciones que no sean Visual Studio Marketplace. El cuadro de diálogo **Herramientas** > **Extensiones y actualizaciones** no puede detectar estos archivos, pero se puede instalar un archivo *.vsix* si se hace doble clic en él o si se selecciona y se presiona **ENTRAR**. Después de eso, solo tiene que seguir las instrucciones. Una vez instalada la extensión, puede utilizar el cuadro de diálogo **Extensiones y actualizaciones** para habilitarla, deshabilitarla o desinstalarla.
+
+> [!NOTE]
+> - Visual Studio Marketplace contiene las extensiones VSIX y MSI. El cuadro de diálogo Extensiones y actualizaciones no puede habilitar ni deshabilitar las extensiones basadas en MSI.
+> - Si una extensión basada en MSI incluye un archivo *extensión.manifiesto_vsix*, la extensión aparece en el cuadro de diálogo **Extensiones y actualizaciones**.
+
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-En **Extensiones** > **Administrar extensiones**, busque la extensión que quiere instalar. (Si conoce el nombre o parte del nombre de la extensión, puede buscar en la ventana **Búsqueda**). Haga clic en **Descargar**. Se programa la instalación de la extensión. Una vez que se hayan cerrado todas las instancias de Visual Studio, se instalará la extensión.
+Puede instalar extensiones desde [Visual Studio Marketplace](https://marketplace.visualstudio.com) o desde el cuadro de diálogo Administrar extensiones de Visual Studio.
+
+Para instalar extensiones desde Visual Studio:
+
+1. En **Extensiones** > **Administrar extensiones**, busque la extensión que quiere instalar. (Si conoce el nombre o parte del nombre de la extensión, puede buscar en la ventana **Búsqueda**).
+
+2. Seleccione **Descargar**.
+
+   Se programa la instalación de la extensión. Una vez que se hayan cerrado todas las instancias de Visual Studio, se instalará la extensión.
 
 Si intenta instalar una extensión que tiene dependencias, el instalador comprueba si están instaladas. Si no están instaladas, el cuadro de diálogo **Administrar extensiones** muestra las dependencias que se deben instalar antes de poder instalar la extensión.
 
+### <a name="install-without-using-the-manage-extensions-dialog-box"></a>Instalar sin usar el cuadro de diálogo Administrar extensiones
+
+Es posible que las extensiones empaquetadas en archivos *.vsix* estén disponibles en otras ubicaciones que no sean Visual Studio Marketplace. El cuadro de diálogo **Extensiones** > **Administrar extensiones** no puede detectar estos archivos, pero se puede instalar un archivo *.vsix* si se hace doble clic en él o si se selecciona y se presiona **ENTRAR**. Después de eso, solo tiene que seguir las instrucciones. Una vez instalada la extensión, puede usar el cuadro de diálogo **Administrar extensiones** para habilitarla, deshabilitarla o desinstalarla.
+
+> [!NOTE]
+> - Visual Studio Marketplace contiene las extensiones VSIX y MSI. El cuadro de diálogo Administrar extensiones no puede habilitar ni deshabilitar las extensiones basadas en MSI.
+> - Si una extensión basada en MSI incluye un archivo *extensión.manifiesto_vsix*, la extensión aparece en el cuadro de diálogo **Administrar extensiones**.
+
 ::: moniker-end
 
-Si desea dejar de usar una extensión, puede deshabilitarla o desinstalarla. Al deshabilitar una extensión esta sigue instalada pero está descargada. Solo puede deshabilitar las extensiones VSIX; las extensiones que se instalaron mediante MSI solo se pueden desinstalar. Busque la extensión y haga clic **Desinstalar** o **Deshabilitar**. Reinicie Visual Studio para descargar una extensión deshabilitada.
+## <a name="uninstall-or-disable-an-extension"></a>Desinstalación o deshabilitación de una extensión
+
+Si desea dejar de usar una extensión, puede deshabilitarla o desinstalarla. Al deshabilitar una extensión esta sigue instalada pero está descargada. Busque la extensión y haga clic **Desinstalar** o **Deshabilitar**. Reinicie Visual Studio para descargar una extensión deshabilitada.
+
+> [!NOTE]
+> Puede deshabilitar las extensiones VSIX, pero no las extensiones que se instalaron mediante MSI. Las extensiones instaladas mediante MSI solo se pueden desinstalar.
 
 ## <a name="per-user-and-administrative-extensions"></a>Extensiones por usuario y administrativas
 
-Las mayoría de las extensiones son extensiones por usuario y están instaladas en la carpeta *%LocalAppData%\Microsoft\VisualStudio\\<versión de Visual Studio\>\Extensions\\* . Algunas extensiones son extensiones administrativas y están instaladas en la carpeta *\<<carpeta de instalación de Visual Studio>\Common7\IDE\Extensions\\* .
+Las mayoría de las extensiones son por usuario y están instaladas en la carpeta *%LocalAppData%\Microsoft\VisualStudio\\<versión de Visual Studio\>\Extensions\\* . Algunas extensiones son extensiones administrativas y están instaladas en la carpeta *\<<carpeta de instalación de Visual Studio>\Common7\IDE\Extensions\\* .
 
-Para proteger el sistema frente a extensiones que pueden contener errores o código malintencionado, puede limitar que las extensiones por usuario solo se carguen cuando Visual Studio se ejecuta con permisos de usuario normales. Esto significa que las extensiones por usuario están deshabilitadas cuando Visual Studio se ejecuta con permisos de usuario administrativo. Para ello, vaya a la página de opciones de las extensiones (**Herramientas** > **Opciones** > **Entorno** > **Extensiones**). Desactive la casilla **Cargar extensiones por usuario al ejecutar como administrador** y reinicie Visual Studio.
+Para proteger el sistema frente a extensiones que pueden contener errores o código malintencionado, puede limitar que las extensiones por usuario solo se carguen cuando Visual Studio se ejecuta con permisos de usuario normales. Esto significa que las extensiones por usuario están deshabilitadas cuando Visual Studio se ejecuta con permisos elevados.
+
+Para restringir cuándo se cargan las extensiones por usuario:
+
+1. Abra la página de opciones de las extensiones (**Herramientas** > **Opciones** > **Entorno** > **Extensiones**).
+
+2. Desactive la casilla **Cargar extensiones por usuario al ejecutar como administrador**.
+
+3. Reinicie Visual Studio.
 
 ## <a name="automatic-extension-updates"></a>Actualizaciones automáticas de extensión
 
 Las extensiones se actualizan de forma automática cuando hay una versión nueva disponible en Visual Studio Marketplace. La versión nueva de la extensión se detecta e instala en segundo plano. La próxima vez que abra Visual Studio, se ejecutará la versión nueva de la extensión.
 
-Si desea deshabilitar las actualizaciones automáticas, puede deshabilitar la característica para todas las extensiones o solo para extensiones específicas.
+Si quiere deshabilitar las actualizaciones automáticas, puede deshabilitar la característica para todas las extensiones o solo para extensiones específicas.
 
 ::: moniker range="vs-2017"
 
@@ -105,7 +140,7 @@ Si desea deshabilitar las actualizaciones automáticas, puede deshabilitar la ca
 
 ::: moniker-end
 
-## <a name="extension-crash-and-unresponsiveness-notifications"></a>Notificaciones de bloqueo y falta de respuesta de una extensión
+## <a name="crash-and-unresponsiveness-notifications"></a>Notificaciones de bloqueo y falta de respuesta
 
 Visual Studio avisa si sospecha que una extensión ha estado implicada en un bloqueo durante una sesión anterior. Cuando Visual Studio se bloquea, almacena la pila de excepciones. La próxima vez que Visual Studio se inicia, examina la pila, comenzando por la hoja y dirigiéndose a la base. Si Visual Studio determina que un marco pertenece a un módulo que forma parte de una extensión habilitada e instalada, muestra una notificación.
 
@@ -128,16 +163,16 @@ Cuando aparezcan estas notificaciones, puede ignorarlas o realizar una de las ac
 - Elija **No volver a mostrar este mensaje**.
 
   - Si la notificación se refiere a un bloqueo en una sesión anterior, Visual Studio ya no muestra una notificación cuando se produzca un bloqueo asociado a esta extensión. Visual Studio seguirá mostrando notificaciones cuando la falta de respuesta pueda estar asociada con esta extensión, o para los bloqueos o faltas de respuesta que puedan estar asociados a otras extensiones.
-  - Si la notificación se refiere a una falta de respuesta, en el IDE ya no se muestra una notificación cuando esa extensión esté asociada a la falta de respuesta. Visual Studio seguirá mostrando notificaciones relacionadas con los bloqueos para esta extensión, y notificaciones relacionadas con bloqueos y faltas de respuesta para otras extensiones.
+  - Si la notificación se refiere a una falta de respuesta, en el IDE (entorno de desarrollo integrado) ya no se muestra una notificación cuando esa extensión esté asociada a la falta de respuesta. Visual Studio seguirá mostrando notificaciones relacionadas con los bloqueos para esta extensión, así como notificaciones relacionadas con bloqueos y faltas de respuesta para otras extensiones.
 
-- Elija **Más información** para llegar a esta página.
+- Seleccione **Más información** para navegar a esta página.
 
 - Pulse el botón **X** al final de la notificación para descartarla. Aparecerá una nueva notificación para las instancias futuras de la extensión que estén asociadas con un bloqueo o falta de respuesta de la interfaz de usuario.
 
 > [!NOTE]
 > Una notificación de bloqueo o falta de respuesta de la interfaz de usuario significa únicamente que uno de los módulos de la extensión estaba en la pila cuando la interfaz de usuario dejó de responder o cuando se produjo el bloqueo. No necesariamente significa que la propia extensión sea la causa. Es posible que la extensión llamara a código que forma parte de Visual Studio, lo que a su vez dio lugar a una falta de respuesta de la interfaz de usuario o a un bloqueo. Sin embargo, la notificación puede seguir siendo útil si el escenario que ha provocado la falta de respuesta de la interfaz de usuario el bloqueo no es importante para usted. En este caso, deshabilitar la extensión evita el mismo bloqueo o falta de respuesta de la interfaz de usuario en el futuro sin afectar a su productividad.
 
-## <a name="sample-master-copies-and-working-copies"></a>Copias maestras y copias de trabajo de muestra
+## <a name="samples"></a>Muestras
 
 Cuando se instala un ejemplo en línea, la solución se almacena en dos ubicaciones:
 
@@ -169,32 +204,7 @@ Puede usar el cuadro de diálogo **Extensiones** > **Administrar extensiones** p
 
 - Actualizar la copia maestra de un ejemplo instalado cuando haya una notificación de actualización.
 
-::: moniker range="vs-2017"
+## <a name="see-also"></a>Vea también
 
-## <a name="install-without-using-the-extensions-and-updates-dialog-box"></a>Instalar sin usar el cuadro de diálogo Extensiones y actualizaciones
-
-Es posible que las extensiones empaquetadas en archivos *.vsix* estén disponibles en otras ubicaciones que no sean Visual Studio Marketplace. El cuadro de diálogo **Herramientas** > **Extensiones y actualizaciones** no puede detectar estos archivos, pero se puede instalar un archivo *.vsix* si se hace doble clic en él o se selecciona y se presiona la tecla **Entrar**. Después de eso, solo tiene que seguir las instrucciones. Una vez instalada la extensión, puede utilizar el cuadro de diálogo **Extensiones y actualizaciones** para habilitarla, deshabilitarla o desinstalarla.
-
-## <a name="extension-types-not-supported-by-the-extensions-and-updates-dialog-box"></a>Tipos de extensiones que no admite el cuadro de diálogo Extensiones y actualizaciones
-
-Visual Studio sigue siendo compatible con las extensiones que se instalan con Microsoft Installer (MSI), pero no a través del cuadro de diálogo **Herramientas** > **Extensiones y actualizaciones** sin ninguna modificación.
-
-> [!TIP]
-> Si una extensión basada en MSI incluye un archivo *extensión.manifiesto_vsix*, la extensión aparece en el cuadro de diálogo **Extensiones y actualizaciones**.
-
-::: moniker-end
-
-::: moniker range=">=vs-2019"
-
-## <a name="install-without-using-the-manage-extensions-dialog-box"></a>Instalar sin usar el cuadro de diálogo Administrar extensiones
-
-Es posible que las extensiones empaquetadas en archivos *.vsix* estén disponibles en otras ubicaciones que no sean Visual Studio Marketplace. El cuadro de diálogo **Extensiones** > **Administrar extensiones** no puede detectar estos archivos, pero se puede instalar un archivo *.vsix* si se hace doble clic en él o se selecciona y se presiona la tecla **Entrar**. Después de eso, solo tiene que seguir las instrucciones. Una vez instalada la extensión, puede usar el cuadro de diálogo **Administrar extensiones** para habilitarla, deshabilitarla o desinstalarla.
-
-## <a name="extension-types-not-supported-by-the-manage-extensions-dialog-box"></a>Tipos de extensiones que no admite el cuadro de diálogo Administrar extensiones
-
-Visual Studio sigue siendo compatible con las extensiones que se instalan con Microsoft Installer (MSI), pero no a través del cuadro de diálogo **Extensiones** > **Administrar extensiones** sin ninguna modificación.
-
-> [!TIP]
-> Si una extensión basada en MSI incluye un archivo *extensión.manifiesto_vsix*, la extensión aparece en el cuadro de diálogo **Administrar extensiones**.
-
-::: moniker-end
+- [Visual Studio Marketplace](https://marketplace.visualstudio.com)
+- [Visual Studio SDK](../extensibility/visual-studio-sdk.md)

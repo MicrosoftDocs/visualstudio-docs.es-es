@@ -5,16 +5,24 @@ author: therealjohn
 ms.author: johmil
 ms.date: 06/18/2019
 ms.assetid: 339F6051-5F90-48DC-8237-EBBC8A03A32B
-ms.openlocfilehash: 4eec080655c0f47823810dfd689fe49a6f7e43eb
-ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
+ms.openlocfilehash: c8b6bddac92a9ec6b40ba08ebcdc3fe3577b0bc8
+ms.sourcegitcommit: ea182703e922c74725045afc251bcebac305068a
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68872344"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71211475"
 ---
 # <a name="xamarin-mobile-app-development"></a>Desarrollo de aplicaciones móviles con Xamarin
 
 La compatibilidad de primera clase con [Xamarin](/xamarin) le permite desarrollar experiencias nativas completas para Android, macOS, iOS, tvOS y watchOS. Las aplicaciones multiplataforma de Xamarin.Forms ayudan a compartir código de interfaz de usuario basado en XAML entre Android, iOS y macOS sin limitar el acceso a la funcionalidad nativa.
+
+## <a name="xamarinforms"></a>Xamarin.Forms
+
+La Recarga activa de XAML para Xamarin.Forms está integrada en Visual Studio para Mac, versión 8.3 y posteriores. Con esta característica habilitada, los cambios se reflejan inmediatamente en la aplicación en ejecución cada vez que se guarda el archivo.
+
+Para habilitar la Recarga activa de XAML, active la casilla **Enable Xamarin Hot Reload** (Habilitar la recarga activa de Xamarin) en **Visual Studio > Preferencias > Proyectos > Xamarin Hot Reload** (Recarga activa de Xamarin).
+
+Para obtener más información sobre la recarga activa, vea la [guía de Recarga activa de XAML para Xamarin.Forms](https://docs.microsoft.com/en-us/xamarin/xamarin-forms/xaml/hot-reload) dentro de la documentación.
 
 ## <a name="android"></a>Android
 

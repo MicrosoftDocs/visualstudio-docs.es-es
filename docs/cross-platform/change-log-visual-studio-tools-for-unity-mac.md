@@ -1,7 +1,7 @@
 ---
 title: Registro de cambios (Visual Studio Tools para Unity, Mac) | Microsoft Docs
 ms.custom: ''
-ms.date: 04/02/2019
+ms.date: 09/18/2019
 ms.technology: vs-unity-tools
 ms.topic: conceptual
 ms.assetid: 33a6ac54-d997-4308-b5a0-af7387460849
@@ -10,22 +10,90 @@ ms.author: johmil
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: ff2bcce9e041ff28393020c48563fe345c4fa076
-ms.sourcegitcommit: 044bb54cb4552c8f4651feb11d62e52726117e75
+ms.openlocfilehash: 897851055bd2eacc10edea9fdff2ab3ecd61b963
+ms.sourcegitcommit: 88f576ac32af31613c1a10c1548275e1ce029f4f
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/30/2019
-ms.locfileid: "68661819"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "71185966"
 ---
 # <a name="change-log-visual-studio-tools-for-unity-mac"></a>Registro de cambios (Visual Studio Tools para Unity, Mac)
 
 Registro de cambios de Visual Studio Tools para Unity.
 
+## <a name="2330"></a>2.3.3.0
+
+Fecha de publicación: 23 de septiembre de 2019
+
+### <a name="new-features"></a>Características nuevas
+
+- **Integración:**
+
+  - Se ha agregado un nuevo supresor para IDE0060, con el fin de evitar que el IDE muestre una corrección rápida para quitar los parámetros sin usar.
+    - `USP0005` para `IDE0060`: los mensajes de Unity se invocan mediante el tiempo de ejecución de Unity.
+
+## <a name="2320"></a>2.3.2.0
+
+Fecha de publicación: 16 de septiembre de 2019
+
+### <a name="new-features"></a>Características nuevas
+
+- **Integración:**
+
+  - Hemos aumentado el reconocimiento que tiene Visual Studio para los proyectos de Unity mediante la adición de nuevos diagnósticos específicos para Unity. También hemos hecho que el entorno de desarrollo integrado sea más inteligente suprimiendo los diagnósticos generales de C# que no se aplican a los proyectos de Unity. Por ejemplo, el IDE no mostrará una corrección rápida para cambiar una variable del inspector a `readonly`, lo que le impediría modificar la variable en el editor de Unity.
+    - `UNT0001`: El tiempo de ejecución llama a los mensajes de Unity aunque estén vacíos; no los declare para evitar el procesamiento innecesario por parte del tiempo de ejecución de Unity.
+    - `UNT0002`: La comparación de etiquetas con la igualdad de cadenas es más lenta que el método CompareTag integrado.
+    - `UNT0003`: Se prefiere el uso de la forma genérica de GetComponent para la seguridad de tipos.
+    - `UNT0004`: El mensaje de actualización depende de la velocidad de fotogramas y debe usar Time.deltaTime en lugar de Time.fixedDeltaTime.
+    - `UNT0005`: El mensaje de FixedUpdate no depende de la velocidad de fotogramas y debe usar Time.fixedDeltaTime en lugar de Time.deltaTime.
+    - `UNT0006`: se ha detectado una firma de método incorrecta para este mensaje de Unity.
+    - `UNT0007`: Unity invalida el operador de comparación NULL para objetos de Unity que es incompatible con el uso combinado de NULL.
+    - `UNT0008`: Unity invalida el operador de comparación NULL para objetos de Unity que es incompatible con la propagación de tipo NULL.
+    - `UNT0009`: Al aplicar el atributo InitializeOnLoad a una clase, debe proporcionar un constructor estático. El atributo InitializeOnLoad garantiza que se le llamará cuando se inicie el editor.
+    - `UNT0010`: El componente MonoBehaviours solo debe crearse con AddComponent(). MonoBehaviour es un componente y debe adjuntarse a un elemento GameObject.
+    - `UNT0011`: El componente ScriptableObject solo debe crearse con CreateInstance(). ScriptableObject debe crearse mediante el motor de Unity para controlar los métodos de mensajes de Unity.
+    - `USP0001` para `IDE0029`: los objetos de Unity no deben usar la fusión nula.
+    - `USP0002` para `IDE0031`: los objetos de Unity no deben usar la propagación nula.
+    - `USP0003` para `IDE0051`: los mensajes de Unity se invocan mediante el tiempo de ejecución de Unity.
+    - `USP0004` para `IDE0044`: los campos con un atributo SerializeField no deben ser de solo lectura.
+
+## <a name="2310"></a>2.3.1.0
+
+Fecha de publicación: 4 de septiembre de 2019
+
+### <a name="new-features"></a>Características nuevas
+
+- **Evaluación:**
+
+  - Se ha agregado compatibilidad para mejorar la presentación de tipos, es decir, `List<object>` en lugar de `List'1[[System.Object, <corlib...>]]`.
+
+  - Se ha agregado compatibilidad con el acceso a miembros de puntero, es decir, `p->data->member`.
+
+  - Se ha agregado compatibilidad con las conversiones implícitas en inicializadores de matriz, es decir, `new byte [] {1,2,3,4}`.
+
+  - Se ha agregado compatibilidad con el editor hexadecimal al inspeccionar matrices y cadenas de bytes.
+
+## <a name="2300"></a>2.3.0.0
+
+Fecha de publicación: 13 de agosto de 2019
+
+### <a name="bug-fixes"></a>Correcciones de errores
+
+- **Evaluación:**
+
+  - Se han corregido los problemas de ejecución paso a paso con excepciones.
+
+  - Se ha corregido la evaluación de los pseudoidentificadores (como $exception).
+
+  - Se ha evitado el bloqueo al desreferenciar direcciones no válidas.  
+
+  - Se ha corregido el problema con los dominios de aplicación descargados.
+
 ## <a name="2200"></a>2.2.0.0
 
 Publicado el 25 de julio de 2019
 
-### <a name="bug-fixes"></a>Corrección de errores
+### <a name="bug-fixes"></a>Correcciones de errores
 
 - **Evaluación:**
 
@@ -53,7 +121,7 @@ Publicado el 9 de julio de 2019
 
   - Cambio al modo de cambio de nombre cuando se agrega un archivo desde una plantilla (para imitar el comportamiento del editor de Unity).
 
-### <a name="bug-fixes"></a>Corrección de errores
+### <a name="bug-fixes"></a>Correcciones de errores
 
 - **Integración:**
 
@@ -67,7 +135,7 @@ Publicado el 9 de julio de 2019
 
 Publicado el 2 de julio de 2019
 
-### <a name="bug-fixes"></a>Corrección de errores
+### <a name="bug-fixes"></a>Correcciones de errores
 
 - **Evaluación:**
 
@@ -83,7 +151,7 @@ Publicado el 27 de junio de 2019
 
   - Se ha actualizado la API MonoBehaviour a 2019.1.
 
-### <a name="bug-fixes"></a>Corrección de errores
+### <a name="bug-fixes"></a>Correcciones de errores
 
 - **Integración:**
 
@@ -103,7 +171,7 @@ Publicado el 20 de junio de 2019
 
   - Se ha deshabilitado la compilación completa para los proyectos de Unity, en favor del uso de los errores y advertencias de IntelliSense. De hecho, Unity crea una solución de Visual Studio con proyectos de biblioteca de clases que representan lo que Unity hace internamente. Dicho esto, el resultado de la compilación en Visual Studio nunca se utiliza o selecciona por Unity, ya que su canal de compilación está cerrado. La compilación en Visual Studio solo está consumiendo recursos para nada. Si necesita una compilación completa porque tiene herramientas o una configuración que dependen de ella, puede deshabilitar esta optimización (Herramientas/Opciones/Tools para Unity/Deshabilitar la compilación completa de proyectos).
   
-  - Se ha agregado compatibilidad para paquetes de Unity en el Explorador de proyectos de Unity. Solo son visibles los paquetes a los que se hace referencia (mediante manifest.json en la carpeta Packages) y los paquetes locales (insertados en la carpeta Packages).
+  - Se ha agregado compatibilidad para paquetes de Unity en el Explorador de proyectos de Unity. Solo son visibles los paquetes a los que se hace referencia (mediante manifest.json en la carpeta `Packages`) y los paquetes locales (insertados en la carpeta `Packages`).
 
 ## <a name="2021"></a>2.0.2.1
 
@@ -129,7 +197,7 @@ Publicada el 2 de abril de 2019
 
   - Se ha agregado un menú contextual para el nuevo editor.
 
-### <a name="bug-fixes"></a>Corrección de errores
+### <a name="bug-fixes"></a>Correcciones de errores
 
 - **Depurador:**
 
@@ -139,7 +207,7 @@ Publicada el 2 de abril de 2019
  
  Publicada el 26 de marzo de 2019
 
-### <a name="bug-fixes"></a>Corrección de errores
+### <a name="bug-fixes"></a>Correcciones de errores
 
 - **Integración:**
 
@@ -164,6 +232,12 @@ Publicada el 20 de marzo de 2019
 - **Generación de proyectos:**
 
   - Conservar las propiedades externas al procesar el archivo de solución.
+  
+- **Evaluación:**
+
+  - Se ha agregado compatibilidad para nombres calificados con el alias (solo el espacio de nombres global por ahora). Así pues, el evaluador de expresiones acepta ahora tipos con el formato global::namespace.type.
+
+  - Se ha agregado compatibilidad con el formato `pointer[index]`, que es semánticamente idéntico al formato `*(pointer+index)` de desreferencia de puntero.
 
 ## <a name="2004"></a>2.0.0.4
 
@@ -173,9 +247,9 @@ Publicada el 5 de marzo de 2019
 
 - **Integración:**
 
-  - Se actualizado la API ScriptableObject.
+  - Se ha actualizado la API `ScriptableObject`.
 
-### <a name="bug-fixes"></a>Corrección de errores
+### <a name="bug-fixes"></a>Correcciones de errores
 
 - **Integración:**
 
@@ -189,7 +263,7 @@ Publicada el 5 de marzo de 2019
 
 - **Generación de proyectos:**
 
-  - Los campos públicos y serializados ya no generarán advertencias. Hemos suprimido automáticamente las advertencias del compilador CS0649 y IDE0051 en los proyectos de Unity que crearon estos mensajes.
+  - Los campos públicos y serializados ya no generarán advertencias. Hemos suprimido automáticamente las advertencias del compilador `CS0649` y `IDE0051` en los proyectos de Unity que crearon estos mensajes.
 
 - **Integración:**
 
@@ -199,7 +273,7 @@ Publicada el 5 de marzo de 2019
 
   - Se ha agregado compatibilidad con las funciones locales.
 
-### <a name="bug-fixes"></a>Corrección de errores
+### <a name="bug-fixes"></a>Correcciones de errores
 
 - **Depurador:**
 
@@ -215,7 +289,7 @@ Publicada el 4 de febrero de 2019
 
   - Se ha actualizado la API MonoBehaviour.
 
-### <a name="bug-fixes"></a>Corrección de errores
+### <a name="bug-fixes"></a>Correcciones de errores
 
 - **Depurador:**
 
@@ -225,7 +299,7 @@ Publicada el 4 de febrero de 2019
 
 Publicada el 4 de diciembre de 2018
 
-### <a name="bug-fixes"></a>Corrección de errores
+### <a name="bug-fixes"></a>Correcciones de errores
 
 - **Integración:**
 
@@ -250,7 +324,7 @@ Publicada el 4 de diciembre de 2018
 
   - Se ha agregado compatibilidad con las pseudovariables (identificadores de excepción y objetos).
 
-### <a name="bug-fixes"></a>Corrección de errores
+### <a name="bug-fixes"></a>Correcciones de errores
 
 - **Depurador:**
 
@@ -266,7 +340,7 @@ Publicado el 13 de noviembre de 2018
 
   - Se ha agregado más información del cliente (IP, nombre del equipo) en el cuadro de diálogo Adjuntar.
 
-### <a name="bug-fixes"></a>Corrección de errores
+### <a name="bug-fixes"></a>Correcciones de errores
 
 - **Depurador:**
 
@@ -282,7 +356,7 @@ Publicado el 13 de noviembre de 2018
 
 Publicado el 24 de julio de 2018
 
-### <a name="bug-fixes"></a>Corrección de errores
+### <a name="bug-fixes"></a>Correcciones de errores
 
 - **Integración:**
 
@@ -292,7 +366,7 @@ Publicado el 24 de julio de 2018
 
 Publicado el 10 de julio de 2018
 
-### <a name="bug-fixes"></a>Corrección de errores
+### <a name="bug-fixes"></a>Correcciones de errores
 
 - **Integración:**
 
@@ -302,7 +376,7 @@ Publicado el 10 de julio de 2018
 
 Publicado el 26 de junio de 2018
 
-### <a name="bug-fixes"></a>Corrección de errores
+### <a name="bug-fixes"></a>Correcciones de errores
 
 - **Asistentes:**
 
@@ -364,7 +438,7 @@ Publicado el 5 de marzo de 2018
 
 Publicado el 24 de enero de 2018
 
-### <a name="bug-fixes"></a>Corrección de errores
+### <a name="bug-fixes"></a>Correcciones de errores
 
 - **Generación de proyectos:**
 
@@ -380,7 +454,7 @@ Publicado el 24 de enero de 2018
 
 Publicado el 23 de enero de 2018
 
-### <a name="bug-fixes"></a>Corrección de errores
+### <a name="bug-fixes"></a>Correcciones de errores
 
 - **Integración:**
 
@@ -396,7 +470,7 @@ Publicado el 13 de diciembre de 2017
 
   - Se ha agregado compatibilidad con .NET Standard.
 
-### <a name="bug-fixes"></a>Corrección de errores
+### <a name="bug-fixes"></a>Correcciones de errores
 
 - **Integración:**
 
@@ -406,7 +480,7 @@ Publicado el 13 de diciembre de 2017
 
 Publicado el 12 de diciembre de 2017
 
-### <a name="bug-fixes"></a>Corrección de errores
+### <a name="bug-fixes"></a>Correcciones de errores
 
 - **Integración:**
 
@@ -438,7 +512,7 @@ Publicado el 23 de octubre de 2017
 
   - Se ha agregado compatibilidad con archivos de símbolo de depuración portátiles.
 
-### <a name="bug-fixes"></a>Corrección de errores
+### <a name="bug-fixes"></a>Correcciones de errores
 
 - **Generación de proyectos:**
 
@@ -498,7 +572,7 @@ Publicado el 12 de julio de 2017
 
   - Se corrigieron las definiciones con niveles de API.
 
-### <a name="bug-fixes"></a>Corrección de errores
+### <a name="bug-fixes"></a>Correcciones de errores
 
 - **Integración:**
 
@@ -508,7 +582,7 @@ Publicado el 12 de julio de 2017
 
 Publicado el 4 de mayo de 2017
 
-### <a name="bug-fixes"></a>Corrección de errores
+### <a name="bug-fixes"></a>Correcciones de errores
 
 - **Integración:**
 

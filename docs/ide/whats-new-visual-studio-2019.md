@@ -2,7 +2,7 @@
 title: Novedades de Visual Studio 2019
 titleSuffix: ''
 description: Obtenga más información sobre las nuevas características de Visual Studio 2019.
-ms.date: 07/23/2019
+ms.date: 09/24/2019
 helpviewer_keywords:
 - Visual Studio, what's new
 - what's new [Visual Studio]
@@ -15,16 +15,16 @@ ms.technology: vs-ide-general
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: 2c9526a0cbf33278bbc3cab8120bb20ab0f5377a
-ms.sourcegitcommit: 9c07ae6fb18204ea080c8248994a683fa12e5c82
+ms.openlocfilehash: 5871e782ee84e49762d26a925380ad481e3623d1
+ms.sourcegitcommit: ea182703e922c74725045afc251bcebac305068a
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/04/2019
-ms.locfileid: "70293715"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71211335"
 ---
 # <a name="whats-new-in-visual-studio-2019"></a>Novedades de Visual Studio 2019
 
-**Actualizado para la [versión 16.2](/visualstudio/releases/2019/release-notes/)**
+**Actualizado para la [versión 16.3](/visualstudio/releases/2019/release-notes/)**
 
 >[!div class="button"]
 >[Descargar Visual Studio 2019](https://visualstudio.microsoft.com/downloads)
@@ -107,6 +107,12 @@ Para obtener más información, consulte la entrada de blog [Better multi-monito
 **Novedades de la versión 16.2** Se ha actualizado el Explorador de pruebas para mejorar el control de conjuntos de pruebas de gran tamaño y ofrecer un filtrado más sencillo, comandos más reconocibles, vistas de listas de reproducción por pestañas y columnas personalizables que permiten ajustar de forma precisa qué información de prueba se muestra.
 
    ![Captura de pantalla que muestra las mejoras de la interfaz de usuario en el Explorador de pruebas](media/vs-2019/test-explorer-ui.png)
+
+### <a name="net-core"></a>Núcleo de .NET
+
+**Novedades en 16.3**: hemos incluido compatibilidad con .NET Core 3.0, de código abierto, multiplataforma y totalmente compatible con Microsoft. 
+
+Para obtener más información, consulte la entrada de blog [Anuncio de .NET Core 3.0](https://devblogs.microsoft.com/dotnet/announcing-net-core-3-0/).
 
 ## <a name="collaborate"></a>Colaborar
 

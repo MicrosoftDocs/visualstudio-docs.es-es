@@ -8,12 +8,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: eac31e0fe12d703e11d286b629e7e690f641f4e3
-ms.sourcegitcommit: 6b0503ed8d25454d6e39a8e606910b3fa58cf1d2
+ms.openlocfilehash: 35136ac0b7b0104f1812df7a9bf8ba81f6907374
+ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "68981107"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71254437"
 ---
 # <a name="build-actions"></a>Acciones de compilación
 

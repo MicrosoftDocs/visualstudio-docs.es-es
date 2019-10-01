@@ -1,6 +1,6 @@
 ---
 title: Convenciones de lenguaje de .NET para EditorConfig
-ms.date: 07/17/2019
+ms.date: 09/23/2019
 ms.topic: reference
 dev_langs:
 - CSharp
@@ -13,22 +13,23 @@ manager: jillfra
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: 2231d3637b4a016d1da783d65d4237b9f5d6bab2
-ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
+ms.openlocfilehash: e4f49df2c775bc3bb95888d76da133898ab9c76e
+ms.sourcegitcommit: 88f576ac32af31613c1a10c1548275e1ce029f4f
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69551421"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "71186544"
 ---
 # <a name="language-conventions"></a>Convenciones de lenguaje
 
 Las convenciones de lenguaje de EditorConfig en Visual Studio se dividen en dos categorías: las que se aplican a Visual Basic y C# y las que son específicas de C#. Las convenciones de lenguaje afectan al modo en que se usan diversos aspectos de un lenguaje de programación, por ejemplo, los modificadores y los paréntesis.
 
 > [!TIP]
-> - Use los vínculos de **este artículo** para ir a las diferentes secciones de la página.
 > - Para ver los ejemplos de código en el lenguaje de programación preferido, elíjalo con el selector de lenguajes en la esquina superior derecha de la ventana del explorador.
 >
 >   ![Control de selector de lenguaje de codificación](media/code-language-picker.png)
+>
+> - Use los vínculos de **este artículo** para ir a las diferentes secciones de la página.
 
 ## <a name="rule-format"></a>Formato de regla
 
@@ -36,19 +37,48 @@ Las reglas para las convenciones de lenguaje tienen el formato siguiente:
 
 `option_name = value:severity`
 
-Para cada convención de lenguaje, especifique un valor que define si se prefiere el estilo o cuándo. Muchas reglas aceptan un valor de `true` (se prefiere este estilo) o `false` (no se prefiere este estilo); otros aceptan valores como `when_on_single_line` o `never`. La segunda parte de la regla especifica la **gravedad**.
+Para cada convención de lenguaje, especifique un valor que define si se prefiere el estilo o cuándo. Muchas reglas aceptan un valor de `true` (se prefiere este estilo) o `false` (no se prefiere este estilo). Otras reglas aceptan valores como `when_on_single_line` o `never`. La segunda parte de la regla especifica la [gravedad](#severity-levels).
 
-### <a name="severity"></a>Gravedad
+::: moniker range=">=vs-2019"
+
+> [!NOTE]
+> Dado que los analizadores aplican las convenciones del lenguaje, también puede establecer su gravedad mediante la sintaxis de configuración predeterminada para los analizadores. La sintaxis adopta la forma `dotnet_diagnostic.<rule ID>.severity = <severity>`, por ejemplo, `dotnet_diagnostic.IDE0040.severity = silent`. Para obtener más información, vea [Establecer la gravedad de la regla en un archivo EditorConfig](../code-quality/use-roslyn-analyzers.md#set-rule-severity-in-an-editorconfig-file).
+
+::: moniker-end
+
+## <a name="severity-levels"></a>Niveles de gravedad
 
 La gravedad de la convención de lenguaje especifica el nivel en el que se va a aplicar ese estilo. En la tabla siguiente se enumeran los valores de gravedad posibles y sus efectos:
 
 Gravedad | Efecto
 :------- | ------
-`none` | No mostrar nada al usuario cuando se infringe esta regla. Pero las características de generación de código generan código con este estilo. Las reglas con gravedad `none` nunca aparecen en el menú **Acciones rápidas y refactorizaciones**. En la mayoría de casos, el valor se considera "deshabilitado" o "omitido".
-`silent` (también `refactoring` en Visual Studio 2017 versión 15.8 y posteriores) | No mostrar nada al usuario cuando se infringe esta regla. Pero las características de generación de código generan código con este estilo. Las reglas con gravedad `silent` participan en la limpieza y, además, aparecen en el menú **Acciones rápidas y refactorizaciones**.
-`suggestion` | Cuando se infringe esta regla de estilo, se muestra al usuario como una sugerencia. Las sugerencias aparecen como tres puntos de color gris en los dos primeros caracteres.
-`warning` | Cuando se infringe esta regla de estilo, se muestra una advertencia del compilador.
 `error` | Cuando se infringe esta regla de estilo, se muestra un error del compilador.
+`warning` | Cuando se infringe esta regla de estilo, se muestra una advertencia del compilador.
+`suggestion` | Cuando se infringe esta regla de estilo, se muestra al usuario como una sugerencia. Las sugerencias aparecen como tres puntos de color gris en los dos primeros caracteres.
+`silent` | No mostrar nada al usuario cuando se infringe esta regla. Pero las características de generación de código generan código con este estilo. Las reglas con gravedad `silent` participan en la limpieza y aparecen en el menú **Acciones rápidas y refactorizaciones**.
+`none` | No mostrar nada al usuario cuando se infringe esta regla. Pero las características de generación de código generan código con este estilo. Las reglas con gravedad `none` nunca aparecen en el menú **Acciones rápidas y refactorizaciones**. En la mayoría de casos, el valor se considera "deshabilitado" o "omitido".
+
+::: moniker range=">=vs-2019"
+
+## <a name="automatically-configure-code-styles"></a>Configuración automática de estilos de código
+
+A partir de Visual Studio 2019 16.3, puede configurar reglas de estilo de código desde el menú de bombilla [Acciones rápidas](quick-actions.md) después de que se produzca una infracción de estilo.
+
+Para cambiar la convención de estilo de código:
+
+1. Mantenga el mouse sobre la línea ondulada en el editor y abra el menú de bombilla que aparece. Elija **Configurar o suprimir incidencias** > **Configurar \<Id. de regla> Estilo de código**.
+
+   ![Configuración del estilo de código desde el menú de bombilla en Visual Studio](media/vs-2019/configure-code-style.png)
+
+2. Desde allí, elija una de las opciones de estilo de código.
+
+   ![Configuración del estilo de código](media/vs-2019/configure-code-style-setting.png)
+
+   Visual Studio agrega o modifica la opción de configuración en el archivo EditorConfig, tal como se muestra en el cuadro de vista previa.
+
+Para cambiar la gravedad de la infracción del estilo de código, siga los mismos pasos, pero elija **Configurar \<Id. de regla> gravedad**, en lugar de **Configurar \<Id. de regla > Estilo de código**. Para obtener más información, consulte [Configuración automática de la gravedad de la regla](../code-quality/use-roslyn-analyzers.md#automatically-configure-rule-severity).
+
+::: moniker-end
 
 ## <a name="net-code-style-settings"></a>Configuración del estilo de código de .NET
 

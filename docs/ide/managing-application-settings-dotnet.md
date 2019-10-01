@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: dad84145200b09cfbddab63bd9994096d0ba3e17
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 0627a96bf100232987ace5a42430310912f97b8c
+ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62537323"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71252092"
 ---
 # <a name="manage-application-settings-net"></a>Administración de la configuración de la aplicación (.NET)
 
