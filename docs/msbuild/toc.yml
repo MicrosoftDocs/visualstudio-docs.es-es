@@ -108,7 +108,7 @@
               href: starting-a-build-from-within-the-ide.md
             - name: Registrar las extensiones de .NET Framework
               href: registering-extensions-of-the-dotnet-framework.md
-        - name: Compilación de varios proyectos en paralelo
+        - name: Compilar varios proyectos en paralelo
           items:
             - name: Compilar varios proyectos en paralelo con MSBuild
               href: building-multiple-projects-in-parallel-with-msbuild.md
@@ -292,6 +292,8 @@
               href: taskextension-base-class.md
             - name: ToolTaskExtension (Clase base)
               href: tooltaskextension-base-class.md
+            - name: Diagnóstico de errores de tareas
+              href: diagnosing-task-failures.md
             - name: 'AL (Assembly Linker, Tarea)'
               href: al-assembly-linker-task.md
             - name: AspNetCompiler (Tarea)
