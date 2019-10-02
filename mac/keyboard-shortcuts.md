@@ -5,16 +5,16 @@ ms.date: 03/14/2019
 author: asb3993
 ms.author: amburns
 ms.assetid: 48E06A61-7294-4EC8-A09D-1763C32AD910
-ms.openlocfilehash: 3e6ae24ea9e9a5dea263c2449a9b23b6027f7a96
-ms.sourcegitcommit: ea182703e922c74725045afc251bcebac305068a
+ms.openlocfilehash: b569887005d22a4eab7289c4ab940c9d9539d040
+ms.sourcegitcommit: 528178a304e66c0cb7ab98b493fe3c409f87493a
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71211324"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71273316"
 ---
 # <a name="default-keyboard-shortcuts-in-visual-studio-for-mac"></a>Métodos abreviados de teclado predeterminados de Visual Studio para Mac
 
-Para información sobre la accesibilidad de teclado, consulte [Uso de la navegación mediante el teclado](~/accessibility.md#how-to-use-keyboard-navigation).
+Para información sobre la accesibilidad de teclado, consulte [Uso de la navegación mediante el teclado](~/accessibility-keyboard.md).
 
 Puede acceder a una variedad de comandos de Visual Studio para Mac si usa el método abreviado de teclado correspondiente. En este documento se muestran los métodos abreviados predeterminados para el esquema de enlace de teclado de **Visual Studio para Mac**. Para más información sobre cómo cambiar el esquema de enlace de teclado, consulte [Personalización del IDE](~/customizing-the-ide.md#key-bindings). También puede personalizar los métodos abreviados de un comando con el elemento de menú **Visual Studio para Mac** > **Preferencias** y eligiendo **Entorno** > **Enlaces de teclado** en la ventana **Preferencias**.
 
