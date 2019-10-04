@@ -23,33 +23,32 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 911f0423184f22919be016691b9333b2f62d1b61
-ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.openlocfilehash: 36e875bc8101bc8a1b0eb1bec6671c76e3b0c9b2
+ms.sourcegitcommit: 8a3545329a58e446672181cfed2083f850e1ad14
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66744800"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "71814295"
 ---
-# <a name="create-custom-views-of-objects-c-visual-basic-c"></a>Crear vistas personalizadas de objetos (C#, Visual Basic, C++)
+# <a name="create-custom-views-of-objects-c-visual-basic-f-ccli"></a>Crear vistas personalizadas de objetos (C#, Visual Basic, F#, C++/CLI)
 Se puede personalizar la manera en que Visual Studio muestra los tipos de datos en las ventanas de variables del depurador.
-
-## <a name="native-code"></a>Código nativo
-
-Para C++ código, puede agregar expansiones de tipo de datos personalizados mediante el marco Natvis, como se describe en [crear vistas personalizadas de C++ objetos en el depurador](/visualstudio/debugger/create-custom-views-of-native-objects). Para C++/código de la CLI, también puede usar atributos, que se describen aquí en este artículo.
 
 ## <a name="attributes"></a>Atributos
 
-En C#, Visual Basic, y C++ (C++solo código /CLI), se pueden agregar expansiones para los datos personalizados mediante <xref:System.Diagnostics.DebuggerTypeProxyAttribute>, <xref:System.Diagnostics.DebuggerDisplayAttribute>, y <xref:System.Diagnostics.DebuggerBrowsableAttribute>.
+En C#, Visual Basic, F#y C++ (C++solo en el código/CLI), puede Agregar expansiones para los datos personalizados mediante <xref:System.Diagnostics.DebuggerTypeProxyAttribute>, <xref:System.Diagnostics.DebuggerDisplayAttribute> y <xref:System.Diagnostics.DebuggerBrowsableAttribute>.
 
-En el código de .NET Framework 2.0, Visual Basic no admite el atributo DebuggerBrowsable. Esta limitación se ha quitado en las versiones más recientes de .NET Framework.
+En .NET Framework código 2,0, Visual Basic no admite el atributo DebuggerBrowsable. Esta limitación se ha quitado en las versiones más recientes de .NET Framework.
 
 ## <a name="visualizers"></a>Visualizadores
 
 Se puede escribir un visualizador para mostrar cualquier tipo de datos administrados. Para obtener más información, vea [Cómo: Escritura de un visualizador](/visualstudio/debugger/create-custom-visualizers-of-data).
 
+> [!NOTE]
+> En C++ el código, puede Agregar expansiones de tipos de datos personalizados mediante el marco Natvis, tal como se describe en [crear vistas personalizadas de C++ objetos en el depurador](/visualstudio/debugger/create-custom-views-of-native-objects).
+
 ## <a name="see-also"></a>Vea también
 
-- [Indicar al depurador qué muestra el uso del atributo DebuggerDisplay](../debugger/using-the-debuggerdisplay-attribute.md)
-- [Indicar al depurador qué tipo a se muestra el uso del atributo DebuggerTypeProxy](../debugger/using-debuggertypeproxy-attribute.md)
+- [Indicar al depurador qué Mostrar mediante el atributo DebuggerDisplay](../debugger/using-the-debuggerdisplay-attribute.md)
+- [Indicar al depurador qué tipo debe mostrar mediante el atributo DebuggerTypeProxy](../debugger/using-debuggertypeproxy-attribute.md)
 - [Ventanas Inspección e Inspección rápida](../debugger/watch-and-quickwatch-windows.md)
 - [Mejorar la depuración con los atributos de visualización del depurador](/dotnet/framework/debug-trace-profile/enhancing-debugging-with-the-debugger-display-attributes)
