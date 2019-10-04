@@ -6,6 +6,8 @@
       href: what-is-debugging.md
     - name: Herramientas y técnicas de depuración
       href: write-better-code-with-visual-studio.md
+    - name: Búsqueda de la tarea de depuración
+      href: find-your-debugging-task.md
 - name: Guías de inicio rápido
   items:
     - name: Primer vistazo al depurador
@@ -236,7 +238,7 @@
                   href: visual-cpp-custom-visualizer-compatibility.md
             - name: Vistas personalizadas (administradas)
               items:
-                - name: Crear vistas personalizadas de objetos administrados
+                - name: Creación de vistas personalizadas de objetos
                   href: create-custom-views-of-dot-managed-objects.md
                 - name: Cómo indicar al depurador qué mostrar
                   href: using-the-debuggerdisplay-attribute.md
@@ -334,7 +336,7 @@
       items:
         - name: Depuración de aplicaciones multiproceso
           href: debug-multithreaded-applications-in-visual-studio.md
-        - name: Iniciarse en la depuración de aplicaciones multiproceso
+        - name: Introducción a la depuración de aplicaciones multiproceso
           href: get-started-debugging-multithreaded-apps.md
         - name: Herramientas para depurar procesos y subprocesos
           items:
@@ -352,9 +354,9 @@
               href: how-to-use-the-gpu-threads-window.md
         - name: Depurar varios procesos
           href: debug-multiple-processes.md
-        - name: 'Tutorial: Depurar con la ventana Subprocesos'
+        - name: Depurar con la ventana Subprocesos
           href: how-to-use-the-threads-window.md
-        - name: 'Tutorial: Depuración de una aplicación paralela'
+        - name: Depuración de una aplicación paralela
           href: walkthrough-debugging-a-parallel-application.md
         - name: Cambiar a otro subproceso durante la depuración
           href: how-to-switch-to-another-thread-while-debugging.md
