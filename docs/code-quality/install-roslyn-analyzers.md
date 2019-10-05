@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 284f33d9d7af885958ed13101e1449edc5c8f2be
-ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
+ms.openlocfilehash: a09c44962b2737407a3ce7274ccb9c9664908dcf
+ms.sourcegitcommit: 39a04f42d23597b70053686d7e927ba78f38a9a8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69551088"
+ms.lasthandoff: 10/05/2019
+ms.locfileid: "71974938"
 ---
 # <a name="install-net-compiler-platform-code-analyzers"></a>Instalar .NET Compiler Platform analizadores de código
 
@@ -26,14 +26,14 @@ Visual Studio incluye un conjunto básico de analizadores de .NET Compiler Platf
 
 1. Busque el paquete de analizador que desea instalar en www.nuget.org.
 
-   Por ejemplo, puede que desee [instalar los analizadores de Microsoft FxCop](install-fxcop-analyzers.md#to-install-fxcop-analyzers-as-a-nuget-package) para comprobar el código en busca de problemas de seguridad y rendimiento, entre otros. O bien, instale [StyleCopAnalyzers](https://www.nuget.org/packages/stylecop.analyzers/) para buscar problemas de estilo en el código base.
+   Por ejemplo, puede que desee [instalar los analizadores de Microsoft FxCop](install-fxcop-analyzers.md#nuget-package) para comprobar el código en busca de problemas de seguridad y rendimiento, entre otros. O bien, instale [StyleCopAnalyzers](https://www.nuget.org/packages/stylecop.analyzers/) para buscar problemas de estilo en el código base.
 
 2. Instale el paquete en Visual Studio, mediante la [consola del administrador de paquetes](/nuget/quickstart/install-and-use-a-package-in-visual-studio#package-manager-console) o la interfaz de usuario del administrador de [paquetes](/nuget/quickstart/install-and-use-a-package-in-visual-studio#package-manager-console).
 
    > [!NOTE]
    > La página www.nuget.org de cada paquete de analizador muestra el comando para pegar en la **consola del administrador de paquetes**. Hay incluso un botón práctico para copiar el texto en el portapapeles.
 
-   Los ensamblados del analizador se instalan y aparecen en **Explorador de soluciones** en**analizadores**de **referencias** > .
+   Los ensamblados del analizador se instalan y aparecen en **Explorador de soluciones** en **referencias** > **analizadores**.
 
 ## <a name="to-install-vsix-analyzers"></a>Para instalar analizadores VSIX
 
@@ -61,7 +61,7 @@ Visual Studio incluye un conjunto básico de analizadores de .NET Compiler Platf
 
 2. Expanda en **línea** en el panel izquierdo y, a continuación, seleccione **Visual Studio Marketplace**.
 
-3. En el cuadro de búsqueda, escriba el nombre de la extensión del analizador que desea instalar. Por ejemplo, puede que desee [instalar los analizadores de Microsoft FxCop](install-fxcop-analyzers.md#to-install-fxcop-analyzers-as-a-vsix) para comprobar el código en busca de problemas de seguridad y rendimiento, entre otros.
+3. En el cuadro de búsqueda, escriba el nombre de la extensión del analizador que desea instalar. Por ejemplo, puede que desee [instalar los analizadores de Microsoft FxCop](install-fxcop-analyzers.md#vsix) para comprobar el código en busca de problemas de seguridad y rendimiento, entre otros.
 
 4. Seleccione **Descargar**.
 
@@ -94,7 +94,7 @@ Si desea comprobar si la extensión está instalada, seleccione **extensiones** 
 ## <a name="next-steps"></a>Pasos siguientes
 
 > [!div class="nextstepaction"]
-> [Usar analizadores de código en Visual Studio](../code-quality/use-roslyn-analyzers.md)
+> [Uso de analizadores de código en Visual Studio](../code-quality/use-roslyn-analyzers.md)
 
 ## <a name="see-also"></a>Vea también
 

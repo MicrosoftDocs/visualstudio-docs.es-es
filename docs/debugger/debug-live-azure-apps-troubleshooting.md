@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1ee8633a9ad58981297f00338cd6c375c5cf721e
-ms.sourcegitcommit: ea182703e922c74725045afc251bcebac305068a
+ms.openlocfilehash: 27df4c097d829a4d28a77b9b1ad96eb389f4096c
+ms.sourcegitcommit: dc12a7cb66124596089f01d3e939027ae562ede9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71211243"
+ms.lasthandoff: 10/04/2019
+ms.locfileid: "71962940"
 ---
 # <a name="troubleshooting-and-known-issues-for-snapshot-debugging-in-visual-studio"></a>Solución de problemas y problemas conocidos de depuración de instantáneas en Visual Studio
 
@@ -34,7 +34,7 @@ Este error indica que la llamada de REST que emite Visual Studio a Azure usa una
 
 Siga estos pasos:
 
-* Asegúrese de que la cuenta de personalización de Visual Studio tiene permisos para la suscripción y el recurso de Azure a los que está asociando. Una manera rápida de determinar esto es comprobar si el recurso está disponible en el cuadro de diálogo de **depurar** > **adjuntar Snapshot Debugger..** . Recurso de Azure**Seleccione existente**o en Cloud Explorer.  >  > 
+* Asegúrese de que la cuenta de personalización de Visual Studio tiene permisos para la suscripción y el recurso de Azure a los que está asociando. Una manera rápida de determinarlo es comprobar si el recurso está disponible en el cuadro de diálogo de **Depuración** > **adjuntar Snapshot Debugger..** .  > **recurso de Azure** > **Seleccione existente**o en Cloud Explorer.
 * Si el error persiste, use uno de los canales de comentarios descritos en el principio de este artículo.
 
 ### <a name="403-forbidden"></a>(403) prohibido
@@ -54,7 +54,8 @@ Este error indica que el sitio web no se pudo encontrar en el servidor.
 Siga estos pasos:
 
 * Compruebe que tiene un sitio Web implementado y en ejecución en el App Service recurso al que está asociando.
-* Compruebe que el sitio está disponible en el\<recurso\>https://. azurewebsites.net
+* Compruebe que el sitio está disponible en https://@no__t -0resource\>.azurewebsites.net
+* Compruebe que la aplicación web personalizada que se está ejecutando correctamente no devuelve un código de estado 404 cuando se accede a él en https://@no__t -0resource\>.azurewebsites.net
 * Si el error persiste, use uno de los canales de comentarios descritos en el principio de este artículo.
 
 ### <a name="406-not-acceptable"></a>(406) no aceptable
@@ -63,7 +64,7 @@ Este error indica que el servidor no puede responder al tipo establecido en el e
 
 Siga estos pasos:
 
-* Compruebe que el sitio está disponible en el\<recurso\>https://. azurewebsites.net
+* Compruebe que el sitio está disponible en https://@no__t -0resource\>.azurewebsites.net
 * Compruebe que el sitio no se ha migrado a nuevas instancias. Snapshot Debugger usa la noción de ARRAffinity para enrutar las solicitudes a instancias específicas que pueden producir este error de forma intermitente.
 * Si el error persiste, use uno de los canales de comentarios descritos en el principio de este artículo.
 
@@ -156,11 +157,11 @@ Siga estos pasos:
 
 Visual Studio 2019 requiere una versión más reciente de la extensión de sitio Snapshot Debugger en el Azure App Service.  Esta versión no es compatible con la versión anterior de la extensión de sitio Snapshot Debugger utilizada por Visual Studio 2017.  Recibirá el siguiente error si intenta adjuntar el Snapshot Debugger en Visual Studio 2019 a una Azure App Service que se haya depurado previamente mediante el Snapshot Debugger en Visual Studio 2017:
 
-![Extensión de sitio Snapshot Debugger incompatible Visual Studio 2019](../debugger/media/snapshot-troubleshooting-incompatible-vs2019.png "Extensión de sitio Snapshot Debugger incompatible Visual Studio 2019")
+![Extensión de sitio Snapshot Debugger incompatible visual studio 2019](../debugger/media/snapshot-troubleshooting-incompatible-vs2019.png "incompatible Snapshot Debugger extensión de sitio Visual Studio 2019")
 
 Por el contrario, si usa Visual Studio 2017 para adjuntar el Snapshot Debugger a un Azure App Service que se ha depurado previamente mediante el Snapshot Debugger en Visual Studio 2019, obtendrá el siguiente error:
 
-![Extensión de sitio Snapshot Debugger incompatible Visual Studio 2017](../debugger/media/snapshot-troubleshooting-incompatible-vs2017.png "Extensión de sitio Snapshot Debugger incompatible Visual Studio 2017")
+![Extensión de sitio Snapshot Debugger incompatible visual studio 2017](../debugger/media/snapshot-troubleshooting-incompatible-vs2017.png "incompatible Snapshot Debugger extensión de sitio Visual Studio 2017")
 
 Para solucionar este problema, elimine la siguiente configuración de la aplicación en Azure Portal y vuelva a adjuntar Snapshot Debugger:
 
@@ -189,7 +190,7 @@ Los registros del agente se pueden encontrar en las ubicaciones siguientes:
 Los registros de instrumentación pueden encontrarse en las siguientes ubicaciones:
 
 - App Services:
-  - El registro de errores se envía automáticamente a D:\Home\LogFiles\eventlog.XML, los eventos `<Provider Name="Instrumentation Engine" />` se marcan con o "puntos de interrupción de producción".
+  - El registro de errores se envía automáticamente a D:\Home\LogFiles\eventlog.xml, los eventos se marcan con `<Provider Name="Instrumentation Engine" />` o "puntos de interrupción de producción".
 - VM/VMSS:
   - Inicie sesión en la máquina virtual y abra el Visor de eventos.
   - Abra la vista siguiente: *Registros de Windows > aplicación*.

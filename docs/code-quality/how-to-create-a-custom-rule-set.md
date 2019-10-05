@@ -11,74 +11,94 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f2f642ea8e41e4a9ccf2b35f432df528fc5e81d0
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 4b52bb573b9a98c5a797f67cdbd4608f8b8636da
+ms.sourcegitcommit: 39a04f42d23597b70053686d7e927ba78f38a9a8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65676557"
+ms.lasthandoff: 10/05/2019
+ms.locfileid: "71975100"
 ---
-# <a name="customize-a-rule-set"></a>Personalizar un conjunto de reglas
+# <a name="customize-a-rule-set"></a>Personalización de un conjunto de reglas
 
-Puede crear una regla personalizada establecida para satisfacer las necesidades concretas del proyecto para el análisis de código.
+Puede crear un conjunto de reglas personalizado para satisfacer las necesidades específicas del proyecto para el análisis de código.
 
-## <a name="create-a-custom-rule-set-from-an-existing-rule-set"></a>Crear una regla personalizada que se establece desde un conjunto de reglas existente
+## <a name="create-a-custom-rule-set-from-an-existing-rule-set"></a>Crear un conjunto de reglas personalizado a partir de un conjunto de reglas existente
 
-Para crear una regla personalizada conjunto, puede abrir una regla integrada establecida en el **editor de conjunto de reglas**. Desde allí, puede agregar o quitar reglas concretas, y puede cambiar la acción que se produce cuando se infringe una regla&mdash;por ejemplo, mostrar una advertencia o un error.
+Para crear un conjunto de reglas personalizado, puede abrir un conjunto de reglas integrado en el **Editor de conjuntos de reglas**. Desde allí, puede Agregar o quitar reglas específicas y puede cambiar la acción que se produce cuando se infringe una regla @ no__t-0for ejemplo, mostrar una advertencia o un error.
 
-1. En **el Explorador de soluciones**, haga clic en el proyecto y, a continuación, seleccione **propiedades**.
+1. En **Explorador de soluciones**, haga clic con el botón secundario en el proyecto y seleccione **propiedades**.
 
-2. En el **propiedades** páginas, seleccionadas el **análisis de código** ficha.
+2. En las páginas de **propiedades** , seleccione la pestaña **análisis de código** .
 
-3. En el **ejecutar este conjunto de reglas** lista desplegable, realice una de las siguientes acciones:
+::: moniker range="vs-2017"
+
+3. En la lista desplegable **ejecutar este conjunto de reglas** , realice una de las acciones siguientes:
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+3. En la lista desplegable **reglas activas** , realice una de las acciones siguientes:
+
+::: moniker-end
 
    - Seleccione el conjunto de reglas que desee personalizar.
 
      \- o -
 
-   - Seleccione  **\<Examinar... >** especificar una regla existente conjunto que no está en la lista.
+   - Seleccione **\<Browse >** para especificar un conjunto de reglas existente que no esté en la lista.
 
-4. Seleccione **abierto** para mostrar las reglas en el editor de conjunto de reglas.
+4. Seleccione **abrir** para mostrar las reglas en el editor de conjuntos de reglas.
 
 > [!NOTE]
-> Si tiene un proyecto .NET Core o .NET Standard, el proceso es un poco diferente porque no hay ningún **análisis de código** ficha de propiedades. Siga los pasos para [copiar una regla predefinida establecido en el proyecto y establézcalo como el conjunto de reglas activo](analyzer-rule-sets.md). Después de haber copiado a través de un conjunto de reglas, puede [editar en el editor de conjunto de reglas de Visual Studio](working-in-the-code-analysis-rule-set-editor.md) , ábralo desde **el Explorador de soluciones**.
+> Si tiene un proyecto de .NET Core o .NET Standard, el proceso es un poco diferente porque no hay ninguna pestaña de propiedades de **análisis de código** . Siga los pasos para [copiar un conjunto de reglas predefinido en el proyecto y establézcalo como conjunto de reglas activo](analyzer-rule-sets.md). Después de copiar un conjunto de reglas, puede [editarlo en el editor de conjuntos de reglas de Visual Studio](working-in-the-code-analysis-rule-set-editor.md) abriéndolo desde **Explorador de soluciones**.
 
 ## <a name="create-a-new-rule-set"></a>Crear un nuevo conjunto de reglas
 
-Puede crear un nuevo archivo de conjunto de reglas desde el **nuevo archivo** cuadro de diálogo:
+Puede crear un nuevo archivo de conjunto de reglas desde el cuadro de diálogo **nuevo archivo** :
 
-1. Seleccione **archivo** > **New** > **archivo**, o bien presione **Ctrl**+**N**.
+1. Seleccione el **archivo** > **nuevo**@no__t-**3,** o presione **Ctrl**+**N**.
 
-2. En el **nuevo archivo** cuadro de diálogo, seleccione el **General** categoría de la izquierda y, a continuación, seleccione **conjunto de reglas de análisis de código**.
+2. En el cuadro de diálogo **nuevo archivo** , seleccione la categoría **General** de la izquierda y, a continuación, seleccione **conjunto de reglas de análisis de código**.
 
-3. Seleccione **abierto**.
+3. Seleccione **abrir**.
 
-   El nuevo *.ruleset* archivo se abre en el editor de conjunto de reglas.
+   El nuevo archivo *. ruleset* se abre en el editor de conjuntos de reglas.
 
-## <a name="create-a-custom-rule-set-from-multiple-rule-sets"></a>Crear un conjunto de varios conjuntos de reglas de reglas personalizadas
+## <a name="create-a-custom-rule-set-from-multiple-rule-sets"></a>Creación de un conjunto de reglas personalizado a partir de varios conjuntos de reglas
 
 > [!NOTE]
-> El procedimiento siguiente no es aplicable a proyectos de .NET Core, que no tienen un **análisis de código** ficha de propiedades.
+> El procedimiento siguiente no se aplica a los proyectos de .NET Core, que no tienen una pestaña de propiedades de **análisis de código** .
 
-1. En **el Explorador de soluciones**, haga clic en el proyecto y, a continuación, seleccione **propiedades**.
+1. En **Explorador de soluciones**, haga clic con el botón secundario en el proyecto y seleccione **propiedades**.
 
-2. En el **propiedades** páginas, seleccionadas el **análisis de código** ficha.
+2. En las páginas de **propiedades** , seleccione la pestaña **análisis de código** .
 
-3. Seleccione  **\<elegir varios conjuntos de reglas... >** desde **ejecutar este conjunto de reglas**.
+::: moniker range="vs-2017"
 
-4. En el **agregar o quitar conjuntos de reglas** cuadro de diálogo, seleccione los conjuntos de reglas desea incluir en el nuevo conjunto de reglas.
+3. Seleccione **@no__t 1Choose varios conjuntos de reglas >** de **ejecutar este conjunto de reglas**.
 
-   ![Agregar o quitar el cuadro de diálogo de conjuntos de reglas](media/add-remove-rule-sets.png)
+::: moniker-end
 
-5. Seleccione **Guardar como**, escriba un nombre para el *.ruleset* de archivo y, a continuación, seleccione **guardar**.
+::: moniker range=">=vs-2019"
 
-   El nuevo conjunto de reglas está seleccionado en el **ejecutar este conjunto de reglas** lista.
+3. Seleccione **@no__t 1Choose varios conjuntos de reglas >** de **las reglas activas**.
 
-6. Seleccione **abrir** para abrir la nueva regla se establece en el editor de conjunto de reglas.
+::: moniker-end
+
+4. En el cuadro de diálogo **Agregar o quitar conjuntos de reglas** , seleccione los conjuntos de reglas que desea incluir en el nuevo conjunto de reglas.
+
+   ![Cuadro de diálogo Agregar o quitar conjuntos de reglas](media/add-remove-rule-sets.png)
+
+5. Seleccione **Guardar como**, escriba un nombre para el archivo *. ruleset* y, a continuación, seleccione **Guardar**.
+
+   El nuevo conjunto de reglas se selecciona en la lista **ejecutar este conjunto de reglas** .
+
+6. Seleccione **abrir** para abrir el conjunto de reglas nuevo en el editor de conjuntos de reglas.
 
 ## <a name="rule-precedence"></a>Prioridad de la regla
 
-- Si la misma regla está activa de dos o más veces en un conjunto de reglas con diferentes niveles de gravedad, el compilador genera un error. Por ejemplo:
+- Si se muestra la misma regla dos o más veces en un conjunto de reglas con distintos niveles de gravedad, el compilador genera un error. Por ejemplo:
 
    ```xml
    <RuleSet Name="Rules for ClassLibrary21" Description="Code analysis rules for ClassLibrary21.csproj." ToolsVersion="15.0">
@@ -89,11 +109,11 @@ Puede crear un nuevo archivo de conjunto de reglas desde el **nuevo archivo** cu
    </RuleSet>
    ```
 
-- Si la misma regla está activa de dos o más veces en un conjunto de reglas con el *mismo* gravedad, es posible que vea la advertencia siguiente en el **lista de errores**:
+- Si se muestra la misma regla dos o más veces en un conjunto de reglas con la *misma* gravedad, puede ver la siguiente advertencia en el **lista de errores**:
 
-   **CA0063: No se pudo cargar el archivo de conjunto de reglas '\[su] .ruleset ' o uno de sus reglas dependientes conjunto de archivos. El archivo no se ajusta al esquema del conjunto de reglas.**
+   @NO__T 0CA0063: No se pudo cargar el archivo de conjunto de reglas ' \[your]. ruleset ' o uno de sus archivos de conjunto de reglas dependientes. El archivo no se ajusta al esquema del conjunto de reglas. **
 
-- Si el conjunto de reglas incluye un conjunto mediante el uso de reglas secundarios una **Include** etiqueta y los conjuntos de reglas secundarios y primarios tanto la lista de la misma regla pero con diferentes niveles de gravedad, a continuación, la gravedad en el conjunto de reglas primario tiene prioridad. Por ejemplo:
+- Si el conjunto de reglas incluye un conjunto de reglas secundarias mediante una etiqueta **include** , y la regla secundaria y primaria establece ambas listas en la misma regla pero con diferentes gravedades, la gravedad del conjunto de reglas primario tiene prioridad. Por ejemplo:
 
    ```xml
    <!-- Parent rule set -->
@@ -116,16 +136,16 @@ Puede crear un nuevo archivo de conjunto de reglas desde el **nuevo archivo** cu
 
 ## <a name="name-and-description"></a>Nombre y descripción
 
-Para cambiar el nombre para mostrar de un conjunto de reglas que está abierto en el editor, abra el **propiedades** ventana seleccionando **vista** > **ventana propiedades** en la barra de menús. Escriba el nombre para mostrar en el **nombre** cuadro. También puede escribir una descripción para el conjunto de reglas.
+Para cambiar el nombre para mostrar de un conjunto de reglas que está abierto en el editor, abra la ventana **propiedades** seleccionando la**ventana de propiedades** **Ver** >  en la barra de menús. Escriba el nombre para mostrar en el cuadro **nombre** . También puede escribir una descripción para el conjunto de reglas.
 
 ## <a name="next-steps"></a>Pasos siguientes
 
-Ahora que ha configurado una regla, el paso siguiente es personalizar las reglas agregando o quitando reglas o modificando la gravedad de las infracciones de reglas.
+Ahora que tiene un conjunto de reglas, el siguiente paso es personalizar las reglas mediante la adición o eliminación de reglas o la modificación de la gravedad de las infracciones de las reglas.
 
 > [!div class="nextstepaction"]
-> [Modificar las reglas en el editor de conjunto de reglas](../code-quality/working-in-the-code-analysis-rule-set-editor.md)
+> [Modificar reglas en el editor de conjuntos de reglas](../code-quality/working-in-the-code-analysis-rule-set-editor.md)
 
 ## <a name="see-also"></a>Vea también
 
-- [Cómo: Configurar análisis de código para un proyecto de código administrado](../code-quality/how-to-configure-code-analysis-for-a-managed-code-project.md)
+- [Cómo: Configurar el análisis de código para un proyecto de código administrado @ no__t-0
 - [Referencia del conjunto de reglas Análisis de código](../code-quality/rule-set-reference.md)

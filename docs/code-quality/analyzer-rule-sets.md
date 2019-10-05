@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: da1567dd088ecc060f031e59827ff33024e9e955
-ms.sourcegitcommit: 88f576ac32af31613c1a10c1548275e1ce029f4f
+ms.openlocfilehash: 313b578743fd734da3354989a8cee16022779242
+ms.sourcegitcommit: 39a04f42d23597b70053686d7e927ba78f38a9a8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/23/2019
-ms.locfileid: "71185955"
+ms.lasthandoff: 10/05/2019
+ms.locfileid: "71974705"
 ---
 # <a name="rule-sets-for-analyzer-packages"></a>Conjuntos de reglas para paquetes de analizador
 
@@ -36,7 +36,7 @@ Si va a migrar desde el análisis de "FxCop" heredado al análisis de código ba
 
 ## <a name="use-analyzer-package-rule-sets"></a>Usar conjuntos de reglas de paquetes de analizador
 
-Después de [instalar un paquete del analizador de NuGet](install-roslyn-analyzers.md), busque el conjunto de reglas predefinidas en su directorio de *conjuntos* de reglas. Por ejemplo, si hace referencia al paquete `Microsoft.CodeAnalysis.FxCopAnalyzers` de analizador, puede encontrar su directorio de *conjuntos* de las *versiones% userprofile\\%.\\\<nuget\packages\microsoft.CodeAnalysis.fxcopanalyzers versión \rulesets\>* . Desde ahí, copie uno o más de los conjuntos de elementos y péguelos en el directorio que contiene el proyecto de Visual Studio o directamente en **Explorador de soluciones**.
+Después de [instalar un paquete del analizador de NuGet](install-roslyn-analyzers.md), busque el conjunto de reglas predefinidas en su directorio de *conjuntos* de reglas. Por ejemplo, si hizo referencia al paquete del analizador de `Microsoft.CodeAnalysis.FxCopAnalyzers`, puede encontrar su directorio de *conjuntos* de ayuda en *% userprofile% \\. nuget\packages\microsoft.CodeAnalysis.fxcopanalyzers @ no__t-4 @ no__t-5version @ no__t-6\rulesets*. Desde ahí, copie uno o más de los conjuntos de elementos y péguelos en el directorio que contiene el proyecto de Visual Studio o directamente en **Explorador de soluciones**.
 
 También puede [personalizar un conjunto de reglas predefinidas según](how-to-create-a-custom-rule-set.md) sus preferencias. Por ejemplo, puede cambiar la gravedad de una o varias reglas para que las infracciones aparezcan como errores o advertencias en el **lista de errores**.
 
@@ -46,7 +46,7 @@ El proceso para establecer el conjunto de reglas activo es un poco diferente en 
 
 ### <a name="net-core"></a>Núcleo de .NET
 
-Para que un conjunto de reglas establezca el conjunto de reglas activo para el análisis en .NET Core o en proyectos de .NET Standard, agregue manualmente la propiedad **CodeAnalysisRuleSet** al archivo de proyecto. Por ejemplo, el fragmento de código siguiente `HelloWorld.ruleset` establece como el conjunto de reglas activo.
+Para que un conjunto de reglas establezca el conjunto de reglas activo para el análisis en .NET Core o en proyectos de .NET Standard, agregue manualmente la propiedad **CodeAnalysisRuleSet** al archivo de proyecto. Por ejemplo, el siguiente fragmento de código establece `HelloWorld.ruleset` como el conjunto de reglas activo.
 
 ```xml
 <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
@@ -57,11 +57,29 @@ Para que un conjunto de reglas establezca el conjunto de reglas activo para el a
 
 ### <a name="net-framework"></a>.NET Framework
 
-Para que un conjunto de reglas establezca el conjunto de reglas activo para el análisis en .NET Framework proyectos, haga clic con el botón derecho en el proyecto en **Explorador de soluciones** y elija **propiedades**. En las páginas de propiedades del proyecto, seleccione la pestaña **análisis de código** . En **ejecutar este conjunto de reglas**, seleccione **examinar**y, a continuación, seleccione el conjunto de reglas que desea copiar en el directorio del proyecto. Ahora solo verá infracciones de reglas para las reglas que están habilitadas en el conjunto de reglas seleccionado.
+Para que un conjunto de reglas establezca el conjunto de reglas activo para el análisis en .NET Framework proyectos:
+
+- Haga clic con el botón derecho en el proyecto en **Explorador de soluciones** y elija **propiedades**.
+
+- En las páginas de propiedades del proyecto, seleccione la pestaña **análisis de código** .
+
+::: moniker range="vs-2017"
+
+- En **ejecutar este conjunto de reglas**, seleccione **examinar**y, a continuación, seleccione el conjunto de reglas que desea copiar en el directorio del proyecto.
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+- En **reglas activas**, seleccione **examinar**y, a continuación, seleccione el conjunto de reglas que desea copiar en el directorio del proyecto.
+
+::: moniker-end
+
+   Ahora solo verá infracciones de reglas para las reglas que están habilitadas en el conjunto de reglas seleccionado.
 
 ## <a name="available-rule-sets"></a>Conjuntos de reglas disponibles
 
-Los conjuntos de reglas del analizador predefinido incluyen tres conjuntos de reglas que afectan a todas&mdash;las reglas del paquete que los habilita, uno que los deshabilita todos, y otro que respeta la configuración de la gravedad y habilitación predeterminada de cada regla:
+Los conjuntos de reglas del analizador predefinido incluyen tres conjuntos de reglas que afectan a todas las reglas del paquete @ no__t-0one que los habilita todos, uno que los deshabilita todos, y otro que respeta la configuración de la gravedad y habilitación predeterminada de cada regla:
 
 - AllRulesEnabled.ruleset
 - AllRulesDisabled.ruleset

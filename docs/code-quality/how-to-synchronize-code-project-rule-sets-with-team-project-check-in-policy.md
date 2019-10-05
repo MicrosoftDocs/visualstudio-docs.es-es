@@ -1,5 +1,5 @@
 ---
-title: Conjuntos de reglas de proyecto de sincronización con la directiva de protección
+title: Sincronizar conjuntos de reglas del proyecto con la Directiva de inserción en el repositorio
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -10,57 +10,65 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 80d13afe27eab28c88d2513b6c8be986ab1c960a
-ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.openlocfilehash: 3a35ba1b9d54507883882fbe62c0533805882560
+ms.sourcegitcommit: 39a04f42d23597b70053686d7e927ba78f38a9a8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "66260846"
+ms.lasthandoff: 10/05/2019
+ms.locfileid: "71975054"
 ---
-# <a name="how-to-synchronize-code-project-rule-sets-with-an-azure-devops-project-check-in-policy"></a>Procedimiento Sincronizar conjuntos de reglas del proyecto de código con una directiva de protección de Azure DevOps Projects
+# <a name="how-to-synchronize-code-project-rule-sets-with-an-azure-devops-project-check-in-policy"></a>Procedimiento Sincronizar conjuntos de reglas del proyecto de código con una directiva de inserción en el repositorio del proyecto DevOps de Azure
 
-Sincronizar la configuración de análisis de código para proyectos de código a la directiva de protección para el proyecto de DevOps de Azure mediante la especificación de un conjunto de reglas que contenga al menos las reglas que se especifican en el conjunto de reglas para la directiva de protección. El responsable de desarrollo puede informar a los que el nombre y la ubicación de la regla establecida para la directiva de protección. Puede usar una de las opciones siguientes para asegurarse de que el análisis de código para el proyecto usa el conjunto correcto de reglas:
+Puede sincronizar la configuración de análisis de código para los proyectos de código con la Directiva de protección del proyecto DevOps de Azure especificando un conjunto de reglas que contenga al menos las reglas que se especifican en el conjunto de reglas para la Directiva de protección. El responsable de desarrollo puede informarle del nombre y la ubicación del conjunto de reglas de la Directiva de inserción en el repositorio. Puede usar una de las siguientes opciones para asegurarse de que el análisis de código para el proyecto utiliza el conjunto de reglas correcto:
 
-- Si la directiva de protección usa uno de los conjuntos de reglas integrados de Microsoft, abra el cuadro de diálogo de propiedades para el proyecto de código, mostrar la página de análisis de código y seleccione la regla se establece en la página de análisis de código de la configuración del proyecto de código. Lo conjuntos de reglas estándar se instalan automáticamente con Visual Studio de Microsoft se establecen en solo lectura y no debe editarse. Si no se puede editar los conjuntos de reglas, se garantiza que las reglas de la directiva y los conjuntos de reglas local coinciden.
+- Si la Directiva de inserción en el repositorio usa uno de los conjuntos de reglas integrados de Microsoft, abra el cuadro de diálogo Propiedades del proyecto de código, muestre la página Análisis de código y seleccione el conjunto de reglas. Los conjuntos de reglas estándar de Microsoft se instalan automáticamente con Visual Studio están configurados como de solo lectura y no se deben modificar. Si no se editan los conjuntos de reglas, se garantiza que las reglas de los conjuntos de reglas locales y de directiva coinciden.
 
-- Si la directiva de protección usa un conjunto de reglas personalizado, realizar una operación get en el archivo de conjunto de reglas de control de versiones para crear una copia local. A continuación, especificar esa ubicación local en la configuración de análisis de código para el proyecto de código. Se garantiza que las reglas de coincidencia si el conjunto de reglas para la directiva de protección está actualizada.
+- Si la Directiva de protección utiliza un conjunto de reglas personalizado, realice una operación get en el archivo de conjunto de reglas en el control de versiones para crear una copia local. Después, especifique la ubicación local en la configuración de análisis de código para el proyecto de código. Se garantiza que las reglas coinciden si el conjunto de reglas de la Directiva de inserción en el repositorio está actualizado.
 
-     Si asigna la ubicación del control de versiones en una carpeta local que se encuentra en la misma relación con la raíz del proyecto de DevOps de Azure como el proyecto de código, la ubicación de la regla se establece mediante el uso de una ruta de acceso relativa. La ruta de acceso relativa, se garantiza que la configuración del proyecto para el análisis de código se puede mover a otros equipos.
+     Si asigna la ubicación del control de versiones a una carpeta local que está en la misma relación con la raíz del proyecto DevOps de Azure como proyecto de código, la ubicación de la regla se establece mediante una ruta de acceso relativa. La ruta de acceso relativa garantiza que la configuración del proyecto de código para el análisis de código se puede pasar a otros equipos.
 
-- Personalizar una copia de la regla establecida para la directiva de protección para un proyecto de código. Asegúrese de que el nuevo conjunto de reglas contiene todas las reglas de la directiva de protección y cualquier otra regla que se va a incluir. Debe asegurarse de que el conjunto de reglas incluye todas las reglas en el conjunto de reglas para la directiva de protección.
+- Personalizar una copia del conjunto de reglas para la Directiva de protección de un proyecto de código. Asegúrese de que el nuevo conjunto de reglas contiene todas las reglas de la Directiva de inserción en el repositorio y cualquier otra regla que desee incluir. Debe asegurarse de que el conjunto de reglas incluye todas las reglas del conjunto de reglas para la Directiva de inserción en el repositorio.
 
-## <a name="to-specify-a-microsoft-standard-rule-set"></a>Para especificar una regla estándar de Microsoft del conjunto
+## <a name="to-specify-a-microsoft-standard-rule-set"></a>Para especificar un conjunto de reglas estándar de Microsoft
 
 1. En **el Explorador de soluciones**, haga clic en el proyecto de código y, a continuación, haga clic en **propiedades**.
 
 2. Haga clic en **análisis de código**.
 
-3. En el **ejecutar este conjunto de reglas** lista, haga clic en el conjunto de reglas de directiva de protección.
+::: moniker range="vs-2017"
+
+3. En la lista **ejecutar este conjunto de reglas** , seleccione el conjunto de reglas de la Directiva de inserción en el repositorio.
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+3. En la lista **reglas activas** , seleccione el conjunto de reglas de la Directiva de inserción en el repositorio.
+
+::: moniker-end
 
 ## <a name="to-specify-a-custom-check-in-policy-rule-set"></a>Para especificar un conjunto de reglas de directiva de protección personalizada
 
-1. Si es necesario, realice una operación get en el archivo de conjunto de reglas que especifica la directiva de protección.
+1. Si es necesario, realice una operación get en el archivo de conjunto de reglas que especifica la Directiva de inserción en el repositorio.
 
 2. En **el Explorador de soluciones**, haga clic en el proyecto de código y, a continuación, haga clic en **propiedades**.
 
 3. Haga clic en **análisis de código**.
 
-4. En el **ejecutar este conjunto de reglas** lista, haga clic en  **\<Examinar... >** .
+::: moniker range="vs-2017"
 
-5. En el **abierto** diálogo cuadro, especifique el archivo de conjunto de la regla de directiva de protección.
+4. En la lista **ejecutar este conjunto de reglas** , haga clic en **\<Browse >** .
 
-## <a name="to-create-a-custom-rule-set-for-a-code-project"></a>Para crear una regla personalizada establecido para un proyecto de código
+::: moniker-end
 
-1. Siga uno de los procedimientos anteriores de este tema para seleccionar la directiva de protección de Azure DevOps Projects en la página de análisis de código del cuadro de diálogo de configuración de proyecto.
+::: moniker range=">=vs-2019"
 
-2. Haga clic en **Abrir**.
+4. En la lista **reglas activas** , haga clic en **\<Browse >** .
 
-3. Agregar o quitar reglas utilizando el [editor de conjunto de reglas](../code-quality/working-in-the-code-analysis-rule-set-editor.md).
+::: moniker-end
 
-4. Guardar la regla modificada establecida en un archivo .ruleset en el equipo local o en una ruta de acceso UNC.
+5. En el cuadro de diálogo **abrir** , especifique el archivo de conjunto de reglas de la Directiva de protección.
 
-5. Abra el cuadro de diálogo de propiedades para el proyecto de código y mostrar el **análisis de código** página.
+## <a name="to-create-a-custom-rule-set-for-a-code-project"></a>Para crear un conjunto de reglas personalizado para un proyecto de código
 
-6. En el **ejecutar este conjunto de reglas** lista, haga clic en  **\<Examinar... >** .
-
-7. En el **abierto** diálogo cuadro, especifique el archivo de conjunto de la regla.
+Para obtener información sobre cómo crear un conjunto de reglas personalizado, vea [personalizar un conjunto de reglas](how-to-create-a-custom-rule-set.md).

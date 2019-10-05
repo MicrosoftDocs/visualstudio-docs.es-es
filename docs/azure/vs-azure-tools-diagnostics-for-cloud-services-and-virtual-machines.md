@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.workload: azure-vs
 ms.date: 06/28/2018
 ms.author: mikejo
-ms.openlocfilehash: 0b212ee44809f925bb4d2d78efc972a4986602a5
-ms.sourcegitcommit: 13ab9a5ab039b070b9cd9251d0b83dd216477203
-ms.translationtype: HT
+ms.openlocfilehash: 911a366aa69cf0a45cb030bb83017895500ad32f
+ms.sourcegitcommit: dc12a7cb66124596089f01d3e939027ae562ede9
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66177327"
+ms.lasthandoff: 10/04/2019
+ms.locfileid: "71962974"
 ---
 # <a name="set-up-diagnostics-for-azure-cloud-services-and-virtual-machines"></a>Configuración de diagnósticos para Azure Cloud Services y máquinas virtuales
 Cuando tenga que solucionar problemas de un servicio en la nube o una máquina virtual de Azure, puede usar Visual Studio para configurar más fácilmente Azure Diagnostics. Diagnostics captura los datos del sistema y los datos de registro en las máquinas virtuales y las instancias de máquina virtual que ejecutan el servicio en la nube. Los datos de Diagnostics se transfieren a la cuenta de almacenamiento que elija. Para más información sobre el registro de diagnósticos en Azure, consulte [Habilitación del registro de diagnóstico para Web Apps en Azure App Service](/azure/app-service/web-sites-enable-diagnostic-log).
@@ -83,7 +83,7 @@ En Visual Studio, puede recopilar datos de diagnóstico para roles que se ejecut
 5. Para ver el cuadro de diálogo **Configuración de diagnóstico**, seleccione **Configurar**. Excepto para **General** y **Directorios de registro**, cada pestaña representa un origen de datos de diagnóstico que puede recopilar. La pestaña **General** predeterminada ofrece las siguientes opciones de recopilación de datos de diagnóstico: **Solo errores**, **Toda la información** y **Plan personalizado**. La opción predeterminada **Solo errores** usa la cantidad mínima de almacenamiento porque no transfiere advertencias ni mensajes de seguimiento. La opción **Toda la información** transfiere la mayor parte de la información, usa el máximo almacenamiento y, por tanto, es la opción más cara.
 
    > [!NOTE]
-   > El tamaño mínimo admitido de "Cuota de disco en MB" es de 4 GB. Sin embargo, si va a recopilar volcados de memoria, aumente a un valor superior, como 10 GB.
+   > El tamaño mínimo admitido para "cuota de disco en MB" es de 50 MB y el tamaño predeterminado es 4 GB. Sin embargo, si va a recopilar volcados de memoria, aumente a un valor superior, como 10 GB.
    >
 
     ![Habilitar configuración y diagnóstico de Azure](./media/vs-azure-tools-diagnostics-for-cloud-services-and-virtual-machines/IC758144.png)
