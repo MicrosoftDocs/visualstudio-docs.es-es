@@ -1,6 +1,6 @@
 ---
 title: 'Inicio rápido: Análisis de código para C/C++'
-description: Ejecutar el análisis estático en C++ código en Visual Studio para detectar problemas de codificación comunes y los defectos.
+description: Ejecute análisis estáticos C++ en el código de Visual Studio para detectar problemas y defectos de codificación comunes.
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +11,12 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 039ffcd1717dba8ec3c76ae1ca4a691d60851ee5
-ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
+ms.openlocfilehash: c3132db62de6f2775a739adb82b24c759e4767dc
+ms.sourcegitcommit: 39a04f42d23597b70053686d7e927ba78f38a9a8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65226071"
+ms.lasthandoff: 10/05/2019
+ms.locfileid: "71974901"
 ---
 # <a name="quickstart-code-analysis-for-cc"></a>Inicio rápido: Análisis de código para C/C++
 
@@ -24,24 +24,24 @@ Se puede mejorar la calidad de la aplicación si se analiza con regularidad el c
 
 ## <a name="configure-rule-sets-for-a-project"></a>Configurar conjuntos de reglas para un proyecto
 
-1. En **el Explorador de soluciones**, abra el menú contextual para el nombre del proyecto y, a continuación, elija **propiedades**.
+1. En **Explorador de soluciones**, abra el menú contextual del nombre del proyecto y, a continuación, elija **propiedades**.
 
 2. Los pasos siguientes son opcionales:
 
-    1. En el **configuración** y **plataforma** listas, elija la plataforma de destino y de configuración de compilación.
+    1. En las listas **configuración** y **plataforma** , elija la configuración de compilación y la plataforma de destino.
 
     2. De forma predeterminada, el análisis de código no notifica las advertencias de código generadas automáticamente por herramientas externas. Para ver las advertencias de código generado, desactive la **Suprimir resultados del código generado** casilla de verificación.
 
         > [!NOTE]
         > Esta opción no suprime los errores ni las advertencias del análisis de código generado cuando aparecen en formularios y plantillas. Puede ver y mantener el código fuente de un formulario o una plantilla.
 
-3. Para ejecutar análisis de código cada vez que se compila el proyecto con la configuración seleccionada, seleccione el **Habilitar análisis de código para C/C ++ al compilar** casilla de verificación. También puede ejecutar análisis de código si abre el **analizar** menú y, a continuación, elija **ejecutar análisis de código en** *ProjectName*.
+3. Para ejecutar el análisis de código cada vez que se compila el proyecto con la configuración seleccionada, active la casilla **Habilitar análisisC++ de código para C/al compilar** . También puede ejecutar el análisis de código manualmente si abre el menú **analizar** y, a continuación, elige **Ejecutar Análisis de código en** *projectname*.
 
 4. En el **ejecutar este conjunto de reglas** lista, realice una de las siguientes acciones:
 
     - Elija el conjunto de reglas que desee usar.
 
-    - Elija  **\<Examinar... >** especificar una regla personalizada existente conjunto que no está en la lista.
+    - Elija **\<Browse >** para especificar un conjunto de reglas personalizado existente que no esté en la lista.
 
     - Definir un [conjunto de reglas personalizado](../code-quality/how-to-create-a-custom-rule-set.md).
 
@@ -66,21 +66,21 @@ Para ejecutar el análisis de código en proyecto:
 
 1. En el Explorador de soluciones, elija el nombre del proyecto.
 
-2. En el **compilar** menú, elija **ejecutar análisis de código en** *nombre del proyecto*.
+2. En el menú **compilar** , elija **Ejecutar Análisis de código en** *nombre del proyecto*.
 
-   La solución o proyecto se compila y se ejecuta el análisis de código. Los resultados aparecen en la lista de errores.
+   La solución o proyecto se compila y se ejecuta el análisis de código. Los resultados aparecen en el Lista de errores.
 
 ## <a name="analyze-and-resolve-code-analysis-warnings"></a>Analizar y resolver las advertencias del análisis de código
 
-Para analizar una advertencia concreta, elija el título de la advertencia en la lista de errores. La advertencia se expande para mostrar la información adicional sobre el problema. Cuando es posible, el análisis de código muestra los números de línea y la lógica de análisis que condujeron a la advertencia. Para obtener información detallada sobre la advertencia, incluidas las soluciones posibles para el problema, elija el identificador de advertencia para mostrar el tema de ayuda en línea correspondiente.
+Para analizar una advertencia concreta, elija el título de la advertencia en el Lista de errores. La advertencia se expande para mostrar la información adicional sobre el problema. Cuando es posible, el análisis de código muestra los números de línea y la lógica de análisis que condujeron a la advertencia. Para obtener información detallada acerca de la advertencia, incluidas las posibles soluciones para el problema, elija el identificador de advertencia para mostrar su correspondiente tema de ayuda en línea.
 
-Cuando se selecciona una advertencia, se resalta la línea de código que produjo la advertencia en el editor de código de Visual Studio.
+Al seleccionar una advertencia, la línea de código que causó la advertencia se resalta en el editor de código de Visual Studio.
 
-Cuando haya entendido el problema, podrá resolverlo en el código. A continuación, vuelva a ejecutar el análisis de código para asegurarse de que ya no aparece la advertencia en la lista de errores y que la corrección no genera nuevas advertencias.
+Cuando haya entendido el problema, podrá resolverlo en el código. Después, vuelva a ejecutar el análisis de código para asegurarse de que la advertencia ya no aparece en el Lista de errores y que la corrección no ha generado ninguna advertencia nueva.
 
 ## <a name="suppress-code-analysis-warnings"></a>Suprimir advertencias de análisis de código
 
-A veces, uno decide no corregir una advertencia del análisis de código. Puede ser que para resolverla se necesita un esfuerzo de codificación excesivo en proporción con la probabilidad de que el problema surja en las implementaciones reales del código. O puede que consideres que el análisis que ha dado lugar a la advertencia no es apropiado para ese contexto concreto. Puede suprimir advertencias individuales de modo que ya no aparezcan en la lista de errores.
+A veces, uno decide no corregir una advertencia del análisis de código. Puede ser que para resolverla se necesita un esfuerzo de codificación excesivo en proporción con la probabilidad de que el problema surja en las implementaciones reales del código. O puede que consideres que el análisis que ha dado lugar a la advertencia no es apropiado para ese contexto concreto. Puede suprimir advertencias individuales de modo que ya no aparezcan en el Lista de errores.
 
 Para suprimir una advertencia:
 
@@ -90,30 +90,30 @@ Para suprimir una advertencia:
 
 3. Elija **suprimir mensaje** y, a continuación, elija **en origen**.
 
-   Al suprimir un mensaje se inserta `#pragma warning (disable:[warning ID])` que suprime la advertencia en la línea de código.
+   Suprimir un mensaje inserta `#pragma warning (disable:[warning ID])` que suprime la advertencia de la línea de código.
 
-## <a name="create-work-items-for-code-analysis-warnings"></a>Crear elementos de trabajo para el código de las advertencias de análisis
+## <a name="create-work-items-for-code-analysis-warnings"></a>Crear elementos de trabajo para las advertencias de análisis de código
 
 La característica de seguimiento de elemento de trabajo permite registrar errores desde Visual Studio. Para usar esta característica, es necesario conectarse a una instancia de Team Foundation Server.
 
-**Para crear un elemento de trabajo para una o varias advertencias de código de C o C++**
+**Para crear un elemento de trabajo para una o varias advertenciasC++ de C/Code**
 
-1. En la lista de errores, expanda y seleccione las advertencias.
+1. En el Lista de errores, expanda y seleccione las advertencias.
 
-2. En el menú contextual para las advertencias, elija **crear elemento de trabajo**y, a continuación, elija el tipo de elemento de trabajo.
+2. En el menú contextual de las advertencias, elija **crear elemento de trabajo**y, a continuación, elija el tipo de elemento de trabajo.
 
 3. Visual Studio crea un único elemento de trabajo para las advertencias seleccionadas y muestra el elemento de trabajo en una ventana de documento del IDE.
 
-4. Agregar información adicional y, a continuación, elija **Guardar elemento de trabajo**.
+4. Agregue información adicional y, a continuación, elija **Guardar elemento de trabajo**.
 
 ## <a name="search-and-filter-code-analysis-results"></a>Buscar y filtrar resultados del análisis de código
 
 Puedes buscar en las listas largas de mensajes de advertencia y filtrar las advertencias en las soluciones de varios proyectos.
 
-- **Para filtrar las advertencias por título o identificador de advertencia**: Escriba la palabra clave en el cuadro de búsqueda.
+- **Para filtrar las advertencias por título o ID. de advertencia**: Escriba la palabra clave en el cuadro de búsqueda.
 
-- **Para filtrar las advertencias por gravedad**: De forma predeterminada, los mensajes de análisis de código tienen asignados una gravedad de **advertencia**. Puede asignar la gravedad de uno o más mensajes como **Error** en una regla personalizada establecido. En el **gravedad** columna de la **lista de errores**, elija la flecha desplegable y, a continuación, en el icono de filtro. Elija **advertencia** o **Error** para mostrar solo los mensajes que están asignados a la correspondiente gravedad. Elija **seleccionar todo** para mostrar todos los mensajes.
+- **Para filtrar las advertencias por gravedad**: De forma predeterminada, a los mensajes de análisis de código se les asigna una gravedad de **ADVERTENCIA**. Puede asignar la gravedad de uno o más mensajes como **error** en un conjunto de reglas personalizado. En la columna **gravedad** del **lista de errores**, elija la flecha desplegable y, a continuación, el icono de filtro. Elija **ADVERTENCIA** o **error** para mostrar solo los mensajes a los que se ha asignado la gravedad respectiva. Elija **seleccionar todo** para mostrar todos los mensajes.
 
 ## <a name="see-also"></a>Vea también
 
-[Análisis de código para C/C ++](../code-quality/code-analysis-for-c-cpp-overview.md)
+[Análisis de código para C/C++](../code-quality/code-analysis-for-c-cpp-overview.md)

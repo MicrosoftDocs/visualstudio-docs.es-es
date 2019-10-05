@@ -13,21 +13,19 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: a1b09b77eb051d32a3aabb929e9058786215cfb4
-ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
+ms.openlocfilehash: 86aa308369ef93792126c7f8da5f59f94ef0c02a
+ms.sourcegitcommit: 39a04f42d23597b70053686d7e927ba78f38a9a8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69551051"
+ms.lasthandoff: 10/05/2019
+ms.locfileid: "71975114"
 ---
 # <a name="how-to-configure-legacy-analysis-for-managed-code"></a>Procedimiento Configurar el análisis heredado para código administrado
 
 En Visual Studio, puede elegir en una lista de [conjuntos de reglas](../code-quality/rule-set-reference.md) de análisis de código para aplicarlos a un proyecto de código administrado. De forma predeterminada, el **reglas mínimas recomendadas de Microsoft** se selecciona el conjunto de reglas, pero puede aplicar una regla diferente establecer si lo desea. Conjuntos de reglas pueden aplicarse a uno o varios proyectos en una solución.
 
-Para obtener información sobre cómo configurar un conjunto de reglas para las aplicaciones Web de [ASP.net, consulte Cómo: Configurar el análisis de código para una aplicación](../code-quality/how-to-configure-code-analysis-for-an-aspnet-web-application.md)Web ASP.net.
-
 > [!NOTE]
-> Este artículo se aplica al análisis heredado y no a los [analizadores de código basados en .net Compiler Platform](use-roslyn-analyzers.md), que no ejecutan el análisis de código después de la compilación.
+> Este artículo se aplica al análisis heredado y no a los [analizadores de código basados en .net Compiler Platform](use-roslyn-analyzers.md).
 
 ## <a name="configure-a-rule-set-for-a-net-framework-project"></a>Configurar un conjunto de reglas para un proyecto de .NET Framework
 
@@ -37,20 +35,40 @@ Para obtener información sobre cómo configurar un conjunto de reglas para las 
 
    - Haga clic en el proyecto en **el Explorador de soluciones** y seleccione **propiedades**y, a continuación, seleccione el **análisis de código** ficha.
 
-1. En el **configuración** y **plataforma** listas, seleccione la plataforma de destino y de configuración de compilación.
+2. En el **configuración** y **plataforma** listas, seleccione la plataforma de destino y de configuración de compilación.
 
-1. Para ejecutar análisis de código cada vez que se compila el proyecto con la configuración seleccionada, seleccione el **Habilitar análisis de código al compilar** casilla de verificación. También puede ejecutar análisis de código seleccionando **analizar** > **ejecutar análisis de código** > **ejecutar análisis de código en \<NombreDelProyecto >** .
+::: moniker range="vs-2017"
 
-1. De forma predeterminada, el análisis de código no notifica las advertencias de código generadas automáticamente por herramientas externas. Para ver las advertencias de código generado, desactive la **Suprimir resultados del código generado** casilla de verificación.
+3. Para ejecutar el análisis de código cada vez que se compila el proyecto con la configuración seleccionada, seleccione **Habilitar análisis de código al compilar**. También puede ejecutar análisis de código seleccionando **analizar** > **ejecutar análisis de código** > **ejecutar análisis de código en \<NombreDelProyecto >** .
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+3. Para ejecutar el análisis de código cada vez que se compila el proyecto con la configuración seleccionada, seleccione **ejecutar en la compilación** en la sección **analizadores binarios** . También puede ejecutar análisis de código seleccionando **analizar** > **ejecutar análisis de código** > **ejecutar análisis de código en \<NombreDelProyecto >** .
+
+::: moniker-end
+
+4. Para ver las advertencias de código generado, desactive la **Suprimir resultados del código generado** casilla de verificación.
 
     > [!NOTE]
-    > Esta opción no suprime los errores ni las advertencias del análisis de código generado cuando aparecen en formularios y plantillas. Puede ver y mantener el código fuente de un formulario o una plantilla, sin tener que sobrescribe.
+    > Esta opción no suprime los errores ni las advertencias del análisis de código generado cuando aparecen en formularios y plantillas. Puede ver y mantener el código fuente de un formulario o una plantilla, y no se sobrescribirá.
 
-1. En el **ejecutar este conjunto de reglas** lista, realice una de las siguientes acciones:
+::: moniker range="vs-2017"
+
+5. En el **ejecutar este conjunto de reglas** lista, realice una de las siguientes acciones:
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+5. En la lista **reglas activas** , realice una de las acciones siguientes:
+
+::: moniker-end
 
     - Seleccione el conjunto de reglas que desea usar.
 
-    - Seleccione  **\<Examinar... >** encontrar establece una regla personalizada existente que no está en la lista.
+    - Seleccione **\<Browse >** para buscar un conjunto de reglas personalizado existente que no esté en la lista.
 
     - Definir un [conjunto de reglas personalizado](../code-quality/how-to-create-a-custom-rule-set.md).
 
@@ -77,4 +95,3 @@ De forma predeterminada, todos los proyectos administrados de una solución se a
 ## <a name="see-also"></a>Vea también
 
 - [Referencia del conjunto de reglas Análisis de código](../code-quality/rule-set-reference.md)
-- [Cómo: Configurar el análisis de código para una aplicación Web de ASP.NET](../code-quality/how-to-configure-code-analysis-for-an-aspnet-web-application.md)

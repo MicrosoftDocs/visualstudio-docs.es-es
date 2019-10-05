@@ -1,5 +1,5 @@
 ---
-title: Código personalizado en comprobación de directivas de análisis para código administrado
+title: Directivas de protección de análisis de código personalizadas para código administrado
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 6619e3bb988a555fba5718f609ff3a5f0584063b
-ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.openlocfilehash: 55294f7418de085cb4ceccd4063a4b2b55cbc6c4
+ms.sourcegitcommit: 39a04f42d23597b70053686d7e927ba78f38a9a8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "66260838"
+ms.lasthandoff: 10/05/2019
+ms.locfileid: "71975033"
 ---
 # <a name="implement-custom-code-analysis-check-in-policies-for-managed-code"></a>Implementar directivas de inserción en el repositorio de análisis de código personalizadas para el código administrado
 
@@ -110,10 +110,18 @@ Especifique una regla de directiva de protección del proyecto se establece como
 
 4. Si es necesario, haga clic en las opciones adecuadas en el **configuración** y **plataforma** enumera.
 
-5. Para ejecutar análisis de código cada vez que se compila el proyecto de código con la configuración especificada, seleccione el **Habilitar análisis de código al compilar (define la constante CODE_ANALYSIS)** casilla de verificación.
+::: moniker range="vs-2017"
 
-6. Para omitir el código en componentes de otras empresas, seleccione el **Suprimir resultados del código generado** casilla de verificación.
+5. Para ejecutar el análisis de código cada vez que se compila el proyecto de código con la configuración especificada, seleccione **Habilitar análisis de código al compilar**.
 
-7. En el **ejecutar este conjunto de reglas** lista, haga clic en  **\<Examinar... >** .
+::: moniker-end
 
-8. Especifique la versión local del archivo de conjunto de regla de directiva de protección.
+::: moniker range=">=vs-2019"
+
+5. Para ejecutar el análisis de código cada vez que se compila el proyecto de código con la configuración especificada, seleccione **ejecutar en la compilación** en la sección **analizadores binarios** .
+
+::: moniker-end
+
+6. En la lista **ejecutar este conjunto de reglas** , haga clic en **\<Browse >** .
+
+8. Seleccione la versión local del archivo del conjunto de reglas de la Directiva de inserción en el repositorio.

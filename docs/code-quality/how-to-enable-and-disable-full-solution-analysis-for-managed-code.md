@@ -1,5 +1,5 @@
 ---
-title: Habilitar y deshabilitar el análisis de la solución completa para código administrado
+title: Habilitar & deshabilitar el análisis completo de la solución para código administrado
 ms.date: 03/23/2018
 ms.topic: conceptual
 helpviewer_keywords:
@@ -9,41 +9,39 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: a445439014e3b1f68b634865265089eb68e790a6
-ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.openlocfilehash: 0b192b29190d530d22943e8ba2a396ae1fe9ad87
+ms.sourcegitcommit: 39a04f42d23597b70053686d7e927ba78f38a9a8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "66260886"
+ms.lasthandoff: 10/05/2019
+ms.locfileid: "71975128"
 ---
 # <a name="how-to-enable-and-disable-full-solution-analysis-for-managed-code"></a>Procedimiento Habilitar y deshabilitar el análisis de la solución completa para código administrado
 
-*Completa el análisis de la solución* es una característica de Visual Studio que le permite ver los problemas de análisis de código solo en abierto Visual C# o los archivos de Visual Basic en la solución, o también en los archivos de código que se cierran. De forma predeterminada, es el análisis de la solución completa *habilitado* para Visual Basic, y *deshabilitado* Visual C#.
+El análisis de la *solución completa* significa que el análisis de C# código examina todos los archivos o Visual Basic de la solución, con independencia de si están abiertos en el editor o no. De forma predeterminada, el análisis completo de la solución está *habilitado* para Visual Basic y *deshabilitado* para C#.
 
-Puede ser útil ver todos los problemas en todos los archivos, pero también puede ser confuso. Ralentiza Visual Studio si la solución es muy grande o tiene muchos archivos. Para limitar el número de problemas que se muestran y mejorar el rendimiento de Visual Studio, puede deshabilitar el análisis de la solución completa. Fácilmente puede volver a habilitar esta característica si es necesario.
+Puede ser útil Ver todos los problemas de todos los archivos, pero también puede resultar molesto. Ralentiza Visual Studio si la solución es muy grande o tiene muchos archivos. Para limitar el número de problemas que se muestran y mejorar el rendimiento de Visual Studio, puede deshabilitar el análisis completo de la solución. Puede volver a habilitar fácilmente esta característica si es necesario.
 
-## <a name="to-toggle-full-solution-analysis"></a>Para activar o desactivar el análisis de la solución completa
+En la imagen siguiente, se habilita el análisis completo de la solución. Se muestran los problemas del compilador y el análisis de código en todos los archivos de la solución, aunque no estén abiertos.
 
-1. Para abrir el **opciones** cuadro de diálogo, en la barra de menús de Visual Studio elija **herramientas** > **opciones**.
+![Análisis completo de la solución habilitada.](../code-quality/media/fsa_enabled.png)
 
-1. En el **opciones** diálogo cuadro, elija **Editor de texto**  >  **C#** o **básica**  >  **Avanzada**.
+En la imagen siguiente se muestran los resultados de la misma solución después de deshabilitar el análisis completo de la solución. En el Lista de errores solo aparecen los errores del compilador y los problemas de análisis de código en los archivos de la solución abierta.
 
-1. Seleccione el **Habilitar análisis de la solución completa** casilla de verificación para habilitar el análisis de la solución completa, o desactive la casilla para deshabilitarla. Elija **Aceptar** cuando haya terminado.
+![Análisis completo de la solución deshabilitado.](../code-quality/media/fsa_disabled.png)
 
-    ![Habilitar la casilla de verificación de análisis de solución completa.](../code-quality/media/options-enable-full-solution-analysis.png)
+## <a name="toggle-full-solution-analysis"></a>Alternancia del análisis de la solución completa
 
-## <a name="results-of-enabling-and-disabling-full-solution-analysis"></a>Resultados de la habilitación y deshabilitación de análisis de la solución completa
+1. Para abrir el cuadro de diálogo **Opciones** , en la barra de menús de Visual Studio, elija **herramientas** > **Opciones**.
 
-En la siguiente captura de pantalla, puede ver los resultados cuando se habilita el análisis de la solución completa. Todos los errores y problemas de análisis de código en *todas* de los archivos de la solución aparecen, independientemente de si los archivos están abiertos.
+1. En el cuadro de diálogo **Opciones** , elija **Editor de texto**@no__t**C#** -2 o **básico** > **avanzado**.
 
-![Análisis de la solución completa habilitada.](../code-quality/media/fsa_enabled.png)
+1. Active la casilla habilitar el análisis de la **solución completa** para habilitar el análisis completo de la solución o desactive la casilla para deshabilitarlo. Elija **Aceptar** cuando haya terminado.
 
-Captura de pantalla siguiente muestra los resultados de la misma solución después de deshabilitar el análisis de la solución completa. Solo los errores y problemas de análisis de código en archivos de solución abierta aparecen en la **lista de errores**.
+   ![Active la casilla de verificación Análisis completo de la solución.](../code-quality/media/options-enable-full-solution-analysis.png)
 
-![Análisis de la solución completa deshabilitado.](../code-quality/media/fsa_disabled.png)
+## <a name="automatically-disable-full-solution-analysis"></a>Deshabilitar automáticamente el análisis completo de la solución
 
-## <a name="automatically-disable-full-solution-analysis"></a>Deshabilitar automáticamente el análisis de la solución completa
-
-Si Visual Studio detecta que 200 MB o menos de memoria del sistema está disponible en él, deshabilita automáticamente análisis completo de la solución (y algunas otras características) si está habilitado. Si esto ocurre, aparece una alerta que le informa de que Visual Studio ha deshabilitado algunas características. Un botón le permite volver a habilitar el análisis de la solución completa si desea.
+Si Visual Studio detecta que 200 MB o menos de memoria del sistema está disponible, deshabilita automáticamente el análisis completo de la solución (y otras características) si está habilitada. Si esto ocurre, aparecerá una alerta que le informa de que Visual Studio ha deshabilitado algunas características. Un botón le permite volver A habilitar el análisis completo de la solución si lo desea.
 
 ![Suspender el análisis de la solución completa de texto de alerta](../code-quality/media/fsa_alert.png)
