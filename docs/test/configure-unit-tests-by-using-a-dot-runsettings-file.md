@@ -7,12 +7,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 25d0f49939a42d9a9b8cc56f03ed37ab83aa98f2
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.openlocfilehash: bdf67f78d1a4cc7e2d17336a7272b919fcc6fba9
+ms.sourcegitcommit: d3e423a9a4ed773a54d14b247e1b5bfc95de8816
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71251828"
+ms.lasthandoff: 10/01/2019
+ms.locfileid: "71693029"
 ---
 # <a name="configure-unit-tests-by-using-a-runsettings-file"></a>Configuración de pruebas unitarias con un archivo *.runsettings*
 
@@ -38,11 +38,11 @@ El archivo aparece en el menú Configuración de pruebas, y puede seleccionarlo 
 
 ::: moniker range=">=vs-2019"
 
-Para especificar un archivo de parámetros de ejecución en el IDE, en el **Explorador de pruebas**, seleccione la flecha del botón **Configuración** y, después, **Seleccionar archivo de configuración**. Busque y seleccione el archivo *.runsettings*.
+Para especificar un archivo de parámetros de ejecución en el IDE, seleccione **Prueba** > **Seleccionar archivo de configuración**. Busque y seleccione el archivo *.runsettings*.
 
-![Selección del menú del archivo de configuración de pruebas en Visual Studio 2019](media/vs-2019/select-test-settings-file.png)
+![Selección del menú del archivo de configuración de pruebas en Visual Studio 2019](media/vs-2019/select-settings-file.png)
 
-El archivo aparece en el menú Configuración del Explorador de pruebas, y puede seleccionarlo o anular la selección. Mientras está seleccionado, el archivo de parámetros de ejecución se aplica siempre que seleccione **Analizar cobertura de código**.
+El archivo aparece en el menú Prueba, y puede seleccionarlo o anular su selección. Mientras está seleccionado, el archivo de parámetros de ejecución se aplica siempre que seleccione **Analizar cobertura de código**.
 
 ::: moniker-end
 
@@ -97,7 +97,7 @@ Para personalizar las pruebas mediante un archivo *.runsettings*, siga estos pas
 
 ::: moniker range=">=vs-2019"
 
-3. Para seleccionar el archivo de parámetros de ejecución, en el **Explorador de pruebas**, seleccione la flecha del botón **Configuración** y, después, seleccione **Seleccionar archivo de configuración**. Vaya al archivo *.runsettings* que ha creado y haga clic en **Aceptar**.
+3. Para seleccionar el archivo de parámetros de ejecución, elija **Prueba** > **Seleccionar archivo de configuración**. Vaya al archivo *.runsettings* que ha creado y haga clic en **Aceptar**.
 
 ::: moniker-end
 
@@ -118,7 +118,7 @@ El siguiente XML muestra el contenido de un archivo *.runsettings* típico. Cada
     <ResultsDirectory>.\TestResults</ResultsDirectory>
 
     <!-- x86 or x64 -->
-    <!-- You can also change it from the test settings menu; choose "Processor Architecture for AnyCPU Projects" -->
+    <!-- You can also change it from the Test menu; choose "Processor Architecture for AnyCPU Projects" -->
     <TargetPlatform>x86</TargetPlatform>
 
     <!-- Framework35 | [Framework40] | Framework45 -->
@@ -149,7 +149,7 @@ El siguiente XML muestra el contenido de un archivo *.runsettings* típico. Cada
             <AllowLowIntegrityProcesses>True</AllowLowIntegrityProcesses>
             <CollectFromChildProcesses>True</CollectFromChildProcesses>
             <CollectAspDotNet>False</CollectAspDotNet>
-
+            
           </CodeCoverage>
         </Configuration>
       </DataCollector>
@@ -157,11 +157,12 @@ El siguiente XML muestra el contenido de un archivo *.runsettings* típico. Cada
       <DataCollector uri="datacollector://microsoft/VideoRecorder/1.0" assemblyQualifiedName="Microsoft.VisualStudio.TestTools.DataCollection.VideoRecorder.VideoRecorderDataCollector, Microsoft.VisualStudio.TestTools.DataCollection.VideoRecorder, Version=15.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" friendlyName="Screen and Voice Recorder">
         <!--Video data collector was introduced in Visual Studio 2017 version 15.5 -->
         <Configuration>
-           <!-- Change to "false" to only add video attachments to failed tests -->
-          <MediaRecorder sendRecordedMediaForPassedTestCase="true" xmlns="" />
+          <!-- Set "sendRecordedMediaForPassedTestCase" to "false" to add video attachments to failed tests only -->
+          <MediaRecorder sendRecordedMediaForPassedTestCase="true"  xmlns="">           
+            <ScreenCaptureVideo bitRate="512" frameRate="2" quality="20" />
+          </MediaRecorder>
         </Configuration>
       </DataCollector>
-
     </DataCollectors>
   </DataCollectionRunSettings>
 

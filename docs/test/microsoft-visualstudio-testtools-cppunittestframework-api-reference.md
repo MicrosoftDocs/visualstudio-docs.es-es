@@ -1,26 +1,24 @@
 ---
 title: API Microsoft.VisualStudio.TestTools.CppUnitTestFramework
-ms.date: 06/13/2019
+ms.date: 09/27/2019
 ms.topic: reference
 ms.author: mblome
 manager: jillfra
 ms.workload:
 - multiple
 author: mikeblome
-ms.openlocfilehash: 36681858506a05d5d8c9f0a5be25a70b833ee022
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 327aa6f79f7eda6ecc3f1c0a7b2576a87287b1c0
+ms.sourcegitcommit: 628eb202a1153ebfe69c668f966f821b98b34b34
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68926615"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "71720512"
 ---
 # <a name="microsoftvisualstudiotesttoolscppunittestframework-api-reference"></a>Referencia de API Microsoft.VisualStudio.TestTools.CppUnitTestFramework
 
 Este tema se enumeran los miembros públicos de espacio de nombres `Microsoft::VisualStudio::CppUnitTestFramework`. Use estas API para escribir pruebas unitarias de C++ basadas en el marco de pruebas unitarias de tipo nativo de Microsoft. Al final del tema encontrará un [ejemplo de uso](#example).
 
-Los archivos de encabezado se encuentran en la carpeta _VisualStudio2012[x86]InstallFolder_ **\VC\UnitTest\include**.
-
-Los archivos lib se encuentran en la carpeta _VisualStudio2012[x86]InstallFolder_ **\VC\UnitTest\lib**.
+Los archivos lib y de encabezado se encuentran en la *\<carpeta de instalación de Visual Studio>\VC\Auxiliary\VS\UnitTest*.
 
 Las rutas de acceso de encabezado y biblioteca se configuran automáticamente en un proyecto de prueba nativo.
 
@@ -126,7 +124,7 @@ TEST_METHOD_INITIALIZE(methodName)
 }
 ```
 
-Define *methodName* como un método que se ejecuta antes de ejecutar cada método de prueba. `TEST_METHOD_INITIALIZE` solo se puede definir una vez en una clase de prueba y se debe definir en la clase de prueba.
+Define *methodName* como un método que se ejecuta antes de ejecutar cada método de prueba. `TEST_METHOD_INITIALIZE` solo se puede definir una vez en una clase de prueba y se debe definir en el ámbito de la clase de prueba.
 
 ```cpp
 TEST_METHOD_CLEANUP(methodName)

@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d18f510b3b30207079b644e540d8b5db22609f97
-ms.sourcegitcommit: 673b9364fc9a96b027662dcb4cf5d61cab60ef11
+ms.openlocfilehash: 27ca8a39d39fcc8b4e5ddca2cbedf72e44c6cc81
+ms.sourcegitcommit: 689ba54ea14257d13031de881f5d4fe937a36f56
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/21/2019
-ms.locfileid: "69891335"
+ms.lasthandoff: 09/27/2019
+ms.locfileid: "71342453"
 ---
 # <a name="run-unit-tests-with-test-explorer"></a>Ejecutar pruebas unitarias con el Explorador de pruebas
 
@@ -320,6 +320,7 @@ Es posible determinar la cantidad de código de producto que las pruebas unitari
 Para ejecutar la cobertura de código en los métodos de prueba de una solución:
 
 ::: moniker range="vs-2017"
+
 1. Seleccione **Prueba** en la barra de menús superior y luego **Analizar cobertura de código**.
 
 2. En el submenú, elija uno de los comandos siguientes:
@@ -327,9 +328,13 @@ Para ejecutar la cobertura de código en los métodos de prueba de una solución
     - **Pruebas seleccionadas** ejecuta los métodos de prueba que ha seleccionado en el Explorador de pruebas.
 
     - **Todas las pruebas** ejecuta todos los métodos de prueba en la solución.
+
 ::: moniker-end
+
 ::: moniker range=">=vs-2019"
+
 * Haga clic con el botón derecho en el Explorador de pruebas y seleccione **Analizar cobertura de código para las pruebas seleccionadas**.
+
 ::: moniker-end
 
 La ventana **Resultados de la cobertura de código** muestra el porcentaje de bloques de código de producto que se han ejecutado por línea, función, clase, espacio de nombres y módulo.
@@ -338,7 +343,7 @@ Para obtener más información, vea [Usar cobertura de código para determinar l
 
 ## <a name="test-shortcuts"></a>Métodos abreviados de pruebas
 
-Las pruebas se pueden ejecutar desde el **Explorador de pruebas**, haciendo clic con el botón derecho en una prueba del editor de código y seleccionando **Ejecutar prueba**, o mediante los [métodos abreviados del explorador de pruebas](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_testexplorerGLOBAL) predeterminados en Visual Studio. Algunos de los métodos abreviados dependen del contexto. Esto significa que ejecutan o depuran las pruebas en función de la posición del cursor en el editor de código. Si el cursor está dentro de un método de prueba, se ejecuta ese método de prueba. Si el cursor está en el nivel de clase, se ejecutan todas las pruebas de esa clase. Lo mismo sucede en el nivel de espacio de nombres.
+Para ejecutar las pruebas desde el Explorador de pruebas, haga clic con el botón derecho en una prueba en el editor de código y seleccione **Ejecutar prueba**; o use los [métodos abreviados del Explorador de pruebas](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_testexplorerGLOBAL) predeterminados en Visual Studio. Algunos de los métodos abreviados dependen del contexto. Esto significa que ejecutan o depuran las pruebas en función de la posición del cursor en el editor de código. Si el cursor está dentro de un método de prueba, se ejecuta ese método de prueba. Si el cursor está en el nivel de clase, se ejecutan todas las pruebas de esa clase. Lo mismo sucede en el nivel de espacio de nombres.
 
 |Comandos más frecuentes| Métodos abreviados de teclado|
 |-|------------------------|

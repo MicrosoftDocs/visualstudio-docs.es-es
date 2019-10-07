@@ -1,19 +1,19 @@
 ---
 title: Escritura de pruebas unitarias para C/C++
 description: Escriba pruebas unitarias de C++ en Visual Studio usando varios marcos de trabajo de prueba, como CTest, Boost.Test y Google Test.
-ms.date: 05/06/2019
+ms.date: 09/27/2019
 ms.topic: conceptual
 ms.author: mblome
 manager: markl
 ms.workload:
 - cplusplus
 author: mikeblome
-ms.openlocfilehash: 6c236a8454c9710bedbf080f4d7a09cfff6a7fac
-ms.sourcegitcommit: d4920babfc3d24a3fe1d4bf446ed3fe73b344467
+ms.openlocfilehash: 75244cc728b238a04569875ac01f1c2a3f27d336
+ms.sourcegitcommit: 16175e0cea6af528e9ec76f0b94690faaf1bed30
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/17/2019
-ms.locfileid: "67160178"
+ms.lasthandoff: 09/28/2019
+ms.locfileid: "71481917"
 ---
 # <a name="write-unit-tests-for-cc-in-visual-studio"></a>Escribir pruebas unitarias para C/C++ en Visual Studio
 
@@ -86,6 +86,8 @@ Si el código de prueba no exporta las funciones que quiere probar, puede agrega
 Después, en el archivo *.cpp* de prueba unitaria, agregue una directiva `#include` relativa a cualquier archivo de encabezado que declare los tipos y funciones que quiera probar. Escriba `#include "` y, de este modo, IntelliSense se activará para ayudarle a elegir. Repita esto mismo con los encabezados que haya.
 
 ![Agregar directivas include](media/cpp-add-includes-test-project.png)
+
+Para evitar tener que escribir la ruta de acceso completa en cada instrucción include en el archivo de código fuente, puede agregar las carpetas necesarias en **Proyecto** > **Propiedades** > **C/C++**  > **General** > **Directorios de inclusión adicionales**.
 
 ### <a name="write-test-methods"></a>Escribir métodos de prueba
 

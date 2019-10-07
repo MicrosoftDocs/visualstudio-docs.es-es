@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c36fbacfde97eb42b1feab3e9097a731437cce4e
-ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
+ms.openlocfilehash: 411a9b1150961307a2a8ed3cdfae9842fb56701c
+ms.sourcegitcommit: 13decf878b33fc0c5d665a88067170c2861b261b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68870760"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "71681624"
 ---
 # <a name="assembly-information-dialog-box"></a>Cuadro de diálogo Información de ensamblado
 
@@ -61,6 +61,9 @@ Especifica la cultura que admite el ensamblado. Se corresponde con <xref:System.
 
 **Crear ensamblado visible a través de COM**\
 Especifica si los tipos del ensamblado estarán disponibles para COM. Se corresponde con <xref:System.Runtime.InteropServices.ComVisibleAttribute>.
+
+> [!NOTE]
+> Para más información sobre cómo establecer estas propiedades al generar un paquete NuGet en una biblioteca de clases de .NET Framework, consulte [Configurar las propiedades del proyecto para el paquete](/nuget/quickstart/create-and-publish-a-package-using-visual-studio-net-framework#configure-project-properties-for-the-package).
 
 ## <a name="see-also"></a>Vea también
 

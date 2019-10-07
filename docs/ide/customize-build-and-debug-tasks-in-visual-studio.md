@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3bfe750e8dca68876ac5d894c0ca194f82a42f21
-ms.sourcegitcommit: b593bb889f049fcbdff502c30b73178ed17dbdf0
+ms.openlocfilehash: ca5a80c07cb64cfd638542da4e1deefe7e373b18
+ms.sourcegitcommit: 689ba54ea14257d13031de881f5d4fe937a36f56
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/20/2019
-ms.locfileid: "67291044"
+ms.lasthandoff: 09/27/2019
+ms.locfileid: "71342402"
 ---
 # <a name="customize-build-and-debug-tasks-for-open-folder-development"></a>Personalización de las tareas de compilación y depuración para el desarrollo de "Abrir carpeta"
 
@@ -28,7 +28,7 @@ Si el código base usa herramientas de compilación personalizadas que Visual St
 
 Use estos archivos *.json* para personalizar el código base sin proyecto:
 
-|Nombre de archivo|Propósito|
+|Nombre del archivo|Propósito|
 |-|-|
 |*tasks.vs.json*|Especifique los modificadores del compilador y los comandos de compilación personalizada, además de las tareas arbitrarias (no relacionadas con la compilación).<br>Se accede a través del elemento de menú **Configurar tareas** del menú contextual del **Explorador de soluciones**.|
 |*launch.vs.json*|Especifique los argumentos de la línea de comandos para realizar la depuración.<br>Se accede a través del elemento de menú **Configuración de depuración e inicio** del menú contextual del **Explorador de soluciones**.|
@@ -256,6 +256,9 @@ Puede crear tareas para cualquier archivo o carpeta si especifica su nombre en e
    ![Botón Iniciar personalizado](media/customize-start-button.png)
 
    Cuando presiona **F5**, el depurador se inicia y se detiene en cualquier punto de interrupción que se pueda haber establecido. Todas las ventanas familiares del depurador están disponibles y en funcionamiento.
+
+   > [!IMPORTANT]
+   > Para más información sobre las tareas de compilación y depuración personalizadas en proyectos de abrir carpeta de C++, consulte [Compatibilidad de la acción Abrir carpeta con sistemas de compilación de C++ en Visual Studio](/cpp/build/open-folder-projects-cpp).
 
 ### <a name="specify-arguments-for-debugging"></a>Especificación de argumentos para la depuración
 

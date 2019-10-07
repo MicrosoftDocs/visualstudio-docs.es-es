@@ -6,12 +6,12 @@ manager: lank
 ms.date: 08/02/2019
 ms.topic: conceptual
 description: Obtenga información sobre la suscripción de aprendizaje de Pluralsight incluida en la suscripción de Visual Studio.
-ms.openlocfilehash: 897790684420c35d173f1d8144f735815ca4034f
-ms.sourcegitcommit: a124076dfd6b4e5aecda4d01984fee7b0c034745
+ms.openlocfilehash: 25a699f0e97f88fefaaf5b62f752ef579c0cd736
+ms.sourcegitcommit: 689ba54ea14257d13031de881f5d4fe937a36f56
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2019
-ms.locfileid: "68787650"
+ms.lasthandoff: 09/27/2019
+ms.locfileid: "71342387"
 ---
 # <a name="pluralsight-training-benefits-in-visual-studio-subscriptions"></a>Ventajas de aprendizaje de Pluralsight en las suscripciones de Visual Studio
 
@@ -46,9 +46,7 @@ En la tabla siguiente se detallan los beneficios de la suscripción de Pluralsig
    > Si su cuenta no es apta para canjear las ofertas nuevas, en el correo electrónico que recibirá se explicará que hubo un problema al crear la cuenta porque no cumple con los requisitos.  También incluirá información que le permitirá ponerse en contacto con el equipo de soporte técnico de Pluralsight, el que podrá responder las preguntas que quizás tiene sobre la cuenta.
    
 
-6. Una vez que la cuenta se creó correctamente, el correo electrónico que recibirá incluirá su nombre de usuario y le pedirá crear una contraseña.  Proporcione la contraseña, vuelva a escribirla para confirmarla y haga clic en **Iniciar sesión en Pluralsight**.
-   > [!div class="mx-imgBorder"]
-   > ![Correo electrónico de bienvenida de la ventaja de Pluralsight](_img/vs-pluralsight/vs-pluralsight-welcome-email.png)
+6. Una vez que la cuenta se ha creado correctamente, el correo electrónico que recibe incluirá su nombre de usuario y una solicitud de contraseña.  Proporcione la contraseña, vuelva a escribirla para confirmarla y haga clic en **Iniciar sesión en Pluralsight**.
 
 7. Escriba el nombre de usuario que aparece en el correo de bienvenida y la contraseña que acaba de crear y, luego, haga clic en **Iniciar sesión**.
 

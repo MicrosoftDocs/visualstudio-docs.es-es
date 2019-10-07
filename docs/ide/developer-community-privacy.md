@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 447a06d64691af1d77a634179631ce7822b6d43d
-ms.sourcegitcommit: 78e2637e4fbfadd4509b55276816b64f5c24c606
+ms.openlocfilehash: a40cbc30850edc96b569bd8d716b14b5d2035089
+ms.sourcegitcommit: 528178a304e66c0cb7ab98b493fe3c409f87493a
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/10/2019
-ms.locfileid: "70864692"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71273395"
 ---
 # <a name="developer-community-data-privacy"></a>Privacidad de datos de la Comunidad de desarrolladores
 
@@ -70,10 +70,6 @@ Si se inicia **Report a problem** (Notificar un problema) desde Visual Studio, r
 
 - Registros de Windows Forms, si existen
 
-> [!NOTE]
-> Los archivos de registro se envían a Microsoft solo cuando se proporciona el permiso mediante el envío del informe de problemas con el que se incluyen. Puede ver los archivos que se incluyen en el paso "Resumen" de la ventana "Notificar un problema" (vea la captura de pantalla incluida en esta nota). Los registros recopilados se almacenan en la carpeta %temp% y se limpian periódicamente y después de cada carga. Si no quiere incluir un registro en el informe de problemas, elimine el archivo de la carpeta %temp% antes de enviar el informe.  
-  > ![Notificar un problema: resumen de los registros recopilados](media/report-a-problem-logs-collected.png)
-
 - Una captura de pantalla, si opta por incluirla
   
 - Datos de grabación, si decide incluir una grabación, que incluya:
@@ -84,8 +80,10 @@ Si se inicia **Report a problem** (Notificar un problema) desde Visual Studio, r
 
   - Archivo de volcado de memoria
 
-  > [!NOTE]
-  > Puede eliminar cualquiera de los datos de grabación que no quiera enviar antes de enviar el informe.
+> [!NOTE]
+> Los archivos de registro, las instantáneas y los datos de registro se envían a Microsoft solo cuando se proporciona el permiso; para ello, se envía el informe de problemas con el que se incluyen. Puede ver los archivos que se incluyen en el paso "Resumen" de la ventana "Notificar un problema" (vea la captura de pantalla incluida en esta nota). Los registros y archivos recopilados se almacenan en la carpeta %temp% y se limpian periódicamente y después de cada carga. Si no quiere incluir un registro en el informe de problemas, elimine el archivo de la carpeta %temp% antes de enviar el informe.  
+  > ![Notificar un problema: resumen de los registros recopilados](media/report-a-problem-logs-collected.png)
+ 
 
 ## <a name="see-also"></a>Vea también
 
