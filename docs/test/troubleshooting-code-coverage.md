@@ -7,12 +7,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: abd5075d04f26b9795695bfcd4fcd387e1a15d24
-ms.sourcegitcommit: 541a0556958201ad6626bc8638406ad02640f764
+ms.openlocfilehash: 6416045f040e9825bab6eeb33dd4b75478166ee3
+ms.sourcegitcommit: 689ba54ea14257d13031de881f5d4fe937a36f56
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/18/2019
-ms.locfileid: "71079577"
+ms.lasthandoff: 09/27/2019
+ms.locfileid: "71342477"
 ---
 # <a name="troubleshoot-code-coverage"></a>Solucionar problemas de cobertura de código
 
@@ -29,6 +29,7 @@ Para obtener más información, vea [Usar cobertura de código para determinar l
 ## <a name="possible-reasons-for-seeing-no-results-or-old-results"></a>Causas posibles para no ver ningún resultado o ver resultados antiguos
 
 ### <a name="do-you-have-the-right-edition-of-visual-studio"></a>¿Tiene la edición correcta de Visual Studio?
+
 Necesita Visual Studio Enterprise.
 
 ### <a name="no-tests-were-executed"></a>No se ejecutó ninguna prueba
@@ -43,7 +44,7 @@ Resolución: en el Explorador de pruebas, elija **Ejecutar todas** para comproba
 
 Cuando se modifican y se vuelven a ejecutar las pruebas, todavía puede estar visible un resultado de cobertura de código anterior, incluido el color del código de esa ejecución anterior.
 
-1. Ejecute Analizar cobertura de código.
+1. Ejecute **Analizar cobertura de código**.
 
 2. Asegúrese de que ha seleccionado el conjunto de resultados más reciente en la ventana de **resultados de cobertura de código**.
 

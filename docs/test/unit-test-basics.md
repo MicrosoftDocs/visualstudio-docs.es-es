@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5060b2a3b532de26d78eca4ce16661768748bbd7
-ms.sourcegitcommit: 673b9364fc9a96b027662dcb4cf5d61cab60ef11
+ms.openlocfilehash: aff50f5933d540297711e44487c775d93968f0fd
+ms.sourcegitcommit: 689ba54ea14257d13031de881f5d4fe937a36f56
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/21/2019
-ms.locfileid: "69891340"
+ms.lasthandoff: 09/27/2019
+ms.locfileid: "71342434"
 ---
 # <a name="unit-test-basics"></a>Conceptos básicos de las pruebas unitarias
 
@@ -369,7 +369,7 @@ Más información sobre [pruebas unitarias controladas por datos](../test/how-to
 
 La cobertura de código se puede ejecutar en pruebas seleccionadas o en todas las pruebas de una solución. La ventana **Resultados de la cobertura de código** muestra el porcentaje de bloques de código de producto que se han ejecutado por línea, función, clase, espacio de nombres y módulo.
 
-Para iniciar la cobertura de código para los métodos de prueba de una solución, elija **Pruebas** en el menú de Visual Studio y, después, elija **Analizar cobertura de código**.
+Para ejecutar la cobertura de código con los métodos de prueba de una solución, elija **Prueba** > **Analizar cobertura de código para todas las pruebas**.
 
 Los resultados de la cobertura aparecen en la ventana **Resultados de la cobertura de código**.
 

@@ -11,12 +11,12 @@ dev_langs:
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 24bc4c54e455f43aa5fd5fee0ce0d5a44042e497
-ms.sourcegitcommit: b60a00ac3165364ee0e53f7f6faef8e9fe59ec4a
+ms.openlocfilehash: 1962a977cb282613405342f225d63140f1854453
+ms.sourcegitcommit: 689ba54ea14257d13031de881f5d4fe937a36f56
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/11/2019
-ms.locfileid: "70913217"
+ms.lasthandoff: 09/27/2019
+ms.locfileid: "71342421"
 ---
 # <a name="use-code-coverage-to-determine-how-much-code-is-being-tested"></a>Usar cobertura de código para determinar la cantidad de código que se está probando
 
@@ -46,11 +46,11 @@ La característica de cobertura de código solo está disponible en la edición 
 
 ::: moniker range=">=vs-2019"
 
-1. En el **Explorador de pruebas**, seleccione **Analizar cobertura de código para todas las pruebas** en el menú **Ejecutar**.
+1. En el menú **Prueba**, seleccione **Analizar cobertura de código para todas las pruebas**.
 
    ![Menú Análisis de la cobertura de código en VS 2019](../test/media/vs-2019/analyze-code-coverage.png)
 
-   Si el **Explorador de pruebas** no está abierto, ábralo seleccionando **Prueba** > **Windows** > **Explorador de pruebas** o presione **Ctrl**+**E**,**T**.
+   También puede ejecutar la cobertura de código desde la ventana de la herramienta Explorador de pruebas.
 
 ::: moniker-end
 

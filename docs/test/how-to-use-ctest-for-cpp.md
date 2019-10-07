@@ -7,12 +7,12 @@ manager: jillfra
 ms.workload:
 - cplusplus
 author: mikeblome
-ms.openlocfilehash: 0b6c4eb391014342a18ec3fe56a03a651463105c
-ms.sourcegitcommit: d4920babfc3d24a3fe1d4bf446ed3fe73b344467
+ms.openlocfilehash: cc0ced6205444e1436ffbffa73ba647a6b682c5c
+ms.sourcegitcommit: 628eb202a1153ebfe69c668f966f821b98b34b34
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/17/2019
-ms.locfileid: "67160090"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "71720546"
 ---
 # <a name="how-to-use-ctest-for-c-in-visual-studio-2017-and-later"></a>Cómo usar CTest para C++ en Visual Studio 2017 y versiones posteriores
 
@@ -20,7 +20,9 @@ CMake (que incluye CTest) se integra en el IDE de Visual Studio de manera predet
 
 ## <a name="to-write-tests"></a>Para escribir pruebas
 
-La compatibilidad con CMake en Visual Studio no tiene que ver con el sistema de proyectos de Visual Studio. Por lo tanto, puede escribir y configurar pruebas de CTest del mismo modo en que lo hace en cualquier entorno de CMake. Para obtener más información sobre cómo usar CMake en Visual Studio, consulte el artículo sobre los [proyectos de CMake en Visual Studio](/cpp/build/cmake-projects-in-visual-studio).
+La compatibilidad con CMake en Visual Studio no tiene que ver con el sistema de proyectos de Visual Studio. Por lo tanto, puede escribir y configurar pruebas de CTest del mismo modo en que lo hace en cualquier entorno de CMake. Use el comando `enable_testing()` para habilitar las pruebas y el comando `add_test()` para agregar una nueva prueba. Para más información sobre CTest, consulte la [documentación de CMake](https://gitlab.kitware.com/cmake/community/wikis/doc/ctest/Testing-With-CTest). 
+
+Para obtener más información sobre cómo usar CMake en Visual Studio, consulte el artículo sobre los [proyectos de CMake en Visual Studio](/cpp/build/cmake-projects-in-visual-studio).
 
 ## <a name="to-run-tests"></a>Para ejecutar pruebas
 
@@ -29,12 +31,6 @@ CTest está completamente integrado con el **Explorador de pruebas** y también 
 En la ilustración siguiente se muestran los resultados de una ejecución de CTest con el marco de Google Test:
 
 ![CTest con el marco de Google Test en Visual Studio](media/ctest-test-explorer.png)
-
-Si usa CTest pero no los adaptadores de Google ni Boost, verá los resultados en el nivel de CTest en lugar del nivel del método de prueba individual. Puede depurar paso a paso los archivos ejecutables solo de CTest, pero no se admiten los seguimientos de la pila en las pruebas individuales.
-
-En la ilustración siguiente se muestran los resultados de una ejecución de CTest con el marco de Google Test:
-
-![CTest con el marco de Google Test en Visual Studio 2017](media/ctest-test-explorer.png)
 
 Si usa CTest pero no los adaptadores de Google ni Boost, verá los resultados en el nivel de CTest en lugar del nivel del método de prueba individual. Puede depurar paso a paso los archivos ejecutables solo de CTest, pero no se admiten los seguimientos de la pila en las pruebas individuales.
 
