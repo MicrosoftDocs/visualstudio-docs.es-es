@@ -33,7 +33,7 @@
                   href: configure-fxcop-analyzers.md
                 - name: Opciones de ámbito
                   href: fxcop-analyzer-options.md
-                - name: Conjunto de reglas predefinidas
+                - name: Habilitar una categoría de reglas
                   href: analyzer-rule-sets.md
             - name: Preguntas más frecuentes
               href: fxcop-analyzers-faq.md
