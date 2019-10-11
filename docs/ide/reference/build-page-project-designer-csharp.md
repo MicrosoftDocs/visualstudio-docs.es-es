@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 146d98701f144aacf0ff073c3099b2239ebd1872
-ms.sourcegitcommit: 85d66dc9fea3fa49018263064876b15aeb6f9584
+ms.openlocfilehash: 9f121c4a95d719074e3004ee21e0d49d71e4c243
+ms.sourcegitcommit: 7825d4163e52d724e59f6c0da209af5fbef673f7
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68461453"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "72000211"
 ---
 # <a name="build-page-project-designer-c"></a>Compilar (Página, Diseñador de proyectos) (C#)
 
@@ -34,7 +34,7 @@ Para obtener acceso a la página **Compilar**, seleccione un nodo de proyecto (n
 Las siguientes opciones le permiten seleccionar la configuración y la plataforma que se mostrarán o modificarán.
 
 > [!NOTE]
-> Con las configuraciones de compilación simplificadas, el sistema del proyecto determina si se debe compilar una versión de lanzamiento o depuración. Por tanto, estas opciones no se muestran. Para obtener más información, consulte [Instrucciones: Establecer configuraciones Debug y Release](../../debugger/how-to-set-debug-and-release-configurations.md).
+> Con las configuraciones de compilación simplificadas, el sistema del proyecto determina si se debe compilar una versión de lanzamiento o depuración. Por tanto, estas opciones no se muestran. Para obtener más información, vea [Cómo: Establecer configuraciones Debug y Release](../../debugger/how-to-set-debug-and-release-configurations.md).
 
 **Configuración**
 
@@ -42,7 +42,7 @@ Especifica qué opciones de configuración se mostrarán o modificarán. Los val
 
 **Plataforma**
 
-Especifica qué configuración de plataforma se mostrará o modificará. La configuración predeterminada es **(Cualquier CPU) activa**. Puede cambiar la plataforma activa mediante el **Administrador de configuración**. Para obtener más información, consulte [Instrucciones: Crear y editar configuraciones](../../ide/how-to-create-and-edit-configurations.md).
+Especifica qué configuración de plataforma se mostrará o modificará. La configuración predeterminada es **(Cualquier CPU) activa**. Puede cambiar la plataforma activa mediante el **Administrador de configuración**. Para obtener más información, vea [Cómo: Crear y editar configuraciones](../../ide/how-to-create-and-edit-configurations.md).
 
 ## <a name="general"></a>General
 
@@ -104,19 +104,16 @@ Bloquea la capacidad del compilador de generar una o varias advertencias. Separe
 
 Las siguientes opciones se usan para especificar qué advertencias se tratan como errores. Seleccione una de las siguientes opciones para indicar en qué condiciones se devolverá un error cuando la compilación encuentra una advertencia. Para obtener más información, consulte [/warnaserror (Opciones del compilador de C#)](/dotnet/csharp/language-reference/compiler-options/warnaserror-compiler-option).
 
-**None**
+**Ninguna**: no se trata ninguna advertencia como error.
 
-No trata ninguna advertencia como error.
+**Todas**: todas las advertencias se tratan como errores.
 
-**Advertencias específicas**
+**Advertencias específicas**: las advertencias especificadas se tratan como errores. Separe varios números de advertencia con una coma o un punto y coma.
 
-Trata las advertencias especificadas como errores. Separe varios números de advertencia con una coma o un punto y coma.
+> [!TIP]
+> Si no quiere que las advertencias de análisis de código se traten como errores, vea [Preguntas más frecuentes sobre análisis de código](../../code-quality/analyzers-faq.md#treat-warnings-as-errors).
 
-**All**
-
-Trata todas las advertencias como errores.
-
-## <a name="output"></a>Output
+## <a name="output"></a>Salida
 
 Las siguientes opciones se usan para configurar las opciones de salida para el proceso de compilación.
 
@@ -138,7 +135,7 @@ Indica que la aplicación administrada expondrá un objeto COM (un contenedor CC
 
 Especifica si el compilador usará la herramienta Generador de serializador XML (Sgen.exe) para crear ensamblados de serialización XML. Los ensamblados de serialización pueden mejorar el rendimiento de inicio de <xref:System.Xml.Serialization.XmlSerializer> si ha usado esa clase para serializar los tipos en el código. De manera predeterminada, esta opción se establece en **Automático**, que especifica que los ensamblados de serialización se generan solo si ha usado <xref:System.Xml.Serialization.XmlSerializer> para codificar los tipos del código en XML. **Desactivado** especifica que los ensamblados de serialización no se generan nunca, independientemente de si el código usa <xref:System.Xml.Serialization.XmlSerializer>. **Activado** especifica que siempre se generan ensamblados de serialización. Los ensamblados de serialización se denominan `TypeName`.XmlSerializers.dll. Para obtener más información, consulte [Herramienta Generador de serializador XML (Sgen.exe)](/dotnet/framework/serialization/xml-serializer-generator-tool-sgen-exe).
 
-**Avanzado**
+**Avanzadas**
 
 Haga clic para mostrar el cuadro de diálogo [Configuración de compilación avanzada (Cuadro de diálogo, C#)](../../ide/reference/advanced-build-settings-dialog-box-csharp.md).
 

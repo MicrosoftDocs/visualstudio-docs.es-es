@@ -1,7 +1,7 @@
 ---
 title: Actualización de una instalación basada en red
 description: Más información sobre cómo actualizar una instalación de Visual Studio basada en red con el comando --layout
-ms.date: 03/30/2019
+ms.date: 10/07/2019
 ms.custom: seodec18
 ms.topic: conceptual
 helpviewer_keywords:
@@ -15,12 +15,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: fd7277c4c42856ceea5e4da0a45d54613bf66c74
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 2157a6142f95b6ffe34503a8ee80419fcb9ca506
+ms.sourcegitcommit: 535ef05b1e553f0fc66082cd2e0998817eb2a56a
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62971373"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "72018811"
 ---
 # <a name="update-a-network-based-installation-of-visual-studio"></a>Actualización de una instalación basada en red de Visual Studio
 
@@ -42,7 +42,7 @@ Si ha seleccionado un diseño parcial al crear el diseño de red, esas opciones 
 
 ::: moniker-end
 
-Si hospeda un diseño en un recurso compartido, debe actualizar una copia privada del diseño (por ejemplo, c:\vsoffline) y, después de descargar todo el contenido actualizado, copiarla en el recurso compartido (por ejemplo,\\server\products\VS). Si no lo hace, existe una mayor probabilidad de que los usuarios que ejecutan el programa de instalación mientras se actualiza el diseño no puedan obtener todo el contenido del diseño ya que todavía no está completamente actualizado.
+Si hospeda un diseño en un recurso compartido, debe actualizar una copia privada del diseño (por ejemplo, c:\VSLayout) y, después de descargar todo el contenido actualizado, copiarla en el recurso compartido (por ejemplo,\\server\products\VS). Si no lo hace, existe una mayor probabilidad de que los usuarios que ejecutan el programa de instalación mientras se actualiza el diseño no puedan obtener todo el contenido del diseño ya que todavía no está completamente actualizado.
 
 Veamos unos cuantos ejemplos de cómo crear y actualizar un diseño:
 

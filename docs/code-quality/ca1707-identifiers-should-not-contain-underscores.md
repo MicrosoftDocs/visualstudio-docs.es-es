@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: adfa0ccd63d0433d367b0e7278693608bb83d685
-ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
+ms.openlocfilehash: 5ba9e8dda927edca08565b088cbde90d63443908
+ms.sourcegitcommit: 3e94d9fb6dc56fa8b23fbacd5d11cf8d6e7e18f1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71234271"
+ms.lasthandoff: 10/10/2019
+ms.locfileid: "72252573"
 ---
 # <a name="ca1707-identifiers-should-not-contain-underscores"></a>CA1707: Los identificadores no deben contener caracteres de subrayado
 
@@ -27,7 +27,7 @@ ms.locfileid: "71234271"
 |-|-|
 |TypeName|IdentifiersShouldNotContainUnderscores|
 |Identificador de comprobación|CA1707|
-|Categoría|Microsoft.Naming|
+|Category|Microsoft.Naming|
 |Cambio importante|Problemático: cuando se produce en ensamblados<br /><br /> No problemático: cuando se produce en parámetros de tipo|
 
 ## <a name="cause"></a>Motivo
@@ -46,9 +46,9 @@ Quite todos los caracteres de subrayado del nombre.
 
 ## <a name="when-to-suppress-warnings"></a>Cuándo suprimir advertencias
 
-No suprima las advertencias de esta regla.
+No suprima las advertencias del código de producción. Sin embargo, es seguro suprimir esta advertencia para el código de prueba. Puede suprimir las advertencias de esta regla estableciendo su [gravedad](use-roslyn-analyzers.md#rule-severity) en **ninguno**. 
 
 ## <a name="related-rules"></a>Reglas relacionadas
 
-- [CA1709: Los identificadores deben usar mayúsculas y minúsculas correctamente](../code-quality/ca1709-identifiers-should-be-cased-correctly.md)
-- [CA1708: Los identificadores deben diferir más que el uso de mayúsculas y minúsculas](../code-quality/ca1708-identifiers-should-differ-by-more-than-case.md)
+- [CA1709: Los identificadores deben tener mayúsculas y minúsculas correctamente @ no__t-0
+- [CA1708: Los identificadores deben ser diferentes en lugar de Case @ no__t-0

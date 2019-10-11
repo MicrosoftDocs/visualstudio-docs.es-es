@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 3dc304d8d6bf844fb9c23f0e92efc5250da91e4d
-ms.sourcegitcommit: 39a04f42d23597b70053686d7e927ba78f38a9a8
+ms.openlocfilehash: 277155bdab713ec12daa380fc2721a31b5d932a2
+ms.sourcegitcommit: 7825d4163e52d724e59f6c0da209af5fbef673f7
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/05/2019
-ms.locfileid: "71975138"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "72000120"
 ---
 # <a name="frequently-asked-questions-about-fxcop-and-fxcop-analyzers"></a>Preguntas más frecuentes acerca de FxCop y analizadores de FxCop
 
@@ -43,7 +43,7 @@ Para ejecutar los analizadores de FxCop, primero [instale el paquete NuGet](inst
 
 ## <a name="i-get-warning-ca0507-even-after-ive-installed-the-fxcop-analyzers-nuget-package"></a>Aparece una advertencia CA0507 incluso después de instalar el paquete de NuGet de los analizadores de FxCop
 
-Si ha instalado analizadores de FxCop pero sigue recibiendo ADVERTENCIA CA0507 **"" ejecutar análisis de código "está en desuso en favor de los analizadores de FxCop, que se ejecutan durante la compilación"** , puede que tenga que establecer la propiedad **RunCodeAnalysis** de MSBuild en el [proyecto. archivo](../ide/solutions-and-projects-in-visual-studio.md#project-file) en **false**. De lo contrario, el análisis heredado se ejecutará después de cada compilación.
+Si ha instalado analizadores de FxCop pero sigue recibiendo ADVERTENCIA CA0507 **"" ejecutar análisis de código "está en desuso en favor de los analizadores de FxCop, que se ejecutan durante la compilación"**, puede que tenga que establecer la propiedad **RunCodeAnalysis** de MSBuild en el [proyecto. archivo](../ide/solutions-and-projects-in-visual-studio.md#project-file) en **false**. De lo contrario, el análisis heredado se ejecutará después de cada compilación.
 
 ```xml
 <RunCodeAnalysis>false</RunCodeAnalysis>
@@ -52,6 +52,10 @@ Si ha instalado analizadores de FxCop pero sigue recibiendo ADVERTENCIA CA0507 *
 ## <a name="which-rules-have-been-ported-to-fxcop-analyzers"></a>¿Qué reglas se han trasladado a los analizadores de FxCop?
 
 Para obtener información sobre qué reglas de análisis heredado se han trasladado a los [analizadores de FxCop](install-fxcop-analyzers.md), consulte estado del puerto de la [regla de FxCop](fxcop-rule-port-status.md).
+
+## <a name="code-analysis-warnings-are-treated-as-errors"></a>Las advertencias de análisis de código se tratan como errores
+
+Si el proyecto utiliza la opción de compilación para tratar las advertencias como errores, las advertencias del analizador de FxCop pueden aparecer como errores. Para evitar que las advertencias de análisis de código se traten como errores, siga los pasos descritos en las [preguntas más frecuentes sobre análisis de código](../code-quality/analyzers-faq.md#treat-warnings-as-errors).
 
 ## <a name="see-also"></a>Vea también
 

@@ -6,15 +6,15 @@ manager: lank
 ms.date: 07/28/2019
 ms.topic: conceptual
 description: Consiga Visual Studio Professional o Visual Studio Enterprise mes a mes o de forma anual sin contrato a largo plazo.
-ms.openlocfilehash: dea2c32c5737cb5f2798b3d0ebdbd3398e1bc20b
-ms.sourcegitcommit: 5b34052a1c7d86179d7898ed532babb2d9dad4a3
+ms.openlocfilehash: c31a6cb89d34456678c82ce683535005f581376d
+ms.sourcegitcommit: dc12a7cb66124596089f01d3e939027ae562ede9
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "69490688"
+ms.lasthandoff: 10/04/2019
+ms.locfileid: "71962948"
 ---
 # <a name="buy-visual-studio-professional-and-visual-studio-enterprise-cloud-subscriptions"></a>Adquirir suscripciones de nube de Visual Studio Professional y Visual Studio Enterprise
-Puede adquirir [suscripciones](https://visualstudio.microsoft.com/subscriptions/) de Visual Studio Professional y Visual Studio Enterprise en [Visual Studio Marketplace](https://marketplace.visualstudio.com). Estas suscripciones se denominan **"suscripciones en la nube"**.
+Puede adquirir [suscripciones](https://visualstudio.microsoft.com/subscriptions/) de Visual Studio Professional y Visual Studio Enterprise en [Visual Studio Marketplace](https://marketplace.visualstudio.com). Estas suscripciones se denominan **"suscripciones en la nube"** .
 
 [Comparación de las ventajas y los precios de las suscripciones de nube](https://visualstudio.microsoft.com/vs/pricing/).
 
@@ -25,7 +25,7 @@ Puede adquirir [suscripciones](https://visualstudio.microsoft.com/subscriptions/
 Para facturar las compras que realice, necesita una [suscripción de Azure](https://azure.microsoft.com/pricing/purchase-options/). Puede [registrarse](https://portal.azure.com) antes de la primera compra o durante la primera compra en Visual Studio Marketplace.
 
 ## <a name="who-can-buy-visual-studio-cloud-subscriptions"></a>¿Quién puede comprar suscripciones a la nube de Visual Studio?
-Cualquier persona con acceso de [propietario](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles#owner), [administrador de servicio o coadministrador](https://docs.microsoft.com/azure/billing/billing-add-change-azure-subscription-administrator#assign-a-user-as-an-administrator-of-a-subscription) a la suscripción de Azure puede comprar suscripciones a la nube.
+Cualquier persona con acceso de [propietario](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles#owner), [administrador de servicio o coadministrador](https://docs.microsoft.com/azure/billing/billing-add-change-azure-subscription-administrator#assign-a-subscription-administrator) a la suscripción de Azure puede comprar suscripciones a la nube.
 
 ## <a name="how-to-buy-cloud-subscriptions"></a>Cómo adquirir suscripciones de nube
 
