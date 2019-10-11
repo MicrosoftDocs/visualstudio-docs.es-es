@@ -6,12 +6,12 @@ ms.author: ghogen
 ms.date: 08/12/2019
 ms.technology: vs-azure
 ms.topic: conceptual
-ms.openlocfilehash: 06a1c5b637ca2ed9306162ee1960c60d103e5843
-ms.sourcegitcommit: 88f576ac32af31613c1a10c1548275e1ce029f4f
+ms.openlocfilehash: 2178881c6ea0e597aef5e25074e3648162d3f6e9
+ms.sourcegitcommit: 6ae0a289f1654dec63b412bfa22035511a2ef5ad
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/23/2019
-ms.locfileid: "71185984"
+ms.lasthandoff: 10/04/2019
+ms.locfileid: "71950639"
 ---
 # <a name="docker-compose-build-properties"></a>Propiedades de compilación de Docker Compose
 
@@ -46,7 +46,7 @@ En la tabla siguiente se muestran las propiedades de MSBuild disponibles para pr
 |DockerTargetOS| dcproj | El sistema operativo de destino que se usa al compilar la imagen de Docker.|-|
 
 > [!NOTE]
-> DockerComposeBuildArguments, DockerComposeDownArguments y DockerComposeUpArguments son nuevos en Visual Studio 2019 16.3, versión preliminar 3.
+> DockerComposeBuildArguments, DockerComposeDownArguments y DockerComposeUpArguments son nuevos en Visual Studio 2019 versión 16.3.
 
 ## <a name="docker-compose-file-labels"></a>Etiquetas de archivo de Docker Compose
 

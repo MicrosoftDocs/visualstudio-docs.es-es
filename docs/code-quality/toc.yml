@@ -532,11 +532,11 @@
                   displayName: portability warnings
                   href: portability-warnings.md
                 - name: 'CA1900: Los campos de tipo de valor deben ser portátiles'
-                  href: ca1900-value-type-fields-should-be-portable.md
+                  href: ca1900.md
                 - name: 'CA1901: Las declaraciones P-Invoke deben ser portátiles'
-                  href: ca1901-p-invoke-declarations-should-be-portable.md
+                  href: ca1901.md
                 - name: 'CA1903: Usar solo API de la versión de .NET Framework de destino'
-                  href: ca1903-use-only-api-from-targeted-framework.md
+                  href: ca1903.md
             - name: Advertencias de confiabilidad
               items:
                 - name: Información general
@@ -847,7 +847,7 @@
       href: quick-start-code-analysis-for-c-cpp.md
     - name: Analizar código de C/C++ en previsión de defectos
       href: walkthrough-analyzing-c-cpp-code-for-defects.md
-    - name: Ejemplo de demostración
+    - name: Proyecto de ejemplo
       href: demo-sample.md
     - name: Usar los comprobadores de C++ Core Guidelines
       href: using-the-cpp-core-guidelines-checkers.md
@@ -855,6 +855,8 @@
       href: how-to-set-code-analysis-properties-for-c-cpp-projects.md
     - name: Conjuntos de reglas para código C++
       href: using-rule-sets-to-specify-the-cpp-rules-to-run.md
+    - name: Uso de Clang-Tidy
+      href: clang-tidy.md
     - name: Uso de anotaciones SAL para reducir defectos de código
       items:
         - name: Información general

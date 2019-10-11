@@ -11,12 +11,12 @@ ms.author: mblome
 manager: markl
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b14737c09cf7ff2b14eda1f61408b531b9c22c14
-ms.sourcegitcommit: 535ef05b1e553f0fc66082cd2e0998817eb2a56a
-ms.translationtype: HT
+ms.openlocfilehash: 2c68bb94a66be2c9fc1da4365cb77adf8d1330a1
+ms.sourcegitcommit: e95dd8cedcd180e0bce6a75c86cf861757918290
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "72018370"
+ms.lasthandoff: 10/09/2019
+ms.locfileid: "72163018"
 ---
 # <a name="quickstart-code-analysis-for-cc"></a>Inicio rápido: Análisis de código para C/C++
 
@@ -26,24 +26,11 @@ Se puede mejorar la calidad de la aplicación si se analiza con regularidad el c
 
 1. En **Explorador de soluciones**, abra el menú contextual del nombre del proyecto y, a continuación, elija **propiedades**.
 
-2. Los pasos siguientes son opcionales:
+2. Opcionalmente, en las listas **configuración** y **plataforma** , elija la configuración de compilación y la plataforma de destino.
 
-    1. En las listas **configuración** y **plataforma** , elija la configuración de compilación y la plataforma de destino.
+3. Para ejecutar análisis de código cada vez que se compila el proyecto con la configuración seleccionada, seleccione el **Habilitar análisis de código al compilar** casilla de verificación. También puede ejecutar el análisis de código manualmente si abre el menú **analizar** y, a continuación, elige **Ejecutar Análisis de código en** *projectname* o **Ejecutar Análisis de código en el archivo**.
 
-    2. De forma predeterminada, el análisis de código no notifica las advertencias de código generadas automáticamente por herramientas externas. Para ver las advertencias de código generado, desactive la **Suprimir resultados del código generado** casilla de verificación.
-
-        > [!NOTE]
-        > Esta opción no suprime los errores ni las advertencias del análisis de código generado cuando aparecen en formularios y plantillas. Puede ver y mantener el código fuente de un formulario o una plantilla.
-
-3. Para ejecutar el análisis de código cada vez que se compila el proyecto con la configuración seleccionada, active la casilla **Habilitar análisisC++ de código para C/al compilar** . También puede ejecutar el análisis de código manualmente si abre el menú **analizar** y, a continuación, elige **Ejecutar Análisis de código en** *projectname*.
-
-4. En el **ejecutar este conjunto de reglas** lista, realice una de las siguientes acciones:
-
-    - Elija el conjunto de reglas que desee usar.
-
-    - Elija **\<Browse >** para especificar un conjunto de reglas personalizado existente que no esté en la lista.
-
-    - Definir un [conjunto de reglas personalizado](../code-quality/how-to-create-a-custom-rule-set.md).
+4. Elija el [conjunto de reglas](../code-quality/using-rule-sets-to-specify-the-cpp-rules-to-run.md) que desea usar o cree un [conjunto de reglas personalizado](../code-quality/how-to-create-a-custom-rule-set.md). Si usa LLVM/Clang-cl, consulte [uso de Clang-ordenado en Visual Studio](../code-quality/clang-tidy.md) para configurar opciones de análisis de Clang.
 
 ### <a name="standard-cc-rule-sets"></a>Conjuntos de reglas estándar de C o C++
 
@@ -56,17 +43,23 @@ Visual Studio incluye dos conjuntos de reglas estándar para código nativo:
 
 ## <a name="run-code-analysis"></a>Ejecutar análisis de código
 
-En la página de análisis de código de las páginas de propiedades de proyecto se puede configurar el análisis de código para que se ejecute siempre que se compile el proyecto. También se puede ejecutar el análisis de código de forma manual.
+En la página Análisis de código de la página de propiedades del proyecto, puede configurar el análisis de código para que se ejecute cada vez que compile el proyecto. También se puede ejecutar el análisis de código de forma manual.
 
 Para ejecutar el análisis de código en una solución:
 
-- En el menú **Compilar**, elija **Ejecutar análisis de código en la solución**.
+- En el menú **compilar** , elija **Ejecutar Análisis de código en la solución**.
 
 Para ejecutar el análisis de código en proyecto:
 
-1. En el Explorador de soluciones, elija el nombre del proyecto.
+1. En el Explorador de soluciones, seleccione el nombre del proyecto.
 
 2. En el menú **compilar** , elija **Ejecutar Análisis de código en** *nombre del proyecto*.
+
+Para ejecutar el análisis de código en un archivo:
+
+1. En el Explorador de soluciones, seleccione el nombre del archivo.
+
+2. En el menú **compilar** , elija **Ejecutar Análisis de código en el archivo** o presione **Ctrl + Mayús + Alt + F7**.
 
    La solución o proyecto se compila y se ejecuta el análisis de código. Los resultados aparecen en el Lista de errores.
 
@@ -116,4 +109,4 @@ Puedes buscar en las listas largas de mensajes de advertencia y filtrar las adve
 
 ## <a name="see-also"></a>Vea también
 
-[Análisis de código para C/C++](../code-quality/code-analysis-for-c-cpp-overview.md)
+- [Análisis de código para C/C++](../code-quality/code-analysis-for-c-cpp-overview.md)
