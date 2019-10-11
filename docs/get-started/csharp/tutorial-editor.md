@@ -12,12 +12,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: 517437bb1042d052520019c10899173cbc0bf988
-ms.sourcegitcommit: 44e9b1d9230fcbbd081ee81be9d4be8a485d8502
+ms.openlocfilehash: 5bbca5e46ee83764a6a431ae13829a882b1d859f
+ms.sourcegitcommit: 39a04f42d23597b70053686d7e927ba78f38a9a8
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/30/2019
-ms.locfileid: "70180250"
+ms.lasthandoff: 10/05/2019
+ms.locfileid: "71975158"
 ---
 # <a name="learn-to-use-the-code-editor"></a>Aprender a usar el editor de código
 
@@ -58,7 +58,7 @@ Empezaremos creando un archivo y agregándole código.
 
 ::: moniker-end
 
-2. En el menú **Archivo** de la barra de menús, elija **Nuevo** > **Archivo**.
+2. En el menú **Archivo** de la barra de menús, elija **Nuevo** > **Archivo** o presione **Ctrl**+**N**.
 
 3. En el cuadro de diálogo **Nuevo archivo**, en la categoría **General**, elija **Clase de Visual C#** y, después, elija **Abrir**.
 
@@ -80,7 +80,7 @@ Visual Studio proporciona *fragmentos de código* muy prácticos que pueden serv
 
    Verá cómo la firma del método `static void Main()` se agrega al archivo. El método [Main()](/dotnet/csharp/programming-guide/main-and-command-args/) es el punto de entrada de las aplicaciones de C#.
 
-Los fragmentos de código disponibles varían según el lenguaje de programación. Para ver los fragmentos de código disponibles para el lenguaje, seleccione **Editar** > **IntelliSense** > **Insertar fragmento de código** y luego elija la carpeta del lenguaje. En C#, la lista tiene el siguiente aspecto:
+Los fragmentos de código disponibles varían según el lenguaje de programación. Para ver los fragmentos de código disponibles para el lenguaje, seleccione **Editar** > **IntelliSense** > **Insertar fragmento de código** o presione **Ctrl**+**K**, **Ctrl**+**X** y, después, elija la carpeta del lenguaje. En C#, la lista tiene el siguiente aspecto:
 
 ![Lista de fragmentos de código de C#](../media/tutorial-code-snippet-list.png)
 

@@ -10,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 772b80452c20d84b1145a5b8762365f2fe3a8e69
-ms.sourcegitcommit: 6eed0372976c0167b9a6d42ba443f9a474b8bb91
+ms.openlocfilehash: f31153dab172451681b5e1eb8292f505141c2ff9
+ms.sourcegitcommit: 6ae0a289f1654dec63b412bfa22035511a2ef5ad
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/19/2019
-ms.locfileid: "71118833"
+ms.lasthandoff: 10/04/2019
+ms.locfileid: "71950716"
 ---
 # <a name="step-2-run-your-picture-viewer-app"></a>Paso 2: Ejecución de la aplicación de visor de imágenes
 
@@ -55,7 +55,7 @@ Aquí se muestra cómo ejecutar la aplicación.
     - Elija el botón **X** de la esquina superior derecha de la ventana **Form1**.
 
     > [!NOTE]
-    > Al ejecutar la aplicación desde dentro del IDE, se denomina depuración, ya que normalmente se hace para buscar y corregir errores en la aplicación. Aunque esta aplicación es pequeña y en realidad no hace nada todavía, es un programa real. Siga el mismo procedimiento para ejecutar y depurar otros programas. Para más información sobre la depuración, vea [Primer vistazo al depurador](../debugger/debugger-feature-tour.md).
+    > Al ejecutar la aplicación desde dentro del IDE, se denomina depuración, ya que normalmente se hace para buscar y corregir errores en la aplicación. Aunque esta aplicación es pequeña y no es gran cosa todavía, es un programa real. Siga el mismo procedimiento para ejecutar y depurar otros programas. Para más información sobre la depuración, vea [Primer vistazo al depurador](../debugger/debugger-feature-tour.md).
 
 ## <a name="next-steps"></a>Pasos siguientes
 

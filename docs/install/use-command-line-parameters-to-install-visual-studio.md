@@ -2,7 +2,7 @@
 title: Usar parámetros de la línea de comandos para instalar Visual Studio
 titleSuffix: ''
 description: Obtenga información sobre cómo usar parámetros de línea de comandos para controlar o personalizar la instalación de Visual Studio.
-ms.date: 09/11/2019
+ms.date: 10/07/2019
 ms.custom: seodec18
 ms.topic: conceptual
 f1_keywords:
@@ -17,12 +17,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 1f9e5d1dadd9caf95b8e6cb8e5fec70daf984ac9
-ms.sourcegitcommit: b60a00ac3165364ee0e53f7f6faef8e9fe59ec4a
+ms.openlocfilehash: 306928b7a28465923ae0a5e2cc7773094458594e
+ms.sourcegitcommit: 535ef05b1e553f0fc66082cd2e0998817eb2a56a
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/11/2019
-ms.locfileid: "70913243"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "72018808"
 ---
 # <a name="use-command-line-parameters-to-install-visual-studio"></a>Usar parámetros de la línea de comandos para instalar Visual Studio
 
@@ -32,23 +32,30 @@ Cuando instala Visual Studio desde un símbolo del sistema, puede usar diversos 
 - Automatizar el proceso de instalación.
 - Crear una caché (diseño) de los archivos de instalación para su uso posterior.
 
-Las opciones de la línea de comandos se usan junto con el programa previo de instalación, que es el archivo pequeño (de 1 MB) que inicia el proceso de descarga. El programa previo es el primer ejecutable que se inicia cuando se realiza la descarga desde el sitio de Visual Studio. Use los vínculos siguientes para obtener un vínculo directo a la versión más reciente del programa previo para la edición del producto que está instalando:
+Las opciones de la línea de comandos se usan junto con el programa previo de instalación, que es el archivo pequeño (de 1 MB) que inicia el proceso de descarga. El programa previo es el primer ejecutable que se inicia cuando se realiza la descarga desde el sitio de Visual Studio.
 
 ::: moniker range="vs-2017"
 
-- [Visual Studio 2017 Enterprise](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=enterprise&rel=15&utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=link+cta&utm_content=download+commandline+parameters+vs2017)
-- [Visual Studio 2017 Professional](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=professional&rel=15&utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=link+cta&utm_content=download+commandline+parameters+vs2017)
-- [Visual Studio 2017 Community](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=community&rel=15&utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=link+cta&utm_content=download+commandline+parameters+vs2017)
+Para obtener un programa previo de Visual Studio 2017, consulte la página de descarga de [**versiones anteriores de Visual Studio**](https://visualstudio.microsoft.com/vs/older-downloads/) y obtenga información detallada sobre cómo hacerlo.
 
 ::: moniker-end
 
 ::: moniker range="vs-2019"
+
+Use los vínculos siguientes para obtener un vínculo directo a la versión más reciente del programa previo para la edición del producto que está instalando:
 
 - [Visual Studio 2019 Enterprise](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=enterprise&rel=16&utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=link+cta&utm_content=download+commandline+parameters+vs2019+rc)
 - [Visual Studio 2019 Professional](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=professional&rel=16&utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=link+cta&utm_content=download+commandline+parameters+vs2019+rc)
 - [Visual Studio 2019 Community](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=community&rel=16&utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=link+cta&utm_content=download+commandline+parameters+vs2019+rc)
 
 ::: moniker-end
+
+
+El archivo del programa previo debe corresponderse o ser parecido a uno de los siguientes:
+
+* vs_enterprise.exe
+* vs_professional.exe
+* vs_community.exe
 
 ## <a name="command-line-parameters"></a>Parámetros de la línea de comandos
 
