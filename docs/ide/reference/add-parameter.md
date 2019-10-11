@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 3e1461afe5c4d6026f8532896ba837e971fed652
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 4dbed81809cb3b69814fbf10dde7129b45396eaa
+ms.sourcegitcommit: 7825d4163e52d724e59f6c0da209af5fbef673f7
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62792268"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "72000199"
 ---
 # <a name="add-a-parameter-to-a-method-using-a-quick-action"></a>Incorporación de un parámetro a un método mediante una acción rápida
 
@@ -32,14 +32,14 @@ Esta generación de código se aplica a:
 
 1. Agregue un argumento adicional a una llamada al método.
 
-   Un "ondulado" rojo aparece bajo el nombre del método donde lo llamó.
+   Un ondulado rojo aparece bajo el nombre del método donde lo llamó.
 
-2. Coloque el puntero sobre el "ondulado" rojo hasta que aparezca el menú Acciones rápidas. Seleccione la **flecha abajo** en el menú Acciones rápidas y luego seleccione **Agregar parámetro a [método]**.
+2. Coloque el puntero sobre el ondulado rojo hasta que aparezca el menú Acciones rápidas. Seleccione la **flecha abajo** en el menú Acciones rápidas y luego seleccione **Agregar parámetro a [método]** .
 
    ![Incorporación de un parámetro a la acción rápida del método en Visual Studio](media/add-parameter-to-method.png)
 
    > [!TIP]
-   > También puede acceder al menú Acciones rápidas colocando el cursor en la línea de la llamada al método y luego presionando **Ctrl**+**.** O bien, seleccione el icono de bombilla en el margen del archivo.
+   > También puede acceder al menú Acciones rápidas colocando el cursor en la línea de la llamada al método y luego presionando **Ctrl**+ **.** (punto), o bien seleccionando el icono de bombilla en el margen del archivo.
 
    Visual Studio agrega el nuevo parámetro a la declaración del método.
 

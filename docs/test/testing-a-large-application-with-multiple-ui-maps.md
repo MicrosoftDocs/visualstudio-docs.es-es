@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4eb49e4e84f61e817e3df8bbbdd20c6922d180ee
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 9cb534fc08706ef56ebbc85afe1500e4424196ad
+ms.sourcegitcommit: 535ef05b1e553f0fc66082cd2e0998817eb2a56a
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68926739"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "72018892"
 ---
 # <a name="test-a-large-application-with-multiple-ui-maps"></a>Probar una aplicación grande con varias asignaciones de IU
 

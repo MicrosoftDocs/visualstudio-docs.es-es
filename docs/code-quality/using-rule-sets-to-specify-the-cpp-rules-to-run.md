@@ -4,15 +4,15 @@ ms.date: 04/28/2018
 ms.topic: conceptual
 author: mikeblome
 ms.author: mblome
-manager: wpickett
+manager: markl
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 7e14602c3eeb204255f699b0ff07164616da4a25
-ms.sourcegitcommit: 39a04f42d23597b70053686d7e927ba78f38a9a8
-ms.translationtype: MT
+ms.openlocfilehash: 061b52a683992bdc2fe5792ab05e00f788434a0f
+ms.sourcegitcommit: 535ef05b1e553f0fc66082cd2e0998817eb2a56a
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/05/2019
-ms.locfileid: "71974917"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "72018225"
 ---
 # <a name="use-rule-sets-to-specify-the-c-rules-to-run"></a>Usar conjuntos de reglas para especificar C++ las reglas que se van a ejecutar
 
@@ -62,7 +62,7 @@ Para crear un nuevo conjunto de reglas personalizado, guárdelo con un nuevo nom
 
 - Para contraer las reglas de todos los grupos, elija **contraer todo**.
 
-- Para cambiar el campo por el que se agrupan las reglas, elija el campo en la lista **Agrupar por** . Para mostrar las reglas no agrupadas, elija **\<None >** .
+- Para cambiar el campo por el que se agrupan las reglas, elija el campo en la lista **Agrupar por** . Para mostrar las reglas no agrupadas, elija **\<None >**.
 
 - Para agregar o quitar campos en columnas de regla, elija **Opciones de columna**.
 

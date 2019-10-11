@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 30ee7364ba925eebb18d66fc8ede2b7983d46116
-ms.sourcegitcommit: ea182703e922c74725045afc251bcebac305068a
+ms.openlocfilehash: 331c346e7322543bef0814818a776c705b773846
+ms.sourcegitcommit: 7825d4163e52d724e59f6c0da209af5fbef673f7
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71211369"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "72000181"
 ---
 # <a name="make-code-work-in-visual-studio"></a>Hacer que el código funcione en Visual Studio
 
@@ -74,7 +74,7 @@ Los analizadores de código busca problemas comunes de código que pueden dar lu
 
 ### <a name="c-and-visual-basic-code-analysis"></a>Análisis de código de C# y Visual Basic
 
-Visual Studio incluye un conjunto integrado de [analizadores de .NET Compiler Platform](../code-quality/roslyn-analyzers-overview.md) que examinan el código de C# y Visual Basic mientras escribe. Puede instalar analizadores adicionales como una extensión de Visual Studio, o como un paquete de NuGet. Si se detectan infracciones de reglas, se notifican en el editor de código con un subrayado ondulado bajo el código incorrecto y en la **lista de errores**.
+Visual Studio incluye un conjunto integrado de [analizadores de .NET Compiler Platform](../code-quality/roslyn-analyzers-overview.md) que examinan el código de C# y Visual Basic mientras escribe. Puede instalar analizadores adicionales como una extensión de Visual Studio, o como un paquete de NuGet. Si se detectan infracciones de reglas, se indican tanto en la lista de errores como en el editor de código con un subrayado ondulado bajo el código incorrecto.
 
 ### <a name="c-code-analysis"></a>Análisis de código de C++
 

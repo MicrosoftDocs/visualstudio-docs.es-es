@@ -18,15 +18,15 @@ helpviewer_keywords:
 ms.assetid: 81f0c9e8-f471-4de5-aac4-99db336a8809
 author: mikeblome
 ms.author: mblome
-manager: wpickett
+manager: markl
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f7b0e29f6a9a502054b59fc7313c3eff0565f938
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
-ms.translationtype: MT
+ms.openlocfilehash: 493db26aed1a4e5f41acdd054dba266577159809
+ms.sourcegitcommit: 535ef05b1e553f0fc66082cd2e0998817eb2a56a
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68919885"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "72018488"
 ---
 # <a name="code-analysis-for-cc-overview"></a>Análisis de código para obtener información general de C/C++
 
@@ -50,7 +50,7 @@ C:\>cl /analyze Sample.cpp
 
 ## <a name="pragma-support"></a>compatibilidad con #pragma
 
-Puede utilizar la `#pragma` Directiva para tratar advertencias como errores; habilitar o deshabilitar advertencias y suprimir advertencias para líneas de código individuales. Para obtener más información, vea [Directives pragma y la palabra clave __pragma](https://docs.microsoft.com/cpp/preprocessor/pragma-directives-and-the-pragma-keyword).
+Puede usar la Directiva `#pragma` para tratar las advertencias como errores. habilitar o deshabilitar advertencias y suprimir advertencias para líneas de código individuales. Para obtener más información, vea [Directives pragma y la palabra clave __pragma](https://docs.microsoft.com/cpp/preprocessor/pragma-directives-and-the-pragma-keyword).
 
 ## <a name="annotation-support"></a>Compatibilidad con anotaciones
 
@@ -66,8 +66,8 @@ Puede usar las características integradas del sistema de compilación para ejec
 
 ## <a name="see-also"></a>Vea también
 
-- [Inicio rápido: Análisis de código para C/C++](quick-start-code-analysis-for-c-cpp.md)
-- [Tutorial: Analizar C/C++ code para detectar defectos](walkthrough-analyzing-c-cpp-code-for-defects.md)
+- [Inicio rápido: Análisis de código para CC++/](quick-start-code-analysis-for-c-cpp.md)
+- [Tutorial: Analizar C/C++ code para los defectos @ no__t-1
 - [Análisis de código para advertencias de C/C++](code-analysis-for-c-cpp-warnings.md)
 - [Usar los comprobadores de C++ Core Guidelines](using-the-cpp-core-guidelines-checkers.md)
 - [C++Referencia del comprobador de directrices básicas](code-analysis-for-cpp-corecheck.md)

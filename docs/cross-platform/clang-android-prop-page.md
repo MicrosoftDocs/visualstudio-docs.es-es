@@ -5,8 +5,8 @@ ms.date: 10/23/2017
 ms.technology: vs-ide-mobile
 ms.topic: conceptual
 ms.assetid: 663140ea-a568-472b-a79a-dfea8818e06a
-author: corob
-ms.author: mblome
+author: corob-msft
+ms.author: corob
 manager: jillfra
 f1_keywords:
 - VC.Project.VCClangCompilerTool.AdditionalIncludeDirectories
@@ -43,19 +43,19 @@ f1_keywords:
 - vc.project.AdditionalOptionsPage
 ms.workload:
 - xplat-cplusplus
-ms.openlocfilehash: 055ec15deed2e5071c50d9903779d00030e07b02
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 7c64ccedaeb8c13e353daaba0aeec0a388885bdf
+ms.sourcegitcommit: 6ae0a289f1654dec63b412bfa22035511a2ef5ad
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62819922"
+ms.lasthandoff: 10/04/2019
+ms.locfileid: "71950656"
 ---
 # <a name="clang-project-properties-android-c"></a>Propiedades de proyectos Clang (C++ para Android)
 
-Propiedad. | Descripción | Opciones
+Propiedad. | DESCRIPCIÓN | Opciones
 --- | ---| ---
 Directorios de inclusión adicionales | Especifica uno o más directorios que se agregarán a la ruta de acceso de inclusión; si hay más de uno, sepárelos mediante punto y coma. (-I[ruta_de_acceso]).
-Formato de información de depuración | Especifica el tipo de información de depuración generado por el compilador. | **Ninguno**: no produce información de depuración, por lo que la compilación puede ser más rápida.<br>**Información de depuración completa (DWARF2)**: genera información de depuración DWARF2.<br>**Información de número de línea**: genera únicamente información de número de línea.<br>
+Formato de información de depuración | Especifica el tipo de información de depuración generado por el compilador. | **Ninguno**: no produce información de depuración, por lo que la compilación puede ser más rápida.<br>**Información de depuración completa (DWARF2)** : genera información de depuración DWARF2.<br>**Información de número de línea**: genera únicamente información de número de línea.<br>
 Nombre de archivo objeto | Especifica un nombre para reemplazar el nombre del archivo objeto predeterminado. Puede ser un nombre de archivo o de directorio. (/Fo[nombre]).
 Nivel de advertencia | Permite seleccionar cómo será de estricto el compilador en cuanto a los errores de código.  Las otras marcas deben agregarse directamente a Opciones adicionales. (/w, /Weverything). | **Desactivar todas las advertencias**: deshabilita todas las advertencias del compilador.<br>**Habilitar todas las advertencias**: habilita todas las advertencias, incluidas las deshabilitadas de manera predeterminada.<br>
 Tratar advertencias como errores | Trata todas las advertencias del compilador como errores. Para un proyecto nuevo, puede ser mejor usar /WX en todas las compilaciones. Resolver todas las advertencias es una forma de asegurar el menor número posible de defectos de código difíciles de encontrar.
@@ -72,8 +72,8 @@ Comprobación de seguridad | La comprobación de seguridad ayuda a detectar desb
 Código independiente de posición | Genera código independiente de posición (PIC) para usarlo en una biblioteca compartida.
 Usar enumeraciones breves | El tipo de enumeración usa solo los bytes que necesita el conjunto de entrada de valores posibles.
 Habilitar información de tipo en tiempo de ejecución | Agrega código para comprobar los tipos de objetos de C++ en tiempo de ejecución (información de tipo en tiempo de ejecución).     (frtti, fno-rtti).
-Estándar de lenguaje C | Determina el estándar de lenguaje C. | **Predetermiado**<br>**C89**: estándar de lenguaje C89.<br>**C99**: estándar de lenguaje C99.<br>**C11**: estándar de lenguaje C11.<br>**C99 (dialecto GNU)**: estándar de lenguaje C99 (dialecto GNU).<br>**C11 (dialecto GNU)**: estándar de lenguaje C11 (dialecto GNU).<br>
-Estándar de lenguaje C++ | Determina el estándar de lenguaje C++. | **Predetermiado**<br>**C++03**: estándar de lenguaje C++03.<br>**C++11**: estándar de lenguaje C++11.<br>**C++14**: estándar de lenguaje C++14.<br>**C++03 (dialecto GNU)**: estándar de lenguaje C++03 (dialecto GNU).<br>**C++11 (dialecto GNU)**: estándar de lenguaje C++11 (dialecto GNU).<br>**C++14 (dialecto GNU)**: estándar de lenguaje C++14 (dialecto GNU).<br>
+Estándar de lenguaje C | Determina el estándar de lenguaje C. | **Predetermiado**<br>**C89**: estándar de lenguaje C89.<br>**C99**: estándar de lenguaje C99.<br>**C11**: estándar de lenguaje C11.<br>**C99 (dialecto GNU)** : estándar de lenguaje C99 (dialecto GNU).<br>**C11 (dialecto GNU)** : estándar de lenguaje C11 (dialecto GNU).<br>
+Estándar de lenguaje C++ | Determina el estándar de lenguaje C++. | **Predetermiado**<br>**C++03**: estándar de lenguaje C++03.<br>**C++11**: estándar de lenguaje C++11.<br>**C++14**: estándar de lenguaje C++14.<br>**C++03 (dialecto GNU)** : estándar de lenguaje C++03 (dialecto GNU).<br>**C++11 (dialecto GNU)** : estándar de lenguaje C++11 (dialecto GNU).<br>**C++14 (dialecto GNU)** : estándar de lenguaje C++14 (dialecto GNU).<br>
 Definiciones de preprocesador | Define un símbolo de preprocesamiento para el archivo de código fuente. (-D).
 Anular definiciones del preprocesador | Especifica la anulación de una o varias definiciones del preprocesador.  (-U [macro]).
 Anular todas las definiciones del preprocesador | Anula la definición de todos los valores del preprocesador definidos previamente.  (-undef).
@@ -81,8 +81,8 @@ Mostrar inclusiones | Genera una lista de archivos de inclusión con los resulta
 Encabezado precompilado | Crear o usar encabezado precompilado: habilita la creación o el uso de un encabezado precompilado durante la compilación. | **Usar**: se usa un encabezado precompilado.<br>**No usar encabezados precompilados**: no se usa ningún encabezado precompilado.<br>
 Archivo de encabezado precompilado | Especifica un nombre de archivo de encabezado que se va a usar para un archivo de encabezado precompilado. Este archivo también se agregará a "Archivos de inclusión obligatorios" durante la compilación.
 Directorio de archivos de salida del encabezado precompilado | Especifica el directorio del encabezado precompilado generado. Este directorio también se agregará a "Directorios de inclusión adicionales" durante la compilación.
-Compilar encabezado precompilado como | Seleccione la opción de lenguaje de compilación para el archivo de encabezado precompilado (-x c-header, -x c++-header). | **Compilar como código de C**: compila como código de C.<br>**Compilar como código de C++**: compila como código de C++.<br>
-Compilar como | Permite seleccionar la opción de lenguaje de compilación para los archivos .c y .cpp.  En la opción "Predeterminado", la detección se realizará en función de la extensión ".c" o ".cpp". (-x c, -x c++). | **Predeterminado**: opción predeterminada.<br>**Compilar como código de C**: compila como código de C.<br>**Compilar como código de C++**: compila como código de C++.<br>
+Compilar encabezado precompilado como | Seleccione la opción de lenguaje de compilación para el archivo de encabezado precompilado (-x c-header, -x c++-header). | **Compilar como código de C**: compila como código de C.<br>**Compilar como código de C++** : compila como código de C++.<br>
+Compilar como | Permite seleccionar la opción de lenguaje de compilación para los archivos .c y .cpp.  En la opción "Predeterminado", la detección se realizará en función de la extensión ".c" o ".cpp". (-x c, -x c++). | **Predeterminado**: opción predeterminada.<br>**Compilar como código de C**: compila como código de C.<br>**Compilar como código de C++** : compila como código de C++.<br>
 Archivos de inclusión obligatorios | Uno o más archivos de inclusión obligatorios.     (-include [nombre]).
 Compilación multiprocesador | Compilación multiprocesador.
 Opciones adicionales | Opciones adicionales.
