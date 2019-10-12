@@ -2,7 +2,7 @@
 title: Instalar Visual Studio
 titleSuffix: ''
 description: Obtenga información sobre cómo instalar Visual Studio, paso a paso.
-ms.date: 04/16/2019
+ms.date: 10/07/2019
 ms.custom: seodec18
 ms.topic: conceptual
 f1_keywords:
@@ -20,12 +20,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 5d83086720a94c23d0ceb3f07d9398a7d5256f68
-ms.sourcegitcommit: 6993bcb0d2b0067b1b7b7899bfba52c31c70b7e7
+ms.openlocfilehash: 6cd91fadea397955b756461383ed8e17030b4c3b
+ms.sourcegitcommit: 535ef05b1e553f0fc66082cd2e0998817eb2a56a
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/18/2019
-ms.locfileid: "71095361"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "72018855"
 ---
 # <a name="install-visual-studio"></a>Instalar Visual Studio
 
@@ -82,7 +82,7 @@ Antes de comenzar la instalación de Visual Studio:
 
 1. Reinicie el equipo. El reinicio garantiza que cualquier actualización o instalación pendiente no dificultará la instalación de Visual Studio.
 
-1. Libere espacio. Quite los archivos y aplicaciones innecesarios de %SystemDrive% ejecutando, por ejemplo, la aplicación Liberar espacio. 
+1. Libere espacio. Quite los archivos y aplicaciones innecesarios de %SystemDrive% ejecutando, por ejemplo, la aplicación Liberar espacio.
 
 ::: moniker-end
 
@@ -100,16 +100,17 @@ Si tiene dudas sobre cómo ejecutar versiones anteriores de Visual Studio en pa
 
 ## <a name="step-2---download-visual-studio"></a>Paso2: Descargar Visual Studio
 
-A continuación, descargue el archivo de programa previo de Visual Studio. Para ello, elija el siguiente botón, la edición de Visual Studio que quiera instalar, **Guardar** y, por último, **Abrir carpeta**.
+A continuación, descargue el archivo de programa previo de Visual Studio.
 
 ::: moniker range="vs-2017"
 
- > [!div class="button"]
- > [Descarga de Visual Studio](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download)
+Para obtener un programa previo de Visual Studio 2017, consulte la página de descarga de [versiones anteriores de Visual Studio](https://visualstudio.microsoft.com/vs/older-downloads/) y obtenga información detallada sobre cómo hacerlo.
 
 ::: moniker-end
 
 ::: moniker range="vs-2019"
+
+Para ello, elija el siguiente botón, la edición de Visual Studio que quiera instalar, **Guardar** y, por último, **Abrir carpeta**.
 
  > [!div class="button"]
  > [Descarga de Visual Studio](https://visualstudio.microsoft.com/downloads)
@@ -250,7 +251,7 @@ Para obtener más información, vea la página [Selección de las ubicaciones de
 
 1. En el cuadro de búsqueda, escriba el tipo de aplicación que quiera crear para ver una lista de plantillas disponibles. La lista de plantillas depende de las cargas de trabajo que eligió durante la instalación. Para ver diferentes plantillas, elija diferentes cargas de trabajo.
 
-   También puede filtrar la búsqueda de un lenguaje de programación específico mediante la lista desplegable **Lenguaje**. Además, puede filtrar mediante la lista **Plataforma** y la lista **Tipo de proyecto**. 
+   También puede filtrar la búsqueda de un lenguaje de programación específico mediante la lista desplegable **Lenguaje**. Además, puede filtrar mediante la lista **Plataforma** y la lista **Tipo de proyecto**.
 
 1. Visual Studio abre el nuevo proyecto y ya se puede empezar programar.
 

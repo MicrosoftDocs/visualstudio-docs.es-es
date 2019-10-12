@@ -2,23 +2,25 @@
 title: Usar conjuntos de reglas para especificar las reglas C++ que se van a ejecutar
 ms.date: 04/28/2018
 ms.topic: conceptual
+f1_keywords:
+- vs.codeanalysis.rulesets.native
 author: mikeblome
 ms.author: mblome
-manager: wpickett
+manager: markl
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 7e14602c3eeb204255f699b0ff07164616da4a25
-ms.sourcegitcommit: 39a04f42d23597b70053686d7e927ba78f38a9a8
+ms.openlocfilehash: 64421350f74a2fadcb8a4d4845d8aa00a5f5813b
+ms.sourcegitcommit: e95dd8cedcd180e0bce6a75c86cf861757918290
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/05/2019
-ms.locfileid: "71974917"
+ms.lasthandoff: 10/09/2019
+ms.locfileid: "72163103"
 ---
 # <a name="use-rule-sets-to-specify-the-c-rules-to-run"></a>Usar conjuntos de reglas para especificar C++ las reglas que se van a ejecutar
 
 En Visual Studio, puede crear y modificar un conjunto de *reglas* personalizado para satisfacer las necesidades específicas del proyecto asociadas con el análisis de código. Los conjuntos de reglas predeterminados se almacenan en `%VSINSTALLDIR%\Team Tools\Static Analysis Tools\Rule Sets`.
 
-**Visual Studio 2017 versión 15,7 y versiones posteriores** Puede crear conjuntos de reglas personalizadas mediante cualquier editor de texto y aplicarlos en compilaciones de línea de comandos, independientemente del sistema de compilación que esté usando. Para obtener más información, vea [/Analyze: ruleset](/cpp/build/reference/analyze-code-analysis).
+**Visual Studio 2017, versión 15.7 y posteriores:** Puede crear conjuntos de reglas personalizadas mediante cualquier editor de texto y aplicarlos en compilaciones de línea de comandos, independientemente del sistema de compilación que esté usando. Para obtener más información, vea [/Analyze: ruleset](/cpp/build/reference/analyze-code-analysis).
 
 Para crear un conjunto C++ de reglas personalizado en Visual Studio, un proyectoC++ de C/debe estar abierto en el IDE de Visual Studio. A continuación, se abre un conjunto de reglas estándar en el editor de conjuntos de reglas y, a continuación, se agregan o quitan reglas específicas y, opcionalmente, se cambia la acción que se produce cuando el análisis de código determina que se ha infringido una regla.
 
@@ -26,7 +28,7 @@ Para crear un nuevo conjunto de reglas personalizado, guárdelo con un nuevo nom
 
 ## <a name="to-create-a-custom-rule-from-a-single-existing-rule-set"></a>Para crear una regla personalizada a partir de un solo conjunto de reglas existente
 
-1. En Explorador de soluciones, abra el menú contextual del proyecto y, a continuación, elija **propiedades**.
+1. En el Explorador de soluciones, abra el menú contextual del proyecto y, a continuación, elija **propiedades**.
 
 2. En la pestaña **propiedades** , elija **análisis de código**.
 
@@ -36,7 +38,7 @@ Para crear un nuevo conjunto de reglas personalizado, guárdelo con un nuevo nom
 
      \- o -
 
-   - Elija **\<Browse >** para especificar un conjunto de reglas existente que no esté en la lista.
+   - Elija **\<Browse... >** para especificar un conjunto de reglas existente que no está en la lista.
 
 4. Elija **abrir** para mostrar las reglas en el editor de conjuntos de reglas.
 
@@ -50,9 +52,11 @@ Para crear un nuevo conjunto de reglas personalizado, guárdelo con un nuevo nom
 
 - Para cambiar la acción realizada cuando se infringe una regla en un análisis de código, elija el campo **acción** de la regla y, a continuación, elija uno de los siguientes valores:
 
-     **WARN** : genera una advertencia.
+     **ADVERTENCIA** : genera una advertencia.
 
      **Error** : genera un error.
+     
+     **Info** : genera un mensaje.
 
      **Ninguno** : deshabilita la regla. Esta acción es igual que quitar la regla del conjunto de reglas.
 

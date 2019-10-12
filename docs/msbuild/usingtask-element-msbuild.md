@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 36e310688b8305b2d5986a1b29d34895f02bc4d7
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: 8341a83443855f2fd90d7f5a742251fa54fc4890
+ms.sourcegitcommit: dc12a7cb66124596089f01d3e939027ae562ede9
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63411003"
+ms.lasthandoff: 10/04/2019
+ms.locfileid: "71962913"
 ---
 # <a name="usingtask-element-msbuild"></a>Elemento UsingTask (MSBuild)
 Asigna la tarea a la que se hace referencia en un elemento [Tarea](../msbuild/task-element-msbuild.md) al ensamblado que contiene la implementación de la tarea.
@@ -38,6 +38,9 @@ Asigna la tarea a la que se hace referencia en un elemento [Tarea](../msbuild/ta
     TaskFactory = "ClassName"
     Condition="'String A'=='String B'" />
 ```
+
+> [!NOTE]
+> A diferencia de las propiedades y los elementos, se usará el *primer* elemento `UsingTask` que se aplica a un `TaskName`; para invalidar tareas, debe definir un nuevo elemento `UsingTask` *antes* del ya existente.
 
 ## <a name="attributes-and-elements"></a>Atributos y elementos
  En las siguientes secciones se describen los atributos, los elementos secundarios y los elementos primarios.
@@ -54,14 +57,14 @@ Asigna la tarea a la que se hace referencia en un elemento [Tarea](../msbuild/ta
 
 ### <a name="child-elements"></a>Elementos secundarios
 
-|Elemento|Descripción|
+|Elemento|DESCRIPCIÓN|
 |-------------|-----------------|
 |[ParameterGroup](../msbuild/parametergroup-element.md)|Conjunto de parámetros que aparecen en la tarea que se genera mediante el objeto `TaskFactory` especificado.|
 |[Task](../msbuild/task-element-msbuild.md)|Datos que se pasan a `TaskFactory` para generar una instancia de la tarea.|
 
 ### <a name="parent-elements"></a>Elementos primarios
 
-| Elemento | Descripción |
+| Elemento | DESCRIPCIÓN |
 | - | - |
 | [Proyecto](../msbuild/project-element-msbuild.md) | Elemento raíz necesario de un archivo de proyecto [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] . |
 

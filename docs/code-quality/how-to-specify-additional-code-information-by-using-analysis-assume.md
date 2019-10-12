@@ -9,32 +9,32 @@ helpviewer_keywords:
 ms.assetid: 51205d97-4084-4cf4-a5ed-3eeaf67deb1b
 author: mikeblome
 ms.author: mblome
-manager: wpickett
+manager: markl
 ms.workload:
 - multiple
-ms.openlocfilehash: 1d3c80f0780dcd577356de69944dcc76cca7133c
-ms.sourcegitcommit: ab06cde69d862440b4277bcd9bf02e7b50593a1b
+ms.openlocfilehash: 186ea6ac58736098720d60c644c30801073b7453
+ms.sourcegitcommit: 535ef05b1e553f0fc66082cd2e0998817eb2a56a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "67132115"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "72018720"
 ---
-# <a name="how-to-specify-additional-code-information-by-using-analysisassume"></a>Procedimiento Especificar información de código adicional mediante _Analysis_assume
+# <a name="how-to-specify-additional-code-information-by-using-_analysis_assume"></a>Procedimiento Especificar información de código adicional mediante _Analysis_assume
 
-Puede proporcionar sugerencias a la herramienta de análisis de código para código de C o C++ que ayudan al proceso de análisis y reducir las advertencias. Para proporcionar información adicional, utilice la siguiente función:
+Puede proporcionar sugerencias a la herramienta de análisis de código para C/C++ Code que le ayudará en el proceso de análisis y reducirá las advertencias. Para proporcionar información adicional, utilice la siguiente función:
 
 `_Analysis_assume(`  `expr`  `)`
 
-`expr` -cualquier expresión que se supone que se evalúe como true.
+`expr`: cualquier expresión que se supone que se evalúa como true.
 
-La herramienta de análisis de código se da por supuesto que la condición representada por la expresión es verdadera en el punto donde aparece la función y siga siendo verdadera hasta que la expresión se modifica, por ejemplo, mediante la asignación a una variable.
+La herramienta de análisis de código supone que la condición representada por la expresión es true en el punto en el que aparece la función y sigue siendo true hasta que se modifica la expresión, por ejemplo, mediante asignación a una variable.
 
 > [!NOTE]
-> `_Analysis_assume` no afecta a la optimización de código. Fuera de la herramienta de análisis de código, `_Analysis_assume` se define como una operación inefectiva.
+> `_Analysis_assume` no afecta a la optimización del código. Fuera de la herramienta de análisis de código, `_Analysis_assume` se define como una operación no operativa.
 
 ## <a name="example"></a>Ejemplo
 
-El siguiente código utiliza `_Analysis_assume` para corregir la advertencia de análisis de código [C6388](../code-quality/c6388.md):
+En el código siguiente se usa `_Analysis_assume` para corregir la advertencia de análisis de código [C6388](../code-quality/c6388.md):
 
 ```cpp
 #include<windows.h>

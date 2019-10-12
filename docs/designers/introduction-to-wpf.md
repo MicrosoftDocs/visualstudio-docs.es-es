@@ -11,12 +11,12 @@ dev_langs:
 - vb
 ms.workload:
 - multiple
-ms.openlocfilehash: f26558a8e8d7e8446e3a992b7555116b5712c364
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: bb88c5b718c0f949825a2542b5a084d4e8ca15b9
+ms.sourcegitcommit: dc12a7cb66124596089f01d3e939027ae562ede9
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68924456"
+ms.lasthandoff: 10/04/2019
+ms.locfileid: "71962960"
 ---
 # <a name="wpf-overview"></a>Información general sobre WPF
 
@@ -428,7 +428,7 @@ Para obtener más información sobre los tipos de contenido admitidos por los di
 
 ### <a name="triggers"></a>Desencadenadores
 
-Aunque el propósito principal del marcado XAML es implementar la apariencia de la aplicación, también se puede usar XAML para implementar algunos aspectos del comportamiento de la aplicación. Un ejemplo es el uso de desencadenadores para cambiar la apariencia de una aplicación según las interacciones del usuario. Para obtener más información, vea [Aplicar estilos y plantillas](/dotnet/framework/wpf/controls/styling-and-templating).
+Aunque el propósito principal del marcado XAML es implementar la apariencia de la aplicación, también se puede usar XAML para implementar algunos aspectos del comportamiento de la aplicación. Un ejemplo es el uso de desencadenadores para cambiar la apariencia de una aplicación según las interacciones del usuario. Para más información, vea [Estilos y plantillas](/dotnet/desktop-wpf/fundamentals/styles-templates-overview).
 
 ### <a name="control-templates"></a>Plantillas de control
 
@@ -545,7 +545,7 @@ Dado que este estilo tiene como destino todos los controles <xref:System.Windows
 
 ![Dos botones de color naranja](../designers/media/wpfintrofigure20.png)
 
-Para obtener más información, vea [Aplicar estilos y plantillas](/dotnet/framework/wpf/controls/styling-and-templating).
+Para más información, vea [Estilos y plantillas](/dotnet/desktop-wpf/fundamentals/styles-templates-overview).
 
 ### <a name="resources"></a>Recursos
 

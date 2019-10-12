@@ -1,7 +1,7 @@
 ---
 title: Creación de una instalación sin conexión
 description: Obtenga información sobre cómo instalar Visual Studio sin conexión cuando la conexión a internet no sea de confianza o disponga de poco ancho de banda.
-ms.date: 07/24/2019
+ms.date: 10/07/2019
 ms.custom: seodec18
 ms.topic: conceptual
 f1_keywords:
@@ -16,18 +16,18 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 1c210498b88ab1a4fd149870fc3528ddc869ecd6
-ms.sourcegitcommit: 4d2620bee4688fb881e09a07ea4a264b99f0743e
+ms.openlocfilehash: 28351407e80c723c0b60640b7e56177c85c2a476
+ms.sourcegitcommit: 535ef05b1e553f0fc66082cd2e0998817eb2a56a
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "71322554"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "72018842"
 ---
 # <a name="create-an-offline-installation-of-visual-studio"></a>Crear una instalación sin conexión de Visual Studio
 
 ::: moniker range="vs-2017"
 
-Hemos diseñado Visual Studio 2017 para que funcione bien en una variedad de configuraciones de red y de equipos. Aunque se recomienda que pruebe el [instalador web de Visual Studio](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download) &mdash;que es un archivo pequeño y le permite estar actualizado con todas las correcciones y características más recientes&mdash; somos conscientes de que es posible que no pueda hacerlo.
+Hemos diseñado Visual Studio 2017 para que funcione bien en una variedad de configuraciones de red y de equipos. Aunque se recomienda que pruebe el [instalador web de Visual Studio](https://visualstudio.microsoft.com/vs/older-downloads) &mdash;que es un archivo pequeño y le permite estar actualizado con todas las correcciones y características más recientes&mdash; somos conscientes de que es posible que no pueda hacerlo.
 
 ::: moniker-end
 
@@ -75,20 +75,24 @@ Esta es la manera de hacerlo.
 
 Deberá disponer de conexión a Internet para poder completar este paso.
 
-Para comenzar, descargue el programa previo de Visual Studio para la edición elegida de Visual Studio. El archivo de instalación &mdash;o programa previo&mdash; corresponderá o será parecido a uno de los siguientes.
-
 ::: moniker range="vs-2017"
 
-| Edición                    | Archivo                                                                    |
-|----------------------------|-------------------------------------------------------------------------|
-| Comunidad de Visual Studio    | [vs_community.exe](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=community&rel=15&utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=offline+install&utm_content=download+vs2017)       |
-| Visual Studio Professional | [vs_professional.exe](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=professional&rel=15&utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=offline+install&utm_content=download+vs2017) |
-| Visual Studio Enterprise   | [vs_enterprise.exe](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=enterprise&rel=15&utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=offline+install&utm_content=download+vs2017)     |
-| Visual Studio Build Tools   | [vs_buildtools.exe](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=buildtools&rel=15&utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=offline+install&utm_content=download+vs2017)     |
+Para obtener un programa previo de Visual Studio 2017, consulte la página de descarga de [versiones anteriores de Visual Studio](https://visualstudio.microsoft.com/vs/older-downloads/) y obtenga información detallada sobre cómo hacerlo.
+
+El archivo ejecutable o, para ser más específicos, un archivo de programa previo, debe coincidir con uno de los siguientes.
+
+| Edición | Filename |
+|-------------|-----------------------|
+|Comunidad de Visual Studio | vs_community.exe |
+|Visual Studio Professional | vs_professional.exe |
+|Visual Studio Enterprise | vs_enterprise.exe |
+|Visual Studio Build Tools   | vs_buildtools.exe |
 
 ::: moniker-end
 
 ::: moniker range="vs-2019"
+
+Para comenzar, descargue el programa previo de Visual Studio para la edición elegida de Visual Studio. El archivo de instalación &mdash;o programa previo&mdash; corresponderá o será parecido a uno de los siguientes.
 
 | Edición                    | Archivo                                                                    |
 |----------------------------|-------------------------------------------------------------------------|

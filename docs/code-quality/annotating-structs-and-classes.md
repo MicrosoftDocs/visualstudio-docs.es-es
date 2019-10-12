@@ -21,45 +21,45 @@ f1_keywords:
 ms.assetid: b8278a4a-c86e-4845-aa2a-70da21a1dd52
 author: mikeblome
 ms.author: mblome
-manager: wpickett
+manager: markl
 ms.workload:
 - multiple
-ms.openlocfilehash: 35be465064c9524eb0e1339794b6a19b7a595da1
-ms.sourcegitcommit: d2b234e0a4a875c3cba09321cdf246842670d872
+ms.openlocfilehash: 1cff36760a84821a33dcdb1ee4cc6842cd40aee0
+ms.sourcegitcommit: 535ef05b1e553f0fc66082cd2e0998817eb2a56a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/01/2019
-ms.locfileid: "67493638"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "72015969"
 ---
 # <a name="annotating-structs-and-classes"></a>Anotar structs y clases
 
-Miembros de clase y struct se pueden anotar utilizando las anotaciones que actúan como invariables, que se supone que cumplirse en cualquier llamada de función o de entrada/salida de la función que implica la estructura envolvente como un parámetro o un valor de resultado.
+Puede anotar los miembros de struct y de clase mediante anotaciones que actúan como invariantes; se supone que son verdaderos en cualquier llamada de función o entrada y salida de función que implique la estructura de inclusión como un parámetro o un valor de resultado.
 
-## <a name="struct-and-class-annotations"></a>Anotaciones de clase y struct
+## <a name="struct-and-class-annotations"></a>Anotaciones de estructuras y clases
 
 - `_Field_range_(low, high)`
 
-     El campo está en el intervalo (inclusivo) desde `low` a `high`.  Equivalente a `_Satisfies_(_Curr_ >= low && _Curr_ <= high)` aplicado al objeto anotado utilizando las condiciones pre o post adecuadas.
+     El campo está en el intervalo (inclusivo) de `low` a `high`.  Equivalente a `_Satisfies_(_Curr_ >= low && _Curr_ <= high)` aplicada al objeto anotado utilizando las condiciones previas o posteriores adecuadas.
 
 - `_Field_size_(size)`, `_Field_size_opt_(size)`, `_Field_size_bytes_(size)`, `_Field_size_bytes_opt_(size)`
 
-     Un campo que tiene un tamaño de lectura de elementos (o bytes) como especificado por `size`.
+     Campo que tiene un tamaño de escritura en elementos (o bytes) según especifica `size`.
 
 - `_Field_size_part_(size, count)`, `_Field_size_part_opt_(size, count)`,         `_Field_size_bytes_part_(size, count)`, `_Field_size_bytes_part_opt_(size, count)`
 
-     Un campo que tiene un tamaño de lectura de elementos (o bytes) como especificado por `size`y el `count` de los elementos (bytes) que son legibles.
+     Campo que tiene un tamaño de escritura en los elementos (o bytes) especificados por `size` y el `count` de esos elementos (bytes) que se pueden leer.
 
 - `_Field_size_full_(size)`, `_Field_size_full_opt_(size)`, `_Field_size_bytes_full_(size)`, `_Field_size_bytes_full_opt_(size)`
 
-     Un campo que tiene el tamaño de lectura y escritura en elementos (o bytes) como especificado por `size`.
+     Campo que tiene un tamaño de lectura y escritura en los elementos (o bytes) especificados por `size`.
 
 - `_Field_z_`
 
-     Un campo que tiene una cadena terminada en null.
+     Campo que tiene una cadena terminada en NULL.
 
 - `_Struct_size_bytes_(size)`
 
-     Se aplica a la declaración de clase o estructura.  Indica que un objeto válido de ese tipo puede ser mayor que el tipo declarado, con el número de bytes especificado por `size`.  Por ejemplo:
+     Se aplica a la declaración de clase o struct.  Indica que un objeto válido de ese tipo puede ser mayor que el tipo declarado, con el número de bytes especificado por `size`.  Por ejemplo:
 
     ```cpp
 
@@ -71,7 +71,7 @@ Miembros de clase y struct se pueden anotar utilizando las anotaciones que actú
 
     ```
 
-     El tamaño del búfer en bytes de un parámetro `pM` de tipo `MyStruct *` , a continuación, se convierte en:
+     A continuación, el tamaño de búfer en bytes de un parámetro `pM` de tipo `MyStruct *` se considera:
 
     ```cpp
     min(pM->nSize, sizeof(MyStruct))
@@ -106,9 +106,9 @@ struct MyBuffer
 
 Notas para este ejemplo:
 
-- `_Field_z_` es equivalente a `_Null_terminated_`.  `_Field_z_` para el nombre de campo especifica que el campo nombre es una cadena terminada en null.
-- `_Field_range_` para `bufferSize` especifica que el valor de `bufferSize` debe estar comprendido entre 1 y `MaxBufferSize` (ambos inclusive).
-- Los resultados finales de la `_Struct_size_bytes_` y `_Field_size_` las anotaciones son equivalentes. Para estructuras o clases que tienen un diseño similar, `_Field_size_` es más fácil de leer y mantener, ya que tiene menos referencias y cálculos que el equivalente `_Struct_size_bytes_` anotación. `_Field_size_` no requiere conversión para el tamaño en bytes. Si el tamaño en bytes es la única opción, por ejemplo, para un campo de puntero void, `_Field_size_bytes_` se puede usar. Si ambos `_Struct_size_bytes_` y `_Field_size_` existe, ambos estarán disponibles para las herramientas. Es responsabilidad de la herramienta de qué hacer si las dos anotaciones están en desacuerdo.
+- `_Field_z_` es equivalente a `_Null_terminated_`.  `_Field_z_` para el campo nombre especifica que el campo nombre es una cadena terminada en NULL.
+- `_Field_range_` para `bufferSize` especifica que el valor de `bufferSize` debe estar comprendido entre 1 y `MaxBufferSize` (ambos inclusivos).
+- Los resultados finales de las anotaciones `_Struct_size_bytes_` y `_Field_size_` son equivalentes. En el caso de estructuras o clases que tienen un diseño similar, `_Field_size_` es más fácil de leer y mantener, ya que tiene menos referencias y cálculos que la anotación `_Struct_size_bytes_` equivalente. `_Field_size_` no requiere conversión al tamaño de bytes. Si el tamaño de byte es la única opción, por ejemplo, para un campo de puntero void, se puede usar `_Field_size_bytes_`. Si existen `_Struct_size_bytes_` y `_Field_size_`, ambos estarán disponibles para las herramientas. Depende de la herramienta qué hacer si las dos anotaciones están en desacuerdo.
 
 ## <a name="see-also"></a>Vea también
 

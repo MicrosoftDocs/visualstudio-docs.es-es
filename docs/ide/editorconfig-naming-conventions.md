@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 644c73dea58936773acde98ccc535dfc61979288
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.openlocfilehash: 13da6cd34df3996fe837aee89ce4f379027dd409
+ms.sourcegitcommit: 7825d4163e52d724e59f6c0da209af5fbef673f7
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71251703"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "72000162"
 ---
 # <a name="net-naming-conventions-for-editorconfig"></a>Convenciones de nomenclatura .NET para EditorConfig
 
@@ -226,7 +226,7 @@ Ahora se va a cambiar la gravedad de la infracción a `warning`:
 dotnet_naming_rule.public_members_must_be_capitalized.severity = warning
 ```
 
-Si cierra y vuelve a abrir el archivo de código, en lugar de ver la sugerencia debajo de la infracción de nombre, verá una línea ondulada de color verde y una advertencia en la **lista de errores**:
+Si cierra y vuelve a abrir el archivo de código, en lugar de ver la sugerencia debajo de la infracción de nombre, verá una línea ondulada de color verde y una advertencia en la lista de errores:
 
 ![Advertencia de regla de nomenclatura](media/editorconfig-naming-rule-warning.png)
 

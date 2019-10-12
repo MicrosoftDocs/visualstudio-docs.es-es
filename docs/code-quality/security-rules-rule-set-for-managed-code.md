@@ -8,18 +8,18 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 1131f9cf0e77fd4fe68e4bc5c033491aa6dd34e1
-ms.sourcegitcommit: b83fefa8177c5554cbe2c59c4d102cbc534f7cc6
+ms.openlocfilehash: 85bf4e140b3a379221c3b7e5a05428b29e3a985b
+ms.sourcegitcommit: 535ef05b1e553f0fc66082cd2e0998817eb2a56a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2019
-ms.locfileid: "69585193"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "72018384"
 ---
 # <a name="security-rules-rule-set-for-managed-code"></a>Conjunto de reglas Reglas de seguridad para código administrado
 
 Utilice el conjunto de reglas reglas de seguridad de Microsoft para el análisis de código heredado con el fin de maximizar el número de posibles problemas de seguridad que se muestran.
 
-|Regla|DESCRIPCIÓN|
+|Regla|Descripción|
 |----------|-----------------|
 |[CA2100](../code-quality/ca2100-review-sql-queries-for-security-vulnerabilities.md)|Revisar consultas SQL para comprobar si tienen vulnerabilidades de seguridad|
 |[CA2102](../code-quality/ca2102-catch-non-clscompliant-exceptions-in-general-handlers.md)|Detectar las excepciones que no son CLSCompliant en los controladores generales|
@@ -64,25 +64,25 @@ Utilice el conjunto de reglas reglas de seguridad de Microsoft para el análisis
 |[CA2147](../code-quality/ca2147-transparent-methods-may-not-use-security-asserts.md)|Los métodos transparentes no pueden usar aserciones de seguridad|
 |[CA2149](../code-quality/ca2149-transparent-methods-must-not-call-into-native-code.md)|Los métodos transparentes no deben llamar a código nativo|
 |[CA2210](../code-quality/ca2210-assemblies-should-have-valid-strong-names.md)|Los ensamblados deben tener nombres seguros válidos|
-|[CA2300](ca2300-do-not-use-insecure-deserializer-binaryformatter.md)|No usar el deserializador no seguro BinaryFormatter|
-|[CA2301](ca2301-do-not-call-binaryformatter-deserialize-without-first-setting-binaryformatter-binder.md)|No llamar a BinaryFormatter.Deserialize sin establecer primero BinaryFormatter.Binder|
-|[CA2302](ca2302-ensure-binaryformatter-binder-is-set-before-calling-binaryformatter-deserialize.md)|Asegurarse de que BinaryFormatter.Binder está establecido antes de llamar a BinaryFormatter.Deserialize|
-|[CA2305](ca2305-do-not-use-insecure-deserializer-losformatter.md)|No usar el deserializador no seguro LosFormatter|
-|[CA2310](ca2310-do-not-use-insecure-deserializer-netdatacontractserializer.md)|No usar el deserializador no seguro NetDataContractSerializer|
-|[CA2311](ca2311-do-not-deserialize-without-first-setting-netdatacontractserializer-binder.md)|No deserializar sin establecer primero NetDataContractSerializer.Binder|
-|[CA2312](ca2312-ensure-netdatacontractserializer-binder-is-set-before-deserializing.md)|Asegúrese de que se establece NetDataContractSerializer.Binder antes de deserializar|
-|[CA2315](ca2315-do-not-use-insecure-deserializer-objectstateformatter.md)|No usar el deserializador no seguro ObjectStateFormatter|
+|[CA2300](ca2300.md)|No usar el deserializador no seguro BinaryFormatter|
+|[CA2301](ca2301.md)|No llamar a BinaryFormatter.Deserialize sin establecer primero BinaryFormatter.Binder|
+|[CA2302](ca2302.md)|Asegurarse de que BinaryFormatter.Binder está establecido antes de llamar a BinaryFormatter.Deserialize|
+|[CA2305](ca2305.md)|No usar el deserializador no seguro LosFormatter|
+|[CA2310](ca2310.md)|No usar el deserializador no seguro NetDataContractSerializer|
+|[CA2311](ca2311.md)|No deserializar sin establecer primero NetDataContractSerializer.Binder|
+|[CA2312](ca2312.md)|Asegúrese de que se establece NetDataContractSerializer.Binder antes de deserializar|
+|[CA2315](ca2315.md)|No usar el deserializador no seguro ObjectStateFormatter|
 |[CA2321](ca2321.md)|No deserializar con JavaScriptSerializer mediante SimpleTypeResolver|
 |[CA2322](ca2322.md)|Asegúrese de que JavaScriptSerializer no se ha inicializado con SimpleTypeResolver antes de deserializar|
-|[CA3001](../code-quality/ca3001-review-code-for-sql-injection-vulnerabilities.md)|Revisión de código en busca de vulnerabilidades de inyección de SQL|
-|[CA3002](../code-quality/ca3002-review-code-for-xss-vulnerabilities.md)|Revisión de código en busca de vulnerabilidades de XSS|
-|[CA3003](../code-quality/ca3003-review-code-for-file-path-injection-vulnerabilities.md)|Revisión de código en busca de vulnerabilidades de inyección de rutas de acceso a archivos|
-|[CA3004](../code-quality/ca3004-review-code-for-information-disclosure-vulnerabilities.md)|Revisión de código en busca de vulnerabilidades de divulgación de información|
-|[CA3005](../code-quality/ca3005-review-code-for-ldap-injection-vulnerabilities.md)|Revisión de código en busca de vulnerabilidades de inyección de LDAP|
-|[CA3006](../code-quality/ca3006-review-code-for-process-command-injection-vulnerabilities.md)|Revisión de código en busca de vulnerabilidades de inyección de comandos de procesos|
-|[CA3007](../code-quality/ca3007-review-code-for-open-redirect-vulnerabilities.md)|Revisión de código en busca de vulnerabilidades de redireccionamiento abierto|
-|[CA3008](../code-quality/ca3008-review-code-for-xpath-injection-vulnerabilities.md)|Revisión de código en busca de vulnerabilidades de inyección de XPath|
-|[CA3009](../code-quality/ca3009-review-code-for-xml-injection-vulnerabilities.md)|Revisión de código en busca de vulnerabilidades de inyección de XML|
-|[CA3010](../code-quality/ca3010-review-code-for-xaml-injection-vulnerabilities.md)|Revisión de código en busca de vulnerabilidades de inyección de XAML|
-|[CA3011](../code-quality/ca3011-review-code-for-dll-injection-vulnerabilities.md)|Revisión de código en busca de vulnerabilidades de inyección de DLL|
-|[CA3012](../code-quality/ca3012-review-code-for-regex-injection-vulnerabilities.md)|Revisión de código en busca de vulnerabilidades de inyección de expresiones regulares|
+|[CA3001](../code-quality/ca3001.md)|Revisión de código en busca de vulnerabilidades de inyección de SQL|
+|[CA3002](../code-quality/ca3002.md)|Revisión de código en busca de vulnerabilidades de XSS|
+|[CA3003](../code-quality/ca3003.md)|Revisión de código en busca de vulnerabilidades de inyección de rutas de acceso a archivos|
+|[CA3004](../code-quality/ca3004.md)|Revisión de código en busca de vulnerabilidades de divulgación de información|
+|[CA3005](../code-quality/ca3005.md)|Revisión de código en busca de vulnerabilidades de inyección de LDAP|
+|[CA3006](../code-quality/ca3006.md)|Revisión de código en busca de vulnerabilidades de inyección de comandos de procesos|
+|[CA3007](../code-quality/ca3007.md)|Revisión de código en busca de vulnerabilidades de redireccionamiento abierto|
+|[CA3008](../code-quality/ca3008.md)|Revisión de código en busca de vulnerabilidades de inyección de XPath|
+|[CA3009](../code-quality/ca3009.md)|Revisión de código en busca de vulnerabilidades de inyección de XML|
+|[CA3010](../code-quality/ca3010.md)|Revisión de código en busca de vulnerabilidades de inyección de XAML|
+|[CA3011](../code-quality/ca3011.md)|Revisión de código en busca de vulnerabilidades de inyección de DLL|
+|[CA3012](../code-quality/ca3012.md)|Revisión de código en busca de vulnerabilidades de inyección de expresiones regulares|

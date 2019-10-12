@@ -14,20 +14,20 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a6a3557cffec60de91da46f60040ec675c866cbf
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 072858a9faafe312fd7c8314e7f25cf581c40844
+ms.sourcegitcommit: e95dd8cedcd180e0bce6a75c86cf861757918290
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62825330"
+ms.lasthandoff: 10/09/2019
+ms.locfileid: "72163069"
 ---
 # <a name="portability-warnings"></a>advertencias de portabilidad
-Advertencias de portabilidad compatibles con la portabilidad entre diferentes sistemas operativos.
+Las advertencias de portabilidad admiten la portabilidad en diferentes sistemas operativos.
 
 ## <a name="in-this-section"></a>En esta sección
 
 |Regla|Descripción|
 |----------|-----------------|
-|[CA1900: Campos de tipo de valor deberían ser portátiles](../code-quality/ca1900-value-type-fields-should-be-portable.md)|Esta regla comprueba que las estructuras declaradas mediante un atributo de diseño explícito se alinearán correctamente cuando se calculan las referencias a código no administrado en sistemas operativos de 64 bits.|
-|[CA1901: Las declaraciones P/Invoke deben ser portátiles](../code-quality/ca1901-p-invoke-declarations-should-be-portable.md)|Esta regla se evalúa como el tamaño de cada parámetro y el valor devuelto de P/Invoke y comprueba que su tamaño sea correcto al calcular las referencias a código no administrado en sistemas operativos de 32 bits y 64 bits.|
-|[CA1903: Usar solo API de .NET framework de destino](../code-quality/ca1903-use-only-api-from-targeted-framework.md)|Un miembro o tipo utiliza un miembro o tipo que se introdujo en un Service Pack no incluido junto con la versión de .NET Framework de destino del proyecto.|
+|[CA1900: Los campos de tipo de valor deben ser portátiles @ no__t-0|Esta regla comprueba que las estructuras que se declaran mediante un atributo de diseño explícito se alinearán correctamente cuando se calculen las referencias a código no administrado en sistemas operativos de 64 bits.|
+|[CA1901: Las declaraciones P/Invoke deben ser portables @ no__t-0|Esta regla evalúa el tamaño de cada parámetro y el valor devuelto de P/Invoke, y comprueba que su tamaño es correcto cuando se calculan las referencias a código no administrado en sistemas operativos de 32 y 64 bits.|
+|[CA1903: Usar solo la API del marco de destino @ no__t-0|Un miembro o tipo utiliza un miembro o tipo que se introdujo en un Service Pack no incluido junto con la versión de .NET Framework de destino del proyecto.|

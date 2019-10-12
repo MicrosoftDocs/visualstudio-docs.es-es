@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: 09e1b9f7-5916-4ed6-a001-5c2d7e710682
 author: mikeblome
 ms.author: mblome
-manager: wpickett
+manager: markl
 ms.workload:
 - multiple
-ms.openlocfilehash: ad28cae5e548a35e0166e1d8ed451450264241f7
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 648d00cd59d056e0874c91338a39667088d93e2e
+ms.sourcegitcommit: 535ef05b1e553f0fc66082cd2e0998817eb2a56a
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62820797"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "72018434"
 ---
 # <a name="sample-c-project-for-code-analysis"></a>Proyecto de ejemplo de C++ para el análisis de código
 
@@ -54,13 +54,13 @@ Los procedimientos también proporcionan el código para el encabezado y los arc
 
 3. En la lista **General**, seleccione el texto de la columna situada junto a **Extensión de destino** y escriba **.lib**.
 
-4. En **Valores predeterminados del proyecto** , haga clic en la columna situada junto a **Tipo de configuración** y luego haga clic en **Biblioteca estática (.lib)**.
+4. En **Valores predeterminados del proyecto** , haga clic en la columna situada junto a **Tipo de configuración** y luego haga clic en **Biblioteca estática (.lib)** .
 
 ## <a name="add-the-header-and-source-file-to-the-codedefects-project"></a>Agregar el archivo de encabezado y código fuente al proyecto CodeDefects
 
 1. En Explorador de soluciones, expanda **CodeDefects**, haga clic con el botón derecho en **Archivos de encabezado**, haga clic en **Agregar** y luego en **Nuevo elemento**.
 
-2. En el cuadro de diálogo **Agregar nuevo elemento**, haga clic en **Código** y luego en **Archivo de encabezado (.h)**.
+2. En el cuadro de diálogo **Agregar nuevo elemento**, haga clic en **Código** y luego en **Archivo de encabezado (.h)** .
 
 3. En el cuadro **Nombre**, escriba **Bug.h** y haga clic en **Agregar**.
 
@@ -88,7 +88,7 @@ Los procedimientos también proporcionan el código para el encabezado y los arc
 
 5. En Explorador de soluciones, haga clic con el botón derecho en **Archivos de código fuente**, seleccione **Nuevo** y haga clic en **Nuevo elemento**.
 
-6. En el cuadro de diálogo **Agregar nuevo elemento**, haga clic en **Archivo C++ (.cpp)**.
+6. En el cuadro de diálogo **Agregar nuevo elemento**, haga clic en **Archivo C++ (.cpp)** .
 
 7. En el cuadro **Nombre**, escriba **Bug.cpp** y haga clic en **Agregar**.
 
@@ -168,13 +168,13 @@ Los procedimientos también proporcionan el código para el encabezado y los arc
 
 6. En la lista **General**, seleccione el texto de la columna situada junto a **Extensión de destino** y escriba **.lib**.
 
-7. En **Valores predeterminados del proyecto** , haga clic en la columna situada junto a **Tipo de configuración** y luego haga clic en **Biblioteca estática (.lib)**.
+7. En **Valores predeterminados del proyecto** , haga clic en la columna situada junto a **Tipo de configuración** y luego haga clic en **Biblioteca estática (.lib)** .
 
 ## <a name="add-the-header-file-and-source-file-to-the-annotations-project"></a>Agregar el archivo de encabezado y código fuente al proyecto Annotations
 
 1. En Explorador de soluciones, expanda **Annotations**, haga clic con el botón derecho en **Archivos de encabezado**, haga clic en **Agregar** y luego en **Nuevo elemento**.
 
-2. En el cuadro de diálogo **Agregar nuevo elemento**, haga clic en **Archivo de encabezado (.h)**.
+2. En el cuadro de diálogo **Agregar nuevo elemento**, haga clic en **Archivo de encabezado (.h)** .
 
 3. En el cuadro **Nombre**, escriba **annotations.h** y haga clic en **Agregar**.
 
@@ -197,7 +197,7 @@ Los procedimientos también proporcionan el código para el encabezado y los arc
 
 5. En Explorador de soluciones, haga clic con el botón derecho en **Archivos de código fuente**, seleccione **Nuevo** y haga clic en **Nuevo elemento**.
 
-6. En el cuadro de diálogo **Agregar nuevo elemento**, haga clic en **Código** y luego en **Archivo C++ (.cpp)**.
+6. En el cuadro de diálogo **Agregar nuevo elemento**, haga clic en **Código** y luego en **Archivo C++ (.cpp)** .
 
 7. En el cuadro **Nombre**, escriba **annotations.cpp** y haga clic en **Agregar**.
 

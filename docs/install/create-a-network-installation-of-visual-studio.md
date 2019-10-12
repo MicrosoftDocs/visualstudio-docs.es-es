@@ -1,7 +1,7 @@
 ---
 title: Creación de una instalación basada en red
 description: Obtenga información sobre cómo crear un punto de instalación de red para la implementación de Visual Studio dentro de una empresa.
-ms.date: 10/01/2019
+ms.date: 10/07/2019
 ms.custom: seodec18
 ms.topic: conceptual
 helpviewer_keywords:
@@ -15,12 +15,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 178bd693c514e42fb77c0addce3fa6c00d1bef4f
-ms.sourcegitcommit: a2f1f27aa33d807b39292d65a49d8db4653491ba
+ms.openlocfilehash: b297e99c3fbaaabed178930dfad1ac13d5ab1cd8
+ms.sourcegitcommit: 535ef05b1e553f0fc66082cd2e0998817eb2a56a
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/01/2019
-ms.locfileid: "71709069"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "72018881"
 ---
 # <a name="create-a-network-installation-of-visual-studio"></a>Creación de una instalación de red de Visual Studio
 
@@ -33,29 +33,33 @@ Hemos realizado esto para que las estaciones de trabajo de cliente puedan usar l
 
 ## <a name="download-the-visual-studio-bootstrapper"></a>Descarga del programa previo de Visual Studio
 
-Descargue la edición de Visual Studio que desee. Asegúrese de hacer clic en **Guardar** y, a continuación, haga clic en **Abrir carpeta**.
-
-El archivo ejecutable o, para ser más específicos, un archivo de programa previo, debe coincidir con uno de los siguientes.
+Descargue el archivo de programa previo correspondiente a la edición de Visual Studio que quiera. Asegúrese de seleccionar **Guardar** y, después, **Abrir carpeta**.
 
 ::: moniker range="vs-2017"
 
-|Edición | Descargar|
-|-------------|-----------------------|
-|Visual Studio Enterprise | [**vs_enterprise.exe**](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=enterprise&rel=15&utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=network+install&utm_content=download+vs2017) |
-|Visual Studio Professional | [**vs_professional.exe**](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=professional&rel=15&utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=network+install&utm_content=download+vs2017) |
-| Visual Studio Build Tools   | [vs_buildtools.exe](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=buildtools&rel=15&utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=offline+install&utm_content=download+vs2017) |
+Para obtener un programa previo de Visual Studio 2017, consulte la página de descarga de [versiones anteriores de Visual Studio](https://visualstudio.microsoft.com/vs/older-downloads/) y obtenga información detallada sobre cómo hacerlo.
 
-Otros programas previos admitidos incluyen [vs_feedbackclient.exe](https://aka.ms/vs/15/release/vs_feedbackclient.exe), [vs_teamexplorer.exe](https://aka.ms/vs/15/release/vs_teamexplorer.exe), [vs_testagent.exe](https://aka.ms/vs/15/release/vs_testagent.exe), [vs_testcontroller.exe](https://aka.ms/vs/15/release/vs_testcontroller.exe) y [vs_testprofessional.exe](https://aka.ms/vs/15/release/vs_testprofessional.exe).
+El archivo ejecutable o, para ser más específicos, un archivo de programa previo, debe coincidir con uno de los siguientes.
+
+| Edición | Filename |
+|-------------|-----------------------|
+|Visual Studio Enterprise | **vs_enterprise.exe** |
+|Visual Studio Professional | **vs_professional.exe** |
+|Visual Studio Build Tools   | **vs_buildtools.exe** |
+
+Otros programas previos admitidos incluyen **vs_feedbackclient.exe**, **vs_teamexplorer.exe**, **vs_testagent.exe**, **vs_testcontroller.exe** y **vs_testprofessional.exe**.
 
 ::: moniker-end
 
 ::: moniker range="vs-2019"
 
+El archivo ejecutable o, para ser más específicos, un archivo de programa previo, debe coincidir con uno de los siguientes.
+
 |Edición | Descargar|
 |-------------|-----------------------|
 |Visual Studio Enterprise | [**vs_enterprise.exe**](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=enterprise&rel=16&utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=network+install&utm_content=download+vs2019) |
 |Visual Studio Professional | [**vs_professional.exe**](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=professional&rel=16&utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=network+install&utm_content=download+vs2019) |
-| Visual Studio Build Tools   | [vs_buildtools.exe](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=buildtools&rel=16&utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=offline+install&utm_content=download+vs2019) |
+| Visual Studio Build Tools   | [**vs_buildtools.exe**](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=buildtools&rel=16&utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=offline+install&utm_content=download+vs2019) |
 
 Otros programas previos admitidos incluyen [vs_teamexplorer.exe](https://aka.ms/vs/16/release/vs_teamexplorer.exe), [vs_testagent.exe](https://aka.ms/vs/16/release/vs_testagent.exe) y [vs_testcontroller.exe](https://aka.ms/vs/16/release/vs_testcontroller.exe).
 
