@@ -543,19 +543,19 @@
                   displayName: reliability warnings
                   href: reliability-warnings.md
                 - name: 'CA2000: Desechar objetos antes de perder el ámbito'
-                  href: ca2000-dispose-objects-before-losing-scope.md
+                  href: ca2000.md
                 - name: 'CA2001: Evitar llamar a métodos problemáticos'
-                  href: ca2001-avoid-calling-problematic-methods.md
+                  href: ca2001.md
                 - name: 'CA2002: No bloquear objetos con identidad débil'
-                  href: ca2002-do-not-lock-on-objects-with-weak-identity.md
+                  href: ca2002.md
                 - name: 'CA2003: No tratar fibras como subprocesos'
-                  href: ca2003-do-not-treat-fibers-as-threads.md
+                  href: ca2003.md
                 - name: 'CA2004: Quitar las llamadas a GC.KeepAlive'
-                  href: ca2004-remove-calls-to-gc-keepalive.md
+                  href: ca2004.md
                 - name: 'CA2006: Utilizar SafeHandle para encapsular recursos nativos'
-                  href: ca2006-use-safehandle-to-encapsulate-native-resources.md
+                  href: ca2006.md
                 - name: 'CA2007: No esperar una tarea directamente'
-                  href: ca2007-do-not-directly-await-task.md
+                  href: ca2007.md
             - name: Advertencias de seguridad
               items:
                 - name: Información general
