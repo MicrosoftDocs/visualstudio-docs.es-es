@@ -120,13 +120,13 @@
     - name: Introducción
       displayName: Live Unit Testing introduction
       href: live-unit-testing-intro.md
-    - name: Novedades de Live Unit Testing
+    - name: Novedades
       href: live-unit-testing-whats-new.md
-    - name: Introducción a Live Unit Testing
+    - name: Primeros pasos
       href: live-unit-testing-start.md
-    - name: Usar Live Unit Testing en Enterprise Edition
+    - name: Configuración y uso
       href: live-unit-testing.md
-    - name: Preguntas más frecuentes sobre Live Unit Testing
+    - name: Preguntas más frecuentes
       href: live-unit-testing-faq.md
 - name: Rendimiento web y pruebas de carga
   items:
