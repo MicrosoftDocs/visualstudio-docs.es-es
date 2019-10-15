@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 9ec1bdaf421e3976872a3460dc22fecd24b4386b
-ms.sourcegitcommit: b83fefa8177c5554cbe2c59c4d102cbc534f7cc6
+ms.openlocfilehash: 4d2f123301eb2dd4df662891f2a9248b0cac7173
+ms.sourcegitcommit: 034c503ae04e22cf840ccb9770bffd012e40fb2d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2019
-ms.locfileid: "69585113"
+ms.lasthandoff: 10/14/2019
+ms.locfileid: "72305866"
 ---
 # <a name="extended-correctness-rules-rule-set-for-managed-code"></a>Conjunto de reglas Reglas de corrección extendidas para código administrado
 
@@ -23,7 +23,7 @@ El conjunto de reglas reglas de corrección extendidas de Microsoft incluye las 
 
 En la tabla siguiente se describen todas las reglas del conjunto de reglas reglas de corrección extendidas de Microsoft.
 
-|Regla|DESCRIPCIÓN|
+|Regla|Descripción|
 |----------|-----------------|
 |[CA1001](../code-quality/ca1001-types-that-own-disposable-fields-should-be-disposable.md)|Los tipos que poseen campos descartables deben ser descartables|
 |[CA1009](../code-quality/ca1009-declare-event-handlers-correctly.md)|Declarar los controladores de evento correctamente|
@@ -42,7 +42,7 @@ En la tabla siguiente se describen todas las reglas del conjunto de reglas regla
 |[CA1405](../code-quality/ca1405-com-visible-type-base-types-should-be-com-visible.md)|Los tipos base de tipos visibles a través de COM deben ser visibles a través de COM|
 |[CA1410](../code-quality/ca1410-com-registration-methods-should-be-matched.md)|Los métodos de registro COM deben coincidir|
 |[CA1415](../code-quality/ca1415-declare-p-invokes-correctly.md)|Declarar elementos P/Invoke correctamente|
-|[CA1821](../code-quality/ca1821-remove-empty-finalizers.md)|Quitar finalizadores vacíos|
+|[CA1821](../code-quality/ca1821.md)|Quitar finalizadores vacíos|
 |[CA1900](../code-quality/ca1900-value-type-fields-should-be-portable.md)|Los campos de tipo de valor deben ser portátiles|
 |[CA1901](../code-quality/ca1901-p-invoke-declarations-should-be-portable.md)|Las declaraciones P/Invoke deben ser portátiles|
 |[CA2002](../code-quality/ca2002-do-not-lock-on-objects-with-weak-identity.md)|No bloquear objetos con identidad débil|
@@ -91,10 +91,10 @@ En la tabla siguiente se describen todas las reglas del conjunto de reglas regla
 |[CA1013](../code-quality/ca1013-overload-operator-equals-on-overloading-add-and-subtract.md)|El operador de sobrecarga es igual que la suma y resta de sobrecarga|
 |[CA1303](../code-quality/ca1303-do-not-pass-literals-as-localized-parameters.md)|No pasar literales como parámetros localizados|
 |[CA1308](../code-quality/ca1308-normalize-strings-to-uppercase.md)|Normalizar cadenas en mayúsculas|
-|[CA1806](../code-quality/ca1806-do-not-ignore-method-results.md)|No omitir resultados del método|
-|[CA1816](../code-quality/ca1816-call-gc-suppressfinalize-correctly.md)|Llamar a GC.SuppressFinalize correctamente|
-|[CA1819](../code-quality/ca1819-properties-should-not-return-arrays.md)|Las propiedades no deben devolver matrices|
-|[CA1820](../code-quality/ca1820-test-for-empty-strings-using-string-length.md)|Comprobar si las cadenas están vacías mediante la longitud de cadena|
+|[CA1806](../code-quality/ca1806.md)|No omitir resultados del método|
+|[CA1816](../code-quality/ca1816.md)|Llamar a GC.SuppressFinalize correctamente|
+|[CA1819](../code-quality/ca1819.md)|Las propiedades no deben devolver matrices|
+|[CA1820](../code-quality/ca1820.md)|Comprobar si las cadenas están vacías mediante la longitud de cadena|
 |[CA1903](../code-quality/ca1903-use-only-api-from-targeted-framework.md)|Usar solo API de la versión de .NET Framework de destino|
 |[CA2004](../code-quality/ca2004-remove-calls-to-gc-keepalive.md)|Quitar las llamadas a GC.KeepAlive|
 |[CA2006](../code-quality/ca2006-use-safehandle-to-encapsulate-native-resources.md)|Utilizar SafeHandle para encapsular recursos nativos|
@@ -132,7 +132,7 @@ En la tabla siguiente se describen todas las reglas del conjunto de reglas regla
 |[CA1414](../code-quality/ca1414-mark-boolean-p-invoke-arguments-with-marshalas.md)|Marcar los argumentos P/Invoke booleanos con MarshalAs|
 |[CA1600](../code-quality/ca1600-do-not-use-idle-process-priority.md)|No utilizar la prioridad del proceso inactiva|
 |[CA1601](../code-quality/ca1601-do-not-use-timers-that-prevent-power-state-changes.md)|No utilizar temporizadores que impidan los cambios de estado de energía|
-|[CA1824](../code-quality/ca1824-mark-assemblies-with-neutralresourceslanguageattribute.md)|Marcar los ensamblados con NeutralResourcesLanguageAttribute|
+|[CA1824](../code-quality/ca1824.md)|Marcar los ensamblados con NeutralResourcesLanguageAttribute|
 |[CA2001](../code-quality/ca2001-avoid-calling-problematic-methods.md)|Evitar llamar a métodos problemáticos|
 |[CA2003](../code-quality/ca2003-do-not-treat-fibers-as-threads.md)|No tratar fibras como subprocesos|
 |[CA2135](../code-quality/ca2135-level-2-assemblies-should-not-contain-linkdemands.md)|Los ensamblados de nivel 2 no deben contener LinkDemands|

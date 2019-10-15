@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: a4c7d0aa4da7e672db06675c65e008d1f71f8bc7
-ms.sourcegitcommit: b23d73c86ec7720c4cd9a58050860bc559623a3d
+ms.openlocfilehash: 81c1c200ba9ab0a50381192b34bad5e9b221fb29
+ms.sourcegitcommit: 034c503ae04e22cf840ccb9770bffd012e40fb2d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/09/2019
-ms.locfileid: "72172802"
+ms.lasthandoff: 10/14/2019
+ms.locfileid: "72305670"
 ---
 # <a name="use-code-analyzers"></a>Usar analizadores de código
 
@@ -66,7 +66,7 @@ En la tabla siguiente se muestran las diferentes opciones de gravedad:
 | Advertencia | `warning` | Las infracciones aparecen como *advertencias* en el lista de errores y en la salida de la compilación de línea de comandos, pero no provocan errores en las compilaciones. | El código infractor se subraya con un subrayado ondulado de color verde y se marca con un pequeño cuadro verde en la barra de desplazamiento. |
 | Info | `suggestion` | Las infracciones aparecen como *mensajes* en el lista de errores y no en todos los resultados de la compilación de línea de comandos. | El código infractor se subraya con un subrayado ondulado de color gris y se marca con un pequeño cuadro gris en la barra de desplazamiento. |
 | Hidden | `silent` | No es visible para el usuario. | No es visible para el usuario. Sin embargo, el diagnóstico se envía al motor de diagnóstico del IDE. |
-| None | `none` | Se han suprimido por completo. | Se han suprimido por completo. |
+| Ninguna | `none` | Se han suprimido por completo. | Se han suprimido por completo. |
 | Default | `default` | Corresponde a la gravedad predeterminada de la regla. Para determinar cuál es el valor predeterminado de una regla, mire en el ventana Propiedades. | Corresponde a la gravedad predeterminada de la regla. |
 
 La siguiente captura de pantalla del editor de código muestra tres infracciones diferentes con diferentes niveles de gravedad. Observe el color de la línea ondulada y el cuadrado pequeño coloreado en la barra de desplazamiento de la derecha.
@@ -93,7 +93,7 @@ Establecer la gravedad de una regla en un archivo EditorConfig tiene prioridad s
 
 1. Si aún no tiene un archivo EditorConfig para el proyecto, [agregue uno](../ide/create-portable-custom-editor-options.md#add-an-editorconfig-file-to-a-project).
 
-2. Agregue una entrada para cada regla que desee configurar en la extensión de archivo correspondiente. Por ejemplo, para establecer la gravedad de [CA1822](ca1822-mark-members-as-static.md) en `error` para C# los archivos, la entrada tiene el siguiente aspecto:
+2. Agregue una entrada para cada regla que desee configurar en la extensión de archivo correspondiente. Por ejemplo, para establecer la gravedad de [CA1822](ca1822.md) en `error` para C# los archivos, la entrada tiene el siguiente aspecto:
 
    ```ini
    [*.cs]
@@ -229,7 +229,7 @@ Para ver las infracciones del analizador en la línea de comandos al compilar el
 msbuild myproject.csproj /target:rebuild /verbosity:minimal
 ```
 
-En la imagen siguiente se muestra el resultado de la compilación de la línea de comandos de compilar un proyecto que contiene una infracción de la regla del analizador:
+En la siguiente imagen se muestra la salida de compilación de línea de comandos de la compilación de un proyecto que contiene una infracción de regla de analizador:
 
 ![Salida de MSBuild con infracción de regla](media/command-line-build-analyzers.png)
 
