@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 46f579b6776ffab6d0ed3b2e216e29d36d2065ee
-ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
+ms.openlocfilehash: 695f15c73120f766157fabb09193d32115dda588
+ms.sourcegitcommit: 034c503ae04e22cf840ccb9770bffd012e40fb2d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71231691"
+ms.lasthandoff: 10/14/2019
+ms.locfileid: "72305935"
 ---
 # <a name="ca2207-initialize-value-type-static-fields-inline"></a>CA2207: Inicializar campos estáticos de tipo de valor insertados
 
@@ -27,16 +27,16 @@ ms.locfileid: "71231691"
 |-|-|
 |TypeName|InitializeValueTypeStaticFieldsInline|
 |Identificador de comprobación|CA2207|
-|Categoría|Microsoft.Usage|
+|Category|Microsoft.Usage|
 |Cambio importante|Poco problemático|
 
 ## <a name="cause"></a>Motivo
 Un tipo de valor declara un constructor estático explícito.
 
 ## <a name="rule-description"></a>Descripción de la regla
-Cuando se declara un tipo de valor, se somete a una inicialización predeterminada en la que todos los campos de tipo de valor se establecen en cero y todos los campos `null` de`Nothing` tipo de referencia se establecen en (en Visual Basic). Solo se garantiza que un constructor estático explícito se ejecute antes de que se llame a un constructor de instancia o a un miembro estático del tipo. Por consiguiente, si el tipo se crea sin llamar a un constructor de instancia, no se garantiza que el constructor estático se ejecute.
+Cuando se declara un tipo de valor, se somete a una inicialización predeterminada en la que todos los campos de tipo de valor se establecen en cero y todos los campos de tipo de referencia se establecen en `null` (`Nothing` en Visual Basic). Solo se garantiza que un constructor estático explícito se ejecute antes de que se llame a un constructor de instancia o a un miembro estático del tipo. Por consiguiente, si el tipo se crea sin llamar a un constructor de instancia, no se garantiza que el constructor estático se ejecute.
 
-Si todos los datos estáticos se inicializan en línea y no se declara ningún constructor estático C# explícito, los compiladores y `beforefieldinit` Visual Basic agregan la marca a la definición de clase MSIL. Los compiladores también agregan un constructor estático privado que contiene el código de inicialización estático. Se garantiza que este constructor estático privado se ejecutará antes de tener acceso a los campos estáticos del tipo.
+Si todos los datos estáticos se inicializan en línea y no se declara ningún constructor estático C# explícito, los compiladores y Visual Basic agregan la marca `beforefieldinit` a la definición de clase MSIL. Los compiladores también agregan un constructor estático privado que contiene el código de inicialización estático. Se garantiza que este constructor estático privado se ejecutará antes de tener acceso a los campos estáticos del tipo.
 
 ## <a name="how-to-fix-violations"></a>Cómo corregir infracciones
 Para corregir una infracción de esta regla, inicialice todos los datos estáticos cuando se declare y quite el constructor estático.
@@ -45,4 +45,4 @@ Para corregir una infracción de esta regla, inicialice todos los datos estátic
 No suprima las advertencias de esta regla.
 
 ## <a name="related-rules"></a>Reglas relacionadas
-[CA1810: Inicializar campos estáticos de tipo de referencia insertados](../code-quality/ca1810-initialize-reference-type-static-fields-inline.md)
+[CA1810: Inicializar campos estáticos de tipo de referencia insertados @ no__t-0

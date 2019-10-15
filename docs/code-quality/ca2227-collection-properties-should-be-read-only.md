@@ -18,12 +18,12 @@ dev_langs:
 - CPP
 ms.workload:
 - multiple
-ms.openlocfilehash: 3d097a67c9a62a6847ff6ab0bb882257c082ca6f
-ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
+ms.openlocfilehash: be864812cc7355f80700bd3e270178c9626d4180
+ms.sourcegitcommit: 034c503ae04e22cf840ccb9770bffd012e40fb2d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71231312"
+ms.lasthandoff: 10/14/2019
+ms.locfileid: "72305895"
 ---
 # <a name="ca2227-collection-properties-should-be-read-only"></a>CA2227: Las propiedades de la colección deben ser de solo lectura
 
@@ -31,7 +31,7 @@ ms.locfileid: "71231312"
 |-|-|
 |TypeName|CollectionPropertiesShouldBeReadOnly|
 |Identificador de comprobación|CA2227|
-|Categoría|Microsoft.Usage|
+|Category|Microsoft.Usage|
 |Cambio importante|Problemático|
 
 ## <a name="cause"></a>Motivo
@@ -40,9 +40,9 @@ Una propiedad editable visible externamente es de un tipo que implementa <xref:S
 
 ## <a name="rule-description"></a>Descripción de la regla
 
-Una propiedad de colección de escritura permite al usuario reemplazar la colección por una colección completamente diferente. Una propiedad de solo lectura impide que la colección se reemplace, pero sigue permitiendo que se establezcan los miembros individuales. Si el reemplazo de la colección es un objetivo, el modelo de diseño preferido consiste en incluir un método para quitar todos los elementos de la colección y un método para volver a rellenar la colección. Vea los <xref:System.Collections.ArrayList.Clear%2A> métodos <xref:System.Collections.ArrayList.AddRange%2A> y de la <xref:System.Collections.ArrayList?displayProperty=fullName> clase para obtener un ejemplo de este patrón.
+Una propiedad de colección de escritura permite al usuario reemplazar la colección por una colección completamente diferente. Una propiedad de solo lectura impide que la colección se reemplace, pero sigue permitiendo que se establezcan los miembros individuales. Si el reemplazo de la colección es un objetivo, el modelo de diseño preferido consiste en incluir un método para quitar todos los elementos de la colección y un método para volver a rellenar la colección. Vea los métodos <xref:System.Collections.ArrayList.Clear%2A> y <xref:System.Collections.ArrayList.AddRange%2A> de la clase <xref:System.Collections.ArrayList?displayProperty=fullName> para obtener un ejemplo de este patrón.
 
-Tanto la serialización binaria como la de XML admiten propiedades de solo lectura que son colecciones. La <xref:System.Xml.Serialization.XmlSerializer?displayProperty=fullName> clase tiene requisitos específicos para los tipos que <xref:System.Collections.ICollection> implementan y <xref:System.Collections.IEnumerable?displayProperty=fullName> para ser serializables.
+Tanto la serialización binaria como la de XML admiten propiedades de solo lectura que son colecciones. La clase <xref:System.Xml.Serialization.XmlSerializer?displayProperty=fullName> tiene requisitos específicos para los tipos que implementan <xref:System.Collections.ICollection> y <xref:System.Collections.IEnumerable?displayProperty=fullName> para ser serializables.
 
 ## <a name="how-to-fix-violations"></a>Cómo corregir infracciones
 
@@ -56,7 +56,7 @@ De lo contrario, no suprima las advertencias de esta regla.
 
 ## <a name="example"></a>Ejemplo
 
-En el ejemplo siguiente se muestra un tipo con una propiedad de colección de escritura y se muestra cómo se puede reemplazar la colección directamente. Además, muestra la manera preferida de reemplazar una propiedad de colección de solo lectura `Clear` mediante `AddRange` métodos y.
+En el ejemplo siguiente se muestra un tipo con una propiedad de colección de escritura y se muestra cómo se puede reemplazar la colección directamente. Además, muestra la manera preferida de reemplazar una propiedad de colección de solo lectura mediante métodos `Clear` y `AddRange`.
 
 [!code-csharp[FxCop.Usage.PropertiesReturningCollections#1](../code-quality/codesnippet/CSharp/ca2227-collection-properties-should-be-read-only_1.cs)]
 [!code-vb[FxCop.Usage.PropertiesReturningCollections#1](../code-quality/codesnippet/VisualBasic/ca2227-collection-properties-should-be-read-only_1.vb)]
@@ -64,4 +64,4 @@ En el ejemplo siguiente se muestra un tipo con una propiedad de colección de es
 
 ## <a name="related-rules"></a>Reglas relacionadas
 
-- [CA1819: Las propiedades no deben devolver matrices](../code-quality/ca1819-properties-should-not-return-arrays.md)
+- [CA1819: Las propiedades no deben devolver matrices @ no__t-0

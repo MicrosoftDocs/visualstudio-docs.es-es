@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1616e889b3892aa656692a3e5b0895d4b131b7f1
-ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
+ms.openlocfilehash: 3ac52bdb17aeb7d04e434d2b02ff9a905eab49a2
+ms.sourcegitcommit: 034c503ae04e22cf840ccb9770bffd012e40fb2d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71231252"
+ms.lasthandoff: 10/14/2019
+ms.locfileid: "72305918"
 ---
 # <a name="ca2216-disposable-types-should-declare-finalizer"></a>CA2216: Los tipos descartables deben declarar el finalizador
 
@@ -27,12 +27,12 @@ ms.locfileid: "71231252"
 |-|-|
 |TypeName|DisposableTypesShouldDeclareFinalizer|
 |Identificador de comprobación|CA2216|
-|Categoría|Microsoft.Usage|
+|Category|Microsoft.Usage|
 |Cambio importante|Poco problemático|
 
 ## <a name="cause"></a>Motivo
 
-Un tipo que implementa <xref:System.IDisposable?displayProperty=fullName>, y tiene campos que sugieren el uso de recursos no administrados, no implementa un finalizador tal como se describe en. <xref:System.Object.Finalize%2A?displayProperty=fullName>
+Un tipo que implementa <xref:System.IDisposable?displayProperty=fullName>, y tiene campos que sugieren el uso de recursos no administrados, no implementa un finalizador tal y como se describe en <xref:System.Object.Finalize%2A?displayProperty=fullName>.
 
 ## <a name="rule-description"></a>Descripción de la regla
 
@@ -46,11 +46,11 @@ Se genera una infracción de esta regla si el tipo descartable contiene campos d
 
 ## <a name="how-to-fix-violations"></a>Cómo corregir infracciones
 
-Para corregir una infracción de esta regla, implemente un finalizador que <xref:System.IDisposable.Dispose%2A> llame a su método.
+Para corregir una infracción de esta regla, implemente un finalizador que llame al método <xref:System.IDisposable.Dispose%2A>.
 
 ## <a name="when-to-suppress-warnings"></a>Cuándo suprimir advertencias
 
-Es seguro suprimir una advertencia de esta regla si el tipo no implementa <xref:System.IDisposable> para liberar recursos no administrados.
+Es seguro suprimir una advertencia de esta regla si el tipo no implementa <xref:System.IDisposable> con el fin de liberar recursos no administrados.
 
 ## <a name="example"></a>Ejemplo
 
@@ -60,11 +60,11 @@ En el ejemplo siguiente se muestra un tipo que infringe esta regla.
 
 ## <a name="related-rules"></a>Reglas relacionadas
 
-[CA2115 Llame a GC. KeepAlive al usar recursos nativos](../code-quality/ca2115-call-gc-keepalive-when-using-native-resources.md)
+@NO__T 0CA2115: Llame a GC. KeepAlive al usar recursos nativos @ no__t-0
 
-[CA1816: Llame a GC. SuppressFinalize correctamente](../code-quality/ca1816-call-gc-suppressfinalize-correctly.md)
+[CA1816: Llame a GC. SuppressFinalize correctamente @ no__t-0
 
-[CA1049: Los tipos que poseen recursos nativos deben ser descartables](../code-quality/ca1049-types-that-own-native-resources-should-be-disposable.md)
+[CA1049: Los tipos que poseen recursos nativos deben ser descartables @ no__t-0
 
 ## <a name="see-also"></a>Vea también
 

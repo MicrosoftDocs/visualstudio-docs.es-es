@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ef7b72eade7ea8e4486d5c317c06026bb4d0b95f
-ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
+ms.openlocfilehash: 03b8d222fc2349022ef324c9905279677fc86849
+ms.sourcegitcommit: 034c503ae04e22cf840ccb9770bffd012e40fb2d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71235744"
+ms.lasthandoff: 10/14/2019
+ms.locfileid: "72306116"
 ---
 # <a name="ca1049-types-that-own-native-resources-should-be-disposable"></a>CA1049: Los tipos que poseen recursos nativos deben ser descartables
 
@@ -30,37 +30,37 @@ ms.locfileid: "71235744"
 |-|-|
 |TypeName|TypesThatOwnNativeResourcesShouldBeDisposable|
 |Identificador de comprobación|CA1049|
-|Categoría|Microsoft.Design|
+|Category|Microsoft.Design|
 |Cambio importante|Poco problemático|
 
 ## <a name="cause"></a>Motivo
 
-Un tipo hace referencia <xref:System.IntPtr?displayProperty=fullName> a un campo <xref:System.UIntPtr?displayProperty=fullName> , un campo o <xref:System.Runtime.InteropServices.HandleRef?displayProperty=fullName> un campo, pero no implementa <xref:System.IDisposable?displayProperty=fullName>.
+Un tipo hace referencia a un campo @no__t 0, un campo <xref:System.UIntPtr?displayProperty=fullName> o un campo @no__t 2, pero no implementa <xref:System.IDisposable?displayProperty=fullName>.
 
 ## <a name="rule-description"></a>Descripción de la regla
 
-Esta regla presupone que <xref:System.IntPtr>los <xref:System.UIntPtr>campos, <xref:System.Runtime.InteropServices.HandleRef> y almacenan punteros a recursos no administrados. Los tipos que asignan recursos no administrados <xref:System.IDisposable> deben implementar para permitir que los llamadores liberen esos recursos a petición y acortar la duración de los objetos que contienen los recursos.
+Esta regla presupone que los campos <xref:System.IntPtr>, <xref:System.UIntPtr> y <xref:System.Runtime.InteropServices.HandleRef> almacenan punteros a recursos no administrados. Los tipos que asignan recursos no administrados deben implementar <xref:System.IDisposable> para permitir a los autores de llamadas liberar esos recursos a petición y acortar la duración de los objetos que contienen los recursos.
 
-El patrón de diseño recomendado para limpiar los recursos no administrados es proporcionar un medio implícito y explícito para liberar esos recursos mediante el <xref:System.Object.Finalize%2A?displayProperty=fullName> método y el <xref:System.IDisposable.Dispose%2A?displayProperty=fullName> método, respectivamente. El recolector de elementos <xref:System.Object.Finalize%2A> no utilizados llama al método de un objeto en un momento indeterminado después de que se determine que el objeto ya no es accesible. Después <xref:System.Object.Finalize%2A> de llamar a, se necesita una recolección de elementos no utilizados adicional para liberar el objeto. El <xref:System.IDisposable.Dispose%2A> método permite al llamador liberar explícitamente los recursos a petición, antes de que se liberen los recursos si se dejan en el recolector de elementos no utilizados. Después de limpiar los recursos no administrados, <xref:System.IDisposable.Dispose%2A> debe <xref:System.GC.SuppressFinalize%2A?displayProperty=fullName> llamar al método para que el recolector de elementos no <xref:System.Object.Finalize%2A> utilizados sepa que ya no tiene que llamarse; Esto elimina la necesidad de la recolección de elementos no utilizados adicional y acorta el duración del objeto.
+El patrón de diseño recomendado para limpiar los recursos no administrados es proporcionar un medio implícito y explícito para liberar esos recursos mediante el método <xref:System.Object.Finalize%2A?displayProperty=fullName> y el método <xref:System.IDisposable.Dispose%2A?displayProperty=fullName>, respectivamente. El recolector de elementos no utilizados llama al método <xref:System.Object.Finalize%2A> de un objeto en un tiempo indeterminado después de que se determine que el objeto ya no es accesible. Después de llamar a <xref:System.Object.Finalize%2A>, se necesita una recolección de elementos no utilizados adicional para liberar el objeto. El método <xref:System.IDisposable.Dispose%2A> permite que el autor de la llamada libere explícitamente los recursos a petición, antes de que se liberaran los recursos si se dejan al recolector de elementos no utilizados. Después de limpiar los recursos no administrados, <xref:System.IDisposable.Dispose%2A> debe llamar al método <xref:System.GC.SuppressFinalize%2A?displayProperty=fullName> para que el recolector de elementos no utilizados sepa que <xref:System.Object.Finalize%2A> ya no tiene que llamarse; Esto elimina la necesidad de la recolección de elementos no utilizados adicional y acorta la duración del objeto.
 
 ## <a name="how-to-fix-violations"></a>Cómo corregir infracciones
-Para corregir una infracción de esta regla, <xref:System.IDisposable>implemente.
+Para corregir una infracción de esta regla, implemente <xref:System.IDisposable>.
 
 ## <a name="when-to-suppress-warnings"></a>Cuándo suprimir advertencias
-Es seguro suprimir una advertencia de esta regla si el tipo no hace referencia a un recurso no administrado. De lo contrario, no suprima una advertencia de esta regla porque el <xref:System.IDisposable> error de implementación puede hacer que los recursos no administrados dejen de estar disponibles o no se utilicen.
+Es seguro suprimir una advertencia de esta regla si el tipo no hace referencia a un recurso no administrado. De lo contrario, no suprima una advertencia de esta regla porque un error al implementar <xref:System.IDisposable> puede hacer que los recursos no administrados dejen de estar disponibles o no estén en uso.
 
 ## <a name="example"></a>Ejemplo
-<xref:System.IDisposable> En el ejemplo siguiente se muestra un tipo que implementa para limpiar un recurso no administrado.
+En el ejemplo siguiente se muestra un tipo que implementa <xref:System.IDisposable> para limpiar un recurso no administrado.
 
 [!code-csharp[FxCop.Design.UnmanagedResources#1](../code-quality/codesnippet/CSharp/ca1049-types-that-own-native-resources-should-be-disposable_1.cs)]
 [!code-vb[FxCop.Design.UnmanagedResources#1](../code-quality/codesnippet/VisualBasic/ca1049-types-that-own-native-resources-should-be-disposable_1.vb)]
 
 ## <a name="related-rules"></a>Reglas relacionadas
-[CA2115 Llame a GC. KeepAlive al usar recursos nativos](../code-quality/ca2115-call-gc-keepalive-when-using-native-resources.md)
+@NO__T 0CA2115: Llame a GC. KeepAlive al usar recursos nativos @ no__t-0
 
-[CA1816: Llame a GC. SuppressFinalize correctamente](../code-quality/ca1816-call-gc-suppressfinalize-correctly.md)
+[CA1816: Llame a GC. SuppressFinalize correctamente @ no__t-0
 
-[CA2216: Los tipos descartables deben declarar el finalizador](../code-quality/ca2216-disposable-types-should-declare-finalizer.md)
+[CA2216: Los tipos descartables deben declarar el finalizador @ no__t-0
 
 [CA1001: los tipos que poseen campos descartables deben ser descartables](../code-quality/ca1001-types-that-own-disposable-fields-should-be-disposable.md)
 

@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: a76d1c5d2268c0119fc6822167537b500371cdb5
-ms.sourcegitcommit: b83fefa8177c5554cbe2c59c4d102cbc534f7cc6
+ms.openlocfilehash: 6f895506d27c98daf9d69be1a2ea4db5fbe158b7
+ms.sourcegitcommit: 034c503ae04e22cf840ccb9770bffd012e40fb2d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2019
-ms.locfileid: "69585015"
+ms.lasthandoff: 10/14/2019
+ms.locfileid: "72305464"
 ---
 # <a name="basic-correctness-rules-rule-set-for-managed-code"></a>Conjunto de reglas Reglas de corrección básicas para código administrado
 
@@ -21,7 +21,7 @@ El conjunto de reglas reglas de corrección básicas se centra en los errores de
 
 En la tabla siguiente se describen todas las reglas del conjunto de reglas reglas de corrección básicas de Microsoft.
 
-|Regla|DESCRIPCIÓN|
+|Regla|Descripción|
 |----------|-----------------|
 |[CA1001](../code-quality/ca1001-types-that-own-disposable-fields-should-be-disposable.md)|Los tipos que poseen campos descartables deben ser descartables|
 |[CA1009](../code-quality/ca1009-declare-event-handlers-correctly.md)|Declarar los controladores de evento correctamente|
@@ -40,7 +40,7 @@ En la tabla siguiente se describen todas las reglas del conjunto de reglas regla
 |[CA1405](../code-quality/ca1405-com-visible-type-base-types-should-be-com-visible.md)|Los tipos base de tipos visibles a través de COM deben ser visibles a través de COM|
 |[CA1410](../code-quality/ca1410-com-registration-methods-should-be-matched.md)|Los métodos de registro COM deben coincidir|
 |[CA1415](../code-quality/ca1415-declare-p-invokes-correctly.md)|Declarar elementos P/Invoke correctamente|
-|[CA1821](../code-quality/ca1821-remove-empty-finalizers.md)|Quitar finalizadores vacíos|
+|[CA1821](../code-quality/ca1821.md)|Quitar finalizadores vacíos|
 |[CA1900](../code-quality/ca1900-value-type-fields-should-be-portable.md)|Los campos de tipo de valor deben ser portátiles|
 |[CA1901](../code-quality/ca1901-p-invoke-declarations-should-be-portable.md)|Las declaraciones P/Invoke deben ser portátiles|
 |[CA2002](../code-quality/ca2002-do-not-lock-on-objects-with-weak-identity.md)|No bloquear objetos con identidad débil|
@@ -89,10 +89,10 @@ En la tabla siguiente se describen todas las reglas del conjunto de reglas regla
 |[CA1013](../code-quality/ca1013-overload-operator-equals-on-overloading-add-and-subtract.md)|El operador de sobrecarga es igual que la suma y resta de sobrecarga|
 |[CA1303](../code-quality/ca1303-do-not-pass-literals-as-localized-parameters.md)|No pasar literales como parámetros localizados|
 |[CA1308](../code-quality/ca1308-normalize-strings-to-uppercase.md)|Normalizar cadenas en mayúsculas|
-|[CA1806](../code-quality/ca1806-do-not-ignore-method-results.md)|No omitir resultados del método|
-|[CA1816](../code-quality/ca1816-call-gc-suppressfinalize-correctly.md)|Llamar a GC.SuppressFinalize correctamente|
-|[CA1819](../code-quality/ca1819-properties-should-not-return-arrays.md)|Las propiedades no deben devolver matrices|
-|[CA1820](../code-quality/ca1820-test-for-empty-strings-using-string-length.md)|Comprobar si las cadenas están vacías mediante la longitud de cadena|
+|[CA1806](../code-quality/ca1806.md)|No omitir resultados del método|
+|[CA1816](../code-quality/ca1816.md)|Llamar a GC.SuppressFinalize correctamente|
+|[CA1819](../code-quality/ca1819.md)|Las propiedades no deben devolver matrices|
+|[CA1820](../code-quality/ca1820.md)|Comprobar si las cadenas están vacías mediante la longitud de cadena|
 |[CA1903](../code-quality/ca1903-use-only-api-from-targeted-framework.md)|Usar solo API de la versión de .NET Framework de destino|
 |[CA2004](../code-quality/ca2004-remove-calls-to-gc-keepalive.md)|Quitar las llamadas a GC.KeepAlive|
 |[CA2006](../code-quality/ca2006-use-safehandle-to-encapsulate-native-resources.md)|Utilizar SafeHandle para encapsular recursos nativos|
