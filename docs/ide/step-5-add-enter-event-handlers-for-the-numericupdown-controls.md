@@ -13,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8edebff5af7affebf166ea07ca7aa813037c13c2
-ms.sourcegitcommit: 6eed0372976c0167b9a6d42ba443f9a474b8bb91
+ms.openlocfilehash: 7de9fafa32922792e21eb672df0aa9128c25dbe2
+ms.sourcegitcommit: 98b02f87c7aa1f5eb7f0d1c86bfa36efa8580c57
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/19/2019
-ms.locfileid: "71118744"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "72314118"
 ---
 # <a name="step-5-add-enter-event-handlers-for-the-numericupdown-controls"></a>Paso 5: Agregar controladores de eventos Enter para los controles NumericUpDown
 
@@ -62,8 +62,7 @@ En la quinta parte de este tutorial, agregará <xref:System.Windows.Forms.Contro
      [!code-vb[VbExpressTutorial3Step5_6#11](../ide/codesnippet/VisualBasic/step-5-add-enter-event-handlers-for-the-numericupdown-controls_1.vb)]
      [!code-csharp[VbExpressTutorial3Step5_6#11](../ide/codesnippet/CSharp/step-5-add-enter-event-handlers-for-the-numericupdown-controls_1.cs)]
 
-     > [!IMPORTANT]
-     > Use el control del lenguaje de programación situado en la parte superior derecha de esta página para ver el fragmento de código de C# o el de Visual Basic.<br><br>![Control de lenguaje de programación para Docs.Microsoft.com](../ide/media/docs-programming-language-control.png)
+     [!INCLUDE [devlang-control-csharp-vb](./includes/devlang-control-csharp-vb.md)]
 
      Este código puede parecer complejo, pero puede entenderlo si lo examina paso a paso. En primer lugar, fíjese en la parte superior del método: `object sender` en C# o `sender As System.Object` en Visual Basic. Este parámetro hace referencia al objeto que tiene el evento que se genera, lo que se conoce como remitente. En este caso, el objeto remitente es el control NumericUpDown. Por lo tanto, en la primera línea del método, se especifica que el remitente no es simplemente un objeto genérico, sino que se trata específicamente de un control NumericUpDown. (Cada control NumericUpDown es un objeto, pero no todos los objetos son un control NumericUpDown.) El control NumericUpDown se denomina **answerBox** en este método, porque se usará para todos los controles NumericUpDown del formulario, no solo para el control NumericUpDown de suma. Dado que la variable answerBox se declara en este método, su ámbito solo se aplica a este método. Es decir, la variable solo se puede utilizar en este método.
 

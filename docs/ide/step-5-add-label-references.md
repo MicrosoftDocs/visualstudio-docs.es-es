@@ -13,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a076c4475b9e65d59aec08eac1774728b42cd77c
-ms.sourcegitcommit: 6eed0372976c0167b9a6d42ba443f9a474b8bb91
+ms.openlocfilehash: 0fdcecbdac0a866bd5c6a15a78d8c0ba2a33051a
+ms.sourcegitcommit: a5a54b147e772dc39e519da74ec41a0c25d99628
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/19/2019
-ms.locfileid: "71118974"
+ms.lasthandoff: 10/12/2019
+ms.locfileid: "72289680"
 ---
 # <a name="step-5-add-label-references"></a>Paso 5: Agregar referencias a etiquetas
 El programa necesita realizar un seguimiento de los controles Label que elige el jugador. De momento, el programa muestra todas las etiquetas elegidas por el jugador. Pero vamos a cambiar eso. Después de que se haga elegido la primera etiqueta, el programa debería mostrar el icono correspondiente. Una vez elegida la segunda etiqueta, el programa debe mostrar ambos iconos durante un breve período de tiempo y después ocultar ambos iconos de nuevo. El programa realizará ahora un seguimiento del control Label elegido en primer lugar y del control elegido en segundo lugar mediante *variables de referencia*.
@@ -29,6 +29,9 @@ El programa necesita realizar un seguimiento de los controles Label que elige el
 
      [!code-vb[VbExpressTutorial4Step5#5](../ide/codesnippet/VisualBasic/step-5-add-label-references_1.vb)]
      [!code-csharp[VbExpressTutorial4Step5#5](../ide/codesnippet/CSharp/step-5-add-label-references_1.cs)]
+
+     > [!IMPORTANT]
+     > Use el control del lenguaje de programación situado en la parte superior derecha de esta página para ver el fragmento de código de C# o el de Visual Basic.<br><br>![Control de lenguaje de programación para Docs.Microsoft.com](../ide/media/docs-programming-language-control.png)
 
      Estas variables de referencia son similares a las instrucciones usadas anteriormente para agregar objetos (por ejemplo, objetos <xref:System.Windows.Forms.Timer>, objetos <xref:System.Collections.Generic.List%601> y objetos <xref:System.Random>) a un formulario. Sin embargo, estas instrucciones no hacen aparecer dos controlesLabel adicionales en el formulario porque ninguna de las dos instrucciones incluye la palabra clave `new`. Sin la palabra clave `new`, no se crea ningún objeto. Por eso, `firstClicked` y `secondClicked` se denominan variables de referencia: Simplemente realizan un seguimiento de (o hacen referencia a) objetos Label.
 
@@ -43,8 +46,8 @@ El programa necesita realizar un seguimiento de los controles Label que elige el
 
 4. Elija el siguiente control de etiqueta y verá que no sucede nada. El programa ya está realizando un seguimiento de la primera etiqueta que eligió el jugador, por lo que el valor de `firstClicked` no es `null` en Visual C# ni `Nothing` en Visual Basic. Cuando la instrucción `if` comprueba `firstClicked` para determinar si su valor es `null` o `Nothing`, concluye que no tiene ese valor y no ejecuta las instrucciones de la instrucción `if`. Por lo tanto, solo el primer icono elegido se vuelve negro y los demás iconos se vuelven invisibles, tal y como se muestra en la siguiente imagen.
 
-     ![Juego de formar parejas con un icono visible](../ide/media/express_tut4step5.png)
-**Matching game** showing one icon
+     ![Juego de formar parejas con un icono visible](../ide/media/express_tut4step5.png)<br/>
+**Juego de formar parejas** con un icono visible
 
      Corregirá esta situación en el siguiente paso del tutorial agregando un control **Timer**.
 
