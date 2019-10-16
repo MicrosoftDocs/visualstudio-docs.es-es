@@ -13,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bd5958c089998d35dea4324c59f85c368adf900c
-ms.sourcegitcommit: 6eed0372976c0167b9a6d42ba443f9a474b8bb91
+ms.openlocfilehash: e2f58e969f96d05828a4b3a5e640ede364abca10
+ms.sourcegitcommit: a5a54b147e772dc39e519da74ec41a0c25d99628
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/19/2019
-ms.locfileid: "71118993"
+ms.lasthandoff: 10/12/2019
+ms.locfileid: "72289636"
 ---
 # <a name="step-6-add-a-timer"></a>Paso 6: Agregar un temporizador
 A continuación, agregará un control <xref:System.Windows.Forms.Timer> al juego de formar parejas. Un temporizador espera un número especificado de milisegundos para desencadenar un evento conocido como *tic*. Esto es útil para iniciar o repetir una acción de forma periódica. En este caso, se usará un temporizador para permitir a los participantes elegir dos iconos y, si no coinciden, ocultarlos de nuevo trascurrido un breve período de tiempo.
@@ -27,8 +27,8 @@ A continuación, agregará un control <xref:System.Windows.Forms.Timer> al juego
 
 1. En el cuadro de herramientas del **Diseñador de Windows Forms**, pulse **Temporizador** (en la categoría **Componentes**) y, después, la tecla **Entrar** o haga doble clic en el temporizador para agregar un control de temporizador al formulario. El icono del temporizador, denominado **Temporizador1**, debe aparecer en un espacio bajo el formulario, como se muestra en la siguiente imagen.
 
-     ![Temporizador](../ide/media/express_timer.png)
-**Timer**
+     ![Temporizador](../ide/media/express_timer.png)<br/>
+**Temporizador**
 
     > [!NOTE]
     > Si el cuadro de herramientas está vacío, asegúrese de seleccionar el diseñador de formularios, y no el código subyacente del formulario, antes de abrir el cuadro de herramientas.
@@ -39,6 +39,9 @@ A continuación, agregará un control <xref:System.Windows.Forms.Timer> al juego
 
      [!code-csharp[VbExpressTutorial4Step6#7](../ide/codesnippet/CSharp/step-6-add-a-timer_1.cs)]
      [!code-vb[VbExpressTutorial4Step6#7](../ide/codesnippet/VisualBasic/step-6-add-a-timer_1.vb)]
+
+      > [!IMPORTANT]
+      > Use el control del lenguaje de programación situado en la parte superior derecha de esta página para ver el fragmento de código de C# o el de Visual Basic.<br><br>![Control de lenguaje de programación para Docs.Microsoft.com](../ide/media/docs-programming-language-control.png)
 
      El controlador de eventos Tic realiza tres operaciones: Primero, se asegura de que el temporizador no está en marcha mediante una llamada al método <xref:System.Windows.Forms.Timer.Stop>. A continuación, usa las dos variables de referencia, `firstClicked` y `secondClicked`, para ocultar de nuevo los iconos de las dos etiquetas que el jugador eligió. Finalmente, restablece las variables de referencia `firstClicked` y `secondClicked` en `null` en Visual C# y `Nothing` en Visual Basic. Este paso es importante porque es como se restablece el programa. Ahora no realiza el seguimiento de ningún control <xref:System.Windows.Forms.Label> y vuelve a estar listo para que el jugador elija otra etiqueta.
 

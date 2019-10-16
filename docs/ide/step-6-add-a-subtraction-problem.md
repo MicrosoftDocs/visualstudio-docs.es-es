@@ -13,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 47932e8a647cb9a5ae555de09778fcd67da397e2
-ms.sourcegitcommit: 6eed0372976c0167b9a6d42ba443f9a474b8bb91
+ms.openlocfilehash: 8acc67aa82bb0d7cf81cf6794bfdbb4e0c912ebe
+ms.sourcegitcommit: 98b02f87c7aa1f5eb7f0d1c86bfa36efa8580c57
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/19/2019
-ms.locfileid: "71118726"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "72314232"
 ---
 # <a name="step-6-add-a-subtraction-problem"></a>Paso 6: Agregar un problema de resta
 En la sexta parte de este tutorial, agregará un problema de resta y aprenderá a realizar las tareas siguientes:
@@ -43,8 +43,7 @@ En la sexta parte de este tutorial, agregará un problema de resta y aprenderá 
      [!code-vb[VbExpressTutorial3Step5_6#12](../ide/codesnippet/VisualBasic/step-6-add-a-subtraction-problem_1.vb)]
      [!code-csharp[VbExpressTutorial3Step5_6#12](../ide/codesnippet/CSharp/step-6-add-a-subtraction-problem_1.cs)]
 
-     > [!IMPORTANT]
-     > Use el control del lenguaje de programación situado en la parte superior derecha de esta página para ver el fragmento de código de C# o el de Visual Basic.<br><br>![Control de lenguaje de programación para Docs.Microsoft.com](../ide/media/docs-programming-language-control.png)
+     [!INCLUDE [devlang-control-csharp-vb](./includes/devlang-control-csharp-vb.md)]
 
      Los nombres de las nuevas variables de entero, **minuend** y **subtrahend**, no son términos de programación. Se trata de los nombres que se utilizan tradicionalmente en aritmética para el número que se resta (sustraendo) y el número del que se resta (minuendo). La diferencia es el minuendo menos el sustraendo. Puede utilizar otros nombres, ya que el programa no requiere nombres específicos para las variables, los controles, los componentes o los métodos. Es necesario seguir ciertas reglas, como que los nombres no comiencen con dígitos, pero normalmente se pueden utilizar nombres como x1, x2, x3 y x4. Sin embargo, los nombres genéricos hacen que el código sea difícil de leer y que el seguimiento de los problemas sea casi imposible. Para que los nombres de variable sean únicos y útiles, se usarán los nombres tradicionales de la multiplicación (multiplicando × multiplicador = producto) y de la división (dividendo ÷ divisor = cociente) más adelante en este tutorial.
 

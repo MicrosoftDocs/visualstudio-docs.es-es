@@ -13,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 402817ace34f12fb7659b7251cbe755d036ebc4b
-ms.sourcegitcommit: 6eed0372976c0167b9a6d42ba443f9a474b8bb91
+ms.openlocfilehash: cee7b855256f352c9ac9ed39994191f4a9e6d946
+ms.sourcegitcommit: 98b02f87c7aa1f5eb7f0d1c86bfa36efa8580c57
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/19/2019
-ms.locfileid: "71118636"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "72314211"
 ---
 # <a name="step-8-customize-the-quiz"></a>Paso 8: Personalizar la prueba
 
@@ -41,8 +41,7 @@ En la última parte del tutorial, explorará algunas maneras de personalizar la 
   timeLabel.BackColor = Color.Red
   ```
 
-  > [!IMPORTANT]
-  > Use el control del lenguaje de programación situado en la parte superior derecha de esta página para ver el fragmento de código de C# o el de Visual Basic.<br><br>![Control de lenguaje de programación para Docs.Microsoft.com](../ide/media/docs-programming-language-control.png)
+  [!INCLUDE [devlang-control-csharp-vb](./includes/devlang-control-csharp-vb.md)]
 
   Restablezca el color cuando la prueba haya terminado.
 
