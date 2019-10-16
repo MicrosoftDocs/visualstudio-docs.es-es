@@ -18,12 +18,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 6c0a03f68ed15e790ea8a43a9ae2b476dd2f6f5d
-ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
+ms.openlocfilehash: d7b4a993af3a473ada7b4884001e372d9f444403
+ms.sourcegitcommit: 1507baf3a336bbb6511d4c3ce73653674831501b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71235541"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "72349065"
 ---
 # <a name="ca1055-uri-return-values-should-not-be-strings"></a>CA1055: Los valores devueltos URI no deben ser cadenas
 
@@ -31,7 +31,7 @@ ms.locfileid: "71235541"
 |-|-|
 |TypeName|UriReturnValuesShouldNotBeStrings|
 |Identificador de comprobación|CA1055|
-|Categoría|Microsoft.Design|
+|Categoría|Microsoft. Design|
 |Cambio importante|Problemático|
 
 ## <a name="cause"></a>Motivo
@@ -42,11 +42,11 @@ De forma predeterminada, esta regla solo examina los métodos públicos, pero es
 
 ## <a name="rule-description"></a>Descripción de la regla
 
-Esta regla divide el nombre del método en tokens según la Convención de mayúsculas y minúsculas Pascal y comprueba si cada token es igual a "URI", "URI", "urn", "urn", "URL" o "URL". Si hay una coincidencia, la regla presupone que el método devuelve un identificador uniforme de recursos (URI). Las representaciones de cadena de identificadores URI tienen tendencia a analizar y codificar errores, por lo que pueden crear puntos vulnerables en la seguridad. La <xref:System.Uri?displayProperty=fullName> clase proporciona estos servicios de forma segura.
+Esta regla divide el nombre del método en tokens según la Convención de mayúsculas y minúsculas Pascal y comprueba si cada token es igual a "URI", "URI", "urn", "urn", "URL" o "URL". Si hay una coincidencia, la regla presupone que el método devuelve un identificador uniforme de recursos (URI). Las representaciones de cadena de identificadores URI tienen tendencia a analizar y codificar errores, por lo que pueden crear puntos vulnerables en la seguridad. La clase <xref:System.Uri?displayProperty=fullName> proporciona estos servicios de forma segura.
 
 ## <a name="how-to-fix-violations"></a>Cómo corregir infracciones
 
-Para corregir una infracción de esta regla, cambie el tipo de valor <xref:System.Uri>devuelto a.
+Para corregir una infracción de esta regla, cambie el tipo de valor devuelto a <xref:System.Uri>.
 
 ## <a name="when-to-suppress-warnings"></a>Cuándo suprimir advertencias
 
@@ -64,7 +64,7 @@ Puede configurar esta opción solo para esta regla, para todas las reglas o para
 
 ## <a name="example"></a>Ejemplo
 
-En el ejemplo siguiente se muestra un `ErrorProne`tipo,, que infringe esta regla, y un tipo `SaferWay`,, que cumple la regla.
+En el ejemplo siguiente se muestra un tipo, `ErrorProne`, que infringe esta regla, y un tipo, `SaferWay`, que cumple la regla.
 
 [!code-csharp[FxCop.Design.UriNotString#1](../code-quality/codesnippet/CSharp/ca1055-uri-return-values-should-not-be-strings_1.cs)]
 [!code-vb[FxCop.Design.UriNotString#1](../code-quality/codesnippet/VisualBasic/ca1055-uri-return-values-should-not-be-strings_1.vb)]
@@ -74,5 +74,5 @@ En el ejemplo siguiente se muestra un `ErrorProne`tipo,, que infringe esta regla
 
 - [CA1056: Las propiedades URI no deben ser cadenas](../code-quality/ca1056-uri-properties-should-not-be-strings.md)
 - [CA1054: Los parámetros de URI no deben ser cadenas](../code-quality/ca1054-uri-parameters-should-not-be-strings.md)
-- [CA2234: Pasar objetos System. Uri en lugar de cadenas](../code-quality/ca2234-pass-system-uri-objects-instead-of-strings.md)
-- [CA1057: Las sobrecargas URI de cadena llaman a sobrecargas System. Uri](../code-quality/ca1057-string-uri-overloads-call-system-uri-overloads.md)
+- [CA2234: Pase objetos System.Uri en lugar de cadenas](../code-quality/ca2234.md)
+- [CA1057: Las sobrecargas URI de cadena llaman a sobrecargas System.Uri](../code-quality/ca1057-string-uri-overloads-call-system-uri-overloads.md)

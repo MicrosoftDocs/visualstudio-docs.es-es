@@ -18,12 +18,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 71e365fa0891e9cb01f7a2860a9c2f13b78072b3
-ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
+ms.openlocfilehash: eda4f582c2e69069120f2846bad2a038f59de3ae
+ms.sourcegitcommit: 1507baf3a336bbb6511d4c3ce73653674831501b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71235533"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "72349055"
 ---
 # <a name="ca1056-uri-properties-should-not-be-strings"></a>CA1056: Las propiedades URI no deben ser cadenas
 
@@ -31,7 +31,7 @@ ms.locfileid: "71235533"
 |-|-|
 |TypeName|UriPropertiesShouldNotBeStrings|
 |Identificador de comprobación|CA1056|
-|Categoría|Microsoft.Design|
+|Categoría|Microsoft. Design|
 |Cambio importante|Problemático|
 
 ## <a name="cause"></a>Motivo
@@ -42,11 +42,11 @@ De forma predeterminada, esta regla solo examina los tipos visibles externamente
 
 ## <a name="rule-description"></a>Descripción de la regla
 
-Esta regla divide el nombre de la propiedad en tokens según la Convención de mayúsculas y minúsculas Pascal y comprueba si cada token es igual a "URI", "URI", "urn", "urn", "URL" o "URL". Si hay una coincidencia, la regla supone que la propiedad representa un identificador uniforme de recursos (URI). Las representaciones de cadena de identificadores URI tienen tendencia a analizar y codificar errores, por lo que pueden crear puntos vulnerables en la seguridad. La <xref:System.Uri?displayProperty=fullName> clase proporciona estos servicios de forma segura.
+Esta regla divide el nombre de la propiedad en tokens según la Convención de mayúsculas y minúsculas Pascal y comprueba si cada token es igual a "URI", "URI", "urn", "urn", "URL" o "URL". Si hay una coincidencia, la regla supone que la propiedad representa un identificador uniforme de recursos (URI). Las representaciones de cadena de identificadores URI tienen tendencia a analizar y codificar errores, por lo que pueden crear puntos vulnerables en la seguridad. La clase <xref:System.Uri?displayProperty=fullName> proporciona estos servicios de forma segura.
 
 ## <a name="how-to-fix-violations"></a>Cómo corregir infracciones
 
-Para corregir una infracción de esta regla, cambie la propiedad a <xref:System.Uri> un tipo.
+Para corregir una infracción de esta regla, cambie la propiedad a un tipo <xref:System.Uri>.
 
 ## <a name="when-to-suppress-warnings"></a>Cuándo suprimir advertencias
 
@@ -64,7 +64,7 @@ Puede configurar esta opción solo para esta regla, para todas las reglas o para
 
 ## <a name="example"></a>Ejemplo
 
-En el ejemplo siguiente se muestra un `ErrorProne`tipo,, que infringe esta regla, y un tipo `SaferWay`,, que cumple la regla.
+En el ejemplo siguiente se muestra un tipo, `ErrorProne`, que infringe esta regla, y un tipo, `SaferWay`, que cumple la regla.
 
 [!code-csharp[FxCop.Design.UriNotString#1](../code-quality/codesnippet/CSharp/ca1056-uri-properties-should-not-be-strings_1.cs)]
 [!code-vb[FxCop.Design.UriNotString#1](../code-quality/codesnippet/VisualBasic/ca1056-uri-properties-should-not-be-strings_1.vb)]
@@ -73,6 +73,6 @@ En el ejemplo siguiente se muestra un `ErrorProne`tipo,, que infringe esta regla
 ## <a name="related-rules"></a>Reglas relacionadas
 
 - [CA1054: Los parámetros de URI no deben ser cadenas](../code-quality/ca1054-uri-parameters-should-not-be-strings.md)
-- [CA1055: Los valores devueltos de URI no deben ser cadenas](../code-quality/ca1055-uri-return-values-should-not-be-strings.md)
-- [CA2234: Pasar objetos System. Uri en lugar de cadenas](../code-quality/ca2234-pass-system-uri-objects-instead-of-strings.md)
-- [CA1057: Las sobrecargas URI de cadena llaman a sobrecargas System. Uri](../code-quality/ca1057-string-uri-overloads-call-system-uri-overloads.md)
+- [CA1055: Los valores devueltos URI no deben ser cadenas](../code-quality/ca1055-uri-return-values-should-not-be-strings.md)
+- [CA2234: Pase objetos System.Uri en lugar de cadenas](../code-quality/ca2234.md)
+- [CA1057: Las sobrecargas URI de cadena llaman a sobrecargas System.Uri](../code-quality/ca1057-string-uri-overloads-call-system-uri-overloads.md)

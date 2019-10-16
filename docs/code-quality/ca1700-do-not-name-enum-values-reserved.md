@@ -1,5 +1,5 @@
 ---
-title: 'CA1700: No asignar nombre a los &#39;valores de enumeración reservados&#39;'
+title: 'CA1700: no nombrar valores &#39;de enumeración reservados&#39;'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -14,14 +14,14 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5171123827481c99bbc35c10b04aaf942a15fabb
-ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
+ms.openlocfilehash: f0097725b8f84a641df9061d693f1f5c4bdf1851
+ms.sourcegitcommit: 1507baf3a336bbb6511d4c3ce73653674831501b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71234388"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "72348972"
 ---
-# <a name="ca1700-do-not-name-enum-values-39reserved39"></a>CA1700: No asignar nombre a los &#39;valores de enumeración reservados&#39;
+# <a name="ca1700-do-not-name-enum-values-39reserved39"></a>CA1700: no nombrar valores &#39;de enumeración reservados&#39;
 
 |||
 |-|-|
@@ -40,11 +40,11 @@ Esta regla supone que un miembro de la enumeración con un nombre que contiene l
 
 En lugar de usar un miembro reservado, agregue un nuevo miembro a la enumeración en la versión futura. En la mayoría de los casos, la adición del nuevo miembro no es un cambio importante, siempre y cuando la adición no cause la modificación de los valores de los miembros originales.
 
-En un número limitado de casos, la adición de un miembro es un cambio importante incluso cuando los miembros originales conservan sus valores originales. Principalmente, el nuevo miembro no se puede devolver desde las rutas de acceso de código existentes sin interrumpir a [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]los llamadores que usan una `switch` instrucción (`Select` in) en el valor devuelto que abarca toda la lista de miembros y que producen una excepción en el caso predeterminado. Una preocupación secundaria es que el código de cliente podría no controlar el cambio de comportamiento de métodos de <xref:System.Enum.IsDefined%2A?displayProperty=fullName>reflexión como. En consecuencia, si el nuevo miembro debe devolverse desde los métodos existentes o si se produce una incompatibilidad de aplicaciones conocida debido a un uso deficiente de la reflexión, la única solución sin interrupción es:
+En un número limitado de casos, la adición de un miembro es un cambio importante incluso cuando los miembros originales conservan sus valores originales. Principalmente, el nuevo miembro no se puede devolver desde las rutas de acceso de código existentes sin interrumpir a los llamadores que usan una instrucción `switch` (`Select` en [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]) en el valor devuelto que abarca toda la lista de miembros y que producen una excepción en el caso predeterminado. Una preocupación secundaria es que el código de cliente podría no controlar el cambio de comportamiento de métodos de reflexión como <xref:System.Enum.IsDefined%2A?displayProperty=fullName>. En consecuencia, si el nuevo miembro debe devolverse desde los métodos existentes o si se produce una incompatibilidad de aplicaciones conocida debido a un uso deficiente de la reflexión, la única solución sin interrupción es:
 
 1. Agregue una nueva enumeración que contenga los miembros originales y nuevos.
 
-2. Marque la enumeración original con <xref:System.ObsoleteAttribute?displayProperty=fullName> el atributo.
+2. Marque la enumeración original con el atributo <xref:System.ObsoleteAttribute?displayProperty=fullName>.
 
    Siga el mismo procedimiento para cualquier tipo o miembro visible externamente que exponga la enumeración original.
 
@@ -58,12 +58,12 @@ Es seguro suprimir una advertencia de esta regla para un miembro que se usa actu
 
 ## <a name="related-rules"></a>Reglas relacionadas
 
-[CA2217 No marcar enumeraciones con FlagsAttribute](../code-quality/ca2217-do-not-mark-enums-with-flagsattribute.md)
+[CA2217: No marcar enumeraciones con FlagsAttribute](../code-quality/ca2217.md)
 
-[CA1712: No Prefije valores de enumeración con el nombre de tipo](../code-quality/ca1712-do-not-prefix-enum-values-with-type-name.md)
+[CA1712: No utilizar prefijos en valores de enumeración con el nombre del tipo](../code-quality/ca1712-do-not-prefix-enum-values-with-type-name.md)
 
-[CA1028: El almacenamiento de enumeración debe ser Int32](../code-quality/ca1028-enum-storage-should-be-int32.md)
+[CA1028: El almacenamiento de la enumeración debe ser de tipo Int32](../code-quality/ca1028-enum-storage-should-be-int32.md)
 
-[CA1008: Las enumeraciones deben tener un valor cero](../code-quality/ca1008-enums-should-have-zero-value.md)
+[CA1008: Las enumeraciones deben tener un valor igual a cero](../code-quality/ca1008-enums-should-have-zero-value.md)
 
 [CA1027: Marcar enumeraciones con FlagsAttribute](../code-quality/ca1027-mark-enums-with-flagsattribute.md)

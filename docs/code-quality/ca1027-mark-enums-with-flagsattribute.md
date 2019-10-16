@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8375d2096417948b19a228d8a4f02accac7c0b5f
-ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
+ms.openlocfilehash: 01dc0ed6ca5bd7af8131fb85d35310131a821eaa
+ms.sourcegitcommit: 1507baf3a336bbb6511d4c3ce73653674831501b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71236110"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "72349164"
 ---
 # <a name="ca1027-mark-enums-with-flagsattribute"></a>CA1027: Marcar enumeraciones con FlagsAttribute
 
@@ -27,24 +27,24 @@ ms.locfileid: "71236110"
 |-|-|
 |TypeName|MarkEnumsWithFlags|
 |Identificador de comprobación|CA1027|
-|Categoría|Microsoft.Design|
+|Categoría|Microsoft. Design|
 |Cambio importante|Poco problemático|
 
 ## <a name="cause"></a>Motivo
 
-Los valores de una enumeración son potencias de dos o son combinaciones de otros valores que se definen en la enumeración <xref:System.FlagsAttribute?displayProperty=fullName> y el atributo no está presente. Para reducir los falsos positivos, esta regla no notifica una infracción de las enumeraciones que tienen valores contiguos.
+Los valores de una enumeración son potencias de dos o son combinaciones de otros valores que se definen en la enumeración y el atributo <xref:System.FlagsAttribute?displayProperty=fullName> no está presente. Para reducir los falsos positivos, esta regla no notifica una infracción de las enumeraciones que tienen valores contiguos.
 
 De forma predeterminada, esta regla solo examina enumeraciones públicas, pero esto es [configurable](#configurability).
 
 ## <a name="rule-description"></a>Descripción de la regla
 
-Una enumeración es un tipo de valor que define un conjunto de constantes con nombre relacionadas. Se <xref:System.FlagsAttribute> aplica a una enumeración cuando se pueden combinar con sentido las constantes con nombre. Por ejemplo, considere una enumeración de los días de la semana en una aplicación que realiza un seguimiento de los recursos del día que están disponibles. Si la disponibilidad de cada recurso se codifica mediante la enumeración que tiene <xref:System.FlagsAttribute> presente, se puede representar cualquier combinación de días. Sin el atributo, solo se puede representar un día de la semana.
+Una enumeración es un tipo de valor que define un conjunto de constantes con nombre relacionadas. Aplique <xref:System.FlagsAttribute> a una enumeración cuando se puedan combinar con sentido las constantes con nombre. Por ejemplo, considere una enumeración de los días de la semana en una aplicación que realiza un seguimiento de los recursos del día que están disponibles. Si la disponibilidad de cada recurso se codifica mediante la enumeración que tiene <xref:System.FlagsAttribute>, se puede representar cualquier combinación de días. Sin el atributo, solo se puede representar un día de la semana.
 
 En el caso de los campos que almacenan enumeraciones combinables, los valores de enumeración individuales se tratan como grupos de bits en el campo. Por lo tanto, estos campos a veces se denominan *campos de bits*. Para combinar los valores de enumeración para el almacenamiento en un campo de bits, utilice los operadores condicionales booleanos. Para probar un campo de bits para determinar si un valor de enumeración específico está presente, utilice los operadores lógicos booleanos. Para un campo de bits para almacenar y recuperar correctamente los valores de enumeración combinados, cada valor que se define en la enumeración debe ser una potencia de dos. A menos que esto sea así, los operadores lógicos booleanos no podrán extraer los valores de enumeración individuales almacenados en el campo.
 
 ## <a name="how-to-fix-violations"></a>Cómo corregir infracciones
 
-Para corregir una infracción de esta regla, <xref:System.FlagsAttribute> agregue a la enumeración.
+Para corregir una infracción de esta regla, agregue <xref:System.FlagsAttribute> a la enumeración.
 
 ## <a name="when-to-suppress-warnings"></a>Cuándo suprimir advertencias
 
@@ -62,13 +62,13 @@ Puede configurar esta opción solo para esta regla, para todas las reglas o para
 
 ## <a name="example"></a>Ejemplo
 
-En el ejemplo siguiente, `DaysEnumNeedsFlags` es una enumeración que cumple los requisitos para <xref:System.FlagsAttribute> usar pero no lo tiene. La `ColorEnumShouldNotHaveFlag` enumeración no tiene valores que sean potencias de dos, pero que especifica <xref:System.FlagsAttribute>incorrectamente. Esto infringe la regla [CA2217: No marque las enumeraciones con FlagsAttribute](../code-quality/ca2217-do-not-mark-enums-with-flagsattribute.md).
+En el ejemplo siguiente, `DaysEnumNeedsFlags` es una enumeración que cumple los requisitos para usar <xref:System.FlagsAttribute> pero no la tiene. La enumeración `ColorEnumShouldNotHaveFlag` no tiene valores que sean potencias de dos, pero que especifica incorrectamente <xref:System.FlagsAttribute>. Esto infringe la regla [CA2217: no marcar enumeraciones con FlagsAttribute](../code-quality/ca2217.md).
 
 [!code-csharp[FxCop.Design.EnumFlags#1](../code-quality/codesnippet/CSharp/ca1027-mark-enums-with-flagsattribute_1.cs)]
 
 ## <a name="related-rules"></a>Reglas relacionadas
 
-- [CA2217 No marcar enumeraciones con FlagsAttribute](../code-quality/ca2217-do-not-mark-enums-with-flagsattribute.md)
+- [CA2217: No marcar enumeraciones con FlagsAttribute](../code-quality/ca2217.md)
 
 ## <a name="see-also"></a>Vea también
 

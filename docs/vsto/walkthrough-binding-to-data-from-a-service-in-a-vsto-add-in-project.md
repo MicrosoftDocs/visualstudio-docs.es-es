@@ -14,23 +14,23 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 74a43a0c601fa8a96c8737644bf5bd0261f59796
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.openlocfilehash: 75d984617b56525e640a74aa4badd6f520c0b892
+ms.sourcegitcommit: e82baa50bf5a65858c410882c2e86a552c2c1921
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71254054"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72381317"
 ---
-# <a name="walkthrough-bind-to-data-from-a-service-in-a-vsto-add-in-project"></a>Tutorial: Enlazar a datos de un servicio en un proyecto de complemento de VSTO
+# <a name="walkthrough-bind-to-data-from-a-service-in-a-vsto-add-in-project"></a>Tutorial: enlazar a datos de un servicio en un proyecto de complemento de VSTO
   Puede enlazar datos a controles host en proyectos de complemento de VSTO. Este tutorial muestra cómo agregar controles a un documento de Microsoft Office Word, enlazar los controles a los datos recuperados de MSDN Content Service y responder a eventos en tiempo de ejecución.
 
- **Se aplica a:** La información de este tema se aplica a los proyectos de nivel de aplicación de Word 2010. Para obtener más información, consulta [Features Available by Office Application and Project Type](../vsto/features-available-by-office-application-and-project-type.md).
+ **Aplicación:** la información de este tema se aplica a los proyectos de nivel de aplicación de Word 2010. Para obtener más información, consulte [Características disponibles por aplicación y tipo de proyecto de Office](../vsto/features-available-by-office-application-and-project-type.md).
 
  En este tutorial se muestran las tareas siguientes:
 
 - Agregar un control <xref:Microsoft.Office.Tools.Word.RichTextContentControl> a un documento en tiempo de ejecución.
 
-- Enlazar <xref:Microsoft.Office.Tools.Word.RichTextContentControl> el control a los datos de un servicio Web.
+- Enlazar el control <xref:Microsoft.Office.Tools.Word.RichTextContentControl> a los datos de un servicio Web.
 
 - Responder al evento <xref:Microsoft.Office.Tools.Word.ContentControlBase.Entering> eventos de un control <xref:Microsoft.Office.Tools.Word.RichTextContentControl> .
 
@@ -50,7 +50,7 @@ ms.locfileid: "71254054"
 
 1. Cree un proyecto de complemento VSTO de Word con el nombre **MTPS Content Service**mediante Visual Basic o C#.
 
-     Para obtener más información, vea [Cómo: Cree proyectos de Office en Visual](../vsto/how-to-create-office-projects-in-visual-studio.md)Studio.
+     Para obtener más información, vea [Cómo: crear proyectos de Office en Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).
 
      Visual Studio abre el archivo `ThisAddIn.vb` o `ThisAddIn.cs` y agrega el proyecto al **Explorador de soluciones**.
 
@@ -65,7 +65,7 @@ ms.locfileid: "71254054"
 
 3. En el campo **Dirección** , escriba la dirección URL siguiente:
 
-     **http:\//Services.msdn.Microsoft.com/ContentServices/ContentService.asmx**
+   `http://services.msdn.microsoft.com/ContentServices/ContentService.asmx`
 
 4. Haga clic en **Ir**.
 
@@ -106,7 +106,7 @@ ms.locfileid: "71254054"
 ## <a name="test-the-add-in"></a>Probar el complemento
  Al abrir Word, aparecerá el control <xref:Microsoft.Office.Tools.Word.RichTextContentControl> . El texto del control cambia al hacer clic en él.
 
-### <a name="to-test-the-vsto-add-in"></a>Para probar el complemento VSTO
+### <a name="to-test-the-vsto-add-in"></a>Para probar el complemento de VSTO
 
 1. Presione **F5**.
 

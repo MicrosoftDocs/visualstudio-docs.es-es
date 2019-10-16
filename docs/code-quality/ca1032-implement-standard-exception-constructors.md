@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 06fdc566abd9bd16758f224f8a9fe805cddb2c61
-ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
+ms.openlocfilehash: c39ca1d1a1edd9ac2182a3d6d55896c41c189030
+ms.sourcegitcommit: 1507baf3a336bbb6511d4c3ce73653674831501b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71236048"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "72349109"
 ---
 # <a name="ca1032-implement-standard-exception-constructors"></a>CA1032: Implementar constructores de excepción estándar
 
@@ -27,12 +27,12 @@ ms.locfileid: "71236048"
 |-|-|
 |TypeName|ImplementStandardExceptionConstructors|
 |Identificador de comprobación|CA1032|
-|Categoría|Microsoft.Design|
+|Categoría|Microsoft. Design|
 |Cambio importante|Poco problemático|
 
 ## <a name="cause"></a>Motivo
 
-Un tipo extiende <xref:System.Exception?displayProperty=fullName> pero no declara todos los constructores necesarios.
+Un tipo extiende <xref:System.Exception?displayProperty=fullName>, pero no declara todos los constructores necesarios.
 
 ## <a name="rule-description"></a>Descripción de la regla
 
@@ -50,7 +50,7 @@ Además, si ejecuta el análisis de FxCop heredado en lugar de los [analizadores
 
 El error al proporcionar el conjunto completo de constructores puede dificultar el control correcto de las excepciones. Por ejemplo, el constructor que tiene la firma `NewException(string, Exception)` se usa para crear excepciones provocadas por otras excepciones. Sin este constructor, no se puede crear y producir una instancia de la excepción personalizada que contiene una excepción interna (anidada), que es lo que debe hacer el código administrado en esta situación.
 
-Los tres primeros constructores de excepción son públicos por Convención. El cuarto constructor está protegido en clases no selladas y privado en clases selladas. Para obtener más información, [vea CA2229: Implementar constructores](../code-quality/ca2229-implement-serialization-constructors.md)de serialización.
+Los tres primeros constructores de excepción son públicos por Convención. El cuarto constructor está protegido en clases no selladas y privado en clases selladas. Para obtener más información, vea [CA2229: implementar constructores de serialización](../code-quality/ca2229.md).
 
 ## <a name="how-to-fix-violations"></a>Cómo corregir infracciones
 
@@ -58,7 +58,7 @@ Para corregir una infracción de esta regla, agregue los constructores que falta
 
 ## <a name="when-to-suppress-warnings"></a>Cuándo suprimir advertencias
 
-Es seguro suprimir una advertencia de esta regla cuando se produce la infracción mediante el uso de un nivel de acceso diferente para los constructores públicos. Además, es correcto suprimir la advertencia `NewException(SerializationInfo, StreamingContext)` del constructor si está creando una biblioteca de clases portable (PCL).
+Es seguro suprimir una advertencia de esta regla cuando se produce la infracción mediante el uso de un nivel de acceso diferente para los constructores públicos. Además, es correcto suprimir la advertencia del constructor `NewException(SerializationInfo, StreamingContext)` si está creando una biblioteca de clases portable (PCL).
 
 ## <a name="example"></a>Ejemplo
 
@@ -68,4 +68,4 @@ El ejemplo siguiente contiene un tipo de excepción que infringe esta regla y un
 
 ## <a name="see-also"></a>Vea también
 
-[CA2229: implementar constructores de serialización](../code-quality/ca2229-implement-serialization-constructors.md)
+[CA2229: Implementar constructores de serialización](../code-quality/ca2229.md)

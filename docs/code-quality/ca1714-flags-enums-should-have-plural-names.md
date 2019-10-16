@@ -1,5 +1,5 @@
 ---
-title: 'CA1714: Las enumeraciones Flags deben tener nombres en plural'
+title: 'CA1714: Las enumeraciones Flags deberían tener nombres en plural'
 ms.date: 03/11/2019
 ms.topic: reference
 f1_keywords:
@@ -14,14 +14,14 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 79585cd9cae31f46a9506085c9c8faf5b5844d44
-ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
+ms.openlocfilehash: 0a648978eaf65faa66dd1ac10a4224c7e5168510
+ms.sourcegitcommit: 1507baf3a336bbb6511d4c3ce73653674831501b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71234089"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "72348923"
 ---
-# <a name="ca1714-flags-enums-should-have-plural-names"></a>CA1714: Las enumeraciones Flags deben tener nombres en plural
+# <a name="ca1714-flags-enums-should-have-plural-names"></a>CA1714: Las enumeraciones Flags deberían tener nombres en plural
 
 |||
 |-|-|
@@ -32,19 +32,19 @@ ms.locfileid: "71234089"
 
 ## <a name="cause"></a>Motivo
 
-Una enumeración tiene <xref:System.FlagsAttribute?displayProperty=fullName> y su nombre no termina en ' '.
+Una enumeración tiene el <xref:System.FlagsAttribute?displayProperty=fullName> y su nombre no termina en ' '.
 
 De forma predeterminada, esta regla solo examina las enumeraciones visibles externamente, pero esto es [configurable](#configurability).
 
 ## <a name="rule-description"></a>Descripción de la regla
 
-Los tipos marcados con <xref:System.FlagsAttribute> tienen nombres que están en plural porque el atributo indica que se puede especificar más de un valor. Por ejemplo, una enumeración que define los días de la semana puede estar pensada para su uso en una aplicación donde se pueden especificar varios días. Esta enumeración debe tener <xref:System.FlagsAttribute> y se puede llamar ' Days '. Una enumeración similar que permite especificar un solo día no tendría el atributo y se podría llamar ' Day '.
+Los tipos marcados con <xref:System.FlagsAttribute> tienen nombres en plural porque el atributo indica que se puede especificar más de un valor. Por ejemplo, una enumeración que define los días de la semana puede estar pensada para su uso en una aplicación donde se pueden especificar varios días. Esta enumeración debe tener el <xref:System.FlagsAttribute> y se podría llamar ' Days '. Una enumeración similar que permite especificar un solo día no tendría el atributo y se podría llamar ' Day '.
 
 Las convenciones de nomenclatura proporcionan una apariencia común para las bibliotecas destinadas a Common Language Runtime. Esto reduce la curva de aprendizaje necesaria para las nuevas bibliotecas de software y aumenta la confianza del cliente respecto a que la biblioteca se haya desarrollado por parte de un especialista en desarrollo de código administrado.
 
 ## <a name="how-to-fix-violations"></a>Cómo corregir infracciones
 
-Haga que el nombre de la enumeración sea una palabra plural o <xref:System.FlagsAttribute> Quite el atributo si no se deben especificar varios valores de enumeración simultáneamente.
+Haga que el nombre de la enumeración sea una palabra plural o quite el atributo <xref:System.FlagsAttribute> si no se deben especificar varios valores de enumeración simultáneamente.
 
 ## <a name="when-to-suppress-warnings"></a>Cuándo suprimir advertencias
 
@@ -63,7 +63,7 @@ Puede configurar esta opción solo para esta regla, para todas las reglas o para
 ## <a name="related-rules"></a>Reglas relacionadas
 
 - [CA1027: Marcar enumeraciones con FlagsAttribute](../code-quality/ca1027-mark-enums-with-flagsattribute.md)
-- [CA2217 No marcar enumeraciones con FlagsAttribute](../code-quality/ca2217-do-not-mark-enums-with-flagsattribute.md)
+- [CA2217: No marcar enumeraciones con FlagsAttribute](../code-quality/ca2217.md)
 
 ## <a name="see-also"></a>Vea también
 

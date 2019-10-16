@@ -18,12 +18,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 0b5966c9685bc4bbc5ba997f8acf47abbbfca1a2
-ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
+ms.openlocfilehash: f151296fce00ca92209c588c4be0361f9adfc7fd
+ms.sourcegitcommit: 1507baf3a336bbb6511d4c3ce73653674831501b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71234117"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "72348937"
 ---
 # <a name="ca1712-do-not-prefix-enum-values-with-type-name"></a>CA1712: No utilizar prefijos en valores de enumeración con el nombre del tipo
 
@@ -56,11 +56,11 @@ En el ejemplo siguiente se muestra una enumeración con un nombre incorrecto seg
 [!code-vb[FxCop.Naming.EnumValues#1](../code-quality/codesnippet/VisualBasic/ca1712-do-not-prefix-enum-values-with-type-name_1.vb)]
 
 ## <a name="related-rules"></a>Reglas relacionadas
-[CA1711: Los identificadores no deben tener un sufijo incorrecto](../code-quality/ca1711-identifiers-should-not-have-incorrect-suffix.md)
+[CA1711: Los identificadores no deberían tener el sufijo incorrecto](../code-quality/ca1711-identifiers-should-not-have-incorrect-suffix.md)
 
 [CA1027: Marcar enumeraciones con FlagsAttribute](../code-quality/ca1027-mark-enums-with-flagsattribute.md)
 
-[CA2217 No marcar enumeraciones con FlagsAttribute](../code-quality/ca2217-do-not-mark-enums-with-flagsattribute.md)
+[CA2217: No marcar enumeraciones con FlagsAttribute](../code-quality/ca2217.md)
 
 ## <a name="see-also"></a>Vea también
 

@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 257100be0eb2766ef413854795c934b230e29370
-ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
+ms.openlocfilehash: b45e98fde35e8be3296ce1c6916f61ef7b76a306
+ms.sourcegitcommit: 1507baf3a336bbb6511d4c3ce73653674831501b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71235246"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "72349028"
 ---
 # <a name="ca1065-do-not-raise-exceptions-in-unexpected-locations"></a>CA1065: No producir excepciones en ubicaciones inesperadas
 
@@ -27,7 +27,7 @@ ms.locfileid: "71235246"
 |-|-|
 |TypeName|DoNotRaiseExceptionsInUnexpectedLocations|
 |Identificador de comprobación|CA1065|
-|Categoría|Microsoft.Design|
+|Categoría|Microsoft. Design|
 |Cambio importante|Poco problemático|
 
 ## <a name="cause"></a>Motivo
@@ -66,13 +66,13 @@ Las propiedades son básicamente campos inteligentes. Por lo tanto, deben compor
 
 Se pueden producir las siguientes excepciones desde un método get de propiedad:
 
-- <xref:System.InvalidOperationException?displayProperty=fullName>y todos los derivados ( <xref:System.ObjectDisposedException?displayProperty=fullName>incluido)
+- <xref:System.InvalidOperationException?displayProperty=fullName> y todos los derivados (incluido <xref:System.ObjectDisposedException?displayProperty=fullName>)
 
-- <xref:System.NotSupportedException?displayProperty=fullName>y todos los derivados
+- <xref:System.NotSupportedException?displayProperty=fullName> y todos los derivados
 
-- <xref:System.ArgumentException?displayProperty=fullName>(solo desde Get indizado)
+- <xref:System.ArgumentException?displayProperty=fullName> (solo desde Get indizado)
 
-- <xref:System.Collections.Generic.KeyNotFoundException>(solo desde Get indizado)
+- <xref:System.Collections.Generic.KeyNotFoundException> (solo desde Get indizado)
 
 ### <a name="event-accessor-methods"></a>Métodos de descriptor de acceso de eventos
 
@@ -80,11 +80,11 @@ Los descriptores de acceso de eventos deben ser operaciones simples que no inici
 
 Se pueden producir las siguientes excepciones desde un descriptor de acceso de eventos:
 
-- <xref:System.InvalidOperationException?displayProperty=fullName>y todos los derivados ( <xref:System.ObjectDisposedException?displayProperty=fullName>incluido)
+- <xref:System.InvalidOperationException?displayProperty=fullName> y todos los derivados (incluido <xref:System.ObjectDisposedException?displayProperty=fullName>)
 
-- <xref:System.NotSupportedException?displayProperty=fullName>y todos los derivados
+- <xref:System.NotSupportedException?displayProperty=fullName> y todos los derivados
 
-- <xref:System.ArgumentException>y derivados
+- <xref:System.ArgumentException> y derivados
 
 ### <a name="equals-methods"></a>Equals (métodos)
 
@@ -94,7 +94,7 @@ Los siguientes métodos **Equals** no deben producir excepciones:
 
 - <xref:System.IEquatable%601.Equals%2A>
 
-Un método **Equals** debe devolver `true` o `false` en lugar de producir una excepción. Por ejemplo, si se pasan dos tipos no coincidentes, debe devolver `false` simplemente en lugar de producir una excepción. <xref:System.ArgumentException>
+Un método **Equals** debe devolver `true` o `false` en lugar de producir una excepción. Por ejemplo, si se pasan dos tipos no coincidentes, solo se debe devolver `false` en lugar de producir un <xref:System.ArgumentException>.
 
 ### <a name="gethashcode-methods"></a>GetHashCode (métodos)
 
@@ -106,11 +106,11 @@ Los siguientes métodos **GetHashCode** normalmente no deben producir excepcione
 
 **GetHashCode** siempre debe devolver un valor. De lo contrario, puede perder elementos en la tabla hash.
 
-Las versiones de **GetHashCode** que toman un argumento pueden producir una <xref:System.ArgumentException>excepción. Sin embargo, **Object. GetHashCode** nunca debe producir una excepción.
+Las versiones de **GetHashCode** que toman un argumento pueden producir una <xref:System.ArgumentException>. Sin embargo, **Object. GetHashCode** nunca debe producir una excepción.
 
 ### <a name="tostring-methods"></a>ToString (métodos)
 
-El depurador <xref:System.Object.ToString%2A?displayProperty=fullName> usa para ayudar a mostrar información sobre los objetos en formato de cadena. Por lo tanto, **ToString** no debe cambiar el estado de un objeto y no debería producir excepciones.
+El depurador utiliza <xref:System.Object.ToString%2A?displayProperty=fullName> para ayudar a mostrar información sobre los objetos en formato de cadena. Por lo tanto, **ToString** no debe cambiar el estado de un objeto y no debería producir excepciones.
 
 ### <a name="static-constructors"></a>Constructores estáticos
 
@@ -122,13 +122,13 @@ Producir una excepción desde un finalizador hace que el CLR genere un error rá
 
 ### <a name="dispose-methods"></a>Métodos Dispose
 
-Un <xref:System.IDisposable.Dispose%2A?displayProperty=fullName> método no debe producir una excepción. Dispose a menudo se llama como parte de la lógica de `finally` limpieza en una cláusula. Por consiguiente, iniciar explícitamente una excepción desde Dispose obliga al usuario a agregar el `finally` control de excepciones dentro de la cláusula.
+Un método <xref:System.IDisposable.Dispose%2A?displayProperty=fullName> no debe producir una excepción. Dispose a menudo se llama como parte de la lógica de limpieza en una cláusula `finally`. Por consiguiente, iniciar explícitamente una excepción desde Dispose obliga al usuario a agregar el control de excepciones dentro de la cláusula `finally`.
 
 La ruta de acceso del código **Dispose (false)** nunca debe producir excepciones, porque casi siempre se llama a Dispose desde un finalizador.
 
 ### <a name="equality-operators--"></a>Operadores de igualdad (= =,! =)
 
-Al igual que los métodos Equals, los operadores `true` de `false`igualdad deben devolver o, y no deben producir excepciones.
+Al igual que los métodos Equals, los operadores de igualdad deben devolver `true` o `false`, y no deben producir excepciones.
 
 ### <a name="implicit-cast-operators"></a>Operadores de conversión implícita
 
@@ -146,7 +146,7 @@ Si la infracción se debió a una declaración de excepción en lugar de a una e
 
 ## <a name="related-rules"></a>Reglas relacionadas
 
-- [CA2219 No producir excepciones en cláusulas de excepción](../code-quality/ca2219-do-not-raise-exceptions-in-exception-clauses.md)
+- [CA2219: No producir excepciones en cláusulas de excepción](../code-quality/ca2219.md)
 
 ## <a name="see-also"></a>Vea también
 

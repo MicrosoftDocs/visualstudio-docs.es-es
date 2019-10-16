@@ -1,5 +1,5 @@
 ---
-title: 'CA1704: La ortografía de los identificadores debe ser correcta'
+title: 'CA1704: Los identificadores deberían tener la ortografía correcta'
 ms.date: 03/28/2018
 ms.topic: reference
 f1_keywords:
@@ -14,14 +14,14 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fa04ca237134c1947b5c58b921f87f32a1ecfb16
-ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
+ms.openlocfilehash: f2e42e68f008c625c8d6b5150d0348d14e29d3dc
+ms.sourcegitcommit: 1507baf3a336bbb6511d4c3ce73653674831501b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71234293"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "72348949"
 ---
-# <a name="ca1704-identifiers-should-be-spelled-correctly"></a>CA1704: La ortografía de los identificadores debe ser correcta
+# <a name="ca1704-identifiers-should-be-spelled-correctly"></a>CA1704: Los identificadores deberían tener la ortografía correcta
 
 |||
 |-|-|
@@ -69,13 +69,13 @@ Para corregir una infracción de esta regla, corrija la ortografía de la palabr
 
 ### <a name="to-add-words-to-a-custom-dictionary"></a>Para agregar palabras a un diccionario personalizado
 
-Asigne al archivo XML del diccionario personalizado el nombre *CustomDictionary. XML*. Coloque el Diccionario en el directorio de instalación de la herramienta, el directorio del proyecto o en el directorio que está asociado a la herramienta en el perfil del usuario ( *%userprofile%\Application Data\\...* ). Para obtener información sobre cómo agregar el diccionario personalizado a un proyecto en Visual Studio, [consulte Cómo: Personalizar el diccionario](../code-quality/how-to-customize-the-code-analysis-dictionary.md)de análisis de código.
+Asigne al archivo XML del diccionario personalizado el nombre *CustomDictionary. XML*. Coloque el Diccionario en el directorio de instalación de la herramienta, el directorio del proyecto o en el directorio que está asociado a la herramienta en el perfil del usuario ( *%userprofile%\Application Data @ no__t-1...* ). Para obtener información sobre cómo agregar el diccionario personalizado a un proyecto en Visual Studio, vea [Cómo: personalizar el Diccionario de análisis de código](../code-quality/how-to-customize-the-code-analysis-dictionary.md).
 
 - Agregue palabras que no deben provocar una infracción en el Diccionario/palabras/ruta de acceso reconocida.
 
 - Agregue palabras que produzcan una infracción en el Diccionario/palabras/ruta de acceso no reconocida.
 
-- Agregue palabras que se deben marcar como obsoletas en el Diccionario/palabras/ruta de acceso desusada. Vea el tema [de la regla relacionada CA1726: Use los términos](../code-quality/ca1726-use-preferred-terms.md) preferidos para obtener más información.
+- Agregue palabras que se deben marcar como obsoletas en el Diccionario/palabras/ruta de acceso desusada. Vea el tema de la regla relacionada [CA1726: Use los términos preferidos](../code-quality/ca1726-use-preferred-terms.md) para obtener más información.
 
 - Agregue excepciones a las reglas de mayúsculas y minúsculas de acrónimo a la ruta de acceso Dictionary/acrónimos/CasingExceptions.
 
@@ -110,13 +110,13 @@ Suprima una advertencia de esta regla solo si la palabra está mal escrita y la 
 
 ## <a name="related-rules"></a>Reglas relacionadas
 
-- [CA2204: Los literales deben estar escritos correctamente](../code-quality/ca2204-literals-should-be-spelled-correctly.md)
-- [CA1703: Las cadenas de recursos deberían estar escritas correctamente](../code-quality/ca1703-resource-strings-should-be-spelled-correctly.md)
-- [CA1709: Los identificadores deben usar mayúsculas y minúsculas correctamente](../code-quality/ca1709-identifiers-should-be-cased-correctly.md)
-- [CA1708: Los identificadores deben diferir más que el uso de mayúsculas y minúsculas](../code-quality/ca1708-identifiers-should-differ-by-more-than-case.md)
-- [CA1707: Los identificadores no deben contener guiones bajos](../code-quality/ca1707-identifiers-should-not-contain-underscores.md)
-- [CA1726: Usar términos preferidos](../code-quality/ca1726-use-preferred-terms.md)
+- [CA2204: Los literales deben estar escritos correctamente ](../code-quality/ca2204.md)
+- [CA1703: Las cadenas de recursos deberían tener la ortografía correcta](../code-quality/ca1703-resource-strings-should-be-spelled-correctly.md)
+- [CA1709: Los identificadores deberían utilizar las mayúsculas y minúsculas correctamente](../code-quality/ca1709-identifiers-should-be-cased-correctly.md)
+- [CA1708: Los identificadores se deberían diferenciar en algo más que en el uso de mayúsculas y minúsculas](../code-quality/ca1708-identifiers-should-differ-by-more-than-case.md)
+- [CA1707: Los identificadores no deberían contener subrayado](../code-quality/ca1707-identifiers-should-not-contain-underscores.md)
+- [CA1726: Utilizar términos preferidos](../code-quality/ca1726-use-preferred-terms.md)
 
 ## <a name="see-also"></a>Vea también
 
-- [Cómo: Personalizar el diccionario de Análisis de código](../code-quality/how-to-customize-the-code-analysis-dictionary.md)
+- [Cómo: Personalizar el diccionario de análisis de código](../code-quality/how-to-customize-the-code-analysis-dictionary.md)

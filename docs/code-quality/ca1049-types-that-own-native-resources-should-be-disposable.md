@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 03b8d222fc2349022ef324c9905279677fc86849
-ms.sourcegitcommit: 034c503ae04e22cf840ccb9770bffd012e40fb2d
+ms.openlocfilehash: a39d1e03da062f3030571820e98898d5122d495f
+ms.sourcegitcommit: 1507baf3a336bbb6511d4c3ce73653674831501b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/14/2019
-ms.locfileid: "72306116"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "72349100"
 ---
 # <a name="ca1049-types-that-own-native-resources-should-be-disposable"></a>CA1049: Los tipos que poseen recursos nativos deben ser descartables
 
@@ -30,7 +30,7 @@ ms.locfileid: "72306116"
 |-|-|
 |TypeName|TypesThatOwnNativeResourcesShouldBeDisposable|
 |Identificador de comprobación|CA1049|
-|Category|Microsoft.Design|
+|Categoría|Microsoft. Design|
 |Cambio importante|Poco problemático|
 
 ## <a name="cause"></a>Motivo
@@ -56,13 +56,13 @@ En el ejemplo siguiente se muestra un tipo que implementa <xref:System.IDisposab
 [!code-vb[FxCop.Design.UnmanagedResources#1](../code-quality/codesnippet/VisualBasic/ca1049-types-that-own-native-resources-should-be-disposable_1.vb)]
 
 ## <a name="related-rules"></a>Reglas relacionadas
-@NO__T 0CA2115: Llame a GC. KeepAlive al usar recursos nativos @ no__t-0
+[CA2115: Llamar a GC.KeepAlive cuando se utilicen recursos nativos](../code-quality/ca2115-call-gc-keepalive-when-using-native-resources.md)
 
-[CA1816: Llame a GC. SuppressFinalize correctamente @ no__t-0
+[CA1816: Llame a GC.SuppressFinalize correctamente](../code-quality/ca1816.md)
 
-[CA2216: Los tipos descartables deben declarar el finalizador @ no__t-0
+[CA2216: Los tipos descartables deben declarar el finalizador](../code-quality/ca2216.md)
 
-[CA1001: los tipos que poseen campos descartables deben ser descartables](../code-quality/ca1001-types-that-own-disposable-fields-should-be-disposable.md)
+[CA1001: Los tipos que poseen campos descartables deben ser descartables](../code-quality/ca1001-types-that-own-disposable-fields-should-be-disposable.md)
 
 ## <a name="see-also"></a>Vea también
 
