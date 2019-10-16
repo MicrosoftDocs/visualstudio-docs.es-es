@@ -10,12 +10,12 @@ metadata:
   monikerRange: '>=vs-2017'
   f1_keywords:
   - MSDNSTART
-  ms.openlocfilehash: 753172144647fcbf699ddc85328dd5e2a94ae87b
-  ms.sourcegitcommit: a5a54b147e772dc39e519da74ec41a0c25d99628
+  ms.openlocfilehash: 16566f855e2e7504616da3d4196440facf145e6b
+  ms.sourcegitcommit: e82baa50bf5a65858c410882c2e86a552c2c1921
   ms.translationtype: HT
   ms.contentlocale: es-ES
-  ms.lasthandoff: 10/12/2019
-  ms.locfileid: "72289585"
+  ms.lasthandoff: 10/16/2019
+  ms.locfileid: "72380955"
 highlightedContent:
   items:
   - title: Configuración e instalación
@@ -42,7 +42,7 @@ conceptualContent:
       url: get-started/tutorial-open-project-from-repo.md
       itemType: tutorial
     - text: Escribir y editar código
-      url: ide/index-writing-code.md
+      url: ide/index-writing-code.yml
       itemType: tutorial
     - text: Compilar el código
       url: ide/compiling-and-building-in-visual-studio.md
@@ -126,7 +126,7 @@ additionalContent:
     items:
     - title: Desarrollar
       summary: Escriba y administre el código con el editor de código.
-      url: ide/index-writing-code.md
+      url: ide/index-writing-code.yml
     - title: Compilar
       summary: Compile y genere el código fuente.
       url: ide/compiling-and-building-in-visual-studio.md
