@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 85bf4e140b3a379221c3b7e5a05428b29e3a985b
-ms.sourcegitcommit: 535ef05b1e553f0fc66082cd2e0998817eb2a56a
+ms.openlocfilehash: 3449cf131aad8413cf192bb758e27746cc80d051
+ms.sourcegitcommit: 1507baf3a336bbb6511d4c3ce73653674831501b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "72018384"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "72349501"
 ---
 # <a name="security-rules-rule-set-for-managed-code"></a>Conjunto de reglas Reglas de seguridad para código administrado
 
@@ -63,7 +63,7 @@ Utilice el conjunto de reglas reglas de seguridad de Microsoft para el análisis
 |[CA2146](../code-quality/ca2146-types-must-be-at-least-as-critical-as-their-base-types-and-interfaces.md)|Los tipos deben ser al menos tan críticos para la seguridad como sus interfaces y tipos base|
 |[CA2147](../code-quality/ca2147-transparent-methods-may-not-use-security-asserts.md)|Los métodos transparentes no pueden usar aserciones de seguridad|
 |[CA2149](../code-quality/ca2149-transparent-methods-must-not-call-into-native-code.md)|Los métodos transparentes no deben llamar a código nativo|
-|[CA2210](../code-quality/ca2210-assemblies-should-have-valid-strong-names.md)|Los ensamblados deben tener nombres seguros válidos|
+|[CA2210](../code-quality/ca2210.md)|Los ensamblados deben tener nombres seguros válidos|
 |[CA2300](ca2300.md)|No usar el deserializador no seguro BinaryFormatter|
 |[CA2301](ca2301.md)|No llamar a BinaryFormatter.Deserialize sin establecer primero BinaryFormatter.Binder|
 |[CA2302](ca2302.md)|Asegurarse de que BinaryFormatter.Binder está establecido antes de llamar a BinaryFormatter.Deserialize|

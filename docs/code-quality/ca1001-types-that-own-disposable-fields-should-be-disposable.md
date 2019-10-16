@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 3bda8fc80992a2246c30e28582eb93b4624ab81c
-ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
+ms.openlocfilehash: e8f2f313dad5f412a1a4d983d785caad5e6022a8
+ms.sourcegitcommit: 1507baf3a336bbb6511d4c3ce73653674831501b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71236693"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "72349445"
 ---
 # <a name="ca1001-types-that-own-disposable-fields-should-be-disposable"></a>CA1001: Los tipos que poseen campos descartables deben ser descartables
 
@@ -30,17 +30,17 @@ ms.locfileid: "71236693"
 |-|-|
 |TypeName|TypesThatOwnDisposableFieldsShouldBeDisposable|
 |Identificador de comprobación|CA1001|
-|Categoría|Microsoft.Design|
+|Categoría|Microsoft. Design|
 |Cambio importante|No problemático: Si el tipo no es visible fuera del ensamblado.<br /><br /> Interrumpir: Si el tipo es visible fuera del ensamblado.|
 
 ## <a name="cause"></a>Motivo
-Una clase declara e implementa un campo de instancia que es un <xref:System.IDisposable?displayProperty=fullName> tipo y la clase no implementa. <xref:System.IDisposable>
+Una clase declara e implementa un campo de instancia que es un tipo <xref:System.IDisposable?displayProperty=fullName> y la clase no implementa <xref:System.IDisposable>.
 
 ## <a name="rule-description"></a>Descripción de la regla
-Una clase implementa la <xref:System.IDisposable> interfaz para desechar los recursos no administrados que posee. Un campo de instancia que es <xref:System.IDisposable> un tipo indica que el campo posee un recurso no administrado. Una clase que declara un <xref:System.IDisposable> campo posee indirectamente un recurso no administrado y debe implementar la <xref:System.IDisposable> interfaz. Si la clase no posee directamente ningún recurso no administrado, no debe implementar un finalizador.
+Una clase implementa la interfaz <xref:System.IDisposable> para desechar los recursos no administrados que posee. Un campo de instancia que es un tipo <xref:System.IDisposable> indica que el campo posee un recurso no administrado. Una clase que declara un campo <xref:System.IDisposable> posee indirectamente un recurso no administrado y debe implementar la interfaz <xref:System.IDisposable>. Si la clase no posee directamente ningún recurso no administrado, no debe implementar un finalizador.
 
 ## <a name="how-to-fix-violations"></a>Cómo corregir infracciones
-Para corregir una infracción de esta regla, <xref:System.IDisposable> implemente y <xref:System.IDisposable.Dispose%2A?displayProperty=fullName> desde el método <xref:System.IDisposable.Dispose%2A> , llame al método del campo.
+Para corregir una infracción de esta regla, implemente <xref:System.IDisposable> y desde el método <xref:System.IDisposable.Dispose%2A?displayProperty=fullName> llame al método <xref:System.IDisposable.Dispose%2A> del campo.
 
 ## <a name="when-to-suppress-warnings"></a>Cuándo suprimir advertencias
 No suprima las advertencias de esta regla.
@@ -52,10 +52,10 @@ En el ejemplo siguiente se muestra una clase que infringe la regla y una clase q
 [!code-csharp[FxCop.Design.DisposableFields#1](../code-quality/codesnippet/CSharp/ca1001-types-that-own-disposable-fields-should-be-disposable_1.cs)]
 
 ## <a name="related-rules"></a>Reglas relacionadas
-[CA2213: los campos descartables deben ser descartables](../code-quality/ca2213-disposable-fields-should-be-disposed.md)
+[CA2213: Aplique Dispose a los campos a los que se pueda](../code-quality/ca2213.md)
 
-[CA2216: Los tipos descartables deben declarar el finalizador](../code-quality/ca2216-disposable-types-should-declare-finalizer.md)
+[CA2216: Los tipos descartables deben declarar el finalizador](../code-quality/ca2216.md)
 
-[CA2215 Los métodos Dispose deben llamar a Dispose de la clase base](../code-quality/ca2215-dispose-methods-should-call-base-class-dispose.md)
+[CA2215: Los métodos Dispose deben llamar al método Dispose de la clase base](../code-quality/ca2215.md)
 
 [CA1049: Los tipos que poseen recursos nativos deben ser descartables](../code-quality/ca1049-types-that-own-native-resources-should-be-disposable.md)

@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ed996aa19f9fda1310dccc117f8abfb6efa29e1f
-ms.sourcegitcommit: 034c503ae04e22cf840ccb9770bffd012e40fb2d
+ms.openlocfilehash: 898a11be40d29c2e6181886c2c90af9315af6e3e
+ms.sourcegitcommit: 1507baf3a336bbb6511d4c3ce73653674831501b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/14/2019
-ms.locfileid: "72305545"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "72349565"
 ---
 # <a name="mixed-minimum-rules-rule-set"></a>Conjunto de reglas Reglas mínimas mixtas
 
@@ -71,7 +71,7 @@ Incluya este conjunto de reglas en cualquier conjunto de reglas personalizado qu
 |[C6518](../code-quality/c6518.md)|Tamaño de escritura en búfer no modificable|
 |[C6522](../code-quality/c6522.md)|Tipo de cadena de tamaño no válido|
 |[C6525](../code-quality/c6525.md)|Cadena de tamaño no válida, ubicación inaccesible|
-|[C6527](../code-quality/c6527.md)|Anotación no válida: La propiedad ' NeedsRelease ' no se puede usar en valores de tipo void|
+|[C6527](../code-quality/c6527.md)|Anotación no válida: la propiedad 'NeedsRelease' no se puede usar en valores de tipo void|
 |[C6530](../code-quality/c6530.md)|Estilo de cadena de formato no reconocido|
 |[C6540](../code-quality/c6540.md)|El uso de anotaciones de atributo en esta función invalidará todas las anotaciones __declspec existentes|
 |[C6551](../code-quality/c6551.md)|Especificación de tamaño no válido: no se puede analizar la expresión|
@@ -142,7 +142,7 @@ Incluya este conjunto de reglas en cualquier conjunto de reglas personalizado qu
 |[C28286](../code-quality/c28286.md)|Para la función, error de sintaxis cerca del final|
 |[C28287](../code-quality/c28287.md)|Para la función, error de sintaxis en la anotación \_At\_() (nombre de parámetro no reconocido)|
 |[C28288](../code-quality/c28288.md)|Para la función, error de sintaxis en la anotación \_At\_() (nombre de parámetro no válido)|
-|[C28289](../code-quality/c28289.md)|Para la función: Readto o grabable no tenía una especificación de límite como parámetro|
+|[C28289](../code-quality/c28289.md)|Para la función: ReadableTo o WritableTo no tenían una especificación de límite como parámetro|
 |[C28290](../code-quality/c28290.md)|la anotación de la función contiene más valores External que el número real de parámetros|
 |[C28291](../code-quality/c28291.md)|El valor null/notnull posterior en el nivel 0 de desreferenciación carece de sentido para la función.|
 |[C28300](../code-quality/c28300.md)|Operandos de expresión de tipos no compatibles para el operador|
@@ -155,5 +155,5 @@ Incluya este conjunto de reglas en cualquier conjunto de reglas personalizado qu
 |[C28351](../code-quality/c28351.md)|La anotación describe dónde no se puede usar un valor dinámico (una variable) en la condición.|
 |[CA1001](../code-quality/ca1001-types-that-own-disposable-fields-should-be-disposable.md)|Los tipos que poseen campos descartables deben ser descartables|
 |[CA1821](../code-quality/ca1821.md)|Quitar finalizadores vacíos|
-|[CA2213](../code-quality/ca2213-disposable-fields-should-be-disposed.md)|Los campos descartables deben ser descartables|
-|[CA2231](../code-quality/ca2231-overload-operator-equals-on-overriding-valuetype-equals.md)|Sobrecargar el operador equals al invalidar ValueType.Equals|
+|[CA2213](../code-quality/ca2213.md)|Los campos descartables deben ser descartables|
+|[CA2231](../code-quality/ca2231.md)|Sobrecargar el operador equals al invalidar ValueType.Equals|

@@ -1,5 +1,5 @@
 ---
-title: 'CA1703: La ortografía de las cadenas de recursos debe ser correcta'
+title: 'CA1703: Las cadenas de recursos deberían tener la ortografía correcta'
 ms.date: 03/28/2018
 ms.topic: reference
 f1_keywords:
@@ -14,14 +14,14 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: edd3945953a07b10aee5c2690a25aafe446e2c10
-ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
+ms.openlocfilehash: c37e07d6259c4229999ff7d4068400c788369e86
+ms.sourcegitcommit: 1507baf3a336bbb6511d4c3ce73653674831501b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71234321"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "72348955"
 ---
-# <a name="ca1703-resource-strings-should-be-spelled-correctly"></a>CA1703: La ortografía de las cadenas de recursos debe ser correcta
+# <a name="ca1703-resource-strings-should-be-spelled-correctly"></a>CA1703: Las cadenas de recursos deberían tener la ortografía correcta
 
 |||
 |-|-|
@@ -36,18 +36,18 @@ Una cadena de recurso contiene una o varias palabras que la biblioteca de correc
 
 ## <a name="rule-description"></a>Descripción de la regla
 
-Esta regla analiza la cadena de recursos en palabras (con tokens compuestos de palabras compuestas) y comprueba la ortografía de cada palabra o token. Para obtener información sobre el algoritmo de análisis [, consulte CA1704: Los identificadores deben estar escritos correctamente](../code-quality/ca1704-identifiers-should-be-spelled-correctly.md).
+Esta regla analiza la cadena de recursos en palabras (con tokens compuestos de palabras compuestas) y comprueba la ortografía de cada palabra o token. Para obtener información sobre el algoritmo de análisis, vea [CA1704: los identificadores deberían estar escritos correctamente](../code-quality/ca1704-identifiers-should-be-spelled-correctly.md).
 
 ## <a name="how-to-fix-violations"></a>Cómo corregir infracciones
 
-Para corregir una infracción de esta regla, use palabras completas que estén escritas correctamente o agregue las palabras a un diccionario personalizado. Para obtener información sobre cómo usar diccionarios personalizados, vea [CA1704: Los identificadores deben estar escritos correctamente](../code-quality/ca1704-identifiers-should-be-spelled-correctly.md).
+Para corregir una infracción de esta regla, use palabras completas que estén escritas correctamente o agregue las palabras a un diccionario personalizado. Para obtener información sobre cómo usar diccionarios personalizados, vea [CA1704: los identificadores deberían estar escritos correctamente](../code-quality/ca1704-identifiers-should-be-spelled-correctly.md).
 
 ## <a name="change-the-dictionary-language"></a>Cambiar el idioma del Diccionario
 
 De forma predeterminada, se usa la versión en inglés (en) del corrector ortográfico. Si desea cambiar el idioma del corrector ortográfico, puede hacerlo agregando uno de los siguientes atributos al archivo *AssemblyInfo.CS* o *AssemblyInfo. VB* :
 
-- Utilice <xref:System.Reflection.AssemblyCultureAttribute> para especificar la referencia cultural si los recursos están en un ensamblado satélite.
-- Utilice <xref:System.Resources.NeutralResourcesLanguageAttribute> para especificar la *referencia cultural neutra* del ensamblado si los recursos se encuentran en el mismo ensamblado que el código.
+- Use <xref:System.Reflection.AssemblyCultureAttribute> para especificar la referencia cultural si los recursos están en un ensamblado satélite.
+- Use <xref:System.Resources.NeutralResourcesLanguageAttribute> para especificar la *referencia cultural neutra* del ensamblado si los recursos se encuentran en el mismo ensamblado que el código.
 
 > [!IMPORTANT]
 > Si establece la referencia cultural en algo distinto de una referencia cultural basada en inglés, esta regla de análisis de código se deshabilita de forma silenciosa.
@@ -58,6 +58,6 @@ No suprima las advertencias de esta regla. Las palabras escritas correctamente r
 
 ## <a name="related-rules"></a>Reglas relacionadas
 
-- [CA1701: Las palabras compuestas de cadena de recurso deben tener mayúsculas y minúsculas](../code-quality/ca1701-resource-string-compound-words-should-be-cased-correctly.md)
-- [CA1704: Los identificadores deben estar escritos correctamente](../code-quality/ca1704-identifiers-should-be-spelled-correctly.md)
-- [CA2204: Los literales deben estar escritos correctamente](../code-quality/ca2204-literals-should-be-spelled-correctly.md)
+- [CA1701: En las palabras compuestas de la cadena de recursos se deberían utilizar las mayúsculas y minúsculas correctamente](../code-quality/ca1701-resource-string-compound-words-should-be-cased-correctly.md)
+- [CA1704: Los identificadores deberían tener la ortografía correcta](../code-quality/ca1704-identifiers-should-be-spelled-correctly.md)
+- [CA2204: Los literales deben estar escritos correctamente ](../code-quality/ca2204.md)

@@ -1,5 +1,5 @@
 ---
-title: Procedimiento Personalizar el diccionario de análisis de código
+title: 'Cómo: Personalizar el diccionario de análisis de código'
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,14 +12,14 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9c7c88e565de4f4b3e3b25b6523ff04f1831a70d
-ms.sourcegitcommit: 98b02f87c7aa1f5eb7f0d1c86bfa36efa8580c57
+ms.openlocfilehash: b4a6c94f5784d57a90dd31f21f8829b3141140d0
+ms.sourcegitcommit: 1507baf3a336bbb6511d4c3ce73653674831501b
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 10/15/2019
-ms.locfileid: "72314148"
+ms.locfileid: "72349588"
 ---
-# <a name="how-to-customize-the-code-analysis-dictionary"></a>Procedimiento Personalizar el diccionario de análisis de código
+# <a name="how-to-customize-the-code-analysis-dictionary"></a>Cómo: Personalizar el diccionario de análisis de código
 
 El análisis de código usa un diccionario integrado para comprobar los identificadores en el código en busca de errores de ortografía, de mayúsculas y minúsculas, y otras convenciones de nomenclatura de las instrucciones de diseño de .NET. Puede crear un archivo XML de diccionario personalizado para agregar, quitar o modificar términos, abreviaturas y acrónimos al diccionario integrado.
 
@@ -70,9 +70,9 @@ Puede modificar el comportamiento del Diccionario de análisis de código agrega
 
 - [Diccionario/palabras/compuesto/término [@CompoundAlternate]](../code-quality/how-to-customize-the-code-analysis-dictionary.md#BKMK_DictionaryWordsCompoundTermCompoundAlternate)
 
-- [Dictionary/Words/DiscreteExceptions/Term](../code-quality/how-to-customize-the-code-analysis-dictionary.md#BKMK_DictionaryWordsDiscreteExceptionsTerm)
+- [Diccionario/palabras/DiscreteExceptions/término](../code-quality/how-to-customize-the-code-analysis-dictionary.md#BKMK_DictionaryWordsDiscreteExceptionsTerm)
 
-- [Dictionary/Acronyms/CasingExceptions/Acronym](../code-quality/how-to-customize-the-code-analysis-dictionary.md#BKMK_DictionaryAcronymsCasingExceptionsAcronym)
+- [Dictionary/acrónimos/CasingExceptions/acrónimo](../code-quality/how-to-customize-the-code-analysis-dictionary.md#BKMK_DictionaryAcronymsCasingExceptionsAcronym)
 
 ### <a name="BKMK_DictionaryWordsRecognizedWord"></a>Diccionario/palabras/reconocido/palabra
 
@@ -95,19 +95,19 @@ Para incluir un término en la lista de términos que el análisis de código id
 
 Los términos en Diccionario/palabras/nodos reconocidos se aplican a las siguientes reglas de análisis de código:
 
-- [CA1701: Las palabras compuestas de cadena de recurso deben tener mayúsculas o minúsculas correctamente @ no__t-0
+- [CA1701: En las palabras compuestas de la cadena de recursos se deberían utilizar las mayúsculas y minúsculas correctamente](../code-quality/ca1701-resource-string-compound-words-should-be-cased-correctly.md)
 
-- [CA1702: Las palabras compuestas deben usarse correctamente @ no__t-0
+- [CA1702: En las palabras compuestas se deberían utilizar las mayúsculas y minúsculas correctamente](../code-quality/ca1702-compound-words-should-be-cased-correctly.md)
 
-- [CA1703: Las cadenas de recursos deberían tener la ortografía correcta @ no__t-0
+- [CA1703: Las cadenas de recursos deberían tener la ortografía correcta](../code-quality/ca1703-resource-strings-should-be-spelled-correctly.md)
 
-- [CA1704: Los identificadores deberían tener la ortografía correcta @ no__t-0
+- [CA1704: Los identificadores deberían tener la ortografía correcta](../code-quality/ca1704-identifiers-should-be-spelled-correctly.md)
 
-- [CA1709: Los identificadores deben tener mayúsculas y minúsculas correctamente @ no__t-0
+- [CA1709: Los identificadores deberían utilizar las mayúsculas y minúsculas correctamente](../code-quality/ca1709-identifiers-should-be-cased-correctly.md)
 
-- [CA1726: Usar términos preferidos @ no__t-0
+- [CA1726: Utilizar términos preferidos](../code-quality/ca1726-use-preferred-terms.md)
 
-- [CA2204: Los literales deben estar escritos correctamente @ no__t-0
+- [CA2204: Los literales deben estar escritos correctamente ](../code-quality/ca2204.md)
 
 ### <a name="BKMK_DictionaryWordsUnrecognizedWord"></a>Diccionario/palabras/desconocido/palabra
 
@@ -130,19 +130,19 @@ Para excluir un término de la lista de términos que el análisis de código id
 
 Los términos del nodo Diccionario/palabras/no reconocido se aplican a las siguientes reglas de análisis de código:
 
-- [CA1701: Las palabras compuestas de cadena de recurso deben tener mayúsculas o minúsculas correctamente @ no__t-0
+- [CA1701: En las palabras compuestas de la cadena de recursos se deberían utilizar las mayúsculas y minúsculas correctamente](../code-quality/ca1701-resource-string-compound-words-should-be-cased-correctly.md)
 
-- [CA1702: Las palabras compuestas deben usarse correctamente @ no__t-0
+- [CA1702: En las palabras compuestas se deberían utilizar las mayúsculas y minúsculas correctamente](../code-quality/ca1702-compound-words-should-be-cased-correctly.md)
 
-- [CA1703: Las cadenas de recursos deberían tener la ortografía correcta @ no__t-0
+- [CA1703: Las cadenas de recursos deberían tener la ortografía correcta](../code-quality/ca1703-resource-strings-should-be-spelled-correctly.md)
 
-- [CA1704: Los identificadores deberían tener la ortografía correcta @ no__t-0
+- [CA1704: Los identificadores deberían tener la ortografía correcta](../code-quality/ca1704-identifiers-should-be-spelled-correctly.md)
 
-- [CA1709: Los identificadores deben tener mayúsculas y minúsculas correctamente @ no__t-0
+- [CA1709: Los identificadores deberían utilizar las mayúsculas y minúsculas correctamente](../code-quality/ca1709-identifiers-should-be-cased-correctly.md)
 
-- [CA1726: Usar términos preferidos @ no__t-0
+- [CA1726: Utilizar términos preferidos](../code-quality/ca1726-use-preferred-terms.md)
 
-- [CA2204: Los literales deben estar escritos correctamente @ no__t-0
+- [CA2204: Los literales deben estar escritos correctamente ](../code-quality/ca2204.md)
 
 ### <a name="BKMK_DictionaryWordsDeprecatedTermPreferredAlternate"></a>Diccionario/palabras/en desuso/término [@PreferredAlternate]
 
@@ -171,15 +171,15 @@ Para incluir un término alternativo sugerido en la advertencia, especifique la 
 
 Los términos del nodo Diccionario/palabras/en desuso se aplican a las siguientes reglas de análisis de código:
 
-- [CA1701: Las palabras compuestas de cadena de recurso deben tener mayúsculas o minúsculas correctamente @ no__t-0
+- [CA1701: En las palabras compuestas de la cadena de recursos se deberían utilizar las mayúsculas y minúsculas correctamente](../code-quality/ca1701-resource-string-compound-words-should-be-cased-correctly.md)
 
-- [CA1702: Las palabras compuestas deben usarse correctamente @ no__t-0
+- [CA1702: En las palabras compuestas se deberían utilizar las mayúsculas y minúsculas correctamente](../code-quality/ca1702-compound-words-should-be-cased-correctly.md)
 
-- [CA1703: Las cadenas de recursos deberían tener la ortografía correcta @ no__t-0
+- [CA1703: Las cadenas de recursos deberían tener la ortografía correcta](../code-quality/ca1703-resource-strings-should-be-spelled-correctly.md)
 
-- [CA1704: Los identificadores deberían tener la ortografía correcta @ no__t-0
+- [CA1704: Los identificadores deberían tener la ortografía correcta](../code-quality/ca1704-identifiers-should-be-spelled-correctly.md)
 
-- [CA1726: Usar términos preferidos @ no__t-0
+- [CA1726: Utilizar términos preferidos](../code-quality/ca1726-use-preferred-terms.md)
 
 ### <a name="BKMK_DictionaryWordsCompoundTermCompoundAlternate"></a>Diccionario/palabras/compuesto/término [@CompoundAlternate]
 
@@ -206,13 +206,13 @@ El diccionario integrado identifica algunos términos como términos únicos y d
 
 Los términos del nodo Diccionario/palabras/compuesto se aplican a las siguientes reglas de análisis de código:
 
-- [CA1701: Las palabras compuestas de cadena de recurso deben tener mayúsculas o minúsculas correctamente @ no__t-0
+- [CA1701: En las palabras compuestas de la cadena de recursos se deberían utilizar las mayúsculas y minúsculas correctamente](../code-quality/ca1701-resource-string-compound-words-should-be-cased-correctly.md)
 
-- [CA1702: Las palabras compuestas deben usarse correctamente @ no__t-0
+- [CA1702: En las palabras compuestas se deberían utilizar las mayúsculas y minúsculas correctamente](../code-quality/ca1702-compound-words-should-be-cased-correctly.md)
 
-- [CA1703: Las cadenas de recursos deberían tener la ortografía correcta @ no__t-0
+- [CA1703: Las cadenas de recursos deberían tener la ortografía correcta](../code-quality/ca1703-resource-strings-should-be-spelled-correctly.md)
 
-- [CA1704: Los identificadores deberían tener la ortografía correcta @ no__t-0
+- [CA1704: Los identificadores deberían tener la ortografía correcta](../code-quality/ca1704-identifiers-should-be-spelled-correctly.md)
 
 ### <a name="BKMK_DictionaryWordsDiscreteExceptionsTerm"></a>Diccionario/palabras/DiscreteExceptions/término
 
@@ -235,9 +235,9 @@ Para excluir un término en la lista de términos que el análisis de código id
 
 Los términos del nodo Dictionary/Words/DiscreteExceptions se aplican a las siguientes reglas de análisis de código:
 
-- [CA1701: Las palabras compuestas de cadena de recurso deben tener mayúsculas o minúsculas correctamente @ no__t-0
+- [CA1701: En las palabras compuestas de la cadena de recursos se deberían utilizar las mayúsculas y minúsculas correctamente](../code-quality/ca1701-resource-string-compound-words-should-be-cased-correctly.md)
 
-- [CA1702: Las palabras compuestas deben usarse correctamente @ no__t-0
+- [CA1702: En las palabras compuestas se deberían utilizar las mayúsculas y minúsculas correctamente](../code-quality/ca1702-compound-words-should-be-cased-correctly.md)
 
 ### <a name="BKMK_DictionaryAcronymsCasingExceptionsAcronym"></a>Dictionary/acrónimos/CasingExceptions/acrónimo
 
@@ -260,7 +260,7 @@ Para incluir un acrónimo en la lista de términos que el análisis de código i
 
 Los términos del nodo Dictionary/acrónimos/CasingExceptions se aplican a las siguientes reglas de análisis de código:
 
-- [CA1709: Los identificadores deben tener mayúsculas y minúsculas correctamente @ no__t-0
+- [CA1709: Los identificadores deberían utilizar las mayúsculas y minúsculas correctamente](../code-quality/ca1709-identifiers-should-be-cased-correctly.md)
 
 ## <a name="BKMK_ToApplyACustomDictionaryToAProject"></a>Para aplicar un diccionario personalizado a un proyecto
 

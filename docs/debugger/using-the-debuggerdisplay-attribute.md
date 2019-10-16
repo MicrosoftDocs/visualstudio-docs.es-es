@@ -12,19 +12,20 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9fbe3ff31d00945ef462c5c20eb1c4b33c250f97
-ms.sourcegitcommit: 4dfe098ac0df294aad63e6b384d6575980798ca3
+ms.openlocfilehash: 866ad705f16e9eabb097e9c0c9064d2c379ebf9f
+ms.sourcegitcommit: 1507baf3a336bbb6511d4c3ce73653674831501b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/11/2019
-ms.locfileid: "70887755"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "72349624"
 ---
 # <a name="tell-the-debugger-what-to-show-using-the-debuggerdisplay-attribute-c-visual-basic-f-ccli"></a>Indicar al depurador qué Mostrar mediante el atributo DebuggerDisplay (C#, Visual Basic, F#, C++/CLI)
+
 El atributo <xref:System.Diagnostics.DebuggerDisplayAttribute> controla la forma en que se muestra un objeto, una propiedad o un campo en las ventanas de variables del depurador. Este atributo se puede aplicar a tipos, delegados, propiedades, campos y ensamblados. Si se aplica a un tipo base, el atributo también se aplica a una subclase.
 
 El atributo `DebuggerDisplay` tiene un argumento único, que es una cadena que se va a mostrar en la columna de valor de las instancias del tipo. Esta cadena puede contener llaves (`{` y `}`). El texto encerrado entre llaves se evalúa como un campo, una propiedad o un método.
 
-Si una clase tiene un método `ToString()` invalidado, el depurador usa el método invalidado en lugar del atributo `{<typeName>}`predeterminado. Por lo tanto, si invalidó el método `ToString()` , el depurador usa el método invalidado en lugar del atributo`{<typeName>}`predeterminado, y no tiene que usar `DebuggerDisplay`. Si usa ambos, el atributo `DebuggerDisplay` tiene prioridad sobre el método `ToString()` invalidado. El `DebuggerDisplay` atributo también tiene prioridad sobre el método invalidado `ToString()` en una subclase.
+Si una clase tiene un método `ToString()` invalidado, el depurador usa el método invalidado en lugar del atributo `{<typeName>}`predeterminado. Por lo tanto, si invalidó el método `ToString()` , el depurador usa el método invalidado en lugar del atributo`{<typeName>}`predeterminado, y no tiene que usar `DebuggerDisplay`. Si usa ambos, el atributo `DebuggerDisplay` tiene prioridad sobre el método `ToString()` invalidado. El atributo `DebuggerDisplay` también tiene prioridad sobre el método `ToString()` invalidado en una subclase.
 
 La evaluación de esta llamada implícita a `ToString()` por parte del depurador depende de un valor de configuración del usuario del cuadro de diálogo **Herramientas / Opciones/ Depuración** . Visual Basic no implementa esta evaluación implícita de `ToString()` .
 
@@ -43,7 +44,7 @@ En la tabla siguiente se muestran algunos posibles usos del atributo `DebuggerDi
 
 `DebuggerDisplay` también puede aceptar parámetros con nombre.
 
-|Parámetros|Propósito|
+|Parámetros|Finalidad|
 |----------------|-------------|
 |`Name`, `Type`|Estos parámetros afectan a las columnas **Nombre** y **Tipo** de las ventanas de variables. (Se pueden establecer en cadenas mediante la misma sintaxis que el constructor). El uso excesivo o incorrecto de estos parámetros puede generar resultados confusos.|
 |`Target`, `TargetTypeName`|Especifica el tipo de destino cuando se utiliza el atributo en el nivel de ensamblado.|
@@ -95,9 +96,9 @@ El sufijo ", NQ" indica al evaluador de expresiones que quite las comillas al mo
 ## <a name="example"></a>Ejemplo
 En el ejemplo de código siguiente se muestra cómo utilizar `DebuggerDisplay`, junto con `DebuggerBrowseable` y `DebuggerTypeProxy`. Cuando se ve en una ventana de variables del depurador, como la ventana **Inspección** , genera una expansión similar a la siguiente:
 
-|**Name**|**Valor**|**Type**|
+|**Nombre**|**Valor**|**ype**|
 |--------------|---------------|--------------|
-|Clave|"three"|object {string}|
+|Key|"three"|object {string}|
 |Valor|3|object {int}|
 
 ```csharp

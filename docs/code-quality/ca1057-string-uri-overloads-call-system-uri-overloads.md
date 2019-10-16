@@ -18,12 +18,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: e6bd77a49690979ea7ab3c4619fdd578a80bb77c
-ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
+ms.openlocfilehash: dd79751c67ca5540cb22eb692b2d11c0941005a6
+ms.sourcegitcommit: 1507baf3a336bbb6511d4c3ce73653674831501b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71235519"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "72349045"
 ---
 # <a name="ca1057-string-uri-overloads-call-systemuri-overloads"></a>CA1057: Las sobrecargas URI de cadena llaman a sobrecargas System.Uri
 
@@ -31,18 +31,18 @@ ms.locfileid: "71235519"
 |-|-|
 |TypeName|StringUriOverloadsCallSystemUriOverloads|
 |Identificador de comprobación|CA1057|
-|Categoría|Microsoft.Design|
+|Categoría|Microsoft. Design|
 |Cambio importante|Poco problemático|
 
 ## <a name="cause"></a>Motivo
 
-Un tipo declara sobrecargas de método que solo difieren en el reemplazo de un parámetro de <xref:System.Uri?displayProperty=fullName> cadena con un parámetro, y la sobrecarga que toma el parámetro de cadena no llama a la <xref:System.Uri> sobrecarga que toma el parámetro.
+Un tipo declara sobrecargas de método que solo difieren en el reemplazo de un parámetro de cadena con un parámetro <xref:System.Uri?displayProperty=fullName>, y la sobrecarga que toma el parámetro de cadena no llama a la sobrecarga que toma el parámetro <xref:System.Uri>.
 
 ## <a name="rule-description"></a>Descripción de la regla
-Dado que las sobrecargas solo difieren en <xref:System.Uri> la cadena o el parámetro, se supone que la cadena representa un identificador uniforme de recursos (URI). Las representaciones de cadena de identificadores URI tienen tendencia a analizar y codificar errores, por lo que pueden crear puntos vulnerables en la seguridad. La <xref:System.Uri> clase proporciona estos servicios de forma segura. Para aprovechar las ventajas de la <xref:System.Uri> clase, la sobrecarga de la cadena debe <xref:System.Uri> llamar a la sobrecarga mediante el argumento de cadena.
+Dado que las sobrecargas solo difieren en el parámetro String o <xref:System.Uri>, se supone que la cadena representa un identificador uniforme de recursos (URI). Las representaciones de cadena de identificadores URI tienen tendencia a analizar y codificar errores, por lo que pueden crear puntos vulnerables en la seguridad. La clase <xref:System.Uri> proporciona estos servicios de forma segura. Para aprovechar las ventajas de la clase <xref:System.Uri>, la sobrecarga de la cadena debe llamar a la sobrecarga <xref:System.Uri> mediante el argumento de cadena.
 
 ## <a name="how-to-fix-violations"></a>Cómo corregir infracciones
-Vuelva a implementar el método que usa la representación de cadena del URI para que cree una instancia de la <xref:System.Uri> clase mediante el argumento de cadena y, a continuación <xref:System.Uri> , pase el objeto a la sobrecarga <xref:System.Uri> que tiene el parámetro.
+Vuelva a implementar el método que usa la representación de cadena del URI para que cree una instancia de la clase <xref:System.Uri> con el argumento de cadena y, a continuación, pase el objeto <xref:System.Uri> a la sobrecarga que tiene el parámetro <xref:System.Uri>.
 
 ## <a name="when-to-suppress-warnings"></a>Cuándo suprimir advertencias
 Es seguro suprimir una advertencia de esta regla si el parámetro de cadena no representa un URI.
@@ -55,10 +55,10 @@ En el ejemplo siguiente se muestra una sobrecarga de cadena implementada correct
 [!code-vb[FxCop.Design.CallUriOverload#1](../code-quality/codesnippet/VisualBasic/ca1057-string-uri-overloads-call-system-uri-overloads_1.vb)]
 
 ## <a name="related-rules"></a>Reglas relacionadas
-[CA2234: Pasar objetos System. Uri en lugar de cadenas](../code-quality/ca2234-pass-system-uri-objects-instead-of-strings.md)
+[CA2234: Pase objetos System.Uri en lugar de cadenas](../code-quality/ca2234.md)
 
 [CA1056: Las propiedades URI no deben ser cadenas](../code-quality/ca1056-uri-properties-should-not-be-strings.md)
 
 [CA1054: Los parámetros de URI no deben ser cadenas](../code-quality/ca1054-uri-parameters-should-not-be-strings.md)
 
-[CA1055: Los valores devueltos de URI no deben ser cadenas](../code-quality/ca1055-uri-return-values-should-not-be-strings.md)
+[CA1055: Los valores devueltos URI no deben ser cadenas](../code-quality/ca1055-uri-return-values-should-not-be-strings.md)
