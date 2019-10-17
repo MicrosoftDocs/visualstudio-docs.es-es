@@ -1,5 +1,5 @@
 - name: Documentación de análisis de código
-  href: index.md
+  href: index.yml
 - name: Análisis del código administrado
   items:
     - name: Información general
@@ -203,9 +203,9 @@
                   displayName: cryptography warnings
                   href: cryptography-warnings.md
                 - name: 'CA5350: No usar algoritmos criptográficos no seguros'
-                  href: ca5350-do-not-use-weak-cryptographic-algorithms.md
+                  href: ca5350.md
                 - name: CA5351 No use algoritmos criptográficos rotos
-                  href: ca5351-do-not-use-broken-cryptographic-algorithms.md
+                  href: ca5351.md
             - name: Advertencias de diseño
               items:
                 - name: Información general
@@ -370,7 +370,7 @@
                 - name: 'CA1309: Utilizar StringComparison ordinal'
                   href: ca1309-use-ordinal-stringcomparison.md
                 - name: 'CA2101: Especificar serialización de argumentos de cadena P-Invoke'
-                  href: ca2101-specify-marshaling-for-p-invoke-string-arguments.md
+                  href: ca2101.md
             - name: Advertencias de interoperabilidad
               items:
                 - name: Información general
