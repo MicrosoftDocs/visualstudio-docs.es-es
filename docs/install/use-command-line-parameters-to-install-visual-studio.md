@@ -2,7 +2,7 @@
 title: Usar parámetros de la línea de comandos para instalar Visual Studio
 titleSuffix: ''
 description: Obtenga información sobre cómo usar parámetros de línea de comandos para controlar o personalizar la instalación de Visual Studio.
-ms.date: 10/07/2019
+ms.date: 10/11/2019
 ms.custom: seodec18
 ms.topic: conceptual
 f1_keywords:
@@ -17,12 +17,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 306928b7a28465923ae0a5e2cc7773094458594e
-ms.sourcegitcommit: 535ef05b1e553f0fc66082cd2e0998817eb2a56a
+ms.openlocfilehash: 0b1388aa7ac993ba4b98837ec8ac46d516b567da
+ms.sourcegitcommit: e82baa50bf5a65858c410882c2e86a552c2c1921
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "72018808"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72381028"
 ---
 # <a name="use-command-line-parameters-to-install-visual-studio"></a>Usar parámetros de la línea de comandos para instalar Visual Studio
 
@@ -56,6 +56,9 @@ El archivo del programa previo debe corresponderse o ser parecido a uno de los s
 * vs_enterprise.exe
 * vs_professional.exe
 * vs_community.exe
+
+>[!TIP]
+>Si previamente descargó un archivo de programa previo y desea comprobar su versión, aquí se muestra cómo hacerlo. En Windows, abra el Explorador de archivos, haga clic con el botón derecho en el archivo de programa previo, elija **Propiedades**, seleccione la pestaña **Detalles** y, luego, fíjese en el número de **versión del producto**. Para hacer coincidir ese número con una versión de Visual Studio, consulte la página [Números de compilación y fechas de lanzamiento de Visual Studio](visual-studio-build-numbers-and-release-dates.md).
 
 ## <a name="command-line-parameters"></a>Parámetros de la línea de comandos
 
@@ -128,7 +131,7 @@ Reemplace `vs_enterprise.exe` según corresponda para la edición del producto q
 | `--cache` | **Novedad de la versión 15.2, opcional**: si los hay, los paquetes se conservarán después de instalarse de cara a posteriores reparaciones. Esta opción invalida la configuración global de directiva que se usará en posteriores instalaciones, reparaciones o modificaciones. La directiva predeterminada es almacenar en caché los paquetes. Se omite para el comando de desinstalación. Para más información, lea cómo [deshabilitar o mover la caché de paquetes](disable-or-move-the-package-cache.md). |
 | `--nocache` | **Novedad de la versión 15.2, opcional**: si los hay, los paquetes se eliminan después de instalarlos o repararlos. Solo se descargarán de nuevo si es necesario y se volverán a eliminar después de su uso. Esta opción invalida la configuración global de directiva que se usará en posteriores instalaciones, reparaciones o modificaciones. La directiva predeterminada es almacenar en caché los paquetes. Se omite para el comando de desinstalación. Para más información, lea cómo [deshabilitar o mover la caché de paquetes](disable-or-move-the-package-cache.md). |
 | `--noUpdateInstaller` | **Novedad de la versión 15.2, opcional**: si está presente, impide que el instalador se actualice de forma automática cuando se especifica el modo silencioso. El instalador producirá un error en el comando y devolverá un código de salida distinto de cero si se especifica noUpdateInstaller con el modo silencioso cuando se requiere una actualización del instalador. |
-| `--noWeb` | **Novedad de la versión 15.3, opcional**: Si está presente, la configuración de Visual Studio utiliza los archivos del directorio de diseño para instalar Visual Studio. Si un usuario intenta instalar componentes que no están en el diseño, se produce un error en la instalación.  Para obtener más información, consulte [Implementación de una instalación de red](create-a-network-installation-of-visual-studio.md). <br/><br/> **Importante**: Este modificador no impide que la configuración de Visual Studio busque actualizaciones. Para más información, consulte [Control de actualizaciones a implementaciones de Visual Studio basadas en red](controlling-updates-to-visual-studio-deployments.md).|
+| `--noWeb` | **Novedad de la versión 15.3, opcional**: Si está presente, la configuración de Visual Studio utiliza los archivos del directorio de diseño para instalar Visual Studio. Si un usuario intenta instalar componentes que no están en el diseño, se produce un error en la instalación.  Para obtener más información, consulte [Implementación de una instalación de red](create-a-network-installation-of-visual-studio.md). <br/><br/> **Importante**: Este modificador no impide que la configuración de Visual Studio busque actualizaciones. Para más información, consulte [Control de actualizaciones a implementaciones de Visual Studio basadas en red](controlling-updates-to-visual-studio-deployments.md). **Novedades de la versión 16.3.5**: Este modificador evita errores y mejora el rendimiento con instalaciones y actualizaciones sin conexión.|
 | `--path <name>=<path>` | **Novedad de la versión 15.7, opcional**: se usa para especificar las rutas de acceso de instalación personalizada para la instalación. Los nombre de ruta de acceso admitidos son uso compartido, caché e instalar. |
 | `--path cache=<path>` | **Novedad de la versión 15.7, opcional**: usa la ubicación que se especifique para descargar los archivos de instalación. Esta ubicación solo puede establecerse la primera vez que se instala Visual Studio. Ejemplo: `--path cache="C:\VS\cache"` |
 | `--path shared=<path>` | **Novedad de la versión 15.7, opcional**: contiene los archivos compartidos para las instalaciones en paralelo de Visual Studio. Algunas herramientas y SDK se instalan en una ubicación en esta unidad, mientras que otros pueden invalidar esta configuración e instalarse en otra unidad. Ejemplo: `--path shared="C:\VS\shared"` <br><br>Importante: Solo se puede establecer una vez y tiene que ser la primera que se instala Visual Studio. |

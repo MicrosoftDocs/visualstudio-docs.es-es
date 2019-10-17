@@ -8,12 +8,12 @@ ms.author: kraigb
 manager: jillfra
 ms.workload:
 - data-science
-ms.openlocfilehash: b67a82a286e3772d87c4cc1ad06a6b8099205c73
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 4eef8e79023bdd3bde03fec33c16a1c8f6d90446
+ms.sourcegitcommit: 034c503ae04e22cf840ccb9770bffd012e40fb2d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62550530"
+ms.lasthandoff: 10/14/2019
+ms.locfileid: "72306261"
 ---
 # <a name="frequently-asked-questions"></a>Preguntas más frecuentes
 
@@ -107,7 +107,7 @@ R. Vea el artículo [Execute on remote server](/machine-learning-server/r/how-to
 
 **P. Falta la característica X, ¡pero RStudio la tiene!**
 
-R. RStudio es un IDE fantástico y maduro para R que se ha estado desarrollando durante muchos años. RTVS pretende tener todas las características importantes que el usuario necesita para tener éxito. Ayude a priorizar el trabajo futuro realizando la [encuesta sobre RTVS](https://www.surveymonkey.com/r/RTVS1) y consultando los problemas de archivo en [GitHub](https://github.com/Microsoft/RTVS/issues/).
+R. RStudio es un IDE fantástico y maduro para R que se ha estado desarrollando durante muchos años. RTVS pretende tener todas las características importantes que el usuario necesita para tener éxito. Ayude a priorizar el trabajo futuro mediante el archivado de problemas en [GitHub](https://github.com/Microsoft/RTVS/issues/).
 
 **P. ¿Puedo contribuir a RTV?**
 
