@@ -13,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b58cb236f1da88c20e0e96878a7cd5c60052f44f
-ms.sourcegitcommit: 6eed0372976c0167b9a6d42ba443f9a474b8bb91
+ms.openlocfilehash: eed7a2796f08e85441c174e882c00fa406cb2379
+ms.sourcegitcommit: a5a54b147e772dc39e519da74ec41a0c25d99628
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/19/2019
-ms.locfileid: "71118622"
+ms.lasthandoff: 10/12/2019
+ms.locfileid: "72289664"
 ---
 # <a name="step-8-add-a-method-to-verify-whether-the-player-won"></a>Paso 8: Agregar un método para comprobar si el jugador ganó
 Ha creado un juego divertido, pero necesita un elemento adicional para terminarlo. El juego debe finalizar cuando el jugador gana, de modo que necesita agregar un método `CheckForWinner()` para comprobar si el jugador ha ganado.
@@ -30,6 +30,9 @@ Ha creado un juego divertido, pero necesita un elemento adicional para terminarl
      [!code-csharp[VbExpressTutorial4Step8#10](../ide/codesnippet/CSharp/step-8-add-a-method-to-verify-whether-the-player-won_1.cs)]
      [!code-vb[VbExpressTutorial4Step8#10](../ide/codesnippet/VisualBasic/step-8-add-a-method-to-verify-whether-the-player-won_1.vb)]
 
+      > [!IMPORTANT]
+      > Use el control del lenguaje de programación situado en la parte superior derecha de esta página para ver el fragmento de código de C# o el de Visual Basic.<br><br>![Control de lenguaje de programación para Docs.Microsoft.com](../ide/media/docs-programming-language-control.png)     
+
      El método utiliza otro bucle `foreach` en Visual C# o `For Each` en Visual Basic para recorrer cada etiqueta de <xref:System.Windows.Forms.TableLayoutPanel>. Usa el operador de igualdad (`==` en Visual C# y `=` en Visual Basic) para comprobar el color del icono de cada etiqueta y si coincide con el fondo. Si los colores coinciden, el icono sigue siendo invisible y el jugador no ha hallado las parejas de los iconos restantes. En ese caso, el programa utiliza una instrucción `return` para omitir el resto del método. Si el bucle pasa por todas las etiquetas sin ejecutar la instrucción `return`, indica que se han logrado hallar todas las parejas de iconos del formulario. El programa muestra un control MessageBox para felicitar al participante y después llama al método `Close()` del formulario para finalizar el juego.
 
 2. A continuación, haga que el controlador del evento `CheckForWinner()` de la etiqueta llame al nuevo método <xref:System.Windows.Forms.Control.Click>. Asegúrese de que el programa comprueba si existe un ganador inmediatamente después de mostrar el segundo icono que el jugador elige. Busque la línea donde estableció el color del segundo icono elegido y llame al método `CheckForWinner()` inmediatamente después, tal como se muestra en el siguiente código.
@@ -39,7 +42,7 @@ Ha creado un juego divertido, pero necesita un elemento adicional para terminarl
 
 3. Guarde y ejecute el programa. Reproduzca el juego y halle las coincidencias de todos los iconos. Al ganar, el programa muestra un elemento **MessageBox** de felicitación (tal como se muestra en la siguiente imagen) y, a continuación, cierra el cuadro.
 
-     ![Juego de formar parejas con MessageBox](../ide/media/express_tut4step8.png)
+     ![Juego de formar parejas con MessageBox](../ide/media/express_tut4step8.png)<br/>
 **Juego de formar parejas** con **MessageBox**
 
 ## <a name="to-continue-or-review"></a>Para continuar o revisar

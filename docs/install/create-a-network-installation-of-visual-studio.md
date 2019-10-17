@@ -1,7 +1,7 @@
 ---
 title: Creación de una instalación basada en red
 description: Obtenga información sobre cómo crear un punto de instalación de red para la implementación de Visual Studio dentro de una empresa.
-ms.date: 10/07/2019
+ms.date: 10/11/2019
 ms.custom: seodec18
 ms.topic: conceptual
 helpviewer_keywords:
@@ -15,12 +15,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: b297e99c3fbaaabed178930dfad1ac13d5ab1cd8
-ms.sourcegitcommit: 535ef05b1e553f0fc66082cd2e0998817eb2a56a
+ms.openlocfilehash: da4da0a106d37b081e0a7c57fe905048f3314174
+ms.sourcegitcommit: e82baa50bf5a65858c410882c2e86a552c2c1921
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "72018881"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72381076"
 ---
 # <a name="create-a-network-installation-of-visual-studio"></a>Creación de una instalación de red de Visual Studio
 
@@ -39,7 +39,7 @@ Descargue el archivo de programa previo correspondiente a la edición de Visual 
 
 Para obtener un programa previo de Visual Studio 2017, consulte la página de descarga de [versiones anteriores de Visual Studio](https://visualstudio.microsoft.com/vs/older-downloads/) y obtenga información detallada sobre cómo hacerlo.
 
-El archivo ejecutable o, para ser más específicos, un archivo de programa previo, debe coincidir con uno de los siguientes.
+El archivo ejecutable &mdash;o, para ser más específicos, el archivo de programa previo,&mdash; debe coincidir con uno de los siguientes.
 
 | Edición | Filename |
 |-------------|-----------------------|
@@ -53,7 +53,7 @@ Otros programas previos admitidos incluyen **vs_feedbackclient.exe**, **vs_teame
 
 ::: moniker range="vs-2019"
 
-El archivo ejecutable o, para ser más específicos, un archivo de programa previo, debe coincidir con uno de los siguientes.
+El archivo ejecutable &mdash;o, para ser más específicos, un archivo de programa previo,&mdash; debe coincidir con uno de los siguientes.
 
 |Edición | Descargar|
 |-------------|-----------------------|
@@ -64,6 +64,9 @@ El archivo ejecutable o, para ser más específicos, un archivo de programa prev
 Otros programas previos admitidos incluyen [vs_teamexplorer.exe](https://aka.ms/vs/16/release/vs_teamexplorer.exe), [vs_testagent.exe](https://aka.ms/vs/16/release/vs_testagent.exe) y [vs_testcontroller.exe](https://aka.ms/vs/16/release/vs_testcontroller.exe).
 
 ::: moniker-end
+
+>[!TIP]
+>Si previamente descargó un archivo de programa previo y desea comprobar su versión, aquí se muestra cómo hacerlo. En Windows, abra el Explorador de archivos, haga clic con el botón derecho en el archivo de programa previo, elija **Propiedades**, seleccione la pestaña **Detalles** y, luego, fíjese en el número de **versión del producto**. Para hacer coincidir ese número con una versión de Visual Studio, consulte la página [Números de compilación y fechas de lanzamiento de Visual Studio](visual-studio-build-numbers-and-release-dates.md).
 
 ## <a name="create-an-offline-installation-folder"></a>Creación de una carpeta de instalación sin conexión
 
@@ -223,6 +226,13 @@ Los administradores pueden implementar Visual Studio en estaciones de trabajo cl
 > Resulta muy útil si un administrador de empresa quiere realizar más acciones en una instalación completada (por ejemplo, para [aplicar una clave de producto a una instalación correcta](automatically-apply-product-keys-when-deploying-visual-studio.md)), pero debe esperar a que la instalación finalice para controlar el código de retorno desde esa instalación.
 >
 > Si no usa `--wait`, el proceso `vs_enterprise.exe` se cierra antes de que la instalación se complete y devuelve un código de salida incorrecto que no representa el estado de la operación de instalación.
+>
+
+::: moniker range="vs-2019"
+
+> En el caso de las instalaciones sin conexión, si recibe un mensaje de error que indica que no se encuentra un proyecto que coincida con los parámetros especificados, asegúrese de que está usando el modificador --noweb con la versión 16.3.5 o posterior.
+
+::: moniker-end
 
 Cuando realice la instalación desde un diseño, el contenido que está instalado se adquirirá del diseño. Sin embargo, si selecciona un componente que no está en el diseño, se obtendrá de Internet.  Si quiere evitar que la instalación de Visual Studio descargue cualquier contenido que no esté en su diseño, use la opción `--noWeb`. Si se usa `--noWeb` y al diseño le falta cualquier contenido seleccionado que se va a instalar, se produce un error en la instalación.
 

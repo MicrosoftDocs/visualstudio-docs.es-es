@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 249b8aa88b11643ed0b353df25bef3a054ef5e55
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.openlocfilehash: 06665aa6a30d67e27f654e92029dcbd3d2aea2ef
+ms.sourcegitcommit: 1507baf3a336bbb6511d4c3ce73653674831501b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "70987787"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "72349749"
 ---
 # <a name="first-look-at-the-visual-studio-debugger"></a>Primer vistazo al depurador de Visual Studio
 
@@ -201,6 +201,14 @@ El Asistente de excepciones es una característica excelente que puede ayudar a 
 > El Asistente de excepciones ha reemplazado al Asistente de excepciones a partir de [!include[vs_dev15](../misc/includes/vs_dev15_md.md)].
 
 Expanda el nodo **Configuración de excepciones** para ver más opciones para controlar este tipo de excepción sin necesidad de cambiar nada de este paseo.
+
+## <a name="configure-debugging"></a>Configuración de depuración
+
+Puede configurar el proyecto para que se compile como una [configuración de depuración o versión](../debugger/how-to-set-debug-and-release-configurations.md), establecer las propiedades del proyecto para la depuración o establecer la [configuración general](../debugger/how-to-specify-debugger-settings.md) para la depuración. Además, puede configurar el depurador para mostrar información personalizada mediante características como el atributo [DebuggerDisplay](using-the-debuggerdisplay-attribute.md) o, para C/C++, el [marco NatVis](create-custom-views-of-native-objects.md).
+
+Las propiedades de depuración son específicas de cada tipo de proyecto. Por ejemplo, puede especificar un argumento que se pasa a la aplicación cuando se inicia. Para acceder a las propiedades específicas del proyecto, haga clic con el botón derecho en el proyecto en el Explorador de soluciones y seleccione **Propiedades**. Las propiedades de depuración suelen aparecer en la pestaña **Compilar** o **Depurar**, en función del tipo de proyecto específico.
+
+![Propiedades del proyecto](../debugger/media/dbg-tour-project-properties.png "Propiedades del proyecto")
 
 ## <a name="debug-live-aspnet-apps-in-azure-app-service"></a>Depurar aplicaciones ASP.NET activas en Azure App Service
 
