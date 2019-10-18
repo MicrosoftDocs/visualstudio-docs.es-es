@@ -9,12 +9,12 @@ ms.author: sashe
 manager: AndSter
 ms.workload:
 - multiple
-ms.openlocfilehash: 7680b305fad6f8ea1d7961ec5a70ddafd578c77d
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.openlocfilehash: 263657213f1720eaca7a0462bb31585adaacf9bb
+ms.sourcegitcommit: 6244689e742e551e7b6933959bd42df56928ece3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71095254"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72516398"
 ---
 # <a name="use-tracepoints-in-the-visual-studio-debugger"></a>Usar puntos de seguimiento en el depurador de Visual Studio
 
@@ -22,7 +22,7 @@ Los puntos de seguimiento le permiten registrar información en la ventana de sa
 
 ## <a name="let39s-take-an-example"></a>Dejar&#39;un ejemplo
 
-El programa de ejemplo siguiente es un `for` bucle simple con una variable de contador que se incrementa en uno cada vez que el bucle ejecuta otra iteración.
+El programa de ejemplo siguiente es un bucle de `for` simple con una variable de contador que se incrementa en uno cada vez que el bucle ejecuta otra iteración.
 
 ![Ejemplo de contador](../debugger/media/counterexample.png "Ejemplo de contador")
 
@@ -47,25 +47,25 @@ Puede establecer los puntos de seguimiento mediante la especificación de una ca
 
 5. Escriba el mensaje que desea iniciar sesión en el cuadro de texto **Mostrar un mensaje en el ventana de salida** (para más información, consulte las secciones posteriores de este artículo).
 
-   Ya se ha establecido el punto de seguimiento. Presione el &quot;botón&quot; cerrar si todo lo que desea hacer es registrar información en el ventana de salida.
+   Ya se ha establecido el punto de seguimiento. Presione el botón &quot; de &quot;Close si todo lo que desea hacer es registrar cierta información en el Ventana de salida.
 
 6. Si desea agregar las condiciones que determinan si se muestra el mensaje, active la casilla **condiciones** .
 
    ![Cuadro condiciones comprobadas](../debugger/media/checkedconditionsbox.png "Cuadro condiciones comprobadas")
 
-   Tiene tres opciones para las condiciones: **Expresión condicional**, **filtro**y **número de llamadas**.
+   Tiene tres opciones para las condiciones: **expresión condicional**, **filtro**y **número de llamadas**.
 
 ## <a name="actions-menu"></a>Menú acciones
 
 Este menú le permite registrar un mensaje en la ventana de salida. Escriba las cadenas que desea mostrar en el cuadro de mensaje (no se necesitan comillas). Si desea mostrar los valores de las variables, asegúrese de encerrarlo entre llaves.
 
-Por ejemplo, si desea mostrar el valor de la `counter` variable en la consola de salida, escriba {Counter} en el cuadro de texto del mensaje.
+Por ejemplo, si desea mostrar el valor de la variable `counter` en la consola de salida, escriba {Counter} en el cuadro de texto del mensaje.
 
 ![Mensaje de salida del contador](../debugger/media/counteroutputmessage.png "Mensaje de salida del contador")
 
 Si hace clic en **cerrar** y, a continuación, depura el programa (**F5**), verá el siguiente resultado en la ventana salida.
 
-![Mensaje de acciones en ventana de salida](../debugger/media/actionsmessageinoutputwindow.png "Mensaje de acciones en ventana de salida")
+![Mensaje de acciones en Ventana de salida](../debugger/media/actionsmessageinoutputwindow.png "Mensaje de acciones en Ventana de salida")
 
 También puede usar palabras clave especiales para mostrar información más específica. Escriba la palabra clave exactamente como se muestra a continuación (use un "$" delante de cada palabra clave y todos los extremos de la palabra clave en sí).
 
@@ -88,11 +88,11 @@ Las condiciones permiten filtrar los mensajes de salida, por lo que solo se mues
 ### <a name="conditional-expression"></a>Expresión condicional
 En el caso de una expresión condicional, se muestra un mensaje de salida solo cuando se cumplen ciertas condiciones.
 
-En el caso de las expresiones condicionales, puede establecer el punto de seguimiento para que genere un mensaje cuando una condición determinada sea verdadera o cuando haya cambiado. Por ejemplo, si solo desea mostrar el valor del contador durante las iteraciones incluso del `for` bucle, puede seleccionar la opción **es true** y, a continuación, escribir `i%2 == 0` en el cuadro de texto del mensaje.
+En el caso de las expresiones condicionales, puede establecer el punto de seguimiento para que genere un mensaje cuando una condición determinada sea verdadera o cuando haya cambiado. Por ejemplo, si solo desea mostrar el valor del contador durante las iteraciones incluso del bucle `for`, puede seleccionar la opción **es true** y, a continuación, escribir `i%2 == 0` en el cuadro de texto mensaje.
 
-La ![expresión condicional es true] La (../debugger/media/conditionalexpressionistrue.png "expresión condicional es true")
+![La expresión condicional es true](../debugger/media/conditionalexpressionistrue.png "La expresión condicional es true")
 
-Si desea imprimir el valor del contador cuando cambie la iteración del `for` bucle, seleccione la opción **al cambiar** y escriba `i` en el cuadro de texto mensaje.
+Si desea imprimir el valor del contador cuando cambie la iteración del bucle `for`, seleccione la opción **al cambiar** y escriba `i` en el cuadro de texto mensaje.
 
 ![Expresión condicional cuando se cambia](../debugger/media/conditionalexpressionwhenchanged.png "Expresión condicional cuando se cambia")
 
@@ -101,7 +101,7 @@ El comportamiento de la opción **When Changed** es diferente para los diferente
 - En el caso de código nativo, el depurador no considera la primera evaluación de la condición como un cambio, por lo que no alcanza el punto de seguimiento en la primera evaluación.
 - En el caso de código administrado, el depurador alcanza el punto de seguimiento en la primera evaluación después de seleccionar **cuando se cambia** .
 
-Para obtener una visión más completa de las expresiones válidas que se pueden usar mientras se establecen las condiciones, vea [expresiones en el depurador](expressions-in-the-debugger.md) .
+Para obtener una visión más completa de las expresiones válidas que se pueden usar mientras se establecen las condiciones, vea [expresiones en el depurador](expressions-in-the-debugger.md).
 
 ### <a name="hit-count"></a>Número de llamadas
 Una condición de número de llamadas permite enviar la salida solo después de que la línea de código donde se establece el punto de seguimiento se haya ejecutado un número especificado de veces.
@@ -123,7 +123,7 @@ Lista de expresiones de filtro:
 - ThreadId = value
 - ThreadName = "name"
 
-Incluya las cadenas (como nombres) entre comillas dobles. Los valores se pueden escribir sin comillas. Puede combinar cláusulas mediante `&` (`AND`) `||` , (`OR`), `!` (`NOT`) y paréntesis.
+Incluya las cadenas (como nombres) entre comillas dobles. Los valores se pueden escribir sin comillas. Puede combinar cláusulas mediante `&` (`AND`), `||` (`OR`), `!` (`NOT`) y paréntesis.
 
 ## <a name="considerations"></a>Consideraciones
 
@@ -131,7 +131,9 @@ Aunque los puntos de seguimiento están diseñados para que la depuración sea u
 
 A veces, al inspeccionar una propiedad o atributo de un objeto, su valor puede cambiar. Esto no es un error causado por la propia característica de punto de seguimiento, pero merece la pena mencionar que el uso de puntos de seguimiento para inspeccionar objetos no evita estas modificaciones accidentales.
 
-La forma en que se evalúan las expresiones en el cuadro de mensaje de **acción** puede ser diferente del lenguaje que se usa actualmente para el desarrollo. Por ejemplo, para generar una cadena, no es necesario ajustar un mensaje entre comillas, aunque normalmente se use `Debug.WriteLine()` o. `console.log()` Además, la sintaxis de la llave`{ }`() para las expresiones de salida también puede ser diferente de la Convención para generar valores en el lenguaje de desarrollo. (Sin embargo, el contenido dentro de las llaves (`{ }`) debe escribirse con la sintaxis del lenguaje de desarrollo.
+La forma en que se evalúan las expresiones en el cuadro de mensaje de **acción** puede ser diferente del lenguaje que se usa actualmente para el desarrollo. Por ejemplo, para generar una cadena, no es necesario ajustar un mensaje entre comillas, aunque normalmente se use `Debug.WriteLine()` o `console.log()`. Además, la sintaxis de la llave (`{ }`) en las expresiones de salida también puede ser diferente de la Convención para generar valores en el lenguaje de desarrollo. (Sin embargo, el contenido dentro de las llaves (`{ }`) todavía se debe escribir con la sintaxis del lenguaje de desarrollo.
+
+Si intenta depurar una aplicación activa y busca una característica similar, consulte nuestra característica punto en el Snapshot Debugger. Snapshot Debugger es una herramienta que se usa para investigar problemas en aplicaciones de producción. Puntos también permiten enviar mensajes al Ventana de salida sin tener que modificar el código fuente ni afectar a la aplicación en ejecución. Para obtener más información, consulte [depuración de aplicaciones de Azure en directo](../debugger/debug-live-azure-applications.md).
 
 ## <a name="see-also"></a>Vea también
 
@@ -140,3 +142,4 @@ La forma en que se evalúan las expresiones en el cuadro de mensaje de **acción
 - [Primer vistazo a la depuración](../debugger/debugger-feature-tour.md)
 - [Expresiones en el depurador](expressions-in-the-debugger.md)
 - [Uso de puntos de interrupción](../debugger/using-breakpoints.md)
+- [Depuración de aplicaciones de Azure activas](../debugger/debug-live-azure-applications.md)

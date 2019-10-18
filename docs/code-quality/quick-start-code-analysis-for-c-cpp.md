@@ -11,12 +11,12 @@ ms.author: mblome
 manager: markl
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 2c68bb94a66be2c9fc1da4365cb77adf8d1330a1
-ms.sourcegitcommit: e95dd8cedcd180e0bce6a75c86cf861757918290
+ms.openlocfilehash: 4beaff14e896eae15d4ce68acf35331d03203246
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/09/2019
-ms.locfileid: "72163018"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72445637"
 ---
 # <a name="quickstart-code-analysis-for-cc"></a>Inicio rápido: Análisis de código para C/C++
 
@@ -28,7 +28,7 @@ Se puede mejorar la calidad de la aplicación si se analiza con regularidad el c
 
 2. Opcionalmente, en las listas **configuración** y **plataforma** , elija la configuración de compilación y la plataforma de destino.
 
-3. Para ejecutar análisis de código cada vez que se compila el proyecto con la configuración seleccionada, seleccione el **Habilitar análisis de código al compilar** casilla de verificación. También puede ejecutar el análisis de código manualmente si abre el menú **analizar** y, a continuación, elige **Ejecutar Análisis de código en** *projectname* o **Ejecutar Análisis de código en el archivo**.
+3. Para ejecutar el análisis de código cada vez que se compila el proyecto con la configuración seleccionada, active la casilla **Habilitar análisis de código al compilar** . También puede ejecutar el análisis de código manualmente si abre el menú **analizar** y, a continuación, elige **Ejecutar Análisis de código en** *projectname* o **Ejecutar Análisis de código en el archivo**.
 
 4. Elija el [conjunto de reglas](../code-quality/using-rule-sets-to-specify-the-cpp-rules-to-run.md) que desea usar o cree un [conjunto de reglas personalizado](../code-quality/how-to-create-a-custom-rule-set.md). Si usa LLVM/Clang-cl, consulte [uso de Clang-ordenado en Visual Studio](../code-quality/clang-tidy.md) para configurar opciones de análisis de Clang.
 
@@ -103,9 +103,9 @@ La característica de seguimiento de elemento de trabajo permite registrar error
 
 Puedes buscar en las listas largas de mensajes de advertencia y filtrar las advertencias en las soluciones de varios proyectos.
 
-- **Para filtrar las advertencias por título o ID. de advertencia**: Escriba la palabra clave en el cuadro de búsqueda.
+- **Para filtrar las advertencias por título o ID**. de ADVERTENCIA: escriba la palabra clave en el cuadro de búsqueda.
 
-- **Para filtrar las advertencias por gravedad**: De forma predeterminada, a los mensajes de análisis de código se les asigna una gravedad de **ADVERTENCIA**. Puede asignar la gravedad de uno o más mensajes como **error** en un conjunto de reglas personalizado. En la columna **gravedad** del **lista de errores**, elija la flecha desplegable y, a continuación, el icono de filtro. Elija **ADVERTENCIA** o **error** para mostrar solo los mensajes a los que se ha asignado la gravedad respectiva. Elija **seleccionar todo** para mostrar todos los mensajes.
+- **Para filtrar las advertencias por gravedad**: de forma predeterminada, los mensajes de análisis de código tienen asignada una gravedad de **ADVERTENCIA**. Puede asignar la gravedad de uno o más mensajes como **error** en un conjunto de reglas personalizado. En la columna **gravedad** del **lista de errores**, elija la flecha desplegable y, a continuación, el icono de filtro. Elija **ADVERTENCIA** o **error** para mostrar solo los mensajes a los que se ha asignado la gravedad respectiva. Elija **seleccionar todo** para mostrar todos los mensajes.
 
 ## <a name="see-also"></a>Vea también
 

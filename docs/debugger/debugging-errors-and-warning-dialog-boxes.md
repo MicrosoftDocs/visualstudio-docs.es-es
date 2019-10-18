@@ -1,5 +1,5 @@
 ---
-title: Depuración de errores y los cuadros de diálogo de advertencia | Microsoft Docs
+title: Cuadros de diálogo de advertencia y errores de depuración | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -21,12 +21,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e13d6d323264136c6cab4c753ba53d40acd5a628
-ms.sourcegitcommit: da4079f5b6ec884baf3108cbd0519d20cb64c70b
+ms.openlocfilehash: f261eac1c3cbc73bb12323c089ae88f4ffc6b120
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "67852223"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72431678"
 ---
 # <a name="debugging-errors-and-warning-dialog-boxes"></a>Cuadros de diálogo de advertencias y errores de depuración
 A continuación, se muestran los cuadros de diálogo de advertencia y errores que se pueden encontrar mientras se depura una aplicación.
@@ -38,7 +38,7 @@ A continuación, se muestran los cuadros de diálogo de advertencia y errores qu
 
  [El depurador no puede mostrar el código fuente o el desensamblado](../debugger/debugger-cannot-display-source-code-or-disassembly.md)
  
- [Servicios que se está quedando sin memoria del depurador](../debugger/error-debugger-services-no-memory.md)
+ [Se está agotando la memoria de los servicios del depurador](../debugger/error-debugger-services-no-memory.md)
 
  [Cuadro de diálogo Archivo ejecutable para sesión de depuración](../debugger/executable-for-debugging-session-dialog-box.md)
 
@@ -59,7 +59,7 @@ A continuación, se muestran los cuadros de diálogo de advertencia y errores qu
  [Error: No se puede depurar porque un depurador del kernel está habilitado en el sistema](../debugger/error-debugging-isn-t-possible-because-a-kernel-debugger-is-enabled-on-the-system.md)
 
 ## <a name="related-sections"></a>Secciones relacionadas
- [Depurar Script y aplicaciones Web: errores y solución de problemas](../debugger/debugging-web-applications-errors-and-troubleshooting.md)
+ [Depurar script y aplicaciones web: errores y solución de problemas](../debugger/debugging-web-applications-errors-and-troubleshooting.md)
 
  [Errores de depuración remota](../debugger/remote-debugging-errors-and-troubleshooting.md)
 
@@ -67,6 +67,6 @@ A continuación, se muestran los cuadros de diálogo de advertencia y errores qu
 
  [Solución de problemas de la instalación de la depuración de SQL](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/s7ahaxtd(v=vs.100))
 
- [Preguntas más frecuentes sobre técnicas de depuración para Visual C++](../debugger/debugging-native-code-faqs.md)
+ [P+F sobre la depuración de código nativo](../debugger/debugging-native-code-faqs.md)
 
  [Seguridad del depurador](../debugger/debugger-security.md)

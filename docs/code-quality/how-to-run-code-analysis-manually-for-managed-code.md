@@ -1,5 +1,5 @@
 ---
-title: Procedimiento Ejecutar el análisis de código manualmente para código administrado
+title: 'Cómo: Ejecutar análisis de código manualmente para código administrado'
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,15 +10,15 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 588f78c600aa7c78894a2e0bdc7f4443f4e86b31
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 6d755f1ce9edc2c699592e4c0c1396be719c4fc9
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68923967"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72448956"
 ---
-# <a name="how-to-run-code-analysis-manually-for-managed-code"></a>Procedimiento Ejecutar el análisis de código manualmente para código administrado
-La herramienta de análisis de código proporciona información sobre los posibles defectos en el código fuente. Puede ejecutar el análisis de código automáticamente con cada compilación de un proyecto de código y también puede ejecutar el análisis de código manualmente. Las reglas que se comprueban cuando se ejecuta el análisis de código se especifican en la página Análisis de código de las páginas de propiedades del proyecto. Para obtener más información, vea [Cómo: Configurar el análisis de código para un proyecto](../code-quality/how-to-configure-code-analysis-for-a-managed-code-project.md)de código administrado.
+# <a name="how-to-run-code-analysis-manually-for-managed-code"></a>Cómo: Ejecutar análisis de código manualmente para código administrado
+La herramienta de análisis de código proporciona información sobre los posibles defectos en el código fuente. Puede ejecutar el análisis de código automáticamente con cada compilación de un proyecto de código y también puede ejecutar el análisis de código manualmente. Las reglas que se comprueban cuando se ejecuta el análisis de código se especifican en la página Análisis de código de las páginas de propiedades del proyecto. Para obtener más información, vea [Cómo: configurar el análisis de código para un proyecto de código administrado](../code-quality/how-to-configure-code-analysis-for-a-managed-code-project.md).
 
 ### <a name="to-run-code-analysis-manually"></a>Para ejecutar el análisis de código manualmente
 

@@ -1,5 +1,5 @@
 ---
-title: Procedimiento Usar comprobaciones nativas en tiempo de ejecución | Microsoft Docs
+title: 'Cómo: utilizar comprobaciones nativas en tiempo de ejecución | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -37,15 +37,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: aeebdd8a86cb8ca6ffc1358a8558654d1e4d0b92
-ms.sourcegitcommit: ea182703e922c74725045afc251bcebac305068a
+ms.openlocfilehash: 3cef755721a9c5b917b080fa10f1819055a18ed7
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71211027"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72430556"
 ---
-# <a name="how-to-use-native-run-time-checks"></a>Procedimiento Uso de comprobaciones nativas en tiempo de ejecución
-En Visual C++, puede realizar [runtime_checks](/cpp/preprocessor/runtime-checks) nativas para detectar errores en tiempo de ejecución, tales como:
+# <a name="how-to-use-native-run-time-checks"></a>Cómo: Utilizar comprobaciones nativas en tiempo de ejecución
+En un proyecto de C++ Visual Studio, puede usar [runtime_checks](/cpp/preprocessor/runtime-checks) nativas para detectar errores comunes en tiempo de ejecución como:
 
 - Daños en el puntero de la pila
 
@@ -57,7 +57,7 @@ En Visual C++, puede realizar [runtime_checks](/cpp/preprocessor/runtime-checks)
 
 - Pérdida de datos en una asignación a una variable corta.
 
-  Si utiliza **/RTC** con una generación optimizada (**/O**), obtendrá un error del compilador. Si utiliza un pragma `runtime_checks` en una versión optimizada, el pragma no surte ningún efecto.
+  Si utiliza **/RTC** con una generación optimizada ( **/O**), obtendrá un error del compilador. Si utiliza un pragma `runtime_checks` en una versión optimizada, el pragma no surte ningún efecto.
 
   Cuando se depura un programa con las comprobaciones en tiempo de ejecución habilitadas, la acción predeterminada es la de que el programa se detenga y se interrumpa su depuración cuando se produzca un error en tiempo de ejecución. Puede cambiar este comportamiento predeterminado para cualquier comprobación en tiempo de ejecución. Para obtener más información, vea [administrar excepciones con el depurador](../debugger/managing-exceptions-with-the-debugger.md).
 

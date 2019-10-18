@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4b52bb573b9a98c5a797f67cdbd4608f8b8636da
-ms.sourcegitcommit: 39a04f42d23597b70053686d7e927ba78f38a9a8
+ms.openlocfilehash: 33d8d97a5d036a2bd931bfa951fea2715569830a
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/05/2019
-ms.locfileid: "71975100"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72448986"
 ---
 # <a name="customize-a-rule-set"></a>Personalización de un conjunto de reglas
 
@@ -24,7 +24,7 @@ Puede crear un conjunto de reglas personalizado para satisfacer las necesidades 
 
 ## <a name="create-a-custom-rule-set-from-an-existing-rule-set"></a>Crear un conjunto de reglas personalizado a partir de un conjunto de reglas existente
 
-Para crear un conjunto de reglas personalizado, puede abrir un conjunto de reglas integrado en el **Editor de conjuntos de reglas**. Desde allí, puede Agregar o quitar reglas específicas y puede cambiar la acción que se produce cuando se infringe una regla @ no__t-0for ejemplo, mostrar una advertencia o un error.
+Para crear un conjunto de reglas personalizado, puede abrir un conjunto de reglas integrado en el **Editor de conjuntos de reglas**. Desde allí, puede Agregar o quitar reglas específicas y puede cambiar la acción que se produce cuando se infringe una regla &mdash;for ejemplo, mostrar una advertencia o un error.
 
 1. En **Explorador de soluciones**, haga clic con el botón secundario en el proyecto y seleccione **propiedades**.
 
@@ -57,7 +57,7 @@ Para crear un conjunto de reglas personalizado, puede abrir un conjunto de regla
 
 Puede crear un nuevo archivo de conjunto de reglas desde el cuadro de diálogo **nuevo archivo** :
 
-1. Seleccione el **archivo** > **nuevo**@no__t-**3,** o presione **Ctrl**+**N**.
+1. Seleccione **archivo**  > **nuevo** **archivo**de  >  o presione **Ctrl** +**N**.
 
 2. En el cuadro de diálogo **nuevo archivo** , seleccione la categoría **General** de la izquierda y, a continuación, seleccione **conjunto de reglas de análisis de código**.
 
@@ -76,13 +76,13 @@ Puede crear un nuevo archivo de conjunto de reglas desde el cuadro de diálogo *
 
 ::: moniker range="vs-2017"
 
-3. Seleccione **@no__t 1Choose varios conjuntos de reglas >** de **ejecutar este conjunto de reglas**.
+3. Seleccione **\<Choose varios conjuntos de reglas >** de **ejecutar este conjunto de reglas**.
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-3. Seleccione **@no__t 1Choose varios conjuntos de reglas >** de **las reglas activas**.
+3. Seleccione **\<Choose varios conjuntos de reglas >** de **las reglas activas**.
 
 ::: moniker-end
 
@@ -111,7 +111,7 @@ Puede crear un nuevo archivo de conjunto de reglas desde el cuadro de diálogo *
 
 - Si se muestra la misma regla dos o más veces en un conjunto de reglas con la *misma* gravedad, puede ver la siguiente advertencia en el **lista de errores**:
 
-   @NO__T 0CA0063: No se pudo cargar el archivo de conjunto de reglas ' \[your]. ruleset ' o uno de sus archivos de conjunto de reglas dependientes. El archivo no se ajusta al esquema del conjunto de reglas. **
+   **CA0063: no se pudo cargar el archivo de conjunto de reglas ' \[your]. ruleset ' o uno de sus archivos de conjunto de reglas dependientes. El archivo no se ajusta al esquema del conjunto de reglas.**
 
 - Si el conjunto de reglas incluye un conjunto de reglas secundarias mediante una etiqueta **include** , y la regla secundaria y primaria establece ambas listas en la misma regla pero con diferentes gravedades, la gravedad del conjunto de reglas primario tiene prioridad. Por ejemplo:
 
@@ -136,7 +136,7 @@ Puede crear un nuevo archivo de conjunto de reglas desde el cuadro de diálogo *
 
 ## <a name="name-and-description"></a>Nombre y descripción
 
-Para cambiar el nombre para mostrar de un conjunto de reglas que está abierto en el editor, abra la ventana **propiedades** seleccionando la**ventana de propiedades** **Ver** >  en la barra de menús. Escriba el nombre para mostrar en el cuadro **nombre** . También puede escribir una descripción para el conjunto de reglas.
+Para cambiar el nombre para mostrar de un conjunto de reglas abierto en el editor, abra la ventana **propiedades** . para ello, seleccione **Ver**  > **ventana Propiedades** en la barra de menús. Escriba el nombre para mostrar en el cuadro **nombre** . También puede escribir una descripción para el conjunto de reglas.
 
 ## <a name="next-steps"></a>Pasos siguientes
 
@@ -147,5 +147,5 @@ Ahora que tiene un conjunto de reglas, el siguiente paso es personalizar las reg
 
 ## <a name="see-also"></a>Vea también
 
-- [Cómo: Configurar el análisis de código para un proyecto de código administrado @ no__t-0
+- [Cómo: Configurar el análisis de código para un proyecto de código administrado](../code-quality/how-to-configure-code-analysis-for-a-managed-code-project.md)
 - [Referencia del conjunto de reglas Análisis de código](../code-quality/rule-set-reference.md)

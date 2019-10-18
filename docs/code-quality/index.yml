@@ -1,0 +1,61 @@
+### YamlMime:Landing
+title: Análisis de código en Visual Studio
+summary: Visual Studio proporciona varias herramientas distintas para analizar y mejorar la calidad del código.
+metadata:
+  title: Analizadores de código
+  description: Obtenga información sobre cómo Visual Studio puede ayudarle a analizar la calidad del código.
+  ms.prod: visual-studio-windows
+  ms.technology: vs-ide-general
+  ms.topic: landing-page
+  author: gewarren
+  ms.author: gewarren
+  ms.date: 10/15/2019
+  ms.openlocfilehash: eb7be803a8c9751550f46880cfd485dac2850527
+  ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
+  ms.translationtype: HT
+  ms.contentlocale: es-ES
+  ms.lasthandoff: 10/16/2019
+  ms.locfileid: "72450592"
+landingContent:
+- title: Análisis del código de C y C++
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: Análisis del código de C y C++
+      url: code-analysis-for-c-cpp-overview.md
+  - linkListType: reference
+    links:
+    - text: Advertencias de análisis de código de C++
+      url: code-analysis-for-c-cpp-warnings.md
+- title: Analizar la calidad del código administrado
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: Análisis de código fuente
+      url: roslyn-analyzers-overview.md
+    - text: Análisis heredado
+      url: static-code-analysis-for-managed-code-overview.md
+  - linkListType: concept
+    links:
+    - text: Preguntas más frecuentes
+      url: analyzers-faq.md
+  - linkListType: how-to-guide
+    links:
+    - text: Instalar analizadores de FxCop
+      url: install-fxcop-analyzers.md
+  - linkListType: reference
+    links:
+    - text: Advertencias de análisis de código administrado
+      url: code-analysis-for-managed-code-warnings.md
+- title: Análisis del estilo del código administrado
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: Análisis del estilo del código
+      url: ../ide/create-portable-custom-editor-options.md
+- title: Medición de la complejidad del código
+  linkLists:
+  - linkListType: concept
+    links:
+    - text: Métrica de código
+      url: code-metrics-values.md

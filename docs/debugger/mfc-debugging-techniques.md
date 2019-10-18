@@ -25,12 +25,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3f2cd5345de8dfe62e56722a8e36713c6062b3cb
-ms.sourcegitcommit: 7fbfb2a1d43ce72545096c635df2b04496b0be71
+ms.openlocfilehash: 1380cf2cfd4d1ffe729fdd4a6ce9cfb2ba7d9ab6
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/09/2019
-ms.locfileid: "67693032"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72435647"
 ---
 # <a name="mfc-debugging-techniques"></a>Técnicas de depuración de MFC
 Si está depurando un programa MFC, estas técnicas de depuración pueden resultar de utilidad.
@@ -97,7 +97,7 @@ TRACE( "x = %d and y = %d\n", x, y );
 TRACE( "x = %d and y = %x and z = %f\n", x, y, z );
 ```
 
-La macro TRACE controla correctamente ambos char\* y wchar_t\* parámetros. En los ejemplos siguientes se muestra el uso de la macro TRACE junto con diferentes tipos de parámetros de cadena.
+La macro TRACE controla correctamente los parámetros char \* y wchar_t \*. En los ejemplos siguientes se muestra el uso de la macro TRACE junto con diferentes tipos de parámetros de cadena.
 
 ```cpp
 TRACE( "This is a test of the TRACE macro that uses an ANSI string: %s %d\n", "The number is:", 2);
@@ -185,7 +185,7 @@ Para poder utilizar los servicios de diagnóstico de memoria, se debe habilitar 
     #endif
     ```
 
-    Tenga en cuenta que las instrucciones de comprobación de memoria están enmarcadas por **#ifdef _DEBUG / #endif** bloquea para que solo se compilan en versiones de depuración del programa.
+    Observe que las instrucciones de comprobación de memoria están entre corchetes **#ifdef bloques _ Debug/#endif** de modo que solo se compilan en versiones de depuración del programa.
 
     Ahora que ha detectado una pérdida de memoria, puede usar otra función miembro [CMemoryState::DumpStatistics](/cpp/mfc/reference/cmemorystate-structure#dumpstatistics) , que le ayudará a buscarla.
 
@@ -227,7 +227,7 @@ Entre los bloques que no son objetos se incluyen las matrices y las estructuras 
 [En este tema](#BKMK_In_this_topic)
 
 ### <a name="BKMK_Taking_object_dumps"></a> Realizar volcados de memoria de objetos
-En un programa MFC, puede usar [CMemoryState:: DumpAllObjectsSince](/cpp/mfc/reference/cmemorystate-structure#dumpallobjectssince) para volcar una descripción de todos los objetos del montón que no se han desasignado. `DumpAllObjectsSince` vuelca todos los objetos asignados desde el último [CMemoryState::Checkpoint](/cpp/mfc/reference/cmemorystate-structure#checkpoint). Si no se realizó ninguna llamada a `Checkpoint` , `DumpAllObjectsSince` produce un volcado de memoria de todos los objetos y elementos que no sean objetos actualmente en memoria.
+En un programa MFC, puede usar [CMemoryState::D umpallobjectssince](/cpp/mfc/reference/cmemorystate-structure#dumpallobjectssince) para volcar una descripción de todos los objetos del montón que no se han desasignado. `DumpAllObjectsSince` vuelca todos los objetos asignados desde el último [CMemoryState::Checkpoint](/cpp/mfc/reference/cmemorystate-structure#checkpoint). Si no se realizó ninguna llamada a `Checkpoint` , `DumpAllObjectsSince` produce un volcado de memoria de todos los objetos y elementos que no sean objetos actualmente en memoria.
 
 > [!NOTE]
 > Para poder utilizar el volcado de objetos MFC, debe [habilitar el seguimiento de diagnóstico](#BKMK_Enabling_memory_diagnostics).
@@ -413,16 +413,16 @@ pMyPerson->Dump( afxDump );
 ## <a name="BKMK_Reducing_the_size_of_an_MFC_Debug_build"></a> Reducir el tamaño de una configuración de compilación de MFC
 La información de depuración para una aplicación MFC extensa puede ocupar un gran espacio en disco. Puede utilizar uno de estos procedimientos para reducir el tamaño:
 
-1. Volver a generar las bibliotecas MFC usando la [/Z7, / Zi, /ZI (formato de la información de depuración)](/cpp/build/reference/z7-zi-zi-debug-information-format) opción, en lugar de **/Z7**. Estas opciones compilan un único archivo de base de datos de programa (PDB) que contiene información de depuración para toda la biblioteca, lo que permite reducir información redundante y ahorrar espacio.
+1. Recompile las bibliotecas MFC con la opción [/Z7,/Zi,/Zi (formato de información de depuración)](/cpp/build/reference/z7-zi-zi-debug-information-format) , en lugar de **/Z7**. Estas opciones compilan un único archivo de base de datos de programa (PDB) que contiene información de depuración para toda la biblioteca, lo que permite reducir información redundante y ahorrar espacio.
 
-2. Recompile las bibliotecas MFC sin información de depuración (ninguna [/Z7, / Zi, /ZI (formato de la información de depuración)](/cpp/build/reference/z7-zi-zi-debug-information-format) opción). En este caso, la falta de información de depuración impide utilizar la mayoría de los servicios del depurador dentro del código de la biblioteca MFC, pero, como estas bibliotecas ya están depuradas, eso no constituye ningún problema.
+2. Recompile las bibliotecas MFC sin información de depuración (no [/Z7,/Zi,/Zi (formato de información de depuración)](/cpp/build/reference/z7-zi-zi-debug-information-format) ). En este caso, la falta de información de depuración impide utilizar la mayoría de los servicios del depurador dentro del código de la biblioteca MFC, pero, como estas bibliotecas ya están depuradas, eso no constituye ningún problema.
 
 3. Compile su propia aplicación con información de depuración solo para los módulos seleccionados como se describe a continuación.
 
     [En este tema](#BKMK_In_this_topic)
 
 ### <a name="BKMK_Building_an_MFC_app_with_debug_information_for_selected_modules"></a> Compilar una aplicación MFC con la información de depuración para los módulos seleccionados
-Compilar módulos seleccionados con las bibliotecas de depuración de MFC permite utilizar la ejecución paso a paso y otros servicios de depuración en esos módulos. Este procedimiento utiliza los modos de depuración y de lanzamiento del archivo MAKE de Visual C++, por lo que hace necesarios los cambios descritos en los pasos siguientes (y también "recompilar todo" cuando se requiere compilar una versión de lanzamiento completa).
+Compilar módulos seleccionados con las bibliotecas de depuración de MFC permite utilizar la ejecución paso a paso y otros servicios de depuración en esos módulos. Este procedimiento hace uso de las configuraciones de depuración y lanzamiento del proyecto, por lo que necesita los cambios descritos en los pasos siguientes (y también "recompilar todo" cuando se requiere una versión de lanzamiento completa).
 
 1. En el Explorador de soluciones, seleccione el proyecto.
 
@@ -438,7 +438,7 @@ Compilar módulos seleccionados con las bibliotecas de depuración de MFC permit
 
    4. En la lista **Copiar configuración de** , elija **Liberar**.
 
-   5. Haga clic en **Aceptar** para cerrar el **nueva configuración del proyecto** cuadro de diálogo.
+   5. Haga clic en **Aceptar** para cerrar el cuadro de diálogo **nueva configuración del proyecto** .
 
    6. Cierre el cuadro de diálogo **Administrador de configuración** .
 
@@ -481,4 +481,4 @@ Compilar módulos seleccionados con las bibliotecas de depuración de MFC permit
    [En este tema](#BKMK_In_this_topic)
 
 ## <a name="see-also"></a>Vea también
-[Depurar en Visual C++](../debugger/debugging-native-code.md)
+[Depuración de código nativo](../debugger/debugging-native-code.md)

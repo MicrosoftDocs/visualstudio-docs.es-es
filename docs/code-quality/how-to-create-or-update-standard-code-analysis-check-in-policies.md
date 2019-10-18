@@ -11,61 +11,61 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 768efb3e874f6427cd23f63f14671aa2db1bea71
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 738bb1bcf14d5b3459f325fe13eb3c4b0119e562
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62816362"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72448965"
 ---
-# <a name="how-to-create-or-update-standard-code-analysis-check-in-policies"></a>Procedimiento Crear o actualizar directivas de protección de análisis de código estándar
+# <a name="how-to-create-or-update-standard-code-analysis-check-in-policies"></a>Cómo: Crear o actualizar directivas de inserción en el repositorio de análisis de código estándar
 
-Puede requerir que el análisis de código se ejecute en todos los proyectos de código en un proyecto de DevOps de Azure mediante el uso de la directiva de protección de análisis de código. Necesidad de análisis de código puede mejorar la calidad del código que está protegido en la base de código.
+Puede requerir que el análisis de código se ejecute en todos los proyectos de código en un proyecto de DevOps de Azure mediante la Directiva de protección de análisis de código. Requerir el análisis de código puede mejorar la calidad del código que se protege en la base de código.
 
 > [!NOTE]
-> Esta característica está disponible solo si usa Team Foundation Server.
+> Esta característica solo está disponible si usa Team Foundation Server.
 
-Directivas de protección de análisis de código se establecen en la configuración del proyecto y se aplican a cada proyecto de código. Ejecuciones de análisis de código se configuran para los proyectos de código en el archivo de proyecto (xxproj) para el proyecto de código. Ejecuciones de análisis de código se realizan en el equipo local. Cuando se habilita una directiva de protección de análisis de código, se deben compilar los archivos en un proyecto de código que se comprueben después de su última modificación y que ejecute un análisis de código contiene, como mínimo, las reglas de la configuración del proyecto deben realizarse en el equipo donde el cambio se han realizado s.
+Las directivas de protección de análisis de código se establecen en la configuración del proyecto y se aplican a cada proyecto de código. Las ejecuciones de análisis de código se configuran para los proyectos de código en el archivo de proyecto (. xxproj) para el proyecto de código. Las ejecuciones de análisis de código se realizan en el equipo local. Cuando se habilita una directiva de protección de análisis de código, los archivos de un proyecto de código que se van a proteger se deben compilar después de la última edición y una ejecución de análisis de código que contiene, como mínimo, las reglas de la configuración del proyecto que se deben realizar en el equipo en el que se realizó el cambio se han realizado.
 
-- Para código administrado, establezca la directiva de protección especificando un *conjunto de reglas* que contiene un subconjunto de las reglas de análisis de código.
+- En el caso de código administrado, establezca la Directiva de inserción en el repositorio especificando un *conjunto de reglas* que contenga un subconjunto de las reglas de análisis de código.
 
-- Para el código de C o C++, en Visual Studio 2017 versión 15.6 y versiones anterior, la directiva de protección requiere que se ejecuten todas las reglas de análisis de código. Puede agregar directivas de preprocesador para deshabilitar reglas específicas para los proyectos de código individuales en un proyecto de DevOps de Azure. En la versión 15.7 y versiones posteriores, puede usar **/ analyze: ruleset** para especificar qué reglas se deben ejecutar. Para obtener más información, consulte [utilizando conjuntos de reglas para especificar las reglas de C++ para ejecutar](using-rule-sets-to-specify-the-cpp-rules-to-run.md).
+- En el casoC++ de C/Code, en la versión 15,6 y anteriores de Visual Studio 2017, la Directiva de protección requiere que se ejecuten todas las reglas de análisis de código. Puede Agregar directivas de preprocesador para deshabilitar las reglas específicas para los proyectos de código individuales en el proyecto DevOps de Azure. En 15,7 y versiones posteriores, puede usar **/Analyze: ruleset** para especificar las reglas que se van a ejecutar. Para obtener más información, vea [usar conjuntos de reglas para C++ especificar las reglas que se van a ejecutar](using-rule-sets-to-specify-the-cpp-rules-to-run.md).
 
-Después de especificar una directiva de protección para el código administrado, los miembros del equipo pueden sincronizar su configuración de análisis de código para proyectos de código para la configuración de directiva de Azure DevOps project.
+Después de especificar una directiva de inserción en el repositorio para el código administrado, los miembros del equipo pueden sincronizar la configuración de análisis de código de los proyectos de código con la configuración de la Directiva del proyecto DevOps de Azure.
 
-## <a name="to-open-the-check-in-policy-editor"></a>Para abrir el editor de directivas de protección
+## <a name="to-open-the-check-in-policy-editor"></a>Para abrir el editor de directivas de inserción en el repositorio
 
-1. En Team Explorer, haga clic en el nombre del proyecto, apunte a **configuración del proyecto**y, a continuación, haga clic en **Control de código fuente**.
+1. En Team Explorer, haga clic con el botón secundario en el nombre del proyecto, seleccione **configuración del proyecto**y, a continuación, haga clic en **control de código fuente**.
 
-1. En el **Control de código fuente** cuadro de diálogo, seleccione el **directiva de protección** ficha.
+1. En el cuadro de diálogo **control de código fuente** , seleccione la pestaña **Directiva de inserción en el repositorio** .
 
 1. Realice una de las siguientes acciones:
 
-    - Haga clic en **agregar** para crear una nueva directiva de protección.
+    - Haga clic en **Agregar** para crear una nueva Directiva de inserción en el repositorio.
 
-    - Haga doble clic en las existentes **análisis de código** de elemento en el **tipo de directiva** lista para cambiar la directiva.
+    - Haga doble clic en el elemento de **análisis de código** existente en la lista **tipo de directiva** para cambiar la Directiva.
 
-## <a name="to-set-policy-options"></a>Para establecer las opciones de directiva
+## <a name="to-set-policy-options"></a>Para establecer las opciones de Directiva
 
 Active o desactive las siguientes opciones:
 
 |Opción|Descripción|
 |------------|-----------------|
-|**Exigir la protección para que solo contenga los archivos que forman parte de la solución actual.**|Puede ejecutar análisis de código solo en los archivos especificados en los archivos de configuración de solución y proyecto. Esta directiva garantiza que se analiza todo el código que forma parte de una solución.|
-|**Aplicar análisis de código de C/C ++ (/analyze)**|Requiere que todos los proyectos de C o C++ se compilan con la / analyze para ejecutar el análisis de código antes de que se pueden comprobar la opción del compilador.|
-|**Aplicar análisis de código para código administrado**|Requiere que todos los proyectos administrados, ejecutan análisis de código y compilación antes de que puedan protegerse.|
+|**Forzar la inserción en el repositorio solo contiene archivos que forman parte de la solución actual.**|El análisis de código solo se puede ejecutar en los archivos especificados en los archivos de configuración de la solución y del proyecto. Esta Directiva garantiza que se analice todo el código que forma parte de una solución.|
+|**Exigir análisisC++ de código C/(/Analyze)**|Requiere que todos los proyectos C++ de C o se compilen con la opción del compilador/Analyze para ejecutar el análisis de código antes de que se puedan proteger.|
+|**Aplicar el análisis de código para código administrado**|Requiere que todos los proyectos administrados ejecuten el análisis de código y compilar antes de que se puedan proteger.|
 
 ## <a name="to-specify-a-managed-rule-set"></a>Para especificar un conjunto de reglas administrado
 
-Desde el **ejecutar este conjunto de reglas** enumerar, use uno de los métodos siguientes:
+En la lista **ejecutar este conjunto de reglas** , use uno de los métodos siguientes:
 
 - Seleccione un conjunto de reglas estándar de Microsoft.
 
-- Seleccione una regla personalizada si hace clic en  **\<Seleccionar conjunto de reglas de Control de código fuente... >** . A continuación, escriba la ruta de acceso de control de versiones de la regla especificada en el Explorador de control de código fuente. La sintaxis de una ruta de acceso de control de versiones es:
+- Seleccione un conjunto de reglas personalizado haciendo clic en **\<Select conjunto de reglas del control de código fuente... >** . A continuación, escriba la ruta de acceso de control de versiones del conjunto de reglas en el explorador de control de código fuente. La sintaxis de una ruta de acceso de control de versiones es:
 
    **$/** `TeamProjectName` **/** `VersionControlPath`
 
-Para obtener más información sobre cómo crear e implementar una regla de directiva de protección personalizadas conjunto, consulte [personalizado para implementar directivas de protección para código administrado](../code-quality/implementing-custom-code-analysis-check-in-policies-for-managed-code.md).
+Para obtener más información sobre cómo crear e implementar un conjunto de reglas de directivas de protección personalizadas, vea [implementar directivas de protección personalizadas para código administrado](../code-quality/implementing-custom-code-analysis-check-in-policies-for-managed-code.md).
 
 ## <a name="see-also"></a>Vea también
 

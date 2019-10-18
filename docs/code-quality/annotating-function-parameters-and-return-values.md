@@ -1,6 +1,6 @@
 ---
 title: Anotar parámetros de función y valores devueltos
-ms.date: 07/11/2019
+ms.date: 10/15/2019
 ms.topic: conceptual
 f1_keywords:
 - _Outptr_opt_result_bytebuffer_to_
@@ -128,12 +128,12 @@ ms.author: mblome
 manager: markl
 ms.workload:
 - multiple
-ms.openlocfilehash: 1001b37509432a7ae95a565d90d972d2043fdeab
-ms.sourcegitcommit: 535ef05b1e553f0fc66082cd2e0998817eb2a56a
+ms.openlocfilehash: ca1e66defbce50a9119e817155bcc2a98d01af9d
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "72016010"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72442413"
 ---
 # <a name="annotating-function-parameters-and-return-values"></a>Anotar parámetros de función y valores devueltos
 En este artículo se describen los usos habituales de las anotaciones para parámetros de funciones simples, escalares y punteros a estructuras y clases, y la mayoría de los tipos de búferes.  En este artículo también se muestran patrones de uso comunes para las anotaciones. Para obtener más anotaciones relacionadas con las funciones, consulte [anotar el comportamiento](../code-quality/annotating-function-behavior.md)de la función.
@@ -169,43 +169,43 @@ En el caso de las anotaciones de la tabla siguiente, cuando se anota un parámet
 
      Puntero a una matriz, que es leída por la función.  La matriz tiene un tamaño `s` elementos, todos ellos deben ser válidos.
 
-     La variante `_bytes_` proporciona el tamaño en bytes en lugar de los elementos. Úselo solo cuando el tamaño no se puede expresar como elementos.  Por ejemplo, las cadenas `char` usarían la variante `_bytes_` solo si se tratara de una función similar que usa `wchar_t`.
+     La variante `_bytes_` proporciona el tamaño en bytes en lugar de los elementos. Úselo solo cuando el tamaño no se puede expresar como elementos.  Por ejemplo, `char` cadenas usarían el `_bytes_` Variant solo si se tratara de una función similar que use `wchar_t`.
 
 - `_In_reads_z_(s)`
 
-     Puntero a una matriz terminada en NULL y tiene un tamaño conocido. Los elementos hasta el terminador null (o `s` si no hay ningún terminador nulo) deben ser válidos en el estado anterior.  Si el tamaño se conoce en bytes, escale `s` por el tamaño del elemento.
+     Puntero a una matriz terminada en NULL y tiene un tamaño conocido. Los elementos hasta el terminador null (o `s` si no hay ningún terminador nulo) deben ser válidos en el estado anterior.  Si el tamaño se conoce en bytes, la escala `s` por el tamaño del elemento.
 
 - `_In_reads_or_z_(s)`
 
-     Puntero a una matriz terminada en null o tiene un tamaño conocido, o ambos. Los elementos hasta el terminador null (o `s` si no hay ningún terminador nulo) deben ser válidos en el estado anterior.  Si el tamaño se conoce en bytes, escale `s` por el tamaño del elemento.  (Se usa para la familia `strn`).
+     Puntero a una matriz terminada en null o tiene un tamaño conocido, o ambos. Los elementos hasta el terminador null (o `s` si no hay ningún terminador nulo) deben ser válidos en el estado anterior.  Si el tamaño se conoce en bytes, la escala `s` por el tamaño del elemento.  (Se usa para la familia de `strn`).
 
 - `_Out_writes_(s)`
 
      `_Out_writes_bytes_(s)`
 
-     Puntero a una matriz de elementos `s` (resp. bytes) que escribirá la función.  Los elementos de la matriz no tienen que ser válidos en el estado anterior y el número de elementos que son válidos en post-State no está especificado.  Si hay anotaciones en el tipo de parámetro, se aplican en el estado posterior. Por ejemplo, considere el fragmento de código siguiente:
+     Puntero a una matriz de `s` elementos (resp. bytes) que escribirá la función.  Los elementos de la matriz no tienen que ser válidos en el estado anterior y el número de elementos que son válidos en post-State no está especificado.  Si hay anotaciones en el tipo de parámetro, se aplican en el estado posterior. Por ejemplo, considere el fragmento de código siguiente:
 
      `typedef _Null_terminated_ wchar_t *PWSTR; void MyStringCopy(_Out_writes_ (size) PWSTR p1,    _In_ size_t size,    _In_ PWSTR p2);`
 
-     En este ejemplo, el autor de la llamada proporciona un búfer de elementos `size` para `p1`.  `MyStringCopy` hace que algunos de esos elementos sean válidos. Lo que es más importante, la anotación `_Null_terminated_` en `PWSTR` significa que `p1` termina en null en el estado posterior.  De esta manera, el número de elementos válidos sigue siendo bien definido, pero no se requiere un recuento específico de elementos.
+     En este ejemplo, el autor de la llamada proporciona un búfer de `size` elementos para `p1`.  `MyStringCopy` hace que algunos de esos elementos sean válidos. Lo que es más importante, la anotación `_Null_terminated_` en `PWSTR` significa que `p1` termina en null en el estado post.  De esta manera, el número de elementos válidos sigue siendo bien definido, pero no se requiere un recuento específico de elementos.
 
-     La variante `_bytes_` proporciona el tamaño en bytes en lugar de los elementos. Úselo solo cuando el tamaño no se puede expresar como elementos.  Por ejemplo, las cadenas `char` usarían la variante `_bytes_` solo si se tratara de una función similar que usa `wchar_t`.
+     La variante `_bytes_` proporciona el tamaño en bytes en lugar de los elementos. Úselo solo cuando el tamaño no se puede expresar como elementos.  Por ejemplo, `char` cadenas usarían el `_bytes_` Variant solo si se tratara de una función similar que use `wchar_t`.
 
 - `_Out_writes_z_(s)`
 
-     Puntero a una matriz de elementos `s`.  Los elementos no tienen que ser válidos en el estado anterior.  En el estado posterior, los elementos hasta el terminador nulo (que debe estar presente) deben ser válidos.  Si el tamaño se conoce en bytes, escale `s` por el tamaño del elemento.
+     Puntero a una matriz de elementos `s`.  Los elementos no tienen que ser válidos en el estado anterior.  En el estado posterior, los elementos hasta el terminador nulo (que debe estar presente) deben ser válidos.  Si el tamaño se conoce en bytes, la escala `s` por el tamaño del elemento.
 
 - `_Inout_updates_(s)`
 
      `_Inout_updates_bytes_(s)`
 
-     Puntero a una matriz, que se lee y se escribe en la función.  Tiene el tamaño `s` elementos y válido en el estado anterior y posterior.
+     Puntero a una matriz, que se lee y se escribe en la función.  Es de tamaño `s` elementos y válido en estado anterior y posterior.
 
-     La variante `_bytes_` proporciona el tamaño en bytes en lugar de los elementos. Úselo solo cuando el tamaño no se puede expresar como elementos.  Por ejemplo, las cadenas `char` usarían la variante `_bytes_` solo si se tratara de una función similar que usa `wchar_t`.
+     La variante `_bytes_` proporciona el tamaño en bytes en lugar de los elementos. Úselo solo cuando el tamaño no se puede expresar como elementos.  Por ejemplo, `char` cadenas usarían el `_bytes_` Variant solo si se tratara de una función similar que use `wchar_t`.
 
 - `_Inout_updates_z_(s)`
 
-     Puntero a una matriz terminada en NULL y tiene un tamaño conocido. Los elementos hasta el terminador nulo (que debe estar presente) deben ser válidos en el estado anterior y posterior.  Se supone que el valor de post-State es diferente del valor en el estado anterior; Esto incluye la ubicación del terminador null. Si el tamaño se conoce en bytes, escale `s` por el tamaño del elemento.
+     Puntero a una matriz terminada en NULL y tiene un tamaño conocido. Los elementos hasta el terminador nulo (que debe estar presente) deben ser válidos en el estado anterior y posterior.  Se supone que el valor de post-State es diferente del valor en el estado anterior; Esto incluye la ubicación del terminador null. Si el tamaño se conoce en bytes, la escala `s` por el tamaño del elemento.
 
 - `_Out_writes_to_(s,c)`
 
@@ -215,7 +215,7 @@ En el caso de las anotaciones de la tabla siguiente, cuando se anota un parámet
 
      `_Out_writes_bytes_all_(s)`
 
-     Puntero a una matriz de elementos `s`.  Los elementos no tienen que ser válidos en el estado anterior.  En post-State, los elementos hasta el @no__t elemento -0-TH deben ser válidos.  Si el tamaño se conoce en bytes, escale `s` y `c` por el tamaño del elemento o use la variante `_bytes_`, que se define como:
+     Puntero a una matriz de elementos `s`.  Los elementos no tienen que ser válidos en el estado anterior.  En post-State, los elementos hasta el elemento `c`-TH deben ser válidos.  Si el tamaño se conoce en bytes, escale `s` y `c` por el tamaño del elemento o use la variante `_bytes_`, que se define como:
 
      `_Out_writes_to_(_Old_(s), _Old_(s))    _Out_writes_bytes_to_(_Old_(s), _Old_(s))`
 
@@ -227,65 +227,37 @@ En el caso de las anotaciones de la tabla siguiente, cuando se anota un parámet
 
      `_Inout_updates_bytes_to_(s,c)`
 
-     Puntero a una matriz, que es leída y escrita por la función.  Tiene el tamaño `s` elementos, todos ellos deben ser válidos en el estado anterior y los elementos `c` deben ser válidos en post-State.
+     Puntero a una matriz, que es leída y escrita por la función.  Es de tamaño `s` elementos, todos ellos deben ser válidos en el estado anterior y los elementos `c` deben ser válidos en post-State.
 
-     La variante `_bytes_` proporciona el tamaño en bytes en lugar de los elementos. Úselo solo cuando el tamaño no se puede expresar como elementos.  Por ejemplo, las cadenas `char` usarían la variante `_bytes_` solo si se tratara de una función similar que usa `wchar_t`.
-
-- `_Inout_updates_z_(s)`
-
-     Puntero a una matriz terminada en NULL y tiene un tamaño conocido. Los elementos hasta el terminador nulo (que debe estar presente) deben ser válidos en el estado anterior y posterior.  Se supone que el valor de post-State es diferente del valor en el estado anterior; Esto incluye la ubicación del terminador null. Si el tamaño se conoce en bytes, escale `s` por el tamaño del elemento.
-
-- `_Out_writes_to_(s,c)`
-
-     `_Out_writes_bytes_to_(s,c)`
-
-     `_Out_writes_all_(s)`
-
-     `_Out_writes_bytes_all_(s)`
-
-     Puntero a una matriz de elementos `s`.  Los elementos no tienen que ser válidos en el estado anterior.  En post-State, los elementos hasta el @no__t elemento -0-TH deben ser válidos.  Si el tamaño se conoce en bytes, escale `s` y `c` por el tamaño del elemento o use la variante `_bytes_`, que se define como:
-
-     `_Out_writes_to_(_Old_(s), _Old_(s))    _Out_writes_bytes_to_(_Old_(s), _Old_(s))`
-
-     En otras palabras, cada elemento que existe en el búfer hasta `s` en el estado anterior es válido en el estado posterior.  Por ejemplo:
-
-     `void *memcpy(_Out_writes_bytes_all_(s) char *p1,    _In_reads_bytes_(s) char *p2,    _In_ int s); void * wordcpy(_Out_writes_all_(s) DWORD *p1,     _In_reads_(s) DWORD *p2,    _In_ int s);`
-
-- `_Inout_updates_to_(s,c)`
-
-     `_Inout_updates_bytes_to_(s,c)`
-
-     Puntero a una matriz, que es leída y escrita por la función.  Tiene el tamaño `s` elementos, todos ellos deben ser válidos en el estado anterior y los elementos `c` deben ser válidos en post-State.
-
-     La variante `_bytes_` proporciona el tamaño en bytes en lugar de los elementos. Úselo solo cuando el tamaño no se puede expresar como elementos.  Por ejemplo, las cadenas `char` usarían la variante `_bytes_` solo si se tratara de una función similar que usa `wchar_t`.
+     La variante `_bytes_` proporciona el tamaño en bytes en lugar de los elementos. Úselo solo cuando el tamaño no se puede expresar como elementos.  Por ejemplo, `char` cadenas usarían el `_bytes_` Variant solo si se tratara de una función similar que use `wchar_t`.
 
 - `_Inout_updates_all_(s)`
 
      `_Inout_updates_bytes_all_(s)`
 
-     Puntero a una matriz, que se lee y se escribe mediante la función de los elementos size `s`. Definido como equivalente a:
+     Puntero a una matriz, que es leída y escrita por la función de size `s` elementos. Definido como equivalente a:
 
      `_Inout_updates_to_(_Old_(s), _Old_(s))    _Inout_updates_bytes_to_(_Old_(s), _Old_(s))`
 
      En otras palabras, cada elemento que existe en el búfer hasta `s` en el estado anterior es válido en el estado anterior y posterior.
 
-     La variante `_bytes_` proporciona el tamaño en bytes en lugar de los elementos. Úselo solo cuando el tamaño no se puede expresar como elementos.  Por ejemplo, las cadenas `char` usarían la variante `_bytes_` solo si se tratara de una función similar que usa `wchar_t`.
+     La variante `_bytes_` proporciona el tamaño en bytes en lugar de los elementos. Úselo solo cuando el tamaño no se puede expresar como elementos.  Por ejemplo, `char` cadenas usarían el `_bytes_` Variant solo si se tratara de una función similar que use `wchar_t`.
 
 - `_In_reads_to_ptr_(p)`
 
-     Un puntero a una matriz para la que la expresión `p` @ no__t-1 @ no__t-2 (es decir, `p` menos `_Curr_`) se define mediante el estándar de lenguaje adecuado.  Los elementos anteriores a `p` deben ser válidos en el estado anterior.
+     Un puntero a una matriz para la que la expresión `p`  -  `_Curr_` (es decir, `p` menos `_Curr_`) se define mediante el estándar de lenguaje adecuado.  Los elementos anteriores a `p` deben ser válidos en el estado anterior.
 
 - `_In_reads_to_ptr_z_(p)`
 
-     Un puntero a una matriz terminada en null para la que la expresión `p` @ no__t-1 @ no__t-2 (es decir, `p` menos `_Curr_`) se define mediante el estándar de lenguaje adecuado.  Los elementos anteriores a `p` deben ser válidos en el estado anterior.
+     Un puntero a una matriz terminada en null para la que la expresión `p`  -  `_Curr_` (es decir, `p` menos `_Curr_`) se define mediante el estándar de lenguaje adecuado.  Los elementos anteriores a `p` deben ser válidos en el estado anterior.
 
 - `_Out_writes_to_ptr_(p)`
 
-     Un puntero a una matriz para la que la expresión `p` @ no__t-1 @ no__t-2 (es decir, `p` menos `_Curr_`) se define mediante el estándar de lenguaje adecuado.  Los elementos anteriores a `p` no tienen que ser válidos en el estado anterior y deben ser válidos en post-State.
+     Un puntero a una matriz para la que la expresión `p`  -  `_Curr_` (es decir, `p` menos `_Curr_`) se define mediante el estándar de lenguaje adecuado.  Los elementos anteriores a `p` no tienen que ser válidos en el estado anterior y deben ser válidos en post-State.
 
 - `_Out_writes_to_ptr_z_(p)`
 
-     Un puntero a una matriz terminada en null para la que la expresión `p` @ no__t-1 @ no__t-2 (es decir, `p` menos `_Curr_`) se define mediante el estándar de lenguaje adecuado.  Los elementos anteriores a `p` no tienen que ser válidos en el estado anterior y deben ser válidos en post-State.
+     Un puntero a una matriz terminada en null para la que la expresión `p`  -  `_Curr_` (es decir, `p` menos `_Curr_`) se define mediante el estándar de lenguaje adecuado.  Los elementos anteriores a `p` no tienen que ser válidos en el estado anterior y deben ser válidos en post-State.
 
 ## <a name="optional-pointer-parameters"></a>Parámetros de puntero opcionales
 
@@ -331,7 +303,7 @@ Los parámetros de puntero de salida requieren una notación especial para elimi
 
    `_Ouptr_opt_result_maybenull_z_`
 
-   El puntero devuelto tiene la anotación `_Null_terminated_`.
+   El puntero devuelto tiene la `_Null_terminated_` anotación.
 
 - `_COM_Outptr_`
 
@@ -341,7 +313,7 @@ Los parámetros de puntero de salida requieren una notación especial para elimi
 
    `_COM_Outptr_opt_result_maybenull_`
 
-   El puntero devuelto tiene semántica de COM y, por consiguiente, lleva una condición post `_On_failure_` que el puntero devuelto es NULL.
+   El puntero devuelto tiene semántica de COM y, por consiguiente, lleva una `_On_failure_` condición posterior de que el puntero devuelto sea NULL.
 
 - `_Outptr_result_buffer_(s)`
 
@@ -361,7 +333,7 @@ Los parámetros de puntero de salida requieren una notación especial para elimi
 
    `_Outptr_opt_result_bytebuffer_to_(s,c)`
 
-   El puntero devuelto apunta a un búfer de tamaño `s` elementos o bytes, de los cuales el primer `c` es válido.
+   El puntero devuelto apunta a un búfer de tamaño `s` elementos o bytes, de los cuales los primeros `c` son válidos.
 
   Ciertas convenciones de interfaz suponen que los parámetros de salida se anulan en caso de error.  A excepción del código COM explícito, se prefieren los formularios de la tabla siguiente.  En el caso de código COM, use los formularios COM correspondientes que se enumeran en la sección anterior.
 
@@ -389,7 +361,7 @@ Los parámetros de puntero de salida requieren una notación especial para elimi
 
 ## <a name="output-reference-parameters"></a>Parámetros de referencia de salida
 
-Un uso común del parámetro de referencia es para los parámetros de salida.  En el caso de los parámetros de referencia de salida simples (por ejemplo, `int&`) `_Out_` proporciona la semántica correcta.  Sin embargo, cuando el valor de salida es un puntero (por ejemplo `int *&`), las anotaciones de puntero equivalentes como `_Outptr_ int **` no proporcionan la semántica correcta.  Para expresar de manera concisa la semántica de los parámetros de referencia de salida para los tipos de puntero, use estas anotaciones compuestas:
+Un uso común del parámetro de referencia es para los parámetros de salida.  En el caso de los parámetros de referencia de salida simples, por ejemplo, `int&`, `_Out_` proporciona la semántica correcta.  Sin embargo, cuando el valor de salida es un puntero (por ejemplo `int *&`), las anotaciones de puntero equivalentes como `_Outptr_ int **` no proporcionan la semántica correcta.  Para expresar de manera concisa la semántica de los parámetros de referencia de salida para los tipos de puntero, use estas anotaciones compuestas:
 
 **Anotaciones y descripciones**
 
@@ -411,19 +383,19 @@ Un uso común del parámetro de referencia es para los parámetros de salida.  E
 
 - `_Outref_result_buffer_to_(s, c)`
 
-     El resultado debe ser válido en post-State y no puede ser null. Apunta al búfer de elementos `s`, de los cuales el primer `c` es válido.
+     El resultado debe ser válido en post-State y no puede ser null. Apunta al búfer de `s` elementos, de los cuales los primeros `c` son válidos.
 
 - `_Outref_result_bytebuffer_to_(s, c)`
 
-     El resultado debe ser válido en post-State y no puede ser null. Apunta al búfer de `s` bytes de los que el primer `c` es válido.
+     El resultado debe ser válido en post-State y no puede ser null. Apunta al búfer de `s` bytes de los que son válidos los primeros `c`.
 
 - `_Outref_result_buffer_all_(s)`
 
-     El resultado debe ser válido en post-State y no puede ser null. Señala a un búfer válido de tamaño `s` elementos válidos.
+     El resultado debe ser válido en post-State y no puede ser null. Apunta a un búfer válido de tamaño `s` elementos válidos.
 
 - `_Outref_result_bytebuffer_all_(s)`
 
-     El resultado debe ser válido en post-State y no puede ser null. Apunta a un búfer válido de `s` bytes de elementos válidos.
+     El resultado debe ser válido en post-State y no puede ser null. Señala a un búfer válido de `s` bytes de elementos válidos.
 
 - `_Outref_result_buffer_maybenull_(s)`
 
@@ -435,23 +407,23 @@ Un uso común del parámetro de referencia es para los parámetros de salida.  E
 
 - `_Outref_result_buffer_to_maybenull_(s, c)`
 
-     El resultado debe ser válido en post-State, pero puede ser null en post-State. Apunta al búfer de elementos `s`, de los cuales el primer `c` es válido.
+     El resultado debe ser válido en post-State, pero puede ser null en post-State. Apunta al búfer de `s` elementos, de los cuales los primeros `c` son válidos.
 
 - `_Outref_result_bytebuffer_to_maybenull_(s,c)`
 
-     El resultado debe ser válido en post-State, pero puede ser null en post State. Apunta al búfer de `s` bytes de los que el primer `c` es válido.
+     El resultado debe ser válido en post-State, pero puede ser null en post State. Apunta al búfer de `s` bytes de los que son válidos los primeros `c`.
 
 - `_Outref_result_buffer_all_maybenull_(s)`
 
-     El resultado debe ser válido en post-State, pero puede ser null en post State. Señala a un búfer válido de tamaño `s` elementos válidos.
+     El resultado debe ser válido en post-State, pero puede ser null en post State. Apunta a un búfer válido de tamaño `s` elementos válidos.
 
 - `_Outref_result_bytebuffer_all_maybenull_(s)`
 
-     El resultado debe ser válido en post-State, pero puede ser null en post State. Apunta a un búfer válido de `s` bytes de elementos válidos.
+     El resultado debe ser válido en post-State, pero puede ser null en post State. Señala a un búfer válido de `s` bytes de elementos válidos.
 
 ## <a name="return-values"></a>Valores devueltos
 
-El valor devuelto de una función es similar a un parámetro `_Out_` pero está en un nivel diferente de desreferenciado, y no tiene que tener en cuenta el concepto de puntero al resultado.  En el caso de las anotaciones siguientes, el valor devuelto es el objeto anotado: un escalar, un puntero a una estructura o un puntero a un búfer. Estas anotaciones tienen la misma semántica que la anotación `_Out_` correspondiente.
+El valor devuelto de una función es similar a un parámetro `_Out_` pero está en un nivel diferente de desreferenciado, y no tiene que tener en cuenta el concepto de puntero al resultado.  En el caso de las anotaciones siguientes, el valor devuelto es el objeto anotado: un escalar, un puntero a una estructura o un puntero a un búfer. Estas anotaciones tienen la misma semántica que la anotación de `_Out_` correspondiente.
 
 |||
 |-|-|
@@ -459,7 +431,7 @@ El valor devuelto de una función es similar a un parámetro `_Out_` pero está 
 
 ## <a name="format-string-parameters"></a>Parámetros de cadena de formato
 
-- `_Printf_format_string_` indica que el parámetro es una cadena de formato para su uso en una expresión `printf`.
+- `_Printf_format_string_` indica que el parámetro es una cadena de formato para su uso en una expresión de `printf`.
 
      **Ejemplo**
 
@@ -474,7 +446,7 @@ El valor devuelto de una función es similar a un parámetro `_Out_` pero está 
     }
     ```
 
-- `_Scanf_format_string_` indica que el parámetro es una cadena de formato para su uso en una expresión `scanf`.
+- `_Scanf_format_string_` indica que el parámetro es una cadena de formato para su uso en una expresión de `scanf`.
 
      **Ejemplo**
 
@@ -489,7 +461,7 @@ El valor devuelto de una función es similar a un parámetro `_Out_` pero está 
     }
     ```
 
-- `_Scanf_s_format_string_` indica que el parámetro es una cadena de formato para su uso en una expresión `scanf_s`.
+- `_Scanf_s_format_string_` indica que el parámetro es una cadena de formato para su uso en una expresión de `scanf_s`.
 
      **Ejemplo**
 
@@ -522,16 +494,16 @@ El valor devuelto de una función es similar a un parámetro `_Out_` pero está 
 
      `_Field_range_(low, hi)`
 
-     El parámetro, el campo o el resultado está en el intervalo (inclusivo) de `low` a `hi`.  Equivalente a `_Satisfies_(_Curr_ >= low && _Curr_ <= hi)` que se aplica al objeto anotado junto con las condiciones de estado anterior o posterior.
+     El parámetro, el campo o el resultado está en el intervalo (inclusivo) de `low` a `hi`.  Equivalente a `_Satisfies_(_Curr_ >= low && _Curr_ <= hi)` que se aplica al objeto anotado junto con las condiciones apropiadas de estado previo o posterior.
 
     > [!IMPORTANT]
-    > Aunque los nombres contengan "in" y "out", la semántica de `_In_` y `_Out_` **no** se aplican a estas anotaciones.
+    > Aunque los nombres contienen "in" y "out", la semántica de `_In_` y `_Out_` **no** se aplican a estas anotaciones.
 
 - `_Pre_equal_to_(expr)`
 
      `_Post_equal_to_(expr)`
 
-     El valor anotado es exactamente `expr`.  Equivalente a `_Satisfies_(_Curr_ == expr)` que se aplica al objeto anotado junto con las condiciones de estado anterior o posterior.
+     El valor anotado es exactamente `expr`.  Equivalente a `_Satisfies_(_Curr_ == expr)` que se aplica al objeto anotado junto con las condiciones apropiadas de estado previo o posterior.
 
 - `_Struct_size_bytes_(size)`
 
@@ -539,7 +511,7 @@ El valor devuelto de una función es similar a un parámetro `_Out_` pero está 
 
      `typedef _Struct_size_bytes_(nSize) struct MyStruct {    size_t nSize;    ... };`
 
-     A continuación, el tamaño de búfer en bytes de un parámetro `pM` de tipo `MyStruct *` se considera:
+     El tamaño de búfer en bytes de un parámetro `pM` de tipo `MyStruct *` se toma entonces como:
 
      `min(pM->nSize, sizeof(MyStruct))`
 

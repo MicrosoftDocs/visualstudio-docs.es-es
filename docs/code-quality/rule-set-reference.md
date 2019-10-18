@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0222dab568ce421c3bd87474b956c82aab4d2683
-ms.sourcegitcommit: b83fefa8177c5554cbe2c59c4d102cbc534f7cc6
+ms.openlocfilehash: da0d70af989d759df94eb2d22606ad90373936ad
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2019
-ms.locfileid: "69585242"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72448832"
 ---
 # <a name="code-analysis-rule-set-reference"></a>Referencia del conjunto de reglas Análisis de código
 
@@ -23,9 +23,9 @@ Al configurar el análisis heredado para proyectos de código administrado en Vi
 > [!NOTE]
 > Los conjuntos de reglas de esta sección pertenecen al análisis heredado. Para obtener información sobre los conjuntos de reglas disponibles para los paquetes del analizador de código, vea [usar conjuntos de reglas con analizadores de código](analyzer-rule-sets.md).
 
-Puede usar uno de estos conjuntos de reglas integrados, o bien puede [personalizar un conjunto de reglas](../code-quality/how-to-create-a-custom-rule-set.md) para satisfacer sus requisitos de proyecto. Si incluye varios conjuntos de reglas que contienen la misma regla en un conjunto de reglas personalizado, esa regla solo aparece una vez en el conjunto de reglas personalizado.
+Puede usar uno de estos conjuntos de reglas integrados o puede [personalizar un conjunto de reglas](../code-quality/how-to-create-a-custom-rule-set.md) para ajustarse a los requisitos del proyecto. Si incluye varios conjuntos de reglas que contienen la misma regla en un conjunto de reglas personalizado, esa regla solo aparece una vez en el conjunto de reglas personalizado.
 
-Los temas de esta sección describen la regla integrada conjuntos y las reglas (o advertencias) que contienen.
+En los temas de esta sección se describen los conjuntos de reglas integrados y las reglas (o advertencias) que contienen.
 
 | Conjunto de reglas | Reglas incluidas |
 | - | - |
