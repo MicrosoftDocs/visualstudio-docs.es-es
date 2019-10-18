@@ -32,12 +32,12 @@ ms.author: mblome
 manager: markl
 ms.workload:
 - multiple
-ms.openlocfilehash: 976a66901ae60bd6edc053d5acbb516aa87c1a7c
-ms.sourcegitcommit: 535ef05b1e553f0fc66082cd2e0998817eb2a56a
+ms.openlocfilehash: 2460ca1c76eb43bdff89c87c880f405cdce12b48
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "72015990"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72446317"
 ---
 # <a name="annotating-locking-behavior"></a>Anotar comportamiento de bloqueo
 Para evitar errores de simultaneidad en el programa multiproceso, siga siempre una disciplina de bloqueo adecuada y use anotaciones SAL.
@@ -68,17 +68,17 @@ En la tabla siguiente se enumeran las anotaciones de bloqueo.
 |----------------|-----------------|
 |`_Acquires_exclusive_lock_(expr)`|Anota una función e indica que en post State la función incrementa en uno el recuento de bloqueos exclusivos del objeto de bloqueo denominado `expr`.|
 |`_Acquires_lock_(expr)`|Anota una función e indica que en post State la función incrementa en uno el recuento de bloqueos del objeto de bloqueo denominado `expr`.|
-|`_Acquires_nonreentrant_lock_(expr)`|Se adquiere el bloqueo denominado `expr`.  Se muestra un error si el bloqueo ya se ha mantenido.|
+|`_Acquires_nonreentrant_lock_(expr)`|Se adquiere el bloqueo llamado por `expr`.  Se muestra un error si el bloqueo ya se ha mantenido.|
 |`_Acquires_shared_lock_(expr)`|Anota una función e indica que en post State la función incrementa en uno el recuento de bloqueos compartido del objeto de bloqueo denominado `expr`.|
 |`_Create_lock_level_(name)`|Una instrucción que declara el símbolo `name` para que sea un nivel de bloqueo, de modo que se pueda utilizar en las anotaciones `_Has_Lock_level_` y `_Lock_level_order_`.|
-|`_Has_lock_kind_(kind)`|Anota cualquier objeto para refinar la información de tipo de un objeto de recurso. A veces se utiliza un tipo común para diferentes tipos de recursos y el tipo sobrecargado no es suficiente para distinguir los requisitos semánticos entre varios recursos. Esta es una lista de parámetros predefinidos `kind`:<br /><br /> `_Lock_kind_mutex_`<br /> IDENTIFICADOR de tipo de bloqueo para las exclusiones mutuas.<br /><br /> `_Lock_kind_event_`<br /> IDENTIFICADOR de tipo de bloqueo de los eventos.<br /><br /> `_Lock_kind_semaphore_`<br /> IDENTIFICADOR de tipo de bloqueo para semáforos.<br /><br /> `_Lock_kind_spin_lock_`<br /> IDENTIFICADOR de tipo de bloqueo para bloqueos de giro.<br /><br /> `_Lock_kind_critical_section_`<br /> IDENTIFICADOR de tipo de bloqueo para las secciones críticas.|
-|`_Has_lock_level_(name)`|Anota un objeto de bloqueo y le asigna el nivel de bloqueo `name`.|
+|`_Has_lock_kind_(kind)`|Anota cualquier objeto para refinar la información de tipo de un objeto de recurso. A veces se utiliza un tipo común para diferentes tipos de recursos y el tipo sobrecargado no es suficiente para distinguir los requisitos semánticos entre varios recursos. Esta es una lista de parámetros de `kind` predefinidos:<br /><br /> `_Lock_kind_mutex_`<br /> IDENTIFICADOR de tipo de bloqueo para las exclusiones mutuas.<br /><br /> `_Lock_kind_event_`<br /> IDENTIFICADOR de tipo de bloqueo de los eventos.<br /><br /> `_Lock_kind_semaphore_`<br /> IDENTIFICADOR de tipo de bloqueo para semáforos.<br /><br /> `_Lock_kind_spin_lock_`<br /> IDENTIFICADOR de tipo de bloqueo para bloqueos de giro.<br /><br /> `_Lock_kind_critical_section_`<br /> IDENTIFICADOR de tipo de bloqueo para las secciones críticas.|
+|`_Has_lock_level_(name)`|Anota un objeto de bloqueo y le da el nivel de bloqueo de `name`.|
 |`_Lock_level_order_(name1, name2)`|Instrucción que proporciona la ordenación de bloqueos entre `name1` y `name2`.|
 |`_Post_same_lock_(expr1, expr2)`|Anota una función e indica que en el estado post los dos bloqueos, `expr1` y `expr2`, se tratan como si fueran el mismo objeto de bloqueo.|
 |`_Releases_exclusive_lock_(expr)`|Anota una función e indica que en post State la función disminuye en uno el recuento de bloqueos exclusivos del objeto de bloqueo denominado `expr`.|
 |`_Releases_lock_(expr)`|Anota una función e indica que en post State la función disminuye en uno el recuento de bloqueos del objeto de bloqueo denominado `expr`.|
 |`_Releases_nonreentrant_lock_(expr)`|Se libera el bloqueo denominado `expr`. Se genera un error si el bloqueo no se mantiene actualmente.|
-|`_Releases_shared_lock_(expr)`|Anota una función e indica que en post State la función disminuye en uno el número de bloqueos compartidos del objeto de bloqueo denominado `expr`.|
+|`_Releases_shared_lock_(expr)`|Anota una función e indica que en post State la función disminuye en uno el recuento de bloqueos compartido del objeto de bloqueo denominado `expr`.|
 |`_Requires_lock_held_(expr)`|Anota una función e indica que, en el estado anterior, el recuento de bloqueos del objeto denominado por `expr` es al menos uno.|
 |`_Requires_lock_not_held_(expr)`|Anota una función e indica que, en el estado anterior, el recuento de bloqueos del objeto denominado `expr` es cero.|
 |`_Requires_no_locks_held_`|Anota una función e indica que los recuentos de bloqueos de todos los bloqueos que conoce el comprobador son cero.|
@@ -100,22 +100,22 @@ En la tabla siguiente se enumeran las anotaciones para el acceso a datos compart
 
 |Anotación|Descripción|
 |----------------|-----------------|
-|`_Guarded_by_(expr)`|Anota una variable e indica que, cada vez que se tiene acceso a la variable, el recuento de bloqueos del objeto de bloqueo denominado `expr` es al menos uno.|
+|`_Guarded_by_(expr)`|Anota una variable e indica que cada vez que se tiene acceso a la variable, el recuento de bloqueos del objeto de bloqueo denominado por `expr` es al menos uno.|
 |`_Interlocked_`|Anota una variable y es equivalente a `_Guarded_by_(_Global_interlock_)`.|
 |`_Interlocked_operand_`|El parámetro de función anotado es el operando de destino de una de las diversas funciones entrelazadas.  Esos operandos deben tener propiedades adicionales específicas.|
 |`_Write_guarded_by_(expr)`|Anota una variable e indica que, cada vez que se modifica la variable, el recuento de bloqueos del objeto de bloqueo denominado por `expr` es al menos uno.|
 
 ## <a name="smart-lock-and-raii-annotations"></a>Anotaciones Smart Lock y RAII
-Normalmente, los bloqueos inteligentes encapsulan los bloqueos nativos y administran su duración. En la tabla siguiente se enumeran las anotaciones que se pueden usar con los bloqueos inteligentes y los patrones de codificación de RAII con compatibilidad con la semántica `move`.
+Normalmente, los bloqueos inteligentes encapsulan los bloqueos nativos y administran su duración. En la tabla siguiente se enumeran las anotaciones que se pueden usar con los bloqueos inteligentes y los patrones de codificación de RAII con compatibilidad con la semántica de `move`.
 
 |Anotación|Descripción|
 |----------------|-----------------|
 |`_Analysis_assume_smart_lock_acquired_`|Indica al analizador que asuma que se ha adquirido un bloqueo inteligente. Esta anotación espera un tipo de bloqueo de referencia como su parámetro.|
 |`_Analysis_assume_smart_lock_released_`|Indica al analizador que asuma que se ha lanzado un bloqueo inteligente. Esta anotación espera un tipo de bloqueo de referencia como su parámetro.|
-|`_Moves_lock_(target, source)`|Describe la operación `move constructor` que transfiere el estado de bloqueo del objeto `source` al @no__t 2. El `target` se considera un objeto recién construido, por lo que cualquier Estado que tenía antes se pierde y se reemplaza por el estado `source`. El `source` también se restablece a un estado limpio sin recuentos de bloqueos ni como destino de alias, pero los alias que apuntan a él permanecen inalterados.|
-|`_Replaces_lock_(target, source)`|Describe la semántica `move assignment operator` en la que se libera el bloqueo de destino antes de transferir el estado del origen. Esto puede considerarse como una combinación de `_Moves_lock_(target, source)` precedida de un `_Releases_lock_(target)`.|
-|`_Swaps_locks_(left, right)`|Describe el comportamiento estándar de `swap`, que presupone que los objetos `left` y `right` intercambian su estado. El estado intercambiado incluye el recuento de bloqueos y el destino de alias, si está presente. Los alias que apuntan a los objetos `left` y `right` permanecen inalterados.|
-|`_Detaches_lock_(detached, lock)`|Describe un escenario en el que un tipo de contenedor de bloqueo permite la desasociación con su recurso contenido. Esto es similar a la forma en que `std::unique_ptr` funciona con su puntero interno: permite a los programadores extraer el puntero y dejar su contenedor de puntero inteligente en un estado limpio. @No__t-0 admite una lógica similar y se puede implementar en contenedores de bloqueo personalizados. El bloqueo separado conserva su estado (recuento de bloqueos y destino de alias, si existe), mientras que el contenedor se restablece para que contenga un recuento de bloqueos cero y ningún destino de alias, mientras se conservan sus propios alias. No hay ninguna operación en los recuentos de bloqueos (liberación y adquisición). Esta anotación se comporta exactamente como `_Moves_lock_`, salvo que el argumento desasociado debe ser `return` en lugar de `this`.|
+|`_Moves_lock_(target, source)`|Describe `move constructor` operación que transfiere el estado de bloqueo del objeto de `source` a la `target`. El `target` se considera un objeto recién construido, por lo que cualquier Estado que tenía antes se pierde y se reemplaza por el estado `source`. El `source` también se restablece a un estado limpio sin recuentos de bloqueos o destinos de alias, pero los alias que apuntan a él permanecen inalterados.|
+|`_Replaces_lock_(target, source)`|Describe la semántica `move assignment operator` en la que se libera el bloqueo de destino antes de transferir el estado del origen. Esto puede considerarse como una combinación de `_Moves_lock_(target, source)` precedida por un `_Releases_lock_(target)`.|
+|`_Swaps_locks_(left, right)`|Describe el comportamiento de `swap` estándar, que presupone que los objetos `left` y `right` intercambiar su estado. El estado intercambiado incluye el recuento de bloqueos y el destino de alias, si está presente. Los alias que apuntan a los objetos `left` y `right` permanecen inalterados.|
+|`_Detaches_lock_(detached, lock)`|Describe un escenario en el que un tipo de contenedor de bloqueo permite la desasociación con su recurso contenido. Esto es similar a cómo funciona `std::unique_ptr` con su puntero interno: permite a los programadores extraer el puntero y dejar su contenedor de puntero inteligente en un estado limpio. @No__t_0 admite una lógica similar y se puede implementar en contenedores de bloqueo personalizados. El bloqueo separado conserva su estado (recuento de bloqueos y destino de alias, si existe), mientras que el contenedor se restablece para que contenga un recuento de bloqueos cero y ningún destino de alias, mientras se conservan sus propios alias. No hay ninguna operación en los recuentos de bloqueos (liberación y adquisición). Esta anotación se comporta exactamente como `_Moves_lock_`, salvo que el argumento desasociado debe ser `return` en lugar de `this`.|
 
 ## <a name="see-also"></a>Vea también
 

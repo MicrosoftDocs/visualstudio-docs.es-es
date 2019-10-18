@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5195d42783efc6e9aeb0230b29e801acaeef094a
-ms.sourcegitcommit: b83fefa8177c5554cbe2c59c4d102cbc534f7cc6
+ms.openlocfilehash: bc18859e84262e9b2a40efde7ed9733fce701a6c
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2019
-ms.locfileid: "69585224"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72448818"
 ---
 # <a name="native-recommended-rules-rule-set"></a>Conjunto de reglas Reglas recomendadas nativas
 
@@ -20,7 +20,7 @@ Las reglas recomendadas nativas se centran en los problemas más graves y habitu
 
 Incluya este conjunto de reglas en cualquier conjunto de reglas personalizado que cree para los proyectos nativos.
 
-|Regla|DESCRIPCIÓN|
+|Regla|Descripción|
 |----------|-----------------|
 |[C6001](../code-quality/c6001.md)|Uso de la memoria sin inicializar|
 |[C6011](../code-quality/c6011.md)|Desreferenciación de un puntero null|
@@ -127,7 +127,7 @@ Incluya este conjunto de reglas en cualquier conjunto de reglas personalizado qu
 |[C6518](../code-quality/c6518.md)|Tamaño de escritura en búfer no modificable|
 |[C6522](../code-quality/c6522.md)|Tipo de cadena de tamaño no válido|
 |[C6525](../code-quality/c6525.md)|Cadena de tamaño no válida, ubicación inaccesible|
-|[C6527](../code-quality/c6527.md)|Anotación no válida: La propiedad ' NeedsRelease ' no se puede usar en valores de tipo void|
+|[C6527](../code-quality/c6527.md)|Anotación no válida: la propiedad 'NeedsRelease' no se puede usar en valores de tipo void|
 |[C6530](../code-quality/c6530.md)|Estilo de cadena de formato no reconocido|
 |[C6540](../code-quality/c6540.md)|El uso de anotaciones de atributo en esta función invalidará todas las anotaciones __declspec existentes|
 |[C6551](../code-quality/c6551.md)|Especificación de tamaño no válido: no se puede analizar la expresión|
@@ -154,7 +154,7 @@ Incluya este conjunto de reglas en cualquier conjunto de reglas personalizado qu
 |[C28020](../code-quality/c28020.md)|La expresión no es true en esta llamada|
 |[C28021](../code-quality/c28021.md)|El parámetro que se va a anotar debe ser un puntero|
 |[C28022](../code-quality/c28022.md)|Las clases de función de esta función no coinciden con las clases de función de la definición de tipo que se usa para definirla.|
-|[C28023](../code-quality/c28023.md)|La función que se va a asignar o pasar \_debe\_tener\_ una anotación de clase de función para al menos una de las clases.|
+|[C28023](../code-quality/c28023.md)|La función que se va a asignar o pasar debe tener una \_Function \_class \_ anotación para al menos una de las clases.|
 |[C28024](../code-quality/c28024.md)|El puntero de función al que se asigna se anota con la clase de función, que no está incluida en la lista de clases de función.|
 |[C28039](../code-quality/c28039.md)|El tipo de parámetro real debe coincidir exactamente con el tipo|
 |[C28112](../code-quality/c28112.md)|Siempre se debe tener acceso a una variable a la que se tiene acceso a través de una función de interbloqueo a través de una función de interbloqueo.|
@@ -172,14 +172,14 @@ Incluya este conjunto de reglas en cualquier conjunto de reglas personalizado qu
 |[C28196](../code-quality/c28196.md)|No se cumple el requisito. (La expresión no se evalúa como true).|
 |[C28202](../code-quality/c28202.md)|Referencia no válida a un miembro no estático|
 |[C28203](../code-quality/c28203.md)|Referencia ambigua a un miembro de la clase.|
-|[C28205](../code-quality/c28205.md)|\_Correcto\_ \_o \_en casode\_ error usado en un contexto no válido|
+|[C28205](../code-quality/c28205.md)|\_Success \_ o \_On \_failure \_ utiliza en un contexto no válido|
 |[C28206](../code-quality/c28206.md)|El operando izquierdo señala a un struct, use '->'|
 |[C28207](../code-quality/c28207.md)|El operando izquierdo es un struct, use '->'|
 |[C28209](../code-quality/c28209.md)|La declaración del símbolo tiene una declaración en conflicto|
 |[C28210](../code-quality/c28210.md)|Las anotaciones del contexto __on_failure no deben estar en un contexto previo explícito|
 |[C28211](../code-quality/c28211.md)|Se esperaba un nombre de contexto estático para SAL_context|
 |[C28212](../code-quality/c28212.md)|Se esperaba una expresión de puntero para la anotación|
-|[C28213](../code-quality/c28213.md)|La \_anotación\_usar\_anotacionesdecl\_ debe usarse para hacer referencia, sin modificación, a una declaración anterior.|
+|[C28213](../code-quality/c28213.md)|El \_Use \_decl \_annotations anotación de \_ se debe usar para hacer referencia, sin modificación, a una declaración anterior.|
 |[C28214](../code-quality/c28214.md)|Los nombres de los parámetros de atributo deben ser p1...p9|
 |[C28215](../code-quality/c28215.md)|typefix no se puede aplicar a un parámetro que ya tenga un typefix|
 |[C28216](../code-quality/c28216.md)|La anotación checkReturn solamente se aplica a las condiciones posteriores del parámetro de la función específica.|
@@ -222,7 +222,7 @@ Incluya este conjunto de reglas en cualquier conjunto de reglas personalizado qu
 |[C28267](../code-quality/c28267.md)|Se encontró un error de sintaxis de anotaciones en la función.|
 |[C28272](../code-quality/c28272.md)|La anotación del parámetro de la función, al examinar su incoherencia con la declaración de la función|
 |[C28273](../code-quality/c28273.md)|Para la función, las pistas son incoherentes con la declaración de la función|
-|[C28275](../code-quality/c28275.md)|El parámetro para \_el\_valor\_ de la macro es null|
+|[C28275](../code-quality/c28275.md)|El parámetro que se va a \_Macro \_value \_ es null|
 |[C28279](../code-quality/c28279.md)|Para el símbolo, se encontró un 'begin' sin un 'end' coincidente|
 |[C28280](../code-quality/c28280.md)|Para el símbolo, se encontró un 'end' sin un 'begin' coincidente|
 |[C28282](../code-quality/c28282.md)|Las cadenas de formato deben estar en las condiciones previas|
@@ -230,7 +230,7 @@ Incluya este conjunto de reglas en cualquier conjunto de reglas personalizado qu
 |[C28286](../code-quality/c28286.md)|Para la función, error de sintaxis cerca del final|
 |[C28287](../code-quality/c28287.md)|Para la función, error de sintaxis en la anotación \_At\_() (nombre de parámetro no reconocido)|
 |[C28288](../code-quality/c28288.md)|Para la función, error de sintaxis en la anotación \_At\_() (nombre de parámetro no válido)|
-|[C28289](../code-quality/c28289.md)|Para la función: Readto o grabable no tenía una especificación de límite como parámetro|
+|[C28289](../code-quality/c28289.md)|Para la función: ReadableTo o WritableTo no tenían una especificación de límite como parámetro|
 |[C28290](../code-quality/c28290.md)|la anotación de la función contiene más valores External que el número real de parámetros|
 |[C28291](../code-quality/c28291.md)|El valor null/notnull posterior en el nivel 0 de desreferenciación carece de sentido para la función.|
 |[C28300](../code-quality/c28300.md)|Operandos de expresión de tipos no compatibles para el operador|

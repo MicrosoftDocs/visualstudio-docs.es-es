@@ -563,6 +563,97 @@
               href: ide/class-designer/additional-information-about-errors.md
         - name: Mejorar el código
           href: ide/find-and-fix-code-errors.md
+        - name: Desarrollo para Windows Forms
+          items:
+            - name: Información general del Diseñador de Windows Forms
+              href: designers/windows-forms-designer-overview.md
+            - name: Introducción a Diseñador de Windows Forms
+              href: designers/walkthrough-windows-forms-designer.md
+            - name: Organizar controles >>
+              href: /dotnet/framework/winforms/controls/arranging-controls-on-windows-forms
+            - name: Crear un control enlazado a datos >>
+              href: /dotnet/framework/winforms/how-to-create-a-simple-bound-control-on-a-windows-form
+            - name: Crear controles personalizados >>
+              href: /dotnet/framework/winforms/controls/developing-windows-forms-controls-at-design-time
+            - name: Deshabilitar el reconocimiento de PPP en el Diseñador de Windows Forms
+              href: designers/disable-dpi-awareness.md
+            - name: Referencia
+              items:
+                - name: API System.Windows.Forms >>
+                  href: /dotnet/api/system.windows.forms
+            - name: Tutoriales
+              items:
+                - name: 'Tutorial 1: Creación de un visor de imágenes (C#)'
+                  items:
+                    - name: Información general
+                      displayName: Tutorial 1 Picture viewer
+                      href: ide/tutorial-1-create-a-picture-viewer.md
+                    - name: 'Paso 1: Crear un proyecto de aplicación de Windows Forms'
+                      href: ide/step-1-create-a-windows-forms-application-project.md
+                    - name: 'Paso 2: Ejecutar la aplicación'
+                      href: ide/step-2-run-your-program.md
+                    - name: 'Paso 3: Establecer las propiedades del formulario'
+                      href: ide/step-3-set-your-form-properties.md
+                    - name: 'Paso 4: Diseñar un formulario con un control TableLayoutPanel'
+                      href: ide/step-4-lay-out-your-form-with-a-tablelayoutpanel-control.md
+                    - name: 'Paso 5: Agregar controles al formulario'
+                      href: ide/step-5-add-controls-to-your-form.md
+                    - name: 'Paso 6: Asignar un nombre a los controles de botón'
+                      href: ide/step-6-name-your-button-controls.md
+                    - name: 'Paso 7: Agregar componentes de diálogo al formulario'
+                      href: ide/step-7-add-dialog-components-to-your-form.md
+                    - name: 'Paso 8: Escribir código para el controlador de eventos del botón Mostrar una imagen'
+                      href: ide/step-8-write-code-for-the-show-a-picture-button-event-handler.md
+                    - name: 'Paso 9: Revisar, comentar y probar el código'
+                      href: ide/step-9-review-comment-and-test-your-code.md
+                    - name: 'Paso 10: Escribir código para botones adicionales y una casilla'
+                      href: ide/step-10-write-code-for-additional-buttons-and-a-check-box.md
+                    - name: 'Paso 11: Ejecutar la aplicación y probar otras características'
+                      href: ide/step-11-run-your-program-and-try-other-features.md
+                - name: 'Tutorial 2: Creación de una prueba matemática cronometrada (C#)'
+                  items:
+                    - name: Información general
+                      displayName: Tutorial 2 Timed math quiz
+                      href: ide/tutorial-2-create-a-timed-math-quiz.md
+                    - name: 'Paso 1: Crear un proyecto y agregar etiquetas al formulario'
+                      href: ide/step-1-create-a-project-and-add-labels-to-your-form.md
+                    - name: 'Paso 2: Crear un problema de suma aleatoria'
+                      href: ide/step-2-create-a-random-addition-problem.md
+                    - name: 'Paso 3: Agregar un temporizador de cuenta atrás'
+                      href: ide/step-3-add-a-countdown-timer.md
+                    - name: 'Paso 4: Agregar el método CheckTheAnswer()'
+                      href: ide/step-4-add-the-checktheanswer-parens-method.md
+                    - name: 'Paso 5: Agregar controladores de eventos Enter para los controles NumericUpDown'
+                      href: ide/step-5-add-enter-event-handlers-for-the-numericupdown-controls.md
+                    - name: 'Paso 6: Agregar un problema de resta'
+                      href: ide/step-6-add-a-subtraction-problem.md
+                    - name: 'Paso 7: Agregar problemas de multiplicación y división'
+                      href: ide/step-7-add-multiplication-and-division-problems.md
+                    - name: 'Paso 8: Personalizar la prueba'
+                      href: ide/step-8-customize-the-quiz.md
+                - name: 'Tutorial 3: Creación de un juego de formar parejas (C#)'
+                  items:
+                    - name: Información general
+                      displayName: Tutorial 3 Matching game
+                      href: ide/tutorial-3-create-a-matching-game.md
+                    - name: 'Paso 1: Crear un proyecto y agregar una tabla a un formulario'
+                      href: ide/step-1-create-a-project-and-add-a-table-to-your-form.md
+                    - name: 'Paso 2: Agregar un objeto aleatorio y una lista de iconos'
+                      href: ide/step-2-add-a-random-object-and-a-list-of-icons.md
+                    - name: 'Paso 3: Asignar un icono aleatorio a cada etiqueta'
+                      href: ide/step-3-assign-a-random-icon-to-each-label.md
+                    - name: 'Paso 4: Agregar un controlador de eventos Click a cada etiqueta'
+                      href: ide/step-4-add-a-click-event-handler-to-each-label.md
+                    - name: 'Paso 5: Agregar referencias a etiquetas'
+                      href: ide/step-5-add-label-references.md
+                    - name: 'Paso 6: Agregar un temporizador'
+                      href: ide/step-6-add-a-timer.md
+                    - name: 'Paso 7: Mantener visibles los pares'
+                      href: ide/step-7-keep-pairs-visible.md
+                    - name: 'Paso 8: Agregar un método para comprobar si el jugador ganó'
+                      href: ide/step-8-add-a-method-to-verify-whether-the-player-won.md
+                    - name: 'Paso 9: Probar otras características'
+                      href: ide/step-9-try-other-features.md
         - name: Desarrollo móvil multiplataforma
           href: cross-platform/cross-platform-mobile-development-in-visual-studio.md
         - name: "F# en Visual\_Studio"
@@ -584,12 +675,11 @@
             - name: Diseñar aplicaciones internacionales
               displayName: Globalization localization world-ready
               href: ide/globalizing-and-localizing-applications.md
+    - name: Uso de herramientas de XAML > >
+      href: xaml-tools/index.yml
     - name: Acceso a los datos >>
       displayName: Data connections
       href: data-tools/accessing-data-in-visual-studio.md
-    - name: Diseñar interfaces de usuario >>
-      displayName: XAML designer
-      href: designers/designing-user-interfaces.md
     - name: Desarrollar aplicaciones con el Diseñador de flujo de trabajo >>
       href: workflow-designer/developing-applications-with-the-workflow-designer.md
     - name: Compilar y generar
@@ -663,7 +753,7 @@
       href: profiling/index.yml
     - name: Analizar la calidad del código >>
       displayName: Code analysis FxCop Analyzers
-      href: code-quality/index.md
+      href: code-quality/index.yml
     - name: Implementar >>
       href: deployment/index.yml
     - name: Ampliar Visual Studio >>
@@ -671,6 +761,90 @@
       href: extensibility/visual-studio-sdk.md
     - name: Analizar y modelar la arquitectura >>
       href: modeling/analyze-and-model-your-architecture.md
+    - name: Recursos 3D
+      items:
+        - name: Trabajar con recursos en 3D para juegos y aplicaciones
+          href: designers/working-with-3-d-assets-for-games-and-apps.md
+        - name: Procedimiento Usar recursos en 3D en un juego o una aplicación
+          href: designers/using-3-d-assets-in-your-game-or-app.md
+        - name: Texturas e imágenes
+          items:
+            - name: Trabajar con texturas e imágenes
+              href: designers/working-with-textures-and-images.md
+            - name: Editor de imágenes
+              href: designers/image-editor.md
+            - name: Ejemplos del Editor de imágenes
+              items:
+                - name: Crear una textura básica
+                  href: designers/how-to-create-a-basic-texture.md
+                - name: Crear y modificar niveles de MIP
+                  href: designers/how-to-create-and-modify-mip-levels.md
+        - name: Modelos 3D
+          items:
+            - name: Trabajar con modelos en 3D
+              href: designers/working-with-3-d-models.md
+            - name: Editor de modelos
+              href: designers/model-editor.md
+            - name: Ejemplos del Editor de modelos
+              items:
+                - name: Crear un modelo en 3D básico
+                  href: designers/how-to-create-a-basic-3-d-model.md
+                - name: Modificar el punto de pivote de un modelo en 3D
+                  href: designers/how-to-modify-the-pivot-point-of-a-3-d-model.md
+                - name: Modelar un terreno en 3D
+                  href: designers/how-to-model-3-d-terrain.md
+                - name: Aplicar un sombreador a un modelo en 3D
+                  href: designers/how-to-apply-a-shader-to-a-3-d-model.md
+        - name: Sombreadores
+          items:
+            - name: Trabajar con sombreadores
+              href: designers/working-with-shaders.md
+            - name: Diseñador de sombras
+              href: designers/shader-designer.md
+            - name: Nodos del Diseñador de sombras
+              items:
+                - name: Información general
+                  displayName: Shader designer nodes
+                  href: designers/shader-designer-nodes.md
+                - name: Nodos de constante
+                  href: designers/constant-nodes.md
+                - name: Nodos de parámetro
+                  href: designers/parameter-nodes.md
+                - name: Nodos de textura
+                  href: designers/texture-nodes.md
+                - name: Nodos matemáticos
+                  href: designers/math-nodes.md
+                - name: Nodos de utilidad
+                  href: designers/utility-nodes.md
+                - name: Nodos de filtro
+                  href: designers/filter-nodes.md
+            - name: Ejemplos del Diseñador de sombras
+              items:
+                - name: Crear un sombreador de color básico
+                  displayName: Shader designer example
+                  href: designers/how-to-create-a-basic-color-shader.md
+                - name: Crear un sombreador Lambert básico
+                  href: designers/how-to-create-a-basic-lambert-shader.md
+                - name: Crear un sombreador Phong básico
+                  href: designers/how-to-create-a-basic-phong-shader.md
+                - name: Crear un sombreador de textura básico
+                  href: designers/how-to-create-a-basic-texture-shader.md
+                - name: Crear un sombreador de textura de escala de grises
+                  href: designers/how-to-create-a-grayscale-texture-shader.md
+                - name: Crear un sombreador de degradado basado en geometría
+                  href: designers/how-to-create-a-geometry-based-gradient-shader.md
+                - name: 'Tutorial: Crear una bola de billar en 3D realista'
+                  href: designers/walkthrough-creating-a-realistic-3-d-billiard-ball.md
+                - name: Exportar un sombreador
+                  href: designers/how-to-export-a-shader.md
+        - name: Exportación de texturas
+          items:
+            - name: Exportar una textura que contiene mapas MIP
+              href: designers/how-to-export-a-texture-that-contains-mipmaps.md
+            - name: Exportar una textura que tiene valores alfa previamente multiplicados
+              href: designers/how-to-export-a-texture-that-has-premultiplied-alpha.md
+            - name: Exportación de una textura para usarla con aplicaciones de Direct2D o JavaScript
+              href: designers/how-to-export-a-texture-for-use-with-direct2d-or-javascipt-apps.md
     - name: Sugerencias y trucos
       items:
         - name: Características de productividad
@@ -1173,6 +1347,8 @@
           href: help-viewer/accessibility-features.md
         - name: Teclas de método abreviado
           href: help-viewer/shortcut-keys.md
+    - name: Biblioteca de imágenes de Visual Studio
+      href: designers/the-visual-studio-image-library.md
     - name: "Dotfuscator\_Community"
       items:
         - name: Información general

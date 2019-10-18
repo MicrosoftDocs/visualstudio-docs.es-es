@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 975b4440a922c1971f02937f6da007da6aa96864
-ms.sourcegitcommit: 1507baf3a336bbb6511d4c3ce73653674831501b
-ms.translationtype: MT
+ms.openlocfilehash: 5229084f34a8c2a674d327ad86f7f3d2bbb1aae5
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "72349655"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72449187"
 ---
 # <a name="design-warnings"></a>Advertencias de diseño
 
@@ -84,7 +84,7 @@ Las advertencias de diseño admiten el cumplimiento de las [directrices de dise�
 | [CA1057: Las sobrecargas URI de cadena llaman a sobrecargas System.Uri](../code-quality/ca1057-string-uri-overloads-call-system-uri-overloads.md) | Un tipo declara sobrecargas de método que solamente se distinguen por la sustitución de un parámetro de cadena por un parámetro System.Uri. La sobrecarga que toma el parámetro de cadena no llama a la sobrecarga que toma el parámetro URI. |
 | [CA1058: Los tipos no deben ampliar ciertos tipos base](../code-quality/ca1058-types-should-not-extend-certain-base-types.md) | Un tipo visible externamente extiende algunos tipos base. Utilice una de las alternativas. |
 | [CA1059: Los miembros no deben exponer algunos tipos concretos](../code-quality/ca1059-members-should-not-expose-certain-concrete-types.md) | Un tipo concreto es un tipo que tiene una implementación completa y, por consiguiente, se pueden crear instancias de él. Para permitir un uso extendido del miembro, reemplace el tipo concreto por la interfaz sugerida. |
-| [CA1060: Mueva P/Invokes a la clase NativeMethods](../code-quality/ca1060-move-p-invokes-to-nativemethods-class.md) | Los métodos de invocación de plataforma, como los marcados con los métodos <xref:System.Runtime.InteropServices.DllImportAttribute?displayProperty=fullName> o definidos mediante la palabra clave declare en [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)], tienen acceso al código no administrado. Estos métodos deben ser de la clase NativeMethods, UnsafeNativeMethods o SafeNativeMethods. |
+| [CA1060: Mueva P/Invokes a la clase NativeMethods](../code-quality/ca1060-move-p-invokes-to-nativemethods-class.md) | Los métodos de invocación de plataforma, como los marcados con los <xref:System.Runtime.InteropServices.DllImportAttribute?displayProperty=fullName> o métodos definidos mediante la palabra clave declare en [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)], tienen acceso al código no administrado. Estos métodos deben ser de la clase NativeMethods, UnsafeNativeMethods o SafeNativeMethods. |
 | [CA1061: No oculte métodos de clases base](../code-quality/ca1061-do-not-hide-base-class-methods.md) | Un método de un tipo base está oculto por un método del mismo nombre en un tipo derivado cuando la firma del parámetro del método derivado solo se diferencia por tipos derivados de manera más débil que los tipos correspondientes de la firma del parámetro del método base. |
 | [CA1062: Validar argumentos de métodos públicos](../code-quality/ca1062-validate-arguments-of-public-methods.md) | Todos los argumentos de referencia pasados a métodos visibles externamente se deben comprobar para ver si son null. |
 | [CA1063: Implemente IDisposable correctamente](../code-quality/ca1063-implement-idisposable-correctly.md) | Todos los tipos IDisposable deben implementar el modelo de Dispose correctamente. |

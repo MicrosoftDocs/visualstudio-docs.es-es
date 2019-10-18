@@ -1,5 +1,5 @@
 ---
-title: Procedimiento Establecer las propiedades de análisis de código de proyectos de C/C++
+title: 'Cómo: Establecer propiedades de análisis de código para proyectos de C/C++'
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -18,14 +18,14 @@ ms.author: mblome
 manager: markl
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 4c27300244998765d13d485d617c17c5032bad7b
-ms.sourcegitcommit: e95dd8cedcd180e0bce6a75c86cf861757918290
+ms.openlocfilehash: 27f3d68d28b8d1799c52fcf83c6a00dc5f81f48a
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/09/2019
-ms.locfileid: "72163046"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72448918"
 ---
-# <a name="how-to-set-code-analysis-properties-for-cc-projects"></a>Procedimiento Establecer las propiedades de análisis de código de proyectos de C/C++
+# <a name="how-to-set-code-analysis-properties-for-cc-projects"></a>Cómo: Establecer propiedades de análisis de código para proyectos de C/C++
 
 Puede configurar las reglas que utiliza la herramienta de análisis de código para analizar el código en cada configuración del proyecto. Además, puede dirigir el análisis de código para suprimir las advertencias del código generado y agregado al proyecto mediante una herramienta de terceros.
 
@@ -45,7 +45,7 @@ El análisis de código está diseñado para ayudarle a mejorar la calidad del c
 
 ## <a name="cmake-configuration"></a>Configuración de CMake
 
-En los proyectos de CMake, cambie el valor de las claves `enableMicrosoftCodeAnalysis` y `enableClangTidyCodeAnalysis` dentro de `CMakeSettings.json` para habilitar o deshabilitar el análisis de código. Consulte [uso de Clang en Visual Studio](../code-quality/clang-tidy.md) para obtener más información.
+En los proyectos de CMake, cambie el valor de las claves `enableMicrosoftCodeAnalysis` y `enableClangTidyCodeAnalysis` de `CMakeSettings.json` para habilitar o deshabilitar el análisis de código. Consulte [uso de Clang en Visual Studio](../code-quality/clang-tidy.md) para obtener más información.
 
 ## <a name="see-also"></a>Vea también
 

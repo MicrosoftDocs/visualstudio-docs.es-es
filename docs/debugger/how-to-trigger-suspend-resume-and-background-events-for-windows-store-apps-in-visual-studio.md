@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: 8f5f650860c520f5fbe62ff49bbbb6190e163af8
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: d15a176fb378159407589af0b720d8310de8e29c
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68925482"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72450403"
 ---
 # <a name="how-to-trigger-suspend-resume-and-background-events-while-debugging-uwp-apps-in-visual-studio"></a>Cómo desencadenar eventos de suspensión, reanudación y en segundo plano durante la depuración de aplicaciones para UWP en Visual Studio
 
@@ -73,17 +73,17 @@ Para obtener más información sobre la administración de la duración del proc
 
 2. Abre la página de propiedades de depuración del proyecto de inicio. En el Explorador de soluciones, seleccione el proyecto. En el menú **Depurar** , elige **Propiedades**.
 
-     En C++ proyectos, expanda **propiedades de configuración** y, a continuación, elija depuración.
+     En C++ proyectos, expanda **propiedades de configuración** y, a continuación, elija **depuración**.
 
 3. Realice una de las siguientes acciones:
 
     - Para proyectos de Visual C# y Visual Basic, elige **No iniciar, pero depurar mi código al empezar**.
 
-         ![Propiedad&#35;&#47;de aplicación de inicio] de depuración de C VB (../debugger/media/dbg_csvb_dontlaunchapp.png "DBG_CsVb_DontLaunchApp")
+         ![Propiedad&#35;&#47;de aplicación de inicio de depuración de C VB](../debugger/media/dbg_csvb_dontlaunchapp.png "DBG_CsVb_DontLaunchApp")
 
-    - En el C++ caso de los proyectos visuales, elija **no** en la lista **Iniciar aplicación** .
+    - En C++ el caso de los proyectos, elija **no** en la lista **Iniciar aplicación** .
 
-         ![Propiedad&#43;&#43;&#47;] de depuración de aplicación de inicio de C VB (../debugger/media/dbg_cppjs_dontlaunchapp.png "DBG_CppJs_DontLaunchApp")
+         ![Propiedad&#43;&#43;&#47;de depuración de aplicación de inicio de C VB](../debugger/media/dbg_cppjs_dontlaunchapp.png "DBG_CppJs_DontLaunchApp")
 
 4. Presiona **F5** para poner la aplicación en modo de depuración. Ten en cuenta que la lista **Proceso** de la barra de herramientas **Ubicación de depuración** muestra el nombre del paquete de la aplicación, para indicar que estás en modo de depuración.
 
@@ -94,7 +94,7 @@ Para obtener más información sobre la administración de la duración del proc
      ![Suspender, reanudar, finalizar y tareas en segundo plano](../debugger/media/dbg_suspendresumebackground.png "DBG_SuspendResumeBackground")
 
 ## <a name="BKMK_Trigger_Process_Lifetime_Management_events_and_background_tasks_from_an_installed_app"></a> Desencadenar eventos de la Administración de la duración de los procesos y tareas en segundo plano desde una aplicación instalada
- Use el cuadro de diálogo depurar **paquete de aplicaciones instalado** para cargar una aplicación que ya está instalada en el depurador. Por ejemplo, puede depurar una aplicación que se instaló desde Microsoft Store, o depurar una aplicación cuando tenga los archivos de origen de la aplicación, pero no un proyecto de Visual Studio para la aplicación. El cuadro de diálogo depurar **paquete de aplicaciones instalado** permite iniciar una aplicación en modo de depuración en el equipo de Visual Studio o en un dispositivo remoto, o establecer que la aplicación se ejecute en modo de depuración, pero no iniciarla. Para obtener más información, vea Depurar [un paquete de aplicaciones instalado](../debugger/debug-installed-app-package.md).
+ Use el cuadro de diálogo **depurar paquete de aplicaciones instalado** para cargar una aplicación que ya está instalada en el depurador. Por ejemplo, puede depurar una aplicación que se instaló desde Microsoft Store, o depurar una aplicación cuando tenga los archivos de origen de la aplicación, pero no un proyecto de Visual Studio para la aplicación. El cuadro de diálogo **depurar paquete de aplicaciones instalado** permite iniciar una aplicación en modo de depuración en el equipo de Visual Studio o en un dispositivo remoto, o establecer que la aplicación se ejecute en modo de depuración, pero no iniciarla. Para obtener más información, vea [depurar un paquete de aplicaciones instalado](../debugger/debug-installed-app-package.md).
 
  Una vez cargada la aplicación en el depurador, puedes usar cualquiera de los procedimientos descritos más arriba.
 

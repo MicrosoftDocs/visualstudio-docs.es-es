@@ -91,7 +91,7 @@
         - name: Ver variables de la memoria
           href: memory-windows.md
         - name: Inspeccionar las propiedades XAML durante la depuración
-          href: inspect-xaml-properties-while-debugging.md
+          href: ../xaml-tools/inspect-xaml-properties-while-debugging.md?toc=/visualstudio/debugger/toc.json
     - name: Pila de llamadas
       items:
         - name: Ver la pila de llamadas
@@ -108,9 +108,9 @@
           href: how-to-enable-and-disable-edit-and-continue.md
         - name: Detener cambios en el código
           href: how-to-stop-code-changes.md
-        - name: Editar y continuar (Visual C++)
+        - name: Editar y continuar (C++)
           items:
-            - name: Editar y continuar para Visual C++
+            - name: Editar y continuar para C++
               href: edit-and-continue-visual-cpp.md
             - name: Cambios admitidos en el código (C++)
               href: supported-code-changes-cpp.md
@@ -131,9 +131,9 @@
         - name: Recarga activa de XAML
           items:
             - name: Escribir y depurar código XAML en ejecución
-              href: xaml-hot-reload.md
+              href: ../xaml-tools/xaml-hot-reload.md?toc=/visualstudio/debugger/toc.json
             - name: Solución de problemas con la recarga activa de XAML
-              href: xaml-hot-reload-troubleshooting.md
+              href: ../xaml-tools/xaml-hot-reload-troubleshooting.md?toc=/visualstudio/debugger/toc.json
         - name: 'Editar y Continuar no admitido para F#'
           href: edit-and-continue-not-supported-for-f-hash.md
     - name: Registro en la ventana de salida
@@ -202,7 +202,7 @@
                   items:
                     - name: Configuración del proyecto para una configuración de depuración de C++
                       href: project-settings-for-a-cpp-debug-configuration.md
-                    - name: Habilitar las características de depuración en Visual C++ (-D_DEBUG)
+                    - name: Habilitación de las características de depuración en C++ (-D_DEBUG)
                       href: enabling-debug-features-in-visual-cpp-d-debug.md
                 - name: Configuración de páginas de propiedades para proyectos web
                   href: property-pages-settings-for-web-projects.md
@@ -234,7 +234,7 @@
               items:
                 - name: Creación de vistas personalizadas de objetos de C++
                   href: create-custom-views-of-native-objects.md
-                - name: Compatibilidad del visualizador personalizado de Visual C++
+                - name: Compatibilidad del visualizador personalizado de C++
                   href: visual-cpp-custom-visualizer-compatibility.md
             - name: Vistas personalizadas (administradas)
               items:
@@ -435,7 +435,7 @@
             - name: Depurar un paquete de aplicación instalado
               href: debug-installed-app-package.md
             - name: Depurar XAML en Blend
-              href: debug-xaml-in-blend.md
+              href: ../xaml-tools/debug-xaml-in-blend.md?toc=/visualstudio/debugger/toc.json
             - name: HTML y CSS
               items:
                 - name: Depurar HTML y CSS
@@ -500,7 +500,7 @@
           items:
             - name: Depurar código nativo
               href: debugging-native-code.md
-            - name: 'Preparación de la depuración: Tipos de proyecto de Visual C++'
+            - name: 'Preparación de la depuración: Tipos de proyecto de C++'
               href: debugging-preparation-visual-cpp-project-types.md
             - name: Depurar código optimizado
               href: how-to-debug-optimized-code.md

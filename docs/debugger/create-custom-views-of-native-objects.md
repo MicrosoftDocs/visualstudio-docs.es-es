@@ -138,7 +138,7 @@ Las visualizaciones de Natvis usan expresiones de C++ para especificar los eleme
 
 ## <a name="natvis-views"></a>Vistas de Natvis
 
-Puede definir diferentes vistas Natvis para mostrar tipos de maneras diferentes. Por ejemplo, a continuación se muestra una visualización de `std::vector` que define una vista simplificada llamada `simple`. Los elementos `DisplayString` y `ArrayItems` se muestran en la vista predeterminada y en la vista @no__t 2, mientras que los elementos `[size]` y `[capacity]` no se muestran en la vista `simple`.
+Puede definir diferentes vistas Natvis para mostrar tipos de maneras diferentes. Por ejemplo, a continuación se muestra una visualización de `std::vector` que define una vista simplificada llamada `simple`. Los elementos `DisplayString` y `ArrayItems` se muestran en la vista predeterminada y en la vista `simple`, mientras que los elementos `[size]` y `[capacity]` no se muestran en la vista `simple`.
 
 ```xml
 <Type Name="std::vector&lt;*&gt;">
@@ -256,7 +256,7 @@ En el siguiente ejemplo se analiza primero la entrada que coincide con el STL 20
 ```
 
 ### <a name="optional-attribute"></a>Atributo opcional
-Puede colocar un atributo `Optional` en cualquier nodo. Si una subexpresión dentro de un nodo opcional no se puede analizar, el depurador omite ese nodo, pero aplica el resto de las reglas de @no__t 0. En el siguiente tipo, `[State]` no es opcional, pero `[Exception]` sí lo es.  Si `MyNamespace::MyClass` tiene un campo denominado _ @ no__t-1, aparecen los nodos `[State]` y `[Exception]`, pero si no hay ningún campo `_M_exceptionHolder`, solo aparece el nodo `[State]`.
+Puede colocar un atributo `Optional` en cualquier nodo. Si una subexpresión dentro de un nodo opcional no se puede analizar, el depurador omite ese nodo, pero aplica el resto de las reglas de @no__t 0. En el siguiente tipo, `[State]` no es opcional, pero `[Exception]` sí lo es.  Si `MyNamespace::MyClass` tiene un campo denominado _ `M_exceptionHolder`, aparecen los nodos `[State]` y `[Exception]`, pero si no hay ningún campo `_M_exceptionHolder`, solo aparece el nodo `[State]`.
 
 ```xml
 <Type Name="MyNamespace::MyClass">
@@ -271,7 +271,7 @@ Puede colocar un atributo `Optional` en cualquier nodo. Si una subexpresión den
 
 El atributo opcional `Condition` está disponible para muchos elementos de visualización y especifica cuándo se debe usar una regla de visualización. Si la expresión incluida en el atributo Condition se resuelve como `false`, no se aplicará la regla de visualización. Si se evalúa como `true`, o no hay ningún atributo `Condition`, se aplica la visualización. Puede usar este atributo para la lógica IF-Else en las entradas de visualización.
 
-Por ejemplo, la siguiente visualización tiene dos elementos `DisplayString` para un tipo de puntero inteligente. Cuando el miembro `_Myptr` está vacío, la condición del primer elemento `DisplayString` se resuelve como @no__t 2, de modo que se muestra el formulario. Cuando el miembro `_Myptr` no está vacío, la condición se evalúa como `false` y se muestra el segundo elemento @no__t 2.
+Por ejemplo, la siguiente visualización tiene dos elementos `DisplayString` para un tipo de puntero inteligente. Cuando el miembro `_Myptr` está vacío, la condición del primer elemento `DisplayString` se resuelve como `true`, de modo que se muestra el formulario. Cuando el miembro de `_Myptr` no está vacío, la condición se evalúa como `false` y se muestra el segundo elemento `DisplayString`.
 
 ```xml
 <Type Name="std::auto_ptr&lt;*&gt;">
@@ -285,7 +285,7 @@ Por ejemplo, la siguiente visualización tiene dos elementos `DisplayString` par
 
 ### <a name="includeview-and-excludeview-attributes"></a>Atributos IncludeView y ExcludeView
 
-Los atributos `IncludeView` y `ExcludeView` especifican los elementos que se van a mostrar o no en vistas específicas. Por ejemplo, en la siguiente especificación Natvis de `std::vector`, la vista `simple` no muestra los elementos @no__t 2 y `[capacity]`.
+Los atributos `IncludeView` y `ExcludeView` especifican los elementos que se van a mostrar o no en vistas específicas. Por ejemplo, en la siguiente especificación de Natvis de `std::vector`, la vista de `simple` no muestra los elementos `[size]` y `[capacity]`.
 
 ```xml
 <Type Name="std::vector&lt;*&gt;">
@@ -450,7 +450,7 @@ También puede especificar matrices multidimensionales. En ese caso, el depurado
 
 - `Direction` especifica si la matriz está en orden de fila principal o de columna principal.
 - `Rank` especifica el rango de la matriz.
-- El elemento `Size` acepta el parámetro `$i` implícito que sustituye al índice de dimensión para buscar la longitud de la matriz en esa dimensión. En el ejemplo anterior, la expresión `_M_extent.M_base[0]` debe proporcionar la longitud de la dimensión 0, `_M_extent._M_base[1]` y así sucesivamente.
+- El elemento `Size` acepta el parámetro `$i` implícito que sustituye al índice de dimensión para buscar la longitud de la matriz en esa dimensión. En el ejemplo anterior, la expresión `_M_extent.M_base[0]` debe proporcionar la longitud de la dimensión 0, `_M_extent._M_base[1]` la primera, etc.
 
 Este es el aspecto de un objeto bidimensional `Concurrency::array` en la ventana del depurador:
 
@@ -499,7 +499,7 @@ Si el tipo visualizado representa una lista vinculada, el depurador puede mostra
 
 El elemento `Size` hace referencia a la longitud de la lista. `HeadPointer` apunta al primer elemento, `NextPointer` hace referencia al elemento siguiente y `ValueNode` hace referencia al valor del elemento.
 
-El depurador evalúa las expresiones `NextPointer` y `ValueNode` en el contexto del elemento de nodo `LinkedListItems`, no en el tipo de lista primario. En el ejemplo anterior, `CAtlList` tiene una clase `CNode` (se encuentra en `atlcoll.h`) que es un nodo de la lista vinculada. `m_pNext` y `m_element` son campos de la clase `CNode`, no de la clase `CAtlList`.
+El depurador evalúa las expresiones `NextPointer` y `ValueNode` en el contexto del elemento de nodo `LinkedListItems`, no en el tipo de lista primario. En el ejemplo anterior, `CAtlList` tiene una clase `CNode` (se encuentra en `atlcoll.h`) que es un nodo de la lista vinculada. `m_pNext` y `m_element` son campos de esa `CNode` clase, no de la clase `CAtlList`.
 
 `ValueNode` puede dejarse vacío o usar `this` para hacer referencia al propio nodo @no__t 2.
 

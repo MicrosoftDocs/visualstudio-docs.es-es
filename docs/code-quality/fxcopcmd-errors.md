@@ -10,47 +10,47 @@ author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a40d4b7baa3d994ca41213a100881e5f509a5167
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 1892fa9f47e0b3b315531adc51cf538ff7fe4dee
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62816493"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72449020"
 ---
-# <a name="fxcopcmd-tool-errors"></a>Errores de la herramienta de FxCopCmd
+# <a name="fxcopcmd-tool-errors"></a>Errores de la herramienta FxCopCmd
 
-FxCopCmd no tiene en cuenta todos los errores sea grave. Si FxCopCmd tiene suficiente información para realizar un análisis parcial, realiza los errores de análisis e informes que se ha producido. El código de error, que es un entero de 32 bits, contiene una combinación bit a bit de valores numéricos que se corresponden con errores.
+FxCopCmd no considera que todos los errores sean graves. Si FxCopCmd tiene información suficiente para realizar un análisis parcial, realiza el análisis y notifica los errores que se produjeron. El código de error, que es un entero de 32 bits, contiene una combinación bit a bit de valores numéricos que se corresponden con errores.
 
-En la tabla siguiente se describe los códigos de error devueltos por FxCopCmd:
+En la tabla siguiente se describen los códigos de error devueltos por FxCopCmd:
 
 |Error|Valor numérico|
 |-----------|-------------------|
-|Sin errores|0x0|
+|Sin errores|0X0|
 |Error de análisis|0x1|
-|Excepciones de reglas|0x2|
-|Error al cargar proyecto|0x4|
-|Error al cargar ensamblado|0x8|
-|Error de carga de biblioteca de regla|0x10|
-|Error de carga del informe de importación|0x20|
+|Excepciones de regla|0X2|
+|Error de carga del proyecto|0x4|
+|Error de carga de ensamblado|0x8|
+|Error de carga de la biblioteca de reglas|0x10|
+|Importar error de carga de informe|0x20|
 |Error de salida|0x40|
-|Error del conmutador de línea de comandos|0x80|
+|Error del modificador de la línea de comandos|0x80|
 |Error de inicialización|0x100|
-|Error de las referencias de ensamblado|0x200|
+|Error de referencias de ensamblado|0x200|
 |BuildBreakingMessage|0x400|
 |Error desconocido|0x1000000|
 
-**Error de análisis** se devuelve para los errores irrecuperables. Indica que no se pudo completar el análisis. Cuando sea aplicable, el código de error también contiene la causa subyacente del error irrecuperable. Las condiciones siguientes generan errores irrecuperables:
+Se devuelve un **error de análisis** de errores irrecuperables. Indica que no se pudo completar el análisis. Cuando proceda, el código de error también contiene la causa subyacente del error irrecuperable. Las siguientes condiciones generan errores irrecuperables:
 
 - No se pudo realizar el análisis debido a una entrada insuficiente.
 
-- El análisis produjo una excepción no controlada por FxCopCmd.
+- El análisis produjo una excepción que no está controlada por FxCopCmd.
 
-- El archivo de proyecto especificado no se encontró o está dañado.
+- No se encontró el archivo de proyecto especificado o está dañado.
 
-- No se especificó la opción de salida o no se pudo escribir el archivo.
+- No se especificó la opción output o no se pudo escribir en el archivo.
 
 > [!NOTE]
-> Código de retorno de la FxCopCmd **ensamblado hace referencia al error** 0 x 200 por sí misma es una advertencia en lugar de un error. Este código de retorno indica que faltan referencias indirectas, pero que FxCopCmd fue capaz de controlarlos. La advertencia significa que es posible que algunos resultados del análisis podrían haberse visto comprometidos. Tratar **ensamblado hace referencia al error** como un error cuando se combina con cualquier otro código de retorno.
+> El ensamblado del código de retorno de FxCopCmd **hace referencia a error** 0x200 por sí solo es una advertencia en lugar de un error. Este código de retorno indica que faltan referencias indirectas, pero que FxCopCmd pudo controlarlas. La ADVERTENCIA significa que hay una posibilidad de que algunos resultados del análisis puedan estar en peligro. El tratamiento de **las referencias de ensamblado** es un error cuando se combina con cualquier otro código de retorno.
 
 ## <a name="see-also"></a>Vea también
 

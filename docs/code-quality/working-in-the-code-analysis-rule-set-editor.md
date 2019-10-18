@@ -1,5 +1,5 @@
 ---
-title: Usar el Editor de conjunto de reglas de análisis de código
+title: Usar el editor de conjuntos de reglas de análisis de código
 ms.date: 04/04/2018
 ms.topic: conceptual
 f1_keywords:
@@ -10,81 +10,81 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 719d8f1e11365de0b864f41f54546fb4bfc64cd2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 3672d2c85a8da9f8e249da33311d780391d43401
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62820319"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72445586"
 ---
-# <a name="use-the-code-analysis-rule-set-editor"></a>Usar el editor de conjunto de reglas de análisis de código
+# <a name="use-the-code-analysis-rule-set-editor"></a>Usar el editor de conjuntos de reglas de análisis de código
 
-La regla de análisis de código establece el editor le permite que especificar las reglas que se incluyen en una regla personalizada, establezca y la gravedad de las infracciones de reglas.
+El editor de conjuntos de reglas de análisis de código le permite especificar las reglas que se incluyen en un conjunto de reglas personalizado y establecer la gravedad de las infracciones de las reglas.
 
-La siguiente tabla muestra las opciones de gravedad:
+En la tabla siguiente se muestran las opciones de gravedad:
 
 |Acción (gravedad)|Descripción|
 |-|-|
-|Advertencia|Genera una advertencia en el **lista de errores** y también en tiempo de compilación.|
-|Error|Genera un error en la **lista de errores** y también en tiempo de compilación.|
+|Advertencia|Genera una advertencia en el **lista de errores** y también en el momento de la compilación.|
+|Error|Genera un error en el **lista de errores** y también en el momento de la compilación.|
 |Info|Genera un mensaje en el **lista de errores**.|
-|Hidden|La infracción no es visible para el usuario. El IDE se notifica la infracción, sin embargo.|
-|Ninguna|Se suprime la regla. El comportamiento es el mismo que si se ha quitado la regla del conjunto de reglas.|
+|Hidden|La infracción no es visible para el usuario. No obstante, el IDE recibe una notificación de la infracción.|
+|Ninguno|Se suprime la regla. El comportamiento es el mismo que si se quitara la regla del conjunto de reglas.|
 
-El editor muestra las reglas en una estructura de árbol que agrupa las reglas por una regla de establece el campo especificado. Para agregar o quitar las reglas de un conjunto de reglas, realice uno o varios de los pasos siguientes:
+El editor muestra las reglas en una estructura de árbol que agrupa las reglas por un campo de conjunto de reglas que especifique. Para agregar o quitar reglas de un conjunto de reglas, realice uno o varios de los pasos siguientes:
 
-- Active o desactive la casilla de verificación del nodo de grupo para agregar o quitar todas las reglas del grupo. Cuando se selecciona un grupo, todas las reglas se establecen en el **advertencia** acción.
+- Active o desactive la casilla del nodo grupo para agregar o quitar todas las reglas del grupo. Al seleccionar un grupo, todas las reglas se establecen en la acción **ADVERTENCIA** .
 
    > [!TIP]
-   > Puede cambiar cómo se agrupan las reglas en el **Agrupar por** lista desplegable.
+   > Puede cambiar la forma en que se agrupan las reglas en la lista desplegable **Agrupar por** .
 
-- Haga clic en el **acción** campo de un grupo y, a continuación, especifique la acción que se aplican a todas las reglas del grupo.
+- Haga clic en el campo **acción** de un grupo y, a continuación, especifique la acción que se aplicará a todas las reglas del grupo.
 
-- Active o desactive la casilla de verificación de una regla individual. Cuando se selecciona la casilla de verificación para una regla, la regla se establece en la acción de advertencia.
+- Active o desactive la casilla de una regla individual. Al activar la casilla de una regla, la regla se establece en la acción ADVERTENCIA.
 
-## <a name="toolbar"></a>Barra de herramientas
+## <a name="toolbar"></a>ToolBar
 
-Puede usar la barra de herramientas del editor de conjunto de reglas para agrupar, filtrar y buscar los datos que aparecen en la cuadrícula de conjunto de reglas.
+Puede usar la barra de herramientas del editor de conjuntos de reglas para agrupar, filtrar y buscar los datos que aparecen en la cuadrícula del conjunto de reglas.
 
-En la tabla siguiente describe los controles de la barra de herramientas del editor de conjunto de reglas.
+En la tabla siguiente se describen los controles de la barra de herramientas del editor de conjuntos de reglas.
 
-|ToolBar (control)|Descripción|
+|Toolbar (control)|Descripción|
 |---------------------|-----------------|
-|**Expandir todo**|Muestra las reglas en todos los grupos.|
-|**Contraer todo**|Oculta las reglas en todos los grupos.|
-|**Group By**|Especifica el campo por el que las reglas se agrupan. Haga clic en  **\<None >** para mostrar las reglas sin grupos.|
-|**Opciones de columna**|Especifica los campos de la regla para mostrar.|
-|**Ocultar reglas que no se aplican a la solución actual**|Muestra u oculta las reglas que no son del mismo tipo de destino que la solución.|
-|**Mostrar reglas que pueden generar errores de análisis de código**|Muestra u oculta las reglas que tienen asignada la acción de Error.|
-|**Mostrar reglas que pueden generar advertencias de análisis de código**|Muestra u oculta las reglas que tienen asignadas la acción de advertencia.|
-|**Mostrar reglas que no están habilitadas**|Muestra u oculta las reglas que tienen asignada ninguna acción.|
-|**Agregar o quitar conjuntos de reglas secundarios**|Agrega o quita las reglas de los conjuntos de reglas seleccionado.|
-|**Buscar reglas**|Busca todos los valores de campo de la cadena que especifique.|
+|**Expandir todo**|Muestra las reglas de todos los grupos.|
+|**Contraer todo**|Oculta las reglas de todos los grupos.|
+|**Group By**|Especifica el campo por el que se agrupan las reglas. Haga clic en **\<None >** para mostrar las reglas sin grupos.|
+|**Opciones de columna**|Especifica los campos de regla que se van a mostrar.|
+|**Ocultar reglas que no se aplican a la solución actual**|Muestra u oculta reglas que no son del mismo tipo de destino que la solución.|
+|**Mostrar reglas que pueden generar errores de análisis de código**|Muestra u oculta las reglas a las que se ha asignado la acción de error.|
+|**Mostrar reglas que pueden generar advertencias de análisis de código**|Muestra u oculta las reglas a las que se ha asignado la acción de advertencia.|
+|**Mostrar reglas que no están habilitadas**|Muestra u oculta las reglas a las que se ha asignado la acción none.|
+|**Agregar o quitar conjuntos de reglas secundarios**|Agrega o quita las reglas de los conjuntos de reglas seleccionados.|
+|**Reglas de búsqueda**|Busca en todos los valores de campo la cadena que especifique.|
 
 ## <a name="rule-set-fields"></a>Campos de conjunto de reglas
 
-Campos del conjunto de reglas muestran información sobre un conjunto de reglas y pueden utilizarse para ordenar y agrupar la lista de reglas. Para mostrar u ocultar campos, seleccione **opciones de columna** en la regla establecer la barra de herramientas del editor y, a continuación, active o desactive las casillas de verificación de los campos para mostrar u ocultar.
+Los campos de conjunto de reglas muestran información sobre un conjunto de reglas y se pueden usar para ordenar y agrupar la lista de reglas. Para mostrar u ocultar campos, seleccione **Opciones de columna** en la barra de herramientas del editor de conjuntos de reglas y, a continuación, Active o desactive las casillas de los campos que desea mostrar u ocultar.
 
-En la tabla siguiente se describe los campos de un conjunto de reglas:
+En la tabla siguiente se describen los campos de un conjunto de reglas:
 
 |Campo|Descripción|
 |-----------|-----------------|
-|**ID**|El identificador de la regla.|
-|**Categoría**|Además de su pertenencia a conjuntos de reglas, reglas de análisis de código también se agrupan por categoría. Para obtener más información, consulte [las advertencias de análisis de código](../code-quality/code-analysis-for-managed-code-warnings.md).|
-|**Name**|El título de la regla.|
-|**Espacio de nombres**|El espacio de nombres de la regla.|
-|**Tipo de destino**|Indica si la regla es para nativo, administrado o código base de datos.|
-|**Acción**|La acción realizada cuando se infringe la regla en una ejecución de análisis de código. Puede editar el **acción** campo.|
-|**Conjuntos de reglas de origen**|El conjunto de reglas que contiene la regla.|
+|**ID**|Identificador de la regla.|
+|**Categoría**|Además de su pertenencia en conjuntos de reglas, las reglas de análisis de código también se agrupan por categoría. Para obtener más información, vea [advertencias de análisis de código](../code-quality/code-analysis-for-managed-code-warnings.md).|
+|**Nombre**|Título de la regla.|
+|**Namespace**|Espacio de nombres de la regla.|
+|**Tipo de destino**|Indica si la regla es para el código nativo, administrado o de base de datos.|
+|**Acción**|Acción que se realiza cuando se infringe la regla en una ejecución de análisis de código. Puede editar el campo de **acción** .|
+|**Conjuntos de reglas de origen**|Conjunto de reglas que contiene la regla.|
 
 ## <a name="sort-and-filter-rule-sets"></a>Ordenar y filtrar conjuntos de reglas
 
-Desde los encabezados de columna de la cuadrícula de conjunto de reglas, puede ordenar y filtrar las reglas por los valores del campo.
+En los encabezados de columna de la cuadrícula del conjunto de reglas, puede ordenar y filtrar las reglas por los valores del campo.
 
-- Para ordenar las listas de conjunto de reglas, haga clic en el encabezado de columna del campo por el que desea ordenar. Si los conjuntos de reglas se agrupan, cada grupo se ordena por separado.
+- Para ordenar las listas de conjuntos de reglas, haga clic en el encabezado de columna del campo por el que desea ordenar. Si los conjuntos de reglas están agrupados, cada grupo se ordena individualmente.
 
-- Para filtrar los conjuntos de reglas por el valor de un campo, haga clic en el botón de filtro en el encabezado de columna del campo por el que desea filtrar. Active las casillas de los valores que desea mostrar y desactive las casillas de los valores que desea ocultar.
+- Para filtrar los conjuntos de reglas por el valor de un campo, haga clic en el botón filtro del encabezado de columna del campo por el que desea filtrar. Active las casillas de los valores que desea mostrar y desactive las casillas de los valores que desea ocultar.
 
 ## <a name="see-also"></a>Vea también
 
-- [Crear un conjunto de reglas personalizado](../code-quality/how-to-create-a-custom-rule-set.md)
+- [Creación de un conjunto de reglas personalizado](../code-quality/how-to-create-a-custom-rule-set.md)

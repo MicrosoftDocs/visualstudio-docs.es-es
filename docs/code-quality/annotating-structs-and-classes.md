@@ -24,12 +24,12 @@ ms.author: mblome
 manager: markl
 ms.workload:
 - multiple
-ms.openlocfilehash: 1cff36760a84821a33dcdb1ee4cc6842cd40aee0
-ms.sourcegitcommit: 535ef05b1e553f0fc66082cd2e0998817eb2a56a
+ms.openlocfilehash: ac3d6225bc765ec404784589d2faa06f155265ab
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "72015969"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72446298"
 ---
 # <a name="annotating-structs-and-classes"></a>Anotar structs y clases
 
@@ -39,15 +39,15 @@ Puede anotar los miembros de struct y de clase mediante anotaciones que actúan 
 
 - `_Field_range_(low, high)`
 
-     El campo está en el intervalo (inclusivo) de `low` a `high`.  Equivalente a `_Satisfies_(_Curr_ >= low && _Curr_ <= high)` aplicada al objeto anotado utilizando las condiciones previas o posteriores adecuadas.
+     El campo está en el intervalo (inclusivo) de `low` a `high`.  Equivalente a `_Satisfies_(_Curr_ >= low && _Curr_ <= high)` aplicado al objeto anotado utilizando las condiciones previas o posteriores adecuadas.
 
 - `_Field_size_(size)`, `_Field_size_opt_(size)`, `_Field_size_bytes_(size)`, `_Field_size_bytes_opt_(size)`
 
-     Campo que tiene un tamaño de escritura en elementos (o bytes) según especifica `size`.
+     Campo que tiene un tamaño de escritura en elementos (o bytes) tal y como lo especifica `size`.
 
-- `_Field_size_part_(size, count)`, `_Field_size_part_opt_(size, count)`,         `_Field_size_bytes_part_(size, count)`, `_Field_size_bytes_part_opt_(size, count)`
+- `_Field_size_part_(size, count)`, `_Field_size_part_opt_(size, count)`, `_Field_size_bytes_part_(size, count)`, `_Field_size_bytes_part_opt_(size, count)`
 
-     Campo que tiene un tamaño de escritura en los elementos (o bytes) especificados por `size` y el `count` de esos elementos (bytes) que se pueden leer.
+     Campo que tiene un tamaño de escritura en elementos (o bytes) tal y como se especifica en `size`, y el `count` de esos elementos (bytes) que se pueden leer.
 
 - `_Field_size_full_(size)`, `_Field_size_full_opt_(size)`, `_Field_size_bytes_full_(size)`, `_Field_size_bytes_full_opt_(size)`
 
@@ -71,7 +71,7 @@ Puede anotar los miembros de struct y de clase mediante anotaciones que actúan 
 
     ```
 
-     A continuación, el tamaño de búfer en bytes de un parámetro `pM` de tipo `MyStruct *` se considera:
+     El tamaño de búfer en bytes de un parámetro `pM` de tipo `MyStruct *` se toma entonces como:
 
     ```cpp
     min(pM->nSize, sizeof(MyStruct))
@@ -108,7 +108,7 @@ Notas para este ejemplo:
 
 - `_Field_z_` es equivalente a `_Null_terminated_`.  `_Field_z_` para el campo nombre especifica que el campo nombre es una cadena terminada en NULL.
 - `_Field_range_` para `bufferSize` especifica que el valor de `bufferSize` debe estar comprendido entre 1 y `MaxBufferSize` (ambos inclusivos).
-- Los resultados finales de las anotaciones `_Struct_size_bytes_` y `_Field_size_` son equivalentes. En el caso de estructuras o clases que tienen un diseño similar, `_Field_size_` es más fácil de leer y mantener, ya que tiene menos referencias y cálculos que la anotación `_Struct_size_bytes_` equivalente. `_Field_size_` no requiere conversión al tamaño de bytes. Si el tamaño de byte es la única opción, por ejemplo, para un campo de puntero void, se puede usar `_Field_size_bytes_`. Si existen `_Struct_size_bytes_` y `_Field_size_`, ambos estarán disponibles para las herramientas. Depende de la herramienta qué hacer si las dos anotaciones están en desacuerdo.
+- Los resultados finales de las anotaciones `_Struct_size_bytes_` y `_Field_size_` son equivalentes. En el caso de estructuras o clases que tienen un diseño similar, `_Field_size_` es más fácil de leer y mantener, ya que tiene menos referencias y cálculos que la anotación `_Struct_size_bytes_` equivalente. `_Field_size_` no requiere conversión al tamaño de bytes. Si el tamaño de bytes es la única opción, por ejemplo, para un campo de puntero void, se puede usar `_Field_size_bytes_`. Si hay `_Struct_size_bytes_` y `_Field_size_` existen, ambos estarán disponibles para las herramientas. Depende de la herramienta qué hacer si las dos anotaciones están en desacuerdo.
 
 ## <a name="see-also"></a>Vea también
 

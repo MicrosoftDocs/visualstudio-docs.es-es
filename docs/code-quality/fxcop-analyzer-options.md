@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 7d9ca8c8bd46b4f8455c7aa750170d38f03321f6
-ms.sourcegitcommit: 1507baf3a336bbb6511d4c3ce73653674831501b
-ms.translationtype: HT
+ms.openlocfilehash: de4fdbbdf54976ba3ee12c3621f7038cd4704a76
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "72349680"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72449068"
 ---
 # <a name="rule-scope-options-for-fxcop-analyzers"></a>Opciones de ámbito de reglas para los analizadores de FxCop
 
@@ -21,9 +21,9 @@ Algunas reglas del analizador de FxCop permiten restringir qué partes del códi
 Estas opciones de configuración están disponibles a partir de la versión 2.6.3 del paquete NuGet [Microsoft. CodeAnalysis. FxCopAnalyzers](https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers) .
 
 > [!TIP]
-> Para ver la lista completa de las opciones disponibles para una versión determinada del paquete FxCopAnalyzers, examine el archivo Configuration.md del *analizador* en la carpeta de *documentación* del paquete. El archivo se encuentra en *% userprofile% \\. nuget\packages\microsoft.CodeAnalysis.fxcopanalyzers @ no__t-2 @ no__t-3version @ no__t-4\documentation\Analyzer Configuration.MD*. Este archivo de documentación de configuración se incluye con cada versión del paquete, a partir de la versión 2.6.5. Este es un ejemplo de cómo se documenta una opción en el archivo *Configuration.MD del analizador* :
+> Para ver la lista completa de las opciones disponibles para una versión determinada del paquete FxCopAnalyzers, examine el archivo Configuration.md del *analizador* en la carpeta de *documentación* del paquete. El archivo se encuentra en *% userprofile% \\. nuget\packages\microsoft.codeanalysis.fxcopanalyzers \\ \<version \> Configuration.MD \documentation\analyzer*. Este archivo de documentación de configuración se incluye con cada versión del paquete, a partir de la versión 2.6.5. Este es un ejemplo de cómo se documenta una opción en el archivo *Configuration.MD del analizador* :
 >
-> Nombre de opción: `sufficient_IterationCount_for_weak_KDF_algorithm` @ no__t-1
+> Nombre de la opción: `sufficient_IterationCount_for_weak_KDF_algorithm` \
 > Valores de opción: valores enteros \
 > Valor predeterminado: específico de cada regla configurable (' 100000 ' de forma predeterminada para la mayoría de las reglas) \
 > Ejemplo: `dotnet_code_quality.CA5387.sufficient_IterationCount_for_weak_KDF_algorithm = 100000`

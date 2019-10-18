@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 994f8151b209d58617a23edbb4bba38836570710
-ms.sourcegitcommit: 1507baf3a336bbb6511d4c3ce73653674831501b
-ms.translationtype: MT
+ms.openlocfilehash: 2ce642ee57112561ba687b7ebe962150ce4e268e
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "72349536"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72446538"
 ---
 # <a name="mixed-recommended-rules-rule-set"></a>Conjunto de reglas Reglas recomendadas mixtas
 
@@ -151,7 +151,7 @@ Incluya este conjunto de reglas en cualquier conjunto de reglas personalizado qu
 |[C28020](../code-quality/c28020.md)|La expresión no es true en esta llamada|
 |[C28021](../code-quality/c28021.md)|El parámetro que se va a anotar debe ser un puntero|
 |[C28022](../code-quality/c28022.md)|Las clases de función de esta función no coinciden con las clases de función de la definición de tipo que se usa para definirla.|
-|[C28023](../code-quality/c28023.md)|La función que se va a asignar o pasar debe tener una anotación \_Function @ no__t-1Class @ no__t-2 para al menos una de las clases.|
+|[C28023](../code-quality/c28023.md)|La función que se va a asignar o pasar debe tener una \_Function \_class \_ anotación para al menos una de las clases.|
 |[C28024](../code-quality/c28024.md)|El puntero de función al que se asigna se anota con la clase de función, que no está incluida en la lista de clases de función.|
 |[C28039](../code-quality/c28039.md)|El tipo de parámetro real debe coincidir exactamente con el tipo|
 |[C28112](../code-quality/c28112.md)|Siempre se debe tener acceso a una variable a la que se tiene acceso a través de una función de interbloqueo a través de una función de interbloqueo.|
@@ -169,14 +169,14 @@ Incluya este conjunto de reglas en cualquier conjunto de reglas personalizado qu
 |[C28196](../code-quality/c28196.md)|No se cumple el requisito. (La expresión no se evalúa como true).|
 |[C28202](../code-quality/c28202.md)|Referencia no válida a un miembro no estático|
 |[C28203](../code-quality/c28203.md)|Referencia ambigua a un miembro de la clase.|
-|[C28205](../code-quality/c28205.md)|\_Success @ no__t-1 o \_On @ no__t-3failure @ no__t-4 usado en un contexto no válido|
+|[C28205](../code-quality/c28205.md)|\_Success \_ o \_On \_failure \_ utiliza en un contexto no válido|
 |[C28206](../code-quality/c28206.md)|El operando izquierdo señala a un struct, use '->'|
 |[C28207](../code-quality/c28207.md)|El operando izquierdo es un struct, use '->'|
 |[C28209](../code-quality/c28209.md)|La declaración del símbolo tiene una declaración en conflicto|
 |[C28210](../code-quality/c28210.md)|Las anotaciones del contexto __on_failure no deben estar en un contexto previo explícito|
 |[C28211](../code-quality/c28211.md)|Se esperaba un nombre de contexto estático para SAL_context|
 |[C28212](../code-quality/c28212.md)|Se esperaba una expresión de puntero para la anotación|
-|[C28213](../code-quality/c28213.md)|La anotación \_Use @ no__t-1decl @ no__t-2annotations @ no__t-3 debe usarse para hacer referencia, sin modificación, a una declaración anterior.|
+|[C28213](../code-quality/c28213.md)|El \_Use \_decl \_annotations anotación de \_ se debe usar para hacer referencia, sin modificación, a una declaración anterior.|
 |[C28214](../code-quality/c28214.md)|Los nombres de los parámetros de atributo deben ser p1...p9|
 |[C28215](../code-quality/c28215.md)|typefix no se puede aplicar a un parámetro que ya tenga un typefix|
 |[C28216](../code-quality/c28216.md)|La anotación checkReturn solamente se aplica a las condiciones posteriores del parámetro de la función específica.|
@@ -219,7 +219,7 @@ Incluya este conjunto de reglas en cualquier conjunto de reglas personalizado qu
 |[C28267](../code-quality/c28267.md)|Se encontró un error de sintaxis de anotaciones en la función.|
 |[C28272](../code-quality/c28272.md)|La anotación del parámetro de la función, al examinar su incoherencia con la declaración de la función|
 |[C28273](../code-quality/c28273.md)|Para la función, las pistas son incoherentes con la declaración de la función|
-|[C28275](../code-quality/c28275.md)|El parámetro de \_Macro @ no__t-1value @ no__t-2 es null|
+|[C28275](../code-quality/c28275.md)|El parámetro que se va a \_Macro \_value \_ es null|
 |[C28279](../code-quality/c28279.md)|Para el símbolo, se encontró un 'begin' sin un 'end' coincidente|
 |[C28280](../code-quality/c28280.md)|Para el símbolo, se encontró un 'end' sin un 'begin' coincidente|
 |[C28282](../code-quality/c28282.md)|Las cadenas de formato deben estar en las condiciones previas|
@@ -258,32 +258,32 @@ Incluya este conjunto de reglas en cualquier conjunto de reglas personalizado qu
 |[CA1410](../code-quality/ca1410-com-registration-methods-should-be-matched.md)|Los métodos de registro COM deben coincidir|
 |[CA1415](../code-quality/ca1415-declare-p-invokes-correctly.md)|Declarar elementos P/Invoke correctamente|
 |[CA1821](../code-quality/ca1821.md)|Quitar finalizadores vacíos|
-|[CA1900](../code-quality/ca1900-value-type-fields-should-be-portable.md)|Los campos de tipo de valor deben ser portátiles|
-|[CA1901](../code-quality/ca1901-p-invoke-declarations-should-be-portable.md)|Las declaraciones P/Invoke deben ser portátiles|
-|[CA2002](../code-quality/ca2002-do-not-lock-on-objects-with-weak-identity.md)|No bloquear objetos con identidad débil|
-|[CA2100](../code-quality/ca2100-review-sql-queries-for-security-vulnerabilities.md)|Revisar consultas SQL para comprobar si tienen vulnerabilidades de seguridad|
-|[CA2101](../code-quality/ca2101-specify-marshaling-for-p-invoke-string-arguments.md)|Especificar serialización en argumentos de cadena P/Invoke|
-|[CA2108](../code-quality/ca2108-review-declarative-security-on-value-types.md)|Revisar la seguridad declarativa en los tipos de valores|
-|[CA2111](../code-quality/ca2111-pointers-should-not-be-visible.md)|Los punteros no deben estar visibles|
-|[CA2112](../code-quality/ca2112-secured-types-should-not-expose-fields.md)|Los tipos seguros no deben exponer campos|
-|[CA2114](../code-quality/ca2114-method-security-should-be-a-superset-of-type.md)|La seguridad del método debe ser un supraconjunto del tipo|
-|[CA2116](../code-quality/ca2116-aptca-methods-should-only-call-aptca-methods.md)|Los métodos APTCA deben llamar solo a métodos APTCA|
-|[CA2117](../code-quality/ca2117-aptca-types-should-only-extend-aptca-base-types.md)|Los tipos APTCA solo amplían tipos base APTCA|
-|[CA2122](../code-quality/ca2122-do-not-indirectly-expose-methods-with-link-demands.md)|No exponer indirectamente métodos con peticiones de vínculos|
-|[CA2123](../code-quality/ca2123-override-link-demands-should-be-identical-to-base.md)|Las peticiones de vínculos de invalidaciones deben ser idénticas a la base|
-|[CA2124](../code-quality/ca2124-wrap-vulnerable-finally-clauses-in-outer-try.md)|Incluir cláusulas finally vulnerables en un bloque try externo|
-|[CA2126](../code-quality/ca2126-type-link-demands-require-inheritance-demands.md)|Las peticiones de vínculos de tipos requieren peticiones de herencias|
-|[CA2131](../code-quality/ca2131-security-critical-types-may-not-participate-in-type-equivalence.md)|Los tipos críticos para la seguridad no pueden participar en la equivalencia de tipos|
-|[CA2132](../code-quality/ca2132-default-constructors-must-be-at-least-as-critical-as-base-type-default-constructors.md)|Los constructores predeterminados deben ser al menos tan críticos para la seguridad como los constructores predeterminados de tipo base|
-|[CA2133](../code-quality/ca2133-delegates-must-bind-to-methods-with-consistent-transparency.md)|Los delegados deben enlazarse a métodos con una transparencia coherente|
-|[CA2134](../code-quality/ca2134-methods-must-keep-consistent-transparency-when-overriding-base-methods.md)|Los métodos deben mantener una transparencia coherente al invalidar métodos base|
-|[CA2137](../code-quality/ca2137-transparent-methods-must-contain-only-verifiable-il.md)|Los métodos transparentes deben contener solo IL que se pueda comprobar|
-|[CA2138](../code-quality/ca2138-transparent-methods-must-not-call-methods-with-the-suppressunmanagedcodesecurity-attribute.md)|Los métodos transparentes no deben llamar a métodos con el atributo SuppressUnmanagedCodeSecurity|
-|[CA2140](../code-quality/ca2140-transparent-code-must-not-reference-security-critical-items.md)|El código transparente no debe hacer referencia a elementos críticos para la seguridad|
-|[CA2141](../code-quality/ca2141-transparent-methods-must-not-satisfy-linkdemands.md)|Los métodos transparentes no deben satisfacer LinkDemands|
-|[CA2146](../code-quality/ca2146-types-must-be-at-least-as-critical-as-their-base-types-and-interfaces.md)|Los tipos deben ser al menos tan críticos para la seguridad como sus interfaces y tipos base|
-|[CA2147](../code-quality/ca2147-transparent-methods-may-not-use-security-asserts.md)|Los métodos transparentes no pueden usar aserciones de seguridad|
-|[CA2149](../code-quality/ca2149-transparent-methods-must-not-call-into-native-code.md)|Los métodos transparentes no deben llamar a código nativo|
+|[CA1900](../code-quality/ca1900.md)|Los campos de tipo de valor deben ser portátiles|
+|[CA1901](../code-quality/ca1901.md)|Las declaraciones P/Invoke deben ser portátiles|
+|[CA2002](../code-quality/ca2002.md)|No bloquear objetos con identidad débil|
+|[CA2100](../code-quality/ca2100.md)|Revisar consultas SQL para comprobar si tienen vulnerabilidades de seguridad|
+|[CA2101](../code-quality/ca2101.md)|Especificar serialización en argumentos de cadena P/Invoke|
+|[CA2108](../code-quality/ca2108.md)|Revisar la seguridad declarativa en los tipos de valores|
+|[CA2111](../code-quality/ca2111.md)|Los punteros no deben estar visibles|
+|[CA2112](../code-quality/ca2112.md)|Los tipos seguros no deben exponer campos|
+|[CA2114](../code-quality/ca2114.md)|La seguridad del método debe ser un supraconjunto del tipo|
+|[CA2116](../code-quality/ca2116.md)|Los métodos APTCA deben llamar solo a métodos APTCA|
+|[CA2117](../code-quality/ca2117.md)|Los tipos APTCA solo amplían tipos base APTCA|
+|[CA2122](../code-quality/ca2122.md)|No exponer indirectamente métodos con peticiones de vínculos|
+|[CA2123](../code-quality/ca2123.md)|Las peticiones de vínculos de invalidaciones deben ser idénticas a la base|
+|[CA2124](../code-quality/ca2124.md)|Incluir cláusulas finally vulnerables en un bloque try externo|
+|[CA2126](../code-quality/ca2126.md)|Las peticiones de vínculos de tipos requieren peticiones de herencias|
+|[CA2131](../code-quality/ca2131.md)|Los tipos críticos para la seguridad no pueden participar en la equivalencia de tipos|
+|[CA2132](../code-quality/ca2132.md)|Los constructores predeterminados deben ser al menos tan críticos para la seguridad como los constructores predeterminados de tipo base|
+|[CA2133](../code-quality/ca2133.md)|Los delegados deben enlazarse a métodos con una transparencia coherente|
+|[CA2134](../code-quality/ca2134.md)|Los métodos deben mantener una transparencia coherente al invalidar métodos base|
+|[CA2137](../code-quality/ca2137.md)|Los métodos transparentes deben contener solo IL que se pueda comprobar|
+|[CA2138](../code-quality/ca2138.md)|Los métodos transparentes no deben llamar a métodos con el atributo SuppressUnmanagedCodeSecurity|
+|[CA2140](../code-quality/ca2140.md)|El código transparente no debe hacer referencia a elementos críticos para la seguridad|
+|[CA2141](../code-quality/ca2141.md)|Los métodos transparentes no deben satisfacer LinkDemands|
+|[CA2146](../code-quality/ca2146.md)|Los tipos deben ser al menos tan críticos para la seguridad como sus interfaces y tipos base|
+|[CA2147](../code-quality/ca2147.md)|Los métodos transparentes no pueden usar aserciones de seguridad|
+|[CA2149](../code-quality/ca2149.md)|Los métodos transparentes no deben llamar a código nativo|
 |[CA2200](../code-quality/ca2200.md)|Reiniciar para mantener los detalles de la pila|
 |[CA2202](../code-quality/ca2202.md)|No usar Dispose varias veces en objetos|
 |[CA2207](../code-quality/ca2207.md)|Inicializar campos estáticos de tipo de valor insertados|

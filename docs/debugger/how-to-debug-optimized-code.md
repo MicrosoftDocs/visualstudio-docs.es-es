@@ -1,5 +1,5 @@
 ---
-title: Procedimiento Depurar código optimizado | Documentos de Microsoft
+title: 'Cómo: depurar código optimizado | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -21,14 +21,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9b498bdb491e3a15dddf005d43435d84b837fcd0
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 590925a894f1bf9bfe70d9dd1bf6142fcb6a2e34
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63387744"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72430664"
 ---
-# <a name="how-to-debug-optimized-code"></a>Procedimiento Depuración de código optimizado
+# <a name="how-to-debug-optimized-code"></a>Cómo: Depurar código optimizado
 
 > [!NOTE]
 > Los cuadros de diálogo y comandos de menú que se ven pueden diferir de los descritos en la Ayuda, en función de los valores de configuración o de edición activos. Para cambiar la configuración, elija Importar y exportar configuraciones en el menú Herramientas. Para obtener más información, vea [Restablecer la configuración](../ide/environment-settings.md#reset-settings).
@@ -52,7 +52,7 @@ ms.locfileid: "63387744"
 
   Siempre se muestran correctamente las variables globales y estáticas. Igual sucede con el diseño de estructuras. Si hay un puntero que señala a una estructura y el valor del puntero es correcto, todas las variables miembro de la estructura mostrarán el valor correcto.
 
-  Debido a estas limitaciones, se debería depurar con una versión sin optimizar del programa, siempre que sea posible. De forma predeterminada, la optimización está desactivada en la configuración Debug de un programa de Visual C++ y está activada en la configuración Release.
+  Debido a estas limitaciones, se debería depurar con una versión sin optimizar del programa, siempre que sea posible. De forma predeterminada, la optimización está desactivada en la configuración C++ de depuración de un programa y está activada en la configuración de lanzamiento.
 
   Sin embargo, los errores solo aparecen en la versión optimizada de un programa. En ese caso, se debe depurar el código optimizado.
 
@@ -66,15 +66,15 @@ ms.locfileid: "63387744"
 
 4. En el cuadro de diálogo **Páginas de propiedades**, asegúrese de que `Debug` está seleccionado en el cuadro de lista desplegable **Configuración**.
 
-5. En la vista de carpetas de la izquierda, seleccione la carpeta **C/C++**.
+5. En la vista de carpetas de la izquierda, seleccione la carpeta **C/C++** .
 
-6. En la carpeta **C++**, seleccione `Optimization`.
+6. En la carpeta **C++** , seleccione `Optimization`.
 
 7. En la lista de propiedades de la derecha, busque `Optimization`. El valor de configuración correspondiente probablemente indica `Disabled (`[/Od](/cpp/build/reference/od-disable-debug)`)`. Elija una de las otras opciones (`Minimum Size``(`[/O1](/cpp/build/reference/o1-o2-minimize-size-maximize-speed)`)`, `Maximum Speed``(`[/O2](/cpp/build/reference/o1-o2-minimize-size-maximize-speed)`)`, `Full Optimization``(`[/Ox](/cpp/build/reference/ox-full-optimization)`)` o `Custom`).
 
 8. Si elige la opción `Custom` para `Optimization`, puede definir opciones para cualquiera de las demás propiedades que se muestran en la lista de propiedades.
 
-9. Seleccione las propiedades de configuración, C/C ++, nodo de línea de comandos de la página de propiedades del proyecto y agregue `(` [/Zo](/cpp/build/reference/zo-enhance-optimized-debugging) `)` a la **opciones adicionales** cuadro de texto.
+9. Seleccione las propiedades de configuración, elC++nodo de línea de comandos C/, de la página de propiedades del proyecto y agregue `(`[/zo](/cpp/build/reference/zo-enhance-optimized-debugging) `)` al cuadro de texto **opciones adicionales** .
 
     > [!WARNING]
     > `/Zo` requiere Visual Studio 2013 Update 3 o una versión posterior.

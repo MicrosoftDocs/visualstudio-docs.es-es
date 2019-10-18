@@ -212,127 +212,127 @@
                   displayName: design warnings
                   href: design-warnings.md
                 - name: 'CA1000: No declarar miembros estáticos en tipos genéricos'
-                  href: ca1000-do-not-declare-static-members-on-generic-types.md
+                  href: ca1000.md
                 - name: 'CA1001: Los tipos que poseen campos descartables deben ser descartables'
-                  href: ca1001-types-that-own-disposable-fields-should-be-disposable.md
+                  href: ca1001.md
                 - name: 'CA1002: No exponer listas genéricas'
-                  href: ca1002-do-not-expose-generic-lists.md
+                  href: ca1002.md
                 - name: 'CA1003: Utilizar instancias genéricas de controlador de eventos'
-                  href: ca1003-use-generic-event-handler-instances.md
+                  href: ca1003.md
                 - name: 'CA1004: Los métodos genéricos deben proporcionar un parámetro de tipo'
-                  href: ca1004-generic-methods-should-provide-type-parameter.md
+                  href: ca1004.md
                 - name: 'CA1005: Evitar los parámetros excesivos en tipos genéricos'
-                  href: ca1005-avoid-excessive-parameters-on-generic-types.md
+                  href: ca1005.md
                 - name: 'CA1006: No anidar tipos genéricos en signaturas de miembro'
-                  href: ca1006-do-not-nest-generic-types-in-member-signatures.md
+                  href: ca1006.md
                 - name: 'CA1007: Utilizar valores genéricos cuando sea posible'
-                  href: ca1007-use-generics-where-appropriate.md
+                  href: ca1007.md
                 - name: 'CA1008: Las enumeraciones deben tener un valor igual a cero'
-                  href: ca1008-enums-should-have-zero-value.md
+                  href: ca1008.md
                 - name: 'CA1009: Declarar los controladores de evento correctamente'
-                  href: ca1009-declare-event-handlers-correctly.md
+                  href: ca1009.md
                 - name: 'CA1010: Las colecciones deben implementar la interfaz genérica'
-                  href: ca1010-collections-should-implement-generic-interface.md
+                  href: ca1010.md
                 - name: 'CA1011: Considerar pasar los tipos base como parámetros'
-                  href: ca1011-consider-passing-base-types-as-parameters.md
+                  href: ca1011.md
                 - name: 'CA1012: Los tipos abstractos no deberían tener constructores'
-                  href: ca1012-abstract-types-should-not-have-constructors.md
+                  href: ca1012.md
                 - name: 'CA1013: El operador de sobrecarga es igual que la suma y resta de sobrecarga'
-                  href: ca1013-overload-operator-equals-on-overloading-add-and-subtract.md
+                  href: ca1013.md
                 - name: 'CA1014: Marcar los ensamblados con CLSCompliantAttribute'
-                  href: ca1014-mark-assemblies-with-clscompliantattribute.md
+                  href: ca1014.md
                 - name: 'CA1016: Marcar los ensamblados con AssemblyVersionAttribute'
-                  href: ca1016-mark-assemblies-with-assemblyversionattribute.md
+                  href: ca1016.md
                 - name: 'CA1017: Marcar los ensamblados con ComVisibleAttribute'
-                  href: ca1017-mark-assemblies-with-comvisibleattribute.md
+                  href: ca1017.md
                 - name: 'CA1018: Marcar atributos con AttributeUsageAttribute'
-                  href: ca1018-mark-attributes-with-attributeusageattribute.md
+                  href: ca1018.md
                 - name: 'CA1019: Definir descriptores de acceso para los argumentos de atributo'
-                  href: ca1019-define-accessors-for-attribute-arguments.md
+                  href: ca1019.md
                 - name: 'CA1020: Evitar los espacios de nombres con pocos tipos'
-                  href: ca1020-avoid-namespaces-with-few-types.md
+                  href: ca1020.md
                 - name: 'CA1021: Evitar los parámetros out'
-                  href: ca1021-avoid-out-parameters.md
+                  href: ca1021.md
                 - name: 'CA1023: Los indizadores no deben ser multidimensionales'
-                  href: ca1023-indexers-should-not-be-multidimensional.md
+                  href: ca1023.md
                 - name: 'CA1024: Utilizar las propiedades donde corresponda'
-                  href: ca1024-use-properties-where-appropriate.md
+                  href: ca1024.md
                 - name: 'CA1025: Reemplazar argumentos repetitivos por una matriz de parámetros'
-                  href: ca1025-replace-repetitive-arguments-with-params-array.md
+                  href: ca1025.md
                 - name: 'CA1026: No deben usarse parámetros predeterminados'
-                  href: ca1026-default-parameters-should-not-be-used.md
+                  href: ca1026.md
                 - name: 'CA1027: Marcar enumeraciones con FlagsAttribute'
-                  href: ca1027-mark-enums-with-flagsattribute.md
+                  href: ca1027.md
                 - name: 'CA1028: El almacenamiento de la enumeración debe ser de tipo Int32'
-                  href: ca1028-enum-storage-should-be-int32.md
+                  href: ca1028.md
                 - name: 'CA1030: Utilizar eventos cuando sea apropiado'
-                  href: ca1030-use-events-where-appropriate.md
+                  href: ca1030.md
                 - name: 'CA1031: No capturar los tipos de excepción general'
-                  href: ca1031-do-not-catch-general-exception-types.md
+                  href: ca1031.md
                 - name: 'CA1032: Implementar constructores de excepción estándar'
-                  href: ca1032-implement-standard-exception-constructors.md
+                  href: ca1032.md
                 - name: 'CA1033: Los tipos secundarios deben poder llamar a los métodos de interfaz'
-                  href: ca1033-interface-methods-should-be-callable-by-child-types.md
+                  href: ca1033.md
                 - name: 'CA1034: Los tipos anidados no deben ser visibles'
-                  href: ca1034-nested-types-should-not-be-visible.md
+                  href: ca1034.md
                 - name: 'CA1035: Las implementaciones de ICollection tienen miembros fuertemente tipados'
-                  href: ca1035-icollection-implementations-have-strongly-typed-members.md
+                  href: ca1035.md
                 - name: 'CA1036: Invalidar métodos en tipos comparables'
-                  href: ca1036-override-methods-on-comparable-types.md
+                  href: ca1036.md
                 - name: 'CA1038: Los enumeradores deben estar fuertemente tipados'
-                  href: ca1038-enumerators-should-be-strongly-typed.md
+                  href: ca1038.md
                 - name: 'CA1039: Las listas están fuertemente tipadas'
-                  href: ca1039-lists-are-strongly-typed.md
+                  href: ca1039.md
                 - name: 'CA1040: Evitar las interfaces vacías'
-                  href: ca1040-avoid-empty-interfaces.md
+                  href: ca1040.md
                 - name: 'CA1041: Proporcionar un mensaje ObsoleteAttribute'
-                  href: ca1041-provide-obsoleteattribute-message.md
+                  href: ca1041.md
                 - name: 'CA1043: Utilizar un argumento integral o de cadena en indizadores'
-                  href: ca1043-use-integral-or-string-argument-for-indexers.md
+                  href: ca1043.md
                 - name: 'CA1044: Las propiedades no deben ser de solo escritura'
-                  href: ca1044-properties-should-not-be-write-only.md
+                  href: ca1044.md
                 - name: 'CA1045: No pasar tipos por referencia'
-                  href: ca1045-do-not-pass-types-by-reference.md
+                  href: ca1045.md
                 - name: 'CA1046: No sobrecargar el operador de igualdad en los tipos de referencia'
-                  href: ca1046-do-not-overload-operator-equals-on-reference-types.md
+                  href: ca1046.md
                 - name: 'CA1047: No declarar miembros protegidos en tipos sellados'
-                  href: ca1047-do-not-declare-protected-members-in-sealed-types.md
+                  href: ca1047.md
                 - name: 'CA1048: No declarar miembros virtuales en tipos sellados'
-                  href: ca1048-do-not-declare-virtual-members-in-sealed-types.md
+                  href: ca1048.md
                 - name: 'CA1049: Los tipos que poseen recursos nativos deben ser descartables'
-                  href: ca1049-types-that-own-native-resources-should-be-disposable.md
+                  href: ca1049.md
                 - name: 'CA1050: Declarar tipos en espacios de nombres'
-                  href: ca1050-declare-types-in-namespaces.md
+                  href: ca1050.md
                 - name: 'CA1051: No declarar campos de instancia visibles'
-                  href: ca1051-do-not-declare-visible-instance-fields.md
+                  href: ca1051.md
                 - name: 'CA1052: Los tipos titulares estáticos deben estar sellados'
-                  href: ca1052-static-holder-types-should-be-sealed.md
+                  href: ca1052.md
                 - name: 'CA1053: Los tipos titulares estáticos no deben tener constructores'
-                  href: ca1053-static-holder-types-should-not-have-constructors.md
+                  href: ca1053.md
                 - name: 'CA1054: Los parámetros de URI no deben ser cadenas'
-                  href: ca1054-uri-parameters-should-not-be-strings.md
+                  href: ca1054.md
                 - name: 'CA1055: Los valores devueltos URI no deben ser cadenas'
-                  href: ca1055-uri-return-values-should-not-be-strings.md
+                  href: ca1055.md
                 - name: 'CA1056: Las propiedades URI no deben ser cadenas'
-                  href: ca1056-uri-properties-should-not-be-strings.md
+                  href: ca1056.md
                 - name: 'CA1057: Las sobrecargas URI de cadena llaman a sobrecargas System.Uri'
-                  href: ca1057-string-uri-overloads-call-system-uri-overloads.md
+                  href: ca1057.md
                 - name: 'CA1058: Los tipos no deben ampliar ciertos tipos base'
-                  href: ca1058-types-should-not-extend-certain-base-types.md
+                  href: ca1058.md
                 - name: 'CA1059: Los miembros no deben exponer algunos tipos concretos'
-                  href: ca1059-members-should-not-expose-certain-concrete-types.md
+                  href: ca1059.md
                 - name: 'CA1060: Mover P/Invokes a la clase NativeMethods'
-                  href: ca1060-move-p-invokes-to-nativemethods-class.md
+                  href: ca1060.md
                 - name: 'CA1061: No ocultar métodos de clase base'
-                  href: ca1061-do-not-hide-base-class-methods.md
+                  href: ca1061.md
                 - name: 'CA1062: Validar argumentos de métodos públicos'
-                  href: ca1062-validate-arguments-of-public-methods.md
+                  href: ca1062.md
                 - name: 'CA1063: Implementar IDisposable correctamente'
-                  href: ca1063-implement-idisposable-correctly.md
+                  href: ca1063.md
                 - name: 'CA1064: Las excepciones deben ser públicas'
-                  href: ca1064-exceptions-should-be-public.md
+                  href: ca1064.md
                 - name: 'CA1065: No producir excepciones en ubicaciones inesperadas'
-                  href: ca1065-do-not-raise-exceptions-in-unexpected-locations.md
+                  href: ca1065.md
                 - name: 'CA1068: Los parámetros CancellationToken deben aparecer en último lugar'
                   href: ca1068.md
                 - name: 'CA2210: Los ensamblados deben tener nombres seguros válidos'
@@ -350,25 +350,25 @@
                   displayName: globalization warnings
                   href: globalization-warnings.md
                 - name: 'CA1300: Especificar MessageBoxOptions'
-                  href: ca1300-specify-messageboxoptions.md
+                  href: ca1300.md
                 - name: 'CA1301: Evitar los aceleradores duplicados'
-                  href: ca1301-avoid-duplicate-accelerators.md
+                  href: ca1301.md
                 - name: 'CA1302: No codificar las cadenas específicas de configuración regional'
-                  href: ca1302-do-not-hardcode-locale-specific-strings.md
+                  href: ca1302.md
                 - name: 'CA1303: No pasar literales como parámetros localizados'
-                  href: ca1303-do-not-pass-literals-as-localized-parameters.md
+                  href: ca1303.md
                 - name: 'CA1304: Especificar CultureInfo'
-                  href: ca1304-specify-cultureinfo.md
+                  href: ca1304.md
                 - name: 'CA1305: Especificar IFormatProvider'
-                  href: ca1305-specify-iformatprovider.md
+                  href: ca1305.md
                 - name: 'CA1306: Establecer configuración regional de tipos de datos'
-                  href: ca1306-set-locale-for-data-types.md
+                  href: ca1306.md
                 - name: 'CA1307: Especificar StringComparison'
-                  href: ca1307-specify-stringcomparison.md
+                  href: ca1307.md
                 - name: 'CA1308: Normalizar cadenas en mayúsculas'
-                  href: ca1308-normalize-strings-to-uppercase.md
+                  href: ca1308.md
                 - name: 'CA1309: Utilizar StringComparison ordinal'
-                  href: ca1309-use-ordinal-stringcomparison.md
+                  href: ca1309.md
                 - name: 'CA2101: Especificar serialización de argumentos de cadena P-Invoke'
                   href: ca2101.md
             - name: Advertencias de interoperabilidad
@@ -377,54 +377,54 @@
                   displayName: interoperability warnings
                   href: interoperability-warnings.md
                 - name: 'CA1400: Deben existir puntos de entrada P-Invoke'
-                  href: ca1400-p-invoke-entry-points-should-exist.md
+                  href: ca1400.md
                 - name: 'CA1401: Los elementos P-Invoke no deben estar visibles'
-                  href: ca1401-p-invokes-should-not-be-visible.md
+                  href: ca1401.md
                 - name: 'CA1402: Evitar las sobrecargas en interfaces visibles a través de COM'
-                  href: ca1402-avoid-overloads-in-com-visible-interfaces.md
+                  href: ca1402.md
                 - name: 'CA1403: Los tipos de diseño automático no deben ser visibles a través de COM'
-                  href: ca1403-auto-layout-types-should-not-be-com-visible.md
+                  href: ca1403.md
                 - name: 'CA1404: Llamar a GetLastError inmediatamente después de P-Invoke'
-                  href: ca1404-call-getlasterror-immediately-after-p-invoke.md
+                  href: ca1404.md
                 - name: 'CA1405: Los tipos base de tipos visibles a través de COM deben ser visibles a través de COM'
-                  href: ca1405-com-visible-type-base-types-should-be-com-visible.md
+                  href: ca1405.md
                 - name: 'CA1406: Evitar los argumentos Int64 en clientes Visual Basic 6'
-                  href: ca1406-avoid-int64-arguments-for-visual-basic-6-clients.md
+                  href: ca1406.md
                 - name: 'CA1407: Evitar los miembros estáticos en tipos visibles a través de COM'
-                  href: ca1407-avoid-static-members-in-com-visible-types.md
+                  href: ca1407.md
                 - name: 'CA1408: No utilizar AutoDual ClassInterfaceType'
-                  href: ca1408-do-not-use-autodual-classinterfacetype.md
+                  href: ca1408.md
                 - name: 'CA1409: Los tipos visibles a través de COM se deben poder crear'
-                  href: ca1409-com-visible-types-should-be-creatable.md
+                  href: ca1409.md
                 - name: 'CA1410: Los métodos de registro COM deben coincidir'
-                  href: ca1410-com-registration-methods-should-be-matched.md
+                  href: ca1410.md
                 - name: 'CA1411: Los métodos de registro COM no deben ser visibles'
-                  href: ca1411-com-registration-methods-should-not-be-visible.md
+                  href: ca1411.md
                 - name: 'CA1412: Marcar las interfaces ComSource como IDispatch'
-                  href: ca1412-mark-comsource-interfaces-as-idispatch.md
+                  href: ca1412.md
                 - name: 'CA1413: Evitar los campos no públicos en tipos de valor visibles a través de COM'
-                  href: ca1413-avoid-non-public-fields-in-com-visible-value-types.md
+                  href: ca1413.md
                 - name: 'CA1414: Marcar los argumentos P-Invoke booleanos con MarshalAs'
-                  href: ca1414-mark-boolean-p-invoke-arguments-with-marshalas.md
+                  href: ca1414.md
                 - name: 'CA1415: Declarar elementos P-Invoke correctamente'
-                  href: ca1415-declare-p-invokes-correctly.md
+                  href: ca1415.md
             - name: Advertencias de mantenimiento
               items:
                 - name: Información general
                   displayName: maintainability warnings
                   href: maintainability-warnings.md
                 - name: 'CA1500: Los nombres de las variables no deben coincidir con los nombres de los campos'
-                  href: ca1500-variable-names-should-not-match-field-names.md
+                  href: ca1500.md
                 - name: 'CA1501: Evitar una herencia excesiva'
-                  href: ca1501-avoid-excessive-inheritance.md
+                  href: ca1501.md
                 - name: 'CA1502: Evitar una complejidad excesiva'
-                  href: ca1502-avoid-excessive-complexity.md
+                  href: ca1502.md
                 - name: 'CA1504: Revisar los nombres de campos erróneos'
-                  href: ca1504-review-misleading-field-names.md
+                  href: ca1504.md
                 - name: 'CA1505: Evitar código que no se puede mantener'
-                  href: ca1505-avoid-unmaintainable-code.md
+                  href: ca1505.md
                 - name: 'CA1506: Evitar el acoplamiento excesivo de clases'
-                  href: ca1506-avoid-excessive-class-coupling.md
+                  href: ca1506.md
                 - name: 'CA1507: Usar nameof en lugar de la cadena'
                   href: ca1507.md
             - name: Advertencias de movilidad
@@ -433,60 +433,60 @@
                   displayName: mobility warnings
                   href: mobility-warnings.md
                 - name: 'CA1600: No utilizar la prioridad del proceso inactiva'
-                  href: ca1600-do-not-use-idle-process-priority.md
+                  href: ca1600.md
                 - name: 'CA1601: No utilizar temporizadores que impidan los cambios de estado de energía'
-                  href: ca1601-do-not-use-timers-that-prevent-power-state-changes.md
+                  href: ca1601.md
             - name: Advertencias de nomenclatura
               items:
                 - name: Información general
                   displayName: naming warnings
                   href: naming-warnings.md
                 - name: 'CA1700: No nombrar valores de enumeración como ''Reserved'''
-                  href: ca1700-do-not-name-enum-values-reserved.md
+                  href: ca1700.md
                 - name: 'CA1701: En las palabras compuestas de la cadena de recursos se deben utilizar mayúsculas y minúsculas correctamente'
-                  href: ca1701-resource-string-compound-words-should-be-cased-correctly.md
+                  href: ca1701.md
                 - name: 'CA1702: En las palabras compuestas se deben utilizar mayúsculas y minúsculas correctamente'
-                  href: ca1702-compound-words-should-be-cased-correctly.md
+                  href: ca1702.md
                 - name: 'CA1703: La ortografía de las cadenas de recursos debe ser correcta'
-                  href: ca1703-resource-strings-should-be-spelled-correctly.md
+                  href: ca1703.md
                 - name: 'CA1704: La ortografía de los identificadores debe ser correcta'
-                  href: ca1704-identifiers-should-be-spelled-correctly.md
+                  href: ca1704.md
                 - name: 'CA1707: Los identificadores no deben contener caracteres de subrayado'
-                  href: ca1707-identifiers-should-not-contain-underscores.md
+                  href: ca1707.md
                 - name: 'CA1708: Los identificadores se deben diferenciar en algo más que en el uso de mayúsculas y minúsculas'
-                  href: ca1708-identifiers-should-differ-by-more-than-case.md
+                  href: ca1708.md
                 - name: 'CA1709: Los identificadores deben utilizar las mayúsculas y minúsculas correctamente'
-                  href: ca1709-identifiers-should-be-cased-correctly.md
+                  href: ca1709.md
                 - name: 'CA1710: Los identificadores deben tener un sufijo correcto'
-                  href: ca1710-identifiers-should-have-correct-suffix.md
+                  href: ca1710.md
                 - name: 'CA1711: Los identificadores no deben tener un sufijo incorrecto'
-                  href: ca1711-identifiers-should-not-have-incorrect-suffix.md
+                  href: ca1711.md
                 - name: 'CA1712: No utilizar prefijos en valores de enumeración con el nombre del tipo'
-                  href: ca1712-do-not-prefix-enum-values-with-type-name.md
+                  href: ca1712.md
                 - name: 'CA1713: Los eventos no deben tener prefijos antes ni después'
-                  href: ca1713-events-should-not-have-before-or-after-prefix.md
+                  href: ca1713.md
                 - name: 'CA1714: Las enumeraciones Flags deben tener nombres en plural'
-                  href: ca1714-flags-enums-should-have-plural-names.md
+                  href: ca1714.md
                 - name: 'CA1715: Los identificadores deben tener el prefijo correcto'
-                  href: ca1715-identifiers-should-have-correct-prefix.md
+                  href: ca1715.md
                 - name: 'CA1716: Los identificadores no deben coincidir con palabras clave'
-                  href: ca1716-identifiers-should-not-match-keywords.md
+                  href: ca1716.md
                 - name: 'CA1717: Solo las enumeraciones FlagsAttribute deben tener nombres en plural'
-                  href: ca1717-only-flagsattribute-enums-should-have-plural-names.md
+                  href: ca1717.md
                 - name: 'CA1719: Los nombres de parámetro no deben coincidir con los nombres de miembro'
-                  href: ca1719-parameter-names-should-not-match-member-names.md
+                  href: ca1719.md
                 - name: 'CA1720: Los identificadores no deben contener nombres de tipo'
-                  href: ca1720-identifiers-should-not-contain-type-names.md
+                  href: ca1720.md
                 - name: 'CA1721: Los nombres de propiedades no deben coincidir con los métodos get'
-                  href: ca1721-property-names-should-not-match-get-methods.md
+                  href: ca1721.md
                 - name: 'CA1722: Los identificadores no deben tener un prefijo incorrecto'
-                  href: ca1722-identifiers-should-not-have-incorrect-prefix.md
+                  href: ca1722.md
                 - name: 'CA1725: Los nombres de parámetro deben coincidir con la declaración base'
-                  href: ca1725-parameter-names-should-match-base-declaration.md
+                  href: ca1725.md
                 - name: 'CA1724: Los nombres de tipo no deben coincidir con los espacios de nombres'
-                  href: ca1724-type-names-should-not-match-namespaces.md
+                  href: ca1724.md
                 - name: 'CA1726: Utilizar términos preferidos'
-                  href: ca1726-use-preferred-terms.md
+                  href: ca1726.md
             - name: Advertencias de rendimiento
               items:
                 - name: Información general

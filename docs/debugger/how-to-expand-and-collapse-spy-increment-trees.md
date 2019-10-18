@@ -1,5 +1,5 @@
 ---
-title: Procedimiento Expandir y contraer árboles de Spy ++ | Documentos de Microsoft
+title: 'Cómo: expandir y contraer árboles de Spy + + | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,33 +10,33 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fe706260bcb535f33a14eea2fd174ee37ea1c8aa
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 68ebfcc4b95b50988673e5ce229d27c5c12d0783
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63388375"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72450364"
 ---
-# <a name="how-to-expand-and-collapse-spy-trees"></a>Procedimiento Expansión y contracción de árboles de Spy++
-Puede expandir y contraer las vistas de Windows, procesos y subprocesos utilizando dos métodos: haciendo clic en los iconos en la ventana o mediante el **árbol** menú. El + y - iconos en el árbol de actúan como lo hacen en la ventana de proyecto de Visual C++.
+# <a name="how-to-expand-and-collapse-spy-trees"></a>Cómo: Expandir y contraer árboles de Spy++
+Puede expandir y contraer las vistas ventanas, procesos y subprocesos mediante dos métodos: haciendo clic en los iconos de la ventana o usando el menú de **árbol** . Los iconos + y-del árbol actúan como en la C++ ventana proyecto.
 
- El **árbol** menú contiene cuatro comandos:
+ El menú de **árbol** contiene cuatro comandos:
 
 |Comando de menú|Descripción|
 |------------------|-----------------|
 |**Expandir un nivel**|Expande el elemento seleccionado actualmente al siguiente nivel.|
-|**Expandir rama**|Expande totalmente el elemento seleccionado actualmente.|
-|**Expandir todo**|Expande totalmente todos los elementos de la ventana.|
-|**Contraer**|Contrae totalmente el elemento seleccionado actualmente.|
+|**Expandir rama**|Expande completamente el elemento seleccionado actualmente.|
+|**Expandir todo**|Expande completamente todos los elementos de la ventana.|
+|**Contraer**|Contrae completamente el elemento seleccionado actualmente.|
 
 > [!TIP]
 > Si expande un proceso, verá todos los subprocesos que posee el proceso. Si expande un subproceso, verá una lista de todas las ventanas que posee.
 
-### <a name="to-expand-or-collapse-spy-trees"></a>Para expandir o contraer árboles de Spy ++
+### <a name="to-expand-or-collapse-spy-trees"></a>Para expandir o contraer árboles de Spy + +
 
-1. Resaltar uno de los elementos en la vista de Windows, procesos o subprocesos.
+1. Resalte uno de los elementos de la vista ventanas, procesos o subprocesos.
 
-2. Desde el **árbol** menú, elija uno de la expandir o contraer los comandos.
+2. En el menú de **árbol** , elija uno de los comandos de expandir o contraer.
 
 ## <a name="see-also"></a>Vea también
 - [Usar Spy++](../debugger/using-spy-increment.md)
