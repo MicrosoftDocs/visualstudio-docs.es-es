@@ -239,7 +239,7 @@
             - name: Vistas personalizadas (administradas)
               items:
                 - name: Crear vistas personalizadas de objetos administrados
-                  href: create-custom-views-of-dot-managed-objects.md
+                  href: create-custom-views-of-managed-objects.md
                 - name: Cómo indicar al depurador qué mostrar
                   href: using-the-debuggerdisplay-attribute.md
                 - name: Cómo indicar al depurador qué tipo mostrar
