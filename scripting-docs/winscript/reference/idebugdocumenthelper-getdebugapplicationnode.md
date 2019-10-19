@@ -1,5 +1,5 @@
 ---
-title: IDebugDocumentHelper::GetDebugApplicationNode | Microsoft Docs
+title: 'IDebugDocumentHelper:: GetDebugApplicationNode | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,12 +17,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 10740c3489b617b1685ad222cac7c158e0196c4d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 1b0fc05b73ffd9880b1dec366cabd4b3cc316b80
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62783091"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72576955"
 ---
 # <a name="idebugdocumenthelpergetdebugapplicationnode"></a>IDebugDocumentHelper::GetDebugApplicationNode
 Devuelve el nodo de la aplicación de depuración correspondiente a este documento.  
@@ -37,7 +37,7 @@ HRESULT GetDebugApplicationNode(
   
 #### <a name="parameters"></a>Parámetros  
  `ppdan`  
- [out] El nodo de aplicación de depuración correspondiente a este documento.  
+ enuncia El nodo de la aplicación de depuración correspondiente a este documento.  
   
 ## <a name="return-value"></a>Valor devuelto  
  El método devuelve un objeto `HRESULT`. Entre los valores posibles se incluyen los que se indican en la tabla siguiente, entre otros.  
@@ -47,7 +47,7 @@ HRESULT GetDebugApplicationNode(
 |`S_OK`|El método se realizó correctamente.|  
   
 ## <a name="remarks"></a>Comentarios  
- Devolver el nodo de la aplicación de depuración correspondiente a este documento.  
+ Devuelve el nodo de la aplicación de depuración correspondiente a este documento.  
   
 ## <a name="see-also"></a>Vea también  
  [IDebugDocumentHelper (Interfaz)](../../winscript/reference/idebugdocumenthelper-interface.md)

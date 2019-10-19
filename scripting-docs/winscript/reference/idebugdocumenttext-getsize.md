@@ -1,5 +1,5 @@
 ---
-title: IDebugDocumentText::GetSize | Microsoft Docs
+title: 'IDebugDocumentText:: se obtiene | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 95f8df44a503fa72f57a9cee17eb5e832e4eb670
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ef6f75b396dddec80fb2ae89c71f8579ce3c29b9
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63008597"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72572091"
 ---
 # <a name="idebugdocumenttextgetsize"></a>IDebugDocumentText::GetSize
-Devuelve el número de líneas y el número de caracteres en el documento.  
+Devuelve el número de líneas y el número de caracteres del documento.  
   
 ## <a name="syntax"></a>Sintaxis  
   
@@ -38,10 +38,10 @@ HRESULT GetSize(
   
 #### <a name="parameters"></a>Parámetros  
  `pcNumLines`  
- [out] Número de líneas en el documento. Si este parámetro es NULL, el método no devuelve un valor.  
+ enuncia Número de líneas del documento. Si este parámetro es NULL, el método no devuelve ningún valor.  
   
  `pcNumChars`  
- [out] Número de caracteres del documento. Si este parámetro es NULL, el método no devuelve un valor.  
+ enuncia Número de caracteres del documento. Si este parámetro es NULL, el método no devuelve ningún valor.  
   
 ## <a name="return-value"></a>Valor devuelto  
  El método devuelve un objeto `HRESULT`. Entre los valores posibles se incluyen los que se indican en la tabla siguiente, entre otros.  
@@ -51,7 +51,7 @@ HRESULT GetSize(
 |`S_OK`|El método se realizó correctamente.|  
   
 ## <a name="remarks"></a>Comentarios  
- Este método devuelve el número de líneas y el número de caracteres en el documento.  
+ Este método devuelve el número de líneas y el número de caracteres del documento.  
   
 ## <a name="see-also"></a>Vea también  
  [IDebugDocumentText (Interfaz)](../../winscript/reference/idebugdocumenttext-interface.md)

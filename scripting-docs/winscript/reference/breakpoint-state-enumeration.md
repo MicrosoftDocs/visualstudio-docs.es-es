@@ -1,5 +1,5 @@
 ---
-title: BREAKPOINT_STATE (enumeración) | Microsoft Docs
+title: Enumeración BREAKPOINT_STATE | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,14 +17,14 @@ caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: faca5ef7bc89bc16d646f66fb897f1dc44eb831a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 8c56a8b135a0aa9a4f8ddf91e146d4d64367bb2b
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62955365"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72572635"
 ---
-# <a name="breakpointstate-enumeration"></a>Enumeración BREAKPOINT_STATE
+# <a name="breakpoint_state-enumeration"></a>Enumeración BREAKPOINT_STATE
 Indica el estado de un punto de interrupción.  
   
 ## <a name="syntax"></a>Sintaxis  
@@ -42,8 +42,8 @@ typedef enum tagBREAKPOINT_STATE {
 |Miembro|Descripción|  
 |------------|-----------------|  
 |BREAKPOINT_DELETED|El punto de interrupción ya no existe, pero todavía hay referencias a él.|  
-|BREAKPOINT_DISABLED|El punto de interrupción existe pero está deshabilitado.|  
-|BREAKPOINT_ENABLED|El punto de interrupción exista y esté habilitado.|  
+|BREAKPOINT_DISABLED|El punto de interrupción existe, pero está deshabilitado.|  
+|BREAKPOINT_ENABLED|El punto de interrupción existe y está habilitado.|  
   
 ## <a name="see-also"></a>Vea también  
  [Active Script Debugger (Constantes, Enumeraciones y Estructuras)](../../winscript/reference/active-script-debugger-constants-enumerations-and-structures.md)

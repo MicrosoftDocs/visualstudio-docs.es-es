@@ -1,5 +1,5 @@
 ---
-title: IDebugCookie (interfaz) | Microsoft Docs
+title: Interfaz Idebugcookie (| Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -13,18 +13,18 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8ee129526113a1c8af8f918de81c1f286d5cb703
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 47b48b917ee3376c417beffd9972d76a444513ef
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62974519"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72573195"
 ---
 # <a name="idebugcookie-interface"></a>IDebugCookie (Interfaz)
-Permite que la cookie de depuración se puede establecer para su uso con el `IMachineDebugManagerCookie` interfaz. Para obtener más información, consulte [IMachineDebugManagerCookie (interfaz)](../../winscript/reference/imachinedebugmanagercookie-interface.md). Esta interfaz se implementa mediante el proceso de depurar Manager (PDM) y consumida por los depuradores de scripts.  
+Permite establecer la cookie de depuración, para su uso con la interfaz `IMachineDebugManagerCookie`. Para obtener más información, vea [imachinedebugmanagercookie ((interfaz](../../winscript/reference/imachinedebugmanagercookie-interface.md)). El administrador de depuración de proceso (PDM) implementa esta interfaz y la utilizan los depuradores de scripts.  
   
 ## <a name="methods"></a>Métodos  
- Además de los métodos heredados de `IUnknown`, el `IDebugCookie` interfaz expone los métodos siguientes.  
+ Además de los métodos heredados de `IUnknown`, la interfaz de `IDebugCookie` expone los métodos siguientes.  
   
 |Método|Descripción|  
 |------------|-----------------|  

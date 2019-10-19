@@ -1,5 +1,5 @@
 ---
-title: IEnumRemoteDebugApplications::Clone | Documentos de Microsoft
+title: 'Ienumremotedebugapplications (:: Clone | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,12 +17,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 06b2eac008b0bccc3d0671e15658b5a189b5dcaa
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 0e8007505c6e7c4bc4c881b07c5247f0647824bc
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62963278"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72572014"
 ---
 # <a name="ienumremotedebugapplicationsclone"></a>IEnumRemoteDebugApplications::Clone
 Crea un enumerador que contiene el mismo estado que el enumerador actual.  
@@ -37,7 +37,7 @@ HRESULT Clone(
   
 #### <a name="parameters"></a>Parámetros  
  `ppessd`  
- [out] Un clon del enumerador.  
+ enuncia Clon del enumerador.  
   
 ## <a name="return-value"></a>Valor devuelto  
  El método devuelve un objeto `HRESULT`. Entre los valores posibles se incluyen los que se indican en la tabla siguiente, entre otros.  

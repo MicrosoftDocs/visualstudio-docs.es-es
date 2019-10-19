@@ -1,5 +1,5 @@
 ---
-title: IDebugDocumentText::GetText | Microsoft Docs
+title: 'IDebugDocumentText:: GetText | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 63e1fee3531272f18c85c23ea83b8ca12920bd2a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: e6472c40802fff4dad6e5ecc8f2729c95459e09f
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62970866"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72572073"
 ---
 # <a name="idebugdocumenttextgettext"></a>IDebugDocumentText::GetText
-Recupera los caracteres o los atributos de carácter asociados a un intervalo de la posición del carácter.  
+Recupera los caracteres y/o los atributos de carácter asociados a un intervalo de posiciones de caracteres.  
   
 ## <a name="syntax"></a>Sintaxis  
   
@@ -41,19 +41,19 @@ HRESULT GetText(
   
 #### <a name="parameters"></a>Parámetros  
  `cCharacterPosition`  
- [in] Inicie la ubicación de la posición del intervalo de caracteres.  
+ de Ubicación de inicio del intervalo de posición de caracteres.  
   
  `pcharText`  
- [in, out] Un búfer de texto del carácter. El búfer debe ser lo suficientemente grande como para contener `cMaxChars` caracteres. Si este parámetro es NULL, el método no devuelve caracteres.  
+ [in, out] Un búfer de texto de caracteres. El búfer debe ser lo suficientemente grande como para contener `cMaxChars` caracteres. Si este parámetro es NULL, el método no devuelve caracteres.  
   
  `pstaTextAttr`  
- [in, out] Un búfer de atributo de caracteres. El búfer debe ser lo suficientemente grande como para contener `cMaxChars` caracteres. Si este parámetro es NULL, el método no devuelve los atributos.  
+ [in, out] Un búfer de atributo de carácter. El búfer debe ser lo suficientemente grande como para contener `cMaxChars` caracteres. Si este parámetro es NULL, el método no devuelve atributos.  
   
  `pcNumChars`  
- [in, out] Devuelve el número de caracteres o atributos. Este parámetro debe establecerse en cero antes de llamar a este método.  
+ [in, out] Número de caracteres o atributos devueltos. Este parámetro debe establecerse en cero antes de llamar a este método.  
   
  `cMaxChars`  
- [in] Número de caracteres en el intervalo de la posición de carácter. También especifica el número máximo de caracteres que se va a devolver.  
+ de Número de caracteres del intervalo de posición de caracteres. También especifica el número máximo de caracteres que se van a devolver.  
   
 ## <a name="return-value"></a>Valor devuelto  
  El método devuelve un objeto `HRESULT`. Entre los valores posibles se incluyen los que se indican en la tabla siguiente, entre otros.  
@@ -63,8 +63,8 @@ HRESULT GetText(
 |`S_OK`|El método se realizó correctamente.|  
   
 ## <a name="remarks"></a>Comentarios  
- Este método recupera los caracteres o los atributos de carácter asociados a un intervalo de la posición del carácter. El intervalo de la posición de carácter especificado por una posición de carácter y un número de caracteres.  
+ Este método recupera los caracteres y/o los atributos de carácter asociados a un intervalo de posiciones de caracteres. El intervalo de posición de caracteres se especifica mediante una posición de carácter y un número de caracteres.  
   
 ## <a name="see-also"></a>Vea también  
- [IDebugDocumentText (interfaz)](../../winscript/reference/idebugdocumenttext-interface.md)   
+ @No__t_1 de la [interfaz IDebugDocumentText](../../winscript/reference/idebugdocumenttext-interface.md)  
  [SOURCE_TEXT_ATTR (Enumeración)](../../winscript/reference/source-text-attr-enumeration.md)

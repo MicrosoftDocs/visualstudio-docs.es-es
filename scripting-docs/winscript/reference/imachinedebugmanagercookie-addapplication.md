@@ -1,5 +1,5 @@
 ---
-title: IMachineDebugManagerCookie::AddApplication | Microsoft Docs
+title: 'Imachinedebugmanagercookie (:: AddApplication | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c71983dd5f1273679351bc45c1db2df62757d153
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: da436308c71a66d3070d42128d8da03ae88d2935
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62977661"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72573912"
 ---
 # <a name="imachinedebugmanagercookieaddapplication"></a>IMachineDebugManagerCookie::AddApplication
-Agrega a la que se ejecuta una aplicación de lista de aplicaciones.  
+Agrega una aplicación a la lista de aplicaciones en ejecución.  
   
 ## <a name="syntax"></a>Sintaxis  
   
@@ -39,13 +39,13 @@ HRESULT AddApplication(
   
 #### <a name="parameters"></a>Parámetros  
  `pda`  
- [in] Aplicación en el que se ejecuta la lista de aplicaciones.  
+ de Aplicación a la lista de aplicaciones en ejecución.  
   
  `dwDebugAppCookie`  
- [in] Una cookie que identifica la aplicación de depuración.  
+ de Cookie que identifica la aplicación de depuración.  
   
  `pdwAppCookie`  
- [out] Una cookie que se usa para quitar la aplicación desde el Administrador de depuración de la máquina.  
+ enuncia Cookie que se usa para quitar la aplicación del administrador de depuración del equipo.  
   
 ## <a name="return-value"></a>Valor devuelto  
  El método devuelve un objeto `HRESULT`. Entre los valores posibles se incluyen los que se indican en la tabla siguiente, entre otros.  
@@ -55,9 +55,9 @@ HRESULT AddApplication(
 |`S_OK`|El método se realizó correctamente.|  
   
 ## <a name="remarks"></a>Comentarios  
- El Administrador de depuración del proceso se llama a este método cada vez que `IProcessDebugManager::AddApplication` se llama.  
+ El administrador de depuración de proceso llama a este método cada vez que se llama a `IProcessDebugManager::AddApplication`.  
   
 ## <a name="see-also"></a>Vea también  
- [IMachineDebugManagerCookie (interfaz)](../../winscript/reference/imachinedebugmanagercookie-interface.md)   
- [IMachineDebugManagerCookie::RemoveApplication](../../winscript/reference/imachinedebugmanagercookie-removeapplication.md)   
+ @No__t_1 de la [interfaz imachinedebugmanagercookie (](../../winscript/reference/imachinedebugmanagercookie-interface.md)  
+ [Imachinedebugmanagercookie (:: RemoveApplication](../../winscript/reference/imachinedebugmanagercookie-removeapplication.md)    
  [IProcessDebugManager::AddApplication](../../winscript/reference/iprocessdebugmanager-addapplication.md)

@@ -1,5 +1,5 @@
 ---
-title: IDebugDocumentTextExternalAuthor::NotifyChanged | Documentos de Microsoft
+title: 'Idebugdocumenttextexternalauthor (:: NotifyChanged | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 1290de76f8bec5018ad83eb4499c3d92cbf9eba9
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ad02db80bd24a8a5ba96abaa61e85be9d69e553e
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62978541"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72575956"
 ---
 # <a name="idebugdocumenttextexternalauthornotifychanged"></a>IDebugDocumentTextExternalAuthor::NotifyChanged
-Notifica al host que ha cambiado el código fuente del documento.  
+Notifica al host que el origen del documento ha cambiado.  
   
 ## <a name="syntax"></a>Sintaxis  
   
@@ -44,7 +44,7 @@ HRESULT NotifyChanged();
 |`S_OK`|El método se realizó correctamente.|  
   
 ## <a name="remarks"></a>Comentarios  
- Un editor externo llama a este método después de un documento basado en archivos depurador se puede modificar y guardar para notificar al host que ha cambiado el código fuente del documento. El host, a continuación, actualiza el documento desde el archivo de origen.  
+ Un editor externo llama a este método después de modificar y guardar un documento de depurador basado en archivos para notificar al host que el origen del documento ha cambiado. Después, el host actualiza el documento desde el archivo de código fuente.  
   
 ## <a name="see-also"></a>Vea también  
  [IDebugDocumentTextExternalAuthor (Interfaz)](../../winscript/reference/idebugdocumenttextexternalauthor-interface.md)

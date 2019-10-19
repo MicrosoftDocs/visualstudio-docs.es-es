@@ -1,5 +1,5 @@
 ---
-title: IActiveScriptProfilerCallback::Shutdown | Documentos de Microsoft
+title: 'Iactivescriptprofilercallback (:: Shutdown | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -15,15 +15,15 @@ caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 091ccc30f16081fdca8f10778efec208ef5ccb16
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: deecfe4134a4b0e18591823f194ceaf6d1eb0a14
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62993428"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72571645"
 ---
 # <a name="iactivescriptprofilercallbackshutdown"></a>IActiveScriptProfilerCallback::Shutdown
-Se llama para informar al objeto de generador de perfiles, siempre que se detiene la generación de perfiles en un motor de scripting. De este modo, el objeto de generador de perfiles puede llamar a sus rutinas de limpieza, si es necesario. Este método también se llama por el motor de scripting cuando se está cerrando el motor de scripting, o cuando una llamada a [IActiveScriptProfilerCallback::Initialize](../../winscript/reference/iactivescriptprofilercallback-initialize.md) se produce un error.  
+Se llama para informar al objeto del generador de perfiles cada vez que se detenga la generación de perfiles en un motor de scripting. De este modo, el objeto de generador de perfiles puede llamar a sus rutinas de limpieza, si es necesario. El motor de scripting también llama a este método cuando el motor de scripting se está cerrando o cuando se produce un error en una llamada a [iactivescriptprofilercallback (:: Initialize](../../winscript/reference/iactivescriptprofilercallback-initialize.md) .  
   
 ## <a name="syntax"></a>Sintaxis  
   
@@ -34,10 +34,10 @@ HRESULT Shutdown(
   
 #### <a name="parameters"></a>Parámetros  
  `hrReason`  
- [in] El motivo del cierre. Si se está cerrando el motor de scripting, `S_OK` se pasa. Si la llamada a [IActiveScriptProfilerCallback::Initialize](../../winscript/reference/iactivescriptprofilercallback-initialize.md) devuelve un valor HRESULT de error, se pasa el valor HRESULT. En caso contrario, este valor se recupera de [IActiveScriptProfilerControl::StopProfiling](../../winscript/reference/iactivescriptprofilercontrol-stopprofiling.md).  
+ de Motivo del cierre. Si el motor de scripting se está cerrando, se pasa `S_OK`. Si la llamada a [iactivescriptprofilercallback (:: Initialize](../../winscript/reference/iactivescriptprofilercallback-initialize.md) devuelve un error HRESULT, se pasa HRESULT. De lo contrario, este valor se recupera de [iactivescriptprofilercontrol (:: StopProfiling](../../winscript/reference/iactivescriptprofilercontrol-stopprofiling.md).  
   
 ## <a name="return-value"></a>Valor devuelto  
- Se omite el valor devuelto de este método por el motor de scripting.  
+ El motor de scripting omite el valor devuelto de este método.  
   
 ## <a name="see-also"></a>Vea también  
  [IActiveScriptProfilerCallback (Interfaz)](../../winscript/reference/iactivescriptprofilercallback-interface.md)

@@ -1,5 +1,5 @@
 ---
-title: IScriptEntry::SetText | Microsoft Docs
+title: 'Iscriptentry (:: SetText | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 17e716a7ad52cc5aeca18d02122edb9c457b14e4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b0b39dcbd2b61e7236403948eaa91a76e0afee45
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62787637"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72573642"
 ---
 # <a name="iscriptentrysettext"></a>IScriptEntry::SetText
-Establece el texto que se corresponde con un `IScriptEntry` bloque de script o el código fuente que se encuentra en un `IScriptScriptlet` controlador de eventos.  
+Establece el texto que corresponde a un `IScriptEntry` bloque de script o el código fuente incluido en un controlador de eventos `IScriptScriptlet`.  
   
 ## <a name="syntax"></a>Sintaxis  
   
@@ -37,10 +37,10 @@ HRESULT SetText(
   
 #### <a name="parameters"></a>Parámetros  
  `psz`  
- [in] El texto de la `IScriptEntry` bloque de script o el código fuente de la `IScriptScriptlet` controlador de eventos.  
+ de El texto del bloque de script de `IScriptEntry` o el código fuente del controlador de eventos `IScriptScriptlet`.  
   
 ## <a name="return-value"></a>Valor devuelto  
- Una clase `HRESULT`. Entre los valores posibles se incluyen los que se indican en la tabla siguiente, entre otros.  
+ Interfaz `HRESULT`. Entre los valores posibles se incluyen los que se indican en la tabla siguiente, entre otros.  
   
 |Valor|Descripción|  
 |-----------|-----------------|  

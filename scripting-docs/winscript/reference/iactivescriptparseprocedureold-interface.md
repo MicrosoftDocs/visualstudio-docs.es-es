@@ -1,5 +1,5 @@
 ---
-title: IActiveScriptParseProcedureOld (interfaz) | Documentos de Microsoft
+title: Interfaz Iactivescriptparseprocedureold (| Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,25 +17,25 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 520d3f1414447abfc7c018d36853b72aefbbf15f
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 4558a0cab2aea9b56db2759bb80b1287cd33ce87
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63386172"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72571426"
 ---
 # <a name="iactivescriptparseprocedureold-interface"></a>IActiveScriptParseProcedureOld (Interfaz)
-Permite que el texto del código fuente para los procedimientos que se agregarán a la secuencia de comandos. Para los lenguajes de scripting interpretados que no tienen un entorno de creación independiente, como VBScript, esto proporciona un mecanismo alternativo (distinto de `IActiveScriptParse` o `IPersist*`) para agregar los procedimientos de la secuencia de comandos para el espacio de nombres.  
+Permite agregar el texto de código fuente para los procedimientos al script. En el caso de los lenguajes de scripting interpretados que no tienen un entorno de creación independiente, como VBScript, proporciona un mecanismo alternativo (distinto de `IActiveScriptParse` o `IPersist*`) para agregar procedimientos de script al espacio de nombres.  
   
 > [!NOTE]
-> Esta interfaz está en desuso en favor de la `IActiveScriptParseProcedure` interfaz.  
+> Esta interfaz está en desuso en favor de la interfaz `IActiveScriptParseProcedure`.  
   
 ## <a name="methods"></a>Métodos  
- Además de los métodos heredados de `IUnknown`, el `IActiveScriptParseProcedureOld` interfaz expone los métodos siguientes.  
+ Además de los métodos heredados de `IUnknown`, la interfaz de `IActiveScriptParseProcedureOld` expone los métodos siguientes.  
   
 |Método|Descripción|  
 |------------|-----------------|  
-|[IActiveScriptParseProcedureOld::ParseProcedureText](../../winscript/reference/iactivescriptparseprocedureold-parseproceduretext.md)|Analiza el procedimiento de código especificado y agrega el procedimiento para el espacio de nombres.|  
+|[IActiveScriptParseProcedureOld::ParseProcedureText](../../winscript/reference/iactivescriptparseprocedureold-parseproceduretext.md)|Analiza el procedimiento de código dado y agrega el procedimiento al espacio de nombres.|  
   
 ## <a name="see-also"></a>Vea también  
  [IActiveScriptParseProcedure](../../winscript/reference/iactivescriptparseprocedure.md)

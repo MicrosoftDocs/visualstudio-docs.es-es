@@ -1,5 +1,5 @@
 ---
-title: JS_NATIVE_FRAME Structure | Microsoft Docs
+title: Estructura JS_NATIVE_FRAME | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -15,14 +15,14 @@ caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 9a0777cf42b9ed9412602cb34ed2d521deca1fb9
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a0b624229a96cfc2a2d2044a926f45fa91a1c76c
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62968677"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72571766"
 ---
-# <a name="jsnativeframe-structure"></a>Estructura JS_NATIVE_FRAME
+# <a name="js_native_frame-structure"></a>Estructura JS_NATIVE_FRAME
 Representa un marco de pila.  
   
 ## <a name="syntax"></a>Sintaxis  

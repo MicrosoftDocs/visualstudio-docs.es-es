@@ -1,5 +1,5 @@
 ---
-title: IDebugSessionProvider::StartDebugSession | Documentos de Microsoft
+title: 'Idebugsessionprovider (:: StartDebugSession | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,12 +17,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 1be2b299c2bd4dfa6e35a8fa1b0019d4f1124804
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 0fc4bdade94401d5fc7b5756eb61fddd166fe49b
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62979040"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72574907"
 ---
 # <a name="idebugsessionproviderstartdebugsession"></a>IDebugSessionProvider::StartDebugSession
 Inicia una sesión de depuración con la aplicación especificada.  
@@ -37,7 +37,7 @@ HRESULT StartDebugSession(
   
 #### <a name="parameters"></a>Parámetros  
  `pda`  
- [in] Especifica la aplicación de depuración.  
+ de Especifica la aplicación de depuración.  
   
 ## <a name="return-value"></a>Valor devuelto  
  El método devuelve un objeto `HRESULT`. Entre los valores posibles se incluyen los que se indican en la tabla siguiente, entre otros.  
@@ -47,8 +47,8 @@ HRESULT StartDebugSession(
 |`S_OK`|El método se realizó correctamente.|  
   
 ## <a name="remarks"></a>Comentarios  
- Este método inicia una sesión de depuración con la aplicación especificada. El depurador debe llamar a `IRemoteDebugApplication::ConnectDebugger` antes de abandonar esta llamada.  
+ Este método inicia una sesión de depuración con la aplicación especificada. El depurador debe llamar a `IRemoteDebugApplication::ConnectDebugger` antes de volver de esta llamada.  
   
 ## <a name="see-also"></a>Vea también  
- [IDebugSessionProvider (interfaz)](../../winscript/reference/idebugsessionprovider-interface.md)   
+ @No__t_1 de la [interfaz idebugsessionprovider (](../../winscript/reference/idebugsessionprovider-interface.md)  
  [IRemoteDebugApplication::ConnectDebugger](../../winscript/reference/iremotedebugapplication-connectdebugger.md)

@@ -1,5 +1,5 @@
 ---
-title: IDebugApplication::StepOutComplete | Microsoft Docs
+title: 'Idebugapplication (:: StepOutComplete | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 04f8ecfb835199afa0a60f3fde3c8fbdc8812240
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: f50d7e8a8936e52f4177450e7d163c4cfeaa55df
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62990616"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72571036"
 ---
 # <a name="idebugapplicationstepoutcomplete"></a>IDebugApplication::StepOutComplete
-Notifica al administrador de depuración de proceso que un motor de lenguaje en modo paso a paso está a punto de volver a su llamador.  
+Notifica al administrador de depuración de procesos que un motor de lenguaje en modo de paso único está a punto de volver a su llamador.  
   
 ## <a name="syntax"></a>Sintaxis  
   
@@ -44,7 +44,7 @@ HRESULT StepOutComplete();
 |`S_OK`|El método se realizó correctamente.|  
   
 ## <a name="remarks"></a>Comentarios  
- Motores de lenguaje llamar a este método en modo paso a paso antes de que se devuelven a su llamador. El Administrador de depuración de procesos utiliza esta oportunidad para notificar a todos los otros motores de script que deben interrumpir en la primera oportunidad. Esta técnica es paso entre lenguajes cómo se implementan los modos.  
+ Los motores de lenguaje llaman a este método en modo de un solo paso antes de volver a su llamador. El administrador de depuración de proceso utiliza esta oportunidad para notificar a todos los demás motores de scripts que deben interrumpir en la primera oportunidad. Esta técnica es la forma en que se implementan los modos de paso entre lenguajes.  
   
 ## <a name="see-also"></a>Vea también  
  [IDebugApplication (Interfaz)](../../winscript/reference/idebugapplication-interface.md)

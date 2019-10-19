@@ -1,5 +1,5 @@
 ---
-title: IActiveScriptParse::AddScriptlet | Microsoft Docs
+title: 'IActiveScriptParse:: AddScriptlet | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ee5d76060789118e9051c2d8dcc5fc570617f6a8
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c1b4ac460afea1efd538c64224d84afef49d1a67
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62954959"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72573538"
 ---
 # <a name="iactivescriptparseaddscriptlet"></a>IActiveScriptParse::AddScriptlet
-Agrega un scriptlet de código a la secuencia de comandos. Este método se usa en entornos donde el estado persistente del script es imbricado con el documento de host y el host es responsable de restaurar la secuencia de comandos, en lugar de mediante un `IPersist*` interfaz. Los principales ejemplos son lenguajes de scripting de HTML que permiten scriptlets de código incrustado en el documento HTML que se adjuntará a eventos intrínsecos (por ejemplo, ONCLICK="button1.text='Exit'").  
+Agrega un Scriptlet de código al script. Este método se utiliza en entornos en los que el estado persistente del script está entrelazado con el documento host y el host es responsable de restaurar el script, en lugar de hacerlo a través de una interfaz de `IPersist*`. Los ejemplos principales son lenguajes de scripting de HTML que permiten que los scriptlets del código incrustado en el documento HTML se adjunten a eventos intrínsecos (por ejemplo, ONCLICK = "Button1. Text = ' exit '").  
   
 ## <a name="syntax"></a>Sintaxis  
   
@@ -47,56 +47,56 @@ HRESULT AddScriptlet(
   
 #### <a name="parameters"></a>Parámetros  
  `pstrDefaultName`  
- [in] Dirección de un nombre predeterminado para asociar el scriptlet. Si el scriptlet no contiene información de nombres (como se muestra en el ejemplo anterior de ONCLICK), este nombre se usará para identificar el scriptlet. Si este parámetro es `NULL`, el motor de scripting fabrica un nombre único, si es necesario.  
+ de Dirección de un nombre predeterminado que se va a asociar al Scriptlet. Si Scriptlet no contiene información de nomenclatura (como en el ejemplo de ONCLICK anterior), este nombre se usará para identificar el Scriptlet. Si este parámetro se `NULL`, el motor de scripting fabrica un nombre único, si es necesario.  
   
  `pstrCode`  
- [in] Dirección del texto de scriptlet a agregar. La interpretación de esta cadena depende del lenguaje de scripting.  
+ de Dirección del texto de Scriptlet que se va a agregar. La interpretación de esta cadena depende del lenguaje de scripting.  
   
  `pstrItemName`  
- [in] Dirección de un búfer que contiene el nombre del elemento asociado a este scriptlet. Este parámetro, además de `pstrSubItemName`, identifica el objeto para el que el scriptlet es un controlador de eventos.  
+ de Dirección de un búfer que contiene el nombre del elemento asociado a este Scriptlet. Este parámetro, además de `pstrSubItemName`, identifica el objeto para el que Scriptlet es un controlador de eventos.  
   
  `pstrSubItemName`  
- [in] Dirección de un búfer que contiene el nombre de un `subobject` del elemento con nombre que está asociado este scriptlet; este nombre debe encontrarse en la información de tipo del elemento con nombre. Este parámetro es NULL si el scriptlet está asociarse con el elemento con nombre en lugar de un `subitem`. Este parámetro, además de `pstrItemName`, identifica el objeto específico para el que el scriptlet es un controlador de eventos.  
+ de Dirección de un búfer que contiene el nombre de una `subobject` del elemento con nombre al que está asociado este Scriptlet; Este nombre se debe encontrar en la información de tipo del elemento con nombre. Este parámetro es NULL si Scriptlet se va a asociar al elemento con nombre en lugar de a un `subitem`. Este parámetro, además de `pstrItemName`, identifica el objeto específico para el que Scriptlet es un controlador de eventos.  
   
  `pstrEventName`  
- [in] Dirección de un búfer que contiene el nombre del evento para el que el scriptlet es un controlador de eventos.  
+ de Dirección de un búfer que contiene el nombre del evento para el que el Scriptlet es un controlador de eventos.  
   
  `pstrDelimiter`  
- [in] Dirección del delimitador final de scriptlet. Cuando el `pstrCode` parámetro se analiza desde una secuencia de texto, el host normalmente utiliza un delimitador, como dos comillas ("), para detectar el final de scriptlet. Este parámetro especifica el delimitador que utiliza el host, lo que permite el motor de scripting proporcione algún preprocesamiento primitivo condicional (por ejemplo, que reemplaza una comilla sencilla ['] con dos comillas simples para su uso como un delimitador). Exactamente cómo (y si) el motor de scripting hace uso de esta información depende del motor de scripting. Establezca este parámetro en NULL si el host no utilizó un delimitador para marcar el final de scriptlet.  
+ de Dirección del delimitador de fin de Scriptlet. Cuando el parámetro `pstrCode` se analiza desde un flujo de texto, el host normalmente usa un delimitador, como dos comillas simples (' '), para detectar el final del Scriptlet. Este parámetro especifica el delimitador utilizado por el host, lo que permite que el motor de scripting proporcione algún preprocesamiento primitivo condicional (por ejemplo, reemplazando una comilla simple ['] con dos comillas simples para su uso como delimitador). Exactamente cómo (y si) el motor de scripting hace uso de esta información depende del motor de scripting. Establezca este parámetro en NULL si el host no ha utilizado un delimitador para marcar el final del Scriptlet.  
   
  `dwSourceContextCookie`  
- [in] Valor definido por la aplicación que se usa con fines de depuración.  
+ de Valor definido por la aplicación que se usa para la depuración.  
   
  `ulStartingLineNumber`  
- [in] Valor de base cero que especifica en qué línea empezará el análisis en.  
+ de Valor basado en cero que especifica en qué línea comenzará el análisis.  
   
  `dwFlags`  
- [in] Marcas asociadas al scriptlet. Puede ser una combinación de los siguientes valores:  
+ de Marcas asociadas al Scriptlet. Puede ser una combinación de los siguientes valores:  
   
 |Valor devuelto|Significado|  
 |------------------|-------------|  
-|SCRIPTTEXT_ISVISIBLE|Indica que el texto del script debería estar visible (y, por lo tanto, invocable por nombre) como método global en el espacio de nombres de la secuencia de comandos.|  
-|INDICADOR SCRIPTTEXT_ISPERSISTENT|Indica que se debe guardar el código agregado durante esta llamada si se guarda el motor de scripting (por ejemplo, mediante una llamada a `IPersist*::Save`), o si el motor de scripting se restablece por medio de una transición al estado inicializado. Para obtener más información acerca de este estado, vea Estados del motor de secuencia de comandos.|  
+|SCRIPTTEXT_ISVISIBLE|Indica que el texto del script debe ser visible (y, por lo tanto, puede ser invocable por nombre) como un método global en el espacio de nombres del script.|  
+|SCRIPTTEXT_ISPERSISTENT|Indica que el código agregado durante esta llamada debe guardarse si se guarda el motor de scripting (por ejemplo, a través de una llamada a `IPersist*::Save`) o si el motor de scripting se restablece por medio de una transición de vuelta al estado inicializado. Para obtener más información acerca de este estado, vea Estados del motor de scripts.|  
   
  `pbstrName` ,  
- [out] Nombre real que se usa para identificar el scriptlet. Esto es para estar en orden de preferencia: en el texto de scriptlet especifica explícitamente un nombre, el nombre predeterminado proporcionado en `pstrDefaultName`, o un nombre único sintetizados por el motor de scripting.  
+ enuncia Nombre real que se usa para identificar el Scriptlet. Esto va a ser en orden de preferencia: un nombre especificado explícitamente en el texto de Scriptlet, el nombre predeterminado proporcionado en `pstrDefaultName` o un nombre único sintetizado por el motor de scripting.  
   
  `pexcepinfo` ,  
- [out] Dirección de una estructura que contiene información de excepción. Esta estructura debe rellenarse si se devuelve DISP_E_EXCEPTION.  
+ enuncia Dirección de una estructura que contiene información de la excepción. Esta estructura se debe rellenar si se devuelve DISP_E_EXCEPTION.  
   
 ## <a name="return-value"></a>Valor devuelto  
- Devuelve uno de los siguientes valores:  
+ Devuelve uno de los valores siguientes:  
   
 |Valor devuelto|Significado|  
 |------------------|-------------|  
 |`S_OK`|Correcto.|  
-|`DISP_E_EXCEPTION`|Se produjo una excepción en el análisis del scriptlet. El `pexcepinfo` parámetro contiene información sobre la excepción.|  
+|`DISP_E_EXCEPTION`|Se produjo una excepción en el análisis del Scriptlet. El parámetro `pexcepinfo` contiene información sobre la excepción.|  
 |`E_INVALIDARG`|Un argumento no era válido.|  
-|`E_NOTIMPL`|Este método no se admite; el motor de scripting no admite la adición de scriptlets de recepción de eventos.|  
-|`E_POINTER`|Se especificó un puntero no válido.|  
-|`E_UNEXPECTED`|No se esperaba la llamada (por ejemplo, el motor de scripting no se ha cargado o inicializado) y, por tanto, no se pudo.|  
+|`E_NOTIMPL`|Este método no se admite; el motor de scripting no admite la adición de scriptlets de receptores de eventos.|  
+|`E_POINTER`|Se ha especificado un puntero no válido.|  
+|`E_UNEXPECTED`|No se esperaba la llamada (por ejemplo, el motor de scripting aún no se ha cargado o inicializado) y, por tanto, se ha producido un error.|  
 |`OLESCRIPT_E_INVALIDNAME`|El nombre predeterminado proporcionado no es válido en este lenguaje de scripting.|  
-|`OLESCRIPT_E_SYNTAX`|Se produjo un error de sintaxis no especificado en el scriptlet.|  
+|`OLESCRIPT_E_SYNTAX`|Se produjo un error de sintaxis no especificado en el Scriptlet.|  
   
 ## <a name="see-also"></a>Vea también  
  [IActiveScriptParse](../../winscript/reference/iactivescriptparse.md)

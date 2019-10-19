@@ -1,5 +1,5 @@
 ---
-title: IDebugApplication::SynchronousCallInDebuggerThread | Documentos de Microsoft
+title: 'Idebugapplication (:: SynchronousCallInDebuggerThread | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d5460efaa3448c7812707e0baa7b2f5afe1d27a0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 134717b6ce30c87ccfb4bbb50ffe958717ae757f
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62990556"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72574583"
 ---
 # <a name="idebugapplicationsynchronouscallindebuggerthread"></a>IDebugApplication::SynchronousCallInDebuggerThread
-Proporciona un mecanismo para que el llamador ejecutar código en el subproceso del depurador.  
+Proporciona un mecanismo para que el llamador ejecute código en el subproceso del depurador.  
   
 ## <a name="syntax"></a>Sintaxis  
   
@@ -40,16 +40,16 @@ HRESULT SynchronousCallInDebuggerThread(
   
 #### <a name="parameters"></a>Parámetros  
  `pptc`  
- [in] El objeto va a llamar.  
+ de Objeto al que se va a llamar.  
   
  `dwParam1`  
- [in] Primer parámetro para pasar a la `IDebugThreadCall::ThreadCallHandler` método.  
+ de Primer parámetro que se va a pasar al método `IDebugThreadCall::ThreadCallHandler`.  
   
  `dwParam2`  
- [in] Segundo parámetro para pasar a la `IDebugThreadCall::ThreadCallHandler` método.  
+ de Segundo parámetro que se va a pasar al método `IDebugThreadCall::ThreadCallHandler`.  
   
  `dwParam3`  
- [in] Tercer parámetro para pasar a la `IDebugThreadCall::ThreadCallHandler` método.  
+ de Tercer parámetro que se va a pasar al método `IDebugThreadCall::ThreadCallHandler`.  
   
 ## <a name="return-value"></a>Valor devuelto  
  El método devuelve un objeto `HRESULT`. Entre los valores posibles se incluyen los que se indican en la tabla siguiente, entre otros.  
@@ -59,8 +59,8 @@ HRESULT SynchronousCallInDebuggerThread(
 |`S_OK`|El método se realizó correctamente.|  
   
 ## <a name="remarks"></a>Comentarios  
- Hosts y motores de lenguaje normalmente utilizan este método para implementar objetos de subprocesamiento libre encima de sus implementaciones de subprocesos únicos.  
+ Los motores y hosts de lenguaje suelen usar este método para implementar objetos de subprocesos libres en las implementaciones de un solo subproceso.  
   
 ## <a name="see-also"></a>Vea también  
- [IDebugApplication (interfaz)](../../winscript/reference/idebugapplication-interface.md)   
+ @No__t_1 de la [interfaz idebugapplication (](../../winscript/reference/idebugapplication-interface.md)  
  [IDebugThreadCall (Interfaz)](../../winscript/reference/idebugthreadcall-interface.md)

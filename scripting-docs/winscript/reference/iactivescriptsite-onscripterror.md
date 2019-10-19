@@ -1,5 +1,5 @@
 ---
-title: IActiveScriptSite::OnScriptError | Microsoft Docs
+title: 'IActiveScriptSite:: OnScriptError | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d76aa46cbbcdab9a3c5c7b561b91ee58cfcac4ac
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 9f0078b53515a881d7f2ac1475cf5565fa22a025
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62992606"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72570273"
 ---
 # <a name="iactivescriptsiteonscripterror"></a>IActiveScriptSite::OnScriptError
-Informa al host que se ha producido un error de ejecución mientras el motor estaba ejecutando la secuencia de comandos.  
+Informa al host de que se ha producido un error de ejecución mientras el motor estaba ejecutando el script.  
   
 ## <a name="syntax"></a>Sintaxis  
   
@@ -37,10 +37,10 @@ HRESULT OnScriptError(
   
 #### <a name="parameters"></a>Parámetros  
  `pase`  
- [in] Dirección del objeto error [IActiveScriptError](../../winscript/reference/iactivescripterror.md) interfaz. Un host puede utilizar esta interfaz para obtener información sobre el error de ejecución.  
+ de Dirección de la interfaz [IActiveScriptError](../../winscript/reference/iactivescripterror.md) del objeto de error. Un host puede utilizar esta interfaz para obtener información sobre el error de ejecución.  
   
 ## <a name="return-value"></a>Valor devuelto  
- Devuelve `S_OK` si el error se controló correctamente o OLE definido por el código de error en caso contrario.  
+ Devuelve `S_OK` si el error se ha controlado correctamente, o un código de error OLE definido en caso contrario.  
   
 ## <a name="see-also"></a>Vea también  
  [IActiveScriptSite](../../winscript/reference/iactivescriptsite.md)

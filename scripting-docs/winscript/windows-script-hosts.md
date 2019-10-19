@@ -13,12 +13,12 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: eec1824bd3ba1a8acb7e3c540656151cd4b11d1f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 8468f578ee44487acd2575e81e01d65969110437
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62840049"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72568815"
 ---
 # <a name="windows-script-hosts"></a>Windows Script (Hosts)
 Al implementar el host de Microsoft Windows Script, puede suponer de forma segura que un motor de scripting solo llama a la interfaz [IActiveScriptSite](../winscript/reference/iactivescriptsite.md) en el contexto del subproceso base siempre y cuando el host haga lo siguiente:  

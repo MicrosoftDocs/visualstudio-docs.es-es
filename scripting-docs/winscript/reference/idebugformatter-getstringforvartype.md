@@ -1,5 +1,5 @@
 ---
-title: IDebugFormatter::GetStringForVarType | Microsoft Docs
+title: 'Idebugformatter (:: GetStringForVarType | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3d83df97ac9cb6c38d989470b71da93aceb5d50b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b9b498f5b37a9fc34b0926d9c0a5601d89dde7c7
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62979219"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72576359"
 ---
 # <a name="idebugformattergetstringforvartype"></a>IDebugFormatter::GetStringForVarType
-Devuelve una cadena que representa el valor VARTYPE especificado.  
+Devuelve una cadena que representa el valor de VARTYPE dado.  
   
 ## <a name="syntax"></a>Sintaxis  
   
@@ -39,13 +39,13 @@ HRESULT GetStringForVarType(
   
 #### <a name="parameters"></a>Parámetros  
  `vt`  
- [in] VARTYPE para representar como una cadena.  
+ de VARTYPE que se va a representar como una cadena.  
   
  `ptdescArrayType`  
- [in] Matriz de estructuras que describen los tipos.  
+ de Matriz de estructuras que describe los tipos.  
   
  `pbstr`  
- [out] Cadena que representa `vt`.  
+ enuncia Cadena que representa `vt`.  
   
 ## <a name="return-value"></a>Valor devuelto  
  El método devuelve un objeto `HRESULT`. Entre los valores posibles se incluyen los que se indican en la tabla siguiente, entre otros.  
@@ -55,7 +55,7 @@ HRESULT GetStringForVarType(
 |`S_OK`|El método se realizó correctamente.|  
   
 ## <a name="remarks"></a>Comentarios  
- El método devuelve una cadena que representa el valor VARTYPE especificado.  
+ El método devuelve una cadena que representa el valor de VARTYPE dado.  
   
 ## <a name="see-also"></a>Vea también  
  [IDebugFormatter (Interfaz)](../../winscript/reference/idebugformatter-interface.md)

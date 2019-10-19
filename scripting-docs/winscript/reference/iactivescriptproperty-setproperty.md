@@ -1,5 +1,5 @@
 ---
-title: IActiveScriptProperty::SetProperty | Microsoft Docs
+title: 'IActiveScriptProperty:: SetProperty | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,12 +17,12 @@ caps.latest.revision: 21
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d689b7b2a252b208ae578f9bfd95ab93777f7cc5
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 0f8307a82f181be20205c7bfcc47e881b0fa1e90
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63385971"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72571305"
 ---
 # <a name="iactivescriptpropertysetproperty"></a>IActiveScriptProperty::SetProperty
 Establece la propiedad especificada por el parámetro.  
@@ -50,36 +50,36 @@ HRESULT SetProperty(
  `pvarValue`  
  Valor de la propiedad.  
   
- Los valores permiten para `dwProperty` se describen en la tabla siguiente.  
+ En la tabla siguiente se describen los valores permitidos para `dwProperty`.  
   
 |Constante|Valor|Significado|  
 |--------------|-----------|-------------|  
-|SCRIPTPROP_INTEGERMODE|0x00003000|Fuerza el motor de scripting que se divide en modo de entero en lugar del modo de punto flotante. El valor predeterminado es `False`.|  
-|SCRIPTPROP_STRINGCOMPAREINSTANCE|0x00003001|Permite que la función de comparación de cadena del motor de scripting que se debe reemplazar.|  
-|SCRIPTPROP_ABBREVIATE_GLOBALNAME_RESOLUTION|0x70000002|Notifica al motor de scripting que no existen ningún otros motores de secuencias de comandos para contribuir al objeto global.|  
-|SCRIPTPROP_INVOKEVERSIONING|0x00004000|Fuerza el [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] motor de scripting para seleccionar un conjunto de características del lenguaje que se deben admitir. El conjunto predeterminado de las características de lenguaje admitidas por la [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] es equivalente al conjunto de características de lenguaje que apareció en la versión 5.7 del motor de scripting el [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] motor de scripting.|  
+|SCRIPTPROP_INTEGERMODE|0x00003000|Obliga al motor de scripting a dividir en el modo de entero en lugar de en el modo de punto flotante. El valor predeterminado es `False`.|  
+|SCRIPTPROP_STRINGCOMPAREINSTANCE|0x00003001|Permite reemplazar la función de comparación de cadenas del motor de scripting.|  
+|SCRIPTPROP_ABBREVIATE_GLOBALNAME_RESOLUTION|0x70000002|Informa al motor de scripting de que no existen otros motores de scripting para contribuir al objeto global.|  
+|SCRIPTPROP_INVOKEVERSIONING|0x00004000|Fuerza al motor de scripting de [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] a seleccionar un conjunto de características de lenguaje que se admitirán. El conjunto predeterminado de características del lenguaje admitido por el motor de scripting de [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] es equivalente al conjunto de características del lenguaje que aparecía en la versión 5,7 del motor de scripting de [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)].|  
   
 ## <a name="return-value"></a>Valor devuelto  
- Devuelve uno de los siguientes valores:  
+ Devuelve uno de los valores siguientes:  
   
 |Valor devuelto|Significado|  
 |------------------|-------------|  
 |`S_OK`|Correcto.|  
 |`E_INVALIDARG`|Un argumento no es válido.|  
-|`E_UNEXPECTED`|No se esperaba la llamada (por ejemplo, el motor de scripting no se ha cargado o inicializado).|  
+|`E_UNEXPECTED`|No se esperaba la llamada (por ejemplo, el motor de scripting aún no se ha cargado o inicializado).|  
   
 ## <a name="remarks"></a>Comentarios  
- Para habilitar o deshabilitar la división de enteros, invocar `SetProperty` y convertir un `Boolean` a un `Object`. De forma predeterminada, el valor de propiedad es `False`. Si se establece en `True`, operaciones de división devolverá sólo números enteros.  
+ Para habilitar o deshabilitar la división de enteros, invoque `SetProperty` y convierta un `Boolean` en un `Object`. De forma predeterminada, el valor de la propiedad es `False`. Si se establece en `True`, las operaciones de división devolverán solo enteros.  
   
- Para habilitar o deshabilitar la comparación de cadenas personalizadas, invocar `SetProperty` y pase un `Object` valor. El objeto que se pasa debe implementar la interfaz [IActiveScriptStringCompare (interfaz)](../../winscript/reference/iactivescriptstringcompare-interface.md). El [StrComp](../../winscript/reference/iactivescriptstringcompare-strcomp.md) método de la [IActiveScriptStringCompare (interfaz)](../../winscript/reference/iactivescriptstringcompare-interface.md) interfaz se llama cada vez que se ejecuta una función de comparación de cadena.  
+ Para habilitar o deshabilitar la comparación de cadenas personalizadas, invoque `SetProperty` y pase un valor `Object`. El objeto que se pasa debe implementar la interfaz [iactivescriptstringcompare (](../../winscript/reference/iactivescriptstringcompare-interface.md)de la interfaz. Se llama al método [StrComp](../../winscript/reference/iactivescriptstringcompare-strcomp.md) de la interfaz de la [interfaz iactivescriptstringcompare (](../../winscript/reference/iactivescriptstringcompare-interface.md) cada vez que se ejecuta una función de comparación de cadenas.  
   
- Para seleccionar el conjunto de características del lenguaje que se deben admitir cuando la [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] se inicializa el motor de scripting, invocar `SetProperty` y pasar un valor que corresponde a la característica de lenguaje que se estableció para habilitarse para SCRIPTPROP_INVOKEVERSIONING. Si esta propiedad se establece en 1 (SCRIPTLANGUAGEVERSION_5_7), las características de lenguaje disponibles son los mismos que los que ha aparecido en la versión 5.7 del [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] motor de scripting. Si se establece en 2 (SCRIPTLANGUAGEVERSION_5_8), las características de lenguaje disponibles son aquellos que apareció en la versión 5.7 Además de nuevas características que se han agregado en la versión 5.8. De forma predeterminada, esta propiedad se establece en 0 (SCRIPTLANGUAGEVERSION_DEFAULT), que es equivalente al conjunto de características de lenguaje que apareció en la versión 5.7, a menos que el host admite un comportamiento predeterminado distinto. Por ejemplo, Internet Explorer 8 incluye el [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] características del lenguaje que son compatibles con la versión 5.8 [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] motor de scripting de forma predeterminada cuando el modo de documento predeterminado para Internet Explorer 8 es el modo de "Estándar de Internet Explorer 8". Cambiar el modo de documento de Internet Explorer 8 a los estándares de Internet Explorer 7 o el modo de interpretación restablece el [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] motor de scripting para admitir sólo el conjunto de características de lenguaje que existían en la versión 5.7 [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] motor de scripting.  
+ Para seleccionar el conjunto de características del lenguaje que se admitirán cuando se inicialice el motor de scripting de [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)], invoque `SetProperty` y pase un valor que se corresponda con el conjunto de características del lenguaje que se va a habilitar para SCRIPTPROP_INVOKEVERSIONING. Si esta propiedad se establece en 1 (SCRIPTLANGUAGEVERSION_5_7), las características de lenguaje disponibles son las mismas que las que aparecían en la versión 5,7 del motor de scripting de [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)]. Si se establece en 2 (SCRIPTLANGUAGEVERSION_5_8), las características de lenguaje disponibles son las que aparecían en la versión 5,7, además de las nuevas características que se agregaron en la versión 5,8. De forma predeterminada, esta propiedad se establece en 0 (SCRIPTLANGUAGEVERSION_DEFAULT), que es equivalente al conjunto de características del lenguaje que aparecía en la versión 5,7, a menos que el host admita un comportamiento predeterminado diferente. Por ejemplo, Internet Explorer 8 opta por las características del lenguaje [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] que son compatibles con la versión 5,8 [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] motor de scripting de forma predeterminada cuando el modo de documento predeterminado para Internet Explorer 8 es el modo "estándar de Internet Explorer 8". Al cambiar el modo de documento de Internet Explorer 8 a los estándares o el modo no estándar de Internet Explorer 7, se restablece el motor de scripting de [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] para admitir solo el conjunto de características de lenguaje que existía en la versión 5,7 [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] motor de scripting.  
   
 > [!NOTE]
-> Se debe establecer SCRIPTPROP_INVOKEVERSIONING solo cuando el [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] se está inicializando el motor de scripting.  
+> SCRIPTPROP_INVOKEVERSIONING debe establecerse solo cuando se está inicializando el motor de scripting de [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)].  
   
 ## <a name="example"></a>Ejemplo  
- El ejemplo siguiente muestra cómo forzar que el motor de scripting para usar la división de enteros y cómo permitir que la sobrecarga de la función de comparación.  
+ En el ejemplo siguiente se muestra cómo forzar que el motor de scripting utilice División de enteros y cómo permitir la sobrecarga de la función de comparación.  
   
 ```c#  
 BMLScriptEngine bmlScriptEngine = new BMLScriptEngine();  
@@ -101,6 +101,6 @@ scriptProperties.SetProperty(SCRIPTPROP_STRCOMPINST,
 ```  
   
 ## <a name="see-also"></a>Vea también  
- [Definir la compatibilidad de documentos](https://docs.microsoft.com/previous-versions/windows/internet-explorer/ie-developer/compatibility/cc288325(v=vs.85))   
- [IActiveScriptProperty](../../winscript/reference/iactivescriptproperty.md)   
+ [Definir la compatibilidad de documentos](https://docs.microsoft.com/previous-versions/windows/internet-explorer/ie-developer/compatibility/cc288325(v=vs.85))    
+ @No__t_1 [IActiveScriptProperty](../../winscript/reference/iactivescriptproperty.md)  
  [Información de versiones](../../javascript/reference/javascript-version-information.md)

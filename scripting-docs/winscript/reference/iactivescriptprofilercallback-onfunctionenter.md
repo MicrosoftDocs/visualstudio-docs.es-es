@@ -1,5 +1,5 @@
 ---
-title: IActiveScriptProfilerCallback::OnFunctionEnter | Microsoft Docs
+title: 'Iactivescriptprofilercallback (:: OnFunctionEnter | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -15,15 +15,15 @@ caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 1b8410fba08c1799d88532266c022d811c9553fd
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 6157638353712d6f376fa1eb46a68980b493a5c3
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62993389"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72571687"
 ---
 # <a name="iactivescriptprofilercallbackonfunctionenter"></a>IActiveScriptProfilerCallback::OnFunctionEnter
-Notifica al objeto de generador de perfiles que el motor de scripting que se va a ejecutar una llamada de función que no es una llamada a Document Object Model (DOM).  
+Notifica al objeto de generador de perfiles que el motor de scripting está a punto de ejecutar una llamada de función que no es una llamada al Document Object Model (DOM).  
   
 ## <a name="syntax"></a>Sintaxis  
   
@@ -35,17 +35,17 @@ HRESULT OnFunctionEnter(
   
 #### <a name="parameters"></a>Parámetros  
  `scriptId`  
- [in] El identificador único de la secuencia de comandos que forma parte de la función. Este identificador es asignado por el motor de scripting.  
+ de IDENTIFICADOR único del script del que forma parte la función. El motor de scripting asigna este identificador.  
   
  `functionId`  
- [in] El identificador único de la función. Este identificador es asignado por el motor de scripting.  
+ de IDENTIFICADOR único de la función. El motor de scripting asigna este identificador.  
   
 ## <a name="return-value"></a>Valor devuelto  
- Se omite el valor devuelto de este método por el motor de scripting.  
+ El motor de scripting omite el valor devuelto de este método.  
   
 ## <a name="remarks"></a>Comentarios  
- Para las llamadas de DOM, que llama el motor de scripting [IActiveScriptProfilerCallback2::OnFunctionEnterByName](../../winscript/reference/iactivescriptprofilercallback2-onfunctionenterbyname.md) en lugar de `IActiveScriptProfilerCallback::OnFunctionEnter`. Esto es debido al gran número de métodos únicos y propiedades en el DOM.  
+ En el caso de las llamadas DOM, el motor de scripting llama a [iactivescriptprofilercallback2 (:: OnFunctionEnterByName](../../winscript/reference/iactivescriptprofilercallback2-onfunctionenterbyname.md) en lugar de `IActiveScriptProfilerCallback::OnFunctionEnter`. Esto se debe a un gran número de propiedades y métodos únicos en el DOM.  
   
 ## <a name="see-also"></a>Vea también  
- [IActiveScriptProfilerCallback::OnFunctionExit](../../winscript/reference/iactivescriptprofilercallback-onfunctionexit.md)   
+ [Iactivescriptprofilercallback (:: OnFunctionExit](../../winscript/reference/iactivescriptprofilercallback-onfunctionexit.md)    
  [IActiveScriptProfilerCallback (Interfaz)](../../winscript/reference/iactivescriptprofilercallback-interface.md)

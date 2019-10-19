@@ -1,5 +1,5 @@
 ---
-title: Readnullterminatedstring (método) | Documentos de Microsoft
+title: 'IJsDebugDataTarget:: Readnullterminatedstring ((método) | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -15,15 +15,15 @@ caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 178a2d3705e4904de9253c02319f6ba94e567d76
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 67d6ee6c8dad81865767b0b944ef311fc0de0063
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62582373"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72572402"
 ---
 # <a name="ijsdebugdatatargetreadnullterminatedstring-method"></a>IJsDebugDataTarget::ReadNullTerminatedString (Método)
-Lee el número especificado de caracteres desde el destino.  
+Lee el número especificado de caracteres del destino.  
   
 ## <a name="syntax"></a>Sintaxis  
   
@@ -38,16 +38,16 @@ HRESULT ReadNullTerminatedString(
   
 #### <a name="parameters"></a>Parámetros  
  `address`  
- [in] Para leer desde la dirección.  
+ de Dirección de la que se va a leer.  
   
  `characterSize`  
  [in] tamaño de cada carácter de la cadena  
   
  `maxCharacters`  
- [in] El número máximo de caracteres que se va a leer. maxCharacters debe ser razonable. Se producirá un error en cualquier solicitud de más de 128MB de memoria.  Si la cadena es mayor que maxCharacters, la cadena de resultado se truncará después de maxCharacters.  
+ de Número máximo de caracteres que se van a leer. maxCharacters debe ser razonable. Se producirá un error en cualquier solicitud de más de 128 MB de memoria.  Si la cadena es mayor que maxCharacters, la cadena de resultado se truncará después de maxCharacters.  
   
  `pString`  
- [out] El BSTR leído del destino.  
+ enuncia BSTR leído del destino.  
   
 ## <a name="return-value"></a>Valor devuelto  
   
@@ -55,7 +55,7 @@ HRESULT ReadNullTerminatedString(
  Devuelve S_FALSE si se trunca.  
   
 ## <a name="requirements"></a>Requisitos  
- **Encabezado:** jscript9diag.h  
+ **Encabezado:** jscript9diag. h  
   
 ## <a name="see-also"></a>Vea también  
  [IJsDebugDataTarget (Interfaz)](../../winscript/reference/ijsdebugdatatarget-interface.md)

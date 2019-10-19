@@ -1,5 +1,5 @@
 ---
-title: IDebugApplication::AddGlobalExpressionContextProvider | Microsoft Docs
+title: 'Idebugapplication (:: AddGlobalExpressionContextProvider | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,12 +17,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 278811ae7c7f853396efb5f41a92a5350176943a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 429e87def1e17a6abac92ce2d3538960659cfaeb
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62991108"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72573474"
 ---
 # <a name="idebugapplicationaddglobalexpressioncontextprovider"></a>IDebugApplication::AddGlobalExpressionContextProvider
 Agrega un proveedor de contexto de expresión global a esta aplicación.  
@@ -38,10 +38,10 @@ HRESULT AddGlobalExpressionContextProvider(
   
 #### <a name="parameters"></a>Parámetros  
  `pdsfs`  
- [in] El proveedor de contexto global para agregar a esta aplicación.  
+ de Proveedor de contexto global que se va a agregar a esta aplicación.  
   
  `pdwCookie`  
- [out] Una cookie que se usa para quitar este proveedor de contexto de expresión global de la aplicación.  
+ enuncia Cookie que se usa para quitar este proveedor de contexto de expresión global de la aplicación.  
   
 ## <a name="return-value"></a>Valor devuelto  
  El método devuelve un objeto `HRESULT`. Entre los valores posibles se incluyen los que se indican en la tabla siguiente, entre otros.  
@@ -54,5 +54,5 @@ HRESULT AddGlobalExpressionContextProvider(
  Este método agrega un proveedor de contexto de expresión global a esta aplicación.  
   
 ## <a name="see-also"></a>Vea también  
- [IDebugApplication (interfaz)](../../winscript/reference/idebugapplication-interface.md)   
+ @No__t_1 de la [interfaz idebugapplication (](../../winscript/reference/idebugapplication-interface.md)  
  [IDebugApplication::RemoveGlobalExpressionContextProvider](../../winscript/reference/idebugapplication-removeglobalexpressioncontextprovider.md)

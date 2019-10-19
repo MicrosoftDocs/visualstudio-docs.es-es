@@ -1,5 +1,5 @@
 ---
-title: Método Ijsdebugframe | Microsoft Docs
+title: 'IJsDebugFrame:: Evaluate (método) | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -15,12 +15,12 @@ caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b328d6071ae9dc96b8e7f62bad6d4417aa1730f4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 6227b97c1fd5fae32db3e13ef72751726c36b043
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62558195"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72573495"
 ---
 # <a name="ijsdebugframeevaluate-method"></a>IJsDebugFrame::Evaluate (Método)
 Evalúa una expresión en el contexto de este marco de pila.  
@@ -37,21 +37,21 @@ HRESULT Evaluate(
   
 #### <a name="parameters"></a>Parámetros  
  `pExpressionText`  
- [in] Para evaluar la expresión.  
+ de Expresión que se va a evaluar.  
   
  `ppDebugProperty`  
- [out] Objeto que representa el Explorador de propiedades.  
+ enuncia Objeto que representa el explorador de propiedades.  
   
  `pError`  
- [out] El mensaje de error, si se produce un error.  
+ enuncia Mensaje de error, si se produce un error.  
   
 ## <a name="return-value"></a>Valor devuelto  
   
 ## <a name="remarks"></a>Comentarios  
- Devuelve lo siguiente: S_OK: Evaluación es correcta, * ppDebugProperty contiene el resultado de la evaluación. S_FALSE: La evaluación produce un error (o no se admite la operación de evaluación), \*pError contiene el mensaje de error.  
+ Devuelve lo siguiente: S_OK: la evaluación se realiza correctamente, * ppDebugProperty contiene el resultado de la evaluación. S_FALSE: la evaluación produce un error (o no se admite la operación de evaluación), \*pError contiene el mensaje de error.  
   
 ## <a name="requirements"></a>Requisitos  
- **Encabezado:** jscript9diag.h  
+ **Encabezado:** jscript9diag. h  
   
 ## <a name="see-also"></a>Vea también  
  [IJsDebugFrame (Interfaz)](../../winscript/reference/ijsdebugframe-interface.md)

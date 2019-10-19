@@ -1,5 +1,5 @@
 ---
-title: IActiveScriptProfilerControl::StartProfiling | Microsoft Docs
+title: 'Iactivescriptprofilercontrol (:: perfiles | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -15,15 +15,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 780886e4ca21abbe11580992244cee0d6a28b134
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: cfc59dd43ac3eed433f92af2cdd0aefe40392c4a
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62993142"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72571574"
 ---
 # <a name="iactivescriptprofilercontrolstartprofiling"></a>IActiveScriptProfilerControl::StartProfiling
-Inicia la generación de perfiles en el motor de scripting. El motor de scripting crea una instancia del objeto del generador de perfiles mediante una llamada a [CoCreateInstance](https://docs.microsoft.com/windows/desktop/api/combaseapi/nf-combaseapi-cocreateinstance).  
+Inicia la generación de perfiles en el motor de scripting. El motor de scripting crea una instancia del objeto del generador de perfiles realizando una llamada a [CoCreateInstance](https://docs.microsoft.com/windows/desktop/api/combaseapi/nf-combaseapi-cocreateinstance).  
   
 ## <a name="syntax"></a>Sintaxis  
   
@@ -36,13 +36,13 @@ HRESULT StartProfiling(
   
 #### <a name="parameters"></a>Parámetros  
  `clsidProfilerObject`  
- [in] Identificador de clase (CLSID) del objeto del generador de perfiles que se va a crearse.  
+ de Identificador de clase (CLSID) del objeto de generador de perfiles que se va a crear.  
   
  `dwEventMask`  
- [in] Una máscara de bits de 4 bytes que especifica los tipos de eventos. Los bits se definen en [PROFILER_EVENT_MASK (enumeración)](../../winscript/reference/profiler-event-mask-enumeration.md).  
+ de Máscara de bits de 4 bytes que especifica los tipos de eventos. Los bits se definen en la [enumeración PROFILER_EVENT_MASK](../../winscript/reference/profiler-event-mask-enumeration.md).  
   
  `dwContext`  
- [in] Un valor de 4 bytes que se pasa al objeto del generador de perfiles.  
+ de Un valor de 4 bytes que se pasa al objeto de generador de perfiles.  
   
 ## <a name="return-value"></a>Valor devuelto  
  Devuelve un valor HRESULT. Los valores posibles son los siguientes:  
@@ -50,7 +50,7 @@ HRESULT StartProfiling(
 |Valor devuelto|Significado|  
 |------------------|-------------|  
 |`S_OK`|El método se realizó correctamente.|  
-|`ACTIVPROF_E_PROFILER_PRESENT`|Ya está habilitada la generación de perfiles.|  
+|`ACTIVPROF_E_PROFILER_PRESENT`|La generación de perfiles ya está habilitada.|  
   
 ## <a name="see-also"></a>Vea también  
  [IActiveScriptProfilerControl (Interfaz)](../../winscript/reference/iactivescriptprofilercontrol-interface.md)

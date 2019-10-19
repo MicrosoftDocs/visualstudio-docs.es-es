@@ -1,5 +1,5 @@
 ---
-title: Active Script Authoring Interfaces | Documentos de Microsoft
+title: Interfaces de creación de scripts activos | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -14,18 +14,18 @@ caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 00b041b4cb2009d247572d1e47dfff40d8548927
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 22e06b9723100141a0e3679e401d1bc339dddad5
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63003608"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72562212"
 ---
 # <a name="active-script-authoring-interfaces"></a>Active Script Authoring (Interfaces)
-El archivo de encabezado ActivAut.h proporciona las interfaces enumeradas en esta sección.  
+El archivo de encabezado ActivAut. h proporciona las interfaces enumeradas en esta sección.  
   
 ## <a name="in-this-section"></a>En esta sección  
- Las interfaces siguientes habilitan la creación de páginas Web:  
+ Las siguientes interfaces permiten la creación de páginas web:  
   
 - [IActiveScriptAuthor (Interfaz)](../../winscript/reference/iactivescriptauthor-interface.md)  
   

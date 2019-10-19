@@ -1,5 +1,5 @@
 ---
-title: IDebugDocumentTextEvents::onDestroy | Microsoft Docs
+title: 'Idebugdocumenttextevents (:: aldestruir | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,12 +17,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 137329e48f6cb36e36f0196fa226303468eec88a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: fd8162a33e61af0aab23d7414a2283ec60480960
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62946757"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72572922"
 ---
 # <a name="idebugdocumenttexteventsondestroy"></a>IDebugDocumentTextEvents::onDestroy
 Indica que el documento subyacente se ha destruido y ya no es válido.  

@@ -1,5 +1,5 @@
 ---
-title: IRemoteDebugApplication::GetName | Microsoft Docs
+title: 'Iremotedebugapplication (:: GetName | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 58dd62710a5674265a9487dacf51b2f368589ba6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 5689eb9153be0e9b6442ba505d618966f1421d39
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62944251"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72572003"
 ---
 # <a name="iremotedebugapplicationgetname"></a>IRemoteDebugApplication::GetName
-Devuelve el nombre de este nodo de la aplicación.  
+Devuelve el nombre de este nodo de aplicación.  
   
 ## <a name="syntax"></a>Sintaxis  
   
@@ -37,7 +37,7 @@ HRESULT GetName(
   
 #### <a name="parameters"></a>Parámetros  
  `pbstrName`  
- [out] Nombre de este nodo de la aplicación.  
+ enuncia Nombre de este nodo de aplicación.  
   
 ## <a name="return-value"></a>Valor devuelto  
  El método devuelve un objeto `HRESULT`. Entre los valores posibles se incluyen los que se indican en la tabla siguiente, entre otros.  
@@ -47,7 +47,7 @@ HRESULT GetName(
 |`S_OK`|El método se realizó correctamente.|  
   
 ## <a name="remarks"></a>Comentarios  
- Este método devuelve el nombre de este nodo de la aplicación.  
+ Este método devuelve el nombre de este nodo de aplicación.  
   
 ## <a name="see-also"></a>Vea también  
  [IRemoteDebugApplication (Interfaz)](../../winscript/reference/iremotedebugapplication-interface.md)

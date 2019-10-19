@@ -1,5 +1,5 @@
 ---
-title: IActiveScriptSiteWindow::EnableModeless | Microsoft Docs
+title: 'IActiveScriptSiteWindow:: EnableModeless | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 4f15135273b98a65903a5d03de87c541fc032cce
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 756bda6209b6209ff14f6d67fef18faaed0b5618
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62992931"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72574134"
 ---
 # <a name="iactivescriptsitewindowenablemodeless"></a>IActiveScriptSiteWindow::EnableModeless
-Hace que el host habilitar o deshabilitar su ventana principal, así como los cuadros de diálogo no modal.  
+Hace que el host habilite o deshabilite su ventana principal, así como los cuadros de diálogo no modales.  
   
 ## <a name="syntax"></a>Sintaxis  
   
@@ -37,15 +37,15 @@ HRESULT EnableModeless(
   
 #### <a name="parameters"></a>Parámetros  
  `fEnable`  
- [in] Marca que, si `TRUE`, permite que la ventana principal y los cuadros de diálogo no modales o, si `FALSE`, las deshabilita.  
+ de Marca que, si `TRUE`, habilita la ventana principal y los cuadros de diálogo no modales o, si `FALSE`, los deshabilita.  
   
 ## <a name="return-value"></a>Valor devuelto  
- Devuelve `S_OK` si se realiza correctamente, o `E_FAIL` si se produjo un error.  
+ Devuelve `S_OK` si se realiza correctamente, o `E_FAIL` si se produce un error.  
   
 ## <a name="remarks"></a>Comentarios  
- Este método es idéntico a la `IOleInPlaceFrame::EnableModeless` método.  
+ Este método es idéntico al método `IOleInPlaceFrame::EnableModeless`.  
   
- Se pueden anidar las llamadas a este método.  
+ Las llamadas a este método se pueden anidar.  
   
 ## <a name="see-also"></a>Vea también  
  [IActiveScriptSiteWindow](../../winscript/reference/iactivescriptsitewindow.md)

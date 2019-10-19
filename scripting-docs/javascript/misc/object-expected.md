@@ -1,5 +1,5 @@
 ---
-title: Se esperaba un objeto | Documentos de Microsoft
+title: Objeto esperado | Microsoft Docs
 ms.date: 01/18/2017
 ms.prod: visual-studio-windows
 ms.technology: vs-javascript
@@ -14,12 +14,12 @@ ms.assetid: 5d88c93d-e5b5-4b11-9bb5-bf1a5e41ccc3
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 501496c4f1bb929308ffbb75c6572de3d3f5b33b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 1611596d844d43ef72663154dc48791830dfe29f
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63006371"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72573735"
 ---
 # <a name="object-expected"></a>Se esperaba un objeto
 Se intentó invocar un método o propiedad en un objeto de un tipo distinto de `Object`, o se pasó un argumento de un tipo distinto de `Object` cuando se requería `Object`.  
@@ -47,5 +47,5 @@ Se intentó invocar un método o propiedad en un objeto de un tipo distinto de `
     ```  
   
 ## <a name="see-also"></a>Vea también  
- [Object (objeto)](../../javascript/reference/object-object-javascript.md)   
+ Objeto de [objeto](../../javascript/reference/object-object-javascript.md)    
  [Objetos y matrices](../../javascript/objects-and-arrays-javascript.md)

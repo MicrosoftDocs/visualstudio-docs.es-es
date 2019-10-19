@@ -1,5 +1,5 @@
 ---
-title: IDebugExtendedProperty (interfaz) | Documentos de Microsoft
+title: Interfaz Idebugextendedproperty (| Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -13,12 +13,12 @@ caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c1e042f75cf0ab0d8c4807c0c0db6ce04e8423f9
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 24a93cb3bd230e2489b58d78f6d414ba1df006ed
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62945879"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72572494"
 ---
 # <a name="idebugextendedproperty-interface"></a>IDebugExtendedProperty (Interfaz)
 Extiende `IDebugProperty` interfaz.  
@@ -28,11 +28,11 @@ Extiende `IDebugProperty` interfaz.
   
 |Método|Descripción|  
 |------------|-----------------|  
-|[IDebugExtendedProperty::GetExtendedPropertyInfo](../../winscript/reference/idebugextendedproperty-getextendedpropertyinfo.md)|Obtiene el `ExtendedDebugPropertyInfo` que describe esta `IDebugExtendedProperty``.`|  
-|[IDebugExtendedProperty::EnumExtendedMembers](../../winscript/reference/idebugextendedproperty-enumextendedmembers.md)|Enumera a los miembros de una propiedad extendida.|  
+|[IDebugExtendedProperty::GetExtendedPropertyInfo](../../winscript/reference/idebugextendedproperty-getextendedpropertyinfo.md)|Obtiene el `ExtendedDebugPropertyInfo` que describe este `IDebugExtendedProperty``.`|  
+|[IDebugExtendedProperty::EnumExtendedMembers](../../winscript/reference/idebugextendedproperty-enumextendedmembers.md)|Enumera los miembros de una propiedad extendida.|  
   
 ## <a name="requirements"></a>Requisitos  
- Encabezado: dbgprop.h  
+ Encabezado: dbgprop. h  
   
 ## <a name="see-also"></a>Vea también  
  [IDebugProperty (Interfaz)](../../winscript/reference/idebugproperty-interface.md)

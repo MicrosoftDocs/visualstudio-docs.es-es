@@ -1,5 +1,5 @@
 ---
-title: IDebugApplication::GetBreakFlags | Microsoft Docs
+title: 'Idebugapplication (:: GetBreakFlags | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 389f50cf6883cd59cd540ef278aa1b4f69a6a629
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a614429ebb8cc9271a0444536d14c45b69a9588f
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62990905"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72574974"
 ---
 # <a name="idebugapplicationgetbreakflags"></a>IDebugApplication::GetBreakFlags
-Devuelve las marcas de interrupción actual de la aplicación.  
+Devuelve las marcas de interrupción actuales de la aplicación.  
   
 ## <a name="syntax"></a>Sintaxis  
   
@@ -38,10 +38,10 @@ HRESULT GetBreakFlags(
   
 #### <a name="parameters"></a>Parámetros  
  `pabf`  
- [out] Las marcas de interrupción actual de la aplicación.  
+ enuncia Marcas de interrupción actuales para la aplicación.  
   
  `pprdatSteppingThread`  
- [out] El subproceso actualmente en ejecución.  
+ enuncia Subproceso que se está ejecutando actualmente.  
   
 ## <a name="return-value"></a>Valor devuelto  
  El método devuelve un objeto `HRESULT`. Entre los valores posibles se incluyen los que se indican en la tabla siguiente, entre otros.  
@@ -51,8 +51,8 @@ HRESULT GetBreakFlags(
 |`S_OK`|El método se realizó correctamente.|  
   
 ## <a name="remarks"></a>Comentarios  
- Este método devuelve las marcas de interrupción actual de la aplicación.  
+ Este método devuelve las marcas de interrupción actuales de la aplicación.  
   
 ## <a name="see-also"></a>Vea también  
- [IDebugApplication (interfaz)](../../winscript/reference/idebugapplication-interface.md)   
+ @No__t_1 de la [interfaz idebugapplication (](../../winscript/reference/idebugapplication-interface.md)  
  [APPBREAKFLAGS (Enumeración)](../../winscript/reference/appbreakflags-enumeration.md)

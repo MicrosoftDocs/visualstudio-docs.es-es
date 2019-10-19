@@ -1,5 +1,5 @@
 ---
-title: IDebugApplicationNodeEvents::onRemoveChild | Documentos de Microsoft
+title: 'Idebugapplicationnodeevents (:: onRemoveChild | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,12 +17,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8e59624e5ec6659e0fea3d55fdaddf7949eac18f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: f0ff7b28f14c26029d64197ba919cc97c90a856c
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62822168"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72574662"
 ---
 # <a name="idebugapplicationnodeeventsonremovechild"></a>IDebugApplicationNodeEvents::onRemoveChild
 Controla el evento cuando se quita un nodo secundario de un objeto de nodo de la aplicación de depuración.  
@@ -37,7 +37,7 @@ HRESULT onRemoveChild(
   
 #### <a name="parameters"></a>Parámetros  
  `prddpChild`  
- [in] El nodo de aplicación secundario que se ha quitado.  
+ de Nodo de aplicación secundario que se ha quitado.  
   
 ## <a name="return-value"></a>Valor devuelto  
  El método devuelve un objeto `HRESULT`. Entre los valores posibles se incluyen los que se indican en la tabla siguiente, entre otros.  
@@ -49,9 +49,9 @@ HRESULT onRemoveChild(
 ## <a name="remarks"></a>Comentarios  
  Este método controla el evento cuando se quita un nodo secundario de un objeto de nodo de la aplicación de depuración.  
   
- Los implementadores de la `IDebugApplicationNode` interfaz se genera este evento.  
+ Los implementadores de la interfaz `IDebugApplicationNode` producen este evento.  
   
 ## <a name="see-also"></a>Vea también  
- [IDebugApplicationNodeEvents (interfaz)](../../winscript/reference/idebugapplicationnodeevents-interface.md)   
- [IDebugApplicationNodeEvents::onAddChild](../../winscript/reference/idebugapplicationnodeevents-onaddchild.md)   
+ @No__t_1 de la [interfaz idebugapplicationnodeevents (](../../winscript/reference/idebugapplicationnodeevents-interface.md)  
+ [Idebugapplicationnodeevents (:: onAddChild](../../winscript/reference/idebugapplicationnodeevents-onaddchild.md)    
  [IDebugApplicationNode (Interfaz)](../../winscript/reference/idebugapplicationnode-interface.md)
