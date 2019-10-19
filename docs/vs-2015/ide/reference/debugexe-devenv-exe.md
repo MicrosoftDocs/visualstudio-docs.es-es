@@ -10,42 +10,41 @@ helpviewer_keywords:
 - /DebugExe [devenv.exe]
 ms.assetid: cd700006-1648-418f-924b-4b1e5c1412ab
 caps.latest.revision: 7
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: ac542ded884e922028c6cbc16447fb2a3241613b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: f472add6b821693d1d48397e878db19e707e2868
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68193806"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72660803"
 ---
 # <a name="debugexe-devenvexe"></a>/DebugExe (devenv.exe)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Abre el archivo ejecutable especificado que se va a depurar.  
-  
-## <a name="syntax"></a>Sintaxis  
-  
-```  
-Devenv /debugexe ExecutableFile  
-```  
-  
-## <a name="arguments"></a>Argumentos  
- `ExecutableFile`  
- Obligatorio. La ruta de acceso y el nombre de un archivo .exe.  
-  
- Si el archivo .exe no se encuentra o no existe, no se muestra ningún error ni advertencia y [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] se inicia normalmente.  
-  
-## <a name="remarks"></a>Comentarios  
- Las cadenas que siguen al parámetro `ExecutableFile` pasan a dicho archivo como argumentos.  
-  
-## <a name="example"></a>Ejemplo  
- En el ejemplo siguiente, se abre el archivo `MyApplication.exe` para depurar.  
-  
-```  
-Devenv.exe /debugexe MyApplication.exe  
-```  
-  
-## <a name="see-also"></a>Otras referencias  
+Abre el archivo ejecutable especificado que se va a depurar.
+
+## <a name="syntax"></a>Sintaxis
+
+```
+Devenv /debugexe ExecutableFile
+```
+
+## <a name="arguments"></a>Argumentos
+ `ExecutableFile` Obligatorio. La ruta de acceso y el nombre de un archivo .exe.
+
+ Si el archivo .exe no se encuentra o no existe, no se muestra ningún error ni advertencia y [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] se inicia normalmente.
+
+## <a name="remarks"></a>Comentarios
+ Las cadenas que siguen al parámetro `ExecutableFile` pasan a dicho archivo como argumentos.
+
+## <a name="example"></a>Ejemplo
+ En el ejemplo siguiente, se abre el archivo `MyApplication.exe` para depurar.
+
+```
+Devenv.exe /debugexe MyApplication.exe
+```
+
+## <a name="see-also"></a>Otras referencias
  [Modificadores de línea de comandos para Devenv](../../ide/reference/devenv-command-line-switches.md)

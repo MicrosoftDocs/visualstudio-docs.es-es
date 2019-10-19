@@ -6,15 +6,15 @@ ms.technology: vs-ide-general
 ms.topic: conceptual
 ms.assetid: f0181ee8-9b46-45f7-b86e-316e3de024b9
 caps.latest.revision: 7
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 2a3db616ec23a8d6fdb1984ce27f8fec4909cc9e
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: c1030068ad083ff9bc8f4bdf5b203eb75eed7617
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65680243"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72670319"
 ---
 # <a name="refactoring-in-visual-studio"></a>Refactorización en Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,5 +43,5 @@ La refactorización es el proceso que consiste en modificar el código sin que c
 ### <a name="refactoring-in-f"></a>Refactorización en F\#
  [Visual F# Power Tools](https://visualstudiogallery.msdn.microsoft.com/136b942e-9f2c-4c0b-8bac-86d774189cff), una extensión de Visual Studio de terceros, proporciona compatibilidad de refactorización con F#.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Otras referencias
  [IDE de Visual Studio](../ide/visual-studio-ide.md) [Escribir código en el editor de código y texto](../ide/writing-code-in-the-code-and-text-editor.md)
