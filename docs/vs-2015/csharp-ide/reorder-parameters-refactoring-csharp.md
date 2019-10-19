@@ -1,5 +1,5 @@
 ---
-title: Reordenar parámetros de refactorización (C#) | Documentos de Microsoft
+title: Reordenar parámetros de refactorización (C#) | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
@@ -13,69 +13,69 @@ helpviewer_keywords:
 - Reorder Parameters refactoring [C#]
 ms.assetid: 4dabf21a-a9f0-41e9-b11b-55760cf2bd90
 caps.latest.revision: 26
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: daf77a60256e59cabd176990f3642a2206a7f0d8
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: e39564fb108b63859620e2c4a650608cdf1e7e82
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63444540"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72673148"
 ---
 # <a name="reorder-parameters-refactoring-c"></a>Reordenar parámetros de refactorización (C#)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-`Reorder Parameters` es Visual C# operación de refactorización que proporciona una manera fácil de cambiar el orden de los parámetros de métodos, indizadores y delegados. `Reorder Parameters` cambia la declaración, y en todas las ubicaciones donde se llama al miembro, los parámetros se reorganizan para reflejar el nuevo orden.  
-  
- Para realizar la `Reorder Parameters` operación, coloque el cursor en o junto a un método, indizador o delegado. Cuando el cursor está en posición, invocar el `Reorder Parameters` operación presionando el método abreviado de teclado, o haga clic en el comando en el menú contextual.  
-  
+`Reorder Parameters` es una operación C# de refactorización visual que proporciona una manera sencilla de cambiar el orden de los parámetros de los métodos, indizadores y delegados. `Reorder Parameters` cambia la declaración y en cualquier ubicación donde se llama al miembro, los parámetros se reorganizan para reflejar el nuevo pedido.
+
+ Para realizar la operación de `Reorder Parameters`, coloque el cursor en o junto a un método, indizador o delegado. Cuando el cursor esté en posición, invoque la operación `Reorder Parameters` presionando el método abreviado de teclado o haciendo clic en el comando del menú contextual.
+
 > [!NOTE]
-> No puede reordenar el primer parámetro de un método de extensión.  
-  
-### <a name="to-reorder-parameters"></a>Reordenar parámetros  
-  
-1. Crear una biblioteca de clases denominada `ReorderParameters`y, a continuación, reemplace `Class1` con el siguiente código de ejemplo.  
-  
-    ```csharp  
-    class ProtoClassA  
-    {  
-        // Invoke on 'MethodB'.  
-        public void MethodB(int i, bool b) { }  
-    }  
-  
-    class ProtoClassC  
-    {  
-        void D()  
-        {  
-            ProtoClassA MyClassA = new ProtoClassA();  
-  
-            // Invoke on 'MethodB'.  
-            MyClassA.MethodB(0, false);  
-        }  
-    }  
-    ```  
-  
-2. Coloque el cursor en `MethodB`, ya sea en la declaración de método o la llamada al método.  
-  
-3. En el **refactorizar** menú, haga clic en **Reordenar parámetros**.  
-  
-     El **Reordenar parámetros** aparece el cuadro de diálogo.  
-  
-4. En el **Reordenar parámetros** cuadro de diálogo, seleccione `int i` en el **parámetros** lista y, a continuación, haga clic en el botón de abajo.  
-  
-     Como alternativa, puede arrastrar `int i` después `bool b` en el **parámetros** lista.  
-  
-5. En el **Reordenar parámetros** cuadro de diálogo, haga clic en **Aceptar**.  
-  
-     Si el **vista previa de cambios de referencia** opción está seleccionada en el **Reordenar parámetros** cuadro de diálogo, el **vista previa de cambios - Reordenar parámetros** aparecerá el cuadro de diálogo. Proporciona una vista previa de los cambios en la lista de parámetros `MethodB` en la firma y la llamada al método.  
-  
-    1. Si el **vista previa de cambios - Reordenar parámetros** aparece el cuadro de diálogo, haga clic en **aplicar**.  
-  
-         En este ejemplo, la declaración de método y todas la llamada al método sitios para `MethodB` se actualizan.  
-  
-## <a name="remarks"></a>Comentarios  
- Puede reordenar los parámetros de una declaración de método o una llamada al método. Coloque el cursor en o junto a la declaración de método o delegado, pero no en el cuerpo.  
-  
-## <a name="see-also"></a>Vea también  
+> No se puede reordenar el primer parámetro de un método de extensión.
+
+### <a name="to-reorder-parameters"></a>Para reordenar los parámetros
+
+1. Cree una biblioteca de clases denominada `ReorderParameters` y, a continuación, reemplace `Class1` por el siguiente código de ejemplo.
+
+    ```csharp
+    class ProtoClassA
+    {
+        // Invoke on 'MethodB'.
+        public void MethodB(int i, bool b) { }
+    }
+
+    class ProtoClassC
+    {
+        void D()
+        {
+            ProtoClassA MyClassA = new ProtoClassA();
+
+            // Invoke on 'MethodB'.
+            MyClassA.MethodB(0, false);
+        }
+    }
+    ```
+
+2. Coloque el cursor en `MethodB`, ya sea en la declaración del método o en la llamada al método.
+
+3. En el menú **refactorizar** , haga clic en **Reordenar parámetros**.
+
+     Aparecerá el cuadro de diálogo **Reordenar parámetros** .
+
+4. En el cuadro de diálogo **Reordenar parámetros** , seleccione `int i` en la lista **parámetros** y, a continuación, haga clic en el botón abajo.
+
+     Como alternativa, puede arrastrar `int i` después de `bool b` en la lista de **parámetros** .
+
+5. En el cuadro de diálogo **Reordenar parámetros** , haga clic en **Aceptar**.
+
+     Si la opción **vista previa de los cambios de referencia** está seleccionada en el cuadro de diálogo **Reordenar parámetros** , aparecerá el cuadro de diálogo **vista previa de los cambios: reordenar** . Proporciona una vista previa de los cambios en la lista de parámetros para `MethodB` en la firma y en la llamada al método.
+
+    1. Si aparece el cuadro de diálogo **vista previa de los cambios y reordenar los parámetros** , haga clic en **aplicar**.
+
+         En este ejemplo, se actualizan la declaración de método y todos los sitios de llamada de método para `MethodB`.
+
+## <a name="remarks"></a>Comentarios
+ Puede reordenar los parámetros de una declaración de método o una llamada al método. Coloque el cursor en o junto a la declaración de método o delegado, pero no en el cuerpo.
+
+## <a name="see-also"></a>Vea también
  [Refactorización (C#)](../csharp-ide/refactoring-csharp.md)
