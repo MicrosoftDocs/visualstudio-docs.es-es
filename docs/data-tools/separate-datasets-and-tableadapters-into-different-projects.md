@@ -6,25 +6,25 @@ helpviewer_keywords:
 - TableAdapters, n-tier applications
 - n-tier applications, separating Datasets and TableAdapters
 ms.assetid: f66a3940-6227-46af-a930-9177f425f4fd
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: cb70705d29ad636329803656aeaa1a27ddf237d5
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 9198378c5acf492216e2bebaceb210073766ea23
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63402765"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72648184"
 ---
 # <a name="separate-datasets-and-tableadapters-into-different-projects"></a>Separar conjuntos de datos y TableAdapters en proyectos diferentes
-Objetos DataSet con tipo se han mejorado para que la [TableAdapters](create-and-configure-tableadapters.md) y clases de conjunto de datos se pueden generar en proyectos independientes. Esto permite separar rápidamente los niveles de la aplicación y generar aplicaciones de datos con n niveles.
+Los conjuntos de valores de tipos se han mejorado para que las clases [TableAdapter](create-and-configure-tableadapters.md) y DataSet se puedan generar en proyectos independientes. Esto permite separar rápidamente los niveles de la aplicación y generar aplicaciones de datos con n niveles.
 
-El siguiente procedimiento describe cómo usar el **Diseñador de Dataset** para generar código de conjunto de datos en un proyecto que es independiente del proyecto que contiene el código generado del TableAdapter.
+En el procedimiento siguiente se describe el proceso de uso de la **Diseñador de DataSet** para generar código de conjunto de elementos en un proyecto independiente del proyecto que contiene el código de TableAdapter generado.
 
-## <a name="separate-datasets-and-tableadapters"></a>Conjuntos de datos independientes y TableAdapters
-Al separar el código de conjunto de datos de código del TableAdapter, el proyecto que contiene el código del conjunto de datos debe estar ubicado en la solución actual. Si este proyecto no se encuentra en la solución actual, no estará disponible en el **DataSet Project** lista en el **propiedades** ventana.
+## <a name="separate-datasets-and-tableadapters"></a>Separar conjuntos de objetos y TableAdapters
+Al separar el código del conjunto de objetos del código de TableAdapter, el proyecto que contiene el código del conjunto de los conjuntos de pruebas debe encontrarse en la solución actual. Si este proyecto no se encuentra en la solución actual, no estará disponible en la lista **conjunto de proyectos** de la ventana **propiedades** .
 
 [!INCLUDE[note_settings_general](../data-tools/includes/note_settings_general_md.md)]
 
@@ -33,34 +33,34 @@ Al separar el código de conjunto de datos de código del TableAdapter, el proye
 1. Abra una solución que contenga un conjunto de datos (archivo *.xsd*).
 
     > [!NOTE]
-    > Si la solución no contiene el proyecto en el que desea separar el código del conjunto de datos, crear el proyecto, o agregar un proyecto existente a la solución.
+    > Si la solución no contiene el proyecto en el que desea separar el código del conjunto de información, cree el proyecto o agregue un proyecto existente a la solución.
 
 2. Haga doble clic en un archivo de conjunto de datos con tipo (un archivo *.xsd*) en el **Explorador de soluciones** para abrir el conjunto de datos en el **Diseñador de DataSet**.
 
-3. Seleccione un área vacía de la **Diseñador de Dataset**.
+3. Seleccione un área vacía de la **Diseñador de DataSet**.
 
-4. En el **propiedades** ventana, busque la **DataSet Project** nodo.
+4. En la ventana **propiedades** , busque el nodo del **proyecto DataSet** .
 
-5. En el **DataSet Project** lista, seleccione el nombre del proyecto en el que desea generar el código del conjunto de datos.
+5. En la lista **conjunto de proyectos** , seleccione el nombre del proyecto en el que desea generar el código del conjunto de código.
 
-     Después de seleccionar el proyecto en el que desea generar el código del conjunto de datos, el **DataSet File** propiedad se rellena con un nombre de archivo predeterminado. Puede cambiar este nombre si es necesario. Además, si desea generar el código del conjunto de datos en un directorio concreto, puede establecer la propiedad **Carpeta de proyecto** con el nombre de una carpeta.
+     Después de seleccionar el proyecto en el que desea generar el código del conjunto de archivos, la propiedad del **archivo de conjunto de archivos** se rellena con un nombre de archivo predeterminado. Puede cambiar este nombre si es necesario. Además, si desea generar el código del conjunto de datos en un directorio concreto, puede establecer la propiedad **Carpeta de proyecto** con el nombre de una carpeta.
 
     > [!NOTE]
-    > Al separar conjuntos de datos y TableAdapters (estableciendo la **DataSet Project** propiedad), las clases de conjunto de datos parciales existentes en el proyecto no se moverá automáticamente. Las clases de conjunto de datos parciales existentes se deben mover manualmente al proyecto de conjunto de datos.
+    > Cuando se separan los conjuntos de objetos y TableAdapters (estableciendo la propiedad **DataSet Project** ), las clases de conjunto de tipos parciales existentes en el proyecto no se moverán automáticamente. Las clases de conjunto de tipos parciales existentes deben moverse manualmente al proyecto de conjunto de DataSet.
 
 6. Guarde el conjunto de datos.
 
-     Se genera el código de conjunto de datos en el proyecto seleccionado en el **DataSet Project** propiedad y el **TableAdapter** se genera el código en el proyecto actual.
+     El código del conjunto de objetos se genera en el proyecto seleccionado en la propiedad **DataSet Project** y el código **TableAdapter** se genera en el proyecto actual.
 
-De forma predeterminada, después de separar el conjunto de datos y el código de TableAdapter, el resultado es un archivo de clase discretos en cada proyecto. El proyecto original tiene un archivo denominado *DatasetName.Designer.vb* (o *DatasetName.Designer.cs*) que contiene el código del TableAdapter. El proyecto designado en el **Dataset Project** propiedad tiene un archivo denominado *DatasetName.DataSet.Designer.vb* (o *DatasetName.DataSet.Designer.cs*) que contiene el código del conjunto de datos.
+De forma predeterminada, después de separar el código de conjunto de datos y TableAdapter, el resultado es un archivo de clase discreto en cada proyecto. El proyecto original tiene un archivo denominado *DatasetName. Designer. VB* (o *DatasetName.Designer.CS*) que contiene el código de TableAdapter. El proyecto designado en la propiedad **DataSet Project** tiene un archivo denominado *DatasetName. DataSet. Designer. vb* (o *DatasetName.DataSet.Designer.CS*) que contiene el código del conjunto de archivos.
 
 > [!NOTE]
-> Para ver el archivo de clase generada, seleccione el conjunto de datos o proyecto de TableAdapter. A continuación, en **el Explorador de soluciones**, seleccione **mostrar todos los archivos**.
+> Para ver el archivo de clase generado, seleccione el proyecto de conjunto de archivos o TableAdapter. A continuación, en **Explorador de soluciones**, seleccione **Mostrar todos los archivos**.
 
 ## <a name="see-also"></a>Vea también
 
 - [Introducción a las aplicaciones de datos de n niveles](../data-tools/n-tier-data-applications-overview.md)
-- [Tutorial: Creación de una aplicación de datos de n niveles](../data-tools/walkthrough-creating-an-n-tier-data-application.md)
+- [Tutorial: Creación de una aplicación de datos con N niveles](../data-tools/walkthrough-creating-an-n-tier-data-application.md)
 - [Actualización jerárquica](../data-tools/hierarchical-update.md)
 - [Obtener acceso a los datos en Visual Studio](../data-tools/accessing-data-in-visual-studio.md)
 - [ADO.NET](/dotnet/framework/data/adonet/index)
