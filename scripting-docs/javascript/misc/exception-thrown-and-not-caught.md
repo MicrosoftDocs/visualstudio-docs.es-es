@@ -1,5 +1,5 @@
 ---
-title: Excepción producida y no detectada | Documentos de Microsoft
+title: Excepción producida y no detectada | Microsoft Docs
 ms.date: 01/18/2017
 ms.prod: visual-studio-windows
 ms.technology: vs-javascript
@@ -14,25 +14,25 @@ ms.assetid: b5235490-a8e7-42e3-804e-d85235bc6f05
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: bae4ed0a335a9c12d16cb46208f77c4b66f12547
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 05a9e4f51d5daf7a9e1b1153acbbe8b76b539b72
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62946334"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72572857"
 ---
 # <a name="exception-thrown-and-not-caught"></a>Excepción producida y no detectada
-Se incluye un `throw` instrucción en el código, pero no se ha delimitado por un **intente** bloque, o no se asoció no **catch** bloque para capturar el error. Excepciones desde el **intente** bloquear mediante la **throw** instrucción y capturadas fuera el **intente** bloque con un **catch** instrucción.  
+Incluyó una instrucción `throw` en el código, pero no estaba incluida en un bloque **try** o no había ningún bloque **catch** asociado para interceptar el error. Las excepciones se producen en el bloque **try** mediante la instrucción **Throw** y se detectan fuera del bloque **try** con una instrucción **catch** .  
   
 ### <a name="to-correct-this-error"></a>Para corregir este error  
   
-- Coloque el código que puede producir una excepción en un **intente** bloquear y asegúrese de que hay correspondiente **catch** bloque.  
+- Incluya código que pueda producir una excepción en un bloque **try** y asegúrese de que hay un bloque **catch** correspondiente.  
   
-- Asegúrese de que la instrucción catch espera el formato correcto de la excepción.  
+- Asegúrese de que la instrucción Catch espera la forma correcta de la excepción.  
   
-- Si se vuelve a producir la excepción, asegúrese de que hay otra instrucción catch correspondiente.  
+- Si se vuelve a producir la excepción, asegúrese de que hay otra instrucción Catch correspondiente.  
   
 ## <a name="see-also"></a>Vea también  
- [Objeto de error](../../javascript/reference/error-object-javascript.md)   
- [Throw (instrucción)](../../javascript/reference/throw-statement-javascript.md)   
+ [Objeto de Error](../../javascript/reference/error-object-javascript.md)    
+ [instrucción throw](../../javascript/reference/throw-statement-javascript.md)    
  [Try...Catch...Finally (Instrucción)](../../javascript/reference/try-dot-dot-dot-catch-dot-dot-dot-finally-statement-javascript.md)

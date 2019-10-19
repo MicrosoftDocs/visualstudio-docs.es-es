@@ -1,5 +1,5 @@
 ---
-title: Argumento reemplazante no válido | Documentos de Microsoft
+title: Argumento de reemplazo no válido | Microsoft Docs
 ms.date: 01/18/2017
 ms.prod: visual-studio-windows
 ms.technology: vs-javascript
@@ -15,22 +15,22 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 46e01a4e6bb989fad2da6f979c79b7aba13df63a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 9ba76a2121dfb3853e38bacbdf49c985103c2a35
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63007319"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72573809"
 ---
 # <a name="invalid-replacer-argument"></a>Argumento reemplazante no válido
-Se ha intentado invocar `JSON.stringify` con un argumento que no es válido. El `replacer` argumento debe ser una función o una matriz.  
+Se ha intentado invocar `JSON.stringify` con un argumento que no es válido. El argumento `replacer` debe ser una función o una matriz.  
   
 ### <a name="to-correct-this-error"></a>Para corregir este error  
   
-- Cambiar el `replacer` argumento a una función o una matriz.  
+- Cambie el argumento `replacer` a una función o una matriz.  
   
 ## <a name="example"></a>Ejemplo  
- El código en este ejemplo genera un error de tiempo de ejecución porque `memberfilter` es un objeto en lugar de una función o matriz.  
+ El código de este ejemplo produce un error en tiempo de ejecución porque `memberfilter` es un objeto en lugar de una función o una matriz.  
   
 ```JavaScript  
 var contact = new Object();  
@@ -45,6 +45,6 @@ var jsontext = JSON.stringify(contact, memberfilter, "\t");
 ```  
   
 ## <a name="see-also"></a>Vea también  
- [Objeto JSON](../../javascript/reference/json-object-javascript.md)   
- [JSON.parse (función)](../../javascript/reference/json-parse-function-javascript.md)   
+ @No__t_1 de [objeto JSON](../../javascript/reference/json-object-javascript.md)  
+ @No__t_1 de la [función JSON. Parse](../../javascript/reference/json-parse-function-javascript.md)  
  [Errores en tiempo de ejecución de JavaScript](../../javascript/reference/javascript-run-time-errors.md)

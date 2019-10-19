@@ -1,5 +1,5 @@
 ---
-title: IDispatchEx::GetMemberName | Documentos de Microsoft
+title: 'IDispatchEx:: GetMemberName | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,12 +17,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 155c8db6e772460ae8ad4e8b5a70ae5e67b49ec1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: f68b0157e8e352b34885ae94d14026a51c4a6e97
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63000879"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72574106"
 ---
 # <a name="idispatchexgetmembername"></a>IDispatchEx::GetMemberName
 Recupera el nombre de un miembro.  
@@ -38,18 +38,18 @@ HRESULT GetMemberName(
   
 #### <a name="parameters"></a>Parámetros  
  `id`  
- Identifica el miembro. Usa `GetDispID` o `GetNextDispID` para obtener el identificador de envío.  
+ Identifica el miembro. Utiliza `GetDispID` o `GetNextDispID` para obtener el identificador de envío.  
   
  `pbstrName`  
  Dirección de un `BSTR` que recibe el nombre del miembro. La aplicación que realiza la llamada es responsable de liberar este valor.  
   
 ## <a name="return-value"></a>Valor devuelto  
- Devuelve uno de los siguientes valores:  
+ Devuelve uno de los valores siguientes:  
   
 |||  
 |-|-|  
 |`S_OK`|Correcto.|  
-|`DISP_E_UNKNOWNNAME`|No se conoce el nombre.|  
+|`DISP_E_UNKNOWNNAME`|No se conocía el nombre.|  
   
 ## <a name="example"></a>Ejemplo  
   
@@ -75,6 +75,6 @@ HRESULT hr;
 ```  
   
 ## <a name="see-also"></a>Vea también  
- [IDispatchEx (interfaz)](../../winscript/reference/idispatchex-interface.md)   
- [IDispatchEx::GetDispID](../../winscript/reference/idispatchex-getdispid.md)   
+ [IDispatchEx (interfaz](../../winscript/reference/idispatchex-interface.md) )    
+ [IDispatchEx:: GetDispID](../../winscript/reference/idispatchex-getdispid.md)    
  [IDispatchEx::GetNextDispID](../../winscript/reference/idispatchex-getnextdispid.md)

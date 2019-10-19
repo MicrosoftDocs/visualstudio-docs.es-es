@@ -1,5 +1,5 @@
 ---
-title: Sin terminar comentario | Documentos de Microsoft
+title: Comentario sin terminar | Microsoft Docs
 ms.date: 01/18/2017
 ms.prod: visual-studio-windows
 ms.technology: vs-javascript
@@ -14,15 +14,15 @@ ms.assetid: d4286315-814b-4966-b4c4-1ee19d796eff
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 5bf7c570c832fb5db5489a2a9f9bec459f26f0a1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 22bda5d6baabe8874d7514c137ddbcb3e11eb23b
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63005960"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72572523"
 ---
 # <a name="unterminated-comment"></a>Comentario sin terminar
-Se inició un bloque de comentario de varias líneas, pero no correctamente finalizó. Comentarios de varias líneas que comienzan por un "/\*" combinación y terminan con la inversa "\*/" combinación. A continuación se muestra un ejemplo:  
+Comenzó un bloque de comentarios de varias líneas, pero no lo terminó correctamente. Los comentarios de varias líneas comienzan con una combinación "/*" y terminan con la combinación inversa "\*/". A continuación se muestra un ejemplo:  
   
 ```JavaScript  
 /* This is a comment  

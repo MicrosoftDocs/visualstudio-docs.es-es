@@ -1,5 +1,5 @@
 ---
-title: IActiveScriptAuthor::IsCommitChar | Documentos de Microsoft
+title: 'Iactivescriptauthor (:: IsCommitChar | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 13
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3a0b630f872e49b7fbbabf4f354755f900fb4b5e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 2f442bdc22f569cac6d706d739b2cfb37e07398b
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62955074"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72576339"
 ---
 # <a name="iactivescriptauthoriscommitchar"></a>IActiveScriptAuthor::IsCommitChar
-Devuelve un valor que indica si un carácter dado debe desencadenar una confirmación de finalización de la instrucción por la aplicación.  
+Devuelve un valor que indica si un carácter determinado debe desencadenar una confirmación de finalización de instrucciones por parte de la aplicación.  
   
 ## <a name="syntax"></a>Sintaxis  
   
@@ -38,13 +38,13 @@ HRESULT IsCommitChar(
   
 #### <a name="parameters"></a>Parámetros  
  `ch`  
- [in] El carácter que se va a probar.  
+ de Carácter que se va a probar.  
   
  `pfcommit`  
- [out] `True` si el carácter es una confirmación carácter; en caso contrario, `False`.  
+ [out] `True` si el carácter es un carácter de confirmación; de lo contrario, `False`.  
   
 ## <a name="return-value"></a>Valor devuelto  
- Una clase `HRESULT`. Entre los valores posibles se incluyen los que se indican en la tabla siguiente, entre otros.  
+ Interfaz `HRESULT`. Entre los valores posibles se incluyen los que se indican en la tabla siguiente, entre otros.  
   
 |Valor|Descripción|  
 |-----------|-----------------|  

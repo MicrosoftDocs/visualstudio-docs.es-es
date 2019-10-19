@@ -1,5 +1,5 @@
 ---
-title: IScriptEntry::SetSignature | Microsoft Docs
+title: 'Iscriptentry (:: SetSignature | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 42740a0e6261317443b8c9cc23559a2f92f66540
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: e381e642462fe56e661de9da0d8974dc7bf18b18
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62787194"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72575336"
 ---
 # <a name="iscriptentrysetsignature"></a>IScriptEntry::SetSignature
-Conjuntos de información de tipo para un `IScriptEntry` objeto de función.  
+Establece la información de tipo para un objeto de función de `IScriptEntry`.  
   
 ## <a name="syntax"></a>Sintaxis  
   
@@ -38,20 +38,20 @@ HRESULT SetSignature(
   
 #### <a name="parameters"></a>Parámetros  
  `pti`  
- [in] La información de tipo.  
+ de Información de tipo.  
   
  `iMethod`  
- [in] El índice del método en el `ITypeInfo` objeto.  
+ de Índice del método en el objeto `ITypeInfo`.  
   
 ## <a name="return-value"></a>Valor devuelto  
- Una clase `HRESULT`. Entre los valores posibles se incluyen los que se indican en la tabla siguiente, entre otros.  
+ Interfaz `HRESULT`. Entre los valores posibles se incluyen los que se indican en la tabla siguiente, entre otros.  
   
 |Valor|Descripción|  
 |-----------|-----------------|  
 |`S_OK`|El método se realizó correctamente.|  
   
 ## <a name="remarks"></a>Comentarios  
- Establecer información de tipo mediante el uso de `IScriptEntry::SetSignature` o [IScriptNode::CreateChildHandler](../../winscript/reference/iscriptnode-createchildhandler.md). También se puede generar información de tipo con la entrada en función de la representación de la función interna.  
+ La información de tipo se establece mediante `IScriptEntry::SetSignature` o [iscriptnode (:: CreateChildHandler](../../winscript/reference/iscriptnode-createchildhandler.md). La entrada también puede generar la información de tipo basándose en la representación interna de la función.  
   
 ## <a name="see-also"></a>Vea también  
  [IScriptEntry (Interfaz)](../../winscript/reference/iscriptentry-interface.md)

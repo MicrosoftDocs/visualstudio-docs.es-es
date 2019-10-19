@@ -1,5 +1,5 @@
 ---
-title: Método Ijsenumdebugproperty | Microsoft Docs
+title: 'IJsEnumDebugProperty:: Next (método) | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -15,15 +15,15 @@ caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3ec6a1dded8c24de06a5746261a19b6609a97ada
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 48c4506d783093395b2d88b7a71d56e3a89d24e8
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62977544"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72573984"
 ---
 # <a name="ijsenumdebugpropertynext-method"></a>IJsEnumDebugProperty::Next (Método)
-Lee las propiedades para este objeto.  
+Lee las propiedades de este objeto.  
   
 ## <a name="syntax"></a>Sintaxis  
   
@@ -37,18 +37,18 @@ HRESULT Next(
   
 #### <a name="parameters"></a>Parámetros  
  `count`  
- [in] El número de propiedades que se va a leer.  
+ de Número de propiedades que se van a leer.  
   
  `ppDebugProperty`  
- [out] Objeto que representa el Explorador de propiedades.  
+ enuncia Objeto que representa el explorador de propiedades.  
   
  `pActualCount`  
- [out] El número real de las propiedades del objeto.  
+ enuncia Número real de propiedades del objeto.  
   
 ## <a name="return-value"></a>Valor devuelto  
   
 ## <a name="requirements"></a>Requisitos  
- **Encabezado:** jscript9diag.h  
+ **Encabezado:** jscript9diag. h  
   
 ## <a name="see-also"></a>Vea también  
  [IJsEnumDebugProperty (Interfaz)](../../winscript/reference/ijsenumdebugproperty-interface.md)

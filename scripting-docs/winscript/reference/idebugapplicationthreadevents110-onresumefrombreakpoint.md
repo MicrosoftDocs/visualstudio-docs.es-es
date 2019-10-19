@@ -1,5 +1,5 @@
 ---
-title: IDebugApplicationThreadEvents110::OnResumeFromBreakPoint | Documentos de Microsoft
+title: 'Idebugapplicationthreadevents110 (:: OnResumeFromBreakPoint | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -13,18 +13,18 @@ caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 61cb434c5d3514c63446792029b54e2f1413e006
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: e710d259ae4985f6e37fc14ee70d0467578d2bd0
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63440474"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72573355"
 ---
 # <a name="idebugapplicationthreadevents110onresumefrombreakpoint"></a>IDebugApplicationThreadEvents110::OnResumeFromBreakPoint
-El subproceso está reanudando después de un punto de interrupción y estará activo una vez más.  
+El subproceso se está reanudando desde un punto de interrupción y volverá a estar activo.  
   
 > [!IMPORTANT]
-> [IDebugApplicationThreadEvents110 (interfaz)](../../winscript/reference/idebugapplicationthreadevents110-interface.md) es implementada por PDM v11.0 y versiones posteriores. Se encuentra en activdbg100.h.  
+> La [interfaz idebugapplicationthreadevents110 (](../../winscript/reference/idebugapplicationthreadevents110-interface.md) se implementa mediante PDM v 11.0 y versiones posteriores. Se encuentra en activdbg100.h.  
   
 ## <a name="syntax"></a>Sintaxis  
   

@@ -1,5 +1,5 @@
 ---
-title: IDebugDocumentHelper::BringDocumentToTop | Microsoft Docs
+title: 'IDebugDocumentHelper:: BringDocumentToTop | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 74ad5bfbf8ba56839be198e24f4a2c3166899065
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 3b8afe5c03153517fe8923141ca251e6390cd782
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62783672"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72577004"
 ---
 # <a name="idebugdocumenthelperbringdocumenttotop"></a>IDebugDocumentHelper::BringDocumentToTop
-Aporta este documento a la parte superior en el depurador de interfaz de usuario.  
+Coloca este documento en la parte superior de la interfaz de usuario del depurador.  
   
 ## <a name="syntax"></a>Sintaxis  
   
@@ -44,7 +44,7 @@ HRESULT BringDocumentToTop();
 |`S_OK`|El método se realizó correctamente.|  
   
 ## <a name="remarks"></a>Comentarios  
- Este método inicia al depurador si aún no ha iniciado.  
+ Este método inicia el depurador si aún no se ha iniciado.  
   
 ## <a name="see-also"></a>Vea también  
  [IDebugDocumentHelper (Interfaz)](../../winscript/reference/idebugdocumenthelper-interface.md)

@@ -1,5 +1,5 @@
 ---
-title: IActiveScriptAuthorProcedure (interfaz) | Microsoft Docs
+title: Interfaz Iactivescriptauthorprocedure (| Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -13,21 +13,21 @@ caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 5e684a9e41165ceb266199c64a93e2e765506fb6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: f5cca448b43e239866fe13ed8ef81b5dbf4631c0
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63009760"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72572836"
 ---
 # <a name="iactivescriptauthorprocedure-interface"></a>IActiveScriptAuthorProcedure (Interfaz)
-Además de los métodos heredados de `IUnknown`, el `IScriptAuthorProcedure` interfaz expone el método siguiente.  
+Además de los métodos heredados de `IUnknown`, la interfaz de `IScriptAuthorProcedure` expone el método siguiente.  
   
 ## <a name="methods-in-vtable-order"></a>Métodos en orden de Vtable  
   
 |Método|Descripción|  
 |------------|-----------------|  
-|[IActiveScriptAuthorProcedure::ParseProcedureText](../../winscript/reference/iactivescriptauthorprocedure-parseproceduretext.md)|Analiza un procedimiento de código, agrega texto del procedimiento de código para el motor de creación de script y crea un `IScriptEntry` objeto que se corresponde con el procedimiento de código.|  
+|[IActiveScriptAuthorProcedure::ParseProcedureText](../../winscript/reference/iactivescriptauthorprocedure-parseproceduretext.md)|Analiza un procedimiento de código, agrega el texto del procedimiento de código al motor de creación de scripts y crea un objeto `IScriptEntry` que corresponde al procedimiento de código.|  
   
 ## <a name="see-also"></a>Vea también  
  [Active Script Authoring (Interfaces)](../../winscript/reference/active-script-authoring-interfaces.md)

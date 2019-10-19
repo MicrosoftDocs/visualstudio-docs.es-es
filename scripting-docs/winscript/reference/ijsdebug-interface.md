@@ -1,5 +1,5 @@
 ---
-title: IJsDebug (interfaz) | Documentos de Microsoft
+title: Interfaz IJsDebug | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -11,12 +11,12 @@ caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 20d755250960ad2f5b22cc7b645ad24b91c4875f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 46a09c4bbf5ce97441f9e60c8832854356ad48d4
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62583651"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72577759"
 ---
 # <a name="ijsdebug-interface"></a>IJsDebug (Interfaz)
 Punto de entrada para la depuración de JavaScript.  
@@ -33,10 +33,10 @@ IJsDebug : public IUnknown;
   
 |Name|Descripción|  
 |----------|-----------------|  
-|[IJsDebug::OpenVirtualProcess (Método)](../../winscript/reference/ijsdebug-openvirtualprocess-method.md)|Método de generador usado para crear un nuevo objeto de proceso virtual.|  
+|[IJsDebug::OpenVirtualProcess (Método)](../../winscript/reference/ijsdebug-openvirtualprocess-method.md)|Método de generador que se usa para crear un nuevo objeto de proceso virtual.|  
   
 ## <a name="requirements"></a>Requisitos  
- **Encabezado:** jscript9diag.h  
+ **Encabezado:** jscript9diag. h  
   
 ## <a name="see-also"></a>Vea también  
  [Referencia de interfaces de Windows Script](../../winscript/reference/windows-script-interfaces-reference.md)

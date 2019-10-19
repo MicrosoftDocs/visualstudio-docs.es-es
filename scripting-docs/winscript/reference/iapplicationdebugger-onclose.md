@@ -1,5 +1,5 @@
 ---
-title: IApplicationDebugger::onClose | Documentos de Microsoft
+title: 'Iapplicationdebugger (:: OnClose | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 5e749c51769bd3344e144836937492fbb0a8fb58
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 1e31b2a77effc729f0e7df1e36116ee554446093
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62991227"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72577874"
 ---
 # <a name="iapplicationdebuggeronclose"></a>IApplicationDebugger::onClose
-Controla un evento de cierre de aplicaciones de depuración.  
+Controla un evento de cierre de la aplicación de depuración.  
   
 ## <a name="syntax"></a>Sintaxis  
   
@@ -44,8 +44,8 @@ HRESULT onClose();
 |`S_OK`|El método se realizó correctamente.|  
   
 ## <a name="remarks"></a>Comentarios  
- Este método se llama cuando `IDebugApplication::Close` se llama.  
+ Se llama a este método cuando se llama a `IDebugApplication::Close`.  
   
 ## <a name="see-also"></a>Vea también  
- [IApplicationDebugger (interfaz)](../../winscript/reference/iapplicationdebugger-interface.md)   
+ @No__t_1 de la [interfaz iapplicationdebugger (](../../winscript/reference/iapplicationdebugger-interface.md)  
  [IDebugApplication::Close](../../winscript/reference/idebugapplication-close.md)

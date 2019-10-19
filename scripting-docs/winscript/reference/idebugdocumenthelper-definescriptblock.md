@@ -1,5 +1,5 @@
 ---
-title: IDebugDocumentHelper::DefineScriptBlock | Microsoft Docs
+title: IDebugDocumentHelper::D efineScriptBlock | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 2a320e4e43a983ace4decbaa68de0b1a7df7d457
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 6a2418b18e80ac86b672b3847f24ef9084ed1252
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62783029"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72576974"
 ---
 # <a name="idebugdocumenthelperdefinescriptblock"></a>IDebugDocumentHelper::DefineScriptBlock
-Indica a la aplicación auxiliar que un determinado intervalo de caracteres es un bloque de script que se controla mediante el motor de secuencia de comandos determinada.  
+Indica a la aplicación auxiliar que un intervalo determinado de caracteres es un bloque de script controlado por el motor de scripts determinado.  
   
 ## <a name="syntax"></a>Sintaxis  
   
@@ -41,19 +41,19 @@ HRESULT DefineScriptBlock(
   
 #### <a name="parameters"></a>Parámetros  
  `ulCharOffset`  
- [in] Ubicación del inicio del bloque de script.  
+ de Ubicación del inicio del bloque de script.  
   
  `cChars`  
- [in] Número de caracteres del bloque de script.  
+ de Número de caracteres del bloque de script.  
   
  `pas`  
- [in] El motor de scripts para este bloque de script.  
+ de Motor de scripts para este bloque de script.  
   
  `fScriptlet`  
- [in] Marca que indica si el bloque de script es scriptlet.  
+ de Marca que indica si el bloque de script es un Scriptlet.  
   
  `pdwSourceContext`  
- [out] El contexto de origen para el bloque de script.  
+ enuncia Contexto de origen para el bloque de script.  
   
 ## <a name="return-value"></a>Valor devuelto  
  El método devuelve un objeto `HRESULT`. Entre los valores posibles se incluyen los que se indican en la tabla siguiente, entre otros.  
@@ -63,13 +63,13 @@ HRESULT DefineScriptBlock(
 |`S_OK`|El método se realizó correctamente.|  
   
 ## <a name="remarks"></a>Comentarios  
- Un host inteligente puede usar este método cuando sus documentos contienen bloques de script incrustado. Un motor de lenguaje puede utilizar este método cuando su código contiene scripts incrustados para otros idiomas.  
+ Un host inteligente puede utilizar este método cuando sus documentos contienen bloques de scripts incrustados. Un motor de lenguaje puede utilizar este método cuando su código contiene scripts incrustados para otros lenguajes.  
   
- El motor de scripts es responsable de todas las sintaxis color y el código de contexto búsquedas en el bloque de script.  
+ El motor de scripts es responsable de todo el color de la sintaxis y las búsquedas de contexto de código en el bloque de script.  
   
- El `DefineScriptBlock` debe llamarse al método después de agregar el texto (por ejemplo, si se usa el `IDebugDocumentHelper::AddDBCSText` método) pero antes de la secuencia de comandos que se ha analizado el bloque (por ejemplo, si se usa el `IActiveScriptParse ::ParseScriptText` método).  
+ Se debe llamar al método `DefineScriptBlock` después de que se haya agregado el texto (por ejemplo, mediante el método `IDebugDocumentHelper::AddDBCSText`) pero antes de que se haya analizado el bloque de script (por ejemplo, mediante el método `IActiveScriptParse ::ParseScriptText`).  
   
 ## <a name="see-also"></a>Vea también  
- [IDebugDocumentHelper (interfaz)](../../winscript/reference/idebugdocumenthelper-interface.md)   
- [IDebugDocumentHelper::AddDBCSText](../../winscript/reference/idebugdocumenthelper-adddbcstext.md)   
+ @No__t_1 de la [interfaz IDebugDocumentHelper](../../winscript/reference/idebugdocumenthelper-interface.md)  
+ [IDebugDocumentHelper:: AddDBCSText](../../winscript/reference/idebugdocumenthelper-adddbcstext.md)    
  [IDebugDocumentHelper::AddUnicodeText](../../winscript/reference/idebugdocumenthelper-addunicodetext.md)

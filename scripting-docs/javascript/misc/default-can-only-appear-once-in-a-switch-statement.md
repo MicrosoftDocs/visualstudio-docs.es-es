@@ -1,5 +1,5 @@
 ---
-title: "'default' solo puede aparecer una vez en una instrucción 'switch' | Microsoft Docs"
+title: "' default ' solo puede aparecer una vez en una instrucción ' switch ' | Microsoft Docs"
 ms.date: 01/18/2017
 ms.prod: visual-studio-windows
 ms.technology: vs-javascript
@@ -14,21 +14,21 @@ ms.assetid: a94100f4-6ee5-4759-b635-9d309e47111e
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 24162efcc720d9c0073f8a5799c6278b8d3c8c62
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 90652e44a4bd0362f679be71d0d6401165487aec
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62946360"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72572884"
 ---
 # <a name="default-can-only-appear-once-in-a-switch-statement"></a>'default' solo puede aparecer una vez en una instrucción 'switch'.
-Se intentó utilizar el **predeterminada** instrucción más de una vez dentro de una instrucción switch. El caso predeterminado siempre es la última instrucción case en una instrucción switch (es el caso desestimado).  
+Ha intentado usar la instrucción **predeterminada** más de una vez dentro de una instrucción switch. El caso predeterminado es siempre la última instrucción Case en una instrucción switch (es el caso de paso a través).  
   
 ### <a name="to-correct-this-error"></a>Para corregir este error  
   
-- Quite cualquier adicional **predeterminada** caso las instrucciones de su `switch` instrucción (uso en la mayoría una instrucción case default en la instrucción switch).  
+- Quite las instrucciones Case **predeterminadas** adicionales de la instrucción `switch` (use como máximo una instrucción Case predeterminada en la instrucción switch).  
   
 ## <a name="see-also"></a>Vea también  
- [switch (instrucción)](../../javascript/reference/switch-statement-javascript.md)   
- [Controlar el flujo del programa](../../javascript/controlling-program-flow-javascript.md)   
+ [Switch (instrucción](../../javascript/reference/switch-statement-javascript.md) )    
+ [Controlar el flujo del programa](../../javascript/controlling-program-flow-javascript.md)    
  [Palabras reservadas de JavaScript](../../javascript/reference/javascript-reserved-words.md)

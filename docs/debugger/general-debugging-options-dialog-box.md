@@ -21,12 +21,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d3fa7ae62c19a7af45188bab08ce9b3144032b7d
-ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
-ms.translationtype: HT
+ms.openlocfilehash: bbd99d260ba61d9e3ae9e877ecc1cefb1a22892e
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72435708"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72569072"
 ---
 # <a name="general-debugging-options"></a>Opciones generales de depuración
 
@@ -95,11 +95,11 @@ En las condiciones 2 y 3, a veces el código administrado detecta la excepción 
 
 **Redirigir todo el texto de la ventana de salida a la ventana inmediato**: envía todos los mensajes del depurador que normalmente aparecen en la ventana de **salida** a la ventana **inmediato** en su lugar.
 
-**Mostrar la estructura sin procesar de los objetos en ventanas de variables**: desactiva todas las personalizaciones de la vista de estructura de objetos. Para obtener más información sobre las personalizaciones de vistas, vea [crear vistas personalizadas de objetos administrados](../debugger/create-custom-views-of-dot-managed-objects.md).
+**Mostrar la estructura sin procesar de los objetos en ventanas de variables**: desactiva todas las personalizaciones de la vista de estructura de objetos. Para obtener más información acerca de las personalizaciones de vistas, vea [crear vistas personalizadas de objetos administrados](../debugger/create-custom-views-of-managed-objects.md).
 
 **Suprimir optimización JIT al cargar el módulo (solo administrado)** : deshabilita la optimización JIT de código administrado cuando se carga un módulo y se compila JIT mientras el depurador está asociado. Al deshabilitar la optimización se puede simplificar la depuración de algunos problemas, aunque el rendimiento se verá afectado. Si se utiliza Solo mi código, suprimir la optimización JIT puede hacer que el código que no sea de usuario aparezca como código de usuario ("Mi código"). Para obtener más información, vea [depuración y optimización JIT](../debugger/jit-optimization-and-debugging.md).
 
-**Habilitación de la depuración de JavaScript para ASP.net (Chrome, Edge e IE)** : habilita el depurador de scripts para aplicaciones de ASP.net. Al usarse por primera vez en Chrome, es posible que tenga que iniciar sesión en el explorador para habilitar las extensiones de Chrome que ha instalado. Deshabilite esta opción para revertir al comportamiento heredado.
+**Habilitación de la depuración de JavaScript para ASP.net (Chrome, Microsoft Edge e IE)** : habilita el depurador de scripts para aplicaciones de ASP.net. Al usarse por primera vez en Chrome, es posible que tenga que iniciar sesión en el explorador para habilitar las extensiones de Chrome que ha instalado. Deshabilite esta opción para revertir al comportamiento heredado.
 
 **Habilitación de herramientas de desarrollo perimetrales para aplicaciones JavaScript para UWP (experimental)** : habilita las herramientas de desarrollo para aplicaciones de JavaScript para UWP en Microsoft Edge.
 
@@ -117,7 +117,7 @@ Para ver los símbolos que están disponibles en la tabla de exportación de un 
 
 **Usar el modo de compatibilidad administrada**: reemplaza el motor de depuración predeterminado por una versión heredada para habilitar estos escenarios:
 
-- Está utilizando un lenguaje .NET Framework distinto de, C#Visual Basic o F# que proporciona su propio evaluador de expresiones (esto incluye C++/CLI).
+- Está utilizando un lenguaje .NET distinto de C#, Visual Basic o F# que proporciona su propio evaluador de expresiones (esto incluye C++/CLI).
 
 - Desea habilitar editar y continuar para los proyectos C++ durante la depuración en modo mixto.
 

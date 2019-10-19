@@ -1,5 +1,5 @@
 ---
-title: IScriptEntry::GetText | Microsoft Docs
+title: 'Iscriptentry (:: GetText | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 24b314443644558b9900fc7d702dcd1b96a7cea4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 2b25c1667f1df7e0394dd2ebfb0fea452da1b47d
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62787716"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72575403"
 ---
 # <a name="iscriptentrygettext"></a>IScriptEntry::GetText
-Devuelve el texto que se corresponde con el `IScriptEntry` bloque de script o el código fuente que se encuentra en la `IScriptScriptlet` controlador de eventos.  
+Devuelve el texto que corresponde al `IScriptEntry` bloque de script o el código fuente contenido en el controlador de eventos `IScriptScriptlet`.  
   
 ## <a name="syntax"></a>Sintaxis  
   
@@ -37,10 +37,10 @@ HRESULT GetText(
   
 #### <a name="parameters"></a>Parámetros  
  `pbstr`  
- [out] El texto en el `IScriptEntry` bloque de script o el código fuente que se encuentra en la `IScriptScriptlet` controlador de eventos.  
+ enuncia El texto del bloque de script de `IScriptEntry` o el código fuente incluido en el controlador de eventos `IScriptScriptlet`.  
   
 ## <a name="return-value"></a>Valor devuelto  
- Una clase `HRESULT`. Entre los valores posibles se incluyen los que se indican en la tabla siguiente, entre otros.  
+ Interfaz `HRESULT`. Entre los valores posibles se incluyen los que se indican en la tabla siguiente, entre otros.  
   
 |Valor|Descripción|  
 |-----------|-----------------|  

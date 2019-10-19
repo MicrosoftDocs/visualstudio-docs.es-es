@@ -1,5 +1,5 @@
 ---
-title: IDebugApplication110::CallableWaitForHandles | Documentos de Microsoft
+title: 'Idebugapplication110 (:: CallableWaitForHandles | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -13,18 +13,18 @@ caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f74e3faa57e9ee4a38f77110334383bc2c72fe2f
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 22af0e9dcf548bbd2f0f8c179b4889d5294eb284
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63446395"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72575086"
 ---
 # <a name="idebugapplication110callablewaitforhandles"></a>IDebugApplication110::CallableWaitForHandles
-Espera a que cualquiera de los identificadores especificados que se señalen al tiempo que permite las llamadas entre subprocesos se publicarán en este subproceso. Este método debe llamarse desde el subproceso del depurador.  
+Espera a que se señalice cualquiera de los identificadores especificados mientras se permite que las llamadas entre subprocesos se publiquen en este subproceso. Se debe llamar a este método desde el subproceso del depurador.  
   
 > [!IMPORTANT]
-> [IDebugApplication110 (interfaz)](../../winscript/reference/idebugapplication110-interface.md) es implementada por PDM v11.0 y versiones posteriores. Se encuentra en activdbg100.h.  
+> La [interfaz idebugapplication110 (](../../winscript/reference/idebugapplication110-interface.md) se implementa mediante PDM v 11.0 y versiones posteriores. Se encuentra en activdbg100.h.  
   
 ## <a name="syntax"></a>Sintaxis  
   
@@ -34,13 +34,13 @@ HRESULT CallableWaitForHandles([in] DWORD handleCount, [in, size_is(handleCount)
   
 #### <a name="parameters"></a>Parámetros  
  `handleCount`  
- El número de identificadores para esperar.  
+ Número de identificadores que se van a esperar.  
   
  `pHandles`  
- El conjunto de identificadores de espera.  
+ Conjunto de identificadores que se va a esperar.  
   
  `pIndex`  
- Cuando el valor HRESULT es S_OK, el índice en `pHandles` para el identificador que fue señalado.  
+ Cuando el valor HRESULT es S_OK, el índice en `pHandles` para el identificador que se señaló.  
   
 ## <a name="see-also"></a>Vea también  
  [IDebugApplication110 (Interfaz)](../../winscript/reference/idebugapplication110-interface.md)

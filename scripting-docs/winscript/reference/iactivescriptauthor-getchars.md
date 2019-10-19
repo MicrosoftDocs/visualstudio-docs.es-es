@@ -1,5 +1,5 @@
 ---
-title: IActiveScriptAuthor::GetChars | Documentos de Microsoft
+title: 'Iactivescriptauthor (:: GetChars | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,12 +17,12 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 69cdeb16fa0791b3ff8c0cce4a4e67fe110eefc2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 2ce2b46d65c2ce92111bc4b6f44f66ce9dc4ce5f
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62935378"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72576252"
 ---
 # <a name="iactivescriptauthorgetchars"></a>IActiveScriptAuthor::GetChars
 Devuelve el conjunto de caracteres de finalización para un contexto de finalización solicitado.  
@@ -38,19 +38,19 @@ HRESULT GetChars(
   
 #### <a name="parameters"></a>Parámetros  
  `fRequestedList`  
- [in] El contexto solicitado de finalización.  
+ de Contexto de finalización solicitado.  
   
 |Constante|Valor|Descripción|  
 |--------------|-----------|-----------------|  
 |SCRIPT_CMPL_ENUM_TRIGGER|0x0001|Solicita la enumeración del lado izquierdo.|  
-|SCRIPT_CMPL_MEMBER_TRIGGER|0x0002|Solicita el contexto de la finalización de miembros.|  
+|SCRIPT_CMPL_MEMBER_TRIGGER|0x0002|Solicita el contexto de finalización de miembros.|  
 |SCRIPT_CMPL_PARAM_TRIGGER|0x0003|Solicita la lista de parámetros.|  
-|SCRIPT_CMPL_COMMIT|0x0004|Finalización de las solicitudes de la lista de parámetros.|  
+|SCRIPT_CMPL_COMMIT|0x0004|Solicita la finalización de la lista de parámetros.|  
   
  `pbstrChars`  
- [out] Los caracteres que se corresponden con el contexto de finalización solicitado.  
+ enuncia Caracteres que corresponden al contexto de finalización solicitado.  
   
-|`fRequestedList` Parámetro|Devuelve caracteres adicionales.|  
+|`fRequestedList` parámetro|Caracteres devueltos|  
 |--------------------------------|-------------------------|  
 |SCRIPT_CMPL_ENUM_TRIGGER|"."|  
 |SCRIPT_CMPL_MEMBER_TRIGGER|"="|  
@@ -58,7 +58,7 @@ HRESULT GetChars(
 |SCRIPT_CMPL_COMMIT|"()"|  
   
 ## <a name="return-value"></a>Valor devuelto  
- Una clase `HRESULT`. Entre los valores posibles se incluyen los que se indican en la tabla siguiente, entre otros.  
+ Interfaz `HRESULT`. Entre los valores posibles se incluyen los que se indican en la tabla siguiente, entre otros.  
   
 |Valor|Descripción|  
 |-----------|-----------------|  

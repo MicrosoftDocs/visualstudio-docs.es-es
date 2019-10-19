@@ -1,5 +1,5 @@
 ---
-title: DOCUMENTNAMETYPE (enumeración) | Documentos de Microsoft
+title: Enumeración DOCUMENTNAMETYPE (| Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,12 +17,12 @@ caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 5ee258602c47951f4731dc1378542cc83d57d72b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 401eb759523ed1a33d24c3a298db0b3de2b7d5a7
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62955225"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72575876"
 ---
 # <a name="documentnametype-enumeration"></a>Enumeración DOCUMENTNAMETYPE
 Describe qué tipo se va a obtener para un documento.  
@@ -42,11 +42,11 @@ DOCUMENTNAMETYPE_UNIQUE_TITLE,} DOCUMENTNAMETYPE;
   
 |Miembro|Descripción|  
 |------------|-----------------|  
-|DOCUMENTNAMETYPE_APPNODE|Obtiene el nombre tal como aparece en el árbol de la aplicación.|  
-|DOCUMENTNAMETYPE_TITLE|Obtiene el nombre tal como aparece en la barra de título del Visor.|  
+|DOCUMENTNAMETYPE_APPNODE|Obtiene el nombre tal y como aparece en el árbol de la aplicación.|  
+|DOCUMENTNAMETYPE_TITLE|Obtiene el nombre tal y como aparece en la barra de título del visor.|  
 |DOCUMENTNAMETYPE_FILE_TAIL|Obtiene el nombre de archivo sin una ruta de acceso.|  
 |DOCUMENTNAMETYPE_URL|Obtiene la dirección URL del documento.|  
-|DOCUMENTNAMETYPE_UNIQUE_TITLE|Obtiene el título que se anexa con enumeración para la identificación.|  
+|DOCUMENTNAMETYPE_UNIQUE_TITLE|Obtiene el título anexado con la enumeración para la identificación.|  
   
 ## <a name="see-also"></a>Vea también  
  [Active Script Debugger (Constantes, Enumeraciones y Estructuras)](../../winscript/reference/active-script-debugger-constants-enumerations-and-structures.md)

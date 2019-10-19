@@ -1,5 +1,5 @@
 ---
-title: IEnumRemoteDebugApplications::Next | Microsoft Docs
+title: 'Ienumremotedebugapplications (:: Next | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 9b14874891e739fc95b877e41e76559a1ab0060a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 9a9ebcbbd786ba8545e19b9833d26e5e385738c4
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62963242"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72575214"
 ---
 # <a name="ienumremotedebugapplicationsnext"></a>IEnumRemoteDebugApplications::Next
-El `Next` método recupera un número especificado de segmentos de la secuencia de enumeración.  
+El método `Next` recupera un número especificado de segmentos en la secuencia de enumeración.  
   
 ## <a name="syntax"></a>Sintaxis  
   
@@ -39,13 +39,13 @@ HRESULT Next(
   
 #### <a name="parameters"></a>Parámetros  
  `celt`  
- [in] El número de segmentos se van a recuperar.  
+ de Número de segmentos que se van a recuperar.  
   
  `ppda`  
- [out] Devuelve una matriz de `IRemoteDebugApplication` interfaces que representa los segmentos que se va a recuperar.  
+ enuncia Devuelve una matriz de interfaces `IRemoteDebugApplication` que representa los segmentos que se van a recuperar.  
   
  `pceltFetched`  
- [out] El número real de capturado por el enumerador de segmentos.  
+ enuncia Número real de segmentos capturados por el enumerador.  
   
 ## <a name="return-value"></a>Valor devuelto  
  El método devuelve un objeto `HRESULT`. Entre los valores posibles se incluyen los que se indican en la tabla siguiente, entre otros.  
@@ -55,7 +55,7 @@ HRESULT Next(
 |`S_OK`|El método se realizó correctamente.|  
   
 ## <a name="remarks"></a>Comentarios  
- Este método recupera un número especificado de segmentos de la secuencia de enumeración.  
+ Este método recupera un número especificado de segmentos en la secuencia de enumeración.  
   
 ## <a name="see-also"></a>Vea también  
  [IEnumRemoteDebugApplications (Interfaz)](../../winscript/reference/ienumremotedebugapplications-interface.md)

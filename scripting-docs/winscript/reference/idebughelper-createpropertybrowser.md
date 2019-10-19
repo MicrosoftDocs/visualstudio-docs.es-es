@@ -1,5 +1,5 @@
 ---
-title: IDebugHelper::CreatePropertyBrowser | Microsoft Docs
+title: 'Idebughelper (:: CreatePropertyBrowser | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 4fc1e4365deea4a3981d9cf457a2c0af37edcd43
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 99aa03470b49d02ee9f0ac1548bd1f8e27d0ab34
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62979258"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72562502"
 ---
 # <a name="idebughelpercreatepropertybrowser"></a>IDebugHelper::CreatePropertyBrowser
-Devuelve un explorador de propiedades que encapsula una variante.  
+Devuelve un explorador de propiedades que ajusta una variante.  
   
 ## <a name="syntax"></a>Sintaxis  
   
@@ -40,16 +40,16 @@ HRESULT CreatePropertyBrowser(
   
 #### <a name="parameters"></a>Parámetros  
  `pvar`  
- [in] Variante de raíz que examinar.  
+ de Variante raíz que se va a examinar.  
   
  `bstrName`  
- [in] Nombre para la raíz.  
+ de Nombre que se va a asignar a la raíz.  
   
  `pdat`  
- [in] El subproceso en el que se va a propiedades de la solicitud. Si este parámetro es NULL, no se realiza la ningún cálculo de referencias.  
+ de Subproceso en el que se van a solicitar propiedades. Si este parámetro es NULL, no se realiza ninguna serialización.  
   
  `ppdob`  
- [out] El Explorador de propiedades.  
+ enuncia Explorador de propiedades.  
   
 ## <a name="return-value"></a>Valor devuelto  
  El método devuelve un objeto `HRESULT`. Entre los valores posibles se incluyen los que se indican en la tabla siguiente, entre otros.  
@@ -59,9 +59,9 @@ HRESULT CreatePropertyBrowser(
 |`S_OK`|El método se realizó correctamente.|  
   
 ## <a name="remarks"></a>Comentarios  
- Este método devuelve un explorador de propiedades que encapsula una variante.  
+ Este método devuelve un explorador de propiedades que ajusta una variante.  
   
 ## <a name="see-also"></a>Vea también  
- [IDebugHelper::CreatePropertyBrowserEx](../../winscript/reference/idebughelper-createpropertybrowserex.md)   
- [IDebugHelper (interfaz)](../../winscript/reference/idebughelper-interface.md)   
+ [Idebughelper (:: CreatePropertyBrowserEx](../../winscript/reference/idebughelper-createpropertybrowserex.md)    
+ @No__t_1 de la [interfaz idebughelper (](../../winscript/reference/idebughelper-interface.md)  
  [IDebugProperty (Interfaz)](../../winscript/reference/idebugproperty-interface.md)

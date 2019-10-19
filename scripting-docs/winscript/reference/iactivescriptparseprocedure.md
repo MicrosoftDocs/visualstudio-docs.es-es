@@ -13,22 +13,22 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 5ed07ce5ed48abfb377dde5fc4d5dc128d881b4a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c20947a125766547565d99c5762c20e23652da1a
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63009203"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72561673"
 ---
 # <a name="iactivescriptparseprocedure"></a>IActiveScriptParseProcedure
-Si el motor de scripts de Windows permite que el texto del código fuente para los procedimientos que se agregarán a la secuencia de comandos, implementa el `IActiveScriptParseProcedure` interfaz. Para los lenguajes de scripting interpretados que no tienen ningún entorno de creación independiente, como VBScript, esto proporciona un mecanismo alternativo (distinto de `IActiveScriptParse` o `IPersist`*) para agregar los procedimientos de script al espacio de nombres.  
+Si el motor de Windows Script permite agregar el texto de código fuente para los procedimientos al script, implementa la interfaz `IActiveScriptParseProcedure`. En el caso de los lenguajes de scripting interpretados que no tienen ningún entorno de creación independiente, como VBScript, proporciona un mecanismo alternativo (distinto de `IActiveScriptParse` o `IPersist` *) para agregar procedimientos de script al espacio de nombres.  
   
 ## <a name="methods-in-vtable-order"></a>Métodos en orden de Vtable  
   
 |||  
 |-|-|  
 |Método|Descripción|  
-|[IActiveScriptParseProcedure::ParseProcedureText](../../winscript/reference/iactivescriptparseprocedure-parseproceduretext.md)|Analiza el procedimiento de código especificado y agrega el procedimiento al espacio de nombres.|  
+|[IActiveScriptParseProcedure::ParseProcedureText](../../winscript/reference/iactivescriptparseprocedure-parseproceduretext.md)|Analiza el procedimiento de código dado y agrega el procedimiento al espacio de nombres.|  
   
 ## <a name="see-also"></a>Vea también  
  [Active Script (Interfaces)](../../winscript/reference/active-script-interfaces.md)

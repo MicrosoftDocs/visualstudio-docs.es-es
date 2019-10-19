@@ -1,5 +1,5 @@
 ---
-title: IActiveScriptAuthor::AddTypeLib | Microsoft Docs
+title: 'Iactivescriptauthor (:: AddTypeLib | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b5967438c620a89df98c74c8824809b8fdaf739a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 5bd96732a905d3fc0732ccfeaf2b65ada82957f4
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62935489"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72577224"
 ---
 # <a name="iactivescriptauthoraddtypelib"></a>IActiveScriptAuthor::AddTypeLib
-Agrega una biblioteca de tipos para el espacio de nombres para la secuencia de comandos.  
+Agrega una biblioteca de tipos al espacio de nombres para el script.  
   
 ## <a name="syntax"></a>Sintaxis  
   
@@ -40,19 +40,19 @@ HRESULT AddTypeLib(
   
 #### <a name="parameters"></a>Parámetros  
  `rguidTypeLib`  
- [in] El CLSID (identificador de clase) de la biblioteca de tipos que se va a agregar.  
+ de CLSID (identificador de clase) de la biblioteca de tipos que se va a agregar.  
   
  `dwMajor`  
- [in] El número de versión principal.  
+ de Número de versión principal.  
   
  `dwMinor`  
- [in] El número de versión secundaria.  
+ de Número de versión secundaria.  
   
  `dwFlags`  
- [in] No se utiliza.  
+ de No se usa.  
   
 ## <a name="return-value"></a>Valor devuelto  
- Una clase `HRESULT`. Entre los valores posibles se incluyen los que se indican en la tabla siguiente, entre otros.  
+ Interfaz `HRESULT`. Entre los valores posibles se incluyen los que se indican en la tabla siguiente, entre otros.  
   
 |Valor|Descripción|  
 |-----------|-----------------|  
@@ -62,6 +62,6 @@ HRESULT AddTypeLib(
  Este método llama a `LoadTypeLib` para cargar la biblioteca de tipos. Cuando se realiza correctamente, este método llama a `IActiveScriptAuthor::AddNamedItem` para agregar información de tipo.  
   
 ## <a name="see-also"></a>Vea también  
- [IActiveScriptAuthor (interfaz)](../../winscript/reference/iactivescriptauthor-interface.md)   
- [IActiveScriptAuthor::AddNamedItem](../../winscript/reference/iactivescriptauthor-addnameditem.md)   
+ @No__t_1 de la [interfaz iactivescriptauthor (](../../winscript/reference/iactivescriptauthor-interface.md)  
+ [Iactivescriptauthor (:: AddNamedItem](../../winscript/reference/iactivescriptauthor-addnameditem.md)    
  [LoadTypeLib](https://docs.microsoft.com/previous-versions/windows/desktop/api/oleauto/nf-oleauto-loadtypelib)

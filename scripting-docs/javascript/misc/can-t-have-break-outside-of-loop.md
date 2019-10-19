@@ -1,5 +1,5 @@
 ---
-title: No puede tener 'break' fuera del bucle | Microsoft Docs
+title: No se puede tener ' break ' fuera del bucle | Microsoft Docs
 ms.date: 01/18/2017
 ms.prod: visual-studio-windows
 ms.technology: vs-javascript
@@ -14,27 +14,27 @@ ms.assetid: 11d02172-2a78-4705-a730-d21111db5f42
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a02848230187eb465d56ed73e44380e4b043b117
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 356e7022f940e696030b0cda4f71a599c147dd5a
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62946633"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72576016"
 ---
 # <a name="cant-have-break-outside-of-loop"></a>'break' no puede estar fuera del bucle
-Se intentó utilizar el **salto** palabra clave fuera de un bucle. El **salto** palabra clave se usa para finalizar un bucle o `switch` instrucción. Se debe incrustar en el cuerpo de un bucle o `switch` instrucción. Sin embargo, un **etiqueta** puede seguir la palabra clave break.  
+Intentó usar la palabra clave **break** fuera de un bucle. La palabra clave **break** se usa para terminar un bucle o una instrucción `switch`. Debe estar incrustado en el cuerpo de un bucle o una instrucción `switch`. Sin embargo, una **etiqueta** puede seguir a la palabra clave break.  
   
 ```js
 break labelname;  
 ```  
   
- Solo necesita el formulario con la etiqueta de la **salto** palabra clave cuando se usa bucles anidados o `switch` instrucciones y la necesidad de interrumpir un bucle que no es el más interno.  
+ Solo se necesita el formulario con etiqueta de la palabra clave **break** cuando se usan bucles anidados o instrucciones `switch` y es necesario interrumpir un bucle que no sea el más interno.  
   
 ### <a name="to-correct-this-error"></a>Para corregir este error  
   
-- Asegúrese de que el **salto** palabra clave aparece dentro de una instrucción de bucle o switch envolvente.  
+- Asegúrese de que la palabra clave **break** aparece dentro de un bucle envolvente o una instrucción switch.  
   
 ## <a name="see-also"></a>Vea también  
  [break (Instrucción)](../../javascript/reference/break-statement-javascript.md)   
- [Controlar el flujo del programa](../../javascript/controlling-program-flow-javascript.md)   
+ [Controlar el flujo del programa](../../javascript/controlling-program-flow-javascript.md)    
  [Solución de problemas de los scripts](../../javascript/advanced/troubleshooting-your-scripts-javascript.md)

@@ -1,5 +1,5 @@
 ---
-title: Método Ijsdebugdatatarget | Documentos de Microsoft
+title: 'IJsDebugDataTarget:: Gettlsvalue ((método) | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -15,15 +15,15 @@ caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 458aaab05f274983fdaf69c6e702502974665403
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: eecf9acf370656d5310a03d68ed74e10671a0bc2
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62582815"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72577604"
 ---
 # <a name="ijsdebugdatatargetgettlsvalue-method"></a>IJsDebugDataTarget::GetTlsValue (Método)
-Para el subproceso que se está depurando, recupera el valor en la ranura de subproceso (TLS) de almacenamiento local para el índice especificado de TLS.  
+Para el subproceso que se está depurando, recupera el valor de la ranura de almacenamiento local para el subproceso (TLS) para el índice TLS especificado.  
   
 ## <a name="syntax"></a>Sintaxis  
   
@@ -37,21 +37,21 @@ HRESULT GetTlsValue(
   
 #### <a name="parameters"></a>Parámetros  
  `threadId`  
- [in] Que se ejecuta en el proceso de destino para leer desde el subproceso.  
+ de Subproceso que se ejecuta en el proceso de destino desde el que se va a leer.  
   
  `tlsIndex`  
- [in] El índice TLS que se asignó cuando el proceso de destino llama a la función TlsAlloc.  
+ de Índice de TLS que se asignó cuando el proceso de destino llamó a la función TlsAlloc.  
   
  `pValue`  
- [out] El valor dimensionado por puntero que se almacena en la ranura TLS de subprocesos. Si el subproceso de destino es de 32 bits, los 32 bits superiores de este valor será cero.  
+ enuncia Valor del tamaño del puntero que se almacenó en la ranura TLS del subproceso. Si el subproceso de destino es de 32 bits, los 32 bits superiores de este valor serán cero.  
   
 ## <a name="return-value"></a>Valor devuelto  
   
 ## <a name="remarks"></a>Comentarios  
- Cada subproceso de un proceso tiene su propia ranura para cada índice TLS.  
+ Cada subproceso de un proceso tiene su propia ranura para cada índice de TLS.  
   
 ## <a name="requirements"></a>Requisitos  
- **Encabezado:** jscript9diag.h  
+ **Encabezado:** jscript9diag. h  
   
 ## <a name="see-also"></a>Vea también  
  [IJsDebugDataTarget (Interfaz)](../../winscript/reference/ijsdebugdatatarget-interface.md)

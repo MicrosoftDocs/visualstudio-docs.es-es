@@ -1,5 +1,5 @@
 ---
-title: Active Script Profiler Interfaces | Documentos de Microsoft
+title: Interfaces del generador de perfiles de Active script | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -11,12 +11,12 @@ caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: eeadf0de5563a4882c067960559414167e729173
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 1e9395c392051e184bf61bea65e7ef7ac3c3fe2c
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63422236"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72572672"
 ---
 # <a name="active-script-profiler-interfaces"></a>Active Script Profiler (Interfaces)
 Active Script Profiler Interfaces permiten recibir eventos de generación de perfiles del motor de [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)].  
@@ -47,7 +47,7 @@ Active Script Profiler Interfaces permiten recibir eventos de generación de per
 - [Active Script Profiler (Constantes, Enumeraciones y Estructuras)](../../winscript/reference/active-script-profiler-constants-enumerations-and-structures.md)  
   
 > [!NOTE]
-> Active Script Profiler Interfaces se incluyeron por primera vez con Internet Explorer 8. Las interfaces `IActiveScriptProfilerControl2` e `IActiveScriptProfilerCallback2` aparecieron por primera vez con Internet Explorer 9. El [IActiveScriptProfilerControl3 (interfaz)](../../winscript/reference/iactivescriptprofilercontrol3-interface.md), [IActiveScriptProfilerCallback3 (interfaz)](../../winscript/reference/iactivescriptprofilercallback3-interface.md), y [IActiveScriptProfilerHeapEnum (interfaz)](../../winscript/reference/iactivescriptprofilerheapenum-interface.md) interfaces estaban por primera vez con Internet Explorer 10. El [IActiveScriptProfilerControl5 (interfaz)](../../winscript/reference/iactivescriptprofilercontrol5-interface.md) en primer lugar se lanzó con Internet Explorer 11.  
+> Active Script Profiler Interfaces se incluyeron por primera vez con Internet Explorer 8. Las interfaces `IActiveScriptProfilerControl2` e `IActiveScriptProfilerCallback2` aparecieron por primera vez con Internet Explorer 9. La [interfaz IActiveScriptProfilerControl3](../../winscript/reference/iactivescriptprofilercontrol3-interface.md), la interfaz [IActiveScriptProfilerCallback3](../../winscript/reference/iactivescriptprofilercallback3-interface.md)y las interfaces de [interfaz IActiveScriptProfilerHeapEnum](../../winscript/reference/iactivescriptprofilerheapenum-interface.md) se lanzaron por primera vez con Internet Explorer 10. La [interfaz iactivescriptprofilercontrol5 (](../../winscript/reference/iactivescriptprofilercontrol5-interface.md) se lanzó por primera vez con Internet Explorer 11.  
 >   
 > En Internet Explorer 8 e Internet Explorer 9, solo el lenguaje [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] utiliza estas interfaces para admitir la generación de perfiles de script.  
   

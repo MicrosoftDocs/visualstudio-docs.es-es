@@ -1,5 +1,5 @@
 ---
-title: IDebugSessionProviderEx:CanJITDebug | Documentos de Microsoft
+title: 'Idebugsessionproviderex (: CanJITDebug | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -15,15 +15,15 @@ caps.latest.revision: 3
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 295be698e02264c81522b70d0377c2030da6190e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d1ad9192d8faac9931cd3d14e688ee2f54e46687
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62979014"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72574925"
 ---
 # <a name="idebugsessionproviderexcanjitdebug"></a>IDebugSessionProviderEx:CanJITDebug
-Determina si un proceso especificado puede ser depurado con solo en tiempo de depuración.  
+Determina si un proceso especificado se puede depurar con depuración Just-in-Time.  
   
 ## <a name="syntax"></a>Sintaxis  
   
@@ -35,7 +35,7 @@ HRESULT CanJITDebug(
   
 #### <a name="parameters"></a>Parámetros  
  `pid`  
- [in] El identificador de proceso para el proceso que se desea depurar.  
+ de Identificador del proceso que se va a depurar.  
   
 ## <a name="return-value"></a>Valor devuelto  
  El método devuelve un objeto `HRESULT`. Entre los valores posibles se incluyen los que se indican en la tabla siguiente, entre otros.  

@@ -1,5 +1,5 @@
 ---
-title: IProvideExpressionContexts::EnumExpressionContexts | Microsoft Docs
+title: 'Iprovideexpressioncontexts (:: EnumExpressionContexts | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 965147083bdc11a3544561fdd96cd85221ccd443
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: f161c1591267af1398d5c04d00623381cfae2ad4
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63410145"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72572387"
 ---
 # <a name="iprovideexpressioncontextsenumexpressioncontexts"></a>IProvideExpressionContexts::EnumExpressionContexts
-Devuelve un enumerador de contextos de expresión que se conoce por este componente.  
+Devuelve un enumerador de los contextos de expresión que conoce este componente.  
   
 ## <a name="syntax"></a>Sintaxis  
   
@@ -37,7 +37,7 @@ HRESULT EnumExpressionContexts(
   
 #### <a name="parameters"></a>Parámetros  
  `ppedec`  
- [out] Un enumerador de los contextos de expresión conocido por este componente.  
+ enuncia Enumerador de los contextos de expresión que conoce este componente.  
   
 ## <a name="return-value"></a>Valor devuelto  
  El método devuelve un objeto `HRESULT`. Entre los valores posibles se incluyen los que se indican en la tabla siguiente, entre otros.  
@@ -47,10 +47,10 @@ HRESULT EnumExpressionContexts(
 |`S_OK`|El método se realizó correctamente.|  
   
 ## <a name="remarks"></a>Comentarios  
- El Administrador de depuración del proceso, usa este método para buscar todos los contextos de expresión global asociados a un subproceso determinado.  
+ El administrador de depuración de proceso utiliza este método para buscar todos los contextos de expresión globales asociados a un subproceso determinado.  
   
 > [!NOTE]
-> Este método se llama desde dentro del subproceso de interés. Es responsabilidad del implementador para identificar el subproceso actual y devuelve un enumerador correspondiente.  
+> Se llama a este método desde el subproceso de interés. Es el implementador quien debe identificar el subproceso actual y devolver un enumerador adecuado.  
   
 ## <a name="see-also"></a>Vea también  
  [IProvideExpressionContexts (Interfaz)](../../winscript/reference/iprovideexpressioncontexts-interface.md)

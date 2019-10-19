@@ -1,5 +1,5 @@
 ---
-title: IDebugDocumentHelper::SetTextAttributes | Documentos de Microsoft
+title: 'IDebugDocumentHelper:: SetTextAttributes | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 5d6ef4130cd9383cf4f59c2e3f5407bdb7780a0e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 7cc5e5955652fd8b59d4c502e68d97a729ded141
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62949024"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72569459"
 ---
 # <a name="idebugdocumenthelpersettextattributes"></a>IDebugDocumentHelper::SetTextAttributes
-Establece los atributos de un intervalo de texto, reemplazando otros atributos en ese texto.  
+Establece los atributos de un intervalo de texto, invalidando otros atributos en ese texto.  
   
 ## <a name="syntax"></a>Sintaxis  
   
@@ -39,13 +39,13 @@ HRESULT SetTextAttributes(
   
 #### <a name="parameters"></a>Parámetros  
  `ulCharOffset`  
- [in] La ubicación de inicio del intervalo de texto.  
+ de Ubicación del inicio del intervalo de texto.  
   
  `cChars`  
- [in] El número de caracteres del intervalo.  
+ de Número de caracteres del intervalo.  
   
  `pstaTextAttr`  
- [in] Los atributos de texto de origen para el intervalo de texto.  
+ de Atributos de texto de origen para el intervalo de texto.  
   
 ## <a name="return-value"></a>Valor devuelto  
  El método devuelve un objeto `HRESULT`. Entre los valores posibles se incluyen los que se indican en la tabla siguiente, entre otros.  
@@ -55,11 +55,11 @@ HRESULT SetTextAttributes(
 |`S_OK`|El método se realizó correctamente.|  
   
 ## <a name="remarks"></a>Comentarios  
- Es un error llamar a `SetTextAttributes` en un intervalo de texto antes de que el texto se agrega al documento. Llame a la `AddDBCSText`, `AddUnicodeText`, o `AddDeferredText` métodos para agregar texto al documento.  
+ Es un error llamar a `SetTextAttributes` en un intervalo de texto antes de que se agregue el texto al documento. Llame a los métodos `AddDBCSText`, `AddUnicodeText` o `AddDeferredText` para agregar texto al documento.  
   
 ## <a name="see-also"></a>Vea también  
- [IDebugDocumentHelper (interfaz)](../../winscript/reference/idebugdocumenthelper-interface.md)   
- [IDebugDocumentHelper::AddUnicodeText](../../winscript/reference/idebugdocumenthelper-addunicodetext.md)   
- [IDebugDocumentHelper::AddDBCSText](../../winscript/reference/idebugdocumenthelper-adddbcstext.md)   
- [IDebugDocumentHelper::AddDeferredText](../../winscript/reference/idebugdocumenthelper-adddeferredtext.md)   
+ @No__t_1 de la [interfaz IDebugDocumentHelper](../../winscript/reference/idebugdocumenthelper-interface.md)  
+ [IDebugDocumentHelper:: AddUnicodeText](../../winscript/reference/idebugdocumenthelper-addunicodetext.md)    
+ [IDebugDocumentHelper:: AddDBCSText](../../winscript/reference/idebugdocumenthelper-adddbcstext.md)    
+ [IDebugDocumentHelper:: AddDeferredText](../../winscript/reference/idebugdocumenthelper-adddeferredtext.md)    
  [SOURCE_TEXT_ATTR (Enumeración)](../../winscript/reference/source-text-attr-enumeration.md)

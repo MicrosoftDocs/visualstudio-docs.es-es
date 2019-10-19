@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3d941022427cbfa8d16efe98f716feceff980583
-ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
+ms.openlocfilehash: e3c0b45fe73624a7506fbfdb52204201d286a73e
+ms.sourcegitcommit: 08c144d290da373df841f04fc799e3133540a541
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72445664"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72535757"
 ---
 # <a name="mixed-minimum-rules-rule-set"></a>Conjunto de reglas Reglas mínimas mixtas
 
@@ -153,7 +153,7 @@ Incluya este conjunto de reglas en cualquier conjunto de reglas personalizado qu
 |[C28305](../code-quality/c28305.md)|Se descubrió un error al analizar un token.|
 |[C28350](../code-quality/c28350.md)|La anotación describe una situación no aplicable de forma condicional.|
 |[C28351](../code-quality/c28351.md)|La anotación describe dónde no se puede usar un valor dinámico (una variable) en la condición.|
-|[CA1001](../code-quality/ca1001-types-that-own-disposable-fields-should-be-disposable.md)|Los tipos que poseen campos descartables deben ser descartables|
+|[CA1001](../code-quality/ca1001.md)|Los tipos que poseen campos descartables deben ser descartables|
 |[CA1821](../code-quality/ca1821.md)|Quitar finalizadores vacíos|
 |[CA2213](../code-quality/ca2213.md)|Los campos descartables deben ser descartables|
 |[CA2231](../code-quality/ca2231.md)|Sobrecargar el operador equals al invalidar ValueType.Equals|

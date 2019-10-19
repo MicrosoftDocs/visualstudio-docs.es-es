@@ -1,5 +1,5 @@
 ---
-title: Se esperaba ';' | Microsoft Docs
+title: Se esperaba '; ' | Microsoft Docs
 ms.date: 01/18/2017
 ms.prod: visual-studio-windows
 ms.technology: vs-javascript
@@ -14,23 +14,23 @@ ms.assetid: 3070cc6c-1138-4655-a7ac-723379f48f94
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 9e5d0418f09d208d8919a2c431c818e236b62b29
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 27d9a36a36c3783048cdb7afb6c06da09bd21456
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62433726"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72576464"
 ---
 # <a name="expected-"></a>Se esperaba ';'
-Se intentó colocar más de una instrucción en una línea, pero no sepárelos con punto y coma. Punto y coma se utiliza para finalizar las instrucciones. Aunque se pueden colocar varias instrucciones en una sola línea, cada uno de ellos debe estar separada de la siguiente con un punto y coma.  
+Se intentó colocar más de una instrucción en una línea, pero no se separan con punto y coma. Los puntos y comas se usan para finalizar las instrucciones. Aunque puede colocar varias instrucciones en una sola línea, cada una debe estar delimitada de la siguiente con un punto y coma.  
   
 ### <a name="to-correct-this-error"></a>Para corregir este error  
   
-- Marcar el final de cada instrucción con un punto y coma.  
+- Marque el final de cada instrucción con un punto y coma.  
   
-- Asegúrese de que las llamadas de función use paréntesis correctamente.  
+- Asegúrese de que las llamadas de función usan paréntesis correctamente.  
   
-- Asegúrese de que no olvidamos los puntos y comas dentro del encabezado de un **para** bucle.  
+- Asegúrese de que no olvidó el punto y coma dentro del encabezado de un bucle **for** .  
   
 ## <a name="see-also"></a>Vea también  
  [Escribir código JavaScript](../../javascript/writing-javascript-code.md)

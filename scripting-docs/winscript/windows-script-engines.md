@@ -13,12 +13,12 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 1acbc364e9ee2a5a4911564eb6d2c7d4c34de458
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 94fca3befc13e32e6e2859c7b1ef6330af7b812f
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63415994"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72568945"
 ---
 # <a name="windows-script-engines"></a>Motores Windows Script
 Para implementar un motor de Microsoft Windows Script, cree un objeto OLE COM que admita las siguientes interfaces.  
@@ -68,7 +68,7 @@ Para implementar un motor de Microsoft Windows Script, cree un objeto OLE COM qu
 ## <a name="scripting-engine-threading"></a>Subprocesos del motor de scripting  
  Dado que un motor de Windows Script se puede usar en muchos entornos, es importante mantener su modelo de ejecución lo más flexible posible. Por ejemplo, un host basado en servidor puede necesitar conservar un diseño multiproceso haciendo uso de Windows Script de una manera eficiente. Al mismo tiempo, un host que no use subprocesos, como una aplicación típica, no se debe sobrecargar con administración de subprocesos. Windows Script consigue este equilibrio al restringir las formas en que un motor de scripting sin subprocesos puede devolver la llamada al host y así liberar a los hosts de esta carga.  
   
- Los motores de scripting usados en los servidores se implementan normalmente como objetos COM sin subprocesos. Esto significa que se puede llamar a los métodos de la interfaz [IActiveScript](../winscript/reference/iactivescript.md) y sus interfaces asociadas desde cualquier subproceso del proceso, sin serialización. (Por desgracia, esto también significa que el motor de scripting debe implementarse como un servidor en proceso, porque OLE no admite actualmente la serialización entre procesos de objetos sin subprocesos). La sincronización es responsabilidad del motor de scripting. En el caso de motores de scripting que no son internamente reentrantes, o modelos de lenguaje que no son multiproceso, la sincronización podría ser tan simple como serializar el acceso al motor de scripting con una exclusión mutua. Por supuesto, ciertos métodos como [IActiveScript::InterruptScriptThread](../winscript/reference/iactivescript-interruptscriptthread.md), no se deben serializar de esta forma para que un script detenido pueda finalizarse desde otro subproceso.  
+ Los motores de scripting usados en los servidores se implementan normalmente como objetos COM sin subprocesos. Esto significa que se puede llamar a los métodos de la interfaz [IActiveScript](../winscript/reference/iactivescript.md) y sus interfaces asociadas desde cualquier subproceso del proceso, sin serialización. (Desafortunadamente, esto también significa que el motor de scripting debe implementarse como un servidor en proceso, ya que OLE no admite actualmente la serialización interprocesada de objetos de subprocesamiento libre). La sincronización es responsabilidad del motor de scripting. En el caso de motores de scripting que no son internamente reentrantes, o modelos de lenguaje que no son multiproceso, la sincronización podría ser tan simple como serializar el acceso al motor de scripting con una exclusión mutua. Por supuesto, ciertos métodos como [IActiveScript::InterruptScriptThread](../winscript/reference/iactivescript-interruptscriptthread.md), no se deben serializar de esta forma para que un script detenido pueda finalizarse desde otro subproceso.  
   
  El hecho de que [IActiveScript](../winscript/reference/iactivescript.md) esté, por lo general, libre de subprocesos implica que la interfaz [IActiveScriptSite](../winscript/reference/iactivescriptsite.md) y el modelo de objetos del host deben estar también libres de subprocesos. Como consecuencia, la implementación del host sería bastante difícil, en especial, en el caso común donde el host es una aplicación basada en Windows de un único subproceso con controles ActiveX de un único subproceso o de modelo apartamento en su modelo de objetos. Por este motivo, se colocan las siguientes restricciones sobre el uso de [IActiveScriptSite](../winscript/reference/iactivescriptsite.md) del motor de scripting:  
   

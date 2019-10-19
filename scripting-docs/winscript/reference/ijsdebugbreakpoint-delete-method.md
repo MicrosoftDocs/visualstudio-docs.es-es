@@ -1,5 +1,5 @@
 ---
-title: Método Ijsdebugbreakpoint | Documentos de Microsoft
+title: IJsDebugBreakPoint::D eliminar método | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -15,12 +15,12 @@ caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 62aa6ddc7a24ca4a1aa0d654b08194de7e08efca
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 723e30946c9b4258f9cc4ac278b4ee99cba4bb78
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62583560"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72577724"
 ---
 # <a name="ijsdebugbreakpointdelete-method"></a>IJsDebugBreakPoint::Delete (Método)
 Elimina el punto de interrupción.  
@@ -37,7 +37,7 @@ HRESULT Delete(void);
  Devuelve S_FALSE si se llama en un punto de interrupción eliminado.  
   
 ## <a name="requirements"></a>Requisitos  
- **Encabezado:** jscript9diag.h  
+ **Encabezado:** jscript9diag. h  
   
 ## <a name="see-also"></a>Vea también  
  [IJsDebugBreakPoint (Interfaz)](../../winscript/reference/ijsdebugbreakpoint-interface.md)

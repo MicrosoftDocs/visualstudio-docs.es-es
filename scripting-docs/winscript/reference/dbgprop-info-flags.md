@@ -19,15 +19,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c63cf941bca1965fc4a2e3997f0c0b50ebc44035
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 5b8131531292e0f88108942648073883050dd609
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62955307"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72572582"
 ---
-# <a name="dbgpropinfoflags"></a>DBGPROP_INFO_FLAGS
-Se utiliza para especificar `DebugPropertyInfo` campos  
+# <a name="dbgprop_info_flags"></a>DBGPROP_INFO_FLAGS
+Se usa para especificar `DebugPropertyInfo` campos  
   
 ## <a name="syntax"></a>Sintaxis  
   
@@ -45,26 +45,26 @@ enum {
   
 ## <a name="members"></a>Miembros  
  DBGPROP_INFO_NAME  
- Inicializa el `bstrName` campo.  
+ Inicializa el campo de `bstrName`.  
   
  DBGPROP_INFO_TYPE  
- Inicializa el `bstrType` campo.  
+ Inicializa el campo de `bstrType`.  
   
  DBGPROP_INFO_VALUE  
- Inicializa el `bstrValue` campo.  
+ Inicializa el campo de `bstrValue`.  
   
  DBGPROP_INFO_FULLNAME  
- Inicializa el `bstrFullName` campo.  
+ Inicializa el campo de `bstrFullName`.  
   
  DBGPROP_INFO_ATTRIBUTES  
- Inicializa el `dwAttrib` campo.  
+ Inicializa el campo de `dwAttrib`.  
   
  DBGPROP_INFO_DEBUGPROP  
- Inicializa el `pDebugProp` campo que contiene un `IDebugProperty` interfaz.  
+ Inicializa el `pDebugProp` campo que contiene una interfaz de `IDebugProperty`.  
   
  DBGPROP_INFO_AUTOEXPAND  
- Especifica que el campo de valor debe contener el valor expandido automática, si está disponible para este tipo de objeto.  
+ Especifica que el campo de valor debe contener el valor de expansión automática, si está disponible, para este tipo de objeto.  
   
 ## <a name="see-also"></a>Vea también  
- [DebugPropertyInfo (estructura)](../../winscript/reference/debugpropertyinfo-structure.md)   
+ @No__t_1 de la [estructura debugpropertyinfo (](../../winscript/reference/debugpropertyinfo-structure.md)  
  [IDebugProperty (Interfaz)](../../winscript/reference/idebugproperty-interface.md)

@@ -1,5 +1,5 @@
 ---
-title: IEnumRemoteDebugApplications::Skip | Microsoft Docs
+title: 'Ienumremotedebugapplications (:: Skip | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,12 +17,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d5ed991b02394e12f2e3e789b673149c9de18949
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 0d1b4d183d3a4009302f207f530ce9b2391e2037
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62962351"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72575199"
 ---
 # <a name="ienumremotedebugapplicationsskip"></a>IEnumRemoteDebugApplications::Skip
 Omite un número especificado de segmentos en una secuencia de enumeración.  
@@ -37,7 +37,7 @@ HRESULT Skip(
   
 #### <a name="parameters"></a>Parámetros  
  `celt`  
- [in] Número de segmentos de la secuencia de enumeración que se omitirán.  
+ de Número de segmentos de la secuencia de enumeración que se van a omitir.  
   
 ## <a name="return-value"></a>Valor devuelto  
  El método devuelve un objeto `HRESULT`. Entre los valores posibles se incluyen los que se indican en la tabla siguiente, entre otros.  

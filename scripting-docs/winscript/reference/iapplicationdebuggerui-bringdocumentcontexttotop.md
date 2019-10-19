@@ -1,5 +1,5 @@
 ---
-title: IApplicationDebuggerUI::BringDocumentContextToTop | Microsoft Docs
+title: 'Iapplicationdebuggerui (:: BringDocumentContextToTop | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 596f9357a8553bf6c39140a6948d8ae3085c3210
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 8648a4377e901908df20cdb5f413ee73ede5c1a6
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62991135"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72577810"
 ---
 # <a name="iapplicationdebuggeruibringdocumentcontexttotop"></a>IApplicationDebuggerUI::BringDocumentContextToTop
-Pone la ventana que contiene el contexto del documento especificado en la parte superior de la interfaz de usuario del depurador y se desplaza a la ventana para el contexto.  
+Coloca la ventana que contiene el contexto de documento dado en la parte superior de la interfaz de usuario del depurador y desplaza la ventana hasta el contexto.  
   
 ## <a name="syntax"></a>Sintaxis  
   
@@ -37,7 +37,7 @@ HRESULT BringDocumentContextToTop(
   
 #### <a name="parameters"></a>Parámetros  
  `pddc`  
- [in] Contexto de documento para dar a la parte superior de la interfaz de usuario del depurador.  
+ de Contexto del documento que se va a colocar en la parte superior de la interfaz de usuario del depurador.  
   
 ## <a name="return-value"></a>Valor devuelto  
  El método devuelve un objeto `HRESULT`. Entre los valores posibles se incluyen los que se indican en la tabla siguiente, entre otros.  
@@ -45,10 +45,10 @@ HRESULT BringDocumentContextToTop(
 |Valor|Descripción|  
 |-----------|-----------------|  
 |`S_OK`|El método se realizó correctamente.|  
-|`E_INVALIDARG`|El contexto especificado por `pddc` no se conoce.|  
+|`E_INVALIDARG`|No se conoce el contexto especificado por `pddc`.|  
   
 ## <a name="remarks"></a>Comentarios  
- Este método pone la ventana que contiene el contexto del documento especificado en la parte superior de la interfaz de usuario del depurador y desplaza a la ventana para el contexto.  
+ Este método coloca la ventana que contiene el contexto de documento dado en la parte superior de la interfaz de usuario del depurador y desplaza la ventana hasta el contexto.  
   
 ## <a name="see-also"></a>Vea también  
  [IApplicationDebuggerUI (Interfaz)](../../winscript/reference/iapplicationdebuggerui-interface.md)

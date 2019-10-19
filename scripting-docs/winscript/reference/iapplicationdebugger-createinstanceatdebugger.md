@@ -1,5 +1,5 @@
 ---
-title: IApplicationDebugger::CreateInstanceAtDebugger | Microsoft Docs
+title: 'Iapplicationdebugger (:: CreateInstanceAtDebugger | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,18 +17,18 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 95489464128e706e755432bee991c5481f5af8bc
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: c15dc5d9b36a718ed41813bac46bc4b9415eb853
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63425828"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72577890"
 ---
 # <a name="iapplicationdebuggercreateinstanceatdebugger"></a>IApplicationDebugger::CreateInstanceAtDebugger
-Permite la creación de objetos en el proceso del depurador al código que es fuera de proceso al depurador.  
+Permite la creación de objetos en el proceso del depurador mediante el código que está fuera de proceso del depurador.  
   
 > [!IMPORTANT]
-> No se debe implementar este método, porque permite código no seguro crear objetos arbitrarios en un subproceso del depurador de confianza.  
+> Este método no debe implementarse, ya que permite que el código que no es de confianza cree objetos arbitrarios en un subproceso del depurador de confianza.  
   
 ## <a name="syntax"></a>Sintaxis  
   
@@ -44,19 +44,19 @@ HRESULT CreateInstanceAtDebugger(
   
 #### <a name="parameters"></a>Parámetros  
  `rclsid`  
- [in] Identificador de clase (CLSID) del objeto para crear.  
+ de Identificador de clase (CLSID) del objeto que se va a crear.  
   
  `pUnkOuter`  
- [in] Si `NULL`, el objeto no se crea como parte de un agregado. En caso contrario, `pUnkOuter` es un puntero al objeto agregado `IUnknown` interfaz (el control `IUnknown`).  
+ de Si `NULL`, el objeto no se crea como parte de un agregado. De lo contrario, `pUnkOuter` es un puntero a la interfaz de `IUnknown` del objeto de agregado (control `IUnknown`).  
   
  `dwClsContext`  
- [in] Contexto de ejecución de código ejecutable. Los valores se toman de la enumeración `CLSCTX`.  
+ de Contexto para ejecutar el código ejecutable. Los valores se toman de la enumeración `CLSCTX`.  
   
  `riid`  
- [in] El identificador de interfaz que se usa para comunicarse con el objeto.  
+ de Identificador de interfaz que se usa para comunicarse con el objeto.  
   
  `ppvObject`  
- [out] Dirección de la variable de puntero que recibe el puntero de interfaz solicitado en `riid`. Tras la devolución es correcta, *`ppvObject` contiene el puntero de interfaz solicitada. En caso de error, \* `ppvObject` contiene `NULL`.  
+ enuncia Dirección de la variable de puntero que recibe el puntero de interfaz solicitado en `riid`. Si la devolución es correcta, * `ppvObject` contiene el puntero de interfaz solicitado. En caso de error, \* `ppvObject` contiene `NULL`.  
   
 ## <a name="return-value"></a>Valor devuelto  
  El método devuelve un objeto `HRESULT`. Entre los valores posibles se incluyen los que se indican en la tabla siguiente, entre otros.  
@@ -66,7 +66,7 @@ HRESULT CreateInstanceAtDebugger(
 |`S_OK`|El método se realizó correctamente.|  
   
 ## <a name="remarks"></a>Comentarios  
- Este método delega a `CoCreateInstance`.  
+ Este método delega en `CoCreateInstance`.  
   
  El método no está implementado actualmente.  
   

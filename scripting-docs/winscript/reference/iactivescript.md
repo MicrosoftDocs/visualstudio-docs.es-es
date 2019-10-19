@@ -13,33 +13,33 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 5b7e3a0172a798eab9a743f446dff3d339a785b2
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: 7a33db2bcbcb356a508fec2e6bc5449a899a1299
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63436083"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72577236"
 ---
 # <a name="iactivescript"></a>IActiveScript
-Proporciona los métodos necesarios para inicializar el motor de scripting. Debe implementar el motor de scripting el `IActiveScript` interfaz.  
+Proporciona los métodos necesarios para inicializar el motor de scripting. El motor de scripting debe implementar la interfaz `IActiveScript`.  
   
 ## <a name="methods-in-vtable-order"></a>Métodos en orden de Vtable  
   
 |Método|Descripción|  
 |------------|-----------------|  
-|[IActiveScript::SetScriptSite](../../winscript/reference/iactivescript-setscriptsite.md)|Notifica al motor de scripting de la [IActiveScriptSite](../../winscript/reference/iactivescriptsite.md) sitio proporcionado por el host.|  
-|[IActiveScript::GetScriptSite](../../winscript/reference/iactivescript-getscriptsite.md)|Recupera el objeto de sitio asociado con el motor de scripts de Windows.|  
+|[IActiveScript::SetScriptSite](../../winscript/reference/iactivescript-setscriptsite.md)|Informa al motor de scripting del sitio [IActiveScriptSite](../../winscript/reference/iactivescriptsite.md) proporcionado por el host.|  
+|[IActiveScript::GetScriptSite](../../winscript/reference/iactivescript-getscriptsite.md)|Recupera el objeto de sitio asociado al motor de Windows Script.|  
 |[IActiveScript::SetScriptState](../../winscript/reference/iactivescript-setscriptstate.md)|Coloca el motor de scripting en el estado especificado.|  
 |[IActiveScript::GetScriptState](../../winscript/reference/iactivescript-getscriptstate.md)|Recupera el estado actual del motor de scripting.|  
-|[IActiveScript::Close](../../winscript/reference/iactivescript-close.md)|Hace que el motor de scripting abandonar cualquier script cargado actualmente, pierden su estado y liberar los punteros de interfaz que tiene a otros objetos, escribir, por tanto, un estado cerrado.|  
+|[IActiveScript::Close](../../winscript/reference/iactivescript-close.md)|Hace que el motor de scripting abandone cualquier script cargado actualmente, pierda su estado y libere los punteros de interfaz que tenga en otros objetos, con lo que se especifica un estado cerrado.|  
 |[IActiveScript::AddNamedItem](../../winscript/reference/iactivescript-addnameditem.md)|Agrega el nombre de un elemento de nivel de raíz al espacio de nombres del motor de scripting.|  
-|[IActiveScript::AddTypeLib](../../winscript/reference/iactivescript-addtypelib.md)|Agrega una biblioteca de tipos para el espacio de nombres para la secuencia de comandos.|  
-|[IActiveScript::GetScriptDispatch](../../winscript/reference/iactivescript-getscriptdispatch.md)|Recupera el `IDispatch` interfaz para el script en ejecución.|  
-|[IActiveScript::GetCurrentScriptThreadID](../../winscript/reference/iactivescript-getcurrentscriptthreadid.md)|Recupera un identificador de scripting motor-definidas para el subproceso actualmente en ejecución.|  
-|[IActiveScript::GetScriptThreadID](../../winscript/reference/iactivescript-getscriptthreadid.md)|Recupera un identificador de scripting motor-definido por el subproceso asociado al subproceso de Win32 de Microsoft especificado.|  
+|[IActiveScript::AddTypeLib](../../winscript/reference/iactivescript-addtypelib.md)|Agrega una biblioteca de tipos al espacio de nombres para el script.|  
+|[IActiveScript::GetScriptDispatch](../../winscript/reference/iactivescript-getscriptdispatch.md)|Recupera la interfaz de `IDispatch` para el script en ejecución.|  
+|[IActiveScript::GetCurrentScriptThreadID](../../winscript/reference/iactivescript-getcurrentscriptthreadid.md)|Recupera un identificador definido por el motor de scripting para el subproceso que se está ejecutando actualmente.|  
+|[IActiveScript::GetScriptThreadID](../../winscript/reference/iactivescript-getscriptthreadid.md)|Recupera un identificador definido por el motor de scripting para el subproceso asociado al subproceso de Microsoft Win32 determinado.|  
 |[IActiveScript::GetScriptThreadState](../../winscript/reference/iactivescript-getscriptthreadstate.md)|Recupera el estado actual de un subproceso de script.|  
-|[IActiveScript::InterruptScriptThread](../../winscript/reference/iactivescript-interruptscriptthread.md)|Interrumpe la ejecución de un subproceso en ejecución del script.|  
-|[IActiveScript::Clone](../../winscript/reference/iactivescript-clone.md)|Clona el motor de scripting actual (menos cualquier estado de ejecución actual), devolviendo un motor de scripting cargado que no tenga ningún sitio en el subproceso actual.|  
+|[IActiveScript::InterruptScriptThread](../../winscript/reference/iactivescript-interruptscriptthread.md)|Interrumpe la ejecución de un subproceso de script en ejecución.|  
+|[IActiveScript::Clone](../../winscript/reference/iactivescript-clone.md)|Clona el motor de scripting actual (menos cualquier estado de ejecución actual) y devuelve un motor de scripting cargado que no tiene ningún sitio en el subproceso actual.|  
   
 ## <a name="see-also"></a>Vea también  
  [Referencia de interfaces de Windows Script](../../winscript/reference/windows-script-interfaces-reference.md)

@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 866ad705f16e9eabb097e9c0c9064d2c379ebf9f
-ms.sourcegitcommit: 1507baf3a336bbb6511d4c3ce73653674831501b
+ms.openlocfilehash: f16040408def290536ac5dadfec77ade9577c821
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "72349624"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72568924"
 ---
 # <a name="tell-the-debugger-what-to-show-using-the-debuggerdisplay-attribute-c-visual-basic-f-ccli"></a>Indicar al depurador qué Mostrar mediante el atributo DebuggerDisplay (C#, Visual Basic, F#, C++/CLI)
 
@@ -182,6 +182,6 @@ class MyHashtable
 ## <a name="see-also"></a>Vea también
 
 - [Usar el atributo DebuggerTypeProxy](../debugger/using-debuggertypeproxy-attribute.md)
-- [Creación de vistas personalizadas de objetos administrados](../debugger/create-custom-views-of-dot-managed-objects.md)
+- [Creación de vistas personalizadas de objetos administrados](../debugger/create-custom-views-of-managed-objects.md)
 - [Especificadores de formato en C#](../debugger/format-specifiers-in-csharp.md)
 - [Mejorar la depuración con los atributos de visualización del depurador](/dotnet/framework/debug-trace-profile/enhancing-debugging-with-the-debugger-display-attributes)

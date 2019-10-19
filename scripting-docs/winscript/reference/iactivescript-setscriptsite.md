@@ -1,5 +1,5 @@
 ---
-title: IActiveScript::SetScriptSite | Microsoft Docs
+title: 'IActiveScript:: SetScriptSite | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3fdf5f3ae84d1a991d67170b5f2b02114b91ee05
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 063dcc7b580334bff9780e9c209b621ef7e25656
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62935559"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72575329"
 ---
 # <a name="iactivescriptsetscriptsite"></a>IActiveScript::SetScriptSite
-Notifica al motor de scripting de la [IActiveScriptSite](../../winscript/reference/iactivescriptsite.md) sitio de interfaz proporcionado por el host. Llame a este método antes que cualquier otro [IActiveScript](../../winscript/reference/iactivescript.md) se usa los métodos de interfaz.  
+Informa al motor de scripting del sitio de la interfaz [IActiveScriptSite](../../winscript/reference/iactivescriptsite.md) proporcionado por el host. Llame a este método antes de que se use cualquier otro método de la interfaz [IActiveScript](../../winscript/reference/iactivescript.md) .  
   
 ## <a name="syntax"></a>Sintaxis  
   
@@ -37,17 +37,17 @@ HRESULT SetScriptSite(
   
 #### <a name="parameters"></a>Parámetros  
  `pScriptSite`  
- [in] Dirección del sitio proporcionada por el host de script que se asociará con esta instancia del motor de scripting. El sitio debe asignarse de forma exclusiva a esta instancia del motor de scripting; no se puede compartir con otros motores de scripting.  
+ de Dirección del sitio de script proporcionado por el host que se va a asociar a esta instancia del motor de scripting. El sitio debe asignarse de forma única a esta instancia del motor de scripting; no se puede compartir con otros motores de scripting.  
   
 ## <a name="return-value"></a>Valor devuelto  
- Devuelve uno de los siguientes valores:  
+ Devuelve uno de los valores siguientes:  
   
 |Valor devuelto|Significado|  
 |------------------|-------------|  
 |`S_OK`|Correcto.|  
-|`E_FAIL`|Se produjo un error no especificado; el motor de scripting no pudo finalizar la inicialización del sitio.|  
+|`E_FAIL`|Se produjo un error no especificado. el motor de scripting no pudo finalizar la inicialización del sitio.|  
 |`E_INVALIDARG`|Un argumento no era válido.|  
-|`E_POINTER`|Se especificó un puntero no válido.|  
+|`E_POINTER`|Se ha especificado un puntero no válido.|  
 |`E_UNEXPECTED`|No se esperaba la llamada (por ejemplo, ya se ha establecido un sitio).|  
   
 ## <a name="see-also"></a>Vea también  

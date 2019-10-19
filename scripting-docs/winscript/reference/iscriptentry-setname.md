@@ -1,5 +1,5 @@
 ---
-title: IScriptEntry::SetName | Microsoft Docs
+title: 'Iscriptentry (:: SetName | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f6476869a54921cfdac34e9f1ed202adef909ddf
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d9dfa27c6c8c58c0ee1599e17e1da5b5f424e416
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62787606"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72575353"
 ---
 # <a name="iscriptentrysetname"></a>IScriptEntry::SetName
-Para las entradas que representan un único objeto (por ejemplo, una función), Establece el nombre del objeto.  
+En el caso de las entradas que representan un solo objeto (como una función), establece el nombre del objeto.  
   
 ## <a name="syntax"></a>Sintaxis  
   
@@ -37,10 +37,10 @@ HRESULT SetName(
   
 #### <a name="parameters"></a>Parámetros  
  `psz`  
- [in] El nuevo nombre de la `IScriptEntry` objeto.  
+ de Nuevo nombre del objeto `IScriptEntry`.  
   
 ## <a name="return-value"></a>Valor devuelto  
- Una clase `HRESULT`. Entre los valores posibles se incluyen los que se indican en la tabla siguiente, entre otros.  
+ Interfaz `HRESULT`. Entre los valores posibles se incluyen los que se indican en la tabla siguiente, entre otros.  
   
 |Valor|Descripción|  
 |-----------|-----------------|  
@@ -49,5 +49,5 @@ HRESULT SetName(
 ## <a name="remarks"></a>Comentarios  
   
 ## <a name="see-also"></a>Vea también  
- [IScriptEntry (interfaz)](../../winscript/reference/iscriptentry-interface.md)   
+ @No__t_1 de la [interfaz iscriptentry (](../../winscript/reference/iscriptentry-interface.md)  
  [IScriptEntry::GetName](../../winscript/reference/iscriptentry-getname.md)

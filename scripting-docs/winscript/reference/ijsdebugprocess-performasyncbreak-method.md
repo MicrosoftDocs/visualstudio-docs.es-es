@@ -1,5 +1,5 @@
 ---
-title: Método Ijsdebugprocess | Microsoft Docs
+title: IJsDebugProcess::P método erformAsyncBreak | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -15,12 +15,12 @@ caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 5a4fdb70341744c764779d406372bbd55418fd29
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 3320c59097dec5229030a3f15252d907562c67e6
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62557990"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72577329"
 ---
 # <a name="ijsdebugprocessperformasyncbreak-method"></a>IJsDebugProcess::PerformAsyncBreak (Método)
 Pone el motor de scripts en modo de interrupción, haciendo que se detenga en la siguiente instrucción de script.  
@@ -35,12 +35,12 @@ HRESULT PerformAsyncBreak(
   
 #### <a name="parameters"></a>Parámetros  
  `threadId`  
- [in] El identificador de subproceso.  
+ de IDENTIFICADOR del subproceso.  
   
 ## <a name="return-value"></a>Valor devuelto  
   
 ## <a name="requirements"></a>Requisitos  
- **Encabezado:** jscript9diag.h  
+ **Encabezado:** jscript9diag. h  
   
 ## <a name="see-also"></a>Vea también  
  [IJsDebugProcess (Interfaz)](../../winscript/reference/ijsdebugprocess-interface.md)

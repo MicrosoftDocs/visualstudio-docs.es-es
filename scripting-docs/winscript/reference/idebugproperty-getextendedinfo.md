@@ -1,5 +1,5 @@
 ---
-title: IDebugProperty::GetExtendedInfo | Microsoft Docs
+title: 'Idebugproperty (:: GetExtendedInfo | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 707474f786a8f88c0e08d887f2c2b09c8aaedc8e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 130d11c8ed6bb21210d129bb9aace779db3bd54b
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62979128"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72562393"
 ---
 # <a name="idebugpropertygetextendedinfo"></a>IDebugProperty::GetExtendedInfo
-Obtiene información de la propiedad extendida.  
+Obtiene información extendida para la propiedad.  
   
 ## <a name="syntax"></a>Sintaxis  
   
@@ -39,19 +39,19 @@ HRESULT GetExtendedInfo (
   
 #### <a name="parameters"></a>Parámetros  
  `cInfos`  
- [in] Recuento de objetos de información extendida.  
+ de Recuento de objetos de información ampliada.  
   
  `rgguidExtendedInfo`  
- [in] Una matriz de `GUID`s se pasa por lo que se pueden recuperar varios elementos de información ampliada al mismo tiempo.  
+ de Se pasa una matriz de `GUID`s para que se puedan recuperar al mismo tiempo varios elementos de información ampliada.  
   
  `pExtendedInfo`  
- [out] Devuelve una matriz de `VARIANT`s que puede usarse para recuperar la información de la propiedad extendida.  
+ enuncia Devuelve una matriz de `VARIANT`s que se puede utilizar para recuperar la información de la propiedad extendida.  
   
 ## <a name="return-value"></a>Valor devuelto  
- Devuelve un válidas `HRESULT`, normalmente `S_OK`.  
+ Devuelve un `HRESULT` válido, normalmente `S_OK`.  
   
 ## <a name="remarks"></a>Comentarios  
- Esta interfaz obtiene información de este objeto extendida. La API existe solo con el fin de recuperar la información que no se presta a que se va a recuperar mediante el uso de `IDebugProperty::GetPropertyInfo`).  
+ Esta interfaz obtiene información extendida para este objeto. La API solo existe con el fin de recuperar información que no se presta por el uso de `IDebugProperty::GetPropertyInfo`).  
   
 ## <a name="see-also"></a>Vea también  
  [IDebugProperty (Interfaz)](../../winscript/reference/idebugproperty-interface.md)

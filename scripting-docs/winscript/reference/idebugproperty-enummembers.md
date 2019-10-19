@@ -1,5 +1,5 @@
 ---
-title: IDebugProperty::EnumMembers | Documentos de Microsoft
+title: 'Idebugproperty (:: EnumMembers (| Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 527bf9d3c51dad8ffe1645dc42081dc54189ad7b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 5f8c5f2cbb107d55e9ffe602cb7d3492701de10c
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62979167"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72562422"
 ---
 # <a name="idebugpropertyenummembers"></a>IDebugProperty::EnumMembers
-Enumera a los miembros de una propiedad.  
+Enumera los miembros de una propiedad.  
   
 ## <a name="syntax"></a>Sintaxis  
   
@@ -40,22 +40,22 @@ HRESULT EnumMembers (
   
 #### <a name="parameters"></a>Parámetros  
  `dwFieldSpec`  
- [in] Especifica el `DBGPROP_INFO_FLAGS` constantes que determinan cuáles son los campos en las estructuras de propiedad enumerada de depuración que deben rellenarse.  
+ de Especifica las constantes `DBGPROP_INFO_FLAGS` que determinan los campos de las estructuras de propiedades de depuración enumeradas que se van a rellenar.  
   
  `nRadix`  
- [in] Base para su uso en la interpretación de toda la información numérica.  
+ de Base que se va a usar para interpretar cualquier información numérica.  
   
  `refiid`  
- [in] Se pasa este IID para filtrar el enumerador. El IID es uno de los `IDebugPropertyEnumType` interfaces que heredan de `IDebugPropertyEnumType_All`.  
+ de Este IID se pasa para filtrar el enumerador. El IID es una de las interfaces `IDebugPropertyEnumType` que heredan de `IDebugPropertyEnumType_All`.  
   
  `ppEnum`  
- [out] Devuelve el `IEnumDebugPropertyInfo` interfaz que enumera las propiedades de miembro.  
+ enuncia Devuelve la interfaz `IEnumDebugPropertyInfo` que enumera las propiedades de miembro.  
   
 ## <a name="return-value"></a>Valor devuelto  
- Devuelve un válidas `HRESULT`, normalmente `S_OK`.  
+ Devuelve un `HRESULT` válido, normalmente `S_OK`.  
   
 ## <a name="see-also"></a>Vea también  
- [IDebugProperty (interfaz)](../../winscript/reference/idebugproperty-interface.md)   
- [DBGPROP_INFO_FLAGS](../../winscript/reference/dbgprop-info-flags.md)   
- [IDebugPropertyEnumType_All (interfaz)](../../winscript/reference/idebugpropertyenumtype-all-interface.md)   
+ @No__t_1 de la [interfaz idebugproperty (](../../winscript/reference/idebugproperty-interface.md)  
+ @No__t_1 [DBGPROP_INFO_FLAGS](../../winscript/reference/dbgprop-info-flags.md)  
+ @No__t_1 de la [interfaz IDebugPropertyEnumType_All](../../winscript/reference/idebugpropertyenumtype-all-interface.md)  
  [IEnumDebugPropertyInfo (Interfaz)](../../winscript/reference/ienumdebugpropertyinfo-interface.md)

@@ -1,5 +1,5 @@
 ---
-title: IRemoteDebugApplication::CauseBreak | Microsoft Docs
+title: 'Iremotedebugapplication (:: CauseBreak | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ce0ebe3b32b11bdd79884504233b3f4e09a035f8
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 8107d7f8450df759b53175505c8d7fc2b6bde641
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62944341"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72571510"
 ---
 # <a name="iremotedebugapplicationcausebreak"></a>IRemoteDebugApplication::CauseBreak
-Hace que la aplicación interrumpir el depurador lo antes posible.  
+Hace que la aplicación se interrumpa en el depurador lo antes posible.  
   
 ## <a name="syntax"></a>Sintaxis  
   
@@ -44,7 +44,7 @@ HRESULT CauseBreak();
 |`S_OK`|El método se realizó correctamente.|  
   
 ## <a name="remarks"></a>Comentarios  
- Llamar a este método no hace que una aplicación se interrumpa inmediatamente. Si la aplicación no se está ejecutando código de script, puede transcurrir mucho tiempo antes de la aplicación realmente se interrumpe.  
+ La llamada a este método no hace que una aplicación se interrumpa inmediatamente. Si la aplicación no está ejecutando código de script, es posible que transcurra mucho tiempo antes de que la aplicación se interrumpa realmente.  
   
 ## <a name="see-also"></a>Vea también  
  [IRemoteDebugApplication (Interfaz)](../../winscript/reference/iremotedebugapplication-interface.md)

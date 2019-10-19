@@ -1,5 +1,5 @@
 ---
-title: IRemoteDebugApplicationThread::Suspend | Microsoft Docs
+title: 'Iremotedebugapplicationthread (:: Suspend | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,12 +17,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 1ba783b1f6f275eafe05872ad3755b425b65407e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 5cb5d4d8c541016de71ee1aabffe0b211f850cb7
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62788158"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72575472"
 ---
 # <a name="iremotedebugapplicationthreadsuspend"></a>IRemoteDebugApplicationThread::Suspend
 Suspende el subproceso.  
@@ -37,7 +37,7 @@ HRESULT Suspend(
   
 #### <a name="parameters"></a>Parámetros  
  `pdwCount`  
- [out] El recuento de suspensión del subproceso.  
+ enuncia Recuento de suspensiones del subproceso.  
   
 ## <a name="return-value"></a>Valor devuelto  
  El método devuelve un objeto `HRESULT`. Entre los valores posibles se incluyen los que se indican en la tabla siguiente, entre otros.  
@@ -47,7 +47,7 @@ HRESULT Suspend(
 |`S_OK`|El método se realizó correctamente.|  
   
 ## <a name="remarks"></a>Comentarios  
- Cuando este método suspende el subproceso, incrementa el recuento de suspensión.  
+ Cuando este método suspende el subproceso, incrementa el recuento de suspensiones.  
   
 ## <a name="see-also"></a>Vea también  
  [IRemoteDebugApplicationThread (Interfaz)](../../winscript/reference/iremotedebugapplicationthread-interface.md)
