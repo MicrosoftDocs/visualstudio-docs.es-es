@@ -28,15 +28,15 @@ helpviewer_keywords:
 - XAML view settings, attribute spacing
 ms.assetid: ad3820b1-0d94-4807-a74c-c3467ed973a2
 caps.latest.revision: 20
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 8f820ac16667a9550db17bc252c547f16b81e70b
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 319e09d2438b23c217f7820fe4288758a595be56
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65696007"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72662224"
 ---
 # <a name="options-text-editor-xaml-formatting"></a>Opciones, editor de texto, XAML, formato
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -44,7 +44,7 @@ ms.locfileid: "65696007"
 Use la página de propiedades **Formato** para especificar cómo se aplica formato a los elementos y atributos en los documentos XAML. Para abrir el cuadro de diálogo **Opciones**, haga clic en el menú **Herramientas** y, después, en **Opciones**. Para acceder a la propiedad **Formato**, expanda el nodo **Editor de texto**, **XAML**, **Formato**.
 
 > [!NOTE]
-> Los cuadros de diálogo y comandos de menú que se ven pueden diferir de los descritos en la Ayuda, en función de los valores de configuración o de edición activos. Para cambiar la configuración, elija la opción **Importar y exportar configuraciones** del menú **Herramientas** . Para obtener más información, consulte [Personalizar la configuración de desarrollo en Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).
+> Los cuadros de diálogo y comandos de menú que se ven pueden diferir de los descritos en la Ayuda, en función de los valores de configuración o de edición activos. Para cambiar la configuración, elija la opción **Importar y exportar configuraciones** del menú **Herramientas** . Para obtener más información, vea [Personalizar la configuración de desarrollo en Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).
 
 ## <a name="auto-formatting-events"></a>Eventos de formato automático
 El formato automático puede producirse al detectarse cualquiera de los siguientes eventos.
@@ -117,16 +117,16 @@ Use esta configuración para controlar si la vista de diseño aparece al cargar 
 
 |||
 |-|-|
-|**Siempre se abren documentos en la vista XAML completa**|Especifica si los documentos XAML aparecen sólo en la vista XAML, sin la vista Diseño. Resulta útil para la carga de documentos de gran tamaño.|
+|**Abrir siempre documentos en la vista XAML completa**|Especifica si los documentos XAML solo aparecen en la vista XAML, sin Vista de diseño. Resulta útil para cargar documentos de gran tamaño.|
 
 ## <a name="toolbox"></a>Cuadro de herramientas
-Use esta opción para especificar si los controles de usuario y controles personalizados se muestran en el cuadro de herramientas.
+Utilice esta opción para especificar si los controles de usuario y los controles personalizados se muestran en el cuadro de herramientas.
 
 |||
 |-|-|
 |**Rellenar automáticamente los elementos del cuadro de herramientas**|Especifica si los controles de usuario y los controles personalizados de la solución actual se muestran en el cuadro de herramientas automáticamente.|
 
 ## <a name="see-also"></a>Vea también
-[XAML en WPF](https://msdn.microsoft.com/library/5d858575-a83b-42df-ad3f-047ed2d6e3c8)  
-[Cómo: Cambiar la configuración de vista XAML](https://msdn.microsoft.com/aee87c79-ca01-4f84-8fb7-a9e47048ee47)  
-[Tutoriales para el uso de XAML y código](https://msdn.microsoft.com/b3ff41a0-a2a3-4f61-b698-ac88ec8f799c)
+[XAML en WPF](https://msdn.microsoft.com/library/5d858575-a83b-42df-ad3f-047ed2d6e3c8) 
+[Cómo: cambiar la configuración de la vista XAML](https://msdn.microsoft.com/aee87c79-ca01-4f84-8fb7-a9e47048ee47) 
+[tutoriales de código y XAML](https://msdn.microsoft.com/b3ff41a0-a2a3-4f61-b698-ac88ec8f799c)

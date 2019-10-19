@@ -1,5 +1,5 @@
 ---
-title: Editor XML y el Diseñador de esquemas
+title: Editor XML y diseñador de esquemas
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -27,35 +27,35 @@ helpviewer_keywords:
 - XSL, style sheets
 - XMLDataDocument class
 ms.assetid: 1fd5de47-2d61-4180-9539-c2c4bf9ab768
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d7493d6c10c83b16ad7579299a49a7747e34c20b
-ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.openlocfilehash: c9412d89ee7d9ad1412f0eaf9fe9341e336a65e5
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66746516"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72668717"
 ---
 # <a name="xml-tools-in-visual-studio"></a>Herramientas XML en Visual Studio
 
-*Extensible Markup Language (XML)* es un lenguaje de marcado que proporciona un formato para describir los datos. XML separa los datos y asociados de su presentación mediante el uso de hojas de estilos como lenguaje de hojas de estilo Extensible (XSL) y hojas de estilos en cascada (CSS). Visual Studio incluye herramientas y características que facilitan el trabajo con XML, XSLT y esquemas XML.
+*Lenguaje de marcado extensible (XML)* es un lenguaje de marcado que proporciona un formato para describir los datos. XML separa los datos y su presentación usando hojas de estilos asociadas como Extensible Stylesheet Language (XSL) y hojas de estilos en cascada (CSS). Visual Studio incluye herramientas y características que facilitan el trabajo con XML, XSLT y esquemas XML.
 
 ## <a name="xml-editor"></a>Editor XML
 
-El [editor XML](xml-editor.md) se usa para editar documentos XML. Proporciona sintaxis XML completa comprobación de validación de esquemas mientras escribe, codificación en colores e IntelliSense. Cuando se proporciona un esquema o una definición de tipo de documento, IntelliSense lo utiliza para mostrar los elementos y atributos permitidos.
+El [Editor XML](xml-editor.md) se utiliza para editar documentos XML. Proporciona una comprobación completa de la sintaxis XML, la validación del esquema mientras escribe, codificación de colores e IntelliSense. Cuando se proporciona un esquema o una definición de tipo de documento, IntelliSense lo utiliza para mostrar los elementos y atributos permitidos.
 
 Otras características son:
 
-- Compatibilidad con fragmentos XML, incluye fragmentos generados por esquema
+- Compatibilidad con fragmentos XML, incluidos fragmentos de código generados por esquema
 
-- Para que los elementos se pueden expandir y contraer la esquematización de documentos
+- Esquematización de documentos para que los elementos puedan expandirse y contraerse
 
-- La capacidad para ejecutar transformaciones XSLT y ver los resultados como texto, XML o HTML
+- La capacidad de ejecutar transformaciones XSLT y ver los resultados como texto, XML o HTML.
 
-- La capacidad para generar esquemas (XSD) del documento de instancia XML
+- La capacidad de generar esquemas del lenguaje de definición de esquemas XML (XSD) a partir del documento de instancia XML
 
 - Compatibilidad con la edición de hojas de estilos XSLT, incluida la compatibilidad con IntelliSense
 
@@ -63,11 +63,11 @@ Otras características son:
 
 ## <a name="xml-schema-designer"></a>Diseñador de esquemas XML
 
-El [Diseñador de esquemas XML](xml-schema-designer.md) se integra con Visual Studio y el editor XML para permitirle trabajar con esquemas de lenguaje (XSD) de definición de esquemas XML.
+El [Diseñador de esquemas XML](xml-schema-designer.md) se integra con Visual Studio y el editor XML para que pueda trabajar con esquemas del lenguaje de definición de esquemas XML (XSD).
 
 ## <a name="xslt-debugging"></a>Depuración de XSLT
 
-Visual Studio admite [depurar hojas de estilos XSLT](../xml-tools/debugging-xslt.md). Mediante el depurador, puede definir puntos de interrupción en una hoja de estilos XSLT, ir a una hoja de estilos XSLT a partir del código, etc.
+Visual Studio admite la [depuración de hojas de estilos XSLT](../xml-tools/debugging-xslt.md). Mediante el depurador, puede definir puntos de interrupción en una hoja de estilos XSLT, ir a una hoja de estilos XSLT a partir del código, etc.
 
 > [!NOTE]
 > El depurador de XSLT solo está disponible en la edición Enterprise de Visual Studio.
@@ -76,6 +76,6 @@ Visual Studio admite [depurar hojas de estilos XSLT](../xml-tools/debugging-xslt
 
 - <xref:System.Xml?displayProperty=fullName>
 - [Transformaciones XSLT](/dotnet/standard/data/xml/xslt-transformations)
-- [Procesar datos XML mediante el modelo de datos XPath](/dotnet/standard/data/xml/process-xml-data-using-the-xpath-data-model)
+- [Procesar datos XML mediante el modelo de datos de XPath](/dotnet/standard/data/xml/process-xml-data-using-the-xpath-data-model)
 - [Document Object Model (DOM) para XML](/dotnet/standard/data/xml/xml-document-object-model-dom)
 - [Modelo de objetos de esquema XML (SOM)](/dotnet/standard/data/xml/xml-schema-object-model-som)

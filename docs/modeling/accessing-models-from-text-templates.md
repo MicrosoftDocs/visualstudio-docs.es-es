@@ -4,24 +4,24 @@ ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - text templates, accessing models
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b9e3b3762b127b1f66b43d6c961054b9cef04048
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.openlocfilehash: 61f69163e4458c62b9f114eca72c954a2317076b
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71254117"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72652380"
 ---
 # <a name="access-models-from-text-templates"></a>Acceder a los modelos desde plantillas de texto
 
 Mediante el uso de plantillas de texto, puede crear archivos de informe, archivos de código fuente y otros archivos de texto basados en modelos de lenguajes específicos de dominio. Para obtener información básica sobre las plantillas de texto, vea [generación de código y plantillas de texto T4](../modeling/code-generation-and-t4-text-templates.md). Las plantillas de texto funcionarán en el modo experimental cuando se depura el DSL y también funcionarán en un equipo en el que se haya implementado el DSL.
 
 > [!NOTE]
-> Cuando se crea una solución DSL, se generan archivos  **\*** de plantilla de texto de ejemplo. TT en el proyecto de depuración. Al cambiar los nombres de las clases de dominio, estas plantillas dejarán de funcionar. No obstante, incluyen las directivas básicas que necesita y proporcionan ejemplos que puede actualizar para que coincidan con el DSL.
+> Al crear una solución DSL, se generan archivos de ejemplo de plantilla de texto **\*. TT** en el proyecto de depuración. Al cambiar los nombres de las clases de dominio, estas plantillas dejarán de funcionar. No obstante, incluyen las directivas básicas que necesita y proporcionan ejemplos que puede actualizar para que coincidan con el DSL.
 
  Para tener acceso a un modelo desde una plantilla de texto:
 
@@ -29,7 +29,7 @@ Mediante el uso de plantillas de texto, puede crear archivos de informe, archivo
 
 - Especifique los procesadores de directivas para el DSL al que desea obtener acceso. De este modo, se cargan los ensamblados del DSL para que pueda usar sus clases de dominio, propiedades y relaciones en el código de la plantilla de texto. También carga el archivo de modelo que especifique.
 
-  Un `.tt` archivo similar al ejemplo siguiente se crea en el proyecto de depuración cuando se crea una nueva solución de Visual Studio a partir de la plantilla de lenguaje mínimo DSL.
+  Un archivo `.tt` similar al ejemplo siguiente se crea en el proyecto de depuración cuando se crea una nueva solución de Visual Studio a partir de la plantilla de idioma mínimo DSL.
 
 ```
 <#@ template inherits="Microsoft.VisualStudio.TextTemplating.VSHost.ModelingTextTransformation" #>
@@ -55,13 +55,13 @@ Here is a list of elements in the model:
 
 - La plantilla puede usar las clases de dominio, las propiedades y las relaciones definidas en la definición de DSL.
 
-- La plantilla carga el archivo de modelo que se especifica en `requires` la propiedad.
+- La plantilla carga el archivo de modelo que se especifica en la propiedad `requires`.
 
-- Una propiedad de `this` contiene el elemento raíz. Desde allí, el código puede navegar a otros elementos del modelo. El nombre de la propiedad suele ser el mismo que el de la clase de dominio raíz de DSL. En este ejemplo, es `this.ExampleModel`.
+- Una propiedad en `this` contiene el elemento raíz. Desde allí, el código puede navegar a otros elementos del modelo. El nombre de la propiedad suele ser el mismo que el de la clase de dominio raíz de DSL. En este ejemplo, es `this.ExampleModel`.
 
-- Aunque el lenguaje en el que se escriben los fragmentos C#de código es, puede generar texto de cualquier tipo. Como alternativa, puede escribir el código en [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] agregando la propiedad `language="VB"` a la `template` Directiva.
+- Aunque el lenguaje en el que se escriben los fragmentos C#de código es, puede generar texto de cualquier tipo. Como alternativa, puede escribir el código en [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] agregando el `language="VB"` de propiedad a la Directiva `template`.
 
-- Para depurar la plantilla `debug="true"` , agregue `template` a la Directiva. La plantilla se abrirá en otra instancia de Visual Studio si se produce una excepción. Si desea interrumpir el depurador en un punto concreto del código, inserte la instrucción.`System.Diagnostics.Debugger.Break();`
+- Para depurar la plantilla, agregue `debug="true"` a la Directiva `template`. La plantilla se abrirá en otra instancia de Visual Studio si se produce una excepción. Si desea interrumpir el depurador en un punto concreto del código, inserte la instrucción `System.Diagnostics.Debugger.Break();`
 
    Para obtener más información, vea [depurar una plantilla de texto T4](../modeling/debugging-a-t4-text-template.md).
 
@@ -72,13 +72,13 @@ Here is a list of elements in the model:
 <#@ MyLanguage processor="MyLanguageDirectiveProcessor" requires="fileName='Sample.myDsl1'" #>
 ```
 
- El nombre de la Directiva ( `MyLanguage`, en este ejemplo) se deriva del nombre del DSL. Invoca un procesador de *directivas* que se genera como parte del DSL. Puede encontrar su código fuente en **Dsl\GeneratedCode\DirectiveProcessor.CS**.
+ El nombre de la Directiva (`MyLanguage`, en este ejemplo) se deriva del nombre del DSL. Invoca un procesador de *directivas* que se genera como parte del DSL. Puede encontrar su código fuente en **Dsl\GeneratedCode\DirectiveProcessor.CS**.
 
  El procesador de directivas de DSL realiza dos tareas principales:
 
 - Inserta de forma eficaz las directivas de ensamblado e importación en la plantilla que hace referencia a su DSL. Esto le permite usar las clases de dominio en el código de plantilla.
 
-- Carga el archivo especificado en el `requires` parámetro y establece una propiedad en `this` que hace referencia al elemento raíz del modelo cargado.
+- Carga el archivo especificado en el parámetro `requires` y establece una propiedad en `this` que hace referencia al elemento raíz del modelo cargado.
 
 ## <a name="validating-the-model-before-running-the-template"></a>Validar el modelo antes de ejecutar la plantilla
  Puede hacer que el modelo se valide antes de que se ejecute la plantilla.
@@ -89,7 +89,7 @@ Here is a list of elements in the model:
 
  Tenga en cuenta que:
 
-1. Los `filename` parámetros `validation` y se separan con ";" y no debe haber otros separadores ni espacios.
+1. Los parámetros `filename` y `validation` se separan con ";" y no debe haber otros separadores ni espacios.
 
 2. La lista de categorías de validación determina qué métodos de validación se ejecutarán. Varias categorías deben separarse con&#124;"" y no debe haber otros separadores ni espacios.
 
@@ -100,7 +100,7 @@ Here is a list of elements in the model:
 > [!NOTE]
 > Este método permite leer varios modelos en la misma plantilla, pero no admite referencias de ModelBus. Para leer modelos intervinculados por referencias de ModelBus, vea [usar Visual Studio ModelBus en una plantilla de texto](../modeling/using-visual-studio-modelbus-in-a-text-template.md).
 
- Si desea tener acceso a más de un modelo de la misma plantilla de texto, debe llamar al procesador de directivas generado una vez para cada modelo. Debe especificar el nombre de archivo de cada modelo en el `requires` parámetro. Debe especificar los nombres que desea usar para la clase de dominio raíz en el `provides` parámetro. Debe especificar valores diferentes para los `provides` parámetros en cada una de las llamadas de directiva. Por ejemplo, suponga que tiene tres archivos de modelo denominados Library. XYZ, School. XYZ y work. XYZ. Para tener acceso a ellas desde la misma plantilla de texto, debe escribir tres llamadas de directiva similares a las siguientes.
+ Si desea tener acceso a más de un modelo de la misma plantilla de texto, debe llamar al procesador de directivas generado una vez para cada modelo. Debe especificar el nombre de archivo de cada modelo en el parámetro `requires`. Debe especificar los nombres que desea usar para la clase de dominio raíz en el parámetro `provides`. Debe especificar valores diferentes para los parámetros de `provides` en cada una de las llamadas de directiva. Por ejemplo, suponga que tiene tres archivos de modelo denominados Library. XYZ, School. XYZ y work. XYZ. Para tener acceso a ellas desde la misma plantilla de texto, debe escribir tres llamadas de directiva similares a las siguientes.
 
 ```
 <#@ ExampleModel processor="<YourLanguageName>DirectiveProcessor" requires="fileName='Library.xyz'" provides="ExampleModel=LibraryModel" #>
@@ -138,11 +138,11 @@ For Each element As ExampleElement In Me.WorkModel.Elements
 ## <a name="loading-models-dynamically"></a>Cargar modelos dinámicamente
  Si desea determinar en tiempo de ejecución qué modelos se van a cargar, puede cargar dinámicamente un archivo de modelo en el código del programa, en lugar de usar la Directiva específica de DSL.
 
- Sin embargo, una de las funciones de la Directiva específica de DSL es importar el espacio de nombres DSL para que el código de plantilla pueda usar las clases de dominio definidas en ese DSL. Dado que no está utilizando la Directiva, debe agregar  **\<> de ensamblado** e  **\<importar** directivas de > para todos los modelos que puede cargar. Esto es fácil si los diferentes modelos que puede cargar son todas las instancias del mismo DSL.
+ Sin embargo, una de las funciones de la Directiva específica de DSL es importar el espacio de nombres DSL para que el código de plantilla pueda usar las clases de dominio definidas en ese DSL. Dado que no está utilizando la Directiva, debe agregar **\<assembly >** y \<import directivas de **>** para todos los modelos que puede cargar. Esto es fácil si los diferentes modelos que puede cargar son todas las instancias del mismo DSL.
 
- Para cargar el archivo, el método más eficaz es mediante el uso de Visual Studio ModelBus. En un escenario típico, la plantilla de texto usará una directiva específica de DSL para cargar el primer modelo de la manera habitual. Ese modelo contiene referencias de ModelBus a otro modelo. Puede usar ModelBus para abrir el modelo al que se hace referencia y obtener acceso a un elemento determinado. Para obtener más información, consulte [utilizando Visual Studio ModelBus en una plantilla de texto](../modeling/using-visual-studio-modelbus-in-a-text-template.md).
+ Para cargar el archivo, el método más eficaz es mediante el uso de Visual Studio ModelBus. En un escenario típico, la plantilla de texto usará una directiva específica de DSL para cargar el primer modelo de la manera habitual. Ese modelo contiene referencias de ModelBus a otro modelo. Puede usar ModelBus para abrir el modelo al que se hace referencia y obtener acceso a un elemento determinado. Para obtener más información, vea [usar Visual Studio ModelBus en una plantilla de texto](../modeling/using-visual-studio-modelbus-in-a-text-template.md).
 
- En un escenario menos habitual, es posible que desee abrir un archivo de modelo para el que solo tenga un nombre de archivo y que no esté en el proyecto actual de Visual Studio. En este caso, puede abrir el archivo mediante la técnica descrita en [cómo: Abra un modelo desde el archivo en el](../modeling/how-to-open-a-model-from-file-in-program-code.md)código del programa.
+ En un escenario menos habitual, es posible que desee abrir un archivo de modelo para el que solo tenga un nombre de archivo y que no esté en el proyecto actual de Visual Studio. En este caso, puede abrir el archivo mediante la técnica descrita en [Cómo: abrir un modelo desde un archivo en el código del programa](../modeling/how-to-open-a-model-from-file-in-program-code.md).
 
 ## <a name="generating-multiple-files-from-a-template"></a>Generar varios archivos a partir de una plantilla
  Si desea generar varios archivos (por ejemplo, para generar un archivo independiente para cada elemento de un modelo), existen varios enfoques posibles. De forma predeterminada, solo se genera un archivo a partir de cada archivo de plantilla.
@@ -172,7 +172,7 @@ For Each element As ExampleElement In Me.WorkModel.Elements
 #>
 ```
 
- `LoopSplitter.tt``LoopTemplate.t4`invoca y, a continuación, divide el archivo resultante en sus segmentos. Tenga en cuenta que esta plantilla no tiene que ser una plantilla de modelado, ya que no lee el modelo.
+ `LoopSplitter.tt` invoca `LoopTemplate.t4` y, a continuación, divide el archivo resultante en sus segmentos. Tenga en cuenta que esta plantilla no tiene que ser una plantilla de modelado, ya que no lee el modelo.
 
 ```
 <#@ template hostspecific="true" language="C#" #>

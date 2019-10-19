@@ -3,17 +3,17 @@ title: Suprimir las infracciones de análisis de código para el código generad
 ms.date: 05/13/2019
 ms.topic: conceptual
 ms.assetid: 3a96434e-d419-43a7-81ba-95cccac835b8
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 54b33eb92cec82a5a0327bac92f2a8909519784d
-ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
+ms.openlocfilehash: 39daa50254f2d1b69514d4065e582154e9ceb6b5
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72448902"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72649399"
 ---
 # <a name="how-to-suppress-code-analysis-warnings-for-generated-code"></a>Cómo: suprimir advertencias de análisis de código para el código generado
 

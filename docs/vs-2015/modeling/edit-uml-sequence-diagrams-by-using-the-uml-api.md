@@ -8,24 +8,24 @@ helpviewer_keywords:
 - UML activity diagrams, programming
 ms.assetid: 8cdd0203-85ef-4c62-9abc-da4cb26fa504
 caps.latest.revision: 27
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: d0bebbb4e6dfe25ce9834595be11aad0fd1f1ba0
-ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
+ms.openlocfilehash: cbc7a6ce7edede6759c0562df1e524d932f62b91
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68871882"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72669708"
 ---
 # <a name="edit-uml-sequence-diagrams-by-using-the-uml-api"></a>Modificar diagramas de secuencia usando la API de UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Una interacción es una secuencia de mensajes entre un conjunto de líneas de vida. Las interacciones se muestran en un diagrama de secuencia UML.
 
- Para obtener detalles completos de la API, vea [Microsoft. VisualStudio. UML.](/previous-versions/dd493373(v=vs.140))interactions.
+ Para obtener detalles completos de la API, vea [Microsoft. VisualStudio. UML. Interactions](/previous-versions/dd493373(v=vs.140)).
 
- Para obtener una introducción más general a la escritura de comandos y controladores de gestos para diagramas UML, vea [definir un comando de menú en un diagrama](../modeling/define-a-menu-command-on-a-modeling-diagram.md)de modelado.
+ Para obtener una introducción más general a la escritura de comandos y controladores de gestos para diagramas UML, vea [definir un comando de menú en un diagrama de modelado](../modeling/define-a-menu-command-on-a-modeling-diagram.md).
 
 ## <a name="basic-code"></a>Código básico
 
@@ -118,7 +118,7 @@ public void Execute (IMenuCommand command)
 ## <a name="updating-an-interaction-and-its-layout"></a>Actualizar una interacción y su diseño
  Cuando actualice una interacción, finalice siempre la operación con uno de los métodos siguientes para actualizar el diseño:
 
-- `ISequenceDiagram.UpdateShapePositions()`ajusta las posiciones de las formas que se han insertado o colocado recientemente, y sus formas vecinas.
+- `ISequenceDiagram.UpdateShapePositions()` ajusta las posiciones de las formas que se han insertado o colocado recientemente, y sus formas vecinas.
 
 - `ISequenceDiagram.Layout([SequenceDiagramLayoutKinds])` vuelve a dibujar el diagrama entero. Puede usar el parámetro para especificar la reubicación de las líneas de vida, los mensajes o ambos.
 
@@ -241,7 +241,7 @@ cf.CreateInteractionOperand(cf.Operands.First(), false);
 cf.CreateInteractionOperand(cf.Operands.Last(), true);
 ```
 
-## <a name="troubleshooting"></a>solución de problemas
+## <a name="troubleshooting"></a>Solución de problemas
  Las formas aparecerán en posiciones incorrectas si los cambios no se completan con una operación `UpdateShapePositions()` o `Layout()`.
 
  La mayoría del resto de problemas se producen por puntos de inserción desalineados, que hacen que los nuevos mensajes o fragmentos se crucen con otros. Los síntomas pueden ser que no se lleve a cabo ningún cambio o se produzca una excepción. La excepción podría no producirse hasta que se realice la operación `UpdateShapePositions()` o `Layout()`.

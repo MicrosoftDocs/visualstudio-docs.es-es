@@ -6,14 +6,14 @@ ms.technology: vs-ide-test
 ms.topic: conceptual
 ms.assetid: 0fa335fd-e442-448f-913f-25a19df90a93
 caps.latest.revision: 8
-ms.author: gewarren
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 93a62b6fe5493b78a3c18c1adb87761cdb894670
-ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
+ms.openlocfilehash: e8b3ea10b96a63bd18098030dc884ac3f3383353
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68871558"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72657188"
 ---
 # <a name="using-microsoftvisualstudiotesttoolsunittesting-members-in-unit-tests"></a>Usar miembros de Microsoft.VisualStudio.TestTools.UnitTesting en pruebas unitarias
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,7 +30,7 @@ El marco de pruebas unitarias es compatible con pruebas unitarias en [!INCLUDE[v
 > `[TestClassAttribute()]`
 
 ### <a name="elements-used-for-data-driven-testing"></a>Elementos utilizados para pruebas controladas por datos
- Utilice los siguientes elementos para configurar pruebas unitarias controladas por datos. Para obtener más información, vea el tema sobre [cómo Crear una prueba](../test/how-to-create-a-data-driven-unit-test.md) unitaria controlada por datos y [un tutorial: Usar un archivo de configuración para definir un origen](../test/walkthrough-using-a-configuration-file-to-define-a-data-source.md)de datos.
+ Utilice los siguientes elementos para configurar pruebas unitarias controladas por datos. Para obtener más información, consulte [Cómo: Crear una prueba unitaria controlada por datos](../test/how-to-create-a-data-driven-unit-test.md) y [Tutorial: usar un archivo de configuración para definir un origen de datos](../test/walkthrough-using-a-configuration-file-to-define-a-data-source.md).
 
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.DataAccessMethod>
 

@@ -1,5 +1,5 @@
 ---
-title: Procedimiento Personalizar menús y barras de herramientas
+title: 'Cómo: Personalizar menús y barras de herramientas'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
@@ -25,17 +25,17 @@ helpviewer_keywords:
 - toolbars [Visual Studio], customizing in the IDE
 ms.assetid: b570ae2f-5302-45dc-9cc9-8d4d1ad50603
 caps.latest.revision: 31
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 91223021ce6f05b91d47e7b7019fb0c5c02243db
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 500debe6faa62079c6a93185bac409e7a3bf2813
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63416785"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72668004"
 ---
-# <a name="how-to-customize-menus-and-toolbars-in-visual-studio"></a>Procedimiento Personalización de menús y barras de herramientas en Visual Studio
+# <a name="how-to-customize-menus-and-toolbars-in-visual-studio"></a>Cómo: Personalizar menús y barras de herramientas en Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Puede personalizar Visual Studio no solo agregando y quitando barras de herramientas y menús de la barra de menús, sino agregando y quitando comandos de cualquier barra de herramientas o menú concreto.
@@ -63,7 +63,7 @@ Puede personalizar Visual Studio no solo agregando y quitando barras de herramie
 
     - Para agregar un menú, elija el botón **Add New Menu** (Agregar nuevo menú), elija el botón **Modificar selección** y escriba un nombre para el menú que quiere agregar.
 
-         ![Cuadro de diálogo Personalizar que muestra cómo agregar un menú](../ide/media/addmenu.png "AddMenu")
+         ![Cuadro de diálogo Personalizar que muestra cómo agregar un menú](../ide/media/addmenu.png "AgregarMenú")
 
     - Para quitar un menú, selecciónelo en la lista **Controles** y elija el botón **Eliminar**.
 
@@ -91,7 +91,7 @@ Puede personalizar Visual Studio no solo agregando y quitando barras de herramie
          También puede arrastrar una barra de herramientas por el borde izquierdo para moverla a cualquier parte del área de acoplamiento principal.
 
         > [!NOTE]
-        > Para obtener más información sobre cómo mejorar el uso y la accesibilidad de las barras de herramientas, vea [Cómo: Establecimiento de opciones de accesibilidad de IDE](../ide/reference/how-to-set-ide-accessibility-options.md).
+        > Para obtener más información sobre cómo mejorar el uso y la accesibilidad de las barras de herramientas, vea [Cómo: Establecer opciones de accesibilidad de IDE](../ide/reference/how-to-set-ide-accessibility-options.md).
 
 ## <a name="bkmk_customize"></a> Personalizar un menú o una barra de herramientas
 

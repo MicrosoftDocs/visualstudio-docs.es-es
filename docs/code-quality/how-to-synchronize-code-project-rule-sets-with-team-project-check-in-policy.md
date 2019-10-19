@@ -5,19 +5,19 @@ ms.topic: conceptual
 f1_keywords:
 - vs.codeanalysis.selecttfsruleset
 ms.assetid: 9b02f934-2db6-41ec-aaff-9c31ceec2f04
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3a35ba1b9d54507883882fbe62c0533805882560
-ms.sourcegitcommit: 39a04f42d23597b70053686d7e927ba78f38a9a8
+ms.openlocfilehash: fe6e9e49998c3e98335cd7e873d53531c8bfa99a
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/05/2019
-ms.locfileid: "71975054"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72649383"
 ---
-# <a name="how-to-synchronize-code-project-rule-sets-with-an-azure-devops-project-check-in-policy"></a>Procedimiento Sincronizar conjuntos de reglas del proyecto de código con una directiva de inserción en el repositorio del proyecto DevOps de Azure
+# <a name="how-to-synchronize-code-project-rule-sets-with-an-azure-devops-project-check-in-policy"></a>Cómo: sincronizar conjuntos de reglas del proyecto de código con una directiva de inserción en el repositorio del proyecto DevOps de Azure
 
 Puede sincronizar la configuración de análisis de código para los proyectos de código con la Directiva de protección del proyecto DevOps de Azure especificando un conjunto de reglas que contenga al menos las reglas que se especifican en el conjunto de reglas para la Directiva de protección. El responsable de desarrollo puede informarle del nombre y la ubicación del conjunto de reglas de la Directiva de inserción en el repositorio. Puede usar una de las siguientes opciones para asegurarse de que el análisis de código para el proyecto utiliza el conjunto de reglas correcto:
 
@@ -31,7 +31,7 @@ Puede sincronizar la configuración de análisis de código para los proyectos d
 
 ## <a name="to-specify-a-microsoft-standard-rule-set"></a>Para especificar un conjunto de reglas estándar de Microsoft
 
-1. En **el Explorador de soluciones**, haga clic en el proyecto de código y, a continuación, haga clic en **propiedades**.
+1. En **Explorador de soluciones**, haga clic con el botón secundario en el proyecto de código y, a continuación, haga clic en **propiedades**.
 
 2. Haga clic en **análisis de código**.
 
@@ -51,7 +51,7 @@ Puede sincronizar la configuración de análisis de código para los proyectos d
 
 1. Si es necesario, realice una operación get en el archivo de conjunto de reglas que especifica la Directiva de inserción en el repositorio.
 
-2. En **el Explorador de soluciones**, haga clic en el proyecto de código y, a continuación, haga clic en **propiedades**.
+2. En **Explorador de soluciones**, haga clic con el botón secundario en el proyecto de código y, a continuación, haga clic en **propiedades**.
 
 3. Haga clic en **análisis de código**.
 

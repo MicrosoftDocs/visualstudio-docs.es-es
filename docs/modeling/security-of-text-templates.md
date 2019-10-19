@@ -4,31 +4,31 @@ ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - text templates, security
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 66159516c6b1360203130dedb56c0e6c192a118a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: eab987d406d6a2c05c8350aaac9dd1ecfc13e4a8
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62824025"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72660086"
 ---
 # <a name="security-of-text-templates"></a>Seguridad de las plantillas de texto
 Las plantillas de texto tienen los siguientes problemas de seguridad:
 
-- Las plantillas de texto son vulnerables a las inserciones de código arbitrario.
+- Las plantillas de texto son vulnerables a las inserciones de código arbitrarias.
 
-- Si el mecanismo que usa el host para encontrar un procesador de directivas no es seguro, se podría ejecutar un procesador de directivas malintencionado.
+- Si el mecanismo que usa el host para buscar un procesador de directivas no es seguro, se podría ejecutar un procesador de directivas malintencionados.
 
 ## <a name="arbitrary-code"></a>Código arbitrario
- Al escribir una plantilla, puede colocar cualquier código dentro de la \<## > etiquetas. Esto permite que el código arbitrario para ejecutarse desde una plantilla de texto.
+ Al escribir una plantilla, puede colocar cualquier código dentro de las etiquetas \< # # >. Esto permite ejecutar código arbitrario desde una plantilla de texto.
 
- Asegúrese de que obtener las plantillas de orígenes de confianza. Asegúrese de que advertir a los usuarios finales de su aplicación no ejecutar plantillas que no procedan de fuentes de confianza.
+ Asegúrese de obtener plantillas de fuentes de confianza. Asegúrese de advertir a los usuarios finales de la aplicación que no ejecuten plantillas que no provienen de orígenes de confianza.
 
-## <a name="malicious-directive-processor"></a>Procesador de directivas malintencionado
- El motor de plantillas de texto interactúa con un host de transformación y uno o más procesadores de directivas para transformar el texto de la plantilla en un archivo de salida. Para obtener más información, consulte [el proceso de transformación de plantillas de texto](../modeling/the-text-template-transformation-process.md).
+## <a name="malicious-directive-processor"></a>Procesador de directivas malintencionadas
+ El motor de plantillas de texto interactúa con un host de transformación y uno o varios procesadores de directivas para transformar el texto de la plantilla en un archivo de salida. Para obtener más información, vea [el proceso de transformación de plantillas de texto](../modeling/the-text-template-transformation-process.md).
 
- Si el mecanismo que usa el host para encontrar un procesador de directivas no es seguro, se corre el riesgo de la ejecución de un procesador de directivas malintencionado. El procesador de directivas malintencionado podría proporcionar código que se ejecuta en `FullTrust` modo cuando se ejecuta la plantilla. Si crea un host de transformación de plantillas de texto personalizado, debe usar un mecanismo seguro, como el registro para el motor para localizar los procesadores de directivas.
+ Si el mecanismo que usa el host para encontrar un procesador de directivas no es seguro, corre el riesgo de ejecutar un procesador de directivas malintencionadas. El procesador de directivas malintencionadas podría proporcionar código que se ejecuta en modo `FullTrust` cuando se ejecuta la plantilla. Si crea un host de transformación de plantilla de texto personalizado, debe usar un mecanismo seguro, como el registro, para que el motor busque los procesadores de directivas.

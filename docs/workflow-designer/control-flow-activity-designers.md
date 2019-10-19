@@ -1,23 +1,23 @@
 ---
-title: Diseñador de flujo de trabajo - diseñadores de actividad de flujo de Control
+title: Diseñadores de actividad de flujo de control de Diseñador de flujo de trabajo
 ms.date: 11/04/2016
 ms.topic: reference
 ms.assetid: ba74af23-5398-4e62-bd90-c50612e3bfef
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7a3bcbf5ee70b90a0606c7e4cb3d691d28298c2d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: f1e7d7548eef3fd6ca6a21bb8c2fe5cb23e27df1
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62949875"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72650614"
 ---
 # <a name="control-flow-activity-designers"></a>Diseñadores de actividades de flujos de control
 
-Diseñador de flujo de trabajo incluye una serie de actividades proporcionadas por el sistema que puede utilizar cuando cree flujos de trabajo. En esta sección se incluyen las actividades proporcionadas por el sistema que se utilizan para controlar el flujo dentro de un flujo de trabajo. Los siguientes temas describen estas actividades y ofrecen orientación sobre cómo utilizarlas.
+Diseñador de flujo de trabajo incluye varias actividades proporcionadas por el sistema que se pueden usar al construir los flujos de trabajo. En esta sección se incluyen las actividades proporcionadas por el sistema que se utilizan para controlar el flujo dentro de un flujo de trabajo. Los siguientes temas describen estas actividades y ofrecen orientación sobre cómo utilizarlas.
 
 ## <a name="reference"></a>Referencia
 

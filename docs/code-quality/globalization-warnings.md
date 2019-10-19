@@ -10,17 +10,17 @@ helpviewer_keywords:
 - globalization [Visual Studio], warnings
 - managed code analysis warnings, globalization warnings
 ms.assetid: a8d12d41-14bf-4b43-af24-168312d7c390
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0815c17c85cb64682851f9b4af2b2f26f35109c5
-ms.sourcegitcommit: 08c144d290da373df841f04fc799e3133540a541
-ms.translationtype: HT
+ms.openlocfilehash: 11202e25dee89640c5a51450610919ad6a5c294c
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72535855"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72649547"
 ---
 # <a name="globalization-warnings"></a>Advertencias de globalización
 Las advertencias de globalización admiten aplicaciones y bibliotecas de uso internacional.

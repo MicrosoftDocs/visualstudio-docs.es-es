@@ -8,17 +8,17 @@ f1_keywords:
 helpviewer_keywords:
 - code analysis, selecting rule sets
 - code analysis, rule sets
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: f1bfa8c6e5260fb4afd20b882e2bdfc718647f4b
-ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
+ms.openlocfilehash: f0008f443139d968664d2cc4b4e3e3bef6ecb9ba
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72448983"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72649525"
 ---
 # <a name="how-to-configure-legacy-analysis-for-managed-code"></a>Cómo: configurar el análisis heredado para código administrado
 

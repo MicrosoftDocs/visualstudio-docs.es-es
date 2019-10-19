@@ -1,20 +1,20 @@
 ---
-title: Estructurar la solución de modelado | Documentos de Microsoft
+title: Estructurar la solución de modelado | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-modeling
 ms.topic: conceptual
 ms.assetid: 2ba70ba4-2cea-4e01-93c2-055903d59470
 caps.latest.revision: 16
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 2b82bd903fe594ca2f2b650833cd29bfb54efa85
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: edf9eaee512eda7439d1beea7303cd0e74b27178
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68155639"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72661035"
 ---
 # <a name="structure-your-modeling-solution"></a>Estructurar la solución de modelado
 
@@ -26,7 +26,7 @@ Para iniciar un proyecto o subproyecto rápidamente, resulta útil disponer de u
 
 En este tema se supone que está trabajando en un proyecto que es lo suficientemente grande como para necesitar varios miembros del equipo y que quizás tenga varios equipos. El código y los modelos del proyecto se almacenan en un sistema de control de código fuente como [!INCLUDE[esprtfs](../includes/esprtfs-md.md)]. Al menos algunos miembros del equipo usan Visual Studio para desarrollar modelos, mientras que otros miembros del equipo pueden ver los modelos con otras versiones de Visual Studio.
 
-Para ver qué versiones de Visual Studio admite cada herramienta y característica de modelado, vea [compatibilidad con la versión de arquitectura y las herramientas de modelado](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
+Para ver qué versiones de Visual Studio son compatibles con cada herramienta y característica de modelado, vea [compatibilidad de versiones con las herramientas de arquitectura y modelado](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
 
 ## <a name="solution-structure"></a>Estructura de solución
 
@@ -34,13 +34,13 @@ En un proyecto grande o mediano, la estructura del equipo se basa en la estructu
 
 #### <a name="to-divide-an-application-into-layers"></a>Para dividir una aplicación en capas
 
-1. Base la estructura de las soluciones en la estructura de la aplicación, como la aplicación web, aplicación de servicio o aplicación de escritorio. Se trata una variedad de arquitecturas comunes en [Arquetipos de aplicación en la Guía de arquitectura de aplicación de Microsoft](http://go.microsoft.com/fwlink/?LinkId=196681).
+1. Base la estructura de las soluciones en la estructura de la aplicación, como la aplicación web, aplicación de servicio o aplicación de escritorio. En la guía de arquitectura de aplicaciones de Microsoft se describe una variedad de arquitecturas comunes en [la aplicación arquetipos](http://go.microsoft.com/fwlink/?LinkId=196681).
 
 2. Cree una solución [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], a la que llamaremos solución de arquitectura. Esta solución se usará para crear el diseño general del sistema. Contendrá modelos, pero ningún código.
 
-    Agregue un diagrama de capas a esta solución. En el diagrama de capas, dibuje la arquitectura que ha elegido para la aplicación. Por ejemplo, el diagrama puede mostrar estas capas y las dependencias entre ellos: Presentación; Lógica de negocios; y los datos.
+    Agregue un diagrama de capas a esta solución. En el diagrama de capas, dibuje la arquitectura que ha elegido para la aplicación. Por ejemplo, el diagrama puede mostrar estas capas y las dependencias entre ellas: presentación, lógica de negocios y datos.
 
-    Puede crear el diagrama de capas y una nueva solución de Visual Studio al mismo tiempo mediante la **nuevo UML o diagrama de capas** comando el **arquitectura** menú.
+    Puede crear el diagrama de capas y una nueva solución de Visual Studio al mismo tiempo mediante el comando **nuevo UML o diagrama de capas** del menú **arquitectura** .
 
 3. Agregue al modelo de arquitectura diagramas UML que representen los conceptos importantes del negocio, así como casos de uso a los que se haga referencia en el diseño de todas las capas.
 
@@ -60,7 +60,7 @@ En un proyecto grande o mediano, la estructura del equipo se basa en la estructu
 
     Ahora dispone de un modelo para cada capa, además de un modelo para la arquitectura de la aplicación. Cada modelo se encuentra en su propia solución. Esto permite a los miembros del equipo trabajar en las capas al mismo tiempo.
 
-2. Para la solución de arquitectura, agregue el proyecto de modelado de la solución de cada capa. Para ello, abra la solución de arquitectura. En el Explorador de soluciones, haga clic en el nodo de solución, elija Agregar y, a continuación, haga clic en **proyecto existente**. Navegue hasta el proyecto de modelado (.modelproj) de una solución de capa.
+2. Para la solución de arquitectura, agregue el proyecto de modelado de la solución de cada capa. Para ello, abra la solución de arquitectura. En Explorador de soluciones, haga clic con el botón secundario en el nodo de la solución, seleccione Agregar y, a continuación, haga clic en **proyecto existente**. Navegue hasta el proyecto de modelado (.modelproj) de una solución de capa.
 
     Ahora, cada modelo es visible en dos soluciones: la solución "principal" y la solución de arquitectura.
 
@@ -80,9 +80,9 @@ En un proyecto grande o mediano, la estructura del equipo se basa en la estructu
 
 ###### <a name="to-use-a-separate-package-for-each-layer"></a>Para usar un paquete independiente para cada capa
 
-1. En la solución para cada capa, agregue el proyecto de modelado de arquitectura. En el Explorador de soluciones, haga clic en el nodo de solución, seleccione **agregar**y, a continuación, haga clic en **proyecto existente**. Ahora, se puede acceder al proyecto de modelado desde cada solución: el proyecto de la arquitectura y el proyecto de desarrollo de cada capa.
+1. En la solución para cada capa, agregue el proyecto de modelado de arquitectura. En Explorador de soluciones, haga clic con el botón secundario en el nodo de la solución, seleccione **Agregar**y, a continuación, haga clic en **proyecto existente**. Ahora, se puede acceder al proyecto de modelado desde cada solución: el proyecto de la arquitectura y el proyecto de desarrollo de cada capa.
 
-2. En el modelo UML compartido, cree un paquete para cada capa: En el Explorador de soluciones, seleccione el proyecto de modelado. En el Explorador de modelos UML, haga clic en el nodo raíz del modelo, seleccione **agregar**y, a continuación, haga clic en **paquete**.
+2. En el modelo UML compartido, cree un paquete para cada capa: en el Explorador de soluciones, seleccione el proyecto de modelado. En el explorador de modelos UML, haga clic con el botón secundario en el nodo raíz del modelo, seleccione **Agregar**y, a continuación, haga clic en **paquete**.
 
     Cada paquete incluirá diagramas UML que describen los requisitos y el diseño de la capa correspondiente.
 
@@ -90,7 +90,7 @@ En un proyecto grande o mediano, la estructura del equipo se basa en la estructu
 
     Este método permite que los elementos de diseño de cada capa hagan referencia directamente a los de las capas y la arquitectura común de las que dependen.
 
-    Aunque trabajar simultáneamente en distintos paquetes puede producir algunos conflictos, son bastante fáciles de administrar, ya que los paquetes se almacenan en archivos independientes. La dificultad principal se debe a la eliminación de un elemento al que se hace referencia desde un paquete dependiente. Para obtener más información, consulte [administrar modelos y diagramas con control de versiones](../modeling/manage-models-and-diagrams-under-version-control.md).
+    Aunque trabajar simultáneamente en distintos paquetes puede producir algunos conflictos, son bastante fáciles de administrar, ya que los paquetes se almacenan en archivos independientes. La dificultad principal se debe a la eliminación de un elemento al que se hace referencia desde un paquete dependiente. Para obtener más información, vea [administrar modelos y diagramas en control de versiones](../modeling/manage-models-and-diagrams-under-version-control.md).
 
 ## <a name="creating-architecture-templates"></a>Crear plantillas de arquitectura
 
@@ -104,20 +104,20 @@ Por ejemplo, si usa soluciones que tienen capas de presentación, negocio y dato
 
 2. Cree la estructura de solución que quiere usar como punto de partida para proyectos futuros.
 
-3. En el menú **Archivo** , haga clic en **Exportar plantilla como VSIX**. El **Exportar plantilla como VSIX asistente** se abre.
+3. En el menú **Archivo** , haga clic en **Exportar plantilla como VSIX**. Se abre el **Asistente para exportar plantillas como VSIX** .
 
 4. Siga las instrucciones del asistente, seleccione los proyectos que quiere incluir en la plantilla, proporcione un nombre y una descripción para la plantilla y especifique una ubicación de salida.
 
 > [!NOTE]
-> El material de este tema se ha extraído y parafraseado a partir de la guía para las herramientas de arquitectura de Visual Studio, escrita por Visual Studio ALM Rangers, una colaboración entre los profesionales más valorados (MVP), los Servicios de Microsoft y el equipo de producto y los escritores de Visual Studio. [Haga clic aquí para descargar el paquete de orientación completando.](http://go.microsoft.com/fwlink/?LinkID=191984)
+> El material de este tema se ha extraído y parafraseado a partir de la guía para las herramientas de arquitectura de Visual Studio, escrita por Visual Studio ALM Rangers, una colaboración entre los profesionales más valorados (MVP), los Servicios de Microsoft y el equipo de producto y los escritores de Visual Studio. [Haga clic aquí para descargar el paquete de orientación completo.](http://go.microsoft.com/fwlink/?LinkID=191984)
 
 ## <a name="related-materials"></a>Material relacionado
 
-[Organizar y administrar los modelos](http://channel9.msdn.com/posts/clinted/UML-with-VS-2010-Part-9-Organizing-and-Managing-Your-Models/) : vídeo de Clint Edmondson.
+[Organización y administración de modelos](http://channel9.msdn.com/posts/clinted/UML-with-VS-2010-Part-9-Organizing-and-Managing-Your-Models/) : vídeo de Clint Edmondson.
 
-[Visual Studio Architecture Tooling Guidance](../modeling/visual-studio-architecture-tooling-guidance.md) : más información sobre la administración de modelos en un equipo
+[Guía de herramientas de arquitectura de Visual Studio](../modeling/visual-studio-architecture-tooling-guidance.md) : más información sobre la administración de modelos en un equipo
 
 ## <a name="see-also"></a>Vea también
 
-[Administrar modelos y diagramas con control de versiones](../modeling/manage-models-and-diagrams-under-version-control.md)
+[Administrar modelos y diagramas con control de versiones](../modeling/manage-models-and-diagrams-under-version-control.md) 
 [usar modelos en el proceso de desarrollo](../modeling/use-models-in-your-development-process.md)

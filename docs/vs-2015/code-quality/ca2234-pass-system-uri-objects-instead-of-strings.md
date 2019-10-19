@@ -1,5 +1,5 @@
 ---
-title: 'CA2234: Pase objetos System.Uri en lugar de cadenas | Documentos de Microsoft'
+title: 'CA2234: pasar objetos System. Uri en lugar de cadenas | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -12,40 +12,40 @@ helpviewer_keywords:
 - PassSystemUriObjectsInsteadOfStrings
 ms.assetid: 14616b37-74c4-4286-b051-115d00aceb5f
 caps.latest.revision: 16
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: ce0ed8a2600d52d3a8f6649a528b6c809895f3fe
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 6ad30048f9f7e30d47545435db49d2d1d7e66ff6
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68142400"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72662804"
 ---
-# <a name="ca2234-pass-systemuri-objects-instead-of-strings"></a>CA2234: Pasar objetos System.Uri en lugar de cadenas
+# <a name="ca2234-pass-systemuri-objects-instead-of-strings"></a>CA2234: Pase objetos System.Uri en lugar de cadenas
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
 |-|-|
 |TypeName|PassSystemUriObjectsInsteadOfStrings|
 |Identificador de comprobación|CA2234|
-|Categoría|Microsoft.Usage|
+|Categoría|Microsoft. Usage|
 |Cambio problemático|No trascendental|
 
-## <a name="cause"></a>Causa
- Se realiza una llamada a un método que tiene un parámetro de cadena cuyo nombre contiene "uri", "Uri", "urn", "Urn", "url" o "Url"; y el tipo declarativo del método contiene una sobrecarga del método correspondiente que tiene un <xref:System.Uri?displayProperty=fullName> parámetro.
+## <a name="cause"></a>Motivo
+ Se realiza una llamada a un método que tiene un parámetro de cadena cuyo nombre contiene "URI", "URI", "urn", "urn", "URL" o "URL". y el tipo declarativo del método contiene una sobrecarga de método correspondiente que tiene un parámetro <xref:System.Uri?displayProperty=fullName>.
 
 ## <a name="rule-description"></a>Descripción de la regla
- Un nombre de parámetro se divide en tokens según la convención camel de mayúsculas y minúsculas, y, a continuación, cada token se comprueba para ver si es igual a "uri", "Uri", "urn", "Urn", "url" o "Url". Si hay una coincidencia, se supone que el parámetro representa un identificador uniforme de recursos (URI). Las representaciones de cadena de identificadores URI tienen tendencia a analizar y codificar errores, por lo que pueden crear puntos vulnerables en la seguridad. La <xref:System.Uri> clase proporciona estos servicios de forma segura. Cuando hay que elegir entre dos sobrecargas que difieren solo relativas a la representación de un URI, el usuario debe elegir la sobrecarga que toma un <xref:System.Uri> argumento.
+ Un nombre de parámetro se divide en tokens según la Convención de mayúsculas y minúsculas Camel y, a continuación, se comprueba cada token para ver si es igual a "URI", "URI", "urn", "urn", "URL" o "URL". Si hay una coincidencia, se supone que el parámetro representa un identificador uniforme de recursos (URI). Las representaciones de cadena de identificadores URI tienen tendencia a analizar y codificar errores, por lo que pueden crear puntos vulnerables en la seguridad. La clase <xref:System.Uri> proporciona estos servicios de forma segura. Cuando hay una opción entre dos sobrecargas que solo difieren en cuanto a la representación de un URI, el usuario debe elegir la sobrecarga que toma un argumento <xref:System.Uri>.
 
 ## <a name="how-to-fix-violations"></a>Cómo corregir infracciones
- Para corregir una infracción de esta regla, llame a la sobrecarga que toma el <xref:System.Uri> argumento.
+ Para corregir una infracción de esta regla, llame a la sobrecarga que toma el argumento <xref:System.Uri>.
 
 ## <a name="when-to-suppress-warnings"></a>Cuándo suprimir advertencias
  Es seguro suprimir una advertencia de esta regla si el parámetro de cadena no representa un URI.
 
 ## <a name="example"></a>Ejemplo
- El ejemplo siguiente muestra un método, `ErrorProne`, lo que infringe la regla y un método, `SaferWay`, que llama correctamente a la <xref:System.Uri> de sobrecarga.
+ En el ejemplo siguiente se muestra un método, `ErrorProne`, que infringe la regla y un método, `SaferWay`, que llama correctamente a la sobrecarga de <xref:System.Uri>.
 
  [!code-cpp[FxCop.Usage.PassUri#1](../snippets/cpp/VS_Snippets_CodeAnalysis/FxCop.Usage.PassUri/cpp/FxCop.Usage.PassUri.cpp#1)]
  [!code-csharp[FxCop.Usage.PassUri#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Usage.PassUri/cs/FxCop.Usage.PassUri.cs#1)]
@@ -58,4 +58,4 @@ ms.locfileid: "68142400"
 
  [CA1054: Los parámetros de URI no deben ser cadenas](../code-quality/ca1054-uri-parameters-should-not-be-strings.md)
 
- [CA1055: URI devuelven valores no deben ser cadenas](../code-quality/ca1055-uri-return-values-should-not-be-strings.md)
+ [CA1055: Los valores devueltos URI no deben ser cadenas](../code-quality/ca1055-uri-return-values-should-not-be-strings.md)

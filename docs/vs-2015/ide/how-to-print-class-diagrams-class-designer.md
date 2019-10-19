@@ -1,5 +1,5 @@
 ---
-title: Procedimiento Imprimir diagramas de clases (Diseñador de clases) | Documentos de Microsoft
+title: 'Cómo: Imprimir diagramas de clases (Diseñador de clases) | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
@@ -9,29 +9,28 @@ helpviewer_keywords:
 - class diagrams, printing
 ms.assetid: 62c87425-3446-41fb-943c-1f86397883c8
 caps.latest.revision: 14
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 98ee448c7e8bd2429f575aeb022a2a12e943bc1b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 318ae5314fe8a33e2c421c9532dafc08ceee3ca6
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68144915"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72651758"
 ---
-# <a name="how-to-print-class-diagrams-class-designer"></a>Procedimiento Imprimir diagramas de clases (Diseñador de clases)
+# <a name="how-to-print-class-diagrams-class-designer"></a>Cómo: Imprimir diagramas de clases (Diseñador de clases)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-También puede imprimir un diagrama de clase mediante la función de impresión de Visual Studio.  
-  
-### <a name="to-print-a-class-diagram"></a>Para imprimir un diagrama de clases  
-  
-1. Muestre el diagrama de clases. (Si es necesario, seleccione la pestaña de diagrama de clases para que se muestre).  
-  
-2. Haga clic en **Imprimir** en el menú **Archivo**.  
-  
-     Se imprimirá el diagrama de clases completo. Tenga en cuenta que puede que tenga que ajustar la configuración en el cuadro de diálogo Configurar página para imprimir en un tamaño adecuado.  
-  
-## <a name="see-also"></a>Vea también  
- [Cómo: Copiar elementos del diagrama de clases en un documento de Microsoft Office (Diseñador de clases)](../ide/how-to-copy-class-diagram-elements-to-a-microsoft-office-document-class-designer.md)   
- [Cómo: Exportar los diagramas de clases como imágenes (Diseñador de clases)](../ide/how-to-export-class-diagrams-as-images-class-designer.md)
+También puede imprimir un diagrama de clase mediante la función de impresión de Visual Studio.
+
+### <a name="to-print-a-class-diagram"></a>Para imprimir un diagrama de clases
+
+1. Muestre el diagrama de clases. (Si es necesario, seleccione la pestaña de diagrama de clases para que se muestre).
+
+2. Haga clic en **Imprimir** en el menú **Archivo**.
+
+     Se imprimirá el diagrama de clases completo. Tenga en cuenta que puede que tenga que ajustar la configuración en el cuadro de diálogo Configurar página para imprimir en un tamaño adecuado.
+
+## <a name="see-also"></a>Vea también
+ [Cómo: copiar elementos del diagrama de clases en un documento de Microsoft Office (diseñador de clases)](../ide/how-to-copy-class-diagram-elements-to-a-microsoft-office-document-class-designer.md) [Cómo: exportar diagramas de clases como imágenes (diseñador de clases)](../ide/how-to-export-class-diagrams-as-images-class-designer.md)

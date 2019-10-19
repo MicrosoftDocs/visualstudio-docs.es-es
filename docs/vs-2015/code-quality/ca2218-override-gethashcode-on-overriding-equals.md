@@ -1,5 +1,5 @@
 ---
-title: 'CA2218: Invalidar el método GetHashCode al invalidar Equals | Documentos de Microsoft'
+title: 'CA2218: invalide GetHashCode al reemplazar Equals | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -12,31 +12,31 @@ helpviewer_keywords:
 - CA2218
 ms.assetid: 69b020cd-29e8-45a6-952e-32cf3ce2e21d
 caps.latest.revision: 22
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 1019ef8aceecdbc8cabab6a745d9853dc2d60304
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 06d961fee28fa67f1e4f712564f6b3d5ff4073ee
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65685234"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72651630"
 ---
-# <a name="ca2218-override-gethashcode-on-overriding-equals"></a>CA2218: Invalidar el método GetHashCode al invalidar el método Equals
+# <a name="ca2218-override-gethashcode-on-overriding-equals"></a>CA2218: Reemplazar el método GetHashCode al reemplazar el método Equals
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
 |-|-|
 |TypeName|OverrideGetHashCodeOnOverridingEquals|
 |Identificador de comprobación|CA2218|
-|Categoría|Microsoft.Usage|
+|Categoría|Microsoft. Usage|
 |Cambio problemático|No trascendental|
 
 ## <a name="cause"></a>Motivo
- Un tipo público reemplaza <xref:System.Object.Equals%2A?displayProperty=fullName> pero no invalida <xref:System.Object.GetHashCode%2A?displayProperty=fullName>.
+ Un tipo público invalida <xref:System.Object.Equals%2A?displayProperty=fullName> pero no invalida <xref:System.Object.GetHashCode%2A?displayProperty=fullName>.
 
 ## <a name="rule-description"></a>Descripción de la regla
- <xref:System.Object.GetHashCode%2A> Devuelve un valor basado en la instancia actual, que es adecuada para los algoritmos hash y estructuras de datos como una tabla hash. Dos objetos que son del mismo tipo y son iguales deben devolver el mismo código hash para asegurarse de que las instancias de los tipos siguientes funcionan correctamente:
+ <xref:System.Object.GetHashCode%2A> devuelve un valor, basado en la instancia actual, que es adecuado para algoritmos hash y estructuras de datos como una tabla hash. Dos objetos que son del mismo tipo y son iguales deben devolver el mismo código hash para asegurarse de que las instancias de los tipos siguientes funcionan correctamente:
 
 - <xref:System.Collections.Hashtable?displayProperty=fullName>
 
@@ -65,7 +65,7 @@ ms.locfileid: "65685234"
 ## <a name="class-example"></a>Ejemplo de clase
 
 ### <a name="description"></a>Descripción
- El ejemplo siguiente muestra una clase (tipo de referencia) que infringe esta regla.
+ En el ejemplo siguiente se muestra una clase (tipo de referencia) que infringe esta regla.
 
 ### <a name="code"></a>Código
  [!code-csharp[FxCop.Usage.GetHashCodeErrorClass#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Usage.GetHashCodeErrorClass/cs/FxCop.Usage.GetHashCodeErrorClass.cs#1)]
@@ -79,7 +79,7 @@ ms.locfileid: "65685234"
 ## <a name="structure-example"></a>Ejemplo de estructura
 
 ### <a name="description"></a>Descripción
- El ejemplo siguiente muestra una estructura (tipo de valor) que infringe esta regla.
+ En el ejemplo siguiente se muestra una estructura (tipo de valor) que infringe esta regla.
 
 ### <a name="code"></a>Código
  [!code-csharp[FxCop.Usage.GetHashCodeErrorStruct#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Usage.GetHashCodeErrorStruct/cs/FxCop.Usage.GetHashCodeErrorStruct.cs#1)]
@@ -97,9 +97,9 @@ ms.locfileid: "65685234"
 
  [CA2226: Los operadores deben tener sobrecargar simétricas](../code-quality/ca2226-operators-should-have-symmetrical-overloads.md)
 
- [CA2224: Invalidar equals al sobrecargar operadores de igualdad](../code-quality/ca2224-override-equals-on-overloading-operator-equals.md)
+ [CA2224: Invalidar Equals al sobrecargar operadores de igualdad](../code-quality/ca2224-override-equals-on-overloading-operator-equals.md)
 
- [CA2231: sobrecargar el operador equals al invalidar ValueType.Equals](../code-quality/ca2231-overload-operator-equals-on-overriding-valuetype-equals.md)
+ [CA2231: Sobrecargar el operador equals al invalidar ValueType.Equals](../code-quality/ca2231-overload-operator-equals-on-overriding-valuetype-equals.md)
 
 ## <a name="see-also"></a>Vea también
 

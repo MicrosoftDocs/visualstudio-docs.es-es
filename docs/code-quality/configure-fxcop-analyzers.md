@@ -4,24 +4,24 @@ ms.date: 09/23/2019
 ms.topic: conceptual
 helpviewer_keywords:
 - FxCop analyzers, configuring
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 62dd64dfe4e801f91731b1ed569e3a809156d0d1
-ms.sourcegitcommit: b23d73c86ec7720c4cd9a58050860bc559623a3d
+ms.openlocfilehash: 1d2c4f6b44daf83b3fd013167ec24e82c45ce2e8
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/09/2019
-ms.locfileid: "72172793"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72649699"
 ---
 # <a name="configure-fxcop-analyzers"></a>Configurar analizadores FxCop
 
 El [paquete de analizadores de FxCop](install-fxcop-analyzers.md) consta de las reglas de "FxCop" más importantes del análisis heredado convertidas en analizadores de código basados en .net Compiler Platform. En el caso de ciertas reglas de FxCop, puede restringir qué partes del código base deben aplicarse a través de [las opciones configurables](fxcop-analyzer-options.md). Cada opción se especifica agregando un par clave-valor a un archivo [EditorConfig](https://editorconfig.org) . Un archivo de configuración puede ser [específico de un proyecto](#per-project-configuration) o puede [compartirse](#shared-configuration) entre dos o más proyectos.
 
 > [!TIP]
-> Agregue un archivo. editorconfig al proyecto haciendo clic con el botón derecho en el proyecto en **Explorador de soluciones** y seleccionando **Agregar** > **nuevo elemento**. En la ventana **Agregar nuevo elemento** , escriba **editorconfig** en el cuadro de búsqueda. Seleccione la plantilla **archivo editorconfig (valor predeterminado)** y elija **Agregar**.
+> Agregue un archivo. editorconfig al proyecto haciendo clic con el botón derecho en el proyecto en **Explorador de soluciones** y seleccionando **Agregar**  > **nuevo elemento**. En la ventana **Agregar nuevo elemento** , escriba **editorconfig** en el cuadro de búsqueda. Seleccione la plantilla **archivo editorconfig (valor predeterminado)** y elija **Agregar**.
 >
 > ![Agregar archivo editorconfig al proyecto en Visual Studio](media/add-editorconfig-file.png)
 

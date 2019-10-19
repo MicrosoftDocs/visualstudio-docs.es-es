@@ -4,17 +4,17 @@ ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - Domain-Specific Language, Properties window
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6c11c9da607e983dcde0b84ac236943751bca71c
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.openlocfilehash: 72e0a8393a65d4c0e1549a6617971b0adb8c1df7
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71251852"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72653965"
 ---
 # <a name="customize-the-properties-window"></a>Personalizar el ventana Propiedades
 
@@ -24,7 +24,7 @@ Puede personalizar la apariencia y el comportamiento de la ventana Propiedades e
 
 **Nombre y nombre para mostrar**. En la definición de una propiedad de dominio, el nombre para mostrar de la propiedad es el nombre que aparece en tiempo de ejecución en la ventana Propiedades. Por el contrario, el nombre se utiliza al escribir código de programa para actualizar la propiedad. El nombre debe ser un nombre alfanumérico de CLR correcto, pero el nombre para mostrar puede contener espacios.
 
-Cuando se establece el nombre de una propiedad en la definición de DSL, su nombre para mostrar se establece automáticamente en una copia del nombre. Si escribe un nombre Pascal con mayúsculas y minúsculas, como "FuelGauge", el nombre para mostrar contendrá automáticamente un espacio: "Medidor de combustible". Sin embargo, puede establecer el nombre para mostrar explícitamente en otro valor.
+Cuando se establece el nombre de una propiedad en la definición de DSL, su nombre para mostrar se establece automáticamente en una copia del nombre. Si escribe un nombre Pascal con mayúsculas y minúsculas, como "FuelGauge", el nombre para mostrar contendrá automáticamente un espacio: "aforador de combustible". Sin embargo, puede establecer el nombre para mostrar explícitamente en otro valor.
 
 **Descripción**. La descripción de una propiedad de dominio aparece en dos lugares:
 
@@ -40,9 +40,9 @@ Algunas de las características dinámicas de los elementos gráficos se pueden 
 
 Haga clic con el botón secundario en una clase de forma en definición de DSL, elija **Agregar exposición**y, a continuación, elija una característica.
 
-En las formas puede exponer las propiedades **fillColor**, **OutlineColor**, **textColor**, **OutlineDashStyle**, **OutlineThickness** y **FillGradientMode** . En los conectores, puede exponer las propiedades **color**`,`**textColor**, **DashStyle**y **thickness** . En los diagramas puede exponer las propiedades **fillColor** y **textColor** .
+En las formas puede exponer las propiedades **fillColor**, **OutlineColor**, **textColor**, **OutlineDashStyle**, **OutlineThickness** y **FillGradientMode** . En los conectores puede exponer el **Color** `,` propiedades**textColor**, **DashStyle**y **thickness** . En los diagramas puede exponer las propiedades **fillColor** y **textColor** .
 
-## <a name="forwarding-display-properties-of-related-elements"></a>Reenvío Mostrar Propiedades de elementos relacionados
+## <a name="forwarding-display-properties-of-related-elements"></a>Reenvío: mostrar las propiedades de los elementos relacionados
 
 Cuando el usuario del DSL selecciona un elemento de un modelo, las propiedades de ese elemento se muestran en la ventana Propiedades. Sin embargo, también puede mostrar las propiedades de los elementos relacionados especificados. Esto resulta útil si ha definido un grupo de elementos que funcionan conjuntamente. Por ejemplo, podría definir un elemento principal y un elemento de complemento opcional. Si el elemento principal se asigna a una forma y el otro no lo es, resulta útil ver todas sus propiedades como si estuvieran en un elemento.
 
@@ -52,7 +52,7 @@ Este efecto se denomina *reenvío de propiedades*y se produce automáticamente e
 
 Cuando el usuario selecciona una forma o un conector, o un elemento en el explorador, se muestran las propiedades siguientes en el ventana Propiedades:
 
-- Propiedades de dominio que se definen en la clase de dominio del elemento de modelo, incluidas las que se definen en las clases base. Una excepción son las propiedades de dominio para las que se ha establecido que `False` **se puede examinar** .
+- Propiedades de dominio que se definen en la clase de dominio del elemento de modelo, incluidas las que se definen en las clases base. Una excepción son las propiedades de dominio para las que se ha establecido que **se puede examinar** para `False`.
 
 - Los nombres de los elementos que están vinculados a través de relaciones que tienen una multiplicidad de 0.. 1. Esto proporciona un método práctico para ver los elementos vinculados opcionalmente, incluso si no se ha definido una asignación de conector para la relación.
 
@@ -71,7 +71,7 @@ En el procedimiento siguiente se da por supuesto que ha creado un DSL. Los prime
 
 #### <a name="forward-a-property-from-another-element"></a>Reenviar una propiedad desde otro elemento
 
-1. Cree una [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] solución que contenga al menos dos clases, que en este ejemplo se denominan **book** y **Author**. Debe haber una relación de cualquier tipo entre el **libro** y el **autor**.
+1. Cree una solución de [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] que contenga al menos dos clases, que en este ejemplo se denominan **book** y **Author**. Debe haber una relación de cualquier tipo entre el **libro** y el **autor**.
 
     La multiplicidad del rol de origen (el rol en el lado del **libro** ) debe ser 0.. 1 o 1.. 1, para que cada **libro** tenga un **autor**.
 
@@ -132,7 +132,7 @@ Sin embargo, puede especificar los siguientes editores y tipos:
 
     En el ventana Propiedades, seleccione el tipo externo en la lista desplegable del campo **tipo** .
 
-   En esta fase, los usuarios pueden ver los valores de la propiedad, pero no pueden modificarla. Los valores mostrados se obtienen de `ToString()` la función. Puede escribir código de programa que establezca el valor de la propiedad, por ejemplo en un comando o una regla.
+   En esta fase, los usuarios pueden ver los valores de la propiedad, pero no pueden modificarla. Los valores mostrados se obtienen de la función `ToString()`. Puede escribir código de programa que establezca el valor de la propiedad, por ejemplo en un comando o una regla.
 
 ### <a name="set-a-property-editor"></a>Establecer un editor de propiedades
 
@@ -146,9 +146,9 @@ Agregue un atributo CLR a la propiedad de dominio de la forma siguiente:
 
 Puede establecer el atributo en una propiedad mediante la entrada de **atributo personalizado** en el ventana Propiedades.
 
-El tipo de `AnEditor` se debe derivar del tipo especificado en el segundo parámetro. El segundo parámetro debe ser <xref:System.Drawing.Design.UITypeEditor> o. <xref:System.ComponentModel.ComponentEditor> Para obtener más información, consulta <xref:System.ComponentModel.EditorAttribute>.
+El tipo de `AnEditor` se debe derivar del tipo especificado en el segundo parámetro. El segundo parámetro debe ser <xref:System.Drawing.Design.UITypeEditor> o <xref:System.ComponentModel.ComponentEditor>. Para obtener más información, vea <xref:System.ComponentModel.EditorAttribute>.
 
-Puede especificar su propio editor o editor de .net, <xref:System.Windows.Forms.Design.FileNameEditor> como o. <xref:System.Drawing.Design.ImageEditor> Por ejemplo, utilice el procedimiento siguiente para tener una propiedad en la que el usuario pueda escribir un nombre de archivo.
+Puede especificar su propio editor o editor de .NET, como <xref:System.Windows.Forms.Design.FileNameEditor> o <xref:System.Drawing.Design.ImageEditor>. Por ejemplo, utilice el procedimiento siguiente para tener una propiedad en la que el usuario pueda escribir un nombre de archivo.
 
 #### <a name="define-a-file-name-domain-property"></a>Definir una propiedad de dominio nombre de archivo
 
@@ -183,7 +183,7 @@ Para definir un editor, escriba una clase que se derive de <xref:System.Drawing.
 
 - <xref:System.Drawing.Design.UITypeEditor.GetEditStyle%2A>, para especificar si el editor abrirá un cuadro de diálogo o proporcionará un menú desplegable.
 
-También puede proporcionar una representación gráfica del valor de la propiedad que se mostrará en la cuadrícula de propiedades. Para ello, invalide `GetPaintValueSupported`y. `PaintValue`  Para obtener más información, consulta <xref:System.Drawing.Design.UITypeEditor>.
+También puede proporcionar una representación gráfica del valor de la propiedad que se mostrará en la cuadrícula de propiedades. Para ello, invalide `GetPaintValueSupported` y `PaintValue`.  Para obtener más información, vea <xref:System.Drawing.Design.UITypeEditor>.
 
 > [!NOTE]
 > Agregue el código en un archivo de código independiente en el proyecto **DSL** .
@@ -210,7 +210,7 @@ Para usar este editor, establezca el **atributo personalizado** de una propiedad
    , typeof(System.Drawing.Design.UITypeEditor))]
 ```
 
-Para obtener más información, consulta <xref:System.Drawing.Design.UITypeEditor>.
+Para obtener más información, vea <xref:System.Drawing.Design.UITypeEditor>.
 
 ## <a name="provide-a-drop-down-list-of-values"></a>Proporcionar una lista desplegable de valores
 

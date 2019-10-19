@@ -2,17 +2,17 @@
 title: Conjunto de reglas Reglas recomendadas nativas
 ms.date: 11/04/2016
 ms.topic: reference
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bc18859e84262e9b2a40efde7ed9733fce701a6c
-ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
+ms.openlocfilehash: dcc5112262dd36e431a34becd36729ea9a3c186f
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72448818"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72649167"
 ---
 # <a name="native-recommended-rules-rule-set"></a>Conjunto de reglas Reglas recomendadas nativas
 

@@ -1,26 +1,26 @@
 ---
-title: 'Tutorial: Crear un host de plantilla de texto personalizado'
+title: 'Tutorial: Crear un host de plantillas de texto personalizadas'
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - walkthroughs [text templates], custom host
 - text templates, custom host walkthrough
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
 dev_langs:
 - CSharp
 - VB
-ms.openlocfilehash: b9d2447d07d9faabb5fc7eabddafc328756056ca
-ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
+ms.openlocfilehash: 999e8f27a9c60d776d65dc87eb2b42adeec2226c
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68870657"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72666970"
 ---
-# <a name="walkthrough-create-a-custom-text-template-host"></a>Tutorial: Creación de un host de plantilla de texto personalizado
+# <a name="walkthrough-create-a-custom-text-template-host"></a>Tutorial: Crear un host de plantillas de texto personalizadas
 
 Un *host de plantilla de texto* proporciona un entorno que permite la ejecución del *motor de transformación de plantillas de texto* . El host es responsable de administrar la interacción del motor con el sistema de archivos. El procesador de *directivas* o el motor que necesita un archivo o un ensamblado puede solicitar un recurso del host. Este puede entonces buscar en los directorios y en la memoria caché global de ensamblados el recurso solicitado. Para obtener más información, vea [el proceso de transformación de plantillas de texto](../modeling/the-text-template-transformation-process.md).
 
@@ -51,7 +51,7 @@ En este tutorial, creará un host personalizado en una aplicación ejecutable a 
 
 2. Agregue referencias a los siguientes ensamblados:
 
-   - **Microsoft.VisualStudio.TextTemplating.\*.0**
+   - **Microsoft. VisualStudio. TextTemplating. \*.0**
 
    - **Microsoft. VisualStudio. TextTemplating. interfaces. 10.0 y versiones posteriores**
 
@@ -714,7 +714,7 @@ En este tutorial, creará un host personalizado en una aplicación ejecutable a 
    End Namespace
    ```
 
-4. Solo [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] para, abra el menú **proyecto** y haga clic en **propiedades de CustomHost**. En la lista **objeto de inicio** , haga clic en **CustomHost. Program**.
+4. Solo para [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)], abra el menú **proyecto** y haga clic en **propiedades de CustomHost**. En la lista **objeto de inicio** , haga clic en **CustomHost. Program**.
 
 5. En el menú **Archivo**, haga clic en **Guardar todo**.
 
@@ -726,7 +726,7 @@ Para probar el host personalizado, escriba una plantilla de texto, ejecute el ho
 
 ### <a name="to-create-a-text-template-to-test-the-custom-host"></a>Para crear una plantilla de texto para probar el host personalizado
 
-1. Cree un archivo de texto y asígnele el `TestTemplate.tt`nombre.
+1. Cree un archivo de texto y asígnele el nombre `TestTemplate.tt`.
 
      Puede usar cualquier editor de texto (por ejemplo, Bloc de notas) para crear el archivo.
 
@@ -819,7 +819,7 @@ Para probar el host personalizado, escriba una plantilla de texto, ejecute el ho
 
 ## <a name="next-steps"></a>Pasos siguientes
 
-En este tutorial, creó un host de transformación de plantillas de texto que admite la funcionalidad de transformación básica. Puede expandir el host para admitir plantillas de texto que llamen a procesadores de directivas personalizados o generados. Para obtener más información, vea [Tutorial: Conectar un host a un procesador](../modeling/walkthrough-connecting-a-host-to-a-generated-directive-processor.md)de directivas generado.
+En este tutorial, creó un host de transformación de plantillas de texto que admite la funcionalidad de transformación básica. Puede expandir el host para admitir plantillas de texto que llamen a procesadores de directivas personalizados o generados. Para obtener más información, vea [Tutorial: conectar un host a un procesador de directivas generado](../modeling/walkthrough-connecting-a-host-to-a-generated-directive-processor.md).
 
 ## <a name="see-also"></a>Vea también
 

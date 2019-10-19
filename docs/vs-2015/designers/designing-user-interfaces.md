@@ -6,28 +6,27 @@ ms.technology: vs-ide-designers
 ms.topic: conceptual
 ms.assetid: 880da508-7573-4434-b3a0-d48cf003c0a9
 caps.latest.revision: 13
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: b6b022281b043b512491c2fe6366a1393b67dacd
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 2dde1be1d11608b9e7fe6a57709e6ab1889cf3c7
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68181325"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72664745"
 ---
 # <a name="designing-user-interfaces"></a>Diseño de interfaces de usuario
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Puede crear y diseñar la interfaz de usuario para la aplicación con diversas herramientas de Visual Studio.  
-  
-|Para obtener información adicional acerca de|Vea|  
-|-------------------------|---------|  
-|Diseño de cualquier aplicación basada en XAML o una aplicación con Visual Studio o Blend para Visual Studio.   .|[Diseño de XAML en Visual Studio y Blend para Visual Studio](../designers/designing-xaml-in-visual-studio.md)|  
-|Diseño de aplicaciones de escritorio que usan el tipo WPF de XAML.|[Crear aplicaciones de escritorio modernas con Windows Presentation Foundation](../designers/create-modern-desktop-applications-with-windows-presentation-foundation.md)|  
-|Desarrollar una aplicación de DirectX en Visual Studio.|[Trabajar con activos 3D para juegos y aplicaciones](../designers/working-with-3-d-assets-for-games-and-apps.md)|  
-|Iconos estándar disponibles en sus programas.|[Biblioteca de imágenes de Visual Studio](../designers/the-visual-studio-image-library.md)|  
-  
-## <a name="see-also"></a>Vea también  
- [Tutorial: Crear una aplicación sencilla](../ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md)   
- [Biblioteca de imágenes de Visual Studio](../designers/the-visual-studio-image-library.md)
+Puede crear y diseñar la interfaz de usuario para la aplicación con diversas herramientas de Visual Studio.
+
+|Para obtener información adicional acerca de|Vea|
+|-------------------------|---------|
+|Diseño de cualquier aplicación basada en XAML o una aplicación con Visual Studio o Blend para Visual Studio.   .|[Diseño de XAML en Visual Studio y Blend para Visual Studio](../designers/designing-xaml-in-visual-studio.md)|
+|Diseño de aplicaciones de escritorio que usan el tipo WPF de XAML.|[Crear aplicaciones de escritorio modernas con Windows Presentation Foundation](../designers/create-modern-desktop-applications-with-windows-presentation-foundation.md)|
+|Desarrollar una aplicación de DirectX en Visual Studio.|[Trabajar con activos 3D para juegos y aplicaciones](../designers/working-with-3-d-assets-for-games-and-apps.md)|
+|Iconos estándar disponibles en sus programas.|[Biblioteca de imágenes de Visual Studio](../designers/the-visual-studio-image-library.md)|
+
+## <a name="see-also"></a>Vea también
+ [Tutorial: crear una aplicación sencilla](../ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md) [la biblioteca de imágenes de Visual Studio](../designers/the-visual-studio-image-library.md)

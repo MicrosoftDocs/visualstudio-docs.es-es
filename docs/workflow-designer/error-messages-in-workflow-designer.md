@@ -7,17 +7,17 @@ f1_keywords:
 - System.Activities.Presentation.ErrorActivity.UI
 - System.Activities.Presentation.View.ErrorView.UI
 ms.assetid: 4d8bbc2e-34fc-477f-9140-4adfd70c34a0
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a3f2d4d86f80bc7c2966d5156267352154b1279f
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.openlocfilehash: 1406802f85c755d4dab25e000843a995be252d0a
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71254799"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72650495"
 ---
 # <a name="error-messages-in-workflow-designer"></a>Mensajes de error en el Diseñador de flujo de trabajo
 
@@ -35,7 +35,7 @@ Los errores en Diseñador de flujo de trabajo producen en las situaciones siguie
 
 4. Hay errores en el archivo XAML que hacen que el flujo de trabajo no pueda cargarse.
 
-Las expresiones no válidas y las restricciones de validación no satisfechas no impiden la compilación del flujo de trabajo. La compilación del flujo de trabajo se realiza <xref:System.Activities.InvalidWorkflowException> correctamente, pero se produce una excepción en tiempo de ejecución. Si hay errores en el archivo XAML, se produce un error en la compilación.
+Las expresiones no válidas y las restricciones de validación no satisfechas no impiden la compilación del flujo de trabajo. La compilación del flujo de trabajo se realiza correctamente, pero se produce una <xref:System.Activities.InvalidWorkflowException> en tiempo de ejecución. Si hay errores en el archivo XAML, se produce un error en la compilación.
 
 Dentro de Visual Studio, cuando se carga un flujo de trabajo, sus errores se muestran en el **lista de errores**. Para navegar a la actividad que es el origen del error, haga doble clic en el error en el **lista de errores**.
 

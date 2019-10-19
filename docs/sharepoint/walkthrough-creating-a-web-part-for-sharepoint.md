@@ -1,5 +1,5 @@
 ---
-title: 'Tutorial: Crear un elemento Web para SharePoint | Documentos de Microsoft'
+title: 'Tutorial: crear un elemento Web para SharePoint | Microsoft Docs'
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -14,77 +14,77 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 622dfafbe16efee1e953fbc42bfa3b94cfa3cc58
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 3cbc4b9a2eecd6eb9853c515eb5358009c32843a
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62965276"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72655915"
 ---
-# <a name="walkthrough-create-a-web-part-for-sharepoint"></a>Tutorial: Crear un elemento web para SharePoint
+# <a name="walkthrough-create-a-web-part-for-sharepoint"></a>Tutorial: crear un elemento Web para SharePoint
 
-Los elementos web permiten a los usuarios modificar directamente el contenido, el aspecto y el comportamiento de las páginas de sitios de SharePoint mediante un explorador. En este tutorial se muestra cómo crear un elemento Web utilizando el **elemento Web** plantilla de elemento en Visual Studio 2010.
+Los elementos web permiten a los usuarios modificar directamente el contenido, el aspecto y el comportamiento de las páginas de sitios de SharePoint mediante un explorador. En este tutorial se muestra cómo crear un elemento Web utilizando la plantilla elemento **Web** en Visual Studio 2010.
 
 El elemento web muestra los empleados en una cuadrícula de datos. El usuario especifica la ubicación del archivo que contiene los datos de los empleados. El usuario también puede filtrar la cuadrícula de datos para que en la lista solo aparezcan los empleados que son administradores.
 
 En este tutorial se muestran las tareas siguientes:
 
-- Crear un elemento Web con Visual Studio **elemento Web** plantilla de elemento.
+- Crear un elemento Web utilizando la plantilla de elementos de elemento **Web** de Visual Studio.
 
 - Crear una propiedad que puede establecer el usuario del elemento web. Esta propiedad especifica la ubicación del archivo de datos de los empleados.
 
 - Presentar el contenido de un elemento web agregando controles a la colección de controles del elemento web.
 
-- Crear un nuevo elemento de menú, conoce como un *verbo,* que aparece en el menú de verbos del elemento Web presentado. Los verbos permiten al usuario modificar los datos que aparecen en el elemento web.
+- Crear un nuevo elemento de menú, denominado *verbo,* que aparece en el menú de verbos del elemento Web representado. Los verbos permiten al usuario modificar los datos que aparecen en el elemento web.
 
 - Probar el elemento web en SharePoint.
 
     > [!NOTE]
-    > Es posible que el equipo muestre nombres o ubicaciones diferentes para algunos de los elementos de la interfaz de usuario de Visual Studio en las siguientes instrucciones. La edición de Visual Studio que se tenga y la configuración que se utilice determinan estos elementos. Para más información, vea [Personalizar el IDE de Visual Studio](../ide/personalizing-the-visual-studio-ide.md).
+    > Es posible que tu equipo muestre nombres o ubicaciones diferentes para algunos de los elementos de la interfaz de usuario de Visual Studio en las siguientes instrucciones. La edición de Visual Studio que se tenga y la configuración que se utilice determinan estos elementos. Para más información, vea [Personalizar el IDE de Visual Studio](../ide/personalizing-the-visual-studio-ide.md).
 
 ## <a name="prerequisites"></a>Requisitos previos
 
 - Ediciones compatibles de Microsoft Windows y SharePoint.
 
-- Visual Studio 2017 o servicios de Azure DevOps.
+- Visual Studio 2017 o Azure DevOps Services.
 
 ## <a name="create-an-empty-sharepoint-project"></a>Crear un proyecto vacío de SharePoint
 
-Primero, cree un proyecto de SharePoint vacío. Más adelante, se agregará un elemento Web al proyecto mediante el uso de la **elemento Web** plantilla de elemento.
+Primero, cree un proyecto de SharePoint vacío. Más adelante, agregará un elemento Web al proyecto utilizando la plantilla elemento **Web** .
 
-1. Iniciar [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] utilizando el **ejecutar como administrador** opción.
+1. Inicie [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] mediante la opción **Ejecutar como administrador** .
 
-2. En la barra de menús, elija **archivo** > **New** > **proyecto**.
+2. En la barra de hombres, elija **archivo**  > **nuevo** **proyecto**de  > .
 
-3. En el **nuevo proyecto** cuadro de diálogo, expanda el **SharePoint** nodo bajo el lenguaje que desee usar y, a continuación, elija el **2010** nodo.
+3. En el cuadro de diálogo **nuevo proyecto** , expanda el nodo **SharePoint** bajo el lenguaje que desea usar y, a continuación, elija el nodo **2010** .
 
-4. En el **plantillas** panel, elija **proyecto de SharePoint 2010**y, a continuación, elija el **Aceptar** botón.
+4. En el panel **plantillas** , elija **proyecto de SharePoint 2010**y, a continuación, elija el botón **Aceptar** .
 
-     El **Asistente de personalización de SharePoint** aparece. Este asistente permite seleccionar el sitio que se va a usar para depurar el proyecto, así como el nivel de confianza de la solución.
+     Aparece el **Asistente para la personalización de SharePoint** . Este asistente permite seleccionar el sitio que se va a usar para depurar el proyecto, así como el nivel de confianza de la solución.
 
-5. Elija la **implementar como solución de granja de servidores** botón de opción y, a continuación, elija el **finalizar** botón para aceptar el sitio local predeterminado de SharePoint.
+5. Elija el botón de opción **implementar como solución de granja de servidores** y, después, elija el botón **Finalizar** para aceptar el sitio local predeterminado de SharePoint.
 
-## <a name="add-a-web-part-to-the-project"></a>Agregar un elemento web al proyecto
+## <a name="add-a-web-part-to-the-project"></a>Agregar un elemento Web al proyecto
 
-Agregar un **elemento Web** elemento al proyecto. El **elemento Web** elemento agrega el archivo de código del elemento Web. Después, agregará código al archivo de código para presentar el contenido del elemento web.
+Agregue un elemento de elemento **Web** al proyecto. El elemento **Web** agrega el archivo de código del elemento Web. Después, agregará código al archivo de código para presentar el contenido del elemento web.
 
 1. En la barra de menús, elija **Proyecto** >  **Agregar nuevo elemento**.
 
-2. En el **Agregar nuevo elemento** cuadro de diálogo el **plantillas instaladas** panel, expanda el **SharePoint** nodo y, a continuación, elija el **2010** nodo.
+2. En el cuadro de diálogo **Agregar nuevo elemento** , en el panel **plantillas instaladas** , expanda el nodo **SharePoint** y, a continuación, elija el nodo **2010** .
 
-3. En la lista de plantillas de SharePoint, elija el **elemento Web** plantilla y, a continuación, elija el **agregar** botón.
+3. En la lista de plantillas de SharePoint, elija la plantilla **elemento Web** y, a continuación, elija el botón **Agregar** .
 
-     El **elemento Web** aparece en el elemento **el Explorador de soluciones**.
+     El elemento **Web** aparece en **Explorador de soluciones**.
 
-## <a name="rendering-content-in-the-web-part"></a>Representar el contenido en el elemento web
+## <a name="rendering-content-in-the-web-part"></a>Representar el contenido en el elemento Web
 
 Puede especificar los controles que desea que aparezcan en el elemento web agregándolos a la colección de controles de la clase Web Part.
 
-1. En **el Explorador de soluciones**, abra *WebPart1.vb* (en Visual Basic) o *WebPart1.cs* (en C#).
+1. En **Explorador de soluciones**, Abra *WebPart1. vb* (en Visual Basic) o *WebPart1.CS* (en C#).
 
      Se abre el archivo de código del elemento web en el editor de código.
 
-2. Agregue las siguientes instrucciones en la parte superior del archivo de código del elemento web.
+2. Agregue las siguientes directivas a la parte superior del archivo de código del elemento Web.
 
      [!code-csharp[SP_WebPart#1](../sharepoint/codesnippet/CSharp/spext_webpart/webpart1/webpart1.cs#1)]
      [!code-vb[SP_WebPart#1](../sharepoint/codesnippet/VisualBasic/spext_webpart/webpart1/webpart1.vb#1)]
@@ -125,7 +125,7 @@ Puede especificar los controles que desea que aparezcan en el elemento web agreg
      [!code-csharp[SP_WebPart#5](../sharepoint/codesnippet/CSharp/spext_webpart/webpart1/webpart1.cs#5)]
      [!code-vb[SP_WebPart#5](../sharepoint/codesnippet/VisualBasic/spext_webpart/webpart1/webpart1.vb#5)]
 
-## <a name="test-the-web-part"></a>Probar el elemento web
+## <a name="test-the-web-part"></a>Probar el elemento Web
 
 Cuando se ejecuta el proyecto, se abre el sitio de SharePoint. El elemento web se agrega automáticamente a la Galería de elementos web de SharePoint. Puede agregar el elemento web a cualquier página de elementos web.
 
@@ -162,31 +162,31 @@ Cuando se ejecuta el proyecto, se abre el sitio de SharePoint. El elemento web s
         </employees>
     ```
 
-2. En el Bloc de notas, en la barra de menús, elija **archivo** > **Guardar como**.
+2. En el Bloc de notas, en la barra de menús, elija **archivo**  > **Guardar como**.
 
-3. En el **Guardar como** cuadro de diálogo el **Guardar como tipo** elija **todos los archivos**.
+3. En el cuadro de diálogo **Guardar como** , en la lista **Guardar como tipo** , elija **todos los archivos**.
 
-4. En el **nombre de archivo** , escriba **data.xml**.
+4. En el cuadro **nombre de archivo** , escriba **Data. XML**.
 
-5. Elija cualquier carpeta utilizando el **examinar carpetas** botón y, a continuación, elija el **guardar** botón.
+5. Elija cualquier carpeta mediante el botón **examinar carpetas** y, a continuación, elija el botón **Guardar** .
 
-6. En Visual Studio, elija el **F5** clave.
+6. En Visual Studio, elija la tecla **F5** .
 
      Se abre el sitio de SharePoint.
 
-7. En el **acciones del sitio** menú, elija **más opciones**.
+7. En el menú **acciones del sitio** , elija **más opciones**.
 
-8. En el **crear** página, elija el **página de elementos Web** escriba, a continuación, elija el **crear** botón.
+8. En la página **crear** , elija el tipo de **Página elemento Web** y, a continuación, elija el botón **crear** .
 
-9. En el **nueva página de elementos Web** página, asigne el nombre de la página **SampleWebPartPage.aspx**y, a continuación, elija el **crear** botón.
+9. En la página **nueva página de elementos Web** , asigne un nombre a la página **nombre samplewebpartpage. aspx**y, a continuación, elija el botón **crear** .
 
      Aparece la página de elementos web .
 
 10. Seleccione cualquier zona de la página de elementos web.
 
-11. En la parte superior de la página, elija el **insertar** pestaña y, a continuación, elija el **elemento Web** botón.
+11. En la parte superior de la página, elija la pestaña **Insertar** y, a continuación, elija el botón **elemento Web** .
 
-12. En el **categorías** panel, elija el **personalizado** carpeta, elija la **WebPart1** elemento Web y, a continuación, elija el **agregar** botón.
+12. En el panel **categorías** , elija la carpeta **personalizado** , elija el elemento Web **WebPart1** y, a continuación, elija el botón **Agregar** .
 
      El elemento web aparece en la página.
 
@@ -198,25 +198,25 @@ Para rellenar la cuadrícula de datos que aparece en el elemento web, especifiqu
 
      Un panel con las propiedades del elemento web aparece en el lado derecho de la página.
 
-2. En el panel, expanda el **varios** nodo, escriba la ruta de acceso del archivo XML que creó anteriormente, elija el **aplicar** botón y, a continuación, elija el **Aceptar** botón.
+2. En el panel, expanda el nodo **varios** , escriba la ruta de acceso del archivo XML que creó anteriormente, elija el botón **aplicar** y elija el botón **Aceptar** .
 
      Compruebe que en el elemento web aparece una lista de empleados.
 
-## <a name="test-the-web-part-verb"></a>Probar el verbo del elemento web
+## <a name="test-the-web-part-verb"></a>Prueba del verbo del elemento Web
 
 Muestra y oculta a los empleados que no son administradores cuando se hace clic en un elemento que aparece en el menú de verbos del elemento web.
 
-1. Elija la flecha que aparece en el lado derecho del elemento Web y, a continuación, elija **mostrar solo los administradores** en el menú que aparece.
+1. Elija la flecha que aparece en el lado derecho del elemento Web y, a continuación, elija **Mostrar solo administradores** en el menú que aparece.
 
      Solo los empleados que son administradores aparecen en el elemento web.
 
-2. Vuelva a elegir la flecha y, a continuación, elija **muestra todos los empleados** en el menú que aparece.
+2. Vuelva a elegir la flecha y, a continuación, elija **Mostrar todos los empleados** en el menú que aparece.
 
      Todos los empleados aparecen en el elemento web.
 
 ## <a name="see-also"></a>Vea también
 
-[Crear elementos web para SharePoint](../sharepoint/creating-web-parts-for-sharepoint.md)
-[Cómo: Crear un elemento web de SharePoint](../sharepoint/how-to-create-a-sharepoint-web-part.md)
-[Cómo: Crear un elemento web de SharePoint mediante un diseñador](../sharepoint/how-to-create-a-sharepoint-web-part-by-using-a-designer.md)
-[Tutorial: Crear un elemento web para SharePoint utilizando un diseñador](../sharepoint/walkthrough-creating-a-web-part-for-sharepoint-by-using-a-designer.md)
+[Crear elementos Web para sharepoint](../sharepoint/creating-web-parts-for-sharepoint.md) 
+[Cómo: crear un elemento web de SharePoint](../sharepoint/how-to-create-a-sharepoint-web-part.md) 
+[Cómo: crear un elemento Web de SharePoint mediante un diseñador](../sharepoint/how-to-create-a-sharepoint-web-part-by-using-a-designer.md) 
+[Tutorial: crear un elemento Web para SharePoint mediante un diseñador](../sharepoint/walkthrough-creating-a-web-part-for-sharepoint-by-using-a-designer.md)

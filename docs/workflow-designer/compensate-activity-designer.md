@@ -1,25 +1,25 @@
 ---
-title: Diseñador de flujo de trabajo - Diseñador de actividades Compensate
+title: 'Diseñador de flujo de trabajo: diseñador de actividades Compensate'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
 - System.Activities.Statements.Compensate.UI
 ms.assetid: 7347c947-bfff-4bad-becd-5cd23e7b24cd
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c55ecd8e3402d927b11cc00d18d6d134a5b25681
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 65203663214e6bc82a4a7b20af9caa25bfd98ee4
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62949843"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72650651"
 ---
 # <a name="compensate-activity-designer"></a>Diseñador de actividades Compensate
 
-El **compensar** Diseñador de actividad se usa para crear y configurar un <xref:System.Activities.Statements.Compensate> actividad.
+El diseñador de actividades **Compensate** se usa para crear y configurar una actividad <xref:System.Activities.Statements.Compensate>.
 
 ## <a name="the-compensate-activity"></a>Actividad Compensate
 
@@ -29,15 +29,15 @@ La clase <xref:System.Activities.Statements.CompensationToken> que especificó <
 
 ### <a name="using-the-compensate-activity-designer"></a>Utilizar el diseñador de actividades Compensate
 
-El **compensar** Diseñador de actividad puede encontrarse en el **transacciones** categoría de la **cuadro de herramientas**. Para abrir **cuadro de herramientas**, seleccione el **cuadro de herramientas** ficha en el lado izquierdo del Diseñador de flujo de trabajo. Como alternativa, seleccione **cuadro de herramientas** desde el **vista** menús o presione **Ctrl**+**Alt** + **X**.
+El diseñador de actividades **Compensate** se puede encontrar en la categoría **transacción** del **cuadro de herramientas**. Para abrir el **cuadro de herramientas**, seleccione la pestaña cuadro de **herramientas** en el lado izquierdo del diseñador de flujo de trabajo. Como alternativa, seleccione **cuadro de herramientas** en el menú **Ver** o presione **Ctrl** +**Alt** +**X**.
 
-El **compensar** Diseñador de actividad se puede arrastrar desde el **cuadro de herramientas** y colocar en la superficie del Diseñador de flujo de trabajo donde se coloquen las actividades, tal como en un <xref:System.Activities.Statements.Sequence>. Al colocar el Diseñador de actividad se crea un <xref:System.Activities.Statements.Compensate> actividad su valor predeterminado es <xref:System.Activities.Activity.DisplayName%2A> de compensación. El <xref:System.Activities.Activity.DisplayName%2A> se puede editar en el encabezado de la **compensar** Diseñador de actividad o en el **DisplayName** cuadro de la cuadrícula de propiedades.
+El diseñador de actividades **Compensate** se puede arrastrar desde el **cuadro de herramientas** y colocarlo en la superficie de diseñador de flujo de trabajo dondequiera que se coloquen las actividades, como en una <xref:System.Activities.Statements.Sequence>. Al quitar el diseñador de actividad, se crea una actividad <xref:System.Activities.Statements.Compensate> con un <xref:System.Activities.Activity.DisplayName%2A> predeterminado de compensar. El valor <xref:System.Activities.Activity.DisplayName%2A> se puede editar en el encabezado del diseñador de actividades **Compensate** o en el cuadro **displayName** de la cuadrícula de propiedades.
 
 ### <a name="the-compensate-properties"></a>Propiedades Compensate
 
-En la tabla siguiente se muestran las propiedades <xref:System.Activities.Statements.CancellationScope> y se describe cómo se utilizan en el diseñador. El <xref:System.Activities.Activity.DisplayName%2A> propiedad se puede editar en cuadrícula de propiedades o en la superficie del Diseñador de flujo de trabajo. Editar el <xref:System.Activities.Statements.Compensate.Target%2A> propiedad en la cuadrícula de propiedades.
+En la tabla siguiente se muestran las propiedades <xref:System.Activities.Statements.CancellationScope> y se describe cómo se utilizan en el diseñador. La propiedad <xref:System.Activities.Activity.DisplayName%2A> se puede editar en la cuadrícula de propiedades o en Diseñador de flujo de trabajo superficie. Edite la propiedad <xref:System.Activities.Statements.Compensate.Target%2A> en la cuadrícula de propiedades.
 
-|Nombre de la propiedad|Obligatorio|Uso|
+|Nombre de la propiedad|Requerido|Uso|
 |-|--------------|-|
 |<xref:System.Activities.Activity.DisplayName%2A>|False|Especifica el nombre opcional descriptivo de la actividad <xref:System.Activities.Statements.Compensate>. El valor predeterminado es Compensate.|
 |<xref:System.Activities.Statements.Compensate.Target%2A>|True|Especifica la clase <xref:System.Activities.InArgument%601> que contiene la clase <xref:System.Activities.Statements.CompensationToken> para esta actividad <xref:System.Activities.Statements.Compensate>.|
