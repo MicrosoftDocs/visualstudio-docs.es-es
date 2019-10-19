@@ -10,15 +10,15 @@ helpviewer_keywords:
 - 64-bit programming [C++]
 ms.assetid: b08ff3ad-c6fd-468f-94d5-01a61aab6833
 caps.latest.revision: 18
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: c83c4623854fd8f7605096d218de69460fc8a919
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 7d457af78a23d03b4d87de6dd226cf55e8a191f8
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65698164"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72667116"
 ---
 # <a name="visual-studio-ide-64-bit-support"></a>Compatibilidad de 64 bits del IDE de Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -46,5 +46,5 @@ ms.locfileid: "65698164"
 
 - [Usar archivos de volcado de memoria](../debugger/using-dump-files.md)
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Otras referencias
  [Configurar proyectos para plataformas de destino](../ide/how-to-configure-projects-to-target-platforms.md)

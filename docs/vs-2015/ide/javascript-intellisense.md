@@ -23,15 +23,15 @@ helpviewer_keywords:
 - XML documentation comments [JavaScript]
 ms.assetid: af1a3171-c9d8-45a3-9c96-a763e3b163ef
 caps.latest.revision: 67
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 4985196feb8c2ddd5996c51210e39f9e503e953f
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 39c90a8550736c945f04467e9366a73039cfa2b1
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65675174"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72670476"
 ---
 # <a name="javascript-intellisense"></a>IntelliSense para JavaScript
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -277,7 +277,7 @@ IntelliSense le ayuda a escribir código con mayor rapidez y menos errores, ya q
 
 - La ventana de salida muestra las referencias que no se cargaron.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Otras referencias
 - [Usar IntelliSense](../ide/using-intellisense.md)
 - [Crear comentarios de documentación XML](../ide/create-xml-documentation-comments-for-javascript-intellisense.md)
 - [Extender IntelliSense para JavaScript](../ide/extending-javascript-intellisense.md)
