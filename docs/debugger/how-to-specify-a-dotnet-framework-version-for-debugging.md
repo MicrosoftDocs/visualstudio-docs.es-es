@@ -17,22 +17,22 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: bfe17100fcdcb0d475a7467233caa51ba7895225
-ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.openlocfilehash: d612c3f0a542fe30e9241b43c1df5d82a09832fd
+ms.sourcegitcommit: 08c144d290da373df841f04fc799e3133540a541
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66747471"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72535974"
 ---
-# <a name="how-to-specify-a-net-framework-version-for-debugging-c-visual-basic-f"></a>Procedimiento Especificar una versión de .NET Framework para la depuración (C#, Visual Basic, F#)
+# <a name="specify-an-older-net-framework-version-for-debugging-c-visual-basic-f"></a>Especifique una versión anterior de .NET Framework para la depuraciónC#( F#, Visual Basic,)
 
-El depurador de Visual Studio admite la depuración de las versiones anteriores de Microsoft .NET Framework, así como la versión actual. Si inicia una aplicación desde Visual Studio, el depurador siempre puede identificar la versión correcta de .NET Framework para la aplicación que está depurando. Sin embargo, si la aplicación ya está funcionando y que inicie la depuración mediante el uso de **adjuntar a**, el depurador no siempre puede identificar una versión anterior de .NET Framework. Si esto ocurre, aparecerá un mensaje de error que indica,
+El depurador de Visual Studio admite la depuración de versiones anteriores del marco de Microsoft .NET, así como la versión actual. Si inicia una aplicación desde Visual Studio, el depurador siempre puede identificar la versión correcta de la .NET Framework para la aplicación que está depurando. Sin embargo, si la aplicación ya se está ejecutando y se inicia la depuración con **adjuntar a**, es posible que el depurador no siempre pueda identificar una versión anterior de la .NET Framework. Si esto ocurre, aparecerá un mensaje de error que indica,
 
 ``` cmd
 The debugger has made an incorrect assumption about the .NET Framework version your application is going to use.
 ```
 
-En los casos excepcionales, donde aparece este error, puede establecer una clave del registro para indicar al depurador qué versión debe utilizar.
+En los casos excepcionales en los que aparece este error, puede establecer una clave del registro para indicar al depurador qué versión usar.
 
 ### <a name="to-specify-a-net-framework-version-for-debugging"></a>Para especificar una versión de .NET Framework para la depuración
 
@@ -46,13 +46,13 @@ En los casos excepcionales, donde aparece este error, puede establecer una clave
 
 3. En el **Editor del Registro**, abra la carpeta HKEY_LOCAL_MACHINE.
 
-4. Vaya a: HKEY_LOCAL_MACHINE\Software\Microsoft\VisualStudio\10.0\AD7Metrics\Engine\\{449EC4CC-30D2-4032-9256-EE18EB41B62B}
+4. Navegue a: HKEY_LOCAL_MACHINE\Software\Microsoft\VisualStudio\10.0\AD7Metrics\Engine\\{449EC4CC-30D2-4032-9256-EE18EB41B62B}
 
-    Si la clave no existe, haga clic con el botón derecho en HKEY_LOCAL_MACHINE\Software\Microsoft\VisualStudio\10.0\AD7Metrics\Engine y haga clic en **Nueva clave**. Nombre de la nueva clave `{449EC4CC-30D2-4032-9256-EE18EB41B62B}`.
+    Si la clave no existe, haga clic con el botón derecho en HKEY_LOCAL_MACHINE\Software\Microsoft\VisualStudio\10.0\AD7Metrics\Engine y haga clic en **Nueva clave**. Asigne a la nueva clave el nombre `{449EC4CC-30D2-4032-9256-EE18EB41B62B}`.
 
 5. Después de navegar a {449EC4CC-30D2-4032-9256-EE18EB41B62B }, examine la columna **Nombre** y encuentre la clave CLRVersionForDebugging.
 
-   1. Si la clave no existe, haga clic con el botón derecho en {449EC4CC-30D2-4032-9256-EE18EB41B62B} y haga clic en **Nuevo valor de cadena**. A continuación, haga clic en el nuevo valor de cadena, haga clic en **cambiar el nombre de**y el tipo `CLRVersionForDebugging`.
+   1. Si la clave no existe, haga clic con el botón derecho en {449EC4CC-30D2-4032-9256-EE18EB41B62B} y haga clic en **Nuevo valor de cadena**. A continuación, haga clic con el botón secundario en el nuevo valor de cadena, haga clic en **cambiar nombre**y escriba `CLRVersionForDebugging`.
 
 6. Haga doble clic en **CLRVersionForDebugging**.
 
@@ -62,7 +62,7 @@ En los casos excepcionales, donde aparece este error, puede establecer una clave
 
 9. Cierre el **Editor del Registro**.
 
-     Si todavía obtiene un mensaje de error cuando empieza a depurar, compruebe que ha escrito correctamente el número de versión en el Registro. Compruebe también que utiliza una versión de .NET Framework compatible con Visual Studio. El depurador es compatible con la versión actual de .NET Framework y con las versiones anteriores, pero puede no serlo con versiones futuras.
+     Si todavía obtiene un mensaje de error cuando empieza a depurar, compruebe que ha escrito correctamente el número de versión en el Registro. Compruebe también que está usando una versión de la .NET Framework compatible con Visual Studio. El depurador es compatible con la versión actual de .NET Framework y con las versiones anteriores, pero puede no serlo con versiones futuras.
 
 ## <a name="see-also"></a>Vea también
 - [Configuración y preparación de la depuración](../debugger/debugger-settings-and-preparation.md)

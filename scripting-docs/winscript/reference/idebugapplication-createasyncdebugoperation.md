@@ -1,5 +1,5 @@
 ---
-title: IDebugApplication::CreateAsyncDebugOperation | Microsoft Docs
+title: 'Idebugapplication (:: CreateAsyncDebugOperation | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,12 +17,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c60c84dbd3be9248e2bd075e65d53f7f9361d0b5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 1feb8207fb7e7a7faf4427be189c4952139ef32c
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62991011"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72575559"
 ---
 # <a name="idebugapplicationcreateasyncdebugoperation"></a>IDebugApplication::CreateAsyncDebugOperation
 Proporciona acceso asincrónico a una operación de depuración sincrónica determinada.  
@@ -38,10 +38,10 @@ HRESULT CreateAsyncDebugOperation(
   
 #### <a name="parameters"></a>Parámetros  
  `psdo`  
- [in] El objeto de la operación de depuración sincrónica.  
+ de Objeto de operación de depuración sincrónica.  
   
  `ppado`  
- [out] El objeto de la operación de depuración asincrónica.  
+ enuncia Objeto de operación de depuración asincrónica.  
   
 ## <a name="return-value"></a>Valor devuelto  
  El método devuelve un objeto `HRESULT`. Entre los valores posibles se incluyen los que se indican en la tabla siguiente, entre otros.  
@@ -51,9 +51,9 @@ HRESULT CreateAsyncDebugOperation(
 |`S_OK`|El método se realizó correctamente.|  
   
 ## <a name="remarks"></a>Comentarios  
- Este método permite que los motores de lenguaje evaluar las expresiones de forma asincrónica sin sincronizar explícitamente con el subproceso del depurador. Para obtener más información, consulte [IDebugSyncOperation (interfaz)](../../winscript/reference/idebugsyncoperation-interface.md) y [IDebugAsyncOperation (interfaz)](../../winscript/reference/idebugasyncoperation-interface.md).  
+ Este método permite a los motores de lenguaje evaluar las expresiones de forma asincrónica sin sincronizarse explícitamente con el subproceso del depurador. Para obtener más información, vea [interfaz idebugsyncoperation (](../../winscript/reference/idebugsyncoperation-interface.md) y [interfaz idebugasyncoperation (](../../winscript/reference/idebugasyncoperation-interface.md).  
   
 ## <a name="see-also"></a>Vea también  
- [IDebugApplication (interfaz)](../../winscript/reference/idebugapplication-interface.md)   
- [IDebugSyncOperation (interfaz)](../../winscript/reference/idebugsyncoperation-interface.md)   
+ @No__t_1 de la [interfaz idebugapplication (](../../winscript/reference/idebugapplication-interface.md)  
+ @No__t_1 de la [interfaz idebugsyncoperation (](../../winscript/reference/idebugsyncoperation-interface.md)  
  [IDebugAsyncOperation (Interfaz)](../../winscript/reference/idebugasyncoperation-interface.md)

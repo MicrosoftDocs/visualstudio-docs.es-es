@@ -1,5 +1,5 @@
 ---
-title: Idebugdocumenthelper | Documentos de Microsoft
+title: 'IDebugDocumentHelper:: init | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3b399f51fc042aa1ed297ab30a7bf2c9bc4befca
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 13e6379052707aa44c0fa52f4cb30db2c4c4fa99
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63000996"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72576862"
 ---
 # <a name="idebugdocumenthelperinit"></a>IDebugDocumentHelper::Init
-El `Init` método inicializa una aplicación auxiliar de documento de depuración con un nombre y atributos iniciales.  
+El método `Init` Inicializa una aplicación auxiliar de documentos de depuración con un nombre y atributos iniciales.  
   
 ## <a name="syntax"></a>Sintaxis  
   
@@ -40,16 +40,16 @@ HRESULT Init(
   
 #### <a name="parameters"></a>Parámetros  
  `pda`  
- [in] La aplicación de depuración asociada con este documento.  
+ de La aplicación de depuración asociada a este documento.  
   
  `pszShortName`  
- [in] Una cadena terminada en null que contiene el nombre corto del documento.  
+ de Una cadena terminada en null que contiene el nombre corto del documento.  
   
  `pszLongName`  
- [in] Una cadena terminada en null que contiene el nombre largo del documento.  
+ de Una cadena terminada en null que contiene el nombre largo del documento.  
   
  `docAttr`  
- [in] Especifica los atributos del documento de texto.  
+ de Especifica atributos de documento de texto.  
   
 ## <a name="return-value"></a>Valor devuelto  
  El método devuelve un objeto `HRESULT`. Entre los valores posibles se incluyen los que se indican en la tabla siguiente, entre otros.  
@@ -61,9 +61,9 @@ HRESULT Init(
 ## <a name="remarks"></a>Comentarios  
  Este método inicializa una aplicación auxiliar de documento de depuración con un nombre y atributos iniciales.  
   
- Este documento no aparece en el árbol hasta `IDebugDocumentHelper::Attach` se llama.  
+ Este documento no aparece en el árbol hasta que se llama a `IDebugDocumentHelper::Attach`.  
   
 ## <a name="see-also"></a>Vea también  
- [IDebugDocumentHelper::Attach](../../winscript/reference/idebugdocumenthelper-attach.md)   
- [IDebugDocumentHelper (interfaz)](../../winscript/reference/idebugdocumenthelper-interface.md)   
+ [IDebugDocumentHelper:: Attach](../../winscript/reference/idebugdocumenthelper-attach.md)    
+ @No__t_1 de la [interfaz IDebugDocumentHelper](../../winscript/reference/idebugdocumenthelper-interface.md)  
  [TEXT_DOC_ATTR (Constantes)](../../winscript/reference/text-doc-attr-constants.md)

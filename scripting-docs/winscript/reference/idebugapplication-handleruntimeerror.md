@@ -1,5 +1,5 @@
 ---
-title: IDebugApplication::HandleRuntimeError | Documentos de Microsoft
+title: 'Idebugapplication (:: HandleRuntimeError | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c2c9a8b15b5095ac346ba047d6668aada7647a31
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 2fd4ba2b811cd6c4e38c10a0c68c5808f2c0870a
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63412435"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72574333"
 ---
 # <a name="idebugapplicationhandleruntimeerror"></a>IDebugApplication::HandleRuntimeError
-Hace que el subproceso actual se bloquea y envía una notificación del error para el IDE del depurador.  
+Hace que el subproceso actual se bloquee y envíe una notificación del error al IDE del depurador.  
   
 ## <a name="syntax"></a>Sintaxis  
   
@@ -41,19 +41,19 @@ HRESULT HandleRuntimeError(
   
 #### <a name="parameters"></a>Parámetros  
  `pErrorDebug`  
- [in] Se produjo el error.  
+ de Error que se ha producido.  
   
  `pScriptSite`  
- [in] El sitio de la secuencia de comandos del subproceso.  
+ de El sitio de script del subproceso.  
   
  `pbra`  
- [out] Acción necesaria cuando el depurador reanuda la aplicación.  
+ enuncia Acción que se realizará cuando el depurador reanude la aplicación.  
   
  `perra`  
- [out] Acción necesaria cuando el depurador reanuda la aplicación si se produce un error.  
+ enuncia Acción que se realizará cuando el depurador reanude la aplicación si se produce un error.  
   
  `pfCallOnScriptError`  
- [out] Marca que es `TRUE` si el motor debe llamar a la `IActiveScriptSite::OnScriptError` método.  
+ enuncia Marca que es `TRUE` si el motor debe llamar al método `IActiveScriptSite::OnScriptError`.  
   
 ## <a name="return-value"></a>Valor devuelto  
  El método devuelve un objeto `HRESULT`. Entre los valores posibles se incluyen los que se indican en la tabla siguiente, entre otros.  
@@ -63,14 +63,14 @@ HRESULT HandleRuntimeError(
 |`S_OK`|El método se realizó correctamente.|  
   
 ## <a name="remarks"></a>Comentarios  
- Un motor de lenguaje llama a este método en el contexto de un subproceso que produce un error de tiempo de ejecución. Este método hace que el subproceso actual se bloquea y envía una notificación de error para enviarse a la IDE del depurador. Cuando reanuda la aplicación en el IDE del depurador, este método devuelve con la acción que se realizará.  
+ Un motor de lenguaje llama a este método en el contexto de un subproceso que produce un error en tiempo de ejecución. Este método hace que el subproceso actual se bloquee y envíe una notificación de error que se enviará al IDE del depurador. Cuando el IDE del depurador reanuda la aplicación, este método devuelve con la acción que se va a realizar.  
   
 > [!NOTE]
-> Mientras se encuentra en el error de tiempo de ejecución, el motor de lenguaje puede llamarse mediante el subproceso para realizar tareas tales como enumerar los marcos de pila o evaluar expresiones.  
+> En el error en tiempo de ejecución, el subproceso puede llamar al motor de lenguaje para realizar tareas como enumerar marcos de pila o evaluar expresiones.  
   
 ## <a name="see-also"></a>Vea también  
- [IDebugApplication (interfaz)](../../winscript/reference/idebugapplication-interface.md)   
- [IActiveScriptErrorDebug (interfaz)](../../winscript/reference/iactivescripterrordebug-interface.md)   
- [IActiveScriptSite](../../winscript/reference/iactivescriptsite.md)   
- [BREAKRESUMEACTION (enumeración)](../../winscript/reference/breakresumeaction-enumeration.md)   
+ @No__t_1 de la [interfaz idebugapplication (](../../winscript/reference/idebugapplication-interface.md)  
+ @No__t_1 de la [interfaz iactivescripterrordebug (](../../winscript/reference/iactivescripterrordebug-interface.md)  
+ @No__t_1 [IActiveScriptSite](../../winscript/reference/iactivescriptsite.md)  
+ @No__t_1 [enumeración breakresumeaction (](../../winscript/reference/breakresumeaction-enumeration.md)  
  [ERRORRESUMEACTION (Enumeración)](../../winscript/reference/errorresumeaction-enumeration.md)
