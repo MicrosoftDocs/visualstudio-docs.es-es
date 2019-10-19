@@ -1,19 +1,19 @@
 ---
-title: Las características de IntelliSense del editor de XML
+title: Características de IntelliSense del editor XML
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 2b26f214-cc3a-46bf-b260-14eb8e599182
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 312c304855a450a648b000b8306b80ade969c785
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 5a44af076e8663e525e33727a24aa93f9391f4b5
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62807992"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72603965"
 ---
 # <a name="xml-editor-intellisense-features"></a>Características de IntelliSense del editor XML
 
@@ -21,11 +21,11 @@ El Editor XML proporciona completas características IntelliSense comparables a 
 
 ## <a name="intellisense-in-an-xsd-document"></a>IntelliSense en un documento XSD
 
-Después de un esquema se asocia con el documento, obtendrá una lista desplegable de elementos esperados cada vez que escribe `"<"` o haga clic en el **mostrar una lista de miembros de objeto** botón en la barra de herramientas del editor XML.
+Una vez asociado un esquema al documento, se obtiene una lista desplegable de elementos esperados cada vez que se escribe `"<"` o se hace clic en el botón **Mostrar un objeto lista de miembros** de la barra de herramientas del editor XML.
 
-![Botón de lista de miembros de objeto para mostrar](media/display-object-member-list-xml.png)
+![Botón Mostrar lista de miembros del objeto](media/display-object-member-list-xml.png)
 
-Para obtener información acerca de cómo asociar esquemas con documentos XML, vea [validación de documentos XML](../xml-tools/xml-document-validation.md).
+Para obtener información sobre cómo asociar esquemas a documentos XML, vea [validación de documentos XML](../xml-tools/xml-document-validation.md).
 
 Si escribe SPACE desde dentro de una etiqueta de apertura, también obtendrá una lista desplegable con todos los atributos que se pueden agregar al elemento actual.
 
@@ -49,7 +49,7 @@ Después de agregar una plantilla con nombre o un atributo a un documento XSLT, 
 
 - Nombres de parámetro para una plantilla con nombre determinada.
 
-Para obtener más información, vea [Tutorial: Usar XSLT IntelliSense](../xml-tools/walkthrough-using-xslt-intellisense.md) tema.
+Para obtener más información, vea el tema [Tutorial: usar XSLT IntelliSense](../xml-tools/walkthrough-using-xslt-intellisense.md) .
 
 ## <a name="auto-completion"></a>Finalización automática
 
@@ -57,7 +57,7 @@ El Editor XML también facilita la edición de XML al rellenar automáticamente 
 
 `<book>`
 
-El Editor XML rellena la etiqueta de cierre y coloca el cursor después de la etiqueta de apertura. El siguiente es un ejemplo de esto (la "&#124;" notas de la posición del cursor):
+El Editor XML rellena la etiqueta de cierre y coloca el cursor después de la etiqueta de apertura. El siguiente es un ejemplo de esto ("&#124;" anota la posición del cursor):
 
 `<book>`&#124;`</book>`
 
@@ -79,7 +79,7 @@ De igual forma, el Editor XML también inserta la siguiente sintaxis XML de form
 
 - Finalizar una declaración DTD: `>`
 
-El editor XML también tiene la capacidad para insertar un espacio de nombres si selecciona un espacio de nombres completo del elemento o atributo de una lista de IntelliSense y el espacio de nombres de ese elemento o atributo no está aún en el ámbito de declaración.
+El editor XML también tiene la capacidad de insertar una declaración de espacio de nombres si selecciona un elemento o atributo calificado de espacio de nombres de una lista de IntelliSense y el espacio de nombres de ese elemento o atributo todavía no está en el ámbito.
 
 Por ejemplo, si selecciona el elemento `e:Book` de la lista IntelliSense en la que el prefijo está enlazado con el espacio de nombres `http://books` que no se ha declarado en el documento, el Editor XML inserta automáticamente la declaración de espacio de nombres necesaria. A continuación se muestra el texto XML resultante:
 
@@ -87,13 +87,13 @@ Por ejemplo, si selecciona el elemento `e:Book` de la lista IntelliSense en la q
 
 ## <a name="brace-matching"></a>Coincidencia de llaves
 
-El Editor XML proporciona resalte de llaves que le permite obtener información inmediata acerca de los elementos que acaba de cerrar. También puede usar el método abreviado de teclado (**Ctrl**+**]**) para saltar de una llave a la llave correspondiente.
+El Editor XML proporciona resalte de llaves que le permite obtener información inmediata acerca de los elementos que acaba de cerrar. También puede usar el método abreviado de teclado (**Ctrl** + **]** ) para saltar de una llave a la llave correspondiente.
 
 El Editor XML realiza esta acción en los siguientes elementos:
 
 - Etiquetas de apertura y cierre coincidentes.
 
-- Cualquier par de "\<" o ">" entre corchetes angulares.
+- Cualquier par de corchetes angulares "\<" o ">".
 
 - Inicio y fin de comentarios.
 
@@ -107,9 +107,9 @@ El Editor XML realiza esta acción en los siguientes elementos:
 
 ## <a name="modify-the-intellisense-options"></a>Modificar las opciones de IntelliSense
 
-Las características IntelliSense y finalización automática están habilitadas de forma predeterminada. Sin embargo, puede cambiar esto modificando su **herramientas** > **opciones** configuración.
+Las características IntelliSense y finalización automática están habilitadas de forma predeterminada. Sin embargo, puede cambiar esto modificando las **herramientas**  >  configuración de**Opciones** .
 
-El **inserción automática** sección de la **varios** página controla el comportamiento siguiente:
+La sección **inserción automática** de la página **varios** controla el comportamiento siguiente:
 
 |Name|Descripción|
 |-|-----------------|
@@ -123,10 +123,10 @@ El **inserción automática** sección de la **varios** página controla el comp
 
 2. Expanda **Editor de texto**, expanda **XML**y seleccione **varios**.
 
-3. Realice cambios en el **autoinsertar** sección y haga clic en **Aceptar**.
+3. Realice los cambios en la sección **inserción automática** y haga clic en **Aceptar**.
 
 ## <a name="see-also"></a>Vea también
 
 - [Editor XML](../xml-tools/xml-editor.md)
 - [Usar IntelliSense](../ide/using-intellisense.md)
-- [Tutorial: Uso de XSLT IntelliSense](../xml-tools/walkthrough-using-xslt-intellisense.md)
+- [Tutorial: Usar XSLT IntelliSense](../xml-tools/walkthrough-using-xslt-intellisense.md)

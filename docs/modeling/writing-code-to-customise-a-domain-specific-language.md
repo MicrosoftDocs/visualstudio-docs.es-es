@@ -1,44 +1,44 @@
 ---
-title: Personalizar un lenguaje específico de dominio
+title: Personalización de un lenguaje específico de dominio
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - Domain-Specific Language, programming
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2e62fa58d3f0678c8784cb8584a95d8475238ce0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 4c8a65b19baeb3a03c8ada039bce354140aecbf6
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62945445"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72666880"
 ---
 # <a name="write-code-to-customize-a-domain-specific-language"></a>Escribir código para personalizar un lenguaje específico de dominio
 
-En esta sección se muestra cómo usar código personalizado para acceder, modificar o crear un modelo en un lenguaje específico de dominio.
+En esta sección se muestra cómo usar código personalizado para obtener acceso, modificar o crear un modelo en un lenguaje específico de dominio.
 
-Hay varios contextos en los que puede escribir código que funciona con un DSL:
+Hay varios contextos en los que se puede escribir código que funcione con un DSL:
 
-- **Comandos personalizados.** Puede crear un comando que los usuarios pueden invocar con el botón secundario en el diagrama, y que puede modificar el modelo. Para obtener más información, vea [Cómo: Agregar un comando al menú contextual](../modeling/how-to-add-a-command-to-the-shortcut-menu.md).
+- **Comandos personalizados.** Puede crear un comando que los usuarios pueden invocar haciendo clic con el botón derecho en el diagrama y que puede modificar el modelo. Para obtener más información, vea [Cómo: agregar un comando al menú contextual](../modeling/how-to-add-a-command-to-the-shortcut-menu.md).
 
-- **Validation (Validación).** Puede escribir código que comprueba que el modelo está en un estado correcto. Para obtener más información, consulte [validación en los lenguajes específicos de dominio](../modeling/validation-in-a-domain-specific-language.md).
+- **Validation (Validación).** Puede escribir código que compruebe que el modelo se encuentra en un estado correcto. Para obtener más información, vea [validación en un lenguaje específico de dominio](../modeling/validation-in-a-domain-specific-language.md).
 
-- **Invalidar el comportamiento predeterminado.** Puede modificar muchos aspectos del código que se genera a partir de DslDefinition.dsl. Para obtener más información, consulte [invalidar y ampliar las clases generadas](../modeling/overriding-and-extending-the-generated-classes.md).
+- **Invalidar el comportamiento predeterminado.** Puede modificar muchos aspectos del código que se genera a partir de DslDefinition. DSL. Para obtener más información, vea [invalidación y extensión de las clases generadas](../modeling/overriding-and-extending-the-generated-classes.md).
 
-- **Transformación de texto.** Puede escribir plantillas de texto que contienen código que tiene acceso a un modelo y genera un archivo de texto, por ejemplo, para generar código de programa. Para obtener más información, consulte [generar código desde un lenguaje específico de dominio](../modeling/generating-code-from-a-domain-specific-language.md).
+- **Transformación de texto.** Puede escribir plantillas de texto que contengan código que tenga acceso a un modelo y genere un archivo de texto, por ejemplo, para generar código de programa. Para obtener más información, vea [generar código a partir de un lenguaje específico de dominio](../modeling/generating-code-from-a-domain-specific-language.md).
 
-- **Otras extensiones de Visual Studio.** Puede escribir extensiones VSIX independientes que leer y modificar los modelos. Para obtener más información, vea [Cómo: Abrir un modelo desde un archivo en el código del programa](../modeling/how-to-open-a-model-from-file-in-program-code.md)
+- **Otras extensiones de Visual Studio.** Puede escribir extensiones VSIX independientes que lean y modifiquen modelos. Para obtener más información, consulte [Cómo: abrir un modelo desde un archivo en el código del programa.](../modeling/how-to-open-a-model-from-file-in-program-code.md)
 
-Las instancias de las clases que defina en DslDefinition.dsl se mantienen en una estructura de datos denominada el *Store In-Memory* (IMS) o *Store*. Las clases que defina en un DSL siempre toman un Store como argumento al constructor. Por ejemplo, si su DSL define una clase llamada de ejemplo:
+Las instancias de las clases que se definen en DslDefinition. DSL se mantienen en una estructura de datos denominada *almacén en memoria* (IMS) o *almacén*. Las clases que se definen en un DSL siempre toman un almacén como argumento para el constructor. Por ejemplo, si el DSL define una clase denominada example:
 
 `Example element = new Example (theStore);`
 
-mantener los objetos en el Store (en lugar de objetos como normales) ofrece varias ventajas.
+mantener los objetos en el almacén (en lugar de los objetos normales) proporciona varias ventajas.
 
-- **Las transacciones**. Puede agrupar una serie de cambios relacionados en una transacción:
+- **Transacciones**. Puede agrupar una serie de cambios relacionados en una transacción:
 
      `using (Transaction t = store.TransactionManager.BeginTransaction("updates"))`
 
@@ -50,27 +50,27 @@ mantener los objetos en el Store (en lugar de objetos como normales) ofrece vari
 
      `}`
 
-     Si se produce una excepción durante los cambios, por lo que no se realiza el Commit() final, se restablecerá el Store a su estado anterior. Esto le ayudará a asegurarse de que los errores no dejar el modelo en un estado incoherente. Para obtener más información, consulte [navegar y actualizar un modelo en el código de programa](../modeling/navigating-and-updating-a-model-in-program-code.md).
+     Si se produce una excepción durante los cambios, para que no se realice la confirmación final (), el almacén se restablecerá a su estado anterior. Esto le ayuda a asegurarse de que los errores no salen del modelo en un estado incoherente. Para obtener más información, vea [navegar y actualizar un modelo en el código del programa](../modeling/navigating-and-updating-a-model-in-program-code.md).
 
-- **Las relaciones binarias**. Si define una relación entre dos clases, las instancias en ambos extremos tienen una propiedad que se navega hacia el otro extremo. Los dos extremos siempre están sincronizados. Por ejemplo, si define una relación de parenthood con roles denominados padres e hijos, podría escribir:
+- **Relaciones binarias**. Si define una relación entre dos clases, las instancias en ambos extremos tienen una propiedad que navega hasta el otro extremo. Los dos extremos siempre están sincronizados. Por ejemplo, si define una relación de Parenthood con roles denominados elementos primarios y secundarios, podría escribir:
 
      `John.Children.Add(Mary)`
 
-     Ahora las dos expresiones siguientes son verdaderas:
+     Las dos expresiones siguientes ahora son verdaderas:
 
      `John.Children.Contains(Mary)`
 
      `Mary.Parents.Contains(John)`
 
-     También podría lograr el mismo efecto escribiendo:
+     También puede lograr el mismo efecto si escribe:
 
      `Mary.Parents.Add(John)`
 
-     Para obtener más información, consulte [navegar y actualizar un modelo en el código de programa](../modeling/navigating-and-updating-a-model-in-program-code.md).
+     Para obtener más información, vea [navegar y actualizar un modelo en el código del programa](../modeling/navigating-and-updating-a-model-in-program-code.md).
 
-- **Reglas y eventos**. Puede definir reglas que se activan cada vez que se realizan cambios especificados. Por ejemplo, las reglas se usan para mantener las formas en el diagrama al día con los elementos del modelo que presenta. Para obtener más información, consulte [responde a y propagar los cambios](../modeling/responding-to-and-propagating-changes.md).
+- **Reglas y eventos**. Puede definir reglas que se activen cuando se realicen los cambios especificados. Las reglas se usan, por ejemplo, para mantener las formas del diagrama actualizadas con los elementos del modelo que presentan. Para obtener más información, consulte [responder a los cambios y propagarlos](../modeling/responding-to-and-propagating-changes.md).
 
-- **Serialización**. El Store proporciona una manera estándar para serializar los objetos que contiene a un archivo. Puede personalizar las reglas para serializar y deserializar. Para obtener más información, consulte [personalizar el almacenamiento de archivos y serialización XML](../modeling/customizing-file-storage-and-xml-serialization.md).
+- **Serialización**. El almacén proporciona un método estándar para serializar los objetos que contiene en un archivo. Puede personalizar las reglas para la serialización y deserialización. Para obtener más información, vea [personalizar File Storage y serialización XML](../modeling/customizing-file-storage-and-xml-serialization.md).
 
 ## <a name="see-also"></a>Vea también
 

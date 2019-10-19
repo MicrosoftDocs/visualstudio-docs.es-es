@@ -1,28 +1,28 @@
 ---
-title: Procedimiento Suprimir advertencias del compilador | Documentos de Microsoft
+title: 'Cómo: Suprimir advertencias del compilador | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
 ms.topic: conceptual
 ms.assetid: 31827b17-f933-413d-b28a-b19f903b64ca
 caps.latest.revision: 7
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 994b29fb4592d55a04389896ee9db8848dceda67
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: aeb404c479edec5dec89f28e80584d435f5c370a
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65695389"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72670643"
 ---
-# <a name="how-to-suppress-compiler-warnings"></a>Procedimiento Suprimir advertencias del compilador
+# <a name="how-to-suppress-compiler-warnings"></a>Cómo: Suprimir advertencias del compilador
 
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Para no saturar un registro de compilación, especifique las clases de advertencias del compilador que no desea incluir. Por ejemplo, puede usar esta técnica de revisar parte pero no toda la información que se genera automáticamente cuando se establece el nivel de detalle del registro de compilación en Normal, Detallado o Diagnóstico. Para obtener más información sobre el nivel de detalle, vea [Cómo: Ver, guardar y configurar archivos de registro de compilación](../ide/how-to-view-save-and-configure-build-log-files.md).
 
-### <a name="to-suppress-specific-warnings-for-visual-c-or-f"></a>Para suprimir advertencias específicas para Visual C# o F\#
+### <a name="to-suppress-specific-warnings-for-visual-c-or-f"></a>Para suprimir advertencias específicas para C# visual o F \#
 
 1. En el **Explorador de soluciones**, elija el proyecto en el que quiere suprimir las advertencias.
 
@@ -58,7 +58,7 @@ Edite el archivo .vbproj del proyecto para ocultar advertencias del compilador e
 
 2. En la barra de menús, elija **Proyecto**, **Descargar proyecto**.
 
-3. En el **Explorador de soluciones**, abra el menú contextual del proyecto y, después, **Editar**_NombreDelProyecto_**.vbproj**.
+3. En el **Explorador de soluciones**, abra el menú contextual del proyecto y, después, **Editar**_NombreDelProyecto_ **.vbproj**.
 
     El archivo de proyecto se abre en el editor de código.
 
@@ -110,6 +110,6 @@ Edite el archivo .vbproj del proyecto para ocultar advertencias del compilador e
 
 ## <a name="see-also"></a>Vea también
 
-- [Tutorial: Compilación de una aplicación](../ide/walkthrough-building-an-application.md)
+- [Tutorial: Compilar una aplicación](../ide/walkthrough-building-an-application.md)
 - [Cómo: Ver, guardar y configurar archivos de registro de compilación](../ide/how-to-view-save-and-configure-build-log-files.md)
 - [Compilar y generar en Visual Studio](../ide/compiling-and-building-in-visual-studio.md)

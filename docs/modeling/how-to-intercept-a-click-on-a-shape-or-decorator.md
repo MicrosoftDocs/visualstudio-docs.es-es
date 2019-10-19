@@ -4,17 +4,17 @@ ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - Domain-Specific Language, programming domain models
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3e3295476b9a9d35768963baa05829a560fc9291
-ms.sourcegitcommit: e82baa50bf5a65858c410882c2e86a552c2c1921
+ms.openlocfilehash: f372d42869bf533b598f3e2aba9e60e34e47144d
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72381491"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72605291"
 ---
 # <a name="how-to-intercept-a-click-on-a-shape-or-decorator"></a>Cómo: Interceptar un clic en una forma o decorador
 Los procedimientos siguientes muestran cómo interceptar un clic en una forma o un decorador de icono. Puede interceptar clics, hacer doble clic, arrastrar y otros gestos y hacer que el elemento responda.

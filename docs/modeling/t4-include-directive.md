@@ -2,21 +2,21 @@
 title: Directiva Include T4
 ms.date: 11/04/2016
 ms.topic: reference
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1a3ab6aa4cd116c779cac4367d1eeb9a187edaeb
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 636260609aa535e3bc45efe0224a517fd782c040
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62964097"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72606391"
 ---
 # <a name="t4-include-directive"></a>Directiva Include T4
 
-En una plantilla de texto en Visual Studio, puede incluir texto de otro archivo con un `<#@include#>` directiva. Puede colocar directivas `include` en cualquier parte de una plantilla de texto antes del primer bloque de características de clase `<#+ ... #>`. Los archivos incluidos también pueden contener directivas `include`, así como otras directivas. Esto le permite compartir código de plantilla y texto reutilizable entre plantillas.
+En una plantilla de texto de Visual Studio, puede incluir texto de otro archivo mediante una directiva de `<#@include#>`. Puede colocar directivas `include` en cualquier parte de una plantilla de texto antes del primer bloque de características de clase `<#+ ... #>`. Los archivos incluidos también pueden contener directivas `include`, así como otras directivas. Esto le permite compartir código de plantilla y texto reutilizable entre plantillas.
 
 ## <a name="using-include-directives"></a>Usar directivas include
 
@@ -26,7 +26,7 @@ En una plantilla de texto en Visual Studio, puede incluir texto de otro archivo 
 
 - `filePath` pueden se absoluto o relativo al archivo de plantilla actual.
 
-   Además, las extensiones específicas de Visual Studio pueden especificar sus propios directorios para buscar archivos de inclusión. Por ejemplo, cuando se han instalado el SDK visualización y modelado (herramientas DSL), la siguiente carpeta se agrega a la lista de inclusiones: `Program Files\Microsoft Visual Studio 10.0\Common7\IDE\Extensions\Microsoft\DSL SDK\DSL Designer\11.0\TextTemplates`.
+   Además, las extensiones de Visual Studio específicas pueden especificar sus propios directorios para buscar archivos de inclusión. Por ejemplo, si ha instalado el SDK de visualización y modelado (herramientas de DSL), se agrega la siguiente carpeta a la lista de inclusión: `Program Files\Microsoft Visual Studio 10.0\Common7\IDE\Extensions\Microsoft\DSL SDK\DSL Designer\11.0\TextTemplates`.
 
    Estas carpetas de inclusión adicionales podrían depender de la extensión de archivo del archivo para incluir. Por ejemplo, la carpeta de inclusión de las Herramientas ADSL solo es accesible para la inclusión de archivos que tienen la extensión de archivo `.tt`
 
@@ -38,15 +38,15 @@ En una plantilla de texto en Visual Studio, puede incluir texto de otro archivo 
 
 - El nombre de un archivo incluido no tiene que utilizar la extensión `".tt"`.
 
-   Puede que desee utilizar otra extensión, como `".t4"`, para los archivos incluidos. Esto es porque, cuando se agrega un `.tt` archivo a un proyecto, Visual Studio establece automáticamente su **Custom Tool** propiedad `TextTemplatingFileGenerator`. Normalmente no desea que los archivos incluidos se transformen individualmente.
+   Puede que desee utilizar otra extensión, como `".t4"`, para los archivos incluidos. Esto se debe a que, cuando se agrega un archivo de `.tt` a un proyecto, Visual Studio establece automáticamente la propiedad de la **herramienta personalizada** en `TextTemplatingFileGenerator`. Normalmente no desea que los archivos incluidos se transformen individualmente.
 
    Por otra parte, debe tener en cuenta que en algunos casos, la extensión de archivo afecta a las carpetas adicionales que se buscarán para archivos de inclusión. Esto podría ser importante al tener un archivo incluido que incluye otros archivos.
 
 - El contenido incluido se procesa casi como si formase parte de la plantilla de texto que lo incluye. Sin embargo, puede incluir un archivo que contenga un bloque de características de clase `<#+...#>` aunque la directiva `include` vaya seguida de texto normal y bloques de control estándar.
 
-- Use `once="true"` para asegurarse de que se incluye una plantilla de una sola vez, incluso si se invoca desde otro más de un archivo de inclusión.
+- Use `once="true"` para asegurarse de que una plantilla se incluye una sola vez, aunque se invoque desde más de un archivo de inclusión.
 
-   Este facilita la característica hará lo simplifica la compilación de una biblioteca de fragmentos de código T4 reutilizables que se puede incluir en sin preocuparse de que algún otro fragmento de código ha ya incluido.  Por ejemplo, suponga que tiene una biblioteca de fragmentos muy específicos que se encargan de procesamiento de plantillas y generación de C#.  A su vez, se usan algunas utilidades más específica de la tarea como la generación de excepciones, que, a continuación, puede usar desde cualquier plantilla más específica de la aplicación. Si dibuja el gráfico de dependencias, verá que algunos fragmentos de código se incluyeron varias veces. Sin embargo, el parámetro `once` evita las inclusiones siguientes.
+   Esta característica facilita la creación de una biblioteca de fragmentos de código T4 reutilizables que se pueden incluir en, sin preocuparse de que algún otro fragmento de código ya los haya incluido.  Por ejemplo, supongamos que tiene una biblioteca de fragmentos de código muy específicos que se ocupan de la C# generación y el procesamiento de plantillas.  A su vez, se usan en algunas otras utilidades específicas de la tarea, como la generación de excepciones, que puede usar a partir de cualquier plantilla más específica de la aplicación. Si dibuja el gráfico de dependencias, verá que algunos fragmentos de código se incluyeron varias veces. Sin embargo, el parámetro `once` evita las inclusiones siguientes.
 
   **MyTextTemplate.tt:**
 
@@ -61,7 +61,7 @@ Output message 5 (from top template).
 #>
 ```
 
- **TextFile1.t4:**
+ **TextFile1. T4:**
 
 ```
    Output Message 2 (from included file).
@@ -77,7 +77,7 @@ void GenerateMessage(int n)
 #>
 ```
 
- **TextFile2.t4:**
+ **En textfile2. T4:**
 
 ```
         Output Message 3 (from included file 2).
@@ -91,7 +91,7 @@ void AnotherGenerateMessage(int n)
 #>
 ```
 
- **El archivo generado resultante, MyTextTemplate.txt:**
+ **El archivo generado resultante, MyTextTemplate. txt:**
 
 ```
 Output message 1 (from top template).
@@ -105,8 +105,8 @@ Output message 5 (from top template).
        Output Message 7 (from AnotherGenerateMessage method).
 ```
 
-## <a name="msbuild"></a> Uso de las propiedades del proyecto de MSBuild y Visual Studio
- Aunque puede usar macros de Visual Studio como $ (SolutionDir) en una directiva de inclusión, no funcionan en MSBuild. Si desea transformar plantillas del equipo de compilación, tiene que utilizar las propiedades del proyecto.
+## <a name="msbuild"></a>Usar las propiedades del proyecto en MSBuild y Visual Studio
+ Aunque puede usar macros de Visual Studio como $ (SolutionDir) en una directiva Include, no funcionan en MSBuild. Si desea transformar plantillas del equipo de compilación, tiene que utilizar las propiedades del proyecto.
 
  Modifique el archivo .csproj o .vbproj para definir una propiedad de proyecto. En este ejemplo se define una propiedad denominada `myIncludeFolder`:
 

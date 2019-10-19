@@ -4,17 +4,17 @@ ms.date: 03/11/2019
 ms.topic: conceptual
 helpviewer_keywords:
 - analyzers, faq
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 12e6681490c6c933369d3fef064ec88f240e3a99
-ms.sourcegitcommit: b23d73c86ec7720c4cd9a58050860bc559623a3d
+ms.openlocfilehash: fdc30d0299e83423474c673b9d32e019885c2d52
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/09/2019
-ms.locfileid: "72172773"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72603878"
 ---
 # <a name="code-analysis-faq"></a>Preguntas más frecuentes sobre análisis de código
 
@@ -22,15 +22,15 @@ Esta página contiene respuestas a algunas preguntas frecuentes sobre el anális
 
 ## <a name="code-analysis-versus-editorconfig"></a>Análisis de código frente a EditorConfig
 
-**P**: ¿Debo usar el análisis de código o EditorConfig para comprobar el estilo de código?
+**P**: ¿debo usar el análisis de código o EditorConfig para comprobar el estilo de código?
 
-**R**: Los archivos de análisis de código y EditorConfig funcionan a la mano. Al definir estilos de código [en un archivo EditorConfig](../ide/editorconfig-code-style-settings-reference.md) o en la página de [Opciones editor de texto](../ide/code-styles-and-code-cleanup.md) , en realidad está configurando los analizadores de código integrados en Visual Studio. Los archivos EditorConfig se pueden usar para habilitar o deshabilitar las reglas del analizador y también para configurar algunos paquetes del analizador de NuGet, como los [analizadores de FxCop](configure-fxcop-analyzers.md).
+**R: el**análisis de código y los archivos EditorConfig funcionan en mano. Al definir estilos de código [en un archivo EditorConfig](../ide/editorconfig-code-style-settings-reference.md) o en la página de [Opciones editor de texto](../ide/code-styles-and-code-cleanup.md) , en realidad está configurando los analizadores de código integrados en Visual Studio. Los archivos EditorConfig se pueden usar para habilitar o deshabilitar las reglas del analizador y también para configurar algunos paquetes del analizador de NuGet, como los [analizadores de FxCop](configure-fxcop-analyzers.md).
 
 ## <a name="editorconfig-versus-rule-sets"></a>EditorConfig frente a conjuntos de reglas
 
-**P**: ¿Debo configurar mis analizadores mediante un conjunto de reglas o un archivo EditorConfig?
+**P**: ¿debo configurar mis analizadores mediante un conjunto de reglas o un archivo EditorConfig?
 
-**R**: Los conjuntos de reglas y los archivos EditorConfig pueden coexistir y se pueden usar para configurar los analizadores. Tanto los archivos EditorConfig como los conjuntos de reglas permiten habilitar y deshabilitar reglas y establecer su gravedad.
+**R**: los conjuntos de reglas y los archivos EditorConfig pueden coexistir y se pueden usar para configurar los analizadores. Tanto los archivos EditorConfig como los conjuntos de reglas permiten habilitar y deshabilitar reglas y establecer su gravedad.
 
 Sin embargo, los archivos EditorConfig ofrecen maneras adicionales de configurar reglas también:
 
@@ -45,29 +45,29 @@ Además de los conjuntos de reglas y los archivos EditorConfig, algunos analizad
 
 ## <a name="code-analysis-in-ci-builds"></a>Análisis de código en compilaciones de CI
 
-**P**: ¿Funciona el análisis de código basado en .NET Compiler Platform en compilaciones de integración continua (CI)?
+**P**: ¿funciona el análisis de código basado en .net Compiler Platform en compilaciones de integración continua (CI)?
 
-**R**: Sí. En el caso de los analizadores que se instalan desde un paquete NuGet, esas reglas se [aplican en el momento](roslyn-analyzers-overview.md#build-errors)de la compilación, incluso durante una compilación de CI. Los analizadores utilizados en las compilaciones de elementos de configuración respetan la configuración de reglas de ambos conjuntos de reglas y archivos EditorConfig. Actualmente, los analizadores de código que están integrados en Visual Studio no están disponibles como un paquete NuGet, por lo que estas reglas no se pueden aplicar en una compilación de CI.
+**R**: sí. En el caso de los analizadores que se instalan desde un paquete NuGet, esas reglas se [aplican en el momento](roslyn-analyzers-overview.md#build-errors)de la compilación, incluso durante una compilación de CI. Los analizadores utilizados en las compilaciones de elementos de configuración respetan la configuración de reglas de ambos conjuntos de reglas y archivos EditorConfig. Actualmente, los analizadores de código que están integrados en Visual Studio no están disponibles como un paquete NuGet, por lo que estas reglas no se pueden aplicar en una compilación de CI.
 
 ## <a name="ide-analyzers-versus-stylecop"></a>Analizadores de IDE frente a StyleCop
 
 **P**: ¿Cuál es la diferencia entre los analizadores de código del IDE de Visual Studio y los analizadores de StyleCop?
 
-**R**: El IDE de Visual Studio incluye analizadores integrados que buscan problemas de estilo de código y calidad. Estas reglas le ayudan a usar las nuevas características del lenguaje a medida que se introducen y mejoran el mantenimiento del código. Los analizadores de IDE se actualizan continuamente con cada versión de Visual Studio.
+**R**: el IDE de Visual Studio incluye analizadores integrados que buscan problemas de estilo de código y calidad. Estas reglas le ayudan a usar las nuevas características del lenguaje a medida que se introducen y mejoran el mantenimiento del código. Los analizadores de IDE se actualizan continuamente con cada versión de Visual Studio.
 
 Los [analizadores de StyleCop](https://github.com/DotNetAnalyzers/StyleCopAnalyzers) son analizadores de terceros instalados como un paquete NuGet que comprueban la coherencia de estilo en el código. En general, las reglas de StyleCop permiten establecer preferencias personales para un código base sin recomendar un estilo sobre otro.
 
 ## <a name="code-analyzers-versus-legacy-analysis"></a>Analizadores de código frente al análisis heredado
 
-**P**: ¿Cuál es la diferencia entre el análisis heredado y el análisis de código basado en .NET Compiler Platform?
+**P**: ¿Cuál es la diferencia entre el análisis heredado y el análisis de código basado en .net Compiler Platform?
 
 **R**: el análisis de código basado en .net Compiler Platform analiza el código fuente en tiempo real y durante la compilación, mientras que el análisis heredado analiza los archivos binarios una vez completada la compilación. Para obtener más información, consulte preguntas más frecuentes sobre [el análisis basado en .net Compiler Platform frente al análisis heredado](roslyn-analyzers-overview.md#source-code-analysis-versus-legacy-analysis) y los [analizadores de FxCop](fxcop-analyzers-faq.md).
 
 ## <a name="treat-warnings-as-errors"></a>Tratar advertencias como errores
 
-**P**: Mi proyecto utiliza la opción de compilación para tratar las advertencias como errores. Después de migrar del análisis heredado al análisis de código fuente, todas las advertencias de análisis de código aparecen ahora como errores. ¿Cómo puedo evitarlo?
+**P**: mi proyecto usa la opción de compilación para tratar las advertencias como errores. Después de migrar del análisis heredado al análisis de código fuente, todas las advertencias de análisis de código aparecen ahora como errores. ¿Cómo puedo evitarlo?
 
-**R**: Para evitar que las advertencias de análisis de código se traten como errores, siga estos pasos:
+**R**: para evitar que las advertencias de análisis de código se traten como errores, siga estos pasos:
 
   1. Cree un archivo. props con el siguiente contenido:
 

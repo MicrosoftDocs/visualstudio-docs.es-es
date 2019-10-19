@@ -1,22 +1,22 @@
 ---
-title: Procedimiento Activación y desactivación de la pluralización (Object Relational Designer)
+title: Procedimiento para activar y desactivar la pluralización (O-R Designer)
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 9b693bc3-303a-40a9-97ee-9cef5ca3ae81
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 769d1760692cad6a6b813ece16d69f4abd3d26b1
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 578a6333d1206553db50ce81f2f499da0481456d
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63402782"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72648341"
 ---
-# <a name="how-to-turn-pluralization-on-and-off-or-designer"></a>Procedimiento Activación y desactivación de la pluralización (Object Relational Designer)
-De forma predeterminada, al arrastrar objetos de base de datos con nombres que terminan en s o es desde **Explorador de servidores** o **Database Explorer** hasta la [de LINQ to SQL tools en Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md), el nombres de las clases de entidad generadas cambian de plural a singular. Este cambio se produce para representar con mayor precisión la asignación de la clase de entidad con instancias a un solo registro de datos. Por ejemplo, agregando un `Customers` la tabla a la **Object Relational Designer** da como resultado una clase de entidad denominada `Customer` porque la clase contendrá datos para un solo cliente.
+# <a name="how-to-turn-pluralization-on-and-off-or-designer"></a>Procedimiento para activar y desactivar la pluralización (Object Relational Designer)
+De forma predeterminada, al arrastrar objetos de base de datos que tienen nombres que terminan en s o s desde **Explorador de servidores** o **Explorador de bases de datos** en las [herramientas de LINQ to SQL de Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md), los nombres de las clases de entidad generadas cambian de plural a particular. Este cambio se produce para representar con mayor precisión la asignación de la clase de entidad con instancias a un solo registro de datos. Por ejemplo, al agregar una tabla `Customers` a **Object Relational Designer** , se obtiene una clase de entidad denominada `Customer` porque la clase almacenará los datos de un solo cliente.
 
 > [!NOTE]
 > La pluralización está activada de forma predeterminada solamente en la versión en inglés de Visual Studio.
@@ -34,9 +34,9 @@ De forma predeterminada, al arrastrar objetos de base de datos con nombres que t
 
 3. Haga clic en **Object Relational Designer**.
 
-4. Establecer **Pluralización de nombres** a **habilitado** = **False** para establecer el **Object Relational Designer** para que no cambia los nombres de clase .
+4. Establezca la **pluralización de nombres** en **habilitado**  = **false** para establecer el Object Relational **Designer** de modo que no cambie los nombres de clase.
 
-5. Establecer **Pluralización de nombres** a **habilitado** = **True** para aplicar las reglas de pluralización a los nombres de clase de los objetos agregados a la **Relational Diseñador**.
+5. Establezca la **pluralización de nombres** en **habilitado**  = **true** para aplicar las reglas de pluralización a los nombres de clase de los objetos agregados a Object Relational **Designer**.
 
 ## <a name="see-also"></a>Vea también
 

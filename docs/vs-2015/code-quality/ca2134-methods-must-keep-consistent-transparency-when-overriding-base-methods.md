@@ -1,5 +1,5 @@
 ---
-title: 'CA2134: Los métodos deben mantener una transparencia coherente cuando reemplazan métodos base | Microsoft Docs'
+title: 'CA2134: los métodos deben mantener una transparencia coherente al invalidar los métodos base | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -8,17 +8,17 @@ f1_keywords:
 - CA2134
 ms.assetid: 3b17e487-0326-442e-90e1-dc0ba9cdd3f2
 caps.latest.revision: 11
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 2ccfe43fc110622c70802d2108b6ba5ff7ecb1b3
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 96910ffc53e6c48f930232c83d87570f1bc71e00
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65700373"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72608920"
 ---
-# <a name="ca2134-methods-must-keep-consistent-transparency-when-overriding-base-methods"></a>CA2134: Los métodos deben mantener una transparencia coherente al invalidar métodos base
+# <a name="ca2134-methods-must-keep-consistent-transparency-when-overriding-base-methods"></a>CA2134: Los métodos deben mantener una transparencia coherente cuando reemplazan métodos base
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
@@ -34,15 +34,15 @@ ms.locfileid: "65700373"
  Se aplica la regla al invalidar un método virtual o implementar una interfaz.
 
 ## <a name="rule-description"></a>Descripción de la regla
- Esta regla se desencadena en los intentos de cambiar la accesibilidad de seguridad de un método más arriba la cadena de herencia. Por ejemplo, si un método virtual en una clase base es transparente o crítico para la seguridad, la clase derivada debe invalidarlo con un método transparente o crítico para la seguridad. Por el contrario, si el virtual es crítico para la seguridad, la clase derivada debe reemplazar con un método crítico de seguridad. Se aplica la misma regla para implementar los métodos de interfaz.
+ Esta regla se desencadena en los intentos de cambiar la accesibilidad de seguridad de un método más allá de la cadena de herencia. Por ejemplo, si un método virtual de una clase base es transparente o crítico para la seguridad, la clase derivada debe reemplazarlo con un método transparente o crítico para la seguridad. Por el contrario, si el virtual es crítico para la seguridad, la clase derivada debe reemplazarlo por un método crítico para la seguridad. La misma regla se aplica a la implementación de métodos de interfaz.
 
- Las reglas de transparencia se aplican cuando el código está compilado en lugar de en tiempo de ejecución, de forma JIT para que el cálculo de transparencia no tiene información de tipo dinámico. Por lo tanto, el resultado del cálculo de transparencia debe poder determinar únicamente a partir de los tipos estáticos que se va a la compilación JIT, independientemente del tipo dinámico.
+ Las reglas de transparencia se aplican cuando se compila el código JIT en lugar de hacerlo en tiempo de ejecución, de modo que el cálculo de transparencia no tiene información de tipo dinámico. Por consiguiente, el resultado del cálculo de transparencia debe poder determinarse únicamente a partir de los tipos estáticos que se van a compilar con JIT, independientemente del tipo dinámico.
 
 ## <a name="how-to-fix-violations"></a>Cómo corregir infracciones
- Para corregir una infracción de esta regla, cambie la transparencia del método que se reemplace un método virtual o implementar una interfaz para que coincida con la transparencia de la memoria virtual o el método de interfaz.
+ Para corregir una infracción de esta regla, cambie la transparencia del método que invalide un método virtual o implemente una interfaz para que coincida con la transparencia del método virtual o de la interfaz.
 
 ## <a name="when-to-suppress-warnings"></a>Cuándo suprimir advertencias
- No suprima las advertencias de esta regla. Las infracciones de esta regla dará como resultado un tiempo de ejecución <xref:System.TypeLoadException> para ensamblados que utilizan la transparencia de nivel 2.
+ No suprima las advertencias de esta regla. Las infracciones de esta regla producirán un <xref:System.TypeLoadException> en tiempo de ejecución para los ensamblados que usan la transparencia de nivel 2.
 
 ## <a name="examples"></a>Ejemplos
 

@@ -6,20 +6,20 @@ dev_langs:
 - VB
 - CSharp
 ms.assetid: 63bc6328-e0df-4655-9ce3-5ff74dbf69a4
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 157309d49fd46c4ecdd92236188a6739a3e9c2ad
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 7ab33c2e77de183b5c916fbcfe60843c47c4f83f
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68925402"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72648056"
 ---
-# <a name="walkthrough-create-linq-to-sql-classes-by-using-single-table-inheritance-or-designer"></a>Tutorial: Crear LINQ to SQL clases mediante la herencia de tabla única (Object Relational Designer)
-Las [herramientas de LINQ to SQL de Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md) admiten la herencia de tabla única, ya que normalmente se implementa en sistemas relacionales. En este tutorial se amplían los pasos genéricos que [se proporcionan en la Configure la herencia mediante el tema de Object](../data-tools/how-to-configure-inheritance-by-using-the-o-r-designer.md) Relational Designer y proporcione algunos datos reales para mostrar el uso de [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)]la herencia en el.
+# <a name="walkthrough-create-linq-to-sql-classes-by-using-single-table-inheritance-or-designer"></a>Tutorial: crear clases LINQ to SQL con la herencia de tabla única (Object Relational Designer)
+Las [herramientas de LINQ to SQL de Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md) admiten la herencia de tabla única, ya que normalmente se implementa en sistemas relacionales. En este tutorial se amplían los pasos genéricos que se proporcionan en el tema [How to: configure inheritance by Using the o/R Designer](../data-tools/how-to-configure-inheritance-by-using-the-o-r-designer.md) y se proporcionan algunos datos reales para mostrar el uso de la herencia en el [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)].
 
 Durante este tutorial, realizará las siguientes tareas:
 
@@ -38,7 +38,7 @@ Durante este tutorial, realizará las siguientes tareas:
 - Mostrar los datos en un Windows Form
 
 ## <a name="create-a-table-to-inherit-from"></a>Crear una tabla de la que se va a heredar
-Para ver cómo funciona la herencia, cree una tabla `Person` pequeña, úsela como clase base y, a continuación, cree un `Employee` objeto que herede de ella.
+Para ver cómo funciona la herencia, cree una pequeña `Person` tabla, úsela como clase base y, a continuación, cree un objeto `Employee` que herede de él.
 
 ### <a name="to-create-a-base-table-to-demonstrate-inheritance"></a>Para crear una tabla base con el fin de mostrar la herencia
 
@@ -52,7 +52,7 @@ Para ver cómo funciona la herencia, cree una tabla `Person` pequeña, úsela co
     |Nombre de columna|Tipo de datos|Permitir valores nulos|
     |-----------------|---------------|-----------------|
     |**ID**|**int**|**False**|
-    |**Type**|**int**|**True**|
+    |**ype**|**int**|**True**|
     |**FirstName**|**nvarchar(200)**|**False**|
     |**LastName**|**nvarchar(200)**|**False**|
     |**Manager**|**int**|**True**|
@@ -72,7 +72,7 @@ Para poder comprobar que la herencia está correctamente configurada, la tabla n
 
     ||||||
     |-|-|-|-|-|
-    |**ID**|**Type**|**FirstName**|**LastName**|**Manager**|
+    |**ID**|**ype**|**FirstName**|**LastName**|**Manager**|
     |**1**|**1**|**Anne**|**Wallace**|**NULL**|
     |**2**|**1**|**Carlos**|**Grilo**|**NULL**|
     |**3**|**1**|**Yael**|**Peled**|**NULL**|
@@ -91,7 +91,7 @@ Ahora que ha creado la tabla, cree un nuevo proyecto para mostrar la configuraci
 
 ### <a name="to-create-the-new-windows-forms-application"></a>Para crear la nueva aplicación Windows Forms
 
-1. En Visual Studio, en el menú **archivo** , seleccione **nuevo** > **proyecto**.
+1. En Visual Studio, en el menú **archivo** , seleccione **nuevo** **proyecto**de  > .
 
 2. Expanda **Visual C#**  o **Visual Basic** en el panel izquierdo y, a continuación, seleccione **escritorio de Windows**.
 
@@ -126,7 +126,7 @@ Configure la herencia arrastrando un objeto **Herencia** desde el **Cuadro de he
 
 5. Elimine las propiedades **Tipo**, **Id.** , **Nombre** y **Apellido** del objeto **Employee**. Es decir, elimine todas las propiedades menos **Administrador**.
 
-6. Desde la pestaña **Object Relational Designer** del **Cuadro de herramientas**, cree una **Herencia** entre los objetos **Person** y **Employee**. Para ello, haga clic en el elemento **Herencia** del **Cuadro de herramientas** y suelte el botón del mouse. A continuación, haga clic en el objeto Employee y, a continuación, en el objeto **Person** en Object Relational **Designer**. La flecha en la línea de herencia apunta entonces al objeto **Person** .
+6. Desde la pestaña **Object Relational Designer** del **Cuadro de herramientas**, cree una **Herencia** entre los objetos **Person** y **Employee**. Para ello, haga clic en el elemento **Herencia** del **Cuadro de herramientas** y suelte el botón del mouse. A continuación, haga clic en el objeto **Employee** y, a continuación, en el objeto **Person** en Object Relational **Designer**. La flecha en la línea de herencia apunta entonces al objeto **Person** .
 
 7. Haga clic en la línea **Herencia** en la superficie de diseño.
 
@@ -188,7 +188,7 @@ Ejecute la aplicación y compruebe que los registros mostrados en el cuadro de l
 ## <a name="see-also"></a>Vea también
 
 - [LINQ to SQL tools en Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md) (Herramientas LINQ to SQL en Visual Studio)
-- [Tutorial: Crear clases de LINQ to SQL (Object Relational Designer)](how-to-create-linq-to-sql-classes-mapped-to-tables-and-views-o-r-designer.md)
-- [Procedimientos: Asignar procedimientos almacenados para realizar actualizaciones, inserciones y eliminaciones (Object Relational Designer)](../data-tools/how-to-assign-stored-procedures-to-perform-updates-inserts-and-deletes-o-r-designer.md)
+- [Walkthrough: Creating LINQ to SQL classes (O-R Designer)](how-to-create-linq-to-sql-classes-mapped-to-tables-and-views-o-r-designer.md) (Tutorial: Crear clases de LINQ to SQL [Object Relational Designer])
+- [Cómo: Asignar procedimientos almacenados para realizar actualizaciones, inserciones y eliminaciones (Object Relational Designer)](../data-tools/how-to-assign-stored-procedures-to-perform-updates-inserts-and-deletes-o-r-designer.md)
 - [LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/index)
-- [Cómo: Generar el modelo de objetos en Visual Basic oC#](/dotnet/framework/data/adonet/sql/linq/how-to-generate-the-object-model-in-visual-basic-or-csharp)
+- [Procedimiento para generar el modelo de objetos en Visual Basic o C#](/dotnet/framework/data/adonet/sql/linq/how-to-generate-the-object-model-in-visual-basic-or-csharp)

@@ -8,27 +8,24 @@ helpviewer_keywords:
 - security [Visual Studio], additional information
 ms.assetid: 3e839007-c388-4fc4-a6d1-8127cd207750
 caps.latest.revision: 18
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 454e71026eeee3cbd76c95038ba59fb709b8d88f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 9de71524ec3aa0138b41bcbcc441e85f33784345
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68203508"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72672898"
 ---
 # <a name="security-bibliography"></a>Bibliografía sobre seguridad
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A continuación se incluye una selección de los recursos, disponibles en línea e impresos, sobre el tema de desarrollo de aplicaciones seguras y la configuración de entornos seguros:  
-  
-## <a name="microsoft-web-sites"></a>Sitios Web de Microsoft  
- [Microsoft Security](https://www.microsoft.com/security)  
- Proporciona información sobre el modo en que trabaja Microsoft para ayudarle a mantener las aplicaciones y los sistemas seguros, desde los sistemas de escritorio hasta los sistemas de red; e incluye vínculos a recursos de seguridad para los profesionales informáticos (IT).  
-  
- [Recursos de seguridad en MSDN](https://www.microsoft.com/msrc?rtc=1)  
- Proporciona una guía de la documentación dirigida a los programadores, ejemplos de código, artículos técnicos y otros recursos necesarios para desarrollar aplicaciones seguras.  
-  
- [Microsoft TechNet Security](https://www.microsoft.com/securityengineering)  
- Contiene indicadores a la información técnica más importante sobre seguridad para los profesionales informáticos (IT) y los "usuarios avanzados".
+A continuación se incluye una selección de los recursos, disponibles en línea e impresos, sobre el tema de desarrollo de aplicaciones seguras y la configuración de entornos seguros:
+
+## <a name="microsoft-web-sites"></a>Sitios Web de Microsoft
+ [Seguridad de Microsoft](https://www.microsoft.com/security) Obtenga información sobre cómo trabaja Microsoft para ayudarle a proteger sus aplicaciones y sistemas, desde el escritorio hasta los sistemas de nivel de red, con vínculos a recursos de seguridad para profesionales de ti, desarrolladores y usuarios domésticos.
+
+ [Recursos de seguridad en MSDN](https://www.microsoft.com/msrc?rtc=1) Le guía a documentación orientada a desarrolladores, ejemplos de código, artículos técnicos y otros recursos para el desarrollo de aplicaciones seguras.
+
+ [Seguridad de Microsoft TechNet](https://www.microsoft.com/securityengineering) Contiene punteros a la información técnica más importante sobre la seguridad de los profesionales de tecnologías de la información y los "usuarios avanzados".

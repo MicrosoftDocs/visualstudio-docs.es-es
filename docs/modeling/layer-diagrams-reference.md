@@ -15,17 +15,17 @@ helpviewer_keywords:
 - dependency diagrams
 - diagrams - modeling, layer
 - constraints, architectural
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0de634ee62387e50fed89e4465842b2801748f45
-ms.sourcegitcommit: 0f44ec8ba0263056ad04d2d0dc904ad4206ce8fc
+ms.openlocfilehash: 7711d0b0f369f43cc7becf92cbdcfc986cd3a6a8
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70766149"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72661494"
 ---
 # <a name="dependency-diagrams-reference"></a>Diagramas de dependencia: referencia
 
@@ -48,7 +48,7 @@ Use un diagrama de dependencias para ayudarle a realizar las siguientes tareas:
 
 - Reforzar la arquitectura planeada durante el desarrollo y el mantenimiento del código incluyendo la validación en las operaciones de protección y compilación.
 
-En este tema se describen los elementos que puede usar en un diagrama de dependencia. Para obtener información más detallada sobre cómo crear y dibujar diagramas de dependencia, [vea diagramas de dependencia: Instrucciones](../modeling/layer-diagrams-guidelines.md). Para obtener más información sobre los patrones de capas, visite el [sitio patterns & Practices](http://go.microsoft.com/fwlink/?LinkId=145794).
+En este tema se describen los elementos que puede usar en un diagrama de dependencia. Para obtener información más detallada sobre cómo crear y dibujar diagramas de dependencia, vea [diagramas de dependencia: instrucciones](../modeling/layer-diagrams-guidelines.md). Para obtener más información sobre los patrones de capas, visite el [sitio patterns & Practices](http://go.microsoft.com/fwlink/?LinkId=145794).
 
 ## <a name="reading-dependency-diagrams"></a>Lectura de diagramas de dependencia
 
@@ -58,9 +58,9 @@ En la tabla siguiente se describen los elementos que puede usar en un diagrama d
 
 |**Forma**|**Element**|**Descripción**|
 |-|-|-|
-|1|**Layer**|Grupo lógico de artefactos físicos del sistema. Estos artefactos pueden ser espacios de nombres, proyectos, clases, métodos, etc.<br /><br /> Para ver los artefactos que están vinculados a una capa, abra el menú contextual de la capa y, a continuación, elija **ver vínculos** para abrir el **Explorador de capas**.<br /><br /> Para obtener más información, vea [Explorador de capas](#Explorer).<br /><br /> -   **Dependencias de espacios de nombres prohibidos** : especifica que los artefactos asociados a esta capa no pueden depender de los espacios de nombres especificados.<br />-   **Espacios de nombres prohibidos** : especifica que los artefactos asociados a esta capa no deben pertenecer a los espacios de nombres especificados.<br />-   **Espacios de nombres necesarios** : especifica que los artefactos asociados a esta capa deben pertenecer a uno de los espacios de nombres especificados.|
-|2|**Pendiente**|Indica que una capa puede usar la funcionalidad de otra capa, pero no viceversa.<br /><br /> -   **Direction** : especifica la dirección de la dependencia.|
-|3|**Dependencia bidireccional**|Indica que una capa puede usar la funcionalidad de otra capa, y viceversa.<br /><br /> -   **Direction** : especifica la dirección de la dependencia.|
+|1|**Layer**|Grupo lógico de artefactos físicos del sistema. Estos artefactos pueden ser espacios de nombres, proyectos, clases, métodos, etc.<br /><br /> Para ver los artefactos que están vinculados a una capa, abra el menú contextual de la capa y, a continuación, elija **ver vínculos** para abrir el **Explorador de capas**.<br /><br /> Para obtener más información, vea [Explorador de capas](#Explorer).<br /><br /> -    las**dependencias de espacios de nombres prohibidos** : especifica que los artefactos asociados a esta capa no pueden depender de los espacios de nombres especificados.<br />-   **espacios de nombres prohibidos** : especifica que los artefactos asociados a esta capa no deben pertenecer a los espacios de nombres especificados.<br />-   **espacios de nombres necesarios** : especifica que los artefactos asociados a esta capa deben pertenecer a uno de los espacios de nombres especificados.|
+|2|**Pendiente**|Indica que una capa puede usar la funcionalidad de otra capa, pero no viceversa.<br /><br /> **dirección** -   : especifica la dirección de la dependencia.|
+|3|**Dependencia bidireccional**|Indica que una capa puede usar la funcionalidad de otra capa, y viceversa.<br /><br /> **dirección** -   : especifica la dirección de la dependencia.|
 |4|**Comentario**|Use esta opción para agregar notas generales al diagrama o elementos del diagrama.|
 |5|**Vínculo de comentario**|Se usa para vincular comentarios a elementos del diagrama.|
 
@@ -76,7 +76,7 @@ Puede vincular cada capa a artefactos de la solución, como proyectos, clases, e
 
 Para obtener más información sobre cómo vincular capas y artefactos, vea:
 
-- [Diagramas de dependencia: directrices](../modeling/layer-diagrams-guidelines.md)
+- [Diagramas de dependencia: instrucciones](../modeling/layer-diagrams-guidelines.md)
 
 - [Creación de diagramas de dependencia a partir del código](../modeling/create-layer-diagrams-from-your-code.md)
 
@@ -93,7 +93,7 @@ El **Explorador de capas** se abre y muestra los artefactos que están vinculado
 |-|-|
 |**Categorías**|Tipo de artefacto, como una clase, espacio de nombres, archivo de código fuente, etcétera|
 |**Layer**|Capa que se vincula al artefacto|
-|**Admite la validación**|Si **es true**, el proceso de validación de capas puede comprobar que el proyecto se ajusta a las dependencias de este elemento o de este.<br /><br /> Si **es false**, el vínculo no participa en el proceso de validación de capas.<br /><br /> Para obtener más información, [consulte diagramas de dependencia: Instrucciones](../modeling/layer-diagrams-guidelines.md).|
+|**Admite la validación**|Si **es true**, el proceso de validación de capas puede comprobar que el proyecto se ajusta a las dependencias de este elemento o de este.<br /><br /> Si **es false**, el vínculo no participa en el proceso de validación de capas.<br /><br /> Para obtener más información, vea [diagramas de dependencia: instrucciones](../modeling/layer-diagrams-guidelines.md).|
 |**Identificador**|Referencia al artefacto vinculado|
 
 ## <a name="see-also"></a>Vea también

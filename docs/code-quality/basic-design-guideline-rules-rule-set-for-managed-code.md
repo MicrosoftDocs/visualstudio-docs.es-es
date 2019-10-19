@@ -3,17 +3,17 @@ title: Conjunto de reglas Reglas de directrices de diseño básicas para código
 ms.date: 11/04/2016
 ms.topic: reference
 ms.assetid: 7eb384f5-f961-400b-b151-115d92addc6a
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 4100ee49cf4735a05693ec2a76d7407af8cac7f3
-ms.sourcegitcommit: 08c144d290da373df841f04fc799e3133540a541
-ms.translationtype: HT
+ms.openlocfilehash: adc461e9620641084ce8a7fabc7b5a06c8a3bb73
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72534580"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72608834"
 ---
 # <a name="basic-design-guideline-rules-rule-set-for-managed-code"></a>Conjunto de reglas Reglas de directrices de diseño básicas para código administrado
 

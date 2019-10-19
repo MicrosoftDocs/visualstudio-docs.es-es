@@ -13,17 +13,17 @@ helpviewer_keywords:
 - TableAdapters, searching data
 - queries [Visual Studio], TableAdapters
 ms.assetid: 104d1d19-b5a9-4071-b81e-1b3af08e9c7b
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 33282f65c004643ec29b4c4d3074261ff437662c
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 0926558c4d6e94032e2af2c75189f287da8d4811
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68925652"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72642161"
 ---
 # <a name="create-parameterized-tableadapter-queries"></a>Crear consultas parametrizadas de TableAdapter
 
@@ -40,7 +40,7 @@ Cree consultas de TableAdapter parametrizadas en el **Diseñador de DataSet**. T
 
 - Cree un nuevo TableAdapter y agregue una cláusula WHERE con los parámetros deseados a la instrucción SQL. Para obtener más información, vea [crear y configurar TableAdapters](../data-tools/create-and-configure-tableadapters.md).
 
-     -o bien-
+     o bien
 
 - Agregue una consulta a un TableAdapter existente, y agregue una cláusula WHERE con los parámetros deseados a la instrucción SQL.
 
@@ -65,7 +65,7 @@ Cree consultas de TableAdapter parametrizadas en el **Diseñador de DataSet**. T
 
 4. Escriba un nombre en el cuadro **Nuevo nombre de consulta** si va a crear una nueva consulta.
 
-     -o bien-
+     o bien
 
      Seleccione una consulta en el cuadro **Nombre de consulta existente**.
 
@@ -77,7 +77,7 @@ Cree consultas de TableAdapter parametrizadas en el **Diseñador de DataSet**. T
 
 ### <a name="query-for-null-values"></a>Consultar valores NULL
 
-Los parámetros de TableAdapter pueden tener asignados valores NULL cuando se desea consultar los registros que no tienen ningún valor actual. Por ejemplo, considere la siguiente consulta que tiene un `ShippedDate` parámetro en su `WHERE` cláusula:
+Los parámetros de TableAdapter pueden tener asignados valores NULL cuando se desea consultar los registros que no tienen ningún valor actual. Por ejemplo, considere la siguiente consulta que tiene un parámetro `ShippedDate` en su cláusula `WHERE`:
 
 ```sql
 SELECT CustomerID, OrderDate, ShippedDate

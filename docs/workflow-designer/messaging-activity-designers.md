@@ -1,25 +1,25 @@
 ---
-title: 'Diseñador de flujo de trabajo: los diseñadores de actividades de mensajería'
+title: Diseñadores de actividades de mensajería de Diseñador de flujo de trabajo
 ms.date: 11/04/2016
 ms.topic: reference
 ms.assetid: 897e63cf-a42f-4edd-876f-c4ccfffaf6d6
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a9868b5eb52edde8e12d6a3b4f5edab1a4a9e499
-ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.openlocfilehash: 0ba6aaaf0f6e77714af14e690d4944eac031e1d7
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66747096"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72650142"
 ---
-# <a name="messaging-activity-designers"></a>Los diseñadores de actividades de mensajería
+# <a name="messaging-activity-designers"></a>Diseñadores de actividades de mensajería
 
-Diseñadores de actividades de mensajería se utilizan para crear y configurar actividades de mensajería que envían y reciben mensajes de Windows Communication Foundation (WCF) desde una aplicación de Windows Workflow Foundation (WF). Cinco actividades de mensajería se introdujeron en .NET Framework 4. El Diseñador de flujo de trabajo proporciona dos diseñadores de plantillas que le permiten administrar la mensajería dentro de un flujo de trabajo.
+Los diseñadores de actividad de mensajería se utilizan para crear y configurar las actividades de mensajería que envían y reciben mensajes Windows Communication Foundation (WCF) desde dentro de una aplicación Windows Workflow Foundation (WF). Se introdujeron cinco actividades de mensajería en .NET Framework 4. El Diseñador de flujo de trabajo proporciona dos diseñadores de plantillas que permiten administrar la mensajería dentro de un flujo de trabajo.
 
-Los temas contenidos en esta sección y aparece en la tabla siguiente proporcionan instrucciones sobre cómo usar la actividad del Diseñador de flujo de trabajo y los diseñadores de plantillas.
+Los temas incluidos en esta sección y que se enumeran en la tabla siguiente proporcionan instrucciones sobre cómo usar la actividad de Diseñador de flujo de trabajo y los diseñadores de plantillas.
 
 - <xref:System.Activities.Activity>
 

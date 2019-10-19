@@ -1,18 +1,18 @@
 ---
-title: 'Tutorial: Usar la herramienta jerarquía XSLT'
+title: 'Tutorial: Usar la herramienta Jerarquía XSLT'
 ms.date: 11/04/2016
 ms.topic: conceptual
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 3cf836ed59dadba71314aa38cd4d2907bee384a6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 9f3fe246189313dcc04176e2971ad448a1b2cff8
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62808164"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72604441"
 ---
-# <a name="walkthrough-use-xslt-hierarchy"></a>Tutorial: Utilice la herramienta jerarquía XSLT
+# <a name="walkthrough-use-xslt-hierarchy"></a>Tutorial: uso de la jerarquía de XSLT
 
 La herramienta Jerarquía XSLT simplifica muchas tareas de desarrollo de XML. Una hoja de estilos XSLT usa a menudo instrucciones `includes` e `imports`. La compilación se inicia desde la hoja de estilos principal, pero cuando aparece un error como resultado de compilar una hoja de estilos XSLT, dicho error puede proceder de un origen distinto de la hoja de estilos principal. Es posible que se requiera acceso a las hojas de estilos importadas o incluidas para corregir el error o editar la hoja de estilos. Es posible que la ejecución paso a paso de la hoja de estilos en el depurador le permita abrir las hojas de estilos importadas e incluidas, y si lo desea puede agregar un punto de interrupción en algún punto en una o varias de las hojas de estilos incluidas.
 
@@ -20,7 +20,7 @@ Otro escenario en el que la herramienta Jerarquía XSLT puede ser de utilidad es
 
 El ejemplo de este tema muestra la depuración en una hoja de estilos a la que se hace referencia.
 
-## <a name="to-debug-in-a-referenced-style-sheet"></a>Para depurar en una hoja de estilos que se hace referencia
+## <a name="to-debug-in-a-referenced-style-sheet"></a>Para depurar en una hoja de estilos a la que se hace referencia
 
 1. Abra un documento XML en Visual Studio. En este ejemplo se usa el siguiente documento:
 
@@ -46,7 +46,7 @@ El ejemplo de este tema muestra la depuración en una hoja de estilos a la que s
     </COLLECTION>
     ```
 
-1. Agregue el siguiente *xslincludefile.xsl*:
+1. Agregue el siguiente *xslincludefile. xsl*:
 
     ```xml
     <?xml version='1.0'?>
@@ -69,7 +69,7 @@ El ejemplo de este tema muestra la depuración en una hoja de estilos a la que s
     </xsl:stylesheet>
     ```
 
-3. Agregue el siguiente *xsinclude.xsl* archivo:
+3. Agregue el siguiente archivo *xsinclude. xsl* :
 
     ```xml
     <?xml version='1.0'?>
@@ -103,11 +103,11 @@ El ejemplo de este tema muestra la depuración en una hoja de estilos a la que s
     </xsl:stylesheet>
     ```
 
-4. Agregar un punto de interrupción en la instrucción `<xsl:include href="xslincludefile.xsl" />`.
+4. Agregue un punto de interrupción en la instrucción `<xsl:include href="xslincludefile.xsl" />`.
 
 5. Inicie la depuración.
 
-6. Cuando el depurador se detiene en la instrucción `<xsl:include href="xslincludefile.xsl" />`, presione el **paso a paso** botón. Puede continuar la depuración en la hoja de estilos que se hace referencia. La jerarquía está visible y el diseñador muestra la ruta de acceso correcta.
+6. Cuando el depurador se detenga en el `<xsl:include href="xslincludefile.xsl" />` de instrucciones, presione el botón **paso a paso** por instrucciones. La depuración puede continuar en la hoja de estilos a la que se hace referencia. La jerarquía está visible y el diseñador muestra la ruta de acceso correcta.
 
 ## <a name="see-also"></a>Vea también
 

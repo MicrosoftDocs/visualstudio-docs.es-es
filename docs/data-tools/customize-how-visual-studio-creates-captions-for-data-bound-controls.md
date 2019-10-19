@@ -1,5 +1,5 @@
 ---
-title: Personalizar títulos para los controles enlazados a datos
+title: Personalizar títulos para controles enlazados a datos
 ms.date: 11/03/2017
 ms.topic: conceptual
 helpviewer_keywords:
@@ -8,135 +8,135 @@ helpviewer_keywords:
 - captions, data-bound
 - Data Sources Window, label captions
 ms.assetid: 6d4d15f8-4d78-42fd-af64-779ae98d62c8
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 1745aef29da9fc8efd49789f0112c903128f6f74
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 932d50d44fbfaa810225ef90c2f5361bc26d9b72
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62567590"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72648566"
 ---
 # <a name="customize-how-visual-studio-creates-captions-for-data-bound-controls"></a>Personalizar el modo en que Visual Studio crea los títulos de controles enlazados a datos
 
-Cuando se arrastran elementos desde la [ventana Orígenes de datos](add-new-data-sources.md#data-sources-window) a un diseñador, una consideración especial entra en juego: se cambian los nombres de columna en las etiquetas de leyenda en una cadena más legible cuando dos o más palabras se encuentran concatenados.
+Cuando se arrastran elementos desde la [ventana orígenes de datos](add-new-data-sources.md#data-sources-window) hasta un diseñador, se produce una consideración especial: los nombres de columna de las etiquetas de título se vuelven a formatear en una cadena más legible cuando dos o más palabras se encuentran concatenadas.
 
 ::: moniker range="vs-2017"
 
-Puede personalizar la manera en que se crean estas etiquetas estableciendo el **SmartCaptionExpression**, **SmartCaptionReplacement**, y **SmartCaptionSuffix** valores en el **HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\15.0\Data diseñadores** clave del registro.
+Puede personalizar la forma en que se crean estas etiquetas estableciendo los valores **SmartCaptionExpression**, **SmartCaptionReplacement**y **SmartCaptionSuffix** en **HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\15.0 \Data** clave del registro de los diseñadores.
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-Puede personalizar la manera en que se crean estas etiquetas estableciendo el **SmartCaptionExpression**, **SmartCaptionReplacement**, y **SmartCaptionSuffix** valores en el **HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\16.0\Data diseñadores** clave del registro.
+Puede personalizar la forma en que se crean estas etiquetas estableciendo los valores **SmartCaptionExpression**, **SmartCaptionReplacement**y **SmartCaptionSuffix** en **HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\16.0 \Data** clave del registro de los diseñadores.
 
 ::: moniker-end
 
 > [!NOTE]
-> Esta clave del registro no existe hasta que la cree.
+> Esta clave del registro no existe hasta que se crea.
 
-Etiquetas inteligentes se controla mediante la expresión regular especificada en el valor de la **SmartCaptionExpression** valor. Agregar el **diseñadores de datos** clave del registro invalida la expresión regular predeterminada que controla las etiquetas de leyenda. Para obtener más información sobre las expresiones regulares, vea [mediante expresiones regulares en Visual Studio](../ide/using-regular-expressions-in-visual-studio.md).
+Los subtítulos inteligentes se controlan mediante la expresión regular especificada en el valor de **SmartCaptionExpression** . Al agregar la clave del registro de los **diseñadores de datos** se invalida la expresión regular predeterminada que controla las etiquetas de título. Para obtener más información sobre las expresiones regulares, vea [usar expresiones regulares en Visual Studio](../ide/using-regular-expressions-in-visual-studio.md).
 
-En la tabla siguiente se describe los valores del registro que controlan las etiquetas de leyenda.
+En la tabla siguiente se describen los valores del registro que controlan las etiquetas de título.
 
 |Elemento del registro|Descripción|
 |-------------------|-----------------|
-|**SmartCaptionExpression**|La expresión regular que se usa para que coincida con los patrones.|
-|**SmartCaptionReplacement**|El formato para mostrar cualquier grupo que coincide en el **SmartCaptionExpression**.|
-|**SmartCaptionSuffix**|Una cadena opcional que se anexará al final de la leyenda.|
+|**SmartCaptionExpression**|Expresión regular que se usa para hacer coincidir los patrones.|
+|**SmartCaptionReplacement**|Formato en el que se van a mostrar los grupos coincidentes en **SmartCaptionExpression**.|
+|**SmartCaptionSuffix**|Cadena opcional que se va a anexar al final del título.|
 
-La tabla siguiente muestra la configuración predeterminada interna para estos valores del registro.
+En la tabla siguiente se muestra la configuración predeterminada interna de estos valores del registro.
 
 |Elemento del registro|Valor predeterminado|Explicación|
 |-------------------|-------------------|-----------------|
-|**SmartCaptionExpression**|**(\\\p{Ll})(\\\p{Lu})&#124;_+**|Coincide con un carácter en minúscula seguido por un carácter en mayúscula o un carácter de subrayado.|
-|**SmartCaptionReplacement**|**$1 $2**|El **$1** representa cualquier carácter coincidente en el primer paréntesis de la expresión y el **$2** representa cualquier carácter coincidente en el segundo paréntesis. La sustitución es la primera coincidencia, un espacio y, a continuación, la segunda coincidencia.|
-|**SmartCaptionSuffix**|**:**|Representa un carácter que se anexa a la cadena devuelta. Por ejemplo, si el título es `Company Name`, el sufijo facilita `Company Name:`|
+|**SmartCaptionExpression**|**(\\\p{Ll})(\\\p{Lu})&#124;_+**|Coincide con un carácter en minúscula seguido de un carácter en mayúsculas o un carácter de subrayado.|
+|**SmartCaptionReplacement**|**$1 $2**|**$1** representa los caracteres coincidentes en los primeros paréntesis de la expresión y el **$2** representa los caracteres coincidentes en el segundo paréntesis. El reemplazo es la primera coincidencia, un espacio y, a continuación, la segunda coincidencia.|
+|**SmartCaptionSuffix**|**:**|Representa un carácter anexado a la cadena devuelta. Por ejemplo, si el título es `Company Name`, el sufijo lo hace `Company Name:`|
 
 > [!CAUTION]
-> Tenga mucho cuidado al hacer nada en el Editor del registro. Realizar una copia de seguridad del registro antes de editarlo. Si utiliza incorrectamente el Editor del registro, puede provocar problemas graves que quizás requieran reinstalar el sistema operativo. Microsoft no garantiza que se pueden resolver los problemas que provocan utilizando el Editor del Registro incorrectamente. Utilice el Editor del registro bajo su propia responsabilidad.
+> Tenga mucho cuidado al realizar cualquier acción en el editor del registro. Realice una copia de seguridad del registro antes de editarlo. Si utiliza incorrectamente el editor del registro, puede ocasionar problemas graves que pueden requerir la reinstalación del sistema operativo. Microsoft no garantiza que se puedan resolver los problemas que se produzcan con el editor del registro de forma incorrecta. Utilice el editor del registro bajo su responsabilidad.
 >
-> Para obtener información acerca de la copia de seguridad, editar y restaurar el registro, consulte [información del registro de Windows para usuarios avanzados](https://support.microsoft.com/help/256986/windows-registry-information-for-advanced-users).
+> Para obtener información sobre la copia de seguridad, la edición y la restauración del registro, consulte [información del registro de Windows para usuarios avanzados](https://support.microsoft.com/help/256986/windows-registry-information-for-advanced-users).
 
-## <a name="modify-the-smart-captioning-behavior-of-the-data-sources-window"></a>Modificar el comportamiento inteligente subtítulos (CC) de la ventana de orígenes de datos
+## <a name="modify-the-smart-captioning-behavior-of-the-data-sources-window"></a>Modificar el comportamiento de los subtítulos inteligentes de la ventana orígenes de datos
 
-1. Abra una ventana de comandos, haga clic en **iniciar** y, a continuación, **ejecutar**.
+1. Abra una ventana de comandos haciendo clic en **Inicio** y, a continuación, en **Ejecutar**.
 
-2. Tipo `regedit` en el **ejecutar** cuadro de diálogo y haga clic en **Aceptar**.
+2. Escriba `regedit` en el cuadro de diálogo **Ejecutar** y haga clic en **Aceptar**.
 
-3. Expanda el **HKEY_CURRENT_USER** > **Software** > **Microsoft** > **VisualStudio**nodo.
+3. Expanda el nodo **HKEY_CURRENT_USER**  > **Software**  > **Microsoft**  > **VisualStudio** .
 
 ::: moniker range="vs-2017"
 
-4. Haga clic en el **15.0** nodo y crear un nuevo **clave** denominado `Data Designers`.
+4. Haga clic con el botón secundario en el nodo **15,0** y cree una nueva **clave** denominada `Data Designers`.
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-4. Haga clic en el **16.0** nodo y crear un nuevo **clave** denominado `Data Designers`.
+4. Haga clic con el botón secundario en el nodo **16,0** y cree una nueva **clave** denominada `Data Designers`.
 
 ::: moniker-end
 
-5. Haga clic en el **diseñadores de datos** nodo y crear tres nuevos valores de cadena:
+5. Haga clic con el botón secundario en el nodo **diseñadores de datos** y cree tres nuevos valores de cadena:
 
     - `SmartCaptionExpression`
     - `SmartCaptionReplacement`
     - `SmartCaptionSuffix`
 
-6. Haga clic en el **SmartCaptionExpression** valor y seleccione **modificar**.
+6. Haga clic con el botón secundario en el valor **SmartCaptionExpression** y seleccione **modificar**.
 
-7. Escriba la expresión regular que desee la **orígenes de datos** ventana para utilizar.
+7. Escriba la expresión regular que desea que use la ventana **orígenes de datos** .
 
-8. Haga clic en el **SmartCaptionReplacement** valor y seleccione **modificar**.
+8. Haga clic con el botón secundario en el valor **SmartCaptionReplacement** y seleccione **modificar**.
 
-9. Escriba el reemplazo de cadena con formato de la manera en que desea mostrar los modelos que coinciden en la expresión regular.
+9. Escriba la cadena de reemplazo con el formato que desea para mostrar los patrones coincidentes en la expresión regular.
 
-10. Haga clic en el **SmartCaptionSuffix** valor y seleccione **modificar**.
+10. Haga clic con el botón secundario en el valor **SmartCaptionSuffix** y seleccione **modificar**.
 
-11. Escriba los caracteres que desea que aparezcan al final de la leyenda.
+11. Escriba los caracteres que desee que aparezcan al final del título.
 
-    La próxima vez que se arrastran elementos desde la **orígenes de datos** ventana, las etiquetas de leyenda se crean con los nuevos valores del registro proporcionados.
+    La próxima vez que arrastre elementos desde la ventana **orígenes de datos** , las etiquetas de título se crearán con los nuevos valores del registro proporcionados.
 
-## <a name="turn-off-the-smart-captioning-feature"></a>Desactivar la característica smart subtítulos (CC)
+## <a name="turn-off-the-smart-captioning-feature"></a>Desactivar la característica de subtítulos inteligentes
 
-1. Abra una ventana de comandos, haga clic en **iniciar** y, a continuación, **ejecutar**.
+1. Abra una ventana de comandos haciendo clic en **Inicio** y, a continuación, en **Ejecutar**.
 
-2. Tipo `regedit` en el **ejecutar** cuadro de diálogo y haga clic en **Aceptar**.
+2. Escriba `regedit` en el cuadro de diálogo **Ejecutar** y haga clic en **Aceptar**.
 
-3. Expanda el **HKEY_CURRENT_USER** > **Software** > **Microsoft** > **VisualStudio**nodo.
+3. Expanda el nodo **HKEY_CURRENT_USER**  > **Software**  > **Microsoft**  > **VisualStudio** .
 
 ::: moniker range="vs-2017"
 
-4. Haga clic en el **15.0** nodo y crear un nuevo **clave** denominado `Data Designers`.
+4. Haga clic con el botón secundario en el nodo **15,0** y cree una nueva **clave** denominada `Data Designers`.
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-4. Haga clic en el **16.0** nodo y crear un nuevo **clave** denominado `Data Designers`.
+4. Haga clic con el botón secundario en el nodo **16,0** y cree una nueva **clave** denominada `Data Designers`.
 
 ::: moniker-end
 
-5. Haga clic en el **diseñadores de datos** nodo y crear tres nuevos valores de cadena:
+5. Haga clic con el botón secundario en el nodo **diseñadores de datos** y cree tres nuevos valores de cadena:
 
     - `SmartCaptionExpression`
     - `SmartCaptionReplacement`
     - `SmartCaptionSuffix`
 
-6. Haga clic en el **SmartCaptionExpression** de elemento y seleccione **modificar**.
+6. Haga clic con el botón secundario en el elemento **SmartCaptionExpression** y seleccione **modificar**.
 
-7. Escriba `(.*)` para el valor. Esto coincidirá con la cadena completa.
+7. Escriba `(.*)` para el valor. Coincide con toda la cadena.
 
-8. Haga clic en el **SmartCaptionReplacement** de elemento y seleccione **modificar**.
+8. Haga clic con el botón secundario en el elemento **SmartCaptionReplacement** y seleccione **modificar**.
 
-9. Escriba `$1` para el valor. Esto reemplaza la cadena con el valor coincidente, que es la cadena completa para que lo permanecerá sin cambios.
+9. Escriba `$1` para el valor. Esto reemplaza la cadena con el valor coincidente, que es toda la cadena para que permanezca sin cambios.
 
-    La próxima vez que se arrastran elementos desde la **orígenes de datos** las etiquetas de leyenda de ventana, se crean con títulos sin modificar.
+    La próxima vez que arrastre elementos desde la ventana **orígenes de datos** , las etiquetas de título se crearán con títulos sin modificar.
 
 ## <a name="see-also"></a>Vea también
 

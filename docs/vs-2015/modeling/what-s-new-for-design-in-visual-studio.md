@@ -1,5 +1,5 @@
 ---
-title: ¿Qué&#39;s nuevo para el diseño
+title: Novedades&#39;del diseño
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-modeling
@@ -10,17 +10,17 @@ helpviewer_keywords:
 - modeling software [Visual Studio], What's New
 ms.assetid: 36ab5c17-6dc0-4075-a28e-a0fa49b11260
 caps.latest.revision: 34
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 148da7602d8198a4c85e2a7fbee2107b4e9662d1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 6c68db12f8ecea523327250fec1f600639a2f267
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68187119"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72659247"
 ---
-# <a name="whats-new-for-design-in-visual-studio-in-visual-studio-2015"></a>Novedades de diseño en Visual Studio en Visual Studio 2015
+# <a name="whats-new-for-design-in-visual-studio-in-visual-studio-2015"></a>Novedades del diseño en Visual Studio 2015
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 Esta versión de Visual Studio incluye las siguientes mejoras para ayudarle a comprender y diseñar mejor el código.
 
@@ -64,18 +64,18 @@ Esta versión de Visual Studio incluye las siguientes mejoras para ayudarle a co
 
 - **Explorador de arquitectura**. El Explorador de arquitectura ya no se puede usar para crear diagramas. Pero se puede seguir usando el Explorador de soluciones.
 
-## <a name="VersionSupport"></a> Compatibilidad con la edición de arquitectura y modelado de herramientas
+## <a name="VersionSupport"></a>Compatibilidad de edición con las herramientas de arquitectura y modelado
 
-Visual Studio 2015 está disponible en varias ediciones. No todas estas proporcionan compatibilidad con la arquitectura y las herramientas de modelado. En la tabla siguiente se muestra la disponibilidad de cada herramienta.
+Visual Studio 2015 está disponible en varias ediciones. No todas estas proporcionan compatibilidad con las herramientas de arquitectura y modelado. En la tabla siguiente se muestra la disponibilidad de cada herramienta.
 
 |**Característica**|**Enterprise**|**Professional**|**Community**|**Express**|
 |-----------------|--------------------|----------------------|-------------------|-----------------|
-|**Mapas de código**|Sí|Solo se admite leer y filtrado de mapas de código, agregar nuevos nodos genéricos y crear un nuevo gráfico dirigido a partir de una selección.|-|-|
+|**Mapas de código**|Sí|Solo admite la lectura y el filtrado de mapas de código, la adición de nuevos nodos genéricos y la creación de un nuevo gráfico dirigido a partir de una selección.|-|-|
 |**Diagramas de clases de UML**|Sí|-|-|-|
-|**Diagramas de secuencia de UML**|Sí|-|-|-|
-|**Diagramas de casos de uso UML**|Sí|-|-|-|
+|**Diagramas de secuencia UML**|Sí|-|-|-|
+|**Diagramas de casos de uso de UML**|Sí|-|-|-|
 |**Diagramas de actividades UML**|Sí|-|-|-|
-|**Diagramas de componentes UML**|Sí|-|-|-|
+|**Diagramas de componentes de UML**|Sí|-|-|-|
 |**Diagramas de capas**|Sí|-|-|-|
-|**Gráficos dirigidos** (diagramas DGML)|Sí|Sí|-|-|
+|**Gráficos dirigidos** (diagramas de DGML)|Sí|Sí|-|-|
 |**Clon de código**|Sí|-|-|-|

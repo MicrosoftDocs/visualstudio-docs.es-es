@@ -1,5 +1,5 @@
 ---
-title: Crear una IU con Blend
+title: Crear una interfaz de usuario mediante Blend
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-designers
@@ -8,15 +8,15 @@ f1_keywords:
 - Blend.Start.Dev12
 ms.assetid: efd12263-cc2d-4081-a2bb-9a2cc17c442c
 caps.latest.revision: 33
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 7cd7f14158b7dee83767ee9295c8917cadd30fa5
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 36a0772730718047f2b9d6fc6bc36c30a211a2af
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65695937"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72657988"
 ---
 # <a name="creating-a-ui-by-using-blend-for-visual-studio"></a>Creación de una interfaz de usuario con Blend para Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,7 +43,7 @@ Blend para Visual Studio le ayuda a diseñar aplicaciones de escritorio de Windo
 ## <a name="Tools"></a> Paseo por el panel Herramientas
  Puede usar el panel **Herramientas** en Blend para Visual Studio para crear y modificar objetos en la aplicación. Para crear objetos, seleccione una herramienta y dibuje en la mesa de trabajo utilizando el mouse.
 
- ![Panel Herramientas](../designers/media/blend5toolspanel.png "Blend5Toolspanel")
+ ![Panel herramientas](../designers/media/blend5toolspanel.png "Blend5Toolspanel")
 
 |||||
 |-|-|-|-|
@@ -52,14 +52,14 @@ Blend para Visual Studio le ayuda a diseñar aplicaciones de escritorio de Windo
 |![](../designers/media/b1-3.png "B1_3")|**Herramientas de pincel** Trabaje con los atributos visuales de un objeto, por ejemplo, transformar un pincel, pintar un objeto o seleccionar los atributos de un objeto para aplicarlos a otro.|![Llamada C](../designers/media/b5-label-c.png "b5_label_C")|**Herramientas de forma**|
 |![](../designers/media/b1-4.png "B1_4")|**Herramientas de objeto** Dibuje en la mesa de trabajo los objetos más habituales, como trazados, formas, paneles de diseño, texto y controles.|![Llamada D](../designers/media/b5-label-d.png "b5_label_D")|**Paneles de diseño**|
 |![](../designers/media/b1-5.png "B1_5")|**Herramientas de activos** Acceda al panel **Activos** y muestre el último activo usado de la biblioteca.|![Llamada E](../designers/media/b5-label-e.png "b5_label_E")|**Controles de texto**|
-|||![Llamada E](../designers/media/b5-label-f.png "b5_label_F")|**Controles comunes**|
+|||![Llamada F](../designers/media/b5-label-f.png "b5_label_F")|**Controles comunes**|
 
- **Vea un vídeo corto:** ![Configurar las características instaladas](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [la barra de herramientas](https://www.youtube.com/watch?v=VkdUJcvoo54&list=PLBDF977B2F1DAB358&index=4).
+ **Vea un vídeo corto:** ![Configurar las características instaladas](../designers/media/bldadminconsoleinitialconfigicon.PNG "Instaladas bldadminconsoleinitialconfigicon") [La barra de herramientas](https://www.youtube.com/watch?v=VkdUJcvoo54&list=PLBDF977B2F1DAB358&index=4).
 
 ## <a name="Assets"></a> Paseo por el panel Activos
  Puede encontrar todos los controles en el panel **Activos**, similar al **Cuadro de herramientas** de Visual Studio. Además de los controles, encontrará todo lo que puede agregar a la mesa de trabajo en el panel **Activos**, incluidos estilos, elementos multimedia, comportamientos y efectos.
 
- ![Panel Activos](../designers/media/blend5-assets-panel.png "Blend5_Assets_panel")
+ ![Panel activos](../designers/media/blend5-assets-panel.png "Blend5_Assets_panel")
 
 |||
 |-|-|
@@ -72,7 +72,7 @@ Blend para Visual Studio le ayuda a diseñar aplicaciones de escritorio de Windo
 ## <a name="Objects"></a> Paseo por el panel Objetos y escala de tiempo
  Utilice este panel para organizar los objetos en la mesa de trabajo y, si lo desea, para animarlos.
 
- ![Panel Objetos y escala de tiempo en modo de animación](../designers/media/b5-object-timeline-animation.png "b5_object_timeline_animation")
+ ![Panel objeto y escala de tiempo en modo de animación](../designers/media/b5-object-timeline-animation.png "b5_object_timeline_animation")
 
 |||
 |-|-|
@@ -98,7 +98,7 @@ Blend para Visual Studio le ayuda a diseñar aplicaciones de escritorio de Windo
 
  ![Panel Propiedades](../designers/media/blend5-properties-panel.png "Blend5_properties_panel")
 
- **Categorías** Expanda y contraiga las categorías de propiedades. Haga clic en **Expandir** ![](../designers/media/6375953d-074c-421a-bbb3-6f5055b67b64.png "6375953d-074c-421a-bbb3-6f5055b67b64") y **Contraer** ![](../designers/media/b5-collapse-button.png "b5_collapse_button") para mostrar u ocultar los detalles de la categoría.
+ **Categorías** Expanda y contraiga las categorías de propiedades. Haga clic en **expandir** ![](../designers/media/6375953d-074c-421a-bbb3-6f5055b67b64.png "6375953d-074c-421a-bbb3-6f5055b67b64") y **contraer** ![para mostrar](../designers/media/b5-collapse-button.png "b5_collapse_button") u ocultar los detalles de la categoría.
 
 |                                                                                                         |                                                                                                                                                                                                                                  |
 |---------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -120,7 +120,7 @@ Blend para Visual Studio le ayuda a diseñar aplicaciones de escritorio de Windo
 |                     ![Llamada 16](../designers/media/b5-label-16.png "b5_label_16")                     |                                                                                **Control deslizante de degradado** Aparece únicamente si se selecciona un pincel de degradado.                                                                                 |
 | ![](../designers/media/d50027a1-6824-4ad8-8b4e-558b0756dcf8.png "d50027a1-6824-4ad8-8b4e-558b0756dcf8") |                                                                     **Mostrar propiedades avanzadas** Vea las categorías de propiedades que se usan con menos frecuencia.                                                                      |
 
- **Vea un vídeo corto:** ![Configurar las características instaladas](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [panel Propiedades](https://www.youtube.com/watch?v=HCqQfiobdag&list=PLBDF977B2F1DAB358&index=7).
+ **Vea un vídeo corto:** ![Configurar las características instaladas](../designers/media/bldadminconsoleinitialconfigicon.PNG "Instaladas bldadminconsoleinitialconfigicon") [Panel Propiedades](https://www.youtube.com/watch?v=HCqQfiobdag&list=PLBDF977B2F1DAB358&index=7).
 
 ## <a name="see-also"></a>Vea también
  [Insertar controles y modificar su comportamiento](../designers/insert-controls-and-modify-their-behavior-in-xaml-designer.md) [animar objetos](../designers/animate-objects-in-xaml-designer.md) [dibujar formas y trazados](../designers/draw-shapes-and-paths.md) [diseñar XAML en Visual Studio y Blend para Visual Studio](../designers/designing-xaml-in-visual-studio.md)

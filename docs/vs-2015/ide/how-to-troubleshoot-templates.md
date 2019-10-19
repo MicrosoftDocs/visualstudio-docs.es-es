@@ -1,5 +1,5 @@
 ---
-title: Procedimiento Solucionar problemas de plantillas | Documentos de Microsoft
+title: 'Cómo: Solucionar problemas de plantillas | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
@@ -8,61 +8,59 @@ helpviewer_keywords:
 - Visual Studio templates, troubleshooting
 ms.assetid: 3e577ad2-f725-4c11-93b3-477f2404ec81
 caps.latest.revision: 13
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 246ce82eef63559060c9c4ea4daabd3ae1e5a284
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: acee84f582f2d6b8e2905e50db352cde794b73e7
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63435123"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72670613"
 ---
-# <a name="how-to-troubleshoot-templates"></a>Procedimiento Solucionar problemas de plantillas
+# <a name="how-to-troubleshoot-templates"></a>Cómo: Solucionar problemas de plantillas
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Si una plantilla no se puede cargar en el entorno de desarrollo, hay varias maneras de localizar la causa del problema.  
-  
-## <a name="validating-the-vstemplate-file"></a>Validar el archivo .vstemplate  
- Si el archivo .vstemplate en una plantilla no cumple el esquema de plantilla de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], la plantilla podría no aparecer en el cuadro de diálogo **Nuevo proyecto**.  
-  
-#### <a name="to-validate-the-vstemplate-file"></a>Para validar el archivo .vstemplate  
-  
-1. Busque el archivo .zip que contiene la plantilla.  
-  
-2. Extraiga el archivo .zip.  
-  
-3. En el menú **Archivo** en [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], haga clic en **Abrir** y en **Archivo**.  
-  
-4. Seleccione el archivo .vstemplate para la plantilla y haga clic en **Abrir**.  
-  
-5. Compruebe que el XML del archivo .vstemplate cumple el esquema de plantilla de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Para obtener más información sobre el esquema .vstemplate, vea [Visual Studio Template Schema Reference](../extensibility/visual-studio-template-schema-reference.md) (Referencia de esquema de plantillas de Visual Studio).  
-  
+Si una plantilla no se puede cargar en el entorno de desarrollo, hay varias maneras de localizar la causa del problema.
+
+## <a name="validating-the-vstemplate-file"></a>Validar el archivo .vstemplate
+ Si el archivo .vstemplate en una plantilla no cumple el esquema de plantilla de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], la plantilla podría no aparecer en el cuadro de diálogo **Nuevo proyecto**.
+
+#### <a name="to-validate-the-vstemplate-file"></a>Para validar el archivo .vstemplate
+
+1. Busque el archivo .zip que contiene la plantilla.
+
+2. Extraiga el archivo .zip.
+
+3. En el menú **Archivo** en [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], haga clic en **Abrir** y en **Archivo**.
+
+4. Seleccione el archivo .vstemplate para la plantilla y haga clic en **Abrir**.
+
+5. Compruebe que el XML del archivo .vstemplate cumple el esquema de plantilla de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Para obtener más información sobre el esquema .vstemplate, vea [Visual Studio Template Schema Reference](../extensibility/visual-studio-template-schema-reference.md) (Referencia de esquema de plantillas de Visual Studio).
+
     > [!NOTE]
-    > Para obtener compatibilidad con IntelliSense mientras se crea el archivo .vstemplate, agregue un atributo `xmlns` al elemento `VSTemplate` y asígnele un valor de http://schemas.microsoft.com/developer/vstemplate/2005.  
-  
-6. Guarde y cierre el archivo .vstemplate.  
-  
-7. Seleccione los archivos incluidos en la plantilla, haga clic con el botón derecho, seleccione **Enviar a** y haga clic en **Carpeta comprimida (en zip)**. Los archivos seleccionados se comprimen en un archivo .zip.  
-  
-8. Coloque el nuevo archivo .zip en el mismo directorio que el antiguo.  
-  
-9. Elimine los archivos de plantilla extraídos y el archivo .zip de plantilla antiguo.  
-  
-## <a name="monitoring-the-event-log"></a>Supervisar el registro de eventos  
- [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] registra los errores que se detectan al procesar archivos .zip de plantilla. Si una plantilla no aparece en el cuadro de diálogo **Nuevo proyecto** según lo previsto, puede usar el **Visor de eventos** para solucionar el problema.  
-  
-#### <a name="to-locate-template-errors-in-event-viewer"></a>Para buscar errores de plantilla en el Visor de eventos  
-  
-1. En Windows, haga clic en **Inicio** y en **Panel de control**, haga doble clic en **Herramientas administrativas** y, después, de nuevo doble clic en **Visor de eventos**.  
-  
-2. En el panel izquierdo, haga clic en **Aplicación**.  
-  
-3. Busque los eventos que tengan un valor **Source** de `Visual Studio - VsTemplate`.  
-  
-4. Haga doble clic en un evento de plantilla para ver el error.  
-  
-## <a name="see-also"></a>Vea también  
- [Personalizar plantillas](../ide/customizing-project-and-item-templates.md)   
- [Crear plantillas para proyectos y elementos en Visual Studio](../ide/creating-project-and-item-templates.md)   
- [Referencia de esquema de plantillas de Visual Studio](../extensibility/visual-studio-template-schema-reference.md)
+    > Para obtener compatibilidad con IntelliSense mientras se crea el archivo .vstemplate, agregue un atributo `xmlns` al elemento `VSTemplate` y asígnele un valor de http://schemas.microsoft.com/developer/vstemplate/2005.
+
+6. Guarde y cierre el archivo .vstemplate.
+
+7. Seleccione los archivos incluidos en la plantilla, haga clic con el botón derecho, seleccione **Enviar a** y haga clic en **Carpeta comprimida (en zip)** . Los archivos seleccionados se comprimen en un archivo .zip.
+
+8. Coloque el nuevo archivo .zip en el mismo directorio que el antiguo.
+
+9. Elimine los archivos de plantilla extraídos y el archivo .zip de plantilla antiguo.
+
+## <a name="monitoring-the-event-log"></a>Supervisar el registro de eventos
+ [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] registra los errores que se detectan al procesar archivos .zip de plantilla. Si una plantilla no aparece en el cuadro de diálogo **Nuevo proyecto** según lo previsto, puede usar el **Visor de eventos** para solucionar el problema.
+
+#### <a name="to-locate-template-errors-in-event-viewer"></a>Para buscar errores de plantilla en el Visor de eventos
+
+1. En Windows, haga clic en **Inicio** y en **Panel de control**, haga doble clic en **Herramientas administrativas** y, después, de nuevo doble clic en **Visor de eventos**.
+
+2. En el panel izquierdo, haga clic en **Aplicación**.
+
+3. Busque los eventos que tengan un valor **Source** de `Visual Studio - VsTemplate`.
+
+4. Haga doble clic en un evento de plantilla para ver el error.
+
+## <a name="see-also"></a>Vea también
+ [Personalizar plantillas](../ide/customizing-project-and-item-templates.md) [crear plantillas de proyecto y de elemento referencia de esquema de plantillas de](../ide/creating-project-and-item-templates.md) [Visual Studio](../extensibility/visual-studio-template-schema-reference.md)

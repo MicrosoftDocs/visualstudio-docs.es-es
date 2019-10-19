@@ -1,5 +1,5 @@
 ---
-title: 'CA1716: Los identificadores no deberían coincidir con palabras clave | Documentos de Microsoft'
+title: 'CA1716: los identificadores no deben coincidir con palabras clave | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -12,17 +12,17 @@ helpviewer_keywords:
 - CA1716
 ms.assetid: 900cc8a1-1089-4069-a4ce-10b109ac4fab
 caps.latest.revision: 23
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 35a97e62e17895cb700a1420c7851878f329112a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: f81aec5973d1915ba646c20c3b84186443678754
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68189115"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72669102"
 ---
-# <a name="ca1716-identifiers-should-not-match-keywords"></a>CA1716: Los identificadores no deben coincidir con palabras clave
+# <a name="ca1716-identifiers-should-not-match-keywords"></a>CA1716: Los identificadores no deberían coincidir con palabras clave
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
@@ -32,11 +32,11 @@ ms.locfileid: "68189115"
 |Categoría|Microsoft.Naming|
 |Cambio problemático|Problemático|
 
-## <a name="cause"></a>Causa
- Un nombre de un espacio de nombres, un tipo o miembro virtual o de interfaz coincide con una palabra clave reservada en un lenguaje de programación.
+## <a name="cause"></a>Motivo
+ Un nombre de un espacio de nombres, un tipo o un viritual o un miembro de interfaz coincide con una palabra clave reservada en un lenguaje de programación.
 
 ## <a name="rule-description"></a>Descripción de la regla
- Los identificadores para los espacios de nombres, tipos y virtual y los miembros de interfaz no deberían coincidir con palabras clave definidas por los lenguajes que tienen como destino common language runtime. Según el idioma que se usa y la palabra clave, las ambigüedades y errores del compilador pueden dificultar la biblioteca usar.
+ Los identificadores de los espacios de nombres, los tipos y los miembros virtuales y de interfaz no deben coincidir con las palabras clave definidas por los lenguajes que tienen como destino el Common Language Runtime. Dependiendo del lenguaje que se use y de la palabra clave, los errores del compilador y las ambigüedades pueden dificultar el uso de la biblioteca.
 
  Esta regla comprueba las palabras clave en los idiomas siguientes:
 
@@ -46,10 +46,10 @@ ms.locfileid: "68189115"
 
 - C++/CLI
 
-  Comparación entre mayúsculas y minúsculas se utiliza para [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] comparación distingue mayúsculas de minúsculas y palabras clave se usa para los demás idiomas.
+  La comparación sin distinción entre mayúsculas y minúsculas se usa para palabras clave de [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] y la comparación con distinción entre mayúsculas y minúsculas se usa para los demás idiomas.
 
 ## <a name="how-to-fix-violations"></a>Cómo corregir infracciones
- Seleccione un nombre que no aparece en la lista de palabras clave.
+ Seleccione un nombre que no aparezca en la lista de palabras clave.
 
 ## <a name="when-to-suppress-warnings"></a>Cuándo suprimir advertencias
- Puede suprimir una advertencia de esta regla si están convencidos de que el identificador no confundirá a los usuarios de la API, y que la biblioteca se puede usar en todos los idiomas disponibles en el [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)].
+ Puede suprimir una advertencia de esta regla si está convencido de que el identificador no confundirá a los usuarios de la API y que la biblioteca se puede usar en todos los idiomas disponibles en el [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)].

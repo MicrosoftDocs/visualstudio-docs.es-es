@@ -2,21 +2,21 @@
 title: Directiva de plantilla T4
 ms.date: 11/04/2016
 ms.topic: reference
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e8d00bf3055d1706b459baaf48d1b8e5dca3f282
-ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
+ms.openlocfilehash: 4932a20fbcaee4d5aef6aac03252ee6062fbd035
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68870501"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72606204"
 ---
 # <a name="t4-template-directive"></a>Directiva de plantilla T4
 
-Normalmente, una plantilla de texto T4 de Visual Studio `template` se inicia con una directiva, que especifica cómo se debe procesar la plantilla. No debería haber más de una directiva de plantilla en una plantilla de texto y cualquier archivo que incluye.
+Normalmente, una plantilla de texto T4 de Visual Studio se inicia con una directiva `template`, que especifica cómo se debe procesar la plantilla. No debería haber más de una directiva de plantilla en una plantilla de texto y cualquier archivo que incluye.
 
 Para obtener información general sobre cómo escribir plantillas de texto, vea [escribir una plantilla de texto T4](../modeling/writing-a-t4-text-template.md).
 
@@ -52,7 +52,7 @@ Valores válidos:
 
 "", la referencia cultural, que es la predeterminada.
 
-Una referencia cultural expresada como una cadena con el formato xx-XX. Por ejemplo, es-ES, ja-JP, de-CH, de-DE. Para obtener más información, consulta <xref:System.Globalization.CultureInfo?displayProperty=fullName>.
+Una referencia cultural expresada como una cadena con el formato xx-XX. Por ejemplo, es-ES, ja-JP, de-CH, de-DE. Para obtener más información, vea <xref:System.Globalization.CultureInfo?displayProperty=fullName>.
 
 El atributo culture especifica la referencia cultural para utilizar cuando un bloque de expresión se convierte en texto.
 
@@ -74,7 +74,7 @@ Si el atributo `debug` es `true`, el archivo de código intermedio contiene info
 
 En el caso de las plantillas en tiempo de diseño, el archivo de código intermedio se escribirá en el directorio **% temp%** .
 
-Para ejecutar una plantilla en tiempo de diseño en el depurador, guarde la plantilla de texto, abra el menú contextual de la plantilla de texto en Explorador de soluciones y elija depurar **plantilla T4**.
+Para ejecutar una plantilla en tiempo de diseño en el depurador, guarde la plantilla de texto, abra el menú contextual de la plantilla de texto en Explorador de soluciones y elija **depurar plantilla T4**.
 
 ## <a name="hostspecific-attribute"></a>hostspecific (atributo)
 
@@ -96,7 +96,7 @@ Si establece el valor de este atributo en `true`, una propiedad denominada `Host
 
 Dado que el tipo de esta propiedad depende del tipo de host, solamente es útil si está escribiendo una plantilla de texto que únicamente trabaja con un host concreto. Es aplicable a [las plantillas en tiempo de diseño](../modeling/design-time-code-generation-by-using-t4-text-templates.md), pero no a [las plantillas en tiempo de ejecución](../modeling/run-time-text-generation-with-t4-text-templates.md).
 
-Cuando `hostspecific` `this.Host` es `true` y usa Visual Studio, puede convertir a IServiceProvider para tener acceso a las características de Visual Studio. También puede utilizar `Host.ResolvePath(filename)` para obtener la ruta de acceso absoluta de un archivo en el proyecto. Por ejemplo:
+Cuando `hostspecific` se `true` y usa Visual Studio, puede convertir `this.Host` a IServiceProvider para tener acceso a las características de Visual Studio. También puede utilizar `Host.ResolvePath(filename)` para obtener la ruta de acceso absoluta de un archivo en el proyecto. Por ejemplo:
 
 ```csharp
 <#@ template debug="false" hostspecific="true" language="C#" #>
@@ -132,7 +132,7 @@ Valores válidos:
 
 `VB`
 
-El `language` atributo especifica el lenguaje ([!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] o [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]) que se va a usar para el código fuente en los bloques de instrucciones y expresiones. El archivo de código intermedio del que se genera el resultado utilizará este lenguaje. Este lenguaje no se relaciona con el lenguaje que genera la plantilla, que puede ser cualquier tipo de texto.
+El atributo `language` especifica el lenguaje ([!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] o [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]) que se va a usar para el código fuente en los bloques de instrucciones y expresiones. El archivo de código intermedio del que se genera el resultado utilizará este lenguaje. Este lenguaje no se relaciona con el lenguaje que genera la plantilla, que puede ser cualquier tipo de texto.
 
 Por ejemplo:
 

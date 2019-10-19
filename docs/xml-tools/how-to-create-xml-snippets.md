@@ -1,21 +1,21 @@
 ---
-title: Procedimiento Crear fragmentos XML
+title: Crear fragmentos de código XML
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: d8556dd7-1382-4af7-ba80-3e873c9416be
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5d5ba351c20328829c05168d846fb7bffad7c11d
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: eb511ba6f2eea9c56be4e826c3b689856c22214a
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68926505"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72645935"
 ---
-# <a name="how-to-create-xml-snippets"></a>Procedimiento Creación de fragmentos XML
+# <a name="how-to-create-xml-snippets"></a>Cómo: crear fragmentos de código XML
 
 El editor XML se puede utilizar para crear nuevos fragmentos XML. El editor incluye un fragmento XML, llamado "Fragmento", que es un fragmento reutilizable que permite la creación de nuevos fragmentos XML.
 
@@ -43,7 +43,7 @@ Para crear un nuevo fragmento de código XML, cree un nuevo archivo XML y use la
 
 ## <a name="snippet-description"></a>Descripción del fragmento de código
 
-En esta sección se describen algunos de los elementos principales del fragmento reutilizable. Para obtener más información sobre los elementos de esquema utilizados por los fragmentos XML, vea referencia de esquemas de [fragmentos de código](../ide/code-snippets-schema-reference.md).
+En esta sección se describen algunos de los elementos principales del fragmento reutilizable. Para obtener más información sobre los elementos de esquema utilizados por los fragmentos XML, vea [referencia de esquemas de fragmentos de código](../ide/code-snippets-schema-reference.md).
 
 ### <a name="snippettype-element"></a>elemento SnippetType
 
@@ -56,9 +56,9 @@ El editor admite dos tipos de fragmentos:
 </SnippetTypes>
 ```
 
-El `Expansion` tipo determina si el fragmento de código aparece cuando se invoca el comando **Insertar fragmento de código** . El `SurroundsWith` tipo determina si el fragmento de código aparece al invocar el comando **rodear con** .
+El tipo de `Expansion` determina si el fragmento de código aparece al invocar el comando **Insertar fragmento** . El tipo de `SurroundsWith` determina si el fragmento de código aparece al invocar el comando **rodear con** .
 
-### <a name="code-element"></a>Elemento de código
+### <a name="code-element"></a>elemento Code
 
 El elemento `Code` define el texto XML que se insertará cuando se invoque el fragmento.
 
@@ -104,7 +104,7 @@ El elemento `Literal` se utiliza para identificar el texto de sustitución que s
 </Literal
 ```
 
-Los literales también pueden hacer referencia a funciones. El editor XML incluye una función denominada **LookupPrefix**. La función **LookupPrefix** busca el URI de espacio de nombres especificado desde la ubicación del documento XML desde la que se invoca este fragmento de código y devuelve el prefijo de espacio de nombres definido para ese espacio de nombres, si existe, e incluye los dos puntos (:) en ese nombre. El siguiente es un ejemplo de un `Literal` elemento que utiliza la función **LookupPrefix** .
+Los literales también pueden hacer referencia a funciones. El editor XML incluye una función denominada **LookupPrefix**. La función **LookupPrefix** busca el URI de espacio de nombres especificado desde la ubicación del documento XML desde la que se invoca este fragmento de código y devuelve el prefijo de espacio de nombres definido para ese espacio de nombres, si existe, e incluye los dos puntos (:) en ese nombre. El siguiente es un ejemplo de un elemento `Literal` que utiliza la función **LookupPrefix** .
 
 ```xml
 <Literal Editable="false">
@@ -118,5 +118,5 @@ Luego, la variable $prefix$ puede utilizarse en cualquier parte del fragmento XM
 ## <a name="see-also"></a>Vea también
 
 - [Fragmentos de código XML](../xml-tools/xml-snippets.md)
-- [Procedimientos: Usar fragmentos XML](../xml-tools/how-to-use-xml-snippets.md)
-- [Cómo: Generar un fragmento de código XML a partir de un esquema XML](../xml-tools/how-to-generate-an-xml-snippet-from-an-xml-schema.md)
+- [Cómo: usar fragmentos de código XML](../xml-tools/how-to-use-xml-snippets.md)
+- [Cómo: generar un fragmento de código XML a partir de un esquema XML](../xml-tools/how-to-generate-an-xml-snippet-from-an-xml-schema.md)

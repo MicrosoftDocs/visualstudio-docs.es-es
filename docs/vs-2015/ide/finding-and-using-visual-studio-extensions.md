@@ -12,15 +12,15 @@ helpviewer_keywords:
 - managing extensions visual studio
 ms.assetid: 4ca92d93-31b9-47ef-8109-4a429d9e2ca3
 caps.latest.revision: 47
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: f4878827ae65a8f42e8225c7daab207a27a0614a
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: df6219a66b0f6c85e197b209741706abc7ce3d06
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63426387"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72655874"
 ---
 # <a name="finding-and-using-visual-studio-extensions"></a>Buscar y usar extensiones de Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,17 +33,17 @@ Las extensiones de Visual Studio son paquetes de códigos que se ejecutan dentro
 > A partir de Visual Studio 2015, las extensiones de la Galería de Visual Studio se actualizarán automáticamente.  Puede cambiar esta configuración en el cuadro de diálogo **Extensiones y actualizaciones** .  Vea la sección sobre **Actualizaciones automáticas de extensión** a continuación para obtener más información.
 
 ## <a name="finding-visual-studio-extensions"></a>Buscar extensiones de Visual Studio
- Puede instalar extensiones desde la [Visual Studio Marketplace](https://marketplace.visualstudio.com/) o [Galería de ejemplos](https://code.msdn.microsoft.com/vstudio) en el sitio Web de Microsoft. Las extensiones pueden ser controles, ejemplos, plantillas, herramientas u otros componentes que agregan funcionalidad a Visual Studio. Visual Studio admite extensiones con el formato de paquete VSIX; esto incluye plantillas de proyecto, plantillas de elementos, elementos del **Cuadro de herramientas** , componentes de Managed Extension Framework (MEF) y VSPackages. También puede descargar e instalar extensiones basadas en MSI, pero el cuadro de diálogo **Extensiones y actualizaciones** no puede habilitarlas ni deshabilitarlas. La Galería de Visual Studio contiene extensiones VSIX y MSI.
+ Puede instalar las extensiones de la [Visual Studio Marketplace](https://marketplace.visualstudio.com/) o de la [Galería de ejemplos](https://code.msdn.microsoft.com/vstudio) en el sitio web de Microsoft. Las extensiones pueden ser controles, ejemplos, plantillas, herramientas u otros componentes que agregan funcionalidad a Visual Studio. Visual Studio admite extensiones con el formato de paquete VSIX; esto incluye plantillas de proyecto, plantillas de elementos, elementos del **Cuadro de herramientas** , componentes de Managed Extension Framework (MEF) y VSPackages. También puede descargar e instalar extensiones basadas en MSI, pero el cuadro de diálogo **Extensiones y actualizaciones** no puede habilitarlas ni deshabilitarlas. La Galería de Visual Studio contiene extensiones VSIX y MSI.
 
 ## <a name="installing-or-uninstalling-visual-studio-extensions"></a>Instalar o desinstalar extensiones de Visual Studio
- En **Extensiones y actualizaciones**, busque la extensión que desea instalar. (Si conoce el nombre o parte del nombre de la extensión, puede buscar en la ventana **Búsqueda en la Galería de Visual Studio**). Haga clic en **Descargar** y, después, en **Instalar**. Para cargar la extensión, debe reiniciar Visual Studio.
+ En **Extensiones y actualizaciones**, busque la extensión que desea instalar. (Si conoce el nombre o parte del nombre de la extensión, puede buscar en la ventana Buscar en la **Galería de Visual Studio** ). Haga clic en **Descargar**y, a continuación, en **instalar**. Para cargar la extensión, debe reiniciar Visual Studio.
 
  Si intenta instalar una extensión que tiene dependencias, el instalador comprueba si están instaladas. Si no están instaladas, el cuadro de diálogo **Extensiones y actualizaciones** muestra las dependencias que se deben instalar antes de poder instalar la extensión.
 
  Si desea dejar de usar una extensión, puede deshabilitarla o desinstalarla. Al deshabilitar una extensión esta sigue instalada pero está descargada. Solo puede deshabilitar las extensiones VSIX; las extensiones que se instalaron mediante MSI solo se pueden desinstalar. Busque la extensión y haga clic **Desinstalar** o **Deshabilitar**. Para descargar una extensión deshabilitada, debe reiniciar Visual Studio.
 
 ## <a name="per-user-and-administrative-extensions"></a>Extensiones por usuario y administrativas
- Las mayoría de las extensiones son extensiones por usuario y están instaladas en la carpeta **%LocalAppData%\Microsoft\VisualStudio\\<versión de Visual Studio\>\Extensions\\**. Algunas extensiones son extensiones administrativas y están instaladas en la carpeta **\<<carpeta de instalación de Visual Studio>\Common7\IDE\Extensions\\**.
+ Las mayoría de las extensiones son extensiones por usuario y están instaladas en la carpeta **%LocalAppData%\Microsoft\VisualStudio\\<versión de Visual Studio\>\Extensions\\** . Algunas extensiones son extensiones administrativas y están instaladas en la carpeta **\<<carpeta de instalación de Visual Studio>\Common7\IDE\Extensions\\** .
 
  Para proteger el sistema frente a extensiones que pueden contener errores o código malintencionado, puede limitar que las extensiones por usuario solo se carguen cuando Visual Studio se ejecuta con permisos de usuario normales. Esto significa que las extensiones por usuario están deshabilitadas cuando Visual Studio se ejecuta con permisos de usuario administrativo. Para ello, vaya a la página de opciones **Extensiones y actualizaciones** (**Herramientas / Opciones**, **Entorno**, **Extensiones y actualizaciones**, o simplemente escriba **Extensión** en la ventana **Inicio rápido** ). Desactive la casilla **Cargar extensiones por usuario al ejecutar como administrador** y reinicie Visual Studio.
 

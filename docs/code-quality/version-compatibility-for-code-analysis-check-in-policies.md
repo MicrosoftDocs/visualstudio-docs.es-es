@@ -6,17 +6,17 @@ helpviewer_keywords:
 - version compatibility, code analysis check-in policy
 - check-in policies, version compatibility for code analysis
 ms.assetid: 1af376e3-3be7-4445-803b-76a858567a5b
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c233d174922c0853d771356e0b68185c51c368ea
-ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
+ms.openlocfilehash: 8385e2b36d09f029c4b8625e58cd99ecc06ea226
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72448735"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72649021"
 ---
 # <a name="version-compatibility-for-code-analysis-check-in-policies"></a>Compatibilidad de versiones para las directivas de protección de análisis de código
 

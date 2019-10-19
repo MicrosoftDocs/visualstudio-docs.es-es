@@ -6,15 +6,15 @@ ms.technology: vs-ide-test
 ms.topic: troubleshooting
 ms.assetid: 61c7e44d-2780-4df5-9bcb-49e40c1152fc
 caps.latest.revision: 7
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: b2efecdefb693653ff9916e798d1a11afe44e4a5
-ms.sourcegitcommit: 59e5758036223ee866f3de5e3c0ab2b6dbae97b6
+ms.openlocfilehash: 4eee70b3184496e8dbb7d784501a5cac2aac00ee
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "68416901"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72672113"
 ---
 # <a name="troubleshooting-code-analysis-issues"></a>Solucionar problemas de análisis de código
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

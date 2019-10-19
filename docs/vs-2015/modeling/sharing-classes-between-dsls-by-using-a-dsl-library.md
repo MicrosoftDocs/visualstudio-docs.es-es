@@ -1,69 +1,69 @@
 ---
-title: Compartir clases entre DSL mediante una biblioteca DSL | Documentos de Microsoft
+title: Compartir clases entre DSL mediante una biblioteca DSL | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-modeling
 ms.topic: conceptual
 ms.assetid: 509bd96b-3e66-47f4-8642-771421d0d0d5
 caps.latest.revision: 9
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 1f5b12dce533aa03cf12efd8a6f9fc26ce990e5d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 093cc277fa1cbe1915099fd9663fc1ccb797ca3a
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68150777"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72671178"
 ---
 # <a name="sharing-classes-between-dsls-by-using-a-dsl-library"></a>Compartir clases entre DSL mediante una biblioteca DSL
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-En el [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] SDK de modelado y visualización, puede crear una definición incompleta de DSL que pueden importar a otro DSL. Esto le permite incluir partes comunes de modelos similares.  
-  
-## <a name="creating-and-using-dsl-libraries"></a>Crear y usar las bibliotecas DSL  
-  
-#### <a name="to-create-a-dsl-library"></a>Para crear una biblioteca DSL  
-  
-1. Cree un nuevo proyecto DSL y elija la plantilla de solución de la biblioteca DSL.  
-  
-     Con un modelo vacío, se creará un único proyecto DSL.  
-  
-2. Puede agregar clases de dominio, relaciones, formas y así sucesivamente.  
-  
-     Los elementos de la biblioteca no es necesario que formar un único árbol de incrustación.  
-  
-     Para definir una relación que pueden utilizar los importadores, cree dos clases de dominio y crear la relación entre ellos.  
-  
-     Considere la posibilidad de la **modificador de herencia** de las clases de dominio para `Abstract`.  
-  
-3. Puede agregar elementos que se definen en el Explorador de DSL, por ejemplo, los generadores de conexiones.  
-  
-4. Puede agregar las personalizaciones que requieren código adicional, como las restricciones de validación.  
-  
-5. Haga clic en **Transformar todas las plantillas**.  
-  
-6. Compile el proyecto.  
-  
-7. Cuando se distribuye el DSL para otras personas usar, debe proporcionar el ensamblado compilado (DLL) y el archivo `DslDefinition.dsl`. Puede encontrar el ensamblado compilado en una carpeta bajo `Dsl\bin\*`  
-  
-#### <a name="to-import-a-dsl-library"></a>Para importar una biblioteca DSL  
-  
-1. En otra definición de DSL en **DSL Explorer**, haga clic en la clase raíz del DSL y, a continuación, haga clic en **agregar una nueva importación de DslLibrary**.  
-  
-2. En la ventana Propiedades, establezca la **ruta de acceso del archivo** de la biblioteca. Puede usar una ruta de acceso absoluta o relativa.  
-  
-    La biblioteca importada aparece en el Explorador de DSL, en modo de solo lectura.  
-  
-3. Puede usar las clases importadas como clases base. Crear una clase de dominio en la importación de DSL, y en las propiedades de ventana, establezca **clase Base** a una clase importada.  
-  
-4. Haga clic en Transformar todas las plantillas.  
-  
-5. En el proyecto DSL, agregue una referencia al ensamblado (DLL) que se compiló el proyecto de biblioteca DSL.  
-  
-6. Compile la solución.  
-  
-   Una biblioteca DSL que puede importar otras bibliotecas. Al importar una biblioteca, sus importaciones aparecen automáticamente en el Explorador de DSL.  
-  
-## <a name="see-also"></a>Vea también  
+En el SDK de visualización y modelado de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], puede crear una definición de DSL incompleta que se puede importar en otro DSL. Esto le permite factorizar partes comunes de modelos similares.
+
+## <a name="creating-and-using-dsl-libraries"></a>Crear y usar bibliotecas DSL
+
+#### <a name="to-create-a-dsl-library"></a>Para crear una biblioteca DSL
+
+1. Cree un nuevo proyecto DSL y elija la plantilla de solución biblioteca DSL.
+
+     Se creará un solo proyecto DSL con un modelo vacío.
+
+2. Puede Agregar clases de dominio, relaciones, formas, etc.
+
+     Los elementos de la biblioteca no tienen que formar un único árbol de incrustación.
+
+     Para definir una relación que puedan usar los importadores, cree dos clases de dominio y cree la relación entre ellas.
+
+     Considere la posibilidad de establecer el **modificador de herencia** de las clases de dominio en `Abstract`.
+
+3. Puede Agregar los elementos que defina en el explorador de DSL, como los generadores de conexiones.
+
+4. Puede Agregar personalizaciones que requieran código adicional, como restricciones de validación.
+
+5. Haga clic en **transformar todas las plantillas**.
+
+6. Compile el proyecto.
+
+7. Al distribuir el DSL para que lo usen otras personas, debe proporcionar el ensamblado compilado (DLL) y el `DslDefinition.dsl` de archivos. Puede encontrar el ensamblado compilado en una carpeta en `Dsl\bin\*`
+
+#### <a name="to-import-a-dsl-library"></a>Para importar una biblioteca DSL
+
+1. En otra definición de DSL, en el **Explorador de DSL**, haga clic con el botón secundario en la clase raíz del DSL y, a continuación, haga clic en **Agregar nueva DslLibrary importar**.
+
+2. En el ventana Propiedades, establezca la **ruta de acceso de archivo** de la biblioteca. Puede usar una ruta de acceso relativa o absoluta.
+
+    La biblioteca importada aparece en el explorador de DSL, en modo de solo lectura.
+
+3. Puede utilizar las clases importadas como clases base. Cree una clase de dominio en el ADSL de importación y, en el ventana Propiedades, establezca **clase base** en una clase importada.
+
+4. Haga clic en transformar todas las plantillas.
+
+5. Agregue al proyecto DSL una referencia al ensamblado (DLL) compilado por el proyecto de biblioteca DSL.
+
+6. Compile la solución.
+
+   Una biblioteca DSL puede importar otras bibliotecas. Al importar una biblioteca, sus importaciones también aparecen automáticamente en el explorador de DSL.
+
+## <a name="see-also"></a>Vea también
  [Cómo definir lenguajes específicos de dominio](../modeling/how-to-define-a-domain-specific-language.md)

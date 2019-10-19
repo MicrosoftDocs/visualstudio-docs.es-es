@@ -4,17 +4,17 @@ ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - text templates, template code
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3a3396caf4f1ade860f4727095d3305d86e837c3
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 128be69d356b371cc34f5e089df25546428bc83f
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63434172"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72606072"
 ---
 # <a name="text-template-control-blocks"></a>Bloques de control de las plantillas de texto
 Bloques de control le permite escribir código en su plantilla de texto para variar el resultado. Hay tres tipos de bloques de control, que se distinguen por los corchetes de apertura:
@@ -62,7 +62,7 @@ Found another one!
 ```
 
 > [!WARNING]
-> Utilice siempre {...} para delimitar instrucciones anidadas que contengan texto sin formato insertado. El siguiente ejemplo podría no funcionar correctamente:
+> Usar siempre {...} para delimitar instrucciones anidadas que contengan texto sin formato incrustado. El siguiente ejemplo podría no funcionar correctamente:
 >
 > `<# if (ShouldPrint) #> Some text. -- WRONG`
 >
@@ -141,11 +141,11 @@ Some text.
 ```
 
 ## <a name="how-to-use-control-blocks"></a>Cómo usar los bloques de control
- Todo el código de todos los bloques de control estándar y de expresiones de una única plantilla (incluido el código de las plantillas incluidas) se combina para formar el método `TransformText()` del código generado. (Para obtener más información acerca de cómo incluir otras plantillas de texto con el `include` la directiva, consulte [directivas de plantilla de texto T4](../modeling/t4-text-template-directives.md).)
+ Todo el código de todos los bloques de control estándar y de expresiones de una única plantilla (incluido el código de las plantillas incluidas) se combina para formar el método `TransformText()` del código generado. (Para obtener más información sobre cómo incluir otras plantillas de texto con la Directiva de `include`, vea [directivas de plantilla de texto T4](../modeling/t4-text-template-directives.md)).
 
  Cuando utilice bloques de control, debe tener en cuenta las siguientes consideraciones:
 
-- **Lenguaje.** En una plantilla de texto puede utilizar el código C# o Visual Basic. El lenguaje predeterminado es C#, pero puede especificar Visual Basic con el parámetro `language` de la directiva `template`. (Para obtener más información sobre la `template` la directiva, consulte [directivas de plantilla de texto T4](../modeling/t4-text-template-directives.md).)
+- **Módulo.** En una plantilla de texto puede utilizar el código C# o Visual Basic. El lenguaje predeterminado es C#, pero puede especificar Visual Basic con el parámetro `language` de la directiva `template`. (Para obtener más información sobre la Directiva de `template`, vea [directivas de plantilla de texto T4](../modeling/t4-text-template-directives.md)).
 
      El lenguaje que usa en los bloques de control no tiene nada que ver con el lenguaje o el formato del texto que genera en una plantilla de texto. Puede generar C# usando el código Visual Basic o viceversa.
 
@@ -167,4 +167,4 @@ Some text.
     <# } #>
     ```
 
-- **La refactorización.** Para conseguir que las plantillas de texto sean breves y fáciles de entender, se recomienda evitar un código repetitivo factorizando el código reutilizable en funciones del asistente en los bloques de características de clase, o bien creando su propia clase de plantilla de texto que herede de la clase Microsoft.VisualStudio.TextTemplating.TextTransformation.
+- **Refactorización.** Para conseguir que las plantillas de texto sean breves y fáciles de entender, se recomienda evitar un código repetitivo factorizando el código reutilizable en funciones del asistente en los bloques de características de clase, o bien creando su propia clase de plantilla de texto que herede de la clase Microsoft.VisualStudio.TextTemplating.TextTransformation.
