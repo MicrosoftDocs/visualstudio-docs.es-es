@@ -1,5 +1,5 @@
 ---
-title: IActiveScriptSiteDebug::GetApplication | Microsoft Docs
+title: 'Iactivescriptsitedebug (:: GetApplication | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 75560ead40809c77e4768f8318d754a512e5d7ba
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: e2ad81e3b6b1707f5a23271cf0abe3832266c07f
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62992635"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72570128"
 ---
 # <a name="iactivescriptsitedebuggetapplication"></a>IActiveScriptSiteDebug::GetApplication
-Devuelve el objeto de aplicación de depuración asociado a este sitio de la secuencia de comandos.  
+Devuelve el objeto de la aplicación de depuración asociado a este sitio de script.  
   
 ## <a name="syntax"></a>Sintaxis  
   
@@ -37,7 +37,7 @@ HRESULT GetApplication(
   
 #### <a name="parameters"></a>Parámetros  
  `ppda`  
- [out] Puntero al objeto de aplicación de depuración asociado con el sitio de la secuencia de comandos.  
+ enuncia Puntero al objeto de la aplicación de depuración asociado al sitio del script.  
   
 ## <a name="return-value"></a>Valor devuelto  
  El método devuelve un objeto `HRESULT`. Entre los valores posibles se incluyen los que se indican en la tabla siguiente, entre otros.  
@@ -48,8 +48,8 @@ HRESULT GetApplication(
 |`E_NOTIMPL`|El host no admite directamente la depuración.|  
   
 ## <a name="remarks"></a>Comentarios  
- El `GetApplication` método proporciona una forma de un host inteligente definir el objeto de aplicación a la que pertenece cada secuencia de comandos. Motores de script deben intentar llamar a este método para obtener su aplicación contenedora y recurrir a `IProcessDebugManager::GetDefaultApplication` si se produce un error.  
+ El método `GetApplication` proporciona una forma para que un host inteligente defina el objeto de aplicación al que pertenece cada script. Los motores de script deben intentar llamar a este método para obtener su aplicación contenedora y recurrir a `IProcessDebugManager::GetDefaultApplication` si se produce un error.  
   
 ## <a name="see-also"></a>Vea también  
- [IActiveScriptSiteDebug (interfaz)](../../winscript/reference/iactivescriptsitedebug-interface.md)   
+ @No__t_1 de la [interfaz iactivescriptsitedebug (](../../winscript/reference/iactivescriptsitedebug-interface.md)  
  [IProcessDebugManager::GetDefaultApplication](../../winscript/reference/iprocessdebugmanager-getdefaultapplication.md)

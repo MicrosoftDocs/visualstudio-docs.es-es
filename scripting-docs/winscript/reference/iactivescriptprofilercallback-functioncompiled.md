@@ -1,5 +1,5 @@
 ---
-title: IActiveScriptProfilerCallback::FunctionCompiled | Microsoft Docs
+title: 'Iactivescriptprofilercallback (:: FunctionCompiled | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -15,15 +15,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 1a039f7a682babebdccad276adce55e69bb8e0bc
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a17ce7548a6524df6911cdf952393020472b88ed
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62993324"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72576478"
 ---
 # <a name="iactivescriptprofilercallbackfunctioncompiled"></a>IActiveScriptProfilerCallback::FunctionCompiled
-Notifica al analizador de objeto que el scripting del motor encontró una función cuando se compila una secuencia de comandos.  
+Notifica al objeto de generador de perfiles que el motor de scripting encontró una función al compilar un script.  
   
 ## <a name="syntax"></a>Sintaxis  
   
@@ -38,25 +38,25 @@ HRESULT FunctionCompiled(
   
 #### <a name="parameters"></a>Parámetros  
  `functionId`  
- [in] El identificador único de la función. Este identificador es asignado por el motor de scripting.  
+ de IDENTIFICADOR único de la función. El motor de scripting asigna este identificador.  
   
  `scriptId`  
- [in] El identificador único de la secuencia de comandos que forma parte de la función.  
+ de IDENTIFICADOR único del script del que forma parte la función.  
   
  `pwszFunctionName`  
- [in] El nombre de la función, o null para una función anónima.  
+ de El nombre de la función o null para una función anónima.  
   
  `pwszFunctionNameHint`  
- [in] Nombre de la función, o null si el motor de scripting no infiere cualquier nombre deducido.  
+ de Nombre deducido de la función, o null si el motor de scripting no infiere ningún nombre.  
   
  `pIDebugDocumentContext`  
- [in] Si está disponible, el puntero a un `IUnknown` interfaz que el generador de perfiles debe consultar un [IDebugDocumentContext (interfaz)](../../winscript/reference/idebugdocumentcontext-interface.md) puntero. De lo contrario, es NULL.  
+ de Si está disponible, el puntero a una interfaz `IUnknown` que el generador de perfiles debe consultar para un puntero de la [interfaz idebugdocumentcontext (](../../winscript/reference/idebugdocumentcontext-interface.md) . De lo contrario, es NULL.  
   
 ## <a name="return-value"></a>Valor devuelto  
- Se omite el valor devuelto de este método por el motor de scripting.  
+ El motor de scripting omite el valor devuelto de este método.  
   
 ## <a name="remarks"></a>Comentarios  
- El motor de scripting puede proporcionar el contexto del documento solo si esto es compatible con el host.  
+ El motor de scripting puede proporcionar el contexto del documento solo si el host lo admite.  
   
 ## <a name="see-also"></a>Vea también  
  [IActiveScriptProfilerCallback (Interfaz)](../../winscript/reference/iactivescriptprofilercallback-interface.md)

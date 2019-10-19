@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 61c1efea7340425090adbdd1c9bc865c4a056d42
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.openlocfilehash: 92d1c327c168bfd2881ad014b7f9ab87f771b95d
+ms.sourcegitcommit: 08c144d290da373df841f04fc799e3133540a541
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "70987763"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72536079"
 ---
 # <a name="learn-productivity-tips-and-tricks-for-the-debugger-in-visual-studio"></a>Obtenga información sobre sugerencias y trucos de productividad para el depurador en Visual Studio
 
@@ -35,7 +35,7 @@ Si con frecuencia mantiene el mouse sobre las sugerencias de datos durante la de
 
 En la mayoría de los lenguajes compatibles con Visual Studio, puede editar el código en medio de una sesión de depuración y continuar con la depuración. Para usar esta característica, haga clic en el código con el cursor mientras está en pausa en el depurador, realice las ediciones y presione **F5**, **F10** o **F11** para continuar con la depuración.
 
-![Edición de código y depuración continua](../debugger/media/dbg-tips-edit-and-continue.gif "EditAndContinue")
+![Editar y continuar depuración](../debugger/media/dbg-tips-edit-and-continue.gif "EditAndContinue")
 
 Para obtener más información sobre el uso de la característica y las limitaciones de esta, consulte [Editar y continuar](../debugger/edit-and-continue.md).
 
@@ -100,13 +100,13 @@ Para ver los valores devueltos de las funciones, examine las funciones que apare
 
 Además, puede escribir funciones en la ventana **inmediato** para ver los valores devueltos. (Ábralo mediante **Depurar > Windows > inmediato**).
 
-![Ventana inmediato](../debugger/media/dbg-tips-immediate-window.png "ImmediateWindow")
+![Ventana Inmediato](../debugger/media/dbg-tips-immediate-window.png "ImmediateWindow")
 
 También puede usar [pseudovariables](../debugger/pseudovariables.md) en las ventanas **inspección** e **inmediato** , como `$ReturnValue`.
 
 ## <a name="string_visualizer"></a>Inspeccionar cadenas en un visualizador
 
-Al trabajar con cadenas, puede resultar útil ver toda la cadena con formato. Para ver una cadena de texto sin formato, XML, HTML o JSON, haga clic en el icono del(../debugger/media/dbg-tips-visualizer-icon.png "visualizador") ![VisualizerIcon]icono de lupa mientras mantiene el puntero sobre una variable que contiene un valor de cadena.
+Al trabajar con cadenas, puede resultar útil ver toda la cadena con formato. Para ver una cadena de texto sin formato, XML, HTML o JSON, haga clic en el icono de lupa ![VisualizerIcon](../debugger/media/dbg-tips-visualizer-icon.png "Icono del visualizador") mientras mantiene el puntero sobre una variable que contiene un valor de cadena.
 
 ![Abrir un visualizador de cadenas](../debugger/media/dbg-tips-string-visualizers.png "OpenStringVisualizer")
 
@@ -118,9 +118,9 @@ En el caso de otros tipos, como los objetos DataSet y DataTable que aparecen en 
 
 ## <a name="break-into-code-on-handled-exceptions"></a>Interrumpir el código en las excepciones controladas
 
-El depurador se interrumpe en el código en las excepciones no controladas. Sin embargo, las excepciones controladas (como las excepciones que `try/catch` se producen dentro de un bloque) también pueden ser una fuente de errores y es posible que desee investigar cuando se producen. Puede configurar el depurador para que divida en el código para las excepciones controladas también mediante la configuración de opciones en el cuadro de diálogo **configuración de excepciones** . Para abrir este cuadro de diálogo, elija **Depurar > configuración de excepciones de Windows >** .
+El depurador se interrumpe en el código en las excepciones no controladas. Sin embargo, las excepciones controladas (como las excepciones que se producen dentro de un bloque `try/catch`) también pueden ser una fuente de errores y es posible que desee investigar cuando se producen. Puede configurar el depurador para que divida en el código para las excepciones controladas también mediante la configuración de opciones en el cuadro de diálogo **configuración de excepciones** . Para abrir este cuadro de diálogo, elija **Depurar > configuración de excepciones de Windows >** .
 
-El cuadro de diálogo **configuración de excepciones** permite indicar al depurador que interrumpa el código en las excepciones específicas. En la ilustración siguiente, el depurador se interrumpe en el código `System.NullReferenceException` cada vez que se produce una. Para obtener más información, consulte [Administración de excepciones](../debugger/managing-exceptions-with-the-debugger.md).
+El cuadro de diálogo **configuración de excepciones** permite indicar al depurador que interrumpa el código en las excepciones específicas. En la ilustración siguiente, el depurador se interrumpe en el código cada vez que se produce un `System.NullReferenceException`. Para obtener más información, consulte [Administración de excepciones](../debugger/managing-exceptions-with-the-debugger.md).
 
 ![Cuadro de diálogo Configuración de excepciones](../debugger/media/dbg-tips-exception-settings.png "ExceptionSettingsDialogBox")
 
@@ -130,9 +130,9 @@ Si necesita depurar los tipos de problemas comunes a las aplicaciones multiproce
 
 #### <a name="to-show-threads-in-your-source-code"></a>Para mostrar los subprocesos en el código fuente
 
-1. Durante la depuración, haga clic en el botón **Mostrar subprocesos en el origen** ![Mostrar subprocesos en el origen](../debugger/media/dbg-multithreaded-show-threads.png "ThreadMarker") en la barra de herramientas **depurar** .
+1. Durante la depuración, haga clic en el botón **Mostrar subprocesos en el origen** ![Mostrar subprocesos en origen](../debugger/media/dbg-multithreaded-show-threads.png "ThreadMarker") en la barra de herramientas **depurar** .
 
-2. Examine el margen interno izquierdo de la ventana. En esta línea, verá un icono de *marcador de subproceso* (../debugger/media/dbg-thread-marker.png "ThreadMarker") ![marcador de subprocesos]que se parece a dos subprocesos de tela. El marcador de subproceso indica que un subproceso se ha detenido en esa ubicación.
+2. Examine el margen interno izquierdo de la ventana. En esta línea, verá un ![marcador](../debugger/media/dbg-thread-marker.png "ThreadMarker") de subproceso de icono de *marcador* de subproceso que se parece a dos subprocesos de tela. El marcador de subproceso indica que un subproceso se ha detenido en esa ubicación.
 
     Observe que un punto de interrupción puede ocultar parcialmente un marcador de subproceso.
 
@@ -142,7 +142,7 @@ Si necesita depurar los tipos de problemas comunes a las aplicaciones multiproce
 
 ## <a name="examine-payloads-for-web-services-and-network-resources-uwp"></a>Examen de cargas para servicios web y recursos de red (UWP)
 
-En las aplicaciones UWP, puede analizar las operaciones de red realizadas `Windows.Web.Http` mediante la API. Puede usar esta herramienta para ayudar a depurar los servicios web y los recursos de red. Para usar la herramienta, seleccione **Depurar > generador de perfiles de rendimiento**. Seleccione **red**y, a continuación, elija **iniciar**. En la aplicación, recorra el escenario que use `Windows.Web.Http` y, después, seleccione **Detener recolección** para generar el informe.
+En las aplicaciones UWP, puede analizar las operaciones de red realizadas mediante la API de `Windows.Web.Http`. Puede usar esta herramienta para ayudar a depurar los servicios web y los recursos de red. Para usar la herramienta, seleccione **Depurar > generador de perfiles de rendimiento**. Seleccione **red**y, a continuación, elija **iniciar**. En la aplicación, recorra el escenario que use `Windows.Web.Http` y, después, seleccione **Detener recolección** para generar el informe.
 
 ![Herramienta de generación de perfiles de uso de red](../profiling/media/prof-tour-network-usage.png "NetworkUsageProfTool")
 
@@ -156,7 +156,7 @@ Para obtener más información, vea [Network Usage](../profiling/network-usage.m
 
 Para asociar a la aplicación en ejecución, el depurador carga los archivos de símbolos (. pdb) generados para la misma compilación exacta de la aplicación que está intentando depurar. En algunos escenarios, un pequeño conocimiento de los archivos de símbolos puede ser útil. Puede examinar cómo Visual Studio carga los archivos de símbolos mediante la ventana **módulos** .
 
-Para abrir la ventana **módulos** durante la depuración, seleccione **depurar > módulos de Windows >** . La ventana **módulos** puede indicarle qué módulos trata el depurador como código de usuario, o [*mi código*](../debugger/just-my-code.md), y el estado de carga de símbolos para el módulo. En la mayoría de los escenarios, el depurador busca automáticamente los archivos de símbolos para el código de usuario, pero si desea entrar en el código de .NET Framework, el código del sistema o el código de la biblioteca de terceros, se necesitan pasos adicionales para obtener los archivos de símbolos correctos.
+Para abrir la ventana **módulos** durante la depuración, seleccione **depurar > módulos de Windows >** . La ventana **módulos** puede indicarle qué módulos trata el depurador como código de usuario, o [*mi código*](../debugger/just-my-code.md), y el estado de carga de símbolos para el módulo. En la mayoría de los escenarios, el depurador busca automáticamente los archivos de símbolos para el código de usuario, pero si desea entrar en el código .NET, el código del sistema o el código de la biblioteca de terceros, o depurarlos, se requieren pasos adicionales para obtener los archivos de símbolos correctos.
 
 ![Ver información de símbolos en la ventana módulos](../debugger/media/dbg-tips-modules-window.png "ViewSymbolInformation")
 

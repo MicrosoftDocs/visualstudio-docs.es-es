@@ -1,5 +1,5 @@
 ---
-title: IDebugSyncOperation::InProgressAbort | Microsoft Docs
+title: 'Idebugsyncoperation (:: InProgressAbort | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,12 +17,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a794ea70d6d2fe937afb311e6961d53f22bd7ac2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 40974c738c071e52648297ac90a0ab89d9681435
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63004836"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72576667"
 ---
 # <a name="idebugsyncoperationinprogressabort"></a>IDebugSyncOperation::InProgressAbort
 Cancela una operación en curso en otro subproceso.  
@@ -42,13 +42,13 @@ HRESULT InProgressAbort();
 |Valor|Descripción|  
 |-----------|-----------------|  
 |`S_OK`|El método se realizó correctamente.|  
-|`E_NOTIMPL`|No se puede cancelar la operación.|  
+|`E_NOTIMPL`|La operación no se puede cancelar.|  
 |`E_ABORT`|No se pudo completar la operación.|  
   
 ## <a name="remarks"></a>Comentarios  
- El Administrador de procesos de depuración llama a este método desde el subproceso del depurador para cancelar una operación que está en curso en otro subproceso.  
+ El administrador de depuración de proceso llama a este método desde el subproceso del depurador para cancelar una operación que está en curso en otro subproceso.  
   
- Si el `InProgressAbort` método no puede completar la operación, devuelve `E_ABORT` tan pronto como sea posible. Este método puede devolver `E_NOTIMPL` si no se puede cancelar la operación.  
+ Si el método `InProgressAbort` no puede completar la operación, devuelve `E_ABORT` lo antes posible. Este método puede devolver `E_NOTIMPL` si la operación no se puede cancelar.  
   
 ## <a name="see-also"></a>Vea también  
  [IDebugSyncOperation (Interfaz)](../../winscript/reference/idebugsyncoperation-interface.md)

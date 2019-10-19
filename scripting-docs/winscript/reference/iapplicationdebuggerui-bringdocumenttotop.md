@@ -1,5 +1,5 @@
 ---
-title: IApplicationDebuggerUI::BringDocumentToTop | Microsoft Docs
+title: 'Iapplicationdebuggerui (:: BringDocumentToTop | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a8a88b44f609113670259492eb82491b16004d29
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b51e7b588750fc72e61840c4748c006eea732c22
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62991125"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72577794"
 ---
 # <a name="iapplicationdebuggeruibringdocumenttotop"></a>IApplicationDebuggerUI::BringDocumentToTop
-Ofrece interfaz de usuario de la ventana que contiene el documento de depuración especificado en la parte superior en el depurador.  
+Coloca la ventana que contiene el documento de depuración especificado en la parte superior de la interfaz de usuario del depurador.  
   
 ## <a name="syntax"></a>Sintaxis  
   
@@ -37,7 +37,7 @@ HRESULT BringDocumentToTop(
   
 #### <a name="parameters"></a>Parámetros  
  `pddt`  
- [in] Depurar el documento para dar a la parte superior de la interfaz de usuario del depurador.  
+ de Depure el documento que se va a colocar en la parte superior de la interfaz de usuario del depurador.  
   
 ## <a name="return-value"></a>Valor devuelto  
  El método devuelve un objeto `HRESULT`. Entre los valores posibles se incluyen los que se indican en la tabla siguiente, entre otros.  
@@ -48,7 +48,7 @@ HRESULT BringDocumentToTop(
 |`E_INVALIDARG`|No se conoce el documento.|  
   
 ## <a name="remarks"></a>Comentarios  
- Este método muestra la ventana que contiene el documento de depuración especificado en la parte superior en el depurador de interfaz de usuario.  
+ Este método coloca la ventana que contiene el documento de depuración especificado en la parte superior de la interfaz de usuario del depurador.  
   
 ## <a name="see-also"></a>Vea también  
  [IApplicationDebuggerUI (Interfaz)](../../winscript/reference/iapplicationdebuggerui-interface.md)

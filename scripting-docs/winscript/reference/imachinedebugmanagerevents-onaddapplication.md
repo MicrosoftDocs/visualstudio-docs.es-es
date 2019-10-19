@@ -1,5 +1,5 @@
 ---
-title: IMachineDebugManagerEvents::onAddApplication | Microsoft Docs
+title: 'Imachinedebugmanagerevents (:: onAddApplication | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f063e36296d6a5a77208bac2fe533274a6f9c07f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: fe710ce9a126e344fc88024b7bf5fd2b993e31b3
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62965804"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72576103"
 ---
 # <a name="imachinedebugmanagereventsonaddapplication"></a>IMachineDebugManagerEvents::onAddApplication
-Controla el evento cuando una aplicación se agrega a la ejecución lista de aplicaciones.  
+Controla el evento cuando se agrega una aplicación a la lista de aplicaciones en ejecución.  
   
 ## <a name="syntax"></a>Sintaxis  
   
@@ -38,10 +38,10 @@ HRESULT onAddApplication(
   
 #### <a name="parameters"></a>Parámetros  
  `pda`  
- [in] Aplicación que se agregó a la ejecución lista de aplicaciones.  
+ de Aplicación que se ha agregado a la lista de aplicaciones en ejecución.  
   
  `dwAppCookie`  
- [in] Cookie proporcionada cuando la aplicación se agregó a la lista de aplicaciones.  
+ de Cookie que se proporciona cuando la aplicación se ha agregado a la lista de aplicaciones.  
   
 ## <a name="return-value"></a>Valor devuelto  
  El método devuelve un objeto `HRESULT`. Entre los valores posibles se incluyen los que se indican en la tabla siguiente, entre otros.  
@@ -51,8 +51,8 @@ HRESULT onAddApplication(
 |`S_OK`|El método se realizó correctamente.|  
   
 ## <a name="remarks"></a>Comentarios  
- Este método indica que una aplicación se ha agregado a la que se ejecuta la lista de aplicaciones.  
+ Este método indica que se ha agregado una aplicación a la lista de aplicaciones en ejecución.  
   
 ## <a name="see-also"></a>Vea también  
- [IMachineDebugManagerEvents (interfaz)](../../winscript/reference/imachinedebugmanagerevents-interface.md)   
+ @No__t_1 de la [interfaz imachinedebugmanagerevents (](../../winscript/reference/imachinedebugmanagerevents-interface.md)  
  [IMachineDebugManagerEvents::onRemoveApplication](../../winscript/reference/imachinedebugmanagerevents-onremoveapplication.md)

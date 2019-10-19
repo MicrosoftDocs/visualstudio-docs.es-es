@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2ce642ee57112561ba687b7ebe962150ce4e268e
-ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
+ms.openlocfilehash: 1940680af30928b46dbb73616569d0db318dac18
+ms.sourcegitcommit: 08c144d290da373df841f04fc799e3133540a541
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72446538"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72535739"
 ---
 # <a name="mixed-recommended-rules-rule-set"></a>Conjunto de reglas Reglas recomendadas mixtas
 
@@ -240,23 +240,23 @@ Incluya este conjunto de reglas en cualquier conjunto de reglas personalizado qu
 |[C28307](../code-quality/c28307.md)|La anotación en el parámetro es obsoleta|
 |[C28350](../code-quality/c28350.md)|La anotación describe una situación no aplicable de forma condicional.|
 |[C28351](../code-quality/c28351.md)|La anotación describe dónde no se puede usar un valor dinámico (una variable) en la condición.|
-|[CA1001](../code-quality/ca1001-types-that-own-disposable-fields-should-be-disposable.md)|Los tipos que poseen campos descartables deben ser descartables|
-|[CA1009](../code-quality/ca1009-declare-event-handlers-correctly.md)|Declarar los controladores de evento correctamente|
-|[CA1016](../code-quality/ca1016-mark-assemblies-with-assemblyversionattribute.md)|Marcar los ensamblados con AssemblyVersionAttribute|
-|[CA1033](../code-quality/ca1033-interface-methods-should-be-callable-by-child-types.md)|Los tipos secundarios deben poder llamar a los métodos de interfaz|
-|[CA1049](../code-quality/ca1049-types-that-own-native-resources-should-be-disposable.md)|Los tipos que poseen recursos nativos deben ser descartables|
-|[CA1060](../code-quality/ca1060-move-p-invokes-to-nativemethods-class.md)|Mover P/Invokes a la clase NativeMethods|
-|[CA1061](../code-quality/ca1061-do-not-hide-base-class-methods.md)|No ocultar métodos de clase base|
-|[CA1063](../code-quality/ca1063-implement-idisposable-correctly.md)|Implementar IDisposable correctamente|
-|[CA1065](../code-quality/ca1065-do-not-raise-exceptions-in-unexpected-locations.md)|No producir excepciones en ubicaciones inesperadas|
-|[CA1301](../code-quality/ca1301-avoid-duplicate-accelerators.md)|Evitar los aceleradores duplicados|
-|[CA1400](../code-quality/ca1400-p-invoke-entry-points-should-exist.md)|Debe haber puntos de entrada P/Invoke|
-|[CA1401](../code-quality/ca1401-p-invokes-should-not-be-visible.md)|Los elementos P/Invoke no deben estar visibles|
-|[CA1403](../code-quality/ca1403-auto-layout-types-should-not-be-com-visible.md)|Los tipos de diseño automático no deben ser visibles a través de COM|
-|[CA1404](../code-quality/ca1404-call-getlasterror-immediately-after-p-invoke.md)|Llamar a GetLastError inmediatamente después de P/Invoke|
-|[CA1405](../code-quality/ca1405-com-visible-type-base-types-should-be-com-visible.md)|Los tipos base de tipos visibles a través de COM deben ser visibles a través de COM|
-|[CA1410](../code-quality/ca1410-com-registration-methods-should-be-matched.md)|Los métodos de registro COM deben coincidir|
-|[CA1415](../code-quality/ca1415-declare-p-invokes-correctly.md)|Declarar elementos P/Invoke correctamente|
+|[CA1001](../code-quality/ca1001.md)|Los tipos que poseen campos descartables deben ser descartables|
+|[CA1009](../code-quality/ca1009.md)|Declarar los controladores de evento correctamente|
+|[CA1016](../code-quality/ca1016.md)|Marcar los ensamblados con AssemblyVersionAttribute|
+|[CA1033](../code-quality/ca1033.md)|Los tipos secundarios deben poder llamar a los métodos de interfaz|
+|[CA1049](../code-quality/ca1049.md)|Los tipos que poseen recursos nativos deben ser descartables|
+|[CA1060](../code-quality/ca1060.md)|Mover P/Invokes a la clase NativeMethods|
+|[CA1061](../code-quality/ca1061.md)|No ocultar métodos de clase base|
+|[CA1063](../code-quality/ca1063.md)|Implementar IDisposable correctamente|
+|[CA1065](../code-quality/ca1065.md)|No producir excepciones en ubicaciones inesperadas|
+|[CA1301](../code-quality/ca1301.md)|Evitar los aceleradores duplicados|
+|[CA1400](../code-quality/ca1400.md)|Debe haber puntos de entrada P/Invoke|
+|[CA1401](../code-quality/ca1401.md)|Los elementos P/Invoke no deben estar visibles|
+|[CA1403](../code-quality/ca1403.md)|Los tipos de diseño automático no deben ser visibles a través de COM|
+|[CA1404](../code-quality/ca1404.md)|Llamar a GetLastError inmediatamente después de P/Invoke|
+|[CA1405](../code-quality/ca1405.md)|Los tipos base de tipos visibles a través de COM deben ser visibles a través de COM|
+|[CA1410](../code-quality/ca1410.md)|Los métodos de registro COM deben coincidir|
+|[CA1415](../code-quality/ca1415.md)|Declarar elementos P/Invoke correctamente|
 |[CA1821](../code-quality/ca1821.md)|Quitar finalizadores vacíos|
 |[CA1900](../code-quality/ca1900.md)|Los campos de tipo de valor deben ser portátiles|
 |[CA1901](../code-quality/ca1901.md)|Las declaraciones P/Invoke deben ser portátiles|

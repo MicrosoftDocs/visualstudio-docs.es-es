@@ -1,5 +1,5 @@
 ---
-title: Método Ijsdebugbreakpoint | Documentos de Microsoft
+title: 'IJsDebugBreakPoint:: Enable (método) | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -15,12 +15,12 @@ caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 14f827048db7c29e09938de3d1c70cd4d61a388d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 72f66bf2b0638d2061c2ba21ddeb5d9caf52fbc3
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62583235"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72577705"
 ---
 # <a name="ijsdebugbreakpointenable-method"></a>IJsDebugBreakPoint::Enable (Método)
 Habilita el punto de interrupción.  
@@ -37,7 +37,7 @@ HRESULT Enable(void);
  Devuelve E_UNEXPECTED si se llama en un punto de interrupción eliminado.  
   
 ## <a name="requirements"></a>Requisitos  
- **Encabezado:** jscript9diag.h  
+ **Encabezado:** jscript9diag. h  
   
 ## <a name="see-also"></a>Vea también  
  [IJsDebugBreakPoint (Interfaz)](../../winscript/reference/ijsdebugbreakpoint-interface.md)

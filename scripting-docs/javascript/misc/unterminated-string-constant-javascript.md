@@ -1,5 +1,5 @@
 ---
-title: Constante de cadena sin terminar (JavaScript) | Documentos de Microsoft
+title: Constante de cadena no terminada (JavaScript) | Microsoft Docs
 ms.date: 01/18/2017
 ms.prod: visual-studio-windows
 ms.technology: vs-javascript
@@ -14,23 +14,23 @@ ms.assetid: 5083809e-9828-4aea-b9b0-80f46d6f3812
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c3c5f38ba41e2cadfd0a8234413c63cc96b6744a
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: a140c7587d4ca00c66590a471cfb32827cf5f780
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63435638"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72575888"
 ---
 # <a name="unterminated-string-constant-javascript"></a>Constante de cadena sin terminar (JavaScript)
-No se terminó la constante de cadena con una comilla de cierre. Las constantes de cadena deben estar delimitadas por un par de comillas.  
+No finalizó la constante de cadena con una comilla de cierre. Las constantes de cadena se deben incluir entre comillas.  
   
 > [!NOTE]
-> Puede usar los pares coincidentes de las comillas simples o dobles. Las comillas dobles pueden incluirse en cadenas delimitadas por comillas simples y comillas simples puede incluirse en cadenas delimitadas por comillas dobles.  
+> Puede utilizar pares coincidentes de comillas simples o dobles. Las comillas dobles pueden estar dentro de las cadenas entre comillas simples, y las comillas simples pueden estar dentro de cadenas entre comillas dobles.  
   
 ### <a name="to-correct-this-error"></a>Para corregir este error  
   
 - Agregue la comilla de cierre al final de la cadena.  
   
 ## <a name="see-also"></a>Vea también  
- [Objeto de cadena](../../javascript/reference/string-object-javascript.md)   
+ [Objeto String](../../javascript/reference/string-object-javascript.md)    
  [toString (Método, Object)](../../javascript/reference/tostring-method-object-javascript.md)

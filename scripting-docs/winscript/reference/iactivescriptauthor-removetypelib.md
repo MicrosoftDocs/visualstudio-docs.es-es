@@ -1,5 +1,5 @@
 ---
-title: IActiveScriptAuthor::RemoveTypeLib | Microsoft Docs
+title: 'Iactivescriptauthor (:: RemoveTypeLib | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f8dd75bfa5474eb93a51af790f7efd6431a9aaa0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 182d13785b20f9c5ba298ab72cd8d28977d455ba
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62955140"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72576134"
 ---
 # <a name="iactivescriptauthorremovetypelib"></a>IActiveScriptAuthor::RemoveTypeLib
-Quita una biblioteca de tipos del espacio de nombres del motor de creación de script.  
+Quita una biblioteca de tipos del espacio de nombres del motor de creación de scripts.  
   
 ## <a name="syntax"></a>Sintaxis  
   
@@ -39,16 +39,16 @@ HRESULT RemoveTypeLib(
   
 #### <a name="parameters"></a>Parámetros  
  `rguidTypeLib`  
- [in] El CLSID (identificador de clase) de la biblioteca de tipos para quitar.  
+ de CLSID (identificador de clase) de la biblioteca de tipos que se va a quitar.  
   
  `dwMajor`  
- [in] El número de versión principal.  
+ de Número de versión principal.  
   
  `dwMinor`  
- [in] El número de versión secundaria.  
+ de Número de versión secundaria.  
   
 ## <a name="return-value"></a>Valor devuelto  
- Una clase `HRESULT`. Entre los valores posibles se incluyen los que se indican en la tabla siguiente, entre otros.  
+ Interfaz `HRESULT`. Entre los valores posibles se incluyen los que se indican en la tabla siguiente, entre otros.  
   
 |Valor|Descripción|  
 |-----------|-----------------|  

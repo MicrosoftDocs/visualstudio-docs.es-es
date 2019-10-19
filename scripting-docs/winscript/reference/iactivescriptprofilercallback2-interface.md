@@ -1,5 +1,5 @@
 ---
-title: IActiveScriptProfilerCallback2 (interfaz) | Documentos de Microsoft
+title: Interfaz Iactivescriptprofilercallback2 (| Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -13,33 +13,33 @@ caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b0a0df287db477c5bf768798f200ea0d97de6d1e
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 25f9616497192659df67feedfe16bd9ea0c5e3b1
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63385939"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72577298"
 ---
 # <a name="iactivescriptprofilercallback2-interface"></a>IActiveScriptProfilerCallback2 (Interfaz)
-Proporciona métodos que se utilizan el motor de scripting para notificar a un objeto de generador de perfiles cuando se producen eventos de Document Object Model (DOM). Esta interfaz se implementa mediante el objeto de generador de perfiles.  
+Proporciona métodos que el motor de scripting utiliza para notificar a un objeto de generador de perfiles cuando se producen eventos de Document Object Model (DOM). Esta interfaz se implementa mediante el objeto de generador de perfiles.  
   
 ## <a name="methods"></a>Métodos  
   
 |Método|Descripción|  
 |------------|-----------------|  
-|[IActiveScriptProfilerCallback2::OnFunctionEnterByName](../../winscript/reference/iactivescriptprofilercallback2-onfunctionenterbyname.md)|Notifica al objeto de generador de perfiles que el motor de scripting se va a ejecutar una llamada de función DOM.|  
-|[IActiveScriptProfilerCallback2::OnFunctionExitByName](../../winscript/reference/iactivescriptprofilercallback2-onfunctionexitbyname.md)|Notifica al analizador de objeto que el scripting del motor de terminado de ejecutar una llamada de función DOM.|  
+|[IActiveScriptProfilerCallback2::OnFunctionEnterByName](../../winscript/reference/iactivescriptprofilercallback2-onfunctionenterbyname.md)|Notifica al objeto de generador de perfiles que el motor de scripting va a ejecutar una llamada de función DOM.|  
+|[IActiveScriptProfilerCallback2::OnFunctionExitByName](../../winscript/reference/iactivescriptprofilercallback2-onfunctionexitbyname.md)|Notifica al objeto de generador de perfiles que el motor de scripting ha terminado de ejecutar una llamada de función DOM.|  
   
 ## <a name="remarks"></a>Comentarios  
- El `IActiveScriptProfilerCallback2` interfaz por primera vez con Internet Explorer 9.  
+ La interfaz de `IActiveScriptProfilerCallback2` se lanzó por primera vez con Internet Explorer 9.  
   
- Notificación de llamadas a funciones que no son llamadas en el DOM proporcionada por el [IActiveScriptProfilerCallback (interfaz)](../../winscript/reference/iactivescriptprofilercallback-interface.md).  
+ La [interfaz iactivescriptprofilercallback (](../../winscript/reference/iactivescriptprofilercallback-interface.md)proporciona la notificación de llamadas de función que no son llamadas a Dom.  
   
 > [!NOTE]
-> Para agregar la capacidad de iniciar y detener la generación de perfiles cuando se ejecuta una secuencia de comandos, llame a los métodos siguientes. Mediante estos métodos, se puede obtener la pila de llamadas completa si [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] se ejecuta al iniciar o detener la generación de perfiles.  
+> Para agregar la capacidad de iniciar y detener la generación de perfiles cuando se ejecuta un script, llame a los métodos siguientes. Con estos métodos, puede obtener la pila de llamadas completa si [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] se está ejecutando al iniciar o detener la generación de perfiles.  
 > 
-> - Llame a [IActiveScriptProfilerControl2::CompleteProfilerStart](../../winscript/reference/iactivescriptprofilercontrol2-completeprofilerstart.md) para notificar al generador de perfiles que ha iniciado la generación de perfiles.  
->   - Llame a [IActiveScriptProfilerControl2::PrepareProfilerStop](../../winscript/reference/iactivescriptprofilercontrol2-prepareprofilerstop.md) para notificar al generador de perfiles que pronto dejará de generación de perfiles.  
+> - Llame a [iactivescriptprofilercontrol2 (:: CompleteProfilerStart](../../winscript/reference/iactivescriptprofilercontrol2-completeprofilerstart.md) para notificar al generador de perfiles que ha iniciado la generación de perfiles.  
+>   - Llame a [iactivescriptprofilercontrol2 (::P repareprofilerstop](../../winscript/reference/iactivescriptprofilercontrol2-prepareprofilerstop.md) para notificar al generador de perfiles que detendrá pronto la generación de perfiles.  
   
 ## <a name="see-also"></a>Vea también  
  [Active Script Profiler (Interfaces)](../../winscript/reference/active-script-profiler-interfaces.md)

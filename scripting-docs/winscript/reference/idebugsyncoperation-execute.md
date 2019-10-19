@@ -1,5 +1,5 @@
 ---
-title: IDebugSyncOperation::Execute | Microsoft Docs
+title: 'Idebugsyncoperation (:: Execute | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a2bc204169ff94a240e363eb8caa35ec8c7de9be
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 25da02e6736cc2f8ac27c82f922bd515e791bef1
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63004876"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72576694"
 ---
 # <a name="idebugsyncoperationexecute"></a>IDebugSyncOperation::Execute
-Sincrónicamente realiza la operación y devuelve.  
+Realiza la operación sincrónicamente y devuelve.  
   
 ## <a name="syntax"></a>Sintaxis  
   
@@ -37,7 +37,7 @@ HRESULT Execute(
   
 #### <a name="parameters"></a>Parámetros  
  `ppunkResult`  
- [out] El parámetro del objeto devuelto por la operación.  
+ enuncia Parámetro de objeto devuelto por la operación.  
   
 ## <a name="return-value"></a>Valor devuelto  
  El método devuelve un objeto `HRESULT`. Entre los valores posibles se incluyen los que se indican en la tabla siguiente, entre otros.  
@@ -45,10 +45,10 @@ HRESULT Execute(
 |Valor|Descripción|  
 |-----------|-----------------|  
 |`S_OK`|El método se realizó correctamente.|  
-|`E_ABORT`|Se anuló la operación mediante una llamada a la `IDebugSyncOperation::InProgressAbort` método.|  
+|`E_ABORT`|La operación se anuló llamando al método `IDebugSyncOperation::InProgressAbort`.|  
   
 ## <a name="remarks"></a>Comentarios  
- El Administrador de procesos de depuración en el subproceso de destino llama a la `Execute` método sincrónicamente.  
+ El administrador de depuración del proceso en el subproceso de destino llama sincrónicamente al método `Execute`.  
   
 ## <a name="see-also"></a>Vea también  
  [IDebugSyncOperation (Interfaz)](../../winscript/reference/idebugsyncoperation-interface.md)

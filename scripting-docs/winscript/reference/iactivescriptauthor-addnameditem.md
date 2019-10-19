@@ -1,5 +1,5 @@
 ---
-title: IActiveScriptAuthor::AddNamedItem | Documentos de Microsoft
+title: 'Iactivescriptauthor (:: AddNamedItem | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 19
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 95bc529db8129c4e9af1ed9f9dc3d91de9686223
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: f0d2f08a49fdc768e87152bf486ce48687c79e68
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63411391"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72577256"
 ---
 # <a name="iactivescriptauthoraddnameditem"></a>IActiveScriptAuthor::AddNamedItem
-Agrega el nombre de un elemento de nivel de raíz para el espacio de nombres del motor de creación de script. Un *elemento de nivel de raíz* es un objeto que puede contener métodos y propiedades, y que también puede contener un origen de eventos.  
+Agrega el nombre de un elemento de nivel de raíz al espacio de nombres del motor de creación de scripts. Un *elemento de nivel de raíz* es un objeto que puede contener propiedades y métodos, y que también puede contener un origen de eventos.  
   
 ## <a name="syntax"></a>Sintaxis  
   
@@ -39,25 +39,25 @@ HRESULT AddNamedItem(
   
 #### <a name="parameters"></a>Parámetros  
  `pszName`  
- [in] El nombre del elemento tal como se ve desde la secuencia de comandos. El nombre debe ser único y con persistencia.  
+ de Nombre del elemento tal como se ve en el script. El nombre debe ser único y puede ser persistente.  
   
  `dwFlags`  
- [in] Marcas que están asociadas con el elemento con nombre. Puede ser una combinación de los siguientes valores:  
+ de Marcas asociadas al elemento con nombre. Puede ser una combinación de los siguientes valores:  
   
 |Constante|Valor|Descripción|  
 |--------------|-----------|-----------------|  
-|SCRIPTITEM_ISVISIBLE|0x00000002|Indica que el nombre del elemento está disponible en el espacio de nombres de la secuencia de comandos. Esto permite el acceso a propiedades, métodos y eventos del elemento.<br /><br /> Por convención, las propiedades del elemento son a miembros de secundarios del elemento. Por lo tanto, todas las propiedades del objeto secundario y métodos (y sus miembros secundarios, de forma recursiva) son accesibles.|  
-|SCRIPTITEM_ISSOURCE|0x00000004|Indica que el script puede tener controladores de eventos de script de eventos de elemento de origen.|  
-|SCRIPTITEM_GLOBALMEMBERS|0x00000008|Indica que el elemento es una colección de propiedades y métodos que están asociados con la secuencia de comandos globales. Sus miembros se crean como métodos y variables globales.|  
-|SCRIPTITEM_ISPERSISTENT|0x00000040|Indica que el elemento debe guardarse si se guarda el script de motor de creación.|  
-|SCRIPTITEM_CODEONLY|0x00000200|Indica que el elemento con nombre representa un objeto de sólo código, y no tiene un miembro a crear.|  
-|SCRIPTITEM_NOCODE|0x00000400|Indica que el elemento con nombre es simplemente un nombre que se va a agregar, y no tiene nada que crear.|  
+|SCRIPTITEM_ISVISIBLE|0x00000002|Indica que el nombre del elemento está disponible en el espacio de nombres del script. Esto permite el acceso a las propiedades, los métodos y los eventos del elemento.<br /><br /> Por Convención, las propiedades del elemento incluyen los miembros secundarios del elemento. Por lo tanto, se puede tener acceso a todas las propiedades y métodos de los objetos secundarios (y sus miembros secundarios, de forma recursiva).|  
+|SCRIPTITEM_ISSOURCE|0x00000004|Indica los eventos del origen del elemento que el script puede tener controladores de eventos de script.|  
+|SCRIPTITEM_GLOBALMEMBERS|0x00000008|Indica que el elemento es una colección de propiedades y métodos globales que están asociados con el script. Sus miembros se crean como variables y métodos globales.|  
+|SCRIPTITEM_ISPERSISTENT|0x00000040|Indica que se debe guardar el elemento si se guarda el motor de creación de scripts.|  
+|SCRIPTITEM_CODEONLY|0x00000200|Indica que el elemento con nombre representa un objeto de solo código y no tiene un miembro para crear.|  
+|SCRIPTITEM_NOCODE|0x00000400|Indica que el elemento con nombre es simplemente un nombre que se agrega y no tiene nada que crear.|  
   
  `pdisp`  
- [in] El `IDispatch` de la `NamedItem` objeto que se usa para recopilar el origen del evento, propiedades o métodos.  
+ de @No__t_0 del objeto de `NamedItem` que se usa para recopilar métodos, propiedades o el origen del evento.  
   
 ## <a name="return-value"></a>Valor devuelto  
- Una clase `HRESULT`. Entre los valores posibles se incluyen los que se indican en la tabla siguiente, entre otros.  
+ Interfaz `HRESULT`. Entre los valores posibles se incluyen los que se indican en la tabla siguiente, entre otros.  
   
 |Valor|Descripción|  
 |-----------|-----------------|  
@@ -66,5 +66,5 @@ HRESULT AddNamedItem(
 ## <a name="remarks"></a>Comentarios  
   
 ## <a name="see-also"></a>Vea también  
- [IActiveScriptAuthor (interfaz)](../../winscript/reference/iactivescriptauthor-interface.md)   
+ @No__t_1 de la [interfaz iactivescriptauthor (](../../winscript/reference/iactivescriptauthor-interface.md)  
  [IActiveScriptAuthor::RemoveNamedItem](../../winscript/reference/iactivescriptauthor-removenameditem.md)

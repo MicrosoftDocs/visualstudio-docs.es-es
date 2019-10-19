@@ -1,5 +1,5 @@
 ---
-title: Método Ijsdebugbreakpoint | Documentos de Microsoft
+title: 'IJsDebugBreakPoint:: IsEnabled (método) | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -15,12 +15,12 @@ caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b99df17f73896b4dd04481315b04e1672a56285a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 25d66b7f8691a74eac77e9a90ec610fa21ec688e
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62583098"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72577672"
 ---
 # <a name="ijsdebugbreakpointisenabled-method"></a>IJsDebugBreakPoint::IsEnabled (Método)
 Determina si el punto de interrupción está habilitado.  
@@ -35,7 +35,7 @@ HRESULT IsEnabled(
   
 #### <a name="parameters"></a>Parámetros  
  `pIsEnabled`  
- [out] Devuelve true si el punto de interrupción está habilitado; en caso contrario, devuelve false.  
+ enuncia Devuelve true si el punto de interrupción está habilitado; de lo contrario, devuelve false.  
   
 ## <a name="return-value"></a>Valor devuelto  
   
@@ -43,7 +43,7 @@ HRESULT IsEnabled(
  Devuelve E_UNEXPECTED si se llama en un punto de interrupción eliminado.  
   
 ## <a name="requirements"></a>Requisitos  
- **Encabezado:** jscript9diag.h  
+ **Encabezado:** jscript9diag. h  
   
 ## <a name="see-also"></a>Vea también  
  [IJsDebugBreakPoint (Interfaz)](../../winscript/reference/ijsdebugbreakpoint-interface.md)
