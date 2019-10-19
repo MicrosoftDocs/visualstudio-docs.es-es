@@ -14,15 +14,15 @@ helpviewer_keywords:
 - Prerequisites dialog box
 ms.assetid: 53ac863c-77a0-409b-91e5-7a4bd8b8474e
 caps.latest.revision: 79
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 672c0ea4a4ec3c2d396da7b232ca085181d90b25
-ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
+ms.openlocfilehash: 367af4965c1e5a744a7ba6c801d74bc194a70ebb
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68869862"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72662181"
 ---
 # <a name="prerequisites-dialog-box"></a>Cuadro de diálogo Requisitos previos
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -66,4 +66,4 @@ Este cuadro de diálogo permite especificar los componentes necesarios que se in
 |**Windows Installer 4.5**|Este paquete instala la versión 4.5 redistribuible de Microsoft Windows Installer, que permite instalar proyectos de instalación de Windows Installer.|
 
 ## <a name="see-also"></a>Otras referencias
- [Página publicar, diseñador de proyectos](../../ide/reference/publish-page-project-designer.md) [Requisitos previos](../../deployment/application-deployment-prerequisites.md) de la implementación de aplicaciones [Redistribuir el .NET Framework](https://msdn.microsoft.com/a18d0456-fd89-493e-97f4-756505bfe287) [Implementación de requisitos previos para aplicaciones de 64 bits](../../deployment/deploying-prerequisites-for-64-bit-applications.md) [Información general sobre la compatibilidad con múltiples versiones de Visual Studio](../../ide/visual-studio-multi-targeting-overview.md)
+ [Página publicar,](../../ide/reference/publish-page-project-designer.md) [requisitos previos de implementación de aplicaciones](../../deployment/application-deployment-prerequisites.md) del diseñador de proyectos [redistribuir el .NET Framework](https://msdn.microsoft.com/a18d0456-fd89-493e-97f4-756505bfe287) [implementar requisitos previos para aplicaciones de 64 bits](../../deployment/deploying-prerequisites-for-64-bit-applications.md) [información general sobre la compatibilidad con múltiples versiones de Visual Studio](../../ide/visual-studio-multi-targeting-overview.md)
