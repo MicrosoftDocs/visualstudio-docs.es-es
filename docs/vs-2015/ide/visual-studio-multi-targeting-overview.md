@@ -11,15 +11,15 @@ helpviewer_keywords:
 - multitargeting [Visual Studio]
 ms.assetid: b1702c33-0672-4ebc-b779-2b324d6ea880
 caps.latest.revision: 39
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 12018ef5e4c20e436cc250ca9630ccc4bd942a0f
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: ba7566e4a6bdffc5e7075bc138832097415a7129
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65698158"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72667095"
 ---
 # <a name="visual-studio-multi-targeting-overview"></a>Información general sobre la compatibilidad con múltiples versiones (multi-targeting) en Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -78,7 +78,7 @@ En esta versión de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], puede especifi
 ## <a name="enabling-linq"></a>Habilitar LINQ
  Si elige como destino .NET Framework 3.5 o una versión posterior, se agregan de forma automática una referencia a System.Core y una importación de nivel de proyecto para System.Linq (solo en Visual Basic). Si quiere usar características de LINQ, también debe activar Option Infer (solo en Visual Basic). La referencia y la importación se quitan de forma automática si cambia el destino a una versión anterior de .NET Framework. Para obtener más información, consulte [Cómo: Crear un proyecto de LINQ](https://msdn.microsoft.com/library/a929e653-09a3-44be-881f-68ca33f192b2).
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Otras referencias
 [Compatibilidad con múltiples versiones](../msbuild/msbuild-multitargeting-overview.md)
 [.NET Framework Multi-Targeting for ASP.NET Web Projects (Compatibilidad con múltiples versiones de .NET Framework para proyectos web de ASP.NET)](https://msdn.microsoft.com/library/8b8145a9-62f6-4fc4-8a83-47b0487cbe76)
 [Requisitos del sistema y compatibilidad de la plataforma](/visualstudio/productinfo/vs2015-compatibility-vs)
