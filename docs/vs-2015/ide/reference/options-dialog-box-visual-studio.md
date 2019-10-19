@@ -13,15 +13,15 @@ helpviewer_keywords:
 - tools [Visual Studio], customizing
 ms.assetid: 02b09877-1df1-4531-a0d1-a4ca17c7f857
 caps.latest.revision: 23
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: bc659641e64bde9da4f1e05abf285fbdec1877e3
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: ed637943d7a849357338593ffc684e4f45c09a30
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65674842"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72662446"
 ---
 # <a name="options-dialog-box-visual-studio"></a>Opciones (Cuadro de diálogo) (Visual Studio)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -45,5 +45,5 @@ El cuadro de diálogo **Opciones** le permite configurar el entorno de desarroll
 ### <a name="show-all-settings"></a>Mostrar todas las configuraciones
  Al seleccionar o anular la selección de **Mostrar todas las configuraciones** se aplican todos los cambios que ha realizado en el cuadro de diálogo **Opciones**, incluso cuando todavía no ha hecho clic en **Aceptar**.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Otras referencias
  [Personalizar el editor](../../ide/customizing-the-editor.md)

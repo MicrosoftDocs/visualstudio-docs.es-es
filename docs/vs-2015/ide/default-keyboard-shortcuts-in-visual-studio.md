@@ -12,15 +12,15 @@ helpviewer_keywords:
 - keyboard shortcuts
 ms.assetid: c2c64648-00f8-4e48-a8a0-96c67cfd968c
 caps.latest.revision: 59
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 129fa00681fcd3a9f3b19370bb553fcd5146e46e
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 9bfd13bda3e3d7ba416772123ac59ff0136a3725
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65701092"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72665823"
 ---
 # <a name="default-keyboard-shortcuts-in-visual-studio"></a>Métodos abreviados de teclado predeterminados de Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -544,7 +544,7 @@ Puede acceder más fácilmente a una serie de comandos y ventanas en Visual Stud
 
 |Comandos|Métodos abreviados de teclado|
 |--------------|------------------------|
-|Debug.Graphics.CaptureFrame|Ninguna|
+|Debug.Graphics.CaptureFrame|None|
 |Graphics.MovePixelSelectionDown|Mayús+Alt+Flecha abajo|
 |Graphics.MovePixelSelectionLeft|Mayús+Alt+Flecha izquierda|
 |Graphics.MovePixelSelectionRight|Mayús+Alt+Flecha derecha|
@@ -1159,5 +1159,5 @@ Puede acceder más fácilmente a una serie de comandos y ventanas en Visual Stud
 |XsdDesigner.ShowGraphView|Ctrl+3|
 |XsdDesigner.ShowStartView|Ctrl+1|
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Otras referencias
  [Editor de imágenes para iconos](https://msdn.microsoft.com/library/586d2b8b-0348-4883-a85d-1ff0ddbf14dd) [Uso de IntelliSense](../ide/using-intellisense.md)

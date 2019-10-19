@@ -8,14 +8,14 @@ helpviewer_keywords:
 - coded UI tests, best practices
 ms.assetid: d5aef766-a24c-4f1f-ac9b-e5462b6627d4
 caps.latest.revision: 41
-ms.author: gewarren
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 1a631823ce39e5655bba611f90c2869e8dff1d8f
-ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
+ms.openlocfilehash: 2dffebeaa0349c149e319d20794f8b065baa5647
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68871671"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72660687"
 ---
 # <a name="best-practices-for-coded-ui-tests"></a>Procedimientos recomendados para las pruebas de IU codificadas
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,11 +45,11 @@ En este tema se describen los procedimientos recomendados para desarrollar prueb
 
 - Si cambia la interfaz de usuario (UI), vuelva a grabar los métodos de prueba o los métodos de aserción, o vuelva a grabar las secciones afectadas de un método de prueba existente.
 
-- Cree un archivo [UIMap](/previous-versions/dd580454(v=vs.140)) independiente para cada módulo de la aplicación sometida a prueba. Para obtener más información, consulte [Probar una aplicación grande con varios mapas de IU](../test/testing-a-large-application-with-multiple-ui-maps.md).
+- Cree un archivo [UIMap](/previous-versions/dd580454(v=vs.140)) separado para cada módulo de la aplicación bajo prueba. Para obtener más información, consulte [Probar una aplicación grande con varios mapas de IU](../test/testing-a-large-application-with-multiple-ui-maps.md).
 
 - En la aplicación sometida a prueba, utilice nombres descriptivos al crear los controles de IU. Esto proporciona más significado y facilidad de uso a los nombres de control generados automáticamente.
 
-- Si va a crear aserciones mediante la codificación con la API, cree un método para cada aserción en la parte de la clase [UIMap](/previous-versions/dd580454(v=vs.140)) que se encuentra en el `UIMap.cs` archivo. Llame a este método desde el método de prueba para ejecutar la aserción.
+- Si va a crear aserciones mediante la codificación con la API, cree un método para cada aserción en la parte de la clase [UIMap](/previous-versions/dd580454(v=vs.140)) que se encuentra en el archivo `UIMap.cs`. Llame a este método desde el método de prueba para ejecutar la aserción.
 
 - Si está codificando directamente con la API, utilice en el código las propiedades y los métodos de las clases generadas en el archivo `UIMap.Designer.cs` siempre que pueda. Estas clases hacen que el trabajo sea más fácil y más fiable, y le ayudarán a ser más productivo.
 
