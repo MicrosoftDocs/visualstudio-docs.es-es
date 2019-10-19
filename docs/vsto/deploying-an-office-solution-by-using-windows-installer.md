@@ -19,10 +19,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 20df85952b4e76e60d6e93067c1f1e7838b692cd
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.sourcegitcommit: 8a96a65676fd7a2a03b0803d7eceae65f3fa142b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/25/2019
+ms.lasthandoff: 10/18/2019
 ms.locfileid: "69551719"
 ---
 # <a name="deploy-an-office-solution-by-using-windows-installer"></a>Implementar una solución de Office mediante Windows Installer
@@ -59,7 +59,7 @@ Al usar Visual Studio para crear un archivo de Windows Installer, puede implemen
 
 Para obtener más información sobre cómo implementar una solución de Office mediante ClickOnce, vea [implementar una solución de Office mediante ClickOnce](../vsto/deploying-an-office-solution-by-using-clickonce.md).
 
-Para obtener información sobre cómo crear un archivo [!INCLUDE[vs_dev10_long](../sharepoint/includes/vs-dev10-long-md.md)]Windows Installer mediante, vea [implementar una solución de Visual Studio 2010 Tools para Office con Windows Installer](http://go.microsoft.com/fwlink/?LinkId=201807).
+Para obtener información sobre cómo crear un archivo de Windows Installer mediante [!INCLUDE[vs_dev10_long](../sharepoint/includes/vs-dev10-long-md.md)], consulte [implementar una solución de Visual Studio 2010 Tools para Office mediante Windows Installer](http://go.microsoft.com/fwlink/?LinkId=201807).
 
 ## <a name="Download"></a>Descargar ejemplos
 Este tema hace referencia a los ejemplos descargables siguientes.
@@ -107,7 +107,7 @@ Puede crear un archivo de Windows Installer mediante InstallShield Limited Editi
 
    Los ejemplos de complementos de VSTO asociados a este tema contienen un proyecto denominado **ExcelAddIn**. Los ejemplos de personalizaciones de nivel de documento contienen un proyecto denominado **ExcelWorkbook**. En este tema se hace referencia al proyecto de Office en la solución mediante uno de los dos nombres.
 
-2. En la barra de menús, elija **archivo** > **Agregar** > **nuevo proyecto**.
+2. En la barra de menús, elija **archivo**  > **Agregar**  > **nuevo proyecto**.
 
    Se abre el cuadro de diálogo **Agregar nuevo proyecto** .
 
@@ -127,13 +127,13 @@ Configure el proyecto **OfficeAddInSetup** para incluir el resultado del proyect
 
 1. En el **Explorador de soluciones**, expanda el nodo de proyecto **OfficeAddInSetup** y, a continuación, elija el archivo **Project Assistant** (Asistente para proyectos), que se muestra en la siguiente ilustración.
 
-   ![Archivo del asistente de proyectos en explorador de soluciones](../vsto/media/installshield-projectassistant.png "Archivo del asistente de proyectos en explorador de soluciones")
+   ![Archivo del asistente de proyectos en Explorador de soluciones](../vsto/media/installshield-projectassistant.png "Archivo de asistente para proyectos del Explorador de soluciones")
 
-2. En la barra de menús, elija **Ver** > **abierto**.
+2. En la barra de menús, elija **ver**  > **abrir**.
 
 3. En la parte inferior de la página **Project assistant** (Asistente para proyectos), elija el botón **Archivos de aplicación** , como se muestra en la siguiente ilustración.
 
-   ![El botón archivos de aplicación.](../vsto/media/installshield-applicationfiles.png "El botón archivos de aplicación.")
+   ![El botón archivos de aplicación.](../vsto/media/installshield-applicationfiles.png "Botón Archivos de aplicación.")
 
 4. En la página de **Archivos de aplicación** , elija el botón **Agregar resultados del proyecto** .
 
@@ -151,7 +151,7 @@ Configure el proyecto **OfficeAddInSetup** para incluir el resultado del proyect
 
    La página **Archivos de aplicación** contiene ahora el archivo de salida del proyecto, el manifiesto de implementación y el manifiesto de aplicación, como muestra la siguiente ilustración.
 
-   ![Archivos de salida del proyecto de instalación.](../vsto/media/installshield-outputfiles.png "Archivos de salida del proyecto de instalación.")
+   ![Archivos de salida del proyecto de instalación.](../vsto/media/installshield-outputfiles.png "Archivos de salida del proyecto de programa de instalación.")
 
 ## <a name="Configure"></a>Configurar los componentes dependientes como requisitos previos
 
@@ -165,9 +165,9 @@ En la aplicación de instalación, debe incluir los componentes siguientes y cua
 
 1. En el **Explorador de soluciones**, expanda el nodo de proyecto **OfficeAddInSetup** , expanda el nodo **Specify Application Data** (Especificar datos de la aplicación) y, a continuación, elija el archivo de **Redistributables** (Componentes redistribuibles), que se muestra en la siguiente ilustración.
 
-   ![El archivo redistribuible en explorador de soluciones](../vsto/media/installshield-redistributablesfile.png "El archivo redistribuible en explorador de soluciones")
+   ![El archivo redistribuible en Explorador de soluciones](../vsto/media/installshield-redistributablesfile.png "Archivo de redistribuibles del Explorador de soluciones")
 
-2. En la barra de menús, elija **Ver** > **abierto**.
+2. En la barra de menús, elija **ver**  > **abrir**.
 
    Se abre la página **Redistributables** .
 
@@ -216,7 +216,7 @@ La página **Redistributables** contiene un elemento denominado **Microsoft VSTO
    </properties>
    ```
 
-5. En la barra de menús del Bloc de notas, elija **archivo** > **Guardar**.
+5. En la barra de menús del Bloc de notas, elija **archivo**  > **Guardar**.
 
 6. En el cuadro de diálogo **Guardar como** , vaya a la carpeta **Escritorio** .
 
@@ -231,13 +231,13 @@ La página **Redistributables** contiene un elemento denominado **Microsoft VSTO
 
 10. En la carpeta **escritorio** , copie el archivo *Visual Studio 2010 Tools para Office Runtime. PRQ* en uno de los siguientes directorios del equipo.
 
-   Para sistemas operativos de 32 bits: *%ProgramFiles%\InstallShield\2013LE\SetupPrerequisites\\*
+   Para sistemas operativos de 32 bits: *%ProgramFiles%\InstallShield\2013LE\SetupPrerequisites \\*
 
-   Para sistemas operativos de 64 bits: *% ProgramFiles (x86)% \ 2013LE \ SetupPrerequisites\\*
+   Para sistemas operativos de 64 bits: *% ProgramFiles (x86)% \ 2013LE \ SetupPrerequisites \\*
 
 11. En la página **Redistributable** del proyecto de InstallShield, elija el botón de **actualizar** para actualizar la lista de componentes redistribuibles, como se muestra en la siguiente ilustración.
 
-   ![Botón actualizar.](../vsto/media/installshield-refreshbutton.png "Botón actualizar.")
+   ![Botón actualizar.](../vsto/media/installshield-refreshbutton.png "Botón Actualizar.")
 
 12. En la lista de componentes redistribuibles, active la casilla **Visual Studio 2010 Tools for Office Runtime** (Runtime de Visual Studio 2010 Tools para Office).
 
@@ -249,7 +249,7 @@ La página **Redistributables** contiene un elemento denominado **Microsoft VSTO
 
 1. En el **Explorador de soluciones**, expanda el nodo **OfficeAddInSetup** , después, expanda el nodo **Organize your Setup** (Organizar la instalación) y, por último, elija el archivo **General Information** (Información general).
 
-2. En la barra de menús, elija **Ver** > **abierto**.
+2. En la barra de menús, elija **ver**  > **abrir**.
 
 3. En la lista de propiedades, elija el botón **Examinar** junto a la propiedad **INSTALLDIR** .
 
@@ -273,7 +273,7 @@ Las instalaciones por usuario solo requieren un instalador, independientemente d
 
 1. En el **Explorador de soluciones**, expanda el nodo de proyecto **OfficeAddInSetup** , después, expanda el nodo **Organize Your Setup** (Organizar la instalación) y, por último, elija el archivo **General Information** (Información general).
 
-2. En la barra de menús, elija **Ver** > **abierto**.
+2. En la barra de menús, elija **ver**  > **abrir**.
 
    Aparecerán las propiedades del proyecto de instalación.
 
@@ -287,7 +287,7 @@ Las instalaciones por usuario solo requieren un instalador, independientemente d
 
 1. En el **Explorador de soluciones**, elija el nodo **Project Assistant** (Asistente para proyectos).
 
-   En la barra de menús, elija **Ver** > **abierto**.
+   En la barra de menús, elija **ver**  > **abrir**.
 
 2. En la parte inferior de la página **Project assistant** (Asistente para proyectos), elija el botón **Application Registry** (Registro de aplicaciones), como se muestra en la siguiente ilustración.
 
@@ -309,15 +309,15 @@ Las instalaciones por usuario solo requieren un instalador, independientemente d
 
 | Versión de Office<br /><br /> | Ruta de acceso de configuración de InstallShield<br /><br /> |
 |----------------------------| - |
-| 32 bits<br /><br /> | **HKEY_LOCAL_MACHINE\SOFTWARE(32-Bit)\Microsoft\Office\Excel\Addins\SampleCompany.ExcelAddIn**<br /><br /> |
-| 64 bits<br /><br /> | **HKEY_LOCAL_MACHINE\SOFTWARE(64-Bit)\Microsoft\Office\Excel\Addins\SampleCompany.ExcelAddIn**<br /><br /> |
+| 32 bits<br /><br /> | **HKEY_LOCAL_MACHINE\SOFTWARE (32 bits) \Microsoft\Office\Excel\Addins\SampleCompany.ExcelAddIn**<br /><br /> |
+| 64 bits<br /><br /> | **HKEY_LOCAL_MACHINE\SOFTWARE (64 bits) \Microsoft\Office\Excel\Addins\SampleCompany.ExcelAddIn**<br /><br /> |
 
    **Instaladores por equipo según la versión de Windows**
 
 | Versión de Windows<br /><br /> | Ruta de acceso de configuración de InstallShield<br /><br /> |
 |-----------------------------| - |
-| 32 bits<br /><br /> | **HKEY_LOCAL_MACHINE\SOFTWARE(32-Bit)\Microsoft\Office\Excel\Addins\SampleCompany.ExcelAddIn**<br /><br /> |
-| 64 bits<br /><br /> | **HKEY_LOCAL_MACHINE\SOFTWARE(32-Bit)\Microsoft\Office\Excel\Addins\SampleCompany.ExcelAddIn**<br /><br />**HKEY_LOCAL_MACHINE\SOFTWARE(64-Bit)\Microsoft\Office\Excel\Addins\SampleCompany.ExcelAddIn**<br /><br /> |
+| 32 bits<br /><br /> | **HKEY_LOCAL_MACHINE\SOFTWARE (32 bits) \Microsoft\Office\Excel\Addins\SampleCompany.ExcelAddIn**<br /><br /> |
+| 64 bits<br /><br /> | **HKEY_LOCAL_MACHINE\SOFTWARE (32 bits) \Microsoft\Office\Excel\Addins\SampleCompany.ExcelAddIn**<br /><br />**HKEY_LOCAL_MACHINE\SOFTWARE (64 bits) \Microsoft\Office\Excel\Addins\SampleCompany.ExcelAddIn**<br /><br /> |
 
    > [!NOTE]
    > Un instalador para Windows de 64 bits requiere dos rutas de acceso del registro, ya que es posible que los usuarios ejecuten las versiones de Office de 32 bits y de 64 bits en un equipo que ejecute Windows de 64 bits.
@@ -337,7 +337,7 @@ Las instalaciones por usuario solo requieren un instalador, independientemente d
 |--------------|--------|
 |Valor de cadena<br /><br />|**FriendlyName**<br /><br />|
 |Valor DWORD<br /><br />|**LoadBehavior**<br /><br />|
-|Valor de cadena<br /><br />|**Manifest**<br /><br />|
+|Valor de cadena<br /><br />|**Manifiesto**<br /><br />|
 
 8. Abra el menú contextual del valor **Description** y, a continuación, elija **Modificar**.
 
@@ -384,7 +384,7 @@ Para modificar las propiedades personalizadas, se crea un programa que quita la 
 
 ### <a name="to-create-a-program-that-modifies-document-properties"></a>Para crear un programa que modifique las propiedades del documento
 
-1. En la barra de menús, elija **archivo** > **Agregar** > **nuevo proyecto**.
+1. En la barra de menús, elija **archivo**  > **Agregar**  > **nuevo proyecto**.
 
    Aparece el cuadro de diálogo **Agregar nuevo proyecto** .
 
@@ -404,7 +404,7 @@ Para modificar las propiedades personalizadas, se crea un programa que quita la 
 
 7. En el **Explorador de soluciones**, elija el archivo **Program.cs** (para las aplicaciones de C#) o el archivo **Module1.vb** (para las aplicaciones de Visual Basic).
 
-8. En la barra de menús, elija **Ver** > **abierto**.
+8. En la barra de menús, elija **ver**  > **abrir**.
 
 9. Reemplace el contenido de todo el archivo por el código siguiente.
 
@@ -417,13 +417,13 @@ Para modificar las propiedades personalizadas, se crea un programa que quita la 
 
 1. En el **Explorador de soluciones**, expanda el nodo de proyecto **OfficeAddInSetup** y, a continuación, elija el archivo **Project Assistant** (Asistente para proyectos), que se muestra en la siguiente ilustración.
 
-   ![Archivo del asistente de proyectos en explorador de soluciones](../vsto/media/installshield-projectassistant.png "Archivo del asistente de proyectos en explorador de soluciones")
+   ![Archivo del asistente de proyectos en Explorador de soluciones](../vsto/media/installshield-projectassistant.png "Archivo de asistente para proyectos del Explorador de soluciones")
 
-2. En la barra de menús, elija **Ver** > **abierto**.
+2. En la barra de menús, elija **ver**  > **abrir**.
 
 3. En la parte inferior de la página **Project assistant** (Asistente para proyectos), elija el botón **Archivos de aplicación** , como se muestra en la siguiente ilustración.
 
-   ![El botón archivos de aplicación.](../vsto/media/installshield-applicationfiles.png "El botón archivos de aplicación.")
+   ![El botón archivos de aplicación.](../vsto/media/installshield-applicationfiles.png "Botón Archivos de aplicación.")
 
 4. En la página de **Archivos de aplicación** , elija el botón **Agregar resultados del proyecto** .
 
@@ -433,7 +433,7 @@ Para modificar las propiedades personalizadas, se crea un programa que quita la 
 
 6. En el **Explorador de soluciones**, bajo el nodo **OfficeAddInSetup** , expanda el nodo **Define Setup Requirements and Actions** (Definir acciones y requisitos de instalación) y, después, elija la carpeta **Acciones personalizadas** .
 
-7. En la barra de menús, elija **Ver** > **abierto**.
+7. En la barra de menús, elija **ver**  > **abrir**.
 
    Aparece una lista de eventos en un panel a un lado de la pantalla.
 
@@ -463,7 +463,7 @@ Para modificar las propiedades personalizadas, se crea un programa que quita la 
 
 13. Abra el archivo de proyecto de la solución en el Bloc de notas. En el caso de los proyectos de Visual Basic, el nombre del archivo es *ExcelWorkbook. vbproj*. En C# el caso de los proyectos, el nombre del archivo es *ExcelWorkbook. csproj*.
 
-14. En el archivo del proyecto, busque el  **&lt;elemento&gt; SolutionID** , copie su valor en el portapapeles y, a continuación, cierre el Bloc de notas.
+14. En el archivo de proyecto, busque el elemento **&lt;SolutionID &gt;** , copie su valor en el portapapeles y, a continuación, cierre el Bloc de notas.
 
     Este valor se transfiere a la aplicación de consola como un parámetro.
 
@@ -482,7 +482,7 @@ Para modificar las propiedades personalizadas, se crea un programa que quita la 
 
 1. En el **Explorador de soluciones**, expanda el nodo de **Prepare for Release** (Preparar para lanzamiento) y, a continuación, elija el archivo **Versiones** .
 
-2. En la barra de menús, elija **Ver** > **abierto**.
+2. En la barra de menús, elija **ver**  > **abrir**.
 
    Se abre el explorador de **compilaciones** en un panel lateral para poder elegir el tipo de versión que desea crear.
 
@@ -498,9 +498,9 @@ Para modificar las propiedades personalizadas, se crea un programa que quita la 
 
 8. En la tabla **Contextos del proyecto** , en la columna **Configuración** del proyecto **OfficeAddInSetup** , elija **SingleImage**y, después, elija el botón **Cerrar** .
 
-9. En la barra de menús > , **Elija compilar** **compilación OfficeAddInSetup**.
+9. En la barra de menús, elija **Compilar**  > **compilar OfficeAddInSetup**.
 
-   Una vez finalizada la compilación, puede buscar el archivo *setup. exe* del proyecto **OfficeAddInSetup** en la siguiente ubicación: <em>OfficeAddInSetupProjectRoot</em> **\OfficeAddInSetup\Express\SingleImage\DiskImages\DISK1\\**
+   Una vez finalizada la compilación, puede buscar el archivo *setup. exe* del proyecto **OfficeAddInSetup** en la siguiente ubicación: <em>OfficeAddInSetupProjectRoot</em> **\OfficeAddInSetup\Express\SingleImage\DiskImages\DISK1 \\**
 
 ## <a name="see-also"></a>Vea también
 
