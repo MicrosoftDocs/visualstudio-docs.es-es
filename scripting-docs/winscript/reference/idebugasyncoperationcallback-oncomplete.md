@@ -1,5 +1,5 @@
 ---
-title: IDebugAsyncOperationCallBack::onComplete | Microsoft Docs
+title: 'Idebugasyncoperationcallback (:: alcompletar | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,12 +17,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f9e5532a55901d8e29addfee58594645440991f6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a15ae57d64d2b1e7be867c20e9683e4aaa415974
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62821878"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72573232"
 ---
 # <a name="idebugasyncoperationcallbackoncomplete"></a>IDebugAsyncOperationCallBack::onComplete
 Indica que un resultado está disponible en una operación de depuración asincrónica.  
@@ -44,8 +44,8 @@ HRESULT onComplete();
 |`S_OK`|El método se realizó correctamente.|  
   
 ## <a name="remarks"></a>Comentarios  
- Este método indica que un resultado está disponible en un `IDebugAsyncOperation` objeto. El evento se desencadena en el subproceso del depurador.  
+ Este método indica que un resultado está disponible en un objeto `IDebugAsyncOperation`. El evento se desencadena en el subproceso del depurador.  
   
 ## <a name="see-also"></a>Vea también  
- [IDebugAsyncOperationCallBack (interfaz)](../../winscript/reference/idebugasyncoperationcallback-interface.md)   
+ @No__t_1 de la [interfaz idebugasyncoperationcallback (](../../winscript/reference/idebugasyncoperationcallback-interface.md)  
  [IDebugAsyncOperation (Interfaz)](../../winscript/reference/idebugasyncoperation-interface.md)

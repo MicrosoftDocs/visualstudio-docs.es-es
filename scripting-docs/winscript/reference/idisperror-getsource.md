@@ -1,5 +1,5 @@
 ---
-title: IDispError::GetSource | Microsoft Docs
+title: 'Idisperror (:: GetSource | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8a84640f020a1ff255b8c7e5dd753752e0d310a7
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 07c87585a92415f0b910210a56efa47e6f91417b
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63446886"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72573093"
 ---
 # <a name="idisperrorgetsource"></a>IDispError::GetSource
-Devuelve el identificador de programación dependiente del idioma para la clase o aplicación que generó el error.  
+Devuelve el identificador de programación dependiente del lenguaje para la clase o aplicación que provocó el error.  
   
 ## <a name="syntax"></a>Sintaxis  
   
@@ -37,7 +37,7 @@ HRESULT GetSource(
   
 #### <a name="parameters"></a>Parámetros  
  `pbstrSource`  
- [out] Cadena que contiene un identificador de programación, en el formulario `progname.objectname`.  
+ enuncia Cadena que contiene un identificador de programación, en el formulario `progname.objectname`.  
   
 ## <a name="return-value"></a>Valor devuelto  
  El método devuelve un objeto `HRESULT`. Entre los valores posibles se incluyen los que se indican en la tabla siguiente, entre otros.  
@@ -47,7 +47,7 @@ HRESULT GetSource(
 |`S_OK`|El método se realizó correctamente.|  
   
 ## <a name="remarks"></a>Comentarios  
- Este método se utiliza para determinar la clase o la aplicación donde se produjo la excepción. El identificador de programación puede devolverse en el idioma especificado por el identificador de configuración regional (LCID) suministrado en el momento de invocación.  
+ Este método se usa para determinar la clase o aplicación donde se produjo la excepción. El identificador de programación se puede devolver en el idioma especificado por el identificador de configuración regional (LCID) proporcionado en el momento de la invocación.  
   
 > [!NOTE]
 > Este método no se implementa.  

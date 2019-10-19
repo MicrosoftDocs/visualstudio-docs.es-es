@@ -1,5 +1,5 @@
 ---
-title: ISimpleConnectionPoint::Advise | Microsoft Docs
+title: 'Isimpleconnectionpoint (:: Advise | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,12 +17,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 98db9c92f682808ce8ecc9f6aa382a2eb2bd8495
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d7d08d4774dffbfd840c674b15abe82bedb37e5f
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62786267"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72571829"
 ---
 # <a name="isimpleconnectionpointadvise"></a>ISimpleConnectionPoint::Advise
 Establece una conexión entre el objeto de punto de conexión simple y el receptor del cliente.  
@@ -38,10 +38,10 @@ HRESULT Advise(
   
 #### <a name="parameters"></a>Parámetros  
  `pdisp`  
- [in] Puntero a la `IDispatch` receptor de notificaciones de interfaz en el cliente. Receptor del cliente que recibe llamadas salientes desde el punto de conexión simple.  
+ de Puntero a la interfaz de `IDispatch` en el receptor de notificaciones del cliente. El receptor del cliente recibe llamadas salientes desde el punto de conexión simple.  
   
  `pdwCookie`  
- [out] Puntero a un token devuelto que identifica esta conexión. El llamador utiliza este token posteriormente para eliminar la conexión pasándolo a la `ISimpleConnectionPoint::Unadvise` método. Si la conexión no se ha establecido correctamente, este valor es cero.  
+ enuncia Puntero a un token devuelto que identifica de forma única esta conexión. El autor de la llamada utiliza este token más adelante para eliminar la conexión pasándola al método `ISimpleConnectionPoint::Unadvise`. Si la conexión no se estableció correctamente, este valor es cero.  
   
 ## <a name="return-value"></a>Valor devuelto  
  El método devuelve un objeto `HRESULT`. Entre los valores posibles se incluyen los que se indican en la tabla siguiente, entre otros.  
@@ -54,5 +54,5 @@ HRESULT Advise(
  Este método establece una conexión entre el objeto de punto de conexión simple y el receptor del cliente.  
   
 ## <a name="see-also"></a>Vea también  
- [ISimpleConnectionPoint (interfaz)](../../winscript/reference/isimpleconnectionpoint-interface.md)   
+ @No__t_1 de la [interfaz isimpleconnectionpoint (](../../winscript/reference/isimpleconnectionpoint-interface.md)  
  [ISimpleConnectionPoint::Unadvise](../../winscript/reference/isimpleconnectionpoint-unadvise.md)

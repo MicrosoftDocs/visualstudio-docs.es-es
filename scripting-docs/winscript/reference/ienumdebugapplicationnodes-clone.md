@@ -1,5 +1,5 @@
 ---
-title: IEnumDebugApplicationNodes::Clone | Microsoft Docs
+title: 'Ienumdebugapplicationnodes (:: Clone | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,12 +17,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 28ccf1805c1213bd01b1628c73e1dce5500ad8f0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d1d5488f260784450d2b7695972c78a5f9271eed
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62951520"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72573061"
 ---
 # <a name="ienumdebugapplicationnodesclone"></a>IEnumDebugApplicationNodes::Clone
 Crea un enumerador que contiene el mismo estado que el enumerador actual.  
@@ -37,7 +37,7 @@ HRESULT Clone(
   
 #### <a name="parameters"></a>Parámetros  
  `pperddp`  
- [out] Devuelve el `IEnumDebugApplicationNodes` interfaz del clon del enumerador.  
+ enuncia Devuelve la interfaz `IEnumDebugApplicationNodes` del clon del enumerador.  
   
 ## <a name="return-value"></a>Valor devuelto  
  El método devuelve un objeto `HRESULT`. Entre los valores posibles se incluyen los que se indican en la tabla siguiente, entre otros.  

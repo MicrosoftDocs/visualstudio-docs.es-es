@@ -1,5 +1,5 @@
 ---
-title: IDebugSessionProviderEx:StartDebugSession | Documentos de Microsoft
+title: 'Idebugsessionproviderex (: StartDebugSession | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -15,12 +15,12 @@ caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: fb120a9acca91014d7b8213a3ed0bd1ab575e118
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: cfe26265d56b2179feeac2a9802940258074b1c7
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62934685"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72574298"
 ---
 # <a name="idebugsessionproviderexstartdebugsession"></a>IDebugSessionProviderEx:StartDebugSession
 Inicia una sesión de depuración con la aplicación especificada.  
@@ -36,10 +36,10 @@ HRESULT StartDebugSession(
   
 #### <a name="parameters"></a>Parámetros  
  `pda`  
- [in] Especifica la aplicación de depuración.  
+ de Especifica la aplicación de depuración.  
   
  `fQuery`  
- [in] True indica que una consulta.  
+ de True indica una consulta.  
   
 ## <a name="return-value"></a>Valor devuelto  
  El método devuelve un objeto `HRESULT`. Entre los valores posibles se incluyen los que se indican en la tabla siguiente, entre otros.  
@@ -49,8 +49,8 @@ HRESULT StartDebugSession(
 |`S_OK`|El método se realizó correctamente.|  
   
 ## <a name="remarks"></a>Comentarios  
- Este método inicia una sesión de depuración con la aplicación especificada. El depurador debe llamar a `IRemoteDebugApplication::ConnectDebugger` antes de abandonar esta llamada.  
+ Este método inicia una sesión de depuración con la aplicación especificada. El depurador debe llamar a `IRemoteDebugApplication::ConnectDebugger` antes de volver de esta llamada.  
   
 ## <a name="see-also"></a>Vea también  
- [IDebugSessionProviderEx (interfaz)](../../winscript/reference/idebugsessionproviderex-interface.md)   
+ @No__t_1 de la [interfaz idebugsessionproviderex (](../../winscript/reference/idebugsessionproviderex-interface.md)  
  [IRemoteDebugApplication::ConnectDebugger](../../winscript/reference/iremotedebugapplication-connectdebugger.md)

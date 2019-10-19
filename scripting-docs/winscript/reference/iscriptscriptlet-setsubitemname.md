@@ -1,5 +1,5 @@
 ---
-title: IScriptScriptlet::SetSubItemName | Microsoft Docs
+title: 'Iscriptscriptlet (:: SetSubItemName | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8b9a4f67fb5a383666cb9f83fc2e0e38fbffb51f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ab4f7afec9302126ccbfcbe7f2abafc74cbf17d6
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62786567"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72571863"
 ---
 # <a name="iscriptscriptletsetsubitemname"></a>IScriptScriptlet::SetSubItemName
-Establece el identificador de la última en el nombre completo de host del objeto del scriptlet.  
+Establece el último identificador del nombre completo del host de objeto de Scriptlet.  
   
 ## <a name="syntax"></a>Sintaxis  
   
@@ -37,12 +37,12 @@ HRESULT SetSubItemName(
   
 #### <a name="parameters"></a>Parámetros  
  `psz`  
- Si el host completo del scriptlet nombre tiene más de un nivel `psz` es la dirección del búfer del identificador en el segundo nivel.  
+ Si el nombre completo de la Scriptlet del host tiene más de un nivel, `psz` es la dirección del búfer del identificador en el segundo nivel.  
   
- Si el host completo del scriptlet nombre tiene un nivel `psz` es la dirección del búfer del identificador del primer nivel.  
+ Si el nombre completo de la Scriptlet del host tiene un nivel, `psz` es la dirección del búfer del identificador en el primer nivel.  
   
 ## <a name="return-value"></a>Valor devuelto  
- Una clase `HRESULT`. Entre los valores posibles se incluyen los que se indican en la tabla siguiente, entre otros.  
+ Interfaz `HRESULT`. Entre los valores posibles se incluyen los que se indican en la tabla siguiente, entre otros.  
   
 |Valor|Descripción|  
 |-----------|-----------------|  

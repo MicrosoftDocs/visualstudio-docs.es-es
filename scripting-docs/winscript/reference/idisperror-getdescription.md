@@ -1,5 +1,5 @@
 ---
-title: IDispError::GetDescription | Documentos de Microsoft
+title: 'Idisperror (:: GetDescription | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,12 +17,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 5505113ee650c6618be5a95bc77244daf90cfcb7
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 8d1bb1c3516c2601707e1a0bcd69f4f8409514fe
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63446951"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72573141"
 ---
 # <a name="idisperrorgetdescription"></a>IDispError::GetDescription
 Devuelve una descripción textual del error.  
@@ -37,7 +37,7 @@ HRESULT GetDescription(
   
 #### <a name="parameters"></a>Parámetros  
  `pbstrDescription`  
- [out] Cadena que contiene una breve descripción del error.  
+ enuncia Cadena que contiene una breve descripción del error.  
   
 ## <a name="return-value"></a>Valor devuelto  
  El método devuelve un objeto `HRESULT`. Entre los valores posibles se incluyen los que se indican en la tabla siguiente, entre otros.  
@@ -47,11 +47,11 @@ HRESULT GetDescription(
 |`S_OK`|El método se realizó correctamente.|  
   
 ## <a name="remarks"></a>Comentarios  
- Se devuelve el texto en el idioma especificado por el identificador de configuración regional (LCID) que se pasó a `IDispatchEx::InvokeEx` para el método que encontró el error.  
+ El texto se devuelve en el idioma especificado por el identificador de configuración regional (LCID) que se pasó a `IDispatchEx::InvokeEx` para el método que detectó el error.  
   
 > [!NOTE]
 > Este método no se implementa.  
   
 ## <a name="see-also"></a>Vea también  
- [IDispError (interfaz)](../../winscript/reference/idisperror-interface.md)   
+ @No__t_1 de la [interfaz idisperror (](../../winscript/reference/idisperror-interface.md)  
  [IDispatchEx::InvokeEx](../../winscript/reference/idispatchex-invokeex.md)

@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: c94de629026cfa1b78429aaf2209b81eead7da4f
-ms.sourcegitcommit: ea182703e922c74725045afc251bcebac305068a
+ms.openlocfilehash: f6dd305b55e1ff7dd11b46f023906a8422b5504f
+ms.sourcegitcommit: 08c144d290da373df841f04fc799e3133540a541
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71211204"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72536047"
 ---
 # <a name="debug-managed-code-c-visual-basic-f-ccli"></a>Depurar códigoC#administrado (, F#Visual Basic C++,,/CLI)
 
@@ -38,7 +38,7 @@ Describe aserciones en el código administrado, que prueban condiciones especifi
 [Instrucciones Stop en Visual Basic](../debugger/stop-statements-in-visual-basic.md)\
 Describe la instrucción `Stop`, que proporciona una alternativa al establecimiento de un punto de interrupción. También se proporciona código de ejemplo, junto con comparaciones entre las instrucciones `Stop` y `End`, así como entre las instrucciones `Stop` y `Assert`.
 
-[Tutorial: Depurar un Windows Form](../debugger/walkthrough-debugging-a-windows-form.md)\
+[Tutorial: Depurar Windows Forms](../debugger/walkthrough-debugging-a-windows-form.md)\
 Ofrece instrucciones paso a paso para crear un Windows Form y para depurar dicho formulario. Un Windows Form, un componente estándar de una aplicación para Windows administrada, es una de las aplicaciones administradas más comunes. En este tutorial se utiliza Visual C# y Visual Basic, pero normalmente las técnicas para crear un formulario Windows Forms con C++ son similares.
 
 [Depuración en el método OnStart](../debugger/how-to-debug-the-onstart-method.md)\
@@ -56,7 +56,7 @@ Describe los efectos de la optimización de JIT en la depuración.
 [Depuración de LINQ y DLINQ](../debugger/debugging-linq.md)\
 Analiza las técnicas para depurar consultas LINQ.
 
-[Tutorial: Depurar una aplicación paralela](../debugger/walkthrough-debugging-a-parallel-application.md)\
+[Tutorial: Depuración de una aplicación paralela](../debugger/walkthrough-debugging-a-parallel-application.md)\
 Describe cómo se usan las ventanas de herramientas **Tareas paralelas** y **Pilas paralelas** para depurar una aplicación paralela.
 
 ## <a name="related-sections"></a>Secciones relacionadas
@@ -74,14 +74,14 @@ Describe una opción del vinculador que agrega <xref:System.Diagnostics.Debuggab
 Proporciona consideraciones sobre la depuración de aplicaciones de servicios de Windows, como la configuración, la asociación al proceso, la depuración del código del método `OnStart` y el método Main del servicio, el establecimiento de puntos de interrupción y el uso del Administrador de control de servicios para iniciar, detener, pausar y continuar el servicio.
 
 [Depuración y generación de perfiles](/dotnet/framework/debug-trace-profile/index)\
-Explica la depuración de las aplicaciones de .NET Framework y los requisitos de configuración.
+Describe la depuración de aplicaciones .NET y los requisitos de configuración.
 
 [Depuración de scripts y aplicaciones web](/visualstudio/debugger/how-to-enable-debugging-for-aspnet-applications)\
 Describe problemas y técnicas de depuración comunes que pueden aparecer en la depuración de scripts y aplicaciones Web.
 
 ## <a name="see-also"></a>Vea también
 
-- [Tutorial: Depurar controles de Windows Forms personalizados en tiempo de diseño](/dotnet/framework/winforms/controls/walkthrough-debugging-custom-windows-forms-controls-at-design-time)
+- [Tutorial: depurar controles de Windows Forms personalizados en tiempo de diseño](/dotnet/framework/winforms/controls/walkthrough-debugging-custom-windows-forms-controls-at-design-time)
 - [Seguridad del depurador](../debugger/debugger-security.md)
 - [Depurar en Visual Studio](../debugger/index.yml)
 - [Primer vistazo al depurador](../debugger/debugger-feature-tour.md)

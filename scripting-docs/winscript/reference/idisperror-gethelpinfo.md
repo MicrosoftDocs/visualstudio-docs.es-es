@@ -1,5 +1,5 @@
 ---
-title: IDispError::GetHelpInfo | Microsoft Docs
+title: 'Idisperror (:: GetHelpInfo | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,12 +17,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: fa831ff511ea507e03ca858b93383ff38ead9039
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: a84e57e97bb781ad3ea0be1ac6766fd94f6f5c30
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63446908"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72573137"
 ---
 # <a name="idisperrorgethelpinfo"></a>IDispError::GetHelpInfo
 Devuelve la ruta de acceso del archivo de ayuda y el identificador de contexto del tema que explica el error, si es posible.  
@@ -38,10 +38,10 @@ HRESULT GetHelpInfo(
   
 #### <a name="parameters"></a>Parámetros  
  `pbstrFileName`  
- [out] Cadena que contiene la ruta de acceso completa del archivo de ayuda. Si no hay ningún archivo de ayuda o se produce un error, el valor devuelto es NULL.  
+ enuncia Cadena que contiene la ruta de acceso completa del archivo de ayuda. Si no hay ningún archivo de ayuda o se produce un error, el valor devuelto es NULL.  
   
  `pdwContext`  
- [out] El identificador de contexto de ayuda para el error. Si no hay ningún archivo de ayuda (si `pbstrFileName` es NULL), este parámetro no tiene ningún significado.  
+ enuncia IDENTIFICADOR del contexto de ayuda para el error. Si no hay ningún archivo de ayuda (si `pbstrFileName` es NULL), este parámetro no tiene ningún significado.  
   
 ## <a name="return-value"></a>Valor devuelto  
  El método devuelve un objeto `HRESULT`. Entre los valores posibles se incluyen los que se indican en la tabla siguiente, entre otros.  
@@ -49,9 +49,9 @@ HRESULT GetHelpInfo(
 |Valor|Descripción|  
 |-----------|-----------------|  
 |`S_OK`|El método se realizó correctamente.|  
-|`E_FAIL`|Se ha producido un error específico del proveedor.|  
+|`E_FAIL`|Se produjo un error específico del proveedor.|  
 |`E_INVALIDARG`|`pbstrFileName` o `pdwContext` era NULL.|  
-|`E_OUTOFMEMORY`|El proveedor no pudo asignar suficiente memoria en el que se va a devolver la ruta de acceso del archivo de ayuda.|  
+|`E_OUTOFMEMORY`|El proveedor no pudo asignar memoria suficiente para devolver la ruta de acceso al archivo de ayuda.|  
   
 ## <a name="remarks"></a>Comentarios  
  Este método devuelve la ruta de acceso del archivo de ayuda y el identificador de contexto del tema que explica el error, si es posible.  

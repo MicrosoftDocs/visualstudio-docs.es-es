@@ -29,12 +29,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d0b9fb6e809f1124a10a6a2b4e35bc59806787a6
-ms.sourcegitcommit: 8a3545329a58e446672181cfed2083f850e1ad14
+ms.openlocfilehash: 21573f1f8bd49782739027f7dfc2034bb7501a2f
+ms.sourcegitcommit: 08c144d290da373df841f04fc799e3133540a541
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71814329"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72535980"
 ---
 # <a name="view-the-call-stack-and-use-the-call-stack-window-in-the-debugger"></a>Ver la pila de llamadas y usar la ventana pila de llamadas del depurador
 
@@ -96,11 +96,11 @@ El código que no es de usuario es cualquier código que no se muestra cuando se
 
 En Visual Studio Enterprise (solo), puede ver los mapas de código de la pila de llamadas durante la depuración.
 
-- En la ventana **Pila de llamadas**, abra el menú contextual. Elija **Mostrar pila de llamadas en mapa de código** (**Ctrl** + **Shift** +  **`** ).
+- En la ventana **Pila de llamadas**, abra el menú contextual. Elija **Mostrar pila de llamadas en mapa de código** (**Ctrl**  + **MAYÚS**  +  **`** ).
 
     Para obtener más información, vea [asignar métodos en la pila de llamadas durante la depuración](../debugger/map-methods-on-the-call-stack-while-debugging-in-visual-studio.md).
 
-![Mostrar pila de llamadas en el mapa de código](../debugger/media/dbg_basics_show_call_stack_on_code_map.gif "ShowCallStackOnCodeMap")
+![Mostrar pila de llamadas en mapa de código](../debugger/media/dbg_basics_show_call_stack_on_code_map.gif "ShowCallStackOnCodeMap")
 
 ## <a name="view-the-disassembly-code-for-a-function-on-the-call-stack-c-c-visual-basic-f"></a>Ver el código de desensamblado de una función en la pilaC#de C++llamadas (, F#, Visual Basic,)
 
@@ -108,11 +108,11 @@ En Visual Studio Enterprise (solo), puede ver los mapas de código de la pila de
 
 ## <a name="change-the-optional-information-displayed"></a>Cambiar la información opcional mostrada
 
-- Haga clic con el botón secundario en la ventana **pila de llamadas** y establezca o desactive **Mostrar \<** _la información que desea_ **>** .
+- Haga clic con el botón secundario en la ventana **pila de llamadas** y establezca o desactive **Mostrar \<** _la información que desea_  **>** .
 
 ## <a name="bkmk_symbols"></a>Cargar símbolos para un módulo (C#, C++, Visual Basic, F#)
 
-En la ventana **Pila de llamadas**, puede cargar los símbolos de depuración para el código que no los tenga cargados. Estos símbolos pueden ser .NET Framework o símbolos del sistema descargados de los servidores de símbolos públicos de Microsoft, o símbolos en una ruta de acceso de símbolos en el equipo que está depurando.
+En la ventana **Pila de llamadas**, puede cargar los símbolos de depuración para el código que no los tenga cargados. Estos símbolos pueden ser .NET o símbolos del sistema descargados de los servidores de símbolos públicos de Microsoft, o símbolos en una ruta de acceso de símbolos en el equipo que está depurando.
 
 Consulte [Specify symbol (.pdb) and source files](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md) (Especificación de símbolo (.pdb) y archivos de origen).
 
