@@ -3,17 +3,17 @@ title: Consideraciones de seguridad al trabajar con datos XML
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: fce2b708-1aef-454f-be59-52b76f359351
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5fe4ec69f879478566cce8d077bb66b34da86f3d
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: a0eb38118f7e71bd8cab0cf3faf367c01700cae0
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68926771"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72604596"
 ---
 # <a name="security-considerations-when-working-with-xml-data"></a>Consideraciones de seguridad al trabajar con datos XML
 
@@ -29,7 +29,7 @@ El editor XML se basa en el editor de texto de Visual Studio. Depende de las cla
 
 - Los esquemas que apuntan a una ubicación externa del archivo de catálogo se descargan automáticamente cuando se carga por primera vez el editor XML. La clase <xref:System.Xml.Schema.XmlSchemaSet> se utiliza para compilar los esquemas. El archivo de catálogo que se incluye con el editor XML no tiene vínculos a esquemas externos. El usuario tiene que agregar explícitamente una referencia al esquema externo antes de que el editor XML Descargue el archivo de esquema. La descarga de HTTP puede deshabilitarse a través de la página **Opciones de herramientas diversas** del editor XML.
 
-- El editor XML utiliza las <xref:System.Net> clases para descargar esquemas
+- El editor XML utiliza las clases de <xref:System.Net> para descargar esquemas
 
 ## <a name="xslt-debugger"></a>depurador de XSLT
 

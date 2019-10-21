@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 6f895506d27c98daf9d69be1a2ea4db5fbe158b7
-ms.sourcegitcommit: 034c503ae04e22cf840ccb9770bffd012e40fb2d
-ms.translationtype: MT
+ms.openlocfilehash: 3e7608225caaf050bae995206ba5af38165f9695
+ms.sourcegitcommit: 1507baf3a336bbb6511d4c3ce73653674831501b
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/14/2019
-ms.locfileid: "72305464"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "72349318"
 ---
 # <a name="basic-correctness-rules-rule-set-for-managed-code"></a>Conjunto de reglas Reglas de corrección básicas para código administrado
 
@@ -67,24 +67,24 @@ En la tabla siguiente se describen todas las reglas del conjunto de reglas regla
 |[CA2146](../code-quality/ca2146-types-must-be-at-least-as-critical-as-their-base-types-and-interfaces.md)|Los tipos deben ser al menos tan críticos para la seguridad como sus interfaces y tipos base|
 |[CA2147](../code-quality/ca2147-transparent-methods-may-not-use-security-asserts.md)|Los métodos transparentes no pueden usar aserciones de seguridad|
 |[CA2149](../code-quality/ca2149-transparent-methods-must-not-call-into-native-code.md)|Los métodos transparentes no deben llamar a código nativo|
-|[CA2200](../code-quality/ca2200-rethrow-to-preserve-stack-details.md)|Reiniciar para mantener los detalles de la pila|
-|[CA2202](../code-quality/ca2202-do-not-dispose-objects-multiple-times.md)|No usar Dispose varias veces en objetos|
-|[CA2207](../code-quality/ca2207-initialize-value-type-static-fields-inline.md)|Inicializar campos estáticos de tipo de valor insertados|
-|[CA2212](../code-quality/ca2212-do-not-mark-serviced-components-with-webmethod.md)|No marcar los componentes con servicio como WebMethod|
-|[CA2213](../code-quality/ca2213-disposable-fields-should-be-disposed.md)|Los campos descartables deben ser descartables|
-|[CA2214](../code-quality/ca2214-do-not-call-overridable-methods-in-constructors.md)|No llamar a métodos reemplazables en constructores|
-|[CA2216](../code-quality/ca2216-disposable-types-should-declare-finalizer.md)|Los tipos descartables deben declarar el finalizador|
-|[CA2220](../code-quality/ca2220-finalizers-should-call-base-class-finalizer.md)|Los finalizadores deben llamar al finalizador de la clase base|
-|[CA2229](../code-quality/ca2229-implement-serialization-constructors.md)|Implementar constructores de serialización|
-|[CA2231](../code-quality/ca2231-overload-operator-equals-on-overriding-valuetype-equals.md)|Sobrecargar el operador equals al invalidar ValueType.Equals|
-|[CA2232](../code-quality/ca2232-mark-windows-forms-entry-points-with-stathread.md)|Marcar puntos de entrada de Windows Forms con STAThread|
-|[CA2235](../code-quality/ca2235-mark-all-non-serializable-fields.md)|Marcar todos los campos no serializables|
-|[CA2236](../code-quality/ca2236-call-base-class-methods-on-iserializable-types.md)|Llamar a métodos de clase base en tipos ISerializable|
-|[CA2237](../code-quality/ca2237-mark-iserializable-types-with-serializableattribute.md)|Marcar los tipos ISerializable con SerializableAttribute|
-|[CA2238](../code-quality/ca2238-implement-serialization-methods-correctly.md)|Implementar métodos de serialización correctamente|
-|[CA2240](../code-quality/ca2240-implement-iserializable-correctly.md)|Implementar ISerializable correctamente|
-|[CA2241](../code-quality/ca2241-provide-correct-arguments-to-formatting-methods.md)|Proporcionar argumentos correctos a los métodos de formato|
-|[CA2242](../code-quality/ca2242-test-for-nan-correctly.md)|Comprobar NaN correctamente|
+|[CA2200](../code-quality/ca2200.md)|Reiniciar para mantener los detalles de la pila|
+|[CA2202](../code-quality/ca2202.md)|No usar Dispose varias veces en objetos|
+|[CA2207](../code-quality/ca2207.md)|Inicializar campos estáticos de tipo de valor insertados|
+|[CA2212](../code-quality/ca2212.md)|No marcar los componentes con servicio como WebMethod|
+|[CA2213](../code-quality/ca2213.md)|Los campos descartables deben ser descartables|
+|[CA2214](../code-quality/ca2214.md)|No llamar a métodos reemplazables en constructores|
+|[CA2216](../code-quality/ca2216.md)|Los tipos descartables deben declarar el finalizador|
+|[CA2220](../code-quality/ca2220.md)|Los finalizadores deben llamar al finalizador de la clase base|
+|[CA2229](../code-quality/ca2229.md)|Implementar constructores de serialización|
+|[CA2231](../code-quality/ca2231.md)|Sobrecargar el operador equals al invalidar ValueType.Equals|
+|[CA2232](../code-quality/ca2232.md)|Marcar puntos de entrada de Windows Forms con STAThread|
+|[CA2235](../code-quality/ca2235.md)|Marcar todos los campos no serializables|
+|[CA2236](../code-quality/ca2236.md)|Llamar a métodos de clase base en tipos ISerializable|
+|[CA2237](../code-quality/ca2237.md)|Marcar los tipos ISerializable con SerializableAttribute|
+|[CA2238](../code-quality/ca2238.md)|Implementar métodos de serialización correctamente|
+|[CA2240](../code-quality/ca2240.md)|Implementar ISerializable correctamente|
+|[CA2241](../code-quality/ca2241.md)|Proporcionar argumentos correctos a los métodos de formato|
+|[CA2242](../code-quality/ca2242.md)|Comprobar NaN correctamente|
 |[CA1008](../code-quality/ca1008-enums-should-have-zero-value.md)|Las enumeraciones deben tener un valor igual a cero|
 |[CA1013](../code-quality/ca1013-overload-operator-equals-on-overloading-add-and-subtract.md)|El operador de sobrecarga es igual que la suma y resta de sobrecarga|
 |[CA1303](../code-quality/ca1303-do-not-pass-literals-as-localized-parameters.md)|No pasar literales como parámetros localizados|
@@ -105,12 +105,12 @@ En la tabla siguiente se describen todas las reglas del conjunto de reglas regla
 |[CA2120](../code-quality/ca2120-secure-serialization-constructors.md)|Proteger los constructores de serializaciones|
 |[CA2121](../code-quality/ca2121-static-constructors-should-be-private.md)|Los constructores estáticos deben ser privados|
 |[CA2130](../code-quality/ca2130-security-critical-constants-should-be-transparent.md)|Las constantes críticas para la seguridad deben ser transparentes|
-|[CA2205](../code-quality/ca2205-use-managed-equivalents-of-win32-api.md)|Utilizar equivalentes administrados de la API Win32|
-|[CA2215](../code-quality/ca2215-dispose-methods-should-call-base-class-dispose.md)|Los métodos Dispose deben llamar al método Dispose de la clase base|
-|[CA2221](../code-quality/ca2221-finalizers-should-be-protected.md)|Los finalizadores deben estar protegidos|
-|[CA2222](../code-quality/ca2222-do-not-decrease-inherited-member-visibility.md)|No disminuir la visibilidad del miembro heredado|
-|[CA2223](../code-quality/ca2223-members-should-differ-by-more-than-return-type.md)|Los miembros deben diferenciarse por algo más que por un tipo de valor devuelto|
-|[CA2224](../code-quality/ca2224-override-equals-on-overloading-operator-equals.md)|Invalidar Equals al sobrecargar operadores de igualdad|
-|[CA2226](../code-quality/ca2226-operators-should-have-symmetrical-overloads.md)|Los operadores deben tener sobrecargas simétricas|
-|[CA2227](../code-quality/ca2227-collection-properties-should-be-read-only.md)|Las propiedades de la colección deben ser de solo lectura|
-|[CA2239](../code-quality/ca2239-provide-deserialization-methods-for-optional-fields.md)|Proporcionar métodos de deserialización para campos opcionales|
+|[CA2205](../code-quality/ca2205.md)|Utilizar equivalentes administrados de la API Win32|
+|[CA2215](../code-quality/ca2215.md)|Los métodos Dispose deben llamar al método Dispose de la clase base|
+|[CA2221](../code-quality/ca2221.md)|Los finalizadores deben estar protegidos|
+|[CA2222](../code-quality/ca2222.md)|No disminuir la visibilidad del miembro heredado|
+|[CA2223](../code-quality/ca2223.md)|Los miembros deben diferenciarse por algo más que por un tipo de valor devuelto|
+|[CA2224](../code-quality/ca2224.md)|Invalidar Equals al sobrecargar operadores de igualdad|
+|[CA2226](../code-quality/ca2226.md)|Los operadores deben tener sobrecargas simétricas|
+|[CA2227](../code-quality/ca2227.md)|Las propiedades de la colección deben ser de solo lectura|
+|[CA2239](../code-quality/ca2239.md)|Proporcionar métodos de deserialización para campos opcionales|
