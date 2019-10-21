@@ -15,15 +15,15 @@ helpviewer_keywords:
 - IDE navigator
 ms.assetid: 6c36b6eb-c93f-496b-af08-4199f7afd8bd
 caps.latest.revision: 33
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 93200995c3afa59b0a4a27aaa9c674fa17b5ee3f
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 89c4447eb6bbc4b2ae9f7667672626d5119c61d6
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65685603"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72651794"
 ---
 # <a name="how-to-move-around-in-the-visual-studio-ide"></a>Cómo: moverse por el IDE de Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -54,7 +54,7 @@ El entorno de desarrollo integrado (IDE) se ha diseñado para permitir el movimi
 
   El **Navegador del IDE** funciona como el conmutador de aplicaciones de Windows. No está disponible en los menús y solo se puede acceder a él mediante teclas de método abreviado. Puede usar uno de los dos comandos para acceder al **Navegador del IDE** (que se muestra a continuación) y desplazarse por los archivos, dependiendo del orden en el que quiere recorrerlos.
 
-  ![Navegador del IDE de Visual Studio](../ide/media/vs2015-ide-navigator.png "VS2015_IDE_Navigator")
+  ![Navegador IDE de Visual Studio](../ide/media/vs2015-ide-navigator.png "|::ref1::|")
 
   `Window.PreviousDocumentWindowNav` le permite moverse al último archivo abierto y `Window.NextDocumentWindowNav` le permite moverse en el orden inverso. La configuración general de desarrollo asigna CTRL + MAYÚS + TAB a `Window.PreviousDocumentWindowNav` y CTRL + TAB a `Window.NextDocumentWindowNav`.
 
@@ -91,5 +91,5 @@ El entorno de desarrollo integrado (IDE) se ha diseñado para permitir el movimi
     > [!TIP]
     > Para invertir el orden por el que se desplaza por la lista de **Ventanas de herramientas activas**, mantenga presionadas las teclas MAYÚS + ALT y presione la tecla F7.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Otras referencias
  [Personalizar los diseños de ventana](../ide/customizing-window-layouts-in-visual-studio.md) [Métodos abreviados de teclado predeterminados](../ide/default-keyboard-shortcuts-in-visual-studio.md)

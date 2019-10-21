@@ -47,15 +47,15 @@ helpviewer_keywords:
 - miscellaneous files
 ms.assetid: aeaf56cb-c2dd-47f6-b012-23b84b7a7254
 caps.latest.revision: 41
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 340fe819086d3cc18cb9c2dd6a4ca14129c6d8ad
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 0b1783adadd1bfab32bfbbdcfb5ae28df7c0aae4
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65679873"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72661189"
 ---
 # <a name="solutions-and-projects-in-visual-studio"></a>Soluciones y proyectos en Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -70,7 +70,7 @@ Cuando cree una aplicación, una solicitud, un sitio web, una aplicación web, u
 
  El siguiente diagrama muestra la relación entre los proyectos y soluciones, y los elementos que estos contienen de forma lógica.
 
- ![Soluciones y proyectos de Visual Studio](../ide/media/vs2015-project-diagram.png "vs2015_project_diagram")
+ ![Soluciones y proyectos de Visual Studio](../ide/media/vs2015-project-diagram.png "|::ref1::|")
 
  También puede crear un proyecto y plantillas de elemento personalizados. Para obtener más información, vea [Crear plantillas para proyectos y elementos en Visual Studio](../ide/creating-project-and-item-templates.md).
 
@@ -80,7 +80,7 @@ Cuando cree una aplicación, una solicitud, un sitio web, una aplicación web, u
 ## <a name="managing-projects-in-solution-explorer"></a>Administración de proyectos en el Explorador de soluciones
  Después de crear un proyecto nuevo, use el **Explorador de soluciones** para ver y administrar proyectos, soluciones y los elementos que tienen asociados. La siguiente ilustración muestra el Explorador de servidores con una solución de C# que contiene dos proyectos.
 
- ![Explorador de soluciones](../ide/media/vs2015-solution-explorer.png "vs2015_solution_explorer")
+ ![Explorador de soluciones](../ide/media/vs2015-solution-explorer.png "|::ref2::|")
 
 ## <a name="in-this-section"></a>En esta sección
 
@@ -102,5 +102,5 @@ Cuando cree una aplicación, una solicitud, un sitio web, una aplicación web, u
 
 - [Crear plantillas para proyectos y elementos en Visual Studio](../ide/creating-project-and-item-templates.md)
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Otras referencias
  [IDE de Visual Studio](../ide/visual-studio-ide.md)

@@ -28,7 +28,7 @@
           href: deploy-app-service.md
         - name: Implementación en Docker Hub
           href: deploy-docker-hub.md
-        - name: Visualización y diagnóstico de contenedores
+        - name: Visualización y diagnóstico de contenedores e imágenes
           href: view-and-diagnose-containers.md
         - name: Configuración de las herramientas de contenedor
           href: container-tools-configure.md

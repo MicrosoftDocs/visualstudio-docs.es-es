@@ -6,15 +6,15 @@ ms.prod: visual-studio-dev14
 ms.topic: conceptual
 ms.assetid: 24ecb76e-b7ad-432d-88ab-d9849963465d
 caps.latest.revision: 15
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: d8cedd5ab26539d5ebe32aee8df272691dd0a779
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: e75215d2693b5fe2bf879c4b293ae853b42905e7
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68186330"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72651785"
 ---
 # <a name="how-to-report-a-problem-with-visual-studio-2015"></a>Cómo notificar un problema con Visual Studio 2015
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,7 +29,7 @@ Microsoft respeta su privacidad. Para obtener información sobre cómo se tratan
 
 Haga clic en el icono de comentarios del usuario junto a **Inicio rápido** en la barra de título o bien haga clic en **Ayuda | Enviar comentarios | Notificar un problema**.
 
-![Elemento de menú Notificar un problema](../ide/media/report-a-problem-menu-item.png "Elemento de menú Notificar un problema")
+![Informe de un problema de elemento de menú](../ide/media/report-a-problem-menu-item.png "Informe de un problema de elemento de menú")
 
 ## <a name="describe-the-problem"></a>Describir el problema
 
@@ -41,7 +41,7 @@ Haga clic en el icono de comentarios del usuario junto a **Inicio rápido** en l
 
 3. Elija un área problemática en la lista desplegable. Seleccione la mejor aproximación si no está seguro.
 
-   ![Cuadro de diálogo Notificar un problema](../ide/media/report-a-problem-dialog.png "Cuadro de diálogo Notificar un problema")
+   ![Informe de un problema de cuadro de diálogo](../ide/media/report-a-problem-dialog.png "Informe de un problema de cuadro de diálogo")
 
 ## <a name="provide-a-screenshot-optional"></a>Proporcione una captura de pantalla (opcional)
 
@@ -59,7 +59,7 @@ Elija **Incluir captura de pantalla** para enviar la pantalla actual a Microsoft
 
 4. Espere unos minutos mientras Visual Studio recopila y empaqueta la información que se haya grabado. El cuadro de diálogo tendrá un aspecto similar al siguiente cuando el proceso de recopilación se haya completado:
 
-     ![Registrar un archivo de seguimiento](../ide/media/record-a-trace-file.png "Registrar un archivo de seguimiento")
+     ![Registro de un archivo de seguimiento](../ide/media/record-a-trace-file.png "Registro de un archivo de seguimiento")
 
 ## <a name="describe-the-workaround-if-there-is-one"></a>Describir la solución alternativa, si la hay
 

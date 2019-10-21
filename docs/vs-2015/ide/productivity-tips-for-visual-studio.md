@@ -6,15 +6,15 @@ ms.technology: vs-ide-general
 ms.topic: conceptual
 ms.assetid: ccc5e543-7dcf-465c-97dd-e133e869800c
 caps.latest.revision: 32
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: f43187faf1dd53cc9daf45da1191e1e944a43c8a
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: a5b2f2e2dc00eda388b2a2d075924fa72f9eff1a
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65696291"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72670312"
 ---
 # <a name="productivity-tips-for-visual-studio"></a>Sugerencias de productividad para Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -81,13 +81,13 @@ Si sigue estas sugerencias, puede escribir, navegar y depurar código en Visual 
 
      Figura 1: etiquetas inteligentes de error
 
-     ![Sugerencias de etiquetas inteligentes de error](../ide/media/productivity-bluesmarttags.png "Productivity_BlueSmartTags")
+     ![Sugerencias de error de etiquetas inteligentes](../ide/media/productivity-bluesmarttags.png "|::ref1::|")
 
      Los cuadros rojos sugieren formas de refactorizar el código.
 
      Figura 2: etiquetas inteligentes de refactorización
 
-     ![Sugerencias de etiquetas inteligentes de refactorización](../ide/media/productivity-redsmarttags.png "Productivity_RedSmartTags")
+     ![Sugerencias para refactorizar etiquetas inteligentes](../ide/media/productivity-redsmarttags.png "|::ref2::|")
 
 - **Mostrar y editar la definición de un elemento de código**. Puede mostrar y editar rápidamente el módulo en el que se define un elemento de código, como un miembro, una variable o un valor local.
 
@@ -117,7 +117,7 @@ Si sigue estas sugerencias, puede escribir, navegar y depurar código en Visual 
 
      Figura 3: lista de resultados de Inicio rápido para `new project`
 
-     ![Resultados de inicio rápido para "nuevo proyecto"](../ide/media/productivity-quicklaunch.png "Productivity_QuickLaunch")
+     ![Resultados de inicio rápido para "nuevo proyecto"](../ide/media/productivity-quicklaunch.png "|::ref3::|")
 
      **Inicio rápido** muestra vínculos al cuadro de diálogo **Nuevo proyecto**, al cuadro de diálogo **Agregar nuevo elemento** y a la página Proyectos y soluciones del cuadro de diálogo **Opciones**, entre otros. Los resultados de Inicio rápido también pueden incluir archivos de proyecto y ventanas de herramientas.
 
@@ -126,7 +126,7 @@ Si sigue estas sugerencias, puede escribir, navegar y depurar código en Visual 
 
 - **Probar la misma página, aplicación o sitio en exploradores diferentes**. Cuando depura código, puede cambiar fácilmente entre los exploradores web instalados, incluido [Inspector de página (Visual Studio)](https://msdn.microsoft.com/library/65880969-1ad2-47be-85b9-bb12c81bf209), sin tener que abrir el cuadro de diálogo **Explorar con**. Puede usar la lista **Depurar destino**, que se encuentra en la barra de herramientas **Estándar** junto al botón **Iniciar depuración**, para comprobar rápidamente qué explorador está usando mientras depura o ve páginas.
 
-     ![Seleccionar opciones de depuración de explorador web](../ide/media/webbrowserdropdowntoolbar.png "WebBrowserDropDownToolbar")
+     ![Selección de opciones de depuración del explorador web](../ide/media/webbrowserdropdowntoolbar.png "|::ref4::|")
 
 - **Establecer puntos de interrupción temporales**. Puede crear un punto de interrupción temporal en la línea actual de código e iniciar el depurador simultáneamente. Al llegar a esa línea de código, el depurador activa el modo de interrupción. Vea [Desplazarse por el código con el depurador](../debugger/navigating-through-code-with-the-debugger.md) para obtener más información.
 
@@ -157,5 +157,5 @@ Si sigue estas sugerencias, puede escribir, navegar y depurar código en Visual 
 
 - **Personalizar las fuentes que aparecen en Visual Studio**. Puede cambiar la fuente, el tamaño y el color que se usa para el texto en el IDE. Por ejemplo, puede personalizar el color de determinados elementos de código en el editor y la fuente en las ventanas de herramientas o en todo el IDE. Para obtener más información, vea [Cómo: Cambiar fuentes y colores en Visual Studio](../ide/how-to-change-fonts-and-colors-in-visual-studio.md) y [Cómo: Cambiar las fuentes y los colores del editor](../ide/reference/how-to-change-fonts-and-colors-in-the-editor.md).
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Otras referencias
  [Métodos abreviados de teclado para comandos de uso frecuente](../ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md) [Procedimientos para: personalizar menús y barras de herramientas](../ide/how-to-customize-menus-and-toolbars-in-visual-studio.md) [Tutorial: Crear una aplicación sencilla](../ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md) [Sugerencias y trucos de accesibilidad](../ide/reference/accessibility-tips-and-tricks.md)
