@@ -8,17 +8,17 @@ helpviewer_keywords:
 - database files, creating
 - table designer
 ms.assetid: 99c2b06f-47aa-414e-8057-a3453712fd23
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 365037d3eeeec5077d724ca72d43cce5dcbe0ebd
-ms.sourcegitcommit: 528178a304e66c0cb7ab98b493fe3c409f87493a
+ms.openlocfilehash: 14d30a366c7400b05a713f146e602ae9ccd7e766
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71273358"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72648662"
 ---
 # <a name="create-a-database-and-add-tables-in-visual-studio"></a>Crear una base de datos y agregar tablas en Visual Studio
 
@@ -26,13 +26,13 @@ Puede usar Visual Studio para crear y actualizar un archivo de base de datos loc
 
 ## <a name="prerequisites"></a>Requisitos previos
 
-Para completar este tutorial, necesitará las cargas de trabajo **desarrollo de escritorio de .net** y almacenamiento de **datos y procesamiento** instaladas en Visual Studio. Para instalarlos, Abra **instalador de Visual Studio** y elija **modificar** (o **más** > **modificar**) junto a la versión de Visual Studio que desea modificar.
+Para completar este tutorial, necesitará las cargas de trabajo **desarrollo de escritorio de .net** y almacenamiento de **datos y procesamiento** instaladas en Visual Studio. Para instalarlos, Abra **instalador de Visual Studio** y elija **modificar** (o **más**  > **modificar**) junto a la versión de Visual Studio que desea modificar.
 
 ## <a name="create-a-project-and-a-local-database-file"></a>Crear un proyecto y un archivo de base de datos local
 
 1. Cree un nuevo proyecto de **aplicación de Windows Forms** y asígnele el nombre **SampleDatabaseWalkthrough**.
 
-2. En la barra de menús, seleccione **proyecto** > **Agregar nuevo elemento**.
+2. En la barra de menús, seleccione **proyecto**  > **Agregar nuevo elemento**.
 
 3. En la lista de plantillas de elementos, desplácese hacia abajo y seleccione **base de datos basada en servicio**.
 
@@ -42,7 +42,7 @@ Para completar este tutorial, necesitará las cargas de trabajo **desarrollo de 
 
 ### <a name="add-a-data-source"></a>Agregar un origen de datos
 
-1. Si la ventana **orígenes de datos** no está abierta, ábrala presionando **MAYÚS**+**Alt**+**D** o seleccionando **Ver** > otros**orígenes de datos** de**Windows** > en barra de menús.
+1. Si la **ventana orígenes de datos** no está abierta, ábrala; para ello, presione **mayús** +**Alt** +**D** o seleccione **Ver**  > **otras ventanas**  > **orígenes de datos** en la barra de menús.
 
 1. En la ventana **orígenes de datos** , seleccione **Agregar nuevo origen de datos**.
 
@@ -64,9 +64,9 @@ Para completar este tutorial, necesitará las cargas de trabajo **desarrollo de 
 
 Puede ver la cadena de conexión para el archivo *SampleDatabase. MDF* ; para ello, abra el ventana Propiedades de la conexión de datos:
 
-- Seleccione **Ver** > **Explorador de objetos de SQL Server** para abrir la ventana de **Explorador de objetos de SQL Server** . Expanda **(LocalDB) \MSSQLLocalDB** > **bases de datos**y, a continuación, haga clic con el botón derecho en *SampleDatabase. MDF* y seleccione **propiedades**.
+- Seleccione **ver**  > **Explorador de objetos de SQL Server** para abrir la ventana de **Explorador de objetos de SQL Server** . Expanda **(LocalDB) \MSSQLLocalDB**  > **bases de datos**y, a continuación, haga clic con el botón derecho en *SampleDatabase. MDF* y seleccione **propiedades**.
 
-- Como alternativa, puede seleccionar **Ver** > **Explorador de servidores**si la ventana no está abierta. Para abrir el ventana Propiedades, expanda el nodo **conexiones de datos** , haga clic con el botón secundario en *SampleDatabase. MDF*y, a continuación, seleccione **propiedades**.
+- Como alternativa, puede seleccionar **ver**  > **Explorador de servidores**, si la ventana no está abierta todavía. Para abrir el ventana Propiedades, expanda el nodo **conexiones de datos** , haga clic con el botón secundario en *SampleDatabase. MDF*y, a continuación, seleccione **propiedades**.
 
   > [!TIP]
   > Si no puede expandir el nodo conexiones de datos o no aparece la conexión SampleDatabase. MDF, seleccione el botón **conectar con base** de datos en la barra de herramientas explorador de servidores. En el cuadro de diálogo **Agregar conexión** , asegúrese de que **Microsoft SQL Server archivo de base** de **datos**está seleccionado en origen de datos y, a continuación, busque y seleccione el archivo SampleDatabase. MDF. Termine de agregar la conexión seleccionando **Aceptar**.
@@ -94,9 +94,9 @@ En esta sección, creará dos tablas, una clave principal en cada tabla y alguna
    |`ContactName`|`nvarchar (50)`|True (seleccionada)|
    |`Phone`|`nvarchar (24)`|True (seleccionada)|
 
-4. Haga clic con el botón `CustomerID` derecho en la fila y seleccione **establecer clave principal**.
+4. Haga clic con el botón derecho en la fila `CustomerID` y seleccione **establecer clave principal**.
 
-5. Haga clic con el botón derecho en la`Id`fila predeterminada () y, a continuación, seleccione **eliminar**.
+5. Haga clic con el botón secundario en la fila predeterminada (`Id`) y, a continuación, seleccione **eliminar**.
 
 6. Asigne un nombre a la tabla Customers actualizando la primera línea del panel de script para que coincida con el ejemplo siguiente:
 
@@ -165,7 +165,7 @@ En esta sección, creará dos tablas, una clave principal en cada tabla y alguna
 
 1. En **Explorador de servidores** o **Explorador de objetos de SQL Server**, expanda el nodo de la base de datos de ejemplo.
 
-2. Abra el menú contextual para el **tablas** nodo, seleccione **actualizar** y, a continuación, expanda el nodo **tablas**.
+2. Abra el menú contextual del nodo **tablas** , seleccione **Actualizar**y, a continuación, expanda el nodo **tablas** .
 
 3. Abra el menú contextual para la tabla Customers y, a continuación, seleccione **Mostrar datos de tabla**.
 
@@ -180,7 +180,7 @@ En esta sección, creará dos tablas, una clave principal en cada tabla y alguna
     > [!IMPORTANT]
     > Asegúrese de que todos los identificadores y cantidades de pedidos sean números enteros y que cada identificador de cliente coincida con el valor que especificó en la columna **CustomerID** de la tabla Clientes.
 
-7. En la barra de menús, seleccione **Archivo** > **Guardar todo**.
+7. En la barra de menús, seleccione **archivo**  > **guardar todo**.
 
 ## <a name="see-also"></a>Vea también
 

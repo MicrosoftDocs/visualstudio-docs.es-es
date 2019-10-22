@@ -16,15 +16,15 @@ helpviewer_keywords:
 - exporting shortcut keys [Visual Studio]
 ms.assetid: d2774be2-60a4-4d6f-95f1-79d0d9e55b56
 caps.latest.revision: 30
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 74c08f7ee338a38267ba0b259fbd8cb207b64d71
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: e63395838d7d91170d54edbb07c0b38db548ccdf
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63432309"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72670492"
 ---
 # <a name="identifying-and-customizing-keyboard-shortcuts-in-visual-studio"></a>Identificar y personalizar métodos abreviados de teclado en Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -58,7 +58,7 @@ Puede identificar los métodos abreviados de teclado de los comandos de Visual S
 
 2. Expanda **Entorno** y elija **Teclado**.
 
-     ![Mostrar métodos abreviados de teclado en el cuadro de diálogo Opciones](../ide/media/optionskeyboard.png "OptionsKeyboard")
+     ![Muestra de métodos abreviados de teclado en el cuadro de diálogo Opciones](../ide/media/optionskeyboard.png "|::ref1::|")
 
 3. En el cuadro **Mostrar los comandos que contengan**, escriba todo o parte del nombre del comando sin espacios.
 
@@ -70,7 +70,7 @@ Puede identificar los métodos abreviados de teclado de los comandos de Visual S
 
 5. Si el comando tiene un método abreviado de teclado, aparece en la lista **Métodos abreviados para el comando seleccionado**.
 
-     ![Ver un método abreviado de un comando específico](../ide/media/viewshortcut.png "ViewShortcut")
+     ![Vista de un acceso directo para un comando especificado](../ide/media/viewshortcut.png "|::ref2::|")
 
 ## <a name="bkmk_assign"></a> Personalizar un método abreviado de teclado
 
@@ -78,7 +78,7 @@ Puede identificar los métodos abreviados de teclado de los comandos de Visual S
 
 2. Expanda la carpeta **Entorno** y elija **Teclado**.
 
-     ![Mostrar métodos abreviados de teclado en el cuadro de diálogo Opciones](../ide/media/optionskeyboard.png "OptionsKeyboard")
+     ![Muestra de métodos abreviados de teclado en el cuadro de diálogo Opciones](../ide/media/optionskeyboard.png "|::ref3::|")
 
 3. En el cuadro **Mostrar los comandos que contengan**, escriba todo o parte del nombre del comando sin espacios.
 
@@ -100,7 +100,7 @@ Puede identificar los métodos abreviados de teclado de los comandos de Visual S
 
      Si un método abreviado ya está asignado a otro comando, aparece en el cuadro **El método abreviado lo utiliza actualmente**. En ese caso, elija la tecla Retroceso para eliminar ese método abreviado antes de probar con otro.
 
-     ![Especificar un método abreviado diferente para un comando](../ide/media/reassignshortcut.png "ReassignShortcut")
+     ![Especificación de un acceso directo diferente para un comando](../ide/media/reassignshortcut.png "|::ref4::|")
 
 7. Elija el botón **Asignar**.
 
@@ -116,11 +116,11 @@ Puede identificar los métodos abreviados de teclado de los comandos de Visual S
 
 2. Seleccione **Exportar la configuración de entorno seleccionada** y elija el botón **Siguiente**.
 
-3. En **¿Qué configuración desea exportar?**, desactive la casilla **Todas las configuraciones**, expanda **Opciones** y, después, expanda **Entorno**.
+3. En **¿Qué configuración desea exportar?** , desactive la casilla **Todas las configuraciones**, expanda **Opciones** y, después, expanda **Entorno**.
 
 4. Active la casilla **Teclado** y elija el botón **Siguiente**.
 
-     ![Exportar solo los métodos abreviados de teclado personalizados](../ide/media/exportshortcuts.png "ExportShortcuts")
+     ![Exportación de solo los métodos abreviados de teclado personalizados](../ide/media/exportshortcuts.png "|::ref5::|")
 
 5. En los cuadros **¿Qué nombre desea dar al archivo de configuración?** y **Almacenar mi archivo de configuración en este directorio**, deje los valores predeterminados o especifique otros diferentes y elija el botón **Finalizar**.
 
@@ -138,11 +138,11 @@ Puede identificar los métodos abreviados de teclado de los comandos de Visual S
 
 5. Elija el botón **Siguiente**.
 
-6. En **¿Qué configuración desea importar?**, desactive la casilla **Todas las configuraciones**, expanda **Opciones** y, después, expanda **Entorno**.
+6. En **¿Qué configuración desea importar?** , desactive la casilla **Todas las configuraciones**, expanda **Opciones** y, después, expanda **Entorno**.
 
 7. Active la casilla **Teclado** y elija el botón **Finalizar**.
 
-     ![Importar solo los métodos abreviados de teclado personalizados](../ide/media/importshortcuts.png "ImportShortcuts")
+     ![Importación de solo los métodos abreviados de teclado personalizados](../ide/media/importshortcuts.png "|::ref6::|")
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Otras referencias
  [Características de accesibilidad de Visual Studio](../ide/reference/accessibility-features-of-visual-studio.md)

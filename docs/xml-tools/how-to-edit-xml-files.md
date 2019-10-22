@@ -1,21 +1,21 @@
 ---
-title: Procedimiento Editar archivos XML
+title: 'Cómo: Editar archivos XML'
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 07fa3ecf-6345-4d30-9d85-d5ef5b083319
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1bcc560c1e0cabd222da68e98de18d7b8bef6ec6
-ms.sourcegitcommit: 0f5f7955076238742f2071d286ad8e896f3a6cad
+ms.openlocfilehash: fd8671bf45230ec24a37d5006a2d32e5aabe8f28
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "68483407"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72645920"
 ---
-# <a name="how-to-edit-xml-files"></a>Procedimiento Edición de archivos XML
+# <a name="how-to-edit-xml-files"></a>Cómo: editar archivos XML
 
 El editor XML es el nuevo editor de archivos XML. Se puede utilizar en un archivo XML independiente o en uno asociado con un proyecto de Visual Studio. El editor XML está asociado con las siguientes extensiones de archivo: *. config*, *. DTD*, *. XML*, *. xsd*, *. XDR*, *. xsl*, *. XSLT*y *. vssettings*. El editor XML también está asociado a cualquier otro tipo de archivo que no tenga registrado ningún editor específico y que contenga contenido XML o DTD.
 
@@ -56,23 +56,23 @@ Para editar un archivo XML, haga doble clic en el archivo que desea editar.
 
 ::: moniker range="vs-2017"
 
-1. En el menú **archivo** , seleccione **nuevo** > **proyecto**.
+1. En el menú **Archivo**, seleccione **Nuevo** > **Proyecto**.
 
    Aparecerá el cuadro de diálogo **Nuevo proyecto** .
 
 2. Seleccione el lenguaje de código que desee y, a continuación, seleccione la plantilla **proyecto vacío (.NET Framework)** .
 
-3. Haga clic en **OK**.
+3. Haga clic en **Aceptar**.
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-1. En el menú **archivo** , seleccione **nuevo** > **proyecto**.
+1. En el menú **Archivo**, seleccione **Nuevo** > **Proyecto**.
 
 2. Escriba **proyecto vacío** en el cuadro de búsqueda de plantillas, seleccione la plantilla **proyecto vacío (.NET Framework)** y, a continuación, haga clic en **siguiente**.
 
-3. Haga clic en **Create**(Crear).
+3. Haga clic en **Crear**.
 
 ::: moniker-end
 
@@ -84,4 +84,4 @@ Para editar un archivo XML, haga doble clic en el archivo que desea editar.
 
 - [Editor XML](../xml-tools/xml-editor.md)
 - [Propiedades de documento XML, ventana Propiedades](../xml-tools/xml-document-properties-properties-window.md)
-- [Cómo: Crear un esquema XML a partir de un documento XML](../xml-tools/how-to-create-an-xml-schema-from-an-xml-document.md)
+- [Cómo: crear un esquema XML a partir de un documento XML](../xml-tools/how-to-create-an-xml-schema-from-an-xml-document.md)

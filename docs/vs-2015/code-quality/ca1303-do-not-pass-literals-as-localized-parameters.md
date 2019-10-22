@@ -1,5 +1,5 @@
 ---
-title: 'CA1303: No pasar literales como localizados parámetros | Documentos de Microsoft'
+title: 'CA1303: no pasar literales como parámetros localizados | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -13,15 +13,15 @@ helpviewer_keywords:
 - CA1303
 ms.assetid: 904d284e-76d0-4b8f-a4df-0094de8d7aac
 caps.latest.revision: 24
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: fafcf113f5f40da3bcc4666778330865dcdfb84c
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: ce85a3a933d9453c63ef118d5dfd9e0b17cbf130
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65686806"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72661458"
 ---
 # <a name="ca1303-do-not-pass-literals-as-localized-parameters"></a>CA1303: No pasar literales como parámetros localizados
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,33 +30,33 @@ ms.locfileid: "65686806"
 |-|-|
 |TypeName|DoNotPassLiteralsAsLocalizedParameters|
 |Identificador de comprobación|CA1303|
-|Categoría|Microsoft.Globalization|
+|Categoría|Microsoft. Globalization|
 |Cambio problemático|No trascendental|
 
 ## <a name="cause"></a>Motivo
- Un método pasa una literal de cadena como un parámetro a un constructor o método en el [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] biblioteca de clases y que la cadena debe ser localizable.
+ Un método pasa un literal de cadena como un parámetro a un constructor o método en la biblioteca de clases de [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] y esa cadena debe ser localizable.
 
- Esta advertencia se produce si una cadena literal se pasa como un valor a un parámetro o propiedad y uno o varios de los casos siguientes son verdadera:
+ Esta advertencia se genera cuando se pasa una cadena literal como un valor a un parámetro o propiedad y se cumple uno o varios de los siguientes casos:
 
-- El <xref:System.ComponentModel.LocalizableAttribute> atributo del parámetro o la propiedad se establece en true.
+- El atributo <xref:System.ComponentModel.LocalizableAttribute> del parámetro o propiedad está establecido en true.
 
-- El nombre de parámetro o la propiedad contiene "Text", "Mensaje" o "Título".
+- El nombre de la propiedad o el parámetro contiene "Text", "message" o "Caption".
 
-- El nombre del parámetro de cadena que se pasa a un método Console.Write o Console.WriteLine es "value" o "format".
+- El nombre del parámetro de cadena que se pasa a un método Console. Write o Console. WriteLine es "Value" o "format".
 
 ## <a name="rule-description"></a>Descripción de la regla
- Literales de cadena que se incrustan en el código fuente son difíciles de localizar.
+ Los literales de cadena que están incrustados en el código fuente son difíciles de localizar.
 
 ## <a name="how-to-fix-violations"></a>Cómo corregir infracciones
- Para corregir una infracción de esta regla, reemplace el literal de cadena con una cadena que se recuperan a través de una instancia de la <xref:System.Resources.ResourceManager> clase.
+ Para corregir una infracción de esta regla, reemplace el literal de cadena por una cadena recuperada a través de una instancia de la clase <xref:System.Resources.ResourceManager>.
 
 ## <a name="when-to-suppress-warnings"></a>Cuándo suprimir advertencias
- Es seguro suprimir una advertencia de esta regla si no se puede adaptar la biblioteca de código, o si la cadena no se expone al usuario final o un desarrollador que utiliza la biblioteca de código.
+ Es seguro suprimir una advertencia de esta regla si la biblioteca de código no se va a localizar, o si la cadena no se expone al usuario final o a un desarrollador que usa la biblioteca de código.
 
- Los usuarios pueden eliminar el ruido de los métodos que no se deben pasar cadenas localizadas cambiando el parámetro o una propiedad denominada o marcando estos elementos como condicionales.
+ Los usuarios pueden eliminar el ruido de los métodos que no deben pasar cadenas localizadas cambiando el nombre del parámetro o la propiedad denominada o marcando estos elementos como condicionales.
 
 ## <a name="example"></a>Ejemplo
- El ejemplo siguiente muestra un método que produce una excepción cuando cualquiera de sus dos argumentos están fuera del intervalo. Para el primer argumento, el constructor de la excepción se pasa una cadena literal, lo que infringe esta regla. Para el segundo argumento, se pasa al constructor correctamente una cadena que se recuperan mediante un <xref:System.Resources.ResourceManager>.
+ En el ejemplo siguiente se muestra un método que produce una excepción cuando uno de sus dos argumentos está fuera del intervalo. En el primer argumento, se pasa al constructor de la excepción una cadena literal, que infringe esta regla. En el segundo argumento, al constructor se le pasa correctamente una cadena recuperada a través de un <xref:System.Resources.ResourceManager>.
 
  [!code-cpp[FxCop.Globalization.DoNotPassLiterals#1](../snippets/cpp/VS_Snippets_CodeAnalysis/FxCop.Globalization.DoNotPassLiterals/cpp/FxCop.Globalization.DoNotPassLiterals.cpp#1)]
  [!code-csharp[FxCop.Globalization.DoNotPassLiterals#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Globalization.DoNotPassLiterals/cs/FxCop.Globalization.DoNotPassLiterals.cs#1)]

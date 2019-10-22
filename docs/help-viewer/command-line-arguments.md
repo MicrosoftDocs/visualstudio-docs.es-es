@@ -8,12 +8,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 09b63b3d01329a5fe243d100eeea921299061433
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
-ms.translationtype: HT
+ms.openlocfilehash: d9bead01c6440d5232a91a5e8fe2007b3e30340c
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67825083"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72631977"
 ---
 # <a name="command-line-arguments-for-the-help-content-manager"></a>Argumentos de línea de comandos para Help Content Manager
 
@@ -39,6 +39,9 @@ Por ejemplo:
 hlpctntmgr.exe /operation install /catalogname VisualStudio15 /locale en-us /sourceuri d:\productDocumentation\HelpContentSetup.msha
 ```
 
+>[!NOTE]
+> El nombre del catálogo es VisualStudio15 para Visual Studio 2017 y Visual Studio 2019. Esto podría ser inesperado, pero esto se debe a que el mismo visor de ayuda se usa para ambas versiones de Visual Studio.
+
 ## <a name="switches-and-arguments"></a>Modificadores y argumentos
 
 En la tabla siguiente se definen los modificadores y los argumentos que puede utilizar para la herramienta de la línea de comandos de Help Content Manager:
@@ -46,7 +49,7 @@ En la tabla siguiente se definen los modificadores y los argumentos que puede ut
 |Modificador|¿Obligatorio?|Argumentos|
 |------------|---------------|---------------|
 |/operation|Sí|-   **Instalar**: agrega los libros del origen de instalación especificado al almacén de contenido local.<br />     Este modificador requiere el argumento /booklist, el argumento /sourceURI o ambos. Si no se especifica el argumento /sourceURI, el URI de Visual Studio predeterminado se usa como origen de la instalación. Si no se especifica el argumento /booklist, se instalarán todos los libros de /sourceUri.<br />-   **Desinstalar**: quita los libros que especifique del almacén de contenido local.<br />     Este modificador requiere el argumento /booklist o el argumento /sourceURI.  Si se especifica el argumento /sourceURI, se quitan todos los libros y se omite el argumento /booklist.<br />-   **Mover**: mueve el almacén local a la ruta de acceso especificada. La ruta de acceso predeterminada del almacén local se establece como un directorio en *%ProgramData%* .<br />     Este modificador requiere los argumentos /locationPath y /catalogName. Los mensajes de error se registran en el registro de eventos si especifica una ruta de acceso no válida o si la unidad no contiene suficiente espacio disponible para incluir el contenido.<br />-   **Actualizar**: actualiza los temas que han cambiado desde que se instalaron o actualizaron recientemente.<br />     Este modificador requiere el argumento /sourceURI.|
-|/catalogName|Sí|Especifica el nombre del catálogo de contenido.|
+|/catalogName|Sí|Especifica el nombre del catálogo de contenido. Para Visual Studio 2017 y Visual Studio 2019, es VisualStudio15.|
 |/locale|No|Especifica la configuración regional del producto que se usa para ver y administrar el contenido de la instancia actual del Visor de Ayuda. Por ejemplo, se especifica `EN-US` para inglés (Estados Unidos).<br /><br /> Si no se especifica una configuración regional, se usa la del sistema operativo. Si esa configuración regional no se puede determinar, se usa `EN-US`.<br /><br /> Si se especifica una configuración regional no válida, se registra un mensaje de error en el registro de eventos.|
 |/e|No|Eleva Help Content Manager a los privilegios administrativos si el usuario actual tiene credenciales administrativas.|
 |/sourceURI|No|Especifica la dirección URL en la que se instala el contenido (API de servicio) o la ruta de acceso al archivo de instalación de contenido ( *.msha*). La dirección URL puede apuntar al grupo de productos (nodo de nivel superior) o a los libros de productos (nodo en el nivel de hoja) en un punto de conexión de estilo Visual Studio 2010. No es necesario incluir una barra diagonal (/) al final de la dirección URL. Si incluye una barra diagonal final, se controlará adecuadamente.<br /><br /> Se graba un mensaje de error en el registro de eventos si especifica un archivo que no se encuentra, que no es válido o no es accesible, o bien si una conexión a Internet no está disponible o se interrumpe mientras se está administrando el contenido.|
@@ -56,7 +59,7 @@ En la tabla siguiente se definen los modificadores y los argumentos que puede ut
 |/skuId|No|Especifica la referencia de almacén (SKU) del producto del origen de instalación y filtra los libros que el modificador /SourceURI identifica.|
 |/membership|No|-   **Mínima**: instala un conjunto mínimo de contenido de Ayuda basado en el SKU especificado mediante el modificador /skuId. La asignación entre SKU y el conjunto de contenido se expone en la API de servicio.<br />-   **Recomendada**: instala un conjunto de libros recomendados para el SKU especificado con el argumento /skuId. El origen de instalación es la API de servicio o *.MSHA*.<br />-   **Completa**: instala el conjunto completo de libros para el SKU especificado con el argumento /skuId. El origen de instalación es la API de servicio o *.MSHA*.|
 |/locationpath|No|Especifica la carpeta predeterminada para el contenido de Ayuda local. Debe utilizar este modificador para instalar o mover solo el contenido. Si especifica este modificador, también debe especificar el modificador /silent.|
-|/silent|No|Instala o quita contenido de Ayuda sin preguntar al usuario ni mostrar ninguna interfaz de usuario, incluido el icono en el área de notificación de estado. La salida se registra en un archivo en el directorio *%Temp%* . **Importante:**  Para instalar contenido de forma silenciosa, debe utilizar los archivos *.cab* firmados digitalmente, no los archivos *.mshc*.|
+|/silent|No|Instala o quita contenido de Ayuda sin preguntar al usuario ni mostrar ninguna interfaz de usuario, incluido el icono en el área de notificación de estado. La salida se registra en un archivo en el directorio *%Temp%* . **Importante:** Para instalar contenido de forma silenciosa, debe usar los archivos *.cab* firmados digitalmente, no los archivos *.mshc*.|
 |/launchingApp|No|Define la aplicación y el contexto de catálogo cuando el Visor de Ayuda se inicia sin la aplicación primaria. Los argumentos para este modificador son *CompanyName*, *ProductName* y *VersionNumber* (por ejemplo, `/launchingApp Microsoft,VisualStudio,16.0`).<br /><br /> Esto es necesario para instalar contenido con el parámetro /silent.|
 |/wait *Segundos*|No|Pausa las operaciones de instalación, desinstalación y actualización. Si una operación ya está en curso para el catálogo, el proceso esperará hasta el número especificado de segundos para continuar. Use 0 para esperar indefinidamente.|
 |/?|No|Hace una lista de los modificadores y sus descripciones para la herramienta de la línea de comandos de Help Content Manager.|

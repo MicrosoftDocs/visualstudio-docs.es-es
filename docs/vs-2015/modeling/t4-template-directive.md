@@ -6,15 +6,15 @@ ms.technology: vs-ide-modeling
 ms.topic: conceptual
 ms.assetid: 2b0a8e04-6fee-4c6c-b086-e49fc728a3ed
 caps.latest.revision: 12
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 7eeae6a14c846de83aaffa6568c6c30b82d9d81b
-ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
+ms.openlocfilehash: d4c6176caee5551b860029ac98b19d52fcb7b51f
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68871739"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72658554"
 ---
 # <a name="t4-template-directive"></a>Directiva de plantilla T4
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,7 +34,7 @@ Normalmente, una plantilla de texto T4 de [!INCLUDE[vsprvs](../includes/vsprvs-m
 ## <a name="compileroptions-attribute"></a>compilerOptions (atributo)
  Ejemplo: `compilerOptions="optimize+"`
 
- Valores válidos: Cualquier opción del compilador válida. Para obtener más información, vea [ C# opciones del compilador por categoría](https://msdn.microsoft.com/library/96437ecc-6502-4cd3-b070-e9386a298e83) y [Visual Basic opciones del compilador enumeradas por categoría](https://msdn.microsoft.com/library/fbe36f7a-7cfa-4f77-a8d4-2be5958568e3).
+ Valores válidos: cualquier opción de compilador válida. Para obtener más información, vea [ C# opciones del compilador por categoría](https://msdn.microsoft.com/library/96437ecc-6502-4cd3-b070-e9386a298e83) y [Visual Basic opciones del compilador enumeradas por categoría](https://msdn.microsoft.com/library/fbe36f7a-7cfa-4f77-a8d4-2be5958568e3).
 
  Se omite para plantillas (preprocesadas) en tiempo de ejecución.
 
@@ -45,7 +45,7 @@ Normalmente, una plantilla de texto T4 de [!INCLUDE[vsprvs](../includes/vsprvs-m
 
  Valores válidos: "", la referencia cultural de todos los idiomas, que es el valor predeterminado.
 
- Una referencia cultural expresada como una cadena con el formato xx-XX. Por ejemplo, es-ES, ja-JP, de-CH, de-DE. Para obtener más información, consulta <xref:System.Globalization.CultureInfo?displayProperty=fullName>.
+ Una referencia cultural expresada como una cadena con el formato xx-XX. Por ejemplo, es-ES, ja-JP, de-CH, de-DE. Para obtener más información, vea <xref:System.Globalization.CultureInfo?displayProperty=fullName>.
 
  El atributo culture especifica la referencia cultural para utilizar cuando un bloque de expresión se convierte en texto.
 
@@ -56,13 +56,13 @@ Normalmente, una plantilla de texto T4 de [!INCLUDE[vsprvs](../includes/vsprvs-m
 debug="true"
 ```
 
- Valores válidos `true, false`:. False es la opción predeterminada.
+ Valores válidos: `true, false`. False es la opción predeterminada.
 
  Si el atributo `debug` es `true`, el archivo de código intermedio contiene información que permite al depurador identificar con más precisión la posición de la plantilla donde se produjo una interrupción o una excepción.
 
  En el caso de las plantillas en tiempo de diseño, el archivo de código intermedio se escribirá en el directorio **% temp%** .
 
- Para ejecutar una plantilla en tiempo de diseño en el depurador, guarde la plantilla de texto, abra el menú contextual de la plantilla de texto en Explorador de soluciones y elija depurar **plantilla T4**.
+ Para ejecutar una plantilla en tiempo de diseño en el depurador, guarde la plantilla de texto, abra el menú contextual de la plantilla de texto en Explorador de soluciones y elija **depurar plantilla T4**.
 
 ## <a name="hostspecific-attribute"></a>hostspecific (atributo)
  Ejemplo:
@@ -71,7 +71,7 @@ debug="true"
 hostspecific="true"
 ```
 
- Valores válidos `true, false, trueFromBase`:. False es la opción predeterminada.
+ Valores válidos: `true, false, trueFromBase`. False es la opción predeterminada.
 
  Si establece el valor de este atributo en `true`, una propiedad denominada `Host` se agrega a la clase generada por la plantilla de texto. La propiedad es una referencia al host del motor de transformación y se declara como [ITextTemplatingEngineHost](/previous-versions/visualstudio/visual-studio-2012/bb126505(v=vs.110)). Si ha definido un host personalizado, puede convertirlo al tipo de host personalizado.
 
@@ -104,7 +104,7 @@ Content of myFile is:
 ## <a name="language-attribute"></a>language (atributo)
  Ejemplo: `language="VB"`
 
- Valores válidos `C#` : (valor predeterminado)
+ Valores válidos: `C#` (valor predeterminado)
 
  `VB`
 
@@ -216,7 +216,7 @@ This is the common footer.
 ## <a name="linepragmas-attribute"></a>Atributo LinePragmas
  Ejemplo: `linePragmas="false"`
 
- Valores válidos `true` : (valor predeterminado)
+ Valores válidos: `true` (valor predeterminado)
 
  `false`
 
@@ -227,7 +227,7 @@ This is the common footer.
 ## <a name="visibility-attribute"></a>Atributo visibility
  Ejemplo: `visibility="internal"`
 
- Valores válidos `public` : (valor predeterminado)
+ Valores válidos: `public` (valor predeterminado)
 
  `internal`
 

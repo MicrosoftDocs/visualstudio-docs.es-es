@@ -20,24 +20,24 @@ helpviewer_keywords:
 - data [Windows Forms], displaying
 ms.assetid: 243338ef-41af-4cc5-aff7-1e830236f0ec
 caps.latest.revision: 40
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 07c5853b673657c3ce8e90467a13bbac3f430b6e
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 8a03f4df57b216fa68e5ac24df80b67917aa3e3f
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65698986"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72672985"
 ---
 # <a name="bind-windows-forms-controls-to-data-in-visual-studio"></a>Enlazar controles de Windows Forms a datos en Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Para mostrar datos a los usuarios de la aplicación, puede enlazarlos a Windows Forms. Para crear estos controles enlazados a datos, puede arrastrar elementos desde el **orígenes de datos** ventana hasta el Diseñador de Windows Forms en Visual Studio. En este tema se describen algunas de las tareas, herramientas y clases más comunes para crear aplicaciones de Windows Forms enlazadas a datos.
+Para mostrar datos a los usuarios de la aplicación, puede enlazarlos a Windows Forms. Para crear estos controles enlazados a datos, puede arrastrar elementos desde la ventana **orígenes de datos** hasta el diseñador de Windows Forms en Visual Studio. En este tema se describen algunas de las tareas, herramientas y clases más comunes para crear aplicaciones de Windows Forms enlazadas a datos.
 
- ![Origen de datos de la operación de arrastrar](../data-tools/media/raddata-data-source-drag-operation.png "raddata origen de datos de la operación de arrastrar")
+ ![Operación de arrastre de origen de datos](../data-tools/media/raddata-data-source-drag-operation.png "raddata operación de arrastre de origen de datos")
 
- Para obtener información general sobre cómo crear controles enlazados a datos en Visual Studio, consulte [enlazar controles a datos en Visual Studio](../data-tools/bind-controls-to-data-in-visual-studio.md). Para obtener más información acerca del enlace de datos en Windows Forms, consulte [Windows Forms Data Binding](https://msdn.microsoft.com/library/c3826d8e-ea25-4ad4-a669-45bfb19192aa).
+ Para obtener información general sobre cómo crear controles enlazados a datos en Visual Studio, vea [enlazar controles a datos en Visual Studio](../data-tools/bind-controls-to-data-in-visual-studio.md). Para obtener más información sobre el enlace de datos en Windows Forms, vea [Windows Forms enlace de datos](https://msdn.microsoft.com/library/c3826d8e-ea25-4ad4-a669-45bfb19192aa).
 
 ## <a name="in-this-section"></a>En esta sección
 
@@ -74,7 +74,7 @@ Para mostrar datos a los usuarios de la aplicación, puede enlazarlos a Windows 
  Este componente proporciona una interfaz de usuario para navegar por los datos mostrados en una aplicación Windows. Para más información, consulte [Control BindingNavigator](https://msdn.microsoft.com/library/18c1e2a5-9834-40d3-9b2e-2b545e4e769e).
 
 ## <a name="datagridview-control"></a>DataGridView (control)
- Para mostrar y editar datos tabulares desde muchos tipos diferentes de orígenes de datos, utilice el <xref:System.Windows.Forms.DataGridView> control. Puede enlazar datos a un <xref:System.Windows.Forms.DataGridView> mediante la propiedad <xref:System.Windows.Forms.DataGridView.DataSource%2A>. Para obtener más información, consulte [información general del Control DataGridView](https://msdn.microsoft.com/library/0a45c661-89dc-4390-9cc6-c47eee501488).
+ Para mostrar y editar datos tabulares de muchos tipos diferentes de orígenes de datos, use el control <xref:System.Windows.Forms.DataGridView>. Puede enlazar datos a un <xref:System.Windows.Forms.DataGridView> mediante la propiedad <xref:System.Windows.Forms.DataGridView.DataSource%2A>. Para obtener más información, vea [información general sobre el control DataGridView](https://msdn.microsoft.com/library/0a45c661-89dc-4390-9cc6-c47eee501488).
 
 ## <a name="see-also"></a>Vea también
  [Enlazar controles a los datos en Visual Studio](../data-tools/bind-controls-to-data-in-visual-studio.md)

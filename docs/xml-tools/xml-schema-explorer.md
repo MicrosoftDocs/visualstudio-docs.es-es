@@ -3,21 +3,21 @@ title: Explorador de esquemas XML
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 2fc39e98-b194-456b-a452-cfafb0a52d66
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 717a5d85a9d3a3251739b62728be572bee1487f6
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 9350e4ca41661e6bc9613d036ad4dd2a978a706d
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68926781"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72608094"
 ---
 # <a name="xml-schema-explorer"></a>Explorador de esquemas XML
 
-El **Explorador de esquemas XML** se integra con Microsoft Visual Studio y el editor XML para permitirle trabajar con esquemas del lenguaje de definición de esquemas XML (XSD). Al abrir un archivo de esquema XML, el nodo **conjunto** de esquemas aparece en el **Explorador de esquemas XML**. Todos los esquemas incluidos, importados o redefinidos para el archivo de destino, así como los archivos a los que se hace referencia `include` a `import` través de una instrucción o, también aparecen en el **Explorador de esquemas XML**.
+El **Explorador de esquemas XML** se integra con Microsoft Visual Studio y el editor XML para permitirle trabajar con esquemas del lenguaje de definición de esquemas XML (XSD). Al abrir un archivo de esquema XML, el nodo **conjunto de esquemas** aparece en el **Explorador de esquemas XML**. Todos los esquemas incluidos, importados o redefinidos para el archivo de destino, así como los archivos a los que se hace referencia a través de una instrucción `include` o `import`, también aparecen en el **Explorador de esquemas XML**.
 
 El **Explorador de esquemas XML** le permite hacer lo siguiente:
 
@@ -25,7 +25,7 @@ El **Explorador de esquemas XML** le permite hacer lo siguiente:
 
 - Examinar y desplazarse por el árbol.
 
-- Realizar búsquedas específicas del esquema y de palabras clave. Para obtener más información, vea [Buscar en el conjunto](../xml-tools/searching-the-schema-set.md)de esquemas.
+- Realizar búsquedas específicas del esquema y de palabras clave. Para obtener más información, vea [Buscar en el conjunto de esquemas](../xml-tools/searching-the-schema-set.md).
 
 - Agregar los resultados de la búsqueda a la vista gráfico o a la vista modelo de contenido
 
@@ -80,4 +80,4 @@ Al quitar archivos de la vista, se agregarán todos los nodos globales del archi
 
 ## <a name="see-also"></a>Vea también
 
-- [Cómo: Agregar nodos al área de trabajo desde el explorador de esquemas XML](../xml-tools/how-to-add-nodes-to-the-workspace-from-the-xml-schema-explorer.md)
+- [Cómo: agregar nodos al área de trabajo desde el explorador de esquemas XML](../xml-tools/how-to-add-nodes-to-the-workspace-from-the-xml-schema-explorer.md)

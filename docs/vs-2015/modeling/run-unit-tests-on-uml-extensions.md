@@ -6,20 +6,20 @@ ms.technology: vs-ide-modeling
 ms.topic: conceptual
 ms.assetid: 745d74ae-e48c-4fd9-a755-4354b81b9f8a
 caps.latest.revision: 9
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 5aeeb8bf9ec70a7288316c8b4c6baa337c232621
-ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
+ms.openlocfilehash: 3fdedf3fd9463b25e2c825a0a2d43b069049a2cb
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68871721"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72671230"
 ---
 # <a name="run-unit-tests-on-uml-extensions"></a>Ejecutar pruebas unitarias en extensiones UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Para ayudar a mantener estable el código durante los cambios sucesivos, recomendamos escribir pruebas unitarias y realizarlas como parte de un proceso de compilación normal. Para obtener más información, vea [Haga una prueba unitaria de su código](../test/unit-test-your-code.md). Para configurar las pruebas para las extensiones de modelado de Visual Studio, necesita algunos fragmentos de información clave. En breve:
+Para ayudar a mantener estable el código durante los cambios sucesivos, recomendamos escribir pruebas unitarias y realizarlas como parte de un proceso de compilación normal. Para obtener más información, consulta [Unit Test Your Code](../test/unit-test-your-code.md). Para configurar las pruebas para las extensiones de modelado de Visual Studio, necesita algunos fragmentos de información clave. En breve:
 
 - [Configurar una prueba unitaria para las extensiones VSIX](#Host)
 
@@ -48,7 +48,7 @@ Para ayudar a mantener estable el código durante los cambios sucesivos, recomen
 ## <a name="requirements"></a>Requisitos
  Vea [Requisitos](../modeling/extend-uml-models-and-diagrams.md#Requirements).
 
- Para ver qué versiones de Visual Studio admiten esta característica, vea [Compatibilidad de versiones con las herramientas de arquitectura y modelado](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
+ Para ver qué versiones de Visual Studio admiten esta característica, vea [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
 
 ## <a name="Host"></a>Configurar una prueba unitaria para las extensiones VSIX
  Los métodos de las extensiones de modelado suelen funcionar con un diagrama que ya está abierto. Los métodos usan importaciones MEF como **IDiagramContext** y **ILinkedUndoContext**. Su entorno de prueba debe tener este contexto configurado antes de ejecutar las pruebas.
@@ -59,7 +59,7 @@ Para ayudar a mantener estable el código durante los cambios sucesivos, recomen
 
     1. **Un proyecto de extensión UML.** Se suele crear mediante el comando, el gesto o las plantillas de proyecto de validación. Por ejemplo, vea [definir un comando de menú en un diagrama de modelado](../modeling/define-a-menu-command-on-a-modeling-diagram.md).
 
-    2. **Un proyecto de prueba unitaria.** Para obtener más información, vea [Haga una prueba unitaria de su código](../test/unit-test-your-code.md).
+    2. **Un proyecto de prueba unitaria.** Para obtener más información, consulta [Unit Test Your Code](../test/unit-test-your-code.md).
 
 2. Cree una solución de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] que contenga un proyecto de modelado UML. Usará esta solución como el estado inicial de las pruebas. Debe ser independiente de la solución en la que escribe la extensión UML y las pruebas unitarias. Para obtener más información, vea [crear proyectos y diagramas de modelado UML](../modeling/create-uml-modeling-projects-and-diagrams.md).
 
@@ -82,17 +82,17 @@ Para ayudar a mantener estable el código durante los cambios sucesivos, recomen
 
     - *El proyecto de extensión UML*
 
-    - **EnvDTE.dll**
+    - **EnvDTE. dll**
 
-    - **Microsoft.VisualStudio.ArchitectureTools.Extensibility.dll**
+    - **Microsoft. VisualStudio. ArchitectureTools. Extensibility. dll**
 
-    - **Microsoft.VisualStudio.ComponentModelHost.dll**
+    - **Microsoft. VisualStudio. ComponentModelHost. dll**
 
-    - **Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll**
+    - **Microsoft. VisualStudio. QualityTools. UnitTestFramework. dll**
 
-    - **Microsoft.VisualStudio.Uml.Interfaces.dll**
+    - **Microsoft. VisualStudio. UML. interfaces. dll**
 
-    - **Microsoft.VSSDK.TestHostFramework.dll**
+    - **Microsoft. VSSDK. TestHostFramework. dll**
 
 6. Anteponga el atributo `[HostType("VS IDE")]` a cada método de prueba, incluidos los métodos de inicialización.
 
@@ -379,4 +379,4 @@ Assert.AreEqual("hello", testInstance.privateField1_Accessor);
  Definir los descriptores de acceso mediante la reflexión esta es la manera en que se recomienda menos. Las versiones anteriores de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] proporcionaban una utilidad que creaba automáticamente un método de descriptor de acceso para cada método privado. Aunque esto resulta cómodo, la experiencia nos dice que tiende a producir pruebas unitarias que se acoplan estrechamente a la estructura interna de la aplicación que están probando. Esto supone un trabajo extra cuando los requisitos o la arquitectura cambian, porque las pruebas tienen que modificarse junto con la implementación. Además, cualquier suposición errónea en el diseño de implementación también se integra en las pruebas, de modo que las pruebas no encuentran errores.
 
 ## <a name="see-also"></a>Vea también
- [Anatomía de una prueba unitaria](https://msdn.microsoft.com/a03d1ee7-9999-4e7c-85df-7d9073976144) [Definir un comando de menú en un diagrama de modelado](../modeling/define-a-menu-command-on-a-modeling-diagram.md) [UML: entrada rápida mediante texto](http://code.msdn.microsoft.com/UML-Rapid-Entry-using-Text-0813ad8a)
+ [Anatomía de una prueba unitaria](https://msdn.microsoft.com/a03d1ee7-9999-4e7c-85df-7d9073976144) [definir un comando de menú en un diagrama de modelado](../modeling/define-a-menu-command-on-a-modeling-diagram.md) [UML: entrada rápida mediante texto](http://code.msdn.microsoft.com/UML-Rapid-Entry-using-Text-0813ad8a)

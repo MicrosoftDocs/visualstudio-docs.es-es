@@ -1,5 +1,5 @@
 ---
-title: Crear y configurar TableAdapters | Documentos de Microsoft
+title: Crear y configurar TableAdapters | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-data-tools
@@ -17,98 +17,98 @@ helpviewer_keywords:
 - data [Visual Studio], creating table adapters
 ms.assetid: 08630d69-0d6c-4e8f-b42d-2922f45f8415
 caps.latest.revision: 33
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: ab802e36a527952a0f0b789445bbdee8224af9d2
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 9a2136960dfcbbbcf63fbefeb16d527793d4b939
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65705019"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72631038"
 ---
 # <a name="create-and-configure-tableadapters"></a>Crear y configurar TableAdapters
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Los TableAdapters comunican la aplicación con una base de datos. Se conectan a la base de datos, ejecutar consultas o procedimientos almacenados, y devuelven nuevos datos de tabla o rellenar existente <xref:System.Data.DataTable> con los datos devueltos. Los TableAdapters también puede enviar datos actualizados desde la aplicación a la base de datos.  
-  
- Los TableAdapters se crean automáticamente al realizar una de las siguientes acciones:  
-  
-- Ejecute el [Asistente para configuración de origen de datos](https://msdn.microsoft.com/library/c4df7de5-5da0-4064-940c-761dd6d9e28f) y seleccione el **base de datos** o **servicio Web** tipo de origen de datos.  
-  
-- Arrastre los objetos de base de datos de [Explorador de servidores](https://msdn.microsoft.com/library/4ea29b3b-bbb2-45e4-9082-eaf635c41c4d) en el **Diseñador de Dataset**.  
-  
-  Puede crear un nuevo TableAdapter y configurarlo con un origen de datos arrastrando un TableAdapter desde el cuadro de herramientas a un área vacío en el **Diseñador de Dataset** superficie.  
-  
-  Para obtener una introducción a los TableAdapters, vea [llenar conjuntos de datos mediante TableAdapters](../data-tools/fill-datasets-by-using-tableadapters.md).  
-  
-  [!INCLUDE[note_settings_general](../includes/note-settings-general-md.md)]  
-  
-## <a name="use-the-tableadapter-configuration-wizard"></a>Utilice al Asistente para configuración de TableAdapter  
- Ejecute el **TableAdapter Configuration Wizard** para crear o editar objetos TableAdapters y los objetos DataTables asociados. Puede configurar un TableAdapter existente con el botón secundario en él en el **Diseñador de Dataset**.  
-  
- ![Asistente para configuración de adaptador de tabla raddata](../data-tools/media/raddata-table-adapter-configuration-wizard.png "raddata Asistente para configuración de adaptador de tabla")  
-  
- Si arrastra un nuevo TableAdapter desde el cuadro de herramientas cuando el **Diseñador de Dataset** tiene el foco, las indicaciones del Asistente para especificar el origen de datos debe conectarse el TableAdapter y qué tipo de comandos deben usar para comunicarse con el base de datos, instrucciones SQL o procedimientos almacenados. No podrá ver si está configurando un TableAdapter que ya está asociado con un origen de datos.  
-  
-- Mediante el **crear métodos para enviar actualizaciones directamente a la base de datos** opción es equivalente a establecer el `GenerateDBDirectMethods` propiedad en true. Esta opción no está disponible cuando la instrucción SQL original no proporciona bastante información o la consulta no es una consulta actualizable. Esta situación puede ocurrir, por ejemplo, en **UNIR** las consultas y las consultas que devuelven un único valor (escalar).  
-  
-- Tiene la opción para crear un nuevo procedimiento almacenado en la base de datos subyacente, si tiene los permisos correctos para la base de datos. Si no tiene estos permisos, esto no será una opción.  
-  
-- También puede ejecutar los procedimientos almacenados existentes para el **seleccione**, **insertar**, **actualización**, y **eliminar** los comandos de la TableAdapter. El procedimiento almacenado que se asigna a la **actualización** comando, por ejemplo, se ejecuta cuando el `TableAdapter.Update()` se llama al método.  
-  
-     Asigne parámetros desde el procedimiento almacenado seleccionado a las columnas correspondientes de la tabla de datos. Por ejemplo, si el procedimiento almacenado acepta un parámetro denominado `@CompanyName` que pasa a la `CompanyName` conjunto de columnas en la tabla, el **columna de origen** de la `@CompanyName` parámetro `CompanyName`.  
-  
+Los TableAdapters comunican la aplicación con una base de datos. Se conectan a la base de datos, ejecutan consultas o procedimientos almacenados y devuelven una nueva tabla de datos o rellenan una <xref:System.Data.DataTable> existente con los datos devueltos. Los TableAdapters también pueden enviar datos actualizados desde la aplicación a la base de datos.
+
+ Los TableAdapters se crean automáticamente cuando se realiza una de las siguientes acciones:
+
+- Ejecute el [Asistente para la configuración de orígenes de datos](https://msdn.microsoft.com/library/c4df7de5-5da0-4064-940c-761dd6d9e28f) y seleccione el tipo de origen de datos **base** de datos o **servicio Web** .
+
+- Arrastre los objetos de base de datos de [Explorador de servidores](https://msdn.microsoft.com/library/4ea29b3b-bbb2-45e4-9082-eaf635c41c4d) al **Diseñador de DataSet**.
+
+  Puede crear un nuevo TableAdapter y configurarlo con un origen de datos arrastrando un TableAdapter desde el cuadro de herramientas a una región vacía de la superficie de **Diseñador de DataSet** .
+
+  Para obtener una introducción a los TableAdapters, vea [rellenar conjuntos de valores mediante TableAdapters](../data-tools/fill-datasets-by-using-tableadapters.md).
+
+  [!INCLUDE[note_settings_general](../includes/note-settings-general-md.md)]
+
+## <a name="use-the-tableadapter-configuration-wizard"></a>Usar el Asistente para configuración de TableAdapter
+ Ejecute el **Asistente** para la configuración de TableAdapter para crear o editar TableAdapters y sus tablas de objetos asociadas. Para configurar un TableAdapter existente, haga clic con el botón derecho en él en el **Diseñador de DataSet**.
+
+ ![Asistente para configuración del adaptador de tabla de raddata](../data-tools/media/raddata-table-adapter-configuration-wizard.png "Asistente para configuración del adaptador de tabla de raddata")
+
+ Si arrastra un nuevo TableAdapter desde el cuadro de herramientas cuando el **Diseñador de DataSet** tiene el foco, el asistente le pedirá que especifique a qué origen de datos debe conectarse el TableAdapter y qué tipo de comandos debe utilizar para comunicarse con la base de datos, SQL instrucciones o procedimientos almacenados. No verá esto si está configurando un TableAdapter que ya está asociado a un origen de datos.
+
+- El uso de la opción **crear métodos para enviar actualizaciones directamente a la base de datos** equivale a establecer la propiedad `GenerateDBDirectMethods` en true. Esta opción no está disponible cuando la instrucción SQL original no proporciona bastante información o la consulta no es una consulta actualizable. Esta situación puede producirse, por ejemplo, en consultas **join** y consultas que devuelven un único valor (escalar).
+
+- Tiene la opción de crear un nuevo procedimiento almacenado en la base de datos subyacente si tiene los permisos correctos para la base de datos. Si no tiene estos permisos, no será una opción.
+
+- También puede optar por ejecutar los procedimientos almacenados existentes para los comandos **Select**, **Insert**, **Update**y **Delete** de TableAdapter. El procedimiento almacenado que se asigna al comando de **actualización** , por ejemplo, se ejecuta cuando se llama al método `TableAdapter.Update()`.
+
+     Asigne parámetros desde el procedimiento almacenado seleccionado a las columnas correspondientes de la tabla de datos. Por ejemplo, si el procedimiento almacenado acepta un parámetro denominado `@CompanyName` que se pasa a la columna `CompanyName` de la tabla, establezca la **columna de origen** del parámetro `@CompanyName` en `CompanyName`.
+
     > [!NOTE]
-    > El procedimiento almacenado asignado al comando SELECT se ejecuta llamando al método del TableAdapter ese nombre en el paso siguiente del asistente. El método predeterminado es `Fill`, por lo que el código que se utiliza normalmente para ejecutar el procedimiento SELECT es `TableAdapter.Fill(tableName)`. Si cambia el nombre predeterminado de `Fill`, sustituya `Fill` con el nombre que asigne y reemplace "TableAdapter" por el nombre real del TableAdapter (por ejemplo, `CustomersTableAdapter`).  
-  
-- El **opciones avanzadas** en el asistente le permiten generar instrucciones INSERT, UPDATE y DELETE basadas en la instrucción SELECT que se define en el **generar instrucciones SQL** página. Usar simultaneidad optimista y especificar si se ejecutan las instrucciones para actualizar la tabla de datos después de INSERT y UPDATE.  
-  
-## <a name="configure-a-tableadapters-fill-method"></a>Configuración del método de relleno de un TableAdapter  
- En ocasiones, es posible que desea cambiar el esquema de tabla del TableAdapter. Para ello, modifica principal del TableAdapter `Fill` método. Los TableAdapters se crean con un elemento principal `Fill` método que define el esquema de la tabla de datos asociada. La principal `Fill` método se basa en la consulta o procedimiento almacenado que escribió cuando se configuró originalmente el TableAdapter. Es el primer método (superior) en la tabla de datos en el Diseñador de DataSet.  
-  
- ![TableAdapter con varias consultas](../data-tools/media/tableadapter.gif "TableAdapter")  
-  
- Principal de los cambios realizados en el TableAdapter `Fill` método se reflejan en el esquema de la tabla de datos asociada. Por ejemplo, quitar una columna de la consulta en la ventana principal `Fill` método también quita la columna de la tabla de datos asociada. Además, quite la columna en la página principal `Fill` método quita la columna de cualquier consulta adicional a ese objeto TableAdapter.  
-  
- Puede usar al Asistente para configuración de consulta de TableAdapter para crear y editar consultas adicionales del TableAdapter. Estas consultas adicionales deben ajustarse al esquema de tabla, a menos que devuelven un valor escalar.  Las consultas adicionales tienen los nombres que especifique (por ejemplo, `CustomersTableAdapter.FillByCity(NorthwindDataSet.Customers, "Seattle")`.)  
-  
-#### <a name="to-start-the-tableadapter-query-configuration-wizard-with-a-new-query"></a>Para iniciar al Asistente para configuración de consulta de TableAdapter con una consulta nueva  
-  
-1. Abra su conjunto de datos en el **Diseñador de Dataset**.  
-  
-2. Si va a crear una nueva consulta, arrastre un **consulta** objeto desde el **conjunto de datos** pestaña de la **cuadro de herramientas** hasta un <xref:System.Data.DataTable>, o seleccione **Add Query**desde el menú contextual del TableAdapter. También puede arrastrar un **consulta** objeto en un área vacía de la **Diseñador de Dataset**, que crea un TableAdapter sin asociado un <xref:System.Data.DataTable>. Estas consultas solo pueden devolver valores únicos de (escalares) o ejecutar UPDATE, INSERT o eliminar comandos en la base de datos.  
-  
-3. En el **elegir la conexión de datos** pantalla, seleccione o cree la conexión que va a usar la consulta.  
-  
+    > El procedimiento almacenado que se asigna al comando SELECT se ejecuta llamando al método de TableAdapter que se denomina en el paso siguiente del asistente. El método predeterminado es `Fill`, por lo que el código que se usa normalmente para ejecutar el procedimiento SELECT es `TableAdapter.Fill(tableName)`. Si cambia el nombre predeterminado de `Fill`, sustituya `Fill` por el nombre que asigne y reemplace "TableAdapter" por el nombre real de TableAdapter (por ejemplo, `CustomersTableAdapter`).
+
+- Las **Opciones avanzadas** del asistente le permiten generar instrucciones INSERT, Update y DELETE basadas en la instrucción SELECT que se define en la página **generar instrucciones SQL** . Use la simultaneidad optimista y especifique si desea actualizar la tabla de datos después de que se ejecuten las instrucciones INSERT y UPDATE.
+
+## <a name="configure-a-tableadapters-fill-method"></a>Configurar el método Fill de un TableAdapter
+ En ocasiones, es posible que desee cambiar el esquema de la tabla de TableAdapter. Para ello, modifique el método de `Fill` principal del TableAdapter. Los TableAdapters se crean con un método de `Fill` principal que define el esquema de la tabla de datos asociada. El método de `Fill` principal se basa en la consulta o el procedimiento almacenado que se especificó cuando se configuró originalmente el TableAdapter. Es el primer método (más alto) de la tabla de datos en el diseñador de DataSet.
+
+ ![TableAdapter con varias consultas](../data-tools/media/tableadapter.gif "TableAdapter")
+
+ Cualquier cambio que realice en el método de `Fill` principal del TableAdapter se reflejará en el esquema de la tabla de datos asociada. Por ejemplo, al quitar una columna de la consulta en el método Main `Fill`, también se quita la columna de la tabla de datos asociada. Además, al quitar la columna del método Main `Fill`, se quita la columna de cualquier consulta adicional para ese TableAdapter.
+
+ Puede usar el Asistente para configuración de consultas de TableAdapter para crear y editar consultas adicionales para el TableAdapter. Estas consultas adicionales deben ajustarse al esquema de tabla, a menos que devuelvan un valor escalar.  Las consultas adicionales tienen los nombres que especifique (por ejemplo, `CustomersTableAdapter.FillByCity(NorthwindDataSet.Customers, "Seattle")`).
+
+#### <a name="to-start-the-tableadapter-query-configuration-wizard-with-a-new-query"></a>Para iniciar el Asistente para configuración de consultas de TableAdapter con una nueva consulta
+
+1. Abra su conjunto de datos en el **Diseñador de Dataset**.
+
+2. Si va a crear una nueva consulta, arrastre un objeto de **consulta** desde la pestaña **DataSet** del **cuadro de herramientas** hasta un <xref:System.Data.DataTable>, o bien seleccione **Agregar consulta** en el menú contextual del TableAdapter. También puede arrastrar un objeto de **consulta** hasta un área vacía del **Diseñador de DataSet**, que crea un TableAdapter sin un <xref:System.Data.DataTable> asociado. Estas consultas solo pueden devolver valores únicos (escalares) o ejecutar comandos UPDATE, INSERT o DELETE en la base de datos.
+
+3. En la pantalla **elegir la conexión de datos** , seleccione o cree la conexión que usará la consulta.
+
     > [!NOTE]
-    > Esta pantalla sólo aparece cuando el diseñador no puede determinar la conexión apropiada que use, o cuando no hay conexiones disponibles.  
-  
-4. En el **elegir un tipo de comando** pantalla, seleccione uno de los siguientes métodos de captura de datos de la base de datos:  
-  
-    - **Usar instrucciones SQL** permite escribir una instrucción SQL para seleccionar los datos de la base de datos.  
-  
-    - **Crear nuevo procedimiento almacenado** permite que el Asistente para crear un nuevo procedimiento almacenado (en la base de datos) basándose en la instrucción SELECT especificada.  
-  
-    - **Usar procedimientos almacenados existentes** le permite ejecutar un procedimiento almacenado existente cuando se ejecuta la consulta.  
-  
-#### <a name="to-start-the-tableadapter-query-configuration-wizard-on-an-existing-query"></a>Para iniciar al Asistente para configuración de la consulta de TableAdapter en una consulta existente  
-  
-- Si va a editar una consulta de TableAdapter existente, haga clic en la consulta y, a continuación, elija **configurar** en el menú contextual.  
-  
+    > Esta pantalla solo aparece cuando el diseñador no puede determinar la conexión adecuada que se va a utilizar o cuando no hay ninguna conexión disponible.
+
+4. En la pantalla **elegir un tipo de comando** , seleccione uno de los siguientes métodos para obtener datos de la base de datos:
+
+    - **Usar instrucciones SQL** le permite escribir una instrucción SQL para seleccionar los datos de la base de datos.
+
+    - **Crear nuevo procedimiento almacenado** permite que el asistente cree un nuevo procedimiento almacenado (en la base de datos) basándose en la instrucción SELECT especificada.
+
+    - **Usar procedimientos almacenados existentes** le permite ejecutar un procedimiento almacenado existente al ejecutar la consulta.
+
+#### <a name="to-start-the-tableadapter-query-configuration-wizard-on-an-existing-query"></a>Para iniciar el Asistente para configuración de consultas de TableAdapter en una consulta existente
+
+- Si está editando una consulta de TableAdapter existente, haga clic con el botón secundario en la consulta y, a continuación, elija **configurar** en el menú contextual.
+
     > [!NOTE]
-    > Haciendo clic en la consulta principal de un TableAdapter se vuelve a configurar el TableAdapter y <xref:System.Data.DataTable> esquema. Haciendo clic en una consulta adicional de un TableAdapter, sin embargo, se configura sólo la consulta seleccionada. El **TableAdapter Configuration Wizard** reconfigura la definición de TableAdapter, mientras que el Asistente para configuración de consulta de TableAdapter se vuelve a configurar solo la consulta seleccionada.  
-  
-#### <a name="to-add-a-global--query-to-a-tableadapter"></a>Para agregar una consulta global a un TableAdapter  
-  
-- *Consultas globales* son consultas SQL que devuelven un único valor (escalar) o ningún valor. Normalmente, funciones globales de realizan operaciones de base de datos, como inserciones, actualizaciones, se elimina. También realiza la agregación de información, como un recuento de clientes en una tabla o los cargos totales para todos los elementos en un orden concreto.  
-  
-     Agregar consultas globales arrastrando un **consulta** objeto desde el **conjunto de datos** pestaña de la **cuadro de herramientas** en un área vacía de la **delDiseñadordeDataset**.  
-  
-- Proporcionar una consulta que realiza la tarea deseada, por ejemplo, `SELECT COUNT(*) AS CustomerCount FROM Customers`.  
-  
+    > Al hacer clic con el botón secundario en la consulta principal de un TableAdapter, se reconfiguran el TableAdapter y el esquema de <xref:System.Data.DataTable>. Sin embargo, al hacer clic con el botón secundario en una consulta adicional en un TableAdapter, solo se configura la consulta seleccionada. El **Asistente para configuración de TableAdapter** vuelve a configurar la definición de TableAdapter, mientras que el Asistente para configuración de consultas de TableAdapter vuelve a configurar solo la consulta seleccionada.
+
+#### <a name="to-add-a-global--query-to-a-tableadapter"></a>Para agregar una consulta global a un TableAdapter
+
+- *Las consultas globales* son consultas SQL que devuelven un único valor (escalar) o ningún valor. Normalmente, las funciones globales realizan operaciones de base de datos como inserciones, actualizaciones y eliminaciones. También agregan información, como un recuento de clientes en una tabla o los cargos totales de todos los artículos en un orden determinado.
+
+     Para agregar consultas globales, arrastre un objeto de **consulta** desde la pestaña **conjunto** de propiedades del **cuadro de herramientas** hasta un área vacía de la **Diseñador de DataSet**.
+
+- Proporcione una consulta que realice la tarea deseada, por ejemplo, `SELECT COUNT(*) AS CustomerCount FROM Customers`.
+
     > [!NOTE]
-    > Arrastrar un **consulta** objeto directamente en el **Diseñador de Dataset** crea un método que devuelve solo un valor escalar (único). Mientras que la consulta o procedimiento almacenado que selecciona podría devolver más de un solo valor, el método que se crea mediante el Asistente solo devuelve un valor único. Por ejemplo, la consulta podría devolver la primera columna de la primera fila de los datos devueltos.  
-  
-## <a name="see-also"></a>Vea también  
+    > Al arrastrar un objeto de **consulta** directamente al **Diseñador de DataSet** , se crea un método que solo devuelve un valor escalar (único). Aunque es posible que la consulta o el procedimiento almacenado que seleccione devuelvan más de un valor único, el método creado por el asistente solo devuelve un valor único. Por ejemplo, la consulta podría devolver la primera columna de la primera fila de los datos devueltos.
+
+## <a name="see-also"></a>Vea también
  [Llenar conjuntos de datos mediante TableAdapters](../data-tools/fill-datasets-by-using-tableadapters.md)

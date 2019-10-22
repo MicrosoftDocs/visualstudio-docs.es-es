@@ -10,40 +10,40 @@ helpviewer_keywords:
 - text templates, getting started
 - Text Template project item
 - text templates, generating code for your application
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8422b32398c99f33575bb03923e1025207e5956e
-ms.sourcegitcommit: 6a19c5ece38a70731496a38f2ef20676ff18f8a4
+ms.openlocfilehash: 13e86e99d48138c448b00be2dd0a20b91f855888
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65476703"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72653896"
 ---
 # <a name="design-time-code-generation-by-using-t4-text-templates"></a>Generación de código en tiempo de diseño usando las plantillas de texto T4
 
-Plantillas de texto T4 de tiempo de diseño permiten generar código de programa y otros archivos en el proyecto de Visual Studio. Normalmente, las plantillas se escriben para que varíen el código que generan según los datos de un *modelo*. Un modelo es un archivo o una base de datos que contiene información esencial sobre los requisitos de la aplicación.
+Las plantillas de texto T4 en tiempo de diseño permiten generar código de programa y otros archivos en el proyecto de Visual Studio. Normalmente, las plantillas se escriben para que varíen el código que generan según los datos de un *modelo*. Un modelo es un archivo o base de datos que contiene información clave sobre los requisitos de la aplicación.
 
-Por ejemplo, podría tener un modelo que define un flujo de trabajo, como una tabla o un diagrama. A partir del modelo, puede generar el software que ejecuta el flujo de trabajo. Cuando cambian los requisitos del usuario, es fácil debatir el nuevo flujo de trabajo con los usuarios. Regenerar el código del flujo de trabajo es más confiable que actualizar el código a mano.
+Por ejemplo, podría tener un modelo que define un flujo de trabajo, como una tabla o un diagrama. A partir del modelo, puede generar el software que ejecuta el flujo de trabajo. Cuando cambian los requisitos de los usuarios, es fácil discutir el nuevo flujo de trabajo con los usuarios. Regenerar el código del flujo de trabajo es más confiable que actualizar el código a mano.
 
 > [!NOTE]
 > Un *modelo* es un origen de datos que describe un aspecto determinado de una aplicación. Puede ser cualquier formulario, en cualquier tipo de archivo o base de datos. No tiene que estar en ningún formulario concreto, como un modelo UML o un modelo de lenguaje específico del dominio. Los modelos típicos están en el formulario de tablas o archivos XML.
 
-Probablemente ya está familiarizado con la generación de código. Al definir los recursos en un **.resx** se genera automáticamente el archivo en la solución de Visual Studio, un conjunto de clases y métodos. El archivo de recursos hace que resulte más fácil y confiable editar los recursos que editar las clases y los métodos. Con las plantillas de texto, puede generar código de la misma manera a partir de un origen con un diseño propio.
+Probablemente ya está familiarizado con la generación de código. Al definir recursos en un archivo **. resx** en la solución de Visual Studio, se genera automáticamente un conjunto de clases y métodos. El archivo de recursos hace que resulte más fácil y confiable editar los recursos que editar las clases y los métodos. Con las plantillas de texto, puede generar código de la misma manera a partir de un origen con un diseño propio.
 
 Una plantilla de texto contiene una mezcla del texto que se desea generar y el código de programa que genera partes variables del texto. El código de programa permite repetir u omitir condicionalmente partes del texto generado. El texto generado por sí mismo puede ser código de programa que formará parte de la aplicación.
 
 ## <a name="create-a-design-time-t4-text-template"></a>Crear una plantilla de texto T4 en tiempo de diseño
 
-1. Cree un nuevo proyecto de Visual Studio o abrir uno existente.
+1. Cree un nuevo proyecto de Visual Studio o abra uno existente.
 
-2. Agregue un archivo de plantilla de texto al proyecto y asígnele un nombre que tenga la extensión **.tt**.
+2. Agregue un archivo de plantilla de texto al proyecto y asígnele un nombre con la extensión **. TT**.
 
-    Para ello, en **el Explorador de soluciones**, en el menú contextual del proyecto, elija **agregar** > **nuevo elemento**. En el **Agregar nuevo elemento** cuadro de diálogo seleccione **plantilla de texto** desde el panel central.
+    Para ello, en **Explorador de soluciones**, en el menú contextual del proyecto, elija **Agregar**  > **nuevo elemento**. En el cuadro de diálogo **Agregar nuevo elemento** , seleccione **plantilla de texto** en el panel central.
 
-    Tenga en cuenta que el **Custom Tool** es propiedad del archivo **TextTemplatingFileGenerator**.
+    Observe que la propiedad **herramienta personalizada** del archivo es **TextTemplatingFileGenerator**.
 
 3. Abra el archivo. Ya contendrá las siguientes directivas:
 
@@ -62,28 +62,28 @@ Una plantilla de texto contiene una mezcla del texto que se desea generar y el c
 
 5. Guarde el archivo.
 
-    Es posible que vea un **advertencia de seguridad** cuadro de mensaje que le pide que confirme que desea ejecutar la plantilla. Haga clic en **Aceptar**.
+    Es posible que vea un cuadro de mensaje de **Advertencia de seguridad** que le pide que confirme que desea ejecutar la plantilla. Haga clic en **Aceptar**.
 
-6. En **el Explorador de soluciones**, expanda el nodo del archivo de plantilla y encontrará un archivo que tiene la extensión **.txt**. El archivo contiene el texto generado a partir de la plantilla.
+6. En **Explorador de soluciones**, expanda el nodo del archivo de plantilla y encontrará un archivo con la extensión **. txt**. El archivo contiene el texto generado a partir de la plantilla.
 
    > [!NOTE]
-   > Si el proyecto es un proyecto de Visual Basic, debe hacer clic en **mostrar todos los archivos** con el fin de ver el archivo de salida.
+   > Si el proyecto es un proyecto de Visual Basic, debe hacer clic en **Mostrar todos los archivos** para ver el archivo de salida.
 
-### <a name="regenerate-the-code"></a>Volver a generar el código
+### <a name="regenerate-the-code"></a>Regeneración del código
 
 Se ejecutará una plantilla, que generará el archivo subsidiario, en cualquiera de los siguientes casos:
 
-- Edite la plantilla y, a continuación, cambiar el foco a otra ventana de Visual Studio.
+- Edite la plantilla y, a continuación, cambie el foco a otra ventana de Visual Studio.
 
 - Guarde la plantilla.
 
-- Haga clic en **Transformar todas las plantillas** en el **compilar** menú. Este modo transformará todas las plantillas de la solución de Visual Studio.
+- Haga clic en **transformar todas las plantillas** en el menú **compilar** . Esto transformará todas las plantillas de la solución de Visual Studio.
 
-- En **el Explorador de soluciones**, en el menú contextual de cualquier archivo, elija **ejecutar herramienta personalizada**. Utilice este método para transformar un subconjunto seleccionado de plantillas.
+- En **Explorador de soluciones**, en el menú contextual de cualquier archivo, elija **Ejecutar herramienta personalizada**. Utilice este método para transformar un subconjunto seleccionado de plantillas.
 
-También puede configurar un proyecto de Visual Studio para que las plantillas se ejecuten cuando han cambiado los archivos de datos que leen. Para obtener más información, consulte [automáticamente volver a generar el código](#Regenerating).
+También puede configurar un proyecto de Visual Studio para que las plantillas se ejecuten cuando los archivos de datos que leen hayan cambiado. Para obtener más información, vea volver a [generar el código automáticamente](#Regenerating).
 
-## <a name="generate-variable-text"></a>Generar texto Variable
+## <a name="generate-variable-text"></a>Generar texto variable
 
 Las plantillas de texto permiten utilizar código de programa para modificar el contenido del archivo generado.
 
@@ -115,7 +115,7 @@ Las plantillas de texto permiten utilizar código de programa para modificar el 
 
 2. Guarde el archivo .tt e inspeccione de nuevo el archivo .txt generado. Muestra los valores elevados al cuadrado de los números del 0 al 10.
 
-   Observe que las instrucciones se colocan entre `<#...#>` y las expresiones simples entre `<#=...#>`. Para obtener más información, consulte [escribir una plantilla de texto T4](../modeling/writing-a-t4-text-template.md).
+   Observe que las instrucciones se colocan entre `<#...#>` y las expresiones simples entre `<#=...#>`. Para obtener más información, vea [escribir una plantilla de texto T4](../modeling/writing-a-t4-text-template.md).
 
    Si escribe el código de generación en [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)], la directiva `template` debería contener `language="VB"`. `"C#"` es el valor predeterminado.
 
@@ -129,7 +129,7 @@ Para depurar una plantilla de texto:
 
 - Establezca puntos de interrupción en la plantilla, como si fuera código normal.
 
-- Elija **depurar plantilla T4** en el menú contextual del archivo de plantilla de texto en el Explorador de soluciones.
+- Elija **depurar plantilla T4** en el menú contextual del archivo de plantilla de texto en explorador de soluciones.
 
    La plantilla se ejecuta y se detiene en los puntos de interrupción. Puede examinar las variables y recorrer el código de la forma habitual.
 
@@ -140,7 +140,7 @@ Para depurar una plantilla de texto:
 
 ## <a name="generating-code-or-resources-for-your-solution"></a>Generar código o recursos para la solución
 
-Puede generar archivos de programa que varían dependiendo de un modelo. Un modelo es una entrada como una base de datos, un archivo de configuración, un modelo UML, un modelo DSL u otro origen. Normalmente, se generan varios archivos de programa desde el mismo modelo. Para ello, crea un archivo de plantilla para cada archivo de programa generado y establece que todas las plantillas lean el mismo modelo.
+Puede generar archivos de programa que varían dependiendo de un modelo. Un modelo es una entrada como una base de datos, un archivo de configuración, un modelo UML, un modelo DSL u otro origen. Normalmente, se generan varios archivos de programa a partir del mismo modelo. Para ello, crea un archivo de plantilla para cada archivo de programa generado y establece que todas las plantillas lean el mismo modelo.
 
 ### <a name="to-generate-program-code-or-resources"></a>Para generar código de programa o recursos
 
@@ -219,9 +219,9 @@ Para obtener acceso a un archivo modelo o base de datos, el código de plantilla
 <#@ import namespace="System.IO" #>
 ```
 
-El `assembly` directiva hace que el ensamblado especificado esté disponible para el código de plantilla, en la misma manera que la sección de referencias de un proyecto de Visual Studio. No necesita incluir una referencia a System.dll, al que se hace referencia automáticamente. La directiva `import` permite utilizar tipos sin usar sus nombres completos, de la misma manera que la directiva `using` en un archivo de programa normal.
+La Directiva `assembly` hace que el ensamblado especificado esté disponible para el código de plantilla, de la misma manera que la sección de referencias de un proyecto de Visual Studio. No necesita incluir una referencia a System.dll, al que se hace referencia automáticamente. La directiva `import` permite utilizar tipos sin usar sus nombres completos, de la misma manera que la directiva `using` en un archivo de programa normal.
 
-Por ejemplo, después de importar **System.IO**, podría escribir:
+Por ejemplo, después de importar **System.IO**, puede escribir:
 
 ```csharp
 
@@ -272,7 +272,7 @@ El tipo de `this.Host` (en VB, `Me.Host`) es `Microsoft.VisualStudio.TextTemplat
 
 ### <a name="getting-data-from-visual-studio"></a>Obtención de datos de Visual Studio
 
-Para utilizar servicios proporcionados en Visual Studio, establezca el `hostSpecific` atributo y carga el `EnvDTE` ensamblado. Importación `Microsoft.VisualStudio.TextTemplating`, que contiene el `GetCOMService()` método de extensión.  Puede utilizar entonces IServiceProvider.GetCOMService() para tener acceso al DTE y otros servicios. Por ejemplo:
+Para usar los servicios proporcionados en Visual Studio, establezca el atributo `hostSpecific` y cargue el ensamblado `EnvDTE`. Importe `Microsoft.VisualStudio.TextTemplating`, que contiene el método de extensión `GetCOMService()`.  Puede utilizar entonces IServiceProvider.GetCOMService() para tener acceso al DTE y otros servicios. Por ejemplo:
 
 ```src
 <#@ template hostspecific="true" language="C#" #>
@@ -290,16 +290,16 @@ Number of projects in this VS solution:  <#= dte.Solution.Projects.Count #>
 > [!TIP]
 > Una plantilla de texto se ejecuta en su propio dominio de aplicación y el acceso a los servicios se realiza mediante el cálculo de referencias. En este caso, GetCOMService() es más confiable que GetService().
 
-## <a name="Regenerating"></a> Volver a generar el código automáticamente
+## <a name="Regenerating"></a>Volver a generar el código automáticamente
 
 Normalmente, se generan varios archivos en una solución de Visual Studio con un modelo de entrada. Cada archivo se genera a partir de su propia plantilla, pero todas las plantillas hacen referencia al mismo modelo.
 
-Si el modelo de origen cambia, debe volver a ejecutar todas las plantillas de la solución. Para hacerlo manualmente, elija **Transformar todas las plantillas** en el **compilar** menú.
+Si el modelo de origen cambia, debe volver a ejecutar todas las plantillas de la solución. Para hacerlo manualmente, elija **transformar todas las plantillas** en el menú **compilar** .
 
-Si ha instalado el SDK de modelado de Visual Studio, puede tener todas las plantillas se transformen automáticamente cada vez que realice una compilación. Para ello, edite el archivo de proyecto (.csproj o .vbproj) en un editor de texto y agregue las siguientes líneas cerca del final del archivo, después de cualquier otra instrucción `<import>`:
+Si ha instalado el SDK de modelado de Visual Studio, puede hacer que todas las plantillas se transformen automáticamente cada vez que realice una compilación. Para ello, edite el archivo de proyecto (.csproj o .vbproj) en un editor de texto y agregue las siguientes líneas cerca del final del archivo, después de cualquier otra instrucción `<import>`:
 
 > [!NOTE]
-> El SDK de transformación de plantilla de texto y el SDK de modelado de Visual Studio se instalan automáticamente al instalar características específicas de Visual Studio. Para obtener más información, consulte [esta entrada de blog](https://devblogs.microsoft.com/devops/the-visual-studio-modeling-sdk-is-now-available-with-visual-studio-2017/).
+> El SDK de transformación de plantillas de texto y el SDK de modelado de Visual Studio se instalan automáticamente al instalar características específicas de Visual Studio. Para obtener más información, consulte [esta entrada de blog](https://devblogs.microsoft.com/devops/the-visual-studio-modeling-sdk-is-now-available-with-visual-studio-2017/).
 
 ::: moniker range="vs-2017"
 
@@ -325,30 +325,30 @@ Si ha instalado el SDK de modelado de Visual Studio, puede tener todas las plant
 
 ::: moniker-end
 
-Para obtener más información, consulte [generación de código en un proceso de compilación](../modeling/code-generation-in-a-build-process.md).
+Para obtener más información, vea [generación de código en un proceso de compilación](../modeling/code-generation-in-a-build-process.md).
 
 ## <a name="error-reporting"></a>Notificación de errores
 
-Para colocar mensajes de error y advertencia en la ventana de errores de Visual Studio, puede utilizar estos métodos:
+Para colocar los mensajes de error y de advertencia en la ventana de error de Visual Studio, puede usar estos métodos:
 
 ```
 Error("An error message");
 Warning("A warning message");
 ```
 
-## <a name="Converting"></a> Convertir un archivo existente en una plantilla
+## <a name="Converting"></a>Convertir un archivo existente en una plantilla
 
-Una característica útil de las plantillas es que se parecen mucho a los archivos que generan y cuentan con algún código de programa insertado. Esto sugiere un método útil para crear una plantilla. En primer lugar cree un archivo normal como prototipo, como un [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] de archivo y, a continuación, agregue gradualmente código de generación que modifique el archivo resultante.
+Una característica útil de las plantillas es que se parecen mucho a los archivos que generan y cuentan con algún código de programa insertado. Esto sugiere un método útil para crear una plantilla. En primer lugar, cree un archivo normal como un prototipo, como un archivo [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] y, a continuación, introduzca gradualmente código de generación que varíe el archivo resultante.
 
 ### <a name="to-convert-an-existing-file-to-a-design-time-template"></a>Para convertir un archivo existente en una plantilla en tiempo de diseño
 
-1. A su proyecto de Visual Studio, agregue un archivo del tipo que desea generar, como un `.cs`, `.vb`, o `.resx` archivo.
+1. En el proyecto de Visual Studio, agregue un archivo del tipo que desee generar, como un `.cs`, `.vb` o `.resx` archivo.
 
 2. Pruebe el nuevo archivo para asegurarse de que funciona.
 
-3. En el Explorador de soluciones, cambie la extensión de nombre de archivo a **.tt**.
+3. En Explorador de soluciones, cambie la extensión de nombre de archivo a **. TT**.
 
-4. Compruebe las siguientes propiedades de la **.tt** archivo:
+4. Compruebe las siguientes propiedades del archivo **. TT** :
 
    | | |
    |-|-|
@@ -368,7 +368,7 @@ Una característica útil de las plantillas es que se parecen mucho a los archiv
 
 6. Guarde el archivo.
 
-    Se crea un archivo subsidiario, con la extensión especificada. Sus propiedades son correctas para el tipo de archivo. Por ejemplo, el **acción de compilación** propiedad de un archivo .cs sería **compilar**.
+    Se crea un archivo subsidiario, con la extensión especificada. Sus propiedades son correctas para el tipo de archivo. Por ejemplo, la propiedad **acción de compilación** de un archivo. CS sería **compilar**.
 
     Compruebe que el archivo generado incluye el mismo contenido que el archivo original.
 
@@ -376,7 +376,7 @@ Una característica útil de las plantillas es que se parecen mucho a los archiv
 
 ## <a name="guidelines-for-code-generation"></a>Directrices para la generación de código
 
-Consulte [directrices para escribir plantillas de texto T4](../modeling/guidelines-for-writing-t4-text-templates.md).
+Consulte [las instrucciones para escribir plantillas de texto T4](../modeling/guidelines-for-writing-t4-text-templates.md).
 
 ## <a name="next-steps"></a>Pasos siguientes
 

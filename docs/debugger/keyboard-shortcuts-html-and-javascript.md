@@ -1,37 +1,32 @@
 ---
-title: Métodos abreviados (HTML y JavaScript) de teclado | Documentos de Microsoft
-ms.date: 03/28/2019
+title: Métodos abreviados de teclado (HTML y JavaScript) | Microsoft Docs
+ms.date: 10/17/2019
 ms.topic: conceptual
 dev_langs:
 - CSharp
 - VB
 - FSharp
 - C++
-ms.assetid: 8d44425a-6584-477d-932e-4e10d5e79511
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 4af3ddb3d04b3a864a26149f88fa15960d2c2b2d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: e7f800a74fb1cb9d0909bd1f95571eb7a3c27b06
+ms.sourcegitcommit: 8a96a65676fd7a2a03b0803d7eceae65f3fa142b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62905596"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72588965"
 ---
 # <a name="keyboard-shortcuts-html-and-javascript"></a>Métodos abreviados de teclado (HTML y JavaScript)
 
-::: moniker range=">=vs-2019"
- Métodos abreviados en Visual Studio de teclado para depurar aplicaciones de Node.js en Visual Studio con el **desarrollo de Node.js** carga de trabajo instalada.
-::: moniker-end
-::: moniker range="vs-2017"
- Métodos abreviados de teclado en Visual Studio para depurar aplicaciones UWP con HTML y JavaScript.
-::: moniker-end
+Métodos abreviados de teclado en Visual Studio para depurar aplicaciones para UWP con HTML y JavaScript.
 
 ## <a name="general-shortcuts"></a>Métodos abreviados generales
 
- Estos métodos abreviados funcionan en todas las herramientas para aplicaciones UWP con HTML y JavaScript.
+ Estos métodos abreviados funcionan en todas las herramientas de las aplicaciones para UWP con HTML y JavaScript.
 
 |Acción|Acceso directo|
 |------------|--------------|
@@ -64,6 +59,6 @@ ms.locfileid: "62905596"
 |Reducir en 1 el valor CSS seleccionado|Flecha abajo|
 
 ## <a name="see-also"></a>Vea también
-- [Comandos de la Consola JavaScript](../debugger/javascript-console-commands.md)
-- [Inicio rápido: depuración de HTML y CSS](../debugger/quickstart-debug-html-and-css.md?view=vs-2017)
-- [Inicio rápido: Depuración de JavaScript](../debugger/quickstart-debug-javascript-using-the-console.md?view=vs-2017)
+- [Comandos de la Consola JavaScript](../debugger/javascript-console-commands.md?view=vs-2017)
+- [Inicio rápido: Depurar HTML y CSS](../debugger/quickstart-debug-html-and-css.md?view=vs-2017)
+- [Inicio rápido: Depurar JavaScript](../debugger/quickstart-debug-javascript-using-the-console.md?view=vs-2017)

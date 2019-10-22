@@ -6,15 +6,15 @@ ms.technology: vs-ide-general
 ms.topic: conceptual
 ms.assetid: 99c73344-86ba-4b08-9e15-f6111cc04185
 caps.latest.revision: 20
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: b80faa2ceb48cfec933d2287b70d304564a8106a
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 001b394d86e56b172bb1a50c335bd8ba5bcacb15
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65704447"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72645632"
 ---
 # <a name="getting-started-with-c-in-visual-studio"></a>Introducción a C++ en Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,7 +38,7 @@ Tras completar este tutorial, estará familiarizado con muchas de las herramient
 
  Figura 1: IDE de Visual Studio
 
- ![IDE con Visual C&#43;&#43; configuración aplicada](../ide/media/c-ide-defaultenvironmentlayout.png "C++IDE_DefaultEnvironmentLayout")
+ ![IDE con la configuración de Visual C&#43;&#43; aplicada](../ide/media/c-ide-defaultenvironmentlayout.png "|::ref1::|")
 
  Después de abrir Visual Studio, puede ver las tres partes básicas del IDE: ventanas de herramientas, menús y barras de herramientas, así como el espacio de la ventana principal. Las ventanas de herramientas se acoplan a los lados izquierdo y derecho de la ventana de la aplicación, con **Inicio rápido**, la barra de menús y la barra de herramientas estándar en la parte superior. El centro de la ventana de la aplicación contiene la **Página principal**. Cuando se abre una solución o un proyecto, los editores y diseñadores aparecen en este espacio. Cuando desarrolle una aplicación, pasará la mayor parte del tiempo en esta área central.
 
@@ -49,21 +49,21 @@ Tras completar este tutorial, estará familiarizado con muchas de las herramient
 
 1. En la barra de menús, elija **Archivo**, **Nuevo**, **Proyecto**.
 
-    ![En la barra de menús, pulse Archivo, Nuevo, Proyecto](../ide/media/exploreide-filenewproject.png "ExploreIDE-FileNewProject")
+    ![En la barra de menús, seleccione Archivo, Nuevo, Proyecto](../ide/media/exploreide-filenewproject.png "|::ref2::|")
 
 2. En la categoría **Visual C++** , elija la plantilla **Aplicación de consola Win32** y, después, asigne al proyecto el nombre `GreetingsConsoleApp`.
 
-    ![Plantilla Aplicación de consola Win32](../ide/media/c-ide-newprojectdlg.png "C++IDE_NewProjectDlg")
+    ![Plantilla Aplicación de consola Win32](../ide/media/c-ide-newprojectdlg.png "|::ref3::|")
 
 3. Cuando aparezca el Asistente para aplicaciones Win32, elija el botón **Finalizar** .
 
-    ![Asistente para aplicaciones de consola Win32](../ide/media/c-ide-win32consoleappwizard.png "C++IDE_Win32ConsoleAppWizard")
+    ![Asistente para aplicaciones de consola Win32](../ide/media/c-ide-win32consoleappwizard.png "|::ref4::|")
 
    El proyecto y la solución GreetingsConsoleApp, con los archivos básicos para una aplicación de consola Win32 se crean y se cargan automáticamente en el **Explorador de soluciones**. El archivo GreetingsConsoleApp.cpp se abre en el Editor de código. Los elementos siguientes aparecen en el **Explorador de soluciones**:
 
    Figura 4: Elementos del proyecto
 
-   ![Archivos para la solución en el Explorador de soluciones](../ide/media/c-ide-solutioncontents.png "C++IDE_SolutionContents")
+   ![Archivos para la solución en el Explorador de soluciones](../ide/media/c-ide-solutioncontents.png "|::ref5::|")
 
 ## <a name="BKMK_AddCode"></a> Agregar código a la aplicación
  A continuación, agregará código para mostrar la palabra "Hola" en la ventana de la consola.
@@ -78,7 +78,7 @@ Tras completar este tutorial, estará familiarizado con muchas de las herramient
 
      Aparece una línea ondulada roja debajo de `cout`. Si la apunta, aparecerá un mensaje de error.
 
-     ![Texto de error para cout](../ide/media/c-ide-couterror.png "C++IDE_CoutError")
+     ![Texto de error para cout](../ide/media/c-ide-couterror.png "|::ref6::|")
 
      El mensaje de error también aparece en la ventana **Lista de errores** . Para mostrar la ventana, en la barra de menús, elija **Ver**, **Lista de errores**.
 
@@ -97,7 +97,7 @@ Tras completar este tutorial, estará familiarizado con muchas de las herramient
 
 3. Guarde los cambios en el archivo.
 
-     ![Código que corrige un error de cout](../ide/media/c-ide-coutfix.png "C++IDE_CoutFix")
+     ![Código que corrige un error de cout](../ide/media/c-ide-coutfix.png "|::ref7::|")
 
 ## <a name="BKMK_DebugTest"></a> Depurar y probar la aplicación
  Puede depurar GreetingsConsoleApp para ver si aparece la palabra "Hola" en la ventana de consola.
@@ -106,7 +106,7 @@ Tras completar este tutorial, estará familiarizado con muchas de las herramient
 
 - Inicie el depurador.
 
-     ![Comando Iniciar depuración del menú Depurar](../ide/media/exploreide-startdebugging.png "ExploreIDE-StartDebugging")
+     ![Comando Iniciar depuración del menú Depurar](../ide/media/exploreide-startdebugging.png "|::ref8::|")
 
      El depurador inicia y ejecuta el código. La ventana de consola (una ventana independiente que se parece a un símbolo del sistema) aparece durante unos segundos, pero se cierra rápidamente cuando el depurador deja de ejecutarse. Para ver el texto, deberá establecer un punto de interrupción para detener la ejecución del programa.
 
@@ -114,7 +114,7 @@ Tras completar este tutorial, estará familiarizado con muchas de las herramient
 
 1. Agregue un punto de interrupción desde la barra de menús en la línea `return 0;`. También puede hacer clic en el margen izquierdo para establecer un punto de interrupción.
 
-    ![Comando Alternar puntos de interrupción del menú Depurar](../ide/media/exploreide-togglebreakpoint.png "ExploreIDE-ToggleBreakpoint")
+    ![Comando Alternar puntos de interrupción del menú Depurar](../ide/media/exploreide-togglebreakpoint.png "|::ref9::|")
 
     Aparece un círculo rojo al lado de la línea de código en el margen izquierdo de la ventana del editor.
 
@@ -122,7 +122,7 @@ Tras completar este tutorial, estará familiarizado con muchas de las herramient
 
     El depurador se inicia y aparece una ventana de consola con la palabra **Hola**.
 
-    ![Texto Hello en la ventana Símbolo del sistema de Windows](../ide/media/c-ide-hellocommandwindow.png "C++IDE_HelloCommandWindow")
+    ![Texto Hello en la ventana Símbolo del sistema de Windows](../ide/media/c-ide-hellocommandwindow.png "|::ref10::|")
 
 3. Presione MAYÚS + F5 para detener la depuración.
 
@@ -135,17 +135,17 @@ Tras completar este tutorial, estará familiarizado con muchas de las herramient
 
 1. En la barra de menús, elimine los archivos intermedios y de salida creados durante las compilaciones anteriores.
 
-    ![El comando Limpiar solución del menú Compilar](../ide/media/exploreide-cleansolution.png "ExploreIDE-CleanSolution")
+    ![El comando Limpiar solución del menú Compilar](../ide/media/exploreide-cleansolution.png "|::ref11::|")
 
 2. Cambie la configuración de compilación para GreetingsConsoleApp de **Depurar** a **Versión**.
 
-    ![Compilar una versión de lanzamiento de la aplicación](../ide/media/c-ide-changingbuildtorelease.png "C++IDE_ChangingBuildtoRelease")
+    ![Compilación de una versión de lanzamiento de la aplicación](../ide/media/c-ide-changingbuildtorelease.png "|::ref12::|")
 
 3. Compile la solución.
 
-    ![El comando Compilar solución del menú Compilar](../ide/media/exploreide-buildsolution.png "ExploreIDE-BuildSolution")
+    ![Comando Compilar solución del menú Compilar](../ide/media/exploreide-buildsolution.png "|::ref13::|")
 
    ¡Enhorabuena por completar este tutorial! Si desea explorar más ejemplos, vea [Visual Studio Samples](../ide/visual-studio-samples.md).
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Otras referencias
  [Tutorial: Crear una aplicación sencilla](../ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md) [Sugerencias de productividad](../ide/productivity-tips-for-visual-studio.md) [Ejemplos de Visual Studio](../ide/visual-studio-samples.md) [Introducción al desarrollo con Visual Studio](../ide/get-started-developing-with-visual-studio.md)

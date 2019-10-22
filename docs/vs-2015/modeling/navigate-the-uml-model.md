@@ -8,15 +8,15 @@ helpviewer_keywords:
 - UML API
 ms.assetid: 6d789b6d-2aa9-4ceb-92c4-84a300065a76
 caps.latest.revision: 20
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: c98aefb5e3dc0090338233ca5b05b4ebc6460719
-ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
+ms.openlocfilehash: 7b90d8b532b004a7cbdaeed762300a0daf9ab45c
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68871777"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72668541"
 ---
 # <a name="navigate-the-uml-model"></a>Navegar por el modelo UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,13 +26,13 @@ En este tema se presentan los principales tipos del modelo UML.
 ## <a name="the-model-elements-model-and-model-store"></a>Modelo, elementos del modelo y almacén de modelos
  Los tipos definidos en el ensamblado **Microsoft. VisualStudio. UML. interfaces. dll** corresponden a los tipos definidos en la [especificación de UML, versión 2.1.2](http://www.omg.org/spec/UML/2.1.2/Superstructure/PDF/).
 
- Los tipos de la especificación de UML se realizan como interfaces en Visual Studio. La letra 'I' se antepone al nombre de cada tipo. Por ejemplo:  [IElement](/previous-versions/dd516035(v=vs.140)), [iclass](/previous-versions/dd523539%28v%3dvs.140%29), [IOperation](/previous-versions/dd481186(v=vs.140)).
+ Los tipos de la especificación de UML se realizan como interfaces en Visual Studio. La letra 'I' se antepone al nombre de cada tipo. Por ejemplo: [IElement](/previous-versions/dd516035(v=vs.140)), [iclass](/previous-versions/dd523539%28v%3dvs.140%29), [IOperation](/previous-versions/dd481186(v=vs.140)).
 
  Todos los tipos excepto IElement heredan las propiedades de uno o varios supertipos.
 
 - Para obtener un resumen de los tipos de modelo, vea [tipos de elementos del modelo UML](../modeling/uml-model-element-types.md).
 
-- Para obtener detalles completos de la API, vea [referencia de API para](../modeling/api-reference-for-uml-modeling-extensibility.md)la extensibilidad del modelado UML.
+- Para obtener detalles completos de la API, vea [referencia de API para la extensibilidad del modelado UML](../modeling/api-reference-for-uml-modeling-extensibility.md).
 
 ### <a name="relationships"></a>Relaciones
  Las propiedades y relaciones que se definen en la especificación de UML se implementan como propiedades .NET.
@@ -45,20 +45,20 @@ En este tema se presentan los principales tipos del modelo UML.
 
  Si elimina un elemento del modelo, se elimina automáticamente cualquier relación de la que forme parte y se actualiza la propiedad situada en el otro extremo.
 
- Si la especificación de UML asigna una multiplicidad de 0..1 a una propiedad, puede tener el valor `null`. Una multiplicidad con un valor máximo mayor que 1 significa que la propiedad .NET tiene el tipo: `IEnumerable<`*Escriba*`>`.
+ Si la especificación de UML asigna una multiplicidad de 0..1 a una propiedad, puede tener el valor `null`. Una multiplicidad con un valor máximo mayor que 1 significa que la propiedad .NET tiene el tipo: `IEnumerable<`*tipo* `>`.
 
  Para obtener más información sobre cómo recorrer las relaciones, vea [navegar por las relaciones con la API de UML](../modeling/navigate-relationships-with-the-uml-api.md).
 
 ### <a name="the-ownership-tree"></a>Árbol de propiedad
  Un modelo contiene un árbol de objetos [IElement](/previous-versions/dd516035(v=vs.140)) . Cada elemento tiene las propiedades `OwnedElements` y `Owner`.
 
- En la mayoría de los casos, también existen referencias a los destinos de las propiedades `Owner` y `OwnedElements` en otras propiedades que tienen nombres más específicos. Por ejemplo, cada una de las operaciones de UML pertenece a una clase UML. Por lo tanto, [IOperation](/previous-versions/dd481186(v=vs.140)) tiene una propiedad denominada [IOperation. Class](/previous-versions/dd473473%28v%3dvs.140%29)y en cada objeto `Class == Owner` [IOperation](/previous-versions/dd481186(v=vs.140)) ,.
+ En la mayoría de los casos, también existen referencias a los destinos de las propiedades `Owner` y `OwnedElements` en otras propiedades que tienen nombres más específicos. Por ejemplo, cada una de las operaciones de UML pertenece a una clase UML. Por lo tanto, [IOperation](/previous-versions/dd481186(v=vs.140)) tiene una propiedad denominada [IOperation. Class](/previous-versions/dd473473%28v%3dvs.140%29)y en cada objeto [IOperation](/previous-versions/dd481186(v=vs.140)) , `Class == Owner`.
 
- El elemento de nivel superior del árbol, que no tiene ningún propietario, es `AuxiliaryConstructs.IModel`un. Objeto imodel se encuentra dentro de un `IModelStore`, en el que es [IModelStore. root](/previous-versions/ee789368(v=vs.140)).
+ El elemento de nivel superior del árbol, que no tiene propietario, es un `AuxiliaryConstructs.IModel`. Objeto imodel se encuentra dentro de un `IModelStore`, en el que es [IModelStore. root](/previous-versions/ee789368(v=vs.140)).
 
  Cada elemento del modelo se crea con un propietario. Para obtener más información, vea [crear elementos y relaciones en modelos UML](../modeling/create-elements-and-relationships-in-uml-models.md).
 
- ![Diagrama de clases: Modelo, diagrama, forma y elemento](../modeling/media/uml-mm1.png)
+ ![Diagrama de clases: modelo, diagrama, forma y elemento](../modeling/media/uml-mm1.png)
 
 ## <a name="shapes-and-diagrams"></a>Formas y diagramas
  Los elementos del modelo UML se pueden representar en diagramas. Pueden aparecer diferentes subtipos de IElement en distintos tipos de diagramas.
@@ -120,7 +120,7 @@ foreach (IShape<IInterface> in
 ```
 
 ## <a name="accessing-another-model-or-diagrams"></a>Tener acceso a otro modelo o diagramas
- Puede:
+ Puede realizar lo siguiente:
 
 - Use Model Bus de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] para crear vínculos entre elementos de modelos diferentes. Para obtener más información, vea [integrar modelos UML con otros modelos y herramientas](../modeling/integrate-uml-models-with-other-models-and-tools.md).
 

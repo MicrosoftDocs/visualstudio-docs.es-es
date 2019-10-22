@@ -1,5 +1,5 @@
 ---
-title: 'CA1023: Los indizadores no deben ser multidimensionales | Documentos de Microsoft'
+title: 'CA1023: los indizadores no deben ser multidimensionales | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -12,15 +12,15 @@ helpviewer_keywords:
 - IndexersShouldNotBeMultidimensional
 ms.assetid: ae499879-97f6-434e-a61d-1fedd231d2fb
 caps.latest.revision: 16
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 2b9cf9cd97dd50577a466ed4d433e0e1dbd5da4d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 1b7c4c82add8644a1c2c213536c2ad3c0097c3a6
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68158037"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72661990"
 ---
 # <a name="ca1023-indexers-should-not-be-multidimensional"></a>CA1023: Los indizadores no deben ser multidimensionales
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,23 +29,23 @@ ms.locfileid: "68158037"
 |-|-|
 |TypeName|IndexersShouldNotBeMultidimensional|
 |Identificador de comprobación|CA1023|
-|Categoría|Microsoft.Design|
+|Categoría|Microsoft. Design|
 |Cambio problemático|Problemático|
 
-## <a name="cause"></a>Causa
- Un tipo público o protegido contiene un indizador público o protegido que utiliza más de un índice.
+## <a name="cause"></a>Motivo
+ Un tipo público o protegido contiene un indexador público o protegido que usa más de un índice.
 
 ## <a name="rule-description"></a>Descripción de la regla
- Los indizadores, es decir, las propiedades indizadas, deben utilizar un índice único. Los indizadores multidimensionales pueden reducir significativamente la facilidad de uso de la biblioteca de. Si el diseño requiere varios índices, reconsidere si el tipo representa un almacén de datos lógico. Si no es así, utilice un método.
+ Los indexadores, es decir, las propiedades indizadas, deben usar un solo índice. Los indexadores multidimensionales pueden reducir significativamente la facilidad de uso de la biblioteca. Si el diseño requiere varios índices, reconsidere si el tipo representa un almacén de datos lógico. Si no es así, use un método.
 
 ## <a name="how-to-fix-violations"></a>Cómo corregir infracciones
- Para corregir una infracción de esta regla, cambiar el diseño para utilizar un solo entero o un índice de cadena o usar un método en lugar del indizador.
+ Para corregir una infracción de esta regla, cambie el diseño para usar un índice de cadena o entero solitario, o bien use un método en lugar del indexador.
 
 ## <a name="when-to-suppress-warnings"></a>Cuándo suprimir advertencias
- Suprima una advertencia de esta regla después de considerar cuidadosamente la necesidad de que el indizador no estándar.
+ Suprima una advertencia de esta regla solo después de considerar detenidamente la necesidad del indexador no estándar.
 
 ## <a name="example"></a>Ejemplo
- El ejemplo siguiente muestra un tipo, `DayOfWeek03`, con un indizador multidimensional que infringe la regla. El indizador se puede considerar como un tipo de conversión y, por tanto, es más apropiado exponerlo como un método. El tipo se ha rediseñado en `RedesignedDayOfWeek03` para cumplir la regla.
+ En el ejemplo siguiente se muestra un tipo, `DayOfWeek03`, con un indexador multidimensional que infringe la regla. El indizador se puede ver como un tipo de conversión y, por tanto, se expone más adecuadamente como un método. El tipo se ha rediseñado en `RedesignedDayOfWeek03` para satisfacer la regla.
 
  [!code-cpp[FxCop.Design.OneDimensionForIndexer#1](../snippets/cpp/VS_Snippets_CodeAnalysis/FxCop.Design.OneDimensionForIndexer/cpp/FxCop.Design.OneDimensionForIndexer.cpp#1)]
  [!code-csharp[FxCop.Design.OneDimensionForIndexer#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Design.OneDimensionForIndexer/cs/FxCop.Design.OneDimensionForIndexer.cs#1)]

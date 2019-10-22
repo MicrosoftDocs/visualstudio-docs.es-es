@@ -1,5 +1,5 @@
 ---
-title: Filtrar Ver defectos de código administrado | Documentos de Microsoft
+title: 'Cómo: ver defectos de código administrado | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -10,27 +10,27 @@ helpviewer_keywords:
 - code, viewing defects
 ms.assetid: 58aa6c23-d0b3-414d-930d-82e676cb7e5f
 caps.latest.revision: 15
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 5ef9b5f8da2cf38566c6cedbf10eae3fa5921362
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 3fe1c6440f76e358ccde22129cbd413bb229b77e
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58987205"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72646253"
 ---
-# <a name="how-to-view-managed-code-defects"></a>Filtrar Ver defectos de código administrado
+# <a name="how-to-view-managed-code-defects"></a>Cómo: Ver defectos de código administrado
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-En el análisis de código, errores, advertencias y mensajes se notifican en la ventana de análisis de código. La ventana de análisis de código aparece automáticamente al ejecutar análisis de código en un proyecto o solución.  
-  
- En la ventana Análisis de código, hacer lo siguiente:  
-  
--   **Elija el título de la advertencia.**  
-  
-     Información adicional sobre la advertencia aparece en la ventana de análisis de código. La línea en el archivo de origen que se desencadena la advertencia se muestra y resaltada en el editor de código fuente.  
-  
--   **Elija el identificador de advertencia.** Los identificadores de advertencia están precedidos por **CA** e incluyen una serie de cuatro dígitos. Por ejemplo, CA1234.  
-  
-     Se muestra el tema de Ayuda de MSDN Library para la advertencia. El tema de Ayuda contiene información detallada sobre la causa de la advertencia e incluye ejemplos que muestran cómo el problema de advertencia se produce y se ha resuelto.
+En el análisis de código, los errores, las advertencias y los mensajes se muestran en la ventana Análisis de código. La ventana Análisis de código aparece automáticamente al ejecutar el análisis de código en un proyecto o solución.
+
+ En la ventana Análisis de código, puede:
+
+- **Elija el título de la advertencia.**
+
+     Aparece información adicional sobre la advertencia en la ventana Análisis de código. La línea del archivo de código fuente que desencadenó la advertencia se muestra y se resalta en el editor de código fuente.
+
+- **Elija el ID. de advertencia.** Los identificadores de advertencia llevan el prefijo **CA** e incluyen un número de cuatro dígitos. Por ejemplo, CA1234.
+
+     Se muestra el tema de ayuda de MSDN Library correspondiente a la advertencia. El tema de ayuda contiene información detallada acerca de la causa de la advertencia e incluye ejemplos que muestran cómo se produce el problema de advertencia y se resuelve.

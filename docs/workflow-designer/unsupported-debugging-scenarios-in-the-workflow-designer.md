@@ -3,21 +3,21 @@ title: Escenarios de depuración no admitidos en el Diseñador de flujo de traba
 ms.date: 11/04/2016
 ms.topic: reference
 ms.assetid: 6adbe379-41d0-4681-9cd0-b91f187c3c2c
-ms.author: gewarren
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-author: gewarren
-ms.openlocfilehash: 9cda710a3a2f4945e96e706479996da0a1fa7e12
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+author: jillre
+ms.openlocfilehash: bfc4e0995a9abb88f73ff27186ed4e0d1dc81648
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67825732"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72649782"
 ---
 # <a name="unsupported-debugging-scenarios-in-the-workflow-designer"></a>Escenarios de depuración no admitidos en el Diseñador de flujo de trabajo
 
-El Diseñador de flujo de trabajo no admite los siguientes escenarios de depuración:
+En el Diseñador de flujo de trabajo no se admiten los siguientes escenarios de depuración:
 
 - No se puede continuar la ejecución una vez editado el código.
 
@@ -27,7 +27,7 @@ El Diseñador de flujo de trabajo no admite los siguientes escenarios de depurac
 
 - El diseñador de flujo de trabajo no se puede utilizar para depurar flujos de trabajo creados en el código sin usar el diseñador.
 
-- No se puede depurar flujos de trabajo creados en versiones anteriores de Windows Workflow Foundation (WF) en .NET Framework 4 o posterior.
+- Los flujos de trabajo creados en versiones anteriores de Windows Workflow Foundation (WF) no se pueden depurar en .NET Framework 4 o posterior.
 
 - No se pueden definir puntos de interrupción en los vínculos entre actividades o nodos <xref:System.Activities.Statements.Flowchart>.
 
@@ -37,7 +37,7 @@ El Diseñador de flujo de trabajo no admite los siguientes escenarios de depurac
 
 - No se pueden establecer puntos de interrupción en la ventana de pila de llamadas.
 
-- Al crear los puntos de interrupción en el diseñador, el **línea** y **carácter** configuración en el **nuevo punto de interrupción** no se utiliza el cuadro de diálogo.
+- Al crear puntos de interrupción en el diseñador, no se utilizan los valores de **línea** y de **carácter** en el cuadro de diálogo **nuevo punto de interrupción** .
 
 - La ventana o el menú contextual Punto de interrupción no admiten las siguientes columnas u opciones para la depuración de flujos de trabajo:
 
@@ -51,6 +51,6 @@ El Diseñador de flujo de trabajo no admite los siguientes escenarios de depurac
 
   - Datos
 
-  - Process
+  - Proceso
 
   - Ir al desensamblado

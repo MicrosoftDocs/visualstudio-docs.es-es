@@ -16,15 +16,15 @@ helpviewer_keywords:
 - Visual Studio, regular expressions
 ms.assetid: 718a617d-0e05-47e1-a218-9746971527f4
 caps.latest.revision: 56
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 1e57b3f8db5330f7d0778ee53e552c38e8295c62
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 031129d729d3d7c619ac9c1b48c9ed4c51dd3eac
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65696409"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72659619"
 ---
 # <a name="use-regular-expressions-in-visual-studio"></a>Uso de expresiones regulares en Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -68,7 +68,7 @@ A continuación se muestran algunos ejemplos:
 |                                                                                                           Coincidir con cualquier carácter de espacio en blanco                                                                                                           |                                                   (?([^\r\n])\s)                                                   |                                                `Public\sInterface` coincide con la frase "Public Interface".                                                 |
 |                                                                                                             Coincidir con cualquier carácter numérico                                                                                                             |                                                         \d                                                         |                                                `\d` coincide con "3" en "3456", "2" en "23" y "1" en "1".                                                |
 |                                                                                                              Coincidir con un carácter Unicode                                                                                                              |                              \uXXXX donde XXXX especifica el valor del carácter Unicode.                              |                                                            `\u0065` coincide con el carácter "e".                                                            |
-|                                                                                                                 Coincidir con un identificador                                                                                                                 |                                         \b(*\w+&#124;[\w-[0-9\\*]]\w\*)\b                                          |                                                       Coincide con “type1”, pero no con “&type1” o “#define”.                                                       |
+|                                                                                                                 Coincidir con un identificador                                                                                                                 |                                         \b( *\w+&#124;[\w-[0-9\\* ]]\w\*)\b                                          |                                                       Coincide con “type1”, pero no con “&type1” o “#define”.                                                       |
 |                                                                                                            Coincidir con una cadena entre comillas                                                                                                             |                                             ((\\".+?\\")&#124;('.+?'))                                             |                                                    Coincide con cualquier cadena entre comillas simples o dobles.                                                     |
 |                                                                                                             Coincidir con un número hexadecimal                                                                                                              |                                              \b0[xX]([0-9a-fA-F]\)\b                                               |                                                          Coincide con “0xc67f”, pero no con “0xc67fc67f”.                                                           |
 |                                                                                                             Coincidir con enteros y decimales                                                                                                             |                                               \b[0-9]\*\\.\*[0-9]+\b                                               |                                                                     Coincide con “1.333”.                                                                      |

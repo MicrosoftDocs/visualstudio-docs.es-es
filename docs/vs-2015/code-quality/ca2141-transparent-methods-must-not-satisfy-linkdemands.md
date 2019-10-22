@@ -1,5 +1,5 @@
 ---
-title: 'CA2141: los métodos transparentes no deben satisfacer LinkDemands | Microsoft Docs'
+title: 'CA2141: los métodos transparentes no deben cumplir LinkDemands | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -8,15 +8,15 @@ f1_keywords:
 - CA2141
 ms.assetid: 2957f5f7-c511-4180-ba80-752034f10a77
 caps.latest.revision: 16
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: a7c54b472e91aa2be1d8e5bb1a9c32c26c0cb299
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 5e8e88401a6fbe3ab7dc635dadee9215b049b2d5
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68142708"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72602838"
 ---
 # <a name="ca2141transparent-methods-must-not-satisfy-linkdemands"></a>CA2141: Los métodos transparentes no deben satisfacer LinkDemands
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,16 +28,16 @@ ms.locfileid: "68142708"
 |Categoría|Microsoft.Security|
 |Cambio problemático|Problemático|
 
-## <a name="cause"></a>Causa
- Un método transparente en seguridad llama a un método en un ensamblado que no está marcado con el <xref:System.Security.AllowPartiallyTrustedCallersAttribute> atributo (APTCA) o un método transparente en seguridad satisface un <xref:System.Security.Permissions.SecurityAction> `.LinkDemand` para un tipo o un método.
+## <a name="cause"></a>Motivo
+ Un método transparente en seguridad llama a un método de un ensamblado que no está marcado con el atributo <xref:System.Security.AllowPartiallyTrustedCallersAttribute> (APTCA) o un método transparente en seguridad satisface una `.LinkDemand` <xref:System.Security.Permissions.SecurityAction> para un tipo o un método.
 
 ## <a name="rule-description"></a>Descripción de la regla
- Que satisface un LinkDemand es una operación confidencial de seguridad que puede producir involuntaria elevación de privilegios. Código transparente en seguridad no debe satisfacer LinkDemands, porque no está sujeto a los mismos requisitos de auditoría de seguridad que el código crítico para la seguridad. Los métodos transparentes en ensamblados de nivel 1 del conjunto de reglas de seguridad hará que todas las LinkDemands que satisfacen a convertirse en peticiones completas en tiempo de ejecución, lo que puede causar problemas de rendimiento. En los ensamblados de nivel 2 de conjunto de reglas de seguridad, los métodos transparentes no se compilará en el compilador de just-in-time (JIT), si éstos intentan satisface un LinkDemand.
+ Satisfacer una LinkDemand es una operación sensible a la seguridad que puede provocar una elevación involuntaria de privilegios. El código transparente en seguridad no debe cumplir LinkDemands, ya que no está sujeto a los mismos requisitos de auditoría de seguridad que el código crítico para la seguridad. Los métodos transparentes de los ensamblados de nivel 1 de conjunto de reglas de seguridad harán que todos los LinkDemands que cumplan se conviertan en demandas completas en tiempo de ejecución, lo que puede causar problemas de rendimiento. En los ensamblados de nivel 2 de conjunto de reglas de seguridad, los métodos transparentes no se compilarán en el compilador Just-in-Time (JIT) si intentan cumplir una LinkDemand.
 
- En los ensamblados que usan seguridad de nivel 2, los intentos de un método transparente en seguridad para satisfacer una LinkDemand o llamar a un método en un ensamblado APTCA no provoca una <xref:System.MethodAccessException>; en ensamblados de nivel 1 LinkDemand se convierte en una demanda completa.
+ En los ensamblados que USEE la seguridad de nivel 2, los intentos por un método transparente en seguridad para satisfacer una LinkDemand o llamar a un método en un ensamblado no APTCA generan un <xref:System.MethodAccessException>; en los ensamblados de nivel 1, LinkDemand se convierte en una demanda completa.
 
 ## <a name="how-to-fix-violations"></a>Cómo corregir infracciones
- Para corregir una infracción de esta regla, marque el método que obtiene acceso con el <xref:System.Security.SecurityCriticalAttribute> o <xref:System.Security.SecuritySafeCriticalAttribute> de atributo o quite LinkDemand del método que se tiene acceso.
+ Para corregir una infracción de esta regla, marque el método de acceso con el <xref:System.Security.SecurityCriticalAttribute> o <xref:System.Security.SecuritySafeCriticalAttribute> atributo, o quite LinkDemand del método al que se accede.
 
 ## <a name="when-to-suppress-warnings"></a>Cuándo suprimir advertencias
  No suprima las advertencias de esta regla.

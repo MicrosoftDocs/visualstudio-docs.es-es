@@ -7,17 +7,17 @@ helpviewer_keywords:
 - dependency diagrams
 - diagrams - modeling, layer
 - constraints, architectural
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d4a4d2c1600558e4c31c6dd12b85f931a83e7ba7
-ms.sourcegitcommit: 0f44ec8ba0263056ad04d2d0dc904ad4206ce8fc
+ms.openlocfilehash: 573d03761bc4d8ccddf666dbc39cb8301d7c9afa
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70766222"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72654128"
 ---
 # <a name="create-dependency-diagrams-from-your-code"></a>Crear diagramas de dependencia a partir del código
 
@@ -27,7 +27,7 @@ Para visualizar la arquitectura lógica de alto nivel del sistema de software, c
 
 Un diagrama de dependencia permite organizar los elementos de la solución de Visual Studio en grupos lógicos abstractos denominados *capas*. Las capas se pueden usar para describir las tareas principales que realizan estos artefactos o los componentes principales del sistema. Cada capa puede contener otras capas que describen tareas más detalladas. También puede especificar las *dependencias* planeadas o existentes entre las capas. Estas dependencias, que se representan como flechas, muestran qué capas pueden usar o usan actualmente la funcionalidad representada por otras capas. Para mantener el control de la arquitectura del código, muestre las dependencias previstas en el diagrama y, a continuación, valide el código con el diagrama.
 
-[Vídeo: Validar las dependencias de la arquitectura en tiempo real](https://sec.ch9.ms/sessions/69613110-c334-4f25-bb36-08e5a93456b5/170ValidateArchitectureDependenciesWithVisualStudio.mp4)
+[Vídeo: validar las dependencias de la arquitectura en tiempo real](https://sec.ch9.ms/sessions/69613110-c334-4f25-bb36-08e5a93456b5/170ValidateArchitectureDependenciesWithVisualStudio.mp4)
 
 ## <a name="CreateDiagram"></a>Crear un diagrama de dependencia
 
@@ -51,7 +51,7 @@ Antes de crear un diagrama de dependencia, asegúrese de que la solución tiene 
 
 4. En **Agregar a proyecto de modelado**, busque y seleccione un proyecto de modelado existente en la solución.
 
-     -o bien-
+     o bien
 
      Elija **crear un nuevo proyecto de modelado** para agregar un nuevo proyecto de modelado a la solución.
 
@@ -70,7 +70,7 @@ Antes de crear un diagrama de dependencia, asegúrese de que la solución tiene 
 
 4. Crear un nuevo diagrama de dependencia para la solución mediante el menú **arquitectura**
 
-5. Seleccione todos los nodos del mapa de código (use _Ctrl_ + _A_o use la selección de banda elástica presionando la tecla _MAYÚS_ antes de hacer clic, arrastrar y soltar.
+5. Seleccione todos los nodos del mapa de código (use _Ctrl_  + _A_o use la selección de banda elástica presionando la tecla _MAYÚS_ antes de hacer clic, arrastrar y soltar.
 
 6. Arrastrar y colocar, o copiar y pegar, los elementos seleccionados en el nuevo diagrama de validación de dependencias.
 
@@ -91,8 +91,8 @@ Antes de crear un diagrama de dependencia, asegúrese de que la solución tiene 
 |Crear una única capa para todos los artefactos seleccionados|Arrastre todos los artefactos al diagrama de dependencias al mismo tiempo.<br /><br /> Aparecerá una capa en el diagrama que estará vinculada a todos los artefactos.|
 |Crear una capa para cada artefacto seleccionado|Mantenga presionada la tecla **MAYÚS** mientras arrastra todos los artefactos al diagrama de dependencias al mismo tiempo. **Nota:**  Si usa la tecla **MAYÚS** para seleccionar un intervalo de elementos, suelte la tecla después de seleccionar los artefactos. Cuando arrastre los artefactos al diagrama, vuelva a mantener la tecla presionada. <br /><br /> Aparecerá una capa para cada artefacto y cada capa estará vinculada a cada uno de los artefactos.|
 |Agregar un artefacto a una capa|Arrastre el artefacto hasta la capa.|
-|Crear una nueva capa que no tenga vínculos|En el **cuadro de herramientas**, expanda la sección **Diagrama de dependencia** y, a continuación, arrastre una **capa** al diagrama de dependencia.<br /><br /> Para agregar varias capas, haga doble clic en la herramienta. Cuando haya terminado, elija la herramienta **puntero** o presione la tecla **ESC** .<br /><br /> o bien<br /><br /> Abra el menú contextual del diagrama de dependencias, elija **Agregar**y, a continuación, elija **capa**.|
-|Crear capas anidadas|Arrastre una capa existente a otro nivel.<br /><br /> o bien<br /><br /> Abra el menú contextual de una capa, elija **Agregar**y, a continuación, elija **capa**.|
+|Crear una nueva capa que no tenga vínculos|En el **cuadro de herramientas**, expanda la sección **Diagrama de dependencia** y, a continuación, arrastre una **capa** al diagrama de dependencia.<br /><br /> Para agregar varias capas, haga doble clic en la herramienta. Cuando haya terminado, elija la herramienta **puntero** o presione la tecla **ESC** .<br /><br /> O bien<br /><br /> Abra el menú contextual del diagrama de dependencias, elija **Agregar**y, a continuación, elija **capa**.|
+|Crear capas anidadas|Arrastre una capa existente a otro nivel.<br /><br /> O bien<br /><br /> Abra el menú contextual de una capa, elija **Agregar**y, a continuación, elija **capa**.|
 |Crear una nueva capa que contenga dos o más capas existentes|Seleccione las capas, abra el menú contextual de la selección y, a continuación, elija **Grupo**.|
 |Cambiar el color de una capa|Establezca su propiedad **color** en el color que desee.|
 |Especificar qué artefactos asociados a una capa no deben pertenecer a los espacios de nombres especificados|Escriba los espacios de nombres en la propiedad **Forbidden namespaces** de la capa. Use un punto y coma ( **;** ) para separar los espacios de nombres.|
@@ -118,8 +118,8 @@ Antes de crear un diagrama de dependencia, asegúrese de que la solución tiene 
 |**En**|**En el explorador de capas**|
 |-|-|
 |Eliminar el vínculo entre la capa y un artefacto|Abra el menú contextual del vínculo del artefacto y, a continuación, elija **eliminar**.|
-|Mover el vínculo de una capa a otra|Arrastre el vínculo del artefacto a una capa del diagrama.<br /><br /> o bien<br /><br /> 1.  Abra el menú contextual del vínculo del artefacto y, a continuación, elija **cortar**.<br />2.  En el diagrama de dependencias, abra el menú contextual de la capa y, a continuación, elija **pegar**.|
-|Copiar el vínculo de una capa a otra|1.  Abra el menú contextual del vínculo del artefacto y, a continuación, elija **copiar**.<br />2.  En el diagrama de dependencias, abra el menú contextual de la capa y, a continuación, elija **pegar**.|
+|Mover el vínculo de una capa a otra|Arrastre el vínculo del artefacto a una capa del diagrama.<br /><br /> O bien<br /><br /> 1. Abra el menú contextual del vínculo del artefacto y, a continuación, elija **cortar**.<br />2. en el diagrama de dependencia, abra el menú contextual de la capa y, a continuación, elija **pegar**.|
+|Copiar el vínculo de una capa a otra|1. Abra el menú contextual del vínculo del artefacto y, a continuación, elija **copiar**.<br />2. en el diagrama de dependencia, abra el menú contextual de la capa y, a continuación, elija **pegar**.|
 |Crear una nueva capa a partir del vínculo de un artefacto existente|Arrastre el vínculo del artefacto a un espacio en blanco del diagrama.|
 |Compruebe que un artefacto vinculado admite la validación en el diagrama de dependencia.|Fíjese en la columna **admite validación** para el vínculo del artefacto.|
 
@@ -159,8 +159,8 @@ Antes de crear un diagrama de dependencia, asegúrese de que la solución tiene 
 ## <a name="see-also"></a>Vea también
 
 - [Compatibilidad de edición con las herramientas de arquitectura y modelado](../modeling/what-s-new-for-design-in-visual-studio.md#edition-support-for-architecture-and-modeling-tools)
-- [Vídeo: Validar las dependencias de la arquitectura en tiempo real](https://sec.ch9.ms/sessions/69613110-c334-4f25-bb36-08e5a93456b5/170ValidateArchitectureDependenciesWithVisualStudio.mp4)
+- [Vídeo: validar las dependencias de la arquitectura en tiempo real](https://sec.ch9.ms/sessions/69613110-c334-4f25-bb36-08e5a93456b5/170ValidateArchitectureDependenciesWithVisualStudio.mp4)
 - [Diagramas de dependencia: referencia](../modeling/layer-diagrams-reference.md)
-- [Diagramas de dependencia: directrices](../modeling/layer-diagrams-guidelines.md)
+- [Diagramas de dependencia: instrucciones](../modeling/layer-diagrams-guidelines.md)
 - [Validación de código con diagramas de dependencia](../modeling/validate-code-with-layer-diagrams.md)
 - [Visualizar el código](../modeling/visualize-code.md)

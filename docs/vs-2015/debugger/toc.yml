@@ -155,7 +155,7 @@
         - name: Creación de vistas personalizadas de objetos administrados
           items:
             - name: Creación de vistas personalizadas de objetos administrados
-              href: create-custom-views-of-dot-managed-objects.md
+              href: create-custom-views-of-managed-objects.md
             - name: Utilizar el atributo DebuggerTypeProxy
               href: using-debuggertypeproxy-attribute.md
             - name: Usar el atributo DebuggerDisplay
@@ -360,7 +360,7 @@
               href: run-windows-store-apps-in-the-simulator.md
             - name: Ejecutar aplicaciones de la Tienda Windows en un equipo remoto
               href: run-windows-store-apps-on-a-remote-machine.md
-            - name: 'Ejecutar aplicaciones de Windows Phone en el simulador '
+            - name: Ejecutar aplicaciones de Windows Phone en el simulador
               href: run-windows-phone-apps-in-the-emulator.md
             - name: Implementar aplicaciones de la Tienda Windows desde Visual Studio
               href: deploy-windows-store-apps-from-visual-studio.md

@@ -1,5 +1,5 @@
 ---
-title: ClearCollection&lt;T&gt; Diseñador de actividad | Documentos de Microsoft
+title: Diseñador de actividad de ClearCollection &lt;T &gt; | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-workflow-designer
@@ -8,38 +8,35 @@ f1_keywords:
 - System.Activities.Statements.ClearCollection`1.UI
 ms.assetid: db0e5da2-7b5a-4f1a-864c-f3aeeeeb51a7
 caps.latest.revision: 7
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 240e634115e7602c66d69f0dba9cfa52504dc89a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 8c2f1e0264d39c65601a70e8c24b51c7eceadf4a
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62977165"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72657019"
 ---
-# <a name="clearcollectionlttgt-activity-designer"></a>ClearCollection&lt;T&gt; Diseñador de actividad
-El **ClearCollection\<T >** Diseñador de actividad se usa para crear y configurar un <xref:System.Activities.Statements.ClearCollection%601> actividad.  
-  
-## <a name="the-clearcollectiont-activity"></a>ClearCollection\<T > actividad  
- La actividad <xref:System.Activities.Statements.ClearCollection%601> borra una colección especificada de todos los elementos.  
-  
-### <a name="using-the-clearcollectiont-activity-designer"></a>Uso de ClearCollection\<T > Diseñador de actividad  
- El **ClearCollection\<T >** Diseñador de actividad puede encontrarse en el **colección** categoría de la **cuadro de herramientas**, que se tiene acceso haciendo clic en el  **Cuadro de herramientas** pestaña de la [!INCLUDE[wfd2](../includes/wfd2-md.md)] (como alternativa, seleccione **barra de herramientas** desde el **vista** menú o CTRL + ALT + X.)  
-  
- El **ClearCollection\<T >** Diseñador de actividad se puede arrastrar desde el **cuadro de herramientas** y colocarlo en la [!INCLUDE[wfd2](../includes/wfd2-md.md)] superficie donde se coloquen normalmente las actividades, tal como en un <xref:System.Activities.Statements.Sequence>. Esto crea un <xref:System.Activities.Statements.ClearCollection%601> actividad con un valor predeterminado <xref:System.Activities.Activity.DisplayName%2A> de ClearCollection\<Int32 >. (De forma predeterminada, el *TypeArgument* es **Int32**. Se puede cambiar en la cuadrícula de propiedades). El <xref:System.Activities.Activity.DisplayName%2A> se puede editar en el encabezado de la **ClearCollection\<T >** Diseñador de actividad o en el **DisplayName** cuadro de la cuadrícula de propiedades. Es preciso editar las otras propiedades en la cuadrícula de propiedades.  
-  
-### <a name="the-clearcollectiont-properties"></a>ClearCollection\<T > Propiedades  
- En la tabla siguiente se muestran las propiedades <xref:System.Activities.Statements.ClearCollection%601> y se describe cómo se utilizan en el diseñador.  
-  
-|Nombre de la propiedad|Obligatorio|Uso|  
-|-------------------|--------------|-----------|  
-|<xref:System.Activities.Activity.DisplayName%2A>|False|Especifica el nombre opcional descriptivo de la actividad <xref:System.Activities.Statements.ClearCollection%601>. El valor predeterminado es ClearCollection\<Int32 >. Pese a que el valor <xref:System.Activities.Activity.DisplayName%2A> no es obligatorio, se recomienda usar uno.|  
-|<xref:System.Activities.Statements.ClearCollection%601.Collection%2A>|True|Especifica la recopilación que se va a borrar de los elementos. Esta colección es de tipo **ICollection\<TypeArgument >.** Para especificar la colección, escriba una expresión de Visual Basic en la cuadrícula de propiedades.|  
-|*TypeArgument*|True|Especifica el tipo T de los elementos contenidos en <xref:System.Collections.Generic.ICollection%601>. De forma predeterminada, esto *TypeArgument* tipo está establecido en **Int32**. Para cambiar el tipo, cambie el valor de la *TypeArgument* en el cuadro combinado en la cuadrícula de propiedades.|  
-  
-## <a name="see-also"></a>Vea también  
- [colección](../workflow-designer/collection-activity-designers.md)   
- [AddToCollection\<T>](../workflow-designer/addtocollection-t-activity-designer.md)   
- [ExistsInCollection\<T>](../workflow-designer/existsincollection-t-activity-designer.md)   
- [RemoveFromCollection\<T>](../workflow-designer/removefromcollection-t-activity-designer.md)
+# <a name="clearcollectionlttgt-activity-designer"></a>Diseñador de actividad de ClearCollection &lt;T &gt;
+El diseñador de actividad **ClearCollection \<T >** se usa para crear y configurar una actividad <xref:System.Activities.Statements.ClearCollection%601>.
+
+## <a name="the-clearcollectiont-activity"></a>Actividad de > de \<T de ClearCollection
+ La actividad <xref:System.Activities.Statements.ClearCollection%601> borra una colección especificada de todos los elementos.
+
+### <a name="using-the-clearcollectiont-activity-designer"></a>Usar el diseñador de actividades ClearCollection \<T >
+ El diseñador de actividades **ClearCollection \<T >** se puede encontrar en la categoría **colección** del **cuadro de herramientas**, al que se tiene acceso al hacer clic en la pestaña **cuadro de herramientas** del [!INCLUDE[wfd2](../includes/wfd2-md.md)] (de forma alternativa, seleccione **barra de herramientas** en la Menú **Ver** o Ctrl + Alt + X).
+
+ El diseñador de actividades **ClearCollection \<T >** se puede arrastrar desde el **cuadro de herramientas** y colocarlo en la superficie de la [!INCLUDE[wfd2](../includes/wfd2-md.md)], donde se coloquen normalmente las actividades, como en una <xref:System.Activities.Statements.Sequence>. Esto crea una actividad <xref:System.Activities.Statements.ClearCollection%601> con un <xref:System.Activities.Activity.DisplayName%2A> predeterminado de ClearCollection \<Int32 >. (De forma predeterminada, *TypeArgument* es **Int32**. Esto se puede cambiar en la cuadrícula de propiedades). El valor <xref:System.Activities.Activity.DisplayName%2A> se puede editar en el encabezado del diseñador de actividades de **ClearCollection \<T >** o en el cuadro **displayName** de la cuadrícula de propiedades. Es preciso editar las otras propiedades en la cuadrícula de propiedades.
+
+### <a name="the-clearcollectiont-properties"></a>Propiedades de > del \<T ClearCollection
+ En la tabla siguiente se muestran las propiedades <xref:System.Activities.Statements.ClearCollection%601> y se describe cómo se utilizan en el diseñador.
+
+|Nombre de la propiedad|Requerido|Uso|
+|-------------------|--------------|-----------|
+|<xref:System.Activities.Activity.DisplayName%2A>|False|Especifica el nombre opcional descriptivo de la actividad <xref:System.Activities.Statements.ClearCollection%601>. El valor predeterminado es ClearCollection \<Int32 >. Pese a que el valor <xref:System.Activities.Activity.DisplayName%2A> no es obligatorio, se recomienda usar uno.|
+|<xref:System.Activities.Statements.ClearCollection%601.Collection%2A>|True|Especifica la recopilación que se va a borrar de los elementos. Esta colección es de tipo **ICollection \<TypeArgument >.** Para especificar la colección, escriba una expresión de Visual Basic en la cuadrícula de propiedades.|
+|*TypeArgument*|True|Especifica el tipo T de los elementos contenidos en <xref:System.Collections.Generic.ICollection%601>. De forma predeterminada, este tipo *TypeArgument* se establece en **Int32**. Para cambiar el tipo, cambie el valor de *TypeArgument* en el cuadro combinado en la cuadrícula de propiedades.|
+
+## <a name="see-also"></a>Vea también
+ [Collection](../workflow-designer/collection-activity-designers.md) [AddToCollection \<T >](../workflow-designer/addtocollection-t-activity-designer.md) [ExistsInCollection \<T >](../workflow-designer/existsincollection-t-activity-designer.md) [RemoveFromCollection \<T >](../workflow-designer/removefromcollection-t-activity-designer.md)

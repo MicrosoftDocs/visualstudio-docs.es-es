@@ -1,5 +1,5 @@
 ---
-title: Agregar controles personalizados a la ventana de orígenes de datos | Documentos de Microsoft
+title: Agregar controles personalizados a la ventana orígenes de datos | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-data-tools
@@ -20,81 +20,81 @@ helpviewer_keywords:
 - Data Sources Window, selecting controls
 ms.assetid: 8c43e7d2-ba94-4d9b-96de-3aa971955afd
 caps.latest.revision: 45
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 28476c454dc78f30e33c0b37e8319bfe5a65df2d
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 402e62602d99492730d3094965e76964cd5f8218
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65699383"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72673092"
 ---
 # <a name="add-custom-controls-to-the-data-sources-window"></a>Agregar controles personalizados a la ventana de orígenes de datos
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Cuando se arrastra un elemento desde el **orígenes de datos** ventana a una superficie de diseño para crear un control enlazado a datos, puede seleccionar el tipo de control que se crea. Cada elemento de la ventana tiene una lista desplegable que muestra los controles que puede elegir. El conjunto de controles asociados con cada elemento viene determinada por el tipo de datos del elemento. Si el control que desea crear no aparece en la lista, puede seguir las instrucciones de este tema para agregar el control a la lista.  
-  
- Para obtener más información acerca de cómo seleccionar los controles enlazados a datos para crear elementos en el **orígenes de datos** ventana, consulte [establecer el control que se creará al arrastrar desde la ventana Orígenes de datos](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md).  
-  
+Al arrastrar un elemento desde la ventana **orígenes de datos** a una superficie de diseño para crear un control enlazado a datos, puede seleccionar el tipo de control que cree. Cada elemento de la ventana tiene una lista desplegable que muestra los controles que puede elegir. El tipo de datos del elemento determina el conjunto de controles asociados a cada elemento. Si el control que desea crear no aparece en la lista, puede seguir las instrucciones de este tema para agregar el control a la lista.
+
+ Para obtener más información sobre cómo seleccionar los controles enlazados a datos que se van a crear para los elementos en la ventana **orígenes de datos** , vea [establecer el control que se creará al arrastrar desde la ventana orígenes de datos](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md).
+
 > [!NOTE]
-> Los cuadros de diálogo y los comandos de menú que se ven pueden diferir de los descritos en la Ayuda, dependiendo de los valores de configuración o de edición activos. Para cambiar la configuración, en el **herramientas** menú, seleccione **importar y exportar configuraciones**. Para obtener más información, consulte [Personalizar la configuración de desarrollo en Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
-  
-## <a name="customizinglist"></a> Personalizar la lista de controles enlazables para un tipo de datos  
- Para agregar o quitar controles de la lista de controles disponibles para los elementos de la **orígenes de datos** ventana que tiene un tipo de datos específico, realice los pasos siguientes.  
-  
-#### <a name="to-select-the-controls-to-be-listed-for-a-data-type"></a>Para seleccionar los controles que se va a aparecer en un tipo de datos  
-  
-1. Asegúrese de que el Diseñador de Windows Forms o de WPF está abierto.  
-  
-2. En el **orígenes de datos** , haga clic en un elemento que forma parte de un origen de datos agrega a la ventana y, a continuación, haga clic en el menú desplegable para el elemento.  
-  
-3. En el menú desplegable, haga clic en **personalizar**. Uno de los siguientes cuadros de diálogo se abre:  
-  
-    - Si el Diseñador de Windows Forms está abierto, el **personalización de la interfaz de usuario de datos** página de la **opciones** abre el cuadro de diálogo.  
-  
-    - Si el diseñador WPF está abierto, el **Personalizar enlace de Control** abre el cuadro de diálogo.  
-  
-4. En el cuadro de diálogo, seleccione un tipo de datos en el **tipo de datos** lista desplegable.  
-  
-    - Para personalizar la lista de controles para una tabla u objeto, seleccione **[lista]**.  
-  
-    - Para personalizar la lista de controles de una columna de una tabla o una propiedad de un objeto, seleccione el tipo de datos de la columna o propiedad en el almacén de datos subyacente.  
-  
-    - Para personalizar la lista de controles para mostrar los objetos de datos que tienen formas definidas por el usuario, seleccione **[otros]**. Por ejemplo, seleccione **[otros]** si la aplicación tiene un control personalizado que muestra los datos de más de una propiedad de un objeto determinado.  
-  
-5. En el **asociados controles** cuadro, seleccione cada control que desea que estén disponibles para el tipo de datos seleccionado o anule la selección de todos los controles que desee quitar de la lista.  
-  
+> Los cuadros de diálogo y los comandos de menú que se ven pueden diferir de los descritos en la Ayuda, dependiendo de los valores de configuración o de edición activos. Para cambiar la configuración, en el menú **herramientas** , seleccione **importar y exportar configuraciones**. Para obtener más información, vea [Personalizar la configuración de desarrollo en Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).
+
+## <a name="customizinglist"></a>Personalizar la lista de controles enlazables para un tipo de datos
+ Para agregar o quitar controles de la lista de controles disponibles para los elementos de la ventana **orígenes de datos** que tienen un tipo de datos específico, realice los pasos siguientes.
+
+#### <a name="to-select-the-controls-to-be-listed-for-a-data-type"></a>Para seleccionar los controles que se van a mostrar para un tipo de datos
+
+1. Asegúrese de que el Diseñador de Windows Forms o de WPF está abierto.
+
+2. En la ventana **orígenes de datos** , haga clic en un elemento que forme parte de un origen de datos que haya agregado a la ventana y, a continuación, haga clic en el menú desplegable del elemento.
+
+3. En el menú desplegable, haga clic en **personalizar**. Se abre uno de los cuadros de diálogo siguientes:
+
+    - Si el Diseñador de Windows Forms está abierto, se abre la página **Personalización** de la interfaz de usuario de datos del cuadro de diálogo **Opciones** .
+
+    - Si el diseñador WPF está abierto, se abre el cuadro de diálogo **personalizar enlace de control** .
+
+4. En el cuadro de diálogo, seleccione un tipo de datos en la lista desplegable **tipo de datos** .
+
+    - Para personalizar la lista de controles de una tabla o un objeto, seleccione **[lista]** .
+
+    - Para personalizar la lista de controles de una columna de una tabla o de una propiedad de un objeto, seleccione el tipo de datos de la columna o propiedad en el almacén de datos subyacente.
+
+    - Para personalizar la lista de controles para mostrar los objetos de datos que tienen formas definidas por el usuario, seleccione **[otros]** . Por ejemplo, seleccione **[Other]** si la aplicación tiene un control personalizado que muestra los datos de más de una propiedad de un objeto determinado.
+
+5. En el cuadro **controles asociados** , seleccione cada control que desee que esté disponible para el tipo de datos seleccionado o desactive la selección de los controles que desea quitar de la lista.
+
     > [!NOTE]
-    > Si el control que desea seleccionar no aparece en el **asociados controles** cuadro, debe agregar el control a la lista. Para obtener más información, consulte [agregar controles a la lista de controles asociados para un tipo de datos](#addingcontrols).  
-  
-6. Haga clic en **Aceptar**.  
-  
-7. En el **orígenes de datos** ventana, haga clic en un elemento de los datos que asoció uno o más controles de tipo y, a continuación, haga clic en el menú desplegable para el elemento.  
-  
-     Los controles que seleccionó en el **asociados controles** cuadro aparecen ahora en el menú desplegable para el elemento.  
-  
-## <a name="addingcontrols"></a> Addcontrols a la lista de controles asociados para un tipo de datos  
- Si desea asociar un control con un tipo de datos, pero el control no aparece en el **asociados controles** cuadro, debe agregar el control a la lista. El control debe encontrarse en la solución actual o en un ensamblado de referencia. También debe estar disponible en el **cuadro de herramientas**, y tener un atributo que especifica el comportamiento de enlace de datos del control.  
-  
-#### <a name="to-add-controls-to-the-list-of-associated-controls"></a>Para agregar controles a la lista de controles asociados  
-  
-1. Agregar el control deseado para el **cuadro de herramientas** haciendo clic con el **cuadro de herramientas** y seleccionando **elegir elementos**.  
-  
-     El control debe tener uno de los siguientes atributos.  
-  
-    |Atributo|Descripción|  
-    |---------------|-----------------|  
-    |<xref:System.ComponentModel.DefaultBindingPropertyAttribute>|Implemente este atributo en controles simples que muestran una sola columna (o propiedad) de datos, como un <xref:System.Windows.Forms.TextBox>.|  
-    |<xref:System.ComponentModel.ComplexBindingPropertiesAttribute>|Implemente este atributo en controles que muestren listas (o tablas) de datos, como un <xref:System.Windows.Forms.DataGridView>.|  
-    |<xref:System.ComponentModel.LookupBindingPropertiesAttribute>|Implemente este atributo en controles que muestren listas (o tablas) de datos, sino también la necesidad de presentar una única columna o propiedad, como un <xref:System.Windows.Forms.ComboBox>.|  
-  
-2. Para los formularios de Windows, en el **opciones** cuadro de diálogo, abra el **personalización de la interfaz de usuario de datos** página. O bien, para WPF, abra el **Personalizar enlace de Control** cuadro de diálogo. Para obtener más información, consulte [personalización de la lista de controles enlazables para un tipo de datos](#customizinglist).  
-  
-3. En el **asociados controles** cuadro, el control que acaba de agregar a la **cuadro de herramientas** debería aparecer ahora.  
-  
+    > Si el control que desea seleccionar no aparece en el cuadro **controles asociados** , debe agregar el control a la lista. Para obtener más información, vea [Agregar controles a la lista de controles asociados para un tipo de datos](#addingcontrols).
+
+6. Haga clic en **Aceptar**.
+
+7. En la ventana **orígenes de datos** , haga clic en un elemento del tipo de datos al que acaba de asociar uno o varios controles y, a continuación, haga clic en el menú desplegable del elemento.
+
+     Los controles seleccionados en el cuadro **controles asociados** aparecen ahora en el menú desplegable del elemento.
+
+## <a name="addingcontrols"></a>Addcontrols a la lista de controles asociados para un tipo de datos
+ Si desea asociar un control a un tipo de datos, pero el control no aparece en el cuadro **controles asociados** , debe agregar el control a la lista. El control debe estar ubicado en la solución actual o en un ensamblado al que se hace referencia. También debe estar disponible en el **cuadro de herramientas**y tener un atributo que especifique el comportamiento del enlace de datos del control.
+
+#### <a name="to-add-controls-to-the-list-of-associated-controls"></a>Para agregar controles a la lista de controles asociados
+
+1. Agregue el control deseado al **cuadro de herramientas** ; para ello, haga clic con el botón secundario en el **cuadro de herramientas** y seleccione **elegir elementos**.
+
+     El control debe tener uno de los siguientes atributos.
+
+    |Atributo|Descripción|
+    |---------------|-----------------|
+    |<xref:System.ComponentModel.DefaultBindingPropertyAttribute>|Implemente este atributo en controles simples que muestren una única columna (o propiedad) de datos, como un <xref:System.Windows.Forms.TextBox>.|
+    |<xref:System.ComponentModel.ComplexBindingPropertiesAttribute>|Implemente este atributo en los controles que muestran listas (o tablas) de datos, como un <xref:System.Windows.Forms.DataGridView>.|
+    |<xref:System.ComponentModel.LookupBindingPropertiesAttribute>|Implemente este atributo en controles que muestren listas (o tablas) de datos, pero que también necesiten presentar una única columna o propiedad, como un <xref:System.Windows.Forms.ComboBox>.|
+
+2. Por Windows Forms, en el cuadro de diálogo **Opciones** , abra la página de **Personalización** de la interfaz de usuario de datos. O bien, para WPF, abra el cuadro de diálogo **personalizar enlace de control** . Para obtener más información, vea [personalizar la lista de controles enlazables para un tipo de datos](#customizinglist).
+
+3. En el cuadro **controles asociados** , ahora debe aparecer el control que acaba de agregar al cuadro de **herramientas** .
+
     > [!NOTE]
-    > Solo los controles que se encuentran dentro de la solución actual o en un ensamblado que se hace referencia se pueden agregar a la lista de controles asociados. (Los controles también deben implementar uno de los atributos de enlace de datos en la tabla anterior.) Para enlazar datos a un control personalizado que no está disponible en el **orígenes de datos** ventana, arrastre el control desde el **cuadro de herramientas** hasta la superficie de diseño y, a continuación, arrastre el elemento que se enlazará desde el **datos Orígenes** ventana al control.  
-  
-## <a name="see-also"></a>Vea también  
+    > Solo los controles que se encuentran dentro de la solución actual o en un ensamblado al que se hace referencia se pueden agregar a la lista de controles asociados. (Los controles también deben implementar uno de los atributos de enlace de datos de la tabla anterior). Para enlazar datos a un control personalizado que no está disponible en la ventana **orígenes de datos** , arrastre el control desde el **cuadro de herramientas** hasta la superficie de diseño y, a continuación, arrastre el elemento al que se va a enlazar desde la ventana orígenes de **datos** hasta el control.
+
+## <a name="see-also"></a>Vea también
  [Enlazar controles a los datos en Visual Studio](../data-tools/bind-controls-to-data-in-visual-studio.md)

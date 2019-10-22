@@ -1,35 +1,35 @@
 ---
-title: Examinar nodos mediante la vista modelo de contenido en el Diseñador de esquemas XML
+title: Examinar nodos mediante la vista modelo de contenido en el diseñador de esquemas XML
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: c42ddac8-b0e3-48d6-9832-112a19d6c104
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 63e337162dc8499bf9ac2acb5606fbf75292574f
-ms.sourcegitcommit: 51dad3e11d7580567673e0d426ab3b0a17584319
+ms.openlocfilehash: c109d167534dc969ae34c55d16f2ee55e34fe3aa
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/10/2019
-ms.locfileid: "66820454"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72645897"
 ---
-# <a name="how-to-examine-the-content-model-of-nodes-using-the-content-model-view"></a>Procedimiento Examinar el modelo de contenido de los nodos mediante la vista de modelo de contenido
+# <a name="how-to-examine-the-content-model-of-nodes-using-the-content-model-view"></a>Cómo: examinar el modelo de contenido de los nodos mediante la vista modelo de contenido
 
-En este tema se describe cómo explorar los nodos mediante el [vista modelo de contenido](../xml-tools/content-model-view.md).
+En este tema se describe cómo explorar los nodos mediante la [vista modelo de contenido](../xml-tools/content-model-view.md).
 
 ## <a name="to-create-a-new-xsd-file-and-display-the-root-element-in-the-content-model-view"></a>Para crear un nuevo archivo XSD y mostrar el elemento raíz en el vista Modelo de contenido
 
 1. Cree un nuevo archivo de esquema XML.
 
-2. Haga clic en **editor XML de uso para ver y editar el archivo de esquema XML subyacente** en la vista inicio.
+2. Haga clic en **usar el editor XML para ver y editar el archivo de esquema XML subyacente** en la vista Inicio.
 
-3. Copie el código de ejemplo de esquema XML de [esquema XML de ejemplo: esquema de pedido de compra](../xml-tools/sample-xsd-file-purchase-order-schema.md) y péguelo para reemplazar el código que se ha agregado el nuevo archivo XSD de forma predeterminada.
+3. Copie el código de ejemplo del esquema XML del [esquema XML de ejemplo: esquema de pedido de compra](../xml-tools/sample-xsd-file-purchase-order-schema.md) y péguelo para reemplazar el código que se agregó al nuevo archivo XSD de forma predeterminada.
 
-4. Seleccione el `purchaseOrder` elemento en el Explorador de esquema haciendo clic con el `purchaseOrder` elemento XML de editor y seleccionando **mostrar en explorador XML**.
+4. Seleccione el elemento `purchaseOrder` en el explorador de esquemas haciendo clic con el botón secundario en el elemento `purchaseOrder` en el editor XML y seleccionando **Mostrar en el explorador XML**.
 
-5. Haga clic en el `purchaseOrder` en el Explorador de XML y seleccione **mostrar en vista de modelo de contenido**.
+5. Haga clic con el botón secundario en el `purchaseOrder` en el explorador XML y seleccione **Mostrar en la vista modelo de contenido**.
 
      La vista Modelo de contenido muestra el elemento `purchaseOrder` en la superficie de diseño.
 
@@ -39,6 +39,6 @@ En este tema se describe cómo explorar los nodos mediante el [vista modelo de c
 
 7. Haga clic en cualquier nodo situado debajo del elemento `purchaseOrder` y busque en la barra de ruta de navegación dónde se encuentra el nodo seleccionado dentro del conjunto de esquemas.
 
-8. Haga clic en el **Mostrar documentación** botón en la barra de herramientas de XSD para alternar la documentación. También puede hacer clic con el botón secundario en la superficie de diseño para ver la documentación.
+8. Haga clic en el botón **Mostrar documentación** de la barra de herramientas XSD para alternar la documentación. También puede hacer clic con el botón secundario en la superficie de diseño para ver la documentación.
 
-9. Haga clic en el `purchaseOrder` nodo y seleccione **generar XML de ejemplo** para ver el documento de instancia XML.
+9. Haga clic con el botón secundario en el nodo `purchaseOrder` y seleccione **generar XML de ejemplo** para ver el documento de instancia XML.

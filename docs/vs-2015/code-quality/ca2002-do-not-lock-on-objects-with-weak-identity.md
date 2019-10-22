@@ -1,5 +1,5 @@
 ---
-title: 'CA2002: No bloquear objetos con identidad débil | Documentos de Microsoft'
+title: 'CA2002: no bloquear objetos con identidad débil | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -12,15 +12,15 @@ helpviewer_keywords:
 - DoNotLockOnObjectsWithWeakIdentity
 ms.assetid: 16100b39-c6fc-452b-8fca-8b459a26c286
 caps.latest.revision: 18
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 39d233c126d35f303a30a955310859dd9a678c56
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 557f91d8b00274642accbbfc05b4a60789615bfc
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65681376"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72667749"
 ---
 # <a name="ca2002-do-not-lock-on-objects-with-weak-identity"></a>CA2002: No bloquear objetos con identidad débil
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,10 +33,10 @@ ms.locfileid: "65681376"
 |Cambio problemático|Poco problemático|
 
 ## <a name="cause"></a>Motivo
- Un subproceso intenta adquirir un bloqueo en un objeto que tiene identidad débil.
+ Un subproceso intenta adquirir un bloqueo en un objeto que tiene una identidad débil.
 
 ## <a name="rule-description"></a>Descripción de la regla
- Se dice que un objeto tiene una identidad débil cuando se puede tener acceso directamente a través de los límites del dominio de aplicación. Un subproceso que intenta obtener un bloqueo en un objeto que tiene identidad débil se puede bloquear con un segundo subproceso en un dominio de aplicación diferente que tenga bloqueado el mismo objeto. Los siguientes tipos tienen una identidad débil y se marcan mediante la regla:
+ Se dice que un objeto tiene una identidad débil cuando se puede tener acceso directamente a través de los límites del dominio de aplicación. Un subproceso que intenta obtener un bloqueo en un objeto que tiene identidad débil se puede bloquear con un segundo subproceso en un dominio de aplicación diferente que tenga bloqueado el mismo objeto. Los tipos siguientes tienen una identidad débil y están marcados por la regla:
 
 - <xref:System.MarshalByRefObject>
 
@@ -55,20 +55,20 @@ ms.locfileid: "65681376"
 - <xref:System.Threading.Thread>
 
 ## <a name="how-to-fix-violations"></a>Cómo corregir infracciones
- Para corregir una infracción de esta regla, utilice un objeto de un tipo que no está en la lista en la sección de descripción.
+ Para corregir una infracción de esta regla, use un objeto de un tipo que no esté en la lista de la sección Descripción.
 
 ## <a name="when-to-suppress-warnings"></a>Cuándo suprimir advertencias
  No suprima las advertencias de esta regla.
 
 ## <a name="related-rules"></a>Reglas relacionadas
- [CA2213: los campos descartables deben ser descartables](../code-quality/ca2213-disposable-fields-should-be-disposed.md)
+ [CA2213: Aplique Dispose a los campos a los que se pueda](../code-quality/ca2213-disposable-fields-should-be-disposed.md)
 
 ## <a name="example"></a>Ejemplo
- El ejemplo siguiente muestra algunos bloqueos de objeto que infringen la regla.
+ En el ejemplo siguiente se muestran algunos bloqueos de objetos que infringen la regla.
 
  [!code-csharp[FxCop.Reliability.LockWeakObjects#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Reliability.LockWeakObjects/cs/FxCop.Reliability.LockWeakObjects.cs#1)]
  [!code-vb[FxCop.Reliability.LockWeakObjects#1](../snippets/visualbasic/VS_Snippets_CodeAnalysis/FxCop.Reliability.LockWeakObjects/vb/FxCop.Reliability.LockWeakObjects.vb#1)]
 
 ## <a name="see-also"></a>Vea también
  <xref:System.Threading.Monitor> <xref:System.AppDomain>
- [lock (instrucción)](https://msdn.microsoft.com/library/656da1a4-707e-4ef6-9c6e-6d13b646af42) [SyncLock (instrucción)](https://msdn.microsoft.com/library/14501703-298f-4d43-b139-c4b6366af176)
+ instrucción [Lock instrucción](https://msdn.microsoft.com/library/656da1a4-707e-4ef6-9c6e-6d13b646af42) [SyncLock](https://msdn.microsoft.com/library/14501703-298f-4d43-b139-c4b6366af176)

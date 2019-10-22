@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - analyzer packages, rule sets
 - rule sets for analyzers
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c8602483554ebd311ab6eebb13ff8d2de00d7e09
-ms.sourcegitcommit: b23d73c86ec7720c4cd9a58050860bc559623a3d
+ms.openlocfilehash: d40e88f123f397cfc77fe44757c2f72305390302
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/09/2019
-ms.locfileid: "72172779"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72606543"
 ---
 # <a name="enable-a-category-of-rules"></a>Habilitar una categoría de reglas
 
@@ -28,7 +28,7 @@ El paquete de NuGet del analizador de FxCop incluye conjuntos de reglas predefin
 
 - Todas las reglas
 - Flujo de datos
-- Diseño
+- Diseñar
 - Documentación
 - Globalización
 - Interoperabilidad
@@ -53,13 +53,13 @@ Cada una de esas categorías de reglas tiene un EditorConfig o un archivo de con
 
 ## <a name="predefined-editorconfig-files"></a>Archivos EditorConfig predefinidos
 
-Los archivos EditorConfig predefinidos para el paquete Microsoft. CodeAnalysis. FxCopAnalyzers Analyzer se encuentran en *% userprofile% \\. nuget\packages\microsoft.CodeAnalysis.fxcopanalyzers @ no__t-2 @ no__t-3version @ no__t-4\editorconfig* directorio. Por ejemplo, el archivo EditorConfig para habilitar todas las reglas de seguridad se encuentra en *% userprofile% \\. nuget\packages\microsoft.CodeAnalysis.fxcopanalyzers @ no__t-2 @ no__t-3version @ no__t-4\editorconfig\SecurityRulesEnabled @ No__ t-5. editorconfig*.
+Los archivos EditorConfig predefinidos para el paquete del Analizador Microsoft. CodeAnalysis. FxCopAnalyzers se encuentran en *% userprofile% \\. nuget\packages\microsoft.codeanalysis.fxcopanalyzers \\ \<version \> \editorconfig* directorio. Por ejemplo, el archivo EditorConfig para habilitar todas las reglas de seguridad se encuentra en *% userprofile% \\. nuget\packages\microsoft.codeanalysis.fxcopanalyzers \\ \<version \> \editorconfig\securityrulesenabled \\. editorconfig*.
 
 Copie el archivo. editorconfig elegido en el directorio raíz del proyecto.
 
 ## <a name="predefined-rule-sets"></a>Conjunto de reglas predefinidas
 
-Los archivos de conjunto de reglas predefinidos para el paquete Microsoft. CodeAnalysis. FxCopAnalyzers Analyzer se encuentran en *% userprofile% \\. nuget\packages\microsoft.CodeAnalysis.fxcopanalyzers @ no__t-2 @ no__t-3version @ no__t-4\rulesets* Active. Por ejemplo, el archivo de conjunto de reglas para habilitar todas las reglas de seguridad se encuentra en *% userprofile% \\. nuget\packages\microsoft.CodeAnalysis.fxcopanalyzers @ no__t-2 @ no__t-3version @ no__t-4\rulesets\SecurityRulesEnabled.ruleset*.
+Los archivos de conjunto de reglas predefinidos para el paquete Microsoft. CodeAnalysis. FxCopAnalyzers Analyzer se encuentran en *% userprofile% \\. nuget\packages\microsoft.codeanalysis.fxcopanalyzers \\ \<version \> \rulesets* Active. Por ejemplo, el archivo de conjunto de reglas para habilitar todas las reglas de seguridad se encuentra en *% userprofile% \\. nuget\packages\microsoft.codeanalysis.fxcopanalyzers \\ \<version \> \rulesets\securityrulesenabled.ruleset*.
 
 Copie uno o más conjuntos de reglas y péguelos en el directorio que contiene el proyecto de Visual Studio o directamente en **Explorador de soluciones**.
 

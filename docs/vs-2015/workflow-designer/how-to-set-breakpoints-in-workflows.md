@@ -1,44 +1,42 @@
 ---
-title: Procedimiento Establecer puntos de interrupción en flujos de trabajo | Documentos de Microsoft
+title: 'Cómo: establecer puntos de interrupción en los flujos de trabajo | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-workflow-designer
 ms.topic: reference
 ms.assetid: e41b21c9-c061-4358-8e2f-eb5e412864a8
 caps.latest.revision: 10
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 47d53ad2579ce24f6d5fde2503a0acc98b4f7f5c
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 2d1bbb18a9015b52b3d65cb8f8fd02674693abc0
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63444135"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72659137"
 ---
-# <a name="how-to-set-breakpoints-in-workflows"></a>Procedimiento Establecer puntos de interrupción en los flujos de trabajo
-Al utilizar [!INCLUDE[wfd1](../includes/wfd1-md.md)], puede establecer puntos de interrupción en sus flujos de trabajo gráficos del mismo modo que haría en Visual Basic o en código C#. Como es de esperar, la ejecución del flujo de trabajo se detiene en cada punto de interrupción que se establece.  
-  
- Un punto de interrupción tiene tres estados: *Pendiente*, *enlazados*, y *Error*. Cuando se establece un punto de interrupción, está En espera y se representa mediante un icono rojo. Cuando el tiempo de ejecución haya cargado el tipo de flujo de trabajo, pasa a Enlazado. Si se especifica un formato incorrecto para el punto de interrupción, como con un nombre de actividad que no es válido, aparece una ventana de error. El punto de interrupción, de todas formas, se agrega a la ventana de punto de interrupción, pero se marca con una "x" pequeña.  
-  
+# <a name="how-to-set-breakpoints-in-workflows"></a>Cómo establecer puntos de interrupción en los flujos de trabajo
+Al utilizar [!INCLUDE[wfd1](../includes/wfd1-md.md)], puede establecer puntos de interrupción en sus flujos de trabajo gráficos del mismo modo que haría en Visual Basic o en código C#. Como es de esperar, la ejecución del flujo de trabajo se detiene en cada punto de interrupción que se establece.
+
+ Un punto de interrupción tiene tres Estados: *pendiente*, *enlazado*y *error*. Cuando se establece un punto de interrupción, está En espera y se representa mediante un icono rojo. Cuando el tiempo de ejecución haya cargado el tipo de flujo de trabajo, pasa a Enlazado. Si se especifica un formato incorrecto para el punto de interrupción, como con un nombre de actividad que no es válido, aparece una ventana de error. El punto de interrupción, de todas formas, se agrega a la ventana de punto de interrupción, pero se marca con una "x" pequeña.
+
 > [!NOTE]
-> No se pueden establecer puntos de interrupción en los flujos de trabajo invocados.  
-> 
+> No se pueden establecer puntos de interrupción en los flujos de trabajo invocados.
+>
 > [!WARNING]
-> Asegúrese de seleccionar la opción **habilitar solo mi código (solo administrado)** desde el **herramientas**, **opciones**, **depuración** menú antes de depurar. Si tiene dos secuencias anidadas en otra secuencia y establezca un punto de interrupción en la primera secuencia interna, al presionar **F11** no depurar en la segunda secuencia interna si el <strong>habilitar solo mi código (solo administrado)</strong>no está seleccionada.  
-> 
+> Asegúrese de seleccionar la opción **habilitar solo mi código (solo administrado)** en el menú **herramientas**, **Opciones**, **depuración** antes de depurar. Si tiene dos secuencias anidadas dentro de otra secuencia y establece un punto de interrupción en la primera secuencia interna, al presionar **F11** no se depurará en la segunda secuencia interna si la opción <strong>Habilitar solo mi código (solo administrado)</strong>no está seleccionada.
+>
 > [!WARNING]
-> Los puntos de interrupción de un flujo de trabajo no se alcanzarán si la ruta de acceso completa a la propiedad de archivo XAML no es exacta. La ruta de acceso completa al archivo XAML no es exacta después de mover el proyecto o la solución a otra carpeta o a otro equipo. Presione CTRL+S para guardar y actualizar la ruta de acceso completa.  
-  
-### <a name="to-set-a-breakpoint-on-an-activity-in-the-design-view"></a>Para establecer un punto de interrupción en una actividad en la vista Diseño  
-  
-1. Seleccione la actividad donde desee que se interrumpa el depurador.  
-  
-2. En el **depurar** menú, seleccione **Alternar puntos de interrupción**. Aparecerá un icono rojo en el borde izquierdo superior de la actividad.  
-  
-     Como alternativa, también puede presionar el método abreviado **F9** clave después de que puede seleccionar la actividad, o bien haga clic en la actividad y seleccione **punto de interrupción** , a continuación, **Insertar punto de interrupción**en el menú contextual.  
-  
-## <a name="see-also"></a>Vea también  
- [Cómo: Invocar al depurador de flujo de trabajo](../workflow-designer/how-to-invoke-the-workflow-debugger.md)   
- [Depurar flujos de trabajo con el Diseñador de flujo de trabajo](../workflow-designer/debugging-workflows-with-the-workflow-designer.md)   
- [Cómo: Depurar XAML con el Diseñador de flujo de trabajo](../workflow-designer/how-to-debug-xaml-with-the-workflow-designer.md)
+> Los puntos de interrupción de un flujo de trabajo no se alcanzarán si la ruta de acceso completa a la propiedad de archivo XAML no es exacta. La ruta de acceso completa al archivo XAML no es exacta después de mover el proyecto o la solución a otra carpeta o a otro equipo. Presione CTRL+S para guardar y actualizar la ruta de acceso completa.
+
+### <a name="to-set-a-breakpoint-on-an-activity-in-the-design-view"></a>Para establecer un punto de interrupción en una actividad en la vista Diseño
+
+1. Seleccione la actividad donde desee que se interrumpa el depurador.
+
+2. En el menú **depurar** , seleccione **alternar punto de interrupción**. Aparecerá un icono rojo en el borde izquierdo superior de la actividad.
+
+     Como alternativa, también puede presionar la tecla de método abreviado **F9** después de seleccionar la actividad o puede hacer clic con el botón secundario en la actividad y seleccionar **punto de interrupción** y, a continuación, **Insertar punto de interrupción** en el menú contextual.
+
+## <a name="see-also"></a>Vea también
+ [Cómo: invocar los flujos de trabajo de depuración del depurador de flujos de trabajo](../workflow-designer/how-to-invoke-the-workflow-debugger.md) [con la diseñador de flujo de trabajo](../workflow-designer/debugging-workflows-with-the-workflow-designer.md) [Cómo: depurar XAML con el diseñador de flujo de trabajo](../workflow-designer/how-to-debug-xaml-with-the-workflow-designer.md)

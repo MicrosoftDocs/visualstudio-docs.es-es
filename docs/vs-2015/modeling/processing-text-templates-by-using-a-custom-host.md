@@ -9,15 +9,15 @@ helpviewer_keywords:
 - text templates, custom directive hosts
 ms.assetid: affa3296-854d-47d6-9685-285f6d9ba5dc
 caps.latest.revision: 35
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 1c8f306315ad236843b6fcd5551d9aed13c26a92
-ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
+ms.openlocfilehash: 71f18fbbf9f2d5c587c2cd0961c6625467f4f298
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68871793"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72652452"
 ---
 # <a name="processing-text-templates-by-using-a-custom-host"></a>Procesar las plantillas de texto mediante un host personalizado
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -46,14 +46,14 @@ string output = engine.ProcessTemplate(templateString, host);
 
  La aplicación debe encontrar y proporcionar la plantilla y debe trabajar con el resultado.
 
- En el `host` parámetro, debe proporcionar una clase que implemente [ITextTemplatingEngineHost](/previous-versions/visualstudio/visual-studio-2012/bb126505(v=vs.110)). El motor lo vuelve a llamar.
+ En el parámetro `host`, debe proporcionar una clase que implemente [ITextTemplatingEngineHost](/previous-versions/visualstudio/visual-studio-2012/bb126505(v=vs.110)). El motor lo vuelve a llamar.
 
  El host debe poder registrar errores, resolver referencias a archivos de ensamblado e inclusión, proporciona un dominio de aplicación en el que se pueda ejecutar la plantilla, y llamar el procesador adecuado para cada directiva.
 
- <xref:Microsoft.VisualStudio.TextTemplating.Engine?displayProperty=fullName>se define en **Microsoft. VisualStudio. TextTemplating.\* 0. dll**y [ITextTemplatingEngineHost](/previous-versions/visualstudio/visual-studio-2012/bb126505(v=vs.110)) se definen en **Microsoft. VisualStudio. TextTemplating. interfaces.\*. 0. dll**.
+ <xref:Microsoft.VisualStudio.TextTemplating.Engine?displayProperty=fullName> se define en **Microsoft. VisualStudio. TextTemplating. \*,0. dll**y [ITextTemplatingEngineHost](/previous-versions/visualstudio/visual-studio-2012/bb126505(v=vs.110)) se define en **Microsoft. VisualStudio. TextTemplating. interfaces. \*.0. dll**.
 
 ## <a name="in-this-section"></a>En esta sección
- [Tutorial: Al crear un host](../modeling/walkthrough-creating-a-custom-text-template-host.md) de plantilla de texto personalizado se muestra cómo crear un host de plantilla de texto personalizado que hace que la funcionalidad de la plantilla de texto esté disponible fuera [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]de.
+ [Tutorial: crear un host de plantilla de texto personalizado](../modeling/walkthrough-creating-a-custom-text-template-host.md) Muestra cómo crear un host de plantilla de texto personalizado que hace que la funcionalidad de la plantilla de texto esté disponible fuera de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].
 
 ## <a name="reference"></a>Referencia
  [ITextTemplatingEngineHost](/previous-versions/visualstudio/visual-studio-2012/bb126505(v=vs.110))

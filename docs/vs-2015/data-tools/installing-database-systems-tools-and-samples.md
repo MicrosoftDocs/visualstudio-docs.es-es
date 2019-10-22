@@ -14,44 +14,44 @@ helpviewer_keywords:
 - databases, samples
 ms.assetid: 821de34b-eaa9-40af-b9aa-b8305de16899
 caps.latest.revision: 31
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 63d9dd0844cb3e7422f8d78a0ee2e3cb4e0b1fab
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 6f260af17a2fab142c5f5fa58e4ed267dc469d9f
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68196060"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72651505"
 ---
 # <a name="installing-database-systems-tools-and-samples"></a>Instalación de sistemas de base de datos, herramientas y ejemplos
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Visual Studio no incluye los sistemas de bases de datos distintos a los que se usa internamente. Para desarrollar una aplicación conectada a datos en Visual Studio, normalmente se instala el sistema de base de datos en el equipo de desarrollo local y, a continuación, implementar la aplicación y la base de datos en un entorno de producción cuando estén listas. Para que el sistema de base de datos sean accesibles desde aplicaciones .NET y a ser visibles en las ventanas de herramientas de datos de Visual Studio, debe tener un proveedor de datos ADO.NET. Un proveedor debe admitir específicamente Entity Framework si va a usar Entity data Model en la aplicación. NET.     Muchos proveedores se ofrecen a través del Administrador de paquetes de NuGet o a través de la Galería de Visual Studio.  
-  
- Para el desarrollo de SQL, asegúrese de que tiene SQL Server Data Tools instalado en Visual Studio. Haga clic en el **vista** menú. Si no ve el Explorador de objetos de SQL Server, vaya al Panel de Control y cambie a Visual Studio. En el instalador, seleccione **Microsoft SQL Server Data Tools**.  
-  
- Si usa las API de almacenamiento de Azure, instale los emuladores de almacenamiento de Azure en el equipo local durante el desarrollo con el fin de evitar cargos hasta que esté listo para implementarse en producción. Para obtener más información, consulte [usar el emulador de almacenamiento de Azure para desarrollo y pruebas](https://azure.microsoft.com/documentation/articles/storage-use-emulator/).  
-  
- En la lista siguiente incluye algunos de los sistemas de base de datos más populares que se pueden usar en proyectos de Visual Studio. La lista no es exhaustiva. Para obtener una lista de proveedores de terceros que ofrecen los proveedores de datos ADO.NET que permiten la integración profunda con herramientas de Visual Studio, consulte [proveedores de datos de ADO.NET](https://msdn.microsoft.com/library/dd363565.aspx).  
-  
-### <a name="microsoft-sql-server"></a>Microsoft SQL Server  
- SQL Server es la base de datos de estrella de Microsoft que ofrece. SQL Server 2016 ofrece un rendimiento, seguridad avanzada y enriquecida e integrada de informes y análisis. Se distribuye en varias ediciones que están diseñadas para usos diferentes: de análisis empresarial altamente escalable y de alto rendimiento, para usar en un único equipo. SQL Server Express es una edición completa de SQL Server que se adapta para redistribución y de inserción.  LocalDB es una edición simplificada de SQL Server Express que no requiere configuración y se ejecuta en proceso de la aplicación. Puede descargar uno o ambos productos de [la página de descarga de SQL Server Express](https://www.microsoft.com/sql-server/sql-server-editions-express). Muchos de los ejemplos SQL en esta sección usan SQL Server LocalDB. SQL Server Management Studio (SSMS) es una aplicación de administración de base de datos independiente que tiene más funcionalidad que lo que se proporciona en el Explorador de objetos de servidor de SQL de Visual Studio. Puede obtener SSMS desde el vínculo anterior.  
-  
-### <a name="oracle"></a>Oracle  
- Puede descargar una edición de pagada o gratuita de la base de datos de Oracle desde el [Oracle Technology Network](http://www.oracle.com/technetwork/database/enterprise-edition/downloads/index-092322.html) página. Compatibilidad con el tiempo de diseño de Entity Framework y los TableAdapters, necesitará el [Oracle Developer Tools para Visual Studio](http://www.oracle.com/technetwork/developer-tools/visual-studio/overview/index.html). Otros productos de Oracle oficiales, incluido al cliente Oracle Instant, están disponibles a través del Administrador de paquetes de NuGet.  Puede descargar los esquemas de Oracle de ejemplo siguiendo las instrucciones de la [documentación en línea de Oracle](http://docs.oracle.com/cd/E11882_01/server.112/e10831/toc.htm).  
-  
-### <a name="mysql"></a>MySQL  
- MySQL es un sistema de base de datos de código abierto más populares que se usa ampliamente en las empresas y los sitios Web. Descargas de MySQL, MySQL para Visual Studio y productos relacionados están en [MySQL en Windows](http://www.mysql.com/why-mysql/windows/).  Otros fabricantes ofrecen varias extensiones de Visual Studio y aplicaciones de administración independiente para MySQL. Puede examinar las ofertas en el Administrador de paquetes de NuGet (**herramientas** > **Administrador de paquetes de NuGet** > **administrar paquetes de NuGet para solución**) .  
-  
-### <a name="postgresql"></a>PostgreSQL  
- PostgreSQL es un sistema de base de datos relacional de objetos gratuito, código abierto. Para instalarlo en Windows, puede descargarlo desde el [página de descarga de PostgreSQL](http://www.postgresql.org/download/windows/).  También puede compilar PostgreSQL desde el código fuente.  El sistema de PostgreSQL core incluye una interfaz de lenguaje C. Muchos otros proveedores proporcionan paquetes de NuGet para usar PostgreSQL desde las aplicaciones. NET.  Puede examinar las ofertas en el Administrador de paquetes de NuGet (**herramientas** > **Administrador de paquetes de NuGet** > **administrar paquetes de NuGet para solución**) . Quizás el más popular paquete se proporciona por [npgsql.org](http://www.npgsql.org).  
-  
-### <a name="sqlite"></a>SQLite  
- SQLite es un motor de base de datos SQL incrustado que se ejecuta en el proceso de la aplicación. Puede descargarlo desde el [página de descarga de SQLite](http://www.sqlite.org/download.html). Muchos paquetes de NuGet de terceros para SQLite también están disponibles. Puede examinar las ofertas en el Administrador de paquetes de NuGet (**herramientas** > **Administrador de paquetes de NuGet** > **administrar paquetes de NuGet para solución**) .  
-  
-### <a name="firebird"></a>Firebird  
- Firebird es un sistema de base de datos SQL de código abierto. Puede descargarlo desde el [página de descarga de pájaro de fuego](http://firebirdsql.org/en/downloads/). Un proveedor de datos ADO.NET está disponible a través del Administrador de paquetes de NuGet.  
-  
-## <a name="see-also"></a>Vea también  
+Visual Studio no incluye ningún sistema de bases de datos que no sea el que usa internamente. Para desarrollar una aplicación conectada a datos en Visual Studio, normalmente se instala el sistema de base de datos en el equipo de desarrollo local y, después, se implementa la aplicación y la base de datos en un entorno de producción cuando están listos. Para que el sistema de base de datos sea accesible desde aplicaciones .NET y para que esté visible en las ventanas de Visual Studio Data Tools, debe tener un proveedor de datos ADO.NET. Un proveedor debe admitir específicamente Entity Framework Si tiene previsto utilizar Entity Data models en la aplicación .NET.     Muchos proveedores se ofrecen a través del administrador de paquetes NuGet o a través de la galería de Visual Studio.
+
+ Para el desarrollo de SQL, asegúrese de que ha instalado SQL Server Data Tools en Visual Studio. Haga clic en el menú **Ver** . Si no ve Explorador de objetos de SQL Server, vaya a panel de control y cambie Visual Studio. En el instalador, seleccione **Microsoft SQL Server Data Tools**.
+
+ Si usa Azure Storage API, instale los emuladores de Azure Storage en el equipo local durante el desarrollo con el fin de evitar cargos hasta que esté listo para realizar la implementación en producción. Para obtener más información, vea [usar el emulador de Azure Storage para desarrollo y pruebas](https://azure.microsoft.com/documentation/articles/storage-use-emulator/).
+
+ La lista siguiente incluye algunos de los sistemas de base de datos más populares que se pueden usar en los proyectos de Visual Studio. La lista no es exhaustiva. Para obtener una lista de proveedores de terceros que ofrecen proveedores de datos de ADO.NET que permiten una integración profunda con las herramientas de Visual Studio, consulte [proveedores de datos de ADO.net](https://msdn.microsoft.com/library/dd363565.aspx).
+
+### <a name="microsoft-sql-server"></a>Microsoft SQL Server
+ SQL Server es la oferta de base de datos insignia de Microsoft. SQL Server 2016 ofrece un rendimiento innovador, seguridad avanzada y informes y análisis enriquecidos e integrados. Se distribuye en varias ediciones diseñadas para distintos usos: desde análisis de negocios altamente escalables y de alto rendimiento, para usar en un solo equipo. SQL Server Express es una edición completa de SQL Server diseñada para la redistribución e inserción.  LocalDB es una edición simplificada de SQL Server Express que no requiere ninguna configuración y que se ejecuta en el proceso de la aplicación. Puede descargar uno o ambos productos desde [la página de descarga de SQL Server Express](https://www.microsoft.com/sql-server/sql-server-editions-express). Muchos de los ejemplos de SQL de esta sección usan SQL Server LocalDB. SQL Server Management Studio (SSMS) es una aplicación de administración de bases de datos independiente que tiene más funcionalidad de la que se proporciona en Visual Studio Explorador de objetos de SQL Server. Puede obtener SSMS desde el vínculo anterior.
+
+### <a name="oracle"></a>Oracle
+ Puede descargar una edición de pago o gratuita de la base de datos de Oracle desde la página de la [red de tecnología de Oracle](http://www.oracle.com/technetwork/database/enterprise-edition/downloads/index-092322.html) . En cuanto a la compatibilidad en tiempo de diseño para Entity Framework y TableAdapters, necesitará el [herramientas de desarrollo de Oracle para Visual Studio](http://www.oracle.com/technetwork/developer-tools/visual-studio/overview/index.html). Otros productos oficiales de Oracle, incluido Oracle Instant Client, están disponibles a través del administrador de paquetes NuGet.  Puede descargar los esquemas de ejemplo de Oracle siguiendo las instrucciones de la [documentación en pantalla de Oracle](http://docs.oracle.com/cd/E11882_01/server.112/e10831/toc.htm).
+
+### <a name="mysql"></a>MySQL
+ MySQL es un conocido sistema de base de datos de código abierto que se usa ampliamente en empresas y sitios Web. Las descargas para MySQL, MySQL para Visual Studio y productos relacionados están en [MySQL en Windows](http://www.mysql.com/why-mysql/windows/).  Otros fabricantes ofrecen varias extensiones de Visual Studio y aplicaciones de administración independientes para MySQL. Puede examinar las ofertas en el administrador de paquetes NuGet (**herramientas**  > **Administrador de paquetes Nuget**  > **administrar paquetes Nuget para la solución**).
+
+### <a name="postgresql"></a>PostgreSQL
+ PostgreSQL es un sistema de base de datos relacional de objetos de código abierto y gratuito. Para instalarlo en Windows, puede descargarlo desde la [Página de descarga de PostgreSQL](http://www.postgresql.org/download/windows/).  También puede crear PostgreSQL a partir del código fuente.  El sistema principal de PostgreSQL incluye una interfaz de lenguaje C. Muchos terceros proporcionan paquetes NuGet para usar PostgreSQL desde aplicaciones .NET.  Puede examinar las ofertas en el administrador de paquetes NuGet (**herramientas**  > **Administrador de paquetes Nuget**  > **administrar paquetes Nuget para la solución**). Quizás el paquete más popular lo proporciona [npgsql.org](http://www.npgsql.org).
+
+### <a name="sqlite"></a>SQLite
+ SQLite es un motor de base de datos de SQL incrustado que se ejecuta en el propio proceso de la aplicación. Puede descargarlo desde la [Página de descarga de SQLite](http://www.sqlite.org/download.html). También están disponibles muchos paquetes NuGet de terceros para SQLite. Puede examinar las ofertas en el administrador de paquetes NuGet (**herramientas**  > **Administrador de paquetes Nuget**  > **administrar paquetes Nuget para la solución**).
+
+### <a name="firebird"></a>Firebird
+ Firebird es un sistema de base de datos SQL de código abierto. Puede descargarlo desde la [Página de descarga de Firebird](http://firebirdsql.org/en/downloads/). Un proveedor de datos ADO.NET está disponible a través del administrador de paquetes NuGet.
+
+## <a name="see-also"></a>Vea también
  [Cómo determinar la versión y la edición de SQL Server y sus componentes](http://support.microsoft.com/kb/321185)

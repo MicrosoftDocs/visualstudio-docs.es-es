@@ -1,5 +1,5 @@
 ---
-title: Ejecutar pruebas unitarias para aplicaciones de Store
+title: Ejecutar pruebas unitarias para aplicaciones de la tienda
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-test
@@ -7,14 +7,14 @@ ms.topic: conceptual
 ms.assetid: 5a6f5b32-bfce-4a63-81e9-02d54c592539
 caps.latest.revision: 14
 author: alexhomer1
-ms.author: gewarren
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: bfcdb3906f405b9f7ba4650be13f4522ab559ee8
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 5bdcd9a5d3565bf4b7a92d658a5a270bbff6483c
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63446227"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72672248"
 ---
 # <a name="run-unit-tests-for-store-apps-in-visual-studio"></a>Ejecutar pruebas unitarias para aplicaciones de la Tienda en Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -62,7 +62,7 @@ En este tema se describe cómo ejecutar pruebas unitarias con el Explorador de p
 
  Desde la barra de herramientas del Explorador de pruebas puede realizar gran parte del trabajo de búsqueda, organización y ejecución de las pruebas.
 
- ![Ejecutar pruebas desde la barra de herramientas del Explorador de pruebas](../test/media/ute-toolbar.png "UTE_ToolBar")
+ ![Ejecutar pruebas desde la barra de herramientas del explorador de pruebas](../test/media/ute-toolbar.png "UTE_ToolBar")
 
 ### <a name="BKMK_Running_tests"></a> Ejecutar pruebas
  Puede ejecutar todas las pruebas de la solución, todas las pruebas de un grupo o un conjunto de pruebas seleccionado. Realice una de las siguientes acciones:
@@ -96,7 +96,7 @@ En este tema se describe cómo ejecutar pruebas unitarias con el Explorador de p
 - El seguimiento de la pila en el momento en que la prueba generó el error.
 
 ### <a name="BKMK_Viewing_the_source_code_of_a_test_method"></a> Ver el código fuente de un método de prueba
- Para mostrar el código fuente de un método de prueba en el editor de Visual Studio, seleccione la prueba y elija **Abrir prueba** en el menú contextual (teclado: F12).
+ Para mostrar el código fuente de un método de prueba en el Editor de Visual Studio, seleccione la prueba y elija **Abrir prueba** en el menú contextual (teclado: F12).
 
 ## <a name="BKMK_Organizing_the_test_list"></a> Organizar la lista de pruebas
 
@@ -105,7 +105,7 @@ En este tema se describe cómo ejecutar pruebas unitarias con el Explorador de p
 
 |||
 |-|-|
-|![Botón de grupo Explorador de pruebas](../test/media/ute-groupby-btn.png "UTE_GroupBy_btn")|Para agrupar las pruebas por el tiempo necesario para ejecutarlas, abra la lista **Agrupar por** y elija **Duración**. Elija **Resultado de la prueba** para volver a la agrupación original.|
+|![Botón grupo del explorador de pruebas](../test/media/ute-groupby-btn.png "UTE_GroupBy_btn")|Para agrupar las pruebas por el tiempo necesario para ejecutarlas, abra la lista **Agrupar por** y elija **Duración**. Elija **Resultado de la prueba** para volver a la agrupación original.|
 
 ### <a name="BKMK_Searching_and_filtering_the_test_list"></a> Buscar y filtrar la lista de pruebas
  Si tiene muchas pruebas, puede escribir en el cuadro de búsqueda del Explorador de pruebas para filtrar la lista por la cadena especificada. Puede restringir el filtro a tipos específicos de cadenas seleccionando uno en la lista de filtros antes de introducir la cadena de búsqueda.

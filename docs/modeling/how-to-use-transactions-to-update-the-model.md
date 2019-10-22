@@ -1,28 +1,28 @@
 ---
-title: Procedimiento Usar transacciones para actualizar el modelo
+title: 'Cómo: Usar transacciones para actualizar el modelo'
 ms.date: 11/04/2016
 ms.topic: conceptual
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9a7514e3ff0c876a669f514a7e17bb02b73c19c2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a08ea67477f42008c35b6f141351beaeee03d27b
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62936854"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72661135"
 ---
-# <a name="how-to-use-transactions-to-update-the-model"></a>Procedimiento Usar transacciones para actualizar el modelo
-Las transacciones Asegúrese de que los cambios realizados en el almacén se tratan como un grupo. Los cambios que se agrupan pueden ser confirmados o revertidos como una sola unidad.
+# <a name="how-to-use-transactions-to-update-the-model"></a>Cómo: Usar transacciones para actualizar el modelo
+Las transacciones garantizan que los cambios realizados en el almacén se tratan como un grupo. Los cambios que se agrupan se pueden confirmar o revertir como una sola unidad.
 
- Siempre que modifica el código del programa, agrega o elimina cualquier elemento en el Store en Visual Studio SDK de visualización y modelado, debe hacerlo dentro de una transacción. Debe haber una instancia activa de <xref:Microsoft.VisualStudio.Modeling.Transaction> asociada con el Store cuando se produce el cambio. Esto se aplica a todos los elementos del modelo, las relaciones, formas, diagramas y sus propiedades.
+ Cada vez que el código de programa modifica, agrega o elimina cualquier elemento del almacén en el SDK de visualización y modelado de Visual Studio, debe hacerlo dentro de una transacción. Debe haber una instancia activa de <xref:Microsoft.VisualStudio.Modeling.Transaction> asociada al almacén cuando se produce el cambio. Esto se aplica a todos los elementos del modelo, las relaciones, las formas, los diagramas y sus propiedades.
 
- El mecanismo de transacción ayuda a evitar estados incoherentes. Si se produce un error durante una transacción, se revierten todos los cambios. Si el usuario realiza un comando de deshacer, cada transacción reciente se trata como un solo paso. El usuario no puede deshacer partes de un cambio reciente, a menos que ponerlos explícitamente en transacciones independientes.
+ El mecanismo de transacción le ayuda a evitar Estados incoherentes. Si se produce un error durante una transacción, se revierten todos los cambios. Si el usuario realiza un comando Deshacer, cada transacción reciente se trata como un solo paso. El usuario no puede deshacer partes de un cambio reciente, a menos que los coloque explícitamente en transacciones independientes.
 
-## <a name="opening-a-transaction"></a>Apertura de una transacción
- Es el método más conveniente de administrar una transacción con un `using` instrucción entre un `try...catch` instrucción:
+## <a name="opening-a-transaction"></a>Abrir una transacción
+ El método más práctico para administrar una transacción es con una instrucción `using` que se incluye en una instrucción `try...catch`:
 
 ```csharp
 Store store; ...
@@ -48,16 +48,16 @@ catch (Exception ex)
 }
 ```
 
- Si una excepción que impide que el último `Commit()` se produce durante los cambios, se restablecerá el Store a su estado anterior. Esto ayuda a asegurarse de que los errores no dejar el modelo en un estado incoherente.
+ Si se produce una excepción que impide el `Commit()` final durante los cambios, el almacén se restablecerá a su estado anterior. Esto le ayuda a asegurarse de que los errores no salen del modelo en un estado incoherente.
 
- Puede realizar cualquier número de cambios dentro de una transacción. Puede abrir nuevas transacciones dentro de una transacción activa. Las transacciones anidadas deben confirmar o revertir antes de que finalice transacciones que lo contiene. Para obtener más información, vea el ejemplo de la <xref:Microsoft.VisualStudio.Modeling.Transaction.TransactionDepth%2A> propiedad.
+ Puede realizar cualquier número de cambios dentro de una transacción. Puede abrir transacciones nuevas dentro de una transacción activa. Las transacciones anidadas deben confirmarse o revertirse antes de que finalice la transacción contenedora. Para obtener más información, vea el ejemplo de la propiedad <xref:Microsoft.VisualStudio.Modeling.Transaction.TransactionDepth%2A>.
 
- Para que los cambios permanentes, debe `Commit` la transacción antes de eliminarlas. Si se produce una excepción que no se captura dentro de la transacción, se restablecerá a su estado antes de que cambie el Store.
+ Para que los cambios sean permanentes, debe `Commit` la transacción antes de que se elimine. Si se produce una excepción que no se detecta dentro de la transacción, el almacén se restablecerá a su estado anterior a los cambios.
 
 ## <a name="rolling-back-a-transaction"></a>Deshacer una transacción
- Para asegurarse de que permanece en el Store o se revierte a su estado anterior a la transacción, puede utilizar cualquiera de estas tácticas:
+ Para asegurarse de que el almacén permanece en o se revierte a su estado anterior a la transacción, puede usar cualquiera de estas tácticas:
 
-1. Generar una excepción que no se captura dentro del ámbito de la transacción.
+1. Genera una excepción que no se detecta dentro del ámbito de la transacción.
 
 2. Revertir explícitamente la transacción:
 
@@ -65,17 +65,17 @@ catch (Exception ex)
     this.Store.TransactionManager.CurrentTransaction.Rollback();
     ```
 
-## <a name="transactions-do-not-affect-non-store-objects"></a>Las transacciones no afectan a los objetos no-Store
- Las transacciones solo controlan el estado de la Store. No se puede deshacer los cambios parciales que se realizaron en los elementos externos, como archivos, bases de datos u objetos que se han declarado con los tipos normales fuera de la definición de DSL.
+## <a name="transactions-do-not-affect-non-store-objects"></a>Las transacciones no afectan a los objetos que no son de almacén
+ Las transacciones solo rigen el estado del almacén. No pueden deshacer los cambios parciales realizados en elementos externos como archivos, bases de datos u objetos que se han declarado con tipos normales fuera de la definición de DSL.
 
- Si una excepción, podría dejar un cambio tan coherente con el Store, debe tratar con esa posibilidad en el controlador de excepciones. Una manera de asegurarse de que los recursos externos sigan estando sincronizados con los objetos Store es acoplar cada objeto externo a un elemento en el almacén mediante el uso de controladores de eventos. Para obtener más información, consulte [controladores propagar los cambios fuera el modelo de evento](../modeling/event-handlers-propagate-changes-outside-the-model.md).
+ Si una excepción podría dejar tal cambio incoherente con el almacén, debe tratar esa posibilidad en el controlador de excepciones. Una manera de asegurarse de que los recursos externos permanecen sincronizados con los objetos de almacén es acoplar cada objeto externo a un elemento en el almacén mediante controladores de eventos. Para obtener más información, vea [los controladores de eventos propagan los cambios fuera del modelo](../modeling/event-handlers-propagate-changes-outside-the-model.md).
 
-## <a name="rules-fire-at-the-end-of-a-transaction"></a>Activación de reglas al final de una transacción
- Al final de una transacción antes de elimina la transacción, se activan las reglas asociadas a elementos en el almacén. Cada regla es un método que se aplica a un elemento de modelo que ha cambiado. Por ejemplo, hay reglas "corregir" que actualizan el estado de una forma cuando ha cambiado su elemento de modelo y que crear una forma cuando se crea un elemento de modelo. No hay ningún orden de activación especificado. Un cambio realizado por una regla puede desencadenar otra regla.
+## <a name="rules-fire-at-the-end-of-a-transaction"></a>Las reglas se activan al final de una transacción
+ Al final de una transacción, antes de que se elimine la transacción, se activan las reglas adjuntas a los elementos del almacén. Cada regla es un método que se aplica a un elemento de modelo que ha cambiado. Por ejemplo, hay reglas de "corrección" que actualizan el estado de una forma cuando su elemento de modelo ha cambiado y que crean una forma cuando se crea un elemento de modelo. No hay ningún orden de activación especificado. Un cambio realizado por una regla puede activar otra regla.
 
- Puede definir sus propias reglas. Para obtener más información acerca de las reglas, consulte [responde a y propagar los cambios](../modeling/responding-to-and-propagating-changes.md).
+ Puede definir sus propias reglas. Para obtener más información acerca de las reglas, consulte [responder a los cambios y propagarlos](../modeling/responding-to-and-propagating-changes.md).
 
- Las reglas no se activan después de una operación de deshacer, una operación de rehacer o un comando de recuperación.
+ Las reglas no se activan después de un comando Deshacer, rehacer o rehacer.
 
 ## <a name="transaction-context"></a>Contexto de transacción
  Cada transacción tiene un diccionario en el que puede almacenar cualquier información que desee:
@@ -88,14 +88,14 @@ catch (Exception ex)
 
  Esto es especialmente útil para transferir información entre reglas.
 
-## <a name="transaction-state"></a>Estado de transacción
- En ocasiones, es necesario para evitar propagar un cambio si se produce el cambio al deshacer o rehacer una transacción. Esto puede ocurrir, por ejemplo, si escribe un controlador de valor de propiedad que se puede actualizar otro valor en el Store. Dado que la operación de Deshacer restablece todos los valores en el Store a su estado anterior, no es necesario calcular los valores actualizados. Use este código:
+## <a name="transaction-state"></a>Estado de la transacción
+ En algunos casos, debe evitar propagar un cambio si el cambio se debe a deshacer o rehacer una transacción. Esto puede ocurrir, por ejemplo, si escribe un controlador de valores de propiedad que puede actualizar otro valor en el almacén. Dado que la operación de deshacer restablece todos los valores del almacén a sus Estados anteriores, no es necesario calcular los valores actualizados. Use este código:
 
 ```csharp
 if (!this.Store.InUndoRedoOrRollback) {...}
 ```
 
- Las reglas se pueden desencadenar cuando el almacén que se cargó inicialmente desde un archivo. Para evitar responder a estos cambios, use:
+ Las reglas se pueden activar cuando el almacén se carga inicialmente desde un archivo. Para evitar responder a estos cambios, use:
 
 ```csharp
 if (!this.Store.InSerializationTransaction) {...}

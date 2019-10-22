@@ -6,15 +6,15 @@ ms.technology: vs-ide-test
 ms.topic: troubleshooting
 ms.assetid: f2fdb995-4888-4246-85dc-7bacadd45968
 caps.latest.revision: 6
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 5a02dbc4840729d5004b0815175f626fc8760711
-ms.sourcegitcommit: 59e5758036223ee866f3de5e3c0ab2b6dbae97b6
+ms.openlocfilehash: 3eda4127e046c7676525f1755f148663f58ec9b4
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "68416968"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72672073"
 ---
 # <a name="troubleshooting-code-metrics-issues"></a>Solucionar problemas de métricas de código
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

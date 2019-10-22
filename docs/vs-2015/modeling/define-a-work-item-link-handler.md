@@ -8,15 +8,15 @@ helpviewer_keywords:
 - UML API
 ms.assetid: d52e0bbf-0166-4bb4-a2e3-cefed6188875
 caps.latest.revision: 21
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 240f143015f22435deb4f1347f74bebcc8b334c3
-ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
+ms.openlocfilehash: 380aaa5bed1e30c549334bc004ea38e3f0bdb762
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68871907"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72669936"
 ---
 # <a name="define-a-work-item-link-handler"></a>Definir un controlador de vínculos de elementos de trabajo
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -84,10 +84,10 @@ Puede crear una extensión de integración de Visual Studio que responda cuando 
 
  `System.Drawing`: utilizado por el código de ejemplo
 
- Si no puede encontrar una de estas referencias en la pestaña **.net** del cuadro de diálogo **Agregar referencia** , use la pestaña examinar para encontrarla en \Archivos de programa\Microsoft Visual Studio [\\versión] \Common7\IDE\PrivateAssemblies.
+ Si no puede encontrar una de estas referencias en la pestaña **.net** del cuadro de diálogo **Agregar referencia** , use la pestaña examinar para encontrarla en la carpeta \Archivos de programa\Microsoft Visual Studio [versión] \Common7\IDE\PrivateAssemblies \\.
 
 ### <a name="import-the-work-item-namespace"></a>Importar el espacio de nombres de elemento de trabajo
- En las **referencias**del proyecto,agreguereferenciasalossiguientesensamblados:[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]
+ En las **referencias**del proyecto [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], agregue referencias a los siguientes ensamblados:
 
 - Microsoft.TeamFoundation.WorkItemTracking.Client.dll
 
@@ -160,7 +160,7 @@ namespace WorkItems
 
      Se iniciará una instancia experimental de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] .
 
-     **Solución de problemas**: Si no se [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] inicia un nuevo, asegúrese de que el Proyecto VSIX esté establecido como proyecto de inicio de la solución.
+     **Solución de problemas**: Si no se inicia una nueva [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], asegúrese de que el Proyecto VSIX está establecido como proyecto de inicio de la solución.
 
 2. En la instancia experimental de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], abra o cree un proyecto de modelado, y abra o cree un diagrama de modelado.
 
@@ -293,7 +293,7 @@ element.AddReference(ReferenceConstants.WorkItem, linkString, true);
 
   ```
 
-  Para obtener más información sobre las referencias, vea adjuntar [cadenas de referencia a elementos del modelo UML](../modeling/attach-reference-strings-to-uml-model-elements.md).
+  Para obtener más información sobre las referencias, vea [adjuntar cadenas de referencia a elementos del modelo UML](../modeling/attach-reference-strings-to-uml-model-elements.md).
 
 ## <a name="see-also"></a>Vea también
 

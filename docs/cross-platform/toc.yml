@@ -31,29 +31,29 @@
       href: change-log-visual-studio-tools-for-unity-mac.md
     - name: DevOps con aplicaciones de Unity
       href: application-lifecycle-management-alm-with-unity-apps.md
-- name: Visual C++ para el desarrollo móvil multiplataforma.
+- name: Desarrollo móvil multiplataforma con C++
   items:
-    - name: Visual C++ para el desarrollo móvil multiplataforma.
+    - name: Desarrollo móvil multiplataforma con C++
       href: visual-cpp-for-cross-platform-mobile-development.md
-    - name: Instalar Visual C++ para el desarrollo móvil multiplataforma
+    - name: Instalación del desarrollo móvil multiplataforma con C++
       items:
-        - name: Instalar Visual C++ para el desarrollo móvil multiplataforma
+        - name: Instalación del desarrollo móvil multiplataforma con C++
           href: install-visual-cpp-for-cross-platform-mobile-development.md
-        - name: Install and Configure Tools to Build using iOS
+        - name: Instalar y configurar herramientas para compilar con iOS
           href: install-and-configure-tools-to-build-using-ios.md
-    - name: Crear una aplicación de Android Native Activity
+    - name: Creación de una aplicación de Android Native Activity
       href: create-an-android-native-activity-app.md
-    - name: Crear una aplicación de OpenGL ES en iOS y Android
+    - name: Crear una aplicación de OpenGL ES en Android e iOS
       href: build-an-opengl-es-application-on-android-and-ios.md
-    - name: Importar un proyecto XCode
+    - name: Importación de un proyecto de Xcode
       href: import-an-xcode-project.md
-    - name: Sincronizar cambios entre XCode y Visual Studio
+    - name: Sincronización de cambios entre Xcode y Visual Studio
       href: sync-changes-between-xcode-and-visual-studio.md
     - name: Ejemplos de desarrollo móvil multiplataforma
       href: cross-platform-mobile-development-examples.md
-    - name: Propiedades de proyectos multiplataforma de C++
+    - name: Referencia de página de propiedades multiplataforma de C++
       items:
-        - name: Propiedades de proyectos multiplataforma de C++
+        - name: Referencia de página de propiedades multiplataforma de C++
           href: cross-platform-prop-pages.md
         - name: Propiedades de proyectos generales (C++ para Android)
           href: general-android-prop-page.md

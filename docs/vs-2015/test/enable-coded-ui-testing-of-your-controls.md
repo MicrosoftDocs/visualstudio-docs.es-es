@@ -6,14 +6,14 @@ ms.technology: vs-ide-test
 ms.topic: conceptual
 ms.assetid: 5ef1188f-89dc-413d-801d-0efdaf9b0427
 caps.latest.revision: 24
-ms.author: gewarren
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: c97ee2d05609ee6802da3503e9f514fdc07a4b85
-ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
+ms.openlocfilehash: 920dea4e81ca2ce0c562bb6d77582fd5e3753663
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68871657"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72660584"
 ---
 # <a name="enable-coded-ui-testing-of-your-controls"></a>Habilitar pruebas de IU codificadas en los controles
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,7 +30,7 @@ Para probar los controles con mayor facilidad, implemente compatibilidad con el 
 
 4. [Admitir acciones intencionales al implementar un filtro de acción](../test/enable-coded-ui-testing-of-your-controls.md#intentawareactions)
 
-   ![CUIT&#95;Full](../test/media/cuit-full.png "CUIT_Full")
+   ![CUIT&#95;completo](../test/media/cuit-full.png "CUIT_Full")
 
 ## <a name="recordandplayback"></a> Admitir la grabación, la reproducción y la validación de propiedades al implementar la accesibilidad
  El generador de pruebas de IU codificadas captura información acerca de los controles que encuentra durante una grabación y después genera código para reproducir esa sesión. Si el control no admite accesibilidad, el generador de pruebas de IU codificadas capturará acciones (como clics del mouse) mediante las coordenadas de pantalla. Cuando la prueba se reproduce, el código generado emitirá esos clics del mouse en las mismas coordenadas de la pantalla. Si el control aparece en un lugar diferente de la pantalla cuando se reproduce la prueba, el código generado no podrá realizar esa acción en el control. Esto puede producir errores si la prueba se reproduce en configuraciones de pantalla diferentes, en entornos distintos o después de haberse realizado cambios en el diseño de la interfaz de usuario.
@@ -39,12 +39,12 @@ Para probar los controles con mayor facilidad, implemente compatibilidad con el 
 
  Sin embargo, si implementa accesibilidad, el generador de pruebas de IU codificadas la usará para capturar información sobre el control cuando registre una prueba y genere código. A continuación, al ejecutar la prueba, el código generado volverá a reproducir esos eventos en el control, aunque esté en alguna otra parte en la interfaz de usuario. Los autores de las pruebas también podrán crean aserciones usando las propiedades básicas del control.
 
- ![CUIT&#95;Record](../test/media/cuit-record.png "CUIT_Record")
+ ![Registro&#95;CUIT](../test/media/cuit-record.png "CUIT_Record")
 
 ### <a name="to-support-record-and-playback-property-validation-and-navigation-for-a-windows-forms-control"></a>Para admitir la grabación y reproducción, la validación de propiedades y la navegación de un control de Windows Forms
  Implemente la accesibilidad para el control como se indica en el procedimiento siguiente, que se explica en detalle en <xref:System.Windows.Forms.AccessibleObject>.
 
- ![CUIT&#95;Accessible](../test/media/cuit-accessible.png "CUIT_Accessible")
+ ![CUIT&#95;accesible](../test/media/cuit-accessible.png "CUIT_Accessible")
 
 1. Implemente una clase que se derive de <xref:System.Windows.Forms.Control.ControlAccessibleObject> y reemplace la propiedad <xref:System.Windows.Forms.Control.AccessibilityObject%2A> para devolver un objeto de la clase.
 
@@ -86,7 +86,7 @@ Para probar los controles con mayor facilidad, implemente compatibilidad con el 
  ![CUIT&#95;CustomProps](../test/media/cuit-customprops.png "CUIT_CustomProps")
 
 ### <a name="to-support-custom-property-validation"></a>Para admitir la validación de propiedades personalizada
- ![CUIT&#95;Props](../test/media/cuit-props.png "CUIT_Props")
+ ![Propiedades&#95;de CUIT](../test/media/cuit-props.png "CUIT_Props")
 
 1. Reemplace la propiedad <xref:System.Windows.Forms.AccessibleObject.Description%2A> del objeto accesible CurveLegend para pasar valores de propiedades enriquecidos en la cadena de descripción, separada de la descripción principal (y de otras, si se implementan varias propiedades) por punto y coma (;).
 
@@ -410,7 +410,7 @@ Assert.AreEqual(this.AssertMethod3ExpectedValues.UIATextState, uIAText.State);
  Cuando Visual Studio registra una prueba, captura cada evento del mouse y del teclado. Sin embargo, en algunos casos, la intención de la acción se puede perder en la serie de eventos del mouse y del teclado. Por ejemplo, si el control admite autocompletar, el mismo conjunto de eventos del mouse y del teclado puede dar lugar a un valor diferente cuando la prueba se reproduce en un entorno distinto. Puede agregar un complemento de filtro de acciones que reemplace la serie de eventos del mouse y del teclado por una sola acción. De esta manera, puede reemplazar la serie de eventos del mouse y del teclado que da lugar a la selección de un valor por una única acción que establece el valor. De esta forma, se protegen las pruebas de IU codificadas de las diferencias de autocompletar de un entorno a otro.
 
 ### <a name="to-support-intent-aware-actions"></a>Para admitir acciones intencionales
- ![CUIT&#95;Actions](../test/media/cuit-actions.png "CUIT_Actions")
+ ![Acciones&#95;de CUIT](../test/media/cuit-actions.png "CUIT_Actions")
 
 1. Implemente una clase de filtro de acción que se deriva de [UITestActionFilter](/previous-versions/visualstudio/visual-studio-2012/dd985757(v=vs.110)), invalidando las propiedades [ApplyTimeout](/previous-versions/visualstudio/visual-studio-2012/dd984649%28v%3dvs.110%29), [Category](/previous-versions/visualstudio/visual-studio-2012/dd986905(v=vs.110)), [Enabled](/previous-versions/visualstudio/visual-studio-2012/dd985633(v=vs.110)), [FilterType](/previous-versions/visualstudio/visual-studio-2012/dd778726(v=vs.110)), [Group](/previous-versions/visualstudio/visual-studio-2012/dd779219(v=vs.110)) y [Name](/previous-versions/visualstudio/visual-studio-2012/dd998334(v=vs.110)).
 
@@ -535,8 +535,8 @@ Assert.AreEqual(this.AssertMethod3ExpectedValues.UIATextState, uIAText.State);
 
 ## <a name="external-resources"></a>Recursos externos
 
-### <a name="guidance"></a>Guía
- [Pruebas para la entrega continua con Visual Studio 2012 – capítulo 2: Pruebas unitarias: Probar el interior](http://go.microsoft.com/fwlink/?LinkID=255188)
+### <a name="guidance"></a>Orientación
+ [Pruebas de entrega continua con Visual Studio 2012. Capítulo 2: Pruebas unitarias: Prueba del interior](http://go.microsoft.com/fwlink/?LinkID=255188)
 
 ## <a name="see-also"></a>Vea también
 

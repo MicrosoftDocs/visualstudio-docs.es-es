@@ -9,22 +9,22 @@ helpviewer_keywords:
 - layer models, updating in program code
 ms.assetid: c60edc87-33ee-4964-a954-40069f9febf3
 caps.latest.revision: 22
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: eb0c600830c114ca24f9cdc0619fd84c6e18d232
-ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
+ms.openlocfilehash: 88ab52f1b06e6a2da94d17225bdb26ecec358a6c
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68871808"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72668571"
 ---
 # <a name="navigate-and-update-layer-models-in-program-code"></a>Navegar y actualizar modelos de capas en el código del programa
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-En este tema se describen los elementos y relaciones en los modelos de capas por los que se puede navegar y que se pueden actualizar mediante código de programa. Para obtener más información sobre los diagramas de capas desde el punto de vista del [usuario, vea diagramas de capas: Diagramas [de referencia](../modeling/layer-diagrams-reference.md) y de capas: Instrucciones](../modeling/layer-diagrams-guidelines.md).
+En este tema se describen los elementos y relaciones en los modelos de capas por los que se puede navegar y que se pueden actualizar mediante código de programa. Para obtener más información sobre los diagramas de capas desde el punto de vista del usuario, vea [diagramas de capas: referencia](../modeling/layer-diagrams-reference.md) y [diagramas de capas: instrucciones](../modeling/layer-diagrams-guidelines.md).
 
- El modelo `Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer` descrito en este tema sirve de escaparate a un modelo <xref:Microsoft.VisualStudio.GraphModel>, de naturaleza mucho más general. Si está escribiendo un [comando de menú o una extensión](../modeling/add-commands-and-gestures-to-layer-diagrams.md)de gestos `Layer` , utilice el modelo. Si está escribiendo una [extensión de validación de capas](../modeling/add-custom-architecture-validation-to-layer-diagrams.md), es más fácil usar. `GraphModel`
+ El modelo `Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer` descrito en este tema sirve de escaparate a un modelo <xref:Microsoft.VisualStudio.GraphModel>, de naturaleza mucho más general. Si está escribiendo un [comando de menú o una extensión de gestos](../modeling/add-commands-and-gestures-to-layer-diagrams.md), utilice el modelo de `Layer`. Si está escribiendo una [extensión de validación de capas](../modeling/add-custom-architecture-validation-to-layer-diagrams.md), es más fácil usar el `GraphModel`.
 
 ## <a name="transactions"></a>Transacciones
  Cuando actualice un modelo, considere insertar los cambios en una `ILinkedUndoTransaction`. Esto hace que los cambios estén condensados en una única transacción. Si alguno de los cambios no se produjera, se revertirá la transacción entera. Si el usuario deshace un cambio, todos los demás cambios también se desharán.
@@ -83,9 +83,9 @@ IEnumerable<ILayerComment> comments =
 ## <a name="layer-elements"></a>Elementos de capa
  Todos los tipos de elemento que se pueden incluir en un modelo son elementos de capa:
 
- El ![contenido del diagrama de capas es ILayerElements.](../modeling/media/layerapi-layerelements.png "LayerApi_LayerElements")
+ ![El contenido del diagrama de capas es ILayerElements.](../modeling/media/layerapi-layerelements.png "LayerApi_LayerElements")
 
-## <a name="properties"></a>Properties (Propiedades)
+## <a name="properties"></a>Propiedades
  Cada `ILayerElement` tiene un diccionario de cadenas denominado `Properties`. Este diccionario se puede usar para incorporar información arbitraria acerca de cualquier elemento de capa.
 
 ## <a name="artifact-references"></a>Referencias de artefacto
@@ -97,14 +97,14 @@ IEnumerable<ILayerComment> comments =
 
  [ILayerArtifactReference](/previous-versions/ff644536(v=vs.140)). La propiedad Categories indica el tipo de artefacto al que se está haciendo referencia, como una clase, un archivo ejecutable o un ensamblado. Las categorías establecen la forma en la que el identificador va a distinguir el artefacto de destino.
 
- [ArtifactReferenceExtensions. CreateArtifactReferenceAsync](/previous-versions/ff695840(v=vs.140)) crea una referencia de artefacto desde <xref:EnvDTE.Project> o <xref:EnvDTE.ProjectItem>. Se trata de una operación asincrónica, por lo que se suele proporcionar una devolución de llamada a la que se llama cuando la creación ha finalizado.
+ [ArtifactReferenceExtensions. CreateArtifactReferenceAsync](/previous-versions/ff695840(v=vs.140)) crea una referencia de artefacto a partir de una <xref:EnvDTE.Project> o <xref:EnvDTE.ProjectItem>. Se trata de una operación asincrónica, por lo que se suele proporcionar una devolución de llamada a la que se llama cuando la creación ha finalizado.
 
  Las referencias de artefacto de capa no se deben confundir con los artefactos de los diagramas de casos de uso.
 
 ## <a name="shapes-and-diagrams"></a>Formas y diagramas
- Se usan dos objetos para representar cada elemento en un modelo de capas: `ILayerElement`y un [IShape](/previous-versions/ee806673(v=vs.140)). `IShape` señala la posición y el tamaño de la forma en el diagrama. En los modelos de capas, cada `ILayerElement` tiene un `IShape` y cada `IShape` en el diagrama de capas tiene un `ILayerElement`. `IShape` también se usa en los modelos UML. Por lo tanto, no todos los `IShape` poseen un elemento de capa.
+ Dos objetos se utilizan para representar cada elemento en un modelo de capas: un `ILayerElement` y un [IShape](/previous-versions/ee806673(v=vs.140)). `IShape` señala la posición y el tamaño de la forma en el diagrama. En los modelos de capas, cada `ILayerElement` tiene un `IShape` y cada `IShape` en el diagrama de capas tiene un `ILayerElement`. `IShape` también se usa en los modelos UML. Por lo tanto, no todos los `IShape` poseen un elemento de capa.
 
- Del mismo modo, `ILayerModel` se muestra en un [IDiagram](/previous-versions/ee789658(v=vs.140)).
+ Del mismo modo, el `ILayerModel` se muestra en un [IDiagram](/previous-versions/ee789658(v=vs.140)).
 
  En el código de un controlador de gesto o comando personalizado se puede obtener el diagrama actual y la selección de formas actual de la importación de `DiagramContext`:
 
@@ -133,5 +133,5 @@ public void ... (...)
 - [Agregar validación de arquitectura personalizada a diagramas de capas](../modeling/add-custom-architecture-validation-to-layer-diagrams.md)
 - [Agregar propiedades personalizadas a diagramas de capas](../modeling/add-custom-properties-to-layer-diagrams.md)
 - [Diagramas de capas: referencia](../modeling/layer-diagrams-reference.md)
-- [Diagramas de capas: directrices](../modeling/layer-diagrams-guidelines.md)
+- [Diagrama de capas: instrucciones](../modeling/layer-diagrams-guidelines.md)
 - [Ampliar modelos y diagramas UML](../modeling/extend-uml-models-and-diagrams.md)

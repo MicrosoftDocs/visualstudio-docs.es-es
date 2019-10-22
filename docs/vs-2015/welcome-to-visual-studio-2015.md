@@ -11,14 +11,14 @@ helpviewer_keywords:
 - Visual Studio 2015
 ms.assetid: ba237712-f8c4-4d13-854b-ab4a16afa309
 caps.latest.revision: 128
-ms.author: gewarren
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 229ce6d15d8f411a81c684d20945f4dcc9fb8957
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 90cc4849567d744c5380076bf8c1773254cda618
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65695037"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72657045"
 ---
 # <a name="welcome-to-visual-studio-2015"></a>Bienvenido a Visual Studio 2015
 [!INCLUDE[vs2017banner](includes/vs2017banner.md)]
@@ -36,7 +36,7 @@ Le damos la bienvenida a Visual Studio. Tenemos todo lo que necesita para crear 
 
  Y no olvide explorar nuestra [galería de código](https://code.msdn.microsoft.com/) para buscar ejemplos que le ayuden a escribir la aplicación más rápidamente.
 
- Puede instalar Visual Studio 2015 descargándolo en [Descargas de Visual Studio](http://www.visualstudio.com/downloads/download-visual-studio-vs.aspx). Para obtener más información sobre el proceso de instalación, consulte [instalar Visual Studio 2015](./install/install-visual-studio-2015.md).
+ Puede instalar Visual Studio 2015 descargándolo en [Descargas de Visual Studio](http://www.visualstudio.com/downloads/download-visual-studio-vs.aspx). Para obtener más información sobre el proceso de instalación, vea [instalar Visual Studio 2015](./install/install-visual-studio-2015.md).
 
 ## <a name="extend-visual-studio"></a>Ampliar Visual Studio
  Agregue su propia extensión de Visual Studio para incluir una herramienta o script que usa con frecuencia al codificar. Puede crear elementos de menú y ventanas de herramientas personalizados para integrar sus propias herramientas en el IDE de Visual Studio. Puede ampliar el editor de Visual Studio para analizar y corregir el código, o agregar un nuevo tipo de proyecto para incluir exactamente lo que necesita.
@@ -54,15 +54,15 @@ Le damos la bienvenida a Visual Studio. Tenemos todo lo que necesita para crear 
 
  Elija las herramientas que necesita en función de los requisitos de la aplicación y del idioma que desea usar.
 
-1. [Xamarin para Visual Studio](./cross-platform/build-apps-with-native-ui-using-xamarin-in-visual-studio.md): Un código base común en C# para todos los dispositivos
+1. [Xamarin para Visual Studio](./cross-platform/build-apps-with-native-ui-using-xamarin-in-visual-studio.md): un código base común en C# para todos los dispositivos
 
-2. [Apache Cordova con Visual Studio](https://msdn.microsoft.com/library/db446f2c-6ba4-4c76-aac5-4c66f43b8c42): Un código base común para HTML, CSS y JavaScript o Typescript
+2. [Apache Cordova con Visual Studio](https://msdn.microsoft.com/library/db446f2c-6ba4-4c76-aac5-4c66f43b8c42): un código base común para HTML, CSS y JavaScript o Typescript
 
-3. [Visual Studio Tools para Unity](./cross-platform/visual-studio-tools-for-unity.md): Desarrollo de juegos en 2D o 3D en C#
+3. [Visual Studio Tools para Unity](./cross-platform/visual-studio-tools-for-unity.md): desarrollo de juegos en 2D o 3D en C#.
 
-4. [C++ para desarrollo multiplataforma](./cross-platform/visual-cpp-for-cross-platform-mobile-development.md): Bibliotecas de código compartido y las aplicaciones en C++
+4. [C++ para el desarrollo multiplataforma](./cross-platform/visual-cpp-for-cross-platform-mobile-development.md): bibliotecas y aplicaciones de código compartido en C++
 
-5. [Emulador de Visual Studio para Android](./cross-platform/visual-studio-emulator-for-android.md): Emulador de Visual Studio para Android: Depurar y probar sus aplicaciones Android independientemente del IDE
+5. [Visual Studio Emulator for Android](./cross-platform/visual-studio-emulator-for-android.md): Emulador de Visual Studio para Android; depure y pruebe sus aplicaciones Android independientemente del IDE
 
 ## <a name="connect-your-apps-to-services"></a>Conectar las aplicaciones a servicios
  Puede conectarse a estos servicios desde el principio (siempre y cuando tenga una cuenta para cada servicio):
@@ -79,7 +79,7 @@ Le damos la bienvenida a Visual Studio. Tenemos todo lo que necesita para crear 
 ## <a name="build-test-and-manage-your-code"></a>Crear, probar y administrar el código
 
 ### <a name="check-in-your-code"></a>Comprobar el código
- Si trabaja en equipo, también necesitará compartir las últimas versiones del código, de modo que todo el equipo use el mismo código base. Visual Studio se integra perfectamente en Visual Studio Team Services o Team Foundation Server para proporcionar el control de versiones con Git o TFVC (Team Foundation Version Control). Use Visual Studio Team Services para almacenar el código en la nube sin necesidad de mantener un servidor local. Use Team Foundation Server si desea tener un servidor local. Cada vez que cree un proyecto de código, tendrá la opción de agregarlo al control de versiones. Obtenga información acerca de qué control de versiones de sistema es más adecuado para sus necesidades: [Utilice el control de versiones](https://msdn.microsoft.com/library/33267cee-fe5f-4aa3-b2cd-6d22ceace314).
+ Si trabaja en equipo, también necesitará compartir las últimas versiones del código, de modo que todo el equipo use el mismo código base. Visual Studio se integra perfectamente en Visual Studio Team Services o Team Foundation Server para proporcionar el control de versiones con Git o TFVC (Team Foundation Version Control). Use Visual Studio Team Services para almacenar el código en la nube sin necesidad de mantener un servidor local. Use Team Foundation Server si desea tener un servidor local. Cada vez que cree un proyecto de código, tendrá la opción de agregarlo al control de versiones. Obtenga información sobre qué sistema de control de versiones es más adecuado para sus necesidades: [Usar el control de versiones](https://msdn.microsoft.com/library/33267cee-fe5f-4aa3-b2cd-6d22ceace314).
 
 ### <a name="build-your-app"></a>Compilar la aplicación
  También puede [compilar la aplicación localmente](./ide/compiling-and-building-in-visual-studio.md) y asegurarse de que funciona correctamente. A continuación, use las [herramientas de depuración](./debugger/debugging-in-visual-studio.md) para corregir cualquier problema de su aplicación. También puede compilar proyectos en servidores de compilación compartidos o en la nube. Automatice el proceso de compilación para compilar el código que los desarrolladores del equipo comprobaron con el control de versiones. Por ejemplo, puede compilar uno o varios proyectos por la noche o cada vez que se proteja ese código.
@@ -87,7 +87,7 @@ Le damos la bienvenida a Visual Studio. Tenemos todo lo que necesita para crear 
 ### <a name="test-your-app"></a>Probar la aplicación
  [Cree pruebas unitarias](./test/unit-test-your-code.md) para mejorar la calidad de la aplicación. Estas pruebas se pueden ejecutar cada vez que se registre y como parte de la compilación.
 
- Planee, cree y ejecute pruebas manuales y automáticas en la aplicación. Los planes de pruebas, los conjuntos de pruebas, los casos de prueba y los resultados de las pruebas se almacenan en la nube con Visual Studio Team Services o de forma local con Team Foundation Server. Obtenga más información sobre cómo [probar la aplicación](https://msdn.microsoft.com/library/73baa961-c21f-43fe-bb92-3f59ae9b5945).
+ Planee, cree y ejecute pruebas manuales y automáticas en la aplicación. Los planes de pruebas, los conjuntos de pruebas, los casos de prueba y los resultados de las pruebas se almacenan en la nube con Visual Studio Team Services o de forma local con Team Foundation Server. Más información sobre cómo [probar la aplicación](https://msdn.microsoft.com/library/73baa961-c21f-43fe-bb92-3f59ae9b5945).
 
 ### <a name="deliver-your-teams-code-faster"></a>Proporcionar el código del equipo con mayor rapidez
  Elimine las barreras que existen entre los miembros del equipo y mejore la colaboración. Vaya más allá y automatice la publicación de la aplicación en cada fase del desarrollo hasta la producción. Supervise el rendimiento de la aplicación y su disponibilidad cuando está activada. Recopile datos de uso en tiempo real sobre el uso real de la aplicación por parte de los clientes. Vea [DevOps y administración del ciclo de vida de las aplicaciones](https://msdn.microsoft.com/library/74a1f71d-7f23-4c71-8fd7-89ede614fab6) para obtener más detalles.

@@ -6,17 +6,17 @@ dev_langs:
 - VB
 - CSharp
 ms.assetid: 2222841f-e443-4a3d-8c70-4506aa905193
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 98185eb44bc598d83eddd2690d4a321f8880f014
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: f895bd909ec9fda496d284c163bff4a5168bd057
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68925705"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72648731"
 ---
 # <a name="create-a-simple-data-application-by-using-adonet"></a>Creación de una aplicación de datos sencilla mediante ADO.NET
 
@@ -59,7 +59,7 @@ Cree la base de datos de ejemplo siguiendo estos pasos:
 
 7. Pegue el script T-SQL en el editor de consultas y, a continuación, elija el botón **Ejecutar** .
 
-     Tras un breve período de tiempo, la consulta termina de ejecutarse y se crean los objetos de base de datos. La base de datos contiene dos tablas: Clientes y pedidos. Estas tablas no contienen datos inicialmente, pero puede agregar datos al ejecutar la aplicación que va a crear. La base de datos también contiene cuatro procedimientos almacenados simples.
+     Tras un breve período de tiempo, la consulta termina de ejecutarse y se crean los objetos de base de datos. La base de datos contiene dos tablas: Customer y Orders. Estas tablas no contienen datos inicialmente, pero puede agregar datos al ejecutar la aplicación que va a crear. La base de datos también contiene cuatro procedimientos almacenados simples.
 
 ## <a name="create-the-forms-and-add-controls"></a>Crear los formularios y agregar controles
 
@@ -84,7 +84,7 @@ Cree la base de datos de ejemplo siguiendo estos pasos:
 
    ![Cuadro de diálogo de navegación](../data-tools/media/simpleappnav.png)
 
-|Controles del formulario Navigation|Properties (Propiedades)|
+|Controles del formulario Navigation|Propiedades|
 | - |----------------|
 |Botón|Nombre = btnGoToAdd|
 |Botón|Nombre = btnGoToFillOrCancel|
@@ -94,7 +94,7 @@ Cree la base de datos de ejemplo siguiendo estos pasos:
 
 ![Agregar un nuevo cliente y realizar un pedido](../data-tools/media/simpleappnewcust.png)
 
-|Controles del formulario NewCustomer|Properties (Propiedades)|
+|Controles del formulario NewCustomer|Propiedades|
 | - |----------------|
 |TextBox|Nombre = txtCustomerName|
 |TextBox|Nombre = txtCustomerID<br /><br /> De solo lectura = True|
@@ -109,7 +109,7 @@ Cree la base de datos de ejemplo siguiendo estos pasos:
 
 ![rellenar o cancelar pedidos](../data-tools/media/simpleappcancelfill.png)
 
-|Controles del formulario FillOrCancel|Properties (Propiedades)|
+|Controles del formulario FillOrCancel|Propiedades|
 | - |----------------|
 |TextBox|Nombre = txtOrderID|
 |Botón|Nombre = btnFindByOrderID|
@@ -122,7 +122,7 @@ Cree la base de datos de ejemplo siguiendo estos pasos:
 ## <a name="store-the-connection-string"></a>Almacenar la cadena de conexión
 Cuando la aplicación intenta abrir una conexión a la base de datos, la aplicación debe tener acceso a la cadena de conexión. Para evitar escribir la cadena manualmente en cada formulario, almacene la cadena en el archivo *app. config* en el proyecto y cree un método que devuelva la cadena cuando se llame al método desde cualquier formulario de la aplicación.
 
-Para encontrar la cadena de conexión, haga clic con el botón derecho en la conexión de datos de **ventas** en **Explorador de servidores** y elija **propiedades**. Busque la propiedad **ConnectionString** y, a continuación, use **Ctrl**+a, **Ctrl**+**C** para seleccionar y copiar la cadena en el portapapeles.
+Para encontrar la cadena de conexión, haga clic con el botón derecho en la conexión de datos de **ventas** en **Explorador de servidores** y elija **propiedades**. Busque la propiedad **ConnectionString** y, a**continuación, use** **ctrl** + a, **Ctrl** +**C** para seleccionar y copiar la cadena en el portapapeles.
 
 1. Si C#usa, en **Explorador de soluciones**, expanda el nodo **propiedades** en el proyecto y, a continuación, abra el archivo **Settings. Settings** .
     Si está utilizando Visual Basic, en **Explorador de soluciones**, haga clic en **Mostrar todos los archivos**, expanda el nodo **mi proyecto** y, a continuación, abra el archivo **Settings. Settings** .
@@ -175,7 +175,7 @@ Cree un controlador de eventos Click vacío para cada botón del formulario NewC
 
 Para completar la lógica del formulario NewCustomer, siga estos pasos.
 
-1. Coloque el `System.Data.SqlClient` espacio de nombres en el ámbito para que no tenga que calificar totalmente los nombres de sus miembros.
+1. Coloque el espacio de nombres `System.Data.SqlClient` en el ámbito para que no tenga que calificar totalmente los nombres de sus miembros.
 
      ```csharp
      using System.Data.SqlClient;
@@ -197,7 +197,7 @@ Para completar la lógica del formulario NewCustomer, siga estos pasos.
 
 ### <a name="fillorcancel-form"></a>Formulario FillOrCancel
 
-El formulario FillOrCancel ejecuta una consulta para devolver un pedido cuando se escribe un identificador de pedido y, a continuación, se hace clic en el botón **Buscar pedido** . La fila devuelta aparece en una cuadrícula de datos de solo lectura. Puede marcar el pedido como cancelado (X) Si selecciona el botón **Cancelar pedido** o puede marcar el pedido como relleno (F) Si selecciona el botón rellenar **pedido** . Si vuelve a seleccionar el botón **Buscar pedido** , aparece la fila actualizado.
+El formulario FillOrCancel ejecuta una consulta para devolver un pedido cuando se escribe un identificador de pedido y, a continuación, se hace clic en el botón **Buscar pedido** . La fila devuelta aparece en una cuadrícula de datos de solo lectura. Puede marcar el pedido como cancelado (X) Si selecciona el botón **Cancelar pedido** o puede marcar el pedido como relleno (F) Si selecciona el botón **rellenar pedido** . Si vuelve a seleccionar el botón **Buscar pedido** , aparece la fila actualizado.
 
 #### <a name="create-auto-generated-event-handlers"></a>Crear controladores de eventos generados automáticamente
 

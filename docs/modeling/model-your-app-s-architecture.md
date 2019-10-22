@@ -1,25 +1,25 @@
 ---
-title: Modelar la aplicación&#39;arquitectura s
+title: Modelar la&#39;arquitectura de la aplicación
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - UML, modeling architecture
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f5a3bed451775c7b6df1d4abb5e318d664cd803f
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 1316f56b9a780e101c6ab76ee55b79e0b5a181d8
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63436894"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72658381"
 ---
-# <a name="model-your-app39s-architecture"></a>Modelar la aplicación&#39;arquitectura s
-Para ayudar a garantizar que el sistema de software o la aplicación cumple sus usuarios necesidades, puede crear modelos en Visual Studio como parte de la descripción de la estructura general y el comportamiento de su aplicación o sistema de software. A través de los modelos, también puede describir los patrones que se usan a lo largo de todo el proceso de diseño. Estos modelos le ayudan a entender la arquitectura existente, a analizar los cambios y a comunicar sus intenciones con claridad.
+# <a name="model-your-app39s-architecture"></a>Modelar la&#39;arquitectura de la aplicación
+Para ayudar a garantizar que el sistema de software o la aplicación cumplan las necesidades de los usuarios, puede crear modelos en Visual Studio como parte de la descripción de la estructura y el comportamiento generales del sistema de software o de la aplicación. A través de los modelos, también puede describir los patrones que se usan a lo largo de todo el proceso de diseño. Estos modelos le ayudan a entender la arquitectura existente, a analizar los cambios y a comunicar sus intenciones con claridad.
 
- Para ver qué ediciones de Visual Studio admiten esta característica, vea [compatibilidad con la edición de arquitectura y las herramientas de modelado](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
+ Para ver qué ediciones de Visual Studio admiten esta característica, vea [compatibilidad de la edición con las herramientas de arquitectura y modelado](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
 
  El propósito de un modelo es reducir las ambigüedades que se producen en las descripciones con el lenguaje natural y ayudarle a usted y a sus colegas a visualizar el diseño y a analizar diseños alternativos. El modelo debe usarse conjuntamente con otros documentos o explicaciones. Por sí mismo, un modelo no constituye una especificación completa de la arquitectura.
 
@@ -30,9 +30,9 @@ Para ayudar a garantizar que el sistema de software o la aplicación cumple sus 
 
 - [Diseño de alto nivel](#Structure). Aquí se describen los componentes principales y el modo en que interactúan entre sí para satisfacer cada uno de los requisitos. Si el sistema es grande, cada componente puede tener su propio diseño de alto nivel donde se muestra su composición a partir de componentes más pequeños.
 
-- [Patrones de diseño](#Patterns) y convenciones que se usan a lo largo de los diseños de los componentes. Un modelo describe un determinado enfoque para lograr un objetivo de programación. Si se usan los mismos modelos a lo largo de un diseño completo, el equipo puede reducir el costo que suponen los cambios y el desarrollo de nuevo software.
+- [Modelos de diseño](#Patterns) y convenciones que se usan en los diseños de los componentes. Un modelo describe un determinado enfoque para lograr un objetivo de programación. Si se usan los mismos modelos a lo largo de un diseño completo, el equipo puede reducir el costo que suponen los cambios y el desarrollo de nuevo software.
 
-## <a name="Structure"></a> Diseño de alto nivel
+## <a name="Structure"></a>Diseño de alto nivel
  En un diseño de alto nivel se describen los componentes principales del sistema y el modo en que interactúan entre sí para lograr los objetivos del diseño. En el desarrollo del diseño de alto nivel están implicadas las actividades de la lista siguiente, aunque no necesariamente en un orden determinado.
 
  Si está actualizando código existente, puede comenzar por describir los componentes principales. Asegúrese de que comprende los cambios que deben realizarse en los requisitos de los usuarios y, a continuación, agregue o modifique las interacciones entre los componentes. Si está desarrollando un sistema nuevo, comience por identificar las características principales de las necesidades de los usuarios. A continuación, puede analizar las secuencias de interacciones de los casos de uso principales y, posteriormente, consolidar las secuencias en un diseño de componentes.
@@ -41,14 +41,14 @@ Para ayudar a garantizar que el sistema de software o la aplicación cumple sus 
 
 - [Descripción de los requisitos](#Requirements). El punto inicial de cualquier diseño es describir claramente las necesidades de los usuarios.
 
-- [Modelos arquitectónicos](#BigDecisions). Son las elecciones que hace respecto a las tecnologías y elementos arquitectónicos básicos del sistema.
+- [Patrones arquitectónicos](#BigDecisions). Son las elecciones que hace respecto a las tecnologías y elementos arquitectónicos básicos del sistema.
 
-- Modelo de datos de los componentes e Interfaces. Puede dibujar diagramas de clases para describir la información que se pasa entre los componentes y que se almacena en los componentes.
+- Modelo de datos de los componentes e interfaces. Puede dibujar diagramas de clases para describir la información que se pasa entre los componentes y que se almacena en los componentes.
 
-## <a name="Requirements"></a> Descripción de los requisitos
- La forma más eficaz de desarrollar el diseño de alto nivel de una aplicación completa es hacerlo junto con un modelo de requisitos y otra descripción de las necesidades de los usuarios. Para obtener más información acerca de los modelos de requisitos, consulte [modelar los requisitos del usuario](../modeling/model-user-requirements.md).
+## <a name="Requirements"></a>Descripción de los requisitos
+ La forma más eficaz de desarrollar el diseño de alto nivel de una aplicación completa es hacerlo junto con un modelo de requisitos y otra descripción de las necesidades de los usuarios. Para obtener más información sobre los modelos de requisitos, vea [requisitos de usuario de modelo](../modeling/model-user-requirements.md).
 
- Si el sistema que está desarrollando es un componente de un sistema más grande, es posible que parte de los requisitos, o todos ellos, puedan expresarse en interfaces programáticas. 
+ Si el sistema que está desarrollando es un componente de un sistema más grande, es posible que parte de los requisitos, o todos ellos, puedan expresarse en interfaces programáticas.
 
  El modelo de requisitos proporciona estos elementos de información esenciales:
 
@@ -64,10 +64,10 @@ Para ayudar a garantizar que el sistema de software o la aplicación cumple sus 
 
   El nivel de detalle que debe usarse en los requisitos o en un modelo arquitectónico dependerá de la escala del proyecto y del tamaño y distribución del equipo. Un equipo reducido que trabaje en un proyecto pequeño podría simplemente trazar un diagrama de clases de los conceptos de negocio y algunos modelos de diseño; un proyecto grande distribuido en varias regiones necesitaría mucho más detalle.
 
-## <a name="BigDecisions"></a> Patrones de arquitectura
-  En una fase inicial de desarrollo, tendrá que elegir las principales tecnologías y elementos en los que se va a basar el diseño. Las áreas en las que deben tomarse estas decisiones son, entre otras:
+## <a name="BigDecisions"></a>Patrones arquitectónicos
+ En una fase inicial de desarrollo, tendrá que elegir las principales tecnologías y elementos en los que se va a basar el diseño. Las áreas en las que deben tomarse estas decisiones son, entre otras:
 
-- Base de las opciones de tecnología, como la elección entre una base de datos y un sistema de archivos y la elección entre una aplicación de red y un cliente web y así sucesivamente.
+- Opciones de tecnología base, como la opción entre una base de datos y un sistema de archivos, y la opción entre una aplicación en red y un cliente web, etc.
 
 - Los marcos; por ejemplo, la elección entre Windows Workflow Foundation o ADO.NET Entity Framework.
 
@@ -77,10 +77,10 @@ Para ayudar a garantizar que el sistema de software o la aplicación cumple sus 
 
   Las elecciones que haga afectarán al modo en que se usa e interpreta el modelo arquitectónico. Por ejemplo, en un sistema que usa una base de datos, las asociaciones de un diagrama de clases pueden representar las relaciones o claves externas de la base de datos, mientras que en un sistema basado en archivos XML, las asociaciones pueden indicar las referencias cruzadas que usan XPath. En un sistema distribuido, los mensajes de un diagrama de secuencia pueden representar los mensajes de una conexión; en una aplicación independiente, pueden representar las llamadas de función.
 
-## <a name="Patterns"></a> Patrones de diseño
+## <a name="Patterns"></a>Modelos de diseño
  Un modelo de diseño es un esquema del modo en que debe diseñarse un determinado aspecto del software, sobre todo uno que se repita en diferentes elementos del sistema. Si adopta un enfoque uniforme en todo el proyecto, puede reducir el costo de diseño, garantizar la coherencia de la interfaz de usuario y reducir la carga que supone la comprensión y modificación del código.
 
- Algunos modelos de diseño generales, como el modelo Observador, son bien conocidos y están muy extendidos. Asimismo, hay modelos que únicamente pueden aplicarse a su proyecto. Por ejemplo, en un sistema de ventas web, habrá varias operaciones en el código donde se realizan cambios en el pedido de un cliente. Para asegurarse de que el estado del pedido se muestra con precisión en cada etapa, todas estas operaciones deben seguir un protocolo determinado para actualizar la base de datos.
+ Algunos modelos de diseño generales, como el modelo Observador, son bien conocidos y están muy extendidos. Asimismo, hay modelos que únicamente pueden aplicarse a su proyecto. Por ejemplo, en un sistema de ventas Web, habrá varias operaciones en el código en las que se realizan cambios en el pedido de un cliente. Para asegurarse de que el estado del pedido se muestra con precisión en cada etapa, todas estas operaciones deben seguir un protocolo determinado para actualizar la base de datos.
 
  La parte del trabajo de la arquitectura de software consiste en determinar qué modelos deben adoptarse en todo el diseño. Normalmente se trata de una tarea continua, porque los nuevos modelos y las mejoras de los modelos existentes se detectarán a medida que avance el proyecto. Resulta útil organizar el plan de desarrollo para que pueda ocuparse de cada uno de los principales modelos de diseño en una etapa inicial.
 

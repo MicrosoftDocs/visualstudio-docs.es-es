@@ -9,17 +9,17 @@ helpviewer_keywords:
 - service references [Visual Studio], configuring behavior
 - Configure Service Reference dialog box
 ms.assetid: 25e4c36b-2db6-4e71-9010-b7068255d09d
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 1cf4a809c1353f2fe30383a312f65b6c623083db
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 033663c347a39c63a76bddd10625bdc86cec1f00
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68925669"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72642862"
 ---
 # <a name="configure-service-reference-dialog-box"></a>Configurar referencia de servicio (cuadro de diálogo)
 
@@ -83,11 +83,11 @@ Determina si un cliente de WCF intenta reutilizar lo que ya existe en los ensamb
 
 **Volver a usar tipos en todos los ensamblados a los que se hace referencia**
 
-Cuando se selecciona, todos los tipos de la lista de ensamblados a los **que se hace referencia** se reutilizan si es posible. Esta opción se encuentra activada de forma predeterminada.
+Cuando se selecciona, todos los tipos de la **lista de ensamblados a los que se hace referencia** se reutilizan si es posible. Esta opción se encuentra activada de forma predeterminada.
 
 **Volver a usar tipos en los ensamblados especificados**
 
-Cuando se selecciona, solo se reutilizan los tipos seleccionados en la lista ensamblados a los **que se hace referencia** .
+Cuando se selecciona, solo se reutilizan los tipos seleccionados en la **lista ensamblados a los que se hace referencia** .
 
 **Ensamblados a los que se hace referencia**
 
@@ -105,5 +105,5 @@ Se abrirá el cuadro de diálogo **Agregar referencia web**.
 
 ## <a name="see-also"></a>Vea también
 
-- [Cómo: Agregar una referencia a un servicio Web](how-to-add-update-or-remove-a-wcf-data-service-reference.md)
+- [Cómo: Agregar una referencia a un servicio web XML](how-to-add-update-or-remove-a-wcf-data-service-reference.md)
 - [Servicios de Windows Communication Foundation y Servicios de datos de WCF](../data-tools/configure-service-reference-dialog-box.md)

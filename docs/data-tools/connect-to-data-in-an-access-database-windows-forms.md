@@ -7,17 +7,17 @@ helpviewer_keywords:
 - connecting to data, Access databases
 - Access databases, connecting
 ms.assetid: 4159e815-d430-4ad0-a234-e4125fcbef18
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 2a068414fb157ab71733d6c726b6ec71532629d4
-ms.sourcegitcommit: 8562a337cc9f674c756a4a0b2c7e288ebd61b51e
+ms.openlocfilehash: d24fc2fa1ee34567e0c32859eeccf6af62813a20
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/19/2019
-ms.locfileid: "68345414"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72648719"
 ---
 # <a name="connect-to-data-in-an-access-database"></a>Conectar a datos de una base de datos de Access
 
@@ -33,7 +33,7 @@ Conéctese a las bases de datos creadas con Office 365, Access 2013, Access 2010
 
 1. Abra un proyecto de aplicación de Windows Forms o WPF en Visual Studio.
 
-2. Para abrir la **ventana orígenes de datos** , en el menú **Ver** , seleccione otros**orígenes de datos**de **Windows** > .
+2. Para abrir la **ventana orígenes de datos** , en el menú **Ver** , seleccione **otras ventanas**  > **orígenes de datos**.
 
    ![Ver orígenes de datos en Otras ventanas](../data-tools/media/viewdatasources.png)
 
@@ -75,7 +75,7 @@ Conéctese a las bases de datos creadas con Access 2000-2003 mediante el procedi
 
 1. Abra un proyecto de aplicación de Windows Forms o WPF en Visual Studio.
 
-2. En el menú **Ver** , seleccione **otros** > **orígenes de datos**de Windows.
+2. En el menú **Ver** , seleccione **otras ventanas**  > **orígenes de datos**.
 
    ![Ver orígenes de datos en Otras ventanas](../data-tools/media/viewdatasources.png)
 
@@ -109,11 +109,11 @@ Conéctese a las bases de datos creadas con Access 2000-2003 mediante el procedi
 
 El conjunto de datos que acaba de crear está disponible en la ventana **orígenes de datos** . Ahora puede realizar cualquiera de las tareas siguientes:
 
-- Seleccione elementos en la ventana **orígenes de datos** y arrástrelos hasta el formulario o la superficie de diseño (vea enlazar [Windows Forms controles a datos en Visual Studio](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md) o [información general sobre el enlace de datos de WPF](/dotnet/framework/wpf/data/data-binding-overview)).
+- Seleccione elementos en la ventana **orígenes de datos** y arrástrelos hasta el formulario o la superficie de diseño (vea [enlazar Windows Forms controles a datos en Visual Studio](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md) o [información general sobre el enlace de datos de WPF](/dotnet/framework/wpf/data/data-binding-overview)).
 
 - Abra el origen de datos en el **Diseñador de DataSet** para agregar o editar los objetos que constituyen el conjunto de datos.
 
-- Agregue la <xref:System.Data.DataTable.ColumnChanging> lógica de validación al <xref:System.Data.DataTable.RowChanging> evento o de las tablas de datos en el conjunto de datos (vea [Validate Data in](../data-tools/validate-data-in-datasets.md)datasets).
+- Agregue la lógica de validación al <xref:System.Data.DataTable.ColumnChanging> o <xref:System.Data.DataTable.RowChanging> evento de las tablas de datos en el conjunto de datos (vea [Validate Data in](../data-tools/validate-data-in-datasets.md)datasets).
 
 ## <a name="see-also"></a>Vea también
 

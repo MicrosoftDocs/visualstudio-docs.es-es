@@ -1,26 +1,26 @@
 ---
-title: Maneras de depurar el código XSLT
+title: Maneras de depurar código XSLT
 ms.date: 03/05/2019
 ms.topic: conceptual
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 dev_langs:
 - CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: 67ea95e3c52daed03acfe451f353edc039e1fecb
-ms.sourcegitcommit: 9753c7544cec852ca5efd0834e0956d9e53a5734
+ms.openlocfilehash: bb358efb711211d58525afb8d30d5cb4cad6b2e3
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "67043538"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72646073"
 ---
 # <a name="debugging-xslt"></a>Depuración de XSLT
 
-Puede depurar el código XSLT en Visual Studio. La transformación XSLT se admite establecer puntos de interrupción, ver estados de ejecución de XSLT del depurador y así sucesivamente. El depurador de XSLT se puede usar para depurar hojas de estilos XSLT o las aplicaciones XSLT.
+Puede depurar código XSLT en Visual Studio. El depurador de XSLT permite establecer puntos de interrupción, ver Estados de ejecución XSLT, etc. El depurador de XSLT se puede usar para depurar hojas de estilos XSLT o aplicaciones XSLT.
 
-Puede ejecutar una línea de código en un tiempo de ejecución paso a paso, saltar o ejecutar paso a paso el código. Los comandos para usar la funcionalidad de paso a paso el código del depurador XSLT son que los mismos que para el Visual Studio depuradores.
+Puede ejecutar código de línea en línea depurando paso a paso por instrucciones, pasando por el código. Los comandos para usar la funcionalidad de paso de código del depurador de XSLT son los mismos que los de los demás depuradores de Visual Studio.
 
 Una vez se haya iniciado la depuración, el depurador XSLT abre unas ventanas para mostrar el documento de entrada y la salida XSLT.
 
@@ -29,15 +29,15 @@ Una vez se haya iniciado la depuración, el depurador XSLT abre unas ventanas pa
 
 ## <a name="debug-from-the-xml-editor"></a>Depurar desde el editor XML
 
-Puede iniciar al depurador cuando haya una hoja de estilos o un archivo XML de entrada abierto en el editor. Esto le permite depurar mientras diseña la hoja de estilos.
+Puede iniciar el depurador de si tiene una hoja de estilos o un archivo XML de entrada abierto en el editor de. Esto le permite depurar mientras está diseñando la hoja de estilos.
 
-1. Abra la hoja de estilos o archivo XML en Visual Studio.
+1. Abra la hoja de estilos o el archivo XML en Visual Studio.
 
-1. Seleccione **iniciar la depuración de XSLT** desde el **XML** menús o presione **Alt**+**F5**.
+1. Seleccione **iniciar depuración XSLT** en el menú **XML** o presione **Alt** +**F5**.
 
-## <a name="debug-from-an-app-that-uses-xslt"></a>Depurar desde una aplicación que utiliza XSLT
+## <a name="debug-from-an-app-that-uses-xslt"></a>Depurar desde una aplicación que usa XSLT
 
-Puede ir al código XSLT mientras depura una aplicación. Al presionar **F11** en un <xref:System.Xml.Xsl.XslCompiledTransform.Transform%2A?displayProperty=fullName> llamada, el depurador puede ir al código XSLT.
+Puede entrar en XSLT durante la depuración de una aplicación. Al presionar **F11** en una llamada <xref:System.Xml.Xsl.XslCompiledTransform.Transform%2A?displayProperty=fullName>, el depurador puede entrar en el código XSLT.
 
 > [!NOTE]
 > No se puede ir al código XSLT desde la clase <xref:System.Xml.Xsl.XslTransform>. La clase <xref:System.Xml.Xsl.XslCompiledTransform> es el único procesador XSLT que admite la entrada al código XSLT durante la depuración.
@@ -88,10 +88,10 @@ namespace ConsoleApplication
 
 ## <a name="xslt-profiler"></a>Generador de perfiles XSLT
 
-El [generador de perfiles XSLT](../xml-tools/xslt-profiler.md) es una herramienta que permite a los desarrolladores medir, evaluar y abordar problemas relacionados con el rendimiento en el código XSLT mediante la creación de informes de rendimiento de XSLT detallados. Para obtener más información, consulte [generador de perfiles XSLT](../xml-tools/xslt-profiler.md).
+El [generador de perfiles XSLT](../xml-tools/xslt-profiler.md) es una herramienta que permite a los desarrolladores medir, evaluar y solucionar problemas relacionados con el rendimiento en el código XSLT mediante la creación de informes de rendimiento XSLT detallados. Para obtener más información, vea [generador de perfiles XSLT](../xml-tools/xslt-profiler.md).
 
 ## <a name="see-also"></a>Vea también
 
-- [Tutorial: Depurar una hoja de estilos XSLT](../xml-tools/walkthrough-debug-an-xslt-style-sheet.md)
+- [Tutorial: depurar una hoja de estilos XSLT](../xml-tools/walkthrough-debug-an-xslt-style-sheet.md)
 - [Primer vistazo al depurador de Visual Studio](../debugger/debugger-feature-tour.md)
-- [Fundamentos de la depuración: Puntos de interrupción](../debugger/using-breakpoints.md)
+- [Fundamentos de la depuración: puntos de interrupción](../debugger/using-breakpoints.md)

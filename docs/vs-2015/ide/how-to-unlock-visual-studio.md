@@ -7,15 +7,15 @@ ms.technology: vs-ide-general
 ms.topic: conceptual
 ms.assetid: ffb580a1-8b5d-48f5-b811-87f8036f50ea
 caps.latest.revision: 12
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 0e1fc8e9bcb6f70a2665303eb6cac353a3f87bd9
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: a71a045661c48fd36733ecd8d2266470667a5c35
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63435097"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72670593"
 ---
 # <a name="how-to-unlock-visual-studio"></a>Cómo desbloquear Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -50,7 +50,7 @@ Visual Studio se puede probar de forma gratuita durante 30 días. Si desea exten
 ### <a name="updating-stale-licenses"></a>Actualizar licencias obsoletas
  Es posible que haya visto el mensaje siguiente donde se indica que su licencia de Visual Studio se está quedando obsoleta.
 
- ![Cuadro de diálogo de información de usuario de Visual Studio](../ide/media/vs2013-userinfo.png "VS2013_UserInfo")
+ ![Cuadro de diálogo de información de usuario de Visual Studio](../ide/media/vs2013-userinfo.png "|::ref1::|")
 
  Este mensaje indica que, aunque es posible que la licencia aún sea válida, el token de licencia que usa Visual Studio para mantener actualizada la suscripción no se ha actualizado y ha quedado obsoleto debido a uno de los siguientes motivos:
 
@@ -72,5 +72,5 @@ Visual Studio se puede probar de forma gratuita durante 30 días. Si desea exten
 
 2. Si tiene otra suscripción asociada a una cuenta diferente, agregue esa cuenta a la lista Todas las cuentas, en el lado izquierdo del cuadro de diálogo Archivo > Configuración de la cuenta. Para ello, haga clic en el vínculo “Agregar una cuenta...” .
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Otras referencias
  [Iniciar sesión en Visual Studio](../ide/signing-in-to-visual-studio.md)

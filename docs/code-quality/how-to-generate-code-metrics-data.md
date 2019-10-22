@@ -6,25 +6,25 @@ helpviewer_keywords:
 - code metrics data
 - code metrics results
 - code metrics [Visual Studio]
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fbe82fc213937b7e494afd27bfd964347c17e2b8
-ms.sourcegitcommit: 44e9b1d9230fcbbd081ee81be9d4be8a485d8502
+ms.openlocfilehash: 3c4cc5b43880df06752cbce79d58ec71921817a4
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/30/2019
-ms.locfileid: "70179984"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72649409"
 ---
-# <a name="how-to-generate-code-metrics-data"></a>Procedimiento Generación de datos de las métricas de código
+# <a name="how-to-generate-code-metrics-data"></a>Cómo: generar datos de métricas de código
 
 Puede generar datos de métricas de código de tres maneras:
 
-- Mediante la instalación de analizadores de [FxCop](#fxcop-analyzers-code-metrics-rules) y la habilitación de las cuatro reglas de métricas de código (mantenimiento) que contiene.
+- Mediante la instalación de [analizadores de FxCop](#fxcop-analyzers-code-metrics-rules) y la habilitación de las cuatro reglas de métricas de código (mantenimiento) que contiene.
 
-- Al elegir el comando de menú [ **analizar** > métricas de**código** ](#calculate-code-metrics-menu-command) en Visual Studio.
+- Al elegir el comando de menú [ **analizar**  > **calcular métricas de código** ](#calculate-code-metrics-menu-command) en Visual Studio.
 
 - Desde la [línea](#command-line-code-metrics) de comandos C# para los proyectos de y Visual Basic.
 
@@ -72,27 +72,27 @@ Puede configurar los umbrales en los que se activan las reglas de métricas de c
 
 ## <a name="calculate-code-metrics-menu-command"></a>Comando de menú calcular métricas de código
 
-Genere métricas de código para uno o todos los proyectos abiertos en el IDE mediante el menú **analizar** > métricas de**código** .
+Genere métricas de código para uno o todos los proyectos abiertos en el IDE mediante el menú **analizar**  > **calcular métricas de código** .
 
 ### <a name="generate-code-metrics-results-for-an-entire-solution"></a>Generar resultados de métricas de código para una solución completa
 
 Puede generar resultados de métricas de código para una solución completa de cualquiera de las maneras siguientes:
 
-- En la barra de menús, elija **analizar** > **calcular métricas** > **de código para la solución**.
+- En la barra de menús, elija **analizar**  > **calcular métricas de código**  >  para la**solución**.
 
 - En **Explorador de soluciones**, haga clic con el botón secundario en la solución y elija **calcular métricas de código**.
 
-- En la ventana Resultados de métricas de **código** , elija el botón **calcular métricas de código para la solución** .
+- En la ventana **resultados de métricas de código** , elija el botón **calcular métricas de código para la solución** .
 
-Los resultados se generan y se muestra la ventana Resultados de métricas de **código** . Para ver los detalles de los resultados, expanda el árbol en la columna **jerarquía** .
+Los resultados se generan y se muestra la ventana **resultados de métricas de código** . Para ver los detalles de los resultados, expanda el árbol en la columna **jerarquía** .
 
 ### <a name="generate-code-metrics-results-for-one-or-more-projects"></a>Generar resultados de métricas de código para uno o varios proyectos
 
 1. En **Explorador de soluciones**, seleccione uno o varios proyectos.
 
-1. En la barra de menús, elija **analizar** > **calcular métricas** > **de código para los proyectos seleccionados**.
+1. En la barra de menús, elija **analizar**  > **calcular métricas de código**  >  para los**proyectos seleccionados**.
 
-Los resultados se generan y se muestra la ventana Resultados de métricas de **código** . Para ver los detalles de los resultados, expanda el árbol de la **jerarquía**.
+Los resultados se generan y se muestra la ventana **resultados de métricas de código** . Para ver los detalles de los resultados, expanda el árbol de la **jerarquía**.
 
 ::: moniker range="vs-2017"
 
@@ -215,11 +215,11 @@ La salida XML generada tiene el siguiente formato:
 
 ### <a name="metricsexe"></a>Metrics. exe
 
-Si no desea instalar el paquete NuGet, puede generar y usar el ejecutable Metrics *. exe* directamente. Para generar el archivo ejecutable *Metrics. exe* :
+Si no desea instalar el paquete NuGet, puede generar y usar el ejecutable *Metrics. exe* directamente. Para generar el archivo ejecutable *Metrics. exe* :
 
 1. Clone el repositorio [dotnet/Roslyn-analizadores](https://github.com/dotnet/roslyn-analyzers) .
 2. Abra Símbolo del sistema para desarrolladores para Visual Studio como administrador.
-3. En la raíz del repositorio **Roslyn-analizadores** , ejecute el siguiente comando:`Restore.cmd`
+3. En la raíz del repositorio **Roslyn-analizadores** , ejecute el siguiente comando: `Restore.cmd`
 4. Cambie el directorio a *src\Tools*.
 5. Ejecute el siguiente comando para compilar el proyecto **Metrics. csproj** :
 
@@ -259,11 +259,11 @@ La nueva herramienta de métricas de código de línea de comandos calcula las m
 
 #### <a name="metric-value-differences"></a>Diferencias de valores de métricas
 
-La `LinesOfCode` métrica es más precisa y confiable en la nueva herramienta de métricas de código de línea de comandos. Es independiente de cualquier diferencia de CODEGEN y no cambia cuando el conjunto de herramientas o el Runtime cambian. La nueva herramienta cuenta las líneas de código reales, incluidas las líneas en blanco y los comentarios.
+La métrica `LinesOfCode` es más precisa y confiable en la nueva herramienta de métricas de código de línea de comandos. Es independiente de cualquier diferencia de CODEGEN y no cambia cuando el conjunto de herramientas o el Runtime cambian. La nueva herramienta cuenta las líneas de código reales, incluidas las líneas en blanco y los comentarios.
 
-Otras métricas como `CyclomaticComplexity` y `MaintainabilityIndex` usan las mismas fórmulas que las versiones anteriores de *Metrics. exe*, pero la nueva herramienta cuenta el número `IOperations` de (instrucciones de origen lógico) en lugar de las instrucciones de lenguaje intermedio (IL). Los números serán ligeramente diferentes a los generados por el IDE de Visual Studio y por las versiones anteriores de *Metrics. exe*.
+Otras métricas como `CyclomaticComplexity` y `MaintainabilityIndex` usan las mismas fórmulas que las versiones anteriores de *Metrics. exe*, pero la nueva herramienta cuenta el número de `IOperations` (instrucciones de origen lógico) en lugar de las instrucciones de lenguaje intermedio (IL). Los números serán ligeramente diferentes a los generados por el IDE de Visual Studio y por las versiones anteriores de *Metrics. exe*.
 
 ## <a name="see-also"></a>Vea también
 
-- [Utilice la ventana de resultados de las métricas de código](../code-quality/working-with-code-metrics-data.md)
+- [Usar la ventana Resultados de métricas de código](../code-quality/working-with-code-metrics-data.md)
 - [Valores de las métricas de código](../code-quality/code-metrics-values.md)

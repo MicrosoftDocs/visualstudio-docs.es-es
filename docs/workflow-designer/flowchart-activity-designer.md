@@ -1,5 +1,5 @@
 ---
-title: Diseñador de flujo de trabajo - Diseñador de actividades Flowchart
+title: Diseñador de actividad Diseñador de flujo de trabajo-Flowchart
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,21 +7,21 @@ f1_keywords:
 - System.Activities.Statements.FlowStep.UI
 - System.Activities.Core.Presentation.FlowStart.UI
 ms.assetid: d5af2276-5215-4138-880a-cf2b90bbf3a0
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ad02dea2dcab30d65aaefecc5a5e54804c9baaff
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 5f56c7eac56572d8a3be1f8b478feb0543390481
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62949661"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72650454"
 ---
 # <a name="flowchart-activity-designer"></a>Diseñador de actividades Flowchart
 
-La actividad <xref:System.Activities.Statements.Flowchart> se utiliza para crear flujos de trabajo que definen y administran los controles de flujo complejos. Un <xref:System.Activities.Statements.Flowchart> pueden crearse en el código o con el Diseñador de flujo de trabajo. Este tema documenta la experiencia de diseñador de flujo de trabajo. El Diseñador de actividades de flujo de trabajo de diseñador de flujo de trabajo permite a los desarrolladores crear flujos de trabajo de forma natural.
+La actividad <xref:System.Activities.Statements.Flowchart> se utiliza para crear flujos de trabajo que definen y administran los controles de flujo complejos. Un <xref:System.Activities.Statements.Flowchart> se puede crear en código o mediante Diseñador de flujo de trabajo. En este tema se documenta la experiencia Diseñador de flujo de trabajo. El diseñador de actividad de flujo de trabajo de Diseñador de flujo de trabajo permite a los desarrolladores crear flujos de trabajo de forma natural.
 
 ## <a name="the-flowchart-activity"></a>Actividad Flowchart
 
@@ -29,19 +29,19 @@ La clase <xref:System.Activities.Statements.Flowchart> especifica una propiedad 
 
 ### <a name="using-the-flowchart-activity-designer"></a>Utilizar el diseñador de actividades Flowchart
 
-El **diagrama de flujo** Diseñador de actividad puede encontrarse en el **Flowchart** categoría de la **cuadro de herramientas**, que se tiene acceso haciendo clic en el **delcuadrodeherramientas**ficha en el Diseñador de flujo de trabajo. Como alternativa, seleccione **cuadro de herramientas** desde el **vista** menús o presione **Ctrl**+**Alt** + **X**.
+El diseñador de actividades **Flowchart** se puede encontrar en la categoría **Diagrama de flujo** del **cuadro de herramientas**, al que se tiene acceso al hacer clic en la pestaña cuadro de **herramientas** en el diseñador de flujo de trabajo. Como alternativa, seleccione **cuadro de herramientas** en el menú **Ver** o presione **Ctrl** +**Alt** +**X**.
 
-El **Flowchart** Diseñador de actividad se puede arrastrar desde el **cuadro de herramientas** y colocar en la superficie del Diseñador de flujo de trabajo donde normalmente se colocan los diseñadores de actividad, como una actividad raíz o como el elemento secundario de otra actividad de flujo de control. Si el **Flowchart** Diseñador de actividad se coloca en una superficie del Diseñador de flujo de trabajo en blanco, se crea un <xref:System.Activities.Statements.Flowchart> actividad, que se presenta en una vista expandida en el que es el nodo de inicio que comienza la ejecución de forma predeterminada se representa como una bola verde. Si el **Flowchart** Diseñador de actividad se coloca en otra actividad de flujo de control, se muestra en una vista minimizada que se puede expandir haciendo doble clic en el **Flowchart** Diseñador de actividad. Cualquier actividad en el **cuadro de herramientas** se pueden arrastrar directamente a la **Flowchart** Diseñador de actividades, incluidas otras actividades de flujo de control.
+El diseñador de actividades **Flowchart** se puede arrastrar desde el **cuadro de herramientas** y colocarlo en la superficie diseñador de flujo de trabajo, donde se coloquen normalmente los diseñadores de actividad, ya sea como una actividad raíz o como el elemento secundario de otra actividad de flujo de control. Si el diseñador de actividades **Flowchart** se coloca en una superficie diseñador de flujo de trabajo en blanco, crea una actividad <xref:System.Activities.Statements.Flowchart>, que, de forma predeterminada, se presenta en una vista expandida en la que el nodo de inicio que inicia la ejecución se representa como una bola verde. Si el diseñador de actividades **Flowchart** se coloca en otra actividad de flujo de control, se presenta en una vista minimizada que se puede expandir haciendo doble clic en el diseñador de actividades **Flowchart** . Cualquier actividad del **cuadro de herramientas** se puede arrastrar directamente al diseñador de actividad **Flowchart** , incluidas otras actividades de flujo de control.
 
-Después de arrastrar varios diseñadores de actividades al lienzo del Diseñador de flujo de trabajo, el <xref:System.Activities.Activity> objetos que representan se pueden vincular entre sí para especificar el orden de ejecución. Para crear un vínculo entre una actividad de origen y una actividad de destino, desplace el mouse sobre el diseñador de la actividad de origen y de los identificadores cuadrados que aparecen a ambos lados de la misma. Haga clic en uno de los identificadores cuadrados y arrástrelo manteniendo presionado el botón del mouse hasta uno de los identificadores que aparecen de forma similar rodeando la actividad de destino cuando se mantiene el mouse sobre ella. Suelte el botón del mouse y se creará un vínculo entre ambas actividades que quedará representado como una flecha desde diseñador de origen hasta el diseñador de destino.
+Después de arrastrar varios diseñadores de actividad al lienzo Diseñador de flujo de trabajo, los objetos <xref:System.Activities.Activity> que representan se pueden vincular entre sí para especificar el orden de ejecución. Para crear un vínculo entre una actividad de origen y una actividad de destino, desplace el mouse sobre el diseñador de la actividad de origen y de los identificadores cuadrados que aparecen a ambos lados de la misma. Haga clic en uno de los identificadores cuadrados y arrástrelo manteniendo presionado el botón del mouse hasta uno de los identificadores que aparecen de forma similar rodeando la actividad de destino cuando se mantiene el mouse sobre ella. Suelte el botón del mouse y se creará un vínculo entre ambas actividades que quedará representado como una flecha desde diseñador de origen hasta el diseñador de destino.
 
 ### <a name="flowchart-activity-properties"></a>Propiedades de la actividad Flowchart
 
 En la tabla siguiente se muestran las propiedades <xref:System.Activities.Statements.Flowchart> y se describe cómo se utilizan en el diseñador. Estas propiedades se pueden editar en la cuadrícula de propiedades o en la superficie del diseñador.
 
-|Nombre de la propiedad|Obligatorio|Uso|
+|Nombre de la propiedad|Requerido|Uso|
 |-|--------------|-|
-|<xref:System.Activities.Activity.DisplayName%2A>|False|Especifica el nombre para mostrar del diseñador de actividades en el encabezado. El valor predeterminado es Flowchart. El valor puede modificarse en el **propiedades** ventana o directamente en el encabezado del Diseñador de actividad.<br /><br /> Aunque el valor de la propiedad <xref:System.Activities.Activity.DisplayName%2A> no sea obligatorio, el procedimiento recomendado es usar uno.|
+|<xref:System.Activities.Activity.DisplayName%2A>|False|Especifica el nombre para mostrar del diseñador de actividades en el encabezado. El valor predeterminado es Flowchart. El valor se puede editar en la ventana **propiedades** o directamente en el encabezado del diseñador de actividad.<br /><br /> Aunque el valor de la propiedad <xref:System.Activities.Activity.DisplayName%2A> no sea obligatorio, el procedimiento recomendado es usar uno.|
 |<xref:System.Activities.Statements.Flowchart.Variables%2A>|False|La colección de variables que se aplican a esta clase <xref:System.Activities.Statements.Flowchart> para compartir el estado entre sus actividades secundarias.|
 |<xref:System.Activities.Statements.Flowchart.StartNode%2A>|False|La clase <xref:System.Activities.Statements.FlowNode> que se ejecuta cuando se inicia la clase <xref:System.Activities.Statements.Flowchart>.|
 |<xref:System.Activities.Statements.Flowchart.Nodes%2A>|False|Contiene la colección de objetos <xref:System.Activities.Statements.FlowNode> en la clase <xref:System.Activities.Statements.Flowchart>.|

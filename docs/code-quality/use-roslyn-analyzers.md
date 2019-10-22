@@ -6,17 +6,17 @@ helpviewer_keywords:
 - code analysis, managed code
 - analyzers
 - Roslyn analyzers
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 81c1c200ba9ab0a50381192b34bad5e9b221fb29
-ms.sourcegitcommit: 034c503ae04e22cf840ccb9770bffd012e40fb2d
+ms.openlocfilehash: 6cd4d5517dae889387ec632df57c90485bd366b0
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/14/2019
-ms.locfileid: "72305670"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72649052"
 ---
 # <a name="use-code-analyzers"></a>Usar analizadores de código
 
@@ -28,7 +28,7 @@ Puede realizar gran parte de la personalización de diagnósticos de analizador 
 
 ![Nodo analizadores en Explorador de soluciones](media/analyzers-expanded-in-solution-explorer.png)
 
-Puede ver las propiedades de un diagnóstico, incluida su descripción y gravedad predeterminada, en la ventana **propiedades** . Para ver las propiedades, haga clic con el botón derecho en la regla y seleccione **propiedades**, o seleccione la regla y, a continuación, presione **Alt**+**entrar**.
+Puede ver las propiedades de un diagnóstico, incluida su descripción y gravedad predeterminada, en la ventana **propiedades** . Para ver las propiedades, haga clic con el botón derecho en la regla y seleccione **propiedades**, o seleccione la regla y, a continuación, presione **Alt** +**entrar**.
 
 ![Propiedades de diagnóstico en ventana Propiedades](media/analyzer-diagnostic-properties.png)
 
@@ -66,8 +66,8 @@ En la tabla siguiente se muestran las diferentes opciones de gravedad:
 | Advertencia | `warning` | Las infracciones aparecen como *advertencias* en el lista de errores y en la salida de la compilación de línea de comandos, pero no provocan errores en las compilaciones. | El código infractor se subraya con un subrayado ondulado de color verde y se marca con un pequeño cuadro verde en la barra de desplazamiento. |
 | Info | `suggestion` | Las infracciones aparecen como *mensajes* en el lista de errores y no en todos los resultados de la compilación de línea de comandos. | El código infractor se subraya con un subrayado ondulado de color gris y se marca con un pequeño cuadro gris en la barra de desplazamiento. |
 | Hidden | `silent` | No es visible para el usuario. | No es visible para el usuario. Sin embargo, el diagnóstico se envía al motor de diagnóstico del IDE. |
-| Ninguna | `none` | Se han suprimido por completo. | Se han suprimido por completo. |
-| Default | `default` | Corresponde a la gravedad predeterminada de la regla. Para determinar cuál es el valor predeterminado de una regla, mire en el ventana Propiedades. | Corresponde a la gravedad predeterminada de la regla. |
+| Ninguno | `none` | Se han suprimido por completo. | Se han suprimido por completo. |
+| Predeterminado | `default` | Corresponde a la gravedad predeterminada de la regla. Para determinar cuál es el valor predeterminado de una regla, mire en el ventana Propiedades. | Corresponde a la gravedad predeterminada de la regla. |
 
 La siguiente captura de pantalla del editor de código muestra tres infracciones diferentes con diferentes niveles de gravedad. Observe el color de la línea ondulada y el cuadrado pequeño coloreado en la barra de desplazamiento de la derecha.
 
@@ -101,15 +101,15 @@ Establecer la gravedad de una regla en un archivo EditorConfig tiene prioridad s
    ```
 
 > [!NOTE]
-> En el caso de los analizadores de estilo de código IDE, también puede configurarlos en un archivo EditorConfig con una sintaxis diferente, por ejemplo, `dotnet_style_qualification_for_field = false:suggestion`. Sin embargo, si establece una gravedad mediante la sintaxis `dotnet_diagnostic`, tendrá prioridad. Para obtener más información, vea [convenciones de lenguaje para EditorConfig](../ide/editorconfig-language-conventions.md).
+> En el caso de los analizadores de estilo de código IDE, también puede configurarlos en un archivo EditorConfig con una sintaxis diferente, por ejemplo, `dotnet_style_qualification_for_field = false:suggestion`. Sin embargo, si establece una gravedad mediante la sintaxis de `dotnet_diagnostic`, tendrá prioridad. Para obtener más información, vea [convenciones de lenguaje para EditorConfig](../ide/editorconfig-language-conventions.md).
 
 #### <a name="automatically-configure-rule-severity"></a>Configurar automáticamente la gravedad de la regla
 
 Visual Studio proporciona una manera cómoda de configurar la gravedad de una regla en el menú de bombillas de [acciones rápidas](../ide/quick-actions.md) .
 
-1. Después de que se produzca una infracción, mantenga el mouse sobre la línea ondulada en el editor y abra el menú de bombilla. O bien, coloque el cursor en la línea y presione **Ctrl**+ **.** (punto).
+1. Después de que se produzca una infracción, mantenga el mouse sobre la línea ondulada en el editor y abra el menú de bombilla. O bien, coloque el cursor en la línea y presione **Ctrl** + **.** (punto).
 
-2. En el menú de bombilla, seleccione **configurar o suprimir problemas** > **Configure \<rule ID > Severity**.
+2. En el menú de bombilla, seleccione **configurar o suprimir problemas** > **configurar \<rule ID > gravedad**.
 
    ![Configurar la gravedad de la regla desde el menú de bombilla en Visual Studio](media/configure-rule-severity.png)
 
@@ -126,7 +126,7 @@ Visual Studio proporciona una manera cómoda de configurar la gravedad de una re
 
 ### <a name="set-rule-severity-from-solution-explorer"></a>Establecer la gravedad de la regla desde Explorador de soluciones
 
-1. En **Explorador de soluciones**, expanda **referencias a**los**analizadores**  >  (o las **dependencias**@no__t-**5 para los** proyectos de .net Core).
+1. En **Explorador de soluciones**, expanda **referencias**  > **analizadores** (o **dependencias**  > **analizadores** para proyectos de .net Core).
 
 1. Expanda el ensamblado que contiene la regla para la que desea establecer la gravedad.
 
@@ -138,9 +138,9 @@ Visual Studio proporciona una manera cómoda de configurar la gravedad de una re
 
 ![Archivo de conjunto de reglas en Explorador de soluciones](media/ruleset-in-solution-explorer.png)
 
-1. Abra el archivo del conjunto de reglas activo haciendo doble clic en él en **Explorador de soluciones**, seleccionando **abrir conjunto de reglas activas** en el menú contextual del nodo **referencias** > **analizadores** o seleccionando **abrir** en el **código.** Página de propiedades de análisis del proyecto.
+1. Para abrir el archivo del conjunto de reglas activo, haga doble clic en **Explorador de soluciones**, seleccione **abrir conjunto de reglas activas** en el menú contextual del nodo **referencias**  > **analizadores** o seleccione **abrir** en el **código.** Página de propiedades de análisis del proyecto.
 
-   Si es la primera vez que está editando el conjunto de reglas, Visual Studio realiza una copia del archivo de conjunto de reglas predeterminado, lo denomina *\<projectname >. ruleset*y lo agrega al proyecto. Este conjunto de reglas personalizado también se convierte en el conjunto de reglas activo para el proyecto.
+   Si es la primera vez que está editando el conjunto de reglas, Visual Studio realiza una copia del archivo de conjunto de reglas predeterminado, lo nombra *\<projectname >. ruleset*y lo agrega al proyecto. Este conjunto de reglas personalizado también se convierte en el conjunto de reglas activo para el proyecto.
 
    > [!NOTE]
    > Los proyectos de .NET Core y .NET Standard no admiten los comandos de menú para conjuntos de reglas en **Explorador de soluciones**, por ejemplo, **abrir el conjunto de reglas activo**. Para especificar un conjunto de reglas no predeterminado para un proyecto de .NET Core o .NET Standard, [agregue manualmente la propiedad **CodeAnalysisRuleSet** ](using-rule-sets-to-group-code-analysis-rules.md#specify-a-rule-set-for-a-project) al archivo de proyecto. Todavía puede configurar las reglas en el conjunto de reglas en la interfaz de usuario del editor de conjuntos de reglas de Visual Studio.
@@ -163,7 +163,7 @@ Hay varias maneras de suprimir las infracciones de reglas:
 
 - En el menú **analizar**
 
-  Seleccione **analizar** > **compilación y suprimir problemas activos** en la barra de menús para suprimir todas las infracciones actuales. A veces, esto se conoce como "línea de referencia".
+  Seleccione **analizar**  > **compilar y suprimir problemas activos** en la barra de menús para suprimir todas las infracciones actuales. A veces, esto se conoce como "línea de referencia".
 
 ::: moniker-end
 
@@ -171,7 +171,7 @@ Hay varias maneras de suprimir las infracciones de reglas:
 
 - En el menú **analizar**
 
-  Seleccione **analizar** > **Ejecutar Análisis de código y suprimir problemas activos** en la barra de menús para suprimir todas las infracciones actuales. A veces, esto se conoce como "línea de referencia".
+  Seleccione **analizar**  > **Ejecutar Análisis de código y suprimir problemas activos** en la barra de menús para suprimir todas las infracciones actuales. A veces, esto se conoce como "línea de referencia".
 
 ::: moniker-end
 
@@ -185,19 +185,19 @@ Hay varias maneras de suprimir las infracciones de reglas:
 
 - Desde el **Editor de código**
 
-  Coloque el cursor en la línea de código con la infracción y presione **Ctrl**+**punto (.)** para abrir el menú **acciones rápidas** . Seleccione **suprimir CAXXXX** > **en origen o en archivo de supresión**.
+  Coloque el cursor en la línea de código con la infracción y presione **Ctrl** +**punto (.)** para abrir el menú **acciones rápidas** . Seleccione **suprimir CAXXXX**  > **en origen/en archivo de supresión**.
 
   ![Suprimir diagnóstico del menú acciones rápidas](media/suppress-diagnostic-from-editor.png)
 
 - Desde el **lista de errores**
 
-  Seleccione las reglas que desea suprimir y, a continuación, haga clic con el botón derecho y seleccione **suprimir** > **en origen/en el archivo de supresión**.
+  Seleccione las reglas que desea suprimir y, a continuación, haga clic con el botón derecho y seleccione **suprimir**  > **en origen/en el archivo de supresión**.
 
   - Si se suprime **en origen**, se abre el cuadro de diálogo **vista previa de los cambios** y se muestra una vista previa de la C# [#pragma ADVERTENCIA](/dotnet/csharp/language-reference/preprocessor-directives/preprocessor-pragma-warning) o Visual Basic #Disable Directiva de [ADVERTENCIA](/dotnet/visual-basic/language-reference/directives/directives) que se agrega al código fuente.
 
     ![Vista previa de la adición de #pragma ADVERTENCIA en el archivo de código](media/pragma-warning-preview.png)
 
-  - Si selecciona **en archivo de supresión**, se abre el cuadro de diálogo **vista previa de los cambios** y se muestra una vista previa del atributo <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute> que se agrega al archivo de supresiones global.
+  - Si selecciona **en archivo de supresión**, se abre el cuadro de diálogo **vista previa de los cambios** y se muestra una vista previa del <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute> atributo que se agrega al archivo de supresiones global.
 
     ![Vista previa de la adición del atributo SuppressMessage al archivo de supresión](media/preview-changes-in-suppression-file.png)
 

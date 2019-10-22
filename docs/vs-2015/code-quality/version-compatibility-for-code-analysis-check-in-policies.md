@@ -1,5 +1,5 @@
 ---
-title: Compatibilidad de versiones de directivas de protección de análisis de código | Documentos de Microsoft
+title: Compatibilidad de versiones para directivas de protección de análisis de código | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -9,37 +9,37 @@ helpviewer_keywords:
 - check-in policies, version compatibility for code analysis
 ms.assetid: 1af376e3-3be7-4445-803b-76a858567a5b
 caps.latest.revision: 17
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 0a63ead03baffaa0ce8047220ff1ce8a33c88be8
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 075981569cbee05e90afe17b3afc9558d7bbb270
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68201163"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72609312"
 ---
 # <a name="version-compatibility-for-code-analysis-check-in-policies"></a>Compatibilidad de versiones para las directivas de protección de análisis de código
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Si se debe evaluar y crear con versiones diferentes de las directivas de protección de análisis de código [!INCLUDE[esprtfc](../includes/esprtfc-md.md)], debe conocer las diferencias en cómo [!INCLUDE[vstsTfsOrcasLong](../includes/vststfsorcaslong-md.md)] y [!INCLUDE[vstsTfsRosarioShort](../includes/vststfsrosarioshort-md.md)] evaluar las directivas de protección.  
-  
-## <a name="version-compatibility-for-evaluating-check-in-policies"></a>Compatibilidad de versiones de evaluación de directivas de protección  
-  
-- Cuando se evalúan las directivas de protección de análisis de código en [!INCLUDE[vstsTfsOrcasShort](../includes/vststfsorcasshort-md.md)], todas las reglas que existieron en [!INCLUDE[vstsTfsRosarioShort](../includes/vststfsrosarioshort-md.md)] pero no existen en [!INCLUDE[vstsTfsOrcasShort](../includes/vststfsorcasshort-md.md)] se omiten.  
-  
-- Cuando se evalúan las directivas de protección de análisis de código en [!INCLUDE[vstsTfsRosarioShort](../includes/vststfsrosarioshort-md.md)], todas las nuevas reglas que son exclusivas [!INCLUDE[vstsTfsOrcasShort](../includes/vststfsorcasshort-md.md)] se omiten.  
-  
-- Si la directiva de protección de análisis de código especifica los ensamblados de reglas, [!INCLUDE[vstsTfsOrcasShort](../includes/vststfsorcasshort-md.md)] omite todas las reglas que se especifican los ensamblados que no reconoce.  
-  
-- Si la directiva de protección de análisis de código especifica los ensamblados de reglas que [!INCLUDE[vstsTfsRosarioShort](../includes/vststfsrosarioshort-md.md)] no reconoce, se muestra un mensaje.  
-  
-## <a name="version-compatibility-for-authoring-check-in-policies"></a>Compatibilidad de versiones para la creación de directivas de protección  
-  
-- Si crea una directiva de protección de análisis de código mediante el uso de la [!INCLUDE[vstsTfsOrcasShort](../includes/vststfsorcasshort-md.md)] versión de [!INCLUDE[esprtfc](../includes/esprtfc-md.md)], no puede usar el [!INCLUDE[vstsTfsRosarioShort](../includes/vststfsrosarioshort-md.md)] versión de [!INCLUDE[esprtfc](../includes/esprtfc-md.md)] para modificarlo. Y además, [!INCLUDE[vstsTfsRosarioShort](../includes/vststfsrosarioshort-md.md)] no se puede evaluar la directiva.  
-  
-- Si crea una directiva de protección de análisis de código mediante el uso de [!INCLUDE[esprtfc](../includes/esprtfc-md.md)] en [!INCLUDE[vstsTfsRosarioShort](../includes/vststfsrosarioshort-md.md)], puede usar [!INCLUDE[esprtfc](../includes/esprtfc-md.md)] en [!INCLUDE[vstsTfsOrcasShort](../includes/vststfsorcasshort-md.md)] modificar la base de datos y la directiva también se puede evaluar mediante [!INCLUDE[vstsTfsOrcasShort](../includes/vststfsorcasshort-md.md)]. Después de modificar la directiva mediante el uso de [!INCLUDE[esprtfc](../includes/esprtfc-md.md)] en [!INCLUDE[vstsTfsOrcasShort](../includes/vststfsorcasshort-md.md)], ya no se puede editar la directiva mediante el uso de [!INCLUDE[esprtfc](../includes/esprtfc-md.md)] en [!INCLUDE[vstsTfsRosarioShort](../includes/vststfsrosarioshort-md.md)]. [!INCLUDE[vstsTfsRosarioShort](../includes/vststfsrosarioshort-md.md)] puede evaluar las directivas sin problemas con nombres seguros no coincidentes.  
-  
-- Para crear una directiva de protección de análisis de código con la configuración de las reglas que se aplica a ambos [!INCLUDE[vstsTfsRosarioShort](../includes/vststfsrosarioshort-md.md)] y [!INCLUDE[vstsTfsOrcasShort](../includes/vststfsorcasshort-md.md)], debe crear la directiva en [!INCLUDE[vstsTfsRosarioShort](../includes/vststfsrosarioshort-md.md)], realizar todos los cambios necesarios y guardar la directiva. Si los cambios en las reglas solo existen en [!INCLUDE[vstsTfsOrcasShort](../includes/vststfsorcasshort-md.md)], modifique y guarde la directiva en [!INCLUDE[vstsTfsOrcasShort](../includes/vststfsorcasshort-md.md)].  
-  
-     Después de guardar la directiva en [!INCLUDE[vstsTfsOrcasShort](../includes/vststfsorcasshort-md.md)], ya no puede cambiar la configuración de reglas que existen en [!INCLUDE[vstsTfsRosarioShort](../includes/vststfsrosarioshort-md.md)] solo.
+Si debe evaluar y crear directivas de protección de análisis de código con versiones diferentes de [!INCLUDE[esprtfc](../includes/esprtfc-md.md)], debe conocer las diferencias en el modo en que [!INCLUDE[vstsTfsOrcasLong](../includes/vststfsorcaslong-md.md)] y [!INCLUDE[vstsTfsRosarioShort](../includes/vststfsrosarioshort-md.md)] evaluar las directivas de protección.
+
+## <a name="version-compatibility-for-evaluating-check-in-policies"></a>Compatibilidad de versiones para evaluar directivas de protección
+
+- Cuando se evalúan las directivas de protección de análisis de código en [!INCLUDE[vstsTfsOrcasShort](../includes/vststfsorcasshort-md.md)], se omiten las reglas que existían en [!INCLUDE[vstsTfsRosarioShort](../includes/vststfsrosarioshort-md.md)] pero que no existen en [!INCLUDE[vstsTfsOrcasShort](../includes/vststfsorcasshort-md.md)].
+
+- Cuando se evalúan las directivas de protección de análisis de código en [!INCLUDE[vstsTfsRosarioShort](../includes/vststfsrosarioshort-md.md)], se omiten todas las nuevas reglas que son exclusivas de [!INCLUDE[vstsTfsOrcasShort](../includes/vststfsorcasshort-md.md)].
+
+- Si la Directiva de inserción en el repositorio del análisis de código especifica los ensamblados de reglas, [!INCLUDE[vstsTfsOrcasShort](../includes/vststfsorcasshort-md.md)] omite todas las reglas especificadas por los ensamblados que no reconoce.
+
+- Si la Directiva de inserción en el repositorio del análisis de código especifica los ensamblados de reglas que [!INCLUDE[vstsTfsRosarioShort](../includes/vststfsrosarioshort-md.md)] no reconoce, se muestra un mensaje.
+
+## <a name="version-compatibility-for-authoring-check-in-policies"></a>Compatibilidad de versiones para la creación de directivas de inserción en el repositorio
+
+- Si ha creado una directiva de protección de análisis de código mediante la versión [!INCLUDE[vstsTfsOrcasShort](../includes/vststfsorcasshort-md.md)] de [!INCLUDE[esprtfc](../includes/esprtfc-md.md)], no puede usar la versión [!INCLUDE[vstsTfsRosarioShort](../includes/vststfsrosarioshort-md.md)] de [!INCLUDE[esprtfc](../includes/esprtfc-md.md)] para modificarla. Además, [!INCLUDE[vstsTfsRosarioShort](../includes/vststfsrosarioshort-md.md)] no pueden evaluar la Directiva.
+
+- Si ha creado una directiva de protección de análisis de código mediante [!INCLUDE[esprtfc](../includes/esprtfc-md.md)] en [!INCLUDE[vstsTfsRosarioShort](../includes/vststfsrosarioshort-md.md)], puede usar [!INCLUDE[esprtfc](../includes/esprtfc-md.md)] en [!INCLUDE[vstsTfsOrcasShort](../includes/vststfsorcasshort-md.md)] para modificarla, y la Directiva también puede ser evaluada por [!INCLUDE[vstsTfsOrcasShort](../includes/vststfsorcasshort-md.md)]. Después de modificar la Directiva mediante el uso de [!INCLUDE[esprtfc](../includes/esprtfc-md.md)] en [!INCLUDE[vstsTfsOrcasShort](../includes/vststfsorcasshort-md.md)], ya no puede editar la Directiva con [!INCLUDE[esprtfc](../includes/esprtfc-md.md)] en [!INCLUDE[vstsTfsRosarioShort](../includes/vststfsrosarioshort-md.md)]. [!INCLUDE[vstsTfsRosarioShort](../includes/vststfsrosarioshort-md.md)] puede evaluar las directivas sin problemas con nombres seguros no coincidentes.
+
+- Para crear una directiva de protección de análisis de código con la configuración de reglas que se aplica tanto a [!INCLUDE[vstsTfsRosarioShort](../includes/vststfsrosarioshort-md.md)] como a [!INCLUDE[vstsTfsOrcasShort](../includes/vststfsorcasshort-md.md)], debe crear la Directiva en [!INCLUDE[vstsTfsRosarioShort](../includes/vststfsrosarioshort-md.md)], realizar todos los cambios necesarios y guardar la Directiva. Si los cambios en las reglas solo existen en [!INCLUDE[vstsTfsOrcasShort](../includes/vststfsorcasshort-md.md)], modifique y guarde la Directiva en [!INCLUDE[vstsTfsOrcasShort](../includes/vststfsorcasshort-md.md)].
+
+     Después de guardar la Directiva en [!INCLUDE[vstsTfsOrcasShort](../includes/vststfsorcasshort-md.md)], ya no podrá cambiar la configuración de las reglas que solo existen en [!INCLUDE[vstsTfsRosarioShort](../includes/vststfsrosarioshort-md.md)].

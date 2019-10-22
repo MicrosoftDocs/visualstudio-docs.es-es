@@ -12,15 +12,15 @@ helpviewer_keywords:
 - ComplexBindingPropertiesAttribute class, using
 - Data Sources Window, selecting controls
 ms.assetid: 8c43e7d2-ba94-4d9b-96de-3aa971955afd
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: b81bd3237f3eb2aa9a4c096ddfeae2c7bcd08c09
-ms.sourcegitcommit: 6b0503ed8d25454d6e39a8e606910b3fa58cf1d2
+ms.openlocfilehash: b6334d233ccb2c4453d117b6bdfe942b6ea092e2
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "68980554"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72648915"
 ---
 # <a name="add-custom-controls-to-the-data-sources-window"></a>Agregar controles personalizados a la ventana de orígenes de datos
 
@@ -39,11 +39,11 @@ Para agregar o quitar controles de la lista de controles disponibles para los el
 2. En la ventana **orígenes de datos** , haga clic en un elemento que forme parte de un origen de datos que haya agregado a la ventana y, a continuación, haga clic en el menú desplegable del elemento.
 
    > [!TIP]
-   > Si la ventana orígenes de datos no está abierta, ábrala seleccionando **Ver** > otros**orígenes de datos**de**Windows** > .
+   > Si la ventana orígenes de datos no está abierta, ábrala seleccionando **ver**  > **otras ventanas**  > **orígenes de datos**.
 
 3. En el menú desplegable, haga clic en **personalizar**. Se abre uno de los cuadros de diálogo siguientes:
 
-    - Si el **Diseñador de Windows Forms** está abierto, se abre la página Personalización de la **interfaz de usuario de datos** del cuadro de diálogo **Opciones** . Para obtener más información, vea [cuadro de diálogo Opciones](../ide/reference/options-windows-forms-designer-data-ui-customization.md)de personalización de la interfaz de usuario de datos.
+    - Si el **Diseñador de Windows Forms** está abierto, se abre la página **Personalización** de la interfaz de usuario de datos del cuadro de diálogo **Opciones** . Para obtener más información, vea [cuadro de diálogo Opciones de personalización](../ide/reference/options-windows-forms-designer-data-ui-customization.md)de la interfaz de usuario de datos.
 
     - Si el **Diseñador WPF** está abierto, se abre el cuadro de diálogo **personalizar enlace de control** .
 
@@ -60,7 +60,7 @@ Para agregar o quitar controles de la lista de controles disponibles para los el
     > [!NOTE]
     > Si el control que desea seleccionar no aparece en el cuadro **controles asociados** , debe agregar el control a la lista. Para obtener más información, vea [Agregar controles asociados](#add-associated-controls).
 
-6. Haga clic en **OK**.
+6. Haga clic en **Aceptar**.
 
 7. En la ventana **orígenes de datos** , haga clic en un elemento del tipo de datos al que acaba de asociar uno o varios controles y, a continuación, haga clic en el menú desplegable del elemento.
 
@@ -76,13 +76,13 @@ Para agregar controles a la lista de controles asociados:
 
      El control debe tener uno de los siguientes atributos:
 
-    |Atributo|DESCRIPCIÓN|
+    |Atributo|Descripción|
     |---------------|-----------------|
-    |<xref:System.ComponentModel.DefaultBindingPropertyAttribute>|Implemente este atributo en controles simples que muestren una única columna (o propiedad) de datos, <xref:System.Windows.Forms.TextBox>como.|
-    |<xref:System.ComponentModel.ComplexBindingPropertiesAttribute>|Implemente este atributo en los controles que muestran listas (o tablas) de datos, <xref:System.Windows.Forms.DataGridView>como.|
-    |<xref:System.ComponentModel.LookupBindingPropertiesAttribute>|Implemente este atributo en controles que muestren listas (o tablas) de datos, pero que también necesiten presentar una única columna o propiedad, <xref:System.Windows.Forms.ComboBox>como.|
+    |<xref:System.ComponentModel.DefaultBindingPropertyAttribute>|Implemente este atributo en controles simples que muestren una única columna (o propiedad) de datos, como un <xref:System.Windows.Forms.TextBox>.|
+    |<xref:System.ComponentModel.ComplexBindingPropertiesAttribute>|Implemente este atributo en los controles que muestran listas (o tablas) de datos, como un <xref:System.Windows.Forms.DataGridView>.|
+    |<xref:System.ComponentModel.LookupBindingPropertiesAttribute>|Implemente este atributo en controles que muestren listas (o tablas) de datos, pero que también necesiten presentar una única columna o propiedad, como un <xref:System.Windows.Forms.ComboBox>.|
 
-2. Por Windows Forms, en el cuadro de diálogo **Opciones** , abra la página de personalización de la **interfaz de usuario de datos** . O bien, para WPF, abra el cuadro de diálogo **personalizar enlace de control** . Para obtener más información, vea [personalizar la lista de controles enlazables para un tipo de datos](#customize-the-bindable-controls-list).
+2. Por Windows Forms, en el cuadro de diálogo **Opciones** , abra la página de **Personalización** de la interfaz de usuario de datos. O bien, para WPF, abra el cuadro de diálogo **personalizar enlace de control** . Para obtener más información, vea [personalizar la lista de controles enlazables para un tipo de datos](#customize-the-bindable-controls-list).
 
 3. En el cuadro **controles asociados** , ahora debe aparecer el control que acaba de agregar al cuadro de **herramientas** .
 

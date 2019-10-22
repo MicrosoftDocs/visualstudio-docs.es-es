@@ -5,20 +5,20 @@ ms.topic: conceptual
 helpviewer_keywords:
 - text templates, build tasks
 - text templates, transforming by using msbuild
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 dev_langs:
 - CSharp
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 4d26c0b464341bee7bce0b46bfdbcc89e0248a81
-ms.sourcegitcommit: e95dd8cedcd180e0bce6a75c86cf861757918290
+ms.openlocfilehash: 9c9cc0d8a40970e2ec36030ab3121d6fc02748e2
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/09/2019
-ms.locfileid: "72163118"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72654200"
 ---
 # <a name="invoke-text-transformation-in-the-build-process"></a>Invocar la transformación de texto en el proceso de compilación
 
@@ -49,9 +49,9 @@ Si [el servidor de compilación](/azure/devops/pipelines/agents/agents) se ejecu
 - % ProgramFiles (x86)% \ Microsoft Visual Studio\2019\Community\Common7\IDE\PublicAssemblies
 
   - Microsoft. VisualStudio. TextTemplating. Modeling. 15.0. dll
-  
+
 > [!TIP]
-> Si obtiene un `MissingMethodException` para un método Microsoft. CodeAnalysis al ejecutar los destinos de compilación de TextTemplating en un servidor de compilación, asegúrese de que los ensamblados Roslyn se encuentren en un directorio denominado *Roslyn* que se encuentre en el mismo directorio que el ejecutable de compilación (por ejemplo,  *MSBuild. exe*).
+> Si obtiene un `MissingMethodException` para un método Microsoft. CodeAnalysis al ejecutar los destinos de compilación de TextTemplating en un servidor de compilación, asegúrese de que los ensamblados de Roslyn se encuentren en un directorio denominado *Roslyn* que esté en el mismo directorio que el ejecutable de compilación (por ejemplo,  *MSBuild. exe*).
 
 ## <a name="edit-the-project-file"></a>Edición del archivo del proyecto
 
@@ -116,11 +116,11 @@ Hay algunas propiedades que se pueden insertar en el archivo de proyecto para co
     ```
 
      De forma predeterminada, la tarea de MSBuild T4 regenera un archivo de salida si es anterior a:
-     
+
      - su archivo de plantilla
      - los archivos que se incluyen
      - los archivos leídos previamente por la plantilla o por un procesador de directivas que utiliza
-     
+
      Se trata de una prueba de dependencia más eficaz que la que usa el comando **transformar todas las plantillas** en Visual Studio, que solo compara las fechas de la plantilla y el archivo de salida.
 
 Para realizar solo las transformaciones de texto en el proyecto, invoque la tarea TransformAll:
@@ -164,7 +164,7 @@ La transformación de texto se realiza antes que otras tareas del proceso de com
 
 En `AfterTransform`, se puede hacer referencia a listas de archivos:
 
-- GeneratedFiles: lista de archivos en los que ha escrito el proceso. En el caso de los archivos que han sobrescrito los archivos de solo lectura existentes, `%(GeneratedFiles.ReadOnlyFileOverwritten)` será true. Estos archivos se pueden desproteger del control de código fuente.
+- GeneratedFiles: lista de archivos en los que ha escrito el proceso. En el caso de los archivos que sobrescribieron los archivos de solo lectura existentes, `%(GeneratedFiles.ReadOnlyFileOverwritten)` será true. Estos archivos se pueden desproteger del control de código fuente.
 
 - NonGeneratedFiles: lista de archivos de solo lectura que no se sobrescribieron.
 
@@ -285,7 +285,7 @@ Estas directivas obtienen valores de T4parameterValues tanto en hosts de MSBuild
 
 ## <a name="q--a"></a>Preguntas y respuestas
 
-**Why deseo transformar plantillas en el servidor de compilación? Ya he transformado plantillas en Visual Studio antes de proteger el código.**
+**¿Por qué sería conveniente transformar las plantillas en el servidor de compilación? Ya he transformado plantillas en Visual Studio antes de proteger el código.**
 
 Si actualiza un archivo incluido u otro archivo leído por la plantilla, Visual Studio no transforma el archivo automáticamente. La transformación de plantillas como parte de la compilación garantiza que todo está actualizado.
 

@@ -6,15 +6,15 @@ ms.prod: visual-studio-dev14
 ms.topic: conceptual
 ms.assetid: 772b6cf4-cee5-42d0-bc18-b4eb07e22ff0
 caps.latest.revision: 36
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 90a7611e0b8895b0ed3540cae861ebafec9ae4bd
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 52e0b8f87774b11b1750700d5bef19c5423824c4
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65698612"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72667143"
 ---
 # <a name="visual-studio-ide"></a>IDE de Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,7 +44,7 @@ Para obtener información sobre las nuevas características de Visual Studio 2
 ## <a name="ide-basics"></a>Conceptos básicos del IDE
  La siguiente imagen muestra el IDE de Visual Studio con un proyecto abierto, la ventana Explorador de soluciones para desplazarse por los archivos de proyecto y la ventana de Team Explorer para navegar por el código fuente y controlar los elementos de trabajo. A continuación se explican con más detalle las características de la barra de título mencionadas.
 
- ![IDE de Visual Studio](../ide/media/visualstudioide.png "VisualStudioIDE")
+ ![IDE de Visual Studio](../ide/media/visualstudioide.png "|::ref1::|")
 
 ### <a name="signing-in"></a>Iniciar sesión
  Cuando se inicia Visual Studio por primera vez, puede iniciar sesión con su cuenta de Microsoft o con su cuenta de trabajo o escuela. Iniciar sesión le permite sincronizar la configuración (como la disposición de ventanas) entre varios dispositivos y conectarse automáticamente a los servicios que pueda necesitar, como las suscripciones de Azure y Visual Studio Team Services. Si tiene una licencia de suscripción, deberá iniciar sesión Visual Studio de forma periódica para mantener actualizado su token de licencia. Si tiene una licencia de clave de producto, no tiene que iniciar sesión, pero hacerlo le permitirá conectarse más cómodamente a Visual Studio Team Services y a sus cuentas con Azure, Office 365, Salesforce.com. Para obtener más información, vea [Iniciar sesión en Visual Studio](../ide/signing-in-to-visual-studio.md).
@@ -57,7 +57,7 @@ Para obtener información sobre las nuevas características de Visual Studio 2
 ### <a name="finding-things-and-getting-help"></a>Realizar búsquedas y obtener ayuda
  La ventana [Inicio rápido](../ide/reference/quick-launch-environment-options-dialog-box.md) que se muestra más abajo es una forma rápida de buscar los comandos, las herramientas o las características de Visual Studio si no conoce la ubicación del menú o el método abreviado de teclado. Escriba lo que está buscando e Inicio rápido le proporcionará un vínculo.
 
- ![Resultados de inicio rápido para "nuevo proyecto"](../ide/media/productivity-quicklaunch.png "Productivity_QuickLaunch")
+ ![Resultados de inicio rápido para "nuevo proyecto"](../ide/media/productivity-quicklaunch.png "|::ref2::|")
 
  MSDN es el sitio web de documentación técnica; en este momento está leyendo esta página en MSDN. En Visual Studio, puede presionar **F1** para ir a la página de ayuda de MSDN de la ventana activa. También puede presionar **F1** en el editor de código para ir a la página de ayuda de MSDN para la API o la palabra clave que está en la posición actual del símbolo de intercalación. Por ejemplo, en un archivo de C#, podría colocar el símbolo de intercalación en algún lugar dentro o al final de una declaración `System.String` y, después, presionar **F1** para ir a la página de ayuda de MSDN de <xref:System.String>.
 
@@ -78,21 +78,21 @@ Para obtener información sobre las nuevas características de Visual Studio 2
 
  En la siguiente imagen se muestra el panel Team Explorer de una solución que se hospeda en VSTS:
 
- ![Visual Studio Team Explorer](../ide/media/vs2015-teamexplorer.png "VS2015_TeamExplorer")
+ ![Visual Studio Team Explorer](../ide/media/vs2015-teamexplorer.png "|::ref3::|")
 
 ## <a name="creating-solutions-and-projects"></a>Crear soluciones y proyectos
  Aunque puede usar Visual Studio para examinar archivos de código individuales, normalmente trabajará en un *proyecto*. Un proyecto de Visual Studio es una colección de archivos y recursos que, en el caso de las aplicaciones, se compilan en un solo archivo ejecutable binario (por ejemplo, .exe, DLL, appx, etc.). En el caso de sitios web que no sean ASP.NET, no se genera ningún archivo ejecutable y el proyecto contiene solo los archivos HTML y JavaScript e imágenes. Como a veces quizás tenga que crear varios archivos binarios o sitios web que están estrechamente relacionados, Visual Studio tiene el concepto de solución, que puede contener varios proyectos o sitios web. Cuando se crea un proyecto, en realidad está creando un proyecto en una solución, y más adelante puede agregar más proyectos a esa solución si es necesario. Por ejemplo, si tiene un proyecto DLL, puede agregar a la solución un proyecto .exe que carga y usa el archivo DLL.
 
  Una *plantilla de proyecto* es una colección de archivos de código y opciones de configuración previamente rellenados que permite preparar rápidamente la creación de un tipo específico de aplicación. Visual Studio incluye numerosas plantillas de proyecto para elegir pero, si no le sirve ninguna de las plantillas predeterminadas, puede crear las suyas propias. Después de crear un proyecto con una plantilla, puede empezar a escribir su propio código en él, en los archivos proporcionados o en los nuevos archivos que agregue. Para obtener más información, vea [Soluciones y proyectos](../ide/solutions-and-projects-in-visual-studio.md). La ilustración siguiente muestra el cuadro de diálogo Nuevo proyecto con las plantillas de proyecto que hay disponibles para las aplicaciones ASP.NET.
 
- ![Cuadro de diálogo Nuevo proyecto de Visual Studio](../ide/media/vs2015-newprojectdialog.png "VS2015_NewProjectDialog")
+ ![Cuadro de diálogo Nuevo proyecto de Visual Studio](../ide/media/vs2015-newprojectdialog.png "|::ref4::|")
 
 ## <a name="designing-the-user-interface"></a>Diseñar la interfaz de usuario
  Un diseñador es una herramienta intuitiva que permite crear una interfaz de usuario sin escribir código. Puede arrastrar los controles de interfaz de usuario, como cuadros de lista, calendarios y botones, desde la ventana [Toolbox](../ide/reference/toolbox.md) hasta una superficie de diseño que represente el cuadro de diálogo o la ventana. Puede cambiar el tamaño y reorganizar los elementos sin escribir ningún código. Se incluyen diseñadores para cualquier tipo de proyecto que tenga una interfaz de usuario.
 
  Si el proyecto tiene una interfaz de usuario basada en XAML, el diseñador predeterminado es Blend para Visual Studio, una sofisticada herramienta de gráficos que funciona sin problemas con Visual Studio.
 
- ![Mesa de trabajo](../ide/media/b5-artboard.png "b5_artboard")
+ ![Mesa de trabajo](../ide/media/b5-artboard.png "|::ref5::|")
 
 |||
 |-|-|
@@ -109,7 +109,7 @@ Para obtener información sobre las nuevas características de Visual Studio 2
 
  Puede modificar archivos individuales en el editor de texto haciendo clic en **Archivo &#124; Abrir &#124; Archivo.** Para editar archivos en un proyecto abierto, haga clic en el nombre de archivo en el Explorador de soluciones. Se colorea el código y puede personalizar la combinación de colores escribiendo "Colores" en el inicio rápido. Puede tener muchas ventanas en pestañas del editor de texto abiertas a la vez. Puede dividir cada ventana de forma independiente. También puede ejecutar el editor de texto en modo de pantalla completa.
 
- ![GreetingsConsoleApp.cpp in the code editor](../ide/media/c-ide-editorlinenumberswordwrapon.png "C++IDE_EditorLineNumbersWordWrapOn")
+ ![GreetingsConsoleApp.cpp en el editor de código](../ide/media/c-ide-editorlinenumberswordwrapon.png "|::ref11::|")
 
  El editor de texto es sumamente interactivo (si quiere que lo sea) con muchas características de productividad que le ayudarán a escribir código mejor y más rápidamente. Las características varían según el lenguaje y no tiene que usar todas ellas. Escriba "Editor" en Inicio rápido para activar o desactivar características. Algunas de las características de productividad más comunes son:
 
@@ -117,11 +117,11 @@ Para obtener información sobre las nuevas características de Visual Studio 2
 
 2. *IntelliSense* es un término que aglutina un conjunto de características muy populares que muestran información escritura sobre el código directamente en el editor y, en algunos casos, escriben pequeños fragmentos de código automáticamente. Básicamente, IntelliSense es como tener documentación básica insertada en el editor, lo que evita tener que buscar información de escritura en una ventana de ayuda independiente. Las características de IntelliSense varían según el lenguaje. Para más información, consulte [Visual C# IntelliSense](../ide/visual-csharp-intellisense.md), [Visual C++ Intellisense](../ide/visual-cpp-intellisense.md), [JavaScript IntelliSense](../ide/javascript-intellisense.md), [Visual Basic-Specific IntelliSense](../ide/visual-basic-specific-intellisense.md). La ilustración siguiente muestra algunas características de IntelliSense en funcionamiento:
 
-    ![Lista de miembros de Visual Studio](../ide/media/vs2015-intellisense.png "vs2015_Intellisense")
+    ![Lista de miembros de Visual Studio](../ide/media/vs2015-intellisense.png "|::ref12::|")
 
 3. Los**subrayados ondulados** le avisan de errores o posibles problemas en el código en tiempo real a medida que escribe, lo que permite corregirlos inmediatamente sin esperar a que el error se detecte en tiempo de compilación o de ejecución. Si mantiene el mouse sobre la línea ondulada, verá información adicional sobre el error. También puede aparecer una bombilla en el margen izquierdo con sugerencias para corregir el error. Para obtener más información, consulta [Perform quick actions with light bulbs](../ide/perform-quick-actions-with-light-bulbs.md).
 
-    ![Bombilla con el desplazamiento del mouse](../ide/media/vs2015-lightbulb-hover.png "VS2015_LightBulb_Hover")
+    ![Bombilla con el desplazamiento del mouse](../ide/media/vs2015-lightbulb-hover.png "|::ref13::|")
 
 4. Los [marcadores](../ide/setting-bookmarks-in-code.md) le permiten ir rápidamente a líneas específicas en los archivos en los que está trabajando activamente.
 
@@ -135,7 +135,7 @@ Para obtener información sobre las nuevas características de Visual Studio 2
 
 9. La herramienta relacionada [Examinador de objetos](https://msdn.microsoft.com/f89acfc5-1152-413d-9f56-3dc16e3f0470) permite inspeccionar ensamblados .NET o Windows Runtime en el sistema para ver qué tipos contienen y qué métodos y propiedades contienen esos tipos.
 
-     ![Examinador de objetos que muestra System.Timer](../ide/media/objectbrowser.png "ObjectBrowser")
+     ![Examinador de objetos que muestra System.Timer](../ide/media/objectbrowser.png "|::ref14::|")
 
    La mayoría de los elementos de los menús Editar y Ver se relacionan con el editor de código de alguna manera. Para obtener más información sobre el editor, vea [Writing Code (Escribir código)](../ide/writing-code-in-the-code-and-text-editor.md) y [Edición del código](https://www.visualstudio.com/features/ide-vs).
 
@@ -148,7 +148,7 @@ La salida de la compilación, incluidos los mensajes de error o éxito, aparecen
 ## <a name="debugging-your-code"></a>Depurar el código
  El vanguardista depurador de Visual Studio le permite depurar el código que se ejecuta en su proyecto local, en un dispositivo remoto o en un emulador, como los de Android o Windows Phone. Puede ejecutar el código instrucción por instrucción e inspeccionar las variables en cada paso, puede ejecutar paso a paso aplicaciones multiproceso y puede establecer puntos de interrupción que solo se producen cuando se cumple una condición especificada. Todo esto se puede configurar en el propio editor de código para que no tenga que salir del contexto del código.
 
- ![Vista de ventana de configuración del punto de interrupción](../ide/media/dbg-breakpoints-peekwindow.png "DBG_Breakpoints_PeekWindow")
+ ![Ventana de Peek de configuración de punto de interrupción](../ide/media/dbg-breakpoints-peekwindow.png "|::ref15::|")
 
  El propio depurador tiene varias ventanas que le permiten ver y manipular las variables locales, la pila de llamadas y otros aspectos del entorno en tiempo de ejecución. Encontrará estas ventanas en el menú **Depurar** .
 
@@ -161,7 +161,7 @@ La salida de la compilación, incluidos los mensajes de error o éxito, aparecen
 ## <a name="testing-your-code"></a>Probar el código
  Visual Studio incluye un entorno de pruebas unitarias para código administrado (.NET) y otro para C++ nativo. Para crear pruebas unitarias, basta con agregar un proyecto de prueba a la solución, escribir las pruebas y, después, ejecutarlas desde la ventana Explorador de pruebas. Para obtener más información, vea [Haga una prueba unitaria de su código](../test/unit-test-your-code.md).
 
- ![Explorador de pruebas unitarias](../ide/media/ute-failedpassednotrunsummary.png "UTE_FailedPassedNotRunSummary")
+ ![Explorador de pruebas unitarias](../ide/media/ute-failedpassednotrunsummary.png "|::ref16::|")
 
 ## <a name="analyzing-code-quality-and-performance"></a>Analizar la calidad y el rendimiento del código
  Visual Studio incluye herramientas eficaces para el análisis estático y en tiempo de ejecución. Las herramientas de análisis estático ayudan a identificar posibles errores de diseño, globalización, interoperabilidad, rendimiento, seguridad y otras categorías. Las pruebas de rendimiento o de generación de perfiles implican medir cómo se ejecuta el programa. A estas herramientas se accede desde el menú **Analizar** . Para obtener más información, consulte [Mejorar la calidad con las herramientas de diagnóstico de Visual Studio](https://msdn.microsoft.com/library/73baa961-c21f-43fe-bb92-3f59ae9b5945).
@@ -169,13 +169,13 @@ La salida de la compilación, incluidos los mensajes de error o éxito, aparecen
 ## <a name="connecting-to-cloud-services-and-databases"></a>Conectarse a bases de datos y servicios en la nube
  La ventana [Explorador de servidores](https://msdn.microsoft.com/library/4ea29b3b-bbb2-45e4-9082-eaf635c41c4d) de Visual Studio muestra los recursos de todas las cuentas administradas en su cuenta de personalización (con la que inició sesión), incluidas las instancias de SQL Server, Azure, Salesforce.com, Office 365 y los sitios web.
 
- ![Explorador de servidores](../ide/media/vs2015-serverexplorer3.png "vs2015_ServerExplorer3")
+ ![Explorador de servidores](../ide/media/vs2015-serverexplorer3.png "|::ref17::|")
 
  Visual Studio incluye [Microsoft SQL Server Data Tools](https://msdn.microsoft.com/data/tools.aspx) (SSDT), que permiten compilar, depurar, mantener y refactorizar bases de datos. Puede trabajar con un proyecto de base de datos o directamente con una instancia de base de datos conectada de manera local o externa.
 
  El Explorador de objetos de SQL Server en Visual Studio ofrece una vista de los objetos de base de datos similar a la de SQL Server Management Studio. El Explorador de objetos de SQL Server permite realizar trabajos ligeros de administración y diseño de bases de datos, incluida la edición de datos de tabla, comparación de esquemas y ejecución de consultas mediante los menús contextuales directamente desde el Explorador de objetos de SQL Server. SSDT también incluye tipos de proyecto especiales y herramientas para desarrollar soluciones de SQL Server 2012 Analysis Services, Reporting Services e Integration Services Business Intelligence (BI), antes conocido como Business Intelligence Development Studio.
 
- ![Explorador de objetos de SQL Server](../ide/media/vs2015-sqlobjectexplorer.png "vs2015_SQLObjectExplorer")
+ ![Explorador de objetos de SQL Server](../ide/media/vs2015-sqlobjectexplorer.png "|::ref18::|")
 
 ## <a name="deploying-your-finished-application"></a>Implementar la aplicación finalizada
  Cuando la aplicación está lista para implementarse en los clientes, Visual Studio proporciona las herramientas para hacerlo, ya sea para implementar en la Tienda Windows, en un sitio de Sharepoint o usando las tecnologías Installshield o Windows Installer. Todo está disponible a través del IDE. Para obtener más información, consulte [Implementar aplicaciones, servicios y componentes](../deployment/deploying-applications-services-and-components.md).
@@ -203,7 +203,7 @@ La salida de la compilación, incluidos los mensajes de error o éxito, aparecen
 |[Ejemplos de Visual Studio](../ide/visual-studio-samples.md)|[Visor de Ayuda de Microsoft](../ide/microsoft-help-viewer.md)|
 |[Globalizar y localizar aplicaciones](../ide/globalizing-and-localizing-applications.md)|[Referencia de la interfaz de usuario](../ide/reference/general-user-interface-elements-visual-studio.md)|
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Otras referencias
 
 - [Instalación de Visual Studio 2015](../install/install-visual-studio-2015.md)
 - [Edición del código](https://www.visualstudio.com/features/ide-vs)

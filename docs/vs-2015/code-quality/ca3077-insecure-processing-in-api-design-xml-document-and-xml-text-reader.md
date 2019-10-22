@@ -1,21 +1,21 @@
 ---
-title: 'CA3077: Inseguro de procesamiento en el diseño de API, documento XML y lector de texto XML | Documentos de Microsoft'
+title: 'CA3077: procesamiento inseguro en el diseño de la API, documento XML y lector de texto XML | Microsoft Docs'
 ms.date: 11/15/2016
 ms.technology: vs-ide-code-analysis
 ms.topic: reference
 ms.assetid: 7f33771b-f3c8-4c02-bef6-f581b623c303
 caps.latest.revision: 9
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: d8f1e04483c486add9940bf3a78ec4c35eb2317d
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 83132da4b6687db74920015df0ad817eb75673db
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65693372"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72669046"
 ---
-# <a name="ca3077-insecure-processing-in-api-design-xml-document-and-xml-text-reader"></a>CA3077: Procesamiento no seguro en el diseño de una API, documento XML y lector de texto XML
+# <a name="ca3077-insecure-processing-in-api-design-xml-document-and-xml-text-reader"></a>CA3077: procesamiento inseguro en el diseño de una API, documento XML y lector de texto XML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
@@ -37,9 +37,9 @@ ms.locfileid: "65693372"
 
 ## <a name="how-to-fix-violations"></a>Cómo corregir infracciones
 
-- Detecte y procese todas las excepciones XmlTextReader correctamente para evitar la divulgación de información de ruta de acceso.
+- Detecte y procese todas las excepciones de XmlTextReader correctamente para evitar la divulgación de información de ruta de acceso.
 
-- Use <xref:System.Xml.XmlSecureResolver>en lugar de XmlResolver para restringir los recursos que se puede obtener acceso XmlTextReader.
+- Use  <xref:System.Xml.XmlSecureResolver>instead de XmlResolver para restringir los recursos a los que puede tener acceso XmlTextReader.
 
 ## <a name="when-to-suppress-warnings"></a>Cuándo suprimir advertencias
  A menos que esté seguro de que la entrada es de un origen de confianza, no suprima ninguna regla de esta advertencia.

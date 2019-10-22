@@ -1,7 +1,7 @@
 ---
-title: Comandos de la consola de JavaScript | Documentos de Microsoft
+title: Comandos de la consola JavaScript | Microsoft Docs
 ms.custom: ''
-ms.date: 03/28/2019
+ms.date: 10/17/2019
 ms.topic: reference
 helpviewer_keywords:
 - JavaScript Console commands [UWP apps]
@@ -10,33 +10,30 @@ helpviewer_keywords:
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - uwp
 - cordova
-ms.openlocfilehash: 40e32250378d92ac63e4a057a59ee847de6af810
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: fead28e60116acb7b2ae311d98e5475c5da3ec35
+ms.sourcegitcommit: 8a96a65676fd7a2a03b0803d7eceae65f3fa142b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62905679"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72588979"
 ---
-# <a name="javascript-console-commands-in-visual-studio"></a>Comandos de la consola de JavaScript en Visual Studio
+# <a name="javascript-console-commands-in-visual-studio"></a>Comandos de la consola JavaScript en Visual Studio
 
-::: moniker range=">=vs-2019"
-La ventana Consola JavaScript de Visual Studio te permite usar comandos para enviar mensajes y realizar otras tareas. La información de este tema se aplica a las aplicaciones de Node.js que se creó con Visual Studio con el **desarrollo de Node.js** carga de trabajo instalada.
-::: moniker-end
-::: moniker range="vs-2017"
-La ventana Consola JavaScript de Visual Studio te permite usar comandos para enviar mensajes y realizar otras tareas. Para obtener ejemplos que muestran cómo usar esta ventana, consulte [inicio rápido: Depurar JavaScript](../debugger/quickstart-debug-javascript-using-the-console.md?view=vs-2017). La información de este tema se aplica a la aplicación de Node.js, UWP apps y las aplicaciones creadas con Visual Studio Tools para Apache Cordova. Para obtener información acerca sobre los comandos de consola compatibles en las aplicaciones de Cordova, vea [Debug Your App](https://taco.visualstudio.com/en-us/docs/debug-using-visual-studio/).
-::: moniker-end
+La ventana Consola JavaScript de Visual Studio te permite usar comandos para enviar mensajes y realizar otras tareas. Para obtener ejemplos que muestran cómo usar esta ventana, consulte [Inicio rápido: depurar JavaScript](../debugger/quickstart-debug-javascript-using-the-console.md?view=vs-2017). La información de este tema se aplica a la aplicación node. js, a las aplicaciones UWP y a las aplicaciones creadas con Visual Studio Tools para Apache Cordova.
 
 Si la ventana Consola JavaScript está cerrada, puedes abrirla durante la depuración en Visual Studio si eliges **Depurar** > **Ventanas** > **Consola JavaScript**.
 
 > [!NOTE]
 > Si la ventana no está disponible durante una sesión de depuración, asegúrese de que el tipo de depurador está establecido en **Script** en las propiedades de depuración del proyecto.
 
-Para obtener información sobre el uso de la consola en herramientas de desarrollo de Microsoft Edge, consulte [en este tema](/microsoft-edge/devtools-guide).
+Para obtener información sobre el uso de la consola de en las herramientas de desarrollo de Microsoft Edge, consulte [este tema](/microsoft-edge/devtools-guide).
 
 ## <a name="console-object-commands"></a>Comandos del objeto console
+
 En esta tabla se muestra la sintaxis de los comandos del objeto `console` que puedes usar en la ventana Consola JavaScript o para enviar mensajes a la consola desde el código. Este objeto tiene varias formas que te permiten diferenciar, si quieres, los mensajes informativos de los mensajes de error.
 
 Puedes usar la forma larga del comando `window.console.[command]` si tienes que evitar confusiones posibles con objetos locales cuyo nombre también sea console.
@@ -58,9 +55,9 @@ Puedes usar la forma larga del comando `window.console.[command]` si tienes que 
 |`groupEnd()`|Finaliza el grupo actual.<br /><br /> Requisitos:<br /><br /> Visual Studio 2013|Consulta el ejemplo para el comando `group` .|
 |`info(message)`|Envía `message` a la ventana de consola. El mensaje va precedido de un símbolo de información.|`console.info("info message");`<br /><br /> Para ver más ejemplos, consulte [Formatting console.log output](#ConsoleLog) más adelante en este tema.|
 |`log(message)`|Envía `message` a la ventana de consola.<br /><br /> Si pasas un objeto, este comando lo envía a la ventana de la consola y lo muestra en un visualizador de objeto. Puedes usar el visualizador para inspeccionar las propiedades en la ventana de consola.|`console.log("logging message");`|
-|`msIsIndependentlyComposed(element)`|Se utiliza en aplicaciones web. No se admite en aplicaciones para UWP mediante JavaScript.|No se admite.|
-|`profile(reportName)`|Se utiliza en aplicaciones web. No se admite en aplicaciones para UWP mediante JavaScript.|No se admite.|
-|`profileEnd()`|Se utiliza en aplicaciones web. No se admite en aplicaciones para UWP mediante JavaScript.|No se admite.|
+|`msIsIndependentlyComposed(element)`|Se utiliza en aplicaciones web. No se admite en aplicaciones para UWP con JavaScript.|No se admite.|
+|`profile(reportName)`|Se utiliza en aplicaciones web. No se admite en aplicaciones para UWP con JavaScript.|No se admite.|
+|`profileEnd()`|Se utiliza en aplicaciones web. No se admite en aplicaciones para UWP con JavaScript.|No se admite.|
 |`select(element)`|Selecciona el parámetro HTML `element` especificado en el [Explorador DOM](../debugger/quickstart-debug-html-and-css.md).|console.select(element);|
 |`time (name)`|Inicia un temporizador identificado por el parámetro `name` opcional. Cuando se utiliza con `console.timeEnd`, calcula el tiempo transcurrido entre `time` y `timeEnd`, y envía el resultado (medido en ms) a la consola utilizando la cadena `name` como prefijo. Se utiliza para habilitar la instrumentación del código de la aplicación para medir el rendimiento.|`console.time("app start");  app.start();  console.timeEnd("app start");`|
 |`timeEnd(name)`|Detiene un temporizador identificado por el parámetro `name` opcional. Consulta el comando de la consola `time` .|`console.time("app start"); app.start(); console.timeEnd("app start");`|
@@ -130,5 +127,5 @@ console.log("%s is %f years old!", user.first, user.age);
 ```
 
 ## <a name="see-also"></a>Vea también
-- [Inicio rápido: Depuración de JavaScript](../debugger/quickstart-debug-javascript-using-the-console.md?view=vs-2017)
-- [Inicio rápido: depuración de HTML y CSS](../debugger/quickstart-debug-html-and-css.md?view=vs-2017)
+- [Inicio rápido: Depurar JavaScript](../debugger/quickstart-debug-javascript-using-the-console.md?view=vs-2017)
+- [Inicio rápido: Depurar HTML y CSS](../debugger/quickstart-debug-html-and-css.md?view=vs-2017)

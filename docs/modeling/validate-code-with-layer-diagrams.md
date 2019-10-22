@@ -14,17 +14,17 @@ helpviewer_keywords:
 - MSBuild, tasks
 - MSBuild, dependency diagrams
 - MSBuild, validating code
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a9786c35b81ac0ff4fd29ffe121aab7e1aa04f2f
-ms.sourcegitcommit: 59e5758036223ee866f3de5e3c0ab2b6dbae97b6
+ms.openlocfilehash: 4a2b972c3c275f3e43819220532ac0a3c4a597e3
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "68416438"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72662935"
 ---
 # <a name="validate-code-with-dependency-diagrams"></a>Validación código con diagramas de dependencia
 
@@ -44,7 +44,7 @@ Para asegurarse de que el código no entra en conflicto con su diseño, valide e
 
 **Requisitos**
 
-- Visual Studio
+- Programa para la mejora
 
   Para crear un diagrama de dependencia para un proyecto de .NET Core, debe tener Visual Studio 2019 versión 16,2 o posterior.
 
@@ -52,7 +52,7 @@ Para asegurarse de que el código no entra en conflicto con su diseño, valide e
 
 Para ver qué ediciones de Visual Studio admiten esta característica, vea [compatibilidad de la edición con las herramientas de arquitectura y modelado](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
 
-Puede validar el código manualmente desde un diagrama de dependencias abierto en Visual Studio o desde el símbolo del sistema. También puede validar el código automáticamente al ejecutar compilaciones locales o compilaciones Azure Pipelines. Consulte [el vídeo de Channel 9: Diseñar y validar la arquitectura mediante diagramas](http://go.microsoft.com/fwlink/?LinkID=252073)de dependencia.
+Puede validar el código manualmente desde un diagrama de dependencias abierto en Visual Studio o desde el símbolo del sistema. También puede validar el código automáticamente al ejecutar compilaciones locales o compilaciones Azure Pipelines. Consulte [vídeo de Channel 9: diseñar y validar la arquitectura mediante diagramas de dependencia](http://go.microsoft.com/fwlink/?LinkID=252073).
 
 > [!IMPORTANT]
 > Si desea ejecutar la validación de capas mediante Team Foundation Server (TFS), también debe instalar la misma versión de Visual Studio en el servidor de compilación.
@@ -170,7 +170,7 @@ Use estas tareas para administrar los errores de validación en la ventana de **
 
 ## <a name="validate-code-automatically"></a>Validar código automáticamente
 
-Puede realizar la validación de capas cada vez que ejecute una compilación local. Si el equipo usa Azure DevOps, puede realizar la validación de capas con protecciones controladas, que puede especificar creando una tarea MSBuild personalizada, y usar informes de compilación para recopilar los errores de validación. Para crear compilaciones de protección controlada, consulte [inserción en el](/azure/devops/pipelines/build/triggers#gated)repositorio validada de TFVC.
+Puede realizar la validación de capas cada vez que ejecute una compilación local. Si el equipo usa Azure DevOps, puede realizar la validación de capas con protecciones controladas, que puede especificar creando una tarea MSBuild personalizada, y usar informes de compilación para recopilar los errores de validación. Para crear compilaciones de protección controlada, consulte [inserción en el repositorio validada de TFVC](/azure/devops/pipelines/build/triggers#gated).
 
 ### <a name="to-validate-code-automatically-during-a-local-build"></a>Para validar código automáticamente durante una compilación local
 
@@ -218,22 +218,22 @@ En la sección siguiente se describe la sintaxis que se usa en estos errores, se
 
 |**Sintaxis**|**Descripción**|
 |-|-|
-|*ArtifactN*(*ArtifactTypeN*)|*Artefacton* es un artefacto que está asociado a una capa del diagrama de dependencia.<br /><br /> *ArtifactTypeN* es el tipo de *artefacton*, como una **clase** o un **método**, por ejemplo:<br /><br /> MiSolución.MiProyecto.MiClase.MiMétodo(Método)|
+|*Artefacton*(*ArtifactTypeN*)|*Artefacton* es un artefacto que está asociado a una capa del diagrama de dependencia.<br /><br /> *ArtifactTypeN* es el tipo de *artefacton*, como una **clase** o un **método**, por ejemplo:<br /><br /> MiSolución.MiProyecto.MiClase.MiMétodo(Método)|
 |*NamespaceNameN*|Nombre de un espacio de nombres.|
 |*LayerNameN*|El nombre de una capa en el diagrama de dependencia.|
 |*DependencyType*|El tipo de relación de dependencia entre *artefacto 1* y *artefacto 2*. Por ejemplo, *artefacto 1* tiene una relación de **llamadas** con *artefacto 2*.|
 
 | **Sintaxis de error** | **Descripción del error** |
 |-|-|
-| DV0001: **Dependencia no válida** | Este problema se produce cuando un elemento de código (espacio de nombres, tipo, miembro) asignado a una capa hace referencia a un elemento de código asignado a otra capa, pero no hay ninguna flecha de dependencia entre estas capas en el diagrama de validación de dependencias que contiene estas capas. Se trata de una infracción de restricción de dependencia. |
-| DV1001: **Nombre de espacio de nombres no válido** | Este problema se indica en un elemento de código asociado a una capa que la propiedad "nombres de espacios de nombres permitidos" no contiene el espacio de nombres en el que se define este elemento de código. Se trata de una infracción de la restricción de nomenclatura. Tenga en cuenta que la sintaxis de "nombres de espacios de nombres permitidos" es una lista de espacios de nombres de punto y coma en la que se permite definir elementos de código asociados con. |
-| DV1002: **Dependencia en un espacio de nombres sin referencia** | Este problema se indica en un elemento de código asociado a una capa y que hace referencia a otro elemento de código definido en un espacio de nombres que se define en la propiedad "espacio de nombres sin referencia" de la capa. Se trata de una infracción de la restricción de nomenclatura. Tenga en cuenta que la propiedad "espacios de nombres sin referencias" se define como una lista separada por punto y coma de los espacios de nombres a los que no se debe hacer referencia en los elementos de código asociados a esta capa. |
-| DV1003: **Nombre de espacio de nombres no permitido** | Este problema se indica en un elemento de código asociado a una capa que contiene la propiedad "nombres de espacios de nombres no permitidos" que contiene el espacio de nombres en el que está definido este elemento de código. Se trata de una infracción de la restricción de nomenclatura. Tenga en cuenta que la propiedad "nombre de espacio de nombres no permitido" se define como una lista de espacios de nombres separados por punto y coma en la que no se deben definir los elementos de código asociados a esta capa. |
-| DV3001: **Falta el vínculo** | La capa '*LayerName*' está vinculada a '*artefacto*' que no se encuentra. ¿Falta una referencia de ensamblado? |
-| DV9001: **El análisis arquitectónico encontró errores internos** | Puede que los resultados no estén completos. Vea el registro detallado de eventos de compilación o la ventana de salida para obtener más información. |
+| DV0001: **dependencia no válida** | Este problema se produce cuando un elemento de código (espacio de nombres, tipo, miembro) asignado a una capa hace referencia a un elemento de código asignado a otra capa, pero no hay ninguna flecha de dependencia entre estas capas en el diagrama de validación de dependencias que contiene estas capas. Se trata de una infracción de restricción de dependencia. |
+| DV1001: **nombre de espacio de nombres no válido** | Este problema se indica en un elemento de código asociado a una capa que la propiedad "nombres de espacios de nombres permitidos" no contiene el espacio de nombres en el que se define este elemento de código. Se trata de una infracción de la restricción de nomenclatura. Tenga en cuenta que la sintaxis de "nombres de espacios de nombres permitidos" es una lista de espacios de nombres de punto y coma en la que se permite definir elementos de código asociados con. |
+| DV1002: **dependencia en un espacio de nombres sin referencia** | Este problema se indica en un elemento de código asociado a una capa y que hace referencia a otro elemento de código definido en un espacio de nombres que se define en la propiedad "espacio de nombres sin referencia" de la capa. Se trata de una infracción de la restricción de nomenclatura. Tenga en cuenta que la propiedad "espacios de nombres sin referencias" se define como una lista separada por punto y coma de los espacios de nombres a los que no se debe hacer referencia en los elementos de código asociados a esta capa. |
+| DV1003: **nombre de espacio de nombres no permitido** | Este problema se indica en un elemento de código asociado a una capa que contiene la propiedad "nombres de espacios de nombres no permitidos" que contiene el espacio de nombres en el que está definido este elemento de código. Se trata de una infracción de la restricción de nomenclatura. Tenga en cuenta que la propiedad "nombre de espacio de nombres no permitido" se define como una lista de espacios de nombres separados por punto y coma en la que no se deben definir los elementos de código asociados a esta capa. |
+| DV3001: **falta un vínculo** | La capa '*LayerName*' está vinculada a '*artefacto*' que no se encuentra. ¿Falta una referencia de ensamblado? |
+| DV9001: el **análisis arquitectónico encontró errores internos** | Puede que los resultados no estén completos. Vea el registro detallado de eventos de compilación o la ventana de salida para obtener más información. |
 
 ## <a name="see-also"></a>Vea también
 
 - [Validación de dependencias dinámicas en Visual Studio](https://devblogs.microsoft.com/devops/live-dependency-validation-in-visual-studio-2017/)
 - [Validar el sistema durante el desarrollo](../modeling/validate-your-system-during-development.md)
-- [Vídeo: Validar las dependencias de la arquitectura en tiempo real](https://sec.ch9.ms/sessions/69613110-c334-4f25-bb36-08e5a93456b5/170ValidateArchitectureDependenciesWithVisualStudio.mp4)
+- [Vídeo: validar las dependencias de la arquitectura en tiempo real](https://sec.ch9.ms/sessions/69613110-c334-4f25-bb36-08e5a93456b5/170ValidateArchitectureDependenciesWithVisualStudio.mp4)

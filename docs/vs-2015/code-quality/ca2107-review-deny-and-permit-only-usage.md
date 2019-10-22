@@ -1,5 +1,5 @@
 ---
-title: 'CA2107: Revisión de deny y PermitOnly sólo uso | Microsoft Docs'
+title: 'CA2107: revisar el uso de deny y solo permitir | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -12,15 +12,15 @@ helpviewer_keywords:
 - CA2107
 ms.assetid: 366f4a56-ae93-4882-81d0-bd0a55ebbc26
 caps.latest.revision: 21
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: d6ba41720ff97ffe9a085774477b2a9ee6426dbe
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 32339852d67d4f3f28fedd204a056440ad49e075
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65687393"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72665959"
 ---
 # <a name="ca2107-review-deny-and-permit-only-usage"></a>CA2107: Revisar el uso de Deny y PermitOnly
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,51 +33,51 @@ ms.locfileid: "65687393"
 |Cambio problemático|Problemático|
 
 ## <a name="cause"></a>Motivo
- Un método contiene una comprobación de seguridad que especifica la acción de seguridad PermitOnly o Deny.
+ Un método contiene una comprobación de seguridad que especifica las acciones de seguridad PermitOnly o deny.
 
 ## <a name="rule-description"></a>Descripción de la regla
- El [con el método PermitOnly](https://msdn.microsoft.com/8c7bdb7f-882f-45b7-908c-6cbaa1767649) y <xref:System.Security.CodeAccessPermission.Deny%2A?displayProperty=fullName> acciones de seguridad deben usarse únicamente por los usuarios que tengan conocimientos avanzados de [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] seguridad. Debería realizarse una revisión de la seguridad del código que utiliza estas acciones de seguridad.
+ Los usuarios que [usan el método PermitOnly](https://msdn.microsoft.com/8c7bdb7f-882f-45b7-908c-6cbaa1767649) y <xref:System.Security.CodeAccessPermission.Deny%2A?displayProperty=fullName> acciones de seguridad solo deben usarlos los que tengan conocimientos avanzados de [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] seguridad. Debería realizarse una revisión de la seguridad del código que utiliza estas acciones de seguridad.
 
- Denegar modifica el comportamiento predeterminado del recorrido de pila que se produce en respuesta a una petición de seguridad. Permite especificar los permisos que no se deben conceder para la duración del método denegar, sin tener en cuenta los permisos reales de los llamadores de la pila de llamadas. Si el recorrido de pila detecta un método que está protegido por Deny, y si se incluye el permiso exigido en los permisos denegados, se produce un error en el recorrido de pila. PermitOnly también modifica el comportamiento predeterminado del recorrido de pila. Permite al código especificar sólo aquellos permisos que se pueden conceder, independientemente de los permisos de los llamadores. Si el recorrido de pila detecta un método que está protegido por PermitOnly y, si el permiso solicitado no se incluye en los permisos que se especifican por PermitOnly, se produce un error en el recorrido de pila.
+ Deny modifica el comportamiento predeterminado del recorrido de la pila que se produce como respuesta a una demanda de seguridad. Permite especificar permisos que no se deben conceder mientras dure el método de denegación, independientemente de los permisos reales de los llamadores de la pila de llamadas. Si el recorrido de la pila detecta un método protegido por deny y si el permiso solicitado está incluido en los permisos denegados, se produce un error en el recorrido de la pila. PermitOnly también modifica el comportamiento predeterminado del recorrido de la pila. Permite que el código especifique solo los permisos que se pueden conceder, independientemente de los permisos de los llamadores. Si el recorrido de la pila detecta un método protegido por PermitOnly y si el permiso solicitado no se incluye en los permisos especificados por PermitOnly, se produce un error en el recorrido de la pila.
 
- Código que se basa en estas acciones se debería evaluar cuidadosamente las vulnerabilidades de seguridad debido a su utilidad limitada y el comportamiento. Considere el siguiente caso:
+ El código que se basa en estas acciones se debe evaluar detenidamente para detectar vulnerabilidades de seguridad debido a su utilidad limitada y a un comportamiento sutil. Considere el siguiente caso:
 
-- [Las peticiones de vínculo](https://msdn.microsoft.com/library/a33fd5f9-2de9-4653-a4f0-d9df25082c4d) no se ven afectados por Deny o PermitOnly.
+- Las [peticiones de vínculo](https://msdn.microsoft.com/library/a33fd5f9-2de9-4653-a4f0-d9df25082c4d) no se ven afectadas por deny o PermitOnly.
 
-- Si Deny o PermitOnly se produce en el mismo marco de pila como la demanda que hace que el recorrido de pila, las acciones de seguridad tienen ningún efecto.
+- Si deny o PermitOnly se producen en el mismo marco de pila que la demanda que provoca el recorrido de la pila, las acciones de seguridad no tienen ningún efecto.
 
-- Normalmente, los valores que se usan para construir los permisos basados en la ruta de acceso pueden especificarse de varias maneras. Denegar el acceso a un formulario de la ruta de acceso no deniega el acceso a todas las formas. Por ejemplo, si un recurso compartido de archivos \\\Server\Share se asigna a una unidad de red X:, para denegar el acceso a un archivo en el recurso compartido, debe denegar \\\Server\Share\File, X:\File y cualquier otra ruta que se obtiene acceso al archivo.
+- Normalmente, los valores que se usan para construir permisos basados en ruta de acceso se pueden especificar de varias maneras. Denegar el acceso a un formulario de la ruta de acceso no deniega el acceso a todos los formularios. Por ejemplo, si un recurso compartido de archivos \\ \Server\Share se asigna a una unidad de red X:, para denegar el acceso a un archivo en el recurso compartido, debe denegar \\ Compartido\archivo, X:\File y todas las demás rutas que tengan acceso al archivo.
 
-- Un <xref:System.Security.CodeAccessPermission.Assert%2A?displayProperty=fullName> puede finalizar un recorrido de pila antes de alcanza Deny o PermitOnly.
+- Un <xref:System.Security.CodeAccessPermission.Assert%2A?displayProperty=fullName> puede finalizar un recorrido de pila antes de que se alcance deny o PermitOnly.
 
-- Si una instrucción Deny tiene ningún efecto, es decir, cuando el llamador tiene un permiso que está bloqueado por Deny, el llamador puede acceder al recurso protegido directamente, omitiendo la denegación. De forma similar, si el llamador no tiene el permiso denegado, el recorrido de pila produciría un error sin Deny.
+- Si una denegación tiene algún efecto, es decir, cuando un llamador tiene un permiso que está bloqueado por deny, el llamador puede tener acceso al recurso protegido directamente, omitiendo la denegación. Del mismo modo, si el autor de la llamada no tiene el Permiso denegado, se produciría un error en el recorrido de pila sin denegar.
 
 ## <a name="how-to-fix-violations"></a>Cómo corregir infracciones
- Cualquier uso de estas acciones de seguridad provocará una infracción. Para corregir una infracción, no utilice estas acciones de seguridad.
+ Cualquier uso de estas acciones de seguridad producirá una infracción. Para corregir una infracción, no utilice estas acciones de seguridad.
 
 ## <a name="when-to-suppress-warnings"></a>Cuándo suprimir advertencias
  Suprima una advertencia de esta regla solo después de completar una revisión de seguridad.
 
 ## <a name="example"></a>Ejemplo
- El ejemplo siguiente muestra algunas limitaciones de Deny.
+ En el ejemplo siguiente se muestran algunas limitaciones de deny.
 
- La siguiente biblioteca contiene una clase que tiene dos métodos que son idénticos salvo por las peticiones de seguridad que protegen.
+ La siguiente biblioteca contiene una clase que tiene dos métodos que son idénticos salvo por las demandas de seguridad que los protegen.
 
  [!code-csharp[FxCop.Security.PermitAndDeny#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Security.PermitAndDeny/cs/FxCop.Security.PermitAndDeny.cs#1)]
 
 ## <a name="example"></a>Ejemplo
- La aplicación siguiente muestra los efectos de Deny en los métodos protegidos de la biblioteca.
+ En la siguiente aplicación se muestran los efectos de deny en los métodos protegidos de la biblioteca.
 
  [!code-csharp[FxCop.Security.TestPermitAndDeny#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Security.TestPermitAndDeny/cs/FxCop.Security.TestPermitAndDeny.cs#1)]
 
  Este ejemplo produce el siguiente resultado:
 
- **A petición: Denegar la persona que llama no tiene ningún efecto a petición con el permiso validado.** 
-**LinkDemand: Denegar la persona que llama no tiene ningún efecto en LinkDemand con el permiso validado.** 
-**LinkDemand: Denegar la persona que llama no tiene ningún efecto con el código protegido por LinkDemand.** 
-**LinkDemand: Este denegar no tiene ningún efecto con el código protegido por LinkDemand.**
+ **Demand: deny del autor de la llamada no tiene ningún efecto a petición con el permiso declarado.** 
+**LinkDemand: deny del autor de la llamada no tiene ningún efecto en LinkDemand con el permiso imserted.** 
+**LinkDemand: deny del autor de la llamada no tiene ningún efecto con código protegido por LinkDemand.** 
+**LinkDemand: esta denegación no tiene ningún efecto con Código protegido con LinkDemand.**
 ## <a name="see-also"></a>Vea también
  <xref:System.Security.CodeAccessPermission.PermitOnly%2A?displayProperty=fullName> <xref:System.Security.CodeAccessPermission.Assert%2A?displayProperty=fullName>
  <xref:System.Security.CodeAccessPermission.Deny%2A?displayProperty=fullName>
  <xref:System.Security.IStackWalk.PermitOnly%2A?displayProperty=fullName>
- [Instrucciones de codificación segura](https://msdn.microsoft.com/library/4f882d94-262b-4494-b0a6-ba9ba1f5f177) [reemplazar comprobaciones de seguridad](https://msdn.microsoft.com/4acdeff5-fc05-41bf-8505-7387cdbfca28) [con el método PermitOnly](https://msdn.microsoft.com/8c7bdb7f-882f-45b7-908c-6cbaa1767649)
+ [Instrucciones de codificación segura](https://msdn.microsoft.com/library/4f882d94-262b-4494-b0a6-ba9ba1f5f177) [invalidar las comprobaciones de seguridad](https://msdn.microsoft.com/4acdeff5-fc05-41bf-8505-7387cdbfca28) [mediante el método PermitOnly](https://msdn.microsoft.com/8c7bdb7f-882f-45b7-908c-6cbaa1767649)

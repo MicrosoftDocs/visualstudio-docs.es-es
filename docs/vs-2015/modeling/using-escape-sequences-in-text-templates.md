@@ -1,5 +1,5 @@
 ---
-title: Usar secuencias de Escape en plantillas de texto | Documentos de Microsoft
+title: Usar secuencias de escape en las plantillas de texto | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-modeling
@@ -8,36 +8,36 @@ helpviewer_keywords:
 - text templates, escape sequences
 ms.assetid: 36fff542-2f42-460f-a2d5-03fc76817f3b
 caps.latest.revision: 31
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 1f564200d0bdac56e975c2f2ab27439652247605
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 8a45aa36ddce57141a7e1e851f7f0766b77015ee
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68183895"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72659424"
 ---
 # <a name="using-escape-sequences-in-text-templates"></a>Usar secuencias de escape en las plantillas de texto
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Puede utilizar secuencias de escape en las plantillas de texto para generar etiquetas de plantilla de texto y (en C# solo código) para los caracteres de escape de control y entre comillas.  
-  
- Para imprimir las etiquetas de apertura y cierre de un bloque de código estándar para el archivo de salida, escape las etiquetas como sigue:  
-  
-```  
-\<# ... \#>  
-```  
-  
- Puede hacer lo mismo con otras etiquetas de bloque de código y directiva de plantilla de texto.  
-  
- Si un bloque de texto incluye cadenas utilizadas para las etiquetas de plantilla de texto de escape, se pueden utilizar las secuencias de escape siguientes:  
-  
-- Si una etiqueta de plantilla de texto está precedida por un número par de escape (\\) caracteres de la plantilla del analizador se incluyen la mitad de los caracteres de escape y se incluyen la secuencia como una etiqueta de plantilla de texto. Por ejemplo, si hay cuatro caracteres de escape en la plantilla de texto, habrá dos "\\" caracteres en el archivo generado.  
-  
-- Si la etiqueta de la plantilla de texto está precedida por un número impar de escape (\\) caracteres, el analizador de plantilla incluirá la mitad de la "\\" caracteres además de la propia etiqueta (\<# o #>). La etiqueta no se considera una etiqueta de plantilla de texto.  
-  
-- Si un carácter de escape (\\) carácter aparece en cualquier parte de cualquier secuencia que no sea de escape que aplica un carácter de control o una oferta (solo en C#), el carácter se generarán directamente.  
-  
-## <a name="see-also"></a>Vea también  
+Puede usar secuencias de escape en las plantillas de texto para generar etiquetas de plantilla de C# texto y (solo en código) para caracteres de control de escape y Comillas.
+
+ Para imprimir etiquetas de apertura y cierre para un bloque de código estándar en el archivo de salida, escape de las etiquetas como se indica a continuación:
+
+```
+\<# ... \#>
+```
+
+ Puede hacer lo mismo con otras directivas de plantilla de texto y etiquetas de bloque de código.
+
+ Si un bloque de texto incluye cadenas usadas para escapar etiquetas de plantilla de texto, puede usar las siguientes secuencias de escape:
+
+- Si una etiqueta de plantilla de texto va precedida por un número par de caracteres de escape (\\), el analizador de la plantilla incluirá la mitad de los caracteres de escape e incluirá la secuencia como una etiqueta de plantilla de texto. Por ejemplo, si hay cuatro caracteres de escape en la plantilla de texto, habrá dos caracteres "\\" en el archivo generado.
+
+- Si la etiqueta de la plantilla de texto está precedida por un número impar de caracteres de escape (\\), el analizador de la plantilla incluirá la mitad de los caracteres "\\" más la propia etiqueta (\< # o # >). La etiqueta no se considera una etiqueta de plantilla de texto.
+
+- Si aparece un carácter de escape (\\) en cualquier otra secuencia distinta de la que escapa a un carácter de control o a una comilla (solo en C# ), el carácter se generará directamente.
+
+## <a name="see-also"></a>Vea también
  [Cómo: Generar plantillas desde otras plantillas mediante secuencias de escape](../modeling/how-to-generate-templates-from-templates-by-using-escape-sequences.md)

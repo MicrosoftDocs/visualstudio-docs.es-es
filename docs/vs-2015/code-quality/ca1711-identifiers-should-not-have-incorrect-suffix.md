@@ -1,5 +1,5 @@
 ---
-title: 'CA1711: Los identificadores no deberían tener el sufijo incorrecto | Documentos de Microsoft'
+title: 'CA1711: los identificadores no deben tener el sufijo incorrecto | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -12,17 +12,17 @@ helpviewer_keywords:
 - IdentifiersShouldNotHaveIncorrectSuffix
 ms.assetid: a63359ab-386d-44ae-b381-ee3a983aca29
 caps.latest.revision: 20
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: c0ed08a50ce7e4c665839f6dccb4913e13d0d774
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: f59a1c88701cf132a46c66eb6550f03eb870d63d
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65676474"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72669180"
 ---
-# <a name="ca1711-identifiers-should-not-have-incorrect-suffix"></a>CA1711: Los identificadores no deben tener un sufijo incorrecto
+# <a name="ca1711-identifiers-should-not-have-incorrect-suffix"></a>CA1711: Los identificadores no deberían tener el sufijo incorrecto
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
@@ -53,7 +53,7 @@ ms.locfileid: "65676474"
 |Pila|<xref:System.Collections.Stack?displayProperty=fullName>|
 |Secuencia|<xref:System.IO.Stream?displayProperty=fullName>|
 
- Además, los siguientes sufijos deben **no** usarse:
+ Además, **no** se deben usar los sufijos siguientes:
 
 - delegado
 
@@ -75,4 +75,4 @@ ms.locfileid: "65676474"
  [CA1710: Los identificadores deberían tener el sufijo correcto](../code-quality/ca1710-identifiers-should-have-correct-suffix.md)
 
 ## <a name="see-also"></a>Vea también
- [Atributos](https://msdn.microsoft.com/library/ee0038ef-b247-4747-a650-3c5c5cd58d8b) [NIB: Eventos y delegados](https://msdn.microsoft.com/d98fd58b-fa4f-4598-8378-addf4355a115)
+ [Attributes](https://msdn.microsoft.com/library/ee0038ef-b247-4747-a650-3c5c5cd58d8b) [NIB: eventos y delegados](https://msdn.microsoft.com/d98fd58b-fa4f-4598-8378-addf4355a115)

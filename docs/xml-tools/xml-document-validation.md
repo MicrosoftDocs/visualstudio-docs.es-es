@@ -3,17 +3,17 @@ title: Validación de documentos XML en el editor XML
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: abb353bd-6c4a-4978-b03b-a8c245bbfb55
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 13574a13aecf7edbc9627e7b8288689206f278c2
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 2c4133268f2e07753ab7ecd276bf92712484e9f5
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68926701"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72604046"
 ---
 # <a name="xml-document-validation"></a>Validación de documentos XML
 
@@ -21,7 +21,7 @@ El editor XML comprueba la sintaxis XML 1,0 y también realiza la validación de
 
 Para encontrar los esquemas usados en la validación se hace coincidir el `targetNamespace` de un esquema compilado con la declaración xmlns del elemento. Los esquemas compilados se cargan desde una de las siguientes ubicaciones, mostradas en orden de prioridad:
 
-- Desde el nombre de archivo especificado en el campo esquemas de la ventana **propiedades** del documento.
+- Desde el nombre de archivo especificado en el campo **esquemas** de la ventana **propiedades** del documento.
 
 - Un esquema o DTD alineado.
 
