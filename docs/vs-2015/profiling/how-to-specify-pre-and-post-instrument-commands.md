@@ -15,12 +15,12 @@ caps.latest.revision: 33
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 1485ee6f0737363bc6ab9105b70c93acef866c82
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: ab7ecbe97ba0b174a1cc4c0f0d169834ce25e8d8
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60038348"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63439705"
 ---
 # <a name="how-to-specify-pre--and-post-instrument-commands"></a>Procedimiento Especificar comandos anteriores y posteriores a la instrumentación
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -64,7 +64,7 @@ Puede especificar los comandos que se ejecutan antes o después de que los archi
 3. Escriba el comando en el cuadro de texto **Línea de comandos** en **Eventos anteriores a la instrumentación**.  
   
     > [!NOTE]
-    >  Puede hacer clic en el botón de puntos suspensivos **(...)** que se muestra junto al cuadro **Línea de comandos** para buscar y seleccionar el archivo .exe, .cmd o .bat apropiado.  
+    > Puede hacer clic en el botón de puntos suspensivos **(...)** que se muestra junto al cuadro **Línea de comandos** para buscar y seleccionar el archivo .exe, .cmd o .bat apropiado.  
   
 4. Haga clic en **Aceptar**.  
   
@@ -83,7 +83,7 @@ Puede especificar los comandos que se ejecutan antes o después de que los archi
 3. Escriba el comando en el cuadro de texto **Línea de comandos** en **Eventos posteriores a la instrumentación**.  
   
     > [!NOTE]
-    >  Puede hacer clic en el botón de puntos suspensivos **(...)** que se muestra junto al cuadro **Línea de comandos** para buscar y seleccionar el archivo .exe, .cmd o .bat apropiado.  
+    > Puede hacer clic en el botón de puntos suspensivos **(...)** que se muestra junto al cuadro **Línea de comandos** para buscar y seleccionar el archivo .exe, .cmd o .bat apropiado.  
   
 4. Haga clic en **Aceptar**.  
   

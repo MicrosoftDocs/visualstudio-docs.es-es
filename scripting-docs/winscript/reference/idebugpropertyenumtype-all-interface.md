@@ -1,5 +1,5 @@
 ---
-title: IDebugPropertyEnumType_All (interfaz) | Microsoft Docs
+title: Interfaz IDebugPropertyEnumType_All | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b9ddd9fb24aa83a6027d6d705de6a748a96b2e28
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 737d1c5d4279a0a727f79326749dbf14a2fcd4c7
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58149307"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72574311"
 ---
-# <a name="idebugpropertyenumtypeall-interface"></a>IDebugPropertyEnumType_All (Interfaz)
-El `IDebugPropertyEnumType` interfaces se definen para que cada uno de sus IID puede pasarse como un filtro a `IDebugProperty::EnumMembers` al solicitar el enumerador correspondiente.  
+# <a name="idebugpropertyenumtype_all-interface"></a>IDebugPropertyEnumType_All (Interfaz)
+Se definen las interfaces de `IDebugPropertyEnumType` para que cada una de sus IID se pueda pasar como filtro a `IDebugProperty::EnumMembers` al solicitar el enumerador adecuado.  
   
 ## <a name="syntax"></a>Sintaxis  
   
@@ -37,9 +37,9 @@ IDebugPropertyEnumType_All : IUnknown
   
 |Método|Descripción|  
 |------------|-----------------|  
-|[IDebugPropertyEnumType_All::GetName](../../winscript/reference/idebugpropertyenumtype-all-getname.md)|Devuelve una cadena de texto que describe el nombre|  
+|[IDebugPropertyEnumType_All::GetName](../../winscript/reference/idebugpropertyenumtype-all-getname.md)|Devuelve una cadena de texto que describe el nombre.|  
   
- Las siguientes interfaces se heredan de `IDebugPropertyEnumType_All`, y que no hay métodos adicionales.  
+ Las siguientes interfaces heredan de `IDebugPropertyEnumType_All` y no tienen métodos adicionales.  
   
 ```cpp
 IDebugPropertyEnumType_Arguments : IDebugPropertyEnumType_All   

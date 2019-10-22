@@ -17,11 +17,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: adf5e160ec334859062311fae947ce34e79850d5
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58998626"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68157424"
 ---
 # <a name="clickonce-application-manifest"></a>ClickOnce Application Manifest
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,13 +30,13 @@ Un [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] manifiesto de aplicaci
   
  [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] manifiestos de aplicación tienen los siguientes elementos y atributos.  
   
-|Elemento|Descripción|Atributos|  
+|Elemento|DESCRIPCIÓN|Atributos|  
 |-------------|-----------------|----------------|  
-|[\<assembly> Element](../deployment/assembly-element-clickonce-application.md)|Obligatorio. Elemento de nivel superior.|`manifestVersion`|  
-|[\<assemblyIdentity> Element](../deployment/assemblyidentity-element-clickonce-application.md)|Obligatorio. Identifica el ensamblado principal de la [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] aplicación.|`name`<br /><br /> `version`<br /><br /> `publicKeyToken`<br /><br /> `processorArchitecture`<br /><br /> `language`|  
-|[\<trustInfo> Element](../deployment/trustinfo-element-clickonce-application.md)|Identifica los requisitos de seguridad de la aplicación.|Ninguna|  
-|[\<entryPoint> Element](../deployment/entrypoint-element-clickonce-application.md)|Obligatorio. Identifica el punto de entrada de código de aplicación.|`name`|  
-|[\<dependency> Element](../deployment/dependency-element-clickonce-application.md)|Obligatorio. Identifica cada dependencia necesaria para que se ejecute la aplicación. Identifica opcionalmente los ensamblados que se tienen que preinstalar.|Ninguna|  
+|[\<assembly> Element](../deployment/assembly-element-clickonce-application.md)|Necesario. Elemento de nivel superior.|`manifestVersion`|  
+|[\<assemblyIdentity> Element](../deployment/assemblyidentity-element-clickonce-application.md)|Necesario. Identifica el ensamblado principal de la [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] aplicación.|`name`<br /><br /> `version`<br /><br /> `publicKeyToken`<br /><br /> `processorArchitecture`<br /><br /> `language`|  
+|[\<trustInfo> Element](../deployment/trustinfo-element-clickonce-application.md)|Identifica los requisitos de seguridad de la aplicación.|None|  
+|[\<entryPoint> Element](../deployment/entrypoint-element-clickonce-application.md)|Necesario. Identifica el punto de entrada de código de aplicación.|`name`|  
+|[\<dependency> Element](../deployment/dependency-element-clickonce-application.md)|Necesario. Identifica cada dependencia necesaria para que se ejecute la aplicación. Identifica opcionalmente los ensamblados que se tienen que preinstalar.|None|  
 |[Elemento \<file>](../deployment/file-element-clickonce-application.md)|Opcional. Identifica cada archivo nonassembly utilizado por la aplicación. Puede incluir datos de aislamiento del modelo de objetos componentes (COM) asociados al archivo.|`name`<br /><br /> `size`<br /><br /> `group`<br /><br /> `optional`<br /><br /> `writeableType`|  
 |[\<fileAssociation> Element](../deployment/fileassociation-element-clickonce-application.md)|Opcional. Identifica una extensión de archivo que se asociará con la aplicación.|`extension`<br /><br /> `description`<br /><br /> `progid`<br /><br /> `defaultIcon`|  
   

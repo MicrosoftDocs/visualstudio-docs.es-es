@@ -8,17 +8,20 @@ helpviewer_keywords:
 - Subtract method
 - IDebugMemoryContext2::Subtract method
 ms.assetid: 63df14c7-8d7e-47c1-afa7-5a1ab5d8eaba
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6bc84d1658fe71131f75825fa4b8b50d8aa9e31b
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: a320b7c67cd2603dfea11983d2d62c344f347ab4
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56723661"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66347021"
 ---
 # <a name="idebugmemorycontext2subtract"></a>IDebugMemoryContext2::Subtract
 Resta el valor especificado desde el contexto actual y devuelve un nuevo contexto.
@@ -39,14 +42,12 @@ int Subtract(
 );
 ```
 
-#### <a name="parameters"></a>Parámetros
- `dwCount`
+## <a name="parameters"></a>Parámetros
+`dwCount`\
+[in] El número de bytes de memoria para reducir.
 
- [in] El número de bytes de memoria para reducir.
-
- `ppMemCxt`
-
- [out] Devuelve un nuevo [IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md) objeto.
+`ppMemCxt`\
+[out] Devuelve un nuevo [IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md) objeto.
 
 ## <a name="return-value"></a>Valor devuelto
  Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.

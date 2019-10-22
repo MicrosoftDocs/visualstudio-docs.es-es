@@ -12,11 +12,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: b70c5a982da866cbeb9e9907859ad4d270d79bd9
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58995203"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68203299"
 ---
 # <a name="memory-tab-process-properties-dialog-box"></a>Pestaña Memoria (Cuadro de diálogo Propiedades del proceso)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,7 +25,7 @@ Use la **memoria** pestaña para mostrar cómo un proceso utiliza la memoria. Pa
   
  Las siguientes opciones están disponibles en el **memoria** pestaña:  
   
-|Entrada|Descripción|  
+|Entrada|DESCRIPCIÓN|  
 |-----------|-----------------|  
 |**Bytes virtuales**|El tamaño actual (en bytes) del espacio de direcciones virtual que está usando el proceso. El uso de espacio de direcciones virtuales no implica necesariamente correspondencia con el uso del disco o de páginas de memoria principal. Sin embargo, el espacio virtual es finito y demasiado utilizar pueden limitar la capacidad del proceso para cargar bibliotecas.|  
 |**Bytes virtuales máximos**|El número máximo de bytes de espacio de direcciones virtuales del proceso ha usado en cualquier momento.|  

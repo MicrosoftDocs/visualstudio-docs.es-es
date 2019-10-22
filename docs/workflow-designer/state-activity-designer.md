@@ -1,21 +1,21 @@
 ---
-title: Diseñador de flujo de trabajo - Diseñador de actividad State
+title: Diseñador de actividad Diseñador de flujo de trabajo-State
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
 - System.Activities.Statements.State.UI
 ms.assetid: 9455ab37-93a0-4c46-9eb8-b6611ca23167
-ms.author: gewarren
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-author: gewarren
-ms.openlocfilehash: 4d07cfeeb713767bc4f711c99b6b482759af2232
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+author: jillre
+ms.openlocfilehash: c0e4657f8d3fde29c49c4505c8512726c60f1593
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55940770"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72649938"
 ---
 # <a name="state-activity-designer"></a>Diseñador de actividad State
 
@@ -23,17 +23,17 @@ ms.locfileid: "55940770"
 
 ## <a name="using-the-state-activity-designer"></a>Usar el diseñador de actividad State
 
-Para agregar un <xref:System.Activities.Statements.State> a un flujo de trabajo, arrastre el **estado** Diseñador de actividades desde el **máquina de estados** sección de la **cuadro de herramientas** y colóquelo en una <xref:System.Activities.Statements.StateMachine> actividad en la superficie del Diseñador de flujo de trabajo. Una actividad <xref:System.Activities.Statements.State> se puede colocar sobre <xref:System.Activities.Statements.StateMachine> y agregar transiciones más adelante; o se puede crear una transición mientras se coloca la actividad <xref:System.Activities.Statements.State>. Para agregar un <xref:System.Activities.Statements.State> actividad y crear una transición en un solo paso, arrastre un **estado** actividad desde la **máquina de estados** sección de la **cuadro de herramientas** y mantenga el mouse sobre otro estado en el Diseñador de flujo de trabajo. Cuando el <xref:System.Activities.Statements.State> arrastrado está sobre a otro <xref:System.Activities.Statements.State>, aparecerán cuatro triángulos alrededor del otro <xref:System.Activities.Statements.State>. Si <xref:System.Activities.Statements.State> se coloca sobre uno de los cuatro triángulos, se agrega a la máquina de estados y se crea una transición desde el <xref:System.Activities.Statements.State> de origen al <xref:System.Activities.Statements.State> de destino colocado. Para obtener más información, consulte [transición](../workflow-designer/transition-activity-designer.md).
+Para agregar un <xref:System.Activities.Statements.State> a un flujo de trabajo, arrastre el diseñador de actividad **State** desde la sección **máquina de Estados** del **cuadro de herramientas** y colóquelo en una actividad <xref:System.Activities.Statements.StateMachine> en la superficie de diseñador de flujo de trabajo. Una actividad <xref:System.Activities.Statements.State> se puede colocar sobre <xref:System.Activities.Statements.StateMachine> y agregar transiciones más adelante; o se puede crear una transición mientras se coloca la actividad <xref:System.Activities.Statements.State>. Para agregar una actividad <xref:System.Activities.Statements.State> y crear una transición en un paso, arrastre una actividad **State** desde la sección **máquina de Estados** del **cuadro de herramientas** y mantenga el mouse sobre otro estado en el diseñador de flujo de trabajo. Cuando el <xref:System.Activities.Statements.State> arrastrado está sobre a otro <xref:System.Activities.Statements.State>, aparecerán cuatro triángulos alrededor del otro <xref:System.Activities.Statements.State>. Si <xref:System.Activities.Statements.State> se coloca sobre uno de los cuatro triángulos, se agrega a la máquina de estados y se crea una transición desde el <xref:System.Activities.Statements.State> de origen al <xref:System.Activities.Statements.State> de destino colocado. Para obtener más información, vea [transición](../workflow-designer/transition-activity-designer.md).
 
 ### <a name="state-activity-properties-in-the-workflow-designer"></a>Propiedades de la actividad State en el Diseñador de flujo de trabajo
 
 La tabla siguiente se muestran las propiedades <xref:System.Activities.Statements.State> que se pueden establecer mediante el diseñador de flujo de trabajo y se describe cómo se usan en el diseñador. Algunas de estas propiedades se pueden editar en la cuadrícula de propiedades y algunas de ellas en la superficie del diseñador.
 
-|Nombre de la propiedad|Obligatorio|Uso|
+|Nombre de la propiedad|Requerido|Uso|
 |-|--------------|-|
-|<xref:System.Activities.Statements.State.DisplayName%2A>|False|Especifica el nombre descriptivo del diseñador de actividades <xref:System.Activities.Statements.State> en el encabezado. El valor predeterminado es **estado**. El valor se puede editar en la cuadrícula de propiedades o directamente en el encabezado del diseñador de actividades. <xref:System.Activities.Statements.State.DisplayName%2A> se usa en la ruta de navegación que se muestra en la parte superior del diseñador de flujo de trabajo.<br /><br /> Aunque el valor de la propiedad <xref:System.Activities.Statements.State.DisplayName%2A> no sea obligatorio, el procedimiento recomendado es usar uno.|
-|<xref:System.Activities.Statements.State.Entry%2A>|False|Especifica la acción que se produce cuando se entra en este estado. Cuando el <xref:System.Activities.Statements.State> actividad se expande, este valor se puede establecer arrastrando una actividad desde la **cuadro de herramientas** y colocándola sobre la **entrada** sección del estado.|
-|<xref:System.Activities.Statements.State.Exit%2A>|False|Especifica la acción que se produce cuando se sale de este estado. Cuando el <xref:System.Activities.Statements.State> actividad se expande, este valor se puede establecer arrastrando una actividad desde la **cuadro de herramientas** y colocándola sobre la **Exit** sección del estado.|
+|<xref:System.Activities.Statements.State.DisplayName%2A>|False|Especifica el nombre descriptivo del diseñador de actividades <xref:System.Activities.Statements.State> en el encabezado. El valor predeterminado es **State**. El valor se puede editar en la cuadrícula de propiedades o directamente en el encabezado del diseñador de actividades. <xref:System.Activities.Statements.State.DisplayName%2A> se usa en la ruta de navegación que se muestra en la parte superior del diseñador de flujo de trabajo.<br /><br /> Aunque el valor de la propiedad <xref:System.Activities.Statements.State.DisplayName%2A> no sea obligatorio, el procedimiento recomendado es usar uno.|
+|<xref:System.Activities.Statements.State.Entry%2A>|False|Especifica la acción que se produce cuando se entra en este estado. Cuando se expande la actividad <xref:System.Activities.Statements.State>, este valor se puede establecer arrastrando una actividad del cuadro de **herramientas** y colocándolo en la sección **entrada** del estado.|
+|<xref:System.Activities.Statements.State.Exit%2A>|False|Especifica la acción que se produce cuando se sale de este estado. Cuando se expande la actividad <xref:System.Activities.Statements.State>, este valor se puede establecer arrastrando una actividad del cuadro de **herramientas** y colocándolo en la sección **salir** del estado.|
 |<xref:System.Activities.Statements.State.Transitions%2A>|False|Muestra las transiciones posibles que se originan desde <xref:System.Activities.Statements.State>. Cada elemento de la lista tiene un vínculo a la <xref:System.Activities.Statements.Transition> asociada y el <xref:System.Activities.Statements.State> de destino. Haciendo clic en el vínculo cambiará el diseñador a una vista expandida de <xref:System.Activities.Statements.Transition> o de <xref:System.Activities.Statements.State>.|
 
 ## <a name="see-also"></a>Vea también

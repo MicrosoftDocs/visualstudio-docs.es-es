@@ -16,46 +16,41 @@ helpviewer_keywords:
 - output files, build errors
 ms.assetid: 9002d8c2-36d4-451c-b489-8f01932f31f7
 caps.latest.revision: 14
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: e1f20b446d355ea0cbc6700de5f2e6f79de51d09
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 075746353440462a66133cd83ed9158470d8de5b
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59647066"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72662210"
 ---
 # <a name="out-devenvexe"></a>/Out (devenv.exe)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Especifica un archivo que se va a almacenar y muestra los errores al ejecutar, compilar, recompilar o implementar una solución.  
-  
-## <a name="syntax"></a>Sintaxis  
-  
-```  
-devenv /out FileName  
-```  
-  
-## <a name="arguments"></a>Argumentos  
- `FileName`  
- Obligatorio. Ruta de acceso y nombre del archivo que va a recibir los errores al compilar un ejecutable.  
-  
-## <a name="remarks"></a>Comentarios  
- Si se especifica un nombre de archivo que no existe, se crea automáticamente el archivo. Si el archivo ya existe, los resultados se anexan al contenido existente del archivo.  
-  
- Los errores de compilación de la línea de comandos se muestran en la ventana **Comando** y la vista Generador de soluciones de la ventana **Salida**. Esta opción es útil si está ejecutando generaciones desatendidas y necesita ver los resultados.  
-  
-## <a name="example"></a>Ejemplo  
- En este ejemplo se ejecuta `MySolution` y se escriben los errores en el archivo `MyErrorLog.txt`.  
-  
-```  
-devenv /run "C:\Documents and Settings\someuser\My Documents\Visual Studio\Projects\MySolution\MySolution.sln" /out "C:\MyErrorLog.txt"  
-```  
-  
-## <a name="see-also"></a>Vea también  
- [Modificadores de línea de comandos para Devenv](../../ide/reference/devenv-command-line-switches.md)   
- [/Run (devenv.exe)](../../ide/reference/run-devenv-exe.md)   
- [/Build (devenv.exe)](../../ide/reference/build-devenv-exe.md)   
- [/Rebuild (devenv.exe)](../../ide/reference/rebuild-devenv-exe.md)   
- [/Deploy (devenv.exe)](../../ide/reference/deploy-devenv-exe.md)
+Especifica un archivo que se va a almacenar y muestra los errores al ejecutar, compilar, recompilar o implementar una solución.
+
+## <a name="syntax"></a>Sintaxis
+
+```
+devenv /out FileName
+```
+
+## <a name="arguments"></a>Argumentos
+ `FileName` Obligatorio. Ruta de acceso y nombre del archivo que va a recibir los errores al compilar un ejecutable.
+
+## <a name="remarks"></a>Comentarios
+ Si se especifica un nombre de archivo que no existe, se crea automáticamente el archivo. Si el archivo ya existe, los resultados se anexan al contenido existente del archivo.
+
+ Los errores de compilación de la línea de comandos se muestran en la ventana **Comando** y la vista Generador de soluciones de la ventana **Salida**. Esta opción es útil si está ejecutando generaciones desatendidas y necesita ver los resultados.
+
+## <a name="example"></a>Ejemplo
+ En este ejemplo se ejecuta `MySolution` y se escriben los errores en el archivo `MyErrorLog.txt`.
+
+```
+devenv /run "C:\Documents and Settings\someuser\My Documents\Visual Studio\Projects\MySolution\MySolution.sln" /out "C:\MyErrorLog.txt"
+```
+
+## <a name="see-also"></a>Otras referencias
+ [Modificadores de línea de comandos de devenv](../../ide/reference/devenv-command-line-switches.md) [/Run (devenv. exe)](../../ide/reference/run-devenv-exe.md) [/Build (devenv. exe)](../../ide/reference/build-devenv-exe.md) [/rebuild (devenv. exe)](../../ide/reference/rebuild-devenv-exe.md) [/deploy (devenv. exe)](../../ide/reference/deploy-devenv-exe.md)

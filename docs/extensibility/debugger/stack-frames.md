@@ -7,17 +7,17 @@ helpviewer_keywords:
 - debugging [Debugging SDK], stack frames
 - stack frames
 ms.assetid: b5e439d4-1e9d-4e13-9cad-bb8b136d4ca8
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 125acbbca2723a9fbd9f41932782a62e966bcdd0
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: de3a0267d366f926fa5705c7455b237cafe4820a
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60055865"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66348510"
 ---
 # <a name="stack-frames"></a>Marcos de pila
 En la arquitectura de depurador, un *marco de pila*:

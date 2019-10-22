@@ -6,17 +6,20 @@ helpviewer_keywords:
 - IDebugSymbolProviderDirect::GetCurrentModulesInfo
 - GetCurrentModulesInfo
 ms.assetid: b3b45ed2-ea4e-4389-b78a-11fc9796a6c1
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 95dc42b0e65ad0f849dd95e0ffead122e4cd1ebf
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 67afbf985a8fb9934c1a105d1620becc80f00535
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56699553"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66347423"
 ---
 # <a name="idebugsymbolproviderdirectgetcurrentmodulesinfo"></a>IDebugSymbolProviderDirect::GetCurrentModulesInfo
 Recupera información acerca de los módulos en el grupo de símbolos.
@@ -43,26 +46,21 @@ int GetCurrentModulesInfo(
 );
 ```
 
-#### <a name="parameters"></a>Parámetros
- `pCount`
+## <a name="parameters"></a>Parámetros
+`pCount`\
+[in] Número de módulos de la `ppGuids` matriz.
 
- [in] Número de módulos de la `ppGuids` matriz.
+`ppGuids`\
+[in] Matriz que contiene los identificadores únicos para los módulos.
 
- `ppGuids`
+`pADIds`\
+[in] Identificadores de los dominios de aplicación.
 
- [in] Matriz que contiene los identificadores únicos para los módulos.
+`pCurrentState`\
+[in] Estado actual del grupo de símbolos.
 
- `pADIds`
-
- [in] Identificadores de los dominios de aplicación.
-
- `pCurrentState`
-
- [in] Estado actual del grupo de símbolos.
-
- `ppCDModItfs`
-
- [out] Devuelve un objeto que contiene los módulos en el grupo de símbolos.
+`ppCDModItfs`\
+[out] Devuelve un objeto que contiene los módulos en el grupo de símbolos.
 
 ## <a name="return-value"></a>Valor devuelto
  Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.

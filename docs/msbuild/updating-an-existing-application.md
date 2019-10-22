@@ -7,12 +7,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 03353225507dca8700daa71b5dd0331c782e78ae
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: cf2b8669fe9b516f3150829612d6999895cc69f8
+ms.sourcegitcommit: 034c503ae04e22cf840ccb9770bffd012e40fb2d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "57984045"
+ms.lasthandoff: 10/14/2019
+ms.locfileid: "72306252"
 ---
 # <a name="update-an-existing-application-for-msbuild-15"></a>Actualización de una aplicación existente a MSBuild 15
 
@@ -49,7 +49,7 @@ Por ejemplo, puede usar este XML:
 ```xml
 <ItemGroup>
   <PackageReference Include="Microsoft.Build" Version="15.1.548" ExcludeAssets="runtime" />
-  <PackageReference Include="Microsoft.Build.Utilities" Version="15.1.548" ExcludeAssets="runtime" />
+  <PackageReference Include="Microsoft.Build.Utilities.Core" Version="15.1.548" ExcludeAssets="runtime" />
 </ItemGroup>
 ```
 
@@ -65,13 +65,13 @@ Si no puede usar paquetes NuGet, puede hacer referencia a ensamblados de MSBuild
 
 #### <a name="binding-redirects"></a>Redirecciones de enlaces
 
-Haga referencia al paquete de Microsoft.Build.Locator para asegurarse de que la aplicación use automáticamente las redirecciones de enlaces necesarias de todas las versiones de ensamblados de MSBuild a la versión `15.1.0.0`.
+Haga referencia al paquete de Microsoft.Build.Locator para asegurarse de que la aplicación use automáticamente las redirecciones de enlaces necesarias a la versión 15.1.0.0. Las redirecciones de enlace a esta versión admiten MSBuild 15 y MSBuild 16.
 
 ### <a name="ensure-output-is-clean"></a>Asegurarse de que la salida sea limpia
 
 Compile el proyecto e inspeccione el directorio de salida para asegurarse de que no contiene ningún ensamblado *Microsoft.Build.\*.dll* que no sea *Microsoft.Build.Locator.dll*, agregado en el paso siguiente.
 
-### <a name="add-package-reference"></a>Agregar referencia de paquete
+### <a name="add-package-reference-for-microsoftbuildlocator"></a>Adición de una referencia de paquete a Microsoft.Build.Locator
 
 Agregue una referencia de paquete NuGet a [Microsoft.Build.Locator](https://www.nuget.org/packages/Microsoft.Build.Locator/).
 
@@ -80,6 +80,8 @@ Agregue una referencia de paquete NuGet a [Microsoft.Build.Locator](https://www.
       <Version>1.1.2</Version>
     </PackageReference>
 ```
+
+No especifique `ExcludeAssets=runtime` para el paquete de Microsoft.Build.Locator.
 
 ### <a name="register-instance-before-calling-msbuild"></a>Registrar instancia antes de llamar a MSBuild
 

@@ -1,16 +1,17 @@
 ---
 title: Programa para la mejora de la experiencia del usuario de Visual Studio
 description: Obtenga información sobre cómo administrar la configuración de privacidad en Visual Studio para Mac.
-author: conceptdev
-ms.author: crdun
-ms.date: 05/22/2018
+ms.topic: troubleshooting
+author: therealjohn
+ms.author: johmil
+ms.date: 06/18/2019
 ms.assetid: 6F2ECF5A-E195-4890-8399-12A88C7D62FD
-ms.openlocfilehash: e29e1f1d7cce6fc77157628ee6e1889a538a1800
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.openlocfilehash: 4c8f967ee7637f99e85297847f5984a80eb1cbe3
+ms.sourcegitcommit: cf8c0fef2b9690595e99ce3802586cdd55fd37c2
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51294479"
+ms.lasthandoff: 08/28/2019
+ms.locfileid: "70108200"
 ---
 # <a name="visual-studio-customer-experience-improvement-program"></a>Programa para la mejora de la experiencia del usuario de Visual Studio
 

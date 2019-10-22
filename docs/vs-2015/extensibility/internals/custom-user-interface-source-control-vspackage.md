@@ -12,11 +12,11 @@ caps.latest.revision: 29
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: f03713213ec2e54ed8d82d7528dae12cefab7ebc
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58987414"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68154975"
 ---
 # <a name="custom-user-interface-source-control-vspackage"></a>Interfaz de usuario personalizada (VSPackage de control de código fuente)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -51,7 +51,7 @@ Un VSPackage declara sus elementos de menú y sus estados predeterminados a trav
   
   La tabla siguiente describe los detalles específicos acerca de cómo los [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] IDE oculta los elementos de interfaz de usuario diferentes.  
   
-|Elemento de interfaz de usuario|Descripción|  
+|Elemento de interfaz de usuario|DESCRIPCIÓN|  
 |-------------|-----------------|  
 |Menús y barras de herramientas|El paquete de control de código fuente debe establecer los Estados de visibilidad iniciales de menú y barra de herramientas en el identificador del paquete de control de código fuente en el [VisibilityConstraints](../../extensibility/visibilityconstraints-element.md) sección del archivo .vsct. Esto permite la [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] IDE para establecer el estado de los elementos de menú correctamente sin tener que cargar el VSPackage y llamar a una implementación de la <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> método.|  
 |Ventanas de herramientas|El control de código fuente VSPackage oculta las ventanas de herramienta que posee cuando queda inactiva.|  

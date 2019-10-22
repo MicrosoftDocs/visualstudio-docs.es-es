@@ -10,12 +10,12 @@ helpviewer_keywords:
 ms.assetid: bb84a79e-cd4c-4a58-8871-2513e7119b6e
 caps.latest.revision: 38
 manager: jillfra
-ms.openlocfilehash: 54026b770a0de7780e950a3e30e649cb67ce1d3b
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: ddf67fba3ae603dbd31d4628c61a6f14cc2441c4
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60088709"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65686930"
 ---
 # <a name="extending-the-toolbox"></a>Extensión del Cuadro de herramientas
 El [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] **Cuadro de herramientas** ofrece una colección de objetos que proporcionan características a los editores y diseñadores a través del mecanismo de arrastrar y colocar del IDE.  
@@ -37,10 +37,10 @@ El [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] **Cuadro de herramientas** ofrec
  Describe cómo un VSPackage puede administrar el contenido y el aspecto del **Cuadro de herramientas**.  
   
 ## <a name="related-sections"></a>Secciones relacionadas  
- [Cómo: Administrar la ventana del cuadro de herramientas](http://msdn.microsoft.com/a022c3fe-298c-4a59-a48f-b050da90ebc2)  
+ [Cómo: Administrar la ventana Cuadro de herramientas](https://msdn.microsoft.com/a022c3fe-298c-4a59-a48f-b050da90ebc2)  
  Describe cómo trabajar con el **Cuadro de herramientas** en el entorno de desarrollo integrado (IDE) de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] .  
   
- [Cómo: El cuadro de herramientas de control](http://msdn.microsoft.com/library/c9d8a18a-d2bc-43d4-a803-601bfc6a6599)  
+ [Cómo: El cuadro de herramientas de control](https://msdn.microsoft.com/library/c9d8a18a-d2bc-43d4-a803-601bfc6a6599)  
  Describe cómo administrar el **Cuadro de herramientas** mediante el modelo de programación de automatización.  
   
  [Ampliación de otras partes de Visual Studio](../extensibility/extending-other-parts-of-visual-studio.md)  

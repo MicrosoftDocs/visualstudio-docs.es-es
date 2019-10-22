@@ -14,18 +14,18 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 06fbc7f8574a5b66e731bb2e7975203866f3eb72
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54805386"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68195511"
 ---
 # <a name="per-thread-summary-report"></a>Informe de resumen por subproceso
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Este gráfico de barras muestra la proporción de tiempo que cada subproceso no oculto invierte en cada categoría de actividad durante el intervalo de tiempo visible actualmente. "Ejecución" significa que se está ejecutando el subproceso, todas las demás categorías significan que el subproceso está esperando algo.  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Otras referencias  
  [Tiempo de ejecución (Vista Subprocesos)](../profiling/execution-time-threads-view.md)   
  [Tiempo de E/S (Vista Subprocesos)](../profiling/i-o-time-threads-view.md)   
  [Tiempo de administración de la memoria](../profiling/memory-management-time.md)   

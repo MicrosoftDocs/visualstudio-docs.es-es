@@ -1,5 +1,5 @@
 ---
-title: Personalizar el Explorador de modelos | Documentos de Microsoft
+title: Personalizar el explorador de modelos | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-modeling
@@ -10,110 +10,110 @@ helpviewer_keywords:
 - Domain-Specific Language Tools, Domain-Specific Language Explorer
 ms.assetid: d2926444-9408-41d8-a27e-3fd0c416f9ac
 caps.latest.revision: 22
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 51e79850e2958ce295ab4d98f3ea191a5222a8fb
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: ce96f2a3df901c1fea0aa4caa97d29c07db5e681
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60078920"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72654952"
 ---
 # <a name="customizing-the-model-explorer"></a>Personalizar el Explorador de modelos
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Puede cambiar la apariencia y comportamiento del explorador para el Diseñador de lenguaje específico de dominio como sigue:  
-  
-- Cambie el título de ventana.  
-  
-- Cambiar el icono de pestaña.  
-  
-- Cambiar los iconos para los nodos.  
-  
-- Ocultar los nodos.  
-  
-## <a name="changing-the-window-title"></a>Cambiar el título de ventana  
- Para cambiar el título de la ventana del explorador generado, seleccione **comportamiento de Explorer** en el **DSL Explorer**y, a continuación, en el **propiedades** ventana, establezca el  **Título** propiedad para el título que desee.  
-  
-## <a name="changing-the-tab-icon"></a>Cambio del icono de pestaña  
- Para cambiar el icono de pestaña en el explorador, use un icono de 16 x 16 píxeles en un archivo. bmp. Coloque el archivo de icono en la carpeta \DslPackage\Resources\ y, a continuación, cambie el nombre de archivo a **ModelExplorerToolWindowBitmaps.bmp**. Por ejemplo, puede cambiar el [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] setup.ico icono de archivo al formato .bmp y cambie su nombre a **DSLLanguageName\DslPackage\Resources\ModelExplorerToolWindowBitmaps.bmp**. El diseñador generado mostrará este icono en la pestaña de su explorador cuando se acopla junto con **el Explorador de soluciones**.  
-  
-## <a name="setting-custom-icons-on-explorer-nodes"></a>Establecer iconos personalizados en los nodos del explorador  
- Puede personalizar los nodos en el explorador mediante la configuración de nodo del explorador. El procedimiento siguiente muestra cómo agregar un icono a un nodo.  
-  
-#### <a name="to-add-an-icon-to-an-explorer-node"></a>Para agregar un icono a un nodo del explorador  
-  
-1. Crear un [!INCLUDE[dsl](../includes/dsl-md.md)] solución mediante la plantilla de solución de flujo de tareas.  
-  
-2. Coloque un archivo .bmp que contiene un icono de 16 x 16 píxeles en el **Dsl\Resources** carpeta en la solución.  
-  
-3. En el **DSL Explorer**, haga clic en **comportamiento de Explorer** y, a continuación, haga clic en **agregar nueva configuración de nodo de explorador**.  
-  
-     Un **ExplorerNodeSettings** nodo aparece en el **configuración personalizada del nodo** nodo.  
-  
-4. Seleccione **ExplorerNodeSettings**y, a continuación, en el **propiedades** ventana, establezca **clase** a **Actor**.  
-  
-5. Establecer **icono para mostrar** a la ruta de acceso del archivo del icono.  
-  
-6. Transformar todas las plantillas y, a continuación, compilar y ejecutar la solución.  
-  
-7. En el diseñador generado, abra el diagrama de ejemplo.  
-  
-     El explorador debería mostrar tres **Actor** nodos que tengan su icono.  
-  
+Puede cambiar la apariencia y el comportamiento del explorador para el diseñador de lenguaje específico de dominio como se indica a continuación:
+
+- Cambiar el título de la ventana.
+
+- Cambiar el icono de la pestaña.
+
+- Cambiar los iconos de los nodos.
+
+- Ocultar nodos.
+
+## <a name="changing-the-window-title"></a>Cambiar el título de la ventana
+ Para cambiar el título de la ventana del explorador generado, seleccione **comportamiento del explorador** en **DSL Explorer**y, a continuación, en la ventana **propiedades** , establezca la propiedad **title** en el título que desee.
+
+## <a name="changing-the-tab-icon"></a>Cambiar el icono de la pestaña
+ Para cambiar el icono de la pestaña del explorador, use un icono de 16x16 píxeles en un archivo. bmp. Coloque el archivo de icono en la carpeta \DslPackage\Resources\ y, a continuación, cambie el nombre de archivo a **ModelExplorerToolWindowBitmaps. bmp**. Por ejemplo, puede cambiar el archivo de icono Setup. ico [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] al formato. bmp y cambiarle el nombre a **DSLLanguageName\DslPackage\Resources\ModelExplorerToolWindowBitmaps.bmp**. El diseñador generado mostrará este icono en la pestaña del explorador cuando esté acoplado junto con **Explorador de soluciones**.
+
+## <a name="setting-custom-icons-on-explorer-nodes"></a>Establecer iconos personalizados en nodos del explorador
+ Puede personalizar los nodos del explorador mediante la configuración de nodo del explorador. En el procedimiento siguiente se muestra cómo agregar un icono a un nodo.
+
+#### <a name="to-add-an-icon-to-an-explorer-node"></a>Para agregar un icono a un nodo del explorador
+
+1. Cree una solución de [!INCLUDE[dsl](../includes/dsl-md.md)] mediante la plantilla de solución flujo de tareas.
+
+2. Coloque un archivo. bmp que contenga un icono de 16x16 píxeles en la carpeta **Dsl\Resources** de la solución.
+
+3. En el **Explorador de DSL**, haga clic con el botón secundario en **comportamiento del explorador** y haga clic en **Agregar nueva configuración de nodo del explorador**.
+
+     Aparece un nodo **ExplorerNodeSettings** en el nodo **configuración de nodo personalizado** .
+
+4. Seleccione **ExplorerNodeSettings**y, a continuación, en la ventana **propiedades** , establezca **clase** en **actor**.
+
+5. Establezca el **icono para** que se muestre en la ruta de acceso del archivo de icono.
+
+6. Transformar todas las plantillas y, a continuación, compilar y ejecutar la solución.
+
+7. En el diseñador generado, abra el diagrama de ejemplo.
+
+     El explorador debe mostrar tres nodos de **actor** que tengan el icono.
+
 > [!NOTE]
->  Si ha establecido un icono de nodo para cualquier elemento que se muestra en el explorador generado, todos los nodos del explorador mostrará el icono. Si no se ha establecido ningún icono, los nodos mostrará el icono predeterminado.  
-  
-## <a name="changing-the-name-displayed-on-an-explorer-node"></a>Cambiar el nombre mostrado en un nodo del explorador  
- Puede cambiar cómo se muestran los nombres de los elementos del modelo en el explorador. El siguiente procedimiento muestra cómo mostrar el nombre de la **tarea** que hace referencia un **comentario** en el nodo de comentario.  
-  
-#### <a name="to-display-a-property"></a>Para mostrar una propiedad  
-  
-1. Abra la solución que creó en el procedimiento anterior.  
-  
-2. Asegúrese de que el **comentario** hace referencia a solo una clase de dominio único, establezca la multiplicidad del rol con el nombre de la propiedad **asuntos** a 0.. 1. El nombre de propiedad debe convertirse en **asunto**, y debe ser el nombre de la relación **CommentReferencesSubject**.  
-  
-3. En el **DSL Explorer**, haga clic en **comportamiento de Explorer** y, a continuación, haga clic en **agregar nueva configuración de nodo de explorador**.  
-  
-     Un **ExplorerNodeSettings** nodo aparece en el **configuración personalizada del nodo** nodo.  
-  
-4. Seleccione **ExplorerNodeSettings**y, a continuación, en el **propiedades** ventana, establezca **clase** a **comentario**.  
-  
-5. Haga clic en el **comentario** nodo y, a continuación, haga clic en **agregar nueva ruta de acceso de propiedad**.  
-  
-     Aparece un nuevo nodo denominado **propiedad muestra**.  
-  
-6. Seleccione **propiedad muestra**y, a continuación, en el **propiedades** ventana, haga clic en el campo de valor de **ruta de acceso a la propiedad**. Seleccione **comentario**, a continuación, **CommentReferencesSubject**, a continuación, **FlowElement**. La ruta de acceso resultante debe ser similar a **CommentReferencesSubject.Subject/! Asunto**.  
-  
-7. En el campo de valor de **propiedad**, seleccione **nombre**.  
-  
-8. Transformar todas las plantillas y, a continuación, compilar y ejecutar la solución.  
-  
-9. En el diseñador generado, abra el diagrama de ejemplo.  
-  
-10. Dibujar un **conector comentario** entre el elemento de comentario y el **Task1** elemento del diagrama.  
-  
-     El nodo del explorador debe mostrar el comentario como **Task1**.  
-  
-## <a name="hiding-nodes"></a>Al ocultar nodos  
- Puede ocultar un nodo en el explorador mediante la adición de su ruta de acceso a la **nodos ocultos** nodo de la **DSL Explorer**. El siguiente procedimiento muestra cómo ocultar **comentario** nodos.  
-  
-#### <a name="to-hide-an-explorer-node"></a>Para ocultar un nodo del explorador  
-  
-1. Abra la solución que creó en el procedimiento anterior.  
-  
-2. En el **DSL Explorer**, haga clic en **comportamiento de Explorer** y, a continuación, haga clic en **agregar nueva ruta de acceso de dominio**.  
-  
-     Un **ruta de acceso de dominio** nodo aparece en **nodos ocultos**.  
-  
-3. Seleccione **ruta de acceso de dominio**y, a continuación, en el **propiedades** ventana, haga clic en el campo de valor de **definición de ruta de acceso**. Seleccione **FlowGraph**, a continuación, **FlowGraphHasComments**. La ruta de acceso resultante debe ser similar a **FlowGraphHasComments.Comments**  
-  
-4. Transformar todas las plantillas y, a continuación, compilar y ejecutar la solución.  
-  
-5. En el diseñador generado, abra el diagrama de ejemplo.  
-  
-     El explorador debería mostrar sólo una **actores** nodo y no debe mostrar el **comentarios** nodo.  
-  
-## <a name="see-also"></a>Vea también  
- [Glosario de las Herramientas del lenguaje específico de dominio](http://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)
+> Si ha establecido un icono de nodo para cualquier elemento que se muestre en el explorador generado, todos los nodos del explorador mostrarán el icono. Si no se ha establecido ningún icono, los nodos mostrarán el icono predeterminado.
+
+## <a name="changing-the-name-displayed-on-an-explorer-node"></a>Cambiar el nombre mostrado en un nodo del explorador
+ Puede cambiar el modo en que se muestran los nombres de los elementos del modelo en el explorador. En el procedimiento siguiente se muestra cómo mostrar el nombre de la **tarea** a la que hace referencia un **Comentario** en el nodo de comentario.
+
+#### <a name="to-display-a-property"></a>Para mostrar una propiedad
+
+1. Abra la solución que creó en el procedimiento anterior.
+
+2. Asegúrese de que el **Comentario** hace referencia a una sola clase de dominio estableciendo la multiplicidad del rol con el nombre de la propiedad **asuntos** en 0.. 1. El nombre de la propiedad debe ser **sujeto**y el nombre de la relación debe ser **CommentReferencesSubject**.
+
+3. En el **Explorador de DSL**, haga clic con el botón secundario en **comportamiento del explorador** y haga clic en **Agregar nueva configuración de nodo del explorador**.
+
+     Aparece un nodo **ExplorerNodeSettings** en el nodo **configuración de nodo personalizado** .
+
+4. Seleccione **ExplorerNodeSettings**y, a continuación, en la ventana **propiedades** , establezca **clase** en **Comentario**.
+
+5. Haga clic con el botón secundario en el nodo **Comentario** y, a continuación, haga clic en **Agregar nueva ruta de acceso de propiedad**.
+
+     Aparece un nuevo nodo que se muestra con el nombre **propiedad**.
+
+6. Seleccione la propiedad que se **muestra**y, a continuación, en la ventana **propiedades** , haga clic en el campo valor de **ruta de acceso a propiedad**. Seleccione **Comentario**, **CommentReferencesSubject**y **FlowElement**. La ruta de acceso resultante debe ser similar a **CommentReferencesSubject. Subject/! Asunto**.
+
+7. En el campo valor de la **propiedad**, seleccione **nombre**.
+
+8. Transformar todas las plantillas y, a continuación, compilar y ejecutar la solución.
+
+9. En el diseñador generado, abra el diagrama de ejemplo.
+
+10. Dibuje un **conector de comentario** entre el elemento comment y el elemento **Task1** en el diagrama.
+
+     El nodo explorador debe mostrar el comentario como **Task1**.
+
+## <a name="hiding-nodes"></a>Ocultar nodos
+ Puede ocultar un nodo en el explorador agregando su ruta de acceso al nodo **nodos ocultos** del **Explorador de DSL**. En el procedimiento siguiente se muestra cómo ocultar los nodos de **Comentario** .
+
+#### <a name="to-hide-an-explorer-node"></a>Para ocultar un nodo del explorador
+
+1. Abra la solución que creó en el procedimiento anterior.
+
+2. En el **Explorador de DSL**, haga clic con el botón secundario en **comportamiento del explorador** y haga clic en **Agregar nueva ruta de acceso de dominio**.
+
+     Aparece un nodo de **ruta de acceso de dominio** bajo **nodos ocultos**.
+
+3. Seleccione **ruta de acceso del dominio**y, a continuación, en la ventana **propiedades** , haga clic en el campo valor de la definición de la **ruta de acceso**. Seleccione **FlowGraph**y, después, **FlowGraphHasComments**. La ruta de acceso resultante debe ser similar a **FlowGraphHasComments. comments**
+
+4. Transformar todas las plantillas y, a continuación, compilar y ejecutar la solución.
+
+5. En el diseñador generado, abra el diagrama de ejemplo.
+
+     El explorador debe mostrar solo un nodo **actores** y no debe mostrar el nodo **comentarios** .
+
+## <a name="see-also"></a>Vea también
+ [Glosario de las Herramientas del lenguaje específico de dominio](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)

@@ -1,5 +1,5 @@
 ---
-title: IEnumDebugCodeContexts::Next | Microsoft Docs
+title: 'Ienumdebugcodecontexts (:: Next | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 86a0e3f58d9f4a13295f689551f6f2a20b287854
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 289085265f182ec0fafca27a2cc18e8865b98091
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58151887"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72577171"
 ---
 # <a name="ienumdebugcodecontextsnext"></a>IEnumDebugCodeContexts::Next
-Recupera un número especificado de segmentos de la secuencia de enumeración.  
+Recupera un número especificado de segmentos en la secuencia de enumeración.  
   
 ## <a name="syntax"></a>Sintaxis  
   
@@ -39,13 +39,13 @@ HRESULT Next(
   
 #### <a name="parameters"></a>Parámetros  
  `celt`  
- [in] El número de segmentos se van a recuperar.  
+ de Número de segmentos que se van a recuperar.  
   
  `pscc`  
- [out] Devuelve una matriz de `IDebugCodeContext` interfaces que representa los segmentos que se va a recuperar.  
+ enuncia Devuelve una matriz de interfaces `IDebugCodeContext` que representa los segmentos que se van a recuperar.  
   
  `pceltFetched`  
- [out] El número real de capturado por el enumerador de segmentos.  
+ enuncia Número real de segmentos capturados por el enumerador.  
   
 ## <a name="return-value"></a>Valor devuelto  
  El método devuelve un objeto `HRESULT`. Entre los valores posibles se incluyen los que se indican en la tabla siguiente, entre otros.  
@@ -55,7 +55,7 @@ HRESULT Next(
 |`S_OK`|El método se realizó correctamente.|  
   
 ## <a name="remarks"></a>Comentarios  
- Este método recupera un número especificado de segmentos de la secuencia de enumeración.  
+ Este método recupera un número especificado de segmentos en la secuencia de enumeración.  
   
 ## <a name="see-also"></a>Vea también  
  [IEnumDebugCodeContexts (Interfaz)](../../winscript/reference/ienumdebugcodecontexts-interface.md)

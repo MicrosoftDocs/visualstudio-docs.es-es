@@ -1,5 +1,5 @@
 ---
-title: Filtrar Agregar un método Deleter | Documentos de Microsoft
+title: Procedimiento Agregar un método Deleter | Documentos de Microsoft
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -19,14 +19,14 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: d7a486ea4a448cb30b64631589f003854e8b1b40
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: c9d005ef8bade9f83027c216d875d24aad602449
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56644398"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63418349"
 ---
-# <a name="how-to-add-a-deleter-method"></a>Filtrar Agregar un método Deleter
+# <a name="how-to-add-a-deleter-method"></a>Procedimiento Agregar un método Deleter
   Puede habilitar un usuario final eliminar un registro de datos de una lista externa en un sitio de SharePoint mediante la adición de un método Deleter al modelo. Para obtener más información, consulte [diseñar un modelo de conectividad a datos empresariales](../sharepoint/designing-a-business-data-connectivity-model.md).
 
 ### <a name="to-create-a-deleter-method"></a>Para crear un método Deleter
@@ -58,10 +58,10 @@ ms.locfileid: "56644398"
 5. Agregue código al método Deleter para eliminar un registro. El ejemplo siguiente elimina un elemento de línea de un pedido de venta mediante el uso de la base de datos de ejemplo AdventureWorks para SQL Server.
 
    > [!NOTE]
-   >  El método en este ejemplo utiliza dos parámetros de entrada.
+   > El método en este ejemplo utiliza dos parámetros de entrada.
 
    > [!NOTE]
-   >  Reemplace el valor de la `ServerName` campo con el nombre del servidor.
+   > Reemplace el valor de la `ServerName` campo con el nombre del servidor.
 
     [!code-csharp[SP_BDC#6](../sharepoint/codesnippet/CSharp/SP_BDC/bdcmodel1/salesorderdetailservice.cs#6)]
     [!code-vb[SP_BDC#6](../sharepoint/codesnippet/VisualBasic/sp_bdc/bdcmodel1/salesorderdetailservice.vb#6)]

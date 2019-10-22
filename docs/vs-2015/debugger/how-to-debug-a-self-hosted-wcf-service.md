@@ -19,11 +19,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: e58acc6323f396f9b0755e84b369ce0fdf413c08
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60080519"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68185178"
 ---
 # <a name="how-to-debug-a-self-hosted-wcf-service"></a>Procedimiento Depuración de un servicio WCF autohospedado
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -54,7 +54,7 @@ Un *servicio que se hospeda a sí mismo* es un servicio WCF que no se ejecuta de
   
     5. En la línea que corresponde al proyecto de cliente, haga clic en **Acción** y elija **Inicio**.  
   
-    6. Haga clic en **Aceptar**.  
+    6. Haga clic en **OK**.  
   
 ## <a name="see-also"></a>Vea también  
  [Depuración de servicios WCF](../debugger/debugging-wcf-services.md)   

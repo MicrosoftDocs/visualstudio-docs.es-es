@@ -1,17 +1,17 @@
 ---
-title: Creación de un instalador sin conexión para Visual Studio para Mac
+title: Creación de un instalador sin conexión
 description: ''
 author: conceptdev
 ms.author: crdun
 ms.date: 11/06/2018
 ms.technology: vs-ide-install
 ms.assetid: 5CA4B8C1-2D01-46EA-A6B2-8573B324509B
-ms.openlocfilehash: 12151a4aaaae1226678eb77ad029f1d4cf17ec1e
-ms.sourcegitcommit: da73f7a0cf1795d5d400c0897ae3326191435dd0
+ms.openlocfilehash: 791040692a98cb013848f62fafbfdee03910928b
+ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/28/2019
-ms.locfileid: "58568247"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68872297"
 ---
 # <a name="create-an-offline-installer-for-visual-studio-for-mac"></a>Creación de un instalador sin conexión para Visual Studio para Mac
 

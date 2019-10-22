@@ -1,8 +1,10 @@
 ---
 title: Recursos para diseñar aplicaciones accesibles
 description: Obtenga información sobre cómo crear aplicaciones accesibles para facilitar su uso a las personas con discapacidades.
-ms.date: 11/04/2016
+ms.date: 08/27/2019
 ms.topic: conceptual
+ms.prod: visual-studio-windows
+ms.technology: vs-ide-general
 helpviewer_keywords:
 - accessibility, Windows applications
 - Windows applications, accessibility
@@ -14,16 +16,19 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b79d1f95b6aab700de060a3749374e9ecb48c229
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: f8ac7beac67a2f1d0010ee64ae7af31108d7ec3b
+ms.sourcegitcommit: cf8c0fef2b9690595e99ce3802586cdd55fd37c2
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55952676"
+ms.lasthandoff: 08/28/2019
+ms.locfileid: "70107844"
 ---
 # <a name="resources-for-designing-accessible-applications"></a>Recursos para diseñar aplicaciones accesibles
 
-Use los siguientes vínculos para encontrar información sobre las tecnologías que admiten el diseño accesible, además de sugerencias y ejemplos para desarrollar sitios web y aplicaciones Windows accesibles. Puede encontrar información general sobre accesibilidad en [http://www.microsoft.com/enable/](http://www.microsoft.com/enable/).
+Más información sobre las tecnologías que admiten diseño accesible. También hemos incluido sugerencias y vínculos a tutoriales que pueden ayudarle a desarrollar aplicaciones y sitios web de Windows accesibles.
+
+>[!NOTE]
+>Para más información sobre cómo desarrollar productos que capaciten a todo el mundo, consulte [Accesibilidad de Microsoft](https://www.microsoft.com/accessibility/).
 
 ## <a name="technologies"></a>Tecnologías
 
@@ -43,14 +48,15 @@ Use los siguientes vínculos para encontrar información sobre las tecnologías 
 
 ## <a name="websites"></a>Sitios web
 
--   [Tutorial: Directrices de accesibilidad para usar controles Image, Menu y AutoPostBack](https://msdn.microsoft.com/Library/ff7b5021-48b3-46bf-921f-9fe1e0e32202) En este artículo se proporcionan instrucciones paso a paso para incluir controles accesibles en una página web de ejemplo. También se proporcionan algunas sugerencias de diseño de accesibilidad para Internet.
+- [Tutorial: Directrices de accesibilidad para usar controles Image, Menu y AutoPostBack](https://msdn.microsoft.com/Library/ff7b5021-48b3-46bf-921f-9fe1e0e32202) En este artículo se proporcionan instrucciones paso a paso para incluir controles accesibles en una página web de ejemplo. También se proporcionan algunas sugerencias de diseño de accesibilidad para Internet.
 
--   **Creación de páginas web accesibles con DHTML** En este artículo técnico se enumeran los elementos de HTML 4.0 que son accesibles, así como sugerencias para un diseño web accesible. Para obtener más información, vea [Create accessible web pages with DHTML](https://msdn.microsoft.com/library/ms528445.aspx) (Creación de páginas web accesibles con DHTML).
+- **Creación de páginas web accesibles con DHTML** En este artículo técnico se enumeran los elementos de HTML 4.0 que son accesibles, así como sugerencias para un diseño web accesible. Para obtener más información, vea [Create accessible web pages with DHTML](https://msdn.microsoft.com/library/ms528445.aspx) (Creación de páginas web accesibles con DHTML).
 
 ### <a name="third-party-resources"></a>Recursos de terceros
 
--   **Iniciativa de accesibilidad web del World Wide Web Consortium (W3C)** En este sitio web encontrará directrices y técnicas para el desarrollo de sitios web accesibles. Para obtener más información, vea [https://www.w3.org/WAI/GL/](https://www.w3.org/WAI/GL/).
+- **Iniciativa de accesibilidad web del World Wide Web Consortium (W3C)** En este sitio web encontrará directrices y técnicas para el desarrollo de sitios web accesibles. Para obtener más información, vea [https://www.w3.org/WAI/GL/](https://www.w3.org/WAI/GL/).
 
 ## <a name="see-also"></a>Vea también
 
-[Características de accesibilidad de Visual Studio](../../ide/reference/accessibility-features-of-visual-studio.md)
+* [Características de accesibilidad de Visual Studio](../../ide/reference/accessibility-features-of-visual-studio.md)
+* [Accesibilidad de Visual Studio para Mac](/visualstudio/mac/accessibility/)

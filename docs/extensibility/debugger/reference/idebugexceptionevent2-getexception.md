@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugExceptionEvent2::GetException
 ms.assetid: 7c98f41d-322b-4e72-a514-cbd4823eb70d
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 79385348aa9290f26a34b99dbd2d6f68cb92dc8a
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 691df8f5a212f1d854d87076a215402c7ce0053c
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56680287"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66310510"
 ---
 # <a name="idebugexceptionevent2getexception"></a>IDebugExceptionEvent2::GetException
 Obtiene una descripción detallada de la excepción que se desencadena este evento.
@@ -36,17 +39,16 @@ int GetException( 
 );
 ```
 
-#### <a name="parameters"></a>Parámetros
- `pExceptionInfo`
-
- [in, out] Un [EXCEPTION_INFO](../../../extensibility/debugger/reference/exception-info.md) estructura que se rellena con la descripción de la excepción.
+## <a name="parameters"></a>Parámetros
+`pExceptionInfo`\
+[in, out] Un [EXCEPTION_INFO](../../../extensibility/debugger/reference/exception-info.md) estructura que se rellena con la descripción de la excepción.
 
 ## <a name="return-value"></a>Valor devuelto
  Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.
 
 ## <a name="remarks"></a>Comentarios
 
- [Solo en C++] El llamador es responsable de liberar cualquier cadena de la [EXCEPTION_INFO](../../../extensibility/debugger/reference/exception-info.md) estructura, así como de liberar el [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) objeto de la estructura.
+ [C++ sólo] El llamador es responsable de liberar cualquier cadena de la [EXCEPTION_INFO](../../../extensibility/debugger/reference/exception-info.md) estructura, así como de liberar el [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) objeto de la estructura.
 
 ## <a name="see-also"></a>Vea también
 - [IDebugExceptionEvent2](../../../extensibility/debugger/reference/idebugexceptionevent2.md)

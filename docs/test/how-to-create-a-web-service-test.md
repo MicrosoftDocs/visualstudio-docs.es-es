@@ -10,14 +10,14 @@ ms.assetid: fbcd57ee-06ad-4260-8694-09f8e0f93e39
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 3f1172cff8abc53867f4a13cacdf16fe2d1f065e
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 3fd640a79a81e2306c8abd1c3c5279b1fc8f335f
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55954977"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62950142"
 ---
-# <a name="how-to-create-a-web-service-test"></a>Filtrar Crear una prueba de servicios web
+# <a name="how-to-create-a-web-service-test"></a>Procedimiento Crear una prueba de servicios web
 
 Para probar servicios web, puede utilizar una prueba de rendimiento web. Las opciones **Insertar solicitud** e **Insertar solicitud de servicio web** permiten personalizar las solicitudes individuales del **Editor de pruebas de rendimiento web** para buscar páginas de servicios web. Normalmente, estas páginas no se muestran en la aplicación web. Por consiguiente, debe personalizar la solicitud para obtener acceso a estas páginas.
 
@@ -31,21 +31,21 @@ Visual Studio Enterprise
 
 ## <a name="to-test-a-web-service"></a>Para probar un servicio web
 
-1.  Cree una nueva prueba de rendimiento web. En cuanto se abra el explorador, elija **Detener**.
+1. Cree una nueva prueba de rendimiento web. En cuanto se abra el explorador, elija **Detener**.
 
-2.  En el **Editor de pruebas de rendimiento web**, haga clic con el botón derecho en la prueba de rendimiento web y seleccione **Agregar solicitud de servicio web**.
+2. En el **Editor de pruebas de rendimiento web**, haga clic con el botón derecho en la prueba de rendimiento web y seleccione **Agregar solicitud de servicio web**.
 
-3.  En la propiedad **Url** de la nueva solicitud, escriba el nombre del servicio web, por ejemplo, **http://localhost/storecsvs/InstantOrder.asmx**.
+3. En la propiedad **Url** de la nueva solicitud, escriba el nombre del servicio web, por ejemplo, **http://localhost/storecsvs/InstantOrder.asmx**.
 
-4.  Abra una sesión independiente del explorador y escriba la dirección URL de la página *.asmx* en la barra de herramientas **Dirección**. Seleccione el método que desee probar y examine el mensaje SOAP. Contiene una `SOAPAction`.
+4. Abra una sesión independiente del explorador y escriba la dirección URL de la página *.asmx* en la barra de herramientas **Dirección**. Seleccione el método que desee probar y examine el mensaje SOAP. Contiene una `SOAPAction`.
 
-5.  En el **Editor de pruebas de rendimiento web**, haga clic con el botón derecho en la solicitud y seleccione **Agregar encabezado** para agregar un nuevo encabezado. En la propiedad **Nombre**, escriba `SOAPAction`. En la propiedad **Valor**, escriba el valor que vea en `SOAPAction`, por ejemplo, `"http://tempuri.org/CheckStatus"`.
+5. En el **Editor de pruebas de rendimiento web**, haga clic con el botón derecho en la solicitud y seleccione **Agregar encabezado** para agregar un nuevo encabezado. En la propiedad **Nombre**, escriba `SOAPAction`. En la propiedad **Valor**, escriba el valor que vea en `SOAPAction`, por ejemplo, `"http://tempuri.org/CheckStatus"`.
 
-6.  Expanda el nodo URL en el editor, elija el nodo **Texto de la cadena** y, en la propiedad **Tipo de contenido**, escriba el valor `text/xml`.
+6. Expanda el nodo URL en el editor, elija el nodo **Texto de la cadena** y, en la propiedad **Tipo de contenido**, escriba el valor `text/xml`.
 
-7.  Vuelva al explorador del paso 4, seleccione la parte XML de la solicitud SOAP desde la página de descripción del servicio web y cópiela en el Portapapeles.
+7. Vuelva al explorador del paso 4, seleccione la parte XML de la solicitud SOAP desde la página de descripción del servicio web y cópiela en el Portapapeles.
 
-8.  El contenido XML presenta un aspecto similar al del siguiente ejemplo:
+8. El contenido XML presenta un aspecto similar al del siguiente ejemplo:
 
      ```xml
      <?xml version="1.0" encoding="utf-8"?>

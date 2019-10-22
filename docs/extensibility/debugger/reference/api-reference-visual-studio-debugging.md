@@ -5,24 +5,24 @@ ms.topic: reference
 helpviewer_keywords:
 - debugging [Debugging SDK], API reference
 ms.assetid: e4e429da-3667-41f7-9158-a8207d13e91a
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7d415644897d7dd481f47c93a3b951db23fda843
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 7f880596854eb376d386bc6a96d789c54767f39d
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56686358"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66351859"
 ---
 # <a name="api-reference-visual-studio-debugging"></a>Referencia de API (depuración de Visual Studio)
 La sección de referencia incluye información general conceptual de la API, una guía que muestra la sintaxis y el uso para todos los elementos de la API y una gran variedad de ejemplos de código. Todas las referencias aparecen ordenadas alfabéticamente por categoría.
 
  En la tabla siguiente se muestra el común `HRESULT` valores devueltos por métodos.
 
-|nombre|Descripción|Valor|
+|Name|Descripción|Valor|
 |----------|-----------------|-----------|
 |S_OK|Correcto.|0x00000000|
 |E_UNEXPECTED|Error inesperado.|0x8000FFFF|
@@ -37,10 +37,10 @@ La sección de referencia incluye información general conceptual de la API, una
 |E_ACCESSDENIED|Error de acceso general denegado.|0x80070005|
 
 > [!NOTE]
->  Cuando un [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] depurar el método devuelve `S_OK`, se supone que todo punteros de parámetro son válidos, es decir, ninguna validación se lleva a cabo los punteros de parámetro cuando `S_OK` se devuelve.
+> Cuando un [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] depurar el método devuelve `S_OK`, se supone que todo punteros de parámetro son válidos, es decir, ninguna validación se lleva a cabo los punteros de parámetro cuando `S_OK` se devuelve.
 >
 > [!NOTE]
->  No válido o `NULL` [parámetros out] puede provocar que el IDE se bloquee.
+> No válido o `NULL` [parámetros out] puede provocar que el IDE se bloquee.
 
 ## <a name="see-also"></a>Vea también
 - [Interfaces](../../../extensibility/debugger/reference/interfaces-visual-studio-debugging.md)

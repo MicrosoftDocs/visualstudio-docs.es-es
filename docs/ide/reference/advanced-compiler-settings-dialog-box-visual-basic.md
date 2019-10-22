@@ -1,23 +1,24 @@
 ---
 title: Configuración de compilador avanzada (Cuadro de diálogo, Visual Basic)
 ms.date: 11/04/2016
+ms.technology: vs-ide-compile
 ms.topic: reference
 f1_keywords:
 - vb.ProjectPropertiesAdvancedCompile
 helpviewer_keywords:
 - Advanced Compiler Settings dialog box
 ms.assetid: 1f81133a-293f-4dba-bc1c-8baafb01d857
-author: gewarren
-ms.author: gewarren
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 87a7924a8a1239da61553c50dc7c7ba8cea547d2
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 0cb77021818fd77205a598f54a4a64a1929348f2
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55918330"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68919357"
 ---
 # <a name="advanced-compiler-settings-dialog-box-visual-basic"></a>Configuración de compilador avanzada (Cuadro de diálogo, Visual Basic)
 
@@ -25,19 +26,19 @@ Use el cuadro de diálogo **Configuración de compilación avanzada** del **Dise
 
 ## <a name="to-access-this-dialog-box"></a>Para obtener acceso a este cuadro de diálogo
 
-1.  En el **Explorador de soluciones**, elija el nodo de proyecto (no el nodo **Solución**).
+1. En el **Explorador de soluciones**, elija el nodo de proyecto (no el nodo **Solución**).
 
-2.  En el menú **Proyecto**, haga clic en **Propiedades**. Cuando se muestre el **Diseñador de proyectos**, haga clic en la pestaña **Compilar**.
+2. En el menú **Proyecto**, haga clic en **Propiedades**. Cuando se muestre el **Diseñador de proyectos**, haga clic en la pestaña **Compilar**.
 
-3.  En la [página Compilación, Diseñador de proyectos (Visual Basic)](../../ide/reference/compile-page-project-designer-visual-basic.md), seleccione **Configuración** y **Plataforma**. En las configuraciones de compilación simplificadas, no se muestran las listas **Configuración** y **Plataforma**. Para obtener más información, vea [Cómo: Establecer configuraciones Debug y Release](../../debugger/how-to-set-debug-and-release-configurations.md).
+3. En la [página Compilación, Diseñador de proyectos (Visual Basic)](../../ide/reference/compile-page-project-designer-visual-basic.md), seleccione **Configuración** y **Plataforma**. En las configuraciones de compilación simplificadas, no se muestran las listas **Configuración** y **Plataforma**. Para obtener más información, vea [Cómo: Establecer configuraciones Debug y Release](../../debugger/how-to-set-debug-and-release-configurations.md).
 
-4.  Haga clic en **Opciones de compilación avanzadas**.
+4. Haga clic en **Opciones de compilación avanzadas**.
 
 [!INCLUDE[note_settings_general](../../data-tools/includes/note_settings_general_md.md)]
 
 ## <a name="optimizations"></a>Optimizaciones
 
- Las opciones siguientes especifican optimizaciones que, en algunos casos, permiten reducir un archivo de programa, acelerar la ejecución de un programa o acelerar el proceso de compilación.
+Las opciones siguientes especifican optimizaciones que, en algunos casos, permiten reducir un archivo de programa, acelerar la ejecución de un programa o acelerar el proceso de compilación.
 
 **Quitar comprobaciones de desbordamiento con enteros**
 
@@ -51,11 +52,11 @@ De manera predeterminada, esta casilla está desactivada para deshabilitar las o
 
  **Dirección base del archivo DLL**
 
- En este cuadro de texto se muestra la dirección base predeterminada del archivo DLL en formato hexadecimal. En los proyectos de biblioteca de clases y biblioteca de controles, puede usar este cuadro de texto para especificar la dirección base que se usará al crear el archivo DLL.
+En este cuadro de texto se muestra la dirección base predeterminada del archivo DLL en formato hexadecimal. En los proyectos de biblioteca de clases y biblioteca de controles, puede usar este cuadro de texto para especificar la dirección base que se usará al crear el archivo DLL.
 
  **Generar información de depuración**
 
- Seleccione **Ninguna**, **Completa** o **Solo PDB** en la lista. **Ninguna** especifica que no se genera ninguna información de depuración. **Completa** especifica que se genera información de depuración completa y **Solo PDB** especifica que solo se debe generar información de depuración PDB. El valor predeterminado de esta opción es **Completa**.
+Seleccione **Ninguna**, **Completa** o **Solo PDB** en la lista. **Ninguna** especifica que no se genera ninguna información de depuración. **Completa** especifica que se genera información de depuración completa y **Solo PDB** especifica que solo se debe generar información de depuración PDB. El valor predeterminado de esta opción es **Completa**.
 
 ## <a name="compilation-constants"></a>Constantes de compilación
 
@@ -63,15 +64,15 @@ Las constantes de compilación condicionales tienen un efecto parecido al de usa
 
  **Definir constante DEBUG**
 
- De manera predeterminada, esta casilla está activada, lo que indica que se establece una constante DEBUG.
+De manera predeterminada, esta casilla está activada, lo que indica que se establece una constante DEBUG.
 
  **Definir constante TRACE**
 
- De manera predeterminada, esta casilla está activada, lo que indica que se establece una constante TRACE.
+De manera predeterminada, esta casilla está activada, lo que indica que se establece una constante TRACE.
 
  **Constantes personalizadas**
 
- Escriba una de estas constantes personalizada para su aplicación en este cuadro de texto. Las entradas deben delimitarse mediante comas, con este formato: **Name1="Value1",Name2="Value2",Name3="Value3"**.
+Escriba una de estas constantes personalizada para su aplicación en este cuadro de texto. Las entradas deben delimitarse mediante comas, con este formato: **Name1="Value1",Name2="Value2",Name3="Value3"** .
 
 ## <a name="other-settings"></a>Otras configuraciones
 

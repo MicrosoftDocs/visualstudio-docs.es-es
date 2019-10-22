@@ -1,5 +1,5 @@
 ---
-title: IActiveScriptParseProcedure::ParseProcedureText | Microsoft Docs
+title: IActiveScriptParseProcedure::P arseProcedureText | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 98425d12c53c61cb3f7557d1243cc757c326a89a
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 53ed29c3e283af0f923590851cf9bf0655f7ac08
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58157560"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72561541"
 ---
 # <a name="iactivescriptparseprocedureparseproceduretext"></a>IActiveScriptParseProcedure::ParseProcedureText
-Analiza el procedimiento de código especificado y agrega el procedimiento para el espacio de nombres.  
+Analiza el procedimiento de código dado y agrega el procedimiento al espacio de nombres.  
   
 ## <a name="syntax"></a>Sintaxis  
   
@@ -46,56 +46,56 @@ HRESULT ParseProcedureText(
   
 #### <a name="parameters"></a>Parámetros  
  `pstrCode`  
- [in] Dirección de evaluar el texto del procedimiento. La interpretación de esta cadena depende del lenguaje de scripting.  
+ de Dirección del texto del procedimiento que se va a evaluar. La interpretación de esta cadena depende del lenguaje de scripting.  
   
  `pstrFormalParams`  
- [in] Dirección de los nombres de parámetro formal para el procedimiento. Los nombres de parámetro deben estar separados con los delimitadores apropiados para el motor de scripting. Los nombres no se deben incluir entre paréntesis.  
+ de Dirección de los nombres de parámetros formales para el procedimiento. Los nombres de los parámetros deben estar separados por los delimitadores adecuados para el motor de scripting. Los nombres no se deben incluir entre paréntesis.  
   
  `pstrProcedureName`  
- [in] Dirección del nombre del procedimiento que se va a analizar.  
+ de Dirección del nombre del procedimiento que se va a analizar.  
   
  `pstrItemName`  
- [in] Dirección del nombre del elemento que proporciona el contexto en el que el procedimiento se va a evaluar. Si este parámetro es `NULL`, el código se evalúa en el contexto global del motor de scripting.  
+ de Dirección del nombre de elemento que proporciona el contexto en el que se va a evaluar el procedimiento. Si este parámetro es `NULL`, el código se evalúa en el contexto global del motor de scripting.  
   
  `punkContext`  
- [in] Dirección del objeto de contexto. Este objeto está reservado para su uso en un entorno de depuración, donde el depurador para representar un contexto de tiempo de ejecución activo puede proporcionar un contexto de este tipo. Si este parámetro es `NULL`, el motor utiliza `pstrItemName` para identificar el contexto.  
+ de Dirección del objeto de contexto. Este objeto se reserva para su uso en un entorno de depuración, donde el depurador puede proporcionar un contexto de este tipo para representar un contexto de tiempo de ejecución activo. Si este parámetro se `NULL`, el motor utiliza `pstrItemName` para identificar el contexto.  
   
  `pstrDelimiter`  
- [in] Dirección del delimitador final del procedimiento. Cuando `pstrCode` se analiza desde una secuencia de texto, el host normalmente utiliza un delimitador, como dos comillas ("), para detectar el final del procedimiento. Este parámetro especifica el delimitador que utiliza el host, lo que permite el motor de scripting proporcione algún preprocesamiento primitivo condicional (por ejemplo, que reemplaza una comilla sencilla ['] con dos comillas simples para su uso como un delimitador). Exactamente cómo (y si) el motor de scripting hace uso de esta información depende del motor de scripting. Establezca este parámetro en `NULL` si el host no utilizó un delimitador para marcar el final del procedimiento.  
+ de Dirección del delimitador de fin de procedimiento. Cuando `pstrCode` se analiza desde un flujo de texto, el host normalmente usa un delimitador, como dos comillas simples (' '), para detectar el final del procedimiento. Este parámetro especifica el delimitador utilizado por el host, lo que permite que el motor de scripting proporcione algún preprocesamiento primitivo condicional (por ejemplo, reemplazando una comilla simple ['] con dos comillas simples para su uso como delimitador). Exactamente cómo (y si) el motor de scripting hace uso de esta información depende del motor de scripting. Establezca este parámetro en `NULL` si el host no usó un delimitador para marcar el final del procedimiento.  
   
  `dwSourceContextCookie`  
- [in] Valor definido por la aplicación que se usa con fines de depuración.  
+ de Valor definido por la aplicación que se usa para la depuración.  
   
  `ulStartingLineNumber`  
- [in] Valor de base cero que especifica en qué línea empezará el análisis en.  
+ de Valor basado en cero que especifica en qué línea comenzará el análisis.  
   
  `dwFlags`  
- [in] Marcas asociadas con el procedimiento. Puede ser una combinación de estos valores:  
+ de Marcas asociadas al procedimiento. Puede ser una combinación de estos valores:  
   
 |Valor|Significado|  
 |-----------|-------------|  
-|SCRIPTPROC_ISEXPRESSION|Indica que el código en `pstrCode` es una expresión que representa el valor devuelto del procedimiento. De forma predeterminada, el código puede contener una expresión, una lista de instrucciones o cualquier otra permitido en un procedimiento por el lenguaje de script.|  
-|SCRIPTPROC_IMPLICIT_THIS|Indica que el `this` puntero se incluye en el ámbito del procedimiento.|  
-|SCRIPTPROC_IMPLICIT_PARENTS|Indica que los elementos primarios de la `this` puntero se incluyen en el ámbito del procedimiento.|  
+|SCRIPTPROC_ISEXPRESSION|Indica que el código de `pstrCode` es una expresión que representa el valor devuelto del procedimiento. De forma predeterminada, el código puede contener una expresión, una lista de instrucciones o cualquier otro elemento que el lenguaje de script permita en un procedimiento.|  
+|SCRIPTPROC_IMPLICIT_THIS|Indica que el puntero `this` está incluido en el ámbito del procedimiento.|  
+|SCRIPTPROC_IMPLICIT_PARENTS|Indica que los elementos primarios del puntero `this` están incluidos en el ámbito del procedimiento.|  
   
  `ppdisp`  
- [out] Dirección del puntero para el objeto que contiene los métodos globales y propiedades de la secuencia de comandos. Si el motor de scripting no admite este tipo de objeto, `NULL` se devuelve.  
+ enuncia Dirección del puntero para el objeto que contiene los métodos y propiedades globales del script. Si el motor de scripting no admite este tipo de objeto, se devuelve `NULL`.  
   
 ## <a name="return-value"></a>Valor devuelto  
- Devuelve uno de los siguientes valores:  
+ Devuelve uno de los valores siguientes:  
   
 |Valor devuelto|Significado|  
 |------------------|-------------|  
 |`S_OK`|Correcto.|  
 |`E_INVALIDARG`|Un argumento no era válido.|  
-|`E_POINTER`|Se especificó un puntero no válido.|  
-|`E_NOTIMPL`|No se admite este método. El motor de scripting no admite la adición de tiempo de ejecución de procedimientos para el espacio de nombres.|  
-|`E_UNEXPECTED`|No se esperaba la llamada (por ejemplo, el motor de scripting está en el estado no inicializado o cerrado).|  
+|`E_POINTER`|Se ha especificado un puntero no válido.|  
+|`E_NOTIMPL`|No se admite este método. El motor de scripting no admite la adición de procedimientos en tiempo de ejecución al espacio de nombres.|  
+|`E_UNEXPECTED`|No se esperaba la llamada (por ejemplo, el motor de scripting está en estado no inicializado o cerrado).|  
 |`OLESCRIPT_E_SYNTAX`|Se produjo un error de sintaxis no especificado en el procedimiento.|  
-|`S_FALSE`|El motor de scripting no admite un objeto de envío; el `ppdisp` parámetro está establecido en `NULL`.|  
+|`S_FALSE`|El motor de scripting no admite un objeto Dispatch; el parámetro `ppdisp` se establece en `NULL`.|  
   
 ## <a name="remarks"></a>Comentarios  
- No hay código de script se evalúa durante esta llamada; en su lugar, el procedimiento se compila en el estado de secuencia de comandos donde se puede llamar mediante el script más tarde.  
+ No se evalúa ningún código de script durante esta llamada; en su lugar, el procedimiento se compila en el estado del script, donde el script puede llamarlo más adelante.  
   
 ## <a name="see-also"></a>Vea también  
  [IActiveScriptParseProcedure](../../winscript/reference/iactivescriptparseprocedure.md)

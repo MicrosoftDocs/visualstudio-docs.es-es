@@ -8,12 +8,12 @@ ms.assetid: 6fe13be1-aeb5-4927-9bff-35950e194da9
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: e86f026ec4d4133635ba5cf9d6c37970abe6e139
-ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
+ms.openlocfilehash: e49fbb3411aee98fce5899c522b9743b3f2afa33
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58415906"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62950259"
 ---
 # <a name="how-to-create-a-recorder-plug-in"></a>Procedimiento Crear un complemento de grabadora
 
@@ -33,20 +33,20 @@ En los procedimientos siguientes se describe cómo crear el código rudimentario
 
 ### <a name="to-create-a-recorder-plug-in"></a>Para crear un complemento de grabadora
 
-1.  Abra una solución que contenga el proyecto de prueba de carga y rendimiento web con la prueba de rendimiento web para la que desee crear un complemento de grabadora.
+1. Abra una solución que contenga el proyecto de prueba de carga y rendimiento web con la prueba de rendimiento web para la que desee crear un complemento de grabadora.
 
-2.  Agregue a la solución un nuevo proyecto **Biblioteca de clases**.
+2. Agregue a la solución un nuevo proyecto **Biblioteca de clases**.
 
-3.  En el **Explorador de soluciones**, en la carpeta de proyecto de la nueva biblioteca de clases, haga clic con el botón derecho en la carpeta **Referencias** y seleccione **Agregar referencia**.
+3. En el **Explorador de soluciones**, en la carpeta de proyecto de la nueva biblioteca de clases, haga clic con el botón derecho en la carpeta **Referencias** y seleccione **Agregar referencia**.
 
     > [!TIP]
     > Un ejemplo de carpeta de proyecto de nueva biblioteca de clases es **RecorderPlugins**.
 
      Aparecerá el cuadro de diálogo **Agregar referencia**.
 
-4.  Seleccione la pestaña **.NET**.
+4. Seleccione la pestaña **.NET**.
 
-5.  Desplácese hacia abajo, seleccione **Microsoft.VisualStudio.QualityTools.WebTestFramework** y, luego, elija **Aceptar**.
+5. Desplácese hacia abajo, seleccione **Microsoft.VisualStudio.QualityTools.WebTestFramework** y, luego, elija **Aceptar**.
 
      **Microsoft.VisualStudio.QualityTools.WebTestFramework** se agrega a la carpeta **Referencias** del **Explorador de soluciones**.
 
@@ -88,11 +88,11 @@ Después de compilar el complemento de grabadora, coloque el archivo DLL resulta
 
 ### <a name="execute-the-recorder-plug-in"></a>Ejecución del complemento de grabadora
 
-1.  Cree una nueva prueba de rendimiento web.
+1. Cree una nueva prueba de rendimiento web.
 
      Aparecerá el cuadro de diálogo **Habilitar WebTestRecordPlugins**.
 
-2.  Active la casilla correspondiente al complemento de grabadora y haga clic en **Aceptar**.
+2. Active la casilla correspondiente al complemento de grabadora y haga clic en **Aceptar**.
 
      Una vez que la prueba de rendimiento web complete la grabación, se ejecutará el nuevo complemento de grabadora.
 

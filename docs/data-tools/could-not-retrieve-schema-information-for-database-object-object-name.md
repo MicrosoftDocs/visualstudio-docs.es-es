@@ -3,17 +3,17 @@ title: No se pudo recuperar información de esquema del objeto de base de datos
 ms.date: 11/04/2016
 ms.topic: reference
 ms.assetid: a1c8f833-c918-4a86-9679-d2a791f938a9
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: b688e1199fefb050c05cc69784256b156e23094d
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
-ms.translationtype: MTE95
+ms.openlocfilehash: 46e7ad86348d183ed1ced9bc862fc9623acf9da8
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55943498"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72642875"
 ---
 # <a name="could-not-retrieve-schema-information-for-database-object-object-name"></a>No se ha podido recuperar información de esquema del objeto de base de datos \<nombre de objeto>
 
@@ -21,5 +21,4 @@ Este mensaje suele aparecer cuando un objeto del **Explorador de servidores** o 
 
 ## <a name="see-also"></a>Vea también
 
-- [Mensajes de Object Relational Designer](../data-tools/o-r-designer-messages.md)
 - [LINQ to SQL tools en Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md) (Herramientas LINQ to SQL en Visual Studio)

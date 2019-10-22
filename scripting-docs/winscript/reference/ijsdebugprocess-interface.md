@@ -1,5 +1,5 @@
 ---
-title: IJsDebugProcess (interfaz) | Documentos de Microsoft
+title: Interfaz IJsDebugProcess | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -11,12 +11,12 @@ caps.latest.revision: 5
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 411679a03daf27046fdcede7ff48e76212bbd2fd
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 9200515b2c975fb1fa5b2acda7c261cb684d85b4
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58158924"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72577342"
 ---
 # <a name="ijsdebugprocess-interface"></a>IJsDebugProcess (Interfaz)
 Proporciona rutinas para inspeccionar y controlar el proceso de destino.  
@@ -38,7 +38,7 @@ IJsDebugProcess : public IUnknown;
 |[IJsDebugProcess::PerformAsyncBreak (Método)](../../winscript/reference/ijsdebugprocess-performasyncbreak-method.md)|Pone el motor de scripts en modo de interrupción, haciendo que se detenga en la siguiente instrucción de script.|  
   
 ## <a name="requirements"></a>Requisitos  
- **Encabezado:** jscript9diag.h  
+ **Encabezado:** jscript9diag. h  
   
 ## <a name="see-also"></a>Vea también  
  [Referencia de interfaces de Windows Script](../../winscript/reference/windows-script-interfaces-reference.md)

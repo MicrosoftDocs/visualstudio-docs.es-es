@@ -1,5 +1,5 @@
 ---
-title: Implementar aplicaciones de UWP | Microsoft Docs
+title: Implementación de aplicaciones para UWP | Microsoft Docs
 ms.custom: seodec18
 ms.date: 01/16/2018
 ms.topic: conceptual
@@ -13,22 +13,22 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: 02bfb1b4797973b3946405c38598409bf3247c70
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: b2fa0bd62b88602ee5a4d5091821e2c2a18f6374
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60065745"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72430764"
 ---
 # <a name="deploy-uwp-apps-from-visual-studio"></a>Implementar aplicaciones para UWP desde Visual Studio
 
-La funcionalidad de implementación de Visual Studio genera y registra aplicaciones para UWP creadas con Visual Studio en un dispositivo de destino. El modo en que se registra la aplicación depende de si el dispositivo de destino es local o remoto.
+La funcionalidad de implementación de Visual Studio crea y registra aplicaciones para UWP que se crean con Visual Studio en un dispositivo de destino. El modo en que se registra la aplicación depende de si el dispositivo de destino es local o remoto.
 
 - Cuando el destino es un equipo local de Visual Studio, Visual Studio registra la aplicación desde su carpeta de compilación.
 
 - Cuando el destino es un dispositivo remoto, Visual Studio copia los archivos necesarios en el equipo remoto y registra la aplicación en ese dispositivo.
 
-Implementación es automática cuando se depura la aplicación desde Visual Studio mediante el uso de la **Iniciar depuración** opción (teclado: F5) o el **iniciar sin depurar** opción (teclado: CTRL + F5). También puede implementar la aplicación manualmente. La implementación manual es útil en los siguientes casos:
+La implementación es automática cuando se depura la aplicación desde Visual Studio mediante la opción **Iniciar depuración** (teclado: F5) o la opción **Iniciar sin depurar** (teclado: CTRL + F5). También puede implementar la aplicación manualmente. La implementación manual es útil en los siguientes casos:
 
 - Pruebas ad hoc en un equipo local o remoto.
 
@@ -36,14 +36,14 @@ Implementación es automática cuando se depura la aplicación desde Visual Stud
 
 - Implementación de una aplicación que se depurará cuando la inicie otra aplicación u otro método.
 
-## <a name="BKMK_How_to_deploy_a_Windows_Store_app"></a> Cómo implementar una aplicación para UWP
+## <a name="BKMK_How_to_deploy_a_Windows_Store_app"></a>Cómo implementar una aplicación para UWP
  La implementación manual de una aplicación es un proceso simple:
 
 1. Si implementa a un dispositivo remoto, especifique el nombre o la dirección IP del dispositivo en la página de proyecto de la propiedad del proyecto de inicio de la aplicación. Los pasos necesarios se mencionan más adelante dentro de este tema.
 
 2. En la barra de herramientas de Visual Studio del depurador, seleccione el destino de la implementación en la lista desplegable que hay junto al botón **Iniciar depuración** .
 
-     ![Ejecutar en el equipo Local](../debugger/media/vsrun_f5_local.png "VSRUN_F5_Local")
+     ![Ejecutar en el equipo local](../debugger/media/vsrun_f5_local.png "VSRUN_F5_Local")
 
 3. En el menú **Compilar** , elija **Implementar**
 
@@ -51,10 +51,10 @@ Implementación es automática cuando se depura la aplicación desde Visual Stud
 
 **Requisitos previos**
 
-En un dispositivo remoto de Windows 10, debe habilitar [modo de programador](/windows/uwp/get-started/enable-your-device-for-development). En dispositivos Windows 10 que ejecuta Update Creators o versiones posteriores, las herramientas remotas se instalan automáticamente al implementar la aplicación. Para obtener más información, consulte [depurar un paquete de aplicación instalados](../debugger/debug-installed-app-package.md).
+En un dispositivo remoto de Windows 10, debe habilitar el [modo de desarrollador](/windows/uwp/get-started/enable-your-device-for-development). En los dispositivos Windows 10 que ejecutan la actualización del creador o posterior, las herramientas remotas se instalan automáticamente al implementar la aplicación. Para obtener más información, vea [depurar un paquete de aplicaciones instalado](../debugger/debug-installed-app-package.md).
 
 > [!NOTE]
-> En las versiones de actualización del pre-creador de Windows 10, las herramientas remotas para Visual Studio debe instalarse en el dispositivo remoto y debe ejecutar el depurador remoto.
+> En las versiones de actualización del creador anterior de Windows 10, el Herramientas remotas para Visual Studio debe estar instalado en el dispositivo remoto y el depurador remoto debe estar en ejecución.
 
 En la implementación se usa el canal de la red del depurador remoto para enviar los archivos de aplicación al dispositivo remoto.
 
@@ -66,19 +66,19 @@ En la implementación se usa el canal de la red del depurador remoto para enviar
 
 3. A continuación, elija el nodo **Depurar** en la ventana de las páginas de propiedad.
 
-4. Para **dispositivo de destino**, seleccione **máquina remota**.
+4. En **dispositivo de destino**, seleccione **equipo remoto**.
 
-5. En **máquina remota**, haga clic en **encontrar**.
+5. En **equipo remoto**, haga clic en **Buscar**.
 
-6. Puede escribir el nombre o dirección IP del dispositivo remoto, o puede elegir el dispositivo en el **conexión remota** cuadro de diálogo.
+6. Puede escribir el nombre o la dirección IP del dispositivo remoto, o bien puede elegir el dispositivo en el cuadro de diálogo **conexión remota** .
 
-    ![Cuadro de diálogo Seleccionar conexión del depurador remoto](../debugger/media/vsrun_selectremotedebuggerdlg.png "VSRUN_SelectRemoteDebuggerDlg")
+    ![Cuadro de diálogo Seleccionar conexión del Depurador remoto](../debugger/media/vsrun_selectremotedebuggerdlg.png "VSRUN_SelectRemoteDebuggerDlg")
 
-    El **conexión remota** cuadro de diálogo muestra los dispositivos en la subred local y cualquier dispositivo que está conectado directamente al equipo de Visual Studio mediante un cable Ethernet.
+    En el cuadro de diálogo **conexión remota** se muestran los dispositivos de la subred de la red local y los dispositivos que están conectados directamente a la máquina de Visual Studio mediante un cable Ethernet.
 
-   **Cómo especificar el dispositivo remoto en un objeto Visual C++ página del proyecto**
+   **Especificar el dispositivo remoto en una C++ página de proyecto**
 
-   ![C&#43; &#43; propiedades para la depuración remota del proyecto](../debugger/media/vsrun_cpp_projprop_remote.png "VSRUN_CPP_ProjProp_Remote")
+   ![Propiedades&#43; &#43; del proyecto de C para la depuración remota](../debugger/media/vsrun_cpp_projprop_remote.png "VSRUN_CPP_ProjProp_Remote")
 
 7. Elige **Depurador remoto** en la lista **Depurador para iniciar** .
 
@@ -86,7 +86,7 @@ En la implementación se usa el canal de la red del depurador remoto para enviar
 
    **Cómo especificar el dispositivo remoto en una página de proyecto de Visual C# y Visual Basic**
 
-   ![Administra las propiedades del proyecto para la depuración remota](../debugger/media/vsrun_managed_projprop_remote.png "VSRUN_Managed_ProjProp_Remote")
+   ![Propiedades de proyectos administrados para la depuración remota](../debugger/media/vsrun_managed_projprop_remote.png "VSRUN_Managed_ProjProp_Remote")
 
 9. Elige **Equipo remoto** en la lista **Dispositivo de destino** .
 
@@ -98,21 +98,21 @@ Puede establecer las siguientes opciones de implementación en la página de pro
 
 **Permitir bucle invertido de red**
 
-Por motivos de seguridad, una UWP o [!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)] no se permite realizar llamadas de red en el dispositivo está instalado en aplicación que está instalada en la manera estándar. De forma predeterminada, la implementación de Visual Studio crea una exención respecto a esta regla para la aplicación implementada. Esta exención te permite probar procedimientos de comunicación en un mismo equipo. Antes de enviar su aplicación a la [!INCLUDE[win8_appstore_long](../debugger/includes/win8_appstore_long_md.md)], debe probarla sin la exención.
+Por motivos de seguridad, las aplicaciones de UWP o [!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)] que se instalan de forma estándar no pueden realizar llamadas de red al dispositivo en el que está instalada. De forma predeterminada, la implementación de Visual Studio crea una exención respecto a esta regla para la aplicación implementada. Esta exención te permite probar procedimientos de comunicación en un mismo equipo. Antes de enviar su aplicación a la [!INCLUDE[win8_appstore_long](../debugger/includes/win8_appstore_long_md.md)], debe probarla sin la exención.
 
 Para quitar la exención de bucle invertido de red en la aplicación:
 
-- En el C# y depuración de Visual Basic página de propiedades, desactive la **permitir bucle invertido de red** casilla de verificación.
+- En la C# página de propiedades y Visual Basic depurar, desactive la casilla **permitir bucle invertido de red** .
 
-- En el C++ depurar la página de propiedades, establezca la **permitir bucle invertido de red** valor **No**.
+- En la C++ página de propiedades Depurar, establezca el valor de **permitir bucle invertido de red** en **no**.
 
-**No iniciar, pero depurar mi código al empezar (C# y Visual Basic) o iniciar aplicación (C++)**
+**No iniciar, pero depurar mi código al iniciar (C# y Visual Basic)/Iniciar aplicación (C++)**
 
 Para configurar el inicio automático de una sesión de depuración en la implementación cuando se inicie la aplicación:
 
-- En el C# y página de propiedades Depurar de Visual Basic, compruebe el **no iniciar, pero depurar mi código al empezar** casilla de verificación.
+- En la C# página de propiedades y Visual Basic depurar, active la casilla **no iniciar, pero depurar mi código al iniciarse** .
 
-- En el C++ depurar la página de propiedades, establezca la **Iniciar aplicación** valor **Sí**.
+- En la C++ página de propiedades Depurar, establezca el valor de **Iniciar aplicación** en **sí**.
 
 ## <a name="see-also"></a>Vea también
 

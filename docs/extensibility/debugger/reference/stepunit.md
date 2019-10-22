@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - STEPUNIT enumeration
 ms.assetid: cb8441f2-f744-4e73-acfe-ae8542df9649
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0f1d6742b28badf39a5c9273d2891c2da9a9d5f0
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 803aafb60d7ada5b3339735fc0a10c66bb4925e0
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56712130"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66329174"
 ---
 # <a name="stepunit"></a>STEPUNIT
 Especifica la unidad de paso de ejecución paso a paso.
@@ -41,12 +44,15 @@ enum enum_STEPUNIT { 
 };
 ```
 
-## <a name="members"></a>Miembros
- Pasos STEP_STATEMENT por instrucción.
+## <a name="fields"></a>Campos
+ `STEP_STATEMENT`\
+ Pasos de instrucción.
 
- Pasos de STEP_LINE por línea.
+ `STEP_LINE`\
+ Pasos por línea.
 
- Pasos STEP_INSTRUCTION por instrucción.
+ `STEP_INSTRUCTION`\
+ Pasos de instrucción.
 
 ## <a name="remarks"></a>Comentarios
  Se pasa como argumento a la [paso](../../../extensibility/debugger/reference/idebugprocess3-step.md) método.

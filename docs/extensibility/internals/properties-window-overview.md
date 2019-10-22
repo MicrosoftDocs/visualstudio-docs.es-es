@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - Properties window
 ms.assetid: 289ed4f2-02ac-4899-855e-42dfe57ee05f
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 06844e8723cc118d6cc10c44c5c788e48c206684
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 05c772365c42037bfd97a2a31b80efc2f5f1a48b
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60101033"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66347817"
 ---
 # <a name="properties-window-overview"></a>Información general sobre la ventana Propiedades
 El **propiedades** ventana se utiliza para mostrar las propiedades de objetos seleccionados en los dos tipos principales de windows disponibles en el [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] el entorno de desarrollo integrado (IDE). Estos dos tipos de windows son:

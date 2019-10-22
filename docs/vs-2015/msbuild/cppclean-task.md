@@ -21,11 +21,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: bddba1170cf675b5bde7ab8deed8cce1e7eb57dd
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59655002"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68196575"
 ---
 # <a name="cppclean-task"></a>CPPClean (Tarea)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,13 +35,13 @@ Elimina los archivos temporales que MSBuild crea cuando se compila un proyecto d
 ## <a name="parameters"></a>Parámetros  
  En la siguiente tabla se describen los parámetros de la tarea **CPPClean**.  
 
-|            Parámetro            |                                                                                                Descripción                                                                                                 |
+|            Parámetro            |                                                                                                DESCRIPCIÓN                                                                                                 |
 |---------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 |        **DeletedFiles**         |                               Parámetro de salida `ITaskItem[]` opcional.<br /><br /> Define una matriz de elementos de archivos de salida de MSBuild que las tareas pueden consumir y emitir.                                |
 |          **DoDelete**           |                                                            Parámetro **Boolean** opcional.<br /><br /> Si `true`, limpie los archivos de compilación temporales.                                                             |
 | **FilePatternsToDeleteOnClean** |                                            Parámetro `String` requerido.<br /><br /> Especifica una lista delimitada por punto y coma de extensiones de archivo de archivos que se van a limpiar.                                             |
 |   **FilesExcludedFromClean**    |                                                    Parámetro `String` opcional.<br /><br /> Especifica una lista delimitada por punto y coma de archivos que no se van a limpiar.                                                    |
-|       **FoldersToClean**        | Parámetro `String` requerido.<br /><br /> Especifica una lista delimitada por punto y coma de directorios que se van a limpiar. Puede especificar una ruta de acceso completa o relativa que puede contener el carácter comodín (**\\**\*). |
+|       **FoldersToClean**        | Parámetro `String` requerido.<br /><br /> Especifica una lista delimitada por punto y coma de directorios que se van a limpiar. Puede especificar una ruta de acceso completa o relativa que puede contener el carácter comodín ( **\\** \*). |
 
 ## <a name="remarks"></a>Comentarios  
 

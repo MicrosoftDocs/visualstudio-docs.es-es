@@ -1,5 +1,5 @@
 ---
-title: Procedimiento Rellenar rangos automáticamente mediante programación con datos que cambian de forma incremental
+title: Autorrellenar cambian de forma incremental los rangos de datos mediante programación
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e4caede15b17478bb9649f09d9341931511b655f
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: a514f83d12cd00c4a7792ae0bf2483fdd916897a
+ms.sourcegitcommit: 13ab9a5ab039b070b9cd9251d0b83dd216477203
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60117894"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66177689"
 ---
 # <a name="how-to-programmatically-automatically-fill-ranges-with-incrementally-changing-data"></a>Procedimiento Rellenar rangos automáticamente mediante programación con datos que cambian de forma incremental
   El <xref:Microsoft.Office.Interop.Excel.Range.AutoFill%2A> método de la <xref:Microsoft.Office.Interop.Excel.Range> objeto le permite rellenar un rango en una hoja de cálculo con los valores automáticamente. A menudo, el <xref:Microsoft.Office.Interop.Excel.Range.AutoFill%2A> método se utiliza para almacenar incrementalmente valores superiores o inferiores de un intervalo. Puede especificar el comportamiento proporcionando una constante opcional de la <xref:Microsoft.Office.Interop.Excel.XlAutoFillType> enumeración.
@@ -34,7 +34,7 @@ ms.locfileid: "60117894"
 - El intervalo que se va a rellenar, pasado como parámetro a la <xref:Microsoft.Office.Interop.Excel.Range.AutoFill%2A> método. El rango de destino debe incluir el rango que contiene el valor inicial.
 
     > [!NOTE]
-    >  No puede pasar un <xref:Microsoft.Office.Tools.Excel.NamedRange> control en lugar de la <xref:Microsoft.Office.Interop.Excel.Range>. Para obtener más información, consulte [limitaciones de programación de elementos host y controles host](../vsto/programmatic-limitations-of-host-items-and-host-controls.md).
+    > No puede pasar un <xref:Microsoft.Office.Tools.Excel.NamedRange> control en lugar de la <xref:Microsoft.Office.Interop.Excel.Range>. Para obtener más información, consulte [limitaciones de programación de elementos host y controles host](../vsto/programmatic-limitations-of-host-items-and-host-controls.md).
 
 ## <a name="example"></a>Ejemplo
  [!code-csharp[Trin_VstcoreExcelAutomation#49](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#49)]

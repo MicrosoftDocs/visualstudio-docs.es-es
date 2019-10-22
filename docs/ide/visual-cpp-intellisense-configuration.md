@@ -2,23 +2,21 @@
 title: Configurar un proyecto de C++ para IntelliSense
 ms.date: 10/08/2018
 ms.topic: conceptual
-author: mblome
+author: mikeblome
 ms.author: mblome
-manager: wpickett
+manager: markl
 ms.workload:
 - cplusplus
-ms.openlocfilehash: aee7faef7b33c8dd87a056077991a915df9b64a0
-ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
+ms.openlocfilehash: 5c95990eb875c52a66cd0efa5579c9d39eab5469
+ms.sourcegitcommit: 3cda0d58c5cf1985122b8977b33a171c7359f324
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58194063"
+ms.lasthandoff: 08/29/2019
+ms.locfileid: "70154906"
 ---
 # <a name="configure-a-c-project-for-intellisense"></a>Configurar un proyecto de C++ para IntelliSense
 
 En algunos casos, es posible que tenga que configurar manualmente el proyecto de C++ para que IntelliSense funcione correctamente. En los proyectos de MSBuild (basado en archivos .vcxproj), puede ajustar la configuración en las propiedades de los proyectos. En los proyectos que no son de MSBuild, puede ajustar la configuración en el archivo CppProperties.json del directorio raíz del proyecto. En algunos casos, puede que sea necesario crear un archivo de indicaciones para ayudar a que IntelliSense entienda las definiciones de macros. El IDE de Visual Studio ayuda a identificar y corregir problemas de IntelliSense.
-
-
 
 ## <a name="single-file-intellisense"></a>Intellisense de archivo único
 
@@ -40,7 +38,7 @@ Si ejecuta las compilaciones fuera del IDE de Visual Studio y se realizan correc
 
 ![Directorios de archivos de inclusión de VC++](media/vcpp-intellisense-include-paths.png)
 
- Para ver los valores actuales de las macros de compilación como **VC_IncludePath**, seleccione la línea Directorios de archivos de inclusión y haga clic en el menú desplegable de la derecha. Luego elija **\<Editar>** y haga clic en el botón **Macros**.
+Para ver los valores actuales de las macros de compilación como **VC_IncludePath**, seleccione la línea Directorios de archivos de inclusión y haga clic en el menú desplegable de la derecha. Luego elija **\<Editar>** y haga clic en el botón **Macros**.
 
 ### <a name="makefile-projects"></a>proyectos de archivos Make
 
@@ -48,11 +46,9 @@ Para proyectos de archivos Make basados en la plantilla de proyecto NMake, elija
 
 ![Rutas de acceso de inclusión de proyectos de archivos Make](media/vcpp-intellisense-makefile-include-paths.png)
 
-Para obtener más información, vea [Cómo: Habilitar IntelliSense para proyectos de archivos MAKE](/cpp/ide/how-to-enable-intellisense-for-makefile-projects).
-
 ### <a name="open-folder-projects"></a>Proyectos Abrir carpeta
 
-En el caso de los proyectos CMake, asegúrese de que las rutas de acceso #include están correctamente especificadas para todas las configuraciones en CMakeLists.txt. Es posible que otros tipos de proyecto requieran un archivo CppProperties.json. Para más información, consulte [Configurar IntelliSense con CppProperties.json](/cpp/build/open-folder-projects-cpp#configure-intellisense-and-browsing-hints-with-cpppropertiesjson). Asegúrese de que las rutas de acceso sean correctas para cada configuración definida en el archivo.
+En el caso de los proyectos CMake, asegúrese de que las rutas de acceso #include están correctamente especificadas para todas las configuraciones en CMakeLists.txt. Es posible que otros tipos de proyecto requieran un archivo CppProperties.json. Para más información, consulte [Configurar IntelliSense con CppProperties.json](/cpp/build/open-folder-projects-cpp#configure-code-navigation-with-cpppropertiesjson). Asegúrese de que las rutas de acceso sean correctas para cada configuración definida en el archivo.
 
 Si hay un error de sintaxis en el archivo CppProperties.json, IntelliSense será incorrecto en los archivos afectados. Visual Studio mostrará el error en la ventana de salida.
 
@@ -83,18 +79,18 @@ Para comprobar si el compilador de IntelliSense usa las opciones del compilador 
 La ventana de salida ahora mostrará las líneas de comandos que se pasan al compilador de IntelliSense. Esta es una salida de ejemplo:
 
 ```output
- [IntelliSense] Configuration Name: Debug|Win32
- [IntelliSense] Toolset IntelliSense Identifier:
- [IntelliSense] command line options:
- /c
- /I.
- /IC:\Repo\Includes
- /DWIN32
- /DDEBUG
- /D_DEBUG
- /Zc:wchar_t-
- /Zc:forScope
- /Yustdafx.h
+[IntelliSense] Configuration Name: Debug|Win32
+[IntelliSense] Toolset IntelliSense Identifier:
+[IntelliSense] command line options:
+/c
+/I.
+/IC:\Repo\Includes
+/DWIN32
+/DDEBUG
+/D_DEBUG
+/Zc:wchar_t-
+/Zc:forScope
+/Yustdafx.h
 ```
 
 Esta información puede ayudarlo a entender por qué IntelliSense proporciona información inexacta. Por ejemplo, si el directorio de archivos de inclusión del proyecto contiene **$(MyVariable)\Include** y el registro de diagnóstico muestra **/I\Include** como una ruta de acceso de inclusión, significa que no se evaluó **$(MyVariable)** y que se quitó de la ruta de acceso de inclusión final.
@@ -114,16 +110,16 @@ Una compilación de IntelliSense no genera archivos binarios, pero de todos modo
 Es posible que el mensaje de error le indique habilitar el seguimiento en tiempo de diseño:
 
 ```output
- error: Designtime build failed for project 'E:\src\MyProject\MyProject.vcxproj',
- configuration 'Debug|x64'. IntelliSense might be unavailable.
- Set environment variable TRACEDESIGNTIME=true and restart
- Visual Studio to investigate.
+error: Designtime build failed for project 'E:\src\MyProject\MyProject.vcxproj',
+configuration 'Debug|x64'. IntelliSense might be unavailable.
+Set environment variable TRACEDESIGNTIME=true and restart
+Visual Studio to investigate.
 ```
 
 Si establece la variable de entorno TRACEDESIGNTIME en true y reinicia Visual Studio, verá un archivo de registro en el directorio %TEMP%, que podría ayudar a diagnosticar el error de la compilación.
 
 Para más información sobre la variable de entorno TRACEDESIGNTIME, consulte [Roslyn](https://github.com/dotnet/roslyn/wiki/Diagnosing-Project-System-Build-Errors) y [Common Project System](https://github.com/dotnet/project-system/blob/master/docs/design-time-builds.md) (Sistema de proyectos comunes). La información que aparece en estos artículos se aplica a los proyectos de C++.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Otras referencias
 
 - [Visual C++ IntelliSense](visual-cpp-intellisense.md)

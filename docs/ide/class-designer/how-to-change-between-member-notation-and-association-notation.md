@@ -1,5 +1,5 @@
 ---
-title: Filtrar Cambiar entre notación de miembro y notación de asociación (Diseñador de clases)
+title: Cambio entre notación de miembro y notación de asociación (Diseñador de clases)
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,14 +13,14 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0138ec1e2a36ce20b80982103ec408077502993a
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 17bda235f0fb5781b19a3b1384b86ae58543edf3
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55913829"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66261216"
 ---
-# <a name="how-to-change-between-member-notation-and-association-notation-in-class-designer"></a>Filtrar Cambiar entre notación de miembro y notación de asociación en el Diseñador de clases
+# <a name="how-to-change-between-member-notation-and-association-notation-in-class-designer"></a>Procedimiento Cambiar entre notación de miembro y notación de asociación en el Diseñador de clases
 
 En el **Diseñador de clases**, puede cambiar el modo en que el diagrama de clases representa una relación de asociación entre dos tipos de notación de miembro a notación de asociación y viceversa. Los miembros que se muestran como líneas de asociación a menudo ofrecen una visualización útil de cómo se relacionan los tipos.
 
@@ -29,9 +29,9 @@ En el **Diseñador de clases**, puede cambiar el modo en que el diagrama de clas
 
 ## <a name="to-change-member-notation-to-association-notation"></a>Para cambiar de notación de miembro a notación de asociación
 
-1.  Desde el nodo del proyecto, en el Explorador de soluciones, abra el archivo de diagrama de clases (.cd).
+1. Desde el nodo del proyecto, en el Explorador de soluciones, abra el archivo de diagrama de clases (.cd).
 
-2.  En la forma de tipo en el diagrama de clases, haga clic en la propiedad de miembro o campo que representa la asociación y elija **Mostrar como asociación**.
+2. En la forma de tipo en el diagrama de clases, haga clic en la propiedad de miembro o campo que representa la asociación y elija **Mostrar como asociación**.
 
     > [!TIP]
     > Si no hay propiedades o campos visibles en la forma de tipo, puede que los compartimientos de la forma estén contraídos. Para expandir la forma de tipo, haga doble clic en el nombre del compartimiento o haga clic con el botón derecho en la forma de tipo y elija **Expandir**.

@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - PARSEFLAGS enumeration
 ms.assetid: 47943f0a-54cb-4493-a62e-5dba97bd4c35
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 56ba1933d1b63f9af863b115972f3ecf1dfc4346
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 6123c6438defff596351fff3d1ba31ea52a19f28
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56695718"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66349934"
 ---
 # <a name="parseflags"></a>PARSEFLAGS
 Especifica cómo analizar una expresión.
@@ -41,12 +44,15 @@ public enum enum_PARSEFLAGS { 
 };
 ```
 
-## <a name="members"></a>Miembros
- PARSE_EXPRESSION indica que la expresión no es una instrucción.
+## <a name="fields"></a>Campos
+ `PARSE_EXPRESSION`\
+ Indica que la expresión no es una instrucción.
 
- PARSE_FUNCTION_AS_ADDRESS indica que la expresión es analizado (y versiones posteriores evaluados) como una dirección.
+ `PARSE_FUNCTION_AS_ADDRESS`\
+ Indica que es la expresión que se puede analizar (y más adelante se evalúen) como una dirección.
 
- PARSE_DESIGN_TIME_EXPR_EVAL indica que la expresión se analiza durante el tiempo de diseño (es decir, cuando un diseñador está abierto).
+ `PARSE_DESIGN_TIME_EXPR_EVAL`\
+ Indica que la expresión se analiza durante el tiempo de diseño (es decir, cuando un diseñador está abierto).
 
 ## <a name="remarks"></a>Comentarios
  Pasado como parámetro a la [ParseText](../../../extensibility/debugger/reference/idebugexpressioncontext2-parsetext.md) y [analizar](../../../extensibility/debugger/reference/idebugexpressionevaluator-parse.md) métodos.

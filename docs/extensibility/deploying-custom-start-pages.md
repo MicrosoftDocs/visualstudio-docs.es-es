@@ -6,18 +6,18 @@ helpviewer_keywords:
 - package start page
 - deploy start page
 ms.assetid: 4a7eb360-de83-41d5-be53-3cfb160d19f9
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
 monikerRange: vs-2017
-ms.openlocfilehash: 3f09f03a3404bbde346370149f210bf45e6e2306
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 5a84ba2ff92463ebea177fc5c3b04810de7ae817
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60078257"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66348219"
 ---
 # <a name="deploy-custom-start-pages"></a>Implementar páginas principales personalizadas
 
@@ -91,7 +91,7 @@ Si el paquete de la página de inicio incluye los ensamblados, debe agregar el r
 
 1. Copia el *.xaml* archivo que contiene el marcado de página de inicio, junto con todos los archivos auxiliares que no sean ensamblados y péguelos en el usuario * \StartPages\* carpeta.
 
-2. Si la página de inicio requiere ensamblados, cópielos y péguelos en *... \\{Carpeta de instalación de visual Studio} \Common7\IDE\PrivateAssemblies\\*.
+2. Si la página de inicio requiere ensamblados, cópielos y péguelos en *... \\{Carpeta de instalación de visual Studio} \Common7\IDE\PrivateAssemblies\\* .
 
 3. En el **Personalizar página principal** lista el **inicio** opciones, seleccione la nueva página de inicio. Para obtener más información, consulte [personalizar la página de inicio](../ide/customizing-the-start-page-for-visual-studio.md).
 

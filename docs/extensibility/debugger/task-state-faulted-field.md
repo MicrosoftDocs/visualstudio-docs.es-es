@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - TASK_STATE_FAULTED field, Task class [.NET Framework debug engines]
 ms.assetid: ced826ae-09a9-4acf-af00-a2343d396bb8
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7b877d7370396db4653ff9af81a5654f2d357522
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: f8ae3c654518ec051d3f4d1fd0eeb43b4ef5e710
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56692728"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66348360"
 ---
 # <a name="taskstatefaulted-field"></a>TASK_STATE_FAULTED (campo)
 La tarea se completó debido a una excepción no controlada.

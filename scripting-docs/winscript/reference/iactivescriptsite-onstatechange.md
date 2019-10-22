@@ -1,5 +1,5 @@
 ---
-title: IActiveScriptSite::OnStateChange | Microsoft Docs
+title: 'IActiveScriptSite:: OnStateChange | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ad5719a93aec2940f1180a6ff45a028b937b0dfe
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: ba8441d36f193f287dfec7406d5f136280c5a42e
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58148651"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72570153"
 ---
 # <a name="iactivescriptsiteonstatechange"></a>IActiveScriptSite::OnStateChange
-Informa al host que el motor de scripting ha cambiado los Estados.  
+Informa al host de que el motor de scripting ha cambiado de estado.  
   
 ## <a name="syntax"></a>Sintaxis  
   
@@ -37,7 +37,7 @@ HRESULT OnStateChange(
   
 #### <a name="parameters"></a>Parámetros  
  `ssScriptState`  
- [in] Valor que indica el nuevo estado de la secuencia de comandos. Consulte la [IActiveScript::GetScriptState](../../winscript/reference/iactivescript-getscriptstate.md) método para obtener una descripción de los Estados.  
+ de Valor que indica el nuevo estado del script. Vea el método [IActiveScript:: GetScriptState](../../winscript/reference/iactivescript-getscriptstate.md) para obtener una descripción de los Estados.  
   
 ## <a name="return-value"></a>Valor devuelto  
  Si la operación se realiza correctamente, devuelve `S_OK`.  

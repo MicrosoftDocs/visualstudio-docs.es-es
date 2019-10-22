@@ -3,18 +3,18 @@ title: Procedimiento Migrar proyectos de extensibilidad a Visual Studio 2017 | M
 ms.date: 11/09/2016
 ms.topic: conceptual
 ms.assetid: 8ca07b00-a3ff-40ab-b647-c0a93b55e86a
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
 monikerRange: vs-2017
-ms.openlocfilehash: 3d55055734233a385f4a6d24f8925af2f0829fe3
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: f5edad198727ea33d3bf293fa0ee1baf3afb5b3b
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60087734"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67823899"
 ---
 # <a name="how-to-migrate-extensibility-projects-to-visual-studio-2017"></a>Procedimiento Migrar proyectos de extensibilidad de Visual Studio 2017
 
@@ -31,7 +31,7 @@ Asegúrese de que la instalación incluye las cargas de trabajo siguientes:
 
 Todos los proyectos VSIX requerirán una actualización unidireccional de versión principal para Visual Studio 2017.
 
-El archivo de proyecto (por ejemplo **.csproj*) se actualizará:
+El archivo de proyecto (por ejemplo * *.csproj*) se actualizará:
 
 * Ahora establezca MinimumVisualStudioVersion - 15.0
 * OldToolsVersion (si existe previamente)-ahora está establecido en 14.0
@@ -47,7 +47,7 @@ Para actualizar las referencias a Microsoft.VSSDK.BuildTools de NuGet:
 
 * Haga doble clic en la solución y elija **administrar paquetes de NuGet para la solución**.
 * Navegue hasta la **actualizaciones** ficha.
-* Seleccione **Microsoft.VSSDK.BuildTools (última versión)**.
+* Seleccione **Microsoft.VSSDK.BuildTools (última versión)** .
 * Presione **actualización**.
 
 ![Herramientas de generación VSSDK](media/vssdk-build-tools.png)
@@ -62,8 +62,8 @@ Para asegurarse de que la instalación del usuario de Visual Studio tiene todos 
 * Editar el archivo de manifiesto de extensión (normalmente denominada *source.extension.vsixmanifest*).
 * Asegúrese de `InstallationTarget` incluye 15.0.
 * Incorporación de requisitos previos de instalación necesarios (como se muestra en el ejemplo siguiente).
-   * Se recomienda que especificar solo identificadores de componentes de requisitos previos de instalación.
-   * Consulte la sección al final de este documento para [instrucciones acerca de cómo identificar los identificadores de componente](#find-component-ids).
+  * Se recomienda que especificar solo identificadores de componentes de requisitos previos de instalación.
+  * Consulte la sección al final de este documento para [instrucciones acerca de cómo identificar los identificadores de componente](#find-component-ids).
 
 Ejemplo:
 
@@ -120,12 +120,12 @@ Podría parecer: *C:\Program archivos (x86) \Microsoft Visual Studio\2017\Enterp
 
 * Compile el proyecto VSIX.
 * Descomprima el archivo VSIX generado.
-   * De forma predeterminada, el archivo VSIX reside en *bin/Debug* o *bin/Release,* como *[YourCustomExtension] .vsix*.
-   * Cambiar el nombre de *.vsix* a *.zip* ver fácilmente el contenido.
+  * De forma predeterminada, el archivo VSIX reside en *bin/Debug* o *bin/Release,* como *[YourCustomExtension] .vsix*.
+  * Cambiar el nombre de *.vsix* a *.zip* ver fácilmente el contenido.
 * Comprobar la existencia de tres archivos:
-   * *extension.vsixmanifest*
-   * *manifest.json*
-   * *catalog.json*
+  * *extension.vsixmanifest*
+  * *manifest.json*
+  * *catalog.json*
 
 ## <a name="check-when-all-required-prerequisites-are-installed"></a>Compruebe si están instalados todos los requisitos previos necesarios
 
@@ -141,11 +141,11 @@ Intento de instalar la extensión:
 ![Instalador de VSIX en Visual Studio 2017](media/vsixinstaller-vs-2017.png)
 
 * Opcional: Compruebe en las versiones anteriores de Visual Studio.
-   * Demuestra la compatibilidad con versiones anteriores.
-   * Debería funcionar para Visual Studio 2012, Visual Studio 2013, Visual Studio 2015.
+  * Demuestra la compatibilidad con versiones anteriores.
+  * Debería funcionar para Visual Studio 2012, Visual Studio 2013, Visual Studio 2015.
 * Opcional: Compruebe que el Comprobador de versión del instalador de VSIX ofrece una opción de versiones.
-   * Incluye las versiones anteriores de Visual Studio (si está instalado).
-   * Incluye Visual Studio 2017.
+  * Incluye las versiones anteriores de Visual Studio (si está instalado).
+  * Incluye Visual Studio 2017.
 
 Si Visual Studio se ha abierto recientemente, es posible que vea un cuadro de diálogo similar al siguiente:
 
@@ -170,7 +170,7 @@ Al buscar las dependencias, encontrará que una dependencia se puede asignar a v
 
 Para proporcionar instrucciones adicionales, hemos identificado algunos tipos de extensión comunes y sus requisitos previos sugeridos:
 
-Tipo de extensión | Display Name | ID
+Tipo de extensión | Nombre para mostrar | ID
 --- | --- | ---
 Editor | Editor de núcleo de Visual Studio | Microsoft.VisualStudio.Component.CoreEditor
 Roslyn | C# y Visual Basic | Microsoft.VisualStudio.Component.Roslyn.LanguageServices

@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: deba5e493f58a99e672e362977406670e1eee0e1
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 34114c12ef47fb796de7354aa3133af1fc704267
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60094351"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63408554"
 ---
 # <a name="how-to-create-an-event-receiver-for-a-specific-list-instance"></a>Procedimiento Crear un receptor de eventos para una instancia de la lista específica
   Un receptor de eventos de la instancia de lista responde a los eventos que ocurren en cualquier instancia de una definición de lista. Aunque la plantilla de receptor de eventos no se permite el establecimiento de destinos de una instancia de la lista específica, puede modificar un receptor de eventos que se limita a una definición de lista para responder a eventos en una instancia de la lista específica.
@@ -43,7 +43,7 @@ ms.locfileid: "60094351"
 6. En el **qué tipo de receptor de eventos desea?** elija **eventos del elemento de lista**.
 
     > [!NOTE]
-    >  También puede seleccionar cualquier otro tipo de receptor de eventos que establece el ámbito para una definición de lista, por ejemplo, **eventos de correo electrónico de lista** o **eventos de flujo de trabajo de lista**.
+    > También puede seleccionar cualquier otro tipo de receptor de eventos que establece el ámbito para una definición de lista, por ejemplo, **eventos de correo electrónico de lista** o **eventos de flujo de trabajo de lista**.
 
 7. En el **qué elemento debe ser el origen del evento?** elija **anuncios**.
 

@@ -6,17 +6,20 @@ helpviewer_keywords:
 - IDebugComPlusSymbolProvider::GetFunctionLineOffset
 - GetFunctionLineOffset
 ms.assetid: 51460f5a-4e98-427a-8315-27246e24fb61
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 73bd3184396ec020e8337efe6397503263be5359
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: c1edec584cfd11e469db8a3f1468dcdfc5768e01
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56706293"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66336778"
 ---
 # <a name="idebugcomplussymbolprovidergetfunctionlineoffset"></a>IDebugComPlusSymbolProvider::GetFunctionLineOffset
 Recupera la dirección dentro de una función que representa el desplazamiento de la línea determinada.
@@ -39,18 +42,15 @@ int GetFunctionLineOffset(
 );
 ```
 
-#### <a name="parameters"></a>Parámetros
-`pAddress`
+## <a name="parameters"></a>Parámetros
+`pAddress`\
+[in] Dirección que representa la función.
 
- [in] Dirección que representa la función.
+`dwLine`\
+[in] Desplazamiento desde el principio de la función de la línea.
 
-`dwLine`
-
- [in] Desplazamiento desde el principio de la función de la línea.
-
-`ppNewAddress`
-
- [out] Nueva dirección que representa el desplazamiento desde el principio de la función de línea.
+`ppNewAddress`\
+[out] Nueva dirección que representa el desplazamiento desde el principio de la función de línea.
 
 ## <a name="return-value"></a>Valor devuelto
 Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.

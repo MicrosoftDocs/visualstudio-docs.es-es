@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - web projects, essentials
 ms.assetid: ca2f4e43-322c-4431-8680-52da846940bc
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1cfd7c6c8543537f88bdf033068d2ae62c7a634a
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 3ddc8bcef8612459ce9816e79250ba8b93194292
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60071336"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66323310"
 ---
 # <a name="web-project-essentials"></a>Conceptos básicos del proyecto web
 Los proyectos Web creación aplicaciones Web. Puede usar un proyecto Web para crear una aplicación Web que tiene páginas Web inteligentes. Una página Web inteligente tiene código de servidor que representa la página Web a petición.
@@ -32,10 +32,10 @@ Los proyectos Web creación aplicaciones Web. Puede usar un proyecto Web para cr
 
   - Un proyecto de aplicación Web (WAP) genera un único archivo ejecutable que combina el código para todas las páginas Web inteligentes, así como todos los archivos de origen en la carpeta /bin.
 
-- El archivo de solución para un proyecto Web se encuentra por separado desde el propio sitio Web. De forma predeterminada, los archivos de solución se encuentran en \Documents and Settings\\*suCuenta*documentos \My\\*\<Visual Studio ### >* \Projects\\ *YourWebSite*.
+- El archivo de solución para un proyecto Web se encuentra por separado desde el propio sitio Web. De forma predeterminada, los archivos de solución se encuentran en \Documents and Settings\\*suCuenta*documentos \My\\ *\<Visual Studio ### >* \Projects\\ *YourWebSite*.
 
   > [!NOTE]
-  >  Si desea mantener el archivo de solución con el sitio Web, simplemente muévala ahí y vuelva a abrirlo.
+  > Si desea mantener el archivo de solución con el sitio Web, simplemente muévala ahí y vuelva a abrirlo.
 
 - Si abre un sitio Web que no tiene ningún archivo de solución en Visual Studio, se genera automáticamente un nuevo archivo de solución para él.
 

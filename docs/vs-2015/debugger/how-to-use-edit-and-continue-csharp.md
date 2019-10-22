@@ -16,12 +16,12 @@ caps.latest.revision: 22
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 3095bccd25548e55f750ee11f26d20fdc9fe603d
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 39137d5fe60a3c91c8fd3904e797eb83420a8f5d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60042784"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63384023"
 ---
 # <a name="how-to-use-edit-and-continue-c"></a>Procedimiento Usar Editar y continuar (C#)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,7 +31,7 @@ Con Editar y continuar para C#, puede realizar cambios en el código en modo de 
  Editar y continuar se invoca automáticamente cuando realice cambios en el modo de interrupción y luego elija una ejecución del depurador comando, como **continuar**, **paso**, o **Establecer instrucción siguiente**, o evaluar una función en una ventana del depurador.  
   
 > [!NOTE]
->  No se admite Editar y continuar cuando se depura código de Compact Framework, código optimizado, código mixto nativo/administrado o código de integración de Common Language Runtime (CLR) de SQL Server. En caso de que se intenten aplicar cambios en el código en alguno de estos escenarios, el depurador mostrará un cuadro de diálogo donde se explique que no se admite la opción Editar y continuar.  
+> No se admite Editar y continuar cuando se depura código de Compact Framework, código optimizado, código mixto nativo/administrado o código de integración de Common Language Runtime (CLR) de SQL Server. En caso de que se intenten aplicar cambios en el código en alguno de estos escenarios, el depurador mostrará un cuadro de diálogo donde se explique que no se admite la opción Editar y continuar.  
   
 ### <a name="to-invoke-edit-and-continue-automatically"></a>Para invocar automáticamente Editar y continuar  
   

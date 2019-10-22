@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProcessEx2::Detach method
 ms.assetid: 66d54c2c-9302-47c8-9975-f30ed988ab29
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e736c14b1a87188f45658a51cff0c123553332e9
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 2f016c078fcf19ec244fc4c0682d2caee81a2062
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56725039"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66311613"
 ---
 # <a name="idebugprocessex2detach"></a>IDebugProcessEx2::Detach
 Este método informa al proceso que una sesión ya no está depurando el proceso.
@@ -36,10 +39,9 @@ int Detach(
 );
 ```
 
-#### <a name="parameters"></a>Parámetros
- `pSession`
-
- [in] Un valor que identifica de forma única la sesión para desasociar este proceso de.
+## <a name="parameters"></a>Parámetros
+`pSession`\
+[in] Un valor que identifica de forma única la sesión para desasociar este proceso de.
 
 ## <a name="return-value"></a>Valor devuelto
  Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.

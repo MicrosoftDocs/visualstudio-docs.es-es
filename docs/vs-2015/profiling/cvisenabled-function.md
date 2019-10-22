@@ -16,11 +16,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: ba30f3ab75504c0115b8a881f2014910f3b9fd0b
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54771003"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68177779"
 ---
 # <a name="cvisenabled-function"></a>CvIsEnabled (Función)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -56,5 +56,5 @@ HRESULT CvIsEnabledEx(
 ## <a name="requirements"></a>Requisitos  
  **Encabezado:** cvmarkers.h  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Otras referencias  
  [Referencia de la biblioteca C++](../profiling/cpp-library-reference.md)

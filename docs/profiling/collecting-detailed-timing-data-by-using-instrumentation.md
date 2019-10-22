@@ -11,23 +11,23 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9bd897d6b986b1d0c7a06a36a58eb88ba929bfc4
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: a58a5a1431dbb8ddbc9b23d93928f615e945b3b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56617579"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62834312"
 ---
 # <a name="collect-detailed-timing-data-by-using-instrumentation"></a>Recopilar datos de control de tiempo detallados mediante la instrumentación
 El método de instrumentación de herramientas de generación de perfiles [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] inserta código de generación de perfiles en una copia de un módulo. El código registra cada entrada, salida y llamada de función a las funciones del módulo durante una ejecución de la generación de perfiles. El método de instrumentación es útil para recopilar información de tiempo detallada sobre una sección del código y para entender el impacto de las operaciones de entrada y salida en el rendimiento de la aplicación.
 
  Puede especificar el método de instrumentación utilizando uno de los procedimientos siguientes:
 
--   En la primera página del Asistente para generación de perfiles, seleccione **Instrumentación**.
+- En la primera página del Asistente para generación de perfiles, seleccione **Instrumentación**.
 
--   En la barra de herramientas **Explorador de rendimiento** , en la lista **Método** , haga clic en **Instrumentación**.
+- En la barra de herramientas **Explorador de rendimiento** , en la lista **Método** , haga clic en **Instrumentación**.
 
--   En la página **General** del cuadro de diálogo de propiedades de la sesión de rendimiento, seleccione **Instrumentación**.
+- En la página **General** del cuadro de diálogo de propiedades de la sesión de rendimiento, seleccione **Instrumentación**.
 
 ## <a name="common-tasks"></a>Tareas comunes
  Puede especificar opciones adicionales en el cuadro de diálogo _Páginas de propiedades de_**sesión de rendimiento** de la sesión de rendimiento. Para abrir este cuadro de diálogo:

@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c70845547da5f16aa0744f522448880605ec2ff9
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 7e6bead46c52ed2bc33572e0eacc6f3f0219e72e
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56626809"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62970101"
 ---
 # <a name="net-memory-allocations-view"></a>Vista de asignaciones de memoria de .NET
 La vista de asignaciones enumera los tipos que se han creado durante la generación de perfiles. Cada tipo es el nodo raíz de un árbol de llamadas que muestra las rutas de ejecución de la función que dieron lugar a las asignaciones del tipo.
@@ -36,7 +36,7 @@ La vista de asignaciones enumera los tipos que se han creado durante la generaci
 ## <a name="highlight-the-execution-hot-path"></a>Resaltado de la ruta de acceso activa de ejecución
  Puede encontrar la ruta de acceso de ejecución del árbol de llamadas que ha creado la mayoría de los objetos del tipo primario.
 
--   Para mostrar la ruta de acceso más activa, haga clic con el botón derecho en el tipo o función y, a continuación, haga clic en **Expandir ruta de acceso activa**.
+- Para mostrar la ruta de acceso más activa, haga clic con el botón derecho en el tipo o función y, a continuación, haga clic en **Expandir ruta de acceso activa**.
 
 |Columna|Descripción|
 |------------|-----------------|

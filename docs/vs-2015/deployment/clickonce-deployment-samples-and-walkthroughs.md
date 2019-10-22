@@ -18,12 +18,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 2dec62254e64c137f133ddb1dbad849e25cb81f9
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: d7a7663a2e365f800b754b771bffca4f539cee51
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58987125"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65675430"
 ---
 # <a name="clickonce-deployment-samples-and-walkthroughs"></a>Ejemplos y tutoriales de implementación de ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,5 +41,5 @@ Esta sección contiene aplicaciones de ejemplo, código de ejemplo y tutoriales 
 |[Descargar ensamblados a petición con la API mediante el Diseñador de implementación de ClickOnce](../deployment/walkthrough-downloading-assemblies-on-demand-with-the-clickonce-deployment-api-using-the-designer.md)|Explica cómo descargar los ensamblados de aplicación sólo cuando la aplicación los utiliza por primera vez.|  
   
 ## <a name="see-also"></a>Vea también  
- [Tutoriales de Visual Studio](http://msdn.microsoft.com/f5399a1f-2d3d-42fb-b989-134ccda2159f)   
+ [Tutoriales de Visual Studio](https://msdn.microsoft.com/f5399a1f-2d3d-42fb-b989-134ccda2159f)   
  [Ejemplos de Visual Studio](../ide/visual-studio-samples.md)

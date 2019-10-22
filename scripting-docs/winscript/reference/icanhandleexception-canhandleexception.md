@@ -1,5 +1,5 @@
 ---
-title: ICanHandleException::CanHandleException | Microsoft Docs
+title: 'Icanhandleexception (:: CanHandleException | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 406787d5ee6811b80f9e6831e5a67cab8367e7d0
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: c536d35dcb9f0faca8b033ecd39aec520a2e260a
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58146492"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72575724"
 ---
 # <a name="icanhandleexceptioncanhandleexception"></a>ICanHandleException::CanHandleException
-Determina si el autor de llamada del motor de secuencia de comandos puede controlar una excepción especificada.  
+Determina si el llamador del motor de scripts puede controlar una excepción especificada.  
   
 ## <a name="syntax"></a>Sintaxis  
   
@@ -38,22 +38,22 @@ HRESULT CanHandleException(
   
 #### <a name="parameters"></a>Parámetros  
  `pExcepInfo`  
- [in] Puntero a un `EXCEPINFO` estructura que contiene la información que se notificará si no se encuentra ningún controlador de excepciones.  
+ de Puntero a una estructura de `EXCEPINFO` que contiene la información que se informará si no se encuentra ningún controlador de excepciones.  
   
  `pvar`  
- [in] Un valor asociado con la excepción, como el valor producida por un `throw` instrucción. Este parámetro puede ser `NULL`.  
+ de Valor asociado a la excepción, como el valor generado por una instrucción `throw`. Este parámetro puede ser `NULL`.  
   
 ## <a name="return-value"></a>Valor devuelto  
  El método devuelve un objeto `HRESULT`. Entre los valores posibles se incluyen los que se indican en la tabla siguiente, entre otros.  
   
 |Valor|Descripción|  
 |-----------|-----------------|  
-|`S_OK`|El llamador puede controlar la excepción|  
-|`E_FAIL`|El llamador no puede controlar la excepción.|  
+|`S_OK`|El autor de la llamada puede controlar la excepción|  
+|`E_FAIL`|El autor de la llamada no puede controlar la excepción.|  
   
 ## <a name="remarks"></a>Comentarios  
- Si una llamada a `IDispatchEx::InvokeEx`, o un método similar, da como resultado una excepción, el motor de secuencia de comandos comprueba para un llamador de cadena de autor de llamada de la secuencia de comandos que admite el `ICanHandleException` interfaz e indica que puede controlar la excepción. Si ningún llamador pueda controlar la excepción, se detiene el motor de scripts.  
+ Si una llamada a `IDispatchEx::InvokeEx`, o un método similar, produce una excepción, el motor de scripts comprueba si hay un llamador en la cadena de llamador del script que admita la interfaz de `ICanHandleException` e indica que puede controlar la excepción. Si ningún llamador puede controlar la excepción, se detiene el motor de scripts.  
   
 ## <a name="see-also"></a>Vea también  
- [ICanHandleException (interfaz)](../../winscript/reference/icanhandleexception-interface.md)   
+ @No__t_1 de la [interfaz icanhandleexception (](../../winscript/reference/icanhandleexception-interface.md)  
  [IDispatchEx::InvokeEx](../../winscript/reference/idispatchex-invokeex.md)

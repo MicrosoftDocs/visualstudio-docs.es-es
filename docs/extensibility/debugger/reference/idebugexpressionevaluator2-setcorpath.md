@@ -6,17 +6,20 @@ helpviewer_keywords:
 - SetCorPath
 - IDebugExpressionEvaluator2::SetCorPath
 ms.assetid: 27b614ff-7325-4f9b-8da4-61ee020c9410
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: bf2495100a7ce52bcd937018414ed7198cf4ca0b
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: e8300f3cfc54ece6a57c31fcca819ffd8d275d28
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56706566"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66313158"
 ---
 # <a name="idebugexpressionevaluator2setcorpath"></a>IDebugExpressionEvaluator2::SetCorPath
 Establece la ruta de acceso a common language runtime (CLR) cargado en el depurador.
@@ -35,10 +38,9 @@ int SetCorPath(
 );
 ```
 
-#### <a name="parameters"></a>Parámetros
- `pcstrCorPath`
-
- [in] Ruta de acceso a lo CLR cargados en el depurador.
+## <a name="parameters"></a>Parámetros
+`pcstrCorPath`\
+[in] Ruta de acceso a lo CLR cargados en el depurador.
 
 ## <a name="return-value"></a>Valor devuelto
  Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.

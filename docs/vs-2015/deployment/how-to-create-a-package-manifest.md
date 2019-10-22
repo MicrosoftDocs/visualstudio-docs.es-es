@@ -20,13 +20,13 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: c711c50ab484cc88b1d6aff5c8e3018cead69953
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60046020"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68153832"
 ---
-# <a name="how-to-create-a-package-manifest"></a>Procedimiento Crear un manifiesto del paquete
+# <a name="how-to-create-a-package-manifest"></a>Procedimiento Creación de un manifiesto de paquete
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Para implementar los requisitos previos para la aplicación, puede usar un paquete de arranque. Un paquete de arranque contiene un archivo de manifiesto de producto único, pero un manifiesto del paquete para cada configuración regional. Funcionalidad compartida entre diferentes versiones localizadas debe incluirse en el manifiesto del producto.  

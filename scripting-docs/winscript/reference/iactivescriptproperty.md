@@ -1,5 +1,5 @@
 ---
-title: IActiveScriptProperty | Documentos de Microsoft
+title: IActiveScriptProperty | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -13,15 +13,15 @@ caps.latest.revision: 5
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 62b0d49ea4ebccfe70955c2f5315918807121447
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 5b68c777652ec411addfb64643ec0c8db67c29a1
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58146089"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72571251"
 ---
 # <a name="iactivescriptproperty"></a>IActiveScriptProperty
-El `IActiveScriptProperty` interfaz se usa para obtener y establecer las propiedades de configuración.  
+La interfaz de `IActiveScriptProperty` se utiliza para obtener y establecer las propiedades de configuración.  
   
 ## <a name="methods-in-vtable-order"></a>Métodos en orden de Vtable  
   

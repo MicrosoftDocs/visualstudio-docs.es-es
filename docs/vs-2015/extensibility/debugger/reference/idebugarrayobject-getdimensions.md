@@ -1,5 +1,5 @@
 ---
-title: IDebugArrayObject::GetDimensions | Documentos de Microsoft
+title: 'IDebugArrayObject:: Getdimensions (| Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,11 +13,11 @@ caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 09902c60f87cfb92d0f0778fcbd106ade4d8dac4
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 9cfd3ef6c65f671a26322320818212a1ed5955fe
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58996042"
+ms.lasthandoff: 07/26/2019
+ms.locfileid: "68197789"
 ---
 # <a name="idebugarrayobjectgetdimensions"></a>IDebugArrayObject::GetDimensions
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -42,16 +42,16 @@ int GetDimensions(
   
 #### <a name="parameters"></a>Parámetros  
  `dwCount`  
- [in] El número de dimensiones que se va a recuperar.  
+ de Número de dimensiones que se van a recuperar.  
   
  `dwDimensions`  
- [in, out] Una matriz que se rellena con los tamaños de cada dimensión. `dwCount` Especifica el tamaño máximo de la `dwDimensions` matriz.  
+ [in, out] Matriz que se rellena con los tamaños de cada dimensión. `dwCount`especifica el tamaño máximo de la `dwDimensions` matriz.  
   
 ## <a name="return-value"></a>Valor devuelto  
- Si se realiza correctamente, devuelve S_OK; en caso contrario, devuelve un código de error.  
+ Si se realiza correctamente, Devuelve S_OK; de lo contrario, devuelve un código de error.  
   
 ## <a name="remarks"></a>Comentarios  
- Una matriz multidimensional puede tener distintos tamaños de cada dimensión. Por ejemplo, dada la matriz tridimensional `myarray[3][2][6]`, este método devuelve 3, 2 y 6 en el `dwDimensions` parámetro en ese orden.  
+ Una matriz multidimensional puede tener distintos tamaños para cada dimensión. Por ejemplo, dada la matriz `myarray[3][2][6]`tridimensional, este método devolvería 3, 2 y 6 en el `dwDimensions` parámetro en ese orden.  
   
 ## <a name="see-also"></a>Vea también  
  [IDebugArrayObject](../../../extensibility/debugger/reference/idebugarrayobject.md)

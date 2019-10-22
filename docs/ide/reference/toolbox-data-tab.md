@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2a83999345cd36f1677eca91b243e1ab3455c8a3
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: e9bee601f488c377c19eff8af060d854a7e7152e
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55910771"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66747697"
 ---
 # <a name="toolbox-data-tab"></a>Cuadro de herramientas, pestaña Datos
 
@@ -28,7 +28,7 @@ Muestra objetos de datos que puede agregar a formularios y componentes. La pesta
 
 ## <a name="ui-element-list"></a>Lista de elementos de la interfaz de usuario
 
-Para ir directamente a la página de referencia de .NET Framework para un componente, presione **F1** en el elemento del **cuadro de herramientas** o en el elemento de componente en la bandeja del diseñador.
+Para ir directamente a la página de referencia de .NET de un componente, presione **F1** en el elemento en el **Cuadro de herramientas** o en el elemento de componente en la bandeja del diseñador.
 
 |nombre|Descripción|
 |----------|-----------------|

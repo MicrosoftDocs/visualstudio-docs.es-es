@@ -1,5 +1,5 @@
 ---
-title: Método Ijsdebugprocess | Documentos de Microsoft
+title: 'IJsDebugProcess:: Createstackwalker ((método) | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -15,12 +15,12 @@ caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: cb084b665467ae023bb885ee0de221f0409a0160
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 70f5d4885abba3d891526723d3ca1f174549c348
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58159717"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72573838"
 ---
 # <a name="ijsdebugprocesscreatestackwalker-method"></a>IJsDebugProcess::CreateStackWalker (Método)
 Método de generador para el rastreador de pila.  
@@ -36,18 +36,18 @@ HRESULT CreateStackWalker(
   
 #### <a name="parameters"></a>Parámetros  
  `threadId`  
- [in] El identificador de subproceso.  
+ de IDENTIFICADOR del subproceso.  
   
  `ppStackWalker`  
- [out] El nuevo objeto Rastreador de pila.  
+ enuncia Nuevo objeto de rastreador de pila.  
   
 ## <a name="return-value"></a>Valor devuelto  
   
 ## <a name="remarks"></a>Comentarios  
- Devuelve E_JsDEBUG_UNKNOWN_THREAD si el subproceso no tiene JavaScript en él. Solo se puede llamar este método mientras se detiene el proceso de destino.  
+ Devuelve E_JsDEBUG_UNKNOWN_THREAD si el subproceso no tiene JavaScript en él. Solo se puede llamar a este método mientras se detiene el proceso de destino.  
   
 ## <a name="requirements"></a>Requisitos  
- **Encabezado:** jscript9diag.h  
+ **Encabezado:** jscript9diag. h  
   
 ## <a name="see-also"></a>Vea también  
  [IJsDebugProcess (Interfaz)](../../winscript/reference/ijsdebugprocess-interface.md)

@@ -1,5 +1,5 @@
 ---
-title: Filtrar para seleccionar un repositorio de resultados de pruebas de carga
+title: Procedimiento para seleccionar un repositorio de resultados de pruebas de carga
 ms.date: 10/19/2016
 ms.topic: conceptual
 f1_keywords:
@@ -15,14 +15,14 @@ ms.assetid: fa0c4dd9-612f-4a57-b8eb-458f129d9cda
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 6d1b324eb2122559eb45a22bc463458d4f6661ef
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 602327d49733077e3c180c0e192027be6374afe6
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55941090"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62950037"
 ---
-# <a name="how-to-select-a-load-test-results-repository"></a>Filtrar para seleccionar un repositorio de resultados de pruebas de carga
+# <a name="how-to-select-a-load-test-results-repository"></a>Procedimiento para seleccionar un repositorio de resultados de pruebas de carga
 
 el usuario no está limitado a un almacén de resultados local. Con frecuencia, las pruebas de carga se ejecutan en un conjunto remoto de equipos agente. Los agentes, junto con un controlador, pueden generar más carga simulada que cualquier equipo único. Para obtener más información, vea [Controladores y agentes de prueba](configure-test-agents-and-controllers-for-load-tests.md).
 
@@ -32,26 +32,26 @@ Los resultados de prueba de los agentes o un equipo local se pueden guardar en c
 
 ## <a name="identify-a-results-store-for-load-test-data"></a>Identificar un almacén de resultados para datos de una prueba de carga
 
-1.  En el **Explorador de soluciones**, abra el archivo de prueba de carga.
+1. En el **Explorador de soluciones**, abra el archivo de prueba de carga.
 
-2.  En la barra de herramientas **Prueba de carga**, elija **Administrar controladores de pruebas**. Se muestra el cuadro de diálogo **Administrar controlador de pruebas**. Si está utilizando un agente de forma remota, debe seleccionar un controlador.
+2. En la barra de herramientas **Prueba de carga**, elija **Administrar controladores de pruebas**. Se muestra el cuadro de diálogo **Administrar controlador de pruebas**. Si está utilizando un agente de forma remota, debe seleccionar un controlador.
 
      ![Propiedades de la conexión del almacén de resultados de pruebas de carga](../test/media/loadtestconnectionproperties.png) Propiedades de la conexión del almacén de resultados de pruebas de carga
 
-3.  En **Almacén de resultados de pruebas de carga**, haga clic en **(…)** para ver el cuadro de diálogo **Propiedades de la conexión**.
+3. En **Almacén de resultados de pruebas de carga**, haga clic en **(…)** para ver el cuadro de diálogo **Propiedades de la conexión**.
 
-4.  En **Nombre del servidor**, escriba el nombre del servidor donde ha ejecutado los scripts `LoadTest`.
+4. En **Nombre del servidor**, escriba el nombre del servidor donde ha ejecutado los scripts `LoadTest`.
 
     > [!TIP]
     > Si está usando SQL Express en el equipo local para el almacén de pruebas de carga, escriba \<nombreDeEquipo>\sqlexpress (por ejemplo, **MyComputer\sqlexpress**).
 
-5.  En **Conexión con el servidor**, puede elegir **Utilizar autenticación de Windows**. Puede especificar el nombre de usuario y la contraseña, pero, si lo hace, debe seleccionar la opción **Guardar mi contraseña**.
+5. En **Conexión con el servidor**, puede elegir **Utilizar autenticación de Windows**. Puede especificar el nombre de usuario y la contraseña, pero, si lo hace, debe seleccionar la opción **Guardar mi contraseña**.
 
-6.  En **Establecer conexión con una base de datos**, elija **Seleccione o escriba el nombre de la base de datos**. Seleccione **LoadTest** en el cuadro de lista desplegable.
+6. En **Establecer conexión con una base de datos**, elija **Seleccione o escriba el nombre de la base de datos**. Seleccione **LoadTest** en el cuadro de lista desplegable.
 
-7.  Elija **Aceptar**. Puede probar la conexión si elige **Probar conexión**.
+7. Elija **Aceptar**. Puede probar la conexión si elige **Probar conexión**.
 
-8.  Elija **Cerrar** en el cuadro de diálogo **Administrar controlador de pruebas**.
+8. Elija **Cerrar** en el cuadro de diálogo **Administrar controlador de pruebas**.
 
 ## <a name="see-also"></a>Vea también
 

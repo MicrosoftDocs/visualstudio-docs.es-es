@@ -6,17 +6,17 @@ helpviewer_keywords:
 - Buttons element (VSCT XML schema)
 - VSCT XML schema elements, Buttons
 ms.assetid: 96dccf51-2b00-4700-9d28-924b34c21ecd
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1e62436d32d85c76685c86ea0da396dacae1bf3f
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: e10b4f8749aa7e42a7fb95afb31d98907e45d05f
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56694275"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66321301"
 ---
 # <a name="button-element"></a>Elemento de botón
 Define un elemento que el usuario puede interactuar con. Los botones pueden ser de distintos tipos: Botón MenuButton y SplitDropDown.

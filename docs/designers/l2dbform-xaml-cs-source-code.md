@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d6f0e70111c557be038e73c05ef7a1578493002d
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 12c9515cf6f4841dd1f5ebfb554e00a262b8a160
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55951324"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62893143"
 ---
 # <a name="l2dbformxamlcs-source-code"></a>Código fuente de L2DBForm.xaml.cs
 
@@ -23,9 +23,9 @@ Este tema contiene el contenido y la descripción del código de origen C# del a
 
 Se utilizan dos miembros de datos privados para asociar esta clase con los recursos de la ventana que se utilizan en *L2DBForm.xaml*.
 
--   La variable del espacio de nombres `myBooks` se inicializa en `"http://www.mybooks.com"`.
+- La variable del espacio de nombres `myBooks` se inicializa en `"http://www.mybooks.com"`.
 
--   El miembro `bookList` se inicializa en el constructor en la cadena CDATA de *L2DBForm.xaml* con la siguiente línea:
+- El miembro `bookList` se inicializa en el constructor en la cadena CDATA de *L2DBForm.xaml* con la siguiente línea:
 
     ```csharp
     bookList = (XElement)((ObjectDataProvider)Resources["LoadedBooks"]).Data;
@@ -35,11 +35,11 @@ Se utilizan dos miembros de datos privados para asociar esta clase con los recur
 
 Este método contiene las siguientes tres instrucciones:
 
--   La primera instrucción condicional se utiliza para la validación de entrada.
+- La primera instrucción condicional se utiliza para la validación de entrada.
 
--   La segunda instrucción crea un nuevo <xref:System.Xml.Linq.XElement> a partir de los valores de cadena que el usuario ha especificado en la sección de la interfaz de usuario (IU) **Agregar nuevo libro**.
+- La segunda instrucción crea un nuevo <xref:System.Xml.Linq.XElement> a partir de los valores de cadena que el usuario ha especificado en la sección de la interfaz de usuario (IU) **Agregar nuevo libro**.
 
--   La última instrucción agrega este nuevo elemento de libro al proveedor de datos de *L2DBForm.xaml*. En consecuencia, el enlace de datos dinámicos actualizará la IU con este nuevo elemento; no se requiere ningún código adicional proporcionado por el usuario.
+- La última instrucción agrega este nuevo elemento de libro al proveedor de datos de *L2DBForm.xaml*. En consecuencia, el enlace de datos dinámicos actualizará la IU con este nuevo elemento; no se requiere ningún código adicional proporcionado por el usuario.
 
 ## <a name="onremove-event-handler"></a>Controlador de eventos OnRemove
 
@@ -47,13 +47,13 @@ El controlador `OnRemove` es más complicado que el controlador `OnAddBook` por 
 
 Pero el trabajo principal de quitar el elemento de libro seleccionado se logra con solo dos instrucciones:
 
--   En primer lugar, se recupera el elemento de libro asociado con el elemento seleccionado actualmente en el cuadro de lista:
+- En primer lugar, se recupera el elemento de libro asociado con el elemento seleccionado actualmente en el cuadro de lista:
 
     ```csharp
     XElement selBook = (XElement)lbBooks.SelectedItem;
     ```
 
--   A continuación, se elimina este elemento del proveedor de datos:
+- A continuación, se elimina este elemento del proveedor de datos:
 
     ```csharp
     selBook.Remove();

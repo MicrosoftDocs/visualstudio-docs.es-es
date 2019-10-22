@@ -9,17 +9,17 @@ helpviewer_keywords:
 - Tools Options pages [Visual Studio SDK], layouts
 - Tools Options pages [Visual Studio SDK], attributes
 ms.assetid: e6c0e636-5ec3-450e-b395-fc4bb9d75918
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4397ba075c0f0ebd066dc885991a34f08586008b
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 7c336503b80e2af34ac58c7debde16895d7f2585
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56618359"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66314850"
 ---
 # <a name="options-and-options-pages"></a>Opciones y páginas de opciones
 Al hacer clic en **opciones** en el **herramientas** menú se abre el **opciones** cuadro de diálogo. Las opciones de este cuadro de diálogo se conocen colectivamente como páginas de opciones. El control de árbol en el panel de navegación incluye las categorías de opciones, y cada categoría tiene páginas de opciones. Al seleccionar una página, sus opciones aparecen en el panel derecho. Estas páginas le permiten cambiar los valores de las opciones que determinan el estado de un paquete VSPackage.
@@ -59,7 +59,7 @@ Al hacer clic en **opciones** en el **herramientas** menú se abre el **opciones
 - <xref:System.ComponentModel.DescriptionAttribute> Determina la descripción de la opción.
 
   > [!NOTE]
-  >  Atributos equivalentes, SRCategory, LocDisplayName y SRDescription, use los recursos de cadena para la localización y se definen en el [proyecto administrado de ejemplo](http://go.microsoft.com/fwlink/?LinkId=122774).
+  > Atributos equivalentes, SRCategory, LocDisplayName y SRDescription, use los recursos de cadena para la localización y se definen en el [proyecto administrado de ejemplo](http://go.microsoft.com/fwlink/?LinkId=122774).
 
   Observe el fragmento de código siguiente:
 
@@ -84,4 +84,4 @@ Al hacer clic en **opciones** en el **herramientas** menú se abre el **opciones
  La ruta de acceso del registro de la propiedad de automatización se determina mediante la combinación <xref:Microsoft.VisualStudio.Shell.Package.ApplicationRegistryRoot%2A>, la palabra AutomationProperties y las opciones de página de categoría y el nombre. Por ejemplo, si la página de opciones tiene la categoría de My Category, el nombre de mi página de cuadrícula y el <xref:Microsoft.VisualStudio.Shell.Package.ApplicationRegistryRoot%2A>, HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0Exp, la propiedad de automatización tiene la clave del registro, HKEY_LOCAL_MACHINE\SOFTWARE\ Página de cuadrícula de Microsoft\VisualStudio\8.0Exp\AutomationProperties\My categoría\Mi.
 
 > [!NOTE]
->  El nombre canónico, mi página de cuadrícula Category.My, es el valor de la subclave de nombre de esta clave.
+> El nombre canónico, mi página de cuadrícula Category.My, es el valor de la subclave de nombre de esta clave.

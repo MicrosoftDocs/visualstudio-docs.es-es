@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f6f6bd03a47500c127360afd2d2a6ae6b62ee2e5
-ms.sourcegitcommit: 5af29226aef0a3b4a506b69a08a97cfd21049521
+ms.openlocfilehash: 74694528f6380896d47b9665d9e617098ef28620
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "58268565"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66746865"
 ---
 # <a name="create-solutions-and-projects"></a>Crear soluciones y proyectos
 
@@ -61,11 +61,11 @@ Si tiene un archivo que se aplica a varios proyectos, como un archivo Léame par
 
 ## <a name="create-a-net-project-that-targets-a-specific-version-of-the-net-framework"></a>Crear un proyecto .NET que tenga como destino una versión concreta de .NET Framework
 
-Cuando cree un proyecto, puede especificar la versión específica de .NET Framework que quiere que use el proyecto.
+Al crear un proyecto de .NET Framework, puede especificar una versión concreta de .NET Framework que quiera que use el proyecto. (Al crear un proyecto de .NET Core, no especifique ninguna versión de Framework).
 
 ::: moniker range="vs-2017"
 
-Para especificar una versión de .NET Framework, seleccione el menú desplegable **Plataforma** en el cuadro de diálogo **Nuevo proyecto**.
+Para especificar una versión de .NET Framework, seleccione el menú desplegable **Marco** en el cuadro de diálogo **Nuevo proyecto**.
 
 ![Desplegable Plataforma en el cuadro de diálogo Nuevo proyecto](./media/vside-newproject-framework.png)
 
@@ -76,7 +76,7 @@ Para especificar una versión de .NET Framework, seleccione el menú desplegable
 
 ::: moniker range=">=vs-2019"
 
-Para especificar una versión de .NET Framework, elija el menú desplegable **Plataforma** de la página **Crear un proyecto**.
+Para especificar una versión de .NET Framework, seleccione el menú desplegable **Marco** en la página **Crear un proyecto**.
 
 ![Selector de Framework en la configuración del nuevo proyecto](media/vs-2019/configure-new-project-framework.png)
 

@@ -13,11 +13,11 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-ms.openlocfilehash: 5816d43a17be44d4b135ed0b691b8c6788e42cb4
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
-ms.translationtype: HT
+ms.openlocfilehash: f4e848e7af41aed8939e2ec0584bbb41781827e7
+ms.sourcegitcommit: 90c3187d804ad7544367829d07ed4b47d3f8a72d
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38943352"
+ms.lasthandoff: 08/06/2019
+ms.locfileid: "68822376"
 ---
 Tienda

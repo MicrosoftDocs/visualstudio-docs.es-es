@@ -6,17 +6,17 @@ helpviewer_keywords:
 - VSCT XML schema elements, Icon
 - Icon element (VSCT XML schema)
 ms.assetid: 73c58fe3-d53c-4f4e-b025-29567c6cbb7c
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4a53e7971ac54af439a02d765fb392157d4a5321
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: dd56391084788729c0f8439728f9afffd59da946
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56687463"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66311250"
 ---
 # <a name="icon-element"></a>Icon (elemento)
 El atributo guid de la etiqueta de icono es el guid de un mapa de bits definido. El `id` atributo selecciona la ranura en la Tira de mapa de bits. Este elemento es opcional. Si este elemento no está incluido el valor de **guidOfficeIcon:msotcidNoIcon** se implicarse.

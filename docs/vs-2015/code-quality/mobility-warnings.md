@@ -1,5 +1,5 @@
 ---
-title: Advertencias de movilidad | Documentos de Microsoft
+title: Advertencias de movilidad | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -12,24 +12,24 @@ helpviewer_keywords:
 - warnings, mobility
 ms.assetid: 9808054c-593b-4fc3-92cc-1fc45f41569c
 caps.latest.revision: 19
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: e67be4e501cb2d0dd9d584250fcea91af13fe657
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: c9f5606540d55c0a2c4257ff397ad77cc55624b4
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58996449"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72655981"
 ---
 # <a name="mobility-warnings"></a>advertencias de movilidad
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Advertencias de movilidad admiten el uso eficiente de energía.  
-  
-## <a name="in-this-section"></a>En esta sección  
-  
-|Regla|Descripción|  
-|----------|-----------------|  
-|[CA1600: No utilice la prioridad del proceso inactiva](../code-quality/ca1600-do-not-use-idle-process-priority.md)|No establezca la prioridad de proceso en Idle. Los procesos que tienen System.Diagnostics.ProcessPriorityClass.Idle ocupan la CPU cuando, de otro modo, estaría inactiva y, por consiguiente, bloquean el estado de espera.|  
+Las advertencias de movilidad admiten un uso eficaz de energía.
+
+## <a name="in-this-section"></a>En esta sección
+
+|Regla|Descripción|
+|----------|-----------------|
+|[CA1600: No utilizar la prioridad del proceso inactiva](../code-quality/ca1600-do-not-use-idle-process-priority.md)|No establezca la prioridad de proceso en Idle. Los procesos que tienen System.Diagnostics.ProcessPriorityClass.Idle ocupan la CPU cuando, de otro modo, estaría inactiva y, por consiguiente, bloquean el estado de espera.|
 |[CA1601: No utilizar temporizadores que impidan los cambios de estado de energía](../code-quality/ca1601-do-not-use-timers-that-prevent-power-state-changes.md)|Una actividad periódica más frecuente hará que la CPU no esté disponible, e interferirá con los temporizadores de inactividad para ahorro de energía, que apagan el monitor y el disco duro.|

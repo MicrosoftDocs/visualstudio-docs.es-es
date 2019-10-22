@@ -1,5 +1,5 @@
 ---
-title: Procedimiento Buscar una dirección de correo electrónico en los contactos mediante programación
+title: Buscar una dirección de correo electrónico en los contactos mediante programación
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 178549a815fd9a17377986a5b19e02db12ec76d1
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 26e32314db68ae064edac5537222447625cb051d
+ms.sourcegitcommit: 7eb2fb21805d92f085126f3a820ac274f2216b4e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60115229"
+ms.lasthandoff: 06/22/2019
+ms.locfileid: "67328970"
 ---
 # <a name="how-to-programmatically-search-for-an-email-address-in-contacts"></a>Procedimiento Buscar una dirección de correo electrónico en los contactos mediante programación
   En este ejemplo se busca en una carpeta de contactos los contactos que tienen el nombre de dominio **ejemplo.com** en sus direcciones de correo.

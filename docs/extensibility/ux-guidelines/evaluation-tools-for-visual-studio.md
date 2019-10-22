@@ -3,17 +3,17 @@ title: Herramientas de evaluación para Visual Studio | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 94e0e9a3-440c-4943-ad7b-772ed742e034
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 11856141a6c3f5ca186428d67edf10fdbd35787b
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 00668fdebdbc8fc6a26c30a8762aa6f03d6e2769
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60086357"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67824566"
 ---
 # <a name="evaluation-tools-for-visual-studio"></a>Herramientas de evaluación para Visual Studio
 ## <a name="craftsmanship-checklist-for-visual-studio"></a>Lista de comprobación de artesanía para Visual Studio
@@ -49,11 +49,11 @@ ms.locfileid: "60086357"
 
 - Compruebe que los botones, comandos y vínculos de comando que se inicie la interfaz de usuario para capturar la entrada del usuario finalización en los puntos suspensivos **[...]** .
 
-     Ejemplos:
+  Ejemplos:
 
-    - Un **[avanzadas...]**  botón en un cuadro de diálogo.
+  - Un **[avanzadas...]**  botón en un cuadro de diálogo.
 
-    - Las opciones de comando en el menú Herramientas (**Herramientas > opciones**) no se debe obtener un botón de puntos suspensivos porque iniciar el cuadro de diálogo es la intención del comando.
+  - Las opciones de comando en el menú Herramientas (**Herramientas > opciones**) no se debe obtener un botón de puntos suspensivos porque iniciar el cuadro de diálogo es la intención del comando.
 
 - Compruebe que la interfaz de usuario no contiene ningún abreviaturas, excepto los términos estándar del sector. Por ejemplo, HTML ni TCP/IP debe deletreado, aunque deben PII (información de identificación personal) y OOM (memoria insuficiente).
 
@@ -145,9 +145,9 @@ ms.locfileid: "60086357"
 
 - Si el campo es un campo obligatorio que debe identificarse como tal, compruebe:
 
-    - el fondo establecido en `Environment.ControlEditRequiredBackground` y primer plano se establece en `Environment.ControlEditRequiredHintText`
+  - el fondo establecido en `Environment.ControlEditRequiredBackground` y primer plano se establece en `Environment.ControlEditRequiredHintText`
 
-    - que hay dentro del control que aparece como texto de la sugerencia **"\<necesario >"**
+  - que hay dentro del control que aparece como texto de la sugerencia **"\<necesario >"**
 
 #### <a name="button-controls"></a>Controles de botón
 
@@ -169,11 +169,11 @@ ms.locfileid: "60086357"
 
 - Compruebe que los colores VS utilizados son:
 
-    - `Environment.ControlLinkText`
+  - `Environment.ControlLinkText`
 
-    - `Environment.ControlLinkTextHover`
+  - `Environment.ControlLinkTextHover`
 
-    - `Environment.ControlLinkTextPressed`
+  - `Environment.ControlLinkTextPressed`
 
 - Compruebe que los hipervínculos aparecen azules con ningún carácter de subrayado, a menos que se incrusta en un párrafo.
 

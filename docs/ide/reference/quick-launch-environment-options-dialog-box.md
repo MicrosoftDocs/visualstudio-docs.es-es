@@ -15,12 +15,12 @@ manager: jillfra
 ms.workload:
 - multiple
 monikerRange: vs-2017
-ms.openlocfilehash: a67e909dc43f17e12dd63b7a8a3b2e8a4afacc5e
-ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
+ms.openlocfilehash: 1f5026a014b5adc96f0729d130c4398474d6d413
+ms.sourcegitcommit: ce1ab8a25c66a83e60eab80ed8e1596fe66dd85c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58789879"
+ms.lasthandoff: 07/29/2019
+ms.locfileid: "68605896"
 ---
 # <a name="quick-launch-environment-options-dialog-box"></a>Inicio rápido, Entorno, Opciones (cuadro de diálogo)
 
@@ -34,12 +34,12 @@ Los resultados de búsqueda de inicio rápido aparecen recogidos en cuatro categ
 
 Puede utilizar los siguientes accesos directos para limitar la búsqueda a las categorías específicas.
 
-|Categoría|Acceso directo|Descripción del acceso directo|
+|Categoría|Método abreviado|Descripción del acceso directo|
 |--------------|--------------| - |
-|Usados más recientemente|@mru<br /><br /> Por ejemplo, `@mru font`.|Muestra hasta cinco de los elementos que ha **usado más recientemente**.|
-|Menús|@menu<br /><br /> Por ejemplo, `@menu project`.|Limita la búsqueda a los elementos de menú.|
-|Opciones|@opt<br /><br /> Por ejemplo, `@opt font`.|Limita la búsqueda a la configuración del cuadro de diálogo **Opciones**.|
-|Documentos|@doc<br /><br /> Por ejemplo, `@doc program.cs`.|Limita la búsqueda a los nombres de archivo y rutas de acceso de documentos abiertos para los criterios de búsqueda, pero no busca el texto dentro de los propios archivos.|
+|Usados más recientemente|@mru<br /><br /> Por ejemplo: `@mru font`|Muestra hasta cinco de los elementos que ha **usado más recientemente**.|
+|Menús|@menu<br /><br /> Por ejemplo: `@menu project`|Limita la búsqueda a los elementos de menú.|
+|Opciones|@opt<br /><br /> Por ejemplo: `@opt font`|Limita la búsqueda a la configuración del cuadro de diálogo **Opciones**.|
+|Documentos|@doc<br /><br /> Por ejemplo: `@doc program.cs`|Limita la búsqueda a los nombres de archivo y rutas de acceso de documentos abiertos para los criterios de búsqueda, pero no busca el texto dentro de los propios archivos.|
 
 > [!NOTE]
 > Puede cambiar las teclas de método abreviado en la página **General** > **Teclado** en el cuadro de diálogo **Opciones**.
@@ -47,7 +47,3 @@ Puede utilizar los siguientes accesos directos para limitar la búsqueda a las c
 ## <a name="show-previous-results"></a>Mostrar resultados anteriores
 
 De forma predeterminada, el término de búsqueda que especifique no se conserva de una sesión de búsqueda a otra. La cadena de búsqueda se borra si busca un término. Mueva el cursor fuera del área de **Inicio rápido** y, después, regrese. Para conservar los resultados de búsqueda, vaya al cuadro de diálogo **Opciones**, seleccione **Inicio rápido** y, después, seleccione la casilla **Mostrar resultados de la búsqueda anterior cuando se active el inicio rápido** . La próxima vez que realice una búsqueda, salga del área de Inicio rápido y retroceda. Inicio rápido conservará el término de búsqueda que se utilizó por última vez y también le mostrará los resultados de búsqueda.
-
-## <a name="see-also"></a>Vea también
-
-- [Opciones de entorno (Cuadro de diálogo)](../../ide/reference/environment-options-dialog-box.md)

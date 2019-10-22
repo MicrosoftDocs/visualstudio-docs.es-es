@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - glossary [Visual Studio SDK]
 ms.assetid: b64d432b-c39b-4904-ad18-3c3218b6e3aa
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6157b4bc3537a4f88feb91d512241451b8324ba7
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: c5aa8398f3a102031c3a40074f76557ef311d4d7
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56682809"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66322419"
 ---
 # <a name="visual-studio-sdk-glossary"></a>Glosario Visual Studio SDK
 Este glosario proporciona definiciones de términos que se usan en el [!INCLUDE[vsipsdk](../extensibility/includes/vsipsdk_md.md)] documentación.
@@ -73,7 +73,7 @@ Este glosario proporciona definiciones de términos que se usan en el [!INCLUDE[
 
   componente de componente de nivel superior independientes A que utiliza una ventana de nivel superior no modal y puede funcionar eficazmente como una ventana de aplicación independiente, pero se implementa como un objeto en proceso. Por lo tanto, un componente independiente de nivel superior debe coordinar modalidad y servicios de bucle de mensajes con el IDE. Los objetos de proceso no tienen su propio bucle de mensajes.
 
-  El proveedor de información de proveedor de información es un módulo que puede buscar palabras clave y devolver una lista de temas, en forma de `IVsUserContextItem` objetos. Para proporcionar **F1** y elementos de la palabra clave de búsqueda para el proveedor de información, registre el archivo de Ayuda compilado (*. HxS*) con el sistema. Los temas de Ayuda de estos archivos proporcionan la lista de temas que se muestran en la ventana Ayuda dinámica y se muestra si un usuario presiona **F1**.
+  El proveedor de información de proveedor de información es un módulo que puede buscar palabras clave y devolver una lista de temas, en forma de `IVsUserContextItem` objetos. Para proporcionar **F1** y elementos de la palabra clave de búsqueda para el proveedor de información, registre el archivo de Ayuda compilado ( *. HxS*) con el sistema. Los temas de Ayuda de estos archivos proporcionan la lista de temas que se muestran en la ventana Ayuda dinámica y se muestra si un usuario presiona **F1**.
 
   objeto de un VSPackage del componente que implementa en contexto el `IOleInPlaceComponent` interfaz para administrar una ventana que visualmente es dentro de una ventana de documento que pertenecen a la IDE. Componentes en contexto no participan en estándar OLE-combinación de menús; en su lugar se integran sus elementos de interfaz de usuario en el IDE.
 

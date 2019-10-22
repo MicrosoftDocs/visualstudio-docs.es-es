@@ -1,5 +1,5 @@
 ---
-title: IDebugAsyncOperation::Start | Documentos de Microsoft
+title: 'Idebugasyncoperation (:: Start | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b3e02869abab65878412f96b77d5782b9717a1b6
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 485eb34ebe200e7f7898d9338effed37cbf2aa10
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58155711"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72573248"
 ---
 # <a name="idebugasyncoperationstart"></a>IDebugAsyncOperation::Start
-Hace que la operación asincrónica empezar.  
+Hace que se inicie la operación asincrónica.  
   
 ## <a name="syntax"></a>Sintaxis  
   
@@ -37,7 +37,7 @@ HRESULT Start(
   
 #### <a name="parameters"></a>Parámetros  
  `padocb`  
- La interfaz de devolución de llamada que recibe eventos de estado de esta operación.  
+ La interfaz de devolución de llamada que recibe los eventos de estado de esta operación.  
   
 ## <a name="return-value"></a>Valor devuelto  
  El método devuelve un objeto `HRESULT`. Entre los valores posibles se incluyen los que se indican en la tabla siguiente, entre otros.  
@@ -48,10 +48,10 @@ HRESULT Start(
 |`E_UNEXPECTED`|Una operación ya está pendiente.|  
   
 ## <a name="remarks"></a>Comentarios  
- Este método provoca que `IDebugSyncOperation::Execute` llamada de forma asincrónica en el subproceso obtenido `IDebugSyncOperation::GetTargetThread`. Este método debe llamarse únicamente desde dentro del subproceso del depurador; en caso contrario, no devolverá hasta que se complete la operación.  
+ Este método hace que se llame a `IDebugSyncOperation::Execute` de forma asincrónica en el subproceso Obtenido de `IDebugSyncOperation::GetTargetThread`. Solo se debe llamar a este método desde dentro del subproceso del depurador; de lo contrario, no se devolverá hasta que se complete la operación.  
   
 ## <a name="see-also"></a>Vea también  
- [IDebugAsyncOperation::Abort](../../winscript/reference/idebugasyncoperation-abort.md)   
- [IDebugAsyncOperation (interfaz)](../../winscript/reference/idebugasyncoperation-interface.md)   
- [IDebugSyncOperation::Execute](../../winscript/reference/idebugsyncoperation-execute.md)   
+ [Idebugasyncoperation (:: Abort](../../winscript/reference/idebugasyncoperation-abort.md)    
+ @No__t_1 de la [interfaz idebugasyncoperation (](../../winscript/reference/idebugasyncoperation-interface.md)  
+ [Idebugsyncoperation (:: execute](../../winscript/reference/idebugsyncoperation-execute.md)    
  [IDebugSyncOperation::GetTargetThread](../../winscript/reference/idebugsyncoperation-gettargetthread.md)

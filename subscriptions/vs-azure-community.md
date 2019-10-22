@@ -1,22 +1,22 @@
 ---
-title: Beneficio de la Comunidad Azure en las suscripciones de Visual Studio | Microsoft Docs
+title: Ventaja Soporte técnico de la Comunidad de Azure en Visual Studio Subscription | Microsoft Docs
 author: evanwindom
-ms.author: jaunger
-manager: evelynp
-ms.date: 12/19/2018
+ms.author: lank
+manager: lank
+ms.date: 07/29/2019
 ms.topic: conceptual
-description: Obtenga información sobre la ventaja Comunidad Azure incluida en las suscripciones de Visual Studio.
-searchscope: VS Subscription
-ms.openlocfilehash: 78c6954cd6dbbee48a3754d7d58eaa34b2e17158
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+description: Obtenga información sobre la ventaja Soporte técnico de la Comunidad de Azure incluida en las suscripciones de Visual Studio.
+ms.openlocfilehash: 0f03d269ab316801a75cbb3b1b618d722ec46b89
+ms.sourcegitcommit: 5694c5236fa32ba7f5bc1236a853f725ec7557e9
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56842109"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "68681251"
 ---
-# <a name="azure-community"></a>Comunidad Azure
-
+# <a name="azure-community-support-forum-in-visual-studio-subscriptions"></a>Foro de soporte técnico de la Comunidad de Azure en las suscripciones de Visual Studio
 Obtenga ayuda directamente del equipo de Azure en los foros de soporte seleccionados a través de la Comunidad Azure.  El beneficio de la Comunidad Azure proporciona acceso a una colección de foros que se centran en los temas relacionados con Azure.
+
+## <a name="available-topics"></a>Temas disponibles
 
 |                                       |                                                    |                                      |
 |---------------------------------------|----------------------------------------------------|--------------------------------------|
@@ -28,9 +28,7 @@ Obtenga ayuda directamente del equipo de Azure en los foros de soporte seleccion
 | [Portal de administración de Azure](https://social.msdn.microsoft.com/Forums/home?forum=windowsazuremanagement&filter=alltypes&sort=lastpostdesc)               | [Azure Backup](https://social.msdn.microsoft.com/forums/home?forum=windowsazureonlinebackup&filter=alltypes&sort=lastpostdesc)                                       | [Azure Stack](https://social.msdn.microsoft.com/forums/home?forum=AzureStack&filter=alltypes&sort=lastpostdesc)                          |
 | [Azure Virtual Machines](https://social.msdn.microsoft.com/Forums/home?forum=WAVirtualMachinesforWindows&filter=alltypes&sort=lastpostdesc)                | [Azure Site Recovery](https://social.msdn.microsoft.com/forums/home?forum=hypervrecovmgr&filter=alltypes&sort=lastpostdesc)                                | [Azure Marketplace](https://social.msdn.microsoft.com/forums/home?forum=DataMarket&filter=alltypes&sort=lastpostdesc)                    |
 
-
-
-## <a name="activation-steps"></a>Pasos para la activación
+## <a name="get-started"></a>Primeros pasos
 Empezar a usar la Comunidad Azure es un proceso sencillo.
 1. Inicie sesión en [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs).
 
@@ -42,13 +40,12 @@ Empezar a usar la Comunidad Azure es un proceso sencillo.
     > [!div class="mx-imgBorder"]
     > ![Foros de la Comunidad Azure](_img/vs-azure-community/vs-azure-community-forums.png)
 
-4.  En el foro, puede ver los temas y las respuestas, buscar respuestas a su pregunta o plantear una pregunta nueva.
+4. En el foro, puede ver los temas y las respuestas, buscar respuestas a su pregunta o plantear una pregunta nueva.
     > [!div class="mx-imgBorder"]
     > ![Ejemplo de la Comunidad Azure](_img/vs-azure-community/vs-azure-community-example.png)
 
 ## <a name="eligibility"></a>Elegibilidad
 La disponibilidad de la ventaja Comunidad Azure depende del nivel de suscripción, como se muestra a continuación:
-
 
 |                                          Nivel de suscripción                                           |     Canales      |    Prestación    | ¿Renovable? |
 |-------------------------------------------------------------------------------------------------------|-------------------|---------------|------------|
@@ -57,19 +54,19 @@ La disponibilidad de la ventaja Comunidad Azure depende del nivel de suscripció
 |                              Visual Studio Test Professional (estándar)                               |    Licencia por volumen, venta directa     |   Un año    |    Sí     |
 |                                       Plataformas MSDN (estándar)                                       |    Licencia por volumen, venta directa     |   Un año    |    Sí     |
 | Visual Studio Enterprise (de nube mensual) Visual Studio Professional (de nube mensual), NFR<sup>1</sup> |        Todas        | No disponible |     No     |
-|                                     Visual Studio Dev Essentials                                      |        N/D        | No disponible |     No     |
-|                                                                                                       |                   |               |            |
 
 <sup>1</sup>  *Incluye:  No para reventa (NFR), Microsoft FTE, Most Valuable Professional (MVP), Regional Director (RD), Visual Studio Industry Partner (VSIP), BizSpark, Imagine, Microsoft Certified Trainer (MCT)*
 
 > [!NOTE]
 > Microsoft ya no ofrece suscripciones anuales ni de Visual Studio Professional ni de Visual Studio Enterprise en las suscripciones de nube. Esto no supone cambio alguno en la experiencia actual de los clientes y ni en su capacidad para renovar, aumentar, reducir o cancelar las suscripciones. Conviene que los clientes nuevos vayan a [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) para explorar las diferentes opciones de compra de Visual Studio.
 
-
 ¿No sabe con seguridad qué suscripción usa?  Conéctese a [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) para ver todas las suscripciones asignadas a su dirección de correo electrónico. Si no ve todas las suscripciones, es posible que haya una o varias asignadas a una dirección de correo electrónico diferente.  Debe iniciar sesión con esa dirección de correo electrónico para ver esas suscripciones.
 
 ## <a name="support-resources"></a>Recursos de soporte técnico
--  Para otros recursos de la Comunidad Azure, visite la [página de soporte técnico](https://azure.microsoft.com/support/forums/) de la Comunidad Azure.
--  [Documentación de Azure](/azure/).
--  ¿Necesita ayuda con las ventas, las suscripciones, las cuentas y la facturación para suscripciones de Visual Studio?  Póngase en contacto con el [soporte técnico de suscripciones](https://visualstudio.microsoft.com/subscriptions/support/) de Visual Studio.
--  ¿Tiene alguna pregunta sobre el IDE de Visual Studio, Azure DevOps Services u otros productos o servicios de Visual Studio?  Visite el [soporte técnico de Visual Studio](https://visualstudio.microsoft.com/support/).
+- Para otros recursos de la Comunidad Azure, visite la [página de soporte técnico](https://azure.microsoft.com/support/forums/) de la Comunidad Azure.
+- [Documentación de Azure](/azure/).
+- ¿Necesita ayuda con las ventas, las suscripciones, las cuentas y la facturación para suscripciones de Visual Studio?  Póngase en contacto con el [soporte técnico de suscripciones](https://visualstudio.microsoft.com/subscriptions/support/) de Visual Studio.
+- ¿Tiene alguna pregunta sobre el IDE de Visual Studio, Azure DevOps Services u otros productos o servicios de Visual Studio?  Visite el [soporte técnico de Visual Studio](https://visualstudio.microsoft.com/support/).
+
+## <a name="next-steps"></a>Pasos siguientes
+¿Sabía que muchas de las suscripciones de Visual Studio incluyen créditos de Azure?  Descubra cómo [activar](vs-azure.md) los suyos.

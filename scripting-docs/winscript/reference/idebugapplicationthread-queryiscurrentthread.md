@@ -1,5 +1,5 @@
 ---
-title: IDebugApplicationThread::QueryIsCurrentThread | Microsoft Docs
+title: 'Idebugapplicationthread (:: QueryIsCurrentThread | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 7d8871d197d662d179fa4d1ed8d420c48ecc5ab3
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 189de2448d808b777a21b9353a7adc9f6e3dde24
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58154772"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72574546"
 ---
 # <a name="idebugapplicationthreadqueryiscurrentthread"></a>IDebugApplicationThread::QueryIsCurrentThread
-Determina si este subproceso es el subproceso actualmente en ejecución.  
+Determina si este subproceso es el subproceso que se está ejecutando actualmente.  
   
 ## <a name="syntax"></a>Sintaxis  
   
@@ -41,11 +41,11 @@ HRESULT QueryIsCurrentThread();
   
 |Valor|Descripción|  
 |-----------|-----------------|  
-|`S_OK`|El método se realizó correctamente y este es el subproceso actualmente en ejecución.|  
-|`S_FALSE`|Esto no es el subproceso actualmente en ejecución.|  
+|`S_OK`|El método se realizó correctamente y este es el subproceso que se está ejecutando actualmente.|  
+|`S_FALSE`|Este no es el subproceso que se está ejecutando actualmente.|  
   
 ## <a name="remarks"></a>Comentarios  
- Este método determina si este subproceso es el que se está ejecutando.  
+ Este método determina si este subproceso es el subproceso que se está ejecutando actualmente.  
   
 ## <a name="see-also"></a>Vea también  
  [IDebugApplicationThread (Interfaz)](../../winscript/reference/idebugapplicationthread-interface.md)

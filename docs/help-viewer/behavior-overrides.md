@@ -3,17 +3,17 @@ title: Invalidaciones de Help Content Manager
 ms.date: 11/01/2017
 ms.topic: conceptual
 ms.assetid: 95fe6396-276b-4ee5-b03d-faacec42765f
-author: gewarren
-ms.author: gewarren
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4b881ee7a782d7c5f90a447c1719bb88afd1d332
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: 5c03d631be1bc4a38e514e1019fa230775427a53
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56314603"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67825096"
 ---
 # <a name="help-content-manager-overrides"></a>Invalidaciones de Help Content Manager
 
@@ -31,7 +31,7 @@ Puede modificar el comportamiento predeterminado del Visor de Ayuda y las caract
 
 ### <a name="registry-key-values"></a>Valores de la clave del Registro
 
-|Valor de la clave del Registro|Tipo|Datos|Descripción|
+|Valor de la clave del Registro|Tipo|Datos|DESCRIPCIÓN|
 |------------------|----|----|-----------|
 |NewContentAndUpdateService|cadena|\<dirección URL HTTP del punto de conexión de servicio\>|Define un punto de conexión de servicio único.|
 |UseOnlineHelp|dword|`0` para especificar Ayuda local, `1` para especificar Ayuda en línea|Define el valor predeterminado de la Ayuda en línea o sin conexión.|

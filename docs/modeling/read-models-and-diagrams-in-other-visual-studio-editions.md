@@ -5,45 +5,45 @@ ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - models, versions of Visual Studio
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7d8366c0f87830a77f550dabbce2e8f875171418
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 33ae88358d77ac7c70a74cecb879eef3c4ca8b8c
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60087383"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72658113"
 ---
 # <a name="read-models-and-diagrams-in-other-visual-studio-editions"></a>Leer modelos y diagramas en otras ediciones de Visual Studio
 
 Al abrir un modelo en una versión de Visual Studio que no es compatible con la creación de modelos, el modelo se abre en modo de solo lectura. En este modo puede cambiar el diseño de los diagramas pero no se puede cambiar el modelo.
 
-Para ver qué versiones de Visual Studio admite la creación de modelos, vea [compatibilidad con la versión de arquitectura y las herramientas de modelado](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
+Para ver qué versiones de Visual Studio admiten la creación de modelos, vea [compatibilidad de versiones con las herramientas de arquitectura y modelado](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
 
 ## <a name="obtaining-access-to-a-model-and-diagrams"></a>Acceder a un modelo y a diagramas
 
-Para leer un diagrama de dependencia, debe usar Visual Studio para abrir el proyecto de modelado y, a continuación, abra el diagrama dentro de él.
+Para leer un diagrama de dependencia, primero debe usar Visual Studio para abrir el proyecto de modelado y, a continuación, abrir el diagrama en él.
 
-Por este motivo, si desea leer un diagrama de dependencia, también debe tener acceso al proyecto de modelado en el que se creó. Para ello, acceso a los proyectos de control de código fuente, o mediante la obtención de una copia de los archivos del proyecto.
+Por esta razón, si desea leer un diagrama de dependencia, también debe tener acceso al proyecto de modelado en el que se creó. Para ello, puede obtener acceso al proyecto desde el control de código fuente o obtener una copia de los archivos del proyecto.
 
 > [!NOTE]
 > Esto no se aplica a los mapas de código ni a los diagramas de clases .NET generados a partir del código. Esos diagramas pueden verse sin necesidad de un proyecto de modelado.
 
-Para leer un diagrama de dependencia, el conjunto mínimo de archivos que necesita es como sigue:
+Para leer un diagrama de dependencia, el conjunto mínimo de archivos que necesita es el siguiente:
 
-- Los dos archivos de diagrama que desea leer, por ejemplo, de diagrama **MyDiagram.classdiagram y MyDiagram.classdiagram.layout**.
+- Los dos archivos de diagrama del diagrama que desea leer, por ejemplo, **diagram. classdiagram y diagram. classdiagram. layout**.
 
     > [!NOTE]
-    > Para diagramas de dependencia, también debe tener el archivo que se denomina _MyDiagram_**. layerdiagram.suppressions**.
+    > En el caso de los diagramas de dependencia, también debe tener el archivo denominado _Diagram_ **. layerdiagram. suppresss**.
 
-- El modelado del archivo de proyecto (**MyModel.modelproj**)
+- Archivo del proyecto de modelado (**modelproj**)
 
-- El archivo de modelo raíz (**ModelDefinition\MyModel. UML**)
+- El archivo de modelo raíz (**ModelDefinition\MyModel.UML**)
 
-- Los archivos del paquete para los paquetes que se hace referencia en el diagrama (**ModelDefinition\MyPackage.uml**)
+- Los archivos de paquete de cualquier paquete al que se hace referencia en el diagrama (**ModelDefinition\MyPackage.UML**)
 
 ## <a name="changes-that-you-can-make-in-read-only-mode"></a>Cambios que puede realizar en modo de solo lectura
 
@@ -53,7 +53,7 @@ Si abre un modelo y sus diagramas en una versión de Visual Studio que no es com
 
 - Expandir y contraer formas.
 
-Puede guardar estos cambios. Si desea que los cambios sea visible para otros usuarios, debe enviar al menos la actualización **.layout** archivos.
+Puede guardar estos cambios. Si desea que los cambios sean visibles para otros usuarios, debe enviar al menos los archivos **. layout** actualizados.
 
 ## <a name="see-also"></a>Vea también
 

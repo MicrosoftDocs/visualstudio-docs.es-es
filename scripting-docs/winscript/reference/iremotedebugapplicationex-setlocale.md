@@ -1,5 +1,5 @@
 ---
-title: IRemoteDebugApplicationEx:SetLocale | Microsoft Docs
+title: 'Iremotedebugapplicationex (: SetLocale | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 5
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 23bcbd089803c2a2c61af688ec58e289c9a77616
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 2cc67e0ebd9ee2584985fa7d14073ba2694cbfa5
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58155883"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72575301"
 ---
 # <a name="iremotedebugapplicationexsetlocale"></a>IRemoteDebugApplicationEx:SetLocale
-Establece el idioma para la localización del depurador.  
+Establece el idioma de la localización del depurador.  
   
 ## <a name="syntax"></a>Sintaxis  
   
@@ -37,7 +37,7 @@ HRESULT SetLocale(
   
 #### <a name="parameters"></a>Parámetros  
  `dwLangID`  
- [in] El identificador de idioma.  
+ de IDENTIFICADOR de idioma.  
   
 ## <a name="return-value"></a>Valor devuelto  
  El método devuelve un objeto `HRESULT`. Entre los valores posibles se incluyen los que se indican en la tabla siguiente, entre otros.  

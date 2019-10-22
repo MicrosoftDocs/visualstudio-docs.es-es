@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProgramProvider2::GetProviderProgramNode
 ms.assetid: e62e8e83-acbb-4c52-aedf-ffbd4670db29
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c468745418c01b638cbc407342820b9127b460b6
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 7629a60f3393f996a456c907ec150be202a0bb94
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56705247"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66349820"
 ---
 # <a name="idebugprogramprovider2getproviderprogramnode"></a>IDebugProgramProvider2::GetProviderProgramNode
 Recupera el nodo de programa para un programa específico.
@@ -46,10 +49,9 @@ int GetProviderProgramNode(
 );
 ```
 
-#### <a name="parameters"></a>Parámetros
- `Flags`
-
- [in] Una combinación de marcas de la [PROVIDER_FLAGS](../../../extensibility/debugger/reference/provider-flags.md) enumeración. Las marcas siguientes son típicas para esta llamada:
+## <a name="parameters"></a>Parámetros
+`Flags`\
+[in] Una combinación de marcas de la [PROVIDER_FLAGS](../../../extensibility/debugger/reference/provider-flags.md) enumeración. Las marcas siguientes son típicas para esta llamada:
 
 |Marcar|Descripción|
 |----------|-----------------|
@@ -57,25 +59,20 @@ int GetProviderProgramNode(
 |`PFLAG_DEBUGGEE`|Autor de la llamada se está depurando (información adicional sobre el cálculo de referencias se devolverán para cada nodo).|
 |`PFLAG_ATTACHED_TO_DEBUGGEE`|Autor de llamada se adjunta a pero no se inicia el depurador.|
 
- `pPort`
+`pPort`\
+[in] El puerto que el proceso de llamada se ejecuta en.
 
- [in] El puerto que el proceso de llamada se ejecuta en.
+`processId`\
+[in] Un [AD_PROCESS_ID](../../../extensibility/debugger/reference/ad-process-id.md) estructura que contiene el identificador del proceso que contiene el programa en cuestión.
 
- `processId`
+`guidEngine`\
+[in] GUID del motor de depuración que el programa está asociado a (si existe).
 
- [in] Un [AD_PROCESS_ID](../../../extensibility/debugger/reference/ad-process-id.md) estructura que contiene el identificador del proceso que contiene el programa en cuestión.
+`programId`\
+[in] Id. del programa para la que se va a obtener el nodo de programa.
 
- `guidEngine`
-
- [in] GUID del motor de depuración que el programa está asociado a (si existe).
-
- `programId`
-
- [in] Id. del programa para la que se va a obtener el nodo de programa.
-
- `ppProgramNode`
-
- [out] Un [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md) objeto que representa el nodo de programa solicitado.
+`ppProgramNode`\
+[out] Un [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md) objeto que representa el nodo de programa solicitado.
 
 ## <a name="return-value"></a>Valor devuelto
  Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.

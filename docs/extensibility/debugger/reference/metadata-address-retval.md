@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - METADATA_ADDRESS_RETVAL structure
 ms.assetid: 5b0ec0fb-84b3-4ce7-8e24-becf3d881d7d
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 63f3b7363a6852dd54033d89828f8af9b0eb76fa
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 2ff96d5ca9d292d9e2952b9a2e5e1f628b54d43b
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56707814"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66746350"
 ---
 # <a name="metadataaddressretval"></a>METADATA_ADDRESS_RETVAL
 Esta estructura representa un valor devuelto de un método o función.
@@ -42,14 +45,18 @@ public struct METADATA_ADDRESS_RETVAL {
 }
 ```
 
-## <a name="terms"></a>Términos
- El identificador del método para que es el valor devuelto tokMethod.
+## <a name="members"></a>Miembros
+ `tokMethod`\
+ El identificador del método que este valor devuelto es para.
 
- dwCorType el tipo base del valor devuelto. Se trata de un valor de la `CorElementType` enumeración definida en el [!INCLUDE[dnprdnshort](../../../code-quality/includes/dnprdnshort_md.md)] archivo corhdr.h SDK.
+ `dwCorType`\
+ El tipo base del valor devuelto. Se trata de un valor de la `CorElementType` enumeración definida en el archivo corhdr.h de SDK de .NET Framework.
 
- El tamaño de la firma del valor devuelto de dwSigSize (tal como está almacenado en `rgSig`).
+ `dwSigSize`\
+ El tamaño de la firma del valor devuelto (tal como está almacenado en `rgSig`).
 
- rgSig una matriz de bytes que forman la firma del valor devuelto.
+ `rgSig`\
+ Una matriz de bytes que forman la firma del valor devuelto.
 
 ## <a name="remarks"></a>Comentarios
  Esta estructura es parte de la unión en el [DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md) estructura cuando la `dwKind` campo de la `DEBUG_ADDRESS_UNION` estructura está establecida en `ADDRESS_KIND_RETVAL` (un valor de la [ADDRESS_KIND](../../../extensibility/debugger/reference/address-kind.md) enumeración).

@@ -1,5 +1,5 @@
 ---
-title: Depurar clientes y servidores mediante la depuración RPC COM | Microsoft Docs
+title: Depurar clientes y servidores COM mediante la depuración RPC | Microsoft Docs
 ms.custom: seodec18
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -26,12 +26,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a4cd55ff42bc4ba81df881045d06362b469f009b
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 2cca09e917cddffd0d1d844db14ae8a4ca4f0088
+ms.sourcegitcommit: ea182703e922c74725045afc251bcebac305068a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60112707"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71211077"
 ---
 # <a name="how-to-debug-com-clients-and-servers-using-rpc-debugging"></a>Procedimiento Depurar clientes y servidores COM mediante la depuración RPC
 Puede utilizar la depuración RPC (llamada a procedimiento remoto) para depurar aplicaciones COM cliente-servidor. Debe habilitar la depuración RPC para poder utilizarla. Con la depuración RPC habilitada, cuando entra en la llamada al servidor desde el cliente, el depurador se adjunta al servidor y le permite depurar el código. Una vez asociado el depurador, podrá utilizar todas sus características con los procesos del servidor y del cliente.
@@ -47,12 +47,12 @@ Puede utilizar la depuración RPC (llamada a procedimiento remoto) para depurar 
 4. Active la casilla **Depuración RPC**.
 
     > [!NOTE]
-    >  Para depurar las llamadas RPC, debe tener privilegios de Administrador o Usuario avanzado.
+    > Para depurar las llamadas RPC, debe tener privilegios de Administrador o Usuario avanzado.
 
     > [!NOTE]
-    >  La introducción paso a paso de las RPC en un servidor remoto donde se ejecuta Microsoft Windows Vista sólo funcionará si se asocia un depurador nativo al servidor remoto. De lo contrario, se producirá un error en la llamada RPC sin que se muestre ningún mensaje de error. Si no, se completará la llamada RPC, pero no funcionará la ejecución paso a paso en la llamada RPC.
+    > La introducción paso a paso de las RPC en un servidor remoto donde se ejecuta Microsoft Windows Vista sólo funcionará si se asocia un depurador nativo al servidor remoto. De lo contrario, se producirá un error en la llamada RPC sin que se muestre ningún mensaje de error. Si no, se completará la llamada RPC, pero no funcionará la ejecución paso a paso en la llamada RPC.
 
 ## <a name="see-also"></a>Vea también
 - [Depuración de servidores y contenedores COM](../debugger/com-server-and-container-debugging.md)
-- [Depurar en Visual Studio](../debugger/index.md)
+- [Depurar en Visual Studio](../debugger/index.yml)
 - [Primer vistazo al depurador](../debugger/debugger-feature-tour.md)

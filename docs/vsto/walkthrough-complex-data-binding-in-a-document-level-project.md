@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: aabd45871e55fd22b9b9e35597555fd13b15d6eb
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 026dc77573bbedce7882f9b3cceab049ef1066e4
+ms.sourcegitcommit: 7fbfb2a1d43ce72545096c635df2b04496b0be71
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60052537"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "67692343"
 ---
 # <a name="walkthrough-complex-data-binding-in-a-document-level-project"></a>Tutorial: Enlace de datos complejo en un proyecto de nivel de documento
   Este tutorial muestra los aspectos básicos del enlace de datos complejo en un proyecto de nivel de documento. Puede enlazar varias celdas en una hoja de cálculo de Microsoft Office Excel a los campos de la base de datos Northwind de SQL Server.
@@ -174,7 +174,7 @@ ms.locfileid: "60052537"
 
 1. Seleccione una celda dentro del objeto de lista.
 
-    Aparece una nueva fila en la parte inferior de la lista, con un asterisco (**\\***) en la primera celda de la nueva fila.
+    Aparece una nueva fila en la parte inferior de la lista, con un asterisco ( **\*** ) en la primera celda de la nueva fila.
 
 2. Agregue la siguiente información en la fila vacía.
 
@@ -210,7 +210,7 @@ ms.locfileid: "60052537"
 
 4. Haga clic en el botón de flecha en el **título** nuevo encabezado de columna.
 
-5. Haga clic en **(All)**.
+5. Haga clic en **(All)** .
 
      El filtrado se quita y se mostrarán todas las filas.
 

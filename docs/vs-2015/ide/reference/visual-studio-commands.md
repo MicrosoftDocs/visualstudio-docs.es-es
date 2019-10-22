@@ -1,5 +1,5 @@
 ---
-title: Comandos | Documentos de Microsoft
+title: Comandos | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
@@ -10,15 +10,15 @@ helpviewer_keywords:
 - command syntax
 ms.assetid: 76ffa394-ee89-4629-aba9-1a62b72e6cc1
 caps.latest.revision: 23
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 10ce4bd59567d7d055dd107dd05358d994d22c36
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: b6ad913e418f2f13bd196925b3c085b9d5c7efca
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59662571"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72667448"
 ---
 # <a name="visual-studio-commands"></a>Comandos de Visual Studio
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -72,10 +72,10 @@ Los comandos de Visual Studio le permiten invocar un comando desde la ventana **
 |[Establecer base](../../ide/reference/set-radix-command.md)|Determina el número de bytes que se van a ver.|
 |[Shell](../../ide/reference/shell-command.md)|Inicia programas desde [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] como si el comando se hubiera ejecutado desde el símbolo del sistema.|
 |[ShowWebBrowser (Comando)](../../ide/reference/showwebbrowser-command.md)|Muestra la dirección URL especificada en una ventana del explorador web dentro o fuera del entorno de desarrollo integrado (IDE).|
-|[Iniciar](../../ide/reference/start-command.md)|Inicia el proceso de depuración y le permite especificar cómo se deben tratar los errores.|
-|[Ruta de acceso](../../ide/reference/symbol-path-command.md)|Establece la lista de directorios para que el depurador busque símbolos.|
+|[Inicio](../../ide/reference/start-command.md)|Inicia el proceso de depuración y le permite especificar cómo se deben tratar los errores.|
+|[Path](../../ide/reference/symbol-path-command.md)|Establece la lista de directorios para que el depurador busque símbolos.|
 |[Alternar punto de interrupción](../../ide/reference/toggle-breakpoint-command.md)|Activa o desactiva el punto de interrupción, en función del estado actual, en la ubicación actual del archivo.|
 |[Inspección (Comando)](../../ide/reference/watch-command.md)|Crea y abre una instancia especificada de una ventana **Inspección** .|
 
 ## <a name="see-also"></a>Vea también
- [Ventana de comandos](../../ide/reference/command-window.md) [cuadro Buscar/comando](../../ide/find-command-box.md) [alias de comandos de Visual Studio](../../ide/reference/visual-studio-command-aliases.md)
+ Cuadro de comandos de la [ventana comandos](../../ide/reference/command-window.md) [Buscar/comando](../../ide/find-command-box.md) comandos de [Visual Studio](../../ide/reference/visual-studio-command-aliases.md)

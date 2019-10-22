@@ -1,5 +1,5 @@
 ---
-title: IDebugDocumentContext::GetDocument | Microsoft Docs
+title: 'Idebugdocumentcontext (:: GetDocument | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,12 +17,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 9bfcc5b3e2d2e197619f9bc4ec19b55c9eaf1d2a
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: bdf4c52d1a866df12a129f1d4f2e864068c876fa
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58144334"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72577082"
 ---
 # <a name="idebugdocumentcontextgetdocument"></a>IDebugDocumentContext::GetDocument
 Devuelve el documento que contiene este contexto.  
@@ -37,7 +37,7 @@ HRESULT GetDocument(
   
 #### <a name="parameters"></a>Parámetros  
  `ppsd`  
- [out] El documento que contiene este contexto.  
+ enuncia Documento que contiene este contexto.  
   
 ## <a name="return-value"></a>Valor devuelto  
  El método devuelve un objeto `HRESULT`. Entre los valores posibles se incluyen los que se indican en la tabla siguiente, entre otros.  
@@ -47,7 +47,7 @@ HRESULT GetDocument(
 |`S_OK`|El método se realizó correctamente.|  
   
 ## <a name="remarks"></a>Comentarios  
- El `GetDocument` método devuelve el documento que contiene este contexto.  
+ El método `GetDocument` devuelve el documento que contiene este contexto.  
   
 ## <a name="see-also"></a>Vea también  
  [IDebugDocumentContext (Interfaz)](../../winscript/reference/idebugdocumentcontext-interface.md)

@@ -15,11 +15,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: f1f6cf340d7c0ef87f34fc908e075f36eed2962c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60050951"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68146121"
 ---
 # <a name="how-to-customize-report-view-columns"></a>Procedimiento Personalizar las columnas de la vista de informes
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -58,4 +58,4 @@ Las herramientas de rendimiento de Visual Studio Team System Development Edition
   
 4. Haga clic en el botón de flecha para reordenar las columnas.  
   
-5. Haga clic en **Aceptar**.
+5. Haga clic en **OK**.

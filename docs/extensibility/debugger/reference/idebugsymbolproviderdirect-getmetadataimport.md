@@ -6,17 +6,20 @@ helpviewer_keywords:
 - GetMetaDataImport
 - IDebugSymbolProviderDirect::GetMetaDataImport
 ms.assetid: b51a492c-af00-4b08-93fb-6c19ee4916aa
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a68e6e0a8153aa3b1c97e4bc1f2c401e9ccbe550
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 4a2cd79581487e7e407cc409c4b8496abc53bfa7
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56695081"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66347299"
 ---
 # <a name="idebugsymbolproviderdirectgetmetadataimport"></a>IDebugSymbolProviderDirect::GetMetaDataImport
 Recupera la información de la importación de metadatos.
@@ -39,18 +42,15 @@ int GetMetaDataImport (
 );
 ```
 
-#### <a name="parameters"></a>Parámetros
- `guid`
+## <a name="parameters"></a>Parámetros
+`guid`\
+[in] Identificador único para el módulo.
 
- [in] Identificador único para el módulo.
+`appID`\
+[in] Identificador del dominio de aplicación.
 
- `appID`
-
- [in] Identificador del dominio de aplicación.
-
- `ppImport`
-
- [out] Devuelve un objeto que contiene los metadatos de importa la información.
+`ppImport`\
+[out] Devuelve un objeto que contiene los metadatos de importa la información.
 
 ## <a name="return-value"></a>Valor devuelto
  Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.

@@ -1,5 +1,5 @@
 ---
-title: IRemoteDebugApplicationEvents::OnCreateThread | Microsoft Docs
+title: 'Iremotedebugapplicationevents (:: OnCreateThread | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 64317666fe5c449207c2eedac550ca6a1effc1ab
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: a9ee746e2e5217a7bec8807d7dee1e7ac122c2b8
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58154327"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72575613"
 ---
 # <a name="iremotedebugapplicationeventsoncreatethread"></a>IRemoteDebugApplicationEvents::OnCreateThread
-Controla un evento de subproceso de creación.  
+Controla un evento Create Thread.  
   
 ## <a name="syntax"></a>Sintaxis  
   
@@ -37,7 +37,7 @@ HRESULT OnCreateThread(
   
 #### <a name="parameters"></a>Parámetros  
  `prdat`  
- [in] El subproceso recién creado.  
+ de Subproceso recién creado.  
   
 ## <a name="return-value"></a>Valor devuelto  
  El método devuelve un objeto `HRESULT`. Entre los valores posibles se incluyen los que se indican en la tabla siguiente, entre otros.  
@@ -47,7 +47,7 @@ HRESULT OnCreateThread(
 |`S_OK`|El método se realizó correctamente.|  
   
 ## <a name="remarks"></a>Comentarios  
- Este método controla el evento de subproceso de creación.  
+ Este método controla el evento Create Thread.  
   
 ## <a name="see-also"></a>Vea también  
  [IRemoteDebugApplicationEvents (Interfaz)](../../winscript/reference/iremotedebugapplicationevents-interface.md)

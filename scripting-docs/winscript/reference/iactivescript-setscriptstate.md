@@ -1,5 +1,5 @@
 ---
-title: IActiveScript::SetScriptState | Microsoft Docs
+title: 'IActiveScript:: SetScriptState | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 6
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 16a13b545ddd482f8aa143d289d46447370e23ac
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: ea947e00ffd5a3498261f4a3a8acd4791e8ace60
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58149515"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72577989"
 ---
 # <a name="iactivescriptsetscriptstate"></a>IActiveScript::SetScriptState
-Coloca el motor de scripting en el estado especificado. Este método se pueda llamar desde subprocesos no son de base sin resultante en una llamada que no sea de base a los objetos de host o a la [IActiveScriptSite](../../winscript/reference/iactivescriptsite.md) interfaz.  
+Coloca el motor de scripting en el estado especificado. Se puede llamar a este método desde subprocesos no base sin tener como resultado una llamada no base a objetos host o a la interfaz [IActiveScriptSite](../../winscript/reference/iactivescriptsite.md) .  
   
 ## <a name="syntax"></a>Sintaxis  
   
@@ -37,25 +37,25 @@ HRESULT SetScriptState(
   
 #### <a name="parameters"></a>Parámetros  
  `ss`  
- [in] Establece el motor de scripting en el estado especificado. Puede ser uno de los valores definidos en el [SCRIPTSTATE (enumeración)](../../winscript/reference/scriptstate-enumeration.md) enumeración.  
+ de Establece el motor de scripting en el estado especificado. Puede ser uno de los valores definidos en la enumeración de [enumeración scriptstate (](../../winscript/reference/scriptstate-enumeration.md) .  
   
 ## <a name="return-value"></a>Valor devuelto  
- Devuelve uno de los siguientes valores:  
+ Devuelve uno de los valores siguientes:  
   
 |Valor devuelto|Significado|  
 |------------------|-------------|  
 |`S_OK`|Correcto.|  
-|`E_FAIL`|El motor de scripting no admite la transición al estado inicializado. El host debe descartar este motor de scripting y crear, inicializar y cargar un nuevo motor de scripting para lograr el mismo efecto.|  
-|`E_UNEXPECTED`|No se esperaba la llamada (por ejemplo, el motor de scripting no se ha cargado o inicializado) y, por tanto, no se pudo.|  
-|`OLESCRIPT_S_PENDING`|El método se puso en cola correctamente, pero aún no ha cambiado el estado. Cuando los cambios de estado, el sitio se volverá a llamar a través de la [IActiveScriptSite::OnStateChange](../../winscript/reference/iactivescriptsite-onstatechange.md) método.|  
-|`S_FALSE`|El método se realizó correctamente, pero la secuencia de comandos ya estaba en el estado especificado.|  
+|`E_FAIL`|El motor de scripting no admite la transición de vuelta al estado inicializado. El host debe descartar este motor de scripting y crear, inicializar y cargar un nuevo motor de scripting para lograr el mismo efecto.|  
+|`E_UNEXPECTED`|No se esperaba la llamada (por ejemplo, el motor de scripting aún no se ha cargado o inicializado) y, por tanto, se ha producido un error.|  
+|`OLESCRIPT_S_PENDING`|El método se puso en cola correctamente, pero el estado todavía no ha cambiado. Cuando el estado cambia, se volverá a llamar al sitio a través del método [IActiveScriptSite:: OnStateChange](../../winscript/reference/iactivescriptsite-onstatechange.md) .|  
+|`S_FALSE`|El método se realizó correctamente, pero el script ya estaba en el estado especificado.|  
   
 ## <a name="remarks"></a>Comentarios  
- Para obtener más información acerca de Estados del motor de scripting, vea la sección de Estados del motor de secuencia de comandos de [motores de scripts de Windows](../../winscript/windows-script-engines.md) .  
+ Para obtener más información acerca de los Estados del motor de scripting, consulte la sección Estados del motor de scripts de [Windows Script](../../winscript/windows-script-engines.md) engines.  
   
 ## <a name="see-also"></a>Vea también  
- [IActiveScript::Clone](../../winscript/reference/iactivescript-clone.md)   
- [IActiveScript::GetScriptDispatch](../../winscript/reference/iactivescript-getscriptdispatch.md)   
- [IActiveScript::InterruptScriptThread](../../winscript/reference/iactivescript-interruptscriptthread.md)   
- [IActiveScriptParse::ParseScriptText](../../winscript/reference/iactivescriptparse-parsescripttext.md)   
+ [IActiveScript:: Clone](../../winscript/reference/iactivescript-clone.md)    
+ [IActiveScript:: GetScriptDispatch](../../winscript/reference/iactivescript-getscriptdispatch.md)    
+ [IActiveScript:: InterruptScriptThread](../../winscript/reference/iactivescript-interruptscriptthread.md)    
+ [IActiveScriptParse::P arsescripttext](../../winscript/reference/iactivescriptparse-parsescripttext.md)    
  [IActiveScriptSite::GetItemInfo](../../winscript/reference/iactivescriptsite-getiteminfo.md)

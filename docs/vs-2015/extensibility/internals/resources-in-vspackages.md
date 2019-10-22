@@ -12,12 +12,12 @@ ms.assetid: cc8c17a6-b190-4856-b001-0c1104f104b2
 caps.latest.revision: 24
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 39a05e7d0538cd332bbeaf2cddc48d6b141f0452
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 90674d17cdc3fb8956fd6eedeb3acb27226620cb
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58999378"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65696088"
 ---
 # <a name="resources-in-vspackages"></a>Recursos de VSPackages
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -90,5 +90,5 @@ type="System.Resources.ResXFileRef,System.Windows.Forms">
 ## <a name="see-also"></a>Vea también  
  [VSPackages administrado](../../misc/managed-vspackages.md)   
  [Administración de VSPackages](../../extensibility/managing-vspackages.md)   
- [Recursos localizados en aplicaciones MFC: Archivos DLL satélite](http://msdn.microsoft.com/library/3a1100ae-a9c8-47b5-adbd-cbedef5992ef)   
+ [Recursos localizados en aplicaciones MFC: Archivos DLL satélite](https://msdn.microsoft.com/library/3a1100ae-a9c8-47b5-adbd-cbedef5992ef)   
  [VSPackages administrado](../../misc/managed-vspackages.md)

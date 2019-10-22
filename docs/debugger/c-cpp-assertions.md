@@ -1,5 +1,5 @@
 ---
-title: Las aserciones de C/C ++ | Microsoft Docs
+title: C/C++ aserciones | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -28,17 +28,17 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 8e2d416bd932f1334468bfb3d43e050b3e71d2ec
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 154abe3d73fa71ac897f0442697196cd859f32bd
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59653728"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72435893"
 ---
 # <a name="cc-assertions"></a>Aserciones de C/C++
 Una instrucción de aserción especifica una condición que se espera que sea cierta (valor true) en un punto del programa. Si esa condición no es "true", la aserción produce un error, la ejecución del programa se interrumpe y aparece el [cuadro de diálogo Error de aserción](../debugger/assertion-failed-dialog-box.md).
 
-Visual C++ admite instrucciones de aserción que se basan en los constructores siguientes:
+Visual Studio admite C++ instrucciones de aserción basadas en las siguientes construcciones:
 
 - Aserciones de MFC para programas.
 
@@ -90,7 +90,7 @@ Cuando agregue aserciones al código, asegúrese de que no producen efectos secu
 ASSERT(nM++ > 0); // Don't do this!
 ```
 
-Como la expresión `ASSERT` no se evalúa en la versión de lanzamiento del programa, `nM` tendrá valores diferentes en las versiones de depuración (Debug) y de versión (Release). Para evitar este problema en MFC, puede usar el [compruebe](/cpp/mfc/reference/diagnostic-services#verify) macro en lugar de `ASSERT`. `VERIFY` evalúa la expresión en todas las versiones pero no comprueba el resultado en la versión de lanzamiento.
+Como la expresión `ASSERT` no se evalúa en la versión de lanzamiento del programa, `nM` tendrá valores diferentes en las versiones de depuración (Debug) y de versión (Release). Para evitar este problema en MFC, puede usar la macro [Verify](/cpp/mfc/reference/diagnostic-services#verify) en lugar de `ASSERT`. `VERIFY` evalúa la expresión en todas las versiones pero no comprueba el resultado en la versión de lanzamiento.
 
 Tenga especial cuidado al utilizar llamadas a funciones en las instrucciones de aserción, ya que la evaluación de una función puede producir efectos laterales inesperados.
 
@@ -280,7 +280,7 @@ O bien, podría incluir una aserción de CRT como esta:
 _ASSERT(numMols >= 0);
 ```
 
-Estas instrucciones no hacen nada si el programa funciona correctamente. Si un error lógico hace `numMols` sea menor que cero, sin embargo, la aserción detiene la ejecución del programa y muestra el [cuadro de diálogo de error de aserción](../debugger/assertion-failed-dialog-box.md).
+Estas instrucciones no hacen nada si el programa funciona correctamente. Sin embargo, si un error lógico hace que `numMols` sea menor que cero, la aserción detiene la ejecución del programa y muestra el cuadro de [diálogo error de aserción](../debugger/assertion-failed-dialog-box.md).
 
 [En este tema](#BKMK_In_this_topic)
 
@@ -320,7 +320,7 @@ ASSERT(!myErr); -- MFC version
 _ASSERT(!myErr); -- CRT version
 ```
 
-Si el código de tratamiento del error funciona correctamente, el error debería recibir el tratamiento adecuado y `myErr` se debería restablecer a cero antes de alcanzar la aserción. Si `myErr` tiene otro valor, la aserción, produce un error, el programa se detiene y la [cuadro de diálogo de error de aserción](../debugger/assertion-failed-dialog-box.md) aparece.
+Si el código de tratamiento del error funciona correctamente, el error debería recibir el tratamiento adecuado y `myErr` se debería restablecer a cero antes de alcanzar la aserción. Si `myErr` tiene otro valor, se produce un error en la aserción, el programa se detiene y aparece el [cuadro de diálogo error de aserción](../debugger/assertion-failed-dialog-box.md) .
 
 No obstante, las instrucciones de aserción no son un sustituto del código de control de errores. El siguiente ejemplo muestra una instrucción de aserción que puede causar problemas en el código final de la versión de lanzamiento:
 

@@ -10,11 +10,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 8946d57b2aecaeef167579275ccedd6ce984e2f7
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54805450"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68200777"
 ---
 # <a name="collecting-detailed-timing-data-for-services-by-using-the-instrumentation-method-from-the-profiler-command-line"></a>Recopilar datos detallados de tiempo para servicios utilizando el método de instrumentación desde la línea de comandos del generador de perfiles
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,9 +25,9 @@ En esta sección, se describen los procedimientos y las opciones para recopilar 
   
 |Tarea|Contenido relacionado|  
 |----------|---------------------|  
-|**Generar perfiles de un servicio .NET**|-   [Cómo: Instrumentación de un servicio .NET y recopilar datos detallados de control de tiempo](../profiling/how-to-instrument-a-dotnet-service-and-collect-detailed-timing-data-by-using-the-profiler-command-line.md)|  
+|**Generar perfiles de un servicio .NET**|-   [Instrucciones: Instrumentación de un servicio .NET y recopilar datos detallados de control de tiempo](../profiling/how-to-instrument-a-dotnet-service-and-collect-detailed-timing-data-by-using-the-profiler-command-line.md)|  
 |**Agregar datos de interacción de capas**|-   [Recopilar datos de interacción de capas](../profiling/adding-tier-interaction-data-from-the-command-line.md)|  
-|**Generar perfiles de un servicio de C o C++**|-   [Cómo: Instrumentación de un servicio nativo y recopilar datos detallados de control de tiempo](../profiling/how-to-instrument-a-native-service-and-collect-detailed-timing-data-by-using-the-profiler-command-line.md)|  
+|**Generar perfiles de un servicio de C o C++**|-   [Instrucciones: Instrumentación de un servicio nativo y recopilar datos detallados de control de tiempo](../profiling/how-to-instrument-a-native-service-and-collect-detailed-timing-data-by-using-the-profiler-command-line.md)|  
   
 ## <a name="related-tasks"></a>Tareas relacionadas  
   

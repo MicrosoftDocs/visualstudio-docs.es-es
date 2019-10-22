@@ -12,11 +12,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 7b7b57dbf76eb5dd9eadb05eb5705cdffb76106b
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58150925"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62992990"
 ---
 # <a name="iactivescriptprofilercontrol3-interface"></a>IActiveScriptProfilerControl3 (Interfaz)
 Proporciona un método para enumerar los objetos del montón GC asociados con un motor de scripts.  

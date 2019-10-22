@@ -1,5 +1,5 @@
 ---
-title: 'CA2223: Los miembros deben diferenciarse por el tipo de valor devuelto más de | Documentos de Microsoft'
+title: 'CA2223: los miembros deben diferenciarse por algo más que el tipo de valor devuelto | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -12,15 +12,15 @@ helpviewer_keywords:
 - MembersShouldDifferByMoreThanReturnType
 ms.assetid: eb326d9f-50d9-48cb-84be-d41c84a8fe09
 caps.latest.revision: 16
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 6a460cd01d671d347e1cd126d009fe19e140cc69
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 1fab269e8f583f8b55f52eb70a5a813450f8a184
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58997409"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72658891"
 ---
 # <a name="ca2223-members-should-differ-by-more-than-return-type"></a>CA2223: Los miembros deben diferenciarse por algo más que por un tipo de valor devuelto
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,23 +29,23 @@ ms.locfileid: "58997409"
 |-|-|
 |TypeName|MembersShouldDifferByMoreThanReturnType|
 |Identificador de comprobación|CA2223|
-|Categoría|Microsoft.Usage|
+|Categoría|Microsoft. Usage|
 |Cambio problemático|Problemático|
 
 ## <a name="cause"></a>Motivo
- Dos miembros públicos o protegidos tienen firmas idénticas, salvo por el tipo de valor devuelto.
+ Dos miembros públicos o protegidos tienen firmas que son idénticas salvo el tipo de valor devuelto.
 
 ## <a name="rule-description"></a>Descripción de la regla
- Aunque common language runtime permite el uso de tipos de valor devuelto para diferenciar miembros idénticos, esta característica no está en Common Language Specification ni es una característica común de los lenguajes de programación. NET. Cuando los miembros difieren solo por tipo de valor devuelto, los desarrolladores y herramientas de desarrollo podrían no correctamente distinguir entre ellos.
+ Aunque el Common Language Runtime permite el uso de tipos de valor devuelto para diferenciar entre miembros idénticos, esta característica no está en el Common Language Specification, ni tampoco es una característica común de los lenguajes de programación de .NET. Cuando los miembros solo difieren en el tipo de valor devuelto, es posible que los desarrolladores y las herramientas de desarrollo no distingan correctamente entre ellos.
 
 ## <a name="how-to-fix-violations"></a>Cómo corregir infracciones
- Para corregir una infracción de esta regla, cambiar el diseño de los miembros, por lo que son únicos solo según sus nombres y tipos de parámetro, o no exponen a los miembros.
+ Para corregir una infracción de esta regla, cambie el diseño de los miembros para que sean únicos según sus nombres y tipos de parámetros, o no expongan los miembros.
 
 ## <a name="when-to-suppress-warnings"></a>Cuándo suprimir advertencias
  No suprima las advertencias de esta regla.
 
 ## <a name="example"></a>Ejemplo
- El ejemplo siguiente, en lenguaje intermedio de Microsoft (MSIL), muestra un tipo que infringe esta regla. Tenga en cuenta que no se infringe esta regla mediante el uso de C# o Visual Basic. NET.
+ En el ejemplo siguiente, en lenguaje intermedio de Microsoft (MSIL), se muestra un tipo que infringe esta regla. Tenga en cuenta que esta regla no se puede infringir mediante C# o Visual Basic .net.
 
 ```
 

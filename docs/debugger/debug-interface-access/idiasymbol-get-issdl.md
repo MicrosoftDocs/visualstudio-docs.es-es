@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 6904fc673462a79578549bcf22c2973a5c10c95c
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56630176"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "62836440"
 ---
 # <a name="idiasymbolgetissdl"></a>IDiaSymbol::get_isSdl
 Especifica si el módulo se compila con la opción /SDL.

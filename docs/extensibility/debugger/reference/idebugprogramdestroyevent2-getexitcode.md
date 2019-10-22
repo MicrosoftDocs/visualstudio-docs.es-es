@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProgramDestroyEvent2::GetExitCode
 ms.assetid: 7f540cf6-e2d1-42b0-913e-a26d654b7659
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d52a45d2d192a7ee9b3918a21a03250c5b0f0d0e
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 3adc3eb2598b46be186612892df4960bad39772e
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56684252"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66343595"
 ---
 # <a name="idebugprogramdestroyevent2getexitcode"></a>IDebugProgramDestroyEvent2::GetExitCode
 Obtiene el código de salida del programa.
@@ -36,10 +39,9 @@ int GetExitCode( 
 );
 ```
 
-#### <a name="parameters"></a>Parámetros
- `pdwExit`
-
- [out] Devuelve el código de salida del programa.
+## <a name="parameters"></a>Parámetros
+`pdwExit`\
+[out] Devuelve el código de salida del programa.
 
 ## <a name="return-value"></a>Valor devuelto
  Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.

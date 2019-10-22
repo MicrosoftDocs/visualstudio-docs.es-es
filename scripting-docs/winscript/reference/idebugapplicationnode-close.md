@@ -1,5 +1,5 @@
 ---
-title: IDebugApplicationNode::Close | Microsoft Docs
+title: 'Idebugapplicationnode (:: Close | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c634fd154c2470b1a154e5d1c9e97419a2e2e2b4
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 928dc94a5d700b2cad6a7acfb59a409240be7dc3
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58154837"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72574838"
 ---
 # <a name="idebugapplicationnodeclose"></a>IDebugApplicationNode::Close
-Hace que esta aplicación para liberar todas las referencias y entrar en un estado inactivo.  
+Hace que esta aplicación libere todas las referencias y especifique un estado inactivo.  
   
 ## <a name="syntax"></a>Sintaxis  
   

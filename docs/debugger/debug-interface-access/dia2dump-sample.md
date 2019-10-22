@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3f5b353986cf77c554b277975fabb1cb755faba3
-ms.sourcegitcommit: cdcbf254db737d42275e95de4ffc4f8c14e87e00
-ms.translationtype: MTE95
+ms.openlocfilehash: 1c8b92ae2f607ae449b7b4392fc3638fcdcb6a80
+ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57428549"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "66715346"
 ---
 # <a name="dia2dump-sample"></a>Ejemplo Dia2dump
 
@@ -42,9 +42,9 @@ De forma predeterminada, el directorio de instalación es un directorio protegid
 
 1. En **el Explorador de soluciones**, seleccione el proyecto de Dia2Dump (no la solución).
 
-1. Abra el cuadro de diálogo **Páginas de propiedades** del proyecto. Para obtener más información, vea [Trabajar con propiedades del proyecto](/cpp/ide/working-with-project-properties).
+1. Abra el cuadro de diálogo **Páginas de propiedades** del proyecto. Para obtener más información, vea [Trabajar con propiedades del proyecto](/cpp/build/working-with-project-properties).
 
-1. Abra el **propiedades de configuración** > **C o C++** > **General** página de propiedades.
+1. Abra el **propiedades de configuración** > **C o C++**  > **General** página de propiedades.
 
 1. En el **directorios de inclusión adicionales** propiedad, elija el control de lista desplegable y luego elija **editar**.
 

@@ -1,20 +1,21 @@
 ---
-title: Actualizar proyectos personalizados y plantillas de elemento para Visual Studio 2017 | Documentos de Microsoft
+title: Actualizar las plantillas de proyecto y elemento personalizadas para Visual Studio 2017
+titleSuffix: ''
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: ad02477b-e101-4f32-aeb7-292bf95d5c2f
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
 monikerRange: vs-2017
-ms.openlocfilehash: 7c50bb7bf6c61a8061b3817c53027a3dd6e5b29f
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: d375dfc4a53015f57546f7cbfcc8b940fa81bd0b
+ms.sourcegitcommit: 74c5360186731de07828764eb32ea1033a8c2275
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60102632"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67559756"
 ---
 # <a name="upgrade-custom-project-and-item-templates-for-visual-studio-2017"></a>Actualizar proyectos personalizados y plantillas de elemento para Visual Studio 2017
 
@@ -26,7 +27,7 @@ Si desea crear una plantilla de proyecto o elemento como parte de una extensión
 
 ## <a name="template-scanning"></a>Plantilla de análisis
 
-En versiones anteriores de Visual Studio, **devenv /setup** o **devenv /installvstemplates** examina el disco local para buscar plantillas de proyecto y elemento. A partir de Visual Studio 2017, se realiza solo para la ubicación de nivel de usuario. La ubicación de nivel de usuario predeterminada es **%USERPROFILE%\Documents\\< versión de Visual Studio\>\Templates\\**. Esta ubicación se utiliza para plantillas generadas por la **proyecto** > **exportar plantillas...**  comando, si el **importar la plantilla automáticamente en Visual Studio** está seleccionada en el asistente.
+En versiones anteriores de Visual Studio, **devenv /setup** o **devenv /installvstemplates** examina el disco local para buscar plantillas de proyecto y elemento. A partir de Visual Studio 2017, se realiza solo para la ubicación de nivel de usuario. La ubicación de nivel de usuario predeterminada es **%USERPROFILE%\Documents\\< versión de Visual Studio\>\Templates\\** . Esta ubicación se utiliza para plantillas generadas por la **proyecto** > **exportar plantillas...**  comando, si el **importar la plantilla automáticamente en Visual Studio** está seleccionada en el asistente.
 
 Para otras ubicaciones (no de usuario), debe incluir un archivo manifest(.vstman) que especifica la ubicación y otras características de la plantilla. Se genera el archivo vstman junto con el archivo .vstemplate que se usa para las plantillas. Si instala la extensión con un VSIX, puede hacerlo al volver a compilar la extensión en Visual Studio 2017. Pero si usa un archivo .msi, deberá realizar los cambios manualmente. Para obtener una lista de lo que necesita hacer para que estos cambios, consulte **actualizaciones para las extensiones se instalan con una. MSI** más adelante en esta página.
 
@@ -34,7 +35,7 @@ Para otras ubicaciones (no de usuario), debe incluir un archivo manifest(.vstman
 
 1. Abra la solución en Visual Studio 2017. Se le pedirá que actualice el código. Haga clic en **Aceptar**.
 
-2. Una vez finalizada la actualización, deberá cambiar la versión de destino de la instalación. En el proyecto VSIX, abra el archivo source.extension.vsixmanifest y seleccione el **destinos de instalación** ficha. Si el **intervalo de versiones** campo es **[14.0]**, haga clic en **editar** y cámbielo para incluir Visual Studio 2017. Por ejemplo, puede establecer en **[14.0,15.0]** para instalar la extensión para Visual Studio 2015 o Visual Studio 2017, o para **[15.0]** para instalarlo solo Visual Studio 2017.
+2. Una vez finalizada la actualización, deberá cambiar la versión de destino de la instalación. En el proyecto VSIX, abra el archivo source.extension.vsixmanifest y seleccione el **destinos de instalación** ficha. Si el **intervalo de versiones** campo es **[14.0]** , haga clic en **editar** y cámbielo para incluir Visual Studio 2017. Por ejemplo, puede establecer en **[14.0,15.0]** para instalar la extensión para Visual Studio 2015 o Visual Studio 2017, o para **[15.0]** para instalarlo solo Visual Studio 2017.
 
 3. Vuelva a compilar el código.
 
@@ -53,7 +54,7 @@ Para otras ubicaciones (no de usuario), debe incluir un archivo manifest(.vstman
     3. Vuelva a abrir Visual Studio. Debería encontrar una plantilla en la ubicación esperada.
 
     > [!NOTE]
-    >  Las plantillas de proyecto de extensibilidad de Visual Studio no están disponibles cuando la clave del registro está presente. Debe eliminar la clave del registro (y vuelva a ejecutar **devenv /installvstemplates**) para usarlos.
+    > Las plantillas de proyecto de extensibilidad de Visual Studio no están disponibles cuando la clave del registro está presente. Debe eliminar la clave del registro (y vuelva a ejecutar **devenv /installvstemplates**) para usarlos.
 
 ## <a name="other-recommendations-for-deploying-project-and-item-templates"></a>Otras recomendaciones para la implementación de plantillas de proyecto y elemento
 
@@ -179,9 +180,9 @@ Se muestran los puntos de diferencia entre las versiones de Visual Studio 2017 d
 
 Algunas extensiones basadas en MSI implementación plantillas en las ubicaciones de plantillas comunes, como los directorios siguientes:
 
-- **\<Directorio de instalación de Visual Studio > \Common7\IDE\\< ProjectTemplates/ItemTemplates >**
+- **\<Directorio de instalación de Visual Studio > \Common7\IDE\\< ProjectTemplates/ItemTemplates\>**
 
-- **\<Directorio de instalación de Visual Studio > \common7\ide\extensions\\\< ExtensionName\>\\< proyecto/ItemTemplates >**
+- **\<Directorio de instalación de Visual Studio > \common7\ide\extensions\\\< ExtensionName\>\\< proyecto/ItemTemplates\>**
 
 Si la extensión lleva a cabo una implementación basada en MSI, deberá generar el manifiesto de plantilla manualmente y asegúrese de que se incluye en la instalación de la extensión. Comparar los ejemplos de vstman enumerados anteriormente y el [referencia de esquema de manifiesto de Visual Studio plantilla](../extensibility/visual-studio-template-manifest-schema-reference.md).
 

@@ -11,32 +11,32 @@ dev_langs:
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: d9c84e72551911135550c43da2b99ecb1357f9b6
-ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
+ms.openlocfilehash: 690ffff0aa31b90cea58997c982406a900299550
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "59365735"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67826161"
 ---
 # <a name="welcome-to-the-visual-studio-ide--python"></a>Bienvenida al IDE de Visual Studio | Python
 
 El *entorno de desarrollo integrado* de Visual Studio es un panel de inicio creativo para Python (y otros lenguajes) que se puede usar para editar, depurar y probar código y, después, publicar una aplicación. Un entorno de desarrollo integrado (IDE) es un programa con numerosas características que se pueden usar para muchos aspectos del desarrollo de software. Más allá del editor estándar y el depurador que proporcionan la mayoría de IDE, Visual Studio incluye herramientas de finalización de código, entornos de REPL interactivos y otras características para facilitar el proceso de desarrollo de software.
 
-[![VVisual Studio con un proyecto de Python](media/tour-ide-overview.png)](media/tour-ide-overview.png#lightbox)
+[![Visual Studio con un proyecto de Python](media/tour-ide-overview.png)](media/tour-ide-overview.png#lightbox)
 
 En esta imagen se muestra Visual Studio con un proyecto de Python abierto y varias ventanas de herramientas clave que probablemente usará:
 
 - El [**Explorador de soluciones**](../ide/solutions-and-projects-in-visual-studio.md) (parte superior derecha) permite ver, navegar y administrar los archivos de código. El **Explorador de soluciones** puede ayudar a organizar el código al agrupar los archivos en [soluciones y proyectos](/visualstudio/get-started/tutorial-projects-solutions).
-    - Además del **Explorador de soluciones**, están los [**entornos de Python**](managing-python-environments-in-visual-studio.md), donde se administran los diferentes intérpretes de Python que hay instalados en el equipo.
+  - Además del **Explorador de soluciones**, están los [**entornos de Python**](managing-python-environments-in-visual-studio.md), donde se administran los diferentes intérpretes de Python que hay instalados en el equipo.
 
-    ::: moniker range=">=vs-2019"
-    - También puede abrir y ejecutar código de Python en una carpeta sin crear archivos de solución ni un proyecto de Visual Studio. Para obtener más información, vea [Inicio rápido: Apertura y ejecución de código de Python en una carpeta](quickstart-05-python-visual-studio-open-folder.md).
-    ::: moniker-end
+  ::: moniker range=">=vs-2019"
+  - También puede abrir y ejecutar código de Python en una carpeta sin crear archivos de solución ni un proyecto de Visual Studio. Para obtener más información, vea [Inicio rápido: Apertura y ejecución de código de Python en una carpeta](quickstart-05-python-visual-studio-open-folder.md).
+  ::: moniker-end
 
 - La [ventana del editor](../ide/writing-code-in-the-code-and-text-editor.md) (centro), donde es probable que pase la mayor parte del tiempo, muestra el contenido del archivo. Aquí es donde se [edita código de Python](editing-python-code-in-visual-studio.md), se navega por la estructura del código y se establecen puntos de interrupción durante las sesiones de depuración. Con Python, también puede seleccionar código y presionar Ctrl+ENTRAR para ejecutar ese código en una [ventana de REPL interactiva](python-interactive-repl-in-visual-studio.md).
 
 - La [ventana Resultados](../ide/reference/output-window.md) (parte inferior central) es donde Visual Studio envía notificaciones, como mensajes de error y de depuración, advertencias, mensajes de estado de publicación, etc. Cada código fuente de mensaje tiene su propia pestaña.
-    - Una [ventana de REPL interactiva de Python](python-interactive-repl-in-visual-studio.md) aparece en la misma área que la ventana Resultados.
+  - Una [ventana de REPL interactiva de Python](python-interactive-repl-in-visual-studio.md) aparece en la misma área que la ventana Resultados.
 
 - [Team Explorer](/azure/devops/user-guide/work-team-explorer?view=vsts) (parte inferior derecha) permite realizar el seguimiento de los elementos de trabajo y compartir código con otros usuarios mediante tecnologías de control de versiones como [Git](https://git-scm.com/) y [Control de versiones de Team Foundation (TFVC)](/azure/devops/repos/tfvc/overview?view=vsts).
 
@@ -70,7 +70,7 @@ Algunas de las características populares de Visual Studio que ayudan a ser más
 
 - Cuadro de búsqueda
 
-   Visual Studio puede parecer abrumador a veces con tantas propiedades, opciones y menús. El cuadro de búsqueda supone una excelente manera de encontrar rápidamente lo que necesita en Visual Studio. Al empezar a escribir el nombre de lo que está buscando, Visual Studio muestra resultados que llevan exactamente a donde necesita ir. Si necesita agregar funcionalidad a Visual Studio, por ejemplo, agregar compatibilidad con otro lenguaje de programación, el cuadro de búsqueda proporciona resultados que abren el Instalador de Visual Studio para instalar un componente individual o una carga de trabajo.
+   Visual Studio puede parecer abrumador a veces con tantas propiedades, opciones y menús. El cuadro de búsqueda supone una excelente manera de encontrar rápidamente lo que necesita en Visual Studio. Al empezar a escribir el nombre de lo que está buscando, Visual Studio muestra resultados que llevan exactamente a donde necesita ir. Si necesita agregar funcionalidad a Visual Studio, por ejemplo, agregar compatibilidad con otro lenguaje de programación, el cuadro de búsqueda proporciona resultados que abren el Instalador de Visual Studio para instalar un componente individual o una carga de trabajo.
 
    ![Cuadro de búsqueda de Visual Studio](media/tour-ide-quick-launch.png)
 
@@ -94,7 +94,11 @@ Algunas de las características populares de Visual Studio que ayudan a ser más
     A partir de Visual Studio 2019, puede abrir una carpeta que contiene código de Python para disfrutar de características como IntelliSense y depuración sin tener que crear un proyecto de Visual Studio para el código.
 ::: moniker-end
 
-- [Ventana interactiva (REPL) de Python](python-interactive-repl-in-visual-studio.md)
+- [Colaboración mediante Visual Studio](https://docs.microsoft.com/visualstudio/liveshare/use/vs)
+  
+    Visual Studio Live Share permite editar y depurar en colaboración con otros usuarios en tiempo real, independientemente del lenguaje de programación que use o los tipos de aplicaciones que compile. 
+
+- [Ventana de REPL interactiva](python-interactive-repl-in-visual-studio.md)
 
     Visual Studio proporciona una ventana interactiva read-evaluate-print loop (REPL) para cada entorno de Python, que ofrece mejoras con respecto al REPL obtenido con *python.exe* en la línea de comandos. En la ventana **Interactiva** puede escribir código de Python arbitrario y ver resultados inmediatos.
 
@@ -129,7 +133,7 @@ Algunas de las características populares de Visual Studio que ayudan a ser más
 Continúe explorando Python en Visual Studio siguiendo uno de los siguientes tutoriales o inicios rápidos:
 
 > [!div class="nextstepaction"]
-> [Inicio rápido: Creación de una aplicación web con Flask](../ide/quickstart-python.md?toc=/visualstudio/python/toc.json&bc=/visualstudio/python/_breadcrumb/toc.json)
+> [Inicio rápido: Crear una aplicación web con Flask](../ide/quickstart-python.md?toc=/visualstudio/python/toc.json&bc=/visualstudio/python/_breadcrumb/toc.json)
 
 > [!div class="nextstepaction"]
 > [Uso de Python en Visual Studio](tutorial-working-with-python-in-visual-studio-step-01-create-project.md)

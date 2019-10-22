@@ -5,30 +5,30 @@ ms.topic: conceptual
 helpviewer_keywords:
 - post-install commands
 ms.assetid: c9601f2e-2c6e-4da9-9a6e-e707319b39e2
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d336e4a65178ff09f5db01dffeb5bedd3b5b946e
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: d8a59e1a6613936c586c5529dcfc6a56a957112c
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56631398"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66341989"
 ---
 # <a name="commands-that-must-be-run-after-installation"></a>Comandos que se deben ejecutar después de la instalación
 Si implementa la extensión a través de un *.msi* archivo, debe ejecutar **devenv /setup** como parte de la instalación en orden para Visual Studio detectar sus extensiones.
 
 > [!NOTE]
->  La información de este tema se aplica a buscar *devenv.exe* con Visual Studio 2008 y versiones anteriores. Para obtener información sobre cómo detectar *devenv.exe* con versiones posteriores de Visual Studio, consulte [detectar los requisitos del sistema](../../extensibility/internals/detecting-system-requirements.md).
+> La información de este tema se aplica a buscar *devenv.exe* con Visual Studio 2008 y versiones anteriores. Para obtener información sobre cómo detectar *devenv.exe* con versiones posteriores de Visual Studio, consulte [detectar los requisitos del sistema](../../extensibility/internals/detecting-system-requirements.md).
 
 ## <a name="find-devenvexe"></a>Buscar devenv.exe
  Puede encontrar cada versión *devenv.exe* del registro de los valores que [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] los instaladores escriben, uso la tabla RegLocator y AppSearch tablas para almacenar los valores del registro como propiedades. Para obtener más información, consulte [detectar los requisitos del sistema](../../extensibility/internals/detecting-system-requirements.md).
 
 ### <a name="reglocator-table-rows-to-locate-devenvexe-from-different-versions-of-visual-studio"></a>Filas de la tabla RegLocator busque devenv.exe de diferentes versiones de Visual Studio
 
-|Signatura|Raíz|Key|nombre|Tipo|
+|Signatura|Raíz|Key|Name|Tipo|
 |-----------------|----------|---------|----------|----------|
 |RL_DevenvExe_2002|2|SOFTWARE\Microsoft\VisualStudio\7.0\Setup\VS|EnvironmentPath|2|
 |RL_DevenvExe_2003|2|SOFTWARE\Microsoft\VisualStudio\7.1\Setup\VS|EnvironmentPath|2|
@@ -37,7 +37,7 @@ Si implementa la extensión a través de un *.msi* archivo, debe ejecutar **deve
 
 ### <a name="appsearch-table-rows-for-corresponding-reglocator-table-rows"></a>Filas de tabla AppSearch correspondiente RegLocator filas de tablas
 
-|Property|Signatura|
+|Propiedad|Signatura|
 |--------------|-----------------|
 |DEVENV_EXE_2002|RL_DevenvExe_2002|
 |DEVENV_EXE_2003|RL_DevenvExe_2003|
@@ -58,7 +58,7 @@ Si implementa la extensión a través de un *.msi* archivo, debe ejecutar **deve
 
 ### <a name="customaction-table-rows-to-run-devenvexe"></a>Filas de la tabla CustomAction ejecute devenv.exe
 
-|Acción|Tipo|Origen|Destino|
+|Acción|Tipo|Source|Destino|
 |------------|----------|------------|------------|
 |CA_RunDevenv2002|1586|DEVENV_EXE_2002|/setup|
 |CA_RunDevenv2003|1586|DEVENV_EXE_2003|/setup|
@@ -68,7 +68,7 @@ Si implementa la extensión a través de un *.msi* archivo, debe ejecutar **deve
  Acciones personalizadas se deben crear en la tabla InstallExecuteSequence para programar su ejecución durante la instalación. Utilice la propiedad correspondiente en cada fila de la columna de la condición para evitar que la acción personalizada que se va a ejecutar si esa versión de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] no está instalado en el sistema.
 
 > [!NOTE]
->  Propiedades con valores NULL se evalúan como `False` cuando se usa en las condiciones.
+> Propiedades con valores NULL se evalúan como `False` cuando se usa en las condiciones.
 
  El valor de la columna de secuencia para cada acción personalizada depende de otros valores de secuencia en el paquete de Windows Installer. Los valores de secuencia deben ser tal que la *devenv.exe* cerca de las acciones personalizadas que se ejecutan como posible inmediatamente antes de la acción estándar InstallFinalize.
 

@@ -1,35 +1,31 @@
 ---
 title: General, Entorno, Opciones (Cuadro de diálogo)
-ms.date: 03/28/2019
+ms.date: 07/26/2019
 ms.topic: reference
 f1_keywords:
-- VS.Message.0x800a002e
-- VS.ToolsOptionsPages.Environment.General
 - VS.Environment.General
+- VS.Message.0x800a002e
+- VS.OptionsDialog.Environment
+- VS.ToolsOptionsPages.Environment
+- VS.ToolsOptionsPages.Environment.General
 helpviewer_keywords:
-- MRU lists
-- windows, customizing
-- MDI, environment options
-- speed, environment animation
-- File menu
-- menus, customizing
-- Windows menu customizing
-- status bars, displaying
-- IDE, startup options
-- editors, autocompletion
+- recently used file lists
+- Windows menu, customizing
+- status bar, displaying
 - Options dialog box, General Environment
 - General Environment Options dialog box
+- Environment Options dialog box
 author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a2f860293669ddab035ddd1c53e09dbb9962df01
-ms.sourcegitcommit: b6177ce198c7c5a00030604c9d4faa735405d5df
+ms.openlocfilehash: eb1dbbcc4adf8305aad119ac8a4cb223e0f89902
+ms.sourcegitcommit: 44e9b1d9230fcbbd081ee81be9d4be8a485d8502
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/04/2019
-ms.locfileid: "59018199"
+ms.lasthandoff: 08/30/2019
+ms.locfileid: "70180283"
 ---
 # <a name="options-dialog-box-environment--general"></a>Cuadro de diálogo Opciones: Entorno \> General
 
@@ -66,7 +62,7 @@ Especifica si Visual Studio establece el ajuste de forma automática en la exper
 ::: moniker range="vs-2017"
 
 > [!TIP]
-> Windows 10 tiene una opción que dice **Permitir que Windows intente corregir las aplicaciones para que no se vean borrosas**. Se recomienda **activar** dicha configuración si Visual Studio aparece borroso en el monitor. Considere la posibilidad de actualizar a [Visual Studio 2019](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019), que ha mejorado significativamente la claridad de presentación, porque se trata de una aplicación que reconoce los puntos por pulgada por monitor.
+> Windows 10 tiene una opción que dice **Permitir que Windows intente corregir las aplicaciones para que no se vean borrosas**. Se recomienda **activar** dicha configuración si Visual Studio aparece borroso en el monitor. Considere la posibilidad de actualizar a [Visual Studio 2019](https://visualstudio.microsoft.com/downloads), que ha mejorado significativamente la claridad de presentación, porque se trata de una aplicación que reconoce los puntos por pulgada por monitor.
 
 ::: moniker-end
 
@@ -102,5 +98,4 @@ Especifica que, cuando se hace clic en el botón **Ocultar automáticamente**, s
 
 ## <a name="see-also"></a>Vea también
 
-- [Opciones de entorno (Cuadro de diálogo)](../../ide/reference/environment-options-dialog-box.md)
 - [Personalizar los diseños de ventana](../../ide/customizing-window-layouts-in-visual-studio.md)

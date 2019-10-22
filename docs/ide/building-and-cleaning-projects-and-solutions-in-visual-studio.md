@@ -18,17 +18,17 @@ helpviewer_keywords:
 - solution build configurations, build order
 - builds [Visual Studio], preparing
 ms.assetid: 710891fd-379e-42c2-a84b-44a7af694ca0
-author: gewarren
-ms.author: gewarren
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4e6b970fdda47bab704def8859cb3489bce13bcb
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: b8676ad9dc1a3b245242687e2ea56148b83b8d56
+ms.sourcegitcommit: 59e5758036223ee866f3de5e3c0ab2b6dbae97b6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55925389"
+ms.lasthandoff: 07/23/2019
+ms.locfileid: "68416424"
 ---
 # <a name="build-and-clean-projects-and-solutions-in-visual-studio"></a>Compilar y limpiar proyectos y soluciones en Visual Studio
 
@@ -38,48 +38,48 @@ Mediante los procedimientos indicados en este tema, puede compilar, recompilar o
 > Este tema se aplica a Visual Studio para Windows. En el caso de Visual Studio para Mac, vea [Compilar y limpiar proyectos y soluciones en Visual Studio para Mac](/visualstudio/mac/building-and-cleaning-projects-and-solutions).
 
 > [!NOTE]
-> La interfaz de usuario de su edición de Visual Studio podría diferir de lo que se describe en este tema, en función de su configuración activa. Para cambiar la configuración, por ejemplo, **General** o **Visual C++**, elija **Herramientas** > **Importar y exportar configuraciones** y, después, **Restablecer todas las configuraciones**.
+> La interfaz de usuario de su edición de Visual Studio podría diferir de lo que se describe en este tema, en función de su configuración activa. Para cambiar la configuración, por ejemplo, **General** o **Visual C++** , elija **Herramientas** > **Importar y exportar configuraciones** y, después, **Restablecer todas las configuraciones**.
 
 ## <a name="to-build-rebuild-or-clean-an-entire-solution"></a>Para compilar, recompilar o limpiar toda la solución
 
-1.  En el **Explorador de soluciones**, seleccione o abra la solución.
+1. En el **Explorador de soluciones**, seleccione o abra la solución.
 
-2.  En la barra de menús, seleccione **Compilar** y, después, elija uno de los comandos siguientes:
+2. En la barra de menús, seleccione **Compilar** y, después, elija uno de los comandos siguientes:
 
-    -   Seleccione **Compilar** o **Compilar solución** para compilar solo los archivos de proyecto y los componentes que han cambiado desde la compilación más reciente.
+    - Seleccione **Compilar** o **Compilar solución** para compilar solo los archivos de proyecto y los componentes que han cambiado desde la compilación más reciente.
 
         > [!NOTE]
         > El comando **Compilar** se convierte en **Compilar solución** cuando una solución incluye más de un proyecto.
 
-    -   Seleccione **Recompilar solución** para "limpiar" la solución y, después, compilar todos los archivos de proyecto y los componentes.
+    - Seleccione **Recompilar solución** para "limpiar" la solución y, después, compilar todos los archivos de proyecto y los componentes.
 
-    -   Seleccione **Limpiar solución** para eliminar los archivos intermedios y de salida. Cuando solo quedan los archivos de proyecto y componente, se pueden compilar nuevas instancias de archivos intermedios y de salida.
+    - Seleccione **Limpiar solución** para eliminar los archivos intermedios y de salida. Cuando solo quedan los archivos de proyecto y componente, se pueden compilar nuevas instancias de archivos intermedios y de salida.
 
 ## <a name="to-build-or-rebuild-a-single-project"></a>Para compilar o recompilar un solo proyecto
 
-1.  En el **Explorador de soluciones**, seleccione o abra el proyecto.
+1. En el **Explorador de soluciones**, seleccione o abra el proyecto.
 
-2.  En la barra de menús, seleccione **Compilar** y, después, elija **Compilar** *NombreDelProyecto* o **Recompilar** *NombreDelProyecto*.
+2. En la barra de menús, seleccione **Compilar** y, después, elija **Compilar** *NombreDelProyecto* o **Recompilar** *NombreDelProyecto*.
 
-    -   Seleccione **Compilar** *NombreDelProyecto* para compilar solo los componentes del proyecto que han cambiado desde la compilación más reciente.
+    - Seleccione **Compilar** *NombreDelProyecto* para compilar solo los componentes del proyecto que han cambiado desde la compilación más reciente.
 
-    -   Seleccione **Recompilar** *NombreDelProyecto* para "limpiar" el proyecto y, después, compilar los archivos de proyecto y todos los componentes del proyecto.
+    - Seleccione **Recompilar** *NombreDelProyecto* para "limpiar" el proyecto y, después, compilar los archivos de proyecto y todos los componentes del proyecto.
 
 ## <a name="to-build-only-the-startup-project-and-its-dependencies"></a>Para compilar solo el proyecto de inicio y sus dependencias
 
-1.  En la barra de menús, elija **Herramientas** > **Opciones**.
+1. En la barra de menús, elija **Herramientas** > **Opciones**.
 
-2.  En el cuadro de diálogo **Opciones**, expanda el nodo **Proyectos y soluciones** y, después, seleccione la página **Compilar y ejecutar**.
+2. En el cuadro de diálogo **Opciones**, expanda el nodo **Proyectos y soluciones** y, después, seleccione la página **Compilar y ejecutar**.
 
      Se abre el cuadro de diálogo **Compilar y ejecutar** > **Proyectos y soluciones** > **Opciones**.
 
-3.  Active la casilla **Compilar proyectos de inicio y dependencias únicamente al ejecutar**.
+3. Active la casilla **Compilar proyectos de inicio y dependencias únicamente al ejecutar**.
 
      Cuando activa esta casilla, solo se compilan el proyecto inicial actual y sus dependencias cuando se lleva a cabo alguno de los pasos siguientes:
 
-    -   En la barra de menús, seleccione **Depurar** > **Iniciar** (**F5**).
+    - En la barra de menús, seleccione **Depurar** > **Iniciar** (**F5**).
 
-    -   En la barra de menús, elija **Compilar** > **Compilar solución** (**Ctrl**+**Mayús**+**B**).
+    - En la barra de menús, elija **Compilar** > **Compilar solución** (**Ctrl**+**Mayús**+**B**).
 
     Cuando esta casilla está desactivada, todos los proyectos, sus dependencias y los archivos de solución se compilan cuando se ejecuta alguno de los comandos anteriores. Esta casilla se encuentra desactivada de forma predeterminada.
 

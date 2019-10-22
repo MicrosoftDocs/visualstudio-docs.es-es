@@ -7,11 +7,11 @@ ms.assetid: d20a30c0-0dcc-4e2c-a809-31c8ea28c7df
 ms.author: brgeorge
 manager: jillfra
 ms.openlocfilehash: 3e36b9deb2d5837927d239232cafbcac15dfe406
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60117517"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62888846"
 ---
 # <a name="visual-language-dictionary"></a>Diccionario del lenguaje Visual
 
@@ -275,7 +275,7 @@ Visual Studio usa un lenguaje visual para ilustrar los conceptos que son los blo
 | **Anterior** | ![Icono anterior](../../extensibility/ux-guidelines/media/vld_c_previous.png "VLD_C_Previous") | ![Icono de marcador anterior](../../extensibility/ux-guidelines/media/vld_c_previous_previousbookmark.png "VLD_C_Previous_PreviousBookmark")<br />Marcador anterior<br />![Icono Buscar anterior](../../extensibility/ux-guidelines/media/vld_c_previous_findprevious.png "VLD_C_Previous_FindPrevious")<br />Buscar anterior ||
 | **Imprimir** | ![Print icon](../../extensibility/ux-guidelines/media/vld_c_print.png "VLD_C_Print") | ![Icono de direct impresión](../../extensibility/ux-guidelines/media/vld_c_print_printdirect.png "VLD_C_Print_PrintDirect")<br />Impresión directa<br />![Icono de cuadro de diálogo de impresión](../../extensibility/ux-guidelines/media/vld_c_print_printdialog.png "VLD_C_Print_PrintDialog")<br />Cuadro de diálogo Imprimir<br />![Icono de control de documento de impresión](../../extensibility/ux-guidelines/media/vld_c_print_printdocumentcontrol.png "VLD_C_Print_PrintDocumentControl")<br />Control de documento de impresión ||
 | **Procedimiento**<br />Ventana interactiva | ![Icono procedimiento](../../extensibility/ux-guidelines/media/vld_c_procedure.png "VLD_C_Procedure") | ![Icono de la ventana interactiva de Python](../../extensibility/ux-guidelines/media/vld_c_procedure_pythoninteractivewindow.png "VLD_C_Procedure_PythonInteractiveWindow")<br />Ventana interactiva de Python<br />![Icono de advertencia de procedimiento](../../extensibility/ux-guidelines/media/vld_c_procedure_procedurewarning.png "VLD_C_Procedure_ProcedureWarning")<br />Advertencia de procedimiento<br />![Icono de procedimiento almacenado](../../extensibility/ux-guidelines/media/vld_c_procedure_storedprocedure.png "VLD_C_Procedure_StoredProcedure")<br />Procedimiento almacenado ||
-| **Property**<br />Configuración de las configuraciones | ![Icono de propiedad](../../extensibility/ux-guidelines/media/vld_c_property.png "VLD_C_Property") | ![Icono Agregar propiedad](../../extensibility/ux-guidelines/media/vld_c_property_addproperty.png "VLD_C_Property_AddProperty")<br />Agregar propiedad<br />![Icono de advertencia de la propiedad extendida](../../extensibility/ux-guidelines/media/vld_c_property_extendedpropertywarning.png "VLD_C_Property_ExtendedPropertyWarning")<br />Propiedad extendida&mdash;advertencia<br />![Icono nueva propiedad](../../extensibility/ux-guidelines/media/vld_c_property_newproperty.png "VLD_C_Property_NewProperty")<br />Nueva propiedad ||
+| **Propiedad**<br />Configuración de las configuraciones | ![Icono de propiedad](../../extensibility/ux-guidelines/media/vld_c_property.png "VLD_C_Property") | ![Icono Agregar propiedad](../../extensibility/ux-guidelines/media/vld_c_property_addproperty.png "VLD_C_Property_AddProperty")<br />Agregar propiedad<br />![Icono de advertencia de la propiedad extendida](../../extensibility/ux-guidelines/media/vld_c_property_extendedpropertywarning.png "VLD_C_Property_ExtendedPropertyWarning")<br />Propiedad extendida&mdash;advertencia<br />![Icono nueva propiedad](../../extensibility/ux-guidelines/media/vld_c_property_newproperty.png "VLD_C_Property_NewProperty")<br />Nueva propiedad ||
 
 ### <a name="BKMK_VLDConceptsQ"></a> Q
 

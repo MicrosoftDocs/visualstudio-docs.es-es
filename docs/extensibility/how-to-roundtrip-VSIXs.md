@@ -4,16 +4,16 @@ ms.date: 06/25/2017
 ms.topic: conceptual
 ms.assetid: 2d6cf53c-011e-4c9e-9935-417edca8c486
 author: willbrown
-ms.author: gregvanl
+ms.author: madsk
 manager: justinclareburt
 ms.workload:
 - willbrown
-ms.openlocfilehash: 1014d76473511df9b73cae371e5e5dea2364f8b2
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 392a0157522f5baa8e8736d52c940b31c0a44cde
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60111017"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67826030"
 ---
 # <a name="how-to-make-extensions-compatible-with-visual-studio-2017-and-visual-studio-2015"></a>Procedimiento Crear extensiones compatibles con Visual Studio 2017 y Visual Studio 2015
 
@@ -51,14 +51,14 @@ Se recomienda iniciar esta actualización con Visual Studio 2015, en lugar de Vi
 
 ## <a name="ensure-there-is-no-reference-to-projectjson"></a>Asegúrese de que no hay ninguna referencia de project.json
 
-Más adelante en este documento, se insertará instrucciones de importación condicional en para su **.csproj* archivo. Esto no funcionará si se almacenan las referencias de NuGet en *project.json*. Por lo tanto, se recomienda para mover todas las referencias de NuGet para la *packages.config* archivo.
+Más adelante en este documento, se insertará instrucciones de importación condicional en para su * *.csproj* archivo. Esto no funcionará si se almacenan las referencias de NuGet en *project.json*. Por lo tanto, se recomienda para mover todas las referencias de NuGet para la *packages.config* archivo.
 Si el proyecto contiene un *project.json* archivo:
 
 * Tome nota de las referencias de *project.json*.
 * Desde el **el Explorador de soluciones**, elimine el *project.json* archivo del proyecto. Esto elimina la *project.json* de archivo y lo quita del proyecto.
 * Agregue que las referencias de NuGet de nuevo al proyecto:
-    * Haga doble clic en el **solución** y elija **administrar paquetes de NuGet para la solución**.
-    * Visual Studio crea automáticamente la *packages.config* archivo automáticamente.
+  * Haga doble clic en el **solución** y elija **administrar paquetes de NuGet para la solución**.
+  * Visual Studio crea automáticamente la *packages.config* archivo automáticamente.
 
 > [!NOTE]
 > Si el proyecto contenía paquetes EnvDTE, deba agregarse, haga clic con el botón secundario en **referencias** seleccionando **Agregar referencia** y agregar la referencia correspondiente. Uso de paquetes NuGet, puede crear errores al intentar compilar el proyecto.
@@ -69,7 +69,7 @@ Para asegurarse de que necesitamos agregar herramientas de compilación que nos 
 
 Para compilar e implementar un VSIXv3 en Visual Studio 2015 y 2017, necesita los siguientes paquetes NuGet:
 
-Versión | Herramientas integradas
+`Version` | Herramientas integradas
 --- | ---
 Visual Studio 2015 | Microsoft.VisualStudio.Sdk.BuildTasks.14.0
 Visual Studio 2017 | Microsoft.VSSDK.BuildTool

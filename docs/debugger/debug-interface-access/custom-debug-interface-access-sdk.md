@@ -1,5 +1,5 @@
 ---
-title: Personalizado (Debug Interface Access SDK) | Microsoft Docs
+title: Personalizado (Debug Interface Access SDK) | Documentos de Microsoft
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 15e0d58c49a66416371c7e66e12f469e6d224c91
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56637170"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62555148"
 ---
 # <a name="custom-debug-interface-access-sdk"></a>Personalizado (Debug Interface Access SDK)
 Algunos compiladores introducen símbolos que no se identifican mediante cualquiera de los tipos de símbolo estándar de léxico. Estos símbolos se identifican mediante un `SymTagCustom` etiqueta.
@@ -25,7 +25,7 @@ Algunos compiladores introducen símbolos que no se identifican mediante cualqui
 ## <a name="properties"></a>Propiedades
  En la tabla siguiente muestra las propiedades que son válidas para este tipo de símbolo.
 
-|Propiedad.|Tipo de datos|Descripción|
+|Propiedad|Tipo de datos|Descripción|
 |--------------|---------------|-----------------|
 |[IDiaSymbol::get_dataBytes](../../debugger/debug-interface-access/idiasymbol-get-databytes.md)|`BYTE`|Matriz de datos asociadas con el símbolo.|
 |[IDiaSymbol::get_symIndexId](../../debugger/debug-interface-access/idiasymbol-get-symindexid.md)|`DWORD`|Id. de índice de símbolo.|

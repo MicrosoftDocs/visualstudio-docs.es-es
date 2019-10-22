@@ -1,5 +1,5 @@
 ---
-title: Friend (Debug Interface Access SDK) | Microsoft Docs
+title: Friend (Debug Interface Access SDK) | Documentos de Microsoft
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -15,11 +15,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 118a6b6caf6a208898bba3894d532e5dc6e4a14a
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56637391"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62554696"
 ---
 # <a name="friend-debug-interface-access-sdk"></a>Friend (Debug Interface Access SDK)
 Clases y funciones friend se identifican mediante `SymTagFriend` símbolos. Son elementos secundarios del elemento primario de los tipos definidos por el usuario (UDT) y tienen un [Get_classparent](../../debugger/debug-interface-access/idiasymbol-get-classparent.md) propiedad.
@@ -27,7 +27,7 @@ Clases y funciones friend se identifican mediante `SymTagFriend` símbolos. Son 
 ## <a name="properties"></a>Propiedades
  La siguiente tabla muestra propiedades adicionales de válido para este tipo de símbolo.
 
-|Propiedad.|Tipo de datos|Descripción|
+|Propiedad|Tipo de datos|Descripción|
 |--------------|---------------|-----------------|
 |[IDiaSymbol::get_classParent](../../debugger/debug-interface-access/idiasymbol-get-classparent.md)|`IDiaSymbol*`|Símbolos para el elemento primario UDT.|
 |[IDiaSymbol::get_classParentId](../../debugger/debug-interface-access/idiasymbol-get-classparentid.md)|`DWORD`|Id. del símbolo de clase primaria.|

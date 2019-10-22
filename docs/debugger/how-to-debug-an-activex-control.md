@@ -1,5 +1,5 @@
 ---
-title: Procedimiento Depurar un Control ActiveX | Documentos de Microsoft
+title: Procedimiento Depurar un control ActiveX | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -24,12 +24,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3c76167468d9eb6fbe93c3bef0c4ae8c15634fc5
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: c1d02cb4d581a7234ad2dd950fa51f46a5d128b2
+ms.sourcegitcommit: ea182703e922c74725045afc251bcebac305068a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60091614"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71211081"
 ---
 # <a name="how-to-debug-an-activex-control"></a>Procedimiento Depuración de un control ActiveX
 
@@ -42,7 +42,7 @@ Para depurar el control ActiveX, debe especificar un contenedor (ejecutable) en 
 
 1. En el Explorador de soluciones, seleccione el proyecto.
 
-2. Desde el **vista** menú, elija **páginas de propiedades**.
+2. En el menú **Ver** , elija **páginas de propiedades**.
 
 3. En el cuadro de diálogo **Páginas de propiedades del proyecto**, abra la carpeta **Propiedades de configuración** y seleccione **Depuración**.
 
@@ -61,5 +61,5 @@ Para depurar el control ActiveX, debe especificar un contenedor (ejecutable) en 
 - [Controles ActiveX](/cpp/mfc/activex-controls)
 - [Prueba de propiedades y eventos con un contenedor de prueba](/cpp/mfc/testing-properties-and-events-with-test-container)
 - [Depurar COM y ActiveX](../debugger/com-and-activex-debugging.md)
-- [Depurar en Visual Studio](../debugger/index.md)
+- [Depurar en Visual Studio](../debugger/index.yml)
 - [Primer vistazo al depurador](../debugger/debugger-feature-tour.md)

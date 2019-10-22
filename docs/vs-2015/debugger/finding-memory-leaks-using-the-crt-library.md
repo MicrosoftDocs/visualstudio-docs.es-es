@@ -30,12 +30,12 @@ caps.latest.revision: 33
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: f66abbb72e707381b30c88f88e999f502e3c7da9
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 831cae8d83bc26e05b80d6948a3168a6e6a387c4
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58999389"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65682421"
 ---
 # <a name="finding-memory-leaks-using-the-crt-library"></a>Buscar pérdidas de memoria con la biblioteca de CRT
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -57,7 +57,7 @@ Las pérdidas de memoria, definidas como la incapacidad de desasignar correctame
   
  Para que las funciones CRT funcionen correctamente, las instrucciones `#include` deben seguir el orden que se muestra aquí.  
   
- Si se incluye crtdbg.h, se asignan las funciones `malloc` y [free](http://msdn.microsoft.com/library/74ded9cf-1863-432e-9306-327a42080bb8) a sus versiones de depuración [_malloc_dbg](http://msdn.microsoft.com/library/c97eca51-140b-4461-8bd2-28965b49ecdb) y `free`, que realizan un seguimiento de la asignación y desasignación de memoria. Esta asignación se produce únicamente en las compilaciones de depuración, que tienen `_DEBUG`. Las versiones de lanzamiento utilizan las funciones normales `malloc` y `free` .  
+ Si se incluye crtdbg.h, se asignan las funciones `malloc` y [free](https://msdn.microsoft.com/library/74ded9cf-1863-432e-9306-327a42080bb8) a sus versiones de depuración [_malloc_dbg](https://msdn.microsoft.com/library/c97eca51-140b-4461-8bd2-28965b49ecdb) y `free`, que realizan un seguimiento de la asignación y desasignación de memoria. Esta asignación se produce únicamente en las compilaciones de depuración, que tienen `_DEBUG`. Las versiones de lanzamiento utilizan las funciones normales `malloc` y `free` .  
   
  La instrucción `#define` asigna una versión base de las funciones del montón de CRT a la versión de depuración correspondiente. Si omite la instrucción `#define` , el volcado de pérdida de memoria será menos detallado.  
   
@@ -67,7 +67,7 @@ Las pérdidas de memoria, definidas como la incapacidad de desasignar correctame
 _CrtDumpMemoryLeaks();  
 ```  
   
- Si su aplicación tiene varias salidas, no es necesario realizar manualmente una llamada a [_CrtDumpMemoryLeaks](http://msdn.microsoft.com/library/71b2eab4-7f55-44e8-a55a-bfea4f32d34c) en cada punto de salida. Una llamada a `_CrtSetDbgFlag` al principio de la aplicación producirá una llamada automática a `_CrtDumpMemoryLeaks` en cada punto de salida. Debe establecer los campos de dos bits que se muestran aquí:  
+ Si su aplicación tiene varias salidas, no es necesario realizar manualmente una llamada a [_CrtDumpMemoryLeaks](https://msdn.microsoft.com/library/71b2eab4-7f55-44e8-a55a-bfea4f32d34c) en cada punto de salida. Una llamada a `_CrtSetDbgFlag` al principio de la aplicación producirá una llamada automática a `_CrtDumpMemoryLeaks` en cada punto de salida. Debe establecer los campos de dos bits que se muestran aquí:  
   
 ```  
 _CrtSetDbgFlag ( _CRTDBG_ALLOC_MEM_DF | _CRTDBG_LEAK_CHECK_DF );  
@@ -82,7 +82,7 @@ _CrtSetReportMode( _CRT_ERROR, _CRTDBG_MODE_DEBUG );
 ```  
   
 ## <a name="interpreting-the-memory-leak-report"></a>Interpretar el informe de pérdida de memoria  
- Si la aplicación no define `_CRTDBG_MAP_ALLOC`, [_CrtDumpMemoryLeaks](http://msdn.microsoft.com/library/71b2eab4-7f55-44e8-a55a-bfea4f32d34c) muestran un informe de pérdida de memoria con esta apariencia:  
+ Si la aplicación no define `_CRTDBG_MAP_ALLOC`, [_CrtDumpMemoryLeaks](https://msdn.microsoft.com/library/71b2eab4-7f55-44e8-a55a-bfea4f32d34c) muestran un informe de pérdida de memoria con esta apariencia:  
   
 ```  
 Detected memory leaks!  
@@ -109,7 +109,7 @@ Object dump complete.
   
 - El número de asignación de memoria, que es `18` en este ejemplo  
   
-- El [tipo de bloque](http://msdn.microsoft.com/e2f42faf-0687-49e7-aa1f-916038354f97), que es `normal` en este ejemplo.  
+- El [tipo de bloque](https://msdn.microsoft.com/e2f42faf-0687-49e7-aa1f-916038354f97), que es `normal` en este ejemplo.  
   
 - La ubicación de memoria hexadecimal, que es `0x00780E80` en este ejemplo.  
   

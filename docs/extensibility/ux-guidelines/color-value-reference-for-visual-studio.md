@@ -3,18 +3,18 @@ title: Referencia de valor de color
 description: 'Referencia: Códigos hexadecimales para crear nuevos tokens de color de Visual Studio'
 keywords: color, el código hexadecimal, matiz, la interfaz de usuario con temas, temas
 author: brickgeorge
-ms.author: gregvanl
+ms.author: madsk
 ms.date: 08/04/2017
 ms.topic: conceptual
 ms.assetid: 694ffb31-132c-4d63-b930-8254e7c50c25
 ms.reviewer: Jamie.Young
 manager: jillfra
-ms.openlocfilehash: 64d2396215ab8c27607e5d1734cdc8cdfe675db6
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: ea37231dd31667389d9f08872eadbfdf26375bb2
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60118089"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66337997"
 ---
 # <a name="color-value-reference-for-visual-studio"></a>Referencia de valor de color para Visual Studio
 

@@ -1,5 +1,5 @@
 ---
-title: Procedimiento Crear característica personalizada y las reglas de validación de paquete para las soluciones de SharePoint | Documentos de Microsoft
+title: 'Soluciones de SharePoint: Crear características personalizadas, las reglas de validación de paquetes'
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -13,15 +13,15 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 061a86ee301378bc8b456d370eddd19d2f91bbb6
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: a10118a0c83f9e17e32efd293a9a824e38a0942a
+ms.sourcegitcommit: cc5fd59e5dc99181601b7db8b28d7f8a83a36bab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60109210"
+ms.lasthandoff: 06/11/2019
+ms.locfileid: "66835936"
 ---
 # <a name="how-to-create-custom-feature-and-package-validation-rules-for-sharepoint-solutions"></a>Procedimiento Crear paquetes y características personalizado reglas de validación para las soluciones de SharePoint
-  Puede crear reglas de validación personalizadas para comprobar el paquete de solución generado por Visual Studio. Puede realizar la validación completa en una característica completa o el paquete seleccionando **validar** en el menú contextual de un paquete o una característica en el **PackagingExplorer**. Al agregar nuevos elementos de proyecto SharePonit o características al proyecto para determinar si el paquete o la característica sería un estado válido, se realiza una validación parcial.
+  Puede crear reglas de validación personalizadas para comprobar el paquete de solución generado por Visual Studio. Puede realizar la validación completa en una característica completa o el paquete seleccionando **validar** en el menú contextual de un paquete o una característica en el **PackagingExplorer**. Al agregar nuevas características o elementos de proyecto de SharePoint al proyecto para determinar si el paquete o la característica sería un estado válido, se realiza una validación parcial.
 
 ### <a name="to-create-a-custom-package-validation-rule"></a>Para crear una regla de validación de paquete personalizado
 

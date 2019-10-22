@@ -7,17 +7,17 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugBreakpointEvent2 interface
 ms.assetid: 50b3a7a7-331b-42c8-922c-ff3522ebe1da
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: fa79f31fd0fc895c67325a32dcbe12a28ff3afc4
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 223a33e39847382ecd25f50c320ab68a2b0e8079
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56697070"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66330369"
 ---
 # <a name="idebugbreakpointevent2"></a>IDebugBreakpointEvent2
 El motor de depuración (DE) envía esta interfaz para el Administrador de depuración de la sesión (SDM) cuando un programa se detiene en un punto de interrupción.

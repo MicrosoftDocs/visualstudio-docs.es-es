@@ -1,0 +1,82 @@
+### YamlMime:Landing
+title: Documentación del depurador de Visual Studio
+summary: El depurador de Visual Studio permite observar el comportamiento del programa en tiempo de ejecución y detectar problemas.
+metadata:
+  title: Depurar en Visual Studio
+  description: Obtenga información sobre cómo usar Visual Studio para depurar aplicaciones y código.
+  ms.topic: landing-page
+  author: mikejo5000
+  ms.author: mikejo
+  manager: jillfra
+  ms.date: 09/20/2019
+  ms.openlocfilehash: c98bb7851b2b959e078c954cd8f11b1d4151ce0b
+  ms.sourcegitcommit: 1507baf3a336bbb6511d4c3ce73653674831501b
+  ms.translationtype: HT
+  ms.contentlocale: es-ES
+  ms.lasthandoff: 10/15/2019
+  ms.locfileid: "72349691"
+landingContent:
+- title: Acerca de la depuración
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: ¿Qué es la depuración?
+      url: what-is-debugging.md
+    - text: Primer vistazo al depurador
+      url: debugger-feature-tour.md
+    - text: Búsqueda de la tarea de depuración
+      url: find-your-debugging-task.md
+- title: Primeros pasos
+  linkLists:
+  - linkListType: tutorial
+    links:
+    - text: Depuración para principiantes sin experiencia
+      url: debugging-absolute-beginners.md
+    - text: Más información sobre la depuración de C#
+      url: /visualstudio/get-started/csharp/tutorial-debugger?toc=/visualstudio/debugger/toc.json
+    - text: Más información sobre la depuración de C++
+      url: getting-started-with-the-debugger-cpp.md
+    - text: Más información sobre la depuración de Visual Basic
+      url: /visualstudio/get-started/visual-basic/tutorial-debugger?toc=/visualstudio/debugger/toc.json
+    - text: Ejecución de código Python en el depurador >>
+      url: ../python/tutorial-working-with-python-in-visual-studio-step-04-debugging.md
+- title: Pausa y navegación por el código
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: Navegar por el código con el depurador
+      url: navigating-through-code-with-the-debugger.md
+    - text: Usar puntos de interrupción
+      url: using-breakpoints.md
+    - text: Editar código y seguir depurando
+      url: edit-and-continue.md
+- title: Inspeccionar datos
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: Inspeccionar variables
+      url: autos-and-locals-windows.md
+    - text: Establecer una inspección de variables
+      url: watch-and-quickwatch-windows.md
+    - text: Ver la pila de llamadas
+      url: how-to-use-the-call-stack-window.md
+- title: Exploración más a fondo del depurador
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: Sugerencias y trucos para el depurador
+      url: debugger-tips-and-tricks.md
+    - text: Escribir y depurar código XAML en ejecución
+      url: xaml-hot-reload.md
+    - text: Depurar una aplicación de Azure activa
+      url: debug-live-azure-applications.md
+    - text: Cómo indicar al depurador qué mostrar
+      url: using-the-debuggerdisplay-attribute.md
+    - text: Depuración remota
+      url: remote-debugging.md
+- title: Colaborar
+  linkLists:
+  - linkListType: tutorial
+    links:
+    - text: Escribir y depurar código con Live Share >>
+      url: /visualstudio/liveshare/use/vs

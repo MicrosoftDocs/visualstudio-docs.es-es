@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugEngineLaunch2::LaunchSuspended
 ms.assetid: 5dd2643e-c20a-470e-9024-2a423eb39856
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6cfdfb05d45996e87ea749dffa89915a175d9274
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: cef6382009d8139b8c166ce6b75a692e8e309557
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56709569"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66337182"
 ---
 # <a name="idebugenginelaunch2launchsuspended"></a>IDebugEngineLaunch2::LaunchSuspended
 Este método inicia un proceso mediante el motor de depuración (DE).
@@ -60,58 +63,45 @@ int LaunchSuspended(
 );
 ```
 
-#### <a name="parameters"></a>Parámetros
- `pszMachine`
+## <a name="parameters"></a>Parámetros
+`pszMachine`\
+[in] El nombre de la máquina en que se va a iniciar el proceso. Use un valor null para especificar el equipo local.
 
- [in] El nombre de la máquina en que se va a iniciar el proceso. Use un valor null para especificar el equipo local.
+`pPort`\
+[in] El [IDebugPort2](../../../extensibility/debugger/reference/idebugport2.md) interfaz que representa el puerto que se ejecutará el programa.
 
- `pPort`
+`pszExe`\
+[in] El nombre del archivo ejecutable que se iniciará.
 
- [in] El [IDebugPort2](../../../extensibility/debugger/reference/idebugport2.md) interfaz que representa el puerto que se ejecutará el programa.
+`pszArgs`\
+[in] Los argumentos para pasar al ejecutable. Puede ser un valor null si no hay ningún argumento.
 
- `pszExe`
+`pszDir`\
+[in] El nombre del directorio de trabajo usando el archivo ejecutable. Puede ser un valor null si no se requiere ningún directorio de trabajo.
 
- [in] El nombre del archivo ejecutable que se iniciará.
+`bstrEnv`\
+[in] Bloque de entorno de cadenas terminadas en NULL, seguido de un terminador NULL adicional.
 
- `pszArgs`
+`pszOptions`\
+[in] Las opciones para el archivo ejecutable.
 
- [in] Los argumentos para pasar al ejecutable. Puede ser un valor null si no hay ningún argumento.
+`dwLaunchFlags`\
+[in] Especifica el [LAUNCH_FLAGS](../../../extensibility/debugger/reference/launch-flags.md) para una sesión.
 
- `pszDir`
+`hStdInput`\
+[in] Identificador de un flujo de entrada alternativo. Puede ser 0 si no se requiere la redirección.
 
- [in] El nombre del directorio de trabajo usando el archivo ejecutable. Puede ser un valor null si no se requiere ningún directorio de trabajo.
+`hStdOutput`\
+[in] Identificador de un flujo de salida alternativos. Puede ser 0 si no se requiere la redirección.
 
- `bstrEnv`
+`hStdError`\
+[in] Identificador de un flujo de salida de error alternativa. Puede ser 0 si no se requiere la redirección.
 
- [in] Bloque de entorno de cadenas terminadas en NULL, seguido de un terminador NULL adicional.
+`pCallback`\
+[in] El [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) objeto que recibe los eventos del depurador.
 
- `pszOptions`
-
- [in] Las opciones para el archivo ejecutable.
-
- `dwLaunchFlags`
-
- [in] Especifica el [LAUNCH_FLAGS](../../../extensibility/debugger/reference/launch-flags.md) para una sesión.
-
- `hStdInput`
-
- [in] Identificador de un flujo de entrada alternativo. Puede ser 0 si no se requiere la redirección.
-
- `hStdOutput`
-
- [in] Identificador de un flujo de salida alternativos. Puede ser 0 si no se requiere la redirección.
-
- `hStdError`
-
- [in] Identificador de un flujo de salida de error alternativa. Puede ser 0 si no se requiere la redirección.
-
- `pCallback`
-
- [in] El [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) objeto que recibe los eventos del depurador.
-
- `ppDebugProcess`
-
- [out] Devuelve el resultado [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md) objeto que representa el proceso iniciado.
+`ppDebugProcess`\
+[out] Devuelve el resultado [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md) objeto que representa el proceso iniciado.
 
 ## <a name="return-value"></a>Valor devuelto
  Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.

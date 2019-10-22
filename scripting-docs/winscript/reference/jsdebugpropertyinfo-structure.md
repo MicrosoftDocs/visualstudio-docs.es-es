@@ -1,5 +1,5 @@
 ---
-title: JsDebugPropertyInfo (estructura) | Documentos de Microsoft
+title: Estructura JsDebugPropertyInfo | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -15,12 +15,12 @@ caps.latest.revision: 6
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8aeb2dcfc116c8c735cda95fc9d7ab9da97cab3b
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: f6c6470386414158a53794d1a5c580492edc0e15
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58154574"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72572299"
 ---
 # <a name="jsdebugpropertyinfo-structure"></a>Estructura JsDebugPropertyInfo
 Indica información sobre una propiedad.  
@@ -48,7 +48,7 @@ typedef struct tagJsDebugPropertyInfo{   BSTR name;   BSTR type;   BSTR value;  
  Enumeración que representa los atributos de la propiedad.  
   
 ## <a name="requirements"></a>Requisitos  
- **Encabezado:** jscript9diag.h  
+ **Encabezado:** jscript9diag. h  
   
 ## <a name="see-also"></a>Vea también  
  [Referencia de interfaces de Windows Script](../../winscript/reference/windows-script-interfaces-reference.md)

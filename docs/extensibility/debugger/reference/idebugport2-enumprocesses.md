@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugPort2::EnumProcesses
 ms.assetid: aafb32c5-5790-4807-a448-878a80256438
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0a57768a1e4a6176fc5485971bc6a2ad32701ec7
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 5c1b5b43007e43a5cee368622d808d20ad5b83b5
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56694067"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66343811"
 ---
 # <a name="idebugport2enumprocesses"></a>IDebugPort2::EnumProcesses
 Devuelve una lista de todos los procesos que se ejecutan en un puerto.
@@ -36,10 +39,9 @@ int EnumProcesses( 
 );
 ```
 
-#### <a name="parameters"></a>Parámetros
- `ppEnum`
-
- [out] Devuelve un [IEnumDebugProcesses2](../../../extensibility/debugger/reference/ienumdebugprocesses2.md) objeto que contiene una lista de todos los procesos que se ejecutan en un puerto.
+## <a name="parameters"></a>Parámetros
+`ppEnum`\
+[out] Devuelve un [IEnumDebugProcesses2](../../../extensibility/debugger/reference/ienumdebugprocesses2.md) objeto que contiene una lista de todos los procesos que se ejecutan en un puerto.
 
 ## <a name="return-value"></a>Valor devuelto
  Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.

@@ -14,11 +14,11 @@ author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.openlocfilehash: 5a84f0a037df92ff31ce66eb6692367ef1d209f6
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59649373"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62546666"
 ---
 # <a name="visual-studio-administrator-guide"></a>Visual Studio Administrator Guide
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -71,6 +71,6 @@ De manera predeterminada, la instalación de Visual Studio permite recibir comen
 |-----------|-----------------|  
 |[Cómo: Instalar una versión específica de Visual Studio](../install/how-to-install-a-specific-release-of-visual-studio.md)|Describe cómo instalar configuraciones específicas de la versión actual de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].|  
 |[Cómo: Crear y ejecutar una instalación desatendida de Visual Studio](../install/how-to-create-and-run-an-unattended-installation-of-visual-studio.md)|Describe cómo instalar [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] en modo desatendido.|  
-|[Cómo: Aplicar automáticamente las claves de producto durante la implementación de Visual Studio](../install/how-to-automatically-apply-product-keys-when-deploying-visual-studio.md)|Describe cómo aplicar claves de producto al implementarse en varios equipos.|  
+|[Cómo: Aplicación automática de claves de producto durante la implementación de Visual Studio](../install/how-to-automatically-apply-product-keys-when-deploying-visual-studio.md)|Describe cómo aplicar claves de producto al implementarse en varios equipos.|  
 |[Guía del administrador del Visor de Ayuda](../ide/help-viewer-administrator-guide.md)|Proporciona información sobre cómo administrar las instalaciones locales de ayuda para los entornos de red que tienen o no tiene acceso a internet.|  
 |[Instalar Visual Studio](../install/install-visual-studio-2015.md)|Proporciona instrucciones y vínculos a temas que describen cómo instalar [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].|

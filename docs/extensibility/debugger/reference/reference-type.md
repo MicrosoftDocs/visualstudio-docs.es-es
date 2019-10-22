@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - REFERENCE_TYPE enumeration
 ms.assetid: b1ffba10-eb9d-48ba-bf48-6d8b71d6f270
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: dcfc3745676ba1309327dc84143b0706ba02b5a2
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: c45457566682e373b879892cfdd26707102ebd5f
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56694444"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66329283"
 ---
 # <a name="referencetype"></a>REFERENCE_TYPE
 Especifica el tipo de referencia.
@@ -39,10 +42,12 @@ public enum enum_REFERENCE_TYPE { 
 };
 ```
 
-## <a name="members"></a>Miembros
- REF_TYPE_WEAK especifica una referencia débil. No se puede combinar con `REF_TYPE_STRONG`.
+## <a name="fields"></a>Campos
+ `REF_TYPE_WEAK`\
+ Especifica una referencia débil. No se puede combinar con `REF_TYPE_STRONG`.
 
- REF_TYPE_STRONG especifica una referencia segura. No se puede combinar con `REF_TYPE_WEAK`.
+ `REF_TYPE_STRONG`\
+ Especifica una referencia segura. No se puede combinar con `REF_TYPE_WEAK`.
 
 ## <a name="remarks"></a>Comentarios
  Usar como el `dwRefType` miembro de la [DEBUG_REFERENCE_INFO](../../../extensibility/debugger/reference/debug-reference-info.md) estructura.

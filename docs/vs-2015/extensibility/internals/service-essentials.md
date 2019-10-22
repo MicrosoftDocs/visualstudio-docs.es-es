@@ -10,12 +10,12 @@ ms.assetid: fbe84ad9-efe1-48b1-aba3-b50b90424d47
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 5b659560c7242fa691fe046b5e1628b1e47c2a2d
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 407dda2f203b7be20b19c0e296caa9ce1c95b32c
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60111603"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65696080"
 ---
 # <a name="service-essentials"></a>Conceptos básicos del servicio
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -40,7 +40,7 @@ Un servicio es un contrato entre dos VSPackages. Un VSPackage proporciona un con
   
 - Para admitir la carga a petición, un proveedor de servicios registra sus servicios globales con [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]. Para obtener más información, consulte [registrar servicios](../../misc/registering-services.md).  
   
-- Después de obtener un servicio, utilice [QueryInterface](http://msdn.microsoft.com/library/62fce95e-aafa-4187-b50b-e6611b74c3b3) (código no administrado) o conversión (código administrado) para obtener la interfaz deseada, por ejemplo:  
+- Después de obtener un servicio, utilice [QueryInterface](https://msdn.microsoft.com/library/62fce95e-aafa-4187-b50b-e6611b74c3b3) (código no administrado) o conversión (código administrado) para obtener la interfaz deseada, por ejemplo:  
   
     ```vb  
     TryCast(GetService(GetType(SVsActivityLog)), IVsActivityLog)  
@@ -62,5 +62,5 @@ Un servicio es un contrato entre dos VSPackages. Un VSPackage proporciona un con
 ## <a name="see-also"></a>Vea también  
  [Lista de servicios disponibles](../../extensibility/internals/list-of-available-services.md)   
  [Uso y provisión de servicios](../../extensibility/using-and-providing-services.md)   
- [Casting and Type Conversions](http://msdn.microsoft.com/library/568df58a-d292-4b55-93ba-601578722878)  (Conversiones de tipos [Guía de programación de C#])  
- [Conversión](http://msdn.microsoft.com/library/3dbeb06e-2f4b-4693-832d-624bc8ec95de)
+ [Casting and Type Conversions](https://msdn.microsoft.com/library/568df58a-d292-4b55-93ba-601578722878)  (Conversiones de tipos [Guía de programación de C#])  
+ [Conversión](https://msdn.microsoft.com/library/3dbeb06e-2f4b-4693-832d-624bc8ec95de)

@@ -1,33 +1,33 @@
 ---
-title: Integración del Diseñador de esquemas XML con editor XML
+title: Integración del diseñador de esquemas XML con el editor XML
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 43d7a8e6-bd94-4407-a800-15a145c74223
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b8a233c0a1bbd456e08fe5343adae8328c5cb774
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: b9df2d97a6ff68299ab70545683970188eb1bfea
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60106336"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72601784"
 ---
 # <a name="integration-with-xml-editor"></a>Integración con el editor XML
 
-El Diseñador de esquemas XML está integrado con el editor XML. Si modifica un archivo XSD en el editor XML, el cambio se reflejará en el [Explorador de esquemas XML](../xml-tools/xml-schema-explorer.md). Si tiene la [vista gráfico](../xml-tools/graph-view.md) o [vista modelo de contenido](../xml-tools/content-model-view.md) abierto, el cambio también se reflejará allí. Puede navegar entre el Diseñador de esquemas XML y el editor XML de las maneras siguientes:
+El diseñador de esquemas XML está integrado con el editor XML. Si modifica un archivo XSD en el editor XML, el cambio se reflejará en el [Explorador de esquemas XML](../xml-tools/xml-schema-explorer.md). Si tiene abierta la [vista gráfico](../xml-tools/graph-view.md) o la [vista modelo de contenido](../xml-tools/content-model-view.md) , el cambio también se reflejará allí. Puede desplazarse entre el diseñador de esquemas XML y el editor XML de las siguientes maneras:
 
-- En el editor XML, haga clic en un nodo y seleccione **mostrar en Explorador de esquemas XML**.
+- En el editor XML, haga clic con el botón secundario en un nodo y seleccione **Mostrar en el explorador de esquemas XML**.
 
-- En la vista gráfico y la **Explorador de esquemas XML**, haga doble clic en un nodo, o haga clic en un nodo y seleccione **ver código**. En la vista de modelo de contenido, haga clic en un nodo y seleccione **ver código**.
+- En la vista gráfico y el **Explorador de esquemas XML**, haga doble clic en un nodo, o bien haga clic con el botón secundario en un nodo y seleccione **Ver código**. En la vista modelo de contenido, haga clic con el botón secundario en un nodo y seleccione **Ver código**.
 
-Captura de pantalla siguiente muestra un esquema de XML abierto en el **Explorador de esquemas XML**. El **Explorador de esquemas XML** muestra el esquema especificado en una vista de árbol. El editor XML muestra la vista de texto del nodo que está activo actualmente en el **Explorador de esquemas XML**.
+En la captura de pantalla siguiente se muestra un esquema XML abierto en el **Explorador de esquemas XML**. El **Explorador de esquemas XML** muestra el conjunto de esquemas en una vista de árbol. El editor XML muestra la vista de texto del nodo que está actualmente activo en el **Explorador de esquemas XML**.
 
 ![XSDDesignerWithXMLEditor](../xml-tools/media/xsddesignerwithxmleditor.gif)
 
-A veces resulta útil ver el código en el editor XML y el diseñador gráfico en paralelo. Para ver ambos archivos al mismo tiempo, haga doble clic en cualquier lugar en el editor XML y seleccione **Diseñador de vistas**. En el menú de Windows de Visual Studio, seleccione **nuevo Horizontal (o Vertical) grupo de pestañas**.
+A veces resulta útil ver el código en el editor XML y en el diseñador gráfico en paralelo. Para ver ambos archivos al mismo tiempo, haga clic con el botón secundario en cualquier parte del editor XML y seleccione **Diseñador de vistas**. En el menú ventanas de Visual Studio, seleccione **nuevo grupo de pestañas horizontal (o vertical)** .
 
 ![XSDDesignerWithXMLEditorAndCMV](../xml-tools/media/xsddesignerwithxmleditorandcmv.gif)
 

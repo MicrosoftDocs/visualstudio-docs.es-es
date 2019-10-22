@@ -17,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 567eba3da4856cd88a583bf614d5afbc13e77b0d
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 0aa124d25e279b7e44292645d81d80829f5d3f8f
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60074926"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63420197"
 ---
 # <a name="how-to-customize-a-sharepoint-solution-package"></a>Procedimiento Personalizar un paquete de solución de SharePoint
   Puede usar el Diseñador de paquetes para crear y personalizar un paquete (*.wsp*). Por ejemplo, puede agregar elementos de proyecto de SharePoint y características, especifique si el servidor Web se restablece cuando se implementa la solución y establecer el tipo de servidor de implementación.
@@ -47,7 +47,7 @@ ms.locfileid: "60074926"
 2. Expanda el paquete, expanda Package.package y, a continuación, abra el *Package.Template.xml* archivo.
 
     > [!NOTE]
-    >  Al abrir el archivo de manifiesto XML para la plantilla de paquete, los archivos se validan automáticamente y puede omitir las advertencias que aparecen en la ventana Lista de errores.
+    > Al abrir el archivo de manifiesto XML para la plantilla de paquete, los archivos se validan automáticamente y puede omitir las advertencias que aparecen en la ventana Lista de errores.
 
 ## <a name="change-the-manifest-template"></a>Cambiar la plantilla de manifiesto
  Puede cambiar el código XML para el archivo de manifiesto empaquetado en el Editor XML de Visual Studio o en el panel de la plantilla de manifiesto. Los cambios en el código XML se combinan en el archivo de manifiesto empaquetado para el paquete.
@@ -68,7 +68,7 @@ ms.locfileid: "60074926"
  Puede deshabilitar el Diseñador de paquetes y crear el *manifest.xml* archivo manualmente. La primera vez que realice este procedimiento, la configuración actual en el Diseñador de paquetes se guarda en el archivo XML de plantilla de paquete. A continuación, puede modificar o sobrescribir el código XML.
 
 > [!NOTE]
->  Si agrega o quita elementos de proyecto de SharePoint y las características en el archivo XML mientras está deshabilitado el Diseñador de paquetes, estos elementos de proyecto y características no están empaquetadas.
+> Si agrega o quita elementos de proyecto de SharePoint y las características en el archivo XML mientras está deshabilitado el Diseñador de paquetes, estos elementos de proyecto y características no están empaquetadas.
 
 #### <a name="to-overwrite-packaged-manifest-file-by-disabling-the-designer"></a>Para sobrescribir el archivo de manifiesto empaquetado deshabilitando el diseñador
 

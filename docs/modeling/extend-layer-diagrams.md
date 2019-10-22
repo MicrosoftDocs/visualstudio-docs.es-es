@@ -5,33 +5,23 @@ ms.topic: conceptual
 helpviewer_keywords:
 - dependency diagrams, creating extensions
 - layer models
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5519328ef69f98737a7744f0162bdc0951433a60
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 8a8297ede4ce703c738133952bb13669ef6a6637
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60082898"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72645683"
 ---
 # <a name="extend-dependency-diagrams"></a>Ampliar diagramas de dependencia
 
 Puede escribir código para crear y actualizar diagramas de dependencia y para validar la estructura del código del programa con diagramas de dependencia en Visual Studio. Puede agregar los comandos que aparecen en el menú contextual de los diagramas, personalizar gestos de arrastrar y colocar, así como obtener acceso al modelo de capas desde las plantillas de texto. Puede empaquetar estas extensiones en una extensión de integración de Visual Studio (VSIX) y distribuirla a otros usuarios de Visual Studio.
 
- Para obtener más información acerca de los diagramas de dependencia, consulte:
-
-- [Diagramas de dependencia: referencia](../modeling/layer-diagrams-reference.md)
-
-- [Diagramas de dependencia: directrices](../modeling/layer-diagrams-guidelines.md)
-
-- [Creación de diagramas de dependencia a partir del código](../modeling/create-layer-diagrams-from-your-code.md)
-
-- [Validación de código con diagramas de dependencia](../modeling/validate-code-with-layer-diagrams.md)
-
-## <a name="prereqs"></a> Requisitos
+## <a name="requirements"></a>Requisitos
 
 Necesita tener instalado lo siguiente en el equipo donde desea desarrollar las extensiones de capa:
 
@@ -43,20 +33,11 @@ Necesita tener instalado lo siguiente en el equipo donde desea desarrollar las e
 
 [!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]
 
-Debe tener una versión adecuada de Visual Studio instalada en el equipo donde desea ejecutar las extensiones de capas.
-
-Para ver qué versiones de Visual Studio admiten diagramas de dependencia, vea [compatibilidad con la versión de arquitectura y las herramientas de modelado](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
-
-## <a name="in-this-section"></a>En esta sección
- [Adición de comandos y gestos a diagramas de dependencia](../modeling/add-commands-and-gestures-to-layer-diagrams.md)
-
- [Adición de validación de arquitectura personalizada a diagramas de dependencia](../modeling/add-custom-architecture-validation-to-layer-diagrams.md)
-
- [Adición de propiedades personalizadas a diagramas de dependencia](../modeling/add-custom-properties-to-layer-diagrams.md)
+Debe tener una edición adecuada de Visual Studio instalada en el equipo en el que desea ejecutar las extensiones de capa. Para ver qué ediciones de Visual Studio admiten diagramas de dependencia, vea [compatibilidad de la edición con las herramientas de arquitectura y modelado](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
 
 ## <a name="see-also"></a>Vea también
 
 - [Diagramas de dependencia: referencia](../modeling/layer-diagrams-reference.md)
-- [Diagramas de dependencia: directrices](../modeling/layer-diagrams-guidelines.md)
+- [Diagramas de dependencia: instrucciones](../modeling/layer-diagrams-guidelines.md)
 - [Creación de diagramas de dependencia a partir del código](../modeling/create-layer-diagrams-from-your-code.md)
 - [Validación de código con diagramas de dependencia](../modeling/validate-code-with-layer-diagrams.md)

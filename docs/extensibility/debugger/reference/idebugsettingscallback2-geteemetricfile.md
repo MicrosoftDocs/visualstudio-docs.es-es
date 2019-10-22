@@ -5,17 +5,20 @@ ms.topic: reference
 helpviewer_keywords:
 - IDebugSettingsCallback2::GetEEMetricFile
 ms.assetid: 3a0bf9e5-bbd2-4d15-840d-8244732787fc
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 370ee63ff31bcb0eeba82fbb55fd37166de7ff52
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 824b947af25ef825d4f02983e17ecad3105028f3
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56721243"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66322146"
 ---
 # <a name="idebugsettingscallback2geteemetricfile"></a>IDebugSettingsCallback2::GetEEMetricFile
 Recupera el archivo de métrica del evaluador de expresiones de expresión asigna el nombre o la métrica.
@@ -40,22 +43,18 @@ private int GetEEMetricFile(
 );
 ```
 
-#### <a name="parameters"></a>Parámetros
- `guidLang`
+## <a name="parameters"></a>Parámetros
+`guidLang`\
+[in] Identificador único del lenguaje de programación.
 
- [in] Identificador único del lenguaje de programación.
+`guidVendor`\
+[in] Identificador único del proveedor.
 
- `guidVendor`
+`pszMetric`\
+[in] Nombre de la métrica.
 
- [in] Identificador único del proveedor.
-
- `pszMetric`
-
- [in] Nombre de la métrica.
-
- `pbstrValue`
-
- [out] Devuelve el contenido del archivo métrica como una cadena.
+`pbstrValue`\
+[out] Devuelve el contenido del archivo métrica como una cadena.
 
 ## <a name="return-value"></a>Valor devuelto
  Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.

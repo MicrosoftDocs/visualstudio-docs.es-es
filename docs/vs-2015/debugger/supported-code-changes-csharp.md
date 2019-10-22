@@ -16,12 +16,12 @@ caps.latest.revision: 30
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: cc1c6183eece2799d99907cd5f5ec9489a268542
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 6fc02c11a4ebceea431fc06a1bd1cfdb1063097d
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60117660"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67823537"
 ---
 # <a name="supported-code-changes-c"></a>Cambios admitidos en el código (C#)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -57,17 +57,17 @@ Editar y continuar controla la mayoría de los tipos de cambios de código dentr
   
 - Depurar código LINQ en determinadas circunstancias. Para obtener más información, vea [Depurar LINQ](../debugger/debugging-linq.md).  
   
-    - Capturar una variable que no se ha capturado antes.  
-  
-    - Cambiar el tipo de expresión de consulta (por ejemplo, seleccionar un = > Seleccionar nuevo {A = un};)  
-  
-    - Quitar un `where` que contiene una instrucción activa.  
-  
-    - Quitar un `let` que contiene una instrucción activa.  
-  
-    - Quitar un `join` que contiene una instrucción activa.  
-  
-    - Quitar un `orderby` que contiene una instrucción activa.  
+  - Capturar una variable que no se ha capturado antes.  
+
+  - Cambiar el tipo de expresión de consulta (por ejemplo, seleccionar un = > Seleccionar nuevo {A = un};)  
+
+  - Quitar un `where` que contiene una instrucción activa.  
+
+  - Quitar un `let` que contiene una instrucción activa.  
+
+  - Quitar un `join` que contiene una instrucción activa.  
+
+  - Quitar un `orderby` que contiene una instrucción activa.  
   
 - Depuración en modo mixto (nativa o administrada).  
   

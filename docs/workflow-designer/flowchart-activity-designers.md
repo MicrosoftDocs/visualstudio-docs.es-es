@@ -1,23 +1,23 @@
 ---
-title: Diseñador de flujo de trabajo - diseñadores de actividades Flowchart
+title: 'Diseñador de flujo de trabajo: diseñadores de actividad de diagrama de flujo'
 ms.date: 11/04/2016
 ms.topic: reference
 ms.assetid: 8b7b4aa6-d27d-45c8-87c2-641440d38afc
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4f3b816c0e486eeaad49bac0b0054d7d3c2bff9b
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: c7426ea21e1928eb46a2b733df7eb24c9de6e147
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55950427"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72650439"
 ---
 # <a name="flowchart-activity-designers"></a>Diseñadores de actividades Flowchart
 
-Diseñador de flujo de trabajo incluye una serie de actividades proporcionadas por el sistema que puede utilizar cuando cree flujos de trabajo. En esta sección se incluyen las actividades proporcionadas por el sistema que se utilizan para administrar los diagramas de flujo dentro de un flujo de trabajo. Los siguientes temas describen estas actividades y ofrecen orientación sobre cómo utilizarlas.
+Diseñador de flujo de trabajo incluye varias actividades proporcionadas por el sistema que se pueden usar al construir los flujos de trabajo. En esta sección se incluyen las actividades proporcionadas por el sistema que se utilizan para administrar los diagramas de flujo dentro de un flujo de trabajo. Los siguientes temas describen estas actividades y ofrecen orientación sobre cómo utilizarlas.
 
 ## <a name="reference"></a>Referencia
  <xref:System.Activities.Activity>

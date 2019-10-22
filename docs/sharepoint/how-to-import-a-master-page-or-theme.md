@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 1be553955abdc42c2a9b4d09ff857e9236b1a002
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 6cac959fb4f9c52849e6e121943fd847deb923d0
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60081911"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63427398"
 ---
 # <a name="how-to-import-a-master-page-or-theme"></a>Procedimiento Importar un tema o página maestra
   Puede dar las páginas en el sitio de SharePoint una apariencia coherente mediante la creación y uso de temas y las páginas maestras. [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] no proporciona plantillas para estos elementos, pero puede crearlas en SharePoint Designer y, a continuación, importarlos en [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]. Para obtener más información, consulte [bloques de creación: Interfaz de usuario y las páginas](http://go.microsoft.com/fwlink/?LinkID=182095) en el sitio Web de Microsoft.
@@ -48,7 +48,7 @@ ms.locfileid: "60081911"
 8. Si ha agregado una página maestra, cambiar su **Deployment Conflict Resolution** si se establece en **automática** en las propiedades del módulo.
 
     > [!NOTE]
-    >  Pueden producirse errores si el nombre de la página maestra es el mismo que el nombre de una página principal existente que está marcado como página maestra predeterminada o página maestra personalizada. Para obtener información sobre cómo resolver este problema, consulte [Tutorial: Importar una página maestra personalizada y la página del sitio con una imagen](../sharepoint/walkthrough-import-a-custom-master-page-and-site-page-with-an-image.md).
+    > Pueden producirse errores si el nombre de la página maestra es el mismo que el nombre de una página principal existente que está marcado como página maestra predeterminada o página maestra personalizada. Para obtener información sobre cómo resolver este problema, consulte [Tutorial: Importar una página maestra personalizada y la página del sitio con una imagen](../sharepoint/walkthrough-import-a-custom-master-page-and-site-page-with-an-image.md).
 
 9. En el módulo, abra *Elements.xml*.
 
@@ -81,7 +81,7 @@ ms.locfileid: "60081911"
      Un valor de **Web** significa que la página maestra que se aplica solo al sitio Web que se especifica actualmente en el proyecto. Un valor de **sitio** significa que la página maestra se aplica a la colección de sitios actual, que incluye todos los subsitios y el sitio web raíz. No se aplican los demás valores.
 
     > [!NOTE]
-    >  Dado que los temas se aplican solo a nivel de colección de sitios, se recomienda no establecer el ámbito de un tema en algo distinto **sitio**. Pueden producirse errores si se usa un tema en un sitio secundario.
+    > Dado que los temas se aplican solo a nivel de colección de sitios, se recomienda no establecer el ámbito de un tema en algo distinto **sitio**. Pueden producirse errores si se usa un tema en un sitio secundario.
 
 12. En la barra de menús, elija **compilar** > **implementar solución**.
 

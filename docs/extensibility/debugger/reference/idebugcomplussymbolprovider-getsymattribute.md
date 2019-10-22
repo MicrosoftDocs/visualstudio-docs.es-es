@@ -6,17 +6,20 @@ helpviewer_keywords:
 - IDebugComPlusSymbolProvider::GetSymAttribute
 - GetSymAttribute
 ms.assetid: 6cbaac92-a60b-4165-a7f5-c34407770f3c
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: bc0b5f5c8b435358464bd8b8f3984aee54af79b1
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 5d4da2269211d4ae3e61061cbd3dee5f9d5e1264
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56701230"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66336690"
 ---
 # <a name="idebugcomplussymbolprovidergetsymattribute"></a>IDebugComPlusSymbolProvider::GetSymAttribute
 Recupera los símbolos de depuración con el atributo primario dado para el módulo especificado.
@@ -47,34 +50,27 @@ int GetSymAttribute (
 );
 ```
 
-#### <a name="parameters"></a>Parámetros
-`ulAppDomainID`
+## <a name="parameters"></a>Parámetros
+`ulAppDomainID`\
+[in] Identificador del dominio de aplicación.
 
- [in] Identificador del dominio de aplicación.
+`guidModule`\
+[in] Identificador único del módulo.
 
-`guidModule`
+`tokParent`\
+[in] Símbolo (token) del atributo primario.
 
- [in] Identificador único del módulo.
+`pstrName`\
+[in] Nombre del módulo.
 
-`tokParent`
+`cBuffer`\
+[in] Número de bytes necesarios para la salida `buffer`.
 
- [in] Símbolo (token) del atributo primario.
+`pcBuffer`\
+[out] Longitud de la salida `buffer`.
 
-`pstrName`
-
- [in] Nombre del módulo.
-
-`cBuffer`
-
- [in] Número de bytes necesarios para la salida `buffer`.
-
-`pcBuffer`
-
- [out] Longitud de la salida `buffer`.
-
-`buffer`
-
- [out] Matriz que contiene los símbolos.
+`buffer`\
+[out] Matriz que contiene los símbolos.
 
 ## <a name="return-value"></a>Valor devuelto
 Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.

@@ -18,12 +18,12 @@ caps.latest.revision: 19
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 66e9e5a3f0a46f54346c71d85bad03846c12f937
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 734a55cb06ee46afc6fc3518d6dffe349690d3d7
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60050315"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65697493"
 ---
 # <a name="how-to-use-the-parallel-watch-window"></a>Procedimiento Utilice la ventana Inspección paralela
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,7 +37,7 @@ En la ventana Inspección paralela, puede mostrar simultáneamente los valores q
 - Una columna configurable que puede mostrar el equipo, proceso, mosaico, tarea y subproceso.  
   
   > [!TIP]
-  >  Debe abrir el **tareas en paralelo** ventana para mostrar la información de la tarea en el **inspección paralela** ventana.  
+  > Debe abrir el **tareas en paralelo** ventana para mostrar la información de la tarea en el **inspección paralela** ventana.  
   
 - El  **\<Agregar inspección >** columna, donde puede escribir expresiones para inspeccionar.  
   
@@ -90,4 +90,4 @@ En la ventana Inspección paralela, puede mostrar simultáneamente los valores q
 ## <a name="see-also"></a>Vea también  
  [Depuración de aplicaciones multiproceso](../debugger/debug-multithreaded-applications-in-visual-studio.md)   
  [Cómo: Uso de la ventana Subprocesos de GPU](../debugger/how-to-use-the-gpu-threads-window.md)   
- [Tutorial: Depurar una aplicación de C++ AMP](http://msdn.microsoft.com/library/40e92ecc-f6ba-411c-960c-b3047b854fb5)
+ [Tutorial: Depurar una aplicación de C++ AMP](https://msdn.microsoft.com/library/40e92ecc-f6ba-411c-960c-b3047b854fb5)

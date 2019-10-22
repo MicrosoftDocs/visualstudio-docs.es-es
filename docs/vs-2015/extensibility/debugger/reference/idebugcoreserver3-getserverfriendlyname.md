@@ -12,12 +12,12 @@ ms.assetid: 7035b904-b3d7-4d9b-98d9-65714b8a8b9f
 caps.latest.revision: 9
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: a29a8553a128903ed6da037f605a14bcb1db367c
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: fa81daf7ab1d592e6a2cd460268e5d66925f61e1
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58994702"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445273"
 ---
 # <a name="idebugcoreserver3getserverfriendlyname"></a>IDebugCoreServer3::GetServerFriendlyName
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -43,7 +43,7 @@ int GetServerFriendlyName(
  [out] Devuelve un nombre descriptivo para el servidor.  
   
 > [!NOTE]
->  El llamador es responsable de liberar la cadena.  
+> El llamador es responsable de liberar la cadena.  
   
 ## <a name="return-value"></a>Valor devuelto  
  Si es correcto, devuelve `S_OK`; en caso contrario, devuelve el código de error.  

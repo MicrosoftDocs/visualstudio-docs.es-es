@@ -10,18 +10,18 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 8f41aa8c074f724976adabaa99df0e8ca0064fa3
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60103308"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68161545"
 ---
 # <a name="configure-the-windows-firewall-for-remote-debugging"></a>Configurar el Firewall de Windows para la depuración remota
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Este tema se describe cómo configurar el firewall para habilitar la depuración remota en equipos que ejecutan los sistemas operativos siguientes:  
   
-- Windows 7  
+- Windows 7  
   
 - Windows 8/8.1  
   
@@ -88,8 +88,8 @@ Este tema se describe cómo configurar el firewall para habilitar la depuración
 |||||  
 |-|-|-|-|  
 |**Puertos**|**Entrante/saliente**|**Protocolo**|**Descripción**|  
-|135, 139, 445|Saliente|TCP|Obligatorio.|  
-|137, 138|Saliente|UDP|Obligatorio.|  
+|135, 139, 445|Saliente|TCP|Necesario.|  
+|137, 138|Saliente|UDP|Necesario.|  
 |500, 4500|Saliente|UDP|Necesario si la directiva de dominio exige que la comunicación de red se realice a través de IPSec.|  
 |80|Saliente|TCP|Necesario para la depuración en el servidor web.|  
   
@@ -105,7 +105,7 @@ Este tema se describe cómo configurar el firewall para habilitar la depuración
   
 5. En la página **Acción** , seleccione **Permitir la conexión** y, a continuación, haga clic en **Siguiente**.  
   
-6. En la página **Perfil** seleccione uno o más tipos de red para habilitar para el puerto. Los tipos seleccionados deben incluir la red a la que está conectado el equipo remoto. Después, haga clic en **Siguiente**.  
+6. En la página **Perfil** seleccione uno o más tipos de red para habilitar para el puerto. Los tipos seleccionados deben incluir la red a la que está conectado el equipo remoto. A continuación, haga clic en **Siguiente**.  
   
 7. En la página **Nombre** , escriba un nombre para la regla y, a continuación, haga clic en **Finalizar**.  
   

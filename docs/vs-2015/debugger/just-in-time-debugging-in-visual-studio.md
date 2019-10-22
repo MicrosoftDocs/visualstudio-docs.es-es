@@ -16,12 +16,12 @@ caps.latest.revision: 51
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 1f2d3f0bd70a4c7be82b991eb5397065fe3d4ee7
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: ad2814dffa75809a318dc7cebe7831b5ecec7d29
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60116178"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65690607"
 ---
 # <a name="just-in-time-debugging-in-visual-studio"></a>Depuración Just-In-Time en Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -92,7 +92,7 @@ Las acciones que debe realizar cuando ve el Visual Studio Just-in-Time cuadro de
 5. Cerrar la **Editor del registro** ventana.
 
 > [!NOTE]
->  Si desea deshabilitar la depuración para una aplicación de servidor Just-In-Time y estos pasos no resuelven el problema, desactive la depuración del lado servidor en la configuración de la aplicación de IIS y vuelva a intentar.
+> Si desea deshabilitar la depuración para una aplicación de servidor Just-In-Time y estos pasos no resuelven el problema, desactive la depuración del lado servidor en la configuración de la aplicación de IIS y vuelva a intentar.
 
 #### <a name="to-enable-just-in-time-debugging-of-a-windows-form"></a>Para habilitar la depuración Just-In-Time para un Windows Form
 
@@ -102,7 +102,7 @@ Las acciones que debe realizar cuando ve el Visual Studio Just-in-Time cuadro de
 
      Para habilitar Just-In-Time la depuración de una aplicación de Windows Forms, debe realizar los siguientes pasos adicionales:
 
-2. Establecer el `jitDebugging` valor `true` en el `system.windows.form` sección del archivo machine.config o  *\<nombre de aplicación >*. archivo exe.config:
+2. Establecer el `jitDebugging` valor `true` en el `system.windows.form` sección del archivo machine.config o  *\<nombre de aplicación >* . archivo exe.config:
 
     ```
     <configuration>
@@ -110,7 +110,7 @@ Las acciones que debe realizar cuando ve el Visual Studio Just-in-Time cuadro de
     </configuration>
     ```
 
-3. En una aplicación de Windows Forms de C++, también debe establecer `DebuggableAttribute` en un archivo .config o en el código. Si compila con la opción [/Zi](http://msdn.microsoft.com/library/ce9fa7e1-0c9b-47e3-98ea-26d1a16257c8) y sin la opción [/Og](http://msdn.microsoft.com/library/d10630cc-b9cf-4e97-bde3-8d7ee79e9435), el compilador establece este atributo automáticamente. Sin embargo, si desea depurar una compilación de versión no optimizada, deberá establecerlo personalmente. Puede hacerlo agregando la siguiente línea al archivo AssemblyInfo.cpp de la aplicación:
+3. En una aplicación de Windows Forms de C++, también debe establecer `DebuggableAttribute` en un archivo .config o en el código. Si compila con la opción [/Zi](https://msdn.microsoft.com/library/ce9fa7e1-0c9b-47e3-98ea-26d1a16257c8) y sin la opción [/Og](https://msdn.microsoft.com/library/d10630cc-b9cf-4e97-bde3-8d7ee79e9435), el compilador establece este atributo automáticamente. Sin embargo, si desea depurar una compilación de versión no optimizada, deberá establecerlo personalmente. Puede hacerlo agregando la siguiente línea al archivo AssemblyInfo.cpp de la aplicación:
 
     ```
     [assembly:System::Diagnostics::DebuggableAttribute(true, true)];
@@ -140,7 +140,7 @@ static void Main(string[] args)
 ```
 
 > [!IMPORTANT]
->  Para este procedimiento para que funcione un [configuración release](../debugger/how-to-set-debug-and-release-configurations.md), deberá desactivar [solo mi código](../debugger/just-my-code.md). En Visual Studio, haga clic en **herramientas / opciones**. En el **opciones** cuadro de diálogo, seleccione **depuración**. Quitar la marca de verificación de **habilitar solo mi código**.
+> Para este procedimiento para que funcione un [configuración release](../debugger/how-to-set-debug-and-release-configurations.md), deberá desactivar [solo mi código](../debugger/just-my-code.md). En Visual Studio, haga clic en **herramientas / opciones**. En el **opciones** cuadro de diálogo, seleccione **depuración**. Quitar la marca de verificación de **habilitar solo mi código**.
 
  Compile la solución (en Visual Studio, elija **compilar o recompilar solución**). Puede elegir la depuración o la configuración de lanzamiento. Para más información sobre las configuraciones de compilación, vea [Descripción de las configuraciones de compilación](../ide/understanding-build-configurations.md).
 
@@ -157,7 +157,7 @@ static void Main(string[] args)
  Haga clic en no **cancelar**! Después de unos segundos, debería ver dos botones, **depurar** y **cerrar programa**. Haga clic en **depurar**.
 
 > [!CAUTION]
->  Si la aplicación contiene código no seguro, aparece un cuadro de diálogo con una advertencia de seguridad. Este cuadro de diálogo le permite decidir si desea continuar o no con la depuración. Antes de continuar con la depuración, decida si confía en el código. ¿Escribió el código usted mismo? ¿Confía en el codificador? Si la aplicación se ejecuta en un equipo remoto, ¿reconoce el nombre del proceso? Incluso si la aplicación se ejecuta localmente, no significa necesariamente que se pueda confiar en ella. Considere la posibilidad de código malintencionado que se ejecuta en el equipo. Si decide que el código que va a depurar es de confianza, haga clic en **depurar**. En caso contrario, haga clic en **no depurar**.
+> Si la aplicación contiene código no seguro, aparece un cuadro de diálogo con una advertencia de seguridad. Este cuadro de diálogo le permite decidir si desea continuar o no con la depuración. Antes de continuar con la depuración, decida si confía en el código. ¿Escribió el código usted mismo? ¿Confía en el codificador? Si la aplicación se ejecuta en un equipo remoto, ¿reconoce el nombre del proceso? Incluso si la aplicación se ejecuta localmente, no significa necesariamente que se pueda confiar en ella. Considere la posibilidad de código malintencionado que se ejecuta en el equipo. Si decide que el código que va a depurar es de confianza, haga clic en **depurar**. En caso contrario, haga clic en **no depurar**.
 
  El **Just In Time de Visual Studio Debugger** aparecerá la ventana:
 
@@ -165,7 +165,7 @@ static void Main(string[] args)
 
  En **depuradores posibles**, debería ver que el **nueva instancia de Microsoft Visual Studio 2015** línea seleccionada. Si aún no está activada, selecciónela.
 
- En la parte inferior de la ventana, en **desea depurar mediante el depurador seleccionado?**, haga clic en **Sí**.
+ En la parte inferior de la ventana, en **desea depurar mediante el depurador seleccionado?** , haga clic en **Sí**.
 
  El proyecto ThrowsNullException se abre en una nueva instancia de Visual Studio, con la ejecución se detendrá en la línea que produce la excepción:
 

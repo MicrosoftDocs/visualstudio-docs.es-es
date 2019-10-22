@@ -1,5 +1,5 @@
 ---
-title: IDebugApplicationNodeEvents::onAttach | Microsoft Docs
+title: 'Idebugapplicationnodeevents (:: alattach | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d606292eda60fbb367802dbd5df973b933f3fe14
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: e45af6b931dad28a41f8f4453db9fab96405df3b
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58155737"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72574686"
 ---
 # <a name="idebugapplicationnodeeventsonattach"></a>IDebugApplicationNodeEvents::onAttach
-Controla un evento lo que significa que el objeto de nodo de la aplicación de depuración se ha adjuntado a un nodo primario.  
+Controla un evento que indica que el objeto de nodo de la aplicación de depuración se ha asociado a un nodo primario.  
   
 ## <a name="syntax"></a>Sintaxis  
   
@@ -37,7 +37,7 @@ HRESULT onAttach(
   
 #### <a name="parameters"></a>Parámetros  
  `prddpParent`  
- [in] El nodo de aplicación de depuración es el elemento primario de este nodo.  
+ de El nodo de la aplicación de depuración que es el elemento primario de este nodo.  
   
 ## <a name="return-value"></a>Valor devuelto  
  El método devuelve un objeto `HRESULT`. Entre los valores posibles se incluyen los que se indican en la tabla siguiente, entre otros.  
@@ -47,11 +47,11 @@ HRESULT onAttach(
 |`S_OK`|El método se realizó correctamente.|  
   
 ## <a name="remarks"></a>Comentarios  
- Este método controla un evento lo que significa que el objeto de nodo de la aplicación de depuración se ha adjuntado a un nodo primario.  
+ Este método controla un evento que indica que el objeto de nodo de la aplicación de depuración se ha asociado a un nodo primario.  
   
- Los implementadores de la `IDebugApplicationNode` interfaz se genera este evento.  
+ Los implementadores de la interfaz `IDebugApplicationNode` producen este evento.  
   
 ## <a name="see-also"></a>Vea también  
- [IDebugApplicationNodeEvents (interfaz)](../../winscript/reference/idebugapplicationnodeevents-interface.md)   
- [IDebugApplicationNodeEvents::onDetach](../../winscript/reference/idebugapplicationnodeevents-ondetach.md)   
+ @No__t_1 de la [interfaz idebugapplicationnodeevents (](../../winscript/reference/idebugapplicationnodeevents-interface.md)  
+ [Idebugapplicationnodeevents (:: detach](../../winscript/reference/idebugapplicationnodeevents-ondetach.md)    
  [IDebugApplicationNode (Interfaz)](../../winscript/reference/idebugapplicationnode-interface.md)

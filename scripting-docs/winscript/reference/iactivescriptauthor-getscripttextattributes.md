@@ -1,5 +1,5 @@
 ---
-title: IActiveScriptAuthor::GetScriptTextAttributes | Documentos de Microsoft
+title: 'Iactivescriptauthor (:: GetScriptTextAttributes | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 75e0d5edf7cf2f83e814036cec56a1b19a89813e
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: f89c7b654cc2ac7248598ee6498a3a290d17e2ef
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58151939"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72563152"
 ---
 # <a name="iactivescriptauthorgetscripttextattributes"></a>IActiveScriptAuthor::GetScriptTextAttributes
-Devuelve los atributos de texto de un bloque de script.  
+Devuelve los atributos de texto para un bloque de script.  
   
 ## <a name="syntax"></a>Sintaxis  
   
@@ -41,28 +41,28 @@ HRESULT GetScriptTextAttributes(
   
 #### <a name="parameters"></a>Parámetros  
  `pszCode`  
- [in, size_is (`cch`)] el texto del bloque de script. Esta cadena no tiene que estar terminado en null.  
+ [in, size_is (`cch`)] Texto del bloque de script. Esta cadena no tiene que estar terminada en NULL.  
   
  `cch`  
- [in] El tamaño usado para la `pszCode` y `pattr` parámetros.  
+ de Tamaño utilizado para los parámetros `pszCode` y `pattr`.  
   
  `pszDelimiter`  
- [in] La dirección del delimitador de fin de secuencia de comandos. Cuando `pszCode` se analiza desde una secuencia de texto, el host normalmente utiliza un delimitador (por ejemplo, dos comillas simples), para detectar el final del scriptlet. Establezca este parámetro en NULL si no hay ningún delimitador para identificar el final del bloque de script.  
+ de Dirección del delimitador de final de script. Cuando `pszCode` se analiza desde un flujo de texto, el host normalmente usa un delimitador (como dos comillas simples) para detectar el final del Scriptlet. Establezca este parámetro en NULL si no hay ningún delimitador para identificar el final del bloque de script.  
   
  `dwFlags`  
- [in] Marcas que están asociadas con los atributos de texto del bloque de script. Puede ser una combinación de los siguientes valores:  
+ de Marcas que están asociadas a los atributos de texto del bloque de script. Puede ser una combinación de los siguientes valores:  
   
 |Constante|Valor|Descripción|  
 |--------------|-----------|-----------------|  
 |GETATTRTYPE_DEPSCAN|0x0001|Identificar los identificadores que tienen el atributo SOURCETEXT_ATTR_IDENTIFIER e identificar los operadores de puntos que tienen el atributo SOURCETEXT_ATTR_MEMBERLOOKUP.|  
-|GETATTRFLAG_THIS|0x0100|Identificar el objeto actual que tiene el atributo SOURCETEXT_ATTR_THIS.|  
-|GETATTRFLAG_HUMANTEXT|0x8000|Identificar el texto de comentario y el contenido de cadena que tiene el atributo SOURCETEXT_ATTR_HUMANTEXT.|  
+|GETATTRFLAG_THIS|0x0100|Identifique el objeto actual que tiene el atributo SOURCETEXT_ATTR_THIS.|  
+|GETATTRFLAG_HUMANTEXT|0x8000|Identifique el contenido de la cadena y el texto del comentario que tenga el atributo SOURCETEXT_ATTR_HUMANTEXT.|  
   
  `pattr`  
- [in, out, size_is (`cch`)] la información de color para el código del bloque de script.  
+ [in, out, size_is (`cch`)] Información de color para el código de bloque de script.  
   
 ## <a name="return-value"></a>Valor devuelto  
- Una clase `HRESULT`. Entre los valores posibles se incluyen los que se indican en la tabla siguiente, entre otros.  
+ Interfaz `HRESULT`. Entre los valores posibles se incluyen los que se indican en la tabla siguiente, entre otros.  
   
 |Valor|Descripción|  
 |-----------|-----------------|  
@@ -71,5 +71,5 @@ HRESULT GetScriptTextAttributes(
 ## <a name="remarks"></a>Comentarios  
   
 ## <a name="see-also"></a>Vea también  
- [IActiveScriptAuthor (interfaz)](../../winscript/reference/iactivescriptauthor-interface.md)   
+ @No__t_1 de la [interfaz iactivescriptauthor (](../../winscript/reference/iactivescriptauthor-interface.md)  
  [SOURCE_TEXT_ATTR (Enumeración)](../../winscript/reference/source-text-attr-enumeration.md)

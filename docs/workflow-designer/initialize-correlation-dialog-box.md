@@ -1,36 +1,36 @@
 ---
-title: 'Diseñador de flujo de trabajo: cuadro de diálogo inicializar correlación'
+title: 'Diseñador de flujo de trabajo: inicializar el cuadro de diálogo correlación'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
 - InitializeCorrelation.UI
 ms.assetid: 2a0a1cd3-7b9e-493e-9264-fcf85289ffcf
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8fab86b39cd927d516bc627630a29feee1698daa
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: d0b23f10184516ea4ffc3b00ac98e32ca8b387c1
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55919890"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72650193"
 ---
 # <a name="initialize-correlation-dialog-box"></a>Inicializar correlación (cuadro de diálogo)
 
-El **inicializar correlación** cuadro de diálogo se usa en el Diseñador de flujo de trabajo para editar el <xref:System.ServiceModel.Activities.InitializeCorrelation.CorrelationData%2A> propiedad de un <xref:System.ServiceModel.Activities.InitializeCorrelation> actividad. Para obtener más información, consulte [InitializeCorrelation](../workflow-designer/initializecorrelation-activity-designer.md).
+El cuadro de diálogo **inicializar correlación** se utiliza en diseñador de flujo de trabajo para editar la propiedad <xref:System.ServiceModel.Activities.InitializeCorrelation.CorrelationData%2A> de una actividad <xref:System.ServiceModel.Activities.InitializeCorrelation>. Para obtener más información, vea [InitializeCorrelation](../workflow-designer/initializecorrelation-activity-designer.md).
 
-La tabla siguiente describen los elementos de interfaz de usuario de la **inicializar correlación** cuadro de diálogo:
+En la tabla siguiente se describen los elementos de la interfaz de usuario (IU) del cuadro de diálogo **inicializar correlación** :
 
 |Elemento de la interfaz de usuario|Descripción|
 |-|-----------------|
 |**Correlación**|El objeto <xref:System.ServiceModel.Activities.CorrelationHandle> de la correlación que se va a inicializar.|
-|**Inicializar en**|Un par clave-valor que contiene los datos que se van a inicializar. Este valor corresponde a la <xref:System.ServiceModel.Activities.InitializeCorrelation.CorrelationData%2A> propiedad. Un ejemplo de un par clave/valor válido es una clave denominada "OrderID" se empareja con una variable denominada OrderID.|
+|**Inicializar el**|Un par clave-valor que contiene los datos que se van a inicializar. Este valor corresponde a la propiedad <xref:System.ServiceModel.Activities.InitializeCorrelation.CorrelationData%2A>. Un ejemplo de par clave-valor válido es una clave denominada "OrderID" emparejada con una variable denominada OrderID.|
 
 ## <a name="to-launch-the-initialize-correlation-dialog-box"></a>Para iniciar el cuadro de diálogo Inicializar correlación
 
-Haga clic en **vista** en el **InitializeCorrelation** actividad diseñador o seleccione un <xref:System.ServiceModel.Activities.InitializeCorrelation> actividad en el Diseñador de flujo de trabajo. A continuación, haga clic en el botón de puntos suspensivos junto a la <xref:System.ServiceModel.Activities.InitializeCorrelation.CorrelationData%2A> propiedad en la cuadrícula de propiedades.
+Haga clic en **Ver** en el diseñador de actividades **InitializeCorrelation** o seleccione una actividad <xref:System.ServiceModel.Activities.InitializeCorrelation> en diseñador de flujo de trabajo. A continuación, haga clic en el botón de puntos suspensivos junto a la propiedad <xref:System.ServiceModel.Activities.InitializeCorrelation.CorrelationData%2A> en la cuadrícula de propiedades.
 
 ## <a name="see-also"></a>Vea también
 

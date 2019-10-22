@@ -1,5 +1,5 @@
 ---
-title: Getdocumentposition (método) | Documentos de Microsoft
+title: 'IJsDebugBreakPoint:: Getdocumentposition ((método) | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -15,15 +15,15 @@ caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 146eb26c887cd24d1eb7af858535fcecac62b41d
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 8f3bc5aff0b7079e20e2bcd49189153d2ec20d9a
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58149333"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72577695"
 ---
 # <a name="ijsdebugbreakpointgetdocumentposition-method"></a>IJsDebugBreakPoint::GetDocumentPosition (Método)
-Devuelve la posición de la instrucción donde se enlazó el punto de interrupción.  
+Devuelve la posición de la instrucción donde se ha enlazado el punto de interrupción.  
   
 ## <a name="syntax"></a>Sintaxis  
   
@@ -37,18 +37,18 @@ HRESULT GetDocumentPosition(
   
 #### <a name="parameters"></a>Parámetros  
  `pDocumentId`  
- [out] Identificador único para un documento de origen (puntero a IDebugDocumentText).  
+ enuncia IDENTIFICADOR único para un documento de origen (puntero a IDebugDocumentText).  
   
  `pCharacterOffset`  
- [out] El desplazamiento de carácter de base cero desde el principio de la secuencia de comandos.  
+ enuncia Desplazamiento de caracteres basado en cero desde el inicio del script.  
   
  `pStatementCharCount`  
- [out] La longitud de la instrucción actual, que comienza por el * pCharacterOffset, en caracteres.  
+ enuncia La longitud de la instrucción actual, que comienza en * pCharacterOffset, en caracteres.  
   
 ## <a name="return-value"></a>Valor devuelto  
   
 ## <a name="requirements"></a>Requisitos  
- **Encabezado:** jscript9diag.h  
+ **Encabezado:** jscript9diag. h  
   
 ## <a name="see-also"></a>Vea también  
  [IJsDebugBreakPoint (Interfaz)](../../winscript/reference/ijsdebugbreakpoint-interface.md)

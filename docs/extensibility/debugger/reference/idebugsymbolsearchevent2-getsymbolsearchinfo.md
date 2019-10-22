@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugSymbolSearchEvent2::GetSymbolSearchInfo
 ms.assetid: ae9eb72b-f2aa-43b8-87ca-da19d2e78d17
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d917a3f33d0c4339420c048fe20184245bb8dac1
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 9dcd584e600849ad30f83adef768671dc8f2ab57
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56684330"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66320395"
 ---
 # <a name="idebugsymbolsearchevent2getsymbolsearchinfo"></a>IDebugSymbolSearchEvent2::GetSymbolSearchInfo
 Llama a un controlador de eventos para recuperar los resultados de un proceso de carga de símbolos.
@@ -40,21 +43,18 @@ int GetSymbolSearchInfo(
 );
 ```
 
-#### <a name="parameters"></a>Parámetros
- `pModule`
+## <a name="parameters"></a>Parámetros
+`pModule`\
+[out] Un objeto IDebugModule3 que representa el módulo para el que se han cargado los símbolos.
 
- [out] Un objeto IDebugModule3 que representa el módulo para el que se han cargado los símbolos.
-
- `pbstrDebugMessage`
-
- [in, out] Devuelve una cadena que contiene los mensajes de error del módulo. Si no hay ningún error, a continuación, esta cadena solo contendrá el nombre del módulo, pero nunca está vacía.
+`pbstrDebugMessage`\
+[in, out] Devuelve una cadena que contiene los mensajes de error del módulo. Si no hay ningún error, a continuación, esta cadena solo contendrá el nombre del módulo, pero nunca está vacía.
 
 > [!NOTE]
 > [C++] `pbstrDebugMessage` no puede ser `NULL` y debe liberarse con `SysFreeString`.
 
- `pdwModuleInfoFlags`
-
- [out] Una combinación de marcas de la [MODULE_INFO_FLAGS](../../../extensibility/debugger/reference/module-info-flags.md) enumeración que indica si se han cargado los símbolos.
+`pdwModuleInfoFlags`\
+[out] Una combinación de marcas de la [MODULE_INFO_FLAGS](../../../extensibility/debugger/reference/module-info-flags.md) enumeración que indica si se han cargado los símbolos.
 
 ## <a name="return-value"></a>Valor devuelto
  Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.

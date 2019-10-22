@@ -12,23 +12,23 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ff7b834c80b80b3b8d61e4f7aea23a0219786d2a
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.openlocfilehash: 1524348bf94af681b5761ca42cb4fac911f359f7
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56643852"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "64803398"
 ---
 # <a name="usingnamespace"></a>UsingNameSpace
 Algunos símbolos que se le redirija a por espacio de nombres y posteriormente sería identificados por un `SymTagUsingNameSpace` etiqueta.
 
 > [!NOTE]
->  La etiqueta del símbolo UsingNamespace solo aparece en código administrado.
+> La etiqueta del símbolo UsingNamespace solo aparece en código administrado.
 
-## <a name="properties"></a>Propiedades
+## <a name="properties"></a>Properties (Propiedades)
  En la tabla siguiente muestra las propiedades que son válidas para este tipo de símbolo.
 
-|Propiedad.|Tipo de datos|Descripción|
+|Propiedad|Tipo de datos|DESCRIPCIÓN|
 |--------------|---------------|-----------------|
 |[IDiaSymbol::get_lexicalParent](../../debugger/debug-interface-access/idiasymbol-get-lexicalparent.md)|`IDiaSymbol*`|Símbolo de la operación de compilación, bloque o la función envolvente.|
 |[IDiaSymbol::get_lexicalParentId](../../debugger/debug-interface-access/idiasymbol-get-lexicalparentid.md)|`DWORD`|Id. del símbolo léxico primario.|

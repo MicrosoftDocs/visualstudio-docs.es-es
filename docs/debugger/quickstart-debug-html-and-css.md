@@ -17,26 +17,26 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - uwp
-ms.openlocfilehash: dbd276751d8052f21d92e38a0e337f9c133edf2c
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 36b17adfd3968031983965ca47574804a9f1738e
+ms.sourcegitcommit: 8a96a65676fd7a2a03b0803d7eceae65f3fa142b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "58790035"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72589098"
 ---
 # <a name="debug-html-and-css-in-uwp-apps-in-visual-studio"></a>Depurar HTML y CSS en aplicaciones para UWP en Visual Studio
 
-Para las aplicaciones de JavaScript, Visual Studio ofrece una experiencia de depuración completa que incluye características que los desarrolladores de Internet Explorer y Visual Studio ya conocen. Estas características se admiten para aplicaciones UWP y las aplicaciones creadas con Visual Studio Tools para Apache Cordova.
+Para las aplicaciones de JavaScript, Visual Studio ofrece una experiencia de depuración completa que incluye características que los desarrolladores de Internet Explorer y Visual Studio ya conocen. Estas características son compatibles con las aplicaciones UWP y con las aplicaciones creadas con Visual Studio Tools para Apache Cordova.
 
 Con el modelo de depuración interactivo ofrecido por las herramientas de inspección de DOM, puede ver y modificar el código HTML y CSS presentado, y todo ello sin detener y reiniciar el depurador.
 
-Para obtener información sobre otras características, como el uso de la ventana Consola JavaScript y establecer puntos de interrupción, la depuración de JavaScript consulte [inicio rápido: Depurar JavaScript](../debugger/quickstart-debug-javascript-using-the-console.md) y [depurar aplicaciones en Visual Studio](/visualstudio/debugger/debugging-windows-store-and-windows-universal-apps).
+Para obtener información sobre otras características de depuración de JavaScript, como el uso de la ventana consola JavaScript y el establecimiento de puntos de interrupción, consulte [Inicio rápido: depuración de JavaScript](../debugger/quickstart-debug-javascript-using-the-console.md) y [depuración de aplicaciones en Visual Studio](/visualstudio/debugger/debugging-windows-store-and-windows-universal-apps).
 
 ## <a name="InspectingDOM"></a> Inspeccionar el DOM activo
 El Explorador DOM muestra una vista de la página presentada. Puedes utilizarlo para cambiar valores y ver inmediatamente los resultados. Eso permite probar los cambios sin necesidad de detener y reiniciar el depurador. El código fuente del proyecto no cambia cuando se interactúa con la página mediante este método. Así pues, cuando encuentre las correcciones de código deseadas, realice los cambios en el código fuente.
 
 > [!TIP]
-> Para evitar detener y reiniciar el depurador al realizar cambios en el código fuente, puede actualizar la aplicación mediante el botón **Actualizar aplicación de Windows** de la barra de herramientas Depurar (o al presionar F4). Para obtener más información, consulte [actualizar una aplicación (JavaScript)](../debugger/refresh-an-app-javascript.md).
+> Para evitar detener y reiniciar el depurador al realizar cambios en el código fuente, puede actualizar la aplicación mediante el botón **Actualizar aplicación de Windows** de la barra de herramientas Depurar (o al presionar F4). Para obtener más información, vea [actualizar una aplicación (JavaScript)](../debugger/refresh-an-app-javascript.md).
 
 Puedes utilizar el Explorador DOM para:
 
@@ -46,7 +46,7 @@ Puedes utilizar el Explorador DOM para:
 
 - Inspeccionar la aplicación de los estilos CSS a los elementos de la página y realizar el seguimiento de las reglas que se han aplicado.
 
-  Al depurar aplicaciones, con frecuencia tienes que seleccionar elementos en el Explorador DOM. Cuando se selecciona un elemento, los valores que aparecen en las pestañas del lado derecho del Explorador DOM se actualizan automáticamente para reflejar el elemento seleccionado en este. Estas son las pestañas: **Estilos**, **calcula**, **diseño**. Las aplicaciones UWP también admiten la **eventos** y **cambios** pestañas. Para obtener más información sobre la selección de elementos, consulte [Selecting elements](#SelectingElements).
+  Al depurar aplicaciones, con frecuencia tienes que seleccionar elementos en el Explorador DOM. Cuando se selecciona un elemento, los valores que aparecen en las pestañas del lado derecho del Explorador DOM se actualizan automáticamente para reflejar el elemento seleccionado en este. Estas son las pestañas: **Estilos**, **Calculado**y **Diseño**. Las aplicaciones para UWP también admiten las pestañas **eventos** y **cambios** . Para obtener más información sobre la selección de elementos, consulte [Selecting elements](#SelectingElements).
 
 > [!TIP]
 > Si la ventana del Explorador DOM está cerrada, elija **Depurar**>**Ventanas** > **Explorador DOM** para abrirla de nuevo. La ventana únicamente aparece durante las sesiones de depuración de script.
@@ -54,17 +54,17 @@ Puedes utilizar el Explorador DOM para:
 En el procedimiento siguiente, analizaremos el proceso de depurar de forma interactiva una aplicación utilizando el Explorador DOM. Crearemos una aplicación que usa un control `FlipView` y la depuraremos. La aplicación contiene varios errores.
 
 > [!WARNING]
-> La aplicación de ejemplo siguiente es una aplicación para UWP. Se admiten las mismas características para Cordova, pero la aplicación sería diferente.
+> La siguiente aplicación de ejemplo es una aplicación de UWP. Se admiten las mismas características para Cordova, pero la aplicación sería diferente.
 
 #### <a name="to-debug-by-inspecting-the-live-dom"></a>Para depurar inspeccionando el DOM activo
 
 1. Cree una nueva solución en Visual Studio eligiendo **Archivo** > **Nuevo proyecto**.
 
-2. Elija **JavaScript** > **Windows Universal**y, a continuación, elija **WinJS App**.
+2. Elija **JavaScript**  > **Windows universal**y, a continuación, elija **aplicación WinJS**.
 
 3. Escriba un nombre para el proyecto, como `FlipViewApp`, y elija **Aceptar** para crear la aplicación.
 
-4. En el elemento BODY de index.html, agregue este código:
+4. En el elemento BODY de index. html, agregue este código:
 
     ```html
     <div id="flipTemplate" data-win-control="WinJS.Binding.Template"
@@ -141,17 +141,17 @@ En el procedimiento siguiente, analizaremos el proceso de depurar de forma inter
     })();
     ```
 
-    La siguiente ilustración muestra lo que queremos ver si se ejecuta esta aplicación. En cambio, para que la aplicación tenga este estado, primero tenemos que corregir algunos errores.
+    En la ilustración siguiente se muestra lo que queremos ver si se ejecuta esta aplicación. En cambio, para que la aplicación tenga este estado, primero tenemos que corregir algunos errores.
 
     ![Aplicación FlipView que muestra los resultados esperados](../debugger/media/js_dom_appfixed.png "JS_DOM_AppFixed")
 
-7. Elija **máquina Local** en la lista desplegable lista junto a la **Iniciar depuración** situado en la **depurar** barra de herramientas:
+7. Elija **equipo local** en la lista desplegable situada junto al botón **iniciar depuración** en la barra de herramientas de **depuración** :
 
-    ![Lista de destinos de depuración seleccione](../debugger/media/js_select_target.png "JS_Select_Target")
+    ![Seleccionar lista de destinos de depuración](../debugger/media/js_select_target.png "JS_Select_Target")
 
 8. Elija **Depurar** > **Iniciar depuración**o bien presione F5 para ejecutar la aplicación en modo de depuración.
 
-    La aplicación se ejecuta, pero verá una pantalla en blanco principalmente porque el estilo tiene algunos errores en él. La primera imagen `FlipView` aparece en un cuadrado pequeño cerca del centro de la pantalla.
+    Esto ejecuta la aplicación, pero verá una pantalla principalmente en blanco porque el estilo tiene algunos errores. La primera imagen `FlipView` aparece en un cuadrado pequeño cerca del centro de la pantalla.
 
 9. Cambia a Visual Studio y elige la pestaña **Explorador DOM** .
 
@@ -160,7 +160,7 @@ En el procedimiento siguiente, analizaremos el proceso de depurar de forma inter
 
 10. En la ventana del Explorador DOM, selecciona el elemento DIV de la sección cuyo identificador es `"fView"`. Utiliza las teclas de dirección para ver y seleccionar el elemento DIV correcto. (La tecla de flecha derecha te permite ver los elementos secundarios de un elemento).
 
-    ![DOM Explorer](../debugger/media/js_dom_explorer.png "JS_DOM_Explorer")
+    ![Explorador DOM](../debugger/media/js_dom_explorer.png "JS_DOM_Explorer")
 
     > [!TIP]
     > También puede seleccionar el elemento DIV en la esquina inferior izquierda de la ventana Consola JavaScript; para ello, escriba `select(fView)` en el indicador de entrada >> y presione Entrar.
@@ -179,16 +179,16 @@ En el procedimiento siguiente, analizaremos el proceso de depurar de forma inter
 
 13. En la ventana principal del Explorador DOM, haz doble clic en el estilo en línea para el alto y el ancho del elemento DIV `fView` . Puedes editar aquí los valores. En este escenario, deseamos quitarlos por completo.
 
-14. En la ventana principal, haga doble clic en `width: 100px;height: 100px;`, presione el **eliminar** clave y, a continuación, presione **ENTRAR**. Después de presionar ENTRAR, los nuevos valores se reflejan inmediatamente en la aplicación, aunque no hayas detenido la sesión de depuración.
+14. En la ventana principal, haga doble clic en `width: 100px;height: 100px;`, presione la tecla **Supr** y, a continuación, presione **entrar**. Después de presionar entrar, los nuevos valores se reflejan inmediatamente en la aplicación, aunque no haya detenido la sesión de depuración.
 
     > [!IMPORTANT]
-    > Al igual que puedes actualizar atributos en la ventana del Explorador DOM, también puede actualizar los valores que aparecen en las pestañas **Estilos**, **Calculado**y **Diseño** . Para obtener más información, consulte [estilos CSS depurar mediante el explorador DOM](../debugger/debug-css-styles-using-dom-explorer.md) y [diseño de depuración mediante el explorador DOM](../debugger/debug-layout-using-dom-explorer.md).
+    > Al igual que puedes actualizar atributos en la ventana del Explorador DOM, también puede actualizar los valores que aparecen en las pestañas **Estilos**, **Calculado**y **Diseño** . Para obtener más información, vea [depurar estilos CSS con el explorador Dom](../debugger/debug-css-styles-using-dom-explorer.md) y [depurar el diseño mediante el explorador Dom](../debugger/debug-layout-using-dom-explorer.md).
 
-15. Cambie a la aplicación, selecciónelo, o mediante el uso de ALT+TAB.
+15. Cambie a la aplicación seleccionándola o con Alt + Tab.
 
     Ahora, el control `FlipView` parece mayor que la pantalla del simulador o el emulador de Windows Phone. Este no es el resultado deseado. Para averiguar más, vuelve a Visual Studio.
 
-16. En el Explorador DOM, selecciona de nuevo la pestaña **Calculado** y abre la regla del alto. El elemento fView sigue mostrando un valor de 100%, según lo esperado desde la CSS, pero el valor calculado es igual al alto de pantalla de la aplicación (por ejemplo, 800 px, 667,67 px o algún otro valor), que es no lo que queremos para esta aplicación. Para investigar en los pasos siguientes se quite el alto y ancho para el `fView` elemento DIV.
+16. En el Explorador DOM, selecciona de nuevo la pestaña **Calculado** y abre la regla del alto. El elemento fView sigue mostrando un valor del 100%, tal y como se espera de la CSS, pero el valor calculado es igual al alto de pantalla de la aplicación (por ejemplo, 800 PX, 667,67 PX u otro valor), que no es lo que queremos para esta aplicación. Para investigar, en los pasos siguientes se quita el alto y el ancho del elemento `fView` DIV.
 
 17. En la pestaña **Estilos** , desactive las propiedades de ancho y alto del selector de CSS `#fView` .
 
@@ -200,11 +200,11 @@ En el procedimiento siguiente, analizaremos el proceso de depurar de forma inter
 
 19. Para investigar, vaya a Visual Studio y elija la pestaña **Diseño** para ver el modelo de cuadros del elemento.
 
-    En el **diseño** pestaña, verá lo siguiente:
+    En la pestaña **diseño** , verá lo siguiente:
 
-    - 255px (desplazamiento) y 255px (margen) o valores similares, dependiendo de la resolución del dispositivo.
+    - 255px (Offset) y 255px (margin) o valores similares, dependiendo de la resolución del dispositivo.
 
-      La ilustración siguiente muestra cómo el **diseño** aspecto de la pestaña si usa un emulador con 100 píxeles de desplazamiento y margen).
+      En la ilustración siguiente se muestra cómo se ve la pestaña **diseño** si se usa un emulador con desplazamiento 100 píxeles y margen).
 
       ![Pestaña diseño del explorador DOM](../debugger/media/js_dom_explorer_layout.png "JS_DOM_Explorer_Layout")
 
@@ -224,11 +224,11 @@ En el procedimiento siguiente, analizaremos el proceso de depurar de forma inter
 
 2. Abre default.html y modifica tu código fuente cambiando el alto y ancho del elemento DIV `"fView"` al 100 %.
 
-3. Elige el botón **Actualizar aplicación de Windows** situado en la barra de herramientas Depurar (o presiona F4). El botón tiene este aspecto: ![Botón de la aplicación de Windows actualizar](../debugger/media/js_refresh.png "JS_Refresh").
+3. Elige el botón **Actualizar aplicación de Windows** situado en la barra de herramientas Depurar (o presiona F4). El botón tiene el siguiente aspecto: ![botón actualizar aplicación de Windows](../debugger/media/js_refresh.png "JS_Refresh").
 
     Se recargan las páginas de la aplicación y el simulador o el emulador de Windows Phone vuelven al primer plano.
 
-    Para obtener más información acerca de la característica de actualización, vea [actualizar una aplicación (JavaScript)](../debugger/refresh-an-app-javascript.md).
+    Para obtener más información sobre la característica de actualización, vea [actualizar una aplicación (JavaScript)](../debugger/refresh-an-app-javascript.md).
 
 ## <a name="SelectingElements"></a> Selecting elements
 Puedes seleccionar elementos DOM de tres maneras al depurar una aplicación:
@@ -237,7 +237,7 @@ Puedes seleccionar elementos DOM de tres maneras al depurar una aplicación:
 
 - Utilizando el botón **Seleccionar elemento** (Ctrl + B).
 
-- Utilizando el botón `select` , que es uno de los [JavaScript Console commands](../debugger/javascript-console-commands.md).
+- Utilizando el botón `select` , que es uno de los [JavaScript Console commands](../debugger/javascript-console-commands.md?view=vs-2017).
 
   Cuando utilices la ventana del Explorador DOM para seleccionar elementos y sitúes el puntero del mouse sobre un elemento, el elemento correspondiente se resaltará en la aplicación que se ejecuta. Haz clic en el elemento en DOM Explorer para seleccionarlo, o puedes utilizar las teclas de dirección para resaltar y seleccionar elementos. También puedes seleccionar elementos del Explorador DOM mediante el botón **Seleccionar elemento** . En la ilustración siguiente se muestra el botón **Seleccionar elemento** .
 
@@ -247,7 +247,7 @@ Puedes seleccionar elementos DOM de tres maneras al depurar una aplicación:
 
   Antes de elegir **Seleccionar elemento**, puede especificar si desea resaltar los elementos de la aplicación en ejecución mediante la alternancia del botón **Mostrar cuadros de resaltado de página web para el elemento seleccionado en el árbol DOM** . En la siguiente ilustración se muestra este botón. Los elementos resaltados se muestran de forma predeterminada.
 
-  ![Página de presentación web destaca botón](../debugger/media/js_dom_display_highlights_button.png "JS_DOM_Display_Highlights_Button")
+  ![Botón Mostrar resaltado de página web](../debugger/media/js_dom_display_highlights_button.png "JS_DOM_Display_Highlights_Button")
 
   Al elegir que se resalten los elementos, se resaltan aquellos sobre los que se mantiene el mouse en el simulador. Los colores de los elementos resaltados coinciden con el modelo de cuadro que aparece en la pestaña **Diseño** del Explorador DOM.
 
@@ -258,7 +258,7 @@ Puedes seleccionar elementos DOM de tres maneras al depurar una aplicación:
 - [Depurar aplicaciones en Visual Studio](/visualstudio/debugger/debugging-windows-store-and-windows-universal-apps)
 - [Actualizar una aplicación (JavaScript)](../debugger/refresh-an-app-javascript.md)
 - [Depurar un control WebView](../debugger/debug-a-webview-control.md)
-- [Métodos abreviados de teclado](../debugger/keyboard-shortcuts-html-and-javascript.md)
-- [Comandos de la Consola JavaScript](../debugger/javascript-console-commands.md)
+- [Métodos abreviados de teclado](../debugger/keyboard-shortcuts-html-and-javascript.md?view=vs-2017)
+- [Comandos de la Consola JavaScript](../debugger/javascript-console-commands.md?view=vs-2017)
 - [Depurar código de ejemplo HTML, CSS y JavaScript](../debugger/debug-html-css-and-javascript-sample-code.md)
 - [Compatibilidad de productos y accesibilidad](https://msdn.microsoft.com/library/tzbxw1af(VS.120).aspx)

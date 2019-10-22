@@ -23,14 +23,14 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 27b0a4c93d6b8143b81b960a9b5f4a2158e7b721
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
-ms.translationtype: MT
+ms.openlocfilehash: e41b7714ce5f9a98e50092c1507457b848201773
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57868177"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63419610"
 ---
-# <a name="how-to-create-office-projects-in-visual-studio"></a>Filtrar Crear proyectos de Office en Visual Studio
+# <a name="how-to-create-office-projects-in-visual-studio"></a>Procedimiento Crear proyectos de Office en Visual Studio
   Puede usar [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] para crear complementos de VSTO y de nivel de documento personalizaciones para aplicaciones de Microsoft Office. Para obtener más información acerca de estos tipos de proyectos, vea [información general sobre el desarrollo de soluciones de Office &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md).
 
  [!INCLUDE[appliesto_all](../vsto/includes/appliesto-all-md.md)]
@@ -44,7 +44,7 @@ ms.locfileid: "57868177"
     Aparecerá el cuadro de diálogo **Nuevo proyecto** .
 
    > [!NOTE]
-   >  De forma predeterminada, los proyectos de Office tienen como destino [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)]. Para obtener más información, consulte [perfil de cliente de .NET Framework](/dotnet/framework/deployment/client-profile).
+   > De forma predeterminada, los proyectos de Office tienen como destino [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)]. Para obtener más información, consulte [perfil de cliente de .NET Framework](/dotnet/framework/deployment/client-profile).
 
 2. En el panel Plantillas, bajo el nodo para el idioma que desea usar, expanda **Office/SharePoint**.
 
@@ -53,7 +53,7 @@ ms.locfileid: "57868177"
 4. En la lista de plantillas de proyecto, seleccione una plantilla de proyecto de complemento de VSTO. Para obtener una lista de plantillas de proyecto disponibles complementos de VSTO, consulte [Introducción a las plantillas de proyecto de Office](../vsto/office-project-templates-overview.md).
 
    > [!NOTE]
-   >  Si las plantillas de proyecto no son visibles al seleccionar el **complementos de Office** nodo, asegúrese de que **.NET Framework 4** o posterior, está seleccionado en el cuadro combinado en la parte superior del cuadro de diálogo. Las plantillas de proyecto de Office se pueden ver para ambas versiones de .NET Framework.
+   > Si las plantillas de proyecto no son visibles al seleccionar el **complementos de Office** nodo, asegúrese de que **.NET Framework 4** o posterior, está seleccionado en el cuadro combinado en la parte superior del cuadro de diálogo. Las plantillas de proyecto de Office se pueden ver para ambas versiones de .NET Framework.
 
 5. En el **nombre** , escriba un nombre para el proyecto. De forma predeterminada, el nombre del proyecto también se usa como nombre de la solución.
 
@@ -147,7 +147,7 @@ ms.locfileid: "57868177"
    - Signo de porcentaje (%)
 
    > [!NOTE]
-   >  Si usa un documento existente en un proyecto de [!INCLUDE[Word_15_short](../vsto/includes/word-15-short-md.md)], utilice únicamente documentos que se crearon en [!INCLUDE[Word_15_short](../vsto/includes/word-15-short-md.md)] o se convirtieron a esa versión. Del mismo modo, si usa un documento existente en un proyecto de Word 2010, utilice únicamente documentos que se crearon en Word 2010 o se convirtieron a esa versión. Si usa un documento que se creó en una versión anterior de Word, se deshabilitarán determinadas características del documento. Si intenta escribir código que usa estas características, pueden producirse errores en el proyecto. Para convertir un documento, ábralo en [!INCLUDE[Word_15_short](../vsto/includes/word-15-short-md.md)] o Word 2010, en el **archivo** pestaña en la cinta de opciones, elija **información** > **convertir**.
+   > Si usa un documento existente en un proyecto de [!INCLUDE[Word_15_short](../vsto/includes/word-15-short-md.md)], utilice únicamente documentos que se crearon en [!INCLUDE[Word_15_short](../vsto/includes/word-15-short-md.md)] o se convirtieron a esa versión. Del mismo modo, si usa un documento existente en un proyecto de Word 2010, utilice únicamente documentos que se crearon en Word 2010 o se convirtieron a esa versión. Si usa un documento que se creó en una versión anterior de Word, se deshabilitarán determinadas características del documento. Si intenta escribir código que usa estas características, pueden producirse errores en el proyecto. Para convertir un documento, ábralo en [!INCLUDE[Word_15_short](../vsto/includes/word-15-short-md.md)] o Word 2010, en el **archivo** pestaña en la cinta de opciones, elija **información** > **convertir**.
 
 8. Elija **Finalizar**.
 

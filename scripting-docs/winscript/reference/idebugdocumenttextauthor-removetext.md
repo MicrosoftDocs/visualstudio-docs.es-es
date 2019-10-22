@@ -1,5 +1,5 @@
 ---
-title: IDebugDocumentTextAuthor::RemoveText | Documentos de Microsoft
+title: 'Idebugdocumenttextauthor (:: RemoveText | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 989031a6d4b207c69d1a58b2ff99e5797a629440
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 119a55d4ebd20e51890358ef8c5780a2ac8e4509
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58160344"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72572052"
 ---
 # <a name="idebugdocumenttextauthorremovetext"></a>IDebugDocumentTextAuthor::RemoveText
-Quita el texto del documento.  
+Quita texto del documento.  
   
 ## <a name="syntax"></a>Sintaxis  
   
@@ -38,10 +38,10 @@ HRESULT RemoveText(
   
 #### <a name="parameters"></a>Parámetros  
  `cCharacterPosition`  
- [in] Iniciar ubicación del intervalo de caracteres a quitar.  
+ de Ubicación de inicio del intervalo de caracteres que se va a quitar.  
   
  `cNumToRemove`  
- [in] Número de caracteres que se va a quitar.  
+ de Número de caracteres que se van a quitar.  
   
 ## <a name="return-value"></a>Valor devuelto  
  El método devuelve un objeto `HRESULT`. Entre los valores posibles se incluyen los que se indican en la tabla siguiente, entre otros.  
@@ -51,8 +51,8 @@ HRESULT RemoveText(
 |`S_OK`|El método se realizó correctamente.|  
   
 ## <a name="remarks"></a>Comentarios  
- Este método quita el texto del documento.  
+ Este método quita texto del documento.  
   
 ## <a name="see-also"></a>Vea también  
- [IDebugDocumentTextAuthor (interfaz)](../../winscript/reference/idebugdocumenttextauthor-interface.md)   
+ @No__t_1 de la [interfaz idebugdocumenttextauthor (](../../winscript/reference/idebugdocumenttextauthor-interface.md)  
  [IDebugDocumentTextAuthor::InsertText](../../winscript/reference/idebugdocumenttextauthor-inserttext.md)

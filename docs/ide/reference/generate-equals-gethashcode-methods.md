@@ -43,7 +43,7 @@ Esta generación de código se aplica a:
 
 1. A continuación, realice alguno de los siguientes procedimientos:
 
-   - Presione **Ctrl**+**.** para activar el menú **Acciones rápidas y refactorizaciones**.
+   - Presione **Ctrl**+ **.** para activar el menú **Acciones rápidas y refactorizaciones**.
 
    - Haga clic con el botón derecho y seleccione el menú **Acciones rápidas y refactorizaciones**.
 

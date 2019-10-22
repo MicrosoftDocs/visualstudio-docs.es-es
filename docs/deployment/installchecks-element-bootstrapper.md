@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e45a2d0527e1d245a0d034310939bd1601db8adc
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 79bbb413c31c77e59ec39b706d4937421096168f
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59666460"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66747529"
 ---
 # <a name="ltinstallchecksgt-element-bootstrapper"></a>&lt;InstallChecks&gt; (elemento, arranque)
 El `InstallChecks` elemento admite el inicio de una variedad de pruebas en el equipo local para asegurarse de que se han instalado todos los requisitos previos para una aplicación.
@@ -144,7 +144,7 @@ El `InstallChecks` elemento admite el inicio de una variedad de pruebas en el eq
  Mientras que los elementos subyacentes `InstallChecks` definir las pruebas se ejecuten, no se ejecutan. Para ejecutar las pruebas, se debe crear `Command` elementos bajo la `Commands` elemento.
 
 ## <a name="example"></a>Ejemplo
- En el ejemplo de código siguiente se muestra el `InstallChecks` elemento tal y como se usa en el archivo del producto para el [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)].
+ En el ejemplo de código siguiente se muestra el `InstallChecks` elemento tal y como se usa en el archivo del producto de .NET Framework.
 
 ```xml
 <InstallChecks>

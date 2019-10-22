@@ -1,16 +1,16 @@
 ---
 title: Formateo del código
 description: En este artículo se describen las distintas opciones que pueden usarse para modificar el comportamiento del editor de texto en Visual Studio para Mac
-author: conceptdev
-ms.author: crdun
+author: cobey
+ms.author: cobey
 ms.date: 05/06/2018
 ms.assetid: 81EE4460-26EB-4BB0-9297-932E1F88E4B8
-ms.openlocfilehash: 4a34076d06bfceb741b987377487a97291e8f726
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.openlocfilehash: 20363d5497ea5897cb2685ca838da44b8c21d3df
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51295519"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67823174"
 ---
 # <a name="editor-behavior"></a>Comportamiento del editor
 
@@ -22,9 +22,9 @@ Puede establecer los comportamientos del editor de modo que permitan aplicar for
 * La aplicación de formato de código sobre la marcha se activa al pulsar caracteres (por ejemplo, el punto y coma o las llaves), lo que emulará las preferencias de formato establecidas.
 * También puede optar por aplicar formato al archivo al guardarlo, lo que permite escribir el código libremente y hace que el IDE sea el responsable de aplicarle formato según las preferencias existentes.
 * La sangría se puede establecer en Ninguna, Automática o Inteligente. Hacen lo siguiente:
-   * Ninguna: establece el símbolo de inserción al principio de la línea siguiente.
-   * Automática: establece el símbolo de inserción en la misma columna de la línea siguiente.
-   * Inteligente: aplica la sangría en la línea siguiente en función del código.
+  * Ninguna: establece el símbolo de inserción al principio de la línea siguiente.
+  * Automática: establece el símbolo de inserción en la misma columna de la línea siguiente.
+  * Inteligente: aplica la sangría en la línea siguiente en función del código.
 * El comportamiento de separación de palabras difiere entre los sistemas operativos y, con vistas a la navegación, el editor de texto debe saber dónde empiezan y acaban las palabras. El formato se puede establecer en Unix o Windows.
 
 También puede establecer reglas de formato para XML, CSS, HTML y JSON.

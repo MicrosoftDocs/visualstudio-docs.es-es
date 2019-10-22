@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 664b7b5a002e2d30856d072ce77047db6adf7f73
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.openlocfilehash: 4e35db1186f2547b8d3c859d20e0e4ce2b1f68e9
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56624079"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "64803325"
 ---
 # <a name="idiasymbolgetage"></a>IDiaSymbol::get_age
 Recupera el valor de edad de un archivo. pdb.
@@ -39,14 +39,14 @@ HRESULT get_age ( 
  Si es correcto, devuelve `S_OK`; en caso contrario, devuelve `S_FALSE` o código de error.
 
 > [!NOTE]
->  Un valor devuelto de `S_FALSE` significa que la propiedad no está disponible para el símbolo.
+> Un valor devuelto de `S_FALSE` significa que la propiedad no está disponible para el símbolo.
 
 ## <a name="remarks"></a>Comentarios
  La antigüedad no corresponden necesariamente a cualquier valor de tiempo conocido; Normalmente se usa para determinar si un archivo .pdb no está sincronizado con un archivo .exe correspondiente.
 
 ## <a name="requirements"></a>Requisitos
 
-|Requisito|Descripción|
+|Requisito|DESCRIPCIÓN|
 |-----------------|-----------------|
 |Encabezado:|dia2.h|
 |Versión:|SDK de DIA v7.0|

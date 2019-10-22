@@ -22,12 +22,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8b2fc59a2f04dc30ef8b052e93fc6ffdf030e054
-ms.sourcegitcommit: b14b7a938a2aba9fcce4d5e813aadf2040b0dcda
+ms.openlocfilehash: 980b4ae40b1b7706b47bd884cc02dad14b743625
+ms.sourcegitcommit: ce1ab8a25c66a83e60eab80ed8e1596fe66dd85c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "58647224"
+ms.lasthandoff: 07/29/2019
+ms.locfileid: "68605677"
 ---
 # <a name="options-dialog-box-environment--task-list"></a>Cuadro de diálogo Opciones: Entorno \> Lista de tareas
 
@@ -63,6 +63,5 @@ Haga clic aquí para modificar un token existente utilizando los valores especif
 
 ## <a name="see-also"></a>Vea también
 
-- [Usar la Lista de tareas](../../ide/using-the-task-list.md)
-- [Establecer marcadores en el código](../../ide/setting-bookmarks-in-code.md)
-- [Opciones de entorno (Cuadro de diálogo)](../../ide/reference/environment-options-dialog-box.md)
+- [Uso de la lista de tareas](../../ide/using-the-task-list.md)
+- [Establecimiento de marcadores de código](../../ide/setting-bookmarks-in-code.md)

@@ -10,12 +10,12 @@ ms.assetid: 08526848-a442-4cd4-afa1-b2eac2005adb
 caps.latest.revision: 47
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 93df780aee27b794a991a023f559f64a806de046
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 0312d98dd6959cb5d67d593c4bf0af39fa1889eb
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60057487"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65693359"
 ---
 # <a name="walkthrough-using-a-shell-command-with-an-editor-extension"></a>Tutorial: Usar un comando shell con una extensión del editor
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -54,7 +54,7 @@ Desde un VSPackage, puede agregar características como los comandos de menú en
  Dado que va a agregar un componente MEF para el VSPackage, debe especificar ambos tipos de activos en el manifiesto.  
   
 > [!NOTE]
->  Para obtener más información acerca de MEF, vea [Managed Extensibility Framework (MEF)](http://msdn.microsoft.com/library/6c61b4ec-c6df-4651-80f1-4854f8b14dde).  
+> Para obtener más información acerca de MEF, vea [Managed Extensibility Framework (MEF)](https://msdn.microsoft.com/library/6c61b4ec-c6df-4651-80f1-4854f8b14dde).  
   
 #### <a name="to-refer-to-the-mef-component-in-the-vspackage-project"></a>Para hacer referencia al componente MEF en el proyecto de VSPackage  
   
@@ -724,4 +724,4 @@ Desde un VSPackage, puede agregar características como los comandos de menú en
      Fourscore...  
   
 ## <a name="see-also"></a>Vea también  
- [Tutorial: Vinculación de un tipo de contenido a una extensión de nombre de archivo](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)
+ [Tutorial: Vinculación de un tipo de contenido con una extensión de nombre de archivo](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)

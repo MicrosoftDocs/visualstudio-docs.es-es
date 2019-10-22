@@ -7,17 +7,17 @@ f1_keywords:
 helpviewer_keywords:
 - SccGetEvents function
 ms.assetid: 32f8147d-6dcc-465e-b07b-42da5824f9b0
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 97c5c06a53214ef16924b50c4b35ee4bb33804ba
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 9c8c3c08311c8dd359acaed18decc046354e7f37
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56698929"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66332027"
 ---
 # <a name="sccgetevents-function"></a>SccGetEvents (función)
 Esta función recupera un evento de estado en cola.

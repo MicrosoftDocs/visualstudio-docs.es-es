@@ -1,5 +1,5 @@
 ---
-title: Identificador no definido | Documentos de Microsoft
+title: Identificador no definido | Microsoft Docs
 ms.date: 01/18/2017
 ms.prod: visual-studio-windows
 ms.technology: vs-javascript
@@ -14,26 +14,26 @@ ms.assetid: 8c8000d9-dd14-487e-922d-98430024a0f6
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ee928a945081d1ac1369a71d11f74f2c5db2b365
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: b55b6d695cded9b7effac664dfca6ca9904e9d84
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60097113"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72572542"
 ---
 # <a name="undefined-identifier"></a>Identificador no definido
-Ha intentado utilizar un identificador que el [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] compilador no reconoce. Siempre que se use, se devuelve el valor no definido:  
+Ha intentado utilizar un identificador que el compilador [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] no reconoce. Se devuelve el valor undefined siempre que se use:  
   
 - una variable que no existe,  
   
-- una variable que se ha declarado, pero no ha tenido nunca un valor asignado a él,  
+- una variable que se ha declarado, pero que nunca tenía un valor asignado,  
   
-- una propiedad de objeto que no existe.  
+- propiedad de objeto que no existe.  
   
 ### <a name="to-correct-this-error"></a>Para corregir este error  
   
-- Declare la variable con un **var** instrucción (como en `var` x;).  
+- Declare la variable con una instrucción **var** (como en `var` x;).  
   
 ## <a name="see-also"></a>Vea también  
- [Variables](../../javascript/variables-javascript.md)   
+ [Variables](../../javascript/variables-javascript.md)    
  [Ámbito de variable](../../javascript/advanced/variable-scope-javascript.md)

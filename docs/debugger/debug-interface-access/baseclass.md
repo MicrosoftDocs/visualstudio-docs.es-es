@@ -1,5 +1,5 @@
 ---
-title: BaseClass | Microsoft Docs
+title: BaseClass | Documentos de Microsoft
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -15,11 +15,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: df8cc7fa837e5308d2e6ba18501d7bfb93a83223
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56626404"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62829939"
 ---
 # <a name="baseclass"></a>BaseClass
 Cada clase base para un símbolo de tipo definido por el usuario (UDT) se identifica mediante un elemento secundario con un `SymTagBaseClass` etiqueta. El [Get_type](../../debugger/debug-interface-access/idiasymbol-get-type.md) propiedad contiene el símbolo para el UDT subyacente, y todas las propiedades del UDT subyacente están disponibles como parte de este símbolo BaseClass.
@@ -27,7 +27,7 @@ Cada clase base para un símbolo de tipo definido por el usuario (UDT) se identi
 ## <a name="properties"></a>Propiedades
  La siguiente tabla muestra propiedades adicionales de válido para este tipo de símbolo.
 
-|Propiedad.|Tipo de datos|Descripción|
+|Propiedad|Tipo de datos|Descripción|
 |--------------|---------------|-----------------|
 |[IDiaSymbol::get_access](../../debugger/debug-interface-access/idiasymbol-get-access.md)|`DWORD`|Modificador de acceso que se aplica a esta clase base. Uno de los [CV_access_e (enumeración)](../../debugger/debug-interface-access/cv-access-e.md) valores.|
 |[IDiaSymbol::get_classParent](../../debugger/debug-interface-access/idiasymbol-get-classparent.md)|`IDiaSymbol*`|Símbolo de la clase envolvente (si existe).|

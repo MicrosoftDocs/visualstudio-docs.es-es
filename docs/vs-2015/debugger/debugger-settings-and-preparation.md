@@ -20,11 +20,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 1199a28d83dc519b40466cda37ed966cc7ee51e4
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58988854"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68198875"
 ---
 # <a name="debugger-settings-and-preparation"></a>Preparación y configuración de la depuración
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -58,7 +58,7 @@ En esta sección se describe la configuración de las propiedades relacionadas c
  [Depuración y proceso de hospedaje](../debugger/debugging-and-the-hosting-process.md)  
  Describe distintos aspectos del proceso de alojamiento.  
   
- [Cómo: Especificación de una versión de .NET Framework para la depuración](../debugger/how-to-specify-a-dotnet-framework-version-for-debugging.md)  
+ [Procedimientos: Especificación de una versión de .NET Framework para la depuración](../debugger/how-to-specify-a-dotnet-framework-version-for-debugging.md)  
  Describe cómo establecer una clave del Registro para indicar al depurador qué versión debe utilizar.  
   
 ## <a name="see-also"></a>Vea también  

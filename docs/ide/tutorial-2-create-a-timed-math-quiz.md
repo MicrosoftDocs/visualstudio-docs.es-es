@@ -1,33 +1,34 @@
 ---
 title: 'Tutorial 2: Crear una prueba matemática cronometrada'
 ms.date: 11/04/2016
-ms.topic: conceptual
 ms.assetid: d7165d08-ace3-457d-b57d-fb8f80760a6f
+ms.topic: tutorial
+ms.technology: vs-ide-general
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c93ddfc85e318a2095f757c6131b151a5414c884
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 39550eb3e2d5fe78e50257b51b52642740781600
+ms.sourcegitcommit: 6eed0372976c0167b9a6d42ba443f9a474b8bb91
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55956940"
+ms.lasthandoff: 09/19/2019
+ms.locfileid: "71118856"
 ---
 # <a name="tutorial-2-create-a-timed-math-quiz"></a>Tutorial 2: Crear una prueba matemática cronometrada
 
 En este tutorial, se compila un juego de prueba matemática en el que el jugador debe responder a cuatro problemas aritméticos aleatorios en un tiempo especificado. Aprenderá a:
 
--   Generar números aleatorios mediante la clase <xref:System.Random>.
+- Generar números aleatorios mediante la clase <xref:System.Random>.
 
--   Generar eventos que se producirán en un momento concreto con un control <xref:System.Windows.Forms.Timer>.
+- Generar eventos que se producirán en un momento concreto con un control <xref:System.Windows.Forms.Timer>.
 
--   Controlar el flujo del programa con instrucciones `if else`.
+- Controlar el flujo del programa con instrucciones `if else`.
 
--   Realizar operaciones aritméticas básicas en el código.
+- Realizar operaciones aritméticas básicas en el código.
 
-Cuando termine, la prueba matemática se parecerá a la siguiente imagen, pero tendrá otros números:
+Cuando termine, el cuestionario se parecerá a la siguiente captura de pantalla, pero tendrá otros números:
 
 ![Prueba matemática con cuatro problemas](../ide/media/express_finishedquiz.png)
 
@@ -36,11 +37,11 @@ Cuando termine, la prueba matemática se parecerá a la siguiente imagen, pero t
 Para descargar una versión completa de la prueba, vea [Complete Math Quiz tutorial sample](https://code.msdn.microsoft.com/Complete-Math-Quiz-8581813c) (Ejemplo completo del tutorial de prueba matemática).
 
 > [!NOTE]
-> En este tutorial, se trata tanto Visual C# como Visual Basic, por lo que deberá centrarse en la información específica del lenguaje de programación que use.
+> En este tutorial, se trata tanto C# como Visual Basic, por lo que deberá centrarse en la información específica del lenguaje de programación que use.
 
 ## <a name="related-topics"></a>Temas relacionados
 
-|Title|Descripción|
+|Title|DESCRIPCIÓN|
 |-----------|-----------------|
 |[Paso 1: Crear un proyecto y agregar etiquetas al formulario](../ide/step-1-create-a-project-and-add-labels-to-your-form.md)|Comience creando el proyecto, cambiando las propiedades y agregando controles `Label`.|
 |[Paso 2: Crear un problema de suma aleatoria](../ide/step-2-create-a-random-addition-problem.md)|Cree un problema de suma y use la clase `Random` para generar números aleatorios.|

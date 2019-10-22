@@ -6,17 +6,20 @@ helpviewer_keywords:
 - AreSymbolsLoaded
 - IDebugComPlusSymbolProvider::AreSymbolsLoaded
 ms.assetid: bbf8707d-f89c-4177-b019-d519f1ec6f4a
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a53b1a1ad377543107154e355a47b7100dcb2f16
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 452cfb7758b110621ead9bc9e7e71f9bfab1e924
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56686605"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66338851"
 ---
 # <a name="idebugcomplussymbolprovideraresymbolsloaded"></a>IDebugComPlusSymbolProvider::AreSymbolsLoaded
 Determina si se cargan los símbolos de depuración para el módulo especificado según el identificador de dominio de aplicación.
@@ -37,14 +40,12 @@ int AreSymbolsLoaded (
 );
 ```
 
-#### <a name="parameters"></a>Parámetros
-`ulAppDomainID`
+## <a name="parameters"></a>Parámetros
+`ulAppDomainID`\
+[in] Identificador del dominio de aplicación.
 
- [in] Identificador del dominio de aplicación.
-
-`guidModule`
-
- [in] Identificador único para el módulo.
+`guidModule`\
+[in] Identificador único para el módulo.
 
 ## <a name="return-value"></a>Valor devuelto
 Devuelve si se cargan los símbolos de depuración, `S_OK`; en caso contrario, devuelve `S_FALSE`.

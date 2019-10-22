@@ -11,19 +11,19 @@ ms.assetid: a8e2765c-cfb5-47b5-a414-6e48b434e0c2
 caps.latest.revision: 21
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 47f752f00e1efe130f029a3cabdd2e3e3bf19449
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 0a2042ef9a96eed99636ea0a2f5f09d99cd35ea2
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60072446"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65699155"
 ---
 # <a name="adding-visual-studio-commands-to-a-start-page"></a>Adición de comandos de Visual Studio a una página de inicio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Cuando se crea una página principal personalizada, puede agregar comandos de Visual Studio a él. Este documento describen las distintas formas para enlazar comandos de Visual Studio con objetos XAML en una página de inicio.  
   
- Para obtener más información acerca de los comandos en XAML, vea [información general sobre comandos](http://msdn.microsoft.com/library/bc208dfe-367d-426a-99de-52b7e7511e81)  
+ Para obtener más información acerca de los comandos en XAML, vea [información general sobre comandos](https://msdn.microsoft.com/library/bc208dfe-367d-426a-99de-52b7e7511e81)  
   
 ## <a name="adding-commands-from-the-command-well"></a>Adición de comandos desde el comando también  
  Crea la página de inicio en [creación de una página de inicio personalizada](../extensibility/creating-a-custom-start-page.md) agrega el <xref:Microsoft.VisualStudio.PlatformUI?displayProperty=fullName> y <xref:Microsoft.VisualStudio.Shell?displayProperty=fullName> espacios de nombres, como se indica a continuación.  
@@ -49,7 +49,7 @@ xmlns:vscom="clr-namespace:Microsoft.VisualStudio.Shell;assembly=Microsoft.Visua
 ```  
   
 > [!NOTE]
->  El `x:` alias, lo que hace referencia al esquema XAML, es necesario al principio de todos los comandos.  
+> El `x:` alias, lo que hace referencia al esquema XAML, es necesario al principio de todos los comandos.  
   
  Puede establecer el valor de la `Command` propiedad con cualquier comando que se puede acceder desde el **comando** ventana. Para obtener una lista de comandos disponibles, consulte [Visual Studio Command Aliases](../ide/reference/visual-studio-command-aliases.md).  
   
@@ -65,7 +65,7 @@ xmlns:vscom="clr-namespace:Microsoft.VisualStudio.Shell;assembly=Microsoft.Visua
  Puede llamar a comandos de VSPackages registrados mediante el uso de la misma sintaxis que se usa para llamar a otros comandos de Visual Studio. Por ejemplo, si agrega un VSPackage instalado un **página principal** comando a la **vista** menú, puede llamar a ese comando estableciendo `CommandParameter` a `View.HomePage`.  
   
 > [!NOTE]
->  Si se llama a un comando que está asociado a un VSPackage, debe cargar el paquete cuando se invoca el comando.  
+> Si se llama a un comando que está asociado a un VSPackage, debe cargar el paquete cuando se invoca el comando.  
   
 ## <a name="adding-commands-from-assemblies"></a>Adición de comandos de los ensamblados  
  Para llamar a un comando desde un ensamblado, o al código de acceso en un VSPackage que no está asociado con un comando de menú, debe crear un alias para el ensamblado y, a continuación, llamar a lo alias.  
@@ -89,12 +89,12 @@ xmlns:vscom="clr-namespace:Microsoft.VisualStudio.Shell;assembly=Microsoft.Visua
     ```  
   
 > [!NOTE]
->  Debe copiar el ensamblado y, a continuación, péguelo en... \\ *Carpeta de instalación de visual Studio*\Common7\IDE\PrivateAssemblies\ para asegurarse de que se carga antes de que se llama.  
+> Debe copiar el ensamblado y, a continuación, péguelo en... \\ *Carpeta de instalación de visual Studio*\Common7\IDE\PrivateAssemblies\ para asegurarse de que se carga antes de que se llama.  
   
 ## <a name="adding-commands-with-the-dte-object"></a>Adición de comandos con el objeto DTE  
  Puede acceder al objeto DTE desde una página de inicio tanto en el marcado en el código.  
   
- En el marcado, se puede acceder a ella mediante el [extensión de marcado de enlace](http://msdn.microsoft.com/library/83d6e2a4-1b0c-4fc8-bd96-b5e98800ab63) sintaxis para llamar a la <xref:EnvDTE.DTE> objeto. Puede usar este enfoque para enlazar a propiedades sencillas, como los que devuelven colecciones, pero no se puede enlazar a los métodos o servicios. El ejemplo siguiente se muestra un <xref:System.Windows.Controls.TextBlock> control que se enlaza el <xref:EnvDTE._DTE.Name%2A> propiedad y un <xref:System.Windows.Controls.ListBox> control que enumera el <xref:EnvDTE.Window.Caption%2A> propiedades de la colección devuelta por la <xref:EnvDTE._DTE.Windows%2A> propiedad.  
+ En el marcado, se puede acceder a ella mediante el [extensión de marcado de enlace](https://msdn.microsoft.com/library/83d6e2a4-1b0c-4fc8-bd96-b5e98800ab63) sintaxis para llamar a la <xref:EnvDTE.DTE> objeto. Puede usar este enfoque para enlazar a propiedades sencillas, como los que devuelven colecciones, pero no se puede enlazar a los métodos o servicios. El ejemplo siguiente se muestra un <xref:System.Windows.Controls.TextBlock> control que se enlaza el <xref:EnvDTE._DTE.Name%2A> propiedad y un <xref:System.Windows.Controls.ListBox> control que enumera el <xref:EnvDTE.Window.Caption%2A> propiedades de la colección devuelta por la <xref:EnvDTE._DTE.Windows%2A> propiedad.  
   
 ```xml  
 <TextBlock Text="{Binding Path=DTE.Name}" FontSize="12" HorizontalAlignment="Center"/>  

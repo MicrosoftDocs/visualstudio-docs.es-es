@@ -1,5 +1,5 @@
 ---
-title: IJsDebugStackWalker (interfaz) | Documentos de Microsoft
+title: Interfaz IJsDebugStackWalker | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -11,12 +11,12 @@ caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d06af2c509339d9499f66e1f267c54c69951e225
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 3b06b8c1f9282c42599c798030440c30450ef6dd
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58150899"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72574014"
 ---
 # <a name="ijsdebugstackwalker-interface"></a>IJsDebugStackWalker (Interfaz)
 Representa un rastreador de pila para un subproceso especificado.  
@@ -33,13 +33,13 @@ IJsDebugStackWalker : public IUnknown;
   
 |Name|Descripción|  
 |----------|-----------------|  
-|[IJsDebugStackWalker::GetNext (Método)](../../winscript/reference/ijsdebugstackwalker-getnext-method.md)|Obtiene el siguiente fotograma.|  
+|[IJsDebugStackWalker::GetNext (Método)](../../winscript/reference/ijsdebugstackwalker-getnext-method.md)|Obtiene el fotograma siguiente.|  
   
 ## <a name="remarks"></a>Comentarios  
- Solo se pueden crear rastreadores de pila, mientras que el destino se ha detenido y no son válido una vez que se ha seguido el proceso de destino.  
+ Los recorridos de pila solo se pueden crear mientras el destino está detenido y no son válidos una vez que el proceso de destino ha continuado de nuevo.  
   
 ## <a name="requirements"></a>Requisitos  
- **Encabezado:** jscript9diag.h  
+ **Encabezado:** jscript9diag. h  
   
 ## <a name="see-also"></a>Vea también  
  [Referencia de interfaces de Windows Script](../../winscript/reference/windows-script-interfaces-reference.md)

@@ -13,12 +13,12 @@ caps.latest.revision: 11
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 641182fb3896bea9d1944aeaaaab2d68f285f95f
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 7f3fd2895b0a10d04cded23af5e5953e7a1a340f
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58996016"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "64824054"
 ---
 # <a name="idiasymbolgetarrayindextype"></a>IDiaSymbol::get_arrayIndexType
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -41,14 +41,14 @@ HRESULT get_arrayIndexType ( 
  Si es correcto, devuelve `S_OK`; en caso contrario, devuelve `S_FALSE` o código de error.  
   
 > [!NOTE]
->  Un valor devuelto de `S_FALSE` significa que la propiedad no está disponible para el símbolo.  
+> Un valor devuelto de `S_FALSE` significa que la propiedad no está disponible para el símbolo.  
   
 ## <a name="remarks"></a>Comentarios  
  Algunos lenguajes pueden especificar el tipo utilizado como un índice de matriz. El símbolo devuelto por este método especifica ese tipo.  
   
 ## <a name="requirements"></a>Requisitos  
   
-|Requisito|Descripción|  
+|Requisito|DESCRIPCIÓN|  
 |-----------------|-----------------|  
 |Encabezado:|dia2.h|  
 |Versión:|SDK de DIA v7.0|  

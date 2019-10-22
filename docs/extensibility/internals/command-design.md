@@ -6,23 +6,23 @@ helpviewer_keywords:
 - commands
 - commands, implementation
 ms.assetid: 097108c3-f758-4b87-89d6-b32d12d9041a
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c176a558d7d5956c1d41593f5d0cc71184a9a820
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: e1644cfa71296c4233cf17b6b225933aeeb3d477
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56635246"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66342172"
 ---
 # <a name="command-design"></a>Diseño de comandos
 Al agregar un comando a un VSPackage, debe especificar dónde va a aparecer, cuando está disponible y cómo resulta controlarse.
 
 ## <a name="define-commands"></a>Definir comandos
- Para definir nuevos comandos, incluir una tabla de comandos de Visual Studio (*.vsct*) archivo en el proyecto de VSPackage. Si ha creado un paquete VSPackage mediante la plantilla de paquete de Visual Studio, el proyecto incluye alguno de estos archivos. Para obtener más información, consulte [archivos de tabla (.vsct) de comandos de Visual Studio](../../extensibility/internals/visual-studio-command-table-dot-vsct-files.md).
+ Para definir nuevos comandos, incluir una tabla de comandos de Visual Studio ( *.vsct*) archivo en el proyecto de VSPackage. Si ha creado un paquete VSPackage mediante la plantilla de paquete de Visual Studio, el proyecto incluye alguno de estos archivos. Para obtener más información, consulte [archivos de tabla (.vsct) de comandos de Visual Studio](../../extensibility/internals/visual-studio-command-table-dot-vsct-files.md).
 
  Visual Studio combina todas las *.vsct* archivos encuentra para que pueda mostrar los comandos. Ya que estos archivos son distintos del VSPackage binario, no tiene Visual Studio cargar el paquete para encontrar los comandos. Para obtener más información, consulte [VSPackages cómo agregar elementos de la interfaz de usuario](../../extensibility/internals/how-vspackages-add-user-interface-elements.md).
 
@@ -36,7 +36,7 @@ Al agregar un comando a un VSPackage, debe especificar dónde va a aparecer, cua
 ## <a name="visual-studio-command-environment"></a>Entorno de comandos de Visual Studio
  Visual Studio puede alojar cualquier número de paquetes VSPackage, y cada uno puede aportar su propio conjunto de comandos. El entorno muestra sólo los comandos que son adecuados para la tarea actual. Para obtener más información, consulte [comando disponibilidad](../../extensibility/internals/command-availability.md) y [objetos de contexto de selección](../../extensibility/internals/selection-context-objects.md).
 
- Un VSPackage que define los nuevos comandos, menús, barras de herramientas o los menús contextuales proporciona su información de comandos de Visual Studio en tiempo de instalación a través de entradas del registro que hacen referencia a recursos en ensamblados nativos o administrados. Cada recurso, a continuación, hace referencia a un recurso de datos binarios (*.cto*) archivo, que se produce cuando se compila una tabla de comandos de Visual Studio (*.vsct*) archivo. Esto permite que Visual Studio proporcionar conjuntos de comandos combinados, menús y barras de herramientas sin tener que cargar cada VSPackage instalado.
+ Un VSPackage que define los nuevos comandos, menús, barras de herramientas o los menús contextuales proporciona su información de comandos de Visual Studio en tiempo de instalación a través de entradas del registro que hacen referencia a recursos en ensamblados nativos o administrados. Cada recurso, a continuación, hace referencia a un recurso de datos binarios ( *.cto*) archivo, que se produce cuando se compila una tabla de comandos de Visual Studio ( *.vsct*) archivo. Esto permite que Visual Studio proporcionar conjuntos de comandos combinados, menús y barras de herramientas sin tener que cargar cada VSPackage instalado.
 
 ### <a name="command-organization"></a>Organización de comando
  El entorno coloca comandos por grupo, prioridad y menú.

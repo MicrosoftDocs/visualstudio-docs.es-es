@@ -11,13 +11,13 @@ caps.latest.revision: 30
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 29306a16390039c8ee6e424b81a5ff617e533ab4
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58994715"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68203907"
 ---
-# <a name="instantiating-the-core-editor-by-using-the-legacy-api"></a>El Editor básico de creación de instancias mediante la API heredada
+# <a name="instantiating-the-core-editor-by-using-the-legacy-api"></a>Creación de instancias del editor principal mediante la API heredada
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 El editor es responsable de las funciones como inserción, eliminación, copiar y pegar de edición de texto. Estas funciones combina con los proporcionados por servicios de lenguaje, como el color de texto, sangría y finalización de instrucciones de IntelliSense.  
@@ -69,4 +69,4 @@ El editor es responsable de las funciones como inserción, eliminación, copiar 
 ## <a name="see-also"></a>Vea también  
  [En el Editor básico](../extensibility/inside-the-core-editor.md)   
  [Abrir y guardar elementos de proyecto](../extensibility/internals/opening-and-saving-project-items.md)   
- [Tutorial: Crear un Editor de núcleo y registrar un tipo de archivo del Editor](../extensibility/walkthrough-creating-a-core-editor-and-registering-an-editor-file-type.md)
+ [Tutorial: Crear un editor principal y registrar un tipo de archivo del editor](../extensibility/walkthrough-creating-a-core-editor-and-registering-an-editor-file-type.md)

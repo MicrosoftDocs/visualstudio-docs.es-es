@@ -6,12 +6,12 @@ ms.author: crdun
 ms.date: 04/14/2017
 ms.assetid: 5C800815-0B13-4B27-B017-95FCEF1A0EA2
 ms.custom: video
-ms.openlocfilehash: 59ee47f8971278e1be9714e8ee4e70911f612d52
-ms.sourcegitcommit: da73f7a0cf1795d5d400c0897ae3326191435dd0
+ms.openlocfilehash: 9e4699a1d4e2826cad205ce89ab46812cd5c4b2d
+ms.sourcegitcommit: 7fbfb2a1d43ce72545096c635df2b04496b0be71
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/28/2019
-ms.locfileid: "58569307"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "67692801"
 ---
 # <a name="include-a-nuget-package-in-your-project"></a>Incluir un paquete NuGet en el proyecto
 
@@ -43,7 +43,7 @@ Cuando la ventana se abre, carga una lista de paquetes del origen de paquetes pr
 
 ![Lista de paquetes NuGet](media/nuget-walkthrough-AddPackages1.png)
 
-Use el cuadro de búsqueda de la esquina superior derecha para buscar un paquete determinado, por ejemplo  `azure`. Cuando encuentre un paquete que quiera usar, selecciónelo y haga clic en el botón  **Agregar paquete**  para iniciar la instalación.
+Use el cuadro de búsqueda de la esquina superior derecha para buscar un paquete determinado, por ejemplo `azure`. Cuando encuentre un paquete que quiera usar, selecciónelo y haga clic en el botón **Agregar paquete** para iniciar la instalación.
 
 [Adición del paquete NuGet Azure](media/nuget-walkthrough-AddPackages2.png)
 
@@ -51,13 +51,13 @@ Una vez que el paquete se ha descargado, se agrega al proyecto. La solución cam
 
 * El nodo **Referencias** contiene una lista de todos los ensamblados que forman parte de un paquete NuGet.
 * El nodo **Paquetes** muestra cada paquete NuGet descargado. Puede actualizar esta lista o quitar un paquete de ella.
-* Se agrega un archivo **packages.config** al proyecto. El IDE usa este archivo XML para realizar un seguimiento de a qué versiones del paquete se hace referencia en este proyecto. Este archivo no se debe editar manualmente, sino que debe mantenerse en el control de versiones. Tenga en cuenta que se puede usar un archivo project.json en lugar de un archivo packages.config. El archivo project.json es un nuevo formato de archivo de paquete presentado con NuGet 3 que admite la restauración transitiva. Puede ver información más detallada sobre project.json en la [documentación de NuGet](http://docs.microsoft.com/NuGet/Schema/Project-Json). Hay que agregar el archivo project.json manualmente y cerrar el proyecto y volverlo a abrir antes de usar el archivo project.json en Visual Studio para Mac.
+* Se agrega un archivo **packages.config** al proyecto. El IDE usa este archivo XML para realizar un seguimiento de a qué versiones del paquete se hace referencia en este proyecto. Este archivo no se debe editar manualmente, sino que debe mantenerse en el control de versiones. Tenga en cuenta que se puede usar un archivo project.json en lugar de un archivo packages.config. El archivo project.json es un nuevo formato de archivo de paquete presentado con NuGet 3 que admite la restauración transitiva. Puede ver información más detallada sobre project.json en la [documentación de NuGet](https://docs.microsoft.com/NuGet/Schema/Project-Json). Hay que agregar el archivo project.json manualmente y cerrar el proyecto y volverlo a abrir antes de usar el archivo project.json en Visual Studio para Mac.
 
 ## <a name="using-nuget-packages"></a>Uso de paquetes NuGet
 
 Una vez agregado el paquete NuGet y actualizadas las referencias del proyecto, puede programar con las API como haría con cualquier referencia de proyecto.
 
-Asegúrese de agregar cualquier directiva  `using`  necesaria a la parte superior del archivo:
+Asegúrese de agregar cualquier directiva `using` necesaria a la parte superior del archivo:
 
 ```csharp
 using Newtonsoft.Json;
@@ -77,9 +77,9 @@ Haga clic con el botón derecho en **Paquetes** para acceder al menú contextual
 
 ![Menú Paquetes](media/nuget-walkthrough-PackagesMenu.png)
 
-*   **Agregar paquetes**: abre la ventana para agregar más paquetes al proyecto.
-*   **Actualizar**: comprueba el servidor de origen de cada paquete y descarga las versiones más recientes.
-*   **Restaurar**: descarga todos los paquetes que faltan (sin actualizar los paquetes existentes a versiones más recientes).
+* **Agregar paquetes**: abre la ventana para agregar más paquetes al proyecto.
+* **Actualizar**: comprueba el servidor de origen de cada paquete y descarga las versiones más recientes.
+* **Restaurar**: descarga todos los paquetes que faltan (sin actualizar los paquetes existentes a versiones más recientes).
 
 Las opciones Actualizar y Restaurar también están disponibles en el nivel de solución y afectan a todos los proyectos de esta.
 
@@ -87,9 +87,9 @@ También puede hacer clic con el botón derecho en paquetes individuales para ac
 
 ![Menú Paquetes](media/nuget-walkthrough-PackageMenu.png)
 
-*   **Número de versión**: el número de versión es un elemento de menú deshabilitado que solo se proporciona con fines informativos.
-*   **Actualizar**: comprueba el servidor de origen y descarga una versión más reciente (si la hubiera).
-*   **Quitar**: quita el paquete de este proyecto y quita los ensamblados correspondientes de las referencias del proyecto.
+* **Número de versión**: el número de versión es un elemento de menú deshabilitado que solo se proporciona con fines informativos.
+* **Actualizar**: comprueba el servidor de origen y descarga una versión más reciente (si la hubiera).
+* **Quitar**: quita el paquete de este proyecto y quita los ensamblados correspondientes de las referencias del proyecto.
 
 ## <a name="adding-package-sources"></a>Adición de orígenes de paquetes
 

@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: dd28e0f2455e1a6ed866d879ec347082e9302c3a
-ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
+ms.openlocfilehash: 1259f92b89fc6d83bb0b7296cc07844bf25df705
+ms.sourcegitcommit: 53bc4c11b82882ab658e34c65ae374060f823531
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58790438"
+ms.lasthandoff: 09/19/2019
+ms.locfileid: "71128321"
 ---
 # <a name="analyze-energy-use-in-uwp-apps"></a>Análisis del uso de energía en las aplicaciones para UWP
 
@@ -88,18 +88,18 @@ if (performance && performance.mark) {
 
 ## <a name="collect-energy-profile-data-for-your-app"></a>Recopilar datos del perfil de energía para la aplicación
 
-1.  En el menú **Depurar** , elija **Iniciar diagnóstico sin depurar**.
+1. En el menú **Depurar** , elija **Iniciar diagnóstico sin depurar**.
 
      ![Elegir Consumo de energía en el concentrador de diagnósticos](../profiling/media/energyprof_diagnosticshub.png "ENERGYPROF_DiagnosticsHub")
 
-2.  Elija **Consumo de energía** y, a continuación, **Iniciar**.
+2. Elija **Consumo de energía** y, a continuación, **Iniciar**.
 
     > [!NOTE]
     > Al iniciar el generador de perfiles **Consumo de energía**, es posible que vea una ventana **Control de cuentas de usuario** que solicite su permiso para ejecutar *VsEtwCollector.exe*. Elija **Sí**.
 
-3.  Ejecute la aplicación para recopilar datos.
+3. Ejecute la aplicación para recopilar datos.
 
-4.  Para detener la generación de perfiles, vuelve a Visual Studio (Alt + Tab) y elige **Detener colección** en la página del concentrador de diagnósticos.
+4. Para detener la generación de perfiles, vuelve a Visual Studio (Alt + Tab) y elige **Detener colección** en la página del concentrador de diagnósticos.
 
      ![Detener la recopilación de datos](../profiling/media/xamlprof_stopcollection.png "XAMLProf_StopCollection")
 
@@ -157,5 +157,5 @@ if (performance && performance.mark) {
 
 ## <a name="see-also"></a>Vea también
 
-- [Generación de perfiles en Visual Studio](../profiling/index.md)
+- [Generación de perfiles en Visual Studio](../profiling/index.yml)
 - [Primer vistazo a la generación de perfiles](../profiling/profiling-feature-tour.md)

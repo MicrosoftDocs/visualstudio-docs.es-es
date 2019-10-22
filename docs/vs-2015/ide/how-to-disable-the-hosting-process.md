@@ -9,42 +9,40 @@ helpviewer_keywords:
 - vshost.exe, disabling the hosting process
 ms.assetid: 9157488d-737f-454b-8d8d-36f99de38bb0
 caps.latest.revision: 12
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 92e4fb1ae7cf7acf387eb9387284534eb55c1066
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 95dcd7da113bfe996d00e617b7c8e2f9b68864d7
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60040020"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72667974"
 ---
 # <a name="how-to-disable-the-hosting-process"></a>Cómo: Deshabilitar el proceso de alojamiento
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Las llamadas a ciertas API pueden verse afectadas cuando se habilita el proceso de hospedaje. En estos casos, es necesario deshabilitar el proceso de hospedaje para devolver los resultados correctos.  
-  
-### <a name="to-disable-the-hosting-process"></a>Para deshabilitar el proceso de hospedaje  
-  
-1. Abra un proyecto ejecutable en [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Los proyectos que no generan archivos ejecutables (por ejemplo, proyectos de biblioteca de clases o de servicio) no tienen esta opción.  
-  
-2. En el menú **Proyecto**, haga clic en **Propiedades**.  
-  
-3. Haga clic en la pestaña **Depurar**.  
-  
-4. Desactive la casilla **Habilitar el proceso de hospedaje de Visual Studio**.  
-  
-   Cuando se deshabilita el proceso de hospedaje, varias características de depuración no están disponibles o sufren una disminución de rendimiento. Para obtener más información, consulte [Depuración y proceso de hospedaje](../debugger/debugging-and-the-hosting-process.md).  
-  
-   En general, cuando se deshabilita el proceso de hospedaje:  
-  
-- Aumenta el tiempo necesario para empezar a depurar las aplicaciones de [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)].  
-  
-- No está disponible la evaluación de expresiones en tiempo de diseño.  
-  
-- No está disponible la depuración de confianza parcial.  
-  
-## <a name="see-also"></a>Vea también  
- [Depuración y proceso de hospedaje](../debugger/debugging-and-the-hosting-process.md)   
- [Proceso de alojamiento (vshost.exe)](../ide/hosting-process-vshost-exe.md)   
- [Versiones de compilación durante el desarrollo de una aplicación](http://msdn.microsoft.com/c9497d62-3b7b-4449-88e8-cf27acc9efe6)
+Las llamadas a ciertas API pueden verse afectadas cuando se habilita el proceso de hospedaje. En estos casos, es necesario deshabilitar el proceso de hospedaje para devolver los resultados correctos.
+
+### <a name="to-disable-the-hosting-process"></a>Para deshabilitar el proceso de hospedaje
+
+1. Abra un proyecto ejecutable en [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Los proyectos que no generan archivos ejecutables (por ejemplo, proyectos de biblioteca de clases o de servicio) no tienen esta opción.
+
+2. En el menú **Proyecto**, haga clic en **Propiedades**.
+
+3. Haga clic en la pestaña **Depurar**.
+
+4. Desactive la casilla **Habilitar el proceso de hospedaje de Visual Studio**.
+
+   Cuando se deshabilita el proceso de hospedaje, varias características de depuración no están disponibles o sufren una disminución de rendimiento. Para obtener más información, consulte [Depuración y proceso de hospedaje](../debugger/debugging-and-the-hosting-process.md).
+
+   En general, cuando se deshabilita el proceso de hospedaje:
+
+- Aumenta el tiempo necesario para empezar a depurar las aplicaciones de [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)].
+
+- No está disponible la evaluación de expresiones en tiempo de diseño.
+
+- No está disponible la depuración de confianza parcial.
+
+## <a name="see-also"></a>Otras referencias
+ [La depuración y el proceso de hospedaje del proceso de hospedaje](../debugger/debugging-and-the-hosting-process.md) [(vshost. exe)](../ide/hosting-process-vshost-exe.md) se [compilan durante el desarrollo](https://msdn.microsoft.com/c9497d62-3b7b-4449-88e8-cf27acc9efe6) de la aplicación

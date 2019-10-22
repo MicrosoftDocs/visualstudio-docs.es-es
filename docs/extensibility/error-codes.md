@@ -7,17 +7,17 @@ helpviewer_keywords:
 - source control plug-ins, error codes
 - errors [Visual Studio SDK]
 ms.assetid: d9cbd1c4-719b-467a-8100-333c1e146d3b
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2e3dc26b8dd2e17e201cf760db68d0faf7e231ed
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 0d4f4289519dcc8ac5190221b7b45f64e98051da
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56688031"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66334438"
 ---
 # <a name="error-codes"></a>Códigos de error
 Cuando una función de la API de complemento de Control de origen devuelve un error, se espera a ser uno de los siguientes códigos de error. Todos los errores son negativos, son positivos, advertencias o los códigos de error informativo y correcta es 0.

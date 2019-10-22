@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1ff663a7d2a22f152b3a0b9081623766535f9a53
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 6f670449be9b416d1c54bc83379bae4a6733d932
+ms.sourcegitcommit: f42b5318c5c93e2b5ecff44f408fab8bcdfb193d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "57869049"
+ms.lasthandoff: 08/22/2019
+ms.locfileid: "69976719"
 ---
 # <a name="synchronize-visual-studio-settings-across-multiple-computers"></a>Sincronizar la configuración de Visual Studio en varios equipos
 
@@ -31,19 +31,19 @@ De forma predeterminada, se sincroniza la configuración siguiente:
 
 - Las siguientes opciones en las páginas **Herramientas** > **Opciones**:
 
-   - La configuración de uso de mayúsculas y minúsculas de la barra de menús y de Tema en la página de opciones **Entorno** > **General**.
+  - La configuración de uso de mayúsculas y minúsculas de la barra de menús y de Tema en la página de opciones **Entorno** > **General**.
 
-   - Todos los valores de la página de opciones **Entorno** > **Fuentes y colores**.
+  - Todos los valores de la página de opciones **Entorno** > **Fuentes y colores**.
 
-   - Todos los métodos abreviados de teclado en la página de opciones **Entorno** > **Teclado**.
+  - Todos los métodos abreviados de teclado en la página de opciones **Entorno** > **Teclado**.
 
-   - Todos los valores de la página de opciones **Entorno** > **Pestañas y ventanas**.
+  - Todos los valores de la página de opciones **Entorno** > **Pestañas y ventanas**.
 
-   - Todos los valores de la página de opciones **Entorno** > **Inicio**.
+  - Todos los valores de la página de opciones **Entorno** > **Inicio**.
 
-   - Todos los valores de las páginas de opciones **Editor de texto**, por ejemplo, las [preferencias de estilo del código](code-styles-and-quick-actions.md).
+  - Todos los valores de las páginas de opciones **Editor de texto**, por ejemplo, las [preferencias de estilo del código](code-styles-and-code-cleanup.md).
 
-   - Todos los valores de las páginas de opciones **Diseñador XAML**.
+  - Todos los valores de las páginas de opciones **Diseñador XAML**.
 
 ## <a name="turn-off-synchronized-settings-on-a-particular-computer"></a>Desactivar la configuración sincronizada en un equipo concreto
 
@@ -71,7 +71,7 @@ Si actualmente tiene instalaciones en paralelo de Visual Studio y quiere usar la
 
 1. Actualice a Visual Studio 2017, versión 15.3 o posterior.
 
-2. Use el **Asistente para importar y exportar configuraciones** para exportar toda la configuración existente a una ubicación fuera de la carpeta *%localappdata%\Microsoft\VisualStudio\15.0_xxxxxxxx*.
+2. Use el **Asistente para importar y exportar configuraciones** a fin de exportar toda la configuración existente a una ubicación fuera de la carpeta *%localappdata%\Microsoft\VisualStudio\15.0_xxxxxxxx*.
 
 3. Abra el **Símbolo del sistema para desarrolladores de VS 2017** y ejecute `devenv /resetuserdata`.
 
@@ -84,6 +84,10 @@ Si actualmente tiene instalaciones en paralelo de Visual Studio y quiere usar la
 No se comparten determinadas opciones, como el diseño de ventanas de herramientas, entre distintas instalaciones en paralelo de Visual Studio. El archivo *CurrentSettings.vssettings* de *%userprofile%\Documents\Visual Studio 2019\Settings* se encuentra en una carpeta específica de la instalación que es similar a *%localappdata%\Microsoft\VisualStudio\16.0_xxxxxxxx\Settings*.
 
 ::: moniker-end
+
+## <a name="reset-synchronized-settings"></a>Restablecimiento de la configuración sincronizada
+
+Para restablecer toda la configuración a sus valores predeterminados, inicie sesión en Visual Studio y seleccione **Herramientas** > **Importar y exportar configuraciones** para abrir el **Asistente para importar y exportar configuraciones**. Seleccione **Restablecer todas las configuraciones** y siga los pasos restantes del asistente.
 
 ## <a name="see-also"></a>Vea también
 

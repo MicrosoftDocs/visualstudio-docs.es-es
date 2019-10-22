@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - source control [Visual Studio SDK], guidelines for projects and editors
 ms.assetid: 2483cce5-321c-4d3c-9c5c-ee8385263f74
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3566709819d2023dfd6e38e40f88a454de83e3e6
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: a9c04623ed276bf10784ccdf895c5abb1c6e9903
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56626107"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66315869"
 ---
 # <a name="additional-source-control-guidelines-for-projects-and-editors"></a>Instrucciones de control de origen adicionales para los proyectos y editores
 Hay una serie de instrucciones de proyectos y editores deben cumplir con el fin de admitir el control de código fuente.

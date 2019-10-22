@@ -1,5 +1,5 @@
 ---
-title: Personalizar y ampliar lenguajes específicos de dominio | Documentos de Microsoft
+title: Personalización y extensión de lenguajes específicos de dominio | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-modeling
@@ -8,73 +8,71 @@ helpviewer_keywords:
 - Domain-Specific Language Tools, creating solutions
 ms.assetid: b155eb79-4e0a-4a99-a6f2-ca4f811fb5ca
 caps.latest.revision: 50
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 1dc596909862c2ebb490fa478e1f5f71f88dd7ac
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: b02b1e5bac7f39bcabb9cdc9b5c3acabe169827b
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60106649"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72655085"
 ---
 # <a name="customizing-and-extending-a-domain-specific-language"></a>Personalizar y ampliar lenguajes específicos de dominio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Visual Studio de modelado y visualización SDK (VMSDK) proporciona varios niveles en el que puede definir las herramientas de modelado:  
-  
-1. Definir lenguajes específicos de dominio (DSL) mediante el diagrama de definición de DSL. Puede crear rápidamente un DSL con una notación en forma de diagrama, un formato XML legible y las herramientas básicas que se necesitan para generar código y otros artefactos.  
-  
-     Para obtener más información, consulte [cómo definir lenguajes específicos de dominio](../modeling/how-to-define-a-domain-specific-language.md).  
-  
-2. Ajuste el DSL mediante el uso de características más avanzadas de la definición de DSL. Por ejemplo, puede establecer vínculos adicionales aparecen cuando el usuario crea un elemento. Estas técnicas se logran principalmente en la definición de DSL, y algunas requieren unas pocas líneas de código de programa.  
-  
-3. Amplíe sus herramientas de modelado mediante el uso de código de programa. VMSDK está diseñado específicamente para facilitar la integración de las extensiones con el código que se genera a partir de la definición de DSL.  Para obtener más información, consulte [escribir código para personalizar lenguajes específicos de dominio](../modeling/writing-code-to-customise-a-domain-specific-language.md).  
-  
+El SDK de modelado y visualización de Visual Studio (VMSDK) proporciona varios niveles en los que puede definir herramientas de modelado:
+
+1. Defina un lenguaje específico de dominio (DSL) mediante el diagrama de definición de DSL. Puede crear rápidamente un DSL con una notación en forma de diagrama, un formato XML legible y las herramientas básicas que se necesitan para generar código y otros artefactos.
+
+     Para obtener más información, consulte [cómo definir un lenguaje específico de dominio](../modeling/how-to-define-a-domain-specific-language.md).
+
+2. Ajuste el DSL con características más avanzadas de la definición de DSL. Por ejemplo, puede hacer que aparezcan vínculos adicionales cuando el usuario crea un elemento. Estas técnicas se logran principalmente en la definición de DSL y algunas requieren algunas líneas de código de programa.
+
+3. Amplíe sus herramientas de modelado mediante el código del programa. VMSDK está diseñado específicamente para facilitar la integración de las extensiones con el código que se genera a partir de la definición de DSL.  Para obtener más información, vea [escribir código para personalizar un lenguaje específico de dominio](../modeling/writing-code-to-customise-a-domain-specific-language.md).
+
 > [!NOTE]
->  Si ha actualizado el archivo de definiciones de DSL, no olvide hacer clic en **Transformar todas las plantillas** en la barra de herramientas del explorador de soluciones antes de volver a generar la solución.  
-  
-## <a name="customShapes"></a> En esta sección  
-  
-|Para lograr este efecto|En este tema, consulte|  
-|----------------------------|-------------------------|  
-|Permite al usuario establecer las propiedades de estilo y color de una forma.|Haga clic en la clase de forma o conector, seleccione **agregar expuestos**y haga clic en un elemento.<br /><br /> Consulte [personalizar la presentación en el diagrama](../modeling/customizing-presentation-on-the-diagram.md).|  
-|Las distintas clases de elemento de modelo un aspecto similares en el diagrama, compartir propiedades como el alto inicial y el ancho, el color, información sobre herramientas.|Usar la herencia entre las formas o clases de conector. Las asignaciones entre las formas derivadas y clases de dominio derivadas heredan los detalles de asignación de los elementos primarios.<br /><br /> O bien, asignar clases de dominio diferente a la misma clase shape.|  
-|Los contextos de distintas formas, se muestra una clase de elemento de modelo.|Asignar más de una clase de forma a la misma clase de dominio. Cuando se compila la solución, siga el informe de errores y proporciona el código solicitado para decidir qué forma que desee usar.|  
-|Color de una forma u otras características como fuente indican el estado actual.|Consulte [actualizar formas y conectores para reflejar el modelo](../modeling/updating-shapes-and-connectors-to-reflect-the-model.md).<br /><br /> Cree una regla que actualiza las propiedades expuestas. Consulte [las reglas propagan los cambios en el modelo](../modeling/rules-propagate-changes-within-the-model.md).<br /><br /> O bien, use OnAssociatedPropertyChanged() para actualizar no exponen características como flechas de vínculo o la fuente.|  
-|Icono en forma cambia para indicar el estado.|Establecer la visibilidad de la asignación de decorator en la ventana Detalles de DSL. Busque varios elementos Decorator de imagen en la misma posición. Consulte [actualizar formas y conectores para reflejar el modelo](../modeling/updating-shapes-and-connectors-to-reflect-the-model.md).<br /><br /> O bien, invalidar `ImageField.GetDisplayImage()`. Vea el ejemplo de <xref:Microsoft.VisualStudio.Modeling.Diagrams.ImageField>.|  
-|Establecer una imagen de fondo en cualquier forma|Invalidar InitializeInstanceResources() para agregar un anclado ImageField. Consulte [personalizar la presentación en el diagrama](../modeling/customizing-presentation-on-the-diagram.md).|  
-|Anidar formas a cualquier profundidad|Configure una recursiva incrustación de árbol. Defina el elemento BoundsRules para contener las formas. Consulte [personalizar la presentación en el diagrama](../modeling/customizing-presentation-on-the-diagram.md).|  
-|Adjuntar conectores en puntos fijos en límites de un elemento.|Definir elementos terminales incrustados, representados por pequeños puertos en el diagrama. Use el elemento BoundsRules para corregir los puertos en su lugar. Vea el ejemplo de diagrama de circuito en [SDK de visualización y modelado](http://go.microsoft.com/fwlink/?LinkID=186128).|  
-|Campo de texto muestra un valor derivado de otros valores.|Asignar el elemento decorator de texto a una propiedad de dominio Calculated o almacenamiento personalizado. Para obtener más información, consulte [calculadas y las propiedades de almacenamiento personalizado](../modeling/calculated-and-custom-storage-properties.md).|  
-|Propagar los cambios entre los elementos del modelo, o entre formas|Consulte [validación en los lenguajes específicos de dominio](../modeling/validation-in-a-domain-specific-language.md).|  
-|Propagar los cambios a los recursos como Sí [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] extensiones fuera de la tienda.|Consulte [controladores de eventos propagan cambios fuera del modelo](../modeling/event-handlers-propagate-changes-outside-the-model.md).|  
-|Ventana de propiedades muestra las propiedades de un elemento relacionado.|Configure la propiedad de reenvío. Consulte [personalizar la ventana propiedades](../modeling/customizing-the-properties-window.md).|  
-|Categorías de propiedades|La ventana Propiedades se divide en secciones denominadas categorías. Establecer el **categoría** de las propiedades de dominio. Las propiedades con el mismo nombre de categoría aparecerá en la misma sección. También puede establecer el **categoría** de un rol de relación.|  
-|Controlar el acceso a las propiedades de dominio|Establecer **es examinable** false para impedir que una propiedad de dominio que aparecen en la ventana Propiedades en tiempo de ejecución. Todavía puede asignarla a los elementos Decorator de texto.<br /><br /> **Es de sólo lectura de la interfaz de usuario** impide que los usuarios cambiar una propiedad de dominio.<br /><br /> Acceso al programa en la propiedad de dominio no se ve afectado.|  
-|Cambiar el nombre, el icono y la visibilidad de los nodos en el Explorador de modelos de su DSL.|Consulte [personalizar el Explorador de modelos](../modeling/customizing-the-model-explorer.md).|  
-|Habilitar copiar, cortar y pegar|Establecer el **habilitar copiar pegar** propiedad de la **Editor** nodo en el Explorador de DSL.|  
-|Copie sus objetivos y los vínculos de referencia cada vez que se copia un elemento. Por ejemplo, copie los comentarios adjuntos a un elemento.|Establecer el **Propagates Copy** propiedad del rol de origen (representado por la línea a un lado de la relación de dominio en el diagrama de definición de DSL).<br /><br /> Escribir código para invalidar ProcessOnCopy para lograr efectos más complejos.<br /><br /> Consulte [personalizar el comportamiento de copia](../modeling/customizing-copy-behavior.md).|  
-|Eliminar, cambiar el valor primario o volver a vincular los elementos relacionados cuando se elimina un elemento.|Establecer el **propaga eliminar** valor de un rol de relación. Para efectos más complejos, invalidar `ShouldVisitRelationship` y `ShouldVisitRolePlayer` métodos en el `MyDslDeleteClosure` (clase), definido en **DomainModel.cs**<br /><br /> Consulte [personalizar el comportamiento de eliminación](../modeling/customizing-deletion-behavior.md)|  
-|Conservar el diseño de la forma y la apariencia en la copia y arrastrar y colocar.|Agregar las formas y conectores a copiado `ElementGroupPrototype`. Es el método más cómodo para invalidar `ElementOperations.CreateElementGroupPrototype()`<br /><br /> Consulte [personalizar el comportamiento de copia](../modeling/customizing-copy-behavior.md).|  
-|Pegar formas en la ubicación elegida, como la posición actual del cursor.|Invalidar `ClipboardCommandSet.ProcessOnCopy()` para usar la versión específica de la ubicación de `ElementOperations.Merge().` vea [personalizar el comportamiento de copia](../modeling/customizing-copy-behavior.md).|  
-|Crear vínculos adicionales al pegar|Override ClipboardCommandSet.ProcessOnPasteCommand()|  
-|Habilitar arrastrar y colocar en este diagrama, otros lenguajes DSL o UML diagramas y elementos de Windows|Vea [Cómo: Agregar un controlador para arrastrar y colocar](../modeling/how-to-add-a-drag-and-drop-handler.md)|  
-|Permitir que una forma o la herramienta y se puedan arrastrar una forma secundaria, como un puerto, como si se arrastró el elemento primario.|Definir una directiva de mezcla de elementos en la clase de objeto de destino, para reenviar el objeto colocado con el elemento primario. Consulte [personalizar la creación de elemento y movimiento](../modeling/customizing-element-creation-and-movement.md).|  
-|Permiten una forma o una herramienta que se puedan arrastrar una forma y hacer que los vínculos adicionales o los objetos creados. Por ejemplo, para permitir un comentario que se pueden colocar en un elemento al que está vinculado.|Definir una directiva de mezcla de elementos en la clase de dominio de destino y definir los vínculos que se genere. En casos complejos, puede agregar código personalizado. Consulte [personalizar la creación de elemento y movimiento](../modeling/customizing-element-creation-and-movement.md).|  
-|Cree un grupo de elementos con una herramienta. Por ejemplo, un componente con un conjunto fijo de puertos.|Invalide el método de inicialización del cuadro de herramientas de ToolboxHelper.cs. Crear un prototipo de grupo del elemento (EGP) que contiene los elementos y sus vínculos de relación. Consulte [personalizar las herramientas y el cuadro de herramientas](../modeling/customizing-tools-and-the-toolbox.md).<br /><br /> Incluya las formas de entidad de seguridad y el puertos en el EGP o definir elemento BoundsRules para colocar las formas de puerto cuando se crea una instancia de EGP. Consulte [de formas Boundsrules ubicación y tamaño](../modeling/boundsrules-constrain-shape-location-and-size.md).|  
-|Usar una herramienta de conexión para crear instancias de varios tipos de relación.|Agregar directivas de conectar vínculo (LCD) a la que se invoca mediante la herramienta Generador de conexiones. Los paneles LCD determinan el tipo de la relación entre los tipos de los dos elementos. Para facilitar esta dependen de los Estados de los elementos, puede agregar código personalizado. Consulte [personalizar las herramientas y el cuadro de herramientas](../modeling/customizing-tools-and-the-toolbox.md).|  
-|Herramientas rápidas: el usuario hacer doble clic en cualquier herramienta para crear muchas formas o conectores en sucesión.|En el Explorador de DSL, seleccione el `Editor` nodo. En la ventana Propiedades, establezca **usa elementos de cuadro de herramientas rápidas**.|  
-|Definir comandos de menú|Vea [Cómo: Modificar comandos de menú estándar](../modeling/how-to-modify-a-standard-menu-command-in-a-domain-specific-language.md)|  
-|Restringir el modelo con las reglas de validación|Consulte [validación en los lenguajes específicos de dominio](../modeling/validation-in-a-domain-specific-language.md)|  
-|Generar código, archivos de configuración o documentos desde un DSL.|[Generar código a partir de lenguajes específicos de dominio](../modeling/generating-code-from-a-domain-specific-language.md)|  
-|Personalizar cómo los modelos se guardan en el archivo.|Consulte [personalizar el almacenamiento de archivo y la serialización XML](../modeling/customizing-file-storage-and-xml-serialization.md)|  
-|Guardar modelos en las bases de datos u otro medio.|Invalidar *Sulenguaje*DocData<br /><br /> Consulte [personalizar el almacenamiento de archivo y la serialización XML](../modeling/customizing-file-storage-and-xml-serialization.md)|  
-|Integrar varios DSL para que funcionen como parte de una aplicación.|Consulte [integrar modelos utilizando Modelbus de Visual Studio](../modeling/integrating-models-by-using-visual-studio-modelbus.md).|  
-|Permitir que su DSL sea ampliada por terceros y la extensión de control.|[Ampliar DSL mediante MEF](../modeling/extend-your-dsl-by-using-mef.md)<br /><br /> [Compartir clases entre DSL mediante una biblioteca DSL](../modeling/sharing-classes-between-dsls-by-using-a-dsl-library.md)<br /><br /> [Definir una directiva de bloqueo para crear segmentos de solo lectura](../modeling/defining-a-locking-policy-to-create-read-only-segments.md)|  
-|||  
-  
-## <a name="see-also"></a>Vea también  
- [Cómo definir lenguajes específicos de dominio](../modeling/how-to-define-a-domain-specific-language.md)   
- [Escribir código para personalizar lenguajes específicos de dominio](../modeling/writing-code-to-customise-a-domain-specific-language.md)   
- [Modelar el SDK de Visual Studio: lenguajes específicos de dominio](../modeling/modeling-sdk-for-visual-studio-domain-specific-languages.md)
+> Cuando haya actualizado el archivo de definiciones de DSL, no olvide hacer clic en **transformar todas las plantillas** en la barra de herramientas de explorador de soluciones antes de recompilar la solución.
+
+## <a name="customShapes"></a>En esta sección
+
+|Para lograr este efecto|Consulte este tema|
+|----------------------------|-------------------------|
+|Permite al usuario establecer las propiedades de color y estilo de una forma.|Haga clic con el botón secundario en la clase de la forma o conector, seleccione **Agregar exposición**y haga clic en un elemento.<br /><br /> Consulte [personalizar la presentación en el diagrama](../modeling/customizing-presentation-on-the-diagram.md).|
+|Las distintas clases del elemento de modelo tienen un aspecto similar en el diagrama, compartiendo propiedades como el alto y el ancho iniciales, el color, la información sobre herramientas.|Utilice la herencia entre formas o clases de conector. Las asignaciones entre las formas derivadas y las clases de dominio derivadas heredan los detalles de asignación de los elementos primarios.<br /><br /> O bien, asigne distintas clases de dominio a la misma clase de forma.|
+|Una clase de elemento de modelo se muestra mediante distintos contextos de formas.|Asigne más de una clase de forma a la misma clase de dominio. Al compilar la solución, siga el informe de errores y proporcione el código solicitado para decidir qué forma usar.|
+|El color de la forma u otras características, como la fuente, indican el estado actual.|Consulte [Actualizar formas y conectores para reflejar el modelo](../modeling/updating-shapes-and-connectors-to-reflect-the-model.md).<br /><br /> Cree una regla que actualice las propiedades expuestas. Vea [las reglas propagar los cambios dentro del modelo](../modeling/rules-propagate-changes-within-the-model.md).<br /><br /> O bien, use OnAssociatedPropertyChanged () para actualizar características no expuestas, como las flechas de vínculo o la fuente.|
+|El icono de la forma cambia para indicar el estado.|Establezca la visibilidad de la asignación de Decorator en la ventana detalles de DSL. Busque varios decoradores de imagen en la misma posición. Consulte [Actualizar formas y conectores para reflejar el modelo](../modeling/updating-shapes-and-connectors-to-reflect-the-model.md).<br /><br /> O bien, invalide `ImageField.GetDisplayImage()`. Vea el ejemplo de <xref:Microsoft.VisualStudio.Modeling.Diagrams.ImageField>.|
+|Establecer una imagen de fondo en cualquier forma|Reemplace InitializeInstanceResources () para agregar un ImageField delimitado. Consulte [personalizar la presentación en el diagrama](../modeling/customizing-presentation-on-the-diagram.md).|
+|Anidar formas en cualquier profundidad|Configure un árbol de incrustación recursiva. Defina formas boundsrules para que contenga las formas. Consulte [personalizar la presentación en el diagrama](../modeling/customizing-presentation-on-the-diagram.md).|
+|Adjunte conectores en puntos fijos en el límite de un elemento.|Definir elementos terminales incrustados, representados por puertos pequeños en el diagrama. Use formas boundsrules para corregir los puertos en su lugar. Vea el ejemplo de diagrama de circuitos en [SDK de visualización y modelado](http://go.microsoft.com/fwlink/?LinkID=186128).|
+|Campo de texto muestra un valor derivado de otros valores.|Asigne el elemento Decorator de texto a una propiedad de dominio de almacenamiento calculada o personalizada. Para obtener más información, consulte [propiedades de almacenamiento calculado y personalizado](../modeling/calculated-and-custom-storage-properties.md).|
+|Propagar los cambios entre los elementos del modelo o entre las formas|Consulte [validación en un lenguaje específico de dominio](../modeling/validation-in-a-domain-specific-language.md).|
+|Propagar los cambios a recursos como otras extensiones de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] fuera del almacén.|Vea [los controladores de eventos propagan los cambios fuera del modelo](../modeling/event-handlers-propagate-changes-outside-the-model.md).|
+|La ventana de propiedades muestra las propiedades de un elemento relacionado.|Configurar el reenvío de propiedades. Vea [personalizar la ventana Propiedades](../modeling/customizing-the-properties-window.md).|
+|Categorías de propiedades|La ventana Propiedades se divide en secciones denominadas categorías. Establezca la **categoría** de las propiedades de dominio. Las propiedades con el mismo nombre de categoría aparecerán en la misma sección. También puede establecer la **categoría** de un rol de relación.|
+|Controlar el acceso de usuario a las propiedades del dominio|El valor de set **es** false para impedir que una propiedad de dominio aparezca en el ventana Propiedades en tiempo de ejecución. Todavía puede asignarlo a elementos Decorator de texto.<br /><br /> La **interfaz de usuario de solo lectura** impide que los usuarios cambien una propiedad de dominio.<br /><br /> El acceso de los programas a la propiedad de dominio no se ve afectado.|
+|Cambie el nombre, el icono y la visibilidad de los nodos en el explorador de modelos de DSL.|Vea [personalizar el explorador de modelos](../modeling/customizing-the-model-explorer.md).|
+|Habilitar copiar, cortar y pegar|Establezca la propiedad **Habilitar copiar pegar** del nodo **Editor** en DSL Explorer.|
+|Copiar los vínculos de referencia y sus destinos cada vez que se copia un elemento. Por ejemplo, copie los comentarios adjuntos a un elemento.|Establezca la propiedad **Propagate Copy** del rol de origen (representada por la línea en un lado de la relación de dominio en el diagrama de definición de DSL).<br /><br /> Escriba código para invalidar ProcessOnCopy para lograr efectos más complejos.<br /><br /> Vea [personalizar el comportamiento de copia](../modeling/customizing-copy-behavior.md).|
+|Eliminar, Reenlazar o volver a vincular elementos relacionados cuando se elimina un elemento.|Establezca **propaga** el valor de eliminación de un rol de relación. Para efectos más complejos, invalide `ShouldVisitRelationship` y `ShouldVisitRolePlayer` métodos en la clase `MyDslDeleteClosure`, definidos en **DomainModel.CS**<br /><br /> Consulte [personalizar el comportamiento de eliminación](../modeling/customizing-deletion-behavior.md)|
+|Conservar el diseño y el aspecto de la forma en copiar y arrastrar y colocar.|Agregue las formas y conectores al `ElementGroupPrototype` copiado. El método más cómodo para invalidar es `ElementOperations.CreateElementGroupPrototype()`<br /><br /> Vea [personalizar el comportamiento de copia](../modeling/customizing-copy-behavior.md).|
+|Pegar formas en la ubicación elegida, como la posición actual del cursor.|Invalide `ClipboardCommandSet.ProcessOnCopy()` para usar la versión específica de la ubicación de `ElementOperations.Merge().` vea [personalizar el comportamiento de copia](../modeling/customizing-copy-behavior.md).|
+|Crear vínculos adicionales al pegar|Invalidar ClipboardCommandSet. ProcessOnPasteCommand ()|
+|Habilitar arrastrar y colocar desde este diagrama, otros diagramas DSL o UML y elementos de Windows|Vea [Cómo: agregar un controlador de arrastrar y colocar](../modeling/how-to-add-a-drag-and-drop-handler.md)|
+|Permite arrastrar una forma o herramienta a una forma secundaria, como un puerto, como si se arrastrara al elemento primario.|Defina una directiva de combinación de elementos en la clase de objeto de destino para reenviar el objeto colocado al elemento primario. Vea [personalizar la creación y el movimiento de un elemento](../modeling/customizing-element-creation-and-movement.md).|
+|Permite arrastrar una forma o herramienta a una forma y hacer que se creen objetos o vínculos adicionales. Por ejemplo, para permitir que un comentario se coloque en un elemento al que se va a vincular.|Defina una directiva de combinación de elementos en la clase de dominio de destino y defina los vínculos que se van a generar. En casos complejos, puede agregar código personalizado. Vea [personalizar la creación y el movimiento de un elemento](../modeling/customizing-element-creation-and-movement.md).|
+|Cree un grupo de elementos con una herramienta. Por ejemplo, un componente con un conjunto fijo de puertos.|Invalide el método de inicialización del cuadro de herramientas en ToolboxHelper.cs. Cree un prototipo de grupo de elementos (EGP) que contenga los elementos y sus vínculos de relación. Vea [personalizar herramientas y el cuadro de herramientas](../modeling/customizing-tools-and-the-toolbox.md).<br /><br /> Incluya las formas principal y puerto en el EGP, o bien defina formas boundsrules para colocar las formas de puerto cuando se crea una instancia del EGP. Vea [formas boundsrules restringir la ubicación y el tamaño de la forma](../modeling/boundsrules-constrain-shape-location-and-size.md).|
+|Use una herramienta de conexión para crear instancias de varios tipos de relaciones.|Agregue las directivas de conexión de vínculos (LCD) al generador de conexiones que invoca la herramienta. Los monitores de LCD determinan el tipo de la relación a partir de los tipos de los dos elementos. Para que esto dependa de los Estados de los elementos, puede agregar código personalizado. Vea [personalizar herramientas y el cuadro de herramientas](../modeling/customizing-tools-and-the-toolbox.md).|
+|Herramientas adhesivas: el usuario puede hacer doble clic en cualquier herramienta para crear muchas formas o conectores en sucesión.|En el explorador de DSL, seleccione el nodo `Editor`. En el ventana Propiedades, set **utiliza elementos del cuadro de herramientas**.|
+|Definir comandos de menú|Consulte [Cómo: modificar un comando de menú estándar.](../modeling/how-to-modify-a-standard-menu-command-in-a-domain-specific-language.md)|
+|Restricción del modelo con reglas de validación|Vea [validación en un lenguaje específico de dominio](../modeling/validation-in-a-domain-specific-language.md) .|
+|Generar código, archivos de configuración o documentos a partir de un DSL.|[Generar código a partir de lenguajes específicos de dominio](../modeling/generating-code-from-a-domain-specific-language.md)|
+|Personalizar el modo en que los modelos se guardan en el archivo.|Vea [personalizar File Storage y serialización XML](../modeling/customizing-file-storage-and-xml-serialization.md)|
+|Guardar modelos en bases de datos u otros medios.|Invalidar *sulenguaje*<br /><br /> Vea [personalizar File Storage y serialización XML](../modeling/customizing-file-storage-and-xml-serialization.md)|
+|Integre varios DSL para que funcionen como parte de una aplicación.|Consulte [integración de modelos mediante Modelbus de Visual Studio](../modeling/integrating-models-by-using-visual-studio-modelbus.md).|
+|Permita que el DSL sea ampliado por terceros y control de la extensión.|[Ampliar DSL mediante MEF](../modeling/extend-your-dsl-by-using-mef.md)<br /><br /> [Compartir clases entre DSL mediante una biblioteca DSL](../modeling/sharing-classes-between-dsls-by-using-a-dsl-library.md)<br /><br /> [Definir una directiva de bloqueo para crear segmentos de solo lectura](../modeling/defining-a-locking-policy-to-create-read-only-segments.md)|
+|||
+
+## <a name="see-also"></a>Vea también
+ [Cómo definir un lenguaje específico de dominio](../modeling/how-to-define-a-domain-specific-language.md) [escribir código para personalizar un](../modeling/writing-code-to-customise-a-domain-specific-language.md) [SDK de modelado de lenguaje específico de dominio para Visual Studio-lenguajes específicos de dominio](../modeling/modeling-sdk-for-visual-studio-domain-specific-languages.md)

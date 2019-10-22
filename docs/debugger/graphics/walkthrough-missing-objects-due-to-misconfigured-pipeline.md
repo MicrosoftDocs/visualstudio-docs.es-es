@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: edffb60e59d2f8a9c8c9fe417bedb4d578215c9c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: a00c52b9c167d1fbffc64135b0454110dc929286
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60097614"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63388578"
 ---
 # <a name="walkthrough-missing-objects-due-to-misconfigured-pipeline"></a>Tutorial: Objetos ausentes debido a una canalización mal configurada
 En este tutorial se muestra cómo usar las herramientas de diagnóstico de gráficos [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] para investigar un objeto que falta como consecuencia de un sombreador de píxeles sin establecer.
@@ -61,7 +61,7 @@ En este tutorial se muestra cómo usar las herramientas de diagnóstico de gráf
     En la ventana **Etapas de canalización de gráficos** , la etapa **Ensamblador de entrada** muestra la geometría del objeto antes de que se transforme y la etapa **Sombreador de vértices** muestra el mismo objeto después de que se transforme. En este escenario, observe que en la ventana **Etapas de canalización de gráficos** se muestran las etapas **Ensamblador de entrada** y  **Sombreador de vértices** , pero no la etapa **Sombreador de píxeles** para una de las llamadas a draw.
 
    > [!NOTE]
-   >  Si otras etapas de canalización (por ejemplo, las etapas del sombreador de casco, del sombreador de dominios o del sombreador de geometría) procesan el objeto, cualquiera de ellas podría ser la causa del problema. Normalmente, el problema está relacionado con la primera etapa en la que no se muestra el resultado o se muestra de forma inesperada.
+   > Si otras etapas de canalización (por ejemplo, las etapas del sombreador de casco, del sombreador de dominios o del sombreador de geometría) procesan el objeto, cualquiera de ellas podría ser la causa del problema. Normalmente, el problema está relacionado con la primera etapa en la que no se muestra el resultado o se muestra de forma inesperada.
 
 4. Deténgase cuando llegue a la llamada a draw que se corresponde con el objeto que falta. En este escenario, en la ventana **Etapas de canalización de gráficos** se indica que la geometría se emitió a la GPU (que se indica por la presencia de la etapa **Ensamblador de entrada** ) y que se transformó (que se indica por la etapa **Sombreador de vértices** ), pero no aparece en el destino de representación porque no parece ser un sombreador de píxeles activo (que se indica por la ausencia de la etapa **Sombreador de píxeles** ). En este escenario, incluso puede ver la silueta del objeto que falta en la etapa **Fusión de salida** :
 
@@ -84,7 +84,7 @@ En este tutorial se muestra cómo usar las herramientas de diagnóstico de gráf
 1. Encuentre la llamada `PSSetShader` que se corresponde con el objeto que falta. En la ventana **Lista de eventos gráficos** , escriba "Draw;PSSetShader" en el cuadro de **Búsqueda** que se encuentra en la esquina superior derecha de la ventana **Lista de eventos gráficos** . Con esto se filtra la lista para que solo incluya los eventos "PSSetShader" y los eventos que tienen la palabra "Draw" en sus títulos. Elija la primera llamada `PSSetShader` que aparece antes de la llamada a draw del objeto que falta.
 
    > [!NOTE]
-   >  `PSSetShader` no aparecerá en la ventana **Lista de eventos gráficos** si no se estableció durante este fotograma. Normalmente esto solo sucede si se usa un sombreador de píxeles para todos los objetos o si la llamada `PSSetShader` se omitió involuntariamente durante este fotograma. En cualquier caso, se recomienda buscar el código fuente de la aplicación para las llamadas `PSSetShader` y usar técnicas de depuración tradicionales para examinar el comportamiento de estas llamadas.
+   > `PSSetShader` no aparecerá en la ventana **Lista de eventos gráficos** si no se estableció durante este fotograma. Normalmente esto solo sucede si se usa un sombreador de píxeles para todos los objetos o si la llamada `PSSetShader` se omitió involuntariamente durante este fotograma. En cualquier caso, se recomienda buscar el código fuente de la aplicación para las llamadas `PSSetShader` y usar técnicas de depuración tradicionales para examinar el comportamiento de estas llamadas.
 
 2. Abra la ventana **Pila de llamadas de eventos gráficos** . En la barra de herramientas **Diagnóstico de gráficos** , elija **Pila de llamadas de eventos de gráficos**.
 
@@ -93,7 +93,7 @@ En este tutorial se muestra cómo usar las herramientas de diagnóstico de gráf
     ![El código que no inicializa el sombreador de píxeles](media/gfx_diag_demo_misconfigured_pipeline_step_5.png "gfx_diag_demo_misconfigured_pipeline_step_5")
 
    > [!NOTE]
-   >  Si no encuentra el origen del valor NULL al examinar la pila de llamadas, se recomienda que establezca un punto de interrupción condicional en la llamada `PSSetShader` , de manera que esa ejecución del programa se interrumpa cuando el sombreador de píxeles se establezca en NULL. Después, reinicie la aplicación en el modo de depuración y use técnicas de depuración tradicionales para encontrar el origen del valor NULL.
+   > Si no encuentra el origen del valor NULL al examinar la pila de llamadas, se recomienda que establezca un punto de interrupción condicional en la llamada `PSSetShader` , de manera que esa ejecución del programa se interrumpa cuando el sombreador de píxeles se establezca en NULL. Después, reinicie la aplicación en el modo de depuración y use técnicas de depuración tradicionales para encontrar el origen del valor NULL.
 
    Para solucionar el problema, asigne el sombreador de píxeles correcto mediante el primer parámetro de la llamada de API `ID3D11DeviceContext::PSSetShader` .
 

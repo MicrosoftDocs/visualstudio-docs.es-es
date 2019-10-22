@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: a88bfb7d117f646a74c4242cbf851711e9179196
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 795cc62ca88f7ede87e978d910d397e0ce6e2ad7
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60057867"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67825982"
 ---
 # <a name="walkthrough-extend-a-sharepoint-project-item-type"></a>Tutorial: Extender un tipo de elemento de proyecto de SharePoint
   Puede usar el **modelo de conectividad a datos empresariales** elemento de proyecto para crear un modelo para el servicio de conectividad de datos profesionales (BDC) en SharePoint. De forma predeterminada, al crear un modelo utilizando este elemento de proyecto, los datos del modelo no se muestran a los usuarios. Por esta razón debe crear una lista externa en SharePoint que permita a los usuarios ver los datos.
@@ -28,9 +28,9 @@ ms.locfileid: "60057867"
 
 - Crear una extensión Visual Studio que realiza dos tareas principales:
 
-    - Genera una lista externa que muestra los datos en un modelo BDC. La extensión usa el modelo de objetos para el sistema del proyecto de SharePoint para generar un *Elements.xml* archivo que define la lista. También agrega el archivo al proyecto para que se implemente junto con el modelo BDC.
+  - Genera una lista externa que muestra los datos en un modelo BDC. La extensión usa el modelo de objetos para el sistema del proyecto de SharePoint para generar un *Elements.xml* archivo que define la lista. También agrega el archivo al proyecto para que se implemente junto con el modelo BDC.
 
-    - Agrega un elemento de menú contextual para el **modelo de conectividad a datos empresariales** elementos de proyecto en **el Explorador de soluciones**. Los desarrolladores pueden hacer clic en este elemento de menú para generar una lista externa para el modelo BDC.
+  - Agrega un elemento de menú contextual para el **modelo de conectividad a datos empresariales** elementos de proyecto en **el Explorador de soluciones**. Los desarrolladores pueden hacer clic en este elemento de menú para generar una lista externa para el modelo BDC.
 
 - Compilar un paquete de extensión de Visual Studio (VSIX) para implementar el ensamblado de la extensión.
 
@@ -67,7 +67,7 @@ ms.locfileid: "60057867"
 3. En el **nuevo proyecto** cuadro de diálogo, expanda el **Visual C#** o **Visual Basic** nodos y, a continuación, elija el **extensibilidad** nodo.
 
     > [!NOTE]
-    >  El **extensibilidad** nodo está disponible solo si instala el SDK de Visual Studio. Para obtener más información, vea la sección Requisitos previos, anteriormente en este tema.
+    > El **extensibilidad** nodo está disponible solo si instala el SDK de Visual Studio. Para obtener más información, vea la sección Requisitos previos, anteriormente en este tema.
 
 4. En la lista en la parte superior de la **nuevo proyecto** diálogo cuadro, elija **.NET Framework 4.5**.
 
@@ -132,7 +132,7 @@ ms.locfileid: "60057867"
 1. Pegue el código siguiente en el archivo de código ProjectItemExtension.
 
     > [!NOTE]
-    >  Tras agregar este código, el proyecto tendrá algunos errores de compilación. Estos errores desaparecerán al agregar código en pasos posteriores.
+    > Tras agregar este código, el proyecto tendrá algunos errores de compilación. Estos errores desaparecerán al agregar código en pasos posteriores.
 
      [!code-csharp[SPExtensibility.ProjectItemExtension.BDCGenerateExternalDataLists#1](../sharepoint/codesnippet/CSharp/generateexternaldatalists/bdcprojectitemextension/projectitemextension.cs#1)]
      [!code-vb[SPExtensibility.ProjectItemExtension.BDCGenerateExternalDataLists#1](../sharepoint/codesnippet/VisualBasic/generateexternaldatalists/bdcprojectitemextension/projectitemextension.vb#1)]
@@ -176,7 +176,7 @@ ms.locfileid: "60057867"
 6. En el **tipo** elija **Microsoft.VisualStudio.MefComponent**.
 
     > [!NOTE]
-    >  Este valor corresponde al elemento `MefComponent` del archivo extension.vsixmanifest. Este elemento especifica el nombre de un ensamblado de extensión en el paquete VSIX. Para obtener más información, consulte [elemento MEFComponent (Esquema VSX)](/previous-versions/visualstudio/visual-studio-2010/dd393736\(v\=vs.100\)).
+    > Este valor corresponde al elemento `MefComponent` del archivo extension.vsixmanifest. Este elemento especifica el nombre de un ensamblado de extensión en el paquete VSIX. Para obtener más información, consulte [elemento MEFComponent (Esquema VSX)](/previous-versions/visualstudio/visual-studio-2010/dd393736\(v\=vs.100\)).
 
 7. En el **origen** elija **un proyecto de la solución actual**.
 

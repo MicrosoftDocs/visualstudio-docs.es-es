@@ -1,5 +1,5 @@
 ---
-title: Readbstr (método) | Documentos de Microsoft
+title: 'IJsDebugDataTarget:: Readbstr ((método) | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -15,15 +15,15 @@ caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 2e821893318cfe1d8f0b4239a077fc91c26be47f
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: b125f58b4be279eac167b803ed6a683c1fb04ddf
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58154223"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72572443"
 ---
 # <a name="ijsdebugdatatargetreadbstr-method"></a>IJsDebugDataTarget::ReadBSTR (Método)
-Lee BSTR del destino de depuración.  
+Lee un BSTR del destino de depuración.  
   
 ## <a name="syntax"></a>Sintaxis  
   
@@ -36,10 +36,10 @@ HRESULT ReadBSTR(
   
 #### <a name="parameters"></a>Parámetros  
  `address`  
- [in] Para leer desde la dirección.  
+ de Dirección de la que se va a leer.  
   
  `pString`  
- [out] Lee BSTR del destino de depuración.  
+ enuncia BSTR leído del destino de depuración.  
   
 ## <a name="return-value"></a>Valor devuelto  
   
@@ -47,7 +47,7 @@ HRESULT ReadBSTR(
  Devuelve E_JsDEBUG_INVALID_MEMORY_ADDRESS si la dirección no es válida.  
   
 ## <a name="requirements"></a>Requisitos  
- **Encabezado:** jscript9diag.h  
+ **Encabezado:** jscript9diag. h  
   
 ## <a name="see-also"></a>Vea también  
  [IJsDebugDataTarget (Interfaz)](../../winscript/reference/ijsdebugdatatarget-interface.md)

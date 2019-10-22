@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugReference2::GetMemoryContext
 ms.assetid: 47fc3827-07a0-4eee-b7f4-fc1c62e6b25c
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: fd4494b21d4b5b3aa3f73cbabed771f2fac7280c
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: f4178b14ca128fb7b0e5511f18fd2c9a5fdb3661
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56705325"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66329830"
 ---
 # <a name="idebugreference2getmemorycontext"></a>IDebugReference2::GetMemoryContext
 Obtiene un contexto de la memoria de una referencia. Reservado para un uso futuro.
@@ -36,10 +39,9 @@ int GetMemoryContext ( 
 );
 ```
 
-#### <a name="parameters"></a>Parámetros
- `ppMemory`
-
- [out] Devuelve el [IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md) objeto que representa la memoria asociada con el valor de la referencia.
+## <a name="parameters"></a>Parámetros
+`ppMemory`\
+[out] Devuelve el [IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md) objeto que representa la memoria asociada con el valor de la referencia.
 
 ## <a name="return-value"></a>Valor devuelto
  Siempre devuelve `E_NOTIMPL`.

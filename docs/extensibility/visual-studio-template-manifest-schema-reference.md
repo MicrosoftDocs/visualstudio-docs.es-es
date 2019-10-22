@@ -3,17 +3,17 @@ title: Referencia de esquema del manifiesto de plantilla de Visual Studio | Micr
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: bc7d0a81-0df5-41a9-a912-1b30e5da1d13
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b447225580505959697e14f0c85855452906aa18
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 52a421986e076d2badc6dc7eb76247d243da155b
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60108859"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66323023"
 ---
 # <a name="visual-studio-template-manifest-schema-reference"></a>Referencia de esquema del manifiesto de plantilla de Visual Studio
 Este esquema describe el formato del manifiesto de plantilla de Visual Studio (*vstman*) los archivos que se generan para las plantillas de proyecto o elemento de Visual Studio. El esquema también describe la ubicación y otra información relevante acerca de la plantilla.
@@ -21,14 +21,14 @@ Este esquema describe el formato del manifiesto de plantilla de Visual Studio (*
  : Dado que hay un elemento independiente y directorios de la plantilla de proyecto, un manifiesto nunca debe tener una combinación de las plantillas de proyecto y elemento.
 
 > [!IMPORTANT]
->  Este manifiesto está disponible a partir de Visual Studio 2017.
+> Este manifiesto está disponible a partir de Visual Studio 2017.
 
 ## <a name="vstemplatemanifest-element"></a>Elemento VSTemplateManifest
  El elemento raíz del manifiesto.
 
 ### <a name="attributes"></a>Atributos
 
-- **Versión**: Una cadena que representa la versión del manifiesto de plantilla. Obligatorio.
+- **Version**: Una cadena que representa la versión del manifiesto de plantilla. Obligatorio.
 
 - **Locale**: Una cadena que representa la configuración regional o configuraciones regionales del manifiesto de plantilla. El valor de configuración regional se aplica a todas las plantillas. Debe usar un manifiesto independiente para cada configuración regional. Opcional.
 
@@ -122,7 +122,7 @@ Este esquema describe el formato del manifiesto de plantilla de Visual Studio (*
  El código siguiente es un ejemplo de una plantilla de elemento *vstman* archivo.
 
 ```xml
-VSTemplateManifest Version="1.0" Locale="1033" xmlns="http://schemas.microsoft.com/developer/vstemplatemanifest/2015">
+<VSTemplateManifest Version="1.0" Locale="1033" xmlns="http://schemas.microsoft.com/developer/vstemplatemanifest/2015">
   <VSTemplateContainer TemplateType="Item">
     <RelativePathOnDisk>CSharp\1033\ItemTemplate1</RelativePathOnDisk>
     <TemplateFileName>ItemTemplate1.vstemplate</TemplateFileName>

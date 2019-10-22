@@ -8,12 +8,12 @@ ms.assetid: c64aac80-a411-463f-b7bd-8b7607a52ece
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 506e39537614b50b72a515d882e5592c316cce26
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 1d51474f2e242f764a84edaa9f2712418c859460
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60080883"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63408708"
 ---
 # <a name="what39s-new-in-the-visual-studio-2015-sdk"></a>¿Qué&#39;s en el SDK Visual Studio 2015
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -63,9 +63,9 @@ A partir de Visual Studio 2017, análisis de proyecto personalizado y las planti
  Las plantillas de elementos de SDK de VS usar NuGet para sus referencias y herramientas de compilación para obtener las ventajas de NuGet de forma predeterminada.
 
 > [!NOTE]
->  Aún puede usar los ensamblados de referencia de SDK de VS instalados con sus proyectos (ubicado en \<ubicación de instalación de Visual Studio > \ VSSDK\VisualStudioIntegration\Common\Assemblies) y los proyectos de extensibilidad existentes no necesitan ser actualizado para usar paquetes de NuGet.  El proyecto **hace referencia a / para agregar una referencia** diálogo sigue usando los ensamblados de referencia de SDK de VS instalados.
+> Aún puede usar los ensamblados de referencia de SDK de VS instalados con sus proyectos (ubicado en \<ubicación de instalación de Visual Studio > \ VSSDK\VisualStudioIntegration\Common\Assemblies) y los proyectos de extensibilidad existentes no necesitan ser actualizado para usar paquetes de NuGet.  El proyecto **hace referencia a / para agregar una referencia** diálogo sigue usando los ensamblados de referencia de SDK de VS instalados.
 >
->  Si desea modificar los proyectos existentes para usar NuGet, vea [Cómo: Migrar VSPackages a Visual Studio 2015](../extensibility/how-to-migrate-extensibility-projects-to-visual-studio-2015.md) que tiene una sección sobre la actualización de proyectos de extensibilidad a los paquetes de NuGet.
+> Si desea modificar los proyectos existentes para usar NuGet, vea [Cómo: Migrar VSPackages a Visual Studio 2015](../extensibility/how-to-migrate-extensibility-projects-to-visual-studio-2015.md) que tiene una sección sobre la actualización de proyectos de extensibilidad a los paquetes de NuGet.
 
 ## <a name="light-bulbs"></a>Bombillas
  Una de las nuevas formas más interesantes de escribir código de extensión se proporciona el proyecto Roslyn. Para obtener más información, consulte [Roslyn](https://github.com/dotnet/Roslyn).

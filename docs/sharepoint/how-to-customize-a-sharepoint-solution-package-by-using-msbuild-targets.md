@@ -1,5 +1,5 @@
 ---
-title: Filtrar Personalizar un paquete de solución de SharePoint mediante destinos de MSBuild | Documentos de Microsoft
+title: Personalizar el paquete de soluciones de SharePoint mediante destinos de MSBuild
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 80c29cab77cffcb46da8913ccd6e050ec4181c54
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 71665f6ccf22ace264ff39831521538a335aed93
+ms.sourcegitcommit: 25570fb5fb197318a96d45160eaf7def60d49b2b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56639562"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "66401508"
 ---
-# <a name="how-to-customize-a-sharepoint-solution-package-by-using-msbuild-targets"></a>Filtrar Personalizar un paquete de solución de SharePoint mediante destinos de MSBuild
-  Mediante el uso de destinos de MSBuild en un símbolo del sistema, puede personalizar cómo Visual Studio crea los archivos de paquete de SharePoint (*.wsp*). Por ejemplo, puede personalizar las propiedades de MSBuild para cambiar el directorio intermedio del paquete y los grupos de elementos de MSBuild que especifican los archivos enumerados.
+# <a name="how-to-customize-a-sharepoint-solution-package-by-using-msbuild-targets"></a>Procedimiento Personalizar un paquete de solución de SharePoint mediante destinos de MSBuild
+  Mediante el uso de destinos de MSBuild en un símbolo del sistema, puede personalizar cómo Visual Studio crea los archivos de paquete de SharePoint ( *.wsp*). Por ejemplo, puede personalizar las propiedades de MSBuild para cambiar el directorio intermedio del paquete y los grupos de elementos de MSBuild que especifican los archivos enumerados.
 
 ## <a name="customize-and-run-msbuild-targets"></a>Personalizar y ejecutar destinos de MSBuild
  Si personaliza los destinos BeforeLayout y AfterLayout, puede realizar las tareas antes de diseño del paquete, como agregar, quitar o modificar los archivos que se empaquetan.
@@ -43,7 +43,7 @@ ms.locfileid: "56639562"
 
 3. Abra el proyecto, abra el menú contextual y, a continuación, elija **descargar el proyecto**.
 
-4. En **el Explorador de soluciones**, abra el menú contextual para el proyecto y, a continuación, elija **editar**  *\<NombreDelProyecto > .vbproj* o **editar**  *\<NombreDelProyecto > .csproj*.
+4. En **el Explorador de soluciones**, abra el menú contextual para el proyecto y, a continuación, elija **editar** *\<NombreDelProyecto > .vbproj* o **editar** *\<NombreDelProyecto > .csproj*.
 
 5. Después de la `Import` línea cerca del final del archivo del proyecto, agregue la siguiente línea.
 
@@ -51,7 +51,7 @@ ms.locfileid: "56639562"
    <Import Project="CustomLayout.SharePoint.targets" />
    ```
 
-6. Guarde el archivo de proyecto y ciérrelo.
+6. Guarda y cierra el archivo de proyecto.
 
 7. En **el Explorador de soluciones**, abra el menú contextual para el proyecto y, a continuación, elija **recargar el proyecto**.
 

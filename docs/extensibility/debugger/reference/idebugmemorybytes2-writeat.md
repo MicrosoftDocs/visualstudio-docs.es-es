@@ -8,17 +8,20 @@ helpviewer_keywords:
 - IDebugMemoryBytes2::WriteAt method
 - WriteAt method
 ms.assetid: 61cc3704-47fa-4d9b-aa62-bb4585ac8fb1
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d4e23ec439e352f6aa4e3b4d307bea76ebfdcf00
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 5eefaee08d64952681e91711cdf8347186123e57
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56714717"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66347135"
 ---
 # <a name="idebugmemorybytes2writeat"></a>IDebugMemoryBytes2::WriteAt
 Escribe el número especificado de bytes de memoria, empezando en la dirección especificada.
@@ -41,18 +44,15 @@ int WriteAt(
 );
 ```
 
-#### <a name="parameters"></a>Parámetros
- `pStartContext`
+## <a name="parameters"></a>Parámetros
+`pStartContext`\
+[in] El [IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md) objeto que especifica dónde se inicia la escritura de bytes.
 
- [in] El [IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md) objeto que especifica dónde se inicia la escritura de bytes.
+`dwCount`\
+[in] El número de bytes que se escriben.
 
- `dwCount`
-
- [in] El número de bytes que se escriben.
-
- `rgbMemory`
-
- [in] Para escribir los bytes. Esta matriz se supone que es al menos `dwCount` bytes de tamaño.
+`rgbMemory`\
+[in] Para escribir los bytes. Esta matriz se supone que es al menos `dwCount` bytes de tamaño.
 
 ## <a name="return-value"></a>Valor devuelto
  Si es correcto, devuelve `S_OK`; en caso contrario, devuelve `S_FALSE` si no todos los bytes se podría escribir o devuelve un código de error (normalmente `E_FAIL`).

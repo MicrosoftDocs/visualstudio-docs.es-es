@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugExceptionEvent2::GetExceptionDescription
 ms.assetid: d07d458f-5729-47e4-9b77-1bd59c61a75a
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 732ca932179cee48a3395e6cdb765c244f007d0f
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: cc13184328ce3a7cf09e6df20ee62162cb108b5b
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56680144"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66310545"
 ---
 # <a name="idebugexceptionevent2getexceptiondescription"></a>IDebugExceptionEvent2::GetExceptionDescription
 Obtiene una descripción de la excepción que se puede mostrar.
@@ -36,10 +39,9 @@ int GetExceptionDescription( 
 );
 ```
 
-#### <a name="parameters"></a>Parámetros
- `pbstrDescription`
-
- [out] Devuelve una descripción de la excepción que se puede mostrar.
+## <a name="parameters"></a>Parámetros
+`pbstrDescription`\
+[out] Devuelve una descripción de la excepción que se puede mostrar.
 
 ## <a name="return-value"></a>Valor devuelto
  Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.

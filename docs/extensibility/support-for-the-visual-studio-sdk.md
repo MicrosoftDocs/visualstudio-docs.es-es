@@ -9,17 +9,17 @@ helpviewer_keywords:
 - newsgroups, Visual Studio SDK support
 - Web sites, Visual Studio SDK support
 ms.assetid: d9011f5a-cb53-418f-9d8f-74b15b9fc5f5
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 941ba0a890e854f449647977162183cbcac1bab8
-ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
+ms.openlocfilehash: 8ffe939e2f8b8470b89ff1e8837e5a074dc321ec
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58193901"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66338362"
 ---
 # <a name="support-for-the-visual-studio-sdk"></a>Soporte técnico para Visual Studio SDK
 Existen varias opciones de soporte técnico para los clientes que tengan preguntas sobre cómo ampliar el entorno de desarrollo integrado (IDE) de Visual Studio.
@@ -45,7 +45,7 @@ Puede encontrar ejemplos de código abierto de extensiones del SDK de VS en GitH
 ## <a name="included-support"></a>Soporte técnico incluido
 
 ### <a name="visual-studio-product-support"></a>Soporte técnico de Visual Studio
- Se incluye con la compra de cierta compatibilidad [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] productos. Para obtener más información, consulte [compatibilidad de Visual Studio](http://msdn.microsoft.com/vstudio/cc136615.aspx). Microsoft mantiene un equipo de soporte técnico dedicado para responder a preguntas sobre [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] extensibilidad.
+ Se incluye con la compra de cierta compatibilidad [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] productos. Para obtener más información, consulte [compatibilidad de Visual Studio](https://msdn.microsoft.com/vstudio/cc136615.aspx). Microsoft mantiene un equipo de soporte técnico dedicado para responder a preguntas sobre [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] extensibilidad.
 
 ### <a name="msdn-subscription-support"></a>Compatibilidad con la suscripción de MSDN
  Paquetes de la suscripción de MSDN también pueden incluir cierta compatibilidad. Para obtener más información, consulte [soporte técnico para suscriptores MSDN](https://msdn.microsoft.com/subscriptions/aa718661.aspx).
@@ -67,4 +67,4 @@ Puede encontrar información acerca de las solicitudes de soporte técnico indiv
 
 ## <a name="see-also"></a>Vea también
 
-- [Hable con nosotros](../ide/talk-to-us.md)
+- [Hable con nosotros](../ide/feedback-options.md)

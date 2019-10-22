@@ -7,12 +7,12 @@ ms.author: ghogen
 ms.date: 11/15/2016
 ms.topic: include
 manager: jillfra
-ms.openlocfilehash: d16cdc30788ad8b05f5e794241be2f4b3fc5dba6
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: MT
+ms.openlocfilehash: d71f84899bc3d49b11c5e28c1298364505f63367
+ms.sourcegitcommit: 8a96a65676fd7a2a03b0803d7eceae65f3fa142b
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "58999851"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "70197184"
 ---
 > [!Note]
-> En este artículo se aplica a Visual Studio 2015. Si desea obtener la documentación más reciente de Visual Studio, utilice el selector de versión en la parte superior izquierda. Se recomienda actualizar a Visual Studio de 2019. [Descargarlo aquí](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019)
+> El contenido de este artículo se aplica a Visual Studio 2015. Si busca la documentación de Visual Studio más actualizada, use el selector de versión de la parte superior izquierda. Le recomendamos actualizar a Visual Studio 2019. [Descargar aquí](https://visualstudio.microsoft.com/downloads)

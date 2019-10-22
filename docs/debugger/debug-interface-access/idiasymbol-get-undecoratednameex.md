@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 83fda196a50c433de182a64f39faef7a6ba6cb17
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.openlocfilehash: f2a952c074e62e7fe999826882e382a552789f3a
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56607855"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "64783865"
 ---
 # <a name="idiasymbolgetundecoratednameex"></a>IDiaSymbol::get_undecoratedNameEx
 Recupera parte o todo un nombre no representativo de C++ representativo nombre (vinculación).
@@ -38,21 +38,21 @@ HRESULT get_undecoratedNameEx( 
 
  `pRetVal`
 
-[out] Devuelve que el nombre no representativo de C++ nombre representativo.
+[out] Devuelve el nombre no representativo para un C++ nombre representativo.
 
 ## <a name="return-value"></a>Valor devuelto
  Si es correcto, devuelve `S_OK`; en caso contrario, devuelve `S_FALSE` o un código de error.
 
 > [!NOTE]
->  Un valor devuelto de `S_FALSE` significa que la propiedad no está disponible para el símbolo.
+> Un valor devuelto de `S_FALSE` significa que la propiedad no está disponible para el símbolo.
 
 ## <a name="remarks"></a>Comentarios
  El `undecorateOptions` puede ser una combinación de los siguientes indicadores.
 
 > [!NOTE]
->  Los nombres de marca no se definen en el SDK de DIA, por lo que deberá agregar las declaraciones en el código o utilizar los valores sin procesar.
+> Los nombres de marca no se definen en el SDK de DIA, por lo que deberá agregar las declaraciones en el código o utilizar los valores sin procesar.
 
-|Marcar|Valor|Descripción|
+|Marcar|Valor|DESCRIPCIÓN|
 |----------|-----------|-----------------|
 |UNDNAME_COMPLETE|0x0000|Habilita undecoration completa.|
 |UNDNAME_NO_LEADING_UNDERSCORES|0x0001|Quita los caracteres de subrayado de Microsoft ampliar las palabras clave.|

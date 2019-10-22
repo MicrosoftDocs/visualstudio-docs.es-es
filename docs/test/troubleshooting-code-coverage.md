@@ -7,12 +7,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 07212350ab95c3f9ee3d00fb2ac33768964555e8
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 6416045f040e9825bab6eeb33dd4b75478166ee3
+ms.sourcegitcommit: 689ba54ea14257d13031de881f5d4fe937a36f56
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55935607"
+ms.lasthandoff: 09/27/2019
+ms.locfileid: "71342477"
 ---
 # <a name="troubleshoot-code-coverage"></a>Solucionar problemas de cobertura de código
 
@@ -29,7 +29,8 @@ Para obtener más información, vea [Usar cobertura de código para determinar l
 ## <a name="possible-reasons-for-seeing-no-results-or-old-results"></a>Causas posibles para no ver ningún resultado o ver resultados antiguos
 
 ### <a name="do-you-have-the-right-edition-of-visual-studio"></a>¿Tiene la edición correcta de Visual Studio?
- Necesita Visual Studio Enterprise.
+
+Necesita Visual Studio Enterprise.
 
 ### <a name="no-tests-were-executed"></a>No se ejecutó ninguna prueba
 
@@ -43,9 +44,9 @@ Resolución: en el Explorador de pruebas, elija **Ejecutar todas** para comproba
 
 Cuando se modifican y se vuelven a ejecutar las pruebas, todavía puede estar visible un resultado de cobertura de código anterior, incluido el color del código de esa ejecución anterior.
 
-1.  Ejecute Analizar cobertura de código.
+1. Ejecute **Analizar cobertura de código**.
 
-2.  Asegúrese de que ha seleccionado el conjunto de resultados más reciente en la ventana de **resultados de cobertura de código**.
+2. Asegúrese de que ha seleccionado el conjunto de resultados más reciente en la ventana de **resultados de cobertura de código**.
 
 ### <a name="pdb-symbol-files-are-unavailable"></a>Los archivos .pdb (símbolo) no están disponibles
 
@@ -56,6 +57,8 @@ Explicación: el motor de cobertura de código requiere que cada ensamblado teng
 El archivo *.pdb* se debe generar a partir de la misma compilación que los archivos *.dll* o *.exe*.
 
 Resolución: asegúrese de que la configuración de compilación genere el archivo *.pdb*. Si los archivos *.pdb* no se actualizan cuando se compila el proyecto, abra las propiedades del proyecto, seleccione la página **Compilación**, elija **Avanzadas** e inspeccione **Info. de depuración**.
+
+En el caso de proyectos C++, asegúrese de que los archivos .pdb generados tienen información de depuración completa. Abra las propiedades del proyecto y compruebe que la opción **Enlazador** > **Depurar** > **Generar información de depuración** está establecida en **Generar información de depuración optimizada para compartir y publicar (/DEBUG:FULL)** .
 
 Si los archivos *.pdb* y *.dll* o *.exe* están en distintos lugares, copie el archivo *.pdb* en el mismo directorio. También es posible configurar el motor de cobertura de código para que busque archivos *.pdb* en otra ubicación. Para obtener más información, vea [Personalizar el análisis de cobertura de código](../test/customizing-code-coverage-analysis.md).
 
@@ -91,17 +94,17 @@ Explicación: se pueden ejecutar las pruebas unitarias con un archivo *.runsetti
 
 Resolución: hay dos posibles tipos de errores que se indican a continuación.
 
--   **Error de XML**
+- **Error de XML**
 
      Abra el archivo *.runsettings* en el editor XML de Visual Studio. Busque las indicaciones del error.
 
--   **Error de expresión regular**
+- **Error de expresión regular**
 
-     Cada cadena del archivo es una expresión regular. Revise cada una de ellas en busca de errores y, en particular, busque:
+  Cada cadena del archivo es una expresión regular. Revise cada una de ellas en busca de errores y, en particular, busque:
 
-    -   Paréntesis no coincidentes (...) o paréntesis sin escape \\(...\\). Si desea asociar un paréntesis en la cadena de búsqueda, debe indicar su secuencia de escape. Por ejemplo, para hacer coincidir una función, use: `.*MyFunction\(double\)`
+  - Paréntesis no coincidentes (...) o paréntesis sin escape \\(...\\). Si desea asociar un paréntesis en la cadena de búsqueda, debe indicar su secuencia de escape. Por ejemplo, para hacer coincidir una función, use: `.*MyFunction\(double\)`
 
-    -   Asterisco o signo más al principio de una expresión. Para asociar cualquier cadena de caracteres, use un punto seguido de un asterisco: `.*`
+  - Asterisco o signo más al principio de una expresión. Para asociar cualquier cadena de caracteres, use un punto seguido de un asterisco: `.*`
 
 ### <a name="custom-runsettings-file-with-incorrect-exclusions"></a>Archivo .runsettings personalizado con exclusiones incorrectas
 

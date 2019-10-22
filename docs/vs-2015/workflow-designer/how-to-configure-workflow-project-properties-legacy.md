@@ -1,5 +1,5 @@
 ---
-title: Procedimiento Configurar las propiedades del proyecto de flujo de trabajo (heredado) | Documentos de Microsoft
+title: 'Cómo: configurar las propiedades de un proyecto de flujo de trabajo (heredado) | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-workflow-designer
@@ -12,28 +12,28 @@ helpviewer_keywords:
 - projects, configuring properties
 ms.assetid: 850f5c96-8e5b-4126-bc16-fd2c26e6e656
 caps.latest.revision: 5
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: f551b868b415eaf600a9345aff4ac4f0d61ff234
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 850e9314e4cccfa09903638dab91eaca7334cee5
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60065726"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72663434"
 ---
-# <a name="how-to-configure-workflow-project-properties-legacy"></a>Procedimiento Configurar las propiedades de proyectos de flujo de trabajo (heredado)
-Siga estos pasos para ver o modificar las propiedades asociadas a proyectos de flujo de trabajo.  
-  
-### <a name="to-view-or-modify-workflow-project-properties"></a>Para ver o modificar las propiedades de los proyectos de flujo de trabajo  
-  
-1. Si **el Explorador de soluciones** ventana no está visible, seleccione **el Explorador de soluciones** en el **vista** menú.  
-  
-2. En el **Explorador de soluciones**, seleccione un proyecto.  
-  
-3. Si **propiedades** ventana no está visible, seleccione **ventana propiedades** en el **vista** menú.  
-  
-4. En el proyecto **propiedades** ventana, ver y modificar las propiedades que desee cambiar.  
-  
-## <a name="see-also"></a>Vea también  
+# <a name="how-to-configure-workflow-project-properties-legacy"></a>Cómo: Configurar las propiedades de proyectos de flujo de trabajo (Heredado)
+Siga estos pasos para ver o modificar las propiedades asociadas a proyectos de flujo de trabajo.
+
+### <a name="to-view-or-modify-workflow-project-properties"></a>Para ver o modificar las propiedades de los proyectos de flujo de trabajo
+
+1. Si **Explorador de soluciones** ventana no está visible, seleccione **Explorador de soluciones** en el menú **Ver** .
+
+2. En el **Explorador de soluciones**, seleccione un proyecto.
+
+3. Si la ventana **propiedades** no está visible, seleccione **ventana Propiedades** en el menú **Ver** .
+
+4. En la ventana **propiedades** del proyecto, vea y modifique las propiedades que desee cambiar.
+
+## <a name="see-also"></a>Vea también
  [Crear proyectos de flujo de trabajo heredados](../workflow-designer/creating-legacy-workflow-projects.md)

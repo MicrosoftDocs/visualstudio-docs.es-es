@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugField::GetTypeInfo method
 ms.assetid: bb5acfa3-04c3-4088-be84-9ff8926cd16f
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7b881c3b5946428bf829ca4d971bb73f814b6d45
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: fc48442e27315e289c812c14e0ae70d8b8fd437a
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56700996"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66333118"
 ---
 # <a name="idebugfieldgettypeinfo"></a>IDebugField::GetTypeInfo
 Este método obtiene independiente del tipo de información sobre el tipo o el símbolo.
@@ -36,10 +39,9 @@ int GetTypeInfo(
 );
 ```
 
-#### <a name="parameters"></a>Parámetros
- `pTypeInfo`
-
- [out] Devuelve información de tipo en proporcionado [TYPE_INFO](../../../extensibility/debugger/reference/type-info.md) estructura.
+## <a name="parameters"></a>Parámetros
+`pTypeInfo`\
+[out] Devuelve información de tipo en proporcionado [TYPE_INFO](../../../extensibility/debugger/reference/type-info.md) estructura.
 
 ## <a name="return-value"></a>Valor devuelto
  Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.

@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugAlias::GetICorDebugValue method
 ms.assetid: b9eb39ee-84af-4ace-9cfe-236b3d48aff5
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 59506af5ad48bd18c454f4c59367921eed1e679a
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: f8ef27f9af5626b716339281c010c62c2515fb8b
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56707918"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66746840"
 ---
 # <a name="idebugaliasgeticordebugvalue"></a>IDebugAlias::GetICorDebugValue
 Recupera una interfaz de código administrado que representa el valor asociado a este alias.
@@ -36,16 +39,15 @@ int GetICorDebugValue(
 );
 ```
 
-#### <a name="parameters"></a>Parámetros
- `ppUnk`
-
- [out] `IUnknown` interfaz que representa el valor asociado a este alias. Esta interfaz se puede consultar el `ICorDebugValue` interfaz.
+## <a name="parameters"></a>Parámetros
+`ppUnk`\
+[out] `IUnknown` interfaz que representa el valor asociado a este alias. Esta interfaz se puede consultar el `ICorDebugValue` interfaz.
 
 ## <a name="return-value"></a>Valor devuelto
  Si se realiza correctamente, devuelve S_OK; en caso contrario, devuelve un código de error.
 
 ## <a name="remarks"></a>Comentarios
- Este método solo se aplica a valores administrados (el `ICorDebugValue` está disponible en una interfaz el [!INCLUDE[dnprdnshort](../../../code-quality/includes/dnprdnshort_md.md)] y se define en el [!INCLUDE[dnprdnshort](../../../code-quality/includes/dnprdnshort_md.md)] SDK en el archivo cordebug.idl).
+ Este método solo se aplica a valores administrados (el `ICorDebugValue` es una interfaz disponibles en .NET Framework y se define en el SDK de .NET Framework en el archivo cordebug.idl).
 
 ## <a name="see-also"></a>Vea también
 - [IDebugAlias](../../../extensibility/debugger/reference/idebugalias.md)

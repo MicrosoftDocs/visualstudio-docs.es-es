@@ -1,48 +1,54 @@
 ---
 title: Opciones, editor de texto, JavaScript, IntelliSense
 ms.date: 10/29/2018
+ms.technology: vs-javascript
 ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.JavaScript.Intellisense.References
 - VS.ToolsOptionsPages.Text_Editor.JavaScript.Intellisense.General
 - VS.ToolsOptionsPages.Text_Editor.TypeScript.IntelliSense.General
 ms.assetid: b4a9816d-cf87-4dc6-a8d4-1591d6a48103
-author: gewarren
-ms.author: gewarren
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ff36bf74249ec5266218060eedb879e4d796625c
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: e3d030e028332bd57afe66eee31c888713721212
+ms.sourcegitcommit: ce1ab8a25c66a83e60eab80ed8e1596fe66dd85c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55938701"
+ms.lasthandoff: 07/29/2019
+ms.locfileid: "68605983"
 ---
-# <a name="options-text-editor-javascript-intellisense"></a>Opciones, editor de texto, JavaScript, IntelliSense
-Utilice la página **IntelliSense** del cuadro de diálogo **Opciones** para modificar la configuración que afecta al comportamiento de IntelliSense para JavaScript. Puede acceder a la página **IntelliSense** en **Herramientas** > **Opciones**, en la barra de menús. Luego, amplíe **Editor de texto** > **JavaScript** > **IntelliSense**.
+# <a name="options-dialog-box-text-editor--javascript--intellisense"></a>Cuadro de diálogo Opciones: Editor de texto \> JavaScript \> IntelliSense
+
+Utilice la página **IntelliSense** del cuadro de diálogo **Opciones** para modificar la configuración que afecta al comportamiento de IntelliSense para JavaScript. Puede acceder a la página **IntelliSense** si elige **Herramientas** > **Opciones**, en la barra de menús y, luego, expande **Editor de texto** > **JavaScript/TypeScript** > **IntelliSense**.
 
 [!INCLUDE[note_settings_general](../../data-tools/includes/note_settings_general_md.md)]
 
 La página **IntelliSense** contiene las siguientes secciones:
 
 ## <a name="statement-completion"></a>Finalización de instrucciones
- Puede utilizar estas opciones para cambiar el comportamiento de la finalización de instrucciones de IntelliSense.
+
+Puede utilizar estas opciones para cambiar el comportamiento de la finalización de instrucciones de IntelliSense.
 
 ### <a name="uielement-list"></a>Lista de UIElement
- **Usar solo Tab o Entrar para confirmar**
 
- Cuando se activa esta casilla, el editor de código de JavaScript anexa instrucciones con elementos seleccionados en la lista de finalización únicamente después de elegir la tecla **Tab** o **Entrar**. Cuando se desactiva esta casilla, otros caracteres, como un punto, una coma, dos puntos, un paréntesis de apertura y una llave de apertura ({), también puede anexar instrucciones con los elementos seleccionados.
+**Usar solo Tab o Entrar para confirmar**
+
+Cuando se activa esta casilla, el editor de código de JavaScript anexa instrucciones con elementos seleccionados en la lista de finalización únicamente después de elegir la tecla **Tab** o **Entrar**. Cuando se desactiva esta casilla, otros caracteres, como un punto, una coma, dos puntos, un paréntesis de apertura y una llave de apertura ({), también puede anexar instrucciones con los elementos seleccionados.
 
 ## <a name="references"></a>Referencias
- Puede utilizar estas opciones para especificar los tipos de archivos de IntelliSense .js que están incluidos en el ámbito para diferentes tipos de proyecto de JavaScript. Las referencias de IntelliSense se utilizan normalmente para proporcionar compatibilidad con IntelliSense a los objetos globales. También puede utilizar esta página para establecer el orden de carga de los scripts que se deben cargar en tiempo de ejecución y para agregar archivos de extensión de IntelliSense.
+
+Puede utilizar estas opciones para especificar los tipos de archivos de IntelliSense .js que están incluidos en el ámbito para diferentes tipos de proyecto de JavaScript. Las referencias de IntelliSense se utilizan normalmente para proporcionar compatibilidad con IntelliSense a los objetos globales. También puede utilizar esta página para establecer el orden de carga de los scripts que se deben cargar en tiempo de ejecución y para agregar archivos de extensión de IntelliSense.
 
 ### <a name="uielement-list"></a>Lista de UIElement
- **Grupos de referencias**
 
- Esta opción especifica el tipo de grupo de referencias. Se admiten tres grupos de referencias:
+**Grupos de referencias**
 
- Puede usar los grupos de referencias predefinidos para especificar qué archivos concretos de IntelliSense .js se incluyen en el ámbito para proyectos diferentes de JavaScript. Hay cuatro grupos de referencias disponibles:
+Esta opción especifica el tipo de grupo de referencias. Se admiten tres grupos de referencias:
+
+Puede usar los grupos de referencias predefinidos para especificar qué archivos concretos de IntelliSense .js se incluyen en el ámbito para proyectos diferentes de JavaScript. Hay cuatro grupos de referencias disponibles:
 
 - Implícito ( *versión*de Windows), para aplicaciones de la [!INCLUDE[win8_appname_long](../../debugger/includes/win8_appname_long_md.md)] que usan JavaScript. Los archivos incluidos en este grupo pertenecen al ámbito de cada archivo .js abierto en el editor de código para las aplicaciones de [!INCLUDE[win8_appname_long](../../debugger/includes/win8_appname_long_md.md)] que usan JavaScript.
 
@@ -59,7 +65,6 @@ Esta opción especifica el orden en que los archivos se cargan en el contexto de
 > [!CAUTION]
 > Si un objeto se define incondicionalmente en dos o más referencias implícitas, la última referencia de esta lista se utilizará para definir el objeto.
 
-
 **Agregar una referencia al grupo**
 
 Esta opción permite agregar archivos adicionales de IntelliSense .js buscando los archivos correspondientes.
@@ -70,8 +75,6 @@ Cuando se activa esta casilla, y si tiene un archivo de JavaScript abierto fuera
 
 > [!NOTE]
 > En los proyectos web, los archivos remotos a los que se hace referencia en el proyecto se descargan de forma predeterminada.
-
-
 
 ## <a name="see-also"></a>Vea también
 

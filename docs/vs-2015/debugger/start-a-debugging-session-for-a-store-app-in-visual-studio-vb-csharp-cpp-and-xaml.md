@@ -34,12 +34,12 @@ caps.latest.revision: 23
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: fc5dfaa203e3e915075ad819fa859be46b9e2b7a
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: f12d6cde30dec9062dd67a18558bd0571e6fe6b1
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60095365"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65685215"
 ---
 # <a name="start-a-debugging-session-for-a-store-app-in-visual-studio-vb-c-c-and-xaml"></a>Iniciar una sesión de depuración para aplicaciones de la Tienda en Visual Studio (VB, C#, C++ y XAML)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,7 +49,7 @@ Se aplica a Windows y Windows Phone] (.. /Image/windows_and_phone_content.png "w
  En este tema se describe cómo iniciar una sesión de depuración para aplicaciones de la Tienda escritas en XAML y Visual C++, Visual C# o Visual Basic. Para depurar una aplicación, hay que configurar la sesión de depuración y elegir la manera de iniciar la aplicación.
 
 > [!NOTE]
->  Para aplicaciones escritas en JavaScript y HTML, consulte [iniciar una sesión de depuración (JavaScript)](../debugger/start-a-debugging-session-for-store-apps-in-visual-studio-javascript.md).
+> Para aplicaciones escritas en JavaScript y HTML, consulte [iniciar una sesión de depuración (JavaScript)](../debugger/start-a-debugging-session-for-store-apps-in-visual-studio-javascript.md).
 
 ## <a name="BKMK_In_this_topic"></a> En este tema
  [Iniciar la depuración de manera sencilla](#BKMK_The_easy_way_to_start_debugging)
@@ -152,7 +152,7 @@ Se aplica a Windows y Windows Phone] (.. /Image/windows_and_phone_content.png "w
     ![Cuadro de diálogo Seleccionar conexión del depurador remoto](../debugger/media/vsrun-selectremotedebuggerdlg.png "VSRUN_SelectRemoteDebuggerDlg")
 
   > [!NOTE]
-  >  El cuadro de diálogo **Seleccionar conexión del depurador remoto** muestra los equipos que están en la subred local y los que están conectados directamente con el equipo de Visual Studio mediante un cable Ethernet. Para especificar otro equipo, escribe su nombre en el cuadro **Nombre de equipo** .
+  > El cuadro de diálogo **Seleccionar conexión del depurador remoto** muestra los equipos que están en la subred local y los que están conectados directamente con el equipo de Visual Studio mediante un cable Ethernet. Para especificar otro equipo, escribe su nombre en el cuadro **Nombre de equipo** .
 
   ![Solo se aplica a Windows Phone](../debugger/media/phone-only-content.png "phone_only_content")
 
@@ -210,7 +210,7 @@ Se aplica a Windows y Windows Phone] (.. /Image/windows_and_phone_content.png "w
  De forma predeterminada, debes proporcionar credenciales para ejecutar el depurador remoto.
 
 > [!IMPORTANT]
->  Puede elegir ejecutar el depurador remoto en el Modo sin autenticación, aunque se recomienda no usar este modo. No hay ninguna seguridad de red cuando se ejecuta en este modo. Elige el modo sin autenticación solo si estás seguro de que la red no presenta riesgos de tráfico malintencionado u hostil.
+> Puede elegir ejecutar el depurador remoto en el Modo sin autenticación, aunque se recomienda no usar este modo. No hay ninguna seguridad de red cuando se ejecuta en este modo. Elige el modo sin autenticación solo si estás seguro de que la red no presenta riesgos de tráfico malintencionado u hostil.
 
  Para quitar el requisito de autenticación:
 
@@ -250,7 +250,7 @@ Se aplica a Windows y Windows Phone] (.. /Image/windows_and_phone_content.png "w
  Para establecer que una aplicación instalada se ejecute en modo de depuración, realiza lo siguiente:
 
 > [!NOTE]
->  La aplicación no debe estar ejecutándose al iniciar este procedimiento.
+> La aplicación no debe estar ejecutándose al iniciar este procedimiento.
 
 1. En el menú **Depurar** , elige **Depurar paquete de aplicaciones instalado**
 
@@ -285,7 +285,7 @@ Se aplica a Windows y Windows Phone] (.. /Image/windows_and_phone_content.png "w
 
 #### <a name="BKMK_Set_the_app_to_run_in_debug_mode"></a> Configurar la aplicación para que se ejecute en modo de depuración
 
-1. Instala las Herramientas remotas de Visual Studio en el dispositivo donde esté instalada la aplicación. Consulte [Instalar las herramientas remotas](http://msdn.microsoft.com/library/windows/apps/hh441469.aspx#BKMK_Installing_the_Remote_Tools).
+1. Instala las Herramientas remotas de Visual Studio en el dispositivo donde esté instalada la aplicación. Consulte [Instalar las herramientas remotas](https://msdn.microsoft.com/library/windows/apps/hh441469.aspx#BKMK_Installing_the_Remote_Tools).
 
 2. En la pantalla Inicio, busca `Debuggable Package Manager` . Inícialo.
 

@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 78b27626c457b857f6f0ce195852922f2d5c89de
-ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
+ms.openlocfilehash: 06665aa6a30d67e27f654e92029dcbd3d2aea2ef
+ms.sourcegitcommit: 1507baf3a336bbb6511d4c3ce73653674831501b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "59366775"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "72349749"
 ---
 # <a name="first-look-at-the-visual-studio-debugger"></a>Primer vistazo al depurador de Visual Studio
 
@@ -116,6 +116,16 @@ El botón **Reiniciar** permite ahorrar tiempo, ya que hace que no sea necesario
 
 Si quiere detener el depurador y volver al editor de código, puede presionar el botón rojo ![Detener depuración](../debugger/media/dbg-tour-stop-debugging.png "Stop Debugging") en lugar de **Reiniciar**.
 
+## <a name="edit-your-code-and-continue-debugging-c-vb-c-xaml"></a>Edición del código y continuación de la depuración (C#, VB, C++, XAML)
+
+En la mayoría de los lenguajes compatibles con Visual Studio, puede editar el código en medio de una sesión de depuración y continuar con la depuración. Para usar esta característica, haga clic en el código con el cursor mientras está en pausa en el depurador, realice las ediciones y presione **F5**, **F10** o **F11** para continuar con la depuración.
+
+![Edición de código y depuración continua](../debugger/media/dbg-tips-edit-and-continue.gif "EditAndContinue")
+
+Para obtener más información sobre el uso de la característica y las limitaciones de esta, consulte [Editar y continuar](../debugger/edit-and-continue.md).
+
+Para modificar el código XAML durante una sesión de depuración, consulte [Escribir y depurar código XAML en ejecución con la recarga frecuente de XAML](xaml-hot-reload.md).
+
 ## <a name="inspect-variables-with-data-tips"></a>Inspeccionar variables con información sobre datos
 
 Ahora que sabe manejarse un poco, tiene una buena oportunidad de empezar a inspeccionar el estado de la aplicación (variables) con el depurador. Las características que permiten inspeccionar variables son algunas de las más útiles del depurador, y hay diferentes formas de hacerlo. Con frecuencia, cuando intenta depurar un problema, está intentando averiguar si las variables están almacenando los valores que espera que tengan en un estado determinado de la aplicación.
@@ -191,6 +201,14 @@ El Asistente de excepciones es una característica excelente que puede ayudar a 
 > El Asistente de excepciones ha reemplazado al Asistente de excepciones a partir de [!include[vs_dev15](../misc/includes/vs_dev15_md.md)].
 
 Expanda el nodo **Configuración de excepciones** para ver más opciones para controlar este tipo de excepción sin necesidad de cambiar nada de este paseo.
+
+## <a name="configure-debugging"></a>Configuración de depuración
+
+Puede configurar el proyecto para que se compile como una [configuración de depuración o versión](../debugger/how-to-set-debug-and-release-configurations.md), establecer las propiedades del proyecto para la depuración o establecer la [configuración general](../debugger/how-to-specify-debugger-settings.md) para la depuración. Además, puede configurar el depurador para mostrar información personalizada mediante características como el atributo [DebuggerDisplay](using-the-debuggerdisplay-attribute.md) o, para C/C++, el [marco NatVis](create-custom-views-of-native-objects.md).
+
+Las propiedades de depuración son específicas de cada tipo de proyecto. Por ejemplo, puede especificar un argumento que se pasa a la aplicación cuando se inicia. Para acceder a las propiedades específicas del proyecto, haga clic con el botón derecho en el proyecto en el Explorador de soluciones y seleccione **Propiedades**. Las propiedades de depuración suelen aparecer en la pestaña **Compilar** o **Depurar**, en función del tipo de proyecto específico.
+
+![Propiedades del proyecto](../debugger/media/dbg-tour-project-properties.png "Propiedades del proyecto")
 
 ## <a name="debug-live-aspnet-apps-in-azure-app-service"></a>Depurar aplicaciones ASP.NET activas en Azure App Service
 

@@ -1,5 +1,5 @@
 ---
-title: 'Tutorial: Llamar al modelo de objeto de cliente de SharePoint en una extensión de explorador de servidores | Documentos de Microsoft'
+title: 'Explorador de servidores: Extender el nodo Conexiones de SharePoint'
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 13ea06abff2237c0b9262ba01dcb243afe6c3c3a
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: bf3d39a8a06a59ed337c0d847bb92875f0f68558
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60063119"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67824161"
 ---
 # <a name="walkthrough-calling-into-the-sharepoint-client-object-model-in-a-server-explorer-extension"></a>Tutorial: Una llamada al modelo de objetos de cliente de SharePoint en una extensión de explorador de servidores
   Este tutorial muestra cómo llamar al modelo de objetos de cliente de SharePoint desde una extensión para el **conexiones de SharePoint** nodo **Explorador de servidores**. Para obtener más información sobre cómo usar el modelo de objetos de cliente de SharePoint, vea [llamar a los modelos de objetos de SharePoint](../sharepoint/calling-into-the-sharepoint-object-models.md).
@@ -27,16 +27,16 @@ ms.locfileid: "60063119"
 
 - Creación de un [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] extensión que extiende el **conexiones de SharePoint** nodo de **Explorador de servidores** de las maneras siguientes:
 
-    - La extensión se agrega un **Galería de elementos Web** nodo en cada nodo de sitio de SharePoint en **Explorador de servidores**. Este nuevo nodo contiene nodos secundarios que representan cada elemento Web en la Galería de elementos Web en el sitio.
+  - La extensión se agrega un **Galería de elementos Web** nodo en cada nodo de sitio de SharePoint en **Explorador de servidores**. Este nuevo nodo contiene nodos secundarios que representan cada elemento Web en la Galería de elementos Web en el sitio.
 
-    - La extensión define un nuevo tipo de nodo que representa una instancia del elemento Web. Este nuevo tipo de nodo es la base para los nodos secundarios en la nueva **Galería de elementos Web** nodo. El nuevo tipo de nodo de elemento Web muestra información en el **propiedades** ventana acerca del elemento Web que representa el nodo.
+  - La extensión define un nuevo tipo de nodo que representa una instancia del elemento Web. Este nuevo tipo de nodo es la base para los nodos secundarios en la nueva **Galería de elementos Web** nodo. El nuevo tipo de nodo de elemento Web muestra información en el **propiedades** ventana acerca del elemento Web que representa el nodo.
 
 - Creación de un paquete de extensión de Visual Studio (VSIX) para implementar la extensión.
 
 - Depurar y probar la extensión.
 
 > [!NOTE]
->  La extensión que se crea en este tutorial se parece a la extensión que se crea en [Tutorial: Extender el Explorador de servidores para mostrar elementos web](../sharepoint/walkthrough-extending-server-explorer-to-display-web-parts.md). En este tutorial usa el modelo de objetos de servidor de SharePoint, pero en este tutorial se lleva a cabo las mismas tareas utilizando el modelo de objetos de cliente.
+> La extensión que se crea en este tutorial se parece a la extensión que se crea en [Tutorial: Extender el Explorador de servidores para mostrar elementos web](../sharepoint/walkthrough-extending-server-explorer-to-display-web-parts.md). En este tutorial usa el modelo de objetos de servidor de SharePoint, pero en este tutorial se lleva a cabo las mismas tareas utilizando el modelo de objetos de cliente.
 
 ## <a name="prerequisites"></a>Requisitos previos
  Necesitará los componentes siguientes en el equipo de desarrollo para completar este tutorial:
@@ -69,7 +69,7 @@ El conocimiento de los siguientes conceptos es útil, aunque no necesario, para 
 3. En el **nuevo proyecto** cuadro de diálogo, expanda el **Visual C#** o **Visual Basic** nodos y, a continuación, elija **extensibilidad**.
 
     > [!NOTE]
-    >  El **extensibilidad** nodo está disponible solo si instala el SDK de Visual Studio. Para obtener más información, vea la sección Requisitos previos, anteriormente en este tema.
+    > El **extensibilidad** nodo está disponible solo si instala el SDK de Visual Studio. Para obtener más información, vea la sección Requisitos previos, anteriormente en este tema.
 
 4. En la parte superior del cuadro de diálogo, elija **.NET Framework 4.5** en la lista de versiones de .NET Framework.
 
@@ -161,7 +161,7 @@ El conocimiento de los siguientes conceptos es útil, aunque no necesario, para 
 1. Pegue el código siguiente en el **SiteNodeExtension** archivo de código para el **ExtensiónNodoElementoWeb** proyecto.
 
     > [!NOTE]
-    >  Tras agregar este código, el proyecto tendrá algunos errores de compilación. Estos errores desaparecerán al agregar código en pasos posteriores.
+    > Tras agregar este código, el proyecto tendrá algunos errores de compilación. Estos errores desaparecerán al agregar código en pasos posteriores.
 
      [!code-csharp[SPExtensibility.SPExplorer.WebPartNode#1](../sharepoint/codesnippet/CSharp/webpartnode/webpartnodeextension/sitenodeextension.cs#1)]
      [!code-vb[SPExtensibility.SPExplorer.WebPartNode#1](../sharepoint/codesnippet/VisualBasic/spextensibility.spexplorer.webpartnode.webpartnode/webpartnodeextension/sitenodeextension.vb#1)]
@@ -205,7 +205,7 @@ El conocimiento de los siguientes conceptos es útil, aunque no necesario, para 
 6. En el **Agregar nuevo activo** cuadro de diálogo el **tipo** elija **Microsoft.VisualStudio.MefComponent**.
 
     > [!NOTE]
-    >  Este valor corresponde al elemento `MefComponent` del archivo extension.vsixmanifest. Este elemento especifica el nombre de un ensamblado de extensión en el paquete VSIX. Para obtener más información, consulte [elemento MEFComponent (Esquema VSX)](/previous-versions/visualstudio/visual-studio-2010/dd393736\(v\=vs.100\)).
+    > Este valor corresponde al elemento `MefComponent` del archivo extension.vsixmanifest. Este elemento especifica el nombre de un ensamblado de extensión en el paquete VSIX. Para obtener más información, consulte [elemento MEFComponent (Esquema VSX)](/previous-versions/visualstudio/visual-studio-2010/dd393736\(v\=vs.100\)).
 
 7. En el **origen** elija **un proyecto de la solución actual**.
 
@@ -240,7 +240,7 @@ El conocimiento de los siguientes conceptos es útil, aunque no necesario, para 
 
     2. En el **Agregar conexión de SharePoint** diálogo cuadro, escriba la dirección URL del sitio de SharePoint a la que desea conectarse y, a continuación, elija el **Aceptar** botón.
 
-         Para especificar el sitio de SharePoint en el equipo de desarrollo, escriba **http://localhost**.
+         Para especificar el sitio de SharePoint en el equipo de desarrollo, escriba **http://localhost** .
 
 3. Expanda el nodo de conexión de sitio (que muestra la dirección URL del sitio) y, a continuación, expanda un nodo de sitio secundario (por ejemplo, **Team Site**).
 

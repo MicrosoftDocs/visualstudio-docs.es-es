@@ -1,5 +1,5 @@
 ---
-title: IDebugApplicationNode100::QueryIsChildNode | Microsoft Docs
+title: 'Idebugapplicationnode100 (:: QueryIsChildNode | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -13,18 +13,18 @@ caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f620a5545c65683eaafd0ac457621f01e6782dff
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 761b2800415adbcf298eb96f2231a74195b2291c
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58151107"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72574748"
 ---
 # <a name="idebugapplicationnode100queryischildnode"></a>IDebugApplicationNode100::QueryIsChildNode
 Determina si el documento especificado pertenece a uno de los nodos secundarios de este nodo.  
   
 > [!IMPORTANT]
->  [IDebugApplicationNode100 (interfaz)](../../winscript/reference/idebugapplicationnode100-interface.md) es implementada por PDM v10.0 y versiones posteriores. Se encuentra en activdbg100.h.  
+> La [interfaz idebugapplicationnode100 (](../../winscript/reference/idebugapplicationnode100-interface.md) se implementa mediante PDM v 10.0 y versiones posteriores. Se encuentra en activdbg100.h.  
   
 ## <a name="syntax"></a>Sintaxis  
   

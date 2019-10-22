@@ -1,5 +1,5 @@
 ---
-title: IEnumJsStackFrames (interfaz) | Documentos de Microsoft
+title: Interfaz IEnumJsStackFrames | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -11,15 +11,15 @@ caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 2e8302737fb4abf96c55d3ae70424cc03579b270
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: b4a635a802ae84b8e839159f5e2f1c4c461e05ae
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58150158"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72572031"
 ---
 # <a name="ienumjsstackframes-interface"></a>IEnumJsStackFrames (Interfaz)
-Implementado por el depurador para proporcionar la pila de desenredado a jscript9diag.dll para JavaScript.  
+Implementado por el depurador para proporcionar el desenredado de la pila a jscript9diag. dll para JavaScript.  
   
 ## <a name="syntax"></a>Sintaxis  
   
@@ -34,10 +34,10 @@ IEnumJsStackFrames : public IUnknown;
 |Name|Descripción|  
 |----------|-----------------|  
 |[IEnumJsStackFrames::Next (Método)](../../winscript/reference/ienumjsstackframes-next-method.md)|Obtiene el número de marcos especificado.|  
-|[IEnumJsStackFrames::Reset (Método)](../../winscript/reference/ienumjsstackframes-reset-method.md)|Restablece el marco de pila a la posición anterior al primer elemento.|  
+|[IEnumJsStackFrames::Reset (Método)](../../winscript/reference/ienumjsstackframes-reset-method.md)|Restablece el marco de pila en la posición anterior al primer elemento.|  
   
 ## <a name="requirements"></a>Requisitos  
- **Encabezado:** jscript9diag.h  
+ **Encabezado:** jscript9diag. h  
   
 ## <a name="see-also"></a>Vea también  
  [Referencia de interfaces de Windows Script](../../winscript/reference/windows-script-interfaces-reference.md)

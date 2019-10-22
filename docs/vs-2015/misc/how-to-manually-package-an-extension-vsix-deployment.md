@@ -7,12 +7,12 @@ ms.topic: conceptual
 ms.assetid: d25990e0-e782-4a79-9d9a-1caf3c56c6a2
 caps.latest.revision: 10
 manager: jillfra
-ms.openlocfilehash: 81bf6c5ef975d7ce154c1d8bb987e962dfdf4ec2
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: e4d721fca8d429fe81de30306a8823e3d7fd9cab
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60040746"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65681683"
 ---
 # <a name="how-to-manually-package-an-extension-vsix-deployment"></a>Procedimiento Empaquetar manualmente una extensión (implementación VSIX)
 Puede crear un paquete VSIX para encapsular una extensión [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] para la implementación. Puede crear el paquete de tres formas distintas:  
@@ -26,10 +26,10 @@ Puede crear un paquete VSIX para encapsular una extensión [!INCLUDE[vsprvs](../
   Este documento describe la tercera opción.  
   
 ## <a name="creating-a-vsix-package"></a>Crear un paquete VSIX  
- Para empaquetar manualmente una extensión, agregue un archivo extension.manifest y un archivo [Content_Types].xml al proyecto de extensión. A continuación, colóquelos en un archivo comprimido junto con el resultado de la compilación y cambie el nombre del archivo comprimido para que tenga una extensión de nombre de archivo .vsix. La extensión que se debe empaquetar debe ser de un tipo compatible con el [esquema VSIX](http://msdn.microsoft.com/76e410ec-b1fb-4652-ac98-4a4c52e09a2b).  
+ Para empaquetar manualmente una extensión, agregue un archivo extension.manifest y un archivo [Content_Types].xml al proyecto de extensión. A continuación, colóquelos en un archivo comprimido junto con el resultado de la compilación y cambie el nombre del archivo comprimido para que tenga una extensión de nombre de archivo .vsix. La extensión que se debe empaquetar debe ser de un tipo compatible con el [esquema VSIX](https://msdn.microsoft.com/76e410ec-b1fb-4652-ac98-4a4c52e09a2b).  
   
 > [!NOTE]
->  Los nombres de archivos en paquetes VSIX no puede contener espacios ni caracteres reservados en identificadores de recursos uniforme (URI), como se definen en [ \[RFC2396\]](http://go.microsoft.com/fwlink/?LinkId=90339).  
+> Los nombres de archivos en paquetes VSIX no puede contener espacios ni caracteres reservados en identificadores de recursos uniforme (URI), como se definen en [ \[RFC2396\]](http://go.microsoft.com/fwlink/?LinkId=90339).  
   
 #### <a name="to-manually-create-a-vsix-package"></a>Para crear manualmente un paquete VSIX  
   
@@ -37,7 +37,7 @@ Puede crear un paquete VSIX para encapsular una extensión [!INCLUDE[vsprvs](../
   
 2. Cree un archivo XML y asígnele el nombre `extension.vsixmanifest`.  
   
-3. Rellene el archivo extension.vsixmanifest según el esquema VSIX. Para obtener un ejemplo de manifiesto, vea [Elemento PackageManifest (elemento Root, esquema VSX)](http://msdn.microsoft.com/f8ae42ba-775a-4d2b-976a-f556e147f187).  
+3. Rellene el archivo extension.vsixmanifest según el esquema VSIX. Para obtener un ejemplo de manifiesto, vea [Elemento PackageManifest (elemento Root, esquema VSX)](https://msdn.microsoft.com/f8ae42ba-775a-4d2b-976a-f556e147f187).  
   
 4. Cree un segundo archivo XML y asígnele el nombre `[Content_Types].xml`.  
   
@@ -56,4 +56,4 @@ Puede crear un paquete VSIX para encapsular una extensión [!INCLUDE[vsprvs](../
 ## <a name="see-also"></a>Vea también  
  [Extensiones de Visual Studio de trasvase de registros](../extensibility/shipping-visual-studio-extensions.md)   
  [Anatomía de un paquete VSIX](../extensibility/anatomy-of-a-vsix-package.md)   
- [Elemento PackageManifest (elemento Root, esquema VSX)](http://msdn.microsoft.com/f8ae42ba-775a-4d2b-976a-f556e147f187)
+ [Elemento PackageManifest (elemento Root, esquema VSX)](https://msdn.microsoft.com/f8ae42ba-775a-4d2b-976a-f556e147f187)

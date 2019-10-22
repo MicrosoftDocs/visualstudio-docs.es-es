@@ -1,5 +1,5 @@
 ---
-title: IScriptNode::GetNumberOfChildren | Microsoft Docs
+title: 'Iscriptnode (:: GetNumberOfChildren | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: bdf35c82193ce3d9beb3c6d55e5ba850a0417874
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 67912194b051574d4b4a37e897ec7cac14b02ae2
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58147311"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72577524"
 ---
 # <a name="iscriptnodegetnumberofchildren"></a>IScriptNode::GetNumberOfChildren
-Devuelve el número de nodos secundarios de la `IScriptNode` objeto.  
+Devuelve el número de nodos secundarios del objeto `IScriptNode`.  
   
 ## <a name="syntax"></a>Sintaxis  
   
@@ -37,10 +37,10 @@ HRESULT GetNumberOfChildren(
   
 #### <a name="parameters"></a>Parámetros  
  `pcsn`  
- [out] El número de nodos secundarios que el `IScriptNode` tiene el objeto.  
+ enuncia El número de nodos secundarios que tiene el objeto de `IScriptNode`.  
   
 ## <a name="return-value"></a>Valor devuelto  
- Una clase `HRESULT`. Entre los valores posibles se incluyen los que se indican en la tabla siguiente, entre otros.  
+ Interfaz `HRESULT`. Entre los valores posibles se incluyen los que se indican en la tabla siguiente, entre otros.  
   
 |Valor|Descripción|  
 |-----------|-----------------|  

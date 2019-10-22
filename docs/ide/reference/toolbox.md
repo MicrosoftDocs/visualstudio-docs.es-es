@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1331f416d95b56d466b6e2fe268ed7db071d66da
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: fb101dc1f272ae56ceb0058afb2806aec4154936
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55925412"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66747683"
 ---
 # <a name="toolbox"></a>Cuadro de herramientas
 
@@ -33,7 +33,7 @@ El Cuadro de herramientas aparece junto con las vistas de diseñador, como la vi
 > [!NOTE]
 > Para algunos tipos de proyecto, el **Cuadro de herramientas** no puede mostrar todos los elementos.
 
-La versión de .NET Framework del proyecto también afecta al conjunto de controles visibles en el Cuadro de herramientas. Puede configurar el proyecto para que tome como destino una versión diferente de .NET Framework desde las páginas de propiedades del proyecto. Seleccione el modo del proyecto en el **Explorador de soluciones** y, luego, en la barra de menús, elija **Proyecto** > **Propiedades de proyecto**. En la pestaña **Aplicación**, use el menú desplegable **Plataforma de destino**.
+La versión de .NET de destino del proyecto también afecta al conjunto de controles visible en el Cuadro de herramientas. Puede cambiar la versión del marco de destino desde las páginas de propiedades del proyecto, en caso necesario. Seleccione el modo del proyecto en el **Explorador de soluciones** y, luego, en la barra de menús, elija **Proyecto** > **Propiedades de proyecto**. En la pestaña **Aplicación**, use el menú desplegable **Plataforma de destino**.
 
 ## <a name="manage-the-toolbox-window-and-its-controls"></a>Administrar la ventana Cuadro de herramientas y sus controles
 

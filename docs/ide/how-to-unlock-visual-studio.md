@@ -11,12 +11,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-ide-general
-ms.openlocfilehash: 2bb6de32188abb11e0286c200383bdb1e8fb12f7
-ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
+ms.openlocfilehash: fe0aa86be242e9a7e7ed8d877944c66247718167
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "58856825"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68926302"
 ---
 # <a name="how-to-unlock-visual-studio"></a>Procedimiento Desbloquear Visual Studio
 
@@ -50,11 +50,11 @@ Para desbloquear Visual Studio mediante una suscripción a Visual Studio o una o
 
 ### <a name="update-stale-licenses"></a>Actualizar licencias obsoletas
 
- Es posible que haya visto el mensaje siguiente que indica que la licencia de Visual Studio se está quedando obsoleta. El mensaje indica "La licencia es obsoleta y se debe actualizar".
+Es posible que haya visto el mensaje siguiente que indica que la licencia de Visual Studio se está quedando obsoleta. El mensaje indica "La licencia es obsoleta y se debe actualizar".
 
- ![Mensaje de licencia obsoleta de Visual Studio](../ide/media/vs2017_stale-license.png)
+![Mensaje de licencia obsoleta de Visual Studio](../ide/media/vs2017_stale-license.png)
 
- Este mensaje indica que, aunque es posible que la licencia aún sea válida, el token de licencia que usa Visual Studio para mantener actualizada la suscripción no se ha actualizado y ha quedado obsoleto debido a uno de los siguientes motivos:
+Este mensaje indica que, aunque es posible que la licencia aún sea válida, el token de licencia que usa Visual Studio para mantener actualizada la suscripción no se ha actualizado y ha quedado obsoleto debido a uno de los siguientes motivos:
 
 - No se ha usado Visual Studio o no ha habido conexión a Internet durante un período prolongado de tiempo.
 - Se cerró la sesión de Visual Studio.
@@ -68,8 +68,8 @@ Si no vuelve a escribirlas, el token empieza a quedar obsoleto y en el cuadro de
 
 ### <a name="update-expired-licenses"></a>Actualizar licencias caducadas
 
- Si su suscripción ha expirado por completo y ya no tiene derechos de acceso a Visual Studio, debe renovar la suscripción o agregar otra cuenta que tenga una suscripción. Para obtener más información sobre su licencia actual, vaya a **Archivo** > **Configuración de la cuenta** y vea la información de licencia que aparece en el lado derecho del cuadro de diálogo. Si tiene otra suscripción asociada a una cuenta diferente, agregue esa cuenta a la lista **Todas las cuentas**, en el lado izquierdo del cuadro de diálogo. Para ello, seleccione el vínculo **Agregar una cuenta**.
+Si su suscripción ha expirado por completo y ya no tiene derechos de acceso a Visual Studio, debe renovar la suscripción o agregar otra cuenta que tenga una suscripción. Para obtener más información sobre su licencia actual, vaya a **Archivo** > **Configuración de la cuenta** y vea la información de licencia que aparece en el lado derecho del cuadro de diálogo. Si tiene otra suscripción asociada a una cuenta diferente, agregue esa cuenta a la lista **Todas las cuentas**, en el lado izquierdo del cuadro de diálogo. Para ello, seleccione el vínculo **Agregar una cuenta**.
 
 ## <a name="see-also"></a>Vea también
 
-* [Iniciar sesión en Visual Studio](../ide/signing-in-to-visual-studio.md)
+* [Inicio de sesión en Visual Studio](../ide/signing-in-to-visual-studio.md)

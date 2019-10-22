@@ -8,17 +8,20 @@ helpviewer_keywords:
 - IDebugPendingBreakpoint2::Enable method
 - Enable method
 ms.assetid: 09e32d05-464b-40a6-a41d-76f2759cf2cd
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3d6498ffbad5fef4d387139b41cefc3d54468245
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: f05424cfb9e3188c3b4306ad961de24f6757e807
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56720827"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66311678"
 ---
 # <a name="idebugpendingbreakpoint2enable"></a>IDebugPendingBreakpoint2::Enable
 Alterna el estado habilitado del punto de interrupción pendiente.
@@ -37,10 +40,9 @@ int Enable(
 );
 ```
 
-#### <a name="parameters"></a>Parámetros
-`fEnable`
-
- [in] Establecer a distinto de cero (`TRUE`) para habilitar un punto de interrupción pendiente, o cero (`FALSE`) para deshabilitar.
+## <a name="parameters"></a>Parámetros
+`fEnable`\
+[in] Establecer a distinto de cero (`TRUE`) para habilitar un punto de interrupción pendiente, o cero (`FALSE`) para deshabilitar.
 
 ## <a name="return-value"></a>Valor devuelto
 Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error. Devuelve `E_BP_DELETED` si se ha eliminado el punto de interrupción.

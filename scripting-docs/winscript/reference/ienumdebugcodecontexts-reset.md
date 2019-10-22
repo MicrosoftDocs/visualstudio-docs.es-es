@@ -1,5 +1,5 @@
 ---
-title: IEnumDebugCodeContexts::Reset | Microsoft Docs
+title: 'Ienumdebugcodecontexts (:: RESET | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,12 +17,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 756ed93f774419f33bc721429ea3e3bb605577df
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 503b8a0be7c423501752bb7cb2f72540d50d41f4
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58157586"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72577183"
 ---
 # <a name="ienumdebugcodecontextsreset"></a>IEnumDebugCodeContexts::Reset
 Restablece una secuencia de enumeración al principio.  

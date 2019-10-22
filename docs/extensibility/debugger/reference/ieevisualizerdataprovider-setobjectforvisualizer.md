@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IEEVisualizerDataProvider::SetObjectForVisualizer method
 ms.assetid: 40dad2be-57ff-4f74-9d82-c48039c125c4
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a55328c4148aa911d86b8f2daf05ba84a50ff444
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 34fb0e8c4ae8b2b4371234e9cf09d9c21727dfdf
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56711549"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66350196"
 ---
 # <a name="ieevisualizerdataprovidersetobjectforvisualizer"></a>IEEVisualizerDataProvider::SetObjectForVisualizer
 Este método cambia el objeto que representa el visualizador.
@@ -40,18 +43,15 @@ int SetObjectForVisualizer(
 );
 ```
 
-#### <a name="parameters"></a>Parámetros
- `pNewObject`
+## <a name="parameters"></a>Parámetros
+`pNewObject`\
+[in] El objeto va a establecer.
 
- [in] El objeto va a establecer.
+`error`\
+[out] Si se produjo un error al configurar el objeto, esta cadena contiene el mensaje de error.
 
- `error`
-
- [out] Si se produjo un error al configurar el objeto, esta cadena contiene el mensaje de error.
-
- `pException`
-
- [out] Si se produjo un error, este objeto contiene la información de excepción.
+`pException`\
+[out] Si se produjo un error, este objeto contiene la información de excepción.
 
 ## <a name="return-value"></a>Valor devuelto
  Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.

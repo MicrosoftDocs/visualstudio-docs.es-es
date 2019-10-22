@@ -6,17 +6,17 @@ helpviewer_keywords:
 - commands, context
 - menu items, visibility contexts
 ms.assetid: c74e3ccf-d771-48c8-a2f9-df323b166784
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7dfe8a6b3e4c84fd97a159f6ac43e0de47536f0b
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 5087e5f7958f9abe46e0caeb2eb03e21285e4da7
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60064276"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66338604"
 ---
 # <a name="command-availability"></a>Disponibilidad de los comandos
 

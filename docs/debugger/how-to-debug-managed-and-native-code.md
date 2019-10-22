@@ -15,12 +15,12 @@ manager: jillfra
 ms.workload:
 - dotnet
 - cplusplus
-ms.openlocfilehash: d1fefda9d8d639bf8d360bbd6b869b75b7dae903
-ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
+ms.openlocfilehash: 8e62b9a99f178a45466ff8afa46753981be61424
+ms.sourcegitcommit: 34807a6b6105ae7839adde8ff994c85182ad3aff
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "58856507"
+ms.lasthandoff: 06/24/2019
+ms.locfileid: "67342378"
 ---
 # <a name="tutorial-debug-c-and-c-in-the-same-debugging-session"></a>Tutorial: Depuración de C# y C++ en la misma sesión de depuración
 
@@ -28,7 +28,7 @@ Visual Studio permite habilitar más de un tipo de depurador en una sesión de d
 
 En él se muestra cómo depurar código nativo desde una aplicación administrada, además de cómo [depurar código administrado desde una aplicación nativa](../debugger/how-to-debug-in-mixed-mode.md). El depurador también admite otros tipos de depuración en modo mixto, como la depuración de [Python y código nativo](../python/debugging-mixed-mode-c-cpp-python-in-visual-studio.md), y el empleo del depurador de scripts en tipos de aplicaciones como ASP.NET.
 
-En este tutorial va a:
+En este tutorial, aprenderá lo siguiente:
 
 > [!div class="checklist"]
 > * Crear una DLL nativa simple
@@ -50,7 +50,7 @@ Si tiene Visual Studio instalado, pero no las cargas de trabajo que necesita, se
 
 ## <a name="create-a-simple-native-dll"></a>Crear una DLL nativa simple
 
-**Para crear los archivos del proyecto DLL:**
+**Para crear los archivos del proyecto de DLL:**
 
 1. Abra Visual Studio y cree un proyecto.
 
@@ -58,14 +58,14 @@ Si tiene Visual Studio instalado, pero no las cargas de trabajo que necesita, se
     Presione **Esc** para cerrar la ventana de inicio. Presione **Ctrl + Q** para abrir el cuadro de búsqueda, escriba **Proyecto vacío**, elija **Plantillas** y luego, **Create new Empty Project project** (Crear proyecto vacío) para C++. En el cuadro de diálogo que se abre, elija **Crear**. Luego, escriba un nombre como **Mixed_Mode_Debugging** y haga clic en **Crear**.
     ::: moniker-end
     ::: moniker range="vs-2017"
-    En la barra de menús superior, seleccione **Archivo** > **Nuevo** > **Proyecto**. En el panel izquierdo del cuadro de diálogo **Nuevo proyecto**, en **Visual C++**, elija **Otros** y luego, en el panel central, **Proyecto vacío**. Luego, escriba un nombre como **Mixed_Mode_Debugging** y haga clic en **Aceptar**.
+    En la barra de menús superior, seleccione **Archivo** > **Nuevo** > **Proyecto**. En el panel izquierdo del cuadro de diálogo **Nuevo proyecto**, en **Visual C++** , elija **Otros** y luego, en el panel central, **Proyecto vacío**. Luego, escriba un nombre como **Mixed_Mode_Debugging** y haga clic en **Aceptar**.
     ::: moniker-end
 
     Si no ve la plantilla de proyecto **Proyecto vacío**, vaya a **Herramientas** > **Obtener herramientas y características…** y se abrirá el instalador de Visual Studio. Se iniciará el Instalador de Visual Studio. Seleccione la carga de trabajo **Desarrollo para el escritorio con C++** y, luego, elija **Modificar**.
 
     Visual Studio crea el proyecto.
 
-1. En el cuadro de diálogo **Nuevo proyecto**, en **Visual C++**, seleccione **Otro** y luego **Proyecto vacío** en el panel central.
+1. En el cuadro de diálogo **Nuevo proyecto**, en **Visual C++** , seleccione **Otro** y luego **Proyecto vacío** en el panel central.
 
 1. En el campo **Nombre**, escriba **Mixed_Mode_Debugging** y seleccione **Aceptar**.
 
@@ -73,7 +73,7 @@ Si tiene Visual Studio instalado, pero no las cargas de trabajo que necesita, se
 
 1. En el **Explorador de soluciones**, seleccione **Archivos de código fuente** y luego **Proyecto** > **Agregar nuevo elemento**. O bien, haga clic con el botón derecho en **Archivos de código fuente** y seleccione **Agregar** > **Nuevo elemento**.
 
-1. En el cuadro de diálogo **Nuevo elemento**, seleccione **Archivo C++ (.cpp)**. En el campo **Nombre**, escriba **Mixed_Mode.cpp** y seleccione **Agregar**.
+1. En el cuadro de diálogo **Nuevo elemento**, seleccione **Archivo C++ (.cpp)** . En el campo **Nombre**, escriba **Mixed_Mode.cpp** y seleccione **Agregar**.
 
     Visual Studio agrega el nuevo archivo de C++ al **Explorador de soluciones**.
 
@@ -85,7 +85,7 @@ Si tiene Visual Studio instalado, pero no las cargas de trabajo que necesita, se
 
 1. En el **Explorador de soluciones**, seleccione **Archivos de encabezado** y luego **Proyecto** > **Agregar nuevo elemento**. O bien, haga clic con el botón derecho en **Archivos de encabezado** y seleccione **Agregar** > **Nuevo elemento**.
 
-1. En el cuadro de diálogo **Nuevo elemento**, seleccione **Archivo de encabezado (.h)**. En el campo **Nombre**, escriba **Mixed_Mode.h** y seleccione **Agregar**.
+1. En el cuadro de diálogo **Nuevo elemento**, seleccione **Archivo de encabezado (.h)** . En el campo **Nombre**, escriba **Mixed_Mode.h** y seleccione **Agregar**.
 
    Visual Studio agrega el nuevo archivo de encabezado al **Explorador de soluciones**.
 
@@ -106,7 +106,7 @@ Si tiene Visual Studio instalado, pero no las cargas de trabajo que necesita, se
 
 1. Seleccione **Archivo** > **Guardar todo** o presione **Ctrl**+**Mayús**+**S** para guardar los archivos.
 
-**Para configurar y compilar el proyecto DLL:**
+**Para configurar y compilar el proyecto de DLL:**
 
 1. En la barra de herramientas de Visual Studio, seleccione la opción **Depurar** y la plataforma **x86** o **x64**. Si la aplicación que realiza la llamada va a ser .NET Core, que siempre se ejecuta en modo de 64 bits, seleccione **x64** como plataforma.
 
@@ -119,7 +119,7 @@ Si tiene Visual Studio instalado, pero no las cargas de trabajo que necesita, se
 
 1. En **Propiedades de configuración**, en el panel izquierdo, seleccione **Enlazador** > **Avanzadas** y, en la lista desplegable situada junto a **Ningún punto de entrada**, seleccione **No**. Si ha tenido que cambiar a **No**, seleccione **Aplicar**.
 
-1. En **Propiedades de configuración**, seleccione **General** y, en la lista desplegable situada junto a **Tipo de configuración**, seleccione **Biblioteca dinámica (.dll)**. Seleccione **Aplicar** y luego **Aceptar**.
+1. En **Propiedades de configuración**, seleccione **General** y, en la lista desplegable situada junto a **Tipo de configuración**, seleccione **Biblioteca dinámica (.dll)** . Seleccione **Aplicar** y luego **Aceptar**.
 
    ![Cambio a una DLL nativa](../debugger/media/mixed-mode-set-as-native-dll.png)
 
@@ -137,7 +137,7 @@ Si tiene Visual Studio instalado, pero no las cargas de trabajo que necesita, se
     Luego, escriba un nombre como **Mixed_Mode_Calling_App** y haga clic en **Crear**.
     ::: moniker-end
     ::: moniker range="vs-2017"
-    En la barra de menús superior, seleccione **Archivo** > **Nuevo** > **Proyecto**. En el panel izquierdo del cuadro de diálogo **Nuevo proyecto**, en **Visual C#**, elija **Escritorio de Windows** y luego, en el panel central, **Aplicación de consola (.NET Framework)** o **Aplicación de consola (.NET Core)**.
+    En la barra de menús superior, seleccione **Archivo** > **Nuevo** > **Proyecto**. En el panel izquierdo del cuadro de diálogo **Nuevo proyecto**, en **Visual C#** , elija **Escritorio de Windows** y luego, en el panel central, **Aplicación de consola (.NET Framework)** o **Aplicación de consola (.NET Core)** .
 
     Luego, escriba un nombre como **Mixed_Mode_Calling_App** y haga clic en **Aceptar**.
     ::: moniker-end
@@ -255,7 +255,7 @@ En la mayoría de las versiones de Visual Studio a partir de Visual Studio 201
 
 1. Presione **F5** o seleccione la flecha verde para seguir depurando la aplicación.
 
-¡Enhorabuena! Ha completado el tutorial sobre la depuración en modo mixto.
+Felicidades. Ha completado el tutorial sobre la depuración en modo mixto.
 
 ## <a name="next-step"></a>Paso siguiente
 

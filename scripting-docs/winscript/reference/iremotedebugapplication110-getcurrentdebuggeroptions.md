@@ -1,5 +1,5 @@
 ---
-title: IRemoteDebugApplication110::GetCurrentDebuggerOptions | Microsoft Docs
+title: 'Iremotedebugapplication110 (:: GetCurrentDebuggerOptions | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -13,18 +13,18 @@ caps.latest.revision: 5
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 61504206913006b12d55ae8d8df8b08389875095
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: b6ae042a5d4d1c1ee350b328fdc5a9b7420d9928
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58157404"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72577432"
 ---
 # <a name="iremotedebugapplication110getcurrentdebuggeroptions"></a>IRemoteDebugApplication110::GetCurrentDebuggerOptions
 Devuelve el conjunto de opciones que están habilitadas actualmente.  
   
 > [!IMPORTANT]
->  [IRemoteDebugApplication (interfaz)](../../winscript/reference/iremotedebugapplication-interface.md) es implementada por PDM v11.0 y versiones posteriores. Se encuentra en activdbg100.h.  
+> La [interfaz iremotedebugapplication (](../../winscript/reference/iremotedebugapplication-interface.md) se implementa mediante PDM v 11.0 y versiones posteriores. Se encuentra en activdbg100.h.  
   
 ## <a name="syntax"></a>Sintaxis  
   
@@ -34,8 +34,8 @@ HRESULT GetCurrentDebuggerOptions([out] enum SCRIPT_DEBUGGER_OPTIONS* pCurrentOp
   
 #### <a name="parameters"></a>Parámetros  
  `pCurrentOptions`  
- [out] Las opciones actuales.  
+ enuncia Opciones actuales.  
   
 ## <a name="see-also"></a>Vea también  
- [IRemoteDebugApplication (interfaz)](../../winscript/reference/iremotedebugapplication-interface.md)   
+ @No__t_1 de la [interfaz iremotedebugapplication (](../../winscript/reference/iremotedebugapplication-interface.md)  
  [IRemoteDebugApplication110 (Interfaz)](../../winscript/reference/iremotedebugapplication110-interface.md)

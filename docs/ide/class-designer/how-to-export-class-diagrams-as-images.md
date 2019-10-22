@@ -1,5 +1,5 @@
 ---
-title: Filtrar Exportar los diagramas de clases como imágenes (Diseñador de clases)
+title: Procedimiento Exportar los diagramas de clases como imágenes (Diseñador de clases)
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -12,28 +12,28 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 06c0b46c1c9fbb8aef5a2e31e42a02fe6a0db494
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 3fb8f735478da16989830a1a68c239b9a2a98496
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55910539"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62975208"
 ---
-# <a name="how-to-export-class-diagrams-as-images"></a>Filtrar Exportar diagramas de clases como imágenes
+# <a name="how-to-export-class-diagrams-as-images"></a>Procedimiento Exportar diagramas de clases como imágenes
 
 Para exportar un diagrama de clase creado a partir de código del proyecto, guárdelo como una imagen. Si quiere exportar los diagramas de clase UML en su lugar, consulte [Exportar diagramas como imágenes](../../modeling/export-diagrams-as-images.md).
 
 ## <a name="export-a-diagram"></a>Exportar un diagrama
 
-1.  Abra el archivo de diagrama de clases (*.cd*).
+1. Abra el archivo de diagrama de clases (*.cd*).
 
-2.  En el menú **Diagrama de clase** o en el menú contextual de la superficie del diagrama, elija **Exportar diagrama como imagen**.
+2. En el menú **Diagrama de clase** o en el menú contextual de la superficie del diagrama, elija **Exportar diagrama como imagen**.
 
-3.  Seleccione un diagrama.
+3. Seleccione un diagrama.
 
-4.  Seleccione el formato que quiera.
+4. Seleccione el formato que quiera.
 
-5.  Elija **Exportar** para finalizar la exportación.
+5. Elija **Exportar** para finalizar la exportación.
 
 Para actualizar automáticamente las imágenes exportadas que están vinculadas a otros documentos, exporte de nuevo el diagrama en Visual Studio.
 

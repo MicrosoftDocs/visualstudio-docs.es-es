@@ -11,11 +11,11 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 794ab8baac441fc14d41c2d30b9db4b0894e88e8
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60052381"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68149081"
 ---
 # <a name="mstateflags-field"></a>m_stateFlags (Campo)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

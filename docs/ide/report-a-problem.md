@@ -9,12 +9,12 @@ ms.author: seiyer
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 23ed63846eb11fd8eba95219aecaae3210e161fd
-ms.sourcegitcommit: 1c8e07b98fc0a44b5ab90bcef77d9fac7b3eb452
+ms.openlocfilehash: 519c7f233866bf71bb342d4f740b3e0a90a4ba72
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/25/2019
-ms.locfileid: "56800536"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68925984"
 ---
 # <a name="overview-report-a-problem"></a>Información general: Notificar un problema
 
@@ -80,7 +80,7 @@ Después de notificar un problema, los estados indican en qué punto de su ciclo
 
 - - -
 
-![Estado Cerrado: no es un error de los informes de problemas en la Comunidad de desarrolladores](../ide/media/ProblemStates/ClosedNotaBug.jpg)
+![Estado Cerrado: no es un error de los informes de problemas en la Comunidad de desarrolladores](../ide/media/ProblemStates/ClosedNotABug.jpg)
 
 **Cerrado: no es un error** indica que hemos determinado que la característica notificada funciona conforme se espera.
 
@@ -110,7 +110,7 @@ Después de notificar un problema, los estados indican en qué punto de su ciclo
 
 Se recomienda usar la búsqueda para asegurarse de que aún no existen informes sobre el problema del que está a punto de informar. Si encuentra un elemento existente que coincide con su problema, vote ese vale de problema.
 
- Proporcione toda la información que pueda para ayudar a nuestros equipos a reproducir lo que está experimentando.  Esta información incluye los pasos de reproducción necesarios, fragmentos de código, capturas de pantalla, grabaciones de reproducción, archivos de registro y otros artefactos.  Aquí tiene [información sobre cómo notificar un problema en Visual Studio](./how-to-report-a-problem-with-visual-studio.md).
+Proporcione toda la información que pueda para ayudar a nuestros equipos a reproducir lo que está experimentando.  Esta información incluye los pasos de reproducción necesarios, fragmentos de código, capturas de pantalla, grabaciones de reproducción, archivos de registro y otros artefactos.  Aquí tiene [información sobre cómo notificar un problema en Visual Studio](./how-to-report-a-problem-with-visual-studio.md).
 
 ### <a name="how-is-my-feedback-prioritized"></a>¿Cómo se priorizan mis comentarios?
 

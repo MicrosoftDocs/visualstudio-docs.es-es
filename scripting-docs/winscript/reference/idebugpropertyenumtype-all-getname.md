@@ -1,5 +1,5 @@
 ---
-title: IDebugPropertyEnumType_All::GetName | Microsoft Docs
+title: 'IDebugPropertyEnumType_All:: GetName | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 1c4f416e7cf525d28ad544c361168f55b964f353
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: ad5d8d1d1b9e2e7ee632ed3fec40b89df5b4bc07
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58146648"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72577387"
 ---
-# <a name="idebugpropertyenumtypeallgetname"></a>IDebugPropertyEnumType_All::GetName
-Devuelve un valor BSTR que contiene el nombre de la `EnumType`.  
+# <a name="idebugpropertyenumtype_allgetname"></a>IDebugPropertyEnumType_All::GetName
+Devuelve un BSTR que contiene el nombre del `EnumType`.  
   
 ## <a name="syntax"></a>Sintaxis  
   
@@ -37,10 +37,10 @@ HRESULT GetName(
   
 #### <a name="parameters"></a>Parámetros  
  `pname`  
- [out] BSTR que contiene el nombre de la `EnumType`.  
+ enuncia BSTR que contiene el nombre del `EnumType`.  
   
 ## <a name="return-value"></a>Valor devuelto  
- Devuelve un válidas `HRESULT`, normalmente `S_OK`.  
+ Devuelve un `HRESULT` válido, normalmente `S_OK`.  
   
 ## <a name="see-also"></a>Vea también  
  [IDebugPropertyEnumType_All (Interfaz)](../../winscript/reference/idebugpropertyenumtype-all-interface.md)

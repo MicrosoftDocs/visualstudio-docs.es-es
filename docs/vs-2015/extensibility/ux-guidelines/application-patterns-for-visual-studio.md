@@ -9,11 +9,11 @@ caps.latest.revision: 8
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: cc14aadfafb16fcae571ab66e5811ea465cb55a9
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60041007"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68177215"
 ---
 # <a name="application-patterns-for-visual-studio"></a>Patrones de aplicación para Visual Studio
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -103,13 +103,13 @@ ms.locfileid: "60041007"
 
 #### <a name="common-tool-windows-and-their-functions"></a>Ventanas de herramientas comunes y sus funciones
 
-|Tipo|Ventana de herramientas|Función|
+|Type|Ventana de herramientas|Función|
 |----------|-----------------|--------------|
-|**Hierarchy**|Explorador de soluciones|Un árbol jerárquico que muestra una lista de los documentos contenidos en elementos de la solución, proyectos y archivos varios. La visualización de los elementos dentro de los proyectos se define mediante el paquete al que pertenece el tipo de proyecto (por ejemplo, los tipos de basada en referencias, basado en el directorio o en modo mixto).|
-|**Hierarchy**|Vista de clases|Un árbol jerárquico de las clases y los diversos elementos del conjunto de trabajo de documentos, independientemente de los propios archivos.|
-|**Hierarchy**|Explorador de servidores|Un árbol jerárquico que muestra todas las conexiones de datos y servidores de la solución.|
-|**Hierarchy**|Esquema del documento|La estructura jerárquica del documento activo.|
-|**Grid**|Propiedades|Una cuadrícula que muestra una lista de propiedades para el objeto seleccionado, junto con los selectores de valor pueden editar dichas propiedades.|
+|**Jerarquía**|Explorador de soluciones|Un árbol jerárquico que muestra una lista de los documentos contenidos en elementos de la solución, proyectos y archivos varios. La visualización de los elementos dentro de los proyectos se define mediante el paquete al que pertenece el tipo de proyecto (por ejemplo, los tipos de basada en referencias, basado en el directorio o en modo mixto).|
+|**Jerarquía**|Vista de clases|Un árbol jerárquico de las clases y los diversos elementos del conjunto de trabajo de documentos, independientemente de los propios archivos.|
+|**Jerarquía**|Explorador de servidores|Un árbol jerárquico que muestra todas las conexiones de datos y servidores de la solución.|
+|**Jerarquía**|Esquema del documento|La estructura jerárquica del documento activo.|
+|**Grid**|Properties (Propiedades)|Una cuadrícula que muestra una lista de propiedades para el objeto seleccionado, junto con los selectores de valor pueden editar dichas propiedades.|
 |**Grid**|Lista de tareas|Una cuadrícula que permite al usuario crear, editar o eliminar tareas y los comentarios.|
 |**Contenido**|Help|Una ventana que permite a los usuarios acceso a los distintos métodos de obtención de Ayuda de "¿cómo?" vídeos a los foros MSDN.|
 |**Contenido**|Ayuda dinámica|Una ventana de herramientas que muestra vínculos a temas que se aplica a la selección actual de ayuda.|
@@ -387,7 +387,7 @@ ms.locfileid: "60041007"
 
 |Nombre del botón|Método abreviado de teclado|
 |-----------------|-----------------------|
-|Aceptar|Entrar|
+|OK|Entrar|
 |Cancelar|Esc|
 |Help|F1|
 
@@ -481,7 +481,7 @@ ms.locfileid: "60041007"
 
   El usuario siempre debe ser capaz de determinar el efecto de una operación de arrastrar y colocar mediante la selección de un elemento, arrástrelo a la ubicación de destino y observando cuál de los siguientes punteros del mouse aparece antes de que se quita el elemento:
 
-|Puntero del mouse|Comando|Descripción|
+|Puntero del mouse|Get-Help|DESCRIPCIÓN|
 |-------------------|-------------|-----------------|
 |![Mueva el mouse el icono de "no colocar"](../../extensibility/ux-guidelines/media/0706-01-mousenodrop.png "0706 01_MouseNoDrop")|No colocar|No se puede quitar el elemento a la ubicación especificada.|
 |![Icono de mouse "Copiar"](../../extensibility/ux-guidelines/media/0706-02-mousecopy.png "0706 02_MouseCopy")|Copiar|Elemento se copiará en la ubicación de destino.|
@@ -493,57 +493,57 @@ ms.locfileid: "60041007"
 
 |||Elemento de origen: Referencia o vínculo|Elemento de origen: Elemento o el archivo del sistema físico (CF_HDROP)|
 |-|-|----------------------------------|-------------------------------------------------------------|
-|Ningún modificador|Acción|Mover|Link|
+|Ningún modificador|.|Mover|Link|
 |Ningún modificador|Destino|Agrega la referencia al elemento original|Agrega la referencia al elemento original|
-|Ningún modificador|Source|Referencia de eliminaciones al elemento original|Conserva el elemento original|
+|Ningún modificador|source|Referencia de eliminaciones al elemento original|Conserva el elemento original|
 |Ningún modificador|Resultado|**DROPEFFECT_MOVE** se devuelve como acción de **:: Drop** y elemento permanece en la ubicación original en el almacenamiento|**DROPEFFECT_LINK** se devuelve como acción de **:: Drop** y elemento permanece en la ubicación original en el almacenamiento|
-|Mayús + arrastrar|Acción|Mover|No colocar|
+|Mayús + arrastrar|.|Mover|No colocar|
 |Mayús + arrastrar|Destino|Agrega la referencia al elemento original|No colocar|
-|Mayús + arrastrar|Source|Referencia de eliminaciones al elemento original|No colocar|
+|Mayús + arrastrar|source|Referencia de eliminaciones al elemento original|No colocar|
 |Mayús + arrastrar|Resultado|**DROPEFFECT_MOVE** se devuelve como acción de **:: Drop** y elemento permanece en la ubicación original en el almacenamiento|No colocar|
-|CTRL + arrastrar|Acción|Copiar|No colocar|
+|CTRL + arrastrar|.|Copiar|No colocar|
 |CTRL + arrastrar|Destino|Agrega la referencia al elemento original|No colocar|
-|CTRL + arrastrar|Source|Conserva la referencia al elemento original|No colocar|
+|CTRL + arrastrar|source|Conserva la referencia al elemento original|No colocar|
 |CTRL + arrastrar|Resultado|**DROPEFFECT_COPY** se devuelve como acción de **:: Drop** y elemento permanece en la ubicación original en el almacenamiento|No colocar|
-|Ctrl + Mayús + arrastrar|Acción|Link|Link|
+|Ctrl + Mayús + arrastrar|.|Link|Link|
 |Ctrl + Mayús + arrastrar|Destino|Agrega la referencia al elemento original|Agrega la referencia al elemento original|
-|Ctrl + Mayús + arrastrar|Source|Conserva la referencia al elemento original|Conserva el elemento original|
+|Ctrl + Mayús + arrastrar|source|Conserva la referencia al elemento original|Conserva el elemento original|
 |Ctrl + Mayús + arrastrar|Resultado|**DROPEFFECT_LINK** se devuelve como acción de **:: Drop** y elemento permanece en la ubicación original en el almacenamiento|**DROPEFFECT_LINK** se devuelve como acción de **:: Drop** y elemento permanece en la ubicación original en el almacenamiento|
 |Ctrl + Mayús + arrastrar|Nota|Igual que el comportamiento de arrastrar y colocar para los accesos directos en el Explorador de Windows.||
-|Cortar y pegar|Acción|Mover|Link|
+|Cortar y pegar|.|Mover|Link|
 |Cortar y pegar|Destino|Agrega la referencia al elemento original|Agrega la referencia al elemento original|
-|Cortar y pegar|Source|Conserva la referencia al elemento original|Conserva el elemento original|
+|Cortar y pegar|source|Conserva la referencia al elemento original|Conserva el elemento original|
 |Cortar y pegar|Resultado|Elemento permanece en la ubicación original en el almacenamiento|Elemento permanece en la ubicación original en el almacenamiento|
-|Copiar y pegar|Acción|Copiar|Link|
-|Copiar y pegar|Source|Agrega la referencia al elemento original|Agrega la referencia al elemento original|
+|Copiar y pegar|.|Copiar|Link|
+|Copiar y pegar|source|Agrega la referencia al elemento original|Agrega la referencia al elemento original|
 |Copiar y pegar|Resultado|Conserva la referencia al elemento original|Conserva el elemento original|
-|Copiar y pegar|Acción|Elemento permanece en la ubicación original en el almacenamiento|Elemento permanece en la ubicación original en el almacenamiento|
+|Copiar y pegar|.|Elemento permanece en la ubicación original en el almacenamiento|Elemento permanece en la ubicación original en el almacenamiento|
 
 #### <a name="directory-based-projects"></a>Proyectos basados en el directorio
  En la tabla siguiente se resume las operaciones de arrastrar y colocar (así como cortar/copiar/pegar) que deben realizarse según la naturaleza de las claves de elemento y el modificador de origen presionado para proyectos de destino basado en el directorio:
 
 |||Elemento de origen: Referencia o vínculo|Elemento de origen: Elemento o el archivo del sistema físico (CF_HDROP)|
 |-|-|----------------------------------|-------------------------------------------------------------|
-|Ningún modificador|Acción|Mover|Mover|
+|Ningún modificador|.|Mover|Mover|
 |Ningún modificador|Destino|Elemento de copia a la ubicación de destino|Elemento de copia a la ubicación de destino|
-|Ningún modificador|Source|Referencia de eliminaciones al elemento original|Referencia de eliminaciones al elemento original|
+|Ningún modificador|source|Referencia de eliminaciones al elemento original|Referencia de eliminaciones al elemento original|
 |Ningún modificador|Resultado|**MOVER DROPEFFECT_** se devuelve como acción de **:: Drop** y elemento permanece en la ubicación original en el almacenamiento|**MOVER DROPEFFECT_** se devuelve como acción de **:: Drop** y elemento permanece en la ubicación original en el almacenamiento|
-|Mayús + arrastrar|Acción|Mover|Mover|
+|Mayús + arrastrar|.|Mover|Mover|
 |Mayús + arrastrar|Destino|Elemento de copia a la ubicación de destino|Elemento de copia a la ubicación de destino|
-|Mayús + arrastrar|Source|Referencia de eliminaciones al elemento original|Elimina el elemento de ubicación original|
+|Mayús + arrastrar|source|Referencia de eliminaciones al elemento original|Elimina el elemento de ubicación original|
 |Mayús + arrastrar|Resultado|**MOVER DROPEFFECT_** se devuelve como acción de **:: Drop** y elemento permanece en la ubicación original en el almacenamiento|**MOVER DROPEFFECT_** se devuelve como acción de **:: Drop** y elemento permanece en la ubicación original en el almacenamiento|
-|CTRL + arrastrar|Acción|Copiar|Copiar|
+|CTRL + arrastrar|.|Copiar|Copiar|
 |CTRL + arrastrar|Destino|Elemento de copia a la ubicación de destino|Elemento de copia a la ubicación de destino|
-|CTRL + arrastrar|Source|Conserva la referencia al elemento original|Conserva la referencia al elemento original|
+|CTRL + arrastrar|source|Conserva la referencia al elemento original|Conserva la referencia al elemento original|
 |CTRL + arrastrar|Resultado|**COPIA DROPEFFECT_** se devuelve como acción de **:: Drop** y elemento permanece en la ubicación original en el almacenamiento|**COPIA DROPEFFECT_** se devuelve como acción de **:: Drop** y elemento permanece en la ubicación original en el almacenamiento|
 |Ctrl + Mayús + arrastrar||No colocar|No colocar|
-|Cortar y pegar|Acción|Mover|Mover|
+|Cortar y pegar|.|Mover|Mover|
 |Cortar y pegar|Destino|Elemento de copia a la ubicación de destino|Elemento de copia a la ubicación de destino|
-|Cortar y pegar|Source|Referencia de eliminaciones al elemento original|Elimina el elemento de ubicación original|
+|Cortar y pegar|source|Referencia de eliminaciones al elemento original|Elimina el elemento de ubicación original|
 |Cortar y pegar|Resultado|Elemento permanece en la ubicación original en el almacenamiento|Elemento se elimina de la ubicación original en el almacenamiento|
-|Copiar y pegar|Acción|Copiar|Copiar|
+|Copiar y pegar|.|Copiar|Copiar|
 |Copiar y pegar|Destino|Agrega la referencia al elemento original|Elemento de copia a la ubicación de destino|
-|Copiar y pegar|Source|Conserva el elemento original|Conserva el elemento original|
+|Copiar y pegar|source|Conserva el elemento original|Conserva el elemento original|
 |Copiar y pegar|Resultado|Elemento permanece en la ubicación original en el almacenamiento|Elemento permanece en el almacenamiento de inicios de ubicación original|
 
 #### <a name="mixed-target-projects"></a>Proyectos destino mixto
@@ -551,29 +551,29 @@ ms.locfileid: "60041007"
 
 |||Elemento de origen: Referencia o vínculo|Elemento de origen: Elemento o el archivo del sistema físico (CF_HDROP)|
 |-|-|----------------------------------|-------------------------------------------------------------|
-|Ningún modificador|Acción|Mover|Mover|
+|Ningún modificador|.|Mover|Mover|
 |Ningún modificador|Destino|Agrega la referencia al elemento original|Elemento de copia a la ubicación de destino|
-|Ningún modificador|Source|Referencia de eliminaciones al elemento original|Referencia de eliminaciones al elemento original|
+|Ningún modificador|source|Referencia de eliminaciones al elemento original|Referencia de eliminaciones al elemento original|
 |Ningún modificador|Resultado|**MOVER DROPEFFECT_** se devuelve como acción de **:: Drop** y elemento permanece en la ubicación original en el almacenamiento|**MOVER DROPEFFECT_** se devuelve como acción de **:: Drop** y elemento se elimina de la ubicación original en el almacenamiento|
-|Mayús + arrastrar|Acción|Mover|Mover|
+|Mayús + arrastrar|.|Mover|Mover|
 |Mayús + arrastrar|Destino|Agrega la referencia al elemento original|Elemento de copia a la ubicación de destino|
-|Mayús + arrastrar|Source|Referencia de eliminaciones al elemento original|Elimina el elemento de ubicación original|
+|Mayús + arrastrar|source|Referencia de eliminaciones al elemento original|Elimina el elemento de ubicación original|
 |Mayús + arrastrar|Resultado|**MOVER DROPEFFECT_** se devuelve como acción de **:: Drop** y elemento permanece en la ubicación original en el almacenamiento|**MOVER DROPEFFECT_** se devuelve como acción de **:: Drop** y elemento se elimina de la ubicación original en el almacenamiento|
-|CTRL + arrastrar|Acción|Copiar|Copiar|
+|CTRL + arrastrar|.|Copiar|Copiar|
 |CTRL + arrastrar|Destino|Agrega la referencia al elemento original|Elemento de copia a la ubicación de destino|
-|CTRL + arrastrar|Source|Conserva la referencia al elemento original|Conserva el elemento original|
+|CTRL + arrastrar|source|Conserva la referencia al elemento original|Conserva el elemento original|
 |CTRL + arrastrar|Resultado|**COPIA DROPEFFECT_** se devuelve como acción de **:: Drop** y elemento permanece en la ubicación original en el almacenamiento|**COPIA DROPEFFECT_** se devuelve como acción de **:: Drop** y elemento permanece en la ubicación original en el almacenamiento|
-|Ctrl + Mayús + arrastrar|Acción|Link|Link|
+|Ctrl + Mayús + arrastrar|.|Link|Link|
 |Ctrl + Mayús + arrastrar|Destino|Agrega la referencia al elemento original|Agrega la referencia al elemento de origen original|
-|Ctrl + Mayús + arrastrar|Source|Conserva la referencia al elemento original|Conserva el elemento original|
+|Ctrl + Mayús + arrastrar|source|Conserva la referencia al elemento original|Conserva el elemento original|
 |Ctrl + Mayús + arrastrar|Resultado|**VÍNCULO DROPEFFECT_** se devuelve como acción de **:: Drop** y elemento permanece en la ubicación original en el almacenamiento|**VÍNCULO DROPEFFECT_** se devuelve como acción de **:: Drop** y elemento permanece en la ubicación original en el almacenamiento|
-|Cortar y pegar|Acción|Mover|Mover|
+|Cortar y pegar|.|Mover|Mover|
 |Cortar y pegar|Destino|Elemento de copia a la ubicación de destino|Elemento de copia a la ubicación de destino|
-|Cortar y pegar|Source|Referencia de eliminaciones al elemento original|Elimina el elemento de ubicación original|
+|Cortar y pegar|source|Referencia de eliminaciones al elemento original|Elimina el elemento de ubicación original|
 |Cortar y pegar|Resultado|Elemento permanece en la ubicación original en el almacenamiento|Elemento se elimina de la ubicación original en el almacenamiento|
-|Copiar y pegar|Acción|Copiar|Copiar|
+|Copiar y pegar|.|Copiar|Copiar|
 |Copiar y pegar|Destino|Agrega la referencia al elemento original|Elemento de copia a la ubicación de destino|
-|Copiar y pegar|Source|Conserva el elemento original|Conserva el elemento original|
+|Copiar y pegar|source|Conserva el elemento original|Conserva el elemento original|
 |Copiar y pegar|Resultado|Elemento permanece en la ubicación original en el almacenamiento|Elemento permanece en la ubicación original en el almacenamiento|
 
  Estos detalles deben tenerse en cuenta al implementar arrastrar en el **el Explorador de soluciones**:

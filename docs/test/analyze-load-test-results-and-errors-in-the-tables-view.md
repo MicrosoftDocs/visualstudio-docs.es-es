@@ -21,12 +21,12 @@ ms.assetid: 0a84bda3-6051-45eb-9c7f-d57419e1f97d
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 98e54e8e1bec7502e7401dc6a13a639e92c1a881
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 5ab2fe1f01aceb7b86d52f26d904a99f762f4329
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55941314"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68926481"
 ---
 # <a name="analyze-load-test-results-and-errors-in-the-tables-view-of-the-load-test-analyzer"></a>Analizar los errores y resultados de pruebas de carga en la vista Tablas del Analizador de pruebas de carga
 
@@ -50,7 +50,7 @@ Para ordenar la mayoría de las tablas, puede elegir el título de la columna se
 
 La tabla siguiente muestra las tablas que están disponibles para analizar ejecuciones de prueba de carga.
 
-|Nombre de la tabla|Descripción|
+|Nombre de la tabla|DESCRIPCIÓN|
 |-|-|
 |Errores|Muestra una lista de errores producidos durante la ejecución de la prueba de carga. Para obtener más información, vea la [tabla Errores](../test/analyze-load-test-results-and-errors-in-the-tables-view.md#the-errors-table) en este tema, así como [Analizar resultados de pruebas de carga](../test/analyze-load-test-results-using-the-load-test-analyzer.md).|
 |Páginas|Muestra una lista de páginas a las que se obtiene acceso durante la ejecución de una prueba de carga. Algunos datos de esta tabla sólo están disponibles después de que finalice una prueba de carga. Para obtener más información, vea [Cómo: Ver la respuesta de las páginas web](../test/how-to-view-web-page-response-time-in-a-load-test.md).|
@@ -64,15 +64,15 @@ La tabla siguiente muestra las tablas que están disponibles para analizar ejecu
 
 ## <a name="collect-percentile-data"></a>Recopilar datos de percentil
 
- Algunas tablas de prueba de carga pueden contener columnas adicionales, que incluyen datos de percentil y tiempos de respuesta divididos en grupos basados en una emulación de red. De forma predeterminada, estos datos no se recopilan. Los datos de percentiles solo están disponibles al guardar los resultados en una base de datos, no cuando se guardan de forma local. Para obtener más información, vea [Administrar resultados de pruebas de carga en el repositorio de resultados de pruebas de carga](../test/manage-load-test-results-in-the-load-test-results-repository.md). Además, para recopilar estos datos, en el **Editor de pruebas de carga**, en el nodo **Parámetros de ejecución**, seleccione el nodo del parámetro de ejecución específico que quiera cambiar. En la ventana **Propiedades**, para la propiedad **Almacenamiento de detalles de tiempo**, seleccione **StatisticsOnly** o **AllIndividualDetails**. Para obtener más información, vea [Cómo: Ver la respuesta de las páginas web](../test/how-to-view-web-page-response-time-in-a-load-test.md).
+Algunas tablas de prueba de carga pueden contener columnas adicionales, que incluyen datos de percentil y tiempos de respuesta divididos en grupos basados en una emulación de red. De forma predeterminada, estos datos no se recopilan. Los datos de percentiles solo están disponibles al guardar los resultados en una base de datos, no cuando se guardan de forma local. Para obtener más información, vea [Administrar resultados de pruebas de carga en el repositorio de resultados de pruebas de carga](../test/manage-load-test-results-in-the-load-test-results-repository.md). Además, para recopilar estos datos, en el **Editor de pruebas de carga**, en el nodo **Parámetros de ejecución**, seleccione el nodo del parámetro de ejecución específico que quiera cambiar. En la ventana **Propiedades**, para la propiedad **Almacenamiento de detalles de tiempo**, seleccione **StatisticsOnly** o **AllIndividualDetails**. Para obtener más información, vea [Cómo: Ver la respuesta de las páginas web](../test/how-to-view-web-page-response-time-in-a-load-test.md).
 
 ## <a name="the-requests-table"></a>La tabla Solicitudes
 
- La tabla **Solicitudes** muestra los detalles para las solicitudes individuales emitidas durante una prueba de carga. Esto incluye todas las solicitudes HTTP y solicitudes dependientes tales como imágenes. La tabla muestra las solicitudes por prueba y escenario, porque una solicitud puede estar incluida en muchas pruebas y escenarios.
+La tabla **Solicitudes** muestra los detalles para las solicitudes individuales emitidas durante una prueba de carga. Esto incluye todas las solicitudes HTTP y solicitudes dependientes tales como imágenes. La tabla muestra las solicitudes por prueba y escenario, porque una solicitud puede estar incluida en muchas pruebas y escenarios.
 
- La tabla siguiente muestra las columnas de la tabla **Solicitudes**:
+La tabla siguiente muestra las columnas de la tabla **Solicitudes**:
 
-|Columna|Descripción|Visible de forma predeterminada|
+|Columna|DESCRIPCIÓN|Visible de forma predeterminada|
 |-|-|-|
 |**Solicitud**|Dirección URL de la solicitud. Por ejemplo, *home.html* u *orange-arrow.gif*.|Sí|
 |**Escenario**|El nombre del escenario.|Sí|
@@ -90,11 +90,11 @@ La tabla siguiente muestra las tablas que están disponibles para analizar ejecu
 
 ## <a name="the-tests-table"></a>La tabla Pruebas
 
- La tabla **Pruebas** muestra los detalles para las pruebas individuales ejecutadas durante una prueba de carga. La tabla muestra las pruebas por prueba y escenario, porque una prueba puede estar incluida en muchos escenarios.
+La tabla **Pruebas** muestra los detalles para las pruebas individuales ejecutadas durante una prueba de carga. La tabla muestra las pruebas por prueba y escenario, porque una prueba puede estar incluida en muchos escenarios.
 
- La tabla siguiente muestra las columnas de la tabla **Pruebas**.
+La tabla siguiente muestra las columnas de la tabla **Pruebas**.
 
-|Columna|Descripción|Visible de forma predeterminada|
+|Columna|DESCRIPCIÓN|Visible de forma predeterminada|
 |-|-|-|
 |**Prueba**|Nombre de la prueba.|Sí|
 |**Escenario**|El nombre del escenario.|Sí|
@@ -111,14 +111,14 @@ La tabla siguiente muestra las tablas que están disponibles para analizar ejecu
 
 ## <a name="the-transactions-table"></a>La tabla Transacciones
 
- La tabla **Transacciones** muestra una lista de las transacciones producidas durante la ejecución de una prueba de carga. Las transacciones hacen referencia a cualquier transacción definida en una prueba de rendimiento web o a los temporizadores definidos en una prueba unitaria. La transacción no hace referencia a las transacciones de la base de datos.
+La tabla **Transacciones** muestra una lista de las transacciones producidas durante la ejecución de una prueba de carga. Las transacciones hacen referencia a cualquier transacción definida en una prueba de rendimiento web o a los temporizadores definidos en una prueba unitaria. La transacción no hace referencia a las transacciones de la base de datos.
 
- La tabla siguiente muestra las columnas de la tabla **Transacciones**.
+La tabla siguiente muestra las columnas de la tabla **Transacciones**.
 
 > [!NOTE]
 > Para ver todas las columnas, debe habilitar la propiedad Almacenamiento de detalles de tiempo con los parámetros de ejecución activos. Para obtener más información, vea [Cómo: Especificar la propiedad Almacenamiento de detalles de tiempo](../test/how-to-specify-the-timing-details-storage-property-for-a-load-test.md).
 
-|Columna|Descripción|Visible sin detalles de tiempo|
+|Columna|DESCRIPCIÓN|Visible sin detalles de tiempo|
 |-|-|-|
 |**Transacción**|Nombre de la transacción.|Sí|
 |**Escenario**|El nombre del escenario.|Sí|
@@ -138,20 +138,20 @@ La tabla siguiente muestra las tablas que están disponibles para analizar ejecu
 
 ## <a name="the-errors-table"></a>La tabla Errores
 
- Al ejecutar una prueba de carga, puede analizar los errores que se producen. Analizar los errores y ajustar las pruebas son una parte importante del proceso de las pruebas de carga. Si se producen errores, aparece un hipervínculo de **errores** en la barra de estado de la prueba de carga y especifica el número de errores que se produjeron. Para mostrar la tabla de errores, elija el hipervínculo.
+Al ejecutar una prueba de carga, puede analizar los errores que se producen. Analizar los errores y ajustar las pruebas son una parte importante del proceso de las pruebas de carga. Si se producen errores, aparece un hipervínculo de **errores** en la barra de estado de la prueba de carga y especifica el número de errores que se produjeron. Para mostrar la tabla de errores, elija el hipervínculo.
 
- La tabla de errores agrupa los errores que se produjeron durante una prueba de carga por tipo y subtipo de error. También existe una línea **total** en la tabla que especifica el recuento total de todos los errores que se produjeron.
+La tabla de errores agrupa los errores que se produjeron durante una prueba de carga por tipo y subtipo de error. También existe una línea **total** en la tabla que especifica el recuento total de todos los errores que se produjeron.
 
- La tabla de errores contiene las columnas siguientes:
+La tabla de errores contiene las columnas siguientes:
 
-|Columna|Descripción|Visible de forma predeterminada|
+|Columna|DESCRIPCIÓN|Visible de forma predeterminada|
 |-|-|-|
 |Tipo|Tipo del error. Por ejemplo, HttpError.|Sí|
 |Subtipo|Subtipo del error. Por ejemplo, LoadTestException.|Sí|
 |Recuento|Número de errores de este tipo que se produjeron durante la prueba de carga. Las entradas de esta columna aparecen como hipervínculos. Puede elegir cualquier hipervínculo para ver una lista de errores individuales.|Sí|
 |Último mensaje|Mensaje que describe el error. Por ejemplo, 404 - NotFound.|Sí|
 
- Para obtener más información, vea [Trabajar con tablas de pruebas de carga](../test/analyze-load-test-results-and-errors-in-the-tables-view.md).
+Para obtener más información, vea [Trabajar con tablas de pruebas de carga](../test/analyze-load-test-results-and-errors-in-the-tables-view.md).
 
 ### <a name="drill-down-to-the-error-list"></a>Explorar en profundidad la lista de errores
 
@@ -162,7 +162,7 @@ La tabla de errores agrupa los errores por tipo y subtipo de error. Para ver una
 
 La tabla **Errores de prueba de carga** contiene las columnas siguientes:
 
-|Columna|Descripción|
+|Columna|DESCRIPCIÓN|
 |-|-|
 |**Tiempo**|Hora durante la prueba de carga en la que se produjo el error.|
 |**Agent**|Nombre del equipo agente en el que se produjo el error. Esto es importante al ejecutar pruebas de carga usando controladores de pruebas y agentes de prueba. Para obtener más información, vea [Instalar y configurar agentes de prueba](../test/lab-management/install-configure-test-agents.md).|

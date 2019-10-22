@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - profile settings, creating categories
 ms.assetid: 97c88693-05ff-499e-8c43-352ee073dcb7
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2c757f2ee7dc69e53f492d4dfa37c2ca95b4af70
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 02ef202436e12ae075c41f507577bacaa968c60b
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60100592"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66341593"
 ---
 # <a name="create-a-settings-category"></a>Crear una categoría de configuración
 
@@ -46,7 +46,7 @@ Para iniciar este tutorial, primero debe completar la primera sección del [crea
      Esto crea los recursos de ese nombre de la categoría "My Category", el objeto "My Settings" y la descripción de la categoría "OptionInteger y OptionFloat".
 
     > [!NOTE]
-    >  De estos tres, solo el nombre de categoría no aparece en el **importar y exportar configuraciones** asistente.
+    > De estos tres, solo el nombre de categoría no aparece en el **importar y exportar configuraciones** asistente.
 
 3. En *MyToolsOptionsPackage.cs*, agregue un `float` propiedad denominada `OptionFloat` a la `OptionPageGrid` clase, como se muestra en el ejemplo siguiente.
 
@@ -76,7 +76,7 @@ Para iniciar este tutorial, primero debe completar la primera sección del [crea
     ```
 
     > [!NOTE]
-    >  El `OptionPageGrid` categoría denominada "My Category" ahora consta de las dos propiedades, `OptionInteger` y `OptionFloat`.
+    > El `OptionPageGrid` categoría denominada "My Category" ahora consta de las dos propiedades, `OptionInteger` y `OptionFloat`.
 
 4. Agregar un <xref:Microsoft.VisualStudio.Shell.ProvideProfileAttribute> a la `MyToolsOptionsPackage` clase y asígnele el nombre de categoría "My Category", asígnele el ObjectName "My Settings" y isToolsOptionPage se establece en true. Establecer categoryResourceID, objectNameResourceID y DescriptionResourceID al recurso de cadena correspondiente que identificadores creados anteriormente.
 

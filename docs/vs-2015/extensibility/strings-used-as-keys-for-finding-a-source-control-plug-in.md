@@ -11,11 +11,11 @@ caps.latest.revision: 16
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 83ba843e318aac6a74d318978e42e2f81802d8ac
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58998969"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68160579"
 ---
 # <a name="strings-used-as-keys-for-finding-a-source-control-plug-in"></a>Cadenas usadas como claves para buscar un complemento de control de código fuente
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,7 +28,7 @@ Las siguientes cadenas son las claves de acceso al registro para obtener informa
   
 ## <a name="string-keys-and-values"></a>Claves de cadena y valores  
   
-|Key|Valor|  
+|Clave|Valor|  
 |---------|-----------|  
 |`STR_SCC_PROVIDER_REG_LOCATION`|Software\SourceCodeControlProvider|  
 |`STR_PROVIDERREGKEY`|ProviderRegKey|  
@@ -39,7 +39,7 @@ Las siguientes cadenas son las claves de acceso al registro para obtener informa
 |`SCC_PROJECTNAME_KEY`|SCC_Project_Name|  
 |`SCC_PROJECTAUX_KEY`|SCC_Aux_Path|  
 |`SCC_STATUS_FILE`|MSSCCPRJ.SCC|  
-|`SCC_KEY`|SCC|  
+|`SCC_KEY`|CONTROL DE CÓDIGO FUENTE|  
 |`SCC_FILE_SIGNATURE`|Un archivo de control de código fuente|  
 |`SCC_NSE`|Extensión de Namespace|  
 |`SCC_NSE_PREFIX`|Prefijo de protocolo|  

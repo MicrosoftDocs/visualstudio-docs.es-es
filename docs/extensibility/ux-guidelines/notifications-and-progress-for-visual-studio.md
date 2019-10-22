@@ -3,17 +3,17 @@ title: Notificaciones y progreso para Visual Studio | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: f0ef65e9-0f1f-45f4-9f25-6e2398691168
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: dc5ddb4561c2c353271babe590a9e5b2b3c2e510
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: c5ca3f02c37a76e31ad76f6875110487dffefd49
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60044295"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66310886"
 ---
 # <a name="notifications-and-progress-for-visual-studio"></a>Notificaciones y progreso para Visual Studio
 ## <a name="BKMK_NotificationSystems"></a> Sistemas de notificación
@@ -417,7 +417,7 @@ private bool TryCreateInfoBarUI(IVsInfoBar infoBar, out IVsInfoBarUIElement uiEl
 - Dentro de una pestaña de documento
 
 > [!IMPORTANT]
->  Es posible colocar una barra de información para proporcionar un mensaje sobre el contexto global. Debería aparecer entre las barras de herramientas y el cuadro de documento. No se recomienda porque provoca problemas con "saltar y tirón" del IDE y se deben evitar a menos que sea absolutamente necesario y apropiado.
+> Es posible colocar una barra de información para proporcionar un mensaje sobre el contexto global. Debería aparecer entre las barras de herramientas y el cuadro de documento. No se recomienda porque provoca problemas con "saltar y tirón" del IDE y se deben evitar a menos que sea absolutamente necesario y apropiado.
 
 #### <a name="placing-an-infobar-in-a-toolwindowpane"></a>Colocar una barra de información en un ToolWindowPane
  El método ToolWindowPane.AddInfoBar(IVsInfoBar) puede usarse para agregar una barra de información a una ventana de herramientas. Esta API puede agregar un IVsInfoBar (de qué InfoBarModel es una implementación predeterminada), o un IVsUIElement.

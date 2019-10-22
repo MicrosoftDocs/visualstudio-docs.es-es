@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 12024a3a024f2c9433e144790c0a513d4e33df12
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.openlocfilehash: c7b32ab5b1965ea7a641cfac470addd2aae0ede0
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56643748"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "64791764"
 ---
 # <a name="idiasymbolgettypeids"></a>IDiaSymbol::get_typeIds
 Recupera una matriz de valores de identificador de tipo específico del compilador para este símbolo.
@@ -49,7 +49,7 @@ HRESULT get_typeIds ( 
  Si es correcto, devuelve `S_OK`; en caso contrario, devuelve `S_FALSE` o un código de error.
 
 > [!NOTE]
->  Un valor devuelto de `S_FALSE` significa que la propiedad no está disponible para el símbolo.
+> Un valor devuelto de `S_FALSE` significa que la propiedad no está disponible para el símbolo.
 
 ## <a name="see-also"></a>Vea también
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

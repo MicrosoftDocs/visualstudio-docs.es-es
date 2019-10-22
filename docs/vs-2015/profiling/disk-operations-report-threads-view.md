@@ -14,11 +14,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: daace3e78cca67fd9b44144cd6c8a5608dbd9a1e
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60111199"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68202439"
 ---
 # <a name="disk-operations-report-threads-view"></a>Informe de operaciones de disco (Vista de subprocesos)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,5 +45,5 @@ En el informe de operaciones de disco se muestran las operaciones de E/S de disc
   
 - La latencia de escritura, en milisegundos  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Otras referencias  
  [Vista de subprocesos](../profiling/threads-view-parallel-performance.md)

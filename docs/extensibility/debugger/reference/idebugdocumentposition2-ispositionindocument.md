@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugDocumentPosition2::IsPositionInDocument
 ms.assetid: d5cf57cb-b93b-4e1d-bec9-185f4fe8668d
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e5701df9085de7a63e7f09ea37c28244897122b7
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: ab4792427a98f97fcd50d4b39c2bb332527a0942
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56678923"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66333407"
 ---
 # <a name="idebugdocumentposition2ispositionindocument"></a>IDebugDocumentPosition2::IsPositionInDocument
 Determina si la posición del documento se encuentra en el documento especificado.
@@ -36,10 +39,9 @@ int IsPositionInDocument( 
 );
 ```
 
-#### <a name="parameters"></a>Parámetros
- `pDoc`
-
- [in] El [IDebugDocument2](../../../extensibility/debugger/reference/idebugdocument2.md) objeto que representa el candidato de documento que contiene.
+## <a name="parameters"></a>Parámetros
+`pDoc`\
+[in] El [IDebugDocument2](../../../extensibility/debugger/reference/idebugdocument2.md) objeto que representa el candidato de documento que contiene.
 
 ## <a name="return-value"></a>Valor devuelto
  Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.

@@ -7,24 +7,24 @@ helpviewer_keywords:
 ms.assetid: f1429463-136e-41ed-8a75-a8dbf0b4fd89
 author: mikeblome
 ms.author: mblome
-manager: wpickett
+manager: markl
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 0b725d0ee49590062ebdde9a1ef27f838678ccf5
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: fc6c7c1dbc5009129e9e793f3b8eea1f7927b2bb
+ms.sourcegitcommit: 535ef05b1e553f0fc66082cd2e0998817eb2a56a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59652116"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "72018453"
 ---
 # <a name="c-core-guidelines-checker-reference"></a>Referencia de C++ Core Guidelines Comprobador
 
-Esta sección enumeran las advertencias del Comprobador de C++ Core Guidelines. Para obtener información sobre el análisis de código, vea [/ analyze (análisis de código)](/cpp/build/reference/analyze-code-analysis) y [inicio rápido: Análisis de código para C/C ++](../code-quality/quick-start-code-analysis-for-c-cpp.md).
+Esta sección enumeran las advertencias del Comprobador de C++ Core Guidelines. Para obtener información sobre el análisis de código, vea [/Analyze (análisis de código)](/cpp/build/reference/analyze-code-analysis) y [Quick Start: Análisis de código para CC++/](../code-quality/quick-start-code-analysis-for-c-cpp.md).
 
 > [!NOTE]
 > Algunas advertencias que pertenecen a más de un grupo, y no todas las advertencias tienen un tema de referencia completa.
 
-## <a name="ownerpointer-group"></a>Grupo OWNER_POINTER
+## <a name="owner_pointer-group"></a>Grupo OWNER_POINTER
 
 [C26402 DONT_HEAP_ALLOCATE_MOVABLE_RESULT](C26402.md) devuelve un objeto de ámbito en lugar de uno asignado por montón si tiene un constructor de movimiento. Consulte [C++ Core Guidelines R.3](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#Rr-ptr).
 
@@ -44,7 +44,7 @@ Esta sección enumeran las advertencias del Comprobador de C++ Core Guidelines. 
 
 [C26431 DONT_TEST_NOTNULL](C26431.md) el tipo de expresión '% expr %' ya es gsl:: Not_Null. No se debe probar valores NULL. Consulte [C++ Core Guidelines F.23](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#f23-use-a-not_nullt-to-indicate-that-null-is-not-a-valid-value).
 
-## <a name="rawpointer-group"></a>Grupo RAW_POINTER
+## <a name="raw_pointer-group"></a>Grupo RAW_POINTER
 
 [C26400 NO_RAW_POINTER_ASSIGNMENT](c26400.md) no asigna el resultado de una llamada de función o una asignación con un propietario\<T > devuelve el valor a un puntero sin formato, use propietario\<T > en su lugar. Consulte [C++ Core Guidelines I.11](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#Ri-raw).
 
@@ -65,9 +65,9 @@ Esta sección enumeran las advertencias del Comprobador de C++ Core Guidelines. 
 [C26481 NO_POINTER_ARITHMETIC](C26481.md) no usar aritmética de puntero. Use el intervalo en su lugar. Consulte [C++ Core Guidelines Bounds.1](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#SS-bounds).
 
 [C26485 NO_ARRAY_TO_POINTER_DECAY](C26485.md).
-Expresión "% expr %": Ninguna matriz de decadencia de puntero. Consulte [C++ Core Guidelines Bounds.3](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#SS-bounds).
+Expresión '% expr% ': No hay ninguna matriz para decadencia del puntero. Consulte [C++ Core Guidelines Bounds.3](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#SS-bounds).
 
-## <a name="uniquepointer-group"></a>Grupo UNIQUE_POINTER
+## <a name="unique_pointer-group"></a>Grupo UNIQUE_POINTER
 
 [C26410 NO_REF_TO_CONST_UNIQUE_PTR](C26410.md) el parámetro "% parámetro %" es una referencia a `const` puntero único, use const T * o const T & en su lugar. Consulte [C++ Core Guidelines R.32](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#Rr-uniqueptrparam).
 
@@ -77,7 +77,7 @@ Expresión "% expr %": Ninguna matriz de decadencia de puntero. Consulte [C++ Co
 
 [C26415 SMART_PTR_NOT_NEEDED](C26415.md) parámetro de puntero inteligente '% símbolo %' solo se utiliza para tener acceso a contenidos puntero. Use T * o T & en su lugar. Consulte [C++ Core Guidelines R.30](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#Rr-smartptrparam).
 
-## <a name="sharedpointer-group"></a>Grupo SHARED_POINTER
+## <a name="shared_pointer-group"></a>Grupo SHARED_POINTER
 
 [C26414 RESET_LOCAL_SMART_PTR](C26414.md) mover, copiar, reasignar o restablecer un puntero inteligente local '% símbolo %'. Consulte [C++ Core Guidelines R.5](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#Rr-scoped).
 
@@ -95,21 +95,21 @@ Expresión "% expr %": Ninguna matriz de decadencia de puntero. Consulte [C++ Co
 
 [C26427 NO_GLOBAL_INIT_EXTERNS](C26427.md) inicializador Global accede a un objeto externo '% símbolo %'. Consulte [C++ Core Guidelines I.22](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#i22-avoid-complex-initialization-of-global-objects).
 
-[C26444 NO_UNNAMED_RAII_OBJECTS](c26444.md) evite sin nombre objetos con personalizado construcción y destrucción. Consulte [ES.84: No (intente) declara una variable local sin nombre](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md).
+[C26444 NO_UNNAMED_RAII_OBJECTS](c26444.md) evite sin nombre objetos con personalizado construcción y destrucción. Consulte [ES. 84: No (intente) declarar una variable local sin nombre @ no__t-0.
 
 ## <a name="class-group"></a>CLASE de grupo
 
 [C26432 DEFINE_OR_DELETE_SPECIAL_OPS](C26432.md) si se define o elimina cualquier operación predeterminada en el tipo '% símbolo %', definir o eliminar todos ellos. Consulte [C++ Core Guidelines C.21](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#c21-if-you-define-or-delete-any-default-operation-define-or-delete-them-all).
 
-[C26433 OVERRIDE_EXPLICITLY](c26433.md) función "% símbolo %" se debe marcar con "override". Consulte [C.128: Funciones virtuales deben especificar exactamente uno de virtual, invalidación, o final](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#c128-virtual-functions-should-specify-exactly-one-of-virtual-override-or-final).
+[C26433 OVERRIDE_EXPLICITLY](c26433.md) función "% símbolo %" se debe marcar con "override". Consulte [C. 128: Las funciones virtuales deben especificar exactamente un valor de virtual, override o final @ no__t-0.
 
 [C26434 DONT_HIDE_METHODS](C26434.md) función '% symbol_1% ' oculta una función no virtual '% symbol_2% '. Consulte [C++ Core Guidelines C.128](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#c128-virtual-functions-should-specify-exactly-one-of-virtual-override-or-final).
 
-[C26435 SINGLE_VIRTUAL_SPECIFICATION](c26435.md) función '% símbolo %' debe especificar exactamente uno de 'virtual', 'override' o 'final'. Consulte [C.128: Funciones virtuales deben especificar exactamente uno de virtual, invalidación, o final](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md).
+[C26435 SINGLE_VIRTUAL_SPECIFICATION](c26435.md) función '% símbolo %' debe especificar exactamente uno de 'virtual', 'override' o 'final'. Consulte [C. 128: Las funciones virtuales deben especificar exactamente un valor de virtual, override o final @ no__t-0.
 
 [C26436 NEED_VIRTUAL_DTOR](C26436.md) el tipo '% símbolo %' con una función virtual necesita cualquier destructor no virtual público virtual o protegido. Consulte [C++ Core Guidelines C.35](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#c35-a-base-class-destructor-should-be-either-public-and-virtual-or-protected-and-nonvirtual).
 
-[C26443 NO_EXPLICIT_DTOR_OVERRIDE](c26443.md) no debe utilizar el destructor de invalidación explícita 'override' o 'virtuales' especificadores. Consulte [C.128: Funciones virtuales deben especificar exactamente uno de virtual, invalidación, o final](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md).
+[C26443 NO_EXPLICIT_DTOR_OVERRIDE](c26443.md) no debe utilizar el destructor de invalidación explícita 'override' o 'virtuales' especificadores. Consulte [C. 128: Las funciones virtuales deben especificar exactamente un valor de virtual, override o final @ no__t-0.
 
 ## <a name="type-group"></a>TIPO de grupo
 
@@ -126,7 +126,7 @@ Expresión "% expr %": Ninguna matriz de decadencia de puntero. Consulte [C++ Co
 [C26440 DECLARE_NOEXCEPT](C26440.md) se puede declarar la función '% símbolo %' `noexcept`. Consulte [C++ Core Guidelines F.6](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#f6-if-your-function-may-not-throw-declare-it-noexcept).
 
 [C26447 DONT_THROW_IN_NOEXCEPT](c26447.md) se declara la función **noexcept** pero llama a una función que puede generar excepciones.
-Consulte [directrices principales de C++:  F.6: Si la función no puede iniciar, declarar noexcept](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#f6-if-your-function-may-not-throw-declare-it-noexcept).
+Consulte las directrices delC++ núcleo [:  F. 6: Si es posible que la función no se inicie, declárela noexception, excepto @ no__t-0.
 
 ## <a name="concurrency-group"></a>Grupo de SIMULTANEIDAD
 
@@ -136,7 +136,7 @@ Consulte [directrices principales de C++:  F.6: Si la función no puede iniciar,
 
 [C26460 USE_CONST_REFERENCE_ARGUMENTS](c26460.md) el argumento de referencia '% argumento %' para la función "% función %" se puede marcar como `const`. Consulte [C++ Core Guidelines con.3](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#Rconst-ref).
 
-[C26461 USE_CONST_POINTER_ARGUMENTS](c26461.md): El argumento de puntero '% argumento %' para la función '% función %' puede marcarse como puntero a `const`. Consulte [C++ Core Guidelines con.3](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#Rconst-ref).
+[C26461 USE_CONST_POINTER_ARGUMENTS](c26461.md): El argumento de puntero '% argument% ' de la función '% function% ' se puede marcar como puntero a `const`. Consulte [C++ Core Guidelines con.3](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#Rconst-ref).
 
 [C26462 USE_CONST_POINTER_FOR_VARIABLE](c26462.md) el valor señalado por "% variable %" se asigna solo una vez, debe marcarse como puntero a `const`. Consulte [C++ Core Guidelines con.4](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#con4-use-const-to-define-objects-with-values-that-do-not-change-after-construction).
 
@@ -180,7 +180,7 @@ Consulte [directrices principales de C++:  F.6: Si la función no puede iniciar,
 
 ## <a name="bounds-group"></a>Grupo de límites
 
-[C26446 USE_GSL_AT](c26446.md) prefieren usar `gsl::at()` en lugar del operador de subíndice unchecked. Consulte [directrices principales de C++:  Bounds.4: No use la biblioteca estándar de funciones y tipos que no son límites](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#probounds-bounds-safety-profile).
+[C26446 USE_GSL_AT](c26446.md) prefieren usar `gsl::at()` en lugar del operador de subíndice unchecked. Consulte las directrices delC++ núcleo [:  Bounds. 4: No use funciones y tipos de la biblioteca estándar que no sean límites: checked @ no__t-0.
 
 [C26481 NO_POINTER_ARITHMETIC](C26481.md).
 No usar aritmética de puntero. Use el intervalo en su lugar. Consulte [Bounds.1 de C++ Core Guidelines](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#SS-bounds)
@@ -189,19 +189,19 @@ No usar aritmética de puntero. Use el intervalo en su lugar. Consulte [Bounds.1
 
 [C26483 STATIC_INDEX_OUT_OF_RANGE](c26483.md) valor % value % está fuera de los límites (0, % dependiente %) de la variable "% variable %". Solo el índice de las matrices usa expresiones constantes en los límites de la matriz. Consulte [Bounds.2 de C++ Core Guidelines](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#SS-bounds)
 
-[C26485 NO_ARRAY_TO_POINTER_DECAY](C26485.md) expresión "% expr %": Ninguna matriz de decadencia de puntero. Consulte [Bounds.3 de C++ Core Guidelines](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#SS-bounds)
+[C26485 NO_ARRAY_TO_POINTER_DECAY](C26485.md) Expresión '% expr% ': No hay ninguna matriz para decadencia del puntero. Consulte [Bounds.3 de C++ Core Guidelines](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#SS-bounds)
 
 ## <a name="gsl-group"></a>Grupo de GSL
 
 [C26445 NO_SPAN_REF](c26445.md) una referencia a `gsl::span` o `std::string_view` puede ser un indicio de un problema de duración.
-Consulte [C++ Core Guidelines GSL.view: Vistas](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#gslview-views)
+Consulte [C++ Core Guidelines GSL. View: Vistas @ no__t-0
 
-[C26446 USE_GSL_AT](c26446.md) prefieren usar `gsl::at()` en lugar del operador de subíndice unchecked. Consulte [directrices principales de C++:  Bounds.4: No use la biblioteca estándar de funciones y tipos que no son límites](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#probounds-bounds-safety-profile).
+[C26446 USE_GSL_AT](c26446.md) prefieren usar `gsl::at()` en lugar del operador de subíndice unchecked. Consulte las directrices delC++ núcleo [:  Bounds. 4: No use funciones y tipos de la biblioteca estándar que no sean límites: checked @ no__t-0.
 
-[C26448 USE_GSL_FINALLY](c26448.md) considere el uso `gsl::finally` si está destinada la acción final. Consulte [directrices principales de C++:  GSL.util: Utilidades](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#SS-utilities).
+[C26448 USE_GSL_FINALLY](c26448.md) Considere la posibilidad de usar `gsl::finally` si la acción final está prevista. Consulte las directrices delC++ núcleo [:  GSL. util: Utilities @ no__t-0.
 
 [C26449 NO_SPAN_FROM_TEMPORARY](c26449.md) 
- `gsl::span` o `std::string_view` creado a partir de un archivo temporal se consideran no válidos cuando se invalida temporal. Consulte [directrices principales de C++: GSL.view: Vistas](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#gslview-views).
+ `gsl::span` o `std::string_view` creado a partir de un archivo temporal se consideran no válidos cuando se invalida temporal. Consulte las directrices delC++ núcleo [: GSL. View: Vistas @ no__t-0.
 
 ## <a name="deprecated-warnings"></a>Advertencias en desuso
 

@@ -6,17 +6,20 @@ helpviewer_keywords:
 - GetAttributedClassesForLanguage
 - IDebugComPlusSymbolProvider::GetAttributedClassesForLanguage
 ms.assetid: e5b1b8b6-52a6-4ade-9a36-644abfa9f4b2
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 10d25cb9e58ac3eb38282a3ef2a2f631b6ba0e66
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 4baf00c91d424282e80740bfa097957aa074997d
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56706241"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66336888"
 ---
 # <a name="idebugcomplussymbolprovidergetattributedclassesforlanguage"></a>IDebugComPlusSymbolProvider::GetAttributedClassesForLanguage
 Recupera las clases con el atributo especificado que se implementan en el lenguaje de programación especificado.
@@ -39,18 +42,15 @@ int GetAttributedClassesForLanguage (
 );
 ```
 
-#### <a name="parameters"></a>Parámetros
-`guidLanguage`
+## <a name="parameters"></a>Parámetros
+`guidLanguage`\
+[in] Identificador único para el idioma.
 
- [in] Identificador único para el idioma.
+`pstrAttribute`\
+[in] La cadena de atributo.
 
-`pstrAttribute`
-
- [in] La cadena de atributo.
-
-`ppEnum`
-
- [out] Devuelve una enumeración de las clases de atributos.
+`ppEnum`\
+[out] Devuelve una enumeración de las clases de atributos.
 
 ## <a name="return-value"></a>Valor devuelto
 Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.

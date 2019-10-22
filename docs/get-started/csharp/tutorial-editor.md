@@ -12,19 +12,30 @@ dev_langs:
 - CSharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: e828d5eaf090aa47e82ed41cf5c6acb9301dd142
-ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
+ms.openlocfilehash: 5bbca5e46ee83764a6a431ae13829a882b1d859f
+ms.sourcegitcommit: 39a04f42d23597b70053686d7e927ba78f38a9a8
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58323349"
+ms.lasthandoff: 10/05/2019
+ms.locfileid: "71975158"
 ---
 # <a name="learn-to-use-the-code-editor"></a>Aprender a usar el editor de código
 
 En esta introducción de 10 minutos al editor de código, se agrega código a un archivo para ver algunas de las formas en que Visual Studio hace que escribir y comprender el código (así como desplazarse por él) sea más fácil.
 
+::: moniker range="vs-2017"
+
 > [!TIP]
-> Si todavía no ha instalado Visual Studio, vaya a la página de [descargas de Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017) para instalarlo de forma gratuita.
+> Si todavía no ha instalado Visual Studio, vaya a la página de [descargas de Visual Studio](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download) para instalarlo de forma gratuita.
+
+::: moniker-end
+
+::: moniker range="vs-2019"
+
+> [!TIP]
+> Si todavía no ha instalado Visual Studio, vaya a la página de [descargas de Visual Studio](https://visualstudio.microsoft.com/downloads) para instalarlo de forma gratuita.
+
+::: moniker-end
 
 En este artículo se da por hecho que ya está familiarizado con C#. Si no lo está, le aconsejamos que antes eche un vistazo a un tutorial del tipo [Introducción a C# y ASP.NET Core en Visual Studio](tutorial-aspnet-core.md).
 
@@ -47,7 +58,7 @@ Empezaremos creando un archivo y agregándole código.
 
 ::: moniker-end
 
-2. En el menú **Archivo** de la barra de menús, elija **Nuevo** > **Archivo**.
+2. En el menú **Archivo** de la barra de menús, elija **Nuevo** > **Archivo** o presione **Ctrl**+**N**.
 
 3. En el cuadro de diálogo **Nuevo archivo**, en la categoría **General**, elija **Clase de Visual C#** y, después, elija **Abrir**.
 
@@ -69,7 +80,7 @@ Visual Studio proporciona *fragmentos de código* muy prácticos que pueden serv
 
    Verá cómo la firma del método `static void Main()` se agrega al archivo. El método [Main()](/dotnet/csharp/programming-guide/main-and-command-args/) es el punto de entrada de las aplicaciones de C#.
 
-Los fragmentos de código disponibles varían según el lenguaje de programación. Para ver los fragmentos de código disponibles para el lenguaje, seleccione **Editar** > **IntelliSense** > **Insertar fragmento de código** y luego elija la carpeta del lenguaje. En C#, la lista tiene el siguiente aspecto:
+Los fragmentos de código disponibles varían según el lenguaje de programación. Para ver los fragmentos de código disponibles para el lenguaje, seleccione **Editar** > **IntelliSense** > **Insertar fragmento de código** o presione **Ctrl**+**K**, **Ctrl**+**X** y, después, elija la carpeta del lenguaje. En C#, la lista tiene el siguiente aspecto:
 
 ![Lista de fragmentos de código de C#](../media/tutorial-code-snippet-list.png)
 

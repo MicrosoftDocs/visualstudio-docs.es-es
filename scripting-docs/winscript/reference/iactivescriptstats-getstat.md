@@ -1,5 +1,5 @@
 ---
-title: IActiveScriptStats::GetStat | Microsoft Docs
+title: 'Iactivescriptstats (:: GetStat | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8befb3da4e4b6f060a5f58aedec3604afe70aefb
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 096f1cf5b9bf8b5533bd5c36d33f014c747ff9aa
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58159054"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72574336"
 ---
 # <a name="iactivescriptstatsgetstat"></a>IActiveScriptStats::GetStat
-Devuelve una de las estadísticas de la secuencia de comandos estándar.  
+Devuelve una de las estadísticas del script estándar.  
   
 ## <a name="syntax"></a>Sintaxis  
   
@@ -39,28 +39,28 @@ HRESULT GetStat(
   
 #### <a name="parameters"></a>Parámetros  
  `stid`  
- [in] Especifica qué estadística para devolver. Debe ser el valor:  
+ de Especifica la estadística que se va a devolver. Debe ser el valor:  
   
 |Constante|Valor|Descripción|  
 |--------------|-----------|-----------------|  
-|SCRIPTSTAT_STATEMENT_COUNT|1|Devuelve el número de instrucciones ejecutadas desde que se inició la secuencia de comandos o se restablecieron las estadísticas.|  
+|SCRIPTSTAT_STATEMENT_COUNT|1|Devuelve el número de instrucciones ejecutadas desde que se inició el script o se restablecieron las estadísticas.|  
   
  `pluHi`  
- [out] 32 bits superiores de un entero de 64 bits sin signo que representa la estadística.  
+ enuncia Los bits 32 altos de un entero de 64 bits sin signo que representa la estadística.  
   
  `pluLo`  
- [out] 32 bits inferiores de un entero de 64 bits sin signo que representa la estadística.  
+ enuncia Los bits 32 bajos de un entero de 64 bits sin signo que representa la estadística.  
   
 ## <a name="return-value"></a>Valor devuelto  
- El método devuelve un objeto `HRESULT`. Los valores posibles incluyen, pero no se limitan a los valores en la tabla siguiente.  
+ El método devuelve un objeto `HRESULT`. Entre los valores posibles se incluyen, pero no se limitan a los valores de la tabla siguiente.  
   
 |Valor|Descripción|  
 |-----------|-----------------|  
 |`S_OK`|El método se realizó correctamente.|  
   
 ## <a name="remarks"></a>Comentarios  
- Este método devuelve una de las estadísticas de la secuencia de comandos estándar.  
+ Este método devuelve una de las estadísticas de script estándar.  
   
 ## <a name="see-also"></a>Vea también  
- [IActiveScriptStats::GetStatEx](../../winscript/reference/iactivescriptstats-getstatex.md)   
+ [Iactivescriptstats (:: GetStatEx](../../winscript/reference/iactivescriptstats-getstatex.md)    
  [IActiveScriptStats (Interfaz)](../../winscript/reference/iactivescriptstats-interface.md)

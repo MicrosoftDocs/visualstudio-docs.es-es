@@ -11,12 +11,12 @@ caps.latest.revision: 12
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: d93c18f1b62ef7171fb35af896a8e9adbc461680
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: bc11af7d259f252d7659f559be15b85f4af90149
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60053538"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437941"
 ---
 # <a name="graphics-frame-analysis"></a>Análisis de fotograma de gráficos
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -24,7 +24,7 @@ ms.locfileid: "60053538"
 Use el Análisis de fotogramas de gráficos en el Analizador de gráficos de Visual Studio para analizar y optimizar el rendimiento de la representación de su juego o aplicación Direct3D.  
   
 > [!IMPORTANT]
->  El Analizador de gráficos admite el Análisis de fotogramas para aplicaciones que usan Direct3D 11 en plataformas compatibles, incluido Windows 10. El Análisis de fotogramas no se admite actualmente para las aplicaciones que usan Direct3D 12.  
+> El Analizador de gráficos admite el Análisis de fotogramas para aplicaciones que usan Direct3D 11 en plataformas compatibles, incluido Windows 10. El Análisis de fotogramas no se admite actualmente para las aplicaciones que usan Direct3D 12.  
   
 ## <a name="frame-analysis"></a>Análisis de fotogramas  
  El análisis de fotogramas usa la misma información que se captura en un archivo de registro de gráficos para fines de diagnóstico, pero la usa para resumir el rendimiento de la representación. La información sobre el rendimiento no se registra en el archivo de registro durante la captura, sino que se genera más adelante, durante el análisis de fotogramas, mediante el control del tiempo de los eventos y la recopilación de estadísticas mientras se reproduce el fotograma. Este enfoque tiene más ventajas que recopilar la información sobre el rendimiento durante la captura:  
@@ -118,7 +118,7 @@ Use el Análisis de fotogramas de gráficos en el Analizador de gráficos de Vis
  La información de contador de hardware ofrece una vista muy detallada del comportamiento específico de la plataforma de hardware para cada llamada a draw, que le puede ayudar a identificar la causa de los cuellos de botella en el rendimiento de manera muy precisa.  
   
 > [!NOTE]
->  Cada plataforma de hardware admite contadores diferentes, no hay ninguno que sea estándar. Únicamente el fabricante de la GPU determina los contadores y lo que representan.  
+> Cada plataforma de hardware admite contadores diferentes, no hay ninguno que sea estándar. Únicamente el fabricante de la GPU determina los contadores y lo que representan.  
   
 ### <a name="marker-regions-and-events"></a>Regiones de marcadores y eventos  
  El Análisis de fotogramas admite marcadores y grupos de eventos definidos por el usuario. Se muestran en la tabla de resumen y en las tablas de detalles.  
@@ -145,7 +145,7 @@ Use el Análisis de fotogramas de gráficos en el Analizador de gráficos de Vis
  Las marcas de tiempo se admiten en todas las plataformas que admiten el Análisis de fotogramas. Las consultas de oclusión de profundidad, necesarias para el contador de píxeles ocluidos, se admiten en las plataformas que admiten el nivel de características 9.2 o superiores.  
   
 > [!NOTE]
->  Aunque las marcas de tiempo se admiten en todas las plataformas que admiten el análisis de fotogramas, la precisión y la coherencia de las marcas de tiempo varía de una plataforma a otra.  
+> Aunque las marcas de tiempo se admiten en todas las plataformas que admiten el análisis de fotogramas, la precisión y la coherencia de las marcas de tiempo varía de una plataforma a otra.  
   
 ### <a name="gpu-counters"></a>Contadores de GPU  
  La compatibilidad de los contadores de hardware de GPU depende del hardware.  
@@ -159,7 +159,7 @@ Use el Análisis de fotogramas de gráficos en el Analizador de gráficos de Vis
   Ninguna otra plataforma que admita el Análisis de fotogramas recopila contadores de hardware de GPU.  
   
 > [!NOTE]
->  Dado que los contadores de hardware de GPU son recursos de hardware, puede que la recopilación del conjunto completo de contadores de hardware de cada variante de representación requiera varios pases. Por esto, no se especifica el orden en el que se recopilan los contadores de la GPU.  
+> Dado que los contadores de hardware de GPU son recursos de hardware, puede que la recopilación del conjunto completo de contadores de hardware de cada variante de representación requiera varios pases. Por esto, no se especifica el orden en el que se recopilan los contadores de la GPU.  
   
 ### <a name="windows-phone"></a>Windows Phone  
  Las marcas de tiempo, las consultas de oclusión y los contadores de hardware de GPU solo se admiten en auriculares de Windows Phone suministrados originalmente con Windows Phone 8.1. El Análisis de fotogramas lo necesita para reproducir el archivo de registro de gráficos. Los auriculares de Windows Phone que se suministraron originalmente con Windows Phone 8 no admiten el Análisis de fotogramas, y los que se han actualizado a Windows Phone 8.1, tampoco.  
@@ -174,13 +174,13 @@ Use el Análisis de fotogramas de gráficos en el Analizador de gráficos de Vis
  En el Analizador de gráficos, cuando reproduce un archivo de registro de gráficos que usa un nivel superior al que admite la máquina de reproducción, recurre a WARP automáticamente. En el Análisis de fotogramas no se recurre a WARP explícitamente y se genera un error. WARP es útil para examinar la corrección de la aplicación Direct3D, pero no para examinar su rendimiento.  
   
 > [!NOTE]
->  Aunque sea importante tener en cuenta los problemas de nivel de características, puede capturar y reproducir archivos de registro de gráficos en diferentes configuraciones y dispositivos de hardware. Por ejemplo, puede capturar información de gráficos en un dispositivo Windows Phone y reproducirla en un equipo de escritorio, y al revés. En ambos casos, el registro de gráficos se puede reproducir siempre que el archivo de registro no contenga ninguna API o utilice niveles de características que no se admitan en la máquina de reproducción.  
+> Aunque sea importante tener en cuenta los problemas de nivel de características, puede capturar y reproducir archivos de registro de gráficos en diferentes configuraciones y dispositivos de hardware. Por ejemplo, puede capturar información de gráficos en un dispositivo Windows Phone y reproducirla en un equipo de escritorio, y al revés. En ambos casos, el registro de gráficos se puede reproducir siempre que el archivo de registro no contenga ninguna API o utilice niveles de características que no se admitan en la máquina de reproducción.  
   
 ### <a name="direct3d-10-and-lower"></a>Direct3D 10 e inferiores  
  El Análisis de fotogramas solo es compatible con la API Direct3D 11. Si su aplicación llama a la API Direct3D 10, el Análisis de fotogramas no la reconocerá ni la incluirá en el perfil, aunque otras herramientas del Analizador de gráficos la reconozcan y la usen. Si su aplicación usa la API Direct3D 11 y la Direct3D 10, solo se genera el perfil de las llamadas de Direct3D 11.  
   
 > [!NOTE]
->  Esto se aplica solo a las llamadas de la API Direct3D que utilice, no a los niveles de características. Mientras utilice la API Direct3D 11, Direct3D 11.1 o Direct3D 11.2, puede usar el nivel de características que quiera y el Análisis de fotogramas funcionará.  
+> Esto se aplica solo a las llamadas de la API Direct3D que utilice, no a los niveles de características. Mientras utilice la API Direct3D 11, Direct3D 11.1 o Direct3D 11.2, puede usar el nivel de características que quiera y el Análisis de fotogramas funcionará.  
   
 ## <a name="Variants"></a> Variantes  
  Cada cambio que el Análisis de fotogramas realiza en la manera en que se representa un fotograma durante la reproducción se conoce como *variante*. Las variantes que el Análisis de fotogramas examina corresponden a cambios comunes relativamente fáciles que puede realizar para mejorar el rendimiento de la representación o la calidad visual de la aplicación, por ejemplo, reducir el tamaño de las texturas, usar compresión de textura o permitir diferentes tipos de suavizado de contorno. Las variantes reemplazan el contexto de representación y los parámetros habituales de la aplicación. A continuación, se muestra un resumen:  

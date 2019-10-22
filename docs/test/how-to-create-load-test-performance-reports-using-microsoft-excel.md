@@ -9,14 +9,14 @@ ms.assetid: b87fb196-9973-4512-a924-088788def4ea
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: fb820ccc72e0070f947e362def1da137d19d8494
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 6bd73c643cdc01be07d56857f65d3fb34c6346e0
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55955601"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66747582"
 ---
-# <a name="how-to-create-load-test-performance-reports-using-microsoft-excel"></a>Filtrar para crear informes de rendimiento de pruebas de carga con Microsoft Excel
+# <a name="how-to-create-load-test-performance-reports-using-microsoft-excel"></a>Procedimiento para crear informes de rendimiento de pruebas de carga con Microsoft Excel
 
 Puede generar informes de prueba de carga de Microsoft Excel basados en dos o más resultados de pruebas.
 
@@ -24,9 +24,9 @@ Puede generar informes de prueba de carga de Microsoft Excel basados en dos o m�
 
 Están disponibles dos informes de prueba de carga:
 
--   **Ejecutar comparación** Crea un conjunto de informes que compara los datos de dos resultados de pruebas de carga usando tablas y gráficos de barras.
+- **Ejecutar comparación** Crea un conjunto de informes que compara los datos de dos resultados de pruebas de carga usando tablas y gráficos de barras.
 
--   **Tendencia** Puede generar análisis de tendencias en dos o más resultados de pruebas de carga. Los resultados se muestran con gráficos de líneas, pero los datos están disponibles en tablas dinámicas.
+- **Tendencia** Puede generar análisis de tendencias en dos o más resultados de pruebas de carga. Los resultados se muestran con gráficos de líneas, pero los datos están disponibles en tablas dinámicas.
 
 > [!TIP]
 > También puede crear manualmente informes de Microsoft Word copiando y pegando datos de las vistas de resumen, gráficos y tablas. Vea [Cómo: Crear manualmente un informe de rendimiento de pruebas de carga con Microsoft Word](../test/how-to-manually-create-a-load-test-performance-report-using-microsoft-word.md).
@@ -70,11 +70,11 @@ Los informes de Excel se pueden generar en el **Analizador de pruebas de carga**
 
    2. En la página **Seleccionar la base de datos que contiene las pruebas de carga**, en **Nombre del servidor**, escriba el nombre del servidor que contiene los resultados de pruebas de carga.
 
-   3. En la lista desplegable **Databasename**, seleccione la base de datos que contiene los resultados de pruebas de carga.
+   3. En la lista desplegable **Nombre de la base de datos**, seleccione la base de datos que contiene los resultados de pruebas de carga.
 
-3. En la página **¿Cómo desea generar el informe?**, compruebe que **Crear un informe** está seleccionado y elija **Siguiente**.
+3. En la página **¿Cómo desea generar el informe?** , compruebe que **Crear un informe** está seleccionado y elija **Siguiente**.
 
-4. En la página **¿Qué tipo de informe desea generar?**, compruebe que **Ejecutar comparación** está seleccionado y elija **Siguiente**.
+4. En la página **¿Qué tipo de informe desea generar?** , compruebe que **Ejecutar comparación** está seleccionado y elija **Siguiente**.
 
 5. En la página **Especificar detalles de informe de pruebas de carga**, escriba un nombre para el informe en **Nombre del informe**.
 
@@ -125,11 +125,11 @@ Los informes de Excel se pueden generar en el **Analizador de pruebas de carga**
 
    2. En la página **Seleccionar la base de datos que contiene las pruebas de carga**, en **Nombre del servidor**, escriba el nombre del servidor que contiene los resultados de pruebas de carga.
 
-   3. En la lista desplegable **Databasename**, seleccione la base de datos que contiene los resultados de pruebas de carga.
+   3. En la lista desplegable **Nombre de la base de datos**, seleccione la base de datos que contiene los resultados de pruebas de carga.
 
-3. En la página **¿Cómo desea generar el informe?**, compruebe que **Crear un informe** está seleccionado y elija **Siguiente**.
+3. En la página **¿Cómo desea generar el informe?** , compruebe que **Crear un informe** está seleccionado y elija **Siguiente**.
 
-4. En la página **¿Qué tipo de informe desea generar?**, compruebe que **Tendencia** está seleccionado y elija **Siguiente**.
+4. En la página **¿Qué tipo de informe desea generar?** , compruebe que **Tendencia** está seleccionado y elija **Siguiente**.
 
 5. En la página **Especificar detalles de informe de pruebas de carga**, escriba un nombre para el informe en **Nombre del informe**.
 
@@ -144,7 +144,7 @@ Los informes de Excel se pueden generar en el **Analizador de pruebas de carga**
    > [!TIP]
    > Para conseguir mejores informes, las pruebas de carga y las pruebas de rendimiento web cuentan con varias propiedades disponibles que permiten obtener informes más completos. La solicitud de página tiene dos propiedades que se presentan en los informes: Objetivo y Nombre de informe. Los tiempos de respuesta de página se mostrarán con respecto al objetivo y se usará el nombre del informe en lugar de la dirección URL en los informes. En los parámetros de ejecución de una prueba de carga, en Administrar conjuntos de contadores, se incluye la propiedad Etiquetas de equipo para los nombres del equipo de los informes. Resulta muy útil para describir el rol de un equipo determinado en el informe.
 
-## <a name="net-framework-security"></a>seguridad en .NET Framework
+## <a name="net-security"></a>Seguridad de .NET
 
 Los resultados y los informes de pruebas de carga contienen información posiblemente sensible que podría utilizarse para crear ataques contra su equipo o su red. Los resultados y los informes de pruebas de carga contienen nombres de equipo y cadenas de conexión. Debe tenerlo en cuenta cuando comparta informes de pruebas de carga con otros usuarios.
 

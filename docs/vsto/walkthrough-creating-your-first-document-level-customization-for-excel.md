@@ -1,5 +1,5 @@
 ---
-title: 'Tutorial: Crear la primera personalización en el nivel de documento para Excel'
+title: Crear la primera personalización en el nivel de documento para Excel
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 81020496c1e80718d1aa0995791762d55ef70a76
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: b3f9763fd670495de9ae4ef8b35a282d644ffe4d
+ms.sourcegitcommit: 7eb2fb21805d92f085126f3a820ac274f2216b4e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60104504"
+ms.lasthandoff: 06/22/2019
+ms.locfileid: "67328389"
 ---
 # <a name="walkthrough-create-your-first-document-level-customization-for-excel"></a>Tutorial: Crear la primera personalización en el nivel de documento para Excel
   Este tutorial introductorio muestra cómo crear una personalización de nivel de documento para Microsoft Office Excel. Las características que se crean en este tipo de solución solo están disponibles cuando se abre un libro concreto. No se puede usar una personalización de nivel de documento para realizar cambios en toda la aplicación, por ejemplo para mostrar una nueva pestaña de la cinta de opciones cuando se abre un libro.
@@ -73,13 +73,13 @@ ms.locfileid: "60104504"
 
    - *FirstWorkbookCustomization*xlsx: representa el libro de Excel en el proyecto. Contiene todas las hojas de cálculo y los gráficos.
 
-   - Sheet1 (*.vb* para Visual Basic o *.cs* para Visual C#): una hoja de cálculo que proporciona la superficie de diseño y el código de la primera hoja de cálculo del libro. Para obtener más información, consulte [elemento host Worksheet](../vsto/worksheet-host-item.md).
+   - Sheet1 ( *.vb* para Visual Basic o *.cs* para Visual C#): una hoja de cálculo que proporciona la superficie de diseño y el código de la primera hoja de cálculo del libro. Para obtener más información, consulte [elemento host Worksheet](../vsto/worksheet-host-item.md).
 
-   - Sheet2 (*.vb* para Visual Basic o *.cs* para Visual C#)-hoja de cálculo que proporciona la superficie de diseño y el código para la segunda hoja de cálculo del libro.
+   - Sheet2 ( *.vb* para Visual Basic o *.cs* para Visual C#)-hoja de cálculo que proporciona la superficie de diseño y el código para la segunda hoja de cálculo del libro.
 
-   - Sheet3 (*.vb* para Visual Basic o *.cs* para Visual C#)-hoja de cálculo que proporciona la superficie de diseño y el código para la tercera hoja de cálculo del libro.
+   - Sheet3 ( *.vb* para Visual Basic o *.cs* para Visual C#)-hoja de cálculo que proporciona la superficie de diseño y el código para la tercera hoja de cálculo del libro.
 
-   - ThisWorkbook (*.vb* para Visual Basic o *.cs* para Visual C#): contiene la superficie de diseño y el código para las personalizaciones de nivel de libro. Para obtener más información, consulte [elemento host Workbook](../vsto/workbook-host-item.md).
+   - ThisWorkbook ( *.vb* para Visual Basic o *.cs* para Visual C#): contiene la superficie de diseño y el código para las personalizaciones de nivel de libro. Para obtener más información, consulte [elemento host Workbook](../vsto/workbook-host-item.md).
 
      El archivo de código Sheet1 se abre automáticamente en el diseñador.
 
@@ -106,7 +106,7 @@ ms.locfileid: "60104504"
      **Este texto se agregó mediante el diseñador.**
 
 > [!WARNING]
->  Si agrega esta línea de texto a la celda **A2**, se sobrescribirá otro código en este ejemplo.
+> Si agrega esta línea de texto a la celda **A2**, se sobrescribirá otro código en este ejemplo.
 
 ## <a name="add-text-to-a-worksheet-programmatically"></a>Agregar texto a una hoja de cálculo mediante programación
  A continuación, agregue código al archivo de código Sheet1. El nuevo código usa el modelo de objetos de Excel para agregar una segunda línea de texto al libro. De forma predeterminada, el archivo de código Sheet1 contiene el siguiente código generado:

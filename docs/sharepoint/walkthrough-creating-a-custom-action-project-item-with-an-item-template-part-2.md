@@ -1,5 +1,5 @@
 ---
-title: 'Tutorial: Crear un elemento de proyecto de acción personalizado con una plantilla de elementos, parte 2 | Microsoft Docs'
+title: Crear elemento de proyecto acción personalizada con la plantilla de elementos, parte 2
 ms.date: 02/02/2017
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +11,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: b71b092bcadef24e564b14dd215bc9c328aa8e7f
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 6fa4915b9621789c68ed994440de3a1ef544c40c
+ms.sourcegitcommit: 25570fb5fb197318a96d45160eaf7def60d49b2b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60081143"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "66401175"
 ---
 # <a name="walkthrough-create-a-custom-action-project-item-with-an-item-template-part-2"></a>Tutorial: Creación de un elemento de proyecto de acción personalizado con una plantilla de elementos, parte 2
   Después de definir un tipo de elemento de proyecto de SharePoint personalizado y asociarla a una plantilla de elementos en Visual Studio, también puede proporcionar a un Asistente para la plantilla. Puede usar al Asistente para recopilar información de los usuarios cuando usan la plantilla para agregar una nueva instancia del elemento de proyecto a un proyecto. La información que recopile puede usarse para inicializar el elemento de proyecto.
@@ -34,7 +34,7 @@ ms.locfileid: "60081143"
 - Depurar y probar el asistente.
 
 > [!NOTE]
->  Puede descargar una muestra de [Github](https://github.com/SharePoint/PnP/tree/master/Samples/Workflow.Activities) que muestra cómo crear actividades personalizadas para un flujo de trabajo.
+> Puede descargar una muestra de [Github](https://github.com/SharePoint/PnP/tree/master/Samples/Workflow.Activities) que muestra cómo crear actividades personalizadas para un flujo de trabajo.
 
 ## <a name="prerequisites"></a>Requisitos previos
  Para llevar a cabo este tutorial, primero debe crear la solución CustomActionProjectItem completando [Tutorial: Creación de un elemento de proyecto de acción personalizado con una plantilla de elementos, parte 1](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-1.md).
@@ -125,12 +125,12 @@ ms.locfileid: "60081143"
 2. En la vista XAML, reemplace el código XAML actual por el siguiente. El XAML define una interfaz de usuario que incluye un encabezado, los controles para especificar el comportamiento de la acción personalizada y botones de navegación en la parte inferior de la ventana.
 
     > [!NOTE]
-    >  El proyecto tendrá algunos errores de compilación después de agregar este código. Estos errores desaparecerán al agregar código en pasos posteriores.
+    > El proyecto tendrá algunos errores de compilación después de agregar este código. Estos errores desaparecerán al agregar código en pasos posteriores.
 
      [!code-xml[SPExtensibility.ProjectItem.CustomAction#9](../sharepoint/codesnippet/Xaml/customactionprojectitem/itemtemplatewizard/wizardwindow.xaml#9)]
 
     > [!NOTE]
-    >  La ventana que se crea en este XAML se deriva el <xref:Microsoft.VisualStudio.PlatformUI.DialogWindow> clase base. Cuando se agrega un cuadro de diálogo WPF personalizado en Visual Studio, se recomienda que el cuadro de diálogo se deriva de esta clase tiene un estilo coherente con otros cuadros de diálogo en Visual Studio y para evitar problemas que pueden producirse en caso contrario, con los cuadros de diálogo modal. Para obtener más información, consulte [creación y administración de los cuadros de diálogo Modal](/visualstudio/extensibility/creating-and-managing-modal-dialog-boxes).
+    > La ventana que se crea en este XAML se deriva el <xref:Microsoft.VisualStudio.PlatformUI.DialogWindow> clase base. Cuando se agrega un cuadro de diálogo WPF personalizado en Visual Studio, se recomienda que el cuadro de diálogo se deriva de esta clase tiene un estilo coherente con otros cuadros de diálogo en Visual Studio y para evitar problemas que pueden producirse en caso contrario, con los cuadros de diálogo modal. Para obtener más información, consulte [creación y administración de los cuadros de diálogo Modal](/visualstudio/extensibility/creating-and-managing-modal-dialog-boxes).
 
 3. Si está desarrollando un proyecto de Visual Basic, quite el `ItemTemplateWizard` espacio de nombres desde el `WizardWindow` nombre de clase en el `x:Class` atributo de la `Window` elemento. Este elemento aparece en la primera línea del código XAML. Cuando haya terminado, la primera línea debe ser similar al código siguiente:
 
@@ -175,7 +175,7 @@ ms.locfileid: "60081143"
 
 2. En el **firma** ficha, seleccione el **firmar el ensamblado** casilla de verificación.
 
-3. En el **elegir un archivo de clave de nombre seguro** elija  **\<nuevo... >**.
+3. En el **elegir un archivo de clave de nombre seguro** elija  **\<nuevo... >** .
 
 4. En el **crear clave de nombre seguro** diálogo cuadro, escriba un nombre, desactive la **proteger mi archivo de clave con una contraseña** casilla de verificación y, a continuación, elija el **Aceptar** botón.
 
@@ -314,7 +314,7 @@ ms.locfileid: "60081143"
      La acción personalizada se empaqueta e implementa en el sitio de SharePoint especificado por el **dirección URL del sitio** propiedad del proyecto y el explorador web se abre en la página predeterminada de este sitio.
 
     > [!NOTE]
-    >  Si el **depuración de scripts deshabilitada** aparece el cuadro de diálogo, elija el **Sí** botón.
+    > Si el **depuración de scripts deshabilitada** aparece el cuadro de diálogo, elija el **Sí** botón.
 
 2. En el área de listas del sitio de SharePoint, elija el **tareas** vínculo.
 
@@ -346,5 +346,5 @@ ms.locfileid: "60081143"
 - [Definir tipos de elemento de proyecto de SharePoint personalizados](../sharepoint/defining-custom-sharepoint-project-item-types.md)
 - [Crear plantillas de elemento y plantillas de proyecto para los elementos de proyecto de SharePoint](../sharepoint/creating-item-templates-and-project-templates-for-sharepoint-project-items.md)
 - [Referencia de esquema de plantillas de Visual Studio](/visualstudio/extensibility/visual-studio-template-schema-reference)
-- [Cómo: Usar a asistentes con plantillas de proyecto](../extensibility/how-to-use-wizards-with-project-templates.md)
+- [Cómo: Usar asistentes con plantillas de proyectos](../extensibility/how-to-use-wizards-with-project-templates.md)
 - [Los identificadores y las ubicaciones predeterminadas de la acción personalizada](http://go.microsoft.com/fwlink/?LinkId=181964)

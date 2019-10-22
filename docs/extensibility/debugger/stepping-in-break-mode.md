@@ -7,17 +7,17 @@ helpviewer_keywords:
 - stepping, in break mode
 - debugging [Debugging SDK], stepping in break mode
 ms.assetid: b08dc8ee-6c63-4462-a097-6f525cfbb35a
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: eb7b7e847c116f3aab38a12ec9801988bb8b3fc1
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: e3a8688f32a97d27ee6f6e2d18fcea8e25feaac2
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60111550"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66348545"
 ---
 # <a name="stepping-in-break-mode"></a>Ejecución paso a paso en modo de interrupción
 La siguiente sección describe el proceso que se produce cuando el depurador está en modo de interrupción y debe recorrer el código:

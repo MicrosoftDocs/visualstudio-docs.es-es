@@ -1,5 +1,5 @@
 ---
-title: 'Tutorial: Implementar manualmente una aplicación ClickOnce que no requiere volver a firmar y que conserve la información de marca | Microsoft Docs'
+title: Implementar manualmente ClickOnce conserva la información de personalización de aplicaciones
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -22,12 +22,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 773a9f5a990b3432484c1ff13012b173c9fac1cb
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 47db202d07fd88bfb5e922964caf2cdd5008c6fd
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60076229"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66263427"
 ---
 # <a name="walkthrough-manually-deploy-a-clickonce-application-that-does-not-require-re-signing-and-that-preserves-branding-information"></a>Tutorial: Implementar manualmente una aplicación ClickOnce que no requiere volver a firmar y que conserve la información de personalización de marca
 Cuando creas un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicación y, a continuación, asígnele a un cliente para publicar e implementar, el cliente había tradicionalmente actualizar el manifiesto de implementación y volver a firmarlo. Si bien esto sigue siendo el método preferido en la mayoría de los casos, .NET Framework 3.5 le permite crear [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] las implementaciones que los clientes pueden implementar sin tener que volver a generar un nuevo manifiesto de implementación. Para obtener más información, consulte [ClickOnce implementar aplicaciones para servidores de pruebas y producción sin nueva firma](../deployment/deploying-clickonce-applications-for-testing-and-production-without-resigning.md).
@@ -35,7 +35,7 @@ Cuando creas un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)
  Cuando creas un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicación y, a continuación, asígnele a un cliente para publicar e implementar, la aplicación puede usar la personalización de marca del cliente o puede conservar su marca. Por ejemplo, si la aplicación es una única aplicación propia, es posible que desea conservar la personalización de marca. Si la aplicación está muy personalizada para cada cliente, puede usar la personalización de marca del cliente. .NET Framework 3.5 le permite conservar la personalización de marca, información del publicador y firma de seguridad al proporcionar a una aplicación a una organización para la implementación. Para obtener más información, consulte [ClickOnce crear aplicaciones para que otros usuarios implementar](../deployment/creating-clickonce-applications-for-others-to-deploy.md).
 
 > [!NOTE]
->  En este tutorial crea implementaciones manualmente mediante la herramienta de línea de comandos *Mage.exe* o la herramienta gráfica *MageUI.exe*. Para obtener más información acerca de las implementaciones manuales, vea [Tutorial: Implementar manualmente una aplicación ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md).
+> En este tutorial crea implementaciones manualmente mediante la herramienta de línea de comandos *Mage.exe* o la herramienta gráfica *MageUI.exe*. Para obtener más información acerca de las implementaciones manuales, vea [Tutorial: Implementar manualmente una aplicación ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md).
 
 ## <a name="prerequisites"></a>Requisitos previos
  Para llevar a cabo los pasos de este tutorial necesita lo siguiente:
@@ -51,7 +51,7 @@ Cuando creas un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)
 2. Cree un directorio con el nombre de la versión actual de la implementación. Si se trata de la primera vez que va a implementar la aplicación, probablemente elegirá **1.0.0.0**.
 
    > [!NOTE]
-   >  La versión de la implementación puede ser distinta de la versión de los archivos de aplicación.
+   > La versión de la implementación puede ser distinta de la versión de los archivos de aplicación.
 
 3. Cree un subdirectorio denominado **bin** y copie todos los archivos de aplicación aquí, incluidos los archivos ejecutables, ensamblados, recursos y archivos de datos.
 
@@ -101,7 +101,7 @@ Cuando creas un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)
 3. Cree un subdirectorio con el nombre de la versión actual de la implementación. Si se trata de la primera vez que va a implementar la aplicación, probablemente elegirá **1.0.0.0**.
 
    > [!NOTE]
-   >  La versión de la implementación puede ser distinta de la versión de los archivos de aplicación.
+   > La versión de la implementación puede ser distinta de la versión de los archivos de aplicación.
 
 4. Mover el \\ **bin** directorio en el directorio que creó en el paso 2.
 
@@ -127,7 +127,7 @@ Cuando creas un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)
 
 13. Seleccione **archivo**, **guardar** en el menú y guarde el manifiesto de aplicación. Se le pedirá que firme el manifiesto de aplicación cuando la guarde.
 
-14. Si tiene un certificado almacenado como un archivo en el sistema de archivos, use el **inicio de sesión como archivo de certificado** opción y seleccione el certificado en el sistema de archivos mediante el botón de puntos suspensivos (**...** ) botón.
+14. Si tiene un certificado almacenado como un archivo en el sistema de archivos, use el **inicio de sesión como archivo de certificado** opción y seleccione el certificado en el sistema de archivos mediante el botón de puntos suspensivos ( **...** ) botón.
 
      -o bien-
 

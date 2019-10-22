@@ -11,11 +11,11 @@ caps.latest.revision: 26
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 9377fc12db8cedba65a418fd32b82a1421bd9b43
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58997600"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68160526"
 ---
 # <a name="supporting-multiple-document-views"></a>Compatibilidad con vistas de varios documentos
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,4 +41,4 @@ Varias vistas
   
  De forma predeterminada, cada vista (objeto de vista de documento) está incluida en su propio marco de ventana (<xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame>). Como ya hemos visto, sin embargo, los datos de documento pueden mostrarse en varias vistas. Para habilitar esta opción, Visual Studio comprueba la RDT para determinar si el documento en cuestión ya está abierto en un editor. Cuando se llama el IDE <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory.CreateEditorInstance%2A> para crear el editor, se devuelve un valor distinto de NULL en la `punkDocDataExisting` parámetro indica que el documento ya está abierto en otro editor. Para obtener más información acerca de cómo ver las funciones RDT [tabla de documentos en ejecución](../extensibility/internals/running-document-table.md).  
   
- En su <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory> implementación, examine el objeto de datos de documento devuelto en `punkDocDataExisting` para determinar si los datos del documento están adecuados para el editor. (Por ejemplo, solo los datos HTML deben mostrarse mediante un editor de HTML.) Si es adecuado, el generador de editores debe proporcionar una segunda vista para los datos. Si el `punkDocDataExisting` parámetro no es `NULL`, es posible ya que el objeto de datos de documento está abierto en otro editor, o, más probable, que los datos del documento ya está abiertos en una vista diferente con el mismo que el editor. Si los datos del documento están abiertos en un editor distinto que no es compatible con el generador de editores, Visual Studio no puede abrir el generador de editores. Para obtener más información, vea [Cómo: Anexión de vistas de datos de documentos](../extensibility/how-to-attach-views-to-document-data.md).
+ En su <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory> implementación, examine el objeto de datos de documento devuelto en `punkDocDataExisting` para determinar si los datos del documento están adecuados para el editor. (Por ejemplo, solo los datos HTML deben mostrarse mediante un editor de HTML.) Si es adecuado, el generador de editores debe proporcionar una segunda vista para los datos. Si el `punkDocDataExisting` parámetro no es `NULL`, es posible ya que el objeto de datos de documento está abierto en otro editor, o, más probable, que los datos del documento ya está abiertos en una vista diferente con el mismo que el editor. Si los datos del documento están abiertos en un editor distinto que no es compatible con el generador de editores, Visual Studio no puede abrir el generador de editores. Para obtener más información, consulte [Cómo Anexión de vistas de datos de documentos](../extensibility/how-to-attach-views-to-document-data.md).

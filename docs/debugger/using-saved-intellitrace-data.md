@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e124bb05fa42be48fc0c9054df9cb056d0680958
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: b9217031866a53e229cb03838b1be835019b62ba
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60081026"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67825601"
 ---
 # <a name="using-saved-intellitrace-data-c-visual-basic-c"></a>Uso de los datos de IntelliTrace guardados (C#, Visual Basic, C++)
 
@@ -37,7 +37,6 @@ Inicie la depuración desde un archivo de registro de IntelliTrace (.iTrace) par
     |**Origen**|**Vea**|
     |----------------|-------------|
     |Una sesión IntelliTrace en Visual Studio Enterprise (pero no en las ediciones Professional o Community).|[Características de IntelliTrace](../debugger/intellitrace-features.md)|
-    |Una sesión de prueba en Microsoft Test Manager. Se asociará un archivo .iTrace a un elemento de trabajo de Team Foundation Server.|[Recopilar más datos de diagnóstico en las pruebas manuales](/azure/devops/test/mtm/collect-more-diagnostic-data-in-manual-tests?view=vsts)|
     |Microsoft Monitoring Agent, solo o con System Center 2012 R2 Operations Manager, para las aplicaciones web ASP.NET y las aplicaciones de SharePoint que se ejecutan en la implementación|-   [Diagnosis de problemas tras la implementación](../debugger/diagnose-problems-after-deployment.md)<br />-   [Novedades de System Center 2012 R2 Operations Manager](/previous-versions/system-center/system-center-2012-R2/dn249700(v=sc.12))|
 
 ## <a name="GetStarted"></a> ¿Qué desea hacer?
@@ -57,17 +56,17 @@ Inicie la depuración desde un archivo de registro de IntelliTrace (.iTrace) par
 
 - Si el archivo .iTrace está asociado a un elemento de trabajo de Team Foundation Server, siga estos pasos en el elemento de trabajo:
 
-    - En **Todos los vínculos**, busque el archivo .iTrace. Ábralo.
+  - En **Todos los vínculos**, busque el archivo .iTrace. Ábralo.
 
-         \- o -
+    \- o -
 
-    - En **Pasos de reproducción**, elija el vínculo **IntelliTrace** .
+  - En **Pasos de reproducción**, elija el vínculo **IntelliTrace** .
 
 > [!TIP]
->  Si cerró el archivo IntelliTrace durante la depuración, puede volver a abrirlo fácilmente. Vaya al menú **Depuración** , elija **IntelliTrace**, **Mostrar resumen de registro**. También puede elegir **Mostrar resumen de registro** en la ventana de **IntelliTrace** . Esto solo está disponible durante la depuración con IntelliTrace.
+> Si cerró el archivo IntelliTrace durante la depuración, puede volver a abrirlo fácilmente. Vaya al menú **Depuración** , elija **IntelliTrace**, **Mostrar resumen de registro**. También puede elegir **Mostrar resumen de registro** en la ventana de **IntelliTrace** . Esto solo está disponible durante la depuración con IntelliTrace.
 
 ## <a name="Understand"></a> Obtener información sobre el registro de IntelliTrace
- Algunas de las secciones siguientes del archivo .iTrace solo aparecen si recopiló datos de un origen determinado, por ejemplo, desde Test Manager o desde aplicaciones de SharePoint.
+ Algunas de las siguientes secciones del archivo .iTrace solo aparecen si recopiló datos de un origen determinado, por ejemplo, de las aplicaciones de SharePoint.
 
 |**Sección**|**Contiene**|**Origen de la recopilación**|
 |-----------------|------------------|---------------------------|
@@ -76,7 +75,6 @@ Inicie la depuración desde un archivo de registro de IntelliTrace (.iTrace) par
 |[Análisis](#Analysis)|Solo para aplicaciones de SharePoint 2010 y SharePoint 2013. Diagnostique los eventos de IntelliTrace y SharePoint, como eventos de depurador, eventos de ULS, excepciones no controladas y otros datos registrados por Microsoft Monitoring Agent.|Microsoft Monitoring Agent, ya sea recopilador independiente o con System Center 2012 R2 Operations Manager|
 |[Información del sistema](#SystemInfo)|Configuración y especificaciones del sistema host|Todos los orígenes|
 |[Lista de subprocesos](#ThreadsList)|Subprocesos que se ejecutaron durante la recolección|Todos los orígenes|
-|[Datos de pruebas](#TestData)|Pasos de prueba y los resultados de una sesión de prueba|Administrador de pruebas|
 |[Módulos](#Modules)|Módulos que el proceso de destino ha cargado en el orden en que se cargaron.|Todos los orígenes|
 |[Solicitud Web](#Modules)|Datos de la solicitud Web de IIS de producción aplicaciones web y SharePoint 2010 y SharePoint 2013|Microsoft Monitoring Agent y el recopilador independiente|
 
@@ -84,7 +82,7 @@ Inicie la depuración desde un archivo de registro de IntelliTrace (.iTrace) par
 
 - Elija un encabezado de columna para ordenar los datos.
 
-- Use el cuadro de búsqueda para filtrar los datos. La búsqueda de texto sin formato funciona en todas las columnas excepto en las columnas de tiempo. También puede filtrar las búsquedas a una columna específica con un filtro por columna. Escriba el nombre de columna sin espacios, dos puntos (**:**) y el valor de la búsqueda. Incluya después un punto y coma (**;**) para agregar otra columna y buscar el valor.
+- Use el cuadro de búsqueda para filtrar los datos. La búsqueda de texto sin formato funciona en todas las columnas excepto en las columnas de tiempo. También puede filtrar las búsquedas a una columna específica con un filtro por columna. Escriba el nombre de columna sin espacios, dos puntos ( **:** ) y el valor de la búsqueda. Incluya después un punto y coma ( **;** ) para agregar otra columna y buscar el valor.
 
      Por ejemplo, para buscar los eventos de rendimiento que tienen la palabra “lento” en la columna **Descripción** , escriba:
 
@@ -224,12 +222,9 @@ Inicie la depuración desde un archivo de registro de IntelliTrace (.iTrace) par
 |**Columna**|**Muestra**|
 |----------------|-------------------|
 |**ID**|El número de identificador del subproceso|
-|**Name**|El nombre del subproceso. Los subprocesos sin nombre se muestran como “\<Sin nombre>”.|
+|**Nombre**|El nombre del subproceso. Los subprocesos sin nombre se muestran como “\<Sin nombre>”.|
 |**Hora de inicio**|La hora en que se creó el subproceso|
 |**Hora de finalización**|La hora en que se completó el subproceso|
-
-### <a name="TestData"></a> Datos de pruebas
- Examine los datos de IntelliTrace que registró Test Manager mientras probaba la aplicación.
 
 ##### <a name="to-start-debugging-from-a-specific-test-step"></a>Para iniciar la depuración desde un paso de prueba específico
 
@@ -271,5 +266,5 @@ Inicie la depuración desde un archivo de registro de IntelliTrace (.iTrace) par
 #### <a name="forums"></a>Foros
  [Depurador de Visual Studio](http://go.microsoft.com/fwlink/?LinkId=262263)
 
-#### <a name="guidance"></a>Orientación
+#### <a name="guidance"></a>Guía
  [Pruebas para entrega continua con Visual Studio 2012 – capítulo 6: Un cuadro de herramientas de pruebas](http://go.microsoft.com/fwlink/?LinkID=255203)

@@ -1,5 +1,5 @@
 ---
-title: 'Tutorial: Creación de una lista externa en SharePoint mediante el uso de los datos empresariales | Documentos de Microsoft'
+title: Crear lista externa en SharePoint con datos profesionales
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -19,12 +19,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 45f0a896db97d489d58036ea226962550b512665
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: cf9c7d13e6aaac85d3bac4254247a3c07b39b5c3
+ms.sourcegitcommit: 25570fb5fb197318a96d45160eaf7def60d49b2b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56600303"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "66401065"
 ---
 # <a name="walkthrough-create-an-external-list-in-sharepoint-by-using-business-data"></a>Tutorial: Crear una lista externa en SharePoint con datos profesionales
 
@@ -68,7 +68,7 @@ Necesita los componentes siguientes para completar este tutorial:
 
 7. En la barra de menús, elija **Proyecto** >  **Agregar nuevo elemento**.
 
-     Se abrirá el cuadro de diálogo **Agregar nuevo elemento**.
+     Se abre el cuadro de diálogo **Agregar nuevo elemento**.
 
 8. En el **plantillas** panel, elija **(solución de granja de servidores únicamente) modelo de conectividad a datos empresariales**, denomine el proyecto **escriba AdventureWorksContacts**y, a continuación, elija el **Agregar** botón.
 
@@ -182,7 +182,7 @@ Agregar un método Finder específico a la entidad Contact mediante el **detalle
 
 10. Repita el paso 6 para crear un descriptor de tipo para cada uno de los siguientes campos.
 
-    |nombre|Nombre de tipo|
+    |Name|Nombre de tipo|
     |----------|---------------|
     |Nombre|System.String|
     |LastName|System.String|

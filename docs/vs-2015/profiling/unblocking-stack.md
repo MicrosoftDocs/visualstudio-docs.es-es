@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 7c3561c9aa82589c6362620ef0fe0464af7fc2e7
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54758392"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68145459"
 ---
 # <a name="unblocking-stack"></a>Pila de desbloqueo
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Si el elemento del subproceso seleccionado actualmente representa un segmento bloqueado que posteriormente empezó a ejecutarse después de otro subproceso en el proceso actual lo desbloqueó, la pila de llamadas del subproceso que realizó el desbloqueo se muestra en esta pestaña.  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Otras referencias  
  [Vista de subprocesos](../profiling/threads-view-parallel-performance.md)

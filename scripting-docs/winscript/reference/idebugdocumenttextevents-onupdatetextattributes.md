@@ -1,5 +1,5 @@
 ---
-title: IDebugDocumentTextEvents::onUpdateTextAttributes | Microsoft Docs
+title: 'Idebugdocumenttextevents (:: onUpdateTextAttributes | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,12 +17,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 746339cb281d4d039759f350bb5516456ce142cf
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 044eec93516bc4e16044c4bf982b48d91269ebaa
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58144477"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72575997"
 ---
 # <a name="idebugdocumenttexteventsonupdatetextattributes"></a>IDebugDocumentTextEvents::onUpdateTextAttributes
 Indica que los atributos de texto asociados al intervalo de posición de carácter subyacente han cambiado.  
@@ -38,10 +38,10 @@ HRESULT onUpdateTextAttributes(
   
 #### <a name="parameters"></a>Parámetros  
  `cCharacterPosition`  
- [in] Posición de carácter del primer carácter que han cambiado los atributos.  
+ de Posición de carácter del primer carácter que han cambiado los atributos.  
   
  `cNumToUpdate`  
- [in] El número de caracteres del intervalo.  
+ de Número de caracteres del intervalo.  
   
 ## <a name="return-value"></a>Valor devuelto  
  El método devuelve un objeto `HRESULT`. Entre los valores posibles se incluyen los que se indican en la tabla siguiente, entre otros.  

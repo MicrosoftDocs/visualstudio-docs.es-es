@@ -11,11 +11,11 @@ caps.latest.revision: 18
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: a5c378aec6822a436de0d8fc2656fcac7be4149f
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58988295"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68203896"
 ---
 # <a name="intellisense-hosting"></a>Hospedaje de IntelliSense
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,7 +35,7 @@ Visual Studio permite hospedar de IntelliSense. IntellSense hospedaje permite pr
   
  Las marcas de host definidas en [IntelliSenseHostFlags](../extensibility/intellisensehostflags.md), se resumen a continuación.  
   
-|Marca de Host de IntelliSense|Descripción|  
+|Marca de Host de IntelliSense|DESCRIPCIÓN|  
 |----------------------------|-----------------|  
 |IHF_READONLYCONTEXT|Establecer esta marca decir el búfer de contexto es de solo lectura y edición se producen solo dentro del texto de asunto.|  
 |IHF_NOSEPERATESUBJECT|Establecer esto significa que la marca que existe no es ningún asunto independiente de IntelliSense. El asunto existe en el búfer de contexto, como en el tradicional <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> sistema IntelliSense.|  

@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d6bcca1d4c8849169eb5260f890dee293070a603
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.openlocfilehash: 69dac79a040a8eff68c36c82b9a85935d969b5ec
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56644619"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "64808901"
 ---
 # <a name="idiasymbolgetobjectpointertype"></a>IDiaSymbol::get_objectPointerType
 Recupera el tipo del puntero del objeto para un método de clase.
@@ -39,7 +39,7 @@ HRESULT get_objectPointerType ( 
  Si es correcto, devuelve `S_OK`; en caso contrario, devuelve `S_FALSE` o un código de error.
 
 > [!NOTE]
->  Un valor devuelto de `S_FALSE` significa que la propiedad no está disponible para el símbolo.
+> Un valor devuelto de `S_FALSE` significa que la propiedad no está disponible para el símbolo.
 
 ## <a name="remarks"></a>Comentarios
  Esta propiedad solo se aplica a los símbolos con un [SymTagEnum (enumeración)](../../debugger/debug-interface-access/symtagenum.md) el tipo de `SymTagFunctionType`.

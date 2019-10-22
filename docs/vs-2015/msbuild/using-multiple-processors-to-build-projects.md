@@ -13,11 +13,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 3a590d3dc3053c5b857917dc358e32a2c7d5247c
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59651761"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68192858"
 ---
 # <a name="using-multiple-processors-to-build-projects"></a>Uso de varios procesadores para compilar proyectos
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,6 +41,6 @@ MSBuild puede aprovechar las ventajas de los sistemas que tienen varios procesad
   
  Para evitar este problema y habilitar al mismo tiempo las compilaciones para varios procesadores, [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] utiliza el "aislamiento de procesos". Mediante el aislamiento de procesos, [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] pueden crear un máximo de `n` procesos, donde `n` es el número de procesadores disponibles en el sistema. Por ejemplo, si [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] compila una solución en un sistema que tiene dos procesadores de impresión, sólo se crean dos procesos de compilación. Estos procesos se reutilizan para compilar todos los proyectos de la solución.  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Otras referencias  
  [Compilar varios proyectos en paralelo](../msbuild/building-multiple-projects-in-parallel-with-msbuild.md)   
  [Tareas](../msbuild/msbuild-tasks.md)

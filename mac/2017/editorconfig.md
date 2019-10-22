@@ -4,15 +4,14 @@ description: Utilizar un archivo de editorconfig para permitir estilos de codifi
 author: conceptdev
 ms.author: crdun
 ms.date: 05/06/2018
-ms.topic: article
 ms.technology: vs-ide-install
 ms.assetid: 26A0DE31-2FBF-4E1B-99FB-083111AA1680
-ms.openlocfilehash: d42103d17b64ee9b3fb2a0660017824490655808
-ms.sourcegitcommit: da73f7a0cf1795d5d400c0897ae3326191435dd0
+ms.openlocfilehash: 8f54b4c43ed0c438b7d02e4fc08fbb3dff36c34b
+ms.sourcegitcommit: cf8c0fef2b9690595e99ce3802586cdd55fd37c2
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/28/2019
-ms.locfileid: "58568337"
+ms.lasthandoff: 08/28/2019
+ms.locfileid: "70108109"
 ---
 # <a name="creating-and-editing-a-custom-editorconfig-file"></a>Crear y editar un archivo EditorConfig personalizado
 
@@ -123,7 +122,7 @@ csharp_new_line_before_open_brace = none
 
 Al establecer `root` en `true`, se marca este archivo como el archivo de nivel superior del código base y los archivos de `.editorconfig` posteriores del proyecto se pasan por alto, como se ha explicado en la sección [Invalidar la configuración de EditorConfig](#override-editorconfig-settings).
 
-Cada sección se indica mediante corchetes (**[]**) y especifica información sobre los tipos de archivos a los que deberían pertenecer las siguientes propiedades.
+Cada sección se indica mediante corchetes ( **[]** ) y especifica información sobre los tipos de archivos a los que deberían pertenecer las siguientes propiedades.
 
 En el ejemplo anterior, algunos valores se aplican a todos los archivos del proyecto y otros se agregan solo a los archivos de C#. Las siguientes capturas de pantalla muestran el antes y el después de que se aplique la configuración de `.editorconfig`:
 

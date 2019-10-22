@@ -1,5 +1,5 @@
 ---
-title: 'CA1057: Las sobrecargas URI de cadena llaman a sobrecargas System.Uri | Microsoft Docs'
+title: 'CA1057: las sobrecargas URI de cadena llaman a sobrecargas System. Uri | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -12,15 +12,15 @@ helpviewer_keywords:
 - CA1057
 ms.assetid: ef1e983e-9ca7-404b-82d7-65740ba0ce20
 caps.latest.revision: 16
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 4cf50ca225544b06409415320c73e7824a10843a
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: ba7e7de4f3ef6336ed3d82dc1e1da03ec0bf2575
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58996263"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72603077"
 ---
 # <a name="ca1057-string-uri-overloads-call-systemuri-overloads"></a>CA1057: Las sobrecargas URI de cadena llaman a sobrecargas System.Uri
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,23 +29,23 @@ ms.locfileid: "58996263"
 |-|-|
 |TypeName|StringUriOverloadsCallSystemUriOverloads|
 |Identificador de comprobación|CA1057|
-|Categoría|Microsoft.Design|
+|Categoría|Microsoft. Design|
 |Cambio problemático|Poco problemático|
 
 ## <a name="cause"></a>Motivo
- Un tipo declara sobrecargas del método que se diferencian únicamente por la sustitución de un parámetro de cadena con un <xref:System.Uri?displayProperty=fullName> parámetro y la sobrecarga que toma el parámetro de cadena no llama a la sobrecarga que toma el <xref:System.Uri> parámetro.
+ Un tipo declara sobrecargas de método que solo difieren en el reemplazo de un parámetro de cadena con un parámetro <xref:System.Uri?displayProperty=fullName>, y la sobrecarga que toma el parámetro de cadena no llama a la sobrecarga que toma el parámetro <xref:System.Uri>.
 
 ## <a name="rule-description"></a>Descripción de la regla
- Dado que las sobrecargas se diferencian únicamente por la cadena /<xref:System.Uri> parámetro, se supone que la cadena para representar un identificador uniforme de recursos (URI). Las representaciones de cadena de identificadores URI tienen tendencia a analizar y codificar errores, por lo que pueden crear puntos vulnerables en la seguridad. La <xref:System.Uri> clase proporciona estos servicios de forma segura. Para obtener las ventajas de la <xref:System.Uri> (clase), debe llamar la sobrecarga de la cadena la <xref:System.Uri> sobrecargar utilizando el argumento de cadena.
+ Dado que las sobrecargas solo difieren en el parámetro String/<xref:System.Uri>, se supone que la cadena representa un identificador uniforme de recursos (URI). Las representaciones de cadena de identificadores URI tienen tendencia a analizar y codificar errores, por lo que pueden crear puntos vulnerables en la seguridad. La clase <xref:System.Uri> proporciona estos servicios de forma segura. Para aprovechar las ventajas de la clase <xref:System.Uri>, la sobrecarga de la cadena debe llamar a la sobrecarga <xref:System.Uri> mediante el argumento de cadena.
 
 ## <a name="how-to-fix-violations"></a>Cómo corregir infracciones
- Volver a implementar el método que usa la representación de cadena del URI para que crea una instancia de la <xref:System.Uri> clase utilizando el argumento de cadena y, a continuación, pasa el <xref:System.Uri> objeto a la sobrecarga que tiene el <xref:System.Uri> parámetro.
+ Vuelva a implementar el método que usa la representación de cadena del URI para que cree una instancia de la clase <xref:System.Uri> mediante el argumento de cadena y, a continuación, pase el objeto <xref:System.Uri> a la sobrecarga que tiene el parámetro <xref:System.Uri>.
 
 ## <a name="when-to-suppress-warnings"></a>Cuándo suprimir advertencias
  Es seguro suprimir una advertencia de esta regla si el parámetro de cadena no representa un URI.
 
 ## <a name="example"></a>Ejemplo
- El ejemplo siguiente muestra una sobrecarga de la cadena correctamente implementado.
+ En el ejemplo siguiente se muestra una sobrecarga de cadena implementada correctamente.
 
  [!code-cpp[FxCop.Design.CallUriOverload#1](../snippets/cpp/VS_Snippets_CodeAnalysis/FxCop.Design.CallUriOverload/cpp/FxCop.Design.CallUriOverload.cpp#1)]
  [!code-csharp[FxCop.Design.CallUriOverload#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Design.CallUriOverload/cs/FxCop.Design.CallUriOverload.cs#1)]
@@ -58,4 +58,4 @@ ms.locfileid: "58996263"
 
  [CA1054: Los parámetros de URI no deben ser cadenas](../code-quality/ca1054-uri-parameters-should-not-be-strings.md)
 
- [CA1055: URI devuelven valores no deben ser cadenas](../code-quality/ca1055-uri-return-values-should-not-be-strings.md)
+ [CA1055: Los valores devueltos URI no deben ser cadenas](../code-quality/ca1055-uri-return-values-should-not-be-strings.md)

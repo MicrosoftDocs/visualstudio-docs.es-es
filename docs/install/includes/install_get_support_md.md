@@ -5,12 +5,12 @@ ms.date: 03/02/2019
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 ms.topic: include
-ms.openlocfilehash: c8f916c1c1ca96ee04c38ee4f3a4d723582960d0
-ms.sourcegitcommit: cdcbf254db737d42275e95de4ffc4f8c14e87e00
+ms.openlocfilehash: 4990bed7cc6a35be55c667951cbfec89d8bb7b44
+ms.sourcegitcommit: 748d9cd7328a30f8c80ce42198a94a4b5e869f26
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57457967"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "68159924"
 ---
 ## <a name="get-support"></a>Obtener soporte técnico
 

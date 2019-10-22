@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProcess2::CauseBreak
 ms.assetid: efda8865-2319-4d53-90bf-6d9d74cd5195
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a85ab02bce7e1748e769694ee8e06e7898ba2ffb
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: fbe4f3cac40306467e6efc7d87ca860a6d6f3f0e
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56695770"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66353239"
 ---
 # <a name="idebugprocess2causebreak"></a>IDebugProcess2::CauseBreak
 Las solicitudes que el siguiente programa que es ejecutar código en este proceso se detendrá y enviar un [IDebugBreakEvent2](../../../extensibility/debugger/reference/idebugbreakevent2.md) objeto de evento.

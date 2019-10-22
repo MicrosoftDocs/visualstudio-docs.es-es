@@ -1,5 +1,5 @@
 ---
-title: IDebugDocumentInfo::GetDocumentClassId | Microsoft Docs
+title: 'Idebugdocumentinfo (:: GetDocumentClassId | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,12 +17,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c9e86c42954fafd4135956845f9465629cde9990
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 996e6d751807bba1e1a74cbb7e579db25193c32b
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58151757"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72569086"
 ---
 # <a name="idebugdocumentinfogetdocumentclassid"></a>IDebugDocumentInfo::GetDocumentClassId
 Devuelve un `CLSID` que identifica el tipo de documento.  
@@ -37,7 +37,7 @@ HRESULT GetDocumentClassId(
   
 #### <a name="parameters"></a>Parámetros  
  `pclsidDocument`  
- [out] Un `CLSID` que identifica el tipo de documento.  
+ enuncia @No__t_0 que identifica el tipo de documento.  
   
 ## <a name="return-value"></a>Valor devuelto  
  El método devuelve un objeto `HRESULT`. Entre los valores posibles se incluyen los que se indican en la tabla siguiente, entre otros.  
@@ -47,9 +47,9 @@ HRESULT GetDocumentClassId(
 |`S_OK`|El método se realizó correctamente.|  
   
 ## <a name="remarks"></a>Comentarios  
- Este método permite al depurador IDE visores personalizados de host para este documento.  
+ Este método permite que el IDE del depurador hospede visores personalizados para este documento.  
   
- Si el documento no tiene datos visible, el valor devuelto de `pclsidDocument` es `CLSID_NULL`.  
+ Si el documento no tiene datos visibles, el valor devuelto de `pclsidDocument` se `CLSID_NULL`.  
   
 ## <a name="see-also"></a>Vea también  
  [IDebugDocumentInfo (Interfaz)](../../winscript/reference/idebugdocumentinfo-interface.md)

@@ -1,5 +1,5 @@
 ---
-title: IDebugDocumentHost::GetPathName | Microsoft Docs
+title: 'IDebugDocumentHost:: GetPathName | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 09e36411cdd378e78ac3bc59df5330eb8ecb47b6
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 33ebcde4cf1db28e199f13fae720374bd1b64763
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58160581"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72569281"
 ---
 # <a name="idebugdocumenthostgetpathname"></a>IDebugDocumentHost::GetPathName
-Devuelve el nombre completo de ruta de acceso y del archivo de código fuente del documento.  
+Devuelve la ruta de acceso completa y el nombre de archivo del archivo de código fuente del documento.  
   
 ## <a name="syntax"></a>Sintaxis  
   
@@ -38,10 +38,10 @@ HRESULT GetPathName(
   
 #### <a name="parameters"></a>Parámetros  
  `pbstrLongName`  
- [out] Una cadena que contiene el nombre largo.  
+ enuncia Cadena que contiene el nombre largo.  
   
  `pfIsOriginalFile`  
- [out] Una marca que es true si `pbstrLongName` hace referencia al archivo original para el documento, false en caso contrario.  
+ enuncia Marca que es true si `pbstrLongName` hace referencia al archivo original del documento; de lo contrario, devuelve false.  
   
 ## <a name="return-value"></a>Valor devuelto  
  El método devuelve un objeto `HRESULT`. Entre los valores posibles se incluyen los que se indican en la tabla siguiente, entre otros.  
@@ -49,10 +49,10 @@ HRESULT GetPathName(
 |Valor|Descripción|  
 |-----------|-----------------|  
 |`S_OK`|El método se realizó correctamente.|  
-|`E_FAIL`|Se puede crear ningún archivo de código fuente o determinado.|  
+|`E_FAIL`|No se puede crear ni determinar ningún archivo de código fuente.|  
   
 ## <a name="remarks"></a>Comentarios  
- Este método devuelve el nombre completo de ruta de acceso y del archivo de código fuente del documento.  
+ Este método devuelve la ruta de acceso completa y el nombre de archivo del archivo de código fuente del documento.  
   
 ## <a name="see-also"></a>Vea también  
  [IDebugDocumentHost (Interfaz)](../../winscript/reference/idebugdocumenthost-interface.md)

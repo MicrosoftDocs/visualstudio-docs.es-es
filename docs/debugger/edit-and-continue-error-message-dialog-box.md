@@ -19,11 +19,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 0428ecf21da525b8f77334e57547c8f10da7cdf5
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60044908"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62851639"
 ---
 # <a name="edit-and-continue-error-message"></a>Editar y continuar el mensaje de error
 
@@ -40,12 +40,12 @@ Las posibles razones para este mensaje de error incluyen:
 - Se está intentando editar código mientras se depuraba una recuperación ante desastres. un volcado de Dr. Watson.
 - Si intenta modificar el código después de que se produce una excepción no controlada y la opción **desenredar la pila de llamadas en las excepciones no controladas** no está seleccionada.
 - Se está intentando editar código mientras se depura una aplicación incrustada en tiempo de ejecución.
-- Se está intentando editar código administrado mediante una versión de .NET Framework anteriores a 4.5.1 con un objetivo de la aplicación de 64 bits. Para utilizar editar y continuar para .NET Framework anteriores a 4.5.1, establezca el destino en **x86** en el  **\<NombreDelProyecto >** > **propiedades**  >  **Compilar** ficha, **compilador avanzada** configuración.
+- Se está intentando editar código administrado mediante una versión de .NET Framework anteriores a 4.5.1 con un objetivo de la aplicación de 64 bits. Para utilizar editar y continuar para .NET Framework anteriores a 4.5.1, establezca el destino en **x86** en el  **\<NombreDelProyecto >**  > **propiedades**  >  **Compilar** ficha, **compilador avanzada** configuración.
 - Se está intentando editar código en un ensamblado que se modificó durante la depuración y se volvió a cargar.
 - Se está intentando editar código en un ensamblado que no se ha cargado.
 - Comenzar a depurar una versión anterior de una aplicación, porque la versión más reciente tiene errores de compilación.
 
-Para obtener más información, consulte:
+Para obtener más información, vea:
 - [C++ editar y continuar blog post](https://devblogs.microsoft.com/cppblog/c-edit-and-continue-in-visual-studio-2015-update-3/)
 - [Cambios admitidos en el código (C++)](../debugger/supported-code-changes-cpp.md)
 - [Editar y continuar](../debugger/edit-and-continue.md)

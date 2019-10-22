@@ -7,17 +7,17 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugPointerField interface
 ms.assetid: d51bd5b2-f18e-4e27-b4fb-e6f652fbf635
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ff3ed7d23272bad1e047ddca46e20b4710644e30
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: dc6939296fa2bfa59aad1824529f8b708a4cd5cb
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56704454"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66308860"
 ---
 # <a name="idebugpointerfield"></a>IDebugPointerField
 Esta interfaz representa un tipo de puntero.

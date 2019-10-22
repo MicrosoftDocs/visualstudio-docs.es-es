@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProgramProvider2::WatchForProviderEvents
 ms.assetid: 2eb93653-b5fb-45b6-b136-56008c5d25ef
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e76baf1330ec63d1032b69fa6cfddce4776742a9
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: eb0968f96300ab62e4b4ee4b34b3e7f574f4b0fc
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56698630"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66343428"
 ---
 # <a name="idebugprogramprovider2watchforproviderevents"></a>IDebugProgramProvider2::WatchForProviderEvents
 Permite que el proceso recibir una notificación de eventos de puerto.
@@ -46,10 +49,9 @@ int WatchForProviderEvents(
 );
 ```
 
-#### <a name="parameters"></a>Parámetros
- `Flags`
-
- [in] Una combinación de marcas de la [PROVIDER_FLAGS](../../../extensibility/debugger/reference/provider-flags.md) enumeración. Las marcas siguientes son típicas para esta llamada:
+## <a name="parameters"></a>Parámetros
+`Flags`\
+[in] Una combinación de marcas de la [PROVIDER_FLAGS](../../../extensibility/debugger/reference/provider-flags.md) enumeración. Las marcas siguientes son típicas para esta llamada:
 
 |Marcar|Descripción|
 |----------|-----------------|
@@ -58,25 +60,20 @@ int WatchForProviderEvents(
 |`PFLAG_ATTACHED_TO_DEBUGGEE`|Autor de llamada se adjunta a pero no se inicia el depurador.|
 |`PFLAG_REASON_WATCH`|Autor de llamada quiere inspeccionar los eventos. Si no se establece esta marca. a continuación, se quita el evento de devolución de llamada y el llamador ya no recibe notificaciones.|
 
- `pPort`
+`pPort`\
+[in] El puerto que el proceso de llamada se ejecuta en.
 
- [in] El puerto que el proceso de llamada se ejecuta en.
+`processId`\
+[in] Un [AD_PROCESS_ID](../../../extensibility/debugger/reference/ad-process-id.md) estructura que contiene el identificador del proceso que contiene el programa en cuestión.
 
- `processId`
+`EngineFilter`\
+[in] Una matriz de GUID de motores de depuración asociados con el proceso.
 
- [in] Un [AD_PROCESS_ID](../../../extensibility/debugger/reference/ad-process-id.md) estructura que contiene el identificador del proceso que contiene el programa en cuestión.
+`guidLaunchingEngine`\
+[in] GUID del motor de depuración que inició este proceso (si existe).
 
- `EngineFilter`
-
- [in] Una matriz de GUID de motores de depuración asociados con el proceso.
-
- `guidLaunchingEngine`
-
- [in] GUID del motor de depuración que inició este proceso (si existe).
-
- `pEventCallback`
-
- [in] Un [IDebugPortNotify2](../../../extensibility/debugger/reference/idebugportnotify2.md) objeto que recibe las notificaciones de eventos.
+`pEventCallback`\
+[in] Un [IDebugPortNotify2](../../../extensibility/debugger/reference/idebugportnotify2.md) objeto que recibe las notificaciones de eventos.
 
 ## <a name="return-value"></a>Valor devuelto
  Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.

@@ -14,12 +14,12 @@ caps.latest.revision: 45
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 61c56636eec92f28468533b7c4d9a51e6f120363
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 77de4fea82e05f539c89a75178d93f985e5a0fb3
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60054502"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67823855"
 ---
 # <a name="run-windows-store-apps-in-the-simulator"></a>Ejecutar aplicaciones de la Tienda Windows en el simulador
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ El simulador de Visual Studio para aplicaciones de la Tienda Windows es una apli
  Consulte [Run Windows Phone apps in the emulator](../debugger/run-windows-phone-apps-in-the-emulator.md) para obtener información de Windows Phone.  
   
 > [!IMPORTANT]
->  El simulador de Visual Studio 2015 no incluye el botón de geolocalización. Esto se debe a que el simulador de Windows 10 no incluye la simulación de geolocalización. Si necesita realizar este tipo de simulación, puede usar el simulador de Visual Studio 2013 en Windows 8.1 o en sistemas operativos anteriores.  
+> El simulador de Visual Studio 2015 no incluye el botón de geolocalización. Esto se debe a que el simulador de Windows 10 no incluye la simulación de geolocalización. Si necesita realizar este tipo de simulación, puede usar el simulador de Visual Studio 2013 en Windows 8.1 o en sistemas operativos anteriores.  
   
 ## <a name="BKMK_Set_the_simulator_as_the_target"></a> Establecer el simulador como destino  
  Para ejecutar la aplicación de la Tienda Windows en el simulador, selecciona **Simulador** en la lista desplegable que hay junto al botón **Iniciar depuración** en la barra de herramientas **Estándar** del depurador.  
@@ -55,30 +55,30 @@ El simulador de Visual Studio para aplicaciones de la Tienda Windows es una apli
  Establece el modo de interacción en gestos táctiles de acercar y alejar utilizando dos dedos.  
   
 - ![Destino de simulador dos dedos](../debugger/media/simulator-twofinger.png "SIMULATOR_TwoFinger")  
-  
-    - El icono de destino doble indica la ubicación de los dos dedos en la pantalla del dispositivo.  
-  
-    - Mueve el mouse para colocar los iconos sobre el objeto en la pantalla del dispositivo.  
-  
-    - Gira la rueda del mouse hacia atrás o hacia delante para cambiar la distancia simulada de los dos dedos antes de realizar la emulación táctil de acercar o alejar.  
-  
+
+  - El icono de destino doble indica la ubicación de los dos dedos en la pantalla del dispositivo.  
+
+  - Mueve el mouse para colocar los iconos sobre el objeto en la pantalla del dispositivo.  
+
+  - Gira la rueda del mouse hacia atrás o hacia delante para cambiar la distancia simulada de los dos dedos antes de realizar la emulación táctil de acercar o alejar.  
+
 - ![Alejar, acercar y girar destinos](../debugger/media/simulator-twofingerengaged.png "SIMULATOR_TwoFingerEngaged")  
-  
-    - Presiona el botón primario y gira la rueda hacia atrás (hacia ti) para acercar (acercar los dedos).  
-  
-    - Presiona el botón primario y gira la rueda del mouse hacia delante (hacia el lado contrario a donde tú estás) para alejar (separar los dedos).  
+
+  - Presiona el botón primario y gira la rueda hacia atrás (hacia ti) para acercar (acercar los dedos).  
+
+  - Presiona el botón primario y gira la rueda del mouse hacia delante (hacia el lado contrario a donde tú estás) para alejar (separar los dedos).  
   
 ## <a name="object-rotation"></a>Rotación de objetos  
  El botón **Emulación táctil, girar** establece el modo de interacción en los gestos de rotación de dos dedos.  
   
 - Mueve el mouse para colocar los iconos sobre el objeto en la pantalla del dispositivo.  
   
-    - Gira la rueda del mouse hacia atrás o hacia delante para cambiar la orientación simulada de los dos dedos antes de rotar el objeto.  
-  
+  - Gira la rueda del mouse hacia atrás o hacia delante para cambiar la orientación simulada de los dos dedos antes de rotar el objeto.  
+
 - Presiona el botón primario y gira la rueda hacia atrás (hacia ti) para rotar el objeto hacia la izquierda. Al girar la rueda del mouse, uno de los dos iconos de destino rota alrededor del otro para indicar el tamaño relativo de la rotación.  
-  
-    - Presiona el botón primario y gira la rueda del mouse hacia delante (hacia el lado contrario a donde te encuentras) para rotar el objeto en el sentido de las agujas del reloj.  
-  
+
+  - Presiona el botón primario y gira la rueda del mouse hacia delante (hacia el lado contrario a donde te encuentras) para rotar el objeto en el sentido de las agujas del reloj.  
+
 ## <a name="BKMK_Enable_or_disable_Always_on_top_mode"></a> Habilitar o deshabilitar el modo Siempre visible  
  Puedes establecer la ventana del simulador para que siempre esté encima de las demás. El botón **Alternar la ventana de nivel superior** habilita o deshabilita el modo **Siempre visible** de la ventana del simulador.  
   
@@ -86,10 +86,10 @@ El simulador de Visual Studio para aplicaciones de la Tienda Windows es una apli
  Puedes cambiar la orientación del dispositivo entre vertical y horizontal rotándolo 90 grados en cualquier dirección.  
   
 > [!NOTE]
->  El simulador no respeta la propiedad [DisplayProperties.AutoRotationPreferences](http://go.microsoft.com/fwlink/?LinkId=249460) de un proyecto. Por ejemplo, si el proyecto establece la orientación en `Landscape`y, después, tú rotes el simulador para situarlo en orientación vertical, la imagen de la pantalla del simulador también se rotará y cambiará de tamaño. Debes probar la configuración en un dispositivo real.  
+> El simulador no respeta la propiedad [DisplayProperties.AutoRotationPreferences](http://go.microsoft.com/fwlink/?LinkId=249460) de un proyecto. Por ejemplo, si el proyecto establece la orientación en `Landscape`y, después, tú rotes el simulador para situarlo en orientación vertical, la imagen de la pantalla del simulador también se rotará y cambiará de tamaño. Debes probar la configuración en un dispositivo real.  
   
 > [!NOTE]
->  Si rotas el simulador de modo que su borde sea mayor que la pantalla en que aparece, su tamaño cambia para ajustarse automáticamente a la pantalla. Si lo vuelves a rotar, no recupera su tamaño original.  
+> Si rotas el simulador de modo que su borde sea mayor que la pantalla en que aparece, su tamaño cambia para ajustarse automáticamente a la pantalla. Si lo vuelves a rotar, no recupera su tamaño original.  
   
 ## <a name="BKMK_Change_the_simulated_screen_size_and_resolution"></a> Cambiar el tamaño y la resolución de pantalla simulados  
  Para cambiar el tamaño y la resolución de pantalla simulados, seleccione el botón **Cambiar resolución** en la paleta y seleccione otro tamaño y resolución en la lista.  
@@ -97,13 +97,13 @@ El simulador de Visual Studio para aplicaciones de la Tienda Windows es una apli
  El tamaño y la resolución de la pantalla aparecen como *Pulgadas de ancho de pantalla, ancho de píxel X alto de píxel*. Ten en cuenta que tanto el tamaño como la resolución de pantalla son simulados. Las coordenadas de ubicación del simulador se convierten a las coordenadas del tamaño y la resolución seleccionados del dispositivo.  
   
 > [!NOTE]
->  Puedes guardar versiones a escala de las imágenes de mapa de bits en tu aplicación. Windows cargará la imagen correcta para la escala actual. Para más información, vea [Diseño dinámico 101](https://msdn.microsoft.com/library/windows/apps/dn958435.aspx). Sin embargo, si cambias la resolución del simulador de modo que Windows elija otra imagen para ajustarla a la resolución, deberás detener y reiniciar la sesión de depuración para ver la nueva imagen.  
+> Puedes guardar versiones a escala de las imágenes de mapa de bits en tu aplicación. Windows cargará la imagen correcta para la escala actual. Para más información, vea [Diseño dinámico 101](https://msdn.microsoft.com/library/windows/apps/dn958435.aspx). Sin embargo, si cambias la resolución del simulador de modo que Windows elija otra imagen para ajustarla a la resolución, deberás detener y reiniciar la sesión de depuración para ver la nueva imagen.  
   
 ## <a name="BKMK_Capture_a_screenshot_of_your_app_for_submission_to_the_Microsoft_Store"></a> Realizar una captura de pantalla de la aplicación para enviarla a la Tienda Windows  
  Al enviar una aplicación a la tienda de aplicaciones de Windows, debe incluir capturas de pantalla de la aplicación.  
   
 > [!NOTE]
->  La captura de pantalla se guarda con la resolución actual del simulador. Para cambiar la resolución, elige el botón **Cambiar resolución** .  
+> La captura de pantalla se guarda con la resolución actual del simulador. Para cambiar la resolución, elige el botón **Cambiar resolución** .  
   
 - Para crear capturas de pantalla de la aplicación en el simulador, elige el botón **Capturar pantalla en el Portapapeles** .  
   
@@ -112,7 +112,7 @@ El simulador de Visual Studio para aplicaciones de la Tienda Windows es una apli
      ![Menú de contexto de configuración de captura de pantalla](../debugger/media/simulator-screenshotsettingscntxmnu.png "SIMULATOR_ScreenShotSettingsCntxMnu")  
   
 ## <a name="BKMK_Simulate_network_connection_properties"></a> Simular propiedades de conexión de red  
- Puedes ayudar a los usuarios de la aplicación a administrar los costos de las conexiones de red de uso medido haciendo que tengan conocimiento de ellos o de los cambios de estado del plan de datos, y habilitando la aplicación para utilizar esta información y evitar incurrir así en gastos adicionales por uso en roaming o por superar un límite de transferencia de datos determinado. Las API de [Windows.Networking.Connectivity](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.aspx) le permiten responder a los eventos [NetworkStatusChanged](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.networkinformation.networkstatuschanged.aspx) y [TriggerType](https://msdn.microsoft.com/library/windows/apps/windows.applicationmodel.background.systemtrigger.triggertype.aspx) que firman. Consulte [Inicio rápido: Administrar las restricciones de costo de red de uso medido](http://msdn.microsoft.com/library/windows/apps/Hh750310.aspx).  
+ Puedes ayudar a los usuarios de la aplicación a administrar los costos de las conexiones de red de uso medido haciendo que tengan conocimiento de ellos o de los cambios de estado del plan de datos, y habilitando la aplicación para utilizar esta información y evitar incurrir así en gastos adicionales por uso en roaming o por superar un límite de transferencia de datos determinado. Las API de [Windows.Networking.Connectivity](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.aspx) le permiten responder a los eventos [NetworkStatusChanged](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.networkinformation.networkstatuschanged.aspx) y [TriggerType](https://msdn.microsoft.com/library/windows/apps/windows.applicationmodel.background.systemtrigger.triggertype.aspx) que firman. Consulte [Quickstart: Administrar las restricciones de costo de red de uso medido](https://msdn.microsoft.com/library/windows/apps/Hh750310.aspx).  
   
  Para depurar o probar el código con reconocimiento de costos de red, el simulador puede imitar las propiedades de una red que se exponen a través del objeto [ConnectionProfile](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.connectionprofile.aspx) devuelto por [GetInternetConnectionProfile](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.networkinformation.getinternetconnectionprofile.aspx).  
   
@@ -136,7 +136,7 @@ El simulador de Visual Studio para aplicaciones de la Tienda Windows es una apli
   
    **Más información sobre la administración de conexiones de red**  
   
-   [Inicio rápido: Administración de las restricciones de costo de red de uso medido](http://msdn.microsoft.com/library/windows/apps/Hh750310.aspx)  
+   [Inicio rápido: Administración de las restricciones de costo de red de uso medido](https://msdn.microsoft.com/library/windows/apps/Hh750310.aspx)  
   
    [Ejemplo de información de red](http://code.msdn.microsoft.com/windowsapps/Network-Information-Sample-63aaa201)  
   
@@ -144,9 +144,9 @@ El simulador de Visual Studio para aplicaciones de la Tienda Windows es una apli
   
    [Windows.Networking.Connectivity](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.aspx)  
   
-   [Cómo responder a eventos del sistema con tareas en segundo plano](http://msdn.microsoft.com/f7c86e86-a7ae-4abb-a923-76b03337a80a)  
+   [Cómo responder a eventos del sistema con tareas en segundo plano](https://msdn.microsoft.com/f7c86e86-a7ae-4abb-a923-76b03337a80a)  
   
-   [Desencadenar eventos de suspensión, reanudación y en segundo plano en aplicaciones de la Tienda Windows](http://msdn.microsoft.com/library/windows/apps/hh974425.aspx)  
+   [Desencadenar eventos de suspensión, reanudación y en segundo plano en aplicaciones de la Tienda Windows](https://msdn.microsoft.com/library/windows/apps/hh974425.aspx)  
   
 ## <a name="BKMK_Navigate_the_simulator_with_the_keyboard"></a> Navegar por el simulador con el teclado  
  Para navegar por la barra de herramientas del simulador presione **Ctrl+Alt+flecha arriba** para cambiar el foco de la ventana del simulador a la barra de herramientas del simulador. Usa las teclas **Flecha arriba** y **Flecha abajo** para desplazarte entre los botones de la barra de herramientas.  

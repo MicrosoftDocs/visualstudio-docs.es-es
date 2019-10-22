@@ -13,12 +13,12 @@ caps.latest.revision: 14
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 889412b3fb060250a0ff8392bf959c2759cf81d8
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: f9c50f5d352d8a52b0eb8b125992b2c325e48234
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58994727"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "64811867"
 ---
 # <a name="idiasymbolgetundecoratednameex"></a>IDiaSymbol::get_undecoratedNameEx
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -39,21 +39,21 @@ HRESULT get_undecoratedNameEx( 
  [in] Especifica una combinación de marcas que controlan lo que se devuelve. Consulte la sección Comentarios para los valores específicos y qué hacen.  
   
  `pRetVal`  
- [out] Devuelve que el nombre no representativo de C++ nombre representativo.  
+ [out] Devuelve el nombre no representativo para un C++ nombre representativo.  
   
 ## <a name="return-value"></a>Valor devuelto  
  Si es correcto, devuelve `S_OK`; en caso contrario, devuelve `S_FALSE` o un código de error.  
   
 > [!NOTE]
->  Un valor devuelto de `S_FALSE` significa que la propiedad no está disponible para el símbolo.  
+> Un valor devuelto de `S_FALSE` significa que la propiedad no está disponible para el símbolo.  
   
 ## <a name="remarks"></a>Comentarios  
  El `undecorateOptions` puede ser una combinación de los siguientes indicadores.  
   
 > [!NOTE]
->  Los nombres de marca no se definen en el SDK de DIA, por lo que deberá agregar las declaraciones en el código o utilizar los valores sin procesar.  
+> Los nombres de marca no se definen en el SDK de DIA, por lo que deberá agregar las declaraciones en el código o utilizar los valores sin procesar.  
   
-|Marcar|Valor|Descripción|  
+|Marcar|Valor|DESCRIPCIÓN|  
 |----------|-----------|-----------------|  
 |UNDNAME_COMPLETE|0x0000|Habilita undecoration completa.|  
 |UNDNAME_NO_LEADING_UNDERSCORES|0x0001|Quita los caracteres de subrayado de Microsoft ampliar las palabras clave.|  

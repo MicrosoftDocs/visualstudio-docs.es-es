@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 89123eae-0fef-46d5-bd36-3d2a166b14e3
 caps.latest.revision: 24
 manager: jillfra
-ms.openlocfilehash: 209f5956d77e714f7f663693f9ac22241d428480
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: ac95c40b356c542da323a3ea3744827087f2d840
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60105077"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65686923"
 ---
 # <a name="visual-studio-interop-assembly-parameter-marshaling"></a>Serialización de parámetros de ensamblado de interoperabilidad de Visual Studio
-Los VSPackages que están escritos en código administrado que tenga que llamar o llamar a código COM no administrado. Normalmente, argumentos de método se transforman o serializar automáticamente por el serializador de interoperabilidad. Sin embargo, en ocasiones, no se puede transformar los argumentos de una manera sencilla. En esos casos, se usan los parámetros del prototipo de método de ensamblado de interoperabilidad para que coincida con los parámetros de función COM lo máximo posible. Para obtener más información, consulte [interoperativo](http://msdn.microsoft.com/library/115f7a2f-d422-4605-ab36-13a8dd28142a).  
+Los VSPackages que están escritos en código administrado que tenga que llamar o llamar a código COM no administrado. Normalmente, argumentos de método se transforman o serializar automáticamente por el serializador de interoperabilidad. Sin embargo, en ocasiones, no se puede transformar los argumentos de una manera sencilla. En esos casos, se usan los parámetros del prototipo de método de ensamblado de interoperabilidad para que coincida con los parámetros de función COM lo máximo posible. Para obtener más información, consulte [interoperativo](https://msdn.microsoft.com/library/115f7a2f-d422-4605-ab36-13a8dd28142a).  
   
 ## <a name="general-suggestions"></a>Sugerencias generales  
   
@@ -46,7 +46,7 @@ Los VSPackages que están escritos en código administrado que tenga que llamar 
  A veces, una interfaz COM genera una `IUnknown` objeto y la interfaz COM, a continuación, se pasa como tipo `void **`. Estas interfaces son especialmente importantes porque si la variable se define como [out] en el archivo IDL, el `IUnknown` objeto es el recuento de referencias con el `AddRef` método. Si el objeto no se controla correctamente, se produce una pérdida de memoria.  
   
 > [!NOTE]
->  Un `IUnknown` objeto creado por la interfaz COM y devuelto en una variable [out] provoca una pérdida de memoria si no se libera explícitamente.  
+> Un `IUnknown` objeto creado por la interfaz COM y devuelto en una variable [out] provoca una pérdida de memoria si no se libera explícitamente.  
   
  Deben tratar los métodos administrados que administran dichos objetos <xref:System.IntPtr> como un puntero a un `IUnknown` de objetos y llamar a la <xref:System.Runtime.InteropServices.Marshal.GetObjectForIUnknown%2A> método para obtener el objeto. El llamador, a continuación, debe convertir el valor devuelto para el tipo es adecuado. Cuando el objeto ya no es necesario, llame a <xref:System.Runtime.InteropServices.Marshal.Release%2A> para liberarlo.  
   
@@ -77,7 +77,7 @@ else
 ```  
   
 > [!NOTE]
->  Se conocen los siguientes métodos para pasar `IUnknown` punteros de objeto como tipo <xref:System.IntPtr>. Como se describe en esta sección, controlarlos.  
+> Se conocen los siguientes métodos para pasar `IUnknown` punteros de objeto como tipo <xref:System.IntPtr>. Como se describe en esta sección, controlarlos.  
   
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectFactory.CreateProject%2A>  
   
@@ -123,7 +123,7 @@ else
  Métodos administrados que llaman a las interfaces de este tipo deben extraer el primer elemento de la matriz [out]. Este elemento se puede tratar como si fuese un `retval` devolver valor de la interfaz COM correspondiente.  
   
 ## <a name="see-also"></a>Vea también  
- [Serialización de interoperabilidad](http://msdn.microsoft.com/a95fdb76-7c0d-409e-a77e-0349b1ea1490)   
- [Serialización de interoperabilidad](http://msdn.microsoft.com/library/115f7a2f-d422-4605-ab36-13a8dd28142a)   
- [Solucionar problemas de interoperabilidad](http://msdn.microsoft.com/library/b324cc1e-b03c-4f39-aea6-6a6d5bfd0e37)   
+ [Serialización de interoperabilidad](https://msdn.microsoft.com/a95fdb76-7c0d-409e-a77e-0349b1ea1490)   
+ [Serialización de interoperabilidad](https://msdn.microsoft.com/library/115f7a2f-d422-4605-ab36-13a8dd28142a)   
+ [Solucionar problemas de interoperabilidad](https://msdn.microsoft.com/library/b324cc1e-b03c-4f39-aea6-6a6d5bfd0e37)   
  [VSPackages administrado](../misc/managed-vspackages.md)

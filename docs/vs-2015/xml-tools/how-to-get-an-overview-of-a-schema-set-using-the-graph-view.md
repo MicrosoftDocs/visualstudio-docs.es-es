@@ -1,42 +1,42 @@
 ---
-title: Procedimiento Obtenga información general de un conjunto de esquemas mediante la vista Gráfico | Documentos de Microsoft
+title: 'Cómo: obtener información general de un conjunto de esquemas mediante la vista gráfico | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-xml-tools
 ms.topic: conceptual
 ms.assetid: c0df4b0d-52ef-4a6c-9676-1d8311aad7c7
 caps.latest.revision: 10
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: f6f264427e10cbe444cab8a5208e86866635ed17
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 7009e5772b4f4c6977d58d2c52d733999a0d9369
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60082742"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72670896"
 ---
-# <a name="how-to-get-an-overview-of-a-schema-set-using-the-graph-view"></a>Procedimiento Obtener información general de un conjunto de esquemas mediante la vista Gráfico
+# <a name="how-to-get-an-overview-of-a-schema-set-using-the-graph-view"></a>Cómo: Obtener información general de un conjunto de esquemas mediante la vista Gráfico
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Este tema describe cómo usar el [vista gráfico](../xml-tools/graph-view.md) para ver una visión general de los nodos de un conjunto de esquemas y las relaciones entre los nodos.  
-  
-### <a name="to-create-a-new-xsd-file-and-display-the-root-element-in-the-content-model-view"></a>Para crear un nuevo archivo XSD y mostrar el elemento raíz en el vista Modelo de contenido  
-  
-1. Cree un nuevo archivo de esquema XML y guarde el archivo como Relationships.xsd.  
-  
-2. Haga clic en el **Use el Editor XML para ver y editar el archivo de esquema XML subyacente** vínculo en la vista inicio.  
-  
-3. Copie el código de ejemplo de esquema XML de [esquema XML de ejemplo: Relaciones](../xml-tools/sample-xsd-file-relationships.md) y péguelo para reemplazar el código que se ha agregado el nuevo archivo XSD de forma predeterminada.  
-  
-4. Haga clic en cualquier lugar en el Editor XML y seleccione **Diseñador de vistas**.  
-  
-5. Seleccione el vista Gráfico en la barra de herramientas XSD.  
-  
-6. Seleccione **del conjunto de esquemas** nodo en el Explorador de esquemas XML y arrastre el nodo a la superficie de diseño de la vista gráfico. Debería ver todos los nodos globales y las flechas que conectan los nodos que tienen relaciones.  
-  
-     ![Vista gráfica](../xml-tools/media/relationshipingraphview.gif "RelationshipInGraphView")  
-  
-7. Haga clic en cualquier nodo de la superficie de diseño y busque en la barra de ruta de navegación dónde se encuentra el nodo seleccionado dentro del conjunto de esquemas.  
-  
-8. Haga clic en cualquier nodo de elemento de la con superficie y seleccione **generar XML de ejemplo** para ver el documento de instancia XML.
+En este tema se describe cómo usar la [vista de gráfico](../xml-tools/graph-view.md) para ver una vista de alto nivel de los nodos de un conjunto de esquemas y las relaciones entre los nodos.
+
+### <a name="to-create-a-new-xsd-file-and-display-the-root-element-in-the-content-model-view"></a>Para crear un nuevo archivo XSD y mostrar el elemento raíz en el vista Modelo de contenido
+
+1. Cree un nuevo archivo de esquema XML y guarde el archivo como Relationships.xsd.
+
+2. Haga clic en el vínculo **usar el editor XML para ver y editar el archivo de esquema XML subyacente** en la vista Inicio.
+
+3. Copie el código de ejemplo del esquema XML del [esquema XML de ejemplo: Relationships](../xml-tools/sample-xsd-file-relationships.md) y péguelo para reemplazar el código que se agregó al nuevo archivo XSD de forma predeterminada.
+
+4. Haga clic con el botón secundario en cualquier parte del editor XML y seleccione **Diseñador de vistas**.
+
+5. Seleccione el vista Gráfico en la barra de herramientas XSD.
+
+6. Seleccione el nodo **conjunto de esquemas** en el explorador de esquemas XML y arrastre el nodo al superficie de diseño de la vista gráfico. Debería ver todos los nodos globales y las flechas que conectan los nodos que tienen relaciones.
+
+     ![Vista de gráfico](../xml-tools/media/relationshipingraphview.gif "RelationshipInGraphView")
+
+7. Haga clic en cualquier nodo de la superficie de diseño y busque en la barra de ruta de navegación dónde se encuentra el nodo seleccionado dentro del conjunto de esquemas.
+
+8. Rick: haga clic en cualquier nodo de elemento en la superficie de la que se encuentra y seleccione **generar XML de ejemplo** para ver el documento de instancia XML.

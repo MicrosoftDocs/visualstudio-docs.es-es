@@ -11,13 +11,13 @@ caps.latest.revision: 16
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 8f9396e4523e38e7313efb5668c4680f551558ab
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58986985"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68184951"
 ---
-# <a name="accessing-thetext-view-by-using-the-legacy-api"></a>Acceso a Text vista mediante la API heredada
+# <a name="accessing-thetext-view-by-using-the-legacy-api"></a>Acceso a la vista de texto mediante la API heredada
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Una vista de texto es una presentación del texto que se almacena en un búfer de texto. Puede tener acceso a la vista de texto mediante el uso de la API heredada tal como se muestra en la sección siguiente.  

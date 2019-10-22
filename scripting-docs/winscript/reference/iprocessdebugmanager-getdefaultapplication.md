@@ -1,5 +1,5 @@
 ---
-title: IProcessDebugManager::GetDefaultApplication | Documentos de Microsoft
+title: 'IProcessDebugManager:: GetDefaultApplication | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,12 +17,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 6fec84a60863b426f2f65c26e2375262b109d635
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: b3532177c32e0d7eb0b7a67a445845cee753d316
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58160292"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72576800"
 ---
 # <a name="iprocessdebugmanagergetdefaultapplication"></a>IProcessDebugManager::GetDefaultApplication
 Devuelve un objeto de aplicación predeterminado para el proceso actual.  
@@ -37,7 +37,7 @@ HRESULT GetDefaultApplication(
   
 #### <a name="parameters"></a>Parámetros  
  `ppda`  
- [out] El objeto de aplicación de depuración para esta aplicación.  
+ enuncia Objeto de la aplicación de depuración para esta aplicación.  
   
 ## <a name="return-value"></a>Valor devuelto  
  El método devuelve un objeto `HRESULT`. Entre los valores posibles se incluyen los que se indican en la tabla siguiente, entre otros.  
@@ -47,9 +47,9 @@ HRESULT GetDefaultApplication(
 |`S_OK`|El método se realizó correctamente.|  
   
 ## <a name="remarks"></a>Comentarios  
- Este método crea un nuevo objeto de aplicación de depuración y lo agrega a la que se ejecuta la lista de aplicaciones, si es necesario.  
+ Este método crea un nuevo objeto de aplicación de depuración y lo agrega a la lista de aplicaciones en ejecución, si es necesario.  
   
- Motores de lenguaje deben usar la aplicación especificada por el `GetDefaultApplication` método si se están ejecutando en un host que no proporciona una aplicación.  
+ Los motores de lenguaje deben usar la aplicación especificada por el método `GetDefaultApplication` si se ejecutan en un host que no proporciona ninguna aplicación.  
   
 ## <a name="see-also"></a>Vea también  
  [IProcessDebugManager (Interfaz)](../../winscript/reference/iprocessdebugmanager-interface.md)

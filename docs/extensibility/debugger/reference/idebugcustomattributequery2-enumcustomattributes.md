@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugCustomAttributeQuery2::EnumCustomAttributes
 ms.assetid: 94bfce74-aa3d-45f0-8e04-5715faf85217
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: aade3935a49af176220e800647e6e821054bbb48
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: fc9cc9158939ac0cbd7cac482961e2078b8249ad
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56710362"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66322228"
 ---
 # <a name="idebugcustomattributequery2enumcustomattributes"></a>IDebugCustomAttributeQuery2::EnumCustomAttributes
 Obtiene un enumerador para todos los atributos personalizados asociados a este campo.
@@ -36,10 +39,9 @@ int EnumCustomAttributes(
 );
 ```
 
-#### <a name="parameters"></a>Parámetros
- `ppEnum`
-
- [out] Devuelve un [IEnumDebugCustomAttributes](../../../extensibility/debugger/reference/ienumdebugcustomattributes.md) objeto que representa la lista de atributos personalizados; de lo contrario, devuelve un valor null si no hay ningún atributo personalizado.
+## <a name="parameters"></a>Parámetros
+`ppEnum`\
+[out] Devuelve un [IEnumDebugCustomAttributes](../../../extensibility/debugger/reference/ienumdebugcustomattributes.md) objeto que representa la lista de atributos personalizados; de lo contrario, devuelve un valor null si no hay ningún atributo personalizado.
 
 ## <a name="return-value"></a>Valor devuelto
  Si se realiza correctamente, devuelve S_OK o S_FALSE si no hay ningún atributo personalizado en este campo. En caso contrario, devuelve un código de error;

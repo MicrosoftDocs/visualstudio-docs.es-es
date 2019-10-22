@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugObject::GetValue method
 ms.assetid: eec6051e-8ecb-49fa-bdd4-dd786f211692
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8d8b55fed250b94fc02c9810eca17ec0934bf81e
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 59d58e136045bb4177755c981f91974f9ac2fa77
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56690739"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66323645"
 ---
 # <a name="idebugobjectgetvalue"></a>IDebugObject::GetValue
 Obtiene el valor del objeto como una serie consecutiva de bytes.
@@ -38,14 +41,12 @@ int GetValue(
 );
 ```
 
-#### <a name="parameters"></a>Parámetros
- `pValue`
+## <a name="parameters"></a>Parámetros
+`pValue`\
+[in, out] Una matriz que se rellena con una serie consecutiva de bytes que representa el valor del objeto.
 
- [in, out] Una matriz que se rellena con una serie consecutiva de bytes que representa el valor del objeto.
-
- `nSize`
-
- [in] El número máximo de bytes para capturar.
+`nSize`\
+[in] El número máximo de bytes para capturar.
 
 ## <a name="return-value"></a>Valor devuelto
  Si se realiza correctamente, devuelve S_OK; en caso contrario, devuelve un código de error.

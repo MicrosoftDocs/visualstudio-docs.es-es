@@ -6,17 +6,17 @@ helpviewer_keywords:
 - source control [Visual Studio SDK], checking items in
 - source control plug-ins, checking items in
 ms.assetid: d0329fa8-7a8d-4d30-b67b-6f2a97b75a30
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 34d988f88787efc2f40b663ef2f22e6273055533
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 257dce02614cc562c5a5d9d3756df27365a9f7df
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60038717"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66331016"
 ---
 # <a name="test-area-4-check-in"></a>Área de prueba 4: Inserción en el repositorio
 Esta área de prueba de complemento de control de código fuente trata de enviar los elementos actualizados en el almacén de versiones a través de la **proteger** comando.

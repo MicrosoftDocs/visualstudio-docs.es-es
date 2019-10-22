@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugDocumentTextEvents2::onRemoveText
 ms.assetid: 1ebeabb2-52a1-4ccc-83cd-9ae7c3541783
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: df0504515d8ddacb4e21918cefffe76f8e96d6a1
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 4698399cd69c9493b9690bbac24a2b0bc3309d61
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56682640"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66330511"
 ---
 # <a name="idebugdocumenttextevents2onremovetext"></a>IDebugDocumentTextEvents2::onRemoveText
 Notifica el paquete de depuración que se ha quitado el texto del documento.
@@ -38,14 +41,12 @@ int onRemoveText( 
 );
 ```
 
-#### <a name="parameters"></a>Parámetros
- `pos`
+## <a name="parameters"></a>Parámetros
+`pos`\
+[in] Un [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md) estructura que indica que se quitó el texto.
 
- [in] Un [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md) estructura que indica que se quitó el texto.
-
- `dwNumToRemove`
-
- [in] Especifica el número de caracteres de texto que se quitaron.
+`dwNumToRemove`\
+[in] Especifica el número de caracteres de texto que se quitaron.
 
 ## <a name="return-value"></a>Valor devuelto
  Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.

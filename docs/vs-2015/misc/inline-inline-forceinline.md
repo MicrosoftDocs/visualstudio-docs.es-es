@@ -1,5 +1,5 @@
 ---
-title: inline, __inline, __forceinline | Microsoft Docs
+title: Inline, _ _ Inline, _ _ forceinline | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: devlang-csharp
@@ -23,17 +23,17 @@ helpviewer_keywords:
 - instantiation, defined
 ms.assetid: a159d11e-5dc6-4bac-b2cf-b5f23688e552
 caps.latest.revision: 10
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: d142f414046a0d477cd94ae1c027f4bf6bee9518
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 2a13b4df1231f9a71797592f61c7852dfb5dfced
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58998864"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72609713"
 ---
-# <a name="inline-inline-forceinline"></a>inline, __inline, __forceinline
-Este contenido se movió a [funciones insertadas](http://msdn.microsoft.com/library/355f120c-2847-4608-ac04-8dda18ffe10c)  
-  
+# <a name="inline-__inline-__forceinline"></a>inline, __inline, __forceinline
+Este contenido se ha migrado a [funciones insertadas](https://msdn.microsoft.com/library/355f120c-2847-4608-ac04-8dda18ffe10c)
+
 ## <a name="syntax"></a>Sintaxis

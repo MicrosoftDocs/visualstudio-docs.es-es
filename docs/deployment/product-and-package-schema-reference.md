@@ -25,27 +25,27 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 489415eba929a73c25b8aea7262c3e930a5d90cd
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.openlocfilehash: 1570aa3d4ea72dc1d133ce3096e1726fa1ffb782
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56598991"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66745615"
 ---
 # <a name="product-and-package-schema-reference"></a>Referencia de esquemas de productos y paquetes
-Un *archivo producto* es un manifiesto XML que describe todas las dependencias externas requeridas por un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicación. Algunos ejemplos de dependencias externas son el [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] y Microsoft Data Access Components (MDAC). Un archivo de paquete es similar a un archivo de producto, pero se usa para instalar los componentes dependientes de la referencia cultural de una dependencia, como ensamblados localizables, contratos de licencia y documentación.
+Un *archivo producto* es un manifiesto XML que describe todas las dependencias externas requeridas por un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicación. .NET Framework y Microsoft Data Access Components (MDAC) son ejemplos de dependencias externas. Un archivo de paquete es similar a un archivo de producto, pero se usa para instalar los componentes dependientes de la referencia cultural de una dependencia, como ensamblados localizables, contratos de licencia y documentación.
 
  El archivo del producto y de paquetes consta de un nivel superior `Product` o `Package` elemento, cada uno de los cuales contiene los siguientes elementos.
 
 |Elemento|Descripción|Atributos|
 |-------------|-----------------|----------------|
-|[\<Producto > elemento](../deployment/product-element-bootstrapper.md)|Elemento de nivel superior se requiere para los archivos de producto.|Ninguna|
-|[\<Paquete > elemento](../deployment/package-element-bootstrapper.md)|Elemento de nivel superior se requiere para los archivos de paquete.|`Culture`<br /><br /> `Name`<br /><br /> `EULA`|
-|[\<RelatedProducts > elemento](../deployment/relatedproducts-element-bootstrapper.md)|Elemento opcional para los archivos de producto. Otros productos que instala o depende de este producto.|Ninguna|
-|[\<InstallChecks > elemento](../deployment/installchecks-element-bootstrapper.md)|Elemento necesario. Las listas de las comprobaciones de dependencia para llevar a cabo en el equipo local durante la instalación.|Ninguna|
-|[\<Comandos > elemento](../deployment/commands-element-bootstrapper.md)|Elemento necesario.  Ejecuta una o más comprobaciones de instalación como se describe en `InstallChecks`e indica qué paquete de instalación debe la comprobación de errores.|Ninguna|
-|[\<PackageFiles > elemento](../deployment/packagefiles-element-bootstrapper.md)|Elemento necesario. Enumera los paquetes que podrían instalarse por este proceso de instalación.|Ninguna|
-|[\<Cadenas > elemento](../deployment/strings-element-bootstrapper.md)|Elemento necesario. Almacenes de versiones localizadas de las cadenas de error y de nombre de producto.|Ninguna|
+|[\<Product> Element](../deployment/product-element-bootstrapper.md)|Elemento de nivel superior se requiere para los archivos de producto.|Ninguna|
+|[\<Package> Element](../deployment/package-element-bootstrapper.md)|Elemento de nivel superior se requiere para los archivos de paquete.|`Culture`<br /><br /> `Name`<br /><br /> `EULA`|
+|[\<RelatedProducts> Element](../deployment/relatedproducts-element-bootstrapper.md)|Elemento opcional para los archivos de producto. Otros productos que instala o depende de este producto.|Ninguna|
+|[\<InstallChecks> Element](../deployment/installchecks-element-bootstrapper.md)|Elemento necesario. Las listas de las comprobaciones de dependencia para llevar a cabo en el equipo local durante la instalación.|Ninguna|
+|[\<Commands> Element](../deployment/commands-element-bootstrapper.md)|Elemento necesario.  Ejecuta una o más comprobaciones de instalación como se describe en `InstallChecks`e indica qué paquete de instalación debe la comprobación de errores.|Ninguna|
+|[\<PackageFiles> Element](../deployment/packagefiles-element-bootstrapper.md)|Elemento necesario. Enumera los paquetes que podrían instalarse por este proceso de instalación.|Ninguna|
+|[\<Strings> Element](../deployment/strings-element-bootstrapper.md)|Elemento necesario. Almacenes de versiones localizadas de las cadenas de error y de nombre de producto.|Ninguna|
 
 ## <a name="remarks"></a>Comentarios
  El esquema del paquete es consumido por *Setup.exe*, un programa de código auxiliar generado por el arranque de la tarea que contiene poca lógica codificada de forma rígida de su propia de MS Build. El esquema controla todos los aspectos del proceso de instalación.
@@ -53,7 +53,7 @@ Un *archivo producto* es un manifiesto XML que describe todas las dependencias e
  `InstallChecks` las pruebas que setup.exe debe realizar la existencia de un paquete determinado. `PackageFiles` Enumera todos los paquetes que el proceso de instalación que tenga que instalar, debe generar un error de una prueba determinada. Cada entrada de comando de comandos ejecuta una de las pruebas descritas por `InstallChecks`y especifica qué `PackageFile` para ejecutar la prueba falle. Puede usar el `Strings` elemento que se va a localizar los nombres de producto y los mensajes de error, por lo que puede usar un único binario de instalación para instalar la aplicación para cualquier número de idiomas.
 
 ## <a name="example"></a>Ejemplo
- En el ejemplo de código siguiente se muestra un archivo completa del producto para instalar el [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)].
+ En el ejemplo de código siguiente se muestra un archivo de producto completo para la instalación de .NET Framework.
 
 ```xml
 <?xml version="1.0" encoding="utf-8" ?>

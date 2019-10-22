@@ -1,23 +1,23 @@
 ---
-title: Procedimiento Generar un fragmento de código XML a partir de un esquema XML
+title: 'Cómo: Generar un fragmento XML a partir de un esquema XML'
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 2c128d2a-aaa6-4814-aa95-e07056afe338
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b2c3aad870112b580078f2dbb849f9ee1a771ed0
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: ae55428b61053fbd255446833cb20aec3da79b6e
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60041006"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72645381"
 ---
-# <a name="how-to-generate-an-xml-snippet-from-an-xml-schema"></a>Procedimiento Generar un fragmento XML desde un esquema XML
+# <a name="how-to-generate-an-xml-snippet-from-an-xml-schema"></a>Cómo: generar un fragmento de código XML a partir de un esquema XML
 
-El editor XML tiene la capacidad de generar fragmentos XML desde un esquema (XSD) del lenguaje de definición de esquemas XML. Por ejemplo, durante la creación de un archivo XML, mientras se coloca junto al nombre del elemento, puede presionar **ficha** para rellenar el elemento con los datos XML generados a partir de la información de esquema de ese elemento.
+El editor XML tiene la capacidad de generar fragmentos de código XML a partir de un esquema del lenguaje de definición de esquemas XML (XSD). Por ejemplo, mientras crea un archivo XML, mientras está situado junto al nombre del elemento, puede presionar la **tecla TAB** para rellenar el elemento con los datos XML generados a partir de la información de esquema de ese elemento.
 
 Esta característica solamente está disponible en elementos. Además, se aplican las siguientes reglas:
 
@@ -25,11 +25,11 @@ Esta característica solamente está disponible en elementos. Además, se aplica
 
 - El elemento actual del editor debe estar vacío, sin atributos. Por ejemplo, todo lo siguiente es válido:
 
-    - `<Account`
+  - `<Account`
 
-    - `<Account>`
+  - `<Account>`
 
-    - `<Account></Account>`
+  - `<Account></Account>`
 
 - El cursor debe estar situado inmediatamente a la derecha del nombre del elemento.
 
@@ -43,32 +43,32 @@ Los valores predeterminados se generan e indican como valores editables. Si el e
 
 ## <a name="example"></a>Ejemplo
 
- Los pasos descritos en esta sección muestran cómo utilizar la característica de fragmento de código generados por esquema XML del editor XML.
+En los pasos de esta sección se muestra cómo usar la característica de fragmentos XML generados por esquemas del editor XML.
 
 > [!NOTE]
 > Antes de comenzar estos procedimientos, guarde el archivo de esquema en el equipo local.
 
-### <a name="to-create-a-new-xml-file-and-associate-it-with-an-xml-schema"></a>Para crear un nuevo archivo XML y asociarlo con un esquema XML
+### <a name="to-create-a-new-xml-file-and-associate-it-with-an-xml-schema"></a>Para crear un nuevo archivo XML y asociarlo a un esquema XML
 
-1. En el **archivo** menú, elija **New**y haga clic en **archivo**.
+1. En el menú **archivo** , seleccione **nuevo**y haga clic en **archivo**.
 
-2. Seleccione **archivo XML** en el **plantillas** panel y haga clic en **abierto**.
+2. Seleccione **archivo XML** en el panel **plantillas** y haga clic en **abrir**.
 
      Se abre un nuevo archivo en el editor. El archivo contiene una declaración XML predeterminada, `<?xml version="1.0" encoding="utf-8">`.
 
-3. En la ventana Propiedades del documento, haga clic en el botón Examinar (**...** ) en el **esquemas** campo.
+3. En la ventana Propiedades del documento, haga clic en el botón Examinar ( **...** ) del campo **esquemas** .
 
-     El **esquemas XSD** se muestra el cuadro de diálogo.
+     Se muestra el cuadro de diálogo **esquemas XSD** .
 
 4. Haga clic en **Agregar**.
 
-     El **Abrir esquema XSD** se muestra el cuadro de diálogo.
+     Se muestra el cuadro de diálogo **abrir esquema XSD** .
 
-5. Seleccione el archivo de esquema y haga clic en **abierto**.
+5. Seleccione el archivo de esquema y haga clic en **abrir**.
 
 6. Haga clic en **Aceptar**.
 
-     El esquema XML está ahora asociado con el documento XML.
+     Ahora el esquema XML está asociado con el documento XML.
 
 ### <a name="to-generate-an-xml-snippet"></a>Para generar un fragmento de código XML
 
@@ -82,17 +82,17 @@ Los valores predeterminados se generan e indican como valores editables. Si el e
 
      **?** para agregar una instrucción de procesamiento.
 
-     **Póngase en contacto con** para agregar el elemento raíz.
+     **Contacto** para agregar el elemento raíz.
 
-3. Seleccione **póngase en contacto con** en la lista de miembros y presione **ENTRAR**.
+3. Seleccione **contacto** en la lista de miembros y presione **entrar**.
 
      El editor agrega la etiqueta de apertura `<Contact` y coloca el cursor después del nombre del elemento.
 
-4. Presione **ficha** para generar datos XML para el `Contact` elemento según su información de esquema.
+4. Presione **Tab** para generar datos XML para el elemento `Contact` basado en la información del esquema.
 
 ## <a name="input"></a>Entrada
 
- El tutorial utiliza el siguiente archivo de esquema.
+El tutorial utiliza el siguiente archivo de esquema.
 
 ```xml
 <?xml version="1.0" encoding="utf-8" ?>
@@ -139,9 +139,9 @@ Los valores predeterminados se generan e indican como valores editables. Si el e
 </xs:schema>
 ```
 
-### <a name="output"></a>Salida
+### <a name="output"></a>Resultados
 
- Estos son los datos XML que se generan en función de la información de esquema asociada con el elemento `Contact`. Los elementos marcados como `bold` designan campos editables en el fragmento XML.
+Estos son los datos XML que se generan en función de la información de esquema asociada con el elemento `Contact`. Los elementos marcados como `bold` designan campos editables en el fragmento de código XML.
 
 ```xml
 <Contact>
@@ -156,5 +156,5 @@ Los valores predeterminados se generan e indican como valores editables. Si el e
 
 ## <a name="see-also"></a>Vea también
 
-- [Fragmentos XML](../xml-tools/xml-snippets.md)
-- [Cómo: Utilizar fragmentos XML](../xml-tools/how-to-use-xml-snippets.md)
+- [Fragmentos de código XML](../xml-tools/xml-snippets.md)
+- [Cómo: usar fragmentos de código XML](../xml-tools/how-to-use-xml-snippets.md)

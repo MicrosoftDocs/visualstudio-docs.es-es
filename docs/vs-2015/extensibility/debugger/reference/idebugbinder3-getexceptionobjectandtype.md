@@ -12,12 +12,12 @@ ms.assetid: 2a313fe1-4ee1-4f01-af86-382d6c661a8f
 caps.latest.revision: 8
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: e37108ec6b3980daa6d0c8cd381013599cc856b7
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: b6da9b1259518f3796968712b11c725a08aa9a01
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58998410"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63443941"
 ---
 # <a name="idebugbinder3getexceptionobjectandtype"></a>IDebugBinder3::GetExceptionObjectAndType
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -51,7 +51,7 @@ int GetExceptionObjectAndType(
  Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.  
   
 > [!NOTE]
->  Para comprobar si hay una excepción, compruebe el valor devuelto por `ppException`: si es un valor null, entonces ninguna excepción está asociada a este objeto.  
+> Para comprobar si hay una excepción, compruebe el valor devuelto por `ppException`: si es un valor null, entonces ninguna excepción está asociada a este objeto.  
   
 ## <a name="see-also"></a>Vea también  
  [IDebugBinder3](../../../extensibility/debugger/reference/idebugbinder3.md)

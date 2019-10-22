@@ -1,82 +1,79 @@
-items:
 - name: Desarrollo móvil multiplataforma en Visual Studio
   href: cross-platform-mobile-development-in-visual-studio.md
 - name: Visual Studio Tools para Xamarin
   displayName: .NET Mobile Developer Tools (Android & iOS)
   href: /xamarin/
-- name: Visual Studio Tools para Apache Cordova
-  href: /visualstudio/cross-platform/tools-for-cordova/
 - name: Visual Studio Tools para Unity
-  href: visual-studio-tools-for-unity.md
   items:
-  - name: Introducción a Visual Studio Tools para Unity
-    href: getting-started-with-visual-studio-tools-for-unity.md
-  - name: Uso de Visual Studio Tools para Unity
-    href: using-visual-studio-tools-for-unity.md
-  - name: Usar .NET 4.x en Unity
-    href: unity-scripting-upgrade.md
-  - name: Programa Visual Studio Tools para Unity
-    href: programming-visual-studio-tools-for-unity.md
-    items:
-    - name: Personalizar archivos de proyecto creados por VSTU
-      href: customize-project-files-created-by-vstu.md
-    - name: Compartir la devolución de llamada de registro de Unity con VSTU
-      href: share-the-unity-log-callback-with-vstu.md
-  - name: Programa con Unity y Azure
-    href: visual-studio-tools-for-unity-azure.md
-  - name: Solución de problemas y problemas conocidos (Visual Studio Tools para Unity)
-    href: troubleshooting-and-known-issues-visual-studio-tools-for-unity.md
-  - name: Registro de cambios (Visual Studio Tools para Unity, Windows)
-    href: change-log-visual-studio-tools-for-unity.md
-  - name: Registro de cambios (Visual Studio Tools para Unity, Mac)
-    href: change-log-visual-studio-tools-for-unity-mac.md
-  - name: DevOps con aplicaciones de Unity
-    href: application-lifecycle-management-alm-with-unity-apps.md
-- name: Visual C++ para el desarrollo móvil multiplataforma.
-  href: visual-cpp-for-cross-platform-mobile-development.md
+    - name: Visual Studio Tools para Unity
+      href: visual-studio-tools-for-unity.md
+    - name: Introducción a Visual Studio Tools para Unity
+      href: getting-started-with-visual-studio-tools-for-unity.md
+    - name: Uso de Visual Studio Tools para Unity
+      href: using-visual-studio-tools-for-unity.md
+    - name: Usar .NET 4.x en Unity
+      href: unity-scripting-upgrade.md
+    - name: Programa Visual Studio Tools para Unity
+      items:
+        - name: Programa Visual Studio Tools para Unity
+          href: programming-visual-studio-tools-for-unity.md
+        - name: Personalizar archivos de proyecto creados por VSTU
+          href: customize-project-files-created-by-vstu.md
+        - name: Compartir la devolución de llamada de registro de Unity con VSTU
+          href: share-the-unity-log-callback-with-vstu.md
+    - name: Programa con Unity y Azure
+      href: visual-studio-tools-for-unity-azure.md
+    - name: Solución de problemas y problemas conocidos (Visual Studio Tools para Unity)
+      href: troubleshooting-and-known-issues-visual-studio-tools-for-unity.md
+    - name: 'Registro de cambios (Visual Studio Tools para Unity, Windows)'
+      href: change-log-visual-studio-tools-for-unity.md
+    - name: 'Registro de cambios (Visual Studio Tools para Unity, Mac)'
+      href: change-log-visual-studio-tools-for-unity-mac.md
+    - name: DevOps con aplicaciones de Unity
+      href: application-lifecycle-management-alm-with-unity-apps.md
+- name: Desarrollo móvil multiplataforma con C++
   items:
-  - name: Instalar Visual C++ para el desarrollo móvil multiplataforma
-    href: install-visual-cpp-for-cross-platform-mobile-development.md
-    items:
-    - name: Install and Configure Tools to Build using iOS
-      href: install-and-configure-tools-to-build-using-ios.md
-  - name: Crear una aplicación de Android Native Activity
-    href: create-an-android-native-activity-app.md
-  - name: Crear una aplicación de OpenGL ES en iOS y Android
-    href: build-an-opengl-es-application-on-android-and-ios.md
-  - name: Importar un proyecto XCode
-    href: import-an-xcode-project.md
-  - name: Sincronizar cambios entre XCode y Visual Studio
-    href: sync-changes-between-xcode-and-visual-studio.md
-  - name: Ejemplos de desarrollo móvil multiplataforma
-    href: cross-platform-mobile-development-examples.md
-  - name: Propiedades de proyectos multiplataforma de C++
-    href: cross-platform-prop-pages.md
-    items:
-    - name: Propiedades de proyectos generales (C++ para Android)
-      href: general-android-prop-page.md
-    - name: Propiedades del depurador de Android
-      href: android-debugger-prop-page.md
-    - name: Propiedades de proyectos Clang (C++ para Android)
-      href: clang-android-prop-page.md
-    - name: Propiedades de proyectos generales (archivos Make de C++ para Android)
-      href: general-makefile-android-prop-page.md
-    - name: Propiedades del enlazador de Clang (C++ para Android)
-      href: clanglink-prop-page.md
-    - name: Propiedades de NMake (C++ para Android)
-      href: nmake-android-prop-page.md
+    - name: Desarrollo móvil multiplataforma con C++
+      href: visual-cpp-for-cross-platform-mobile-development.md
+    - name: Instalación del desarrollo móvil multiplataforma con C++
+      items:
+        - name: Instalación del desarrollo móvil multiplataforma con C++
+          href: install-visual-cpp-for-cross-platform-mobile-development.md
+        - name: Instalar y configurar herramientas para compilar con iOS
+          href: install-and-configure-tools-to-build-using-ios.md
+    - name: Creación de una aplicación de Android Native Activity
+      href: create-an-android-native-activity-app.md
+    - name: Crear una aplicación de OpenGL ES en Android e iOS
+      href: build-an-opengl-es-application-on-android-and-ios.md
+    - name: Importación de un proyecto de Xcode
+      href: import-an-xcode-project.md
+    - name: Sincronización de cambios entre Xcode y Visual Studio
+      href: sync-changes-between-xcode-and-visual-studio.md
+    - name: Ejemplos de desarrollo móvil multiplataforma
+      href: cross-platform-mobile-development-examples.md
+    - name: Referencia de página de propiedades multiplataforma de C++
+      items:
+        - name: Referencia de página de propiedades multiplataforma de C++
+          href: cross-platform-prop-pages.md
+        - name: Propiedades de proyectos generales (C++ para Android)
+          href: general-android-prop-page.md
+        - name: Propiedades del depurador de Android
+          href: android-debugger-prop-page.md
+        - name: Propiedades de proyectos Clang (C++ para Android)
+          href: clang-android-prop-page.md
+        - name: Propiedades de proyectos generales (archivos Make de C++ para Android)
+          href: general-makefile-android-prop-page.md
+        - name: Propiedades del enlazador de Clang (C++ para Android)
+          href: clanglink-prop-page.md
+        - name: Propiedades de NMake (C++ para Android)
+          href: nmake-android-prop-page.md
 - name: Desarrollar aplicaciones para la Plataforma universal de Windows (UWP)
   href: develop-apps-for-the-universal-windows-platform-uwp.md
 - name: Emulador de Visual Studio para Android
-  href: visual-studio-emulator-for-android.md
   items:
-  - name: System requirements for the Visual Studio Emulator for Android
-    href: system-requirements-for-the-visual-studio-emulator-for-android.md
-  - name: Solución de problemas del emulador de Visual Studio para Android
-    href: troubleshooting-the-visual-studio-emulator-for-android.md
-ms.openlocfilehash: 0126179459596c389703c065e85e2f5da41e070c
-ms.sourcegitcommit: 97204b85caadbcf14baeb6738710e287a196673e
-ms.translationtype: HT
-ms.contentlocale: es-ES
-ms.lasthandoff: 10/24/2018
-ms.locfileid: "49991528"
+    - name: Emulador de Visual Studio para Android
+      href: visual-studio-emulator-for-android.md
+    - name: System requirements for the Visual Studio Emulator for Android
+      href: system-requirements-for-the-visual-studio-emulator-for-android.md
+    - name: Solución de problemas del emulador de Visual Studio para Android
+      href: troubleshooting-the-visual-studio-emulator-for-android.md

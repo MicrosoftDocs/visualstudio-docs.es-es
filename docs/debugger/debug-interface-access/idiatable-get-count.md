@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: a64fcf47e6d1b315499bc2e43ab32459bf11c091
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56616812"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62834525"
 ---
 # <a name="idiatablegetcount"></a>IDiaTable::get_Count
 Recupera el número de elementos de la tabla.

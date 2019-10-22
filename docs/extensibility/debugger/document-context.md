@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - debugging [Debugging SDK], contexts
 ms.assetid: 8e8b5702-5c16-4988-953d-69dd807d8b84
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3a60b95faf9c22ccec45dc560031bf517f53028b
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: d15e53d29adc04a82274ebd456027d15b0e41703
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60080222"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66345718"
 ---
 # <a name="document-context"></a>Contexto de documento
 En [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] depuración, un *contexto de documento*:

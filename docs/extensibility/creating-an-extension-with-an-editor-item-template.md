@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], new - extensions
 ms.assetid: fa3b993b-ab95-47fa-a38b-b788f3a5b2d8
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2e87429c38d5b456eca08daa6675edcb0bd3f056
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 0bef42c67f34b8a24ac26a7765fecddc104ae74a
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60079816"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66351001"
 ---
 # <a name="create-an-extension-with-an-editor-item-template"></a>Crear una extensión con una plantilla de elementos de editor
 Puede usar plantillas de elementos que se incluyen en el SDK de Visual Studio para crear extensiones de editor básico que aumenta el editor de clasificadores, los elementos gráficos y los márgenes. Las plantillas de elementos de editor están disponibles para los proyectos de Visual C# o Visual Basic VSIX.
@@ -63,7 +63,7 @@ Puede usar plantillas de elementos que se incluyen en el SDK de Visual Studio pa
  La plantilla de elemento de gráfico de área de visualización de Editor crea un elemento de gráfico de ventanilla relativa que agrega un cuadro violeta que tiene un contorno rojo a la esquina superior derecha de la ventanilla.
 
 > [!NOTE]
->  El **ventanilla** es el área de la vista de texto que se muestra actualmente.
+> El **ventanilla** es el área de la vista de texto que se muestra actualmente.
 
 ### <a name="to-create-a-viewport-adornment-extension-by-using-the-editor-viewport-adornment-template"></a>Para crear una extensión de elemento gráfico de área de visualización mediante la plantilla de elemento de gráfico de área de visualización de Editor
 

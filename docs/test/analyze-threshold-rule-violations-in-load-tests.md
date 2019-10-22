@@ -15,12 +15,12 @@ ms.assetid: 969ed346-cf2e-4d48-82b3-edb3e075e1c0
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 4a7cd36fcb144eaa098acc30a7da550b1288684a
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 011b010eaad5def8943fd18a84da9fefdb01eff5
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55943407"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68918634"
 ---
 # <a name="analyzing-threshold-rule-violations-in-load-tests-using-the-load-test-analyzer"></a>Analizar las infracciones de las reglas de umbral en las pruebas de carga mediante el Analizador de pruebas de carga
 
@@ -32,9 +32,9 @@ Si se ha producido alguna infracción, aparece un hipervínculo de **infraccione
 
 ## <a name="view-threshold-violations-in-the-table"></a>Ver las infracciones de umbral en la tabla
 
- La tabla de infracciones de umbral muestra las primeras 1.000 infracciones. La tabla siguiente contiene estas columnas:
+La tabla de infracciones de umbral muestra las primeras 1.000 infracciones. La tabla siguiente contiene estas columnas:
 
-|Columna|Descripción|Visible de forma predeterminada|
+|Columna|DESCRIPCIÓN|Visible de forma predeterminada|
 |-|-|-|
 |Tiempo|La hora de la prueba de carga a la que se produjo la infracción.|Sí|
 |Equipo|El nombre del equipo bajo comprobación en el que se produjo la infracción. **Nota:**  Esto es importante cuando se ejecutan pruebas de carga en plataformas de pruebas.|Sí|
@@ -46,33 +46,33 @@ Si se ha producido alguna infracción, aparece un hipervínculo de **infraccione
 > [!NOTE]
 > Puede ordenar la tabla eligiendo los encabezados de columna.
 
- Para obtener más información, vea [Analizar los errores y resultados de pruebas de carga en la vista Tablas](../test/analyze-load-test-results-and-errors-in-the-tables-view.md).
+Para obtener más información, vea [Analizar los errores y resultados de pruebas de carga en la vista Tablas](../test/analyze-load-test-results-and-errors-in-the-tables-view.md).
 
 ## <a name="view-threshold-violations-in-the-counters-panel"></a>Ver las infracciones de umbral en el panel Contadores
 
- Puede ver las infracciones de umbral en el panel **Contadores**, en el árbol que contiene los contadores de rendimiento de la prueba de carga. Los iconos del panel **Contadores** indican las infracciones de umbral. El icono puede ser alguno de los siguientes:
+Puede ver las infracciones de umbral en el panel **Contadores**, en el árbol que contiene los contadores de rendimiento de la prueba de carga. Los iconos del panel **Contadores** indican las infracciones de umbral. El icono puede ser alguno de los siguientes:
 
- El icono puede ser alguno de los siguientes:
+El icono puede ser alguno de los siguientes:
 
- ![No hay infracción de umbral](../test/media/icon_ltest_1.gif) Ninguna infracción del umbral.
+![No hay infracción de umbral](../test/media/icon_ltest_1.gif) Ninguna infracción del umbral.
 
- ![Infracción de umbral grave en el último intervalo](../test/media/icon_ltest_2.gif) Se ha producido una infracción del umbral grave en el último intervalo.
+![Infracción de umbral grave en el último intervalo](../test/media/icon_ltest_2.gif) Se ha producido una infracción del umbral grave en el último intervalo.
 
- ![Infracción de umbral grave en un intervalo anterior](../test/media/icon_ltest_3.gif) Se ha producido una infracción del umbral grave en un intervalo anterior.
+![Infracción de umbral grave en un intervalo anterior](../test/media/icon_ltest_3.gif) Se ha producido una infracción del umbral grave en un intervalo anterior.
 
- ![Infracción de umbral de advertencia en el último intervalo](../test/media/icon_ltest_4.gif) Se ha producido una infracción del umbral de advertencia en el último intervalo.
+![Infracción de umbral de advertencia en el último intervalo](../test/media/icon_ltest_4.gif) Se ha producido una infracción del umbral de advertencia en el último intervalo.
 
- ![Infracción de umbral de advertencia en un intervalo anterior](../test/media/icon_ltest_5.gif) Se ha producido una infracción del umbral de advertencia en un intervalo anterior.
+![Infracción de umbral de advertencia en un intervalo anterior](../test/media/icon_ltest_5.gif) Se ha producido una infracción del umbral de advertencia en un intervalo anterior.
 
- Opcionalmente, las infracciones del umbral también se pueden mostrar en el gráfico. El icono de umbral aparece en el gráfico junto al punto de datos donde se ha producido la infracción de umbral.
+Opcionalmente, las infracciones del umbral también se pueden mostrar en el gráfico. El icono de umbral aparece en el gráfico junto al punto de datos donde se ha producido la infracción de umbral.
 
- En el árbol de contadores, el icono de una infracción de umbral se propaga desde el nodo de contador específico hasta el nodo raíz. Esto sirve para avisarle de que una infracción en un contador puede no estar visible en el árbol porque éste no se ha expandido.
+En el árbol de contadores, el icono de una infracción de umbral se propaga desde el nodo de contador específico hasta el nodo raíz. Esto sirve para avisarle de que una infracción en un contador puede no estar visible en el árbol porque éste no se ha expandido.
 
 ## <a name="view-threshold-violations-on-the-graph"></a>Ver las infracciones de umbral en el gráfico
 
- Puede ver las infracciones de umbral en el gráfico. Al igual que en el panel **Contadores**, los iconos indican las infracciones de umbral en el gráfico. Los iconos aparecen en el gráfico junto al punto de datos donde se ha producido la infracción de umbral. Si se produce una infracción de umbral en un contador que no aparece en el gráfico, puede agregarlo a este si lo arrastra desde el panel **Contadores** al gráfico.
+Puede ver las infracciones de umbral en el gráfico. Al igual que en el panel **Contadores**, los iconos indican las infracciones de umbral en el gráfico. Los iconos aparecen en el gráfico junto al punto de datos donde se ha producido la infracción de umbral. Si se produce una infracción de umbral en un contador que no aparece en el gráfico, puede agregarlo a este si lo arrastra desde el panel **Contadores** al gráfico.
 
- Para obtener más información, vea [Analizar los resultados de pruebas de carga en la vista Gráficos](../test/analyze-load-test-results-in-the-graphs-view.md).
+Para obtener más información, vea [Analizar los resultados de pruebas de carga en la vista Gráficos](../test/analyze-load-test-results-in-the-graphs-view.md).
 
 ## <a name="see-also"></a>Vea también
 

@@ -12,26 +12,26 @@ helpviewer_keywords:
 - code comments
 ms.assetid: f36b46af-443a-4fa6-a2c3-0c4962bbd4aa
 caps.latest.revision: 25
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 33c148b459e34da26f068fe041d90979c7244cde
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 62ece3a7a56f931f949fc13124af430ce24e622f
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54780503"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72646835"
 ---
 # <a name="supplying-xml-code-comments"></a>Proporcionar comentarios del código XML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Puede hacer que los comentarios de los archivos de código fuente estén disponibles como IntelliSense. Al agregar el modificador /doc a la línea de comandos del compilador de Visual Basic, C# o C++, se genera un archivo .xml que sirve como base para la documentación de IntelliSense.  
-  
- Para obtener más información sobre la documentación del código en Visual Basic, consulte [How to: Create XML Documentation](http://msdn.microsoft.com/library/27b5b06c-09b9-496a-8245-f9542d846230) (Procedimiento para crear documentación XML).  
-  
- Para más información sobre la documentación del código en C#, vea [Comentarios de documentación XML](http://msdn.microsoft.com/library/803b7f7b-7428-4725-b5db-9a6cff273199).  
-  
- Para más información sobre la documentación del código en C++, vea [Comentarios](http://msdn.microsoft.com/library/6fcb906c-c264-4083-84bc-373800b2e514) y [Documentación XML](http://msdn.microsoft.com/library/a1aec1c5-b2d1-4c74-83ae-1dbbbb76b506).  
-  
-## <a name="see-also"></a>Vea también  
+Puede hacer que los comentarios de los archivos de código fuente estén disponibles como IntelliSense. Al agregar el modificador /doc a la línea de comandos del compilador de Visual Basic, C# o C++, se genera un archivo .xml que sirve como base para la documentación de IntelliSense.
+
+ Para obtener más información sobre la documentación del código en Visual Basic, consulte [How to: Create XML Documentation](https://msdn.microsoft.com/library/27b5b06c-09b9-496a-8245-f9542d846230) (Procedimiento para crear documentación XML).
+
+ Para más información sobre la documentación del código en C#, vea [Comentarios de documentación XML](https://msdn.microsoft.com/library/803b7f7b-7428-4725-b5db-9a6cff273199).
+
+ Para más información sobre la documentación del código en C++, vea [Comentarios](https://msdn.microsoft.com/library/6fcb906c-c264-4083-84bc-373800b2e514) y [Documentación XML](https://msdn.microsoft.com/library/a1aec1c5-b2d1-4c74-83ae-1dbbbb76b506).
+
+## <a name="see-also"></a>Otras referencias
  [Usar IntelliSense](../ide/using-intellisense.md)

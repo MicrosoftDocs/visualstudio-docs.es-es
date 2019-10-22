@@ -11,14 +11,14 @@ ms.assetid: 729b4c30-4bc3-4698-91b3-17a676897443
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 09a0b390299c354494ef29d177a4bd6c72f0548d
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: f570e2085bf9d0707bb5a8bfe33576466a6d7b41
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55913072"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62821214"
 ---
-# <a name="how-to-zoom-in-on-a-region-of-the-graph-in-load-test-results"></a>Filtrar para acercar una región del gráfico en los resultados de pruebas de carga
+# <a name="how-to-zoom-in-on-a-region-of-the-graph-in-load-test-results"></a>Procedimiento para acercar una región del gráfico en los resultados de pruebas de carga
 
 Una vez terminada una prueba de carga, puede usar las barras de zoom para acercar una región del gráfico y desplazarse por ella. Al aplicar el zoom para acercar, puede examinar los datos que se generaron durante la ejecución de una prueba de carga con más detalle.
 
@@ -51,17 +51,17 @@ Antes de cambiar la presentación de un gráfico acercándolo o alejándolo, o d
 
 Para mostrar los gráficos:
 
-1.  Ejecute una prueba de carga hasta que se complete.
+1. Ejecute una prueba de carga hasta que se complete.
 
-2.  Cuando termine la ejecución de la prueba de carga, elija **Sí** en el cuadro de diálogo en el que se le pregunta si quiere ver los resultados del almacén de resultados de pruebas de carga.
+2. Cuando termine la ejecución de la prueba de carga, elija **Sí** en el cuadro de diálogo en el que se le pregunta si quiere ver los resultados del almacén de resultados de pruebas de carga.
 
      \- o -
 
      Vea los detalles de una prueba de carga ejecutada anteriormente. Para obtener más información, vea [Cómo: Acceder a los resultados de pruebas de carga para el análisis](../test/how-to-access-load-test-results-for-analysis.md).
 
-3.  Elija **Gráficos** si no se muestran los gráficos.
+3. Elija **Gráficos** si no se muestran los gráficos.
 
-4.  Si no se muestran las barras de zoom, elija **Mostrar controles de zoom**.
+4. Si no se muestran las barras de zoom, elija **Mostrar controles de zoom**.
 
      Hay dos barras de zoom para cada gráfico. La barra de zoom que controla la escala vertical aparece a la izquierda del gráfico. La barra de zoom que controla la escala horizontal aparece debajo del gráfico.
 
@@ -73,21 +73,21 @@ Cuando se muestran varios gráficos, puede mantenerlos sincronizados para que mu
 
 ### <a name="to-synchronize-zooming-and-scrolling"></a>Para sincronizar el zoom y el desplazamiento
 
-1.  En el **Analizador de pruebas de carga**, elija **Sincronizar controles de zoom horizontal**.
+1. En el **Analizador de pruebas de carga**, elija **Sincronizar controles de zoom horizontal**.
 
      Cuando el botón **Sincronizar controles de zoom horizontal** está seleccionado, al aplicar zoom y desplazarse por la escala de tiempo de un determinado gráfico también se aplica zoom y se desplaza por la escala de tiempo de los demás gráficos.
 
-2.  De nuevo, elija **Sincronizar controles de zoom horizontal**.
+2. De nuevo, elija **Sincronizar controles de zoom horizontal**.
 
      Cuando el botón **Sincronizar controles de zoom horizontal** no está seleccionado, el zoom y el desplazamiento por la escala de tiempo de un determinado gráfico solo afecta a ese gráfico.
 
 ### <a name="to-zoom-and-scroll-to-a-region-of-the-graph"></a>Para aplicar zoom y desplazarse por una región del gráfico
 
-1.  En la barra de zoom bajo un gráfico, arrastre el controlador de la izquierda hacia la derecha.
+1. En la barra de zoom bajo un gráfico, arrastre el controlador de la izquierda hacia la derecha.
 
      De esta forma, acercará la última parte de la ejecución de prueba. De igual forma, para acercar las primeras partes de la ejecución de prueba, arrastre el controlador derecho hacia la izquierda.
 
-2.  Para acercar una determinada área, deslice ambos controladores hacia el centro del gráfico.
+2. Para acercar una determinada área, deslice ambos controladores hacia el centro del gráfico.
 
      Cuanto más próximos entre sí estén los controladores, más se acerca con el zoom para mostrar segmentos más cortos y detallados de la prueba de carga.
 
@@ -107,9 +107,9 @@ Cuando se muestran varios gráficos, puede mantenerlos sincronizados para que mu
 
 ### <a name="to-zoom-out"></a>Para alejar
 
-1.  Haga clic con el botón secundario del mouse en un gráfico al que se ha aplicado el zoom.
+1. Haga clic con el botón secundario del mouse en un gráfico al que se ha aplicado el zoom.
 
-2.  En el menú contextual, seleccione **Alejar horizontalmente**.
+2. En el menú contextual, seleccione **Alejar horizontalmente**.
 
      Se aplicará el zoom para alejar y mostrar la duración completa de la ejecución de la prueba de carga.
 

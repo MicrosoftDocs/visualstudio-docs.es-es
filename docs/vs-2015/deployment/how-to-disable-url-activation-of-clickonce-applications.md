@@ -17,12 +17,12 @@ caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 345e58b2c2a783bc9ffda8b915bf8baa66ad375a
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 75a98706858323693ec01ec3c3420a6d2d25ffef
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60046973"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65697223"
 ---
 # <a name="how-to-disable-url-activation-of-clickonce-applications"></a>Procedimiento Deshabilitar la activación de direcciones URL de aplicaciones ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,7 +31,7 @@ Normalmente, una aplicación [!INCLUDE[ndptecclick](../includes/ndptecclick-md.m
   
  Esta técnica se puede utilizar solo para las aplicaciones [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] instaladas en el equipo del usuario desde un servidor web. No se puede utilizar para aplicaciones solo en línea, que se pueden iniciar utilizando su dirección URL. Para obtener más información acerca de la diferencia entre las aplicaciones solo en línea e instaladas, consulte [Elegir una estrategia de implementación de ClickOnce](../deployment/choosing-a-clickonce-deployment-strategy.md).  
   
- Este procedimiento utiliza la herramienta [!INCLUDE[winsdklong](../includes/winsdklong-md.md)] MageUI.exe. Para obtener más información sobre esta herramienta, consulte [MageUI.exe (Herramienta de generación y edición de manifiestos, cliente gráfico)](http://msdn.microsoft.com/library/f9e130a6-8117-49c4-839c-c988f641dc14). También puede realizar este procedimiento mediante [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
+ Este procedimiento utiliza la herramienta [!INCLUDE[winsdklong](../includes/winsdklong-md.md)] MageUI.exe. Para obtener más información sobre esta herramienta, consulte [MageUI.exe (Herramienta de generación y edición de manifiestos, cliente gráfico)](https://msdn.microsoft.com/library/f9e130a6-8117-49c4-839c-c988f641dc14). También puede realizar este procedimiento mediante [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
   
 ## <a name="procedure"></a>Procedimiento  
   

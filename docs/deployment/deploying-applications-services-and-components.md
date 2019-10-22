@@ -1,5 +1,5 @@
 ---
-title: Paseo por las características de implementación
+title: Primer vistazo a la implementación
 description: Conozca las opciones para implementar aplicaciones desde Visual Studio.
 ms.custom: mvc
 ms.date: 01/29/2019
@@ -23,16 +23,16 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 265b30e8a9b3e223b9007c85082113232d76ab09
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 02e8beae03dc2828d81b80813325300fe31b3cea
+ms.sourcegitcommit: 53bc4c11b82882ab658e34c65ae374060f823531
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "57983863"
+ms.lasthandoff: 09/19/2019
+ms.locfileid: "71128158"
 ---
 # <a name="first-look-at-deployment-in-visual-studio"></a>Primer vistazo a la implementación en Visual Studio
 
-Al implementar una aplicación, un servicio o un componente, se distribuye para su instalación en otros equipos, dispositivos o servidores, o en la nube. Elija el método apropiado en Visual Studio para el tipo de implementación que necesita. (Muchos tipos de aplicaciones admiten otras herramientas de implementación, como la implementación mediante línea de comandos o NuGet, que no se tratan aquí).
+Al implementar una aplicación, un servicio o un componente, se distribuye para su instalación en otros equipos, dispositivos o servidores, o en la nube. Elija el método apropiado en Visual Studio para el tipo de implementación que necesita. (Muchos tipos de aplicaciones admiten otras herramientas de implementación, como la implementación mediante línea de comandos, que no se tratan aquí).
 
 Vea los inicios rápidos y los tutoriales para obtener instrucciones de implementación paso a paso. Para obtener información general sobre las opciones de implementación, vea [¿Qué opciones de publicación son las adecuadas para mí?](deploying-applications-services-and-components-resources.md#what-publishing-options-are-right-for-me).
 
@@ -40,11 +40,11 @@ Vea los inicios rápidos y los tutoriales para obtener instrucciones de implemen
 
 La implementación en una carpeta local se suele usar para las pruebas, o para iniciar una implementación de ensayo en la que se vaya a emplear otra herramienta para la implementación final.
 
-- **ASP.NET**, **ASP.NET Core**, **Node.js**, **Python** y .**NET Core**: utilice la opción Publicar para implementar en una carpeta local. Las opciones concretas disponibles dependen del tipo de la aplicación. En el Explorador de soluciones, haga clic con el botón derecho en el proyecto y elija **Publicar**. (Si anteriormente ha configurado algún perfil de publicación, debe hacer clic en **Crear nuevo perfil**). Luego elija **Carpeta**. Para obtener más información, vea [Implementar en una carpeta local](quickstart-deploy-to-local-folder.md).
+- **ASP.NET**, **ASP.NET Core**, **Node.js**, **Python** y .**NET Core**: utilice la opción Publicar para implementar en una carpeta local. Las opciones concretas disponibles dependen del tipo de la aplicación. En el Explorador de soluciones, haga clic con el botón derecho en el proyecto y elija **Publicar**. (Si anteriormente no ha configurado ningún perfil de publicación, debe hacer clic en **Crear nuevo perfil**). Luego elija **Carpeta**. Para obtener más información, vea [Implementar en una carpeta local](quickstart-deploy-to-local-folder.md).
 
     ![Elección de Publicar](../deployment/media/quickstart-publish.png)
 
-- **Escritorio de Windows**: puede publicar una aplicación de escritorio de Windows en una carpeta mediante la implementación de ClickOnce. A continuación, los usuarios podrán instalar la aplicación con un solo clic. Para más información, vea [Implementación de una aplicación de escritorio con ClickOnce](how-to-publish-a-clickonce-application-using-the-publish-wizard.md) (C# y Visual Basic). Para C++ y CLR, vea [Implementación de ClickOnce para aplicaciones de Visual C++](/cpp/ide/clickonce-deployment-for-visual-cpp-applications), o bien, para C y C ++, vea [Implementación de una aplicación de Visual C++ mediante un proyecto de instalación](/cpp/ide/walkthrough-deploying-a-visual-cpp-application-by-using-a-setup-project).
+- **Escritorio de Windows**: puede publicar una aplicación de escritorio de Windows en una carpeta mediante la implementación de ClickOnce. A continuación, los usuarios podrán instalar la aplicación con un solo clic. Para más información, vea [Implementación de una aplicación de escritorio con ClickOnce](how-to-publish-a-clickonce-application-using-the-publish-wizard.md) (C# y Visual Basic). Para C++ y la CLI, vea [Implementación de ClickOnce para aplicaciones de Visual C++](/cpp/windows/clickonce-deployment-for-visual-cpp-applications), o bien, para C y C ++, vea [Implementación de una aplicación de Visual C++ mediante un proyecto de instalación](/cpp/windows/walkthrough-deploying-a-visual-cpp-application-by-using-a-setup-project).
 
 ## <a name="publish-to-azure"></a>Publicar en Azure
 
@@ -83,7 +83,7 @@ La implementación en una carpeta local se suele usar para las pruebas, o para i
 
     También puede implementar aplicaciones y servicios ASP.NET de más maneras. Para obtener más información, vea [Deploying ASP.NET web applications and services](http://www.asp.net/aspnet/overview/deployment) (Implementación de aplicaciones y servicios web ASP.NET).
 
-- **Escritorio de Windows**: puede publicar una aplicación de escritorio de Windows en un servidor web o en un recurso compartido de archivos de red mediante implementación de ClickOnce. A continuación, los usuarios podrán instalar la aplicación con un solo clic. Para más información, vea [Implementación de una aplicación de escritorio con ClickOnce](how-to-publish-a-clickonce-application-using-the-publish-wizard.md) (C# y Visual Basic). Para C++ y CLR, vea [Implementación de ClickOnce para aplicaciones de Visual C++](/cpp/ide/clickonce-deployment-for-visual-cpp-applications), o bien, para C y C ++, vea [Implementación de una aplicación de Visual C++ mediante un proyecto de instalación](/cpp/ide/walkthrough-deploying-a-visual-cpp-application-by-using-a-setup-project).
+- **Escritorio de Windows**: puede publicar una aplicación de escritorio de Windows en un servidor web o en un recurso compartido de archivos de red mediante implementación de ClickOnce. A continuación, los usuarios podrán instalar la aplicación con un solo clic. Para más información, vea [Implementación de una aplicación de escritorio con ClickOnce](how-to-publish-a-clickonce-application-using-the-publish-wizard.md) (C# y Visual Basic). Para C++ y la CLI, vea [Implementación de ClickOnce para aplicaciones de Visual C++](/cpp/windows/clickonce-deployment-for-visual-cpp-applications), o bien, para C y C ++, vea [Implementación de una aplicación de Visual C++ mediante un proyecto de instalación](/cpp/windows/walkthrough-deploying-a-visual-cpp-application-by-using-a-setup-project).
 
 ## <a name="publish-to-microsoft-store"></a>Publicar en Microsoft Store
 
@@ -93,9 +93,16 @@ Desde Visual Studio, puede crear paquetes de aplicaciones para su implementació
 
     ![Crear un paquete de aplicación](../deployment/media/feature-tour-create-app-package.jpg)
 
-- **Escritorio de Windows**: puede implementar en Microsoft Store con Puente de dispositivo de escritorio a partir de Visual Studio 2017 versión 15.4. Para ello, empiece por crear un proyecto de paquete de aplicación de Windows. Para obtener más información, vea [Empaquetar una aplicación de escritorio para Microsoft Store (Puente de dispositivo de escritorio)](/windows/uwp/porting/desktop-to-uwp-packaging-dot-net).
+- **Escritorio de Windows**: puede implementar en Microsoft Store a partir de Visual Studio 2017 versión 15.4. Para ello, empiece por crear un proyecto de paquete de aplicación de Windows. Para obtener más información, vea [Empaquetado de una aplicación de escritorio para Microsoft Store](/windows/msix/desktop/desktop-to-uwp-packaging-dot-net).
 
-    ![Puente de dispositivo de escritorio](../deployment/media/feature-tour-desktop-bridge.png)
+    ![Empaquetado de una aplicación de escritorio](../deployment/media/feature-tour-desktop-bridge.png)
+
+## <a name="deploy-net-packages-to-nugetorg"></a>Implementación de paquetes .NET en NuGet.org
+
+Para implementar código agrupado en "paquetes" que contengan código compilado (como archivos DLL) junto con otro contenido necesario en los proyectos que consumen estos paquetes, puede usar Visual Studio para crear el paquete NuGet y una herramienta de la CLI para emitir el comando de implementación final.
+
+- [Creación y publicación de un paquete .NET Standard](/nuget/quickstart/create-and-publish-a-package-using-visual-studio)
+- [Creación y publicación de un paquete de .NET Framework](/nuget/quickstart/create-and-publish-a-package-using-visual-studio-net-framework)
 
 ## <a name="deploy-to-a-device-uwp"></a>Implementar en un dispositivo (UWP)
 
@@ -105,7 +112,11 @@ Si va a implementar una aplicación de UWP para probar en un dispositivo, vea [R
 
 Si necesita una instalación más compleja de una aplicación de escritorio de lo que [ClickOnce](how-to-publish-a-clickonce-application-using-the-publish-wizard.md) puede proporcionar, puede crear un paquete de Windows Installer (un archivo de instalación MSI o EXE), o bien un programa previo personalizado.
 
-- Se puede crear un paquete de instalador basado en MSI mediante la [extensión WiX Toolset Visual Studio 2017](https://marketplace.visualstudio.com/items?itemName=RobMensching.WixToolsetVisualStudio2017Extension). Se trata de un conjunto de herramientas de línea de comandos.
+- Se puede crear un paquete de instalador basado en MSI mediante la [extensión WiX Toolset](https://marketplace.visualstudio.com/items?itemName=WixToolset.WiXToolset). Se trata de un conjunto de herramientas de línea de comandos.
+
+   ::: moniker range=">=vs-2019"
+   En Visual Studio 2019, obtenga la [extensión WiX Toolset de Visual Studio 2019](https://marketplace.visualstudio.com/items?itemName=WixToolset.WixToolsetVisualStudio2019Extension).
+   ::: moniker-end
 
 - Se puede crear un paquete de instalador EXE o MSI mediante [InstallShield](https://www.flexerasoftware.com/producer/products/software-installation/installshield-software-installer/tab/requirements) de Flexera Software. InstallShield se puede usar con Visual Studio 2017 y versiones posteriores (no se admite Community Edition). Tenga en cuenta que InstallShield Limited Edition ya no se incluye con Visual Studio y no se admite en Visual Studio 2017 y versiones posteriores; póngase en contacto con [Flexera Software](http://learn.flexerasoftware.com/content/IS-EVAL-InstallShield-Limited-Edition-Visual-Studio) para consultar sobre su disponibilidad futura.
 
@@ -120,6 +131,16 @@ Puede habilitar un desarrollo y pruebas más sofisticados si implementa las apli
 ## <a name="continuous-deployment"></a>Implementación continua
 
 Puede usar Azure Pipelines para habilitar la implementación continua de la aplicación. Para obtener más información, vea [Azure Pipelines](/azure/devops/pipelines/index?view=vsts) e [Implementar en Azure](/azure/devops/deploy-azure/index?view=vsts).
+
+## <a name="deploy-a-sql-database"></a>Implementación de una base de datos SQL
+
+- [Cambiar la plataforma de destino y publicar un proyecto de base de datos [SQL Server Data Tools (SSDT)]](/sql/ssdt/how-to-change-target-platform-and-publish-a-database-project)
+
+- [Crear un proyecto de Analysis Services (SSAS)](/sql/analysis-services/multidimensional-tutorial/lesson-2-5-deploying-an-analysis-services-project)
+
+- [Implementar paquetes y proyectos de Integration Services (SSIS)](/sql/integration-services/packages/deploy-integration-services-ssis-projects-and-packages)
+
+- [Compilar e implementar una base de datos local](/sql/ssdt/how-to-build-and-deploy-to-a-local-database)
 
 ## <a name="deployment-for-other-app-types"></a>Implementación de otros tipos de aplicaciones
 

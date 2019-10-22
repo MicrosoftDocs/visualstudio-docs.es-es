@@ -17,12 +17,12 @@ caps.latest.revision: 8
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: b0c0b97cf4bdebcac4eac837077cf96368f3f32c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 323e67458d934d27800cac710f79857a98d6c6c5
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60110341"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65682658"
 ---
 # <a name="error-unable-to-access-the-sql-server-debugging-interface"></a>Error: No se puede obtener acceso a la interfaz de depuración de SQL Server
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,7 +31,7 @@ Este mensaje aparece cuando intenta la depuración de SQL en un equipo donde no 
   
 ### <a name="to-correct-this-error"></a>Para corregir este error  
   
-- Consulte [configurar la depuración de SQL](http://msdn.microsoft.com/3db09e68-edcc-42de-9c22-4e97cfd55ab3).  
+- Consulte [configurar la depuración de SQL](https://msdn.microsoft.com/3db09e68-edcc-42de-9c22-4e97cfd55ab3).  
   
 ## <a name="see-also"></a>Vea también  
- [Depuración de SQL](http://msdn.microsoft.com/f27c17e6-1d90-49f2-9fc0-d02e6a27f109)
+ [Depuración de SQL](https://msdn.microsoft.com/f27c17e6-1d90-49f2-9fc0-d02e6a27f109)

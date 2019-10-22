@@ -1,29 +1,47 @@
 ---
 title: Proyectos y soluciones
 description: Este documento se proporciona información general sobre los proyectos y las soluciones de Visual Studio para Mac.
-author: conceptdev
-ms.author: crdun
-ms.date: 05/06/2018
+ms.topic: overview
+author: heiligerdankgesang
+ms.author: dominicn
+ms.date: 05/23/2019
 ms.assetid: 8254505D-D96E-48BD-8A5E-CF6A917897EA
-ms.openlocfilehash: 6ae37b7256b1cefe2bfbd2174135b013b1aa37cd
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.openlocfilehash: 92e7a47f7ea2b931c0b923d10e115843d315d024
+ms.sourcegitcommit: cf8c0fef2b9690595e99ce3802586cdd55fd37c2
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51296403"
+ms.lasthandoff: 08/28/2019
+ms.locfileid: "70107820"
 ---
-# <a name="projects-and-solutions"></a>Proyectos y soluciones
+# <a name="projects-and-solutions-in-visual-studio-for-mac"></a>Proyectos y soluciones en Visual Studio para Mac
 
-Visual Studio para Mac proporciona un  _panel de solución_  para mostrar una vista de árbol de toda la solución abierta. El **Panel de solución** facilita el acceso al código fuente, los recursos, las interfaces de usuario y las referencias de ensamblado incluidos en proyectos individuales. El Panel de solución, de forma predeterminada, abre soluciones de una en una. Cada solución puede incluir muchos proyectos, y cada proyecto puede contener muchos elementos.
+En este artículo se proporciona información general sobre los conceptos de *proyecto* y *solución* de Visual Studio para Mac.
 
-## <a name="using-projects-and-solutions"></a>Empleo de proyectos y soluciones
+> [!NOTE] 
+> Este tema se aplica a Visual Studio para Mac. En el caso de Visual Studio para Windows, vea [Soluciones y proyectos en Visual Studio](/visualstudio/ide/solutions-and-projects-in-visual-studio).
 
-Para crear un nuevo proyecto o solución, vea el artículo [Creación de nuevos proyectos y soluciones](create-new-projects.md).
+## <a name="projects"></a>Proyectos
 
-## <a name="project-and-solution-options"></a>Opciones de proyecto y solución
+Al crear una nueva aplicación, un sitio web, etc. en Visual Studio para Mac, se comienza con un proyecto. El proyecto contiene todos los archivos necesarios (código fuente, imágenes, archivos de datos, etc.) para compilar el archivo ejecutable, la biblioteca o el sitio web.
 
-Puede administrar las propiedades de proyectos y soluciones si hace doble clic en el nombre del proyecto o la solución o si hace clic con el botón derecho y va a **Opciones**. Se proporciona más información sobre estas opciones en el artículo [Administrar propiedades de soluciones y proyectos](managing-solutions-and-project-properties.md).
+Un proyecto se define mediante un archivo (por ejemplo, `.csproj` para proyectos de C#) que contiene XML que define la jerarquía de carpetas y archivos, las rutas de acceso a los archivos y las configuraciones específicas del proyecto, como la de compilación.
+
+Cuando Visual Studio para Mac carga un proyecto, el Panel de solución usa el archivo de proyecto para mostrar los archivos y las carpetas del proyecto. Durante la compilación, MSBuild lee la configuración del archivo de proyecto para crear el archivo ejecutable.
+
+## <a name="solutions"></a>Soluciones
+
+Una *solución* es un contenedor que agrupa uno o más proyectos relacionados. Las soluciones se describen mediante un archivo de texto (extensión `.sln`) con su propio formato único; no están diseñadas para modificarse de forma manual.
+
+## <a name="managing-projects-in-the-solution-pad"></a>Administración de proyectos en el Panel de solución
+
+Una vez que un proyecto se ha creado o se ha cargado, puede usar el Panel de solución para ver y administrar el proyecto o la solución y los archivos que incluye. En la siguiente ilustración se muestra el Panel de solución con una solución de .NET Core que contiene dos proyectos:
+
+![Solución de ejemplo con varios proyectos](media/solution-example.png)
+
+Puede administrar las propiedades de proyectos y soluciones si hace doble clic en el nombre del proyecto o la solución o si hace clic con el botón derecho y selecciona **Opciones**.
+
+Se proporciona más información sobre estas opciones en el artículo [Administrar propiedades de soluciones y proyectos](managing-solutions-and-project-properties.md).
 
 ## <a name="see-also"></a>Vea también
 
-- [Soluciones y proyectos en Visual Studio (en Windows)](/visualstudio/ide/solutions-and-projects-in-visual-studio)
+- [Soluciones y proyectos en Visual Studio (Windows)](/visualstudio/ide/solutions-and-projects-in-visual-studio)

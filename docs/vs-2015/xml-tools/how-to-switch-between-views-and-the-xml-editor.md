@@ -1,40 +1,40 @@
 ---
-title: Procedimiento Cambiar entre las vistas y el Editor XML | Documentos de Microsoft
+title: 'Cómo: cambiar entre las vistas y el editor XML | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-xml-tools
 ms.topic: conceptual
 ms.assetid: cb69fbbd-d99c-439e-9498-5df9050f8df0
 caps.latest.revision: 9
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: c8d396efdc615ae954ef16453c9c5459f0685650
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 28267f705dd9a747d0e3f3ac5dc2869ab7de8f6a
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60107242"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72656319"
 ---
-# <a name="how-to-switch-between-views-and-the-xml-editor"></a>Procedimiento Cambiar entre las vistas y el Editor XML
+# <a name="how-to-switch-between-views-and-the-xml-editor"></a>Cómo: Para pasar de las vistas al Editor XML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-En este tema se muestra cómo pasar de las vistas del Diseñador de esquemas XML (Diseñador XSD) al Editor XML. Este ejemplo se usa el [esquema de pedido de compra](../xml-tools/sample-xsd-file-simple-schema.md).  
-  
-### <a name="to-switch-between-the-views-and-the-xml-editor"></a>Para pasar de las vistas al Editor XML  
-  
-1. Para crear y editar un nuevo archivo de esquema XML, siga los pasos de [Cómo: Crear y editar un archivo de esquema XSD](../xml-tools/how-to-create-and-edit-an-xsd-schema-file.md).  
-  
-2. Para cambiar al diseñador de esquemas XML desde el Editor XML, haga clic en cualquier lugar en el Editor XML y seleccione **Diseñador de vistas**.  
-  
-3. Para cambiar a la vista gráfico utilizando la marca de agua, haga clic en el **usar la vista gráfico para ver la relación entre los nodos** vínculo en la vista inicio.  
-  
-4. Arrastre el nodo `USAddress` desde el Explorador de esquemas XML hasta la vista Gráfico. Haga clic en el `USAddress` nodo en la vista gráfico y seleccione **mostrar en vista de modelo de contenido** en el menú contextual.  
-  
-     Aparece la vista Modelo de contenido con los detalles del nodo `USAddress`.  
-  
-5. Para cambiar a la vista Inicio desde la vista Modelo de contenido utilizando la barra de herramientas, haga clic en el botón de la vista Inicio en la barra de herramientas XSD.  
-  
-6. Para pasar de una vista a otra utilizando las teclas de acceso rápido, presione CTRL+1 para la vista Inicio, CTRL+2 para la vista Gráfico, y CTRL+3 para la vista Modelo de contenido.  
-  
-7. Para ir al Editor XML desde la vista de modelo de contenido, haga clic en el nodo y seleccione **ver código** en el menú contextual.
+En este tema se muestra cómo pasar de las vistas del Diseñador de esquemas XML (Diseñador XSD) al Editor XML. En este ejemplo se utiliza el [esquema del pedido de compra](../xml-tools/sample-xsd-file-simple-schema.md).
+
+### <a name="to-switch-between-the-views-and-the-xml-editor"></a>Para pasar de las vistas al Editor XML
+
+1. Para crear y editar un nuevo archivo de esquema XML, siga los pasos descritos en [Cómo: crear y editar un archivo de esquema XSD](../xml-tools/how-to-create-and-edit-an-xsd-schema-file.md).
+
+2. Para cambiar al diseñador de esquemas XML desde el editor XML, haga clic con el botón secundario en cualquier parte del editor XML y seleccione **Diseñador de vistas**.
+
+3. Para cambiar a la vista Gráfico con la marca de agua, haga clic en la **vista usar el gráfico para ver la relación entre el** vínculo de los nodos de la vista Inicio.
+
+4. Arrastre el nodo `USAddress` desde el Explorador de esquemas XML hasta la vista Gráfico. Haga clic con el botón secundario en el nodo `USAddress` de la vista gráfico y seleccione **Mostrar en la vista modelo de contenido** en el menú contextual.
+
+     Aparece la vista Modelo de contenido con los detalles del nodo `USAddress`.
+
+5. Para cambiar a la vista Inicio desde la vista Modelo de contenido utilizando la barra de herramientas, haga clic en el botón de la vista Inicio en la barra de herramientas XSD.
+
+6. Para pasar de una vista a otra utilizando las teclas de acceso rápido, presione CTRL+1 para la vista Inicio, CTRL+2 para la vista Gráfico, y CTRL+3 para la vista Modelo de contenido.
+
+7. Para ir al editor XML desde la vista modelo de contenido, haga clic con el botón secundario en el nodo y seleccione **Ver código** en el menú contextual.

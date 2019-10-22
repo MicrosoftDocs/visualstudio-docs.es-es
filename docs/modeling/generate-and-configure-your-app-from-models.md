@@ -2,17 +2,17 @@
 title: Generar y configurar la aplicación a partir de modelos
 ms.date: 11/04/2016
 ms.topic: conceptual
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a5ec2d1c471365dcd55aa33f00209c4154300e95
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 801423ee8ad5bb9a63ebb4f970d9c53e5fe8c1e4
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60078442"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72605706"
 ---
 # <a name="generate-and-configure-your-app-from-models"></a>Generar y configurar la aplicación a partir de modelos
 Puede generar o configurar partes de la aplicación a partir de un modelo.
@@ -20,7 +20,7 @@ Puede generar o configurar partes de la aplicación a partir de un modelo.
  El modelo representa los requisitos de forma más directa que el código. Al derivar el comportamiento de la aplicación directamente desde el modelo, puede responder a los cambios en los requisitos de forma mucho más rápida y confiable que actualizando el código. Aunque es necesario algún trabajo inicial para configurar la derivación, este esfuerzo queda compensado si espera que los requisitos varíen o si piensa crear diversas variantes del producto.
 
 ## <a name="generating-the-code-of-your-application-from-a-model"></a>Generar el código de la aplicación a partir de un modelo
- La forma más sencilla de generar código es usar plantillas de texto. Puede generar código en la misma solución de Visual Studio en la que guarda el modelo. Para obtener más información, consulte:
+ La forma más sencilla de generar código es usar plantillas de texto. Puede generar código en la misma solución de Visual Studio en la que se mantiene el modelo. Para obtener más información, consulte:
 
 - [Generación de código en tiempo de diseño mediante plantillas de texto T4](../modeling/design-time-code-generation-by-using-t4-text-templates.md)
 
@@ -46,29 +46,29 @@ Puede generar o configurar partes de la aplicación a partir de un modelo.
 ## <a name="developing-a-derived-application"></a>Desarrollar una aplicación derivada
  Las siguientes pautas generales podrían resultarle de utilidad:
 
-- **Iniciar específico y luego generalice.** Escriba en primer lugar una versión específica de la aplicación. Esta versión debería funcionar con un conjunto de condiciones. Cuando esté satisfecho con su funcionamiento, puede hacer que algunas de ellas deriven de un modelo. Amplíe gradualmente los elementos derivados.
+- **Específico de inicio y luego generalizar.** Escriba en primer lugar una versión específica de la aplicación. Esta versión debería funcionar con un conjunto de condiciones. Cuando esté satisfecho con su funcionamiento, puede hacer que algunas de ellas deriven de un modelo. Amplíe gradualmente los elementos derivados.
 
-     Por ejemplo, diseñar un sitio Web que tiene un conjunto específico de las páginas web antes de diseñar una aplicación web que presenta las páginas que se definen en un modelo.
+     Por ejemplo, diseñe un sitio web que tenga un conjunto específico de páginas web antes de diseñar una aplicación web que presente las páginas que se definen en un modelo.
 
-- **Modele los aspectos variantes.** Identifique los aspectos variables, ya sea entre implementaciones o a lo largo del tiempo, a medida que los requisitos cambian. Estos son los aspectos que se deben derivar de un modelo.
+- **Modelar los aspectos variantes.** Identifique los aspectos variables, ya sea entre implementaciones o a lo largo del tiempo, a medida que los requisitos cambian. Estos son los aspectos que se deben derivar de un modelo.
 
-     Por ejemplo, si el conjunto de web pages y los vínculos entre ellos cambian pero el estilo y el formato de las páginas es siempre el mismo, a continuación, el modelo debe describir los vínculos, pero no tiene que describir el formato de las páginas.
+     Por ejemplo, si el conjunto de páginas web y vínculos entre ellos cambian, pero el estilo y el formato de las páginas siempre son los mismos, el modelo debe describir los vínculos, pero no es necesario describir el formato de las páginas.
 
-- **Divida los problemas.** Si los aspectos de las variables pueden dividirse en zonas independientes, use modelos independientes para cada área. Con ModelBus, puede definir las operaciones que afectan a los dos modelos y las restricciones entre ellos.
+- **Aspectos independientes.** Si los aspectos de las variables pueden dividirse en zonas independientes, use modelos independientes para cada área. Con ModelBus, puede definir las operaciones que afectan a los dos modelos y las restricciones entre ellos.
 
-     Por ejemplo, puede usar un modelo para definir la navegación entre las páginas web y un modelo diferente para definir el diseño de las páginas.
+     Por ejemplo, use un modelo para definir la navegación entre las páginas web y un modelo diferente para definir el diseño de las páginas.
 
-- **Modele el requisito, no en la solución.** Diseñar el modelo para que describa los requisitos del usuario. Por el contrario, no diseñe la notación de acuerdo con los aspectos variables de la implementación.
+- **Modelar el requisito, no la solución.** Diseñe el modelo para que describa los requisitos del usuario. Por el contrario, no diseñe la notación de acuerdo con los aspectos variables de la implementación.
 
-     Por ejemplo, el modelo de exploración web debe representar páginas web y los hipervínculos entre ellas. El modelo de navegación web no debería representar fragmentos de HTML o clases de la aplicación.
+     Por ejemplo, el modelo de navegación web debe representar páginas web e hipervínculos entre ellos. El modelo de navegación web no debe representar fragmentos de HTML o clases de la aplicación.
 
-- **Generar o interpretar?** Si los requisitos de una implementación determinada cambian con poca frecuencia, genere código de programa a partir del modelo. Si los requisitos pueden cambiar con frecuencia o coexistir en más de una variante de la misma implementación, escriba la aplicación de modo que pueda leer e interpretar un modelo.
+- **¿Generar o interpretar?** Si los requisitos de una implementación determinada cambian con poca frecuencia, genere código de programa a partir del modelo. Si los requisitos pueden cambiar con frecuencia o coexistir en más de una variante de la misma implementación, escriba la aplicación de modo que pueda leer e interpretar un modelo.
 
-     Por ejemplo, si usa el modelo de sitio Web para desarrollar una serie de sitios Web diferentes y se instala por separado, debe generar el código del sitio desde el modelo. Pero, si usa el modelo para controlar un sitio que cambia cada día, es preferible escribir un servidor web que lea el modelo y presenta el sitio según corresponda.
+     Por ejemplo, si usa el modelo de sitio web para desarrollar una serie de sitios web diferentes y instalados por separado, debe generar el código del sitio a partir del modelo. Pero se usa el modelo para controlar un sitio que cambia cada día, es mejor escribir un servidor Web que lea el modelo y presente el sitio según corresponda.
 
 - **¿UML o DSL?** Estudie la posibilidad de crear la notación de modelado usando estereotipos para ampliar UML. Defina un DSL si ningún diagrama UML puede ajustarse al propósito, pero intente no romper la semántica estándar de UML.
 
-     Por ejemplo, un diagrama de clases UML es una colección de cuadros y flechas; con esta notación, en teoría, es posible definir cualquier cosa. Tenga en cuenta que no le recomendamos usar el diagrama de clases, excepto para describir un conjunto de tipos. Por ejemplo, podría adaptar los diagramas de clases para describir distintos tipos de páginas web.
+     Por ejemplo, un diagrama de clases UML es una colección de cuadros y flechas; con esta notación, en teoría, es posible definir cualquier cosa. Tenga en cuenta que no le recomendamos usar el diagrama de clases, excepto para describir un conjunto de tipos. Por ejemplo, puede adaptar los diagramas de clases para describir los distintos tipos de páginas Web.
 
 ## <a name="see-also"></a>Vea también
 

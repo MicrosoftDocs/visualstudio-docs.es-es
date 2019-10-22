@@ -18,11 +18,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: f07791a02c5e84722e8193f21b7ed2fe37bdd7f9
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60064289"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62849624"
 ---
 # <a name="get-started-debugging-multithreaded-applications-c-visual-basic-c"></a>Empezar a depurar aplicaciones multiproceso (C#, Visual Basic, C++)
 
@@ -41,7 +41,7 @@ En primer lugar, necesitará un proyecto de aplicación multiproceso. A continua
 1. Abra Visual Studio y cree un nuevo proyecto.
 
     ::: moniker range=">=vs-2019"
-    Presione **Esc** para cerrar la ventana de inicio. Tipo **Ctrl + Q** para abrir el cuadro de búsqueda, escriba **consola** (o **c ++**), elija **plantillas**y, a continuación:
+    Presione **Esc** para cerrar la ventana de inicio. Tipo **Ctrl + Q** para abrir el cuadro de búsqueda, escriba **consola** (o **c ++** ), elija **plantillas**y, a continuación:
 
     - Para C# o Visual Basic, elija **crear nuevo proyecto de aplicación de consola (.NET Framework)** cualquiera C# o Visual Basic. En el cuadro de diálogo que se abre, elija **Crear**.
     - Para C++, elija **crear nuevo proyecto de aplicación de consola** para C++. En el cuadro de diálogo que se abre, elija **Crear**.
@@ -51,8 +51,8 @@ En primer lugar, necesitará un proyecto de aplicación multiproceso. A continua
     ::: moniker range="vs-2017"
     En la barra de menús superior, seleccione **Archivo** > **Nuevo** > **Proyecto**. En el panel izquierdo de la **nuevo proyecto** cuadro de diálogo, seleccione lo siguiente:
 
-    - Para un C# aplicación, en **Visual C#** , elija **Windows Desktop**y, a continuación, en el panel central, elija **aplicación de consola (.NET Framework)**.
-    - Para una aplicación de Visual Basic, en **Visual Basic**, elija **Windows Desktop**y, a continuación, en el panel central, elija **aplicación de consola (.NET Framework)**.
+    - Para un C# aplicación, en **Visual C#** , elija **Windows Desktop**y, a continuación, en el panel central, elija **aplicación de consola (.NET Framework)** .
+    - Para una aplicación de Visual Basic, en **Visual Basic**, elija **Windows Desktop**y, a continuación, en el panel central, elija **aplicación de consola (.NET Framework)** .
     - Para un C++ aplicación, en **Visual C++** , elija **Windows Desktop**,, y, a continuación, elija **aplicación de consola Windows**.
 
     A continuación, escriba un nombre como **MyThreadWalkthroughApp** y haga clic en **Aceptar**.

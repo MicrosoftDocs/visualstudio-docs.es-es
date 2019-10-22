@@ -1,20 +1,20 @@
 ---
 title: Editor de código fuente
 description: Empleo del editor de código fuente de Visual Studio para Mac
-author: conceptdev
-ms.author: crdun
+author: cobey
+ms.author: cobey
 ms.date: 05/06/2018
 ms.assetid: A018A314-C1C4-4F36-BCB6-2D434208FCFE
-ms.openlocfilehash: b284cde511b17863861908d9967bbea7672e297b
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.openlocfilehash: d1ea74b4893032252d04ebe5fe5e65ca1eedaeeb
+ms.sourcegitcommit: 9fc8b144d4ed1c46aba87c0b7e1d24454e0eea9d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51295701"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "68493219"
 ---
 # <a name="source-editor"></a>Editor de código fuente
 
-Un editor de código fuente de confianza es básico para escribir código de forma sucinta y eficaz. Visual Studio para Mac proporciona un sofisticado editor de código fuente que constituye el núcleo de las interacciones con el IDE. El editor de código fuente proporciona las características que se podrían esperar y que se necesitan para trabajar con facilidad: desde tareas básicas como resaltado de sintaxis, fragmentos de código y plegado de código, a las ventajas de la integración del compilador Roslyn, como completado de código IntelliSense totalmente funcional.
+Un editor de código fuente de confianza es básico para escribir código de forma sucinta y eficaz. Visual Studio para Mac proporciona un sofisticado editor de código fuente que constituye el núcleo de las interacciones con el IDE. El editor de código fuente proporciona las características que se podrían esperar y que se necesitan para trabajar con facilidad: Desde tareas básicas como resaltado de sintaxis, fragmentos de código y plegado de código, a las ventajas de la integración del compilador Roslyn, como completado de código IntelliSense totalmente funcional.
 
 El editor de código fuente de Visual Studio para Mac permite una experiencia sin problemas con el resto de la funcionalidad del IDE, como la depuración, la refactorización y la integración del control de versiones.
 
@@ -32,13 +32,13 @@ El plegado de código facilita la administración de archivos de código fuente 
 
 Para activar el plegado de código, vaya a **Visual Studio > Preferencias > Editor de texto > General > Plegado de código**:
 
-![Opciones de plegado de código](media/source-editor-image1.png)
+![Opciones de plegado de código](media/source-neweditor-image1.png)
 
 Este menú también incluye la opción de plegar #regions y comentarios de forma predeterminada y de mostrar una sugerencia con nombre en lugar de código.
 
 Para mostrar u ocultar secciones, use el widget de divulgación situado junto al número de línea:
 
-![Visualización u ocultación de secciones del código](media/source-editor-image2.png)
+![Visualización u ocultación de secciones del código](media/source-neweditor-image2.png)
 
 También puede alternar entre la visualización y la ocultación de los plegados mediante el elemento de menú **Vista > Plegado > Alternar plegado / Alternar todos los plegados de código**:
 
@@ -46,21 +46,19 @@ También puede alternar entre la visualización y la ocultación de los plegados
 
 Este elemento de menú también puede usarse para habilitar o deshabilitar el plegado de código.
 
-## <a name="white-space"></a>Espacio en blanco
+## <a name="word-wrap"></a>Ajuste de línea
 
-Puede que necesite ver caracteres invisibles del código fuente. Es una manera visible de asegurarse de cumplir los estándares de codificación y de no desperdiciar espacio innecesariamente. También es útil al escribir F#, que depende de líneas con una sangría precisa para evaluar el código.
+El ajuste de línea puede ayudarle a administrar el espacio cuando se trabaja con líneas largas de código o con espacio de vista limitado. También puede permitirle tener la seguridad de que la vista de código contiene todo el contenido del archivo de código fuente, incluso cuando se abren paneles que pueden ocultar la vista o reducir el ancho de la vista del código fuente. 
 
-Para establecer las opciones para mostrar el espacio en blanco, vaya a **Visual Studio > Preferencias > Editor de texto > Marcadores y reglas**. La selección de esta opción permite establecer _cuándo_  se muestran los caracteres invisibles: Nunca, Al seleccionar o Siempre:
+Esta característica está deshabilitado de forma predeterminada, pero se puede habilitar en **Preferencias** en Visual Studio para Mac. 
 
-![Opciones para mostrar caracteres invisibles](media/source-editor-image3.png)
+Para habilitar el ajuste de línea, vaya a **Visual Studio > Preferencias > Editor de texto > Nuevo editor > Ajuste de línea**:
 
-También hay disponible una opción para mostrar tabulaciones, espacios y finales de línea:
+![Opciones de ajuste de línea](media/source-neweditor-wordwrap1.png)
 
-![Muestra de tabulaciones y espacios](media/source-editor-image4.png)
+Con el ajuste de línea habilitado, las líneas que superan el ancho de la vista del editor de código fuente se ajustarán automáticamente a la siguiente línea del archivo de código fuente. También puede habilitar una opción que mostrará un glifo visible junto a las líneas ajustadas. De esta forma, podrá diferenciar entre las líneas que se han ajustado automáticamente y las que se han ajustado manualmente.
 
-Los caracteres invisibles aparecen como puntos grises, como se muestra en la imagen siguiente:
-
-![espacio en blanco mostrado](media/source-editor-image22.png)
+![Texto ajustado con ajuste de línea habilitado](media/source-neweditor-wordwrap2.png)
 
 ## <a name="ruler"></a>Regla
 

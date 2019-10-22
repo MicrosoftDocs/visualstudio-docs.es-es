@@ -1,5 +1,5 @@
 ---
-title: Los conceptos y características de programación para extensiones de herramientas de SharePoint | Microsoft Docs
+title: Conceptos de programación y características para extensiones de herramientas de SharePoint
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -12,12 +12,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 2fc538b8a13458d82d23fe6039eb9c1e9406be52
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 215beaf21d704927792ae316df9b4c0ef3f98c44
+ms.sourcegitcommit: 25570fb5fb197318a96d45160eaf7def60d49b2b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56599069"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "66401739"
 ---
 # <a name="programming-concepts-and-features-for-sharepoint-tools-extensions"></a>Conceptos de programación y características para las extensiones de herramientas de SharePoint
   Hay varios conceptos de programación importantes y las características que están relacionados con las herramientas de SharePoint en Visual Studio. Estos conceptos y características desempeñan un papel importante en la mayoría de las extensiones de herramientas de SharePoint.

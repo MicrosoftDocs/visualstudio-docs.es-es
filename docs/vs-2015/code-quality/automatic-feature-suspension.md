@@ -1,5 +1,5 @@
 ---
-title: Suspensión de la característica automática | Documentos de Microsoft
+title: Suspensión automática de características | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.topic: conceptual
@@ -9,58 +9,58 @@ helpviewer_keywords:
 - low-memory
 ms.assetid: 572c15aa-1fd0-468c-b6be-9fa50e170914
 caps.latest.revision: 8
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: c2e6db11220c2cc7f14bc2f0f05912e7855646c1
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: b9c80ba76ba2da978c9cb475299ba0fc9e614120
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60045987"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72655153"
 ---
 # <a name="automatic-feature-suspension"></a>Suspensión automática de la característica
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-Si la memoria disponible del sistema cae a 200MB o menos, Visual Studio muestra el mensaje siguiente en el editor de código.
+Si la memoria disponible del sistema se encuentra en 200 MB o menos, Visual Studio muestra el siguiente mensaje en el editor de código.
 
- ![Suspender el análisis de la solución completa de texto de alerta](../code-quality/media/fsa-alert.png "FSA_Alert")
+ ![Texto de alerta que suspende el análisis completo de la solución](../code-quality/media/fsa-alert.png "FSA_Alert")
 
- Cuando Visual Studio detecta una condición de memoria insuficiente, suspende automáticamente determinadas características avanzadas que le ayuden a permanecer estable. Cuando esta avanzada aparece la advertencia de suspensión de característica, Visual Studio seguirán funcionando como antes, pero se degradará ligeramente su rendimiento.
+ Cuando Visual Studio detecta una condición de memoria insuficiente, suspende automáticamente ciertas características avanzadas para ayudarlo a permanecer estable. Cuando se muestra esta advertencia de suspensión de características avanzadas, Visual Studio continuará funcionando como antes, pero su rendimiento se degradará ligeramente.
 
  En una condición de memoria insuficiente, ocurre lo siguiente:
 
-- Análisis de la solución completa para Visual C# y Visual Basic está deshabilitada.
+- El análisis completo de la C# solución para Visual y Visual Basic está deshabilitado.
 
-- [Recolección de elementos](http://msdn.microsoft.com/library/22b6cb97-0c80-4eeb-a2cf-5ed7655e37f9) se deshabilitan el modo de baja latencia (GC) para Visual C# y Visual Basic.
+- La [recolección de elementos no utilizados](https://msdn.microsoft.com/library/22b6cb97-0c80-4eeb-a2cf-5ed7655e37f9) (GC) el modo C# de baja latencia para objetos visuales y Visual Basic están deshabilitados.
 
-- Se vacían las memorias caché visuales Studio.
+- Las memorias caché de Visual Studio se vacían.
 
 ## <a name="improve-visual-studio-performance"></a>Mejorar el rendimiento de Visual Studio
- Para sugerencias y trucos sobre cómo mejorar el rendimiento de Visual Studio cuando se trabaja con soluciones de gran tamaño o las condiciones de poca memoria, vea [consideraciones de rendimiento para soluciones de gran tamaño](https://github.com/dotnet/roslyn/wiki/Performance-considerations-for-large-solutions).
+ Para obtener sugerencias y trucos sobre cómo mejorar el rendimiento de Visual Studio cuando se trabaja con soluciones de gran tamaño o condiciones de memoria insuficiente, vea [consideraciones de rendimiento para soluciones de gran tamaño](https://github.com/dotnet/roslyn/wiki/Performance-considerations-for-large-solutions).
 
-## <a name="full-solution-analysis-suspended"></a>Análisis de la solución completa suspendido
- De forma predeterminada, análisis de la solución completa está habilitado para Visual Basic y deshabilitado para Visual C#. Sin embargo, en una condición de memoria insuficiente, análisis de la solución completa se deshabilita automáticamente para Visual Basic y Visual C#, independientemente de su configuración en el cuadro de diálogo Opciones. Sin embargo, puede volver a habilitar análisis de la solución completa eligiendo el **rehabilitar** botón en la información de la barra cuando aparezca, seleccionando la **Habilitar análisis de la solución completa** casilla de verificación en el cuadro de diálogo Opciones, o bien reiniciar Visual Studio. El cuadro de diálogo Opciones siempre muestra la solución completa actual configuración de análisis. Para obtener más información, vea [Cómo: Habilitar y deshabilitar el análisis de la solución completa](../code-quality/how-to-enable-and-disable-full-solution-analysis-for-managed-code.md).
+## <a name="full-solution-analysis-suspended"></a>Análisis completo de la solución suspendido
+ De forma predeterminada, el análisis completo de la solución está habilitado para C#Visual Basic y deshabilitado para visual. Sin embargo, en una condición de memoria insuficiente, el análisis completo de la solución se deshabilita C#automáticamente para Visual Basic y visual, independientemente de su configuración en el cuadro de diálogo Opciones. Sin embargo, puede volver a habilitar el análisis completo de la solución eligiendo el botón **volver a habilitar** en la barra de información cuando aparezca; para ello, active la casilla habilitar el análisis de la **solución completa** en el cuadro de diálogo Opciones o reinicie Visual Studio. En el cuadro de diálogo Opciones siempre se muestra la configuración actual de análisis de la solución completa. Para obtener más información, vea [Cómo: habilitar y deshabilitar el análisis completo de la solución](../code-quality/how-to-enable-and-disable-full-solution-analysis-for-managed-code.md).
 
-## <a name="gc-low-latency-disabled"></a>GC baja latencia deshabilitada
- Para volver a habilitar el modo de latencia baja de GC, reinicie Visual Studio.  De forma predeterminada, Visual Studio habilita el modo de latencia baja de GC cada vez que escribe para asegurarse de que lo que ha escrito no bloquea las operaciones de catálogo global. Sin embargo, si una condición de poca memoria hace que Visual Studio mostrar la advertencia suspensión automática, el modo de latencia baja de GC está deshabilitado para esa sesión. Reiniciar Visual Studio se rehabilitar el comportamiento de GC de forma predeterminada. Para obtener más información, consulta <xref:System.Runtime.GCLatencyMode>.
+## <a name="gc-low-latency-disabled"></a>Baja latencia de GC deshabilitada
+ Para volver a habilitar el modo de baja latencia de GC, reinicie Visual Studio.  De forma predeterminada, Visual Studio habilita el modo de baja latencia de GC siempre que se escribe para asegurarse de que su escritura no bloquea las operaciones de GC. Sin embargo, si una condición de memoria insuficiente hace que Visual Studio muestre la advertencia de suspensión automática, el modo de latencia baja de GC está deshabilitado para esa sesión. Al reiniciar Visual Studio, se volverá a habilitar el comportamiento predeterminado de GC. Para obtener más información, vea <xref:System.Runtime.GCLatencyMode>.
 
-## <a name="visual-studio-caches-flushed"></a>Visual Studio las memorias caché vaciadas
+## <a name="visual-studio-caches-flushed"></a>Memorias caché de Visual Studio vacías
 
-Todas las cachés de Visual Studio se vacían inmediatamente, pero se iniciará volver a rellenar si continuar la sesión actual de desarrollo o reinicie Visual Studio. Las memorias caché vaciadas incluyen las memorias caché de las siguientes características.
+Todas las memorias caché de Visual Studio se vacían inmediatamente, pero comenzarán a rellenarse si continúa con la sesión de desarrollo actual o reinicia Visual Studio. Las memorias caché vacías incluyen memorias caché para las siguientes características.
 
 - Buscar todas las referencias
 
 - Navegar a
 
-- Agregar Using
+- Agregar usando
 
-Además, también se borran las memorias caché que se utiliza para operaciones internas de Visual Studio.
+Además, también se borran las memorias caché utilizadas para las operaciones internas de Visual Studio.
 
 > [!NOTE]
-> La advertencia de suspensión de la característica automática se produce solo una vez en una base de cada solución, no en cada sesión. Esto significa que si cambiar desde Visual Basic a Visual C# (o viceversa) y ejecutar en otra condición de poca memoria, posiblemente, puede obtener otra advertencia de suspensión de la característica automática.
+> La advertencia de suspensión automática de características se produce solo una vez por solución, no por sesión. Esto significa que si cambia de Visual Basic a visual C# (o viceversa) y se ejecuta en otra condición de memoria insuficiente, puede obtener otra advertencia de suspensión automática de características.
 
 ## <a name="see-also"></a>Vea también
 
-- [Cómo: Habilitar y deshabilitar el análisis de la solución completa](../code-quality/how-to-enable-and-disable-full-solution-analysis-for-managed-code.md)
-- [Fundamentos de la recolección de elementos no utilizados](http://msdn.microsoft.com/library/67c5a20d-1be1-4ea7-8a9a-92b0b08658d2)
+- [Cómo: Habilitar y deshabilitar el análisis completo de la solución](../code-quality/how-to-enable-and-disable-full-solution-analysis-for-managed-code.md)
+- [Fundamentos de la recolección de elementos no utilizados](https://msdn.microsoft.com/library/67c5a20d-1be1-4ea7-8a9a-92b0b08658d2)
 - [Consideraciones de rendimiento para soluciones de gran tamaño](https://github.com/dotnet/roslyn/wiki/Performance-considerations-for-large-solutions)

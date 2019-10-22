@@ -1,7 +1,7 @@
 ---
 title: Problemas conocidos de contenedores
 description: Obtenga más información sobre los problemas conocidos que pueden producirse al instalar Visual Studio Build Tools en un contenedor de Windows.
-ms.date: 04/18/2018
+ms.date: 07/03/2019
 ms.custom: seodec18
 ms.topic: conceptual
 ms.assetid: 140083f1-05bc-4014-949e-fb5802397c7a
@@ -12,12 +12,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 21486fb42f689fbdd5876353a0d99b8f818cf817
-ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
+ms.openlocfilehash: 07eff5daf319f854b5393d80ed4d41a0b0262b96
+ms.sourcegitcommit: 98b02f87c7aa1f5eb7f0d1c86bfa36efa8580c57
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58415630"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "72313912"
 ---
 # <a name="known-issues-for-containers"></a>Problemas conocidos de contenedores
 
@@ -53,6 +53,7 @@ Los problemas conocidos aquí descritos se producen cuando se instala Visual St
 Es posible que se produzcan los siguientes problemas conocidos al usar un contenedor de Build Tools. Para ver si se han corregido problemas o si hay otros problemas conocidos, visite https://developercommunity.visualstudio.com.
 
 * Es posible que IntelliTrace no funcione en [algunos escenarios](https://github.com/Microsoft/vstest/issues/940) dentro de un contenedor.
+* En versiones anteriores de Docker para Windows, el tamaño de la imagen del contenedor predeterminado es de solo 20 GB y no cabrá en Build Tools. Siga las [instrucciones para cambiar el tamaño de la imagen](https://docs.microsoft.com/virtualization/windowscontainers/manage-containers/container-storage#storage-limits) a 127 GB o más.
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 

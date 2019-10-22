@@ -1,5 +1,5 @@
 ---
-title: Mostrar información personalizada con DebuggerDisplay | Microsoft Docs
+title: Mostrar información personalizada mediante DebuggerDisplay | Microsoft Docs
 ms.date: 01/09/2019
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,19 +12,20 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: af666497deb20f3c2d9125b4beb452f24cabbbd2
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: f16040408def290536ac5dadfec77ade9577c821
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60099898"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72568924"
 ---
-# <a name="tell-the-debugger-what-to-show-using-the-debuggerdisplay-attribute-c-visual-basic-f-ccli"></a>Indicar al depurador qué muestra el uso del atributo DebuggerDisplay (C#, Visual Basic, F#, C++/CLI)
-El atributo <xref:System.Diagnostics.DebuggerDisplayAttribute> controla la forma en que se muestra un objeto, una propiedad o un campo en las ventanas de variables del depurador. Este atributo se puede aplicar a tipos, delegados, propiedades, campos y ensamblados.
+# <a name="tell-the-debugger-what-to-show-using-the-debuggerdisplay-attribute-c-visual-basic-f-ccli"></a>Indicar al depurador qué Mostrar mediante el atributo DebuggerDisplay (C#, Visual Basic, F#, C++/CLI)
+
+El atributo <xref:System.Diagnostics.DebuggerDisplayAttribute> controla la forma en que se muestra un objeto, una propiedad o un campo en las ventanas de variables del depurador. Este atributo se puede aplicar a tipos, delegados, propiedades, campos y ensamblados. Si se aplica a un tipo base, el atributo también se aplica a una subclase.
 
 El atributo `DebuggerDisplay` tiene un argumento único, que es una cadena que se va a mostrar en la columna de valor de las instancias del tipo. Esta cadena puede contener llaves (`{` y `}`). El texto encerrado entre llaves se evalúa como un campo, una propiedad o un método.
 
-Si una clase tiene un método `ToString()` invalidado, el depurador usa el método invalidado en lugar del atributo `{<typeName>}`predeterminado. Por lo tanto, si invalidó el método `ToString()` , el depurador usa el método invalidado en lugar del atributo`{<typeName>}`predeterminado, y no tiene que usar `DebuggerDisplay`. Si usa ambos, el atributo `DebuggerDisplay` tiene prioridad sobre el método `ToString()` invalidado.
+Si una clase tiene un método `ToString()` invalidado, el depurador usa el método invalidado en lugar del atributo `{<typeName>}`predeterminado. Por lo tanto, si invalidó el método `ToString()` , el depurador usa el método invalidado en lugar del atributo`{<typeName>}`predeterminado, y no tiene que usar `DebuggerDisplay`. Si usa ambos, el atributo `DebuggerDisplay` tiene prioridad sobre el método `ToString()` invalidado. El atributo `DebuggerDisplay` también tiene prioridad sobre el método `ToString()` invalidado en una subclase.
 
 La evaluación de esta llamada implícita a `ToString()` por parte del depurador depende de un valor de configuración del usuario del cuadro de diálogo **Herramientas / Opciones/ Depuración** . Visual Basic no implementa esta evaluación implícita de `ToString()` .
 
@@ -32,7 +33,7 @@ La evaluación de esta llamada implícita a `ToString()` por parte del depurador
 > Si la casilla **Mostrar la estructura de los objetos en ventanas de variables** está seleccionada en el cuadro de diálogo **Herramientas / Opciones/ Depuración** , se omite el atributo `DebuggerDisplay` .
 
 > [!NOTE]
-> Para código nativo, este atributo solo se admite en C++código /CLI.
+> En el caso de código nativo, este atributo solo C++se admite en el código/CLI.
 
 En la tabla siguiente se muestran algunos posibles usos del atributo `DebuggerDisplay` y resultados de ejemplo.
 
@@ -90,12 +91,12 @@ public sealed class MyClass
 }
 ```
 
-El ", nq" sufijo indica el evaluador de expresiones para quitar las comillas al mostrar el valor final (nq no = comillas).
+El sufijo ", NQ" indica al evaluador de expresiones que quite las comillas al mostrar el valor final (NQ = sin comillas).
 
 ## <a name="example"></a>Ejemplo
 En el ejemplo de código siguiente se muestra cómo utilizar `DebuggerDisplay`, junto con `DebuggerBrowseable` y `DebuggerTypeProxy`. Cuando se ve en una ventana de variables del depurador, como la ventana **Inspección** , genera una expansión similar a la siguiente:
 
-|**Name**|**Valor**|**Type**|
+|**Nombre**|**Valor**|**ype**|
 |--------------|---------------|--------------|
 |Key|"three"|object {string}|
 |Valor|3|object {int}|
@@ -181,6 +182,6 @@ class MyHashtable
 ## <a name="see-also"></a>Vea también
 
 - [Usar el atributo DebuggerTypeProxy](../debugger/using-debuggertypeproxy-attribute.md)
-- [Creación de vistas personalizadas de objetos administrados](../debugger/create-custom-views-of-dot-managed-objects.md)
+- [Creación de vistas personalizadas de objetos administrados](../debugger/create-custom-views-of-managed-objects.md)
 - [Especificadores de formato en C#](../debugger/format-specifiers-in-csharp.md)
 - [Mejorar la depuración con los atributos de visualización del depurador](/dotnet/framework/debug-trace-profile/enhancing-debugging-with-the-debugger-display-attributes)

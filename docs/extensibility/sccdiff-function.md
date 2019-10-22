@@ -7,17 +7,17 @@ f1_keywords:
 helpviewer_keywords:
 - SccDiff function
 ms.assetid: d49bc8c5-f631-4153-9d3c-feb3564da305
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8f9f381fbd9c6cb3f4f2128adc3910516be42962
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 52da17cbb7f6349d99a04709bbe469501394d4e5
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56681665"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66327514"
 ---
 # <a name="sccdiff-function"></a>SccDiff (función)
 Esta función muestra (o simplemente, opcionalmente, busca) del sistema de control de las diferencias entre el archivo actual (en el disco local) y su última versión protegida en el origen.
@@ -77,7 +77,7 @@ SCCRTN SccDiff(
  Como optimización del rendimiento, el complemento de control de origen puede usar una alternativa basada en una suma de comprobación o una marca de tiempo en lugar de la comparación byte a byte lo llamada para `SCC_DIFF_CONTENTS`: estas formas de comparación son obviamente más rápido pero menos confiable. No todos los sistemas de control de código fuente pueden admitir estos métodos alternativos de comparación y el complemento es posible que tenga que recurrir a una comparación de contenido. Todos los complementos código fuente control deben, como mínimo, admitir una comparación de contenido.
 
 > [!NOTE]
->  Las marcas de diferencia rápido son mutuamente excluyentes. Es válido pasar ninguna marca, pero no es válido pasar simultáneamente más de uno. `SCC_DIFF_QUICK_DIFF`, que es una máscara que combina todas las marcas, se puede usar para probar, pero nunca se debe pasar como parámetro.
+> Las marcas de diferencia rápido son mutuamente excluyentes. Es válido pasar ninguna marca, pero no es válido pasar simultáneamente más de uno. `SCC_DIFF_QUICK_DIFF`, que es una máscara que combina todas las marcas, se puede usar para probar, pero nunca se debe pasar como parámetro.
 
 |`fOption`|Significado|
 |---------------|-------------|

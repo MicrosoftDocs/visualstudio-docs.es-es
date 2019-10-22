@@ -1,5 +1,5 @@
 ---
-title: IActiveScriptAuthorProcedure::ParseProcedureText | Microsoft Docs
+title: Iactivescriptauthorprocedure (::P arseProcedureText | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 15
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c513b105a483d0f80510dff9c91fa2c3f09e0523
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 11a34843f30274ec78f1652c5ed5cd4dbcf2884a
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58149385"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72572819"
 ---
 # <a name="iactivescriptauthorprocedureparseproceduretext"></a>IActiveScriptAuthorProcedure::ParseProcedureText
-Analiza un procedimiento de código, agrega texto del procedimiento de código para el motor de creación de script y crea un `IScriptEntry` objeto que se corresponde con el procedimiento de código.  
+Analiza un procedimiento de código, agrega el texto del procedimiento de código al motor de creación de scripts y crea un objeto `IScriptEntry` que corresponde al procedimiento de código.  
   
 ## <a name="syntax"></a>Sintaxis  
   
@@ -44,38 +44,38 @@ HRESULT ParseProcedureText(
   
 #### <a name="parameters"></a>Parámetros  
  `pszCode`  
- [in] Para analizar el texto del script.  
+ de Texto del script que se va a analizar.  
   
  `pszFormalParams`  
- [in] La dirección de los nombres de parámetro formal para el procedimiento. Los nombres de parámetro deben estar separados por los delimitadores apropiados para el motor de creación de script. Los nombres no deben incluirse entre paréntesis.  
+ de Dirección de los nombres de parámetros formales para el procedimiento. Los nombres de los parámetros deben estar separados por los delimitadores adecuados para el motor de creación de scripts. Los nombres no se deben incluir entre paréntesis.  
   
  `pszProcedureName`  
- [in] La dirección del nombre del procedimiento que se va a analizar.  
+ de Dirección del nombre del procedimiento que se va a analizar.  
   
  `pszItemName`  
- [in] La dirección de búfer que contiene el nombre del elemento asociado con el `IScriptEntry` objeto.  
+ de La dirección del búfer que contiene el nombre del elemento asociado al objeto de `IScriptEntry`.  
   
  `pszDelimiter`  
- [in] La dirección del delimitador final del bloque de script. Cuando `pszCode` se analiza desde una secuencia de texto, el host normalmente utiliza un delimitador (por ejemplo, dos comillas simples), para detectar el final del bloque de script. Establezca este parámetro en NULL si no hay ningún delimitador para marcar el final del bloque de script.  
+ de Dirección del delimitador de bloque de script final. Cuando `pszCode` se analiza desde un flujo de texto, el host normalmente usa un delimitador (como dos comillas simples) para detectar el final del bloque de script. Establezca este parámetro en NULL si no hay ningún delimitador para marcar el final del bloque de script.  
   
  `dwCookie`  
- [in] Un valor definido por la aplicación que está asociado con el nuevo `IScriptEntry` objeto.  
+ de Un valor definido por la aplicación que está asociado al nuevo objeto `IScriptEntry`.  
   
  `dwFlags`  
- [in] No se utiliza.  
+ de No se usa.  
   
  `pdispFor`  
- [in] No se utiliza.  
+ de No se usa.  
   
 ## <a name="return-value"></a>Valor devuelto  
- Una clase `HRESULT`. Entre los valores posibles se incluyen los que se indican en la tabla siguiente, entre otros.  
+ Interfaz `HRESULT`. Entre los valores posibles se incluyen los que se indican en la tabla siguiente, entre otros.  
   
 |Valor|Descripción|  
 |-----------|-----------------|  
 |`S_OK`|El método se realizó correctamente.|  
   
 ## <a name="remarks"></a>Comentarios  
- Actual [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] motor no implementa este método.  
+ El motor de [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] actual no implementa este método.  
   
 ## <a name="see-also"></a>Vea también  
  [IActiveScriptAuthorProcedure (Interfaz)](../../winscript/reference/iactivescriptauthorprocedure-interface.md)

@@ -6,17 +6,17 @@ helpviewer_keywords:
 - registration, custom tools
 - custom tools, defining registry settings
 ms.assetid: db7592c0-1273-4843-9617-6e2ddabb6ca8
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5f16385452fa0fa0f4e706da1856185355aa95a5
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 5b0c3bf7c8260506eabf56113992c985e1cc8669
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60047194"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66351011"
 ---
 # <a name="registering-single-file-generators"></a>Registro de generadores de un solo archivo
 Para que estén disponibles en una herramienta personalizada [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], debe registrar tan [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] puede inicializarla y lo asocia con un tipo de proyecto determinado.
@@ -51,7 +51,7 @@ Para que estén disponibles en una herramienta personalizada [!INCLUDE[vsprvs](.
         Obligatorio. Indica si los tipos de los archivos generados por esta herramienta personalizada están disponibles para los diseñadores visuales. El valor de este parámetro debe ser (cero) 0 para tipos no están disponibles para los diseñadores visuales o 1 (uno) para los tipos disponibles para los diseñadores visuales.
 
    > [!NOTE]
-   >  Debe registrar la herramienta personalizada por separado para cada idioma para el que desea que la herramienta personalizada esté disponible.
+   > Debe registrar la herramienta personalizada por separado para cada idioma para el que desea que la herramienta personalizada esté disponible.
 
     Por ejemplo, el MSDataSetGenerator registra a sí mismo una vez para cada idioma:
 

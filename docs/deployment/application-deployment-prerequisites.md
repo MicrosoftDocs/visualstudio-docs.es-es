@@ -19,16 +19,16 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 12a46c424e8b2c44e0622edf4b4a615273580814
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 8206e199acc3ccb76cf89603d48bed0173129218
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59657597"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66746059"
 ---
 # <a name="application-deployment-prerequisites"></a>Requisitos previos para la implementación de aplicaciones
 
-Para que la aplicación para instalar y ejecutar correctamente, debe instalar primero todos los componentes que la aplicación depende en el equipo de destino. Por ejemplo, mayoría de las aplicaciones creada con [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] tienen una dependencia en el [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]. En este caso, la versión correcta de common language runtime debe estar presente en el equipo de destino antes de instalar la aplicación.
+Para que la aplicación para instalar y ejecutar correctamente, debe instalar primero todos los componentes que la aplicación depende en el equipo de destino. Por ejemplo, mayoría de las aplicaciones creada con [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] tienen una dependencia en .NET Framework. En este caso, la versión correcta de common language runtime debe estar presente en el equipo de destino antes de instalar la aplicación.
 
  Puede seleccionar estos requisitos previos en el **Prerequisites Dialog Box** e instalar .NET Framework y cualquier otro redistribuible como parte de la instalación. Este procedimiento se conoce como *arranque*. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] genera un programa ejecutable de Windows denominado *Setup.exe*, también conocida como un *arranque*. El programa previo es responsable de la instalación de estos requisitos previos antes de que se ejecute la aplicación. Para obtener más información acerca de cómo seleccionar estos requisitos previos, consulte [cuadro de diálogo de requisitos previos](../ide/reference/prerequisites-dialog-box.md).
 
@@ -48,7 +48,7 @@ Para que la aplicación para instalar y ejecutar correctamente, debe instalar pr
   [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] puede detectar requisitos previos que falten, y puede instalar los requisitos previos mediante el uso de un programa previo. Para obtener más información, vea [Cómo: Requisitos previos de instalación con una aplicación ClickOnce](../deployment/how-to-install-prerequisites-with-a-clickonce-application.md).
 
 > [!NOTE]
->  Para cambiar los valores en los manifiestos generados por herramientas tales como [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] y *MageUI.exe*, necesita editar el manifiesto de la aplicación en un editor de texto y, después, volver a firmar los manifiestos de la aplicación y de la implementación. Para obtener más información, vea [Cómo: Repetición de la firma de manifiestos de implementación y aplicación](../deployment/how-to-re-sign-application-and-deployment-manifests.md).
+> Para cambiar los valores en los manifiestos generados por herramientas tales como [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] y *MageUI.exe*, necesita editar el manifiesto de la aplicación en un editor de texto y, después, volver a firmar los manifiestos de la aplicación y de la implementación. Para obtener más información, vea [Cómo: Repetición de la firma de manifiestos de implementación y aplicación](../deployment/how-to-re-sign-application-and-deployment-manifests.md).
 
  Si usa Visual Studio y ClickOnce para implementar su aplicación, los paquetes de programa previo se seleccionan de forma predeterminada según la versión de .NET Framework en la solución. Sin embargo, si cambia la versión de .NET Framework de destino, debe actualizar manualmente las opciones en el **cuadro de diálogo Requisitos previos**.
 
@@ -76,7 +76,7 @@ Para que la aplicación para instalar y ejecutar correctamente, debe instalar pr
 | **-?, -h, -help** | Muestra el cuadro de diálogo Ayuda. |
 | **-url, -componentsurl** | Muestra la dirección URL almacenada y la dirección URL de los componentes para esta instalación. |
 | **-url=** `location` | Establece la dirección URL donde *Setup.exe* buscará la aplicación [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]. |
-| **-componentsurl=** `location` | Establece la dirección URL donde *Setup.exe* buscará las dependencias, como [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]. |
+| **-componentsurl=** `location` | Establece la dirección URL donde *Setup.exe* buscará las dependencias, como .NET Framework. |
 | **-homesite=** `true` **&#124;** `false` | Cuando `true`, descarga las dependencias de la ubicación preferida en el sitio del proveedor. Esta configuración invalida la **- componentsurl** configuración. Cuando `false`, descarga las dependencias de la dirección URL especificada por **- componentsurl**. |
 
 ## <a name="operating-system-support"></a>Compatibilidad con el sistema operativo

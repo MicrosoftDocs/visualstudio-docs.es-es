@@ -11,11 +11,11 @@ ms.author: mikejo
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
 ms.openlocfilehash: 3b489b97551e5b5522cb58868b34dee4d9e5fb7b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58995971"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62963655"
 ---
 # <a name="learn-the-various-ways-to-debug-an-azure-cloud-service"></a>Más información sobre las diversas maneras de depurar un servicio en la nube de Azure
 Este artículo contiene vínculos a las diversas maneras de depurar un servicio en la nube de Azure. 

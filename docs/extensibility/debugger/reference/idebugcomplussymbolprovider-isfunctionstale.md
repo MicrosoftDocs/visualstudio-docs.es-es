@@ -5,17 +5,20 @@ ms.topic: reference
 helpviewer_keywords:
 - IDebugComPlusSymbolProvider::IsFunctionStale
 ms.assetid: dcffc090-4ed8-47b2-ba51-bce1a6b6428d
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d17b6a6fc84a7e0d2787e93bb12345d8243bfd41
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 121782e7febeb93844689c140d1994a68e3903b4
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56717850"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66351808"
 ---
 # <a name="idebugcomplussymbolproviderisfunctionstale"></a>IDebugComPlusSymbolProvider::IsFunctionStale
 Determina si la función en la dirección de depuración especificado se considera obsoleta.
@@ -34,10 +37,9 @@ int IsFunctionStale(
 );
 ```
 
-#### <a name="parameters"></a>Parámetros
-`pAddress`
-
- [in] La dirección de depuración que se representa mediante un [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) interfaz. Esta dirección debe ser un METHOD_ADDRESS.
+## <a name="parameters"></a>Parámetros
+`pAddress`\
+[in] La dirección de depuración que se representa mediante un [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) interfaz. Esta dirección debe ser un METHOD_ADDRESS.
 
 ## <a name="return-value"></a>Valor devuelto
 Devuelve si la función se considera obsoleta, `S_OK`. Devuelve si la función no está obsoleta, `S_FALSE`.

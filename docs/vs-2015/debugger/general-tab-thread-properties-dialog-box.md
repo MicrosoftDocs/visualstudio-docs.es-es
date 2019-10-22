@@ -13,11 +13,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: b1a8e6fd583f6035fc84f0c86adcee059562235d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58995514"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68159942"
 ---
 # <a name="general-tab-thread-properties-dialog-box"></a>Pestaña General (Cuadro de diálogo Propiedades del subproceso)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,7 +26,7 @@ Utilice este cuadro de diálogo para obtener más información acerca de un subp
   
  El **Thread Properties** cuadro de diálogo contiene un panel, el **General** ficha. Las siguientes opciones están disponibles:  
   
-|Entrada|Descripción|  
+|Entrada|DESCRIPCIÓN|  
 |-----------|-----------------|  
 |**Nombre del módulo**|El nombre del módulo.|  
 |**Identificador de subproceso**|El identificador único de este subproceso. Tenga en cuenta que los números de Id. de subproceso se reutilizan; identifican un subproceso sólo durante la vigencia de ese subproceso.|  

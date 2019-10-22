@@ -1,5 +1,5 @@
 ---
-title: Filtrar Realizar acciones mediante programación cuando se recibe un mensaje de correo electrónico
+title: Realizar acciones mediante programación si se recibe el mensaje de correo electrónico
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -15,14 +15,14 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 31f195d6b83a93363c3b2ef3bfa7d829f5fc822d
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: a0787db2f7055bc65871227b9fcf8cbbb60ec1d8
+ms.sourcegitcommit: 25570fb5fb197318a96d45160eaf7def60d49b2b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56612353"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "66402199"
 ---
-# <a name="how-to-programmatically-perform-actions-when-an-email-message-is-received"></a>Filtrar Realizar acciones mediante programación cuando se recibe un mensaje de correo electrónico
+# <a name="how-to-programmatically-perform-actions-when-an-email-message-is-received"></a>Procedimiento Realizar acciones mediante programación cuando se recibe un mensaje de correo electrónico
   En este ejemplo realiza acciones personalizadas cuando el usuario recibe un mensaje de correo electrónico.
 
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]

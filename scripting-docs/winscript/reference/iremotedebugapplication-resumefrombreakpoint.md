@@ -1,5 +1,5 @@
 ---
-title: IRemoteDebugApplication::ResumeFromBreakPoint | Microsoft Docs
+title: 'Iremotedebugapplication (:: ResumeFromBreakPoint | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,12 +17,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 5844381188cb03c99ab0a44ed9b9e0fdbab67e6e
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 7fead9c14efbe73bd006a5ff3e1cfb10ad40404b
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58146960"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72577459"
 ---
 # <a name="iremotedebugapplicationresumefrombreakpoint"></a>IRemoteDebugApplication::ResumeFromBreakPoint
 Continúa una aplicación que está actualmente en un punto de interrupción.  
@@ -39,13 +39,13 @@ HRESULT ResumeFromBreakPoint(
   
 #### <a name="parameters"></a>Parámetros  
  `prptFocus`  
- [in] Para la ejecución paso a paso de los modos, el subproceso que se vea afectado por el modo de ejecución paso a paso.  
+ de En el caso de los modos de ejecución, el subproceso que se verá afectado por el modo de ejecución.  
   
  `bra`  
- [in] La acción que se realizará al reanudar la aplicación.  
+ de Acción que se realizará al reanudar la aplicación.  
   
  `era`  
- [in] La acción que se realizará en el caso de que la aplicación se detuvo debido a un error.  
+ de Acción que se debe llevar a cabo en caso de que la aplicación se detenga debido a un error.  
   
 ## <a name="return-value"></a>Valor devuelto  
  El método devuelve un objeto `HRESULT`. Entre los valores posibles se incluyen los que se indican en la tabla siguiente, entre otros.  
@@ -55,9 +55,9 @@ HRESULT ResumeFromBreakPoint(
 |`S_OK`|El método se realizó correctamente.|  
   
 ## <a name="remarks"></a>Comentarios  
- Este método sigue una aplicación que está actualmente en un punto de interrupción.  
+ Este método continúa con una aplicación que está actualmente en un punto de interrupción.  
   
 ## <a name="see-also"></a>Vea también  
- [IRemoteDebugApplication (interfaz)](../../winscript/reference/iremotedebugapplication-interface.md)   
- [BREAKRESUMEACTION (enumeración)](../../winscript/reference/breakresumeaction-enumeration.md)   
+ @No__t_1 de la [interfaz iremotedebugapplication (](../../winscript/reference/iremotedebugapplication-interface.md)  
+ @No__t_1 [enumeración breakresumeaction (](../../winscript/reference/breakresumeaction-enumeration.md)  
  [ERRORRESUMEACTION (Enumeración)](../../winscript/reference/errorresumeaction-enumeration.md)

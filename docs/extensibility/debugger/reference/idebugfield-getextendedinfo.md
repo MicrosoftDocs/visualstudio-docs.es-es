@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugField::GetExtendedInfo method
 ms.assetid: 46c0dd4d-4fd5-4efd-a908-71e4248e8e8d
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0321dfbdc719d8e155bb1ee035032e2862bb90e0
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 3ddae4ea7ecc58d67279ae638d19bf95ec2cc591
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56679052"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66352656"
 ---
 # <a name="idebugfieldgetextendedinfo"></a>IDebugField::GetExtendedInfo
 Este método obtiene información sobre un campo adicional.
@@ -40,23 +43,20 @@ int GetExtendedInfo(
 );
 ```
 
-#### <a name="parameters"></a>Parámetros
- `guidExtendedInfo`
-
- [in] Selecciona la información que se va a devolver. Los valores válidos son:
+## <a name="parameters"></a>Parámetros
+`guidExtendedInfo`\
+[in] Selecciona la información que se va a devolver. Los valores válidos son:
 
 |Valor|Descripción|
 |-----------|-----------------|
 |`guidConstantValue`|El valor como una secuencia de bytes.|
 |`guidConstantType`|El tipo como una signatura de tipo.|
 
- `prgBuffer`
+`prgBuffer`\
+[out] Devuelve la información extendida.
 
- [out] Devuelve la información extendida.
-
- `pdwLen`
-
- [in, out] Devuelve el tamaño de la información extendida, en bytes.
+`pdwLen`\
+[in, out] Devuelve el tamaño de la información extendida, en bytes.
 
 ## <a name="return-value"></a>Valor devuelto
  Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.

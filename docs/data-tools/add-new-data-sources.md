@@ -8,83 +8,83 @@ helpviewer_keywords:
 - data [Visual Studio], data sources
 - data sources
 ms.assetid: ed28c625-bb89-4037-bfde-cfa435d182a2
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 05a07fc3cb72f923d28ff907c9aec69620cbd40d
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
-ms.translationtype: MTE95
+ms.openlocfilehash: 99e9d9d466ae32d86b64b17738c96c245bda8f96
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55955809"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72648896"
 ---
 # <a name="add-new-data-sources"></a>Agregar nuevos orígenes de datos
 
-En el contexto de las herramientas de datos de .NET en Visual Studio, el término *origen de datos* hace referencia a objetos de .NET que se conectan a un almacén de datos y hacer que los datos disponibles para una aplicación .NET. Los diseñadores de Visual Studio pueden consumir la salida del origen de datos para generar el código reutilizable que enlaza los datos a los formularios al arrastrar y colocar los objetos de base de datos desde el **orígenes de datos** ventana. Este tipo de origen de datos puede ser:
+En el contexto de las herramientas de datos de .NET en Visual Studio, el término *origen de datos* hace referencia a los objetos de .net que se conectan a un almacén de datos y hacen que los datos estén disponibles para una aplicación .net. Los diseñadores de Visual Studio pueden utilizar la salida del origen de datos para generar el código reutilizable que enlaza los datos a los formularios al arrastrar y colocar objetos de base de datos desde la ventana **orígenes de datos** . Este tipo de origen de datos puede ser:
 
-- Una clase en un modelo de Entity Framework que está asociado a algún tipo de base de datos.
+- Una clase de un modelo de Entity Framework que está asociado a algún tipo de base de datos.
 
-- Un conjunto de datos que está asociado a algún tipo de base de datos.
+- Conjunto de datos que está asociado a algún tipo de base de datos.
 
-- Una clase que representa un servicio de red como un servicio de datos de Windows Communication Foundation (WCF) o un servicio REST.
+- Una clase que representa un servicio de red como un servicio de datos Windows Communication Foundation (WCF) o un servicio REST.
 
 - Una clase que representa un servicio de SharePoint.
 
-- Una clase o una colección de la solución.
+- Una clase o colección de la solución.
 
 > [!NOTE]
-> Si no usa características de enlace de datos, conjuntos de datos, Entity Framework, LINQ to SQL, WCF o SharePoint, el concepto de "data source" no es aplicable. Simplemente conéctese directamente a la base de datos mediante el uso de los objetos de SQLCommand y comunicarse directamente con la base de datos.
+> Si no está utilizando características de enlace de datos, conjuntos de datos, Entity Framework, LINQ to SQL, WCF o SharePoint, no se aplica el concepto de "origen de datos". Solo tiene que conectarse directamente a la base de datos mediante los objetos SQLCommand y comunicarse directamente con la base de datos.
 
-Crear y editar orígenes de datos mediante el **Asistente para configuración de origen de datos** en una aplicación Windows Forms o Windows Presentation Foundation. Para Entity Framework, primero cree las clases de entidad y, a continuación, inicie el asistente seleccionando **proyecto** > **Agregar nuevo origen de datos** (se describe con más detalle más adelante en este artículo).
+Los orígenes de datos se crean y editan mediante el **Asistente para la configuración de orígenes de datos** en una aplicación Windows Forms o Windows Presentation Foundation. Por Entity Framework, cree primero las clases de entidad y, a continuación, inicie el asistente seleccionando **proyecto**  > **Agregar nuevo origen de datos** (se describe con más detalle más adelante en este artículo).
 
 ![Asistente para configuración de orígenes de datos](../data-tools/media/data-source-configuration-wizard.png)
 
 ## <a name="data-sources-window"></a>Ventana de orígenes de datos
 
-Después de crear un origen de datos, aparece en el **orígenes de datos** ventana de herramientas.
+Después de crear un origen de datos, este aparece en la ventana de herramientas **orígenes de datos** .
 
 > [!TIP]
-> Para abrir el **orígenes de datos** , asegúrese de que el proyecto está abierto y, a continuación, presione **MAYÚS**+**Alt**+**d.** o elija **vista** > **Other Windows** > **orígenes de datos**.
+> Para abrir la **ventana orígenes de datos** , asegúrese de que el proyecto está abierto y, a continuación, presione **mayús** +**Alt** +**D** o elija **Ver**  > **otras ventanas**  > **orígenes de datos**.
 
-Puede arrastrar un origen de datos desde el **orígenes de datos** ventana hasta una superficie de diseño del formulario o control. Esto hace que generar código reutilizable que muestra los datos del almacén de datos.
+Puede arrastrar un origen de datos desde la ventana **orígenes de datos** hasta una superficie de diseño de formulario o un control. Esto hace que se genere código reutilizable que muestra los datos del almacén de datos.
 
-La siguiente ilustración muestra un conjunto de datos que se ha quitado en un formulario de Windows. Si selecciona **F5** en la aplicación, los datos de la base de datos subyacente aparecen en los controles del formulario.
+En la ilustración siguiente se muestra un conjunto de elementos que se ha colocado en Windows Forms. Si selecciona **F5** en la aplicación, los datos de la base de datos subyacente aparecen en los controles del formulario.
 
-![Operación de arrastre del origen de datos](../data-tools/media/raddata-data-source-drag-operation.png)
+![Operación de arrastre de origen de datos](../data-tools/media/raddata-data-source-drag-operation.png)
 
-## <a name="data-source-for-a-database-or-a-database-file"></a>Origen de datos para una base de datos o un archivo de base de datos
+## <a name="data-source-for-a-database-or-a-database-file"></a>Origen de datos de una base de datos o un archivo de base de datos
 
-Puede crear un conjunto de datos o un modelo de Entity Framework para usarla como un origen de datos de una base de datos o un archivo de base de datos.
+Puede crear un conjunto de datos o un modelo de Entity Framework para usarlo como origen de datos para un archivo de base de datos o de base de datos.
 
 ### <a name="dataset"></a>Conjunto de datos
 
-Para crear un conjunto de datos como un origen de datos, ejecute el **Asistente para configuración de origen de datos** seleccionando **proyecto** > **Agregar nuevo origen de datos**. Elija la **base de datos** origen de datos escriba y siga las indicaciones para especificar una conexión de base de datos nueva o existente, o un archivo de base de datos.
+Para crear un conjunto de datos como un origen de datos, ejecute el **Asistente para la configuración de orígenes de datos** seleccionando **proyecto**  > **Agregar nuevo origen de datos**. Elija el tipo de origen de datos Data-Source y siga las indicaciones para especificar una conexión de base de datos nueva o existente, o un archivo de base **de datos.**
 
 ### <a name="entity-classes"></a>Clases de entidad
 
 Para crear un modelo de Entity Framework como un origen de datos:
 
-1. Ejecute el **Asistente para Entity Data Model** para crear las clases de entidad. Seleccione **proyecto** > **Agregar nuevo elemento** > **ADO.NET Entity Data Model**.
+1. Ejecute el **Asistente para Entity Data Model** para crear las clases de entidad. Seleccione **proyecto**  > **agregar nuevo elemento**  > **ADO.NET Entity Data Model**.
 
    ![Nuevo elemento de proyecto de modelo de Entity Framework](../data-tools/media/raddata-new-entity-framework-model-project-item.png)
 
-1. Elija el método que va a generar el modelo.
+1. Elija el método por el que desea generar el modelo.
 
    ![Asistente para Entity Data Model](../data-tools/media/raddata-entity-data-model-wizard.png)
 
-1. Agregar el modelo como un origen de datos. Las clases generadas aparecen en la **Asistente para configuración de origen de datos** cuando se elige el **objetos** categoría.
+1. Agregue el modelo como un origen de datos. Las clases generadas aparecen en el **Asistente para la configuración de orígenes de datos** cuando se elige la categoría **objetos** .
 
-   ![Asistente para configuración de origen de datos con las clases de entidad](../data-tools/media/raddata-data-source-configuration-wizard-with-entity-classes.png)
+   ![Asistente para la configuración de orígenes de datos con clases de entidad](../data-tools/media/raddata-data-source-configuration-wizard-with-entity-classes.png)
 
-## <a name="data-source-for-a-service"></a>Origen de datos para un servicio
+## <a name="data-source-for-a-service"></a>Origen de datos de un servicio
 
-Para crear un origen de datos de un servicio, ejecute el **Asistente para configuración de origen de datos** y elija el **servicio** tipo de origen de datos. Se trata de un acceso directo a la **Add Service Reference** cuadro de diálogo, que también puede acceder haciendo clic con el proyecto en **el Explorador de soluciones** y seleccionando **Agregar referencia de servicio**.
+Para crear un origen de datos a partir de un servicio de, ejecute el **Asistente para la configuración de orígenes de datos** y elija el tipo de origen de datos **servicio** . Esto es simplemente un acceso directo al cuadro de diálogo **Agregar referencia de servicio** , al que también se puede tener acceso haciendo clic con el botón derecho en el proyecto en **Explorador de soluciones** y seleccionando **Agregar referencia de servicio**.
 
-Cuando se crea un origen de datos de un servicio, Visual Studio agrega una referencia de servicio al proyecto. Visual Studio también crea objetos proxy que corresponden a los objetos que devuelve el servicio. Por ejemplo, un servicio que devuelve un conjunto de datos se representa en el proyecto como un conjunto de datos; un servicio que devuelve que un tipo específico se representa en el proyecto como el tipo devuelto.
+Cuando se crea un origen de datos desde un servicio, Visual Studio agrega una referencia de servicio al proyecto. Visual Studio también crea objetos proxy que corresponden a los objetos que devuelve el servicio. Por ejemplo, un servicio que devuelve un conjunto de DataSet se representa en el proyecto como un conjunto de DataSet; un servicio que devuelve un tipo específico se representa en el proyecto como el tipo devuelto.
 
-Puede crear un origen de datos de los siguientes tipos de servicios:
+Puede crear un origen de datos a partir de los siguientes tipos de servicios:
 
 - [Servicios de datos de WCF](/dotnet/framework/data/wcf/wcf-data-services-overview)
 
@@ -93,25 +93,25 @@ Puede crear un origen de datos de los siguientes tipos de servicios:
 - servicios Web
 
     > [!NOTE]
-    > Los elementos que aparecen en la **orígenes de datos** ventana dependen de los datos que devuelve el servicio. Algunos servicios podrían no proporcionar suficiente información para que el **Asistente para configuración de orígenes de datos** pueda crear objetos enlazables. Por ejemplo, si el servicio devuelve un conjunto de datos sin tipo, no hay elementos aparecen en la **orígenes de datos** ventana cuando se complete el asistente. Esto es porque los datasets no escritos no proporcionan un esquema y, por lo tanto, el asistente no tiene información suficiente para crear el origen de datos.
+    > Los elementos que aparecen en la ventana **orígenes de datos** dependen de los datos que devuelve el servicio. Algunos servicios podrían no proporcionar suficiente información para que el **Asistente para configuración de orígenes de datos** pueda crear objetos enlazables. Por ejemplo, si el servicio devuelve un conjunto de datos sin tipo, en la ventana **orígenes de datos** no aparece ningún elemento cuando se completa el asistente. Esto se debe a que los conjuntos de datos sin tipo no proporcionan un esquema y, por lo tanto, el asistente no tiene suficiente información para crear el origen de datos.
 
-## <a name="data-source-for-an-object"></a>Origen de datos para un objeto
+## <a name="data-source-for-an-object"></a>Origen de datos de un objeto
 
-Puede crear un origen de datos de cualquier objeto que expone una o más propiedades públicas ejecutando el **Asistente para configuración de origen de datos** y, a continuación, seleccionando la **objeto** tipo de origen de datos. Se muestran todas las propiedades públicas de un objeto en el **orígenes de datos** ventana. Si usa Entity Framework y ha generado un modelo, esto es donde encontrará las clases de entidad que son los orígenes de datos para la aplicación.
+Puede crear un origen de datos a partir de cualquier objeto que exponga una o varias propiedades públicas ejecutando el **Asistente para configuración de orígenes de datos** y, a continuación, seleccionando el tipo de origen de datos del **objeto** . Todas las propiedades públicas de un objeto se muestran en la ventana **orígenes de datos** . Si usa Entity Framework y ha generado un modelo, aquí es donde encontrará las clases de entidad que son los orígenes de datos de la aplicación.
 
-En el **seleccionar objetos de datos** , expanda los nodos en la vista de árbol para buscar los objetos que desea enlazar. La vista de árbol contiene nodos para el proyecto y para los ensamblados y otros proyectos que se hace referencia el proyecto.
+En la página **seleccionar los objetos de datos** , expanda los nodos de la vista de árbol para buscar los objetos a los que desea enlazar. La vista de árbol contiene nodos para el proyecto y para los ensamblados y otros proyectos a los que hace referencia el proyecto.
 
-Si desea enlazar a un objeto en un ensamblado o proyecto que no aparece en la vista de árbol, haga clic en **Agregar referencia** y usar el **Add Reference Dialog Box** para agregar una referencia al ensamblado o proyecto. Después de agregar la referencia, el ensamblado o proyecto se agrega a la vista de árbol.
-
-> [!NOTE]
-> Es posible que deba compilar el proyecto que contiene los objetos antes de que los objetos aparecen en la vista de árbol.
+Si desea enlazar a un objeto de un ensamblado o proyecto que no aparece en la vista de árbol, haga clic en **Agregar referencia** y use el **cuadro de diálogo Agregar referencia** para agregar una referencia al ensamblado o proyecto. Después de agregar la referencia, el ensamblado o proyecto se agrega a la vista de árbol.
 
 > [!NOTE]
-> Para admitir el enlace de datos de arrastrar y colocar, los objetos que implementan la <xref:System.ComponentModel.ITypedList> o <xref:System.ComponentModel.IListSource> interfaz debe tener un constructor predeterminado. En caso contrario, Visual Studio no puede crear instancias del objeto de origen de datos y muestra un error cuando se arrastra el elemento a la superficie de diseño.
+> Es posible que necesite compilar el proyecto que contiene los objetos antes de que los objetos aparezcan en la vista de árbol.
 
-## <a name="data-source-for-a-sharepoint-list"></a>Origen de datos para obtener una lista de SharePoint
+> [!NOTE]
+> Para admitir el enlace de datos de arrastrar y colocar, los objetos que implementan la interfaz <xref:System.ComponentModel.ITypedList> o <xref:System.ComponentModel.IListSource> deben tener un constructor predeterminado. De lo contrario, Visual Studio no puede crear una instancia del objeto de origen de datos y muestra un error al arrastrar el elemento a la superficie de diseño.
 
-Puede crear un origen de datos de una lista de SharePoint ejecutando el **Asistente para configuración de origen de datos** y seleccionando el **SharePoint** tipo de origen de datos. SharePoint expone los datos a través de WCF Data Services, por lo que crear un origen de datos de SharePoint es lo mismo que crear un origen de datos de un servicio. Seleccionar el **SharePoint** de elemento en el **Asistente para configuración de origen de datos** abre el **Add Service Reference** cuadro de diálogo, donde se conecta al servicio de datos de SharePoint señalando al servidor de SharePoint. Esto requiere el SDK de SharePoint.
+## <a name="data-source-for-a-sharepoint-list"></a>Origen de datos para una lista de SharePoint
+
+Puede crear un origen de datos a partir de una lista de SharePoint ejecutando el **Asistente para la configuración de orígenes de datos** y seleccionando el tipo de origen de datos de **SharePoint** . SharePoint expone los datos a través de WCF Data Services, por lo que la creación de un origen de datos de SharePoint es la misma que la creación de un origen de datos a partir de un servicio. Al seleccionar el elemento de **SharePoint** en el **Asistente para la configuración de orígenes de datos** , se abre el cuadro de diálogo **Agregar referencia de servicio** , donde se conecta al servicio de datos de SharePoint apuntando al servidor de SharePoint. Esto requiere el SDK de SharePoint.
 
 ## <a name="see-also"></a>Vea también
 

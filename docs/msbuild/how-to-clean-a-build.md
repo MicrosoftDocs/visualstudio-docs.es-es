@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f2385d359387090d0430fbea182fcef738b454a7
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: d737ecf51b6726bf46a525104c99f8ac61569964
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56603279"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62977295"
 ---
 # <a name="how-to-clean-a-build"></a>Procedimiento Limpiar una compilación
 Cuando se limpia una compilación, se eliminan todos los archivos intermedios y de salida, de modo que solo queden los archivos de proyecto y de componentes. A partir de los archivos de proyecto y de componentes, se pueden compilar nuevas instancias de archivos intermedios y de salida. La biblioteca de tareas comunes que se proporciona con [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] incluye una tarea [Exec](../msbuild/exec-task.md) que se puede usar para ejecutar comandos del sistema. Para obtener más información sobre la biblioteca de tareas, vea [Referencia de tareas](../msbuild/msbuild-task-reference.md).
@@ -28,11 +28,11 @@ Cuando se limpia una compilación, se eliminan todos los archivos intermedios y 
 
 #### <a name="to-create-a-directory-for-output-items"></a>Para crear un directorio para los elementos de salida
 
-1.  Use el elemento `Property` para definir la ubicación y el nombre del directorio. Por ejemplo, cree un directorio denominado *BuiltApp* en el directorio que contiene los archivos de proyecto y de código fuente:
+1. Use el elemento `Property` para definir la ubicación y el nombre del directorio. Por ejemplo, cree un directorio denominado *BuiltApp* en el directorio que contiene los archivos de proyecto y de código fuente:
 
      `<builtdir>BuiltApp</builtdir>`
 
-2.  Use la tarea [MakeDir](../msbuild/makedir-task.md) para crear el directorio, si este no existe. Por ejemplo:
+2. Use la tarea [MakeDir](../msbuild/makedir-task.md) para crear el directorio, si este no existe. Por ejemplo:
 
      ```xml
      <MakeDir Directories = "$(builtdir)"
@@ -44,7 +44,7 @@ Cuando se limpia una compilación, se eliminan todos los archivos intermedios y 
 
 #### <a name="to-remove-a-directory-and-all-files-contained-in-the-directory"></a>Para quitar un directorio y todos los archivos que contiene
 
--   Use la tarea `RemoveDir` para quitar el directorio. Por ejemplo:
+- Use la tarea `RemoveDir` para quitar el directorio. Por ejemplo:
 
      `<RemoveDir Directories="$(builtdir)" />`
 

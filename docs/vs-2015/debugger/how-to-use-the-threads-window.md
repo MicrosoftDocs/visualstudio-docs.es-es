@@ -24,14 +24,14 @@ caps.latest.revision: 48
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: fc40611a8ba5cded6d631e0f52157d4aadb45ff3
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: da41524fcb231ea399dbbd2a2904afd935e5c4f8
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60092102"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67824258"
 ---
-# <a name="how-to-use-the-threads-window"></a>Procedimiento Utilice la ventana subprocesos
+# <a name="how-to-use-the-threads-window"></a>Procedimiento Uso de la ventana Subprocesos
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 En el **subprocesos** ventana, puede examinar y trabajar con los subprocesos en la aplicación que está depurando.  
@@ -72,11 +72,11 @@ En el **subprocesos** ventana, puede examinar y trabajar con los subprocesos en 
   
 - Realice uno de estos pasos:  
   
-    - Haga doble clic en un subproceso cualquiera.  
-  
-    - Haga clic en un subproceso y haga clic en **cambiar a subproceso**.  
-  
-         La flecha amarilla aparece al lado del nuevo subproceso activo. El contorno deshabilitado de una flecha identifica el subproceso donde la ejecución interrumpió el depurador.  
+  - Haga doble clic en un subproceso cualquiera.  
+
+  - Haga clic en un subproceso y haga clic en **cambiar a subproceso**.  
+
+    La flecha amarilla aparece al lado del nuevo subproceso activo. El contorno deshabilitado de una flecha identifica el subproceso donde la ejecución interrumpió el depurador.  
   
 ## <a name="grouping-and-sorting-threads"></a>Agrupar y ordenar subprocesos  
  Al agrupar los subprocesos, aparece un encabezado en la tabla para cada grupo. El encabezado contiene una descripción de grupo, como "Subproceso de trabajadores" o "Subprocesos sin marcar" y un control de árbol. Los subprocesos de los miembros de cada de grupo aparecen bajo el título del grupo. Si desea ocultar los subprocesos de los miembros de un grupo, puede utilizar el control de árbol para contraer el grupo.  
@@ -116,23 +116,23 @@ En el **subprocesos** ventana, puede examinar y trabajar con los subprocesos en 
   
 - En la barra de herramientas de la parte superior de la ventana **Subprocesos**, vaya al cuadro **Buscar** y:  
   
-    - Escriba una cadena de búsqueda y, a continuación, presione ENTRAR.  
-  
-         \- o -  
-  
-    - Haga clic en la lista desplegable situada junto a la **búsqueda** cuadro y seleccione una cadena de búsqueda de una búsqueda anterior.  
+  - Escriba una cadena de búsqueda y, a continuación, presione ENTRAR.  
+
+    \- o -  
+
+  - Haga clic en la lista desplegable situada junto a la **búsqueda** cuadro y seleccione una cadena de búsqueda de una búsqueda anterior.  
   
 - (Opcional) Para incluir la pila de llamadas completa en la búsqueda, seleccione **Buscar en pila de llamadas**.  
   
 ## <a name="freezing-and-thawing-threads"></a>Inmovilizar y reanudar subprocesos  
  Cuando se inmoviliza un subproceso, el sistema no iniciará su ejecución aunque haya recursos disponibles.  
   
- En código nativo, puede suspender o reanudar subprocesos mediante una llamada a las funciones de Windows `SuspendThread` y `ResumeThread` o las funciones MFC [CWinThread:: SuspendThread](http://msdn.microsoft.com/library/57189c7e-fd71-42e5-bc4b-3de7cd373d28) y [CWinThread:: ResumeThread](http://msdn.microsoft.com/library/d6f97a2f-5c9f-4ee1-b978-d74938784db5). Si se llama a `SuspendThread` o `ResumeThread`, cambia el *recuento de suspendidos*, que aparece en el **subprocesos** ventana. Sin embargo, si inmoviliza o reanuda un subproceso nativo, no cambia el recuento de suspendidos. En código nativo, un subproceso no se puede ejecutar a menos que se reanude y tenga un recuento de suspensión de cero.  
+ En código nativo, puede suspender o reanudar subprocesos mediante una llamada a las funciones de Windows `SuspendThread` y `ResumeThread` o las funciones MFC [CWinThread:: SuspendThread](https://msdn.microsoft.com/library/57189c7e-fd71-42e5-bc4b-3de7cd373d28) y [CWinThread:: ResumeThread](https://msdn.microsoft.com/library/d6f97a2f-5c9f-4ee1-b978-d74938784db5). Si se llama a `SuspendThread` o `ResumeThread`, cambia el *recuento de suspendidos*, que aparece en el **subprocesos** ventana. Sin embargo, si inmoviliza o reanuda un subproceso nativo, no cambia el recuento de suspendidos. En código nativo, un subproceso no se puede ejecutar a menos que se reanude y tenga un recuento de suspensión de cero.  
   
  En código administrado, la inmovilización o la reanudación de un subproceso no cambia el recuento de suspensión. En código administrado, un subproceso inmovilizado tiene un recuento de suspensión de 1. En código nativo, un subproceso inmovilizado tiene un recuento de suspensión de 0, a menos que el subproceso se haya suspendido con una llamada a `SuspendThread`.  
   
 > [!NOTE]
->  Cuando se depura una llamada de código nativo a código administrado, el código administrado se ejecuta en el mismo subproceso físico que el código nativo que lo llama. La suspensión o la inmovilización del subproceso nativo inmoviliza también el código administrado.  
+> Cuando se depura una llamada de código nativo a código administrado, el código administrado se ejecuta en el mismo subproceso físico que el código nativo que lo llama. La suspensión o la inmovilización del subproceso nativo inmoviliza también el código administrado.  
   
 #### <a name="to-freeze-or-thaw-execution-of-a-thread"></a>Para inmovilizar o reanudar la ejecución de un subproceso  
   

@@ -1,5 +1,5 @@
 ---
-title: IJsDebugFrame (interfaz) | Documentos de Microsoft
+title: Interfaz IJsDebugFrame | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -11,12 +11,12 @@ caps.latest.revision: 5
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 57f5a848967148705a2b8dcd3f6b75dcb3a5db26
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 91fe8cdf91b0c2121f4a1a7f111794b0fbe36669
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58156819"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72575101"
 ---
 # <a name="ijsdebugframe-interface"></a>IJsDebugFrame (Interfaz)
 Representa un marco de pila.  
@@ -42,7 +42,7 @@ IJsDebugFrame : public IUnknown;
 |[IJsDebugFrame::GetStackRange (Método)](../../winscript/reference/ijsdebugframe-getstackrange-method.md)|Devuelve el intervalo de direcciones absolutas del marco de pila de JavaScript lógico.|  
   
 ## <a name="requirements"></a>Requisitos  
- **Encabezado:** jscript9diag.h  
+ **Encabezado:** jscript9diag. h  
   
 ## <a name="see-also"></a>Vea también  
  [Referencia de interfaces de Windows Script](../../winscript/reference/windows-script-interfaces-reference.md)

@@ -11,19 +11,20 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d998eee1965b9b28c1b8fde26c9232770d69f751
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 41e6a21278670a477bdd30e28a6f0cc4cac04757
+ms.sourcegitcommit: 85d66dc9fea3fa49018263064876b15aeb6f9584
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55955458"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68461364"
 ---
 # <a name="project-properties-reference"></a>Referencia de propiedades del proyecto
+
 Obtenga más información sobre cómo configurar y personalizar propiedades del proyecto.
 
 ## <a name="project-properties-pages"></a>Páginas de propiedades del proyecto
 
-| Title | Descripción |
+| Título | DESCRIPCIÓN |
 | - | - |
 | [Página de aplicación, Diseñador de proyectos (Visual Basic)](../../ide/reference/application-page-project-designer-visual-basic.md) | Use esta página para especificar la configuración de la aplicación y las propiedades de un proyecto de [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)]. |
 | [Página de aplicación, Diseñador de proyectos (C#)](../../ide/reference/application-page-project-designer-csharp.md) | Use esta página para especificar la configuración de la aplicación y las propiedades de un proyecto de [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)]. |

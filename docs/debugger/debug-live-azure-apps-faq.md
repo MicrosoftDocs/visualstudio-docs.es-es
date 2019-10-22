@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7ea593ad5f88ba29f6b1c0d7c64a129b8f71c7f5
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: ceda2dd4e85c8db5b66ef753a748977204b8caab
+ms.sourcegitcommit: ea182703e922c74725045afc251bcebac305068a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "58857079"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71211217"
 ---
 # <a name="frequently-asked-questions-for-snapshot-debugging-in-visual-studio"></a>Preguntas frecuentes sobre depuración de instantáneas en Visual Studio
 
@@ -49,7 +49,7 @@ Sí, la depuración de instantáneas puede funcionar en los servidores con carga
 
 Puede desinstalar la extensión de sitio de Snapshot Debugger en la instancia de App Service con estos pasos:
 
-1. Desactive la instancia de App Service en Cloud Explorer en Visual Studio o en Azure Portal.
+1. Desactive el App Service a través del Cloud Explorer en Visual Studio o en el Azure Portal.
 1. Vaya al sitio de Kudu en App Service, es decir, yourappservice.**scm**.azurewebsites.net, y acceda a **Extensiones de sitio**.
 1. Haga clic en la X de la extensión de sitio de Snapshot Debugger para quitarla.
 
@@ -57,10 +57,149 @@ Puede desinstalar la extensión de sitio de Snapshot Debugger en la instancia de
 
 Snapshot Debugger necesita abrir un conjunto de puertos para depurar las instantáneas realizadas en Azure; se trata de los mismos puertos necesarios para la depuración remota. [Puede encontrar la lista de puertos aquí](../debugger/remote-debugger-port-assignments.md).
 
+#### <a name="how-do-i-disable-the-remote-debugger-extension"></a>¿Cómo deshabilitar la extensión del Depurador remoto?
+
+Por App Services:
+1. Deshabilite la extensión del Depurador remoto a través del Azure Portal para el App Service.
+2. Azure Portal > la hoja de recursos del servicio de aplicación > la configuración de la *aplicación*
+3. Navegue hasta la sección *depuración* y haga clic en el botón *desactivado* para *depuración remota*.
+
+Para AKS:
+1. Actualice el Dockerfile para quitar las secciones correspondientes al [Visual Studio Snapshot Debugger en las imágenes de Docker](https://github.com/Microsoft/vssnapshotdebugger-docker).
+2. Recompile y vuelva a implementar la imagen de Docker modificada.
+
+En el caso de los conjuntos de escalado de máquinas virtuales o máquinas virtuales, quite la extensión del Depurador remoto, los certificados, los grupos de KeyVaults y NAT de entrada como se indica a continuación:
+
+1. Quitar la extensión del Depurador remoto
+
+   Hay varias maneras de deshabilitar el depurador remoto para máquinas virtuales y conjuntos de escalado de máquinas virtuales:
+
+      - Deshabilite el depurador remoto a través de Cloud Explorer
+
+         - Cloud Explorer > el recurso de máquina virtual > deshabilitar la depuración (no existe la deshabilitación de la depuración para el conjunto de escalado de máquinas virtuales en Cloud Explorer).
+
+      - Deshabilitar el depurador remoto con scripts o cmdlets de PowerShell
+
+         Para la máquina virtual:
+
+         ```powershell
+         Remove-AzVMExtension -ResourceGroupName $rgName -VMName $vmName -Name Microsoft.VisualStudio.Azure.RemoteDebug.VSRemoteDebugger
+         ```
+
+         Para conjuntos de escalado de máquinas virtuales:
+
+         ```powershell
+         $vmss = Get-AzVmss -ResourceGroupName $rgName -VMScaleSetName $vmssName
+         $extension = $vmss.VirtualMachineProfile.ExtensionProfile.Extensions | Where {$_.Name.StartsWith('VsDebuggerService')} | Select -ExpandProperty Name
+         Remove-AzVmssExtension -VirtualMachineScaleSet $vmss -Name $extension
+         ```
+
+      - Deshabilite el depurador remoto a través del Azure Portal
+         - Azure Portal > la hoja de recursos de máquinas virtuales o conjuntos de escalado de máquinas virtuales > extensiones
+         - Desinstalar la extensión Microsoft. VisualStudio. Azure. RemoteDebug. VSRemoteDebugger
+
+         > [!NOTE]
+         > Conjuntos de escalado de máquinas virtuales: el portal no permite la eliminación de los puertos DebuggerListener. Tendrá que utilizar Azure PowerShell. Para obtener información más detallada, vea a continuación.
+
+2. Quitar certificados y Azure KeyVault
+
+   Al instalar la extensión del Depurador remoto para máquinas virtuales o conjuntos de escalado de máquinas virtuales, se crean certificados de cliente y de servidor para autenticar el cliente de VS con los recursos de la máquina virtual de Azure o de los conjuntos de escalado de máquinas virtuales.
+
+   - El certificado de cliente
+
+      Este certificado es un certificado autofirmado que se encuentra en CERT:/CurrentUser/My/
+
+      ```
+      Thumbprint                                Subject
+      ----------                                -------
+
+      1234123412341234123412341234123412341234  CN=ResourceName
+      ```
+
+      Una manera de quitar este certificado de la máquina es a través de PowerShell
+
+      ```powershell
+      $ResourceName = 'ResourceName' # from above
+      Get-ChildItem -Path Cert:\CurrentUser\My | Where-Object {$_.Subject -match $ResourceName} | Remove-Item
+      ```
+
+   - El certificado de servidor
+      - La huella digital del certificado de servidor correspondiente se implementa como un secreto en Azure KeyVault. VS tratará de buscar o crear un KeyVault con el prefijo MSVSAZ * en la región correspondiente a la máquina virtual o al recurso de conjuntos de escalado de máquinas virtuales. Por lo tanto, todos los recursos de máquinas virtuales o conjuntos de escalado de máquinas virtuales implementados en esa región compartirán el mismo KeyVault.
+      - Para eliminar el secreto de huella digital del certificado de servidor, vaya al Azure Portal y busque el MSVSAZ * KeyVault en la misma región que hospeda el recurso. Eliminar el secreto que se debe etiquetar`remotedebugcert<<ResourceName>>`
+      - También tendrá que eliminar el secreto de servidor del recurso a través de PowerShell.
+
+      Para las máquinas virtuales:
+
+      ```powershell
+      $vm.OSProfile.Secrets[0].VaultCertificates.Clear()
+      Update-AzVM -ResourceGroupName $rgName -VM $vm
+      ```
+
+      Para conjuntos de escalado de máquinas virtuales:
+
+      ```powershell
+      $vmss.VirtualMachineProfile.OsProfile.Secrets[0].VaultCertificates.Clear()
+      Update-AzVmss -ResourceGroupName $rgName -VMScaleSetName $vmssName -VirtualMachineScaleSet $vmss
+      ```
+
+3. Quitar todos los grupos NAT de entrada de DebuggerListener (solo en el conjunto de escalado de máquinas virtuales)
+
+   El depurador remoto introduce grupos NAT enlazados a DebuggerListener que se aplican al equilibrador de carga de escalado.
+
+   ```powershell
+   $inboundNatPools = $vmss.VirtualMachineProfile.NetworkProfile.NetworkInterfaceConfigurations.IpConfigurations.LoadBalancerInboundNatPools
+   $inboundNatPools.RemoveAll({ param($pool) $pool.Id.Contains('inboundNatPools/DebuggerListenerNatPool-') }) | Out-Null
+
+   if ($LoadBalancerName)
+   {
+      $lb = Get-AzLoadBalancer -ResourceGroupName $ResourceGroup -name $LoadBalancerName
+      $lb.FrontendIpConfigurations[0].InboundNatPools.RemoveAll({ param($pool) $pool.Id.Contains('inboundNatPools/DebuggerListenerNatPool-') }) | Out-Null
+      Set-AzLoadBalancer -LoadBalancer $lb
+   }
+   ```
+
+#### <a name="how-do-i-disable-snapshot-debugger"></a>¿Cómo deshabilitar Snapshot Debugger?
+
+Por App Service:
+1. Deshabilite Snapshot Debugger a través del Azure Portal para el App Service.
+2. Azure Portal > la hoja de recursos del servicio de aplicación > la configuración de la *aplicación*
+3. Elimine la siguiente configuración de la aplicación en el Azure Portal y guarde los cambios.
+   - INSTRUMENTATIONENGINE_EXTENSION_VERSION
+   - SNAPSHOTDEBUGGER_EXTENSION_VERSION
+
+   > [!WARNING]
+   > Cualquier cambio en la configuración de la aplicación iniciará un reinicio de la aplicación. Para obtener más información sobre la configuración de la aplicación, consulte [configuración de una aplicación App Service en el Azure portal](/azure/app-service/web-sites-configure).
+
+Para AKS:
+1. Actualice el Dockerfile para quitar las secciones correspondientes al [Visual Studio Snapshot Debugger en las imágenes de Docker](https://github.com/Microsoft/vssnapshotdebugger-docker).
+2. Recompile y vuelva a implementar la imagen de Docker modificada.
+
+Para máquinas virtuales o conjuntos de escalado de máquinas virtuales:
+
+Hay varias maneras de deshabilitar el Snapshot Debugger:
+- Cloud Explorer > el recurso del conjunto de escalado de máquinas virtuales o máquinas virtuales > deshabilitar los diagnósticos
+
+- Azure Portal > la hoja de recursos del conjunto de escalado de máquinas virtuales o máquinas virtuales > Extensiones > desinstalar la extensión Microsoft. Insights. VMDiagnosticsSettings
+
+- Cmdlets de PowerShell de [AZ PowerShell](https://docs.microsoft.com/powershell/azure/overview)
+
+   Máquina virtual:
+
+   ```powershell
+      Remove-AzVMExtension -ResourceGroupName $rgName -VMName $vmName -Name Microsoft.Insights.VMDiagnosticsSettings
+   ```
+
+   Conjuntos de escalado de máquinas virtuales:
+
+   ```powershell
+      $vmss = Get-AzVmss -ResourceGroupName $rgName -VMScaleSetName $vmssName
+      Remove-AzVmssExtension -VirtualMachineScaleSet $vmss -Name Microsoft.Insights.VMDiagnosticsSettings
+   ```
+
 ## <a name="see-also"></a>Vea también
 
-- [Depurar en Visual Studio](../debugger/index.md)
-- [Depurar aplicaciones ASP.NET activas con el depurador de instantáneas](../debugger/debug-live-azure-applications.md)
-- [Depuración en directo ASP.NET Azure Virtual Machines\Virtual máquinas conjuntos de escalado mediante el depurador de instantáneas](../debugger/debug-live-azure-virtual-machines.md)
-- [Depuración en directo ASP.NET Azure Kubernetes con el depurador de instantáneas](../debugger/debug-live-azure-kubernetes.md)
-- [Problemas conocidos y solución de problemas de depuración de instantáneas](../debugger/debug-live-azure-apps-troubleshooting.md)
+- [Depurar en Visual Studio](../debugger/index.yml)
+- [Depure aplicaciones de ASP.NET dinámicas con el Snapshot Debugger](../debugger/debug-live-azure-applications.md)
+- [Depure conjuntos de escalado de máquinas virtuales de Azure virtual Machines\Virtual ASP.NET con el Snapshot Debugger](../debugger/debug-live-azure-virtual-machines.md)
+- [Depure Live ASP.NET Azure Kubernetes mediante el Snapshot Debugger](../debugger/debug-live-azure-kubernetes.md)
+- [Solución de problemas y problemas conocidos de la depuración de instantáneas](../debugger/debug-live-azure-apps-troubleshooting.md)

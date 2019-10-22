@@ -17,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: ae63dd41e18b9226967b77b8adec2f45d05d9447
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 80a19924aaf4fa0afe8e809006ada7fada0288f3
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60057178"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63428112"
 ---
 # <a name="how-to-map-schemas-to-worksheets-inside-visual-studio"></a>Procedimiento Asignar esquemas a hojas de cálculo en Visual Studio
   Puede asignar un esquema XML a una hoja de cálculo mientras la hoja de cálculo está abierto en Visual Studio. Use las mismas herramientas de Microsoft Office Excel que usan cuando el libro se abre fuera de Visual Studio. El proyecto de Office crea los mismos objetos independientemente de si asigna el esquema de la hoja de cálculo antes o después de crear la solución de Excel.
@@ -30,7 +30,7 @@ ms.locfileid: "60057178"
  [!INCLUDE[appliesto_xlalldoc](../vsto/includes/appliesto-xlalldoc-md.md)]
 
 > [!NOTE]
->  No se puede usar los esquemas XML con varias partes en soluciones de Excel.
+> No se puede usar los esquemas XML con varias partes en soluciones de Excel.
 
 ## <a name="to-map-an-xml-schema-to-an-excel-worksheet-in-visual-studio"></a>Para asignar un esquema XML a una hoja de cálculo de Excel en Visual Studio
 
@@ -41,7 +41,7 @@ ms.locfileid: "60057178"
 3. En la cinta de opciones, haga clic en la pestaña **Desarrollador** .
 
     > [!NOTE]
-    >  Si la pestaña **Desarrollador** no está visible, primero debe mostrarla. Para obtener más información, vea [Cómo: Mostrar la pestaña Programador en la cinta de opciones](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md).
+    > Si la pestaña **Desarrollador** no está visible, primero debe mostrarla. Para obtener más información, vea [Cómo: Mostrar la pestaña Programador en la cinta de opciones](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md).
 
 4. En el **XML** grupo, haga clic en **origen**.
 

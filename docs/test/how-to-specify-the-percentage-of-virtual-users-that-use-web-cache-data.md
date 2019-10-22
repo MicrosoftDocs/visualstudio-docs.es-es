@@ -1,5 +1,5 @@
 ---
-title: Especificación del porcentaje de usuarios virtuales que usan datos de caché web para pruebas de carga
+title: 'Prueba de carga: establecimiento del porcentaje de usuarios virtuales con los datos de caché web'
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -8,12 +8,12 @@ ms.assetid: f66d5d43-4121-4487-b27f-d0a0baaf7601
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 08f0bb9fb14c631f3bf1e5545a69663eb060e3e7
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: f436573712ff228244a40e5199f2f5a4b4326c5e
+ms.sourcegitcommit: ba5e072c9fedeff625a1332f22dcf3644d019f51
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62821148"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "66431871"
 ---
 # <a name="how-to-specify-the-percentage-of-virtual-users-that-use-web-cache-data"></a>Procedimiento para especificar el porcentaje de usuarios virtuales que usan datos de caché web
 

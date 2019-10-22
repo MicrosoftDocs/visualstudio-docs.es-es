@@ -1,5 +1,5 @@
 ---
-title: 'CA1012: Tipos abstractos no deberían tener constructores | Documentos de Microsoft'
+title: 'CA1012: los tipos abstractos no deben tener constructores | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -11,15 +11,15 @@ helpviewer_keywords:
 - CA1012
 ms.assetid: 09f458ac-dd88-4cd7-a47f-4106c1e80ece
 caps.latest.revision: 27
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 02b92ac92e545ab30405d195d85a97a4ef2e3806
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: f3f53e8b5eab78e79387c24643500888db27b764
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58988236"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72663229"
 ---
 # <a name="ca1012-abstract-types-should-not-have-constructors"></a>CA1012: Los tipos abstractos no deberían tener constructores
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,7 +28,7 @@ ms.locfileid: "58988236"
 |-|-|
 |TypeName|AbstractTypesShouldNotHaveConstructors|
 |Identificador de comprobación|CA1012|
-|Categoría|Microsoft.Design|
+|Categoría|Microsoft. Design|
 |Cambio problemático|Poco problemático|
 
 ## <a name="cause"></a>Motivo
@@ -38,7 +38,7 @@ ms.locfileid: "58988236"
  Los tipos derivados pueden llamar solo a los constructores de tipos abstractos. Puesto que los constructores públicos crean instancias de un tipo y no se pueden crear instancias de un tipo abstracto, no es correcto diseñar un tipo abstracto con un constructor público.
 
 ## <a name="how-to-fix-violations"></a>Cómo corregir infracciones
- Para corregir una infracción de esta regla, marque el constructor protegido o no declare el tipo como abstracto.
+ Para corregir una infracción de esta regla, haga que el constructor esté protegido o no declare el tipo como abstracto.
 
 ## <a name="when-to-suppress-warnings"></a>Cuándo suprimir advertencias
  No suprima las advertencias de esta regla. El tipo abstracto tiene un constructor público.

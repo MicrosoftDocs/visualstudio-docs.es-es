@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IEEDataStorage::GetSize
 ms.assetid: 33d232c4-1239-4abc-922b-e1bc5b908169
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: eff31ef70fc8cb812ff820a92653b6bb0cab6cd5
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 81796fe12c72e2e64f1eb1d5b1cc09e66112d13d
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56719501"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66319677"
 ---
 # <a name="ieedatastoragegetsize"></a>IEEDataStorage::GetSize
 Devuelve el número de bytes que contiene este objeto.
@@ -36,10 +39,9 @@ int GetSize(
 );
 ```
 
-#### <a name="parameters"></a>Parámetros
- `size`
-
- [out] El número de bytes que contiene este objeto.
+## <a name="parameters"></a>Parámetros
+`size`\
+[out] El número de bytes que contiene este objeto.
 
 ## <a name="return-value"></a>Valor devuelto
  Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.

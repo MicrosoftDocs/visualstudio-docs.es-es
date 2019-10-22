@@ -11,12 +11,12 @@ caps.latest.revision: 17
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: a7e89f2c7b9e834f9896ca3609fd3211e2d41862
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 614977aef83092c64071524e33507848c34bf442
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60044075"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63420085"
 ---
 # <a name="graphics-pixel-history"></a>Historial de píxeles de gráfico
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -62,7 +62,7 @@ La ventana Historial de píxeles de gráfico del Analizador de gráficos de Visu
 3. En la primitiva que le interesa, siga el vínculo del título del sombreador. Por ejemplo, siga el vínculo **Sombreador de vértices obj:30** para ver el código fuente del sombreador de vértices.  
   
     > [!TIP]
-    >  El número de objeto, **obj:30**, identifica este sombreador en toda la interfaz del Analizador de gráficos, tal como se muestra en la ventana de tabla de objetos y etapas de canalización.  
+    > El número de objeto, **obj:30**, identifica este sombreador en toda la interfaz del Analizador de gráficos, tal como se muestra en la ventana de tabla de objetos y etapas de canalización.  
   
 ##### <a name="to-debug-a-shader"></a>Para depurar un sombreador  
   

@@ -1,29 +1,33 @@
 ---
-title: 'Paso 5: Agregar controladores de eventos Enter para los controles NumericUpDown'
+title: 'Paso 5: agregar controladores de eventos Enter para los controles NumericUpDown'
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: tutorial
+ms.prod: visual-studio-windows
+ms.technology: vs-ide-general
+dev_langs:
+- CSharp
+- VB
 ms.assetid: 45a99a5d-c881-4298-b74d-adb481dec5ee
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-dev_langs:
-- CSharp
-- VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 194988a3d21078ebb712afee52d9106659b65b14
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 7de9fafa32922792e21eb672df0aa9128c25dbe2
+ms.sourcegitcommit: 98b02f87c7aa1f5eb7f0d1c86bfa36efa8580c57
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55952338"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "72314118"
 ---
 # <a name="step-5-add-enter-event-handlers-for-the-numericupdown-controls"></a>Paso 5: Agregar controladores de eventos Enter para los controles NumericUpDown
 
 En la quinta parte de este tutorial, agregará <xref:System.Windows.Forms.Control.Enter> controladores de eventos Enter para hacer que sea un poco más fácil escribir las respuestas a los problemas de la prueba. Este código seleccionará y borrará el valor actual de cada uno de los controles <xref:System.Windows.Forms.NumericUpDown> en cuanto el jugador lo elija y comience a escribir un valor diferente.
 
 > [!NOTE]
-> Este tema forma parte de una serie de tutoriales sobre conceptos de codificación básicos. Para obtener información general sobre el tutorial, vea [Tutorial 2: Crear una prueba matemática cronometrada](../ide/tutorial-2-create-a-timed-math-quiz.md).
+> Este tema forma parte de una serie de tutoriales sobre conceptos de codificación básicos.
+> - Para obtener información general sobre el tutorial, vea [Tutorial 2: Crear una prueba matemática cronometrada](../ide/tutorial-2-create-a-timed-math-quiz.md).
+> - Para descargar una versión completa del código, consulte [Ejemplo completo del tutorial de cuestionario de matemáticas](https://code.msdn.microsoft.com/Complete-Math-Quiz-8581813c).
 
 ## <a name="to-verify-the-default-behavior"></a>Para comprobar el comportamiento predeterminado
 
@@ -58,6 +62,8 @@ En la quinta parte de este tutorial, agregará <xref:System.Windows.Forms.Contro
      [!code-vb[VbExpressTutorial3Step5_6#11](../ide/codesnippet/VisualBasic/step-5-add-enter-event-handlers-for-the-numericupdown-controls_1.vb)]
      [!code-csharp[VbExpressTutorial3Step5_6#11](../ide/codesnippet/CSharp/step-5-add-enter-event-handlers-for-the-numericupdown-controls_1.cs)]
 
+     [!INCLUDE [devlang-control-csharp-vb](./includes/devlang-control-csharp-vb.md)]
+
      Este código puede parecer complejo, pero puede entenderlo si lo examina paso a paso. En primer lugar, fíjese en la parte superior del método: `object sender` en C# o `sender As System.Object` en Visual Basic. Este parámetro hace referencia al objeto que tiene el evento que se genera, lo que se conoce como remitente. En este caso, el objeto remitente es el control NumericUpDown. Por lo tanto, en la primera línea del método, se especifica que el remitente no es simplemente un objeto genérico, sino que se trata específicamente de un control NumericUpDown. (Cada control NumericUpDown es un objeto, pero no todos los objetos son un control NumericUpDown.) El control NumericUpDown se denomina **answerBox** en este método, porque se usará para todos los controles NumericUpDown del formulario, no solo para el control NumericUpDown de suma. Dado que la variable answerBox se declara en este método, su ámbito solo se aplica a este método. Es decir, la variable solo se puede utilizar en este método.
 
      En la línea siguiente se comprueba si se ha llevado a cabo correctamente la conversión (de tipos) de answerBox: de un objeto a un control NumericUpDown. Si la conversión fuera incorrecta, la variable tendría un valor de `null` (en C#) o de `Nothing` (en Visual Basic). La tercera línea obtiene la longitud de la respuesta que aparece en el control NumericUpDown y la cuarta línea selecciona el valor actual del control en función de esa longitud. Ahora, cuando el jugador elige el control, Visual Studio genera este evento, con lo que se selecciona la respuesta actual. En cuanto el jugador empiece a escribir otra respuesta, se borrará la respuesta anterior y se reemplazará por la nueva.
@@ -74,6 +80,6 @@ En la quinta parte de este tutorial, agregará <xref:System.Windows.Forms.Contro
 
 ## <a name="to-continue-or-review"></a>Para continuar o revisar
 
-- Para ir al siguiente paso del tutorial, vea [Paso 6: Agregar un problema de resta](../ide/step-6-add-a-subtraction-problem.md).
+- Para ir al siguiente paso del tutorial, consulte **[Paso 6: Agregar un problema de resta](../ide/step-6-add-a-subtraction-problem.md)** .
 
 - Para volver al paso anterior del tutorial, vea [Paso 4: Agregar el método CheckTheAnswer()](../ide/step-4-add-the-checktheanswer-parens-method.md).

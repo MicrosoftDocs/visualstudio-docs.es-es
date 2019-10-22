@@ -1,3 +1,11 @@
+---
+ms.openlocfilehash: 8adac174fbc78778e7154a205088fb9e9a57ae4a
+ms.sourcegitcommit: 748d9cd7328a30f8c80ce42198a94a4b5e869f26
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "68143549"
+---
 
 1. En el equipo donde tiene el proyecto de ASP.NET abierto en Visual Studio, haga clic con el botón derecho en el proyecto en el Explorador de soluciones y elija **Publicar**.
 

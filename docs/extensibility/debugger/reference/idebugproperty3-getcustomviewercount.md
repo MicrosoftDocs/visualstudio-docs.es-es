@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProperty3::GetCustomViewerCount
 ms.assetid: dc5bb3e4-dc85-46e4-98fa-c6be8583b985
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4067fc314889e7aa991407c99ba949564b547087
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 99abfc65027bb43cafcd96c39da39ad40c5607ab
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56709153"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66348886"
 ---
 # <a name="idebugproperty3getcustomviewercount"></a>IDebugProperty3::GetCustomViewerCount
 Obtiene el número de visores personalizados que pueden estar disponibles para esta propiedad.
@@ -36,10 +39,9 @@ int GetCustomViewerCount(
 );
 ```
 
-#### <a name="parameters"></a>Parámetros
-`pcelt`
-
- [out] El número de visores personalizados disponibles para esta propiedad.
+## <a name="parameters"></a>Parámetros
+`pcelt`\
+[out] El número de visores personalizados disponibles para esta propiedad.
 
 ## <a name="return-value"></a>Valor devuelto
 Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.

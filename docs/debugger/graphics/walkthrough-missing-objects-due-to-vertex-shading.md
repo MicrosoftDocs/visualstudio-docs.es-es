@@ -1,5 +1,5 @@
 ---
-title: 'Tutorial: Objetos ausentes debido al sombreado de vértices | Microsoft Docs'
+title: 'Tutorial: Objetos ausentes debido al sombreado de vértices | Documentos de Microsoft'
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: e42b54a0-8092-455c-945b-9ecafb129d93
@@ -8,25 +8,25 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 14a7ffd3542fd9562488b3b442f1efe19f44a869
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.openlocfilehash: cc3bd288044c9fea1da648b64cabc87148b8463a
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56691753"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63388602"
 ---
 # <a name="walkthrough-missing-objects-due-to-vertex-shading"></a>Tutorial: Objetos ausentes debido al sombreado de vértices
 En este tutorial se muestra cómo usar las herramientas de Diagnóstico de gráficos de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] para investigar un objeto que falta como consecuencia de un error que se ha producido durante la etapa del sombreador de vértices.
 
  En el tutorial se muestran las tareas siguientes:
 
--   Uso de la **Lista de eventos gráficos** para buscar los posibles orígenes del problema.
+- Uso de la **Lista de eventos gráficos** para buscar los posibles orígenes del problema.
 
--   Uso de la ventana **Etapas de canalización de gráficos** para comprobar el efecto de la llamada a la API de Direct3D `DrawIndexed` .
+- Uso de la ventana **Etapas de canalización de gráficos** para comprobar el efecto de la llamada a la API de Direct3D `DrawIndexed` .
 
--   Uso del **Depurador de HLSL** para examinar el sombreador de vértices.
+- Uso del **Depurador de HLSL** para examinar el sombreador de vértices.
 
--   Uso de la **Pila de llamadas de eventos gráficos** para ayudar a encontrar el origen de una constante de HLSL incorrecta.
+- Uso de la **Pila de llamadas de eventos gráficos** para ayudar a encontrar el origen de una constante de HLSL incorrecta.
 
 ## <a name="scenario"></a>Escenario
  Una de las causas habituales por las que puede faltar un objeto en una aplicación 3D se produce cuando el sombreador de vértices transforma los vértices del objeto de un modo incorrecto o inesperado; por ejemplo, el objeto podría haberse escalado a un tamaño muy pequeño, o haberse transformado de forma que aparezca detrás de la cámara, en lugar de delante.
@@ -61,7 +61,7 @@ En este tutorial se muestra cómo usar las herramientas de Diagnóstico de gráf
     En la ventana **Etapas de canalización de gráficos** , la etapa **Ensamblador de entrada** muestra la geometría del objeto antes de que se transforme y la etapa **Sombreador de vértices** muestra el mismo objeto después de transformarse. En este escenario, sabrá que ha encontrado el objeto que falta cuando se muestre en la etapa **Ensamblador de entrada** y no se muestre nada en la etapa **Sombreador de vértices** .
 
    > [!NOTE]
-   >  Si otras etapas de geometría (por ejemplo, las etapas del sombreador de casco, el sombreador de dominios o el sombreador de geometría) procesan el objeto, cualquiera de ellas podría ser la causa del problema. Normalmente, el problema está relacionado con la primera etapa en la que no se muestra el resultado o se muestra de forma inesperada.
+   > Si otras etapas de geometría (por ejemplo, las etapas del sombreador de casco, el sombreador de dominios o el sombreador de geometría) procesan el objeto, cualquiera de ellas podría ser la causa del problema. Normalmente, el problema está relacionado con la primera etapa en la que no se muestra el resultado o se muestra de forma inesperada.
 
 4. Deténgase cuando llegue a la llamada a draw que se corresponde con el objeto que falta. En este escenario, en la ventana **Etapas de canalización de gráficos** se indica que la geometría se emitió a la GPU (como informa la miniatura del ensamblador de entrada), pero no aparece en el destino de representación porque parece que hubo algún problema durante la etapa del sombreador de vértices (como indica la miniatura del sombreador de vértices).
 
@@ -104,7 +104,7 @@ En este tutorial se muestra cómo usar las herramientas de Diagnóstico de gráf
     ![El código que establece el búfer de constantes del objeto](media/gfx_diag_demo_missing_object_shader_step_7.png "gfx_diag_demo_missing_object_shader_step_7")
 
    > [!TIP]
-   >  Si está depurando la aplicación al mismo tiempo, puede establecer un punto de interrupción en esta ubicación, al que se llegará al representar el siguiente fotograma. Después, puede examinar los miembros de `m_marbleConstantBufferData` para confirmar que el valor del miembro `projection` está establecido en todo ceros cuando se llena el búfer de constantes.
+   > Si está depurando la aplicación al mismo tiempo, puede establecer un punto de interrupción en esta ubicación, al que se llegará al representar el siguiente fotograma. Después, puede examinar los miembros de `m_marbleConstantBufferData` para confirmar que el valor del miembro `projection` está establecido en todo ceros cuando se llena el búfer de constantes.
 
    Después de encontrar la ubicación donde se llena el búfer de constantes y detectar que sus valores proceden de la variable `m_marbleConstantBufferData`, el siguiente paso es averiguar dónde se establece el miembro `m_marbleConstantBufferData.projection` con todos sus valores como ceros. Puede usar **Buscar todas las referencias** para buscar rápidamente código que cambie el valor de `m_marbleConstantBufferData.projection`.
 

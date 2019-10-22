@@ -1,5 +1,5 @@
 ---
-title: IDispatchEx::GetNameSpaceParent | Documentos de Microsoft
+title: 'IDispatchEx:: GetNameSpaceParent | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 1abe2a880e12d6a4a3c1dfda32d30722525858f5
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: d2f47fab9831441e72a4ef3d4332a41c08e6a108
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58154561"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72574086"
 ---
 # <a name="idispatchexgetnamespaceparent"></a>IDispatchEx::GetNameSpaceParent
-Recupera la interfaz para el elemento de espacio de nombres primario de un objeto.  
+Recupera la interfaz para el espacio de nombres primario de un objeto.  
   
 ## <a name="syntax"></a>Sintaxis  
   
@@ -37,10 +37,10 @@ HRESULT GetNameSpaceParent(
   
 #### <a name="parameters"></a>Parámetros  
  `ppunk`  
- Dirección de un `IUnknown` puntero de interfaz que recibe la interfaz del espacio de nombres primario.  
+ Dirección de un puntero de interfaz de `IUnknown` que recibe la interfaz del elemento primario del espacio de nombres.  
   
 ## <a name="return-value"></a>Valor devuelto  
- Devuelve `S_OK` si es correcto o un código de error definido por OLE en caso contrario.  
+ Devuelve `S_OK` si es correcto o un código de error definido por OLE de lo contrario.  
   
 ## <a name="see-also"></a>Vea también  
  [IDispatchEx (Interfaz)](../../winscript/reference/idispatchex-interface.md)

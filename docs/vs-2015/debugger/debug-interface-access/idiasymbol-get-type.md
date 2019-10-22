@@ -13,12 +13,12 @@ caps.latest.revision: 14
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 516098cef38a70ef746d2307504a625d64d4ded6
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 9bec7cdbf0641bbd1bba1e70c2f21ec232a18e6a
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58997904"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "64787555"
 ---
 # <a name="idiasymbolgettype"></a>IDiaSymbol::get_type
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -41,7 +41,7 @@ HRESULT get_type ( 
  Si es correcto, devuelve `S_OK`; en caso contrario, devuelve `S_FALSE` o un código de error.  
   
 > [!NOTE]
->  Un valor devuelto de `S_FALSE` significa que la propiedad no está disponible para el símbolo.  
+> Un valor devuelto de `S_FALSE` significa que la propiedad no está disponible para el símbolo.  
   
 ## <a name="remarks"></a>Comentarios  
  Para determinar el tipo tiene un símbolo, debe llamar a este método y examinar los resultados [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) objeto. Tenga en cuenta que es posible que un símbolo que no tiene un tipo. Por ejemplo, el nombre de una estructura no tiene ningún tipo, pero podría tener símbolos de los elementos secundarios (usar la [Findchildren](../../debugger/debug-interface-access/idiasymbol-findchildren.md) método para examinar los elementos secundarios).  

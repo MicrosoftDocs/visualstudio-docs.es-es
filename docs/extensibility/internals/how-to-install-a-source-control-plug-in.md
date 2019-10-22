@@ -6,17 +6,17 @@ helpviewer_keywords:
 - installation [Visual Studio SDK], source control plug-ins
 - source control plug-ins, installing
 ms.assetid: 9e2e01d9-7beb-42b2-99b2-86995578afda
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9e368a318b2f6c552ce815c839e73f0a18ea5c9b
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 9de10f1aebd47093a3cc3f41343e73cefdde473a
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59648816"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66334924"
 ---
 # <a name="how-to-install-a-source-control-plug-in"></a>Procedimiento Instalar un complemento de control de código fuente
 Creación de un control de código fuente complemento implica tres pasos:
@@ -45,7 +45,7 @@ Creación de un control de código fuente complemento implica tres pasos:
    |HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\SourceSafe\SCCServerPath|*c:\vss\win32\ssscc.dll*|
 
    > [!NOTE]
-   >  SCCServerPath es la ruta de acceso completa para el complemento de SourceSafe. El complemento de control de código fuente usará nombres de empresa y los productos diferentes pero las mismas rutas de entrada del registro.
+   > SCCServerPath es la ruta de acceso completa para el complemento de SourceSafe. El complemento de control de código fuente usará nombres de empresa y los productos diferentes pero las mismas rutas de entrada del registro.
 
 2. Las siguientes entradas del registro opcional pueden usarse para modificar el comportamiento de su complemento de control de código fuente. Estas entradas van en la misma subclave como **SccServerName** y **SccServerPath**.
 
@@ -64,7 +64,7 @@ Creación de un control de código fuente complemento implica tres pasos:
 
 3. Agregue la subclave, **SourceCodeControlProvider**, en el **HKEY_LOCAL_MACHINE** clave en el **SOFTWARE** subclave.
 
-    En esta subclave, la entrada del registro **ProviderRegKey** se establece en una cadena que representa la subclave que se han colocado en el registro en el paso 1. El patrón es **HKEY_LOCAL_MACHINE\SOFTWARE\SourceCodeControlProvider\ProviderRegKey** = *SOFTWARE\\< nombre de la compañía\>\\< nombre de producto \>*.
+    En esta subclave, la entrada del registro **ProviderRegKey** se establece en una cadena que representa la subclave que se han colocado en el registro en el paso 1. El patrón es **HKEY_LOCAL_MACHINE\SOFTWARE\SourceCodeControlProvider\ProviderRegKey** = *SOFTWARE\\< nombre de la compañía\>\\< nombre de producto \>* .
 
     El siguiente es el contenido de ejemplo para esta subclave.
 
@@ -73,11 +73,11 @@ Creación de un control de código fuente complemento implica tres pasos:
    |HKEY_LOCAL_MACHINE\SOFTWARE\SourceCodeControlProvider\ProviderRegKey|SOFTWARE\Microsoft\SourceSafe|
 
    > [!NOTE]
-   >  El complemento de control de código fuente se utiliza la misma subclave y nombres de entrada, pero el valor será diferente.
+   > El complemento de control de código fuente se utiliza la misma subclave y nombres de entrada, pero el valor será diferente.
 
 4. Cree una subclave denominada **InstalledSCCProviders** bajo el **SourceCodeControlProvider** subclave y, a continuación, coloque una entrada en dicha subclave.
 
-    El nombre de esta entrada es el nombre legible por el usuario del proveedor (igual que el valor especificado para la entrada SCCServerName) y el valor es, una vez más, la subclave que se creó en el paso 1. El patrón es **HKEY_LOCAL_MACHINE\SOFTWARE\SourceCodeControlProvider\InstalledSCCProviders\\< nombre para mostrar\>** = *SOFTWARE\\< empresa nombre\>\\< nombre de producto\>*.
+    El nombre de esta entrada es el nombre legible por el usuario del proveedor (igual que el valor especificado para la entrada SCCServerName) y el valor es, una vez más, la subclave que se creó en el paso 1. El patrón es **HKEY_LOCAL_MACHINE\SOFTWARE\SourceCodeControlProvider\InstalledSCCProviders\\< nombre para mostrar\>**  = *SOFTWARE\\< empresa nombre\>\\< nombre de producto\>* .
 
     Por ejemplo:
 
@@ -86,7 +86,7 @@ Creación de un control de código fuente complemento implica tres pasos:
    |HKEY_LOCAL_MACHINE\SOFTWARE\SourceCodeControlProvider\InstalledSCCProviders\Microsoft Visual SourceSafe|SOFTWARE\Microsoft\SourceSafe|
 
    > [!NOTE]
-   >  Puede haber varios origen control complementos registrados de este modo. Se trata cómo [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] busca instalados todos los complementos en función de API de complemento de Control de código fuente.
+   > Puede haber varios origen control complementos registrados de este modo. Se trata cómo [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] busca instalados todos los complementos en función de API de complemento de Control de código fuente.
 
 ## <a name="how-an-ide-locates-the-dll"></a>Cómo un IDE busca el archivo DLL
  El [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] IDE tiene dos formas de buscar el origen de controlan la DLL del complemento:
@@ -98,14 +98,14 @@ Creación de un control de código fuente complemento implica tres pasos:
   Para localizar el archivo DLL en la primera de ellas, el IDE busca en el **HKEY_LOCAL_MACHINE\Software\SourceCodeControlProvider** subclave para la entrada **ProviderRegKey**. El valor de esta entrada apunta a otro subclave. El IDE, a continuación, busca una entrada denominada **SccServerPath** en ese segundo subclave bajo **HKEY_LOCAL_MACHINE**. El valor de esta entrada apunta el IDE a la DLL.
 
 > [!NOTE]
->  El IDE no carga los archivos DLL de rutas de acceso relativas (por ejemplo, *.\NewProvider.DLL*). Se debe especificar una ruta de acceso completa al archivo DLL (por ejemplo, *c:\Providers\NewProvider.DLL*). Esto refuerza la seguridad del IDE al impedir la carga de archivos DLL de complemento suplantadas o no autorizadas.
+> El IDE no carga los archivos DLL de rutas de acceso relativas (por ejemplo, *.\NewProvider.DLL*). Se debe especificar una ruta de acceso completa al archivo DLL (por ejemplo, *c:\Providers\NewProvider.DLL*). Esto refuerza la seguridad del IDE al impedir la carga de archivos DLL de complemento suplantadas o no autorizadas.
 
  Para localizar el archivo DLL en la segunda forma, el IDE busca en el **HKEY_LOCAL_MACHINE\Software\SourceCodeControlProvider\InstalledSCCProviders** subclave para todas las entradas. Cada entrada tiene un nombre y un valor. El IDE muestra una lista de estos nombres al usuario. Cuando el usuario elige un nombre, el IDE busca el valor para el nombre seleccionado en la que apunta a una subclave. El IDE busca una entrada denominada **SccServerPath** en dicha subclave bajo **HKEY_LOCAL_MACHINE**. El valor de esa entrada apunta el IDE a la DLL correcta.
 
  Un complemento de control de origen debe admitir ambas formas de buscar el archivo DLL y, por lo tanto, establece **ProviderRegKey**, sobrescribiendo cualquier configuración anterior. Más importante aún, debe agregar a la lista de **InstalledSccProviders** por lo que el usuario puede optar por qué complemento de control de código fuente para usar.
 
 > [!NOTE]
->  Dado que el **HKEY_LOCAL_MACHINE** clave se usa, el complemento de control de solo origen se puede registrar como el control de código fuente predeterminada complemento en un equipo determinado (sin embargo, [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] permite a los usuarios a determinar qué complemento de control de código fuente quieren usar para una solución concreta). Durante el proceso de instalación, compruebe si ya está establecido un complemento de control de código fuente; Si es así, pida al usuario si desea establecer el control de código fuente nuevo complemento que se instala como el valor predeterminado o no. Durante la desinstalación, no quite otras subclaves del registro que son comunes a todos los complementos código fuente control en **HKEY_LOCAL_MACHINE\SOFTWARE\SourceCodeControlProvider**; quitar solo la subclave SCC determinada.
+> Dado que el **HKEY_LOCAL_MACHINE** clave se usa, el complemento de control de solo origen se puede registrar como el control de código fuente predeterminada complemento en un equipo determinado (sin embargo, [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] permite a los usuarios a determinar qué complemento de control de código fuente quieren usar para una solución concreta). Durante el proceso de instalación, compruebe si ya está establecido un complemento de control de código fuente; Si es así, pida al usuario si desea establecer el control de código fuente nuevo complemento que se instala como el valor predeterminado o no. Durante la desinstalación, no quite otras subclaves del registro que son comunes a todos los complementos código fuente control en **HKEY_LOCAL_MACHINE\SOFTWARE\SourceCodeControlProvider**; quitar solo la subclave SCC determinada.
 
 ## <a name="how-the-ide-detects-version-1213-support"></a>Cómo el IDE detecta la compatibilidad con la versión 1.2 o 1.3
  ¿Cómo does [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] detectar si una funcionalidad de versión 1.2 y 1.3 complemento admite API de complemento de Control de código fuente? Para declarar la funcionalidad avanzada, el complemento de control de origen debe implementar la función correspondiente:

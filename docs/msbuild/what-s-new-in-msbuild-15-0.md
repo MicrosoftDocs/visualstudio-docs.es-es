@@ -8,13 +8,13 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-monikerRange: vs-2017
-ms.openlocfilehash: 718ef14fda76df87dc4627dc518e993058896471
-ms.sourcegitcommit: 847d192013eb8225776243045c9b5a53d1ba4a59
+monikerRange: '>=vs-2017'
+ms.openlocfilehash: cd3e86e3cbaaf9c368f848cbd0136c0473932490
+ms.sourcegitcommit: b60a00ac3165364ee0e53f7f6faef8e9fe59ec4a
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/15/2019
-ms.locfileid: "59584303"
+ms.lasthandoff: 09/11/2019
+ms.locfileid: "70913096"
 ---
 # <a name="whats-new-in-msbuild-15"></a>Novedades de MSBuild 15
 

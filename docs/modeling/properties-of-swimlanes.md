@@ -6,49 +6,49 @@ f1_keywords:
 - vs.dsltools.dsldesigner.swimlane
 helpviewer_keywords:
 - Domain-Specific Language, swimlane
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ab2e10eed7452bf58390513bed68fac3f4c9a0f6
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 5180581b0a0934c049d9c4ea199fa3396a1d1237
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55956849"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72658120"
 ---
 # <a name="properties-of-swimlanes"></a>Propiedades de las calles
-Puede agregar las calles a un diagrama. Las calles dividen un diagrama en áreas verticales u horizontales. Puede definir otras formas que se muestre en las calles. Para obtener más información, consulte [cómo definir lenguajes específicos de dominio](../modeling/how-to-define-a-domain-specific-language.md). Para obtener más información sobre cómo usar estas propiedades, vea [personalizar y ampliar lenguajes específicos de dominio](../modeling/customizing-and-extending-a-domain-specific-language.md).
+Puede Agregar calles a un diagrama. Las calles dividen un diagrama en áreas verticales u horizontales. Puede definir otras formas para que se muestren en calles. Para obtener más información, consulte [cómo definir un lenguaje específico de dominio](../modeling/how-to-define-a-domain-specific-language.md). Para obtener más información sobre cómo usar estas propiedades, vea [personalizar y extender un lenguaje específico de dominio](../modeling/customizing-and-extending-a-domain-specific-language.md).
 
- Las calles tienen las propiedades que aparecen en la tabla siguiente.
+ Las calles tienen las propiedades que se enumeran en la tabla siguiente.
 
-|Property|Descripción|Default|
+|Propiedad.|Descripción|Predeterminado|
 |-|-|-|
-|Color de relleno del cuerpo|El color de relleno para el cuerpo de la calle.|Blanco|
-|Color de relleno de encabezado|El color de relleno para el encabezado del carril.|DarkGray|
-|Color del separador|El color de la línea de separación.|LightGray|
-|Estilo del separador de línea|El estilo de la línea de separación (`Solid`, `Dash`, `Dot`, `DashDot`, `DashDotDot`, o `Custom`).|`Dash`|
-|Grosor del separador|El grosor de la línea de separación en pulgadas.|0.03125|
-|Color del texto|El color que se usa para los elementos Decorator de texto que están asociados a esta calle.|Negro|
-|Modificador de acceso|El nivel de acceso de la clase (`public` o `internal`).|Public|
-|Atributos personalizados|Se utiliza para agregar atributos a la clase de código que se genera a partir de esta calle.|\<none>|
-|Genera doble derivada|Si `True`, se generará una clase base y una clase parcial (para admitir la personalización mediante invalidaciones). Para obtener más información, consulte [invalidar y ampliar las clases generadas](../modeling/overriding-and-extending-the-generated-classes.md).|False|
-|No tiene Constructor personalizado|Si `True`, se proporcionará un constructor personalizado en el código fuente. Para obtener más información, consulte [invalidar y ampliar las clases generadas](../modeling/overriding-and-extending-the-generated-classes.md).|False|
-|Modificador de herencia|Describe el tipo de herencia de la clase de código fuente que se genera a partir de la calle (`none`, `abstract` o `sealed`).|ninguna|
-|Carril base|La clase base de esta calle.|(ninguno)|
-|nombre|El nombre de esta calle.|Nombre actual|
-|Espacio de nombres|El espacio de nombres que está asociado a esta calle.|Espacio de nombres actual|
-|Tipo de información sobre herramientas|Cómo se define la información sobre herramientas (`fixed`, `variable`, o `none`). Si `fixed`, a continuación, el valor de la `Fixed Tooltip Text` propiedad se usa; si `variable`, a continuación, la información sobre herramientas se define mediante código personalizado.|\<none>|
-|Notas|Notas informales asociadas con esta calle.|\<none>|
+|Color de relleno del cuerpo|Color de relleno para el cuerpo de la calle.|Blanco|
+|Color de relleno del encabezado|Color de relleno para el encabezado de la calle.|Grisoscuro|
+|Color del separador|Color de la línea de separación.|LightGray|
+|Estilo de línea de separador|Estilo de la línea de separación (`Solid`, `Dash`, `Dot`, `DashDot`, `DashDotDot` o `Custom`).|`Dash`|
+|Grosor del separador|Grosor de la línea de separación en pulgadas.|0,03125|
+|Color del texto|Color que se usa para los decoradores de texto que están asociados a esta calle.|Negro|
+|Modificador de acceso|Nivel de acceso de la clase (`public` o `internal`).|Public|
+|Atributos personalizados|Se usa para agregar atributos a la clase de código que se genera a partir de esta calle.|\<none>|
+|Genera Double derived|Si `True`, se generarán una clase base y una clase parcial (para admitir la personalización mediante invalidaciones). Para obtener más información, vea [invalidación y extensión de las clases generadas](../modeling/overriding-and-extending-the-generated-classes.md).|False|
+|Tiene un constructor personalizado|Si `True`, se proporcionará un constructor personalizado en el código fuente. Para obtener más información, vea [invalidación y extensión de las clases generadas](../modeling/overriding-and-extending-the-generated-classes.md).|False|
+|Inheritance (modificador)|Describe el tipo de herencia de la clase de código fuente que se genera a partir de la calle (`none`, `abstract` o `sealed`).|ninguna|
+|Calle base|La clase base de esta calle.|(ninguno)|
+|Name|El nombre de esta calle.|Nombre actual|
+|Espacio de nombres|El espacio de nombres que está afiliado a esta calle.|Espacio de nombres actual|
+|Tipo de información sobre herramientas|Cómo se define la información sobre herramientas (`fixed`, `variable` o `none`). Si `fixed`, se utiliza el valor de la propiedad `Fixed Tooltip Text`. Si `variable`, la información sobre herramientas se define en código personalizado.|\<none>|
+|Notas|Notas informales asociadas a esta calle.|\<none>|
 |Alineación|Alineación horizontal o vertical.|Vertical|
-|Alto inicial|Alto inicial de este carril, en pulgadas. Se aplica solamente a carriles horizontales.|0|
-|Ancho inicial|Ancho inicial de este carril, en pulgadas. Se aplica solamente a carriles verticales.|0|
-|Expone el Color del texto|Si `True`, el usuario puede establecer el color de una calle en el diseñador generado. Para ello, haga clic en la forma de calle y haga clic en **agregar expuestos**.|False|
+|Alto inicial|Alto inicial de esta calle, en pulgadas. Solo se aplica a las calles horizontales.|0|
+|Ancho inicial|Ancho inicial de esta calle, en pulgadas. Solo se aplica a las calles verticales.|0|
+|Expone el color del texto|Si `True`, el usuario puede establecer el color de una calle en el diseñador generado. Para establecer esto, haga clic con el botón secundario en la forma calle y haga clic en **Agregar expuesto**.|False|
 |Descripción|Se usa para documentar el diseñador generado.|\<none>|
-|Nombre para mostrar|El nombre que se mostrará en el diseñador generado para hacer referencia a esta clase de calle.|\<none>|
-|Texto de información sobre herramientas fijo|El texto que se usa para una información sobre herramientas fija.|\<none>|
-|Help Keyword|La palabra clave que se utiliza para indizar la Ayuda F1 para este carril.|\<none>|
+|Display Name|Nombre que se mostrará en el diseñador generado para hacer referencia a esta clase calle.|\<none>|
+|Texto de información sobre herramientas corregido|Texto que se usa para una información sobre herramientas fija.|\<none>|
+|Help Keyword|Palabra clave que se usa para indizar la ayuda de F1 para esta calle.|\<none>|
 
 ## <a name="see-also"></a>Vea también
 

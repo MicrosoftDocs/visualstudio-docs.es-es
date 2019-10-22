@@ -6,23 +6,23 @@ dev_langs:
 - VB
 - CSharp
 ms.assetid: 2222841f-e443-4a3d-8c70-4506aa905193
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 4e7f99f646d2a93878ec0a78f75cdc6ae1fb0d1c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: f895bd909ec9fda496d284c163bff4a5168bd057
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60095690"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72648731"
 ---
 # <a name="create-a-simple-data-application-by-using-adonet"></a>Creación de una aplicación de datos sencilla mediante ADO.NET
 
-Al crear una aplicación que manipula datos en una base de datos, se realizan tareas básicas tales como definir cadenas de conexión, insertar datos y ejecutar procedimientos almacenados. Siguiendo este tema, puede detectar cómo interactuar con una base de datos desde una aplicación sencilla de "formularios sobre datos" de Windows Forms utilizando Visual C# o Visual Basic y ADO.NET.  Todas las tecnologías de datos. NET, incluidos los conjuntos de datos, LINQ to SQL y Entity Framework, en última instancia, realice los pasos que son muy similares a las que se muestran en este artículo.
+Al crear una aplicación que manipula datos en una base de datos, se realizan tareas básicas tales como definir cadenas de conexión, insertar datos y ejecutar procedimientos almacenados. Siguiendo este tema, puede detectar cómo interactuar con una base de datos desde una sencilla Windows Forms aplicación "Forms over Data" mediante Visual C# o Visual Basic y ADO.net.  Todas las tecnologías de datos de .NET, incluidos los conjuntos de datos, LINQ to SQL y Entity Framework, en última instancia realizan pasos muy similares a los que se muestran en este artículo.
 
-En este artículo se muestra una manera sencilla de obtener datos de una base de datos de una manera rápida. Si la aplicación necesita modificar los datos de formas no triviales y actualizar la base de datos, debe considerar con Entity Framework y el uso de enlace de datos para sincronizar automáticamente los controles de interfaz de usuario a los cambios en los datos subyacentes.
+En este artículo se muestra una forma sencilla de obtener datos de una base de datos de una manera rápida. Si la aplicación necesita modificar datos de formas no triviales y actualizar la base de datos, debe considerar el uso de Entity Framework y el uso del enlace de datos para sincronizar automáticamente los controles de interfaz de usuario con los cambios en los datos subyacentes.
 
 > [!IMPORTANT]
 > Para mantener el código sencillo, no se incluye el control de excepciones listo para producción.
@@ -33,33 +33,33 @@ Para crear la aplicación, necesitará:
 
 - Visual Studio.
 
-- SQL Server Express LocalDB. Si no tiene SQL Server Express LocalDB, puede instalarlo desde el [página de descarga de SQL Server Express](https://www.microsoft.com/sql-server/sql-server-editions-express).
+- SQL Server Express LocalDB. Si no tiene SQL Server Express LocalDB, puede instalarlo desde la página de [descarga de SQL Server Express](https://www.microsoft.com/sql-server/sql-server-editions-express).
 
-En este tema se da por supuesto que está familiarizado con la funcionalidad básica del IDE de Visual Studio y puede crear una aplicación de Windows Forms, agregar formularios para el proyecto, colocar botones y otros controles en los formularios, establecer las propiedades de los controles y codificar eventos simples. Si no está familiarizado con estas tareas, recomendamos que complete la [Introducción a Visual C# y Visual Basic](../ide/quickstart-visual-basic-console.md) tema antes de empezar este tutorial.
+En este tema se da por supuesto que está familiarizado con la funcionalidad básica del IDE de Visual Studio y puede crear una aplicación Windows Forms, agregar formularios al proyecto, colocar botones y otros controles en los formularios, establecer las propiedades de los controles y codificar eventos simples. Si no está familiarizado con estas tareas, le recomendamos que complete el tema [Introducción a C# visual y Visual Basic](../ide/quickstart-visual-basic-console.md) antes de comenzar este tutorial.
 
 ## <a name="set-up-the-sample-database"></a>Configurar la base de datos de ejemplo
 
 Cree la base de datos de ejemplo siguiendo estos pasos:
 
-1. En Visual Studio, abra el **Explorador de servidores** ventana.
+1. En Visual Studio, abra la ventana **Explorador de servidores** .
 
-2. Haga doble clic en **conexiones de datos** y elija **crear nueva base de datos de SQL Server**.
+2. Haga clic con el botón derecho en **conexiones de datos** y elija **crear nueva SQL Server base**de datos.
 
-3. En el **nombre del servidor** texto, escriba **(localdb) \mssqllocaldb**.
+3. En el cuadro de texto **nombre del servidor** , escriba **(LocalDB) \mssqllocaldb**.
 
-4. En el **nuevo nombre de base de datos** texto, escriba **ventas**, a continuación, elija **Aceptar**.
+4. En el cuadro de texto nombre de la **nueva base de datos** , escriba **sales**y elija **Aceptar**.
 
-     Vacío **ventas** base de datos se crea y se agrega al nodo Conexiones de datos en el Explorador de servidores.
+     La base de datos de **ventas** vacía se crea y se agrega al nodo conexiones de datos en explorador de servidores.
 
-5. Haga doble clic en el **ventas** conexión de datos y seleccione **nueva consulta**.
+5. Haga clic con el botón derecho en la conexión de datos de **ventas** y seleccione **nueva consulta**.
 
      Se abre una ventana del editor de consultas.
 
-6. Copia el [script Transact-SQL de ventas](https://github.com/MicrosoftDocs/visualstudio-docs/raw/master/docs/data-tools/samples/sales.sql) en el Portapapeles.
+6. Copie el [script Transact-SQL de ventas](https://github.com/MicrosoftDocs/visualstudio-docs/raw/master/docs/data-tools/samples/sales.sql) en el portapapeles.
 
-7. Pegue el script de Transact-SQL en el editor de consultas y, a continuación, elija el **Execute** botón.
+7. Pegue el script T-SQL en el editor de consultas y, a continuación, elija el botón **Ejecutar** .
 
-     Después de un breve tiempo, finalice la consulta y se crean los objetos de base de datos. La base de datos contiene dos tablas: Los clientes y pedidos. Estas tablas no contienen datos inicialmente, pero puede agregar datos al ejecutar la aplicación que se va a crear. La base de datos también contiene cuatro procedimientos almacenados simples.
+     Tras un breve período de tiempo, la consulta termina de ejecutarse y se crean los objetos de base de datos. La base de datos contiene dos tablas: Customer y Orders. Estas tablas no contienen datos inicialmente, pero puede agregar datos al ejecutar la aplicación que va a crear. La base de datos también contiene cuatro procedimientos almacenados simples.
 
 ## <a name="create-the-forms-and-add-controls"></a>Crear los formularios y agregar controles
 
@@ -90,9 +90,9 @@ Cree la base de datos de ejemplo siguiendo estos pasos:
 |Botón|Nombre = btnGoToFillOrCancel|
 |Botón|Nombre = btnExit|
 
- **Formulario NewCustomer**
+**Formulario NewCustomer**
 
- ![Agregar un nuevo cliente y realizar un pedido](../data-tools/media/simpleappnewcust.png)
+![Agregar un nuevo cliente y realizar un pedido](../data-tools/media/simpleappnewcust.png)
 
 |Controles del formulario NewCustomer|Propiedades|
 | - |----------------|
@@ -105,9 +105,9 @@ Cree la base de datos de ejemplo siguiendo estos pasos:
 |Botón|Nombre = btnAddAnotherAccount|
 |Botón|Nombre = btnAddFinish|
 
- **Formulario FillOrCancel**
+**Formulario FillOrCancel**
 
- ![rellenar o cancelar pedidos](../data-tools/media/simpleappcancelfill.png)
+![rellenar o cancelar pedidos](../data-tools/media/simpleappcancelfill.png)
 
 |Controles del formulario FillOrCancel|Propiedades|
 | - |----------------|
@@ -120,27 +120,27 @@ Cree la base de datos de ejemplo siguiendo estos pasos:
 |Botón|Nombre = btnFinishUpdates|
 
 ## <a name="store-the-connection-string"></a>Almacenar la cadena de conexión
- Cuando la aplicación intenta abrir una conexión a la base de datos, la aplicación debe tener acceso a la cadena de conexión. Para evitar escribir la cadena manualmente en cada formulario, almacene la cadena en el *App.config* en el proyecto y cree un método que devuelve la cadena cuando se llama al método desde cualquier formulario de la aplicación.
+Cuando la aplicación intenta abrir una conexión a la base de datos, la aplicación debe tener acceso a la cadena de conexión. Para evitar escribir la cadena manualmente en cada formulario, almacene la cadena en el archivo *app. config* en el proyecto y cree un método que devuelva la cadena cuando se llame al método desde cualquier formulario de la aplicación.
 
- Puede encontrar la cadena de conexión con el botón secundario en el **ventas** conexión de datos en **Explorador de servidores** y eligiendo **propiedades**. Busque el **ConnectionString** propiedad, a continuación, usar **Ctrl**+**A**, **Ctrl**+**C**  para seleccionar y copiar la cadena en el Portapapeles.
+Para encontrar la cadena de conexión, haga clic con el botón derecho en la conexión de datos de **ventas** en **Explorador de servidores** y elija **propiedades**. Busque la propiedad **ConnectionString** y, a**continuación, use** **ctrl** + a, **Ctrl** +**C** para seleccionar y copiar la cadena en el portapapeles.
 
-1. Si usa C#, en **el Explorador de soluciones**, expanda el **propiedades** nodo bajo el proyecto y, a continuación, abra el **Settings.settings** archivo.
-    Si usa Visual Basic, en **el Explorador de soluciones**, haga clic en **mostrar todos los archivos**, expanda el **mi proyecto** nodo y, a continuación, abra el **Settings.settings** archivo.
+1. Si C#usa, en **Explorador de soluciones**, expanda el nodo **propiedades** en el proyecto y, a continuación, abra el archivo **Settings. Settings** .
+    Si está utilizando Visual Basic, en **Explorador de soluciones**, haga clic en **Mostrar todos los archivos**, expanda el nodo **mi proyecto** y, a continuación, abra el archivo **Settings. Settings** .
 
-2. En el **nombre** columna, escriba `connString`.
+2. En la columna **nombre** , escriba `connString`.
 
-3. En el **tipo** lista, seleccione **(cadena de conexión)**.
+3. En la lista **tipo** , seleccione **(cadena de conexión)** .
 
-4. En el **ámbito** lista, seleccione **aplicación**.
+4. En la lista **ámbito** , seleccione **aplicación**.
 
-5. En el **valor** columna, escriba la cadena de conexión (sin ninguna fuera de las comillas) y, a continuación, guarde los cambios.
+5. En la columna **valor** , escriba la cadena de conexión (sin comillas exteriores) y, a continuación, guarde los cambios.
 
 > [!NOTE]
-> En una aplicación real, debe almacenar de forma segura, como se describe en la cadena de conexión [las cadenas de conexión y archivos de configuración](/dotnet/framework/data/adonet/connection-strings-and-configuration-files).
+> En una aplicación real, debe almacenar la cadena de conexión de forma segura, como se describe en [cadenas de conexión y archivos de configuración](/dotnet/framework/data/adonet/connection-strings-and-configuration-files).
 
 ## <a name="write-the-code-for-the-forms"></a>Escribir el código para los formularios
 
-Esta sección contiene información general breve de lo que hace cada formulario. También proporciona el código que define la lógica subyacente cuando se hace clic en un botón en el formulario.
+Esta sección contiene información general breve de lo que hace cada formulario. También proporciona el código que define la lógica subyacente cuando se hace clic en un botón del formulario.
 
 ### <a name="navigation-form"></a>Formulario Navigation
 
@@ -150,32 +150,32 @@ El formulario Navigation se abre cuando se ejecuta la aplicación. El botón **A
 
 Si usa C#, en el **Explorador de soluciones**, abra **Program.cs** y, a continuación, cambie la línea `Application.Run` a esta: `Application.Run(new Navigation());`
 
-Si usa Visual Basic, en **el Explorador de soluciones**, abra el **propiedades** ventana, seleccione el **aplicación** pestaña y, a continuación, seleccione  **SimpleDataApp.Navigation** en el **formulario de inicio** lista.
+Si está utilizando Visual Basic, en **Explorador de soluciones**, abra la ventana **propiedades** , seleccione la pestaña **aplicación** y, a continuación, seleccione **asígnele simpledataapp. Navigation** en la lista **formulario de inicio** .
 
 #### <a name="create-auto-generated-event-handlers"></a>Crear controladores de eventos generados automáticamente
 
-Haga doble clic en los tres botones en el formulario de navegación para crear métodos de controlador de eventos vacío. Haga doble clic en los botones, también se agrega el código generado automáticamente en el archivo de código de diseñador que permite a un clic de botón Generar un evento.
+Haga doble clic en los tres botones del formulario de navegación para crear métodos de control de eventos vacíos. Al hacer doble clic en los botones, también se agrega código generado automáticamente en el archivo de código del diseñador que permite hacer clic en un botón para generar un evento.
 
-#### <a name="add-code-for-the-navigation-form-logic"></a>Agregue código para la lógica del formulario de navegación
+#### <a name="add-code-for-the-navigation-form-logic"></a>Agregar código para la lógica del formulario de navegación
 
-En la página de códigos del formulario Navigation, completa los cuerpos de método para el botón de tres controladores de eventos click tal como se muestra en el código siguiente.
+En la página de códigos del formulario de navegación, complete los cuerpos del método para los tres controladores de eventos de clic de botón, tal y como se muestra en el código siguiente.
 
 [!code-csharp[Navigation#1](../data-tools/codesnippet/CSharp/SimpleDataApp/Navigation.cs#1)]
 [!code-vb[Navigation#1](../data-tools/codesnippet/VisualBasic/SimpleDataApp/Navigation.vb#1)]
 
 ### <a name="newcustomer-form"></a>Formulario NewCustomer
 
-Si escribe un nombre de cliente y, a continuación, seleccione el **crear cuenta** botón, el formulario NewCustomer crea una cuenta de cliente y SQL Server devuelve un valor de identidad como el nuevo identificador de cliente. A continuación, puede colocar un pedido para la nueva cuenta especificando una cantidad y una fecha de pedido y seleccionando el **realizar pedido** botón.
+Al escribir un nombre de cliente y, a continuación, seleccionar el botón **crear cuenta** , el formulario NewCustomer crea una cuenta de cliente y SQL Server devuelve un valor de identidad como el nuevo identificador de cliente. A continuación, puede realizar un pedido para la nueva cuenta especificando una cantidad y una fecha de pedido y seleccionando el botón **realizar pedido** .
 
 #### <a name="create-auto-generated-event-handlers"></a>Crear controladores de eventos generados automáticamente
 
-Crear un Click vacío el controlador de eventos para cada botón en el formulario NewCustomer haciendo doble clic en cada uno de los cuatro botones. Haga doble clic en los botones, también se agrega el código generado automáticamente en el archivo de código de diseñador que permite a un clic de botón Generar un evento.
+Cree un controlador de eventos Click vacío para cada botón del formulario NewCustomer; para ello, haga doble clic en cada uno de los cuatro botones. Al hacer doble clic en los botones, también se agrega código generado automáticamente en el archivo de código del diseñador que permite hacer clic en un botón para generar un evento.
 
-#### <a name="add-code-for-the-newcustomer-form-logic"></a>Agregue código para la lógica del formulario NewCustomer
+#### <a name="add-code-for-the-newcustomer-form-logic"></a>Agregar código para la lógica del formulario NewCustomer
 
 Para completar la lógica del formulario NewCustomer, siga estos pasos.
 
-1. Poner el `System.Data.SqlClient` espacio de nombres en el ámbito para que le permitirá despreocuparse totalmente calificar los nombres de sus miembros.
+1. Coloque el espacio de nombres `System.Data.SqlClient` en el ámbito para que no tenga que calificar totalmente los nombres de sus miembros.
 
      ```csharp
      using System.Data.SqlClient;
@@ -185,29 +185,29 @@ Para completar la lógica del formulario NewCustomer, siga estos pasos.
      Imports System.Data.SqlClient
      ```
 
-2. Agregue algunas variables y métodos auxiliares a la clase tal como se muestra en el código siguiente.
+2. Agregue algunas variables y métodos auxiliares a la clase, tal y como se muestra en el código siguiente.
 
      [!code-csharp[NewCustomer#1](../data-tools/codesnippet/CSharp/SimpleDataApp/NewCustomer.cs#1)]
      [!code-vb[NewCustomer#1](../data-tools/codesnippet/VisualBasic/SimpleDataApp/NewCustomer.vb#1)]
 
-3. Complete los cuerpos de método para el botón cuatro controladores de eventos click tal como se muestra en el código siguiente.
+3. Complete los cuerpos de método para los cuatro controladores de eventos de clic de botón, tal y como se muestra en el código siguiente.
 
      [!code-csharp[NewCustomer#2](../data-tools/codesnippet/CSharp/SimpleDataApp/NewCustomer.cs#2)]
      [!code-vb[NewCustomer#2](../data-tools/codesnippet/VisualBasic/SimpleDataApp/NewCustomer.vb#2)]
 
 ### <a name="fillorcancel-form"></a>Formulario FillOrCancel
 
-El formulario FillOrCancel ejecuta una consulta para devolver un pedido cuando escriba un identificador de pedido y, a continuación, haga clic en el **buscar pedido** botón. La fila devuelta aparece en una cuadrícula de datos de solo lectura. Puede marcar el pedido como cancelado (X) si selecciona el **Cancelar pedido** botón, o bien puede marcar el pedido como relleno (F) si selecciona el **rellenar pedido** botón. Si selecciona el **buscar pedido** nuevamente en el botón, la fila actualizada aparece.
+El formulario FillOrCancel ejecuta una consulta para devolver un pedido cuando se escribe un identificador de pedido y, a continuación, se hace clic en el botón **Buscar pedido** . La fila devuelta aparece en una cuadrícula de datos de solo lectura. Puede marcar el pedido como cancelado (X) Si selecciona el botón **Cancelar pedido** o puede marcar el pedido como relleno (F) Si selecciona el botón **rellenar pedido** . Si vuelve a seleccionar el botón **Buscar pedido** , aparece la fila actualizado.
 
 #### <a name="create-auto-generated-event-handlers"></a>Crear controladores de eventos generados automáticamente
 
-Crear vacío haga clic en los controladores de eventos para los cuatro botones en el formulario FillOrCancel haciendo doble clic en los botones. Haga doble clic en los botones, también se agrega el código generado automáticamente en el archivo de código de diseñador que permite a un clic de botón Generar un evento.
+Cree controladores de eventos Click vacíos para los cuatro botones del formulario FillOrCancel haciendo doble clic en los botones. Al hacer doble clic en los botones, también se agrega código generado automáticamente en el archivo de código del diseñador que permite hacer clic en un botón para generar un evento.
 
-#### <a name="add-code-for-the-fillorcancel-form-logic"></a>Agregue código para la lógica del formulario FillOrCancel
+#### <a name="add-code-for-the-fillorcancel-form-logic"></a>Agregar código para la lógica del formulario FillOrCancel
 
 Para completar la lógica del formulario FillOrCancel, siga estos pasos.
 
-1. Ponga las dos siguientes espacios de nombres en el ámbito para que no tenga que calificar totalmente los nombres de sus miembros.
+1. Incorpore los dos espacios de nombres siguientes en el ámbito para que no tenga que calificar totalmente los nombres de sus miembros.
 
      ```csharp
      using System.Data.SqlClient;
@@ -219,12 +219,12 @@ Para completar la lógica del formulario FillOrCancel, siga estos pasos.
      Imports System.Text.RegularExpressions
      ```
 
-2. Agregue un variable y el método auxiliar a la clase tal como se muestra en el código siguiente.
+2. Agregue una variable y un método auxiliar a la clase, tal y como se muestra en el código siguiente.
 
      [!code-csharp[FillOrCancel#1](../data-tools/codesnippet/CSharp/SimpleDataApp/FillOrCancel.cs#1)]
      [!code-vb[FillOrCancel#1](../data-tools/codesnippet/VisualBasic/SimpleDataApp/FillOrCancel.vb#1)]
 
-3. Complete los cuerpos de método para el botón cuatro controladores de eventos click tal como se muestra en el código siguiente.
+3. Complete los cuerpos de método para los cuatro controladores de eventos de clic de botón, tal y como se muestra en el código siguiente.
 
      [!code-csharp[FillOrCancel#2](../data-tools/codesnippet/CSharp/SimpleDataApp/FillOrCancel.cs#2)]
      [!code-vb[FillOrCancel#2](../data-tools/codesnippet/VisualBasic/SimpleDataApp/FillOrCancel.vb#2)]

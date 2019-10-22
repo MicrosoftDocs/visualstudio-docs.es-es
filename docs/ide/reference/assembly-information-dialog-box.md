@@ -12,40 +12,58 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8b79d1b0a4b59246c9497c0594047c6457c1b685
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 411a9b1150961307a2a8ed3cdfae9842fb56701c
+ms.sourcegitcommit: 13decf878b33fc0c5d665a88067170c2861b261b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55930017"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "71681624"
 ---
 # <a name="assembly-information-dialog-box"></a>Cuadro de diálogo Información de ensamblado
-El cuadro de diálogo **Información de ensamblado** se usa para especificar los valores de los atributos de ensamblado globales de [!INCLUDE[dnprdnshort](../../code-quality/includes/dnprdnshort_md.md)], que se almacenan en el archivo AssemblyInfo creado automáticamente con el proyecto. En el **Explorador de soluciones**, el archivo se encuentra en el nodo **Mi proyecto** en [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] (haga clic en **Mostrar todos los archivos** para verlo); se encuentra en **Propiedades** en [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)]. Para obtener más información sobre atributos de ensamblado, consulte [Atributos](https://msdn.microsoft.com/Library/ae334cee-d96c-4243-a5e3-06dd7fcaf205).
 
- Para acceder a este cuadro de diálogo, seleccione un nodo de proyecto en el **Explorador de soluciones** y después, en el menú **Proyecto**, haga clic en **Propiedades**. Cuando aparezca el **Diseñador de proyectos**, haga clic en la pestaña **Aplicación**. En la página **Aplicación**, haga clic en el botón **Información de ensamblado**.
+El cuadro de diálogo Información de ensamblado se usa para especificar los valores de los atributos de ensamblado globales de .NET Framework, que se almacenan en el archivo AssemblyInfo creado automáticamente con el proyecto. En el Explorador de soluciones, el archivo AssemblyInfo se encuentra en el nodo **Mi proyecto** de los proyectos de Visual Basic (haga clic en **Mostrar todos los archivos** para verlo). En el caso de los proyectos de C#, se encuentra en **Propiedades**. Para más información, consulte [Atributos (C#)](/dotnet/csharp/programming-guide/concepts/attributes/index).
+
+Para acceder a este cuadro de diálogo, seleccione un nodo de proyecto en el **Explorador de soluciones** y, luego, en el menú **Proyecto**, seleccione **Propiedades**. En la página **Aplicación**, seleccione el botón **Información de ensamblado**.
 
 ## <a name="uielement-list"></a>Lista de UIElement
- **Título** Especifica un título para el manifiesto del ensamblado. Se corresponde con <xref:System.Reflection.AssemblyTitleAttribute>.
 
- **Descripción** Especifica una descripción opcional para el manifiesto del ensamblado. Se corresponde con <xref:System.Reflection.AssemblyDescriptionAttribute>.
+**Título**\
+Especifica un título para el manifiesto del ensamblado. Se corresponde con <xref:System.Reflection.AssemblyTitleAttribute>.
 
- **Empresa** Especifica un nombre de empresa para el manifiesto del ensamblado. Se corresponde con <xref:System.Reflection.AssemblyCompanyAttribute>.
+**Descripción**\
+Especifica una descripción opcional para el manifiesto del ensamblado. Se corresponde con <xref:System.Reflection.AssemblyDescriptionAttribute>.
 
- **Producto** Especifica un nombre de producto para el manifiesto del ensamblado. Se corresponde con <xref:System.Reflection.AssemblyProductAttribute>.
+**Empresa**\
+Especifica un nombre de empresa para el manifiesto del ensamblado. Se corresponde con <xref:System.Reflection.AssemblyCompanyAttribute>.
 
- **Copyright** Especifica un aviso de copyright para el manifiesto del ensamblado. Se corresponde con <xref:System.Reflection.AssemblyCopyrightAttribute>.
+Puede establecer o cambiar el valor predeterminado para Empresa en el Registro. Busque el valor **RegisteredOrganization** en la clave **Computer\HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\Windows NT\CurrentVersion** o en la clave **Computer\HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion**, dependiendo de su versión de Windows.
 
- **Marca comercial** Especifica una marca comercial para el manifiesto del ensamblado. Se corresponde con <xref:System.Reflection.AssemblyTrademarkAttribute>.
+**Producto**\
+Especifica un nombre de producto para el manifiesto del ensamblado. Se corresponde con <xref:System.Reflection.AssemblyProductAttribute>.
 
- **Versión del ensamblado** Especifica la versión del ensamblado. Se corresponde con <xref:System.Reflection.AssemblyVersionAttribute>.
+**Copyright**\
+Especifica un aviso de copyright para el manifiesto del ensamblado. Se corresponde con <xref:System.Reflection.AssemblyCopyrightAttribute>.
 
- **Versión del archivo** Especifica un número de versión que indica al compilador que use una versión determinada para el recurso de versión de archivo Win32. Se corresponde con <xref:System.Reflection.AssemblyFileVersionAttribute>.
+**Marca comercial**\
+Especifica una marca comercial para el manifiesto del ensamblado. Se corresponde con <xref:System.Reflection.AssemblyTrademarkAttribute>.
 
- **GUID** Un GUID único que identifica el ensamblado. Al crear un proyecto, Visual Studio genera un GUID para el ensamblado. Se corresponde con <xref:System.Guid>.
+**Versión de ensamblado**\
+Especifica la versión del ensamblado. Se corresponde con <xref:System.Reflection.AssemblyVersionAttribute>.
 
- **Idioma neutro** Especifica la referencia cultural que admite el ensamblado. Se corresponde con <xref:System.Resources.NeutralResourcesLanguageAttribute>. El valor predeterminado es **(None)**.
+**Versión de archivo**\
+Especifica un número de versión que indica al compilador que use una versión específica para el recurso de versión de archivo Win32. Se corresponde con <xref:System.Reflection.AssemblyFileVersionAttribute>.
 
- **Crear ensamblado visible a través de COM** Especifica si los tipos del ensamblado están disponibles para COM. Se corresponde con <xref:System.Runtime.InteropServices.ComVisibleAttribute>.
+**GUID**\
+Un GUID único que identifica el ensamblado. Al crear un proyecto, Visual Studio genera un GUID para el ensamblado. Se corresponde con <xref:System.Guid>.
+
+**Idioma neutro**\
+Especifica la cultura que admite el ensamblado. Se corresponde con <xref:System.Resources.NeutralResourcesLanguageAttribute>. El valor predeterminado es **(None)** .
+
+**Crear ensamblado visible a través de COM**\
+Especifica si los tipos del ensamblado estarán disponibles para COM. Se corresponde con <xref:System.Runtime.InteropServices.ComVisibleAttribute>.
+
+> [!NOTE]
+> Para más información sobre cómo establecer estas propiedades al generar un paquete NuGet en una biblioteca de clases de .NET Framework, consulte [Configurar las propiedades del proyecto para el paquete](/nuget/quickstart/create-and-publish-a-package-using-visual-studio-net-framework#configure-project-properties-for-the-package).
 
 ## <a name="see-also"></a>Vea también
 

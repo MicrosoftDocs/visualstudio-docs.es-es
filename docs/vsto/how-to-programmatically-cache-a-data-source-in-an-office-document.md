@@ -1,5 +1,5 @@
 ---
-title: Procedimiento Almacenar en caché mediante programación un origen de datos en un documento de Office
+title: Caché de origen de datos en el documento de Office mediante programación
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 7f039154265e9031713eb5511bb1c51a63e5b422
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 5e63b478fb16965f639a76dad0cbc3b2715bc7e2
+ms.sourcegitcommit: 25570fb5fb197318a96d45160eaf7def60d49b2b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60109184"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "66401401"
 ---
 # <a name="how-to-programmatically-cache-a-data-source-in-an-office-document"></a>Procedimiento Almacenar en caché mediante programación un origen de datos en un documento de Office
   Puede agregar mediante programación un objeto de datos a la caché de datos en un documento mediante una llamada a la `StartCaching` elemento de método de un host, como un <xref:Microsoft.Office.Tools.Word.Document>, <xref:Microsoft.Office.Tools.Excel.Workbook>, o <xref:Microsoft.Office.Tools.Excel.Worksheet>. Quitar un objeto de datos de la caché de datos mediante una llamada a la `StopCaching` método de un elemento host.
@@ -52,7 +52,7 @@ ms.locfileid: "60109184"
      [!code-vb[Trin_VstcoreDataExcel#14](../vsto/codesnippet/VisualBasic/Trin_VstcoreDataExcelVB/Sheet1.vb#14)]
 
     > [!NOTE]
-    >  No llame a `StopCaching` desde el controlador de eventos para el `Shutdown` eventos de un documento u hoja de cálculo. En el momento en el `Shutdown` provoca el evento, es demasiado tarde para modificar la caché de datos. Para obtener más información sobre la `Shutdown` eventos, consulte [Events in Office Projects](../vsto/events-in-office-projects.md).
+    > No llame a `StopCaching` desde el controlador de eventos para el `Shutdown` eventos de un documento u hoja de cálculo. En el momento en el `Shutdown` provoca el evento, es demasiado tarde para modificar la caché de datos. Para obtener más información sobre la `Shutdown` eventos, consulte [Events in Office Projects](../vsto/events-in-office-projects.md).
 
 ## <a name="see-also"></a>Vea también
 

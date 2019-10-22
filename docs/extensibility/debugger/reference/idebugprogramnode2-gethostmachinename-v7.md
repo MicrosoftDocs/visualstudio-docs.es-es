@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProgramNode2::GetHostMachineName_V7
 - IDebugProgramNode2::GetHostMachineNameIDebugProgramNode2::GetHostMachineName
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7b40d3350fb348afb654ae09785eb0956fb950bb
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 03b2566d2c93181439ddecb9d87c5da59b6e6090
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56689076"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66351146"
 ---
 # <a name="idebugprogramnode2gethostmachinenamev7"></a>IDebugProgramNode2::GetHostMachineName_V7
 
@@ -38,11 +41,10 @@ int GetHostMachineName_V7 (
 );
 ```
 
-#### <a name="parameters"></a>Parámetros
+## <a name="parameters"></a>Parámetros
 
-`pbstrHostMachineName`
-
- [out] Devuelve el nombre de la máquina en que se ejecuta el programa.
+`pbstrHostMachineName`\
+[out] Devuelve el nombre de la máquina en que se ejecuta el programa.
 
 ## <a name="return-value"></a>Valor devuelto
 

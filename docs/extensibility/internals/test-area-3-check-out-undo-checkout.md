@@ -8,17 +8,17 @@ helpviewer_keywords:
 - source control [Visual Studio SDK], checking out
 - source control [Visual Studio SDK], undo checkout
 ms.assetid: ce00c5a5-d472-4f45-8776-d77a1fbe9d37
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: eb95c5475c653e60c863ddf093d3a92e0c70cf45
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 93ca3f2c656c6bea81139e5e6101499a7fc8febd
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60048093"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66331066"
 ---
 # <a name="test-area-3-check-outundo-checkout"></a>Área de prueba 3: Desproteger o deshacer desprotección
 Esta área de prueba de complemento de control de código fuente trata los elementos de edición y revertir desde el almacén de versiones a través de la **desproteger** y **Deshacer desprotección** comandos.

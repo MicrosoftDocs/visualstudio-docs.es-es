@@ -12,11 +12,11 @@ caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: e3b8602df40045a3f4e1fc91fee92151bf5dd4ea
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60116282"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68195113"
 ---
 # <a name="command-routing-algorithm"></a>Algoritmo de enrutamiento de comandos
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

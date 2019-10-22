@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugPortSupplier3::CanPersistPorts
 ms.assetid: 4127760c-e602-4e86-9232-457e382a52c7
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ad31d015048d8e0732c32652141b7be060628663
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 11bc6e21e8b70a5bd95c001f4173a7da3f3fe4be
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56722634"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66340069"
 ---
 # <a name="idebugportsupplier3canpersistports"></a>IDebugPortSupplier3::CanPersistPorts
 Este método determina si el proveedor del puerto puede conservar los puertos (escribiéndolas en el disco) entre las distintas invocaciones del depurador.
@@ -32,7 +35,7 @@ HRESULT CanPersistPorts();
 int CanPersistPorts();
 ```
 
-#### <a name="parameters"></a>Parámetros
+## <a name="parameters"></a>Parámetros
  Ninguno.
 
 ## <a name="return-value"></a>Valor devuelto

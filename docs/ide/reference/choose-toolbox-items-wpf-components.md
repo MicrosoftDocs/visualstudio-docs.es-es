@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f09afb11708afb310a3dcd52490f5b2bcda9d79b
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: ac9e9c7bbafcf54e7bd31bde20469310c2ad3f81
+ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55928093"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68869761"
 ---
 # <a name="choose-toolbox-items-wpf-components"></a>Elegir elementos del Cuadro de herramientas, componentes de WPF
 
@@ -31,7 +31,7 @@ En esta pestaña del cuadro de diálogo **Elegir elementos del cuadro de herrami
 - Cuando se desactive la casilla junto a un componente, el icono correspondiente se quitará del **Cuadro de herramientas**.
 
     > [!NOTE]
-    > Los componentes de .NET Framework instalados en el equipo siguen estando disponibles aunque no se muestren sus iconos en el **cuadro de herramientas**.
+    > Los componentes de .NET instalados en el equipo siguen estando disponibles aunque no se muestren sus iconos en el **Cuadro de herramientas**.
 
 Las columnas de la pestaña **Componentes WPF** contienen la siguiente información:
 
@@ -41,15 +41,15 @@ Enumera los nombres de los controles de WPF para los que existen entradas en el 
 
 **Espacio de nombres**
 
-Muestra la jerarquía del espacio de nombres de la [API de clases de .NET Framework](/dotnet/api/?view=netframework-4.7) que define la estructura del componente. Ordene esta columna para mostrar los componentes disponibles en cada espacio de nombres de .NET Framework instalado en el equipo.
+Muestra la jerarquía del espacio de nombres de la [API de .NET](/dotnet/api/?view=netframework-4.7) que define la estructura del componente. Ordene esta columna para mostrar los componentes disponibles en cada espacio de nombres de .NET instalado en el equipo.
 
 **Nombre del ensamblado**
 
-Muestra el nombre del ensamblado de .NET Framework que incluye el espacio de nombres de cada componente. Ordene esta columna para mostrar los espacios de nombres contenidos en cada ensamblado de .NET Framework instalado en el equipo.
+Muestra el nombre del ensamblado de .NET que incluye el espacio de nombres de cada componente. Ordene esta columna para mostrar los espacios de nombres incluidos en cada ensamblado de .NET instalado en el equipo.
 
 **Directorio**
 
-Muestra la ubicación del ensamblado de .NET Framework. La ubicación predeterminada de todos los ensamblados es la caché global de ensamblados. Para obtener más información sobre la caché global de ensamblados, consulte [Trabajar con ensamblados y la caché global de ensamblados](/dotnet/framework/app-domains/working-with-assemblies-and-the-gac).
+Muestra la ubicación del ensamblado de .NET. La ubicación predeterminada de todos los ensamblados es la caché global de ensamblados. Para más información sobre la caché global de ensamblados, consulte [Trabajar con ensamblados y la caché global de ensamblados](/dotnet/framework/app-domains/working-with-assemblies-and-the-gac).
 
 ## <a name="uielement-list"></a>Lista de UIElement
 
@@ -77,7 +77,7 @@ La acción de agregar un control personalizado o <xref:System.Windows.Controls.U
 
 - No se actualiza correctamente al cambiar la configuración de soluciones de Depuración a Lanzamiento ni de Lanzamiento a Depuración. Esto se debe a que la referencia no es una referencia de proyecto, sino para el ensamblado en el disco. Si el control forma parte de la solución actual, al cambiar de Depuración a Lanzamiento, el proyecto sigue haciendo referencia a la versión de depuración del control.
 
-Además, si se aplican metadatos en tiempo de diseño al control personalizado y estos especifican que el atributo <xref:Microsoft.Windows.Design.ToolboxBrowsableAttribute> se establece en `false`, el control no aparece en el cuadro de herramientas.
+Además, si se aplican metadatos en tiempo de diseño al control personalizado y estos especifican que el atributo [Microsoft.Windows.Design.ToolboxBrowsableAttribute](/previous-versions/visualstudio/visual-studio-2010/bb547991(v=vs.100)) se establece en `false`, el control no aparece en el Cuadro de herramientas.
 
 Puede hacer referencia a los controles directamente en la vista XAML mediante la asignación del espacio de nombres y el ensamblado para el control.
 

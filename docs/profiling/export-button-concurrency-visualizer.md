@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 50c5aed4f12cc5bef9bc50c2a41009de4e6ad811
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56627472"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62969906"
 ---
 # <a name="export-button-concurrency-visualizer"></a>Export (Botón, Visualizador de simultaneidad)
 El botón **Export** permite exportar la pila de llamadas como un archivo .*csv* para sus propios registros o para su uso con otra herramienta, como Microsoft Excel.

@@ -16,12 +16,12 @@ dev_langs:
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: 5e9cc4f579b5913d5be3030828cad1a799efcd72
-ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
+ms.openlocfilehash: 740d6336ab4258d3111dd6708de859108e22365e
+ms.sourcegitcommit: 25570fb5fb197318a96d45160eaf7def60d49b2b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "58859392"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "66402066"
 ---
 # <a name="step-2-create-your-first-aspnet-core-web-app"></a>Paso 2: Creación de la primera aplicación web de ASP.NET Core
 
@@ -112,6 +112,9 @@ public void OnGet()
 
 Ahora debería ver la hora real del servidor en el explorador cuando navegue a la aplicación.
 
+> [!NOTE]
+> Los resultados pueden diferir de la imagen, ya que el formato de salida de ToShortDateTimeString depende de la configuración de la referencia cultural actual. Vea <xref:System.DateTime.ToShortTimeString>.
+
 ![Proyecto de ASP.NET Core en Visual Studio 2019 en el explorador](media/vs-2019/vs2019-app-fixed-in-browser.png)
 
 ## <a name="next-steps"></a>Pasos siguientes
@@ -122,4 +125,4 @@ En el vídeo siguiente, aprenderá a agregar compatibilidad con datos a la aplic
 
 ## <a name="see-also"></a>Vea también
 
-- [Tutorial: Creación de una aplicación web de páginas de Razor con ASP.NET Core](/aspnet/core/tutorials/razor-pages/?view=aspnetcore-2.1)
+- [Tutorial: Creación de una aplicación web de páginas de Razor con ASP.NETCore](/aspnet/core/tutorials/razor-pages/?view=aspnetcore-2.1)

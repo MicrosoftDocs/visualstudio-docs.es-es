@@ -1,7 +1,6 @@
 ---
 title: Publicación en Azure App Service
 ms.date: 04/02/2019
-ms.topic: quickstart
 helpviewer_keywords:
 - deployment, website
 ms.assetid: 8524a4c5-97a9-41ac-a2a0-034efb9bfc57
@@ -12,12 +11,12 @@ ms.prod: visual-studio-mac
 ms.custom: video
 ms.workload:
 - azure
-ms.openlocfilehash: d6e4e605a838ef354b8aef7227d2825fef8b7e7f
-ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
+ms.openlocfilehash: e4ce4273b72a57a2b9456974a108809dcd73b4e0
+ms.sourcegitcommit: fe212f8960d7882a1b0fdae9e22f008996aacf3c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "58856306"
+ms.lasthandoff: 09/03/2019
+ms.locfileid: "70222724"
 ---
 # <a name="publish-a-web-app-to-azure-app-service-using-visual-studio-for-mac"></a>Publicación de una aplicación web en Azure App Service mediante Visual Studio para Mac
 
@@ -25,9 +24,9 @@ Puede usar la herramienta Publicar para publicar aplicaciones ASP.NET Core en Az
 
 ## <a name="prerequisites"></a>Requisitos previos
 
- - [Visual Studio 2019 para Mac](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs4mac2019) instalado con ASP.NET Core habilitado.
- - Una suscripción de Azure. Si aún no tiene suscripción, puede [registrarse gratis](https://azure.microsoft.com/free/dotnet/), lo que incluye 200 USD de crédito durante 30 días y 12 meses de servicios populares gratis.
- - Un proyecto de ASP.NET Core. Si aún no tiene un proyecto, puede [crear uno nuevo](~/create-new-projects.md).
+- [Visual Studio 2019 para Mac](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs4mac2019) instalado con ASP.NET Core habilitado.
+- Una suscripción de Azure. Si aún no tiene suscripción, puede [registrarse gratis](https://azure.microsoft.com/free/dotnet/), lo que incluye 200 USD de crédito durante 30 días y 12 meses de servicios populares gratis.
+- Un proyecto de ASP.NET Core. Si aún no tiene un proyecto, puede [crear uno nuevo](~/create-new-projects.md).
 
 ## <a name="publish-to-azure-app-service"></a>Publicación en Azure App Service
 
@@ -57,7 +56,7 @@ Puede usar la herramienta Publicar para publicar aplicaciones ASP.NET Core en Az
 
     Puede cambiar la suscripción a la que se asociará el App Service mediante la lista desplegable **Suscripción**.
 
-    Puede seleccionar un **Grupo de recursos** existente mediante la lista desplegable o puede crear uno nuevo con el botón **+**.
+    Puede seleccionar un **Grupo de recursos** existente mediante la lista desplegable o puede crear uno nuevo con el botón **+** .
 
     Para el plan de App Service, seleccione uno existente o cree uno nuevo mediante el botón de radio **Personalizado**.
 

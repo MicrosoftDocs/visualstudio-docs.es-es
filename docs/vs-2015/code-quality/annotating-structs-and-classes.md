@@ -25,11 +25,11 @@ author: mikeblome
 ms.author: mblome
 manager: jillfra
 ms.openlocfilehash: df2e75bb3dd01d051d8fed29748e499f8f620128
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60075394"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68157075"
 ---
 # <a name="annotating-structs-and-classes"></a>Anotar structs y clases
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

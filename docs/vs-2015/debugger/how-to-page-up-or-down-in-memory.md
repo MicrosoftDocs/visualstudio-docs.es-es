@@ -24,11 +24,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: cc05772e6376dbe151d5ca71b9ee221e61a7be88
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60109603"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68157856"
 ---
 # <a name="how-to-page-up-or-down-in-memory"></a>Procedimiento Retroceso o avance en la memoria
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -53,5 +53,5 @@ Mientras consulta el contenido de la memoria en una ventana **Memoria** o en la 
   
 ## <a name="see-also"></a>Vea también  
  [Ventana Memoria](../debugger/memory-windows.md)   
- [Cómo: Uso de la ventana Desensamblado](../debugger/how-to-use-the-disassembly-window.md)   
+ [Procedimientos: Uso de la ventana Desensamblado](../debugger/how-to-use-the-disassembly-window.md)   
  [Ver datos en el depurador](../debugger/viewing-data-in-the-debugger.md)

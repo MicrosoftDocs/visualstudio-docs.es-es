@@ -1,5 +1,5 @@
 ---
-title: IJsDebugProperty (interfaz) | Documentos de Microsoft
+title: Interfaz IJsDebugProperty | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -11,12 +11,12 @@ caps.latest.revision: 5
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e17bff10e2b876e4db2b9f3b55df29c2e87989ee
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 990ae0b874042501b64f4e2e2b39874c25c9dc9c
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58151237"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72574062"
 ---
 # <a name="ijsdebugproperty-interface"></a>IJsDebugProperty (Interfaz)
 Representa un explorador de propiedades.  
@@ -33,11 +33,11 @@ IJsDebugProperty : public IUnknown;
   
 |Name|Descripción|  
 |----------|-----------------|  
-|[IJsDebugProperty::GetMembers (Método)](../../winscript/reference/ijsdebugproperty-getmembers-method.md)|Obtiene a los miembros de este objeto.|  
-|[IJsDebugProperty::GetPropertyInfo (Método)](../../winscript/reference/ijsdebugproperty-getpropertyinfo-method.md)|Obtiene la información de este objeto.|  
+|[IJsDebugProperty::GetMembers (Método)](../../winscript/reference/ijsdebugproperty-getmembers-method.md)|Obtiene los miembros de este objeto.|  
+|[IJsDebugProperty::GetPropertyInfo (Método)](../../winscript/reference/ijsdebugproperty-getpropertyinfo-method.md)|Obtiene información para este objeto.|  
   
 ## <a name="requirements"></a>Requisitos  
- **Encabezado:** jscript9diag.h  
+ **Encabezado:** jscript9diag. h  
   
 ## <a name="see-also"></a>Vea también  
  [Referencia de interfaces de Windows Script](../../winscript/reference/windows-script-interfaces-reference.md)

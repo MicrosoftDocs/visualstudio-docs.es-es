@@ -1,5 +1,5 @@
 ---
-title: IRemoteDebugApplication::CreateInstanceAtApplication | Microsoft Docs
+title: 'Iremotedebugapplication (:: CreateInstanceAtApplication | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 6e17c5abcb21bfaad6de948c3676d29232da66cf
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 285e5df6960e3188ffe1ce17b1fc4f43626a3d74
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58146297"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72572310"
 ---
 # <a name="iremotedebugapplicationcreateinstanceatapplication"></a>IRemoteDebugApplication::CreateInstanceAtApplication
-Permite la creación de objetos en el proceso de aplicación mediante código que es fuera de proceso a la aplicación.  
+Permite la creación de objetos en el proceso de la aplicación mediante el código que está fuera de proceso para la aplicación.  
   
 ## <a name="syntax"></a>Sintaxis  
   
@@ -41,19 +41,19 @@ HRESULT CreateInstanceAtApplication(
   
 #### <a name="parameters"></a>Parámetros  
  `rclsid`  
- [in] Identificador de clase (CLSID) del objeto para crear.  
+ de Identificador de clase (CLSID) del objeto que se va a crear.  
   
  `pUnkOuter`  
- [in] Si `NULL`, el objeto no se crea como parte de un agregado. En caso contrario, `pUnkOuter` es un puntero al objeto agregado `IUnknown` interfaz (el control `IUnknown`).  
+ de Si `NULL`, el objeto no se crea como parte de un agregado. De lo contrario, `pUnkOuter` es un puntero a la interfaz de `IUnknown` del objeto de agregado (control `IUnknown`).  
   
  `dwClsContext`  
- [in] Contexto de ejecución de código ejecutable. Los valores se toman de la enumeración `CLSCTX`.  
+ de Contexto para ejecutar el código ejecutable. Los valores se toman de la enumeración `CLSCTX`.  
   
  `riid`  
- [in] El identificador de interfaz que se usa para comunicarse con el objeto.  
+ de Identificador de interfaz que se usa para comunicarse con el objeto.  
   
  `ppvObject`  
- [out] Dirección de la variable de puntero que recibe el puntero de interfaz solicitado en `riid`. Tras la devolución es correcta, *`ppvObject` contiene el puntero de interfaz solicitada. En caso de error, \* `ppvObject` contiene `NULL`.  
+ enuncia Dirección de la variable de puntero que recibe el puntero de interfaz solicitado en `riid`. Si la devolución es correcta, * `ppvObject` contiene el puntero de interfaz solicitado. En caso de error, \* `ppvObject` contiene `NULL`.  
   
 ## <a name="return-value"></a>Valor devuelto  
  El método devuelve un objeto `HRESULT`. Entre los valores posibles se incluyen los que se indican en la tabla siguiente, entre otros.  
@@ -63,7 +63,7 @@ HRESULT CreateInstanceAtApplication(
 |`S_OK`|El método se realizó correctamente.|  
   
 ## <a name="remarks"></a>Comentarios  
- Este método delega a `CoCreateInstance`.  
+ Este método delega en `CoCreateInstance`.  
   
 ## <a name="see-also"></a>Vea también  
  [IRemoteDebugApplication (Interfaz)](../../winscript/reference/iremotedebugapplication-interface.md)

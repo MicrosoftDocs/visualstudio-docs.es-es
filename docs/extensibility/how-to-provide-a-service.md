@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - services, providing
 ms.assetid: 12bc1f12-47b1-44f6-b8db-862aa88d50d1
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 40217c1cfcc2c7ae946e36aadb7a251436023b0a
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: a752e05e5a7c91e0e9f3d3c21f8542014a053245
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60078634"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66324979"
 ---
 # <a name="how-to-provide-a-service"></a>Procedimiento Proporcionar un servicio
 Un VSPackage puede proporcionar servicios que pueden usar otros VSPackages. Para proporcionar un servicio, un VSPackage debe registrar el servicio con Visual Studio y agregue el servicio.
@@ -25,7 +25,7 @@ Un VSPackage puede proporcionar servicios que pueden usar otros VSPackages. Para
  Para obtener más información acerca de los servicios, consulte [servicio essentials](../extensibility/internals/service-essentials.md) .
 
 > [!NOTE]
->  Cuando un paquete VSPackage está a punto de descargarse, Visual Studio espera hasta que se han entregado todas las solicitudes de servicios que proporciona un paquete VSPackage. No permite las nuevas solicitudes para estos servicios. No se debe llamar explícitamente la <xref:Microsoft.VisualStudio.Shell.Interop.IProfferService.RevokeService%2A> método revocar un servicio cuando se descarga.
+> Cuando un paquete VSPackage está a punto de descargarse, Visual Studio espera hasta que se han entregado todas las solicitudes de servicios que proporciona un paquete VSPackage. No permite las nuevas solicitudes para estos servicios. No se debe llamar explícitamente la <xref:Microsoft.VisualStudio.Shell.Interop.IProfferService.RevokeService%2A> método revocar un servicio cuando se descarga.
 
 ## <a name="implement-a-service"></a>Implementar un servicio
 
@@ -89,7 +89,7 @@ Un VSPackage puede proporcionar servicios que pueden usar otros VSPackages. Para
      Este atributo registra `SMyService` con Visual Studio.
 
     > [!NOTE]
-    >  Para registrar un servicio que reemplace otro con el mismo nombre, use la <xref:Microsoft.VisualStudio.Shell.ProvideServiceOverrideAttribute>. Tenga en cuenta que la invalidación de un servicio solo se permite.
+    > Para registrar un servicio que reemplace otro con el mismo nombre, use la <xref:Microsoft.VisualStudio.Shell.ProvideServiceOverrideAttribute>. Tenga en cuenta que la invalidación de un servicio solo se permite.
 
 ### <a name="add-a-service"></a>Agregar un servicio
 
@@ -117,7 +117,7 @@ Un VSPackage puede proporcionar servicios que pueden usar otros VSPackages. Para
     ```
 
     > [!NOTE]
-    >  Visual Studio puede rechazar una solicitud para proporcionar un servicio. Esto produce si otro VSPackage ya proporciona el servicio.
+    > Visual Studio puede rechazar una solicitud para proporcionar un servicio. Esto produce si otro VSPackage ya proporciona el servicio.
 
 3. Ahora puede obtener el servicio y usar sus métodos. El ejemplo siguiente muestra el uso del servicio en el inicializador, pero puede obtener el servicio en cualquier lugar que desea usar el servicio.
 

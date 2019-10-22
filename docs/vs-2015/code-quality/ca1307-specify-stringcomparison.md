@@ -1,5 +1,5 @@
 ---
-title: 'CA1307: Especificar StringComparison | Documentos de Microsoft'
+title: 'CA1307: especificar StringComparison | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -12,15 +12,15 @@ helpviewer_keywords:
 - SpecifyStringComparison
 ms.assetid: 9b0d5e71-1683-4a0d-bc4a-68b2fbd8af71
 caps.latest.revision: 13
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 292e174feeb123c640306bc8ef3ffedd7e8847f6
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 111f0b85a601d931ac17bde46f7170fa81e71815
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58996248"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72661396"
 ---
 # <a name="ca1307-specify-stringcomparison"></a>CA1307: Especificar StringComparison
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,22 +29,22 @@ ms.locfileid: "58996248"
 |-|-|
 |TypeName|SpecifyStringComparison|
 |Identificador de comprobación|CA1307|
-|Categoría|Microsoft.Globalization|
+|Categoría|Microsoft. Globalization|
 |Cambio problemático|Poco problemático|
 
 ## <a name="cause"></a>Motivo
- Una operación de comparación de cadenas utiliza una sobrecarga del método que no ha establecido un <xref:System.StringComparison> parámetro.
+ Una operación de comparación de cadenas utiliza una sobrecarga de método que no establece un parámetro <xref:System.StringComparison>.
 
 ## <a name="rule-description"></a>Descripción de la regla
- Muchas operaciones de cadenas, más importante la <xref:System.String.Compare%2A> y <xref:System.String.Equals%2A> métodos, proporcionar una sobrecarga que acepta un <xref:System.StringComparison> valor de enumeración como un parámetro.
+ Muchas operaciones de cadena, más importantes los métodos <xref:System.String.Compare%2A> y <xref:System.String.Equals%2A>, proporcionan una sobrecarga que acepta un valor de enumeración <xref:System.StringComparison> como parámetro.
 
- Cada vez que existe una sobrecarga que toma un <xref:System.StringComparison> parámetro, se debe usar en lugar de una sobrecarga que no tome este parámetro. Si este parámetro se establece explícitamente, el código suele ser realizadas sea más clara y fácil de mantener.
+ Siempre que existe una sobrecarga que toma un parámetro <xref:System.StringComparison>, se debe usar en lugar de una sobrecarga que no tome este parámetro. Al establecer este parámetro explícitamente, el código suele ser más claro y más fácil de mantener.
 
 ## <a name="how-to-fix-violations"></a>Cómo corregir infracciones
- Para corregir una infracción de esta regla, cambiar los métodos de comparación de cadenas a las sobrecargas que aceptan el <xref:System.StringComparison> enumeración como un parámetro. Por ejemplo: cambiar `String.Compare(str1, str2)` a `String.Compare(str1, str2, StringComparison.Ordinal)`.
+ Para corregir una infracción de esta regla, cambie los métodos de comparación de cadenas a las sobrecargas que aceptan la enumeración <xref:System.StringComparison> como un parámetro. Por ejemplo: cambie `String.Compare(str1, str2)` a `String.Compare(str1, str2, StringComparison.Ordinal)`.
 
 ## <a name="when-to-suppress-warnings"></a>Cuándo suprimir advertencias
- Es seguro suprimir una advertencia de esta regla cuando la biblioteca o la aplicación está destinada a una audiencia local limitada y, por tanto, no estará localizada.
+ Es seguro suprimir una advertencia de esta regla cuando la biblioteca o aplicación está pensada para un público local limitado y, por lo tanto, no se localizará.
 
 ## <a name="see-also"></a>Vea también
- [Advertencias de globalización](../code-quality/globalization-warnings.md) [CA1309: Utilizar StringComparison ordinal](../code-quality/ca1309-use-ordinal-stringcomparison.md)
+ [Advertencias de globalización](../code-quality/globalization-warnings.md) [CA1309: Use StringComparison ordinal](../code-quality/ca1309-use-ordinal-stringcomparison.md)

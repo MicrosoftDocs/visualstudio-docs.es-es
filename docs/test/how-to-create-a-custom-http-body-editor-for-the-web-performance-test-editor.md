@@ -8,12 +8,12 @@ ms.assetid: a0b2d8ff-3e2a-487e-9172-90047174f336
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 8eef7dd68ba29f4a0100dfe5207c0b6179a76410
-ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
+ms.openlocfilehash: 30ce24b0cb48e88ddb77cf3576d40f95ed022ba0
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58415075"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68926521"
 ---
 # <a name="how-to-create-a-custom-http-body-editor-for-the-web-performance-test-editor"></a>Procedimiento para crear un editor de cuerpo HTTP personalizado para el Editor de pruebas de rendimiento web
 
@@ -23,9 +23,9 @@ Puede crear un editor de contenido personalizado que le permita editar el conten
 
 Puede implementar estos tipos de editores:
 
--   **Editor de contenido de cadena** Se implementa usando la interfaz <xref:Microsoft.VisualStudio.TestTools.WebTesting.IStringHttpBodyEditorPlugin>.
+- **Editor de contenido de cadena** Se implementa usando la interfaz <xref:Microsoft.VisualStudio.TestTools.WebTesting.IStringHttpBodyEditorPlugin>.
 
--   **Editor de contenido binario** Se implementa usando la interfaz <xref:Microsoft.VisualStudio.TestTools.WebTesting.IBinaryHttpBodyEditorPlugin>.
+- **Editor de contenido binario** Se implementa usando la interfaz <xref:Microsoft.VisualStudio.TestTools.WebTesting.IBinaryHttpBodyEditorPlugin>.
 
 Estas interfaces están contenidas en el espacio de nombres <xref:Microsoft.VisualStudio.TestTools.WebTesting>.
 
@@ -43,7 +43,7 @@ Estas interfaces están contenidas en el espacio de nombres <xref:Microsoft.Visu
 
 1. En **Propiedades**, seleccione la pestaña **Aplicación**.
 
-1. En la lista desplegable **Plataforma de destino**, seleccione **.NET Framework 4**.
+1. En la lista desplegable **Marco de trabajo de destino**, seleccione .NET Framework 4 (o posterior).
 
 1. Aparecerá el cuadro de diálogo **Cambio de plataforma de destino**.
 
@@ -117,9 +117,9 @@ Se crea una instancia del <xref:System.Windows.Forms.UserControl> MessageEditorC
 private MessageEditorControl messageEditorControl
 ```
 
- La instancia de messageEditorControl se hospeda dentro del cuadro de diálogo de complemento creado por el método <xref:Microsoft.VisualStudio.TestTools.WebTesting.IStringHttpBodyEditorPlugin.CreateEditor*>. Además, el <xref:System.Windows.Forms.RichTextBox> de messageEditorControl se rellena con el contenido de <xref:Microsoft.VisualStudio.TestTools.WebTesting.IHttpBody>. Sin embargo, la creación del complemento no se puede producir a menos que <xref:Microsoft.VisualStudio.TestTools.WebTesting.IStringHttpBodyEditorPlugin.SupportsContentType*> devuelva `true`. En el caso de este editor, <xref:Microsoft.VisualStudio.TestTools.WebTesting.IStringHttpBodyEditorPlugin.SupportsContentType*> devuelve `true` si <xref:Microsoft.VisualStudio.TestTools.WebTesting.IHttpBody.ContentType*> en <xref:Microsoft.VisualStudio.TestTools.WebTesting.IHttpBody> contiene "xml".
+La instancia de messageEditorControl se hospeda dentro del cuadro de diálogo de complemento creado por el método <xref:Microsoft.VisualStudio.TestTools.WebTesting.IStringHttpBodyEditorPlugin.CreateEditor*>. Además, el <xref:System.Windows.Forms.RichTextBox> de messageEditorControl se rellena con el contenido de <xref:Microsoft.VisualStudio.TestTools.WebTesting.IHttpBody>. Sin embargo, la creación del complemento no se puede producir a menos que <xref:Microsoft.VisualStudio.TestTools.WebTesting.IStringHttpBodyEditorPlugin.SupportsContentType*> devuelva `true`. En el caso de este editor, <xref:Microsoft.VisualStudio.TestTools.WebTesting.IStringHttpBodyEditorPlugin.SupportsContentType*> devuelve `true` si <xref:Microsoft.VisualStudio.TestTools.WebTesting.IHttpBody.ContentType*> en <xref:Microsoft.VisualStudio.TestTools.WebTesting.IHttpBody> contiene "xml".
 
- Cuando se completa la edición del texto de la cadena y el usuario hace clic en **Aceptar** en el cuadro de diálogo del complemento, se llama a <xref:Microsoft.VisualStudio.TestTools.WebTesting.IStringHttpBodyEditorPlugin.GetNewValue*> para obtener el texto editado como una cadena y actualizar el **Texto de la cadena** de la solicitud en el Editor de pruebas de rendimiento web.
+Cuando se completa la edición del texto de la cadena y el usuario hace clic en **Aceptar** en el cuadro de diálogo del complemento, se llama a <xref:Microsoft.VisualStudio.TestTools.WebTesting.IStringHttpBodyEditorPlugin.GetNewValue*> para obtener el texto editado como una cadena y actualizar el **Texto de la cadena** de la solicitud en el Editor de pruebas de rendimiento web.
 
 ### <a name="create-a-class-and-implement-the-istringhttpbodyeditorplugin-interface"></a>Creación de una clase e implementación de la interfaz IStringHttpBodyEditorPlugin
 
@@ -210,7 +210,7 @@ Cuando se completa la edición del texto de la cadena y el usuario hace clic en 
 
 ### <a name="to-add-the-ibinaryhttpbodyeditorplugin-to-the-class"></a>Para agregar IBinaryHttpBodyEditorPlugin a la clase
 
--   Escriba o copie el siguiente código bajo la clase XmlMessageEditor agregada en el procedimiento anterior para crear una instancia de la clase Msbin1MessageEditor de la interfaz <xref:Microsoft.VisualStudio.TestTools.WebTesting.IBinaryHttpBodyEditorPlugin> e implementar los métodos necesarios:
+- Escriba o copie el siguiente código bajo la clase XmlMessageEditor agregada en el procedimiento anterior para crear una instancia de la clase Msbin1MessageEditor de la interfaz <xref:Microsoft.VisualStudio.TestTools.WebTesting.IBinaryHttpBodyEditorPlugin> e implementar los métodos necesarios:
 
     ```csharp
     /// <summary>
@@ -285,7 +285,7 @@ Cuando se completa la edición del texto de la cadena y el usuario hace clic en 
 
 3. Al finalizar la grabación, en el Editor de pruebas de rendimiento web, expanda la solicitud para el servicio Web y seleccione **Texto de la cadena** o **Cuerpo binario**.
 
-4. En la ventana **Propiedades**, seleccione Cuerpo de la cadena o Cuerpo binario y elija los puntos suspensivos **(…)**.
+4. En la ventana **Propiedades**, seleccione Cuerpo de la cadena o Cuerpo binario y elija los puntos suspensivos **(…)** .
 
    Aparecerá el cuadro de diálogo **Editar datos del cuerpo HTTP**.
 

@@ -11,19 +11,19 @@ caps.latest.revision: 22
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 5c2082e4f2c67696f057ea8fc779bfaf391e0af1
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: eb49e6c51c1e51d002683099797d940cb2d24556
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60096587"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65682361"
 ---
 # <a name="walkthrough-creating-an-msbuild-project-file-from-scratch"></a>Tutorial: Crear un archivo del proyecto de MSBuild desde el principio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Los lenguajes de programación destinados a .NET Framework usan archivos de proyecto de MSBuild para describir y controlar el proceso de compilación de aplicaciones. Cuando se usa Visual Studio para crear un archivo del proyecto de MSBuild, el XML adecuado se agrega al archivo automáticamente. Sin embargo, puede ser de utilidad comprender cómo se organiza el XML y cómo se puede cambiar para controlar una compilación.  
   
- Para obtener información sobre cómo crear un archivo del proyecto para un proyecto de C++, consulte [MSBuild (Visual C++)](http://msdn.microsoft.com/library/7a1be7ff-0312-4669-adf2-5f5bf507d560).  
+ Para obtener información sobre cómo crear un archivo del proyecto para un proyecto de C++, consulte [MSBuild (Visual C++)](https://msdn.microsoft.com/library/7a1be7ff-0312-4669-adf2-5f5bf507d560).  
   
  Este tutorial muestra la forma de crear un archivo básico del proyecto de forma incremental, utilizando solo un editor de texto. El tutorial sigue estos pasos:  
   
@@ -151,11 +151,11 @@ Los lenguajes de programación destinados a .NET Framework usan archivos de proy
  Las tareas en el destino Build se ejecutan secuencialmente. En este caso, la tarea `Csc` del compilador de Visual C# es la única tarea. Espera la compilación de una lista de archivos de código fuente y esto se produce mediante el valor del elemento `Compile`. El elemento `Compile` hace referencia a solo un archivo de código fuente, Helloworld.cs.  
   
 > [!NOTE]
->  En el elemento, puede utilizar el carácter comodín asterisco (*) para hacer referencia a todos los archivos cuya extensión de nombre de archivo sea .cs, del modo siguiente:  
+> En el elemento, puede utilizar el carácter comodín asterisco (*) para hacer referencia a todos los archivos cuya extensión de nombre de archivo sea .cs, del modo siguiente:  
 >   
->  `<Compile Include="*.cs" />`  
+> `<Compile Include="*.cs" />`  
 >   
->  Sin embargo, no se recomienda el uso de caracteres comodín porque dificulta la depuración y la asignación selectiva de destino si se agregan o eliminan archivos de código fuente.  
+> Sin embargo, no se recomienda el uso de caracteres comodín porque dificulta la depuración y la asignación selectiva de destino si se agregan o eliminan archivos de código fuente.  
   
 ## <a name="extending-the-path-to-include-msbuild"></a>Extender la ruta de acceso para incluir MSBuild  
  Antes de poder tener acceso a MSBuild, debe extender la variable de entorno PATH para incluir la carpeta .NET Framework.  
@@ -182,9 +182,9 @@ Los lenguajes de programación destinados a .NET Framework usan archivos de proy
      El mensaje **Hello, world!** debe mostrarse.  
   
 > [!NOTE]
->  Puede ver más detalles sobre la compilación aumentando el nivel de detalle. Para establecer el nivel de detalle en "detailed", escriba cualquiera de estos comandos en el símbolo del sistema:  
+> Puede ver más detalles sobre la compilación aumentando el nivel de detalle. Para establecer el nivel de detalle en "detailed", escriba cualquiera de estos comandos en el símbolo del sistema:  
 >   
->  **msbuild helloworld.csproj /t:Build /verbosity:detailed**  
+> **msbuild helloworld.csproj /t:Build /verbosity:detailed**  
   
 ## <a name="adding-build-properties"></a>Agregar propiedades de compilación  
  Puede agregar propiedades de compilación al archivo del proyecto para controlar mejor la compilación. Agregue ahora estas propiedades:  
@@ -243,17 +243,17 @@ Los lenguajes de programación destinados a .NET Framework usan archivos de proy
 ```  
   
 > [!NOTE]
->  Se recomienda agregar el delimitador de ruta de acceso de barra diagonal inversa (\\) al final del nombre de la carpeta al especificarlo en el elemento `OutputPath`, en lugar de agregarlo en el atributo `OutputAssembly` de la tarea `Csc`. Por lo tanto,  
+> Se recomienda agregar el delimitador de ruta de acceso de barra diagonal inversa (\\) al final del nombre de la carpeta al especificarlo en el elemento `OutputPath`, en lugar de agregarlo en el atributo `OutputAssembly` de la tarea `Csc`. Por lo tanto,  
 >   
->  `<OutputPath>Bin\</OutputPath>`  
+> `<OutputPath>Bin\</OutputPath>`  
 >   
->  `OutputAssembly=="$(OutputPath)$(AssemblyName).exe" />`  
+> `OutputAssembly=="$(OutputPath)$(AssemblyName).exe" />`  
 >   
->  es mejor que  
+> es mejor que  
 >   
->  `<OutputPath>Bin</OutputPath>`  
+> `<OutputPath>Bin</OutputPath>`  
 >   
->  `OutputAssembly=="$(OutputPath)\$(AssemblyName).exe" />`  
+> `OutputAssembly=="$(OutputPath)\$(AssemblyName).exe" />`  
   
 ## <a name="testing-the-build-properties"></a>Probar las propiedades de compilación  
  Ahora puede compilar la aplicación utilizando el archivo del proyecto en el que utilizó propiedades de compilación para especificar la carpeta de salida y el nombre de aplicación.  

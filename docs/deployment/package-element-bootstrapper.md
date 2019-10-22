@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f20e706dcc94e823446ea0e185881f034fcd7dd8
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: ab3478f701cade458ffdb97caf4541a88f52230e
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59654586"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66745760"
 ---
 # <a name="ltpackagegt-element-bootstrapper"></a>&lt;Paquete&gt; (elemento, arranque)
 El `Package` es el elemento de nivel superior XML dentro de un archivo de paquete.
@@ -147,10 +147,10 @@ El `Package` es el elemento de nivel superior XML dentro de un archivo de paquet
 |--------------------| - |
 | `Culture` | Obligatorio. Define la referencia cultural para este paquete, que determina el idioma que se usará. Este atributo es una clave en el `Strings` elemento, que se enumera las cadenas específicas de referencias culturales para nombres de producto y los mensajes de error durante la instalación. |
 | `Name` | Obligatorio. El nombre del paquete que se muestra al desarrollador dentro de una herramienta como [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Este atributo es una clave en el `Strings` elemento, que debe contener un `String` elemento con el `Name` y `Culture` establecer propiedades para que coincida con el `Name` y `Culture` propiedades de `Package`. |
-| `LicenseAgreement` | Opcional. Especifica el nombre del archivo en el paquete de distribución que contiene el contrato de licencia de usuario final (CLUF).  Este archivo puede ser texto sin formato (*.txt*) o formato de texto enriquecido. (*.rtf*) |
+| `LicenseAgreement` | Opcional. Especifica el nombre del archivo en el paquete de distribución que contiene el contrato de licencia de usuario final (CLUF).  Este archivo puede ser texto sin formato ( *.txt*) o formato de texto enriquecido. ( *.rtf*) |
 
 ## <a name="example"></a>Ejemplo
- En el ejemplo de código siguiente se muestra un archivo de paquete completo para redistribuir el [!INCLUDE[dnprdnlong](../code-quality/includes/dnprdnlong_md.md)].
+ El ejemplo de código siguiente muestra un archivo de paquete completo para la redistribución de .NET Framework 2.0.
 
 ```xml
 <?xml version="1.0" encoding="utf-8" ?>

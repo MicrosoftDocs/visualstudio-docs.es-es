@@ -14,19 +14,19 @@ caps.latest.revision: 12
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 7d9b30dd50838eced1299e4aaae6999c8fb9f0e5
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 5673ebf28cc652e3bcd973808db87b5bb058659c
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60052223"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65683534"
 ---
 # <a name="run-windows-phone-apps-in-the-emulator"></a>Ejecutar aplicaciones de Windows Phone en el simulador 
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 El emulador de Windows Phone proporciona un entorno virtual en el que puede depurar y probar aplicaciones de Windows Phone en el equipo sin un dispositivo físico. Puede simular eventos táctiles y rotaciones, y elegir el tamaño y la resolución de la pantalla física que desee emular. También puede probar muchas características usadas habitualmente como, por ejemplo, la ubicación, las redes, las notificaciones, los sensores, el acelerómetro y la tarjeta SD opcional.  
   
- Para obtener más información sobre las características que puede probar en el emulador, consulte [probar características de la aplicación en el emulador de Windows Phone](http://msdn.microsoft.com/c1b2b0ec-b8cc-4a98-84c1-701428e45cb1).  
+ Para obtener más información sobre las características que puede probar en el emulador, consulte [probar características de la aplicación en el emulador de Windows Phone](https://msdn.microsoft.com/c1b2b0ec-b8cc-4a98-84c1-701428e45cb1).  
   
  Junto con Visual Studio, el emulador proporciona un entorno completo donde puede diseñar, desarrollar, depurar y probar aplicaciones de Windows Phone.  
   
@@ -48,7 +48,7 @@ El emulador de Windows Phone proporciona un entorno virtual en el que puede depu
    Si el emulador seleccionado ya se está ejecutando, la aplicación se implementa y se inicia en el emulador en ejecución. Solo se puede ejecutar una instancia de cada emulador a la vez.  
   
 > [!TIP]
->  Al probar una aplicación en el emulador, deja el emulador abierto entre cada sesión de depuración para poder ejecutar la aplicación de nuevo rápidamente.  
+> Al probar una aplicación en el emulador, deja el emulador abierto entre cada sesión de depuración para poder ejecutar la aplicación de nuevo rápidamente.  
   
 ### <a name="BKMK_vs"></a> Ejecutar una aplicación desde Visual Studio  
   
@@ -103,7 +103,7 @@ El emulador de Windows Phone proporciona un entorno virtual en el que puede depu
 ### <a name="BKMK_depltool"></a> Ejecutar una aplicación con la herramienta de implementación de aplicaciones  
  También puede usar la herramienta de implementación de aplicaciones de Windows Phone (**AppDeploy.exe**) para ejecutar la aplicación en el emulador. Esta herramienta es una aplicación independiente que se instala al instalar las herramientas de desarrollo de Windows Phone.  
   
- Para obtener más información, consulte [aplicaciones de implementación de Windows Phone 8.1 con la herramienta de implementación de aplicaciones](http://msdn.microsoft.com/library/23700f82-1399-44d9-bc0c-714be4a48ee6).  
+ Para obtener más información, consulte [aplicaciones de implementación de Windows Phone 8.1 con la herramienta de implementación de aplicaciones](https://msdn.microsoft.com/library/23700f82-1399-44d9-bc0c-714be4a48ee6).  
   
 ## <a name="BKMK_toolbar"></a> Configurar el emulador de Windows Phone con la barra de herramientas del emulador  
  En esta table se muestran los botones de configuración disponibles en la barra de herramientas del emulador.  

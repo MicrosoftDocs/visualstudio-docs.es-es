@@ -19,12 +19,12 @@ caps.latest.revision: 35
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 70bebfab781ceb1d608d13a8afad24ee06cb9c28
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: d2349c21d55c20bcb3bcd50ab96f383a9afcc00b
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59656744"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63426108"
 ---
 # <a name="msbuild-task"></a>MSBuild (Tarea)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -68,7 +68,7 @@ Compila proyectos de [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] de
  Sin embargo, [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 3.5 ofrece dos nuevos elementos de metadatos reservados, Properties y AdditionalProperties, que proporcionan una manera flexible de pasar propiedades diferentes para distintos proyectos que se están compilando mediante la [tarea MSBuild](../msbuild/msbuild-task.md).  
   
 > [!NOTE]
->  Estos nuevos elementos de metadatos solo son aplicables a elementos que se pasan en el atributo Projects de la [tarea MSBuild](../msbuild/msbuild-task.md).  
+> Estos nuevos elementos de metadatos solo son aplicables a elementos que se pasan en el atributo Projects de la [tarea MSBuild](../msbuild/msbuild-task.md).  
   
 ## <a name="multi-processor-build-benefits"></a>Ventajas de la compilación de varios procesadores  
  Una de las principales ventajas de utilizar estos nuevos metadatos se produce cuando se compilan los proyectos en paralelo en un sistema de varios procesadores. Los metadatos permiten consolidar todos los proyectos en una sola llamada de la [tarea MSBuild](../msbuild/msbuild-task.md) sin tener que realizar ningún procesamiento por lotes ni tareas [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] condicionales. Y cuando se llama únicamente a una sola [tarea MSBuild](../msbuild/msbuild-task.md), todos los proyectos que aparecen en el atributo Projects se compilarán en paralelo. (Solo, sin embargo, si el atributo `BuildInParallel=true` está presente en la [tarea MSBuild](../msbuild/msbuild-task.md).) Para obtener más información, consulte [Compilar varios proyectos en paralelo](../msbuild/building-multiple-projects-in-parallel-with-msbuild.md).  
@@ -77,7 +77,7 @@ Compila proyectos de [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] de
  Un escenario común es cuando se compilan varios archivos de solución mediante la [tarea MSBuild](../msbuild/msbuild-task.md), solo con diferentes configuraciones de compilación. Otra opción es compilar la solución a1 con la configuración de depuración y la solución a2 con la configuración de versión. En [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 2.0, este archivo del proyecto tendría el aspecto siguiente:  
   
 > [!NOTE]
->  En el ejemplo siguiente, "..." representa los archivos de solución adicionales.  
+> En el ejemplo siguiente, "..." representa los archivos de solución adicionales.  
   
 ### <a name="aproj"></a>a.proj  
   

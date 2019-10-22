@@ -11,12 +11,12 @@ caps.latest.revision: 13
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 3d7a758a40ed5cee6a42994170ca35188e942db7
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 35e9fa2d75528549f8c55f5b52dbd4c4aa2271a6
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58998996"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63431448"
 ---
 # <a name="introducing-spy"></a>Introducción a Spy++
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,7 +40,7 @@ Con Spy++ puede llevar a cabo las siguientes tareas:
   En varias ventanas de Spy++ puede hacer clic con el botón derecho para mostrar un menú contextual de los comandos usados con mayor frecuencia. Los comandos mostrados dependen de la ubicación del puntero. Por ejemplo, si hace clic con el botón derecho en una entrada de la vista de la ventana y la ventana seleccionada está visible, al hacer clic en **Resaltar** en el menú contextual, el borde de la ventana seleccionada parpadea para que sea más fácil de localizar.  
   
 > [!NOTE]
->  Hay otras dos utilidades similares a Spy ++: PView, que muestra detalles acerca de los procesos y subprocesos y DDESPY. EXE, que le permite supervisar los mensajes de intercambio dinámico de datos (DDE).  
+> Hay otras dos utilidades similares a Spy ++: PView, que muestra detalles acerca de los procesos y subprocesos y DDESPY. EXE, que le permite supervisar los mensajes de intercambio dinámico de datos (DDE).  
   
 ## <a name="64-bit-operating-systems"></a>Sistemas operativos de 64 bits  
  Hay dos versiones de Spy++. La primera, denominada Spy++ (spyxx.exe), está diseñada para mostrar los mensajes enviados a una ventana que se ejecuta en un proceso de 32 bits. Por ejemplo, Visual Studio se ejecuta en un proceso de 32 bits. Por lo tanto, puede usar Spy++ para mostrar los mensajes enviados al **Explorador de soluciones**. Dado que la configuración predeterminada de la mayoría de las compilaciones de Visual Studio es que se ejecute en un proceso de 32 bits, esta primera versión de Spy++ es la que está disponible en el menú **Herramientas** de Visual Studio.  
@@ -52,7 +52,7 @@ Con Spy++ puede llevar a cabo las siguientes tareas:
  Puede ejecutar cualquier versión de Spy++ directamente desde la línea de comandos.  
   
 > [!NOTE]
->  Aunque el nombre de archivo de Spy++ (64 bits) contiene “amd”, se ejecuta en cualquier sistema operativo Windows x64.  
+> Aunque el nombre de archivo de Spy++ (64 bits) contiene “amd”, se ejecuta en cualquier sistema operativo Windows x64.  
   
 ## <a name="see-also"></a>Vea también  
  [Usar Spy++](../debugger/using-spy-increment.md)   

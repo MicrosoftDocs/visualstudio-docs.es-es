@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - PENDING_BP_STATE enumeration
 ms.assetid: ac04ad72-fa92-4a15-ade2-0d0bbbadfc7f
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6ab1e9345cf599c4336b202d32fb71a9097fe629
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 6707c09e409e2a04d7afec0322b575a70cea33cf
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56688548"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66349872"
 ---
 # <a name="pendingbpstate"></a>PENDING_BP_STATE
 Especifica el estado de un punto de interrupción pendiente (un punto de interrupción que aún no se ha enlazado).
@@ -43,14 +46,18 @@ public enum enum_PENDING_BP_STATE { 
 };
 ```
 
-## <a name="members"></a>Miembros
- PBPS_NONE marcador de posición cero. Este valor no se devuelve nunca.
+## <a name="fields"></a>Campos
+ `PBPS_NONE`\
+ Marcador de posición cero. Este valor no se devuelve nunca.
 
- PBPS_DELETED indica que se ha eliminado el punto de interrupción pendiente.
+ `PBPS_DELETED`\
+ Indica que se ha eliminado el punto de interrupción pendiente.
 
- PBPS_DISABLED indica que el punto de interrupción pendiente está deshabilitada.
+ `PBPS_DISABLED`\
+ Indica que el punto de interrupción pendiente está deshabilitada.
 
- PBPS_ENABLED indica que está habilitado el punto de interrupción pendiente.
+ `PBPS_ENABLED`\
+ Indica que está habilitado el punto de interrupción pendiente.
 
 ## <a name="remarks"></a>Comentarios
  Usar como el `state` miembro de la [PENDING_BP_STATE_INFO](../../../extensibility/debugger/reference/pending-bp-state-info.md) estructura.

@@ -6,17 +6,17 @@ helpviewer_keywords:
 - debugging [Debugging SDK], launching the debugger
 - debugger [Debugging SDK], launching
 ms.assetid: f24da1a1-f923-48b4-989f-18a22b581d1b
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7ffe0405b1e07bfb7825607e17088f0f75796197
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 99b8dcd9647cf9a55bd5cc29d082c8d79e57f302
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60059726"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66353850"
 ---
 # <a name="launch-the-debugger"></a>Iniciar el depurador
 Iniciar al depurador requiere el envío de la secuencia correcta de métodos y eventos con sus atributos adecuados.

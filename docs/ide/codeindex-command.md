@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d472ec7d35b886dbc2294d2c3172b61d3b1e7702
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: edd794d647d0af63edd133a65fbaad569e067e21
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55929224"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68924081"
 ---
 # <a name="codeindex-command"></a>CodeIndex (Comando)
 
@@ -47,8 +47,8 @@ TFSConfig CodeIndex /indexingStatus | /setIndexing:[ on | off | keepupOnly ] | /
 |**Opción**|**Descripción**|
 |----------------| - |
 |**/indexingStatus**|Muestra el estado y la configuración del servicio de indización de código.|
-|**/setIndexing:**[ on &#124; off &#124; keepupOnly ]|-   **on**: Inicia la indexación de todos los conjuntos de cambios.<br />-   **off**: Detiene la indexación de todos los conjuntos de cambios.<br />-   **keepupOnly**: Detiene la indexación de los conjuntos de cambios creados previamente e inicia solamente la de nuevos conjuntos de cambios.|
-|**/ignoreList:**[ add &#124; remove &#124; removeAll &#124; view ] `ServerPath`<br /><br /> Puede usar el carácter comodín (*) al principio, al final o en ambos extremos de la ruta de acceso del servidor.|Especifica una lista de archivos de código, con sus rutas de acceso, que no desea que estén indizados.<br /><br /> -   **add**: Agrega el archivo que no se quiere indexar a la lista de archivos omitidos.<br />-   **remove**: Quita el archivo que se quiere indexar de la lista de archivos omitidos.<br />-   **removeAll**: Borra la lista de archivos omitidos e inicia la indexación de todos los archivos.<br />-   **view**: Permite ver todos los archivos que no se están indexando.|
+|**/setIndexing:** [ on &#124; off &#124; keepupOnly ]|-   **on**: Inicia la indexación de todos los conjuntos de cambios.<br />-   **off**: Detiene la indexación de todos los conjuntos de cambios.<br />-   **keepupOnly**: Detiene la indexación de los conjuntos de cambios creados previamente e inicia solamente la de nuevos conjuntos de cambios.|
+|**/ignoreList:** [ add &#124; remove &#124; removeAll &#124; view ] `ServerPath`<br /><br /> Puede usar el carácter comodín (*) al principio, al final o en ambos extremos de la ruta de acceso del servidor.|Especifica una lista de archivos de código, con sus rutas de acceso, que no desea que estén indizados.<br /><br /> -   **add**: Agrega el archivo que no se quiere indexar a la lista de archivos omitidos.<br />-   **remove**: Quita el archivo que se quiere indexar de la lista de archivos omitidos.<br />-   **removeAll**: Borra la lista de archivos omitidos e inicia la indexación de todos los archivos.<br />-   **view**: Permite ver todos los archivos que no se están indexando.|
 |**/listLargeFiles [/fileCount:** `FileCount` **/minSize:** `MinSize`]|Muestra el número especificado de archivos que supera el tamaño especificado en KB. Posteriormente, puede usar la opción **/ignoreList** para excluir estos archivos de la indexación.|
 |**/reindexAll**|Borra datos anteriormente indizados y reinicia la indización.|
 |**/destroyCodeIndex [/noPrompt]**|Elimina el índice de código y quita todos los datos indizados. No requiere confirmación si usa la opción **/noPrompt**.|
@@ -62,61 +62,61 @@ TFSConfig CodeIndex /indexingStatus | /setIndexing:[ on | off | keepupOnly ] | /
 > [!NOTE]
 > Las empresas, las organizaciones, los productos, los nombres de dominio, las direcciones de correo electrónico, los logotipos, los usuarios, las ubicaciones y los eventos que se citan a modo de ejemplo son ficticios.  No se pretende indicar, ni debe deducirse, ninguna asociación con compañías, organizaciones, productos, dominios, direcciones de correo electrónico, logotipos, personas, lugares o hechos reales.
 
- Para ver el estado y la configuración de la indización de código:
+Para ver el estado y la configuración de la indización de código:
 
 ```cmd
 TFSConfig CodeIndex /indexingStatus /collectionName:"Fabrikam Website"
 ```
 
- Para iniciar la indización de todos los conjuntos de cambios:
+Para iniciar la indización de todos los conjuntos de cambios:
 
 ```cmd
 TFSConfig CodeIndex /setIndexing:on /collectionName:"Fabrikam Website"
 ```
 
- Para detener la indización de los conjuntos de cambios creados previamente e iniciar solo la indización de nuevos conjuntos de cambios:
+Para detener la indización de los conjuntos de cambios creados previamente e iniciar solo la indización de nuevos conjuntos de cambios:
 
 ```cmd
 TFSConfig CodeIndex /setIndexing:keepupOnly /collectionName:"Fabrikam Website"
 ```
 
- Para buscar hasta 50 archivos de más de 10 KB:
+Para buscar hasta 50 archivos de más de 10 KB:
 
 ```cmd
 TFSConfig CodeIndex /listLargeFiles /fileCount:50 /minSize:10 /collectionName:"Fabrikam Website"
 ```
 
- Para excluir un archivo concreto de la indización y agregarlo a la lista de archivos omitidos:
+Para excluir un archivo concreto de la indización y agregarlo a la lista de archivos omitidos:
 
 ```cmd
 TFSConfig CodeIndex /ignoreList:add "$/Fabrikam Website/Catalog.cs" /collectionName:"Fabrikam Website"
 ```
 
- Para ver todos los archivos que no están indizados:
+Para ver todos los archivos que no están indizados:
 
 ```cmd
 TFSConfig CodeIndex /ignoreList:view
 ```
 
- Para borrar datos indizados previamente y reiniciar la indización:
+Para borrar datos indizados previamente y reiniciar la indización:
 
 ```cmd
 TFSConfig CodeIndex /reindexAll /collectionName:"Fabrikam Website"
 ```
 
- Para guardar todo el historial del conjunto de cambios:
+Para guardar todo el historial del conjunto de cambios:
 
 ```cmd
 TFSConfig CodeIndex /indexHistoryPeriod:all /collectionName:"Fabrikam Website"
 ```
 
- Para quitar el límite de tamaño de los datos temporales de CodeLens y seguir indexando independientemente del tamaño de los datos temporales:
+Para quitar el límite de tamaño de los datos temporales de CodeLens y seguir indexando independientemente del tamaño de los datos temporales:
 
 ```cmd
 TFSConfig CodeIndex /temporaryDataSizeLimit:disable /collectionName:"Fabrikam Website"
 ```
 
- Para eliminar el índice de código con confirmación:
+Para eliminar el índice de código con confirmación:
 
 ```cmd
 TFSConfig CodeIndex /destroyCodeIndex /collectionName:"Fabrikam Website"

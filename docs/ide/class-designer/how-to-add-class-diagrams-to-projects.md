@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 88e4f63646883c8d48dbd62fbd03deaddff8b8e2
-ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
+ms.openlocfilehash: 06432ac0e882df506e4379a2f2cbffcf52c79f42
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57223746"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66332764"
 ---
 # <a name="how-to-add-class-diagrams-to-projects"></a>Procedimiento Agregar diagramas de clases a proyectos
 
@@ -71,6 +71,9 @@ En **Vista de clases**, abra el menú contextual del espacio de nombres o del ti
 En el **Explorador de soluciones** o en la Vista de clases, haga clic con el botón derecho en el proyecto y elija **Ver**; después, elija **Ver diagrama de clases**.
 
 Se crea un diagrama de clases que se rellena automáticamente.
+
+> [!NOTE]
+> El Diseñador de clases aún no está disponible en proyectos de .NET Core.
 
 ## <a name="see-also"></a>Vea también
 

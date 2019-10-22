@@ -1,5 +1,5 @@
 ---
-title: Ejecutar pruebas unitarias para aplicaciones de Store
+title: Ejecutar pruebas unitarias para aplicaciones de la tienda
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-test
@@ -7,14 +7,14 @@ ms.topic: conceptual
 ms.assetid: 5a6f5b32-bfce-4a63-81e9-02d54c592539
 caps.latest.revision: 14
 author: alexhomer1
-ms.author: gewarren
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 309dbfcac8e5c4c38e65f8901c699dc2fa51c7a1
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 5bdcd9a5d3565bf4b7a92d658a5a270bbff6483c
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60104185"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72672248"
 ---
 # <a name="run-unit-tests-for-store-apps-in-visual-studio"></a>Ejecutar pruebas unitarias para aplicaciones de la Tienda en Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -22,7 +22,7 @@ ms.locfileid: "60104185"
 En este tema se describe cómo ejecutar pruebas unitarias con el Explorador de pruebas de Microsoft Visual Studio.
 
 > [!NOTE]
->  Los temas de esta sección describen la funcionalidad de Visual Studio Express para Windows 8. Visual Studio Community, Enterprise y Professional proporcionan características adicionales para las pruebas unitarias.
+> Los temas de esta sección describen la funcionalidad de Visual Studio Express para Windows 8. Visual Studio Community, Enterprise y Professional proporcionan características adicionales para las pruebas unitarias.
 >
 > - Use cualquier marco de pruebas unitarias de código abierto o de terceros que haya creado un adaptador complementario para el Explorador de pruebas de Microsoft. También puede analizar y mostrar información de cobertura de código para las pruebas.
 >   - Ejecute las pruebas después de cada compilación. También puede usar Microsoft Fakes, un marco de aislamiento para código administrado para centrar sus pruebas en su propio código sustituyendo el código de prueba para el sistema y la funcionalidad de terceros.
@@ -62,7 +62,7 @@ En este tema se describe cómo ejecutar pruebas unitarias con el Explorador de p
 
  Desde la barra de herramientas del Explorador de pruebas puede realizar gran parte del trabajo de búsqueda, organización y ejecución de las pruebas.
 
- ![Ejecutar pruebas desde la barra de herramientas del Explorador de pruebas](../test/media/ute-toolbar.png "UTE_ToolBar")
+ ![Ejecutar pruebas desde la barra de herramientas del explorador de pruebas](../test/media/ute-toolbar.png "UTE_ToolBar")
 
 ### <a name="BKMK_Running_tests"></a> Ejecutar pruebas
  Puede ejecutar todas las pruebas de la solución, todas las pruebas de un grupo o un conjunto de pruebas seleccionado. Realice una de las siguientes acciones:
@@ -96,7 +96,7 @@ En este tema se describe cómo ejecutar pruebas unitarias con el Explorador de p
 - El seguimiento de la pila en el momento en que la prueba generó el error.
 
 ### <a name="BKMK_Viewing_the_source_code_of_a_test_method"></a> Ver el código fuente de un método de prueba
- Para mostrar el código fuente de un método de prueba en el editor de Visual Studio, seleccione la prueba y elija **Abrir prueba** en el menú contextual (teclado: F12).
+ Para mostrar el código fuente de un método de prueba en el Editor de Visual Studio, seleccione la prueba y elija **Abrir prueba** en el menú contextual (teclado: F12).
 
 ## <a name="BKMK_Organizing_the_test_list"></a> Organizar la lista de pruebas
 
@@ -105,7 +105,7 @@ En este tema se describe cómo ejecutar pruebas unitarias con el Explorador de p
 
 |||
 |-|-|
-|![Botón de grupo Explorador de pruebas](../test/media/ute-groupby-btn.png "UTE_GroupBy_btn")|Para agrupar las pruebas por el tiempo necesario para ejecutarlas, abra la lista **Agrupar por** y elija **Duración**. Elija **Resultado de la prueba** para volver a la agrupación original.|
+|![Botón grupo del explorador de pruebas](../test/media/ute-groupby-btn.png "UTE_GroupBy_btn")|Para agrupar las pruebas por el tiempo necesario para ejecutarlas, abra la lista **Agrupar por** y elija **Duración**. Elija **Resultado de la prueba** para volver a la agrupación original.|
 
 ### <a name="BKMK_Searching_and_filtering_the_test_list"></a> Buscar y filtrar la lista de pruebas
  Si tiene muchas pruebas, puede escribir en el cuadro de búsqueda del Explorador de pruebas para filtrar la lista por la cadena especificada. Puede restringir el filtro a tipos específicos de cadenas seleccionando uno en la lista de filtros antes de introducir la cadena de búsqueda.
@@ -118,7 +118,7 @@ En este tema se describe cómo ejecutar pruebas unitarias con el Explorador de p
 1. En el editor de Visual Studio, establezca un punto de interrupción en uno o varios métodos de prueba que desee depurar.
 
    > [!NOTE]
-   >  Dado que los métodos de prueba se pueden ejecutar en cualquier orden, establezca puntos de interrupción en todos los métodos de prueba que desee depurar.
+   > Dado que los métodos de prueba se pueden ejecutar en cualquier orden, establezca puntos de interrupción en todos los métodos de prueba que desee depurar.
 
 2. En el Explorador de pruebas, seleccione los métodos de prueba y elija **Depurar pruebas seleccionadas** en el menú contextual.
 

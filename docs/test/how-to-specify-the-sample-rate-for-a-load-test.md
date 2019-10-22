@@ -1,5 +1,5 @@
 ---
-title: Filtrar para especificar la frecuencia de muestreo de los parámetros de ejecución de una prueba de carga
+title: Procedimiento para especificar la frecuencia de muestreo de los parámetros de ejecución de una prueba de carga
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -8,14 +8,14 @@ ms.assetid: 51cbe7d6-5dfd-4842-bca3-f7f8a665dc84
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: f349308a1f4877a79a933e32269f262e1a58dc40
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: c1e94bb6da2786b989208ea1104d509883bc0724
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55939455"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62970671"
 ---
-# <a name="how-to-specify-the-sample-rate-for-a-load-test-run-setting"></a>Filtrar Especificar la frecuencia de muestreo de los parámetros de ejecución de pruebas de carga
+# <a name="how-to-specify-the-sample-rate-for-a-load-test-run-setting"></a>Procedimiento Especificar la frecuencia de muestreo de los parámetros de ejecución de pruebas de carga
 
 Después de crear la prueba de carga con el **Asistente para prueba de carga nueva**, puede usar el **Editor de pruebas de carga** para cambiar las propiedades de modo que satisfagan las necesidades y los objetivos de la prueba.
 
@@ -36,19 +36,19 @@ He aquí algunas instrucciones sobre las velocidades de muestra:
 
 ## <a name="to-specify-performance-counter-sampling-rate-in-a-run-setting"></a>Para especificar la frecuencia de muestreo de los contadores de rendimiento en un parámetro de ejecución
 
-1.  Abra una prueba de carga.
+1. Abra una prueba de carga.
 
      Aparece el **Editor de pruebas de carga**. Se mostrará el árbol de la prueba de carga.
 
-2.  En la carpeta **Parámetros de ejecución** del árbol de la prueba de carga, elija la configuración de ejecución para la que desea especificar la frecuencia de muestreo de la prueba.
+2. En la carpeta **Parámetros de ejecución** del árbol de la prueba de carga, elija la configuración de ejecución para la que desea especificar la frecuencia de muestreo de la prueba.
 
-3.  En el menú **Ver**, seleccione la ventana **Propiedades**.
+3. En el menú **Ver**, seleccione la ventana **Propiedades**.
 
      Las categorías y propiedades de los parámetros de ejecución se muestran en la ventana **Propiedades**.
 
-4.  En la propiedad **Frecuencia de muestreo**, escriba un valor de tiempo de la frecuencia en la que la prueba de carga recopilará los datos del contador de rendimiento.
+4. En la propiedad **Frecuencia de muestreo**, escriba un valor de tiempo de la frecuencia en la que la prueba de carga recopilará los datos del contador de rendimiento.
 
-5.  Cuando haya terminado de cambiar la propiedad, elija **Guardar** en el menú **Archivo**. A continuación, puede ejecutar la prueba de carga con el nuevo valor de **Frecuencia de muestreo**.
+5. Cuando haya terminado de cambiar la propiedad, elija **Guardar** en el menú **Archivo**. A continuación, puede ejecutar la prueba de carga con el nuevo valor de **Frecuencia de muestreo**.
 
 ## <a name="see-also"></a>Vea también
 

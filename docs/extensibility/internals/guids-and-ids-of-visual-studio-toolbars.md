@@ -11,23 +11,23 @@ helpviewer_keywords:
 - tool window toolbar
 - guid
 ms.assetid: c9cacd57-9225-450f-a9ac-cbf3168ea844
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 552f14885a95bf5c8461d6ca9db7ef2dbe204c73
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 62384942bb0577860161f8ae11d2eb6e787257bf
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56643761"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66328885"
 ---
 # <a name="guids-and-ids-of-visual-studio-toolbars"></a>Barras de herramientas de GUID e identificadores de Visual Studio
 En este tema enumera los valores GUID y el Id. de las barras de herramientas que se incluyen en el entorno de desarrollo integrado (IDE) de Visual Studio y de los grupos que contienen. Estos valores se definen en *.vsct* archivos que se instalan como parte del SDK de Visual Studio. Para obtener más información, consulte [grupos, menús y comandos definidos por el IDE](../../extensibility/internals/ide-defined-commands-menus-and-groups.md).
 
 > [!NOTE]
->  Muchas de las barras de herramientas disponibles para Visual Studio no se definen mediante Visual Studio así como sus GUID y los valores de identificador no son públicos. En este tema se muestra sólo las barras de herramientas que se definen en el SDK de Visual Studio *.vsct* archivos.
+> Muchas de las barras de herramientas disponibles para Visual Studio no se definen mediante Visual Studio así como sus GUID y los valores de identificador no son públicos. En este tema se muestra sólo las barras de herramientas que se definen en el SDK de Visual Studio *.vsct* archivos.
 
  Para obtener más información sobre cómo trabajar con objetos IDE que se definen en *.vsct* archivos, consulte [amplían los menús y comandos](../../extensibility/extending-menus-and-commands.md).
 
@@ -38,7 +38,7 @@ En este tema enumera los valores GUID y el Id. de las barras de herramientas que
 
  Solo los grupos pueden descender directamente desde las barras de herramientas. Para agregar un grupo, establezca a su elemento primario en el GUID y el identificador de la barra de herramientas. Para agregar un botón a una barra de herramientas, establecer a su elemento primario a un grupo en la barra de herramientas.
 
-|Barra de herramientas|Id.|
+|Barra de herramientas|ID|
 |-------------|--------|
 |Estándar|IDM_VS_TOOL_STANDARD|
 |Compilar|IDM_VS_TOOL_BUILD|
@@ -49,7 +49,7 @@ En este tema enumera los valores GUID y el Id. de las barras de herramientas que
 ### <a name="special-toolbars"></a>Barras de herramientas especiales
  Estas barras de herramientas definidas por el IDE de Visual Studio, pero realizan funciones especializadas y no hospedan grupos de comandos.
 
-|Barra de herramientas|Id.|
+|Barra de herramientas|ID|
 |-------------|--------|
 |Add (Comando)|IDM_VS_TOOL_ADDCOMMAND|
 |Sin definir|IDM_VS_TOOL_UNDEFINED|
@@ -61,7 +61,7 @@ En este tema enumera los valores GUID y el Id. de las barras de herramientas que
 
 ### <a name="standard-toolbar-groups"></a>Grupos de la barra de herramientas estándar
 
-|nombre|Id.|
+|Name|ID|
 |----------|--------|
 |Guardar o abrir|IDG_VS_TOOLSB_SAVEOPEN|
 |Cortar/Copiar|IDG_VS_TOOLSB_CUTCOPY|
@@ -75,14 +75,14 @@ En este tema enumera los valores GUID y el Id. de las barras de herramientas que
 
 ### <a name="build-toolbar-groups"></a>Crear grupos de la barra de herramientas
 
-|nombre|Id.|
+|Name|ID|
 |----------|--------|
 |Barra de compilación|IDG_VS_BUILDBAR|
 |Cancelar|IDG_VS_BUILD_CANCEL|
 
 ### <a name="text-editor-toolbar-groups"></a>Grupos de barra de herramientas del editor de texto
 
-|nombre|Id.|
+|Name|ID|
 |----------|--------|
 |Finalización|IDM_VS_TOOL_TEXTEDITOR|
 |Sangría|IDG_VS_EDITTOOLBAR_INDENT|
@@ -91,7 +91,7 @@ En este tema enumera los valores GUID y el Id. de las barras de herramientas que
 
 ### <a name="debug-toolbar-groups"></a>Grupos de la barra de herramientas de depuración
 
-|nombre|Id.|
+|Name|ID|
 |----------|--------|
 |Execution|IDM_DEBUG_TOOLBAR|
 |Recorrido paso a paso|IDG_DEBUG_TOOLBAR_STEPPING|
@@ -100,7 +100,7 @@ En este tema enumera los valores GUID y el Id. de las barras de herramientas que
 
 ### <a name="debug-location-toolbar-groups"></a>Grupos de barra de herramientas ubicación de depuración
 
-|nombre|Id.|
+|Name|ID|
 |----------|--------|
 |Ubicación de depuración|IDG_DEBUG_CONTEXT_TOOLBAR|
 
@@ -108,7 +108,7 @@ En este tema enumera los valores GUID y el Id. de las barras de herramientas que
  Las barras de herramientas pueden aparecer directamente en el IDE o en las ventanas de herramientas, como **el Explorador de soluciones**. Dado que las ventanas de herramientas no están definidas en *.vsct* archivos, barras de herramientas de ventana de herramienta no ha definido elementos primarios. En su lugar, se colocan en el código. La siguiente tabla muestra las barras de herramientas que aparecen en ventanas de herramientas en el IDE y los grupos de comandos que contienen.
 
 > [!NOTE]
->  Las barras de herramientas y los grupos usan el GUID `guidSHLMainMenu`, salvo que se especifique lo contrario mediante el uso de sintaxis de GUID: Id. Cuando se especifica un GUID para una barra de herramientas, también se aplica a los grupos que descienden de esa barra de herramientas.
+> Las barras de herramientas y los grupos usan el GUID `guidSHLMainMenu`, salvo que se especifique lo contrario mediante el uso de sintaxis de GUID: Id. Cuando se especifica un GUID para una barra de herramientas, también se aplica a los grupos que descienden de esa barra de herramientas.
 
 |Ventana de herramientas|Barra de herramientas|Grupos|
 |-----------------|-------------|------------|

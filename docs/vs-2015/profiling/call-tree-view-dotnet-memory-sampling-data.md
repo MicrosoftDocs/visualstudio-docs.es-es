@@ -12,11 +12,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 7ed0d8a2ccf8e33b493ddcb71f9ce3a794a06862
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54787670"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68150757"
 ---
 # <a name="call-tree-view---net-memory-sampling-data"></a>Vista Árbol de llamadas: datos de muestreo de memoria de .NET
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ La vista Árbol de llamadas muestra las rutas de acceso de ejecución de funcion
   
  Al establecer el nodo raíz, se eliminan todas las demás entradas de la vista, excepto el subárbol del nodo seleccionado. Puede restablecer el nodo raíz en el nodo que estaba viendo; para ello, haga clic con el botón derecho en la ventana de la vista Árbol de llamadas y seleccione **Restablecer raíz**.  
   
-|Columna|Descripción|  
+|Columna|DESCRIPCIÓN|  
 |------------|-----------------|  
 |**Identificador del proceso**|Identificador de proceso (PID) de la ejecución de generación de perfiles.|  
 |**Nombre de proceso**|Nombre del proceso.|  
@@ -53,7 +53,7 @@ La vista Árbol de llamadas muestra las rutas de acceso de ejecución de funcion
 |**Bytes exclusivos**|Número de bytes en memoria asignados por las instancias de esta función a las que ha llamado la función primaria del árbol de llamadas. Este número no incluye las asignaciones realizadas por funciones secundarias.|  
 |**Porcentaje de bytes exclusivos**|El porcentaje de todos los bytes de memoria que se asignaron durante la ejecución de la generación de perfiles que eran asignaciones exclusivas de esta función.|  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Otras referencias  
  [Vista Árbol de llamadas: instrumentación](../profiling/call-tree-view-dotnet-memory-instrumentation-data.md)   
  [Vista Árbol de llamadas](../profiling/call-tree-view-sampling-data.md)   
  [Vista Árbol de llamadas](../profiling/call-tree-view-instrumentation-data.md)

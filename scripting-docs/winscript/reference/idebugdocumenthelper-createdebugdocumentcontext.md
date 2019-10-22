@@ -1,5 +1,5 @@
 ---
-title: IDebugDocumentHelper::CreateDebugDocumentContext | Microsoft Docs
+title: 'IDebugDocumentHelper:: CreateDebugDocumentContext | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,12 +17,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8b2dddfc76f2bbc3e629b2d48febb6b582a3a779
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 24a039b5c4de410e67dc2dfb2859e1f4cc8b1739
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58150691"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72576989"
 ---
 # <a name="idebugdocumenthelpercreatedebugdocumentcontext"></a>IDebugDocumentHelper::CreateDebugDocumentContext
 Crea un nuevo contexto de documento de depuración.  
@@ -39,13 +39,13 @@ HRESULT CreateDebugDocumentContext(
   
 #### <a name="parameters"></a>Parámetros  
  `iCharPos`  
- [in] Ubicación del inicio del contenido del documento de depuración.  
+ de Ubicación del inicio del contenido del documento de depuración.  
   
  `cChars`  
- [in] Número de caracteres en el contexto.  
+ de Número de caracteres del contexto.  
   
  `ppddc`  
- [out] El nuevo contexto de documento de depuración.  
+ enuncia Nuevo contexto del documento de depuración.  
   
 ## <a name="return-value"></a>Valor devuelto  
  El método devuelve un objeto `HRESULT`. Entre los valores posibles se incluyen los que se indican en la tabla siguiente, entre otros.  

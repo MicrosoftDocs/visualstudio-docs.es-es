@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - NAME_MATCH enumeration
 ms.assetid: 3842c417-a3c9-4259-a05f-52b64b829ef6
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 50ae796a4662b51c186e6e9d69bf41771d040c8b
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 09ddb4653d1f13024360daca30eab40ebf57df0f
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60087957"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66346738"
 ---
 # <a name="namematch"></a>NAME_MATCH
 Selecciona la opción mayúsculas para la coincidencia de nombres.
@@ -40,12 +43,15 @@ public enum NameMatchOptions { 
 }
 ```
 
-## <a name="members"></a>Miembros
- nmNone que se especifica ninguna opción.
+## <a name="fields"></a>Campos
+ `nmNone`\
+ No se especifican opciones.
 
- Indica que los nombres deben coincidir nmCaseSensitive distinguen mayúsculas de minúsculas.
+ `nmCaseSensitive`\
+ Indica que los nombres deben coincidir distinguen mayúsculas de minúsculas.
 
- nmCaseInsensitive indica que deben coincidir los nombres no distinguen mayúsculas de minúsculas.
+ `nmCaseInsensitive`\
+ Indica que deben coincidir los nombres no distinguen mayúsculas de minúsculas.
 
 ## <a name="remarks"></a>Comentarios
  Se pasa como argumento a los métodos siguientes:

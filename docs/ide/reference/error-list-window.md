@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5fe70a8c7daeac86ea3a354f81d8462ca7f4e451
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 603faab80e185e7d22cba1ee544502d790afcdc0
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55933982"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62790868"
 ---
 # <a name="error-list-window"></a>Lista de errores (ventana)
 
@@ -29,17 +29,17 @@ ms.locfileid: "55933982"
 
 La ventana **Lista de errores** permite realizar las siguientes tareas:
 
--   Mostrar los errores, las advertencias y los mensajes que se generan mientras escribe el código.
+- Mostrar los errores, las advertencias y los mensajes que se generan mientras escribe el código.
 
--   Buscar errores de sintaxis detectados por IntelliSense.
+- Buscar errores de sintaxis detectados por IntelliSense.
 
--   Buscar errores de implementación, ciertos errores de análisis estático y errores detectados mientras se aplican directivas de Enterprise Templates.
+- Buscar errores de implementación, ciertos errores de análisis estático y errores detectados mientras se aplican directivas de Enterprise Templates.
 
--   Hacer doble clic en la entrada de cualquier mensaje de error para abrir el archivo donde se produce el problema y desplazarse a la ubicación del error.
+- Hacer doble clic en la entrada de cualquier mensaje de error para abrir el archivo donde se produce el problema y desplazarse a la ubicación del error.
 
--   Filtrar las entradas que se muestran y las columnas de información que aparecen para cada entrada.
+- Filtrar las entradas que se muestran y las columnas de información que aparecen para cada entrada.
 
--   Buscar términos específicos y delimitar la búsqueda solo al proyecto o documento actual.
+- Buscar términos específicos y delimitar la búsqueda solo al proyecto o documento actual.
 
 Para mostrar la **Lista de errores**, elija **Ver** > **Lista de errores** o bien presione **Ctrl**+**\\**+**E**.
 
@@ -53,14 +53,14 @@ Hay dos tipos de filtro en dos listas desplegables, una en el lado derecho de la
 
 Puede limitar el ámbito de búsqueda para analizar y actuar en grupos de errores. Por ejemplo, puede que desee centrarse en los errores más importantes que están impidiendo que un proyecto se compile. Entre las opciones para delimitar el ámbito se incluyen las siguientes:
 
-1.  **Documentos abiertos**: Muestra los errores, las advertencias y los mensajes de los documentos abiertos.
+1. **Documentos abiertos**: Muestra los errores, las advertencias y los mensajes de los documentos abiertos.
 
-2.  **Proyecto actual**: Muestra los errores, las advertencias y los mensajes del proyecto del documento seleccionado actualmente en el **Editor** o del proyecto seleccionado en **Explorador de soluciones**.
+2. **Proyecto actual**: Muestra los errores, las advertencias y los mensajes del proyecto del documento seleccionado actualmente en el **Editor** o del proyecto seleccionado en **Explorador de soluciones**.
 
     > [!NOTE]
     > La lista filtrada de errores, advertencias y mensajes cambia si el proyecto del documento seleccionado actualmente es diferente al proyecto seleccionado en el **Explorador de soluciones**.
 
-3.  **Documento actual**: Muestra los errores, las advertencias y los mensajes del documento seleccionado actualmente en **Editor** o **Explorador de soluciones**.
+3. **Documento actual**: Muestra los errores, las advertencias y los mensajes del documento seleccionado actualmente en **Editor** o **Explorador de soluciones**.
 
 Si se aplica un filtro actualmente al resultado de la búsqueda, el nombre del filtro aparece en la barra de título de **Lista de errores**. Los botones **Errores**, **Advertencias** y **Mensajes** muestran el número de elementos filtrados mostrados junto con el número total de elementos. Por ejemplo, los botones muestran "x de y errores". Si no se aplica ningún filtro, en la barra de título solo aparece "Lista de errores".
 

@@ -1,5 +1,5 @@
 ---
-title: Descripción de los valores de datos de asignación de memoria y duración de objetos | Microsoft Docs
+title: Descripción de los valores de datos de asignación de memoria y duración de objetos
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9fc9dd62c3d264d3b502845cb4d0f3e9c2a8fa78
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: b652ac052b26054c85955a144d4414d4fe43c005
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56615148"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66263816"
 ---
 # <a name="understand-memory-allocation-and-object-lifetime-data-values"></a>Descripción de los valores de datos de asignación de memoria y duración de objetos
 

@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - Properties window, buttons
 ms.assetid: bdd2e3a7-ae6e-4e88-be1a-e0e3b7ddbbcc
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e7726fe13c90c3a2732b7a6131ae4093a9051a62
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 2040dd9294b19db7fc2806222b13e12e6abdf4ad
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56625652"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66347898"
 ---
 # <a name="properties-window-buttons"></a>Botones de la ventana Propiedades
 Según el lenguaje de desarrollo y el tipo de producto, ciertos botones se muestran de forma predeterminada en la barra de herramientas para el **propiedades** ventana. En todos los casos, el **por categorías**, **Alphabetized**, **propiedades**, y **páginas de propiedades** se muestran los botones. En Visual C# y Visual Basic, el **eventos** también se muestra el botón. En determinados proyectos de Visual C++, el **mensajes de VC ++** y **VC invalida** se muestran los botones. Para otros tipos de proyecto se pueden mostrar botones adicionales. Para obtener más información acerca de los botones en la **propiedades** ventana, consulte [ventana propiedades](../../ide/reference/properties-window.md).
@@ -34,7 +34,7 @@ Según el lenguaje de desarrollo y el tipo de producto, ciertos botones se muest
  El **páginas de propiedades** botón no está disponible si `ISpecifyPropertyPages` no está implementada para el objeto seleccionado. Propiedades dependientes de la configuración de presentación asociados típicamente con soluciones y proyectos de páginas de propiedades, pero se también pueden ser asociados a elementos de proyecto (por ejemplo, en Visual C++).
 
 > [!NOTE]
->  No se puede agregar botones de barra de herramientas a la **propiedades** ventana mediante el uso de código no administrado. Para agregar un botón de barra de herramientas, debe crear un objeto administrado que se deriva de <xref:System.Windows.Forms.Design.PropertyTab>.
+> No se puede agregar botones de barra de herramientas a la **propiedades** ventana mediante el uso de código no administrado. Para agregar un botón de barra de herramientas, debe crear un objeto administrado que se deriva de <xref:System.Windows.Forms.Design.PropertyTab>.
 
 ## <a name="see-also"></a>Vea también
 - [Extensión de propiedades](../../extensibility/internals/extending-properties.md)

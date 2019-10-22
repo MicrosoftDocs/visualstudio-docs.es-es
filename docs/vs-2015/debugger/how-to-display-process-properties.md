@@ -1,5 +1,5 @@
 ---
-title: Filtrar Mostrar las propiedades de proceso | Documentos de Microsoft
+title: Procedimiento Mostrar las propiedades de proceso | Documentos de Microsoft
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -12,13 +12,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 59cdf89d1427aa8a080ed119831d7775ca750111
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58996328"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62575863"
 ---
-# <a name="how-to-display-process-properties"></a>Filtrar Presentación de las propiedades de los procesos
+# <a name="how-to-display-process-properties"></a>Procedimiento Presentación de las propiedades de los procesos
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Para obtener más información acerca de un proceso que se muestran en [vista procesos](../debugger/processes-view.md), utilice el [cuadro de diálogo de propiedades de proceso](../debugger/process-properties-dialog-box.md).  

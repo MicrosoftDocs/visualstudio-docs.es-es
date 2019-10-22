@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - THREADSTATE enumeration
 ms.assetid: 62efdd7c-25b1-4fd3-9d06-ac1830a418a9
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 96eb95d39c60952c48e62c0e2e61edefeaa59783
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 50f487b3d44fc1b871b00348ec28693b36c49685
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56694379"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66316139"
 ---
 # <a name="threadstate"></a>THREADSTATE
 Especifica el estado del subproceso.
@@ -45,16 +48,21 @@ public enum enum_THREADSTATE { 
 };
 ```
 
-## <a name="members"></a>Miembros
- THREADSTATE_RUNNING indica que se está ejecutando el subproceso.
+## <a name="fields"></a>Campos
+ `THREADSTATE_RUNNING`\
+ Indica que se está ejecutando el subproceso.
 
- THREADSTATE_STOPPED indica que el subproceso se ha detenido debido a un punto de interrupción.
+ `THREADSTATE_STOPPED`\
+ Indica que el subproceso se ha detenido debido a un punto de interrupción.
 
- THREADSTATE_FRESH indica que el subproceso se ha creado pero todavía no ejecuta código.
+ `THREADSTATE_FRESH`\
+ Indica que el subproceso se ha creado pero todavía no ejecuta código.
 
- THREADSTATE_DEAD indica que el subproceso está inactivo.
+ `THREADSTATE_DEAD`\
+ Indica que el subproceso está inactivo.
 
- THREADSTATE_FROZEN indica que el subproceso está inmovilizado (no se puede realizar ninguna ejecución).
+ `THREADSTATE_FROZEN`\
+ Indica que el subproceso está inmovilizado (no se puede realizar ninguna ejecución).
 
 ## <a name="remarks"></a>Comentarios
  Utilizado para la `dwThreadState` campo de la [THREADPROPERTIES](../../../extensibility/debugger/reference/threadproperties.md) estructura.

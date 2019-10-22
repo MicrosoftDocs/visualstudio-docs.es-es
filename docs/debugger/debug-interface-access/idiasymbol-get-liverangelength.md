@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e9f1c8caa9e658cfca4e4b2ede8a38b57fcf8713
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.openlocfilehash: 2c85288902d1a8c75b067bec0c77242e9a246561
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56624625"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "64808249"
 ---
 # <a name="idiasymbolgetliverangelength"></a>IDiaSymbol::get_liveRangeLength
 Devuelve la longitud del intervalo de direcciones en el que el símbolo local es válido.
@@ -39,7 +39,7 @@ HRESULT get_liveRangeLength ( 
  Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.
 
 > [!NOTE]
->  Un código de error devuelto significa que el símbolo no tiene información de rango en vivo.
+> Un código de error devuelto significa que el símbolo no tiene información de rango en vivo.
 
 ## <a name="remarks"></a>Comentarios
 

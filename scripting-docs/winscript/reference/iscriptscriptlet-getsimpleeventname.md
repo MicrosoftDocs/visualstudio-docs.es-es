@@ -1,5 +1,5 @@
 ---
-title: 'IScriptScriptlet:: GetSimpleEventName | Microsoft Docs'
+title: 'Iscriptscriptlet (:: GetSimpleEventName | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 6
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e767c260dcdda2d92a7d90f7fd12af6918ac16d4
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 51b8d3b31c92006c4f5b91a874bbb9d66ffa0b1b
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58155633"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72561498"
 ---
 # <a name="iscriptscriptlet-getsimpleeventname"></a>IScriptScriptlet:: GetSimpleEventName
-Devuelve el nombre de evento simple que está asociado con el scriptlet. Se trata de un nombre de una palabra que no contenga ningún espacio en blanco.  
+Devuelve el nombre de evento simple que está asociado a un Scriptlet. Se trata de un nombre de una sola palabra que no contiene ningún espacio en blanco.  
   
 ## <a name="syntax"></a>Sintaxis  
   
@@ -37,10 +37,10 @@ HRESULT GetSimpleEventName(
   
 #### <a name="parameters"></a>Parámetros  
  `pbstr`  
- [out] Un búfer que contiene el nombre de evento simple que está asociado el `IScriptScriptlet` objeto.  
+ enuncia Búfer que contiene el nombre de evento simple que está asociado al objeto de `IScriptScriptlet`.  
   
 ## <a name="return-value"></a>Valor devuelto  
- Una clase `HRESULT`. Entre los valores posibles se incluyen los que se indican en la tabla siguiente, entre otros.  
+ Interfaz `HRESULT`. Entre los valores posibles se incluyen los que se indican en la tabla siguiente, entre otros.  
   
 |Valor|Descripción|  
 |-----------|-----------------|  

@@ -1,5 +1,5 @@
 ---
-title: Depurar flujos de trabajo con el Diseñador de flujo de trabajo | Documentos de Microsoft
+title: Depurar flujos de trabajo con el Diseñador de flujo de trabajo | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-workflow-designer
@@ -9,24 +9,24 @@ helpviewer_keywords:
 - Workflow Designer [WFD], debugging workflows
 ms.assetid: d71308cf-d464-4536-8711-0d0a8eadb255
 caps.latest.revision: 10
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 0135d9f782976f1d6ad6e2e09dc95c27cc66d846
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: b2b5dcbc69853007eebec65142f522f8a942abd1
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58997064"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72656834"
 ---
 # <a name="debugging-workflows-with-the-workflow-designer"></a>Depurar flujos de trabajo con el Diseñador de flujo de trabajo
-[!INCLUDE[wfd1](../includes/wfd1-md.md)] proporciona la capacidad de depurar flujos de trabajo y personalizar actividades. El proceso y comportamiento son similares a los del depurador [!INCLUDE[vs2010](../includes/vs2010-md.md)] predeterminado. Los temas en esta sección describen cómo efectuar procedimientos de depuración tradicionales así como depurar código XAML y expresiones.  
-  
-## <a name="in-this-section"></a>En esta sección  
- [Cómo: Invocar al depurador de flujo de trabajo](../workflow-designer/how-to-invoke-the-workflow-debugger.md)  
-  
- [Cómo: Establecer puntos de interrupción en los flujos de trabajo](../workflow-designer/how-to-set-breakpoints-in-workflows.md)  
-  
- [Cómo: Depurar XAML con el Diseñador de flujo de trabajo](../workflow-designer/how-to-debug-xaml-with-the-workflow-designer.md)  
-  
+[!INCLUDE[wfd1](../includes/wfd1-md.md)] proporciona la capacidad de depurar flujos de trabajo y personalizar actividades. El proceso y comportamiento son similares a los del depurador [!INCLUDE[vs2010](../includes/vs2010-md.md)] predeterminado. Los temas en esta sección describen cómo efectuar procedimientos de depuración tradicionales así como depurar código XAML y expresiones.
+
+## <a name="in-this-section"></a>En esta sección
+ [Cómo: Invocar el depurador de flujo de trabajo](../workflow-designer/how-to-invoke-the-workflow-debugger.md)
+
+ [Cómo: Establecer puntos de interrupción en los flujos de trabajo](../workflow-designer/how-to-set-breakpoints-in-workflows.md)
+
+ [Cómo: Depurar XAML con el Diseñador de flujo de trabajo](../workflow-designer/how-to-debug-xaml-with-the-workflow-designer.md)
+
  [Escenarios de depuración no admitidos en el Diseñador de flujo de trabajo](../workflow-designer/unsupported-debugging-scenarios-in-the-workflow-designer.md)

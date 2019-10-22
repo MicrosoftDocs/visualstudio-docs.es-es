@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugArrayField::GetNumberOfElements method
 ms.assetid: a1961ef3-d69d-4022-b8c9-b9cfb9811345
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 86cd2b227926db38c5bd50fa0457688a023bc7e3
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 7e8576c7f7365f8f87f8b31a90e414b75000026d
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56704116"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66321735"
 ---
 # <a name="idebugarrayfieldgetnumberofelements"></a>IDebugArrayField::GetNumberOfElements
 Obtiene el número de elementos de la matriz.
@@ -36,10 +39,9 @@ int GetNumberOfElements(
 );
 ```
 
-#### <a name="parameters"></a>Parámetros
- `pdwNumElements`
-
- [out] Devuelve el número de elementos de la matriz.
+## <a name="parameters"></a>Parámetros
+`pdwNumElements`\
+[out] Devuelve el número de elementos de la matriz.
 
 ## <a name="return-value"></a>Valor devuelto
  Si se realiza correctamente, devuelve S_OK; en caso contrario, devuelve un código de error.

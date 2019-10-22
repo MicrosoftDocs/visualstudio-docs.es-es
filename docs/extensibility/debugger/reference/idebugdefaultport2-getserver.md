@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugDefaultPort2::GetServer
 ms.assetid: cacb4b74-0f39-471c-af38-54b73f5b2868
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2cbfc81495c1f2319117a236246f1e7c47f3e582
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 4c959c84335023a3d187808d754b44b4a0d2b950
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56678651"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66351744"
 ---
 # <a name="idebugdefaultport2getserver"></a>IDebugDefaultPort2::GetServer
 Este método obtiene una interfaz para el servidor que en este puerto.
@@ -36,10 +39,9 @@ int GetServer(
 );
 ```
 
-#### <a name="parameters"></a>Parámetros
- `ppServer`
-
- [out] Devuelve un objeto que implementa el [IDebugCoreServer3](../../../extensibility/debugger/reference/idebugcoreserver3.md) interfaz.
+## <a name="parameters"></a>Parámetros
+`ppServer`\
+[out] Devuelve un objeto que implementa el [IDebugCoreServer3](../../../extensibility/debugger/reference/idebugcoreserver3.md) interfaz.
 
 ## <a name="return-value"></a>Valor devuelto
  Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.

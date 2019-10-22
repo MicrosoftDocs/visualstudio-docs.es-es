@@ -10,12 +10,12 @@ ms.assetid: ac480fb7-f4f7-47dc-9ae5-98be3aca4fba
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 6c3ebadd34988c83dbb688d3864ab88280d7a077
-ms.sourcegitcommit: 1c8e07b98fc0a44b5ab90bcef77d9fac7b3eb452
+ms.openlocfilehash: cce1da2d3cb20ca7f577c806d0506ffc0b947903
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/25/2019
-ms.locfileid: "56796457"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68918273"
 ---
 # <a name="configure-test-iterations-in-a-load-test-scenario"></a>Configurar iteraciones de prueba en un escenario de prueba de carga
 
@@ -32,18 +32,18 @@ La propiedad **Iteraciones de pruebas máximas** controla el número máximo de 
 > [!NOTE]
 > Para obtener una lista completa de las propiedades de los escenarios de pruebas de carga y sus descripciones, consulte [Propiedades de los escenarios de prueba de carga](../test/load-test-scenario-properties.md).
 
- Para la combinación de pruebas secuencial, una iteración es un paso a través de todas las pruebas de la combinación. Para todas las demás combinaciones de pruebas, cada ejecución de pruebas se considera una iteración. Para más información, consulte [Control de combinaciones](../test/edit-the-test-mix-to-specify-which-web-browsers-types-in-a-load-test-scenario.md).
+Para la combinación de pruebas secuencial, una iteración es un paso a través de todas las pruebas de la combinación. Para todas las demás combinaciones de pruebas, cada ejecución de pruebas se considera una iteración. Para más información, consulte [Control de combinaciones](../test/edit-the-test-mix-to-specify-which-web-browsers-types-in-a-load-test-scenario.md).
 
- Si la prueba de carga es una prueba de carga basada en la duración y la duración expira antes de que el número de iteraciones se haya completado, la prueba se seguirá deteniendo. Si la prueba está basada en la iteración, y las iteraciones de pruebas finalizan antes de las iteraciones del escenario, la prueba se detendrá. La duración se configura mediante la propiedad **Duración de la ejecución** de la ventana **Propiedades** asociada a un parámetro de ejecución en una prueba de carga.
+Si la prueba de carga es una prueba de carga basada en la duración y la duración expira antes de que el número de iteraciones se haya completado, la prueba se seguirá deteniendo. Si la prueba está basada en la iteración, y las iteraciones de pruebas finalizan antes de las iteraciones del escenario, la prueba se detendrá. La duración se configura mediante la propiedad **Duración de la ejecución** de la ventana **Propiedades** asociada a un parámetro de ejecución en una prueba de carga.
 
- Cuando se consiga el número de iteraciones del escenario, el escenario dejará de ejecutarse, pero cualquier otro escenario activo lo seguirá haciendo.
+Cuando se consiga el número de iteraciones del escenario, el escenario dejará de ejecutarse, pero cualquier otro escenario activo lo seguirá haciendo.
 
 > [!NOTE]
 > Una propiedad relacionada es la propiedad **Único** de un origen de datos de prueba web, que se mueve secuencialmente a través de los datos, fila a fila, pero una sola vez para cada registro. Para obtener más información, consulte [Agregar un origen de datos a una prueba de rendimiento web](../test/add-a-data-source-to-a-web-performance-test.md).
 
- La propiedad **Iteraciones de pruebas máximas** es útil en varias situaciones. Algunos evaluadores de carga prefieren realizar las pruebas basadas en iteración, mientras que otros las prefieren basadas en la duración.
+La propiedad **Iteraciones de pruebas máximas** es útil en varias situaciones. Algunos evaluadores de carga prefieren realizar las pruebas basadas en iteración, mientras que otros las prefieren basadas en la duración.
 
- ![Especificar iteraciones de prueba en un escenario](../test/media/loadtest_prop.png)
+![Especificar iteraciones de prueba en un escenario](../test/media/loadtest_prop.png)
 
 ### <a name="to-specify-the-maximum-test-iterations"></a>Para especificar el número máximo de iteraciones de prueba
 

@@ -12,11 +12,11 @@ caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 75d96098e8444aac9a4fc6f895099435b54f640b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58996080"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68180329"
 ---
 # <a name="keybinding-element"></a>KeyBinding (Elemento)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,12 +36,12 @@ El elemento de enlace de teclado especifica métodos abreviados de teclado para 
   
 ### <a name="attributes"></a>Atributos  
   
-|Atributo|Descripción|  
+|Atributo|DESCRIPCIÓN|  
 |---------------|-----------------|  
-|guid|Obligatorio.|  
-|id|Obligatorio.|  
-|editor|Obligatorio. El GUID de editor indica el contexto de edición para el que este método abreviado de teclado estará activa. El valor de ámbito de enlace global es "guidVSStd97".|  
-|key1|Obligatorio. Los valores válidos incluyen todos los caracteres alfanuméricos clasificable por tipo y también los valores hexadecimales de dos dígitos precedidos por 0 x y VK_constants.|  
+|GUID|Necesario.|  
+|id|Necesario.|  
+|editor|Necesario. El GUID de editor indica el contexto de edición para el que este método abreviado de teclado estará activa. El valor de ámbito de enlace global es "guidVSStd97".|  
+|key1|Necesario. Los valores válidos incluyen todos los caracteres alfanuméricos clasificable por tipo y también los valores hexadecimales de dos dígitos precedidos por 0 x y VK_constants.|  
 |MOD1|Opcional. Cualquier combinación de CTRL, ALT y MAYÚS separados por espacios.|  
 |key2|Opcional. Los valores válidos incluyen todos los caracteres alfanuméricos clasificable por tipo y también los valores hexadecimales de dos dígitos precedidos por 0 x y VK_constants.|  
 |MOD2|Opcional. Cualquier combinación de CTRL, ALT y MAYÚS separados por espacios.|  
@@ -50,14 +50,14 @@ El elemento de enlace de teclado especifica métodos abreviados de teclado para 
   
 ### <a name="child-elements"></a>Elementos secundarios  
   
-|Elemento|Descripción|  
+|Elemento|DESCRIPCIÓN|  
 |-------------|-----------------|  
 |Primario||  
 |Anotación||  
   
 ### <a name="parent-elements"></a>Elementos primarios  
   
-|Elemento|Descripción|  
+|Elemento|DESCRIPCIÓN|  
 |-------------|-----------------|  
 |[KeyBindings (Elemento)](../extensibility/keybindings-element.md)|Agrupa los elementos de enlace de teclado y otras agrupaciones de los enlaces de teclado.|  
   

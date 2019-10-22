@@ -12,12 +12,12 @@ ms.assetid: 2333b33b-042b-4ac6-9ebe-e66f95f52f51
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 761c94673a5f5cec55ce0174561946f1d5302cb4
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 9ad200d75c5534ddbe9d4ad4d9835417df6515f1
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58998687"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63429096"
 ---
 # <a name="textdocattr2"></a>TEXT_DOC_ATTR_2
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -42,7 +42,7 @@ public const uint TEXT_DOC_ATTR_READONLY_2 = 0x00000001;
 ## <a name="remarks"></a>Comentarios  
   
 > [!NOTE]
->  Este valor no está definido realmente en el ensamblado de C#. En su lugar, debe copiar la definición en el archivo de origen.  
+> Este valor no está definido realmente en el ensamblado de C#. En su lugar, debe copiar la definición en el archivo de origen.  
   
  Se pasa como argumento a la [onUpdateDocumentAttributes](../../../extensibility/debugger/reference/idebugdocumenttextevents2-onupdatedocumentattributes.md) método.  
   

@@ -12,11 +12,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 5dc0b4195d33a7bf72d17681b6d71e78f1bacfe5
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54784591"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68157776"
 ---
 # <a name="summary-view---instrumentation-data"></a>Vista Resumen: datos de instrumentación
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,7 +31,7 @@ La vista Resumen muestra información acerca de las funciones más exigentes en 
   
  La **Ruta de acceso activa** incluye los siguientes datos para cada función:  
   
-|Columna|Descripción|  
+|Columna|DESCRIPCIÓN|  
 |------------|-----------------|  
 |**Name**|Nombre de la función.|  
 |**Porcentaje de tiempo inclusivo transcurrido**|El porcentaje del tiempo total de los datos de generación de perfiles que la función dedicó a ejecutar código en el cuerpo de la función y en funciones a las que llamó.|  
@@ -42,11 +42,11 @@ La vista Resumen muestra información acerca de las funciones más exigentes en 
   
  **Funciones que realizan la mayor parte de trabajo individual** incluye los siguientes datos para cada función:  
   
-|Columna|Descripción|  
+|Columna|DESCRIPCIÓN|  
 |------------|-----------------|  
 |**Name**|Nombre de la función.|  
 |**Porcentaje de tiempo exclusivo**|El porcentaje del tiempo total de los datos de generación de perfiles que la función dedicó a ejecutar código en el cuerpo de la función. No se incluye el tiempo dedicado a funciones a las que llamó la función.|  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Otras referencias  
  [Vista Resumen](../profiling/summary-view-sampling-data.md)   
  [Vista Resumen](../profiling/summary-view-dotnet-memory-data.md)

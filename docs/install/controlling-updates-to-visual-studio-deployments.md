@@ -15,12 +15,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: a58ee5350467ae2b2eea74b4f929fac69b75c071
-ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
+ms.openlocfilehash: d4ce4621fc2fa32f2730c0ce6cdd0618a44386b2
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "58856293"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62974205"
 ---
 # <a name="control-updates-to-network-based-visual-studio-deployments"></a>Control de actualizaciones a implementaciones de Visual Studio basadas en red
 
@@ -33,13 +33,17 @@ De manera predeterminada, Visual Studio continúa buscando actualizaciones en l�
 Si quiere control directo sobre el lugar donde Visual Studio busca actualizaciones, puede modificar la ubicación de búsqueda. También puede controlar la versión a la que se actualizan los usuarios. Para ello, siga estos pasos:
 
 1. Cree un diseño sin conexión:
+
    ```cmd
    vs_enterprise.exe --layout C:\vsoffline --lang en-US
    ```
+
 2. Cópielo en el recurso compartido de archivos donde desea hospedarlo:
+
    ```cmd
    xcopy /e C:\vsoffline \\server\share\VS
    ```
+
 3. Modifique el archivo response.json en el diseño y cambiar el valor `channelUri` para que apunte a una copia del archivo channelManifest.json que controla el administrador.
 
    Asegúrese de usar caracteres de escape de barra diagonal en el valor, como en el ejemplo siguiente:
@@ -49,6 +53,7 @@ Si quiere control directo sobre el lugar donde Visual Studio busca actualizacion
    ```
 
    Ahora los usuarios finales pueden ejecutar la instalación de Visual Studio desde este recurso compartido.
+
    ```cmd
    \\server\share\VS\vs_enterprise.exe
    ```
@@ -56,13 +61,17 @@ Si quiere control directo sobre el lugar donde Visual Studio busca actualizacion
 Cuando un administrador de empresa determina que es hora de que sus usuarios actualicen a una nueva versión de Visual Studio, pueden [actualizar la ubicación del diseño](update-a-network-installation-of-visual-studio.md) para incorporar los archivos actualizados, de la manera siguiente.
 
 1. Use un comando que sea similar al siguiente:
+
    ```cmd
    vs_enterprise.exe --layout \\server\share\VS --lang en-US
    ```
+
 2. Asegúrese de que el archivo response.json en el diseño actualizado todavía contenga sus personalizaciones, en concreto la modificación de channelUri, de la manera siguiente:
+
    ```json
    "channelUri":"\\\\server\\share\\VS\\ChannelManifest.json"
    ```
+
    Las instalaciones existentes de Visual Studio de este diseño buscan actualizaciones en `\\server\share\VS\ChannelManifest.json`. Si el archivo channelManifest.json es más reciente que el que ha instalado el usuario, Visual Studio notifica al usuario que hay una actualización disponible.
 
    Las nuevas instalaciones instalan automáticamente la versión actualizada de Visual Studio directamente desde el diseño.
@@ -94,6 +103,7 @@ Dado que Visual Studio 2017 [almacena las entradas del Registro en un registro p
 ```cmd
 vsregedit.exe set "C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise" HKCU ExtensionManager AutomaticallyCheckForUpdates2Override dword 0
 ```
+
 ::: moniker-end
 
 ::: moniker range="vs-2019"
@@ -118,4 +128,5 @@ Asegúrese de reemplazar el directorio para que coincida con la instancia instal
 * [Instalar Visual Studio](install-visual-studio.md)
 * [Guía del administrador de Visual Studio](visual-studio-administrator-guide.md)
 * [Usar parámetros de la línea de comandos para instalar Visual Studio](use-command-line-parameters-to-install-visual-studio.md)
-* [Herramientas para administrar instancias de Visual Studio](tools-for-managing-visual-studio-instances.md)
+* [Herramientas para administrar instancias de Visual Studio](tools-for-managing-visual-studio-instances.md)
+* [Ciclo de vida y mantenimiento del producto de Visual Studio](/visualstudio/releases/2019/servicing/)

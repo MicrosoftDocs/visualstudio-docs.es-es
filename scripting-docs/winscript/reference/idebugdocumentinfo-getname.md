@@ -1,5 +1,5 @@
 ---
-title: IDebugDocumentInfo::GetName | Microsoft Docs
+title: 'Idebugdocumentinfo (:: GetName | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 9975563c27b986190fbd2731c3f36b1e32719c0b
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: bc098da29367a322bd93b4f60ba0e090aee9ee91
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58160331"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72570959"
 ---
 # <a name="idebugdocumentinfogetname"></a>IDebugDocumentInfo::GetName
-Devuelve el nombre del documento especificado.  
+Devuelve el nombre de documento especificado.  
   
 ## <a name="syntax"></a>Sintaxis  
   
@@ -38,10 +38,10 @@ HRESULT GetName(
   
 #### <a name="parameters"></a>Parámetros  
  `dnt`  
- [in] El tipo de nombre del documento para devolver.  
+ de El tipo de nombre de documento que se va a devolver.  
   
  `pbstrName`  
- [out] Cadena que contiene el nombre.  
+ enuncia Cadena que contiene el nombre.  
   
 ## <a name="return-value"></a>Valor devuelto  
  El método devuelve un objeto `HRESULT`. Entre los valores posibles se incluyen los que se indican en la tabla siguiente, entre otros.  
@@ -49,11 +49,11 @@ HRESULT GetName(
 |Valor|Descripción|  
 |-----------|-----------------|  
 |`S_OK`|El método se realizó correctamente.|  
-|`E_FAIL`|No se conoce el nombre del documento especificado.|  
+|`E_FAIL`|No se conoce el nombre de documento especificado.|  
   
 ## <a name="remarks"></a>Comentarios  
- Este método devuelve el nombre del documento especificado.  
+ Este método devuelve el nombre de documento especificado.  
   
 ## <a name="see-also"></a>Vea también  
- [IDebugDocumentInfo (interfaz)](../../winscript/reference/idebugdocumentinfo-interface.md)   
+ @No__t_1 de la [interfaz idebugdocumentinfo (](../../winscript/reference/idebugdocumentinfo-interface.md)  
  [DOCUMENTNAMETYPE (Enumeración)](../../winscript/reference/documentnametype-enumeration.md)

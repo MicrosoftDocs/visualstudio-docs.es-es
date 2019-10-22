@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugBinder3::GetAllAliases method
 ms.assetid: 1f9ab2ee-2ab3-4a61-8b99-95dd7fdf3511
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ed8545431dc0cb643ba18d415285447f8a66f66e
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 51f45c64c0e1927e23052de08367c9699fda4cb9
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56679936"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66327176"
 ---
 # <a name="idebugbinder3getallaliases"></a>IDebugBinder3::GetAllAliases
 Este método recupera una lista de alias del programa.
@@ -40,18 +43,15 @@ int GetAllAliases(
 );
 ```
 
-#### <a name="parameters"></a>Parámetros
- `uRequest`
+## <a name="parameters"></a>Parámetros
+`uRequest`\
+[in] El número máximo de alias para devolver (especifica la longitud de la matriz pasada en `ppAliases`).
 
- [in] El número máximo de alias para devolver (especifica la longitud de la matriz pasada en `ppAliases`).
+`ppAliases`\
+[in, out] Matriz que se rellena con los alias (si se trata de un valor null y `uRequest` es 0, se devolverá el recuento de los alias que pueden devolverse mediante `puFetched`).
 
- `ppAliases`
-
- [in, out] Matriz que se rellena con los alias (si se trata de un valor null y `uRequest` es 0, se devolverá el recuento de los alias que pueden devolverse mediante `puFetched`).
-
- `puFetched`
-
- [out] Devuelve el número de alias obtenido.
+`puFetched`\
+[out] Devuelve el número de alias obtenido.
 
 ## <a name="return-value"></a>Valor devuelto
  Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.

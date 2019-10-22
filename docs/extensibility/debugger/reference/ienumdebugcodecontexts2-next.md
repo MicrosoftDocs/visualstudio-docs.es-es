@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IEnumDebugCodeContexts2::Next
 ms.assetid: 0d8aa2db-0994-4166-b364-2e25d936fffc
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b65a148ece1bf93cf9924293695616713238462c
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 97083976a435605c32069051337c7fca4dca59e8
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56696186"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66351062"
 ---
 # <a name="ienumdebugcodecontexts2next"></a>IEnumDebugCodeContexts2::Next
 Devuelve el siguiente conjunto de elementos de la enumeración.
@@ -40,18 +43,15 @@ int Next(
 );
 ```
 
-#### <a name="parameters"></a>Parámetros
- `celt`
+## <a name="parameters"></a>Parámetros
+`celt`\
+[in] El número de elementos que se va a recuperar. También especifica el tamaño máximo de la `rgelt` matriz.
 
- [in] El número de elementos que se va a recuperar. También especifica el tamaño máximo de la `rgelt` matriz.
+`rgelt`\
+[in, out] Matriz de [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md) elementos que deben rellenarse.
 
- `rgelt`
-
- [in, out] Matriz de [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md) elementos que deben rellenarse.
-
- `pceltFetched`
-
- [out] Devuelve el número de elementos realmente devueltos en `rgelt`.
+`pceltFetched`\
+[out] Devuelve el número de elementos realmente devueltos en `rgelt`.
 
 ## <a name="return-value"></a>Valor devuelto
  Si la operación se realiza correctamente, devuelve `S_OK`. Devuelve `S_FALSE` si podrían devolverse un menor que el número solicitado de elementos; de lo contrario, devuelve un código de error.

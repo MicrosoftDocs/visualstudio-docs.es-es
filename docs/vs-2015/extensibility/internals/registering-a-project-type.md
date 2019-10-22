@@ -12,12 +12,12 @@ ms.assetid: dfc0e231-6b4e-447d-9d64-0e66dea3394a
 caps.latest.revision: 22
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 9f56de9b3ce3f1faf5a63fa6b8fd8574a57b82f3
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 63e0140b752adda02aba6126580ec08ee1f7536a
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58995551"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436634"
 ---
 # <a name="registering-a-project-type"></a>Registro de un tipo de proyecto
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -27,7 +27,7 @@ Cuando se crea un nuevo tipo de proyecto, debe crear las entradas del registro q
  En el ejemplo siguiente, las instrucciones del registro proporcionan rutas de acceso predeterminadas y datos en su caso, seguido de una tabla que contiene las entradas de la secuencia de comandos del registro para cada instrucción. Las tablas proporcionan las entradas de secuencia de comandos y obtener información adicional acerca de las instrucciones.  
   
 > [!NOTE]
->  La siguiente información del registro debe ser un ejemplo del tipo y con fines de las entradas de las secuencias de comandos del registro que va a escribir para registrar el tipo de proyecto. Las entradas reales y sus usos pueden variar en función de los requisitos específicos del tipo de proyecto. Debe revisar los ejemplos disponibles para encontrar uno que refleje el tipo de proyecto que está desarrollando y, a continuación, revise el script del registro para ese ejemplo.  
+> La siguiente información del registro debe ser un ejemplo del tipo y con fines de las entradas de las secuencias de comandos del registro que va a escribir para registrar el tipo de proyecto. Las entradas reales y sus usos pueden variar en función de los requisitos específicos del tipo de proyecto. Debe revisar los ejemplos disponibles para encontrar uno que refleje el tipo de proyecto que está desarrollando y, a continuación, revise el script del registro para ese ejemplo.  
   
  Los ejemplos siguientes son de HKEY_CLASSES_ROOT.  
   

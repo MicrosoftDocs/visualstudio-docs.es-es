@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 06ef9eb5969b351d49212e9b940988e7ff14c40e
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.openlocfilehash: 0312571b0a96b080949398618888b05c2704d3ca
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56636182"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "64808943"
 ---
 # <a name="idiasymbolgetliverangestartaddressoffset"></a>IDiaSymbol::get_liveRangeStartAddressOffset
 Devuelve la parte del ajuste de la dirección inicial del intervalo en el que el símbolo local es válido.
@@ -39,7 +39,7 @@ HRESULT get_liveRangeStartAddressOffset ( 
  Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.
 
 > [!NOTE]
->  Un código de error devuelto significa que el símbolo no tiene información de rango en vivo.
+> Un código de error devuelto significa que el símbolo no tiene información de rango en vivo.
 
 ## <a name="remarks"></a>Comentarios
  La dirección formada por la sección y el desplazamiento es el principio del intervalo en el que el símbolo es válido.

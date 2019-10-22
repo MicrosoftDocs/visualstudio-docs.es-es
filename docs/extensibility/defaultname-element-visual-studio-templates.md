@@ -8,17 +8,17 @@ f1_keywords:
 helpviewer_keywords:
 - DefaultName element [Visual Studio project templates]
 ms.assetid: 0ff056c8-b9d2-4747-9308-92adf1811491
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: bc859155afcde0b72b8898b2ea37c098f7458e53
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 1dbb720bf04c36b2d9f018be5418a25088e259f4
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56717460"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66348156"
 ---
 # <a name="defaultname-element-visual-studio-templates"></a>DefaultName (elemento) (plantillas de Visual Studio)
 Especifica el nombre que el sistema del proyecto de Visual Studio generará para el proyecto o elemento cuando se crea.

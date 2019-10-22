@@ -18,13 +18,13 @@ manager: jillfra
 ms.workload:
 - dotnet
 ms.openlocfilehash: 711a8c1e8353f6e57f7101549a3b5421a33e0ae4
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56679312"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62846291"
 ---
-# <a name="managed-debugging-recommended-property-settings"></a>Depuración administrada: valores de propiedad recomendados
+# <a name="managed-debugging-recommended-property-settings"></a>Depuración administrada: Valores de propiedad recomendados
 Algunas propiedades se deben establecer de la misma manera para todos los escenarios de depuración administrados.
 
  En las siguientes tablas se muestran los valores de propiedades recomendados.
@@ -35,9 +35,9 @@ Algunas propiedades se deben establecer de la misma manera para todos los escena
 
 |**Nombre de la propiedad**|**Configuración**|
 |-----------------------|-----------------|
-|**Definir constante DEBUG**|C# y F#: active la casilla. Esto permite que la aplicación utilice la clase Debug.|
-|**Definir constante TRACE**|C# y F#: active la casilla. Esto permite que la aplicación utilice la clase Trace.|
-|**Optimizar código**|C#, F# y Visual Basic: establezca su valor en false. El código optimizado es más difícil de depurar, puesto que las instrucciones generadas no se corresponden directamente con las instrucciones de código fuente. Si detecta que el programa tiene un error que solo aparece en código optimizado, puede activar esta configuración, pero recuerde que el código que se muestra en la ventana **Desensamblado** se genera a partir de código optimizado que tal vez no coincida con lo que aparece en el Editor de código. Para depurar el código optimizado, debe desactivar Sólo mi código. (Vea [Restringir la ejecución paso a paso a Solo mi código](../debugger/navigating-through-code-with-the-debugger.md#BKMK_Restrict_stepping_to_Just_My_Code)).<br /><br /> Para obtener más información, consulte [configuración del proyecto para configuraciones de depuración de C#](../debugger/project-settings-for-csharp-debug-configurations.md) o [configuración del proyecto para una configuración de depuración de Visual Basic](../debugger/project-settings-for-a-visual-basic-debug-configuration.md).|
+|**Definir constante DEBUG**|C#y F#: Establezca la casilla de verificación. Esto permite que la aplicación utilice la clase Debug.|
+|**Definir constante TRACE**|C#y F#: Establezca la casilla de verificación. Esto permite que la aplicación utilice la clase Trace.|
+|**Optimizar código**|C#, F#y Visual Basic: Se establece en false. El código optimizado es más difícil de depurar, puesto que las instrucciones generadas no se corresponden directamente con las instrucciones de código fuente. Si detecta que el programa tiene un error que solo aparece en código optimizado, puede activar esta configuración, pero recuerde que el código que se muestra en la ventana **Desensamblado** se genera a partir de código optimizado que tal vez no coincida con lo que aparece en el Editor de código. Para depurar el código optimizado, debe desactivar Sólo mi código. (Vea [Restringir la ejecución paso a paso a Solo mi código](../debugger/navigating-through-code-with-the-debugger.md#BKMK_Restrict_stepping_to_Just_My_Code)).<br /><br /> Para obtener más información, consulte [configuración del proyecto para configuraciones de depuración de C#](../debugger/project-settings-for-csharp-debug-configurations.md) o [configuración del proyecto para una configuración de depuración de Visual Basic](../debugger/project-settings-for-a-visual-basic-debug-configuration.md).|
 |**Ruta de acceso de salida**|Establézcalo en bin\Debug\\.|
 |**Opciones de compilación avanzadas**|Solo Visual Basic. Haga clic en **Avanzadas** para establecer las propiedades avanzadas que se describen en la tabla siguiente.|
 

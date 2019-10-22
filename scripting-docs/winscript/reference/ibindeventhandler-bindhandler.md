@@ -1,5 +1,5 @@
 ---
-title: IBindEventHandler::BindHandler | Microsoft Docs
+title: 'Ibindeventhandler (:: BindHandler | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,12 +17,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 01372766eb434efe73f47b265c7984bab48ea164
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 160020832509c9fb2aa95c095148127228a92e17
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58146063"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72572574"
 ---
 # <a name="ibindeventhandlerbindhandler"></a>IBindEventHandler::BindHandler
 Enlaza un evento a un objeto.  
@@ -38,10 +38,10 @@ HRESULT BindHandler(
   
 #### <a name="parameters"></a>Parámetros  
  `pstrEvent`  
- [in] Especifica el evento para controlar.  
+ de Especifica el evento que se va a controlar.  
   
  `pdisp`  
- [in] Especifica el objeto para controlar el evento.  
+ de Especifica el objeto para controlar el evento.  
   
 ## <a name="return-value"></a>Valor devuelto  
  El método devuelve un objeto `HRESULT`. Entre los valores posibles se incluyen los que se indican en la tabla siguiente, entre otros.  

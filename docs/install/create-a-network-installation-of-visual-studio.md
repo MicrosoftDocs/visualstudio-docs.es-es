@@ -1,7 +1,7 @@
 ---
 title: Creación de una instalación basada en red
 description: Obtenga información sobre cómo crear un punto de instalación de red para la implementación de Visual Studio dentro de una empresa.
-ms.date: 03/30/2019
+ms.date: 10/11/2019
 ms.custom: seodec18
 ms.topic: conceptual
 helpviewer_keywords:
@@ -15,16 +15,16 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 5e499e54a7cf1c5c50a625cfe03482202e3a1f3f
-ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
+ms.openlocfilehash: da4da0a106d37b081e0a7c57fe905048f3314174
+ms.sourcegitcommit: e82baa50bf5a65858c410882c2e86a552c2c1921
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "58857430"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72381076"
 ---
 # <a name="create-a-network-installation-of-visual-studio"></a>Creación de una instalación de red de Visual Studio
 
-Normalmente, un administrador de empresa crea un punto de instalación de red para implementar en estaciones de trabajo cliente. Hemos diseñado Visual Studio para permitirle almacenar en caché los archivos de la instalación inicial junto con todas las actualizaciones de producto en una única carpeta. Este proceso también se conoce como la _creación de un diseño_. 
+Normalmente, un administrador de empresa crea un punto de instalación de red para implementar en estaciones de trabajo cliente. Hemos diseñado Visual Studio para permitirle almacenar en caché los archivos de la instalación inicial junto con todas las actualizaciones de producto en una única carpeta. Este proceso también se conoce como la _creación de un diseño_.
 
 Hemos realizado esto para que las estaciones de trabajo de cliente puedan usar la misma ubicación de red para administrar su instalación incluso si todavía no han actualizado a la última actualización del servicio.
 
@@ -33,35 +33,44 @@ Hemos realizado esto para que las estaciones de trabajo de cliente puedan usar l
 
 ## <a name="download-the-visual-studio-bootstrapper"></a>Descarga del programa previo de Visual Studio
 
-Descargue la edición de Visual Studio que desee. Asegúrese de hacer clic en **Guardar** y, a continuación, haga clic en **Abrir carpeta**.
-
-El archivo ejecutable o, para ser más específicos, un archivo de programa previo, debe coincidir con uno de los siguientes.
+Descargue el archivo de programa previo correspondiente a la edición de Visual Studio que quiera. Asegúrese de seleccionar **Guardar** y, después, **Abrir carpeta**.
 
 ::: moniker range="vs-2017"
 
-|Edición | Descargar|
-|-------------|-----------------------|
-|Visual Studio Enterprise | [**vs_enterprise.exe**](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=enterprise&rel=15&utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=network+install&utm_content=download+vs2017) |
-|Visual Studio Professional | [**vs_professional.exe**](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=professional&rel=15&utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=network+install&utm_content=download+vs2017) |
+Para obtener un programa previo de Visual Studio 2017, consulte la página de descarga de [versiones anteriores de Visual Studio](https://visualstudio.microsoft.com/vs/older-downloads/) y obtenga información detallada sobre cómo hacerlo.
 
-Otros programas previos admitidos incluyen [vs_buildtools.exe](https://aka.ms/vs/15/release/vs_buildtools.exe), [vs_feedbackclient.exe](https://aka.ms/vs/15/release/vs_feedbackclient.exe), [vs_teamexplorer.exe](https://aka.ms/vs/15/release/vs_teamexplorer.exe), [vs_testagent.exe](https://aka.ms/vs/15/release/vs_testagent.exe), [vs_testcontroller.exe](https://aka.ms/vs/15/release/vs_testcontroller.exe) y [vs_testprofessional.exe](https://aka.ms/vs/15/release/vs_testprofessional.exe).
+El archivo ejecutable &mdash;o, para ser más específicos, el archivo de programa previo,&mdash; debe coincidir con uno de los siguientes.
+
+| Edición | Filename |
+|-------------|-----------------------|
+|Visual Studio Enterprise | **vs_enterprise.exe** |
+|Visual Studio Professional | **vs_professional.exe** |
+|Visual Studio Build Tools   | **vs_buildtools.exe** |
+
+Otros programas previos admitidos incluyen **vs_feedbackclient.exe**, **vs_teamexplorer.exe**, **vs_testagent.exe**, **vs_testcontroller.exe** y **vs_testprofessional.exe**.
 
 ::: moniker-end
 
 ::: moniker range="vs-2019"
 
+El archivo ejecutable &mdash;o, para ser más específicos, un archivo de programa previo,&mdash; debe coincidir con uno de los siguientes.
+
 |Edición | Descargar|
 |-------------|-----------------------|
 |Visual Studio Enterprise | [**vs_enterprise.exe**](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=enterprise&rel=16&utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=network+install&utm_content=download+vs2019) |
 |Visual Studio Professional | [**vs_professional.exe**](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=professional&rel=16&utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=network+install&utm_content=download+vs2019) |
+| Visual Studio Build Tools   | [**vs_buildtools.exe**](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=buildtools&rel=16&utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=offline+install&utm_content=download+vs2019) |
 
-Otros programas previos admitidos incluyen [vs_buildtools.exe](https://aka.ms/vs/16/release/vs_buildtools.exe), [vs_teamexplorer.exe](https://aka.ms/vs/16/release/vs_teamexplorer.exe), [vs_testagent.exe](https://aka.ms/vs/16/release/vs_testagent.exe) y [vs_testcontroller.exe](https://aka.ms/vs/16/release/vs_testcontroller.exe).
+Otros programas previos admitidos incluyen [vs_teamexplorer.exe](https://aka.ms/vs/16/release/vs_teamexplorer.exe), [vs_testagent.exe](https://aka.ms/vs/16/release/vs_testagent.exe) y [vs_testcontroller.exe](https://aka.ms/vs/16/release/vs_testcontroller.exe).
 
 ::: moniker-end
 
+>[!TIP]
+>Si previamente descargó un archivo de programa previo y desea comprobar su versión, aquí se muestra cómo hacerlo. En Windows, abra el Explorador de archivos, haga clic con el botón derecho en el archivo de programa previo, elija **Propiedades**, seleccione la pestaña **Detalles** y, luego, fíjese en el número de **versión del producto**. Para hacer coincidir ese número con una versión de Visual Studio, consulte la página [Números de compilación y fechas de lanzamiento de Visual Studio](visual-studio-build-numbers-and-release-dates.md).
+
 ## <a name="create-an-offline-installation-folder"></a>Creación de una carpeta de instalación sin conexión
 
-Deberá disponer de conexión a Internet para poder completar este paso. Para crear una instalación sin conexión con todos los lenguajes y todas las características, utilice uno de los comandos de los ejemplos siguientes.
+Deberá disponer de conexión a Internet para poder completar este paso. Para crear una instalación sin conexión con todos los lenguajes y todas las características, use un comando similar a uno de los ejemplos siguientes:
 
    > [!IMPORTANT]
    > Un diseño completo de Visual Studio requiere como mínimo 35 GB de espacio en disco y puede tardar un poco en descargarse. Consulte la sección [Personalización del diseño de red](#customize-the-network-layout) para detalles sobre cómo crear un diseño únicamente con los componentes que desea instalar.
@@ -71,11 +80,11 @@ Deberá disponer de conexión a Internet para poder completar este paso. Para cr
 
 - Para Visual Studio Enterprise, ejecute:
 
-  ```vs_enterprise.exe --layout c:\vsoffline```
+  ```vs_enterprise.exe --layout c:\VSLayout```
 
 - Para Visual Studio Professional, ejecute:
 
-  ```vs_professional.exe --layout c:\vsoffline```
+  ```vs_professional.exe --layout c:\VSLayout```
 
 ## <a name="modify-the-responsejson-file"></a>Modificación del archivo response.json
 
@@ -86,12 +95,14 @@ Consulte [Automatización de la instalación de Visual Studio con un archivo de 
 
 Hospede el diseño en un recurso compartido de red para que se pueda ejecutar desde otras máquinas.
 
+En el ejemplo siguiente se usa [xcopy](/windows-server/administration/windows-commands/xcopy/). También puede usar [robocopy](/windows-server/administration/windows-commands/robocopy/), si quiere.  
+
 ::: moniker range="vs-2017"
 
 Ejemplo:
 
 ```cmd
-xcopy /e c:\vsoffline \\server\products\VS2017
+xcopy /e c:\VSLayout \\server\products\VS2017
 ```
 
 ::: moniker-end
@@ -99,7 +110,7 @@ xcopy /e c:\vsoffline \\server\products\VS2017
 ::: moniker range="vs-2019"
 
 ```cmd
-xcopy /e c:\vsoffline \\server\products\VS2019
+xcopy /e c:\VSLayout \\server\products\VS2019
 ```
 
 ::: moniker-end
@@ -112,7 +123,7 @@ xcopy /e c:\vsoffline \\server\products\VS2019
 Existen varias opciones que puede usar para personalizar el diseño de red. Puede crear un diseño parcial que solo contenga un conjunto específico de [configuraciones regionales de idioma](use-command-line-parameters-to-install-visual-studio.md#list-of-language-locales), [cargas de trabajo y componentes, y sus dependencias recomendados u opcionales](workload-and-component-ids.md). Esta opción puede resultar útil si sabe que solo va a implementar un subconjunto de las cargas de trabajo en las estaciones de trabajo cliente. Entre los parámetros de línea de comandos comunes para personalizar el diseño se incluyen:
 
 * `--add` para especificar [identificadores de carga de trabajo o componente](workload-and-component-ids.md). <br>Si se usa `--add`, solo se descargan esas cargas de trabajo y componentes especificados con `--add`.  Si no se usa `--add`, se descargan todos los componentes y cargas de trabajo.
-* `--includeRecommended` para incluir todos los componentes recomendados para los identificadores de carga de trabajo especificados.
+* `--includeRecommended` para incluir todos los componentes recomendados para los identificadores de carga especificados.
 * `--includeOptional` para incluir todos los componentes recomendados y opcionales para los identificadores de carga de trabajo especificados.
 * `--lang` para especificar [configuraciones regionales de idioma](use-command-line-parameters-to-install-visual-studio.md#list-of-language-locales).
 
@@ -121,38 +132,39 @@ Estos son algunos ejemplos de cómo crear un diseño parcial personalizado.
 * Para descargar todas las cargas de trabajo y los componentes para un solo idioma, ejecute:
 
     ```cmd
-    vs_enterprise.exe --layout C:\vsoffline --lang en-US
+    vs_enterprise.exe --layout C:\VSLayout --lang en-US
     ```
 
 * Para descargar todas las cargas de trabajo y los componentes para varios idiomas, ejecute:
 
     ```cmd
-    vs_enterprise.exe --layout C:\vsoffline --lang en-US de-DE ja-JP
+    vs_enterprise.exe --layout C:\VSLayout --lang en-US de-DE ja-JP
     ```
 
 * Para descargar una carga de trabajo para todos los idiomas, ejecute:
 
     ```cmd
-    vs_enterprise.exe --layout C:\vsoffline --add Microsoft.VisualStudio.Workload.Azure --includeRecommended
+    vs_enterprise.exe --layout C:\VSLayout --add Microsoft.VisualStudio.Workload.Azure --includeRecommended
     ```
 
 * Para descargar dos cargas de trabajo y un componente opcional para tres idiomas, ejecute:
 
     ```cmd
-    vs_enterprise.exe --layout C:\vsoffline --add Microsoft.VisualStudio.Workload.Azure --add Microsoft.VisualStudio.Workload.ManagedDesktop --add Component.GitHub.VisualStudio --includeRecommended --lang en-US de-DE ja-JP
+    vs_enterprise.exe --layout C:\VSLayout --add Microsoft.VisualStudio.Workload.Azure --add Microsoft.VisualStudio.Workload.ManagedDesktop --add Component.GitHub.VisualStudio --includeRecommended --lang en-US de-DE ja-JP
     ```
 
 * Para descargar dos cargas de trabajo y todos sus componentes recomendados:
 
     ```cmd
-    vs_enterprise.exe --layout C:\vsoffline --add Microsoft.VisualStudio.Workload.Azure --add Microsoft.VisualStudio.Workload.ManagedDesktop --add Component.GitHub.VisualStudio --includeRecommended 
+    vs_enterprise.exe --layout C:\VSLayout --add Microsoft.VisualStudio.Workload.Azure --add Microsoft.VisualStudio.Workload.ManagedDesktop --add Component.GitHub.VisualStudio --includeRecommended
     ```
 
 * Para descargar dos cargas de trabajo y todos sus componentes recomendados y opcionales, ejecute:
 
     ```cmd
-    vs_enterprise.exe --layout C:\vsoffline --add Microsoft.VisualStudio.Workload.Azure --add Microsoft.VisualStudio.Workload.ManagedDesktop --add Component.GitHub.VisualStudio --includeOptional 
+    vs_enterprise.exe --layout C:\VSLayout --add Microsoft.VisualStudio.Workload.Azure --add Microsoft.VisualStudio.Workload.ManagedDesktop --add Component.GitHub.VisualStudio --includeOptional
     ```
+
 ::: moniker range="vs-2017"
 
 ### <a name="new-in-version-153"></a>Novedades de la versión 15.3
@@ -194,13 +206,15 @@ vs_enterprise.exe --layout c:\VSLayout --all
 Los administradores pueden implementar Visual Studio en estaciones de trabajo cliente como parte de un script de instalación. O bien, los usuarios que tienen derechos de administrador pueden ejecutar la instalación directamente desde el recurso compartido para instalar Visual Studio en sus máquinas.
 
 * Para realizar la instalación, los usuarios pueden ejecutar el comando siguiente: <br>
+
     ```cmd
     \\server\products\VS\vs_enterprise.exe
     ```
 
 * Los administradores pueden realizar la instalación en modo desatendido con la ejecución del comando siguiente:
+
     ```cmd
-    \server\products\VS\vs_enterprise.exe --quiet --wait --norestart
+    \\server\products\VS\vs_enterprise.exe --quiet --wait --norestart
     ```
 
 > [!IMPORTANT]
@@ -212,6 +226,13 @@ Los administradores pueden implementar Visual Studio en estaciones de trabajo cl
 > Resulta muy útil si un administrador de empresa quiere realizar más acciones en una instalación completada (por ejemplo, para [aplicar una clave de producto a una instalación correcta](automatically-apply-product-keys-when-deploying-visual-studio.md)), pero debe esperar a que la instalación finalice para controlar el código de retorno desde esa instalación.
 >
 > Si no usa `--wait`, el proceso `vs_enterprise.exe` se cierra antes de que la instalación se complete y devuelve un código de salida incorrecto que no representa el estado de la operación de instalación.
+>
+
+::: moniker range="vs-2019"
+
+> En el caso de las instalaciones sin conexión, si recibe un mensaje de error que indica que no se encuentra un proyecto que coincida con los parámetros especificados, asegúrese de que está usando el modificador --noweb con la versión 16.3.5 o posterior.
+
+::: moniker-end
 
 Cuando realice la instalación desde un diseño, el contenido que está instalado se adquirirá del diseño. Sin embargo, si selecciona un componente que no está en el diseño, se obtendrá de Internet.  Si quiere evitar que la instalación de Visual Studio descargue cualquier contenido que no esté en su diseño, use la opción `--noWeb`. Si se usa `--noWeb` y al diseño le falta cualquier contenido seleccionado que se va a instalar, se produce un error en la instalación.
 
@@ -222,11 +243,7 @@ Cuando realice la instalación desde un diseño, el contenido que está instalad
 
 Si ha usado el parámetro `--wait`, la variable de entorno `%ERRORLEVEL%` se establece en uno de los siguientes valores, según el resultado de la operación:
 
-  | **Valor** | **Resultado** |
-  | --------- | ---------- |
-  | 0 | Operación completada correctamente |
-  | 3010 | Operación completada correctamente, pero la instalación requiere reiniciar el equipo para que se pueda usar |
-  | Otros | Condición de error: consulte los registros para obtener más información |
+[!INCLUDE[install-error-codes-md](includes/install-error-codes-md.md)]
 
 ## <a name="update-a-network-install-layout"></a>Actualización de un diseño de instalación de red
 
@@ -238,9 +255,9 @@ A medida que estén disponibles actualizaciones de productos, puede que quiera [
 
 > [!NOTE]
 > Los programas previos de Visual Studio que están disponibles en [visualstudio.microsoft.com](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017) permiten descargar e instalar la versión de Visual Studio más reciente disponible cada vez que se ejecutan.
-> 
+>
 > Por tanto, si descarga hoy un *programa previo* de Visual Studio y lo ejecuta de aquí a seis meses, se instalará la versión de Visual Studio que esté disponible en el momento que ejecute el programa previo.
-> 
+>
 > Pero, si crea un *diseño* y lo instala a partir de él, el diseño instala la versión específica de Visual Studio que existe en el diseño. Aunque es posible que exista una versión más reciente en línea, obtiene la versión de Visual Studio que está en el diseño.
 
 ::: moniker-end
@@ -248,10 +265,10 @@ A medida que estén disponibles actualizaciones de productos, puede que quiera [
 ::: moniker range="vs-2019"
 
 > [!NOTE]
-> Los programas previos de Visual Studio que están disponibles en [visualstudio.microsoft.com](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019) permiten descargar e instalar la versión de Visual Studio más reciente disponible cada vez que se ejecutan.
-> 
+> Los programas previos de Visual Studio que están disponibles en [visualstudio.microsoft.com](https://visualstudio.microsoft.com/downloads) permiten descargar e instalar la versión de Visual Studio más reciente disponible cada vez que se ejecutan.
+>
 > Por tanto, si descarga hoy un *programa previo* de Visual Studio y lo ejecuta de aquí a seis meses, se instalará la versión de Visual Studio que esté disponible en el momento que ejecute el programa previo.
-> 
+>
 > Pero, si crea un *diseño* y lo instala a partir de él, el diseño instala la versión específica de Visual Studio que existe en el diseño. Aunque es posible que exista una versión más reciente en línea, obtiene la versión de Visual Studio que está en el diseño.
 
 ::: moniker-end
@@ -264,12 +281,14 @@ Si experimenta un problema con la instalación sin conexión, queremos saberlo. 
 
 También dispone de la opción del [**chat en directo**](https://visualstudio.microsoft.com/vs/support/#talktous) de soporte técnico para problemas relacionados con la instalación (disponible solo en inglés).
 
-Tenemos también otras opciones de soporte técnico disponibles. Para obtener un listado, vea nuestra página [Hable con nosotros](../ide/talk-to-us.md).
+Tenemos también otras opciones de soporte técnico disponibles. Para obtener una lista, consulte nuestra página [Comentarios](../ide/feedback-options.md).
 
 ## <a name="see-also"></a>Vea también
 
-* [Actualización de una instalación basada en red de Visual Studio](update-a-network-installation-of-visual-studio.md)
-* [Control de actualizaciones a implementaciones de Visual Studio basadas en red](controlling-updates-to-visual-studio-deployments.md)
-* [Guía del administrador de Visual Studio](visual-studio-administrator-guide.md)
-* [Usar parámetros de la línea de comandos para instalar Visual Studio](use-command-line-parameters-to-install-visual-studio.md)
-* [Identificadores de cargas de trabajo y componentes de Visual Studio](workload-and-component-ids.md)
+- [Guía del administrador de Visual Studio](visual-studio-administrator-guide.md)
+- [Actualizar una instalación basada en red de Visual Studio](update-a-network-installation-of-visual-studio.md)
+- [Control updates to network-based Visual Studio deployments](controlling-updates-to-visual-studio-deployments.md) (Control de actualizaciones de implementaciones de Visual Studio basadas en red)
+- [Ciclo de vida y mantenimiento del producto de Visual Studio](/visualstudio/releases/2019/servicing/)
+- [Actualización de Visual Studio mientras se encuentra en una base de referencia de mantenimiento](update-servicing-baseline.md)
+- [Usar parámetros de la línea de comandos para instalar Visual Studio](use-command-line-parameters-to-install-visual-studio.md)
+- [Identificadores de cargas de trabajo y componentes de Visual Studio](workload-and-component-ids.md)

@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IEnumDebugFields::Next method
 ms.assetid: 22c177a2-af81-4234-812b-f9b47be245a2
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a39725f316e63b8c6768471164b69feb47c05728
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: ee2cc5273b5ec47f99916a308312f6d26c718033
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56698565"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66350426"
 ---
 # <a name="ienumdebugfieldsnext"></a>IEnumDebugFields::Next
 Este método devuelve el siguiente conjunto de elementos de la enumeración.
@@ -40,18 +43,15 @@ int Next(
 );
 ```
 
-#### <a name="parameters"></a>Parámetros
- `celt`
+## <a name="parameters"></a>Parámetros
+`celt`\
+[in] El número de elementos que se va a recuperar. También especifica el tamaño máximo de la `rgelt` matriz.
 
- [in] El número de elementos que se va a recuperar. También especifica el tamaño máximo de la `rgelt` matriz.
+`rgelt`\
+[in, out] Matriz de [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) elementos que deben rellenarse.
 
- `rgelt`
-
- [in, out] Matriz de [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) elementos que deben rellenarse.
-
- `pceltFetched`
-
- [out] Devuelve el número de elementos realmente devueltos en `rgelt`.
+`pceltFetched`\
+[out] Devuelve el número de elementos realmente devueltos en `rgelt`.
 
 ## <a name="return-value"></a>Valor devuelto
  Si la operación se realiza correctamente, devuelve `S_OK`. Devuelve `S_FALSE` si podrían devolverse un menor que el número solicitado de elementos; de lo contrario, devuelve un código de error.

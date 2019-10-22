@@ -9,14 +9,14 @@ ms.assetid: a8a0b97e-8040-4711-85ab-36548b130ed2
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 8b7af7b566e874941e72ae3a905ab2c1b58c89ff
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: b979da03c0ea5378684ff12bc86d4fb59eef9180
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55907911"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62979461"
 ---
-# <a name="how-to-add-context-parameters-to-a-load-test-run-setting"></a>Filtrar para agregar parámetros de contexto a los parámetros de ejecución de una prueba de carga
+# <a name="how-to-add-context-parameters-to-a-load-test-run-setting"></a>Procedimiento para agregar parámetros de contexto a los parámetros de ejecución de una prueba de carga
 
 Después de crear la prueba de carga con el **Asistente para prueba de carga nueva**, puede usar el **Editor de pruebas de carga** para cambiar las propiedades de los escenarios de modo que satisfagan las necesidades y los objetivos de la prueba.
 
@@ -52,11 +52,11 @@ Además, si asigna valores diferentes a un parámetro de contexto usando el mism
 
 ## <a name="to-add-a-context-parameter-to-a-run-setting"></a>Para agregar un parámetro de contexto a un parámetro de ejecución
 
-1.  Abra una prueba de carga.
+1. Abra una prueba de carga.
 
-2.  Expanda la carpeta **Parámetros de ejecución** en el árbol de pruebas de carga del Editor de pruebas de carga.
+2. Expanda la carpeta **Parámetros de ejecución** en el árbol de pruebas de carga del Editor de pruebas de carga.
 
-3.  Haga clic con el botón derecho en el parámetro de ejecución concreto al que desee agregar un parámetro de contexto y, a continuación, elija **Agregar parámetro de contexto**.
+3. Haga clic con el botón derecho en el parámetro de ejecución concreto al que desee agregar un parámetro de contexto y, a continuación, elija **Agregar parámetro de contexto**.
 
      Se agregará un nuevo parámetro de contexto a la carpeta **Parámetros de contexto** de la carpeta **Parámetros de ejecución** del árbol de pruebas de carga.
 
@@ -64,11 +64,11 @@ Además, si asigna valores diferentes a un parámetro de contexto usando el mism
 
      Si el parámetro de ejecución ya contiene una carpeta **Parámetros de contexto**, puede hacer clic en ella con el botón derecho y, a continuación, elegir **Agregar parámetro de contexto**.
 
-4.  En la ventana **Propiedades**, cambie el valor de **Nombre** según corresponda (por ejemplo, WebServer1). En la ventana **Propiedades**, cambie **Valor** por el parámetro que quiera usar (por ejemplo, `http://CorporateStagingWebServer`).
+4. En la ventana **Propiedades**, cambie el valor de **Nombre** según corresponda (por ejemplo, WebServer1). En la ventana **Propiedades**, cambie **Valor** por el parámetro que quiera usar (por ejemplo, `http://CorporateStagingWebServer`).
 
-5.  (Opcional) Repita los pasos del 3 al 5 y use otra cadena para la propiedad **Valor** (por ejemplo, `http://CorporateProductionWebServer`).
+5. (Opcional) Repita los pasos del 3 al 5 y use otra cadena para la propiedad **Valor** (por ejemplo, `http://CorporateProductionWebServer`).
 
-6.  Elija los parámetros de ejecución que quiera activar. Abra el menú contextual en los parámetros de ejecución y seleccione **Establecer como activa**.
+6. Elija los parámetros de ejecución que quiera activar. Abra el menú contextual en los parámetros de ejecución y seleccione **Establecer como activa**.
 
 ## <a name="see-also"></a>Vea también
 

@@ -12,12 +12,12 @@ ms.assetid: 5277b5fa-073b-4bd1-8ba1-9dc913aa3c50
 caps.latest.revision: 16
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 70efef9232bd7e9baf317e59111e59e9f98bf46b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 751acf4e5f56b7b477f05ab71571e0becd566649
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58987909"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436328"
 ---
 # <a name="elimination-of-sak-files"></a>Eliminación de archivos ~SAK
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -50,7 +50,7 @@ En fuente Control complemento API 1.2, el ~ archivos SAK han sido reemplazados p
  [HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\8.0\SourceControl] "DoNotCreateTemporaryFilesInSourceControl"=dword:00000001  
   
 > [!NOTE]
->  Si se establece esta clave del registro a DWORD: 00000000, es equivalente a la clave es que no existe, y Visual Studio continúa realizando intentos para crear los archivos temporales. Sin embargo, si se establece la clave del registro a DWORD: 00000001, Visual Studio no intenta crear los archivos temporales. En su lugar, se supone que el complemento de control de origen no es compatible con la MSSCCPRJ. Archivo de control de código fuente y admitir desprotecciones compartidas.  
+> Si se establece esta clave del registro a DWORD: 00000000, es equivalente a la clave es que no existe, y Visual Studio continúa realizando intentos para crear los archivos temporales. Sin embargo, si se establece la clave del registro a DWORD: 00000001, Visual Studio no intenta crear los archivos temporales. En su lugar, se supone que el complemento de control de origen no es compatible con la MSSCCPRJ. Archivo de control de código fuente y admitir desprotecciones compartidas.  
   
 ## <a name="see-also"></a>Vea también  
  [Novedades de la API del complemento de control de código fuente, versión 1.2](../../extensibility/internals/what-s-new-in-the-source-control-plug-in-api-version-1-2.md)

@@ -1,5 +1,5 @@
 ---
-title: 'CA1812: Evitar las clases internas sin instancia | Documentos de Microsoft'
+title: 'CA1812: Evite las clases internas sin instancias | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -12,15 +12,15 @@ helpviewer_keywords:
 - CA1812
 ms.assetid: 1bb92a42-322a-44cc-98a8-8858212c1e1f
 caps.latest.revision: 28
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: f44dcb010dd9c62d130913efd590a4c1b651de50
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: f5a36ee8cffc221d15243ff72e2e71558e867319
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60082007"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72645407"
 ---
 # <a name="ca1812-avoid-uninstantiated-internal-classes"></a>CA1812: Evitar las clases internas sin instancia
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,7 +29,7 @@ ms.locfileid: "60082007"
 |-|-|
 |TypeName|AvoidUninstantiatedInternalClasses|
 |Identificador de comprobación|CA1812|
-|Categoría|Microsoft.Performance|
+|Categoría|Microsoft. performance|
 |Cambio problemático|Poco problemático|
 
 ## <a name="cause"></a>Motivo
@@ -48,29 +48,29 @@ ms.locfileid: "60082007"
 
 - Delegados
 
-- Tipos de matriz emitido por el compilador
+- Tipos de matriz emitidos por el compilador
 
-- Tipos que no pueden crearse instancias, y que definen `static` (`Shared` en Visual Basic) solo los métodos.
+- Tipos de los que no se pueden crear instancias y que solo definen métodos `static` (`Shared` en Visual Basic).
 
-  Si aplica <xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute?displayProperty=fullName> al ensamblado que se está analizando, esta regla no se producirá en todos los constructores que están marcados como `internal` porque no puede saber si un campo está en uso por otro `friend` ensamblado.
+  Si aplica <xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute?displayProperty=fullName> al ensamblado que se está analizando, esta regla no se producirá en ningún constructor que esté marcado como `internal` porque no puede saber si un campo está siendo utilizado por otro `friend` ensamblado.
 
-  Aunque no es posible solucionar esta limitación en [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] análisis de código, se producirá el FxCop independiente externo constructores internos si cada `friend` ensamblado está presente en el análisis.
+  Aunque no puede solucionar esta limitación en [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] análisis de código, el FxCop independiente externo se producirá en constructores internos si cada ensamblado de `friend` está presente en el análisis.
 
 ## <a name="how-to-fix-violations"></a>Cómo corregir infracciones
- Para corregir una infracción de esta regla, quite el tipo o agregue el código que lo utiliza. Si el tipo contiene solo los métodos estáticos, agregue uno de los siguientes al tipo para evitar que el compilador emita un constructor de instancia público predeterminado:
+ Para corregir una infracción de esta regla, quite el tipo o agregue el código que lo usa. Si el tipo solo contiene métodos estáticos, agregue uno de los siguientes al tipo para evitar que el compilador emita un constructor de instancia público predeterminado:
 
-- Un constructor privado para tipos que tienen como destino [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] las versiones 1.0 y 1.1.
+- Constructor privado para los tipos que tienen como destino [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] versiones 1,0 y 1,1.
 
-- El `static` (`Shared` en Visual Basic) modificador de tipos que tienen como destino [!INCLUDE[dnprdnlong](../includes/dnprdnlong-md.md)].
+- El modificador `static` (`Shared` en Visual Basic) para los tipos que tienen como destino [!INCLUDE[dnprdnlong](../includes/dnprdnlong-md.md)].
 
 ## <a name="when-to-suppress-warnings"></a>Cuándo suprimir advertencias
- Es seguro suprimir una advertencia de esta regla. Se recomienda que suprimir esta advertencia en las situaciones siguientes:
+ Es seguro suprimir una advertencia de esta regla. Se recomienda suprimir esta advertencia en las situaciones siguientes:
 
-- Se crea la clase a través de métodos de reflexión en tiempo de ejecución, como <xref:System.Activator.CreateInstance%2A?displayProperty=fullName>.
+- La clase se crea mediante métodos de reflexión enlazados en tiempo de ejecución como <xref:System.Activator.CreateInstance%2A?displayProperty=fullName>.
 
-- La clase se crea automáticamente el tiempo de ejecución o [!INCLUDE[vstecasp](../includes/vstecasp-md.md)]. Por ejemplo, las clases que implementan <xref:System.Configuration.IConfigurationSectionHandler?displayProperty=fullName> o <xref:System.Web.IHttpHandler?displayProperty=fullName>.
+- La clase la crea automáticamente el motor en tiempo de ejecución o el [!INCLUDE[vstecasp](../includes/vstecasp-md.md)]. Por ejemplo, las clases que implementan <xref:System.Configuration.IConfigurationSectionHandler?displayProperty=fullName> o <xref:System.Web.IHttpHandler?displayProperty=fullName>.
 
-- La clase se pasa como un parámetro de tipo genérico que tiene una nueva restricción. Por ejemplo, en el ejemplo siguiente, se producirá esta regla.
+- La clase se pasa como un parámetro de tipo genérico que tiene una nueva restricción. Por ejemplo, en el ejemplo siguiente se generará esta regla.
 
   ```csharp
   internal class MyClass
@@ -91,11 +91,11 @@ ms.locfileid: "60082007"
   mc.Create();
   ```
 
-  En estas situaciones, se recomienda que suprimir esta advertencia.
+  En estas situaciones, se recomienda suprimir esta advertencia.
 
 ## <a name="related-rules"></a>Reglas relacionadas
- [CA1811: Evitar código privado fuera de lugar](../code-quality/ca1811-avoid-uncalled-private-code.md)
+ [CA1811: Evitar código privado al que no se llama](../code-quality/ca1811-avoid-uncalled-private-code.md)
 
  [CA1801: Revisar parámetros sin utilizar](../code-quality/ca1801-review-unused-parameters.md)
 
- [CA1804: Quitar a variables locales no utilizadas](../code-quality/ca1804-remove-unused-locals.md)
+ [CA1804: Quitar variables locales no utilizadas](../code-quality/ca1804-remove-unused-locals.md)

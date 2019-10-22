@@ -19,17 +19,17 @@ caps.latest.revision: 18
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: caa267aa44a72d180195a30b41fa7a2c03033bdf
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 712d0de957ff7f780567c927fb1b18b100f8f6ca
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59668410"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65703527"
 ---
 # <a name="generateresource-task"></a>GenerateResource (Tarea)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Convierte entre archivos .txt y .resx (formato de recursos basado en XML) y archivos .resources binarios de Common Language Runtime, que se pueden insertar en un archivo ejecutable binario en tiempo de ejecución o compilar en ensamblados satélite. Esta tarea normalmente se utiliza para convertir archivos .txt o .resx en archivos .resource. La tarea `GenerateResource` es funcionalmente similar a [resgen.exe](http://msdn.microsoft.com/library/8ef159de-b660-4bec-9213-c3fbc4d1c6f4).  
+Convierte entre archivos .txt y .resx (formato de recursos basado en XML) y archivos .resources binarios de Common Language Runtime, que se pueden insertar en un archivo ejecutable binario en tiempo de ejecución o compilar en ensamblados satélite. Esta tarea normalmente se utiliza para convertir archivos .txt o .resx en archivos .resource. La tarea `GenerateResource` es funcionalmente similar a [resgen.exe](https://msdn.microsoft.com/library/8ef159de-b660-4bec-9213-c3fbc4d1c6f4).  
   
 ## <a name="parameters"></a>Parámetros  
  En la siguiente tabla se describen los parámetros de la tarea `GenerateResource` .  
@@ -56,11 +56,11 @@ Convierte entre archivos .txt y .resx (formato de recursos basado en XML) y arch
 |`StronglyTypedNamespace`|Parámetro `String` opcional.<br /><br /> Especifica el espacio de nombres que se usará para el origen de clase generado del recurso fuertemente tipado. Si no se especifica este parámetro, cualquier recurso fuertemente tipado se encontrará en el espacio de nombres global.|  
 |`TLogReadFiles`|Parámetro de solo lectura <xref:Microsoft.Build.Framework.ITaskItem>`[]` opcional.<br /><br /> Obtiene una matriz de elementos que representan los registros de seguimiento de lectura.|  
 |`TLogWriteFiles`|Parámetro de solo lectura <xref:Microsoft.Build.Framework.ITaskItem>`[]` opcional.<br /><br /> Obtiene una matriz de elementos que representan los registros de seguimiento de escritura.|  
-|`ToolArchitecture`|(Opcional [String]<!-- TODO: review code entity reference <xref:assetId:///String?qualifyHint=False&amp;autoUpgrade=True>  -->) parámetro.<br /><br /> Se utiliza para determinar si debe utilizarse o no Tracker.exe para generar ResGen.exe.<br /><br /> Debe ser analizable para un miembro de la enumeración <xref:Microsoft.Build.Utilities.ExecutableType>. Si es `String.Empty`, utiliza una heurística para determinar una arquitectura predeterminada. Debe ser analizable para un miembro de la enumeración Microsoft.Build.Utilities.ExecutableType.|  
+|`ToolArchitecture`|Parámetro opcional [String](<!-- TODO: review code entity reference <xref:assetId:///String?qualifyHint=False&amp;autoUpgrade=True>  -->).<br /><br /> Se utiliza para determinar si debe utilizarse o no Tracker.exe para generar ResGen.exe.<br /><br /> Debe ser analizable para un miembro de la enumeración <xref:Microsoft.Build.Utilities.ExecutableType>. Si es `String.Empty`, utiliza una heurística para determinar una arquitectura predeterminada. Debe ser analizable para un miembro de la enumeración Microsoft.Build.Utilities.ExecutableType.|  
 |`TrackerFrameworkPath`|Optional <!-- TODO: review code entity reference <xref:assetId:///String?qualifyHint=False&amp;autoUpgrade=True>  --> parámetro.<br /><br /> Especifica la ruta de acceso a la ubicación de .NET Framework adecuada que contiene FileTracker.dll.<br /><br /> Si está establecido, el usuario asume la responsabilidad de comprobar que el valor de bits de FileTracker.dll que pasa coincide con el valor de bits del archivo ResGen.exe que va a utilizar. Si no está establecido, la tarea decide la ubicación adecuada basándose en la versión actual de .NET Framework.|  
 |`TrackerLogDirectory`|Optional <!-- TODO: review code entity reference <xref:assetId:///String?qualifyHint=False&amp;autoUpgrade=True>  --> parámetro.<br /><br /> Especifica el directorio intermedio en el que se van a colocar los registros de seguimiento de la ejecución de esta tarea.|  
 |`TrackerSdkPath`|Optional <!-- TODO: review code entity reference <xref:assetId:///String?qualifyHint=False&amp;autoUpgrade=True>  --> parámetro.<br /><br /> Especifica la ruta de acceso a la ubicación del SDK de Windows adecuada que contiene Tracker.exe.<br /><br /> Si está establecido, el usuario asume la responsabilidad de comprobar que el valor de bits de Tracker.exe que pasa coincide con el valor de bits del archivo ResGen.exe que va a utilizar. Si no está establecido, la tarea decide la ubicación adecuada basándose en el SDK de Windows actual.|  
-|`TrackFileAccess`|(Opcional) [Booleano]<!-- TODO: review code entity reference <xref:assetId:///Boolean?qualifyHint=False&amp;autoUpgrade=True>  -->) parámetro.<br /><br /> Si es true, el directorio del archivo de entrada se utiliza para resolver rutas de acceso de archivo relativas.|  
+|`TrackFileAccess`|Parámetro opcional [Boolean](<!-- TODO: review code entity reference <xref:assetId:///Boolean?qualifyHint=False&amp;autoUpgrade=True>  -->).<br /><br /> Si es true, el directorio del archivo de entrada se utiliza para resolver rutas de acceso de archivo relativas.|  
 |`UseSourcePath`|Parámetro `Boolean` opcional.<br /><br /> Si es `true`, especifica que el directorio del archivo de entrada se utiliza para resolver las rutas de acceso de archivo relativas.|  
   
 ## <a name="remarks"></a>Comentarios  

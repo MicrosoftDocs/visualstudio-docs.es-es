@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 69b3de3a7f1554bc3ad95874a58b75b809d610a2
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56597990"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62794667"
 ---
 # <a name="multiple-categories-are-present"></a>Hay múltiples categorías
 Se selecciona una sección que contiene más de un tipo de actividad para un intervalo de tiempo determinado. Observe que se muestran dos colores, uno apilado verticalmente en el otro. Estos colores representan solo las dos actividades principales más frecuentes en el intervalo de tiempo determinado. Las frecuencias de estas dos actividades se muestran relacionadas entre sí como tercios o mitades de la barra vertical. Para ver más detalles, pruebe a acercar esta sección de la vista de subprocesos.

@@ -1,5 +1,5 @@
 ---
-title: Herramientas de rendimiento en aplicaciones de Windows 8 y Windows Server 2012 | Microsoft Docs
+title: Herramientas de rendimiento en aplicaciones de Windows 8 y Windows Server 2012
 ms.date: 06/19/2017
 ms.topic: conceptual
 author: mikejo5000
@@ -7,12 +7,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8258c259b7f065e28ba7a6e199ddddb432dfb4b6
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 69b817af15b782ebd1e281d51855d62b11e8f470
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56629981"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66262952"
 ---
 # <a name="performance-tools-on-windows-8-and-windows-server-2012-applications"></a>Herramientas de rendimiento en aplicaciones de Windows 8 y Windows Server 2012
 
@@ -109,7 +109,7 @@ Debe agregar la opción de recopilación de datos de interacción de capas a una
 
 **Recopilación de datos de TIP en un equipo remoto**
 
-Para recopilar datos de interacción de capas en un equipo remoto, debe copiar el archivo **vs\_profiler\_**_\<plataforma>_**\_**_\<lenguaje>_**.exe** de la carpeta *%VSInstallDir%\Team Tools\Performance Tools\Setups* de un equipo de Visual Studio en el equipo remoto e instalarlo. Las herramientas de generación de perfiles no se pueden usar en el paquete de descarga de [Depuración remota](../debugger/remote-debugging.md) .
+Para recopilar datos de interacción de capas en un equipo remoto, debe copiar el archivo **vs\_profiler\_** _\<plataforma>_ **\_** _\<lenguaje>_ **.exe** de la carpeta *%VSInstallDir%\Team Tools\Performance Tools\Setups* de un equipo de Visual Studio en el equipo remoto e instalarlo. Las herramientas de generación de perfiles no se pueden usar en el paquete de descarga de [Depuración remota](../debugger/remote-debugging.md) .
 
 Puede usar [VSPerfCmd](../profiling/vsperfcmd.md) o [VSPerfASPNetCmd](../profiling/vsperfaspnetcmd.md) para recopilar los datos de generación de perfiles.
 

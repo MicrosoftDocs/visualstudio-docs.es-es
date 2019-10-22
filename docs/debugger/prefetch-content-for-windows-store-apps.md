@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: 7e59548ac46196f86813aa312e68bbe043edf701
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.openlocfilehash: 03ae7ecaf9998646d1dc13c4a93bbf34b53f5e47
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56701282"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63408597"
 ---
 # <a name="debug-uwp-apps-using-prefetched-content-in-visual-studio"></a>Depurar aplicaciones para UWP con contenido precargado en Visual Studio
 
@@ -30,14 +30,14 @@ ms.locfileid: "56701282"
 
 1. Inicia la aplicación para registrar los URI de contenido precargado con la aplicación. En el menú **Depurar**, seleccione **Iniciar depuración** (método abreviado de teclado: F5).
 
-2. En el menú **Depurar**, seleccione **Detener depuración** (método abreviado de teclado: mayús + F5).
+2. En el **depurar** menú, elija **Detener depuración** (método abreviado de teclado: MAYÚS + F5).
 
 3. En el menú **Depurar**, elija **Otros destinos de depuración** y después **Desencadenar precarga de aplicaciones de la Tienda Windows**.
 
    Ahora ya puedes depurar, probar o analizar tu aplicación con los recursos web precargados.
 
 > [!NOTE]
->  Repite estos pasos siempre que agregues o modifiques el contenido web especificado.
+> Repite estos pasos siempre que agregues o modifiques el contenido web especificado.
 
 ## <a name="see-also"></a>Vea también
-- [Entrada de blog: desencadenar precarga para Windows Store Apps en Visual Studio 2013 Update 2](https://devblogs.microsoft.com/devops/triggering-prefetch-for-windows-store-apps-in-visual-studio-2013-update-2/)
+- [Entrada de blog: Desencadenar precarga de aplicaciones de Windows Store en Visual Studio 2013 Update 2](https://devblogs.microsoft.com/devops/triggering-prefetch-for-windows-store-apps-in-visual-studio-2013-update-2/)

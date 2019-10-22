@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c45f4b374e553115462a010c4a61cc2d4a0a3e9c
-ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
+ms.openlocfilehash: a40cbc30850edc96b569bd8d716b14b5d2035089
+ms.sourcegitcommit: 528178a304e66c0cb7ab98b493fe3c409f87493a
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/27/2019
-ms.locfileid: "56954340"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71273395"
 ---
 # <a name="developer-community-data-privacy"></a>Privacidad de datos de la Comunidad de desarrolladores
 
@@ -54,34 +54,36 @@ Si se inicia **Report a problem** (Notificar un problema) desde Visual Studio, r
 
 - Archivo de registro de actividad en memoria de Visual Studio
 
-- Archivos PerfWatson, si la colección Watson está habilitada, desde la carpeta *VSFeedbackPerfWatsonData*
+- Archivos PerfWatson, si la colección Watson está habilitada
 
-- Archivos de registro LiveShare, si existen, desde la carpeta *VSFeedbackVSRTCLogs*
+- Archivos de registro de LiveShare, si existen
 
-- Archivos de registro de Xamarin, si existen, desde *%LOCALAPPDATA%\Xamarin\Logs*
+- Archivos de registro de Xamarin, si existen
 
-- Archivos de registro de NuGet, si existen, desde *%TEMP%\NuGetScratch\nuget-dg\nugetSpec.dg*
+- Archivos de registro de NuGet, si existen
 
-- Archivos de registro del depurador web, si existen:
+- Archivos de registro del depurador web, si existen
 
-   - *%TEMP%\vscode-chrome-debug.txt*
+- Registros del centro de servicio y registros de errores de MEF, si existen
 
-   - *%TEMP%\vscode-node-debug2.txt*
+- Registros de Python, si existen
 
-   - *%TEMP%\vscode-edge-debug.txt*
+- Registros de Windows Forms, si existen
 
 - Una captura de pantalla, si opta por incluirla
-
+  
 - Datos de grabación, si decide incluir una grabación, que incluya:
 
-   - Pasos para reproducir el problema
+  - Pasos para reproducir el problema
 
-   - Archivo de seguimiento ETL
+  - Archivo de seguimiento ETL
 
-   - Archivo de volcado de memoria
+  - Archivo de volcado de memoria
 
-    > [!NOTE]
-    > Puede eliminar cualquiera de los datos de grabación que no quiera enviar antes de enviar el informe.
+> [!NOTE]
+> Los archivos de registro, las instantáneas y los datos de registro se envían a Microsoft solo cuando se proporciona el permiso; para ello, se envía el informe de problemas con el que se incluyen. Puede ver los archivos que se incluyen en el paso "Resumen" de la ventana "Notificar un problema" (vea la captura de pantalla incluida en esta nota). Los registros y archivos recopilados se almacenan en la carpeta %temp% y se limpian periódicamente y después de cada carga. Si no quiere incluir un registro en el informe de problemas, elimine el archivo de la carpeta %temp% antes de enviar el informe.  
+  > ![Notificar un problema: resumen de los registros recopilados](media/report-a-problem-logs-collected.png)
+ 
 
 ## <a name="see-also"></a>Vea también
 

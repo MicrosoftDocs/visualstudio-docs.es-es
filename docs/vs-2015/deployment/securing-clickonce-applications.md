@@ -17,12 +17,12 @@ caps.latest.revision: 47
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: c2d8ecd09487248b4c4be05b354133c710febf30
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 2a2610c1fef92bb77d150dad7972bb991b6ef4a4
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60076203"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65686011"
 ---
 # <a name="securing-clickonce-applications"></a>Proteger las aplicaciones ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -74,14 +74,14 @@ Las aplicaciones[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] están su
  No debe pasar nunca argumentos recuperados a través de una cadena de consulta a una base de datos o a la línea de comandos sin antes comprobar los argumentos para garantizar que sean seguros. No son seguros los argumentos que incluyen caracteres de escape de línea de comandos o base de datos que pueden permitir a un usuario malintencionado manipular la aplicación mediante la ejecución de comandos arbitrarios.  
   
 > [!NOTE]
->  Los argumentos de la cadena de consulta constituyen la única forma de pasar argumentos a una aplicación [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] cuando se inicia. No se pueden pasar argumentos a una aplicación [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] desde la línea de comandos.  
+> Los argumentos de la cadena de consulta constituyen la única forma de pasar argumentos a una aplicación [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] cuando se inicia. No se pueden pasar argumentos a una aplicación [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] desde la línea de comandos.  
   
 ## <a name="deploying-obfuscated-assemblies"></a>Implementar ensamblados protegidos  
  Es posible que desee proteger su aplicación mediante Dotfuscator para impedir el uso de técnicas de ingeniería inversa en el código por parte de otras personas. Sin embargo, la protección de ensamblados no está integrada en el IDE de Visual Studio ni en el proceso de implementación ClickOnce. Por lo tanto, tendrá que encargarse de la protección fuera del proceso de implementación, posiblemente utilizando un paso posterior a la compilación. Una vez compilado el proyecto, tendría que llevar a cabo los siguientes pasos manualmente, fuera de Visual Studio:  
   
 1. Encargarse de la protección mediante Dotfuscator.  
   
-2. Utilizar Mage.exe o MageUI.exe para generar los manifiestos de ClickOnce y firmarlos. Para obtener más información, consulte [Mage.exe (Manifest Generation and Editing Tool)](http://msdn.microsoft.com/library/77dfe576-2962-407e-af13-82255df725a1) y [MageUI.exe (Manifest Generation and Editing Tool, Graphical Client)](http://msdn.microsoft.com/library/f9e130a6-8117-49c4-839c-c988f641dc14).  
+2. Utilizar Mage.exe o MageUI.exe para generar los manifiestos de ClickOnce y firmarlos. Para obtener más información, consulte [Mage.exe (Manifest Generation and Editing Tool)](https://msdn.microsoft.com/library/77dfe576-2962-407e-af13-82255df725a1) y [MageUI.exe (Manifest Generation and Editing Tool, Graphical Client)](https://msdn.microsoft.com/library/f9e130a6-8117-49c4-839c-c988f641dc14).  
   
 3. Publicar manualmente (copiar) los archivos en la ubicación de implementación de origen (servidor Web, recurso compartido UNC o CD-ROM).  
   

@@ -14,11 +14,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 05f768f6ff928ab00ebbd503c1ae9826dab8cd38
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54780587"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68161299"
 ---
 # <a name="cores-view-legend"></a>Leyenda de la vista Núcleos
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,12 +31,12 @@ La leyenda de la vista Núcleos identifica cada subproceso por color y nombre. I
   
  En la siguiente tabla se describen los elementos de la leyenda.  
   
-|Elemento|de esquema JSON|  
+|Elemento|Definición|  
 |-------------|----------------|  
 |Nombre del subproceso|Muestra el color del subproceso en la escala de tiempo de núcleos anterior y el nombre del subproceso.|  
 |Cambios de contexto entre núcleos|El número de cambios de contexto para un subproceso que también cambió de un núcleo lógico a otro. No distingue los cambios de contexto entre núcleos que pasan de una matriz de procesadores a otra de los que permanecen en la misma matriz.|  
 |Total de cambios de contexto|El número total de cambios de contexto para un subproceso determinado durante el periodo de muestreo. Cada vez que un subproceso cambia de contexto (por ejemplo, de ejecución a sincronización), se cuenta un cambio de contexto.|  
 |Porcentaje de cambios de contexto que atraviesan núcleos|Se calcula como un porcentaje obtenido de la división del número de cambios de contexto entre núcleos entre el número total de cambios de contexto. Cuanto mayor sea este porcentaje, mayor será el efecto general de la sobrecarga de cambios de contexto entre núcleos en el rendimiento de este subproceso concreto.|  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Otras referencias  
  [Vista Núcleos](../profiling/cores-view.md)

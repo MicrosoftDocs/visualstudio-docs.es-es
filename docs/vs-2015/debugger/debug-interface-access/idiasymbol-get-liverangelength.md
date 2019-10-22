@@ -13,12 +13,12 @@ caps.latest.revision: 10
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 1e3f3e83fecf6a3e8ff8282a4581dfd10893b8ba
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 33f56615334b7d33516c6c967f165dac3942b5f8
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58987771"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "64825232"
 ---
 # <a name="idiasymbolgetliverangelength"></a>IDiaSymbol::get_liveRangeLength
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -41,7 +41,7 @@ HRESULT get_liveRangeLength ( 
  Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.  
   
 > [!NOTE]
->  Un código de error devuelto significa que el símbolo no tiene información de rango en vivo.  
+> Un código de error devuelto significa que el símbolo no tiene información de rango en vivo.  
   
 ## <a name="remarks"></a>Comentarios  
   

@@ -3,17 +3,17 @@ title: 'Tutorial: Creación de un SDK con JavaScript | Documentos de Microsoft'
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: a8c89d5d-5b78-4435-817f-c5f25ca6d715
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 76aa6fe6218205874ab616f5c0ffb09f5c5c3cbf
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 61f18d2d7412b84827aaa9b6a229c80019716df4
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56711805"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66312550"
 ---
 # <a name="walkthrough-create-an-sdk-using-javascript"></a>Tutorial: Crear un SDK con JavaScript
 En este tutorial se enseña cómo usar JavaScript para crear un simple cálculo matemático SDK como una extensión de Visual Studio (VSIX).  El tutorial está dividido en estas partes:
@@ -27,19 +27,19 @@ En este tutorial se enseña cómo usar JavaScript para crear un simple cálculo 
 ## <a name="prerequisites"></a>Requisitos previos
  Para seguir este tutorial, debe instalar el SDK de Visual Studio. Para obtener más información, consulte [SDK de Visual Studio](../extensibility/visual-studio-sdk.md).
 
-##  <a name="createSimpleMathVSIX"></a> Para crear el proyecto SDK de extensión SimpleMathVSIX
+## <a name="createSimpleMathVSIX"></a> Para crear el proyecto SDK de extensión SimpleMathVSIX
 
-1.  En la barra de menús, elija **Archivo** > **Nuevo** > **Proyecto**.
+1. En la barra de menús, elija **Archivo** > **Nuevo** > **Proyecto**.
 
-2.  En la lista de categorías de plantillas, en **Visual C#**, seleccione **extensibilidad**y, a continuación, seleccione el **proyecto VSIX** plantilla.
+2. En la lista de categorías de plantillas, en **Visual C#** , seleccione **extensibilidad**y, a continuación, seleccione el **proyecto VSIX** plantilla.
 
-3.  En el **nombre** texto, especifique `SimpleMathVSIX` y elija el **Aceptar** botón.
+3. En el **nombre** texto, especifique `SimpleMathVSIX` y elija el **Aceptar** botón.
 
-4.  Si el **Asistente para paquetes de Visual Studio** aparece, elija el **siguiente** situado en la **bienvenida** página y, a continuación, en **página 1 de 7**, elija el **Finalizar** botón.
+4. Si el **Asistente para paquetes de Visual Studio** aparece, elija el **siguiente** situado en la **bienvenida** página y, a continuación, en **página 1 de 7**, elija el **Finalizar** botón.
 
      Aunque el **Diseñador de manifiestos** se abre, mantendremos en este tutorial sencillo modificando directamente el archivo de manifiesto.
 
-5.  En **el Explorador de soluciones**, abra el menú contextual para el **source.extension.vsixmanifest** de archivo y, a continuación, elija **ver código**. Use este código para reemplazar el contenido existente en el archivo.
+5. En **el Explorador de soluciones**, abra el menú contextual para el **source.extension.vsixmanifest** de archivo y, a continuación, elija **ver código**. Use este código para reemplazar el contenido existente en el archivo.
 
     ```xml
     <?xml version="1.0" encoding="utf-8"?>
@@ -61,11 +61,11 @@ En este tutorial se enseña cómo usar JavaScript para crear un simple cálculo 
     </PackageManifest>
     ```
 
-6.  En **el Explorador de soluciones**, abra el menú contextual para el **SimpleMathVSIX** del proyecto y, a continuación, elija **agregar** > **nuevo elemento**.
+6. En **el Explorador de soluciones**, abra el menú contextual para el **SimpleMathVSIX** del proyecto y, a continuación, elija **agregar** > **nuevo elemento**.
 
-7.  En el **datos** categoría, seleccione **archivo XML**, asigne el nombre `SDKManifest.xml`y elija el **agregar** botón.
+7. En el **datos** categoría, seleccione **archivo XML**, asigne el nombre `SDKManifest.xml`y elija el **agregar** botón.
 
-8.  En **el Explorador de soluciones**, abra el menú contextual para el **SDKManifest.xml** de archivo y, a continuación, elija **abrir** para mostrar el archivo en el **Editor XML**.
+8. En **el Explorador de soluciones**, abra el menú contextual para el **SDKManifest.xml** de archivo y, a continuación, elija **abrir** para mostrar el archivo en el **Editor XML**.
 
 9. Agregue el código siguiente a la **SDKManifest.xml** archivo.
 
@@ -96,7 +96,7 @@ En este tutorial se enseña cómo usar JavaScript para crear un simple cálculo 
 
 14. En el menú contextual para el **\js\\**  carpeta, elija **agregar** > **nuevo elemento**.
 
-15. En **elementos de Visual C#**, seleccione el **Web** categoría y, a continuación, seleccione el **archivo JavaScript** elemento. Nombre del archivo `arithmetic.js`y, a continuación, elija el **agregar** botón.
+15. En **elementos de Visual C#** , seleccione el **Web** categoría y, a continuación, seleccione el **archivo JavaScript** elemento. Nombre del archivo `arithmetic.js`y, a continuación, elija el **agregar** botón.
 
 16. Inserte el código siguiente en *arithmetic.js*:
 
@@ -126,19 +126,19 @@ En este tutorial se enseña cómo usar JavaScript para crear un simple cálculo 
 
 17. En **el Explorador de soluciones**, en el menú contextual para el **arithmetic.js** de archivos, elija **propiedades**. Realice estos cambios de propiedad:
 
-    -   Establecer el **incluir en VSIX** propiedad **True**.
+    - Establecer el **incluir en VSIX** propiedad **True**.
 
-    -   Establecer el **Copy to Output Directory** propiedad **copiar siempre**.
+    - Establecer el **Copy to Output Directory** propiedad **copiar siempre**.
 
 18. En **el Explorador de soluciones**, en el menú contextual para el **SimpleMathVSIX** del proyecto, elija **compilar**.
 
-19. Después de la compilación se completa correctamente, en el menú contextual para el proyecto, elija **Abrir carpeta en el Explorador de archivos**. Vaya a **\bin\debug\\**y ejecute `SimpleMathVSIX.vsix` para instalarlo.
+19. Después de la compilación se completa correctamente, en el menú contextual para el proyecto, elija **Abrir carpeta en el Explorador de archivos**. Vaya a **\bin\debug\\** y ejecute `SimpleMathVSIX.vsix` para instalarlo.
 
 20. Elija la **instalar** botón y permiten la instalación completa.
 
 21. Reinicie Visual Studio.
 
-##  <a name="createSampleApp"></a> Para crear una aplicación de ejemplo que usa el SDK
+## <a name="createSampleApp"></a> Para crear una aplicación de ejemplo que usa el SDK
 
 1. En la barra de menús, elija **Archivo** > **Nuevo** > **Proyecto**.
 

@@ -19,11 +19,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 2a4674dec4b15f608eb25ffaf62c97efcc2363ab
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56679819"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62929975"
 ---
 # <a name="view-data-values-in-datatips-in-the-code-editor"></a>Ver valores de datos en la información sobre datos en el editor de código
 
@@ -75,7 +75,7 @@ Para cerrar la información sobre todos los datos, en el **depurar** menú, sele
 
 ### <a name="close-all-datatips-for-a-specific-file"></a>Cierre todas las sugerencias de datos para un archivo específico
 
-Para cerrar todas las sugerencias de datos para un archivo específico, en el **depurar** menú, seleccione **borrar todos los información sobre datos anclada a \<Filename >**.
+Para cerrar todas las sugerencias de datos para un archivo específico, en el **depurar** menú, seleccione **borrar todos los información sobre datos anclada a \<Filename >** .
 
 ## <a name="expand-and-edit-information"></a>Expandir y editar información
 Con la Información sobre datos, se puede expandir una matriz, una estructura o un objeto para ver sus miembros. También se puede editar el valor de una variable de una Información sobre datos.

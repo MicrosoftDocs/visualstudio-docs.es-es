@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1703d867a529496bb5c524b62ae56ef8d25904b4
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 1377034853907ce0c3585e4672296c1c8747259f
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55940352"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67823866"
 ---
 # <a name="shader-designer"></a>Diseñador de sombras
 
@@ -52,7 +52,7 @@ En esta sección se describe cómo agregar un sombreador DGSL al proyecto de Vis
 
 2. En el **Explorador de soluciones**, abra el menú contextual del proyecto de C++ al que quiere agregar el sombreador y luego elija **Agregar** > **Nuevo elemento**.
 
-3. En el cuadro de diálogo **Agregar nuevo elemento** en **Instalado**, seleccione **Gráficos**, y después seleccione **Gráfico de sombreador visual (.dgsl)**.
+3. En el cuadro de diálogo **Agregar nuevo elemento** en **Instalado**, seleccione **Gráficos**, y después seleccione **Gráfico de sombreador visual (.dgsl)** .
 
    > [!NOTE]
    > Si no ve la categoría **Gráficos** en el cuadro de diálogo **Agregar nuevo elemento** y tiene instalado el componente **Editores de imágenes y modelos 3D**, los elementos gráficos no son compatibles con el tipo de proyecto.
@@ -81,7 +81,7 @@ Esta es la barra de herramientas **Modo Diseñador de sombras**:
 
 En esta tabla se describen los elementos de la barra de herramientas **Modo Diseñador de sombras** que se muestran en el orden en que aparecen de izquierda a derecha:
 
-|Elemento de la barra de herramientas|Descripción|
+|Elemento de la barra de herramientas|DESCRIPCIÓN|
 |------------------|-----------------|
 |**Seleccionar**|Permite la interacción con nodos y bordes en el gráfico. En este modo, puede seleccionar nodos y moverlos o eliminarlos, y puede establecer bordes o interrumpirlos.|
 |**Movimiento panorámico**|Habilita el movimiento de un gráfico de sombreador en relación con el marco de la ventana. Para realizar el movimiento panorámico, seleccione un punto en la superficie de diseño y muévalo.<br /><br /> En el modo **Seleccionar**, mantenga presionado **Ctrl** para activar el modo **Movimiento panorámico** temporalmente.|
@@ -109,17 +109,17 @@ Use el modo **Seleccionar** para agregar, quitar, cambiar de posición, conectar
 
 - Esta es la manera de hacerlo:
 
-   - Para agregar un nodo al gráfico, selecciónelo en el **Cuadro de herramientas** y después muévalo a la superficie de diseño.
+  - Para agregar un nodo al gráfico, selecciónelo en el **Cuadro de herramientas** y después muévalo a la superficie de diseño.
 
-   - Para quitar un nodo del gráfico, selecciónelo y después presione **Supr**.
+  - Para quitar un nodo del gráfico, selecciónelo y después presione **Supr**.
 
-   - Para cambiar la posición de un nodo, selecciónelo y después muévalo a una nueva ubicación.
+  - Para cambiar la posición de un nodo, selecciónelo y después muévalo a una nueva ubicación.
 
-   - Para conectar dos nodos, mueva un terminal de salida de un nodo a un terminal de entrada del otro nodo. Solo se pueden conectar los terminales que tienen tipos compatibles. Una línea entre los terminales muestra la conexión.
+  - Para conectar dos nodos, mueva un terminal de salida de un nodo a un terminal de entrada del otro nodo. Solo se pueden conectar los terminales que tienen tipos compatibles. Una línea entre los terminales muestra la conexión.
 
-   - Para quitar una conexión, en el menú contextual de uno de los terminales conectados, seleccione **Interrumpir vínculos**.
+  - Para quitar una conexión, en el menú contextual de uno de los terminales conectados, seleccione **Interrumpir vínculos**.
 
-   - Para configurar las propiedades de un nodo, seleccione el nodo y, después, en la ventana **Propiedades**, especifique los nuevos valores para las propiedades.
+  - Para configurar las propiedades de un nodo, seleccione el nodo y, después, en la ventana **Propiedades**, especifique los nuevos valores para las propiedades.
 
 ### <a name="preview-shaders"></a>Vista previa de sombreadores
 
@@ -168,7 +168,7 @@ Para girar la forma, mantenga presionada la tecla **Alt** y, después, seleccion
 
 Antes de poder usar un sombreador en la aplicación, tendrá que exportar en un formato que DirectX entienda.
 
-Puede exportar sombreadores como código fuente de HLSL o como código de bytes compilado del sombreador. El código fuente de HLSL se exporta a un archivo de texto que tiene una extensión de nombre de archivo *.hlsl*. El código de bytes de sombreador se puede exportar a un archivo binario sin formato que tenga la extensión de nombre de archivo *.cso* o a un archivo de encabezado (*.h*) de C++ que codifique el código de bytes del sombreador en una matriz.
+Puede exportar sombreadores como código fuente de HLSL o como código de bytes compilado del sombreador. El código fuente de HLSL se exporta a un archivo de texto que tiene una extensión de nombre de archivo *.hlsl*. El código de bytes de sombreador se puede exportar a un archivo binario sin formato que tenga la extensión de nombre de archivo *.cso* o a un archivo de encabezado ( *.h*) de C++ que codifique el código de bytes del sombreador en una matriz.
 
 Para obtener más información sobre cómo exportar sombreadores, vea [Cómo: Exportar un sombreador](../designers/how-to-export-a-shader.md).
 
@@ -182,8 +182,8 @@ Para obtener más información sobre cómo exportar sombreadores, vea [Cómo: Ex
 |Seleccionar todo|**Ctrl**+**A**|
 |Eliminar la selección actual|**Eliminar**|
 |Cancelar la selección actual|**Escape** (**Esc**)|
-|Acercar|**Ctrl**+**Rueda del mouse hacia delante**<br /><br /> Signo más (**+**)|
-|Alejar|**Ctrl**+**Rueda del mouse hacia atrás**<br /><br /> Signo menos (**-**)|
+|Acercar|**Ctrl**+**Rueda del mouse hacia delante**<br /><br /> Signo más ( **+** )|
+|Alejar|**Ctrl**+**Rueda del mouse hacia atrás**<br /><br /> Signo menos ( **-** )|
 |Movimiento panorámico hacia arriba de la superficie de diseño|**Rueda del mouse hacia atrás**<br /><br /> **AvPág**|
 |Movimiento panorámico hacia abajo de la superficie de diseño|**Rueda del mouse hacia delante**<br /><br /> **RePág**|
 |Movimiento panorámico hacia la izquierda de la superficie de diseño|**Mayús**+**Rueda del mouse hacia atrás**<br /><br /> **Rueda del mouse a la izquierda**<br /><br /> **Mayús**+**AvPág**|
@@ -199,7 +199,7 @@ Para obtener más información sobre cómo exportar sombreadores, vea [Cómo: Ex
 
 ## <a name="related-topics"></a>Temas relacionados
 
-|Title|Descripción|
+|Title|DESCRIPCIÓN|
 |-----------|-----------------|
 |[Trabajar con activos 3D para juegos y aplicaciones](../designers/working-with-3-d-assets-for-games-and-apps.md)|Proporciona información general sobre las herramientas de Visual Studio que se pueden usar para trabajar con texturas e imágenes, modelos 3D y efectos de sombreador.|
 |[Image Editor](../designers/image-editor.md)|Se describe el uso del editor de imágenes de Visual Studio para trabajar con texturas e imágenes.|

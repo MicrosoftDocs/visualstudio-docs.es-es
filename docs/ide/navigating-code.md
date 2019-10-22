@@ -18,12 +18,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 792b3ccf09faf9983afcd72de9acc0f23540683d
-ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
+ms.openlocfilehash: 1263b7a0ae65731eb618ffc925ff0f6310be0f4d
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57223538"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68919513"
 ---
 # <a name="navigate-code"></a>Navegación en el código
 
@@ -31,7 +31,7 @@ Visual Studio ofrece numerosas formas de navegar por el código en el editor. En
 
 ## <a name="navigate-backward-and-navigate-forward-commands"></a>Comandos Navegar hacia atrás y Navegar hacia delante
 
-Puede usar los botones **Navegar hacia atrás** (**Ctrl**+**-**) y **Navegar hacia delante** (**Ctrl**+**Mayús**+**-**) de la barra de herramientas para mover el punto de inserción a ubicaciones anteriores o para volver a una ubicación más reciente desde una ubicación anterior. Estos botones retienen las últimas 20 ubicaciones del punto de inserción. Estos comandos también están disponibles en el menú **Vista**, en **Navegar hacia atrás** y **Navegar hacia delante**.
+Puede usar los botones **Navegar hacia atrás** (**Ctrl**+ **-** ) y **Navegar hacia delante** (**Ctrl**+**Mayús**+ **-** ) de la barra de herramientas para mover el punto de inserción a ubicaciones anteriores o para volver a una ubicación más reciente desde una ubicación anterior. Estos botones retienen las últimas 20 ubicaciones del punto de inserción. Estos comandos también están disponibles en el menú **Vista**, en **Navegar hacia atrás** y **Navegar hacia delante**.
 
 ![Botones de navegación hacia adelante y atrás](../ide/media/vs2017_nav_buttons.png)
 
@@ -39,7 +39,7 @@ Puede usar los botones **Navegar hacia atrás** (**Ctrl**+**-**) y **Navegar hac
 
 Puede usar la **barra de navegación** (los cuadros desplegables situados en la parte superior de la ventana de código) para navegar por el código de un código base. Puede elegir un tipo o un miembro para ir directamente a él. La barra de navegación aparece cuando se edita código en un código base de Visual Basic, C# o C++. En una clase parcial, los miembros definidos fuera del archivo de código actual pueden estar deshabilitados (se muestran en gris).
 
- ![Barra de navegación por el código](../ide/media/vside_navigation_bar.png)
+![Barra de navegación por el código](../ide/media/vside_navigation_bar.png)
 
 Puede navegar por los cuadros desplegables como se indica a continuación:
 
@@ -78,7 +78,7 @@ Ir a tiene los comandos siguientes, que están disponibles en el menú **Editar*
 
 - **Ir a la línea** (**Ctrl**+**G**): Moverse al número de línea especificado en el documento activo.
 
-- **Ir a todo** (**Ctrl**+**T** o **Ctrl**+**,**): Moverse a la línea, tipo, archivo, miembro o símbolo especificados.
+- **Ir a todo** (**Ctrl**+**T** o **Ctrl**+ **,** ): Moverse a la línea, tipo, archivo, miembro o símbolo especificados.
 
 - **Ir al archivo** (**Ctrl**+**1**, **Ctrl**+**F**): Moverse al archivo especificado en la solución.
 

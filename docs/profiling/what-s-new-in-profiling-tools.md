@@ -13,14 +13,14 @@ manager: jillfra
 ms.workload:
 - multiple
 monikerRange: vs-2017
-ms.openlocfilehash: 8fcd01198877ef06eb398ce99fe467deb923546c
-ms.sourcegitcommit: 36f5ffd6ae3215fe31837f4366158bf0d871f7a9
+ms.openlocfilehash: 0512c6e95f0a26184593f7af5ba08c31c33a3299
+ms.sourcegitcommit: 53bc4c11b82882ab658e34c65ae374060f823531
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/08/2019
-ms.locfileid: "59232475"
+ms.lasthandoff: 09/19/2019
+ms.locfileid: "71128337"
 ---
-# <a name="whats-new-in-profiling-tools-in-includevsdev15miscincludesvsdev15mdmd"></a>Novedades de las herramientas de generación de perfiles en [!include[vs_dev15](../misc/includes/vs_dev15_md.md)]
+# <a name="whats-new-in-profiling-tools-in-includevs_dev15miscincludesvs_dev15_mdmd"></a>Novedades de las herramientas de generación de perfiles en [!include[vs_dev15](../misc/includes/vs_dev15_md.md)]
 
 Las herramientas de diagnóstico incluyen nuevas visualizaciones para ayudarle a identificar problemas en la aplicación que se deben corregir. Las herramientas de diagnóstico ahora incluyen compatibilidad para aplicaciones de ASP.NET.
 
@@ -36,5 +36,5 @@ La herramienta de uso de CPU tiene [nuevas visualizaciones](../profiling/Beginne
 
 ## <a name="see-also"></a>Vea también
 
-- [Generación de perfiles en Visual Studio](../profiling/index.md)
-- [Un primer vistazo a las herramientas de generación de perfiles](../profiling/profiling-feature-tour.md)
+- [Profile in Visual Studio](../profiling/index.yml) (Generación de perfiles en Visual Studio)
+- [Primer vistazo a la generación de perfiles](../profiling/profiling-feature-tour.md)

@@ -13,12 +13,12 @@ ms.assetid: cf5fe926-e784-4098-bc01-cac49c7c55c6
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 1711b1409e42d431ad34badf82cff68e5a9bad75
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 511c730ec3a11b02d46f5e9c9271c028bb4fa325
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58996287"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65690773"
 ---
 # <a name="vscodewindow-object"></a>VSCodeWindow (Objeto)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,4 +37,4 @@ Una ventana de código es una ventana de documento especializado que puede inclu
   
 ## <a name="see-also"></a>Vea también  
  <xref:Microsoft.VisualStudio.OLE.Interop.IServiceProvider>   
- [Edición de cifras](http://msdn.microsoft.com/f08872bd-fd9c-4e36-8cf2-a2a2622ef986)
+ [Edición de cifras](https://msdn.microsoft.com/f08872bd-fd9c-4e36-8cf2-a2a2622ef986)

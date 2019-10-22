@@ -1,24 +1,22 @@
 ---
 title: Personalización del sistema de compilación
 description: Este artículo es una breve introducción al sistema de compilación MSBuild utilizado por Visual Studio para Mac
-author: conceptdev
-ms.author: crdun
-ms.date: 04/14/2017
+author: heiligerdankgesang
+ms.author: dominicn
+ms.date: 09/19/2019
 ms.assetid: 6958B102-8527-4B40-BC65-3505DB63F9D3
-ms.openlocfilehash: 0c2a4590b15faa2573ccab3ff51ff5cd54e177ca
-ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
+ms.openlocfilehash: 0c511c448136210038f1034321a2828e5153add1
+ms.sourcegitcommit: 53bc4c11b82882ab658e34c65ae374060f823531
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/27/2019
-ms.locfileid: "56953852"
+ms.lasthandoff: 09/19/2019
+ms.locfileid: "71128390"
 ---
 # <a name="customizing-the-build-system"></a>Personalización del sistema de compilación
 
-MSBuild es un motor de compilación desarrollado por Microsoft que permite la compilación de aplicaciones de .NET principalmente. El marco de trabajo Mono además tiene su propia implementación del motor de compilación de Microsoft, denominado **xbuild**. Pero xbuild ha quedado desfasado en favor de MSBuild en todos los sistemas operativos.
+Microsoft Build Engine es una plataforma para compilar aplicaciones. Este motor, conocido también como MSBuild, está desarrollado por Microsoft y permite la compilación de aplicaciones .NET. El marco de trabajo Mono además tiene su propia implementación del motor de compilación de Microsoft, denominado **xbuild**. Aun así, xbuild está desapareciendo en favor de MSBuild en todos los sistemas operativos.
 
-**MSBuild** se usa principalmente como sistema de compilación para los proyectos de Visual Studio para Mac.
-
-MSBuild toma un conjunto de entradas, como archivos de código fuente, y las transforma en salidas, como archivos ejecutables. Consigue este resultado mediante la invocación de herramientas como el compilador.
+**MSBuild** se usa como sistema de compilación para proyectos en Visual Studio para Mac. Toma un conjunto de entradas, como archivos de código fuente, y las transforma en salidas, como archivos ejecutables. Consigue este resultado mediante la invocación de herramientas como el compilador.
 
 ## <a name="msbuild-file"></a>Archivo de MSBuild
 

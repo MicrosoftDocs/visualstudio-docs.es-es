@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - BP_PASSCOUNT_STYLE structure
 ms.assetid: 0a647047-e2d5-4724-a0b8-68108425ecad
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 809c63fe536166efe0779cd4e4dc0149b219390a
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 4ea44ef70ba086a58454891987711ce7cca643e8
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56686059"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66353051"
 ---
 # <a name="bppasscountstyle"></a>BP_PASSCOUNT_STYLE
 Especifica la condición asociada con el número de pase de punto de interrupción que hace que el punto de interrupción se activan.
@@ -43,14 +46,18 @@ public enum enum_BP_PASSCOUNT_STYLE {
 };
 ```
 
-## <a name="members"></a>Miembros
-BP_PASSCOUNT_NONE se especifica ningún estilo de recuento de pase de punto de interrupción.
+## <a name="fields"></a>Campos
+`BP_PASSCOUNT_NONE`\
+No especifica que ningún estilo de recuento de pase de punto de interrupción.
 
-BP_PASSCOUNT_EQUAL establece el estilo de recuento de pase de punto de interrupción en el mismo. El punto de interrupción se desencadena cuando el número de veces que se visita el punto de interrupción es igual que el contador de pasos.
+`BP_PASSCOUNT_EQUAL`\
+Establece el estilo de recuento de pase de punto de interrupción para que sea igual. El punto de interrupción se desencadena cuando el número de veces que se visita el punto de interrupción es igual que el contador de pasos.
 
-BP_PASSCOUNT_EQUAL_OR_GREATER establece el estilo de recuento de pase de punto de interrupción en igual o mayor. El punto de interrupción se desencadena cuando el número de veces que se visita el punto de interrupción es igual o mayor que el recuento de pass.
+`BP_PASSCOUNT_EQUAL_OR_GREATER`\
+Establece el estilo de recuento de pase de punto de interrupción en el igual o mayor. El punto de interrupción se desencadena cuando el número de veces que se visita el punto de interrupción es igual o mayor que el recuento de pass.
 
-BP_PASSCOUNT_MOD especifica un módulo de recuento de pasos. Por ejemplo, si el contador de pasos es del tipo `BP_PASSCOUNT_MOD` y el valor de recuento de pass es 4, se activa el punto de interrupción cada vez que el recuento de visitas sea un múltiplo de 4.
+`BP_PASSCOUNT_MOD`\
+Especifica un módulo de recuento de pasos. Por ejemplo, si el contador de pasos es del tipo `BP_PASSCOUNT_MOD` y el valor de recuento de pass es 4, se activa el punto de interrupción cada vez que el recuento de visitas sea un múltiplo de 4.
 
 ## <a name="remarks"></a>Comentarios
 Utilizado para la `stylePassCount` miembro de la [BP_PASSCOUNT](../../../extensibility/debugger/reference/bp-passcount.md) estructura que a su vez es miembro de la [BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md) y [BP_REQUEST_INFO2](../../../extensibility/debugger/reference/bp-request-info2.md) estructuras.

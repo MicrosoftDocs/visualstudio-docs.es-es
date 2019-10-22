@@ -1,21 +1,21 @@
 ---
-title: 'Tutorial: Usar XSLT IntelliSense'
+title: 'Tutorial: Usar XSLT de IntelliSense'
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 079d95ac-2eaf-4ae1-9cd3-2c81a961a942
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 880f098d96c23236a065894629a36a746ecedce7
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 606c4ad307de46d19989d14e2c660cc0286cb803
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60062734"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72604376"
 ---
-# <a name="walkthrough-using-xslt-intellisense"></a>Tutorial: Usar XSLT IntelliSense
+# <a name="walkthrough-using-xslt-intellisense"></a>Tutorial: Usar XSLT de IntelliSense
 
 Este tutorial muestra cómo usar XSLT de IntelliSense para autocompletar los valores de algunos atributos.
 
@@ -45,7 +45,7 @@ Este tutorial muestra cómo usar XSLT de IntelliSense para autocompletar los val
     </xsl:stylesheet>
     ```
 
-2. Coloque el cursor después `<xsl:template name="msg23" match="msg23">` y presione **ENTRAR**. A continuación, comience a escribir el elemento `xsl:call-template` siguiente:
+2. Inserte el cursor después de `<xsl:template name="msg23" match="msg23">` y presione **entrar**. A continuación, comience a escribir el elemento `xsl:call-template` siguiente:
 
     ```xml
     <xsl:call-template name="localized-message">
@@ -54,7 +54,7 @@ Este tutorial muestra cómo usar XSLT de IntelliSense para autocompletar los val
 
      La lista de nombres de plantilla aparece en el atributo `name=""` del elemento `xsl:call-template` a medida que se escribe.
 
-3. Coloque el cursor después `<xsl:call-template name="localized-message">` y presione **ENTRAR**. A continuación, comience a escribir el elemento `xsl:with-param` siguiente:
+3. Inserte el cursor después de `<xsl:call-template name="localized-message">` y presione **entrar**. A continuación, comience a escribir el elemento `xsl:with-param` siguiente:
 
     ```xml
     <xsl:with-param name="msgcode">msg23</xsl:with-param>
@@ -111,7 +111,7 @@ Este tutorial muestra cómo usar XSLT de IntelliSense para autocompletar los val
     </xsl:stylesheet>
     ```
 
-2. Coloque el cursor después `<xsl:apply-templates select="phone" />` y presione **ENTRAR**. A continuación, comience a escribir el elemento `xsl: apply-templates` siguiente:
+2. Inserte el cursor después de `<xsl:apply-templates select="phone" />` y presione **entrar**. A continuación, comience a escribir el elemento `xsl: apply-templates` siguiente:
 
     ```xml
     <xsl:apply-templates select="phone"  mode="accountNumber">
@@ -152,7 +152,7 @@ Este tutorial muestra cómo usar XSLT de IntelliSense para autocompletar los val
     </xsl:stylesheet>
     ```
 
-2. Coloque el cursor después `<xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:alt="http://www.w3.org/1999/XSL/Transform-alternate" version="1.0">` y presione **ENTRAR**. A continuación, comience a escribir el elemento `xsl:namespace-alias` siguiente:
+2. Inserte el cursor después de `<xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:alt="http://www.w3.org/1999/XSL/Transform-alternate" version="1.0">` y presione **entrar**. A continuación, comience a escribir el elemento `xsl:namespace-alias` siguiente:
 
     ```xml
     <xsl:namespace-alias stylesheet-prefix="alt" result-prefix="xsl"/>

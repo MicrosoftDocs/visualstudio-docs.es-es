@@ -13,11 +13,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: e34c4db965cacefabe752774e393a4339042040e
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54780952"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68182712"
 ---
 # <a name="controlling-data-collection"></a>Controlar la recolección de datos
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,5 +34,5 @@ Las herramientas de generación de perfiles de [!INCLUDE[vsprvs](../includes/vsp
 ## <a name="related-sections"></a>Secciones relacionadas  
  [Configurar sesiones de rendimiento](../profiling/configuring-performance-sessions.md)  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Otras referencias  
  [Explorador de rendimiento](../profiling/performance-explorer.md)

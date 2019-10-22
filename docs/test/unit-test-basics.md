@@ -1,6 +1,6 @@
 ---
-title: Conceptos básicos de prueba unitaria
-ms.date: 01/07/2016
+title: Datos fundamentales de las pruebas unitarias
+ms.date: 08/07/2019
 ms.topic: conceptual
 f1_keywords:
 - vs.UnitTest.CreateUnitTest
@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: df0d6c25bad57550fcfc9ce475dcc9da488f195f
-ms.sourcegitcommit: b14b7a938a2aba9fcce4d5e813aadf2040b0dcda
+ms.openlocfilehash: aff50f5933d540297711e44487c775d93968f0fd
+ms.sourcegitcommit: 689ba54ea14257d13031de881f5d4fe937a36f56
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "58647419"
+ms.lasthandoff: 09/27/2019
+ms.locfileid: "71342434"
 ---
 # <a name="unit-test-basics"></a>Conceptos básicos de las pruebas unitarias
 
@@ -40,7 +40,12 @@ Para obtener una introducción a las pruebas unitarias que le guíe directamente
 
 En este artículo, se utiliza el desarrollo de una aplicación ficticia denominada `MyBank` como ejemplo. No es necesario el código real para seguir las explicaciones de este tema. Los métodos de prueba se escriben en C# y presentan mediante el Marco de pruebas unitarias de Microsoft para código administrado. Sin embargo, los conceptos se transfieren fácilmente a otros lenguajes y marcos de trabajo.
 
+::: moniker range="vs-2017"
 ![Solución MyBank](../test/media/ute_mybanksolution.png)
+::: moniker-end
+::: moniker range=">=vs-2019"
+![Solución MyBank 2019](../test/media/vs-2019/basics-mybank-solution.png)
+::: moniker-end
 
 Nuestro primer intento de un diseño para la aplicación `MyBank` incluye un componente de cuentas que representa una cuenta individual y sus transacciones con el banco, así como un componente de base de datos que representa la funcionalidad para agregar y administrar las cuentas individuales.
 
@@ -69,7 +74,7 @@ public void Withdraw(double amount)
     }
     else
     {
-        throw new ArgumentException(amount, "Withdrawal exceeds balance!")
+        throw new ArgumentException(nameof(amount), "Withdrawal exceeds balance!");
     }
 }
 ```
@@ -82,17 +87,30 @@ En general, es más rápido generar el proyecto de prueba unitaria y los código
 
 ### <a name="generate-unit-test-project-and-unit-test-stubs"></a>Generar el proyecto de prueba unitaria y los códigos auxiliares correspondientes
 
-1. En la ventana del editor de código, haga clic con el botón derecho y seleccione **Crear pruebas unitarias** en el menú contextual.
+1. En la ventana del editor de código, haga clic con el botón derecho y seleccione [**Crear pruebas unitarias**](create-unit-tests-menu.md) en el menú contextual.
 
-    ![Desde la ventana del editor, vea el menú contextual](../test/media/createunittestsrightclick.png)
+   ::: moniker range="vs-2017"
+   ![Desde la ventana del editor, vea el menú contextual](../test/media/createunittestsrightclick.png)
+   ::: moniker-end
+   ::: moniker range=">=vs-2019"
+   ![Desde la ventana del editor, vea el menú contextual](../test/media/vs-2019/basics-create-unit-tests.png)
+   ::: moniker-end
+
+   > [!NOTE]
+   > El comando de menú **Crear pruebas unitarias** solo está disponible en el caso de código administrado que tiene como destino .NET Framework (pero no .NET Core).
 
 2. Haga clic en **Aceptar** para aceptar los valores predeterminados al crear las pruebas unitarias o cambiar los valores usados para crear las pruebas unitarias y el proyecto que las engloba, y asignarles un nombre. Puede seleccionar el código que se agrega de forma predeterminada a los métodos de prueba unitaria.
 
-    ![Cuadro de diálogo Crear pruebas unitarias en Visual Studio](../test/media/create-unit-tests.png)
+   ![Cuadro de diálogo Crear pruebas unitarias en Visual Studio](../test/media/create-unit-tests.png)
 
 3. El código auxiliar de prueba unitaria se crea en un proyecto de prueba unitaria nuevo para todos los métodos de la clase.
 
-    ![Se crean las pruebas unitarias](../test/media/createunittestsstubs.png)
+   ::: moniker range="vs-2017"
+   ![Se crean las pruebas unitarias](../test/media/createunittestsstubs.png)
+   ::: moniker-end
+   ::: moniker range=">=vs-2019"
+   ![Se crean las pruebas unitarias](../test/media/vs-2019/basics-test-stub.png)
+   ::: moniker-end
 
 4. Avance para saber cómo [agregar código a los métodos de prueba unitaria](#write-your-tests) (de modo que la prueba sea significativa) y cómo agregar pruebas unitarias adicionales para probar exhaustivamente el código.
 
@@ -127,17 +145,17 @@ Un proyecto de prueba unitaria suele reflejar la estructura de un solo proyecto 
 
    Para crear la referencia al proyecto de código:
 
-   1.  Seleccione el proyecto en el **Explorador de soluciones**.
+   1. Seleccione el proyecto en el **Explorador de soluciones**.
 
-   2.  En el menú **Proyecto** , elija **Agregar referencia**.
+   2. En el menú **Proyecto** , elija **Agregar referencia**.
 
-   3.  En el cuadro de diálogo **Administrador de referencias**, abra el nodo **Solución** y elija **Proyectos**. Seleccione el nombre del proyecto de código y cierre el cuadro de diálogo.
+   3. En el cuadro de diálogo **Administrador de referencias**, abra el nodo **Solución** y elija **Proyectos**. Seleccione el nombre del proyecto de código y cierre el cuadro de diálogo.
 
 Cada proyecto de prueba unitaria contiene clases que reflejan los nombres de las clases en el proyecto de código. En nuestro ejemplo, el proyecto `AccountsTests` contendría las clases siguientes:
 
--   La clase`AccountInfoTests` contiene los métodos de prueba unitaria para la clase `AccountInfo` del proyecto `Accounts` .
+- La clase`AccountInfoTests` contiene los métodos de prueba unitaria para la clase `AccountInfo` del proyecto `Accounts` .
 
--   La clase`CheckingAccountTests` contiene los métodos de prueba unitaria para la clase `CheckingAccount` .
+- La clase`CheckingAccountTests` contiene los métodos de prueba unitaria para la clase `CheckingAccount` .
 
 ## <a name="write-your-tests"></a>Escribir las pruebas
 
@@ -162,38 +180,36 @@ public void Withdraw_ValidAmount_ChangesBalance()
     double withdrawal = 1.0;
     double expected = 9.0;
     var account = new CheckingAccount("JohnDoe", currentBalance);
+
     // act
     account.Withdraw(withdrawal);
-    double actual = account.Balance;
+
     // assert
-    Assert.AreEqual(expected, actual);
+    Assert.AreEqual(expected, account.Balance);
 }
 
 [TestMethod]
-[ExpectedException(typeof(ArgumentException))]
 public void Withdraw_AmountMoreThanBalance_Throws()
 {
     // arrange
     var account = new CheckingAccount("John Doe", 10.0);
-    // act
-    account.Withdraw(20.0);
-    // assert is handled by the ExpectedException
+
+    // act and assert
+    Assert.ThrowsException<System.ArgumentException>(() => account.Withdraw(20.0));
 }
 ```
 
-Observe que `Withdraw_ValidAmount_ChangesBalance` usa una instrucción `Assert` explícita para determinar si el método de prueba se supera o no, mientras que `Withdraw_AmountMoreThanBalance_Throws` usa el atributo `ExpectedException` para determinar el éxito del método de prueba. En segundo plano, un marco de pruebas unitarias incluye métodos de prueba en instrucciones try/catch. En la mayoría de los casos, si se detecta una excepción, el método de prueba no se supera y se omite la excepción. El atributo `ExpectedException` hace que el método de prueba se supere si se produce la excepción especificada.
-
 Para obtener más información sobre los marcos de pruebas unitarias de Microsoft, consulte uno de los temas siguientes:
 
--   [Haga una prueba unitaria de su código](unit-test-your-code.md)
+- [Haga una prueba unitaria de su código](unit-test-your-code.md)
 
--   [Escribir pruebas unitarias para C/C++](writing-unit-tests-for-c-cpp.md)
+- [Escribir pruebas unitarias para C/C++](writing-unit-tests-for-c-cpp.md)
 
--   [Usar el marco de trabajo MSTest en pruebas unitarias](using-microsoft-visualstudio-testtools-unittesting-members-in-unit-tests.md)
+- [Usar el marco de trabajo MSTest en pruebas unitarias](using-microsoft-visualstudio-testtools-unittesting-members-in-unit-tests.md)
 
 ## <a name="set-timeouts-for-unit-tests"></a>Establecer tiempos de espera de conexión para las pruebas unitarias
 
-Para establecer un tiempo de espera en un método de prueba individual:
+Si usa el marco MSTest, puede usar <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TimeoutAttribute> para establecer un tiempo de espera en un método de prueba individual:
 
 ```csharp
 [TestMethod]
@@ -217,9 +233,14 @@ public void My_Test ()
 
 Al compilar el proyecto de prueba, las pruebas aparecen en el **Explorador de pruebas**. Si el **Explorador de pruebas** no está visible, elija **Prueba** en el menú de Visual Studio, elija **Ventanas** y, después, **Explorador de pruebas**.
 
+::: moniker range="vs-2017"
 ![Explorador de pruebas unitarias](../test/media/ute_failedpassednotrunsummary.png)
+::: moniker-end
+::: moniker range=">=vs-2019"
+![Explorador de pruebas unitarias](../test/media/vs-2019/basics-test-explorer.png)
+::: moniker-end
 
-Al ejecutar, escribir y volver a ejecutar las pruebas, la vista predeterminada del **Explorador de pruebas** muestra los resultados en grupos de **Pruebas no superadas**, **Pruebas superadas**, **Pruebas omitidas** y **Pruebas no ejecutadas**. Se puede elegir el título de un grupo para abrir la vista en la que se muestran todas las pruebas de ese grupo.
+Al ejecutar, escribir y volver a ejecutar las pruebas, el **Explorador de pruebas** puede mostrar los resultados en grupos clasificados como **Pruebas no superadas**, **Pruebas superadas**, **Pruebas omitidas** y **Pruebas no ejecutadas**. En la barra de herramientas puede elegir diferentes opciones de agrupación.
 
 También puede filtrar las pruebas en cualquier vista haciendo coincidir texto del cuadro de búsqueda a nivel global o seleccionando uno de los filtros predefinidos. Se puede ejecutar cualquier selección de las pruebas en cualquier momento. Los resultados de una serie de pruebas son inmediatamente visibles en la barra de éxito/error de la parte superior de la ventana del explorador. Los detalles de un resultado del método de prueba se muestran al seleccionar la prueba.
 
@@ -227,32 +248,62 @@ También puede filtrar las pruebas en cualquier vista haciendo coincidir texto d
 
 La barra de herramientas del **Explorador de pruebas** le ayuda a detectar, organizar y ejecutar las pruebas que le interesan.
 
+::: moniker range="vs-2017"
 ![Ejecutar pruebas desde la barra de herramientas del Explorador de pruebas](../test/media/ute_toolbar.png)
+::: moniker-end
+::: moniker range=">=vs-2019"
+![Ejecutar pruebas desde la barra de herramientas del Explorador de pruebas](../test/media/vs-2019/test-explorer-toolbar-diagram-16-2.png)
+::: moniker-end
 
-Se puede elegir **Ejecutar todas** para ejecutar todas las pruebas o bien **Ejecutar** para elegir un subconjunto de pruebas que se desea ejecutar. Después de ejecutar un conjunto de pruebas, aparecerá un resumen de la serie de pruebas en la parte inferior de la ventana **Explorador de pruebas**. Seleccione una prueba para ver los detalles de esa prueba en el panel inferior. Seleccione **Abrir prueba** en el menú contextual (teclado: **F12**) para mostrar el código fuente de la prueba seleccionada.
+Se puede elegir **Ejecutar todas** para ejecutar todas las pruebas o bien **Ejecutar** para elegir un subconjunto de pruebas que se desea ejecutar. Seleccione una prueba para ver sus detalles correspondientes en el panel Detalles de la prueba. Seleccione **Abrir prueba** en el menú contextual (teclado: **F12**) para mostrar el código fuente de la prueba seleccionada.
+
+::: moniker range="vs-2017"
 
 Si las pruebas individuales no tienen ninguna dependencia que impida que se ejecuten en cualquier orden, active la ejecución de pruebas paralelas con el botón de alternancia ![UTE&#95;parallelicon&#45;small](../test/media/ute_parallelicon-small.png) en la barra de herramientas. Esto puede reducir considerablemente el tiempo necesario para ejecutar todas las pruebas.
 
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+Si las pruebas individuales no tienen ninguna dependencia que impida que se ejecuten en cualquier orden, active la ejecución de pruebas paralelas en el menú de configuración de la barra de herramientas. Esto puede reducir considerablemente el tiempo necesario para ejecutar todas las pruebas.
+
+::: moniker-end
+
 ### <a name="run-tests-after-every-build"></a>Ejecutar pruebas después de cada compilación
 
-> [!WARNING]
-> La ejecución de pruebas unitarias después de cada compilación solo se admite en Visual Studio Enterprise.
+::: moniker range="vs-2017"
 
-|Botón|Descripción|
+|Botón|DESCRIPCIÓN|
 |-|-|
-|![Ejecutar después de compilar](../test/media/ute_runafterbuild_btn.png)|Para ejecutar pruebas unitarias después de cada compilación local, elija **Prueba** en el menú estándar o **Ejecutar pruebas después de compilar** en la barra de herramientas del **Explorador de pruebas**.|
+|![Ejecutar después de compilar](../test/media/ute_runafterbuild_btn.png)|Para ejecutar pruebas unitarias después de cada compilación local, elija **Prueba** en el menú estándar, o **Ejecutar pruebas después de compilar** en la barra de herramientas del **Explorador de pruebas**.|
+
+> [!NOTE]
+> La ejecución de pruebas unitarias después de cada compilación requiere Visual Studio 2017 Enterprise Edition o Visual Studio 2019. En Visual Studio 2019, la característica está disponible en las ediciones Community y Professional, además de en la edición Enterprise.
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+Para ejecutar las pruebas unitarias después de cada compilación local, abra el icono de configuración en la barra de herramientas del Explorador de pruebas y seleccione **Ejecutar pruebas después de compilar**.
+
+::: moniker-end
 
 ### <a name="filter-and-group-the-test-list"></a>Filtrar y agrupar la lista de pruebas
 
-Si tiene un gran número de pruebas, puede escribir en el cuadro de búsqueda del **Explorador de pruebas** para filtrar la lista por la cadena especificada. Para limitar aún más el evento de filtro, elija una opción de la lista de filtros.
+Si tiene muchas pruebas, puede escribir en el cuadro de búsqueda del **Explorador de pruebas** para filtrar la lista por la cadena especificada. Para limitar aún más el evento de filtro, elija una opción de la lista de filtros.
 
+::: moniker range="vs-2017"
 ![Categorías de filtro de búsqueda](../test/media/ute_searchfilter.png)
+::: moniker-end
+::: moniker range=">=vs-2019"
+![Categorías de filtro de búsqueda](../test/media/vs-2019/test-explorer-search-filter-16-2.png)
+::: moniker-end
 
-|Botón|Descripción|
+|Botón|DESCRIPCIÓN|
 |-|-|
 |![Botón de grupo Explorador de pruebas](../test/media/ute_groupby_btn.png)|Para agrupar las pruebas por categoría, elija el botón **Agrupar por** .|
 
-Para más información, vea [Ejecutar pruebas unitarias con el Explorador de pruebas](../test/run-unit-tests-with-test-explorer.md).
+Para obtener más información, consulte [Ejecutar pruebas unitarias con el Explorador de pruebas](../test/run-unit-tests-with-test-explorer.md).
 
 ## <a name="qa"></a>Preguntas y respuestas
 
@@ -260,20 +311,25 @@ Para más información, vea [Ejecutar pruebas unitarias con el Explorador de pru
 
 **R:** Use el **Explorador de pruebas** para iniciar una sesión de depuración de las pruebas. La ejecución paso a paso del código con el depurador de Visual Studio permite avanzar y retroceder sin problemas entre las pruebas unitarias y el proyecto objeto de prueba. Para iniciar la depuración:
 
-1.  En el editor de Visual Studio, establezca un punto de interrupción en uno o varios métodos de prueba que desee depurar.
+1. En el editor de Visual Studio, establezca un punto de interrupción en uno o varios métodos de prueba que desee depurar.
 
     > [!NOTE]
     > Dado que los métodos de prueba se pueden ejecutar en cualquier orden, establezca puntos de interrupción en todos los métodos de prueba que desee depurar.
 
-2.  En el **Explorador de pruebas**, seleccione los métodos de prueba y después elija **Depurar pruebas seleccionadas** en el menú contextual.
+2. En el **Explorador de pruebas**, seleccione los métodos de prueba y después elija **Depurar pruebas seleccionadas** en el menú contextual.
 
 Más información sobre la [depuración de pruebas unitarias](../debugger/debugger-feature-tour.md).
 
 **P: Si uso TDD, ¿cómo puedo generar el código a partir de las pruebas?**
 
-**R:** Use IntelliSense para generar clases y métodos en el código del proyecto. Escriba una instrucción en un método de prueba que llame a la clase o método que desea generar y, a continuación, abra el menú de IntelliSense bajo la llamada. Si la llamada es a un constructor de la nueva clase, elija **Generar nuevo tipo** en el menú y siga el asistente para insertar la clase en el proyecto de código. Si la llamada es a un método, elija **Generar nuevo método** en el menú de IntelliSense.
+**R:** Use Acciones rápidas para generar clases y métodos en el código del proyecto. Escriba una instrucción en un método de prueba que llame a la clase o al método que quiera generar y, después, abra la bombilla que aparece debajo del error. Si la llamada es a un constructor de la nueva clase, elija **Generar tipo** en el menú y siga el asistente para insertar la clase en el proyecto de código. Si la llamada es a un método, elija **Generar método** en el menú de IntelliSense.
 
-![Menú de IntelliSense Generar código auxiliar del método](../test/media/ute_generatemethodstubintellisense.png)
+::: moniker range="vs-2017"
+![Menú de acción rápida Generar código auxiliar del método](../test/media/ute_generatemethodstubintellisense.png)
+::: moniker-end
+::: moniker range=">=vs-2019"
+![Menú de acción rápida Generar código auxiliar del método](../test/media/vs-2019/basics-generate-method-tdd.png)
+::: moniker-end
 
 **P: ¿Puedo crear pruebas unitarias que acepten varios conjuntos de datos como entrada para ejecutar la prueba?**
 
@@ -309,11 +365,11 @@ Más información sobre [pruebas unitarias controladas por datos](../test/how-to
 
 **P: ¿Puedo ver la cantidad de código que se prueba en las pruebas unitarias?**
 
-**R:** Sí. Con la herramienta de cobertura de código de Visual Studio se puede determinar la cantidad del código que las pruebas unitarias están probando realmente. Se admiten los lenguajes nativos y administrados, así como todos los marcos de pruebas unitarias que pueda ejecutar el Marco de pruebas unitarias.
+**R:** Sí. Con la herramienta de cobertura de código de Visual Studio se puede determinar la cantidad del código que las pruebas unitarias están probando realmente en Visual Studio Enterprise. Se admiten los lenguajes nativos y administrados, así como todos los marcos de pruebas unitarias que pueda ejecutar el Marco de pruebas unitarias.
 
 La cobertura de código se puede ejecutar en pruebas seleccionadas o en todas las pruebas de una solución. La ventana **Resultados de la cobertura de código** muestra el porcentaje de bloques de código de producto que se han ejecutado por línea, función, clase, espacio de nombres y módulo.
 
-Para iniciar la cobertura de código para los métodos de prueba de una solución, elija **Pruebas** en el menú de Visual Studio y, después, elija **Analizar cobertura de código**.
+Para ejecutar la cobertura de código con los métodos de prueba de una solución, elija **Prueba** > **Analizar cobertura de código para todas las pruebas**.
 
 Los resultados de la cobertura aparecen en la ventana **Resultados de la cobertura de código**.
 
@@ -327,9 +383,9 @@ Más información sobre [cobertura de código](../test/using-code-coverage-to-de
 
 Microsoft Fakes usa dos enfoques para crear las clases de sustitución de dependencias externas:
 
-1.  Los*códigos auxiliares* generan clases de sustitución derivadas de la interfaz primaria de la clase de dependencia de destino. Los métodos de código auxiliar se pueden sustituir por métodos virtuales públicos de la clase de destino.
+1. Los*códigos auxiliares* generan clases de sustitución derivadas de la interfaz primaria de la clase de dependencia de destino. Los métodos de código auxiliar se pueden sustituir por métodos virtuales públicos de la clase de destino.
 
-2.  Las*correcciones de compatibilidad (shim)* usan la instrumentación del runtime para desviar las llamadas a un método de destino a un método shim de sustitución para métodos no virtuales.
+2. Las*correcciones de compatibilidad (shim)* usan la instrumentación del runtime para desviar las llamadas a un método de destino a un método shim de sustitución para métodos no virtuales.
 
 En ambos enfoques, use los delegados generados de las llamadas al método de dependencia para especificar el comportamiento deseado en el método de prueba.
 

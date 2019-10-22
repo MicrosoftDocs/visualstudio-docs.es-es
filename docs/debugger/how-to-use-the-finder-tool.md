@@ -1,5 +1,5 @@
 ---
-title: 'Cómo: usar la herramienta de búsqueda | Microsoft Docs'
+title: Procedimiento Utilice la herramienta de búsqueda | Documentos de Microsoft
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,14 +10,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 42cd2ec74c92bce545c459765f32eea479a2d5b3
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.openlocfilehash: 5bf3fcf00486ebb8ec54f2d692d483a7f9cf18d7
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56694626"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63387654"
 ---
-# <a name="how-to-use-the-finder-tool"></a>Cómo: Usar la herramienta de búsqueda
+# <a name="how-to-use-the-finder-tool"></a>Procedimiento Uso de la herramienta de búsqueda
 Puede usar la herramienta de búsqueda en el **Buscar ventana** cuadro de diálogo para mostrar la ventana Propiedades o mensajes. La herramienta de búsqueda también puede encontrar ventanas secundarias deshabilitadas y discernir qué ventana resaltar si deshabilita ventanas secundarias se superponen.
 
  ![Spy&#43; &#43; cuadro de diálogo Buscar ventana](../debugger/media/icon_spy--_find.png "Icon_Spy ++ _Find") herramienta de búsqueda en el cuadro de diálogo Buscar ventana
@@ -41,7 +41,7 @@ Puede usar la herramienta de búsqueda en el **Buscar ventana** cuadro de diálo
      Si tiene el identificador de la ventana que desea examinar (por ejemplo, si se copian desde el depurador), escríbalo en el **controlar** cuadro de texto.
 
    > [!TIP]
-   >  Para reducir la confusión en la pantalla, seleccione el **Ocultar Spy** opción. Esta opción oculta la ventana principal de Spy ++, dejando sólo los **Buscar ventana** cuadro de diálogo visible encima de las otras aplicaciones. La ventana principal de Spy ++ se restaura al hacer clic en **Aceptar** o **cancelar**, o cuando se borra el **Ocultar Spy ++** opción.
+   > Para reducir la confusión en la pantalla, seleccione el **Ocultar Spy** opción. Esta opción oculta la ventana principal de Spy ++, dejando sólo los **Buscar ventana** cuadro de diálogo visible encima de las otras aplicaciones. La ventana principal de Spy ++ se restaura al hacer clic en **Aceptar** o **cancelar**, o cuando se borra el **Ocultar Spy ++** opción.
 
 4. En **mostrar**, seleccione **propiedades** o **mensajes**.
 

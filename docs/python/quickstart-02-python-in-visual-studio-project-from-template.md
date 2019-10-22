@@ -11,11 +11,11 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: 089be3e6f28a939979f6bd97097ea7558824b493
-ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "59365956"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62429774"
 ---
 # <a name="quickstart-create-a-python-project-from-a-template-in-visual-studio"></a>Inicio rápido: Creación de un proyecto de Python desde una plantilla en Visual Studio
 
@@ -75,7 +75,7 @@ Después de [instalar la compatibilidad con Python en Visual Studio](installing
 
 1. Seleccione **Depurar** > **Iniciar sin depurar** para ejecutar el programa y abrir un explorador en `localhost:5555`.
 
-**Pregunta: Estoy utilizando un certificado X.509 con mi servicio y obtengo un System.Security.Cryptography.CryptographicException. ¿Qué otras plantillas de Python ofrece Visual Studio?**
+**Pregunta: ¿Qué otras plantillas de Python ofrece Visual Studio?**
 
 **Respuesta**: Con la carga de trabajo de Python instalada, Visual Studio proporciona una variedad de plantillas de proyecto que incluyen las de los [marcos web Flask, Bottle y Django](../python/python-web-application-project-templates.md), servicios en la nube de Azure, diferentes escenarios de aprendizaje automático e incluso una plantilla para crear un proyecto a partir de una estructura de carpetas existente que contiene una aplicación de Python. Puede acceder a ellas a través del cuadro de diálogo **Archivo** > **Nuevo** > **Proyecto** seleccionando el nodo de lenguaje **Python** y sus nodos secundarios.
 
@@ -83,7 +83,7 @@ Visual Studio también proporciona una variedad de *plantillas de elemento* o ar
 
 Mediante las plantillas puede ahorrar bastante tiempo al comenzar un proyecto o crear un archivo y también son una excelente manera de obtener información sobre diferentes tipos de aplicaciones y estructuras de código. Resulta útil invertir unos minutos en crear proyectos y elementos a partir de las diferentes plantillas para familiarizarse con lo que ofrecen.
 
-**Pregunta: Estoy utilizando un certificado X.509 con mi servicio y obtengo un System.Security.Cryptography.CryptographicException. ¿Puedo usar también las plantillas de Cookiecutter?**
+**Pregunta: ¿Puedo usar también las plantillas de Cookiecutter?**
 
 **Respuesta**: Sí. De hecho, Visual Studio proporciona integración directa con Cookiecutter. Puede obtener información sobre esta utilidad en [Inicio rápido: Creación de un proyecto a partir de una plantilla de Cookiecutter](../python/quickstart-04-python-in-visual-studio-project-from-cookiecutter.md).
 
@@ -94,6 +94,6 @@ Mediante las plantillas puede ahorrar bastante tiempo al comenzar un proyecto o 
 
 ## <a name="see-also"></a>Vea también
 
-- [Identificación manual de un intérprete de Python existente](managing-python-environments-in-visual-studio.md#manually-identify-an-existing-environment)
+- [Manually identifying an existing Python interpreter](managing-python-environments-in-visual-studio.md#manually-identify-an-existing-environment) (Identificación manual de un intérprete de Python existente)
 - [Instalación de la compatibilidad con Python en Visual Studio 2015 y versiones anteriores](installing-python-support-in-visual-studio.md)
 - [Ubicaciones de instalación](installing-python-support-in-visual-studio.md#install-locations)

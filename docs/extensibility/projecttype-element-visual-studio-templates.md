@@ -8,23 +8,23 @@ f1_keywords:
 helpviewer_keywords:
 - ProjectType element [Visual Studio project templates]
 ms.assetid: ccf9d83f-c7f3-49c7-a31f-e1f22bec004c
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: bd369d68ae8f0e340787fadb0dafd43301fe3e62
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 494f8d3ab204a599e8d3708d07a56c87658b97d4
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56686215"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66311915"
 ---
 # <a name="projecttype-element-visual-studio-templates"></a>ProjectType (elemento) (plantillas de Visual Studio)
 Clasifica la plantilla de proyecto para que aparezca en el grupo especificado en el **nuevo proyecto** o **Agregar nuevo elemento** cuadro de diálogo.
 
 > [!WARNING]
->  Se admiten las plantillas de proyecto de C++ a partir de Visual Studio 2012. No se admiten para C++ en Visual Studio 2010 y versiones anteriores.
+> Se admiten las plantillas de proyecto de C++ a partir de Visual Studio 2012. No se admiten para C++ en Visual Studio 2010 y versiones anteriores.
 
  \<VSTemplate> \<TemplateData> \<ProjectType>
 

@@ -1,41 +1,35 @@
 ---
-title: Tutorial analizar código administrado en previsión de defectos de código | Microsoft Docs
+title: Tutorial análisis del código administrado para defectos de código | Microsoft Docs
 ms.date: 01/29/2018
 ms.topic: conceptual
 helpviewer_keywords:
 - code analysis [Visual Studio]
 - managed code, analyzing
-author: gewarren
-ms.author: gewarren
+author: mikadumont
+ms.author: midumont
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 3097e52f99f044257b8eaf634455bdf19978d0c3
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
-ms.translationtype: MT
+ms.openlocfilehash: 6ced3448863d7236dc309dad3bb101cdead4837e
+ms.sourcegitcommit: 1507baf3a336bbb6511d4c3ce73653674831501b
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55952847"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "72349469"
 ---
-# <a name="walkthrough-analyzing-managed-code-for-code-defects"></a>Tutorial: Análisis de código administrado en previsión de defectos de código
+# <a name="walkthrough-use-static-code-analysis-to-find-code-defects"></a>Tutorial: usar el análisis de código estático para buscar defectos de código
 
-En este tutorial, analizaremos un proyecto administrado en previsión de defectos de código mediante la herramienta de análisis de código.
+En este tutorial, analizará un proyecto administrado para detectar defectos de código mediante el análisis de código heredado.
 
-En este tutorial le guiará por el proceso de uso de análisis de código para analizar los ensamblados de código administrado de .NET de conformidad con las instrucciones de diseño de Microsoft .NET Framework.
+Este artículo le guiará a través del proceso de uso del análisis heredado para analizar los ensamblados de código administrado de .NET para que cumplan las directrices de diseño de .NET.
 
 ## <a name="create-a-class-library"></a>Crear una biblioteca de clases
 
-### <a name="to-create-a-class-library"></a>Para crear una biblioteca de clases
+1. Abra Visual Studio y cree un nuevo proyecto a partir de la plantilla de **biblioteca de clases (.NET Framework)** .
 
-1. En el menú **Archivo**, seleccione **Nuevo** > **Proyecto**.
+1. Asigne al proyecto el nombre **CodeAnalysisManagedDemo**.
 
-1. En el **nuevo proyecto** cuadro de diálogo, expanda **instalado** > **Visual C#** y, a continuación, elija **Windows Desktop**.
-
-1. Elija la **biblioteca de clases (.NET Framework)** plantilla.
-
-1. En el **nombre** cuadro de texto, escriba **CodeAnalysisManagedDemo** y, a continuación, haga clic en **Aceptar**.
-
-1. Una vez creado el proyecto, abra el *Class1.cs* archivo.
+1. Una vez creado el proyecto, abra el archivo *Class1.CS* .
 
 1. Reemplace el texto existente en Class1.cs por el código siguiente:
 
@@ -55,107 +49,91 @@ En este tutorial le guiará por el proceso de uso de análisis de código para a
 
 1. Guarde el archivo Class1.cs.
 
-## <a name="analyze-the-project"></a>Analizar el proyecto
+## <a name="analyze-the-project-for-code-defects"></a>Analizar el proyecto para detectar defectos de código
 
-### <a name="to-analyze-a-managed-project-for-code-defects"></a>Para analizar un proyecto administrado en previsión de defectos de código
+1. Seleccione el proyecto CodeAnalysisManagedDemo en **Explorador de soluciones**.
 
-1. Seleccione el proyecto CodeAnalysisManagedDemo en **el Explorador de soluciones**.
+2. En el menú **Proyecto**, haga clic en **Propiedades**.
 
-1. En el menú **Proyecto**, haga clic en **Propiedades**.
+   Se muestra la página de propiedades CodeAnalysisManagedDemo.
 
-     Se abrirá la página de propiedades de CodeAnalysisManagedDemo.
+3. Elija la pestaña **análisis de código** .
 
-1. Elija la **análisis de código** ficha.
+::: moniker range="vs-2017"
 
-1. Asegúrese de que **Habilitar análisis de código al compilar** está activada.
+4. Asegúrese de que está seleccionada la opción **Habilitar análisis de código al compilar** .
 
-1. Desde el **ejecutar este conjunto de reglas** lista desplegable, seleccione **todas las reglas de Microsoft**.
+5. En la lista desplegable **ejecutar este conjunto de reglas** , seleccione **Microsoft All Rules (todas las reglas**).
 
-1. En el **archivo** menú, haga clic en **guardar los elementos seleccionados**y, a continuación, cierre las páginas de propiedades.
+::: moniker-end
 
-1. En el **compilar** menú, haga clic en **CodeAnalysisManagedDemo compilar**.
+::: moniker range=">=vs-2019"
 
-    En el que se muestran las advertencias de compilación del proyecto CodeAnalysisManagedDemo el **lista de errores** y **salida** windows.
+4. Asegúrese de que la opción **ejecutar al compilar** está seleccionada en la sección **analizadores binarios** .
 
-## <a name="correct-the-code-analysis-issues"></a>Corrija los problemas de análisis de código
+5. En la lista desplegable **reglas activas** , seleccione **Microsoft All Rules (todas las reglas**).
 
-### <a name="to-correct-code-analysis-rule-violations"></a>Para corregir las infracciones de reglas de análisis de código
+::: moniker-end
 
-1. En el **vista** menú, elija **lista de errores**.
+6. En el menú **archivo** , haga clic en **guardar los elementos seleccionados**y, a continuación, cierre las páginas de propiedades.
 
-    Según el perfil de desarrollador que haya elegido, puede tener para que apunte a **Other Windows** en el **vista** menú y, a continuación, elija **lista de errores**.
+7. En el menú **compilar** , haga clic en **generar CodeAnalysisManagedDemo**.
+
+    Las advertencias de compilación del proyecto CodeAnalysisManagedDemo se muestran en las ventanas **lista de errores** y **salida** .
+
+## <a name="correct-the-code-analysis-issues"></a>Corregir los problemas de análisis de código
+
+1. En el menú **Ver** , elija **lista de errores**.
+
+    Según el perfil de desarrollador que elija, puede que tenga que señalar a **otras ventanas** en el menú **Ver** y, a continuación, elegir **lista de errores**.
 
 1. En el **Explorador de soluciones**, elija **Mostrar todos los archivos**.
 
-1. Expanda el nodo de propiedades y, a continuación, abra el *AssemblyInfo.cs* archivo.
+1. Expanda el nodo propiedades y, a continuación, abra el archivo *AssemblyInfo.CS* .
 
-1. Utilice las siguientes sugerencias para corregir las advertencias:
+1. Use las siguientes sugerencias para corregir las advertencias:
 
-   [CA1014: Marque los ensamblados con CLSCompliantAttribute](../code-quality/ca1014-mark-assemblies-with-clscompliantattribute.md): Microsoft.Design: 'demo' debe marcarse con el atributo CLSCompliantAttribute y su valor debe ser true.
+   [CA1014: Marque los ensamblados con CLSCompliantAttribute](../code-quality/ca1014-mark-assemblies-with-clscompliantattribute.md): agregue el código `[assembly: CLSCompliant(true)]` al final del archivo AssemblyInfo.cs.
 
-   1. Agregue el código `using System;` al archivo AssemblyInfo.cs.
+   [CA1032: implementar constructores de excepción estándar](../code-quality/ca1032-implement-standard-exception-constructors.md): agregue el constructor `public demo (String s) : base(s) { }` a la clase `demo`.
 
-   1. A continuación, agregue el código `[assembly: CLSCompliant(true)]` hasta el final del archivo AssemblyInfo.cs.
+   [CA1032: implementar constructores de excepción estándar](../code-quality/ca1032-implement-standard-exception-constructors.md): agregue el constructor `public demo (String s, Exception e) : base(s, e) { }` a la clase `demo`.
 
-   [CA1032: Implementar constructores de excepción estándar](../code-quality/ca1032-implement-standard-exception-constructors.md): Microsoft.Design: Agregue el siguiente constructor a esta clase: public demo (String)
+   [CA1032: implementar constructores de excepción estándar](../code-quality/ca1032-implement-standard-exception-constructors.md): agregue el constructor `protected demo (SerializationInfo info, StreamingContext context) : base(info, context) { }` a la clase demo. También deberá agregar una instrucción de `using` para <xref:System.Runtime.Serialization?displayProperty=fullName>.
 
-   1. Agregue el constructor `public demo (String s) : base(s) { }` a la clase `demo`.
+   [CA1032: implementar constructores de excepción estándar](../code-quality/ca1032-implement-standard-exception-constructors.md): agregue el constructor `public demo () : base() { }` a la clase `demo`.
 
-   [CA1032: Implementar constructores de excepción estándar](../code-quality/ca1032-implement-standard-exception-constructors.md): Microsoft.Design: Agregue el siguiente constructor a esta clase: public demo (String, Exception)
+   [CA1709: los identificadores deben usar mayúsculas y minúsculas correctamente](../code-quality/ca1709-identifiers-should-be-cased-correctly.md): cambie el uso de mayúsculas y minúsculas del espacio de nombres `testCode` a `TestCode`.
 
-   1. Agregue el constructor `public demo (String s, Exception e) : base(s, e) { }` a la clase `demo`.
+   [CA1709: los identificadores deben usar mayúsculas y minúsculas correctamente](../code-quality/ca1709-identifiers-should-be-cased-correctly.md): cambie el nombre del miembro a `Demo`.
 
-   [CA1032: Implementar constructores de excepción estándar](../code-quality/ca1032-implement-standard-exception-constructors.md): Microsoft.Design: Agregue el siguiente constructor a esta clase: protected demo (SerializationInfo, StreamingContext)
+   [CA1709: los identificadores deben usar mayúsculas y minúsculas correctamente](../code-quality/ca1709-identifiers-should-be-cased-correctly.md): cambie el nombre del miembro a `Item`.
 
-   1. Agregue el código `using System.Runtime.Serialization;` al principio del archivo Class1.cs.
+   [CA1710: los identificadores deberían tener el sufijo correcto](../code-quality/ca1710-identifiers-should-have-correct-suffix.md): cambie el nombre de la clase y sus constructores a `DemoException`.
 
-   1. A continuación, agregue el constructor `protected demo (SerializationInfo info, StreamingContext context) : base(info, context) { } to the class demo.`
+   [CA2237: Marque los tipos ISerializable con SerializableAttribute](../code-quality/ca2237.md): agregue el atributo `[Serializable ()]` a la clase `demo`.
 
-   [CA1032: Implementar constructores de excepción estándar](../code-quality/ca1032-implement-standard-exception-constructors.md): Microsoft.Design: Agregue el siguiente constructor a esta clase: public demo()
+   [CA2210: los ensamblados deben tener nombres seguros válidos](../code-quality/ca2210.md): signo ' CodeAnalysisManagedDemo ' con una clave de nombre seguro:
 
-   1. Agregue el constructor `public demo () : base() { }` a la clase `demo` **.**
-
-   [CA1709: Los identificadores deberían escribirse correctamente](../code-quality/ca1709-identifiers-should-be-cased-correctly.md): Microsoft.Naming: Corrija el uso de mayúsculas y minúsculas del nombre de espacio de nombres 'testCode' cambiándolo a 'TestCode'.
-
-   1. Cambiar las mayúsculas y minúsculas del espacio de nombres `testCode` a `TestCode`.
-
-   [CA1709: Los identificadores deberían escribirse correctamente](../code-quality/ca1709-identifiers-should-be-cased-correctly.md): Microsoft.Naming: Corrija el uso de mayúsculas y minúsculas de demostración' nombre de tipo' cambiándolo a 'Demo'.
-
-   1. Cambiar el nombre del miembro que `Demo`.
-
-   [CA1709: Los identificadores deberían escribirse correctamente](../code-quality/ca1709-identifiers-should-be-cased-correctly.md): Microsoft.Naming: Corrija el uso de mayúsculas y minúsculas del miembro nombre 'item' cambiándolo a 'Item'.
-
-   1. Cambiar el nombre del miembro que `Item`.
-
-   [CA1710: Los identificadores deberían tener el sufijo correcto](../code-quality/ca1710-identifiers-should-have-correct-suffix.md): Microsoft.Naming: Cambie el nombre 'testCode.demo' final 'Excepción'.
-
-   1. Cambiar el nombre de la clase y sus constructores para `DemoException`.
-
-   [CA2210: Los ensamblados deben tener nombres seguros válidos](../code-quality/ca2210-assemblies-should-have-valid-strong-names.md): Firmar 'CodeAnalysisManagedDemo' con una clave de nombre seguro.
-
-   1. En el **proyecto** menú, elija **CodeAnalysisManagedDemo propiedades**.
+   1. En el menú **proyecto** , elija **propiedades de CodeAnalysisManagedDemo**.
 
       Aparecen las propiedades del proyecto.
 
    1. Elija la pestaña **Firma** .
 
-   1. Seleccione el **firmar el ensamblado** casilla de verificación.
+   1. Active la casilla **firmar el ensamblado** .
 
-   1. En el **elegir un archivo de clave de nombre de cadena** lista, seleccione  **\<nuevo... >**.
+   1. En la lista **elegir un archivo de clave de nombre de cadena** , seleccione **\<New >** .
 
-      El **crear clave de nombre seguro** aparece el cuadro de diálogo.
+      Aparecerá el cuadro de diálogo **crear clave de nombre seguro** .
 
-   1. En el **nombre de archivo de clave**, escriba TestKey.
+   1. En **nombre de archivo de clave**, escriba **TestKey**.
 
-   1. Escriba una contraseña y, a continuación, elija **Aceptar**.
+   1. Escriba una contraseña y, después, elija **Aceptar**.
 
-   1. En el **archivo** menú, elija **guardar los elementos seleccionados**y, a continuación, cierre las páginas de propiedades.
+   1. En el menú **archivo** , elija **Guardar elementos seleccionados**y, a continuación, cierre las páginas de propiedades.
 
-   [CA2237: Marcar los tipos ISerializable con SerializableAttribute](../code-quality/ca2237-mark-iserializable-types-with-serializableattribute.md): Microsoft.Usage: Agregue un atributo [Serializable] al tipo 'demo' ya que este tipo implementa ISerializable.
-
-   1. Agregar el `[Serializable ()]` a la clase `demo`.
-
-   Una vez completados los cambios, el archivo Class1.cs debe ser similar al siguiente:
+   Después de completar todos los cambios, el archivo Class1.cs debe tener un aspecto similar al siguiente:
 
    ```csharp
    using System;
@@ -180,17 +158,17 @@ En este tutorial le guiará por el proceso de uso de análisis de código para a
 
 1. Recompile el proyecto.
 
-## <a name="exclude-code-analysis-warnings"></a>Excluya las advertencias de análisis de código
+## <a name="exclude-code-analysis-warnings"></a>Excluir advertencias de análisis de código
 
-1. Para cada una de las advertencias restantes, realice lo siguiente:
+1. Para cada una de las advertencias restantes, haga lo siguiente:
 
     1. Seleccione la advertencia en el **lista de errores**.
 
-    1. En el menú contextual (menú contextual), elija **suprimir** > **en el archivo de supresión**.
+    1. En el menú contextual, elija **suprimir**  > **en archivo de supresión**.
 
 1. Recompile el proyecto.
 
-     El proyecto se compila sin errores ni advertencias.
+     El proyecto se compila sin advertencias ni errores.
 
 ## <a name="see-also"></a>Vea también
 

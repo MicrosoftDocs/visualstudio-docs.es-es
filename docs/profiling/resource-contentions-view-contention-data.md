@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 408b13892d24689fb163aea0105a47028defad59
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: efadc6917f565f5449a76b6a8b91b309356a00bb
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56622077"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62797913"
 ---
 # <a name="resource-contentions-view---contention-data"></a>Vista Contenciones del recurso: datos de contención
 La vista Contenciones del recurso muestra datos de contención de recursos que son el origen de eventos de contención. Un evento de contención se produce cuando una función en un subproceso se ve obligada a esperar para obtener acceso al recurso porque una función en otro subproceso ha adquirido acceso exclusivo al recurso. Cada recurso es el nodo raíz de un árbol de llamadas que muestra las rutas de ejecución de la función que dieron lugar a los eventos de contención.
@@ -30,9 +30,9 @@ La vista Contenciones del recurso muestra datos de contención de recursos que s
 ### <a name="function-values"></a>Valores de función
  Los valores de función se basan en las instancias de la función que se produjeron en la ruta de acceso de ejecución representada en el árbol de llamadas.
 
--   Los valores exclusivos se basan en los eventos que se produjeron cuando la función estaba ejecutando instrucciones en el cuerpo de la función. Los eventos que se produjeron en funciones a las que llamó la función no se incluyen en los valores exclusivos.
+- Los valores exclusivos se basan en los eventos que se produjeron cuando la función estaba ejecutando instrucciones en el cuerpo de la función. Los eventos que se produjeron en funciones a las que llamó la función no se incluyen en los valores exclusivos.
 
--   Los valores inclusivos se basan en los eventos que se produjeron cuando la función o una función a la que llamó la función se estaba ejecutando.
+- Los valores inclusivos se basan en los eventos que se produjeron cuando la función o una función a la que llamó la función se estaba ejecutando.
 
 ### <a name="percentage-values"></a>Valores de porcentaje
  Los valores de porcentaje se basan en los eventos de contención o el tiempo total de los datos de generación de perfiles. Si se filtra el informe o la vista de la generación de perfiles, solo se usa el tiempo bloqueado y las contenciones de los datos filtrados como valor total.

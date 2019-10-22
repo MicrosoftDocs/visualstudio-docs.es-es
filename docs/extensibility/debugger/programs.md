@@ -6,17 +6,17 @@ helpviewer_keywords:
 - debugging [Debugging SDK], programs
 - programs, debugging
 ms.assetid: e1f955d8-95da-493b-837e-e97741a26d7e
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: cd38fa74d43842bcb1a08c682049b9998bc11ab3
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: e70a970aad250a30e19fd27ac3a47732952b3bf1
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60110120"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66351407"
 ---
 # <a name="programs"></a>Programas
 En la arquitectura de depurador, un *programa*:

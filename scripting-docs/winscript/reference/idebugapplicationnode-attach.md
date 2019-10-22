@@ -1,5 +1,5 @@
 ---
-title: IDebugApplicationNode::Attach | Microsoft Docs
+title: 'Idebugapplicationnode (:: Attach | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c41d06c116c7c15ad308ce2ace837ea01d90ab1d
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 30d4e189ec878def1cfd88517654955cd2d1aa12
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58155568"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72574786"
 ---
 # <a name="idebugapplicationnodeattach"></a>IDebugApplicationNode::Attach
-Este nodo de la aplicación se agrega al árbol del proyecto especificado.  
+Agrega este nodo de aplicación al árbol de proyecto especificado.  
   
 ## <a name="syntax"></a>Sintaxis  
   
@@ -37,7 +37,7 @@ HRESULT Attach(
   
 #### <a name="parameters"></a>Parámetros  
  `pdanParent`  
- [in] El árbol del proyecto donde es el nodo de la aplicación va a agregar.  
+ de Árbol del proyecto en el que se va a agregar este nodo de aplicación.  
   
 ## <a name="return-value"></a>Valor devuelto  
  El método devuelve un objeto `HRESULT`. Entre los valores posibles se incluyen los que se indican en la tabla siguiente, entre otros.  
@@ -47,8 +47,8 @@ HRESULT Attach(
 |`S_OK`|El método se realizó correctamente.|  
   
 ## <a name="remarks"></a>Comentarios  
- Este método agrega el nodo de la aplicación al proyecto de árbol, con `pdanParent` como elemento primario. Si `pdanParent` es `NULL`, este nodo de la aplicación será el nodo de nivel superior.  
+ Este método agrega este nodo de aplicación al árbol del proyecto, utilizando `pdanParent` como elemento primario. Si `pdanParent` es `NULL`, este nodo de aplicación será el nodo de nivel superior.  
   
 ## <a name="see-also"></a>Vea también  
- [IDebugApplicationNode::Detach](../../winscript/reference/idebugapplicationnode-detach.md)   
+ [Idebugapplicationnode (::D etach](../../winscript/reference/idebugapplicationnode-detach.md)    
  [IDebugApplicationNode (Interfaz)](../../winscript/reference/idebugapplicationnode-interface.md)

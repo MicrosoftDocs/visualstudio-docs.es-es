@@ -4,65 +4,65 @@ ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
 - Domain-Specific Language, decorators
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 76129141ed293281eeb3179a654f470bcf608bdf
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 7e34268b1c360c686a61da631100cb671acd59d1
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55907586"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72658240"
 ---
 # <a name="properties-of-decorators"></a>Propiedades de los decoradores
-Los elementos Decorator son iconos, texto o expandir o contraer comillas angulares que pueden aparecer en formas o conectores en el diagrama. Las siguientes tablas muestran las propiedades de los tres tipos de elemento decorator. Algunas de las propiedades aparecen sólo en shape elementos Decorator o sólo en los elementos Decorator del conector.
+Los elementos Decorator son iconos, texto o cheurones de expansión/contracción que pueden aparecer en formas o conectores en el diagrama. En las tablas siguientes se muestran las propiedades de los tres tipos de Decorator. Algunas de las propiedades solo aparecen en los decoradores de forma o solo en los elementos Decorator del conector.
 
- Para obtener más información, consulte [cómo definir lenguajes específicos de dominio](../modeling/how-to-define-a-domain-specific-language.md). Para obtener más información sobre cómo usar estas propiedades, vea [personalizar y ampliar lenguajes específicos de dominio](../modeling/customizing-and-extending-a-domain-specific-language.md).
+ Para obtener más información, consulte [cómo definir un lenguaje específico de dominio](../modeling/how-to-define-a-domain-specific-language.md). Para obtener más información sobre cómo usar estas propiedades, vea [personalizar y extender un lenguaje específico de dominio](../modeling/customizing-and-extending-a-domain-specific-language.md).
 
-## <a name="expandcollapse-decorator"></a>Expandir o contraer el elemento Decorator
+## <a name="expandcollapse-decorator"></a>Expandir o contraer Decorator
 
-|Property|Descripción|Default|
+|Propiedad.|Descripción|Predeterminado|
 |-|-|-|
-|DisplayName|El nombre del elemento decorator que se mostrará en el diseñador generado.|Expanda el elemento Decorator de contraer|
-|nombre|El nombre del elemento decorator.|ExpandCollapseDecorator|
-|Notas|Notas informales que están asociadas con este elemento decorator.|\<none>|
-|HorizontalOffset|El desplazamiento horizontal, en relación con la posición predeterminada del elemento decorator, en pulgadas. (En formas sólo.)|0|
-|VerticalOffset|El desplazamiento vertical, en relación con la posición predeterminada del elemento decorator, en pulgadas. (En formas sólo.)|0|
-|OffsetFromLine|El desplazamiento del elemento decorator desde la línea, en relación con su posición predeterminada, en pulgadas. (En los conectores solo.)|0|
-|OffsetFromShape|El desplazamiento del elemento decorator desde la forma respecto a su posición predeterminada, en pulgadas. (En los conectores solo.)|0|
-|Posición|La posición predeterminada del decorador.|SourceTop|
+|DisplayName|Nombre del elemento Decorator que se mostrará en el diseñador generado.|Expandir decorador de contracción|
+|Name|Nombre del elemento Decorator.|ExpandCollapseDecorator|
+|Notas|Notas informales asociadas a este elemento Decorator.|\<none>|
+|HorizontalOffset|Desplazamiento horizontal, en pulgadas, relativo a la posición predeterminada del elemento Decorator. (Solo en formas).|0|
+|VerticalOffset|Desplazamiento vertical, relativo a la posición predeterminada del elemento Decorator, en pulgadas. (Solo en formas).|0|
+|OffsetFromLine|Desplazamiento del elemento Decorator desde la línea, con respecto a su posición predeterminada, en pulgadas. (Solo en conectores).|0|
+|OffsetFromShape|Desplazamiento del elemento Decorator a partir de la forma, con respecto a su posición predeterminada, en pulgadas. (Solo en conectores).|0|
+|Posición|Posición predeterminada del elemento Decorator.|SourceTop|
 
-## <a name="icon-decorator"></a>Elemento Decorator de icono
+## <a name="icon-decorator"></a>Icono Decorator
 
-|Property|Descripción|Default|
+|Propiedad.|Descripción|Predeterminado|
 |-|-|-|
-|DefaultIcon|La ruta de acceso del archivo de icono o imagen que se mostrará.|\<none>|
-|DisplayName|El nombre del elemento decorator que se mostrará en el diseñador generado.|Elemento Decorator de icono|
-|nombre|El nombre del elemento decorator.|IconDecorator|
-|Notas|Notas informales que están asociadas con el elemento decorator.|\<none>|
-|HorizontalOffset|El desplazamiento horizontal, en relación con la posición predeterminada del elemento decorator, en pulgadas. (En formas sólo.)|0|
-|VerticalOffset|El desplazamiento vertical, en relación con la posición predeterminada del elemento decorator, en pulgadas. (En formas sólo.)|0|
-|OffsetFromLine|El desplazamiento del elemento decorator desde la línea, en relación con su posición predeterminada, en pulgadas. (En los conectores solo.)|0|
-|OffsetFromShape|El desplazamiento del elemento decorator desde la forma respecto a su posición predeterminada, en pulgadas. (En los conectores solo.)|0|
-|Posición|La posición predeterminada del decorador.|SourceTop|
+|DefaultIcon|Ruta de acceso del archivo de icono o imagen que se va a mostrar.|\<none>|
+|DisplayName|Nombre del elemento Decorator que se va a mostrar en el diseñador generado.|Icono Decorator|
+|Name|Nombre del elemento Decorator.|IconDecorator|
+|Notas|Notas informales asociadas al elemento Decorator.|\<none>|
+|HorizontalOffset|Desplazamiento horizontal, en pulgadas, relativo a la posición predeterminada del elemento Decorator. (Solo en formas).|0|
+|VerticalOffset|Desplazamiento vertical, relativo a la posición predeterminada del elemento Decorator, en pulgadas. (Solo en formas).|0|
+|OffsetFromLine|Desplazamiento del elemento Decorator desde la línea, con respecto a su posición predeterminada, en pulgadas. (Solo en conectores).|0|
+|OffsetFromShape|Desplazamiento del elemento Decorator a partir de la forma, con respecto a su posición predeterminada, en pulgadas. (Solo en conectores).|0|
+|Posición|Posición predeterminada del elemento Decorator.|SourceTop|
 
 ## <a name="textdecorator"></a>TextDecorator
 
-|Property|Descripción|Default|
+|Propiedad.|Descripción|Predeterminado|
 |-|-|-|
-|DefaultText|El texto predeterminado que se mostrará.|Etiqueta|
-|DisplayName|El nombre del elemento decorator que se mostrará en el diseñador generado.|Etiqueta|
-|FontSize|El tamaño de fuente del texto que se muestra en el elemento decorator.|8|
-|FontStyle|El estilo de fuente del texto que se muestra en el elemento decorator.|Estándar|
-|nombre|El nombre del elemento decorator.|Etiqueta|
-|Notas|Notas informales que están asociadas con el elemento decorator.|\<none>|
-|HorizontalOffset|El desplazamiento horizontal, en relación con la posición predeterminada del elemento decorator, en pulgadas. (En formas sólo.)|0|
-|VerticalOffset|El desplazamiento vertical, en relación con la posición predeterminada del elemento decorator, en pulgadas. (En formas sólo.)|0|
-|OffsetFromLine|El desplazamiento del elemento decorator desde la línea, en relación con su posición predeterminada, en pulgadas. (En los conectores solo.)|0|
-|OffsetFromShape|El desplazamiento del elemento decorator desde la forma respecto a su posición predeterminada, en pulgadas. (En los conectores solo.)|0|
-|Posición|La posición predeterminada del decorador.|TargetBottom|
+|DefaultText|Texto predeterminado que se va a mostrar.|Etiqueta|
+|DisplayName|Nombre del elemento Decorator que se va a mostrar en el diseñador generado.|Etiqueta|
+|FontSize|Tamaño de fuente para el texto que se muestra en el elemento Decorator.|8|
+|FontStyle|Estilo de fuente para el texto que se muestra en el elemento Decorator.|Estándar|
+|Name|Nombre del elemento Decorator.|Etiqueta|
+|Notas|Notas informales asociadas al elemento Decorator.|\<none>|
+|HorizontalOffset|Desplazamiento horizontal, en pulgadas, relativo a la posición predeterminada del elemento Decorator. (Solo en formas).|0|
+|VerticalOffset|Desplazamiento vertical, relativo a la posición predeterminada del elemento Decorator, en pulgadas. (Solo en formas).|0|
+|OffsetFromLine|Desplazamiento del elemento Decorator desde la línea, con respecto a su posición predeterminada, en pulgadas. (Solo en conectores).|0|
+|OffsetFromShape|Desplazamiento del elemento Decorator a partir de la forma, con respecto a su posición predeterminada, en pulgadas. (Solo en conectores).|0|
+|Posición|Posición predeterminada del elemento Decorator.|TargetBottom|
 
 ## <a name="see-also"></a>Vea también
 

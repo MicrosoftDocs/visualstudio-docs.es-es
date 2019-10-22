@@ -11,40 +11,36 @@ helpviewer_keywords:
 - Debug.SetRadix command
 ms.assetid: 6ffd1554-7530-4da4-b5f5-e276a5034f3b
 caps.latest.revision: 20
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: bee6368931dc47b78186ec870039ab292960fa77
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 050cbe6e639f4177694d9af3ecbc0b768065b7d9
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59654079"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72665414"
 ---
 # <a name="set-radix-command"></a>Establecer base (Comando)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Establece o devuelve la base numérica que se ha usado para mostrar valores enteros.  
-  
-## <a name="syntax"></a>Sintaxis  
-  
-```  
-Debug.SetRadix [10 | 16 | hex | dec]  
-```  
-  
-## <a name="arguments"></a>Argumentos  
- `10` o `16` o `hex` o `dec`  
- Opcional. Indica decimal (10 o dec) o hexadecimal (16 o hex). Si se omite un argumento, se devuelve el valor base actual.  
-  
-## <a name="example"></a>Ejemplo  
- En este ejemplo se establece el entorno para mostrar valores enteros en formato hexadecimal.  
-  
-```  
->Debug.SetRadix hex  
-```  
-  
-## <a name="see-also"></a>Vea también  
- [Comandos de Visual Studio](../../ide/reference/visual-studio-commands.md)   
- [Ventana Comandos](../../ide/reference/command-window.md)   
- [Cuadro Buscar/Comando](../../ide/find-command-box.md)   
- [Visual Studio Command Aliases](../../ide/reference/visual-studio-command-aliases.md)
+Establece o devuelve la base numérica que se ha usado para mostrar valores enteros.
+
+## <a name="syntax"></a>Sintaxis
+
+```
+Debug.SetRadix [10 | 16 | hex | dec]
+```
+
+## <a name="arguments"></a>Argumentos
+ `10` o `16` o `hex` o `dec` opcional. Indica decimal (10 o dec) o hexadecimal (16 o hex). Si se omite un argumento, se devuelve el valor base actual.
+
+## <a name="example"></a>Ejemplo
+ En este ejemplo se establece el entorno para mostrar valores enteros en formato hexadecimal.
+
+```
+>Debug.SetRadix hex
+```
+
+## <a name="see-also"></a>Otras referencias
+ [Comandos de Visual Studio](../../ide/reference/visual-studio-commands.md) [ventana comandos](../../ide/reference/command-window.md) [Buscar/comando cuadro](../../ide/find-command-box.md) de comandos de [Visual Studio alias de comandos](../../ide/reference/visual-studio-command-aliases.md)

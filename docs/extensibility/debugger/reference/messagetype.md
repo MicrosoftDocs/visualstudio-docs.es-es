@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - MESSAGETYPE enumeration
 ms.assetid: 800cc77d-3c27-4763-a9df-552a9384bd49
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 16d2b9ae9c446d4c8082a8c35c9e4d1810233b95
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 8c17860bb47f493031e6db1134aec498611b07f1
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56687515"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66339192"
 ---
 # <a name="messagetype"></a>MESSAGETYPE
 Especifica el tipo de mensaje y el motivo.
@@ -47,18 +50,24 @@ public enum enum_MESSAGETYPE { 
 };
 ```
 
-## <a name="members"></a>Miembros
- MT_OUTPUTSTRING indica que el mensaje debe enviarse a la ventana de salida. Es mutuamente excluyente de `MT_MESSAGEBOX`.
+## <a name="fields"></a>Campos
+ `MT_OUTPUTSTRING`\
+ Indica que debe enviarse el mensaje a la ventana de salida. Es mutuamente excluyente de `MT_MESSAGEBOX`.
 
- MT_MESSAGEBOX indica que debe mostrarse el mensaje en un cuadro de mensaje. Es mutuamente excluyente de `MT_OUTPUTSTRING`.
+ `MT_MESSAGEBOX`\
+ Indica que debe mostrarse el mensaje en un cuadro de mensaje. Es mutuamente excluyente de `MT_OUTPUTSTRING`.
 
- Valor de máscara MT_TYPE_MASK A aislar el destino del mensaje.
+ `MT_TYPE_MASK`\
+ Un valor de máscara para aislar el destino del mensaje.
 
- MT_REASON_EXCEPTION indica que se está mostrando un cuadro de mensaje como resultado una excepción. Es mutuamente excluyente de `MT_REASON_TRACEPOINT`.
+ `MT_REASON_EXCEPTION`\
+ Indica que se está mostrando un cuadro de mensaje como resultado una excepción. Es mutuamente excluyente de `MT_REASON_TRACEPOINT`.
 
- MT_REASON_TRACEPOINT indica que se está mostrando un cuadro de mensaje como resultado de alcanzar un punto de seguimiento. Esto es mutuamente excluyente `MT_REASON_EXCEPTION`.
+ `MT_REASON_TRACEPOINT`\
+ Indica que se está mostrando un cuadro de mensaje como resultado de alcanzar un punto de seguimiento. Esto es mutuamente excluyente `MT_REASON_EXCEPTION`.
 
- Valor de máscara MT_REASON_MASK A aislar el motivo del mensaje se muestra.
+ `MT_REASON_MASK`\
+ Un valor de máscara para aislar el motivo del mensaje se muestra.
 
 ## <a name="remarks"></a>Comentarios
  Estos valores se devuelven desde el [GetMessage](../../../extensibility/debugger/reference/idebugmessageevent2-getmessage.md) y [GetErrorMessage](../../../extensibility/debugger/reference/idebugerrorevent2-geterrormessage.md) métodos.

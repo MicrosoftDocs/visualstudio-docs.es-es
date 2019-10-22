@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: df3eb6577c72aa421f2a22d93b3109f63548cc96
-ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
+ms.openlocfilehash: b0d49223d61e3c72f2726b89de99ba9c092ddefe
+ms.sourcegitcommit: fd5a5b057df3d733f5224c305096907989811f85
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58324752"
+ms.lasthandoff: 06/18/2019
+ms.locfileid: "67195265"
 ---
 # <a name="find-references-in-your-code"></a>Búsqueda de referencias en el código
 
@@ -26,7 +26,7 @@ Los resultados aparecen en una ventana de herramientas denominada **\<element> r
 - Copiar el elemento seleccionado al que se hace referencia mediante el botón **Copiar**.
 - Seleccionar botones para ir a la ubicación siguiente o anterior en la lista, o presionar las teclas **F8** y **Mayús + F8** para hacerlo.
 - Quitar los filtros en los resultados devueltos mediante el botón **Borrar todos los filtros**.
-- Cambiar la forma en que se agrupan los elementos devueltos mediante una opción de la lista desplegable **Agrupar por:**.
+- Cambiar la forma en que se agrupan los elementos devueltos mediante una opción de la lista desplegable **Agrupar por:** .
 - Conservar la ventana de los resultados de la búsqueda actual mediante el botón **Mantener resultados**. Al hacer clic en este botón, los resultados de la búsqueda actual permanecen en esta ventana y los resultados de la búsqueda nueva aparecen en una ventana de herramientas nueva.
 - Buscar cadenas en los resultados de la búsqueda mediante la entrada de texto en el cuadro de texto **Búsqueda en Buscar todas las referencias**.
 
@@ -48,7 +48,7 @@ De forma predeterminada, las referencias se agrupan por proyecto y, luego, por d
 **Definición** y **Proyecto** son las dos agrupaciones predeterminadas que se usan, pero puede agregar otras mediante el comando **Agrupación** en el menú contextual del elemento seleccionado. Puede ser útil agregar más agrupaciones si su solución tiene una gran cantidad de archivos y rutas de acceso.
 
 ## <a name="filter-by-reference-type-in-net"></a>Filtrar por tipo de referencia en .NET
-En C# o Visual Basic, la ventana Buscar referencias tiene una columna de tipo donde se indica el tipo de referencia encontrada. Esta columna se puede usar para filtrar por tipo de referencia. Basta con hacer clic en el icono de filtro que aparece cuando se pasa el mouse sobre el encabezado de columna. Las referencias se pueden filtrar por lectura, escritura, referencia y NameOnly.
+En C# o Visual Basic, la ventana Buscar referencias tiene una columna de tipo donde se indica el tipo de referencia encontrada. Esta columna se puede usar para filtrar por tipo de referencia. Basta con hacer clic en el icono de filtro que aparece cuando se pasa el mouse sobre el encabezado de columna. Las referencias se pueden filtrar por lectura, escritura, referencia, nombre, espacio de nombres y tipo.
 
 ![Columna de tipo de la ventana Buscar referencias ](../ide/media/vside_findallreferencesKind.png)
 

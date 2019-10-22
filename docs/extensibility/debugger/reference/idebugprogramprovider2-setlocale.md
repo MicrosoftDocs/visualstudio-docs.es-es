@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProgramProvider2::SetLocale
 ms.assetid: b41d20a7-ba40-4c42-a450-16f413d6a04f
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a9a7d31f7ac442f4a6ff529ae46f1f7492665211
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 716ac7155c7e9885088a7197ac78f0834758dafe
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56722309"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66324950"
 ---
 # <a name="idebugprogramprovider2setlocale"></a>IDebugProgramProvider2::SetLocale
 Establece una configuración regional que se usará para los recursos específicos de la configuración regional.
@@ -36,10 +39,9 @@ int SetLocale(
 );
 ```
 
-#### <a name="parameters"></a>Parámetros
- `wLangID`
-
- [in] Id. de idioma para establecer. Por ejemplo, 1033 para inglés.
+## <a name="parameters"></a>Parámetros
+`wLangID`\
+[in] Id. de idioma para establecer. Por ejemplo, 1033 para inglés.
 
 ## <a name="return-value"></a>Valor devuelto
  Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.

@@ -6,26 +6,26 @@ helpviewer_keywords:
 - debug engines, debugging
 - debugging [Debugging SDK], custom debug engines
 ms.assetid: df27a8d6-3938-45ff-b47f-b684e80b38a0
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d07ba77739b4ff9749591405daf12fa66bae94e5
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 992440dd137b5622f4c619f1f81008eb38e1ff5f
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56715977"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66334829"
 ---
 # <a name="how-to-debug-a-custom-debug-engine"></a>Cómo Depurar un motor de depuración personalizado
 Un tipo de proyecto inicia el motor de depuración (DE) desde el <xref:Microsoft.VisualStudio.Shell.Interop.IVsDebuggableProjectCfg.DebugLaunch%2A> método. Esto significa que se ha iniciado la DE bajo el control de la instancia de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] controlar el tipo de proyecto. Sin embargo, esa instancia de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] no se puede depurar la DE. Las siguientes son los pasos que le permiten depurar su personalizada DE.
 
 > [!NOTE]
->  :     En el procedimiento "Depurar un motor de depuración", debe esperar la DE iniciarse antes de que pueden asociarse a ella. Si coloca al principio de la DE que aparece cuando se inicia la DE un cuadro de mensaje, puede adjuntar en ese momento y, a continuación, desactive el cuadro de mensaje para continuar. De este modo, puede detectar todos los eventos DE.
+> :     En el procedimiento "Depurar un motor de depuración", debe esperar la DE iniciarse antes de que pueden asociarse a ella. Si coloca al principio de la DE que aparece cuando se inicia la DE un cuadro de mensaje, puede adjuntar en ese momento y, a continuación, desactive el cuadro de mensaje para continuar. De este modo, puede detectar todos los eventos DE.
 
 > [!WARNING]
->  Debe tener instalado antes de intentar los siguientes procedimientos de depuración remota. Consulte [depuración remota](../../debugger/remote-debugging.md) para obtener más información.
+> Debe tener instalado antes de intentar los siguientes procedimientos de depuración remota. Consulte [depuración remota](../../debugger/remote-debugging.md) para obtener más información.
 
 ## <a name="debug-a-custom-debug-engine"></a>Depurar un motor de depuración personalizado
 
@@ -43,7 +43,7 @@ Un tipo de proyecto inicia el motor de depuración (DE) desde el <xref:Microsoft
 
 7. En la primera instancia de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] (con el proyecto DE), seleccione **asociar al proceso** desde el **depurar** menú.
 
-8. En el **asociar al proceso** cuadro de diálogo, cambie el **transporte** a **remoto (nativo sólo sin autenticación)**.
+8. En el **asociar al proceso** cuadro de diálogo, cambie el **transporte** a **remoto (nativo sólo sin autenticación)** .
 
 9. Cambiar el **calificador** al nombre de la máquina (Nota: hay un historial de entradas, por lo que deberá escribir este nombre sólo una vez).
 

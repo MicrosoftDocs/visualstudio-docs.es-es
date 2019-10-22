@@ -11,12 +11,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: d9d02ee375a5b9e6069a94cd7b534b871792088a
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: d145734dc89faafcedbca6730f0a90da174376c4
+ms.sourcegitcommit: 51dad3e11d7580567673e0d426ab3b0a17584319
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55957395"
+ms.lasthandoff: 06/10/2019
+ms.locfileid: "66820313"
 ---
 # <a name="use-assert-classes-for-unit-testing"></a>Utilice las clases Assert para realizar pruebas unitarias
 
@@ -45,7 +45,7 @@ La excepción <xref:Microsoft.VisualStudio.TestTools.UnitTesting.AssertFailedExc
 
 Si escribe una nueva clase de excepción de aserción, hereda de la clase base <xref:Microsoft.VisualStudio.TestTools.UnitTesting.UnitTestAssertException> para facilitar identificar la excepción como un error de aserción en lugar de una excepción inesperada iniciada desde el código de producción o de prueba.
 
-Aplique el atributo <xref:Microsoft.VisualStudio.TestTools.UnitTesting.ExpectedExceptionAttribute> en un método de prueba cuando quiera que dicho método compruebe que una excepción que espera que inicie un método en el código de la aplicación se inicie realmente.
+Para comprobar que una excepción que espera que inicie un método en el código de la aplicación se inicia realmente, use el método <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert.ThrowsException%2A?displayProperty=nameWithType>.
 
 ## <a name="see-also"></a>Vea también
 

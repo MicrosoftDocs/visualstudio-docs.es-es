@@ -7,17 +7,17 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProgramPublisher2 interface
 ms.assetid: b1d17f63-7146-4076-a588-034cfc6858b9
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4a7547639fb2f7f3068dd7f738b0c0d10ea926f0
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: f94e7ea830a49db5b95bae3d0d6c50f73e6d3d64
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56690310"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66343135"
 ---
 # <a name="idebugprogrampublisher2"></a>IDebugProgramPublisher2
 Esta interfaz permite que un motor de depuración (DE) o proveedores de puerto personalizado para registrar los programas para la depuración.

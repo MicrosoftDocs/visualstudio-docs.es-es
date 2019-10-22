@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugPortRequest2::GetPortName
 ms.assetid: 53e2a3a4-bb34-4a02-a983-6bd84ea70587
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8663e9e7d8c0428b362bbdbb099141ac86d01ee1
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: e8017237af68b3dc414dc64bf6ae077387f0a600
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56696797"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66340384"
 ---
 # <a name="idebugportrequest2getportname"></a>IDebugPortRequest2::GetPortName
 Obtiene el nombre del puerto.
@@ -36,10 +39,9 @@ int GetPortName( 
 );
 ```
 
-#### <a name="parameters"></a>Parámetros
- `pbstrPortName`
-
- [out] Devuelve el nombre del puerto.
+## <a name="parameters"></a>Parámetros
+`pbstrPortName`\
+[out] Devuelve el nombre del puerto.
 
 ## <a name="return-value"></a>Valor devuelto
  Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.

@@ -7,17 +7,17 @@ helpviewer_keywords:
 - code snippets, supporting in language services [managed package framework]
 - language services [managed package framework], supporting code snippets
 ms.assetid: 7490325b-acee-4c2d-ac56-1cd5db1a1083
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 70d438107b7cbe05b0a1c0049dff8e26c286de89
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: dfa3bfa86d39bcd430d96c3d71f192e9a69a9400
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60043966"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66322422"
 ---
 # <a name="support-for-code-snippets-in-a-legacy-language-service"></a>Compatibilidad con fragmentos de código en un servicio de lenguaje heredado
 Un fragmento de código es un fragmento de código que se inserta en el archivo de origen. El fragmento de código es una plantilla basada en XML con un conjunto de campos. Estos campos se resaltan después de que el fragmento de código se inserta y puede tener valores diferentes dependiendo del contexto en el que se inserta el fragmento de código. Inmediatamente después de inserta el fragmento de código, el servicio de lenguaje puede dar formato el fragmento de código.
@@ -27,7 +27,7 @@ Un fragmento de código es un fragmento de código que se inserta en el archivo 
  Servicios de lenguaje heredado se implementan como parte de un paquete VSPackage, pero la forma más reciente para implementar características de servicio de lenguaje es usar las extensiones MEF. Para obtener más información, consulte [Tutorial: Implementación de fragmentos de código](../../extensibility/walkthrough-implementing-code-snippets.md).
 
 > [!NOTE]
->  Se recomienda que comience a usar el nuevo editor de API tan pronto como sea posible. Esto mejorará el rendimiento de su servicio de lenguaje y le permiten aprovechar las nuevas características del editor.
+> Se recomienda que comience a usar el nuevo editor de API tan pronto como sea posible. Esto mejorará el rendimiento de su servicio de lenguaje y le permiten aprovechar las nuevas características del editor.
 
 ## <a name="managed-package-framework-support-for-code-snippets"></a>Soporte técnico de marco de trabajo de paquete para fragmentos de código administrados
  Managed package framework (MPF) admite la mayoría de las funciones de fragmento de código, de la lectura de la plantilla para insertar el fragmento de código y habilitar especial del modo de edición. Soporte técnico se administra a través de la <xref:Microsoft.VisualStudio.Package.ExpansionProvider> clase.
@@ -50,7 +50,7 @@ Un fragmento de código es un fragmento de código que se inserta en el archivo 
 
  Normalmente, hay dos ubicaciones donde se almacenan los archivos de plantilla de fragmento de código: (1) donde se instaló el idioma y 2) en la carpeta del usuario. Estas ubicaciones se agregan en el registro hasta que el de Visual Studio **Administrador de fragmentos de código** puede encontrar los fragmentos de código. La carpeta del usuario es donde se almacenan los fragmentos de código creados por el usuario.
 
- El diseño de carpeta habitual para los archivos de plantilla de fragmento de código instalados tiene este aspecto: *[InstallRoot]*\\ *[TestLanguage]* \Snippets\\ *[LCID]* \Snippets.
+ El diseño de carpeta habitual para los archivos de plantilla de fragmento de código instalados tiene este aspecto: *[InstallRoot]* \\ *[TestLanguage]* \Snippets\\ *[LCID]* \Snippets.
 
  *[InstallRoot]*  es la carpeta en el idioma se instala en.
 
@@ -58,7 +58,7 @@ Un fragmento de código es un fragmento de código que se inserta en el archivo 
 
  *[LCID]*  es el identificador de configuración regional. Se trata de las versiones localizadas de cómo de sus fragmentos de código se almacenan. Por ejemplo, el identificador de configuración regional para inglés es 1033, por lo que *[LCID]* se sustituye por 1033.
 
- Se debe proporcionar un archivo adicional y que es un archivo de índice, normalmente denominado SnippetsIndex.xml o ExpansionsIndex.xml (puede utilizar cualquier nombre de archivo válido termina en .xml). Este archivo se almacena normalmente en el *[InstallRoot]*\\ *[TestLanguage]* carpeta y especifica la ubicación exacta de la carpeta de fragmentos de código así como el Id. de idioma y el GUID del lenguaje servicio que utiliza los fragmentos de código. La ruta de acceso exacta del archivo de índice se coloca en el registro como se describe más adelante en "Instalar las entradas del registro". Este es un ejemplo de un archivo SnippetsIndex.xml:
+ Se debe proporcionar un archivo adicional y que es un archivo de índice, normalmente denominado SnippetsIndex.xml o ExpansionsIndex.xml (puede utilizar cualquier nombre de archivo válido termina en .xml). Este archivo se almacena normalmente en el *[InstallRoot]* \\ *[TestLanguage]* carpeta y especifica la ubicación exacta de la carpeta de fragmentos de código así como el Id. de idioma y el GUID del lenguaje servicio que utiliza los fragmentos de código. La ruta de acceso exacta del archivo de índice se coloca en el registro como se describe más adelante en "Instalar las entradas del registro". Este es un ejemplo de un archivo SnippetsIndex.xml:
 
 ```
 <?xml version="1.0" encoding="utf-8" ?>
@@ -392,4 +392,4 @@ namespace TestLanguagePackage
 - [Características del servicio de lenguaje heredado](../../extensibility/internals/legacy-language-service-features1.md)
 - [Registro de un servicio de lenguaje heredado](../../extensibility/internals/registering-a-legacy-language-service1.md)
 - [Fragmentos de código](../../ide/code-snippets.md)
-- [Tutorial: Obtener una lista de fragmentos de código instalados (implementación heredada)](../../extensibility/internals/walkthrough-getting-a-list-of-installed-code-snippets-legacy-implementation.md)
+- [Tutorial: Obtención de una lista de los fragmentos de código instalados (implementación heredada)](../../extensibility/internals/walkthrough-getting-a-list-of-installed-code-snippets-legacy-implementation.md)

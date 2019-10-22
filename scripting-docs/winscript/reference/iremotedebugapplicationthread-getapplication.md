@@ -1,5 +1,5 @@
 ---
-title: IRemoteDebugApplicationThread::GetApplication | Documentos de Microsoft
+title: 'Iremotedebugapplicationthread (:: GetApplication | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,12 +17,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: abe33d75f7e03944eb0a6f533f2955871ddee342
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: b21715345d698e6bd42c1946e06002da2b97d5b3
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58145153"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72575270"
 ---
 # <a name="iremotedebugapplicationthreadgetapplication"></a>IRemoteDebugApplicationThread::GetApplication
 Devuelve el objeto de aplicación asociado a este subproceso.  
@@ -37,7 +37,7 @@ HRESULT GetApplication(
   
 #### <a name="parameters"></a>Parámetros  
  `pprda`  
- [out] El objeto de aplicación asociado con este subproceso.  
+ enuncia Objeto de aplicación asociado a este subproceso.  
   
 ## <a name="return-value"></a>Valor devuelto  
  El método devuelve un objeto `HRESULT`. Entre los valores posibles se incluyen los que se indican en la tabla siguiente, entre otros.  

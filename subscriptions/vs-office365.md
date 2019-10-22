@@ -3,30 +3,29 @@ title: Ventaja de Office 365 | Microsoft Docs
 author: evanwindom
 ms.author: lank
 manager: lank
-ms.date: 12/19/2018
+ms.date: 08/02/2019
 ms.topic: conceptual
 description: Obtenga información sobre la ventaja de Office 365 que se incluye en algunas suscripciones de Visual Studio.
-searchscope: VS Subscription
-ms.openlocfilehash: 6d6fdcbe7ae5bb5182f7c123120d632a4221f642
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: ae28df2f66ff976fffd44f42c3063f790db9feb3
+ms.sourcegitcommit: a124076dfd6b4e5aecda4d01984fee7b0c034745
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56841083"
+ms.lasthandoff: 08/05/2019
+ms.locfileid: "68787911"
 ---
-# <a name="office-365-pro-plus-in-visual-studio-subscriptions"></a>Office 365 Pro Plus en suscripciones de Visual Studio
+# <a name="office-365-proplus-in-visual-studio-subscriptions"></a>Office 365 ProPlus en suscripciones de Visual Studio
 
-Cree su mejor obra. Trabaje en cualquier parte con aplicaciones siempre actualizadas. Office 365 Pro Plus es una suscripción que se incluye con aplicaciones premium como Word, Excel, PowerPoint, OneNote, Outlook, Publisher y Access (Publisher y Access solo están disponibles para equipos PC). Las aplicaciones se pueden instalar en varios dispositivos, como equipos PC, Mac, iPad, iPhone, tabletas Android y teléfonos Android. Office 365 también incluye servicios como 1 TB de almacenamiento de OneDrive, 60 minutos mensuales de Skype y soporte telefónico y asistencia al cliente por chat de Microsoft. Con una suscripción, obtiene las versiones más recientes de las aplicaciones y recibe, de manera automática, actualizaciones cuando se producen.
+Cree su mejor obra. Trabaje en cualquier parte con aplicaciones siempre actualizadas. Office 365 ProPlus es una suscripción que se incluye con aplicaciones premium como Word, Excel, PowerPoint, OneNote, Outlook, Publisher y Access (Publisher y Access solo están disponibles para equipos PC). Las aplicaciones se pueden instalar en varios dispositivos, como equipos PC, Mac, iPad, iPhone, tabletas Android y teléfonos Android. Con una suscripción, obtiene las versiones más recientes de las aplicaciones y recibe, de manera automática, actualizaciones cuando se producen.
 
-## <a name="getting-started-with-office-365-pro-plus"></a>Introducción a Office 365 Pro Plus
+## <a name="getting-started-with-office-365-proplus"></a>Introducción a Office 365 ProPlus
 
-Siga estos pasos para descargar y activar Office 365 Pro Plus:
+Siga estos pasos para descargar y activar Office 365 ProPlus:
 1. Inicie sesión en su suscripción de Visual Studio Enterprise.
 2. Haga clic en la pestaña **Descargas**.
 3. Verá una lista de las descargas destacadas. En la lista de Office, elija **Office 365**.
    > [!div class="mx-imgBorder"]
    > ![Descargas de Office 365](_img/vs-office365/vs-office365-downloads.png)
-0. Para instalar Office 365, necesitará una clave de producto.  Haga clic en el vínculo **Obtener clave** debajo de la lista de Office 365.
+0. Para instalar Office 365 ProPlus, necesitará una clave de producto.  Haga clic en el vínculo **Obtener clave** debajo de la lista de Office 365.
    > [!div class="mx-imgBorder"]
    > ![Obtener clave del producto de Office 365](_img/vs-office365/vs-office365-get-key.png)
 0. Una ventana emergente le mostrará las claves que ya ha reclamado, así como las que están disponibles para usted.  Para obtener una nueva clave, haga clic en **Reclamar clave** en la lista **Office Professional Plus 2019**.
@@ -48,7 +47,6 @@ Siga estos pasos para descargar y activar Office 365 Pro Plus:
 
 Si planea desarrollar aplicaciones para Office, querrá activar su [suscripción de Office Developer](vs-office-dev.md)
 
-
 ## <a name="eligibility"></a>Elegibilidad
 
 | Nivel de suscripción                                                 |     Canales                                            | Prestación                                                          | ¿Renovable?    |
@@ -59,18 +57,22 @@ Si planea desarrollar aplicaciones para Office, querrá activar su [suscripción
 | Visual Studio Test Professional (estándar)                         | Licencia por volumen, venta directa                                              | No disponible                                             |  N/D          |
 | Plataformas MSDN (estándar)                                          | Licencia por volumen, venta directa                                              | No disponible                                              |  N/D          |
 | Visual Studio Enterprise, Visual Studio Professional (de nube mensual) | Azure | No disponible | N/D |
-| Visual Studio Dev Essentials | N/D  | No disponible |N/D |
+|  |
 
 <sup>1</sup>  *Incluye:  No para reventa (NFR), Visual Studio Industry Partner (VSIP), Microsoft Partner Network (MPN), FTE, MCT Software & Services Developer, BizSpark, Most Valuable Professional (MVP), Regional Director (RD), MCT Software & Services, Imagine, Microsoft Partner Network.*
-
 
 > [!NOTE]
 > Microsoft ya no ofrece suscripciones anuales ni de Visual Studio Professional ni de Visual Studio Enterprise en las suscripciones de nube. Esto no supone cambio alguno en la experiencia actual de los clientes y ni en su capacidad para renovar, aumentar, reducir o cancelar las suscripciones. Conviene que los clientes nuevos vayan a [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) para explorar las diferentes opciones de compra de Visual Studio.
 
-
 ¿No sabe con seguridad qué suscripción usa?  Conéctese a [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) para ver todas las suscripciones asignadas a su dirección de correo electrónico. Si no ve todas las suscripciones, es posible que haya una o varias asignadas a una dirección de correo electrónico diferente.  Debe iniciar sesión con esa dirección de correo electrónico para ver esas suscripciones.
 
 ## <a name="support-resources"></a>Recursos de soporte técnico
--  Para obtener soporte técnico con cualquier componente de EMS, visite https://support.microsoft.com/allproducts y seleccione el producto.
--  Para obtener ayuda con las ventas, las suscripciones, las cuentas y la facturación para suscripciones de Visual Studio, póngase en contacto con el [soporte para suscripciones](https://visualstudio.microsoft.com/subscriptions/support/) de Visual Studio.
--  ¿Tiene alguna pregunta sobre el IDE de Visual Studio, Azure DevOps u otros productos o servicios de Visual Studio?  Visite el [soporte técnico de Visual Studio](https://visualstudio.microsoft.com/support/).
+- Para obtener soporte técnico con cualquier componente de EMS, visite https://support.microsoft.com/allproducts y seleccione el producto.
+- Para obtener ayuda con las ventas, las suscripciones, las cuentas y la facturación para suscripciones de Visual Studio, póngase en contacto con el [soporte para suscripciones](https://visualstudio.microsoft.com/subscriptions/support/) de Visual Studio.
+- ¿Tiene alguna pregunta sobre el IDE de Visual Studio, Azure DevOps u otros productos o servicios de Visual Studio?  Visite el [soporte técnico de Visual Studio](https://visualstudio.microsoft.com/support/).
+
+## <a name="next-steps"></a>Pasos siguientes
+Asegúrese de activar estas ventajas excelentes para aprovechar al máximo su suscripción de Visual Studio:
+- [Visual Studio](vs-ide-benefit.md)
+- [Azure DevOps](vs-azure-devops.md)
+- [Créditos de Azure](vs-azure.md)

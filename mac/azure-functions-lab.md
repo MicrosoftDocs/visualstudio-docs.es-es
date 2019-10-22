@@ -1,20 +1,19 @@
 ---
-title: 'Tutorial: Azure Functions'
+title: 'Tutorial: Comprobación de'
 description: Uso de Azure Functions en Visual Studio para Mac.
-author: conceptdev
-ms.author: crdun
+author: sayedihashimi
+ms.author: sayedha
 ms.date: 05/06/2018
-ms.topic: article
 ms.technology: vs-ide-install
 ms.assetid: 38FD2070-5151-482E-B0A9-993715128736
-ms.openlocfilehash: d6a0683405340d479fb3289540ffde2c5e7a4f78
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.openlocfilehash: 6bea12b37bc7fe1f608c27cd72e48c7cdc7e13d8
+ms.sourcegitcommit: cf8c0fef2b9690595e99ce3802586cdd55fd37c2
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51296442"
+ms.lasthandoff: 08/28/2019
+ms.locfileid: "70108145"
 ---
-# <a name="tutorial-getting-started-with-azure-functions"></a>Tutorial: Introducción a Azure Functions
+# <a name="tutorial-getting-started-with-azure-functions"></a>Tutorial: Introducción a Azure Functions
 
 En esta práctica aprenderá a empezar a compilar Azure Functions mediante Visual Studio para Mac. También podrá integrar con tablas de almacenamiento de Azure, que representan uno de los muchos tipos de enlaces y desencadenadores disponibles para los desarrolladores de Azure Functions.
 
@@ -30,7 +29,7 @@ En esta práctica aprenderá a empezar a compilar Azure Functions mediante Visua
 - Visual Studio para Mac 7.5 o posterior.
 - Una suscripción de Azure (disponible gratis desde [https://azure.com/free](https://azure.com/free)).
 
-## <a name="exercise-1-creating-an-azure-functions-project"></a>Ejercicio 1: Crear un proyecto de Azure Functions
+## <a name="exercise-1-creating-an-azure-functions-project"></a>Ejercicio 1: Creación de un proyecto de Azure Functions
 
 1. Inicie **Visual Studio para Mac**.
 
@@ -53,7 +52,7 @@ En esta práctica aprenderá a empezar a compilar Azure Functions mediante Visua
 
     ![panel de solución que muestra el archivo local.settings.json](media/azure-functions-lab-image3.png)
 
-## <a name="exercise-2-creating-an-azure-storage-account"></a>Ejercicio 2: Crear una cuenta de almacenamiento de Azure
+## <a name="exercise-2-creating-an-azure-storage-account"></a>Ejercicio 2: Creación de una cuenta de Azure Storage
 
 1. Inicie sesión en su cuenta de Azure en [https://portal.azure.com](https://portal.azure.com).
 
@@ -87,7 +86,7 @@ En esta práctica aprenderá a empezar a compilar Azure Functions mediante Visua
 
     ![archivo de configuración local con la clave de conexión especificada](media/azure-functions-lab-image10.png)
 
-## <a name="example-3-creating-and-debugging-an-azure-function"></a>Ejemplo 3: Crear y depurar una función de Azure
+## <a name="example-3-creating-and-debugging-an-azure-function"></a>Ejemplo 3: Creación y depuración de una función de Azure
 
 1. Ahora está listo para comenzar a agregar el código. Cuando se trabaja con una biblioteca de clases .NET, Azure Functions se agrega como métodos estáticos. En el **Panel de solución**, haga clic con el botón derecho en el nodo de proyecto **AzureFunctions** y seleccione **Agregar > Agregar función**:
 
@@ -104,6 +103,7 @@ En esta práctica aprenderá a empezar a compilar Azure Functions mediante Visua
     using System.Web;
     using Microsoft.WindowsAzure.Storage.Table;
     ```
+
 1. Quite el método `Run` existente y agregue el método siguiente a la clase como la función de Azure:
 
     ```csharp
@@ -119,6 +119,7 @@ En esta práctica aprenderá a empezar a compilar Azure Functions mediante Visua
         return x + y;
     }
     ```
+
 1. Analicemos la definición del método parte por parte.
 
     Lo primero que verá es el atributo **FunctionName** que marca este método como una función de Azure. El atributo designa el nombre público de la función. El nombre del atributo no tiene que coincidir con el nombre real del método.
@@ -129,7 +130,7 @@ En esta práctica aprenderá a empezar a compilar Azure Functions mediante Visua
 
     ![Nuevo método de ejecución con la inicialización del método resaltada](media/azure-functions-lab-image14.png)
 
-1. El primer parámetro se marca con el atributo **HttpTrigger**, que indica que este método lo invoca una solicitud HTTP. El atributo también especifica el nivel de autorización del método, así como los verbos que admite (solo **"GET"**, en este caso). Opcionalmente, también puede definir una **ruta** que reemplaza la ruta de acceso al método y proporciona una manera de extraer automáticamente las variables de la ruta de acceso. Puesto que, en este caso, la **ruta** es null, la ruta de acceso a este método tendrá como valor predeterminado **/api/Add**.
+1. El primer parámetro se marca con el atributo **HttpTrigger**, que indica que este método lo invoca una solicitud HTTP. El atributo también especifica el nivel de autorización del método, así como los verbos que admite (solo **"GET"** , en este caso). Opcionalmente, también puede definir una **ruta** que reemplaza la ruta de acceso al método y proporciona una manera de extraer automáticamente las variables de la ruta de acceso. Puesto que, en este caso, la **ruta** es null, la ruta de acceso a este método tendrá como valor predeterminado **/api/Add**.
 
     ![Nuevo método de ejecución con el parámetro resaltado](media/azure-functions-lab-image15.png)
 
@@ -180,6 +181,7 @@ En esta práctica aprenderá a empezar a compilar Azure Functions mediante Visua
 
     return x + y;
     ```
+
 1. Ejecute la aplicación.
 
 1. Vuelva a la ventana del explorador y anexe la cadena `/?x=2&y=3` a la dirección URL. Ahora, la dirección URL completa debería ser `http://localhost:7071/api/Add?x=2&y=3`. Vaya a la nueva dirección URL.
@@ -188,10 +190,9 @@ En esta práctica aprenderá a empezar a compilar Azure Functions mediante Visua
 
 1. Detenga la sesión de depuración.
 
+## <a name="exercise-4-working-with-functionjson"></a>Ejercicio 4: Trabajo con function.json
 
-## <a name="exercise-4-working-with-functionjson"></a>Ejercicio 4: Trabajar con function.json
-
-1.  En el ejercicio anterior, se mencionó que "Visual Studio para Mac" generó una función de trabajo para la función de Azure definida en la biblioteca. Esto es porque Azure Functions realmente no usa los atributos del método en tiempo de ejecución, sino que usa una convención de sistema de archivos de tiempo de compilación para configurar dónde y cómo se ponen a disposición las funciones de Azure. En el **Panel de solución**, haga clic con el botón derecho en el nodo del proyecto y seleccione **Mostrar en Finder**.
+1. En el ejercicio anterior, se mencionó que "Visual Studio para Mac" generó una función de trabajo para la función de Azure definida en la biblioteca. Esto es porque Azure Functions realmente no usa los atributos del método en tiempo de ejecución, sino que usa una convención de sistema de archivos de tiempo de compilación para configurar dónde y cómo se ponen a disposición las funciones de Azure. En el **Panel de solución**, haga clic con el botón derecho en el nodo del proyecto y seleccione **Mostrar en Finder**.
 
      ![Opción del menú Mostrar en Finder](media/azure-functions-lab-image23.png)
 
@@ -224,7 +225,7 @@ En esta práctica aprenderá a empezar a compilar Azure Functions mediante Visua
     "generatedBy":"Microsoft.NET.Sdk.Functions-1.0.13",
     ```
 
-1. Al final del primer enlace, (después de la línea **"name": "req"**), agregue las propiedades siguientes: No olvide incluir una coma en la línea anterior. Esta propiedad sobrescribe la raíz predeterminada de tal forma que ahora extraerá los parámetros **int** de la ruta de acceso y los colocará en los parámetros del método denominados **x** e **y**.
+1. Al final del primer enlace, (después de la línea **"name": "req"** ), agregue las propiedades siguientes: No olvide incluir una coma en la línea anterior. Esta propiedad sobrescribe la raíz predeterminada de tal forma que ahora extraerá los parámetros **int** de la ruta de acceso y los colocará en los parámetros del método denominados **x** e **y**.
 
     ```json
     "direction": "in",
@@ -241,7 +242,7 @@ En esta práctica aprenderá a empezar a compilar Azure Functions mediante Visua
     }
     ```
 
-1. Actualice también la propiedad **entryPoint** al final del archivo para que use un método denominado **"Add2"**, como se muestra a continuación. Con esto se muestra que la ruta de acceso **api/Adder...** podría asignarse a un método apropiado con cualquier nombre (aquí, **Add2**).
+1. Actualice también la propiedad **entryPoint** al final del archivo para que use un método denominado **"Add2"** , como se muestra a continuación. Con esto se muestra que la ruta de acceso **api/Adder...** podría asignarse a un método apropiado con cualquier nombre (aquí, **Add2**).
 
     ```json
     "entryPoint": "<project-name>.<function-class-name>.Add2"
@@ -290,19 +291,20 @@ En esta práctica aprenderá a empezar a compilar Azure Functions mediante Visua
         return x + y;
     }
     ```
+
 1. Presione **F5** para compilar y ejecutar el proyecto.
 
 1. Cuando finalice la compilación y la plataforma gire, indicará que hay una segunda ruta disponible para las solicitudes que se asigna para el método recién agregado:
 
     ![Dirección URL para las funciones Http](media/azure-functions-lab-image31.png)
 
-1. Devuelva la ventana del explorador y vaya a **http://localhost:7071/api/Adder/3/5**.
+1. Devuelva la ventana del explorador y vaya a **http://localhost:7071/api/Adder/3/5** .
 
 1. Esta vez el método funciona una vez más, y extrae los parámetros de la ruta de acceso y genera una suma.
 
 1. Vuelva a **Visual Studio para Mac** y termine la sesión de depuración.
 
-## <a name="exercise-5-working-with-azure-storage-tables"></a>Ejercicio 5: Trabajar con tablas de almacenamiento de Azure
+## <a name="exercise-5-working-with-azure-storage-tables"></a>Ejercicio 5: Trabajo con tablas de almacenamiento de Azure
 
 A menudo, el servicio que compile podría ser mucho más complejo que lo que hemos creado hasta ahora y requerir una cantidad significativa de tiempo o infraestructura para ejecutarse. En este caso, podría resultarle efectivo aceptar las solicitudes que se ponen en cola para su procesamiento cuando los recursos estén disponibles, los cuales son compatibles con Azure. En otros casos tendrá que almacenar los datos de forma centralizada. Las tablas de Azure Storage permiten hacerlo rápidamente.
 
@@ -316,6 +318,7 @@ A menudo, el servicio que compile podría ser mucho más complejo que lo que hem
         public int Sum { get; set; }
     }
     ```
+
 1. En la clase **Add**, agregue el siguiente código para introducir otra función. Tenga en cuenta que este es único hasta el momento, ya que no implica una respuesta HTTP. La última línea devuelve una nueva **TableRow** rellenada con alguna información clave que le resultará fácil de recuperar más adelante (**PartitionKey** y **RowKey**), así como sus parámetros y la suma. El código dentro del método también usa el **TraceWriter** para que le resulte más fácil saber cuándo se ejecuta la función.
 
     ```csharp
@@ -341,9 +344,10 @@ A menudo, el servicio que compile podría ser mucho más complejo que lo que hem
         };
     }
     ```
+
 1. Presione **F5** para compilar y ejecutar el proyecto.
 
-1. En la pestaña del explorador, vaya a **http://localhost:7071/api/Process/4/6**. Esto colocará otro mensaje a la cola, cuyo resultado final será que se agrega otra fila a la tabla.
+1. En la pestaña del explorador, vaya a **http://localhost:7071/api/Process/4/6** . Esto colocará otro mensaje a la cola, cuyo resultado final será que se agrega otra fila a la tabla.
 
 1. Vuelva a **Terminal** y espere a la solicitud entrante para **4 + 6**.
 
@@ -363,6 +367,7 @@ A menudo, el servicio que compile podría ser mucho más complejo que lo que hem
     [Table("Results", "sums", "{x}_{y}")]
     TableRow tableRow,
     ```
+
 1. Agregue el código siguiente al principio del método. Si **tableRow** no es null, ya tendremos los resultados de la operación que se solicita y se puede devolver inmediatamente. En caso contrario, la función continúa como antes. Aunque esto puede no ser la manera más sólida de devolver los datos, muestra que puede coordinar operaciones extremadamente complejas en múltiples niveles escalables con muy poco código.
 
     ```csharp
@@ -372,13 +377,14 @@ A menudo, el servicio que compile podría ser mucho más complejo que lo que hem
         return null;
     }
     ```
+
 1. Presione **F5** para compilar y ejecutar el proyecto.
 
-1. En la pestaña del explorador, actualice la dirección URL a **http://localhost:7071/api/Process/4/6**. Puesto que la fila de tabla para este registro existe, debería devolver inmediatamente y sin errores. Puesto que no hay ninguna salida HTTP, puede ver el resultado en Terminal.
+1. En la pestaña del explorador, actualice la dirección URL a **http://localhost:7071/api/Process/4/6** . Puesto que la fila de tabla para este registro existe, debería devolver inmediatamente y sin errores. Puesto que no hay ninguna salida HTTP, puede ver el resultado en Terminal.
 
     ![Terminal de salida que muestra que la fila de la tabla ya existe](media/azure-functions-lab-image33.png)
 
-1. Actualice la dirección URL para reflejar una combinación que todavía no ha probado, como **http://localhost:7071/api/Process/5/7**. Tenga en cuenta el mensaje en Terminal, que indica que no se encontró la fila de tabla (como se esperaba).
+1. Actualice la dirección URL para reflejar una combinación que todavía no ha probado, como **http://localhost:7071/api/Process/5/7** . Tenga en cuenta el mensaje en Terminal, que indica que no se encontró la fila de tabla (como se esperaba).
 
     ![Terminal de salida que muestra nuevo proceso](media/azure-functions-lab-image34.png)
 
@@ -409,4 +415,3 @@ A menudo, el servicio que compile podría ser mucho más complejo que lo que hem
 ## <a name="summary"></a>Resumen
 
 En esta práctica ha aprendido a empezar a compilar Azure Functions con Visual Studio para Mac.
-

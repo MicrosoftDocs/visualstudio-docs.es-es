@@ -15,12 +15,12 @@ ms.assetid: 06990510-5424-44b8-9fd9-6481acec5c76
 caps.latest.revision: 38
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: b215d969ba7898923e98f063a47132125d82119b
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: cf42be1e62bfb4895d29a61fcadc221d5c14bec9
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60042618"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63443904"
 ---
 # <a name="extending-the-properties-task-list-output-and-options-windows"></a>Ampliación de las ventana Propiedades, Lista de tareas, Salida y Opciones
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,7 +35,7 @@ Puede tener acceso a cualquier ventana de herramientas en Visual Studio. En este
 1. Cree un proyecto denominado **TodoList** con la plantilla VSIX y agrega una plantilla de elemento de ventana de herramienta personalizada denominada **TodoWindow**.  
   
     > [!NOTE]
-    >  Para obtener más información acerca de cómo crear una extensión con una ventana de herramientas, consulte [crear una extensión con una ventana de herramientas](../extensibility/creating-an-extension-with-a-tool-window.md).  
+    > Para obtener más información acerca de cómo crear una extensión con una ventana de herramientas, consulte [crear una extensión con una ventana de herramientas](../extensibility/creating-an-extension-with-a-tool-window.md).  
   
 ## <a name="set-up-the-tool-window"></a>Configuración de la ventana de herramientas  
  Agregue un cuadro de texto que se va a escribir un nuevo elemento de lista de tareas, un botón para agregar el nuevo elemento a la lista y un cuadro de lista para mostrar los elementos en la lista.  
@@ -43,7 +43,7 @@ Puede tener acceso a cualquier ventana de herramientas en Visual Studio. En este
 1. En TodoWindow.xaml, elimine los controles de botón, cuadro de texto y StackPanel de UserControl.  
   
     > [!NOTE]
-    >  Esto no elimina el **button1_Click** controlador de eventos, que volverá a usar en un paso posterior.  
+    > Esto no elimina el **button1_Click** controlador de eventos, que volverá a usar en un paso posterior.  
   
 2. Desde el **todos los controles de WPF** sección de la **cuadro de herramientas**, arrastre un **lienzo** control a la cuadrícula.  
   

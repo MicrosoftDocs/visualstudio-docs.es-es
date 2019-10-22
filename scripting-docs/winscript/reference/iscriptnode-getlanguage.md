@@ -1,5 +1,5 @@
 ---
-title: IScriptNode::GetLanguage | Microsoft Docs
+title: 'Iscriptnode (:: GetLanguage | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 13
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 36b7076bf7f261e462802174c6f9014403606ac8
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 26fd5db22346292585be3cea751eaa8be1c284a9
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58152855"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72575693"
 ---
 # <a name="iscriptnodegetlanguage"></a>IScriptNode::GetLanguage
-Devuelve el lenguaje de scripting que utiliza el actual nodo de secuencia de comandos.  
+Devuelve el lenguaje de scripting que utiliza el nodo de script actual.  
   
 ## <a name="syntax"></a>Sintaxis  
   
@@ -37,10 +37,10 @@ HRESULT GetLanguage(
   
 #### <a name="parameters"></a>Parámetros  
  `pbstr`  
- [out] Devuelve "JScript" si el nodo de secuencia de comandos utiliza JScript, o "VBScript" si el nodo de secuencia de comandos utiliza Visual Basic Scripting Edition (VBScript).  
+ enuncia Devuelve "JScript" si el nodo de script usa JScript o "VBScript" si el nodo de script utiliza Visual Basic Scripting Edition (VBScript).  
   
 ## <a name="return-value"></a>Valor devuelto  
- Una clase `HRESULT`. Entre los valores posibles se incluyen los que se indican en la tabla siguiente, entre otros.  
+ Interfaz `HRESULT`. Entre los valores posibles se incluyen los que se indican en la tabla siguiente, entre otros.  
   
 |Valor|Descripción|  
 |-----------|-----------------|  

@@ -1,5 +1,5 @@
 ---
-title: Proporcionar información de implementación en los elementos de proyecto de empaquetado e | Microsoft Docs
+title: Información de empaquetado e implementación de elementos de proyecto
 ms.date: 02/02/2017
 ms.topic: conceptual
 f1_keywords:
@@ -24,12 +24,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 4b2bf1fc1b011b79fdd8123218a78ac91a14579b
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: a9af945ff377b30925a51875db205bcd882f4585
+ms.sourcegitcommit: 13ab9a5ab039b070b9cd9251d0b83dd216477203
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56621960"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66177713"
 ---
 # <a name="provide-packaging-and-deployment-information-in-project-items"></a>Proporcionar información de empaquetado e implementación de elementos de proyecto
   Todos los elementos de proyecto de SharePoint en [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] tienen propiedades que puede usar para proporcionar datos adicionales cuando el proyecto se implementa en SharePoint. Estas propiedades son las siguientes:
@@ -57,7 +57,7 @@ ms.locfileid: "56621960"
 
  Los valores de propiedad de característica idénticos en todos los elementos de proyecto se combinan en el manifiesto de la característica. Sin embargo, si dos elementos del proyecto especifican la misma clave de propiedad de la función con valores no coincidentes, se produce un error de validación.
 
- Para agregar propiedades de característica directamente al archivo de características (*.feature*), llame a la [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] método del modelo de objetos de SharePoint <xref:Microsoft.VisualStudio.SharePoint.Features.IPropertyCollection.Add%2A>. Si utiliza este método, tenga en cuenta que la misma regla acerca de cómo agregar valores de propiedad de característica idénticos en las propiedades de características también se aplica a las propiedades que se agregan directamente al archivo de características.
+ Para agregar propiedades de característica directamente al archivo de características ( *.feature*), llame a la [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] método del modelo de objetos de SharePoint <xref:Microsoft.VisualStudio.SharePoint.Features.IPropertyCollection.Add%2A>. Si utiliza este método, tenga en cuenta que la misma regla acerca de cómo agregar valores de propiedad de característica idénticos en las propiedades de características también se aplica a las propiedades que se agregan directamente al archivo de características.
 
 ## <a name="feature-receiver"></a>Receptor de características
  Receptores de características son código que se ejecuta cuando se produzcan determinados eventos en un elemento de proyecto que contiene la característica. Por ejemplo, puede definir los receptores de características que se ejecutan cuando se instala, activa o actualiza la característica. Una forma de agregar un receptor de características consiste en agregarla directamente a una característica como se describe en [Tutorial: Agregar receptores de eventos de característica](../sharepoint/walkthrough-add-feature-event-receivers.md). Otra manera consiste en hacer referencia a un nombre de clase del receptor de características y un ensamblado en el **receptor de características** propiedad.
@@ -68,7 +68,7 @@ ms.locfileid: "56621960"
 ### <a name="reference-method"></a>Reference (método)
  Otra forma de agregar un receptor de características está usando el **receptor de características** propiedad de un elemento de proyecto para hacer referencia a un ensamblado del receptor de características. El valor de propiedad de receptor de características tiene dos subpropiedades: **Ensamblado** y **nombre de la clase**. El ensamblado debe usar su nombre completo, el nombre "seguro" y el nombre de clase deben ser el nombre de tipo completo. Para más información, vea [Ensamblados con nombre seguro](http://go.microsoft.com/fwlink/?LinkID=169573). Después de implementar la solución en SharePoint, la función usa el receptor de características que se hace referencia para controlar los eventos de característica.
 
- Solución de valores de propiedad de receptor en la característica de tiempo, la característica de compilación y combinan sus proyectos para establecer los atributos ReceiverAssembly y ReceiverClass del elemento de característica en el manifiesto de la característica de la solución de SharePoint (*.wsp* ) archivo. Por lo tanto, si se especifican los valores de propiedad del ensamblado y el nombre de clase de un elemento de proyecto y una característica, deben coincidir los valores de propiedad de característica y elemento de proyecto. Si los valores no coinciden, recibirá un error de validación. Si desea que un elemento de proyecto para hacer referencia a un ensamblado del receptor de características que no sea el que utiliza la característica, muévalo a otra característica.
+ Solución de valores de propiedad de receptor en la característica de tiempo, la característica de compilación y combinan sus proyectos para establecer los atributos ReceiverAssembly y ReceiverClass del elemento de característica en el manifiesto de la característica de la solución de SharePoint ( *.wsp* ) archivo. Por lo tanto, si se especifican los valores de propiedad del ensamblado y el nombre de clase de un elemento de proyecto y una característica, deben coincidir los valores de propiedad de característica y elemento de proyecto. Si los valores no coinciden, recibirá un error de validación. Si desea que un elemento de proyecto para hacer referencia a un ensamblado del receptor de características que no sea el que utiliza la característica, muévalo a otra característica.
 
  Si hace referencia a un ensamblado del receptor de características que ya no está en el servidor, también debe incluir el propio archivo de ensamblado en el paquete; [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] no se agrega automáticamente. Al implementar la característica, se copia el archivo de ensamblado para que el sistema [!INCLUDE[TLA#tla_gac](../sharepoint/includes/tlasharptla-gac-md.md)] o la carpeta Bin en el directorio físico de SharePoint. Para obtener más información, consulte Cómo: [Cómo: Agregar y quitar ensamblados adicionales](../sharepoint/how-to-add-and-remove-additional-assemblies.md).
 

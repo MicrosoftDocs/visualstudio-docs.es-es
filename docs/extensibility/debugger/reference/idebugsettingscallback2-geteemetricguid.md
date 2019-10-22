@@ -5,17 +5,20 @@ ms.topic: reference
 helpviewer_keywords:
 - IDebugSettingsCallback2::GetEEMetricGuid
 ms.assetid: 3d70c19a-595d-44f1-a7b3-a0cf8f15e371
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f2bffa499d24bc38008982c990efd19205e95f6f
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: ca64245a4f0ce3436dce3e5623099b0d82669676
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56692078"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66322101"
 ---
 # <a name="idebugsettingscallback2geteemetricguid"></a>IDebugSettingsCallback2::GetEEMetricGuid
 Recupera el identificador único para una métrica de evaluador de expresión dado su nombre.
@@ -40,22 +43,18 @@ HRESULT GetEEMetricGuid(
 );
 ```
 
-#### <a name="parameters"></a>Parámetros
- `guidLang`
+## <a name="parameters"></a>Parámetros
+`guidLang`\
+[in] Identificador único del lenguaje de programación.
 
- [in] Identificador único del lenguaje de programación.
+`guidVendor`\
+[in] Identificador único del proveedor.
 
- `guidVendor`
+`pszMetric`\
+[in] Nombre de la métrica.
 
- [in] Identificador único del proveedor.
-
- `pszMetric`
-
- [in] Nombre de la métrica.
-
- `pguidValue`
-
- [out] Devuelve el identificador único de la métrica.
+`pguidValue`\
+[out] Devuelve el identificador único de la métrica.
 
 ## <a name="return-value"></a>Valor devuelto
  Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.

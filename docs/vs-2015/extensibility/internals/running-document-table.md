@@ -15,11 +15,11 @@ caps.latest.revision: 19
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 7ea32df892efa47c91d8292bdc9065080318a059
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60044611"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68155555"
 ---
 # <a name="running-document-table"></a>Tabla de documentos en ejecución
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -29,7 +29,7 @@ El IDE mantiene la lista de todos los documentos abiertos actualmente en una est
 ## <a name="elements-of-the-running-document-table"></a>Elementos de la tabla de documentos en ejecución  
  La tabla de documentos en ejecución contiene las siguientes entradas.  
   
-|Elemento|Descripción|  
+|Elemento|DESCRIPCIÓN|  
 |-------------|-----------------|  
 |Moniker del documento|Cadena que identifica de forma única el objeto de datos. Esto sería la ruta de acceso absoluta del archivo para un sistema de proyectos que administra los archivos (por ejemplo, C:\MyProject\MyFile). Esta cadena se usa también para los proyectos que se guardan en almacenes distintos sistemas de archivos, como procedimientos almacenados en una base de datos. En este caso, el sistema del proyecto puede inventar una cadena única que puedan reconocer y posiblemente analizar para determinar cómo almacenar el documento.|  
 |Propietario de la jerarquía|El objeto de jerarquía que posee el documento, tal como está representada por un <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy> interfaz.|  
@@ -59,5 +59,5 @@ El IDE mantiene la lista de todos los documentos abiertos actualmente en una est
 - Use el identificador de jerarquía o el elemento para formular el sistema del proyecto para la ruta de acceso completa del documento y, a continuación, busque el elemento en el RDT.  
   
 ## <a name="see-also"></a>Vea también  
- [RDT_ReadLock Usage](../../extensibility/internals/rdt-readlock-usage.md)   
+ [Uso de RDT_ReadLock](../../extensibility/internals/rdt-readlock-usage.md)   
  [Persistencia y tabla de documentos en ejecución](../../extensibility/internals/persistence-and-the-running-document-table.md)

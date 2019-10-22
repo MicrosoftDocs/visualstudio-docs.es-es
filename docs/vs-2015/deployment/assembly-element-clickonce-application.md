@@ -18,11 +18,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: d619b8b3cd81e5b00fc689077a95ade08f4d7eed
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58987564"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68183480"
 ---
 # <a name="ltassemblygt-element-clickonce-application"></a>&lt;ensamblado&gt; elemento (aplicación ClickOnce)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -51,9 +51,9 @@ El elemento de nivel superior para el manifiesto de aplicación.
   
  El elemento `assembly` tiene los atributos siguientes:  
   
-|Atributo|Descripción|  
+|Atributo|DESCRIPCIÓN|  
 |---------------|-----------------|  
-|`manifestVersion`|Obligatorio. El `manifestVersion` atributo debe establecerse en `1.0`.|  
+|`manifestVersion`|Necesario. El `manifestVersion` atributo debe establecerse en `1.0`.|  
   
 ## <a name="example"></a>Ejemplo  
  En el ejemplo de código siguiente se ilustra un `assembly` elemento en un manifiesto de aplicación para un [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] aplicación. Este ejemplo de código forma parte de un ejemplo más extenso incluido en [ClickOnce Application Manifest](../deployment/clickonce-application-manifest.md).  

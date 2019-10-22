@@ -6,17 +6,17 @@ helpviewer_keywords:
 - projects [Visual Studio SDK], configuration for building
 - project configurations, building
 ms.assetid: 2c83615d-fa4d-4b9f-b315-7a69b3000da0
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 179192e5935f3a97f38dc3a1b78dd1bd760c303d
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: fd9464105d777c0d488175ad67e1481022caa2d1
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56636791"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66328536"
 ---
 # <a name="project-configuration-for-building"></a>Configuración del proyecto para la compilación
 La lista de configuraciones de soluciones para una solución determinada se administra mediante el cuadro de diálogo de configuraciones de soluciones.
@@ -26,7 +26,7 @@ La lista de configuraciones de soluciones para una solución determinada se admi
  Si el usuario crea una nueva configuración de solución denominada MyConfig2, Proyecto1 enlaza su configuración de depuración para la configuración de soluciones de forma predeterminada. Project2 también enlaza su configuración MyConfig2 a la configuración de soluciones de forma predeterminada.
 
 > [!NOTE]
->  Enlace distingue mayúsculas de minúsculas.
+> Enlace distingue mayúsculas de minúsculas.
 
  Cuando el usuario selecciona el **selección múltiple** elemento en la lista desplegable de configuración, el entorno muestra un cuadro de diálogo que proporciona la lista de configuraciones disponibles.
 
@@ -43,7 +43,7 @@ La lista de configuraciones de soluciones para una solución determinada se admi
  Dependencias del proyecto determinan el orden en que se generan los proyectos. Utilice la pestaña de orden de compilación en el cuadro de diálogo para ver el orden exacto en el que compilar proyectos dentro de una solución y use la ficha dependencias para modificar el orden de compilación.
 
 > [!NOTE]
->  En la lista de los proyectos que tienen sus casillas activadas pero atenuadas se han agregado por el entorno debido a dependencias explícitas, especificado por el <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildDependency> o <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployDependency> e interfaces, no se puede cambiar. Por ejemplo, agregando una referencia de proyecto desde un [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] proyecto a otro proyecto agrega automáticamente una dependencia de compilación que solo se puede quitar mediante la eliminación de la referencia. No se puede seleccionar proyectos cuyas casillas de verificación están desactivadas y aparecen atenuadas porque si lo hace, crearía un bucle de dependencia (por ejemplo, sería depende Project2 Project1 y Project2 sería depende Project1), que se detendría la generación.
+> En la lista de los proyectos que tienen sus casillas activadas pero atenuadas se han agregado por el entorno debido a dependencias explícitas, especificado por el <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildDependency> o <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployDependency> e interfaces, no se puede cambiar. Por ejemplo, agregando una referencia de proyecto desde un [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] proyecto a otro proyecto agrega automáticamente una dependencia de compilación que solo se puede quitar mediante la eliminación de la referencia. No se puede seleccionar proyectos cuyas casillas de verificación están desactivadas y aparecen atenuadas porque si lo hace, crearía un bucle de dependencia (por ejemplo, sería depende Project2 Project1 y Project2 sería depende Project1), que se detendría la generación.
 
  [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] los procesos de compilación incluyen las compilación típico y operaciones de vínculo que se invocan con un solo comando de compilación. También se admiten otros dos procesos de compilación: una operación de limpieza para eliminar todos los elementos de salida de una compilación anterior y una comprobación para determinar si ha cambiado un elemento de salida en una configuración actualizada.
 

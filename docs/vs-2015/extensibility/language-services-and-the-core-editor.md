@@ -11,13 +11,13 @@ caps.latest.revision: 14
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 1e708ffe796bfc9342bc20c3e7f20d5cf0d05058
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58987344"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68180301"
 ---
-# <a name="language-services-and-the-core-editor"></a>Servicios de lenguaje y el Editor básico
+# <a name="language-services-and-the-core-editor"></a>Servicios de lenguaje y editor principal
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Editores de Visual Studio están asociados con frecuencia a un servicio de lenguaje. Entre otras cosas, un servicio de lenguaje proporciona colores de sintaxis, finalización de instrucciones, IntelliSense y el formato de texto.  
@@ -27,7 +27,7 @@ Editores de Visual Studio están asociados con frecuencia a un servicio de lengu
   
  Para obtener más información, consulte [determinar qué Editor abre un archivo en un proyecto](../extensibility/internals/determining-which-editor-opens-a-file-in-a-project.md).  
   
-## <a name="language-services-and-the-core-editor"></a>Servicios de lenguaje y el Editor básico  
+## <a name="language-services-and-the-core-editor"></a>Servicios de lenguaje y editor principal  
  Al implementar un servicio de lenguaje, puede controlar cómo se muestran los datos en la vista del documento. Un servicio de lenguaje proporciona información y el comportamiento que es específico de un idioma determinado, como Visual C++. Cuando se crea un búfer de texto y determinar la extensión de nombre de archivo para el documento que se abre, el búfer de texto determina el servicio de lenguaje asociado con esta extensión de nombre de archivo de una clave del registro, HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Editors \\\Extensions {YourLanguageService GUID}. El VSPackage estándar del procedimiento de carga, a continuación, carga el VSPackage y se crea una instancia de su servicio de lenguaje.  
   
  Un servicio de lenguaje básico se muestra en la siguiente ilustración.  

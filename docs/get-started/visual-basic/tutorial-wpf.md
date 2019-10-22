@@ -1,8 +1,8 @@
 ---
-title: 'Tutorial: Aplicación Hola mundo con Windows Presentation Foundation (WPF) en Visual Basic'
+title: Aplicación Hola mundo con WPF en Visual Basic
 description: Cree una aplicación sencilla de .NET de escritorio de Windows en Visual Basic con Visual Studio mediante el marco de interfaz de usuario de Windows Presentation Foundation (WPF).
 ms.custom: seodec18, get-started
-ms.date: 03/14/2019
+ms.date: 04/23/2019
 ms.technology: vs-ide-general
 ms.prod: visual-studio-windows
 ms.topic: conceptual
@@ -14,12 +14,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: b64972f2bf2ef0bb34722f717f7ddf8bf032349d
-ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
+ms.openlocfilehash: 4108298eb095cf31e5f5f7089cbc7cd8780e8977
+ms.sourcegitcommit: 78e2637e4fbfadd4509b55276816b64f5c24c606
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "58857410"
+ms.lasthandoff: 09/10/2019
+ms.locfileid: "70864696"
 ---
 # <a name="tutorial-create-a-simple-application-with-visual-basic"></a>Tutorial: Creación de una aplicación sencilla con Visual Basic
 
@@ -27,13 +27,13 @@ Tras completar este tutorial, estará familiarizado con muchas de las herramient
 
 ::: moniker range="vs-2017"
 
-Si todavía no ha instalado Visual Studio, vaya a la página de [descargas de Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017) para instalarlo de forma gratuita.
+Si todavía no ha instalado Visual Studio, vaya a la página de [descargas de Visual Studio](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download) para instalarlo de forma gratuita.
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-Si todavía no ha instalado Visual Studio, vaya a la página de [descargas de Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019) para instalarlo de forma gratuita.
+Si todavía no ha instalado Visual Studio, vaya a la página de [descargas de Visual Studio](https://visualstudio.microsoft.com/downloads) para instalarlo de forma gratuita.
 
 ::: moniker-end
 
@@ -67,7 +67,7 @@ Cuando cree una aplicación en Visual Studio, primero creará un proyecto y una 
 
      ![En la barra de menús, elija Archivo, Nuevo, Proyecto](../media/exploreide-filenewproject.png)
 
-2. En el cuadro de diálogo **Nuevo proyecto**, seleccione la categoría **Instalados** > **Visual Basic** > **Escritorio de Windows** y, luego, seleccione la plantilla **Aplicación de WPF (.NET Framework)**. Asígnele al proyecto el nombre **HelloWPFApp** y haga clic en **Aceptar**.
+2. En el cuadro de diálogo **Nuevo proyecto**, seleccione la categoría **Instalados** > **Visual Basic** > **Escritorio de Windows** y, luego, seleccione la plantilla **Aplicación de WPF (.NET Framework)** . Asígnele al proyecto el nombre **HelloWPFApp** y haga clic en **Aceptar**.
 
      ![Plantilla de aplicación de WPF en el cuadro de diálogo Nuevo proyecto de Visual Studio](media/exploreide-newproject-vb.png)
 
@@ -100,29 +100,23 @@ Después de crear el proyecto, puede personalizarlo. Mediante la ventana **Propi
 
 ### <a name="change-the-name-of-mainwindowxaml"></a>Cambiar el nombre de MainWindow.xaml
 
-Asignemos a MainWindow un nombre más específico.
-
-1. En el **Explorador de soluciones**, seleccione *MainWindow.xaml*. Debería ver la ventana **Propiedades**, pero, si no es así, seleccione el menú **Ver** y el elemento **Ventana de propiedades**.
-
-1. Cambie la propiedad **Nombre de archivo** a `Greetings.xaml`.
-
-     ![Ventana Propiedades con nombre de archivo resaltado](../media/exploreide-filenameinpropertieswindow.png)
-
-     El **Explorador de soluciones** muestra que el nombre de archivo es ahora *Greetings.xaml* y que el nombre del archivo de código anidado es ahora *Greetings.xaml.vb*. Este archivo de código está anidado bajo el nodo del archivo *.xaml* para mostrar que están muy relacionados entre sí.
+Asignemos a MainWindow un nombre más específico. En el **Explorador de soluciones**, haga clic con el botón derecho en *MainWindow.xaml* y seleccione **Cambiar nombre**. Cambie el nombre del archivo por *Greetings.xaml*.
 
 ## <a name="design-the-user-interface-ui"></a>Diseñar la interfaz de usuario (IU)
+
+Si el diseñador no está abierto, seleccione *Greetings.xaml* en el **Explorador de soluciones** y presione **Mayús**+**F7** para abrir el diseñador.
 
 Agregaremos tres tipos de controles a esta aplicación: un control <xref:System.Windows.Controls.TextBlock>, dos controles <xref:System.Windows.Controls.RadioButton> y un control <xref:System.Windows.Controls.Button>.
 
 ### <a name="add-a-textblock-control"></a>Agregar un control TextBlock
 
-1.  Presione **Ctrl**+**Q** para activar el cuadro de búsqueda y escriba **cuadro de herramientas**. Elija **Ver > Cuadro de herramientas** en la lista de resultados.
+1. Presione **Ctrl**+**Q** para activar el cuadro de búsqueda y escriba **cuadro de herramientas**. Elija **Ver > Cuadro de herramientas** en la lista de resultados.
 
 2. En el **Cuadro de herramientas**, expanda el nodo **Controles WPF comunes** para ver el control TextBlock.
 
      ![Cuadro de herramientas con el control TextBlock resaltado](../media/exploreide-textblocktoolbox.png)
 
-3. Agregue un control TextBlock a la superficie de diseño. Para ello, elija el elemento **TextBlock** y arrástrelo a la ventana en la superficie de diseño. Centre el control cerca de la parte superior de la ventana.
+3. Agregue un control TextBlock a la superficie de diseño. Para ello, elija el elemento **TextBlock** y arrástrelo a la ventana en la superficie de diseño. Centre el control cerca de la parte superior de la ventana. En Visual Studio 2019 y versiones posteriores, puede usar las guías de color rojo para centrar el control.
 
 La ventana debería ser similar a la siguiente ilustración:
 
@@ -131,7 +125,7 @@ La ventana debería ser similar a la siguiente ilustración:
 El marcado XAML debe tener un aspecto similar al siguiente ejemplo:
 
 ```xaml
-<TextBlock HorizontalAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Center" RenderTransformOrigin="4.08,2.312" Margin="237,57,221,238"><Run Text="TextBlock"/><InlineUIContainer><TextBlock TextWrapping="Wrap" Text="TextBlock"/>
+<TextBlock HorizontalAlignment="Left" Margin="381,100,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top"/>
 ```
 
 ### <a name="customize-the-text-in-the-text-block"></a>Personalizar el texto en el bloque de texto
@@ -152,7 +146,7 @@ Después, agregará dos controles [RadioButton](/dotnet/framework/wpf/controls/r
 
      ![Ventana Cuadro de herramientas con el control RadioButton seleccionado](../media/exploreide-radiobuttontoolbox.png)
 
-2. Agregue dos controles RadioButton a la superficie de diseño. Para ello, elija el elemento **RadioButton** y arrástrelo a la ventana en la superficie de diseño. Mueva los botones (para hacerlo, selecciónelos y use las teclas de dirección) de modo que aparezcan uno junto al otro bajo el control TextBlock.
+2. Agregue dos controles RadioButton a la superficie de diseño. Para ello, elija el elemento **RadioButton** y arrástrelo a la ventana en la superficie de diseño. Mueva los botones (para hacerlo, selecciónelos y use las teclas de dirección) de modo que aparezcan uno junto al otro bajo el control TextBlock. Use las guías de color rojo para alinear los controles.
 
      La ventana debe ser similar a la que se muestra a continuación:
 
@@ -168,9 +162,15 @@ Ahora puede agregar el texto para mostrar de cada control RadioButton. El proced
 
 ### <a name="add-display-text-for-each-radio-button"></a>Agregar el texto para mostrar de cada botón de radio
 
-1. En la superficie de diseño, abra el menú contextual de HelloButton. Para ello, presione el botón derecho del mouse encima de HelloButton. Elija **Editar texto** y, luego, escriba `Hello` (Hola).
+Cambie el atributo **Content** de los controles `HelloButton` y `GoodbyeButton` por `"Hello"` y `"Goodbye"` en el código XAML. El marcado XAML ahora debería ser similar al del ejemplo siguiente:
 
-2. Abra el menú contextual de GoodbyeButton. Para ello, presione el botón derecho del mouse encima de GoodbyeButton. Elija **Editar texto** y, luego, escriba `Goodbye` (Adiós).
+   ```xaml
+   <Grid>
+        <TextBlock HorizontalAlignment="Left" Margin="252,47,0,0" TextWrapping="Wrap" Text="Select a message option and then choose the Display button." VerticalAlignment="Top"/>
+        <RadioButton x:Name="HelloButton" Content="Hello" HorizontalAlignment="Left" Margin="297,161,0,0" VerticalAlignment="Top"/>
+        <RadioButton x:Name="GoodbyeButton" Content="Goodbye" HorizontalAlignment="Left" Margin="488,161,0,0" VerticalAlignment="Top"/>
+   </Grid>
+   ```
 
 ### <a name="set-a-radio-button-to-be-checked-by-default"></a>Establecer que un botón de radio esté activado de forma predeterminada
 
@@ -186,7 +186,7 @@ El último elemento de la interfaz de usuario que agregará es un control [Butto
 
 ### <a name="add-the-button-control"></a>Agregar el control Button
 
-1. En el **Cuadro de herramientas**, busque el control **Botón** y, después, agréguelo a la superficie de diseño en los controles RadioButton. Para ello, arrástrelo al formulario de la vista de diseño.
+1. En el **Cuadro de herramientas**, busque el control **Botón** y, después, agréguelo a la superficie de diseño en los controles RadioButton. Para ello, arrástrelo al formulario de la vista de diseño. Si usa Visual Studio 2019 o una versión posterior, una línea de color rojo le ayuda a centrar el control.
 
 2. En la vista XAML, cambie el valor de **Content** del control de botón de `Content="Button"` a `Content="Display"` y, después, guarde los cambios.
 
@@ -205,7 +205,7 @@ Cuando se ejecuta esta aplicación, aparece un cuadro de mensaje después de que
      Se abre *Greetings.xaml.vb* con el cursor en el evento `Button_Click`.
 
     ```vb
-    Private Sub Button_Click_1(sender As Object, e As RoutedEventArgs)
+    Private Sub Button_Click(sender As Object, e As RoutedEventArgs)
 
     End Sub
     ```
@@ -248,7 +248,16 @@ Hemos cambiado el nombre de *MainWindow.xaml* a *Greetings.xaml* al comienzo de 
 
 2. Cambie `StartupUri="MainWindow.xaml"` a `StartupUri="Greetings.xaml"` y después guarde los cambios.
 
-Vuelva a iniciar el depurador (presione **F5**). Debería ver la ventana **Greetings** de la aplicación. Ahora, cierre la ventana de la aplicación para detener la depuración.
+Vuelva a iniciar el depurador (presione **F5**). Debería ver la ventana **Greetings** de la aplicación.
+
+::: moniker range="vs-2017"
+![Captura de pantalla de la aplicación en ejecución](media/exploreide-wpf-running-app.png)
+::: moniker-end
+::: moniker range=">=vs-2019"
+![Captura de pantalla de la aplicación en ejecución](media/vs-2019/exploreide-wpf-running-app.png)
+::: moniker-end
+
+ Ahora, cierre la ventana de la aplicación para detener la depuración.
 
 ### <a name="debug-with-breakpoints"></a>Depurar con puntos de interrupción
 
@@ -288,6 +297,12 @@ Puede probar el código durante la depuración. Para ello, agregue algunos punto
 
 11. En la barra de menús, elija **Depurar** > **Deshabilitar todos los puntos de interrupción**.
 
+### <a name="view-a-representation-of-the-ui-elements"></a>Visualización de una representación de los elementos de la interfaz de usuario
+
+En la aplicación en ejecución, debería ver un widget que aparece en la parte superior de la ventana. Se trata de una aplicación auxiliar en tiempo de ejecución que proporciona acceso rápido a algunas características de depuración útiles. Haga clic en el primer botón, **Ir al árbol visual dinámico**. Debería ver una ventana con un árbol que contiene todos los elementos visuales de la página. Expanda los nodos para buscar los botones que ha agregado.
+
+![Captura de pantalla de la ventana Árbol visual dinámico](media/vs-2019/exploreide-live-visual-tree.png)
+
 ### <a name="build-a-release-version-of-the-application"></a>Compilar una versión de lanzamiento de la aplicación
 
 Ahora que ha comprobado que todo funciona, puede preparar una versión de lanzamiento de la aplicación.
@@ -298,9 +313,20 @@ Ahora que ha comprobado que todo funciona, puede preparar una versión de lanzam
 
 3. Compile la solución seleccionando **Compilar** > **Compilar solución**.
 
-Enhorabuena por completar este tutorial. Puede encontrar el *.exe* creado en el directorio de soluciones y proyectos (*...\HelloWPFApp\HelloWPFApp\bin\Release*).
+Enhorabuena por completar este tutorial. Puede encontrar el *.exe* creado en el directorio de soluciones y proyectos ( *...\HelloWPFApp\HelloWPFApp\bin\Release*).
 
 ## <a name="see-also"></a>Vea también
 
-- [Novedades de Visual Studio 2017](../../ide/whats-new-visual-studio.md)
-- [Sugerencias de productividad](../../ide/productivity-tips-for-visual-studio.md)
+::: moniker range="vs-2017"
+
+- [Novedades de Visual Studio 2017](../../ide/whats-new-visual-studio-2017.md)
+- [Sugerencias de productividad](../../ide/productivity-features.md)
+
+::: moniker-end
+
+::: moniker range="vs-2019"
+
+- [Novedades de Visual Studio 2019](../../ide/whats-new-visual-studio-2019.md)
+- [Sugerencias de productividad](../../ide/productivity-features.md)
+
+::: moniker-end

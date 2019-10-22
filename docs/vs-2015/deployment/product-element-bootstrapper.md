@@ -17,11 +17,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: c3c1304a0ff93c58add65f20aa417bb547f5bb31
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58997957"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68200648"
 ---
 # <a name="ltproductgt-element-bootstrapper"></a>&lt;Producto&gt; (elemento, arranque)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -143,7 +143,7 @@ ProductCode
 ## <a name="elements-and-attributes"></a>Elementos y atributos  
  El `Product` elemento es necesario en un archivo de producto. Tiene el siguiente atributo.  
   
-|Atributo|Descripción|  
+|Atributo|DESCRIPCIÓN|  
 |---------------|-----------------|  
 |`ProductCode`|Un identificador único para el producto.|  
   

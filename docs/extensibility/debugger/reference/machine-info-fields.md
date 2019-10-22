@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - MACHINE_INFO_FIELDS enumeration
 ms.assetid: 2d61d206-7d40-4df1-8c88-1b3c9c78821e
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 61a22a1868a47fd4b54b19cf224f995897775b4f
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 79bd733d987511a624235c06b5dbe83206e0c5bd
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56708412"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66339357"
 ---
 # <a name="machineinfofields"></a>MACHINE_INFO_FIELDS
 Especifica qué tipo de información que se va a recuperar de una máquina concreta.
@@ -41,12 +44,15 @@ public enum enum_MACHINE_INFO_FIELDS { 
 };
 ```
 
-## <a name="members"></a>Miembros
- MCIF_NAME Initialize o usar el `bstrName` campo en la estructura.
+## <a name="fields"></a>Campos
+ `MCIF_NAME`\
+ Inicializar o usar el `bstrName` campo en la estructura.
 
- MCIF_FLAGS Initialize o usar el `Flags` campo en la estructura.
+ `MCIF_FLAGS`\
+ Inicializar o usar el `Flags` campo en la estructura.
 
- MIF_ALL Initialize o usar todos los campos de la estructura.
+ `MIF_ALL`\
+ Inicializar o usar todos los campos de la estructura.
 
 ## <a name="remarks"></a>Comentarios
  Estos valores se pasan a la [GetMachineInfo](../../../extensibility/debugger/reference/idebugcoreserver2-getmachineinfo.md) método para indicar qué miembros de la [MACHINE_INFO](../../../extensibility/debugger/reference/machine-info.md) estructura deben inicializarse.

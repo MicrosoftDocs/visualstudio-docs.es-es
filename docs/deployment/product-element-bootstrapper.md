@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fc32ed6c4e696b18e89822baff461da0873a7ed5
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.openlocfilehash: d6dca2c7838ce40f8d24e3afbd898206d0cb9191
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56606686"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66747454"
 ---
 # <a name="ltproductgt-element-bootstrapper"></a>&lt;Producto&gt; (elemento, arranque)
 El `Product` elemento es el elemento XML de nivel superior dentro de un archivo de producto.
@@ -145,7 +145,7 @@ ProductCode
 |`ProductCode`|Un identificador único para el producto.|
 
 ## <a name="example"></a>Ejemplo
- El ejemplo de código siguiente muestra un archivo de producto completo para la instalación de la [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)].
+ El ejemplo de código siguiente muestra un archivo de producto completo para la instalación de .NET Framework.
 
 ```xml
 <?xml version="1.0" encoding="utf-8" ?>

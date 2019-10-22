@@ -1,5 +1,5 @@
 ---
-title: Filtrar Establecer propiedades de análisis de código para proyectos de C/C ++ | Documentos de Microsoft
+title: Procedimiento Establecer propiedades de análisis de código para proyectos de C/C ++ | Documentos de Microsoft
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -20,13 +20,13 @@ author: mikeblome
 ms.author: mblome
 manager: jillfra
 ms.openlocfilehash: 4ebed266924861dac4bfc9e316a56907dbd11534
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58988756"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68201312"
 ---
-# <a name="how-to-set-code-analysis-properties-for-cc-projects"></a>Filtrar Establecer las propiedades de análisis de código de proyectos de C/C++
+# <a name="how-to-set-code-analysis-properties-for-cc-projects"></a>Procedimiento Establecer las propiedades de análisis de código de proyectos de C/C++
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Puede configurar las reglas que usa la herramienta de análisis de código para analizar el código en cada configuración del proyecto. Además, puede dirigir el análisis de código para suprimir las advertencias de código generado y agregado al proyecto mediante una herramienta de terceros.  

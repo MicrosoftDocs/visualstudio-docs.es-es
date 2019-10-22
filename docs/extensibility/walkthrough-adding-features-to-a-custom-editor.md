@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], custom - add features
 ms.assetid: bfe083b6-3e35-4b9c-ad4f-b30b9ff412a5
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 085e5ae408155227c1d60e312b7e9623be2e3897
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 50565363f2fc88e40816bdfc4773e436e960ee06
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60064458"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66312884"
 ---
 # <a name="walkthrough-add-features-to-a-custom-editor"></a>Tutorial: Agregar características a un editor personalizado
 Después de crear un editor personalizado, puede agregar más características en él.
@@ -49,7 +49,7 @@ Después de crear un editor personalizado, puede agregar más características e
     2. Para responder a los cambios de archivo externo, implemente <xref:Microsoft.VisualStudio.Shell.Interop.IVsFileChangeEx> y <xref:Microsoft.VisualStudio.Shell.Interop.IVsDocDataFileChangeControl> en el objeto de datos del documento de su editor.
 
         > [!NOTE]
-        >  Llame a `QueryService` en <xref:Microsoft.VisualStudio.Shell.Interop.SVsFileChangeEx> para obtener un puntero a `IVsFileChangeEx`.
+        > Llame a `QueryService` en <xref:Microsoft.VisualStudio.Shell.Interop.SVsFileChangeEx> para obtener un puntero a `IVsFileChangeEx`.
 
 7. Coordinar eventos de edición de documentos con control de código fuente. Siga estos pasos:
 
@@ -136,7 +136,7 @@ Después de crear un editor personalizado, puede agregar más características e
    <xref:Microsoft.VisualStudio.Shell.Interop.IOleInPlaceComponent>
 
   > [!NOTE]
-  >  El `IOleInPlaceComponent` interfaz se utiliza para evitar la combinación de menús OLE 2.
+  > El `IOleInPlaceComponent` interfaz se utiliza para evitar la combinación de menús OLE 2.
 
    Su `IOleCommandTarget` implementación controla los comandos como **cortar**, **copia**, y **pegar**. Al implementar `IOleCommandTarget`, decidir si el editor que requiere su propio *.vsct* archivo para definir su propia estructura de menús de comandos o si pueden implementar los comandos estándares definidos por [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Normalmente, editores de usarán y amplían los menús del IDE y definen sus propias barras de herramientas. Sin embargo, a menudo es necesario para un editor definir sus propios comandos específicos además de usar el conjunto de comandos estándar del IDE. El editor debe declarar los comandos estándar utiliza y, a continuación, defina los nuevos comandos, menús contextuales, menús de nivel superior y las barras de herramientas en un *.vsct* archivo. Si crea una activación en contexto del editor, implementar <xref:Microsoft.VisualStudio.Shell.Interop.IOleInPlaceComponent> y defina los menús y barras de herramientas para el editor en un *.vsct* en lugar de usar la combinación de menús OLE 2.
 

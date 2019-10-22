@@ -1,5 +1,5 @@
 ---
-title: Implementar, publicar y actualizar los paquetes de solución de SharePoint | Microsoft Docs
+title: Implementar, publicar y actualizar los paquetes de solución de SharePoint
 ms.date: 02/02/2017
 ms.topic: conceptual
 f1_keywords:
@@ -16,18 +16,18 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 093016b3924d7882901a2b2c1bda060571d5bff4
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 7c41b36766e112dc86bd15c7a2bec48633c35b57
+ms.sourcegitcommit: 25570fb5fb197318a96d45160eaf7def60d49b2b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56618411"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "66402040"
 ---
 # <a name="deploy-publish-and-upgrade-sharepoint-solution-packages"></a>Implementar, publicar y actualizar los paquetes de solución de SharePoint
   Después de desarrollar una solución de SharePoint en Visual Studio, puede implementar su archivo de paquete (.wsp) en un servidor de SharePoint local o publicarlo en un servidor de SharePoint remoto o local. Si implementa los archivos, puede personalizar cómo se implementan los archivos del paquete (.wsp).
 
 > [!NOTE]
->  Actualmente, solo las soluciones en espacio aislado pueden publicarse en servidores remotos de SharePoint. Para obtener más información, consulte [consideraciones sobre la solución en espacio aislado](../sharepoint/sandboxed-solution-considerations.md).
+> Actualmente, solo las soluciones en espacio aislado pueden publicarse en servidores remotos de SharePoint. Para obtener más información, consulte [consideraciones sobre la solución en espacio aislado](../sharepoint/sandboxed-solution-considerations.md).
 
 ## <a name="deploy-publish-and-upgrade"></a>Implementar, publicar y actualizar
  *Implementar* se refiere a copiar un archivo de solución de SharePoint creado desde un proyecto de SharePoint en Visual Studio para un host local. En una solución implementada, puede configurar los pasos de implementación, como el reciclaje del grupo de Internet Information Services (IIS), la activación de la solución después de la implementación y así sucesivamente. Para implementar, usar el **implementar** comando el **compilar** menú. Para obtener más información, vea [Cómo: Editar una configuración de implementación de SharePoint](../sharepoint/how-to-edit-a-sharepoint-deployment-configuration.md) y [Cómo: Implementar y publicar una solución de SharePoint en un sitio de SharePoint Local](../sharepoint/how-to-deploy-and-publish-a-sharepoint-solution-to-a-local-sharepoint-site.md).
@@ -54,7 +54,7 @@ ms.locfileid: "56618411"
  También puede agregar comandos deben ejecutarse antes y después de la implementación. Para obtener más información, vea [Cómo: Establecer comandos de implementación de SharePoint](../sharepoint/how-to-set-sharepoint-deployment-commands.md).
 
 ## <a name="publish-packages-to-a-remote-or-local-server"></a>Publicar paquetes en un servidor remoto o local
- Para publicar una solución en espacio aislado de SharePoint a un servidor remoto, en la barra de menús, elija **compilar**, **publicar**y, a continuación, en el **publicar** cuadro de diálogo, seleccione el **Publicar en el sitio de SharePoint** botón de opción, proporcionando la dirección URL del servidor remoto, como **https://someremoteserver.sharepoint.microsoftonline.com**.
+ Para publicar una solución en espacio aislado de SharePoint a un servidor remoto, en la barra de menús, elija **compilar**, **publicar**y, a continuación, en el **publicar** cuadro de diálogo, seleccione el **Publicar en el sitio de SharePoint** botón de opción, proporcionando la dirección URL del servidor remoto, como **https://someremoteserver.sharepoint.microsoftonline.com** .
 
  Para publicar una solución de SharePoint a un servidor local, en el **publicar** diálogo cuadro, elija el **publicar en el sistema de archivos** botón de opción, que proporciona una ruta de acceso de sistema local.
 

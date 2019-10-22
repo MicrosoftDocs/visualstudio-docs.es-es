@@ -17,11 +17,11 @@ manager: jillfra
 ms.workload:
 - aspnet
 ms.openlocfilehash: 27221a4ae47b9fb06130b550ceb6d3cc1f00dce0
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56680963"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62906815"
 ---
 # <a name="find-the-name-of-the-aspnet-process"></a>Buscar el nombre de un proceso de ASP.NET
 

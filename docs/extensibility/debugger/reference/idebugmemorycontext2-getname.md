@@ -8,17 +8,20 @@ helpviewer_keywords:
 - IDebugMemoryContext2::GetName method
 - GetName method
 ms.assetid: 8c212556-7d9e-4d68-b2a9-8212f50d0287
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a404687e91b8374bad056ee9cd5e80077350c3a9
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: ee8dd65a3bcaef7fd5a23da6c2a5f9c21a4838af
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56693963"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66346990"
 ---
 # <a name="idebugmemorycontext2getname"></a>IDebugMemoryContext2::GetName
 Recupera el nombre de usuario que se puede mostrar para este contexto.
@@ -37,10 +40,9 @@ int GetName(
 );
 ```
 
-#### <a name="parameters"></a>Parámetros
- `pbstrName`
-
- [out] Devuelve el nombre del contexto de la memoria.
+## <a name="parameters"></a>Parámetros
+`pbstrName`\
+[out] Devuelve el nombre del contexto de la memoria.
 
 ## <a name="return-value"></a>Valor devuelto
  Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.

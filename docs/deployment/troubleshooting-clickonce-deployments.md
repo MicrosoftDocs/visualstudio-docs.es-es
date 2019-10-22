@@ -19,11 +19,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: eef5973eb7ec4b8779f89779fe1aad62d86f4850
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56612587"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62898125"
 ---
 # <a name="troubleshoot-clickonce-deployments"></a>Solución de problemas de implementaciones de ClickOnce
 Este tema le ayudará a diagnosticar y resolver los problemas más comunes con [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] implementaciones.
@@ -32,11 +32,11 @@ Este tema le ayudará a diagnosticar y resolver los problemas más comunes con [
 
 ## <a name="deployment-considerations"></a>Consideraciones de implementación
 
- [Cómo: Establecer una ubicación de archivos de registro personalizada para los errores de implementaciones de ClickOnce](../deployment/how-to-set-a-custom-log-file-location-for-clickonce-deployment-errors.md)
+ [Cómo: Establecimiento de una ubicación de archivos de registro personalizada para los errores de implementaciones de ClickOnce](../deployment/how-to-set-a-custom-log-file-location-for-clickonce-deployment-errors.md)
 
  Describe cómo redirigir todas [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] errores de activación en un equipo a un archivo de registro.
 
- [Cómo: Especificar archivos de registro detallados para las implementaciones ClickOnce](../deployment/how-to-specify-verbose-log-files-for-clickonce-deployments.md)
+ [Cómo: Especificación de archivos de registro detallados para implementaciones de ClickOnce](../deployment/how-to-specify-verbose-log-files-for-clickonce-deployments.md)
 
  Describe cómo aumentar el detalle que [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] escribe en archivos de registro.
 

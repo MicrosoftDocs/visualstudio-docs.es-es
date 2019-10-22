@@ -2,16 +2,16 @@
 title: Notificar un problema con Visual Studio para Mac
 description: Cómo hacer sugerencias o informar de problemas experimentados al usar Visual Studio para Mac.
 ms.topic: troubleshooting
-author: jmatthiesen
-ms.author: jomatthi
-ms.date: 11/16/2018
+author: therealjohn
+ms.author: johmil
+ms.date: 06/18/2019
 ms.assetid: 1C7AC52E-754E-473F-A5B5-00C3A40DAACD
-ms.openlocfilehash: 510bdac23b29289687441b8a82620a1cede7542b
-ms.sourcegitcommit: 54c65f81a138fc1e8ff1826f7bd9dcec710618cc
+ms.openlocfilehash: 2b5fd2fd115c4461659ba1b4f211e645367851d2
+ms.sourcegitcommit: 7fbfb2a1d43ce72545096c635df2b04496b0be71
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/19/2018
-ms.locfileid: "51948834"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "67691232"
 ---
 # <a name="how-to-report-a-problem-in-visual-studio-for-mac"></a>Cómo notificar un problema en Visual Studio para Mac
 
@@ -43,9 +43,6 @@ Para notificar un problema con Visual Studio para Mac, seleccione **Ayuda > Noti
 
 1. Si no encuentra el problema que ha detectado, haga clic en **Informar de un problema nuevo** en el lateral de la pantalla.
 
-   > [!NOTE]
-   > El botón **Informar de un problema nuevo** solo aparece en la interfaz de Visual Studio para Mac correspondiente a la Comunidad de desarrolladores. No se puede notificar un problema directamente en el sitio web de la [Comunidad de desarrolladores](https://developercommunity.visualstudio.com/).
-
 1. Asigne un título descriptivo al problema que nos ayude a dirigirlo al equipo de Visual Studio para Mac correcto.
 
 1. Proporcione detalles adicionales y, si es posible, los pasos para reproducir el problema.
@@ -58,7 +55,7 @@ Para notificar un problema con Visual Studio para Mac, seleccione **Ayuda > Noti
 
 1. Haga clic en **Enviar** para enviar el informe junto con todas las imágenes y archivos de registro.
 
-   Para obtener información sobre qué datos se recopilan, vea [Datos que recopilamos](/visualstudio/ide/developer-community-privacy.md#data-we-collect).
+   Para obtener información sobre qué datos se recopilan, vea [Datos que recopilamos](/visualstudio/ide/developer-community-privacy#data-we-collect).
 
 ## <a name="search-for-solutions-or-provide-feedback"></a>Búsqueda de soluciones o envío de comentarios
 

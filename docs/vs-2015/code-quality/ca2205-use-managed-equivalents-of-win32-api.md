@@ -1,5 +1,5 @@
 ---
-title: 'CA2205: Utilizar equivalentes administrados de la API Win32 | Documentos de Microsoft'
+title: 'CA2205: usar equivalentes administrados de la API Win32 | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -12,15 +12,15 @@ helpviewer_keywords:
 - CA2205
 ms.assetid: 1c65ab59-3e50-4488-a727-3969c7f6cbe4
 caps.latest.revision: 15
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 2da7faabb05d2f6eaf2ec345f9bae19401953093
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 931b1e5099bf221fefc7a8f4a19524d2531a4418
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58988177"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72609487"
 ---
 # <a name="ca2205-use-managed-equivalents-of-win32-api"></a>CA2205: Utilizar equivalentes administrados de la API Win32
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,23 +29,23 @@ ms.locfileid: "58988177"
 |-|-|
 |TypeName|UseManagedEquivalentsOfWin32Api|
 |Identificador de comprobación|CA2205|
-|Categoría|Microsoft.Usage|
+|Categoría|Microsoft. Usage|
 |Cambio problemático|No trascendental|
 
 ## <a name="cause"></a>Motivo
- Una invocación de plataforma se define el método y existe un método con la funcionalidad equivalente en el [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] biblioteca de clases.
+ Se define un método de invocación de plataforma y existe un método con la funcionalidad equivalente en la biblioteca de clases de [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)].
 
 ## <a name="rule-description"></a>Descripción de la regla
- Una plataforma de invocación de método se usa para llamar a una función DLL no administrada y se define utilizando el <xref:System.Runtime.InteropServices.DllImportAttribute?displayProperty=fullName> atributo, o la `Declare` palabra clave en Visual Basic. Método de invocación de una plataforma definida incorrectamente puede generar excepciones en tiempo de ejecución debido a problemas como una función con nombre incorrecto, una asignación de tipos de datos de valor devueltos y de parámetro y las especificaciones de campo incorrecto, como la convención de llamada y el carácter defectuosa conjunto. Si está disponible, por lo general es más sencillo y menos propenso a errores llamar al método administrado equivalente que to definir y llamar directamente al método no administrado. Una llamada a una plataforma de invocar el método también pueden provocar problemas de seguridad adicionales que deban solucionarse.
+ Se usa un método de invocación de plataforma para llamar a una función DLL no administrada y se define mediante el atributo <xref:System.Runtime.InteropServices.DllImportAttribute?displayProperty=fullName> o la palabra clave `Declare` en Visual Basic. Un método de invocación de plataforma definido incorrectamente puede provocar excepciones en tiempo de ejecución debido a problemas como una función errónea, una asignación errónea de tipos de datos de parámetros y valores devueltos, y especificaciones de campo incorrectas, como la Convención de llamada y el carácter conjunto. Si está disponible, generalmente es más sencillo y menos propenso a errores llamar al método administrado equivalente que definir y llamar directamente al método no administrado. Llamar a un método de invocación de plataforma también puede provocar problemas de seguridad adicionales que se deben solucionar.
 
 ## <a name="how-to-fix-violations"></a>Cómo corregir infracciones
- Para corregir una infracción de esta regla, reemplace la llamada a la función no administrada con una llamada a su equivalente administrado.
+ Para corregir una infracción de esta regla, reemplace la llamada a la función no administrada por una llamada a su equivalente administrado.
 
 ## <a name="when-to-suppress-warnings"></a>Cuándo suprimir advertencias
  Suprima una advertencia de esta regla si el método de reemplazo sugerido no proporciona la funcionalidad necesaria.
 
 ## <a name="example"></a>Ejemplo
- El ejemplo siguiente se muestra una plataforma de invocación de definición de método que infringe la regla. Además, las llamadas a la plataforma de invocación de método y se muestra el método administrado equivalente.
+ En el ejemplo siguiente se muestra una definición de método de invocación de plataforma que infringe la regla. Además, se muestran las llamadas al método de invocación de plataforma y al método administrado equivalente.
 
  [!code-csharp[FxCop.Usage.ManagedEquivalents#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Usage.ManagedEquivalents/cs/FxCop.Usage.ManagedEquivalents.cs#1)]
  [!code-vb[FxCop.Usage.ManagedEquivalents#1](../snippets/visualbasic/VS_Snippets_CodeAnalysis/FxCop.Usage.ManagedEquivalents/vb/FxCop.Usage.ManagedEquivalents.vb#1)]
@@ -57,6 +57,6 @@ ms.locfileid: "58988177"
 
  [CA1400: Deben existir puntos de entrada P/Invoke](../code-quality/ca1400-p-invoke-entry-points-should-exist.md)
 
- [CA1401: P/Invoke no deben estar visibles](../code-quality/ca1401-p-invokes-should-not-be-visible.md)
+ [CA1401: Los elementos P/Invoke no deben estar visibles](../code-quality/ca1401-p-invokes-should-not-be-visible.md)
 
- [CA2101: Especifique serialización para argumentos de cadena P/Invoke](../code-quality/ca2101-specify-marshaling-for-p-invoke-string-arguments.md)
+ [CA2101: Especifique cálculo de referencias para argumentos de cadena P/Invoke](../code-quality/ca2101-specify-marshaling-for-p-invoke-string-arguments.md)

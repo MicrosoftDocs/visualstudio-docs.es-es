@@ -7,17 +7,17 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugCoreServer2 interface
 ms.assetid: 9c47d0a6-9eb1-464e-bd44-fa2b552d4d36
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1f4f01bb8e86e733bef3940a4772f52b28080628
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 3d3f0ea4a9c9cef92feba511afe84f44e06f1f8c
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56712390"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66317776"
 ---
 # <a name="idebugcoreserver2"></a>IDebugCoreServer2
 Esta interfaz se utiliza para representar y obtener información de un servidor en un equipo en la red.

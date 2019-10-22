@@ -13,12 +13,12 @@ ms.assetid: c745cb76-47a6-49ff-9eed-16af0f748e35
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 5f450453ce8e336fecb401e30bc777c7b9c8ef7d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 010ee75efd84f016b0eb68fa9f715102026a4678
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58995663"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63441488"
 ---
 # <a name="createpkgdef-utility"></a>Utilidad CreatePkgDef
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -26,7 +26,7 @@ ms.locfileid: "58995663"
 Toma un archivo .dll para una extensión de Visual Studio como un parámetro y crea un archivo .pkgdef para acompañar el archivo .dll. El archivo .pkgdef contiene toda la información en caso contrario, se escribiría en el registro del sistema cuando se instala la extensión.  
   
 > [!NOTE]
->  La mayoría de las plantillas de proyecto que se incluyen automáticamente en el SDK de Visual Studio cree los archivos .pkgdef como parte del proceso de compilación. Este documento está destinado a aquellos que quieran crear manualmente paquetes o convertir paquetes existentes para usar la implementación de pkgdef.  
+> La mayoría de las plantillas de proyecto que se incluyen automáticamente en el SDK de Visual Studio cree los archivos .pkgdef como parte del proceso de compilación. Este documento está destinado a aquellos que quieran crear manualmente paquetes o convertir paquetes existentes para usar la implementación de pkgdef.  
   
 ## <a name="syntax"></a>Sintaxis  
   
@@ -53,7 +53,7 @@ CreatePkgDef /out=FileName [/codebase] [/assembly] AssemblyPath
  Los archivos .pkgdef deben instalarse en una de las siguientes ubicaciones: %localappdata%\Microsoft\Visual Studio\14.0\Extensions\ o %vsinstalldir%\Common7\IDE\Extensions\\. Si la carpeta de instalación es %localappdata%\Microsoft\Visual Studio\14.0\Extensions\\, la extensión de Visual Studio reconocerá, pero se deshabilitará de forma predeterminada. El usuario puede habilitar la extensión mediante **extensiones y actualizaciones**. Si la carpeta de instalación es %vsinstalldir%\Common7\IDE\Extensions\\, la extensión está habilitada de forma predeterminada.  
   
 > [!NOTE]
->  El **extensiones y actualizaciones** herramienta no puede utilizarse para tener acceso a una extensión a menos que se instala como parte de un paquete VSIX.  
+> El **extensiones y actualizaciones** herramienta no puede utilizarse para tener acceso a una extensión a menos que se instala como parte de un paquete VSIX.  
   
 ## <a name="see-also"></a>Vea también  
  [Utilidad CreateExpInstance](../../extensibility/internals/createexpinstance-utility.md)

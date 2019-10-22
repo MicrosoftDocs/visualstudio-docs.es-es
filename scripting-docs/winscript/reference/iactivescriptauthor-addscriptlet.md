@@ -1,5 +1,5 @@
 ---
-title: IActiveScriptAuthor::AddScriptlet | Microsoft Docs
+title: 'Iactivescriptauthor (:: AddScriptlet | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 64df7bd4c0d0dde303cdc15d7111688d14c7dc49
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 3a349a848f282e6b3a228c7b17009e0261801be5
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58146986"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72577985"
 ---
 # <a name="iactivescriptauthoraddscriptlet"></a>IActiveScriptAuthor::AddScriptlet
-El scriptlet de código se agrega como elemento secundario del nivel raíz `IScriptNode` objeto. En el host, el nombre completo del scriptlet puede tener sólo dos niveles.  
+Agrega un Scriptlet de código como elemento secundario del nivel de raíz `IScriptNode` objeto. En el host, el nombre completo del Scriptlet solo puede tener dos niveles.  
   
 ## <a name="syntax"></a>Sintaxis  
   
@@ -44,31 +44,31 @@ HRESULT AddScriptlet(
   
 #### <a name="parameters"></a>Parámetros  
  `pszDefaultName`  
- [in] La dirección del nombre predeterminado para asociar el scriptlet.  
+ de Dirección del nombre predeterminado que se va a asociar al Scriptlet.  
   
  `pszCode`  
- [in] La dirección del texto del scriptlet.  
+ de Dirección del texto del Scriptlet.  
   
  `pszItemName`  
- [in] La dirección de búfer del identificador del nombre completo del scriptlet en el host de nivel superior.  
+ de La dirección de búfer del identificador de nivel superior del nombre completo de Scriptlet en el host.  
   
  `pszSubItemName`  
- [in] La dirección de búfer del identificador del nombre completo del scriptlet en el host de segundo nivel. Se establece en NULL si el nombre tiene un solo nivel.  
+ de Dirección de búfer del identificador de segundo nivel del nombre completo de Scriptlet en el host. Se establece en NULL si el nombre tiene un solo nivel.  
   
  `pszEventName`  
- [in] La dirección de un búfer que contiene el nombre del evento para el que el scriptlet es un controlador de eventos.  
+ de Dirección de un búfer que contiene el nombre del evento para el que el Scriptlet es un controlador de eventos.  
   
  `pszDelimiter`  
- [in] La dirección del delimitador final del bloque de script. Cuando `pszCode` se analiza desde una secuencia de texto, el host normalmente utiliza un delimitador (por ejemplo, dos comillas simples), para detectar el final del bloque de script. Si un delimitador no marca el final del bloque de script, establezca este parámetro en NULL.  
+ de Dirección del delimitador de bloque de script final. Cuando `pszCode` se analiza desde un flujo de texto, el host normalmente usa un delimitador (como dos comillas simples) para detectar el final del bloque de script. Establezca este parámetro en NULL si un delimitador no marca el final del bloque de script.  
   
  `dwCookie`  
- [in] Un valor definido por la aplicación que se utiliza para asociar un objeto host en el scriptlet.  
+ de Un valor definido por la aplicación que se usa para asociar el Scriptlet a un objeto host.  
   
  `dwFlags`  
- [in] No se utiliza.  
+ de No se usa.  
   
 ## <a name="return-value"></a>Valor devuelto  
- Una clase `HRESULT`. Entre los valores posibles se incluyen los que se indican en la tabla siguiente, entre otros.  
+ Interfaz `HRESULT`. Entre los valores posibles se incluyen los que se indican en la tabla siguiente, entre otros.  
   
 |Valor|Descripción|  
 |-----------|-----------------|  

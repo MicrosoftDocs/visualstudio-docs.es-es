@@ -1,5 +1,5 @@
 ---
-title: IDebugApplicationNode::SetDocumentProvider | Microsoft Docs
+title: 'Idebugapplicationnode (:: SetDocumentProvider | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 9dc81397e2ebe19ae125eba7599c97337f58d967
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 2dd1588ed1bb365e88bb3b09ee5093f15ac7a161
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58153076"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72574821"
 ---
 # <a name="idebugapplicationnodesetdocumentprovider"></a>IDebugApplicationNode::SetDocumentProvider
-Establece el proveedor de documento para este nodo de la aplicación.  
+Establece el proveedor de documentos para este nodo de aplicación.  
   
 ## <a name="syntax"></a>Sintaxis  
   
@@ -37,7 +37,7 @@ HRESULT SetDocumentProvider(
   
 #### <a name="parameters"></a>Parámetros  
  `pddp`  
- [in] El proveedor de documento para este nodo de la aplicación.  
+ de El proveedor de documentos para este nodo de aplicación.  
   
 ## <a name="return-value"></a>Valor devuelto  
  El método devuelve un objeto `HRESULT`. Entre los valores posibles se incluyen los que se indican en la tabla siguiente, entre otros.  
@@ -47,7 +47,7 @@ HRESULT SetDocumentProvider(
 |`S_OK`|El método se realizó correctamente.|  
   
 ## <a name="remarks"></a>Comentarios  
- Este método establece el proveedor de documento para este nodo de la aplicación.  
+ Este método establece el proveedor de documentos para este nodo de aplicación.  
   
 ## <a name="see-also"></a>Vea también  
  [IDebugApplicationNode (Interfaz)](../../winscript/reference/idebugapplicationnode-interface.md)

@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 43844fc1e8ffed9853f287f82e79d9859b774755
-ms.sourcegitcommit: 05d104a14ff357d599ff274f97cd59d464ee4a46
+ms.openlocfilehash: 1271752a32a2f42eca93ae3f6861a923a6055cd2
+ms.sourcegitcommit: 5694c5236fa32ba7f5bc1236a853f725ec7557e9
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/03/2019
-ms.locfileid: "58897691"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "68681275"
 ---
 # <a name="common-msbuild-project-items"></a>Elementos comunes de proyectos de MSBuild
 En [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)], un elemento es una referencia con nombre a uno o varios archivos. Los elementos contienen metadatos como nombres de archivo, rutas de acceso y números de versión. Todos los tipos de proyecto de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] tienen varios elementos en común. Estos elementos se definen en el archivo *Microsoft.Build.CommonTypes.xsd*.
@@ -31,7 +31,7 @@ En [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.m
 ### <a name="reference"></a>Referencia
  Representa una referencia de ensamblado (administrada) del proyecto.
 
-|Nombre de metadatos de elementos|Descripción|
+|Nombre de metadatos de elementos|DESCRIPCIÓN|
 |---------------|-----------------|
 |HintPath|Cadena opcional. Ruta de acceso absoluta o relativa del ensamblado.|
 |nombre|Cadena opcional. Nombre para mostrar del ensamblado, por ejemplo, "System.Windows.Forms".|
@@ -41,9 +41,9 @@ En [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.m
 |Private|Booleano opcional. Especifica si la referencia debe copiarse en la carpeta de salida. Este atributo coincide con la propiedad **Copia local** de la referencia que está en el IDE de Visual Studio.|
 
 ### <a name="comreference"></a>COMReference
- Representa una referencia a un componente COM (no administrado) del proyecto.
+ Representa una referencia a un componente COM (no administrado) del proyecto. Este elemento solo se aplica a los proyectos de .NET.
 
-|Nombre de metadatos de elementos|Descripción|
+|Nombre de metadatos de elementos|DESCRIPCIÓN|
 |---------------|-----------------|
 |nombre|Cadena opcional. El nombre para mostrar del componente.|
 |GUID|Cadena necesaria. GUID del componente, con el formato {12345678-1234-1234-1234-1234567891234}.|
@@ -54,16 +54,16 @@ En [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.m
 |Isolated|Booleano opcional. Especifica si se trata de un componente sin registro.|
 
 ### <a name="comfilereference"></a>COMFileReference
- Representa una lista de las bibliotecas de tipos que se pasan al destino ResolvedComreference.
+ Representa una lista de las bibliotecas de tipos que se pasan al parámetro `TypeLibFiles` del destino [ResolveComReference](resolvecomreference-task.md). Este elemento solo se aplica a los proyectos de .NET.
 
-|Nombre de metadatos de elementos|Descripción|
+|Nombre de metadatos de elementos|DESCRIPCIÓN|
 |---------------|-----------------|
 |WrapperTool|Cadena opcional. Nombre de la herramienta contenedor que se usa en el componente, por ejemplo, "tlbimp".|
 
 ### <a name="nativereference"></a>NativeReference
  Representa un archivo de manifiesto nativo o una referencia a este archivo.
 
-|Nombre de metadatos de elementos|Descripción|
+|Nombre de metadatos de elementos|DESCRIPCIÓN|
 |---------------|-----------------|
 |nombre|Cadena necesaria. Nombre base del archivo de manifiesto.|
 |HintPath|Cadena necesaria. Ruta de acceso relativa del archivo de manifiesto.|
@@ -71,7 +71,7 @@ En [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.m
 ### <a name="projectreference"></a>ProjectReference
  Representa una referencia a otro proyecto.
 
-|Nombre de metadatos de elementos|Descripción|
+|Nombre de metadatos de elementos|DESCRIPCIÓN|
 |---------------|-----------------|
 |nombre|Cadena opcional. Nombre para mostrar de la referencia.|
 |Proyecto|Cadena opcional. GUID de la referencia, con el formato {12345678-1234-1234-1234-1234567891234}.|
@@ -81,8 +81,7 @@ En [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.m
 ### <a name="compile"></a>Compile
  Representa los archivos de código fuente para el compilador.
 
-
-| Nombre de metadatos de elementos | Descripción |
+| Nombre de metadatos de elementos | DESCRIPCIÓN |
 |-----------------------| - |
 | DependentUpon | Cadena opcional. Especifica el archivo del que depende este archivo para compilarse correctamente. |
 | AutoGen | Booleano opcional. Indica si el entorno de desarrollo integrado (IDE) de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ha generado el archivo para el proyecto. |
@@ -93,8 +92,7 @@ En [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.m
 ### <a name="embeddedresource"></a>EmbeddedResource
  Representa los recursos que se van a incrustar en el ensamblado generado.
 
-
-| Nombre de metadatos de elementos | Descripción |
+| Nombre de metadatos de elementos | DESCRIPCIÓN |
 |-----------------------| - |
 | DependentUpon | Cadena opcional. Especifica el archivo del que depende este archivo para compilarse correctamente. |
 | Generator | Cadena necesaria. Nombre de cualquier generador de archivos que se ejecute en este elemento. |
@@ -108,8 +106,7 @@ En [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.m
 ### <a name="content"></a>Contenido
  Representa archivos que no están compilados en el proyecto pero que podrían incrustarse o publicarse junto con él.
 
-
-| Nombre de metadatos de elementos | Descripción |
+| Nombre de metadatos de elementos | DESCRIPCIÓN |
 |-----------------------| - |
 | DependentUpon | Cadena opcional. Especifica el archivo del que depende este archivo para compilarse correctamente. |
 | Generator | Cadena necesaria. Nombre de cualquier generador de archivos que se ejecute en este elemento. |
@@ -121,11 +118,10 @@ En [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.m
 | Visible | Booleano opcional. Indica si se va a mostrar el archivo en el **Explorador de soluciones** de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. |
 | CopyToOutputDirectory | Cadena opcional. Determina si el archivo se va a copiar en el directorio de resultados. Los valores son:<br /><br /> 1.  Nunca<br />2.  Siempre<br />3.  PreserveNewest |
 
-### <a name="none"></a>Ninguna
+### <a name="none"></a>None
  Representa archivos que no deberían tener ningún rol en el proceso de compilación.
 
-
-| Nombre de metadatos de elementos | Descripción |
+| Nombre de metadatos de elementos | DESCRIPCIÓN |
 |-----------------------| - |
 | DependentUpon | Cadena opcional. Especifica el archivo del que depende este archivo para compilarse correctamente. |
 | Generator | Cadena necesaria. Nombre de cualquier generador de archivos que se ejecute en este elemento. |

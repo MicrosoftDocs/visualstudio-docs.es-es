@@ -12,11 +12,11 @@ caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 43fd417c4d54c0ab57133cf6dbff2c770c1ffc45
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58987603"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68184335"
 ---
 # <a name="commandplacement-element"></a>CommandPlacement (Elemento)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,22 +38,22 @@ CommandPlacement (elemento) permite a los botones, grupos y los menús que se in
   
 ### <a name="attributes"></a>Atributos  
   
-|Atributo|Descripción|  
+|Atributo|DESCRIPCIÓN|  
 |---------------|-----------------|  
-|guid|Obligatorio. El guid del conjunto de comandos, tal como se define en el [Symbols (elemento)](../extensibility/symbols-element.md).|  
-|id|Obligatorio. El identificador del menú, grupo o comando colocarse, tal como se define en el `Symbols Element`.|  
-|priority|Obligatorio. Determina la posición del elemento visual en su elemento primario.|  
+|GUID|Necesario. El guid del conjunto de comandos, tal como se define en el [Symbols (elemento)](../extensibility/symbols-element.md).|  
+|id|Necesario. El identificador del menú, grupo o comando colocarse, tal como se define en el `Symbols Element`.|  
+|prioridad|Necesario. Determina la posición del elemento visual en su elemento primario.|  
 |Condición|Opcional. Consulte [atributos condicionales](../extensibility/vsct-xml-schema-conditional-attributes.md).|  
   
 ### <a name="child-elements"></a>Elementos secundarios  
   
-|Elemento|Descripción|  
+|Elemento|DESCRIPCIÓN|  
 |-------------|-----------------|  
-|Primario|Obligatorio. El menú o el grupo que hospeda el elemento que se va a colocar.|  
+|Primario|Necesario. El menú o el grupo que hospeda el elemento que se va a colocar.|  
   
 ### <a name="parent-elements"></a>Elementos primarios  
   
-|Elemento|Descripción|  
+|Elemento|DESCRIPCIÓN|  
 |-------------|-----------------|  
 |[CommandPlacements (Elemento)](../extensibility/commandplacements-element.md)|Especifica los grupos de elementos CommandPlacements y CommandPlacement.|  
   

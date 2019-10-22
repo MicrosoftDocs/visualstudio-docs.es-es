@@ -20,11 +20,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 642a4996b9b7cb24ead5b58e8f3f98b8abf7657c
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59650621"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68187004"
 ---
 # <a name="choose-element-msbuild"></a>Elemento Choose (MSBuild)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -57,14 +57,14 @@ Evalúa los elementos secundarios para seleccionar un conjunto de elementos `Ite
   
 ### <a name="child-elements"></a>Elementos secundarios  
   
-|Elemento|Descripción|  
+|Elemento|DESCRIPCIÓN|  
 |-------------|-----------------|  
 |[Otherwise](../msbuild/otherwise-element-msbuild.md)|Elemento opcional.<br /><br /> Especifica el bloque de código `PropertyGroup` y los elementos `ItemGroup` que se evaluarán si las condiciones de todos los elementos `When` se evalúan como `false`. Puede haber un elemento `Otherwise` o ninguno en un elemento `Choose` y debe ser el último elemento.|  
 |[When](../msbuild/when-element-msbuild.md)|Elemento necesario.<br /><br /> Especifica un posible bloque de código que el elemento `Choose` puede seleccionar. Puede haber uno o más elementos `When` en un elemento `Choose`.|  
   
 ### <a name="parent-elements"></a>Elementos primarios  
   
-|Elemento|Descripción|  
+|Elemento|DESCRIPCIÓN|  
 |-------------|-----------------|  
 |[Otherwise](../msbuild/otherwise-element-msbuild.md)|Especifica el bloque de código que se ejecutará si las condiciones de todos los elementos `When` se evalúan como `false`.|  
 |[Proyecto](../msbuild/project-element-msbuild.md)|Elemento raíz necesario de un archivo de proyecto [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] .|  
@@ -121,6 +121,6 @@ Evalúa los elementos secundarios para seleccionar un conjunto de elementos `Ite
 </Project>  
 ```  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Otras referencias  
  [Construcciones condicionales](../msbuild/msbuild-conditional-constructs.md)   
  [Referencia de esquemas de archivo del proyecto](../msbuild/msbuild-project-file-schema-reference.md)

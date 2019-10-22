@@ -1,26 +1,26 @@
 ---
-title: 'Nueva generación de proyectos: Internamente, la segunda parte | Documentos de Microsoft'
+title: 'Generación de nuevos proyectos: Internamente, la segunda parte | Documentos de Microsoft'
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - projects [Visual Studio], new project dialog
 - projects [Visual Studio], new project generation
 ms.assetid: 73ce91d8-0ab1-4a1f-bf12-4d3c49c01e13
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5ccdd4cd8bafc4bc4a899ea47d62ec10e578569c
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 4ea614be39456f5d6a31ea6c9c12221b4db09bbd
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58148209"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66311017"
 ---
-# <a name="new-project-generation-under-the-hood-part-two"></a>Nueva generación de proyectos: Internamente, la segunda parte
+# <a name="new-project-generation-under-the-hood-part-two"></a>Generación de nuevos proyectos: Aspectos técnicos (parte 2)
 
-En [nueva generación de proyectos: Internamente, una parte](../../extensibility/internals/new-project-generation-under-the-hood-part-one.md) vimos cómo **nuevo proyecto** se rellena el cuadro de diálogo. Supongamos que ha seleccionado un **aplicación de Windows de Visual C#**, se han rellenado los **nombre** y **ubicación** cuadros de texto y hace clic en Aceptar.
+En [nueva generación de proyectos: Internamente, una parte](../../extensibility/internals/new-project-generation-under-the-hood-part-one.md) vimos cómo **nuevo proyecto** se rellena el cuadro de diálogo. Supongamos que ha seleccionado un **aplicación de Windows de Visual C#** , se han rellenado los **nombre** y **ubicación** cuadros de texto y hace clic en Aceptar.
 
 ## <a name="generating-the-solution-files"></a>Generar los archivos de solución
  Elegir una plantilla de aplicación dirige [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] descomprimir y abrir el archivo .vstemplate correspondiente y para iniciar una plantilla para interpretar los comandos XML de este archivo. Estos comandos crean proyectos y elementos de proyecto en la solución nueva o existente.
@@ -156,5 +156,5 @@ namespace Simple
 
 ## <a name="see-also"></a>Vea también
 
-- [Nueva generación de proyectos: Internamente, la primera parte](../../extensibility/internals/new-project-generation-under-the-hood-part-one.md)
+- [Generación de nuevos proyectos: Aspectos técnicos (parte 1)](../../extensibility/internals/new-project-generation-under-the-hood-part-one.md)
 - [MSBuild](../../msbuild/msbuild.md)

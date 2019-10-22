@@ -1,5 +1,5 @@
 ---
-title: IEnumDebugExtendedPropertyInfo::Reset | Microsoft Docs
+title: 'Ienumdebugextendedpropertyinfo (:: RESET | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,12 +17,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3560c63d20d8761ef8114e59d35c6d1ab4185455
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: a944a9ba7689908eff5ed4db8e2a44cd9a214d55
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58151848"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72574246"
 ---
 # <a name="ienumdebugextendedpropertyinforeset"></a>IEnumDebugExtendedPropertyInfo::Reset
 Restablece una secuencia de enumeración al principio.  
@@ -36,7 +36,7 @@ void
 ```  
   
 ## <a name="return-value"></a>Valor devuelto  
- Devuelve un válidas `HRESULT`, normalmente `S_OK`.  
+ Devuelve un `HRESULT` válido, normalmente `S_OK`.  
   
 ## <a name="see-also"></a>Vea también  
  [IEnumDebugExtendedPropertyInfo (Interfaz)](../../winscript/reference/ienumdebugextendedpropertyinfo-interface.md)

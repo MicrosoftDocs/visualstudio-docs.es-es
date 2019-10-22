@@ -7,17 +7,17 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugPort2 interface
 ms.assetid: 8fd87f05-a950-4d14-b925-98be29d4facc
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 14c21b4f1546b262fb61c0da3ea95adee2aef8fa
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: fb489cddf090bf9958dee57f424ba009eb2c2209
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56687424"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66326845"
 ---
 # <a name="idebugport2"></a>IDebugPort2
 Esta interfaz representa un puerto de depuración en un equipo.

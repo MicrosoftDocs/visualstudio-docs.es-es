@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5bebc8581ead00eeb6b28c2c45f4dcfe991a9e1a
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 9cb534fc08706ef56ebbc85afe1500e4424196ad
+ms.sourcegitcommit: 535ef05b1e553f0fc66082cd2e0998817eb2a56a
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55918161"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "72018892"
 ---
 # <a name="test-a-large-application-with-multiple-ui-maps"></a>Probar una aplicación grande con varias asignaciones de IU
 
@@ -27,7 +27,7 @@ En este tema se describe cómo usar pruebas automatizadas de IU cuando esté pro
 
 - Visual Studio Enterprise
 
-Al crear una nueva prueba automatizada de IU, el marco de pruebas de Visual Studio genera de manera predeterminada código para la prueba en una clase <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UIMap.UIMap>. Para obtener más información sobre cómo registrar pruebas automatizadas de IU, vea [Crear pruebas automatizadas de IU](../test/use-ui-automation-to-test-your-code.md) y [Anatomía de una prueba automatizada de IU](../test/anatomy-of-a-coded-ui-test.md).
+Al crear una nueva prueba automatizada de IU, el marco de pruebas de Visual Studio genera de manera predeterminada código para la prueba en una clase [UIMap](/previous-versions/dd580454(v=vs.140)). Para obtener más información sobre cómo registrar pruebas automatizadas de IU, vea [Crear pruebas automatizadas de IU](../test/use-ui-automation-to-test-your-code.md) y [Anatomía de una prueba automatizada de IU](../test/anatomy-of-a-coded-ui-test.md).
 
 El código generado para la asignación de IU contiene una clase para cada objeto con el que la prueba interactúa. Para cada método generado, se genera una clase complementaria específicamente para los parámetros de ese método. Si hay un número elevado de objetos, páginas y formularios y controles en la aplicación, la asignación de IU puede llegar a ser muy grande. Además, si hay varias personas trabajando en las pruebas, la aplicación se vuelve pesada con un único archivo grande de asignación de IU.
 
@@ -40,11 +40,11 @@ El uso de varios archivos de asignación de IU puede aportar las ventajas siguie
 - Las incorporaciones a la interfaz de usuario de la aplicación se pueden escalar incrementalmente con un efecto mínimo sobre las pruebas para otras partes de la interfaz de usuario.
 
 ## <a name="do-you-need-multiple-ui-maps"></a>¿Necesita varias asignaciones de IU?
- Cree varias asignaciones de IU en cada uno de estos tipos de situaciones:
+Cree varias asignaciones de IU en cada uno de estos tipos de situaciones:
 
--   Varios conjuntos complejos de controles de IU compuestos que realizan conjuntamente una operación lógica, como una página de registro de un sitio web o la página de compra de un carro de la compra.
+- Varios conjuntos complejos de controles de IU compuestos que realizan conjuntamente una operación lógica, como una página de registro de un sitio web o la página de compra de un carro de la compra.
 
--   Un conjunto independiente de controles al que se tiene acceso desde varios lugares de la aplicación, como un asistente con varias páginas de operaciones. Si cada página de un asistente es especialmente compleja, podría crear asignaciones de IU diferentes para cada página.
+- Un conjunto independiente de controles al que se tiene acceso desde varios lugares de la aplicación, como un asistente con varias páginas de operaciones. Si cada página de un asistente es especialmente compleja, podría crear asignaciones de IU diferentes para cada página.
 
 ## <a name="add-multiple-ui-maps"></a>Agregar varias asignaciones de interfaz de usuario
 
@@ -141,7 +141,7 @@ namespace ContosoProject
 
 ## <a name="see-also"></a>Vea también
 
-- <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UIMap.UIMap>
+- [UIMap](/previous-versions/dd580454(v=vs.140))
 - <xref:Microsoft.VisualStudio.TestTools.UITesting.BrowserWindow.CopyFrom%2A>
 - [Usar la automatización de la interfaz de usuario para probar el código](../test/use-ui-automation-to-test-your-code.md)
 - [Crear pruebas automatizadas de IU](../test/use-ui-automation-to-test-your-code.md)

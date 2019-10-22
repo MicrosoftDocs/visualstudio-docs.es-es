@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - Architecture, Visual Studio Integration
 ms.assetid: a469208a-cb70-4d87-a79b-d2086fc4fae4
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0e6fdfeb646e4f6e1bef76392b0c68fd4a16b9b8
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: e359d0541f1fde6c00ef94e4b96922d72a243ae0
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56624885"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66323468"
 ---
 # <a name="vssdk-utilities"></a>Utilidades VSSDK
 Los temas de esta sección describen las herramientas que se suministran con VSSDK.

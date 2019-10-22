@@ -1,5 +1,5 @@
 ---
-title: Procedimiento Usar ClickOnce para implementar aplicaciones que se pueden ejecutar en varias versiones de .NET Framework | Microsoft Docs
+title: Usar ClickOnce para implementar aplicaciones multitarget
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -16,18 +16,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: a98ad657fd1664a71b0b07063615923af4b9db2d
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 38418a1ca11c23ab12d64deadfb91079bc957493
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60096054"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66747494"
 ---
 # <a name="how-to-use-clickonce-to-deploy-applications-that-can-run-on-multiple-versions-of-the-net-framework"></a>Procedimiento Uso de ClickOnce para implementar aplicaciones que se pueden ejecutar en varias versiones de .NET Framework
 Puede implementar una aplicación que tenga como destino varias versiones de .NET Framework mediante el uso de la tecnología de implementación de ClickOnce. Esto requiere que generar y actualizar los manifiestos de aplicación e implementación.
 
 > [!NOTE]
->  Antes de cambiar la aplicación en varias versiones de .NET Framework de destino, debe asegurarse de que se ejecuta la aplicación con varias versiones de .NET Framework. Common language runtime de versión es diferente entre [!INCLUDE[net_v40_short](../code-quality/includes/net_v40_short_md.md)] frente a .NET Framework 2.0, .NET Framework 3.0 y .NET Framework 3.5.
+> Antes de cambiar la aplicación en varias versiones de .NET Framework de destino, debe asegurarse de que se ejecuta la aplicación con varias versiones de .NET Framework. Common language runtime de versión es diferente entre .NET Framework 4 en comparación con .NET Framework 2.0, .NET Framework 3.0 y .NET Framework 3.5.
 
  Este proceso requiere los siguientes pasos:
 
@@ -88,7 +88,7 @@ Puede implementar una aplicación que tenga como destino varias versiones de .NE
    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true" group="framework">
    ```
 
-3. Actualizar el número de versión de la `<assemblyIdentity>` elemento para Microsoft.Windows.CommonLanguageRuntime al número de versión de .NET Framework que es el mínimo común denominador. Por ejemplo, si la aplicación tiene como destino .NET Framework 3.5 y [!INCLUDE[net_v40_short](../code-quality/includes/net_v40_short_md.md)], use el 2.0.50727.0 número de versión y el código XML deben ser similar al siguiente:
+3. Actualizar el número de versión de la `<assemblyIdentity>` elemento para Microsoft.Windows.CommonLanguageRuntime al número de versión de .NET Framework que es el mínimo común denominador. Por ejemplo, si la aplicación tiene como destino .NET Framework 3.5 y .NET Framework 4, use el 2.0.50727.0 número de versión y el código XML deben ser similar al siguiente:
 
    ```xml
    <dependency>

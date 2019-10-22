@@ -1,5 +1,5 @@
 ---
-title: IDebugDocumentText::GetPositionOfContext | Microsoft Docs
+title: 'IDebugDocumentText:: GetPositionOfContext | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 6058502c076dd4f75dbbb44fdb161b889a965fec
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: da759eb98a6cdd28066ddaa8aafe785ede337a6e
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58145127"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72572136"
 ---
 # <a name="idebugdocumenttextgetpositionofcontext"></a>IDebugDocumentText::GetPositionOfContext
-Devuelve el intervalo de la posición del carácter correspondiente a un contexto de documento.  
+Devuelve el intervalo de posición de caracteres correspondiente a un contexto de documento.  
   
 ## <a name="syntax"></a>Sintaxis  
   
@@ -39,13 +39,13 @@ HRESULT GetPositionOfContext(
   
 #### <a name="parameters"></a>Parámetros  
  `psc`  
- [in] El objeto de contexto de documento.  
+ de Objeto de contexto del documento.  
   
  `pcCharacterPosition`  
- [out] Inicie la ubicación de la posición del intervalo de caracteres.  
+ enuncia Ubicación de inicio del intervalo de posición de caracteres.  
   
  `cNumChars`  
- [out] Número de caracteres del intervalo.  
+ enuncia Número de caracteres del intervalo.  
   
 ## <a name="return-value"></a>Valor devuelto  
  El método devuelve un objeto `HRESULT`. Entre los valores posibles se incluyen los que se indican en la tabla siguiente, entre otros.  
@@ -55,7 +55,7 @@ HRESULT GetPositionOfContext(
 |`S_OK`|El método se realizó correctamente.|  
   
 ## <a name="remarks"></a>Comentarios  
- El contexto de documento proporcionado a este método debe asociarse a este documento.  
+ El contexto de documento proporcionado a este método debe estar asociado a este documento.  
   
 ## <a name="see-also"></a>Vea también  
  [IDebugDocumentText (Interfaz)](../../winscript/reference/idebugdocumenttext-interface.md)

@@ -11,22 +11,25 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 14015c01b487bfe7963d36154ff2dc9b599d7c49
-ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
+ms.openlocfilehash: 15e0b45fd77096ba2227391736aad5c895014d1c
+ms.sourcegitcommit: 0554b59a2a251661e56824fb9cd6e9b1f326cef1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "59366827"
+ms.lasthandoff: 10/03/2019
+ms.locfileid: "71831872"
 ---
 # <a name="step-3-use-the-interactive-repl-window"></a>Paso 3: Uso de la ventana interactiva de REPL
 
-**Paso anterior: [Escribir y ejecutar código](tutorial-working-with-python-in-visual-studio-step-02-writing-code.md)**
+**Paso anterior: [Escritura y ejecución de código](tutorial-working-with-python-in-visual-studio-step-02-writing-code.md)**
 
 La ventana **interactiva** de Visual Studio para Python proporciona una experiencia de lectura-evaluación-impresión-repetición (REPL) que reduce considerablemente el ciclo habitual de edición-compilación-depuración. La ventana **interactiva** proporciona todas las funciones de la experiencia de REPL de la línea de comandos de Python. También resulta muy fácil intercambiar el código con archivos de código fuente en el editor de Visual Studio, que en otros casos es complicado con la línea de comandos.
 
+> [!NOTE]
+> Si tiene problemas con REPL, asegúrese de tener instalados los paquetes `ipython` y `ipykernel`. Si necesita instalar paquetes, consulte la [pestaña de los paquetes de los entornos de Python](https://docs.microsoft.com/en-us/visualstudio/python/python-environments-window-tab-reference#packages-tab).
+
 1. Abra la ventana **interactiva** haciendo clic con el botón derecho en el entorno de Python del proyecto en el **Explorador de soluciones** (por ejemplo, **Python 3.6 (32 bits)** como se muestra en un gráfico anterior) y seleccione **Abrir ventana interactiva**. Como alternativa, puede seleccionar **Ver** > **Otras ventanas** > **Ventanas interactivas de Python** en el menú principal de Visual Studio.
 
-1. Se abre la ventana **interactiva** debajo del editor, con el símbolo estándar del sistema de REPL de Python **>>>**. La lista desplegable **Plataforma** permite seleccionar un intérprete específico con el que trabajar. En muchas ocasiones también querrá aumentar el tamaño de la ventana **interactiva**, lo que puede hacer si arrastra el separador entre las dos ventanas:
+1. Se abre la ventana **interactiva** debajo del editor, con el símbolo estándar del sistema de REPL de Python **>>>** . La lista desplegable **Plataforma** permite seleccionar un intérprete específico con el que trabajar. En muchas ocasiones también querrá aumentar el tamaño de la ventana **interactiva**, lo que puede hacer si arrastra el separador entre las dos ventanas:
 
     ![Ventana interactiva de Python y arrastre para cambiar el tamaño](media/vs-getting-started-python-11-interactive1b.png)
 
@@ -51,7 +54,7 @@ La ventana **interactiva** de Visual Studio para Python proporciona una experien
         return ' ' * int(20 * cos(radians(x)) + 20) + 'o'
     ```
 
-1. Seleccione solo las instrucciones `import` y `from` del archivo *.py*, haga clic con el botón derecho y seleccione **Enviar a interactivo** (o presione **Ctrl**+**Entrar**). El fragmento de código se pega inmediatamente en la ventana **interactiva** y se ejecuta. Ahora seleccione la función `make_dot_string` y repita el mismo comando, que vuelve a ejecutar este fragmento de código. Dado que el código define una función, puede probarla rápidamente si la invoca varias veces:
+1. Seleccione solo las instrucciones de función `import`, `from` y `make_dot_string` en el archivo *.py*, haga clic con el botón derecho y seleccione **Enviar a interactivo** (o presione **Ctrl**+**Entrar**). El fragmento de código se pega inmediatamente en la ventana **interactiva** y se ejecuta. Ahora seleccione la función `make_dot_string` y repita el mismo comando, que vuelve a ejecutar este fragmento de código. Dado que el código define una función, puede probarla rápidamente si la invoca varias veces:
 
     ![Envío y prueba del código en la ventana interactiva](media/vs-getting-started-python-14-interactive4.png)
 
@@ -93,9 +96,9 @@ La ventana **interactiva** de Visual Studio para Python proporciona una experien
 ## <a name="next-step"></a>Paso siguiente
 
 > [!div class="nextstepaction"]
-> [Ejecución de código en el depurador](tutorial-working-with-python-in-visual-studio-step-04-debugging.md)
+> [Ejecutar código en el depurador](tutorial-working-with-python-in-visual-studio-step-04-debugging.md)
 
 ## <a name="go-deeper"></a>Profundizar un poco más
 
 - [Uso de la ventana interactiva](python-interactive-repl-in-visual-studio.md)
-- [Uso de IPython en la ventana interactiva (REPL)](interactive-repl-ipython.md)
+- [Uso de IPython en la ventana interactiva](interactive-repl-ipython.md)

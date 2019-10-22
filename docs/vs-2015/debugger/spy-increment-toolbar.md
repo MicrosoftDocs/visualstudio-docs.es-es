@@ -12,11 +12,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: a96a5765c98bf8e7d1c600fbd47478a88fa7175d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58999099"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68154014"
 ---
 # <a name="spy-toolbar"></a>Barra de herramientas de Spy++
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ La barra de herramientas aparece debajo de la barra de menú de Spy ++. Para mos
 |![Spy&#43; &#43; procesa botón](../debugger/media/icon-spy-processes.gif "Icon_Spy ++ _Processes")|Muestra una vista de árbol de los procesos del sistema. Para obtener más información, consulte [vista procesos](../debugger/processes-view.md).|  
 |![Spy&#43; &#43; subprocesos botón](../debugger/media/icon-spy-threads.gif "Icon_Spy ++ _Threads")|Muestra una vista de árbol de los subprocesos del sistema. Para obtener más información, consulte [vista de subprocesos](../debugger/threads-view.md).|  
 |![Spy&#43; &#43; mensajes botón](../debugger/media/icon-spy-messages.gif "Icon_Spy ++ _Messages")|Crea una ventana para mostrar los mensajes de ventana y abre el **opciones de mensaje** cuadro de diálogo para que pueda seleccionar la ventana cuyos mensajes se mostrarán y también seleccionar otras opciones. Para obtener más información, consulte [vista mensajes](../debugger/messages-view.md).|  
-|![Spy&#43; &#43; botón Iniciar registro](../debugger/media/icon-spy-startlog.gif "Icon_Spy ++ _StartLog")|Inicia el registro de mensajes y muestra la secuencia de mensajes. Este control solo está disponible cuando una **mensajes** ventana es la ventana activa. Para obtener más información, vea [Cómo: Procedimiento Iniciar y detener la presentación del registro de mensajes](../debugger/how-to-start-and-stop-the-message-log-display.md).|  
+|![Spy&#43; &#43; botón Iniciar registro](../debugger/media/icon-spy-startlog.gif "Icon_Spy ++ _StartLog")|Inicia el registro de mensajes y muestra la secuencia de mensajes. Este control solo está disponible cuando una **mensajes** ventana es la ventana activa. Para obtener más información, consulte [Cómo Procedimiento Iniciar y detener la presentación del registro de mensajes](../debugger/how-to-start-and-stop-the-message-log-display.md).|  
 |![Spy&#43; &#43; botón Detener registro](../debugger/media/icon-spy-stoplog.gif "Icon_Spy ++ _StopLog")|Registro y la visualización del flujo de mensajes, mensajes se detiene. Este control solo está disponible cuando una **mensajes** ventana es la ventana activa. Para obtener más información, vea [Cómo: Procedimiento Iniciar y detener la presentación del registro de mensajes](../debugger/how-to-start-and-stop-the-message-log-display.md).|  
 |![Spy&#43; &#43; botón Opciones de registro](../debugger/media/icon-spy-logoptions.gif "Icon_Spy ++ _LogOptions")|Muestra el [opciones de mensaje](../debugger/message-options-dialog-box.md) cuadro de diálogo. Utilice este cuadro de diálogo para seleccionar windows y tipos de visualización de mensajes. Este control solo está disponible cuando una **mensajes** ventana es la ventana activa.|  
 |![Spy&#43; &#43; registro botón Borrar](../debugger/media/spy-clearlog.gif "Spy ++ _ClearLog")|Borra el contenido de activo **mensajes** ventana. Este control solo está disponible cuando una **mensajes** ventana es la ventana activa.|  

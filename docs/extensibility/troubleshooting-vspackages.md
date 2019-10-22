@@ -6,17 +6,17 @@ helpviewer_keywords:
 - VSPackages, troubleshooting
 - debugging, VSPackages
 ms.assetid: 274673e7-72e7-476f-a263-3411b5b874be
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 64ebe3bc2d4d406d6144305b368d37613aef0158
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: a21c8d547cb2167da018c13e788fe2c95bd504ac
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60039738"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66338024"
 ---
 # <a name="troubleshooting-vspackages"></a>Solución de problemas de VSPackages
 Estos son los problemas comunes que podría tener con el paquete de VS y sugerencias para solucionar los problemas.
@@ -46,7 +46,7 @@ Estos son los problemas comunes que podría tener con el paquete de VS y sugeren
 4. Abra el **salida** ventana de la instancia de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] que no se puede cargar el VSPackage. Información sobre por qué se puede cargar el VSPackage puede mostrarse en esa ventana.
 
    > [!NOTE]
-   >  Si va a iniciar la versión experimental de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] desde el [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] el entorno de desarrollo integrado (IDE), inspeccione la **salida** ventana de ambas versiones.
+   > Si va a iniciar la versión experimental de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] desde el [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] el entorno de desarrollo integrado (IDE), inspeccione la **salida** ventana de ambas versiones.
 
 5. Examine el registro de actividad.
 
@@ -66,7 +66,7 @@ Estos son los problemas comunes que podría tener con el paquete de VS y sugeren
 
    1. Buscar el CLSID del VSPackage en la sección de paquetes del registro:
 
-        HKLM\Software\Microsoft\Visual Studio\\*\<version>* \Packages
+        HKLM\Software\Microsoft\Visual Studio\\ *\<version>* \Packages
 
    2. Compruebe que la ruta de acceso proporcionado por la subclave SatelliteDll es correcta.
 
@@ -85,7 +85,7 @@ Estos son los problemas comunes que podría tener con el paquete de VS y sugeren
     4. En el **depurar** menú, haga clic en **Iniciar depuración** o presione F5.
 
         > [!NOTE]
-        >  Si está depurando un proyecto, cree o cargue una instancia existente del proyecto ahora.
+        > Si está depurando un proyecto, cree o cargue una instancia existente del proyecto ahora.
 
 2. Utilice el registro de actividad.
 
@@ -119,7 +119,7 @@ Estos son los problemas comunes que podría tener con el paquete de VS y sugeren
 
 2. Para código no administrado, busque el CLSID del VSPackage en el [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] nodo de registro CLSID:
 
-    HKLM\Software\Microsoft\Visual Studio\\*\<version>* \CLSID
+    HKLM\Software\Microsoft\Visual Studio\\ *\<version>* \CLSID
 
    Asegúrese de que la entrada InprocServer32 tiene la ruta de acceso correcta del archivo dll de VSPackage.
 

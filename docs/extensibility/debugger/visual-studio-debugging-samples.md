@@ -7,17 +7,17 @@ helpviewer_keywords:
 - debugging [Debugging SDK], samples
 - Debugging SDK, samples
 ms.assetid: fbcc42a7-7851-487f-b981-8c4ae7ec7347
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 80783f7e2168400616ea2169fe34d973418d0113
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 3e43c2b38d1da055a1a0a4533acc61cb3b8e6760
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56721776"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66348294"
 ---
 # <a name="visual-studio-debugging-samples"></a>Ejemplos de depuración de Visual Studio
 Dos ejemplos muestran cómo ampliar el depurador de Visual Studio mediante [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)].

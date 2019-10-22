@@ -17,13 +17,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 49b13b8406dc96e8e7ebe5e79e26c5da02e8a53a
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60092115"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68205439"
 ---
-# <a name="how-to-debug-net-framework-source"></a>Procedimiento Depurar código fuente de .NET Framework
+# <a name="how-to-debug-net-framework-source"></a>Procedimiento Depuración de código fuente de .NET Framework
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 La versión más reciente de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] proporciona nuevas características para [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] depuración. Para depurar [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] origen, debe tener acceso a los símbolos de depuración para el código. También deberá habilitar ejecución paso a paso [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] origen.  
@@ -38,9 +38,9 @@ La versión más reciente de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] propor
   
 3. En el **General** , configure **habilitar .NET Framework** del origen de ejecución paso a paso.  
   
-    1. Si tenía habilitada la opción Sólo mi código , un cuadro de diálogo de advertencia le indicará que dicha opción se ha deshabilitado. Haga clic en **Aceptar**.  
+    1. Si tenía habilitada la opción Sólo mi código , un cuadro de diálogo de advertencia le indicará que dicha opción se ha deshabilitado. Haga clic en **OK**.  
   
-    2. Si no tenía una ubicación de caché de símbolos establecida, otro cuadro de diálogo de advertencia le indicará que se ha establecido una ubicación de caché de símbolos predeterminada. Haga clic en **Aceptar**.  
+    2. Si no tenía una ubicación de caché de símbolos establecida, otro cuadro de diálogo de advertencia le indicará que se ha establecido una ubicación de caché de símbolos predeterminada. Haga clic en **OK**.  
   
 4. En el **depuración** categoría, haga clic en **símbolos**.  
   

@@ -17,27 +17,27 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cdf8668b6a34ca6f663b83640e71951f0cb7c255
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: c04f500ceb8a1c95f643fe43c292bb668d54c2aa
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60110237"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63406565"
 ---
 # <a name="how-to-specify-which-files-are-published-by-clickonce"></a>Procedimiento Especificación de los archivos que se van a publicar mediante ClickOnce
 Al publicar un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] archivos de aplicación, que no son código en el proyecto se implementan junto con la aplicación. En algunos casos, es posible que no desea o necesita publicar determinados archivos, o desea instalar determinados archivos según las condiciones. Visual Studio proporciona las capacidades para excluir archivos, marcar archivos como archivos de datos o los requisitos previos y crear grupos de archivos para la instalación condicional.
 
  Los archivos de un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicación se administran en el **archivos de la aplicación** cuadro de diálogo, accesible desde el **publicar** página de la **Diseñador de proyectos**.
 
- Inicialmente, hay un solo grupo de archivos denominado **(obligatorio)**. Puede crear grupos de archivos adicionales y asignarles archivos. No puede cambiar el **grupo de descarga** para los archivos que son necesarios para ejecutar la aplicación. Por ejemplo, .exe de la aplicación o los archivos marcan como archivos de datos deben pertenecer a la **(obligatorio)** grupo.
+ Inicialmente, hay un solo grupo de archivos denominado **(obligatorio)** . Puede crear grupos de archivos adicionales y asignarles archivos. No puede cambiar el **grupo de descarga** para los archivos que son necesarios para ejecutar la aplicación. Por ejemplo, .exe de la aplicación o los archivos marcan como archivos de datos deben pertenecer a la **(obligatorio)** grupo.
 
- El valor predeterminado de estado de publicación tiene una etiqueta con el valor de un archivo **(Auto)**. Por ejemplo, .exe de la aplicación tiene un estado de publicación de **incluir (automático)** de forma predeterminada.
+ El valor predeterminado de estado de publicación tiene una etiqueta con el valor de un archivo **(Auto)** . Por ejemplo, .exe de la aplicación tiene un estado de publicación de **incluir (automático)** de forma predeterminada.
 
  Los archivos con la **acción de compilación** propiedad establecida en **contenido** se designan como archivos de aplicación y se marcará como incluye de forma predeterminada. Pueden incluidos, excluidos o marcados como archivos de datos. Las excepciones son los siguientes:
 
-- Archivos de datos como base de datos SQL (*.mdf* y *.mdb*) archivos y archivos XML se marcará como archivos de datos de forma predeterminada.
+- Archivos de datos como base de datos SQL ( *.mdf* y *.mdb*) archivos y archivos XML se marcará como archivos de datos de forma predeterminada.
 
-- Referencias a ensamblados (*.dll* archivos) se designan como se indica a continuación, al agregar la referencia: Si **Copy Local** es **False**, está marcada de forma predeterminada como un ensamblado de requisito previo (**requisito previo (Auto)**) que debe estar presente en la GAC antes de instalar la aplicación. Si **Copy Local** es **True**, el ensamblado está marcado como un ensamblado de aplicación de forma predeterminada (**incluir (automático)**) y se copiará en la carpeta de la aplicación durante la instalación. Una referencia COM aparecerá en el **archivos de la aplicación** cuadro de diálogo (como un *.ocx* archivo) solo si su **aislado** propiedad está establecida en **True**. De forma predeterminada, se incluirá.
+- Referencias a ensamblados ( *.dll* archivos) se designan como se indica a continuación, al agregar la referencia: Si **Copy Local** es **False**, está marcada de forma predeterminada como un ensamblado de requisito previo (**requisito previo (Auto)** ) que debe estar presente en la GAC antes de instalar la aplicación. Si **Copy Local** es **True**, el ensamblado está marcado como un ensamblado de aplicación de forma predeterminada (**incluir (automático)** ) y se copiará en la carpeta de la aplicación durante la instalación. Una referencia COM aparecerá en el **archivos de la aplicación** cuadro de diálogo (como un *.ocx* archivo) solo si su **aislado** propiedad está establecida en **True**. De forma predeterminada, se incluirá.
 
 ### <a name="to-add-files-to-the-application-files-dialog-box"></a>Para agregar archivos al cuadro de diálogo archivos de aplicación
 
@@ -77,7 +77,7 @@ Al publicar un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]
 
 3. Haga clic en el **archivos de la aplicación** botón para abrir el **archivos de la aplicación** cuadro de diálogo.
 
-4. En el **archivos de la aplicación** cuadro de diálogo, seleccione el ensamblado de aplicación (*.dll* archivo) que desea marcar como requisito previo. Tenga en cuenta que la aplicación debe tener una referencia al ensamblado de la aplicación en orden para que aparezca en la lista.
+4. En el **archivos de la aplicación** cuadro de diálogo, seleccione el ensamblado de aplicación ( *.dll* archivo) que desea marcar como requisito previo. Tenga en cuenta que la aplicación debe tener una referencia al ensamblado de la aplicación en orden para que aparezca en la lista.
 
 5. En el **estado de la publicación** campos, seleccione **requisitos previos** en la lista desplegable.
 
@@ -92,7 +92,7 @@ Al publicar un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]
 4. En el **archivos de la aplicación** cuadro de diálogo, seleccione el **grupo** field para un archivo que desea incluir en el nuevo grupo.
 
     > [!NOTE]
-    >  Los archivos deben tener la **acción de compilación** propiedad establecida en **contenido** antes de que aparezcan los nombres de archivo en el **archivos de la aplicación** cuadro de diálogo.
+    > Los archivos deben tener la **acción de compilación** propiedad establecida en **contenido** antes de que aparezcan los nombres de archivo en el **archivos de la aplicación** cuadro de diálogo.
 
 5. En el **grupo de descarga** campos, seleccione  **\<nuevo... >** en la lista desplegable.
 
@@ -111,7 +111,7 @@ Al publicar un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]
 5. En el **grupo de descarga** , seleccione un grupo en la lista desplegable.
 
     > [!NOTE]
-    >  No puede cambiar el **grupo de descarga** para los archivos que son necesarios para ejecutar la aplicación.
+    > No puede cambiar el **grupo de descarga** para los archivos que son necesarios para ejecutar la aplicación.
 
 ## <a name="see-also"></a>Vea también
 - [Publicar aplicaciones ClickOnce](../deployment/publishing-clickonce-applications.md)

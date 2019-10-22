@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 0d2dfe0da64abb9540724c05d13b84715a684af0
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 30bb597288c19328bb71ce7b5212200991d7181e
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60082040"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63443080"
 ---
 # <a name="how-to-mark-controls-as-safe-controls"></a>Procedimiento Marcar los controles como seguros
   Para la seguridad, SharePoint diferencia entre los controles Web que están protegidos contra la inyección de script y los controles Web que no están. Protegido de los controles, o *controles seguros*, pueden tener acceso a los usuarios de confianza. Puede marcar los controles como seguros en la propiedad de las entradas de Control seguro de un elemento de proyecto de SharePoint o en el **Diseñador de paquetes** cuando agrega un ensamblado para el paquete. Para obtener más información, consulte
@@ -27,7 +27,7 @@ ms.locfileid: "60082040"
 - [el archivo Web.config el cambio de configuración](http://go.microsoft.com/fwlink/?LinkId=178965) y [registrar un ensamblado de elemento Web como un Control seguro](http://go.microsoft.com/fwlink/?LinkId=171013).
 
 > [!IMPORTANT]
->  Estos procedimientos son para fines ilustrativos. Marcar los controles seguros solo si está seguro de que son seguros.
+> Estos procedimientos son para fines ilustrativos. Marcar los controles seguros solo si está seguro de que son seguros.
 
 ## <a name="marking-safe-controls-in-the-safe-control-entries-property"></a>Marcar los controles seguros en la propiedad de las entradas de Control seguro
 
@@ -94,7 +94,7 @@ ms.locfileid: "60082040"
     |Protección frente a scripts|Deje el **Safe Against Script** casilla de verificación.|
 
     > [!NOTE]
-    >  El **nombre del ensamblado** valor de los ensamblados agregados a través de la **avanzadas** pestaña de la **Diseñador de paquetes** no puede ser un token, debe ser un ensamblado con nombre seguro. Para obtener más información, vea [Crear y utilizar ensamblados con nombre seguro](http://go.microsoft.com/fwlink/?LinkId=177513).
+    > El **nombre del ensamblado** valor de los ensamblados agregados a través de la **avanzadas** pestaña de la **Diseñador de paquetes** no puede ser un token, debe ser un ensamblado con nombre seguro. Para obtener más información, vea [Crear y utilizar ensamblados con nombre seguro](http://go.microsoft.com/fwlink/?LinkId=177513).
 
 13. Elija la **ficha** clave para crear otra entrada de control segura.
 

@@ -12,11 +12,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 3b8733ef63a60baa1b268c42c8780cdf80f2674b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58998994"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68159960"
 ---
 # <a name="general-tab-window-properties-dialog-box"></a>Pestaña General (Cuadro de diálogo Propiedades de la ventana)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,7 +25,7 @@ Use la **General** ficha para mostrar información sobre la ventana seleccionada
   
  Las siguientes opciones están disponibles en el **General** pestaña:  
   
-|Entrada|Descripción|  
+|Entrada|DESCRIPCIÓN|  
 |-----------|-----------------|  
 |**Título de ventana**|El texto del título de ventana o texto contenido en una ventana, si es un control.|  
 |**Identificador de ventana**|El identificador único de esta ventana. Números de identificador de ventana se reutilizan; identifican una ventana únicamente para la duración de esa ventana.|  

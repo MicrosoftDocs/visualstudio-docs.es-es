@@ -1,5 +1,5 @@
 ---
-title: Filtrar Usar mediante programación los cuadros de diálogo integrados en Word
+title: Procedimiento Usar mediante programación los cuadros de diálogo integrados en Word
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -14,13 +14,13 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: f8037e4d91aa7706c7ffd7b9f32778dfeac79488
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56644944"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62961646"
 ---
-# <a name="how-to-programmatically-use-built-in-dialog-boxes-in-word"></a>Filtrar Usar mediante programación los cuadros de diálogo integrados en Word
+# <a name="how-to-programmatically-use-built-in-dialog-boxes-in-word"></a>Procedimiento Usar mediante programación los cuadros de diálogo integrados en Word
   Cuando se trabaja con Microsoft Office Word, hay veces cuando se necesitan para mostrar cuadros de diálogo de intervención del usuario. Aunque puede crear sus propios, también puede tomar el enfoque del uso de los cuadros de diálogo integrados en Word, que se exponen en el <xref:Microsoft.Office.Interop.Word.Dialogs> colección de la <xref:Microsoft.Office.Interop.Word.Application> objeto. Esto le permite tener acceso a más de 200 de los cuadros de diálogo integrados, que se representan como enumeraciones.
 
  [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]

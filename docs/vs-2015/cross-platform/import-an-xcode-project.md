@@ -8,11 +8,11 @@ author: corob-msft
 ms.author: corob
 manager: jillfra
 ms.openlocfilehash: 4faa2ecae7f53d29e6aad92723ca6d12e50e2812
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59652051"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68150975"
 ---
 # <a name="import-an-xcode-project"></a>Importar un proyecto XCode
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,7 +38,7 @@ Microsoft Visual C++ para desarrollo móvil multiplataforma incluye compatibilid
   
     ![Importar desde el panel Destinos del Asistente de XCode](../cross-platform/media/cppmdd-u2-importxcode-destination.jpg "CPPMDD_U2_ImportXCode_Destination")  
   
-    Para cada destino seleccionado en **Destinos para importar**, el asistente detecta automáticamente los archivos de código de C++ que se pueden dividir en un proyecto de biblioteca estática independiente y los coloca en la sección **Elementos del proyecto de C++**. En la sección **Elementos del proyecto de C++** se mantiene código y recursos adicionales. Se convierten en objetos independientes de biblioteca estática y proyectos de aplicación en Visual Studio cuando el asistente finaliza el proceso de importación. De forma predeterminada, el asistente no divide los destinos de prueba unitaria y marco en proyectos independientes.  
+    Para cada destino seleccionado en **Destinos para importar**, el asistente detecta automáticamente los archivos de código de C++ que se pueden dividir en un proyecto de biblioteca estática independiente y los coloca en la sección **Elementos del proyecto de C++** . En la sección **Elementos del proyecto de C++** se mantiene código y recursos adicionales. Se convierten en objetos independientes de biblioteca estática y proyectos de aplicación en Visual Studio cuando el asistente finaliza el proceso de importación. De forma predeterminada, el asistente no divide los destinos de prueba unitaria y marco en proyectos independientes.  
   
     Para cambiar los archivos que están en cada proyecto, use los botones Arriba y Abajo. Cuando esté satisfecho con los archivos de cada proyecto, pulse **Siguiente** para continuar.  
   
@@ -54,7 +54,7 @@ Microsoft Visual C++ para desarrollo móvil multiplataforma incluye compatibilid
   
     ![Importar desde el panel Propiedades globales de XCode](../cross-platform/media/cppmdd-u2-importxcode-global.jpg "CPPMDD_U2_ImportXCode_Global")  
   
-    Estas rutas de acceso globales también pueden establecerse en Visual Studio en el cuadro de diálogo **Opciones**. Para encontrarlas, elija **Opciones** en el menú **Herramientas**. En el cuadro de diálogo **Opciones**, expanda **Multiplataforma**, **C++**, **iOS**, **Propiedades globales**.  
+    Estas rutas de acceso globales también pueden establecerse en Visual Studio en el cuadro de diálogo **Opciones**. Para encontrarlas, elija **Opciones** en el menú **Herramientas**. En el cuadro de diálogo **Opciones**, expanda **Multiplataforma**, **C++** , **iOS**, **Propiedades globales**.  
   
     Elija **Siguiente** para continuar.  
   

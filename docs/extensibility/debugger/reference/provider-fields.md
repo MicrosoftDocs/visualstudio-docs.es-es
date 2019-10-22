@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - PROVIDER_FIELDS enumeration
 ms.assetid: 39631545-2b0e-45b4-978b-d63656484b02
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 67c055c1cf9fffde227d4e52a9764b2559a2342b
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 923ae0bc3ca03dabee7b5d4bca74d24c7f7d5815
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56684356"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66329367"
 ---
 # <a name="providerfields"></a>PROVIDER_FIELDS
 Especifica las propiedades asociadas con un proveedor de programa.
@@ -39,10 +42,12 @@ public enum enum_PROVIDER_FIELDS {
 };
 ```
 
-## <a name="members"></a>Miembros
- PFIELD_PROGRAM_NODES el `ProgramNodes` campo es válido.
+## <a name="fields"></a>Campos
+ `PFIELD_PROGRAM_NODES`\
+ El `ProgramNodes` campo es válido.
 
- PFIELD_IS_DEBUGGER_PRESENT el `fIsDebuggerPresent` campo es válido.
+ `PFIELD_IS_DEBUGGER_PRESENT`\
+ El `fIsDebuggerPresent` campo es válido.
 
 ## <a name="remarks"></a>Comentarios
  Estos valores se devuelven en el `Fields` miembro de la [PROVIDER_PROCESS_DATA](../../../extensibility/debugger/reference/provider-process-data.md) estructura para indicar qué campos de la estructura se rellenaron explícitamente.

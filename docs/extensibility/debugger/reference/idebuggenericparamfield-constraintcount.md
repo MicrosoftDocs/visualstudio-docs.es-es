@@ -6,17 +6,20 @@ helpviewer_keywords:
 - ConstraintCount
 - IDebugGenericParamField::ConstraintCount
 ms.assetid: 76bef0cb-8a3c-4ce5-87cc-1809de229f33
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f21e872fc04bc3d18ca3c332622844bfc57ece67
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: de00e38fa02447217b30e4a6801001e2663798e5
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56688919"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66330445"
 ---
 # <a name="idebuggenericparamfieldconstraintcount"></a>IDebugGenericParamField::ConstraintCount
 Devuelve el número de restricciones que están asociados con este parámetro genérico.
@@ -35,10 +38,9 @@ int ConstraintCount(
 );
 ```
 
-#### <a name="parameters"></a>Parámetros
-`pcConst`
-
- [in, out] Número de restricciones que están asociados con este campo.
+## <a name="parameters"></a>Parámetros
+`pcConst`\
+[in, out] Número de restricciones que están asociados con este campo.
 
 ## <a name="return-value"></a>Valor devuelto
 Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.

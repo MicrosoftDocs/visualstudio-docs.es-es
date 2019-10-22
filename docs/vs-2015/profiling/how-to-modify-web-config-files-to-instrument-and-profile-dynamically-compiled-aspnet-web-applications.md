@@ -9,12 +9,12 @@ caps.latest.revision: 18
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: a16ad46722213a703785d08209d68b3c4ee6b04f
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: d9e4fc4dfdff336b9ddcbd04bd031b48a8acc4dd
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60099599"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63432615"
 ---
 # <a name="how-to-modify-webconfig-files-to-instrument-and-profile-dynamically-compiled-aspnet-web-applications"></a>Cómo: Modificar archivos web.config para instrumentar y generar perfiles de aplicaciones web ASP.NET compiladas dinámicamente
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -24,7 +24,7 @@ Puede usar el método de instrumentación de las herramientas de generación de 
  En este tema se describe cómo modificar el archivo de configuración web.config para habilitar la instrumentación y la generación de perfiles de aplicaciones web de [!INCLUDE[vstecasp](../includes/vstecasp-md.md)].  
   
 > [!NOTE]
->  No es necesario modificar el archivo web.config cuando se utiliza el método de generación de perfiles de muestreo o cuando se desea instrumentar un módulo [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] compilado previamente.  
+> No es necesario modificar el archivo web.config cuando se utiliza el método de generación de perfiles de muestreo o cuando se desea instrumentar un módulo [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] compilado previamente.  
   
  La raíz de un archivo web.config es el elemento **configuration**. Para instrumentar y generar perfiles de una aplicación web de [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] compilada dinámicamente, debe agregar o modificar los siguientes elementos:  
   

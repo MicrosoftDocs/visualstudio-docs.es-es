@@ -23,12 +23,12 @@ caps.latest.revision: 29
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 0ea1e932f7651439dcb9a1ff85094bd30e5239bb
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 7f0cd04b054d51119f6f6c1b0275c4f781656bff
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60116171"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63438303"
 ---
 # <a name="how-to-edit-a-register-value"></a>Procedimiento Editar un valor del registro
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,10 +42,10 @@ La ventana Registros solo está disponible si está habilitada la depuración de
 2. Escriba el nuevo valor.  
   
     > [!CAUTION]
-    >  La modificación de los valores de registro (especialmente en los registros EIP y EBP) puede afectar a la ejecución del programa.  
+    > La modificación de los valores de registro (especialmente en los registros EIP y EBP) puede afectar a la ejecución del programa.  
   
     > [!CAUTION]
-    >  La modificación de valores de punto flotante puede dar lugar a ligeras imprecisiones debido a la conversión de decimal a binario de los componentes fraccionarios. Incluso una operación de edición aparentemente inocua puede causar cambios en alguno de los bits menos significativos de un registro de punto flotante.  
+    > La modificación de valores de punto flotante puede dar lugar a ligeras imprecisiones debido a la conversión de decimal a binario de los componentes fraccionarios. Incluso una operación de edición aparentemente inocua puede causar cambios en alguno de los bits menos significativos de un registro de punto flotante.  
   
 ## <a name="see-also"></a>Vea también  
  [Cómo: Uso de la ventana Registros](../debugger/how-to-use-the-registers-window.md)

@@ -1,5 +1,5 @@
 ---
-title: Método Ijsdebugdatatarget | Documentos de Microsoft
+title: 'IJsDebugDataTarget:: Writememory ((método) | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -15,12 +15,12 @@ caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 622de16cc5f755c5d69059a0e0f28d881121861c
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 33cd23ad784e222f770dfd5c0e7c2d775aa55e42
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58153817"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72572421"
 ---
 # <a name="ijsdebugdatatargetwritememory-method"></a>IJsDebugDataTarget::WriteMemory (Método)
 Lee la memoria del proceso de destino.  
@@ -37,21 +37,21 @@ HRESULT WriteMemory(
   
 #### <a name="parameters"></a>Parámetros  
  `address`  
- [in] La dirección base del que se va a escribir en la memoria del proceso de destino.  
+ de Dirección base desde la que se va a escribir la memoria del proceso de destino.  
   
  `pMemory`  
- [in] Los datos se escriban en el espacio de direcciones del proceso especificado.  
+ de Los datos que se van a escribir en el espacio de direcciones del proceso especificado.  
   
  `size`  
- [in] El número de bytes para escribirlos en el proceso.  
+ de Número de bytes que se van a escribir en el proceso.  
   
 ## <a name="return-value"></a>Valor devuelto  
   
 ## <a name="remarks"></a>Comentarios  
- Antes de que se produce la transferencia de datos, el sistema comprueba que todos los datos en la memoria del tamaño especificado y la dirección base es accesible para el acceso de escritura, y si no es accesible, la función produce un error E_JsDEBUG_INVALID_MEMORY_ADDRESS.  
+ Antes de que se produzca la transferencia de datos, el sistema comprueba que todos los datos de la dirección base y la memoria del tamaño especificado son accesibles para el acceso de escritura y, si no es accesible, la función genera un error E_JsDEBUG_INVALID_MEMORY_ADDRESS.  
   
 ## <a name="requirements"></a>Requisitos  
- **Encabezado:** jscript9diag.h  
+ **Encabezado:** jscript9diag. h  
   
 ## <a name="see-also"></a>Vea también  
  [IJsDebugDataTarget (Interfaz)](../../winscript/reference/ijsdebugdatatarget-interface.md)

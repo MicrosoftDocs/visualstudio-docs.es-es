@@ -11,12 +11,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 8d71f9e145d78d1d1bf7f6e9bb132e9fc084afd0
-ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
+ms.openlocfilehash: cd8ebd706d9228d23eb5d5ce3b1429063bae55e5
+ms.sourcegitcommit: a5a54b147e772dc39e519da74ec41a0c25d99628
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "59366003"
+ms.lasthandoff: 10/12/2019
+ms.locfileid: "72289717"
 ---
 # <a name="step-6-work-with-git"></a>Paso 6: Trabajar con Git
 
@@ -56,7 +56,7 @@ En este artículo se proporciona una introducción básica sobre la creación de
 
 Para obtener un breve tutorial de creación de un proyecto desde un repositorio de Git remoto, vea [Inicio rápido: Clonación de un repositorio de código de Python en Visual Studio](quickstart-03-python-in-visual-studio-project-from-repository.md).
 
-Para ver un tutorial mucho más completo, incluido el control de conflictos de combinación, la revisión de código con solicitudes de incorporación de cambios, la reorganización y la selección exclusiva de cambios entre ramas, consulte [Get Started with Git and Azure Repos](/azure/devops/repos/git/gitquickstart?toc=/visualstudio/version-control/toc.json&bc=/azure/devops/repos/git/breadcrumb/vc/toc.json&view=vsts&tabs=visual-studio) (Introducción a Git y Azure Repos).
+Para ver un tutorial mucho más completo, incluido el control de conflictos de combinación, la revisión de código con solicitudes de incorporación de cambios, la reorganización y la selección exclusiva de cambios entre ramas, consulte [Get Started with Git and Azure Repos](/azure/devops/repos/git/gitquickstart) (Introducción a Git y Azure Repos).
 
 ## <a name="tutorial-review"></a>Revisión del tutorial
 

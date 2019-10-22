@@ -10,14 +10,14 @@ ms.assetid: e17d0e71-f982-4fc1-a2df-a1065d37473d
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 539d56d4adaa0cf831bde96ccd280fd03750b89f
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 004eff423874a07e2b49713eaed16eb1bf8be609
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55970535"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62979463"
 ---
-# <a name="how-to-add-counters-to-counter-sets-using-the-load-test-editor"></a>Filtrar Agregar contadores a conjuntos de contadores mediante el Editor de pruebas de carga
+# <a name="how-to-add-counters-to-counter-sets-using-the-load-test-editor"></a>Procedimiento Agregar contadores a conjuntos de contadores mediante el Editor de pruebas de carga
 
 Cuando se crea una prueba de carga con el **Asistente para prueba de carga**, se agrega un conjunto inicial de contadores. Este conjunto inicial de contadores ofrece una serie de conjuntos de contadores predefinidos para la prueba de carga. Para más información, consulte [Especificar los conjuntos de contadores y las reglas de umbral para equipos en una prueba de carga](../test/specify-counter-sets-and-threshold-rules-for-load-testing.md).
 
@@ -30,34 +30,34 @@ Los contadores se administran en el **Editor de pruebas de carga**. Los conjunto
 
 ## <a name="to-add-counters-to-a-counter-set"></a>Para agregar contadores a un conjunto de contadores
 
-1.  Abra una prueba de carga.
+1. Abra una prueba de carga.
 
-2.  Expanda el nodo **Conjuntos de contadores**. Todos los conjuntos de contadores que se hayan agregado a la prueba de carga estarán visibles.
+2. Expanda el nodo **Conjuntos de contadores**. Todos los conjuntos de contadores que se hayan agregado a la prueba de carga estarán visibles.
 
     > [!NOTE]
     > El árbol jerárquico de pruebas de carga también incluye el nodo **Parámetros de ejecución**. Este nodo incluye el nodo **Asignaciones de conjuntos de contadores**, que muestra todos los equipos y los conjuntos de contadores que se asignan a esos equipos.
 
-3.  Haga clic con el botón derecho en un conjunto de contadores existente y, a continuación, elija **Agregar contadores**.
+3. Haga clic con el botón derecho en un conjunto de contadores existente y, a continuación, elija **Agregar contadores**.
 
      Se mostrará el cuadro de diálogo **Elegir contadores de rendimiento**.
 
-4.  En el cuadro combinado desplegable **Equipo**, escriba el nombre del equipo con el que desee realizar la asignación. También puede seleccionar uno de los equipos de la lista desplegable.
+4. En el cuadro combinado desplegable **Equipo**, escriba el nombre del equipo con el que desee realizar la asignación. También puede seleccionar uno de los equipos de la lista desplegable.
 
     > [!NOTE]
     > Como los conjuntos de contadores deben asignarse a un equipo antes de que se recopilen los datos de rendimiento, debe especificar un equipo donde recopilar los datos de rendimiento.
 
-5.  Seleccione una **Categoría de rendimiento** para filtrar las categorías de contadores de datos de rendimiento. Verá dos columnas de datos para seleccionar contadores de rendimiento.
+5. Seleccione una **Categoría de rendimiento** para filtrar las categorías de contadores de datos de rendimiento. Verá dos columnas de datos para seleccionar contadores de rendimiento.
 
     > [!NOTE]
     > Algunas categorías de rendimiento exigirán también que seleccione una instancia. Por ejemplo, si selecciona un contador de SQL, deberá seleccionar también una instancia de SQL, puesto que puede haber más de una instancia de SQL instalada en el equipo de destino.
 
-6.  Seleccione un contador y una instancia para agregar al conjunto de contadores personalizado.
+6. Seleccione un contador y una instancia para agregar al conjunto de contadores personalizado.
 
      \- o -
 
      Seleccione el botón de radio **Todos los contadores** para seleccionar todos los contadores disponibles.
 
-7.  Elija **Aceptar**.
+7. Elija **Aceptar**.
 
     > [!NOTE]
     > Otra forma de agregar contadores a un conjunto de contadores consiste en elegir un contador o categoría de contador existentes, elegir Copiar y, a continuación, pegarlos en un nodo de conjunto de contadores distinto. Si se copian contadores adicionales que no son necesarios, pueden eliminarse.

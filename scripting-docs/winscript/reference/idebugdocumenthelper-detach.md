@@ -1,5 +1,5 @@
 ---
-title: IDebugDocumentHelper::Detach | Microsoft Docs
+title: IDebugDocumentHelper::D Etach | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 74b6ce51e78cb376263227461d653169fd6a406b
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 876e23d3466352cb244cc445b2435f556bb88160
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58151328"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72576965"
 ---
 # <a name="idebugdocumenthelperdetach"></a>IDebugDocumentHelper::Detach
-Este documento se quita del árbol de documentos.  
+Quita este documento del árbol de documentos.  
   
 ## <a name="syntax"></a>Sintaxis  
   
@@ -44,8 +44,8 @@ HRESULT Detach();
 |`S_OK`|El método se realizó correctamente.|  
   
 ## <a name="remarks"></a>Comentarios  
- Este método quita este documento desde el árbol del documento.  
+ Este método quita este documento del árbol de documentos.  
   
 ## <a name="see-also"></a>Vea también  
- [IDebugDocumentHelper::Attach](../../winscript/reference/idebugdocumenthelper-attach.md)   
+ [IDebugDocumentHelper:: Attach](../../winscript/reference/idebugdocumenthelper-attach.md)    
  [IDebugDocumentHelper (Interfaz)](../../winscript/reference/idebugdocumenthelper-interface.md)

@@ -9,11 +9,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: cf2aba33089623dc98a90c23166291bb2d6e7123
-ms.sourcegitcommit: cdcbf254db737d42275e95de4ffc4f8c14e87e00
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57428653"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62905285"
 ---
 # <a name="getting-started-with-the-snapshot-debugger"></a>Introducción a Snapshot Debugger
 
@@ -33,7 +33,7 @@ Snapshot Debugger recopila instantáneas de la aplicación. Las instantáneas so
 
     Un hexágono púrpura aparecerá donde haga clic en la izquierda.
 
-2. Haga clic en **iniciar colección** para activar el punto de acoplamiento.
+2. Haga clic en **Iniciar colección** para activar el punto de instantánea.
 
 ### <a name="open-a-snapshot"></a>Abrir una instantánea
 
@@ -47,7 +47,7 @@ Snapshot Debugger recopila instantáneas de la aplicación. Las instantáneas so
 
 Desde esta vista, puede desplazar el puntero sobre las variables para ver información sobre datos, use las variables locales, relojes y llamar a la pila de windows y también evaluar expresiones.
 
-El mismo sitio Web está todavía activo y los usuarios finales no se ve afectados. De forma predeterminada, sólo una instantánea es capturada por el punto de acoplamiento. Es decir, una vez que se captura una instantánea, el punto de acoplamiento se desactiva. Si desea capturar otra instantánea en el punto de acoplamiento, puede activar el punto de acoplamiento en haciendo **actualizar colección**.
+El propio sitio web está todavía activo y los usuarios finales no se ve afectados. De forma predeterminada, sólo una instantánea es capturada por el punto de acoplamiento. Es decir, una vez que se captura una instantánea, el punto de acoplamiento se desactiva. Si desea capturar otra instantánea en el punto de instantánea, puede volver a activar el punto de instantánea si hace clic en **Actualizar colección**.
 
 ### <a name="set-a-logpoint"></a>Establecer un punto de registro
 
@@ -57,7 +57,7 @@ El mismo sitio Web está todavía activo y los usuarios finales no se ve afectad
 
     ![Condiciones de punto de acoplamiento](../media/snapshot-startpage-logpoint.png)
 
-3. En el **mensaje** , escriba un mensaje de registro que desea registrar. También puede evaluar las variables en el mensaje del registro si se colocan dentro de llaves.
+3. En el **mensaje** , escriba un mensaje de registro que desea registrar. También puede evaluar las variables del mensaje de registro si se colocan entre llaves.
 
     Si elige **enviar a la ventana de salida**, aparece el mensaje en la ventana de herramientas de diagnóstico cuando se alcanza el punto de registro.
 

@@ -16,12 +16,12 @@ caps.latest.revision: 36
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 0533ed4a4d1fc45b41f1e324b087cc0e249e1083
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 5617dc6cbe4b7ba096afe1f308d06e7f4aaf9c6a
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60100461"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63439663"
 ---
 # <a name="walkthrough-find-a-memory-leak-javascript"></a>Tutorial: Buscar pérdidas de memoria (JavaScript)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,7 +39,7 @@ Se aplica a Windows y Windows Phone] (.. /Image/windows_and_phone_content.png "w
 2. Elija **JavaScript** en el panel izquierdo. A continuación, elija **Windows**, **Windows 8**y luego **Universal** o **Aplicaciones Windows Phone**.  
   
     > [!IMPORTANT]
-    >  Los resultados del uso de memoria que se muestran en este tema se prueban con una aplicación de Windows 8.  
+    > Los resultados del uso de memoria que se muestran en este tema se prueban con una aplicación de Windows 8.  
   
 3. Elija la plantilla de proyecto **Aplicación vacía** en el panel central.  
   
@@ -55,7 +55,7 @@ Se aplica a Windows y Windows Phone] (.. /Image/windows_and_phone_content.png "w
     ```  
   
     > [!IMPORTANT]
-    >  Si usa una plantilla de la aplicación universal de Windows 8.1, deberá actualizar el código HTML y CSS en los proyectos .Windows y .WindowsPhone.  
+    > Si usa una plantilla de la aplicación universal de Windows 8.1, deberá actualizar el código HTML y CSS en los proyectos .Windows y .WindowsPhone.  
   
 6. Abre default.css y agrega el código CSS siguiente:  
   
@@ -137,7 +137,7 @@ Se aplica a Windows y Windows Phone] (.. /Image/windows_and_phone_content.png "w
 1. En la barra de herramientas **Depurar** , en la lista **Iniciar depuración** , elige el destino de depuración del proyecto actualizado: los emuladores de Windows Phone o **Simulador**.  
   
    > [!TIP]
-   >  Para una aplicación de la Tienda Windows, también puedes elegir **Equipo local** o **Equipo remoto** en esta lista. Sin embargo, la ventaja de utilizar el emulador o simulador es que puede colocarlo junto a Visual Studio y cambiar fácilmente entre la aplicación en ejecución y el analizador de memoria de JavaScript. Para obtener más información, consulte [Ejecutar aplicaciones de Visual Studio](../debugger/run-store-apps-from-visual-studio.md) y [Ejecutar aplicaciones de la Tienta Windows en una máquina remota](../debugger/run-windows-store-apps-on-a-remote-machine.md).  
+   > Para una aplicación de la Tienda Windows, también puedes elegir **Equipo local** o **Equipo remoto** en esta lista. Sin embargo, la ventaja de utilizar el emulador o simulador es que puede colocarlo junto a Visual Studio y cambiar fácilmente entre la aplicación en ejecución y el analizador de memoria de JavaScript. Para obtener más información, consulte [Ejecutar aplicaciones de Visual Studio](../debugger/run-store-apps-from-visual-studio.md) y [Ejecutar aplicaciones de la Tienta Windows en una máquina remota](../debugger/run-windows-store-apps-on-a-remote-machine.md).  
   
 2. En el menú **Depurar** , elija **Performance Profiler...**(Generador de perfiles de rendimiento...).  
   
@@ -152,7 +152,7 @@ Se aplica a Windows y Windows Phone] (.. /Image/windows_and_phone_content.png "w
     Cuando eliges el botón, el código de control de eventos de default.js funciona de tal modo que producirá una pérdida de memoria. Lo usarás con fines de diagnóstico.  
   
    > [!TIP]
-   >  Al repetir el escenario que deseas probar para una pérdida de memoria se simplifica el filtrado de información que no interesa, como los objetos que se agregan al montón durante la inicialización de la aplicación o cuando se carga una página.  
+   > Al repetir el escenario que deseas probar para una pérdida de memoria se simplifica el filtrado de información que no interesa, como los objetos que se agregan al montón durante la inicialización de la aplicación o cuando se carga una página.  
   
 5. Desde la aplicación en ejecución, cambia a Visual Studio (Alt+Tab).  
   
@@ -171,14 +171,14 @@ Se aplica a Windows y Windows Phone] (.. /Image/windows_and_phone_content.png "w
     ![La instantánea de línea base y la instantánea 2](../profiling/media/js-mem-app-snapshot2.png "JS_Mem_App_Snapshot2")  
   
    > [!NOTE]
-   >  El emulador de Windows Phone no muestra una captura de pantalla de la aplicación cuando se realizó la instantánea.  
+   > El emulador de Windows Phone no muestra una captura de pantalla de la aplicación cuando se realizó la instantánea.  
   
 9. Cambia a la aplicación y vuelve a elegir el botón **Leak Memory** .  
   
 10. Cambia a Visual Studio y elige **Tomar instantánea de montón** por tercera vez.  
   
     > [!TIP]
-    >  Al tomar una tercera instantánea en este flujo de trabajo, puedes filtrar los cambios de la instantánea de línea de base a la segunda instantánea que no estén asociados con pérdidas de memoria. Por ejemplo, puede haber cambios esperados, como la actualización de encabezados y pies de página en una página. Esto generará algunos cambios en cuanto al uso de la memoria, pero puede que no estén relacionados con pérdidas de memoria.  
+    > Al tomar una tercera instantánea en este flujo de trabajo, puedes filtrar los cambios de la instantánea de línea de base a la segunda instantánea que no estén asociados con pérdidas de memoria. Por ejemplo, puede haber cambios esperados, como la actualización de encabezados y pies de página en una página. Esto generará algunos cambios en cuanto al uso de la memoria, pero puede que no estén relacionados con pérdidas de memoria.  
   
      En esta ilustración se muestra la instantánea 2 y la instantánea 3.  
   
@@ -191,7 +191,7 @@ Se aplica a Windows y Windows Phone] (.. /Image/windows_and_phone_content.png "w
     - El tamaño del montón (indicado por la flecha arriba de color rojo a la izquierda) ha aumentado en varios kB en comparación con el de la instantánea 1.  
   
       > [!IMPORTANT]
-      >  Los valores de uso de memoria exactos para el tamaño del montón dependen del destino de depuración.  
+      > Los valores de uso de memoria exactos para el tamaño del montón dependen del destino de depuración.  
   
     - El número de objetos del montón (indicado por la flecha arriba de color rojo a la derecha) ha aumentado con respecto al de la instantánea 1. Se agregó un objeto (+1) y no se quitó ninguno (-0).  
   
@@ -222,7 +222,7 @@ Se aplica a Windows y Windows Phone] (.. /Image/windows_and_phone_content.png "w
       Cierto conocimiento de la aplicación Ayuda en este momento: Elegir el **Leak Memory** botón debería quitar un elemento DIV y agregarse un elemento, por lo que el código no parece estar trabajando directamente (es decir, pierde memoria). En la sección siguiente se explica cómo solucionar esto.  
   
     > [!TIP]
-    >  A veces, la ubicación de un objeto con respecto al objeto `Global` puede ayudar a identificar ese objeto. Para ello, abre el menú contextual del identificador y elige **Mostrar en vista de raíces**.  
+    > A veces, la ubicación de un objeto con respecto al objeto `Global` puede ayudar a identificar ese objeto. Para ello, abre el menú contextual del identificador y elige **Mostrar en vista de raíces**.  
   
 ## <a name="FixingMemory"></a> Corregir el problema de memoria  
   

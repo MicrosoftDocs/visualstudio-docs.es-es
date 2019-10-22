@@ -11,12 +11,12 @@ ms.assetid: db7592c0-1273-4843-9617-6e2ddabb6ca8
 caps.latest.revision: 17
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: bf0d5e29138f27956dff52571296395507d44976
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 6afcd708ac50a46ceb3359f0d2c0821e3b788f47
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60055423"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65696103"
 ---
 # <a name="registering-single-file-generators"></a>Registro de generadores de un solo archivo
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -53,7 +53,7 @@ Para que estén disponibles en una herramienta personalizada [!INCLUDE[vsprvs](.
          Obligatorio. Indica si los tipos de los archivos generados por esta herramienta personalizada están disponibles para los diseñadores visuales. El valor de este parámetro debe ser (cero) 0 para tipos no están disponibles para los diseñadores visuales o 1 (uno) para los tipos disponibles para los diseñadores visuales.  
   
     > [!NOTE]
-    >  Debe registrar la herramienta personalizada por separado para cada idioma para el que desea que la herramienta personalizada esté disponible.  
+    > Debe registrar la herramienta personalizada por separado para cada idioma para el que desea que la herramienta personalizada esté disponible.  
   
      Por ejemplo, el MSDataSetGenerator registra a sí mismo una vez para cada idioma:  
   
@@ -79,4 +79,4 @@ Para que estén disponibles en una herramienta personalizada [!INCLUDE[vsprvs](.
  [Implementar generadores de un solo archivo](../../extensibility/internals/implementing-single-file-generators.md)   
  [Determinar el Namespace predeterminado de un proyecto](../../misc/determining-the-default-namespace-of-a-project.md)   
  [Exposición de tipos a los diseñadores visuales](../../extensibility/internals/exposing-types-to-visual-designers.md)   
- [Introducción al objeto BuildManager](http://msdn.microsoft.com/50080ec2-c1c9-412c-98ef-18d7f895e7fa)
+ [Introducción al objeto BuildManager](https://msdn.microsoft.com/50080ec2-c1c9-412c-98ef-18d7f895e7fa)

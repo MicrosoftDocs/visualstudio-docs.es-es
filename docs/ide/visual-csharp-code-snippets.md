@@ -12,26 +12,26 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: badd1ef796f1854f07043e775923c4d3f1480624
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 7a785623ea36fe25833f24f760c29f49ca40b459
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55917849"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68918670"
 ---
 # <a name="c-code-snippets"></a>Fragmentos de código de C#
 
 Los fragmentos de código están listos para usar y puede insertarlos rápidamente en el código. Por ejemplo, el fragmento de código `for` crea un bucle `for` vacío. Algunos fragmentos de código son envolventes, lo que permite seleccionar líneas de código y después elegir un fragmento de código que incorpore las líneas de código seleccionadas. Por ejemplo, al seleccionar líneas de código y activar después el fragmento de código `for`, se creará un bucle `for` que incluirá dichas líneas en su bloque. De este modo, los fragmentos de código hacen de la escritura de código de programación un proceso más rápido, sencillo y fiable.
 
- Puede insertar un fragmento de código en la posición del cursor o insertar un fragmento de código envolvente alrededor del código seleccionado actualmente. La herramienta de inserción de fragmento de código se invoca a través de los comandos **Insertar fragmento de código** o **Envolver con** del menú **IntelliSense**, o con los métodos abreviados de teclado **Ctrl**+**K**, **X** o **Ctrl**+**K**, **S** respectivamente.
+Puede insertar un fragmento de código en la posición del cursor o insertar un fragmento de código envolvente alrededor del código seleccionado actualmente. La herramienta de inserción de fragmento de código se invoca a través de los comandos **Insertar fragmento de código** o **Envolver con** del menú **IntelliSense**, o con los métodos abreviados de teclado **Ctrl**+**K**, **X** o **Ctrl**+**K**, **S** respectivamente.
 
- La herramienta de **inserción de fragmento de código** muestra el nombre de todos los fragmentos de código disponibles. La herramienta de inserción de fragmento de código también incluye un cuadro de diálogo de entrada en el que puede escribir el nombre del fragmento de código o parte de este. La herramienta de inserción de fragmento de código resalta la coincidencia más cercana a un nombre de fragmento de código. Si se presiona **TAB** en cualquier momento, se cerrará la herramienta de inserción de fragmento de código y se insertará el fragmento de código seleccionado actualmente. Si se presiona **ESC** o se hace clic con el mouse en el editor de código, se cerrará la herramienta de inserción de fragmento de código sin insertar ningún fragmento de código.
+La herramienta de **inserción de fragmento de código** muestra el nombre de todos los fragmentos de código disponibles. La herramienta de inserción de fragmento de código también incluye un cuadro de diálogo de entrada en el que puede escribir el nombre del fragmento de código o parte de este. La herramienta de inserción de fragmento de código resalta la coincidencia más cercana a un nombre de fragmento de código. Si se presiona **TAB** en cualquier momento, se cerrará la herramienta de inserción de fragmento de código y se insertará el fragmento de código seleccionado actualmente. Si se presiona **ESC** o se hace clic con el mouse en el editor de código, se cerrará la herramienta de inserción de fragmento de código sin insertar ningún fragmento de código.
 
 ## <a name="default-code-snippets"></a>Fragmentos de código predeterminados
 
 Los siguientes fragmentos de código se incluyen en Visual Studio para C# de manera predeterminada.
 
-|Nombre (o acceso directo)|Descripción|Ubicaciones válidas donde se puede insertar el fragmento|
+|Nombre (o acceso directo)|DESCRIPCIÓN|Ubicaciones válidas donde se puede insertar el fragmento|
 | - |-----------------| - |
 |#if|Crea una directiva [#if](/dotnet/csharp/language-reference/preprocessor-directives/preprocessor-if) y una directiva [#endif](/dotnet/csharp/language-reference/preprocessor-directives/preprocessor-endif).|En cualquier lugar.|
 |#region|Crea una directiva [#region](/dotnet/csharp/language-reference/preprocessor-directives/preprocessor-region) y una directiva [#endregion](/dotnet/csharp/language-reference/preprocessor-directives/preprocessor-endregion).|En cualquier lugar.|

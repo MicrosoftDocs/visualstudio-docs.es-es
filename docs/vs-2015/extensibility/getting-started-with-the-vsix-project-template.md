@@ -11,11 +11,11 @@ caps.latest.revision: 26
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: cc3f461c9e7dbdea1fd8481594292a0a247d2173
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60038671"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68204301"
 ---
 # <a name="getting-started-with-the-vsix-project-template"></a>Introducción a la plantilla de proyecto de VSIX
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,7 +39,7 @@ Puede usar la plantilla de proyecto de VSIX para crear una extensión o para una
   
 2. Crear un proyecto VSIX vacío.  
   
-     En el menú **Archivo** , haga clic en **Nuevo** y, a continuación, haga clic en **Proyecto**. Seleccione **Visual Basic** o **Visual C#**. En el nodo seleccionado, seleccione **extensibilidad**y, a continuación, seleccione **proyecto VSIX**.  
+     En el menú **Archivo** , haga clic en **Nuevo** y, a continuación, haga clic en **Proyecto**. Seleccione **Visual Basic** o **Visual C#** . En el nodo seleccionado, seleccione **extensibilidad**y, a continuación, seleccione **proyecto VSIX**.  
   
 3. Agregue el archivo .zip al proyecto. Establezca su **Copy to Output Directory** propiedad `Copy Always`.  
   

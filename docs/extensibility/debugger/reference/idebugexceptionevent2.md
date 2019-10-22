@@ -7,17 +7,17 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugExceptionEvent2 interface
 ms.assetid: 53d32e59-a84b-4710-833e-c5ab08100516
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ffab06f0c0c97814dc16708e2fec5d1b805b67c2
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 3fd2a449c71b69c654cd19846990f7b722f706de
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56706345"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66325993"
 ---
 # <a name="idebugexceptionevent2"></a>IDebugExceptionEvent2
 El motor de depuración (DE) envía esta interfaz para el Administrador de depuración de la sesión (SDM) cuando se produce una excepción en el programa que se está ejecutando actualmente.

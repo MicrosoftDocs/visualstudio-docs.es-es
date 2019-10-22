@@ -1,5 +1,5 @@
 ---
-title: Filtrar Implementación de proyectos anidados | Documentos de Microsoft
+title: Procedimiento Implementación de proyectos anidados | Documentos de Microsoft
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -11,14 +11,14 @@ ms.assetid: d20b8d6a-f0e0-4115-b3a3-edda893ae678
 caps.latest.revision: 18
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 5100fb42cba7c993861ef5b9fa0682400b0cfa4a
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 427ef425c64323246ffe1141d081fd7d921506a6
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58998206"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63435234"
 ---
-# <a name="how-to-implement-nested-projects"></a>Filtrar Implementar proyectos anidados
+# <a name="how-to-implement-nested-projects"></a>Procedimiento Implementar proyectos anidados
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 Cuando se crea un tipo de proyecto anidado no existe es un varios pasos adicionales que deben implementarse. Un proyecto principal que se tarda en algunas de las mismas responsabilidades que tiene la solución para sus proyectos anidados (secundarios). El proyecto principal es un contenedor de proyectos similares a una solución. En concreto, hay varios eventos que se deben generar la solución y los proyectos primario para crear la jerarquía de proyectos anidados. Estos eventos se describen en el siguiente proceso para la creación de proyectos anidados.  
@@ -28,7 +28,7 @@ Cuando se crea un tipo de proyecto anidado no existe es un varios pasos adiciona
 1. El entorno de desarrollo integrado (IDE) carga la información de inicio y el archivo de proyecto del proyecto principal mediante una llamada a la <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectFactory> interfaz. El proyecto principal se crea y se agrega a la solución.  
   
    > [!NOTE]
-   >  En este momento, es demasiado pronto en el proceso para el proyecto principal crear el proyecto anidado porque se debe crear el proyecto principal antes de que se pueden crear los proyectos secundarios. Siguiendo esta secuencia, el proyecto principal puede aplicar configuraciones a los proyectos secundarios y los proyectos secundarios pueden obtener información acerca de los proyectos principales si es necesario. Esta secuencia es si es necesario en los clientes como control de código fuente (SCC) y el Explorador de soluciones.  
+   > En este momento, es demasiado pronto en el proceso para el proyecto principal crear el proyecto anidado porque se debe crear el proyecto principal antes de que se pueden crear los proyectos secundarios. Siguiendo esta secuencia, el proyecto principal puede aplicar configuraciones a los proyectos secundarios y los proyectos secundarios pueden obtener información acerca de los proyectos principales si es necesario. Esta secuencia es si es necesario en los clientes como control de código fuente (SCC) y el Explorador de soluciones.  
   
     El proyecto principal se debe esperar el <xref:Microsoft.VisualStudio.Shell.Interop.IVsParentProject.OpenChildren%2A> método para ser llamado por el IDE antes de pueda crear su anidados (secundarios) proyecto o proyectos.  
   
@@ -57,7 +57,7 @@ Cuando se crea un tipo de proyecto anidado no existe es un varios pasos adiciona
     Si no existe, el proyecto principal crea un GUID para cada proyecto anidado mediante una llamada a `CoCreateGuid`.  
   
    > [!NOTE]
-   >  `CoCreateGuid` se llama a una API COM cuando es necesario crear un GUID. Para obtener más información, consulte `CoCreateGuid` y GUID en MSDN Library.  
+   > `CoCreateGuid` se llama a una API COM cuando es necesario crear un GUID. Para obtener más información, consulte `CoCreateGuid` y GUID en MSDN Library.  
   
     El proyecto principal almacena este GUID en su archivo de proyecto que va a recuperar la próxima vez que se abre en el IDE. Vea el paso 4 para obtener más información relativa a la llamada de `AddVirtualProjectEX` para recuperar el `guidProjectID` para el proyecto secundario.  
   
@@ -66,7 +66,7 @@ Cuando se crea un tipo de proyecto anidado no existe es un varios pasos adiciona
      Dado que los proyectos primarios y secundarios se crean instancias mediante programación, puede establecer propiedades para proyectos anidados en este momento.  
   
     > [!NOTE]
-    >  No solo recibir la información de contexto desde el proyecto anidado, pero también puede hacer si el proyecto principal tiene cualquier contexto de ese elemento comprobando <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID>. De esa manera, puede agregar atributos adicionales de Ayuda dinámica y las opciones de menú específicas para proyectos anidados individuales.  
+    > No solo recibir la información de contexto desde el proyecto anidado, pero también puede hacer si el proyecto principal tiene cualquier contexto de ese elemento comprobando <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID>. De esa manera, puede agregar atributos adicionales de Ayuda dinámica y las opciones de menú específicas para proyectos anidados individuales.  
   
 10. La jerarquía se crea para su presentación en el Explorador de soluciones con una llamada a la <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy.GetNestedHierarchy%2A> método.  
   

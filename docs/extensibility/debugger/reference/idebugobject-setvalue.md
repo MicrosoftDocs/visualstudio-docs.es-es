@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugObject::SetValue method
 ms.assetid: d652e09c-cdc1-4519-8116-d7c743f5679b
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ccfea65f7f24b3d48fc5ec5d68028c72b9b4eece
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: a9c6590c45027eb3dce28e2dbac182a967e87d59
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56692663"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66318947"
 ---
 # <a name="idebugobjectsetvalue"></a>IDebugObject::SetValue
 Establece el valor del objeto de una serie de bytes consecutiva.
@@ -38,14 +41,12 @@ int SetValue(
 );
 ```
 
-#### <a name="parameters"></a>Parámetros
- `pValue`
+## <a name="parameters"></a>Parámetros
+`pValue`\
+[in] Una matriz de bytes que representa el nuevo valor.
 
- [in] Una matriz de bytes que representa el nuevo valor.
-
- `nSize`
-
- [in] El tamaño del valor en bytes.
+`nSize`\
+[in] El tamaño del valor en bytes.
 
 ## <a name="return-value"></a>Valor devuelto
  Si se realiza correctamente, devuelve S_OK; en caso contrario, devuelve un código de error.

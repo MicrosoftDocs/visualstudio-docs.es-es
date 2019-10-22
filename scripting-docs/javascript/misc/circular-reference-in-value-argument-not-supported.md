@@ -1,5 +1,5 @@
 ---
-title: Referencia circular en un argumento de valor no admitida | Documentos de Microsoft
+title: Referencia circular en el argumento de valor no admitida | Microsoft Docs
 ms.date: 01/18/2017
 ms.prod: visual-studio-windows
 ms.technology: vs-javascript
@@ -15,22 +15,22 @@ caps.latest.revision: 13
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a31b56b4b2d568b3bc3fd59f876f5052b9f6faff
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 542fca58778a7b85b3044ce984b6ea049db12509
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60064003"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72572338"
 ---
 # <a name="circular-reference-in-value-argument-not-supported"></a>Referencia circular en el argumento de valor no admitida
-Se ha intentado invocar `JSON.stringify` con un valor que no es válido. El `value` argumento, matriz u objeto, contiene una referencia circular.  
+Se ha intentado invocar `JSON.stringify` con un valor que no es válido. El argumento `value`, una matriz o un objeto, contiene una referencia circular.  
   
 ### <a name="to-correct-this-error"></a>Para corregir este error  
   
-- Quite el argumento de la referencia circular.  
+- Quite la referencia circular del argumento.  
   
 ## <a name="example"></a>Ejemplo  
- El código en este ejemplo genera un error de tiempo de ejecución porque `john` tiene una referencia a `mary` y `mary` tiene una referencia a `john`. Para quitar la referencia circular, quitar o desactivar la propiedad `brother` desde el `mary` objeto o la `sister` propiedad desde la `john` objeto.  
+ El código de este ejemplo produce un error en tiempo de ejecución porque `john` tiene una referencia a `mary` y `mary` tiene una referencia a `john`. para quitar la referencia circular, quite o anule la propiedad `brother` del objeto `mary` o la propiedad `sister` del objeto `john`.  
   
 ```JavaScript  
 var john = new Object();  
@@ -43,6 +43,6 @@ var error = JSON.stringify(john);
 ```  
   
 ## <a name="see-also"></a>Vea también  
- [Objeto JSON](../../javascript/reference/json-object-javascript.md)   
- [JSON.parse (función)](../../javascript/reference/json-parse-function-javascript.md)   
+ @No__t_1 de [objeto JSON](../../javascript/reference/json-object-javascript.md)  
+ @No__t_1 de la [función JSON. Parse](../../javascript/reference/json-parse-function-javascript.md)  
  [Errores en tiempo de ejecución de JavaScript](../../javascript/reference/javascript-run-time-errors.md)

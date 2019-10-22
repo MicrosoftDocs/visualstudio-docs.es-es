@@ -33,12 +33,12 @@ caps.latest.revision: 40
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 2a8bc2e1f4c78e32db6fa5e09ec50bdd182f4fa6
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: be15b683a6e173d813ea13eaa0cc400a40e68206
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60040969"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65690506"
 ---
 # <a name="managing-exceptions-with-the-debugger"></a>Administración de excepciones con el depurador
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -54,10 +54,10 @@ Una excepción es una indicación de estado de error que se produce mientras se 
 - Si se ha establecido [Just My Code](../debugger/just-my-code.md)y el depurador está configurado para interrumpir la ejecución en cualquier excepción que no esté controlada en el código del usuario.  
   
 > [!NOTE]
->  ASP.NET tiene un controlador de excepciones de nivel superior que muestra las páginas de error en un explorador. No interrumpe la ejecución a menos que **Solo mi código** esté activado. Para obtener un ejemplo, consulta [Setting the debugger to continue on user-unhandled exceptions](../debugger/managing-exceptions-with-the-debugger.md#BKMK_UserUnhandled) a continuación.  
+> ASP.NET tiene un controlador de excepciones de nivel superior que muestra las páginas de error en un explorador. No interrumpe la ejecución a menos que **Solo mi código** esté activado. Para obtener un ejemplo, consulta [Setting the debugger to continue on user-unhandled exceptions](../debugger/managing-exceptions-with-the-debugger.md#BKMK_UserUnhandled) a continuación.  
   
 > [!NOTE]
->  En una aplicación de Visual Basic, el depurador administra todos los errores como excepciones, incluso si se usan controladores de error del tipo “Al ocurrir un error”.  
+> En una aplicación de Visual Basic, el depurador administra todos los errores como excepciones, incluso si se usan controladores de error del tipo “Al ocurrir un error”.  
   
 ## <a name="managing-exceptions-with-the-exception-settings-window"></a>Administrar excepciones con la ventana Configuración de excepciones  
  Mediante la ventana **Configuración de excepciones** se pueden especificar las excepciones (o los conjuntos de excepciones) que provocarán la interrupción del depurador y el momento en que se produce la interrupción. Las excepciones se pueden agregar o eliminar, y también es posible especificar aquellas en las que tendrá lugar la interrupción. Para abrir esta ventana cuando haya abierta una solución, haga clic en **Depurar/Ventanas/Configuración de excepciones**.  
@@ -162,7 +162,7 @@ Una excepción es una indicación de estado de error que se produce mientras se 
  Si desea agregar una excepción a las excepciones de acceso a la memoria de GPU, a las excepciones de JavaScript en tiempo de ejecución o a las excepciones de Win32, deberá incluir el código de error y la descripción.  
   
 > [!TIP]
->  No olvide revisar la ortografía. La ventana **Configuración de excepciones** no comprueba la existencia de una excepción agregada. Por lo tanto, si escribe **Sytem.UriTemplateMatchException**, se creará una entrada para esa excepción (y no para **System.UriTemplateMatchException**).  
+> No olvide revisar la ortografía. La ventana **Configuración de excepciones** no comprueba la existencia de una excepción agregada. Por lo tanto, si escribe **Sytem.UriTemplateMatchException**, se creará una entrada para esa excepción (y no para **System.UriTemplateMatchException**).  
   
  La configuración de excepciones se conserva en el archivo .suo de la solución, por lo que se aplican a una solución concreta. Esta configuración no se puede reutilizar en otras soluciones. Actualmente solo se conservan las excepciones agregadas, no las eliminadas. En otras palabras, puede agregar una excepción, cerrar la solución y volver a abrirla, y la excepción seguirá estando ahí. Pero si elimina una excepción y cierra y vuelve a abrir la solución, volverá a aparecer la excepción.  
   
@@ -186,5 +186,5 @@ public class GenericException<T> : Exception
  [Cómo: Examinar el código del sistema después de una excepción](../debugger/how-to-examine-system-code-after-an-exception.md)   
  [Cómo: Uso de comprobaciones nativas en tiempo de ejecución](../debugger/how-to-use-native-run-time-checks.md)   
  [Uso de tiempo de ejecución comprueba sin la biblioteca de tiempo de ejecución de C](../debugger/using-run-time-checks-without-the-c-run-time-library.md)   
- [Asistente de excepciones](http://msdn.microsoft.com/library/992892ac-9d52-44cc-bf09-b44bfc5befeb)   
+ [Asistente de excepciones](https://msdn.microsoft.com/library/992892ac-9d52-44cc-bf09-b44bfc5befeb)   
  [Conceptos básicos del depurador](../debugger/debugger-basics.md)

@@ -1,5 +1,5 @@
 ---
-title: Solución de problemas y problemas conocidos (Visual Studio Tools para Unity) | Microsoft Docs
+title: Solución de problemas y problemas conocidos (VS Tools for Unity)
 ms.custom: ''
 ms.date: 07/03/2018
 ms.technology: vs-unity-tools
@@ -10,12 +10,12 @@ ms.author: johmil
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: 57249507373199d217079a9b18c483fee9a51098
-ms.sourcegitcommit: 05d104a14ff357d599ff274f97cd59d464ee4a46
+ms.openlocfilehash: d6856ff73f9aab2325a31e164e7983a919097d46
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/03/2019
-ms.locfileid: "58897704"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66261112"
 ---
 # <a name="troubleshooting-and-known-issues-visual-studio-tools-for-unity"></a>Solución de problemas y problemas conocidos (Visual Studio Tools para Unity)
 
@@ -54,7 +54,7 @@ Esto debería resolver el problema. En caso de que siga experimentando el proble
 
 Varios complementos de Unity, por ejemplo, Parse, FMOD, UMP (Universal Media Player), ZFBrowser o Embedded Browser usan subprocesos nativos. Resulta problemático cuando un complemento acaba de asociar un subproceso nativo al runtime, que luego realiza llamadas de bloqueo al sistema operativo. Esto significa que Unity no puede interrumpir ese subproceso del depurador (o recarga del dominio) y deja de responder.
 
-En el caso de FMOD hay una solución alternativa, puede pasar la [marca](https://www.fmod.org/docs/content/generated/FMOD_STUDIO_INITFLAGS.html) de inicialización `FMOD_STUDIO_INIT_SYNCHRONOUS_UPDATE` para deshabilitar el procesamiento asincrónico y realizar todo el procesamiento en el subproceso principal.
+En el caso de FMOD hay una solución alternativa, puede pasar la [marca](https://www.fmod.com/resources/documentation-studio?version=2.0&page=https://fmod.com/resources/documentation-api?version=2.0&page=studio-api-system.html#fmod_studio_initflags) de inicialización `FMOD_STUDIO_INIT_SYNCHRONOUS_UPDATE` para deshabilitar el procesamiento asincrónico y realizar todo el procesamiento en el subproceso principal.
 
 ## <a name="incompatible-project-in-visual-studio"></a>Proyecto no compatible en Visual Studio
 

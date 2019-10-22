@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProcess2::Detach
 ms.assetid: ee2b9084-2db1-4e49-a1d9-387284b7c3f8
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ba166f67ad47da1e219ff767517e9b0664fe12aa
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 3948ecce15b9b2b2e8b3bf974ecc2277d9fa0360
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56713443"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66353196"
 ---
 # <a name="idebugprocess2detach"></a>IDebugProcess2::Detach
 Desasocia al depurador de este proceso separando todos los programas en el proceso.

@@ -9,12 +9,12 @@ caps.latest.revision: 24
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: c1a5e5d8d33fed3c4e6348bcf2598f7093de5c98
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 1eaa3547733432715c5362b20030fe3d4a886900
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60093116"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63444332"
 ---
 # <a name="walkthrough-capturing-graphics-information-programmatically"></a>Tutorial: Captura de información de gráficos mediante programación
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,7 +41,7 @@ Puede utilizar el Diagnóstico de gráficos de [!INCLUDE[vsprvs](../includes/vsp
 - Capturar información de gráficos  
   
 > [!NOTE]
->  Las implementaciones previas de la captura mediante programación dependían de Herramientas remotas para [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] para ofrecer la funcionalidad de captura, pero Windows 8.1 admite la captura directamente con Direct3D 11.2. El resultado es que ya no debe instalar las Herramientas remotas para la captura mediante programación en Windows 8.1.  
+> Las implementaciones previas de la captura mediante programación dependían de Herramientas remotas para [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] para ofrecer la funcionalidad de captura, pero Windows 8.1 admite la captura directamente con Direct3D 11.2. El resultado es que ya no debe instalar las Herramientas remotas para la captura mediante programación en Windows 8.1.  
   
 ### <a name="preparing-your-app-to-use-programmatic-capture"></a>Preparación de la aplicación para el uso de la captura mediante programación  
  Para usar la captura mediante programación en la aplicación, debe incluir los encabezados necesarios. Estos encabezados forman parte del SDK de Windows 8.1.  
@@ -58,10 +58,10 @@ Puede utilizar el Diagnóstico de gráficos de [!INCLUDE[vsprvs](../includes/vsp
     ```  
   
     > [!IMPORTANT]
-    >  No incluya el encabezado archivo vsgcapture.h—which admite captura mediante programación en Windows 8.0 y versiones anteriores, para realizar la captura mediante programación en las aplicaciones de Windows 8.1. Este encabezado es incompatible con DirectX 11.2. Si este archivo se incluye después de que se incluye el encabezado d3d11_2.h, el compilador emite una advertencia. Si se incluye vsgcapture.h antes d3d11_2.h, no se iniciará la aplicación.  
+    > No incluya el encabezado archivo vsgcapture.h—which admite captura mediante programación en Windows 8.0 y versiones anteriores, para realizar la captura mediante programación en las aplicaciones de Windows 8.1. Este encabezado es incompatible con DirectX 11.2. Si este archivo se incluye después de que se incluye el encabezado d3d11_2.h, el compilador emite una advertencia. Si se incluye vsgcapture.h antes d3d11_2.h, no se iniciará la aplicación.  
   
     > [!NOTE]
-    >  Si tiene instalada la versión del SDK de DirectX de junio de 2010 en su equipo y la ruta de acceso de inclusión de su proyecto contiene `%DXSDK_DIR%includex86`, muévalo al final de la ruta de acceso de inclusión. Haga lo mismo para la ruta de la biblioteca.  
+    > Si tiene instalada la versión del SDK de DirectX de junio de 2010 en su equipo y la ruta de acceso de inclusión de su proyecto contiene `%DXSDK_DIR%includex86`, muévalo al final de la ruta de acceso de inclusión. Haga lo mismo para la ruta de la biblioteca.  
   
 #### <a name="windows-phone-81"></a>Windows Phone 8,1  
  Dado que el SDK de Windows Phone 8.1 no incluye el encabezado DXProgrammableCapture.h, deberá definir la `IDXGraphicsAnalysis` usted mismo de la interfaz para que pueda usar el `BeginCapture()` y `EndCapture()` métodos. Incluya los demás encabezados tal y como se describe en la sección anterior.  
@@ -85,7 +85,7 @@ Puede utilizar el Diagnóstico de gráficos de [!INCLUDE[vsprvs](../includes/vsp
  Antes de poder capturar información gráfica desde DirectX 11.2, debe obtener la interfaz de depuración DXGI.  
   
 > [!IMPORTANT]
->  Cuando se usa la captura mediante programación, aun así, debe ejecutar la aplicación en diagnóstico de gráficos (ALT+F5 en [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]) o en el [herramienta de captura de línea de comandos](../debugger/command-line-capture-tool.md).  
+> Cuando se usa la captura mediante programación, aun así, debe ejecutar la aplicación en diagnóstico de gráficos (ALT+F5 en [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]) o en el [herramienta de captura de línea de comandos](../debugger/command-line-capture-tool.md).  
   
 ##### <a name="to-get-the-idxgraphicsanalysis-interface"></a>Cómo obtener la interfaz IDXGraphicsAnalysis  
   
@@ -106,7 +106,7 @@ Puede utilizar el Diagnóstico de gráficos de [!INCLUDE[vsprvs](../includes/vsp
     ```  
   
     > [!NOTE]
-    >  Si `DXGIGetDebugInterface1` devuelve `E_NOINTERFACE` (`error: E_NOINTERFACE No such interface supported`), asegúrese de que la aplicación se esté ejecutando en Diagnóstico de gráficos (Alt+F5 en [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]).  
+    > Si `DXGIGetDebugInterface1` devuelve `E_NOINTERFACE` (`error: E_NOINTERFACE No such interface supported`), asegúrese de que la aplicación se esté ejecutando en Diagnóstico de gráficos (Alt+F5 en [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]).  
   
 ### <a name="capturing-graphics-information"></a>Capturar información de gráficos  
  Tenga en cuenta que tiene una interfaz `IDXGraphicsAnalysis` válida, puede utilizar `BeginCapture` y `EndCapture` para capturar información de gráficos.  
@@ -150,7 +150,7 @@ Puede utilizar el Diagnóstico de gráficos de [!INCLUDE[vsprvs](../includes/vsp
  Otra opción es que [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] instale los componentes necesarios para realizar la captura remota para aplicaciones de 32 bits.  
   
 > [!NOTE]
->  Como la mayoría de las aplicaciones de escritorio para Windows, incluyendo [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], no son compatibles con [!INCLUDE[win8](../includes/win8-md.md)] en dispositivos ARM, utilizar Herramientas remotas para [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] junto con la API de captura mediante programación es la única manera de capturar diagnósticos de gráficos en dispositivos ARM.  
+> Como la mayoría de las aplicaciones de escritorio para Windows, incluyendo [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], no son compatibles con [!INCLUDE[win8](../includes/win8-md.md)] en dispositivos ARM, utilizar Herramientas remotas para [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] junto con la API de captura mediante programación es la única manera de capturar diagnósticos de gráficos en dispositivos ARM.  
   
 ### <a name="preparing-your-app-to-use-programmatic-capture"></a>Preparación de la aplicación para el uso de la captura mediante programación  
  Para utilizar las herramientas de Diagnóstico de gráficos, antes debe capturar la información gráfica en la que se basa. Puede capturar la información mediante programación utilizando la API `CaptureCurrentFrame` .  
@@ -185,13 +185,13 @@ Puede utilizar el Diagnóstico de gráficos de [!INCLUDE[vsprvs](../includes/vsp
   Para [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] aplicaciones, la ubicación del directorio temporal es específica de cada usuario y la aplicación y normalmente se encuentra en una ubicación como C:\users\\*username*\AppData\Local\Packages\\ *nombre de familia de paquete*\TempState\\. Para aplicaciones de escritorio, la ubicación del directorio temporal es específica para cada usuario y normalmente se encuentra en una ubicación como C:\Users\\*username*\AppData\Local\Temp\\.  
   
 > [!NOTE]
->  Para escribir una ubicación concreta, debe tener permisos para escribir en esa ubicación; de lo contrario, se produce un error. Tenga en cuenta que las aplicaciones de [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] son más restringidas que las aplicaciones de escritorio en cuanto a dónde pueden escribir datos y es posible que requieran configuración adicional para escribir en determinadas ubicaciones.  
+> Para escribir una ubicación concreta, debe tener permisos para escribir en esa ubicación; de lo contrario, se produce un error. Tenga en cuenta que las aplicaciones de [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] son más restringidas que las aplicaciones de escritorio en cuanto a dónde pueden escribir datos y es posible que requieran configuración adicional para escribir en determinadas ubicaciones.  
   
 ### <a name="capturing-the-graphics-information"></a>Captura de la información de gráficos  
  Después de preparar la aplicación para la captura mediante programación y opcionalmente configurar la ubicación y el nombre del archivo de registro de gráficos, compile la aplicación y, a continuación, ejecútela o depúrela para capturar datos; no inicie el diagnóstico de gráficos desde [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] cuando utilice la API de captura mediante programación. El registro de gráficos se escribe en la ubicación que usted especifique. Si quiere mantener esta versión del registro, muévala a otra ubicación; de lo contrario, se sobrescribirá cuando vuelva a ejecutar la aplicación.  
   
 > [!TIP]
->  También puede capturar información de gráficos manualmente mientras utiliza la captura mediante programación: con el foco en la aplicación, pulse **Imprimir pantalla**. Puede utilizar esta técnica para capturar información de gráficos adicional que la API de captura mediante programación no capture.  
+> También puede capturar información de gráficos manualmente mientras utiliza la captura mediante programación: con el foco en la aplicación, pulse **Imprimir pantalla**. Puede utilizar esta técnica para capturar información de gráficos adicional que la API de captura mediante programación no capture.  
   
 ## <a name="next-steps"></a>Pasos siguientes  
  Este tutorial le ha mostrado cómo capturar información de gráficos mediante programación. El paso siguiente puede ser:  

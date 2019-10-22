@@ -12,11 +12,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: cbc3edfabe041804a632b919eff4e565be9cc5e3
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56703037"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62848600"
 ---
 # <a name="visual-studio-graphics-diagnostics"></a>Diagnóstico de gráficos de Visual Studio
 Visual Studio*diagnóstico de gráficos* es un conjunto de herramientas para grabar y, a continuación, analizar los problemas de representación y rendimiento en aplicaciones de Direct3D. Diagnóstico de gráficos puede usarse con aplicaciones que se ejecutan localmente en su PC Windows, en un emulador de dispositivos de Windows o en un dispositivo o equipo remoto.
@@ -64,7 +64,7 @@ Visual Studio*diagnóstico de gráficos* es un conjunto de herramientas para gra
 
 ## <a name="related-sections"></a>Secciones relacionadas
 
-| Title | Descripción |
+| Título | Descripción |
 | - | - |
 | [Guía de características del depurador](/visualstudio/debugger/debugger-feature-tour) | Introduce la función de depuración en [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. |
 | [Gráficos de DirectX y juegos](http://go.microsoft.com/fwlink/?LinkId=256498) | Ofrece artículos sobre las tecnologías de gráficos DirectX. |

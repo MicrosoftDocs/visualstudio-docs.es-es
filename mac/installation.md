@@ -1,22 +1,25 @@
 ---
 title: Instalación de Visual Studio 2019 para Mac
 description: Instrucciones sobre cómo instalar Visual Studio 2019 para Mac y los componentes adicionales necesarios para el desarrollo multiplataforma.
-author: conceptdev
-ms.author: crdun
-ms.date: 04/02/2019
+author: asb3993
+ms.author: amburns
+ms.date: 09/18/2019
 ms.technology: vs-ide-install
 ms.assetid: 22B1F2CD-32AE-464D-80AC-C8AB4786B015
 ms.custom: video
-ms.openlocfilehash: 52f9e5f5d21fe69cde613d8e05b365fc8d795dd8
-ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
+ms.openlocfilehash: 3e4a41567b02807dce280426daf59e30ed1876eb
+ms.sourcegitcommit: ea182703e922c74725045afc251bcebac305068a
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "58857325"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71211461"
 ---
 # <a name="install-visual-studio-2019-for-mac"></a>Instalación de Visual Studio 2019 para Mac
 
 Para empezar a desarrollar aplicaciones .NET nativas y multiplataforma en macOS, instale Visual Studio 2019 para Mac siguiendo los pasos que encontrará a continuación.
+
+ > [!div class="button"]
+ > [Descargar Visual Studio para Mac](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=navigation+cta&utm_content=download+vsmac2019)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -24,7 +27,7 @@ Para empezar a desarrollar aplicaciones .NET nativas y multiplataforma en macOS,
 
 Para compilar aplicaciones Xamarin para iOS o macOS, también necesitará lo siguiente:
 
-- Xcode 11.0 o una versión posterior. Por lo general, se recomienda usar la versión estable más reciente.
+- Xcode 10.0 o una versión posterior. Por lo general, se recomienda usar la versión estable más reciente.
 - Un ID de Apple. Si aún no tiene un ID de Apple, puede crearlo en https://appleid.apple.com. Es necesario tener un ID de Apple para la instalación y el inicio de sesión en Xcode.
 
 ## <a name="installation-instructions"></a>Instrucciones de instalación
@@ -32,23 +35,46 @@ Para compilar aplicaciones Xamarin para iOS o macOS, también necesitará lo sig
 1. Descargue el instalador en la [página de descarga de Visual Studio para Mac](https://aka.ms/vsmac).
 2. Una vez completada la descarga, haga clic en **VisualStudioforMacInstaller.dmg** para montar el instalador y ejecútelo haciendo doble clic en el logotipo de flecha:
 
-    [![CHaga clic en la flecha grande para comenzar la instalación.(media/install-installer-sml.png)](media/install-installer.png#lightbox)
+    [![Haga clic en la flecha grande para comenzar la instalación.](media/install-installer-sml.png)](media/install-installer.png#lightbox)
 
 3. Es posible que se muestre una advertencia en la que se indique que la aplicación se ha descargado de Internet. Haga clic en **Abrir**.
 4. Espere mientras el programa de instalación comprueba el sistema:
 
-    [![TEl instalador comprueba si los componentes están instalados en el sistema.(media/install-checking-sml.png)](media/install-checking.png#lightbox)
+    [![El instalador comprueba si los componentes están instalados en el sistema.](media/install-checking-sml.png)](media/install-checking.png#lightbox)
 
 5. Se mostrará una alerta en la que se le solicitará que acepte los términos de licencia y de privacidad. Haga clic en los vínculos para leerlos y, si está de acuerdo, presione **Continuar**:
 
-    [![FHaga clic en los vínculos a los términos de licencia y privacidad y, si está de acuerdo, continúe.(media/install-privacy-sml.png)](media/install-privacy.png#lightbox)
+    [![Haga clic en los vínculos a los términos de licencia y privacidad y, si está de acuerdo, continúe.](media/install-privacy.png)](media/install-privacy.png#lightbox)
 
-6. Se mostrará una lista de las cargas de trabajo disponibles. Seleccione las que quiera usar:
+6. Se mostrará una lista de las cargas de trabajo disponibles. Seleccione los componentes que quiere usar:
 
-    [![CElija las características de carga de trabajo opcionales que quiera instalar.(media/install-selection-sml.png)](media/install-selection.png#lightbox)
+    [![Elija las características de carga de trabajo opcionales que quiera instalar.](media/install-selection.png)](media/install-selection.png#lightbox)
+
+   Si no desea instalar todas las plataformas, utilice la guía siguiente para ayudarle a elegirlas:
+
+
+|Tipo de aplicación  |Destino  |Selección  |Notas  |
+|---------|---------|---------|---------|
+|**Aplicaciones con Xamarin**| Xamarin.Forms|Seleccione las plataformas **Android** e **iOS**. |Necesitará instalar [**Xcode**](https://developer.apple.com/xcode/). |
+||Solo iOS|Seleccione la plataforma **iOS**.|Necesitará instalar [**Xcode**](https://developer.apple.com/xcode/).|
+||Solo Android|Seleccione la plataforma **Android**.|Tenga en cuenta que tendrá que seleccionar también las dependencias pertinentes.|
+||Solo Mac|Seleccione la plataforma **macOS (Cocoa)** .|Necesitará instalar [**Xcode**](https://developer.apple.com/xcode/).|
+|**Aplicaciones .NET Core**|         |Seleccione la plataforma **.NET Core**.|         |
+|**Aplicaciones web de ASP.NET Core**|         |Seleccione la plataforma **.NET Core**.|         |
+|**Funciones de Azure**|         |Seleccione la plataforma **.NET Core**.|         |
+|**Desarrollo de juegos multiplataforma de Unity**|         |No es necesario instalar plataformas adicionales más allá de Visual Studio para Mac.| Consulte la [guía de instalación de Unity](/visualstudio/mac/setup-vsmac-tools-unity) para obtener más información acerca de cómo instalar la extensión de Unity.|
+
 
 7. Después de haber realizado las selecciones, presione el botón **Instalar**.
-8. El instalador mostrará el progreso a medida que se realice la descarga y la instalación de Visual Studio para Mac, así como de las cargas de trabajo seleccionadas. Es posible que se le solicite que indique la contraseña para conceder los privilegios necesarios para la instalación.
+8. El instalador mostrará el progreso a medida que se realice la descarga y la instalación de Visual Studio para Mac, así como de las cargas de trabajo seleccionadas. Se le solicitará que indique la contraseña para conceder los privilegios necesarios para la instalación.
+
+    [![Elija las características de carga de trabajo opcionales que quiera instalar.](media/installation-progress.png)](media/installation-progress.png#lightbox)
+
+9. Una vez instalado, Visual Studio para Mac le pedirá que personalice su instalación, para lo que deberá iniciar sesión y seleccionar los enlaces de teclado que le gustaría usar:
+
+    [![Inicie sesión en el IDE](media/ide-tour-2019-start-signin.png)](media/ide-tour-2019-start-signin.png#lightbox)
+
+    [![Seleccione los métodos abreviados de teclado que le gustaría usar](media/ide-tour-2019-keyboard-shortcut.png)](media/ide-tour-2019-keyboard-shortcut.png#lightbox)
 
 Si tiene problemas de red al instalar un entorno corporativo, revise las instrucciones de [instalación tras un firewall o proxy](https://docs.microsoft.com/visualstudio/mac/installation#install-visual-studio-for-mac-behind-a-firewall-or-proxy-server).
 
@@ -63,7 +89,7 @@ Para instalar Visual Studio para Mac detrás de un firewall, es necesario que de
 
 Configure la red de modo que permita el acceso a las ubicaciones siguientes:
 
-- [Puntos de conexión de Visual Studio](/visualstudio/install/install-visual-studio-behind-a-firewall-or-proxy-server)
+- [Puntos de conexión de Visual Studio](/visualstudio/mac/install-behind-a-firewall-or-proxy-server)
 
 ## <a name="next-steps"></a>Pasos siguientes
 
@@ -76,13 +102,13 @@ La instalación de Visual Studio para Mac le permite empezar a escribir código 
 
 ### <a name="android"></a>Android
 
-1. [Uso del administrador de Android SDK de Xamarin](https://developer.xamarin.com/guides/android/getting_started/installation/android-sdk/?ide=xs)
+1. [Uso del administrador de Android SDK de Xamarin](https://developer.xamarin.com/guides/android/getting_started/installation/android-sdk/?ide=xs)
 2. [Emulador de Android SDK](https://developer.xamarin.com/guides/android/getting_started/installation/android-emulator/)
 4. [Configurar el dispositivo para el desarrollo](https://developer.xamarin.com/guides/android/getting_started/installation/set_up_device_for_development/)
 
 ### <a name="net-core-apps-aspnet-core-web-apps-unity-game-development"></a>Aplicaciones de .NET core, aplicaciones web ASP.NET Core, desarrollo de juegos de Unity
 
-Para otras cargas de trabajo, consulte la página [Cargas de trabajo](/visualstudio/mac/workloads).
+Para otras cargas de trabajo, consulte la página [Cargas de trabajo](workloads.md).
 
 ## <a name="related-video"></a>Vídeo relacionado
 

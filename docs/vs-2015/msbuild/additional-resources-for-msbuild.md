@@ -17,11 +17,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 4ea89855a83cdf01255cacc7c8c639c6fcfe1cc4
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59660468"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68187067"
 ---
 # <a name="additional-resources-for-msbuild"></a>Recursos adicionales de MSBuild
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,7 +40,7 @@ Los siguientes sitios web y foros pueden ayudarle a encontrar respuestas a pregu
  [Foro de MSBuild de Visual Studio](http://go.microsoft.com/fwlink/?LinkId=48931)  
  Un foro de la comunidad dedicado a [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)].  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Otras referencias  
  [MSBuild](msbuild.md)   
  [Conceptos de MSBuild](../msbuild/msbuild-concepts.md)   
  [Referencia de MSBuild](../msbuild/msbuild-reference.md)

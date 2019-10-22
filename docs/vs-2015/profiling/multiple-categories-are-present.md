@@ -14,18 +14,18 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: ba84f3ec67acf44cab35f3c7761159839e4ef5bb
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54769144"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68156116"
 ---
 # <a name="multiple-categories-are-present"></a>Hay múltiples categorías
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Se selecciona una sección que contiene más de un tipo de actividad para un intervalo de tiempo determinado. Observe que se muestran dos colores, uno apilado verticalmente en el otro. Estos colores representan solo las dos actividades principales más frecuentes en el intervalo de tiempo determinado. Las frecuencias de estas dos actividades se muestran relacionadas entre sí como tercios o mitades de la barra vertical. Para ver más detalles, pruebe a acercar esta sección de la vista de subprocesos.  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Otras referencias  
  [Tiempo de ejecución (Vista Subprocesos)](../profiling/execution-time-threads-view.md)   
  [Tiempo de E/S (Vista Subprocesos)](../profiling/i-o-time-threads-view.md)   
  [Tiempo de administración de la memoria](../profiling/memory-management-time.md)   

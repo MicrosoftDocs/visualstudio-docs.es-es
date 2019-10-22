@@ -10,12 +10,12 @@ ms.assetid: 6b151891-c06d-40b1-9867-42298caa8492
 caps.latest.revision: 22
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 4695e5f866ce9161ca9f90a0f39be441f5d71a44
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 4c4278679cabb72e9d06f79c1668e7546f24194d
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60039219"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65703756"
 ---
 # <a name="getting-started-with-language-service-and-editor-extensions"></a>Introducción al servicio de lenguaje y las extensiones de editor
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,18 +25,18 @@ Puede usar las extensiones de editor para agregar características del servicio 
  Para empezar a escribir las extensiones de editor, use las plantillas de proyecto del editor que se instalan como parte del SDK de Visual Studio. El SDK de Visual Studio es un conjunto de herramientas que facilitan el desarrollo de extensiones de Visual Studio mediante paquetes VSPackage o mediante el uso de Managed Extensibility Framework (MEF) descargable.  
   
 > [!NOTE]
->  Para obtener más información sobre el SDK de Visual Studio, consulte [SDK de Visual Studio](../extensibility/visual-studio-sdk.md).  
+> Para obtener más información sobre el SDK de Visual Studio, consulte [SDK de Visual Studio](../extensibility/visual-studio-sdk.md).  
   
  Se recomienda que conozca los siguientes conceptos y tecnologías antes de escribir sus propias extensiones de editor.  
   
 ## <a name="the-windows-presentation-foundation-wpf-and-editor-extensions"></a>The Windows Presentation Foundation (WPF) y extensiones de Editor  
- La interfaz de usuario del editor de Visual Studio (UI) se implementa mediante el uso de Windows Presentation Foundation (WPF). WPF proporciona una experiencia visual enriquecida y un modelo de programación coherente que separa los aspectos visuales del código de la lógica de negocios. Puede usar muchos elementos de WPF y características al crear extensiones de editor. Para obtener más información, consulte [Windows Presentation Foundation](http://msdn.microsoft.com/library/f667bd15-2134-41e9-b4af-5ced6fafab5d).  
+ La interfaz de usuario del editor de Visual Studio (UI) se implementa mediante el uso de Windows Presentation Foundation (WPF). WPF proporciona una experiencia visual enriquecida y un modelo de programación coherente que separa los aspectos visuales del código de la lógica de negocios. Puede usar muchos elementos de WPF y características al crear extensiones de editor. Para obtener más información, consulte [Windows Presentation Foundation](https://msdn.microsoft.com/library/f667bd15-2134-41e9-b4af-5ced6fafab5d).  
   
 ## <a name="the-managed-extensibility-framework-mef-and-editor-extensions"></a>Managed Extensibility Framework (MEF) y extensiones de Editor  
  El editor de Visual Studio usa Managed Extensibility Framework (MEF) para administrar sus componentes y extensiones. MEF también permite a los desarrolladores más fácil crear extensiones para una aplicación host como Visual Studio. En este marco de trabajo, definir una extensión según un contrato MEF y exportarlo como un componente MEF. La aplicación host administra las partes componentes encontrarlos, registrarlos y asegurándose de que se apliquen en el contexto correcto.  
   
 > [!NOTE]
->  Para obtener más información acerca de MEF en el editor, vea [Managed Extensibility Framework en el Editor de](../extensibility/managed-extensibility-framework-in-the-editor.md).  
+> Para obtener más información acerca de MEF en el editor, vea [Managed Extensibility Framework en el Editor de](../extensibility/managed-extensibility-framework-in-the-editor.md).  
   
 ## <a name="visual-studio-editor-extension-points-and-extensions"></a>Puntos de extensión del Editor de Visual Studio y extensiones  
  Puntos de extensión del Editor son componentes de MEF que puede personalizar y ampliar. En algunos casos extender el punto de extensión implementando una interfaz y exportarlo junto con los metadatos correctos. En otros casos simplemente declare una extensión y exportarlo como un tipo determinado.  
@@ -61,7 +61,7 @@ Puede usar las extensiones de editor para agregar características del servicio 
  Cuando se instala una extensión en un equipo, incluyen los archivos binarios y el manifiesto en una subcarpeta de la carpeta que se conoce a Visual Studio.  
   
 > [!WARNING]
->  No tiene que preocuparse por los detalles de los manifiestos y las ubicaciones de implementación si utiliza una de las plantillas de extensibilidad de editor que se incluyen en Visual Studio. Las plantillas contienen todo lo necesario para registrar e implementar una extensión.  
+> No tiene que preocuparse por los detalles de los manifiestos y las ubicaciones de implementación si utiliza una de las plantillas de extensibilidad de editor que se incluyen en Visual Studio. Las plantillas contienen todo lo necesario para registrar e implementar una extensión.  
   
 ## <a name="running-extensions-in-the-experimental-instance"></a>Ejecución de extensiones en la instancia Experimental  
  Puede aislar su versión de Visual Studio mientras desarrolla una extensión mediante la implementación en la siguiente carpeta experimental (en Windows Vista y Windows 7):  
@@ -84,9 +84,9 @@ Puede usar las extensiones de editor para agregar características del servicio 
   
  También puede crear editor de componentes de MEF de una extensión de paquete de Visual Studio. Vea los siguientes tutoriales para obtener más información:  
   
-- [Tutorial: Uso de un comando de Shell con una extensión del Editor](../extensibility/walkthrough-using-a-shell-command-with-an-editor-extension.md)  
+- [Tutorial: Uso de un comando shell con una extensión del editor](../extensibility/walkthrough-using-a-shell-command-with-an-editor-extension.md)  
   
-- [Tutorial: Uso de una tecla de método abreviado con una extensión del Editor](../extensibility/walkthrough-using-a-shortcut-key-with-an-editor-extension.md)  
+- [Tutorial: Uso de una tecla de método abreviado con una extensión del editor](../extensibility/walkthrough-using-a-shortcut-key-with-an-editor-extension.md)  
   
 ## <a name="see-also"></a>Vea también  
  [Servicio de lenguaje y puntos de extensión del editor](../extensibility/language-service-and-editor-extension-points.md)

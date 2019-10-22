@@ -8,12 +8,12 @@ ms.assetid: f3fb5df4-3aae-40e4-9450-bbe15b0c5af5
 caps.latest.revision: 25
 ms.author: crdun
 manager: crdun
-ms.openlocfilehash: a1fc24d27d079576128cf437fb1ee05c2fc78404
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 4e9aa77848c3784b1df7a2c1f32651b8d00e5998
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60081559"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66263385"
 ---
 # <a name="troubleshooting-the-visual-studio-emulator-for-android"></a>Solución de problemas del emulador de Visual Studio para Android
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -21,7 +21,7 @@ ms.locfileid: "60081559"
 Este tema contiene información para ayudarle a resolver problemas que puede experimentar cuando utiliza el Emulador de Visual Studio para Android.
 
 > [!WARNING]
->  Cuando se instala el emulador, el programa de instalación comprueba los requisitos previos para ejecutar el software. Si estos requisitos no se cumplen se muestra una serie de advertencias, pero no se solicita su instalación.
+> Cuando se instala el emulador, el programa de instalación comprueba los requisitos previos para ejecutar el software. Si estos requisitos no se cumplen se muestra una serie de advertencias, pero no se solicita su instalación.
 
  Este tema contiene las siguientes secciones:
 
@@ -70,7 +70,7 @@ Este tema contiene información para ayudarle a resolver problemas que puede exp
  ![Android&#95;Emu&#95;Install&#95;Issue](../cross-platform/media/android-emu-install-issue.png "Android_Emu_Install_Issue")
 
 > [!NOTE]
->  Este mensaje se aplica al emulador de Visual Studio para Android y al emulador de Windows Phone. Windows 8.1 y Windows 10 son compatibles con el emulador.
+> Este mensaje se aplica al emulador de Visual Studio para Android y al emulador de Windows Phone. Windows 8.1 y Windows 10 son compatibles con el emulador.
 
  Si ve este mensaje, consulte [System Requirements for the Visual Studio Emulator for Android](../cross-platform/system-requirements-for-the-visual-studio-emulator-for-android.md) para ver si puede ejecutar el emulador.
 
@@ -143,7 +143,7 @@ Este tema contiene información para ayudarle a resolver problemas que puede exp
 
 - Asegúrese de que se cumplen los requisitos mínimos de hardware y de que la configuración de la BIOS es correcta.
 
-   El emulador e Hyper-V de Windows 8 requieren un procesador de 64 bits con traducción de direcciones de segundo nivel (SLAT). En el caso de Intel, necesita un procesador Core i3, i5 o i7 (o uno de los muchos Xeon). Encontrará una lista de los chips AMD [aquí](http://support.amd.com/en-us).
+   El emulador e Hyper-V de Windows 8 requieren un procesador de 64 bits con traducción de direcciones de segundo nivel (SLAT). En el caso de Intel, necesita un procesador Core i3, i5 o i7 (o uno de los muchos Xeon). Encontrará una lista de los chips AMD [aquí](https://www.amd.com/en/support).
 
   1. Asegúrese de que su equipo cumple los [requisitos del sistema](../cross-platform/system-requirements-for-the-visual-studio-emulator-for-android.md).
 

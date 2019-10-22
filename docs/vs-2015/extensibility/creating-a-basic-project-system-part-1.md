@@ -12,12 +12,12 @@ ms.assetid: 882a10fa-bb1c-4b01-943a-7a3c155286dd
 caps.latest.revision: 48
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 1fcf05377545100dfffe2db2385ea80fef4106eb
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 8304719a4b15b5f23957c99244796999d7b3f55c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60104946"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63439397"
 ---
 # <a name="creating-a-basic-project-system-part-1"></a>Creación de un sistema de proyectos básico, parte 1
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,7 +27,7 @@ En Visual Studio, los proyectos son los contenedores que los desarrolladores usa
  Los proyectos se definen en archivos de proyecto, por ejemplo, un archivo .csproj para un proyecto de Visual C#. Puede crear su propio tipo de proyecto que tiene su propia extensión de nombre de archivo de proyecto. Para obtener más información acerca de los tipos de proyecto, vea [tipos de proyecto](../extensibility/internals/project-types.md).  
   
 > [!NOTE]
->  Si necesita ampliar Visual Studio con un tipo de proyecto personalizado, se recomienda aprovechar el [sistema de proyectos de Visual Studio](https://github.com/Microsoft/VSProjectSystem) que tiene una serie de ventajas con respecto a la creación de un sistema de proyecto desde cero:  
+> Si necesita ampliar Visual Studio con un tipo de proyecto personalizado, se recomienda aprovechar el [sistema de proyectos de Visual Studio](https://github.com/Microsoft/VSProjectSystem) que tiene una serie de ventajas con respecto a la creación de un sistema de proyecto desde cero:  
 > 
 > - Incorporación de más fácil.  Incluso en un sistema de proyectos básico requiere decenas de miles de líneas de código.  Aprovechamiento de CPS reduce el costo de incorporación a unos pocos clics, antes de que esté listo para personalizarlo según sus necesidades.  
 >   - Mantenimiento más sencillo.  Mediante el aprovechamiento de CPS, basta con mantener sus propios escenarios.  Nosotros nos encargaremos de mantenimiento de toda la infraestructura de sistema de proyecto.  
@@ -37,7 +37,7 @@ En Visual Studio, los proyectos son los contenedores que los desarrolladores usa
  En este tutorial se muestra cómo crear un tipo de proyecto que tiene el .myproj de extensión de nombre de archivo de proyecto. En este tutorial adopta el sistema de proyectos de Visual C# existente.  
   
 > [!NOTE]
->  Para obtener un ejemplo extremo a otro de un sistema de proyectos de lenguaje completo, vea el ejemplo de IronPython Deep Dive en [muestras de VSSDK](../misc/vssdk-samples.md).  
+> Para obtener un ejemplo extremo a otro de un sistema de proyectos de lenguaje completo, vea el ejemplo de IronPython Deep Dive en [muestras de VSSDK](../misc/vssdk-samples.md).  
   
  En este tutorial se enseña cómo realizar estas tareas:  
   
@@ -63,7 +63,7 @@ En Visual Studio, los proyectos son los contenedores que los desarrolladores usa
  También debe descargar el código fuente para el [Managed Package Framework for Projects](http://mpfproj12.codeplex.com/). Extraiga el archivo en una ubicación que sea accesible a la solución que se va a crear.  
   
 ## <a name="creating-a-basic-project-type"></a>Creación de un tipo de proyecto básico  
- Cree un proyecto de VSIX de C# denominado **SimpleProject**. (**Archivo, nuevo, proyecto** y, a continuación, **el paquete de Visual Studio C#, extensibilidad,**). Agregar una plantilla de elemento de proyecto de paquete de Visual Studio (en el Explorador de soluciones, haga clic en el nodo del proyecto y seleccione **Agregar / nuevo elemento**, a continuación, vaya a **extensibilidad / paquete de Visual Studio**). Nombre del archivo **SimpleProjectPackage**.  
+ Cree un proyecto de VSIX de C# denominado **SimpleProject**. (**Archivo, nuevo, proyecto** y, a continuación, **el paquete de Visual Studio C#, extensibilidad,** ). Agregar una plantilla de elemento de proyecto de paquete de Visual Studio (en el Explorador de soluciones, haga clic en el nodo del proyecto y seleccione **Agregar / nuevo elemento**, a continuación, vaya a **extensibilidad / paquete de Visual Studio**). Nombre del archivo **SimpleProjectPackage**.  
   
 ## <a name="creating-a-basic-project-template"></a>Creación de una plantilla de proyecto básico  
  Ahora, puede modificar este VSPackage básico para implementar el nuevo tipo de proyecto .myproj. Para crear un proyecto que se basa en el tipo de proyecto .myproj, Visual Studio tiene que saber qué archivos, recursos y referencias para agregar al nuevo proyecto. Para proporcionar esta información, coloque los archivos de proyecto en una carpeta de plantillas de proyecto. Cuando un usuario usa el proyecto .myproj para crear un proyecto, los archivos se copian en el nuevo proyecto.  
@@ -103,7 +103,7 @@ En Visual Studio, los proyectos son los contenedores que los desarrolladores usa
    ```  
   
    > [!IMPORTANT]
-   >  Esto no es la forma final del código Program.cs. los parámetros de reemplazo se tratarán en un paso posterior. Es posible que vea errores de compilación, pero siempre que el archivo **BuildAction** es **contenido**, podrá compilar y ejecutar el proyecto como de costumbre.  
+   > Esto no es la forma final del código Program.cs. los parámetros de reemplazo se tratarán en un paso posterior. Es posible que vea errores de compilación, pero siempre que el archivo **BuildAction** es **contenido**, podrá compilar y ejecutar el proyecto como de costumbre.  
   
 7. Guarde el archivo.  
   
@@ -112,7 +112,7 @@ En Visual Studio, los proyectos son los contenedores que los desarrolladores usa
 9. En el **Projects\SimpleProject** carpeta agregar un archivo XML denominado `SimpleProject.myproj`.  
   
    > [!NOTE]
-   >  La extensión de nombre de archivo para todos los proyectos de este tipo es .myproj. Si desea cambiarla, debe cambiarla en todas partes que se menciona en el tutorial.  
+   > La extensión de nombre de archivo para todos los proyectos de este tipo es .myproj. Si desea cambiarla, debe cambiarla en todas partes que se menciona en el tutorial.  
   
 10. Reemplace el contenido existente con las siguientes líneas.  
   
@@ -269,7 +269,7 @@ En Visual Studio, los proyectos son los contenedores que los desarrolladores usa
         ```  
   
         > [!IMPORTANT]
-        >  No olvide la barra diagonal inversa al final de la ruta de acceso.  
+        > No olvide la barra diagonal inversa al final de la ruta de acceso.  
   
     3. Vuelva a cargar el proyecto.  
   

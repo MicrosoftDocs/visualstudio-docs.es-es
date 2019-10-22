@@ -1,6 +1,6 @@
 ---
 title: Administrar referencias en un proyecto
-ms.date: 04/11/2018
+ms.date: 08/02/2019
 ms.topic: conceptual
 f1_keywords:
 - vs.ProjectPropertiesReferencePaths
@@ -21,12 +21,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d04e5703c96b710208cc1ecc79a169a458463497
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 77b52e66d0278d7e9f8446fe728cca285c8418fa
+ms.sourcegitcommit: a124076dfd6b4e5aecda4d01984fee7b0c034745
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55921060"
+ms.lasthandoff: 08/05/2019
+ms.locfileid: "68787634"
 ---
 # <a name="manage-references-in-a-project"></a>Administrar referencias en un proyecto
 
@@ -38,13 +38,15 @@ Para agregar una referencia, haga clic con el botón derecho en el nodo **Refere
 
 Puede agregar una referencia a los siguientes tipos de componentes y servicios:
 
-- Bibliotecas de clases o ensamblados de .NET Framework
+- Bibliotecas de clases o ensamblados de .NET
 
 - Aplicaciones para UWP
 
 - componentes COM
 
 - Otros ensamblados o bibliotecas de clases de proyectos de la misma solución
+
+- Proyectos compartidos
 
 - servicios Web XML
 
@@ -101,24 +103,28 @@ Si implementa una aplicación que contiene una referencia a un componente person
 
 De forma predeterminada, la propiedad <xref:Microsoft.VisualStudio.VCProjectEngine.VCProjectReference.CopyLocal%2A> está establecida en **False** si el ensamblado o el componente está en la caché global de ensamblados o es un componente del marco de trabajo. De lo contrario, el valor se establece en **True**. Las referencias de proyecto a proyecto siempre se establecen en **True**.
 
-## <a name="reference-a-project-or-assembly-that-targets-a-different-version-of-the-net-framework"></a>Referencia a un proyecto o ensamblado que tenga como destino una versión diferente de .NET Framework
+## <a name="reference-a-project-or-assembly-that-targets-a-different-version-of-net"></a>Hacer referencia a un proyecto o ensamblado que tiene como destino otra versión de .NET
 
-Puede crear aplicaciones que hagan referencia a proyectos o ensamblados destinados a otra versión de .NET Framework. Por ejemplo, se podría crear una aplicación destinada a .NET Framework 4.6 que haga referencia a un ensamblado destinado a .NET Framework 4.5. Si se crea un proyecto destinado a una versión anterior de .NET Framework, no se puede establecer una referencia en ese proyecto a un proyecto o ensamblado destinado a una versión más reciente.
+Puede crear aplicaciones que hagan referencia a proyectos o ensamblados que tengan como destino otra versión de .NET. Por ejemplo, se podría crear una aplicación destinada a .NET Framework 4.6 que haga referencia a un ensamblado destinado a .NET Framework 4.5. Si crea un proyecto destinado a una versión anterior de .NET, no puede establecer una referencia en ese proyecto a un proyecto o ensamblado destinado a una versión más reciente.
 
-Para obtener más información, consulte [Información general sobre la compatibilidad con múltiples versiones](../ide/visual-studio-multi-targeting-overview.md).
+Para obtener más información, vea [Información general sobre destinos de Framework](../ide/visual-studio-multi-targeting-overview.md).
 
 ## <a name="project-to-project-references"></a>Referencias entre proyectos
 
-Las referencias entre proyectos son referencias a proyectos que contienen ensamblados. Puede crearlas en la pestaña **Proyecto** . Visual Studio puede encontrar un ensamblado cuando se le proporciona una ruta de acceso al proyecto.
+Las referencias de proyecto a proyecto son referencias a proyectos que contienen ensamblados. Para crear referencias de proyecto, use la pestaña **Proyectos** del cuadro de diálogo Administrador de referencias. Visual Studio puede encontrar un ensamblado cuando se le proporciona una ruta de acceso al proyecto.
 
 Si tiene un proyecto que genera un ensamblado, debe hacer referencia al proyecto y no usar una referencia de archivo (ver abajo). La ventaja de una referencia de proyecto a proyecto es que crea una dependencia entre los proyectos en el sistema de compilación. El proyecto dependiente se compilará si ha cambiado desde la última vez que se compiló el proyecto que hace referencia. Una referencia a un archivo no crea una dependencia de compilación, por lo que es posible compilar el proyecto que hace referencia sin compilar el proyecto dependiente y la referencia puede quedar obsoleta. (Es decir, el proyecto puede hacer referencia a una versión previamente compilada del proyecto). Esto puede dar lugar a varias versiones de un solo archivo DLL que se requiere en el directorio *bin*, lo cual no es posible. Si se produce este conflicto, verá un mensaje como "Advertencia: la dependencia 'archivo' del proyecto 'proyecto' no se puede copiar en el directorio de ejecución porque sobrescribiría la referencia 'archivo'". Para obtener más información, vea [Solucionar problemas de referencias rotas](../ide/troubleshooting-broken-references.md) y [Cómo: Creación y eliminación de dependencias del proyecto](../ide/how-to-create-and-remove-project-dependencies.md).
 
 > [!NOTE]
 > Se crea una referencia de archivo en lugar de una referencia entre proyectos si la versión de destino de .NET Framework de un proyecto es la versión 4.5, y la del otro proyecto es la versión 2, 3, 3.5 o 4.0.
 
+## <a name="shared-project-references"></a>Referencias de proyectos compartidos
+
+A diferencia de la mayoría de los demás tipos de proyecto, un *proyecto compartido* no tiene ninguna salida binaria. En su lugar, el código se compila en cada proyecto que hace referencia a él. Los [Proyectos compartidos](/xamarin/cross-platform/app-fundamentals/shared-projects?tabs=windows) le permiten escribir código común al que distintos proyectos de aplicaciones hacen referencia. El código se compila como parte de cada proyecto de referencia y puede incluir directivas de compilador para ayudar a incorporar una funcionalidad específica de la plataforma en el código base compartido. Agregue una referencia a un proyecto compartido en la pestaña **Proyectos compartidos** del cuadro de diálogo Administrador de referencias.
+
 ## <a name="file-references"></a>Referencias de archivo
 
-Las referencias a archivos son referencias directas a ensamblados fuera del contexto de un proyecto de Visual Studio. Se crean mediante los comandos de la pestaña **Examinar** del **Administrador de referencias**. Use una referencia de archivo cuando solo tenga un ensamblado o un componente, y no el proyecto que lo crea como salida.
+Las referencias a archivos son referencias directas a ensamblados fuera del contexto de un proyecto de Visual Studio. Se crean mediante la pestaña **Examinar** del cuadro de diálogo Administrador de referencias. Use una referencia de archivo cuando solo tenga un ensamblado o un componente, y no el proyecto que lo crea como salida.
 
 ## <a name="see-also"></a>Vea también
 

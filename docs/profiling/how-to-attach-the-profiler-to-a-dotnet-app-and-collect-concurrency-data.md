@@ -9,18 +9,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 7bf1194b2ffede351dab214c6191a599d725db3b
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 9b4703b2dd86056b2c79b8e50f8169a0b9fd9648
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56597730"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63431528"
 ---
 # <a name="how-to-attach-the-profiler-to-a-net-framework-stand-alone-application-to-collect-concurrency-data-by-using-the-command-line"></a>Procedimiento para asociar el generador de perfiles a una aplicación independiente de .NET Framework para recopilar datos de simultaneidad mediante la línea de comandos
 En este artículo se describe cómo utilizar las herramientas de línea de comandos de las Herramientas de generación de perfiles de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] para adjuntar el generador de perfiles a una aplicación independiente (cliente) de .NET Framework en ejecución y recopilar datos de simultaneidad de proceso y subproceso.
 
 > [!NOTE]
->  Para obtener la ruta de acceso a las herramientas de generación de perfiles, vea [Tutorial: Uso de las API del generador de perfiles](../profiling/walkthrough-using-profiler-apis.md). En equipos de 64 bits, están disponibles las dos versiones de las herramientas, la de 64 bits y la de 32 bits. Para utilizar las herramientas de línea de comandos del generador de perfiles, debe agregar la ruta de acceso de las herramientas a la variable de entorno PATH de la ventana del símbolo del sistema o agregarla al propio comando. Para más información, vea [Especificar la ruta de acceso a las herramientas de línea de comandos](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md).
+> Para obtener la ruta de acceso a las herramientas de generación de perfiles, vea [Tutorial: Uso de las API del generador de perfiles](../profiling/walkthrough-using-profiler-apis.md). En equipos de 64 bits, están disponibles las dos versiones de las herramientas, la de 64 bits y la de 32 bits. Para utilizar las herramientas de línea de comandos del generador de perfiles, debe agregar la ruta de acceso de las herramientas a la variable de entorno PATH de la ventana del símbolo del sistema o agregarla al propio comando. Para más información, vea [Especificar la ruta de acceso a las herramientas de línea de comandos](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md).
 
  Mientras el generador de perfiles está adjunto a la aplicación, puede pausar y reanudar la recolección de datos. Para finalizar una sesión de generación de perfiles, el generador de perfiles no debe estar ya asociado a la aplicación y debe cerrarse explícitamente.
 
@@ -28,9 +28,9 @@ En este artículo se describe cómo utilizar las herramientas de línea de coman
 
 #### <a name="to-attach-the-profiler-to-a-running-net-framework-application"></a>Para adjuntar el Generador de perfiles a una aplicación .NET Framework en ejecución
 
-1.  Abra una ventana de símbolo del sistema.
+1. Abra una ventana de símbolo del sistema.
 
-2.  Inicie el generador de perfiles. Tipo:
+2. Inicie el generador de perfiles. Tipo:
 
      [VSPerfCmd](../profiling/vsperfcmd.md) **/start:concurrency  /output:** `OutputFile` [`Options`]
 
@@ -44,24 +44,24 @@ En este artículo se describe cómo utilizar las herramientas de línea de coman
     |[/automark](../profiling/automark.md) **:** `Interval`|Utilizar solo con **/wincounter**. Especifica el número de milisegundos entre eventos de recopilación de contadores de rendimiento de Windows. El valor predeterminado es 500 ms.|
     |[/events](../profiling/events-vsperfcmd.md) **:** `Config`|Especifica un evento de Seguimiento de eventos para Windows (ETW) que se va a recopilar durante la generación de perfiles. Los eventos ETW se recopilan en un archivo (.etl) independiente.|
 
-3.  Inicie la aplicación de destino de la manera habitual.
+3. Inicie la aplicación de destino de la manera habitual.
 
-4.  Adjunte el generador de perfiles a la aplicación de destino. Tipo:
+4. Adjunte el generador de perfiles a la aplicación de destino. Tipo:
 
      **VSPerfCmd /attach:** `PID` [**/lineoff**] [**/targetclr:**`Version`]
 
-    -   `PID` especifica el identificador de proceso de la aplicación de destino. Puede ver los identificadores de todos los procesos que se están ejecutando en el Administrador de tareas de Windows.
+    - `PID` especifica el identificador de proceso de la aplicación de destino. Puede ver los identificadores de todos los procesos que se están ejecutando en el Administrador de tareas de Windows.
 
-    -   [/lineoff](../profiling/lineoff.md) deshabilita la recopilación de datos de número de línea.
+    - [/lineoff](../profiling/lineoff.md) deshabilita la recopilación de datos de número de línea.
 
-    -   [/targetclr](../profiling/targetclr.md) **:** `Version` especifica la versión de Common Language Runtime (CLR) para generar perfiles cuando se carga más de una versión del runtime en una aplicación. Opcional.
+    - [/targetclr](../profiling/targetclr.md) **:** `Version` especifica la versión de Common Language Runtime (CLR) para generar perfiles cuando se carga más de una versión del runtime en una aplicación. Opcional.
 
 ## <a name="control-data-collection"></a>Controlar la recopilación de datos
  Mientras se ejecuta la aplicación de destino, puede controlar la recolección de datos iniciando o deteniendo la escritura de los datos en el archivo con las opciones de *VSPerfCmd.exe*. Al controlar la recopilación de datos, puede recopilar datos de una parte específica de la ejecución de un programa, como por ejemplo el inicio o el cierre de la aplicación.
 
 #### <a name="to-start-and-stop-data-collection"></a>Para iniciar y detener la recolección de datos
 
--   Los siguientes pares de opciones de *VSPerfCmd.exe* inician y detienen la recopilación de datos. Especifique cada opción en una línea de comandos diferente. Puede activar y desactivar la recolección de datos varias veces.
+- Los siguientes pares de opciones de *VSPerfCmd.exe* inician y detienen la recopilación de datos. Especifique cada opción en una línea de comandos diferente. Puede activar y desactivar la recolección de datos varias veces.
 
     |Opción|Descripción|
     |------------|-----------------|
@@ -74,14 +74,14 @@ En este artículo se describe cómo utilizar las herramientas de línea de coman
 
 #### <a name="to-end-a-profiling-session"></a>Para finalizar una sesión de generación de perfiles
 
-1.  Siga uno de estos procedimientos para desasociar el generador de perfiles de la aplicación de destino.
+1. Siga uno de estos procedimientos para desasociar el generador de perfiles de la aplicación de destino.
 
-    -   Escriba **VSPerfCmd /detach**
+    - Escriba **VSPerfCmd /detach**
 
          o bien
 
-    -   Cierre la aplicación de destino.
+    - Cierre la aplicación de destino.
 
-2.  Cierre el generador de perfiles. Tipo:
+2. Cierre el generador de perfiles. Tipo:
 
      VSPerfCmd[/shutdown](../profiling/shutdown.md)

@@ -1,5 +1,5 @@
 ---
-title: IMachineDebugManagerCookie (interfaz) | Documentos de Microsoft
+title: Interfaz Imachinedebugmanagercookie (| Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -13,30 +13,30 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: fdc02498360f2e3900012166474c5d1e35abd6ee
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 6b39c286f389c99187b0f3250fc68af92ff5dcc8
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58151055"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72573883"
 ---
 # <a name="imachinedebugmanagercookie-interface"></a>IMachineDebugManagerCookie (Interfaz)
-Similar a la `IMachineDebugManager` interfaz, el `IMachineDebugManagerCookie` interfaz admite cookies de depuración.  
+De forma similar a la interfaz de `IMachineDebugManager`, la interfaz de `IMachineDebugManagerCookie` admite cookies de depuración.  
   
- Esta interfaz (junto con el `IDebugCookie` interfaz) permitir secuencias de comandos ejecutar en un proceso de depuración de secuencias de comandos sin necesidad de que el depurador realizar un seguimiento de esas secuencias de comandos.  
+ Esta interfaz (junto con la interfaz `IDebugCookie`) permite que los scripts se ejecuten en un proceso del depurador de scripts sin necesidad de que el depurador realice un seguimiento de esos scripts.  
   
- Llama un depurador de script el `IDebugCookie::SetDebugCookie` método en el proceso de depurar Manager (PDM). A continuación, el PDM envía esta cookie junto con cualquier solicitud para agregar o quitar una aplicación de script a o desde la máquina depurar Manager (MDM), mediante los métodos de la `IMachineDebugManagerCookie` interfaz. La MDM, a continuación, notifica a cada depurador del cambio, excepto aquel que tiene dicha cookie.  
+ Un depurador de script llama al método `IDebugCookie::SetDebugCookie` en el administrador de depuración de proceso (PDM). A continuación, el PDM envía esta cookie junto con cualquier solicitud para agregar o quitar una aplicación de script a o desde el administrador de depuración de máquina (MDM), mediante los métodos de la interfaz de `IMachineDebugManagerCookie`. A continuación, MDM notifica cada depurador del cambio, excepto para el que tiene esa cookie.  
   
- Además de los métodos heredados de `IUnknown`, el `IMachineDebugManagerCookie` interfaz expone los métodos siguientes.  
+ Además de los métodos heredados de `IUnknown`, la interfaz de `IMachineDebugManagerCookie` expone los métodos siguientes.  
   
 ## <a name="methods-in-vtable-order"></a>Métodos en orden de Vtable  
   
 |Método|Descripción|  
 |------------|-----------------|  
-|[IMachineDebugManagerCookie::AddApplication](../../winscript/reference/imachinedebugmanagercookie-addapplication.md)|Agrega a la que se ejecuta una aplicación de lista de aplicaciones.|  
+|[IMachineDebugManagerCookie::AddApplication](../../winscript/reference/imachinedebugmanagercookie-addapplication.md)|Agrega una aplicación a la lista de aplicaciones en ejecución.|  
 |[IMachineDebugManagerCookie::EnumApplications](../../winscript/reference/imachinedebugmanagercookie-enumapplications.md)|Devuelve un enumerador de la lista actual de aplicaciones en ejecución.|  
-|[IMachineDebugManagerCookie::RemoveApplication](../../winscript/reference/imachinedebugmanagercookie-removeapplication.md)|Quita el que se ejecuta en una aplicación lista de aplicaciones.|  
+|[IMachineDebugManagerCookie::RemoveApplication](../../winscript/reference/imachinedebugmanagercookie-removeapplication.md)|Quita una aplicación de la lista de aplicaciones en ejecución.|  
   
 ## <a name="see-also"></a>Vea también  
- [IMachineDebugManager (interfaz)](../../winscript/reference/imachinedebugmanager-interface.md)   
+ @No__t_1 de la [interfaz imachinedebugmanager (](../../winscript/reference/imachinedebugmanager-interface.md)  
  [IDebugCookie (Interfaz)](../../winscript/reference/idebugcookie-interface.md)

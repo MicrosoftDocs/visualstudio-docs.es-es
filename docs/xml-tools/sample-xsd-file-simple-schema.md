@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8f7a4cd8e01f0538e2551b4b7c1c3ad67a221667
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 0228ab75da15099aad3a6f60feca3d71f644b4ff
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55936387"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65455087"
 ---
 # <a name="sample-xsd-file-simple-schema"></a>Archivo XSD de muestra: Esquema simple
 
@@ -45,3 +45,6 @@ El archivo XSD siguiente se usa en numerosos ejemplos de la documentación del D
  </xsd:complexType>
 </xsd:schema>
 ```
+
+> [!NOTE]
+> Las compañías, organizaciones, productos, nombres de dominio, direcciones de correo electrónico, logotipos, personas, lugares y eventos que se citan a modo de ejemplo son ficticios. No se pretende establecer ni se debe inferir ninguna asociación con ninguna empresa, organización, producto, nombre de dominio, dirección de correo electrónico, logotipo, persona, lugar ni evento real.

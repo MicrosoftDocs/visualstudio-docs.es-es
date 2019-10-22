@@ -19,11 +19,11 @@ manager: jillfra
 ms.workload:
 - aspnet
 ms.openlocfilehash: d383c559e605392b01ba2c476fd4ed5ae5d48625
-ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "57526664"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62848389"
 ---
 # <a name="debug-aspnet-or-aspnet-core-apps-in-visual-studio"></a>Depurar aplicaciones ASP.NET o ASP.NET Core en Visual Studio
 
@@ -184,9 +184,9 @@ Hay diferentes maneras de publicar aplicaciones en IIS. Estos pasos muestran có
 
 ## <a name="see-also"></a>Vea también
 - [Depuración ASP.NET: requisitos del sistema](aspnet-debugging-system-requirements.md)
-- [Ejecución del proceso de trabajo en una cuenta de usuario](how-to-run-the-worker-process-under-a-user-account.md)
-- [Búsqueda del nombre de un proceso de ASP.NET](how-to-find-the-name-of-the-aspnet-process.md)
+- [Cómo: Ejecutar el proceso de trabajo en una cuenta de usuario](how-to-run-the-worker-process-under-a-user-account.md)
+- [Cómo: Busque el nombre del proceso de ASP.NET](how-to-find-the-name-of-the-aspnet-process.md)
 - [Depuración de aplicaciones web implementadas](debugging-deployed-web-applications.md)
-- [Tutorial: Depurar un formulario web](walkthrough-debugging-a-web-form.md)
-- [Depuración de excepciones de ASP.NET](how-to-debug-aspnet-exceptions.md)
-- [Depurar aplicaciones web: errores y solución de problemas](debugging-web-applications-errors-and-troubleshooting.md)
+- [Tutorial: Depurar un formulario web Forms](walkthrough-debugging-a-web-form.md)
+- [Cómo: Depurar excepciones de ASP.NET](how-to-debug-aspnet-exceptions.md)
+- [Depuración de aplicaciones web: errores y solución de problemas](debugging-web-applications-errors-and-troubleshooting.md)

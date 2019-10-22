@@ -1,5 +1,5 @@
 ---
-title: Filtrar Crear un sombreador Lambert básico
+title: Procedimiento Crear un sombreador Lambert básico
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: ec5c10fb-9600-4240-8280-d59451ea1d68
@@ -8,14 +8,14 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 595f44403d5dc8062bea86504a74ed0d7e0ee565
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 662409f3655e23589a2416bb15572eb3df41bcb6
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55913670"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68924436"
 ---
-# <a name="how-to-create-a-basic-lambert-shader"></a>Filtrar Crear un sombreador Lambert básico
+# <a name="how-to-create-a-basic-lambert-shader"></a>Procedimiento Crear un sombreador Lambert básico
 
 En este artículo se muestra cómo usar el Diseñador de sombras y el lenguaje DGSL (Directed Graph Shader Language) para crear un sombreador de iluminación que implementa el modelo de iluminación de Lambert clásico.
 
@@ -40,15 +40,15 @@ Antes de empezar, asegúrese de que se muestran la ventana **Propiedades** y el 
 > [!NOTE]
 > Para demostrar mejor el efecto del sombreador en esta ilustración, se especificó un color naranja mediante el parámetro **MaterialDiffuse** del sombreador. Un juego o una aplicación puede usar este parámetro para proporcionar un valor de color único para cada objeto. Para obtener información sobre los parámetros de materiales, vea la sección Vista previa de sombreadores en [Diseñador de sombras](../designers/shader-designer.md).
 
- ![Gráfico de sombreador y vista previa de su efecto.](../designers/media/digit-lambert-effect-graph.png)
+![Gráfico de sombreador y vista previa de su efecto.](../designers/media/digit-lambert-effect-graph.png)
 
- Es posible que algunas formas proporcionen mejores vistas previas para algunos sombreadores. Para más información sobre cómo obtener una vista previa de los sombreadores en el Diseñador de sombras, vea la sección Vista previa de sombreadores en [Diseñador de sombras](../designers/shader-designer.md).
+Es posible que algunas formas proporcionen mejores vistas previas para algunos sombreadores. Para más información sobre cómo obtener una vista previa de los sombreadores en el Diseñador de sombras, vea la sección Vista previa de sombreadores en [Diseñador de sombras](../designers/shader-designer.md).
 
- La siguiente ilustración muestra el sombreador descrito en este documento aplicado a un modelo 3D.
+La siguiente ilustración muestra el sombreador descrito en este documento aplicado a un modelo 3D.
 
- ![Iluminación Lambert aplicada a un modelo.](../designers/media/digit-lambert-effect-result.png)
+![Iluminación Lambert aplicada a un modelo.](../designers/media/digit-lambert-effect-result.png)
 
- Para obtener más información sobre cómo aplicar un sombreador a un modelo 3D, vea [Cómo: Aplicar un sombreador a un modelo en 3D](../designers/how-to-apply-a-shader-to-a-3-d-model.md).
+Para obtener más información sobre cómo aplicar un sombreador a un modelo 3D, vea [Cómo: Aplicar un sombreador a un modelo en 3D](../designers/how-to-apply-a-shader-to-a-3-d-model.md).
 
 ## <a name="see-also"></a>Vea también
 

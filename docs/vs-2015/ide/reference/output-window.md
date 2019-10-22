@@ -17,12 +17,12 @@ caps.latest.revision: 35
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 9b373551444087ad8ff3789d927267a30efd5e4d
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 7173abd87a9e7345e7d7caee02d2bb333f507514
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59668917"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65696057"
 ---
 # <a name="output-window"></a>Resultados (Ventana)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -30,7 +30,7 @@ ms.locfileid: "59668917"
 La Ventana de **salida** puede mostrar mensajes de estado de diversas características del entorno de desarrollo integrado (IDE). Para abrir la ventana de **Salida**, en la barra de menús, elija **View/Output** (Vista/Salida) (o haga clic en CTRL + ALT + O).  
   
 > [!WARNING]
->  La Ventana de salida no aparece en el menú Ver en las ediciones Express de Visual Studio. Para activarla, use la combinación de teclas CTRL + ALT + O.  
+> La Ventana de salida no aparece en el menú Ver en las ediciones Express de Visual Studio. Para activarla, use la combinación de teclas CTRL + ALT + O.  
   
 ## <a name="toolbar"></a>Barra de herramientas  
  **Mostrar resultados desde**  
@@ -61,14 +61,14 @@ La Ventana de **salida** puede mostrar mensajes de estado de diversas caracterí
   
  También puede programar sus propias aplicaciones para que escriban mensajes de diagnóstico en tiempo de ejecución en un panel de **salida**. Para hacer esto, use los miembros de la clase <xref:System.Diagnostics.Debug> o de la clase <xref:System.Diagnostics.Trace> en el espacio de nombres <xref:System.Diagnostics> de la biblioteca de clases de .NET Framework. Los miembros de la clase <xref:System.Diagnostics.Debug> muestran la salida al compilar configuraciones de depuración de la solución o proyecto; los miembros de la clase <xref:System.Diagnostics.Trace> muestran la salida al compilar las configuraciones de depuración o lanzamiento. Para obtener más información, consulte [Mensajes de diagnóstico en la ventana de resultados](../../debugger/diagnostic-messages-in-the-output-window.md).  
   
- En [!INCLUDE[vcprvc](../../includes/vcprvc-md.md)], puede crear pasos y eventos de compilación personalizados cuyas advertencias y errores se muestran y enumeran en el panel de **salida**. Al pulsar F1 en una línea de salida, puede mostrar un tema de ayuda adecuado. Para obtener más información, consulte [Dar formato a la presentación de un paso de compilación personalizada o un evento de compilación](http://msdn.microsoft.com/library/92ad3e38-24d7-4b89-90e6-5a16f5f998da).  
+ En [!INCLUDE[vcprvc](../../includes/vcprvc-md.md)], puede crear pasos y eventos de compilación personalizados cuyas advertencias y errores se muestran y enumeran en el panel de **salida**. Al pulsar F1 en una línea de salida, puede mostrar un tema de ayuda adecuado. Para obtener más información, consulte [Dar formato a la presentación de un paso de compilación personalizada o un evento de compilación](https://msdn.microsoft.com/library/92ad3e38-24d7-4b89-90e6-5a16f5f998da).  
   
 ## <a name="scrolling-behavior"></a>Comportamiento de desplazamiento  
  Si usa el desplazamiento automático en la ventana de salida y después se desplaza mediante las teclas de dirección o el mouse, el desplazamiento automático se detiene. Para reanudar el desplazamiento automático, pulse CTRL + Fin.  
   
 ## <a name="see-also"></a>Vea también  
  [Mensajes de diagnóstico en la ventana de resultados](../../debugger/diagnostic-messages-in-the-output-window.md)   
- [Cómo: Control de la ventana de salida](http://msdn.microsoft.com/library/91aebd15-8854-4a7a-9f7d-57376fb4e858)   
+ [Cómo: Control de la ventana de salida](https://msdn.microsoft.com/library/91aebd15-8854-4a7a-9f7d-57376fb4e858)   
  [Compilar y generar](../../ide/compiling-and-building-in-visual-studio.md)   
  [Descripción de las configuraciones de compilación](../../ide/understanding-build-configurations.md)   
- [Información general de la biblioteca de clases](http://msdn.microsoft.com/library/7e4c5921-955d-4b06-8709-101873acf157)
+ [Información general de la biblioteca de clases](https://msdn.microsoft.com/library/7e4c5921-955d-4b06-8709-101873acf157)

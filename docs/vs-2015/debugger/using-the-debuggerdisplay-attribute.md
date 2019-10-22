@@ -18,12 +18,12 @@ caps.latest.revision: 50
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 729639c99747ce7f7358ad3c4b0b6374bd64d010
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: aba6feb17a4e7bd4cabfe40bd45480a0f7a9f552
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58997788"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65683939"
 ---
 # <a name="using-the-debuggerdisplay-attribute"></a>Usar el atributo DebuggerDisplay
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,7 +37,7 @@ El atributo <xref:System.Diagnostics.DebuggerDisplayAttribute> controla la forma
  La evaluación de esta llamada implícita a `ToString()` por parte del depurador depende de un valor de configuración del usuario del cuadro de diálogo **Herramientas / Opciones/ Depuración** . Visual Basic no implementa esta evaluación implícita de `ToString()` .  
   
 > [!IMPORTANT]
->  Si la casilla **Mostrar la estructura de los objetos en ventanas de variables** está seleccionada en el cuadro de diálogo **Herramientas / Opciones/ Depuración** , se omite el atributo `DebuggerDisplay` .  
+> Si la casilla **Mostrar la estructura de los objetos en ventanas de variables** está seleccionada en el cuadro de diálogo **Herramientas / Opciones/ Depuración** , se omite el atributo `DebuggerDisplay` .  
   
  En la tabla siguiente se muestran algunos posibles usos del atributo `DebuggerDisplay` y resultados de ejemplo.  
   
@@ -180,4 +180,4 @@ class MyHashtable
 ```  
   
 ## <a name="see-also"></a>Vea también  
- [Usar el atributo DebuggerTypeProxy](../debugger/using-debuggertypeproxy-attribute.md) [mejorar la depuración con los atributos de visualización del depurador](http://msdn.microsoft.com/library/72bb7aa9-459b-42c4-9163-9312fab4c410)
+ [Usar el atributo DebuggerTypeProxy](../debugger/using-debuggertypeproxy-attribute.md) [mejorar la depuración con los atributos de visualización del depurador](https://msdn.microsoft.com/library/72bb7aa9-459b-42c4-9163-9312fab4c410)

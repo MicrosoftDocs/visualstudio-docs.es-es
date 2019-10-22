@@ -7,22 +7,22 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5ce26aeb22ca34a6cb01608e89dba4666e30f846
-ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
+ms.openlocfilehash: 79bebcdaaf2d970f019da12141275358120ac70e
+ms.sourcegitcommit: 9753c7544cec852ca5efd0834e0956d9e53a5734
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57223603"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67043403"
 ---
 # <a name="how-to-view-and-edit-code-by-using-peek-definition-altf12"></a>Procedimiento para ver y editar código mediante Ver la definición (Alt+F12)
 
 Puede usar el comando **Ver la definición** para ver y editar código sin salir del código que está escribiendo. **Ver la definición** e **Ir a definición** muestran la misma información, pero **Ver la definición** la muestra en una ventana emergente, mientras que **Ir a definición** muestra el código en una ventana de código independiente. **Ir a definición** hace que el contexto (es decir, la ventana de código activa, la línea actual y la posición del cursor) cambie a la ventana de código de definición. Con **Ver la definición**, puede ver y editar la definición y moverse por el archivo de definición manteniendo su lugar en el archivo de código original.
 
-Se puede usar **Ver la definición** con código de C#, Visual Basic y C++. En Visual Basic, **Ver la definición** muestra un vínculo al **Examinador de objetos** para los símbolos que no tienen metadatos de definición (por ejemplo, los tipos de .NET Framework integrados).
+Se puede usar **Ver la definición** con código de C#, Visual Basic y C++. En Visual Basic, **Ver la definición** muestra un vínculo al **Examinador de objetos** para los símbolos que no tienen metadatos de definición (por ejemplo, los tipos de .NET integrados).
 
-## <a name="working-with-peek-definition"></a>Trabajar con Ver la definición
+## <a name="use-peek-definition"></a>Usar Ver la definición
 
-### <a name="to-open-a-peek-definition-window"></a>Para abrir una ventana Ver la definición
+### <a name="open-a-peek-definition-window"></a>Abrir una ventana Ver la definición
 
 1. Para ver una definición, seleccione **Ver la definición** en el menú contextual del tipo o el miembro que quiera explorar. Si la opción está habilitada, también puede ver una definición con el mouse, si presiona **Ctrl** (u otro modificador) y hace clic en el nombre del miembro. También puede presionar **Alt**+**F12** en el teclado.
 
@@ -75,7 +75,7 @@ Puede usar estos métodos abreviados de teclado con la ventana **Ver la definici
 |Abrir la ventana de definición|**Alt**+**F12**|
 |Cerrar la ventana de definición|**Esc**|
 |Promover la ventana de definición a una pestaña de documento normal|**Mayús**+**Alt**+**Inicio**|
-|Navegar entre ventanas de definición|**Ctrl**+**Alt**+**-** y **Ctrl**+**Alt**+**=**|
+|Navegar entre ventanas de definición|**Ctrl**+**Alt**+ **-** y **Ctrl**+**Alt**+ **=**|
 |Navegar entre varios resultados|**F8** y **Mayús**+**F8**|
 |Alternar entre la ventana del editor de código y la ventana de definición|**Mayús**+**Esc**|
 
@@ -86,4 +86,4 @@ Puede usar estos métodos abreviados de teclado con la ventana **Ver la definici
 
 - [Navegación en el código](../ide/navigating-code.md)
 - [Ir a definición y Ver la definición](../ide/go-to-and-peek-definition.md)
-- [Sugerencias de productividad](../ide/productivity-tips-for-visual-studio.md)
+- [Características de productividad en Visual Studio](../ide/productivity-features.md)

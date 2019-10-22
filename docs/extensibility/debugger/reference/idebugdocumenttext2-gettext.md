@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugDocumentText2::GetText
 ms.assetid: f8c15a58-da77-473e-a721-7a094e306c63
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3eb4eae82dd11d58734ed114886c9ec121b60b69
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: d2906c4421c570542579d0326167cd6ecbafb395
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56678363"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66330654"
 ---
 # <a name="idebugdocumenttext2gettext"></a>IDebugDocumentText2::GetText
 Recupera el texto de la posición especificada en el documento.
@@ -42,22 +45,18 @@ int GetText(
 );
 ```
 
-#### <a name="parameters"></a>Parámetros
-`pos`
+## <a name="parameters"></a>Parámetros
+`pos`\
+[in] Un [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md) estructura que indica la ubicación del texto que se va a recuperar.
 
- [in] Un [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md) estructura que indica la ubicación del texto que se va a recuperar.
+`cMaxChars`\
+[in] El número máximo de caracteres del texto que se va a recuperar.
 
-`cMaxChars`
+`pText`\
+[in, out] Un puntero a un búfer que se va a rellenar con el texto deseado. Este búfer debe ser capaz de contener al menos `cMaxChars` número de caracteres anchos.
 
- [in] El número máximo de caracteres del texto que se va a recuperar.
-
-`pText`
-
- [in, out] Un puntero a un búfer que se va a rellenar con el texto deseado. Este búfer debe ser capaz de contener al menos `cMaxChars` número de caracteres anchos.
-
-`pcNumChars`
-
- [out] Devuelve el número de caracteres que se recuperan realmente.
+`pcNumChars`\
+[out] Devuelve el número de caracteres que se recuperan realmente.
 
 ## <a name="return-value"></a>Valor devuelto
 Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.

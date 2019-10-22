@@ -1,5 +1,5 @@
 ---
-title: Código de Error SCRIPT_E_REPORTED | Microsoft Docs
+title: Código de error SCRIPT_E_REPORTED | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -11,15 +11,15 @@ caps.latest.revision: 3
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 4466869f4da6a0efe20955af6e6ef35ca9479f6c
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 0cc754d8a50e35e2a2731e6b036cd777795f9283
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58150404"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72574417"
 ---
-# <a name="scriptereported-error-code"></a>SCRIPT_E_REPORTED (Código de error)
-El motor de scripting ha notificado una excepción no controlada al host a través de [IActiveScriptSite::OnScriptError](../../winscript/reference/iactivescriptsite-onscripterror.md). El host puede omitir este error.  
+# <a name="script_e_reported-error-code"></a>SCRIPT_E_REPORTED (Código de error)
+El motor de scripting ha detectado una excepción no controlada al host a través de [IActiveScriptSite:: OnScriptError](../../winscript/reference/iactivescriptsite-onscripterror.md). El host puede omitir este error.  
   
 ## <a name="syntax"></a>Sintaxis  
   

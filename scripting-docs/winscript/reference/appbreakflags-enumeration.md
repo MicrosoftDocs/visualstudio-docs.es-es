@@ -1,5 +1,5 @@
 ---
-title: APPBREAKFLAGS (enumeración) | Documentos de Microsoft
+title: Enumeración APPBREAKFLAGS (| Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,12 +17,12 @@ caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 0862e6fc670be6cd3d3ca9fbf67f453aa0772a90
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: de6efbc20843fcaa73965334c18cf0e5c2a0abab
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58158989"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72572663"
 ---
 # <a name="appbreakflags-enumeration"></a>APPBREAKFLAGS (Enumeración)
 Indican el estado de depuración actual de aplicaciones y subprocesos.  
@@ -37,19 +37,19 @@ enum enum_APPBREAKFLAGS{APPBREAKFLAG_DEBUGGER_BLOCK= 0x00000001,APPBREAKFLAG_DEB
   
 |Miembro|Valor|Descripción|  
 |------------|-----------|-----------------|  
-|APPBREAKFLAG_DEBUGGER_BLOCK|0x00000001|Motor de lenguaje se debe interrumpir inmediatamente en todos los subprocesos con BREAKREASON_DEBUGGER_BLOCK.|  
-|APPBREAKFLAG_DEBUGGER_HALT|0x00000002|Motor de lenguaje se debe interrumpir inmediatamente con BREAKREASON_DEBUGGER_HALT.|  
-|APPBREAKFLAG_STEP|0x00010000|Motor de lenguaje se debe interrumpir inmediatamente en el subproceso de ejecución paso a paso con BREAKREASON_STEP.|  
+|APPBREAKFLAG_DEBUGGER_BLOCK|0x00000001|El motor de lenguaje debe interrumpirse inmediatamente en todos los subprocesos con BREAKREASON_DEBUGGER_BLOCK.|  
+|APPBREAKFLAG_DEBUGGER_HALT|0x00000002|El motor de lenguaje debe interrumpirse inmediatamente con BREAKREASON_DEBUGGER_HALT.|  
+|APPBREAKFLAG_STEP|0x00010000|El motor de lenguaje debe interrumpirse inmediatamente en el subproceso de ejecución con BREAKREASON_STEP.|  
 |APPBREAKFLAG_NESTED|0x00020000|La aplicación está en ejecución anidada en un punto de interrupción.|  
-|APPBREAKFLAG_STEPTYPE_SOURCE|0x00000000|El depurador avanza un paso en el nivel de origen.|  
-|APPBREAKFLAG_STEPTYPE_BYTECODE|0x00100000|El depurador avanza un paso en el nivel de código de bytes.|  
-|APPBREAKFLAG_STEPTYPE_MACHINE|0x00200000|El depurador está aumentando el nivel de equipo.|  
-|APPBREAKFLAG_STEPTYPE_MASK|0x00F00000|Máscara de factorización de los tipos de paso.|  
+|APPBREAKFLAG_STEPTYPE_SOURCE|0x00000000|El depurador se está ejecutando paso a paso en el nivel de origen.|  
+|APPBREAKFLAG_STEPTYPE_BYTECODE|0x00100000|El depurador se está ejecutando paso a paso en el nivel de código de bytes.|  
+|APPBREAKFLAG_STEPTYPE_MACHINE|0x00200000|El depurador se está ejecutando paso a paso en el nivel de equipo.|  
+|APPBREAKFLAG_STEPTYPE_MASK|0x00F00000|Máscara para factorizar los tipos de paso.|  
 |APPBREAKFLAG_IN_BREAKPOINT|0x80000000|Un punto de interrupción está en curso.|  
   
 ## <a name="remarks"></a>Comentarios  
- Algunas marcas de especifican que los motores de lenguaje deberían interrumpir en la siguiente oportunidad, mientras que otras marcas de especifican el modo de ejecución paso a paso del depurador.  
+ Algunas marcas especifican que los motores de idioma se deben interrumpir en la siguiente oportunidad, mientras que otros marcadores especifican el modo de ejecución del depurador.  
   
 ## <a name="see-also"></a>Vea también  
- [Active Script Debugger (constantes), enumeraciones y estructuras](../../winscript/reference/active-script-debugger-constants-enumerations-and-structures.md)   
+ [Constantes, enumeraciones y estructuras de Active script debugger](../../winscript/reference/active-script-debugger-constants-enumerations-and-structures.md)    
  [BREAKREASON (Enumeración)](../../winscript/reference/breakreason-enumeration.md)

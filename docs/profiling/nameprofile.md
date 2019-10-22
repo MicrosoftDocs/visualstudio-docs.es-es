@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5e531c0a4b2f5eca69675c7347fc275697eba7e1
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: e0d4cdfd393961566a0aef0c649e6ff788fdc8ac
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56634492"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63403614"
 ---
 # <a name="nameprofile"></a>NameProfile
 La función `NameProfile` asigna una cadena al subproceso o el proceso especificado.
@@ -81,7 +81,7 @@ PROFILE_COMMAND_STATUS PROFILERAPI NameProfile(
  Si especifica un proceso o subproceso distinto del actual, debe asegurarse de que se ha inicializado y empezó a ejecutarse antes de asignarle el nombre. En caso contrario, se produce un error en el método NameProfile.
 
 > [!IMPORTANT]
->  Las funciones CreateProcess() y CreateThread() de la API pueden devolver un valor antes de que se inicialice el subproceso o el proceso.
+> Las funciones CreateProcess() y CreateThread() de la API pueden devolver un valor antes de que se inicialice el subproceso o el proceso.
 
 ## <a name="net-framework-equivalent"></a>Equivalente de .NET Framework
  *Microsoft.VisualStudio.Profiler.dll*

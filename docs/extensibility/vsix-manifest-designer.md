@@ -9,17 +9,17 @@ helpviewer_keywords:
 - vsix manifest
 - manifest designer
 ms.assetid: 5a691e77-cf91-430d-90ea-361d9031ef83
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 85b9d20dd67ff11f5bded7060440f2e768a205a9
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 7c13d32ab6b91dce94bab307f6bbc6744f9c17a0
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56722868"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66322827"
 ---
 # <a name="vsix-manifest-designer"></a>Diseñador de manifiestos de VSIX
 Modifica un archivo de manifiesto de paquete VSIX, que establece el comportamiento de instalación para una extensión de Visual Studio.
@@ -29,7 +29,7 @@ Modifica un archivo de manifiesto de paquete VSIX, que establece el comportamien
  Para abrir el **el Diseñador de manifiestos VSIX**, busque un *source.extension.vsixmanifest* archivo **el Explorador de soluciones**y abra el archivo. Si el archivo no contiene XML válido, no se abrirá el Diseñador de manifiestos.
 
 > [!NOTE]
->  El *source.extension.vsixmanifest* se enviaran resultado a archivo *extension.vsixmanifest* cuando se compila el paquete.
+> El *source.extension.vsixmanifest* se enviaran resultado a archivo *extension.vsixmanifest* cuando se compila el paquete.
 
 ## <a name="uielement-list"></a>Lista de UIElement
  El **el Diseñador de manifiestos VSIX** contiene cuatro secciones que corresponden a estos elementos de nivel superior del esquema:
@@ -60,15 +60,15 @@ Modifica un archivo de manifiesto de paquete VSIX, que establece el comportamien
 
   **Licencia** especifica el archivo de texto que contiene la licencia de usuario, si hay alguno.
 
-  **Icono** especifica el archivo de gráficos (*.png*, *.bmp*, *.jpeg*, *.ico*) que contiene el icono que se mostrará en **Administrador de extensiones**, si hay un icono. La imagen del icono debe ser 32 x 32 píxeles o se cambia el tamaño a dichas dimensiones. Si no se especifica ningún icono, **Administrador de extensiones** utiliza un icono predeterminado.
+  **Icono** especifica el archivo de gráficos ( *.png*, *.bmp*, *.jpeg*, *.ico*) que contiene el icono que se mostrará en **Administrador de extensiones**, si hay un icono. La imagen del icono debe ser 32 x 32 píxeles o se cambia el tamaño a dichas dimensiones. Si no se especifica ningún icono, **Administrador de extensiones** utiliza un icono predeterminado.
 
-  **Imagen de vista previa** especifica el archivo de gráficos (*.png*, *.bmp*, *.jpeg*, *.ico*) que contiene la imagen de vista previa se mostrará en **Administrador de extensiones**, si hay una imagen de vista previa. La imagen de vista previa debe ser 200 x 200 píxeles. Si no se especifica ninguna imagen de vista previa, **Administrador de extensiones** usa una imagen predeterminada.
+  **Imagen de vista previa** especifica el archivo de gráficos ( *.png*, *.bmp*, *.jpeg*, *.ico*) que contiene la imagen de vista previa se mostrará en **Administrador de extensiones**, si hay una imagen de vista previa. La imagen de vista previa debe ser 200 x 200 píxeles. Si no se especifica ninguna imagen de vista previa, **Administrador de extensiones** usa una imagen predeterminada.
 
   **Etiquetas** agrega etiquetas de texto que se usará para las sugerencias de búsqueda.
 
-  **Notas de la versión** especifica un archivo (*.txt*, *.rtf*) que contiene las notas de versión. También utiliza la dirección URL de un sitio web que muestra las notas de la versión.
+  **Notas de la versión** especifica un archivo ( *.txt*, *.rtf*) que contiene las notas de versión. También utiliza la dirección URL de un sitio web que muestra las notas de la versión.
 
-  **Guía de introducción** especifica un archivo (*.txt*, *.rtf*) que contiene información sobre cómo usar la extensión o el contenido del paquete VSIX. Esta guía aparece una vez completada la instalación de la extensión. También toma la dirección URL de un sitio Web que muestra a la guía.
+  **Guía de introducción** especifica un archivo ( *.txt*, *.rtf*) que contiene información sobre cómo usar la extensión o el contenido del paquete VSIX. Esta guía aparece una vez completada la instalación de la extensión. También toma la dirección URL de un sitio Web que muestra a la guía.
 
   **URL de información adicional** especifica la dirección URL de un sitio Web que contiene información adicional sobre el producto.
 
@@ -94,7 +94,7 @@ Modifica un archivo de manifiesto de paquete VSIX, que establece el comportamien
 
   **Este VSIX está instalado para todos los usuarios (requiere elevación en la instalación)** si selecciona esta casilla, la extensión se instala para todos los usuarios; de lo contrario, se instala solo para el usuario actual.
 
-  **Este VSIX está instalado por Windows Installer** si selecciona esta casilla, la extensión se instala mediante el instalador de Windows (*.msi* archivo); en caso contrario, se instala como un paquete VSIX típico (*.vsix*  archivo).
+  **Este VSIX está instalado por Windows Installer** si selecciona esta casilla, la extensión se instala mediante el instalador de Windows ( *.msi* archivo); en caso contrario, se instala como un paquete VSIX típico ( *.vsix*  archivo).
 
   El **activos** pestaña contiene los siguientes controles.
 

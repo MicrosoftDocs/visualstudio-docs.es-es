@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 287f906ab947f549748865899a5ced52e0c53562
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.openlocfilehash: d6603ca7ffc39ecc819fb2e54024776760ccfa60
+ms.sourcegitcommit: 08c144d290da373df841f04fc799e3133540a541
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56693053"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72536066"
 ---
 # <a name="debugger-settings-and-preparation"></a>Preparación y configuración de la depuración
 En esta sección se describe la configuración de las propiedades relacionadas con el depurador y la preparación necesaria para depurar el programa con el depurador de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] . Si crea el programa en [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] mediante las plantillas de proyecto, esta configuración se habilita automáticamente en la configuración Debug.
@@ -31,19 +31,22 @@ En esta sección se describe la configuración de las propiedades relacionadas c
  Para más información, vea [Cómo: Establecer configuraciones Debug y Release](../debugger/how-to-set-debug-and-release-configurations.md).
 
 ## <a name="in-this-section"></a>En esta sección
- [Configuración del proyecto del depurador](../debugger/debugger-project-settings.md) explica cómo especificar la configuración del depurador, cómo establecer la depuración y configuración de lanzamiento y cómo administrar símbolos y código fuente. También describe la configuración de proyecto adecuada para la configuración de depuración de C++, C#, F# y Visual Basic, al igual que los proyectos web.
 
- [Depurar proyectos DLL](../debugger/debugging-dll-projects.md) describe la configuración recomendada de proyecto DLL de depuración proyectos, cómo depurar desde un proyecto DLL, cómo depurar en modo mixto y cómo depurar una biblioteca de controles Web de código administrado.
+ [Cómo: especificar la configuración del depurador](../debugger/how-to-specify-debugger-settings.md) Describe la configuración del depurador en el cuadro de diálogo **Opciones** .
+ 
+ [Configuración del proyecto de depurador](../debugger/debugger-project-settings.md) Explica cómo especificar la configuración del depurador, cómo establecer configuraciones de depuración y de lanzamiento, y cómo administrar símbolos y código fuente. También describe la configuración de proyecto adecuada para la configuración de depuración de C++, C#, F# y Visual Basic, al igual que los proyectos web.
 
- [Proyectos de consola](../debugger/debugging-preparation-console-projects.md) proporciona instrucciones sobre cómo configurar proyectos de consola para la depuración.
+ [Depurar proyectos dll](../debugger/debugging-dll-projects.md) Describe la configuración de proyecto recomendada para depurar proyectos DLL, cómo depurar desde un proyecto DLL, cómo depurar en modo mixto y cómo depurar una biblioteca de controles Web de código administrado.
 
- [Cómo: depurar un ejecutable no forma parte de una solución de Visual Studio](../debugger/how-to-debug-an-executable-not-part-of-a-visual-studio-solution.md) se explica cómo depurar un ejecutable que no se crea como parte de un proyecto de Visual Studio.
+ [Proyectos de consola](../debugger/debugging-preparation-console-projects.md) Proporciona instrucciones sobre cómo configurar proyectos de consola para la depuración.
 
- [Depurar aplicaciones de 64 bits](../debugger/debug-64-bit-applications.md) describe cómo depurar aplicaciones de 64 bits.
+ [Cómo: depurar un archivo ejecutable que no forma parte de una solución de Visual Studio](../debugger/how-to-debug-an-executable-not-part-of-a-visual-studio-solution.md) Explica cómo depurar un archivo ejecutable que no se crea como parte de un proyecto de Visual Studio.
 
- [Cómo: especificar un .NET Framework versión de depuración](../debugger/how-to-specify-a-dotnet-framework-version-for-debugging.md) se describe cómo establecer una clave del registro para indicar al depurador qué versión debe utilizar.
+ [Depurar aplicaciones de 64 bits](../debugger/debug-64-bit-applications.md) Describe cómo depurar aplicaciones de 64 bits.
+
+ [Cómo: especificar una versión anterior de .NET Framework para la depuración](../debugger/how-to-specify-a-dotnet-framework-version-for-debugging.md) Describe cómo establecer una clave del registro para indicar al depurador qué versión se va a usar.
 
 ## <a name="see-also"></a>Vea también
 - [Seguridad del depurador](../debugger/debugger-security.md)
-- [Depurar en Visual Studio](../debugger/index.md)
+- [Depurar en Visual Studio](../debugger/index.yml)
 - [Primer vistazo al depurador](../debugger/debugger-feature-tour.md)

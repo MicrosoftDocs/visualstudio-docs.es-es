@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - source control packages, about source control packages
 ms.assetid: 60b3326e-e7e2-4729-95fc-b682e7ad5c99
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: fd3e0888cb45facbf2946e6a4656147dab75350e
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: ba0ac240c8b8a93b6afbf1ec7dd580090ee54fd9
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60100494"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66351608"
 ---
 # <a name="determine-whether-to-implement-a-source-control-vspackage"></a>Determinar si se debe implementar un VSPackage de control de código fuente
 Esta sección explican las opciones de los complementos de control de código fuente y control de código fuente VSPackages para extender soluciones y ofrece orientaciones sobre cómo elegir una ruta de acceso adecuada de integración de control de código fuente.

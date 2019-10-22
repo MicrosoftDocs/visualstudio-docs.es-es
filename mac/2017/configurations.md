@@ -5,12 +5,12 @@ author: conceptdev
 ms.author: crdun
 ms.date: 04/14/2017
 ms.assetid: 78107CFA-9308-4293-A92A-9B552A259E15
-ms.openlocfilehash: 7f130f5dec77e0a1965c68cf71e642fdb636832f
-ms.sourcegitcommit: da73f7a0cf1795d5d400c0897ae3326191435dd0
+ms.openlocfilehash: 9902b62b7d62ae2490bc8c32848ffea657f0963d
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/28/2019
-ms.locfileid: "58568877"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67824407"
 ---
 # <a name="understanding-build-configurations"></a>Descripción de las configuraciones de compilación
 
@@ -22,7 +22,7 @@ Cada plataforma tiene configuraciones específicas para su compilación.
 
 ## <a name="solution-configurations"></a>Configuraciones de solución
 
-Del mismo modo que las configuraciones de proyecto, las configuraciones de solución se usan para crear configuraciones personalizadas para un proyecto completo. Con la pestaña  **Asignaciones de configuración**  del elemento  **Compilar > Configuraciones** , puede asignar una configuración de destino para cada elemento de la solución, como se muestra en la imagen siguiente:
+Del mismo modo que las configuraciones de proyecto, las configuraciones de solución se usan para crear configuraciones personalizadas para un proyecto completo. Con la pestaña **Asignaciones de configuración** del elemento **Compilar > Configuraciones**, puede asignar una configuración de destino para cada elemento de la solución, como se muestra en la imagen siguiente:
 
 ![Opciones de asignación de configuración](media/projects-and-solutions-image3.png)
 
@@ -36,7 +36,7 @@ En Visual Studio para Mac, en lugar de establecer un proyecto de inicio, se pued
 
 ![Desplegable de configuración de ejecución](media/projects-and-solutions-image8.png)
 
-Una configuración de ejecución es un conjunto de opciones de ejecución con un nombre y varias configuraciones que se definen en un proyecto para diferentes fines. Las configuraciones de ejecución se definen en el nivel de proyecto, y para cada proyecto ejecutable se crea automáticamente una predeterminada, aunque es posible agregar tantas como sea necesario. Determinados tipos de proyecto generan automáticamente configuraciones de ejecución adicionales. Por ejemplo, los proyectos de watchOS pueden generar  _configuraciones de vista rápida y notificación_.
+Una configuración de ejecución es un conjunto de opciones de ejecución con un nombre y varias configuraciones que se definen en un proyecto para diferentes fines. Las configuraciones de ejecución se definen en el nivel de proyecto, y para cada proyecto ejecutable se crea automáticamente una predeterminada, aunque es posible agregar tantas como sea necesario. Determinados tipos de proyecto generan automáticamente configuraciones de ejecución adicionales. Por ejemplo, los proyectos de watchOS pueden generar _configuraciones de vista rápida y notificación_.
 
 Las configuraciones se pueden compartir con otros desarrolladores (en cuyo caso se almacenarán en el archivo .csproj) o conservarse localmente (en cuyo caso se almacenarán en un archivo .user).
 
@@ -51,21 +51,21 @@ Aquellas actividades distintas a `MainLauncher` deberán tener `Exported=true` a
 En la siguiente lista se proporcionan algunos ejemplos de datos que se podrían incluir en configuraciones de ejecución:
 
 * Proyecto de .NET normal
-    * Aplicación de inicio alternativa
-    * Argumentos de inicio
-    * Directorio de trabajo
-    * Variables de entorno
-    * Opciones del entorno de ejecución Mono (para usarse solo al ejecutar en Mono)
+  * Aplicación de inicio alternativa
+  * Argumentos de inicio
+  * Directorio de trabajo
+  * Variables de entorno
+  * Opciones del entorno de ejecución Mono (para usarse solo al ejecutar en Mono)
 * Proyecto de Android
-    * Punto de entrada (actividad, servicio, receptor)
-    * Datos y argumentos de intención
+  * Punto de entrada (actividad, servicio, receptor)
+  * Datos y argumentos de intención
 * Proyecto de iOS
-    * Modo (Normal, Recuperación de cambios)
+  * Modo (Normal, Recuperación de cambios)
 * Proyecto de extensión de iOS
-    * Aplicación de inicio: predeterminada o personalizada
+  * Aplicación de inicio: predeterminada o personalizada
 * Proyecto de WatchKit
-    * Modo (Vista rápida, Notificación)
-    * Carga de notificaciones
+  * Modo (Vista rápida, Notificación)
+  * Carga de notificaciones
 
 ## <a name="see-also"></a>Vea también
 

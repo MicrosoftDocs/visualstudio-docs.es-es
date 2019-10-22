@@ -10,12 +10,12 @@ ms.assetid: 6e32ed81-c604-4a32-9012-8db3bec7c846
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: bbe6f59bdddb19b236cfba1256324a52765b78a6
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: ac681879e0f7ad0902358be23d74d57ccee406f8
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60103503"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63435981"
 ---
 # <a name="how-to-create-custom-text-markers"></a>Procedimiento Crear marcadores de texto personalizado
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,7 +34,7 @@ Si desea crear un marcador de texto personalizado para enfatizar u organizar el 
   
 1. Cree una entrada del registro de la manera siguiente:  
   
-    HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\*\<Version>* \Text Editor\External Markers\\*\<MarkerGUID>*  
+    HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\ *\<Version>* \Text Editor\External Markers\\ *\<MarkerGUID>*  
   
     <em>\<MarkerGUID ></em>es un `GUID` usado para identificar el marcador que se va a agregar  
   
@@ -43,9 +43,9 @@ Si desea crear un marcador de texto personalizado para enfatizar u organizar el 
     *\<PackageGUID >* es el GUID del VSPackage implementa el objeto de automatización.  
   
    > [!NOTE]
-   >  La ruta de acceso raíz de HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\*\<versión >* puede reemplazarse por una raíz alternativa cuando se inicializa el shell de Visual Studio, para obtener más información, vea [Modificadores de línea de comandos](../extensibility/command-line-switches-visual-studio-sdk.md).  
+   > La ruta de acceso raíz de HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\ *\<versión >* puede reemplazarse por una raíz alternativa cuando se inicializa el shell de Visual Studio, para obtener más información, vea [Modificadores de línea de comandos](../extensibility/command-line-switches-visual-studio-sdk.md).  
   
-2. Cree cuatro valores en HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\*\<versión >* \Text Editor\External marcadores\\*\<MarkerGUID >*  
+2. Cree cuatro valores en HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\ *\<versión >* \Text Editor\External marcadores\\ *\<MarkerGUID >*  
   
    - (Predeterminado)  
   
@@ -93,4 +93,4 @@ Si desea crear un marcador de texto personalizado para enfatizar u organizar el 
  [Uso de marcadores de texto con la API heredada](../extensibility/using-text-markers-with-the-legacy-api.md)   
  [Cómo: Agregar marcadores de texto estándar](../extensibility/how-to-add-standard-text-markers.md)   
  [Cómo: Implementar los marcadores de Error](../extensibility/how-to-implement-error-markers.md)   
- [Cómo: Utilizar marcadores de texto](../extensibility/how-to-use-text-markers.md)
+ [Cómo: Usar marcadores de texto](../extensibility/how-to-use-text-markers.md)

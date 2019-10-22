@@ -1,5 +1,5 @@
 ---
-title: IActiveScriptProfilerControl::StopProfiling | Microsoft Docs
+title: 'Iactivescriptprofilercontrol (:: StopProfiling | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -15,15 +15,15 @@ caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 750693db9aa809e6b3521f0312cebcf45d8d720d
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: da5900678093d57b3c995ac3bca8464ccd612fb2
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58157716"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72571540"
 ---
 # <a name="iactivescriptprofilercontrolstopprofiling"></a>IActiveScriptProfilerControl::StopProfiling
-Detiene la generación de perfiles en el motor de scripting. Este método llama a [IActiveScriptProfilerCallback::Shutdown](../../winscript/reference/iactivescriptprofilercallback-shutdown.md) en el objeto de generador de perfiles y, a continuación, lo libera.  
+Detiene la generación de perfiles en el motor de scripting. Este método llama a [iactivescriptprofilercallback (:: Shutdown](../../winscript/reference/iactivescriptprofilercallback-shutdown.md) en el objeto de generador de perfiles y, a continuación, lo libera.  
   
 ## <a name="syntax"></a>Sintaxis  
   
@@ -34,7 +34,7 @@ HRESULT StopProfiling(
   
 #### <a name="parameters"></a>Parámetros  
  `hrShutdownReason`  
- [in] El valor HRESULT que se pasa como parámetro a la [IActiveScriptProfilerCallback::Shutdown](../../winscript/reference/iactivescriptprofilercallback-shutdown.md) método del objeto del generador de perfiles.  
+ de HRESULT que se va a pasar como parámetro al método [iactivescriptprofilercallback (:: Shutdown](../../winscript/reference/iactivescriptprofilercallback-shutdown.md) del objeto del generador de perfiles.  
   
 ## <a name="return-value"></a>Valor devuelto  
  Devuelve un valor HRESULT. Los valores posibles son los siguientes:  
@@ -42,7 +42,7 @@ HRESULT StopProfiling(
 |Valor devuelto|Significado|  
 |------------------|-------------|  
 |`S_OK`|El método se realizó correctamente.|  
-|`ACTIVPROF_E_PROFILER_ABSENT`|No está habilitada la generación de perfiles.|  
+|`ACTIVPROF_E_PROFILER_ABSENT`|La generación de perfiles no está habilitada.|  
   
 ## <a name="see-also"></a>Vea también  
  [IActiveScriptProfilerControl (Interfaz)](../../winscript/reference/iactivescriptprofilercontrol-interface.md)

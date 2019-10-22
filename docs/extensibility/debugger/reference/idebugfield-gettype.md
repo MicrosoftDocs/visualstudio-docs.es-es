@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugField::GetType method
 ms.assetid: b3cdec9f-ef7b-44d0-a775-d17ef7eae968
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8887be18d59d331913a1978d915b91f9c996b8f0
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: c052f4b4c45080d8292dd8787c44777818bae585
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56692169"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66333163"
 ---
 # <a name="idebugfieldgettype"></a>IDebugField::GetType
 Este método obtiene el tipo de campo.
@@ -36,10 +39,9 @@ int GetType(
 );
 ```
 
-#### <a name="parameters"></a>Parámetros
- `ppType`
-
- [out] Devuelve el tipo de campo que otra [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) objeto.
+## <a name="parameters"></a>Parámetros
+`ppType`\
+[out] Devuelve el tipo de campo que otra [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) objeto.
 
 ## <a name="return-value"></a>Valor devuelto
  Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.

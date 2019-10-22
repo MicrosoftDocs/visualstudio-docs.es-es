@@ -1,5 +1,5 @@
 ---
-title: IScriptScriptlet::GetEventName | Microsoft Docs
+title: 'Iscriptscriptlet (:: GetEventName | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 56566c85aed88faadf740392ad3ec06aa848431e
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: fc56514800ad8388badf6e13a7fa6761b816969d
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58153804"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72561509"
 ---
 # <a name="iscriptscriptletgeteventname"></a>IScriptScriptlet::GetEventName
-Devuelve el nombre del evento asociado al scriptlet.  
+Devuelve el nombre del evento asociado al Scriptlet.  
   
 ## <a name="syntax"></a>Sintaxis  
   
@@ -37,10 +37,10 @@ HRESULT GetEventName(
   
 #### <a name="parameters"></a>Parámetros  
  `pbstr`  
- [out] Un búfer que contiene el nombre del evento que está asociado el `IScriptScriptlet` objeto.  
+ enuncia Búfer que contiene el nombre de evento asociado al objeto de `IScriptScriptlet`.  
   
 ## <a name="return-value"></a>Valor devuelto  
- Una clase `HRESULT`. Entre los valores posibles se incluyen los que se indican en la tabla siguiente, entre otros.  
+ Interfaz `HRESULT`. Entre los valores posibles se incluyen los que se indican en la tabla siguiente, entre otros.  
   
 |Valor|Descripción|  
 |-----------|-----------------|  

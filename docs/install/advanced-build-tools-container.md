@@ -1,7 +1,7 @@
 ---
 title: Ejemplo avanzado de contenedores
 description: ''
-ms.date: 04/18/2018
+ms.date: 07/03/2019
 ms.topic: conceptual
 ms.assetid: e03835db-a616-41e6-b339-92b41d0cfc70
 author: heaths
@@ -11,16 +11,26 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: fb273a54a89bb4c0339cac739b9dd0fe7fdd0afc
-ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
+ms.openlocfilehash: a1a9c1a8db0c4f3481e1edf220412612d70064a8
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58415595"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67825175"
 ---
 # <a name="advanced-example-for-containers"></a>Ejemplo avanzado de contenedores
 
-En el Dockerfile de ejemplo de [Instalar Build Tools en un contenedor](build-tools-container.md) siempre se usa la imagen [microsoft/dotnet-framework:4.7.1](https://hub.docker.com/r/microsoft/dotnet-framework) basada en la imagen más reciente de microsoft/windowsservercore y el instalador de Visual Studio Build Tools más reciente. Si publica esta imagen en un [Registro de Docker](https://azure.microsoft.com/services/container-registry) para que otros usuarios la extraigan, es posible que esta imagen sea válida para muchos escenarios. En cambio, en la práctica, es más habitual especificar qué imagen base se usa, qué archivos binarios se descargan y qué versiones de la herramienta se instalan.
+::: moniker range="vs-2017"
+
+En el Dockerfile de ejemplo de [Instalar Build Tools en un contenedor](build-tools-container.md) siempre se usa la imagen [microsoft/dotnet-framework:4.7.2](https://hub.docker.com/r/microsoft/dotnet-framework) basada en la imagen más reciente de microsoft/windowsservercore y el instalador de Visual Studio Build Tools más reciente. Si publica esta imagen en un [Registro de Docker](https://azure.microsoft.com/services/container-registry) para que otros usuarios la extraigan, es posible que esta imagen sea válida para muchos escenarios. En cambio, en la práctica, es más habitual especificar qué imagen base se usa, qué archivos binarios se descargan y qué versiones de la herramienta se instalan.
+
+::: moniker-end
+
+::: moniker range="vs-2019"
+
+En el Dockerfile de ejemplo de [Instalar Build Tools en un contenedor](build-tools-container.md) siempre se usa la imagen [microsoft/dotnet-framework:4.8](https://hub.docker.com/r/microsoft/dotnet-framework) basada en la imagen más reciente de microsoft/windowsservercore y el instalador de Visual Studio Build Tools más reciente. Si publica esta imagen en un [Registro de Docker](https://azure.microsoft.com/services/container-registry) para que otros usuarios la extraigan, es posible que esta imagen sea válida para muchos escenarios. En cambio, en la práctica, es más habitual especificar qué imagen base se usa, qué archivos binarios se descargan y qué versiones de la herramienta se instalan.
+
+::: moniker-end
 
 En el siguiente Dockerfile de ejemplo se usa una etiqueta de versión específica de la imagen de microsoft/dotnet-framework. El uso de una etiqueta específica para una imagen base es muy común y hace que sea fácil recordar que la generación o reconstrucción de imágenes siempre tiene la misma base.
 
@@ -60,8 +70,8 @@ En el directorio de trabajo, cree el "Dockerfile" con el siguiente contenido:
 # escape=`
 
 # Use a specific tagged image. Tags can be changed, though that is unlikely for most images.
-# You could also use the immutable tag @sha256:1a66e2b5f3a5b8b98ac703a8bfd4902ae60d307ed9842978df40dbc04ac86b1b
-ARG FROM_IMAGE=microsoft/dotnet-framework:4.7.1-20180410-windowsservercore-1709
+# You could also use the immutable tag @sha256:3eaa3ba18f45e6561f32d8dd927045413f1dd043d7d29fb581f5cb3c6f7d7481
+ARG FROM_IMAGE=mcr.microsoft.com/dotnet/framework/sdk:4.7.2-windowsservercore-ltsc2019
 FROM ${FROM_IMAGE}
 
 # Copy our Install script.
@@ -106,8 +116,8 @@ CMD ["powershell.exe", "-NoLogo", "-ExecutionPolicy", "Bypass"]
 # escape=`
 
 # Use a specific tagged image. Tags can be changed, though that is unlikely for most images.
-# You could also use the immutable tag @sha256:1a66e2b5f3a5b8b98ac703a8bfd4902ae60d307ed9842978df40dbc04ac86b1b
-ARG FROM_IMAGE=microsoft/dotnet-framework:4.7.1-20180410-windowsservercore-1709
+# You could also use the immutable tag @sha256:324e9ab7262331ebb16a4100d0fb1cfb804395a766e3bb1806c62989d1fc1326
+ARG FROM_IMAGE=mcr.microsoft.com/dotnet/framework/sdk:4.8-windowsservercore-ltsc2019
 FROM ${FROM_IMAGE}
 
 # Copy our Install script.
@@ -178,6 +188,7 @@ The command 'cmd /S /C C:\TEMP\Install.cmd C:\TEMP\vs_buildtools.exe ...' return
 
 > docker cp 4b62b4ce3a3c:C:\vslogs.zip "%TEMP%\vslogs.zip"
 ```
+
 ::: moniker-end
 
 ::: moniker range="vs-2019"
@@ -192,15 +203,16 @@ Step 8/10 : RUN C:\TEMP\Install.cmd C:\TEMP\vs_buildtools.exe --quiet --wait --n
 The command 'cmd /S /C C:\TEMP\Install.cmd C:\TEMP\vs_buildtools.exe ...' returned a non-zero code: 1603
 
 > docker cp 4b62b4ce3a3c:C:\vslogs.zip "%TEMP%\vslogs.zip"
+```
 
 ::: moniker-end
 
-After the last line finishes executing, open "%TEMP%\vslogs.zip" on your machine, or submit an issue on the [Developer Community](https://developercommunity.visualstudio.com) website.
+Después de que termine de ejecutarse la última línea, abra "%TEMP%\vslogs.zip" en el equipo o envíe un problema en el sitio web de la [comunidad de desarrolladores](https://developercommunity.visualstudio.com).
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 
-## See also
+## <a name="see-also"></a>Vea también
 
-* [Install Build Tools into a Container](build-tools-container.md)
-* [Known Issues for Containers](build-tools-container-issues.md)
-* [Visual Studio Build Tools workload and component IDs](workload-component-id-vs-build-tools.md)
+* [Instalar Build Tools en un contenedor](build-tools-container.md)
+* [Problemas conocidos de contenedores](build-tools-container-issues.md)
+* [Identificadores de componente y carga de trabajo de Visual Studio Build Tools](workload-component-id-vs-build-tools.md)

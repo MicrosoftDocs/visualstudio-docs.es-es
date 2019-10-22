@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: c1724ee3e81ac00ed048f323105842361ec22bc7
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56607959"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "62827299"
 ---
 # <a name="idiasymbolgetacceleratorpointertags"></a>IDiaSymbol::get_acceleratorPointerTags
 Devuelve todos los valores de etiqueta de puntero acelerador que corresponden a una función de código auxiliar del Acelerador C++ AMP.
@@ -36,11 +36,11 @@ HRESULT get_acceleratorPointerTags(
 
  `pcnt`
 
-[out] El recuento de etiquetas de puntero de Acelerador de la función de código auxiliar del Acelerador C++ AMP.
+[out] El recuento de etiquetas de puntero de Acelerador de la C++ función de código auxiliar del Acelerador de AMP.
 
  `pPointerTags`
 
-[out] Un `DWORD` puntero de matriz que se rellena con los valores de etiqueta del puntero de Acelerador de la función de código auxiliar de acelerador C++ AMP.
+[out] Un `DWORD` puntero de matriz que se rellena con los valores de etiqueta del puntero de acelerador en el C++ función de código auxiliar del Acelerador de AMP.
 
 ## <a name="return-value"></a>Valor devuelto
  Si es correcto, devuelve `S_OK`; en caso contrario, devuelve `S_FALSE` o un código de error.

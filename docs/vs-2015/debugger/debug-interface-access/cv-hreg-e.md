@@ -13,12 +13,12 @@ caps.latest.revision: 15
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 0b5a8c0ec9d7dfcae3cd97b0018de355ae7748a4
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: ace9f28c0726a762e0ffe2abcf0538c5a629b06c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60116854"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63443507"
 ---
 # <a name="cvhrege"></a>CV_HREG_e
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -26,7 +26,7 @@ ms.locfileid: "60116854"
 Especifica un registro de destino.  
   
 > [!NOTE]
->  Dado que el `CV_HREG_e` enumeración es demasiado grande para duplicar en su totalidad en este artículo, se proporciona una versión abreviada como referencia. Las entradas que faltan se expresa en cursiva. La enumeración completa está disponible en el archivo de encabezado cvconst.h.  
+> Dado que el `CV_HREG_e` enumeración es demasiado grande para duplicar en su totalidad en este artículo, se proporciona una versión abreviada como referencia. Las entradas que faltan se expresa en cursiva. La enumeración completa está disponible en el archivo de encabezado cvconst.h.  
   
 ## <a name="syntax"></a>Sintaxis  
   

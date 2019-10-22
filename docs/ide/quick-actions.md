@@ -10,12 +10,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 1a08e54025ac0826b88a3d3fcee299beef245d13
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 71ec5cf14f4cd336b8f92c15b4f0859c7a613354
+ms.sourcegitcommit: 88f576ac32af31613c1a10c1548275e1ce029f4f
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "57867042"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "71186810"
 ---
 # <a name="quick-actions"></a>Acciones rápidas
 
@@ -25,7 +25,17 @@ Las acciones rápidas pueden utilizarse para:
 
 - Aplicar una revisión de código para una infracción de regla del [analizador de código](../code-quality/roslyn-analyzers-overview.md).
 
+::: moniker range=">=vs-2019"
+
+- [Suprimir](../code-quality/use-roslyn-analyzers.md#suppress-violations) una infracción de regla del analizador de código o [configurar](../code-quality/use-roslyn-analyzers.md#automatically-configure-rule-severity) su gravedad.
+
+::: moniker-end
+
+::: moniker range="vs-2017"
+
 - [Suprimir](../code-quality/use-roslyn-analyzers.md#suppress-violations) una infracción de regla del analizador de código.
+
+::: moniker-end
 
 - Aplicar una refactorización (por ejemplo, [insertar una variable temporal](../ide/reference/inline-temporary-variable.md)).
 
@@ -34,7 +44,7 @@ Las acciones rápidas pueden utilizarse para:
 > [!NOTE]
 > Este tema se aplica a Visual Studio para Windows. En el caso de Visual Studio para Mac, vea [Refactorización (Visual Studio para Mac)](/visualstudio/mac/refactoring).
 
-Las acciones rápidas se pueden aplicar con los iconos de bombilla ![icono de bombilla](media/light-bulb-icon.png) o de destornillador ![icono de destornillador](media/screwdriver-icon.png) o presionando **Ctrl**+**.** cuando el cursor está en una línea de código para la que está disponible una acción. Verá una bombilla de error ![icono de bombilla de error](media/error-light-bulb-icon.png) si hay un subrayado ondulado de color rojo que indica un error. Visual Studio tiene una corrección disponible para ese error.
+Las acciones rápidas se pueden aplicar con los iconos de bombilla ![icono de bombilla](media/light-bulb-icon.png) o de destornillador ![icono de destornillador](media/screwdriver-icon.png) o presionando **Ctrl**+ **.** cuando el cursor está en una línea de código para la que está disponible una acción. Verá una bombilla de error ![icono de bombilla de error](media/error-light-bulb-icon.png) si hay un subrayado ondulado de color rojo que indica un error. Visual Studio tiene una corrección disponible para ese error.
 
 Para cualquier lenguaje, un tercero puede proporcionar diagnósticos y sugerencias, por ejemplo, como parte de un SDK, y las bombillas de Visual Studio aparecen en función de esas reglas.
 
@@ -52,7 +62,7 @@ Si hay disponible una corrección, las bombillas aparecen:
 
 - En el margen izquierdo del editor cuando se mueve el símbolo de inserción (cursor) en la línea de código aplicable
 
-También puede presionar **Ctrl**+**.** en cualquier parte de una línea para ver una lista de acciones rápidas y refactorizaciones disponibles.
+También puede presionar **Ctrl**+ **.** en cualquier parte de una línea para ver una lista de acciones rápidas y refactorizaciones disponibles.
 
 Para ver posibles correcciones, seleccione la flecha abajo que aparece junto a la bombilla o el vínculo **Mostrar posibles correcciones**. Aparece una lista de las acciones rápidas disponibles.
 
@@ -62,6 +72,6 @@ Para ver posibles correcciones, seleccione la flecha abajo que aparece junto a l
 
 - [Generación de código en Visual Studio](../ide/code-generation-in-visual-studio.md)
 - [Acciones rápidas comunes](../ide/common-quick-actions.md)
-- [Estilos de código y acciones rápidas](../ide/code-styles-and-quick-actions.md)
+- [Estilos de código y acciones rápidas](../ide/code-styles-and-code-cleanup.md)
 - [Escribir y refactorizar código (C++)](/cpp/ide/writing-and-refactoring-code-cpp)
 - [Refactorización (Visual Studio para Mac)](/visualstudio/mac/refactoring)

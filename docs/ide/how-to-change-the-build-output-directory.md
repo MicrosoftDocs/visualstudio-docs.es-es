@@ -1,45 +1,65 @@
 ---
-title: Filtrar Cambiar el directorio de salida de compilación
-ms.date: 11/04/2016
+title: Procedimiento Cambiar el directorio de salida de compilación
+ms.date: 05/15/2019
 ms.technology: vs-ide-compile
 ms.topic: conceptual
 helpviewer_keywords:
 - output directory, changing
 ms.assetid: a8333c89-afb2-4b1d-b2e2-9146da852402
-author: gewarren
-ms.author: gewarren
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2f254c29f2951484869b814f13d1a346080fab07
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 493de227174b60b4834c2732ddbf16a5586fa49e
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55911538"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71238179"
 ---
-# <a name="how-to-change-the-build-output-directory"></a>Filtrar Cambiar el directorio de salida de compilación
+# <a name="how-to-change-the-build-output-directory"></a>Procedimiento Cambiar el directorio de salida de compilación
 
-Puede especificar la ubicación de salida por configuración (para debug, release o ambos) generada por el proyecto.
-
-> [!NOTE]
-> Si tiene un proyecto **Setup**, vea la nota que se proporciona al final de este artículo.
+Puede especificar la ubicación de salida generada por el proyecto según la configuración (para depuración, versión o ambos).
 
 ## <a name="change-the-build-output-directory"></a>Cambiar el directorio de salida de compilación
 
-1.  En la barra de menús, elija **Proyecto** > **\<NombreDeAplicación>Propiedades**. En el **Explorador de soluciones**, también puede hacer clic con el botón derecho en el nodo del proyecto y seleccionar **Propiedades**.
+1. Para abrir las páginas de propiedades del proyecto, haga clic con el botón derecho en el nodo del proyecto en el **Explorador de soluciones** y seleccione **Propiedades**.
 
-2.  Si tiene un proyecto de Visual Basic, seleccione la pestaña **Compilar** . Si tiene un proyecto de C#, seleccione la pestaña **Compilar**. Si tiene un proyecto de C++ o JavaScript, seleccione la pestaña **General** .
+2. Seleccione la pestaña adecuada según el tipo de proyecto:
 
-3.  En la lista desplegable de configuración de la parte superior, elija la configuración cuya ubicación de archivo de resultados desea cambiar (debug, release o todas).
+   - Para C#, seleccione la pestaña **Compilar**.
+   - Para Visual Basic, seleccione la pestaña **Compilar**.
+   - Para C++ o JavaScript, seleccione la pestaña **General**.
 
-     Busque la entrada de la ruta de acceso de la salida (**Ruta de acceso de salida de la compilación** en Visual Basic, **Directorio de salida** en Visual C++ y **Ruta de acceso de salida** en JavaScript y C#). Especifique un nuevo directorio de resultados de la compilación relativo al directorio del proyecto.
+3. En la lista desplegable de configuración de la parte superior, seleccione la configuración cuya ubicación del archivo de salida quiera cambiar (**Depuración**, **Versión** o **Todas las configuraciones**).
 
-> [!NOTE]
-> En un proyecto Setup, el cuadro **Nombre del archivo de salida** cambia solo la ubicación del archivo *Setup.exe*, no la ubicación de los archivos del proyecto. Para obtener más información, vea **Compilación, Propiedades de configuración, Propiedades del proyecto de implementación (cuadro de diálogo)**.
+4. Busque la entrada de la ruta de acceso de salida en la página: varía según el tipo de proyecto:
+
+   - **Ruta de acceso de salida** para proyectos de C# y JavaScript
+   - **Ruta de acceso de salida de compilación** para proyectos de Visual Basic
+   - **Directorio de salida** para proyectos de Visual C++
+
+   Escriba la ruta de acceso donde se va a generar la salida (absoluta o relativa con respecto al directorio raíz del proyecto) o seleccione **Examinar** para ir a esa carpeta.
+
+   ![Propiedad de ruta de acceso de salida de un proyecto de C# de Visual Studio](media/output-path.png)
+   
+   > [!NOTE]
+   > Algunos proyectos incluirán de forma predeterminada el marco y el tiempo de ejecución en la ruta de acceso de compilación. Para cambiar esto, haga clic con el botón derecho en el nodo del proyecto en el **Explorador de soluciones**, seleccione **Editar archivo de proyecto** y agregue lo siguiente:
+   > ```xml
+   > <PropertyGroup>
+   >   <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+   >   <AppendRuntimeIdentifierToOutputPath>false</AppendRuntimeIdentifierToOutputPath>
+   > </PropertyGroup>
+   > ```
+
+> [!TIP]
+> Si la salida no se genera en la ubicación especificada, asegúrese de que va a crear la configuración correspondiente (por ejemplo, **Depuración** o **Versión**) al seleccionarla en la barra de menús de Visual Studio.
+>
+> ![Selector de configuración de compilación en Visual Studio 2019](media/build-configuration-chooser.png)
 
 ## <a name="see-also"></a>Vea también
 
 - [Página Compilar, Diseñador de proyectos (C#)](../ide/reference/build-page-project-designer-csharp.md)
-- [Página Propiedad general (Proyecto)](/cpp/ide/general-property-page-project)
+- [Página Propiedad general (Proyecto)](/cpp/build/reference/general-property-page-project)
 - [Compilar y generar](../ide/compiling-and-building-in-visual-studio.md)

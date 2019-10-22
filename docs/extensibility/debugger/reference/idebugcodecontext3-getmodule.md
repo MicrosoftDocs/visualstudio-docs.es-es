@@ -5,17 +5,20 @@ ms.topic: reference
 helpviewer_keywords:
 - IDebugCodeContext3::GetModule
 ms.assetid: 8e4317b8-8255-486c-a896-a68ed94f8aa1
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ae925ab4c05db45d09638070df9291541f19a869
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 6fa2cbc3f7902e3f3cd7674cf9e2d3effb80942e
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56703726"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66338871"
 ---
 # <a name="idebugcodecontext3getmodule"></a>IDebugCodeContext3::GetModule
 Recupera una referencia a la interfaz del módulo de depuración.
@@ -34,10 +37,9 @@ public int GetModule(
 );
 ```
 
-#### <a name="parameters"></a>Parámetros
-`ppModule`
-
- [out] Referencia a la interfaz del módulo de depuración.
+## <a name="parameters"></a>Parámetros
+`ppModule`\
+[out] Referencia a la interfaz del módulo de depuración.
 
 ## <a name="return-value"></a>Valor devuelto
 Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.

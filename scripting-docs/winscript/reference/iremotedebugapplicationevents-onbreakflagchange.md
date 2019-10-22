@@ -1,5 +1,5 @@
 ---
-title: IRemoteDebugApplicationEvents::OnBreakFlagChange | Microsoft Docs
+title: 'Iremotedebugapplicationevents (:: OnBreakFlagChange | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,12 +17,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: eb19b6cfc423a1305276441305ef854c70f2d896
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 71e9a29b6dcc5cd6864ce4edffe9e5f96b64ba9e
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58150483"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72561710"
 ---
 # <a name="iremotedebugapplicationeventsonbreakflagchange"></a>IRemoteDebugApplicationEvents::OnBreakFlagChange
 Controla un evento cuando cambian las marcas de interrupción.  
@@ -38,10 +38,10 @@ HRESULT OnBreakFlagChange(
   
 #### <a name="parameters"></a>Parámetros  
  `abf`  
- [in] Las marcas de interrupción actual de la aplicación.  
+ de Marcas de interrupción actuales para la aplicación.  
   
  `prdatSteppingThread`  
- [in] El subproceso actualmente en ejecución.  
+ de Subproceso que se está ejecutando actualmente.  
   
 ## <a name="return-value"></a>Valor devuelto  
  El método devuelve un objeto `HRESULT`. Entre los valores posibles se incluyen los que se indican en la tabla siguiente, entre otros.  
@@ -54,5 +54,5 @@ HRESULT OnBreakFlagChange(
  Este método controla el evento cuando cambia la marca de interrupción.  
   
 ## <a name="see-also"></a>Vea también  
- [IRemoteDebugApplicationEvents (interfaz)](../../winscript/reference/iremotedebugapplicationevents-interface.md)   
+ @No__t_1 de la [interfaz iremotedebugapplicationevents (](../../winscript/reference/iremotedebugapplicationevents-interface.md)  
  [APPBREAKFLAGS (Enumeración)](../../winscript/reference/appbreakflags-enumeration.md)

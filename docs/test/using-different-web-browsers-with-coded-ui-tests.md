@@ -7,12 +7,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 822ce0a2f0e8632706a4a1551cc53aafb23563ed
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 1b7cad6d52dc3fabc182881b99163cf15e1a260c
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "57983041"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68926567"
 ---
 # <a name="use-different-web-browsers-with-coded-ui-tests"></a>Usar diferentes exploradores web con las pruebas automatizadas de IU
 
@@ -24,13 +24,13 @@ En primer lugar, instale los [componentes Selenium para pruebas automatizadas de
 
 ## <a name="whats-supported-across-all-web-browsers"></a>¿Qué se admite en todos los exploradores web?
 
--   [Agregar código personalizado para controlar características](https://devblogs.microsoft.com/devops/coded-ui-test-configuring-search-properties-while-recording-on-internet-explorer/) como propiedades, búsqueda y objetos Waiter de reproducción
+- [Agregar código personalizado para controlar características](https://devblogs.microsoft.com/devops/coded-ui-test-configuring-search-properties-while-recording-on-internet-explorer/) como propiedades, búsqueda y objetos Waiter de reproducción
 
--   Elementos emergentes y cuadros de diálogo
+- Elementos emergentes y cuadros de diálogo
 
--   [Ejecutar JavaScript básico sin tipo de valor devuelto](https://devblogs.microsoft.com/devops/introducing-javascript-execution-on-internetexplorer-and-crossbrowser-in-coded-ui-test/)
+- [Ejecutar JavaScript básico sin tipo de valor devuelto](https://devblogs.microsoft.com/devops/introducing-javascript-execution-on-internetexplorer-and-crossbrowser-in-coded-ui-test/)
 
--   Resistencia de búsqueda (mediante coincidencia inteligente) y [mejoras de rendimiento](https://devblogs.microsoft.com/devops/guidelines-on-improving-performance-of-coded-ui-test-playback/)
+- Resistencia de búsqueda (mediante coincidencia inteligente) y [mejoras de rendimiento](https://devblogs.microsoft.com/devops/guidelines-on-improving-performance-of-coded-ui-test-playback/)
 
 ## <a name="why-should-i-use-coded-ui-tests-across-multiple-web-browser-types"></a>¿Por qué se deben usar pruebas de IU codificadas en varios tipos de explorador web?
 
@@ -43,11 +43,11 @@ Al probar la aplicación web en varios tipos de explorador web, se emula mejor l
 > [!NOTE]
 > No puede grabar pruebas de IU codificadas con los exploradores Google Chrome o Mozilla Firefox.
 
- **Reproducción con Internet Explorer:** Cuando no se especifica ningún explorador explícitamente, las pruebas se ejecutan en Internet Explorer de forma predeterminada. Puede indicar explícitamente el explorador que se usará mediante el establecimiento de la propiedad **BrowserWindow.CurrentBrowser** en el código de prueba. Con Internet Explorer, esta propiedad se debe establecer en **IE** o **Internet Explorer**.
+**Reproducción con Internet Explorer:** Cuando no se especifica ningún explorador explícitamente, las pruebas se ejecutan en Internet Explorer de forma predeterminada. Puede indicar explícitamente el explorador que se usará mediante el establecimiento de la propiedad **BrowserWindow.CurrentBrowser** en el código de prueba. Con Internet Explorer, esta propiedad se debe establecer en **IE** o **Internet Explorer**.
 
- **Reproducción con exploradores web que no son Internet Explorer:** Para reproducir en exploradores web que no son Internet Explorer, cambie la propiedad BrowserWindow.CurrentBrowser del código de prueba a **Firefox** o **Chrome**.
+**Reproducción con exploradores web que no son Internet Explorer:** Para reproducir en exploradores web que no son Internet Explorer, cambie la propiedad BrowserWindow.CurrentBrowser del código de prueba a **Firefox** o **Chrome**.
 
- Para reproducir pruebas en exploradores web que no son IE, debe instalar los **componentes Selenium para pruebas automatizadas de interfaz de usuario en distintos exploradores**.
+Para reproducir pruebas en exploradores web que no son IE, debe instalar los **componentes Selenium para pruebas automatizadas de interfaz de usuario en distintos exploradores**.
 
 ### <a name="install-selenium-components"></a>Instalar componentes Selenium
 
@@ -78,17 +78,17 @@ Para obtener más información sobre cómo crear y usar pruebas automatizadas de
 
 Para habilitar la depuración de la aplicación web, debe completar las opciones de configuración siguientes:
 
-1.  Habilitar Solo mi código:
+1. Habilitar Solo mi código:
 
-    1.  En el menú **Herramientas**, seleccione **Opciones** y, después, **Depuración**.
+    1. En el menú **Herramientas**, seleccione **Opciones** y, después, **Depuración**.
 
-    2.  Seleccione **Habilitar Solo mi código**.
+    2. Seleccione **Habilitar Solo mi código**.
 
-2.  Deshabilitar excepciones de CLR:
+2. Deshabilitar excepciones de CLR:
 
-    1.  En el menú **Depurar**, seleccione **Excepciones**.
+    1. En el menú **Depurar**, seleccione **Excepciones**.
 
-    2.  Para **Common Language Runtime Exceptions** (Excepciones de Common Language Runtime), desactive **No controlada por el usuario**.
+    2. Para **Common Language Runtime Exceptions** (Excepciones de Common Language Runtime), desactive **No controlada por el usuario**.
 
 Si no ve la opción para cambiar `BrowserWindow.CurrentBrowser` en la prueba automatizada de IU, puede que esté usando una versión de Visual Studio que no admite las pruebas automatizadas de IU con varios exploradores web. Para usar estas pruebas automatizadas de IU, debe utilizar la edición Visual Studio Enterprise.
 
@@ -120,15 +120,15 @@ Para obtener más información, vea [Análisis de pruebas automatizadas de IU me
 
 ## <a name="video-resources"></a>Recursos de vídeo
 
- [Grabación en IE y reproducción en cualquier lugar](https://skydrive.live.com/redir?resid=AE5CD7309CCCC43C!183&authkey=!ANqaLtCZbtJrImU)
+[Grabación en IE y reproducción en cualquier lugar](https://skydrive.live.com/redir?resid=AE5CD7309CCCC43C!183&authkey=!ANqaLtCZbtJrImU)
 
- [Crear pruebas en distintos exploradores con el generador de pruebas automatizadas de IU](https://skydrive.live.com/redir?resid=AE5CD7309CCCC43C!184&authkey=!AKG8CSow_qmeTq8)
+[Crear pruebas en distintos exploradores con el generador de pruebas automatizadas de IU](https://skydrive.live.com/redir?resid=AE5CD7309CCCC43C!184&authkey=!AKG8CSow_qmeTq8)
 
- [Crear pruebas en distintos exploradores con codificación manual normal sin asignación de IU](https://skydrive.live.com/redir?resid=AE5CD7309CCCC43C!186&authkey=!AJaEvxJnsefyAT4)
+[Crear pruebas en distintos exploradores con codificación manual normal sin asignación de IU](https://skydrive.live.com/redir?resid=AE5CD7309CCCC43C!186&authkey=!AJaEvxJnsefyAT4)
 
- [Ejecutar pruebas en varios exploradores secuencialmente](https://skydrive.live.com/redir?resid=AE5CD7309CCCC43C!187&authkey=!ADI8eCQkxHnpOR8)
+[Ejecutar pruebas en varios exploradores secuencialmente](https://skydrive.live.com/redir?resid=AE5CD7309CCCC43C!187&authkey=!ADI8eCQkxHnpOR8)
 
- [Solucionar problemas debidos a errores de pruebas en varios exploradores](https://skydrive.live.com/redir?resid=AE5CD7309CCCC43C!182&authkey=!AEpS48i295B49FI)
+[Solucionar problemas debidos a errores de pruebas en varios exploradores](https://skydrive.live.com/redir?resid=AE5CD7309CCCC43C!182&authkey=!AEpS48i295B49FI)
 
 ## <a name="see-also"></a>Vea también
 

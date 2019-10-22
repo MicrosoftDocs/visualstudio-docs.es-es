@@ -9,8 +9,9 @@
 - name: Documento de registro de gráficos
   href: graphics-log-document.md
 - name: Análisis de fotograma de gráficos
-  href: graphics-frame-analysis.md
   items:
+    - name: Análisis de fotograma de gráficos
+      href: graphics-frame-analysis.md
     - name: 1x1 Viewport (Variante de tamaño)
       href: 1x1-viewport-size-variant.md
     - name: Variantes 0x/2x/4x MSAA
@@ -27,7 +28,7 @@
       href: bc-texture-compression-variant.md
 - name: Lista de eventos
   href: graphics-event-list.md
-- name: Estado de los gráficos
+- name: Estado de gráficos
   href: graphics-state.md
 - name: Etapas de canalización
   href: graphics-pipeline-stages.md
@@ -46,11 +47,12 @@
 - name: Herramienta de captura de línea de comandos
   href: command-line-capture-tool.md
 - name: Ejemplos de diagnóstico de gráficos
-  href: graphics-diagnostics-examples.md
   items:
+    - name: Ejemplos de diagnóstico de gráficos
+      href: graphics-diagnostics-examples.md
     - name: 'Tutorial: Capturar información de gráficos'
       href: walkthrough-capturing-graphics-information.md
-    - name: 'Tutorial: Capturar información de gráficos mediante programación'
+    - name: 'Tutorial: Captura de información de gráficos mediante programación'
       href: walkthrough-capturing-graphics-information-programmatically.md
     - name: 'Tutorial: Objetos ausentes debido al estado del dispositivo'
       href: walkthrough-missing-objects-due-to-device-state.md
@@ -58,18 +60,20 @@
       href: walkthrough-missing-objects-due-to-vertex-shading.md
     - name: 'Tutorial: Objetos ausentes debido a una canalización mal configurada'
       href: walkthrough-missing-objects-due-to-misconfigured-pipeline.md
-    - name: 'Tutorial: Depurar errores de representación debidos al sombreado'
+    - name: 'Tutorial: Depuración de errores de representación debidos al sombreado'
       href: walkthrough-debugging-rendering-errors-due-to-shading.md
-    - name: 'Tutorial: Usar diagnósticos de gráficos para depurar un sombreador de cálculo'
+    - name: 'Tutorial: Uso de Diagnóstico de gráficos para depurar un sombreador de cálculo'
       href: walkthrough-using-graphics-diagnostics-to-debug-a-compute-shader.md
-    - name: 'Cómo: Cambiar la máquina de reproducción de diagnóstico de gráficos'
+    - name: Procedimiento Cambio de la máquina de reproducción de Diagnóstico de gráficos
       href: how-to-change-the-graphics-diagnostics-playback-machine.md
 - name: Referencia (captura mediante programación)
-  href: reference-programmatic-capture.md
   items:
+    - name: Referencia (captura mediante programación)
+      href: reference-programmatic-capture.md
     - name: VsgDbg (Clase)
-      href: vsgdbg-class.md
       items:
+        - name: VsgDbg (Clase)
+          href: vsgdbg-class.md
         - name: 'VsgDbg::VsgDbg (Constructor)'
           href: vsgdbg-vsgdbg-constructor.md
         - name: 'VsgDbg::~VsgDbg (Destructor)'

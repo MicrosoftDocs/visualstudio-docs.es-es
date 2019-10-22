@@ -1,5 +1,5 @@
 ---
-title: Filtrar Exportar una textura que tiene valores alfa previamente multiplicados
+title: Procedimiento Exportar una textura que tiene valores alfa previamente multiplicados
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 05348afa-f079-4f53-a05b-ecd91d13adab
@@ -8,33 +8,33 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9a228b3f69730eee5fb1672e07a6eea74d18c71e
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 16448a53064844f1c75db8b7eaa58c2cf909a968
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55946878"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68924254"
 ---
-# <a name="how-to-export-a-texture-that-has-premultiplied-alpha"></a>Filtrar Exportar una textura que tiene valores alfa previamente multiplicados
+# <a name="how-to-export-a-texture-that-has-premultiplied-alpha"></a>Procedimiento Exportar una textura que tiene valores alfa previamente multiplicados
 
 La canalización de contenido de la imagen puede generar texturas de alfa premultiplicado a partir de una imagen de origen. Pueden ser más fáciles de usar y más sólidas que las texturas que no contienen alfa previamente multiplicada.
 
 Este documento muestra estas actividades:
 
--   Configurar la imagen de origen para que se procese mediante la canalización de contenido de la imagen.
+- Configurar la imagen de origen para que se procese mediante la canalización de contenido de la imagen.
 
--   Configurar la canalización de contenido de la imagen para generar valores alfa premultiplicados.
+- Configurar la canalización de contenido de la imagen para generar valores alfa premultiplicados.
 
 ## <a name="premultiplied-alpha"></a>Alfa premultiplicado
- Alfa premultiplicado proporciona varias ventajas en comparación con alfa convencional y no premultiplicado, porque representa mejor la interacción real de la luz con material físico separando la contribución de color de la textura (el color que agrega a la escena) de la translucidez (la cantidad de color subyacente que permite). Algunas de las ventajas de usar alfa premultiplicado son:
+Alfa premultiplicado proporciona varias ventajas en comparación con alfa convencional y no premultiplicado, porque representa mejor la interacción real de la luz con material físico separando la contribución de color de la textura (el color que agrega a la escena) de la translucidez (la cantidad de color subyacente que permite). Algunas de las ventajas de usar alfa premultiplicado son:
 
--   La combinación con alfa premultiplicado es una operación asociativa; el resultado de combinar varias texturas translúcidas varias es el mismo, independientemente del orden en que se combinan las texturas.
+- La combinación con alfa premultiplicado es una operación asociativa; el resultado de combinar varias texturas translúcidas varias es el mismo, independientemente del orden en que se combinan las texturas.
 
--   Debido a la naturaleza asociativa de la combinación con alfa premultiplicado, la representación de varias pasadas de objetos translúcidos se simplifica.
+- Debido a la naturaleza asociativa de la combinación con alfa premultiplicado, la representación de varias pasadas de objetos translúcidos se simplifica.
 
--   Mediante el uso de alfa premultiplicado, se puede lograr simultáneamente la combinación aditiva pura (estableciendo alfa en cero) y la combinación lineal interpolada. Por ejemplo, en un sistema de partículas, una partícula de fuego aditivamente mezclada puede convertirse en una partícula de humo translúcido que se mezcla mediante el uso de interpolación lineal. Sin alfa multiplicada previamente, tendría que dibujar las partículas de activación con independencia de las partículas de humo, y modificar el estado de presentación entre las llamadas de dibujo.
+- Mediante el uso de alfa premultiplicado, se puede lograr simultáneamente la combinación aditiva pura (estableciendo alfa en cero) y la combinación lineal interpolada. Por ejemplo, en un sistema de partículas, una partícula de fuego aditivamente mezclada puede convertirse en una partícula de humo translúcido que se mezcla mediante el uso de interpolación lineal. Sin alfa multiplicada previamente, tendría que dibujar las partículas de activación con independencia de las partículas de humo, y modificar el estado de presentación entre las llamadas de dibujo.
 
--   Las texturas que usan alfa premultiplicado se comprimen con mayor calidad que aquellas que no lo usan y no presentan el efecto de bordes descoloridos (o de "halo") que puede producirse cuando se mezclan texturas que no usan alfa premultiplicado.
+- Las texturas que usan alfa premultiplicado se comprimen con mayor calidad que aquellas que no lo usan y no presentan el efecto de bordes descoloridos (o de "halo") que puede producirse cuando se mezclan texturas que no usan alfa premultiplicado.
 
 #### <a name="to-create-a-texture-that-uses-premultiplied-alpha"></a>Para crear una textura que usa alfa multiplicado previamente
 
@@ -42,7 +42,7 @@ Este documento muestra estas actividades:
 
 2. Configure el archivo de textura para que sea procesado por la canalización de contenido de imagen. En el **Explorador de soluciones**, abra el menú contextual del archivo de textura y seleccione **Propiedades**. En la página **Propiedades de configuración** > **General**, establezca la propiedad **Tipo de elemento** en **Canalización de contenido de la imagen**. Asegúrese de que la propiedad **Contenido** esté establecida en **Sí** y **Excluir de la compilación** esté establecido en **No**, y, después, seleccione el botón **Aplicar**. Aparece la página de propiedades de configuración de **Canalización de contenido de la imagen**.
 
-3. Configure la canalización de contenido de la imagen para generar valores alfa premultiplicados. En **Propiedades de configuración** > **Canalización de contenido de la imagen** >  en la página **General**, establezca la propiedad **Convertir en formato alfa premultiplicado** en **Sí (/generatepremultipliedalpha)**.
+3. Configure la canalización de contenido de la imagen para generar valores alfa premultiplicados. En **Propiedades de configuración** > **Canalización de contenido de la imagen** >  en la página **General**, establezca la propiedad **Convertir en formato alfa premultiplicado** en **Sí (/generatepremultipliedalpha)** .
 
 4. Elija el botón **Aceptar** .
 

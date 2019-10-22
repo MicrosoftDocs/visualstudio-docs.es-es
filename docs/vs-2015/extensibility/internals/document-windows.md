@@ -10,12 +10,12 @@ ms.assetid: 50081d48-987f-43db-8bf9-51b7cf76e9c0
 caps.latest.revision: 18
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: fb8ce0938ae79b0fc6108f6f3cdbe80a116f5531
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 5e62be456422b7ee5e9f2828a44a6be05e1211d9
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58998805"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436346"
 ---
 # <a name="document-windows"></a>Ventanas de documento
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -38,7 +38,7 @@ En Visual Studio, un *ventana de documento* es una ventana secundaria de tramas 
  Ventanas de documento se crean mediante la implementación de un editor. El <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory> interfaz crea ventanas de documento como parte de la creación de instancias de un editor. Para obtener más información, consulte [Interfaces heredadas en el Editor de](../../extensibility/legacy-interfaces-in-the-editor.md).  
   
 > [!NOTE]
->  Para proporcionar hacia atrás y reenviar los puntos de navegación en una ventana, implemente el <xref:Microsoft.VisualStudio.Shell.Interop.IVsBackForwardNavigation> interfaz. El editor de texto usa marcadores de texto para identificar puntos de navegación en el documento.  
+> Para proporcionar hacia atrás y reenviar los puntos de navegación en una ventana, implemente el <xref:Microsoft.VisualStudio.Shell.Interop.IVsBackForwardNavigation> interfaz. El editor de texto usa marcadores de texto para identificar puntos de navegación en el documento.  
   
 ## <a name="the-running-document-table"></a>La tabla de documentos en ejecución  
  El IDE usa la tabla de documentos en ejecución (RDT) para un seguimiento del estado de cada ventana de documento. La RDT es el mecanismo a través de qué documento son una notificación de eventos, como cuando se cierra una solución o cuando se ha editado un archivo de windows. Para obtener más información, consulte [tabla de documentos en ejecución](../../extensibility/internals/running-document-table.md).  

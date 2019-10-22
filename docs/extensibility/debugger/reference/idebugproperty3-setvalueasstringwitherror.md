@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProperty3::SetValueAsStringWithError
 ms.assetid: b378368f-4a45-4b2f-8e3d-3bff7a18ab17
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1f3bc987cf097f3573b40d4d907204c742608fd0
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 61a39d3b68deec2dd51c49113355a8ed6c69325c
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56709283"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66348814"
 ---
 # <a name="idebugproperty3setvalueasstringwitherror"></a>IDebugProperty3::SetValueAsStringWithError
 Establece el valor de esta propiedad y devuelve un mensaje de error, si es necesario.
@@ -42,22 +45,18 @@ int SetValueAsStringWithError(
 );
 ```
 
-#### <a name="parameters"></a>Parámetros
-`pszValue`
+## <a name="parameters"></a>Parámetros
+`pszValue`\
+[in] Valor que se va a establecer.
 
- [in] Valor que se va a establecer.
+`dwRadix`\
+[in] La base del valor que se va a establecer.
 
-`dwRadix`
+`dwTimeout`\
+[in] La longitud de tiempo de espera para que se puede establecer el valor (`INFINITE` , espera indefinida).
 
- [in] La base del valor que se va a establecer.
-
-`dwTimeout`
-
- [in] La longitud de tiempo de espera para que se puede establecer el valor (`INFINITE` , espera indefinida).
-
-`errorString`
-
- [out] Si se produjo un error al establecer el valor, contiene el motivo del error.
+`errorString`\
+[out] Si se produjo un error al establecer el valor, contiene el motivo del error.
 
 ## <a name="return-value"></a>Valor devuelto
 Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.

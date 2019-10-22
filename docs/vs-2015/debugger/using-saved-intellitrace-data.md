@@ -16,12 +16,12 @@ caps.latest.revision: 112
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 3409cf6f5f86ea4e4649049f3cc1c49fbb1f5c7f
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: e7c8f17bb454c7dc58a355774206b760aac2bdfe
+ms.sourcegitcommit: 748d9cd7328a30f8c80ce42198a94a4b5e869f26
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60092713"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67891086"
 ---
 # <a name="using-saved-intellitrace-data"></a>Uso de datos de IntelliTrace guardados
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,8 +39,8 @@ Inicie la depuración desde un archivo de registro de IntelliTrace (.iTrace) par
     |**Origen**|**Vea**|  
     |----------------|-------------|  
     |Una sesión IntelliTrace en Visual Studio Enterprise (pero no en las ediciones Professional o Community).|[Características de IntelliTrace](../debugger/intellitrace-features.md)|  
-    |Una sesión de prueba en Microsoft Test Manager. Se asociará un archivo .iTrace a un elemento de trabajo de Team Foundation Server.|[Recopilar más datos de diagnóstico en las pruebas manuales](http://msdn.microsoft.com/library/bb5a2cc0-84f5-4dfe-9560-ca3d313aefd2)|  
-    |Microsoft Monitoring Agent, solo o con System Center 2012 R2 Operations Manager, para las aplicaciones web ASP.NET y las aplicaciones de SharePoint que se ejecutan en la implementación|-   [Diagnosis de problemas tras la implementación](../debugger/diagnose-problems-after-deployment.md)<br />-   [Novedades de System Center 2012 R2 Operations Manager](http://technet.microsoft.com/library/dn249700.aspx)|  
+    |Una sesión de prueba en Microsoft Test Manager. Se asociará un archivo .iTrace a un elemento de trabajo de Team Foundation Server.|[Recopilar más datos de diagnóstico en las pruebas manuales](https://msdn.microsoft.com/library/bb5a2cc0-84f5-4dfe-9560-ca3d313aefd2)|  
+    |Microsoft Monitoring Agent, solo o con System Center 2012 R2 Operations Manager, para las aplicaciones web ASP.NET y las aplicaciones de SharePoint que se ejecutan en la implementación|-   [Diagnosis de problemas tras la implementación](../debugger/diagnose-problems-after-deployment.md)<br />-   [Novedades de System Center 2012 R2 Operations Manager](https://technet.microsoft.com/library/dn249700.aspx)|  
   
 ## <a name="GetStarted"></a> ¿Qué desea hacer?  
   
@@ -59,14 +59,14 @@ Inicie la depuración desde un archivo de registro de IntelliTrace (.iTrace) par
   
 - Si el archivo .iTrace está asociado a un elemento de trabajo de Team Foundation Server, siga estos pasos en el elemento de trabajo:  
   
-    - En **Todos los vínculos**, busque el archivo .iTrace. Ábralo.  
-  
-         \- o -  
-  
-    - En **Pasos de reproducción**, elija el vínculo **IntelliTrace** .  
+  - En **Todos los vínculos**, busque el archivo .iTrace. Ábralo.  
+
+    \- o -  
+
+  - En **Pasos de reproducción**, elija el vínculo **IntelliTrace** .  
   
 > [!TIP]
->  Si cerró el archivo IntelliTrace durante la depuración, puede volver a abrirlo fácilmente. Vaya al menú **Depuración** , elija **IntelliTrace**, **Mostrar resumen de registro**. También puede elegir **Mostrar resumen de registro** en la ventana de **IntelliTrace** . Esto solo está disponible durante la depuración con IntelliTrace.  
+> Si cerró el archivo IntelliTrace durante la depuración, puede volver a abrirlo fácilmente. Vaya al menú **Depuración** , elija **IntelliTrace**, **Mostrar resumen de registro**. También puede elegir **Mostrar resumen de registro** en la ventana de **IntelliTrace** . Esto solo está disponible durante la depuración con IntelliTrace.  
   
 ## <a name="Understand"></a> Obtener información sobre el registro de IntelliTrace  
  Algunas de las secciones siguientes del archivo .iTrace solo aparecen si recopiló datos de un origen determinado, por ejemplo, desde Test Manager o desde aplicaciones de SharePoint.  
@@ -85,7 +85,7 @@ Inicie la depuración desde un archivo de registro de IntelliTrace (.iTrace) par
   
 - Elija un encabezado de columna para ordenar los datos.  
   
-- Use el cuadro de búsqueda para filtrar los datos. La búsqueda de texto sin formato funciona en todas las columnas excepto en las columnas de tiempo. También puede filtrar las búsquedas a una columna específica con un filtro por columna. Escriba el nombre de columna sin espacios, dos puntos (**:**) y el valor de la búsqueda. Incluya después un punto y coma (**;**) para agregar otra columna y buscar el valor.  
+- Use el cuadro de búsqueda para filtrar los datos. La búsqueda de texto sin formato funciona en todas las columnas excepto en las columnas de tiempo. También puede filtrar las búsquedas a una columna específica con un filtro por columna. Escriba el nombre de columna sin espacios, dos puntos ( **:** ) y el valor de la búsqueda. Incluya después un punto y coma ( **;** ) para agregar otra columna y buscar el valor.  
   
      Por ejemplo, para buscar los eventos de rendimiento que tienen la palabra “lento” en la columna **Descripción** , escriba:  
   
@@ -207,7 +207,7 @@ Inicie la depuración desde un archivo de registro de IntelliTrace (.iTrace) par
   
     ![Registro de IntelliTrace &#45; las excepciones no controladas de SharePoint](../debugger/media/sharepointunhandledexceptions-intellitrace.png "SharePointUnhandledExceptions_IntelliTrace")  
   
-   Para ver un tutorial, vea [Tutorial: Depurar una aplicación de SharePoint mediante IntelliTrace](http://msdn.microsoft.com/library/4bd80d2f-f680-4bf4-81c3-f14e8185f6a4). Para los tipos de datos que registra el agente, vea [las características de IntelliTrace](../debugger/intellitrace-features.md).  
+   Para ver un tutorial, vea [Tutorial: Depurar una aplicación de SharePoint mediante IntelliTrace](https://msdn.microsoft.com/library/4bd80d2f-f680-4bf4-81c3-f14e8185f6a4). Para los tipos de datos que registra el agente, vea [las características de IntelliTrace](../debugger/intellitrace-features.md).  
   
 ### <a name="ThreadsList"></a> Lista de subprocesos  
  Examine los subprocesos registrados que se ejecutaron en el proceso de destino. Puede iniciar la depuración desde el primer evento válido de IntelliTrace en un subproceso seleccionado.  
@@ -225,7 +225,7 @@ Inicie la depuración desde un archivo de registro de IntelliTrace (.iTrace) par
 |**Columna**|**Muestra**|  
 |----------------|-------------------|  
 |**ID**|El número de identificador del subproceso|  
-|**Name**|El nombre del subproceso. Los subprocesos sin nombre se muestran como “\<Sin nombre>”.|  
+|**Nombre**|El nombre del subproceso. Los subprocesos sin nombre se muestran como “\<Sin nombre>”.|  
 |**Hora de inicio**|La hora en que se creó el subproceso|  
 |**Hora de finalización**|La hora en que se completó el subproceso|  
   
@@ -258,19 +258,19 @@ Inicie la depuración desde un archivo de registro de IntelliTrace (.iTrace) par
 |----------------|-------------------|  
 |**Nombre del módulo**|Nombre de archivo del módulo|  
 |**Ruta de acceso del módulo**|Ubicación del disco en el que se cargó el módulo|  
-|**Identificador del módulo**|Identificador único del módulo específico de esta versión que ayuda a encontrar archivos de símbolos (PDB) coincidentes. Vea [Finding symbol (.pdb) files and source files](http://msdn.microsoft.com/05384c85-d264-4e18-abaa-aa482ab25470).|  
+|**Identificador del módulo**|Identificador único del módulo específico de esta versión que ayuda a encontrar archivos de símbolos (PDB) coincidentes. Vea [Finding symbol (.pdb) files and source files](https://msdn.microsoft.com/05384c85-d264-4e18-abaa-aa482ab25470).|  
   
 ### <a name="where-can-i-get-more-information"></a>¿Dónde puedo obtener más información?  
  [Usar el recopilador independiente de IntelliTrace](../debugger/using-the-intellitrace-stand-alone-collector.md)  
   
  [Características de IntelliTrace](../debugger/intellitrace-features.md)  
   
- [Recopilar más datos de diagnóstico en las pruebas manuales](http://msdn.microsoft.com/library/bb5a2cc0-84f5-4dfe-9560-ca3d313aefd2)  
+ [Recopilar más datos de diagnóstico en las pruebas manuales](https://msdn.microsoft.com/library/bb5a2cc0-84f5-4dfe-9560-ca3d313aefd2)  
   
  [IntelliTrace](../debugger/intellitrace.md)  
   
 #### <a name="forums"></a>Foros  
  [Depurador de Visual Studio](http://go.microsoft.com/fwlink/?LinkId=262263)  
   
-#### <a name="guidance"></a>Orientación  
+#### <a name="guidance"></a>Guía  
  [Pruebas para entrega continua con Visual Studio 2012 – capítulo 6: Un cuadro de herramientas de pruebas](http://go.microsoft.com/fwlink/?LinkID=255203)

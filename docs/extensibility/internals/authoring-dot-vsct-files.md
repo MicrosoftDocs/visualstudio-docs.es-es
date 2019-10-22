@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - VSCT files, manual authoring
 ms.assetid: e9f715dc-12b7-439b-bdf3-f3dc75e62f1c
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 84c7a5194e48e73fbabf60b7c9ef89e6cb04d855
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: f871cfce2fd3e26895d690b1f51ee38461493810
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60053089"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66315806"
 ---
 # <a name="author-vsct-files"></a>Archivos .vsct de autor
 Este documento muestra cómo crear un *.vsct* archivo para agregar elementos de menú, barras de herramientas y otros elementos de interfaz de usuario para el entorno de desarrollo integrado (IDE) de Visual Studio. Siga estos pasos al agregar elementos de interfaz de usuario a un paquete de Visual Studio (VSPackage) que no tenga ya una *.vsct* archivo.
@@ -86,7 +86,7 @@ Este documento muestra cómo crear un *.vsct* archivo para agregar elementos de 
     Establecer el `guid` y `id` los atributos de la `Menu` elemento y, después, establezca el `type` atributo al tipo de menú que desea. También puede establecer el `priority` atributo para establecer la posición relativa del menú en el grupo primario.
 
    > [!NOTE]
-   >  El `priority` atributo no es aplicable a las barras de herramientas y menús contextuales.
+   > El `priority` atributo no es aplicable a las barras de herramientas y menús contextuales.
 
 2. Todos los comandos en el IDE de Visual Studio deben hospedarse en grupos de comandos que son elementos secundarios directos de los menús y barras de herramientas. Si va a agregar nuevos menús o barras de herramientas al IDE, estos deben contener nuevos grupos de comandos. También puede agregar grupos de comandos a menús y barras de herramientas existentes para que se pueden agrupar visualmente los comandos.
 
@@ -99,14 +99,14 @@ Este documento muestra cómo crear un *.vsct* archivo para agregar elementos de 
    1. Establecer el `guid` y `id` atributos de cada uno `Button` elemento y, después, establezca el `type` atributo al tipo de botón que desee. También puede establecer el `priority` atributo para establecer la posición relativa del comando en el grupo primario.
 
        > [!NOTE]
-       >  Use `type="button"` para los botones de las barras de herramientas y comandos de menú estándar.
+       > Use `type="button"` para los botones de las barras de herramientas y comandos de menú estándar.
 
    2. En el `Button` elemento, agregue un [cadenas](../../extensibility/strings-element.md) elemento que contiene un [ButtonText](../../extensibility/buttontext-element.md) elemento y un [CommandName](../../extensibility/commandname-element.md) elemento. El `ButtonText` elemento proporciona la etiqueta de texto para un elemento de menú o la información sobre herramientas para un botón de barra de herramientas. El `CommandName` elemento proporciona el nombre del comando para usar en el comando.
 
    3. Si el comando tendrá un icono, cree un [icono](../../extensibility/icon-element.md) elemento en el `Button` y establezca su `guid` y `id` atributos a la `Bitmap` (elemento) para el icono.
 
        > [!NOTE]
-       >  Botones de barra de herramientas deben tener iconos.
+       > Botones de barra de herramientas deben tener iconos.
 
    Para obtener más información, consulte [MenuCommands frente a. OleMenuCommands](../../extensibility/menucommands-vs-olemenucommands.md).
 

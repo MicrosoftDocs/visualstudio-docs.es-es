@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - debugging [Debugging SDK], startup events
 ms.assetid: 306ea0b4-6d9e-4871-8d8d-a4032d422940
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4c9363270593f1d492ec57d119f9a70f8371b0ac
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 5fa11dbf4ff05cc9fec033a083925b9c4f0b7e0f
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56685903"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66314994"
 ---
 # <a name="send-startup-events-after-a-launch"></a>Enviar eventos de inicio después de un lanzamiento
 Una vez que el motor de depuración (DE) está asociado al programa, envía una serie de eventos de inicio a la sesión de depuración.
@@ -31,7 +31,7 @@ Una vez que el motor de depuración (DE) está asociado al programa, envía una 
 - Un evento completo de carga, enviado cuando el código está cargado y listo para ejecutarse, pero antes de ejecutar cualquier código.
 
   > [!NOTE]
-  >  Cuando este evento continúa, se inicializan las variables globales y ejecutan rutinas de inicio.
+  > Cuando este evento continúa, se inicializan las variables globales y ejecutan rutinas de inicio.
 
 - Posibles otros eventos del módulo de carga y de creación de subprocesos.
 

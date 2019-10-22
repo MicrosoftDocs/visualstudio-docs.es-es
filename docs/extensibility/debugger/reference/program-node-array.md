@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - PROGRAM_NODE_ARRAY structure
 ms.assetid: 8eeea600-eda5-4b7c-868a-0b86d177b0a5
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9af33dd296c222a6ab187097437e3774d2bbdbd4
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: b4b2cbda4bce24c08297734e9b50a004ea9a67dc
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56684018"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66309265"
 ---
 # <a name="programnodearray"></a>PROGRAM_NODE_ARRAY
 Contiene una matriz de objetos que describen los programas de interés.
@@ -39,9 +42,11 @@ public struct tagPROGRAM_NODE_ARRAY {
 ```
 
 ## <a name="members"></a>Miembros
- Número de objetos dwCount en el `Members` matriz.
+ `dwCount`\
+ Número de objetos de la `Members` matriz.
 
- Los miembros de una matriz de [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md) objetos que describen los programas que se solicita.
+ `Members`\
+ Una matriz de [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md) objetos que describen los programas que se solicita.
 
 ## <a name="remarks"></a>Comentarios
  Esta estructura es parte de la [PROVIDER_PROCESS_DATA](../../../extensibility/debugger/reference/provider-process-data.md) estructura que a su vez se rellena mediante una llamada a la [GetProviderProcessData](../../../extensibility/debugger/reference/idebugprogramprovider2-getproviderprocessdata.md) método.

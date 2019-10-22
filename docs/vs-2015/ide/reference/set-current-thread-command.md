@@ -11,39 +11,35 @@ helpviewer_keywords:
 - Debug.SetCurrentThread command
 ms.assetid: 9917ed1d-6c30-4d94-b2f0-69acce74f1b2
 caps.latest.revision: 20
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 107303082202cb1dbb162ef9dfb845c2f6564df4
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 67bf0d37e6f734fa4b3229488bc3eee2732c3063
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59655691"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72665446"
 ---
 # <a name="set-current-thread-command"></a>Establecer subproceso actual (Comando)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Establece el subproceso especificado como el subproceso actual.  
-  
-## <a name="syntax"></a>Sintaxis  
-  
-```  
-Debug.SetCurrentThread index  
-```  
-  
-## <a name="arguments"></a>Argumentos  
- `index`  
- Obligatorio. Selecciona un subproceso por su índice.  
-  
-## <a name="example"></a>Ejemplo  
-  
-```  
->Debug.SetCurrentThread 1  
-```  
-  
-## <a name="see-also"></a>Vea también  
- [Comandos de Visual Studio](../../ide/reference/visual-studio-commands.md)   
- [Ventana Comandos](../../ide/reference/command-window.md)   
- [Cuadro Buscar/Comando](../../ide/find-command-box.md)   
- [Visual Studio Command Aliases](../../ide/reference/visual-studio-command-aliases.md)
+Establece el subproceso especificado como el subproceso actual.
+
+## <a name="syntax"></a>Sintaxis
+
+```
+Debug.SetCurrentThread index
+```
+
+## <a name="arguments"></a>Argumentos
+ `index` Obligatorio. Selecciona un subproceso por su índice.
+
+## <a name="example"></a>Ejemplo
+
+```
+>Debug.SetCurrentThread 1
+```
+
+## <a name="see-also"></a>Otras referencias
+ [Comandos de Visual Studio](../../ide/reference/visual-studio-commands.md) [ventana comandos](../../ide/reference/command-window.md) [Buscar/comando cuadro](../../ide/find-command-box.md) de comandos de [Visual Studio alias de comandos](../../ide/reference/visual-studio-command-aliases.md)

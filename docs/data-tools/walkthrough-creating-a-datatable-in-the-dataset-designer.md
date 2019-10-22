@@ -7,63 +7,63 @@ helpviewer_keywords:
 - Dataset Designer, creating data tables
 - tables [Visual Studio], creating
 - data [Visual Studio], Dataset Designer
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 1126117cb1fc26c4f61bfb0f6ed0e19e86ce9323
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 9dbf7116c614a8eec599f197f975ab4c389bc950
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60072674"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72648071"
 ---
-# <a name="walkthrough-create-a-datatable-in-the-dataset-designer"></a>Tutorial: Crear un objeto DataTable en el Diseñador de Dataset
+# <a name="walkthrough-create-a-datatable-in-the-dataset-designer"></a>Tutorial: crear un DataTable en el Diseñador de DataSet
 
-En este tutorial se explica cómo crear un <xref:System.Data.DataTable> (sin un TableAdapter) mediante el **Diseñador de Dataset**. Para obtener información sobre la creación de tablas de datos que incluyen los TableAdapters, vea [crear y configurar TableAdapters](../data-tools/create-and-configure-tableadapters.md).
+En este tutorial se explica cómo crear una <xref:System.Data.DataTable> (sin un TableAdapter) mediante el **Diseñador de DataSet**. Para obtener información sobre cómo crear tablas de datos que incluyen TableAdapters, vea [crear y configurar TableAdapters](../data-tools/create-and-configure-tableadapters.md).
 
 ## <a name="create-a-new-windows-forms-application"></a>Crear una nueva aplicación de Windows Forms
 
-1. En Visual Studio, en el **archivo** menú, seleccione **New** > **proyecto**.
+1. En Visual Studio, en el menú **archivo** , seleccione **nuevo** **proyecto**de  > .
 
-2. Expanda el **Visual C#** o **Visual Basic** en el panel izquierdo, seleccione **Windows Desktop**.
+2. Expanda **Visual C#**  o **Visual Basic** en el panel izquierdo y, a continuación, seleccione **escritorio de Windows**.
 
-3. En el panel central, seleccione la **aplicación de Windows Forms** tipo de proyecto.
+3. En el panel central, seleccione el tipo de proyecto **Windows Forms aplicación** .
 
-4. Denomine el proyecto **DataTableWalkthrough**y, a continuación, elija **Aceptar**.
+4. Asigne al proyecto el nombre **DataTableWalkthrough**y, a continuación, elija **Aceptar**.
 
-     El **DataTableWalkthrough** se crea y se agrega al proyecto **el Explorador de soluciones**.
+     El proyecto **DataTableWalkthrough** se crea y se agrega a **Explorador de soluciones**.
 
-## <a name="add-a-new-dataset-to-the-application"></a>Agregar un nuevo conjunto de datos a la aplicación
+## <a name="add-a-new-dataset-to-the-application"></a>Agregar un nuevo conjunto de nuevos a la aplicación
 
 1. En el menú **Proyecto**, seleccione **Agregar nuevo elemento**.
 
      Aparecerá el cuadro de diálogo **Agregar nuevo elemento**.
 
-2. En el panel izquierdo, seleccione **datos**, a continuación, seleccione **DataSet** en el panel central.
+2. En el panel izquierdo, seleccione datos y, a continuación, seleccione **conjunto** de **datos**en el panel central.
 
 3. Haga clic en **Agregar**.
 
-     Visual Studio agrega un archivo denominado **DataSet1.xsd** al proyecto y lo abre en el **Diseñador de Dataset**.
+     Visual Studio agrega un archivo denominado **DataSet1. xsd** al proyecto y lo abre en el **Diseñador de DataSet**.
 
-## <a name="add-a-new-datatable-to-the-dataset"></a>Agregar una nueva DataTable al conjunto de datos
+## <a name="add-a-new-datatable-to-the-dataset"></a>Agregar un nuevo DataTable al conjunto de
 
-1. Arrastre un **DataTable** desde el **DataSet** pestaña de la **cuadro de herramientas** en el **Diseñador de Dataset**.
+1. Arrastre un **objeto DataTable** desde la pestaña **DataSet** del **cuadro de herramientas** hasta el **Diseñador de DataSet**.
 
-     Una tabla denominada **DataTable1** se agrega al conjunto de datos.
+     Se agrega una tabla denominada **DataTable1** al conjunto de DataSet.
 
-2. Haga clic en la barra de título de **DataTable1** y cámbiele el nombre `Music`.
+2. Haga clic en la barra de título de **DataTable1** y cambie su nombre `Music`.
 
 ## <a name="add-columns-to-the-datatable"></a>Agregar columnas a la DataTable
 
-1. Haga clic en el **música** tabla. Seleccione **Agregar** y, a continuación, haga clic en **Columna**.
+1. Haga clic con el botón secundario en la tabla **música** . Seleccione **Agregar** y, a continuación, haga clic en **Columna**.
 
-2. Nombre de la columna `SongID`.
+2. Asigne a la columna el nombre `SongID`.
 
 3. En la ventana **Propiedades** , establezca la propiedad <xref:System.Data.DataColumn.DataType%2A> en <xref:System.Int16?displayProperty=fullName>.
 
-4. Repita este proceso y agregue las siguientes columnas:
+4. Repita este proceso y agregue las columnas siguientes:
 
      `SongTitle`: <xref:System.String?displayProperty=fullName>
 
@@ -71,15 +71,15 @@ En este tutorial se explica cómo crear un <xref:System.Data.DataTable> (sin un 
 
      `Genre`: <xref:System.String?displayProperty=fullName>
 
-## <a name="set-the-primary-key-for-the-table"></a>Establezca la clave principal para la tabla
+## <a name="set-the-primary-key-for-the-table"></a>Establecer la clave principal de la tabla
 
-Todas las tablas de datos deben tener una clave principal. Una clave principal identifica un registro específico en una tabla de datos.
+Todas las tablas de datos deben tener una clave principal. Una clave principal identifica de forma única un registro específico en una tabla de datos.
 
-Para establecer la clave principal, haga clic en el **IdCanción** columna y, a continuación, haga clic en **establecer clave principal**. Un icono clave aparece junto a la **IdCanción** columna.
+Para establecer la clave principal, haga clic con el botón secundario en la columna **SongID** y, a continuación, haga clic en **establecer clave principal**. Aparece un icono de llave junto a la columna **SongID** .
 
 ## <a name="save-your-project"></a>Guardar el proyecto
 
-Para guardar la **DataTableWalkthrough** proyecto, en el **archivo** menú, seleccione **guardar todo**.
+Para guardar el proyecto **DataTableWalkthrough** , en el menú **archivo** , seleccione **guardar todo**.
 
 ## <a name="see-also"></a>Vea también
 

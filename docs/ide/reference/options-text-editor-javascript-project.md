@@ -1,28 +1,28 @@
 ---
 title: Opciones, Editor de texto, JavaScript, Proyecto
 ms.date: 1/15/2019
-ms.technology: vs-ide-general
+ms.technology: vs-javascript
 ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.JavaScript.Project.General
 - VS.ToolsOptionsPages.Text_Editor.JavaScript.Project
 - VS.ToolsOptionsPages.Text_Editor.TypeScript.Project.General
 - VS.ToolsOptionsPages.Text_Editor.TypeScript.Project
-author: gewarren
-ms.author: gewarren
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 09ed64d6bffaa4453c3294229ee48fd0a065eb74
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 190cbdb2a8096415985d83fc525b997572d252c2
+ms.sourcegitcommit: ce1ab8a25c66a83e60eab80ed8e1596fe66dd85c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62778178"
+ms.lasthandoff: 07/29/2019
+ms.locfileid: "68605922"
 ---
 # <a name="options-text-editor-javascript-project"></a>Opciones, Editor de texto, JavaScript, Proyecto
 
-Use la página **Proyecto** del cuadro de diálogo **Opciones** para especificar las opciones de proyecto de JavaScript en el Editor de código. Para acceder a esta página, en la barra de menús elija **Herramientas** > **Opciones** y expanda **Editor de texto** > **JavaScript** > **Proyecto**.
+Use la página **Proyecto** del cuadro de diálogo **Opciones** para especificar opciones de proyecto de JavaScript y TypeScript en el Editor de código. Para acceder a esta página, en la barra de menús, elija **Herramientas** > **Opciones** y expanda **Editor de texto** > **JavaScript/TypeScript** > **Proyecto**.
 
 ## <a name="project-analysis-options"></a>Opciones de análisis del proyecto
 
@@ -60,7 +60,7 @@ Estas opciones determinan cómo el editor trata los archivos TypeScript que no f
 
 ### <a name="uielement-list"></a>Lista de UIElement
 
-|Opción|Descripción|
+|Opción|DESCRIPCIÓN|
 |------------|-----------------|
 |**React Framework**|Cuando se selecciona esta opción, el Editor de código emite una extensión de archivo *.js*.|
 |**Preserve**|Cuando se selecciona esta opción, el Editor de código mantiene el archivo JSX como parte de la salida y emite una extensión de archivo *.jsx*.|

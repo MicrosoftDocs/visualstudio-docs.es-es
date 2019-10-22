@@ -6,17 +6,20 @@ helpviewer_keywords:
 - GetSymUnmanagedReader
 - IDebugSymbolProviderDirect::GetSymUnmanagedReader
 ms.assetid: 147bacfa-f66c-43e0-8a72-e601058dc57f
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e0c038a7aa2b398a2ee58101248d2968913ba3b4
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: d2fb5a2fd5d8ba34112e01da07fc1f41177e8e9f
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56695185"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66320409"
 ---
 # <a name="idebugsymbolproviderdirectgetsymunmanagedreader"></a>IDebugSymbolProviderDirect::GetSymUnmanagedReader
 Recupera un lector de símbolos de código no administrado.
@@ -39,18 +42,15 @@ int GetSymUnmanagedReader (
 );
 ```
 
-#### <a name="parameters"></a>Parámetros
- `ulAppDomainID`
+## <a name="parameters"></a>Parámetros
+`ulAppDomainID`\
+[in] Identificador del dominio de aplicación.
 
- [in] Identificador del dominio de aplicación.
+`guidModule`\
+[in] Identificador único del módulo.
 
- `guidModule`
-
- [in] Identificador único del módulo.
-
- `ppSymUnmanagedReader`
-
- [out] Devuelve un objeto que representa el lector de símbolos de código no administrado.
+`ppSymUnmanagedReader`\
+[out] Devuelve un objeto que representa el lector de símbolos de código no administrado.
 
 ## <a name="return-value"></a>Valor devuelto
  Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.

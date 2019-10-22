@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugObject::GetMemoryContext method
 ms.assetid: 6760a0d3-a898-4e81-b68f-c45c584b225b
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e47fd5a7a8285db6c9cdf923699eb4b8f79b451a
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 38f913952c3e2f58b0d7bd2a27ac20e8f754da2f
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56722972"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66323627"
 ---
 # <a name="idebugobjectgetmemorycontext"></a>IDebugObject::GetMemoryContext
 Obtiene el contexto de la memoria que representa la dirección del valor del objeto.
@@ -36,10 +39,9 @@ int GetMemoryContext(
 );
 ```
 
-#### <a name="parameters"></a>Parámetros
- `pContext`
-
- [out] Devuelve un [IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md) objeto que representa la dirección del valor del objeto.
+## <a name="parameters"></a>Parámetros
+`pContext`\
+[out] Devuelve un [IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md) objeto que representa la dirección del valor del objeto.
 
 ## <a name="return-value"></a>Valor devuelto
  Si se realiza correctamente, devuelve S_OK; en caso contrario, devuelve un código de error.

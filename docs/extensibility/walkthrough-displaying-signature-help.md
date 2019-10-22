@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], new - signature help/parameter info
 ms.assetid: 4a6a884b-5730-4b54-9264-99684f5b523c
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 89d81ee2e860dead62352cc14cef95e21536c29d
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 403009367f6cdf8a9fd1ebb750ee9bb020690685
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60105329"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66312418"
 ---
 # <a name="walkthrough-display-signature-help"></a>Tutorial: Mostrar la Ayuda de firma
 Ayuda para la firma (también conocido como *información de parámetros*) muestra la firma de un método en una información sobre herramientas cuando un usuario escribe el carácter de inicio de lista de parámetros (normalmente un paréntesis de apertura). Como se ha escrito un parámetro y el separador de parámetro (normalmente una coma), la información sobre herramientas se actualiza para mostrar el siguiente parámetro en negrita. Puede definir la Ayuda de signatura de las siguientes maneras: en el contexto de un servicio de lenguaje, definir su propia extensión de nombre de archivo y el tipo de contenido y mostrar la Ayuda de firma para solo ese tipo o mostrar la Ayuda de firma para un tipo de contenido existente (por ejemplo, "text"). En este tutorial se muestra cómo mostrar la Ayuda de signatura para el tipo de contenido "text".

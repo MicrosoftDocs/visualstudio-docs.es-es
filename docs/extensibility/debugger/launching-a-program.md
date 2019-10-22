@@ -6,17 +6,17 @@ helpviewer_keywords:
 - debug engines, launching
 - programs, launching
 ms.assetid: 6857e9c6-e44a-468a-afa4-f7c4a0b77844
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 46d35961e1db1acf11d544b7523a264470340de0
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: d9488c002e78828471374b954550843e16ff0e6b
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56710882"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66344081"
 ---
 # <a name="launch-a-program"></a>Iniciar un programa
 Los usuarios que desean depurar un programa pueden presionar **F5** para ejecutar el depurador desde el IDE. Esto inicia una serie de eventos producidos en última instancia en el IDE se conecta a un motor de depuración (DE), que a su vez está conectado o adjunta, al programa como se indica a continuación:
@@ -25,17 +25,17 @@ Los usuarios que desean depurar un programa pueden presionar **F5** para ejecuta
 
 2. Si se especifica a DE, el sistema operativo para iniciar el programa llama a la DE. Como consecuencia de iniciar el programa, se carga el entorno de tiempo de ejecución del programa. Por ejemplo, si se escribe un programa en MSIL, se invocará el common language runtime para ejecutar el programa.
 
-    O bien
+    -o bien-
 
     Si no se especifica a DE, el puerto llama el sistema operativo para iniciar el programa, lo que hace que el entorno de tiempo de ejecución del programa cargar.
 
    > [!NOTE]
-   >  Si a DE se usa para iniciar un programa, es probable que se adjuntará al mismo DE al programa.
+   > Si a DE se usa para iniciar un programa, es probable que se adjuntará al mismo DE al programa.
 
 3. Dependiendo de si el puerto o la DE inicia el programa, la DE o el entorno de tiempo de ejecución, a continuación, crea una descripción del programa o el nodo y notifica el puerto que se ejecuta el programa.
 
    > [!NOTE]
-   >  Se recomienda que el entorno de tiempo de ejecución crea el nodo de programa, porque el nodo de programa es una representación reducida de un programa que se puede depurar. No hay ninguna necesidad de cargar una completa DE solo para crear y registrar un nodo de programa. Si se ha diseñado la DE para ejecutarse en el proceso del IDE, pero ningún IDE está realmente se está ejecutando, debe haber un componente que se puede agregar un nodo de programa al puerto.
+   > Se recomienda que el entorno de tiempo de ejecución crea el nodo de programa, porque el nodo de programa es una representación reducida de un programa que se puede depurar. No hay ninguna necesidad de cargar una completa DE solo para crear y registrar un nodo de programa. Si se ha diseñado la DE para ejecutarse en el proceso del IDE, pero ningún IDE está realmente se está ejecutando, debe haber un componente que se puede agregar un nodo de programa al puerto.
 
    El programa recién creado, junto con todos los demás programas, relacionados con o no relacionados, inicia o adjuntados para desde el mismo IDE, crear una sesión de depuración.
 

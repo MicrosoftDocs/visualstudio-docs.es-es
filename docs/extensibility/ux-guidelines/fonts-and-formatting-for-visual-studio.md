@@ -3,17 +3,17 @@ title: Fuentes y formato de Visual Studio | Microsoft Docs
 ms.date: 04/26/2017
 ms.topic: conceptual
 ms.assetid: c3c3df69-83b4-4fd0-b5b1-e18c33f39376
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c0f451ed2ddb6b619e896a664e5592496e4af4de
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 8634ab15a10b59fc21de390e0633d6d91793616d
+ms.sourcegitcommit: 748d9cd7328a30f8c80ce42198a94a4b5e869f26
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60096262"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67891037"
 ---
 # <a name="fonts-and-formatting-for-visual-studio"></a>Fuentes y formato de Visual Studio
 ## <a name="BKMK_TheEnvironmentFont"></a> La fuente del entorno
@@ -90,7 +90,8 @@ window.ShowModal()
 ### <a name="BKMK_Formatting"></a> Formato de referencia (escalado o poner en negrita)
  Algunos cuadros de diálogo requieren determinado texto esté en negrita o un tamaño distinto de la fuente del entorno. Anteriormente, las fuentes mayores que la fuente del entorno se codificaron como "`environment font +2`" o similar. Uso de los fragmentos de código proporcionado admitirá valores altos de PPP monitores y asegúrese de que el texto para mostrar aparece siempre en el tamaño correcto y peso (como la luz o Semilight).
 
-> **Nota: Antes de aplicar formato, asegúrese de que está siguiendo las directrices recogidas en [estilo de texto](../../extensibility/ux-guidelines/fonts-and-formatting-for-visual-studio.md#BKMK_TextStyle).**
+> [!NOTE]
+> Antes de aplicar formato, asegúrese de que está siguiendo las directrices recogidas en [estilo de texto](../../extensibility/ux-guidelines/fonts-and-formatting-for-visual-studio.md#BKMK_TextStyle). **
 
  Para escalar la fuente del entorno, establezca el estilo del TextBlock o Label como se indica. Cada uno de estos fragmentos de código, que se usan correctamente, generará la fuente correcta, incluidas las variaciones de tamaño y peso adecuadas.
 
@@ -394,11 +395,11 @@ protected static void SetFontStyles(Control topControl, Control parent, Font ref
 
 - Los encabezados de mayor tamaño (fuente del entorno x 155% o superior) se pueden colorear para estos propósitos:
 
-    - Para proporcionar el atractivo visual a la firma de la interfaz de usuario de Visual Studio
+  - Para proporcionar el atractivo visual a la firma de la interfaz de usuario de Visual Studio
 
-    - Para llamar la atención sobre un área específica
+  - Para llamar la atención sobre un área específica
 
-    - Para ofrecer un alivio de color del texto de entorno oscuro de gris o negro estándar
+  - Para ofrecer un alivio de color del texto de entorno oscuro de gris o negro estándar
 
 - Color en los encabezados debe aprovechar existente Visual Studio marca colores, principalmente el principal púrpura, FF68217A #.
 
@@ -457,7 +458,7 @@ protected static void SetFontStyles(Control topControl, Control parent, Font ref
 
 |||
 |-|-|
-|**Uso:**<br /><br /> : Encabezados de sección en los cuadros de diálogo de firma<br />-Nodos superior en la vista de árbol<br />-Navegación por tabulación vertical<br /><br /> **Hacer:** Caso de uso de oración<br /><br /> **No:**<br /><br /> -En negrita, cursiva o negrita cursiva<br />-Use para el texto de cuerpo<br />-Usar controles estándar de Visual Studio<br />-Usar ventanas de herramientas|**Aparece como:** 11 pt Segoe UI<br /><br /> **Ejemplo Visual:**<br /><br /> ![Ejemplo de encabezado con fuente del entorno 122%](../../extensibility/ux-guidelines/media/0202-e_ef122.png "0202 e_EF122")|
+|**Uso:**<br /><br /> : Encabezados de sección en los cuadros de diálogo de firma<br />-Nodos superior en la vista de árbol<br />-Navegación por tabulación vertical<br /><br /> **Hacer:** Caso de uso de oración<br /><br /> **No:**<br /><br /> -En negrita, cursiva o negrita cursiva<br />-Use para el texto de cuerpo<br />-Usar controles estándar de Visual Studio<br />-Usar ventanas de herramientas|**Aparece como:** pt 11 Segoe UI<br /><br /> **Ejemplo Visual:**<br /><br /> ![Ejemplo de encabezado con fuente del entorno 122%](../../extensibility/ux-guidelines/media/0202-e_ef122.png "0202 e_EF122")|
 
 #### <a name="environment-font--bold"></a>Fuente del entorno + negrita
 

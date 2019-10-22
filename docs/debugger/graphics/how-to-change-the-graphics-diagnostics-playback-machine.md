@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 11f5c8e32086b32c0c7167a70588ee446ec409c1
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: cd1f893874a9b0cfe1c7cd36f8e0bb1c38beaca1
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60107247"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63388559"
 ---
 # <a name="how-to-change-the-graphics-diagnostics-playback-machine"></a>Procedimiento Cambio de la máquina de reproducción de Diagnóstico de gráficos
 Puede reproducir información de gráficos mediante el uso de la máquina local, o mediante el uso de un dispositivo o equipo remoto.
@@ -46,7 +46,7 @@ Puede reproducir información de gráficos mediante el uso de la máquina local,
 4. Elija el botón **Seleccionar**.
 
 > [!NOTE]
->  El **conexiones del depurador remoto** cuadro de diálogo también podría mostrar destinos de depuración remota que están conectados directamente a la máquina de desarrollo o están en la misma subred. Puede usar uno de estos destinos de depuración remota como máquina de reproducción de diagnóstico de gráficos sin configurarlo manualmente. En el **conexiones del depurador remoto** cuadro de diálogo, seleccione el destino que desee y, a continuación, elija el **seleccione** botón.
+> El **conexiones del depurador remoto** cuadro de diálogo también podría mostrar destinos de depuración remota que están conectados directamente a la máquina de desarrollo o están en la misma subred. Puede usar uno de estos destinos de depuración remota como máquina de reproducción de diagnóstico de gráficos sin configurarlo manualmente. En el **conexiones del depurador remoto** cuadro de diálogo, seleccione el destino que desee y, a continuación, elija el **seleccione** botón.
 
 ## <a name="see-also"></a>Vea también
 - [Documento de registro de gráficos](graphics-log-document.md)

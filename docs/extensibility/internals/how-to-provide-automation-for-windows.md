@@ -6,17 +6,17 @@ helpviewer_keywords:
 - automation [Visual Studio SDK], tool windows
 - tool windows, automation
 ms.assetid: 512ab2a4-7987-4912-8f40-8804bf66f829
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 400b7c89dd10d01fcc7ac4eb238c2bde10117fdd
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 547ace3b093aa8c5f21b0bcbdbafda5a1452dd23
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60086824"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66351056"
 ---
 # <a name="how-to-provide-automation-for-windows"></a>Procedimiento Provisión de automatización para windows
 

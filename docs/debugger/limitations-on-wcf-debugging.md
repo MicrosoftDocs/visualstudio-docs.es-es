@@ -17,11 +17,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 34b69ac69c580fbd40278b5b7a0c9be26d672fa3
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60082027"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62905973"
 ---
 # <a name="limitations-on-wcf-debugging"></a>Limitaciones de la depuración de WCF
 Hay tres maneras mediante las que puede empezar a depurar un servicio WCF:

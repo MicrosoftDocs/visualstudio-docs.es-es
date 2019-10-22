@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugEngine3::SetEngineGuid
 ms.assetid: 8bdfa05d-feb7-4d98-abac-77825a04c50f
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 14c1ad0e659df29c462d145e8c98166079857275
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 66b72edc81cdde1d3d83e4c3534b50e40dd2cf19
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56702218"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66352498"
 ---
 # <a name="idebugengine3setengineguid"></a>IDebugEngine3::SetEngineGuid
 Este método establece el motor de depuración (DE) `GUID`.
@@ -36,10 +39,9 @@ int SetEngineGuid(
 );
 ```
 
-#### <a name="parameters"></a>Parámetros
- `guidEngine`
-
- [in] `GUID` del motor.
+## <a name="parameters"></a>Parámetros
+`guidEngine`\
+[in] `GUID` del motor.
 
 ## <a name="return-value"></a>Valor devuelto
  Si es correcto, devuelve `S_OK`; en caso contrario, devuelve el código de error.

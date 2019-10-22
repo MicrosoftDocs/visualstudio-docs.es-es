@@ -1,5 +1,5 @@
 ---
-title: Filtrar Exponer código a VBA en un C# proyecto
+title: Procedimiento Exponer código a VBA en un C# proyecto
 ms.custom: seodec18
 ms.date: 02/02/2017
 ms.topic: conceptual
@@ -16,14 +16,14 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 6da4d0642738fca2f35adbc2ec4e039e3edf11b2
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: ac41f4da29b95ba1fcd1601f98104956d584212a
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56604484"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63419520"
 ---
-# <a name="how-to-expose-code-to-vba-in-a-visual-c-project"></a>Filtrar Exponer código a VBA en un proyecto de Visual C#
+# <a name="how-to-expose-code-to-vba-in-a-visual-c-project"></a>Procedimiento Exponer código a VBA en un proyecto de Visual C#
   Puede exponer el código de un proyecto de Visual C# en Visual Basic para aplicaciones (VBA) si desea que los dos tipos de código para interactuar entre sí.
 
  El proceso de Visual C# es diferente del proceso de Visual Basic. Para obtener más información, vea [Cómo: Exponer código a VBA en un proyecto de Visual Basic](../vsto/how-to-expose-code-to-vba-in-a-visual-basic-project.md).
@@ -42,7 +42,7 @@ ms.locfileid: "56604484"
     Para obtener más información acerca de los formatos de archivo de documento que admiten macros, vea [combinar VBA y personalizaciones de nivel de documento](../vsto/combining-vba-and-document-level-customizations.md).
 
    > [!NOTE]
-   >  Esta característica no se puede utilizar en proyectos de plantilla de Word.
+   > Esta característica no se puede utilizar en proyectos de plantilla de Word.
 
 2. Asegúrese de que se puede ejecutar sin preguntar al usuario que habilite macros código VBA del documento. Puede confiar en la ejecución de código VBA si agrega la ubicación del proyecto de Office a la lista de ubicaciones de confianza en la configuración del Centro de confianza de Word o Excel.
 
@@ -93,7 +93,7 @@ ms.locfileid: "56604484"
 10. En la ventana **Propiedades** , seleccione la propiedad **ReferenceAssemblyFromVbaProject** y cambie el valor a **True**.
 
     > [!NOTE]
-    >  Si el documento o libro aún no contiene código VBA o si no es de confianza para ejecutar código VBA del documento, recibirá un mensaje de error al establecer el **ReferenceAssemblyFromVbaProject** propiedad **True**. Esto se debe a que Visual Studio no puede modificar el proyecto de VBA del documento en esta situación.
+    > Si el documento o libro aún no contiene código VBA o si no es de confianza para ejecutar código VBA del documento, recibirá un mensaje de error al establecer el **ReferenceAssemblyFromVbaProject** propiedad **True**. Esto se debe a que Visual Studio no puede modificar el proyecto de VBA del documento en esta situación.
 
 11. Haga clic en **Aceptar** en el mensaje que se muestra. Este mensaje le recuerda que si agrega VBA de código en el libro o documento al ejecutar el proyecto de [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], el código de VBA se perderá la próxima vez que se compila el proyecto. Esto es porque el documento en la compilación de salida de carpeta se sobrescribe cada vez que se compila el proyecto.
 

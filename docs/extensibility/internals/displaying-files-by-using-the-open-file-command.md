@@ -7,17 +7,17 @@ helpviewer_keywords:
 - Open File command
 - persistence, supporting Open File command
 ms.assetid: 4fff0576-b2f3-4f17-9769-930f926f273c
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9cc24e259ac5aaa8526d5855a1662c146e1438ff
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 19fda87f0e2692d30b9a99777ca11edd7b3906f0
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60112161"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66324342"
 ---
 # <a name="display-files-by-using-the-open-file-command"></a>Mostrar archivos mediante el comando Abrir archivo
 Los pasos siguientes describen cómo el IDE controla el **abrir archivo** comando, que está disponible en el **archivo** menú [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. También se describe cómo los proyectos deben responder a las llamadas que proceden de este comando.
@@ -31,7 +31,7 @@ Los pasos siguientes describen cómo el IDE controla el **abrir archivo** comand
     - Si el archivo no está abierto, el IDE llama <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject3.IsDocumentInProject%2A> para cada proyecto para determinar qué proyecto puede abrir el archivo de consulta.
 
         > [!NOTE]
-        >  En la implementación del proyecto de <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject3.IsDocumentInProject%2A>, proporcione un valor de prioridad que indica el nivel en el que el proyecto abre el archivo. Se proporcionan los valores de prioridad en el <xref:Microsoft.VisualStudio.Shell.Interop.VSDOCUMENTPRIORITY> enumeración.
+        > En la implementación del proyecto de <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject3.IsDocumentInProject%2A>, proporcione un valor de prioridad que indica el nivel en el que el proyecto abre el archivo. Se proporcionan los valores de prioridad en el <xref:Microsoft.VisualStudio.Shell.Interop.VSDOCUMENTPRIORITY> enumeración.
 
 2. Cada proyecto responde con un nivel de prioridad que indica la importancia coloca en la que el proyecto para abrir el archivo.
 

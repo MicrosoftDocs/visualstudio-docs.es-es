@@ -8,12 +8,12 @@ ms.assetid: 8496afb4-1573-4585-ac67-c3d58b568a12
 caps.latest.revision: 55
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: acad28e365c70a89c50b77e141e428468b9a6df2
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 791400746247d71c06e133d10469132f38544b21
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60109795"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65689989"
 ---
 # <a name="creating-a-software-development-kit"></a>Creación de un kit de desarrollo de software
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -106,7 +106,7 @@ Un kit de desarrollo de software (SDK) es una colección de API que puede hacer 
   
 2. Carpeta referencias: los archivos binarios que contienen las API. Podría tratarse de ensamblados o archivos de metadatos de Windows (WinMD).  
   
-3. Carpeta Redist: los archivos que son necesarios para el tiempo de ejecución o depuración y deberían obtener empaqueta como parte de la aplicación del usuario. Todos los archivos binarios deben colocarse debajo \redist\\< config\>\\< arch\>, y los nombres de los binarios deben tener el formato siguiente para garantizar la unicidad:  **\<compañía >.\< producto >. \<propósito >. \<extensión >**. Por ejemplo, Microsoft.Cpp.Build.dll. Todos los archivos con nombres que podrían entrar en conflicto con los nombres de archivo de otros SDK (por ejemplo, los archivos de javascript, css, pri, xaml, png y jpg) deben colocarse debajo \redist\\< config\>\\< arch\> \\< sdkname\>\, excepto los archivos que están asociados con XAML controla. Estos archivos deben colocarse debajo \redist\\< config\>\\< arch\>\\< componentname\>\\.  
+3. Carpeta Redist: los archivos que son necesarios para el tiempo de ejecución o depuración y deberían obtener empaqueta como parte de la aplicación del usuario. Todos los archivos binarios deben colocarse debajo \redist\\< config\>\\< arch\>, y los nombres de los binarios deben tener el formato siguiente para garantizar la unicidad:  **\<compañía >.\< producto >. \<propósito >. \<extensión >** . Por ejemplo, Microsoft.Cpp.Build.dll. Todos los archivos con nombres que podrían entrar en conflicto con los nombres de archivo de otros SDK (por ejemplo, los archivos de javascript, css, pri, xaml, png y jpg) deben colocarse debajo \redist\\< config\>\\< arch\> \\< sdkname\>\, excepto los archivos que están asociados con XAML controla. Estos archivos deben colocarse debajo \redist\\< config\>\\< arch\>\\< componentname\>\\.  
   
 4. Carpeta DesignTime: los archivos que sean necesarios en solo pre-run o depuración de tiempo y no debe empaquetarse como parte de la aplicación del usuario. Podría tratarse de documentos XML, bibliotecas, encabezados, archivos binarios en tiempo de diseño del cuadro de herramientas, los artefactos de MSBuild y así sucesivamente. Los SDK que está pensado para el consumo de un proyecto nativo debe tener un *SDKName*archivo .props. A continuación muestra un ejemplo de este tipo de archivo.  
   
@@ -148,7 +148,7 @@ SupportedArchitectures = "x86;x64;ARM"
 SupportsMultipleVersions = "Error"  
 CopyRedistToSubDirectory = "."  
 DependsOn = "SDKB, version=2.0"  
-MoreInfo = "http://msdn.microsoft.com/MySDK">  
+MoreInfo = "https://msdn.microsoft.com/MySDK">  
 <File Reference = "MySDK.Sprint.winmd" Implementation = "XNASprintImpl.dll">  
 <Registration Type = "Flipper" Implementation = "XNASprintFlipperImpl.dll" />  
 <Registration Type = "Flexer" Implementation = "XNASprintFlexerImpl.dll" />  

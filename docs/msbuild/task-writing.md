@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fdeab63dffaf7884484f46fbfe9eac2002514e52
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 9cf7f82d628c0c093e0d807920b379263c20ff0b
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56629929"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71238198"
 ---
 # <a name="task-writing"></a>Escribir tareas
 Las tareas proporcionan el código que se ejecuta durante el proceso de compilación. Las tareas están contenidas en destinos. En [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] se incluye una biblioteca de tareas típicas, y también puede crear sus propias tareas. Para más información sobre la biblioteca de tareas incluida en [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)], consulte [Referencia de tareas](../msbuild/msbuild-task-reference.md).
@@ -27,9 +27,9 @@ Las tareas proporcionan el código que se ejecuta durante el proceso de compilac
 
  Al implementar una tarea, se pueden utilizar dos métodos:
 
--   Implementar la interfaz <xref:Microsoft.Build.Framework.ITask> directamente.
+- Implementar la interfaz <xref:Microsoft.Build.Framework.ITask> directamente.
 
--   Derivar la clase de la clase del asistente, <xref:Microsoft.Build.Utilities.Task>, que se define en el ensamblado *Microsoft.Build.Utilities.dll*. La tarea implementa ITask y proporciona implementaciones predeterminadas de algunos miembros ITask. Además, el registro es más sencillo.
+- Derivar la clase de la clase del asistente, <xref:Microsoft.Build.Utilities.Task>, que se define en el ensamblado *Microsoft.Build.Utilities.dll*. La tarea implementa ITask y proporciona implementaciones predeterminadas de algunos miembros ITask. Además, el registro es más sencillo.
 
 En ambos casos, debe agregar a la clase un método denominado `Execute`, que es el método al que se llama cuando se ejecuta la tarea. Este método no utiliza ningún parámetro y devuelve un valor `Boolean`: `true` si la tarea se realizó correctamente o `false` si se produjo un error. En el ejemplo siguiente se muestra una tarea que no realiza ninguna acción y devuelve `true`.
 
@@ -97,7 +97,7 @@ namespace MyTasks
  El archivo de [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] *Microsoft.Common.Tasks* es un archivo de proyecto que contiene una lista de elementos `UsingTask` que registran todas las tareas que se proporcionan con [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]. Este archivo se incluye automáticamente al compilar cada proyecto. Si una tarea registrada en *Microsoft.Common.Tasks* también está registrada en el archivo del proyecto actual, este tiene prioridad; es decir, puede reemplazar una tarea predeterminada por una tarea que tenga el mismo nombre.
 
 > [!TIP]
->  Para ver una lista de las tareas que se proporcionan con [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)], puede visualizar el contenido de *Microsoft.Common.Tasks*.
+> Para ver una lista de las tareas que se proporcionan con [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)], puede visualizar el contenido de *Microsoft.Common.Tasks*.
 
 ## <a name="raise-events-from-a-task"></a>Generación de eventos de una tarea
  Si la tarea se deriva de la clase del asistente <xref:Microsoft.Build.Utilities.Task>, puede usar cualquiera de los siguientes métodos del asistente en la clase <xref:Microsoft.Build.Utilities.Task> para generar eventos que cualquier registrador registrado detectará y mostrará:
@@ -141,10 +141,35 @@ public string RequiredProperty { get; set; }
 
  <xref:Microsoft.Build.Framework.RequiredAttribute> define el atributo `[Required]` en el espacio de nombres <xref:Microsoft.Build.Framework>.
 
+## <a name="how-includevstecmsbuildextensibilityinternalsincludesvstecmsbuild_mdmd-invokes-a-task"></a>Cómo invoca una tarea [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]
+
+Al invocar una tarea, [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] primero crea una instancia de la clase de tarea y, después, llama a los establecedores de propiedad de ese objeto para los parámetros de tarea que están establecidos en el elemento Task del archivo de proyecto. Si el elemento Task no especifica un parámetro, o si la expresión especificada en el elemento se evalúa como una cadena vacía, no se llama al establecedor de propiedad.
+
+Por ejemplo, en el proyecto:
+
+```xml
+<Project>
+ <Target Name="InvokeCustomTask">
+  <CustomTask Input1=""
+              Input2="$(PropertyThatIsNotDefined)"
+              Input3="value3" />
+ </Target>
+</Project>
+```
+
+Solo se llama al establecedor para `Input3`.
+
+Una tarea no debe depender de ningún orden relativo de invocación del establecedor de propiedad/parámetro.
+
+### <a name="task-parameter-types"></a>Tipos de parámetros de tarea
+
+[!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] controla de forma nativa las propiedades de tipo `string`, `bool`, `ITaskItem` y `ITaskItem[]`. Si una tarea acepta un parámetro de un tipo diferente, [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] invoca a <xref:System.Convert.ChangeType%2A> para realizar la conversión de `string` (con todas las referencias de propiedades y elementos expandidas) al tipo de destino. Si se produce un error en la conversión de cualquier parámetro de entrada, [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] emite un error y no llama al método `Execute()` de la tarea.
+
 ## <a name="example"></a>Ejemplo
 
-### <a name="description"></a>Descripción
- La clase [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] siguiente muestra una tarea que deriva de la clase del asistente <xref:Microsoft.Build.Utilities.Task>. Esta tarea devuelve `true`, lo que indica que se ha realizado correctamente.
+### <a name="description"></a>DESCRIPCIÓN
+
+La clase [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] siguiente muestra una tarea que deriva de la clase del asistente <xref:Microsoft.Build.Utilities.Task>. Esta tarea devuelve `true`, lo que indica que se ha realizado correctamente.
 
 ### <a name="code"></a>Código
 
@@ -167,8 +192,9 @@ namespace SimpleTask1
 
 ## <a name="example"></a>Ejemplo
 
-### <a name="description"></a>Descripción
- La clase [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] siguiente muestra una tarea que implementa la interfaz <xref:Microsoft.Build.Framework.ITask>. Esta tarea devuelve `true`, lo que indica que se ha realizado correctamente.
+### <a name="description"></a>DESCRIPCIÓN
+
+La clase [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] siguiente muestra una tarea que implementa la interfaz <xref:Microsoft.Build.Framework.ITask>. Esta tarea devuelve `true`, lo que indica que se ha realizado correctamente.
 
 ### <a name="code"></a>Código
 
@@ -202,16 +228,19 @@ namespace SimpleTask2
 
 ## <a name="example"></a>Ejemplo
 
-### <a name="description"></a>Descripción
- Esta clase [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] muestra una tarea que deriva de la clase del asistente <xref:Microsoft.Build.Utilities.Task>. Tiene una propiedad de cadena necesaria y genera un evento que todos los registradores registrados muestran.
+### <a name="description"></a>DESCRIPCIÓN
+
+Esta clase [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] muestra una tarea que deriva de la clase del asistente <xref:Microsoft.Build.Utilities.Task>. Tiene una propiedad de cadena necesaria y genera un evento que todos los registradores registrados muestran.
 
 ### <a name="code"></a>Código
- [!code-csharp[msbuild_SimpleTask3#1](../msbuild/codesnippet/CSharp/task-writing_1.cs)]
+
+[!code-csharp[msbuild_SimpleTask3#1](../msbuild/codesnippet/CSharp/task-writing_1.cs)]
 
 ## <a name="example"></a>Ejemplo
 
-### <a name="description"></a>Descripción
- En el ejemplo siguiente se muestra un archivo del proyecto que invoca la tarea del ejemplo anterior, SimpleTask3.
+### <a name="description"></a>DESCRIPCIÓN
+
+En el ejemplo siguiente se muestra un archivo del proyecto que invoca la tarea del ejemplo anterior, SimpleTask3.
 
 ### <a name="code"></a>Código
 
@@ -227,4 +256,5 @@ namespace SimpleTask2
 ```
 
 ## <a name="see-also"></a>Vea también
+
 - [Referencia de tareas](../msbuild/msbuild-task-reference.md)

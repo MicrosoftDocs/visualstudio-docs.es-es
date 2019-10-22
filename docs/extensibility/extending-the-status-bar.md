@@ -6,17 +6,17 @@ helpviewer_keywords:
 - status bars, about status bars
 - status bars, overview
 ms.assetid: f955115c-4c5f-45ec-b41b-365868c5ec0c
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 499e6c2b34fcc5261ab8fb3a87a24e2cc0959d8c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: c555c2a23b52d475b01fbf8cc2086167acc423dc
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60113747"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66342879"
 ---
 # <a name="extend-the-status-bar"></a>Ampliar la barra de estado
 Puede usar la barra de estado de Visual Studio en la parte inferior del IDE para mostrar información.

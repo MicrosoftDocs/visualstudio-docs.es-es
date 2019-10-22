@@ -1,5 +1,5 @@
 ---
-title: Se esperaba '=' (JavaScript) | Microsoft Docs
+title: Se esperaba ' = ' (JavaScript) | Microsoft Docs
 ms.date: 01/18/2017
 ms.prod: visual-studio-windows
 ms.technology: vs-javascript
@@ -14,15 +14,15 @@ ms.assetid: a8ce6fbf-8663-4770-8fba-677d04c84825
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 6950d78da99285e5aeeeefe002c8319b08721110
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 518140ebbddcee917a03bad6ec776e4c84b248d1
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60087032"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72573390"
 ---
 # <a name="expected--javascript"></a>Se esperaba '=' (JavaScript)
-Se ha intentado crear una variable para su uso con instrucciones de compilación condicional, pero no se realizó un signo igual entre la variable y el valor que desea asignar a él.  
+Ha intentado crear una variable que se utilizará con instrucciones de compilación condicional, pero no ha colocado un signo igual entre la variable y el valor que desea asignar a ella.  
   
 ### <a name="to-correct-this-error"></a>Para corregir este error  
   
@@ -33,5 +33,5 @@ Se ha intentado crear una variable para su uso con instrucciones de compilación
     ```  
   
 ## <a name="see-also"></a>Vea también  
- [Compilación condicional](../../javascript/advanced/conditional-compilation-javascript.md)   
+ @No__t_1 de [compilación condicional](../../javascript/advanced/conditional-compilation-javascript.md)  
  [Variables de compilación condicional](../../javascript/advanced/conditional-compilation-variables-javascript.md)

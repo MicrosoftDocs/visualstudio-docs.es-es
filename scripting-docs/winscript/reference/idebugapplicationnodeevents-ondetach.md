@@ -1,5 +1,5 @@
 ---
-title: IDebugApplicationNodeEvents::onDetach | Microsoft Docs
+title: 'Idebugapplicationnodeevents (:: aldetach | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 9162175727d439a6370071a5f3c9fa4c7ca88ee5
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: bb1a33cbec8ef032c1c4fedba28ad4013e676f0d
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58156884"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72574677"
 ---
 # <a name="idebugapplicationnodeeventsondetach"></a>IDebugApplicationNodeEvents::onDetach
-Controla un evento lo que significa que el objeto de nodo de la aplicación de depuración se separó de un nodo primario.  
+Controla un evento que indica que el objeto de nodo de la aplicación de depuración se desconectó de un nodo primario.  
   
 ## <a name="syntax"></a>Sintaxis  
   
@@ -44,11 +44,11 @@ HRESULT onDetach();
 |`S_OK`|El método se realizó correctamente.|  
   
 ## <a name="remarks"></a>Comentarios  
- Este método controla un evento lo que significa que el objeto de nodo de la aplicación de depuración se separó de un nodo primario.  
+ Este método controla un evento que indica que el objeto de nodo de la aplicación de depuración se desconectó de un nodo primario.  
   
- Los implementadores de la `IDebugApplicationNode` interfaz se genera este evento.  
+ Los implementadores de la interfaz `IDebugApplicationNode` producen este evento.  
   
 ## <a name="see-also"></a>Vea también  
- [IDebugApplicationNodeEvents (interfaz)](../../winscript/reference/idebugapplicationnodeevents-interface.md)   
- [IDebugApplicationNodeEvents::onAttach](../../winscript/reference/idebugapplicationnodeevents-onattach.md)   
+ @No__t_1 de la [interfaz idebugapplicationnodeevents (](../../winscript/reference/idebugapplicationnodeevents-interface.md)  
+ [Idebugapplicationnodeevents (:: alattach](../../winscript/reference/idebugapplicationnodeevents-onattach.md)    
  [IDebugApplicationNode (Interfaz)](../../winscript/reference/idebugapplicationnode-interface.md)

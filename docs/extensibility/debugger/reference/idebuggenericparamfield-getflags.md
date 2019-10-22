@@ -6,17 +6,20 @@ helpviewer_keywords:
 - GetFlags
 - IDebugGenericParamField::GetFlags
 ms.assetid: adcbbca1-8960-4c88-86b0-8b9467056c97
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a5f03eae07ff02d69f304d1a9bb9deaa668bf521
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 17e3bbf128483ab7a3a63c328f4ce3e77095714f
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56689647"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66320799"
 ---
 # <a name="idebuggenericparamfieldgetflags"></a>IDebugGenericParamField::GetFlags
 Recupera las marcas para este parámetro genérico.
@@ -35,10 +38,9 @@ int GetFlags(
 );
 ```
 
-#### <a name="parameters"></a>Parámetros
-`pdwFlags`
-
- [out] Devuelve las marcas para este parámetro genérico.
+## <a name="parameters"></a>Parámetros
+`pdwFlags`\
+[out] Devuelve las marcas para este parámetro genérico.
 
 ## <a name="return-value"></a>Valor devuelto
 Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.

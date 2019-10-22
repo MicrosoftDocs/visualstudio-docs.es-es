@@ -2,7 +2,7 @@
 title: Repare Visual Studio.
 titleSuffix: ''
 description: Obtenga información sobre cómo reparar una instalación de Visual Studio 2017
-ms.date: 03/30/2019
+ms.date: 07/31/2019
 ms.custom: seodec18
 ms.topic: conceptual
 author: TerryGLee
@@ -12,12 +12,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 690fe29373e80d9dfc560a616d0e914731d9b6cf
-ms.sourcegitcommit: 0a2fdc23faee77187e10a1c19665ba5a1ac68e72
+ms.openlocfilehash: ed6b7050d2162fc4e893db6ec4f429fbe3f8eb4f
+ms.sourcegitcommit: 5694c5236fa32ba7f5bc1236a853f725ec7557e9
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/10/2019
-ms.locfileid: "59477531"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "68681345"
 ---
 # <a name="repair-visual-studio"></a>Repare Visual Studio.
 
@@ -37,7 +37,7 @@ En ocasiones, una instalación de Visual Studio resulta dañada. Una reparación
 1. Abra el instalador, elija **Más** y, luego, **Reparar**.
 
     ![Reparación de Visual Studio desde el instalador de Visual Studio](media/repair-visual-studio.png "Reparación de Visual Studio desde el instalador de Visual Studio")
-    
+
    > [!NOTE]
    > Al reparar Visual Studio, se restablece el entorno. Se eliminan las personalizaciones locales, como las extensiones por usuario instaladas sin elevación, la configuración de usuario y los perfiles. La configuración sincronizada, como temas, colores o enlaces de teclado, se restaura.
    >
@@ -53,7 +53,7 @@ En ocasiones, una instalación de Visual Studio resulta dañada. Una reparación
 
      Por ejemplo, en un equipo que ejecuta Windows 10, seleccione **Iniciar** y, después, desplácese hasta la letra **I** donde lo verá como **Instalador de Visual Studio**.
 
-     ![Apertura del Instalador de Visual Studio](media/vs2019-visual-studio-installer.png "Apertura del Instalador de Visual Studio")
+     ![Apertura del Instalador de Visual Studio](media/vs-2019/vs-installer-windows-start.png "Apertura del Instalador de Visual Studio")
 
      > [!NOTE]
      > También pude encontrar el instalador de Visual Studio en la siguiente ubicación:
@@ -74,7 +74,6 @@ En ocasiones, una instalación de Visual Studio resulta dañada. Una reparación
    > La opción **Reparar** solo se muestra para las instancias instaladas de Visual Studio. Si no ve la opción **Reparar**, es posible que haya seleccionado **Más** en una versión mostrada en el instalador de Visual Studio como "Disponible", en lugar de "Instalada".
 
 ::: moniker-end
-
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 

@@ -26,28 +26,26 @@ helpviewer_keywords:
 - class diagrams, errors
 ms.assetid: 79d70e70-704c-4255-ab68-c10d6949470e
 caps.latest.revision: 14
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 66a895b48051ed8797644b36d6f6663e1e35a8e6
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 7500782a1d935c08ae95e26764c9476c63f36660
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54783685"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72620390"
 ---
 # <a name="additional-information-about-class-designer-errors"></a>Información adicional sobre los errores del Diseñador de clases
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-El Diseñador de clases no hace un seguimiento de la ubicación de los archivos de origen, por lo que modificar la estructura del proyecto o mover los archivos de origen del proyecto puede hacer que el Diseñador de clases pierda de vista el tipo (sobre todo el tipo de origen de una typedef, de clases base o de tipos de asociación). Puede que obtenga un error, como **El Diseñador de clases no puede mostrar este tipo**. Si lo recibe, arrastre otra vez el código fuente modificado o reubicado al diagrama de clases para volver a mostrarlo.  
-  
- Encontrará ayuda relacionada con otros errores y advertencias en los siguientes recursos:  
-  
- [Trabajar con código de Visual C++ (Diseñador de clases)](../ide/working-with-visual-cpp-code-class-designer.md)  
- Incluye información de solución de problemas sobre la visualización de C++ en un diagrama de clases.  
-  
- [Foro del Diseñador de clases de Visual Studio](http://go.microsoft.com/fwlink/?LinkId=160754)  
- Proporciona un foro para formular preguntas sobre el Diseñador de clases.  
-  
-## <a name="see-also"></a>Vea también  
+El Diseñador de clases no hace un seguimiento de la ubicación de los archivos de origen, por lo que modificar la estructura del proyecto o mover los archivos de origen del proyecto puede hacer que el Diseñador de clases pierda de vista el tipo (sobre todo el tipo de origen de una typedef, de clases base o de tipos de asociación). Puede que obtenga un error, como **El Diseñador de clases no puede mostrar este tipo**. Si lo recibe, arrastre otra vez el código fuente modificado o reubicado al diagrama de clases para volver a mostrarlo.
+
+ Encontrará ayuda relacionada con otros errores y advertencias en los siguientes recursos:
+
+ [Trabajar con código C++ Visual (diseñador de clases)](../ide/working-with-visual-cpp-code-class-designer.md) incluye información de solución de problemas C++ sobre cómo mostrar en un diagrama de clases.
+
+ [Foro del Diseñador de clases de Visual Studio](http://go.microsoft.com/fwlink/?LinkId=160754) proporciona un foro para formular preguntas sobre el Diseñador de clases.
+
+## <a name="see-also"></a>Otras referencias
  [Diseñar y ver clases y tipos](../ide/designing-and-viewing-classes-and-types.md)

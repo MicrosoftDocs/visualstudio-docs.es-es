@@ -6,17 +6,17 @@ helpviewer_keywords:
 - VSCT XML schema elements, Menus
 - Menus element (VSCT XML schema)
 ms.assetid: d825a99b-e05c-4dd9-8933-a180216d667a
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 96628f3b7050a4ce6f14185033e3d59af63a9de5
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: ef5124bc59a4eb0671ba5493f79ea301aa48fc71
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56705604"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66346629"
 ---
 # <a name="menus-element"></a>Menus (elemento)
 Define todos los menús y barras de herramientas que implementa un paquete VSPackage.

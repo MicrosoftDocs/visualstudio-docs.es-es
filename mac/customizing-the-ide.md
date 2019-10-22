@@ -1,21 +1,21 @@
 ---
 title: Personalización del IDE
-description: Visual Studio para Mac puede personalizarse de varias formas, lo que permite a los usuarios desarrollar aplicaciones en un entorno que satisfaga a la vez sus necesidades de eficiencia y estéticas. En este tema se analizan las diversas formas en que Visual Studio para Mac puede adaptarse para satisfacer las necesidades del usuario.
-author: conceptdev
-ms.author: crdun
+description: Visual Studio para Mac puede personalizarse de varias formas, lo que permite a los usuarios desarrollar aplicaciones en un entorno que satisfaga a la vez sus necesidades de eficiencia y estéticas. En este artículo se analizan las diversas formas en que Visual Studio para Mac puede adaptarse para satisfacer las necesidades del usuario.
+author: alanjclark
+ms.author: alcl
 ms.date: 05/06/2018
 ms.assetid: F7C2A28C-0759-4E0D-A28E-B72D5AB73DB6
 ms.custom: video
-ms.openlocfilehash: b8386e5d27c2ddf6abd93ac93266f58869cd6c79
-ms.sourcegitcommit: 01334abf36d7e0774329050d34b3a819979c95a2
+ms.openlocfilehash: fa1e2924e810f9e37f28d5becdfd8d46243b76fe
+ms.sourcegitcommit: ea182703e922c74725045afc251bcebac305068a
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55853396"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71213739"
 ---
 # <a name="customizing-the-ide"></a>Personalización del IDE
 
-Visual Studio para Mac puede personalizarse de varias formas, lo que permite a los usuarios desarrollar aplicaciones en un entorno que satisfaga a la vez sus necesidades de eficiencia y estéticas. En este artículo se analizan las diversas formas en que Visual Studio para Mac puede adaptarse para satisfacer las necesidades del usuario.
+Visual Studio para Mac puede personalizarse, lo que permite a los usuarios desarrollar aplicaciones en un entorno que satisfaga a la vez sus necesidades de eficiencia y estéticas. En este artículo se analizan las diversas formas en que Visual Studio para Mac puede adaptarse para satisfacer las necesidades del usuario.
 
 ## <a name="dark-theme"></a>Tema oscuro
 
@@ -62,13 +62,17 @@ Los campos **Nombre** y **Correo electrónico** se usarán para agregar informac
 
 ## <a name="key-bindings"></a>Enlaces de teclado
 
-Los enlaces de teclado permiten adaptar el entorno de desarrollo para desplazarse de forma más eficaz por Visual Studio para Mac. Proporciona enlaces de teclado conocidos para muchos IDE populares, como Visual Studio (en Windows), ReSharper, Visual Studio Code y Xcode.
+Los enlaces de teclado, o métodos abreviados de teclado, permiten adaptar el entorno de desarrollo para desplazarse de forma más eficaz por Visual Studio para Mac. Proporciona enlaces de teclado conocidos para muchos IDE populares, como Visual Studio (en Windows), ReSharper, Visual Studio Code y Xcode.
 
 Los enlaces de teclado se pueden establecer si se va a **Visual Studio > Preferencias > Entorno > Enlaces de teclado**, como se muestra en la imagen siguiente:
 
 ![Establecimiento de enlaces de teclado](media/customizing-the-ide-image10a.png)
 
 Desde ahí se pueden buscar combinaciones de enlaces de teclado, ver enlaces en conflicto, agregar nuevos enlaces y editar los enlaces existentes.
+
+Estos enlaces también se pueden establecer durante la configuración inicial de Visual Studio para Mac, a través de la pantalla **Selección de teclado**:
+
+![Establecimiento de enlaces de teclado, primera ejecución](media/ide-tour-2019-keyboard-shortcut.png)
 
 ## <a name="workspace-layout"></a>Diseño del área de trabajo
 
@@ -108,7 +112,7 @@ El estado de los paneles abiertos se representa mediante un *diseño*. Se puede 
 
 Siempre hay un diseño activo y cualquier cambio realizado en un diseño, como agregar o cambiar la posición de un panel, solo cambia el diseño activo. Una vez que se cierra Visual Studio para Mac, los cambios realizados no se guardan.
 
-Pero es posible crear un nuevo diseño mediante el elemento de menú **Vista > Guardar diseño actual**. Con esto se agrega el diseño actual al menú para que se pueda seleccionar en cualquier momento:
+Pero es posible crear un nuevo diseño mediante el elemento de menú **Vista > Guardar diseño actual**. Este comando agrega el diseño actual al menú para que se pueda seleccionar en cualquier momento:
 
 ![Guardado del diseño actual](media/customizing-the-ide-image6a.png)
 
@@ -116,7 +120,7 @@ Pero es posible crear un nuevo diseño mediante el elemento de menú **Vista > G
 
 Visual Studio para Mac permite abrir editores de texto en paralelo o tener un editor como una ventana flotante separada.
 
-Se puede habilitar el modo de dos columnas mediante el elemento de menú Vista si se selecciona **Vista > Columnas del editor > 2 columnas** o si se arrastra una pestaña del editor a uno de los bordes del área de este:
+El modo de dos columnas se puede habilitar mediante el elemento de menú Vista; seleccione **Vista > Columnas del editor > 2 columnas** o arrastre una pestaña del editor a uno de los bordes del área de este:
 
 ![Modo de dos columnas en paralelo](media/customizing-the-ide-sbs.png)
 

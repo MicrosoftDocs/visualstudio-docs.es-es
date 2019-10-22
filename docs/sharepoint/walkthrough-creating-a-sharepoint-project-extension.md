@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 832af0383d2ff00b4f2d415257abdfbe3ad4bf91
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 10affe50b3410fa013205313f4087aaabb7c4769
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60062358"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67825805"
 ---
 # <a name="walkthrough-create-a-sharepoint-project-extension"></a>Tutorial: Crear una extensión de proyecto de SharePoint
   Este tutorial muestra cómo crear una extensión para los proyectos de SharePoint. Puede usar una extensión de proyecto para responder a eventos de nivel de proyecto, como cuando un proyecto es agregado, eliminado o cambiado de nombre. También puede agregar propiedades personalizadas o responder cuando cambia un valor de propiedad. A diferencia de las extensiones de elemento de proyecto, las extensiones de proyecto no se puede asociadas con un determinado tipo de proyecto de SharePoint. Cuando se crea una extensión de proyecto, la extensión de carga cuando se abre cualquier tipo de proyecto de SharePoint en [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].
@@ -30,11 +30,11 @@ ms.locfileid: "60062358"
 
 - Creación de un [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] extensión para los proyectos de SharePoint que hace lo siguiente:
 
-    - Agrega una propiedad de proyecto personalizadas a la ventana Propiedades. La propiedad se aplica a cualquier proyecto de SharePoint.
+  - Agrega una propiedad de proyecto personalizadas a la ventana Propiedades. La propiedad se aplica a cualquier proyecto de SharePoint.
 
-    - Usa el modelo de objetos de proyecto de SharePoint para agregar una carpeta asignada a un proyecto.
+  - Usa el modelo de objetos de proyecto de SharePoint para agregar una carpeta asignada a un proyecto.
 
-    - Usa el [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] (DTE) para eliminar una carpeta asignada desde el proyecto de modelo de objetos de automatización.
+  - Usa el [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] (DTE) para eliminar una carpeta asignada desde el proyecto de modelo de objetos de automatización.
 
 - Creación de un [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] paquete de extensión (VSIX) para implementar el ensamblado de la extensión de la propiedad de proyecto.
 
@@ -65,7 +65,7 @@ ms.locfileid: "60062358"
 3. En el **nuevo proyecto** cuadro de diálogo, expanda el **Visual C#** o **Visual Basic** nodos y, a continuación, elija el **extensibilidad** nodo.
 
     > [!NOTE]
-    >  Este nodo está disponible solo si instala el SDK de Visual Studio. Para obtener más información, vea la sección Requisitos previos, anteriormente en este tema.
+    > Este nodo está disponible solo si instala el SDK de Visual Studio. Para obtener más información, vea la sección Requisitos previos, anteriormente en este tema.
 
 4. En la parte superior del cuadro de diálogo, elija **.NET Framework 4.5** en la lista de versiones de .NET Framework y, a continuación, elija el **proyecto VSIX** plantilla.
 
@@ -143,7 +143,7 @@ ms.locfileid: "60062358"
 6. En el **tipo** elija **Microsoft.VisualStudio.MefComponent**.
 
     > [!NOTE]
-    >  Este valor corresponde al elemento `MEFComponent` del archivo extension.vsixmanifest. Este elemento especifica el nombre de un ensamblado de extensión en el paquete VSIX. Para obtener más información, consulte [elemento MEFComponent (Esquema VSX)](/previous-versions/visualstudio/visual-studio-2010/dd393736\(v\=vs.100\)).
+    > Este valor corresponde al elemento `MEFComponent` del archivo extension.vsixmanifest. Este elemento especifica el nombre de un ensamblado de extensión en el paquete VSIX. Para obtener más información, consulte [elemento MEFComponent (Esquema VSX)](/previous-versions/visualstudio/visual-studio-2010/dd393736\(v\=vs.100\)).
 
 7. En el **origen** lista, elija el **un proyecto de la solución actual** botón de opción.
 

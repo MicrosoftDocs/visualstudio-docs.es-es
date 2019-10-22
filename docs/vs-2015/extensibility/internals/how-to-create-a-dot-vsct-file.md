@@ -11,11 +11,11 @@ caps.latest.revision: 20
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: a2483c000bb7c9446ac51bb94ef4006a7b2ac89f
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60056944"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68158344"
 ---
 # <a name="how-to-create-a-vsct-file"></a>Procedimiento Crear un archivo .Vsct
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -97,6 +97,6 @@ Hay varias maneras de crear un archivo de configuración (.vsct) basado en XML y
 ## <a name="see-also"></a>Vea también  
  [Creación. Archivos Vsct](../../extensibility/internals/authoring-dot-vsct-files.md)   
  [Tabla de comandos de Visual Studio (. Archivos Vsct)](../../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)   
- [Cómo: Crear una. Archivo de Vsct desde una existente. Archivos de CTC](../../misc/how-to-create-a-dot-vsct-file-from-an-existing-dot-ctc-file.md)   
- [Cómo: Crear una. Archivo de Vsct desde una existente. Archivo de director de tecnología](../../misc/how-to-create-a-dot-vsct-file-from-an-existing-dot-cto-file.md)   
+ [Procedimientos: Crear una. Archivo de Vsct desde una existente. Archivos de CTC](../../misc/how-to-create-a-dot-vsct-file-from-an-existing-dot-ctc-file.md)   
+ [Procedimientos: Crear una. Archivo de Vsct desde una existente. Archivo de director de tecnología](../../misc/how-to-create-a-dot-vsct-file-from-an-existing-dot-cto-file.md)   
  [Referencia del esquema XML de VSCT](../../extensibility/vsct-xml-schema-reference.md)

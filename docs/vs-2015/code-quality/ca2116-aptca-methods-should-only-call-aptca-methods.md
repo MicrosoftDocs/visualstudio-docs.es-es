@@ -15,12 +15,12 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 916b30cf4cff357ba468faae524d6b0ca7806959
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: ac5877ecf22ca8d0d8cc15095d354973ece29eaa
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58987985"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65687355"
 ---
 # <a name="ca2116-aptca-methods-should-only-call-aptca-methods"></a>CA2116: Los métodos APTCA deben llamar solo a métodos APTCA
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,7 +36,7 @@ ms.locfileid: "58987985"
  Un método en un ensamblado con el <xref:System.Security.AllowPartiallyTrustedCallersAttribute?displayProperty=fullName> atributo llama a un método en un ensamblado que no tiene el atributo.
 
 ## <a name="rule-description"></a>Descripción de la regla
- De forma predeterminada, los métodos públicos o protegidos en ensamblados con nombres seguros implícitamente están protegidos por un [peticiones de vínculo](http://msdn.microsoft.com/library/a33fd5f9-2de9-4653-a4f0-d9df25082c4d) de plena confianza; sólo de plena confianza para los autores de llamadas pueden tener acceso a un ensamblado con nombre seguro. Los ensamblados con nombre seguro marcados con el <xref:System.Security.AllowPartiallyTrustedCallersAttribute> atributo (APTCA) no tiene esta protección. El atributo deshabilita la petición de vínculo, lo que el ensamblado puede tener acceso a los llamadores que no tienen plena confianza, como el código que se ejecuta desde una intranet o Internet.
+ De forma predeterminada, los métodos públicos o protegidos en ensamblados con nombres seguros implícitamente están protegidos por un [peticiones de vínculo](https://msdn.microsoft.com/library/a33fd5f9-2de9-4653-a4f0-d9df25082c4d) de plena confianza; sólo de plena confianza para los autores de llamadas pueden tener acceso a un ensamblado con nombre seguro. Los ensamblados con nombre seguro marcados con el <xref:System.Security.AllowPartiallyTrustedCallersAttribute> atributo (APTCA) no tiene esta protección. El atributo deshabilita la petición de vínculo, lo que el ensamblado puede tener acceso a los llamadores que no tienen plena confianza, como el código que se ejecuta desde una intranet o Internet.
 
  Cuando el atributo APTCA está presente en un ensamblado de plena confianza y el ensamblado ejecuta código en otro ensamblado que no permite a llamadores parcialmente confiables, es posible un ataque de seguridad. Si dos métodos `M1` y `M2` cumplen las condiciones siguientes, los llamadores malintencionados pueden usar el método `M1` para omitir la petición de vínculo de plena confianza implícita que protege `M2`:
 
@@ -49,7 +49,7 @@ ms.locfileid: "58987985"
   Un llamador de confianza parcial `X` puede llamar al método `M1`, haciendo que `M1` para llamar a `M2`. Dado que `M2` no tiene el atributo APTCA, su llamador inmediato (`M1`) debe satisfacer una petición de vínculo de plena confianza; `M1` es de plena confianza y, por tanto, supera esta comprobación. El riesgo de seguridad es porque `X` no participa en el cumplimiento de la petición de vínculo que protege `M2` es de confianza. Por lo tanto, los métodos con el atributo APTCA no deben llamar a métodos que no tienen el atributo.
 
 ## <a name="how-to-fix-violations"></a>Cómo corregir infracciones
- Si el atributo APCTA es necesario, use una petición para proteger el método que llama en el ensamblado de plena confianza. Los permisos exactos demanda dependerá de la funcionalidad expuesta por el método. Si es posible, proteja el método con una petición de plena confianza para asegurarse de que la funcionalidad subyacente no se expone a llamadores de confianza parcial. Si esto no es posible, seleccione un conjunto de permisos que protege eficazmente la funcionalidad expuesta. Para obtener más información acerca de las peticiones, consulte [demandas](http://msdn.microsoft.com/e5283e28-2366-4519-b27d-ef5c1ddc1f48).
+ Si el atributo APCTA es necesario, use una petición para proteger el método que llama en el ensamblado de plena confianza. Los permisos exactos demanda dependerá de la funcionalidad expuesta por el método. Si es posible, proteja el método con una petición de plena confianza para asegurarse de que la funcionalidad subyacente no se expone a llamadores de confianza parcial. Si esto no es posible, seleccione un conjunto de permisos que protege eficazmente la funcionalidad expuesta. Para obtener más información acerca de las peticiones, consulte [demandas](https://msdn.microsoft.com/e5283e28-2366-4519-b27d-ef5c1ddc1f48).
 
 ## <a name="when-to-suppress-warnings"></a>Cuándo suprimir advertencias
  Para suprimir una advertencia de esta regla de forma segura, debe asegurarse de que la funcionalidad expuesta por el método no directa o indirectamente permiten que los llamadores tener acceso a información confidencial, operaciones o los recursos que se pueden usar de forma destructiva.
@@ -71,10 +71,10 @@ ms.locfileid: "58987985"
 
  Este ejemplo produce el siguiente resultado:
 
- **La demanda de plena confianza: error en la solicitud. ** 
- **ClassRequiringFullTrust.DoWork llamó.**
+ **La demanda de plena confianza: error en la solicitud.** 
+**ClassRequiringFullTrust.DoWork llamó.**
 ## <a name="related-rules"></a>Reglas relacionadas
  [CA2117: Los tipos APTCA solo amplían tipos base APTCA](../code-quality/ca2117-aptca-types-should-only-extend-aptca-base-types.md)
 
 ## <a name="see-also"></a>Vea también
- [Instrucciones de codificación segura](http://msdn.microsoft.com/library/4f882d94-262b-4494-b0a6-ba9ba1f5f177) [ensamblados de .NET Framework invocables por código de confianza parcial](http://msdn.microsoft.com/a417fcd4-d3ca-4884-a308-3a1a080eac8d) [utilizar parcialmente bibliotecas de código de confianza](http://msdn.microsoft.com/library/dd66cd4c-b087-415f-9c3e-94e3a1835f74) [demandas](http://msdn.microsoft.com/e5283e28-2366-4519-b27d-ef5c1ddc1f48) [Peticiones de vínculos](http://msdn.microsoft.com/library/a33fd5f9-2de9-4653-a4f0-d9df25082c4d) [datos y modelado](http://msdn.microsoft.com/library/8c37635d-e2c1-4b64-a258-61d9e87405e6)
+ [Instrucciones de codificación segura](https://msdn.microsoft.com/library/4f882d94-262b-4494-b0a6-ba9ba1f5f177) [ensamblados de .NET Framework invocables por código de confianza parcial](https://msdn.microsoft.com/a417fcd4-d3ca-4884-a308-3a1a080eac8d) [utilizar parcialmente bibliotecas de código de confianza](https://msdn.microsoft.com/library/dd66cd4c-b087-415f-9c3e-94e3a1835f74) [demandas](https://msdn.microsoft.com/e5283e28-2366-4519-b27d-ef5c1ddc1f48) [Peticiones de vínculos](https://msdn.microsoft.com/library/a33fd5f9-2de9-4653-a4f0-d9df25082c4d) [datos y modelado](https://msdn.microsoft.com/library/8c37635d-e2c1-4b64-a258-61d9e87405e6)

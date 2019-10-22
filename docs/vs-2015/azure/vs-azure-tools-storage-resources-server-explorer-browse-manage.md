@@ -11,12 +11,12 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 8/24/2017
 ms.author: ghogen
-ms.openlocfilehash: 8f7044c44278410e1fc800e0e974847c090da0e3
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 1f2199907ab6a59e329624046079436ca7cd08dd
+ms.sourcegitcommit: 3cc73e74921a9ceb622542e0e263abeebc455c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "59002652"
+ms.lasthandoff: 07/08/2019
+ms.locfileid: "67624150"
 ---
 # <a name="browse-and-manage-storage-resources-by-using-server-explorer"></a>Examen y administración de los recursos de almacenamiento mediante el Explorador de servidores
 
@@ -76,7 +76,7 @@ Puede realizar las siguientes operaciones en blobs mediante los botones de la es
 
 1. Elija el contenedor de blobs en Cloud Explorer. En la ventana del contenedor, seleccione el botón **Cargar blob**.
 
-1. En el cuadro de diálogo **Cargar nuevo archivo**, seleccione el botón **Examinar** para especificar el archivo que quiere cargar y escriba luego un nombre de carpeta en el cuadro **Carpeta (opcional)**.
+1. En el cuadro de diálogo **Cargar nuevo archivo**, seleccione el botón **Examinar** para especificar el archivo que quiere cargar y escriba luego un nombre de carpeta en el cuadro **Carpeta (opcional)** .
 
    ![Cargar un archivo en una carpeta de blob](./media/vs-azure-tools-storage-resources-server-explorer-browse-manage/IC766037.png)
 
@@ -96,7 +96,7 @@ Dado que las carpetas de los contenedores de blobs son carpetas virtuales, no se
 
 Puede filtrar los blobs que se muestran especificando un prefijo común.
 
-Por ejemplo, si escribe el prefijo **hello** en el cuadro de texto del filtro y hace clic en el botón **Ejecutar** (**!**), solo aparecen los blobs que comienzan con "hello".
+Por ejemplo, si escribe el prefijo **hello** en el cuadro de texto del filtro y hace clic en el botón **Ejecutar** ( **!** ), solo aparecen los blobs que comienzan con "hello".
 
 ![Cuadro de texto de filtro](./media/vs-azure-tools-storage-resources-server-explorer-browse-manage/IC519076.png)
 
@@ -185,7 +185,7 @@ La tabla se organiza por entidades (mostradas en filas) y propiedades (mostradas
 
 En el Diseñador de tablas, abra el menú contextual de una entidad (una sola fila) o una propiedad (una sola celda) y seleccione **Editar**.
 
-    ![Add or edit a table entity](./media/vs-azure-tools-storage-resources-server-explorer-browse-manage/IC656238.png)
+![Agregar o editar una entidad de tabla](./media/vs-azure-tools-storage-resources-server-explorer-browse-manage/IC656238.png)
 
 No es necesario que las entidades de una sola tabla compartan el mismo conjunto de propiedades (columnas). Tenga en cuenta las siguientes restricciones sobre la visualización y la edición de los datos de tabla:
 

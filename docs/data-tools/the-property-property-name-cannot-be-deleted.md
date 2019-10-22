@@ -3,17 +3,17 @@ title: No se puede eliminar la propiedad
 ms.date: 11/04/2016
 ms.topic: reference
 ms.assetid: 55873f74-7834-4ec1-8815-eeeb65618d87
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 4b1e0652d19b10b1d1ede7b1b950d89ca1bf670c
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
-ms.translationtype: MTE95
+ms.openlocfilehash: 29344a2443708d9ddaed3d90a186ab8424638664
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55939650"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72640488"
 ---
 # <a name="the-property-property-name-cannot-be-deleted"></a>No se puede eliminar la propiedad \<nombre de propiedad>
 
@@ -33,5 +33,4 @@ Establezca la **propiedad Discriminator** en otra propiedad de la clase de datos
 
 ## <a name="see-also"></a>Vea también
 
-- [Mensajes de Object Relational Designer](../data-tools/o-r-designer-messages.md)
 - [LINQ to SQL tools en Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md) (Herramientas LINQ to SQL en Visual Studio)

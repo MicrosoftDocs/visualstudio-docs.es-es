@@ -12,20 +12,20 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: d61814c9d47ea5c8b42e8a0b2f72a3797b6ec291
-ms.sourcegitcommit: 05d104a14ff357d599ff274f97cd59d464ee4a46
+ms.openlocfilehash: 048e0409a5af77c512f0ee768d95d61259426fb9
+ms.sourcegitcommit: 9cfd3ef6c65f671a26322320818212a1ed5955fe
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/03/2019
-ms.locfileid: "58897769"
+ms.lasthandoff: 07/26/2019
+ms.locfileid: "68533367"
 ---
 # <a name="tutorial-create-a-nodejs-and-react-app-in-visual-studio"></a>Tutorial: Crear una aplicación Node.js y React en Visual Studio
 
 Visual Studio permite crear fácilmente un proyecto de Node.js y usar IntelliSense y otras características integradas compatibles con Node.js. En este tutorial para Visual Studio, se crea un proyecto de aplicación web de Node.js a partir de una plantilla de Visual Studio. A continuación, se crea una aplicación sencilla con React.
 
-En este tutorial aprenderá a:
+En este tutorial, aprenderá a:
 > [!div class="checklist"]
-> * Crear un proyecto de Node.js
+> * Creación de un proyecto Node.js
 > * Agregar paquetes de npm
 > * Agregar código de React a la aplicación
 > * Transpilar JSX
@@ -72,7 +72,7 @@ webpack empaqueta archivos JavaScript para que puedan ejecutarse en un explorado
 
 * Debe tener instalado el runtime de Node.js.
 
-    Este tutorial se ha probado con la versión 8.11.2.
+    Este tutorial se ha probado con la versión 10.16.0.
 
     Si todavía no lo tiene instalado, instale la versión LTS desde el sitio web de [Node.js](https://nodejs.org/en/download/). En general, Visual Studio detecta automáticamente el entorno de ejecución de Node.js instalado. Si no detecta un runtime instalado, puede configurar el proyecto para que haga referencia al runtime instalado en la página de propiedades (después de crear un proyecto, haga clic con el botón derecho en el nodo del proyecto y elija **Propiedades**).
 
@@ -82,7 +82,7 @@ En primer lugar, cree un proyecto de aplicación web de Node.js.
 
 1. Abra Visual Studio.
 
-1. Cree un nuevo proyecto.
+1. Crear un nuevo proyecto.
 
     ::: moniker range=">=vs-2019"
     Presione **Esc** para cerrar la ventana de inicio. Presione **Ctrl + Q** para abrir el cuadro de búsqueda, escriba **Node.js**, elija **Aplicación web en blanco de Node.js** (JavaScript). En el cuadro de diálogo que se abre, elija **Crear**.
@@ -113,7 +113,7 @@ Esta aplicación requiere una serie de módulos de npm para ejecutarse correctam
 * react
 * react-dom
 * express
-* ruta de acceso
+* path
 * ts-loader
 * typescript
 * webpack
@@ -318,9 +318,21 @@ En los pasos anteriores, se agregó *webpack-config.js* al proyecto. A continuac
 
     ![Cargar archivos modificados](../javascript/media/tutorial-nodejs-react-reload-files.png)
 
-Cada vez que realice cambios en *app.tsx*, debe volver a ejecutar el comando webpack.
+Cada vez que realice cambios en *app.tsx*, debe volver a ejecutar el comando webpack. Para automatizar este paso, agregue un script de compilación para transpilar el JSX.
 
-## <a name="run-the-app"></a>Ejecutar la aplicación
+## <a name="add-a-build-script-to-transpile-the-jsx"></a>Agregar un script de compilación para transpilar el JSX
+
+A partir de Visual Studio 2019, se requiere un script de compilación. En lugar de transpilar el JSX en la línea de comandos (como se muestra en la sección anterior), puede hacerlo al compilar desde Visual Studio.
+
+* Abra *package.json* y agregue la siguiente sección después de la sección `dependencies`:
+
+   ```json
+   "scripts": {
+    "build": "webpack-cli app.tsx --config webpack-config.js"
+   }
+   ```
+
+## <a name="run-the-app"></a>Ejecución de la aplicación
 
 1. Seleccione Chrome como el destino de depuración actual.
 
@@ -331,7 +343,7 @@ Cada vez que realice cambios en *app.tsx*, debe volver a ejecutar el comando web
     ![Seleccionar Chrome como destino de depuración](../javascript/media/tutorial-nodejs-react-debug-target.png)
     ::: moniker-end
 
-    Si Chrome está disponible en la máquina, pero no aparece como opción, elija **Explorar con** en la lista desplegable de destino de depuración y seleccione Chrome como el destino de explorador predeterminado (elija **Establecer como predeterminado**).
+    Si Chrome está disponible en el equipo, pero no aparece como opción, seleccione **Explorador web (nombre del explorador)**  > **Google Chrome** en la lista desplegable de destino de depuración y seleccione Chrome como destino de explorador predeterminado.
 
 1. Para ejecutar la aplicación, presione **F5** (**Depurar** > **Iniciar depuración**) o en el botón de flecha verde.
 
@@ -376,8 +388,10 @@ En la sección anterior se asoció el depurador al código Node.jse del lado ser
     Chrome se inicia con la depuración habilitada.
 
     ::: moniker range=">=vs-2019"
+
     > [!NOTE]
-    > También puede establecer la marca `--remote-debugging-port` al iniciar el explorador si selecciona **Explorar con...** > en la barra de herramientas **Depurar**, elige **Agregar** y, después, configura la marca en el campo **Argumentos**. Use un nombre descriptivo distinto para el explorador, como **Chrome con depuración**. Para obtener información detallada, vea las [notas de la versión](https://docs.microsoft.com/visualstudio/releases/2019/release-notes-preview#browser-cli-params-support).
+    > También puede establecer la marca `--remote-debugging-port` al iniciar el explorador si selecciona **Explorar con...** > en la barra de herramientas **Depurar**, elige **Agregar** y, después, configura la marca en el campo **Argumentos**. Use un nombre descriptivo distinto para el explorador, como **Chrome con depuración**. Para obtener información detallada, vea las [notas de la versión](https://docs.microsoft.com/visualstudio/releases/2019/release-notes-preview).
+
     ::: moniker-end
 
 3. Cambie a Visual Studio y establezca un punto de interrupción en el código *app-bundle.js* en la función `render()`, tal como se muestra en la siguiente ilustración:
@@ -421,4 +435,4 @@ En la sección anterior se asoció el depurador al código Node.jse del lado ser
 ## <a name="next-steps"></a>Pasos siguientes
 
 > [!div class="nextstepaction"]
-> [Implementación de una aplicación de App Service en Linux](../javascript/publish-nodejs-app-azure.md)
+> [Deploy the app to Linux App Service](../javascript/publish-nodejs-app-azure.md) (Implementar la aplicación en App Service de Linux)

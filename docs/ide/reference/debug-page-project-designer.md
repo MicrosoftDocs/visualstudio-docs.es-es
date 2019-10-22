@@ -1,6 +1,7 @@
 ---
 title: Página Depuración, Diseñador de proyectos
 ms.date: 06/27/2018
+ms.technology: vs-ide-debug
 ms.topic: reference
 f1_keywords:
 - vb.ProjectPropertiesDebug
@@ -8,17 +9,17 @@ helpviewer_keywords:
 - Project Designer, Debug page
 - Debug page in Project Designer
 ms.assetid: ef11eae9-df96-4e20-aabd-2678ba317140
-author: gewarren
-ms.author: gewarren
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a49b2c77833538cb983f776a2f54ad332fb87f59
-ms.sourcegitcommit: 7eb85d296146186e7a39a17f628866817858ffb0
+ms.openlocfilehash: a1f54485a4dd47b0aec4401f6cdfb39072e9f8cf
+ms.sourcegitcommit: 85d66dc9fea3fa49018263064876b15aeb6f9584
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "59504411"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68461404"
 ---
 # <a name="debug-page-project-designer"></a>Página Depuración, Diseñador de proyectos
 
@@ -65,7 +66,7 @@ En este cuadro de texto, escriba los argumentos de la línea de comandos que se 
 
 **Directorio de trabajo**
 
-En este cuadro de texto, escriba el directorio desde el que se iniciará el proyecto. También puede hacer clic en el botón Examinar (**…**) para elegir un directorio.
+En este cuadro de texto, escriba el directorio desde el que se iniciará el proyecto. También puede hacer clic en el botón Examinar ( **…** ) para elegir un directorio.
 
 **Usar máquina remota**
 
@@ -86,5 +87,5 @@ Active o desactive esta casilla para habilitar o deshabilitar la depuración de 
 - [Primer vistazo al depurador](../../debugger/debugger-feature-tour.md)
 - [Configuración del proyecto para configuraciones de depuración en C#](../../debugger/project-settings-for-csharp-debug-configurations.md)
 - [Configuración del proyecto para una configuración de depuración de Visual Basic](../../debugger/project-settings-for-a-visual-basic-debug-configuration.md)
-- [Procedimiento Depurar una aplicación ClickOnce con permisos restringidos](../../deployment/how-to-debug-a-clickonce-application-with-restricted-permissions.md)
-- [Procedimiento Crear y editar configuraciones](../../ide/how-to-create-and-edit-configurations.md)
+- [Uso de Depuración de una aplicación ClickOnce con permisos restringidos](../../deployment/how-to-debug-a-clickonce-application-with-restricted-permissions.md)
+- [Uso de Crear y editar configuraciones](../../ide/how-to-create-and-edit-configurations.md)

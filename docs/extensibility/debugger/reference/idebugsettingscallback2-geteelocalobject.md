@@ -5,17 +5,20 @@ ms.topic: reference
 helpviewer_keywords:
 - IDebugSettingsCallback2::GetEELocalObject
 ms.assetid: e69a3469-a049-420c-b918-c48a1e7b9baf
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 22d95914ea3366578cb401c304ac52aa5db5e5a1
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 561f6727ca0273d5d59434a7bfdd0cdc00533754
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56703687"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66322196"
 ---
 # <a name="idebugsettingscallback2geteelocalobject"></a>IDebugSettingsCallback2::GetEELocalObject
 Recupera un objeto local de expresión del evaluador de expresiones según el nombre de métrica.
@@ -40,22 +43,18 @@ private int GetEELocalObject(
 );
 ```
 
-#### <a name="parameters"></a>Parámetros
- `guidLang`
+## <a name="parameters"></a>Parámetros
+`guidLang`\
+[in] Identificador único del lenguaje de programación.
 
- [in] Identificador único del lenguaje de programación.
+`guidVendor`\
+[in] Identificador único del proveedor.
 
- `guidVendor`
+`pszMetric`\
+[in] Nombre de la métrica.
 
- [in] Identificador único del proveedor.
-
- `pszMetric`
-
- [in] Nombre de la métrica.
-
- `ppUnk`
-
- [out] Devuelve la expresión de objeto local del evaluador de expresiones.
+`ppUnk`\
+[out] Devuelve la expresión de objeto local del evaluador de expresiones.
 
 ## <a name="return-value"></a>Valor devuelto
  Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.

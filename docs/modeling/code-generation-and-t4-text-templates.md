@@ -10,27 +10,27 @@ helpviewer_keywords:
 - code generation
 - text templates
 - generating code
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 125ddff4bded1a58a7e68e6c8058d24ff16b2be1
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 12dfad3c0a1197161925ca1f59b865975a42b4d4
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55951345"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72666576"
 ---
 # <a name="code-generation-and-t4-text-templates"></a>Generación de código y plantillas de texto T4
 
-En Visual Studio, un *plantilla de texto T4* es una mezcla de bloques de texto y lógica de control que puede generar un archivo de texto. La lógica de control se escribe en forma de fragmentos de código de programa en [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] o [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]. En Visual Studio 2015 Update 2 y versiones posteriores, puede usar las características de la versión 6.0 de C# en las directivas de plantillas T4. El archivo generado puede ser texto de cualquier tipo, como una página web, o un archivo de recursos o código fuente de programa en cualquier lenguaje.
+En Visual Studio, una *plantilla de texto T4* es una mezcla de bloques de texto y lógica de control que puede generar un archivo de texto. La lógica de control se escribe en forma de fragmentos de código de programa en [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] o [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]. En Visual Studio 2015 Update 2 y versiones posteriores, puede usar las características de la versión 6.0 de C# en las directivas de plantillas T4. El archivo generado puede ser texto de cualquier tipo, como una página web, un archivo de recursos o código fuente de programa en cualquier lenguaje.
 
 Hay dos tipos de plantillas de texto T4: tiempo de ejecución y tiempo de diseño.
 
 ## <a name="run-time-t4-text-templates"></a>Plantillas de texto T4 de tiempo de ejecución
 
-También se denomina 'preprocesamiento' plantillas, plantillas de tiempo de ejecución se ejecutan en la aplicación para generar cadenas de texto, normalmente como parte de la salida. Por ejemplo, podría crear una plantilla para definir una página HTML:
+También conocido como plantillas "preprocesadas", las plantillas de tiempo de ejecución se ejecutan en la aplicación para generar cadenas de texto, normalmente como parte de la salida. Por ejemplo, podría crear una plantilla para definir una página HTML:
 
 ```
 <html><body>
@@ -48,17 +48,17 @@ Para generar la salida, la aplicación llama a una función generada por la plan
 string webResponseText = new MyTemplate().TransformText();
 ```
 
-Puede ejecutar la aplicación en un equipo que no tiene instalado Visual Studio.
+La aplicación se puede ejecutar en un equipo que no tenga instalado Visual Studio.
 
 Para crear una plantilla en tiempo de ejecución, agregue un archivo de **plantilla de texto preprocesada** al proyecto. Como alternativa, puede agregar un archivo de texto sin formato y establecer su propiedad **Herramienta personalizada** en **TextTemplatingFilePreprocessor**.
 
-Para obtener más información, consulte [generación de texto en tiempo de ejecución con plantillas de texto T4](../modeling/run-time-text-generation-with-t4-text-templates.md). Para obtener más información sobre la sintaxis de plantillas, consulte [escribir una plantilla de texto T4](../modeling/writing-a-t4-text-template.md).
+Para obtener más información, vea [generación de texto en tiempo de ejecución con plantillas de texto T4](../modeling/run-time-text-generation-with-t4-text-templates.md). Para obtener más información sobre la sintaxis de las plantillas, vea [escribir una plantilla de texto T4](../modeling/writing-a-t4-text-template.md).
 
-## <a name="design-time-t4-text-templates"></a>Plantillas de texto T4 de tiempo de diseño
+## <a name="design-time-t4-text-templates"></a>Plantillas de texto T4 en tiempo de diseño
 
-Plantillas en tiempo de diseño definen la parte del código fuente y otros recursos de la aplicación. Normalmente se usa varias plantillas que leen los datos en un único archivo de entrada o la base de datos y generan algunos de sus *.cs*, *.vb*, u otros archivos de origen. Cada plantilla genera un archivo. Se ejecutan dentro de Visual Studio o MSBuild.
+Las plantillas en tiempo de diseño definen parte del código fuente y otros recursos de la aplicación. Normalmente, se usan varias plantillas que leen los datos en un único archivo de entrada o base de datos, y se generan algunos de los archivos *. CS*, *. VB*u otros archivos de código fuente. Cada plantilla genera un archivo. Se ejecutan dentro de Visual Studio o MSBuild.
 
-Por ejemplo, los datos de entrada podrían ser un archivo XML de datos de configuración. Siempre que edite el archivo XML durante el desarrollo, las plantillas de texto, volver a generar parte del código de aplicación. Una de las plantillas podría parecerse al siguiente ejemplo:
+Por ejemplo, los datos de entrada podrían ser un archivo XML de datos de configuración. Siempre que edite el archivo XML durante el desarrollo, las plantillas de texto regenerarán parte del código de la aplicación. Una de las plantillas podría parecerse al siguiente ejemplo:
 
 ```
 <#@ output extension=".cs" #>
@@ -72,7 +72,7 @@ namespace Fabrikam.<#= configurationData.SelectSingleNode("jobName").Value #>
 }
 ```
 
-Dependiendo de los valores en el archivo XML, el generado *.cs* archivo podría ser similar al siguiente:
+En función de los valores del archivo XML, el archivo *. CS* generado sería similar al siguiente:
 
 ```
 namespace Fabrikam.FirstJob
@@ -87,7 +87,7 @@ Las plantillas en tiempo de diseño permiten cambiar la configuración de manera
 
 Para crear una plantilla en tiempo de diseño, agregue un archivo de **plantilla de texto** al proyecto. Como alternativa, puede agregar un archivo de texto sin formato y establecer su propiedad **Herramienta personalizada** en **TextTemplatingFileGenerator**.
 
-Para obtener más información, consulte [generación de código de tiempo de diseño mediante el uso de plantillas de texto T4](../modeling/design-time-code-generation-by-using-t4-text-templates.md). Para obtener más información sobre la sintaxis de plantillas, consulte [escribir una plantilla de texto T4](../modeling/writing-a-t4-text-template.md).
+Para obtener más información, vea [generación de código en tiempo de diseño mediante plantillas de texto T4](../modeling/design-time-code-generation-by-using-t4-text-templates.md). Para obtener más información sobre la sintaxis de las plantillas, vea [escribir una plantilla de texto T4](../modeling/writing-a-t4-text-template.md).
 
 > [!NOTE]
 > El término *modelo* se usa a veces para describir los datos que una o varias plantillas leen. El modelo puede tener cualquier formato y estar en cualquier tipo de archivo o base de datos. No tiene que ser un modelo UML ni un modelo de lenguaje específico de dominio. El término "modelo" solo indica que los datos se pueden definir en términos de conceptos de negocios, en lugar de parecerse al código.

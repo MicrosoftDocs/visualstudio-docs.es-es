@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugPointerObject::SetBytes method
 ms.assetid: 8c578b38-38d7-46f3-bb2e-8a730fccd334
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e54a7f38eed85ffe2757b373de1af59e1aaa126b
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 1e7b3fd72285f6a6c9c4abeca4e6b262d981be8f
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56694732"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66331552"
 ---
 # <a name="idebugpointerobjectsetbytes"></a>IDebugPointerObject::SetBytes
 Establece el valor señalado por una serie de bytes consecutivos.
@@ -42,22 +45,18 @@ int SetBytes(
 );
 ```
 
-#### <a name="parameters"></a>Parámetros
- `dwStart`
+## <a name="parameters"></a>Parámetros
+`dwStart`\
+[in] Posición de desplazamiento, en bytes, desde el principio del objeto que apunta.
 
- [in] Posición de desplazamiento, en bytes, desde el principio del objeto que apunta.
+`dwCount`\
+[in] El número de bytes para establecer.
 
- `dwCount`
+`pBytes`\
+[in] Una matriz de bytes que representa el nuevo valor. Este valor se almacena en el objeto, comenzando en el desplazamiento dado.
 
- [in] El número de bytes para establecer.
-
- `pBytes`
-
- [in] Una matriz de bytes que representa el nuevo valor. Este valor se almacena en el objeto, comenzando en el desplazamiento dado.
-
- `pdwBytes`
-
- [out] Devuelve que el número de bytes establecido realmente.
+`pdwBytes`\
+[out] Devuelve que el número de bytes establecido realmente.
 
 ## <a name="return-value"></a>Valor devuelto
  Si se realiza correctamente, devuelve S_OK; en caso contrario, devuelve un código de error.

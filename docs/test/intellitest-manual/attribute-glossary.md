@@ -9,12 +9,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 7c5f1883a5d8c09713d520aa934f91b32cbaf388
-ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
+ms.openlocfilehash: aada3c1053ed30521d8c7116c887061650a083dc
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58323034"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67825314"
 ---
 # <a name="attribute-glossary"></a>Glosario de atributos
 
@@ -25,7 +25,7 @@ ms.locfileid: "58323034"
   * [PexClass](#pexclass)
   * [PexGenericArguments](#pexgenericarguments)
   * [PexMethod](#pexmethod)
-     - [PexExplorationAttributeBase](#pexexplorationattributebase)
+    * [PexExplorationAttributeBase](#pexexplorationattributebase)
 
 * **Microsoft.Pex.Framework.Settings**
   * [PexAssemblySettings](#pexassemblysettings)
@@ -152,7 +152,7 @@ Este atributo puede establecerse en el nivel de ensamblado para invalidar los va
 ```csharp
 using Microsoft.Pex.Framework;
 // overriding the test framework selection
-[assembly: PexAssemblySettings(TestFramework = "Naked")]
+[assembly: PexAssemblySettings(TestFramework = "MSTestv2")]
 ```
 
 <a name="pexassemblyundertest"></a>

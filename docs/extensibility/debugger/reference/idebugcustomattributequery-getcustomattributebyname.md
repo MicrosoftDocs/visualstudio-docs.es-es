@@ -6,17 +6,20 @@ helpviewer_keywords:
 - IDebugCustomAttributeQuery::GetCustomAttributeByName
 - GetCustomAttributeByName
 ms.assetid: 6779727c-d10a-4abe-9acd-d0a1eb0737e7
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 60341aa39a61f7179d0b913ec78aca10fae5b84c
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: df4dfa880104b9989e49761beb823c960de85391
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56725026"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66346059"
 ---
 # <a name="idebugcustomattributequerygetcustomattributebyname"></a>IDebugCustomAttributeQuery::GetCustomAttributeByName
 Recupera un atributo personalizado a partir de su nombre.
@@ -39,18 +42,15 @@ int GetCustomAttributeByName(
 );
 ```
 
-#### <a name="parameters"></a>Parámetros
-`pszCustomAttributeName`
+## <a name="parameters"></a>Parámetros
+`pszCustomAttributeName`\
+[in] Nombre del atributo personalizado.
 
- [in] Nombre del atributo personalizado.
-
-`ppBlob`
-
+`ppBlob`\
 [in, out] Matriz de bytes que contiene los datos del atributo personalizado.
 
-`pdwLen`
-
- [out] Longitud en bytes de la `ppBlob` parámetro.
+`pdwLen`\
+[out] Longitud en bytes de la `ppBlob` parámetro.
 
 ## <a name="return-value"></a>Valor devuelto
 Si la operación se realiza correctamente, devuelve `S_OK`. Si el atributo personalizado no existe, devuelve `S_FALSE`. De lo contrario, devuelve un código de error.

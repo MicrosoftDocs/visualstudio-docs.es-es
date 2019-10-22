@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - NATIVE_ADDRESS structure
 ms.assetid: 7a0cd085-bfc8-45cc-a3d4-4459070e207a
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7d7d061d7cd60444a523d5764c30b7ff538faefe
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 02a44369a68c669273207ba2f32902a0d406c61d
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56719129"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66338998"
 ---
 # <a name="nativeaddress"></a>NATIVE_ADDRESS
 
@@ -37,10 +40,9 @@ public struct NATIVE_ADDRESS {
 }
 ```
 
-## <a name="terms"></a>Términos
+## <a name="members"></a>Miembros
 
-`unknown`
-
+`unknown`\
 La dirección nativa (el significado de esto depende del tiempo de ejecución y el sistema operativo).
 
 ## <a name="remarks"></a>Comentarios

@@ -3,19 +3,19 @@ title: Búsqueda de temas (Visor de Ayuda)
 ms.date: 11/02/2017
 ms.topic: conceptual
 ms.assetid: 683f1b0c-1551-4bba-91fe-3855f03fdd69
-author: gewarren
-ms.author: gewarren
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9f68bd5803d418f674007fff34aa0fa016c1804a
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 52818e4f676d6ae9f4c02f26ad8e354b206cb2b8
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55918590"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67824994"
 ---
-# <a name="how-to-search-for-topics"></a>Filtrar Búsqueda de temas
+# <a name="how-to-search-for-topics"></a>Procedimiento Búsqueda de temas
 
 Puede usar la característica de búsqueda de texto completo para buscar todos los temas que contienen una palabra determinada. También puede refinar y personalizar la búsqueda mediante el uso de expresiones comodín, operadores lógicos y operadores de búsqueda avanzada.
 
@@ -23,18 +23,18 @@ Para abrir la pestaña **Búsqueda**, seleccione la pestaña **Búsqueda** en la
 
 ## <a name="to-perform-a-full-text-search"></a>Para realizar una búsqueda de texto completo
 
-1.  En el cuadro de búsqueda, escriba la palabra que quiera buscar.
+1. En el cuadro de búsqueda, escriba la palabra que quiera buscar.
 
-2.  En la consulta de búsqueda, especifique qué operadores de búsqueda lógicos o avanzados se aplicarán a la búsqueda, en caso de que los haya. Para buscar en toda la ayuda disponible, no use operadores.
+2. En la consulta de búsqueda, especifique qué operadores de búsqueda lógicos o avanzados se aplicarán a la búsqueda, en caso de que los haya. Para buscar en toda la ayuda disponible, no use operadores.
 
     > [!NOTE]
     > En el cuadro de diálogo **Opciones del Visor**, puede especificar preferencias adicionales, como el número máximo de resultados de la búsqueda que se mostrarán en todo momento o si se debe incluir contenido en inglés si la configuración regional principal no es inglés.
 
-3.  Presione la tecla **ENTRAR**.
+3. Presione la tecla **ENTRAR**.
 
      De forma predeterminada, una búsqueda devuelve un máximo de 200 aciertos y los muestra en el área de resultados de la búsqueda. Podría aparecer información adicional sobre la versión para cada resultado, en función del contenido.
 
-4.  Para ver un tema, seleccione el título en la lista de resultados.
+4. Para ver un tema, seleccione el título en la lista de resultados.
 
 ## <a name="full-text-search-tips"></a>Sugerencias para la búsqueda de texto completo
 
@@ -44,7 +44,7 @@ Puede crear búsquedas más selectivas que devuelvan solo los temas que le inter
 
 En la tabla siguiente se incluyen algunas reglas y directrices básicas para realizar consultas de búsqueda en la ayuda.
 
-|Sintaxis|Descripción|
+|Sintaxis|DESCRIPCIÓN|
 |------------|-----------------|
 |Distinción de mayúsculas y minúsculas|Las búsquedas no distinguen entre mayúsculas y minúsculas. Desarrolle los criterios de búsqueda usando caracteres en mayúsculas o en minúsculas. Por ejemplo, "OLE" y "ole" devuelven los mismos resultados.|
 |Combinaciones de caracteres|No es posible buscar una sola letra (a-z) o un solo número (0-9). Si intenta buscar ciertas palabras reservadas, por ejemplo "y", "de" y "con", estas se omitirán. Para obtener más información, vea [Palabras omitidas en las búsquedas](#stopwords) más adelante en este tema.|
@@ -66,11 +66,11 @@ Puede restringir aún más los resultados de la búsqueda mediante los operadore
 
 El algoritmo de búsqueda aplica ciertos criterios para ayudar a situar los resultados de la búsqueda más arriba o más abajo en la lista de resultados. En general:
 
-1.  El contenido que incluye palabras de búsqueda en el título tiene mejor clasificación que el que no lo hace.
+1. El contenido que incluye palabras de búsqueda en el título tiene mejor clasificación que el que no lo hace.
 
-2.  El contenido que incluye palabras de búsqueda muy próximas tiene mejor clasificación que el que no lo hace.
+2. El contenido que incluye palabras de búsqueda muy próximas tiene mejor clasificación que el que no lo hace.
 
-3.  El contenido con una mayor densidad de las palabras de búsqueda tiene mejor clasificación que el contenido con una densidad inferior.
+3. El contenido con una mayor densidad de las palabras de búsqueda tiene mejor clasificación que el contenido con una densidad inferior.
 
 ### <a name="stopwords"> Palabras omitidas en las búsquedas (palabras irrelevantes) </a>
 

@@ -8,12 +8,12 @@ ms.assetid: 2f634fba-8dfa-4c7a-a8b9-be867b78d16a
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: e053ee01d60d1ce3dcae10e044bb642e11f90dd7
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 83e3086aa8181156a9d35a906a9d3a7e60575cd2
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55924089"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68918441"
 ---
 # <a name="configure-scenario-start-delays-in-load-tests"></a>Configurar retrasos de inicio de escenario en pruebas de carga
 
@@ -32,9 +32,9 @@ Puede especificar un retraso antes de iniciar un escenario en una prueba de carg
 > [!NOTE]
 > Para obtener una lista completa de las propiedades de los escenarios de pruebas de carga y sus descripciones, consulte [Propiedades de los escenarios de prueba de carga](../test/load-test-scenario-properties.md).
 
- Un ejemplo de una instancia en la que puede que desee utilizar la propiedad **Retrasar hora de inicio** es si necesita que un escenario empiece a generar elementos que utiliza otro escenario. Puede retrasar el escenario consumidor para permitir que el escenario productor rellene algunos datos.
+Un ejemplo de una instancia en la que puede que desee utilizar la propiedad **Retrasar hora de inicio** es si necesita que un escenario empiece a generar elementos que utiliza otro escenario. Puede retrasar el escenario consumidor para permitir que el escenario productor rellene algunos datos.
 
- Otro ejemplo es que puede tener un escenario que solo se ejecute en determinado momento del día. Por tanto, desea retrasar el inicio del escenario para simular esto.
+Otro ejemplo es que puede tener un escenario que solo se ejecute en determinado momento del día. Por tanto, desea retrasar el inicio del escenario para simular esto.
 
 > [!NOTE]
 > Para obtener una lista completa de las propiedades de los parámetros de ejecución y sus descripciones, vea [Propiedades de los escenarios de prueba de carga](../test/load-test-scenario-properties.md).
@@ -62,7 +62,7 @@ Puede especificar un retraso antes de iniciar un escenario en una prueba de carg
 
 La propiedad **Deshabilitar durante el calentamiento** se establece mediante la ventana **Propiedades**. La edición de propiedades de escenario de la prueba de carga se establece mediante el Editor de prueba de carga.
 
- La propiedad **Deshabilitar durante el calentamiento** se utiliza para indicar si el escenario se debería ejecutar o no durante el período de preparación que se especifica en la propiedad **Retrasar hora de inicio**. Para obtener más información, revise el procedimiento anterior [Especificar el retraso de la hora de inicio de un escenario](#specify-the-delay-start-time-of-a-scenario).
+La propiedad **Deshabilitar durante el calentamiento** se utiliza para indicar si el escenario se debería ejecutar o no durante el período de preparación que se especifica en la propiedad **Retrasar hora de inicio**. Para obtener más información, revise el procedimiento anterior [Especificar el retraso de la hora de inicio de un escenario](#specify-the-delay-start-time-of-a-scenario).
 
 > [!NOTE]
 > Para obtener una lista completa de las propiedades de los parámetros de ejecución y sus descripciones, vea [Propiedades de los escenarios de prueba de carga](../test/load-test-scenario-properties.md).

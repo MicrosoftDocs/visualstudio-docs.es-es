@@ -5,17 +5,17 @@ ms.topic: reference
 helpviewer_keywords:
 - IDebugPortSupplierEx2 interface
 ms.assetid: dae0050a-a50a-4f35-bfbd-e538f537b20f
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a87ec52c3c7929d32da2b568b8e2735efc6319d8
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 3bebf232e17df54d4dae2392a40f2ccbc3fc711c
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56701412"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66353311"
 ---
 # <a name="idebugportsupplierex2"></a>IDebugPortSupplierEx2
 Proporciona compatibilidad para un proveedor de puerto seleccionar e interactuar con un servidor de núcleo.

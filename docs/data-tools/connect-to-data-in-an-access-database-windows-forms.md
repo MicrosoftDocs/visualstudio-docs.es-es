@@ -1,41 +1,39 @@
 ---
-title: Conectar a los datos en una base de datos de Access (Windows Forms)
-ms.date: 02/12/2019
+title: Conectar a datos de una base de datos de Access
+ms.date: 07/18/2019
 ms.topic: conceptual
 helpviewer_keywords:
-- databases, connecting to
-- databases, Access
 - data [Visual Studio], connecting
-- connecting to data, from Access databases
+- connecting to data, Access databases
 - Access databases, connecting
 ms.assetid: 4159e815-d430-4ad0-a234-e4125fcbef18
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 9d4fcce4664483cd1d981f6a0b1233a6302c553b
-ms.sourcegitcommit: b14b7a938a2aba9fcce4d5e813aadf2040b0dcda
-ms.translationtype: MTE95
+ms.openlocfilehash: d24fc2fa1ee34567e0c32859eeccf6af62813a20
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "58647354"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72648719"
 ---
-# <a name="connect-to-data-in-an-access-database-windows-forms"></a>Conectar a los datos en una base de datos de Access (Windows Forms)
+# <a name="connect-to-data-in-an-access-database"></a>Conectar a datos de una base de datos de Access
 
-Puede conectarse a una base de datos de Access (ya sea un *.mdf* archivo o una *.accdb* archivo) mediante el uso de Visual Studio. Después de definir la conexión, los datos aparecen en la ventana **Orígenes de datos**. Desde esta ventana, puede arrastrar las tablas o vistas a los formularios.
+Puede conectarse a una base de datos de Access (ya sea un archivo *. mdb* o *. accdb* ) mediante Visual Studio. Después de definir la conexión, los datos aparecen en la ventana **Orígenes de datos**. Desde allí, puede arrastrar tablas o vistas a la superficie de diseño.
 
 ## <a name="prerequisites"></a>Requisitos previos
 
-Para utilizar estos procedimientos, se necesita un proyecto de aplicación de Windows Forms, y una base de datos de Access (archivo *.accdb*) o una base de datos de Access 2000-2003 (archivo *.mdb*). Siga el procedimiento que corresponde al tipo de archivo.
+Para usar estos procedimientos, necesita un proyecto Windows Forms o WPF y una base de datos de Access (archivo *. accdb* ) o una base de datos de Access 2000-2003 (archivo *. mdb* ). Siga el procedimiento que corresponde al tipo de archivo.
 
-## <a name="create-a-dataset-for-an-accdb-file"></a>Crear un conjunto de datos para un archivo .accdb
+## <a name="create-a-dataset-for-an-accdb-file"></a>Crear un conjunto de información para un archivo. accdb
 
-Puede conectarse a bases de datos creadas a través de Access 2013, Office 365, Access 2010 o Access 2007 mediante el procedimiento siguiente.
+Conéctese a las bases de datos creadas con Office 365, Access 2013, Access 2010 o Access 2007 mediante el procedimiento siguiente.
 
-1. Abra la aplicación de Windows Forms para la que desea crear una conexión de datos.
+1. Abra un proyecto de aplicación de Windows Forms o WPF en Visual Studio.
 
-2. Para abrir el **orígenes de datos** ventana, en el **vista** menú, seleccione **Other Windows** > **orígenes de datos**.
+2. Para abrir la **ventana orígenes de datos** , en el menú **Ver** , seleccione **otras ventanas**  > **orígenes de datos**.
 
    ![Ver orígenes de datos en Otras ventanas](../data-tools/media/viewdatasources.png)
 
@@ -43,41 +41,41 @@ Puede conectarse a bases de datos creadas a través de Access 2013, Office 365, 
 
    Se abrirá el **Asistente para configuración de orígenes de datos**.
 
-4. Seleccione **base de datos** en el **elegir un tipo de origen de datos** página y, a continuación, seleccione **siguiente**.
+4. Seleccione **base** de datos en la página **elegir un tipo de origen de datos** y, a continuación, seleccione **siguiente**.
 
-5. Seleccione **Dataset** en el **elegir un modelo de base de datos** página y, a continuación, seleccione **siguiente**.
+5. Seleccione **conjunto** de datos en la página **elegir un modelo de base de datos** y, a continuación, seleccione **siguiente**.
 
 6. En la página **Elegir la conexión de datos**, seleccione **Nueva conexión** para configurar una nueva conexión de datos.
 
    Se abrirá el cuadro de diálogo **Agregar conexión**.
 
-7. Si **origen de datos** no está establecido en **archivo de base de datos de Microsoft Access (OLE DB)**, seleccione el **cambio** botón.
+7. Si el **origen de datos** no está establecido en el archivo de base de datos de **Microsoft Access (OLE DB)** , seleccione el botón **cambiar** .
 
-   El **cambiar origen de datos** abre el cuadro de diálogo. En la lista de orígenes de datos, elija **el archivo de base de datos de Microsoft Access**. En el **proveedor de datos** lista desplegable, seleccione **proveedor de datos de .NET Framework para OLE DB**y, a continuación, elija **Aceptar**.
+   Se abrirá el cuadro de diálogo **cambiar origen de datos** . En la lista de orígenes de datos, elija Archivo de base de datos de **Microsoft Access**. En el menú desplegable **proveedor de datos** , seleccione **.NET Framework proveedor de datos para OLE DB**y, después, elija **Aceptar**.
 
-8. Elija **examinar** junto a **nombre de archivo de base de datos**y, a continuación, navegue hasta su *.accdb* de archivo y elija **abierto**.
+8. Elija **examinar** junto a **nombre de archivo de base de datos**y, a continuación, navegue hasta el archivo *. accdb* y elija **abrir**.
 
 9. Escriba un nombre de usuario y una contraseña (si es necesario) y, a continuación, elija **Aceptar**.
 
-10. Seleccione **siguiente** en el **elegir la conexión de datos** página.
+10. Seleccione **siguiente** en la página **elegir la conexión de datos** .
 
-     Obtendrá un cuadro de diálogo que le indica que el archivo de datos no está en el proyecto actual. Seleccione **Sí** o **No**.
+    Es posible que aparezca un cuadro de diálogo que le indica que el archivo de datos no está en el proyecto actual. Seleccione **Sí** o **No**.
 
-11. Seleccione **siguiente** en el **Guardar cadena de conexión en el archivo de configuración de la aplicación** página.
+11. Seleccione **siguiente** en la página **Guardar cadena de conexión en el archivo de configuración de la aplicación** .
 
 12. Expanda el nodo **Tablas** en la página **Elija los objetos de base de datos**.
 
-13. Seleccione las tablas o vistas que desea incluir en el conjunto de datos y, a continuación, seleccione **finalizar**.
+13. Seleccione las tablas o vistas que desea incluir en el conjunto de DataSet y, a continuación, seleccione **Finalizar**.
 
-     El conjunto de datos se agrega al proyecto y las tablas y las vistas aparecen en la ventana **Orígenes de datos**.
+    El conjunto de datos se agrega al proyecto y las tablas y las vistas aparecen en la ventana **Orígenes de datos**.
 
-## <a name="create-a-dataset-for-an-mdb-file"></a>Crear un conjunto de datos para un archivo .mdb
+## <a name="create-a-dataset-for-an-mdb-file"></a>Crear un conjunto de archivos para un archivo. mdb
 
-Cree el conjunto de datos ejecutando el **Asistente para la configuración de orígenes de datos**.
+Conéctese a las bases de datos creadas con Access 2000-2003 mediante el procedimiento siguiente.
 
-1. Abra la aplicación de Windows Forms para la que desea crear una conexión de datos.
+1. Abra un proyecto de aplicación de Windows Forms o WPF en Visual Studio.
 
-2. En el **vista** menú, seleccione **Other Windows** > **orígenes de datos**.
+2. En el menú **Ver** , seleccione **otras ventanas**  > **orígenes de datos**.
 
    ![Ver orígenes de datos en Otras ventanas](../data-tools/media/viewdatasources.png)
 
@@ -85,42 +83,40 @@ Cree el conjunto de datos ejecutando el **Asistente para la configuración de or
 
     Se abrirá el **Asistente para configuración de orígenes de datos**.
 
-4. Seleccione **base de datos** en el **elegir un tipo de origen de datos** página y, a continuación, seleccione **siguiente**.
+4. Seleccione **base** de datos en la página **elegir un tipo de origen de datos** y, a continuación, seleccione **siguiente**.
 
-5. Seleccione **Dataset** en el **elegir un modelo de base de datos** página y, a continuación, seleccione **siguiente**.
+5. Seleccione **conjunto** de datos en la página **elegir un modelo de base de datos** y, a continuación, seleccione **siguiente**.
 
 6. En la página **Elegir la conexión de datos**, seleccione **Nueva conexión** para configurar una nueva conexión de datos.
 
-7. Si el origen de datos no es **archivo de base de datos de Microsoft Access (OLE DB)**, seleccione **cambio** para abrir el **cambiar origen de datos** cuadro de diálogo y seleccione **Microsoft Obtener acceso a archivos de base de datos**y, a continuación, seleccione **Aceptar**.
+7. Si el origen de datos no es un archivo de base de datos de **Microsoft Access (OLE DB)** , seleccione **cambiar** para abrir el cuadro de diálogo **cambiar origen de datos** y seleccione Archivo de base de datos de **Microsoft Access**y, a continuación, seleccione **Aceptar**.
 
-8. En el **nombre de archivo de base de datos**, especifique la ruta de acceso y el nombre de la *.mdb* archivo que desea conectarse a y, a continuación, seleccione **Aceptar**.
+8. En el **nombre del archivo de base de datos**, especifique la ruta de acceso y el nombre del archivo *. mdb* al que desea conectarse y, a continuación, seleccione **Aceptar**.
 
    ![Agregar archivo de base de datos de acceso a la conexión](../data-tools/media/add-connection-access-db.png)
 
-9. Seleccione **siguiente** en el **elegir la conexión de datos** página.
+9. Seleccione **siguiente** en la página **elegir la conexión de datos** .
 
-10. Seleccione **siguiente** en el **Guardar cadena de conexión en el archivo de configuración de la aplicación** página.
+10. Seleccione **siguiente** en la página **Guardar cadena de conexión en el archivo de configuración de la aplicación** .
 
 11. Expanda el nodo **Tablas** en la página **Elija los objetos de base de datos**.
 
-12. Seleccione las tablas o vistas que desee en el conjunto de datos y, a continuación, seleccione **finalizar**.
+12. Seleccione las tablas o vistas que desee en el conjunto de DataSet y, a continuación, seleccione **Finalizar**.
 
     El conjunto de datos se agrega al proyecto y las tablas y las vistas aparecen en la ventana **Orígenes de datos**.
 
-## <a name="security"></a>Seguridad
-
-Almacenar información confidencial, como una contraseña, puede afectar la seguridad de la aplicación. El uso de la autenticación de Windows (también conocida como seguridad integrada) es un modo más seguro de controlar el acceso a una base de datos. Para más información, consulte [Proteger la información de conexión](/dotnet/framework/data/adonet/protecting-connection-information).
-
 ## <a name="next-steps"></a>Pasos siguientes
 
-Ahora está disponible en el conjunto de datos que acaba de crear el **orígenes de datos** ventana. Ahora puede realizar cualquiera de las tareas siguientes:
+El conjunto de datos que acaba de crear está disponible en la ventana **orígenes de datos** . Ahora puede realizar cualquiera de las tareas siguientes:
 
-- Seleccione los elementos en el **orígenes de datos** ventana y arrástrelos hasta el formulario (vea [controla el enlace Windows Forms a datos en Visual Studio](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)).
+- Seleccione elementos en la ventana **orígenes de datos** y arrástrelos hasta el formulario o la superficie de diseño (vea [enlazar Windows Forms controles a datos en Visual Studio](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md) o [información general sobre el enlace de datos de WPF](/dotnet/framework/wpf/data/data-binding-overview)).
 
 - Abra el origen de datos en el **Diseñador de DataSet** para agregar o editar los objetos que constituyen el conjunto de datos.
 
-- Agregar lógica de validación para el <xref:System.Data.DataTable.ColumnChanging> o <xref:System.Data.DataTable.RowChanging> eventos de las tablas de datos del conjunto de datos (consulte [validar datos en conjuntos de datos](../data-tools/validate-data-in-datasets.md)).
+- Agregue la lógica de validación al <xref:System.Data.DataTable.ColumnChanging> o <xref:System.Data.DataTable.RowChanging> evento de las tablas de datos en el conjunto de datos (vea [Validate Data in](../data-tools/validate-data-in-datasets.md)datasets).
 
 ## <a name="see-also"></a>Vea también
 
 - [Adición de conexiones](../data-tools/add-new-connections.md)
+- [Información general sobre el enlace de datos de WPF](/dotnet/framework/wpf/data/data-binding-overview)
+- [Windows Forms data binding](/dotnet/framework/winforms/data-binding-and-windows-forms) (Enlace de datos de Windows Forms)

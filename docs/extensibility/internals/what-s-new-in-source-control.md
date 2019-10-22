@@ -7,17 +7,17 @@ helpviewer_keywords:
 - what's new [Visual Studio SDK], source control
 - source control [Visual Studio SDK], what's new
 ms.assetid: bcf85418-18fb-4824-9dae-d14bf3d56a77
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3b667a6c6322a925b49290ab3234788a4eee3544
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.openlocfilehash: e12776c21d345d60992eeff4963498bcd7d56678
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57867966"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66323262"
 ---
 # <a name="whats-new-in-source-control-for-the-visual-studio-2015-sdk"></a>Novedades en Control de código fuente para el SDK Visual Studio 2015
 

@@ -11,15 +11,15 @@ f1_keywords:
 - VS.DocumentOutline
 ms.assetid: c54969a7-d75a-4a35-9b37-af7a596a7c24
 caps.latest.revision: 31
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: c928d9f939db96ae302620952bbb6bbdedc396a3
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 1c5d0770115fffd8c81078fd0e3d187ec5d3c5ae
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54795174"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72657945"
 ---
 # <a name="creating-a-ui-by-using-xaml-designer-in-visual-studio"></a>Crear una IU con el Diseñador XAML en Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,13 +36,13 @@ El Diseñador XAML en Visual Studio proporciona una interfaz visual para ayudarl
 
  En la vista Diseño, la ventana que contiene la *mesa de trabajo* es la ventana activa y se puede usar como superficie de trabajo principal. Puede usarla para diseñar visualmente una página en la aplicación agregando o dibujando elementos y modificándolos. Para obtener más información, consulta [Working with elements in XAML Designer](../designers/working-with-elements-in-xaml-designer.md). Esta ilustración muestra la mesa de trabajo en la vista Diseño.
 
- ![Vista Diseño del Diseñador XAML](../designers/media/xaml-editor-design-view.png "xaml_editor_design_view")
+ ![Vista de diseño de Diseñador XAML](../designers/media/xaml-editor-design-view.png "xaml_editor_design_view")
 
  Las siguientes características están disponibles en la mesa de trabajo:
 
  **Guías de alineación** Las guías de alineación son *límites de alineación* que aparecen como líneas discontinuas de color rojo para mostrar cuándo se alinean los bordes de los controles o cuándo se alinean las líneas base de texto. Los límites de alineación aparecen solamente cuando está habilitado el **ajuste a las guías de alineación** .
 
- **Raíles Grid** Los raíles `Grid` se usan para administrar las filas y columnas en un panel [Grid](http://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.controls.grid.aspx). Puede crear y eliminar filas y columnas, así como ajustar el alto y el ancho relativos. El raíl Grid vertical, que aparece a la izquierda de la mesa de trabajo, se usa para las filas, mientras que la línea horizontal, que aparece en la parte superior, se usa para las columnas.
+ **Raíles Grid** Los raíles `Grid` se usan para administrar las filas y columnas en un panel [Grid](https://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.controls.grid.aspx). Puede crear y eliminar filas y columnas, así como ajustar el alto y el ancho relativos. El raíl Grid vertical, que aparece a la izquierda de la mesa de trabajo, se usa para las filas, mientras que la línea horizontal, que aparece en la parte superior, se usa para las columnas.
 
  **Controles Adorner de Grid** Un control Adorner de `Grid` aparece como un triángulo con una línea vertical u horizontal asociada a él en el raíl `Grid`. Cuando se arrastra un control Adorner de `Grid` , el ancho o el alto de las filas o las columnas adyacentes se actualiza al mover el mouse.
 
@@ -50,7 +50,7 @@ El Diseñador XAML en Visual Studio proporciona una interfaz visual para ayudarl
 
  **Controladores de tamaño** Los controladores de tamaño aparecen en los controles seleccionados y le permiten cambiar el tamaño del control. Cuando cambia el tamaño de un control, suelen aparecer los valores de ancho y alto para ayudarle a ajustar el tamaño del control. Para obtener más información sobre cómo manipular los controles en la Vista de diseño, consulta [Working with elements in XAML Designer](../designers/working-with-elements-in-xaml-designer.md).
 
- **Márgenes** Los márgenes representan la cantidad de espacio fijo comprendido entre el borde de un control y el borde de su contenedor. Puede establecer los márgenes de un control mediante propiedades [Margin](http://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.frameworkelement.margin.aspx) en **Diseño** en la ventana Propiedades.
+ **Márgenes** Los márgenes representan la cantidad de espacio fijo comprendido entre el borde de un control y el borde de su contenedor. Puede establecer los márgenes de un control mediante propiedades [Margin](https://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.frameworkelement.margin.aspx) en **Diseño** en la ventana Propiedades.
 
  **Controles Adorner de margen** Puede usar los controles Adorner de margen para cambiar los márgenes de un elemento con respecto a su contenedor de diseño. Cuando un control Adorner de margen está abierto, no se establece un margen y el control Adorner de margen muestra una cadena rota. Cuando el margen no está establecido, los elementos permanecen en su lugar cuando se cambia el tamaño del contenedor de diseño en tiempo de ejecución. Cuando el control Adorner de margen está cerrado, dicho control muestra una cadena intacta y los elementos se moverán con el margen cuando se cambie el tamaño del contenedor de diseño en tiempo de ejecución (el margen permanece fijo).
 
@@ -58,7 +58,7 @@ El Diseñador XAML en Visual Studio proporciona una interfaz visual para ayudarl
 
  En la vista Diseño, en el área inferior izquierda de la pantalla, están disponibles otros comandos de la mesa de trabajo, tal como se muestra aquí:
 
- ![Comandos de la vista Diseño](../designers/media/xaml-editor-design-controls.png "xaml_editor_design_controls")
+ ![Vista de diseño comandos](../designers/media/xaml-editor-design-controls.png "xaml_editor_design_controls")
 
  Estos comandos están disponibles en esta barra de herramientas:
 
@@ -81,7 +81,7 @@ El Diseñador XAML en Visual Studio proporciona una interfaz visual para ayudarl
 ## <a name="device-window"></a>Ventana de dispositivo
  La ventana Dispositivo del Diseñador XAML permite simular en tiempo de diseño varias vistas, presentaciones y opciones de visualización para el proyecto de la Tienda Windows o Windows Phone. La ventana Dispositivo está disponible en el menú **Diseño** cuando se trabaja en el Diseñador XAML. Este es su aspecto:
 
- ![Ventana de dispositivo](../designers/media/xaml-editor-device-panel.png "xaml_editor_device_panel")
+ ![Ventana del dispositivo](../designers/media/xaml-editor-device-panel.png "xaml_editor_device_panel")
 
  Estas son las opciones disponibles en la ventana Dispositivo:
 
@@ -116,7 +116,7 @@ El Diseñador XAML en Visual Studio proporciona una interfaz visual para ayudarl
 
   Para ver la ventana Esquema del documento, en la barra de menús elija **Vista**, **Otras ventanas**, **Esquema del documento**.
 
-  ![Ventana Esquema del documento](../designers/media/xaml-editor-doc-outline.png "xaml_editor_doc_outline")
+  ![Ventana esquema del documento](../designers/media/xaml-editor-doc-outline.png "xaml_editor_doc_outline")
 
   Estas son las opciones disponibles en la ventana Esquema del documento:
 
@@ -138,4 +138,4 @@ El Diseñador XAML en Visual Studio proporciona una interfaz visual para ayudarl
  A la derecha de cada propiedad de valor se encuentra un *marcador de propiedad* que aparece como un símbolo de cuadro. La apariencia del marcador de propiedad indica si se aplicó a la propiedad un enlace de datos o un recurso. Por ejemplo, un símbolo de cuadro blanco indica un valor predeterminado, un símbolo de cuadro negro suele indicar que se ha aplicado un recurso local y un símbolo de cuadro naranja suele indicar que se ha aplicado un enlace de datos. Al hacer clic en el marcador de propiedad, puede navegar a la definición de un estilo, abrir el generador de enlace de datos o abrir el selector de recursos.
 
 ## <a name="see-also"></a>Vea también
- [Trabajar con elementos en el Diseñador XAML](../designers/working-with-elements-in-xaml-designer.md) [cómo crear y aplicar un recurso](../designers/how-to-create-and-apply-a-resource.md) [Tutorial: Enlace a datos en el Diseñador XAML](../designers/walkthrough-binding-to-data-in-xaml-designer.md)
+ [Trabajar con elementos en diseñador XAML](../designers/working-with-elements-in-xaml-designer.md) [Cómo crear y aplicar un recurso](../designers/how-to-create-and-apply-a-resource.md) [Tutorial: enlazar a datos en diseñador XAML](../designers/walkthrough-binding-to-data-in-xaml-designer.md)

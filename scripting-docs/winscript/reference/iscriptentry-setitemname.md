@@ -1,5 +1,5 @@
 ---
-title: IScriptEntry::SetItemName | Microsoft Docs
+title: 'Iscriptentry (:: SetItemName | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d25ac4977f1fca44d63767c372db169f8cb61ea6
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 7ba226704f5b064c86b52c1b349650d509b2b549
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58160555"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72575367"
 ---
 # <a name="iscriptentrysetitemname"></a>IScriptEntry::SetItemName
-Establece el nombre del elemento que identifica un `IScriptEntry` objeto.  
+Establece el nombre de elemento que identifica un objeto `IScriptEntry`.  
   
 ## <a name="syntax"></a>Sintaxis  
   
@@ -37,21 +37,21 @@ HRESULT SetItemName(
   
 #### <a name="parameters"></a>Parámetros  
  `psz`  
- [in] La dirección de un búfer que contiene el nombre del elemento. El nombre del elemento se usa el host para identificar la entrada.  
+ de Dirección de un búfer que contiene el nombre del elemento. El host usa el nombre del elemento para identificar la entrada.  
   
 ## <a name="return-value"></a>Valor devuelto  
- Una clase `HRESULT`. Entre los valores posibles se incluyen los que se indican en la tabla siguiente, entre otros.  
+ Interfaz `HRESULT`. Entre los valores posibles se incluyen los que se indican en la tabla siguiente, entre otros.  
   
 |Valor|Descripción|  
 |-----------|-----------------|  
 |`S_OK`|El método se realizó correctamente.|  
-|`E_FAIL`|El método no se realizó correctamente.|  
+|`E_FAIL`|El método no se ha realizado correctamente.|  
   
 ## <a name="remarks"></a>Comentarios  
- Para `IScriptEntry` objetos, este método devuelve `S_OK`.  
+ Para los objetos `IScriptEntry`, este método devuelve `S_OK`.  
   
- Para `IScriptScriptlet` objetos (que derivan de `IScriptEntry`), este método devuelve `E_FAIL`. Para `IScriptScriptlet` objetos, Establece el nombre del elemento [IActiveScriptAuthor::AddScriptlet](../../winscript/reference/iactivescriptauthor-addscriptlet.md) y no se puede cambiar.  
+ Para los objetos `IScriptScriptlet` (que se derivan de `IScriptEntry`), este método devuelve `E_FAIL`. Para los objetos `IScriptScriptlet`, el nombre del elemento se establece mediante [iactivescriptauthor (:: AddScriptlet](../../winscript/reference/iactivescriptauthor-addscriptlet.md) y no se puede cambiar.  
   
 ## <a name="see-also"></a>Vea también  
- [IScriptEntry (interfaz)](../../winscript/reference/iscriptentry-interface.md)   
+ @No__t_1 de la [interfaz iscriptentry (](../../winscript/reference/iscriptentry-interface.md)  
  [IScriptEntry::GetItemName](../../winscript/reference/iscriptentry-getitemname.md)

@@ -1,48 +1,58 @@
 ---
 title: 'Paso 3: Agregar un temporizador de cuenta atrás'
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: tutorial
+ms.prod: visual-studio-windows
+ms.technology: vs-ide-general
+dev_langs:
+- CSharp
+- VB
 ms.assetid: 62670a2b-efdc-45c6-9646-9b17eeb33dcb
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ac6ea6f45446b35d9b65d9665ede5b2e76b387e3
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: f5ee65126fb89f2725b69d196e0659c622d9c389
+ms.sourcegitcommit: 98b02f87c7aa1f5eb7f0d1c86bfa36efa8580c57
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55940716"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "72314105"
 ---
 # <a name="step-3-add-a-countdown-timer"></a>Paso 3: Agregar un temporizador de cuenta atrás
+
 En la tercera parte de este tutorial, agregará un temporizador de cuenta atrás para el seguimiento del número de segundos que quedan para que el jugador finalice.
 
 > [!NOTE]
->  Este tema forma parte de una serie de tutoriales sobre conceptos de codificación básicos. Para obtener información general sobre el tutorial, vea [Tutorial 2: Crear una prueba matemática cronometrada](../ide/tutorial-2-create-a-timed-math-quiz.md).
+> Este tema forma parte de una serie de tutoriales sobre conceptos de codificación básicos.
+> - Para obtener información general sobre el tutorial, vea [Tutorial 2: Crear una prueba matemática cronometrada](../ide/tutorial-2-create-a-timed-math-quiz.md).
+> - Para descargar una versión completa del código, consulte [Ejemplo completo del tutorial de cuestionario de matemáticas](https://code.msdn.microsoft.com/Complete-Math-Quiz-8581813c).
 
 ## <a name="to-add-a-countdown-timer"></a>Para agregar un temporizador de cuenta atrás
 
-1.  Agregue una variable de entero denominada **timeLeft**, como hizo en el procedimiento anterior. El código debe tener un aspecto parecido al siguiente.
+1. Agregue una variable de entero denominada **timeLeft**, como hizo en el procedimiento anterior. El código debe tener un aspecto parecido al siguiente.
 
      [!code-vb[VbExpressTutorial3Step3#5](../ide/codesnippet/VisualBasic/step-3-add-a-countdown-timer_1.vb)]
      [!code-csharp[VbExpressTutorial3Step3#5](../ide/codesnippet/CSharp/step-3-add-a-countdown-timer_1.cs)]
 
+     [!INCLUDE [devlang-control-csharp-vb](./includes/devlang-control-csharp-vb.md)]
+
      Ahora necesita un método que cuente realmente los segundos, como un temporizador, y que genere un evento después del tiempo especificado.
 
-2.  En la ventana de diseño, mueva un control <xref:System.Windows.Forms.Timer> de la categoría **Componentes** del **cuadro de herramientas** al formulario.
+2. En la ventana de diseño, mueva un control <xref:System.Windows.Forms.Timer> de la categoría **Componentes** del **cuadro de herramientas** al formulario.
 
      El control aparece en el área gris de la parte inferior de la ventana de diseño.
 
-3.  En el formulario, pulse el icono **timer1** que acaba de agregar y establezca su propiedad **Interval** en **1000**.
+3. En el formulario, pulse el icono **timer1** que acaba de agregar y establezca su propiedad **Interval** en **1000**.
 
      Dado que el valor de intervalo está en milisegundos, el valor 1000 hace que el evento <xref:System.Windows.Forms.Timer.Tick> se genere cada segundo.
 
-4.  En el formulario, haga doble clic en el control **Timer** o selecciónelo y elija la tecla **Entrar**.
+4. En el formulario, haga doble clic en el control **Timer** o selecciónelo y elija la tecla **Entrar**.
 
      Aparece un editor de código en el que se muestra el método del controlador de eventos Tick que acaba de agregar.
 
-5.  Agregue las siguientes instrucciones al nuevo método de control de eventos.
+5. Agregue las siguientes instrucciones al nuevo método de control de eventos.
 
      [!code-vb[VbExpressTutorial3Step3#6](../ide/codesnippet/VisualBasic/step-3-add-a-countdown-timer_2.vb)]
      [!code-csharp[VbExpressTutorial3Step3#6](../ide/codesnippet/CSharp/step-3-add-a-countdown-timer_2.cs)]
@@ -54,7 +64,7 @@ En la tercera parte de este tutorial, agregará un temporizador de cuenta atrás
      Hemos agregado una instrucción `if else`, que es la manera de indicar a los programas que tomen decisiones. Una instrucción `if else` tiene el siguiente aspecto.
 
     > [!NOTE]
-    >  El ejemplo siguiente tiene solo fines ilustrativos. No lo agregue al proyecto.
+    > El ejemplo siguiente tiene solo fines de demostración. No lo agregue al proyecto.
 
     ```vb
     If (something that your program will check) Then
@@ -88,21 +98,22 @@ En la tercera parte de este tutorial, agregará un temporizador de cuenta atrás
 
      Los usuarios pueden escribir los números con más facilidad si se usa un control <xref:System.Windows.Forms.NumericUpDown>. Este es el motivo por el que se usa este control para las respuestas a los problemas de matemáticas. Todas las respuestas posibles son números enteros comprendidos entre 0 y 100. Al dejar los valores predeterminados de las propiedades **Minimum**, **Maximum** y **DecimalPlaces**, se asegura de que los jugadores no puedan escribir decimales, números negativos o números que sean demasiado altos. (Si quiere permitir que los jugadores escriban 3,141 pero no 3,1415, puede establecer la propiedad **DecimalPlaces** en 3).
 
-6.  Agregue tres líneas al final de método `StartTheQuiz()`, de modo que el código tenga este aspecto.
+6. Agregue tres líneas al final de método `StartTheQuiz()`, de modo que el código tenga este aspecto.
 
      [!code-vb[VbExpressTutorial3Step3#7](../ide/codesnippet/VisualBasic/step-3-add-a-countdown-timer_4.vb)]
      [!code-csharp[VbExpressTutorial3Step3#7](../ide/codesnippet/CSharp/step-3-add-a-countdown-timer_4.cs)]
 
      Ahora, al empezar la prueba, la variable **timeLeft** se establece en 30 y la propiedad **Text** del control **timeLabel** se establece en 30 segundos. A continuación, el método <xref:System.Windows.Forms.Timer.Start> del control Timer inicia la cuenta atrás. (La prueba no comprueba la respuesta todavía, esto viene después).
 
-7.  Guarde el programa, ejecútelo y, después, pulse el botón **Iniciar** en el formulario.
+7. Guarde el programa, ejecútelo y, después, pulse el botón **Iniciar** en el formulario.
 
      El temporizador iniciará la cuenta atrás. Cuando se agota el tiempo, la prueba finaliza y se muestra la respuesta. En la ilustración siguiente se muestra la prueba en curso.
 
-     ![Prueba matemática en curso](../ide/media/express_addcountdown.png) Prueba matemática en curso
+     ![Prueba matemática en curso](../ide/media/express_addcountdown.png)<br/>
+*Prueba matemática en curso*
 
 ## <a name="to-continue-or-review"></a>Para continuar o revisar
 
--   Para ir al siguiente paso del tutorial, vea [Paso 4: Agregar el método CheckTheAnswer()](../ide/step-4-add-the-checktheanswer-parens-method.md).
+- Para ir al siguiente paso del tutorial, vea **[Paso 4: Agregar el método CheckTheAnswer()](../ide/step-4-add-the-checktheanswer-parens-method.md)** .
 
--   Para volver al paso anterior del tutorial, vea [Paso 2: Crear un problema de suma aleatoria](../ide/step-2-create-a-random-addition-problem.md).
+- Para volver al paso anterior del tutorial, vea [Paso 2: Crear un problema de suma aleatoria](../ide/step-2-create-a-random-addition-problem.md).

@@ -15,11 +15,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: e2986e1d529af8fad8f5d4ee49f3df69dcda7a8f
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58999574"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68156059"
 ---
 # <a name="dump-file-summary-extensibility-api"></a>API de extensibilidad de resumen de archivos de volcado de memoria
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

@@ -7,17 +7,17 @@ f1_keywords:
 helpviewer_keywords:
 - SccPopulateList function
 ms.assetid: 7416e781-c571-4a7f-8af3-a089ce8be662
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5a28c4aef9284148379d65f3f8bef1b035f8580c
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 64bcf6d443d1f96d650bde7fb92f69bbb12c5327
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56709959"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66353541"
 ---
 # <a name="sccpopulatelist-function"></a>SccPopulateList (Función)
 Esta función actualiza una lista de archivos para un comando de control de código fuente concreto y proporciona el estado de control de código fuente en todos los archivos indicados.
@@ -87,7 +87,7 @@ SCCRTN SccPopulateList (
  El complemento sigue llamando al `pfnPopulate` función, que agrega y elimina los archivos, hasta que finalice y, a continuación, se devuelve desde el `SccPopulateList` función. El IDE, a continuación, puede mostrar su lista. El `lpStatus` matriz representa todos los archivos en la lista original pasada por el IDE. El complemento rellena el estado de todos estos archivos además de hacer que el uso de la función de devolución de llamada.
 
 > [!NOTE]
->  Un complemento de control de código fuente siempre tiene la opción de simplemente devuelvan de inmediato de esta función, dejando la lista, ya que es. Si un complemento implementa esta función, puede indicar esto estableciendo la `SCC_CAP_POPULATELIST` indicador de capacidad en la primera llamada a la [SccInitialize](../extensibility/sccinitialize-function.md). De forma predeterminada, el complemento siempre debe asumir que todos los elementos que se pasan son archivos. Sin embargo, si el IDE se establece la `SCC_PL_DIR` marca en el `fOptions` parámetro, todos los elementos que se pasan tienen que considerarse directorios. El complemento debe agregar todos los archivos que pertenecen en los directorios. El IDE nunca pasarán una combinación de archivos y directorios.
+> Un complemento de control de código fuente siempre tiene la opción de simplemente devuelvan de inmediato de esta función, dejando la lista, ya que es. Si un complemento implementa esta función, puede indicar esto estableciendo la `SCC_CAP_POPULATELIST` indicador de capacidad en la primera llamada a la [SccInitialize](../extensibility/sccinitialize-function.md). De forma predeterminada, el complemento siempre debe asumir que todos los elementos que se pasan son archivos. Sin embargo, si el IDE se establece la `SCC_PL_DIR` marca en el `fOptions` parámetro, todos los elementos que se pasan tienen que considerarse directorios. El complemento debe agregar todos los archivos que pertenecen en los directorios. El IDE nunca pasarán una combinación de archivos y directorios.
 
 ## <a name="see-also"></a>Vea también
 - [Funciones de API de complemento de control de código fuente](../extensibility/source-control-plug-in-api-functions.md)

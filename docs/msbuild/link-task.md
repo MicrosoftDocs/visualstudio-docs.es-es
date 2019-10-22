@@ -30,898 +30,898 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 55d84dc8aed00cf037efc8b35efa13fa712092c7
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 432ef1231f551d265e06242e2ab4ddc58a0fe5ac
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56627160"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67825412"
 ---
 # <a name="link-task"></a>Vincular tarea
-Incluye la herramienta del enlazador de Visual C++, *link.exe*. La herramienta del enlazador vincula bibliotecas y archivos de objeto de formato de archivo de objeto común (COFF) para crear un archivo ejecutable (*.exe*) o una biblioteca de vínculos dinámicos (DLL). Para obtener más información, vea [Opciones del enlazador](/cpp/build/reference/linker-options).
+Incluye la herramienta del enlazador de Visual C++, *link.exe*. La herramienta del enlazador vincula bibliotecas y archivos de objeto de formato de archivo de objeto común (COFF) para crear un archivo ejecutable ( *.exe*) o una biblioteca de vínculos dinámicos (DLL). Para obtener más información, vea [Opciones del enlazador](/cpp/build/reference/linker-options).
 
 ## <a name="parameters"></a>Parámetros
  A continuación se describen los parámetros de la tarea **Link**. La mayoría de los parámetros de tarea, así como algunos conjuntos de parámetros, corresponden a una opción de línea de comandos.
 
--   **AdditionalDependencies**
+- **AdditionalDependencies**
 
-     Parámetro **String[]** opcional.
+  Parámetro **String[]** opcional.
 
-     Especifica una lista de archivos de entrada para agregar al comando.
+  Especifica una lista de archivos de entrada para agregar al comando.
 
-     Para obtener más información, vea [Archivos de entrada de LINK](/cpp/build/reference/link-input-files).
+  Para obtener más información, vea [Archivos de entrada de LINK](/cpp/build/reference/link-input-files).
 
--   **AdditionalLibraryDirectories**
+- **AdditionalLibraryDirectories**
 
-     Parámetro **String[]** opcional.
+  Parámetro **String[]** opcional.
 
-     Reemplaza la ruta de acceso a la biblioteca de entorno. Especifique un nombre de directorio.
+  Reemplaza la ruta de acceso a la biblioteca de entorno. Especifique un nombre de directorio.
 
-     Para obtener más información, consulte [/LIBPATH (Directorios de bibliotecas adicionales)](/cpp/build/reference/libpath-additional-libpath).
+  Para obtener más información, consulte [/LIBPATH (Directorios de bibliotecas adicionales)](/cpp/build/reference/libpath-additional-libpath).
 
--   **AdditionalManifestDependencies**
+- **AdditionalManifestDependencies**
 
-     Parámetro **String[]** opcional.
+  Parámetro **String[]** opcional.
 
-     Especifica los atributos que se colocarán en la sección `dependency` del archivo de manifiesto.
+  Especifica los atributos que se colocarán en la sección `dependency` del archivo de manifiesto.
 
-     Para obtener más información, vea [/MANIFESTDEPENDENCY (Especificar las dependencias del manifiesto)](/cpp/build/reference/manifestdependency-specify-manifest-dependencies). Vea también [Publisher configuration files](https://docs.microsoft.com/windows/desktop/SbsCs/publisher-configuration-files) (Archivos de configuración del publicador).
+  Para obtener más información, vea [/MANIFESTDEPENDENCY (Especificar las dependencias del manifiesto)](/cpp/build/reference/manifestdependency-specify-manifest-dependencies). Vea también [Publisher configuration files](https://docs.microsoft.com/windows/desktop/SbsCs/publisher-configuration-files) (Archivos de configuración del publicador).
 
--   **AdditionalOptions**
+- **AdditionalOptions**
 
-     Parámetro **String** opcional.
+  Parámetro **String** opcional.
 
-     Una lista de opciones del enlazador especificada en la línea de comandos. Por ejemplo, /\<option1> /\<option2> /\<option#>. Utilice este parámetro para especificar opciones del enlazador que no están representadas por ningún otro parámetro de la tarea **Link**.
+  Una lista de opciones del enlazador especificada en la línea de comandos. Por ejemplo, /\<option1> /\<option2> /\<option#>. Utilice este parámetro para especificar opciones del enlazador que no están representadas por ningún otro parámetro de la tarea **Link**.
 
-     Para obtener más información, vea [Opciones del enlazador](/cpp/build/reference/linker-options).
+  Para obtener más información, vea [Opciones del enlazador](/cpp/build/reference/linker-options).
 
--   **AddModuleNamesToAssembly**
+- **AddModuleNamesToAssembly**
 
-     Parámetro **String[]** opcional.
+  Parámetro **String[]** opcional.
 
-     Agrega una referencia de módulo en un ensamblado.
+  Agrega una referencia de módulo en un ensamblado.
 
-     Para obtener más información, vea [/ASSEMBLYMODULE (Agregar un módulo MSIL al ensamblado)](/cpp/build/reference/assemblymodule-add-a-msil-module-to-the-assembly).
+  Para obtener más información, vea [/ASSEMBLYMODULE (Agregar un módulo MSIL al ensamblado)](/cpp/build/reference/assemblymodule-add-a-msil-module-to-the-assembly).
 
--   **AllowIsolation**
+- **AllowIsolation**
 
-     Parámetro **Boolean** opcional.
+  Parámetro **Boolean** opcional.
 
-     Si `true`, hace que el sistema operativo realice cargas y búsquedas de manifiestos. Si `false`, indica que los archivos DLL se cargan como si no hubiera ningún manifiesto.
+  Si `true`, hace que el sistema operativo realice cargas y búsquedas de manifiestos. Si `false`, indica que los archivos DLL se cargan como si no hubiera ningún manifiesto.
 
-     Para obtener más información, vea [/ALLOWISOLATION (Manifestar bucle)](/cpp/build/reference/allowisolation-manifest-lookup).
+  Para obtener más información, vea [/ALLOWISOLATION (Manifestar bucle)](/cpp/build/reference/allowisolation-manifest-lookup).
 
--   **AssemblyDebug**
+- **AssemblyDebug**
 
-     Parámetro **Boolean** opcional.
+  Parámetro **Boolean** opcional.
 
-     Si `true`, emite el atributo **DebuggableAttribute**, junto con el seguimiento de la información de depuración, y desactiva las optimizaciones JIT. Si `false`, emite el atributo **DebuggableAttribute**, pero desactiva el seguimiento de la información de depuración y activa las optimizaciones JIT.
+  Si `true`, emite el atributo **DebuggableAttribute**, junto con el seguimiento de la información de depuración, y desactiva las optimizaciones JIT. Si `false`, emite el atributo **DebuggableAttribute**, pero desactiva el seguimiento de la información de depuración y activa las optimizaciones JIT.
 
-     Para obtener más información, consulte [/ASSEMBLYDEBUG (Agregar DebuggableAttribute)](/cpp/build/reference/assemblydebug-add-debuggableattribute).
+  Para obtener más información, consulte [/ASSEMBLYDEBUG (Agregar DebuggableAttribute)](/cpp/build/reference/assemblydebug-add-debuggableattribute).
 
--   **AssemblyLinkResource**
+- **AssemblyLinkResource**
 
-     Parámetro **String[]** opcional.
+  Parámetro **String[]** opcional.
 
-     Crea un vínculo a un recurso de .NET Framework en el archivo de salida; el archivo de recursos no se coloca en el archivo de salida. Especifique el nombre del recurso.
+  Crea un vínculo a un recurso de .NET Framework en el archivo de salida; el archivo de recursos no se coloca en el archivo de salida. Especifique el nombre del recurso.
 
-     Para obtener más información, vea [/ASSEMBLYLINKRESOURCE (Vincular a recursos de .NET Framework)](/cpp/build/reference/assemblylinkresource-link-to-dotnet-framework-resource).
+  Para obtener más información, vea [/ASSEMBLYLINKRESOURCE (Vincular a recursos de .NET Framework)](/cpp/build/reference/assemblylinkresource-link-to-dotnet-framework-resource).
 
--   **AttributeFileTracking**
+- **AttributeFileTracking**
 
-     Parámetro **Boolean** implícito.
+  Parámetro **Boolean** implícito.
 
-     Permite un seguimiento más a fondo de los archivos para capturar el comportamiento incremental del vínculo. Siempre devuelve `true`.
+  Permite un seguimiento más a fondo de los archivos para capturar el comportamiento incremental del vínculo. Siempre devuelve `true`.
 
--   **BaseAddress**
+- **BaseAddress**
 
-     Parámetro **String** opcional.
+  Parámetro **String** opcional.
 
-     Establece una dirección base para el programa o el archivo DLL que se compila. Especifique `{address[,size] | @filename,key}`.
+  Establece una dirección base para el programa o el archivo DLL que se compila. Especifique `{address[,size] | @filename,key}`.
 
-     Para obtener más información, vea [/BASE (Dirección base)](/cpp/build/reference/base-base-address).
+  Para obtener más información, vea [/BASE (Dirección base)](/cpp/build/reference/base-base-address).
 
--   **BuildingInIDE**
+- **BuildingInIDE**
 
-     Parámetro **Boolean** opcional.
+  Parámetro **Boolean** opcional.
 
-     Si es verdadero, indica que el IDE invoca MSBuild. De lo contrario, indica que MSBuild se invoca desde la línea de comandos.
+  Si es verdadero, indica que el IDE invoca MSBuild. De lo contrario, indica que MSBuild se invoca desde la línea de comandos.
 
-     Este parámetro no tiene ninguna opción del enlazador equivalente.
+  Este parámetro no tiene ninguna opción del enlazador equivalente.
 
--   **CLRImageType**
+- **CLRImageType**
 
-     Parámetro **String** opcional.
+  Parámetro **String** opcional.
 
-     Establece el tipo de una imagen de Common Language Runtime (CLR).
+  Establece el tipo de una imagen de Common Language Runtime (CLR).
 
-     Especifique uno de los valores siguientes, cada uno de los cuales corresponde a una opción del enlazador.
+  Especifique uno de los valores siguientes, cada uno de los cuales corresponde a una opción del enlazador.
 
-    -   **Default** - *\<none>*
+  - **Default** -  *\<none>*
 
-    -   **ForceIJWImage** - **/CLRIMAGETYPE:IJW**
+  - **ForceIJWImage** -  **/CLRIMAGETYPE:IJW**
 
-    -   **ForcePureILImage** - **/CLRIMAGETYPE:PURE**
+  - **ForcePureILImage** -  **/CLRIMAGETYPE:PURE**
 
-    -   **ForceSafeILImage** - **/CLRIMAGETYPE:SAFE**
+  - **ForceSafeILImage** -  **/CLRIMAGETYPE:SAFE**
 
-    Para obtener más información, vea [/CLRIMAGETYPE (Especificar tipo de imagen CLR)](/cpp/build/reference/clrimagetype-specify-type-of-clr-image).
+  Para obtener más información, vea [/CLRIMAGETYPE (Especificar tipo de imagen CLR)](/cpp/build/reference/clrimagetype-specify-type-of-clr-image).
 
--   **CLRSupportLastError**
+- **CLRSupportLastError**
 
-     Parámetro **String** opcional.
+  Parámetro **String** opcional.
 
-     Conserva el último código de error de las funciones llamadas a través del mecanismo P/Invoke.
+  Conserva el último código de error de las funciones llamadas a través del mecanismo P/Invoke.
 
-     Especifique uno de los valores siguientes, cada uno de los cuales corresponde a una opción del enlazador.
+  Especifique uno de los valores siguientes, cada uno de los cuales corresponde a una opción del enlazador.
 
-    -   **Enabled** - **/CLRSupportLastError**
+  - **Enabled** -  **/CLRSupportLastError**
 
-    -   **Disabled** - **/CLRSupportLastError:NO**
+  - **Disabled** -  **/CLRSupportLastError:NO**
 
-    -   **SystemDlls** - **/CLRSupportLastError:SYSTEMDLL**
+  - **SystemDlls** -  **/CLRSupportLastError:SYSTEMDLL**
 
-    Para obtener más información, vea [/CLRSUPPORTLASTERROR (Conservar el último código de error para las llamadas a PInvoke)](/cpp/build/reference/clrsupportlasterror-preserve-last-error-code-for-pinvoke-calls).
+  Para obtener más información, vea [/CLRSUPPORTLASTERROR (Conservar el último código de error para las llamadas a PInvoke)](/cpp/build/reference/clrsupportlasterror-preserve-last-error-code-for-pinvoke-calls).
 
--   **CLRThreadAttribute**
+- **CLRThreadAttribute**
 
-     Parámetro **String** opcional.
+  Parámetro **String** opcional.
 
-     Especifica explícitamente el atributo de subprocesamiento del punto de entrada del programa CLR.
+  Especifica explícitamente el atributo de subprocesamiento del punto de entrada del programa CLR.
 
-     Especifique uno de los valores siguientes, cada uno de los cuales corresponde a una opción del enlazador.
+  Especifique uno de los valores siguientes, cada uno de los cuales corresponde a una opción del enlazador.
 
-    -   **DefaultThreadingAttribute** - **/CLRTHREADATTRIBUTE:NONE**
+  - **DefaultThreadingAttribute** -  **/CLRTHREADATTRIBUTE:NONE**
 
-    -   **MTAThreadingAttribute** - **/CLRTHREADATTRIBUTE:MTA**
+  - **MTAThreadingAttribute** -  **/CLRTHREADATTRIBUTE:MTA**
 
-    -   **STAThreadingAttribute** - **/CLRTHREADATTRIBUTE:STA**
+  - **STAThreadingAttribute** -  **/CLRTHREADATTRIBUTE:STA**
 
-    Para obtener más información, vea [/CLRTHREADATTRIBUTE (Establecer el atributo de subproceso de CLR)](/cpp/build/reference/clrthreadattribute-set-clr-thread-attribute).
+  Para obtener más información, vea [/CLRTHREADATTRIBUTE (Establecer el atributo de subproceso de CLR)](/cpp/build/reference/clrthreadattribute-set-clr-thread-attribute).
 
--   **CLRUnmanagedCodeCheck**
+- **CLRUnmanagedCodeCheck**
 
-     Parámetro **Boolean** opcional.
+  Parámetro **Boolean** opcional.
 
-     Especifica si el enlazador aplicará **SuppressUnmanagedCodeSecurityAttribute** a las llamadas P/Invoke generadas por enlazador a partir de código administrado en archivos DLL nativos.
+  Especifica si el enlazador aplicará **SuppressUnmanagedCodeSecurityAttribute** a las llamadas P/Invoke generadas por enlazador a partir de código administrado en archivos DLL nativos.
 
-    Para obtener más información, vea [/CLRUNMANAGEDCODECHECK (quite SuppressUnmanagedCodeSecurityAttribute)](/cpp/build/reference/clrunmanagedcodecheck-add-suppressunmanagedcodesecurityattribute).
+  Para obtener más información, vea [/CLRUNMANAGEDCODECHECK (quite SuppressUnmanagedCodeSecurityAttribute)](/cpp/build/reference/clrunmanagedcodecheck-add-suppressunmanagedcodesecurityattribute).
 
--   **CreateHotpatchableImage**
+- **CreateHotpatchableImage**
 
-     Parámetro **String** opcional.
+  Parámetro **String** opcional.
 
-     Prepara una imagen para aplicar una revisión activa.
+  Prepara una imagen para aplicar una revisión activa.
 
-     Especifique uno de los valores siguientes, que corresponde a una opción del enlazador.
+  Especifique uno de los valores siguientes, que corresponde a una opción del enlazador.
 
-    -   **Enabled** - **/FUNCTIONPADMIN**
+  - **Enabled** -  **/FUNCTIONPADMIN**
 
-    -   **X86Image** - **/FUNCTIONPADMIN:5**
+  - **X86Image** -  **/FUNCTIONPADMIN:5**
 
-    -   **X64Image** - **/FUNCTIONPADMIN:6**
+  - **X64Image** -  **/FUNCTIONPADMIN:6**
 
-    -   **ItaniumImage** - **/FUNCTIONPADMIN:16**
+  - **ItaniumImage** -  **/FUNCTIONPADMIN:16**
 
-    Para obtener más información, vea [/FUNCTIONPADMIN (Crear una imagen a la que se puede aplicar una revisión reciente)](/cpp/build/reference/functionpadmin-create-hotpatchable-image).
+  Para obtener más información, vea [/FUNCTIONPADMIN (Crear una imagen a la que se puede aplicar una revisión reciente)](/cpp/build/reference/functionpadmin-create-hotpatchable-image).
 
--   **DataExecutionPrevention**
+- **DataExecutionPrevention**
 
-     Parámetro **Boolean** opcional.
+  Parámetro **Boolean** opcional.
 
-     Si `true`, indica que se ha probado si un ejecutable es compatible con la característica Prevención de ejecución de datos de Windows.
+  Si `true`, indica que se ha probado si un ejecutable es compatible con la característica Prevención de ejecución de datos de Windows.
 
-     Para obtener más información, consulte [/NXCOMPAT (Compatible con Prevención de ejecución de datos)](/cpp/build/reference/nxcompat-compatible-with-data-execution-prevention).
+  Para obtener más información, consulte [/NXCOMPAT (Compatible con Prevención de ejecución de datos)](/cpp/build/reference/nxcompat-compatible-with-data-execution-prevention).
 
--   **DelayLoadDLLs**
+- **DelayLoadDLLs**
 
-     Parámetro **String[]** opcional.
+  Parámetro **String[]** opcional.
 
-     Este parámetro causa la *carga retrasada* de archivos DLL. Especifique el nombre de un archivo DLL cuya carga se desea retrasar.
+  Este parámetro causa la *carga retrasada* de archivos DLL. Especifique el nombre de un archivo DLL cuya carga se desea retrasar.
 
-     Para obtener más información, vea [/DELAYLOAD (Retrasar importación de carga)](/cpp/build/reference/delayload-delay-load-import).
+  Para obtener más información, vea [/DELAYLOAD (Retrasar importación de carga)](/cpp/build/reference/delayload-delay-load-import).
 
--   **DelaySign**
+- **DelaySign**
 
-     Parámetro **Boolean** opcional.
+  Parámetro **Boolean** opcional.
 
-     Si `true`, firma parcialmente un ensamblado. De forma predeterminada, el valor es `false`.
+  Si `true`, firma parcialmente un ensamblado. De forma predeterminada, el valor es `false`.
 
-     Para obtener más información, vea [/DELAYSIGN (Firmar parcialmente un ensamblado)](/cpp/build/reference/delaysign-partially-sign-an-assembly).
+  Para obtener más información, vea [/DELAYSIGN (Firmar parcialmente un ensamblado)](/cpp/build/reference/delaysign-partially-sign-an-assembly).
 
--   **Driver**
+- **Driver**
 
-     Parámetro **String** opcional.
+  Parámetro **String** opcional.
 
-     Especifique este parámetro para compilar un controlador de modo kernel de Windows NT.
+  Especifique este parámetro para compilar un controlador de modo kernel de Windows NT.
 
-     Especifique uno de los valores siguientes, cada uno de los cuales corresponde a una opción del enlazador.
+  Especifique uno de los valores siguientes, cada uno de los cuales corresponde a una opción del enlazador.
 
-    -   **NotSet** - *\<none>*
+  - **NotSet** -  *\<none>*
 
-    -   **Driver** - **/Driver**
+  - **Driver** -  **/Driver**
 
-    -   **UpOnly** - **/DRIVER:UPONLY**
+  - **UpOnly** -  **/DRIVER:UPONLY**
 
-    -   **WDM** -   **/DRIVER: WDM**
+  - **WDM** -   **/DRIVER: WDM**
 
-    Para obtener más información, vea [/DRIVER (Controlador de modo kernel de Windows NT)](/cpp/build/reference/driver-windows-nt-kernel-mode-driver).
+  Para obtener más información, vea [/DRIVER (Controlador de modo kernel de Windows NT)](/cpp/build/reference/driver-windows-nt-kernel-mode-driver).
 
--   **EmbedManagedResourceFile**
+- **EmbedManagedResourceFile**
 
-     Parámetro **String[]** opcional.
+  Parámetro **String[]** opcional.
 
-     Inserta un archivo de recursos en un ensamblado. Especifique el nombre de archivo de recursos necesario. Opcionalmente, especifique el nombre lógico (usado para cargar el recurso) y la opción **PRIVATE** (que indica en el manifiesto del ensamblado que el archivo de recursos es privado).
+  Inserta un archivo de recursos en un ensamblado. Especifique el nombre de archivo de recursos necesario. Opcionalmente, especifique el nombre lógico (usado para cargar el recurso) y la opción **PRIVATE** (que indica en el manifiesto del ensamblado que el archivo de recursos es privado).
 
-     Para obtener más información, vea [/ASSEMBLYRESOURCE (Incrustar un recurso administrado)](/cpp/build/reference/assemblyresource-embed-a-managed-resource).
+  Para obtener más información, vea [/ASSEMBLYRESOURCE (Incrustar un recurso administrado)](/cpp/build/reference/assemblyresource-embed-a-managed-resource).
 
--   **EnableCOMDATFolding**
+- **EnableCOMDATFolding**
 
-     Parámetro **Boolean** opcional.
+  Parámetro **Boolean** opcional.
 
-     Si `true`, permite un plegamiento idéntico de COMDAT.
+  Si `true`, permite un plegamiento idéntico de COMDAT.
 
-     Para obtener más información, consulte el argumento `ICF[= iterations]` de [/OPT (Optimizaciones)](/cpp/build/reference/opt-optimizations).
+  Para obtener más información, consulte el argumento `ICF[= iterations]` de [/OPT (Optimizaciones)](/cpp/build/reference/opt-optimizations).
 
--   **EnableUAC**
+- **EnableUAC**
 
-     Parámetro **Boolean** opcional.
+  Parámetro **Boolean** opcional.
 
-     Si `true`, especifica si la información de Control de cuentas de usuario (UAC) debe insertarse en el manifiesto del programa.
+  Si `true`, especifica si la información de Control de cuentas de usuario (UAC) debe insertarse en el manifiesto del programa.
 
-     Para obtener más información, consulte [/MANIFESTUAC (Insertar información de UAC en el manifiesto)](/cpp/build/reference/manifestuac-embeds-uac-information-in-manifest).
+  Para obtener más información, consulte [/MANIFESTUAC (Insertar información de UAC en el manifiesto)](/cpp/build/reference/manifestuac-embeds-uac-information-in-manifest).
 
--   **EntryPointSymbol**
+- **EntryPointSymbol**
 
-     Parámetro **String** opcional.
+  Parámetro **String** opcional.
 
-     Especifica una función de punto de entrada como dirección inicial de un archivo *.exe* o DLL. Especifique un nombre de función como el valor del parámetro.
+  Especifica una función de punto de entrada como dirección inicial de un archivo *.exe* o DLL. Especifique un nombre de función como el valor del parámetro.
 
-     Para obtener más información, vea [/ENTRY (Símbolo de punto de entrada)](/cpp/build/reference/entry-entry-point-symbol).
+  Para obtener más información, vea [/ENTRY (Símbolo de punto de entrada)](/cpp/build/reference/entry-entry-point-symbol).
 
--   **FixedBaseAddress**
+- **FixedBaseAddress**
 
-     Parámetro **Boolean** opcional.
+  Parámetro **Boolean** opcional.
 
-     Si `true`, crea un programa o un archivo DLL que solo se puede cargar en su dirección base preferida.
+  Si `true`, crea un programa o un archivo DLL que solo se puede cargar en su dirección base preferida.
 
-     Para obtener más información, vea [/FIXED (Dirección base fija)](/cpp/build/reference/fixed-fixed-base-address).
+  Para obtener más información, vea [/FIXED (Dirección base fija)](/cpp/build/reference/fixed-fixed-base-address).
 
--   **ForceFileOutput**
+- **ForceFileOutput**
 
-     Parámetro **String** opcional.
+  Parámetro **String** opcional.
 
-     Indica al enlazador que cree un archivo *.exe* o DLL válido aunque se haga referencia a un símbolo pero no esté definido, o bien esté definido varias veces.
+  Indica al enlazador que cree un archivo *.exe* o DLL válido aunque se haga referencia a un símbolo pero no esté definido, o bien esté definido varias veces.
 
-     Especifique uno de los valores siguientes, cada uno de los cuales corresponde a una opción de línea de comandos.
+  Especifique uno de los valores siguientes, cada uno de los cuales corresponde a una opción de línea de comandos.
 
-    -   **Enabled** - **/FORCE**
+  - **Enabled** -  **/FORCE**
 
-    -   **MultiplyDefinedSymbolOnly** - **/FORCE:MULTIPLE**
+  - **MultiplyDefinedSymbolOnly** -  **/FORCE:MULTIPLE**
 
-    -   **UndefinedSymbolOnly** - **/FORCE:UNRESOLVED**
+  - **UndefinedSymbolOnly** -  **/FORCE:UNRESOLVED**
 
-    Para obtener más información, vea [/FORCE (Forzar resultados de archivo)](/cpp/build/reference/force-force-file-output).
+  Para obtener más información, vea [/FORCE (Forzar resultados de archivo)](/cpp/build/reference/force-force-file-output).
 
--   **ForceSymbolReferences**
+- **ForceSymbolReferences**
 
-     Parámetro **String[]** opcional.
+  Parámetro **String[]** opcional.
 
-     Este parámetro indica al enlazador que agregue un símbolo especificado a la tabla de símbolos.
+  Este parámetro indica al enlazador que agregue un símbolo especificado a la tabla de símbolos.
 
-     Para obtener más información, vea [/INCLUDE (Forzar referencias de símbolos)](/cpp/build/reference/include-force-symbol-references).
+  Para obtener más información, vea [/INCLUDE (Forzar referencias de símbolos)](/cpp/build/reference/include-force-symbol-references).
 
--   **FunctionOrder**
+- **FunctionOrder**
 
-     Parámetro **String** opcional.
+  Parámetro **String** opcional.
 
-     Este parámetro optimiza su programa colocando las funciones empaquetadas especificadas (COMDAT) en la imagen en un orden predeterminado.
+  Este parámetro optimiza su programa colocando las funciones empaquetadas especificadas (COMDAT) en la imagen en un orden predeterminado.
 
-     Para obtener más información, vea [/ORDER (Colocar las funciones en orden)](/cpp/build/reference/order-put-functions-in-order).
+  Para obtener más información, vea [/ORDER (Colocar las funciones en orden)](/cpp/build/reference/order-put-functions-in-order).
 
--   **GenerateDebugInformation**
+- **GenerateDebugInformation**
 
-     Parámetro **Boolean** opcional.
+  Parámetro **Boolean** opcional.
 
-     Si es `true`, crea información de depuración para el archivo *.exe* o DLL.
+  Si es `true`, crea información de depuración para el archivo *.exe* o DLL.
 
-     Para obtener más información, vea [/DEBUG (Generar información de depuración)](/cpp/build/reference/debug-generate-debug-info).
+  Para obtener más información, vea [/DEBUG (Generar información de depuración)](/cpp/build/reference/debug-generate-debug-info).
 
--   **GenerateManifest**
+- **GenerateManifest**
 
-     Parámetro **Boolean** opcional.
+  Parámetro **Boolean** opcional.
 
-     Si `true`, crea un archivo de manifiesto en paralelo.
+  Si `true`, crea un archivo de manifiesto en paralelo.
 
-     Para obtener más información, vea [/MANIFEST (Crear el manifiesto del ensamblado simultáneo)](/cpp/build/reference/manifest-create-side-by-side-assembly-manifest).
+  Para obtener más información, vea [/MANIFEST (Crear el manifiesto del ensamblado simultáneo)](/cpp/build/reference/manifest-create-side-by-side-assembly-manifest).
 
--   **GenerateMapFile**
+- **GenerateMapFile**
 
-     Parámetro **Boolean** opcional.
+  Parámetro **Boolean** opcional.
 
-     Si `true`, crea un *archivo de asignación*. La extensión de nombre de archivo del archivo de asignación es *.map*.
+  Si `true`, crea un *archivo de asignación*. La extensión de nombre de archivo del archivo de asignación es *.map*.
 
-     Para obtener más información, vea [/MAP (Generar archivo de asignaciones)](/cpp/build/reference/map-generate-mapfile).
+  Para obtener más información, vea [/MAP (Generar archivo de asignaciones)](/cpp/build/reference/map-generate-mapfile).
 
--   **HeapCommitSize**
+- **HeapCommitSize**
 
-     Parámetro **String** opcional.
+  Parámetro **String** opcional.
 
-     Especifica la cantidad de memoria física en el montón que se debe asignar de una sola vez.
+  Especifica la cantidad de memoria física en el montón que se debe asignar de una sola vez.
 
-     Para obtener más información, vea el argumento `commit` en [/HEAP (Establecer el tamaño del montón)](/cpp/build/reference/heap-set-heap-size). Consulte también el parámetro **HeapReserveSize**.
+  Para obtener más información, vea el argumento `commit` en [/HEAP (Establecer el tamaño del montón)](/cpp/build/reference/heap-set-heap-size). Consulte también el parámetro **HeapReserveSize**.
 
--   **HeapReserveSize**
+- **HeapReserveSize**
 
-     Parámetro **String** opcional.
+  Parámetro **String** opcional.
 
-     Especifica el tamaño total asignado al montón en la memoria virtual.
+  Especifica el tamaño total asignado al montón en la memoria virtual.
 
-     Para obtener más información, vea el argumento `reserve` en [/HEAP (Establecer el tamaño del montón)](/cpp/build/reference/heap-set-heap-size). Consulte también el parámetro **HeapCommitSize** en esta tabla.
+  Para obtener más información, vea el argumento `reserve` en [/HEAP (Establecer el tamaño del montón)](/cpp/build/reference/heap-set-heap-size). Consulte también el parámetro **HeapCommitSize** en esta tabla.
 
--   **IgnoreAllDefaultLibraries**
+- **IgnoreAllDefaultLibraries**
 
-     Parámetro **Boolean** opcional.
+  Parámetro **Boolean** opcional.
 
-     Si `true`, indica al enlazador que quite una o varias bibliotecas predeterminadas de la lista de bibliotecas en la que realiza búsquedas cuando resuelve referencias externas.
+  Si `true`, indica al enlazador que quite una o varias bibliotecas predeterminadas de la lista de bibliotecas en la que realiza búsquedas cuando resuelve referencias externas.
 
-     Para obtener más información, vea [/NODEFAULTLIB (Omitir bibliotecas)](/cpp/build/reference/nodefaultlib-ignore-libraries).
+  Para obtener más información, vea [/NODEFAULTLIB (Omitir bibliotecas)](/cpp/build/reference/nodefaultlib-ignore-libraries).
 
--   **IgnoreEmbeddedIDL**
+- **IgnoreEmbeddedIDL**
 
-     Parámetro **Boolean** opcional.
+  Parámetro **Boolean** opcional.
 
-     Si es `true`, especifica que no se debe procesar ningún atributo IDL del código fuente en un archivo *.idl*.
+  Si es `true`, especifica que no se debe procesar ningún atributo IDL del código fuente en un archivo *.idl*.
 
-     Para obtener más información, vea [/IGNOREIDL (No procesar atributos en MIDL)](/cpp/build/reference/ignoreidl-don-t-process-attributes-into-midl).
+  Para obtener más información, vea [/IGNOREIDL (No procesar atributos en MIDL)](/cpp/build/reference/ignoreidl-don-t-process-attributes-into-midl).
 
--   **IgnoreImportLibrary**
+- **IgnoreImportLibrary**
 
-     Parámetro **Boolean** opcional.
+  Parámetro **Boolean** opcional.
 
-     Si `true`, especifica que la biblioteca de importación generada por esta configuración no se importará en los proyectos dependientes.
+  Si `true`, especifica que la biblioteca de importación generada por esta configuración no se importará en los proyectos dependientes.
 
-     Este parámetro no se corresponde con ninguna opción del enlazador.
+  Este parámetro no se corresponde con ninguna opción del enlazador.
 
--   **IgnoreSpecificDefaultLibraries**
+- **IgnoreSpecificDefaultLibraries**
 
-     Parámetro **String[]** opcional.
+  Parámetro **String[]** opcional.
 
-     Especifica uno o más nombres de las bibliotecas predeterminadas que se ignorarán. Separe varias bibliotecas mediante punto y coma.
+  Especifica uno o más nombres de las bibliotecas predeterminadas que se ignorarán. Separe varias bibliotecas mediante punto y coma.
 
-     Para obtener más información, vea [/NODEFAULTLIB (Omitir bibliotecas)](/cpp/build/reference/nodefaultlib-ignore-libraries).
+  Para obtener más información, vea [/NODEFAULTLIB (Omitir bibliotecas)](/cpp/build/reference/nodefaultlib-ignore-libraries).
 
--   **ImageHasSafeExceptionHandlers**
+- **ImageHasSafeExceptionHandlers**
 
-     Parámetro **Boolean** opcional.
+  Parámetro **Boolean** opcional.
 
-     Si `true`, el enlazador genera una imagen solo si también puede generar una tabla de los controladores de excepciones seguros de la imagen.
+  Si `true`, el enlazador genera una imagen solo si también puede generar una tabla de los controladores de excepciones seguros de la imagen.
 
-     Para obtener más información, vea [/SAFESEH (La imagen tiene controladores de excepciones seguros)](/cpp/build/reference/safeseh-image-has-safe-exception-handlers).
+  Para obtener más información, vea [/SAFESEH (La imagen tiene controladores de excepciones seguros)](/cpp/build/reference/safeseh-image-has-safe-exception-handlers).
 
--   **ImportLibrary**
+- **ImportLibrary**
 
-     Nombre de la biblioteca de importación especificada por el usuario que reemplaza el nombre de biblioteca predeterminado.
+  Nombre de la biblioteca de importación especificada por el usuario que reemplaza el nombre de biblioteca predeterminado.
 
-     Para obtener más información, vea [/IMPLIB (Asignar nombre a la biblioteca de importación)](/cpp/build/reference/implib-name-import-library).
+  Para obtener más información, vea [/IMPLIB (Asignar nombre a la biblioteca de importación)](/cpp/build/reference/implib-name-import-library).
 
--   **KeyContainer**
+- **KeyContainer**
 
-     Parámetro **String** opcional.
+  Parámetro **String** opcional.
 
-     Contenedor que contiene la clave de un ensamblado firmado.
+  Contenedor que contiene la clave de un ensamblado firmado.
 
-     Para obtener más información, vea [/KEYCONTAINER (Especificar un contenedor de claves para firmar un ensamblado)](/cpp/build/reference/keycontainer-specify-a-key-container-to-sign-an-assembly). Consulte también el parámetro **KeyFile** en esta tabla.
+  Para obtener más información, vea [/KEYCONTAINER (Especificar un contenedor de claves para firmar un ensamblado)](/cpp/build/reference/keycontainer-specify-a-key-container-to-sign-an-assembly). Consulte también el parámetro **KeyFile** en esta tabla.
 
--   **KeyFile**
+- **KeyFile**
 
-     Parámetro **String** opcional.
+  Parámetro **String** opcional.
 
-     Especifica un archivo que contiene la clave de un ensamblado firmado.
+  Especifica un archivo que contiene la clave de un ensamblado firmado.
 
-     Para obtener más información, vea [/KEYFILE (Especificar una clave o un par de claves para firmar un ensamblado)](/cpp/build/reference/keyfile-specify-key-or-key-pair-to-sign-an-assembly). Consulte también el parámetro **KeyContainer**.
+  Para obtener más información, vea [/KEYFILE (Especificar una clave o un par de claves para firmar un ensamblado)](/cpp/build/reference/keyfile-specify-key-or-key-pair-to-sign-an-assembly). Consulte también el parámetro **KeyContainer**.
 
--   **LargeAddressAware**
+- **LargeAddressAware**
 
-     Parámetro **Boolean** opcional.
+  Parámetro **Boolean** opcional.
 
-     Si `true`, la aplicación puede controlar direcciones mayores de 2 gigabytes.
+  Si `true`, la aplicación puede controlar direcciones mayores de 2 gigabytes.
 
-     Para obtener más información, vea [/LARGEADDRESSAWARE (Procesar direcciones largas)](/cpp/build/reference/largeaddressaware-handle-large-addresses).
+  Para obtener más información, vea [/LARGEADDRESSAWARE (Procesar direcciones largas)](/cpp/build/reference/largeaddressaware-handle-large-addresses).
 
--   **LinkDLL**
+- **LinkDLL**
 
-     Parámetro **Boolean** opcional.
+  Parámetro **Boolean** opcional.
 
-     Si `true`, compila un archivo DLL como el archivo de salida principal.
+  Si `true`, compila un archivo DLL como el archivo de salida principal.
 
-     Para obtener más información, consulte [/DLL (compilar un archivo DLL)](/cpp/build/reference/dll-build-a-dll).
+  Para obtener más información, consulte [/DLL (compilar un archivo DLL)](/cpp/build/reference/dll-build-a-dll).
 
--   **LinkErrorReporting**
+- **LinkErrorReporting**
 
-     Parámetro **String** opcional.
+  Parámetro **String** opcional.
 
-     Permite proporcionar directamente a Microsoft información sobre los errores internos del compilador (ICE).
+  Permite proporcionar directamente a Microsoft información sobre los errores internos del compilador (ICE).
 
-     Especifique uno de los valores siguientes, cada uno de los cuales corresponde a una opción de línea de comandos.
+  Especifique uno de los valores siguientes, cada uno de los cuales corresponde a una opción de línea de comandos.
 
-    -   **NoErrorReport** - **/ERRORREPORT:NONE**
+  - **NoErrorReport** -  **/ERRORREPORT:NONE**
 
-    -   **PromptImmediately** - **/ERRORREPORT:PROMPT**
+  - **PromptImmediately** -  **/ERRORREPORT:PROMPT**
 
-    -   **QueueForNextLogin** - **/ERRORREPORT:QUEUE**
+  - **QueueForNextLogin** -  **/ERRORREPORT:QUEUE**
 
-    -   **SendErrorReport** - **/ERRORREPORT:SEND**
+  - **SendErrorReport** -  **/ERRORREPORT:SEND**
 
-    Para obtener más información, vea [/ERRORREPORT (Informar de los errores del compilador)](/cpp/build/reference/errorreport-report-internal-linker-errors).
+  Para obtener más información, vea [/ERRORREPORT (Informar de los errores del compilador)](/cpp/build/reference/errorreport-report-internal-linker-errors).
 
--   **LinkIncremental**
+- **LinkIncremental**
 
-     Parámetro **Boolean** opcional.
+  Parámetro **Boolean** opcional.
 
-     Si `true`, controla la vinculación incremental.
+  Si `true`, controla la vinculación incremental.
 
-     Para obtener más información, vea [/INCREMENTAL (Vincular de forma incremental)](/cpp/build/reference/incremental-link-incrementally).
+  Para obtener más información, vea [/INCREMENTAL (Vincular de forma incremental)](/cpp/build/reference/incremental-link-incrementally).
 
--   **LinkLibraryDependencies**
+- **LinkLibraryDependencies**
 
-     Parámetro **Boolean** opcional.
+  Parámetro **Boolean** opcional.
 
-     Si es `true`, especifica que los resultados de la biblioteca de las dependencias del proyecto se vinculan automáticamente.
+  Si es `true`, especifica que los resultados de la biblioteca de las dependencias del proyecto se vinculan automáticamente.
 
-     Este parámetro no se corresponde con ninguna opción del enlazador.
+  Este parámetro no se corresponde con ninguna opción del enlazador.
 
--   **LinkStatus**
+- **LinkStatus**
 
-     Parámetro **Boolean** opcional.
+  Parámetro **Boolean** opcional.
 
-     Si `true`, especifica que el enlazador debe mostrar un indicador de progreso que muestra qué porcentaje del vínculo está completado.
+  Si `true`, especifica que el enlazador debe mostrar un indicador de progreso que muestra qué porcentaje del vínculo está completado.
 
-     Para obtener más información, vea el argumento `STATUS` de [/LTCG (Generación de código en tiempo de enlace)](/cpp/build/reference/ltcg-link-time-code-generation).
+  Para obtener más información, vea el argumento `STATUS` de [/LTCG (Generación de código en tiempo de enlace)](/cpp/build/reference/ltcg-link-time-code-generation).
 
--   **LinkTimeCodeGeneration**
+- **LinkTimeCodeGeneration**
 
-     Parámetro **String** opcional.
+  Parámetro **String** opcional.
 
-     Especifica opciones para la optimización guiada por perfiles.
+  Especifica opciones para la optimización guiada por perfiles.
 
-     Especifique uno de los valores siguientes, cada uno de los cuales corresponde a una opción de línea de comandos.
+  Especifique uno de los valores siguientes, cada uno de los cuales corresponde a una opción de línea de comandos.
 
-    -   **Default** - *\<none>*
+  - **Default** -  *\<none>*
 
-    -   **UseLinkTimeCodeGeneration** - **LTCG**
+  - **UseLinkTimeCodeGeneration** - **LTCG**
 
-    -   **PGInstrument** - **/LTCG:PGInstrument**
+  - **PGInstrument** -  **/LTCG:PGInstrument**
 
-    -   **PGOptimization** - **/LTCG:PGOptimize**
+  - **PGOptimization** -  **/LTCG:PGOptimize**
 
-    -   **PGUpdate**
+  - **PGUpdate**
 
-         \- **/LTCG:PGUpdate**
+    \- **/LTCG:PGUpdate**
 
-    Para obtener más información, vea [/LTCG (Generación de código en tiempo de enlace)](/cpp/build/reference/ltcg-link-time-code-generation).
+  Para obtener más información, vea [/LTCG (Generación de código en tiempo de enlace)](/cpp/build/reference/ltcg-link-time-code-generation).
 
--   **ManifestFile**
+- **ManifestFile**
 
-     Parámetro **String** opcional.
+  Parámetro **String** opcional.
 
-     Cambia el nombre de archivo de manifiesto predeterminado por el nombre de archivo especificado.
+  Cambia el nombre de archivo de manifiesto predeterminado por el nombre de archivo especificado.
 
-     Para obtener más información, vea [/MANIFESTFILE (Nombre del archivo de manifiesto)](/cpp/build/reference/manifestfile-name-manifest-file).
+  Para obtener más información, vea [/MANIFESTFILE (Nombre del archivo de manifiesto)](/cpp/build/reference/manifestfile-name-manifest-file).
 
--   **MapExports**
+- **MapExports**
 
-     Parámetro **Boolean** opcional.
+  Parámetro **Boolean** opcional.
 
-     Si `true`, indica al enlazador que incluya funciones exportadas en un archivo de asignación.
+  Si `true`, indica al enlazador que incluya funciones exportadas en un archivo de asignación.
 
-     Para obtener más información, vea el argumento `EXPORTS` de [/MAPINFO (Incluir información en el archivo de asignaciones)](/cpp/build/reference/mapinfo-include-information-in-mapfile).
+  Para obtener más información, vea el argumento `EXPORTS` de [/MAPINFO (Incluir información en el archivo de asignaciones)](/cpp/build/reference/mapinfo-include-information-in-mapfile).
 
--   **MapFileName**
+- **MapFileName**
 
-     Parámetro **String** opcional.
+  Parámetro **String** opcional.
 
-     Cambia el nombre de archivo de asignación predeterminado por el nombre de archivo especificado.
+  Cambia el nombre de archivo de asignación predeterminado por el nombre de archivo especificado.
 
--   **MergedIDLBaseFileName**
+- **MergedIDLBaseFileName**
 
-     Parámetro **String** opcional.
+  Parámetro **String** opcional.
 
-     Especifica el nombre de archivo y la extensión de nombre de archivo del archivo *.idl*.
+  Especifica el nombre de archivo y la extensión de nombre de archivo del archivo *.idl*.
 
-     Para obtener más información, vea [/IDLOUT (Dar nombre a los archivos de resultados de MIDL)](/cpp/build/reference/idlout-name-midl-output-files).
+  Para obtener más información, vea [/IDLOUT (Dar nombre a los archivos de resultados de MIDL)](/cpp/build/reference/idlout-name-midl-output-files).
 
--   **MergeSections**
+- **MergeSections**
 
-     Parámetro **String** opcional.
+  Parámetro **String** opcional.
 
-     Combina secciones en una imagen. Especifique `from-section=to-section`.
+  Combina secciones en una imagen. Especifique `from-section=to-section`.
 
-     Para obtener más información, vea [/MERGE (Combinar secciones)](/cpp/build/reference/merge-combine-sections).
+  Para obtener más información, vea [/MERGE (Combinar secciones)](/cpp/build/reference/merge-combine-sections).
 
--   **MidlCommandFile**
+- **MidlCommandFile**
 
-     Parámetro **String** opcional.
+  Parámetro **String** opcional.
 
-     Especifique el nombre de un archivo que contiene las opciones de línea de comandos de MIDL.
+  Especifique el nombre de un archivo que contiene las opciones de línea de comandos de MIDL.
 
-     Para obtener más información, vea [/MIDL (Especificar las opciones de la línea de comandos de MIDL)](/cpp/build/reference/midl-specify-midl-command-line-options).
+  Para obtener más información, vea [/MIDL (Especificar las opciones de la línea de comandos de MIDL)](/cpp/build/reference/midl-specify-midl-command-line-options).
 
--   **MinimumRequiredVersion**
+- **MinimumRequiredVersion**
 
-     Parámetro **String** opcional.
+  Parámetro **String** opcional.
 
-     Especifica la versión mínima requerida del subsistema. Los argumentos son números decimales comprendidos en el intervalo de 0 a 65535.
+  Especifica la versión mínima requerida del subsistema. Los argumentos son números decimales comprendidos en el intervalo de 0 a 65535.
 
--   **ModuleDefinitionFile**
+- **ModuleDefinitionFile**
 
-     Parámetro **String** opcional.
+  Parámetro **String** opcional.
 
-     Especifica el nombre de un [archivo de definición de módulos](/cpp/build/reference/module-definition-dot-def-files).
+  Especifica el nombre de un [archivo de definición de módulos](/cpp/build/reference/module-definition-dot-def-files).
 
-     Para obtener más información, vea [/DEF (Especificar un archivo de definición de módulos)](/cpp/build/reference/def-specify-module-definition-file).
+  Para obtener más información, vea [/DEF (Especificar un archivo de definición de módulos)](/cpp/build/reference/def-specify-module-definition-file).
 
--   **MSDOSStubFileName**
+- **MSDOSStubFileName**
 
-     Parámetro **String** opcional.
+  Parámetro **String** opcional.
 
-     Adjunta el programa de código auxiliar de MS-DOS especificado a un programa Win32.
+  Adjunta el programa de código auxiliar de MS-DOS especificado a un programa Win32.
 
-     Para obtener más información, vea [/STUB (Nombre del archivo de código auxiliar de MS-DOS)](/cpp/build/reference/stub-ms-dos-stub-file-name).
+  Para obtener más información, vea [/STUB (Nombre del archivo de código auxiliar de MS-DOS)](/cpp/build/reference/stub-ms-dos-stub-file-name).
 
--   **NoEntryPoint**
+- **NoEntryPoint**
 
-     Parámetro **Boolean** opcional.
+  Parámetro **Boolean** opcional.
 
-     Si `true`, especifica un archivo DLL solo de recursos.
+  Si `true`, especifica un archivo DLL solo de recursos.
 
-     Para obtener más información, vea [/NOENTRY (Sin punto de entrada)](/cpp/build/reference/noentry-no-entry-point).
+  Para obtener más información, vea [/NOENTRY (Sin punto de entrada)](/cpp/build/reference/noentry-no-entry-point).
 
--   **ObjectFiles**
+- **ObjectFiles**
 
-     Parámetro **String[]** implícito.
+  Parámetro **String[]** implícito.
 
-     Especifica los archivos objeto vinculados.
+  Especifica los archivos objeto vinculados.
 
--   **OptimizeReferences**
+- **OptimizeReferences**
 
-     Parámetro **Boolean** opcional.
+  Parámetro **Boolean** opcional.
 
-     Si `true`, elimina las funciones o los datos a los que nunca se hace referencia.
+  Si `true`, elimina las funciones o los datos a los que nunca se hace referencia.
 
-     Para obtener más información, consulte el argumento `REF` en [/OPT (Optimizaciones)](/cpp/build/reference/opt-optimizations).
+  Para obtener más información, consulte el argumento `REF` en [/OPT (Optimizaciones)](/cpp/build/reference/opt-optimizations).
 
--   **OutputFile**
+- **OutputFile**
 
-     Parámetro **String** opcional.
+  Parámetro **String** opcional.
 
-     Invalida el nombre y la ubicación predeterminados del programa que crea el enlazador.
+  Invalida el nombre y la ubicación predeterminados del programa que crea el enlazador.
 
-     Para obtener más información, vea [/OUT (Nombre del archivo de resultados)](/cpp/build/reference/out-output-file-name).
+  Para obtener más información, vea [/OUT (Nombre del archivo de resultados)](/cpp/build/reference/out-output-file-name).
 
--   **PerUserRedirection**
+- **PerUserRedirection**
 
-     Parámetro **Boolean** opcional.
+  Parámetro **Boolean** opcional.
 
-     Si `true`, y la opción Registrar resultados está activada, hace que las escrituras en la clave del registro **HKEY_CLASSES_ROOT** se redirijan a **HKEY_CURRENT_USER**.
+  Si `true`, y la opción Registrar resultados está activada, hace que las escrituras en la clave del registro **HKEY_CLASSES_ROOT** se redirijan a **HKEY_CURRENT_USER**.
 
--   **PreprocessOutput**
+- **PreprocessOutput**
 
-     Parámetro `ITaskItem[]` opcional.
+  Parámetro `ITaskItem[]` opcional.
 
-     Define una matriz de elementos de elementos de salida del preprocesador que las tareas pueden consumir y emitir.
+  Define una matriz de elementos de elementos de salida del preprocesador que las tareas pueden consumir y emitir.
 
--   **PreventDllBinding**
+- **PreventDllBinding**
 
-     Parámetro **Boolean** opcional.
+  Parámetro **Boolean** opcional.
 
-     Si es `true`, indica a *Bind.exe* que la imagen vinculada no se debe enlazar.
+  Si es `true`, indica a *Bind.exe* que la imagen vinculada no se debe enlazar.
 
-     Para obtener más información, vea [/ALLOWBIND (Evitar el enlace de archivos DLL)](/cpp/build/reference/allowbind-prevent-dll-binding).
+  Para obtener más información, vea [/ALLOWBIND (Evitar el enlace de archivos DLL)](/cpp/build/reference/allowbind-prevent-dll-binding).
 
--   **Profile**
+- **Profile**
 
-     Parámetro **Boolean** opcional.
+  Parámetro **Boolean** opcional.
 
-     Si `true`, produce un archivo de salida que se puede utilizar con el generador de perfiles de **Herramientas de rendimiento**.
+  Si `true`, produce un archivo de salida que se puede utilizar con el generador de perfiles de **Herramientas de rendimiento**.
 
-     Para obtener más información, vea [/PROFILE (Generador de perfiles de Herramientas de rendimiento)](/cpp/build/reference/profile-performance-tools-profiler).
+  Para obtener más información, vea [/PROFILE (Generador de perfiles de Herramientas de rendimiento)](/cpp/build/reference/profile-performance-tools-profiler).
 
--   **ProfileGuidedDatabase**
+- **ProfileGuidedDatabase**
 
-     Parámetro **String** opcional.
+  Parámetro **String** opcional.
 
-     Especifica el nombre del archivo *.pgd* que se va a usar para almacenar información sobre el programa en ejecución
+  Especifica el nombre del archivo *.pgd* que se va a usar para almacenar información sobre el programa en ejecución
 
-     Para obtener más información, vea [/PGD (Especificar la base de datos para las optimizaciones guiadas por perfiles)](/cpp/build/reference/pgd-specify-database-for-profile-guided-optimizations).
+  Para obtener más información, vea [/PGD (Especificar la base de datos para las optimizaciones guiadas por perfiles)](/cpp/build/reference/pgd-specify-database-for-profile-guided-optimizations).
 
--   **ProgramDatabaseFile**
+- **ProgramDatabaseFile**
 
-     Parámetro **String** opcional.
+  Parámetro **String** opcional.
 
-     Especifica un nombre para la base de datos de programa (PDB) que crea el enlazador.
+  Especifica un nombre para la base de datos de programa (PDB) que crea el enlazador.
 
-     Para obtener más información, vea [/PDB (Utilizar la base de datos de programa)](/cpp/build/reference/pdb-use-program-database).
+  Para obtener más información, vea [/PDB (Utilizar la base de datos de programa)](/cpp/build/reference/pdb-use-program-database).
 
--   **RandomizedBaseAddress**
+- **RandomizedBaseAddress**
 
-     Parámetro **Boolean** opcional.
+  Parámetro **Boolean** opcional.
 
-     Si `true`, genera una imagen ejecutable que se puede reorganizar aleatoriamente en el momento de la carga mediante la característica de *selección aleatoria del diseño del espacio de direcciones* (ASLR) de Windows.
+  Si `true`, genera una imagen ejecutable que se puede reorganizar aleatoriamente en el momento de la carga mediante la característica de *selección aleatoria del diseño del espacio de direcciones* (ASLR) de Windows.
 
-     Para obtener más información, consulte [/DYNAMICBASE (utilizar selección aleatoria del diseño del espacio de direcciones)](/cpp/build/reference/dynamicbase-use-address-space-layout-randomization).
+  Para obtener más información, consulte [/DYNAMICBASE (utilizar selección aleatoria del diseño del espacio de direcciones)](/cpp/build/reference/dynamicbase-use-address-space-layout-randomization).
 
--   **RegisterOutput**
+- **RegisterOutput**
 
-     Parámetro **Boolean** opcional.
+  Parámetro **Boolean** opcional.
 
-     Si `true`, registra la salida principal de esta compilación.
+  Si `true`, registra la salida principal de esta compilación.
 
--   **SectionAlignment**
+- **SectionAlignment**
 
-     Parámetro **Integer** opcional.
+  Parámetro **Integer** opcional.
 
-     Especifica la alineación de cada sección en el espacio de direcciones lineales del programa. El valor del parámetro es un número de unidad de bytes y una potencia de dos.
+  Especifica la alineación de cada sección en el espacio de direcciones lineales del programa. El valor del parámetro es un número de unidad de bytes y una potencia de dos.
 
-     Para obtener más información, vea [/ALIGN (Alineación de sección)](/cpp/build/reference/align-section-alignment).
+  Para obtener más información, vea [/ALIGN (Alineación de sección)](/cpp/build/reference/align-section-alignment).
 
--   **SetChecksum**
+- **SetChecksum**
 
-     Parámetro **Boolean** opcional.
+  Parámetro **Boolean** opcional.
 
-     Si es `true`, establece la suma de comprobación en el encabezado de un archivo *.exe*.
+  Si es `true`, establece la suma de comprobación en el encabezado de un archivo *.exe*.
 
-     Para obtener más información, vea [/RELEASE (Establecer la suma de comprobación)](/cpp/build/reference/release-set-the-checksum).
+  Para obtener más información, vea [/RELEASE (Establecer la suma de comprobación)](/cpp/build/reference/release-set-the-checksum).
 
--   **ShowProgress**
+- **ShowProgress**
 
-     Parámetro **String** opcional.
+  Parámetro **String** opcional.
 
-     Especifica el nivel de detalle de los informes de progreso de la operación de vinculación.
+  Especifica el nivel de detalle de los informes de progreso de la operación de vinculación.
 
-     Especifique uno de los valores siguientes, cada uno de los cuales corresponde a una opción de línea de comandos.
+  Especifique uno de los valores siguientes, cada uno de los cuales corresponde a una opción de línea de comandos.
 
-    -   **NotSet** - *\<none>*
+  - **NotSet** -  *\<none>*
 
-    -   **LinkVerbose** - **/VERBOSE**
+  - **LinkVerbose** -  **/VERBOSE**
 
-    -   **LinkVerboseLib** - **/VERBOSE:Lib**
+  - **LinkVerboseLib** -  **/VERBOSE:Lib**
 
-    -   **LinkVerboseICF** - **/VERBOSE:ICF**
+  - **LinkVerboseICF** -  **/VERBOSE:ICF**
 
-    -   **LinkVerboseREF** - **/VERBOSE:REF**
+  - **LinkVerboseREF** -  **/VERBOSE:REF**
 
-    -   **LinkVerboseSAFESEH** - **/VERBOSE:SAFESEH**
+  - **LinkVerboseSAFESEH** -  **/VERBOSE:SAFESEH**
 
-    -   **LinkVerboseCLR** - **/VERBOSE:CLR**
+  - **LinkVerboseCLR** -  **/VERBOSE:CLR**
 
-    Para obtener más información, vea [/VERBOSE (Mostrar mensajes de progreso)](/cpp/build/reference/verbose-print-progress-messages).
+  Para obtener más información, vea [/VERBOSE (Mostrar mensajes de progreso)](/cpp/build/reference/verbose-print-progress-messages).
 
--   **Sources**
+- **Sources**
 
-     Parámetro `ITaskItem[]` requerido.
+  Parámetro `ITaskItem[]` requerido.
 
-     Define una matriz de elementos de archivo origen de MSBuild que las tareas pueden consumir y emitir.
+  Define una matriz de elementos de archivo origen de MSBuild que las tareas pueden consumir y emitir.
 
--   **SpecifySectionAttributes**
+- **SpecifySectionAttributes**
 
-     Parámetro **String** opcional.
+  Parámetro **String** opcional.
 
-     Especifica los atributos de una sección. Esto reemplaza los atributos que se establecieron cuando se compiló el archivo *.obj* para la sección.
+  Especifica los atributos de una sección. Esto reemplaza los atributos que se establecieron cuando se compiló el archivo *.obj* para la sección.
 
-     Para obtener más información, vea [/SECTION (Especificar los atributos de la sección)](/cpp/build/reference/section-specify-section-attributes).
+  Para obtener más información, vea [/SECTION (Especificar los atributos de la sección)](/cpp/build/reference/section-specify-section-attributes).
 
--   **StackCommitSize**
+- **StackCommitSize**
 
-     Parámetro **String** opcional.
+  Parámetro **String** opcional.
 
-     Especifica la cantidad de memoria física de cada asignación cuando se asigna memoria adicional.
+  Especifica la cantidad de memoria física de cada asignación cuando se asigna memoria adicional.
 
-     Para obtener más información, vea el argumento `commit` de [/STACK (Asignaciones de la pila)](/cpp/build/reference/stack-stack-allocations).
+  Para obtener más información, vea el argumento `commit` de [/STACK (Asignaciones de la pila)](/cpp/build/reference/stack-stack-allocations).
 
--   **StackReserveSize**
+- **StackReserveSize**
 
-     Parámetro **String** opcional.
+  Parámetro **String** opcional.
 
-     Especifica el tamaño total asignado a la pila en la memoria virtual.
+  Especifica el tamaño total asignado a la pila en la memoria virtual.
 
-     Para obtener más información, vea el argumento `reserve` de [/STACK (Asignaciones de la pila)](/cpp/build/reference/stack-stack-allocations).
+  Para obtener más información, vea el argumento `reserve` de [/STACK (Asignaciones de la pila)](/cpp/build/reference/stack-stack-allocations).
 
--   **StripPrivateSymbols**
+- **StripPrivateSymbols**
 
-     Parámetro **String** opcional.
+  Parámetro **String** opcional.
 
-     Crea un segundo archivo de base de datos (PDB) de programa que omite los símbolos que no quiere distribuir a sus clientes. Especifique el nombre del segundo archivo PDB.
+  Crea un segundo archivo de base de datos (PDB) de programa que omite los símbolos que no quiere distribuir a sus clientes. Especifique el nombre del segundo archivo PDB.
 
-     Para obtener más información, vea [/PDBSTRIPPED (Quitar símbolos privados)](/cpp/build/reference/pdbstripped-strip-private-symbols).
+  Para obtener más información, vea [/PDBSTRIPPED (Quitar símbolos privados)](/cpp/build/reference/pdbstripped-strip-private-symbols).
 
--   **SubSystem**
+- **SubSystem**
 
-     Parámetro **String** opcional.
+  Parámetro **String** opcional.
 
-     Especifica el entorno del ejecutable.
+  Especifica el entorno del ejecutable.
 
-     Especifique uno de los valores siguientes, cada uno de los cuales corresponde a una opción de línea de comandos.
+  Especifique uno de los valores siguientes, cada uno de los cuales corresponde a una opción de línea de comandos.
 
-    -   **NotSet** - *\<none>*
+  - **NotSet** -  *\<none>*
 
-    -   **Console** - **/SUBSYSTEM:CONSOLE**
+  - **Console** -  **/SUBSYSTEM:CONSOLE**
 
-    -   **Windows** - **/SUBSYSTEM:WINDOWS**
+  - **Windows** -  **/SUBSYSTEM:WINDOWS**
 
-    -   **Native** - **/SUBSYSTEM:NATIVE**
+  - **Native** -  **/SUBSYSTEM:NATIVE**
 
-    -   **EFI Application** - **/SUBSYSTEM:EFI_APPLICATION**
+  - **EFI Application** -  **/SUBSYSTEM:EFI_APPLICATION**
 
-    -   **EFI Boot Service Driver** - **/SUBSYSTEM:EFI_BOOT_SERVICE_DRIVER**
+  - **EFI Boot Service Driver** -  **/SUBSYSTEM:EFI_BOOT_SERVICE_DRIVER**
 
-    -   **EFI ROM** - **/SUBSYSTEM:EFI_ROM**
+  - **EFI ROM** -  **/SUBSYSTEM:EFI_ROM**
 
-    -   **EFI Runtime** - **/SUBSYSTEM:EFI_RUNTIME_DRIVER**
+  - **EFI Runtime** -  **/SUBSYSTEM:EFI_RUNTIME_DRIVER**
 
-    -   **WindowsCE** - **/SUBSYSTEM:WINDOWSCE**
+  - **WindowsCE** -  **/SUBSYSTEM:WINDOWSCE**
 
-    -   **POSIX** - **/SUBSYSTEM:POSIX**
+  - **POSIX** -  **/SUBSYSTEM:POSIX**
 
-    Para obtener más información, vea [/SUBSYSTEM (Especificar subsistema)](/cpp/build/reference/subsystem-specify-subsystem).
+  Para obtener más información, vea [/SUBSYSTEM (Especificar subsistema)](/cpp/build/reference/subsystem-specify-subsystem).
 
--   **SupportNobindOfDelayLoadedDLL**
+- **SupportNobindOfDelayLoadedDLL**
 
-     Parámetro **Boolean** opcional.
+  Parámetro **Boolean** opcional.
 
-     Si `true`, indica al enlazador que no incluya una tabla de direcciones de importación (IAT) enlazable en la imagen final.
+  Si `true`, indica al enlazador que no incluya una tabla de direcciones de importación (IAT) enlazable en la imagen final.
 
-     Para obtener más información, vea el argumento `NOBIND` de [/DELAY (Configuración de las importaciones de carga retrasada)](/cpp/build/reference/delay-delay-load-import-settings).
+  Para obtener más información, vea el argumento `NOBIND` de [/DELAY (Configuración de las importaciones de carga retrasada)](/cpp/build/reference/delay-delay-load-import-settings).
 
--   **SupportUnloadOfDelayLoadedDLL**
+- **SupportUnloadOfDelayLoadedDLL**
 
-     Parámetro **Boolean** opcional.
+  Parámetro **Boolean** opcional.
 
-     Si `true`, indica a la función del asistente de carga retrasada que admita la descarga explícita del archivo DLL.
+  Si `true`, indica a la función del asistente de carga retrasada que admita la descarga explícita del archivo DLL.
 
-     Para obtener más información, vea el argumento `UNLOAD` de [/DELAY (Configuración de las importaciones de carga retrasada)](/cpp/build/reference/delay-delay-load-import-settings).
+  Para obtener más información, vea el argumento `UNLOAD` de [/DELAY (Configuración de las importaciones de carga retrasada)](/cpp/build/reference/delay-delay-load-import-settings).
 
--   **SuppressStartupBanner**
+- **SuppressStartupBanner**
 
-     Parámetro **Boolean** opcional.
+  Parámetro **Boolean** opcional.
 
-     Si es `true`, evita que se muestre el copyright y el mensaje de número de versión cuando la tarea se inicia. 
+  Si es `true`, evita que se muestre el copyright y el mensaje de número de versión cuando la tarea se inicia.
 
-     Para obtener más información, vea [/NOLOGO (Suprimir el titular de inicio) (Enlazador)](/cpp/build/reference/nologo-suppress-startup-banner-linker).
+  Para obtener más información, vea [/NOLOGO (Suprimir el titular de inicio) (Enlazador)](/cpp/build/reference/nologo-suppress-startup-banner-linker).
 
--   **SwapRunFromCD**
+- **SwapRunFromCD**
 
-     Parámetro **Boolean** opcional.
+  Parámetro **Boolean** opcional.
 
-     Si `true`, indica al sistema operativo que copie primero la salida del enlazador a un archivo de intercambio y ejecute después la imagen desde allí.
+  Si `true`, indica al sistema operativo que copie primero la salida del enlazador a un archivo de intercambio y ejecute después la imagen desde allí.
 
-     Para obtener más información, vea el argumento `CD` de [/SWAPRUN (Cargar resultados del enlazador en el archivo de intercambio)](/cpp/build/reference/swaprun-load-linker-output-to-swap-file). Consulte también el parámetro **SwapRunFromNET**.
+  Para obtener más información, vea el argumento `CD` de [/SWAPRUN (Cargar resultados del enlazador en el archivo de intercambio)](/cpp/build/reference/swaprun-load-linker-output-to-swap-file). Consulte también el parámetro **SwapRunFromNET**.
 
--   **SwapRunFromNET**
+- **SwapRunFromNET**
 
-     Parámetro **Boolean** opcional.
+  Parámetro **Boolean** opcional.
 
-     Si `true`, indica al sistema operativo que copie primero la salida del enlazador a un archivo de intercambio y ejecute después la imagen desde allí.
+  Si `true`, indica al sistema operativo que copie primero la salida del enlazador a un archivo de intercambio y ejecute después la imagen desde allí.
 
-     Para obtener más información, vea el argumento `NET` de [/SWAPRUN (Cargar resultados del enlazador en el archivo de intercambio)](/cpp/build/reference/swaprun-load-linker-output-to-swap-file). Consulte también el parámetro **SwapRunFromCD** en esta tabla.
+  Para obtener más información, vea el argumento `NET` de [/SWAPRUN (Cargar resultados del enlazador en el archivo de intercambio)](/cpp/build/reference/swaprun-load-linker-output-to-swap-file). Consulte también el parámetro **SwapRunFromCD** en esta tabla.
 
--   **TargetMachine**
+- **TargetMachine**
 
-     Parámetro **String** opcional.
+  Parámetro **String** opcional.
 
-     Especifica la plataforma de destino para el programa o DLL.
+  Especifica la plataforma de destino para el programa o DLL.
 
-     Especifique uno de los valores siguientes, cada uno de los cuales corresponde a una opción de línea de comandos.
+  Especifique uno de los valores siguientes, cada uno de los cuales corresponde a una opción de línea de comandos.
 
-    -   **NotSet** - *\<none>*
+  - **NotSet** -  *\<none>*
 
-    -   **MachineARM** - **/MACHINE:ARM**
+  - **MachineARM** -  **/MACHINE:ARM**
 
-    -   **MachineEBC** - **/MACHINE:EBC**
+  - **MachineEBC** -  **/MACHINE:EBC**
 
-    -   **MachineIA64** - **/MACHINE:IA64**
+  - **MachineIA64** -  **/MACHINE:IA64**
 
-    -   **MachineMIPS** - **/MACHINE:MIPS**
+  - **MachineMIPS** -  **/MACHINE:MIPS**
 
-    -   **MachineMIPS16** - **/MACHINE:MIPS16**
+  - **MachineMIPS16** -  **/MACHINE:MIPS16**
 
-    -   **MachineMIPSFPU** - **/MACHINE:MIPSFPU**
+  - **MachineMIPSFPU** -  **/MACHINE:MIPSFPU**
 
-    -   **MachineMIPSFPU16** - **/MACHINE:MIPSFPU16**
+  - **MachineMIPSFPU16** -  **/MACHINE:MIPSFPU16**
 
-    -   **MachineSH4** - **/MACHINE:SH4**
+  - **MachineSH4** -  **/MACHINE:SH4**
 
-    -   **MachineTHUMB** - **/MACHINE:THUMB**
+  - **MachineTHUMB** -  **/MACHINE:THUMB**
 
-    -   **MachineX64** - **/MACHINE:X64**
+  - **MachineX64** -  **/MACHINE:X64**
 
-    -   **MachineX86** - **/MACHINE:X86**
+  - **MachineX86** -  **/MACHINE:X86**
 
-    Para obtener más información, vea [/MACHINE (Especificar la plataforma de destino)](/cpp/build/reference/machine-specify-target-platform).
+  Para obtener más información, vea [/MACHINE (Especificar la plataforma de destino)](/cpp/build/reference/machine-specify-target-platform).
 
--   **TerminalServerAware**
+- **TerminalServerAware**
 
-     Parámetro **Boolean** opcional.
+  Parámetro **Boolean** opcional.
 
-     Si `true`, establece una marca en el campo IMAGE_OPTIONAL_HEADER DllCharacteristics del encabezado opcional de la imagen del programa. Si se establece esta marca, Terminal Server no realizará determinados cambios en la aplicación.
+  Si `true`, establece una marca en el campo IMAGE_OPTIONAL_HEADER DllCharacteristics del encabezado opcional de la imagen del programa. Si se establece esta marca, Terminal Server no realizará determinados cambios en la aplicación.
 
-     Para obtener más información, vea [/TSAWARE (Crear una aplicación que reconozca Terminal Server)](/cpp/build/reference/tsaware-create-terminal-server-aware-application).
+  Para obtener más información, vea [/TSAWARE (Crear una aplicación que reconozca Terminal Server)](/cpp/build/reference/tsaware-create-terminal-server-aware-application).
 
--   **TrackerLogDirectory**
+- **TrackerLogDirectory**
 
-     Parámetro **String** opcional.
+  Parámetro **String** opcional.
 
-     Especifica el directorio del registro de seguimiento.
+  Especifica el directorio del registro de seguimiento.
 
--   **TreatLinkerWarningAsErrors**
+- **TreatLinkerWarningAsErrors**
 
-     Parámetro **Boolean** opcional.
+  Parámetro **Boolean** opcional.
 
-     Si `true`, hace que no se genere ningún archivo de salida si el enlazador genera una advertencia.
+  Si `true`, hace que no se genere ningún archivo de salida si el enlazador genera una advertencia.
 
-     Para obtener más información, vea [/WX (Tratar advertencias del enlazador como errores)](/cpp/build/reference/wx-treat-linker-warnings-as-errors).
+  Para obtener más información, vea [/WX (Tratar advertencias del enlazador como errores)](/cpp/build/reference/wx-treat-linker-warnings-as-errors).
 
--   **TurnOffAssemblyGeneration**
+- **TurnOffAssemblyGeneration**
 
-     Parámetro **Boolean** opcional.
+  Parámetro **Boolean** opcional.
 
-     Si `true`, crea una imagen para el archivo de salida actual sin un ensamblado de .NET Framework.
+  Si `true`, crea una imagen para el archivo de salida actual sin un ensamblado de .NET Framework.
 
-     Para obtener más información, vea [/NOASSEMBLY (Crear un módulo MSIL)](/cpp/build/reference/noassembly-create-a-msil-module).
+  Para obtener más información, vea [/NOASSEMBLY (Crear un módulo MSIL)](/cpp/build/reference/noassembly-create-a-msil-module).
 
--   **TypeLibraryFile**
+- **TypeLibraryFile**
 
-     Parámetro **String** opcional.
+  Parámetro **String** opcional.
 
-     Especifica el nombre de archivo y la extensión de nombre de archivo del archivo *.tlb*. Especifique un nombre de archivo o una ruta de acceso y un nombre de archivo.
+  Especifica el nombre de archivo y la extensión de nombre de archivo del archivo *.tlb*. Especifique un nombre de archivo o una ruta de acceso y un nombre de archivo.
 
-     Para obtener más información, vea [/TLBOUT (Dar nombre a un archivo .TLB)](/cpp/build/reference/tlbout-name-dot-tlb-file).
+  Para obtener más información, vea [/TLBOUT (Dar nombre a un archivo .TLB)](/cpp/build/reference/tlbout-name-dot-tlb-file).
 
--   **TypeLibraryResourceID**
+- **TypeLibraryResourceID**
 
-     Parámetro **Integer** opcional.
+  Parámetro **Integer** opcional.
 
-     Designa un valor especificado por el usuario para una biblioteca de tipos creada por el enlazador. Especifique un valor entre 1 y 65535.
+  Designa un valor especificado por el usuario para una biblioteca de tipos creada por el enlazador. Especifique un valor entre 1 y 65535.
 
-     Para obtener más información, vea [/TLBID (Especificar un identificador de recursos para una biblioteca de tipos)](/cpp/build/reference/tlbid-specify-resource-id-for-typelib).
+  Para obtener más información, vea [/TLBID (Especificar un identificador de recursos para una biblioteca de tipos)](/cpp/build/reference/tlbid-specify-resource-id-for-typelib).
 
--   **UACExecutionLevel**
+- **UACExecutionLevel**
 
-     Parámetro **String** opcional.
+  Parámetro **String** opcional.
 
-     Especifica el nivel de ejecución solicitado para la aplicación cuando se ejecuta con Control de cuentas de usuario.
+  Especifica el nivel de ejecución solicitado para la aplicación cuando se ejecuta con Control de cuentas de usuario.
 
-     Especifique uno de los valores siguientes, cada uno de los cuales corresponde a una opción de línea de comandos.
+  Especifique uno de los valores siguientes, cada uno de los cuales corresponde a una opción de línea de comandos.
 
-    -   **AsInvoker** - `level='asInvoker'`
+  - **AsInvoker** - `level='asInvoker'`
 
-    -   **HighestAvailable** - `level='highestAvailable'`
+  - **HighestAvailable** - `level='highestAvailable'`
 
-    -   **RequireAdministrator** - `level='requireAdministrator'`
+  - **RequireAdministrator** - `level='requireAdministrator'`
 
-    Para obtener más información, consulte el argumento `level` de [/MANIFESTUAC (insertar información de UAC en el manifiesto)](/cpp/build/reference/manifestuac-embeds-uac-information-in-manifest).
+  Para obtener más información, consulte el argumento `level` de [/MANIFESTUAC (insertar información de UAC en el manifiesto)](/cpp/build/reference/manifestuac-embeds-uac-information-in-manifest).
 
--   **UACUIAccess**
+- **UACUIAccess**
 
-     Parámetro **Boolean** opcional.
+  Parámetro **Boolean** opcional.
 
-     Si `true`, la aplicación omite los niveles de protección de la interfaz de usuario y dirige las entradas de datos a ventanas con un nivel de permisos superior en el escritorio; de lo contrario, `false`.
+  Si `true`, la aplicación omite los niveles de protección de la interfaz de usuario y dirige las entradas de datos a ventanas con un nivel de permisos superior en el escritorio; de lo contrario, `false`.
 
-     Para obtener más información, consulte el argumento `uiAccess` de [/MANIFESTUAC (insertar información de UAC en el manifiesto)](/cpp/build/reference/manifestuac-embeds-uac-information-in-manifest).
+  Para obtener más información, consulte el argumento `uiAccess` de [/MANIFESTUAC (insertar información de UAC en el manifiesto)](/cpp/build/reference/manifestuac-embeds-uac-information-in-manifest).
 
--   **UseLibraryDependencyInputs**
+- **UseLibraryDependencyInputs**
 
-     Parámetro **Boolean** opcional.
+  Parámetro **Boolean** opcional.
 
-     Si `true`, se utilizan las entradas a la herramienta bibliotecario en lugar del propio archivo de biblioteca cuando se vinculan resultados de biblioteca de dependencias del proyecto.
+  Si `true`, se utilizan las entradas a la herramienta bibliotecario en lugar del propio archivo de biblioteca cuando se vinculan resultados de biblioteca de dependencias del proyecto.
 
--   **Versión**
+- **Versión**
 
-     Parámetro **String** opcional.
+  Parámetro **String** opcional.
 
-     Ponga un número de versión en el encabezado del archivo *.exe* o *.dll*. Especifique "`major[.minor]`". Los argumentos `major` y `minor` son números decimales comprendidos entre 0 y 65535.
+  Ponga un número de versión en el encabezado del archivo *.exe* o *.dll*. Especifique "`major[.minor]`". Los argumentos `major` y `minor` son números decimales comprendidos entre 0 y 65535.
 
-     Para obtener más información, vea [/VERSION (Información de versión)](/cpp/build/reference/version-version-information).
+  Para obtener más información, vea [/VERSION (Información de versión)](/cpp/build/reference/version-version-information).
 
 ## <a name="see-also"></a>Vea también
 - [Referencia de tareas](../msbuild/msbuild-task-reference.md)

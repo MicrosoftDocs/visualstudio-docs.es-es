@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b4c7df0cf9e837e27e8f572bb50d5e3395b3424a
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 0dce682aad7ab0d049488a6da9b8ab4f3b444d88
+ms.sourcegitcommit: 614d5b99576ea27a41957cd94062dc95cbd29c1c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56629916"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "65531708"
 ---
 # <a name="import-element-msbuild"></a>Elemento Import (MSBuild)
 Importa el contenido de un archivo de proyecto en otro archivo de proyecto.
@@ -46,6 +46,7 @@ Importa el contenido de un archivo de proyecto en otro archivo de proyecto.
 |---------------|-----------------|
 |`Project`|Atributo necesario.<br /><br /> Ruta de acceso del archivo de proyecto que se va a importar. La ruta puede incluir caracteres comodín. Los archivos coincidentes se importan según el criterio de ordenación. Mediante esta característica, puede agregar código a un proyecto simplemente agregando el archivo de código a un directorio.|
 |`Condition`|Atributo opcional.<br /><br /> Condición que se va a evaluar. Para obtener más información, consulte [Condiciones](../msbuild/msbuild-conditions.md).|
+|`Sdk`| Atributo opcional.<br /><br /> Hace referencia a un SDK de proyecto.|
 
 ### <a name="child-elements"></a>Elementos secundarios
  Ninguna
@@ -69,7 +70,6 @@ Importa el contenido de un archivo de proyecto en otro archivo de proyecto.
  Si el proyecto importado no tiene un atributo `DefaultTargets` , los proyectos importados se examinan en el orden en que se importan y se usa el valor del primer atributo `DefaultTargets` detectado. Por ejemplo, si ProyectoA importa ProyectoB y ProyectoC (en ese orden), y ProyectoB importa ProyectoD, [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] primero busca el atributo `DefaultTargets` especificado en ProyectoA, después en ProyectoB, luego en ProyectoD y, por último, en ProyectoC.
 
  El esquema de un proyecto importado es idéntico al de un proyecto estándar. Aunque [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] puede compilar un proyecto importado, es poco probable que lo haga porque un proyecto importado no suele contener información sobre las propiedades que se establecen o el orden en el que se ejecutan los destinos. El proyecto importado depende del proyecto en el que se importa para obtener esa información.
-
 
 ## <a name="wildcards"></a>Caracteres comodín
  En .NET Framework 4, MSBuild permite caracteres comodín en el atributo Project. Cuando hay caracteres comodín, se ordenan todas las coincidencias encontradas (para la reproducibilidad) y, después, se importan en ese orden como si dicho orden se hubiera establecido explícitamente.

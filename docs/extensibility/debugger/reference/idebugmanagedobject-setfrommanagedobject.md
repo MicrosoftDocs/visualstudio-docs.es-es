@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugManagedObject::SetFromManagedObject method
 ms.assetid: 8700ee8d-2704-4580-bccc-046837a24edd
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c56ccea9847cc23e45f9877f3d331be723293ee7
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: bf82275bf3375098cc8a8bcbeb200846252d2cec
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56712195"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66349377"
 ---
 # <a name="idebugmanagedobjectsetfrommanagedobject"></a>IDebugManagedObject::SetFromManagedObject
 Establece el valor de la instancia del objeto de clase de valor de la instancia de la clase de valor que se proporciona como un parámetro.
@@ -36,10 +39,9 @@ int SetFromManagedObject(
 );
 ```
 
-#### <a name="parameters"></a>Parámetros
- `pManagedObject`
-
- [in] Una interfaz que representa el objeto administrado que contiene el nuevo valor.
+## <a name="parameters"></a>Parámetros
+`pManagedObject`\
+[in] Una interfaz que representa el objeto administrado que contiene el nuevo valor.
 
 ## <a name="return-value"></a>Valor devuelto
  Si se realiza correctamente, devuelve S_OK; en caso contrario, devuelve un código de error.

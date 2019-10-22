@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugPortSupplier2::GetPortSupplierName
 ms.assetid: e4c368ab-640d-4b5b-9f74-810dc9364d8f
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 107db070693f964f6e16e0adcb4827b3dc9ae17d
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 34875e97b34e5383ef5d809a24f84a9eb8802fcd
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56703167"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66340157"
 ---
 # <a name="idebugportsupplier2getportsuppliername"></a>IDebugPortSupplier2::GetPortSupplierName
 Obtiene el nombre del proveedor de puerto.
@@ -36,10 +39,9 @@ int GetPortSupplierName( 
 );
 ```
 
-#### <a name="parameters"></a>Parámetros
- `pbstrName`
-
- [out] Devuelve el nombre del proveedor del puerto.
+## <a name="parameters"></a>Parámetros
+`pbstrName`\
+[out] Devuelve el nombre del proveedor del puerto.
 
 ## <a name="return-value"></a>Valor devuelto
  Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.

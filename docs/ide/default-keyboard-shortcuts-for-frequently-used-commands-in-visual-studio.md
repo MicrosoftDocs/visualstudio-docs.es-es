@@ -7,19 +7,21 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e96f9f56c2b73b8f3c39635c81019cd01fa8a69a
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 72e010d76188be1ebe07eb9400b7cde60c2bf0a6
+ms.sourcegitcommit: 9753c7544cec852ca5efd0834e0956d9e53a5734
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55956303"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67043331"
 ---
-# <a name="default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio"></a>Métodos abreviados de teclado para comandos de uso frecuente en Visual Studio
+# <a name="popular-keyboard-shortcuts-for-visual-studio"></a>Métodos abreviados de teclado de uso frecuente para Visual Studio
 
 Puede acceder a comandos de uso frecuente en Visual Studio con estos métodos abreviados de teclado predeterminados. Para obtener una lista completa de los comandos que tienen métodos abreviados predeterminados, vea [Métodos abreviados de teclado predeterminados](../ide/default-keyboard-shortcuts-in-visual-studio.md).
 
+El contexto *Global* significa que el método abreviado puede aplicarse en cualquier ventana de herramientas de Visual Studio.
+
 > [!NOTE]
-> Para buscar el método abreviado de un comando, abra el cuadro de diálogo **Opciones**, expanda el nodo **Entorno** y elija **Teclado**.
+> Puede [buscar el método abreviado](identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md) de un comando abriendo el cuadro de diálogo **Opciones**, expandiendo el nodo **Entorno** y eligiendo **Teclado**.
 
 ## <a name="build"></a>Compilar
 
@@ -38,7 +40,7 @@ Puede acceder a comandos de uso frecuente en Visual Studio con estos métodos ab
 |Debug.BreakAll|**Ctrl+Alt+Inter** [Global]|
 |Debug.DeleteAllBreakpoints|**Ctrl+Mayús+F9** [Global]|
 |Debug.Exceptions|**Ctrl+Alt+E** [Global]|
-|Debug.QuickWatch|**Ctrl+Alt+Q** [Global]<br /><br /> o **Mayús+F9** [Global]|
+|Debug.QuickWatch|**Ctrl+Alt+Q** [Global]<br /><br />o **Mayús+F9** [Global]|
 |Debug.Restart|**Ctrl+Mayús+F5** [Global]|
 |Debug.RunToCursor|**Ctrl+F10** [Global]|
 |Debug.SetNextStatement|**Ctrl+Mayús+F10** [Global]|
@@ -54,13 +56,13 @@ Puede acceder a comandos de uso frecuente en Visual Studio con estos métodos ab
 
 |Comandos|Métodos abreviados de teclado [Contextos]|
 |--------------| - |
-|Edit.BreakLine|**Entrar** [Editor de texto, Diseñador de informes, Diseñador de Windows Forms]<br /><br /> o **Mayús+Entrar** [Editor de texto]|
+|Edit.BreakLine|**Entrar** [Editor de texto, Diseñador de informes, Diseñador de Windows Forms]<br /><br />o **Mayús+Entrar** [Editor de texto]|
 |Edit.CollapseToDefinitions|**Ctrl+M**, **Ctrl+O** [Editor de texto]|
 |Edit.CommentSelection|**Ctrl+K**, **Ctrl+C** [Editor de texto]|
-|Edit.CompleteWord|**Alt+Flecha derecha** [Editor de texto, Diseñador de flujo de trabajo]<br /><br /> o **Ctrl+Barra espaciadora** [Editor de texto, Diseñador de flujo de trabajo]<br /><br /> o **Ctrl+K**, **W** [Diseñador de flujo de trabajo]<br /><br /> o **Ctrl+K, Ctrl+W** [Diseñador de flujo de trabajo]|
-|Edit.Copy|**Ctrl+C** [Global]<br /><br /> o **Ctrl+Insert** [Global]|
-|Edit.Cut|**Ctrl+X** [Global]<br /><br /> o **Mayús+Supr** [Global]|
-|Edit.Delete|**Supr** [Global, Team Explorer]<br /><br /> o **Mayús+Supr** [Diagrama de secuencia, Diagrama de actividades de UML, Diagramas de capas]<br /><br /> o **Ctrl+Supr** [Diagrama de clases]|
+|Edit.CompleteWord|**Alt+Flecha derecha** [Editor de texto, Diseñador de flujo de trabajo]<br /><br />o **Ctrl+Barra espaciadora** [Editor de texto, Diseñador de flujo de trabajo]<br /><br />o **Ctrl+K**, **W** [Diseñador de flujo de trabajo]<br /><br />o **Ctrl+K, Ctrl+W** [Diseñador de flujo de trabajo]|
+|Edit.Copy|**Ctrl+C** [Global]<br /><br />o **Ctrl+Insert** [Global]|
+|Edit.Cut|**Ctrl+X** [Global]<br /><br />o **Mayús+Supr** [Global]|
+|Edit.Delete|**Supr** [Global, Team Explorer]<br /><br />o **Mayús+Supr** [Diagrama de secuencia, Diagrama de actividades de UML, Diagramas de capas]<br /><br />o **Ctrl+Supr** [Diagrama de clases]|
 |Edit.Find|**Ctrl+F** [Global]|
 |Edit.FindAllReferences|**Mayús+F12** [Global]|
 |Edit.FindinFiles|**Ctrl+Mayús+F** [Global]|
@@ -78,14 +80,14 @@ Puede acceder a comandos de uso frecuente en Visual Studio con estos métodos ab
 |Edit.LineCut|**Ctrl+L** [Editor de texto]|
 |Edit.LineDownExtendColumn|**Mayús+Alt+Flecha abajo** [Editor de texto]|
 |Edit.LineOpenAbove|**Ctrl+Entrar** [Editor de texto]|
-|Edit.ListMembers|**Ctrl+J** [Editor de texto, Diseñador de flujo de trabajo]<br /><br /> o **Ctrl+K, Ctrl+L** [Diseñador de flujo de trabajo]<br /><br /> o **Ctrl+K, L** [Diseñador de flujo de trabajo]|
+|Edit.ListMembers|**Ctrl+J** [Editor de texto, Diseñador de flujo de trabajo]<br /><br />o **Ctrl+K, Ctrl+L** [Diseñador de flujo de trabajo]<br /><br />o **Ctrl+K, L** [Diseñador de flujo de trabajo]|
 |Edit.NavigateTo|**Ctrl+,** [Global]|
 |Edit.OpenFile|**Ctrl+Mayús+G** [Global]|
 |Edit.OvertypeMode|**Insert** [Editor de texto]|
-|Edit.ParameterInfo|**Ctrl+Mayús+Barra espaciadora** [Editor de texto, Diseñador de flujo de trabajo]<br /><br /> o **Ctrl+K, Ctrl+P** [Diseñador de flujo de trabajo]<br /><br /> o **Ctrl+K, P** [Diseñador de flujo de trabajo]|
-|Edit.Paste|**Ctrl+V** [Global]<br /><br /> o **Mayús+Ins** [Global]|
+|Edit.ParameterInfo|**Ctrl+Mayús+Barra espaciadora** [Editor de texto, Diseñador de flujo de trabajo]<br /><br />o **Ctrl+K, Ctrl+P** [Diseñador de flujo de trabajo]<br /><br />o **Ctrl+K, P** [Diseñador de flujo de trabajo]|
+|Edit.Paste|**Ctrl+V** [Global]<br /><br />o **Mayús+Ins** [Global]|
 |Edit.PeekDefinition|**Alt+F12** [Editor de texto]|
-|Edit.Redo|**Ctrl+Y** [Global]<br /><br /> o **Mayús+Alt+Retroceso** [Global]<br /><br /> o **Ctrl+Mayús+Z** [Global]|
+|Edit.Redo|**Ctrl+Y** [Global]<br /><br />o **Mayús+Alt+Retroceso** [Global]<br /><br />o **Ctrl+Mayús+Z** [Global]|
 |Edit.Replace|**Ctrl+H** [Global]|
 |Edit.SelectAll|**Ctrl+A** [Global]|
 |Edit.SelectCurrentWord|**Ctrl+W** [Editor de texto]|
@@ -97,7 +99,7 @@ Puede acceder a comandos de uso frecuente en Visual Studio con estos métodos ab
 |Edit.ToggleCompletionMode|**Ctrl+Alt+Barra espaciadora** [Editor de texto]|
 |Edit.ToggleOutliningExpansion|**Ctrl+M, Ctrl+M** [Editor de texto]|
 |Edit.UncommentSelection|**Ctrl+K, Ctrl+U** [Editor de texto]|
-|Edit.Undo|**Ctrl+Z** [Global]<br /><br /> o **Alt+Retroceso** [Global]|
+|Edit.Undo|**Ctrl+Z** [Global]<br /><br />o **Alt+Retroceso** [Global]|
 |Edit.WordDeleteToEnd|**Ctrl+Supr** [Editor de texto]|
 |Edit.WordDeleteToStart|**Ctrl+Retroceso** [Editor de texto]|
 
@@ -142,7 +144,7 @@ Puede acceder a comandos de uso frecuente en Visual Studio con estos métodos ab
 |--------------| - |
 |View.ClassView|**Ctrl+Mayús+C** [Global]|
 |View.EditLabel|**F2** [Global]|
-|View.ErrorList|**Ctrl+\\, Ctrl+E** [Global]<br /><br /> o **CTRL+\\, E** [Global]|
+|View.ErrorList|**Ctrl+\\, Ctrl+E** [Global]<br /><br />o **CTRL+\\, E** [Global]|
 |View.NavigateBackward|**Ctrl+-** [Global]|
 |View.NavigateForward|**Ctrl+Mayús+-** [Global]|
 |View.ObjectBrowser|**Ctrl+Alt+J** [Global]|
@@ -150,11 +152,11 @@ Puede acceder a comandos de uso frecuente en Visual Studio con estos métodos ab
 |View.PropertiesWindow|**F4**|
 |View.Refresh|**F5** [Team Explorer]|
 |View.ServerExplorer|**Ctrl+Alt+S** [Global]|
-|View.ShowSmartTag|**Ctrl+.** [Global]<br /><br /> o **Mayús+Alt+F10** [Global, Vista de diseño del editor de HTML]|
+|View.ShowSmartTag|**Ctrl+.** [Global]<br /><br />o **Mayús+Alt+F10** [Global, Vista de diseño del editor de HTML]|
 |View.SolutionExplorer|**Ctrl+Alt+L** [Global]|
 |View.TfsTeamExplorer|**Ctrl+\\, Ctrl+M** [Global]|
 |View.Toolbox|**Ctrl+Alt+X** [Global]|
-|View.ViewCode|**Entrar** [Diagrama de clases]<br /><br /> o **F7** [Diseñador de configuración]|
+|View.ViewCode|**Entrar** [Diagrama de clases]<br /><br />o **F7** [Diseñador de configuración]|
 |View.ViewDesigner|**Mayús+F7** [Vista de código fuente del editor de HTML]|
 
 ## <a name="window"></a>Ventana
@@ -169,4 +171,5 @@ Puede acceder a comandos de uso frecuente en Visual Studio con estos métodos ab
 
 ## <a name="see-also"></a>Vea también
 
-- [Identificar y personalizar métodos abreviados de teclado en Visual Studio](../ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md)
+- [Identificar y personalizar métodos abreviados de teclado en Visual Studio](../ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md)
+- [Todos los métodos abreviados de teclado de Visual Studio](default-keyboard-shortcuts-in-visual-studio.md)

@@ -4,15 +4,15 @@ ms.date: 10/08/2018
 ms.topic: conceptual
 author: mikeblome
 ms.author: mblome
-manager: wpickett
+manager: markl
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 6f92a1c9e39013c9c9cc0a320169f12e0c075b5a
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 7a0acaea4cf01d9c0158dfbf6d9feab37238f88f
+ms.sourcegitcommit: 85d66dc9fea3fa49018263064876b15aeb6f9584
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55942277"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68461703"
 ---
 # <a name="visual-c-intellisense-features"></a>Características de IntelliSense de Visual C++
 
@@ -22,7 +22,7 @@ Este artículo proporciona información general de las características de Intel
 
 ## <a name="intellisense-features-in-c"></a>Características de Intellisense en C++
 
-IntelliSense es el nombre que se le da a un conjunto de características que hacen que codificar sea más práctico. Dado que cada persona puede tener una idea diferente de lo que es práctico, casi todas las características de IntelliSense pueden habilitarse o deshabilitarse en el cuadro de diálogo **Opciones**, bajo **Editor de texto** > **C/C++** > **Avanzado**. El cuadro de diálogo **Opciones** está disponible en el menú **Herramientas** de la barra de menús.
+IntelliSense es el nombre que se le da a un conjunto de características que hacen que codificar sea más práctico. Dado que cada persona puede tener una idea diferente de lo que es práctico, casi todas las características de IntelliSense pueden habilitarse o deshabilitarse en el cuadro de diálogo **Opciones**, bajo **Editor de texto** > **C/C++**  > **Avanzado**. El cuadro de diálogo **Opciones** está disponible en el menú **Herramientas** de la barra de menús.
 
 ![Cuadro de diálogo Herramientas > Opciones](../ide/media/sintellisensecpptoolsoptions.PNG)
 
@@ -38,19 +38,19 @@ Para ver una lista de los iconos y sus significados, vea [Iconos de la Vista de 
 
 ![Ventana Palabra completa de Visual C&#43;&#43;](../ide/media/vs2015_cpp_complete_word.png)
 
-La primera vez que se invoca la lista de miembros solo muestra los miembros a los que se puede acceder en el contexto actual. Si presiona**Ctrl**+**J** a continuación, aparecen todos los miembros, independientemente de su accesibilidad. Si se invoca una tercera vez, se muestra una lista de elementos de programa aún más amplia. Puede desactivar la lista de miembros en el cuadro de diálogo **Opciones**, en **Editor de texto** > **C/C++** > **General** > **Lista de miembros automática**.
+La primera vez que se invoca la lista de miembros solo muestra los miembros a los que se puede acceder en el contexto actual. Si presiona**Ctrl**+**J** a continuación, aparecen todos los miembros, independientemente de su accesibilidad. Si se invoca una tercera vez, se muestra una lista de elementos de programa aún más amplia. Puede desactivar la lista de miembros en el cuadro de diálogo **Opciones**, en **Editor de texto** > **C/C++**  > **General** > **Lista de miembros automática**.
 
 ![Lista de miembros de Visual C&#43;&#43;](../ide/media/vs2015_cpp_list_members.png)
 
 ## <a name="parameter-help"></a>Ayuda de parámetros
 
-Cuando se escribe una llave de apertura de una llamada de función o un corchete angular en una declaración de variable de plantilla de clase, el editor muestra una pequeña ventana con los tipos de parámetros para cada sobrecarga de la función o el constructor. El parámetro "actual" &mdash;basado en la ubicación del cursor&mdash; está en negrita. Puede desactivar la información de parámetros en el cuadro de diálogo **Opciones**, en **Editor de texto** > **C/C++** > **General** > **Información de parámetros**.
+Cuando se escribe una llave de apertura de una llamada de función o un corchete angular en una declaración de variable de plantilla de clase, el editor muestra una pequeña ventana con los tipos de parámetros para cada sobrecarga de la función o el constructor. El parámetro "actual" &mdash;basado en la ubicación del cursor&mdash; está en negrita. Puede desactivar la información de parámetros en el cuadro de diálogo **Opciones**, en **Editor de texto** > **C/C++**  > **General** > **Información de parámetros**.
 
 ![Ayuda de parámetros de Visual C&#43;&#43;](../ide/media/vs_2015_cpp_param_help.png)
 
 ## <a name="quick-info"></a>Información rápida
 
-Cuando coloca el cursor del mouse sobre una variable, se muestra una pequeña ventana en línea que muestra la información de tipo y el encabezado en el que se define el tipo. Para ver la firma de la función, coloque el puntero sobre una llamada a función. Puede desactivar la información rápida en el cuadro de diálogo **Opciones**, en **Editor de texto** > **C/C++** > **Avanzado** > **Información rápida automática**.
+Cuando coloca el cursor del mouse sobre una variable, se muestra una pequeña ventana en línea que muestra la información de tipo y el encabezado en el que se define el tipo. Para ver la firma de la función, coloque el puntero sobre una llamada a función. Puede desactivar la información rápida en el cuadro de diálogo **Opciones**, en **Editor de texto** > **C/C++**  > **Avanzado** > **Información rápida automática**.
 
 ![InformaciónRápida de Visual C&#43;&#43;](../ide/media/vs2015_cpp_quickinfo.png)
 
@@ -100,7 +100,7 @@ De forma predeterminada, IntelliSense de archivo único solo utiliza directorios
 
 ## <a name="enable-or-disable-features"></a>Habilitar o deshabilitar características
 
-Dado que cada persona puede tener una idea diferente de lo que es práctico, casi todas las características de IntelliSense pueden habilitarse o deshabilitarse en el cuadro de diálogo **Opciones**, bajo **Editor de texto** > **C/C++** > **Avanzado**. El cuadro de diálogo **Opciones** está disponible en el menú **Herramientas** de la barra de menús.
+Dado que cada persona puede tener una idea diferente de lo que es práctico, casi todas las características de IntelliSense pueden habilitarse o deshabilitarse en el cuadro de diálogo **Opciones**, bajo **Editor de texto** > **C/C++**  > **Avanzado**. El cuadro de diálogo **Opciones** está disponible en el menú **Herramientas** de la barra de menús.
 
 ![Cuadro de diálogo Herramientas > Opciones](../ide/media/sintellisensecpptoolsoptions.PNG)
 

@@ -5,41 +5,41 @@ ms.topic: conceptual
 helpviewer_keywords:
 - Domain-Specific Language, programming domain models
 - Domain-Specific Language, events
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cd02491b42e9e6a5d677eca35ccde2aa559352c4
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: fe60767fe61de5c49718f25281d9b547305bbe84
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60096886"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72653798"
 ---
 # <a name="event-handlers-propagate-changes-outside-the-model"></a>Los controladores de eventos propagan cambios fuera del modelo
 
-En el SDK de modelado y visualización, puede definir controladores de eventos de almacén para propagar los cambios a los recursos fuera de la tienda, como las variables no-store, archivos, los modelos en otros almacenes, o en otras extensiones de Visual Studio. Store los controladores de eventos se ejecutan después del final de la transacción en el que se ha producido el evento desencadenador. También se ejecutan en una operación de deshacer o rehacer. Por lo tanto, a diferencia del almacén de reglas, los eventos de almacén son muy útiles para actualizar los valores que están fuera de la tienda. A diferencia de los eventos. NET, almacén de controladores de eventos se registran para que escuche en una clase: no es necesario que registrar un controlador independiente para cada instancia. Para obtener más información sobre cómo elegir entre diferentes formas de controlar los cambios, consulte [responde a y propagar los cambios](../modeling/responding-to-and-propagating-changes.md).
+En el SDK de visualización y modelado, puede definir controladores de eventos de almacén para propagar los cambios a los recursos fuera del almacén, como las variables que no son de almacén, los archivos, los modelos de otros almacenes u otras extensiones de Visual Studio. Los controladores de eventos de almacenamiento se ejecutan después del final de la transacción en la que se produjo el evento de desencadenamiento. También se ejecutan en una operación de deshacer o rehacer. Por lo tanto, a diferencia de las reglas de almacenamiento, los eventos de almacén son más útiles para actualizar los valores que están fuera del almacén. A diferencia de los eventos de .NET, los controladores de eventos de almacén se registran para escuchar una clase: no es necesario registrar un controlador independiente para cada instancia. Para obtener más información sobre cómo elegir entre diferentes maneras de controlar los cambios, consulte [responder a los cambios y propagarlos](../modeling/responding-to-and-propagating-changes.md).
 
-La superficie gráfica y otros controles de interfaz de usuario son ejemplos de recursos externos que pueden controlarse mediante el almacén de eventos.
+La superficie gráfica y otros controles de interfaz de usuario son ejemplos de recursos externos que los eventos de almacenamiento pueden controlar.
 
 ### <a name="to-define-a-store-event"></a>Para definir un evento de almacén
 
-1. Elija el tipo de evento que desea supervisar. Para obtener una lista completa, examine las propiedades de <xref:Microsoft.VisualStudio.Modeling.EventManagerDirectory>. Cada propiedad se corresponde con un tipo de evento. Usado con mayor frecuencia son tipos de evento:
+1. Elija el tipo de evento que desea supervisar. Para obtener una lista completa, examine las propiedades de <xref:Microsoft.VisualStudio.Modeling.EventManagerDirectory>. Cada propiedad corresponde a un tipo de evento. Los tipos de evento que se usan con más frecuencia son:
 
-    - `ElementAdded` -se desencadena cuando un elemento de modelo, se crea el vínculo de relación, forma o conector.
+    - `ElementAdded`: se desencadena cuando se crea un elemento de modelo, un vínculo de relación, una forma o un conector.
 
-    - Desencadena la ElementPropertyChanged - cuando el valor de un `Normal` se cambia la propiedad de dominio. El evento se desencadena únicamente si los valores nuevos y antiguos no son iguales. El evento no se puede aplicar a las propiedades de almacenamiento calculadas y personalizadas.
+    - ElementPropertyChanged: se desencadena cuando cambia el valor de una propiedad de dominio `Normal`. El evento se desencadena solo si los valores nuevos y antiguos no son iguales. El evento no se puede aplicar a las propiedades de almacenamiento calculadas y personalizadas.
 
-         No se puede aplicar a las propiedades de rol que se corresponden con los vínculos de relación. En su lugar, use `ElementAdded` para supervisar la relación de dominio.
+         No se puede aplicar a las propiedades de rol que corresponden a los vínculos de relación. En su lugar, use `ElementAdded` para supervisar la relación de dominio.
 
-    - `ElementDeleted` -se desencadena después de un elemento de modelo, relación, forma o conector se ha eliminado. Todavía puede tener acceso a los valores de propiedad del elemento, pero no tendrá ninguna relación con otros elementos.
+    - `ElementDeleted`: se desencadena una vez que se ha eliminado un elemento de modelo, una relación, una forma o un conector. Todavía puede tener acceso a los valores de propiedad del elemento, pero no tendrá ninguna relación con otros elementos.
 
-2. Agregue una definición de clase parcial para _Sudsl_**DocData** en un archivo de código independiente en el **DslPackage** proyecto.
+2. Agregue una definición de clase parcial para _sudsl_**en un archivo de código** independiente del proyecto **DslPackage** .
 
-3. Escribir el código del evento como un método, como en el ejemplo siguiente. Puede ser `static`, a menos que desee tener acceso a `DocData`.
+3. Escriba el código del evento como un método, como en el ejemplo siguiente. Puede ser `static`, a menos que desee tener acceso a `DocData`.
 
-4. Invalidar `OnDocumentLoaded()` para registrar el controlador. Si tiene más de un controlador, puede registrarlos todos en el mismo lugar.
+4. Invalide `OnDocumentLoaded()` para registrar el controlador. Si tiene más de un controlador, puede registrarlos todos en el mismo lugar.
 
 La ubicación del código de registro no es crítica. `DocView.LoadView()` es una ubicación alternativa.
 
@@ -88,13 +88,13 @@ namespace Company.MusicLib
 }
 ```
 
-## <a name="use-events-to-make-undoable-adjustments-in-the-store"></a>Usar eventos para realizar ajustes que se pueden deshacer en el Store
+## <a name="use-events-to-make-undoable-adjustments-in-the-store"></a>Usar eventos para realizar ajustes que se puedan deshacer en el almacén
 
-Eventos de Store no se utilizan normalmente para propagar los cambios en el almacén, porque el controlador de eventos que se ejecuta una vez confirmada la transacción. En su lugar, se usaría una regla del almacén. Para obtener más información, consulte [propagar cambios en el modelo de reglas de](../modeling/rules-propagate-changes-within-the-model.md).
+Normalmente, los eventos de almacén no se usan para propagar los cambios dentro del almacén, ya que el controlador de eventos se ejecuta después de confirmar la transacción. En su lugar, usaría una regla de almacén. Para obtener más información, vea [propagar los cambios dentro del modelo](../modeling/rules-propagate-changes-within-the-model.md).
 
-Sin embargo, podría usar un controlador de eventos para realizar actualizaciones adicionales en el almacén, si desea que el usuario para poder deshacer las actualizaciones adicionales por separado desde el evento original. Por ejemplo, suponga que los caracteres en minúsculas son la convención habitual para títulos de álbumes. Puede escribir un controlador de eventos de almacén que corrige el título a minúsculas después de que el usuario ha escrito en mayúsculas. Pero el usuario podría utilizar el comando Deshacer para cancelar la corrección de la restauración de los caracteres en mayúsculas. Deshará eliminaría el cambio del usuario.
+Sin embargo, puede usar un controlador de eventos para realizar actualizaciones adicionales en el almacén, si desea que el usuario pueda deshacer las actualizaciones adicionales por separado del evento original. Por ejemplo, supongamos que los caracteres en minúsculas son la Convención habitual de los títulos de álbumes. Podría escribir un controlador de eventos de almacén que corrija el título a minúsculas después de que el usuario lo hubiera escrito en mayúsculas. Pero el usuario podría usar el comando Deshacer para cancelar la corrección y restaurar los caracteres en mayúsculas. Una segunda operación de deshacer quitaría el cambio del usuario.
 
-Por el contrario, si ha escrito una regla de almacén para hacer lo mismo, el cambio del usuario y su corrección sería en la misma transacción, para que el usuario no pudo deshacer el ajuste sin perder el cambio original.
+Por el contrario, si ha escrito una regla de almacén para hacer lo mismo, el cambio del usuario y la corrección estarán en la misma transacción, por lo que el usuario no pudo deshacer el ajuste sin perder el cambio original.
 
 ```csharp
 partial class MusicLibDocView
@@ -158,28 +158,28 @@ private static void AlbumTitleAdjuster(object sender,
 }
 ```
 
-Si escribe un evento que se actualiza el almacén:
+Si escribe un evento que actualiza el almacén:
 
-- Use `store.InUndoRedoOrRollback` para evitar realizar cambios en los elementos del modelo en la fase de reversión. El Administrador de transacciones todo lo establecerá en el almacén a su estado original.
+- Utilice `store.InUndoRedoOrRollback` para evitar realizar cambios en los elementos del modelo en la operación de deshacer. El administrador de transacciones volverá a establecer todo en el almacén en su estado original.
 
-- Use `store.InSerializationTransaction` para evitar realizar cambios mientras se carga el modelo del archivo.
+- Use `store.InSerializationTransaction` para evitar realizar cambios mientras el modelo se carga desde el archivo.
 
-- Hará que los cambios aún más los eventos que se desencadene. Asegúrese de que se evite un bucle infinito.
+- Los cambios provocarán que se desencadenen otros eventos. Asegúrese de evitar un bucle infinito.
 
-## <a name="store-event-types"></a>Tipos de evento de Store
+## <a name="store-event-types"></a>Almacenar tipos de eventos
 
-Cada tipo de evento corresponde a una colección en Store.EventManagerDirectory. Puede agregar o quitar controladores de eventos en cualquier momento, pero resulta habitual para agregarlos al cargar el documento.
+Cada tipo de evento corresponde a una colección en Store. EventManagerDirectory. Puede Agregar o quitar controladores de eventos en cualquier momento, pero es habitual agregarlos cuando se carga el documento.
 
-|`EventManagerDirectory` Nombre de propiedad|Se ejecuta cuando|
+|`EventManagerDirectory` nombre de propiedad|Se ejecuta cuando|
 |-|-|
 |ElementAdded|Se crea una instancia de una clase de dominio, relación de dominio, forma, conector o diagrama.|
-|ElementDeleted|Un elemento de modelo se ha quitado de directorio de elementos de la tienda y ya no es el origen o destino de cualquier relación. El elemento no se elimina realmente de la memoria, pero se conserva en el caso de una operación de deshacer futuras.|
-|ElementEventsBegun|Se invoca al final de una transacción exterior.|
-|ElementEventsEnded|Se invoca cuando se han procesado todos los demás eventos.|
-|ElementMoved|Un elemento de modelo se ha movido desde un almacén de partición a otra.<br /><br /> Esto no está relacionado con la ubicación de una forma del diagrama.|
-|ElementPropertyChanged|El valor de una propiedad de dominio ha cambiado. Esto solo se ejecuta si los valores antiguos y nuevos no son iguales.|
+|ElementDeleted|Un elemento de modelo se ha quitado del directorio de elementos del almacén y ya no es el origen ni el destino de ninguna relación. En realidad, el elemento no se elimina de la memoria, sino que se conserva en el caso de una operación de deshacer futura.|
+|ElementEventsBegun|Se invoca al final de una transacción externa.|
+|Evento elementeventsended|Se invoca cuando se han procesado todos los demás eventos.|
+|ElementMoved|Un elemento de modelo se ha pasado de una partición de almacén a otra.<br /><br /> Esto no está relacionado con la ubicación de una forma en el diagrama.|
+|ElementPropertyChanged|El valor de una propiedad de dominio ha cambiado. Solo se ejecuta si los valores antiguos y nuevos no son iguales.|
 |RolePlayerChanged|Uno de los dos roles (extremos) de una relación hace referencia a un nuevo elemento.|
-|RolePlayerOrderChanged|En un rol con multiplicidad es mayor que 1, ha cambiado la secuencia de vínculos.|
+|RolePlayerOrderChanged|En un rol con una multiplicidad mayor que 1, la secuencia de vínculos ha cambiado.|
 |TransactionBeginning||
 |TransactionCommitted||
 |TransactionRolledBack||
@@ -187,6 +187,6 @@ Cada tipo de evento corresponde a una colección en Store.EventManagerDirectory.
 ## <a name="see-also"></a>Vea también
 
 - [Responder a los cambios y propagarlos](../modeling/responding-to-and-propagating-changes.md)
-- [Código de ejemplo: Diagramas de circuitos](https://code.msdn.microsoft.com/Visualization-Modeling-SDK-763778e8)
+- [Código de ejemplo: diagramas de circuitos](https://code.msdn.microsoft.com/Visualization-Modeling-SDK-763778e8)
 
 [!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]

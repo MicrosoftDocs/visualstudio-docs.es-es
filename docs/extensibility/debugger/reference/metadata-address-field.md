@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - METADATA_ADDRESS_FIELD structure
 ms.assetid: 15ab45fe-6b3b-4e09-880b-31b34f523607
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5858bf29d1bf5fd2f93032aec9791380fbbd37c5
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: dd8e536c1916f22fba81ff77379c218b1f2516ad
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56713859"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66334640"
 ---
 # <a name="metadataaddressfield"></a>METADATA_ADDRESS_FIELD
 
@@ -37,10 +40,9 @@ public struct METADATA_ADDRESS_FIELD {
 }
 ```
 
-## <a name="terms"></a>Términos
+## <a name="members"></a>Miembros
 
-`tokField`
-
+`tokField`\
 El identificador del token de campo.
 
 [C++] `_mdToken` es un `typedef` para 32 bits `int`.

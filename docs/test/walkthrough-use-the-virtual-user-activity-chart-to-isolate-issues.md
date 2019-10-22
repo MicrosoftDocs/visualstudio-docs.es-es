@@ -9,12 +9,12 @@ ms.assetid: d1c10fb9-cfeb-4e7f-9991-2d1e1103699e
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: d8971546c0f51dc759731a90569d3f7dc3f0e142
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 6811365023f7030d46bf6c611ecb09a5990a7492
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58069949"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67825774"
 ---
 # <a name="walkthrough-using-the-virtual-user-activity-chart-to-isolate-issues"></a>Tutorial: Uso del diagrama de actividad del usuario virtual para aislar problemas
 
@@ -26,19 +26,19 @@ El Diagrama de actividad del usuario virtual permite visualizar la actividad del
 
 ## <a name="prerequisites"></a>Requisitos previos
 
--   Visual Studio Enterprise
+- Visual Studio Enterprise
 
--   Complete estos procedimientos:
+- Complete estos procedimientos:
 
-    -   [Registrar y ejecutar una prueba de rendimiento web](/azure/devops/test/load-test/run-performance-tests-app-before-release#recordtests)
+  - [Registrar y ejecutar una prueba de rendimiento web](/azure/devops/test/load-test/run-performance-tests-app-before-release#recordtests)
 
-    -   [Crear y ejecutar una prueba de carga](/azure/devops/test/load-test/run-performance-tests-app-before-release#create-a-load-test)
+  - [Crear y ejecutar una prueba de carga](/azure/devops/test/load-test/run-performance-tests-app-before-release#create-a-load-test)
 
 ## <a name="open-the-colorwebapp-solution-created-in-the-previous-walkthroughs"></a>Abrir la solución ColorWebApp creada en los tutoriales anteriores
 
-1.  Abra Visual Studio.
+1. Abra Visual Studio.
 
-2.  Abra la solución **ColorWebApp** que contiene *LoadTest1.loadtest*. Esta prueba de carga es el resultado de realizar los pasos de los tres tutoriales que se enumeran al principio de este tema en la sección de requisitos previos.
+2. Abra la solución **ColorWebApp** que contiene *LoadTest1.loadtest*. Esta prueba de carga es el resultado de realizar los pasos de los tres tutoriales que se enumeran al principio de este tema en la sección de requisitos previos.
 
      En los pasos restantes de este tutorial se da por hecho que existen una aplicación web denominada ColorWebApp, una prueba de rendimiento web denominada *ColorWebAppTest.webtest* y una prueba de carga denominada *LoadTest1.loadtest*.
 
@@ -46,7 +46,7 @@ El Diagrama de actividad del usuario virtual permite visualizar la actividad del
 
 Ejecute la prueba de carga para recopilar datos de actividad del usuario virtual.
 
--   En el **Editor de pruebas de carga**, haga clic en el botón **Ejecutar** en la barra de herramientas. LoadTest1 empezará a ejecutarse.
+- En el **Editor de pruebas de carga**, haga clic en el botón **Ejecutar** en la barra de herramientas. LoadTest1 empezará a ejecutarse.
 
 ## <a name="isolate-issues-in-the-virtual-user-activity-chart"></a>Aislar problemas en el Diagrama de actividad del usuario virtual
 
@@ -54,11 +54,11 @@ Después de haber ejecutado la prueba de carga y recopilado los datos de activid
 
 ### <a name="to-use-the-virtual-user-activity-chart-in-your-load-test-results"></a>Para usar el Diagrama de actividad del usuario virtual en los resultados de pruebas de carga
 
-1.  Una vez finalizada la ejecución de la prueba de carga, aparece la página **Resumen** de los resultados de la prueba de carga en el **Analizador de pruebas de carga**. Elija el botón **Gráficos** de la barra de herramientas.
+1. Una vez finalizada la ejecución de la prueba de carga, aparece la página **Resumen** de los resultados de la prueba de carga en el **Analizador de pruebas de carga**. Elija el botón **Gráficos** de la barra de herramientas.
 
      Se mostrará la vista Gráficos.
 
-2.  En el gráfico **Tiempo de respuesta de la página**, haga clic con el botón derecho cerca de uno de los iconos de infracción del umbral y seleccione **Ir a detalles de usuario**.
+2. En el gráfico **Tiempo de respuesta de la página**, haga clic con el botón derecho cerca de uno de los iconos de infracción del umbral y seleccione **Ir a detalles de usuario**.
 
     > [!NOTE]
     > También puede usar el botón **Detalles** de la barra de herramientas del **Editor de pruebas de carga** para abrir el Diagrama de actividad del usuario virtual. Pero si usa la opción **Ir a detalles de usuario**, el **Diagrama de actividad del usuario virtual** acerca automáticamente la parte de la prueba en la que se ha hecho clic con el botón derecho en el gráfico.
@@ -67,37 +67,37 @@ Después de haber ejecutado la prueba de carga y recopilado los datos de activid
 
      En el eje y, los trazados horizontales representan a los usuarios virtuales individuales. El eje x muestra la escala de tiempo para la ejecución de la prueba de carga.
 
-3.  En la herramienta **Ampliar período de tiempo** que hay bajo el **Diagrama de detalles del usuario virtual**, ajuste los controles deslizantes izquierdo y derecho hasta que ambos estén cerca del icono de infracción del umbral. Esto cambiará la escala de tiempo en el **Diagrama de actividad del usuario virtual**.
+3. En la herramienta **Ampliar período de tiempo** que hay bajo el **Diagrama de detalles del usuario virtual**, ajuste los controles deslizantes izquierdo y derecho hasta que ambos estén cerca del icono de infracción del umbral. Esto cambiará la escala de tiempo en el **Diagrama de actividad del usuario virtual**.
 
-4.  En **Leyenda de detalles**, active la casilla correspondiente a **(Resaltar errores)**. Observe que el usuario virtual que produjo la infracción del umbral aparece resaltado.
+4. En **Leyenda de detalles**, active la casilla correspondiente a **(Resaltar errores)** . Observe que el usuario virtual que produjo la infracción del umbral aparece resaltado.
 
-5.  En el panel **Resultados del filtro**, desactive las casillas **Mostrar resultados correctos** y **HttpError**, pero deje activada la casilla **ValidationRuleError**.
+5. En el panel **Resultados del filtro**, desactive las casillas **Mostrar resultados correctos** y **HttpError**, pero deje activada la casilla **ValidationRuleError**.
 
      El **Diagrama de actividad del usuario virtual** solo muestra los usuarios virtuales que han estado más de tres segundos en la página *Red.aspx*, como especifica la infracción del umbral configurada en el tutorial anterior.
 
-6.  Deje el puntero del mouse sobre la línea horizontal que representa al usuario virtual que tiene el error de la regla de validación para la infracción del umbral.
+6. Deje el puntero del mouse sobre la línea horizontal que representa al usuario virtual que tiene el error de la regla de validación para la infracción del umbral.
 
-7.  Se mostrará una información sobre herramientas con la siguiente información:
+7. Se mostrará una información sobre herramientas con la siguiente información:
 
-    -   **Id. de usuario**
+    - **Id. de usuario**
 
-    -   **Escenario**
+    - **Escenario**
 
-    -   **Prueba**
+    - **Prueba**
 
-    -   **Resultado**
+    - **Resultado**
 
-    -   **Network**
+    - **Network**
 
-    -   **Hora de inicio**
+    - **Hora de inicio**
 
-    -   **Duración**
+    - **Duración**
 
-    -   **Agent**
+    - **Agent**
 
-    -   **Registro de prueba**
+    - **Registro de prueba**
 
-8.  Observe que **Registro de prueba** es un vínculo. Elija el vínculo **Registro de prueba**.
+8. Observe que **Registro de prueba** es un vínculo. Elija el vínculo **Registro de prueba**.
 
 9. La prueba de rendimiento web ColorWebTest que está asociada al registro se abre en el **Visor de resultados de pruebas de rendimiento web**. Esto le permite aislar dónde se produjeron las infracciones del umbral.
 

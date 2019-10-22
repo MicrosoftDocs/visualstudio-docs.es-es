@@ -2,7 +2,7 @@
 title: Usar parámetros de la línea de comandos para instalar Visual Studio
 titleSuffix: ''
 description: Obtenga información sobre cómo usar parámetros de línea de comandos para controlar o personalizar la instalación de Visual Studio.
-ms.date: 03/30/2019
+ms.date: 10/11/2019
 ms.custom: seodec18
 ms.topic: conceptual
 f1_keywords:
@@ -17,12 +17,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 8e999df4fc1269025c9adc038c1a17dd586a3081
-ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
+ms.openlocfilehash: 0b1388aa7ac993ba4b98837ec8ac46d516b567da
+ms.sourcegitcommit: e82baa50bf5a65858c410882c2e86a552c2c1921
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58790490"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72381028"
 ---
 # <a name="use-command-line-parameters-to-install-visual-studio"></a>Usar parámetros de la línea de comandos para instalar Visual Studio
 
@@ -32,17 +32,17 @@ Cuando instala Visual Studio desde un símbolo del sistema, puede usar diversos 
 - Automatizar el proceso de instalación.
 - Crear una caché (diseño) de los archivos de instalación para su uso posterior.
 
-Las opciones de la línea de comandos se usan junto con el programa previo de instalación, que es el archivo pequeño (de aproximadamente 1 MB) que inicia el proceso de descarga. El programa previo es el primer ejecutable que se inicia cuando se realiza la descarga desde el sitio de Visual Studio. Use los vínculos siguientes para obtener un vínculo directo a la versión más reciente del programa previo para la edición del producto que está instalando:
+Las opciones de la línea de comandos se usan junto con el programa previo de instalación, que es el archivo pequeño (de 1 MB) que inicia el proceso de descarga. El programa previo es el primer ejecutable que se inicia cuando se realiza la descarga desde el sitio de Visual Studio.
 
 ::: moniker range="vs-2017"
 
-- [Visual Studio 2017 Enterprise](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=enterprise&rel=15&utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=link+cta&utm_content=download+commandline+parameters+vs2017)
-- [Visual Studio 2017 Professional](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=professional&rel=15&utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=link+cta&utm_content=download+commandline+parameters+vs2017)
-- [Visual Studio 2017 Community](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=community&rel=15&utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=link+cta&utm_content=download+commandline+parameters+vs2017)
+Para obtener un programa previo de Visual Studio 2017, consulte la página de descarga de [**versiones anteriores de Visual Studio**](https://visualstudio.microsoft.com/vs/older-downloads/) y obtenga información detallada sobre cómo hacerlo.
 
 ::: moniker-end
 
 ::: moniker range="vs-2019"
+
+Use los vínculos siguientes para obtener un vínculo directo a la versión más reciente del programa previo para la edición del producto que está instalando:
 
 - [Visual Studio 2019 Enterprise](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=enterprise&rel=16&utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=link+cta&utm_content=download+commandline+parameters+vs2019+rc)
 - [Visual Studio 2019 Professional](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=professional&rel=16&utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=link+cta&utm_content=download+commandline+parameters+vs2019+rc)
@@ -50,13 +50,23 @@ Las opciones de la línea de comandos se usan junto con el programa previo de in
 
 ::: moniker-end
 
+
+El archivo del programa previo debe corresponderse o ser parecido a uno de los siguientes:
+
+* vs_enterprise.exe
+* vs_professional.exe
+* vs_community.exe
+
+>[!TIP]
+>Si previamente descargó un archivo de programa previo y desea comprobar su versión, aquí se muestra cómo hacerlo. En Windows, abra el Explorador de archivos, haga clic con el botón derecho en el archivo de programa previo, elija **Propiedades**, seleccione la pestaña **Detalles** y, luego, fíjese en el número de **versión del producto**. Para hacer coincidir ese número con una versión de Visual Studio, consulte la página [Números de compilación y fechas de lanzamiento de Visual Studio](visual-studio-build-numbers-and-release-dates.md).
+
 ## <a name="command-line-parameters"></a>Parámetros de la línea de comandos
 
  Los parámetros de la línea de comandos de Visual Studio no distinguen mayúsculas de minúsculas.
 
 > Sintaxis: `vs_enterprise.exe [command] <options>...`
 
-(Reemplace `vs_enterprise.exe` según corresponda para la edición del producto que está instalando.
+Reemplace `vs_enterprise.exe` según corresponda para la edición del producto que se está instalando. (Como alternativa, se puede usar `vs_installer.exe`.)
 
 >[!TIP]
 > Para más ejemplos de cómo usar la línea de comandos para instalar Visual Studio, consulte la página de [ejemplos de parámetros de la línea de comandos](command-line-parameter-examples.md).
@@ -103,7 +113,7 @@ Las opciones de la línea de comandos se usan junto con el programa previo de in
 | `--lang <one or more language-locales>` | **Opcional**: se usa con `--layout` para preparar una caché de instalación sin conexión con paquetes de recursos con los idiomas especificados. Para obtener más información, consulte la sección [Lista de configuraciones regionales de idioma](#list-of-language-locales) de esta página.|
 | `--add <one or more workload or component IDs>` | **Opcional**: uno o varios identificadores de componente o carga de trabajo para agregar. Se instalan los componentes necesarios del artefacto, pero no los componentes recomendados ni opcionales. Puede controlar los componentes adicionales de forma global mediante `--includeRecommended` o `--includeOptional`. Para un control más preciso, puede anexar `;includeRecommended` o `;includeOptional` al identificador (por ejemplo, `--add Workload1;includeRecommended` o `--add Workload2;includeOptional`). Para obtener más información, consulte la página [Identificadores de componente y carga de trabajo](workload-and-component-ids.md). <br/>**Nota**: Si se usa `--add`, solo se descargan las cargas de trabajo y los componentes especificados y sus dependencias. Si no se especifica `--add`, todos los componentes y las cargas de trabajo se descargan en el diseño.|
 | `--includeRecommended` | **Opcional**: incluye los componentes recomendados para cualquier carga de trabajo que se instale, pero no los componentes recomendados. Las cargas de trabajo se especifican con `--allWorkloads` o `--add`. |
-| `--includeOptional` | **Opcional**: incluye los componentes recomendados * y * opcionales para las cargas de trabajo que se incluyen en el diseño. Las cargas de trabajo se especifican con `--add`.  |
+| `--includeOptional` | **Opcional**: incluye los componentes recomendados *y* opcionales para las cargas de trabajo que se incluyen en el diseño. Las cargas de trabajo se especifican con `--add`.  |
 | `--keepLayoutVersion` | **Novedad de la versión 15.3, opcional**: se aplican cambios en el diseño sin actualizar la versión de este. |
 | `--verify` | **Novedad de la versión 15.3, opcional**: se comprueba el contenido del diseño. Se muestra una lista con los archivos dañados o que no se hayan encontrado. |
 | `--fix` | **Novedad de la versión 15.3, opcional**: se comprueba el contenido del diseño.  Si se detecta que faltan archivos o que estos están dañados, se vuelven a descargar. Para corregir el diseño, es necesario tener acceso a Internet. |
@@ -112,7 +122,7 @@ Las opciones de la línea de comandos se usan junto con el programa previo de in
 | **Opciones de instalación avanzadas** | **Descripción** |
 | ----------------------- | --------------- |
 | `--channelId <id>` | **Opcional**: identificador del canal correspondiente a la instancia que se va a instalar. Es necesario para el comando de instalación, y se omite para otros comandos si se especifica `--installPath`. |
-| `--channelUri <uri>` | **Opcional**: el URI del manifiesto del canal. Si no se quiere efectuar actualizaciones, `--channelUri` puede apuntar a un archivo inexistente (por ejemplo, --channelUri C:\doesntExist.chman). Se puede usar para el comando de instalación; se ignora para los demás comandos. |
+| `--channelUri <uri>` | **Opcional**: el URI del manifiesto del canal. Si no se quieren las actualizaciones, `--channelUri` puede apuntar a un archivo no existente (por ejemplo,--channelUri C:\doesntExist.chman). Esto puede usarse para el comando de instalación; se ignora para los demás comandos. |
 | `--installChannelUri <uri>` | **Opcional**: el URI del manifiesto del canal que se va a usar para la instalación. El URI especificado por `--channelUri`, que debe especificarse cuando se especifica `--installChannelUri`, se usa para detectar actualizaciones. Esto puede usarse para el comando de instalación; se ignora para los demás comandos. |
 | `--installCatalogUri <uri>` | **Opcional**: el URI del manifiesto del catálogo que se va a usar para la instalación. Si se especifica, el administrador del canal intenta descargar el manifiesto del catálogo de este URI antes de usar el URI en el manifiesto del canal de instalación. Este parámetro se usa para admitir la instalación sin conexión, donde la caché de diseño se creará con el catálogo del producto que ya se ha descargado. Esto puede usarse para el comando de instalación; se ignora para los demás comandos. |
 | `--productId <id>` | **Opcional**: el id. del producto de la instancia que se instalará. Se rellena previamente en condiciones normales de instalación. |
@@ -121,7 +131,7 @@ Las opciones de la línea de comandos se usan junto con el programa previo de in
 | `--cache` | **Novedad de la versión 15.2, opcional**: si los hay, los paquetes se conservarán después de instalarse de cara a posteriores reparaciones. Esta opción invalida la configuración global de directiva que se usará en posteriores instalaciones, reparaciones o modificaciones. La directiva predeterminada es almacenar en caché los paquetes. Se omite para el comando de desinstalación. Para más información, lea cómo [deshabilitar o mover la caché de paquetes](disable-or-move-the-package-cache.md). |
 | `--nocache` | **Novedad de la versión 15.2, opcional**: si los hay, los paquetes se eliminan después de instalarlos o repararlos. Solo se descargarán de nuevo si es necesario y se volverán a eliminar después de su uso. Esta opción invalida la configuración global de directiva que se usará en posteriores instalaciones, reparaciones o modificaciones. La directiva predeterminada es almacenar en caché los paquetes. Se omite para el comando de desinstalación. Para más información, lea cómo [deshabilitar o mover la caché de paquetes](disable-or-move-the-package-cache.md). |
 | `--noUpdateInstaller` | **Novedad de la versión 15.2, opcional**: si está presente, impide que el instalador se actualice de forma automática cuando se especifica el modo silencioso. El instalador producirá un error en el comando y devolverá un código de salida distinto de cero si se especifica noUpdateInstaller con el modo silencioso cuando se requiere una actualización del instalador. |
-| `--noWeb` | **Novedad de la versión 15.3, opcional**: Si está presente, la configuración de Visual Studio utiliza los archivos del directorio de diseño para instalar Visual Studio. Si un usuario intenta instalar componentes que no están en el diseño, se produce un error en la instalación.  Para obtener más información, consulte [Implementación de una instalación de red](create-a-network-installation-of-visual-studio.md). <br/><br/> **Importante**: Este modificador no impide que la configuración de Visual Studio busque actualizaciones. Para más información, consulte [Control de actualizaciones a implementaciones de Visual Studio basadas en red](controlling-updates-to-visual-studio-deployments.md).|
+| `--noWeb` | **Novedad de la versión 15.3, opcional**: Si está presente, la configuración de Visual Studio utiliza los archivos del directorio de diseño para instalar Visual Studio. Si un usuario intenta instalar componentes que no están en el diseño, se produce un error en la instalación.  Para obtener más información, consulte [Implementación de una instalación de red](create-a-network-installation-of-visual-studio.md). <br/><br/> **Importante**: Este modificador no impide que la configuración de Visual Studio busque actualizaciones. Para más información, consulte [Control de actualizaciones a implementaciones de Visual Studio basadas en red](controlling-updates-to-visual-studio-deployments.md). **Novedades de la versión 16.3.5**: Este modificador evita errores y mejora el rendimiento con instalaciones y actualizaciones sin conexión.|
 | `--path <name>=<path>` | **Novedad de la versión 15.7, opcional**: se usa para especificar las rutas de acceso de instalación personalizada para la instalación. Los nombre de ruta de acceso admitidos son uso compartido, caché e instalar. |
 | `--path cache=<path>` | **Novedad de la versión 15.7, opcional**: usa la ubicación que se especifique para descargar los archivos de instalación. Esta ubicación solo puede establecerse la primera vez que se instala Visual Studio. Ejemplo: `--path cache="C:\VS\cache"` |
 | `--path shared=<path>` | **Novedad de la versión 15.7, opcional**: contiene los archivos compartidos para las instalaciones en paralelo de Visual Studio. Algunas herramientas y SDK se instalan en una ubicación en esta unidad, mientras que otros pueden invalidar esta configuración e instalarse en otra unidad. Ejemplo: `--path shared="C:\VS\shared"` <br><br>Importante: Solo se puede establecer una vez y tiene que ser la primera que se instala Visual Studio. |
@@ -154,14 +164,7 @@ Para una lista de los identificadores de componente y carga de trabajo ordenados
 
 En función del resultado de la operación, la variable de entorno `%ERRORLEVEL%` se establece en uno de los valores siguientes:
 
-| **Valor** | **Resultado** |
-| --------- | ---------- |
-| 0 | Operación completada correctamente |
-| 1602 | Operación cancelada |
-| 3010 | Operación completada correctamente, pero la instalación requiere reiniciar el equipo para que se pueda usar |
-| 5004 | Operación cancelada |
-| 5007 | Operación bloqueada: el equipo no cumple los requisitos |
-| Otros | Condición de error: consulte los registros para obtener más información |
+[!INCLUDE[install-error-codes-md](includes/install-error-codes-md.md)]
 
 Cada operación genera varios archivos de registro en el directorio `%TEMP%` que indican el progreso de la instalación. Ordene la carpeta por fecha y busque los archivos que empiecen por `dd_bootstrapper`, `dd_client` y `dd_setup` para el programa previo, la aplicación del instalador y el motor de configuración, respectivamente.
 

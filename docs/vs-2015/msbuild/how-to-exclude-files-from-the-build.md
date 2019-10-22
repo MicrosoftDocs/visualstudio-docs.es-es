@@ -13,12 +13,12 @@ caps.latest.revision: 19
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: bd1535841a01b6e188383d74ed3b6124b4a325f6
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: d7aac21e1ee4d77453808090fc37a3fccaf77e1d
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60052564"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67821614"
 ---
 # <a name="how-to-exclude-files-from-the-build"></a>Procedimiento Excluir archivos de la compilación
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,7 +45,7 @@ En un archivo de proyecto puede utilizar comodines para incluir todos los archiv
     <CSFile Include="*.cs" Exclude="Form2.cs"/>  
     ```  
   
-     - O  
+     \- o -  
   
     ```  
     <VBFile Include="*.vb" Exclude="Form2.vb"/>  
@@ -59,7 +59,7 @@ En un archivo de proyecto puede utilizar comodines para incluir todos los archiv
     <CSFile Include="*.cs" Exclude="Form2.cs;Form3.cs"/>  
     ```  
   
-     - O  
+     \- o -  
   
     ```  
     <VBFile Include="*.vb" Exclude="Form2.vb;Form3.vb"/>  
@@ -76,7 +76,7 @@ En un archivo de proyecto puede utilizar comodines para incluir todos los archiv
     ```  
   
     > [!NOTE]
-    >  Debe especificar la ruta de acceso de ambos atributos. Si utiliza una ruta de acceso absoluta para especificar ubicaciones de archivos en el atributo `Include`, también debe utilizar una ruta de acceso absoluta en el atributo `Exclude`; si utiliza una ruta de acceso relativa en el atributo `Include`, también debe utilizar una ruta de acceso relativa en el atributo `Exclude`.  
+    > Debe especificar la ruta de acceso de ambos atributos. Si utiliza una ruta de acceso absoluta para especificar ubicaciones de archivos en el atributo `Include`, también debe utilizar una ruta de acceso absoluta en el atributo `Exclude`; si utiliza una ruta de acceso relativa en el atributo `Include`, también debe utilizar una ruta de acceso relativa en el atributo `Exclude`.  
   
 ## <a name="using-conditions-to-exclude-a-file-or-directory-from-the-inputs-for-a-build"></a>Usar condiciones para excluir un archivo o un directorio de las entradas de una compilación  
  Si hay elementos que quiere incluir, por ejemplo, en una compilación de depuración, pero no en una compilación de versión, puede utilizar el atributo `Condition` para especificar las condiciones en las que se va a incluir el elemento.  
@@ -127,4 +127,4 @@ En un archivo de proyecto puede utilizar comodines para incluir todos los archiv
   
 ## <a name="see-also"></a>Vea también  
  [Elementos](../msbuild/msbuild-items.md)   
- [MSBuild](msbuild.md) [Cómo: Seleccione los archivos de compilación](../msbuild/how-to-select-the-files-to-build.md)
+ [MSBuild](msbuild.md) [Cómo: Seleccionar los archivos que se van a compilar](../msbuild/how-to-select-the-files-to-build.md)

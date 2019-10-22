@@ -17,12 +17,12 @@ caps.latest.revision: 26
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 88644f3bf768f1b3467467a31edbd83e8e5f151c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: db9a3e08e14e7fadca6df9e32361c0b042f565e9
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60039882"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63438331"
 ---
 # <a name="how-to-debug-with-code-center-premium-source"></a>Procedimiento Depurar con código fuente de Code Center Premium
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -56,12 +56,12 @@ Con el depurador de [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)], 
      `src=https://codepremium.msdn.microsoft.com/source/Visual%20Studio%202010/SP1/`  
   
    > [!NOTE]
-   >  No olvide incluir la barra diagonal final<strong>/</strong> al final de la ruta de acceso.  
+   > No olvide incluir la barra diagonal final<strong>/</strong> al final de la ruta de acceso.  
   
      Mueva estas ubicaciones a la parte superior de la lista para asegurarse de que estos símbolos se cargan en primer lugar.  
   
    > [!NOTE]
-   >  Estas ubicaciones de Code Center Premium deben enumerarse primero de modo que sean las primeras ubicaciones que se cargan. En Visual Studio 2010, no se puede mover ningún servidor situado encima del **servidores de símbolos de Microsoft** entrada, lo que debe desactivar la casilla de verificación.  
+   > Estas ubicaciones de Code Center Premium deben enumerarse primero de modo que sean las primeras ubicaciones que se cargan. En Visual Studio 2010, no se puede mover ningún servidor situado encima del **servidores de símbolos de Microsoft** entrada, lo que debe desactivar la casilla de verificación.  
    > 
    >  Para cargar símbolos de Microsoft durante una sesión de depuración, haga lo siguiente:  
    > 
@@ -113,7 +113,7 @@ Con el depurador de [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)], 
     `https://codepremium.msdn.microsoft.com/source/Visual%20Studio%202010/SP1/`  
   
    > [!NOTE]
-   >  No olvide incluir la barra diagonal final<strong>/</strong> al final de la ruta de acceso.  
+   > No olvide incluir la barra diagonal final<strong>/</strong> al final de la ruta de acceso.  
   
 4. Para cada proyecto administrado de la solución, haga lo siguiente  
   

@@ -5,17 +5,20 @@ ms.topic: reference
 helpviewer_keywords:
 - IDebugSourceServerModule::GetSourceServerData
 ms.assetid: f15d86aa-1bd9-4b16-a64a-21b01c27db2e
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: fc99d014c1e31616ebd2a6cc16608a1d1bc741ce
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: e24fb48014d8a336e9d46ceb8471e2efe126de1f
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56683875"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66321894"
 ---
 # <a name="idebugsourceservermodulegetsourceserverdata"></a>IDebugSourceServerModule::GetSourceServerData
 Recupera una matriz de información del servidor de origen.
@@ -36,14 +39,12 @@ public int GetSourceServerData(
 );
 ```
 
-#### <a name="parameters"></a>Parámetros
-`pDataByteCount`
+## <a name="parameters"></a>Parámetros
+`pDataByteCount`\
+[out] Número de bytes en la matriz de datos.
 
- [out] Número de bytes en la matriz de datos.
-
-`ppData`
-
- [out] Referencia a la matriz de datos.
+`ppData`\
+[out] Referencia a la matriz de datos.
 
 ## <a name="return-value"></a>Valor devuelto
 Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.

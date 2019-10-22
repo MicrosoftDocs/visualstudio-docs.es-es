@@ -16,32 +16,32 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d37a028fb5af099484d81374e52cfd12af727f94
-ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
-ms.translationtype: MTE95
+ms.openlocfilehash: a89dce28f33bef0ffdb13d6254b2ac6b86ac25db
+ms.sourcegitcommit: 8a96a65676fd7a2a03b0803d7eceae65f3fa142b
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "57526235"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72589032"
 ---
 # <a name="how-to-set-a-thread-name-in-native-code"></a>Cómo: Establecer un nombre de subproceso en código nativo
-La denominación de los subprocesos es posible en cualquier edición de Visual Studio. Denominación de los subprocesos es útil para identificar los subprocesos de interés en el **subprocesos** ventana cuando se depura un proceso en ejecución. Denominado reconozca los subprocesos también pueden ser útil al realizar la depuración post-mortem a través de la inspección de volcado de bloqueo y al analizar el rendimiento de captura mediante distintas herramientas.
+La denominación de los subprocesos es posible en cualquier edición de Visual Studio. La denominación de los subprocesos resulta útil para identificar los subprocesos de interés en la ventana **subprocesos** al depurar un proceso en ejecución. El uso de subprocesos con nombre reconocible también puede ser útil cuando se realiza la depuración posterior a través de la inspección de volcado de memoria y se analizan las capturas de rendimiento mediante diversas herramientas.
 
-## <a name="ways-to-set-a-thread-name"></a>Maneras de establecer un nombre de subproceso
+## <a name="ways-to-set-a-thread-name"></a>Formas de establecer un nombre de subproceso
 
-Hay dos maneras de establecer un nombre de subproceso. La primera es a través de la [SetThreadDescription](https://docs.microsoft.com/windows/desktop/api/processthreadsapi/nf-processthreadsapi-setthreaddescription) función. La segunda es producir una excepción determinada mientras el depurador de Visual Studio se adjunta al proceso. Cada enfoque tiene ventajas y las advertencias.
+Hay dos maneras de establecer un nombre de subproceso. La primera es a través de la función [SetThreadDescription](/windows/desktop/api/processthreadsapi/nf-processthreadsapi-setthreaddescription) . La segunda es iniciando una excepción determinada mientras el depurador de Visual Studio está asociado al proceso. Cada enfoque tiene ventajas y advertencias. El uso de `SetThreadDescription` se admite a partir de Windows 10, versión 1607 o Windows Server 2016.
 
-Es importante destacar que _ambos_ enfoques pueden usarse conjuntamente, si lo desea, ya que los mecanismos que funcionan son independientes entre sí.
+Merece la pena mencionar que _ambos_ enfoques se pueden usar juntos, si lo desea, ya que los mecanismos por los que trabajan son independientes entre sí.
 
 ### <a name="set-a-thread-name-by-using-setthreaddescription"></a>Establecer un nombre de subproceso mediante `SetThreadDescription`
 
 Ventajas:
-* Nombres de subprocesos están visibles cuando se depura en Visual Studio, independientemente de si el depurador se asoció al proceso en el momento en que se invoca SetThreadDescription.
-* Nombres de subprocesos son visibles al realizar la depuración post-mortem cargando un archivo de volcado en Visual Studio.
-* Nombres de subprocesos también son visibles al usar otras herramientas, como el [WinDbg](https://docs.microsoft.com/windows-hardware/drivers/debugger/debugger-download-tools) depurador y el [Windows Performance Analyzer](https://docs.microsoft.com/windows-hardware/test/wpt/windows-performance-analyzer) analizador de rendimiento.
+* Los nombres de subprocesos son visibles al depurar en Visual Studio, independientemente de si el depurador se ha asociado al proceso en el momento en que se invoca SetThreadDescription.
+* Los nombres de subprocesos están visibles cuando se realiza la depuración posterior mediante la carga de un volcado de memoria en Visual Studio.
+* Los nombres de subprocesos también son visibles al usar otras herramientas, como el depurador [WinDbg](https://docs.microsoft.com/windows-hardware/drivers/debugger/debugger-download-tools) y el analizador de rendimiento de [Windows Performance Analyzer](https://docs.microsoft.com/windows-hardware/test/wpt/windows-performance-analyzer) .
 
 Advertencias:
-* Nombres de subprocesos sólo están visibles en Visual Studio 2017 versión 15.6 y versiones posteriores.
-* Cuando el archivo de volcado de depuración de un bloqueo de post mortem, nombres de subproceso solo son visibles si el bloqueo se creó en Windows 10 versión 1607, Windows Server 2016 o versiones posteriores de Windows.
+* Los nombres de subproceso solo están visibles en la versión 15,6 de Visual Studio 2017 y versiones posteriores.
+* Cuando se depura después de un archivo de volcado de memoria, los nombres de los subprocesos solo están visibles si el bloqueo se ha creado en la versión 1607 de Windows 10, Windows Server 2016 o versiones posteriores de Windows.
 
 *Ejemplo:*
 
@@ -63,18 +63,18 @@ int main()
 
 ### <a name="set-a-thread-name-by-throwing-an-exception"></a>Establecer un nombre de subproceso iniciando una excepción
 
-Es otra forma de establecer un nombre de subproceso en el programa se comunique el nombre deseado del subproceso al depurador de Visual Studio iniciando una excepción especialmente configurado.
+Otra manera de establecer un nombre de subproceso en el programa es comunicar el nombre de subproceso deseado al depurador de Visual Studio mediante la generación de una excepción configurada de forma especial.
 
 Ventajas:
 * Funciona en todas las versiones de Visual Studio.
 
 Advertencias:
-* Solo funciona si el depurador se adjunta en el momento en que se usa el método basado en excepciones.
-* Nombres de subprocesos que se establece mediante el uso de este método no estará disponibles en los volcados de memoria o las herramientas de análisis de rendimiento.
+* Solo funciona si el depurador está asociado en el momento en que se utiliza el método basado en excepciones.
+* Los nombres de subprocesos establecidos mediante este método no estarán disponibles en volcados de memoria o herramientas de análisis de rendimiento.
 
 *Ejemplo:*
 
-El `SetThreadName` función que se muestra a continuación muestra este enfoque basado en excepciones. Tenga en cuenta que el nombre del subproceso se copiarán automáticamente al subproceso, para que la memoria para el `threadName` parámetro puede liberarse tras el `SetThreadName` se complete la llamada.
+La función `SetThreadName` que se muestra a continuación muestra este enfoque basado en excepciones. Tenga en cuenta que el nombre del subproceso se copiará automáticamente en el subproceso, de modo que se pueda liberar la memoria del parámetro `threadName` una vez completada la llamada `SetThreadName`.
 
 ```C++
 //

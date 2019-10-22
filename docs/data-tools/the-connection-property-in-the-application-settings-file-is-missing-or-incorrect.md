@@ -3,17 +3,17 @@ title: Falta o no es correcta la propiedad de conexión del archivo de configura
 ms.date: 11/04/2016
 ms.topic: reference
 ms.assetid: 77724510-ff59-4d43-b933-a0434e1ac597
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 1a2b06d16c3761c1f2d82197c82d195b67845989
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
-ms.translationtype: MTE95
+ms.openlocfilehash: 2619b5826002944bd728a7744e0b2507cb493dc4
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55941470"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72648178"
 ---
 # <a name="the-connection-property-in-the-application-settings-file-is-missing-or-incorrect"></a>Falta o no es correcta la propiedad de conexión del archivo de configuración de la aplicación
 
@@ -25,5 +25,4 @@ Para responder a este mensaje, seleccione **Aceptar**. La información de conexi
 
 ## <a name="see-also"></a>Vea también
 
-- [Mensajes de Object Relational Designer](../data-tools/o-r-designer-messages.md)
 - [LINQ to SQL tools en Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md) (Herramientas LINQ to SQL en Visual Studio)

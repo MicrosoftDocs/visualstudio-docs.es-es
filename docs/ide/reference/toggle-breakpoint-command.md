@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 214897a0f938d8ea52306b8f605948b38f196111
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 18473fbd8ee0f7c4b415880da61c86de0bae6fc5
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55970470"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68925973"
 ---
 # <a name="toggle-breakpoint-command"></a>Alternar puntos de interrupción (Comando)
 Activa o desactiva el punto de interrupción, en función del estado actual, en la ubicación actual del archivo.
@@ -31,16 +31,18 @@ Debug.ToggleBreakpoint [text]
 ```
 
 ## <a name="arguments"></a>Argumentos
- `text` Opcional. Si se especifica texto, la línea se marca como un punto de interrupción con nombre. En caso contrario, la línea se marca como un punto de interrupción sin nombre, que es similar a lo que sucede cuando se presiona la tecla F9.
+
+`text`\
+Opcional. Si se especifica texto, la línea se marca como un punto de interrupción con nombre. En caso contrario, la línea se marca como un punto de interrupción sin nombre, que es similar a lo que sucede cuando se presiona la tecla F9.
 
 ## <a name="example"></a>Ejemplo
- En el ejemplo siguiente se alterna el punto de interrupción actual.
+En el ejemplo siguiente se alterna el punto de interrupción actual.
 
 ```
 >Debug.ToggleBreakpoint
 ```
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Otras referencias
 
 - [Comandos de Visual Studio](../../ide/reference/visual-studio-commands.md)
 - [Ventana Comandos](../../ide/reference/command-window.md)

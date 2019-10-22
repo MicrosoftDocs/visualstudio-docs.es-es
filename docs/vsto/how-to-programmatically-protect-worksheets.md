@@ -1,5 +1,5 @@
 ---
-title: Procedimiento Proteger mediante programación las hojas de cálculo
+title: Procedimiento Proteger las hojas de cálculo mediante programación
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -15,14 +15,14 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 93acd8466ae90a6db4d1f25d93460e501335af50
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 931bfba9aeac76132ca2dd5e6115abef9869a1df
+ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60062222"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71254588"
 ---
-# <a name="how-to-programmatically-protect-worksheets"></a>Procedimiento Proteger mediante programación las hojas de cálculo
+# <a name="how-to-programmatically-protect-worksheets"></a>Procedimiento Proteger las hojas de cálculo mediante programación
   La característica de protección de Microsoft Office Excel ayuda a evitar que los usuarios y el código modifiquen los objetos de una hoja de cálculo. De forma predeterminada, todas las celdas se bloquean después de activar la protección.
 
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]
@@ -30,25 +30,25 @@ ms.locfileid: "60062222"
  En las personalizaciones de nivel de documento, puede proteger hojas de cálculo usando el diseñador de Excel. También puede proteger una hoja de cálculo mediante programación en tiempo de ejecución en cualquier tipo de proyecto.
 
 > [!NOTE]
->  No puede agregar controles de Windows Forms a las áreas de una hoja de cálculo que están protegidas.
+> No puede agregar controles de Windows Forms a las áreas de una hoja de cálculo que están protegidas.
 
-## <a name="use-the-designer"></a>Use el diseñador
+## <a name="use-the-designer"></a>Usar el diseñador
 
 ### <a name="to-protect-a-worksheet-in-the-designer"></a>Para proteger una hoja de cálculo en el diseñador
 
-1. En el **cambios** grupo de la **revisión** , haga clic **Proteger hoja**.
+1. En el grupo **cambios** de la pestaña **revisión** , haga clic en **proteger hoja**.
 
-    El **Proteger hoja** aparece el cuadro de diálogo. Puede establecer una contraseña y, si lo desea, especificar algunas acciones que los usuarios pueden realizar en la hoja de cálculo, como, por ejemplo, dar formato a las celdas o insertar filas.
+    Aparece el cuadro de diálogo **proteger hoja** . Puede establecer una contraseña y, si lo desea, especificar algunas acciones que los usuarios pueden realizar en la hoja de cálculo, como, por ejemplo, dar formato a las celdas o insertar filas.
 
    También puede permitir a los usuarios editar determinados rangos en hojas de cálculo protegidas.
 
 ### <a name="to-allow-editing-in-specific-ranges"></a>Para permitir la modificación de rangos específicos
 
-1. En el **cambios** grupo de la **revisión** , haga clic **permitir que los usuarios modifiquen rangos**.
+1. En el grupo **cambios** de la pestaña **revisar** , haga clic en **permitir a los usuarios editar rangos**.
 
-     El **permitir que los usuarios modifiquen rangos** aparece el cuadro de diálogo. Puede especificar rangos que se desbloqueen mediante una contraseña y usuarios que pueden editar rangos sin contraseña.
+     Aparece el cuadro de diálogo **permitir que los usuarios editen rangos** . Puede especificar rangos que se desbloqueen mediante una contraseña y usuarios que pueden editar rangos sin contraseña.
 
-## <a name="use-code-at-runtime"></a>Use el código en tiempo de ejecución
+## <a name="use-code-at-run-time"></a>Usar código en tiempo de ejecución
  El siguiente código establece la contraseña (mediante la variable getPasswordFromUser, que contiene una contraseña obtenida del usuario) y solo permite la ordenación.
 
 ### <a name="to-protect-a-worksheet-by-using-code-in-a-document-level-customization"></a>Para proteger una hoja de cálculo mediante código en una personalización de nivel de documento
@@ -67,10 +67,10 @@ ms.locfileid: "60062222"
 
 ## <a name="see-also"></a>Vea también
 - [Trabajar con hojas de cálculo](../vsto/working-with-worksheets.md)
-- [Cómo: Quitar la protección de hojas de cálculo mediante programación](../vsto/how-to-programmatically-remove-protection-from-worksheets.md)
+- [Cómo: Quitar la protección de las hojas de cálculo mediante programación](../vsto/how-to-programmatically-remove-protection-from-worksheets.md)
 - [Cómo: Proteger libros mediante programación](../vsto/how-to-programmatically-protect-workbooks.md)
-- [Cómo: Ocultar mediante programación las hojas de cálculo](../vsto/how-to-programmatically-hide-worksheets.md)
-- [Elementos host y la información general sobre controles de host](../vsto/host-items-and-host-controls-overview.md)
-- [Elemento host Worksheet](../vsto/worksheet-host-item.md)
-- [Acceso global a objetos en los proyectos de Office](../vsto/global-access-to-objects-in-office-projects.md)
+- [Cómo: Ocultar hojas de cálculo mediante programación](../vsto/how-to-programmatically-hide-worksheets.md)
+- [Información general sobre elementos y controles host](../vsto/host-items-and-host-controls-overview.md)
+- [Elemento host de hoja de cálculo](../vsto/worksheet-host-item.md)
+- [Acceso global a objetos en proyectos de Office](../vsto/global-access-to-objects-in-office-projects.md)
 - [Parámetros opcionales en las soluciones de Office](../vsto/optional-parameters-in-office-solutions.md)

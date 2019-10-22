@@ -15,12 +15,12 @@ caps.latest.revision: 50
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 3b2421a8c1002e8fed1830a9de51383c35c01393
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: ecfd329e0e5c096e6e0c2011b60cd97dcd1c2937
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60059232"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63433822"
 ---
 # <a name="beginners-guide-to-performance-profiling"></a>Guía básica para la generación de perfiles de rendimiento
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,7 +34,7 @@ Puede utilizar las herramientas de generación de perfiles de Visual Studio para
  Si **Muestreo** no le proporciona los datos que necesita, otros métodos de recolección de las herramientas de generación de perfiles proporcionan diferentes tipos de información que pueden resultarle útiles. Para obtener más información sobre estos métodos, vea [Cómo: Elegir métodos de colección](../profiling/how-to-choose-collection-methods.md).  
   
 > [!TIP]
->  Si se generan perfiles de código que llama a funciones de Windows, asegúrese de que dispone de los archivos .pdb más recientes. Sin estos archivos, las vistas de informe mostrarán nombres de funciones de Windows crípticos y difíciles de entender. Para obtener más información sobre cómo asegurarse de que se tienen los archivos necesarios, vea [Cómo: Información de símbolos de referencia Windows](../profiling/how-to-reference-windows-symbol-information.md).  
+> Si se generan perfiles de código que llama a funciones de Windows, asegúrese de que dispone de los archivos .pdb más recientes. Sin estos archivos, las vistas de informe mostrarán nombres de funciones de Windows crípticos y difíciles de entender. Para obtener más información sobre cómo asegurarse de que se tienen los archivos necesarios, vea [Cómo: Información de símbolos de referencia Windows](../profiling/how-to-reference-windows-symbol-information.md).  
   
 ## <a name="Step1"></a> Crear y ejecutar una sesión de rendimiento  
  Para obtener los datos que necesita analizar, debe crear una sesión de rendimiento y luego ejecutar la sesión. El **Asistente de rendimiento** le permite hacer ambas cosas.  
@@ -46,7 +46,7 @@ Puede utilizar las herramientas de generación de perfiles de Visual Studio para
 1. Abra la solución en Visual Studio. Establezca la configuración en Versión. (Busque el cuadro **Configuraciones de soluciones** en la barra de herramientas, que se establece en **Depurar** de forma predeterminada. Cámbielo a **Versión**).  
   
     > [!IMPORTANT]
-    >  Si no es administrador en el equipo que está usando, debería ejecutar Visual Studio como administrador mientras usa el generador de perfiles. (Haga clic con el botón secundario en el icono de la aplicación de Visual Studio y luego haga clic en **Ejecutar como administrador**.  
+    > Si no es administrador en el equipo que está usando, debería ejecutar Visual Studio como administrador mientras usa el generador de perfiles. (Haga clic con el botón secundario en el icono de la aplicación de Visual Studio y luego haga clic en **Ejecutar como administrador**.  
   
 2. En el menú **Depurar**, elija **Generador de perfiles de rendimiento**.  
   

@@ -6,17 +6,17 @@ helpviewer_keywords:
 - CommandName element (VSCT XML schema)
 - VSCT XML schema elements, CommandName
 ms.assetid: a338b767-aa7e-4536-9908-e19a50ab60ac
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: cc67cc9e50c73e5ab3c8579be8833648a01079c4
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 4b792e7bbe1efaa1158cc517cd96494049e2b9e2
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56681132"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66337255"
 ---
 # <a name="commandname-element"></a>CommandName (elemento)
 El `CommandName` elemento especifica el texto que aparece en la categoría de teclado en el **opciones** cuadro de diálogo y en el **comandos** lista en el **personalizar** cuadro de diálogo cuadro.

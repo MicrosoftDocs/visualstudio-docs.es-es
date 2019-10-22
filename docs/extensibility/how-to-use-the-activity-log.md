@@ -6,23 +6,23 @@ helpviewer_keywords:
 - VSPackages, debugging
 - VSPackages, troubleshooting
 ms.assetid: bb3d3322-0e5e-4dd5-b93a-24d5fbcd2ffd
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b0699e3a7ad4a56f7e102ca896359290cd7dbecb
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 53888f85a41fdd5bef3985c4da986609a032e377
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60053135"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66309350"
 ---
 # <a name="how-to-use-the-activity-log"></a>Procedimiento Usar el registro de actividad
 Los VSPackages pueden escribir mensajes en el registro de actividad. Esta característica es especialmente útil para depurar los VSPackages en establecimientos comerciales.
 
 > [!TIP]
->  El registro de actividad está siempre activado. Visual Studio mantiene un búfer gradual de las últimas 100 entradas, así como las 10 primeras entradas, que tienen información de configuración general.
+> El registro de actividad está siempre activado. Visual Studio mantiene un búfer gradual de las últimas 100 entradas, así como las 10 primeras entradas, que tienen información de configuración general.
 
 ## <a name="to-write-an-entry-to-the-activity-log"></a>Para escribir una entrada en el registro de actividad
 
@@ -48,7 +48,7 @@ Los VSPackages pueden escribir mensajes en el registro de actividad. Esta caract
 
 2. Después de cerrar Visual Studio, busque el registro de actividad en la subcarpeta para los datos de Visual Studio:
 
-   <em>*%AppData%</em>\Microsoft\VisualStudio\\\<version>\ActivityLog.xml*.
+   <em> *%AppData%</em>\Microsoft\VisualStudio\\\<version>\ActivityLog.xml*.
 
 3. Abra el registro de actividad con cualquier editor de texto. Aquí es una entrada típica:
 

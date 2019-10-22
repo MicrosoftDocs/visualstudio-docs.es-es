@@ -14,21 +14,21 @@ helpviewer_keywords:
 - Help Viewer, navigating
 - toolbar [Help Viewer]
 ms.assetid: 74e41666-2ce8-4ac0-a0e5-3723d1e322c2
-author: gewarren
-ms.author: gewarren
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ca207f06640d5ef2df02d966b733d3065c80fce6
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 9c9c9bf7e6447f222b63ad9a07c0e27ce4567374
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55939010"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67824877"
 ---
 # <a name="microsoft-help-viewer"></a>Visor de Ayuda de Microsoft
 
-Puede instalar y ver el contenido de distintos productos y tecnologías en el equipo local usando el Visor de Ayuda de Microsoft. Estos productos incluyen Visual Studio, .NET Framework, referencia del lenguaje, SQL Server y Desarrollo de Windows. El Visor de Ayuda le permite:
+Puede instalar y ver el contenido de distintos productos y tecnologías en el equipo local usando el Visor de Ayuda de Microsoft. Estos productos incluyen Visual Studio, .NET, Referencia del lenguaje, SQL Server y Desarrollo para Windows. El Visor de Ayuda le permite:
 
 - Descargar conjuntos de contenido, que también se conocen como libros. Esto puede ser útil si tiene que trabajar "sin conexión" y seguir teniendo acceso a la documentación.
 
@@ -53,7 +53,7 @@ Puede buscar información en el contenido instalado mediante las pestañas de na
 
 ### <a name="navigation-tabs"></a>Pestañas de navegación
 
-|Tab|Descripción|
+|Tab|DESCRIPCIÓN|
 |---|-----------|
 |Contenido|Muestra el contenido instalado como una jerarquía (tabla de contenido). Puede especificar criterios para filtrar los títulos que aparecen.|
 |Índice|Muestra una lista alfabética de términos indexados. Puede buscar en el índice, especificar criterios para filtrar las entradas y requerir que las entradas contengan o empiecen con el texto que se especifica.|
@@ -73,7 +73,7 @@ La lista de contenido muestra qué libros puede instalar o ya instaló, si hay d
 > [!NOTE]
 > La funcionalidad de la pestaña **Administrar contenido** puede diferir si el administrador del Visor de Ayuda desactiva estas características o si no tiene acceso a Internet.
 
-### <a name="toolbar-buttons"></a>Botones de barra de herramientas
+### <a name="toolbar-buttons"></a>Botones de la barra de herramientas
 
 La barra de herramientas de la ventana **Visor de Ayuda** contiene los siguientes botones:
 

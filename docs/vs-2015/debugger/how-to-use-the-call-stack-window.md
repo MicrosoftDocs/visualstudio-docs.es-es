@@ -29,12 +29,12 @@ caps.latest.revision: 45
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: f40f5f27d603b67e6a7403f5327ffd89b486fa10
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 84c0bfead1633da13b4284cad04ace674045b057
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60106466"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65697485"
 ---
 # <a name="how-to-use-the-call-stack-window"></a>Procedimiento Utilice la ventana Pila de llamadas
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -58,7 +58,7 @@ Mediante la ventana **Pila de llamadas**, puede ver las llamadas a las funciones
  Si utiliza el menú contextual, puede elegir ver las llamadas entre subprocesos.  
   
 > [!NOTE]
->  Los cuadros de diálogo y los comandos de menú que se ven pueden diferir de los descritos en la Ayuda, dependiendo de los valores de configuración o de edición activos. Para cambiar la configuración, seleccione **Importar y exportar configuraciones** en el menú **Herramientas**. Para obtener más información, consulte [Personalizar la configuración de desarrollo en Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+> Los cuadros de diálogo y los comandos de menú que se ven pueden diferir de los descritos en la Ayuda, dependiendo de los valores de configuración o de edición activos. Para cambiar la configuración, seleccione **Importar y exportar configuraciones** en el menú **Herramientas**. Para obtener más información, consulte [Personalizar la configuración de desarrollo en Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
 ### <a name="to-display-the-call-stack-window-in-break-mode-or-in-run-mode"></a>Para mostrar la ventana Pila de llamadas (en modo de interrupción o en modo de ejecución)  
   
@@ -139,7 +139,7 @@ Mediante la ventana **Pila de llamadas**, puede ver las llamadas a las funciones
   
 ## <a name="see-also"></a>Vea también  
  [Código mixto e información que falta en la ventana Pila de llamadas](../debugger/mixed-code-and-missing-information-in-the-call-stack-window.md)   
- [Cómo: Cambiar el formato numérico de Windows del depurador](http://msdn.microsoft.com/library/cd593847-a625-411d-a430-b798346ef18f)   
+ [Cómo: Cambiar el formato numérico de Windows del depurador](https://msdn.microsoft.com/library/cd593847-a625-411d-a430-b798346ef18f)   
  [Ver datos en el depurador](../debugger/viewing-data-in-the-debugger.md)   
  [Especificación de archivos de código fuente y símbolos (.pdb)](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)   
  [Usar puntos de interrupción](../debugger/using-breakpoints.md)

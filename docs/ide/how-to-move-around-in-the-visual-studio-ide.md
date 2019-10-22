@@ -17,19 +17,19 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5933d89e38d040b088879f10911f2f1fff049aab
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 8764ccc5a662a40559b6b7ab4f19cdff0e2d555e
+ms.sourcegitcommit: e82baa50bf5a65858c410882c2e86a552c2c1921
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62547690"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72381329"
 ---
 # <a name="how-to-move-around-in-the-visual-studio-ide"></a>Procedimiento para moverse por el IDE de Visual Studio
 
 El entorno de desarrollo integrado (IDE) se ha diseñado para permitir el movimiento entre ventanas y archivos de varias maneras, dependiendo de los requisitos del proyecto o de sus preferencias. Puede desplazarse por los archivos abiertos en el editor o desplazarse por todas las ventanas de las herramientas activas en el IDE. También puede cambiar directamente a cualquier archivo abierto en el editor, sin tener en cuenta el orden en el que se accedió por última vez. Estas características pueden ayudar a aumentar la productividad al trabajar en el IDE.
 
 > [!NOTE]
-> Las opciones disponibles en los cuadros de diálogo, así como los nombres y las ubicaciones de los comandos de menú que se ven, podrían diferir de lo que se describe en este artículo, en función de los valores de configuración o de edición activos. Este artículo se ha redactado teniendo en cuenta la configuración **General**. Para cambiar la configuración, por ejemplo, **General** o **Visual C++**, elija **Herramientas** > **Importar y exportar configuraciones** y, después, **Restablecer todas las configuraciones**.
+> Las opciones disponibles en los cuadros de diálogo, así como los nombres y las ubicaciones de los comandos de menú que se ven, podrían diferir de lo que se describe en este artículo, en función de los valores de configuración o de edición activos. Este artículo se ha redactado teniendo en cuenta la configuración **General**. Para cambiar la configuración, por ejemplo, **General** o **Visual C++** , elija **Herramientas** > **Importar y exportar configuraciones** y, después, **Restablecer todas las configuraciones**.
 
 ## <a name="keyboard-shortcuts"></a>Métodos abreviados de teclado
 
@@ -43,9 +43,9 @@ Puede navegar hacia atrás y hacia delante por los archivos abiertos en el edito
 
 ### <a name="to-move-through-open-files-in-order-of-use"></a>Para desplazarse por los archivos abiertos por orden de uso
 
-- Para activar los documentos abiertos en el orden de acceso más reciente, presione **Ctrl**+**-**.
+- Para activar los documentos abiertos en el orden de acceso más reciente, presione **Ctrl**+ **-** (guion).
 
-- Para activar los documentos abiertos en el orden inverso, **Ctrl**+**Mayús**+**-**.
+- Para activar los documentos abiertos en el orden inverso, **Ctrl**+**Mayús**+ **-** (guion).
 
     > [!NOTE]
     > **Navegar hacia atrás** y **Navegar hacia delante** también se pueden encontrar en el menú **Ver**.

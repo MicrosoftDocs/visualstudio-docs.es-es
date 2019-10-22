@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugPortSupplier2::GetPortSupplierId
 ms.assetid: 741d0829-0943-49bf-b56e-61e836043006
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d7f4c2928c5660d69b78fddcd2b82e537f42941b
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 2fd7d6cf1dd41d27bedf2a409e850bf73a5e5dc2
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56678818"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66340131"
 ---
 # <a name="idebugportsupplier2getportsupplierid"></a>IDebugPortSupplier2::GetPortSupplierId
 Obtiene el identificador de proveedor del puerto.
@@ -36,10 +39,9 @@ HRESULT GetPortSupplierId( 
 );
 ```
 
-#### <a name="parameters"></a>Parámetros
- `pguidPortSupplier`
-
- [out] Devuelve el GUID del proveedor del puerto.
+## <a name="parameters"></a>Parámetros
+`pguidPortSupplier`\
+[out] Devuelve el GUID del proveedor del puerto.
 
 ## <a name="return-value"></a>Valor devuelto
  Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.

@@ -12,11 +12,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: cb55508c705013c3ad604c3ceeb52d7af6bb4445
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58987434"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68158448"
 ---
 # <a name="visual-studio-graphics-diagnostics"></a>Diagnóstico de gráficos de Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -81,7 +81,7 @@ Visual Studio*diagnóstico de gráficos* es un conjunto de herramientas para gra
   
 ## <a name="related-sections"></a>Secciones relacionadas  
   
-|Título|Descripción|  
+|Título|DESCRIPCIÓN|  
 |-----------|-----------------|  
 |[Depurar en Visual Studio](../debugger/debugging-in-visual-studio.md)|Introduce la función de depuración en [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].|  
 |[Gráficos de DirectX y juegos](http://go.microsoft.com/fwlink/?LinkId=256498)|Ofrece artículos sobre las tecnologías de gráficos DirectX.|

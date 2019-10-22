@@ -5,23 +5,23 @@ ms.topic: conceptual
 helpviewer_keywords:
 - Add New Item dialog box, adding items
 ms.assetid: 2f70863b-425b-4e65-86b4-d6a898e29dc7
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f6c0d6928236c151e182c90056641432e4706952
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 61a9921103bf5954061fbb61c405ba1d36ffb782
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59651310"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66328049"
 ---
 # <a name="add-items-to-the-add-new-item-dialog-box"></a>Agregar elementos al cuadro de diálogo Agregar nuevo elemento
 El proceso para agregar elementos a la **Agregar nuevo elemento** inicia el cuadro de diálogo con las claves del registro. Como se muestra en las siguientes entradas del registro, el **AddItemTemplates** sección contiene la ruta de acceso y el nombre del directorio en los elementos que ponen a disposición de los **Agregar nuevo elemento** se colocan el cuadro de diálogo.
 
 > [!NOTE]
->  La tabla que sigue inmediatamente el segmento de código contiene información adicional sobre la entrada del registro.
+> La tabla que sigue inmediatamente el segmento de código contiene información adicional sobre la entrada del registro.
 
  En esta sección se encuentra en **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\14.0Exp\Projects**.
 
@@ -42,18 +42,18 @@ El proceso para agregar elementos a la **Agregar nuevo elemento** inicia el cuad
 | Val SortPriority | REG_DWORD | 100 ([!INCLUDE[vcprx64](../../extensibility/internals/includes/vcprx64_md.md)]) | Determina el criterio de ordenación en el nodo de árbol de archivos que se muestran en el **Agregar nuevo elemento** cuadro de diálogo. |
 
 > [!NOTE]
->  Los GUID de los tipos de proyecto de Visual Basic y Visual C# son los siguientes:
+> Los GUID de los tipos de proyecto de Visual Basic y Visual C# son los siguientes:
 > - [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)]: {FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}
 > - [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)]: {F184B08F-C81C-45F6-A57F-5ABD9991F28F}
 
- El directorio que aparece para **TemplatesDir**, que es *TEMPLATE_PATH %\\&lt;SomeProjectItems&gt;*, es el nodo en el lado izquierdo de la **agregar Nuevo elemento** árbol del cuadro de diálogo. Elementos adicionales en el árbol se basan en el subdirectorio dentro del directorio raíz. Los archivos disponibles para agregarse al proyecto son los elementos en el panel derecho de la **Agregar nuevo elemento** cuadro de diálogo.
+ El directorio que aparece para **TemplatesDir**, que es *TEMPLATE_PATH %\\&lt;SomeProjectItems&gt;* , es el nodo en el lado izquierdo de la **agregar Nuevo elemento** árbol del cuadro de diálogo. Elementos adicionales en el árbol se basan en el subdirectorio dentro del directorio raíz. Los archivos disponibles para agregarse al proyecto son los elementos en el panel derecho de la **Agregar nuevo elemento** cuadro de diálogo.
 
  Normalmente, esta carpeta contendrá los archivos de plantilla para su proyecto como una plantilla HTML o *.cpp* archivo y cualquier *.vsz* archivos para iniciar asistentes. Para controlar cómo se muestran los elementos, también puede incluir *.vsdir* los archivos para localizar los nombres de directorio y los iconos. La cadena localizada es el título que aparece en el cuadro de diálogo que representa este nodo en el **Agregar nuevo elemento** árbol del cuadro de diálogo.
 
  Sin embargo, no es necesario que tener todo en uno *.vsdir* archivo. Puede tener una *.vsdir* archivo para todos los elementos en el directorio. Para obtener más información, consulte [archivo asistentes (.vsz)](../../extensibility/internals/wizard-dot-vsz-file.md) y [archivos de descripción (.vsdir) del directorio de plantilla](../../extensibility/internals/template-directory-description-dot-vsdir-files.md).
 
 > [!NOTE]
->  El *.vsdir* archivos en los directorios de la plantilla son opcionales. Si solo desea colocar un elemento de proyecto en el directorio y lo mostrará en el **Agregar nuevo elemento** cuadro de diálogo, puede colocar ese archivo en el directorio de plantillas especificado en el **TemplatesDir** instrucción. El archivo, a continuación, se mostrará en el panel derecho de la **Agregar nuevo elemento** cuadro de diálogo para ese proyecto. Sin embargo, si desea mostrar un título localizado para el archivo o en un icono, debe incluir al menos una *.vsdir* archivo en el directorio de plantillas.
+> El *.vsdir* archivos en los directorios de la plantilla son opcionales. Si solo desea colocar un elemento de proyecto en el directorio y lo mostrará en el **Agregar nuevo elemento** cuadro de diálogo, puede colocar ese archivo en el directorio de plantillas especificado en el **TemplatesDir** instrucción. El archivo, a continuación, se mostrará en el panel derecho de la **Agregar nuevo elemento** cuadro de diálogo para ese proyecto. Sin embargo, si desea mostrar un título localizado para el archivo o en un icono, debe incluir al menos una *.vsdir* archivo en el directorio de plantillas.
 
 ## <a name="group-project-items"></a>Agrupar elementos de proyecto
  Si desea que contenga grupos de plantillas en las carpetas en el **Agregar nuevo elemento** árbol del cuadro de diálogo, debe tener los subdirectorios en el directorio raíz de la plantilla con los elementos en ellos. Cuando el **Agregar nuevo elemento** cuadro de diálogo se muestra a los usuarios, también vea las subcarpetas y poder seleccionar los elementos de proyecto de ellos.

@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - UNMANAGED_ADDRESS_THIS_RELATIVE structure
 ms.assetid: e6a91ace-2d47-4ff9-aefb-8d8b68eab0b2
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e9d2bf87a804295a5ea8f6750ee9cd93643c53bc
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 30a70f33edbe3cf817ebe4ad383c54bc02275a72
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56719657"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66316102"
 ---
 # <a name="unmanagedaddressthisrelative"></a>UNMANAGED_ADDRESS_THIS_RELATIVE
 Esta estructura representa una dirección que es relativa a un `this` puntero (`Me` en Visual Basic).
@@ -40,12 +43,15 @@ public struct UNMANAGED_THIS_RELATIVE {
 }
 ```
 
-## <a name="terms"></a>Términos
- dwOffset desplazamiento de bytes desde una posición de base (por ejemplo, el inicio de una clase vtable).
+## <a name="members"></a>Miembros
+ `dwOffset`\
+ Desplazamiento de bytes desde una posición de base (por ejemplo, el inicio de una clase vtable).
 
- dwBitOffset desplazamiento de bits desde una posición de base (siempre es 0, a menos que se hace referencia a un campo de bits).
+ `dwBitOffset`\
+ Desplazamiento de bits desde una posición de base (siempre es 0, a menos que se hace referencia a un campo de bits).
 
- Número de bits que representa la dirección dwBitLength (siempre es 0, a menos que se hace referencia a un campo de bits).
+ `dwBitLength`\
+ Número de bits que representa la dirección (siempre es 0, a menos que se hace referencia a un campo de bits).
 
 ## <a name="remarks"></a>Comentarios
  Esta estructura es parte de la unión en el [DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md) estructura cuando la `dwKind` campo de la `DEBUG_ADDRESS_UNION` estructura está establecida en `ADDRESS_KIND_UNMANAGED_THIS_RELATIVE` (un valor de la [ADDRESS_KIND](../../../extensibility/debugger/reference/address-kind.md) enumeración).

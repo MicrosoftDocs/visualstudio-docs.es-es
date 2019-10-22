@@ -1,5 +1,5 @@
 ---
-title: IScriptNode::GetIndexInParent | Microsoft Docs
+title: 'Iscriptnode (:: GetIndexInParent | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 92f5ae074d65d2360bcfb3dda03903aa3c59209e
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 9251f65414a5ebd48ce56dae6a7dbfeec4e514e3
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58159132"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72575043"
 ---
 # <a name="iscriptnodegetindexinparent"></a>IScriptNode::GetIndexInParent
-Devuelve el índice de un objeto en la lista de nodos secundarios del elemento primario.  
+Devuelve el índice de un objeto en la lista secundaria del elemento primario.  
   
 ## <a name="syntax"></a>Sintaxis  
   
@@ -37,12 +37,12 @@ HRESULT GetIndexInParent(
   
 #### <a name="parameters"></a>Parámetros  
  `pisn`  
- [out] Devuelve el índice de un objeto en la lista de nodos secundarios del elemento primario.  
+ enuncia Devuelve el índice de un objeto en la lista secundaria del elemento primario.  
   
- Si este método es invocado por un `IScriptNode` de objeto que representa una página Web, este parámetro devuelve 0.  
+ Si un objeto `IScriptNode` que representa una página web llama a este método, este parámetro devuelve 0.  
   
 ## <a name="return-value"></a>Valor devuelto  
- Una clase `HRESULT`. Entre los valores posibles se incluyen los que se indican en la tabla siguiente, entre otros.  
+ Interfaz `HRESULT`. Entre los valores posibles se incluyen los que se indican en la tabla siguiente, entre otros.  
   
 |Valor|Descripción|  
 |-----------|-----------------|  

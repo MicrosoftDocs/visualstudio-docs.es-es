@@ -1,5 +1,5 @@
 ---
-title: 'CA1502: Evite la excesiva complejidad | Documentos de Microsoft'
+title: 'CA1502: Evite una complejidad excesiva | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -12,54 +12,54 @@ helpviewer_keywords:
 - AvoidExcessiveComplexity
 ms.assetid: d735454b-2f8f-47ce-907d-f7a5a5391221
 caps.latest.revision: 32
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: e1885a07f4c9edbbdea9be4f0e74aaf8e4d3a6f9
-ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
+ms.openlocfilehash: f7b830e9d3a045bb54394a91d94e036613af7d1f
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "58988011"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72607876"
 ---
-# <a name="ca1502-avoid-excessive-complexity"></a>CA1502: Evitar una complejidad excesiva
+# <a name="ca1502-avoid-excessive-complexity"></a>CA1502: Evite la excesiva complejidad
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
 |-|-|
 |TypeName|AvoidExcessiveComplexity|
 |Identificador de comprobación|CA1502|
-|Categoría|Microsoft.Maintainability|
+|Categoría|Microsoft. mantenibilidad|
 |Cambio problemático|Poco problemático|
 
 ## <a name="cause"></a>Motivo
- Un método tiene una complejidad ciclomática excesiva.
+ Un método tiene una complejidad de ciclomática excesiva.
 
 ## <a name="rule-description"></a>Descripción de la regla
- *Complejidad ciclomática* mide el número de rutas de acceso independientes linealmente a través del método, que viene determinado por el número y la complejidad de las bifurcaciones condicionales. Una complejidad ciclomática baja generalmente indica un método que es fácil de entender, probar y mantener. La complejidad ciclomática se calcula a partir de un gráfico de flujo de control del método y se proporciona como sigue:
+ La *complejidad ciclomática* mide el número de rutas de acceso independientes de forma lineal a través del método, que viene determinado por el número y la complejidad de las bifurcaciones condicionales. Generalmente, una complejidad de ciclomática baja indica un método que es fácil de entender, probar y mantener. La complejidad ciclomática se calcula a partir de un gráfico de flujo de control del método y se proporciona de la siguiente manera:
 
- complejidad ciclomática = número de bordes - el número de nodos + 1
+ complejidad ciclomática = el número de límites (el número de nodos + 1)
 
- donde un nodo representa un punto de bifurcación lógica y un borde representa una línea entre los nodos.
+ donde un nodo representa un punto de bifurcación lógico y un borde representa una línea entre los nodos.
 
- La regla emite una infracción cuando la complejidad ciclomática es más de 25.
+ La regla notifica una infracción cuando la complejidad ciclomática es superior a 25.
 
- Puede aprender más acerca de las métricas de código en [medir la complejidad y el mantenimiento del código administrado](../code-quality/measuring-complexity-and-maintainability-of-managed-code.md),
+ Puede obtener más información sobre las métricas de código a [la medida de la complejidad y el mantenimiento del código administrado](../code-quality/measuring-complexity-and-maintainability-of-managed-code.md).
 
 ## <a name="how-to-fix-violations"></a>Cómo corregir infracciones
  Para corregir una infracción de esta regla, refactorice el método para reducir su complejidad ciclomática.
 
 ## <a name="when-to-suppress-warnings"></a>Cuándo suprimir advertencias
- Es seguro suprimir una advertencia de esta regla si no se puede reducir fácilmente la complejidad y el método es fácil de entender, probar y mantener. En concreto, un método que contiene una gran `switch` (`Select` en [!INCLUDE[vbprvb](../includes/vbprvb-md.md)]) instrucción es un candidato para la exclusión. El riesgo de desestabilizar el código base en tiempo de ejecución en el ciclo de desarrollo o introducir un cambio inesperado en el comportamiento de tiempo de ejecución en código previamente distribuido puede descompensar las ventajas de mantenimiento de refactorización del código.
+ Es seguro suprimir una advertencia de esta regla si la complejidad no se puede reducir fácilmente y el método es fácil de entender, probar y mantener. En concreto, un método que contiene una instrucción grande de `switch` (`Select` en [!INCLUDE[vbprvb](../includes/vbprvb-md.md)]) es un candidato para la exclusión. El riesgo de desestabilizadoresr la base de código tardíamente en el ciclo de desarrollo o introducir un cambio inesperado en el comportamiento en tiempo de ejecución en el código enviado anteriormente podría superar las ventajas de mantenimiento de la refactorización del código.
 
-## <a name="how-cyclomatic-complexity-is-calculated"></a>¿Cómo se calcula la complejidad ciclomática
- La complejidad ciclomática se calcula sumando 1 al siguiente:
+## <a name="how-cyclomatic-complexity-is-calculated"></a>Cómo se calcula la complejidad de ciclomática
+ La complejidad ciclomática se calcula agregando 1 a lo siguiente:
 
-- Número de bifurcaciones (como `if`, `while`, y `do`)
+- Número de ramas (como `if`, `while` y `do`)
 
-- Número de `case` instrucciones en un `switch`
+- Número de instrucciones `case` en una `switch`
 
-  Los ejemplos siguientes muestran los métodos que tienen diferentes complejidad ciclomática.
+  En los ejemplos siguientes se muestran métodos que tienen diferentes complejidades de ciclomática.
 
 ## <a name="example"></a>Ejemplo
  **Complejidad ciclomática de 1**

@@ -7,17 +7,17 @@ f1_keywords:
 helpviewer_keywords:
 - SccGetCommandOptions function
 ms.assetid: bbe4aa4e-b4b0-403e-b7a0-5dd6eb24e5a9
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f73eec788ee21c5e27514d373ad78b8dfc965fce
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 13e8bbae6ee16eb81fdb29f526a1f41e905fa504
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56681678"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66351885"
 ---
 # <a name="sccgetcommandoptions-function"></a>SccGetCommandOptions (función)
 Esta función pide al usuario para las opciones avanzadas para un comando determinado.
@@ -77,7 +77,7 @@ SCCRTN SccGetCommandOptions(
  Por último, cuando el usuario hace clic en **Aceptar** en el IDE **obtener** cuadro de diálogo, las llamadas IDE el [SccGet](../extensibility/sccget-function.md), pasando la estructura devuelta en `ppvOptions` que contiene el Opciones avanzadas.
 
 > [!NOTE]
->  El comando `SCC_COMMAND_OPTIONS` se usa cuando el IDE muestra un **opciones** cuadro de diálogo que permite al usuario establece las preferencias que controlan cómo funciona la integración. Si desea que el complemento de control de origen proporcionar su propio cuadro de diálogo Preferencias, puede mostrar desde una **avanzadas** botón en el cuadro de diálogo de preferencias del IDE. El complemento es únicamente responsable de obtener y almacenar esta información; el IDE no usa ni modificarlo.
+> El comando `SCC_COMMAND_OPTIONS` se usa cuando el IDE muestra un **opciones** cuadro de diálogo que permite al usuario establece las preferencias que controlan cómo funciona la integración. Si desea que el complemento de control de origen proporcionar su propio cuadro de diálogo Preferencias, puede mostrar desde una **avanzadas** botón en el cuadro de diálogo de preferencias del IDE. El complemento es únicamente responsable de obtener y almacenar esta información; el IDE no usa ni modificarlo.
 
 ## <a name="see-also"></a>Vea también
 - [Funciones de API de complemento de control de código fuente](../extensibility/source-control-plug-in-api-functions.md)

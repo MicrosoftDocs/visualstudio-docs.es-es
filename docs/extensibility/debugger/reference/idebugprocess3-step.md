@@ -7,23 +7,26 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProcess3::Step
 ms.assetid: 6ad9094c-27cc-4927-8a7c-1b4d97b2e436
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 686e8dfbd94fc3fddbc5e696fc6e943184357c02
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: dc3ffecf5a2760077c0a5da4f4508163a48ca1a4
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56711532"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66313894"
 ---
 # <a name="idebugprocess3step"></a>IDebugProcess3::Step
 Hace que el proceso paso a paso una instrucción o instrucción.
 
 > [!NOTE]
->  Este método debería usarse en lugar de [paso](../../../extensibility/debugger/reference/idebugprogram2-step.md).
+> Este método debería usarse en lugar de [paso](../../../extensibility/debugger/reference/idebugprogram2-step.md).
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -43,18 +46,15 @@ int Step(
 );
 ```
 
-#### <a name="parameters"></a>Parámetros
- `pThread`
+## <a name="parameters"></a>Parámetros
+`pThread`\
+[in] Un [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md) objeto que representa el subproceso que se va a escalonado.
 
- [in] Un [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md) objeto que representa el subproceso que se va a escalonado.
+`sk`\
+[in] Uno de los [STEPKIND](../../../extensibility/debugger/reference/stepkind.md) valores.
 
- `sk`
-
- [in] Uno de los [STEPKIND](../../../extensibility/debugger/reference/stepkind.md) valores.
-
- `step`
-
- [in] Uno de los [STEPUNIT](../../../extensibility/debugger/reference/stepunit.md) valores.
+`step`\
+[in] Uno de los [STEPUNIT](../../../extensibility/debugger/reference/stepunit.md) valores.
 
 ## <a name="return-value"></a>Valor devuelto
  Si se realiza correctamente, devuelve S_OK; en caso contrario, devuelve el código de error.

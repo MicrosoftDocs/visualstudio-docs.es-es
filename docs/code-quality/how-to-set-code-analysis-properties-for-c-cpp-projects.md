@@ -1,5 +1,5 @@
 ---
-title: Filtrar Establecer las propiedades de análisis de código de proyectos de C/C++
+title: 'Cómo: Establecer propiedades de análisis de código para proyectos de C/C++'
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -15,41 +15,41 @@ helpviewer_keywords:
 ms.assetid: 7af52097-6d44-4785-9b9f-43b7a7d447d7
 author: mikeblome
 ms.author: mblome
-manager: wpickett
+manager: markl
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 11eb9701c900284ee8021f908263bc5f27ab8206
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 27f3d68d28b8d1799c52fcf83c6a00dc5f81f48a
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55917345"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72448918"
 ---
-# <a name="how-to-set-code-analysis-properties-for-cc-projects"></a>Filtrar Establecer las propiedades de análisis de código de proyectos de C/C++
-Puede configurar las reglas que usa la herramienta de análisis de código para analizar el código en cada configuración del proyecto. Además, puede dirigir el análisis de código para suprimir las advertencias de código generado y agregado al proyecto mediante una herramienta de terceros.
+# <a name="how-to-set-code-analysis-properties-for-cc-projects"></a>Cómo: Establecer propiedades de análisis de código para proyectos de C/C++
 
-## <a name="code-analysis-property-page"></a>Página de propiedades de análisis de código
- El **análisis de código** página de propiedades contiene todas las opciones de configuración de análisis de código para un proyecto. Para abrir la página de propiedades de análisis de código para un proyecto en **el Explorador de soluciones**, haga clic en el proyecto y, a continuación, haga clic en **propiedades**. A continuación, expanda **propiedades de configuración** y seleccione el **análisis de código** ficha.
+Puede configurar las reglas que utiliza la herramienta de análisis de código para analizar el código en cada configuración del proyecto. Además, puede dirigir el análisis de código para suprimir las advertencias del código generado y agregado al proyecto mediante una herramienta de terceros.
 
-## <a name="project-configuration-and-platform"></a>Plataforma y configuración del proyecto
- El **configuración** lista y **plataforma** lista le permite aplicar la configuración de análisis de código diferente para las combinaciones de configuración y plataforma de proyecto diferente. Por ejemplo, puede dirigir compilaciones de análisis de código para un conjunto de reglas se aplican a su proyecto para la depuración y compila un conjunto diferente de versión.
+## <a name="code-analysis-property-page"></a>Página de propiedades análisis de código
 
-## <a name="enabling-code-analysis"></a>Habilitar análisis de código
- Puede decidir si desea habilitar el análisis de código para el proyecto seleccionando **Habilitar análisis de código para C ++ al compilar**. En combinación con la **configuración** lista, por ejemplo, podría decidir deshabilitar el análisis de código para las compilaciones de depuración y habilitar para la versión de las compilaciones.
+La página de propiedades **análisis de código** contiene todas las opciones de configuración de análisis de código para un proyecto de MSBuild. Para abrir la página de propiedades análisis de código de un proyecto de **Explorador de soluciones**, haga clic con el botón secundario en el proyecto y, a continuación, haga clic en **propiedades**. A continuación, expanda **propiedades de configuración** y seleccione la pestaña **análisis de código** .
 
- Si el proyecto contiene código administrado, puede decidir si desea habilitar o deshabilitar el análisis de código seleccionando **Habilitar análisis de código al compilar**.
+## <a name="project-configuration-and-platform"></a>Configuración y plataforma del proyecto
 
- Análisis de código está diseñado para ayudarle a mejorar la calidad del código y evitar errores habituales. Por lo tanto, considere detenidamente si desea deshabilitar el análisis de código. Es mejor deshabilitar conjuntos de reglas o reglas individuales que no desea que se aplican a su proyecto.
+La lista de **configuración** y la lista de **plataformas** de la parte superior de la ventana le permiten aplicar una configuración de análisis de código diferente a distintas combinaciones de plataforma y configuración de proyecto. Por ejemplo, puede dirigir el análisis de código para aplicar un conjunto de reglas al proyecto para las compilaciones de depuración y un conjunto diferente para las compilaciones de versión.
 
-## <a name="generated-code"></a>Código generado
- Con frecuencia, los desarrolladores usar las herramientas para ayudar a desarrollar aplicaciones rápidamente. Estas herramientas pueden generar código que se agrega al proyecto. Es posible que desea ver las infracciones de regla que detecta el análisis de código en el código generado. Sin embargo, es posible que no desee verlas si no desea mantener el código.
+## <a name="enabling-code-analysis"></a>Habilitar el análisis de código
 
- El **Suprimir resultados del código generado** casilla de verificación en la **General** permite seleccionar si desea ver las advertencias de análisis de código desde el código administrado generado por una herramienta de terceros de la página de propiedades .
+Puede habilitar el análisis de código para el proyecto; para ello, alterne las opciones **Habilitar análisis de código de Microsoft** y **habilitar Clang** y, después, configure si se ejecuta en la compilación seleccionando **Habilitar análisis de código al compilar**. En combinación con la lista de **configuración** , puede, por ejemplo, decidir deshabilitar el análisis de código para las compilaciones de depuración y habilitarlo para las compilaciones de versión.
 
-## <a name="rule-sets"></a>Conjuntos de reglas
- Si el proyecto contiene código administrado, puede seleccionar las reglas para aplicar en un análisis de código seleccionando un conjunto de reglas de la **ejecutar este conjunto de reglas** lista.
+El análisis de código está diseñado para ayudarle a mejorar la calidad del código y evitar errores comunes. Por lo tanto, considere detenidamente si desea deshabilitar el análisis de código. Normalmente es mejor deshabilitar conjuntos de reglas, reglas individuales o comprobaciones individuales que no desea que se apliquen al proyecto.
+
+## <a name="cmake-configuration"></a>Configuración de CMake
+
+En los proyectos de CMake, cambie el valor de las claves `enableMicrosoftCodeAnalysis` y `enableClangTidyCodeAnalysis` de `CMakeSettings.json` para habilitar o deshabilitar el análisis de código. Consulte [uso de Clang en Visual Studio](../code-quality/clang-tidy.md) para obtener más información.
 
 ## <a name="see-also"></a>Vea también
 
 - [Analizar la calidad del código administrado](../code-quality/code-analysis-for-managed-code-overview.md)
 - [Análisis de código para advertencias de C/C++](../code-quality/code-analysis-for-c-cpp-warnings.md)
+- [Conjuntos de reglas C++ para el código](../code-quality/using-rule-sets-to-specify-the-cpp-rules-to-run.md)
+- [Usar Clang-ordenado](../code-quality/clang-tidy.md)

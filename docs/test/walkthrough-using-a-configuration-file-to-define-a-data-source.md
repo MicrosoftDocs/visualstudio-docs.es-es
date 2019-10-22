@@ -1,5 +1,5 @@
 ---
-title: 'Tutorial: Uso de un archivo de configuración para definir un origen de datos'
+title: Uso del archivo de configuración para definir el origen de datos
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cfad5fbf5e6a4105926fe0293093749b4cecaf57
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: d6bfb122649f688ece90e981c419325564776215
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55935438"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66746763"
 ---
 # <a name="walkthrough-using-a-configuration-file-to-define-a-data-source"></a>Tutorial: Uso de un archivo de configuración para definir un origen de datos
 
@@ -52,7 +52,7 @@ Para completar este tutorial, necesita lo siguiente:
 
 3. Seleccione la plantilla **Archivo de configuración de aplicaciones** y haga clic en **Agregar**.
 
-##  <a name="define-a-custom-configuration-section"></a>Definir una sección de configuración personalizada
+## <a name="define-a-custom-configuration-section"></a>Definir una sección de configuración personalizada
 
 Examine el archivo *app.config*. Debe contener al menos la declaración XML y un elemento raíz.
 
@@ -62,16 +62,16 @@ Examine el archivo *app.config*. Debe contener al menos la declaración XML y un
 
 2. En el elemento **configSections**, cree un elemento **section**.
 
-3. En el elemento **section**, agregue un atributo denominado `name` y asígnele un valor igual a `microsoft.visualstudio.testtools`. Agregue otro atributo denominado `type` y asígnele un valor de `Microsoft.VisualStudio.TestTools.UnitTesting.TestConfigurationSection, Microsoft.VisualStudio.QualityTools.UnitTestFramework, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a`.
+3. En el elemento **section**, agregue un atributo denominado `name` y asígnele un valor igual a `microsoft.visualstudio.testtools`. Agregue otro atributo denominado `type` y asígnele un valor de `Microsoft.VisualStudio.TestTools.UnitTesting.TestConfigurationSection, Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions`.
 
 El elemento **section** debe ser similar a este:
 
 ```xml
-<section name="microsoft.visualstudio.testtools" type="Microsoft.VisualStudio.TestTools.UnitTesting.TestConfigurationSection, Microsoft.VisualStudio.QualityTools.UnitTestFramework, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a"/>
+<section name="microsoft.visualstudio.testtools" type="Microsoft.VisualStudio.TestTools.UnitTesting.TestConfigurationSection, Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions" />
 ```
 
 > [!NOTE]
-> El nombre del ensamblado debe coincidir con la compilación de Microsoft Visual Studio .NET Framework que está usando. Establezca la versión en 9.0.0.0 si usa Visual Studio .NET Framework 3.5. Si usa Visual Studio .NET Framework 2.0, establezca la versión en 8.0.0.0.
+> El nombre del ensamblado debe coincidir con la versión que se esté usando.
 
 ## <a name="define-connection-strings"></a>Definir cadenas de conexión
 

@@ -18,11 +18,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 79d417bcee4bb6e058ea90028a29a87a3527aa5c
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56717720"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62929456"
 ---
 # <a name="visualizer-api-reference"></a>Referencia de la API del visualizador
 
@@ -42,6 +42,6 @@ Las API del visualizador se proporcionan a usuarios que desean escribir un visua
 
 ## <a name="see-also"></a>Vea también
 
-- [Tutorial: Escribir un visualizador en C#](../debugger/walkthrough-writing-a-visualizer-in-csharp.md)
-- [Cómo: Escribir un visualizador](/visualstudio/debugger/create-custom-visualizers-of-data)
+- [Tutorial: Escritura de un visualizador en C#](../debugger/walkthrough-writing-a-visualizer-in-csharp.md)
+- [Cómo: Escritura de un visualizador](/visualstudio/debugger/create-custom-visualizers-of-data)
 - [Create Custom Visualizers](../debugger/create-custom-visualizers-of-data.md) (Crear visualizadores personalizados)

@@ -12,11 +12,11 @@ caps.latest.revision: 19
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 069c396ce4cb75c9153082fdbb352b2ba713c8a8
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60052591"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68156006"
 ---
 # <a name="test-area-2-get-from-source-control"></a>Área de prueba 2: Obtención desde el control de código fuente
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -46,7 +46,7 @@ Esta área de prueba trata los casos de prueba para recuperar los elementos del 
   
 ## <a name="test-cases"></a>Casos de prueba  
   
-|Acción|Pasos de prueba|Resultados esperados para comprobar|  
+|.|Pasos de prueba|Resultados esperados para comprobar|  
 |------------|----------------|--------------------------------|  
 |Obtener la versión más reciente de un archivo que no existe localmente|1.  Cree un proyecto.<br />2.  Agregar un elemento al proyecto.<br />3.  Coloque el proyecto bajo control de código fuente.<br />4.  Elimine la copia local del elemento.<br />5.  Obtener la versión más reciente del elemento (menú contextual, **obtener última versión**).|Archivo de elemento se recupera localmente.|  
 |Obtener un archivo que no existe localmente|1.  Cree un proyecto.<br />2.  Agregar un elemento al proyecto.<br />3.  Coloque el proyecto bajo control de código fuente.<br />4.  Elimine la copia local del elemento.<br />5.  Obtener el elemento (**archivo**, **Control de código fuente**, **obtener** \<elemento >).|Archivo de elemento se recupera localmente.|  

@@ -12,11 +12,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 4a8d4726ba91be6df455d16907a0cf122cc1effa
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58989379"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68192322"
 ---
 # <a name="process-tab-window-properties-dialog-box"></a>Pestaña Proceso (Cuadro de diálogo Propiedades de la ventana)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,7 +25,7 @@ Use la **proceso** ficha para identificar el proceso de la ventana seleccionada.
   
  Las siguientes opciones están disponibles en el **proceso** pestaña:  
   
-|Entrada|Descripción|  
+|Entrada|DESCRIPCIÓN|  
 |-----------|-----------------|  
 |**Identificador del proceso**|El identificador de proceso que posee el subproceso que creó esta ventana. Elija este valor para ver las propiedades de este proceso.|  
 |**Identificador de subproceso**|El identificador del subproceso que creó esta ventana. Elija este valor para ver las propiedades de este subproceso.|

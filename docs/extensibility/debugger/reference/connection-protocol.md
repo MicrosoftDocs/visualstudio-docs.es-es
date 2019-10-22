@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - CONNECTION_PROTOCOL enumeration
 ms.assetid: 99df5865-8b36-486d-9f4c-d10ae2bc688a
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2a7d8d056fb816a428d78a8e13455cf6ccdd8a90
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 3f52ef7e723b583d593f6f0d4fc18f5f6909b131
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56705838"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66346533"
 ---
 # <a name="connectionprotocol"></a>CONNECTION_PROTOCOL
 Indica el protocolo utilizado para la comunicación entre un servidor de depuración y el paquete de depuración (DE).
@@ -48,20 +51,27 @@ public enum CONNECTION_PROTOCOL {
 };
 ```
 
-#### <a name="parameters"></a>Parámetros
-CONNECTION_NONE sin conexión se realizó en un servidor.
+## <a name="fields"></a>Campos
+`CONNECTION_NONE`\
+Se ha realizado ninguna conexión a un servidor.
 
-Se ha realizado CONNECTION_UNKNOWN una conexión, pero es de tipo desconocido.
+`CONNECTION_UNKNOWN`\
+Se ha realizado una conexión, pero es de tipo desconocido.
 
-Conexión CONNECTION_LOCAL es un servidor local.
+`CONNECTION_LOCAL`\
+Conexión es a un servidor local.
 
-CONNECTION_PIPE conexión es a través de una canalización con nombre.
+`CONNECTION_PIPE`\
+La conexión es a través de una canalización con nombre.
 
-CONNECTION_TCPIP conexión usa TCP/IP.
+`CONNECTION_TCPIP`\
+La conexión usa TCP/IP.
 
-Conexión CONNECTION_HTTP usa HTTP (a través de un servidor Web).
+`CONNECTION_HTTP`\
+Conexión usa HTTP (a través de un servidor Web).
 
-CONNECTION_OTHER se ha establecido algún otro tipo de conexión (este valor no se utiliza actualmente).
+`CONNECTION_OTHER`\
+Se ha establecido algún otro tipo de conexión (este valor no se utiliza actualmente).
 
 ## <a name="remarks"></a>Comentarios
 Estos valores se devuelven desde el [GetConnectionProtocol](../../../extensibility/debugger/reference/idebugcoreserver3-getconnectionprotocol.md) método.

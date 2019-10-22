@@ -7,17 +7,17 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugCustomViewer interface
 ms.assetid: 7aca27d3-c7b8-470f-b42c-d1e9d9115edd
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5c576de860183353831eb9cc33293ead11123c59
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 46561bbab71b12d924edec96650736c8b1576894
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56700164"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66328030"
 ---
 # <a name="idebugcustomviewer"></a>IDebugCustomViewer
 Esta interfaz permite que un evaluador de expresiones (EE) para mostrar el valor de una propiedad en el formato que sea necesario.

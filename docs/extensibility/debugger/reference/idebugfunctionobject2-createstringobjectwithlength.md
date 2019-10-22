@@ -6,17 +6,20 @@ helpviewer_keywords:
 - CreateStringObjectWithLength
 - IDebugFunctionObject2::CreateStringObjectWithLength
 ms.assetid: 1f43ec66-1615-4a4c-8b9d-e933f549f96d
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 02ee13b62a2238624f1c6d42c52bf67db2ceaae4
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: ce0fdafc6835fdccc87638e17d3bbd01a1415abb
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56710414"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66313508"
 ---
 # <a name="idebugfunctionobject2createstringobjectwithlength"></a>IDebugFunctionObject2::CreateStringObjectWithLength
 Crea un objeto de cadena que tiene la longitud especificada.
@@ -39,18 +42,15 @@ int CreateStringObjectWithLength (
 );
 ```
 
-#### <a name="parameters"></a>Parámetros
- `pcstrString`
+## <a name="parameters"></a>Parámetros
+`pcstrString`\
+[in] El valor de cadena para el objeto de cadena.
 
- [in] El valor de cadena para el objeto de cadena.
+`uiLength`\
+[in] La longitud de la cadena en bytes.
 
- `uiLength`
-
- [in] La longitud de la cadena en bytes.
-
- `ppObject`
-
- [out] Devuelve un [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) objeto que representa el objeto de cadena recién creado.
+`ppObject`\
+[out] Devuelve un [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) objeto que representa el objeto de cadena recién creado.
 
 ## <a name="return-value"></a>Valor devuelto
  Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.

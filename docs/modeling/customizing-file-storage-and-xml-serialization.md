@@ -6,44 +6,44 @@ f1_keywords:
 - vs.dsltools.dsldesigner.xmlbehavior
 helpviewer_keywords:
 - Domain-Specific Language, serialization
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3956baeee617f82b142d1c1bfa54539d56446077
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 51173fcf2e8f6785b61bfd348178a59b5fb933dc
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60101878"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72654017"
 ---
 # <a name="customize-file-storage-and-xml-serialization"></a>Personalizar el almacenamiento de archivos y la serialización XML
 
-Cuando el usuario guarda una instancia, o *modelo*, de un lenguaje específico de dominio (DSL) en Visual Studio, se crea o actualiza un archivo XML. Puede volver a cargar el archivo para volver a crear el modelo en el Store.
+Cuando el usuario guarda una instancia, o *modelo*, de un lenguaje específico de dominio (DSL) en Visual Studio, se crea o se actualiza un archivo XML. Se puede volver a cargar el archivo para volver a crear el modelo en el almacén.
 
-Puede personalizar el esquema de serialización mediante el ajuste de la configuración en **comportamiento de serialización Xml** en el Explorador de DSL. Hay un nodo bajo **comportamiento de serialización Xml** para cada clase de dominio, la propiedad y la relación. Las relaciones se encuentran en sus clases de origen. También existen los nodos correspondientes a la forma, conector y las clases del diagrama.
+Puede personalizar el esquema de serialización ajustando los valores de **comportamiento de serialización XML** en el explorador de DSL. Hay un nodo en el **comportamiento de serialización XML** para cada clase de dominio, propiedad y relación. Las relaciones se encuentran en sus clases de origen. También hay nodos correspondientes a las clases de forma, conector y diagrama.
 
-También puede escribir código de programa para la personalización más avanzada.
+También puede escribir código de programa para una personalización más avanzada.
 
 > [!NOTE]
-> Si desea guardar el modelo en un formato determinado, pero no es necesario volver a cargarlo desde ese formulario, considere el uso de plantillas de texto para generar la salida del modelo, en lugar de un esquema de serialización personalizada. Para obtener más información, consulte [generar código desde un lenguaje específico de dominio](../modeling/generating-code-from-a-domain-specific-language.md).
+> Si desea guardar el modelo en un formato determinado, pero no necesita volver a cargarlo desde ese formulario, considere la posibilidad de usar plantillas de texto para generar la salida del modelo, en lugar de un esquema de serialización personalizado. Para obtener más información, vea [generar código a partir de un lenguaje específico de dominio](../modeling/generating-code-from-a-domain-specific-language.md).
 
-## <a name="model-and-diagram-files"></a>Archivos de diagrama y modelo
+## <a name="model-and-diagram-files"></a>Archivos de modelos y diagramas
 
 Normalmente, cada modelo se guarda en dos archivos:
 
-- El archivo de modelo tiene un nombre como **Model1.mydsl**. Almacena los elementos del modelo y las relaciones y sus propiedades. La extensión de archivo como **.mydsl** viene determinada por la **FileExtension** propiedad de la **Editor** nodo en la definición de DSL.
+- El archivo de modelo tiene un nombre como **Model1. midsl**. Almacena los elementos del modelo y las relaciones y sus propiedades. La extensión de archivo como **. midsl** viene determinada por la propiedad **FileExtension** del nodo **Editor** en la definición de DSL.
 
-- El archivo de diagrama tiene un nombre como **Model1.mydsl.diagram**. Almacena las formas, conectores y sus posiciones, colores, espesores de línea y otros detalles de la apariencia del diagrama. Si el usuario elimina un **. Diagram** archivo, no se pierde la información esencial en el modelo. Se pierde solo el diseño del diagrama. Cuando se abre el archivo de modelo, de forma predeterminada un conjunto de formas y conectores que se va a crear.
+- El archivo de diagrama tiene un nombre como **Model1. midsl. diagram**. Almacena las formas, conectores y sus posiciones, colores, grosores de línea y otros detalles de la apariencia del diagrama. Si el usuario elimina un archivo **. diagram** , no se pierde la información esencial del modelo. Solo se pierde el diseño del diagrama. Cuando se abra el archivo de modelo, se creará un conjunto predeterminado de formas y conectores.
 
-### <a name="to-change-the-file-extension-of-a-dsl"></a>Para cambiar la extensión de archivo de un DSL
+### <a name="to-change-the-file-extension-of-a-dsl"></a>Para cambiar la extensión de un archivo DSL
 
-1. Abra la definición de DSL. En el Explorador de DSL, haga clic en el nodo del Editor.
+1. Abra la definición de DSL. En el explorador de DSL, haga clic en el nodo editor.
 
-2. En la ventana Propiedades, edite el **FileExtension** propiedad. No incluya la inicial "." de la extensión de nombre de archivo.
+2. En el ventana Propiedades, edite la propiedad **FileExtension** . No incluya el "." inicial de la extensión de nombre de archivo.
 
-3. En el Explorador de soluciones, cambie el nombre de los archivos de plantilla de dos elementos en **DslPackage\ProjectItemTemplates**. Estos archivos tienen nombres que siguen este formato:
+3. En Explorador de soluciones, cambie el nombre de los dos archivos de plantilla de elemento en **DslPackage\ProjectItemTemplates**. Estos archivos tienen nombres que siguen este formato:
 
      `myDsl.diagram`
 
@@ -51,15 +51,15 @@ Normalmente, cada modelo se guarda en dos archivos:
 
 ## <a name="the-default-serialization-scheme"></a>El esquema de serialización predeterminado
 
-Para crear un ejemplo de este tema, se utilizó la siguiente definición de DSL.
+Para crear un ejemplo de este tema, se usó la siguiente definición de DSL.
 
-![Diagrama de definición de DSL &#45; modelo de árbol genealógico](../modeling/media/familyt_person.png)
+![Modelo de árbol &#45; de familia de diagramas de definición de DSL](../modeling/media/familyt_person.png)
 
-Este DSL se usó para crear un modelo que tiene el aspecto siguiente en la pantalla.
+Este DSL se usó para crear un modelo que tenga la apariencia siguiente en la pantalla.
 
 ![Diagrama de árbol genealógico, cuadro de herramientas y explorador](../modeling/media/familyt_instance.png)
 
-Este modelo se ha guardado y, a continuación, vuelva a abrir en el editor de texto XML:
+Este modelo se guardó y se volvió a abrir en el editor de texto XML:
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -77,132 +77,132 @@ Este modelo se ha guardado y, a continuación, vuelva a abrir en el editor de te
 </familyTreeModel>
 ```
 
-Tenga en cuenta los siguientes aspectos sobre el modelo serializado:
+Tenga en cuenta los siguientes puntos sobre el modelo serializado:
 
-- Cada nodo XML tiene un nombre que es el mismo que un nombre de clase de dominio, salvo que la primera letra es minúscula. Por ejemplo, `familyTreeModel` y `person`.
+- Cada nodo XML tiene un nombre que es igual que el nombre de una clase de dominio, excepto en que la letra inicial está en minúsculas. Por ejemplo, `familyTreeModel` y `person`.
 
-- Propiedades de dominio como el nombre y el año de nacimiento se serializan como atributos en los nodos XML. Nuevamente, el carácter inicial del nombre de propiedad se convierte a minúsculas.
+- Las propiedades de dominio como Name y BirthYear se serializan como atributos en los nodos XML. De nuevo, el carácter inicial del nombre de la propiedad se convierte a minúsculas.
 
-- Cada relación se serializa como un nodo XML anidado en el extremo de origen de la relación. El nodo tiene el mismo nombre que la propiedad de rol de origen, pero con un carácter en minúscula inicial.
+- Cada relación se serializa como un nodo XML anidado dentro del extremo de origen de la relación. El nodo tiene el mismo nombre que la propiedad de rol de origen, pero con un carácter inicial en minúscula.
 
-     Por ejemplo, en la definición de DSL, un rol que se denomina **personas** con origen en el **FamilyTree** clase.  En el XML, se representa mediante el nodo denominado `people` anidado dentro de la `familyTreeModel` nodo.
+     Por ejemplo, en la definición de DSL, un rol denominado **People** se encuentra en la clase **familytree** .  En el XML, se representa mediante el nodo denominado `people` anidado dentro del nodo de `familyTreeModel`.
 
-- El extremo de destino de cada relación de incrustación se serializa como un nodo anidado en la relación. Por ejemplo, el `people` nodo contiene varias `person` nodos.
+- El extremo de destino de cada relación de incrustación se serializa como un nodo anidado en la relación. Por ejemplo, el nodo `people` contiene varios nodos `person`.
 
 - El extremo de destino de cada relación de referencia se serializa como un *moniker*, que codifica una referencia al elemento de destino.
 
-     Por ejemplo, en un `person` nodo, puede haber un `children` relación. Este nodo contiene los monikers, como:
+     Por ejemplo, en un nodo de `person`, puede haber una relación de `children`. Este nodo contiene monikers como:
 
     ```xml
     <personMoniker name="/f817b728-e920-458e-bb99-98edc469d78f/Elizabeth I" />
     ```
 
-## <a name="understand-monikers"></a>Comprender los Monikers
+## <a name="understand-monikers"></a>Descripción de los monikers
 
-Monikers se usan para representar referencias cruzadas entre las distintas partes de los archivos de modelo y el diagrama. También se usan en el `.diagram` que haga referencia a nodos en el archivo de modelo. Hay dos formas de moniker:
+Los monikers se utilizan para representar referencias cruzadas entre diferentes partes de los archivos de diagrama y de modelo. También se usan en el archivo de `.diagram` para hacer referencia a los nodos del archivo de modelo. Hay dos formas de moniker:
 
-- *Monikers ID* entrecomillar el GUID del elemento de destino. Por ejemplo:
+- El *identificador de monikers* es el GUID del elemento de destino. Por ejemplo:
 
     ```xml
     <personShapeMoniker Id="f79734c0-3da1-4d72-9514-848fa9e75157" />
     ```
 
-- *Calificado monikers claves* identificar el elemento de destino por el valor de una propiedad de dominio designada denominada clave de moniker. El moniker del elemento de destino viene precedido por el moniker de su elemento primario en el árbol de relaciones de incrustación.
+- Los *monikers de clave calificados* identifican el elemento de destino por el valor de una propiedad de dominio designada denominada clave de moniker. El moniker del elemento de destino va precedido por el moniker de su elemento primario en el árbol de relaciones de incrustación.
 
-     Los ejemplos siguientes se realizan desde un DSL en el que existe es una clase de dominio llamada Album, que tiene una relación de incrustación a un dominio con nombre de canción de la clase:
+     Los ejemplos siguientes se toman de un DSL en el que hay una clase de dominio denominada album, que tiene una relación de incrustación con una clase de dominio denominada Song:
 
     ```xml
     <albumMoniker title="/My Favorites/Jazz after Teatime" />
     <songMoniker title="/My Favorites/Jazz after Teatime/Hot tea" />
     ```
 
-     Monikers de claves completos que se usará si la clase de destino tiene una propiedad de dominio para el que la opción **es la clave de Moniker** está establecido en `true` en **comportamiento de serialización Xml**. En el ejemplo, se establece esta opción para las propiedades de dominio denominadas "Title" en las clases de dominio "Álbum" y "Canción".
+     Los monikers de clave calificados se usarán si la clase de destino tiene una propiedad de dominio para la que la opción **es la clave de moniker** establecida en `true` en el **comportamiento de serialización XML**. En el ejemplo, esta opción se establece para las propiedades de dominio denominadas "title" en las clases de dominio "album" y "Song".
 
-Monikers de clave completos son fáciles de leer que monikers de identificador. Si piensa que el XML de los archivos de modelo para ser leídos por personas, considere el uso de monikers de claves completos. Sin embargo, es posible que el usuario puede establecer más de un elemento a tener la misma clave de moniker. Claves duplicadas podrían provocar que el archivo no volver a cargar correctamente. Por lo tanto, si define una clase de dominio que se hace referencia mediante monikers de clave completos, debe considerar formas de evitar que el usuario al guardar un archivo con monikers duplicados.
+Los monikers de clave calificados son más fáciles de leer que los de ID. Si desea que los usuarios lean el XML de los archivos de modelo, considere la posibilidad de usar monikers de clave calificados. Sin embargo, el usuario puede establecer más de un elemento para que tenga la misma clave de moniker. Las claves duplicadas pueden provocar que el archivo no se recargue correctamente. Por lo tanto, si define una clase de dominio a la que se hace referencia mediante monikers de clave calificados, debe tener en cuenta las formas de evitar que el usuario guarde un archivo con monikers duplicados.
 
-### <a name="to-set-a-domain-class-to-be-referenced-by-id-monikers"></a>Para establecer una clase de dominio para hacer referencia a los monikers de Id.
+### <a name="to-set-a-domain-class-to-be-referenced-by-id-monikers"></a>Para establecer una clase de dominio a la que hagan referencia los monikers de identificador
 
-1. Asegúrese de que **es la clave de Moniker** es `false` para cada propiedad de dominio en la clase y sus clases base.
+1. Asegúrese de que la **clave de moniker** es `false` para cada propiedad de dominio de la clase y sus clases base.
 
-    1. En el Explorador de DSL, expanda **Behavior\Class datos de serialización de Xml\\\<la clase de dominio > \Element datos**.
+    1. En DSL Explorer, expanda **XML Serialization Behavior\Class data \\ \<the clase de dominio > datos \Element**.
 
-    2. Compruebe que **es la clave de Moniker** es `false` para cada propiedad de dominio.
+    2. Compruebe que la **clave de moniker** es `false` para cada propiedad de dominio.
 
-    3. Si la clase de dominio tiene una clase base, repita el procedimiento de esa clase.
+    3. Si la clase de dominio tiene una clase base, repita el procedimiento en esa clase.
 
-2. Establecer **serializar Id**  =  `true` para la clase de dominio.
+2. Establezca el **identificador de serialización**  =  `true` para la clase de dominio.
 
-     Esta propiedad se puede encontrar en **comportamiento de serialización Xml**.
+     Esta propiedad se puede encontrar en **comportamiento de serialización XML**.
 
-### <a name="to-set-a-domain-class-to-be-referenced-by-qualified-key-monikers"></a>Para establecer una clase de dominio para hacer referencia a los monikers de clave completos
+### <a name="to-set-a-domain-class-to-be-referenced-by-qualified-key-monikers"></a>Para establecer una clase de dominio a la que hagan referencia los monikers de clave calificados
 
-- Establecer **es la clave de Moniker** para una propiedad de dominio de una clase de dominio existente. El tipo de la propiedad debe ser `string`.
+- Set **es la clave de moniker** para una propiedad de dominio de una clase de dominio existente. El tipo de la propiedad se debe `string`.
 
-    1. En el Explorador de DSL, expanda **Behavior\Class datos de serialización de Xml\\\<la clase de dominio > \Element datos**y, a continuación, seleccione la propiedad de dominio.
+    1. En DSL Explorer, expanda **XML Serialization Behavior\Class data \\ \<the clase de dominio > \Element Data**y, a continuación, seleccione la propiedad domain.
 
-    2. En la ventana Propiedades, establezca **es la clave de Moniker** a `true`.
-
-- \- o -
-
-     Crear una nueva clase de dominio mediante la **la clase de dominio denominado** herramienta.
-
-     Esta herramienta crea una nueva clase que tiene una propiedad de dominio denominada Name. El **es el nombre del elemento** y **es la clave de Moniker** se inicializan las propiedades de esta propiedad de dominio en `true`.
+    2. En el ventana Propiedades, establezca la **clave de moniker** en `true`.
 
 - \- o -
 
-     Crear una relación de herencia de la clase de dominio a otra clase que tiene una propiedad de clave de moniker.
+     Cree una nueva clase de dominio mediante la herramienta de **clase de dominio con nombre** .
 
-### <a name="avoid-duplicate-monikers"></a>Evite los Monikers duplicados
+     Esta herramienta crea una nueva clase que tiene una propiedad de dominio denominada Name. El **nombre de elemento es** y las propiedades de **clave de moniker** de esta propiedad de dominio se inicializan en `true`.
 
-Si usa los monikers de clave completos, es posible que dos elementos de modelo de un usuario podrían tener el mismo valor en la propiedad de clave. Por ejemplo, si su DSL tiene una persona que tiene una propiedad de nombre de clase, el usuario puede establecer los nombres de dos elementos iguales. Aunque el modelo se pudo guardar en archivo, podría no volver a cargar correctamente.
+- \- o -
 
-Existen varios métodos que ayudan a evitar esta situación:
+     Cree una relación de herencia desde la clase de dominio a otra clase que tenga una propiedad de clave de moniker.
 
-- Establecer **es el nombre del elemento**  =  `true` para la propiedad de dominio de clave. Seleccione la propiedad de dominio en el diagrama de definición de DSL y, a continuación, establezca el valor en la ventana Propiedades.
+### <a name="avoid-duplicate-monikers"></a>Evitar monikers duplicados
 
-     Cuando el usuario crea una nueva instancia de la clase, este valor hace que la propiedad de dominio que se asigne automáticamente un valor diferente. El comportamiento predeterminado, agrega un número al final del nombre de clase. Esto no impide que el usuario cambia el nombre a un duplicado, pero resulta útil en el caso cuando el usuario no establece el valor antes de guardar el modelo.
+Si utiliza monikers de clave calificados, es posible que dos elementos del modelo de un usuario tengan el mismo valor en la propiedad de clave. Por ejemplo, si el DSL tiene una clase Person que tiene un nombre de propiedad, el usuario podría establecer los nombres de dos elementos en el mismo. Aunque el modelo se puede guardar en el archivo, no se volvería a cargar correctamente.
 
-- Habilitar la validación para el DSL. En el Explorador de DSL, seleccione Editor\Validation y establezca el **usa...**  propiedades a `true`.
+Hay varios métodos que ayudan a evitar esta situación:
 
-     Hay un método de validación generado automáticamente que se comprueba para las ambigüedades. El método está en el `Load` categoría de validación. Esto garantiza que el usuario se le avisará que podría no ser posible volver a abrir el archivo.
+- Set **es el nombre de elemento**  =  `true` para la propiedad de dominio Key. Seleccione la propiedad dominio en el diagrama de definición de DSL y, a continuación, establezca el valor en el ventana Propiedades.
 
-     Para obtener más información, consulte [validación en los lenguajes específicos de dominio](../modeling/validation-in-a-domain-specific-language.md).
+     Cuando el usuario crea una nueva instancia de la clase, este valor hace que se asigne automáticamente un valor diferente a la propiedad de dominio. El comportamiento predeterminado agrega un número al final del nombre de la clase. Esto no impide que el usuario cambie el nombre por un duplicado, pero lo ayuda en el caso de que el usuario no establezca el valor antes de guardar el modelo.
 
-### <a name="moniker-paths-and-qualifiers"></a>Las rutas de acceso de moniker y calificadores
+- Habilite la validación para DSL. En el explorador de DSL, seleccione Editor\Validation y establezca las propiedades **use...** en `true`.
 
-Un moniker de la clave completo termina con la clave de moniker y tiene como prefijo el moniker de su entidad primaria en el árbol de incrustación. Por ejemplo, si el moniker de un álbum es:
+     Hay un método de validación generado automáticamente que comprueba las ambigüedades. El método está en la categoría de validación `Load`. Esto garantiza que se advierte al usuario de que es posible que no sea posible volver a abrir el archivo.
+
+     Para obtener más información, vea [validación en un lenguaje específico de dominio](../modeling/validation-in-a-domain-specific-language.md).
+
+### <a name="moniker-paths-and-qualifiers"></a>Rutas de acceso y calificadores de moniker
+
+Un moniker de clave calificado finaliza con la clave de moniker y tiene como prefijo el moniker de su elemento primario en el árbol de incrustación. Por ejemplo, si el moniker de un álbum es:
 
 ```xml
 <albumMoniker title="/My Favorites/Jazz after Teatime" />
 ```
 
-A continuación, podría ser una de las canciones del álbum:
+Después, una de las canciones de ese álbum podría ser:
 
 ```xml
 <songMoniker title="/My Favorites/Jazz after Teatime/Hot tea" />
 ```
 
-Sin embargo, si álbumes se hace referencia al Id. en su lugar, a continuación, los monikers sería como sigue:
+Sin embargo, si en su lugar se hace referencia a los álbumes mediante el identificador, los monikers serían como sigue:
 
 ```xml
 <albumMoniker Id="77472c3a-9bf9-4085-976a-d97a4745237c" />
 <songMoniker title="/77472c3a-9bf9-4085-976a-d97a4745237c/Hot tea" />
 ```
 
-Tenga en cuenta que, dado un GUID es único, nunca viene precedida por el moniker de su elemento primario.
+Tenga en cuenta que, dado que un GUID es único, nunca se antepone por el moniker de su elemento primario.
 
-Si sabe que una propiedad concreta de dominio siempre tendrá un valor único dentro de un modelo, puede establecer **es el calificador de Moniker** a `true` para esa propiedad. Esto provocará que se usará como calificador, sin utilizar el moniker del elemento primario. Por ejemplo, si establece ambos **es el calificador de Moniker** y **es la clave de Moniker** para la propiedad de dominio de título de la clase de álbum, nombre o el identificador del modelo no se usa en los monikers de álbum y su incrustado elementos secundarios:
+Si sabe que una propiedad de dominio determinada siempre tendrá un valor único dentro de un modelo, puede establecer el **calificador de moniker** en `true` para esa propiedad. Esto hará que se use como calificador, sin utilizar el moniker del elemento primario. Por ejemplo, si establece both como **calificador de moniker** y **es la clave de moniker** para la propiedad de dominio title de la clase album, el nombre o el identificador del modelo no se utiliza en monikers para album y sus elementos secundarios incrustados:
 
 ```xml
 <albumMoniker name="Jazz after Teatime" />
 <songMoniker title="/Jazz after Teatime/Hot tea" />
 ```
 
-## <a name="customize-the-structure-of-the-xml"></a>Personalizar la estructura de XML
+## <a name="customize-the-structure-of-the-xml"></a>Personalizar la estructura del XML
 
-Para realizar las siguientes personalizaciones, expanda el **comportamiento de serialización Xml** nodo en el Explorador de DSL. En una clase de dominio, expanda el nodo de datos de elemento para ver la lista de propiedades y relaciones que se obtienen en esta clase. Seleccione una relación y ajuste las opciones en la ventana Propiedades.
+Para hacer las personalizaciones siguientes, expanda el nodo **comportamiento de serialización XML** en el explorador de DSL. En una clase de dominio, expanda el nodo datos de elemento para ver la lista de propiedades y relaciones que se encuentran en esta clase. Seleccione una relación y ajuste sus opciones en el ventana Propiedades.
 
-- Establecer **omite el elemento** en true para omitir el nodo de rol de origen, dejando solo en la lista de elementos de destino. No debe establecer esta opción si no hay más de una relación entre las clases de origen y de destino.
+- Establezca el **elemento omitir** en true para omitir el nodo de rol de origen y no solo la lista de elementos de destino. No debe establecer esta opción si hay más de una relación entre las clases de origen y de destino.
 
     ```xml
     <familyTreeModel ...>
@@ -214,7 +214,7 @@ Para realizar las siguientes personalizaciones, expanda el **comportamiento de s
     </familyTreeModel>
     ```
 
-- Establecer **usar el formulario completo** para incrustar los nodos de destino en los nodos que representan las instancias de relación. Esta opción se establece automáticamente al agregar las propiedades de dominio a una relación de dominio.
+- Establezca **usar formulario completo** para insertar los nodos de destino en los nodos que representan las instancias de la relación. Esta opción se establece automáticamente cuando se agregan propiedades de dominio a una relación de dominio.
 
     ```xml
     <familyTreeModel ...>
@@ -230,7 +230,7 @@ Para realizar las siguientes personalizaciones, expanda el **comportamiento de s
     </familyTreeModel>
     ```
 
-- Establecer **representación** = **elemento** tener una propiedad de dominio que se guarda como un elemento en lugar de como un valor de atributo.
+- Establezca el**elemento** de  =  de **representación** para tener una propiedad de dominio guardada como un elemento en lugar de como un valor de atributo.
 
     ```xml
     <person name="Elizabeth I" birthYear="1533">
@@ -238,73 +238,73 @@ Para realizar las siguientes personalizaciones, expanda el **comportamiento de s
     </person>
     ```
 
-- Para cambiar el orden en que se serializan los atributos y relaciones, haga clic en un elemento bajo el elemento de datos y usar el **Subir** o **Bajar** comandos de menú.
+- Para cambiar el orden en el que se serializan los atributos y las relaciones, haga clic con el botón secundario en un elemento bajo datos de elemento y use los comandos de menú **subir** o **bajar** .
 
-## <a name="major-customization-using-program-code"></a>Principal personalización mediante código de programa
+## <a name="major-customization-using-program-code"></a>Personalización principal con código de programa
 
 Puede reemplazar partes o todos los algoritmos de serialización.
 
-Se recomienda que revise atentamente el código en **Dsl\Generated Code\Serializer.cs** y **SerializationHelper.cs**.
+Se recomienda que estudie el código de **Dsl\Generated Code\Serializer.CS** y **SerializationHelper.CS**.
 
 ### <a name="to-customize-the-serialization-of-a-particular-class"></a>Para personalizar la serialización de una clase determinada
 
-1. Establecer **Is Custom** en el nodo de esa clase en **comportamiento de serialización Xml**.
+1. Set **es personalizado** en el nodo de esa clase en el **comportamiento de serialización XML**.
 
-2. Transformar todas las plantillas, compile la solución e investigar los errores de compilación resultante. Comentarios cerca de cada error explican qué código debe proporcionar.
+2. Transformar todas las plantillas, compilar la solución e investigar los errores de compilación resultantes. Los comentarios cercanos a cada error explican qué código debe proporcionar.
 
-### <a name="to-provide-your-own-serialization-for-the-whole-model"></a>Para proporcionar su propia serialización para el modelo completo
+### <a name="to-provide-your-own-serialization-for-the-whole-model"></a>Para proporcionar su propia serialización para todo el modelo
 
-1. Invalidar métodos en Dsl\GeneratedCode\SerializationHelper.cs
+1. Métodos de invalidación en Dsl\GeneratedCode\SerializationHelper.cs
 
-## <a name="options-in-xml-serialization-behavior"></a>Opciones de comportamiento de serialización Xml
+## <a name="options-in-xml-serialization-behavior"></a>Opciones en el comportamiento de serialización XML
 
-En el Explorador de DSL, el nodo de comportamiento de serialización Xml contiene un nodo secundario para cada clase de dominio, relación, forma, conector y clase de diagrama. En cada uno de esos nodos es una lista de propiedades y relaciones con origen en ese elemento. Las relaciones se representan en sí mismas y en sus clases de origen.
+En DSL Explorer, el nodo comportamiento de serialización XML contiene un nodo secundario para cada clase de dominio, relación, forma, conector y clase de diagrama. En cada uno de esos nodos hay una lista de propiedades y relaciones cuyo origen se encuentra en ese elemento. Las relaciones se representan en su propio derecho y en las clases de origen.
 
-En la tabla siguiente resume las opciones que se pueden establecer en esta sección de la definición de DSL. En cada caso, seleccione un elemento en el Explorador de DSL y establezca las opciones en la ventana Propiedades.
+En la tabla siguiente se resumen las opciones que se pueden establecer en esta sección de la definición de DSL. En cada caso, seleccione un elemento en DSL Explorer y establezca las opciones en el ventana Propiedades.
 
-### <a name="xml-class-data"></a>Datos XML (clase)
+### <a name="xml-class-data"></a>Datos de clase XML
 
-Estos elementos se encuentran en el Explorador de DSL en **Behavior\Class datos de serialización de Xml**.
-
-|||
-|-|-|
-|Propiedad|Descripción|
-|Tiene el esquema de elemento personalizado|Si es True, indica que la clase de dominio tiene un esquema de elemento personalizado|
-|Es personalizado|Establezca esta opción en **True** si desea escribir su propio código de serialización y deserialización para esta clase de dominio.<br /><br /> Compile la solución e investigue los errores para conocer instrucciones detalladas.|
-|Clase de dominio|Clase de dominio al que se aplica este nodo de datos de clase. Sólo lectura.|
-|Nombre del elemento|Nombre de nodo de XML para los elementos de esta clase. El valor predeterminado es una versión en minúsculas del nombre de clase de dominio.|
-|Nombre del atributo de moniker|Nombre del atributo utilizado en los elementos del moniker para contener la referencia. Si está en blanco, se usa el nombre de la propiedad de clave o identificador.<br /><br /> En este ejemplo, es "name":  `<personMoniker name="/Mike Nash"/>`|
-|Nombre de elemento de moniker|Nombre del elemento xml utilizado para los monikers que hacen referencia a elementos de esta clase.<br /><br /> El valor predeterminado es una versión en minúsculas del nombre de clase lleva el sufijo "Moniker". Por ejemplo: `personMoniker`.|
-|Nombre de tipo de moniker|Nombre del tipo xsd generado para los monikers para los elementos de esta clase. Es el esquema XSD en **Dsl\Generated código\\\*Schema.xsd**|
-|Serializar Id.|Si es True, el GUID del elemento se incluye en el archivo. Esto debe ser true si no hay ninguna propiedad que está marcado como **es la clave de Moniker** y el DSL define las relaciones de referencia a esta clase.|
-|Nombre de tipo|Nombre del tipo xml generado en xsd a partir de la clase de dominio designada.|
-|Notas|Notas informales asociadas a este elemento|
-
-### <a name="xml-property-data"></a>Datos de la propiedad de XML
-
-Los nodos de propiedad de XML se encuentran en los nodos de la clase.
+Estos elementos se encuentran en el explorador de DSL, en **serialización XML Behavior\Class Data**.
 
 |||
 |-|-|
-|Propiedad|Descripción|
-|Propiedad de dominio|Propiedad a la que se aplican los datos de configuración de serialización xml. Sólo lectura.|
-|Es la clave de Moniker|Si es True, la propiedad se utiliza como clave para crear monikers que hacen referencia a las instancias de esta clase de dominio.|
-|Es el calificador de Moniker|Si es True, la propiedad se utiliza para crear el calificador en monikers. Si es false, y si no se cumple para esta clase de dominio SerializeId, monikers están calificados por el moniker del elemento primario en el árbol de incrustación.|
-|Representación|Si el atributo, la propiedad se serializa como un atributo xml; Si el elemento, es serializado como un elemento; Si omite, no es serializar.|
-|Nombre XML|Nombre usado para el atributo o elemento xml que representa la propiedad. De forma predeterminada, esto es una versión en minúsculas del nombre de propiedad del dominio.|
+|Propiedad.|Descripción|
+|Tiene un esquema de elemento personalizado|Si es true, indica que la clase de dominio tiene un esquema de elemento personalizado|
+|Personalizado|Establézcalo en **true** si desea escribir su propio código de serialización y deserialización para esta clase de dominio.<br /><br /> Compile la solución e investigue los errores para detectar instrucciones detalladas.|
+|Clase de dominio|Clase de dominio a la que se aplica este nodo de datos de clase. Sólo lectura.|
+|Nombre del elemento|Nombre del nodo XML para los elementos de esta clase. El valor predeterminado es una versión en minúsculas del nombre de la clase de dominio.|
+|Nombre del atributo de moniker|Nombre del atributo que se usa en los elementos de moniker para contener la referencia. Si está en blanco, se usa el nombre de la propiedad o el identificador de la clave.<br /><br /> En este ejemplo, es "Name": `<personMoniker name="/Mike Nash"/>`|
+|Nombre del elemento de moniker|Nombre del elemento XML utilizado para los monikers que hacen referencia a los elementos de esta clase.<br /><br /> El valor predeterminado es una versión en minúsculas del nombre de clase con el sufijo "moniker". Por ejemplo: `personMoniker`.|
+|Nombre de tipo de moniker|Nombre del tipo XSD generado para los monikers a los elementos de esta clase. El XSD está en **código Dsl\Generated \\ \*Schema. xsd**|
+|Serializar identificador|Si es true, el GUID del elemento se incluye en el archivo. Debe ser true si no hay ninguna propiedad marcada como clave de **moniker** y el DSL define las relaciones de referencia con esta clase.|
+|Nombre de tipo|Nombre del tipo XML generado en el XSD a partir de la clase de dominio designada.|
 |Notas|Notas informales asociadas a este elemento|
 
-### <a name="xml-role-data"></a>Datos de las funciones de XML
+### <a name="xml-property-data"></a>Datos de propiedad XML
 
-Nodos de datos de rol se encuentran en los nodos de la clase de origen.
+Los nodos de propiedad XML se encuentran en los nodos de clase.
 
-|Propiedad|Descripción|
+|||
 |-|-|
-|Tiene Moniker personalizado|Establézcalo en true si desea proporcionar su propio código para generar y resolver los monikers que atraviesan esta relación.<br /><br /> Para obtener instrucciones detalladas, compile la solución y, a continuación, haga doble clic en los mensajes de error.|
-|Relación de dominio|Especifica la relación para que estas opciones se aplican. Sólo lectura.|
-|Omite el elemento|Si es true, se omite el nodo XML que se corresponde con el rol de origen desde el esquema.<br /><br /> Si hay más de una relación entre las clases de origen y destino, este nodo de rol se distingue entre los vínculos que pertenecen a las dos relaciones. Por lo tanto, se recomienda no establezca esta opción en este caso.|
-|Nombre de elemento de rol|Especifica el nombre del elemento XML que se deriva de la función de origen. El valor predeterminado es el nombre de propiedad de rol.|
-|Usar el formulario completo|Si es true, cada elemento de destino o moniker se incluyen en un nodo XML que representa la relación. Esto se debe establecer en true si la relación tiene sus propias propiedades de dominio.|
+|Propiedad.|Descripción|
+|Propiedad de dominio|Propiedad a la que se aplican los datos de configuración de serialización XML. Sólo lectura.|
+|Clave de moniker|Si es true, la propiedad se utiliza como clave para crear monikers que hacen referencia a las instancias de esta clase de dominio.|
+|Calificador de moniker|Si es true, la propiedad se usa para crear el calificador en monikers. Si es false, y si SerializeId no es true para esta clase de dominio, el moniker del elemento primario en el árbol de incrustación calificará los monikers.|
+|Representaciones|Si es un atributo, la propiedad se serializa como un atributo XML; Si es un elemento, se serializa como un elemento; Si se omite, no se serializa.|
+|Nombre XML|Nombre usado para el atributo o elemento XML que representa la propiedad. De forma predeterminada, se trata de una versión en minúsculas del nombre de la propiedad de dominio.|
+|Notas|Notas informales asociadas a este elemento|
+
+### <a name="xml-role-data"></a>Datos de rol XML
+
+Los nodos de datos de rol se encuentran en los nodos de clase de origen.
+
+|Propiedad.|Descripción|
+|-|-|
+|Tiene un moniker personalizado|Establézcalo en true si desea proporcionar su propio código para generar y resolver monikers que atraviesan esta relación.<br /><br /> Para obtener instrucciones detalladas, compile la solución y, a continuación, haga doble clic en los mensajes de error.|
+|Relación de dominio|Especifica la relación a la que se aplican estas opciones. Sólo lectura.|
+|Omitir elemento|Si es true, el nodo XML que se corresponde con el rol de origen se omite en el esquema.<br /><br /> Si hay más de una relación entre las clases de origen y de destino, este nodo de rol distingue entre los vínculos que pertenecen a las dos relaciones. Por lo tanto, se recomienda que no establezca esta opción en este caso.|
+|Nombre del elemento role|Especifica el nombre del elemento XML que se deriva del rol de origen. El valor predeterminado es el nombre de la propiedad de rol.|
+|Usar formulario completo|Si es true, cada elemento o moniker de destino se incluye en un nodo XML que representa la relación. Debe establecerse en true si la relación tiene sus propias propiedades de dominio.|
 
 ## <a name="see-also"></a>Vea también
 

@@ -12,11 +12,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: a3825ad72c903b9e1f0d19d699e391666d39f876
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58155438"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62992304"
 ---
 # <a name="iactivescriptsitetraceinfo-interface"></a>IActiveScriptSiteTraceInfo (Interfaz)
 Proporciona un método para enviar información de seguimiento de la secuencia de comandos.  

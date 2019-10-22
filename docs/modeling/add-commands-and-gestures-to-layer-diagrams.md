@@ -5,42 +5,42 @@ ms.topic: conceptual
 helpviewer_keywords:
 - dependency diagrams, adding custom commands
 - dependency diagrams, adding custom gestures
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ce8bc44bf506cf315420aad4108832f7461f1c70
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 7392d6f131cc1658a04769e7e2a5fc58c76f522e
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60077880"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72652352"
 ---
 # <a name="add-commands-and-gestures-to-dependency-diagrams"></a>Agregar comandos y gestos a diagramas de dependencia
 
-Puede definir comandos del menú contextual y controladores de gestos en diagramas de dependencia en Visual Studio. Estas extensiones se pueden empaquetar en una extensión de integración de Visual Studio (VSIX) que luego puede distribuir a otros usuarios de Visual Studio.
+Puede definir los comandos del menú contextual y los controladores de gestos en los diagramas de dependencia de Visual Studio. Estas extensiones se pueden empaquetar en una extensión de integración de Visual Studio (VSIX) que luego puede distribuir a otros usuarios de Visual Studio.
 
-Si lo desea, puede definir varios controladores de comandos y gestos en el mismo proyecto de Visual Studio. También puede combinar varios proyectos de este tipo en un VSIX. Por ejemplo, podría definir un VSIX único que incluye comandos de capa y un lenguaje específico de dominio.
+Si lo desea, puede definir varios controladores de comandos y gestos en el mismo proyecto de Visual Studio. También puede combinar varios proyectos de este tipo en un VSIX. Por ejemplo, podría definir un VSIX único que incluya comandos de capa y un lenguaje específico de dominio.
 
 > [!NOTE]
-> También puede personalizar la validación de arquitectura, en la fuente de que los usuarios se compara código con diagramas de dependencia. La validación de arquitectura debe definirse en un proyecto de Visual Studio independiente. Puede agregarlo al mismo VSIX que otras extensiones. Para obtener más información, consulte [agregar validación de arquitectura personalizada a diagramas de dependencia](../modeling/add-custom-architecture-validation-to-layer-diagrams.md).
+> También puede personalizar la validación de arquitectura, en la que el código fuente de los usuarios se compara con los diagramas de dependencia. La validación de arquitectura debe definirse en un proyecto de Visual Studio independiente. Puede agregarlo al mismo VSIX que otras extensiones. Para obtener más información, vea [agregar validación de arquitectura personalizada a diagramas de dependencia](../modeling/add-custom-architecture-validation-to-layer-diagrams.md).
 
 ## <a name="requirements"></a>Requisitos
 
-Vea [Requisitos](../modeling/extend-layer-diagrams.md#prereqs).
+Vea [Requisitos](../modeling/extend-layer-diagrams.md#requirements).
 
 ## <a name="define-a-command-or-gesture-in-a-new-vsix"></a>Definir un comando o gesto en un nuevo VSIX
 
 El método más rápido para crear una extensión consiste en usar la plantilla de proyecto. Esto coloca el código y el manifiesto de VSIX en el mismo proyecto.
 
-1. Cree un nuevo **extensión de comando de diseñador capa** o **extensión de gesto de capa de diseñador** proyecto.
+1. Cree una nueva **extensión de comandos del diseñador de capas** o un proyecto de **extensión de gestos del diseñador de capas** .
 
    La plantilla crea un proyecto que contiene un pequeño ejemplo funcional.
 
-2. Para probar la extensión, presione **Ctrl**+**F5** o **F5**.
+2. Para probar la extensión, presione **Ctrl** +**F5** o **F5**.
 
-    Inicia una instancia experimental de Visual Studio. En este caso, cree un diagrama de dependencia. El comando o extensión de gesto debería funcionar en este diagrama.
+    Se inicia una instancia experimental de Visual Studio. En esta instancia, cree un diagrama de dependencia. El comando o extensión de gesto debería funcionar en este diagrama.
 
 3. Cierre la instancia experimental y modifique el código de muestra.
 
@@ -52,13 +52,13 @@ El método más rápido para crear una extensión consiste en usar la plantilla 
 
 ::: moniker range="vs-2017"
 
-5. Para instalar la extensión en la instancia principal de Visual Studio o en otro equipo, busque el *.vsix* de archivos en el *bin* directory. Cópielo en el equipo donde desea instalarlo y, a continuación, haga doble clic en él. Para desinstalarla, elija **extensiones y actualizaciones** en el **herramientas** menú.
+5. Para instalar la extensión en la instancia principal de Visual Studio o en otro equipo, busque el archivo *. vsix* en el directorio *bin* . Cópielo en el equipo donde desea instalarlo y, a continuación, haga doble clic en él. Para desinstalarlo, elija **extensiones y actualizaciones** en el menú **herramientas** .
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-5. Para instalar la extensión en la instancia principal de Visual Studio o en otro equipo, busque el *.vsix* de archivos en el *bin* directory. Cópielo en el equipo donde desea instalarlo y, a continuación, haga doble clic en él. Para desinstalarla, elija **administrar extensiones** en el **extensiones** menú.
+5. Para instalar la extensión en la instancia principal de Visual Studio o en otro equipo, busque el archivo *. vsix* en el directorio *bin* . Cópielo en el equipo donde desea instalarlo y, a continuación, haga doble clic en él. Para desinstalarlo, elija **administrar extensiones** en el menú **extensiones** .
 
 ::: moniker-end
 
@@ -71,9 +71,9 @@ Si desea crear un VSIX que contenga comandos, validadores de capas y otras exten
    > [!NOTE]
    > Puede definir más de una clase de controlador de comandos o de gestos en una biblioteca de clases, pero debe definir las clases de validación de capas en una biblioteca de clases independiente.
 
-2. Agregue o cree un proyecto de VSIX en la solución. Un proyecto de VSIX contiene un archivo denominado **source.extension.vsixmanifest**.
+2. Agregue o cree un proyecto VSIX en la solución. Un proyecto VSIX contiene un archivo denominado **source. Extension. vsixmanifest**.
 
-3. En **el Explorador de soluciones**, haga clic en el proyecto VSIX y elija **establecer como proyecto de inicio**.
+3. En **Explorador de soluciones**, haga clic con el botón derecho en el Proyecto VSIX y elija **establecer como proyecto de inicio**.
 
 4. En **source.extension.vsixmanifest**, en **Activos**, agregue el proyecto de controlador de comandos o de gestos como componente MEF.
 
@@ -85,7 +85,7 @@ Si desea crear un VSIX que contenga comandos, validadores de capas y otras exten
 
     4. Guarde el archivo.
 
-5. Vuelva al proyecto de controlador de comandos o gestos y agregue las siguientes referencias de proyecto:
+5. Vuelva al proyecto de controlador de comandos o de gestos y agregue las siguientes referencias de proyecto:
 
    |**Referencia**|**Qué permite hacer**|
    |-|-|
@@ -102,11 +102,11 @@ Si desea crear un VSIX que contenga comandos, validadores de capas y otras exten
 
      [Definir un controlador de gestos](#gesture)
 
-7. Para probar la característica, presione **Ctrl**+**F5** o **F5**.
+7. Para probar la característica, presione **Ctrl** +**F5** o **F5**.
 
-   Se abre una instancia experimental de Visual Studio. En este caso, cree o abra un diagrama de dependencia.
+   Se abre una instancia experimental de Visual Studio. En esta instancia, cree o abra un diagrama de dependencia.
 
-8. Para instalar VSIX en la instancia principal de Visual Studio o en otro equipo, busque el **.vsix** de archivos en el **bin** directorio del proyecto VSIX. Cópielo en el equipo donde desea instalar VSIX. Haga doble clic en el archivo VSIX en Explorador de archivos.
+8. Para instalar VSIX en la instancia principal de Visual Studio, o en otro equipo, busque el archivo **. vsix** en el directorio **bin** del Proyecto VSIX. Cópielo en el equipo donde desea instalar VSIX. Haga doble clic en el archivo VSIX en el explorador de archivos.
 
 ## <a name="command"></a> Definir un comando de menú
 
@@ -214,7 +214,7 @@ namespace MyLayerExtension // Change to your preference.
 
 ## <a name="gesture"></a> Definir un controlador de gestos
 
-Un controlador de gestos responde cuando el usuario arrastra elementos hasta el diagrama de dependencia, y cuando el usuario hace doble clic en cualquier lugar en el diagrama.
+Un controlador de gestos responde cuando el usuario arrastra elementos hasta el diagrama de dependencia y cuando el usuario hace doble clic en cualquier parte del diagrama.
 
 En el proyecto de VSIX existente de controlador de comandos o gestos, puede agregar un archivo de código que defina un controlador de gestos:
 
@@ -259,7 +259,7 @@ Observe los siguientes aspectos sobre los controladores de gestos:
     }
     ```
 
-- Ya se han definido los controladores para algunos tipos de elemento arrastrado. Por ejemplo, el usuario puede arrastrar elementos desde el Explorador de soluciones hasta un diagrama de dependencia. No puede definir un controlador de arrastre para estos tipos de elemento. En estos casos, no se invocarán los métodos `DragDrop` .
+- Ya se han definido los controladores para algunos tipos de elemento arrastrado. Por ejemplo, el usuario puede arrastrar elementos desde Explorador de soluciones hasta un diagrama de dependencia. No puede definir un controlador de arrastre para estos tipos de elemento. En estos casos, no se invocarán los métodos `DragDrop` .
 
 ## <a name="see-also"></a>Vea también
 

@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 31c099fac3abba543c177becc1fe375b43ce1dd2
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: b2f06778de19c16df9d6e43108ecf4daba539c06
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56604436"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62969893"
 ---
 # <a name="filter-report-views"></a>Filtrar las vistas de informe
 Puede aplicar filtros a los archivos de datos de generación de perfiles para limitar los datos que se muestran en las vistas de los informes de rendimiento y que se exportan a los archivos de informe. Puede limitar un informe a los datos entre valores de marcas de tiempo y puede limitar los datos a procesos y subprocesos concretos. Puede guardar los filtros en un archivo y después crear un filtro en un archivo de datos de generación de perfiles diferente importando el filtro guardado.
@@ -28,11 +28,11 @@ Puede aplicar filtros a los archivos de datos de generación de perfiles para li
 
 #### <a name="to-create-a-profiler-report-filter"></a>Para crear un filtro de informe de generador de perfiles
 
-1.  Si no se muestra la ventana del filtro de vista Informe de rendimiento, haga clic en **Mostrar filtro** en la barra de herramientas de la vista Informe de rendimiento.
+1. Si no se muestra la ventana del filtro de vista Informe de rendimiento, haga clic en **Mostrar filtro** en la barra de herramientas de la vista Informe de rendimiento.
 
      El filtro de vistas de informe de rendimiento es una tabla. Cada fila de la tabla representa una cláusula del filtro. Puede agregar tantas cláusulas como desee a un filtro.
 
-2.  Para cada cláusula que desee agregar a un filtro, seleccione o especifique los valores en los siguientes campos de una fila.
+2. Para cada cláusula que desee agregar a un filtro, seleccione o especifique los valores en los siguientes campos de una fila.
 
     |Campo|Descripción|
     |-----------|-----------------|
@@ -40,7 +40,6 @@ Puede aplicar filtros a los archivos de datos de generación de perfiles para li
     |**Campo**|Seleccione el campo que se va a utilizar en la cláusula de filtro de la lista de campos de datos.|
     |**Operator**|Seleccione el operador que especifica la relación que desea en la cláusula entre el campo y el valor.<br /><br /> =    Igual a<br /><br /> <>  No es igual a<br /><br /> <    Menor que<br /><br /> >    Mayor que<br /><br /> <=  Menor o igual que<br /><br /> >=  Mayor o igual que|
     |**Valor**|Seleccione o especifique el valor que desea buscar. Algunos campos enumeran los valores disponibles para el campo.|
-
 
 #### <a name="to-create-a-profiler-report-filter-from-the-marks-report-view"></a>Para crear un filtro de informe del generador de perfiles a partir de la vista de informe de marcas
 
@@ -62,33 +61,33 @@ Puede aplicar filtros a los archivos de datos de generación de perfiles para li
 
 #### <a name="to-load-an-existing-filter-from-a-file"></a>Para cargar un filtro existente de un archivo
 
-1.  En la barra de herramientas de la vista Informe de rendimiento, haga clic en **Importar filtro**.
+1. En la barra de herramientas de la vista Informe de rendimiento, haga clic en **Importar filtro**.
 
      Aparecerá el cuadro de diálogo **Cargar filtro**.
 
-2.  Especifique la ubicación y nombre de archivo para el archivo de filtro (.vspf) que se va a cargar.
+2. Especifique la ubicación y nombre de archivo para el archivo de filtro (.vspf) que se va a cargar.
 
 #### <a name="to-execute-a-filter"></a>Para ejecutar un filtro
 
--   En la barra de herramientas de la vista Informe de rendimiento, haga clic en **Ejecutar filtro**.
+- En la barra de herramientas de la vista Informe de rendimiento, haga clic en **Ejecutar filtro**.
 
 #### <a name="to-stop-a-filter-that-is-taking-too-long-to-execute"></a>Para detener un filtro que tarda demasiado tiempo en ejecutarse
 
--   En la barra de herramientas de la vista Informe de rendimiento, haga clic en **Detener filtro**.
+- En la barra de herramientas de la vista Informe de rendimiento, haga clic en **Detener filtro**.
 
 #### <a name="to-remove-a-filter-on-a-report-view"></a>Para quitar un filtro de una vista de informe
 
-1.  Elimine las filas de cláusulas del filtro de vista de informe de rendimiento.
+1. Elimine las filas de cláusulas del filtro de vista de informe de rendimiento.
 
-2.  En la barra de herramientas de la vista Informe de rendimiento, haga clic en **Ejecutar filtro**.
+2. En la barra de herramientas de la vista Informe de rendimiento, haga clic en **Ejecutar filtro**.
 
 #### <a name="to-save-a-filter-to-a-file"></a>Para guardar un filtro en un archivo
 
-1.  En la barra de herramientas de la vista Informe de rendimiento, haga clic en **Exportar filtro**.
+1. En la barra de herramientas de la vista Informe de rendimiento, haga clic en **Exportar filtro**.
 
      Aparecerá el cuadro de diálogo **Guardar filtro**.
 
-2.  Especifique la ubicación y nombre de archivo para el archivo de filtro (.vspf) que se va a guardar.
+2. Especifique la ubicación y nombre de archivo para el archivo de filtro (.vspf) que se va a guardar.
 
 ## <a name="see-also"></a>Vea también
 - [Personalizar las vistas de informes de las herramientas de rendimiento](../profiling/customizing-performance-tools-report-views.md)

@@ -10,12 +10,12 @@ ms.assetid: 1942245d-7a1d-4a11-b5e7-a3fe29f11c0b
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 0cd5c72f8f423ec8ace409cafa82a1e42c6eaf90
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 0f3d56ae02718f5dfdf373eeeb6aff774d11931e
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60112616"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63435952"
 ---
 # <a name="how-to-implement-undo-management"></a>Procedimiento Implementar la administración de deshacer
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -77,9 +77,9 @@ La interfaz principal que se usa para la administración de deshacer es <xref:Mi
    La `OleUndoManager` clase representa una instancia de la pila de deshacer única. Por lo tanto, hay un objeto de administrador de deshacer cada entidad de datos está realizando un seguimiento para deshacer o rehacer.  
   
 > [!NOTE]
->  Mientras que el objeto de administrador de deshacer es utilizado por el editor de texto, es un componente general que no tiene proporciona compatibilidad específica del editor de texto. Si desea admitir varios niveles de deshacer o rehacer, puede utilizar este objeto para hacerlo.  
+> Mientras que el objeto de administrador de deshacer es utilizado por el editor de texto, es un componente general que no tiene proporciona compatibilidad específica del editor de texto. Si desea admitir varios niveles de deshacer o rehacer, puede utilizar este objeto para hacerlo.  
   
 ## <a name="see-also"></a>Vea también  
  <xref:Microsoft.VisualStudio.TextManager.Interop.IVsChangeTrackingUndoManager>   
  <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLifetimeControlledObject>   
- [Cómo: Borrar la pila de deshacer](../extensibility/how-to-clear-the-undo-stack.md)
+ [Cómo: Borrar la pila de la fase de reversión](../extensibility/how-to-clear-the-undo-stack.md)

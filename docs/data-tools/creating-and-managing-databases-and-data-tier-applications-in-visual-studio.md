@@ -1,35 +1,35 @@
 ---
-title: Los proyectos de base de datos y los proyectos DAC
+title: Proyectos de base de datos y proyectos DAC
 ms.date: 11/21/2018
 ms.topic: conceptual
 helpviewer_keywords:
 - databases, managing change
 ms.assetid: 40b51f5a-d52c-44ac-8f84-037a0917af33
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 2a86d9511e470c9a810ff58e80e4cae1f9a0cb11
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
-ms.translationtype: MTE95
+ms.openlocfilehash: 11e60c43e2b9935f4aaf2ffcc5d5c7e3683665d1
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55924648"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72648575"
 ---
 # <a name="database-projects-and-data-tier-applications"></a>Proyectos de base de datos y aplicaciones de capa de datos
 
-Puede usar proyectos de base de datos para crear nuevas bases de datos nuevas aplicaciones de capa de datos (DAC) y para actualizar bases de datos existentes y las aplicaciones de capa de datos. Los proyectos de base de datos y los proyectos DAC permiten aplicar técnicas de administración de proyecto y control de versión a sus esfuerzos de desarrollo de base de datos de la misma manera que se aplican esas técnicas para código administrado o nativo. Puede ayudar a su equipo de desarrollo a administrar los cambios en las bases de datos y servidores de base de datos mediante la creación de un proyecto DAC, el proyecto de base de datos o un proyecto de servidor y colocarlo bajo control de versiones. Miembros del equipo, a continuación, pueden desproteger los archivos para realizar, compilar y probar los cambios en un entorno de desarrollo aislado o un espacio aislado, antes de compartirlos con el equipo. Para ayudar a garantizar la calidad del código, su equipo puede finalizar y pruebe todos los cambios para una versión concreta de la base de datos en un entorno de ensayo antes de implementar los cambios en producción.
+Puede usar proyectos de base de datos para crear nuevas bases de datos, nuevas aplicaciones de capa de datos (DAC) y para actualizar las bases de datos y las aplicaciones de capa de datos existentes. Tanto los proyectos de base de datos como los proyectos DAC permiten aplicar técnicas de administración de proyectos y control de versiones a los esfuerzos de desarrollo de bases de datos de la misma manera que se aplican esas técnicas a código administrado o nativo. Puede ayudar a su equipo de desarrollo a administrar los cambios en las bases de datos y los servidores de bases de datos mediante la creación de un proyecto DAC, un proyecto de base de datos o un proyecto de servidor y colocarlo bajo el control de versiones. Después, los miembros del equipo pueden desproteger los archivos para realizar, compilar y probar los cambios en un entorno de desarrollo aislado, o espacio aislado, antes de compartirlos con el equipo. Para ayudar a garantizar la calidad del código, el equipo puede finalizar y probar todos los cambios de una versión determinada de la base de datos en un entorno de ensayo antes de implementar los cambios en producción.
 
-Para obtener una lista de las características de base de datos que son compatibles con las aplicaciones de capa de datos, vea [DAC admiten objetos de SQL Server](/sql/relational-databases/data-tier-applications/dac-support-for-sql-server-objects-and-versions). Si usa características de la base de datos que no son compatibles con las aplicaciones de capa de datos, debe usar en su lugar un proyecto de base de datos para administrar los cambios en la base de datos.
+Para obtener una lista de las características de base de datos admitidas por las aplicaciones de capa de datos, vea [compatibilidad de DAC con objetos de SQL Server](/sql/relational-databases/data-tier-applications/dac-support-for-sql-server-objects-and-versions). Si utiliza características en la base de datos que no son compatibles con las aplicaciones de capa de datos, en su lugar debe usar un proyecto de base de datos para administrar los cambios en la base de datos.
 
 ## <a name="common-high-level-tasks"></a>Tareas comunes de alto nivel
 
-| Tareas de alto nivel | Contenido adicional |
+| Tarea de alto nivel | Contenido adicional |
 | - | - |
-| **Iniciar el desarrollo de una aplicación de capa de datos:** se introdujo el concepto de una aplicación de capa de datos (DAC) con SQL Server 2008. Una DAC contiene la definición de una base de datos de SQL Server y los objetos auxiliares de instancia utilizados por una aplicación de 3 niveles o cliente-servidor. Una DAC incluye objetos de base de datos, como tablas y vistas, junto con las entidades de la instancia, como los inicios de sesión. Puede usar Visual Studio para crear un proyecto DAC, generar un archivo de paquete DAC y enviar el archivo de paquete DAC a un administrador de base de datos para la implementación en una instancia del motor de base de datos de SQL Server. | - [Aplicaciones de capa de datos](/sql/relational-databases/data-tier-applications/data-tier-applications)<br />- [SQL Server Management Studio](/sql/ssms/sql-server-management-studio-ssms) |
-| **Realizar el desarrollo iterativo de la base de datos:** los desarrolladores pueden desproteger partes del proyecto y actualizarlos en un entorno de desarrollo aislado. Mediante el uso de este tipo de entorno, puede probar los cambios sin que afecte a otros miembros del equipo. Una vez completados los cambios, compruebe los archivos al control de versiones, donde otros miembros del equipo pueden obtener los cambios y generar e implementarlas en un servidor de prueba. | - [Desarrollo orientado a proyectos de base de datos sin conexión (SQL Server Data Tools)](/sql/ssdt/project-oriented-offline-database-development)<br />- [Depurador de Transact-SQL (SQL Server Management Studio)](/sql/ssms/scripting/transact-sql-debugger) |
-| **Creación de prototipos, comprobación de probar los resultados y modificar los scripts de base de datos y objetos:** puede usar el editor de Transact-SQL para realizar cualquiera de estas tareas comunes. | - [Editores de consultas y texto (SQL Server Management Studio)](/sql/ssms/scripting/query-and-text-editors-sql-server-management-studio) |
+| **Iniciar el desarrollo de una aplicación de capa de datos:** El concepto de una aplicación de capa de datos (DAC) se presentó con SQL Server 2008. Una DAC contiene la definición de una base de datos de SQL Server y los objetos de instancia auxiliares que usa una aplicación cliente-servidor o de tres niveles. Una DAC incluye objetos de base de datos, como tablas y vistas, junto con entidades de instancia como inicios de sesión. Puede usar Visual Studio para crear un proyecto DAC, compilar un archivo de paquete DAC y enviar el archivo de paquete DAC a un administrador de base de datos para su implementación en una instancia del motor de base de datos de SQL Server. | - [Aplicaciones de capa de datos](/sql/relational-databases/data-tier-applications/data-tier-applications)<br />- [SQL Server Management Studio](/sql/ssms/sql-server-management-studio-ssms) |
+| **Desarrollo iterativo de bases de datos:** Los desarrolladores pueden desproteger partes del proyecto y actualizarlas en un entorno de desarrollo aislado. Mediante este tipo de entorno, puede probar los cambios sin que afecte a otros miembros del equipo. Una vez completados los cambios, vuelva a proteger los archivos en el control de versiones, donde otros miembros del equipo pueden obtener los cambios y compilarlos e implementarlos en un servidor de prueba. | - [desarrollo de bases de datos sin conexión orientado a proyectos (SQL Server Data Tools)](/sql/ssdt/project-oriented-offline-database-development)<br />- [depurador de Transact-SQL (SQL Server Management Studio)](/sql/ssms/scripting/transact-sql-debugger) |
+| **Prototipos, comprobación de resultados de pruebas y modificación de objetos y scripts de base de datos:** Puede usar el editor de Transact-SQL para realizar cualquiera de estas tareas comunes. | - [editores de consultas y texto (SQL Server Management Studio)](/sql/ssms/scripting/query-and-text-editors-sql-server-management-studio) |
 
 ## <a name="see-also"></a>Vea también
 

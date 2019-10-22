@@ -18,11 +18,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 13202f8eb266c82cdd57c227ed4c480a0c871cf7
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58988868"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68142003"
 ---
 # <a name="debugging-wcf-services"></a>Depurar servicios WCF
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,7 +31,7 @@ En esta sección
  [Limitaciones de la depuración de WCF](../debugger/limitations-on-wcf-debugging.md)  
  Describe las restricciones de la depuración de WCF.  
   
- [Cómo: Depuración paso a paso por instrucciones de servicios WCF](../debugger/how-to-step-into-wcf-services.md)  
+ [Procedimientos: Depuración paso a paso por instrucciones de servicios WCF](../debugger/how-to-step-into-wcf-services.md)  
  Explica la compatibilidad del depurador para entrar en un servicio WCF.  
   
  [Cómo: Depuración de un servicio WCF autohospedado](../debugger/how-to-debug-a-self-hosted-wcf-service.md)  

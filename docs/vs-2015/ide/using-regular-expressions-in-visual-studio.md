@@ -16,19 +16,19 @@ helpviewer_keywords:
 - Visual Studio, regular expressions
 ms.assetid: 718a617d-0e05-47e1-a218-9746971527f4
 caps.latest.revision: 56
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 6906a351a9d93e566c1a184ed237beb15cbd7b89
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 031129d729d3d7c619ac9c1b48c9ed4c51dd3eac
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59669346"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72659619"
 ---
 # <a name="use-regular-expressions-in-visual-studio"></a>Uso de expresiones regulares en Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-Visual Studio usa expresiones regulares de .NET Framework para buscar y reemplazar texto. Para obtener más información sobre las expresiones regulares de .NET, consulte [Expresiones regulares de .NET Framework](http://msdn.microsoft.com/library/521b3f6d-f869-42e1-93e5-158c54a6895d).
+Visual Studio usa expresiones regulares de .NET Framework para buscar y reemplazar texto. Para obtener más información sobre las expresiones regulares de .NET, consulte [Expresiones regulares de .NET Framework](https://msdn.microsoft.com/library/521b3f6d-f869-42e1-93e5-158c54a6895d).
 
 En las versiones previas a Visual Studio 2012, se usaba una sintaxis de expresiones regulares personalizadas en las ventanas Buscar y Reemplazar. Consulte [Usar expresiones regulares en Visual Studio](https://msdn.microsoft.com/library/2k3te2cs\(v=vs.110\).aspx) para ver una explicación de cómo convertir a las versiones de .NET algunos de los símbolos de expresiones regulares personalizadas más frecuentes.
 
@@ -36,7 +36,7 @@ En las versiones previas a Visual Studio 2012, se usaba una sintaxis de expresio
 > En sistemas operativos Windows, la mayoría de las líneas terminan en “\r\n” (un retorno de carro seguido de una nueva línea). Estos caracteres no se ven, pero están presentes en el editor y se pasan al servicio de expresiones regulares de .NET.
 
 > [!TIP]
-> Para obtener información sobre las expresiones regulares que se usan en patrones de reemplazo, consulte [Sustituciones](http://msdn.microsoft.com/library/d1f52431-1c7d-4dc6-8792-6b988256892e). Para usar un grupo de captura numerado, la sintaxis es `$1` para especificar el grupo numerado y `(x)` para especificar el grupo en cuestión. Por ejemplo, la expresión regular agrupada `(\d)([a-z])` encuentra cuatro coincidencias en la siguiente cadena: **1a 2b 3c 4d**. La cadena de reemplazo `z$1` convierte esa cadena a **z1 z2 z3 z4**.
+> Para obtener información sobre las expresiones regulares que se usan en patrones de reemplazo, consulte [Sustituciones](https://msdn.microsoft.com/library/d1f52431-1c7d-4dc6-8792-6b988256892e). Para usar un grupo de captura numerado, la sintaxis es `$1` para especificar el grupo numerado y `(x)` para especificar el grupo en cuestión. Por ejemplo, la expresión regular agrupada `(\d)([a-z])` encuentra cuatro coincidencias en la siguiente cadena: **1a 2b 3c 4d**. La cadena de reemplazo `z$1` convierte esa cadena a **z1 z2 z3 z4**.
 
 ## <a name="regular-expression-examples"></a>Ejemplos de expresiones regulares
 
@@ -68,7 +68,7 @@ A continuación se muestran algunos ejemplos:
 |                                                                                                           Coincidir con cualquier carácter de espacio en blanco                                                                                                           |                                                   (?([^\r\n])\s)                                                   |                                                `Public\sInterface` coincide con la frase "Public Interface".                                                 |
 |                                                                                                             Coincidir con cualquier carácter numérico                                                                                                             |                                                         \d                                                         |                                                `\d` coincide con "3" en "3456", "2" en "23" y "1" en "1".                                                |
 |                                                                                                              Coincidir con un carácter Unicode                                                                                                              |                              \uXXXX donde XXXX especifica el valor del carácter Unicode.                              |                                                            `\u0065` coincide con el carácter "e".                                                            |
-|                                                                                                                 Coincidir con un identificador                                                                                                                 |                                         \b(*\w+&#124;[\w-[0-9\\*]]\w\*)\b                                          |                                                       Coincide con “type1”, pero no con “&type1” o “#define”.                                                       |
+|                                                                                                                 Coincidir con un identificador                                                                                                                 |                                         \b( *\w+&#124;[\w-[0-9\\* ]]\w\*)\b                                          |                                                       Coincide con “type1”, pero no con “&type1” o “#define”.                                                       |
 |                                                                                                            Coincidir con una cadena entre comillas                                                                                                             |                                             ((\\".+?\\")&#124;('.+?'))                                             |                                                    Coincide con cualquier cadena entre comillas simples o dobles.                                                     |
 |                                                                                                             Coincidir con un número hexadecimal                                                                                                              |                                              \b0[xX]([0-9a-fA-F]\)\b                                               |                                                          Coincide con “0xc67f”, pero no con “0xc67fc67f”.                                                           |
 |                                                                                                             Coincidir con enteros y decimales                                                                                                             |                                               \b[0-9]\*\\.\*[0-9]+\b                                               |                                                                     Coincide con “1.333”.                                                                      |

@@ -1,5 +1,5 @@
 ---
-title: 'CA1824: Marque los ensamblados con NeutralResourcesLanguageAttribute | Documentos de Microsoft'
+title: 'CA1824: Marque los ensamblados con NeutralResourcesLanguageAttribute | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -12,46 +12,46 @@ helpviewer_keywords:
 - CA1824
 ms.assetid: 10e97f8a-aa6e-47aa-b253-1e5d3a295d82
 caps.latest.revision: 14
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 795d48b96392057a3f96cf3a67f3c49de8aee9b9
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: efa328fdff9c357e0183fc2ca80e4d77d4f6782e
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60052173"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72661114"
 ---
-# <a name="ca1824-mark-assemblies-with-neutralresourceslanguageattribute"></a>CA1824: Marcar los ensamblados con NeutralResourcesLanguageAttribute
+# <a name="ca1824-mark-assemblies-with-neutralresourceslanguageattribute"></a>CA1824: Marque los ensamblados con NeutralResourcesLanguageAttribute
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
 |-|-|
 |TypeName|MarkAssembliesWithNeutralResourcesLanguage|
 |Identificador de comprobación|CA1824|
-|Categoría|Microsoft.Performance|
+|Categoría|Microsoft. performance|
 |Cambio problemático|Poco problemático|
 
 ## <a name="cause"></a>Motivo
- Un ensamblado contiene un **ResX**-recurso basado en pero no tiene el <xref:System.Resources.NeutralResourcesLanguageAttribute?displayProperty=fullName> aplicado a él.
+ Un ensamblado contiene un recurso basado en **resx**pero no tiene aplicado el <xref:System.Resources.NeutralResourcesLanguageAttribute?displayProperty=fullName>.
 
 ## <a name="rule-description"></a>Descripción de la regla
- El **NeutralResourcesLanguage** atributo informa a la **ResourceManager** del lenguaje que se usó para mostrar los recursos de la referencia cultural neutra para un ensamblado. Cuando busca recursos en la misma referencia cultural que el idioma de los recursos neutros el **ResourceManager** usa automáticamente los recursos que se encuentran en el ensamblado principal. Para ello, en lugar de buscar un ensamblado satélite que tiene la referencia cultural actual interfaz de usuario para el subproceso actual. Esto mejora el rendimiento de la búsqueda del primer recurso que se carga y puede reducir el espacio de trabajo.
+ El atributo **NeutralResourcesLanguage** informa a **ResourceManager** del idioma que se usó para mostrar los recursos de la referencia cultural neutra de un ensamblado. Cuando busca recursos en la misma referencia cultural que el idioma de los recursos neutros, **ResourceManager** usa automáticamente los recursos que se encuentran en el ensamblado principal. Lo hace en lugar de buscar un ensamblado satélite que tenga la referencia cultural de la interfaz de usuario actual para el subproceso actual. Esto mejora el rendimiento de la búsqueda del primer recurso que se carga y puede reducir el espacio de trabajo.
 
-## <a name="fixing-violations"></a>Corregir las infracciones
- Para corregir una infracción de esta regla, agregue el atributo al ensamblado y especificar el idioma de los recursos de la referencia cultural neutra.
+## <a name="fixing-violations"></a>Corregir infracciones
+ Para corregir una infracción de esta regla, agregue el atributo al ensamblado y especifique el idioma de los recursos de la referencia cultural neutra.
 
-## <a name="specifying-the-language"></a>Especifica el lenguaje
+## <a name="specifying-the-language"></a>Especificar el idioma
 
 #### <a name="to-specify-the-language-of-the-resource-of-the-neutral-culture"></a>Para especificar el idioma del recurso de la referencia cultural neutra
 
-1. En **el Explorador de soluciones**, haga clic en el proyecto y, a continuación, haga clic en **propiedades**.
+1. En **Explorador de soluciones**, haga clic con el botón secundario en el proyecto y, a continuación, haga clic en **propiedades**.
 
-2. En la barra de navegación izquierdo, seleccione **aplicación**y, a continuación, haga clic en **información de ensamblado**.
+2. En la barra de navegación izquierda, seleccione **aplicación**y, a continuación, haga clic en **información de ensamblado**.
 
-3. En el **información de ensamblado** diálogo cuadro, seleccione el idioma de la **idioma neutro** lista desplegable.
+3. En el cuadro de diálogo **información de ensamblado** , seleccione el idioma en la lista desplegable **idioma neutro** .
 
 4. Haga clic en **Aceptar**.
 
 ## <a name="when-to-suppress-warnings"></a>Cuándo suprimir advertencias
- Es admisible para suprimir una advertencia de esta regla. Sin embargo, podría disminuir el rendimiento de inicio.
+ Se permite suprimir una advertencia de esta regla. Sin embargo, el rendimiento de inicio puede disminuir.

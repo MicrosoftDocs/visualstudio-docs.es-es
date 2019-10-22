@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugFunctionObject::CreateStringObject method
 ms.assetid: fd6070ab-07d4-4ea1-8d71-b16592d6f1a7
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0dd79223d3b51195e9f45490cc8aa95c10aca8e8
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 620aef7474f7f669e22fcb44c7df2611dc50bafb
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56689907"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66313618"
 ---
 # <a name="idebugfunctionobjectcreatestringobject"></a>IDebugFunctionObject::CreateStringObject
 Crea un objeto de cadena.
@@ -38,14 +41,12 @@ int CreateStringObject(
 );
 ```
 
-#### <a name="parameters"></a>Parámetros
- `pcstrString`
+## <a name="parameters"></a>Parámetros
+`pcstrString`\
+[in] El valor de cadena para el objeto de cadena.
 
- [in] El valor de cadena para el objeto de cadena.
-
- `ppObject`
-
- [out] Devuelve un [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) objeto que representa el objeto de cadena recién creado.
+`ppObject`\
+[out] Devuelve un [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) objeto que representa el objeto de cadena recién creado.
 
 ## <a name="return-value"></a>Valor devuelto
  Si se realiza correctamente, devuelve S_OK; en caso contrario, devuelve un código de error.

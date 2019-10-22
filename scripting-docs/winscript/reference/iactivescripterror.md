@@ -1,5 +1,5 @@
 ---
-title: IActiveScriptError | Documentos de Microsoft
+title: IActiveScriptError | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -13,15 +13,15 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 1ca783e2100fe74ed05499f9611a9b8f3399817f
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: ca4d3fe5ff90fc0d116814771308fa599052dba9
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58144425"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72576902"
 ---
 # <a name="iactivescripterror"></a>IActiveScriptError
-Un objeto que implementa esta interfaz se pasa a la [IActiveScriptSite::OnScriptError](../../winscript/reference/iactivescriptsite-onscripterror.md) método siempre que el motor de scripting encuentra un error no controlado. El host, a continuación, llama a métodos en este objeto para obtener información sobre el error que se ha producido.  
+Un objeto que implementa esta interfaz se pasa al método [IActiveScriptSite:: OnScriptError](../../winscript/reference/iactivescriptsite-onscripterror.md) siempre que el motor de scripting encuentra un error no controlado. A continuación, el host llama a los métodos de este objeto para obtener información sobre el error que se ha producido.  
   
 ## <a name="methods-in-vtable-order"></a>Métodos en orden de Vtable  
   
@@ -29,7 +29,7 @@ Un objeto que implementa esta interfaz se pasa a la [IActiveScriptSite::OnScript
 |------------|-----------------|  
 |[IActiveScriptError::GetExceptionInfo](../../winscript/reference/iactivescripterror-getexceptioninfo.md)|Recupera información sobre un error.|  
 |[IActiveScriptError::GetSourcePosition](../../winscript/reference/iactivescripterror-getsourceposition.md)|Recupera la ubicación en el código fuente donde se produjo un error.|  
-|[IActiveScriptError::GetSourceLineText](../../winscript/reference/iactivescripterror-getsourcelinetext.md)|Recupera la línea en el archivo de origen donde se produjo un error.|  
+|[IActiveScriptError::GetSourceLineText](../../winscript/reference/iactivescripterror-getsourcelinetext.md)|Recupera la línea del archivo de código fuente donde se produjo un error.|  
   
 ## <a name="see-also"></a>Vea también  
  [Active Script (Interfaces)](../../winscript/reference/active-script-interfaces.md)

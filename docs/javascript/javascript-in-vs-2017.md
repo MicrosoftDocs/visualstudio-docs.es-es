@@ -13,12 +13,12 @@ author: bowdenk7
 ms.author: wilkelly
 manager: jillfra
 monikerRange: vs-2017
-ms.openlocfilehash: 88de2703db119f4124eb02658efb327df2ae899f
-ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
+ms.openlocfilehash: c86dd5090d2cee6c49bd97f0895bba397e10c1ae
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58790477"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66263050"
 ---
 # <a name="javascript-in-visual-studio-2017"></a>JavaScript en Visual Studio 2017
 
@@ -52,14 +52,14 @@ Para compilar archivos de JavaScript, se debe agregar un archivo `tsconfig.json`
 
 La configuración necesaria para el archivo tsconfig es la siguiente:
 
- - `allowJs`: este valor se debe establecer en `true` para que se reconozcan los archivos JavaScript. El valor predeterminado es `false`, ya que TypeScript se compila en JavaScript, y el compilador no debe incluir los archivos que acaba de compilar.
- - `outDir`: este valor se debe establecer en una ubicación que no esté incluida en el proyecto, para que los archivos JavaScript emitidos no se detecten y después se incluyan en el proyecto (consulte `exclude`).
- - `module`: si se usan módulos, esta opción indica al compilador qué formato de módulo debería usar el código emitido (por ejemplo, `commonjs` para Node o software que instala varios programas como Browserify).
- - `exclude`: esta opción indica qué carpetas no incluir en el proyecto.
- La ubicación de salida, así como las carpetas que no son del proyecto, como `node_modules` o `temp`, deben agregarse a esta opción.
- - `enableAutoDiscovery`: esta opción habilita la detección automática y la descarga de archivos de definición como se describió anteriormente.
- - `compileOnSave`: esta opción indica al compilador si debe volver a compilar cada vez que se guarda un archivo de origen en Visual Studio.
- - `typeAcquisition`: este conjunto de valores controla el comportamiento de la adquisición automática de tipos (se explica con más detalle en [esta sección](/visualstudio/ide/javascript-intellisense#Auto))
+- `allowJs`: este valor se debe establecer en `true` para que se reconozcan los archivos JavaScript. El valor predeterminado es `false`, ya que TypeScript se compila en JavaScript, y el compilador no debe incluir los archivos que acaba de compilar.
+- `outDir`: este valor se debe establecer en una ubicación que no esté incluida en el proyecto, para que los archivos JavaScript emitidos no se detecten y después se incluyan en el proyecto (consulte `exclude`).
+- `module`: si se usan módulos, esta opción indica al compilador qué formato de módulo debería usar el código emitido (por ejemplo, `commonjs` para Node o software que instala varios programas como Browserify).
+- `exclude`: esta opción indica qué carpetas no incluir en el proyecto.
+La ubicación de salida, así como las carpetas que no son del proyecto, como `node_modules` o `temp`, deben agregarse a esta opción.
+- `enableAutoDiscovery`: esta opción habilita la detección automática y la descarga de archivos de definición como se describió anteriormente.
+- `compileOnSave`: esta opción indica al compilador si debe volver a compilar cada vez que se guarda un archivo de origen en Visual Studio.
+- `typeAcquisition`: este conjunto de valores controla el comportamiento de la adquisición automática de tipos (se explica con más detalle en [esta sección](/visualstudio/ide/javascript-intellisense#Auto))
 
 Para convertir archivos JavaScript en módulos de CommonJS y colocarlos en una carpeta `./out`, se podría usar el archivo `tsconfig.json` siguiente:
 
@@ -247,7 +247,7 @@ Consulte la página [IntelliSense para JavaScript](/visualstudio/ide/javascript-
 ### <a name="vsdoc"></a>VSDoc
 
 Los comentarios de documentación XML, en ocasiones conocidos como VSDocs, podían usarse anteriormente para decorar el código fuente con datos adicionales que se usaban para pulir los resultados de IntelliSense.
-VSDoc ya no se admite en favor de [JSDoc](http://usejsdoc.org/about-getting-started.html), que es más fácil de escribir y es el estándar aceptado para JavaScript.
+VSDoc ya no se admite en favor de [JSDoc](https://jsdoc.app/about-getting-started.html), que es más fácil de escribir y es el estándar aceptado para JavaScript.
 
 ### <a name="intellisensejs-extensions"></a>Extensiones de `.intellisense.js`
 

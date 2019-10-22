@@ -27,18 +27,18 @@ caps.latest.revision: 41
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 2f332ef1a52ae49e51025614745fc1b5c4a44e07
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: b592515692e23dce49c125c7895bd158904b653f
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60078296"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65696129"
 ---
 # <a name="how-to-use-the-modules-window"></a>Procedimiento Utilice la ventana módulos
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 NOTA]
->  Esta característica no está disponible para la depuración de SQL o de script.  
+> Esta característica no está disponible para la depuración de SQL o de script.  
   
  El **módulos** ventana enumera los archivos DLL y EXE que son utilizados por el programa y muestra información pertinente para cada uno.  
   
@@ -78,6 +78,6 @@ NOTA]
 2. Seleccione **configuración de carga de símbolos automática** y, a continuación, haga clic en **cargar siempre manualmente** o **predeterminado**. Los cambios no surten efecto hasta que se reinicie la sesión de depuración.  
   
 ## <a name="see-also"></a>Vea también  
- [Interrumpir la ejecución](http://msdn.microsoft.com/30fc4643-f337-4651-b1ff-f2de2c098d40)   
+ [Interrumpir la ejecución](https://msdn.microsoft.com/30fc4643-f337-4651-b1ff-f2de2c098d40)   
  [Ver datos en el depurador](../debugger/viewing-data-in-the-debugger.md)   
  [Especificar archivos de código fuente y símbolos (.pdb)](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)

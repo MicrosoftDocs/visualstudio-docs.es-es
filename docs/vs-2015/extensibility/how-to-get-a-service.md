@@ -11,11 +11,11 @@ caps.latest.revision: 21
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 46ef86b8cde506aad3e00aa6b5dbc6470c0087de
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60052186"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68204186"
 ---
 # <a name="how-to-get-a-service"></a>Procedimiento Obtener un servicio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -85,6 +85,6 @@ if (sp != null)
 ```  
   
 ## <a name="see-also"></a>Vea también  
- [Cómo: Proporcionar un servicio](../extensibility/how-to-provide-a-service.md)   
+ [Procedimientos: Proporcionar un servicio](../extensibility/how-to-provide-a-service.md)   
  [Uso y provisión de servicios](../extensibility/using-and-providing-services.md)   
  [Conceptos básicos del servicio](../extensibility/internals/service-essentials.md)

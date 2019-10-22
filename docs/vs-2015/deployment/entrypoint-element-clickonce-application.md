@@ -20,11 +20,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 9ce9fcbddf54dff0ee8574d0c2a5a3df4d8b5c7e
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58998072"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68193504"
 ---
 # <a name="ltentrypointgt-element-clickonce-application"></a>&lt;entryPoint&gt; elemento (aplicación ClickOnce)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -58,24 +58,24 @@ Identifica el ensamblado que se debe ejecutar cuando esto [!INCLUDE[ndptecclick]
   
  El elemento `entryPoint` tiene los atributos siguientes:  
   
-|Atributo|Descripción|  
+|Atributo|DESCRIPCIÓN|  
 |---------------|-----------------|  
 |`name`|Opcional. Este valor no se utiliza por .NET Framework.|  
   
  `entryPoint` tiene los siguientes elementos:  
   
 ## <a name="assemblyidentity"></a>assemblyIdentity  
- Obligatorio. El rol de `assemblyIdentity` y sus atributos se definen en [ \<assemblyIdentity > elemento](../deployment/assemblyidentity-element-clickonce-application.md).  
+ Necesario. El rol de `assemblyIdentity` y sus atributos se definen en [ \<assemblyIdentity > elemento](../deployment/assemblyidentity-element-clickonce-application.md).  
   
  El `processorArchitecture` atributo de este elemento y el `processorArchitecture` atributo definido en el `assemblyIdentity` en otra parte en la aplicación de manifiesto debe coincidir.  
   
 ## <a name="commandline"></a>commandLine  
- Obligatorio. Debe ser un elemento secundario de la `entryPoint` elemento. No tiene elementos secundarios y tiene los siguientes atributos.  
+ Necesario. Debe ser un elemento secundario de la `entryPoint` elemento. No tiene elementos secundarios y tiene los siguientes atributos.  
   
-|Atributo|Descripción|  
+|Atributo|DESCRIPCIÓN|  
 |---------------|-----------------|  
-|`file`|Obligatorio. Una referencia local al ensamblado de inicio para el [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] aplicación. Este valor no puede contener la barra diagonal (/) o barra diagonal inversa (\\) separadores de ruta de acceso.|  
-|`parameters`|Obligatorio. Describe la acción que se realiza con el punto de entrada. El único valor válido es `run`; si no se proporciona una cadena en blanco, `run` se da por hecho.|  
+|`file`|Necesario. Una referencia local al ensamblado de inicio para el [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] aplicación. Este valor no puede contener la barra diagonal (/) o barra diagonal inversa (\\) separadores de ruta de acceso.|  
+|`parameters`|Necesario. Describe la acción que se realiza con el punto de entrada. El único valor válido es `run`; si no se proporciona una cadena en blanco, `run` se da por hecho.|  
   
 ## <a name="customhostrequired"></a>customHostRequired  
  Opcional. Si se incluye, especifica que esta implementación contiene un componente que se va a implementar dentro de un host personalizado y no es una aplicación independiente.  
@@ -96,7 +96,7 @@ Identifica el ensamblado que se debe ejecutar cuando esto [!INCLUDE[ndptecclick]
 ## <a name="remarks"></a>Comentarios  
  Este elemento identifica el ensamblado y punto de entrada para el [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] aplicación.  
   
- No puede usar `commandLine` para pasar parámetros a la aplicación en tiempo de ejecución. Puede tener acceso a los parámetros de cadena de consulta para un [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] implementación de la aplicación <xref:System.AppDomain>. Para obtener más información, vea [Cómo: Recuperación de información de la cadena de consulta de una aplicación ClickOnce en línea](../deployment/how-to-retrieve-query-string-information-in-an-online-clickonce-application.md).  
+ No puede usar `commandLine` para pasar parámetros a la aplicación en tiempo de ejecución. Puede tener acceso a los parámetros de cadena de consulta para un [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] implementación de la aplicación <xref:System.AppDomain>. Para obtener más información, consulte [Cómo Recuperación de información de la cadena de consulta de una aplicación ClickOnce en línea](../deployment/how-to-retrieve-query-string-information-in-an-online-clickonce-application.md).  
   
 ## <a name="example"></a>Ejemplo  
  En el ejemplo de código siguiente se ilustra un `entryPoint` elemento en un manifiesto de aplicación para un [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] aplicación. Este ejemplo de código forma parte de un ejemplo más extenso proporcionado para el [ClickOnce Application Manifest](../deployment/clickonce-application-manifest.md) tema.  

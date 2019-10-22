@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - commands, implementation
 ms.assetid: c782175c-cce4-4bd0-8374-4a897ceb1b3d
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 61f35521271df7d3f34e5f10ebf40d502c0f8596
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: fbd0a9a1886bc1f8743ac8919bcc9cb39559dd19
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60089758"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67824942"
 ---
 # <a name="command-implementation"></a>Implementación de comandos
 Para implementar un comando en un VSPackage, debe realizar las siguientes tareas:
@@ -67,23 +67,23 @@ if ( null != mcs )
 
 - Si su implementación de cualquiera de estos métodos reconoce el GUID y el comando y, después, el método debe establecer el campo de marcadores de comando de todos los comandos (en el `prgCmds` parámetro) mediante el siguiente <xref:Microsoft.VisualStudio.OLE.Interop.OLECMDF> indicadores:
 
-    - `OLECMDF_SUPPORTED`: Se admite el comando.
+  - `OLECMDF_SUPPORTED`: Se admite el comando.
 
-    - `OLECMDF_INVISIBLE`: El comando no debe ser visible.
+  - `OLECMDF_INVISIBLE`: El comando no debe ser visible.
 
-    - `OLECMDF_LATCHED`: El comando se alterna y parece que se han comprobado.
+  - `OLECMDF_LATCHED`: El comando se alterna y parece que se han comprobado.
 
-    - `OLECMDF_ENABLED`: El comando está habilitado.
+  - `OLECMDF_ENABLED`: El comando está habilitado.
 
-    - `OLECMDF_DEFHIDEONCTXTMENU`: El comando debe ocultarse si ésta aparece en un menú contextual.
+  - `OLECMDF_DEFHIDEONCTXTMENU`: El comando debe ocultarse si ésta aparece en un menú contextual.
 
-    - `OLECMDF_NINCHED`: El comando es un controlador de menú y no está habilitado, pero su lista del menú desplegable no está vacía y sigue estando disponible. (Rara vez se usa esta marca).
+  - `OLECMDF_NINCHED`: El comando es un controlador de menú y no está habilitado, pero su lista del menú desplegable no está vacía y sigue estando disponible. (Rara vez se usa esta marca).
 
 - Si el comando se ha definido en el *.vsct* archivo con el `TextChanges` marca, establezca los parámetros siguientes:
 
-    - Establecer el `rgwz` elemento de la `pCmdText` parámetro para el nuevo texto del comando.
+  - Establecer el `rgwz` elemento de la `pCmdText` parámetro para el nuevo texto del comando.
 
-    - Establecer el `cwActual` elemento de la `pCmdText` parámetro para el tamaño de la cadena de comandos.
+  - Establecer el `cwActual` elemento de la `pCmdText` parámetro para el tamaño de la cadena de comandos.
 
 Además, asegúrese de que el contexto actual no es una función de automatización, a menos que el comando está diseñado específicamente para controlar las funciones de automatización.
 

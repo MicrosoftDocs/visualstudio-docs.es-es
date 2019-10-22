@@ -1,5 +1,5 @@
 ---
-title: Depurar servicios WCF | Microsoft Docs
+title: Depurar servicios WCF | Documentos de Microsoft
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -17,11 +17,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 02ca94704d09288d1e29f6a530ae818053a9d368
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56716849"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62851757"
 ---
 # <a name="debugging-wcf-services"></a>Depurar servicios WCF
 ## <a name="in-this-section"></a>En esta sección
@@ -29,7 +29,7 @@ ms.locfileid: "56716849"
 
  [Cómo: Ir a servicios WCF](../debugger/how-to-step-into-wcf-services.md) explica la compatibilidad con el depurador para entrar en un servicio WCF.
 
- [Cómo: depurar un servicio de WCF autohospedado](../debugger/how-to-debug-a-self-hosted-wcf-service.md) describe cómo depurar un servicio WCF que se ejecuta fuera de IIS o la [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] servidor de desarrollo.
+ [Cómo: Depurar un servicio de WCF autohospedado](../debugger/how-to-debug-a-self-hosted-wcf-service.md) describe cómo depurar un servicio WCF que se ejecuta fuera de IIS o la [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] servidor de desarrollo.
 
 ## <a name="see-also"></a>Vea también
 - [Seguridad del depurador](../debugger/debugger-security.md)

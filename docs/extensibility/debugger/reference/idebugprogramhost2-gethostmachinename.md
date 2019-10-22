@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProgramHost2::GetHostMachineName
 ms.assetid: 4677ffe4-aa9b-4450-a63b-74cd3984d956
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f8cc1a3581ffd46bb345bcbbeb135f7ebe296fff
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 6843856605505e23fc6c76834e83d54a998c90c8
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56684239"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66325141"
 ---
 # <a name="idebugprogramhost2gethostmachinename"></a>IDebugProgramHost2::GetHostMachineName
 Obtiene el nombre de la máquina que el proceso que hospeda este programa se ejecuta en.
@@ -36,10 +39,9 @@ int GetHostMachineName( 
 );
 ```
 
-#### <a name="parameters"></a>Parámetros
- `pbstrHostMachineName`
-
- [out] Devuelve el nombre de la máquina.
+## <a name="parameters"></a>Parámetros
+`pbstrHostMachineName`\
+[out] Devuelve el nombre de la máquina.
 
 ## <a name="return-value"></a>Valor devuelto
  Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.

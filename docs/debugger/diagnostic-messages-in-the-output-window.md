@@ -2,11 +2,6 @@
 title: Enviar mensajes a la ventana de salida | Microsoft Docs
 ms.date: 11/08/2018
 ms.topic: conceptual
-dev_langs:
-- CSharp
-- VB
-- FSharp
-- C++
 helpviewer_keywords:
 - diagnostic messages [C#]
 - System.Diagnostics.Debug class, Output window
@@ -26,27 +21,27 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bb4493eb55b83b9f76d1a833ba2df359ae9683e8
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.openlocfilehash: 47b563f58d08a732ec224bb8bbf47ad807c4e81d
+ms.sourcegitcommit: ce1ab8a25c66a83e60eab80ed8e1596fe66dd85c
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56682510"
+ms.lasthandoff: 07/29/2019
+ms.locfileid: "68605377"
 ---
 # <a name="send-messages-to-the-output-window"></a>Enrutamiento de mensajes a la ventana Salida
 
-Puede escribir mensajes en tiempo de ejecución para el **salida** ventana mediante la <xref:System.Diagnostics.Debug> clase o el <xref:System.Diagnostics.Trace> (clase), que forman parte de la <xref:System.Diagnostics> biblioteca de clases. Use la <xref:System.Diagnostics.Debug> clase si desea que solo salida el *depurar* versión del programa. Use la <xref:System.Diagnostics.Trace> clase si desea que la salida en ambos el *depurar* y *versión* versiones.
+Puede escribir mensajes en tiempo de ejecución en la ventana de **salida** mediante <xref:System.Diagnostics.Debug> la clase o <xref:System.Diagnostics.Trace> la clase, que forman parte de <xref:System.Diagnostics> la biblioteca de clases. Utilice la <xref:System.Diagnostics.Debug> clase si solo desea la salida en la  versión de depuración del programa. Utilice la <xref:System.Diagnostics.Trace> clase si desea generar la salida en las versiones de depuración y *lanzamiento* .
 
 ## <a name="output-methods"></a>Métodos de salida
  Las clases <xref:System.Diagnostics.Trace> y <xref:System.Diagnostics.Debug> proporcionan los siguientes métodos de salida:
 
 - Diversos métodos `Write`, que envían información sin interrumpir la ejecución. Estos métodos reemplazan el método `Debug.Print` que se utilizaba en versiones anteriores de Visual Basic.
 
-- <xref:System.Diagnostics.Debug.Assert%2A?displayProperty=fullName> y <xref:System.Diagnostics.Trace.Assert%2A?displayProperty=fullName> métodos, que interrumpen la ejecución y la salida de información si se produce un error en una condición especificada. De forma predeterminada, el método `Assert` muestra la información en un cuadro de diálogo. Para obtener más información, vea [Aserciones en el código administrado](../debugger/assertions-in-managed-code.md).
+- <xref:System.Diagnostics.Debug.Assert%2A?displayProperty=fullName>los <xref:System.Diagnostics.Trace.Assert%2A?displayProperty=fullName> métodos y, que interrumpen la información de ejecución y salida si se produce un error en una condición especificada. De forma predeterminada, el método `Assert` muestra la información en un cuadro de diálogo. Para obtener más información, vea [Aserciones en el código administrado](../debugger/assertions-in-managed-code.md).
 
-- El <xref:System.Diagnostics.Debug.Fail%2A?displayProperty=fullName> y <xref:System.Diagnostics.Trace.Fail%2A?displayProperty=fullName> métodos, que interrumpen siempre la información de ejecución y de salida. De forma predeterminada, el método `Fail` muestra la información en un cuadro de diálogo.
+- Los <xref:System.Diagnostics.Debug.Fail%2A?displayProperty=fullName> métodos <xref:System.Diagnostics.Trace.Fail%2A?displayProperty=fullName> y, que siempre interrumpen la información de ejecución y salida. De forma predeterminada, el método `Fail` muestra la información en un cuadro de diálogo.
 
-El **salida** ventana también puede mostrar información acerca de:
+La ventana de **salida** también puede mostrar información acerca de:
 
 - Módulos que el depurador ha cargado o ha descargado.
 
@@ -59,6 +54,6 @@ El **salida** ventana también puede mostrar información acerca de:
 ## <a name="see-also"></a>Vea también
 - [Seguridad del depurador](../debugger/debugger-security.md)
 - [Resultados (Ventana)](../ide/reference/output-window.md)
-- [Seguimiento e instrumentar aplicaciones](/dotnet/framework/debug-trace-profile/tracing-and-instrumenting-applications)
+- [Seguimiento e instrumentación de aplicaciones](/dotnet/framework/debug-trace-profile/tracing-and-instrumenting-applications)
 - [Tipos de proyectos de C#, F# y Visual Basic](../debugger/debugging-preparation-csharp-f-hash-and-visual-basic-project-types.md)
 - [Depurar código administrado](../debugger/debugging-managed-code.md)

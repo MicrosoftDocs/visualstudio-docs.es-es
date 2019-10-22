@@ -5,17 +5,20 @@ ms.topic: reference
 helpviewer_keywords:
 - IDebugExpressionEvaluator3::Parse2
 ms.assetid: 78099628-d600-4f76-b7c8-ee07c864af1e
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 626911d4eb9f23655ad2808e1e79ec6635cb8b00
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 308ef67bab1d91ace71a5e741a1ed998037a9868
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56678610"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66352747"
 ---
 # <a name="idebugexpressionevaluator3parse2"></a>IDebugExpressionEvaluator3::Parse2
 Convierte una cadena de expresión en una expresión analizada según el proveedor de símbolos y la dirección del marco de evaluación.
@@ -48,38 +51,30 @@ HRESULT Parse2 (
 );
 ```
 
-#### <a name="parameters"></a>Parámetros
-`upstrExpression`
+## <a name="parameters"></a>Parámetros
+`upstrExpression`\
+[in] La cadena de expresión que se va a analizar.
 
- [in] La cadena de expresión que se va a analizar.
+`dwFlags`\
+[in] Una colección de [PARSEFLAGS](../../../extensibility/debugger/reference/parseflags.md) constantes que determinan cómo se puede analizar la expresión.
 
-`dwFlags`
+`nRadix`\
+[in] Base que se usará para interpretar toda la información numérica.
 
- [in] Una colección de [PARSEFLAGS](../../../extensibility/debugger/reference/parseflags.md) constantes que determinan cómo se puede analizar la expresión.
+`pSymbolProvider`\
+[in] Interfaz del proveedor de símbolos.
 
-`nRadix`
+`pAddress`\
+[in] Dirección del marco de evaluación.
 
- [in] Base que se usará para interpretar toda la información numérica.
+`pbstrError`\
+[out] Devuelve el error como texto legible.
 
-`pSymbolProvider`
+`pichError`\
+[out] Devuelve la posición del carácter de inicio del error en la cadena de expresión.
 
- [in] Interfaz del proveedor de símbolos.
-
-`pAddress`
-
- [in] Dirección del marco de evaluación.
-
-`pbstrError`
-
- [out] Devuelve el error como texto legible.
-
-`pichError`
-
- [out] Devuelve la posición del carácter de inicio del error en la cadena de expresión.
-
-`ppParsedExpression`
-
- [out] Devuelve la expresión analizada en un [IDebugParsedExpression](../../../extensibility/debugger/reference/idebugparsedexpression.md) objeto.
+`ppParsedExpression`\
+[out] Devuelve la expresión analizada en un [IDebugParsedExpression](../../../extensibility/debugger/reference/idebugparsedexpression.md) objeto.
 
 ## <a name="return-value"></a>Valor devuelto
 Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.

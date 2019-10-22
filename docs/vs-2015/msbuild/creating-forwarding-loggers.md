@@ -13,11 +13,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: ecc9bae7176c0d8c0f79452baff87a7a697db459
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59648226"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68184026"
 ---
 # <a name="creating-forwarding-loggers"></a>Crear registradores de reenvío
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,7 +41,7 @@ Los registradores de reenvío mejoran la eficacia del registro, ya que le permit
 ## <a name="multi-processor-aware-loggers"></a>Registradores que reconocen varios procesadores  
  Cuando se compila un proyecto en un sistema de varios procesadores, los mensajes de compilación de cada procesador no se intercalan automáticamente en una secuencia unificada. Por ello, debe establecer una prioridad de agrupación de mensajes mediante el uso de la clase <xref:Microsoft.Build.Framework.BuildEventContext> adjuntada a cada mensaje. Para obtener más información sobre la compilación con varios procesadores, vea [Registrar en un entorno de varios procesadores](../msbuild/logging-in-a-multi-processor-environment.md).  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Otras referencias  
  [Obtener registros de compilación](../msbuild/obtaining-build-logs-with-msbuild.md)   
  [Registradores de compilación](../msbuild/build-loggers.md)   
  [Registrar en un entorno de varios procesadores](../msbuild/logging-in-a-multi-processor-environment.md)

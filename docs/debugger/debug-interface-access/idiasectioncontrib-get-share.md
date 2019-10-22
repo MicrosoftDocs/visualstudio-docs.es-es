@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: b3a77ec9f1b088b135b3947250841d10eb9aa169
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56611365"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62839646"
 ---
 # <a name="idiasectioncontribgetshare"></a>IDiaSectionContrib::get_share
 Recupera una marca que indica si se puede compartir la sección en la memoria.

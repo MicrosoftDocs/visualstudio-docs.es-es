@@ -1,25 +1,25 @@
 ---
-title: Diseñador de flujo de trabajo - Diseñador de actividades TransactedReceiveScope
+title: Diseñador de actividades Diseñador de flujo de trabajo-TransactedReceiveScope
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
 - System.ServiceModel.Activities.TransactedReceiveScope.UI
 ms.assetid: 7ca93aad-4e83-4d81-90f4-998ee114d9b6
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4a103b0db53ced447e16d269d747fa3355aeb00c
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: cf5a52a6a806d72632bf31a7c73e41677e9ddaf9
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55921216"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72654291"
 ---
 # <a name="transactedreceivescope-activity-designer"></a>Diseñador de actividades TransactedReceiveScope
 
-El **TransactedReceiveScope** diseñador se utiliza para crear y configurar un <xref:System.ServiceModel.Activities.TransactedReceiveScope> actividad.
+El diseñador **TransactedReceiveScope** se utiliza para crear y configurar una actividad <xref:System.ServiceModel.Activities.TransactedReceiveScope>.
 
 ## <a name="the-transactedreceivescope-activity"></a>Actividad TransactedReceiveScope
 
@@ -27,19 +27,19 @@ La actividad <xref:System.ServiceModel.Activities.TransactedReceiveScope> hace p
 
 ### <a name="using-the-transactedreceivescope-activity-designer"></a>Utilizar el diseñador de actividades TransactedReceiveScope
 
-Acceso a la **TransactedReceiveScope** Diseñador de actividad en el **mensajería** categoría de la **cuadro de herramientas**. El **TransactedReceiveScope** Diseñador de actividad se puede arrastrar desde el **cuadro de herramientas** y colocar en la superficie del Diseñador de flujo de trabajo donde se coloquen normalmente las actividades. Esto crea un <xref:System.ServiceModel.Activities.TransactedReceiveScope> actividad con un valor predeterminado **DisplayName** de TransactedReceiveScope. El <xref:System.Activities.Activity.DisplayName%2A> se pueden editar en el encabezado de la **TransactedReceiveScope** Diseñador de actividad o en el **DisplayName** cuadro de la cuadrícula de propiedades.
+Acceda al diseñador de actividades **TransactedReceiveScope** en la categoría **Mensajería** del **cuadro de herramientas**. El diseñador de actividades **TransactedReceiveScope** se puede arrastrar desde el **cuadro de herramientas** y colocarlo en la superficie de diseñador de flujo de trabajo siempre que se coloquen normalmente las actividades. Esto crea una actividad <xref:System.ServiceModel.Activities.TransactedReceiveScope> con un valor **displayName** predeterminado de TransactedReceiveScope. El <xref:System.Activities.Activity.DisplayName%2A> se puede editar en el encabezado del diseñador de actividades **TransactedReceiveScope** o en el cuadro **displayName** de la cuadrícula de propiedades.
 
-El **TransactedReceiveScope** diseñador contiene **solicitar** y **cuerpo** cuadros. Estos se utilizan para configurar la propiedad <xref:System.ServiceModel.Activities.TransactedReceiveScope.Request%2A>, que especifica una actividad <xref:System.ServiceModel.Activities.Receive> y una propiedad <xref:System.ServiceModel.Activities.TransactedReceiveScope.Body%2A>, la cual especifica alguna otra clase <xref:System.Activities.Activity>. La propiedad <xref:System.ServiceModel.Activities.TransactedReceiveScope.Request%2A> crea una transacción. Posteriormente, la transacción se prepara para el ámbito de la propiedad <xref:System.ServiceModel.Activities.TransactedReceiveScope.Body%2A> de forma que cualquier actividad en este ámbito se ejecute dentro de esta transacción.
+El diseñador **TransactedReceiveScope** contiene cuadros de **solicitud** y **cuerpo** . Estos se utilizan para configurar la propiedad <xref:System.ServiceModel.Activities.TransactedReceiveScope.Request%2A>, que especifica una actividad <xref:System.ServiceModel.Activities.Receive> y una propiedad <xref:System.ServiceModel.Activities.TransactedReceiveScope.Body%2A>, la cual especifica alguna otra clase <xref:System.Activities.Activity>. La propiedad <xref:System.ServiceModel.Activities.TransactedReceiveScope.Request%2A> crea una transacción. Posteriormente, la transacción se prepara para el ámbito de la propiedad <xref:System.ServiceModel.Activities.TransactedReceiveScope.Body%2A> de forma que cualquier actividad en este ámbito se ejecute dentro de esta transacción.
 
 ### <a name="the-transactedreceivescope-properties"></a>Propiedades TransactedReceiveScope
 
-En la tabla siguiente se muestran las propiedades <xref:System.ServiceModel.Activities.TransactedReceiveScope> y se describe cómo se utilizan en el diseñador. Estos <xref:System.Activities.Activity.DisplayName%2A> propiedad se puede editar en cuadrícula de propiedades o en la superficie del Diseñador de flujo de trabajo, pero los otros se deben editar en la superficie de diseño.
+En la tabla siguiente se muestran las propiedades <xref:System.ServiceModel.Activities.TransactedReceiveScope> y se describe cómo se utilizan en el diseñador. Estas <xref:System.Activities.Activity.DisplayName%2A> propiedad se pueden editar en la cuadrícula de propiedades o en la superficie de Diseñador de flujo de trabajo, pero las demás se deben editar en la superficie de diseño.
 
-|Nombre de la propiedad|Obligatorio|Uso|
+|Nombre de la propiedad|Requerido|Uso|
 |-|--------------|-|
 |<xref:System.Activities.Activity.DisplayName%2A>|False|El nombre descriptivo opcional de la actividad de la clase <xref:System.ServiceModel.Activities.TransactedReceiveScope>. El valor predeterminado es TransactedReceiveScope.<br /><br /> Aunque el nombre <xref:System.Activities.Activity.DisplayName%2A> no es obligatorio, se recomienda usar un nombre para mostrar.|
-|<xref:System.ServiceModel.Activities.TransactedReceiveScope.Request%2A>|True|Quita un <xref:System.ServiceModel.Activities.Receive> actividad en el **solicitar** bloque en la superficie del Diseñador de actividad.|
-|<xref:System.ServiceModel.Activities.TransactedReceiveScope.Body%2A>|False|Quita un <xref:System.Activities.Activity> en el **cuerpo** bloque en la superficie del Diseñador de actividad.|
+|<xref:System.ServiceModel.Activities.TransactedReceiveScope.Request%2A>|True|Quita una actividad <xref:System.ServiceModel.Activities.Receive> en el bloque de **solicitud** en la superficie del diseñador de actividad.|
+|<xref:System.ServiceModel.Activities.TransactedReceiveScope.Body%2A>|False|Quita un <xref:System.Activities.Activity> en el bloque de **cuerpo** en la superficie del diseñador de actividad.|
 
 ## <a name="see-also"></a>Vea también
 

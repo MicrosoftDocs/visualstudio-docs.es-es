@@ -10,17 +10,17 @@ helpviewer_keywords:
 ms.assetid: 3b052047-f6db-46dd-b3bf-da1c348ee410
 caps.latest.revision: 33
 manager: jillfra
-ms.openlocfilehash: ba4b166cc409dd2c50c258a9b82ee34c22e9b084
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 5eeb5d06b0e689391f450fec8744fa58a41f4508
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60054773"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65681540"
 ---
 # <a name="managing-the-toolbox"></a>Managing the Toolbox
 [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)] permite un VSPackage como, por ejemplo, un editor o diseñador, para administrar la pertenencia y la apariencia del **Cuadro de herramientas**.  
   
- Además, el **Cuadro de herramientas** sí puede administrarse mediante la automatización. Para obtener más información sobre la administración de un cuadro de herramientas mediante automatización, vea [Cómo: El cuadro de herramientas de control](http://msdn.microsoft.com/library/c9d8a18a-d2bc-43d4-a803-601bfc6a6599).  
+ Además, el **Cuadro de herramientas** sí puede administrarse mediante la automatización. Para obtener más información sobre la administración de un cuadro de herramientas mediante automatización, vea [Cómo: El cuadro de herramientas de control](https://msdn.microsoft.com/library/c9d8a18a-d2bc-43d4-a803-601bfc6a6599).  
   
 ## <a name="automatic-toolbox-tab-selection"></a>Selección automática de la pestaña Cuadro de herramientas  
  Es posible activar de manera automática una categoría o pestaña **Cuadro de herramientas** determinada en función del diseñador o editor actualmente activo. Por ejemplo, si se activa un diseñador de formularios, puede que desee seleccionar la pestaña **Todos los formularios Windows Forms** .  
@@ -51,7 +51,7 @@ ms.locfileid: "60054773"
   
 - Un VSPackage debe usar <xref:Microsoft.VisualStudio.Shell.Interop.IVsToolbox2> para agregar controles o para hospedar el control en un control contenedor que se deriva de <xref:System.Windows.Forms.AxHost>.  
   
-   Visual Studio proporciona la herramienta `Aximp.exe` para automatizar el ajuste de un control de ActiveX en un control derivado de <xref:System.Windows.Forms.AxHost>. Para obtener más información, consulte [Aximp.exe (importador de controles de ActiveX de Windows Forms)](http://msdn.microsoft.com/library/482c0d83-7144-4497-b626-87d2351b78d0).  
+   Visual Studio proporciona la herramienta `Aximp.exe` para automatizar el ajuste de un control de ActiveX en un control derivado de <xref:System.Windows.Forms.AxHost>. Para obtener más información, consulte [Aximp.exe (importador de controles de ActiveX de Windows Forms)](https://msdn.microsoft.com/library/482c0d83-7144-4497-b626-87d2351b78d0).  
   
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsToolbox>, <xref:Microsoft.VisualStudio.Shell.Interop.IVsToolbox2> y <xref:Microsoft.VisualStudio.Shell.Interop.IVsToolbox3> son interfaces de COM que están disponibles a través de los ensamblados de interoperabilidad.  
   

@@ -9,12 +9,12 @@ caps.latest.revision: 17
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 1c422b1bb2e41e3b1a848d3957530f43177d9c29
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 97c45b4fc780330e0ac2b8396601e0e181ff4112
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54791811"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65683681"
 ---
 # <a name="profiling-aspnet-load-tests"></a>Generar perfiles para las pruebas de carga de ASP.NET
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,7 +25,7 @@ Puede recopilar datos de generación de perfiles de pruebas web de [!INCLUDE[TCM
 
  [Cómo: Configurar el generador de perfiles ASP.NET para pruebas de carga mediante la configuración de pruebas en Visual Studio](/visualstudio/test/how-to-configure-aspnet-profiler-for-load-tests-using-test-settings?view=vs-2015)
 
- [Ejecutar pruebas del sistema mediante Microsoft Visual Studio](http://msdn.microsoft.com/library/19fae5c4-5798-4c4c-b531-3e8f901b1130).
+ [Ejecutar pruebas del sistema mediante Microsoft Visual Studio](https://msdn.microsoft.com/library/19fae5c4-5798-4c4c-b531-3e8f901b1130).
 
 ## <a name="see-also"></a>Vea también
 

@@ -6,17 +6,17 @@ helpviewer_keywords:
 - source control [Visual Studio SDK], adding and opening solutions
 - source control plug-ins, adding and opening solutions
 ms.assetid: 5b3b5b08-5e9b-41be-ac72-c63957faed22
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 699496825e272fc492bac8ef4fe472019b1935d2
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 1e490ac500d5598866dbf66e3562dbb156fecb6e
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60083522"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66331097"
 ---
 # <a name="test-area-1-add-toopen-from-source-control"></a>Área de prueba 1: Agregar a / abrir desde Control de código fuente
 Este complemento de control de origen de prueba área abarca la colocación de las soluciones o proyectos bajo control de código fuente y recuperarlos desde el control de código fuente.
@@ -37,7 +37,7 @@ Este complemento de control de origen de prueba área abarca la colocación de l
 - Para [!INCLUDE[vsvss](../../extensibility/includes/vsvss_md.md)], agregar control de código fuente también está disponible en **archivo**, **agregar**, **proyecto existente**; Fíjese en el [!INCLUDE[vsvss](../../extensibility/includes/vsvss_md.md)] ubicación.
 
   > [!NOTE]
-  >  En esta prueba se puede usar una ruta de acceso de un archivo local o un servidor de IIS local (servidor web).
+  > En esta prueba se puede usar una ruta de acceso de un archivo local o un servidor de IIS local (servidor web).
 
 ## <a name="expected-behavior"></a>Comportamiento esperado
 

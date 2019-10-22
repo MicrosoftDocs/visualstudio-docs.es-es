@@ -8,17 +8,17 @@ helpviewer_keywords:
 - Help Viewer, Viewer Options
 - Viewer Options [Help Viewer]
 ms.assetid: 9c0bc950-7323-4f0f-8de2-0b0af9a42b85
-author: gewarren
-ms.author: gewarren
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e416a0dc91cfd4bd77983f1e0e5d215a85ee1f27
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 8edcdee8ffe4c2b8a97f4ed65ae86f925db42b1c
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62557468"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67825022"
 ---
 # <a name="customize-the-help-viewer"></a>Personalizar el Visor de Ayuda
 Puede personalizar el diseño de las ventanas del Visor de Ayuda, así como otras opciones como el tamaño de fuente, el número máximo de resultados y si se debe incluir el contenido en inglés.

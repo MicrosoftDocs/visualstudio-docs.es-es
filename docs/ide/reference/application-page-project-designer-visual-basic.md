@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 84874328c2f7a20a79370ff210eb51d966ec4648
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 032bc54d5e904cf23d3e886c7dfeb38aa3ecfd93
+ms.sourcegitcommit: d4920babfc3d24a3fe1d4bf446ed3fe73b344467
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62791661"
+ms.lasthandoff: 06/17/2019
+ms.locfileid: "67160066"
 ---
 # <a name="application-page-project-designer-visual-basic"></a>Application Page, Project Designer (Visual Basic)
 
@@ -57,14 +57,14 @@ Para obtener información sobre cómo tener acceso a esta propiedad mediante pro
 
 ### <a name="target-framework-all-configurations"></a>Plataforma de destino (todas las configuraciones)
 
-Especifica la versión de .NET Framework a la que se destina la aplicación. Esta opción puede tener valores diferentes dependiendo de qué versiones de .NET Framework están instaladas en el equipo.
+Especifica la versión de .NET a la que se destina la aplicación. Esta opción puede tener valores diferentes según las versiones de .NET instaladas en el equipo.
 
-El valor predeterminado coincide con la plataforma de destino especificada al crear el proyecto.
+En los proyectos de .NET Framework, el valor predeterminado coincide con el marco de destino especificado al crear el proyecto.
 
 > [!NOTE]
 > Los paquetes de requisitos previos que se muestran en el [cuadro de diálogo Requisitos previos](../../ide/reference/prerequisites-dialog-box.md) se establecen automáticamente la primera vez que abre el cuadro de diálogo. Si posteriormente cambia la plataforma de destino del proyecto, debe especificar manualmente los requisitos previos para que coincidan con la nueva plataforma de destino.
 
-Para obtener más información, vea [Cómo: Usar como destino una versión de .NET Framework](../../ide/how-to-target-a-version-of-the-dotnet-framework.md) e [Información general sobre la compatibilidad con múltiples versiones (multi-targeting) en Visual Studio](../../ide/visual-studio-multi-targeting-overview.md).
+Para obtener más información, vea [Información general sobre destinos de Framework](../../ide/visual-studio-multi-targeting-overview.md).
 
 ### <a name="application-type"></a>Tipo de aplicación
 
@@ -86,11 +86,11 @@ Especifica el punto de entrada o el formulario de inicio de la aplicación.
 
 Si **Habilitar marco de trabajo de la aplicación** está seleccionado (valor predeterminado), esta lista se titula **Formulario de inicio** y muestra solo formularios, ya que el marco de trabajo de la aplicación admite solo formularios de inicio, no objetos.
 
-Si el proyecto es una Aplicación de explorador WPF, esta lista se titula **URI de inicio** y el valor predeterminado es **Page1.xaml**. La lista **URI de inicio** le permite especificar el recurso de interfaz de usuario (un elemento XAML) que la aplicación muestra al iniciarse. Para obtener más información, vea <xref:System.Windows.Application.StartupUri%2A>.
+Si el proyecto es una Aplicación de explorador WPF, esta lista se titula **URI de inicio** y el valor predeterminado es **Page1.xaml**. La lista **URI de inicio** le permite especificar el recurso de interfaz de usuario (un elemento XAML) que la aplicación muestra al iniciarse. Para más información, consulte <xref:System.Windows.Application.StartupUri%2A>.
 
 Si **Habilitar marco de trabajo de la aplicación** está desactivado, esta lista se convierte en **Objeto de inicio** y muestra los formularios y las clases o módulos con un `Sub Main`.
 
-**Objeto de inicio** define el punto de entrada al que se va a llamar cuando se cargue la aplicación. Normalmente, esto se establece en el formulario principal de la aplicación o en el procedimiento `Sub Main` que debe ejecutarse cuando se inicia la aplicación. Dado que las bibliotecas de clases no tienen un punto de entrada, la única opción para esta propiedad es **(None)**. Para obtener más información, vea [/main](/dotnet/visual-basic/reference/command-line-compiler/main). Para obtener acceso a esta propiedad mediante programación, vea <xref:VSLangProj.ProjectProperties.StartupObject%2A>.
+**Objeto de inicio** define el punto de entrada al que se va a llamar cuando se cargue la aplicación. Normalmente, esto se establece en el formulario principal de la aplicación o en el procedimiento `Sub Main` que debe ejecutarse cuando se inicia la aplicación. Dado que las bibliotecas de clases no tienen un punto de entrada, la única opción para esta propiedad es **(None)** . Para obtener más información, vea [/main](/dotnet/visual-basic/reference/command-line-compiler/main). Para obtener acceso a esta propiedad mediante programación, vea <xref:VSLangProj.ProjectProperties.StartupObject%2A>.
 
 ### <a name="icon"></a>Iconos
 
@@ -153,7 +153,7 @@ Seleccione **Al cerrar la ventana principal** para especificar que se salga de l
 
 ### <a name="splash-screen"></a>Pantalla de presentación
 
-Seleccione el formulario que quiere usar como una pantalla de presentación. Debe haber creado anteriormente una pantalla de presentación con un formulario o una plantilla. El valor predeterminado es **(None)**.
+Seleccione el formulario que quiere usar como una pantalla de presentación. Debe haber creado anteriormente una pantalla de presentación con un formulario o una plantilla. El valor predeterminado es **(None)** .
 
 ### <a name="view-application-events"></a>Ver eventos de aplicaciones
 

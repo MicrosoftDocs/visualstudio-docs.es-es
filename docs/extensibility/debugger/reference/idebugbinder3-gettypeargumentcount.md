@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugBinder3::GetTypeArgumentCount method
 ms.assetid: caf68de6-6f7c-4efd-b803-121347a5032e
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 77d4140a37577fa5bf4734e386300e062ef80399
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: b9dff83d4d9c09ebc2572fa3897ae528d2adce4b
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56725052"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66330760"
 ---
 # <a name="idebugbinder3gettypeargumentcount"></a>IDebugBinder3::GetTypeArgumentCount
 Este método devuelve el número de tipos de argumentos asociada a este objeto.
@@ -36,10 +39,9 @@ int GetTypeArgumentCount(
 );
 ```
 
-#### <a name="parameters"></a>Parámetros
- `uCount`
-
- [out] Número de tipos de argumentos asociada a este objeto.
+## <a name="parameters"></a>Parámetros
+`uCount`\
+[out] Número de tipos de argumentos asociada a este objeto.
 
 ## <a name="return-value"></a>Valor devuelto
  Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.

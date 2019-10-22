@@ -2,23 +2,23 @@
 title: Directiva de importación T4
 ms.date: 11/04/2016
 ms.topic: reference
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f49ab8d3462877a28cf40aed519b71615b23f8d4
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 74181ea3bb086688893749850adb697c75b6eac1
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55914076"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72606442"
 ---
 # <a name="t4-import-directive"></a>Directiva de importación T4
 
-En los bloques de código de una plantilla de texto T4 de Visual Studio, el `import` directiva le permite hacer referencia a los elementos de otro espacio de nombres sin proporcionar un nombre completo. Es el equivalente de `using` en C# o `imports` en [!INCLUDE[vb_current_short](../debugger/includes/vb_current_short_md.md)].
+En los bloques de código de una plantilla de texto T4 de Visual Studio, la Directiva `import` permite hacer referencia a los elementos de otro espacio de nombres sin proporcionar un nombre completo. Es el equivalente de `using` en C# o `imports` en [!INCLUDE[vb_current_short](../debugger/includes/vb_current_short_md.md)].
 
-Para obtener una descripción general de la escritura de plantillas de texto T4, vea [escribir una plantilla de texto T4](../modeling/writing-a-t4-text-template.md).
+Para obtener información general sobre cómo escribir plantillas de texto T4, consulte [escribir una plantilla de texto T4](../modeling/writing-a-t4-text-template.md).
 
 ## <a name="using-the-import-directive"></a>Usar la directiva de importación
 
@@ -47,7 +47,7 @@ The file contains: <#=  fileContent #>
 
 - `Microsoft.VisualStudio.Modeling`
 
-- Espacio de nombres de su DSL
+- El espacio de nombres de DSL
 
 ## <a name="see-also"></a>Vea también
 

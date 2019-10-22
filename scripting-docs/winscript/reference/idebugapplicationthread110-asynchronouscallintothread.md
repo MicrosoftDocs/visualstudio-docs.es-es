@@ -1,5 +1,5 @@
 ---
-title: IDebugApplicationThread110::AsynchronousCallIntoThread | Microsoft Docs
+title: 'Idebugapplicationthread110 (:: AsynchronousCallIntoThread | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -11,18 +11,18 @@ caps.latest.revision: 2
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f5b2152409c22d7a6e91a83bc85c6d6608386f3b
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 595e73787421b5a5e9ca9407dd174c50451051c2
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58152608"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72577409"
 ---
 # <a name="idebugapplicationthread110asynchronouscallintothread"></a>IDebugApplicationThread110::AsynchronousCallIntoThread
 Realiza una llamada asincrónica en el subproceso principal.  
   
 > [!IMPORTANT]
->  [IDebugApplicationThread110 (interfaz)](../../winscript/reference/idebugapplicationthread110-interface.md) es implementada por PDM v11.0 y versiones posteriores. Se encuentra en activdbg100.h.  
+> La [interfaz idebugapplicationthread110 (](../../winscript/reference/idebugapplicationthread110-interface.md) se implementa mediante PDM v 11.0 y versiones posteriores. Se encuentra en activdbg100.h.  
   
 ## <a name="syntax"></a>Sintaxis  
   
@@ -32,19 +32,19 @@ HRESULT AsynchronousCallInMainThread([in] IDebugThreadCall* pptc, [in] DWORD_PTR
   
 #### <a name="parameters"></a>Parámetros  
  `pptc`  
- El [IDebugThreadCall (interfaz)](../../winscript/reference/idebugthreadcall-interface.md) objeto va a llamar.  
+ Objeto de [interfaz idebugthreadcall (](../../winscript/reference/idebugthreadcall-interface.md) que se va a llamar.  
   
  `dwParam1`  
- El primer parámetro de la llamada.  
+ Primer parámetro de la llamada.  
   
  `dwParam1`  
- El primer parámetro de la llamada.  
+ Primer parámetro de la llamada.  
   
  `dwParam2`  
- El segundo parámetro de la llamada.  
+ Segundo parámetro de la llamada.  
   
  `dwParam3`  
- El tercer parámetro de la llamada.  
+ Tercer parámetro de la llamada.  
   
 ## <a name="see-also"></a>Vea también  
  [IDebugApplication110 (Interfaz)](../../winscript/reference/idebugapplication110-interface.md)

@@ -13,11 +13,11 @@ caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: aa630a6f2084f7ff79a9c89b685658cf694fcab9
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 0cd282a7584b9bfd4df7882f8fdf3ad8a270e219
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58997804"
+ms.lasthandoff: 07/01/2019
+ms.locfileid: "62547317"
 ---
 # <a name="idebugfieldequal"></a>IDebugField::Equal
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]

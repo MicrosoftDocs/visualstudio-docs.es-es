@@ -1,5 +1,5 @@
 ---
-title: Depurar aplicaciones ClickOnce que utilizan System.Deployment.Application | Microsoft Docs
+title: Depurar aplicaciones ClickOnce que utilizan System.Deployment.Application
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1efa919349535a2cb73ca80f2015ef0d0df93cd7
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.openlocfilehash: d70697e3523fcb12384cb51415f73ebd210f45c9
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56637469"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66262010"
 ---
 # <a name="debug-clickonce-applications-that-use-systemdeploymentapplication"></a>Depuración de aplicaciones ClickOnce que usan System.Deployment.Application
 En [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)], [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] implementación le permite configurar cómo se actualiza una aplicación. Sin embargo, si tiene que usar y personalizar avanzados [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] características de implementación, deberá obtener acceso al modelo de objeto implementación proporcionado por <xref:System.Deployment.Application>. Puede usar el <xref:System.Deployment.Application> API para las tareas avanzadas, como:

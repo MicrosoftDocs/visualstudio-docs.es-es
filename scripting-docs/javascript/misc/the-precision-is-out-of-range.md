@@ -1,5 +1,5 @@
 ---
-title: La precisión está fuera del intervalo | Documentos de Microsoft
+title: La precisión está fuera del intervalo | Microsoft Docs
 ms.date: 01/18/2017
 ms.prod: visual-studio-windows
 ms.technology: vs-javascript
@@ -14,19 +14,19 @@ ms.assetid: c16760ac-fc08-49d7-8878-9bc434b3c080
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 92a6e7fc6433f120c053303421feb5e8d58bd1c1
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 364794472cbf17643cebbd926cd3fda6e93be1f9
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60095521"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72577284"
 ---
 # <a name="the-precision-is-out-of-range"></a>La precisión está fuera del intervalo
-Se intentó pasar un argumento no válido a la función **Number.prototype.toPrecision**. El argumento **toPrecision** debe estar entre 1 y 21 (ambos inclusive).  
+Intentó pasar un argumento no válido a la función **Number. prototype. toPrecision**. El argumento de **toPrecision** debe estar entre 1 y 21 (ambos incluidos).  
   
 ### <a name="to-correct-this-error"></a>Para corregir este error  
   
-- Garantizar que el argumento para `toPrecision` no es demasiado grande o demasiado pequeño.  
+- Asegúrese de que el argumento para `toPrecision` no es demasiado grande o demasiado pequeño.  
   
 ## <a name="see-also"></a>Vea también  
  [toPrecision (Método, Number)](../../javascript/reference/toprecision-method-number-javascript.md)

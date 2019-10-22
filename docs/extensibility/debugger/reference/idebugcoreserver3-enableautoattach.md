@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugCoreServer3::EnableAutoAttach
 ms.assetid: 06aa633b-263b-4e08-8844-9a52d5120b94
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e6c1bf5f210d9b37b35d43a393a25b1c9df44a7e
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 9eb8beed7f32e9c6fb64212f73a41a35544259bb
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56691272"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66326972"
 ---
 # <a name="idebugcoreserver3enableautoattach"></a>IDebugCoreServer3::EnableAutoAttach
 Habilita la asociación automática para los motores de depuración especificado.
@@ -42,22 +45,18 @@ int EnableAutoAttach(
 );
 ```
 
-#### <a name="parameters"></a>Parámetros
- `rgguidSpecificEngines`
+## <a name="parameters"></a>Parámetros
+`rgguidSpecificEngines`\
+[in] Matriz de GUID para cada motor de depuración que se va a marcar como asociar en automático.
 
- [in] Matriz de GUID para cada motor de depuración que se va a marcar como asociar en automático.
+`celtSpecificEngines`\
+[in] El número de motores especificado en `rgguidSpecificEngines`.
 
- `celtSpecificEngines`
+`pszStartPageUrl`\
+[in] La dirección URL de inicio a usar al adjuntar en automático.
 
- [in] El número de motores especificado en `rgguidSpecificEngines`.
-
- `pszStartPageUrl`
-
- [in] La dirección URL de inicio a usar al adjuntar en automático.
-
- `pbstrSessionID`
-
- [out] Identificador de la sesión que estaba conectado a la automática.
+`pbstrSessionID`\
+[out] Identificador de la sesión que estaba conectado a la automática.
 
 ## <a name="return-value"></a>Valor devuelto
  Si es correcto, devuelve `S_OK`; en caso contrario, devuelve el código de error. Un código de error es `E_AUTO_ATTACH_NOT_REGISTERED`, lo que indica que el generador de clases auto-attach no se ha registrado.

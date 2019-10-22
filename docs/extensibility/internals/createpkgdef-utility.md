@@ -8,23 +8,23 @@ helpviewer_keywords:
 - pkgdef
 - createpkgdef
 ms.assetid: c745cb76-47a6-49ff-9eed-16af0f748e35
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 96b0343cd088a8d608cd3503162bf7fa737b79f4
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 6ab5866949d6ccfa9f3b1037abf7801ce40ace3d
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56602447"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66332286"
 ---
 # <a name="createpkgdef-utility"></a>Utilidad CreatePkgDef
 Toma un archivo .dll para una extensión de Visual Studio como un parámetro y crea un *.pkgdef* archivo para acompañar la *.dll* archivo. El *.pkgdef* archivo contiene toda la información en caso contrario, se escribiría en el registro del sistema cuando se instala la extensión.
 
 > [!NOTE]
->  La mayoría de las plantillas de proyecto que se incluyen automáticamente en el SDK de Visual Studio cree *.pkgdef* archivos como parte del proceso de compilación. Este documento está pensado para aquellos que deseen crear manualmente paquetes o convertir los paquetes existentes para usar *.pkgdef* implementación.
+> La mayoría de las plantillas de proyecto que se incluyen automáticamente en el SDK de Visual Studio cree *.pkgdef* archivos como parte del proceso de compilación. Este documento está pensado para aquellos que deseen crear manualmente paquetes o convertir los paquetes existentes para usar *.pkgdef* implementación.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -33,29 +33,54 @@ CreatePkgDef /out=<FileName> [/codebase] [/assembly] <AssemblyPath>
 ```
 
 ## <a name="arguments"></a>Argumentos
- **/ out =&lt;FileName&gt;**  necesarios. Establece el nombre de la *.pkgdef* archivo de salida &lt;FileName&gt;.
+**/out=&lt;FileName&gt;** \
+Obligatorio. Establece el nombre de la *.pkgdef* archivo de salida &lt;FileName&gt;.
 
- **/CODEBASE** opcional. Fuerza el registro con el **CodeBase** utilidad.
+**/codebase**\
+Opcional. Fuerza el registro con el **CodeBase** utilidad.
 
- **/Assembly** fuerza el registro con el **ensamblado** utilidad.
+**/assembly**\
+Fuerza el registro con el **ensamblado** utilidad.
 
- **&lt;AssemblyPath&gt;**  la ruta de acceso de la *.dll* archivo desde el que desea generar el *.pkgdef*.
+**&lt;AssemblyPath&gt;** \
+La ruta de acceso de la *.dll* archivo desde el que desea generar el *.pkgdef*.
 
 ## <a name="remarks"></a>Comentarios
- Implementación de extensión mediante el uso de *.pkgdef* archivos reemplaza los requisitos del registro de versiones anteriores de Visual Studio.
+Implementación de extensión mediante el uso de *.pkgdef* archivos reemplaza los requisitos del registro de versiones anteriores de Visual Studio.
 
- El *.pkgdef* archivos deben estar instalados en una de las siguientes ubicaciones:
+::: moniker range=">=vs-2019"
 
-- *%localappdata%\Microsoft\Visual Studio\14.0\Extensions\\*
+El *.pkgdef* archivos deben estar instalados en una de las siguientes ubicaciones:
+
+- *%localappdata%\Microsoft\Visual Studio\16.0\Extensions\\*
 
 - *%vsinstalldir%\Common7\IDE\Extensions\\*
 
-  Si la carpeta de instalación es *%localappdata%\Microsoft\Visual Studio\14.0\Extensions\\*, la extensión de Visual Studio reconocerá, pero se deshabilitará de forma predeterminada. El usuario puede habilitar la extensión mediante **extensiones y actualizaciones**.
+Si la carpeta de instalación es *%localappdata%\Microsoft\Visual Studio\16.0\Extensions\\* , la extensión de Visual Studio reconoce pero está deshabilitada de forma predeterminada. El usuario puede habilitar la extensión mediante **administrar extensiones**.
 
-  Si la carpeta de instalación es *%vsinstalldir%\Common7\IDE\Extensions\\*, la extensión está habilitada de forma predeterminada.
+Si la carpeta de instalación es *%vsinstalldir%\Common7\IDE\Extensions\\* , la extensión está habilitada de forma predeterminada.
 
 > [!NOTE]
->  El **extensiones y actualizaciones** herramienta no puede utilizarse para tener acceso a una extensión a menos que se instala como parte de un paquete VSIX.
+> El **administrar extensiones** herramienta no puede utilizarse para tener acceso a una extensión a menos que se instala como parte de un paquete VSIX.
+
+::: moniker-end
+
+::: moniker range="vs-2017"
+
+El *.pkgdef* archivos deben estar instalados en una de las siguientes ubicaciones:
+
+- *%localappdata%\Microsoft\Visual Studio\15.0\Extensions\\*
+
+- *%vsinstalldir%\Common7\IDE\Extensions\\*
+
+Si la carpeta de instalación es *%localappdata%\Microsoft\Visual Studio\15.0\Extensions\\* , la extensión de Visual Studio reconoce pero está deshabilitada de forma predeterminada. El usuario puede habilitar la extensión mediante **extensiones y actualizaciones**.
+
+Si la carpeta de instalación es *%vsinstalldir%\Common7\IDE\Extensions\\* , la extensión está habilitada de forma predeterminada.
+
+> [!NOTE]
+> El **extensiones y actualizaciones** herramienta no puede utilizarse para tener acceso a una extensión a menos que se instala como parte de un paquete VSIX.
+
+::: moniker-end
 
 ## <a name="see-also"></a>Vea también
 - [CreateExpInstance utility](../../extensibility/internals/createexpinstance-utility.md)

@@ -1,5 +1,5 @@
 ---
-title: ISetNextStatement::CanSetNextStatement | Microsoft Docs
+title: 'Isetnextstatement (:: CanSetNextStatement | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -15,15 +15,15 @@ caps.latest.revision: 6
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: eb65faaf107c42b44201ea18c1150f8093b1654c
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 56cf0b2e4afd7a86a087b37be4b23758a5b59720
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58158950"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72571841"
 ---
 # <a name="isetnextstatementcansetnextstatement"></a>ISetNextStatement::CanSetNextStatement
-Este método determina si el punto de ejecución, que determina la siguiente instrucción de ejecución de código, se puede establecer en la ubicación especificada.  
+Este método determina si el punto de ejecución, que determina la siguiente instrucción de código que se va a ejecutar, puede establecerse en la ubicación especificada.  
   
 ## <a name="syntax"></a>Sintaxis  
   
@@ -36,18 +36,18 @@ HRESULT CanSetNextStatement(
   
 #### <a name="parameters"></a>Parámetros  
  `pStackFrame`  
- [in] Puntero a un objeto de marco de pila.  
+ de Puntero a un objeto de marco de pila.  
   
  `pCodeContext`  
- [in] Puntero a un objeto de contexto de código.  
+ de Puntero a un objeto de contexto de código.  
   
 ## <a name="return-value"></a>Valor devuelto  
  El método devuelve un objeto `HRESULT`. Entre los valores posibles se incluyen los que se indican en la tabla siguiente, entre otros.  
   
 |Valor|Descripción|  
 |-----------|-----------------|  
-|`S_OK`|La siguiente instrucción que se puede actualizar en el contexto de código especificado.|  
-|`S_FALSE`|No se puede actualizar la siguiente instrucción en el contexto de código especificado.|  
+|`S_OK`|La siguiente instrucción se puede actualizar al contexto de código especificado.|  
+|`S_FALSE`|La siguiente instrucción no se puede actualizar al contexto de código especificado.|  
   
 ## <a name="remarks"></a>Comentarios  
   

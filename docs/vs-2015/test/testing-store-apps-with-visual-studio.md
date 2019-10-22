@@ -1,19 +1,19 @@
 ---
-title: Probar aplicaciones de Store
+title: Probar aplicaciones de la tienda
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-test
 ms.topic: reference
 ms.assetid: cf4000b4-91b5-4b3f-a00d-cc8d192467c2
 caps.latest.revision: 22
-ms.author: gewarren
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 4817fdd346f8c60d061eaa18d9e8a335a5b26ea2
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 95f321d3f025ffc96477e288d6657f991bd90b30
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54784760"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72672108"
 ---
 # <a name="testing-store-apps-with-visual-studio"></a>Probar aplicaciones de la Tienda con Visual Studio
 

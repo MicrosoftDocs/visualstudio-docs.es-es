@@ -9,11 +9,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 2ee29b677096e46d965e8191cf26a829587471dd
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56622987"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62969633"
 ---
 # <a name="globalon-and-globaloff"></a>GlobalOn y GlobalOff
 Las opciones **GlobalOff** y **GlobalOn** de *VSPerfCmd.exe* pausan y reanudan la generación de perfiles para todos los procesos y subprocesos de una sesión de generación de perfiles de la línea de comandos.
@@ -54,9 +54,9 @@ VSPerfCmd.exe {Launch:AppName|Attach:PID} /{GlobalOff|GlobalOn}[Options]
 
  **Attach:** `PID` Inicia la generación de perfiles del proceso especificado.
 
- {**ProcessOff**&#124;**ProcessOn**}**:**`PID` Detiene o inicia la generación de perfiles para el proceso especificado.
+ {**ProcessOff**&#124;**ProcessOn**} **:** `PID` Detiene o inicia la generación de perfiles para el proceso especificado.
 
- {**ThreadOff**&#124;**ThreadOn**}**:**`TID` Detiene o inicia la generación de perfiles para el proceso especificado (solo método de instrumentación).
+ {**ThreadOff**&#124;**ThreadOn**} **:** `TID` Detiene o inicia la generación de perfiles para el proceso especificado (solo método de instrumentación).
 
 ## <a name="example"></a>Ejemplo
  En este ejemplo, las opciones **GlobalOff** y **GlobalOn** se utilizan para evitar la recopilación de datos de generación de perfiles para el inicio y el cierre de la aplicación.

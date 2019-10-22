@@ -1,5 +1,5 @@
 ---
-title: IActiveScriptGarbageCollector::CollectGarbage | Microsoft Docs
+title: 'IActiveScriptGarbageCollector:: recolector | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -11,15 +11,15 @@ caps.latest.revision: 3
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: db8683534e449b2cdd8fcdb344c245d93da8fafc
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 0539ed2cb3540cf33ceaaa15827c3ca08c156698
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58144672"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72573585"
 ---
 # <a name="iactivescriptgarbagecollectorcollectgarbage"></a>IActiveScriptGarbageCollector::CollectGarbage
-El host de Active Script llama a este método para iniciar la recolección de elementos no utilizados.  
+El host de script activo llama a este método para iniciar la recolección de elementos no utilizados.  
   
 ## <a name="syntax"></a>Sintaxis  
   
@@ -29,7 +29,7 @@ HRESULT CollectGarbage(        SCRIPTGCTYPE scriptgctype    );
   
 #### <a name="parameters"></a>Parámetros  
  `scriptgctype`  
- [in] El [SCRIPTGCTYPE (enumeración)](../../winscript/reference/scriptgctype-enumeration.md) que especifica si se debe realizar la recolección normal o exhaustiva.  
+ de La [enumeración scriptgctype (](../../winscript/reference/scriptgctype-enumeration.md) que especifica si se va a realizar la recolección de elementos no utilizados normal o exhaustiva.  
   
 ## <a name="return-value"></a>Valor devuelto  
  Devuelve un valor HRESULT.  

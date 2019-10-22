@@ -16,18 +16,18 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: c9f64e2cebf267e9be1773b37a5827c876961a0d
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: 8dfde37125b78e2ff8077712321b3a19816582cf
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56609532"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63387805"
 ---
 # <a name="browse-sharepoint-connections-by-using-server-explorer"></a>Examinar las conexiones de SharePoint mediante el Explorador de servidores
   Ahora puede examinar las conexiones locales de SharePoint en **Explorador de servidores**. Mediante esta técnica, puede navegar a través de los componentes de un sitio de SharePoint en el sistema. Componentes de sitio de SharePoint, como las definiciones de lista y tipos de contenido aparecen en un nodo que se denomina **conexiones de SharePoint** en la vista de árbol de **Explorador de servidores**. Para mostrar **Explorador de servidores**, en la barra de menús, elija **vista** > **Explorador de servidores**. Además de mostrar los componentes de sitio de SharePoint, puede quitar elementos, ver sus propiedades o actualizar la vista de árbol mediante comandos en el menú contextual.
 
 > [!IMPORTANT]
->  Para examinar un sitio de SharePoint, debe ser un administrador de la colección de sitios de SharePoint, y debe ejecutar Visual Studio como administrador del equipo local. En caso contrario, el sitio aparece en **Explorador de servidores**, pero no se puede expandir el nodo. Para comprobar si es administrador de la colección de sitios, abra el sitio en un explorador web, abrirlo el **acciones del sitio** menú, elija **los permisos de sitio**y, a continuación, en el **permisos: Sitio del equipo** página, elija el **Site Collection Administrators** comando desde el **administrar** grupo en la cinta de opciones. El nombre aparecerá en el cuadro de texto si es un administrador de colección de sitios. Si el **Site Collection Administrators** comando no aparece en el grupo de administración en la cinta de opciones, no es un administrador de la colección de sitios y debe obtener los permisos adecuados al administrador del sitio.
+> Para examinar un sitio de SharePoint, debe ser un administrador de la colección de sitios de SharePoint, y debe ejecutar Visual Studio como administrador del equipo local. En caso contrario, el sitio aparece en **Explorador de servidores**, pero no se puede expandir el nodo. Para comprobar si es administrador de la colección de sitios, abra el sitio en un explorador web, abrirlo el **acciones del sitio** menú, elija **los permisos de sitio**y, a continuación, en el **permisos: Sitio del equipo** página, elija el **Site Collection Administrators** comando desde el **administrar** grupo en la cinta de opciones. El nombre aparecerá en el cuadro de texto si es un administrador de colección de sitios. Si el **Site Collection Administrators** comando no aparece en el grupo de administración en la cinta de opciones, no es un administrador de la colección de sitios y debe obtener los permisos adecuados al administrador del sitio.
 
 ## <a name="server-explorer-nodes"></a>Nodos del explorador de servidores
  Todos los componentes de un sitio de SharePoint están representado por un nodo en el **Explorador de servidores** en la vista de árbol **conexiones de SharePoint**. Por ejemplo, los sitios de SharePoint predeterminada incluyen un tipo de contenido denominado discusión, que representa un tipo de análisis que se muestra en el **discusiones** página del sitio de SharePoint. El tipo de contenido contiene varios campos. Para ver estos campos en **Explorador de servidores**, expanda el **ContentTypes** nodo y, a continuación, el **discusión** nodo. En existen varios nodos de campo, como cuerpo, asunto de discusión y título.

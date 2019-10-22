@@ -1,5 +1,5 @@
 ---
-title: Procedimiento Implementar y publicar una solución de SharePoint en un sitio de SharePoint Local | Documentos de Microsoft
+title: Implementar y publicar soluciones de SharePoint en el sitio de SharePoint local
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 9537b3eef0d5da445d9456b414c89bbaac08ae87
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 3e68fc4e49311535169ab37a2332b443ba632fb5
+ms.sourcegitcommit: 25570fb5fb197318a96d45160eaf7def60d49b2b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60067760"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "66401451"
 ---
 # <a name="how-to-deploy-and-publish-a-sharepoint-solution-to-a-local-sharepoint-site"></a>Procedimiento Implementar y publicar una solución de SharePoint en un sitio de SharePoint local
   Puede implementar o publicar soluciones de SharePoint en un servidor de SharePoint local en el equipo de desarrollo. Las copias del proceso de implementación el *.wsp* archivo al servidor de SharePoint, instala la solución y, a continuación, activa las características. La publicación solo copias de procesar el *.wsp* archivo al servidor de SharePoint y lo instala. Debe activar manualmente para habilitarlo en SharePoint.
@@ -39,7 +39,7 @@ ms.locfileid: "60067760"
 
 3. En el **ubicación de destino** cuadro de texto, escriba una ruta de acceso local y, a continuación, elija el **publicar** botón.
 
-     Aparece el progreso de la publicación en Visual Studio **salida** ventana. Cuando finalice el proceso, la solución (*.wsp*) está instalado el archivo en el servidor de SharePoint local. Sin embargo, todavía debe activarse para su uso en SharePoint. Si ya existe el archivo de solución, un error se produce y se le pregunta si desea sobrescribir el archivo existente. Para obtener información sobre cómo actualizar el paquete, vea la sección sobre cómo actualizar los paquetes remotos en [Cómo: Implementar, publicar y actualizar soluciones de SharePoint en un servidor remoto](../sharepoint/how-to-deploy-publish-and-upgrade-sharepoint-solutions-on-a-remote-server.md).
+     Aparece el progreso de la publicación en Visual Studio **salida** ventana. Cuando finalice el proceso, la solución ( *.wsp*) está instalado el archivo en el servidor de SharePoint local. Sin embargo, todavía debe activarse para su uso en SharePoint. Si ya existe el archivo de solución, un error se produce y se le pregunta si desea sobrescribir el archivo existente. Para obtener información sobre cómo actualizar el paquete, vea la sección sobre cómo actualizar los paquetes remotos en [Cómo: Implementar, publicar y actualizar soluciones de SharePoint en un servidor remoto](../sharepoint/how-to-deploy-publish-and-upgrade-sharepoint-solutions-on-a-remote-server.md).
 
 ## <a name="see-also"></a>Vea también
 - [Cómo: Implementar, publicar y actualizar soluciones de SharePoint en un servidor remoto](../sharepoint/how-to-deploy-publish-and-upgrade-sharepoint-solutions-on-a-remote-server.md)

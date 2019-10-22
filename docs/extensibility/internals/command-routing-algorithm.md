@@ -6,17 +6,17 @@ helpviewer_keywords:
 - commands, routing
 - command routing
 ms.assetid: 998b616b-bd08-45cb-845f-808efb8c33bc
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 591a5bdbeaa8724eb51d5755066b382c08740bf9
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: c98e145961f8d98c7ea939bd051a94ee68cd93f4
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60102960"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66342109"
 ---
 # <a name="command-routing-algorithm"></a>Algoritmo de enrutamiento de comandos
 En Visual Studio, los comandos se controlan mediante una serie de diferentes componentes. Los comandos se enrutan desde el contexto más interno, que se basa en la selección actual, en el contexto más externo (también conocido como global). Para obtener más información, consulte [comando disponibilidad](../../extensibility/internals/command-availability.md).

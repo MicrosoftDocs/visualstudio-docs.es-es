@@ -11,12 +11,12 @@ caps.latest.revision: 56
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ed5232ed8f0033e5953f14b8e4a9aa08abcb316c
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 2957cb0a45b0cec6f50ef6228b798ce8279f456c
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54805657"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65685390"
 ---
 # <a name="overview-of-domain-specific-language-tools"></a>Información general sobre las herramientas de los lenguajes específicos de dominio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,13 +25,13 @@ Las Herramientas del lenguaje específico de dominio (herramientas DSL), que se 
   
  En Herramientas DSL se incluyen estas herramientas:  
   
--   Asistente de proyectos que usa plantillas de solución diferentes con las que podrá empezar a desarrollar su lenguaje específico de dominio de manera sencilla.  
+- Asistente de proyectos que usa plantillas de solución diferentes con las que podrá empezar a desarrollar su lenguaje específico de dominio de manera sencilla.  
   
--   Diseñador gráfico para crear y editar la definición de lenguaje específico de dominio.  
+- Diseñador gráfico para crear y editar la definición de lenguaje específico de dominio.  
   
--   Motor de validación que garantiza que la definición de lenguaje específico de dominio es correcta y muestra errores y advertencias si hay problemas.  
+- Motor de validación que garantiza que la definición de lenguaje específico de dominio es correcta y muestra errores y advertencias si hay problemas.  
   
--   Generador de código que toma una definición de lenguaje específico de dominio como entrada y genera código fuente como salida.  
+- Generador de código que toma una definición de lenguaje específico de dominio como entrada y genera código fuente como salida.  
   
 ## <a name="the-dsl-tools-solution"></a>Solución de Herramientas DSL  
  El Asistente de diseñador específico de dominio proporciona estas plantillas de solución:  
@@ -80,4 +80,4 @@ Las Herramientas del lenguaje específico de dominio (herramientas DSL), que se 
   
 ## <a name="see-also"></a>Vea también  
  [Instancia experimental](../extensibility/the-experimental-instance.md)   
- [Glosario de las Herramientas del lenguaje específico de dominio](http://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)
+ [Glosario de las Herramientas del lenguaje específico de dominio](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)

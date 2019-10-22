@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugDisassemblyStream2::GetScope
 ms.assetid: 71c6e632-642a-42d8-a995-77e4ac190a5b
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 07d933562feb3a349fda8533d1d25cd46ec84b4d
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 0e5454880c1513f20755dd0527465f4b2f49e58e
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56718955"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66310441"
 ---
 # <a name="idebugdisassemblystream2getscope"></a>IDebugDisassemblyStream2::GetScope
 Obtiene el ámbito de la secuencia de desensamblado.
@@ -36,10 +39,9 @@ int GetScope( 
 );
 ```
 
-#### <a name="parameters"></a>Parámetros
- `pdwScope`
-
- [out] Devuelve un valor de la [DISASSEMBLY_STREAM_SCOPE](../../../extensibility/debugger/reference/disassembly-stream-scope.md) enumeración que describe el ámbito de esta secuencia de desensamblado.
+## <a name="parameters"></a>Parámetros
+`pdwScope`\
+[out] Devuelve un valor de la [DISASSEMBLY_STREAM_SCOPE](../../../extensibility/debugger/reference/disassembly-stream-scope.md) enumeración que describe el ámbito de esta secuencia de desensamblado.
 
 ## <a name="return-value"></a>Valor devuelto
  Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.

@@ -1,7 +1,7 @@
 ---
 title: Instalación y uso detrás de un firewall o proxy
-description: Revise las direcciones URL de dominio, los puertos y los protocolos que quiere incluir en la lista de permitidos o abrir si la organización usa un firewall o un servidor proxy
-ms.date: 03/30/2019
+description: Revise las direcciones URL de dominio, los puertos y los protocolos que quiera incluir en una lista de permitidas o abrir si la organización usa un firewall o un servidor proxy
+ms.date: 05/22/2019
 ms.custom: seodec18
 ms.topic: conceptual
 helpviewer_keywords:
@@ -17,29 +17,29 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 227525b08e45832041b573fbb7cf3719484d1b8e
-ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
+ms.openlocfilehash: ac150e20b505a5ef4446e77761790a6111fb6c10
+ms.sourcegitcommit: 9c07ae6fb18204ea080c8248994a683fa12e5c82
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "58857533"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "70293509"
 ---
 # <a name="install-and-use-visual-studio-and-azure-services-behind-a-firewall-or-proxy-server"></a>Instalación y uso de Visual Studio y de servicios de Azure detrás de un firewall o servidor proxy
 
-Si usted o su organización utiliza medidas de seguridad como un firewall o un servidor proxy, hay direcciones URL de dominio que quizá desee "incluir en una lista de permitidos", así como puertos y protocolos que desea abrir para tener la mejor experiencia al instalar y utilizar Visual Studio y los servicios de Azure.
+Si usted o la organización usa medidas de seguridad como un firewall o un servidor proxy, hay direcciones URL de dominio que quizá quiera agregar a una "lista de permitidas", así como puertos y protocolos que quiera abrir para tener la mejor experiencia posible a la hora de instalar y usar Visual Studio y los servicios de Azure.
 
-* **[Instalación de Visual Studio](#install-visual-studio)**: en estas tablas se incluyen las direcciones URL de dominio que se van a incluir en la lista de permitidos para que tenga acceso a todos los componentes y las cargas de trabajo que quiera.
+* **[Instalación de Visual Studio](#install-visual-studio)** : en estas tablas se incluyen las direcciones URL de dominio que se van a agregar a una lista de permitidas para que tenga acceso a todos los componentes y las cargas de trabajo que quiera.
 
-* **[Uso de Visual Studio y de servicios de Azure](#use-visual-studio-and-azure-services)**: en esta tabla se indican las direcciones URL de dominio que se van a incluir en la lista de permitidos, así como los puertos y protocolos que se van a abrir para que tenga acceso a todas las características y servicios que quiera.
+* **[Uso de Visual Studio y de servicios de Azure](#use-visual-studio-and-azure-services)** : en esta tabla se incluyen las direcciones URL de dominio que se van a agregar a una lista de permitidas, así como los puertos y protocolos que se van a abrir para que tenga acceso a todas las características y los servicios que quiera.
 
 > [!NOTE]
 > Este artículo se ha escrito para Visual Studio en Windows, pero alguna información también se aplica a la [Instalación de Visual Studio para Mac](/visualstudio/mac/install-behind-a-firewall-or-proxy-server) detrás de un servidor proxy o firewall.
 
 ## <a name="install-visual-studio"></a>Instalar Visual Studio
 
-### <a name="urls-to-whitelist"></a>Direcciones URL para incluir en la lista blanca
+### <a name="urls-to-add-to-an-allow-list"></a>Direcciones URL que se van a agregar a una lista de permitidas
 
-Debido a que el Instalador de Visual Studio descarga archivos de varios dominios y sus servidores de descarga, aquí se muestran las direcciones URL de los dominios que pueden incluirse en la lista blanca como de confianza en la interfaz de usuario o en los scripts de implementación.
+Debido a que el Instalador de Visual Studio descarga archivos de varios dominios y sus servidores de descarga, estas son las direcciones URL de dominio que debe agregar a una lista de permitidas como de confianza en la interfaz de usuario o en los scripts de implementación.
 
 #### <a name="microsoft-domains"></a>Dominios de Microsoft
 
@@ -79,9 +79,9 @@ Debido a que el Instalador de Visual Studio descarga archivos de varios dominios
 
 ## <a name="use-visual-studio-and-azure-services"></a>Uso de Visual Studio y de servicios de Azure
 
-### <a name="urls-to-whitelist-and-ports-and-protocols-to-open"></a>Direcciones URL para incluir en la lista blanca y puertos y protocolos para abrir
+### <a name="urls-to-add-to-an-allow-list-and-ports-and-protocols-to-open"></a>Direcciones URL que se van a incluir en una lista de permitidas y puertos y protocolos que se van a abrir
 
-Para asegurarse de que tiene acceso a todo lo que necesita cuando utiliza Visual Studio o servicios de Azure detrás de un firewall o servidor proxy, estas son las direcciones URL que debe incluir en la lista blanca, así como los puertos y protocolos que puede querer abrir.
+Para asegurarse de que tiene acceso a todo lo que necesita cuando usa Visual Studio o los servicios de Azure detrás de un firewall o servidor proxy, estas son las direcciones URL que debe agregar a una lista de permitidas y los puertos y protocolos que debe abrir.
 
 | Servicio o escenario | Punto de conexión DNS | Protocolo | Puerto | Description |
 | - | - | - | - | - |
@@ -118,11 +118,11 @@ Para asegurarse de que tiene acceso a todo lo que necesita cuando utiliza Visual
 | Cloud Explorer | 1. &#60;punto de conexión en clúster&#62; <br>Service Fabric <br>2. &#60;punto de conexión de administración&#62;<br>Exp. general de nube <br>3. &#60;punto de conexión del grafo&#62;<br>Exp. general de nube<br>4. &#60;punto de conexión de la cuenta de almacenamiento&#62;<br>Nodos de almacenamiento <br>5. &#60;Direcciones URL de Azure Portal&#62;<br>Exp. general de nube <br>6. &#60;puntos de conexión del almacén de claves&#62; <br>Nodos de máquinas virtuales de Azure Resource Manager<br>7. &#60;Dirección IP pública del clúster&#62;<br>Depuración remota de Service Fabric y seguimientos de ETW | <br>1. https<br>2. https<br>3. https<br>4. https<br>5. https<br>6. https<br>7: tcp | 1. 19080<br>2. 443 <br>3. 443 <br>4. 443 <br>5. 443 <br>6. 443 <br>7. dinámico | 1. Ejemplo: test12.eastus.cloudapp.com<br>2. Recupera las suscripciones y recupera o administra los recursos de Azure.<br>3. Recupera las suscripciones de Azure Stack.<br>4. Administra los recursos de almacenamiento (ejemplo: mystorageaccount.blob.core.windows.net).<br>5. Opción del menú contextual "Abrir en el portal" (abre un recurso en Azure Portal).<br>6. Crea y utiliza los almacenes de claves para la depuración de máquinas virtuales (ejemplo: myvault.vault.azure.net). <br><br>7. Asigna de forma dinámica el bloque de puertos en función del número de nodos en el clúster y los puertos disponibles. <br><br>Un bloque de puertos intentará obtener tres veces el número de nodos con un mínimo de 10 puertos.<br><br>Para seguimientos de streaming, se realiza un intento de obtener el bloque de puertos de 810. Si ya se utiliza alguno de estos bloques de puertos, se realiza un intento para obtener el bloque siguiente y así sucesivamente. (Si el equilibrador de carga está vacío, lo más probable es que se usen los puertos de 810). <br><br>De forma similar que para la depuración, se reservan cuatro conjuntos de los bloques de puertos: <br>- connectorPort: 30398, <br>- forwarderPort: 31398, <br>- forwarderPortx86: 31399,<br>- fileUploadPort: 32398<br> |
 | Cloud Services | 1. RDP<br><br>2. core.windows.net <br><br>3. management.azure.com<br> management.core.windows.net <br><br>4. &#42;.blob.core.windows.net <br>&#42;.queue.core.windows.net<br>&#42;.table.core.windows.net <br><br>5. portal.azure.com <br><br>6. &#60;servicio en la nube del usuario&#62;.cloudapp.net <br> &#60;máquina virtual del usuario&#62;.&#60;región&#62;.azure.com | 1. rdp <br><br> 2. https <br><br> 3. https <br><br> 4. https <br><br> 5. https <br><br>6. tcp | 1. 3389 <br><br> 2. 443 <br><br> 3. 443 <br><br>4. 443 <br><br>5. 443 <br><br> 6. a) 30398 <br> 6. b) 30400 <br> 6. c) 31398 <br> 6. d) 31400 <br> 6. e) 32398 <br> 6. f) 32400 | 1.  Escritorio remoto para la máquina virtual de Cloud Services <br><br> 2.  Componente de la cuenta de almacenamiento de la configuración de diagnósticos privada <br><br> 3.  Azure Portal <br><br> 4. Explorador de servidores: Azure Storage &#42; es una cuenta de almacenamiento designada por el cliente  <br><br> 5.  Vínculos para abrir el portal &#47; Descarga del certificado de suscripción &#47; Archivo de configuración de publicación <br><br>6. a) Puerto local del conector para realizar la depuración remota del servicio en la nube y máquinas virtuales<br> 6. b) Puerto público del conector para la depuración remota del servicio en la nube y máquinas virtuales <br> 6. c) Puerto local de reenviador para realizar la depuración remota del servicio en la nube y máquinas virtuales <br> 6. d.) Puerto público del reenviador para la depuración remota del servicio en la nube y máquinas virtuales  <br> 6. e) Puerto local del usuario de carga de archivos para la depuración remota del servicio en la nube y máquinas virtuales <br> 6. f) Puerto público del usuario de carga de archivos para la depuración remota del servicio en la nube y máquinas virtuales |
 | Service Fabric | 1. <br>ocs.Microsoft.com<br>aka.ms <br>go.microsoft.com <br><br>2. <br>vssftools.blob.core.windows.net <br>Vault.azure.com <br>Portal.azure.com <br><br> 3. &#42; vault.azure.net<br><br> 4. <br>app.vsaex.visualstudio.com<br>&#42; .vsspsext.visualstudio.com<br>clouds.vsrm.visualstudio.com <br>clouds.visualstudio.com<br>app.vssps.visualstudio.com <br>&#42; .visualstudio.com | https | 443 | 1. Documentación <br><br> 2. Creación de la característica de clúster <br><br>3. &#42; es el nombre del almacén de claves de Azure (por ejemplo: test11220180112110108.vault.azure.net)  <br><br>  4. &#42; es dinámico (por ejemplo: vsspsextprodch1su1.vsspsext.visualstudio.com) |
-| Depurador de <br>instantáneas | 1. go.microsoft.com <br>2. management.azure.com <br> 3. &#42;azurewebsites.net <br> 4. &#42;scm.azurewebsites.net<br>5. api.nuget.org/v3/index.json <br>6. msvsmon | 1. https <br>2. https  <br>3. http <br>4. https <br>5. https <br>6. Concord <br> | 1. 443<br> 2. 443<br>3. 80  <br>4. 443<br> 5. 443<br> 6. 4022 (dependiente de la versión de Visual Studio) | 1. Archivo .json de consulta para el tamaño de SKU del servicio de aplicación <br>2. Varias llamadas de Azure RM <br>3. Llamada de preparación de sitio  <br>4. Punto de conexión de Kudu del servicio de aplicación dirigido del cliente <br>5. Versión de la extensión de sitio de consulta publicada en nuget.org <br>6. Canal de depuración remota |
+| Depurador de <br>instantáneas | 1. go.microsoft.com <br>2. management.azure.com <br> 3. &#42;azurewebsites.net <br> 4. &#42;scm.azurewebsites.net<br>5. api.nuget.org/v3/index.json <br>6. msvsmon (.exe) | 1. https <br>2. https  <br>3. http <br>4. https <br>5. https <br>6. Concord <br> | 1. 443<br> 2. 443<br>3. 80  <br>4. 443<br> 5. 443<br> 6. 4022 (dependiente de la versión de Visual Studio) | 1. Archivo .json de consulta para el tamaño de SKU del servicio de aplicación <br>2. Varias llamadas de Azure RM <br>3. Llamada de preparación de sitio  <br>4. Punto de conexión de Kudu del servicio de aplicación dirigido del cliente <br>5. Versión de la extensión de sitio de consulta publicada en nuget.org <br>6. Canal de depuración remota |
 | Azure Stream Analytics <br><br>HDInsight | Management.azure.com | https | 443 | Se utiliza para ver, enviar, ejecutar y administrar trabajos de ASA. <br><br> Se utiliza para examinar clústeres de HDI y para enviar, diagnosticar y depurar trabajos de HDI. |
 | Azure Data Lake | &#42;.azuredatalakestore.net <br>&#42;.azuredatalakeanalytics.net | https | 443 | Se utiliza para compilar, enviar, ver, diagnosticar y depurar trabajos; también para examinar archivos ADLS, y para cargar y descargar archivos. |
 | Servicio de empaquetado | [cuenta].visualstudio.com <br/> [cuenta].\*.visualstudio.com <br/> \*.blob.core.windows.net <br/> registry.npmjs.org </br> nodejs.org <br/> dist.nuget.org <br/> nuget.org | https | 443 | \*.npmjs.org, \*.nuget.org y \*.nodejs.org solo son necesarios para determinados escenarios de tareas de compilación (por ejemplo: Instalador de la herramienta de NuGet, instalador de la herramienta Nodo) o si piensa usar canales de subida públicos con las fuentes. Los otros tres dominios son necesarios para la funcionalidad principal del servicio de empaquetado. |
-| Azure DevOps Services | \*.vsassets.io <br/> static2.sharepointonline.com | | | Usado para conectar con Azure DevOps Services |
+| Azure DevOps Services | \*.vsassets.io <br/> static2.sharepointonline.com <br/> dev.azure.com | | | Usado para conectar con Azure DevOps Services |
 | | | | | |
 
 ## <a name="troubleshoot-network-related-errors"></a>Solución de problemas de errores relacionados con la red
@@ -141,8 +141,8 @@ Aquí tiene algunas opciones de soporte técnico más:
 
 ## <a name="see-also"></a>Vea también
 
-* [Requisitos de conectividad de Live Share](/visualstudio/liveshare/reference/connectivity/)
+* [Requisitos de conectividad de Live Share](/visualstudio/liveshare/reference/connectivity/)
 * [Creación de una instalación de red de Visual Studio](create-a-network-installation-of-visual-studio.md)
-* [Solución de problemas de errores relacionados con la red en Visual Studio](troubleshooting-network-related-errors-in-visual-studio.md)
+* [Solución de problemas de errores relacionados con la red en Visual Studio](troubleshooting-network-related-errors-in-visual-studio.md)
 * [Guía del administrador de Visual Studio](visual-studio-administrator-guide.md)
-* [Install behind a firewall or proxy server (Visual Studio for Mac) (Instalación detrás de un firewall o servidor proxy [Visual Studio para Mac])](/visualstudio/mac/install-behind-a-firewall-or-proxy-server)
+* [Instalación y uso de Visual Studio para Mac detrás de un firewall o servidor proxy](/visualstudio/mac/install-behind-a-firewall-or-proxy-server)

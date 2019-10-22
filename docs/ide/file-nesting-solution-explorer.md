@@ -8,16 +8,16 @@ helpviewer_keywords:
 author: angelosp
 ms.author: angelpe
 manager: jillfra
-ms.openlocfilehash: 58e727c6335dd391abab4f50a110d361a658e00a
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: a36ca2535785f72756ad66a69c2ebe4d7d5a373b
+ms.sourcegitcommit: 32144a09ed46e7223ef7dcab647a9f73afa2dd55
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55955991"
+ms.lasthandoff: 07/05/2019
+ms.locfileid: "67587027"
 ---
-# <a name="customize-file-nesting-in-solution-explorer"></a>Personalizar el anidamiento de archivos en el Explorador de soluciones
+# <a name="file-nesting-in-solution-explorer"></a>Anidamiento de archivos en el Explorador de soluciones
 
-El anidamiento de archivos relacionados en el **Explorador de soluciones** no es nuevo, pero hasta ahora no se tenía ningún control sobre las reglas de anidamiento. Puede elegir entre los valores preestablecidos **Desactivado**, **Predeterminado** y **Web**, pero también puede personalizar el anidamiento a su gusto. Puede incluso crear una configuración específica de la solución y del proyecto, pero abordaremos esta posibilidad más adelante. En primer lugar, repasemos las opciones por defecto.
+El **Explorador de soluciones** anida archivos relacionados para ayudarle a organizarlos y que sean más fáciles de localizar. Por ejemplo, si agrega un formulario Windows Forms a un proyecto, el archivo de código para el formulario está anidado debajo del formulario en el **Explorador de soluciones**. En los proyectos de ASP.NET Core, el anidamiento de archivos se puede llevar un paso más lejos. Puede elegir entre los valores preestablecidos de anidamiento de archivos **Desactivado**, **Predeterminado** y **Web**. También puede [personalizar cómo se anidan los archivos](#customize-file-nesting) o [crear una configuración específica de la solución y del proyecto](#create-project-specific-settings).
 
 > [!NOTE]
 > Actualmente, la característica solo se admite para los proyectos de ASP.NET Core.
@@ -56,7 +56,7 @@ Centrémonos en el nodo **dependentFileProviders** y en sus nodos secundarios. C
 
 * **pathSegment**: Use este tipo de regla para anidar *jquery.min.js* en *jquery.js*
 
-* **allExtensions**: Use este tipo de regla para anidar *file.** en *file.js*
+* **allExtensions**: Use este tipo de regla para anidar *file.* * en *file.js*
 
 * **fileToFile**: Use este tipo de regla para anidar *bower.json* en *.bowerrc*
 
@@ -86,19 +86,43 @@ Este proveedor funciona igual que el proveedor **extensionToExtension**, con la 
 
 ### <a name="the-addedextension-provider"></a>Proveedor addedExtension
 
-Este proveedor anida archivos con una extensión adicional bajo el archivo sin extensión adicional. La extensión adicional solo puede aparecer al final del nombre de archivo completo. Considere el ejemplo siguiente:
+Este proveedor anida archivos con una extensión adicional bajo el archivo sin extensión adicional. La extensión adicional solo puede aparecer al final del nombre de archivo completo.
+
+Considere el ejemplo siguiente:
 
 ![Ejemplo de reglas addedExtension](media/filenesting_addedextension.png) ![Efecto del ejemplo addedExtension](media/filenesting_addedextension_effect.png)
 
 * *file.html.css* está anidado en *file.html* debido a la regla **addedExtension**.
 
+> [!NOTE]
+> No especifica ninguna extensión de archivo para la regla `addedExtension`, así que se aplica automáticamente a todas las extensiones de archivo. Es decir, cualquier archivo con el mismo nombre y extensión que otro archivo más una extensión adicional al final se anida debajo del otro archivo. No puede limitar el efecto de este proveedor a solo extensiones de archivo específicas.
+
 ### <a name="the-pathsegment-provider"></a>Proveedor pathSegment
 
-Este proveedor anida archivos con una extensión adicional bajo un archivo sin extensión adicional. La extensión adicional solo puede aparecer en mitad del nombre de archivo completo. Considere el ejemplo siguiente:
+Este proveedor anida archivos con una extensión adicional bajo un archivo sin extensión adicional. La extensión adicional solo puede aparecer en mitad del nombre de archivo completo.
+
+Considere el ejemplo siguiente:
 
 ![Ejemplo de reglas pathSegment](media/filenesting_pathsegment.png) ![Efecto del ejemplo pathSegment](media/filenesting_pathsegment_effect.png)
 
 * *jquery.min.js* esta anidado en *jquery.js* debido a la regla **pathSegment**.
+
+> [!NOTE]
+> - Si no especifica extensiones de archivo concretas para la regla `pathSegment`, se aplica a todas las extensiones de archivo. Es decir, cualquier archivo con el mismo nombre y extensión que otro archivo más una extensión adicional en el medio se anida debajo del otro archivo.
+> - Puede limitar el efecto de la regla `pathSegment` a extensiones de archivo específicas de la siguiente manera:
+>
+>    ```json
+>    "pathSegment": {
+>       "add": {
+>         ".*": [
+>           ".js",
+>           ".css",
+>           ".html",
+>           ".htm"
+>         ]
+>       }
+>    }
+>    ```
 
 ### <a name="the-allextensions-provider"></a>Proveedor allExtensions
 
@@ -128,7 +152,7 @@ Toda la configuración, incluida la personalizada, se puede administrar mediante
 
 ![Activar reglas de anidamiento de archivos personalizadas](media/filenesting_activatecustom.png)
 
-## <a name="create-solution-specific-and-project-specific-settings"></a>Crear una configuración específica de la solución y del proyecto
+## <a name="create-project-specific-settings"></a>Creación de una configuración específica del proyecto
 
 Puede crear una configuración específica de la solución y del proyecto desde el menú contextual de la solución y el proyecto:
 
@@ -142,7 +166,7 @@ Puede hacer lo contrario e indicar a Visual Studio que *solo* use la configuraci
 
 La configuración específica de la solución y la específica del proyecto se pueden insertar en el repositorio del control de código fuente para que todo el equipo que trabaja en el código base pueda compartirlas.
 
-## <a name="disable-global-file-nesting-rules-for-a-particular-solution-or-project"></a>Deshabilitar las reglas de anidamiento de archivos globales en una solución o un proyecto
+## <a name="disable-file-nesting-rules-for-a-project"></a>Deshabilitación de las reglas de anidamiento de archivos para un proyecto
 
 Las reglas de anidamiento de archivos globales existentes se pueden deshabilitar en soluciones o proyectos específicos. Basta con usar la acción **remove** en un proveedor en lugar de **add**. Por ejemplo, si agrega el siguiente código de configuración a un proyecto, se deshabilitan todas las reglas **pathSegment** que existan globalmente para este proyecto concreto:
 
@@ -157,3 +181,4 @@ Las reglas de anidamiento de archivos globales existentes se pueden deshabilitar
 ## <a name="see-also"></a>Vea también
 
 - [Personalizar el IDE](../ide/personalizing-the-visual-studio-ide.md)
+- [Soluciones y proyectos en Visual Studio](solutions-and-projects-in-visual-studio.md)

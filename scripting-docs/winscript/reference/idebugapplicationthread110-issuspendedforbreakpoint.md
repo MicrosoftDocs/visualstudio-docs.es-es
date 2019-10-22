@@ -1,5 +1,5 @@
 ---
-title: IDebugApplicationThread110::IsSuspendedForBreakPoint | Microsoft Docs
+title: 'Idebugapplicationthread110 (:: IsSuspendedForBreakPoint | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -13,18 +13,18 @@ caps.latest.revision: 5
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c8c539a24fdbd5f824b50cdd46783f5225cbe09f
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: b0e70993b95ccffcf6041bb04f37af90667fc4fd
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58149898"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72574459"
 ---
 # <a name="idebugapplicationthread110issuspendedforbreakpoint"></a>IDebugApplicationThread110::IsSuspendedForBreakPoint
-Determina si [IDebugApplicationThreadEvents110::OnSuspendForBreakPoint](../../winscript/reference/idebugapplicationthreadevents110-onsuspendforbreakpoint.md) se ha llamado en este subproceso y no se ha completado.  
+Determina si se ha llamado a [idebugapplicationthreadevents110 (:: OnSuspendForBreakPoint](../../winscript/reference/idebugapplicationthreadevents110-onsuspendforbreakpoint.md) en este subproceso y aún no se ha completado.  
   
 > [!IMPORTANT]
->  [IDebugApplicationThread110 (interfaz)](../../winscript/reference/idebugapplicationthread110-interface.md) es implementada por PDM v11.0 y versiones posteriores. Se encuentra en activdbg100.h.  
+> La [interfaz idebugapplicationthread110 (](../../winscript/reference/idebugapplicationthread110-interface.md) se implementa mediante PDM v 11.0 y versiones posteriores. Se encuentra en activdbg100.h.  
   
 ## <a name="syntax"></a>Sintaxis  
   
@@ -34,7 +34,7 @@ HRESULT IsSuspendedForBreakPoint([out, annotation("_Out_")] BOOL * pfIsSuspended
   
 #### <a name="parameters"></a>Parámetros  
  `pfIsSuspended`  
- [out] `true` si el subproceso está suspendido en caso contrario, un punto de interrupción, `false`.  
+ [out] `true` si el subproceso está suspendido para un punto de interrupción; de lo contrario `false`.  
   
 ## <a name="see-also"></a>Vea también  
  [IDebugApplicationThread110 (Interfaz)](../../winscript/reference/idebugapplicationthread110-interface.md)

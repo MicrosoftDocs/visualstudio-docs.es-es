@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 418a1a22979b701ec1d1d32521f7f89e2c5274eb
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: dfebb3ce5293e7594827a17b30261403b0f3ae9a
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60088098"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67821299"
 ---
 # <a name="troubleshoot-office-solution-deployment"></a>Solución de problemas de implementación de soluciones de Office
   Este tema contiene información sobre cómo solucionar problemas comunes que pueden surgir al implementar soluciones de Office.
@@ -73,9 +73,12 @@ ms.locfileid: "60088098"
 
 2. En la página **Aplicación** , elija **Información de ensamblado**.
 
-3. En la primera **versión del ensamblado** , escriba un asterisco (\*) y, a continuación, elija el **Aceptar** botón.
+3. Establecer el número de revisión, el tercer campo de la **versión del ensamblado**, para un carácter comodín (\*). Por ejemplo, "1.0. *".  A continuación, elija el **Aceptar** botón.
 
    Después de cambiar la versión del ensamblado, puede continuar para firmar el ensamblado con un nombre seguro y Fusion cargará la versión más reciente de la personalización.
+
+ [!NOTE]
+> Se producirá a partir de Visual Studio 2017, si intenta usar caracteres comodín en la versión de ensamblado de un error de compilación.  Esto es porque los caracteres comodín en la versión del ensamblado se interrumpirá la característica de MSBuild determinista. Le pedirá que quite los caracteres comodín de la versión del ensamblado, o deshabilitar determinismo.  Para obtener más información acerca de la característica determinista vea: [Propiedades comunes de proyectos de MSBuild](../msbuild/common-msbuild-project-properties.md) y [personalizar una compilación](../msbuild/customize-your-build.md)
 
 ## <a name="installation-fails-when-the-uri-has-characters-that-arent-us-ascii"></a>Se produce un error en la instalación cuando el identificador URI tiene caracteres que no son ASCII de EE. UU.
  Al publicar una solución de Office en una ubicación HTTP/HTTPS/FTP, la ruta de acceso no puede tener caracteres Unicode que no estén en US-ASCII. Estos caracteres pueden producir un comportamiento incoherente en el programa de instalación. Utilice los caracteres US-ASCII para la ruta de instalación.
@@ -118,7 +121,7 @@ ms.locfileid: "60088098"
 ## <a name="cant-install-a-clickonce-solution-by-opening-the-deployment-manifest-from-the-web"></a>No se puede instalar una solución ClickOnce abriendo el manifiesto de implementación desde la web
  Los usuarios pueden instalar una solución de Office abriendo el manifiesto de implementación desde la Web. Sin embargo, algunas instalaciones de Internet Information Services (IIS) bloquean el *.vsto* la extensión de nombre de archivo. Debe definir el tipo MIME en IIS antes de usarlos para implementar una solución de Office.
 
- Para obtener información sobre cómo definir el tipo MIME en IIS 7, consulte [agregar un tipo MIME (IIS7)](http://technet.microsoft.com/library/cc725608(WS.10).aspx).
+ Para obtener información sobre cómo definir el tipo MIME en IIS 7, consulte [agregar un tipo MIME (IIS7)](https://technet.microsoft.com/library/cc725608(WS.10).aspx).
 
  Establezca la extensión en **.vsto** y el tipo MIME en **application/x-ms-vsto**.
 

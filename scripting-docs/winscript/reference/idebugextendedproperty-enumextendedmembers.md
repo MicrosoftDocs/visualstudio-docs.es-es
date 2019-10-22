@@ -1,5 +1,5 @@
 ---
-title: IDebugExtendedProperty::EnumExtendedMembers | Documentos de Microsoft
+title: 'Idebugextendedproperty (:: EnumExtendedMembers | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c7e14d1bc8937221960d938f1bbfae8e307830f2
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: f6fd225be9504254965eab77b912f50fb5c777e3
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58145036"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72576388"
 ---
 # <a name="idebugextendedpropertyenumextendedmembers"></a>IDebugExtendedProperty::EnumExtendedMembers
-Enumera a los miembros de una propiedad extendida.  
+Enumera los miembros de una propiedad extendida.  
   
 ## <a name="syntax"></a>Sintaxis  
   
@@ -39,18 +39,18 @@ HRESULT EnumExtendedMembers(
   
 #### <a name="parameters"></a>Parámetros  
  `dwFieldSpec`  
- [in] Especifica las constantes EX_DBGPROP_INFO_FLAGS que determinan que los campos de los enumerados extendidos estructuras de propiedad de depuración que deben rellenarse.  
+ de Especifica las constantes EX_DBGPROP_INFO_FLAGS que determinan los campos de las estructuras de propiedades de depuración extendida enumeradas que se van a rellenar.  
   
  `nRadix`  
- [in] Base para su uso en la interpretación de toda la información numérica.  
+ de Base que se va a usar para interpretar cualquier información numérica.  
   
  `ppeepi`  
- [out] Devuelve el `IEnumDebugExtendedPropertyInfo` interfaz que enumera las propiedades de miembro.  
+ enuncia Devuelve la interfaz `IEnumDebugExtendedPropertyInfo` que enumera las propiedades de miembro.  
   
 ## <a name="return-value"></a>Valor devuelto  
- Devuelve un válidas `HRESULT`, normalmente `S_OK`.  
+ Devuelve un `HRESULT` válido, normalmente `S_OK`.  
   
 ## <a name="see-also"></a>Vea también  
- [IDebugExtendedProperty (interfaz)](../../winscript/reference/idebugextendedproperty-interface.md)   
- [EX_DBGPROP_INFO_FLAGS](../../winscript/reference/ex-dbgprop-info-flags.md)   
+ @No__t_1 de la [interfaz idebugextendedproperty (](../../winscript/reference/idebugextendedproperty-interface.md)  
+ @No__t_1 [EX_DBGPROP_INFO_FLAGS](../../winscript/reference/ex-dbgprop-info-flags.md)  
  [ExtendedDebugPropertyInfo (Estructura)](../../winscript/reference/extendeddebugpropertyinfo-structure.md)

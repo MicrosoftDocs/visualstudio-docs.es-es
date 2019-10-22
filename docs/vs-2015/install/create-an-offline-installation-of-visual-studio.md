@@ -13,12 +13,12 @@ caps.latest.revision: 22
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: 798318f55c6f5db599f39a653a4d9ed5edbed8f6
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 197ae2a168f7f14f7d0ea3d9b82b5943c1af82f4
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59651011"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68186016"
 ---
 # <a name="create-an-offline-installation-of-visual-studio"></a>Crear una instalación sin conexión de Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,33 +30,33 @@ Esta página describe cómo instalar Visual Studio 2015 cuando no está conectad
 > [!IMPORTANT]
 > Si el equipo sin conexión está ejecutando Windows 7 SP1 o Windows Server 2008 R2, consulte las instrucciones especiales en la sección [Solución de problemas de una instalación sin conexión](#BKMK_tshoot) de este tema.  Debe seguir estas instrucciones *antes* de instalar Visual Studio 2015.
 
-##  <a name="BKMK_Offline"></a> Instalación mediante la creación de una instalación sin conexión
+## <a name="BKMK_Offline"></a> Instalación mediante la creación de una instalación sin conexión
 
 #### <a name="to-create-an-offline-installation-layout"></a>Para crear un diseño de instalación sin conexión
 
-1.  Elija la edición de Visual Studio que desea instalar desde la página de descarga [My.VisualStudio.com](https://my.visualstudio.com/downloads?q=visual%20studio%20Enterprise%202015).
+1. Elija la edición de Visual Studio que desea instalar desde la página de descarga [My.VisualStudio.com](https://my.visualstudio.com/downloads?q=visual%20studio%20Enterprise%202015).
 
-2.  Después de descargar el instalador en una ubicación del sistema de archivos, ejecute "\<nombre del archivo ejecutable >/layout".
+2. Después de descargar el instalador en una ubicación del sistema de archivos, ejecute "\<nombre del archivo ejecutable >/layout".
 
      Por ejemplo, ejecute: `vs_enterprise.exe /layout D:\VisualStudio2015`.
 
      Con el conmutador `/layout`, puede descargar casi todos los paquetes de instalación, no solo los que se aplican a la máquina de descarga. Este enfoque le proporciona los archivos que necesita para ejecutar este programa de instalación en cualquier parte y puede resultar útil si desea instalar componentes que no se instalaron originalmente.
 
-3.  Después de ejecutar este comando, aparecerá un cuadro de diálogo que le permite cambiar la carpeta donde desea que resida el diseño de instalación sin conexión.   Luego, haga clic en el botón **Descargar**.
+3. Después de ejecutar este comando, aparecerá un cuadro de diálogo que le permite cambiar la carpeta donde desea que resida el diseño de instalación sin conexión.   Luego, haga clic en el botón **Descargar**.
 
      Cuando la descarga del paquete haya finalizado, debería ver el mensaje **¡La instalación se realizó correctamente! Todos los componentes especificados se han adquirido correctamente.**
 
-4.  Busque la carpeta que especificó anteriormente. (Por ejemplo, D:\VisualStudio2015). Esta carpeta contiene todo lo que necesita copiar en una ubicación compartida o en discos de instalación.
+4. Busque la carpeta que especificó anteriormente. (Por ejemplo, D:\VisualStudio2015). Esta carpeta contiene todo lo que necesita copiar en una ubicación compartida o en discos de instalación.
 
     > [!CAUTION]
     > Actualmente, el SDK de Android no admite una experiencia de instalación sin conexión. Si instala elementos de la instalación del SDK de Android en un equipo que no está conectado a Internet, es posible que se produzca un error en la instalación. Para obtener más información, vaya a la sección "Solucionar los problemas de una instalación sin conexión" de este tema.
 
-5.  Ejecute la instalación desde la ubicación del archivo o desde los discos de instalación.
+5. Ejecute la instalación desde la ubicación del archivo o desde los discos de instalación.
 
 ## <a name="updating-an-offline-installation"></a>Actualización de una instalación sin conexión
  Microsoft ha publicado varias actualizaciones para Visual Studio 2015. Para actualizar la instalación de Visual Studio, simplemente descargue la edición que desee desde la página de descarga [My.VisualStudio.com](https://my.visualstudio.com/downloads?q=visual%20studio%20Enterprise%202015). A continuación, siga los pasos descritos en este tema para crear un nuevo diseño de instalación sin conexión y, a continuación, úselo para actualizar su copia de Visual Studio 2015.
 
-##  <a name="BKMK_tshoot"></a> Solución de problemas de una instalación sin conexión
+## <a name="BKMK_tshoot"></a> Solución de problemas de una instalación sin conexión
  Al instalar sin conexión desde la caché de instalación sin conexión, es posible que aparezcan mensajes de advertencia sobre la imposibilidad de instalar algunos componentes y paquetes. En la siguiente tabla se incluyen posibles soluciones para estos escenarios.
 
 | Componente o paquete | Soluciones |
@@ -84,6 +84,6 @@ Esta página describe cómo instalar Visual Studio 2015 cuando no está conectad
 |        Ruso        | http://go.microsoft.com/fwlink/?LinkID=785882&clcid=0x419 |
 |        Turco        | http://go.microsoft.com/fwlink/?LinkID=785882&clcid=0x41F |
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Otras referencias
 
 - [Instalar Visual Studio](install-visual-studio-2015.md)

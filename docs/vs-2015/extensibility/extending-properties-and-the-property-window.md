@@ -15,11 +15,11 @@ caps.latest.revision: 24
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: c9ec498aca375cb5c63a574ebc72ab04219eb047
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58987405"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68204481"
 ---
 # <a name="extending-properties-and-the-property-window"></a>Ampliación de propiedades y la ventana de propiedades
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

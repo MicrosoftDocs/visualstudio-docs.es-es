@@ -11,12 +11,12 @@ caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: acb62f3dc5774ef8574fded3c0537e97611049c2
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 0aebd0857ba847d5c5eba5e3a4a8a01da73ec159
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58154431"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62840036"
 ---
 # <a name="windows-script-interfaces"></a>Windows Script (Interfaces)
 
@@ -62,27 +62,27 @@ En la siguiente ilustración se muestra la interacción entre un host de Windows
 
 Los pasos que implica la interacción entre el host y el motor se indican en la lista siguiente.
 
-1.  Cree un proyecto. El host carga un proyecto o documento. (Este paso no es específico de Windows Script, pero se incluye aquí para proporcionar información completa).
+1. Cree un proyecto. El host carga un proyecto o documento. (Este paso no es específico de Windows Script, pero se incluye aquí para proporcionar información completa).
 
-2.  Cree el motor de Windows Script. El host llama a `CoCreateInstance` para crear un motor de Windows Script. Para ello, especifica el identificador de clase (CLSID) del motor de scripting específico que se va a usar. Por ejemplo, el explorador HTML de Internet Explorer recibe el identificador de clase del motor de scripting mediante el atributo CLSID= de la etiqueta HTML \<OBJECT>.
+2. Cree el motor de Windows Script. El host llama a `CoCreateInstance` para crear un motor de Windows Script. Para ello, especifica el identificador de clase (CLSID) del motor de scripting específico que se va a usar. Por ejemplo, el explorador HTML de Internet Explorer recibe el identificador de clase del motor de scripting mediante el atributo CLSID= de la etiqueta HTML \<OBJECT>.
 
-3.  Cargue el script. Si se ha guardado el contenido del script, el host llama al método `IPersist*::Load` del motor de scripting para introducir en él el almacenamiento de scripts, la secuencia o el contenedor de propiedades. En caso contrario, el host usa el método `IPersist*::InitNew` o [IActiveScriptParse::InitNew](../winscript/reference/iactivescriptparse-initnew.md) para crear un script null. Un host que guarde un script como texto puede usar [IActiveScriptParse::ParseScriptText](../winscript/reference/iactivescriptparse-parsescripttext.md) para introducir en el motor de scripting el texto del script, después de llamar a `IActiveScriptParse::InitNew`.
+3. Cargue el script. Si se ha guardado el contenido del script, el host llama al método `IPersist*::Load` del motor de scripting para introducir en él el almacenamiento de scripts, la secuencia o el contenedor de propiedades. En caso contrario, el host usa el método `IPersist*::InitNew` o [IActiveScriptParse::InitNew](../winscript/reference/iactivescriptparse-initnew.md) para crear un script null. Un host que guarde un script como texto puede usar [IActiveScriptParse::ParseScriptText](../winscript/reference/iactivescriptparse-parsescripttext.md) para introducir en el motor de scripting el texto del script, después de llamar a `IActiveScriptParse::InitNew`.
 
-4.  Agregue elementos con nombre. Para cada elemento con nombre de nivel superior (por ejemplo, páginas y formularios) importado en el espacio de nombres del motor de scripting, el host llama al método [IActiveScript::AddNamedItem](../winscript/reference/iactivescript-addnameditem.md) para crear una entrada en el espacio de nombres del motor. Este paso no es necesario si los elementos con nombre de nivel superior ya forman parte del estado persistente del script cargado en el paso 3. Un host no usa `IActiveScript::AddNamedItem` para agregar elementos con nombre de subnivel (por ejemplo, controles en una página HTML); en su lugar, el motor obtiene indirectamente elementos de subnivel a partir de elementos de nivel superior mediante las interfaces `ITypeInfo` y `IDispatch` del host.
+4. Agregue elementos con nombre. Para cada elemento con nombre de nivel superior (por ejemplo, páginas y formularios) importado en el espacio de nombres del motor de scripting, el host llama al método [IActiveScript::AddNamedItem](../winscript/reference/iactivescript-addnameditem.md) para crear una entrada en el espacio de nombres del motor. Este paso no es necesario si los elementos con nombre de nivel superior ya forman parte del estado persistente del script cargado en el paso 3. Un host no usa `IActiveScript::AddNamedItem` para agregar elementos con nombre de subnivel (por ejemplo, controles en una página HTML); en su lugar, el motor obtiene indirectamente elementos de subnivel a partir de elementos de nivel superior mediante las interfaces `ITypeInfo` y `IDispatch` del host.
 
-5.  Ejecute el script. El host hace que el motor empiece a ejecutar el script mediante el establecimiento de la marca SCRIPTSTATE_CONNECTED en el método [IActiveScript::SetScriptState](../winscript/reference/iactivescript-setscriptstate.md). Esta llamada probablemente hará que funcionen todas las construcciones del motor de scripting, incluidos el enlace estático, el enlace a eventos (vea más adelante) y la ejecución de código, de forma similar a la función `main()` generada por script.
+5. Ejecute el script. El host hace que el motor empiece a ejecutar el script mediante el establecimiento de la marca SCRIPTSTATE_CONNECTED en el método [IActiveScript::SetScriptState](../winscript/reference/iactivescript-setscriptstate.md). Esta llamada probablemente hará que funcionen todas las construcciones del motor de scripting, incluidos el enlace estático, el enlace a eventos (vea más adelante) y la ejecución de código, de forma similar a la función `main()` generada por script.
 
-6.  Obtenga información del elemento. Cada vez que el motor de scripting necesita asociar un símbolo con un elemento de nivel superior, llama al método [IActiveScriptSite::GetItemInfo](../winscript/reference/iactivescriptsite-getiteminfo.md), que devuelve información sobre el elemento especificado.
+6. Obtenga información del elemento. Cada vez que el motor de scripting necesita asociar un símbolo con un elemento de nivel superior, llama al método [IActiveScriptSite::GetItemInfo](../winscript/reference/iactivescriptsite-getiteminfo.md), que devuelve información sobre el elemento especificado.
 
-7.  Enlace eventos. Antes de iniciar el script real, el motor de scripting se conecta a los eventos de todos los objetos relevantes a través de la interfaz `IConnectionPoint`.
+7. Enlace eventos. Antes de iniciar el script real, el motor de scripting se conecta a los eventos de todos los objetos relevantes a través de la interfaz `IConnectionPoint`.
 
-8.  Invoque propiedades y métodos. A medida que se ejecuta el script, el motor de scripting realiza referencias a métodos y propiedades en objetos con nombre a través de `IDispatch::Invoke` u otros mecanismos estándares de enlace de OLE.
+8. Invoque propiedades y métodos. A medida que se ejecuta el script, el motor de scripting realiza referencias a métodos y propiedades en objetos con nombre a través de `IDispatch::Invoke` u otros mecanismos estándares de enlace de OLE.
 
 ## <a name="windows-script-terms"></a>Términos de Windows Script
 
 Esta lista contiene las definiciones de los términos relacionados con los scripts usados en este documento.
 
-|Término|de esquema JSON|
+|Término|Definición|
 |----------|----------------|
 |Objeto de código|Instancia creada por el motor de scripting que está asociada a un elemento con nombre, como el módulo subyacente a un formulario en Visual Basic o una clase de C++ asociada con un elemento con nombre. Preferiblemente, se trata de un objeto OLE COM (Modelo de objetos componentes) que es compatible con la automatización OLE, por lo que el host u otra entidad que no sea un script pueden manipular el objeto de código.|
 |Elemento con nombre|Objeto OLE COM (preferiblemente uno que admita la automatización OLE) que el host considera interesante para el script. Algunos ejemplos son HTML Page y Browser en un explorador web, así como Document y Dialogs en Microsoft Word.|

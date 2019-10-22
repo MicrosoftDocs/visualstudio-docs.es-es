@@ -7,17 +7,17 @@ helpviewer_keywords:
 - project system
 - tutorial
 ms.assetid: aee48fc6-a15f-4fd5-8420-7f18824de220
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d23c0803bb81b34156d2cdb56e54388ba3cc5661
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: d6dfcae8855c2bdb821f61be65de39282db87dfd
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56681314"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66336996"
 ---
 # <a name="create-a-basic-project-system-part-2"></a>Crear un sistema de proyectos básico, parte 2
 El primer tutorial de esta serie, [crear un sistema de proyectos básico, parte 1](../extensibility/creating-a-basic-project-system-part-1.md), se muestra cómo crear un sistema de proyectos básico. En este tutorial se basa en el sistema de proyectos básico mediante la adición de una plantilla de Visual Studio, una página de propiedades y otras características. Debe completar el primer tutorial antes de iniciar esta.
@@ -42,7 +42,7 @@ En este tutorial se enseña cómo realizar estas tareas:
 ## <a name="create-a-visual-studio-template"></a>Crear una plantilla de Visual Studio
 - [Crear un sistema de proyectos básico, parte 1](../extensibility/creating-a-basic-project-system-part-1.md) se muestra cómo crear una plantilla de proyecto básico y agregarlo al sistema del proyecto. También muestra cómo registrar esta plantilla con Visual Studio mediante el uso de la <xref:Microsoft.VisualStudio.Shell.ProvideProjectFactoryAttribute> atributo, que escribe la ruta de acceso completa de la *\\Templates\Projects\SimpleProject\\* carpeta en el sistema registro.
 
-Mediante una plantilla de Visual Studio (*.vstemplate* archivo) en lugar de una plantilla de proyecto básico, puede controlar cómo la plantilla aparece en el **nuevo proyecto** cuadro de diálogo y cómo son parámetros de plantilla sustituir. Un *.vstemplate* archivo es un archivo XML que se describe cómo los archivos de origen se incluirán cuando se crea un proyecto mediante la plantilla de proyecto del sistema. El sistema del proyecto se compila mediante la recopilación de la *.vstemplate* archivo y los archivos de origen en un *.zip* archivo e implementado mediante la copia de la *.zip* en una ubicación que es conocidos de Visual Studio. Este proceso se explica con más detalle más adelante en este tutorial.
+Mediante una plantilla de Visual Studio ( *.vstemplate* archivo) en lugar de una plantilla de proyecto básico, puede controlar cómo la plantilla aparece en el **nuevo proyecto** cuadro de diálogo y cómo son parámetros de plantilla sustituir. Un *.vstemplate* archivo es un archivo XML que se describe cómo los archivos de origen se incluirán cuando se crea un proyecto mediante la plantilla de proyecto del sistema. El sistema del proyecto se compila mediante la recopilación de la *.vstemplate* archivo y los archivos de origen en un *.zip* archivo e implementado mediante la copia de la *.zip* en una ubicación que es conocidos de Visual Studio. Este proceso se explica con más detalle más adelante en este tutorial.
 
 1. En [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], abra la solución SimpleProject que creó siguiendo [crear un sistema de proyectos básico, parte 1](../extensibility/creating-a-basic-project-system-part-1.md).
 
@@ -175,7 +175,7 @@ ZipProjects:
 ```
 
 ## <a name="deploy-a-visual-studio-template"></a>Implementar una plantilla de Visual Studio
-Plantillas de Visual Studio no contienen información de ruta de acceso. Por lo tanto, la plantilla *.zip* archivo debe implementarse en una ubicación conocida para Visual Studio. La ubicación de la carpeta ProjectTemplates suele *\Microsoft\VisualStudio\14.0Exp\ProjectTemplates < % LOCALAPPDATA % >*.
+Plantillas de Visual Studio no contienen información de ruta de acceso. Por lo tanto, la plantilla *.zip* archivo debe implementarse en una ubicación conocida para Visual Studio. La ubicación de la carpeta ProjectTemplates suele *\Microsoft\VisualStudio\14.0Exp\ProjectTemplates < % LOCALAPPDATA % >* .
 
 Para implementar el generador de proyectos, el programa de instalación debe tener privilegios de administrador. Implementa plantillas bajo el nodo de la instalación de Visual Studio: *...\Microsoft Visual Studio 14.0\Common7\IDE\ProjectTemplates*.
 
@@ -207,7 +207,7 @@ Los nodos secundarios se crean al modificar el archivo de proyecto y agregar \<O
 
 En esta sección se muestra cómo crear un nodo secundario de consola para el tipo de proyecto SimpleProject.
 
-1. Cambiar el nombre de la *\\Templates\Projects\SimpleProject\\* carpeta  *\\Templates\Projects\ConsoleApp\\*.
+1. Cambiar el nombre de la *\\Templates\Projects\SimpleProject\\* carpeta  *\\Templates\Projects\ConsoleApp\\* .
 
 2. En el **propiedades** ventana, seleccione todos los cinco archivos en el *\\Templates\Projects\ConsoleApp\\* carpeta y asegúrese de que el **acción de compilación**está establecido en **ZipProject**.
 

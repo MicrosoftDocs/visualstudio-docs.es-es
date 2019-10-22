@@ -7,17 +7,17 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugPortEvents2 interface
 ms.assetid: 2c017094-3ba2-4067-83f9-147df1d96bce
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: fb6a13b47013153de284ad1997a484efb3be1c98
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 5690108aaeede2cf15cc5fac927a3dc5ab3855ab
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56712468"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66326733"
 ---
 # <a name="idebugportevents2"></a>IDebugPortEvents2
 Esta interfaz notifica a un agente de escucha (normalmente, el Administrador de depuración de sesión [SDM] o un motor de depuración) de programa y el proceso de creación y destrucción en un puerto determinado. Esta información puede usarse para presentar una vista en tiempo real de los procesos y los programas que se ejecutan en el puerto.

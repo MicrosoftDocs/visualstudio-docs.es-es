@@ -16,12 +16,12 @@ caps.latest.revision: 9
 author: mikeblome
 ms.author: mblome
 manager: jillfra
-ms.openlocfilehash: 1ebe75fae15069efc5e76ac59e6f16f9ca06d1ae
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: e5284ae41f961d8e027590b4296037236e7108f6
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58987643"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65699430"
 ---
 # <a name="intrinsic-functions"></a>Funciones intrínsecas
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -46,8 +46,8 @@ Una expresión de SAL puede ser una expresión de C o C++, siempre que sea una e
 |Anotación|Descripción|  
 |----------------|-----------------|  
 |`_String_length_(param)`|`param` es el número de elementos de la cadena hasta pero sin incluir un terminador nulo. Esta anotación está reservada para los tipos de cadena de caracteres.|  
-|`strlen(param)`|`param` es el número de elementos de la cadena hasta pero sin incluir un terminador nulo. Esta anotación está reservada para uso en caracteres, matrices y es similar a la función en tiempo de ejecución de C [strlen()](http://msdn.microsoft.com/library/16462f2a-1e0f-4eb3-be55-bf1c83f374c2).|  
-|`wcslen(param)`|`param` es el número de elementos de la cadena hasta (pero no incluyendo) un terminador nulo. Esta anotación está reservada para uso en caracteres anchos, matrices y es similar a la función en tiempo de ejecución de C [wcslen()](http://msdn.microsoft.com/library/16462f2a-1e0f-4eb3-be55-bf1c83f374c2).|  
+|`strlen(param)`|`param` es el número de elementos de la cadena hasta pero sin incluir un terminador nulo. Esta anotación está reservada para uso en caracteres, matrices y es similar a la función en tiempo de ejecución de C [strlen()](https://msdn.microsoft.com/library/16462f2a-1e0f-4eb3-be55-bf1c83f374c2).|  
+|`wcslen(param)`|`param` es el número de elementos de la cadena hasta (pero no incluyendo) un terminador nulo. Esta anotación está reservada para uso en caracteres anchos, matrices y es similar a la función en tiempo de ejecución de C [wcslen()](https://msdn.microsoft.com/library/16462f2a-1e0f-4eb3-be55-bf1c83f374c2).|  
   
 ## <a name="see-also"></a>Vea también  
  [Utilizar anotaciones SAL para reducir defectos de código de c/c ++](../code-quality/using-sal-annotations-to-reduce-c-cpp-code-defects.md)   

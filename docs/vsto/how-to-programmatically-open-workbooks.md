@@ -14,11 +14,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: facf3cbeb6635324e74244983fcb33138ad64cfe
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60107897"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62812394"
 ---
 # <a name="how-to-programmatically-open-workbooks"></a>Procedimiento Abrir libros mediante programación
   El <xref:Microsoft.Office.Interop.Excel.Workbooks> colección en Microsoft Office Excel hace posible para trabajar con todos los libros abiertos y abrir los libros.

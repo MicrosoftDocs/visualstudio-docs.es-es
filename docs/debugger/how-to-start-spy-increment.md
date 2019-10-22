@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 85e253491a4cb3713b5920c9abd09f9396298319
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: cc247a6391df0357905e2cbdb895bec4e469a248
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60099148"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63387533"
 ---
 # <a name="how-to-start-spy"></a>Procedimiento Iniciar Spy++
 
@@ -24,7 +24,7 @@ Puede iniciar Spy ++ desde Visual Studio o en un símbolo del sistema.
  Al iniciar Spy ++, si se muestra un mensaje para solicitar permiso para realizar cambios en el equipo, seleccione **Sí**.
 
 > [!NOTE]
->  Puede ejecutar una única instancia de Spy ++. Si intenta iniciar una segunda instancia, simplemente hace que la instancia en ejecución obtener el foco.
+> Puede ejecutar una única instancia de Spy ++. Si intenta iniciar una segunda instancia, simplemente hace que la instancia en ejecución obtener el foco.
 
 ## <a name="prerequisites"></a>Requisitos previos
 
@@ -42,7 +42,7 @@ En el **herramientas** menú, seleccione **Spy ++**.
 Dado que Spy ++ se ejecuta de forma independiente, después de iniciarla puede cerrar Visual Studio.
 
 > [!NOTE]
->  Al registrar los mensajes con Spy ++, provocaría el sistema operativo realice más lentamente.
+> Al registrar los mensajes con Spy ++, provocaría el sistema operativo realice más lentamente.
 
 ## <a name="start-spy-at-a-command-prompt"></a>Iniciar Spy ++ en un símbolo del sistema
 

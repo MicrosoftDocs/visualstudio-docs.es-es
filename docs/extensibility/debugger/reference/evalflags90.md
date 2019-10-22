@@ -5,17 +5,20 @@ ms.topic: reference
 helpviewer_keywords:
 - EVALFLAGS90 enumeration
 ms.assetid: 64fb0139-8b04-4726-b52c-db2e04d65498
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 73673d0b0ca7ccb640a3fab2043bc35b26657a9b
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 24afc4456570ff0c3e5dc1eb56789984bf18ac58
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56720307"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66337833"
 ---
 # <a name="evalflags90"></a>EVALFLAGS90
 Enumera los valores válidos para las marcas que controlan la evaluación de expresiones. Esta enumeración se extiende el [EVALFLAGS](../../../extensibility/debugger/reference/evalflags.md) enumeración.
@@ -61,26 +64,36 @@ public enum enum_EVALFLAGS90
 };
 ```
 
-#### <a name="parameters"></a>Parámetros
-EVAL90_RETURNVALUE especifica que el valor devuelto, si hay alguno, va a evaluar.
+## <a name="fields"></a>Campos
+`EVAL90_RETURNVALUE`\
+Especifica que el valor devuelto, si hay alguno, va a evaluar.
 
-EVAL90_NOSIDEEFFECTS especifica que no se permiten efectos secundarios.
+`EVAL90_NOSIDEEFFECTS`\
+Especifica que no se permiten efectos secundarios.
 
-EVAL90_ALLOWBPS especifica detención en puntos de interrupción.
+`EVAL90_ALLOWBPS`\
+Especifica la detención en puntos de interrupción.
 
-EVAL90_ALLOWERRORREPORT especifica ese informe de errores para el host para poder ser admitidos. Se utiliza principalmente para la evaluación de expresión en un script en Internet Explorer.
+`EVAL90_ALLOWERRORREPORT`\
+Especifica que informe de errores para el host para poder ser admitidos. Se utiliza principalmente para la evaluación de expresión en un script en Internet Explorer.
 
-Funciones de fuerzas EVAL90_FUNCTION_AS_ADDRESS se evalúen como direcciones, en lugar de invocar la función.
+`EVAL90_FUNCTION_AS_ADDRESS`\
+Funciones de fuerza se evalúen como direcciones, en lugar de invocar la función.
 
-EVAL90_NOFUNCEVAL impide que la función desde la que se va a evaluar. Por ejemplo, considere la `int` testigo en la expresión `myExpression(int) + 10`. Esta función se puede evaluar correctamente como una dirección, pero no como un valor.
+`EVAL90_NOFUNCEVAL`\
+Impide a función que se evalúa. Por ejemplo, considere la `int` testigo en la expresión `myExpression(int) + 10`. Esta función se puede evaluar correctamente como una dirección, pero no como un valor.
 
-EVAL90_NOEVENTS marca para indicar que no se envíen eventos que se producen durante la evaluación de expresión para el Administrador de depuración de la sesión (SDM) o el IDE.
+`EVAL90_NOEVENTS`\
+Marca para indicar que no se envíen eventos que se producen durante la evaluación de expresión para el Administrador de depuración de la sesión (SDM) o el IDE.
 
-Evaluación de expresiones en tiempo de diseño permite EVAL90_DESIGN_TIME_EXPR_EVAL.
+`EVAL90_DESIGN_TIME_EXPR_EVAL`\
+Permite la evaluación de expresiones en tiempo de diseño.
 
-Permite EVAL90_ALLOW_IMPLICIT_VARS variable creación implícita.
+`EVAL90_ALLOW_IMPLICIT_VARS`\
+Permite la creación implícita de variables.
 
-Evaluación de las fuerzas EVAL90_FORCE_EVALUATION_NOW se produzca inmediatamente. Esto es útil cuando se atiende una solicitud, por ejemplo, una solicitud de usuario.
+`EVAL90_FORCE_EVALUATION_NOW`\
+Evaluación de las fuerzas que se produzca inmediatamente. Esto es útil cuando se atiende una solicitud, por ejemplo, una solicitud de usuario.
 
 ## <a name="requirements"></a>Requisitos
 Encabezado: Msdbg90.h

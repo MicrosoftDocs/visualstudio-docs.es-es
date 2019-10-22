@@ -6,18 +6,18 @@ helpviewer_keywords:
 - start page commands
 - vs:VSCommands
 ms.assetid: a8e2765c-cfb5-47b5-a414-6e48b434e0c2
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
 monikerRange: vs-2017
-ms.openlocfilehash: 8461fdd3fd0aaedbbdd770a4e2762c4912c3ce0d
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 86fe084d2dab10ed7370f5fc5b99931491b096be
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60040164"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66352289"
 ---
 # <a name="add-visual-studio-commands-to-a-start-page"></a>Agregar comandos de Visual Studio a una página de inicio
 
@@ -50,7 +50,7 @@ Puede usar el `vscom:` alias para enlazar comandos de Visual Studio con XAML se 
 ```
 
 > [!NOTE]
->  El `x:` alias, lo que hace referencia al esquema XAML, es necesario al principio de todos los comandos.
+> El `x:` alias, lo que hace referencia al esquema XAML, es necesario al principio de todos los comandos.
 
  Puede establecer el valor de la `Command` propiedad con cualquier comando que se puede acceder desde el **comando** ventana. Para obtener una lista de comandos disponibles, consulte [alias de comandos de Visual Studio](../ide/reference/visual-studio-command-aliases.md).
 
@@ -66,7 +66,7 @@ Puede usar el `vscom:` alias para enlazar comandos de Visual Studio con XAML se 
  Puede llamar a comandos de VSPackages registrados mediante el uso de la misma sintaxis que se usa para llamar a otros comandos de Visual Studio. Por ejemplo, si agrega un VSPackage instalado un **página principal** comando a la **vista** menú, puede llamar a ese comando estableciendo `CommandParameter` a `View.HomePage`.
 
 > [!NOTE]
->  Si se llama a un comando que está asociado a un VSPackage, debe cargar el paquete cuando se invoca el comando.
+> Si se llama a un comando que está asociado a un VSPackage, debe cargar el paquete cuando se invoca el comando.
 
 ## <a name="add-commands-from-assemblies"></a>Agregar comandos de ensamblados
  Para llamar a un comando desde un ensamblado, o al código de acceso en un VSPackage que no está asociado con un comando de menú, debe crear un alias para el ensamblado y, a continuación, llamar a lo alias.
@@ -90,7 +90,7 @@ Puede usar el `vscom:` alias para enlazar comandos de Visual Studio con XAML se 
     ```
 
 > [!NOTE]
->  Debe copiar el ensamblado y, a continuación, péguelo en *.. \\\Common7\IDE\PrivateAssemblies {carpeta de instalación de visual Studio}\* para asegurarse de que se carga antes de que se llama.
+> Debe copiar el ensamblado y, a continuación, péguelo en *.. \\\Common7\IDE\PrivateAssemblies {carpeta de instalación de visual Studio}\* para asegurarse de que se carga antes de que se llama.
 
 ## <a name="add-commands-with-the-dte-object"></a>Agregar comandos con el objeto DTE
  Puede acceder al objeto DTE desde una página de inicio tanto en el marcado en el código.

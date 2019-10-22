@@ -4,17 +4,17 @@ ms.date: 05/02/2017
 ms.topic: conceptual
 helpviewer_keywords:
 - IntelliTest Reference Manual, IntelliTest
-ms.author: gewarren
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-author: gewarren
-ms.openlocfilehash: d7258549b242091737e14e00980447eb48d5e78b
-ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
+author: jillre
+ms.openlocfilehash: 97b28c2810b59465c6d5ac682e95e25b324a95a0
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58324804"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72653202"
 ---
 # <a name="intellitest-reference-manual"></a>Manual de referencia de IntelliTest
 

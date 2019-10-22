@@ -1,16 +1,16 @@
 ---
-title: Métodos abreviados de teclado predeterminados de Visual Studio para Mac
+title: Métodos abreviados de teclado predeterminados
 description: En este artículo se muestran los métodos abreviados de teclado predeterminados de Visual Studio para Mac
 ms.date: 03/14/2019
 author: bytesguy
-ms.author: adhartle
+ms.author: crdun
 ms.assetid: 48E06A61-7294-4EC8-A09D-1763C32AD910
-ms.openlocfilehash: 498cea9cdc32eab48d4f861f349e2076bb312bb2
-ms.sourcegitcommit: da73f7a0cf1795d5d400c0897ae3326191435dd0
+ms.openlocfilehash: 371f1e93405d3034bda4259831cee27c6f52a40c
+ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/28/2019
-ms.locfileid: "58568627"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68872244"
 ---
 # <a name="default-keyboard-shortcuts-in-visual-studio-for-mac"></a>Métodos abreviados de teclado predeterminados de Visual Studio para Mac
 
@@ -36,7 +36,7 @@ Puede acceder a una variedad de comandos de Visual Studio para Mac si usa el mé
 
 |Comandos|Métodos abreviados de teclado|
 |-|-|
-|Habilitar o deshabilitar punto de interrupción|**⌥⌘/**, **⌘F9**|
+|Habilitar o deshabilitar punto de interrupción|**⌥⌘/** , **⌘F9**|
 |Pausar|**⌥⌘P**, **⌥⌘L5**|
 |Quitar|**⇧⌘F9**|
 |Ejecutar hasta el cursor|**⌘F10**|
@@ -45,7 +45,7 @@ Puede acceder a una variedad de comandos de Visual Studio para Mac si usa el mé
 |Paso a paso por instrucciones|**⇧⌘I**, **⌘F11**|
 |Paso a paso para salir|**⇧⌘U**, **⇧⌘F11**|
 |Paso a paso por procedimientos|**⇧⌘O**, **F10**|
-|Alternar punto de interrupción|**⌘\\**, **F9**|
+|Alternar punto de interrupción|**⌘\\** , **F9**|
 |Ver puntos de interrupción|**⌥⌘B**|
 
 ## <a name="designer"></a>Diseñador
@@ -225,8 +225,8 @@ Puede acceder a una variedad de comandos de Visual Studio para Mac si usa el mé
 |Mostrar siguiente|**⌥⌘↓**, **F8**|
 |Mostrar anterior|**⌥⌘↑**, **⇧F8**|
 |Dos columnas de editor|**⌥⌘2**|
-|Acercar|**⌘+**, **⌘=**|
-|Alejar|**⌘-**, **⌘_**|
+|Acercar|**⌘+** , **⌘=**|
+|Alejar|**⌘-** , **⌘_**|
 
 ## <a name="window"></a>Ventana
 
@@ -244,8 +244,8 @@ Puede acceder a una variedad de comandos de Visual Studio para Mac si usa el mé
 |Ocultar otros|**⌥⌘H**|
 |Ocultar Visual Studio|**⌘H**|
 |Minimizar|**⌘M**|
-|Documento siguiente|**⌘}**, **⌘F6**|
-|Documento anterior|**⌘{**, **⇧⌘F6**|
+|Documento siguiente|**⌘}** , **⌘F6**|
+|Documento anterior|**⌘{** , **⇧⌘F6**|
 |Cambiar al documento siguiente|**⌃⇥**|
 |Cambiar al relleno siguiente|**⌃⌥⇥**|
 |Cambiar al documento anterior|**⌃⇧⇥**|
@@ -259,8 +259,8 @@ Puede acceder a una variedad de comandos de Visual Studio para Mac si usa el mé
 |⌥|**Opción** (**alt**)|
 |⇧|**Mayús**|
 |⌃|**Control** (**ctrl**)
-|⇞|**Retroceder página** (**Re. pág.**)|
-|⇟|**Avanzar página** (**Av. pág.**)|
+|⇞|**Retroceder página** (**Re. pág.** )|
+|⇟|**Avanzar página** (**Av. pág.** )|
 |⌫|**Borrar** (**Retroceso**)|
 |⌦|**Borrar hacia adelante**|
 |⏎|**Return**|

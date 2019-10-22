@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 548943b9d203cf84773385f6b12d70dcb246b708
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: c326dc31f6ce80026f1c83c5b71f8e27faabf93e
+ms.sourcegitcommit: 4dfe098ac0df294aad63e6b384d6575980798ca3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56607361"
+ms.lasthandoff: 09/11/2019
+ms.locfileid: "70887632"
 ---
 # <a name="sgen-task"></a>SGen (tarea)
 Crea un ensamblado de serialización XML para los tipos del ensamblado especificado. Esta tarea ajusta la herramienta Generador de serializador XML (*Sgen.exe*). Para más información, consulte [Herramienta Generador de serializador XML (Sgen.exe)](/dotnet/framework/serialization/xml-serializer-generator-tool-sgen-exe).
@@ -31,12 +31,11 @@ Crea un ensamblado de serialización XML para los tipos del ensamblado especific
 ## <a name="parameters"></a>Parámetros
  En la siguiente tabla se describen los parámetros de la tarea `SGen` .
 
-
-| Parámetro | Descripción |
+| Parámetro | DESCRIPCIÓN |
 |-----------------------------| - |
 | `BuildAssemblyName` | Parámetro `String` requerido.<br /><br /> Ensamblado para el que se debe generar código de serialización. |
 | `BuildAssemblyPath` | Parámetro `String` requerido.<br /><br /> Ruta de acceso al ensamblado para el que se debe generar código de serialización. |
-| `DelaySign` | Parámetro `Boolean` opcional.<br /><br /> Si `true`, especifica que quiere un ensamblado completamente firmado. Si `false`, especifica que solo quiere colocar la clave pública en el ensamblado.<br /><br /> Este parámetro no tiene ningún efecto a menos que se utilice con el parámetro `KeyFile` o `KeyContainer`. |
+| `DelaySign` | Parámetro `Boolean` opcional.<br /><br /> Si `true`, especifica que solo quiere colocar la clave pública en el ensamblado. Si `false`, especifica que quiere un ensamblado completamente firmado.<br /><br /> Este parámetro no tiene ningún efecto a menos que se utilice con el parámetro `KeyFile` o `KeyContainer`. |
 | `KeyContainer` | Parámetro `String` opcional.<br /><br /> Especifica un contenedor que contiene un par de claves. De este modo, el ensamblado se firmará mediante la inserción de una clave pública en el manifiesto del ensamblado. La tarea firmará después el ensamblado final con la clave privada. |
 | `KeyFile` | Parámetro `String` opcional.<br /><br /> Especifica un par de claves o una clave pública que se usará para firmar un ensamblado. El compilador inserta la clave pública en el manifiesto del ensamblado y firma después el ensamblado final con la clave privada. |
 | `Platform` | Parámetro `String` opcional.<br /><br /> Obtiene o establece la plataforma de compilador utilizada para generar el ensamblado de salida. Este parámetro puede tener un valor de `x86`, `x64` o `anycpu`. El valor predeterminado es `anycpu`. |

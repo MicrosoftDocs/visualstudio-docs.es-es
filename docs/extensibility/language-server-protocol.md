@@ -3,17 +3,17 @@ title: Información general sobre el protocolo de servidor Language | Microsoft 
 ms.date: 11/14/2017
 ms.topic: conceptual
 ms.assetid: 6a7d93c2-31ea-4bae-8b29-6988a567ddf2
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6d3fb814fa202e8a5211ab9db3cb1d71923ccac6
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 8f6f114d7165b85051092234ea33dfc7f73e1487
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56679104"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66309622"
 ---
 # <a name="language-server-protocol"></a>Protocolo de servidor de lenguaje
 
@@ -55,7 +55,7 @@ A continuación se muestra un ejemplo de cómo se comunican una herramienta y un
 
 * **El usuario ejecuta "Ir a definición" en un símbolo en el editor de**: La herramienta envía una solicitud de definición/textDocument con dos parámetros: (1) el identificador URI del documento y (2) la posición del texto desde donde se inició el ir a la solicitud de definición para el servidor. El servidor responde con el identificador URI del documento y la posición de la definición del símbolo dentro del documento.
 
-* **El usuario cierra el documento (archivo)**: Se envía una notificación de ' textDocument/didClose' de la herramienta, que informa al servidor de lenguaje que el documento está ahora ya no en memoria y que el contenido actual es ahora actualizadas en el sistema de archivos.
+* **El usuario cierra el documento (archivo)** : Se envía una notificación de ' textDocument/didClose' de la herramienta, que informa al servidor de lenguaje que el documento está ahora ya no en memoria y que el contenido actual es ahora actualizadas en el sistema de archivos.
 
 En este ejemplo se muestra cómo se comunica el protocolo con el servidor de lenguaje en el nivel de características del editor como "Ir a definición", "Buscar todas las referencias". Los tipos de datos usados por el protocolo están editor o IDE 'tipos de datos' como el documento de texto abierto actualmente y la posición del cursor. Los tipos de datos no están en el nivel de un modelo de dominio programación de lenguaje que normalmente proporcionaría los árboles de sintaxis abstracta y los símbolos del compilador (por ejemplo, resolver tipos, espacios de nombres,...). Esto simplifica significativamente el protocolo.
 

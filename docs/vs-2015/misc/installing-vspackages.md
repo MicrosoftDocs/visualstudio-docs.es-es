@@ -10,12 +10,12 @@ helpviewer_keywords:
 ms.assetid: 43db03ef-ceb5-4c13-875f-90259f470cc7
 caps.latest.revision: 18
 manager: jillfra
-ms.openlocfilehash: 4bf99473faf8bc2bf7c02af360e24c398c48e297
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 72eb9df3eda2535339cb7950578fd6a640a5a493
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58997932"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65681594"
 ---
 # <a name="installing-vspackages"></a>Instalar VSPackages
 En esta sección se explica cómo compilar e instalar VSPackages y cómo admitir usuarios que ejecutan varias versiones de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] al mismo tiempo.  
@@ -28,10 +28,10 @@ En esta sección se explica cómo compilar e instalar VSPackages y cómo admitir
  Describe cómo liberar los VSPackages como un producto instalable.  
   
 ## <a name="related-sections"></a>Secciones relacionadas  
- [Personalizar para realizar pruebas con el SDK de Visual Studio](http://msdn.microsoft.com/9cf7a840-dd66-4b00-90f7-e00e40370a69)  
+ [Personalizar para realizar pruebas con el SDK de Visual Studio](https://msdn.microsoft.com/9cf7a840-dd66-4b00-90f7-e00e40370a69)  
  Describe cómo puede extender [!INCLUDE[vsprvstte](../includes/vsprvstte-md.md)] para admitir nuevos tipos de pruebas.  
   
- [Pruebas de integración de Visual Studio](http://msdn.microsoft.com/8d741735-7d93-46c2-ab93-01da7a0e016d)  
+ [Pruebas de integración de Visual Studio](https://msdn.microsoft.com/8d741735-7d93-46c2-ab93-01da7a0e016d)  
  Proporciona un conjunto de pruebas para ayudar a asegurarse de que los VSPackages se integran correctamente en [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
   
  [Publicación de un producto](../misc/releasing-a-visual-studio-integration-product.md)  

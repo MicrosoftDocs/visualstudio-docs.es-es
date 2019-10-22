@@ -12,12 +12,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: ed55c42211222ca94587b4358bb904f9637cb3f4
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: 320b20fa40250ca47dd414b362059e152eba2c3b
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56596326"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63420993"
 ---
 # <a name="imanagedaddin-interface"></a>interfaz IManagedAddin
   Implementar la interfaz IManagedAddin para crear un componente que carga administrados complementos de VSTO. Esta interfaz se agregó en 2007 Microsoft Office system.
@@ -43,7 +43,7 @@ interface IManagedAddin : IUnknown
 ## <a name="methods"></a>Métodos
  En la tabla siguiente se enumera los métodos que se definen mediante la interfaz IManagedAddin.
 
-|nombre|Descripción|
+|Name|Descripción|
 |----------|-----------------|
 |[IManagedAddin::Load](../vsto/imanagedaddin-load.md)|Se llama a este método cuando una aplicación de Microsoft Office carga un complemento de VSTO administrado.|
 |[IManagedAddin::Unload](../vsto/imanagedaddin-unload.md)|Se llama a este método justo antes de que una aplicación de Microsoft Office descargue un complemento de VSTO administrado.|
@@ -56,13 +56,13 @@ interface IManagedAddin : IUnknown
 
 1. La aplicación detecta los complementos de VSTO buscando las entradas en la siguiente clave del registro:
 
-    **HKEY_CURRENT_USER\Software\Microsoft\Office\\*\<nombreDeAplicación >* \Addins\\**
+    **HKEY_CURRENT_USER\Software\Microsoft\Office\\ *\<nombreDeAplicación >* \Addins\\**
 
     Cada entrada de esta clave del Registro es un identificador único del complemento de VSTO. Normalmente, se trata del nombre del ensamblado de complemento de VSTO.
 
 2. La aplicación busca una entrada `Manifest` en la entrada de cada complemento de VSTO.
 
-    Complementos VSTO administrados pueden almacenar la ruta de acceso completa de un manifiesto en el `Manifest` entrada bajo **HKEY_CURRENT_USER\Software\Microsoft\Office\\_\<nombreDeAplicación >_ \Addins\\  _\<ID de complemento >_**. Un manifiesto es un archivo (normalmente un archivo XML) que proporciona información que se usa para cargar el complemento VSTO.
+    Complementos VSTO administrados pueden almacenar la ruta de acceso completa de un manifiesto en el `Manifest` entrada bajo **HKEY_CURRENT_USER\Software\Microsoft\Office\\ _\<nombreDeAplicación >_ \Addins\\  _\<ID de complemento >_ **. Un manifiesto es un archivo (normalmente un archivo XML) que proporciona información que se usa para cargar el complemento VSTO.
 
 3. Si la aplicación encuentra una entrada `Manifest` , la aplicación intenta cargar un componente de cargador de complemento de VSTO administrado. Para ello, la aplicación intenta crear un objeto COM que implementa la interfaz IManagedAddin.
 
@@ -82,7 +82,7 @@ interface IManagedAddin : IUnknown
  Aplicaciones de Microsoft Office utilizan este CLSID para crear el objeto COM que implementa IManagedAddin.
 
 > [!CAUTION]
->  También utiliza este CLSID *VSTOLoader.dll* en el [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]. Por lo tanto, si usas IManagedAddin para crear su propio cargador de complementos de VSTO y el componente en tiempo de ejecución, no se puede implementar el componente en equipos que ejecutan complementos VSTO que se basan en el [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)].
+> También utiliza este CLSID *VSTOLoader.dll* en el [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]. Por lo tanto, si usas IManagedAddin para crear su propio cargador de complementos de VSTO y el componente en tiempo de ejecución, no se puede implementar el componente en equipos que ejecutan complementos VSTO que se basan en el [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)].
 
 ## <a name="see-also"></a>Vea también
 - [Referencia de API no administrada &#40;desarrollo de Office en Visual Studio&#41;](../vsto/unmanaged-api-reference-office-development-in-visual-studio.md)

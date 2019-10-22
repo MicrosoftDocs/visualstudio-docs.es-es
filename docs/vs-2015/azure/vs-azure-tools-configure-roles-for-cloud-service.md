@@ -11,12 +11,12 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 03/21/2017
 ms.author: ghogen
-ms.openlocfilehash: c14de7498cf893169295c08947d6687a2121bd6e
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 810ebfcfb4cb4354c3df4c0d9892a37ca1624256
+ms.sourcegitcommit: 7fbfb2a1d43ce72545096c635df2b04496b0be71
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60059449"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "67692080"
 ---
 # <a name="configure-azure-cloud-service-roles-with-visual-studio"></a>Configuración de los roles para un servicio de Azure con Visual Studio
 Un servicio en la nube de Azure puede tener uno o más roles web o de trabajo. Para cada rol, debe definir cómo se configura ese rol y cómo se ejecuta. Para obtener más información sobre los roles en servicios en la nube, vea el vídeo [Introducción a Azure Cloud Services](https://channel9.msdn.com/Series/Windows-Azure-Cloud-Services-Tutorials/Introduction-to-Windows-Azure-Cloud-Services).
@@ -224,7 +224,7 @@ Puede agregar almacenamiento del sistema de archivos local para cada instancia d
     ![Nueva entrada de almacenamiento local](./media/vs-azure-tools-configure-roles-for-cloud-service/role-local-storage-tab-new-local-storage.png)
 
     - **Nombre**: escriba el nombre que desea utilizar para el nuevo almacenamiento local.
-    - **Tamaño (MB)**: especifique el tamaño en MB que necesita para el nuevo almacenamiento local.
+    - **Tamaño (MB)** : especifique el tamaño en MB que necesita para el nuevo almacenamiento local.
     - **Limpiar al reciclar rol**: seleccione esta opción para quitar los datos del almacenamiento local cuando se recicla la máquina virtual para este rol.
 
 1. Para eliminar una entrada de almacenamiento local, selecciónela y active **Remove Local Storage** (Quitar almacenamiento local).
@@ -239,21 +239,20 @@ En esta sección se indica cómo acceder mediante programación al almacenamient
 
 En el código siguiente se muestra un ejemplo de cómo escribir un archivo de texto en el almacenamiento local. Reemplace el marcador de posición &lt;LocalStorageName> por el valor adecuado.
 
-    ```csharp
-    // Retrieve an object that points to the local storage resource
-    LocalResource localResource = RoleEnvironment.GetLocalResource("<LocalStorageName>");
+```csharp
+// Retrieve an object that points to the local storage resource
+LocalResource localResource = RoleEnvironment.GetLocalResource("<LocalStorageName>");
 
-    //Define the file name and path
-    string[] paths = { localResource.RootPath, "MyLocalStorageTest.txt" };
-    String filePath = Path.Combine(paths);
+//Define the file name and path
+string[] paths = { localResource.RootPath, "MyLocalStorageTest.txt" };
+String filePath = Path.Combine(paths);
 
-    using (FileStream writeStream = File.Create(filePath))
-    {
-        Byte[] textToWrite = new UTF8Encoding(true).GetBytes("Testing Web role storage");
-        writeStream.Write(textToWrite, 0, textToWrite.Length);
-    }
-
-    ```
+using (FileStream writeStream = File.Create(filePath))
+{
+    Byte[] textToWrite = new UTF8Encoding(true).GetBytes("Testing Web role storage");
+    writeStream.Write(textToWrite, 0, textToWrite.Length);
+}
+```
 
 ### <a name="find-a-file-written-to-local-storage"></a>Búsqueda de un archivo escrito en el almacenamiento local
 

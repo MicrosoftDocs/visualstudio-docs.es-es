@@ -1,5 +1,5 @@
 ---
-title: SCRIPTGCTYPE (enumeración) | Documentos de Microsoft
+title: Enumeración SCRIPTGCTYPE (| Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -11,15 +11,15 @@ caps.latest.revision: 3
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 0a5de3ea949203ad7a6dca0ea777fdbc9514ba6d
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 7fce16c756cf06c8cf01937114402832570a0cd3
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58160620"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72574395"
 ---
 # <a name="scriptgctype-enumeration"></a>SCRIPTGCTYPE (Enumeración)
-El tipo de elementos no utilizados para realizar. Utilizado en el [IActiveScriptGarbageCollector::CollectGarbage](../../winscript/reference/iactivescriptgarbagecollector-collectgarbage.md) método.  
+Tipo de recolección de elementos no utilizados que se va a realizar. Se usa en el método [IActiveScriptGarbageCollector:: recolector](../../winscript/reference/iactivescriptgarbagecollector-collectgarbage.md) .  
   
 ## <a name="syntax"></a>Sintaxis  
   
@@ -31,8 +31,8 @@ typedef enum tagSCRIPTGCTYPE {    SCRIPTGCTYPE_NORMAL           = 0,    SCRIPTGC
   
 |||  
 |-|-|  
-|SCRIPTGCTYPE_NORMAL|Realizar la recolección normal. El valor entero es 0.|  
-|SCRIPTGCTYPE_EXHAUSTIVE|Realizar la recolección exhaustiva. El valor entero es 1.|  
+|SCRIPTGCTYPE_NORMAL|Realizar la recolección normal de elementos no utilizados. El valor entero es 0.|  
+|SCRIPTGCTYPE_EXHAUSTIVE|Realice la recolección de elementos no utilizados exhaustiva. El valor entero es 1.|  
   
 ## <a name="see-also"></a>Vea también  
  [Active Script (Constantes, Enumeraciones y Códigos de error)](../../winscript/reference/active-script-constants-enumerations-and-error-codes.md)

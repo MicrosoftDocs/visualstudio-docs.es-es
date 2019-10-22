@@ -1,5 +1,5 @@
 ---
-title: IDebugDocumentProvider::GetDocument | Microsoft Docs
+title: 'Idebugdocumentprovider (:: GetDocument | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8f6b816f455d213cb81065f1909930bf50eeb415
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: d9240f059023fee4f55f34c80087063638ec8ad6
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58146609"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72572172"
 ---
 # <a name="idebugdocumentprovidergetdocument"></a>IDebugDocumentProvider::GetDocument
-Hace que el documento que se creará una instancia si aún no existe.  
+Hace que se creen instancias del documento si aún no existe.  
   
 ## <a name="syntax"></a>Sintaxis  
   
@@ -37,7 +37,7 @@ HRESULT GetDocument(
   
 #### <a name="parameters"></a>Parámetros  
  `ppssd`  
- [out] El documento de depuración correspondiente al documento.  
+ enuncia Documento de depuración correspondiente al documento.  
   
 ## <a name="return-value"></a>Valor devuelto  
  El método devuelve un objeto `HRESULT`. Entre los valores posibles se incluyen los que se indican en la tabla siguiente, entre otros.  
@@ -47,7 +47,7 @@ HRESULT GetDocument(
 |`S_OK`|El método se realizó correctamente.|  
   
 ## <a name="remarks"></a>Comentarios  
- Este método hace que el documento que se creará una instancia si aún no existe.  
+ Este método hace que se creen instancias del documento si aún no existe.  
   
 ## <a name="see-also"></a>Vea también  
  [IDebugDocumentProvider (Interfaz)](../../winscript/reference/idebugdocumentprovider-interface.md)

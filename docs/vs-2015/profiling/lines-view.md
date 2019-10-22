@@ -16,11 +16,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: ccdb211312a6f53e7f519b7fac0e3ac28aab2429
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60058635"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68145629"
 ---
 # <a name="lines-view"></a>Vista Líneas
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,7 +45,7 @@ La vista Líneas está disponible solo para los datos del generador de perfiles 
   
 - El carácter en la línea de origen donde finaliza la instrucción.  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Otras referencias  
  [Vista Líneas](../profiling/lines-view-sampling-data.md)   
  [Vista Líneas: muestreo](../profiling/lines-view-dotnet-memory-sampling-data.md)   
  [Vista Líneas](../profiling/lines-view-contention-data.md)

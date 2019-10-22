@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 04eefc37162eaa90743982a0039e21d1d9edfb1a
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 99e5c789f65a1dff460bc22dd4a0c097e11c7e98
+ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60090724"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71252215"
 ---
 # <a name="how-to-resize-bookmark-controls"></a>Procedimiento Cambiar el tamaño de los controles Bookmark
   El tamaño de un control <xref:Microsoft.Office.Tools.Word.Bookmark> se establece cuando lo agrega a un documento de Microsoft Office Word. También puede cambiar su tamaño más adelante.
@@ -39,7 +39,7 @@ ms.locfileid: "60090724"
 
    Esto resulta de utilidad si hay un cambio significativo en el tamaño o la ubicación de un marcador.
 
-  En proyectos de nivel de documento, puede agregar controles <xref:Microsoft.Office.Tools.Word.Bookmark> al documento en el proyecto en tiempo de diseño o en tiempo de ejecución. En proyectos de complemento VSTO, puede agregar <xref:Microsoft.Office.Tools.Word.Bookmark> controles a cualquier documento abierto en tiempo de ejecución. Para obtener más información, vea [Cómo: Agregar controles Bookmark a documentos de Word](../vsto/how-to-add-bookmark-controls-to-word-documents.md).
+  En proyectos de nivel de documento, puede agregar controles <xref:Microsoft.Office.Tools.Word.Bookmark> al documento en el proyecto en tiempo de diseño o en tiempo de ejecución. En proyectos de complemento de VSTO, puede agregar controles <xref:Microsoft.Office.Tools.Word.Bookmark> a cualquier documento abierto en tiempo de ejecución. Para obtener más información, vea [Cómo: Agregar controles Bookmark a documentos](../vsto/how-to-add-bookmark-controls-to-word-documents.md)de Word.
 
   [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]
 
@@ -53,9 +53,9 @@ ms.locfileid: "60090724"
 
 3. Aumente o disminuya el valor de la propiedad <xref:Microsoft.Office.Tools.Word.Bookmark.End%2A> .
 
-### <a name="to-resize-a-bookmark-in-a-document-level-project-at-runtime"></a>Para cambiar el tamaño de un marcador en un proyecto de nivel de documento en tiempo de ejecución
+### <a name="to-resize-a-bookmark-in-a-document-level-project-at-run-time"></a>Cambiar el tamaño de un marcador de un proyecto de nivel de documento en tiempo de ejecución
 
-1. Modificar el <xref:Microsoft.Office.Tools.Word.Bookmark.Start%2A> y <xref:Microsoft.Office.Tools.Word.Bookmark.End%2A> las propiedades de un <xref:Microsoft.Office.Tools.Word.Bookmark> que creó en tiempo de ejecución o en tiempo de diseño.
+1. Modifique las propiedades <xref:Microsoft.Office.Tools.Word.Bookmark.Start%2A> y <xref:Microsoft.Office.Tools.Word.Bookmark.End%2A> del <xref:Microsoft.Office.Tools.Word.Bookmark> que creó en tiempo de ejecución o en tiempo de diseño.
 
      En el ejemplo de código siguiente se agregan cinco caracteres al inicio de un marcador denominado `SampleBookmark`. De esta manera, el código supone que hay al menos cinco caracteres de texto antes del marcador.
 
@@ -67,9 +67,9 @@ ms.locfileid: "60090724"
      [!code-csharp[Trin_VstcoreHostControlsWord#3](../vsto/codesnippet/CSharp/trin_vstcorehostcontrolsword/ThisDocument.cs#3)]
      [!code-vb[Trin_VstcoreHostControlsWord#3](../vsto/codesnippet/VisualBasic/Trin_VstcoreHostControlsWordVB/ThisDocument.vb#3)]
 
-### <a name="to-resize-a-bookmark-in-a-vsto-add-in-project-at-runtime"></a>Para cambiar el tamaño de un marcador en un proyecto de complemento VSTO en tiempo de ejecución
+### <a name="to-resize-a-bookmark-in-a-vsto-add-in-project-at-run-time"></a>Cambiar el tamaño de un marcador en un proyecto de complemento de VSTO en tiempo de ejecución
 
-1. Modificar el <xref:Microsoft.Office.Tools.Word.Bookmark.Start%2A> y <xref:Microsoft.Office.Tools.Word.Bookmark.End%2A> las propiedades de un <xref:Microsoft.Office.Tools.Word.Bookmark> que creó en tiempo de ejecución.
+1. Modifique las propiedades <xref:Microsoft.Office.Tools.Word.Bookmark.Start%2A> y <xref:Microsoft.Office.Tools.Word.Bookmark.End%2A> del <xref:Microsoft.Office.Tools.Word.Bookmark> que creó en tiempo de ejecución.
 
      En el siguiente ejemplo de código se crea un <xref:Microsoft.Office.Tools.Word.Bookmark> que contiene el texto del primer párrafo del documento activo y, a continuación, se quitan cinco caracteres del inicio y del final del <xref:Microsoft.Office.Tools.Word.Bookmark>.
 
@@ -89,8 +89,8 @@ ms.locfileid: "60090724"
 
 ## <a name="see-also"></a>Vea también
 - [Cómo: Agregar controles Bookmark a documentos de Word](../vsto/how-to-add-bookmark-controls-to-word-documents.md)
-- [Automatizar Word usando objetos extendidos](../vsto/automating-word-by-using-extended-objects.md)
-- [Elementos host y la información general sobre controles de host](../vsto/host-items-and-host-controls-overview.md)
+- [Automatizar Word con objetos extendidos](../vsto/automating-word-by-using-extended-objects.md)
+- [Información general sobre elementos y controles host](../vsto/host-items-and-host-controls-overview.md)
 - [Cómo: Cambiar el tamaño de los controles NamedRange](../vsto/how-to-resize-namedrange-controls.md)
 - [Cómo: Cambiar el tamaño de los controles ListObject](../vsto/how-to-resize-listobject-controls.md)
-- [Limitaciones de programación de elementos host y controles host](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)
+- [Limitaciones de programación de elementos y controles host](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)

@@ -7,17 +7,17 @@ helpviewer_keywords:
 - debugging [Debugging SDK], breakpoint errors
 - errors [Debugging SDK]
 ms.assetid: 79221c6b-a924-4c8e-a778-e312e4e0c0c8
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a539894b0564d8c89461886558eb35c04c8af83c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 31eabde4ae19ae7342188a5d2a16374b9c94afc0
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60074588"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66332554"
 ---
 # <a name="breakpoint-errors"></a>Errores de punto de interrupción
 Siguiente describe el proceso cuando un punto de interrupción intenta enlazar al código, pero se produce un error.

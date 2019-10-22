@@ -7,17 +7,17 @@ helpviewer_keywords:
 - best practices, source control plug-ins
 - source control [Visual Studio SDK], plug-ins
 ms.assetid: 85e73b73-29dc-464f-8734-ed308742c435
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 257987809136fecf0277c2571a698a02bfd8f9aa
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 89bc4065a450f82b3cdec33e94f4e17ea700d3c7
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56708243"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66352205"
 ---
 # <a name="best-practices-for-implementing-a-source-control-plug-in"></a>Procedimientos recomendados para implementar un complemento de control de código fuente
 Los detalles técnicos siguientes pueden ayudarle a implementar un complemento de control de código fuente de forma confiable [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].

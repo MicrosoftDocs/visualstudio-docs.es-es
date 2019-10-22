@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 153daa1f43ba4945a5eb32aea82c5d58ff57c5f6
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56613588"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "62836805"
 ---
 # <a name="idiasymbolgetintro"></a>IDiaSymbol::get_intro
 Recupera una marca que especifica si la función es una función virtual de presentación.
@@ -56,7 +56,7 @@ Ambos `A::f1` y `B::f1` son funciones virtuales, pero `A::f1` es virtual Introdu
 
 ## <a name="requirements"></a>Requisitos
 
-|Requisito|Descripción|
+|Requisito|DESCRIPCIÓN|
 |-----------------|-----------------|
 |Encabezado:|dia2.h|
 |Versión:|SDK de DIA v7.0|

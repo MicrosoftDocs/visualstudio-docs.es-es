@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugThread2::GetThreadId
 ms.assetid: db8b1c07-6b86-47f9-b292-bac19c276d36
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 85dd439729763b594076e4fab076a213c10f5a46
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 66ad2151f6455d758d57c51a387184a9fcce8ec7
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56702088"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66320173"
 ---
 # <a name="idebugthread2getthreadid"></a>IDebugThread2::GetThreadId
 Obtiene el identificador de subproceso del sistema.
@@ -36,10 +39,9 @@ int GetThreadId (
 );
 ```
 
-#### <a name="parameters"></a>Parámetros
-`pdwThreadId`
-
- [out] Devuelve el identificador de subproceso del sistema.
+## <a name="parameters"></a>Parámetros
+`pdwThreadId`\
+[out] Devuelve el identificador de subproceso del sistema.
 
 ## <a name="return-value"></a>Valor devuelto
 Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.

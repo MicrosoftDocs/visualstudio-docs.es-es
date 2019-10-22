@@ -1,5 +1,5 @@
 ---
-title: 'Tutorial: Creación de una aplicación web de ASP.NET Core con Entity Framework y Visual Studio 2019'
+title: Aplicación web de ASP.NET Core con Entity Framework y Visual Studio 2019
 titleSuffix: ''
 description: Como primer paso antes de crear una aplicación web de ASP.NET Core, obtenga información sobre cómo instalar Visual Studio 2019 con este tutorial en vídeo e instrucciones detalladas.
 ms.custom: get-started
@@ -17,28 +17,28 @@ dev_langs:
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: 711082c70c6174bdf3363ddb12d233ceb3f78f0d
-ms.sourcegitcommit: b6177ce198c7c5a00030604c9d4faa735405d5df
+ms.openlocfilehash: 1851c497579d45aa45c36dc1cd20945ce2b9c1e1
+ms.sourcegitcommit: 6c55c40da74ed8969dcba56acbd30458fdb69c5a
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/04/2019
-ms.locfileid: "59018121"
+ms.lasthandoff: 09/13/2019
+ms.locfileid: "70977443"
 ---
 # <a name="tutorial-create-your-first-aspnet-core-app-using-entity-framework-with-visual-studio-2019"></a>Tutorial: Creación de la primera aplicación de ASP.NET Core mediante Entity Framework con Visual Studio 2019
 
 En este tutorial, creará una aplicación web de ASP.NET Core que usa datos y, después, la implementará en Azure. Este tutorial se compone de los siguientes pasos:
 
-- [Paso 1: Instalación de Visual Studio 2019](#step-1-install-visual-studio-2019)
-- [Paso 2: Creación de la primera aplicación web de ASP.NET Core](tutorial-aspnet-core-ef-step-02.md)
-- [Paso 3: Trabajo con datos mediante Entity Framework](tutorial-aspnet-core-ef-step-03.md)
-- [Paso 4: Exposición de una API web desde la aplicación de ASP.NET Core](tutorial-aspnet-core-ef-step-04.md)
-- [Paso 5: Implementación de la aplicación de ASP.NET Core en Azure](tutorial-aspnet-core-ef-step-05.md)
+- [Paso 1: Instale Visual Studio 2019](#step-1-install-visual-studio-2019)
+- [Paso 2: Creación de la primera aplicación web de ASP.NET Core](tutorial-aspnet-core-ef-step-02.md)
+- [Paso 3: Trabajo con datos mediante Entity Framework](tutorial-aspnet-core-ef-step-03.md)
+- [Paso 4: Exposición de una API web desde la aplicación de ASP.NET Core](tutorial-aspnet-core-ef-step-04.md)
+- [Paso 5: Implementación de la aplicación de ASP.NET Core en Azure](tutorial-aspnet-core-ef-step-05.md)
 
 ## <a name="step-1-install-visual-studio-2019"></a>Paso 1: Instalación de Visual Studio 2019
 
 Obtenga información sobre cómo instalar Visual Studio 2019 con este tutorial en vídeo e instrucciones detalladas. Si ya ha instalado Visual Studio, vaya al [Paso 2: Creación de la primera aplicación web de ASP.NET Core](tutorial-aspnet-core-ef-step-02.md).
 
-_Vea este vídeo y siga el tutorial para instalar Visual Studio y crear la primera aplicación de ASP.NET Core._
+_Vea este vídeo y siga el tutorial para instalar Visual Studio y crear la primera aplicación de ASP.NET Core._
 
 > [!VIDEO https://www.youtube.com/embed/Fz_HAqQGLtY]
 
@@ -88,15 +88,15 @@ Tenga en cuenta que para la mayoría de las plantillas de proyecto también pued
 - Cuentas profesionales o educativas. Esta opción usa Active Directory, Azure AD u Office 365 para la autenticación.
 - Autenticación de Windows. Conveniente para las aplicaciones de intranet.
 
-Seleccione la plantilla de aplicación web estándar sin autenticación y haga clic en **Aceptar**.
+Seleccione la plantilla de aplicación web estándar sin autenticación y haga clic en **Crear**.
 
-![Elegir opciones de proyecto de ASP.NET Core en Visual Studio 2019](media/vs-2019/vs2019-choose-aspnetcore-project.png)
+![Elección de opciones de proyecto de ASP.NET Core en Visual Studio 2019](media/vs-2019/vs2019-choose-aspnetcore-project.png)
 
 ## <a name="next-steps"></a>Pasos siguientes
 
 En el siguiente vídeo, aprenderá más acerca de su primer proyecto de ASP.NET Core.
 
-[Tutorial: Creación de la primera aplicación web de ASP.NET Core](tutorial-aspnet-core-ef-step-02.md)
+[Tutorial: Creación de la primera aplicación web de ASP.NET Core](tutorial-aspnet-core-ef-step-02.md)
 
 ## <a name="see-also"></a>Vea también
 

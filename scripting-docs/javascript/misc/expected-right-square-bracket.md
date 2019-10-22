@@ -1,5 +1,5 @@
 ---
-title: Se esperaba ']' | Microsoft Docs
+title: Se esperaba '] ' | Microsoft Docs
 ms.date: 01/18/2017
 ms.prod: visual-studio-windows
 ms.technology: vs-javascript
@@ -14,20 +14,20 @@ ms.assetid: 8a437ace-c73e-4340-885c-70ccb4bb2ee4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3c88b40c0d20d370929bd8c1cd5e8604ea3781e6
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 802c9aa7988c4f19ee74dac4345d5c7077cc466c
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60108248"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72576525"
 ---
 # <a name="expected-"></a>Se esperaba ']'
-Realiza una referencia a un elemento de matriz, pero no incluía el corchete de cierre. Cualquier expresión que hace referencia a un elemento de matriz debe incluir tanto de apertura y cierre entre corchetes.  
+Hizo referencia a un elemento de matriz, pero no incluía el corchete de cierre. Cualquier expresión que haga referencia a un elemento de matriz debe incluir corchetes de apertura y cierre.  
   
 ### <a name="to-correct-this-error"></a>Para corregir este error  
   
-- Agregue el corchete de cierre a la expresión que hace referencia al elemento de matriz.  
+- Agregue el corchete de cierre a la expresión que hace referencia al elemento de la matriz.  
   
 ## <a name="see-also"></a>Vea también  
- [Uso de matrices](../../javascript/advanced/using-arrays-javascript.md)   
+ [Usar matrices](../../javascript/advanced/using-arrays-javascript.md)    
  [Array (Objeto)](../../javascript/reference/array-object-javascript.md)

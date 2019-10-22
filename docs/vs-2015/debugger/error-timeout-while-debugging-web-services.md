@@ -18,11 +18,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 5745a23e70f9245d6f1cb34a6d4ccc042f64bdd3
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58988862"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62538338"
 ---
 # <a name="error-timeout-while-debugging-web-services"></a>Error: Tiempo de espera de depuración de servicios web agotado
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

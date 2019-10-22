@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 52e0dc775e5e9413fb251261a319e529f36393eb
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 6b4ed387d00c96c1d66fdac0bb92a0bfbae7c530
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60102190"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63406681"
 ---
 # <a name="choose-a-clickonce-deployment-strategy"></a>Selección de una estrategia de implementación de ClickOnce
 Hay tres estrategias distintas para implementar una aplicación de [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]; la estrategia que elija depende principalmente del tipo de aplicación que vaya a implementar. Las tres estrategias de implementación son las siguientes:
@@ -32,7 +32,7 @@ Hay tres estrategias distintas para implementar una aplicación de [!INCLUDE[ndp
 - Iniciar la aplicación desde el Web o desde un recurso compartido de red
 
     > [!NOTE]
-    >  Además de seleccionar una estrategia de implementación, también seleccionará una estrategia para proporcionar actualizaciones de la aplicación. Para obtener más información, consulte [elegir una estrategia de actualización de ClickOnce](../deployment/choosing-a-clickonce-update-strategy.md).
+    > Además de seleccionar una estrategia de implementación, también seleccionará una estrategia para proporcionar actualizaciones de la aplicación. Para obtener más información, consulte [elegir una estrategia de actualización de ClickOnce](../deployment/choosing-a-clickonce-update-strategy.md).
 
 ## <a name="install-from-the-web-or-a-network-share"></a>Instalación desde Internet o un recurso compartido de red
  Con esta estrategia, su aplicación se implementa en un servidor web o en un recurso compartido de archivos de red. Cuando un usuario final desea instalar la aplicación, hace clic en un icono de una página Web o hace doble clic en un icono del recurso compartido de archivos de red. A continuación se descarga la aplicación, se instala y se inicia en el equipo del usuario final. Se agregan elementos al menú **Inicio** y a **Agregar o quitar programas** en el **Panel de control**.
@@ -49,7 +49,7 @@ Hay tres estrategias distintas para implementar una aplicación de [!INCLUDE[ndp
  Esta estrategia es parecida a la primera, excepto en que la aplicación se comporta como una aplicación web. Cuando el usuario hace clic en un vínculo de una página Web (o hace doble clic en un icono del recurso compartido de archivos), se inicia la aplicación. Cuando los usuarios cierran la aplicación, deja de estar disponible en su equipo local; no se agrega nada al menú **Inicio** ni a **Agregar o quitar programas** en el **Panel de control**.
 
 > [!NOTE]
->  Técnicamente, la aplicación se descarga y se instala en una caché de aplicación en el equipo local, igual que si una aplicación Web se descargara a la caché de Web. Como con la caché de Web, los archivos se recogen de la caché de la aplicación en último término. La percepción del usuario, sin embargo, es que la aplicación se ejecuta desde el web o desde el recurso compartido de archivos
+> Técnicamente, la aplicación se descarga y se instala en una caché de aplicación en el equipo local, igual que si una aplicación Web se descargara a la caché de Web. Como con la caché de Web, los archivos se recogen de la caché de la aplicación en último término. La percepción del usuario, sin embargo, es que la aplicación se ejecuta desde el web o desde el recurso compartido de archivos
 
  Esta estrategia resulta óptima para las aplicaciones que se utilizan con poca frecuencia; por ejemplo, una herramienta de cálculo de beneficios para los que normalmente sólo se ejecuta una vez al año.
 

@@ -6,17 +6,20 @@ helpviewer_keywords:
 - TypeParamCount
 - IDebugGenericFieldDefinition::TypeParamCount
 ms.assetid: d41dd5ea-aa25-4bf3-bcfd-e0bf451ead49
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2e6334f727b0c40352b7e6ca9b9a199edd98a502
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: b753da4a418f13bb725ff5d7b0d2843fc314805b
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56690609"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66324455"
 ---
 # <a name="idebuggenericfielddefinitiontypeparamcount"></a>IDebugGenericFieldDefinition::TypeParamCount
 Recupera el número de parámetros de tipo que están asociados con el campo genérico.
@@ -35,10 +38,9 @@ int TypeParamCount(
 );
 ```
 
-#### <a name="parameters"></a>Parámetros
- `pcParams`
-
- [in, out] Número de parámetros de tipo.
+## <a name="parameters"></a>Parámetros
+`pcParams`\
+[in, out] Número de parámetros de tipo.
 
 ## <a name="return-value"></a>Valor devuelto
  Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.

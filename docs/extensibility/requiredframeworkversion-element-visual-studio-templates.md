@@ -7,17 +7,17 @@ helpviewer_keywords:
 - <RequiredFrameworkVersion> (Visual Studio Templates)
 - RequiredFrameworkVersion (Visual Studio Templates)
 ms.assetid: 08a4f609-51a5-4723-b89f-99277fb18871
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 40eefc62eef318bcd9c52a1cbbb966377b3616f8
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 0550fc1d286c04c61a1c0b2503326a002fde729e
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54947002"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66744753"
 ---
 # <a name="requiredframeworkversion-element-visual-studio-templates"></a>RequiredFrameworkVersion (elemento) (plantillas de Visual Studio)
 
@@ -86,4 +86,4 @@ En este ejemplo, la versión mínima de .NET Framework que requiere la plantilla
 
 - [Referencia de esquema de plantillas de Visual Studio](../extensibility/visual-studio-template-schema-reference.md)
 - [Creación de plantillas de proyecto y elemento](../ide/creating-project-and-item-templates.md)
-- [Tener como destino una versión específica de .NET Framework](../ide/visual-studio-multi-targeting-overview.md)
+- [Plataforma de destino de la información general](../ide/visual-studio-multi-targeting-overview.md)

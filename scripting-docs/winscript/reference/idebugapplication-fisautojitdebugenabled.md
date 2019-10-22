@@ -1,5 +1,5 @@
 ---
-title: IDebugApplication::FIsAutoJitDebugEnabled | Microsoft Docs
+title: 'Idebugapplication (:: FIsAutoJitDebugEnabled | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f594c5ce48ebd31a265ed438db176c5707d9b079
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 9bf97a4d3985dd3dd32e582c689fde0ecd6f52e1
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58152082"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72574990"
 ---
 # <a name="idebugapplicationfisautojitdebugenabled"></a>IDebugApplication::FIsAutoJitDebugEnabled
-Determina si un depurador de just-in-time (JIT) está registrado en hosts tontos auto-debug.  
+Determina si un depurador Just-in-Time (JIT) está registrado para depurar de forma automática los hosts no deseados.  
   
 ## <a name="syntax"></a>Sintaxis  
   
@@ -37,10 +37,10 @@ BOOL FIsAutoJitDebugEnabled();
  Este método no toma ningún parámetro.  
   
 ## <a name="return-value"></a>Valor devuelto  
- Si el método se ejecuta correctamente y se registra un depurador JIT a hosts tontos auto-debug, el método devuelve `TRUE`. De lo contrario, devuelve `FALSE`.  
+ Si el método se ejecuta correctamente y se registra un depurador JIT para depurar de forma automática los hosts no deseados, el método devuelve `TRUE`. De lo contrario, devuelve `FALSE`.  
   
 ## <a name="remarks"></a>Comentarios  
- Este método determina si un depurador JIT está registrado con hosts tontos auto-debug.  
+ Este método determina si un depurador JIT está registrado para depurar de forma automática hosts no deseados.  
   
 ## <a name="see-also"></a>Vea también  
  [IDebugApplication (Interfaz)](../../winscript/reference/idebugapplication-interface.md)

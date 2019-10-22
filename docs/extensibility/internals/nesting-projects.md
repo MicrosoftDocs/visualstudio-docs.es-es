@@ -1,5 +1,5 @@
 ---
-title: Anidamiento de proyectos | Documentos de Microsoft
+title: Anidar proyectos | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -8,37 +8,36 @@ helpviewer_keywords:
 - projects [Visual Studio SDK], child projects
 - projects [Visual Studio SDK], nesting
 ms.assetid: 12cce037-9840-4761-845e-5abd5fb317b0
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a2e05b47563c62f34e4a01c945a45d5c7ec069ee
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 289062a15c35641d5558409c7643301e346b6e65
+ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56612236"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "69976702"
 ---
 # <a name="nesting-projects"></a>Anidamiento de proyectos
-Los desarrolladores de aplicaciones empresariales que utilizan el paquete de VS cómodamente pueden agrupar tipos parecidos de proyectos juntos en [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] utilizando *proyecto anidamiento*. Por ejemplo, el proyecto de plantilla de la empresa usa proyectos anidados para proyectos de grupo de categorías. Proyectos de Business fachada, los proyectos de la interfaz de usuario Web etc. se agrupan en una categoría.
+Los desarrolladores de aplicaciones empresariales que usan el paquete de vs pueden agrupar de manera cómoda tipos [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] de proyectos similares en mediante el *anidamiento de proyectos*. Por ejemplo, el proyecto de plantilla de empresa utiliza proyectos anidados para agrupar proyectos en categorías. Los proyectos de fachada empresarial, los proyectos de interfaz de usuario Web, etc. se agrupan en una categoría.
 
- En este escenario, no hay ningún límite al número de proyectos, que el desarrollador puede anidar en cada proyecto principal, aunque el desarrollador puede proporcionar mediante programación los límites. Este tipo de agrupación también se puede realizar recursiva, en cuyo caso se pueden anidar los proyectos del mismo tipo como un proyecto secundario en el elemento secundario para convertirse en un subproyecto del elemento secundario, que es un subproyecto del elemento primario.
+ En este escenario, no hay ningún límite en el número de proyectos que el desarrollador puede anidar en cada proyecto primario, aunque el desarrollador puede proporcionar límites mediante programación. Este tipo de agrupación también se puede convertir en recursivo, en cuyo caso los proyectos del mismo tipo que un proyecto secundario se pueden anidar bajo el secundario para convertirse en un subproyecto del elemento secundario, que es un subproyecto del elemento primario.
 
- Anidamiento de proyecto no es una parte intrínseca de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. Tendrá que escribir el código para habilitar el anidamiento y subproyecto anidación dentro de los proyectos secundarios. El proyecto principal es un tipo de proyecto, creado y registrado con su propio GUID que incluye el código necesario para implementar el anidamiento de proyecto o VSPackage especial.
+ El anidamiento del proyecto no es una parte intrínseca [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]de. Tiene que escribir el código para habilitar el anidamiento y el anidamiento de subproyectos en los proyectos secundarios. El proyecto primario es un VSPackage especial, o un tipo de proyecto, creado y registrado con su propio GUID que incluye el código necesario para implementar el anidamiento del proyecto.
 
- Puede encontrar un ejemplo de proyectos anidados en el proyecto Example.Nested de C# de ejemplo.
+ Puede encontrar un ejemplo sobre cómo anidar proyectos en la [ Implementar proyectos](../../extensibility/internals/how-to-implement-nested-projects.md)anidados.
 
 ## <a name="nested-projects-example"></a>Ejemplo de proyectos anidados
- ![Anidar los proyectos de solución](../../extensibility/internals/media/vsnestedprojects.gif "vsNestedProjects") ejemplo de los proyectos anidados
+ ![Solución de proyectos anidados](../../extensibility/internals/media/vsnestedprojects.gif "vsNestedProjects") Ejemplo de proyectos anidados
 
 ## <a name="see-also"></a>Vea también
-- [Cómo: Implementación de proyectos anidados](../../extensibility/internals/how-to-implement-nested-projects.md)
 - [Consideraciones para descargar y volver a cargar proyectos anidados](../../extensibility/internals/considerations-for-unloading-and-reloading-nested-projects.md)
 - [Compatibilidad del Asistente para proyectos anidados](../../extensibility/internals/wizard-support-for-nested-projects.md)
 - [Registro de plantillas para proyectos y elementos](../../extensibility/internals/registering-project-and-item-templates.md)
 - [Implementación del control de comandos para proyectos anidados](../../extensibility/internals/implementing-command-handling-for-nested-projects.md)
 - [Filtrado del cuadro de diálogo AddItem para proyectos anidados](../../extensibility/internals/filtering-the-additem-dialog-box-for-nested-projects.md)
-- [Lista de comprobación: Creación de nuevos tipos de proyecto](../../extensibility/internals/checklist-creating-new-project-types.md)
+- [Lista de comprobación: Creación de tipos de proyectos](../../extensibility/internals/checklist-creating-new-project-types.md)
 - [Parámetros de contexto](../../extensibility/internals/context-parameters.md)
 - [Archivos de asistentes (.Vsz)](../../extensibility/internals/wizard-dot-vsz-file.md)

@@ -11,12 +11,12 @@ ms.assetid: 9dc6c33f-e6cf-4cf2-9b05-e8f7bfac1cfb
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 935734d3ab21fd4ce69afaaf5fd4eef9ac417089
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 98cd0ec51ead200a904baeb409551cd1084f1f11
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58998245"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63440828"
 ---
 # <a name="vsct-compiler-command-line-flags"></a>Marcas de la línea de comandos del compilador de VSCT
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -52,7 +52,7 @@ Syntax: vsct <infile> [<outfile>] [-S[symbols file]] [-D<preprocessor-define>]*
 ```  
   
 > [!NOTE]
->  Los caracteres - (dash) y / (barra diagonal) son ambos aceptados notación para indicar los parámetros de línea de comandos.  
+> Los caracteres - (dash) y / (barra diagonal) son ambos aceptados notación para indicar los parámetros de línea de comandos.  
   
  Marcas aceptables y su significado son los siguientes.  
   
@@ -61,7 +61,7 @@ Syntax: vsct <infile> [<outfile>] [-S[symbols file]] [-D<preprocessor-define>]*
 |-D|Especifique todos los símbolos definidos adicionales.|  
 |-I|Indicar que el adicional incluir rutas de acceso que se deben usar al resolver referencias de archivo.|  
 |-L|Especifique el <xref:System.Globalization.CultureInfo> nombre de referencia cultural, por ejemplo "en-US".|  
-|-E|Emitir C# objetos en el espacio de nombres especificado para los elementos de comando, seguido por [C&#124;H&#124;N]:*filename*donde C = C#, H = encabezado de C++, N = el espacio de nombres. El espacio de nombres es necesaria para C#.|  
+|-E|Emitir C# objetos en el espacio de nombres especificado para los elementos de comando, seguido por [C&#124;H&#124;N]:*filename*donde C = C#, H = C++ encabezado, N = el espacio de nombres. El espacio de nombres es necesaria para C#.|  
 |-v|Salida detallada.|  
   
  El modificador -L indica al compilador que seleccione un grupo de cadenas para generar el archivo .cto binario que se corresponde con el dado <xref:System.Globalization.CultureInfo> nombre de referencia cultural. El nombre de la referencia cultural especificada debe coincidir con el atributo de idioma de uno o varios [Strings (elemento)](../../extensibility/strings-element.md) en el archivo .vsct. Si un elemento de cadenas no tiene ningún atributo de idioma, se hereda de la que contiene [CommandTable (elemento)](../../extensibility/commandtable-element.md).  

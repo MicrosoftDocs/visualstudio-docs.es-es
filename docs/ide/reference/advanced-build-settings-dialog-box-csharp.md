@@ -1,27 +1,28 @@
 ---
 title: Configuración de compilación avanzada (Cuadro de diálogo, C#)
-ms.date: 06/20/2017
+ms.date: 08/05/2019
+ms.technology: vs-ide-compile
 ms.topic: reference
 f1_keywords:
 - cs.AdvancedBuildSettings
 helpviewer_keywords:
 - Build options [C#], advanced
 ms.assetid: 141f2dee-1563-4ce6-ba37-32920b082519
-author: gewarren
-ms.author: gewarren
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: a668e64f6b8a10cf22e08575ca9c2df385131666
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: c4a1c902047b76ef3b29814d10cfc112ab9c7274
+ms.sourcegitcommit: 88f576ac32af31613c1a10c1548275e1ce029f4f
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55930472"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "71186790"
 ---
-# <a name="advanced-build-settings-dialog-box-c"></a>Configuración de compilación avanzada (Cuadro de diálogo, C#)
+# <a name="advanced-build-settings-dialog-box-c"></a>Cuadro de diálogo Configuración de compilación avanzada (C#)
 
-Use el cuadro de diálogo **Configuración de compilación avanzada** del **Diseñador de proyectos** para especificar las propiedades de configuración de compilación avanzada del proyecto. Este cuadro de diálogo solo se aplica a proyectos de [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)].
+Use el cuadro de diálogo **Configuración de compilación avanzada** del **Diseñador de proyectos** para especificar las propiedades de configuración de compilación avanzada del proyecto. Este cuadro de diálogo solo se aplica a proyectos de C#.
 
 ## <a name="general"></a>General
 
@@ -29,19 +30,19 @@ Las opciones siguientes le permiten establecer la configuración avanzada genera
 
 **Versión de lenguaje**
 
-Especifica la versión del idioma que se va a usar. El conjunto de características es diferente en cada versión, por lo que esta opción se puede usar para forzar al compilador a que permita solo un subconjunto de las características implementadas, o para habilitar solo las características compatibles con un estándar existente. Esta configuración tiene las siguientes opciones:
+::: moniker range=">=vs-2019"
 
-- **default**
+Vincula a [/langversion (opciones del compilador de C#)](/dotnet/csharp/language-reference/compiler-options/langversion-compiler-option), que proporciona información sobre cómo se elige una versión del lenguaje predeterminada en función de la plataforma de destino de un proyecto.
 
-   Se dirige a la versión actual.
+::: moniker-end
 
-- **ISO-1** e **ISO-2**
+::: moniker range="vs-2017"
 
-   Se dirige a las características estándar de ISO-1 e ISO-2, respectivamente.
+Especifica la versión del idioma que se va a usar. El conjunto de características es diferente en cada versión, por lo que esta opción se puede usar para forzar al compilador a que permita solo un subconjunto de las características implementadas, o para habilitar solo las características compatibles con un estándar existente.
 
-- **C# [número de versión]**
+El valor predeterminado es C# 7.0.
 
-   Se dirige a una versión específica de C#. Para obtener más información, consulte [/langversion (Opciones del compilador de C#)](/dotnet/csharp/language-reference/compiler-options/langversion-compiler-option).
+::: moniker-end
 
 **Informe de errores internos del compilador**
 
@@ -75,7 +76,7 @@ Especifica el tipo de información de depuración generado por el compilador. Pa
 
    Permite depurar el código fuente cuando el programa se inicia en el depurador, pero solo mostrará el ensamblador cuando el programa que se ejecuta está asociado al depurador.
 
--  **portable**
+- **portable**
 
    Genera un archivo .PDB, un archivo de símbolos portátil no específico de plataforma que proporciona a otras herramientas, especialmente depuradores, información sobre qué se encuentra en el archivo ejecutable principal y cómo se ha generado. Vea [PDB portátil](https://github.com/dotnet/core/blob/master/Documentation/diagnostics/portable_pdb.md) para obtener más información.
 
@@ -91,9 +92,9 @@ Especifica el tamaño de las secciones del archivo de salida. Los valores válid
 
 **Dirección base de biblioteca**
 
-Especifica la dirección base preferida para cargar una DLL. La dirección base predeterminada para un archivo DLL se establece mediante [!INCLUDE[dnprdnshort](../../code-quality/includes/dnprdnshort_md.md)] Common Language Runtime. Para obtener más información, consulte [/baseaddress (Opciones del compilador de C#)](/dotnet/csharp/language-reference/compiler-options/baseaddress-compiler-option).
+Especifica la dirección base preferida para cargar una DLL. La dirección base predeterminada para un archivo DLL se establece mediante Common Language Runtime de .NET Framework. Para obtener más información, consulte [/baseaddress (Opciones del compilador de C#)](/dotnet/csharp/language-reference/compiler-options/baseaddress-compiler-option).
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Otras referencias
 
-- [Opciones del compilador de C#](/dotnet/csharp/language-reference/compiler-options/index)
-- [Página Compilar (Diseñador de proyectos) (C#)](../../ide/reference/build-page-project-designer-csharp.md)
+- [Opciones del compilador de C#, por orden alfabético](/dotnet/csharp/language-reference/compiler-options/index)
+- [Página Compilar, Diseñador de proyectos (C#)](../../ide/reference/build-page-project-designer-csharp.md)

@@ -5,17 +5,20 @@ ms.topic: reference
 helpviewer_keywords:
 - IDebugDocumentPositionOffset2::GetRange
 ms.assetid: 27da7130-0932-4f97-abde-05e6fb018606
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e8b309af47aed94c45eca418b390be041f66f609
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 0c667ffa597481121de0467c9ab4b07e4bf4d607
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56686917"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66333387"
 ---
 # <a name="idebugdocumentpositionoffset2getrange"></a>IDebugDocumentPositionOffset2::GetRange
 Recupera el intervalo para la posición del documento actual.
@@ -36,14 +39,12 @@ public int GetRange(
 );
 ```
 
-#### <a name="parameters"></a>Parámetros
- `pdwBegOffset`
+## <a name="parameters"></a>Parámetros
+`pdwBegOffset`\
+[in, out] Desplazamiento de la posición inicial del intervalo. Establezca este parámetro en un valor null si no se necesita esta información.
 
- [in, out] Desplazamiento de la posición inicial del intervalo. Establezca este parámetro en un valor null si no se necesita esta información.
-
- `pdwEndOffset`
-
- [in, out] Desplazamiento de la posición final del intervalo. Establezca este parámetro en un valor null si no se necesita esta información.
+`pdwEndOffset`\
+[in, out] Desplazamiento de la posición final del intervalo. Establezca este parámetro en un valor null si no se necesita esta información.
 
 ## <a name="return-value"></a>Valor devuelto
  Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.

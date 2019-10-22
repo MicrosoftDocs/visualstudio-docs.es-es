@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugEngine2:::SetMetric
 ms.assetid: dcda4972-c32e-4693-a0e1-25d5c58b9782
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 325cd30a49fb636c56eebd9e6301b3999e851363
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 10e4662536dbe8fef8c250122d22520df1736cf8
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56713612"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66352578"
 ---
 # <a name="idebugengine2setmetric"></a>IDebugEngine2::SetMetric
 Este método establece un valor del registro que se conoce como una métrica.
@@ -38,14 +41,12 @@ int SetMetric(
 );
 ```
 
-#### <a name="parameters"></a>Parámetros
- `pszMetric`
+## <a name="parameters"></a>Parámetros
+`pszMetric`\
+[in] El nombre de la métrica.
 
- [in] El nombre de la métrica.
-
- `varValue`
-
- [in] Especifica el valor de métrica.
+`varValue`\
+[in] Especifica el valor de métrica.
 
 ## <a name="return-value"></a>Valor devuelto
  Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.

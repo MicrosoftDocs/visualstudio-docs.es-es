@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 588bc57dc2cda1030e9e1b8d1f989b2cc2d31662
-ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57222497"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62550066"
 ---
 # <a name="find-code-using-go-to-commands"></a>Buscar código mediante comandos Ir a
 
@@ -27,7 +27,7 @@ Los comandos **Ir a** de Visual Studio realizan una búsqueda centrada en su có
 
 Entrada | Función
 ------------ | ---
-**Teclado** | Presione **Ctrl**+**T** o **Ctrl**+**,**
+**Teclado** | Presione **Ctrl**+**T** o **Ctrl**+ **,**
 **Mouse** | Seleccione **Editar** > **Ir a** > **Ir a Todo**
 
 Aparecerá una pequeña ventana en la parte superior derecha del editor de código.
@@ -38,7 +38,7 @@ A medida que escribe en el cuadro de texto, los resultados aparecen en una lista
 
 ![Ventana Navegar a](../ide/media/vside_navigatetowindow.png)
 
-También puede escribir un signo de interrogación (**?**) para obtener ayuda adicional.
+También puede escribir un signo de interrogación ( **?** ) para obtener ayuda adicional.
 
 ![Ayuda de Ir a todo](media/go-to-all-help.png)
 

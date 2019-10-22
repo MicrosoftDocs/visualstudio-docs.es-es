@@ -22,11 +22,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 261c0c0bd8b48634c8d24d56ee4df7ea3bbcf135
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60072856"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68161738"
 ---
 # <a name="autos-and-locals-windows"></a>Ventanas de variables locales y automáticas
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,7 +38,7 @@ La ventana **Automático** (durante la depuración, **CTRL+ALT+V, A**o **Depurar
 ## <a name="looking-at-objects-in-the-autos-and-locals-windows"></a>Examinar objetos en las ventanas de variables locales y automáticas  
  Las matrices y los objetos se muestran en las ventanas Automático y Variables locales como controles de árbol. Haga clic en la flecha situada a la izquierda del nombre de la variable para expandir la vista y mostrar los campos y las propiedades. Este es un ejemplo de un <xref:System.IO.FileStream> objeto en el **variables locales** ventana:  
   
- ![Locals&#45;FileStream](../debugger/media/locals-filestream.png "Locals-FileStream")  
+ ![Variables locales&#45;FileStream](../debugger/media/locals-filestream.png "FileStream de variables locales")  
   
 ## <a name="what-variables-appear-in-the-autos-window"></a>¿Qué variables se muestran en la ventana Automático?  
  Se puede usar la ventana **Automático** en código C#, Visual Basic y C++. La ventana **Automático** no admite F# ni JavaScript.  
@@ -114,7 +114,7 @@ private static int subtractVars(int i, int j)
   
  Establezca un punto de interrupción en la línea int `x = sumVars(a, b) + subtractVars(c, d);` .  
   
- Inicie la depuración y, cuando la ejecución se interrumpa en el primer punto de interrupción, presione **F10 (Paso a paso por procedimientos)**. Debería mostrarse lo siguiente en la ventana **Automático** :  
+ Inicie la depuración y, cuando la ejecución se interrumpa en el primer punto de interrupción, presione **F10 (Paso a paso por procedimientos)** . Debería mostrarse lo siguiente en la ventana **Automático** :  
   
  ![AutosReturnValueCSharp2](../debugger/media/autosreturnvaluecsharp2.png "AutosReturnValueCSharp2")  
   

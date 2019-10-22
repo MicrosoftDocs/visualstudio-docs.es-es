@@ -12,11 +12,11 @@ caps.latest.revision: 25
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 02f63cd5e3f0599723aee12f7aed2c56b74c3249
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58998467"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68196099"
 ---
 # <a name="legacy-language-service-interfaces"></a>Interfaces de servicio de lenguaje heredado
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -43,7 +43,7 @@ Para cualquier lenguaje de programación determinado, puede haber solo una insta
 ## <a name="additional-language-service-interfaces"></a>Interfaces de servicio de idioma adicionales  
  Otras interfaces pueden proporcionarse con el servicio de lenguaje. [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] solicita una instancia independiente de estas interfaces para cada instancia del búfer de texto. Por lo tanto, debe implementar cada una de estas interfaces en su propio objeto. La siguiente tabla muestra las interfaces que requieren una instancia por cada instancia del búfer de texto.  
   
-|Interfaz|Descripción|  
+|Interfaz|DESCRIPCIÓN|  
 |---------------|-----------------|  
 |<xref:Microsoft.VisualStudio.TextManager.Interop.IVsCodeWindowManager>|Administra los elementos gráficos de ventana de código, como la barra desplegable. Puede obtener esta interfaz mediante el <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo.GetCodeWindowManager%2A> método. Hay un <xref:Microsoft.VisualStudio.TextManager.Interop.IVsCodeWindowManager> por ventana de código.|  
 |<xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer>|Colorea delimitadores y palabras clave del lenguaje. Puede obtener esta interfaz mediante el <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo.GetColorizer%2A> método. <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer> se llama en tiempo de dibujo. Evitar el trabajo de cálculo intensivo dentro de <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer> o podría verse afectado el rendimiento.|  

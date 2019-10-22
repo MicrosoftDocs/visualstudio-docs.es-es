@@ -1,5 +1,5 @@
 ---
-title: Editar y continuar (Visual Basic) | Microsoft Docs
+title: Editar y continuar (Visual Basic) | Documentos de Microsoft
 ms.date: 10/11/2017
 ms.topic: conceptual
 dev_langs:
@@ -20,11 +20,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: f73b67ac4268c04dfa9ff7ab020891623f528f9b
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56699254"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62851248"
 ---
 # <a name="edit-and-continue-visual-basic"></a>Editar y continuar (Visual Basic)
 Editar y continuar es una característica de depuración de [!INCLUDE [vbprvb](../code-quality/includes/vbprvb_md.md)] que le permite realizar cambios en el código mientras se ejecuta en modo de interrupción. Una vez que se aplican los cambios de código, se puede reanudar su ejecución con las nuevas modificaciones en contexto y observar el efecto.
@@ -45,7 +45,7 @@ Editar y continuar es una característica de depuración de [!INCLUDE [vbprvb](.
  En los temas de esta sección se proporciona información adicional sobre cómo utilizar esta característica y los tipos de cambios no permitidos.
 
 ## <a name="in-this-section"></a>En esta sección
- [Cómo: aplicar tareas de edición en modo de interrupción con Editar y continuar](../debugger/how-to-apply-edits-in-break-mode-with-edit-and-continue.md) explica cómo aplicar las modificaciones del código en modo de interrupción.
+ [Cómo: Aplicar tareas de edición en modo de interrupción con Editar y continuar](../debugger/how-to-apply-edits-in-break-mode-with-edit-and-continue.md) explica cómo aplicar las modificaciones del código en modo de interrupción.
 
  [Admite los cambios de código (C# y Visual Basic)](../debugger/supported-code-changes-csharp.md) describe qué tipos de modificaciones no pueden realizar en [!INCLUDE [vb_current_short](../debugger/includes/vb_current_short_md.md)] editar y continuar.
 

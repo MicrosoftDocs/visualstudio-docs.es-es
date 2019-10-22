@@ -1,5 +1,5 @@
 ---
-title: 'Tutorial: Crear a una relación de maestro/detalle con un conjunto de datos en caché'
+title: Crear a relación de maestro/detalle con un conjunto de datos en caché
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: abbc39bece090db962b35c61cb7e77fabaea6be9
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 0acf84dd983a8c10f2af526ae0bb904eaa90a360
+ms.sourcegitcommit: 7eb2fb21805d92f085126f3a820ac274f2216b4e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60091504"
+ms.lasthandoff: 06/22/2019
+ms.locfileid: "67328363"
 ---
 # <a name="walkthrough-create-a-master-detail-relation-using-a-cached-dataset"></a>Tutorial: Crear a una relación de maestro/detalle con un conjunto de datos en caché
   Este tutorial muestra la creación de una relación principal-detalle en una hoja de cálculo y almacenamiento en caché los datos para que la solución se puede usar sin conexión.
@@ -36,7 +36,7 @@ ms.locfileid: "60091504"
 - Pruebe el proyecto.
 
 > [!NOTE]
->  Es posible que el equipo muestre nombres o ubicaciones diferentes para algunos de los elementos de la interfaz de usuario de Visual Studio en las siguientes instrucciones. La edición de Visual Studio que se tenga y la configuración que se utilice determinan estos elementos. Para más información, vea [Personalizar el IDE de Visual Studio](../ide/personalizing-the-visual-studio-ide.md).
+> Es posible que el equipo muestre nombres o ubicaciones diferentes para algunos de los elementos de la interfaz de usuario de Visual Studio en las siguientes instrucciones. La edición de Visual Studio que se tenga y la configuración que se utilice determinan estos elementos. Para más información, vea [Personalizar el IDE de Visual Studio](../ide/personalizing-the-visual-studio-ide.md).
 
 ## <a name="prerequisites"></a>Requisitos previos
  Necesita los componentes siguientes para completar este tutorial:
@@ -177,7 +177,7 @@ ms.locfileid: "60091504"
 
 5. Deshabilitar la conexión a la base de datos. Desconecte el cable de red del equipo si se encuentra la base de datos en un servidor, o detener el servicio de SQL Server si la base de datos se encuentra en el equipo de desarrollo.
 
-6. Abra Excel y, a continuación, abra **mi Master-Detail.xlsx** desde el *\bin* directorio (*\My Master-Detail\bin* en Visual Basic o *\My Master-Detail\bin\ depurar* en C#).
+6. Abra Excel y, a continuación, abra **mi Master-Detail.xlsx** desde el *\bin* directorio ( *\My Master-Detail\bin* en Visual Basic o *\My Master-Detail\bin\ depurar* en C#).
 
 7. Desplácese por algunos de los registros para ver que la hoja de cálculo funciona normalmente cuando se desconecta.
 

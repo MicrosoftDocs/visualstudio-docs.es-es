@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9eea69dc4d2931f66d4c6769667e23bdfb4eecf1
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 24880f997d604d3db11ae19a6220c2789da7648f
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55938299"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68926071"
 ---
 # <a name="set-current-stack-frame-command"></a>Establecer marco de pila actual (Comando)
 Le permite establecer un marco de pila determinado.
@@ -30,9 +30,9 @@ Debug.SetCurrentStackFrame index
 ```
 
 ## <a name="arguments"></a>Argumentos
- `index`
+`index`
 
- Obligatorio. Selecciona un marco de pila por su índice.
+Obligatorio. Selecciona un marco de pila por su índice.
 
 ## <a name="example"></a>Ejemplo
 
@@ -40,7 +40,7 @@ Debug.SetCurrentStackFrame index
 >Debug.SetCurrentStackFrame 1
 ```
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Otras referencias
 
 - [Comandos de Visual Studio](../../ide/reference/visual-studio-commands.md)
 - [Ventana Comandos](../../ide/reference/command-window.md)

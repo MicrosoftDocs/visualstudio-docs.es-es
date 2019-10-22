@@ -10,12 +10,12 @@ author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 95ed8806844781bdaab4d97d63cb1b7ef324dd7b
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 34b38ca89e33fd1f3ab8d309c6f55822bf8b7107
+ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55949842"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "69551819"
 ---
 # <a name="vstestconsoleexe-command-line-options"></a>Opciones de la línea de comandos para VSTest.Console.exe
 
@@ -30,21 +30,21 @@ ms.locfileid: "55949842"
 
 En la siguiente tabla se muestran todas las opciones de *VSTest.Console.exe* junto con una breve descripción. Puede ver un resumen similar si escribe `VSTest.Console/?` en una línea de comandos.
 
-| Opción | Descripción |
+| Opción | DESCRIPCIÓN |
 |---|---|
 |**[*nombres de archivos de prueba*]**|Ejecuta pruebas desde los archivos especificados. Separe varios nombres de archivos de prueba con espacios.<br />Ejemplos: `mytestproject.dll`, `mytestproject.dll myothertestproject.exe`|
 |**/Settings:[*nombre de archivo*]**|Ejecuta pruebas con opciones adicionales, como recolectores de datos.<br />Ejemplo: `/Settings:Local.RunSettings`|
 |**/Tests:[*nombre de prueba*]**|Ejecuta pruebas con nombres que incluyen los valores proporcionados. Para proporcionar varios valores, deberá separarlos por comas.<br />Ejemplo: `/Tests:TestMethod1,testMethod2`<br />La opción de línea de comandos **/Tests** no se puede usar con la opción de línea de comandos **/TestCaseFilter**.|
-|**/Parallel**|Especifica que las pruebas se ejecutan en paralelo. De forma predeterminada, se pueden usar todos los núcleos disponibles en el equipo. El número de núcleos que se va a usar se puede configurar mediante un archivo de configuración.|
+|**/Parallel**|Especifica que las pruebas se ejecutan en paralelo. De forma predeterminada, se pueden usar todos los núcleos disponibles en la máquina. Puede configurar el número de núcleos que se van a usar en un archivo de configuración.|
 |**/Enablecodecoverage**|Habilita el adaptador de diagnóstico de datos CodeCoverage en la serie de pruebas.<br />Se usa la configuración predeterminada si no se especifica mediante un archivo de configuración.|
 |**/InIsolation**|Ejecuta las pruebas en un proceso aislado.<br />Con este aislamiento, es menos probable que el proceso *vstest.console.exe* se detenga por un error de las pruebas, aunque es posible que las pruebas se ejecuten más despacio.|
 |**/UseVsixExtensions**|Esta opción hace que el proceso *vstest.console.exe* use u omita las extensiones VSIX instaladas (si procede) en la serie de pruebas.<br />Esta opción está en desuso. A partir de la siguiente versión principal de Visual Studio, esta opción puede desaparecer. Use extensiones disponibles como paquete NuGet.<br />Ejemplo: `/UseVsixExtensions:true`|
 |**/TestAdapterPath:[*ruta*]**|Obliga al proceso *vstest.console.exe* a usar adaptadores de prueba personalizados de una ruta de acceso especificada (si los hubiera) en la serie de pruebas.<br />Ejemplo: `/TestAdapterPath:[pathToCustomAdapters]`|
 |**/Platform:[*tipo de plataforma*]**|Arquitectura de la plataforma de destino que se usará para la ejecución de pruebas.<br />Los valores válidos son x86, x64 y ARM.|
-|**/Framework: [*versión de Framework*]**|Versión de .NET Framework de destino que se va a usar en la ejecución de pruebas.<br />Los valores válidos son Framework35, Framework40, Framework45 y FrameworkUap10.<br />Si la plataforma de destino se especifica como **Framework35**, las pruebas se ejecutan en "modo de compatibilidad" de CLR 4.0.<br />Ejemplo: `/Framework:framework40`|
+|**/Framework: [*versión de Framework*]**|Establezca como destino la versión de .NET que se va a usar para la ejecución de pruebas.<br />Algunos valores de ejemplo son `Framework35`, `Framework40`, `Framework45`, `FrameworkUap10` o `.NETCoreApp,Version=v1.1`.<br />Si la plataforma de destino se especifica como **Framework35**, las pruebas se ejecutan en "modo de compatibilidad" de CLR 4.0.<br />Ejemplo: `/Framework:framework40`|
 |**/TestCaseFilter:[*expresión*]**|Ejecuta pruebas que coinciden con la expresión dada.<br /><Expression\> tiene el formato <property\>=<value\>[\|<Expression\>].<br />Ejemplo: `/TestCaseFilter:"Priority=1"`<br />Ejemplo: `/TestCaseFilter:"TestCategory=Nightly|FullyQualifiedName=Namespace.ClassName.MethodName"`<br />La opción de línea de comandos **/TestCaseFilter** no se puede usar con la opción de línea de comandos **/Tests**. <br />Para obtener información sobre cómo crear y usar expresiones, vea [TestCase filter](https://github.com/Microsoft/vstest-docs/blob/master/docs/filter.md) (Filtro TestCase).|
 |**/?**|Muestra información de uso.|
-|**/Logger:[*uri o nombre descriptivo*]**|Especifica un registrador para resultados de pruebas.<br />Ejemplo: Para registrar resultados en un archivo de resultados de pruebas (TRX) de Visual Studio, use **/Logger:trx**.<br />Ejemplo: Para publicar resultados de pruebas en Team Foundation Server, use TfsPublisher:<br />**/logger:TfsPublisher;**<br />**Collection=<url del proyecto\>;**<br />**BuildName=<nombre de compilación\>;**<br />**TeamProject=<nombre del proyecto\>;**<br />**[;Platform=<Valor predeterminado "Cualquier CPU">]**<br />**[;Flavor=<Valor predeterminado "Depurar">]**<br />**[;RunTitle=<título\>]**|
+|**/Logger:[*uri o nombre descriptivo*]**|Especifica un registrador para resultados de pruebas.<br />Ejemplo: Para registrar resultados en un archivo de resultados de pruebas (TRX) de Visual Studio, use **/Logger:trx**.<br />Ejemplo: Para publicar resultados de pruebas en Team Foundation Server, use TfsPublisher:<br />**/logger:TfsPublisher;**<br />**Collection=<url del proyecto\>;**<br />**BuildName=<nombre de compilación\>;**<br />**TeamProject=<nombre del proyecto\>;**<br />**[;Platform=\<Valor predeterminado "Cualquier CPU">]**<br />**[;Flavor=\<Valor predeterminado "Depurar">]**<br />**[;RunTitle=<título\>]**|
 |**/ListTests:[*nombre de archivo*]**|Muestra las pruebas detectadas del contenedor de pruebas especificado.|
 |**/ListDiscoverers**|Muestra los programas de detección de pruebas instalados.|
 |**/ListExecutors**|Muestra los programas de ejecución de pruebas instalados.|
@@ -53,7 +53,7 @@ En la siguiente tabla se muestran todas las opciones de *VSTest.Console.exe* jun
 |**/Blame**|Realiza un seguimiento de las pruebas a medida que se ejecutan y, si se bloquea el proceso de host de prueba, emite los nombres de las pruebas en su secuencia de ejecución hasta, e incluyendo, la prueba específica que se estaba ejecutando en el momento del bloqueo. Este resultado facilita el aislamiento de la prueba infractora y un diagnóstico más profundo. [Más información](https://github.com/Microsoft/vstest-docs/blob/master/docs/extensions/blame-datacollector.md).|
 |**/Diag:[*nombre de archivo*]**|Escribe registros de seguimiento de diagnóstico en el archivo especificado.|
 |**/ResultsDirectory:[*ruta de acceso*]**|Si no existe, el directorio de los resultados de la prueba se creará en la ruta de acceso especificada.<br />Ejemplo: `/ResultsDirectory:<pathToResultsDirectory>`|
-|**/ParentProcessId:[*IdentificadorProcesoPrincipal*]**|El identificador del proceso principal responsable de iniciar el proceso actual.|
+|**/ParentProcessId:[*IdentificadorProcesoPrincipal*]**|Identificador del proceso principal responsable de iniciar el proceso actual.|
 |**/Port:[*puerto*]**|El puerto para la conexión de socket y la recepción de mensajes de eventos.|
 |**/Collect:[*dataCollector friendlyName*]**|Habilita el recopilador de datos para la ejecución de pruebas. [Más información](https://aka.ms/vstest-collect).|
 

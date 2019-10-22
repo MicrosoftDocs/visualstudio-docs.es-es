@@ -1,5 +1,5 @@
 ---
-title: Consideraciones de seguridad del visualizador | Microsoft Docs
+title: Consideraciones de seguridad del visualizador | Documentos de Microsoft
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -17,11 +17,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: a79abb14c6c5eaa47dfacc42f0b1d50b0dadd1c5
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56684297"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62929436"
 ---
 # <a name="visualizer-security-considerations"></a>Consideraciones de seguridad del visualizador
 Escribir datos en un visualizador implica poner en riesgo la seguridad. En la actualidad, no se conoce ningún tipo de ataque que intente aprovecharse de esta vulnerabilidad potencial, pero los desarrolladores deben tenerlo en cuenta y adoptar las debidas precauciones, tal y como se describe en este documento, para protegerse de futuros ataques.
@@ -39,6 +39,6 @@ Escribir datos en un visualizador implica poner en riesgo la seguridad. En la ac
 
 ## <a name="see-also"></a>Vea también
 - [Arquitectura de un visualizador](../debugger/visualizer-architecture.md)
-- [Cómo: Escribir un visualizador](/visualstudio/debugger/create-custom-visualizers-of-data)
+- [Cómo: Escritura de un visualizador](/visualstudio/debugger/create-custom-visualizers-of-data)
 - [Create Custom Visualizers](../debugger/create-custom-visualizers-of-data.md) (Crear visualizadores personalizados)
 - [Ver datos en el depurador](../debugger/viewing-data-in-the-debugger.md)

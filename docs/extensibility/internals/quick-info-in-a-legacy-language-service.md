@@ -7,17 +7,17 @@ helpviewer_keywords:
 - IntelliSense, Quick Info
 - language services [managed package framework], IntelliSense Quick Info
 ms.assetid: 159ccb0b-f5d6-4912-b88b-e9612924ed5e
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9d86ba3b75f2c0e26a568c962a51999dd9fac078
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 6180e34135197c60276bf119ce0ac34c859b2f3d
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56605970"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66341372"
 ---
 # <a name="quick-info-in-a-legacy-language-service"></a>Información rápida en un servicio de lenguaje heredado
 Información rápida de IntelliSense muestra información acerca de un identificador en el origen cuando el usuario, ya sea coloca el símbolo de intercalación en el identificador y selecciona **información rápida** desde el **IntelliSense** menú o mantiene el mouse cursor sobre el identificador. Esto hace que una información sobre herramientas con información sobre el identificador. Esta información normalmente está formada por el tipo de identificador. Cuando el motor de depuración está activo, esta información puede incluir el valor actual. El motor de depuración proporciona valores de expresión, mientras que el servicio de lenguaje controla solo identificadores.
@@ -25,7 +25,7 @@ Información rápida de IntelliSense muestra información acerca de un identific
  Servicios de lenguaje heredado se implementan como parte de un paquete VSPackage, pero la forma más reciente para implementar características de servicio de lenguaje es usar las extensiones MEF. Para obtener más información, consulte [Tutorial: Mostrar información sobre herramientas de QuickInfo](../../extensibility/walkthrough-displaying-quickinfo-tooltips.md).
 
 > [!NOTE]
->  Se recomienda que comience a usar el nuevo editor de API tan pronto como sea posible. Esto mejorará el rendimiento de su servicio de lenguaje y le permiten aprovechar las nuevas características del editor.
+> Se recomienda que comience a usar el nuevo editor de API tan pronto como sea posible. Esto mejorará el rendimiento de su servicio de lenguaje y le permiten aprovechar las nuevas características del editor.
 
  Las clases de servicio de lenguaje de framework (MPF) de paquetes administrados proporcionan compatibilidad completa para mostrar la información sobre herramientas de información rápida de IntelliSense. Todo lo que debe hacer es proporcionar el texto para mostrarse y habilitar la característica información rápida.
 

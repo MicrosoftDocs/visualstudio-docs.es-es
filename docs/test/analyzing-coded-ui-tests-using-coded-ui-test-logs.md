@@ -7,12 +7,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 85be4e713a4cf2581200da7589a1001e6510459d
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 76aac39d50dc724916bca3d863c71bacf53407d9
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55948555"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67824482"
 ---
 # <a name="analyzing-coded-ui-tests-using-coded-ui-test-logs"></a>Análisis de pruebas automatizadas de IU mediante los registros de pruebas automatizadas de IU
 
@@ -24,62 +24,64 @@ Los registros de pruebas de IU codificadas filtran y guardan información import
 
 En función de su escenario, use uno de los siguientes métodos para habilitar el registro:
 
-- .NET Framework versión 4 de destino sin archivo *App.config* en el proyecto de prueba:
+- Si no hay ningún archivo *App.config* en el proyecto de prueba:
 
-   1. Abra el archivo *QTAgent32_40.exe.config*. De forma predeterminada, este archivo se encuentra en *%ProgramFiles(x86)%\Microsoft Visual Studio\2017\Enterprise\Common7\IDE*.
+   1. Determine qué proceso *QTAgent\*.exe* se inicia al ejecutar la prueba. Una forma de hacerlo es ver la pestaña **Detalles** en el **Administrador de tareas** de Windows.
+   
+   2. Abra el correspondiente archivo *.config* de archivos desde la carpeta *%ProgramFiles(x86)%\Microsoft Visual Studio\\\<version>\\\<edition>\Common7\IDE*. Por ejemplo, si el proceso que se ejecuta es *QTAgent_40.exe*, abra *QTAgent_40.exe.config*.
 
-   2. Modifique el valor de EqtTraceLevel para que tenga el nivel de registro que quiera.
-
-   3. Guarde el archivo.
-
-- .NET Framework versión 4.5 de destino sin archivo *App.config* en el proyecto de prueba:
-
-   1. Abra el archivo *QTAgent32.exe.config*. De forma predeterminada, este archivo se encuentra en *%ProgramFiles(x86)%\Microsoft Visual Studio\2017\Enterprise\Common7\IDE*.
-
-   2. Modifique el valor de EqtTraceLevel para que tenga el nivel de registro que quiera.
-
-   3. Guarde el archivo.
-
-- Archivo *App.config* en el proyecto de prueba:
-
-    - Abra el archivo *App.config* en el proyecto y agregue el siguiente código bajo el nodo de configuración:
-
+   2. Modifique el valor de **EqtTraceLevel** para que tenga el nivel de registro que quiera.
+   
       ```xml
-      <system.diagnostics>
-        <switches>
-          <add name="EqtTraceLevel" value="4" />
-        </switches>
-      </system.diagnostics>`
+      <!-- You must use integral values for "value".
+           Use 0 for off, 1 for error, 2 for warn, 3 for info, and 4 for verbose. -->
+      <add name="EqtTraceLevel" value="4" />
       ```
+
+   3. Guarde el archivo.
+
+- Si hay un archivo *App.config* en el proyecto de prueba:
+
+  - Abra el archivo *App.config* en el proyecto y agregue el siguiente código bajo el nodo de configuración:
+
+    ```xml
+    <system.diagnostics>
+      <switches>
+        <add name="EqtTraceLevel" value="4" />
+      </switches>
+    </system.diagnostics>`
+    ```
 
 - Habilitar el registro desde el propio código de prueba:
 
-   <xref:Microsoft.VisualStudio.TestTools.UITesting.PlaybackSettings.LoggerOverrideState%2A> = HtmlLoggerState.AllActionSnapshot;
+   ```csharp
+   Microsoft.VisualStudio.TestTools.UITesting.PlaybackSettings.LoggerOverrideState = HtmlLoggerState.AllActionSnapshot;
+   ```
 
 ## <a name="step-2-run-your-coded-ui-test-and-view-the-log"></a>Paso 2: Ejecutar la prueba de IU codificada y ver el registro
 
-Cuando ejecute una prueba automatizada de IU una vez realizadas las modificaciones en el archivo *QTAgent32.exe.config*, verá que hay un vínculo de salida en los resultados del **Explorador de pruebas**. Los archivos de registro no solo se generan cuando la prueba produzca un error, sino también para las pruebas correctas cuando el nivel de seguimiento sea "detallado".
+Cuando ejecute una prueba automatizada de IU una vez realizadas las modificaciones en el archivo *QTAgent32\*.exe.config*, verá que hay un vínculo de salida en los resultados del **Explorador de pruebas**. Los archivos de registro no solo se generan cuando la prueba produzca un error, sino también para las pruebas correctas cuando el nivel de seguimiento sea **detallado**.
 
-1.  En el menú **Prueba**, seleccione **Ventanas** y después elija **Explorador de pruebas**.
+1. En el menú **Prueba**, seleccione **Ventanas** y después elija **Explorador de pruebas**.
 
-2.  En el menú **Compilar** , elija **Compilar solución**.
+2. En el menú **Compilar** , elija **Compilar solución**.
 
-3.  En el **Explorador de pruebas**, seleccione la prueba automatizada de IU que quiera ejecutar, abra el menú contextual y después elija **Ejecutar pruebas seleccionadas**.
+3. En el **Explorador de pruebas**, seleccione la prueba automatizada de IU que quiera ejecutar, abra el menú contextual y después elija **Ejecutar pruebas seleccionadas**.
 
      Las pruebas automatizadas se ejecutan e indican si se superan o no.
 
     > [!TIP]
     > Para ver el **Explorador de pruebas**, elija **Prueba** > **Ventanas** y, después, seleccione **Explorador de pruebas**.
 
-4.  Elija el vínculo **Resultado** en el **Explorador de pruebas**.
+4. Elija el vínculo **Resultado** en el **Explorador de pruebas**.
 
      ![Vínculo de resultados del Explorador de pruebas](../test/media/cuit_htmlactionlog1.png)
 
      Con esto se muestra la salida de la prueba, que incluye un vínculo al registro de acciones.
 
-     ![Vínculos de salida y resultados de prueba de IU programada](../test/media/cuit_htmlactionlog2.png)
+     ![Vínculos de salida y resultados de prueba de IU codificada](../test/media/cuit_htmlactionlog2.png)
 
-5.  Elija el vínculo *UITestActionLog.html*.
+5. Elija el vínculo *UITestActionLog.html*.
 
      El registro se muestra en el explorador web.
 

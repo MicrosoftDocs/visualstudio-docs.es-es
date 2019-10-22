@@ -1,5 +1,5 @@
 ---
-title: IActiveScriptSiteDebug::OnScriptErrorDebug | Microsoft Docs
+title: 'Iactivescriptsitedebug (:: OnScriptErrorDebug | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 50e8c7baa42d6f2f36dc71b768797dfe2a464bf3
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 894767b3dae9db54e8bc438a82b27195308a4342
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58160110"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72572205"
 ---
 # <a name="iactivescriptsitedebugonscripterrordebug"></a>IActiveScriptSiteDebug::OnScriptErrorDebug
-Permite a un host inteligente determinar cómo controlar los errores de tiempo de ejecución.  
+Permite que un host inteligente determine cómo controlar los errores en tiempo de ejecución.  
   
 ## <a name="syntax"></a>Sintaxis  
   
@@ -39,23 +39,23 @@ HRESULT OnScriptErrorDebug(
   
 #### <a name="parameters"></a>Parámetros  
  `pErrorDebug`  
- [in] El error de tiempo de ejecución  
+ de Error en tiempo de ejecución que se produjo  
   
  `pfEnterDebugger`  
- [out] Marca que indica si se debe pasar el error al depurador para realizar la depuración de JIT.  
+ enuncia Marca que indica si se debe pasar el error al depurador para realizar la depuración JIT.  
   
  `pfCallOnScriptErrorWhenContinuing`  
- [out] Marca que indica si se debe llamar a `IActiveScriptSite::OnScriptError` cuando el usuario decide continuar sin depuración.  
+ enuncia Marca que indica si se debe llamar a `IActiveScriptSite::OnScriptError` cuando el usuario decide continuar sin depuración.  
   
 ## <a name="return-value"></a>Valor devuelto  
- El método devuelve un objeto `HRESULT`. Los valores posibles incluyen, pero no se limita al valor en la tabla siguiente.  
+ El método devuelve un objeto `HRESULT`. Entre los valores posibles se incluyen, pero no se limitan al valor de la tabla siguiente.  
   
 |Valor|Descripción|  
 |-----------|-----------------|  
 |`S_OK`|El método se realizó correctamente.|  
   
 ## <a name="remarks"></a>Comentarios  
- Un host inteligente puede usar este método para determinar cómo controlar los errores de tiempo de ejecución.  
+ Un host inteligente puede utilizar este método para determinar cómo controlar los errores en tiempo de ejecución.  
   
 ## <a name="see-also"></a>Vea también  
  [IActiveScriptSiteDebug (Interfaz)](../../winscript/reference/iactivescriptsitedebug-interface.md)

@@ -19,12 +19,12 @@ caps.latest.revision: 38
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: e7a2640d39c90dc36a3960d230df46ac75bdbce6
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 7a80587062442688551d07128a2cec49a712adf6
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60092427"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65691457"
 ---
 # <a name="debugging-preparation-aspnet-web-applications"></a>Preparación de la depuración: Aplicaciones Web ASP.NET
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,11 +43,11 @@ El [!INCLUDE[vstecasp](../includes/vstecasp-md.md)]plantilla de sitio Web crea u
   
 1. Establezca uno o varios puntos de interrupción en los controladores de funciones y eventos.  
   
-     Para obtener más información, consulta [Breakpoints and Tracepoints](http://msdn.microsoft.com/fe4eedc1-71aa-4928-962f-0912c334d583).  
+     Para obtener más información, consulta [Breakpoints and Tracepoints](https://msdn.microsoft.com/fe4eedc1-71aa-4928-962f-0912c334d583).  
   
 2. Cuando se alcance un punto de interrupción, ejecute paso a paso el código en la función. Fíjese en la ejecución del código hasta que aísle el problema.  
   
-     Para obtener más información, consulte [ejecución paso a paso](http://msdn.microsoft.com/8791dac9-64d1-4bb9-b59e-8d59af1833f9) y [depurar aplicaciones Web y en Script](../debugger/debugging-web-applications-and-script.md).  
+     Para obtener más información, consulte [ejecución paso a paso](https://msdn.microsoft.com/8791dac9-64d1-4bb9-b59e-8d59af1833f9) y [depurar aplicaciones Web y en Script](../debugger/debugging-web-applications-and-script.md).  
   
 ## <a name="changing-default-configurations"></a>Cambiar las configuraciones predeterminadas  
  Si desea cambiar las configuraciones predeterminadas Debug y Release creadas por [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], puede hacerlo. Para obtener más información, vea [Cómo: Establecimiento de configuraciones Debug y Release](../debugger/how-to-set-debug-and-release-configurations.md).  

@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugPortSupplier2::AddPort
 ms.assetid: df491161-6bf3-4fcc-b478-b9ec88ec995f
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5c674b73ad6ec45b1e388f62fbd3103afb5daedb
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 245c14e2aaa6867f964a2beec7bcbc232b5800be
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56678234"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66340275"
 ---
 # <a name="idebugportsupplier2addport"></a>IDebugPortSupplier2::AddPort
 Agrega un puerto.
@@ -38,14 +41,12 @@ int AddPort( 
 );
 ```
 
-#### <a name="parameters"></a>Parámetros
- `pRequest`
+## <a name="parameters"></a>Parámetros
+`pRequest`\
+[in] Un [IDebugPortRequest2](../../../extensibility/debugger/reference/idebugportrequest2.md) objeto que describe el puerto que se va a agregar.
 
- [in] Un [IDebugPortRequest2](../../../extensibility/debugger/reference/idebugportrequest2.md) objeto que describe el puerto que se va a agregar.
-
- `ppPort`
-
- [out] Devuelve un [IDebugPort2](../../../extensibility/debugger/reference/idebugport2.md) objeto que representa el puerto.
+`ppPort`\
+[out] Devuelve un [IDebugPort2](../../../extensibility/debugger/reference/idebugport2.md) objeto que representa el puerto.
 
 ## <a name="return-value"></a>Valor devuelto
  Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.

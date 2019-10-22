@@ -14,12 +14,12 @@ author: John-Hart
 ms.author: johnhart
 manager: jillfra
 ms.workload: office
-ms.openlocfilehash: d85e125ee09d459d23b3b709f58d5af43e76e984
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: 165ef1256a0150e0942d85c4f876c8b3f5e15c72
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56611872"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63422915"
 ---
 # <a name="replaceable-parameters"></a>Parámetros reemplazables
   Parámetros reemplazables, o *tokens*, puede usar dentro de los archivos de proyecto para proporcionar valores para los elementos de la solución de SharePoint cuyos valores reales no se conocen en tiempo de diseño. Son una función similar a la norma [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] tokens de la plantilla. Para obtener más información, consulte [parámetros de plantilla](../ide/template-parameters.md).
@@ -48,7 +48,7 @@ ms.locfileid: "56611872"
 ## <a name="tokens-list"></a>Lista de tokens
  En la tabla siguiente se enumera los tokens disponibles.
 
-|nombre|Descripción|
+|Name|Descripción|
 |----------|-----------------|
 |$SharePoint.Project.FileName$|El nombre de la que contiene, como archivo de proyecto *contenedor*.|
 |$SharePoint.Project.FileNameWithoutExtension$|El nombre del archivo del proyecto que contiene sin la extensión de nombre de archivo. Por ejemplo, "NuevoProy".|
@@ -86,7 +86,7 @@ ms.locfileid: "56611872"
   Sin embargo, puede agregar extensiones de archivo adicionales a la lista. Agregar un `<TokenReplacementFileExtensions>` elemento a cualquier elemento PropertyGroup en el archivo de proyecto de SharePoint que se define antes de la \<Import > del archivo de destinos de SharePoint.
 
 > [!NOTE]
->  Como reemplazo de tokens se produce una vez compilado un proyecto, no debe agregar extensiones de archivo para tipos de archivo que se compilan, tales como *.cs*, *.vb* o *.resx*. Los tokens se reemplazan sólo en los archivos que no se compilan.
+> Como reemplazo de tokens se produce una vez compilado un proyecto, no debe agregar extensiones de archivo para tipos de archivo que se compilan, tales como *.cs*, *.vb* o *.resx*. Los tokens se reemplazan sólo en los archivos que no se compilan.
 
  Por ejemplo, para agregar las extensiones de nombre de archivo (*.myextension* y *.yourextension*) a la lista de extensiones de nombre de archivo de reemplazo de tokens, se debe agregar lo siguiente a un proyecto (*.csproj* ) archivo:
 

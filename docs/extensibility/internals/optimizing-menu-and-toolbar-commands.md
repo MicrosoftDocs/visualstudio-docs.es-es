@@ -9,17 +9,17 @@ helpviewer_keywords:
 - menu commands, implementing
 - toolbars [Visual Studio], commands
 ms.assetid: 8385f1a6-1e98-4dca-83d2-fcbed7177242
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 42a3fb7b44f0e21c564bc9bef26d5aa158d43091
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 9c76e4f37fd77bd35526153bd86d419417a6cdb6
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56631515"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66333126"
 ---
 # <a name="optimizing-menu-and-toolbar-commands"></a>Optimización de comandos de menú y barra de herramientas
 La adición de VSPackages y sus comandos correspondientes a [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] puede provocar una interfaz de usuario atestado. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Proporciona métodos para ayudar a minimizar la confusión de comando de la interfaz de usuario.

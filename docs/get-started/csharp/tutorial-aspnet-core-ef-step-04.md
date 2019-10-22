@@ -17,17 +17,17 @@ ms.workload:
 - aspnet
 - dotnetcore
 ms.openlocfilehash: 93e3b0af04060c3a3805b29e5d1da71c4f60ec31
-ms.sourcegitcommit: b6177ce198c7c5a00030604c9d4faa735405d5df
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/04/2019
-ms.locfileid: "59018095"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62553879"
 ---
 # <a name="step-4-expose-a-web-api-from-your-aspnet-core-app"></a>Paso 4: Exposición de una API web desde la aplicación de ASP.NET Core
 
 Siga estos pasos para agregar una API web a la aplicación de ASP.NET Core existente.
 
-_Vea este vídeo y siga el tutorial para agregar compatibilidad con la API web a la primera aplicación de ASP.NET Core._
+_Vea este vídeo y siga el tutorial para agregar compatibilidad con la API web a la primera aplicación de ASP.NET Core._
 
 > [!VIDEO https://www.youtube.com/embed/o_fYPOsAXts]
 
@@ -226,9 +226,9 @@ Haga clic en un punto de conexión en Juegos y, a continuación, ejecute `Try it
 
 En el vídeo siguiente, obtendrá información sobre cómo implementar la aplicación en Azure.
 
-[Paso 5: Implementación de la aplicación de ASP.NET Core en Azure](tutorial-aspnet-core-ef-step-05.md)
+[Paso 5: Implementación de la aplicación de ASP.NET Core en Azure](tutorial-aspnet-core-ef-step-05.md)
 
 ## <a name="see-also"></a>Vea también
 
-- [Introducción a Swashbuckle y ASP.NET Core](/aspnet/core/tutorials/getting-started-with-swashbuckle?view=aspnetcore-2.2&tabs=visual-studio)
-- [Páginas de ayuda de ASP.NET Core Web API con Swagger/Open API](/aspnet/core/tutorials/web-api-help-pages-using-swagger?view=aspnetcore-2.2)
+- [Introducción a Swashbuckle y ASP.NET Core](/aspnet/core/tutorials/getting-started-with-swashbuckle?view=aspnetcore-2.2&tabs=visual-studio)
+- [Páginas de ayuda de ASP.NET Core Web API con Swagger/Open API](/aspnet/core/tutorials/web-api-help-pages-using-swagger?view=aspnetcore-2.2)

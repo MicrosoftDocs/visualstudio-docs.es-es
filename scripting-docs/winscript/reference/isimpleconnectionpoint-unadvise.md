@@ -1,5 +1,5 @@
 ---
-title: ISimpleConnectionPoint::Unadvise | Microsoft Docs
+title: 'Isimpleconnectionpoint (:: Unadvise | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 189c07c10e93df9a61218b6a94a0b317999676d2
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: e00c172fd33eb0ccf27aaf28e0e2f692c1a353ab
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58154665"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72571748"
 ---
 # <a name="isimpleconnectionpointunadvise"></a>ISimpleConnectionPoint::Unadvise
-Finaliza una conexión de consulta previamente establecida mediante `ISimpleConnectionPoint::Advise`.  
+Finaliza una conexión de consulta previamente establecida a través de `ISimpleConnectionPoint::Advise`.  
   
 ## <a name="syntax"></a>Sintaxis  
   
@@ -37,7 +37,7 @@ HRESULT Unadvise(
   
 #### <a name="parameters"></a>Parámetros  
  `dwCookie`  
- [in] Símbolo (token) de la conexión finaliza, tal como lo devuelve `ISimpleConnectionPoint::Advise`.  
+ de Token de la conexión que se va a finalizar, tal como se devuelve desde `ISimpleConnectionPoint::Advise`.  
   
 ## <a name="return-value"></a>Valor devuelto  
  El método devuelve un objeto `HRESULT`. Entre los valores posibles se incluyen los que se indican en la tabla siguiente, entre otros.  
@@ -47,7 +47,7 @@ HRESULT Unadvise(
 |`S_OK`|El método se realizó correctamente.|  
   
 ## <a name="remarks"></a>Comentarios  
- Cuando se termina una conexión de consulta, el punto de conexión llamadas la `Release` método en el puntero que se ha guardado para la conexión durante el `ISimpleConnectionPoint::Advise` método. Esa llamada invierte la `AddRef` que se realizó durante la `ISimpleConnectionPoint::Advise` cuando el punto de conexión llama el receptor de consulta `QueryInterface`.  
+ Cuando finaliza una conexión de consulta, el punto de conexión llama al método `Release` en el puntero que se guardó para la conexión durante el método `ISimpleConnectionPoint::Advise`. Esta llamada invierte el `AddRef` que se realizó durante la `ISimpleConnectionPoint::Advise` cuando el punto de conexión llama a la `QueryInterface` del receptor de consulta.  
   
 ## <a name="see-also"></a>Vea también  
  [ISimpleConnectionPoint (Interfaz)](../../winscript/reference/isimpleconnectionpoint-interface.md)

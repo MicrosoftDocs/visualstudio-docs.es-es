@@ -8,17 +8,17 @@ helpviewer_keywords:
 - commands, handling using interop assemblies
 - command handling with interop assemblies
 ms.assetid: 8f4af525-39e5-4e69-92c8-d3efabe80bb2
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d08e7ad95e621ab444f98c295f5d84aa2b6e0066
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 14625d38a8eae594d1ba63aa1f628c2482be8f30
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56628096"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66342011"
 ---
 # <a name="commands-and-menus-that-use-interop-assemblies"></a>Los comandos y menús que utilizan ensamblados de interoperabilidad
 Un VSPackage que implemente los comandos de menú y barra de herramientas mediante el uso de ensamblados de interoperabilidad debe:

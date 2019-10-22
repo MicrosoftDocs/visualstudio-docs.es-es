@@ -17,11 +17,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 41ac1db7348ff993671623214b59113d6210b83e
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59670282"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68193332"
 ---
 # <a name="tooltaskextension-base-class"></a>ToolTaskExtension (Clase base)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,7 +31,7 @@ Muchas tareas heredan de la clase <xref:Microsoft.Build.Tasks.ToolTaskExtension>
 ## <a name="parameters"></a>Parámetros  
  En la siguiente tabla se describen los parámetros de las clases base.  
   
-|Parámetro|Descripción|  
+|Parámetro|DESCRIPCIÓN|  
 |---------------|-----------------|  
 |<xref:Microsoft.Build.Utilities.Task.BuildEngine%2A>|Parámetro <xref:Microsoft.Build.Framework.IBuildEngine> opcional.<br /><br /> Especifica la interfaz del motor de compilación disponible para las tareas. El motor de compilación establece automáticamente este parámetro para permitir que las tareas vuelvan a llamarlo.|  
 |<xref:Microsoft.Build.Utilities.Task.BuildEngine2%2A>|Parámetro <xref:Microsoft.Build.Framework.IBuildEngine2> opcional.<br /><br /> Especifica la interfaz del motor de compilación disponible para las tareas. El motor de compilación establece automáticamente este parámetro para permitir que las tareas vuelvan a llamarlo.<br /><br /> Esta es una propiedad que permite que los autores de las tareas que heredan de esta clase no tengan que convertir el valor de `IBuildEngine` a `IBuildEngine2`.|  
@@ -50,6 +50,6 @@ Muchas tareas heredan de la clase <xref:Microsoft.Build.Tasks.ToolTaskExtension>
 |<xref:Microsoft.Build.Utilities.ToolTask.UseCommandProcessor%2A>|Parámetro `bool` opcional.<br /><br /> Cuando se establece en `true`, esta tarea crea un archivo por lotes para la línea de comandos y lo ejecuta mediante el procesador de comandos, en lugar de ejecutar el comando directamente.|  
 |<xref:Microsoft.Build.Utilities.ToolTask.YieldDuringToolExecution%2A>|Parámetro `bool` opcional.<br /><br /> Cuando se establece en `true`, esta tarea produce el nodo cuando se ejecuta la tarea.|  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Otras referencias  
  [Referencia de tareas](../msbuild/msbuild-task-reference.md)   
  [Tareas](../msbuild/msbuild-tasks.md)

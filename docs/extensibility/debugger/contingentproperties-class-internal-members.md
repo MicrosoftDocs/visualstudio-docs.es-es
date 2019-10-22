@@ -6,17 +6,17 @@ helpviewer_keywords:
 - ContingentProperties class [.NET Framework debug engines]
 - debug engines, ContingentProperties class [.NET Framework]
 ms.assetid: c49d1362-ab1c-4b6d-9950-fcae40e0e66b
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 60129950c2311cc94b8573de4cd8ae3c46194e75
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: a7b9775ed74e7ae81768f180e596f171b2c99cba
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56704753"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66344317"
 ---
 # <a name="contingentproperties-class---internal-members"></a>ContingentProperties class: miembros internos
 Contiene propiedades adicionales para un <xref:System.Threading.Tasks.Task> objeto.
@@ -38,7 +38,7 @@ Contiene propiedades adicionales para un <xref:System.Threading.Tasks.Task> obje
 
 ### <a name="fields"></a>Campos
 
-|nombre|Descripción|
+|Name|Descripción|
 |----------|-----------------|
 |[m_children](../../extensibility/debugger/m-children-field.md)|La lista de tareas secundarias que están registrados en esta tarea.|
 

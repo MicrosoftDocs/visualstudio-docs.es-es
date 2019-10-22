@@ -1,5 +1,5 @@
 ---
-title: IActiveScriptSite::GetDocVersionString | Microsoft Docs
+title: 'IActiveScriptSite:: GetDocVersionString | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 7327b71329c1f476eab9c27d5e0d5a047664abfa
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 8ecc592b6b7fcae5f516a3c1dd111c027e67b6dc
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58147961"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72571129"
 ---
 # <a name="iactivescriptsitegetdocversionstring"></a>IActiveScriptSite::GetDocVersionString
-Recupera una cadena definida por el host que identifica la versión actual del documento. Si el documento relacionado ha cambiado fuera del ámbito de la secuencia de comandos de Windows (como en el caso de una página HTML que se está editando con el Bloc de notas), el motor de scripting puede guardar junto con su estado persistente, forzar una nueva compilación la próxima vez que se carga el script.  
+Recupera una cadena definida por el host que identifica de forma única la versión del documento actual. Si el documento relacionado ha cambiado fuera del ámbito de la secuencia de comandos de Windows (como en el caso de una página HTML que se está editando con el Bloc de notas), el motor de scripting puede guardar esto junto con su estado persistente y forzar una recompilación la próxima vez que se cargue el script.  
   
 ## <a name="syntax"></a>Sintaxis  
   
@@ -37,13 +37,13 @@ HRESULT GetDocVersionString(
   
 #### <a name="parameters"></a>Parámetros  
  `pstrVersionString`  
- [out] Dirección de la cadena de versión de documento definido por el host.  
+ enuncia Dirección de la cadena de versión del documento definido por el host.  
   
 ## <a name="return-value"></a>Valor devuelto  
  Devuelve `S_OK` si se realiza correctamente, o `E_NOTIMPL` si no se admite este método.  
   
 ## <a name="remarks"></a>Comentarios  
- Si `E_NOTIMPL` se devuelve, el motor de scripting debe suponer que la secuencia de comandos está sincronizada con el documento.  
+ Si se devuelve `E_NOTIMPL`, el motor de scripting debe suponer que el script está sincronizado con el documento.  
   
 ## <a name="see-also"></a>Vea también  
  [IActiveScriptSite](../../winscript/reference/iactivescriptsite.md)

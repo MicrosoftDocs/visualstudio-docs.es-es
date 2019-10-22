@@ -1,5 +1,5 @@
 ---
-title: IActiveScriptStats::GetStatEx | Microsoft Docs
+title: 'Iactivescriptstats (:: GetStatEx | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,12 +17,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 5f1585e335fac0072eba48494bf8c27736a47f41
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 2ca7cdb81fd7e228b26bfaa12d45e81335674a74
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58149174"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72576121"
 ---
 # <a name="iactivescriptstatsgetstatex"></a>IActiveScriptStats::GetStatEx
 Devuelve una estadística de script personalizado.  
@@ -39,13 +39,13 @@ HRESULT GetStatEx(
   
 #### <a name="parameters"></a>Parámetros  
  `guid`  
- [in] Especifica qué estadística para devolver. La semántica de cuál corresponde a un determinado GUID está completamente definido por el motor.  
+ de Especifica la estadística que se va a devolver. La semántica de la estadística correspondiente a un GUID determinado es totalmente definida por el motor.  
   
  `pluHi`  
- [out] 32 bits superiores de un entero de 64 bits sin signo que representa la estadística.  
+ enuncia Los bits 32 altos de un entero de 64 bits sin signo que representa la estadística.  
   
  `pluLo`  
- [out] 32 bits inferiores de un entero de 64 bits sin signo que representa la estadística.  
+ enuncia Los bits 32 bajos de un entero de 64 bits sin signo que representa la estadística.  
   
 ## <a name="return-value"></a>Valor devuelto  
  El método devuelve un objeto `HRESULT`. Entre los valores posibles se incluyen los que se indican en la tabla siguiente, entre otros.  
@@ -53,14 +53,14 @@ HRESULT GetStatEx(
 |Valor|Descripción|  
 |-----------|-----------------|  
 |`S_OK`|El método se realizó correctamente.|  
-|`E_NOTIMPL`|No se implementa el método.|  
+|`E_NOTIMPL`|No se ha implementado el método.|  
   
 ## <a name="remarks"></a>Comentarios  
- Este método permite que un motor de script personalizado devolver estadísticas significativas para un host personalizado.  
+ Este método permite a un motor de scripts personalizado devolver estadísticas significativas para un host personalizado.  
   
 > [!NOTE]
->  Este método no está implementado actualmente.  
+> Este método no está implementado actualmente.  
   
 ## <a name="see-also"></a>Vea también  
- [IActiveScriptStats::GetStat](../../winscript/reference/iactivescriptstats-getstat.md)   
+ [Iactivescriptstats (:: GetStat](../../winscript/reference/iactivescriptstats-getstat.md)    
  [IActiveScriptStats (Interfaz)](../../winscript/reference/iactivescriptstats-interface.md)

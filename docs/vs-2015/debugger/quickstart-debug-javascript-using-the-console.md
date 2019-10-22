@@ -20,12 +20,12 @@ caps.latest.revision: 10
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: b03f7c69e5eac71f9edc790df31d9704a141e590
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: a2256dfde39c761258ffb63ec6bbd9473e1be385
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60065693"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65687592"
 ---
 # <a name="quickstart-debug-javascript-using-the-console"></a>Inicio rápido: Depurar JavaScript mediante la consola
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -59,7 +59,7 @@ Se aplica a Windows y Windows Phone] (.. /Image/windows_and_phone_content.png "w
 - [Cambio del contexto de ejecución del script](#Switching)  
   
 > [!TIP]
->  Si la ventana Consola JavaScript está cerrada, elija **Depurar**>**Ventanas** > **Consola de JavaScript** para abrirla de nuevo. La ventana únicamente aparece durante las sesiones de depuración de script.  
+> Si la ventana Consola JavaScript está cerrada, elija **Depurar**>**Ventanas** > **Consola de JavaScript** para abrirla de nuevo. La ventana únicamente aparece durante las sesiones de depuración de script.  
   
  La ventana Consola JavaScript le permite interactuar con su aplicación sin tener que detener y reiniciar el depurador. Para obtener más información, consulte [actualizar una aplicación (JavaScript)](../debugger/refresh-an-app-javascript.md). Para obtener información sobre otras características, como el explorador DOM y establecer puntos de interrupción, la depuración de JavaScript consulte [inicio rápido: Depurar HTML y CSS](../debugger/quickstart-debug-html-and-css.md) y [depurar aplicaciones en Visual Studio](../debugger/debug-store-apps-in-visual-studio.md).  
   
@@ -67,7 +67,7 @@ Se aplica a Windows y Windows Phone] (.. /Image/windows_and_phone_content.png "w
  Los siguientes pasos sirven para crear una aplicación `FlipView` y demostrar cómo depurar interactivamente un error de codificación de JavaScript.  
   
 > [!CAUTION]
->  La aplicación de muestra es una aplicación de la Tienda Windows. Sin embargo, las características de consola descritas aquí también se aplican a las aplicaciones creadas con Visual Studio Tools para Apache Cordova.  
+> La aplicación de muestra es una aplicación de la Tienda Windows. Sin embargo, las características de consola descritas aquí también se aplican a las aplicaciones creadas con Visual Studio Tools para Apache Cordova.  
   
 #### <a name="to-debug-javascript-code-in-the-flipview-app"></a>Para depurar código JavaScript en la aplicación FlipView  
   
@@ -182,7 +182,7 @@ Se aplica a Windows y Windows Phone] (.. /Image/windows_and_phone_content.png "w
      Copia y pega este código en el indicador de entrada de la Consola JavaScript.  
   
     > [!TIP]
-    >  Al pegar varias líneas de código en el indicador de entrada de la Consola JavaScript, este cambia automáticamente al modo de varias líneas. Puedes presionar Ctrl+Alt+M para activar y desactivar alternativamente el modo de varias líneas. Para ejecutar un script en modo de varias líneas, presiona Ctrl+Intro o elige el símbolo de flecha de la esquina inferior derecha de la ventana. Para obtener más información, consulta [Modo de una línea y modo de varias líneas en la ventana Consola JavaScript](#SinglelineMultilineMode).  
+    > Al pegar varias líneas de código en el indicador de entrada de la Consola JavaScript, este cambia automáticamente al modo de varias líneas. Puedes presionar Ctrl+Alt+M para activar y desactivar alternativamente el modo de varias líneas. Para ejecutar un script en modo de varias líneas, presiona Ctrl+Intro o elige el símbolo de flecha de la esquina inferior derecha de la ventana. Para obtener más información, consulta [Modo de una línea y modo de varias líneas en la ventana Consola JavaScript](#SinglelineMultilineMode).  
   
 12. Corrige las llamadas a funciones `push` en el indicador, reemplazando `pages.push` por `Data.items.setAt`. El código corregido debe ser similar a este:  
   
@@ -193,7 +193,7 @@ Se aplica a Windows y Windows Phone] (.. /Image/windows_and_phone_content.png "w
     ```  
   
     > [!TIP]
-    >  Si prefieres utilizar el objeto `pages` en lugar de `Data.items`, será necesario que establezcas un punto de interrupción en el código para mantener el objeto `pages` dentro del ámbito.  
+    > Si prefieres utilizar el objeto `pages` en lugar de `Data.items`, será necesario que establezcas un punto de interrupción en el código para mantener el objeto `pages` dentro del ámbito.  
   
 13. Elige el símbolo de flecha verde para ejecutar el script.  
   
@@ -283,4 +283,4 @@ Se aplica a Windows y Windows Phone] (.. /Image/windows_and_phone_content.png "w
  [Depuración de código de ejemplo HTML, CSS y JavaScript](../debugger/debug-html-css-and-javascript-sample-code.md)   
  [Inicio rápido: Depuración de HTML y CSS](../debugger/quickstart-debug-html-and-css.md)   
  [Depuración de un control WebView](../debugger/debug-a-webview-control.md)   
- [Compatibilidad de productos y accesibilidad](http://msdn.microsoft.com/library/tzbxw1af\(VS.120\).aspx)
+ [Compatibilidad de productos y accesibilidad](https://msdn.microsoft.com/library/tzbxw1af\(VS.120\).aspx)

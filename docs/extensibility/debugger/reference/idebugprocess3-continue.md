@@ -7,23 +7,26 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProcess3::Continue
 ms.assetid: 57506242-5763-4c08-adb9-8a78ce02cebb
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: fefbbbced72a53566ffb726c9ea900e037ee4639
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: a7d20a375644cbbac975f62db216377f271a2675
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56719345"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66314042"
 ---
 # <a name="idebugprocess3continue"></a>IDebugProcess3::Continue
 Continúa la ejecución de este proceso de un estado detenido. Se conserva ningún estado de ejecución anterior (por ejemplo, un paso), y el proceso comienza a ejecutarse de nuevo.
 
 > [!NOTE]
->  Este método debería usarse en lugar de [continuar](../../../extensibility/debugger/reference/idebugprogram2-continue.md).
+> Este método debería usarse en lugar de [continuar](../../../extensibility/debugger/reference/idebugprogram2-continue.md).
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -39,10 +42,9 @@ int Continue(
 );
 ```
 
-#### <a name="parameters"></a>Parámetros
- `pThread`
-
- [in] Un [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md) objeto que representa el subproceso se puede continuar.
+## <a name="parameters"></a>Parámetros
+`pThread`\
+[in] Un [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md) objeto que representa el subproceso se puede continuar.
 
 ## <a name="return-value"></a>Valor devuelto
  Si es correcto, devuelve `S_OK`; en caso contrario, devuelve el código de error.

@@ -20,12 +20,12 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 153773d27d4f27a6987f7984955dde26b187b65e
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 6d93d9f771da9387661603f3eb71301e9d9aead7
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60116522"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63427143"
 ---
 # <a name="walkthrough-creating-a-custom-bootstrapper-to-show-a-privacy-prompt"></a>Tutorial: Crear un arranque personalizado para mostrar un aviso de privacidad
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -128,7 +128,7 @@ Puede configurar las aplicaciones ClickOnce se actualizan automáticamente cuand
     6. En el **objeto Startup** menú desplegable, seleccione **Module1**.  
   
        > [!NOTE]
-       >  Al deshabilitar el marco de aplicación, deshabilitan características como los estilos visuales de Windows XP, los eventos de aplicación, pantalla de presentación, aplicación de instancia única y. Para obtener más información, consulte [Application Page, Project Designer (Visual Basic)](../ide/reference/application-page-project-designer-visual-basic.md).  
+       > Al deshabilitar el marco de aplicación, deshabilitan características como los estilos visuales de Windows XP, los eventos de aplicación, pantalla de presentación, aplicación de instancia única y. Para obtener más información, consulte [Application Page, Project Designer (Visual Basic)](../ide/reference/application-page-project-designer-visual-basic.md).  
   
        Visual C# sólo para programadores:  
   
@@ -154,12 +154,12 @@ Puede configurar las aplicaciones ClickOnce se actualizan automáticamente cuand
 1. Cree un directorio denominado **UpdateConsentDialog** en el %PROGRAMFILES%\Microsoft SDKs\Windows\v7.0A\Bootstrapper\Packages.  
   
     > [!NOTE]
-    >  Necesita privilegios administrativos para crear esta carpeta.  
+    > Necesita privilegios administrativos para crear esta carpeta.  
   
 2. En el directorio UpdateConsentDialog, cree un subdirectorio denominado es.  
   
     > [!NOTE]
-    >  Cree un nuevo directorio para cada configuración regional. Por ejemplo, puede agregar subdirectorios para las configuraciones regionales fr y de. Estos directorios contendría las cadenas de francés y alemán y paquetes de idioma, si es necesario.  
+    > Cree un nuevo directorio para cada configuración regional. Por ejemplo, puede agregar subdirectorios para las configuraciones regionales fr y de. Estos directorios contendría las cadenas de francés y alemán y paquetes de idioma, si es necesario.  
   
 #### <a name="step-2-to-create-the-productxml-manifest-file"></a>Paso 2: Para crear el archivo de manifiesto product.xml  
   
@@ -224,7 +224,7 @@ Puede configurar las aplicaciones ClickOnce se actualizan automáticamente cuand
 4. Cree un documento denominado eula.rtf para los términos de licencia del software.  
   
     > [!NOTE]
-    >  Los términos de licencia de software deben incluir información sobre licencias, garantía, responsabilidades y las leyes locales. Estos archivos deben ser específicos de la configuración regional, así que asegúrese de que el archivo se guarda en un formato que admita caracteres MBCS o UNICODE. Consulte su asesoría jurídica sobre el contenido de los términos de licencia del software.  
+    > Los términos de licencia de software deben incluir información sobre licencias, garantía, responsabilidades y las leyes locales. Estos archivos deben ser específicos de la configuración regional, así que asegúrese de que el archivo se guarda en un formato que admita caracteres MBCS o UNICODE. Consulte su asesoría jurídica sobre el contenido de los términos de licencia del software.  
   
 5. Guarde el documento en el subdirectorio en el directorio de arranque UpdateConsentDialog.  
   
@@ -244,7 +244,7 @@ Puede configurar las aplicaciones ClickOnce se actualizan automáticamente cuand
 4. Seleccione **actualizar cuadro de diálogo de consentimiento**.  
   
     > [!NOTE]
-    >  Es posible que deba cerrar y volver a abrir Visual Studio para ver el cuadro de diálogo de consentimiento Update en el cuadro de diálogo requisitos previos.  
+    > Es posible que deba cerrar y volver a abrir Visual Studio para ver el cuadro de diálogo de consentimiento Update en el cuadro de diálogo requisitos previos.  
   
 5. Haga clic en **Aceptar**.  
   

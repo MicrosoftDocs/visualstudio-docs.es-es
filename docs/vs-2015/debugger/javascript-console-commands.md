@@ -18,24 +18,24 @@ caps.latest.revision: 50
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: aeaba355e101bd8e48126bfa01f95668a37abe3e
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: d5c4223699c720750514aaf2b9abc18b34ae4269
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60081429"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65690593"
 ---
 # <a name="javascript-console-commands"></a>JavaScript Console commands
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Se aplica a Windows y Windows Phone] (.. /Image/windows_and_phone_content.png "windows_and_phone_content")  
   
- La ventana Consola JavaScript de Visual Studio te permite usar comandos para enviar mensajes y realizar otras tareas. Para obtener ejemplos que muestran cómo usar esa ventana, consulte [inicio rápido: Depurar JavaScript](../debugger/quickstart-debug-javascript-using-the-console.md). La información de este tema se aplica a las aplicaciones de la Tienda Windows, las aplicaciones de la Tienda de Windows Phone y las aplicaciones creadas con Visual Studio Tools para Apache Cordova. Para obtener información acerca sobre los comandos de consola compatibles en las aplicaciones de Cordova, vea [Debug Your App](http://msdn.microsoft.com/library/c2a4a1d4-a4e8-47ec-811f-ad207c54f4d1). Para obtener información sobre el uso de la consola con herramientas de F12 de Internet Explorer, consulte [este tema](http://msdn.microsoft.com/library/ie/dn255006.aspx).  
+ La ventana Consola JavaScript de Visual Studio te permite usar comandos para enviar mensajes y realizar otras tareas. Para obtener ejemplos que muestran cómo usar esa ventana, consulte [inicio rápido: Depurar JavaScript](../debugger/quickstart-debug-javascript-using-the-console.md). La información de este tema se aplica a las aplicaciones de la Tienda Windows, las aplicaciones de la Tienda de Windows Phone y las aplicaciones creadas con Visual Studio Tools para Apache Cordova. Para obtener información acerca sobre los comandos de consola compatibles en las aplicaciones de Cordova, vea [Debug Your App](https://msdn.microsoft.com/library/c2a4a1d4-a4e8-47ec-811f-ad207c54f4d1). Para obtener información sobre el uso de la consola con herramientas de F12 de Internet Explorer, consulte [este tema](https://msdn.microsoft.com/library/ie/dn255006.aspx).  
   
  Si la ventana Consola JavaScript está cerrada, puedes abrirla durante la depuración en Visual Studio si eliges **Depurar** > **Ventanas** > **Consola JavaScript**.  
   
 > [!NOTE]
->  Si la ventana no está disponible durante una sesión de depuración, asegúrese de que el tipo de depurador está establecido en **Script** en las propiedades de depuración del proyecto.  
+> Si la ventana no está disponible durante una sesión de depuración, asegúrese de que el tipo de depurador está establecido en **Script** en las propiedades de depuración del proyecto.  
   
 ## <a name="console-object-commands"></a>Comandos del objeto console  
  En esta tabla se muestra la sintaxis de los comandos del objeto `console` que puedes usar en la ventana Consola JavaScript o para enviar mensajes a la consola desde el código. Este objeto tiene varias formas que te permiten diferenciar, si quieres, los mensajes informativos de los mensajes de error.  
@@ -43,7 +43,7 @@ Se aplica a Windows y Windows Phone] (.. /Image/windows_and_phone_content.png "w
  Puedes usar la forma larga del comando `window.console.[command]` si tienes que evitar confusiones posibles con objetos locales cuyo nombre también sea console.  
   
 > [!TIP]
->  Las versiones anteriores de Visual Studio no admiten el conjunto completo de comandos. Use IntelliSense en el objeto de la consola para obtener información rápida sobre los comandos admitidos.  
+> Las versiones anteriores de Visual Studio no admiten el conjunto completo de comandos. Use IntelliSense en el objeto de la consola para obtener información rápida sobre los comandos admitidos.  
   
 |Comando|Descripción|Ejemplo|  
 |-------------|-----------------|-------------|  

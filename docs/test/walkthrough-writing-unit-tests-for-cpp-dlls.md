@@ -1,68 +1,67 @@
 ---
-title: Filtrar Escribir pruebas unitarias para archivos DLL de C++
-ms.date: 11/04/2017
+title: 'Procedimientos para: Escribir pruebas unitarias para archivos DLL de C++'
+ms.date: 06/13/2019
 ms.topic: conceptual
 ms.author: mblome
-manager: jillfra
+manager: markl
 ms.workload:
 - cplusplus
 author: mikeblome
-ms.openlocfilehash: 65bbaf015e2d4b0dc8dd66c33656e62c4b9b0102
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 1e9e77cd3b6cd02810873127bf9173eac80d7e74
+ms.sourcegitcommit: 044bb54cb4552c8f4651feb11d62e52726117e75
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55915978"
+ms.lasthandoff: 07/30/2019
+ms.locfileid: "68661909"
 ---
-# <a name="how-to-write-unit-tests-for-c-dlls"></a>Filtrar Escribir pruebas unitarias para archivos DLL de C++
+# <a name="how-to-write-unit-tests-for-c-dlls"></a>Procedimientos para: Escribir pruebas unitarias para archivos DLL de C++
 
-En este tutorial se describe cómo desarrollar una DLL de C++ nativa creando antes una prueba. Estos son los pasos básicos:
+En este tutorial se describe cómo desarrollar una DLL de C++ nativa creando antes una prueba. Los pasos básicos son los siguientes:
 
-1.  [Crear un proyecto de prueba nativo](#create_test_project). El proyecto de prueba está en la misma solución que el proyecto de DLL.
+1. [Crear un proyecto de prueba nativo](#create_test_project). El proyecto de prueba está en la misma solución que el proyecto de DLL.
 
-2.  [Crear un proyecto DLL](#create_dll_project). Este tutorial crea un nuevo archivo DLL, pero el procedimiento para probar una DLL existente es similar.
+2. [Crear un proyecto DLL](#create_dll_project). Este tutorial crea un nuevo archivo DLL, pero el procedimiento para probar una DLL existente es similar.
 
-3.  [Hacer visibles para las pruebas las funciones DLL](#make_functions_visible).
+3. [Hacer visibles para las pruebas las funciones DLL](#make_functions_visible).
 
-4.  [Aumentar de forma iterativa las pruebas](#iterate). Recomendamos un ciclo "rojo-verde-refactorizar" en el que el desarrollo del código lo dirigen las pruebas.
+4. [Aumentar de forma iterativa las pruebas](#iterate). Recomendamos un ciclo "rojo-verde-refactorizar" en el que el desarrollo del código lo dirigen las pruebas.
 
-5.  [Depurar errores de las pruebas](#debug). Puede ejecutar pruebas en modo de depuración.
+5. [Depurar errores de las pruebas](#debug). Puede ejecutar pruebas en modo de depuración.
 
-6.  [Refactorizar mientras mantiene las pruebas sin cambios](#refactor). Refactorizar significa mejorar la estructura del código sin cambiar su comportamiento externo. Puede hacerlo para mejorar el rendimiento, la extensibilidad o la legibilidad del código. Dado que la intención es no cambiar el comportamiento, no cambie las pruebas al realizar un cambio de refactorización en el código. Las pruebas le permiten asegurarse de que no crea nuevos errores mientras realiza la tarea de refactorizar.
+6. [Refactorizar mientras mantiene las pruebas sin cambios](#refactor). Refactorizar significa mejorar la estructura del código sin cambiar su comportamiento externo. Puede hacerlo para mejorar el rendimiento, la extensibilidad o la legibilidad del código. Dado que la intención es no cambiar el comportamiento, no cambie las pruebas al realizar un cambio de refactorización en el código. Las pruebas le permiten asegurarse de que no crea nuevos errores mientras realiza la tarea de refactorizar.
 
-7.  [Comprobar cobertura](using-code-coverage-to-determine-how-much-code-is-being-tested.md). Las pruebas unitarias son más útiles cuanto más código ponen a prueba. Puede detectar qué partes del código han utilizado las pruebas.
+7. [Comprobar cobertura](using-code-coverage-to-determine-how-much-code-is-being-tested.md). Las pruebas unitarias son más útiles cuanto más código ponen a prueba. Puede detectar qué partes del código han utilizado las pruebas.
 
-8.  [Aislar las unidades de los recursos externos](using-stubs-to-isolate-parts-of-your-application-from-each-other-for-unit-testing.md). Normalmente, un archivo DLL depende de otros componentes del sistema que está desarrollando, como otros archivos DLL, bases de datos o subsistemas remotos. Es útil probar cada unidad aislada de sus dependencias. Los componentes externos pueden ralentizar las pruebas. Durante el desarrollo, los demás componentes podrían no estar completos.
+8. [Aislar las unidades de los recursos externos](using-stubs-to-isolate-parts-of-your-application-from-each-other-for-unit-testing.md). Normalmente, un archivo DLL depende de otros componentes del sistema que está desarrollando, como otros archivos DLL, bases de datos o subsistemas remotos. Es útil probar cada unidad aislada de sus dependencias. Los componentes externos pueden ralentizar las pruebas. Durante el desarrollo, los demás componentes podrían no estar completos.
 
-##  <a name="create_test_project"></a> Crear un proyecto de prueba unitaria nativo
+## <a name="create_test_project"></a> Crear un proyecto de prueba unitaria nativo
 
-1.  En el menú **Archivo**, seleccione **Nuevo** > **Proyecto**.
+1. En el menú **Archivo**, seleccione **Nuevo** > **Proyecto**.
 
-     En el cuadro de diálogo, expanda **Instalado** > **Plantillas** > **Visual C++** > **Prueba**.
+     **Visual Studio 2017 y versiones anteriores**: Expanda **Instalado** > **Plantillas** > **Visual C++**  > **Prueba**.
+     **Visual Studio 2019**: Establezca el valor de **Lenguaje** en C++ y escriba "prueba" en el cuadro de búsqueda.
 
      Elija la plantilla **Proyecto de prueba unitaria de tipo nativo** o el marco instalado que prefiera. Si elige otra plantilla (como Google Test o Boost.Test), los principios básicos son los mismos, aunque algunos detalles variarán.
 
      En este tutorial, el proyecto de prueba se llama `NativeRooterTest`.
 
-     ![Creación de un proyecto de prueba unitaria de C++](../test/media/utecpp01.png)
-
-2.  En el nuevo proyecto, inspeccione **unittest1.cpp**.
+2. En el nuevo proyecto, inspeccione **unittest1.cpp**.
 
      ![Proyecto de prueba con TEST&#95;CLASS y TEST&#95;METHOD](../test/media/utecpp2.png)
 
-     Tenga en cuenta que:
+     Tenga en lo siguiente:
 
-    -   Cada prueba se define mediante `TEST_METHOD(YourTestName){...}`.
+    - Cada prueba se define mediante `TEST_METHOD(YourTestName){...}`.
 
          No es necesario escribir una firma de función convencional. La firma se crea mediante la macro TEST_METHOD. La macro genera una función de la instancia que devuelve void. También genera una función estática que devuelve información sobre el método de prueba. Esta información permite al Explorador de pruebas encontrar el método.
 
-    -   Los métodos de prueba se agrupan en clases mediante el uso de `TEST_CLASS(YourClassName){...}`.
+    - Los métodos de prueba se agrupan en clases mediante el uso de `TEST_CLASS(YourClassName){...}`.
 
          Cuando se ejecutan las pruebas, se crea una instancia de cada clase de prueba. Se llama a los métodos de prueba en un orden no especificado. Puede definir métodos especiales que se invocan antes y después de cada módulo, clase o método.
 
-3.  Compruebe que las pruebas se ejecutan en el Explorador de pruebas:
+3. Compruebe que las pruebas se ejecutan en el Explorador de pruebas:
 
-    1.  Inserte código de prueba:
+    1. Inserte código de prueba:
 
         ```cpp
         TEST_METHOD(TestMethod1)
@@ -73,7 +72,7 @@ En este tutorial se describe cómo desarrollar una DLL de C++ nativa creando ant
 
          Tenga en cuenta que la clase `Assert` proporciona varios métodos estáticos que puede usar para comprobar los resultados de los métodos de prueba.
 
-    2.  En el menú **Prueba**, elija **Ejecutar** > **Todas las pruebas**.
+    2. En el menú **Prueba**, elija **Ejecutar** > **Todas las pruebas**.
 
          La prueba se compila y ejecuta.
 
@@ -83,27 +82,29 @@ En este tutorial se describe cómo desarrollar una DLL de C++ nativa creando ant
 
          ![Explorador de pruebas unitarias con una prueba superada](../test/media/utecpp04.png)
 
-##  <a name="create_dll_project"></a> Crear un proyecto DLL
+## <a name="create_dll_project"></a> Crear un proyecto DLL
 
-1.  Cree un proyecto de **Visual C++** usando la plantilla **Proyecto Win32** .
+::: moniker range="vs-2019"
+
+En los pasos que hay a continuación se muestra cómo crear un proyecto de DLL en Visual Studio 2019.
+
+1. Cree un proyecto de C++ con el **Asistente para escritorio de Windows**: Haga clic con el botón derecho en la solución en el **Explorador de soluciones** y elija **Agregar** > **Nuevo proyecto**. Establezca el valor de **Lenguaje** en C++ y escriba "windows" en el cuadro de búsqueda. Elija **Asistente para escritorio de Windows** en la lista de resultados.
 
      En este tutorial, el proyecto se llama `RootFinder`.
 
-     ![Creación de un proyecto Win32 de C++](../test/media/utecpp05.png)
-
-2.  Seleccione **DLL** y **Exportar símbolos** en el asistente para aplicaciones Win32.
+2. Presione **Crear**. En el cuadro de diálogo siguiente, en **Tipo de aplicación**, elija **biblioteca de vínculos dinámicos (DLL)** y marque también **Exportar símbolos**.
 
      La opción **Exportar símbolos** genera una cómoda macro que puede utilizar para declarar métodos exportados.
 
-     ![Asistente para proyectos de C++ con las opciones de DLL y de exportar símbolos](../test/media/utecpp06.png)
+     ![Asistente para proyectos de C++ con las opciones de DLL y de exportar símbolos](../test/media/vs-2019/windows-desktop-project-dll.png)
 
-3.  Declare una función exportada en el archivo *.h* principal:
+3. Declare una función exportada en el archivo *.h* principal:
 
      ![Nuevo proyecto de código DLL y archivo .h con macros de API](../test/media/utecpp07.png)
 
      El declarador `__declspec(dllexport)` hace que los miembros públicos y protegidos de la clase sean visibles fuera del archivo DLL. Para obtener más información, consulta [Using dllimport and dllexport in C++ Classes](/cpp/cpp/using-dllimport-and-dllexport-in-cpp-classes).
 
-4.  En el archivo *.cpp* principal, agregue un cuerpo mínimo para la función:
+4. En el archivo *.cpp* principal, agregue un cuerpo mínimo para la función:
 
     ```cpp
         // Find the square root of a number.
@@ -113,17 +114,47 @@ En este tutorial se describe cómo desarrollar una DLL de C++ nativa creando ant
         }
     ```
 
-##  <a name="make_functions_visible"></a> Acoplar el proyecto de prueba al proyecto DLL
+::: moniker-end
+
+::: moniker range="vs-2017"
+
+En los pasos que hay a continuación se muestra cómo crear un proyecto de DLL en Visual Studio 2017.
+
+1. Cree un proyecto de Visual C++ usando la plantilla **Proyecto Win32**.
+
+     En este tutorial, el proyecto se llama `RootFinder`.
+
+2. Seleccione **DLL** y **Exportar símbolos** en el asistente para aplicaciones Win32.
+
+     La opción **Exportar símbolos** genera una cómoda macro que puede utilizar para declarar métodos exportados.
+
+     ![Asistente para proyectos de C++ con las opciones de DLL y de exportar símbolos](../test/media/utecpp06.png)
+
+3. Declare una función exportada en el archivo *.h* principal:
+
+     ![Nuevo proyecto de código DLL y archivo .h con macros de API](../test/media/utecpp07.png)
+
+     El declarador `__declspec(dllexport)` hace que los miembros públicos y protegidos de la clase sean visibles fuera del archivo DLL. Para obtener más información, consulta [Using dllimport and dllexport in C++ Classes](/cpp/cpp/using-dllimport-and-dllexport-in-cpp-classes).
+
+4. En el archivo *.cpp* principal, agregue un cuerpo mínimo para la función:
+
+    ```cpp
+        // Find the square root of a number.
+        double CRootFinder::SquareRoot(double v)
+        {
+            return 0.0;
+        }
+    ```
+
+::: moniker-end
+
+## <a name="make_functions_visible"></a> Acoplar el proyecto de prueba al proyecto DLL
 
 1. Agregue el proyecto DLL a las referencias del proyecto de prueba:
 
-   1.  Abra las propiedades del proyecto de prueba y elija **Propiedades comunes** > **Marco de trabajo y referencias**.
+   1. Haga clic con el botón derecho en el nodo de proyecto de prueba en el **Explorador de soluciones** y elija **Agregar** > **Referencia**.
 
-        ![Propiedades del proyecto de C++ | Marco de trabajo y referencias](../test/media/utecpp08.png)
-
-   2.  Elija **Agregar nueva referencia**.
-
-        En el cuadro de diálogo **Agregar referencia** , seleccione el proyecto DLL y elija **Agregar**.
+   2. En el cuadro de diálogo **Agregar referencia** , seleccione el proyecto DLL y elija **Agregar**.
 
         ![Propiedades del proyecto de C++ | Agregar nueva referencia](../test/media/utecpp09.png)
 
@@ -163,9 +194,9 @@ En este tutorial se describe cómo desarrollar una DLL de C++ nativa creando ant
 
    Ha configurado la prueba y los proyectos de código, y ha verificado que puede ejecutar las pruebas que ejecutan funciones en el proyecto de código. Ahora puede empezar a escribir pruebas y código reales.
 
-##  <a name="iterate"></a> Aumentar las pruebas de forma interactiva y comprobar si se superan
+## <a name="iterate"></a> Aumentar las pruebas de forma interactiva y comprobar si se superan
 
-1.  Agregue una nueva prueba:
+1. Agregue una nueva prueba:
 
     ```cpp
     TEST_METHOD(RangeTest)
@@ -184,7 +215,7 @@ En este tutorial se describe cómo desarrollar una DLL de C++ nativa creando ant
     >
     > Cuando los usuarios cambien los requisitos, deshabilite las pruebas que ya no son correctas. Escriba nuevas pruebas y hágalas funcionar una a una de la misma manera incremental.
 
-2.  Compile la solución y, en el **Explorador de pruebas**, elija **Ejecutar todo**.
+2. Compile la solución y, en el **Explorador de pruebas**, elija **Ejecutar todo**.
 
      Se produce un error en la nueva prueba.
 
@@ -193,7 +224,7 @@ En este tutorial se describe cómo desarrollar una DLL de C++ nativa creando ant
     > [!TIP]
     > Compruebe que todas las pruebas producen un error inmediatamente después de escribirlas. Esto ayuda a evitar el error habitual de escribir una prueba que nunca falla.
 
-3.  Mejore el código de DLL de forma que supere la nueva prueba:
+3. Mejore el código de DLL de forma que supere la nueva prueba:
 
     ```cpp
     #include <math.h>
@@ -212,7 +243,7 @@ En este tutorial se describe cómo desarrollar una DLL de C++ nativa creando ant
     }
     ```
 
-4.  Compile la solución y, en el **Explorador de pruebas**, elija **Ejecutar todo**.
+4. Compile la solución y, en el **Explorador de pruebas**, elija **Ejecutar todo**.
 
      Ambas pruebas quedan superadas.
 
@@ -221,9 +252,9 @@ En este tutorial se describe cómo desarrollar una DLL de C++ nativa creando ant
     > [!TIP]
     > Desarrolle código agregando pruebas una a una. Asegúrese de que se pasan todas las pruebas después de cada iteración.
 
-##  <a name="debug"></a> Depurar una prueba fallida
+## <a name="debug"></a> Depurar una prueba fallida
 
-1.  Agregue otra prueba:
+1. Agregue otra prueba:
 
     ```cpp
     #include <stdexcept>
@@ -256,23 +287,23 @@ En este tutorial se describe cómo desarrollar una DLL de C++ nativa creando ant
     }
     ```
 
-2.  Compile la solución y elija **Ejecutar todo**.
+2. Compile la solución y elija **Ejecutar todo**.
 
-3.  Abra o haga doble clic en la prueba con errores.
+3. Abra o haga doble clic en la prueba con errores.
 
      Se resalta el error de aserción. El mensaje de error es visible en el panel de detalles del **Explorador de pruebas**.
 
      ![Se ha producido un error en las pruebas NegativeRangeTests](../test/media/ute_cpp_testexplorer_negativerangetest_fail.png)
 
-4.  Para ver por qué se produce el error, revise la función:
+4. Para ver por qué se produce el error, revise la función:
 
-    1.  Establezca un punto de interrupción al principio de la función SquareRoot.
+    1. Establezca un punto de interrupción al principio de la función SquareRoot.
 
-    2.  En el menú contextual de la prueba no superada, elija **Depurar pruebas seleccionadas**.
+    2. En el menú contextual de la prueba no superada, elija **Depurar pruebas seleccionadas**.
 
          Cuando la ejecución se detiene en el punto de interrupción, revise paso a paso el código.
 
-5.  Inserte código en la función que está desarrollando:
+5. Inserte código en la función que está desarrollando:
 
     ```cpp
 
@@ -288,17 +319,27 @@ En este tutorial se describe cómo desarrollar una DLL de C++ nativa creando ant
 
     ```
 
-6.  Ahora, todas las pruebas pasan.
+6. Ahora, todas las pruebas pasan.
 
-     ![Todas las pruebas se realizan correctamente](../test/media/ute_ult_alltestspass.png)
+   ![Todas las pruebas se realizan correctamente](../test/media/ute_ult_alltestspass.png)
+
+::: moniker range="vs-2017"
 
 > [!TIP]
 > Si las pruebas individuales no tienen ninguna dependencia que impida que se ejecuten en cualquier orden, active la ejecución de pruebas paralelas con el botón de alternancia ![UTE&#95;parallelicon&#45;small](../test/media/ute_parallelicon-small.png) en la barra de herramientas. Esto puede reducir considerablemente el tiempo necesario para ejecutar todas las pruebas.
 
+::: moniker-end
 
-##  <a name="refactor"></a> Refactorizar el código sin cambiar las pruebas
+::: moniker range=">=vs-2019"
 
-1.  Simplifique el cálculo central en la función SquareRoot:
+> [!TIP]
+> Si las pruebas individuales no tienen ninguna dependencia que impida que se ejecuten en cualquier orden, active la ejecución de pruebas paralelas en el menú de configuración de la barra de herramientas. Esto puede reducir considerablemente el tiempo necesario para ejecutar todas las pruebas.
+
+::: moniker-end
+
+## <a name="refactor"></a> Refactorizar el código sin cambiar las pruebas
+
+1. Simplifique el cálculo central en la función SquareRoot:
 
     ```cpp
     // old code:
@@ -308,7 +349,7 @@ En este tutorial se describe cómo desarrollar una DLL de C++ nativa creando ant
 
     ```
 
-2.  Compile la solución y elija **Ejecutar todo**para asegurarse de que no se ha introducido un error.
+2. Compile la solución y elija **Ejecutar todo**para asegurarse de que no se ha introducido un error.
 
     > [!TIP]
     > Un buen conjunto de pruebas unitarias le da la seguridad de que no ha introducido errores al cambiar el código.
@@ -317,13 +358,13 @@ En este tutorial se describe cómo desarrollar una DLL de C++ nativa creando ant
 
 ## <a name="next-steps"></a>Pasos siguientes
 
--   **Aislamiento.** La mayoría de las DLL dependen de otros subsistemas, como bases de datos y otros archivos DLL. Estos componentes a menudo se desarrollan en paralelo. Para permitir la realización de pruebas unitarias mientras los demás componentes no están disponibles, debe sustituir mock o
+- **Aislamiento.** La mayoría de las DLL dependen de otros subsistemas, como bases de datos y otros archivos DLL. Estos componentes a menudo se desarrollan en paralelo. Para permitir la realización de pruebas unitarias mientras los demás componentes no están disponibles, debe sustituir mock o
 
--   **Pruebas de comprobación de la compilación.** Puede realizar pruebas en el servidor de compilación de su equipo a intervalos establecidos. Esto garantiza que no se producen errores cuando se integra el trabajo de varios miembros del equipo.
+- **Pruebas de comprobación de la compilación.** Puede realizar pruebas en el servidor de compilación de su equipo a intervalos establecidos. Esto garantiza que no se producen errores cuando se integra el trabajo de varios miembros del equipo.
 
--   **Pruebas de protección.** Puede exigir que se realicen algunas pruebas antes de que cualquier miembro del equipo proteja código en el control de código fuente. Normalmente, se trata de un subconjunto de las pruebas de comprobación.
+- **Pruebas de protección.** Puede exigir que se realicen algunas pruebas antes de que cualquier miembro del equipo proteja código en el control de código fuente. Normalmente, se trata de un subconjunto de las pruebas de comprobación.
 
-     También puede asignar un nivel mínimo de cobertura de código.
+   También puede asignar un nivel mínimo de cobertura de código.
 
 ## <a name="see-also"></a>Vea también
 

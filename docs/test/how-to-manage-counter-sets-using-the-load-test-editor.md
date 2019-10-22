@@ -13,14 +13,14 @@ ms.assetid: 64315c2f-a0b2-4378-be16-0774b99beef5
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ae61b261e9a613a2eee9ca8baca24773253a6df8
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 4ca910038e35ee65e6d97999f08013f398eaec9e
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55936036"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62950128"
 ---
-# <a name="how-to-manage-counter-sets-using-the-load-test-editor"></a>Filtrar para administrar conjuntos de contadores mediante el Editor de pruebas de carga
+# <a name="how-to-manage-counter-sets-using-the-load-test-editor"></a>Procedimiento para administrar conjuntos de contadores mediante el Editor de pruebas de carga
 
 Cuando se crea una prueba de carga con el **Asistente para prueba de carga nueva**, se agrega un conjunto de contadores inicial. Este conjunto inicial de contadores ofrece una serie de conjuntos de contadores predefinidos para la prueba de carga.
 
@@ -35,9 +35,9 @@ La administración de conjuntos de contadores implica la elección del conjunto 
 
 ## <a name="to-manage-counter-sets"></a>Para administrar conjuntos de contadores
 
-1.  Abra una prueba de carga.
+1. Abra una prueba de carga.
 
-2.  Elija el botón **Administrar conjuntos de contadores**.
+2. Elija el botón **Administrar conjuntos de contadores**.
 
      -O bien-
 
@@ -45,20 +45,20 @@ La administración de conjuntos de contadores implica la elección del conjunto 
 
      Se muestra el cuadro de diálogo **Administrar conjuntos de contadores**.
 
-3.  (Opcional) En el cuadro de lista **Los conjuntos de contadores y equipos seleccionados se agregarán debajo de los siguientes parámetros de ejecución**, seleccione otro parámetro de ejecución.
+3. (Opcional) En el cuadro de lista **Los conjuntos de contadores y equipos seleccionados se agregarán debajo de los siguientes parámetros de ejecución**, seleccione otro parámetro de ejecución.
 
     > [!NOTE]
     > Esto último sólo se aplica si se tiene más de un parámetro de ejecución en la prueba de carga.
 
-4.  (Opcional) Elija **Agregar equipo** para agregar un nuevo equipo con el fin de supervisarlo. Se le solicitará un nombre. Escriba el nombre de un equipo y verá los nodos que puede seleccionar bajo la nueva entrada. Por ejemplo, **ASP.NET**, **IIS**, **SQL** y otros. Active las casillas situadas delante de los nodos que desee seleccionar. Los nuevos contadores aparecen en el panel **Vista previa de las selecciones**.
+4. (Opcional) Elija **Agregar equipo** para agregar un nuevo equipo con el fin de supervisarlo. Se le solicitará un nombre. Escriba el nombre de un equipo y verá los nodos que puede seleccionar bajo la nueva entrada. Por ejemplo, **ASP.NET**, **IIS**, **SQL** y otros. Active las casillas situadas delante de los nodos que desee seleccionar. Los nuevos contadores aparecen en el panel **Vista previa de las selecciones**.
 
-5.  (Opcional) En el cuadro de texto **Etiquetas de equipo**, escriba una etiqueta para asociarla al equipo. Por ejemplo, "MáquinaPruebas12 en lab3."
+5. (Opcional) En el cuadro de texto **Etiquetas de equipo**, escriba una etiqueta para asociarla al equipo. Por ejemplo, "MáquinaPruebas12 en lab3."
 
      Las etiquetas de equipo permiten identificar un equipo con un nombre fácil de reconocer.
 
      Las etiquetas se muestran en el nodo **Asignaciones de conjuntos de contadores** del árbol en el Editor de pruebas de carga. Lo que es más importante, las etiquetas se muestran en los informes de Excel, que sirve de ayuda a las partes interesadas para identificar el rol que desempeña el equipo en la prueba de carga. Por ejemplo, "Servidor1 web en lab2" o "SQL Server2 en oficina Phoenix". Para obtener más información, vea [Informar de los resultados de las pruebas de carga para las comparaciones de pruebas o los análisis de tendencias](../test/compare-load-test-results.md).
 
-6.  Elija **Aceptar**.
+6. Elija **Aceptar**.
 
 ## <a name="see-also"></a>Vea también
 

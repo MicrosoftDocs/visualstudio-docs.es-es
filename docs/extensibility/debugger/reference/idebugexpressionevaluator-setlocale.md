@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugExpressionEvaluator::SetLocale method
 ms.assetid: d3d2027d-74e2-4ae6-bcc7-59d12f873b7c
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 582dd3b7aa024bcbf4913f6807ea9b2153a46719
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 18d0dbde0d04dcdf42b3e1fbd19841645036e5bf
+ms.sourcegitcommit: 748d9cd7328a30f8c80ce42198a94a4b5e869f26
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56681119"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "66325665"
 ---
 # <a name="idebugexpressionevaluatorsetlocale"></a>IDebugExpressionEvaluator::SetLocale
 Este método establece el idioma que se usará para crear resultados imprimibles.
@@ -36,10 +39,9 @@ int SetLocale(
 );
 ```
 
-#### <a name="parameters"></a>Parámetros
- `wLangID`
-
- [in] El identificador de idioma.
+## <a name="parameters"></a>Parámetros
+`wLangID`\
+[in] El identificador de idioma.
 
 ## <a name="return-value"></a>Valor devuelto
  Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.

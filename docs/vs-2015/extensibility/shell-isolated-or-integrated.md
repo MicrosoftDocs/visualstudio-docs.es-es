@@ -14,12 +14,12 @@ ms.assetid: c64a9bf0-9bf8-45c3-8fa2-306fa6cab66a
 caps.latest.revision: 26
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 17da1ff036227b50e507fd564618c4f53cf430c3
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: d570c181125a1f94108624e6f9b1ce23bdcca25a
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60116386"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63447221"
 ---
 # <a name="shell-isolated-or-integrated"></a>Shell (aislado o integrado)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,7 +34,7 @@ Puede crear su propia aplicación basada en Visual Studio en modo integrado o ai
  La versión redistribuible del shell integrado de Visual Studio no incluye lenguajes de programación y las características que admiten sus sistemas de proyecto respectivos.  
   
 > [!NOTE]
->  El modo integrado de shell de Visual Studio se puede instalar junto con todas las ediciones de Visual Studio, excepto las ediciones Express.  
+> El modo integrado de shell de Visual Studio se puede instalar junto con todas las ediciones de Visual Studio, excepto las ediciones Express.  
   
  Para obtener más información, consulte [Visual Studio Shell (integrado)](../extensibility/visual-studio-shell-integrated.md).  
   
@@ -47,12 +47,12 @@ Puede crear su propia aplicación basada en Visual Studio en modo integrado o ai
  Con el fin de distribuir la aplicación de shell integrado o aislado, deberá incluir la aplicación, un especial shell integrado o aislado redistribuible y un programa de instalación. Para obtener más información acerca de la distribución e instalación, consulte [distribuir aplicaciones de Shell aislado](../extensibility/distributing-isolated-shell-applications.md).  
   
 > [!IMPORTANT]
->  El [contrato de licencia de usuario final (CLUF)](https://www.visualstudio.com/support/legal/mt171552) integrado y aislado de Visual Studio shells incluye una sección acerca de la recopilación de datos (**sección 3. Datos**).  Describe los datos de uso de cliente que se pueden recopilar mediante Microsoft de los usuarios de que el software de shell integrado o aislado que se genera en la aplicación. Para obtener más información, consulte [Microsoft Visual Studio declaración familia de productos privacidad](https://www.visualstudio.com/dn948229).  
+> El [contrato de licencia de usuario final (CLUF)](https://www.visualstudio.com/support/legal/mt171552) integrado y aislado de Visual Studio shells incluye una sección acerca de la recopilación de datos (**sección 3. Datos**).  Describe los datos de uso de cliente que se pueden recopilar mediante Microsoft de los usuarios de que el software de shell integrado o aislado que se genera en la aplicación. Para obtener más información, consulte [Microsoft Visual Studio declaración familia de productos privacidad](https://www.visualstudio.com/dn948229).  
 > 
->  Si recopila datos de uso independiente de sus clientes a través de la aplicación, debe proporcionar aviso adecuado a los usuarios de la aplicación de lo que recopila.  Al distribuir el software de shell aislado o integrado como parte de la aplicación, según la licencia del Kit de desarrollo de Software de Visual Studio, debe incluir uno de los siguientes:  
+> Si recopila datos de uso independiente de sus clientes a través de la aplicación, debe proporcionar aviso adecuado a los usuarios de la aplicación de lo que recopila.  Al distribuir el software de shell aislado o integrado como parte de la aplicación, según la licencia del Kit de desarrollo de Software de Visual Studio, debe incluir uno de los siguientes:  
 > 
 > - el contrato de licencia de usuario final como parte de su licencia de aplicación  
->   - sus propios términos de licencia que requiere que los clientes que acepten los términos que protección la Visual Studio integrado o aislado shell al menos tanta como los términos de licencia de usuario final de Microsoft para el software de shell  
+> - sus propios términos de licencia que requiere que los clientes que acepten los términos que protección la Visual Studio integrado o aislado shell al menos tanta como los términos de licencia de usuario final de Microsoft para el software de shell  
   
 ## <a name="additional-resources"></a>Recursos adicionales  
  Para obtener más información acerca de los paquetes redistribuibles, consulte el [descargas de Visual Studio Extensibility](http://go.microsoft.com/fwlink/?LinkID=119298) sitio Web.  

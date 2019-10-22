@@ -7,12 +7,12 @@ ms.topic: conceptual
 ms.assetid: 5233d3ff-6e89-4401-b449-51b4686becca
 caps.latest.revision: 33
 manager: jillfra
-ms.openlocfilehash: 3118ce72cd75baaf15fc66eedc5f2cd48c6f43d6
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 0b29728cffc962b5d09a5adc45f8cac2093b020a
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60096600"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67825680"
 ---
 # <a name="making-custom-projects-version-aware"></a>Crear proyectos personalizados con identificación de versión
 En el sistema del proyecto personalizado, puede permitir que los proyectos de ese tipo se carguen en varias versiones de Visual Studio. También puede evitar que los proyectos de ese tipo se carguen en una versión anterior de Visual Studio. Además, puede permitir que ese proyecto se identifique en una versión posterior en caso de que el proyecto necesite reparación, conversión o degradación.  
@@ -37,7 +37,7 @@ En el sistema del proyecto personalizado, puede permitir que los proyectos de es
 6. `VSPUVF_PROJECT_DEPRECATED`: Indica que ya no se admite este proyecto.  
   
 > [!NOTE]
->  Para evitar confusiones, no combine marcas de actualización cuando las establezca. Por ejemplo, no cree un estado de actualización ambiguo como `VSPUVF_PROJECT_SAFEREPAIR | VSPUVF_PROJECT_DEPRECATED`.  
+> Para evitar confusiones, no combine marcas de actualización cuando las establezca. Por ejemplo, no cree un estado de actualización ambiguo como `VSPUVF_PROJECT_SAFEREPAIR | VSPUVF_PROJECT_DEPRECATED`.  
   
  Los tipos de proyecto pueden implementar la función `UpgradeProjectFlavor_CheckOnly` desde la interfaz `IVsProjectFlavorUpgradeViaFactory2` . Para usar esta función, la implementación de `IVsProjectUpgradeViaFactory4.UpgradeProject_CheckOnly` que se ha mencionado anteriormente debe llamarla. Esta llamada ya se ha implementado en el sistema de proyectos base de Visual Basic o C#. El efecto de esta función permite que los tipos de proyecto puedan determinar también los requisitos de actualización de un proyecto, además de lo que ha determinado el sistema de proyecto base. El cuadro de diálogo de compatibilidad muestra el más grave de los dos requisitos.  
   
@@ -72,7 +72,7 @@ En el sistema del proyecto personalizado, puede permitir que los proyectos de es
      Si implementa este código, aparecerá un cuadro de diálogo de compatibilidad del proyecto. En el cuadro de diálogo se pide permiso al usuario para marcar todos los proyectos especificados como incompatibles. Si el usuario acepta, `AskForUserConsentToBreakAssetCompat` devuelve `S_OK`; en caso contrario, `AskForUserConsentToBreakAssetCompat` devuelve `OLE_E_PROMPTSAVECANCELLED`.  
   
     > [!WARNING]
-    >  En los escenarios más habituales, la matriz `IVsHierarchy` contendrá un único elemento.  
+    > En los escenarios más habituales, la matriz `IVsHierarchy` contendrá un único elemento.  
   
 3. Si `AskForUserConsentToBreakAssetCompat` devuelve `S_OK`, el componente realiza o acepta los cambios que interrumpen la compatibilidad.  
   
@@ -98,7 +98,7 @@ En el sistema del proyecto personalizado, puede permitir que los proyectos de es
      Para obtener más información, consulta <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy.SetProperty%2A>.  
   
 > [!IMPORTANT]
->  Debe implementar la propiedad `VSHPROPID_MinimumDesignTimeCompatVersion` para marcar un proyecto como compatible o incompatible. Por ejemplo, si el sistema de proyectos usa un archivo de proyecto MSBuild, agregue al archivo de proyecto una propiedad de compilación `<MinimumVisualStudioVersion>` que tenga un valor igual al valor de propiedad `VSHPROPID_MinimumDesignTimeCompatVersion` correspondiente.  
+> Debe implementar la propiedad `VSHPROPID_MinimumDesignTimeCompatVersion` para marcar un proyecto como compatible o incompatible. Por ejemplo, si el sistema de proyectos usa un archivo de proyecto MSBuild, agregue al archivo de proyecto una propiedad de compilación `<MinimumVisualStudioVersion>` que tenga un valor igual al valor de propiedad `VSHPROPID_MinimumDesignTimeCompatVersion` correspondiente.  
   
 ## <a name="detecting-whether-a-project-is-incompatible"></a>Detectar si un proyecto es incompatible  
  Debe impedirse que se cargue un proyecto incompatible con la versión actual de Visual Studio. Además, un proyecto incompatible no se puede cargar ni reparar. Por lo tanto, la compatibilidad de un proyecto se debe comprobar dos veces: la primera, cuando se está considerando para actualización o reparación y la segunda, antes de que se cargue.  
@@ -120,16 +120,16 @@ IVsProjectUpgradeViaFactory::UpgradeProject_CheckOnly(
   
  Si este método establece `pUpgradeRequired` en TRUE y devuelve `S_OK`, el resultado se trata como "Actualización" y como si el método hubiera establecido una marca de actualización en el valor `VSPUVF_PROJECT_ONEWAYUPGRADE`, que se describe más adelante en este tema. Los siguientes valores devueltos son compatibles usando este método anterior, pero solo cuando `pUpgradeRequired` se establece en TRUE:  
   
-1. `VS_S_PROJECT_SAFEREPAIRREQUIRED`. Este valor devuelto traduce el valor de `pUpgradeRequired` a TRUE como equivalente a `VSPUVF_PROJECT_SAFEREPAIR`, que se describe más adelante en este tema.  
+1. `VS_S_PROJECT_SAFEREPAIRREQUIRED` Este valor devuelto traduce el valor de `pUpgradeRequired` a TRUE como equivalente a `VSPUVF_PROJECT_SAFEREPAIR`, que se describe más adelante en este tema.  
   
 2. `VS_S_PROJECT_UNSAFEREPAIRREQUIRED`. Este valor devuelto traduce el valor de `pUpgradeRequired` a TRUE como equivalente a `VSPUVF_PROJECT_UNSAFEREPAIR`, que se describe más adelante en este tema.  
   
-3. `VS_S_PROJECT_ONEWAYUPGRADEREQUIRED`. Este valor devuelto traduce el valor de `pUpgradeRequired` a TRUE como equivalente a `VSPUVF_PROJECT_ONEWAYUPGRADE`, que se describe más adelante en este tema.  
+3. `VS_S_PROJECT_ONEWAYUPGRADEREQUIRED` Este valor devuelto traduce el valor de `pUpgradeRequired` a TRUE como equivalente a `VSPUVF_PROJECT_ONEWAYUPGRADE`, que se describe más adelante en este tema.  
   
    Las nuevas implementaciones en `IVsProjectUpgradeViaFactory4` y `IVsProjectFlavorUpgradeViaFactory2` permiten especificar el tipo de migración con más precisión.  
   
 > [!NOTE]
->  Puede almacenar en caché el resultado de la comprobación de compatibilidad mediante el método `UpgradeProject_CheckOnly` para que se pueda usar también por la llamada subsiguiente a `CreateProject`.  
+> Puede almacenar en caché el resultado de la comprobación de compatibilidad mediante el método `UpgradeProject_CheckOnly` para que se pueda usar también por la llamada subsiguiente a `CreateProject`.  
   
  Por ejemplo, si los métodos `UpgradeProject_CheckOnly` y `CreateProject` que están escritos para un sistema de proyectos [!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)] con SP1 examinan un archivo de proyecto y observan que la propiedad de compilación `<MinimumVisualStudioVersion>` es "11.0", Visual Studio 2010 con SP1 no cargará el proyecto. Además, el **navegador de soluciones** indicará que el proyecto es "incompatible" y no lo cargará.  
   
@@ -142,12 +142,12 @@ IVsProjectUpgradeViaFactory::UpgradeProject_CheckOnly(
   
 - La función LogMessage tiene los siguientes niveles de error:  
   
-    - 0 es cualquier información de la que le gustaría hacer un seguimiento.  
-  
-    - 1 es una advertencia.  
-  
-    - 2 es un error.  
-  
-    - 3 es el formateador de informes. Cuando se actualiza el proyecto, registre la palabra "Converted" una vez y no la localice.  
+  - 0 es cualquier información de la que le gustaría hacer un seguimiento.  
+
+  - 1 es una advertencia.  
+
+  - 2 es un error.  
+
+  - 3 es el formateador de informes. Cuando se actualiza el proyecto, registre la palabra "Converted" una vez y no la localice.  
   
 - Si un proyecto no necesita reparación ni actualización, Visual Studio generará el archivo de registro solo si el sistema de proyecto ha registrado una advertencia o un error durante los métodos UpgradeProject_CheckOnly o UpgradeProjectFlavor_CheckOnly.

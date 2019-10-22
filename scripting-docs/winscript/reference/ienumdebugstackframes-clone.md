@@ -1,5 +1,5 @@
 ---
-title: IEnumDebugStackFrames::Clone | Microsoft Docs
+title: 'Ienumdebugstackframes (:: Clone | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,12 +17,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 117ed9923936a7211c1cc871fa084c269bd2a270
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: f812176406b234160883956c3311d8c05a75b743
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58145023"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72570878"
 ---
 # <a name="ienumdebugstackframesclone"></a>IEnumDebugStackFrames::Clone
 Crea un enumerador que contiene el mismo estado que el enumerador actual.  
@@ -37,7 +37,7 @@ HRESULT Clone(
   
 #### <a name="parameters"></a>Parámetros  
  `ppedsf`  
- [out] Devuelve el `IEnumDebugStackFrames` interfaz del clon del enumerador.  
+ enuncia Devuelve la interfaz `IEnumDebugStackFrames` del clon del enumerador.  
   
 ## <a name="return-value"></a>Valor devuelto  
  El método devuelve un objeto `HRESULT`. Entre los valores posibles se incluyen los que se indican en la tabla siguiente, entre otros.  

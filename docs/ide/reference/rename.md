@@ -12,12 +12,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 48e45373c41358ba3e9c2d70222ace07cdf1b59e
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: d1b4ff448f04ff6f683fac06cbc0b31797edf587
+ms.sourcegitcommit: 88f576ac32af31613c1a10c1548275e1ce029f4f
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55925532"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "71186575"
 ---
 # <a name="rename-a-code-symbol-refactoring"></a>Refactorización de cambio de nombre de un símbolo de código
 
@@ -68,10 +68,17 @@ Esta refactorización se aplica a lo siguiente:
 
 4. Cuando esté satisfecho con el cambio, seleccione el botón **Aplicar** o presione **Entrar**. Los cambios se confirmarán.
 
-> [!NOTE]
-> Si usa un nombre que ya existe, lo cual produciría un conflicto, el cuadro **Cambiar nombre** se lo advertirá.
->
-> ![Conflicto de cambio de nombre](media/rename-conflict-cs.png)
+## <a name="remarks"></a>Comentarios
+
+- A partir de la versión 16.3 de Visual Studio 2019, cuando se cambia el nombre de un tipo que coincide con el nombre del archivo en el que se encuentra, aparece una casilla que permite cambiar el nombre del archivo al mismo tiempo. Esta opción aparece cuando se cambia el nombre de una clase, una interfaz o una enumeración. No es compatible con los tipos parciales con varias definiciones.
+
+   ![Animación del cambio de nombre con un archivo en C#](media/rename-with-file-animated-cs.gif)
+   
+- Si usa un nombre que ya existe, lo cual produciría un conflicto, el cuadro **Cambiar nombre** se lo advertirá.
+
+   ![Conflicto de cambio de nombre](media/rename-conflict-cs.png)
+
+- Otra manera de cambiar el nombre de un símbolo es cambiar su nombre en el editor. A continuación, con el cursor en el nombre del símbolo, presione **Ctrl**+ **.** o simplemente expanda el menú de icono de bombilla que aparece y elija **Cambiar nombre\<nombre antiguo> a \<nombre nuevo>** .
 
 ## <a name="see-also"></a>Vea también
 

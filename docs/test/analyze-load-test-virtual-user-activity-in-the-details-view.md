@@ -11,12 +11,12 @@ ms.assetid: 63f4bd42-3cfb-4eee-af68-e8334976539e
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 0a0d656aea42fff774e5e9c58068eff7039cfe79
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: a03096e92f2a5da98da2d1850f505c65eb5b6e27
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55936959"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68918619"
 ---
 # <a name="analyzing-load-test-virtual-user-activity-in-the-details-view-of-the-load-test-analyzer"></a>Análisis de la actividad de usuario virtual de prueba de carga en la vista Detalles del Analizador de pruebas de carga
 
@@ -31,25 +31,25 @@ La vista **Detalles** muestra el **Diagrama de actividad del usuario virtual**, 
 > [!NOTE]
 > Antes de ejecutar la prueba de carga para la que quiere utilizar el **Diagrama de actividad del usuario virtual**, debe comprobar que la propiedad **Almacenamiento de detalles de tiempo** está establecida en la opción **AllIndividualDetails** mediante el Editor de pruebas de carga de rendimiento.
 
- **Panel Leyenda de detalles**
+**Panel Leyenda de detalles**
 
- ![Panel Leyenda de detalles](../test/media/ltest_detailslegend.png)
+![Panel Leyenda de detalles](../test/media/ltest_detailslegend.png)
 
- El panel de leyenda de detalles está visible en el **Diagrama de actividad del usuario virtual**. El panel de leyenda de detalles permite filtrar las pruebas, las páginas y las transacciones según criterios diferentes. Por ejemplo, puede quitar ciertas pruebas de la vista o quitar todas las pruebas superadas, o bien quitar las pruebas no superadas en las que se produjeron determinados errores. También puede quitar todas las pruebas que no tienen registros.
+El panel de leyenda de detalles está visible en el **Diagrama de actividad del usuario virtual**. El panel de leyenda de detalles permite filtrar las pruebas, las páginas y las transacciones según criterios diferentes. Por ejemplo, puede quitar ciertas pruebas de la vista o quitar todas las pruebas superadas, o bien quitar las pruebas no superadas en las que se produjeron determinados errores. También puede quitar todas las pruebas que no tienen registros.
 
- Puede resaltar las pruebas no superadas de modo que todas se muestren de color rojo. También puede resaltar las pruebas que tengan registros de prueba. Las pruebas con registros se colorearán en verde.
+Puede resaltar las pruebas no superadas de modo que todas se muestren de color rojo. También puede resaltar las pruebas que tengan registros de prueba. Las pruebas con registros se colorearán en verde.
 
- **Panel Resultados del filtro**
+**Panel Resultados del filtro**
 
- ![Panel Resultados del filtro](../test/media/ltest_filterresults.png)
+![Panel Resultados del filtro](../test/media/ltest_filterresults.png)
 
- El panel Resultados del filtro está visible en el **Diagrama de actividad del usuario virtual**. El panel Resultados del filtro puede filtrar por lo siguiente:
+El panel Resultados del filtro está visible en el **Diagrama de actividad del usuario virtual**. El panel Resultados del filtro puede filtrar por lo siguiente:
 
--   **Mostrar solo resultados con registros** Muestra únicamente los resultados de pruebas que tienen registros de prueba asociados.
+- **Mostrar solo resultados con registros** Muestra únicamente los resultados de pruebas que tienen registros de prueba asociados.
 
--   **Mostrar resultados correctos** Muestra los resultados correctos.
+- **Mostrar resultados correctos** Muestra los resultados correctos.
 
--   **Mostrar resultados con errores** Muestra los resultados con errores que pueden ayudar en la depuración.
+- **Mostrar resultados con errores** Muestra los resultados con errores que pueden ayudar en la depuración.
 
 ## <a name="tasks"></a>Tareas
 

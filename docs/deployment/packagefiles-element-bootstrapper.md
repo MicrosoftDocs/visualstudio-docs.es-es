@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3f3a1ee08fec613522be5247842e10ced1c032e7
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 81a12f400ee870798759237e202d2ca358fefa69
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59651843"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66747510"
 ---
 # <a name="ltpackagefilesgt-element-bootstrapper"></a>&lt;PackageFiles&gt; (elemento, arranque)
 El `PackageFiles` contiene elemento `PackageFile` elementos, que definen los paquetes de instalación que se ejecuta como resultado de la `Command` elemento.
@@ -62,7 +62,7 @@ El `PackageFiles` contiene elemento `PackageFile` elementos, que definen los paq
 | `Hash` | Opcional. Un hash SHA1 del archivo del paquete. Esto se usa para comprobar la integridad del archivo en tiempo de instalación. Si no se puede calcular el hash idéntico desde el archivo de paquete, no se instalará el paquete. |
 
 ## <a name="example"></a>Ejemplo
- El ejemplo de código siguiente define los paquetes para el [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] paquete redistribuible y sus dependencias, como Windows Installer.
+ El ejemplo de código siguiente define los paquetes para el paquete redistribuible de .NET Framework y sus dependencias, como Windows Installer.
 
 ```xml
 <PackageFiles>

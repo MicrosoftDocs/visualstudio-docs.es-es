@@ -1,5 +1,5 @@
 ---
-title: Analizar los resultados de pruebas de carga en la vista Gráficos del Analizador de prueba de carga
+title: Análisis de los resultados de pruebas de carga en la vista Gráficos del Analizador de pruebas de carga
 ms.date: 10/19/2016
 ms.topic: conceptual
 f1_keywords:
@@ -15,12 +15,12 @@ ms.assetid: 4a919cd8-541c-40ee-be3b-352fabc56140
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c48fe67c8d52f962589c9f8628ff49f12f7770c5
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 8a0c9ca6f195640e3c356e9288300255570b196c
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55970561"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68926465"
 ---
 # <a name="analyze-load-test-results-in-the-graphs-view-of-the-load-test-analyzer"></a>Analizar los resultados de pruebas de carga en la vista Gráficos del Analizador de pruebas de carga
 
@@ -38,7 +38,7 @@ Se proporcionan varios gráficos integrados. Puede utilizar estos gráficos inte
 
 En la tabla siguiente se muestran los gráficos integrados disponibles para analizar resultados de pruebas de carga.
 
-|Nombre del gráfico|Descripción|
+|Nombre del gráfico|DESCRIPCIÓN|
 |-|-|
 |Indicadores clave|Contadores que describen aspectos básicos del rendimiento de la prueba, como carga del usuario, rendimiento y tiempo de respuesta.|
 |Tiempo de respuesta de la prueba|Datos sobre el tiempo que tardan las pruebas en ejecutarse.|
@@ -47,20 +47,20 @@ En la tabla siguiente se muestran los gráficos integrados disponibles para anal
 |Controlador y agentes|Información sobre los equipos en los que se ejecutan las pruebas de carga. Incluye datos sobre el uso de memoria, el procesador, el disco físico y los procesos.<br /><br /> De forma predeterminada, sólo se recopilan datos de los contadores Mbytes disponibles y Tiempo de procesador.|
 |Tiempo de respuesta de la transacción|Tiempo medio de respuesta de las transacciones realizadas en la prueba de carga.|
 
- Puede mostrar diferentes contadores en el gráfico, tanto en tiempo de ejecución como después de la ejecución de una prueba.
+Puede mostrar diferentes contadores en el gráfico, tanto en tiempo de ejecución como después de la ejecución de una prueba.
 
 > [!NOTE]
 > Sólo se pueden agregar contadores de rendimiento de tiempo de respuesta a un gráfico de tiempo de respuesta generado automáticamente.
 
- La información del contador se muestra en el gráfico y en la leyenda situada debajo de los gráficos. También puede acercar con el zoom una sección del gráfico. Para obtener más información, vea [Cómo: Acercar una región del gráfico](../test/how-to-zoom-in-on-a-region-of-the-graph-in-load-test-results.md).
+La información del contador se muestra en el gráfico y en la leyenda situada debajo de los gráficos. También puede acercar con el zoom una sección del gráfico. Para obtener más información, vea [Cómo: Acercar una región del gráfico](../test/how-to-zoom-in-on-a-region-of-the-graph-in-load-test-results.md).
 
 ## <a name="counters-displayed-in-graphs"></a>Contadores mostrados en gráficos
 
- En los gráficos se muestran *contadores*. Los contadores hacen referencia a los datos recopilados durante una prueba de carga, como las pruebas realizadas por segundo o el tiempo medio de la prueba. Para obtener más información sobre los contadores, vea [Especificar conjuntos de contadores y reglas de umbral para equipos en una prueba de carga](../test/specify-counter-sets-and-threshold-rules-for-load-testing.md).
+En los gráficos se muestran *contadores*. Los contadores hacen referencia a los datos recopilados durante una prueba de carga, como las pruebas realizadas por segundo o el tiempo medio de la prueba. Para obtener más información sobre los contadores, vea [Especificar conjuntos de contadores y reglas de umbral para equipos en una prueba de carga](../test/specify-counter-sets-and-threshold-rules-for-load-testing.md).
 
- En la leyenda de los contadores que se muestran en los gráficos aparecen varias columnas de datos útiles sobre la ejecución de la prueba de carga. Para desactivar la presentación de cualquier dato en el gráfico, desactive la casilla situada en la fila de la leyenda.
+En la leyenda de los contadores que se muestran en los gráficos aparecen varias columnas de datos útiles sobre la ejecución de la prueba de carga. Para desactivar la presentación de cualquier dato en el gráfico, desactive la casilla situada en la fila de la leyenda.
 
- La leyenda contiene las columnas siguientes:
+La leyenda contiene las columnas siguientes:
 
 |Contador|El nombre del contador|
 |-|-|
@@ -87,11 +87,11 @@ En la tabla siguiente se muestran los gráficos integrados disponibles para anal
 
 ## <a name="related-tasks"></a>Tareas relacionadas
 
- [Analizar los errores y resultados de pruebas de carga en la vista Tablas](../test/analyze-load-test-results-and-errors-in-the-tables-view.md)
+[Analizar los errores y resultados de pruebas de carga en la vista Tablas](../test/analyze-load-test-results-and-errors-in-the-tables-view.md)
 
- [Cómo: Acceder a los resultados de pruebas de carga para el análisis](../test/how-to-access-load-test-results-for-analysis.md)
+[Cómo: Acceder a los resultados de pruebas de carga para el análisis](../test/how-to-access-load-test-results-for-analysis.md)
 
- [Analizar los resultados de pruebas de carga](../test/analyze-load-test-results-using-the-load-test-analyzer.md)
+[Analizar los resultados de pruebas de carga](../test/analyze-load-test-results-using-the-load-test-analyzer.md)
 
 ## <a name="see-also"></a>Vea también
 

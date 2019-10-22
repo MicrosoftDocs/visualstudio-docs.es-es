@@ -1,7 +1,7 @@
 ---
-title: Visualización de la estructura del código con las ventanas Vista de clases, Jerarquía de llamadas, Examinador de objetos y Definición de código
-ms.date: 05/18/2018
-ms.topic: conceptual
+title: Ventana de vista de clases, jerarquía de llamadas, examinador de objetos y definición de código
+ms.date: 09/19/2019
+ms.topic: reference
 f1_keywords:
 - vs.documentoutline.window
 - vs.objectbrowser
@@ -25,16 +25,16 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9d1072e6e9a2b097d9d2f50cc372ee8ba621e3d3
-ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
+ms.openlocfilehash: 616f62110dbaa18d53b4ecc3cade7737f551e5f9
+ms.sourcegitcommit: a2df993dc5e11c5131dbfcba686f0028a589068f
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57323872"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "71150127"
 ---
 # <a name="view-the-structure-of-code-using-different-tool-windows"></a>Visualización de la estructura del código mediante distintas ventanas de herramienta
 
-Puede examinar las clases y sus miembros en Visual Studio con diversas ventanas de herramienta, entre las que se incluyen **Vista de clases**, **Jerarquía de llamadas**, **Examinador de objetos** y **Definición de código** (solo en C++). Estas ventanas de herramienta permiten examinar el código de proyectos de Visual Studio, componentes de .NET Framework, componentes COM, bibliotecas de vínculos dinámicos (DLL) y bibliotecas de tipos (TLB).
+Puede examinar las clases y sus miembros en Visual Studio con diversas ventanas de herramienta, entre las que se incluyen **Vista de clases**, **Jerarquía de llamadas**, **Examinador de objetos** y **Definición de código** (solo en C++). Estas ventanas de herramientas permiten examinar el código de proyectos de Visual Studio, componentes de .NET, componentes COM, bibliotecas de vínculos dinámicos (DLL) y bibliotecas de tipos (TLB).
 
 También puede usar el **Explorador de soluciones** para examinar los tipos y miembros de sus proyectos, buscar símbolos, ver la jerarquía de llamadas de un método o buscar referencias de símbolos, entre otros, sin tener que cambiar de una ventana de herramienta a otra.
 
@@ -56,7 +56,7 @@ La barra de herramientas de **Vista de clases** contiene los siguientes comandos
 
 |||
 |-|-|
-|**Nueva carpeta**|Crea una carpeta o subcarpeta virtual en la que se pueden organizar los elementos utilizados con frecuencia. Se guardan en el archivo de la solución activa (*.suo*). Después de cambiar el nombre o eliminar un elemento en el código, puede aparecer en una carpeta virtual como un nodo de error. Para corregir este problema, elimine el nodo de error. Si cambió el nombre de un elemento, puede volver a moverlo desde la jerarquía del proyecto hasta la carpeta.|
+|**Nueva carpeta**|Crea una carpeta o subcarpeta virtual en la que se pueden organizar los elementos utilizados con frecuencia. Se guardan en el archivo de la solución activa ( *.suo*). Después de cambiar el nombre o eliminar un elemento en el código, puede aparecer en una carpeta virtual como un nodo de error. Para corregir este problema, elimine el nodo de error. Si cambió el nombre de un elemento, puede volver a moverlo desde la jerarquía del proyecto hasta la carpeta.|
 |**Atrás**|Navegal al elemento seleccionado anteriormente.|
 |**Adelante**|Navega al siguiente elemento seleccionado.|
 |**Ver diagrama de clases** (solo para proyectos de código administrado)|Se vuelve disponible al seleccionar un espacio de nombres o al escribir en la **Vista de clases**. Cuando se selecciona un espacio de nombres, el diagrama de clases muestra todos los tipos que contiene. Cuando se selecciona un tipo, el diagrama de clases solo muestra ese tipo.|
@@ -68,14 +68,13 @@ El botón **Configuración de vista de clases** de la barra de herramientas incl
 |||
 |-|-|
 |**Mostrar tipos base**|Se muestran los tipos base.|
-|**Mostrar tipos derivados**|Se muestran los tipos derivados.|
+|**Mostrar referencias de proyecto**|Se muestran las referencias del proyecto.|
 |**Mostrar tipos y miembros ocultos**|Se muestran en texto gris claro los tipos y miembros ocultos (los que no están diseñados para que los usen los clientes).|
 |**Mostrar miembros públicos**|Se muestran los miembros públicos.|
 |**Mostrar miembros protegidos**|Se muestran los miembros protegidos.|
 |**Mostrar miembros privados**|Se muestran los miembros privados.|
 |**Mostrar otros miembros**|Se muestran otros tipos de miembros, incluidos los miembros internos (o amigos en Visual Basic).|
 |**Mostrar miembros heredados**|Se muestran los miembros heredados.|
-|**Mostrar métodos de extensión**|Se muestran los métodos de extensión.|
 
 ### <a name="class-view-shortcut-menu"></a>Menú contextual de la Vista de clases
 
@@ -157,7 +156,6 @@ Puede especificar una de las siguientes vistas mediante el botón **Configuraci�
 |**Ver espacios de nombres**|Muestra los espacios de nombres en lugar de los contenedores físicos en el panel izquierdo. Los espacios de nombres almacenados en varios contenedores físicos se combinan.|
 |**Ver contenedores**|Muestra los contenedores físicos en lugar de los espacios de nombres en el panel izquierdo. Los ajustes **Ver espacios de nombres** y **Ver contenedores** son mutuamente excluyentes.|
 |**Mostrar tipos base**|Muestra los tipos base.|
-|**Mostrar tipos derivados**|Muestra los tipos derivados.|
 |**Mostrar tipos y miembros ocultos**|Muestra en texto gris claro los tipos y miembros ocultos (los que no están diseñados para que los usen los clientes).|
 |**Mostrar miembros públicos**|Muestra los miembros públicos.|
 |**Mostrar miembros protegidos**|Muestra los miembros protegidos.|
@@ -168,7 +166,7 @@ Puede especificar una de las siguientes vistas mediante el botón **Configuraci�
 
 ### <a name="object-browser-shortcut-menu-commands"></a>Comandos del menú contextual del Examinador de objetos
 
-En función del tipo de elemento seleccionado, el menú contextual del **Examinador de objetos** puede contener los siguientes comandos:
+En función del tipo de elemento seleccionado, el menú contextual del **Explorador de objetos** puede contener los siguientes comandos:
 
 |||
 |-|-|

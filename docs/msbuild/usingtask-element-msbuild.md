@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7b97999b7a6aa56dc9be17d853c306c71a5ff290
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 8341a83443855f2fd90d7f5a742251fa54fc4890
+ms.sourcegitcommit: dc12a7cb66124596089f01d3e939027ae562ede9
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56645750"
+ms.lasthandoff: 10/04/2019
+ms.locfileid: "71962913"
 ---
 # <a name="usingtask-element-msbuild"></a>Elemento UsingTask (MSBuild)
 Asigna la tarea a la que se hace referencia en un elemento [Tarea](../msbuild/task-element-msbuild.md) al ensamblado que contiene la implementación de la tarea.
@@ -38,6 +38,9 @@ Asigna la tarea a la que se hace referencia en un elemento [Tarea](../msbuild/ta
     TaskFactory = "ClassName"
     Condition="'String A'=='String B'" />
 ```
+
+> [!NOTE]
+> A diferencia de las propiedades y los elementos, se usará el *primer* elemento `UsingTask` que se aplica a un `TaskName`; para invalidar tareas, debe definir un nuevo elemento `UsingTask` *antes* del ya existente.
 
 ## <a name="attributes-and-elements"></a>Atributos y elementos
  En las siguientes secciones se describen los atributos, los elementos secundarios y los elementos primarios.
@@ -54,14 +57,14 @@ Asigna la tarea a la que se hace referencia en un elemento [Tarea](../msbuild/ta
 
 ### <a name="child-elements"></a>Elementos secundarios
 
-|Elemento|Descripción|
+|Elemento|DESCRIPCIÓN|
 |-------------|-----------------|
 |[ParameterGroup](../msbuild/parametergroup-element.md)|Conjunto de parámetros que aparecen en la tarea que se genera mediante el objeto `TaskFactory` especificado.|
 |[Task](../msbuild/task-element-msbuild.md)|Datos que se pasan a `TaskFactory` para generar una instancia de la tarea.|
 
 ### <a name="parent-elements"></a>Elementos primarios
 
-| Elemento | Descripción |
+| Elemento | DESCRIPCIÓN |
 | - | - |
 | [Proyecto](../msbuild/project-element-msbuild.md) | Elemento raíz necesario de un archivo de proyecto [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] . |
 
@@ -69,7 +72,7 @@ Asigna la tarea a la que se hace referencia en un elemento [Tarea](../msbuild/ta
  Se puede hacer referencia a variables de entorno, propiedades de línea de comandos, propiedades de nivel de proyecto y elementos de nivel de proyecto en los elementos `UsingTask` incluidos en el archivo de proyecto, ya sea directamente o a través de un archivo de proyecto importado. Para obtener más información, consulte [Tareas](../msbuild/msbuild-tasks.md).
 
 > [!NOTE]
->  Las propiedades y los elementos de nivel de proyecto no tienen ningún sentido si el elemento `UsingTask` proviene de uno de los archivos *.tasks* registrados globalmente con el motor MSBuild. Los valores de nivel de proyecto no son globales en MSBuild.
+> Las propiedades y los elementos de nivel de proyecto no tienen ningún sentido si el elemento `UsingTask` proviene de uno de los archivos *.tasks* registrados globalmente con el motor MSBuild. Los valores de nivel de proyecto no son globales en MSBuild.
 
  En MSBuild 4.0, el uso de tareas puede cargarse a partir de archivos *.overridetask*.
 

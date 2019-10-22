@@ -1,5 +1,5 @@
 ---
-title: Filtrar Agregar comentarios a diagramas de clases (Diseñador de clases)
+title: Procedimiento Agregar comentarios a diagramas de clases (Diseñador de clases)
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -14,14 +14,14 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 39b220ddc42857040a51b2308c6d4a83d931de09
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: ad54dc716e02eabcc064d87213d01491f43eae82
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55970548"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62975529"
 ---
-# <a name="how-to-add-comments-to-class-diagrams"></a>Filtrar Agregar comentarios a diagramas de clases
+# <a name="how-to-add-comments-to-class-diagrams"></a>Procedimiento Agregar comentarios a diagramas de clases
 
 Puede usar formas de comentario para anotar diagramas de clases. Una forma de comentario tiene una propiedad, **Text**, en la que puede escribir texto. Las formas de comentario solo existen en la superficie del diagrama y no en el código.
 
@@ -31,9 +31,9 @@ Puede cambiar el tamaño de una forma de comentario, pero no puede cambiar otros
 
 ## <a name="to-add-a-comment"></a>Para agregar un comentario
 
-1.  Arrastre un comentario del **Cuadro de herramientas del Diseñador de clase** al diagrama de clases.
+1. Arrastre un comentario del **Cuadro de herramientas del Diseñador de clase** al diagrama de clases.
 
-2.  Haga clic en la nueva forma de comentario en el diagrama y escriba el texto que quiera.
+2. Haga clic en la nueva forma de comentario en el diagrama y escriba el texto que quiera.
 
 ## <a name="see-also"></a>Vea también
 

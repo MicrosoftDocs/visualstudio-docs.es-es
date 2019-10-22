@@ -5,17 +5,20 @@ ms.topic: reference
 helpviewer_keywords:
 - IDebugProcessSecurity::GetUserName
 ms.assetid: c73c60ac-da6e-45ae-8f04-95353a24ca3e
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f8340e9fd9e5f38963a9de78e2974404f600deef
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: a42b67eb3fd308011bf725f8dd7e24a4d9ddca6f
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56686176"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66311520"
 ---
 # <a name="idebugprocesssecuritygetusername"></a>IDebugProcessSecurity::GetUserName
 Obtiene el nombre de usuario desde el proveedor del puerto.
@@ -34,10 +37,9 @@ int GetUserName (
 );
 ```
 
-#### <a name="parameters"></a>Parámetros
- `pbstrUserName`
-
- [out] Una cadena que contiene el nombre de usuario.
+## <a name="parameters"></a>Parámetros
+`pbstrUserName`\
+[out] Una cadena que contiene el nombre de usuario.
 
 ## <a name="return-value"></a>Valor devuelto
  Si el método se realiza correctamente, devuelve `S_OK`. En caso contrario, devuelve un código de error.

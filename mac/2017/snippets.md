@@ -5,16 +5,16 @@ author: conceptdev
 ms.author: crdun
 ms.date: 02/07/2019
 ms.assetid: 0FE27C0C-A861-4133-A74E-8D0505CF5342
-ms.openlocfilehash: 56f736aa1e32530b1db96ad301091151731b7d28
-ms.sourcegitcommit: da73f7a0cf1795d5d400c0897ae3326191435dd0
+ms.openlocfilehash: 2def790511a69dc7b5cab8a5020f488e58b85db9
+ms.sourcegitcommit: 7fbfb2a1d43ce72545096c635df2b04496b0be71
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/28/2019
-ms.locfileid: "58568637"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "67693012"
 ---
 # <a name="code-snippets"></a>Fragmentos de código
 
-Los fragmentos de código, también conocidos como  _plantillas de código_, son útiles para programar de forma eficaz, ya que permiten insertar y editar bloques de código escritos previamente. El uso de fragmentos de código puede resultar cómodo para agregar rápidamente patrones comunes o incluso para aprender nuevos patrones si, como desarrollador, no está seguro de la sintaxis. Hay plantillas para C#, F#, HTML, XML, Python y Razor.
+Los fragmentos de código, que se suelen denominar _plantillas de código_, son útiles para una programación eficaz, ya que permiten la inserción y edición de bloques de código escritos previamente. El uso de fragmentos de código puede resultar cómodo para agregar rápidamente patrones comunes o incluso para aprender nuevos patrones si, como desarrollador, no está seguro de la sintaxis. Hay plantillas para C#, F#, HTML, XML, Python y Razor.
 
 En esta sección se explica cómo crear, insertar y usar fragmentos de código en el código.
 
@@ -30,7 +30,7 @@ Hay varias maneras de agregar fragmentos de código, algunas de las cuales se ex
 
   [![Fragmentos de código en el cuadro de herramientas](media/source-editor-image14-sml.png)](media/source-editor-image14.png#lightbox)
 
-- **Comando Insertar plantillas**&ndash; actualmente no hay ningún enlace de teclado predeterminado establecido para insertar una plantilla. Para crear uno, vaya a **Visual Studio > Preferencias > Enlaces de teclado** y busque `template`. Esto permite agregar el enlace de teclado deseado al campo Editar enlace; luego, haga clic en  **Aplicar**:
+- **Comando Insertar plantillas**&ndash; actualmente no hay ningún enlace de teclado predeterminado establecido para insertar una plantilla. Para crear uno, vaya a **Visual Studio > Preferencias > Enlaces de teclado** y busque `template`. Esto permite agregar el enlace de teclado deseado en el campo Editar enlace; luego, haga clic en **Aplicar**:
 
   ![Comando Insertar plantilla](media/source-editor-image15.png)
 

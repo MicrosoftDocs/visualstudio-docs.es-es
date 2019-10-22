@@ -1,5 +1,5 @@
 ---
-title: Filtrar Eliminar contactos de Outlook mediante programación
+title: Procedimiento Eliminar contactos de Outlook mediante programación
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -14,11 +14,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 55ee5698ce1cb36a79a596124dedd681e6da4bdf
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56628655"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62814630"
 ---
 # <a name="how-to-programmatically-delete-outlook-contacts"></a>Procedimiento Eliminar contactos de Outlook mediante programación
   En este ejemplo se elimina un contacto. En el ejemplo se supone que existe un contacto llamado "Armando Pinto" en la carpeta **Contactos** .

@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 4639df568b033eea03ff4ad61c4ddd4e512e2bfc
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56595599"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "62835469"
 ---
 # <a name="idiasymbolgetsubtype"></a>IDiaSymbol::get_subType
 Recupera el subtipo.

@@ -7,17 +7,17 @@ helpviewer_keywords:
 - builds [Visual Studio], about building in Visual Studio
 - custom build steps, types of builds
 ms.assetid: c7958821-285f-4e28-9e7a-b5d8b40336a1
-author: gewarren
-ms.author: gewarren
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e943e43e93d7906c799b5ac5056f062d2522907f
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 2c99408530344c72d2e9669178c5e79f7c34d551
+ms.sourcegitcommit: ea182703e922c74725045afc251bcebac305068a
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55910017"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71211260"
 ---
 # <a name="compile-and-build-in-visual-studio"></a>Compilar y generar en Visual Studio
 
@@ -25,7 +25,7 @@ Al compilar código fuente, el motor de compilación crea ensamblados y aplicaci
 
 Al compilar el código con frecuencia, se pueden identificar rápidamente errores en tiempo de compilación, como sintaxis incorrecta, palabras clave mal escritas y errores de coincidencia de tipos. También es posible detectar y corregir errores en tiempo de ejecución, como errores lógicos y semánticos, al compilar y ejecutar versiones de depuración del código.
 
-Una compilación correcta valida que el código fuente de la aplicación contenga una sintaxis correcta y que se puedan resolver todas las referencias estáticas a bibliotecas, ensamblados y otros componentes. Se genera un archivo ejecutable de aplicación que se puede probar para asegurarse de que funciona correctamente en un [entorno de depuración](../debugger/index.md) y en una serie de pruebas manuales y automatizadas para [validar la calidad del código](../test/improve-code-quality.md). Una vez que se ha probado por completo la aplicación, es posible compilar una versión e implementarla para los clientes. Para obtener una introducción a este proceso, vea [Tutorial: Compilación de una aplicación](../ide/walkthrough-building-an-application.md).
+Una compilación correcta valida que el código fuente de la aplicación contenga una sintaxis correcta y que se puedan resolver todas las referencias estáticas a bibliotecas, ensamblados y otros componentes. Se genera un archivo ejecutable de aplicación que se puede probar para asegurarse de que funciona correctamente en un [entorno de depuración](../debugger/index.yml) y en una serie de pruebas manuales y automatizadas para [validar la calidad del código](../test/improve-code-quality.md). Una vez que se ha probado por completo la aplicación, es posible compilar una versión e implementarla para los clientes. Para obtener una introducción a este proceso, vea [Tutorial: Compilación de una aplicación](../ide/walkthrough-building-an-application.md).
 
 Puede usar cualquiera de los siguientes métodos para compilar una aplicación: el IDE de Visual Studio, las herramienta de línea de comandos de MSBuild y Azure Pipelines:
 

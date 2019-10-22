@@ -14,11 +14,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 002e7198210e123fc2461f712bb8db442b9f25c8
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58996653"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68190717"
 ---
 # <a name="idiasession"></a>IDiaSession
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -34,7 +34,7 @@ IDiaSession : IUnknown
 ## <a name="methods"></a>Métodos  
  La tabla siguiente muestran los métodos de `IDiaSession`.  
   
-|Método|Descripción|  
+|Método|DESCRIPCIÓN|  
 |------------|-----------------|  
 |[IDiaSession::get_loadAddress](../../debugger/debug-interface-access/idiasession-get-loadaddress.md)|Recupera la dirección de carga del archivo ejecutable que se corresponde con los símbolos de este almacén de símbolos. Este es el mismo valor que se pasó a la `put_loadAddress` método.|  
 |[IDiaSession::put_loadAddress](../../debugger/debug-interface-access/idiasession-put-loadaddress.md)|Establece la dirección de carga del archivo ejecutable que corresponde a los símbolos en este almacén de símbolos. **Nota:**  Es importante llamar a este método cuando reciba un `IDiaSession` de objetos y antes de empezar a usar el objeto.|  

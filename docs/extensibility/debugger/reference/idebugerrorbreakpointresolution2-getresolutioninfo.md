@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugErrorBreakpointResolution2::GetResolutionInfo
 ms.assetid: d94c4f60-8796-4848-86ee-186bbaa613f5
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f399c82e5bc5619e0690cb27245baab9944c9377
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: fefea5081278800b330dac665862a360b4a0c15b
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56691012"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66327820"
 ---
 # <a name="idebugerrorbreakpointresolution2getresolutioninfo"></a>IDebugErrorBreakpointResolution2::GetResolutionInfo
 Obtiene la información de resolución de errores de punto de interrupción.
@@ -38,13 +41,11 @@ int GetResolutionInfo( 
 );
 ```
 
-#### <a name="parameters"></a>Parámetros
-`dwFields`
-
+## <a name="parameters"></a>Parámetros
+`dwFields`\
 [in] Una combinación de marcas de la [BPERESI_FIELDS](../../../extensibility/debugger/reference/bperesi-fields.md) enumeración que determina qué campos de `pErrorResolutionInfo` son para rellenarlo.
 
-`pErrorResolutionInfo`
-
+`pErrorResolutionInfo`\
 [in, out] El [BP_ERROR_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-error-resolution-info.md) estructura que se rellena con la descripción de la resolución de punto de interrupción.
 
 ## <a name="return-value"></a>Valor devuelto

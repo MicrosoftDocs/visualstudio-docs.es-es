@@ -1,5 +1,5 @@
 ---
-title: Panel publicar, Diseñador de proyectos (desarrollo de Office en Visual Studio)
+title: Panel publicar, Diseñador de proyectos (desarrollo de Office)
 ms.date: 02/02/2017
 ms.topic: conceptual
 f1_keywords:
@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 55a27a8d0c5c119870e92bfbf7cff4b85f90cf99
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 86d575b254209b547504ea6d746d03853990bfb4
+ms.sourcegitcommit: 7eb2fb21805d92f085126f3a820ac274f2216b4e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60103535"
+ms.lasthandoff: 06/22/2019
+ms.locfileid: "67328997"
 ---
 # <a name="publish-page-project-designer-office-development-in-visual-studio"></a>Panel publicar, Diseñador de proyectos (desarrollo de Office en Visual Studio)
   La página **Publicar** del **Diseñador de proyectos** se usa para configurar las propiedades de la implementación.
@@ -29,14 +29,14 @@ ms.locfileid: "60103535"
  Para acceder a esta página, seleccione el proyecto en el **Explorador de soluciones**y luego, en el menú **Proyecto** , elija *Propiedades de* **nombreDelProyecto**. Si no se muestra la página **Publicar** , elija la pestaña **Publicar** .
 
 > [!NOTE]
->  También puede establecer la ubicación de publicación en el **Asistente para publicación**. Para obtener más información, vea [Cómo: Publicar una solución de Office mediante ClickOnce](https://msdn.microsoft.com/2b6c247e-bc04-4ce4-bb64-c4e79bb3d5b8).
+> También puede establecer la ubicación de publicación en el **Asistente para publicación**. Para obtener más información, vea [Cómo: Publicar una solución de Office mediante ClickOnce](https://msdn.microsoft.com/2b6c247e-bc04-4ce4-bb64-c4e79bb3d5b8).
 
 ## <a name="uielement-list"></a>Lista de UIElement
  **Ubicación (sitio web, servidor ftp o ruta de acceso de archivo) de la carpeta de publicación** necesarios.
 
  La ubicación de la carpeta de publicación es el directorio donde Visual Studio copia los archivos de la solución como, por ejemplo, los manifiestos, los ensamblados y otros archivos de la compilación. Es necesario tener acceso de escritura a este directorio.
 
- Las opciones incluyen el equipo local, un recurso compartido de archivos UNC o un sitio web HTTP/HTTPS. La ruta de acceso puede ser local (*c:\foldername\publishfolder*), relativo (*publicar\\*), o una ubicación completa (*\\\servername\foldername* o http://<em>nombreDeServidor/nombreDeCarpeta</em>).
+ Las opciones incluyen el equipo local, un recurso compartido de archivos UNC o un sitio web HTTP/HTTPS. La ruta de acceso puede ser local (*c:\foldername\publishfolder*), relativo (*publicar\\* ), o una ubicación completa ( *\\\servername\foldername* o http://<em>nombreDeServidor/nombreDeCarpeta</em>).
 
  De forma predeterminada, la ubicación de publicación es *http://localhost/projectname/* si tiene IIS instalado, o el *publicar\\*  directorio si no tiene IIS instalado.
 
@@ -44,7 +44,7 @@ ms.locfileid: "60103535"
 
  La URL de la carpeta de instalación es el directorio desde el que el usuario final instalará la personalización. También es la ruta de acceso que usará la solución para buscar actualizaciones. La ruta de acceso puede ser igual que la ubicación de la carpeta de publicación, pero esto no es un requisito.
 
- Las opciones incluyen el equipo local, un recurso compartido de archivos UNC o un sitio web HTTP/HTTPS. La ruta de acceso puede ser local (*c:\foldername\publishfolder*), relativo (*publicar\\*), o una ubicación completa (*\\\servername\foldername* o http://<em>nombreDeServidor/nombreDeCarpeta</em>). Todas las ubicaciones HTTP/HTTPS se deben crear con caracteres US-ASCII. No se admiten caracteres Unicode.
+ Las opciones incluyen el equipo local, un recurso compartido de archivos UNC o un sitio web HTTP/HTTPS. La ruta de acceso puede ser local (*c:\foldername\publishfolder*), relativo (*publicar\\* ), o una ubicación completa ( *\\\servername\foldername* o http://<em>nombreDeServidor/nombreDeCarpeta</em>). Todas las ubicaciones HTTP/HTTPS se deben crear con caracteres US-ASCII. No se admiten caracteres Unicode.
 
  Si se establece la ruta de instalación, los archivos de personalización deben estar en dicha ubicación para que los usuarios instalen la personalización. La ubicación solo debe establecerse si conoce la ubicación de implementación final.
 

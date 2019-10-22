@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugEvent2::GetAttributes
 ms.assetid: 2ac5b5fb-da17-43f7-811a-313f677e60d7
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 140b47af958e8f4623dd5921aa6046926737cf38
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 3f85cccb01a31232cccc39e44fae7accbfa4f954
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56677687"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66327587"
 ---
 # <a name="idebugevent2getattributes"></a>IDebugEvent2::GetAttributes
 Obtiene los atributos de este evento de depuración.
@@ -36,10 +39,9 @@ int GetAttribute( 
 );
 ```
 
-#### <a name="parameters"></a>Parámetros
- `pdwAttrib`
-
- [out] Una combinación de marcas de la [EVENTATTRIBUTES](../../../extensibility/debugger/reference/eventattributes.md) enumeración.
+## <a name="parameters"></a>Parámetros
+`pdwAttrib`\
+[out] Una combinación de marcas de la [EVENTATTRIBUTES](../../../extensibility/debugger/reference/eventattributes.md) enumeración.
 
 ## <a name="return-value"></a>Valor devuelto
  Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.

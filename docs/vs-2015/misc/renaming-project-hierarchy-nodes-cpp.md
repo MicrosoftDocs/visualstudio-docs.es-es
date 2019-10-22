@@ -10,21 +10,21 @@ helpviewer_keywords:
 ms.assetid: cea5968e-e9f8-41a5-b068-622df542247c
 caps.latest.revision: 12
 manager: jillfra
-ms.openlocfilehash: 7f6406936f293eea9c604b830f8eaab55a90a957
-ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
+ms.openlocfilehash: c7ad43fe1fd0e22cd94194d3079761de812b6ced
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "58995224"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65686585"
 ---
 # <a name="renaming-project-hierarchy-nodes-c"></a>Cambiar el nombre de nodos de jerarquía del proyecto (C++)
-Puede cambiar el nombre de un nodo de jerarquía de carpeta de proyecto mediante el marco de trabajo del proyecto de HierUtil7 para C++ no administrado. Para obtener más información, consulte [ejemplo de HierUtil7](http://msdn.microsoft.com/29c15184-a70c-4813-86c2-fb1d47442d11).  
+Puede cambiar el nombre de un nodo de jerarquía de carpeta de proyecto mediante el marco de trabajo del proyecto de HierUtil7 para C++ no administrado. Para obtener más información, consulte [ejemplo de HierUtil7](https://msdn.microsoft.com/29c15184-a70c-4813-86c2-fb1d47442d11).  
   
 ## <a name="expanding-the-hierarchy-node"></a>Expanda el nodo de jerarquía  
   
 #### <a name="to-expand-the-hierarchy-node-and-rename-the-folder"></a>Expanda el nodo de jerarquía y cambiar el nombre de la carpeta  
   
-1.  Seleccione el nodo de jerarquía mediante el método siguiente:  
+1. Seleccione el nodo de jerarquía mediante el método siguiente:  
   
     ```  
     IfFailGo(pNode->ExtExpand(EXPF_SelectItem, GUID_MacroExplorer));  
@@ -38,7 +38,7 @@ Puede cambiar el nombre de un nodo de jerarquía de carpeta de proyecto mediante
   
      Puede encontrar el archivo Hu_node.h en la carpeta, \<raíz de instalación > \Program Files\VSIP 8.0\EnvSDK\common\hierutil7:  
   
-2.  Cambiar el nombre de la carpeta mediante el comando de cambio de nombre de registro mediante el uso de <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.PostExecCommand%2A>  
+2. Cambiar el nombre de la carpeta mediante el comando de cambio de nombre de registro mediante el uso de <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.PostExecCommand%2A>  
   
     ```  
     IfFailGo(srpVsUIShell->PostExecCommand(&guidVSStd97, cmdidRename, 0, NULL));  

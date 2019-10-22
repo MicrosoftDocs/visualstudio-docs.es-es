@@ -1,5 +1,5 @@
 ---
-title: IScriptScriptlet::GetSubItemName | Microsoft Docs
+title: 'Iscriptscriptlet (:: GetSubItemName | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 0c48517b7f9f5fab3250b8cff68ad288525145b9
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: b36f6dd98534b8122a6814f1fd154eca7882251a
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58155909"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72571919"
 ---
 # <a name="iscriptscriptletgetsubitemname"></a>IScriptScriptlet::GetSubItemName
-Devuelve el último identificador en el nombre completo de host del objeto del scriptlet.  
+Devuelve el último identificador del nombre completo del host de objeto de Scriptlet.  
   
 ## <a name="syntax"></a>Sintaxis  
   
@@ -37,12 +37,12 @@ HRESULT GetSubItemName(
   
 #### <a name="parameters"></a>Parámetros  
  `pbstr`  
- [out] Si el host completo del scriptlet nombre tiene más de un nivel, `pbstr` devuelve la dirección del búfer del identificador en el segundo nivel.  
+ enuncia Si el nombre completo de Scriptlet del host tiene más de un nivel, `pbstr` devuelve la dirección del búfer del identificador en el segundo nivel.  
   
- Si el host completo del scriptlet nombre tiene un nivel `pbstr` devuelve la dirección del búfer del identificador del primer nivel.  
+ Si el nombre completo de Scriptlet del host tiene un nivel, `pbstr` devuelve la dirección del búfer del identificador en el primer nivel.  
   
 ## <a name="return-value"></a>Valor devuelto  
- Una clase `HRESULT`. Entre los valores posibles se incluyen los que se indican en la tabla siguiente, entre otros.  
+ Interfaz `HRESULT`. Entre los valores posibles se incluyen los que se indican en la tabla siguiente, entre otros.  
   
 |Valor|Descripción|  
 |-----------|-----------------|  

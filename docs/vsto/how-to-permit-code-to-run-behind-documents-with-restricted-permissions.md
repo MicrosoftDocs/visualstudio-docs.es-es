@@ -1,5 +1,5 @@
 ---
-title: Filtrar Permitir que el código se ejecute detrás de documentos con permisos restringidos
+title: Permitir que el código se ejecute detrás de docs con permisos restringidos
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -17,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: be5afe96af1baa615e5000a6c1a19b543f3c89c5
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 32e42954958fda71d54c3c0ac2685928644e7461
+ms.sourcegitcommit: 25570fb5fb197318a96d45160eaf7def60d49b2b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56637664"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "66402246"
 ---
 # <a name="how-to-permit-code-to-run-behind-documents-with-restricted-permissions"></a>Procedimiento Permitir que el código se ejecute detrás de documentos con permisos restringidos
   Puede usar la característica Information Rights Management (IRM) de Microsoft Office para restringir permisos a un documento o libro. De forma predeterminada, el código detrás de un documento restringido de Microsoft Office Word o un libro de Microsoft Office Excel no se permite ejecutar. Puede cambiar el valor predeterminado para que sus extensiones de código administrado pueden obtener acceso al modelo de objeto y la solución funcionará.
@@ -38,7 +38,7 @@ ms.locfileid: "56637664"
 2. Haga clic en el **archivo** pestaña, seleccione **preparar**, apunte a **restringir permisos**y, a continuación, haga clic en **acceso restringido**.
 
    > [!NOTE]
-   >  En el primer uso, deberá instalar al cliente de Windows Rights Management. Después de instalar al cliente, es posible que deba repetir los pasos.
+   > En el primer uso, deberá instalar al cliente de Windows Rights Management. Después de instalar al cliente, es posible que deba repetir los pasos.
 
 3. En el **permiso** cuadro de diálogo, seleccione **restringir permisos a este documento**y, a continuación, haga clic en **más opciones**.
 

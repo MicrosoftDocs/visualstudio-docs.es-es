@@ -1,5 +1,5 @@
 ---
-title: 'Idebugdocumenthost:: Getscripttextattributes | Documentos de Microsoft'
+title: 'IDebugDocumentHost:: GetScriptTextAttributes | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 6a5e56468e51f6d90e37e90c885b6b9df48d5f6e
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 3b18f4f49fa157b78e4f1fd6c7766e929890a6c6
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58159002"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72569205"
 ---
 # <a name="idebugdocumenthostgetscripttextattributes"></a>IDebugDocumentHost::GetScriptTextAttributes
-Devuelve los atributos de texto de un bloque de texto del documento.  
+Devuelve los atributos de texto para un bloque de texto del documento.  
   
 ## <a name="syntax"></a>Sintaxis  
   
@@ -41,25 +41,25 @@ HRESULT GetScriptTextAttributes(
   
 #### <a name="parameters"></a>Parámetros  
  `pstrCode`  
- [in] El texto del bloque de script. No necesita esta cadena terminada en null.  
+ de Texto del bloque de script. No es necesario que esta cadena termine en NULL.  
   
  `uNumCodeChars`  
- [in] El número de caracteres en el texto del bloque de script.  
+ de Número de caracteres del texto del bloque de script.  
   
  `pstrDelimiter`  
- [in] Dirección del delimitador final del bloque de script. Cuando `pstrCode` se analiza desde una secuencia de texto, el host normalmente utiliza un delimitador, como dos comillas ("), para detectar el final del bloque de script. Este parámetro especifica el delimitador que utiliza el host, lo que permite el motor de scripting proporcione algún preprocesamiento primitivo condicional (por ejemplo, que reemplaza una comilla sencilla ['] con dos comillas simples para su uso como un delimitador). Exactamente cómo (y si) utiliza el motor de scripting, esta información depende del motor de scripting. Establezca este parámetro en NULL si el host no utilizó un delimitador para marcar el final del bloque de script.  
+ de Dirección del delimitador de bloque de script final. Cuando `pstrCode` se analiza desde un flujo de texto, el host normalmente usa un delimitador, como dos comillas simples (' '), para detectar el final del bloque de script. Este parámetro especifica el delimitador utilizado por el host, lo que permite que el motor de scripting proporcione algún preprocesamiento primitivo condicional (por ejemplo, reemplazando una comilla simple ['] con dos comillas simples para su uso como delimitador). Exactamente cómo (y si) el motor de scripting utiliza esta información depende del motor de scripting. Establezca este parámetro en NULL si el host no ha utilizado un delimitador para marcar el final del bloque de script.  
   
  `dwFlags`  
- [in] Marcas asociadas al bloque de script. Puede ser una combinación de estos valores:  
+ de Marcas asociadas al bloque de script. Puede ser una combinación de estos valores:  
   
 |Constante|Valor|Descripción|  
 |--------------|-----------|-----------------|  
-|GETATTRTYPE_DEPSCAN|0x0001|Indica que los identificadores y los operadores dot deben identificarse con los indicadores SOURCETEXT_ATTR_IDENTIFIER y SOURCETEXT_ATTR_MEMBERLOOKUP, respectivamente.|  
-|GETATTRFLAG_THIS|0x0100|Indica que se debe identificar el identificador para el objeto actual con la marca SOURCETEXT_ATTR_THIS.|  
-|GETATTRFLAG_HUMANTEXT|0x8000|Indica que el texto de comentario y el contenido de cadena debe identificarse con el indicador SOURCETEXT_ATTR_HUMANTEXT.|  
+|GETATTRTYPE_DEPSCAN|0x0001|Indica que los identificadores y los operadores de punto se deben identificar con las marcas SOURCETEXT_ATTR_IDENTIFIER y SOURCETEXT_ATTR_MEMBERLOOKUP, respectivamente.|  
+|GETATTRFLAG_THIS|0x0100|Indica que el identificador del objeto actual debe identificarse con la marca SOURCETEXT_ATTR_THIS.|  
+|GETATTRFLAG_HUMANTEXT|0x8000|Indica que el contenido de la cadena y el texto del comentario deben identificarse con la marca SOURCETEXT_ATTR_HUMANTEXT.|  
   
  `pattr`  
- [in, out] Búfer que contiene los atributos devueltos.  
+ [in, out] Búfer que va a contener los atributos devueltos.  
   
 ## <a name="return-value"></a>Valor devuelto  
  El método devuelve un objeto `HRESULT`. Entre los valores posibles se incluyen los que se indican en la tabla siguiente, entre otros.  
@@ -67,11 +67,11 @@ HRESULT GetScriptTextAttributes(
 |Valor|Descripción|  
 |-----------|-----------------|  
 |`S_OK`|El método se realizó correctamente.|  
-|`E_NOTIMPL`|El host usa solo los atributos predeterminados.|  
+|`E_NOTIMPL`|El host solo usa atributos predeterminados.|  
   
 ## <a name="remarks"></a>Comentarios  
- Este método devuelve los atributos de texto de un bloque arbitrario de texto del documento. Es aceptable para los hosts devolver `E_NOTIMPL`, en cuyo caso se usan los atributos predeterminados.  
+ Este método devuelve los atributos de texto de un bloque arbitrario de texto del documento. Es aceptable que los hosts devuelvan `E_NOTIMPL`, en cuyo caso se utilizan los atributos predeterminados.  
   
 ## <a name="see-also"></a>Vea también  
- [IDebugDocumentHost (interfaz)](../../winscript/reference/idebugdocumenthost-interface.md)   
+ @No__t_1 de la [interfaz IDebugDocumentHost](../../winscript/reference/idebugdocumenthost-interface.md)  
  [SOURCE_TEXT_ATTR (Enumeración)](../../winscript/reference/source-text-attr-enumeration.md)

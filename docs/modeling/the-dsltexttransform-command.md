@@ -4,31 +4,31 @@ ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - Domain-Specific Language, commands
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 89d83da450014ebf29e2882438d27f9284c9bbbb
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: a303fc3ddb880402e3f998b2360122f6f056b757
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55939039"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72605931"
 ---
 # <a name="the-dsltexttransform-command"></a>El comando DslTextTransform
-DslTextTransform.cmd es un script que llame a TextTransform.exe y lo ejecuta con opciones comunes. Puede usar para automatizar una compilación nocturna de DslTextTransformation.cmd su [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] proyectos. Para obtener más información, consulte [generar archivos con la utilidad TextTransform](../modeling/generating-files-with-the-texttransform-utility.md).
+DslTextTransform. cmd es un script que llama a TextTransform. exe y lo ejecuta con opciones comunes. Puede usar DslTextTransformation. cmd para automatizar una compilación nocturna de los proyectos de [!INCLUDE[dsl](../modeling/includes/dsl_md.md)]. Para obtener más información, vea [generar archivos con la utilidad textTransform](../modeling/generating-files-with-the-texttransform-utility.md).
 
- DslTextTransform.cmd se encuentra en el directorio siguiente:
+ DslTextTransform. cmd se encuentra en el siguiente directorio:
 
- **\<Ruta de instalación de Visual Studio SDK > \VisualStudioIntegration\Tools\Bin**
+ **Ruta de instalación de \<Visual Studio SDK > \VisualStudioIntegration\Tools\Bin**
 
- Puede especificar los argumentos siguientes como entrada para DslTextTransform.cmd:
+ Puede especificar los siguientes argumentos como entrada para DslTextTransform. cmd:
 
 - El directorio de salida del proyecto de modelo de dominio.
 
 - El directorio de salida del proyecto de definición del diseñador.
 
-- La ubicación del archivo de plantilla de texto.
+- Ubicación del archivo de plantilla de texto.
 
-  DslTextTransform.cmd procesa el archivo de plantilla de texto especificado utilizando los ensamblados y los procesadores de directivas predeterminado. Si crea los procesadores de directivas personalizados, puede crear su propio archivo de lote que llama a TextTransform.exe. En este archivo por lotes, puede especificar los ensamblados y los procesadores de directivas personalizados asociados.
+  DslTextTransform. cmd procesa el archivo de plantilla de texto especificado con los procesadores y ensamblados de directivas predeterminados. Si crea procesadores de directivas personalizados, puede crear su propio archivo por lotes que llama a TextTransform. exe. En este archivo por lotes, puede especificar los ensamblados y los procesadores de directivas personalizados asociados.

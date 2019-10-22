@@ -1,5 +1,5 @@
 ---
-title: Procedimiento Agregar y quitar características y elementos de un paquete mediante el Diseñador de paquetes | Documentos de Microsoft
+title: 'Diseñador de paquetes: Agregar y quitar características y elementos de paquete'
 ms.date: 02/02/2017
 ms.topic: conceptual
 f1_keywords:
@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 654773f5a5e46960f8c015cc6f731e16332fcdd7
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: fbd44bbf3b337815c8c72cea66dd4d56fc645ade
+ms.sourcegitcommit: 25570fb5fb197318a96d45160eaf7def60d49b2b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60094325"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "66401612"
 ---
 # <a name="how-to-add-and-remove-features-and-items-to-a-package-by-using-the-package-designer"></a>Procedimiento Agregar y quitar características y elementos de un paquete mediante el Diseñador de paquetes
   Cuando se crea una solución de SharePoint, Visual Studio agrega las características de SharePoint predeterminado para el paquete de la solución. Antes de la implementación final, puede agregar y quitar elementos de proyecto de SharePoint y las características para modificar el paquete de SharePoint.

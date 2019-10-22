@@ -1,5 +1,5 @@
 ---
-title: IDebugDocumentHelper::GetScriptBlockInfo | Microsoft Docs
+title: 'IDebugDocumentHelper:: GetScriptBlockInfo | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d1984cdc19beb883dd7ee82f58497b11a8d781b0
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 5a92aa00d7997ceccc583c88a070f6fbc7d4359d
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58144438"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72576101"
 ---
 # <a name="idebugdocumenthelpergetscriptblockinfo"></a>IDebugDocumentHelper::GetScriptBlockInfo
-Recupera el intervalo de caracteres y el motor de secuencia de comandos correspondiente a un bloque de script.  
+Recupera el intervalo de caracteres y el motor de scripts correspondiente a un bloque de script.  
   
 ## <a name="syntax"></a>Sintaxis  
   
@@ -40,16 +40,16 @@ HRESULT GetScriptBlockInfo(
   
 #### <a name="parameters"></a>Parámetros  
  `dwSourceContext`  
- [in] El contexto de origen para el bloque de script.  
+ de Contexto de origen para el bloque de script.  
   
  `ppasd`  
- [out] El motor de scripts para este bloque de script.  
+ enuncia Motor de scripts para este bloque de script.  
   
  `piCharPos`  
- [out] Ubicación del inicio del bloque de script.  
+ enuncia Ubicación del inicio del bloque de script.  
   
  `cChars`  
- [out] Número de caracteres del bloque de script.  
+ enuncia Número de caracteres del bloque de script.  
   
 ## <a name="return-value"></a>Valor devuelto  
  El método devuelve un objeto `HRESULT`. Entre los valores posibles se incluyen los que se indican en la tabla siguiente, entre otros.  
@@ -59,7 +59,7 @@ HRESULT GetScriptBlockInfo(
 |`S_OK`|El método se realizó correctamente.|  
   
 ## <a name="remarks"></a>Comentarios  
- Este método recupera el intervalo de caracteres y el motor de secuencia de comandos correspondiente a un bloque de script.  
+ Este método recupera el intervalo de caracteres y el motor de scripts correspondiente a un bloque de script.  
   
 ## <a name="see-also"></a>Vea también  
  [IDebugDocumentHelper (Interfaz)](../../winscript/reference/idebugdocumenthelper-interface.md)

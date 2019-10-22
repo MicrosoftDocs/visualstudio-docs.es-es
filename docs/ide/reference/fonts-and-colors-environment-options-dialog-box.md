@@ -25,12 +25,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b48c86c74b724dc6df5d5935f1340f6de0fc9185
-ms.sourcegitcommit: b14b7a938a2aba9fcce4d5e813aadf2040b0dcda
+ms.openlocfilehash: 5b05d6651f865a300a0c065c5e0a275cb29fd309
+ms.sourcegitcommit: ce1ab8a25c66a83e60eab80ed8e1596fe66dd85c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "58647471"
+ms.lasthandoff: 07/29/2019
+ms.locfileid: "68605415"
 ---
 # <a name="fonts-and-colors-environment-options-dialog-box"></a>Fuentes y colores, Entorno, Opciones (Cuadro de diálogo)
 
@@ -42,26 +42,26 @@ Los cambios de combinaciones de colores no surten efecto durante la sesión en l
 
 Enumera todos los elementos de la interfaz de usuario para los que puede cambiar las combinaciones de fuentes y colores. Después de seleccionar un elemento de esta lista, puede personalizar la configuración de color para el elemento seleccionado en **Elementos para mostrar**.
 
--   **Editor de texto**
+- **Editor de texto**
 
      Los cambios realizados en la configuración de visualización de estilo, tamaño y color para el Editor de texto afectan a la apariencia del texto en el editor de texto predeterminado. Esta configuración no afectará a los documentos abiertos en un editor de texto fuera del IDE
 
--   **Impresora**
+- **Impresora**
 
      Los cambios realizados en la configuración de visualización de estilo, tamaño y color para la Impresora afectan a la apariencia del texto en documentos impresos.
 
     > [!NOTE]
     > Según sea necesario, puede seleccionar una fuente predeterminada para imprimir distinta a la que se usa para mostrar en el editor de texto. Esto puede ser útil cuando imprima código que contiene caracteres tanto de un solo byte como de doble byte.
 
--   **Finalización de instrucciones**
+- **Finalización de instrucciones**
 
      Cambia el estilo de fuente y el tamaño del texto que aparece en los elementos emergentes de finalización de instrucciones del editor.
 
--   **Información sobre herramientas del editor**
+- **Información sobre herramientas del editor**
 
      Cambia el estilo de fuente y el tamaño del texto que aparece en Información sobre herramientas que se muestra en el editor.
 
--   **Fuente del entorno**
+- **Fuente del entorno**
 
      Cambia el estilo y el tamaño de la fuente de todos los elementos de la interfaz de usuario del IDE que aún no tienen una opción independiente en **Mostrar valores para**.
 
@@ -71,7 +71,7 @@ Enumera todos los elementos de la interfaz de usuario para los que puede cambiar
 
      ::: moniker-end
 
--   **[Todas las ventanas de herramientas de texto]**
+- **[Todas las ventanas de herramientas de texto]**
 
      Los cambios realizados en la configuración de visualización de estilo, tamaño y color para este elemento afectan a la apariencia del texto en ventanas de herramientas que tengan paneles de resultados en el IDE. Por ejemplo, la ventana de salida, la ventana de comandos, la ventana inmediata, etc.
 
@@ -99,7 +99,7 @@ Enumera los elementos de los que puede modificar el color de primer plano y de f
 
 Entre los elementos para mostrar se incluyen:
 
-|Elemento para mostrar|Descripción|
+|Elemento para mostrar|DESCRIPCIÓN|
 |------------------|-----------------|
 |**Texto sin formato**|Texto del editor.|
 |**Texto seleccionado**|Texto que se incluye en la selección actual cuando el editor tiene el foco.|
@@ -110,7 +110,7 @@ Entre los elementos para mostrar se incluyen:
 |**Marcador**|Líneas con marcadores. **Marcador** solo está visible si el margen del indicador está deshabilitado.|
 |**Coincidencia de llaves (resaltar)**|Resaltado que suele ser el formato de negrita para la coincidencia de llaves.|
 |**Coincidencia de llaves (rectángulo)**|Resaltado que suele ser un rectángulo gris en segundo plano.|
-|**Punto de interrupción (deshabilitado)**|No se utiliza.|
+|**Punto de interrupción (deshabilitado)**|No se usa.|
 |**Punto de interrupción (habilitado)**|Especifica el color de resaltado para las instrucciones o líneas que contienen puntos de interrupción simples. Esta opción solo es aplicable si los puntos de interrupción de nivel de instrucción están activos o si está seleccionada la opción **Resaltar la línea de código fuente para los puntos de interrupción o la instrucción actual** en [General, Depuración, Opciones (Cuadro de diálogo)](../../debugger/general-debugging-options-dialog-box.md).|
 |**Punto de interrupción (error)**|Especifica el color de resaltado para las instrucciones o líneas que contienen puntos de interrupción que están en un estado de error. Solo es aplicable si los puntos de interrupción de nivel de instrucción están activos o si está seleccionada la opción **Resaltar la línea de código fuente para los puntos de interrupción o la instrucción actual** en [General, Depuración, Opciones (Cuadro de diálogo)](../../debugger/general-debugging-options-dialog-box.md).|
 |**Punto de interrupción (advertencia)**|Especifica el color de resaltado para las instrucciones o líneas que contienen puntos de interrupción simples que están en un estado de advertencia. Solo es aplicable si los puntos de interrupción de nivel de instrucción están activos o si está seleccionada la opción **Resaltar la línea de código fuente para los puntos de interrupción o la instrucción actual** en [General, Depuración, Opciones (Cuadro de diálogo)](../../debugger/general-debugging-options-dialog-box.md).|
@@ -171,7 +171,7 @@ Entre los elementos para mostrar se incluyen:
 |**Cadena (C# @ Verbatim)**|Literales de cadena en C# que se interpretan literalmente. Por ejemplo:<br /><br /> @"x"|
 |**Error de sintaxis**|Errores de análisis.|
 |**Acceso directo de la Lista de tareas**|Si se agrega a una línea un acceso directo de la **Lista de tareas** y el margen del indicador está deshabilitado, se resaltará la línea.|
-|**Punto de seguimiento (deshabilitado)**|No se utiliza.|
+|**Punto de seguimiento (deshabilitado)**|No se usa.|
 |**Punto de seguimiento (habilitado)**|Especifica el color de resaltado para las instrucciones o líneas que contienen puntos de seguimiento simples. Esta opción solo es aplicable si los puntos de seguimiento de nivel de instrucción están activos o si está seleccionada la opción **Resaltar la línea de código fuente para los puntos de interrupción o la instrucción actual** en [General, Depuración, Opciones (Cuadro de diálogo)](../../debugger/general-debugging-options-dialog-box.md).|
 |**Punto de seguimiento (error)**|Especifica el color de resaltado para las instrucciones o líneas que contienen puntos de seguimiento que están en un estado de error. Esta opción solo es aplicable si los puntos de seguimiento de nivel de instrucción están activos o si está seleccionada la opción **Resaltar la línea de código fuente para los puntos de interrupción o la instrucción actual** en [General, Depuración, Opciones (Cuadro de diálogo)](../../debugger/general-debugging-options-dialog-box.md).|
 |**Punto de seguimiento (advertencia)**|Especifica el color de resaltado para las instrucciones o líneas que contienen puntos de seguimiento que están en un estado de advertencia. Esta opción solo es aplicable si los puntos de seguimiento de nivel de instrucción están activos o si está seleccionada la opción **Resaltar la línea de código fuente para los puntos de interrupción o la instrucción actual** en [General, Depuración, Opciones (Cuadro de diálogo)](../../debugger/general-debugging-options-dialog-box.md).|
@@ -216,11 +216,11 @@ Muestra los colores disponibles que puede seleccionar para el primer plano del e
 
 Los elementos pueden heredar el color de primer plano de otros elementos para mostrar como **Texto sin formato**. Con esta opción, al cambiar el color de un elemento para mostrar heredado, el color de los elementos mostrados relacionados también cambia automáticamente. Por ejemplo, si ha seleccionado el valor **Automático** para el **Error del compilador** y después ha cambiado el color del **Texto sin formato** a rojo, el **Error del compilador** también heredaría automáticamente el color rojo.
 
-**Predetermiado**
+**Valor predeterminado**
 
 Color que aparece para el elemento la primera vez que se abre Visual Studio. Al hacer clic en el botón **Usar valores predeterminados** restablece este color.
 
-**Custom**
+**Personalizada**
 
 Muestra el cuadro de diálogo Color para permitirle establecer un color personalizado para el elemento seleccionado en la lista Elementos para mostrar
 
@@ -235,11 +235,11 @@ Proporciona una paleta de colores de la que puede seleccionar un color de fondo 
 
 Los elementos pueden heredar el color de fondo de otros elementos para mostrar como **Texto sin formato**. Con esta opción, al cambiar el color de un elemento para mostrar heredado, el color de los elementos mostrados relacionados también cambia automáticamente. Por ejemplo, si ha seleccionado el valor **Automático** para el **Error del compilador** y después ha cambiado el color del **Texto sin formato** a rojo, el **Error del compilador** también heredaría automáticamente el color rojo.
 
-**Predetermiado**
+**Valor predeterminado**
 
 Color que aparece para el elemento la primera vez que se abre Visual Studio. Al hacer clic en el botón **Usar valores predeterminados** restablece este color.
 
-**Custom**
+**Personalizada**
 
 Muestra el cuadro de diálogo Color para permitirle establecer un color personalizado para el elemento seleccionado en la lista Elementos para mostrar
 
@@ -253,6 +253,5 @@ Muestra un ejemplo de la combinación de colores, del tamaño y del estilo de la
 
 ## <a name="see-also"></a>Vea también
 
-- [Opciones de entorno (Cuadro de diálogo)](../../ide/reference/environment-options-dialog-box.md)
 - [Opciones (cuadro de diálogo)](../../ide/reference/options-dialog-box-visual-studio.md)
-- [Cómo: cambiar fuentes y colores](../../ide/how-to-change-fonts-and-colors-in-visual-studio.md)
+- [Uso de cambiar fuentes y colores](../../ide/how-to-change-fonts-and-colors-in-visual-studio.md)

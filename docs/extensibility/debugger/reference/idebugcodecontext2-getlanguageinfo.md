@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugCodeContext2::GetLanguageInfo
 ms.assetid: 03002ef1-9fe6-44b6-b23b-ef7b86b2b21b
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e4afcb2a8fd9de89b74fccec373e71e19264fe56
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 08138fcd67e7d4fd5115ac13fe1b8348f76245d8
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56712494"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66339014"
 ---
 # <a name="idebugcodecontext2getlanguageinfo"></a>IDebugCodeContext2::GetLanguageInfo
 Obtiene la información de idioma para este contexto de código.
@@ -38,14 +41,12 @@ int GetLanguageInfo( 
 );
 ```
 
-#### <a name="parameters"></a>Parámetros
- `pbstrLanguage`
+## <a name="parameters"></a>Parámetros
+`pbstrLanguage`\
+[in, out] Devuelve una cadena que contiene el nombre del lenguaje, como "C++."
 
- [in, out] Devuelve una cadena que contiene el nombre del lenguaje, por ejemplo, "C++".
-
- `pguidLanguage`
-
- [in, out] Devuelve el GUID para el idioma del contexto del código, por ejemplo, `guidCPPLang`.
+`pguidLanguage`\
+[in, out] Devuelve el GUID para el idioma del contexto del código, por ejemplo, `guidCPPLang`.
 
 ## <a name="return-value"></a>Valor devuelto
  Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.

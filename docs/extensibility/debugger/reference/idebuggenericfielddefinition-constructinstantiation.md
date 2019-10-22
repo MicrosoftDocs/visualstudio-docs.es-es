@@ -6,17 +6,20 @@ helpviewer_keywords:
 - ConstructInstantiation
 - IDebugGenericFieldDefinition::ConstructInstantiation
 ms.assetid: ef8ae261-a98b-4dc2-93b3-7c5191818ba2
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8c2fc6b9b7683180c3a9c3f2aa967ba171a48097
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 89f7ecfc79cc2a4279a8ca0fccfc527ef63e603b
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56690687"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66313211"
 ---
 # <a name="idebuggenericfielddefinitionconstructinstantiation"></a>IDebugGenericFieldDefinition::ConstructInstantiation
 Crea una instancia del campo dada una matriz de argumentos de tipo.
@@ -39,18 +42,15 @@ int ConstructInstantiation(
 );
 ```
 
-#### <a name="parameters"></a>Parámetros
- `cArgs`
+## <a name="parameters"></a>Parámetros
+`cArgs`\
+[in] Número de argumentos de la `ppArgs` matriz.
 
- [in] Número de argumentos de la `ppArgs` matriz.
+`ppArgs`\
+[in] Matriz que contiene los argumentos de tipo. Los argumentos de tipo deben ser tipos cerrados (genéricos no genérica o totalmente con instancias).
 
- `ppArgs`
-
- [in] Matriz que contiene los argumentos de tipo. Los argumentos de tipo deben ser tipos cerrados (genéricos no genérica o totalmente con instancias).
-
- `ppConstructedField`
-
- [out] Devuelve el [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) interfaz que representa el nuevo campo.
+`ppConstructedField`\
+[out] Devuelve el [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) interfaz que representa el nuevo campo.
 
 ## <a name="return-value"></a>Valor devuelto
  Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.

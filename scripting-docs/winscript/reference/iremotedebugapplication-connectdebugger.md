@@ -1,5 +1,5 @@
 ---
-title: IRemoteDebugApplication::ConnectDebugger | Microsoft Docs
+title: 'Iremotedebugapplication (:: ConnectDebugger | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 189f0bcbcb5b45e1da477fa18b131aecc913a4c5
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 7ed0ddeffd55475e1be4c9fab1e567d61a4b6654
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58148144"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72572326"
 ---
 # <a name="iremotedebugapplicationconnectdebugger"></a>IRemoteDebugApplication::ConnectDebugger
-Se conecta a un depurador a esta aplicación.  
+Conecta un depurador a esta aplicación.  
   
 ## <a name="syntax"></a>Sintaxis  
   
@@ -37,7 +37,7 @@ HRESULT ConnectDebugger(
   
 #### <a name="parameters"></a>Parámetros  
  `pad`  
- [in] El depurador se asocie a esta aplicación.  
+ de Depurador que se va a adjuntar a esta aplicación.  
   
 ## <a name="return-value"></a>Valor devuelto  
  El método devuelve un objeto `HRESULT`. Entre los valores posibles se incluyen los que se indican en la tabla siguiente, entre otros.  
@@ -48,8 +48,8 @@ HRESULT ConnectDebugger(
 |`E_FAIL`|Un depurador ya está conectado a esta aplicación.|  
   
 ## <a name="remarks"></a>Comentarios  
- Una aplicación puede tener solo un depurador conectado a la vez. Este método produce un error si ya está conectado un depurador.  
+ Una aplicación solo puede tener un depurador conectado a la vez. Este método produce un error si ya hay un depurador conectado.  
   
 ## <a name="see-also"></a>Vea también  
- [IRemoteDebugApplication::GetDebugger](../../winscript/reference/iremotedebugapplication-getdebugger.md)   
+ [Iremotedebugapplication (:: GetDebugger](../../winscript/reference/iremotedebugapplication-getdebugger.md)    
  [IRemoteDebugApplication (Interfaz)](../../winscript/reference/iremotedebugapplication-interface.md)

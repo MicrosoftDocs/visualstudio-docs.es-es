@@ -11,12 +11,12 @@ ms.assetid: 5b3b5b08-5e9b-41be-ac72-c63957faed22
 caps.latest.revision: 21
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 71ead1b49c9bcefc193f8e1c896b35a478a771a3
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: e7b65eae0dcd71c2ad1bb3d72bf08ea90e69036a
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60064861"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63441258"
 ---
 # <a name="test-area-1-add-toopen-from-source-control"></a>Área de prueba 1: Agregar a / abrir desde Control de código fuente
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -39,7 +39,7 @@ Este complemento de control de origen de prueba área abarca la colocación de l
 - Para [!INCLUDE[vsvss](../../includes/vsvss-md.md)], agregar control de código fuente también está disponible en **archivo**, **agregar**, **proyecto existente**; Fíjese en el [!INCLUDE[vsvss](../../includes/vsvss-md.md)] ubicación.  
   
     > [!NOTE]
-    >  En esta prueba se puede usar una ruta de acceso de un archivo local o un servidor de IIS local (servidor web).  
+    > En esta prueba se puede usar una ruta de acceso de un archivo local o un servidor de IIS local (servidor web).  
   
 ## <a name="expected-behavior"></a>Comportamiento esperado  
   

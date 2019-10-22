@@ -13,11 +13,11 @@ caps.latest.revision: 15
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 77e4701d3d8ec54fd37d6483f55b10a28af65b15
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58987182"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68194051"
 ---
 # <a name="popdirlistfunc"></a>POPDIRLISTFUNC
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,7 +40,7 @@ typedef BOOL (*POPDIRLISTFUNC)(
  pvCallerData  
  [in] Valor del usuario [SccPopulateDirList](../extensibility/sccpopulatedirlist-function.md).  
   
- bFolder  
+ bcarpeta  
  [in] `TRUE` si el nombre en `lpDirectoryOrFileName` es un directorio; en caso contrario, el nombre es un nombre de archivo.  
   
  lpDirectoryOrFileName  
@@ -49,7 +49,7 @@ typedef BOOL (*POPDIRLISTFUNC)(
 ## <a name="return-value"></a>Valor devuelto  
  El IDE devuelve un código de error adecuado:  
   
-|Valor|Descripción|  
+|Value|DESCRIPCIÓN|  
 |-----------|-----------------|  
 |SCC_OK|Continuar el procesamiento.|  
 |SCC_I_OPERATIONCANCELED|Detener el procesamiento.|  

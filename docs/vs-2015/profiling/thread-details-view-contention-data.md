@@ -14,11 +14,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 16ee86e69cb3a150a98de5077aa0c545545833e8
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60069112"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68145589"
 ---
 # <a name="thread-details-view---contention-data"></a>Vista Detalles del subproceso: datos de contención
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

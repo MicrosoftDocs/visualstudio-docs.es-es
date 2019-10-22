@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugReference2 interface
 ms.assetid: 3cfed312-f532-4bce-84a5-1677c14567d7
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d34b7a915f2eb2bd1ddf9440c543d652de8eb892
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 66d35b636516df1052ffa2a70c25da79851dd833
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56713339"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66329656"
 ---
 # <a name="idebugreference2"></a>IDebugReference2
 Esta interfaz representa una referencia a una propiedad de marco de pila o alguna otra propiedad.
 
 > [!NOTE]
->  `IDebugReference2` está reservado para uso futuro y todos sus métodos deben devolver `E_NOTIMPL`.
+> `IDebugReference2` está reservado para uso futuro y todos sus métodos deben devolver `E_NOTIMPL`.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -57,7 +57,7 @@ IDebugReference2 : IUnknown
 ## <a name="remarks"></a>Comentarios
 
 > [!NOTE]
->  Este uso de "propiedad" no debe confundirse con la que lo que significa que una variable de miembro de una clase, aunque un `IDebugReference2` puede representar dicha entidad.
+> Este uso de "propiedad" no debe confundirse con la que lo que significa que una variable de miembro de una clase, aunque un `IDebugReference2` puede representar dicha entidad.
 
 - [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) representa una propiedad, mientras que `IDebugReference2` representa una referencia a una propiedad, normalmente una referencia a un objeto en el programa que se está depurando.
 

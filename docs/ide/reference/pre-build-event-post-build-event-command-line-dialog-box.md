@@ -1,6 +1,7 @@
 ---
 title: Línea de comandos del evento anterior/posterior a la compilación (Cuadro de diálogo)
 ms.date: 11/04/2016
+ms.technology: vs-ide-compile
 ms.topic: reference
 f1_keywords:
 - cs.ProjectPropertiesBuildEventsBuilder
@@ -28,50 +29,51 @@ helpviewer_keywords:
 - $(ProjectName)
 - build events, macros
 ms.assetid: d49b2c57-24bf-4fb2-8351-5c4b6cca938f
-author: gewarren
-ms.author: gewarren
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bef757222638d35c0f90d0c25e7836d49d1d1e1f
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: d5671a75a847d81caedeffc17ea436eade060f3e
+ms.sourcegitcommit: 85d66dc9fea3fa49018263064876b15aeb6f9584
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55939819"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68461319"
 ---
 # <a name="pre-build-eventpost-build-event-command-line-dialog-box"></a>Línea de comandos del evento anterior/posterior a la compilación (Cuadro de diálogo)
+
 Puede escribir eventos anteriores o posteriores a la compilación para la [página Eventos de compilación, Diseñador de proyectos (C#)](../../ide/reference/build-events-page-project-designer-csharp.md) directamente en el cuadro de edición o puede seleccionar macros anteriores o posteriores a la compilación de una lista de macros disponibles.
 
 > [!NOTE]
 > Los eventos anteriores a la compilación no se ejecutan si el proyecto está actualizado y no se desencadena ninguna compilación.
 
-
 ## <a name="ui-element-list"></a>Lista de elementos de la interfaz de usuario
- **Cuadro de edición de línea de comandos**
 
- Contiene los eventos que se van a ejecutar, ya sean anteriores o posteriores a la compilación.
+**Cuadro de edición de línea de comandos**
+
+Contiene los eventos que se van a ejecutar, ya sean anteriores o posteriores a la compilación.
 
 > [!NOTE]
-> Agregue una instrucción `call` antes de todos los comandos posteriores a la compilación que ejecutan archivos .bat. Por ejemplo: `call C:\MyFile.bat` o `call C:\MyFile.bat call C:\MyFile2.bat`.
+> Agregue una instrucción `call` antes de todos los comandos posteriores a la compilación que ejecutan archivos .bat. Por ejemplo, `call C:\MyFile.bat` o `call C:\MyFile.bat call C:\MyFile2.bat`.
 
+**Macros**
 
- **Macros**
+Expande el cuadro de edición para mostrar una lista de macros que se van a insertar en el cuadro de edición de la línea de comandos.
 
- Expande el cuadro de edición para mostrar una lista de macros que se van a insertar en el cuadro de edición de la línea de comandos.
+**Tabla de macros**
 
- **Tabla de macros**
+Se enumeran las macros disponibles y su valor. Vea la sección Macros siguiente para obtener una descripción de cada una. Al insertar las macros en el cuadro de edición de la línea de comandos, solo puede seleccionarlas de una en una.
 
- Se enumeran las macros disponibles y su valor. Vea la sección Macros siguiente para obtener una descripción de cada una. Al insertar las macros en el cuadro de edición de la línea de comandos, solo puede seleccionarlas de una en una.
+**Insertar**
 
- **Insertar**
-
- Inserta en el cuadro de edición de la línea de comandos la macro seleccionada en la tabla de macros.
+Inserta en el cuadro de edición de la línea de comandos la macro seleccionada en la tabla de macros.
 
 ### <a name="macros"></a>Macros
- Puede usar cualquiera de estas macros para especificar las ubicaciones de los archivos o para obtener el nombre real del archivo de entrada en el caso de las selecciones múltiples. Estas macros no distinguen entre mayúsculas y minúsculas.
 
-|Macro|Descripción|
+Puede usar cualquiera de estas macros para especificar las ubicaciones de los archivos o para obtener el nombre real del archivo de entrada en el caso de las selecciones múltiples. Estas macros no distinguen entre mayúsculas y minúsculas.
+
+|Macro|DESCRIPCIÓN|
 |-----------|-----------------|
 |`$(ConfigurationName)`|El nombre de la configuración del proyecto actual (por ejemplo, "Depuración").|
 |`$(OutDir)`|Ruta de acceso al directorio de archivos de salida relativo al directorio del proyecto. Se resuelve en el valor de la propiedad Directorio de salida. Incluye la barra diagonal inversa final “\\”.|
@@ -97,5 +99,5 @@ Puede escribir eventos anteriores o posteriores a la compilación para la [pági
 
 - [Especificar eventos de compilación personalizados en Visual Studio](../../ide/specifying-custom-build-events-in-visual-studio.md)
 - [Página Eventos de compilación, (Diseñador de proyectos) (C#)](../../ide/reference/build-events-page-project-designer-csharp.md)
-- [Cómo: Especificar eventos de compilación (Visual Basic)](../../ide/how-to-specify-build-events-visual-basic.md)
-- [Cómo: Especificar eventos de compilación (C#)](../../ide/how-to-specify-build-events-csharp.md)
+- [Uso de Especificar eventos de compilación (Visual Basic)](../../ide/how-to-specify-build-events-visual-basic.md)
+- [Uso de Especificar eventos de compilación (C#)](../../ide/how-to-specify-build-events-csharp.md)

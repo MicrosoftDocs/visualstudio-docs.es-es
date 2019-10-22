@@ -13,11 +13,11 @@ caps.latest.revision: 14
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 7f2660ca99d8704f5dd8e7b9aa66c9c8fc5bdbb6
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58988581"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68143740"
 ---
 # <a name="sccsetoption-function"></a>SccSetOption (Función)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -47,7 +47,7 @@ SCCRTN SccSetOption(
 ## <a name="return-value"></a>Valor devuelto  
  La implementación de complemento de control de origen de esta función debe devolver uno de los valores siguientes:  
   
-|Valor|Descripción|  
+|Value|DESCRIPCIÓN|  
 |-----------|-----------------|  
 |SCC_OK|La opción se estableció correctamente.|  
 |SCC_I_SHARESUBPROJOK|Devuelve si `nOption` era `SCC_OPT_SHARESUBPROJ` y el complemento de control de código fuente permite que el IDE establecer la carpeta de destino.|  
@@ -58,7 +58,7 @@ SCCRTN SccSetOption(
   
  Resumen de las opciones y sus valores:  
   
-|`nOption`|`dwValue`|Descripción|  
+|`nOption`|`dwValue`|DESCRIPCIÓN|  
 |---------------|---------------|-----------------|  
 |`SCC_OPT_EVENTQUEUE`|`SCC_OPT_EQ_DISABLE`<br /><br /> `SCC_OPT_EQ_ENABLE`|Habilita o deshabilita la puesta en cola eventos de fondo.|  
 |`SCC_OPT_USERDATA`|Valor arbitrario|Especifica un valor de usuario que se pasarán a la [OPTNAMECHANGEPFN](../extensibility/optnamechangepfn.md) función de devolución de llamada.|  

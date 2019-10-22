@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugThread2::Suspend
 ms.assetid: 1e20be85-aa12-48de-bb83-0bf0976e99ae
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e45cee0acab5fb2b5165e28895ab9a7dcb3ed9c1
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: dc3abcc00d99e82a4af2e3886310772e47127274
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56683667"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66320007"
 ---
 # <a name="idebugthread2suspend"></a>IDebugThread2::Suspend
 Suspende un subproceso.
@@ -36,10 +39,9 @@ HRESULT Suspend ( 
 );
 ```
 
-#### <a name="parameters"></a>Parámetros
- `pdwSuspendCount`
-
- [out] Devuelve el recuento de suspensión después de la operación de suspensión.
+## <a name="parameters"></a>Parámetros
+`pdwSuspendCount`\
+[out] Devuelve el recuento de suspensión después de la operación de suspensión.
 
 ## <a name="return-value"></a>Valor devuelto
  Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.

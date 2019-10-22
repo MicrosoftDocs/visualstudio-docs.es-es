@@ -1,5 +1,5 @@
 ---
-title: Mediante el Diseñador de flujo de trabajo | Documentos de Microsoft
+title: Usar el Diseñador de flujo de trabajo | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-workflow-designer
@@ -9,37 +9,30 @@ helpviewer_keywords:
 - Visual Studio 2010 Workflow Designer [WFD], using
 ms.assetid: 991a942f-29bc-4868-9299-ed80c5665ab5
 caps.latest.revision: 13
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 6e60c314a6886831758f403402958cfe97c4a4fc
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 1490708dc3dce4120d79879ded69283dd6108f67
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58998664"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72656368"
 ---
 # <a name="using-the-workflow-designer"></a>Utilizar el Diseñador de flujo de trabajo
-En esta sección se ofrecen detalles sobre cómo crear actividades y proyectos de flujo de trabajo nuevos mediante diseñadores integrados y el editor de expresiones que hospedan algunos de los diseñadores de actividades.  
-  
-## <a name="in-this-section"></a>En esta sección  
- [Crear un proyecto de flujo de trabajo](../workflow-designer/creating-a-workflow-project.md)  
- Temas que describen cómo crear bibliotecas a través del uso de estas plantillas.  
-  
- [Cómo: Agregar actividades al cuadro de herramientas](../workflow-designer/how-to-add-activities-to-the-toolbox.md)  
- Muestra las distintas formas de agregar actividades al cuadro de herramientas.  
-  
- [Cómo: Usar el diseñador de argumentos](../workflow-designer/how-to-use-the-argument-designer.md)  
- Muestra lo fácil que resulta hacer que los datos entren y salgan de una actividad con el diseñador de argumentos.  
-  
- [Cómo: Usar el diseñador de variables](../workflow-designer/how-to-use-the-variable-designer.md)  
- Muestra cómo crear variables para utilizarlas en escenarios de enlace de datos e instrucciones condicionales.  
-  
- [Cómo: Usar el Editor de expresiones](../workflow-designer/how-to-use-the-expression-editor.md)  
- Muestra cómo utilizar el Editor de expresiones para escribir y evaluar expresiones.  
-  
- [Cómo: Usar el diseñador de importaciones](../workflow-designer/how-to-use-the-imports-designer.md)  
- Muestra cómo escribir espacios de nombres para los tipos que utiliza en sus expresiones.  
-  
- [Cómo: Usar la ruta de navegación](../workflow-designer/how-to-use-breadcrumb-navigation.md)  
- Muestra cómo navegar entre las actividades.
+En esta sección se ofrecen detalles sobre cómo crear actividades y proyectos de flujo de trabajo nuevos mediante diseñadores integrados y el editor de expresiones que hospedan algunos de los diseñadores de actividades.
+
+## <a name="in-this-section"></a>En esta sección
+ [Crear un proyecto de flujo de trabajo](../workflow-designer/creating-a-workflow-project.md) Temas en los que se describe cómo crear bibliotecas mediante el uso de estas plantillas.
+
+ [Cómo: agregar actividades al cuadro de herramientas](../workflow-designer/how-to-add-activities-to-the-toolbox.md) Muestra las diferentes maneras de agregar actividades al cuadro de herramientas.
+
+ [Cómo: usar el diseñador de argumentos](../workflow-designer/how-to-use-the-argument-designer.md) Muestra cómo el diseñador de argumentos facilita el flujo de datos dentro y fuera de una actividad.
+
+ [Cómo: usar el diseñador de variables](../workflow-designer/how-to-use-the-variable-designer.md) Muestra cómo crear variables para su uso en escenarios de enlace de datos e instrucciones condicionales.
+
+ [Cómo: usar el editor de expresiones](../workflow-designer/how-to-use-the-expression-editor.md) Muestra cómo usar el editor de expresiones para escribir y evaluar expresiones.
+
+ [Cómo: usar el diseñador de importaciones](../workflow-designer/how-to-use-the-imports-designer.md) Muestra cómo especificar espacios de nombres para los tipos que se usan en las expresiones.
+
+ [Cómo: usar la ruta de navegación](../workflow-designer/how-to-use-breadcrumb-navigation.md) Muestra cómo navegar entre las actividades.

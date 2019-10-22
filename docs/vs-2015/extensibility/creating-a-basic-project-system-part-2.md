@@ -12,12 +12,12 @@ ms.assetid: aee48fc6-a15f-4fd5-8420-7f18824de220
 caps.latest.revision: 24
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 6004e7346ab4bb4bb8d95c04fbbbdd86e1527001
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: b6d44e99b584ec347abd407753f965170658969b
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60079609"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65685411"
 ---
 # <a name="creating-a-basic-project-system-part-2"></a>Creación de un sistema de proyectos básico, parte 2
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,7 +39,7 @@ El primer tutorial de esta serie, [creación de un sistema de proyectos básico,
 - Crear una página de propiedades del proyecto.  
   
 > [!NOTE]
->  Los pasos descritos en este tutorial se basan en un proyecto de C#. Sin embargo, excepto para obtener información específica como extensiones de nombre de archivo y el código, puede usar los mismos pasos para un proyecto de Visual Basic.  
+> Los pasos descritos en este tutorial se basan en un proyecto de C#. Sin embargo, excepto para obtener información específica como extensiones de nombre de archivo y el código, puede usar los mismos pasos para un proyecto de Visual Basic.  
   
 ## <a name="creating-a-visual-studio-template"></a>Crear una plantilla de Visual Studio  
  [Creación de un sistema de proyectos básico, parte 1](../extensibility/creating-a-basic-project-system-part-1.md) se muestra cómo crear una plantilla de proyecto básico y agregarlo al sistema del proyecto. También muestra cómo registrar esta plantilla con Visual Studio mediante el uso de la <xref:Microsoft.VisualStudio.Shell.ProvideProjectFactoryAttribute> atributo, que escribe la ruta de acceso completa de la carpeta \Templates\Projects\SimpleProject\ en el registro del sistema.  
@@ -100,7 +100,7 @@ El primer tutorial de esta serie, [creación de un sistema de proyectos básico,
 - El \<ProjectType > elemento nombra el tipo de proyecto en el **nuevo proyecto** cuadro de diálogo. Este nombre reemplaza el parámetro de nombre de proyecto del atributo ProvideProjectFactory.  
   
   > [!NOTE]
-  >  El \<ProjectType > elemento debe coincidir con el `LanguageVsTemplate` argumento de la `ProvideProjectFactory` atributo en el archivo SimpleProjectPackage.cs.  
+  > El \<ProjectType > elemento debe coincidir con el `LanguageVsTemplate` argumento de la `ProvideProjectFactory` atributo en el archivo SimpleProjectPackage.cs.  
   
   El \<TemplateContent > sección describen estos archivos que se generan cuando se crea un nuevo proyecto:  
   
@@ -115,7 +115,7 @@ El primer tutorial de esta serie, [creación de un sistema de proyectos básico,
   Para obtener más información acerca de los elementos en el esquema de plantilla de Visual Studio, consulte el [Visual Studio Template Schema Reference](../extensibility/visual-studio-template-schema-reference.md).  
   
 > [!NOTE]
->  Si un proyecto tiene más de una plantilla de Visual Studio, cada plantilla está en una carpeta independiente. Todos los archivos de esa carpeta deben tener la **acción de compilación** establecido en **ZipProject**.  
+> Si un proyecto tiene más de una plantilla de Visual Studio, cada plantilla está en una carpeta independiente. Todos los archivos de esa carpeta deben tener la **acción de compilación** establecido en **ZipProject**.  
   
 ## <a name="adding-a-minimal-vsct-file"></a>Adición de un archivo .vsct mínimo  
  Visual Studio se debe ejecutar en modo de instalación para reconocer una plantilla de Visual Studio nueva o modificada. Modo de instalación requiere un archivo .vsct estén presentes. Por lo tanto, debe agregar un archivo .vsct mínimo al proyecto.  
@@ -281,7 +281,7 @@ ZipProjects:
   
 - $safeprojectname$ es el nombre proporcionado por el usuario en el **nuevo proyecto** cuadro de diálogo, puede modificado para quitar todos los caracteres no seguros y espacios.  
   
-  Para obtener una lista completa de parámetros de plantilla, vea [Parámetros de plantilla](../ide/template-parameters.md).  Si desea crear su propio parámetro de plantilla personalizada, vea [NIB: Procedimiento Pasar parámetros personalizados a plantillas](http://msdn.microsoft.com/5bc2ad11-84c7-4683-a276-e5e00d85d8fb).  
+  Para obtener una lista completa de parámetros de plantilla, vea [Parámetros de plantilla](../ide/template-parameters.md).  Si desea crear su propio parámetro de plantilla personalizada, vea [NIB: Procedimiento Pasar parámetros personalizados a plantillas](https://msdn.microsoft.com/5bc2ad11-84c7-4683-a276-e5e00d85d8fb).  
   
 #### <a name="to-substitute-project-template-parameters"></a>Sustituir los parámetros de plantilla de proyecto  
   

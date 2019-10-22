@@ -1,5 +1,5 @@
 ---
-title: IDebugDocumentTextEvents::onReplaceText | Microsoft Docs
+title: 'Idebugdocumenttextevents (:: onReplaceText | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,12 +17,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b65496f3bf64dfaf1a4fc1f1180dd6715277cd59
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: d037d45f1232ec8e70f7602df33532624fd0aa3b
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58152985"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72576002"
 ---
 # <a name="idebugdocumenttexteventsonreplacetext"></a>IDebugDocumentTextEvents::onReplaceText
 Indica que se ha reemplazado el texto.  
@@ -38,10 +38,10 @@ HRESULT onReplaceText(
   
 #### <a name="parameters"></a>Parámetros  
  `cCharacterPosition`  
- [in] Reemplaza la posición del carácter del primer carácter.  
+ de Posición de carácter del primer carácter reemplazado.  
   
  `cNumToReplace`  
- [in] El número de caracteres reemplazados.  
+ de Número de caracteres reemplazados.  
   
 ## <a name="return-value"></a>Valor devuelto  
  El método devuelve un objeto `HRESULT`. Entre los valores posibles se incluyen los que se indican en la tabla siguiente, entre otros.  
@@ -51,7 +51,7 @@ HRESULT onReplaceText(
 |`S_OK`|El método se realizó correctamente.|  
   
 ## <a name="remarks"></a>Comentarios  
- Este método indica que se ha reemplazado el texto.  
+ Este método indica que el texto se ha reemplazado.  
   
 ## <a name="see-also"></a>Vea también  
  [IDebugDocumentTextEvents (Interfaz)](../../winscript/reference/idebugdocumenttextevents-interface.md)

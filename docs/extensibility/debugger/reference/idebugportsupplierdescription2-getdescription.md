@@ -5,17 +5,20 @@ ms.topic: reference
 helpviewer_keywords:
 - IDebugPortSupplierDescription2::GetDescription
 ms.assetid: bff5f536-1cd1-4313-8856-db7b05818305
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b6dce3520a55143a40c2370f58b1fe044c95cb4a
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 7619421e66b8f6e68c252fd2c2885272003bb6e8
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56685682"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66339938"
 ---
 # <a name="idebugportsupplierdescription2getdescription"></a>IDebugPortSupplierDescription2::GetDescription
 Recupera la descripción y los metadatos de descripción para el proveedor del puerto.
@@ -36,14 +39,12 @@ public int GetDescription(
 );
 ```
 
-#### <a name="parameters"></a>Parámetros
- `pdwFlags`
+## <a name="parameters"></a>Parámetros
+`pdwFlags`\
+[out] Marcas de metadatos para la descripción.
 
- [out] Marcas de metadatos para la descripción.
-
- `pbstrText`
-
- [out] Descripción del proveedor del puerto.
+`pbstrText`\
+[out] Descripción del proveedor del puerto.
 
 ## <a name="return-value"></a>Valor devuelto
  Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.

@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9ca0b183f0616705ec61475c4570fa11ce89640d
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.openlocfilehash: 23b8d43931b880ff61ec9871f9f5984b98833c28
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56622285"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "64787896"
 ---
 # <a name="idiasymbolgetcontainer"></a>IDiaSymbol::get_container
 Esta función recupera un puntero a un símbolo que representa el elemento primario o el contenedor de este símbolo.
@@ -39,11 +39,11 @@ HRESULT get_container(
  Si se realiza correctamente, devuelve S_OK; en caso contrario, devuelve S_FALSE o un código de error.
 
 > [!NOTE]
->  Un valor devuelto de S_FALSE significa que la propiedad no está disponible para el símbolo.
+> Un valor devuelto de S_FALSE significa que la propiedad no está disponible para el símbolo.
 
 ## <a name="requirements"></a>Requisitos
 
-|Requisito|Descripción|
+|Requisito|DESCRIPCIÓN|
 |-----------------|-----------------|
 |Encabezado:|dia2.h|
 |Versión:|SDK de DIA v8.0|

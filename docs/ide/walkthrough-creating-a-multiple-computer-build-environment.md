@@ -1,21 +1,22 @@
 ---
 title: 'Tutorial: Creación de un entorno de compilación para varios equipos'
 ms.date: 11/04/2016
+ms.technology: vs-ide-compile
 ms.topic: conceptual
 helpviewer_keywords:
 - MSBuild, building on multiple computers
 - build environment, MSBuild
-author: gewarren
-ms.author: gewarren
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d2ca4e45c83aa3291b922694ebd16df5ab7fc35e
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 11b158854a0026de28cb2fb0a582bbaf764eeaa4
+ms.sourcegitcommit: 85d66dc9fea3fa49018263064876b15aeb6f9584
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "57870512"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68461537"
 ---
 # <a name="walkthrough-create-a-multiple-computer-build-environment"></a>Tutorial: Creación de un entorno de compilación para varios equipos
 
@@ -23,7 +24,7 @@ Se puede crear un entorno de compilación dentro de la organización si se insta
 
 Este documento no confiere ningún derecho para redistribuir el software externamente ni para proporcionar entornos de compilación a terceros.
 
-> Declinación de responsabilidades<br /><br /> Este documento se proporciona "tal cual". Si bien hemos probado los pasos descritos, no es posible probar de forma exhaustiva todas las configuraciones. Intentaremos mantener el documento actualizado con cualquier información adicional que aprendamos. La información y los puntos de vista expresados en este documento, incluidas las direcciones URL y otras referencias a sitios web de Internet, pueden cambiar sin previo aviso. Microsoft no proporciona ninguna garantía, expresa o implícita, con respecto a la información proporcionada aquí. Usted asume el riesgo de utilizarla.<br /><br /> Este documento no le proporciona ningún derecho legal sobre ninguna propiedad intelectual de ningún producto de Microsoft. Puede copiar y usar este documento para su uso interno de referencia.<br /><br /> No tiene ninguna obligación de proporcionar a Microsoft ninguna sugerencia ni ningún comentario ("Comentario”) con respecto a este documento. Sin embargo, cualquier Comentario que proporcione voluntariamente se puede utilizar en productos de Microsoft y especificaciones relacionadas u otra documentación (denominados colectivamente "Ofertas de Microsoft") que a su vez pueden utilizar terceros para desarrollar sus propios productos. Por tanto, si proporciona Comentarios a Microsoft sobre cualquier versión de este documento o las Ofertas de Microsoft a las que se aplican, acepta lo siguiente: (a) Microsoft puede utilizar, reproducir, licenciar, distribuir y comercializar libremente sus Comentarios sobre cualquier Oferta de Microsoft; (b) También concede a terceros, de forma gratuita, únicamente los derechos de patente necesarios para permitir que otros productos utilicen o interactúen con cualquier parte determinada de un Producto de Microsoft que incorpore sus Comentarios; y (c) No ofrecerá a Microsoft Comentarios (i) que tenga razones para creer que están sujetos a cualquier patente, copyright u otro derecho o reclamación de propiedad intelectual de cualquier tercero; o (ii) sujetos a términos de licencia que obliguen a que cualquier Oferta de Microsoft que incorpore o derive de esos Comentarios, u otra propiedad intelectual de Microsoft, se ofrezca en licencia o se comparta de otra forma con ningún tercero.
+> Renuncia de responsabilidades<br /><br /> Este documento se proporciona "tal cual". Si bien hemos probado los pasos descritos, no es posible probar de forma exhaustiva todas las configuraciones. Intentaremos mantener el documento actualizado con cualquier información adicional que aprendamos. La información y los puntos de vista expresados en este documento, incluidas las direcciones URL y otras referencias a sitios web de Internet, pueden cambiar sin previo aviso. Microsoft no proporciona ninguna garantía, expresa o implícita, con respecto a la información proporcionada aquí. Usted asume el riesgo de utilizarla.<br /><br /> Este documento no le proporciona ningún derecho legal sobre ninguna propiedad intelectual de ningún producto de Microsoft. Puede copiar y usar este documento para su uso interno de referencia.<br /><br /> No tiene ninguna obligación de proporcionar a Microsoft ninguna sugerencia ni ningún comentario ("Comentario”) con respecto a este documento. Sin embargo, cualquier Comentario que proporcione voluntariamente se puede utilizar en productos de Microsoft y especificaciones relacionadas u otra documentación (denominados colectivamente "Ofertas de Microsoft") que a su vez pueden utilizar terceros para desarrollar sus propios productos. Por tanto, si proporciona Comentarios a Microsoft sobre cualquier versión de este documento o las Ofertas de Microsoft a las que se aplican, acepta lo siguiente: (a) Microsoft puede utilizar, reproducir, licenciar, distribuir y comercializar libremente sus Comentarios sobre cualquier Oferta de Microsoft; (b) También concede a terceros, de forma gratuita, únicamente los derechos de patente necesarios para permitir que otros productos utilicen o interactúen con cualquier parte determinada de un Producto de Microsoft que incorpore sus Comentarios; y (c) No ofrecerá a Microsoft Comentarios (i) que tenga razones para creer que están sujetos a cualquier patente, copyright u otro derecho o reclamación de propiedad intelectual de cualquier tercero; o (ii) sujetos a términos de licencia que obliguen a que cualquier Oferta de Microsoft que incorpore o derive de esos Comentarios, u otra propiedad intelectual de Microsoft, se ofrezca en licencia o se comparta de otra forma con ningún tercero.
 
 Este tutorial se validó con estos sistemas operativos:
 
@@ -47,7 +48,7 @@ Visual Studio con la carga de trabajo de **desarrollo para el escritorio de .NET
 
 ## <a name="install-software-on-the-computers"></a>Instalación de software en los equipos
 
-En primer lugar, configure el equipo host y configure después el equipo de compilación.
+En primer lugar, configure el equipo host y, luego, el equipo de compilación.
 
 Al instalar Visual Studio en el equipo host, se crean los archivos y las configuraciones que copiará al equipo de compilación más adelante. Puede instalar Visual Studio en un equipo x86 o x64, pero la arquitectura del equipo de compilación debe coincidir con la arquitectura del equipo host.
 
@@ -62,7 +63,7 @@ En esta sección se explica cómo copiar los archivos, compiladores, herramienta
 - En un equipo x86, la ubicación predeterminada es *C:\Archivos de programa\Microsoft Visual Studio*
 - En un equipo x64, la ubicación predeterminada es *C:\Archivos de programa (x86)\Microsoft Visual Studio*
 
-Tenga en cuenta que el nombre de la carpeta *Archivos de programa* depende del sistema operativo instalado. En un equipo x86, el nombre es *Archivos de programa*, mientras que en un equipo x64 es *Archivos de programa (x86)*. Con independencia de la arquitectura del sistema, este tutorial hace referencia a la carpeta *Archivos de programa* como *%ProgramFiles%*.
+Tenga en cuenta que el nombre de la carpeta *Archivos de programa* depende del sistema operativo instalado. En un equipo x86, el nombre es *Archivos de programa*, mientras que en un equipo x64 es *Archivos de programa (x86)* . Con independencia de la arquitectura del sistema, este tutorial hace referencia a la carpeta *Archivos de programa* como *%ProgramFiles%* .
 
 > [!NOTE]
 > En el equipo de compilación, todos los archivos relevantes deben estar en la misma unidad, aunque la letra de esa unidad puede ser diferente a la de la unidad donde está instalado Visual Studio en el equipo host. En cualquier caso, debe tener en cuenta la ubicación de los archivos cuando cree entradas del Registro como se describe más adelante en este documento.
@@ -169,7 +170,7 @@ Tenga en cuenta que el nombre de la carpeta *Archivos de programa* depende del s
 
     - \Microsoft.VC110.OPENMP\vcomp110.dll
 
-5. Copie solo los siguientes archivos de la carpeta *Debug_NonRedist\x86* o *Debug_NonRedist\x64* al equipo de compilación, como se describe en [Preparar un equipo de pruebas para ejecutar un archivo ejecutable de depuración](/cpp/ide/preparing-a-test-machine-to-run-a-debug-executable). No se puede copiar ningún otro archivo.
+5. Copie solo los siguientes archivos de la carpeta *Debug_NonRedist\x86* o *Debug_NonRedist\x64* al equipo de compilación, como se describe en [Preparar un equipo de pruebas para ejecutar un archivo ejecutable de depuración](/cpp/windows/preparing-a-test-machine-to-run-a-debug-executable). No se puede copiar ningún otro archivo.
 
     - \Microsoft.VC110.DebugCRT\msvcp110d.dll
 
@@ -332,13 +333,13 @@ Puede crear un entorno de compilación que se pueda implementar en varios equipo
 
 2. Copie los directorios y los archivos como se describe en la sección [Copiar archivos del equipo host al equipo de compilación](../ide/walkthrough-creating-a-multiple-computer-build-environment.md#copy-files-from-the-host-computer-to-the-build-computer) de este tutorial, pero péguelos en el directorio *%Depot%* recién creado. Por ejemplo, copie de *%ProgramFiles%\Windows Kits\8.0\bin* a *%Depot%\Windows Kits\8.0\bin*.
 
-3. Cuando los archivos se hayan pegado en *%Depot%*, realice estos cambios:
+3. Cuando los archivos se hayan pegado en *%Depot%* , realice estos cambios:
 
     - En %Depot%\MSBuild\Microsoft.Cpp\v4.0\v110\Microsoft.CPP.Targets, \Microsoft.Cpp.InvalidPlatforms.targets\\, \Microsoft.cppbuild.targets\\ y \Microsoft.CppCommon.targets\\, cambie cada instancia de
 
          AssemblyName="Microsoft.Build.CppTasks.Common.v110, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a"
 
-         por
+         to
 
          AssemblyFile="$(VCTargetsPath11)Microsoft.Build.CppTasks.Common.v110.dll".
 
@@ -348,7 +349,7 @@ Puede crear un entorno de compilación que se pueda implementar en varios equipo
 
          AssemblyName="Microsoft.Build.CppTasks.Common.v110, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a"
 
-         por
+         to
 
          AssemblyFile="$(VCTargetsPath11)Microsoft.Build.CppTasks.Common.v110.dll".
 
@@ -407,5 +408,5 @@ Puede crear un entorno de compilación que se pueda implementar en varios equipo
 
 ## <a name="see-also"></a>Vea también
 
-- [Preparar un equipo de pruebas para ejecutar un archivo ejecutable de depuración](/cpp/ide/preparing-a-test-machine-to-run-a-debug-executable)
+- [Preparar un equipo de pruebas para ejecutar un archivo ejecutable de depuración](/cpp/windows/preparing-a-test-machine-to-run-a-debug-executable)
 - [Referencia de la línea de comandos](../msbuild/msbuild-command-line-reference.md)

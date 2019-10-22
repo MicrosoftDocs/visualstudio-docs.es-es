@@ -6,17 +6,20 @@ helpviewer_keywords:
 - GetFlags
 - IDebugProgramDestroyEventFlags2::GetFlags
 ms.assetid: dd53bd0c-459a-4077-ba81-780defb71e87
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5b163da7d37983b41cb27d8db799817376784346
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: ae8ff2cddad4817acbb0474cad7442c79c0994b4
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56692000"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66343525"
 ---
 # <a name="idebugprogramdestroyeventflags2getflags"></a>IDebugProgramDestroyEventFlags2::GetFlags
 Recupera el programa destruir marcas.
@@ -35,10 +38,9 @@ public int GetFlags(
 );
 ```
 
-#### <a name="parameters"></a>Parámetros
- `pdwFlags`
-
- [out] Representa el programa destruir marcas.
+## <a name="parameters"></a>Parámetros
+`pdwFlags`\
+[out] Representa el programa destruir marcas.
 
 ## <a name="return-value"></a>Valor devuelto
  Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.

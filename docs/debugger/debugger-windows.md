@@ -1,5 +1,5 @@
 ---
-title: Ventanas del depurador | Microsoft Docs
+title: Inspeccionar datos mediante ventanas del depurador | Microsoft Docs
 ms.custom: seodec18
 ms.date: 04/25/2018
 ms.topic: conceptual
@@ -9,23 +9,22 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: de19d073a3002c777c0458a99381ee943d297944
-ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
-ms.translationtype: MTE95
+ms.openlocfilehash: c3d7303c1212a8042cb51abcfa363d59e41e67cc
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "57526352"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72431751"
 ---
-# <a name="learn-about-debugger-windows-in-visual-studio"></a>Obtenga información sobre el depurador Windows en Visual Studio
+# <a name="inspect-data-using-debugger-windows-in-visual-studio"></a>Inspeccionar datos mediante ventanas del depurador en Visual Studio
 
 Puede abrir la mayoría de las ventanas del depurador mientras está depurando el programa. Para ver una lista de ventanas del depurador, establezca un punto de interrupción e inicie la depuración. Cuando alcance el punto de interrupción y se detenga la ejecución, haga clic en **Depurar > Ventanas**.
 
-||||
+|Ventana|Tecla de acceso rápido|Vea el tema|
 |-|-|-|
-|**Ventana**|**Tecla de acceso rápido**|**Vea el tema**|
 |Puntos de interrupción|CTRL+ALT+B|[Uso de puntos de interrupción](../debugger/using-breakpoints.md)|
 |Configuración de excepciones|CTRL+ALT+E|[Administración de excepciones con el depurador](../debugger/managing-exceptions-with-the-debugger.md)|
-|Salida|CTRL+ALT+O|[Resultados (Ventana)](../ide/reference/output-window.md)|
+|Resultados|CTRL+ALT+O|[Ventana Salida](../ide/reference/output-window.md)|
 |Watch|CTRL+ALT+W, (1, 2, 3, 4)|[Ventanas Inspección e Inspección rápida](../debugger/watch-and-quickwatch-windows.md)|
 |Inspección rápida|MAYÚS+F9|[Ventanas Inspección e Inspección rápida](../debugger/watch-and-quickwatch-windows.md)|
 |Autos|CTRL+ALT+V, A|[Ventanas de variables locales y automáticas](../debugger/autos-and-locals-windows.md)|
@@ -41,8 +40,8 @@ Puede abrir la mayoría de las ventanas del depurador mientras está depurando e
 |Depuración de Python interactiva|MAYÚS+ALT+I|[Ventana de REPL interactiva](../python/python-interactive-repl-in-visual-studio.md)|
 |Consola de JavaScript|CTRL+ALT+V, C|[Inicio rápido: Depurar JavaScript](../debugger/quickstart-debug-javascript-using-the-console.md)|
 |Explorador de DOM|CTRL+ALT+V, D|[Depurar el diseño mediante el Explorador DOM](/visualstudio/debugger/quickstart-debug-html-and-css)|
-|Árbol visual dinámico|-|[Inspeccionar las propiedades XAML durante la depuración](../debugger/inspect-xaml-properties-while-debugging.md)|
-|Explorador de propiedades dinámico|-|[Inspeccionar las propiedades XAML durante la depuración](../debugger/inspect-xaml-properties-while-debugging.md)|
+|Árbol visual dinámico|-|[Inspeccionar las propiedades XAML durante la depuración](../xaml-tools/inspect-xaml-properties-while-debugging.md)|
+|Explorador de propiedades dinámico|-|[Inspeccionar las propiedades XAML durante la depuración](../xaml-tools/inspect-xaml-properties-while-debugging.md)|
 |Procesos|CTRL+ALT+Z|[Depurar procesos y subprocesos](../debugger/debug-threads-and-processes.md)|
 |Memoria|CTRL+ALT+M, (1, 2, 3, 4)|[Ventana Memoria](../debugger/memory-windows.md)|
 |Desensamblado|CTRL+ALT+D|[Cómo: Usar la ventana Desensamblado](../debugger/how-to-use-the-disassembly-window.md)|

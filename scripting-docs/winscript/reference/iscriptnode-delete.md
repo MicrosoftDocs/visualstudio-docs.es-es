@@ -1,5 +1,5 @@
 ---
-title: IScriptNode::Delete | Microsoft Docs
+title: Iscriptnode (::D iminar | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,12 +17,12 @@ caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 41bf932b242865b1deac4c61db400f973bd0b00c
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 3c3522e5543d333443de5b1287c994bf29de51c9
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58145010"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72576301"
 ---
 # <a name="iscriptnodedelete"></a>IScriptNode::Delete
 Elimina este árbol de objetos.  
@@ -37,14 +37,14 @@ HRESULT Delete();
  El método no toma ningún parámetro.  
   
 ## <a name="return-value"></a>Valor devuelto  
- Una clase `HRESULT`. Entre los valores posibles se incluyen los que se indican en la tabla siguiente, entre otros.  
+ Interfaz `HRESULT`. Entre los valores posibles se incluyen los que se indican en la tabla siguiente, entre otros.  
   
 |Valor|Descripción|  
 |-----------|-----------------|  
 |`S_OK`|El método se realizó correctamente.|  
   
 ## <a name="remarks"></a>Comentarios  
- Después de la `Delete` se invoca el [IScriptNode::Alive](../../winscript/reference/iscriptnode-alive.md) método debería indicar ese nodo de secuencia de comandos no está activo.  
+ Después de llamar al método `Delete`, el método [iscriptnode (:: Alive](../../winscript/reference/iscriptnode-alive.md) debe indicar que el nodo de script no está activo.  
   
 ## <a name="see-also"></a>Vea también  
  [IScriptNode (Interfaz)](../../winscript/reference/iscriptnode-interface.md)

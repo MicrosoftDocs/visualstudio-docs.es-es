@@ -1,5 +1,5 @@
 ---
-title: Procedimiento Exigir código mantenible con una directiva de protección de análisis de código | Documentos de Microsoft
+title: 'Cómo: exigir código mantenible con una directiva de protección de análisis de código | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -8,57 +8,56 @@ helpviewer_keywords:
 - code analysis, check-in policies
 ms.assetid: d1b3b04f-4dd9-40e6-b2d4-b414d33fb647
 caps.latest.revision: 10
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 27593a450f7c2a1b34c1c84bc1d4e7ea5bb5919f
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 0d54ca9a31e8a1bbd2496bf8689a119e53580c79
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60091881"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72660220"
 ---
-# <a name="how-to-enforce-maintainable-code-with-a-code-analysis-check-in-policy"></a>Procedimiento Exigir código de mantenimiento con una directiva de protección de análisis de código
+# <a name="how-to-enforce-maintainable-code-with-a-code-analysis-check-in-policy"></a>Cómo: Exigir código mantenible con una directiva de protección de los análisis de código
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Los desarrolladores pueden usar la herramienta de métricas de código para medir la complejidad y el mantenimiento de su código, pero las métricas del código no pueden invocar como parte de una directiva de protección. Sin embargo, un equipo puede habilitar las reglas de análisis de código que comprueban el cumplimiento de su código con los estándares de las métricas del código y aplican las reglas mediante las directivas de protección. Para obtener más información acerca de las métricas de código, vea el [valores de las métricas de código](../code-quality/code-metrics-values.md).  
-  
- Los programadores pueden habilitar la profundidad de herencia, acoplamiento de clases, índice de mantenimiento y las reglas de complejidad exigir código mantenible a través de directivas de protección de análisis de código. Cuatro de estas reglas se encuentra en la categoría "Reglas de mantenimiento" en el editor de directivas de análisis de código.  
-  
- Los administradores de la versión de control para [!INCLUDE[esprfound](../includes/esprfound-md.md)] puede agregar las reglas de mantenimiento de análisis de código a los requisitos de directiva de protección. Estos en el repositorio directivas requieren que los desarrolladores ejecutar análisis de código en función de estos cambios en las reglas antes de iniciar una inserción en el.  
-  
-### <a name="to-open-the-code-analysis-policy-editor"></a>Para abrir el Editor de directivas de análisis de código  
-  
-1. En **Team Explorer**, haga clic en el proyecto de equipo, haga clic en **configuración del proyecto de equipo**y, a continuación, haga clic en **Control de código fuente**.  
-  
-     El **Control de código fuente** aparece el cuadro de diálogo.  
-  
-2. En el **directiva de protección** ficha y haga clic en **agregar**.  
-  
-     El **Agregar directiva de protección** aparece el cuadro de diálogo.  
-  
-3. En el **directiva de protección** lista, seleccione el **análisis de código** casilla de verificación y, a continuación, haga clic en **Aceptar**.  
-  
-     El **Editor de directiva de análisis de código** aparece el cuadro de diálogo.  
-  
-### <a name="to-enable-code-analysis-maintainability-rules"></a>Para habilitar reglas de mantenimiento de análisis de código  
-  
-1. En el **Editor de directiva de análisis de código** cuadro de diálogo **configuración de la regla**, expanda el **reglas de mantenimiento** nodo.  
-  
-2. Seleccione las casillas de las reglas siguientes:  
-  
-    - Profundidad de herencia: **CA1501 AvoidExcessiveInheritance** -umbral: Advertencia en más de 5 niveles de profundidad  
-  
-    - Complejidad: **CA1502 AvoidExcessiveComplexity** -umbral: Advertencia en más de 25  
-  
-    - Índice de mantenimiento: **CA1505 AvoidUnmaintainableCode** -umbral: Advertencia a menos de 20  
-  
-    - Acoplamiento de clases: **CA1506 AvoidExcessiveClassCoupling** -umbral: Advertencia en más de 80 para una clase y más de 30 para un método  
-  
-    - Además, si desea que una infracción de regla para evitar que una compilación, seleccione el **Tratar advertencia como un Error** casilla de verificación situada junto a la descripción de la regla.  
-  
-3. Haga clic en **Aceptar**. Ahora, la nueva directiva de protección se aplica a las protecciones futuras.  
-  
-## <a name="see-also"></a>Vea también  
- [Valores de las métricas de código](../code-quality/code-metrics-values.md)   
- [Crear y usar directivas de protección del análisis de código](../code-quality/creating-and-using-code-analysis-check-in-policies.md)
+Los desarrolladores pueden usar la herramienta de métricas de código para medir la complejidad y el mantenimiento del código, pero no pueden invocar las métricas de código como parte de una directiva de protección. Sin embargo, un equipo puede habilitar reglas de análisis de código que comprueban el cumplimiento de su código con estándares de métricas de código y aplican las reglas mediante directivas de protección. Para obtener más información sobre las métricas de código, consulte los valores de las [métricas de código](../code-quality/code-metrics-values.md).
+
+ Los desarrolladores pueden habilitar la profundidad de la herencia, el acoplamiento de clases, el índice de mantenimiento y las reglas de complejidad para aplicar código mantenible a través de las directivas de protección de análisis de código. Las cuatro reglas se encuentran en la categoría "reglas de mantenimiento" en el editor de directivas de análisis de código.
+
+ Los administradores de control de versiones para [!INCLUDE[esprfound](../includes/esprfound-md.md)] pueden agregar las reglas de mantenimiento del análisis de código a los requisitos de la Directiva de protección. Estas directivas de inserción en el repositorio requieren que los desarrolladores ejecuten el análisis de código en función de estos cambios de reglas antes de iniciar una inserción en el repositorio.
+
+### <a name="to-open-the-code-analysis-policy-editor"></a>Para abrir el editor de directivas de análisis de código
+
+1. En **Team Explorer**, haga clic con el botón secundario en el proyecto de equipo, haga clic en **configuración del proyecto de equipo**y, a continuación, en control de **código fuente**.
+
+     Aparecerá el cuadro de diálogo **control de código fuente** .
+
+2. En la pestaña **Directiva de inserción en el repositorio** , haga clic en **Agregar**.
+
+     Aparece el cuadro de diálogo **Agregar Directiva de inserción en el repositorio** .
+
+3. En la lista **Directiva de protección** , active la casilla **análisis de código** y, a continuación, haga clic en **Aceptar**.
+
+     Aparecerá el cuadro de diálogo **Editor de directivas de análisis de código** .
+
+### <a name="to-enable-code-analysis-maintainability-rules"></a>Para habilitar las reglas de mantenimiento del análisis de código
+
+1. En el cuadro de diálogo **Editor de directivas de análisis de código** , en configuración de **reglas**, expanda el nodo **reglas de mantenimiento** .
+
+2. Active las casillas de las siguientes reglas:
+
+    - Profundidad de herencia: **CA1501 AvoidExcessiveInheritance** -Threshold: ADVERTENCIA a más de 5 niveles de profundidad
+
+    - Complejidad: **CA1502 AvoidExcessiveComplexity** -Threshold: ADVERTENCIA en más de 25
+
+    - Índice de mantenimiento: **CA1505 AvoidUnmaintainableCode** -Threshold: ADVERTENCIA en menos de 20
+
+    - Acoplamiento de clases: **CA1506 AvoidExcessiveClassCoupling** -Threshold: ADVERTENCIA en más de 80 para una clase y más de 30 para un método
+
+    - Además, si desea una infracción de regla para evitar una compilación, active la casilla **tratar ADVERTENCIA como error** junto a la descripción de la regla.
+
+3. Haga clic en **Aceptar**. La nueva Directiva de inserción en el repositorio se aplica ahora a las protecciones futuras.
+
+## <a name="see-also"></a>Vea también
+ [Valores de métricas de código](../code-quality/code-metrics-values.md) [crear y usar directivas de protección de análisis de código](../code-quality/creating-and-using-code-analysis-check-in-policies.md)

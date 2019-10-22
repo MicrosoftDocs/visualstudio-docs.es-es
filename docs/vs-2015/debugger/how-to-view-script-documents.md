@@ -17,11 +17,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 88f923ab0447f1ac7d57e84d94f0ab442d912d67
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60104218"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68189600"
 ---
 # <a name="how-to-view-script-documents"></a>Procedimiento Visualización de documentos de script
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,11 +32,11 @@ En versiones anteriores de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], los arc
   
  Los archivos de script de cliente sólo están visibles en modo de depuración o en modo de interrupción. Aparecen en el nodo **Documentos de script**.  
   
- Los archivos de script de servidor siempre están visibles. Aparecen en el nodo **\<Nombre de ruta de acceso del sitio web>**. El nombre del nodo es similar a este ejemplo: `c:\...\Website2\`  
+ Los archivos de script de servidor siempre están visibles. Aparecen en el nodo **\<Nombre de ruta de acceso del sitio web>** . El nombre del nodo es similar a este ejemplo: `c:\...\Website2\`  
   
 ### <a name="to-view-a-server-side-script-document"></a>Para ver un documento de script de servidor  
   
-1. En el **Explorador de soluciones**, abra el nodo **\<Nombre de ruta de acceso del sitio web>**.  
+1. En el **Explorador de soluciones**, abra el nodo **\<Nombre de ruta de acceso del sitio web>** .  
   
 2. Haga doble clic en el archivo de script que desee ver.  
   

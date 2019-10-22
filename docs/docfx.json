@@ -86,24 +86,16 @@
       "ms.prod": "visual-studio-windows",
       "uhfHeaderId": "MSDocsHeader-VisualStudio",
       "titleSuffix": "Visual Studio",
+      "toc_preview": true,
       "searchScope": [
         "VS IDE"
       ],
       "featureFlags": [
         "enable_uhf_ppe"
-      ]
+      ],
+      "disable_contribution_on_translation_quality": ["MT"]
     },
     "fileMetadata": {
-      "open_to_public_contributors": {
-        "vs-2015/**/**.md": false,
-        "code-quality/**/**.md": false,
-        "extensibility/**/**.md": false,
-        "modeling/**/**.md": false,
-        "sharepoint/**/**.md": false,
-        "vsto/**/**.md": false,
-        "workflow-designer/**/**.md": false,
-        "xml-tools/**/**.md": false
-      },
       "ms.prod": {
         "rtvs/**/**.md": "visual-studio-dev15",
         "vs-2015/**/**.md": "visual-studio-dev14"
@@ -133,6 +125,7 @@
         "test/**/**.md": "vs-ide-test",
         "vsto/**/**.md": "office-development",
         "workflow-designer/**/**.md": "vs-workflow-designer",
+        "xaml-tools/**/**.md": "vs-ide-designers",
         "xml-tools/**/**.md": "vs-xml-tools"
       },
       "titleSuffix": {
@@ -156,8 +149,7 @@
     },
     "template": [],
     "xref": [
-      "missingapi.yml",
-      "vs.140.zip"
+      "missingapi.yml"
     ],
     "dest": "vsdocsdocs",
     "groups": {

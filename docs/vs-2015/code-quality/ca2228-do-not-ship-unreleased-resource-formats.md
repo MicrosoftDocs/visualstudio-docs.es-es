@@ -1,5 +1,5 @@
 ---
-title: 'CA2228: No enviar formatos de recursos no lanzados | Documentos de Microsoft'
+title: 'CA2228: no enviar formatos de recursos no lanzados | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -12,15 +12,15 @@ helpviewer_keywords:
 - DoNotShipUnreleasedResourceFormats
 ms.assetid: 2c614edc-4e94-4b4f-8067-eea677a75cd9
 caps.latest.revision: 16
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 2e49953a95da10653cd29132e003fa36de5b8d4c
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 9297ea0bb24eed54d0134a5f3c0fce87e6757adb
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58998237"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72662887"
 ---
 # <a name="ca2228-do-not-ship-unreleased-resource-formats"></a>CA2228: No enviar formatos de recursos no lanzados
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,17 +29,17 @@ ms.locfileid: "58998237"
 |-|-|
 |TypeName|DoNotShipUnreleasedResourceFormats|
 |Identificador de comprobación|CA2228|
-|Categoría|Microsoft.Usage|
+|Categoría|Microsoft. Usage|
 |Cambio problemático|No trascendental|
 
 ## <a name="cause"></a>Motivo
- Se generó un archivo de recursos utilizando una versión de la [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] que no se admite actualmente.
+ Un archivo de recursos se compiló con una versión de la [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] que no se admite actualmente.
 
 ## <a name="rule-description"></a>Descripción de la regla
- Archivos de recursos que se compilaron con versiones preliminares de los [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] no podrían utilizar las versiones compatibles de .NET Framework.
+ Los archivos de recursos que se compilaron con versiones preliminares de la [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] podrían no ser utilizados por las versiones compatibles del .NET Framework.
 
 ## <a name="how-to-fix-violations"></a>Cómo corregir infracciones
- Para corregir una infracción de esta regla, genere el recurso utilizando una versión compatible de la [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]k.
+ Para corregir una infracción de esta regla, compile el recurso con una versión compatible del [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]k.
 
 ## <a name="when-to-suppress-warnings"></a>Cuándo suprimir advertencias
  No suprima las advertencias de esta regla.

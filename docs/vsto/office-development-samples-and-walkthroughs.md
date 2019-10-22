@@ -1,6 +1,6 @@
 ---
-title: Tutoriales y ejemplos de desarrollo de office
-ms.date: 02/02/2017
+title: Ejemplos y tutoriales de desarrollo de Office
+ms.date: 08/14/2019
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -20,40 +20,39 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 1306629a33b668104c3159c1ed2d5840cc4a3801
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: a9a8e71395190647fa7a908949a186c511b24610
+ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56623650"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "69551685"
 ---
-# <a name="office-development-samples-and-walkthroughs"></a>Tutoriales y ejemplos de desarrollo de office
-  Esta sección contiene aplicaciones de ejemplo, el código de ejemplo y tutoriales paso a paso que ilustran la sintaxis, estructura y técnicas usadas para crear soluciones de Microsoft Office.
+# <a name="office-development-samples-and-walkthroughs"></a>Ejemplos y tutoriales de desarrollo de Office
+  Esta sección contiene aplicaciones de ejemplo, código de ejemplo y tutoriales paso a paso que muestran la sintaxis, la estructura y las técnicas que se usan para compilar soluciones Microsoft Office.
 
  El código de ejemplo está destinado a fines didácticos y no se debe utilizar en las soluciones implementadas sin modificaciones. En concreto, la seguridad se debe considerar con mayor detenimiento.
 
- Para obtener información acerca de cómo proteger las aplicaciones, consulte [soluciones de Office Secure](../vsto/securing-office-solutions.md).
+ Para obtener información sobre cómo proteger las aplicaciones, consulte [proteger soluciones de Office](../vsto/securing-office-solutions.md).
 
-> [!NOTE]
->  ¿Está interesado en desarrollar soluciones que amplían la experiencia de Office a través de [varias plataformas](https://dev.office.com/add-in-availability)? Visite el nuevo [modelo de complementos de Office](https://dev.office.com/docs/add-ins/overview/office-add-ins). Complementos de Office tienen una superficie pequeña en comparación con las soluciones y complementos VSTO, y puede crearlas con prácticamente cualquier tecnología, como HTML5, CSS3, JavaScript y XML de programación web.
+[!include[Add-ins note](includes/addinsnote.md)]
 
 ## <a name="in-this-section"></a>En esta sección
 
-|Tema|Descripción|
+|Tema|DESCRIPCIÓN|
 |-----------|-----------------|
-|[Ejemplos de desarrollo de Office](../vsto/office-development-samples.md)|Proporciona vínculos a aplicaciones de ejemplo que ilustran el uso de desarrollo de Office y SharePoint en Visual Studio.|
-|[Tutoriales para Word](../vsto/walkthroughs-using-word.md)|Enumera las guías paso a paso que proporcionan una introducción a las herramientas de desarrollo de Office en Visual Studio y le ayudarán a ilustrar cómo puede integrar Word en aplicaciones empresariales de Office.|
-|[Tutoriales para Excel](../vsto/walkthroughs-using-excel.md)|Enumera las guías paso a paso que proporcionan una introducción a las herramientas de desarrollo de Office en Visual Studio y le ayudarán a ilustrar cómo puede integrar Excel en aplicaciones empresariales de Office.|
-|[Datos en los tutoriales de soluciones de Office](../vsto/data-in-office-solutions-walkthroughs.md)|Enumera las guías paso a paso que muestran cómo trabajar con datos en sus soluciones.|
-|[Tutoriales de personalización de la interfaz de usuario de Office](../vsto/office-ui-customization-walkthroughs.md)|Enumera las guías paso a paso que ilustran cómo puede personalizar la interfaz de usuario (UI) de aplicaciones de Microsoft Office.|
-|[Tutoriales de seguridad e implementación](../vsto/security-and-deployment-walkthroughs.md)|Enumera las guías paso a paso que ilustran cómo puede establecer la directiva de seguridad para permitir la ejecución de la solución y cómo puede implementar la solución.|
+|[Ejemplos de desarrollo de Office](../vsto/office-development-samples.md)|Proporciona vínculos a aplicaciones de ejemplo que ilustran el uso del desarrollo de Office y SharePoint en Visual Studio.|
+|[Tutoriales de uso de Word](../vsto/walkthroughs-using-word.md)|Muestra guías paso a paso que proporcionan una introducción a las herramientas de desarrollo de Office en Visual Studio y ayudan a ilustrar cómo puede integrar Word en Office Business Applications.|
+|[Tutoriales de uso de Excel](../vsto/walkthroughs-using-excel.md)|Muestra guías paso a paso que proporcionan una introducción a las herramientas de desarrollo de Office en Visual Studio y ayudan a ilustrar cómo puede integrar Excel en Office Business Applications.|
+|[Datos en los tutoriales de soluciones de Office](../vsto/data-in-office-solutions-walkthroughs.md)|Muestra guías paso a paso que muestran cómo trabajar con datos en sus soluciones.|
+|[Tutoriales de personalización de la interfaz de usuario de Office](../vsto/office-ui-customization-walkthroughs.md)|Muestra guías paso a paso que muestran cómo puede personalizar la interfaz de usuario (UI) de Microsoft Office aplicaciones.|
+|[Tutoriales de seguridad e implementación](../vsto/security-and-deployment-walkthroughs.md)|Muestra guías paso a paso que muestran cómo se puede establecer la Directiva de seguridad para permitir la ejecución de la solución y cómo se puede implementar la solución.|
 
 ## <a name="related-sections"></a>Secciones relacionadas
 
-|Tema|Descripción|
+|Tema|DESCRIPCIÓN|
 |-----------|-----------------|
-|[Introducción a &#40;desarrollo de Office en Visual Studio&#41;](../vsto/getting-started-office-development-in-visual-studio.md)|Proporciona vínculos a información sobre el programa de instalación, las plantillas de proyecto, los ensamblados de interoperabilidad primarios de Office y novedades de desarrollo de Office.|
-|[Arquitectura de soluciones de Office en Visual Studio](../vsto/architecture-of-office-solutions-in-visual-studio.md)|Explica cómo el código administrado trabajo de soluciones de Office desde la perspectiva del desarrollador y el usuario final e incluye información sobre cómo administrado código funciona con documentos de Office y aplicaciones.|
-|[Tareas comunes en la programación de Office](../vsto/common-tasks-in-office-programming.md)|Se enumeran las preguntas más frecuentes sobre la programación con el desarrollo de Office en Visual Studio y proporciona vínculos a temas que pueden ayudar a resolver problemas comunes.|
-|[Diseñar y crear soluciones de Office](../vsto/designing-and-creating-office-solutions.md)|Proporciona vínculos a información acerca de cómo crear soluciones de Microsoft Office y el papel de los ensamblados de la solución.|
-|[Información general sobre el panel de acciones](../vsto/actions-pane-overview.md)|Proporciona información general del panel de tareas de nivel de documento llamado panel de acciones.|
+|[Introducción &#40;al desarrollo de Office en Visual Studio&#41;](../vsto/getting-started-office-development-in-visual-studio.md)|Proporciona vínculos a información sobre el programa de instalación, las plantillas de proyecto, los ensamblados de interoperabilidad primarios de Office y las novedades en el desarrollo de Office.|
+|[Arquitectura de las soluciones de Office en Visual Studio](../vsto/architecture-of-office-solutions-in-visual-studio.md)|Explica cómo funcionan las soluciones de Office de código administrado desde la perspectiva del desarrollador y el usuario final, e incluye información sobre cómo funciona el código administrado con aplicaciones y documentos de Office.|
+|[Tareas comunes en la programación de Office](../vsto/common-tasks-in-office-programming.md)|Enumera las preguntas más frecuentes sobre la programación con el desarrollo de Office en Visual Studio y proporciona vínculos a temas que pueden ayudar a resolver problemas comunes.|
+|[Diseñar y crear soluciones de Office](../vsto/designing-and-creating-office-solutions.md)|Proporciona vínculos a información sobre cómo crear soluciones de Microsoft Office y sobre el rol de los ensamblados en la solución.|
+|[Información general del panel de acciones](../vsto/actions-pane-overview.md)|Proporciona información general sobre el panel de tareas de nivel de documento denominado panel de acciones.|

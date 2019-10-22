@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 7b139bd9abdb8266acce9bab4d82a8c59b60623a
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56640420"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "62835331"
 ---
 # <a name="idiasymbolgetuavslot"></a>IDiaSymbol::get_uavSlot
 Recupera la ranura uav.

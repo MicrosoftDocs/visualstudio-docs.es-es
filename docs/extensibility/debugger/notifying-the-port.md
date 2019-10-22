@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - ports, notification
 ms.assetid: f9fce48e-7d4e-4627-a0fb-77b75428146a
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b022cca2b69c8cb80b24fa34e3b020923cff4022
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 9e7ccb4ab9fc36e08f4094baaf1e6b6eee30b2f8
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56689205"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66351502"
 ---
 # <a name="notify-the-port"></a>Notificar el puerto
 Después de iniciar un programa, el puerto debe recibir una notificación, como sigue:
@@ -31,12 +31,12 @@ Después de iniciar un programa, el puerto debe recibir una notificación, como 
    Mediante programación, cuando un puerto recibe un nuevo nodo de programa por primera vez, crea un [IDebugProgram2](../../extensibility/debugger/reference/idebugprogram2.md) interfaz para representar el programa.
 
 > [!NOTE]
->  No debe confundirse con el `IDebugProgram2` interfaz posterior creada por el motor de depuración (DE).
+> No debe confundirse con el `IDebugProgram2` interfaz posterior creada por el motor de depuración (DE).
 
  El puerto envía una [IDebugProgramCreateEvent2](../../extensibility/debugger/reference/idebugprogramcreateevent2.md) evento de creación de programa al administrador de depuración de sesión (SDM) por medio de COM `IConnectionPoint` interfaz.
 
 > [!NOTE]
->  No debe confundirse con el `IDebugProgramCreateEvent2` interfaz, que la DE enviar más tarde.
+> No debe confundirse con el `IDebugProgramCreateEvent2` interfaz, que la DE enviar más tarde.
 
  Junto con la propia interfaz de eventos, el puerto envía el [IDebugPort2](../../extensibility/debugger/reference/idebugport2.md), [IDebugProcess2](../../extensibility/debugger/reference/idebugprocess2.md), y [IDebugProgram2](../../extensibility/debugger/reference/idebugprogram2.md) interfaces, que representan el puerto, procesan, y programa, respectivamente. Las llamadas SDM [IDebugProgram2::GetEngineInfo](../../extensibility/debugger/reference/idebugprogram2-getengineinfo.md) para obtener el GUID de la DE que puede depurar el programa. El GUID se ha obtenido originalmente de la [IDebugProgramNode2](../../extensibility/debugger/reference/idebugprogramnode2.md) interfaz.
 

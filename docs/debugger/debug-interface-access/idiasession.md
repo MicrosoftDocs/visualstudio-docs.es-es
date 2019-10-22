@@ -1,5 +1,5 @@
 ---
-title: IDiaSession | Microsoft Docs
+title: IDiaSession | Documentos de Microsoft
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: c69383eacfdb39a65cd9a791185d6793e9e6f681
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56642822"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62832312"
 ---
 # <a name="idiasession"></a>IDiaSession
 Proporciona un contexto de consulta para símbolos de depuración.
@@ -34,7 +34,7 @@ La tabla siguiente muestran los métodos de `IDiaSession`.
 |Método|Descripción|
 |------------|-----------------|
 |[IDiaSession::get_loadAddress](../../debugger/debug-interface-access/idiasession-get-loadaddress.md)|Recupera la dirección de carga del archivo ejecutable que se corresponde con los símbolos de este almacén de símbolos. Este es el mismo valor que se pasó a la `put_loadAddress` método.|
-|[IDiaSession::put_loadAddress](../../debugger/debug-interface-access/idiasession-put-loadaddress.md)|Establece la dirección de carga del archivo ejecutable que corresponde a los símbolos en este almacén de símbolos. **Nota:** es importante llamar a este método cuando reciba un `IDiaSession` de objetos y antes de empezar a usar el objeto.|
+|[IDiaSession::put_loadAddress](../../debugger/debug-interface-access/idiasession-put-loadaddress.md)|Establece la dirección de carga del archivo ejecutable que corresponde a los símbolos en este almacén de símbolos. **Nota:**  Es importante llamar a este método cuando reciba un `IDiaSession` de objetos y antes de empezar a usar el objeto.|
 |[IDiaSession::get_globalScope](../../debugger/debug-interface-access/idiasession-get-globalscope.md)|Recupera una referencia al ámbito global.|
 |[IDiaSession::getEnumTables](../../debugger/debug-interface-access/idiasession-getenumtables.md)|Recupera un enumerador para todas las tablas contenidas en el almacén de símbolos.|
 |[IDiaSession::getSymbolsByAddr](../../debugger/debug-interface-access/idiasession-getsymbolsbyaddr.md)|Recupera un enumerador para todos los símbolos con nombre en ubicaciones estáticos.|

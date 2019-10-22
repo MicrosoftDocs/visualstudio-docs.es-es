@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f9f5586fee54a3e50f9485b520e092255e57359c
-ms.sourcegitcommit: 1c8e07b98fc0a44b5ab90bcef77d9fac7b3eb452
+ms.openlocfilehash: a3c9837f1babf3cb37d99eb1bb74c2c35c05eff9
+ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/25/2019
-ms.locfileid: "56796665"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68870318"
 ---
 # <a name="create-a-data-driven-coded-ui-test"></a>Crear una prueba de IU codificada controlada por datos
 
@@ -98,11 +98,11 @@ En este ejemplo se crea una prueba de IU codificada que se ejecuta en la aplicac
 
 ### <a name="step-2---create-a-data-set"></a>Paso 2: crear un conjunto de datos
 
-1.  Agregue al proyecto dataDrivenSample un archivo de texto llamado *data.csv*.
+1. Agregue al proyecto dataDrivenSample un archivo de texto llamado *data.csv*.
 
      ![Agregar un archivo de valores separados por comas al proyecto](../test/media/cuit_datadriven_addcsvfile.png)
 
-2.  Llene el archivo .*csv* con los siguientes datos:
+2. Llene el archivo .*csv* con los siguientes datos:
 
     |Num1|Num2|Sum|
     |-|-|-|
@@ -114,9 +114,9 @@ En este ejemplo se crea una prueba de IU codificada que se ejecuta en la aplicac
 
      ![Rellenar el archivo .csv con datos](../test/media/cuit_datadriven_adddatatocsvfile.png)
 
-3.  Es importante que guarde el archivo .*csv* con la codificación correcta. En el menú **Archivo**, seleccione **Opciones avanzadas para guardar** y seleccione **Unicode (UTF-8 sin firma) – Página de códigos 65001** como codificación.
+3. Es importante que guarde el archivo .*csv* con la codificación correcta. En el menú **Archivo**, seleccione **Opciones avanzadas para guardar** y seleccione **Unicode (UTF-8 sin firma) – Página de códigos 65001** como codificación.
 
-4.  El archivo .*csv* debe copiarse en el directorio de salida. De lo contrario, no podrá ejecutarse la prueba. Use la ventana **Propiedades** para copiarlo.
+4. El archivo .*csv* debe copiarse en el directorio de salida. De lo contrario, no podrá ejecutarse la prueba. Use la ventana **Propiedades** para copiarlo.
 
      ![Implementar el archivo .csv](../test/media/cuit_datadriven_deploycsvfile.png)
 
@@ -124,7 +124,7 @@ En este ejemplo se crea una prueba de IU codificada que se ejecuta en la aplicac
 
 ### <a name="step-3---add-data-source-binding"></a>Paso 3: agregar enlaces de origen de datos
 
-1.  Para enlazar el origen de datos, agregue un atributo `DataSource` al atributo `[TestMethod]` existente situado inmediatamente encima del método de prueba.
+1. Para enlazar el origen de datos, agregue un atributo `DataSource` al atributo `[TestMethod]` existente situado inmediatamente encima del método de prueba.
 
     ```csharp
     [DataSource("Microsoft.VisualStudio.TestTools.DataSource.CSV", "|DataDirectory|\\data.csv", "data#csv", DataAccessMethod.Sequential), DeploymentItem("data.csv"), TestMethod]
@@ -140,7 +140,7 @@ En este ejemplo se crea una prueba de IU codificada que se ejecuta en la aplicac
     > [!TIP]
     > Consulte los [ejemplos de atributo de origen de datos](#CreateDataDrivenCUIT_QA_DataSourceAttributes) en la sección de preguntas y respuestas. Allí encontrará ejemplos del uso de otros tipos de origen de datos, como XML, SQL Express y Excel.
 
-2.  Ejecute la prueba.
+2. Ejecute la prueba.
 
      Tenga en cuenta que la prueba se ejecuta a través de tres iteraciones. Esto se debe a que el origen de datos que se enlazó contiene tres filas de datos. Sin embargo, también observará que la prueba sigue utilizando los valores de parámetro constantes y que suma 1 + 2, lo que genera cada vez un resultado de 3.
 
@@ -179,19 +179,19 @@ En este ejemplo se crea una prueba de IU codificada que se ejecuta en la aplicac
 
      Para averiguar qué propiedades de búsqueda tienen datos por codificar, utilice el Editor de pruebas de IU codificadas.
 
-    -   Abra el archivo *UIMap.uitest*.
+    - Abra el archivo *UIMap.uitest*.
 
          ![Abrir el editor de pruebas de la IU codificada](../test/media/cuit_datadriven_opentesteditor.png)
 
-    -   Elija la acción de la IU y observe la asignación de controles de IU correspondientes. Fíjese en cómo la asignación se corresponde con el código, por ejemplo, `this.UIMap.UICalculatorWindow.UIItemWindow.UIItem1Button`.
+    - Elija la acción de la IU y observe la asignación de controles de IU correspondientes. Fíjese en cómo la asignación se corresponde con el código, por ejemplo, `this.UIMap.UICalculatorWindow.UIItemWindow.UIItem1Button`.
 
          ![Utilizar el editor de pruebas de la IU codificada para ayudar con el código](../test/media/cuit_datadriven_testeditor.png)
 
-    -   En la ventana **Propiedades**, abra **Propiedades de búsqueda**. El valor **Nombre** de las propiedades de búsqueda es lo que se está manipulando en el código que utiliza el origen de datos. Por ejemplo, a `SearchProperties` se le asignan los valores de la primera columna de cada fila de datos: `UIItem1Button.SearchProperties[WinButton.PropertyNames.Name] = TestContext.DataRow["Num1"].ToString();`. Para las tres iteraciones, esta prueba cambiará el valor **Nombre** de la propiedad de búsqueda a 3, 5 y, por último, 6.
+    - En la ventana **Propiedades**, abra **Propiedades de búsqueda**. El valor **Nombre** de las propiedades de búsqueda es lo que se está manipulando en el código que utiliza el origen de datos. Por ejemplo, a `SearchProperties` se le asignan los valores de la primera columna de cada fila de datos: `UIItem1Button.SearchProperties[WinButton.PropertyNames.Name] = TestContext.DataRow["Num1"].ToString();`. Para las tres iteraciones, esta prueba cambiará el valor **Nombre** de la propiedad de búsqueda a 3, 5 y, por último, 6.
 
          ![Utilizar las propiedades de búsqueda para ayudar en la codificación](../test/media/cuit_datadriven_searchproperties.png)
 
-3.  Guarde la solución.
+3. Guarde la solución.
 
 ### <a name="step-5---run-the-data-driven-test"></a>Paso 5: ejecutar la prueba controlada por datos
 
@@ -207,23 +207,23 @@ Debería ver como la prueba se ejecuta en las tres iteraciones usando los valore
 
 **Tipos y atributos de origen de datos**
 
--   CSV
+- CSV
 
      `[DataSource("Microsoft.VisualStudio.TestTools.DataSource.CSV", "|DataDirectory|\\data.csv", "data#csv", DataAccessMethod.Sequential), DeploymentItem("data.csv"), TestMethod]`
 
--   Excel
+- Excel
 
      `DataSource("System.Data.Odbc", "Dsn=ExcelFiles;Driver={Microsoft Excel Driver (*.xls)};dbq=|DataDirectory|\\Data.xls;defaultdir=.;driverid=790;maxbuffersize=2048;pagetimeout=5;readonly=true", "Sheet1$", DataAccessMethod.Sequential), DeploymentItem("Sheet1.xls"), TestMethod]`
 
--   Caso de prueba de Team Foundation Server
+- Caso de prueba de Team Foundation Server
 
      `[DataSource("Microsoft.VisualStudio.TestTools.DataSource.TestCase", "http://vlm13261329:8080/tfs/DefaultCollection;Agile", "30", DataAccessMethod.Sequential), TestMethod]`
 
--   XML
+- XML
 
      `[DataSource("Microsoft.VisualStudio.TestTools.DataSource.XML", "|DataDirectory|\\data.xml", "Iterations", DataAccessMethod.Sequential), DeploymentItem("data.xml"), TestMethod]`
 
--   SQL Express
+- SQL Express
 
      `[DataSource("System.Data.SqlClient", "Data Source=.\\sqlexpress;Initial Catalog=tempdb;Integrated Security=True", "Data", DataAccessMethod.Sequential), TestMethod]`
 
@@ -235,7 +235,7 @@ Si tiene que modificar un método grabado, debe copiarlo en el archivo *UIMap.cs
 
 ## <a name="see-also"></a>Vea también
 
-- <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UIMap.UIMap>
+- [UIMap](/previous-versions/dd580454(v=vs.140))
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert>
 - [Usar la automatización de la interfaz de usuario para probar el código](../test/use-ui-automation-to-test-your-code.md)
 - [Crear pruebas automatizadas de IU](../test/use-ui-automation-to-test-your-code.md)

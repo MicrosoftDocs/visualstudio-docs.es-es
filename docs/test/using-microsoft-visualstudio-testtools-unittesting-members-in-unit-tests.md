@@ -1,5 +1,5 @@
 ---
-title: Usar miembros de Microsoft.VisualStudio.TestTools.UnitTesting en pruebas unitarias
+title: Uso de Microsoft.VisualStudio.TestTools.UnitTesting en pruebas unitarias
 ms.date: 03/02/2018
 ms.topic: reference
 ms.author: gewarren
@@ -7,12 +7,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 12c1b35288ac5857ac2971ffc6cbdddd40aa5c40
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: a9fcf54abf6227fe020d98d2fdc9aed6de021983
+ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55942185"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68869835"
 ---
 # <a name="use-the-mstest-framework-in-unit-tests"></a>Usar el marco de trabajo MSTest en pruebas unitarias
 
@@ -81,6 +81,8 @@ Las pruebas unitarias pueden comprobar el comportamiento de aplicaciones concret
 
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert>
 
+- <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert.ThrowsException%2A?displayProperty=nameWithType>
+
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.CollectionAssert>
 
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.StringAssert>
@@ -90,8 +92,6 @@ Las pruebas unitarias pueden comprobar el comportamiento de aplicaciones concret
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.AssertInconclusiveException>
 
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.UnitTestAssertException>
-
-- <xref:Microsoft.VisualStudio.TestTools.UnitTesting.ExpectedExceptionAttribute>
 
 ## <a name="the-testcontext-class"></a>La clase TestContext
 
@@ -113,7 +113,7 @@ Los siguientes atributos y los valores asignados a ellos aparecen en la ventana 
 
 ## <a name="test-configuration-classes"></a>Clases de configuración de prueba
 
-- <xref:Microsoft.TeamFoundation.TestManagement.Client.ObjectTypes>
+- [ObjectTypes](/previous-versions/visualstudio/visual-studio-2013/dd987428(v=vs.120))
 
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestConfigurationSection>
 

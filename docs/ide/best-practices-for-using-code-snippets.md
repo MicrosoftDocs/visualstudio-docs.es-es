@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3f106606ae00c8f22aa5948128afb8f7f27659a5
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 42a6eec4b6478f9a789c81311fdfdec4e664cb8a
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55933413"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67825960"
 ---
 # <a name="best-practices-for-using-code-snippets"></a>Procedimientos recomendados para usar fragmentos de código
 
@@ -31,7 +31,7 @@ Al adaptar las ubicaciones de archivo a la aplicación, debe tener en cuenta lo 
 
 - Encontrar una ubicación accesible. Es posible que los usuarios no tengan acceso a la carpeta *Archivos de programa* del equipo, por lo que puede que no sirva almacenar archivos con los archivos de aplicación.
 
-- Encontrar una ubicación segura. Almacenar archivos en la carpeta raíz (*C:\\*) no es seguro. Para los datos de aplicaciones, le recomendamos la carpeta *Application Data*. Para los datos de usuarios individuales, la aplicación puede crear un archivo para cada usuario en la carpeta *Documentos*.
+- Encontrar una ubicación segura. Almacenar archivos en la carpeta raíz (*C:\\* ) no es seguro. Para los datos de aplicaciones, le recomendamos la carpeta *Application Data*. Para los datos de usuarios individuales, la aplicación puede crear un archivo para cada usuario en la carpeta *Documentos*.
 
 - Usar un nombre de archivo válido. Puede usar los controles <xref:System.Windows.Forms.OpenFileDialog> y <xref:System.Windows.Forms.SaveFileDialog> para reducir la probabilidad de nombres de archivo no válidos. Tenga en cuenta que, entre el momento en que el usuario selecciona un archivo y el tiempo que el código manipula el archivo, se puede eliminar el archivo. Además, es posible que el usuario no tenga permisos para escribir en el archivo.
 
@@ -61,11 +61,11 @@ Los fragmentos de código de IntelliSense instalados por Visual Studio no consti
 
 - Abra todos los archivos de fragmento de código descargados en el Bloc de notas o el editor XML de Visual Studio y examínelos detenidamente antes de instalarlos. Busque los siguientes problemas:
 
-    - El fragmento de código podría dañar el sistema si lo ejecuta. Lea detenidamente el código fuente antes de ejecutarlo.
+  - El fragmento de código podría dañar el sistema si lo ejecuta. Lea detenidamente el código fuente antes de ejecutarlo.
 
-    - El bloque Dirección URL de ayuda del archivo de fragmento de código puede contener direcciones URL que ejecuten un archivo de script malintencionado o muestren un sitio web ofensivo.
+  - El bloque Dirección URL de ayuda del archivo de fragmento de código puede contener direcciones URL que ejecuten un archivo de script malintencionado o muestren un sitio web ofensivo.
 
-    - El fragmento de código puede contener referencias que se agregan automáticamente al proyecto y es posible que se carguen desde cualquier lugar del sistema. Es posible que estas referencias se hayan descargado en el equipo desde el mismo sitio del que ha descargado el fragmento de código. El fragmento de código puede realizar una llamada a un método en la referencia que ejecuta código malintencionado. Para protegerse contra este tipo de ataque, revise los bloques Importaciones y Referencias del archivo de fragmentos.
+  - El fragmento de código puede contener referencias que se agregan automáticamente al proyecto y es posible que se carguen desde cualquier lugar del sistema. Es posible que estas referencias se hayan descargado en el equipo desde el mismo sitio del que ha descargado el fragmento de código. El fragmento de código puede realizar una llamada a un método en la referencia que ejecuta código malintencionado. Para protegerse contra este tipo de ataque, revise los bloques Importaciones y Referencias del archivo de fragmentos.
 
 ## <a name="see-also"></a>Vea también
 

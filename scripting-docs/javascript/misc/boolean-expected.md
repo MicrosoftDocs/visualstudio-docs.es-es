@@ -1,5 +1,5 @@
 ---
-title: Se espera un booleano | Documentos de Microsoft
+title: Se esperaba un valor booleano | Microsoft Docs
 ms.date: 01/18/2017
 ms.prod: visual-studio-windows
 ms.technology: vs-javascript
@@ -14,15 +14,15 @@ ms.assetid: 35d71b7f-53fd-44c4-a7c7-b1550c65cfd4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 261cf0ad93208c0eac09e42dcd68853352318e88
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 91ff0ec8cbd6e5cedb5ec02a8c574ff137b1c6ad
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58149161"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72576057"
 ---
 # <a name="boolean-expected"></a>Se esperaba un booleano
-Se intentó invocar el **Boolean.prototype.toString** o **Boolean.prototype.valueOf** método en un objeto de un tipo distinto `Boolean`. El objeto de este tipo de invocación debe ser de tipo `Boolean`. Por ejemplo:
+Intentó invocar el método **Boolean. prototype. ToString** o **Boolean. prototype. valueto** en un objeto de un tipo distinto de `Boolean`. El objeto de este tipo de invocación debe ser de tipo `Boolean`. Por ejemplo:
 
 ```JavaScript
 var o = new Object;
@@ -32,7 +32,7 @@ o.f();
 
 ## <a name="to-correct-this-error"></a>Para corregir este error
 
-- Solo se invoque la **Boolean.prototype.toString** o **Boolean.prototype.valueOf** métodos en objetos de tipo **booleano.**
+- Solo se invocan los métodos **Boolean. prototype. ToString** o **Boolean. prototype. valueto** en objetos de tipo **Boolean.**
 
 ## <a name="see-also"></a>Vea también
 

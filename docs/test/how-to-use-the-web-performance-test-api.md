@@ -9,14 +9,14 @@ ms.assetid: 93a6a1dd-663b-4ab5-8760-7d6b081561d3
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: add516e9a8f5cb31b85429b1bf41cfa438e8a438
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: ab103b11659ee1e73537f6f41ff1fe0e6ed32076
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55949920"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62978567"
 ---
-# <a name="how-to-use-the-web-performance-test-api"></a>Filtrar para usar la API de prueba de rendimiento web
+# <a name="how-to-use-the-web-performance-test-api"></a>Procedimiento para usar la API de prueba de rendimiento web
 
 Puede escribir código para sus pruebas de rendimiento web. La API de prueba de rendimiento web se utiliza para crear pruebas de rendimiento web automatizadas, complementos de prueba de rendimiento web, complementos de solicitud, solicitudes, reglas de extracción y reglas de validación. Las clases que constituyen estos tipos son las clases principales de esta API. Los otros tipos contenidos en esta API se utilizan para permitir la creación de objetos <xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTest>, <xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestPlugin>, <xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestRequestPlugin>, <xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestRequest>, <xref:Microsoft.VisualStudio.TestTools.WebTesting.ExtractionRule> y <xref:Microsoft.VisualStudio.TestTools.WebTesting.ValidationRule>. El espacio de nombres <xref:Microsoft.VisualStudio.TestTools.WebTesting> sirve para crear pruebas de rendimiento web personalizadas.
 
@@ -31,34 +31,34 @@ También se pueden crear complementos para pruebas de carga. Para obtener más i
 
 ## <a name="to-use-the-webtesting-namespace"></a>Para usar el espacio de nombres WebTesting
 
-1.  Abra un proyecto de prueba de carga y rendimiento web que contenga una prueba de rendimiento web.
+1. Abra un proyecto de prueba de carga y rendimiento web que contenga una prueba de rendimiento web.
 
-2.  Agregue un proyecto de biblioteca de clases de Visual C# o Visual Basic a la solución de prueba.
+2. Agregue un proyecto de biblioteca de clases de Visual C# o Visual Basic a la solución de prueba.
 
-3.  Agregue una referencia en el proyecto de prueba de carga y rendimiento web para el proyecto de biblioteca de clases.
+3. Agregue una referencia en el proyecto de prueba de carga y rendimiento web para el proyecto de biblioteca de clases.
 
-4.  Agregue una referencia al archivo DLL Microsoft.VisualStudio.QualityTools.WebTestFramework en el proyecto de biblioteca de clases.
+4. Agregue una referencia al archivo DLL Microsoft.VisualStudio.QualityTools.WebTestFramework en el proyecto de biblioteca de clases.
 
-5.  En el archivo de clase ubicado en el proyecto de biblioteca de clases, agregue una instrucción `using` para el espacio de nombres <xref:Microsoft.VisualStudio.TestTools.WebTesting>.
+5. En el archivo de clase ubicado en el proyecto de biblioteca de clases, agregue una instrucción `using` para el espacio de nombres <xref:Microsoft.VisualStudio.TestTools.WebTesting>.
 
-6.  Cree una clase que implemente la interfaz <xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestPlugin>.
+6. Cree una clase que implemente la interfaz <xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestPlugin>.
 
-7.  Compile el proyecto.
+7. Compile el proyecto.
 
-8.  Agregue el nuevo complemento de prueba de rendimiento web usando el Editor de pruebas de rendimiento web:
+8. Agregue el nuevo complemento de prueba de rendimiento web usando el Editor de pruebas de rendimiento web:
 
-    1.  Elija **Agregar complemento de prueba web** en la barra de herramientas.
+    1. Elija **Agregar complemento de prueba web** en la barra de herramientas.
 
          Aparecerá el cuadro de diálogo **Agregar complemento de prueba web**.
 
-    2.  En **Seleccionar un complemento**, seleccione la clase de complemento de prueba de rendimiento web.
+    2. En **Seleccionar un complemento**, seleccione la clase de complemento de prueba de rendimiento web.
 
-    3.  En el panel **Propiedades del complemento seleccionado**, establezca los valores iniciales que el complemento va a usar en tiempo de ejecución.
+    3. En el panel **Propiedades del complemento seleccionado**, establezca los valores iniciales que el complemento va a usar en tiempo de ejecución.
 
         > [!NOTE]
         > Puede exponer tantas propiedades de los complementos como desee; basta con hacerlas públicas, que se puedan establecer y que tengan un tipo base como Integer, Boolean o String. También puede editar las propiedades del complemento de prueba de rendimiento web más tarde en la ventana Propiedades.
 
-    4.  Elija **Aceptar**.
+    4. Elija **Aceptar**.
 
 9. Ejecute su prueba de rendimiento web.
 

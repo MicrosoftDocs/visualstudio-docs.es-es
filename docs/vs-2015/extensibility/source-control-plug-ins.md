@@ -10,12 +10,12 @@ ms.assetid: 964980ca-21c5-4706-8535-6ea23e1c9cc9
 caps.latest.revision: 18
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: ff124246c3dc80074432e40eebf6e00e8b90b3f7
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: a5a99ebdf2366ce6a60a6a724afc7d742db7150f
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58996459"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65705803"
 ---
 # <a name="source-control-plug-ins"></a>Complementos de control de código fuente
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -56,11 +56,11 @@ La sección de referencia de SDK de complemento de Control de código fuente con
  [Glosario](../extensibility/source-control-plug-in-glossary.md)  
  Proporciona los términos útiles y sus definiciones para leer la documentación del SDK de complemento de Control de origen.  
   
- [Cómo: Desactivar las advertencias de compatibilidad para complementos de Control de código fuente](../extensibility/how-to-turn-off-compatibility-warnings-for-source-control-plug-ins.md)  
+ [Cómo: Desactivar advertencias de compatibilidad para complementos de control de código fuente](../extensibility/how-to-turn-off-compatibility-warnings-for-source-control-plug-ins.md)  
  Describe cómo deshabilitar las advertencias.  
   
 ## <a name="related-sections"></a>Secciones relacionadas  
- [Ejemplo de complemento de Control de código fuente](http://msdn.microsoft.com/61de7d2b-71db-451e-8e3e-d41b11c7a4ca)  
+ [Ejemplo de complemento de Control de código fuente](https://msdn.microsoft.com/61de7d2b-71db-451e-8e3e-d41b11c7a4ca)  
  Proporciona un ejemplo de la funcionalidad de complemento de control de código fuente.  
   
  [Guía de pruebas para los complementos de control de código fuente](../extensibility/internals/test-guide-for-source-control-plug-ins.md)  

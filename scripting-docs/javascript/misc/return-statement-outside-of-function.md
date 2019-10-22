@@ -1,5 +1,5 @@
 ---
-title: "'return' instrucción fuera de función | Microsoft Docs"
+title: instrucción ' Return ' fuera de la función | Microsoft Docs
 ms.date: 01/18/2017
 ms.prod: visual-studio-windows
 ms.technology: vs-javascript
@@ -14,34 +14,34 @@ ms.assetid: 03568f9f-5f4f-4a10-a738-9a73f3832b9e
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 01ef96385d5fe3dccf14a7491e67983d39913280
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: a90af6de8e2c238e3660111b19d13c1eaf628c9e
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60100396"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72573685"
 ---
 # <a name="return-statement-outside-of-function"></a>'return' instrucción fuera de función
-Ha utilizado un `return` instrucción en el ámbito global de su código. El `return` instrucción solo debe aparecer dentro del cuerpo de una función.  
+Usó una instrucción `return` en el ámbito global del código. La instrucción `return` solo debe aparecer dentro del cuerpo de una función.  
   
- Invocar una función con el `()` operador es una expresión. Todas las expresiones tienen valores; el `return` instrucción se utiliza para especificar el valor devuelto por una función. El formato general es:  
+ La invocación de una función con el operador `()` es una expresión. Todas las expresiones tienen valores; la instrucción `return` se utiliza para especificar el valor devuelto por una función. El formato general es:  
   
 ```js
   
 return [ expression ];  
 ```  
   
- Cuando el `return` se ejecuta la instrucción, *expresión* se evalúa y se devuelve como el valor de la función. Si no hay ninguna expresión, **indefinido** se devuelve.  
+ Cuando se ejecuta la instrucción `return`, *Expression* se evalúa y se devuelve como el valor de la función. Si no hay ninguna expresión, se devuelve **undefined** .  
   
- Ejecución de la función detiene cuando el `return` se ejecuta la instrucción, incluso si hay cualquier otra instrucción en el cuerpo de la función. La excepción a esta regla es si el **devolver** instrucción se produce en un **intente** bloque, y no hay correspondiente **finalmente** bloque, el código en el  **Por último** bloque se ejecutará antes de que vuelva la función.  
+ La ejecución de la función se detiene cuando se ejecuta la instrucción `return`, incluso si todavía quedan otras instrucciones en el cuerpo de la función. La excepción a esta regla es si la instrucción **Return** se produce dentro de un bloque **try** y hay un bloque **Finally** correspondiente, el código del bloque **Finally** se ejecutará antes de que se devuelva la función.  
   
- Si una función devuelve porque llega al final del cuerpo de función sin ejecutar un `return` instrucción, el valor devuelto es el **indefinido** valor (Esto significa que el resultado de la función no se puede usar como parte de una expresión mayor ).  
+ Si una función devuelve porque alcanza el final del cuerpo de la función sin ejecutar una instrucción `return`, el valor devuelto es el valor **indefinido** (esto significa que el resultado de la función no se puede usar como parte de una expresión mayor).  
   
 ### <a name="to-correct-this-error"></a>Para corregir este error  
   
-- Quitar el `return` instrucción del cuerpo principal del código (el ámbito global).  
+- Quite la instrucción `return` del cuerpo principal del código (ámbito global).  
   
 ## <a name="see-also"></a>Vea también  
  [Return (instrucción)](../../javascript/reference/return-statement-javascript.md)   
- [Objeto de función](../../javascript/reference/function-object-javascript.md)   
+ [Objeto de función](../../javascript/reference/function-object-javascript.md)    
  [caller (Propiedad, Function)](../../javascript/reference/caller-property-function-javascript.md)

@@ -1,71 +1,82 @@
 ---
-title: Configurar los analizadores de FxCop con editorconfig
-ms.date: 03/11/2019
+title: Configurar analizadores de FxCop mediante editorconfig
+ms.date: 09/23/2019
 ms.topic: conceptual
 helpviewer_keywords:
 - FxCop analyzers, configuring
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: ac751b7ec130b6bfbb18752c02b491b6c342f172
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.openlocfilehash: 1d2c4f6b44daf83b3fd013167ec24e82c45ce2e8
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57874716"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72649699"
 ---
-# <a name="configure-fxcop-analyzers"></a>Configurar los analizadores de FxCop
+# <a name="configure-fxcop-analyzers"></a>Configurar analizadores FxCop
 
-El [analizadores de FxCop](install-fxcop-analyzers.md) constan de las reglas de "FxCop" más importante del análisis de código estático, puede convertida en analizadores de Roslyn. Puede configurar los analizadores de código de FxCop de dos maneras:
-
-- Con un [conjunto de reglas](#fxcop-analyzer-rule-sets), que le permite habilitar o deshabilitar la regla y establecer la gravedad de las infracciones de reglas individuales.
-
-- A partir de la versión 2.6.3 de la [Microsoft.CodeAnalysis.FxCopAnalyzers](https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers) de paquetes de NuGet, mediante un [archivo .editorconfig](#editorconfig-file). El [opciones configurables](fxcop-analyzer-options.md) permiten restringir qué partes de la base de código para analizar.
+El [paquete de analizadores de FxCop](install-fxcop-analyzers.md) consta de las reglas de "FxCop" más importantes del análisis heredado convertidas en analizadores de código basados en .net Compiler Platform. En el caso de ciertas reglas de FxCop, puede restringir qué partes del código base deben aplicarse a través de [las opciones configurables](fxcop-analyzer-options.md). Cada opción se especifica agregando un par clave-valor a un archivo [EditorConfig](https://editorconfig.org) . Un archivo de configuración puede ser [específico de un proyecto](#per-project-configuration) o puede [compartirse](#shared-configuration) entre dos o más proyectos.
 
 > [!TIP]
-> Para obtener información sobre las diferencias entre el análisis de código estático de FxCop y analizadores de FxCop, consulte [preguntas más frecuentes sobre los analizadores de FxCop](fxcop-analyzers-faq.md).
-
-## <a name="fxcop-analyzer-rule-sets"></a>Conjuntos de reglas del analizador de FxCop
-
-Una manera de configurar los analizadores de FxCop es mediante el uso de un documento XML *conjunto de reglas*. Un conjunto de reglas es una agrupación de reglas de análisis de código que identifican problemas concretos y condiciones específicas. Conjuntos de reglas le permiten habilitar o deshabilitar la regla y establecer la gravedad de las infracciones de reglas individuales.
-
-El paquete de NuGet de analizadores de FxCop incluye conjuntos de reglas predefinidas para las siguientes categorías de regla:
-
-- diseño
-- en línea
-- mantenimiento
-- asignar nombre
-- rendimiento
-- confiabilidad
-- seguridad
-- uso
-
-Para obtener más información, consulte [conjuntos de reglas para los analizadores de Roslyn](analyzer-rule-sets.md).
-
-## <a name="editorconfig-file"></a>Archivo EditorConfig
-
-Puede configurar reglas del analizador mediante la adición de pares clave-valor a un [.editorconfig](https://editorconfig.org) archivo. Puede ser un archivo de configuración [específico a un proyecto](#per-project-configuration) o puede ser [compartido](#shared-configuration) entre dos o más proyectos.
-
-### <a name="per-project-configuration"></a>Configuración por proyecto
-
-Para habilitar la configuración del analizador basado en .editorconfig para un proyecto específico, agregue un *.editorconfig* archivo al directorio raíz del proyecto.
-
-> [!TIP]
-> Puede agregar un archivo .editorconfig al proyecto con el botón secundario en el proyecto en **el Explorador de soluciones** y seleccionando **agregar** > **nuevo elemento**. En el **Agregar nuevo elemento** ventana, escriba **editorconfig** en el cuadro de búsqueda. Seleccione el **(valor predeterminado) del archivo editorconfig** plantilla y elija **agregar**.
+> Agregue un archivo. editorconfig al proyecto haciendo clic con el botón derecho en el proyecto en **Explorador de soluciones** y seleccionando **Agregar**  > **nuevo elemento**. En la ventana **Agregar nuevo elemento** , escriba **editorconfig** en el cuadro de búsqueda. Seleccione la plantilla **archivo editorconfig (valor predeterminado)** y elija **Agregar**.
 >
-> ![Agregar elemento de editorconfig al proyecto en Visual Studio](media/add-editorconfig-file.png)
+> ![Agregar archivo editorconfig al proyecto en Visual Studio](media/add-editorconfig-file.png)
 
-Actualmente no hay ninguna compatibilidad jerárquica para "combinar".editorconfig archivos que existen en los niveles de otro directorio, por ejemplo, el nivel de solución y proyecto.
+::: moniker range=">=vs-2019"
 
-### <a name="shared-configuration"></a>Configuración compartida
+Para obtener información sobre la configuración de la gravedad de una regla (por ejemplo, si es un error o una advertencia), vea [establecer la gravedad de la regla en un archivo EditorConfig](use-roslyn-analyzers.md#set-rule-severity-in-an-editorconfig-file). O bien, puede elegir uno de los [conjuntos de reglas o los archivos EditorConfig](analyzer-rule-sets.md) integrados para habilitar o deshabilitar rápidamente una categoría de reglas.
 
-Puede compartir un archivo .editorconfig para la configuración del analizador entre dos o más proyectos, pero requiere algunos pasos adicionales.
+::: moniker-end
 
-1. Guardar el *.editorconfig* en una ubicación común.
+En el resto de este artículo se describe la sintaxis general de las [opciones que refinan](fxcop-analyzer-options.md) dónde se aplican las reglas de FxCop.
 
-2. Crear un *.props* archivo con el siguiente contenido:
+> [!NOTE]
+> No se pueden configurar reglas FxCop heredadas mediante un archivo EditorConfig. Para obtener información sobre las diferencias entre el análisis heredado y los analizadores de FxCop, consulte [p + f sobre analizadores de FxCop](fxcop-analyzers-faq.md).
+
+## <a name="option-scopes"></a>Ámbitos de opción
+
+Cada opción de refinamiento puede configurarse para todas las reglas, para una categoría de reglas (por ejemplo, nomenclatura o diseño) o para una regla específica.
+
+### <a name="all-rules"></a>Todas las reglas
+
+La sintaxis para configurar una opción para *todas* las reglas es la siguiente:
+
+|Sintaxis|Ejemplo|
+|-|-|
+| dotnet_code_quality.OptionName = OptionValue | `dotnet_code_quality.api_surface = public` |
+
+### <a name="category-of-rules"></a>Categoría de reglas
+
+La sintaxis para configurar una opción para una *categoría* de reglas (como nombre, diseño o rendimiento) es la siguiente:
+
+|Sintaxis|Ejemplo|
+|-|-|
+| dotnet_code_quality.RuleCategory.OptionName = OptionValue | `dotnet_code_quality.Naming.api_surface = public` |
+
+### <a name="specific-rule"></a>Regla específica
+
+La sintaxis para configurar una opción para una regla *específica* es la siguiente:
+
+|Sintaxis|Ejemplo|
+|-|-|
+| dotnet_code_quality. . Nombredeopción = OptionValue | `dotnet_code_quality.CA1040.api_surface = public` |
+
+## <a name="per-project-configuration"></a>Configuración por proyecto
+
+Para habilitar la configuración de analizador basada en EditorConfig para un proyecto específico, agregue un archivo *. EditorConfig* al directorio raíz del proyecto.
+
+Actualmente no hay compatibilidad jerárquica con los archivos. editorconfig "combinados" que existen en distintos niveles de directorio, por ejemplo, el nivel de solución y de proyecto.
+
+## <a name="shared-configuration"></a>Configuración compartida
+
+Puede compartir un archivo. editorconfig para la configuración del analizador de FxCop entre dos o más proyectos, pero requiere algunos pasos adicionales.
+
+1. Guarde el archivo *. editorconfig* en una ubicación común.
+
+2. Cree un archivo *. props* con el siguiente contenido:
 
    ```xml
    <Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -78,7 +89,7 @@ Puede compartir un archivo .editorconfig para la configuración del analizador e
    </Project>
    ```
 
-3. Agregue una línea a su *.csproj* o *.vbproj* archivo para importar el *.props* archivo que creó en el paso anterior. Esta línea debe colocarse antes de todas las líneas que importación el analizador de FxCop *.props* archivos. Por ejemplo, si su archivo .props se denomina *editorconfig.props*:
+3. Agregue una línea al archivo *. csproj* o *. vbproj* para importar el archivo *. props* que creó en el paso anterior. Esta línea se debe colocar delante de cualquier línea que importe los archivos FxCop Analyzer *. props* . Por ejemplo, si el archivo. props se denomina *editorconfig. props*:
 
    ```xml
    ...
@@ -90,37 +101,11 @@ Puede compartir un archivo .editorconfig para la configuración del analizador e
 4. Vuelva a cargar el proyecto.
 
 > [!NOTE]
-> No se puede configurar reglas heredadas de FxCop (análisis de código estático FxCop) mediante el uso de un archivo .editorconfig.
-
-## <a name="option-scopes"></a>Ámbitos de opción
-
-Cada opción se puede configurar para todas las reglas, para una categoría de reglas (por ejemplo, el diseño o nomenclatura) o para una regla específica.
-
-### <a name="all-rules"></a>Todas las reglas
-
-La sintaxis para configurar una opción para todas las reglas es como sigue:
-
-|Sintaxis|Ejemplo|
-|-|-|
-| dotnet_code_quality.OptionName = OptionValue | `dotnet_code_quality.api_surface = public` |
-
-### <a name="category-of-rules"></a>Categoría de reglas
-
-La sintaxis para configurar una opción para un *categoría* de reglas (por ejemplo, convenciones de nomenclatura, diseño o rendimiento) es como sigue:
-
-|Sintaxis|Ejemplo|
-|-|-|
-| dotnet_code_quality.RuleCategory.OptionName = OptionValue | `dotnet_code_quality.Naming.api_surface = public` |
-
-### <a name="specific-rule"></a>Regla específica
-
-La sintaxis para configurar una opción para una regla concreta es como sigue:
-
-|Sintaxis|Ejemplo|
-|-|-|
-| dotnet_code_quality.RuleId.OptionName = OptionValue | `dotnet_code_quality.CA1040.api_surface = public` |
+> La ubicación compartida arbitraria del archivo EditorConfig que se describe aquí solo se aplica a la configuración del ámbito de ciertas reglas del analizador de FxCop. Para otras opciones, como la gravedad de la regla, la configuración general del editor y el estilo de código, el archivo EditorConfig se debe colocar siempre en la carpeta del proyecto o en una carpeta principal.
 
 ## <a name="see-also"></a>Vea también
 
+- [Opciones de ámbito de reglas para los analizadores de FxCop](fxcop-analyzer-options.md)
 - [Configuración del analizador](https://github.com/dotnet/roslyn-analyzers/blob/master/docs/Analyzer%20Configuration.md)
 - [Analizadores de FxCop](install-fxcop-analyzers.md)
+- [Convenciones de código de .NET para EditorConfig](../ide/editorconfig-code-style-settings-reference.md)

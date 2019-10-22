@@ -1,5 +1,5 @@
 ---
-title: Inicie sesión en Visual Studio 2015 | Microsoft Docs
+title: Iniciar sesión en Visual Studio 2015 | Microsoft Docs
 titleSuffix: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -7,15 +7,15 @@ ms.technology: vs-ide-general
 ms.topic: conceptual
 ms.assetid: b9531c25-e4cf-43ae-b331-a9f31a8cd171
 caps.latest.revision: 34
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 6e655cf78db50f4fbd590c16dfa6561cbe376b83
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 9c732f4011c4194ce95621cf49022c2b6a9fabf3
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60083964"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72661221"
 ---
 # <a name="signing-in-to-visual-studio"></a>Iniciar sesión en Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,7 +27,7 @@ Puede personalizar y optimizar la experiencia de desarrollo en Visual Studio est
 
 - **Concede acceso a una amplia gama de ventajas** desde el programa Visual Studio Dev Essentials, como el software gratuito, el aprendizaje, el soporte técnico y mucho más Consulte [Visual Studio Dev Essentials](https://aka.ms/vsdevhelp) para obtener más información
 
-- **Sincroniza la configuración de Visual Studio** : la configuración que ha personalizado, como los enlaces de clave, el diseño de ventana y el tema de color, se aplican inmediatamente al iniciar sesión en Visual Studio en cualquier dispositivo. Vea [Configuración sincronizada en Visual Studio](http://msdn.microsoft.com/library/dn135229%28v=vs.120%29.aspx).
+- **Sincroniza la configuración de Visual Studio** : la configuración que ha personalizado, como los enlaces de clave, el diseño de ventana y el tema de color, se aplican inmediatamente al iniciar sesión en Visual Studio en cualquier dispositivo. Vea [Configuración sincronizada en Visual Studio](https://msdn.microsoft.com/library/dn135229%28v=vs.120%29.aspx).
 
 - **Desbloquea permanentemente Visual Studio Express Edition** : puede usar cualquier edición de Visual Studio Express todo el tiempo que desee, en lugar de tener un período de prueba limitado de 30 días.
 
@@ -46,7 +46,7 @@ Puede personalizar y optimizar la experiencia de desarrollo en Visual Studio est
 
  Después de proporcionar la configuración, se inicia Visual Studio, y ya ha iniciado sesión y está listo para empezar. Para comprobar si ha iniciado sesión, busque su nombre en la esquina superior derecha del entorno de Visual Studio.
 
- ![Usuario registrado actualmente](../ide/media/vs2015-username.png "VS2015_UserName")
+ ![Usuario que ha iniciado sesión en Currentlly](../ide/media/vs2015-username.png "VS2015_UserName")
 
  A menos que cierre sesión, siempre que inicia Visual Studio se inicia sesión automáticamente y todos los cambios realizados en la configuración sincronizada se aplican automáticamente. Para cerrar sesión, elija la flecha abajo situada junto al nombre del perfil en el entorno de Visual Studio, elija el comando **Configuración de la cuenta** y, a continuación, elija el vínculo **Cerrar sesión** . Para volver a iniciar sesión, elija el comando **Iniciar sesión** situado en la esquina superior derecha del entorno de Visual Studio.
 

@@ -18,28 +18,28 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a0ecdd051ecc44cb3205ca8793653bf31a63abd2
-ms.sourcegitcommit: 847d192013eb8225776243045c9b5a53d1ba4a59
+ms.openlocfilehash: 38da720b63c8f5ba6d2ceb89fe8b414c6700cbcd
+ms.sourcegitcommit: e82baa50bf5a65858c410882c2e86a552c2c1921
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/15/2019
-ms.locfileid: "59584563"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72381358"
 ---
 # <a name="common-msbuild-project-properties"></a>Propiedades comunes de proyectos de MSBuild
 En la tabla siguiente se enumeran las propiedades usadas con frecuencia definidas en los archivos de proyecto de Visual Studio o incluidas en archivos *.targets* que proporciona MSBuild.
 
- Los archivos de proyecto de Visual Studio (*.csproj*, *.vbproj*, *.vcxproj* y otros) contienen código XML de MSBuild que se ejecuta cuando se compila un proyecto mediante el IDE. Normalmente, los proyectos importan uno o más archivos *.targets* para definir su proceso de compilación. Para obtener más información, vea [Archivos .targets de MSBuild](../msbuild/msbuild-dot-targets-files.md).
+ Los archivos de proyecto de Visual Studio ( *.csproj*, *.vbproj*, *.vcxproj* y otros) contienen código XML de MSBuild que se ejecuta cuando se compila un proyecto mediante el IDE. Normalmente, los proyectos importan uno o más archivos *.targets* para definir su proceso de compilación. Para obtener más información, vea [Archivos .targets de MSBuild](../msbuild/msbuild-dot-targets-files.md).
 
 ## <a name="list-of-common-properties-and-parameters"></a>Lista de propiedades y parámetros comunes
 
-| Nombre de propiedad o parámetro | Descripción |
+| Nombre de propiedad o parámetro | DESCRIPCIÓN |
 |------------------------------------| - |
 | AdditionalLibPaths | Especifica carpetas adicionales en las que los compiladores deben buscar ensamblados de referencia. |
 | AddModules | Hace que el compilador facilite toda la información de tipos presente en los archivos especificados al proyecto que se está compilando. Esta propiedad es equivalente al modificador `/addModules` del compilador. |
 | ALToolPath | Ruta de acceso donde se puede encontrar *AL.exe*. Esta propiedad reemplaza a la versión actual de *AL.exe* para permitir el uso de otra versión. |
 | ApplicationIcon | Archivo de icono *.ico* que se va a pasar al compilador para incrustarlo como un icono de Win32. Esta propiedad es equivalente al modificador `/win32icon` de compilador. |
 | ApplicationManifest | Especifica la ruta de acceso del archivo que se utiliza para generar la información externa del manifiesto del Control de cuentas de usuario (UAC). Solo se aplica a los proyectos de Visual Studio que tienen como destino [!INCLUDE[windowsver](../deployment/includes/windowsver_md.md)].<br /><br /> En la mayoría de los casos, el manifiesto está incrustado. En cambio, si usa una implementación de COM sin registro o de [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)], el manifiesto puede ser un archivo externo que se instala junto con los ensamblados de la aplicación. Para obtener más información, vea la propiedad NoWin32Manifest en este tema. |
-| AssemblyOriginatorKeyFile | Especifica el archivo que se ha usado para firmar el ensamblado (*.snk* o *.pfx*) y que se ha pasado a [ResolveKeySource (Tarea)](../msbuild/resolvekeysource-task.md) para generar la clave real empleada para firmar el ensamblado. |
+| AssemblyOriginatorKeyFile | Especifica el archivo que se ha usado para firmar el ensamblado ( *.snk* o *.pfx*) y que se ha pasado a [ResolveKeySource (Tarea)](../msbuild/resolvekeysource-task.md) para generar la clave real empleada para firmar el ensamblado. |
 | AssemblySearchPaths | Lista de ubicaciones donde se realizarán las búsquedas durante la resolución de ensamblados de referencia en tiempo de compilación. El orden en que aparecen las rutas de acceso en esta lista es importante porque las rutas de acceso situadas antes en la lista tienen prioridad sobre las entradas posteriores. |
 | AssemblyName | Nombre del ensamblado resultante final una vez compilado el proyecto. |
 | BaseAddress | Especifica la dirección base del ensamblado resultante principal. Esta propiedad es equivalente al modificador `/baseaddress` del compilador. |
@@ -53,7 +53,7 @@ En la tabla siguiente se enumeran las propiedades usadas con frecuencia definida
 | Configuración | Configuración que está compilando, "Debug" o "Release". |
 | CscToolPath | Ruta de acceso de *csc.exe*, el compilador de [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]. |
 | CustomBeforeMicrosoftCommonTargets | Nombre de un archivo de proyecto o archivo de destinos que se importará automáticamente antes de importar los destinos comunes. |
-| DebugSymbols | Valor booleano que indica si la compilación genera símbolos.<br /><br /> Si se establece **-p:DebugSymbols=false** en la línea de comandos, se deshabilita la generación de archivos de símbolos (*.pdb*) de la base de datos del programa. |
+| DebugSymbols | Valor booleano que indica si la compilación genera símbolos.<br /><br /> Si se establece **-p:DebugSymbols=false** en la línea de comandos, se deshabilita la generación de archivos de símbolos ( *.pdb*) de la base de datos del programa. |
 | DebugType | Define el nivel de información de depuración que desea generar. Los valores válidos son "full," "pdbonly," "portable", "embedded" y "none". |
 | DefineConstants | Permite definir constantes condicionales para el compilador. Los pares símbolo-valor van separados por punto y coma, y se especifican con la siguiente sintaxis:<br /><br /> *symbol1 = value1 ; symbol2 = value2*<br /><br /> Esta propiedad es equivalente al modificador `/define` de compilador. |
 | DefineDebug | Valor booleano que indica si desea definir la constante DEBUG. |
@@ -67,8 +67,9 @@ En la tabla siguiente se enumeran las propiedades usadas con frecuencia definida
 | ExcludeDeploymentUrl | [GenerateDeploymentManifest (Tarea)](../msbuild/generatedeploymentmanifest-task.md) agrega una etiqueta deploymentProvider al manifiesto de implementación si el archivo de proyecto incluye alguno de los elementos siguientes:<br /><br /> -   UpdateUrl<br />-   InstallUrl<br />-   PublishUrl<br /><br /> Sin embargo, mediante ExcludeDeploymentUrl, puede evitar que la etiqueta deploymentProvider se agregue al manifiesto de implementación aunque se especifique alguna de las direcciones URL anteriores. Para ello, agregue la siguiente propiedad al archivo de proyecto:<br /><br /> `<ExcludeDeploymentUrl>true</ExcludeDeploymentUrl>` <br /><br />**Nota:**  ExcludeDeploymentUrl no se expone en el IDE de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] y solo se puede establecer manualmente editando el archivo de proyecto. Al establecer esta propiedad, la publicación desde [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] no resulta afectada; es decir, la etiqueta deploymentProvider se agregará de igual modo a la dirección URL especificada por PublishUrl. |
 | FileAlignment | Especifica, en bytes, dónde se alinean las secciones del archivo de salida. Los valores válidos son 512, 1024, 2048, 4096, 8192. Esta propiedad es equivalente al modificador `/filealignment` del compilador. |
 | FrameworkPathOverride | Especifica la ubicación de *mscorlib.dll* y *microsoft.visualbasic.dll*. Este parámetro es equivalente al modificador `/sdkpath` del compilador de *vbc.exe*. |
-| GenerateDocumentation | (Solo Visual Basic) Parámetro booleano que indica si la compilación generará la documentación. Si es `true`, la compilación genera información de documentación y la coloca en un archivo *.xml* junto con el nombre del archivo ejecutable o la biblioteca creada por la tarea de compilación. |
-| IntermediateOutputPath | Ruta de acceso intermedia completa de los resultados derivada de `BaseIntermediateOutputPath`, si no se especificó ninguna ruta de acceso. Por ejemplo, *\obj\debug\\*. |
+| GenerateDocumentation | (C#, Visual Basic) Parámetro booleano que indica si la compilación generará la documentación. Si es `true`, la compilación genera información de documentación y la coloca en un archivo *.xml* junto con el nombre del archivo ejecutable o la biblioteca creada por la tarea de compilación. |
+| GenerateSerializationAssemblies | Indica si se deben generar ensamblados de serialización XML mediante *SGen.exe*, que puede establecerse en activado, automático o desactivado. Esta propiedad solo se usa para los ensamblados que tienen como destino .NET Framework. Para generar ensamblados de serialización XML para los ensamblados de .NET Standard o .NET Core, haga referencia al paquete NuGet *Microsoft.XmlSerializer.Generator*. |
+| IntermediateOutputPath | Ruta de acceso intermedia completa de los resultados derivada de `BaseIntermediateOutputPath`, si no se especificó ninguna ruta de acceso. Por ejemplo, *\obj\debug\\* . |
 | KeyContainerName | Nombre del contenedor de claves de nombre seguro. |
 | KeyOriginatorFile | Nombre del archivo de claves de nombre seguro. |
 | MSBuildProjectExtensionsPath | Especifica la ruta de acceso donde se encuentran las extensiones de proyecto. De forma predeterminada, esto tiene el mismo valor que `BaseIntermediateOutputPath`. |
@@ -91,8 +92,8 @@ En la tabla siguiente se enumeran las propiedades usadas con frecuencia definida
 | ProduceReferenceAssembly | Se trata de un valor booleano que cuando se establece en `true` permite la producción de [ensamblados de referencia](https://github.com/dotnet/roslyn/blob/master/docs/features/refout.md) para el ensamblado actual. `Deterministic` debe ser `true` cuando use esta característica. Esta propiedad corresponde al modificador `/refout` de los compiladores de *vbc.exe* y *csc.exe*. |
 | ProduceOnlyReferenceAssembly | Valor booleano que instruye al compilador que emita solo un ensamblado de referencia, en lugar de código compilado. No se puede usar con `ProduceReferenceAssembly`.  Esta propiedad corresponde al modificador `/refonly` de los compiladores de *vbc.exe* y *csc.exe*. |
 | RemoveIntegerChecks | Valor booleano que indica si se van a deshabilitar las comprobaciones de los errores de desbordamiento de enteros. El valor predeterminado es `false`. Esta propiedad es equivalente al modificador `/removeintchecks` del compilador de *vbc.exe*. |
-| SGenUseProxyTypes | Valor booleano que indica si *SGen.exe* debe generar los tipos de proxy.<br /><br /> El destino de SGen usa esta propiedad para establecer la marca UseProxyTypes. Esta propiedad tiene el valor predeterminado true y no hay ninguna interfaz de usuario para cambiarlo. Para generar el ensamblado de serialización para tipos que no son de servicio web, agregue esta propiedad al archivo de proyecto y establézcala en false antes de importar *Microsoft.Common.Targets* o *C#/VB.targets*. |
-| SGenToolPath | Ruta de acceso opcional de la herramienta que indica dónde obtener *SGen.exe* si se reemplaza la versión actual de *SGen.exe*. |
+| SGenUseProxyTypes | Valor booleano que indica si *SGen.exe* debe generar los tipos de proxy. Esto únicamente se aplica si *GenerateSerializationAssemblies* está establecido en activado y solo para .NET Framework.<br /><br /> El destino de SGen usa esta propiedad para establecer la marca UseProxyTypes. Esta propiedad tiene el valor predeterminado true y no hay ninguna interfaz de usuario para cambiarlo. Para generar el ensamblado de serialización para tipos que no son de servicio web, agregue esta propiedad al archivo de proyecto y establézcala en false antes de importar *Microsoft.Common.Targets* o *C#/VB.targets*. |
+| SGenToolPath | Ruta de acceso opcional de la herramienta que indica dónde obtener *SGen.exe* si se reemplaza la versión actual de *SGen.exe*. Esta propiedad solo se usa para .NET Framework.|
 | StartupObject | Especifica la clase o módulo que contiene el método Main o el procedimiento Main Sub. Esta propiedad es equivalente al modificador `/main` del compilador. |
 | ProcessorArchitecture | Arquitectura de procesador utilizada cuando se resuelven las referencias de ensamblado. Los valores válidos son "msil", "x86", "amd64" o "ia64". |
 | RootNamespace | Espacio de nombres raíz que se utilizará al asignar nombre a un recurso incrustado. Este espacio de nombres forma parte del nombre de manifiesto del recurso incrustado. |
@@ -114,10 +115,10 @@ En la tabla siguiente se enumeran las propiedades usadas con frecuencia definida
 | Satellite_Trademark | Especifica una cadena para el campo Trademark del ensamblado satélite. |
 | Satellite_Version | Especifica la información de versión del ensamblado satélite. |
 | Satellite_Win32Icon | Inserta un archivo de icono *.ico* en el ensamblado satélite. |
-| Satellite_Win32Resource | Inserta un archivo de recursos (*.res*) de Win32 en el ensamblado satélite. |
+| Satellite_Win32Resource | Inserta un archivo de recursos ( *.res*) de Win32 en el ensamblado satélite. |
 | SubsystemVersion | Especifica la versión mínima del subsistema que el archivo ejecutable generado puede utilizar. Esta propiedad es equivalente al modificador `/subsystemversion` del compilador. Para obtener información sobre el valor predeterminado de esta propiedad, vea [-subsystemversion (Visual Basic)](/dotnet/visual-basic/reference/command-line-compiler/subsystemversion) o [-subsystemversion (Opciones del compilador de C#)](/dotnet/csharp/language-reference/compiler-options/subsystemversion-compiler-option). |
 | TargetCompactFramework | Versión de .NET Compact Framework necesaria para ejecutar la aplicación que se está compilando. Puede especificar esta propiedad para hacer referencia a ensamblados de .NET Framework concretos a los que no se pueda hacer referencia de ningún otro modo. |
-| TargetFrameworkVersion | Versión de [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] necesaria para ejecutar la aplicación que se está compilando. Puede especificar esta propiedad para hacer referencia a ensamblados de .NET Framework concretos a los que no se pueda hacer referencia de ningún otro modo. |
+| TargetFrameworkVersion | Versión de .NET Framework necesaria para ejecutar la aplicación que se está compilando. Puede especificar esta propiedad para hacer referencia a ensamblados de .NET Framework concretos a los que no se pueda hacer referencia de ningún otro modo. |
 | TreatWarningsAsErrors | Parámetro booleano que, si es `true`, hace que todas las advertencias se traten como errores. Este parámetro es equivalente al modificador `/nowarn` del compilador. |
 | UseHostCompilerIfAvailable | Parámetro booleano que, si es `true`, hace que la tarea de compilación utilice el objeto de compilador en proceso, si está disponible. Solo [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] utiliza este parámetro. |
 | Utf8Output | Parámetro booleano que, si es `true`, registra el resultado del compilador utilizando la codificación UTF-8. Este parámetro es equivalente al modificador `/utf8Output` del compilador. |

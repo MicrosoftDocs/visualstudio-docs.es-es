@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugStackFrame2::GetPhysicalStackRange
 ms.assetid: 2f6992e2-ac1c-433f-83b7-a7f83a4ce63d
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7c325ab6cb12813000c981e978e728c251b06c55
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 2cf0db9fa776116f1536ae137444160385a8b6a1
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56720905"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66347713"
 ---
 # <a name="idebugstackframe2getphysicalstackrange"></a>IDebugStackFrame2::GetPhysicalStackRange
 Obtiene una representación de dependiente de la máquina del intervalo de direcciones físicas asociado con un marco de pila.
@@ -38,14 +41,12 @@ int GetPhysicalStackRange ( 
 );
 ```
 
-#### <a name="parameters"></a>Parámetros
- `paddrMin`
+## <a name="parameters"></a>Parámetros
+`paddrMin`\
+[out] Devuelve el menor dirección física asociada con este marco de pila.
 
- [out] Devuelve el menor dirección física asociada con este marco de pila.
-
- `paddrMax`
-
- [out] Devuelve la dirección física más alta asociada con este marco de pila.
+`paddrMax`\
+[out] Devuelve la dirección física más alta asociada con este marco de pila.
 
 ## <a name="return-value"></a>Valor devuelto
  Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.

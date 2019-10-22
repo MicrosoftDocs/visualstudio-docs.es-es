@@ -17,11 +17,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 31eb3427a441b4b79bbd57d9da9871118173b15c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60051288"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62849400"
 ---
 # <a name="how-to-switch-to-another-thread-while-debugging-in-visual-studio-c-visual-basic-c"></a>Procedimiento Cambiar a otro subproceso durante la depuración en Visual Studio (C#, Visual Basic, C++)
 Cuando se depura una aplicación multiproceso, puede usar cualquiera de los diversos métodos para cambiar desde el subproceso que ha estado trabajando con a otro subproceso.

@@ -10,12 +10,12 @@ ms.assetid: 59d9a77f-ee80-474b-a14f-90f477ab717b
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 7afb8956ab3c5f4fb202adadbeea32d90e159074
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 6e58ebd736f7bb9f35df6e41d5235f36f7037259
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58988268"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65687631"
 ---
 # <a name="wizards"></a>Asistentes
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -50,7 +50,7 @@ Después de crear un asistente, normalmente desea agregarla a la [!INCLUDE[vsprv
  [Tipos de proyecto](../../extensibility/internals/project-types.md)  
  Proporciona vínculos a temas adicionales que ofrecen información sobre cómo diseñar nuevos tipos de proyecto.  
   
- [Tutorial: Crear un asistente](http://msdn.microsoft.com/library/adb41fe9-fcca-4e87-bf4f-bf2fa68e8b06)  
+ [Tutorial: Crear un asistente](https://msdn.microsoft.com/library/adb41fe9-fcca-4e87-bf4f-bf2fa68e8b06)  
  Muestra cómo crear a un asistente.  
   
  [Ampliación de proyectos](../../extensibility/extending-projects.md)  

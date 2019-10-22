@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - LAUNCH_FLAGS enumeration
 ms.assetid: f51aab02-d257-4302-bb79-b7d8ba9ac4e5
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 302c44b3d4947baa95554966246f15175841257d
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 27975f4055a433891251c675bff3aacaaa9f6bb3
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56680193"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66339365"
 ---
 # <a name="launchflags"></a>LAUNCH_FLAGS
 Especifica las marcas de inicio de depuración.
@@ -43,14 +46,18 @@ public enum enum_LAUNCH_FLAGS {
 };
 ```
 
-## <a name="members"></a>Miembros
-LAUNCH_DEBUG inicia el proceso de depuración.
+## <a name="fields"></a>Campos
+`LAUNCH_DEBUG`\
+Inicia el proceso de depuración.
 
-LAUNCH_NODEBUG inicia el proceso sin depurarlo.
+`LAUNCH_NODEBUG`\
+Inicia el proceso sin depurarlo.
 
-LAUNCH_ENABLE_ENC EN DESUSO, NO USE.
+`LAUNCH_ENABLE_ENC`\
+EN DESUSO, NO USE.
 
-LAUNCH_MERGE_ENV inicia el proceso y combina el entorno con el host al iniciar.
+`LAUNCH_MERGE_ENV`\
+Inicia el proceso y combina el entorno con el host al iniciar.
 
 ## <a name="remarks"></a>Comentarios
 Estos valores se pasan como argumento a la [LaunchSuspended](../../../extensibility/debugger/reference/idebugenginelaunch2-launchsuspended.md) método.

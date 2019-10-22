@@ -29,12 +29,12 @@ caps.latest.revision: 62
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: f0ebd89937eedfc2851c3b57998ef2628f9e8904
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 15b9921514f76d788430c1eda66603e9fc446361
+ms.sourcegitcommit: 748d9cd7328a30f8c80ce42198a94a4b5e869f26
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60053304"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67891023"
 ---
 # <a name="attach-to-running-processes-with-the-visual-studio-debugger"></a>Crear asociaciones con procesos en ejecución con el depurador de Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -65,14 +65,14 @@ Puede usar esta capacidad para depurar aplicaciones que se ejecutan en un equipo
 
     2. En el cuadro de diálogo **Seleccionar tipo de código** , haga clic en **Depurar estos tipos de código** y seleccione los tipos que va a depurar.
 
-    3. Haga clic en **Aceptar**.
+    3. Haga clic en **OK**.
 
 4. Haga clic en **Adjuntar**.
 
 ## <a name="BKMK_Attach_to_a_process_on_a_remote_computer"></a> Asociar a un proceso en un equipo remoto
  Para asociar a un proceso, debe conocer el nombre del proceso (consulte [comunes en escenarios de depuración](#BKMK_Scenarios) para algunos nombres comunes de proceso). Para obtener más detalles para las aplicaciones ASP.NET que se han implementado en IIS, consulte [Remote Debugging ASP.NET en un equipo IIS remoto](../debugger/remote-debugging-aspnet-on-a-remote-iis-7-5-computer.md). En el caso de las demás aplicaciones, encontrará el nombre del proceso en el Administrador de tareas.
 
- En el cuadro de diálogo **Asociar al proceso** , puede seleccionar otro equipo configurado para la depuración remota. Para obtener más información, consulte [depuración remota](http://msdn.microsoft.com/library/90f45630-0d26-4698-8c1f-63f85a12db9c). Cuando se ha seleccionado un equipo remoto, se puede consultar una lista con los procesos disponibles que se están ejecutando en dicho equipo y establecer una asociación con uno o varios procesos para llevar a cabo la depuración.
+ En el cuadro de diálogo **Asociar al proceso** , puede seleccionar otro equipo configurado para la depuración remota. Para obtener más información, consulte [depuración remota](https://msdn.microsoft.com/library/90f45630-0d26-4698-8c1f-63f85a12db9c). Cuando se ha seleccionado un equipo remoto, se puede consultar una lista con los procesos disponibles que se están ejecutando en dicho equipo y establecer una asociación con uno o varios procesos para llevar a cabo la depuración.
 
  **Para seleccionar un equipo remoto:**
 
@@ -86,7 +86,8 @@ Puede usar esta capacidad para depurar aplicaciones que se ejecutan en un equipo
 
    1. Escriba el nombre en el cuadro de lista **Calificador** .
 
-      >**Tenga en cuenta** si, en pasos posteriores, no se puede conectar con el nombre del equipo remoto, use la dirección IP. (El número de puerto puede aparecer automáticamente después de seleccionar el proceso. También puede escribir manualmente. En la ilustración siguiente, 4020 es el puerto predeterminado para el depurador remoto.)
+      > [!NOTE]
+      > Si, en pasos posteriores, no se puede conectar con el nombre del equipo remoto, use la dirección IP. (El número de puerto puede aparecer automáticamente después de seleccionar el proceso. También puede escribir manualmente. En la ilustración siguiente, 4020 es el puerto predeterminado para el depurador remoto.)
 
    2. Haga clic en la flecha desplegable del cuadro de lista **Calificador** y seleccione el nombre del equipo en la lista desplegable.
 
@@ -106,7 +107,7 @@ Puede usar esta capacidad para depurar aplicaciones que se ejecutan en un equipo
 
 ## <a name="additional-info"></a>Información adicional
 
-Puede tener asociados varios programas mientras realiza la depuración, pero sólo un programa estará activo en el depurador en cada momento. Puede establecer el programa activo en la barra de herramientas **Ubicación de depuración** o en la ventana **Procesos** . Para obtener más información, vea [Cómo: Establecer el programa actual](http://msdn.microsoft.com/7e1d7fa5-0e40-44cf-8c41-d3dba31c969e).
+Puede tener asociados varios programas mientras realiza la depuración, pero sólo un programa estará activo en el depurador en cada momento. Puede establecer el programa activo en la barra de herramientas **Ubicación de depuración** o en la ventana **Procesos** . Para obtener más información, consulte [Cómo Establecer el programa actual](https://msdn.microsoft.com/7e1d7fa5-0e40-44cf-8c41-d3dba31c969e).
 
 Si intenta asociar a un proceso que pertenece a una cuenta de usuario que no es de confianza, aparecerá un cuadro de diálogo de confirmación con una advertencia de seguridad. Para obtener más información, consulte [advertencia de seguridad: Adjuntar a un proceso que pertenezca a un usuario que no sea de confianza puede ser peligroso. Si la información siguiente parece sospechosa o no está seguro, no la adjunte a este proceso](/visualstudio/debugger/security-warning-attaching-to-a-process-owned-by-an-untrusted-user?view=vs-2015).
 
@@ -126,17 +127,17 @@ Para algunos tipos de aplicación (por ejemplo, las aplicaciones de Windows Stor
 |Depurar una aplicación administrada o nativa en el equipo local|Use asociar al proceso o [depuración estándar](../debugger/getting-started-with-the-debugger.md)|*appname*.exe|Para obtener acceso rápidamente el cuadro de diálogo, utilice **CTRL + ALT + P** y, a continuación, escriba la primera letra del nombre del proceso.|
 |Depurar aplicaciones ASP.NET en el equipo local después de iniciar la aplicación sin el depurador|Use asociar al proceso|iiexpress.exe|Esto puede resultar útil para realizar la aplicación carga más rápida, por ejemplo, (por ejemplo) al generar perfiles. |
 |Depuración remota de ASP.NET 4 o 4.5 en un servidor IIS|Utilizar las herramientas remotas y asociar al proceso|w3wp.exe|Consulte [Remote Debugging ASP.NET en un equipo remoto de IIS](../debugger/remote-debugging-aspnet-on-a-remote-iis-7-5-computer.md)|
-|Depuración remota de ASP.NET Core en un servidor IIS|Utilizar las herramientas remotas y asociar al proceso|dnx.exe|Implementación de aplicaciones, consulte [publicar en IIS](https://docs.asp.net/en/latest/publishing/iis.html). Para la depuración, vea [Remote Debugging ASP.NET en un equipo remoto de IIS](../debugger/remote-debugging-aspnet-on-a-remote-iis-7-5-computer.md)|
+|Depuración remota de ASP.NET Core en un servidor IIS|Utilizar las herramientas remotas y asociar al proceso|DNX.exe|Implementación de aplicaciones, consulte [publicar en IIS](https://docs.asp.net/en/latest/publishing/iis.html). Para la depuración, vea [Remote Debugging ASP.NET en un equipo remoto de IIS](../debugger/remote-debugging-aspnet-on-a-remote-iis-7-5-computer.md)|
 |Depurar otros tipos de aplicaciones compatibles en un proceso de servidor|Usar herramientas remotas (si el servidor es remoto) y asociar al proceso|Iexplore.exe u otros procesos|Si es necesario, utilice el Administrador de tareas para ayudar a identificar el proceso. Consulte [depuración remota](../debugger/remote-debugging.md) y las secciones posteriores de este tema.|
 |Depuración remota de una aplicación de escritorio de Windows|F5 y herramientas remotas|N/D| Consulte [depuración remota](../debugger/remote-debugging.md)|
 |Depuración remota de una aplicación Universal de Windows (UWP), OneCore, HoloLens o IoT|Depurar paquete de aplicaciones instalado|N/D|Use **depurar / otros destinos de depuración / depurar paquete de la aplicación instalado** en lugar de **asociar al proceso**|
 |Depurar una aplicación Universal de Windows (UWP), OneCore, HoloLens o IoT que no se inició desde Visual Studio|Depurar paquete de aplicaciones instalado|N/D|Use **depurar / otros destinos de depuración / depurar paquete de la aplicación instalado** en lugar de **asociar al proceso**|
 
 > [!WARNING]
->  Para asociar a una aplicación universal de Windows escrita en JavaScript, primero debe habilitar la depuración de la aplicación. Vea [Attach the debugger](../debugger/start-a-debugging-session-for-store-apps-in-visual-studio-javascript.md#BKMK_Attach_the_debugger) en el Centro de desarrollo de Windows.
+> Para asociar a una aplicación universal de Windows escrita en JavaScript, primero debe habilitar la depuración de la aplicación. Vea [Attach the debugger](../debugger/start-a-debugging-session-for-store-apps-in-visual-studio-javascript.md#BKMK_Attach_the_debugger) en el Centro de desarrollo de Windows.
 
 > [!NOTE]
->  Para que el depurador se asocie al código escrito en C++, el código debe emitir `DebuggableAttribute`. Puede agregar este atributo automáticamente al código vinculando con la opción [/ASSEMBLYDEBUG](http://msdn.microsoft.com/library/94443af3-470c-41d7-83a0-7434563d7982) del vinculador.
+> Para que el depurador se asocie al código escrito en C++, el código debe emitir `DebuggableAttribute`. Puede agregar este atributo automáticamente al código vinculando con la opción [/ASSEMBLYDEBUG](https://msdn.microsoft.com/library/94443af3-470c-41d7-83a0-7434563d7982) del vinculador.
 
 ## <a name="what-debugger-features-can-i-use"></a>¿Qué características del depurador se debe usar?
 
@@ -169,7 +170,7 @@ En algunos escenarios de depuración locales, puede depurar en Visual Studio sin
 
    3. En el cuadro de diálogo **Seleccionar tipo de código** , seleccione **Depurar estos tipos de código** y el tipo de código que no se haya asociado correctamente. Borre cualquier otro código.
 
-   4. Haga clic en **Aceptar**. El cuadro de diálogo **Seleccionar tipo de código** se cierra.
+   4. Haga clic en **OK**. El cuadro de diálogo **Seleccionar tipo de código** se cierra.
 
    5. En el cuadro de diálogo **Asociar al proceso** , haga clic en **Asociar**.
 

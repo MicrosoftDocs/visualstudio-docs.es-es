@@ -19,12 +19,12 @@ caps.latest.revision: 19
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: ce88cb875a008b806aa882dafe186af7d8f29f29
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: MT
+ms.openlocfilehash: 758491a068fe2c2c7318717f5481b41839c49a3f
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59649564"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63419772"
 ---
 # <a name="createitem-task"></a>CreateItem (Tarea)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ ms.locfileid: "59649564"
 Rellena las colecciones de elementos con los elementos de entrada. Esto permite copiar los elementos de una lista en otra.  
   
 > [!NOTE]
->  Esta tarea está en desuso. A partir de .NET Framework 3.5, los grupos de elementos se pueden colocar dentro de elementos [Target](../msbuild/target-element-msbuild.md). Para obtener más información, consulte [Elementos](../msbuild/msbuild-items.md).  
+> Esta tarea está en desuso. A partir de .NET Framework 3.5, los grupos de elementos se pueden colocar dentro de elementos [Target](../msbuild/target-element-msbuild.md). Para obtener más información, consulte [Elementos](../msbuild/msbuild-items.md).  
   
 ## <a name="attributes"></a>Atributos  
  En la siguiente tabla se describen los parámetros de la tarea `CreateItem` .  

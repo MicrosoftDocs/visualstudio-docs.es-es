@@ -18,11 +18,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 9120a5b3cb60f6c607ed97ab2df24bb157c72371
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60107364"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68153771"
 ---
 # <a name="how-to-include-a-data-file-in-a-clickonce-application"></a>Procedimiento Incluir un archivo de datos en una aplicación ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,7 +37,7 @@ Cada [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] aplicación que se i
   
 2. Actualice el manifiesto de aplicación a la lista el archivo de datos.  
   
-    **mage -u v1.0.0.0\Application.manifest -FromDirectory v1.0.0.0**  
+    **Mage -u v1.0.0.0\Application.manifest - FromDirectory v1.0.0.0**  
   
     Llevar a cabo esta tarea vuelve a crea la lista de archivos en el manifiesto de aplicación y también genera automáticamente las firmas hash.  
   
@@ -57,7 +57,7 @@ Cada [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] aplicación que se i
   
     **mage -s app manifest -cf cert_file -pwd password**  
   
-    **mage -u deployment manifest -appm app manifest**  
+    **manifiesto de la aplicación de appm - manifiesto de implementación Mage -u**  
   
     **mage -s deployment manifest -cf certfile -pwd password**  
   

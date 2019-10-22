@@ -9,20 +9,20 @@ ms.assetid: 1118c604-4b1b-4b21-a04e-45995b676fa8
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c5ca8c45d48776405b5c0602c44de368cd2899ca
-ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
+ms.openlocfilehash: e2330f5d1c47c9fc3cc578f286be005710b08f59
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58416362"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68918200"
 ---
-# <a name="how-to-create-a-visual-studio-add-in-for-the-web-performance-test-results-viewer"></a>Procedimiento para crear un complemento de Visual Studio para el Visor de resultados de pruebas de rendimiento web
+# <a name="how-to-create-an-add-in-for-the-web-performance-test-results-viewer"></a>Procedimiento Creación de un complemento para el Visor de resultados de pruebas de rendimiento web
 
 Puede extender la interfaz de usuario para el **Visor de resultados de pruebas de rendimiento web** utilizando los siguientes espacios de nombres:
 
--   <xref:Microsoft.VisualStudio.TestTools.LoadTesting>
+- <xref:Microsoft.VisualStudio.TestTools.LoadTesting>
 
--   <xref:Microsoft.VisualStudio.TestTools.WebTesting>
+- <xref:Microsoft.VisualStudio.TestTools.WebTesting>
 
 Además, necesita agregar una referencia al archivo DLL LoadTestPackage que se encuentra en la carpeta *%ProgramFiles(x86)%\Microsoft Visual Studio\\\<version>\Enterprise\Common7\IDE\PrivateAssemblies*.
 
@@ -43,9 +43,9 @@ Cree o abra una solución no destinada a producción con la que pueda experiment
 
 Un complemento es un archivo DLL compilado que se ejecuta dentro del entorno de desarrollo integrado (IDE) de Visual Studio. El compilador ayuda a proteger la propiedad intelectual y mejora el rendimiento. A pesar de que los complementos se pueden crear manualmente, es posible que le resulte más sencillo usar el **Asistente para complementos**. Este asistente crea un complemento funcional, aunque básico, que se puede ejecutar inmediatamente después de haberlo creado. Una vez que el **Asistente para complementos** genere el programa básico, puede agregarle código y personalizarlo.
 
- El **Asistente para complementos** le permite proporcionar un nombre para mostrar y una descripción para el complemento. Ambos aparecerán en el **Administrador de complementos**. Además, puede dejar que el asistente genere código que agrega al menú **Herramientas** un comando para abrir el complemento. También puede optar por mostrar un cuadro **Acerca de** personalizado para el complemento. Cuando se complete el asistente, aparecerá un proyecto nuevo con una sola clase que implementa el complemento. La clase se denomina Connect.
+El **Asistente para complementos** le permite proporcionar un nombre para mostrar y una descripción para el complemento. Ambos aparecerán en el **Administrador de complementos**. Además, puede dejar que el asistente genere código que agrega al menú **Herramientas** un comando para abrir el complemento. También puede optar por mostrar un cuadro **Acerca de** personalizado para el complemento. Cuando se complete el asistente, aparecerá un proyecto nuevo con una sola clase que implementa el complemento. La clase se denomina Connect.
 
- El **Administrador de complementos** se usa al final de este artículo.
+El **Administrador de complementos** se usa al final de este artículo.
 
 ### <a name="to-create-an-add-in-by-using-the-add-in-wizard"></a>Para crear un complemento con el Asistente para complementos
 
@@ -109,31 +109,31 @@ El complemento de Visual Studio creado en el procedimiento anterior hace referen
 
 ### <a name="to-create-a-control-to-be-used-in-the-web-test-results-viewer"></a>Para crear un control que se va a utilizar en el Visor de resultados de pruebas de rendimiento web
 
-1.  En el **Explorador de soluciones**, haga clic con el botón derecho en la solución, elija **Agregar** y luego seleccione **Nuevo proyecto**.
+1. En el **Explorador de soluciones**, haga clic con el botón derecho en la solución, elija **Agregar** y luego seleccione **Nuevo proyecto**.
 
 2. Cree un proyecto **Biblioteca de controles de Windows Forms**.
 
-3.  Desde el **cuadro de herramientas**, arrastre <xref:System.Windows.Forms.DataGridView> a la superficie de userControl1.
+3. Desde el **cuadro de herramientas**, arrastre <xref:System.Windows.Forms.DataGridView> a la superficie de userControl1.
 
 4. Haga clic en el glifo de etiqueta de acción (![Glifo de etiqueta inteligente](../test/media/vs_winformsmttagglyph.gif)) situado en la esquina superior derecha de <xref:System.Windows.Forms.DataGridView> y siga estos pasos:
 
-    1.  Elija **Acoplar en contenedor primario**.
+    1. Elija **Acoplar en contenedor primario**.
 
-    2.  Desactive las casillas **Habilitar acción de agregar**, **Habilitar edición**, **Habilitar eliminación** y **Habilitar reordenación de columnas**.
+    2. Desactive las casillas **Habilitar acción de agregar**, **Habilitar edición**, **Habilitar eliminación** y **Habilitar reordenación de columnas**.
 
-    3.  Elija **Agregar columna**.
+    3. Elija **Agregar columna**.
 
          Se muestra el cuadro de diálogo **Agregar columna**.
 
-    4.  En la lista desplegable **Tipo**, seleccione **DataGridViewTextBoxColumn**.
+    4. En la lista desplegable **Tipo**, seleccione **DataGridViewTextBoxColumn**.
 
-    5.  Borre "Column1" de **Texto del encabezado**.
+    5. Borre "Column1" de **Texto del encabezado**.
 
-    6.  Haga clic en **Agregar**.
+    6. Haga clic en **Agregar**.
 
-    7.  Elija **Cerrar**.
+    7. Elija **Cerrar**.
 
-5.  En la ventana **Propiedades**, cambie la propiedad **(Nombre)** de <xref:System.Windows.Forms.DataGridView> por **resultControlDataGridView**.
+5. En la ventana **Propiedades**, cambie la propiedad **(Nombre)** de <xref:System.Windows.Forms.DataGridView> por **resultControlDataGridView**.
 
 6. En la superficie de diseño, haga clic con el botón derecho y seleccione **Ver código**.
 
@@ -158,21 +158,21 @@ El complemento de Visual Studio creado en el procedimiento anterior hace referen
 
 ## <a name="add-code-to-the-webperftestresultsvieweraddin"></a>Agregar código a WebPerfTestResultsViewerAddin
 
-1.  En el **Explorador de soluciones**, haga clic con el botón derecho en el nodo **Referencias** en el proyecto WebPerfTestResultsViewerAddin y seleccione **Agregar referencia**.
+1. En el **Explorador de soluciones**, haga clic con el botón derecho en el nodo **Referencias** en el proyecto WebPerfTestResultsViewerAddin y seleccione **Agregar referencia**.
 
-2.  En el cuadro de diálogo **Agregar referencia**, elija la pestaña **.NET**.
+2. En el cuadro de diálogo **Agregar referencia**, elija la pestaña **.NET**.
 
-3.  Desplácese hacia abajo y seleccione **Microsoft.VisualStudio.QualityTools.WebTestFramework** y **System.Windows.Forms**.
+3. Desplácese hacia abajo y seleccione **Microsoft.VisualStudio.QualityTools.WebTestFramework** y **System.Windows.Forms**.
 
-4.  Elija **Aceptar**.
+4. Elija **Aceptar**.
 
-5.  Haga clic con el botón derecho en el nodo **Referencias** otra vez y seleccione **Agregar referencia**.
+5. Haga clic con el botón derecho en el nodo **Referencias** otra vez y seleccione **Agregar referencia**.
 
-6.  En el cuadro de diálogo **Agregar referencia**, elija la pestaña **Examinar**.
+6. En el cuadro de diálogo **Agregar referencia**, elija la pestaña **Examinar**.
 
-7.  Elija la lista desplegable **Buscar en**, vaya a *%ProgramFiles(x86)%\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\PrivateAssemblies* y seleccione el archivo *Microsoft.VisualStudio.QualityTools.LoadTestPackage.dll*.
+7. Elija la lista desplegable **Buscar en**, vaya a *%ProgramFiles(x86)%\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\PrivateAssemblies* y seleccione el archivo *Microsoft.VisualStudio.QualityTools.LoadTestPackage.dll*.
 
-8.  Elija **Aceptar**.
+8. Elija **Aceptar**.
 
 9. Haga clic con el botón derecho en el nodo del proyecto WebPerfTestResultsViewerAddin y seleccione **Agregar referencia**.
 
@@ -254,28 +254,28 @@ El complemento de Visual Studio creado en el procedimiento anterior hace referen
 
 ## <a name="add-code-to-the-webperftestresultsviewercontrol"></a>Agregar código a WebPerfTestResultsViewerControl
 
-1.  En el **Explorador de soluciones**, haga clic con el botón derecho en el nodo del proyecto WebPerfTestResultsViewerControl y seleccione **Propiedades**.
+1. En el **Explorador de soluciones**, haga clic con el botón derecho en el nodo del proyecto WebPerfTestResultsViewerControl y seleccione **Propiedades**.
 
-2.  Seleccione la pestaña **Aplicación**, elija la lista desplegable **Plataforma de destino**, seleccione **.NET Framework 4** y cierre **Propiedades**.
+2. Seleccione la pestaña **Aplicación**, luego la lista desplegable **Marco de trabajo de destino** y, por último, **.NET Framework 4** (o posterior). Cierre la ventana **Propiedades**.
 
-     Esto es necesario por compatibilidad con las referencias DLL que se necesitan para extender el **Visor de resultados de pruebas de rendimiento web**.
+   Esto es necesario por compatibilidad con las referencias DLL que se necesitan para extender el **Visor de resultados de pruebas de rendimiento web**.
 
-3.  En el **Explorador de soluciones**, en el proyecto WebPerfTestResultsViewerControl, haga clic con el botón derecho en el nodo **Referencias** y seleccione **Agregar referencia**.
+3. En el **Explorador de soluciones**, en el proyecto WebPerfTestResultsViewerControl, haga clic con el botón derecho en el nodo **Referencias** y seleccione **Agregar referencia**.
 
-4.  En el cuadro de diálogo **Agregar referencia**, haga clic en la pestaña **.NET**.
+4. En el cuadro de diálogo **Agregar referencia**, haga clic en la pestaña **.NET**.
 
-5.  Desplácese y seleccione **Microsoft.VisualStudio.QualityTools.WebTestFramework**.
+5. Desplácese y seleccione **Microsoft.VisualStudio.QualityTools.WebTestFramework**.
 
-6.  Elija **Aceptar**.
+6. Elija **Aceptar**.
 
-7.  Agregue las instrucciones Using siguientes al archivo *UserControl1.cs*:
+7. Agregue las instrucciones Using siguientes al archivo *UserControl1.cs*:
 
     ```csharp
     using Microsoft.VisualStudio.TestTools.WebTesting;
     using Microsoft.VisualStudio.TestTools.WebTesting.Rules;
     ```
 
-8.  Agregue el método Update que se llama y se pasa a WebTestRequestResult desde el método WebPerfTestResultsViewerAddin WebTestResultViewer_SelectedChanged del archivo *Connect.cs*. El método Update rellena DataGridView con varias propiedades que se le pasan en WebTestRequestResult.
+8. Agregue el método Update que se llama y se pasa a WebTestRequestResult desde el método WebPerfTestResultsViewerAddin WebTestResultViewer_SelectedChanged del archivo *Connect.cs*. El método Update rellena DataGridView con varias propiedades que se le pasan en WebTestRequestResult.
 
     ```csharp
     public void Update(WebTestRequestResult WebTestResults)
@@ -300,45 +300,39 @@ El complemento de Visual Studio creado en el procedimiento anterior hace referen
             }
     ```
 
-## <a name="build-the-webperftestresultsvieweraddin-solution"></a>Compilar la solución WebPerfTestResultsViewerAddin
+## <a name="build-the-solution"></a>Compilar la solución
 
-### <a name="to-build-the-solution"></a>Para compilar la solución
-
--   En el menú **Compilar**, seleccione **Compilar solución**.
+- En el menú **Compilar**, seleccione **Compilar solución**.
 
 ## <a name="register-the-webperftestresultsvieweraddin-add-in"></a>Registrar el complemento WebPerfTestResultsViewerAddin
 
-### <a name="to-register-the-add-in-using-the-add-in-manager"></a>Para registrar el complemento mediante el Administrador de complementos
+1. Seleccione **Administrador de complementos** en el menú **Herramientas**.
 
-1.  Seleccione **Administrador de complementos** en el menú **Herramientas**.
+2. Se muestra el cuadro de diálogo **Administrador de complementos**.
 
-2.  Se muestra el cuadro de diálogo **Administrador de complementos**.
+3. Active la casilla del complemento WebPerfTestResultsViewerAddin en la columna **Complementos disponibles** y desactive las casillas bajo las columnas **Inicio** y **Línea de comandos**.
 
-3.  Active la casilla del complemento WebPerfTestResultsViewerAddin en la columna **Complementos disponibles** y desactive las casillas bajo las columnas **Inicio** y **Línea de comandos**.
+4. Elija **Aceptar**.
 
-4.  Elija **Aceptar**.
+## <a name="run-the-web-performance-test-using-the-web-test-results-viewer"></a>Ejecutar la prueba de rendimiento web mediante el Visor de resultados de pruebas de rendimiento web
 
-## <a name="run-the-web-performance-test-using-the-build-the-webperftestresultsvieweraddin-add-in"></a>Ejecutar la prueba de rendimiento web con el complemento WebPerfTestResultsViewerAddin
+1. Ejecute la prueba de rendimiento web y verá la nueva pestaña del complemento WebPerfTestResultsViewerAddin en el **Visor de resultados de pruebas de rendimiento web**.
 
-### <a name="to-run-the-new-vs-add-in-for-the-web-test-results-viewer"></a>Para ejecutar el nuevo complemento de Visual Studio para el visor de resultados de pruebas web
+2. Elija la pestaña para ver las propiedades de DataGridView.
 
-1.  Ejecute la prueba de rendimiento web y verá la nueva pestaña del complemento WebPerfTestResultsViewerAddin en el **Visor de resultados de pruebas de rendimiento web**.
-
-2.  Elija la pestaña para ver las propiedades de DataGridView.
-
-## <a name="net-framework-security"></a>Seguridad de .NET Framework
+## <a name="net-security"></a>Seguridad de .NET
 
 Para mejorar la seguridad evitando que complementos malintencionados se activen de forma automática, Visual Studio proporciona configuraciones en una página de **Opciones de herramientas** denominada **Seguridad de macros/complementos**.
 
 Además, esta página de opciones permite especificar las carpetas en las que Visual Studio busca los archivos de registro *.AddIn*. Esto mejora la seguridad porque permite limitar las ubicaciones donde se pueden leer los archivos de registro *.AddIn*. Esto ayuda a evitar que se usen involuntariamente archivos *.AddIn* malintencionados.
 
- **Configuración de seguridad de complementos**
+**Configuración de seguridad de complementos**
 
- La configuración en la página de opciones relativa a la seguridad de los complementos es la siguiente:
+La configuración en la página de opciones relativa a la seguridad de los complementos es la siguiente:
 
--   **Permitir la carga de componentes de complementos.** Esta opción está seleccionada de forma predeterminada. Cuando se activa, es posible cargar complementos en Visual Studio. De lo contrario, no es posible cargar complementos en Visual Studio.
+- **Permitir la carga de componentes de complementos.** Esta opción está seleccionada de forma predeterminada. Cuando se activa, es posible cargar complementos en Visual Studio. De lo contrario, no es posible cargar complementos en Visual Studio.
 
--   **Permitir la carga de componentes de complementos desde direcciones URL.** Esta opción está seleccionada de forma predeterminada. Cuando está seleccionada, los complementos se pueden cargar desde sitios web externos. De lo contrario, no es posible cargar complementos remotos en Visual Studio. Si un complemento no se puede cargar por alguna razón, no es posible cargarlo desde Internet. Esta configuración controla sólo la carga de los archivos DLL del complemento. Los archivos de registro *.Addin* siempre se deben ubicar en el sistema local.
+- **Permitir la carga de componentes de complementos desde direcciones URL.** Esta opción está seleccionada de forma predeterminada. Cuando está seleccionada, los complementos se pueden cargar desde sitios web externos. De lo contrario, no es posible cargar complementos remotos en Visual Studio. Si un complemento no se puede cargar por alguna razón, no es posible cargarlo desde Internet. Esta configuración controla sólo la carga de los archivos DLL del complemento. Los archivos de registro *.Addin* siempre se deben ubicar en el sistema local.
 
 ## <a name="see-also"></a>Vea también
 

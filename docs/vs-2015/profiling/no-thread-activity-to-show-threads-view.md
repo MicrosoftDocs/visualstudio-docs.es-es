@@ -14,11 +14,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 530123a7f9417ce9f12a0314a96eafad1c69cf7f
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60069724"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68205869"
 ---
 # <a name="no-thread-activity-to-show-threads-view"></a>No hay actividades de subprocesos que mostrar (Vista de subprocesos)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,5 +35,5 @@ En esta área se muestran datos sobre los subprocesos que no están ocultos en e
   
 - Asegúrese de que Reducción de nodos irrelevantes está establecida en un umbral bajo.  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Otras referencias  
  [Vista de subprocesos](../profiling/threads-view-parallel-performance.md)

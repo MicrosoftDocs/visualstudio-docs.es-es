@@ -27,12 +27,12 @@ caps.latest.revision: 23
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 92718187fd8c83eb20ce8b39d323d60434f5f48f
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 3c795e978de3911b3c5e815583c32e878fd7b173
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60065758"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65696912"
 ---
 # <a name="mfc-debugging-techniques"></a>Técnicas de depuración de MFC
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -65,7 +65,7 @@ Si está depurando un programa MFC, estas técnicas de depuración pueden result
   - [Compilar una aplicación MFC con la información de depuración para los módulos seleccionados](#BKMK_Building_an_MFC_app_with_debug_information_for_selected_modules)  
   
 ## <a name="BKMK_AfxDebugBreak"></a> AfxDebugBreak  
- MFC proporciona una función especial, [AfxDebugBreak](http://msdn.microsoft.com/library/c4cd79b9-9327-4db5-a9d6-c4004a92aa30) , para incluir puntos de interrupción en el código fuente:  
+ MFC proporciona una función especial, [AfxDebugBreak](https://msdn.microsoft.com/library/c4cd79b9-9327-4db5-a9d6-c4004a92aa30) , para incluir puntos de interrupción en el código fuente:  
   
 ```  
 AfxDebugBreak( );  
@@ -85,7 +85,7 @@ _asm int 3
  [En este tema](#BKMK_In_this_topic)  
   
 ## <a name="BKMK_The_TRACE_macro"></a> La macro TRACE  
- Para mostrar mensajes desde el programa en la [Ventana de salida](../ide/reference/output-window.md)del depurador, se puede utilizar la macro [ATLTRACE](http://msdn.microsoft.com/library/c796baa5-e2b9-4814-a27d-d800590b102e) o la macro [TRACE](http://msdn.microsoft.com/library/7b6f42d8-b55a-4bba-ab04-c46251778e6f) de MFC. Al igual que las [aserciones](../debugger/c-cpp-assertions.md), las macros de seguimiento sólo están activas en la versión de depuración del programa y desaparecen al compilarse en la versión de lanzamiento.  
+ Para mostrar mensajes desde el programa en la [Ventana de salida](../ide/reference/output-window.md)del depurador, se puede utilizar la macro [ATLTRACE](https://msdn.microsoft.com/library/c796baa5-e2b9-4814-a27d-d800590b102e) o la macro [TRACE](https://msdn.microsoft.com/library/7b6f42d8-b55a-4bba-ab04-c46251778e6f) de MFC. Al igual que las [aserciones](../debugger/c-cpp-assertions.md), las macros de seguimiento sólo están activas en la versión de depuración del programa y desaparecen al compilarse en la versión de lanzamiento.  
   
  Los siguientes ejemplos muestran algunas de las formas en las que se puede utilizar la macro **TRACE** . Al igual que `printf`, la macro **TRACE** puede utilizar varios argumentos.  
   
@@ -113,7 +113,7 @@ TRACE( _T("This is a test of the TRACE macro that uses a TCHAR string: %s %d\n")
   
 ```  
   
- Para obtener más información sobre la macro **TRACE** , vea [Servicios de diagnóstico](http://msdn.microsoft.com/library/8d78454f-9fae-49c2-88c9-d3fabd5393e8).  
+ Para obtener más información sobre la macro **TRACE** , vea [Servicios de diagnóstico](https://msdn.microsoft.com/library/8d78454f-9fae-49c2-88c9-d3fabd5393e8).  
   
  [En este tema](#BKMK_In_this_topic)  
   
@@ -121,7 +121,7 @@ TRACE( _T("This is a test of the TRACE macro that uses a TCHAR string: %s %d\n")
  MFC proporciona clases y funciones para detectar memoria asignada que no se desasigna nunca.  
   
 ### <a name="BKMK_Tracking_memory_allocations"></a> Realizar un seguimiento de las asignaciones de memoria  
- En MFC, se puede utilizar la macro [DEBUG_NEW](http://msdn.microsoft.com/library/9b379344-4093-4bec-a3eb-e0d8a63ada9d) en lugar del operador **new** para ayudar a localizar pérdidas de memoria. En la versión de depuración del programa, `DEBUG_NEW` registra el nombre de archivo y número de línea para cada objeto que asigna. Cuando se compila una versión de lanzamiento de programa, `DEBUG_NEW` se resuelve como una simple operación **new** sin la información de nombre de archivo y número de línea. De este modo, el rendimiento de la versión de lanzamiento no disminuye.  
+ En MFC, se puede utilizar la macro [DEBUG_NEW](https://msdn.microsoft.com/library/9b379344-4093-4bec-a3eb-e0d8a63ada9d) en lugar del operador **new** para ayudar a localizar pérdidas de memoria. En la versión de depuración del programa, `DEBUG_NEW` registra el nombre de archivo y número de línea para cada objeto que asigna. Cuando se compila una versión de lanzamiento de programa, `DEBUG_NEW` se resuelve como una simple operación **new** sin la información de nombre de archivo y número de línea. De este modo, el rendimiento de la versión de lanzamiento no disminuye.  
   
  Si no desea volver a escribir todo el programa para utilizar `DEBUG_NEW` en lugar de **new**, puede definir esta macro en los archivos de código fuente:  
   
@@ -140,17 +140,17 @@ TRACE( _T("This is a test of the TRACE macro that uses a TCHAR string: %s %d\n")
   
  **Para habilitar o deshabilitar los diagnósticos de memoria**  
   
-- Llame a la función global [AfxEnableMemoryTracking](http://msdn.microsoft.com/library/0a40e0c4-855d-46e2-9577-a8f2346f47db) para habilitar o deshabilitar el asignador de memoria para diagnósticos. Como los diagnósticos de memoria se encuentran, de forma predeterminada, en la biblioteca de depuración, se utilizará normalmente esta función para desactivarlos temporalmente, lo cual incrementa la velocidad de ejecución del programa y reduce los resultados de diagnóstico.  
+- Llame a la función global [AfxEnableMemoryTracking](https://msdn.microsoft.com/library/0a40e0c4-855d-46e2-9577-a8f2346f47db) para habilitar o deshabilitar el asignador de memoria para diagnósticos. Como los diagnósticos de memoria se encuentran, de forma predeterminada, en la biblioteca de depuración, se utilizará normalmente esta función para desactivarlos temporalmente, lo cual incrementa la velocidad de ejecución del programa y reduce los resultados de diagnóstico.  
   
   **Para seleccionar características específicas de diagnóstico de memoria con afxMemDF**  
   
-- Si desea un control más preciso sobre las características de diagnóstico de memoria, puede activar y desactivar selectivamente características individuales configurando el valor de la variable global de MFC [afxMemDF](http://msdn.microsoft.com/library/cf117501-5446-4fce-81b3-f7194bc95086). Esta variable puede tener los siguientes valores, según especifica el tipo enumerado **afxMemDF**.  
+- Si desea un control más preciso sobre las características de diagnóstico de memoria, puede activar y desactivar selectivamente características individuales configurando el valor de la variable global de MFC [afxMemDF](https://msdn.microsoft.com/library/cf117501-5446-4fce-81b3-f7194bc95086). Esta variable puede tener los siguientes valores, según especifica el tipo enumerado **afxMemDF**.  
   
   |Valor|Descripción|  
   |-----------|-----------------|  
   |**allocMemDF**|Activa el asignador de memoria para diagnósticos (opción predeterminada).|  
   |**delayFreeMemDF**|Retarda la liberación de memoria al llamar a `delete` o `free` hasta que termina el programa. Esto hace que el programa asigne la máxima cantidad posible de memoria.|  
-  |**checkAlwaysMemDF**|Llama a [AfxCheckMemory](http://msdn.microsoft.com/library/4644da71-7d14-41dc-adc0-ee9558fd7a28) cada vez que se asigna o se libera memoria.|  
+  |**checkAlwaysMemDF**|Llama a [AfxCheckMemory](https://msdn.microsoft.com/library/4644da71-7d14-41dc-adc0-ee9558fd7a28) cada vez que se asigna o se libera memoria.|  
   
    Estos valores se pueden utilizar combinados mediante una operación de disyunción lógica (OR), como se indica a continuación:  
   
@@ -162,11 +162,11 @@ TRACE( _T("This is a test of the TRACE macro that uses a TCHAR string: %s %d\n")
   
 ### <a name="BKMK_Taking_memory_snapshots"></a> Tomar instantáneas de la memoria  
   
-1. Cree un objeto [CMemoryState](http://msdn.microsoft.com/8fade6e9-c6fb-4b2a-8565-184a912d26d2) y llame a la función miembro [CMemoryState::Checkpoint](http://msdn.microsoft.com/library/b2d80fea-3d21-457e-816d-b035909bf21a) . Esto crea la primera instantánea de memoria.  
+1. Cree un objeto [CMemoryState](https://msdn.microsoft.com/8fade6e9-c6fb-4b2a-8565-184a912d26d2) y llame a la función miembro [CMemoryState::Checkpoint](https://msdn.microsoft.com/library/b2d80fea-3d21-457e-816d-b035909bf21a) . Esto crea la primera instantánea de memoria.  
   
 2. Después de que el programa realiza sus operaciones de asignación y desasignación de memoria, cree otro objeto `CMemoryState` y llame a `Checkpoint` para ese objeto. Esto hace que se tome una segunda instantánea del uso de memoria.  
   
-3. Cree un tercer objeto `CMemoryState` , llame a su función miembro [CMemoryState::Difference](http://msdn.microsoft.com/library/aba69e2f-71dd-4255-99b5-3da2e56a0c9c) y proporcione como argumentos los dos objetos `CMemoryState` anteriores. Si existen diferencias entre los dos estados de memoria, la función `Difference` devuelve un valor distinto de cero. Esto indica que algunos bloques de memoria no se han desasignado.  
+3. Cree un tercer objeto `CMemoryState` , llame a su función miembro [CMemoryState::Difference](https://msdn.microsoft.com/library/aba69e2f-71dd-4255-99b5-3da2e56a0c9c) y proporcione como argumentos los dos objetos `CMemoryState` anteriores. Si existen diferencias entre los dos estados de memoria, la función `Difference` devuelve un valor distinto de cero. Esto indica que algunos bloques de memoria no se han desasignado.  
   
     Este ejemplo muestra el aspecto del código:  
   
@@ -191,14 +191,14 @@ TRACE( _T("This is a test of the TRACE macro that uses a TCHAR string: %s %d\n")
    #endif  
    ```  
   
-    Observe que las instrucciones de comprobación de memoria están enmarcadas por bloques `#ifdef`[_DEBUG](http://msdn.microsoft.com/library/a9901568-4846-4731-a404-399d947e2e7a)/ **#endif** , de modo que solo se compilan en versiones de depuración del programa.  
+    Observe que las instrucciones de comprobación de memoria están enmarcadas por bloques `#ifdef`[_DEBUG](https://msdn.microsoft.com/library/a9901568-4846-4731-a404-399d947e2e7a)/  **#endif** , de modo que solo se compilan en versiones de depuración del programa.  
   
-    Ahora que ha detectado una pérdida de memoria, puede usar otra función miembro [CMemoryState::DumpStatistics](http://msdn.microsoft.com/library/90d5f281-b92f-4725-a996-23ab94cf4b5d) , que le ayudará a buscarla.  
+    Ahora que ha detectado una pérdida de memoria, puede usar otra función miembro [CMemoryState::DumpStatistics](https://msdn.microsoft.com/library/90d5f281-b92f-4725-a996-23ab94cf4b5d) , que le ayudará a buscarla.  
   
    [En este tema](#BKMK_In_this_topic)  
   
 ### <a name="BKMK_Viewing_memory_statistics"></a> Ver estadísticas de memoria  
- La función [CMemoryState::Difference](http://msdn.microsoft.com/library/aba69e2f-71dd-4255-99b5-3da2e56a0c9c) examina dos objetos de estado de memoria y detecta cualquier objeto no desasignado del montón entre los estados inicial y final. Después de tomar instantáneas de la memoria y compararlas mediante `CMemoryState::Difference`, puede llamar a [CMemoryState::DumpStatistics](http://msdn.microsoft.com/library/90d5f281-b92f-4725-a996-23ab94cf4b5d) para obtener información sobre los objetos que no se han desasignado.  
+ La función [CMemoryState::Difference](https://msdn.microsoft.com/library/aba69e2f-71dd-4255-99b5-3da2e56a0c9c) examina dos objetos de estado de memoria y detecta cualquier objeto no desasignado del montón entre los estados inicial y final. Después de tomar instantáneas de la memoria y compararlas mediante `CMemoryState::Difference`, puede llamar a [CMemoryState::DumpStatistics](https://msdn.microsoft.com/library/90d5f281-b92f-4725-a996-23ab94cf4b5d) para obtener información sobre los objetos que no se han desasignado.  
   
  Considere el ejemplo siguiente:  
   
@@ -233,13 +233,13 @@ Total allocations: 67 bytes
  [En este tema](#BKMK_In_this_topic)  
   
 ### <a name="BKMK_Taking_object_dumps"></a> Realizar volcados de memoria de objetos  
- En un programa MFC, puede usar [CMemoryState:: DumpAllObjectsSince](http://msdn.microsoft.com/library/a7f89034-bca4-4786-88d5-1571a5425ab2) para volcar una descripción de todos los objetos del montón que no se han desasignado. `DumpAllObjectsSince` vuelca todos los objetos asignados desde el último [CMemoryState::Checkpoint](http://msdn.microsoft.com/library/b2d80fea-3d21-457e-816d-b035909bf21a). Si no se realizó ninguna llamada a `Checkpoint` , `DumpAllObjectsSince` produce un volcado de memoria de todos los objetos y elementos que no sean objetos actualmente en memoria.  
+ En un programa MFC, puede usar [CMemoryState:: DumpAllObjectsSince](https://msdn.microsoft.com/library/a7f89034-bca4-4786-88d5-1571a5425ab2) para volcar una descripción de todos los objetos del montón que no se han desasignado. `DumpAllObjectsSince` vuelca todos los objetos asignados desde el último [CMemoryState::Checkpoint](https://msdn.microsoft.com/library/b2d80fea-3d21-457e-816d-b035909bf21a). Si no se realizó ninguna llamada a `Checkpoint` , `DumpAllObjectsSince` produce un volcado de memoria de todos los objetos y elementos que no sean objetos actualmente en memoria.  
   
 > [!NOTE]
->  Para poder utilizar el volcado de objetos MFC, debe [habilitar el seguimiento de diagnóstico](../debugger/mfc-debugging-techniques.md#BKMK_Enabling_memory_diagnostics).  
+> Para poder utilizar el volcado de objetos MFC, debe [habilitar el seguimiento de diagnóstico](../debugger/mfc-debugging-techniques.md#BKMK_Enabling_memory_diagnostics).  
   
 > [!NOTE]
->  MFC produce automáticamente un volcado de memoria de todos los objetos no desasignados (pérdidas) cuando el programa termina, de modo que no es necesario crear código para volcar objetos en ese punto.  
+> MFC produce automáticamente un volcado de memoria de todos los objetos no desasignados (pérdidas) cuando el programa termina, de modo que no es necesario crear código para volcar objetos en ese punto.  
   
  El siguiente código prueba si existe pérdida de memoria comparando dos estados de la memoria y produce un volcado de memoria de todos los objetos si se detecta una pérdida.  
   
@@ -274,7 +274,7 @@ Phone #: 581-0215
   
  Puede establecer un punto de interrupción en una determinada asignación de memoria si asigna a la variable global `_afxBreakAlloc` el número mostrado entre llaves. Si vuelve a ejecutar el programa, el depurador interrumpirá la ejecución cuando se produzca la asignación. Entonces, puede examinar la pila de llamadas para ver cómo llegó el programa a ese punto.  
   
- La biblioteca en tiempo de ejecución de C dispone de una función similar, [_CrtSetBreakAlloc](http://msdn.microsoft.com/library/33bfc6af-a9ea-405b-a29f-1c2d4d9880a1), que se puede usar para las asignaciones en tiempo de ejecución de C.  
+ La biblioteca en tiempo de ejecución de C dispone de una función similar, [_CrtSetBreakAlloc](https://msdn.microsoft.com/library/33bfc6af-a9ea-405b-a29f-1c2d4d9880a1), que se puede usar para las asignaciones en tiempo de ejecución de C.  
   
  [En este tema](#BKMK_In_this_topic)  
   
@@ -305,7 +305,7 @@ CPerson* p = new CPerson( "Smith", "Alan", "581-0215" );
   
  El constructor `CPerson` recibe tres argumentos que son punteros a `char`y que se utilizan para inicializar variables miembro de `CString` . En el volcado de memoria, se puede ver el objeto `CPerson` junto con tres bloques que no corresponden a objetos (3, 4 y 5). Éstos contienen los caracteres para las variables miembro de `CString` y no se eliminarán cuando se llame al destructor del objeto `CPerson` .  
   
- El bloque número 2 es el propio objeto `CPerson` . `$51A4` representa la dirección del bloque y va seguida por el contenido del objeto, volcado por `CPerson`::`Dump` al ser invocado por [DumpAllObjectsSince](http://msdn.microsoft.com/library/a7f89034-bca4-4786-88d5-1571a5425ab2).  
+ El bloque número 2 es el propio objeto `CPerson` . `$51A4` representa la dirección del bloque y va seguida por el contenido del objeto, volcado por `CPerson`::`Dump` al ser invocado por [DumpAllObjectsSince](https://msdn.microsoft.com/library/a7f89034-bca4-4786-88d5-1571a5425ab2).  
   
  El bloque número 1 se encuentra asociado con la variable `CString` del marco de trabajo, como se puede ver por su número de secuencia y tamaño, que coincide con el número de caracteres de la variable `CString` del marco. Las variables asignadas en el marco de trabajo se desasignan automáticamente cuando el marco se sale del ámbito.  
   
@@ -362,9 +362,9 @@ Phone #: 581-0215
  [En este tema](#BKMK_In_this_topic)  
   
 #### <a name="BKMK_Customizing_object_dumps"></a> Personalizar volcados de memoria de objetos  
- Si se deriva una clase de [CObject](http://msdn.microsoft.com/library/95e9acd3-d9eb-4ac0-b52b-ca4a501a7a3a), puede reemplazarse la función miembro `Dump` para ofrecer información adicional cuando se utiliza [DumpAllObjectsSince](http://msdn.microsoft.com/library/a7f89034-bca4-4786-88d5-1571a5425ab2) para realizar un volcado de memoria de objetos en la [Ventana de salida](../ide/reference/output-window.md).  
+ Si se deriva una clase de [CObject](https://msdn.microsoft.com/library/95e9acd3-d9eb-4ac0-b52b-ca4a501a7a3a), puede reemplazarse la función miembro `Dump` para ofrecer información adicional cuando se utiliza [DumpAllObjectsSince](https://msdn.microsoft.com/library/a7f89034-bca4-4786-88d5-1571a5425ab2) para realizar un volcado de memoria de objetos en la [Ventana de salida](../ide/reference/output-window.md).  
   
- La función `Dump` escribe una representación textual de las variables miembro del objeto en un contexto de volcado de memoria ([CDumpContext](http://msdn.microsoft.com/library/98c52b2d-14b5-48ed-b423-479a4d1c60fa)). El contexto de volcado de memoria es similar a una secuencia de E/S. Se puede utilizar el operador de anexión (**<<** para enviar datos a un `CDumpContext`.  
+ La función `Dump` escribe una representación textual de las variables miembro del objeto en un contexto de volcado de memoria ([CDumpContext](https://msdn.microsoft.com/library/98c52b2d-14b5-48ed-b423-479a4d1c60fa)). El contexto de volcado de memoria es similar a una secuencia de E/S. Se puede utilizar el operador de anexión ( **<<** para enviar datos a un `CDumpContext`.  
   
  Cuando se reemplaza la función `Dump` , primero se debería llamar a la versión de la clase base de `Dump` para realizar un volcado de memoria del contenido del objeto de la clase base. A continuación, se escribe una descripción textual y un valor descriptivo para cada variable miembro de la clase derivada.  
   
@@ -419,9 +419,9 @@ pMyPerson->Dump( afxDump );
 ## <a name="BKMK_Reducing_the_size_of_an_MFC_Debug_build"></a> Reducir el tamaño de una configuración de compilación de MFC  
  La información de depuración para una aplicación MFC extensa puede ocupar un gran espacio en disco. Puede utilizar uno de estos procedimientos para reducir el tamaño:  
   
-1. Volver a generar las bibliotecas MFC usando la [/Z7, / Zi, /ZI (formato de la información de depuración)](http://msdn.microsoft.com/library/ce9fa7e1-0c9b-47e3-98ea-26d1a16257c8) opción, en lugar de **/Z7**. Estas opciones compilan un único archivo de base de datos de programa (PDB) que contiene información de depuración para toda la biblioteca, lo que permite reducir información redundante y ahorrar espacio.  
+1. Volver a generar las bibliotecas MFC usando la [/Z7, / Zi, /ZI (formato de la información de depuración)](https://msdn.microsoft.com/library/ce9fa7e1-0c9b-47e3-98ea-26d1a16257c8) opción, en lugar de **/Z7**. Estas opciones compilan un único archivo de base de datos de programa (PDB) que contiene información de depuración para toda la biblioteca, lo que permite reducir información redundante y ahorrar espacio.  
   
-2. Recompile las bibliotecas MFC sin información de depuración (ninguna [/Z7, / Zi, /ZI (formato de la información de depuración)](http://msdn.microsoft.com/library/ce9fa7e1-0c9b-47e3-98ea-26d1a16257c8) opción). En este caso, la falta de información de depuración impide utilizar la mayoría de los servicios del depurador dentro del código de la biblioteca MFC, pero, como estas bibliotecas ya están depuradas, eso no constituye ningún problema.  
+2. Recompile las bibliotecas MFC sin información de depuración (ninguna [/Z7, / Zi, /ZI (formato de la información de depuración)](https://msdn.microsoft.com/library/ce9fa7e1-0c9b-47e3-98ea-26d1a16257c8) opción). En este caso, la falta de información de depuración impide utilizar la mayoría de los servicios del depurador dentro del código de la biblioteca MFC, pero, como estas bibliotecas ya están depuradas, eso no constituye ningún problema.  
   
 3. Compile su propia aplicación con información de depuración solo para los módulos seleccionados como se describe a continuación.  
   
@@ -438,9 +438,9 @@ pMyPerson->Dump( afxDump );
   
    1. En el cuadro de diálogo **\<Proyecto> Páginas de propiedades**, haga clic en el botón **Administrador de configuración**.  
   
-   2. En el [cuadro de diálogo Administrador de configuración](http://msdn.microsoft.com/fa182dca-282e-4ae5-bf37-e155344ca18b), localice el proyecto en la cuadrícula. En la columna **Configuración**, seleccione **\<Nueva...>**.  
+   2. En el [cuadro de diálogo Administrador de configuración](https://msdn.microsoft.com/fa182dca-282e-4ae5-bf37-e155344ca18b), localice el proyecto en la cuadrícula. En la columna **Configuración**, seleccione **\<Nueva...>** .  
   
-   3. En el [cuadro de diálogo Nueva configuración del proyecto](http://msdn.microsoft.com/cca616dc-05a6-4fe3-bdc1-40c72a66f2be), escriba un nombre para la nueva configuración, como "Depuración parcial", en el cuadro **Nombre de configuración del proyecto** .  
+   3. En el [cuadro de diálogo Nueva configuración del proyecto](https://msdn.microsoft.com/cca616dc-05a6-4fe3-bdc1-40c72a66f2be), escriba un nombre para la nueva configuración, como "Depuración parcial", en el cuadro **Nombre de configuración del proyecto** .  
   
    4. En la lista **Copiar configuración de** , elija **Liberar**.  
   
@@ -478,11 +478,11 @@ pMyPerson->Dump( afxDump );
   
    6. Haga clic en los valores de **Formato de la información de depuración** y seleccione la opción deseada (normalmente **/ZI**) para la información de depuración.  
   
-   7. Si está utilizando una aplicación generada con el Asistente para aplicaciones, o dispone de encabezados precompilados, deberá desactivar los encabezados precompilados o volver a compilarlos antes de compilar los otros módulos. Si no lo hace así, recibirá la advertencia C4650 y el mensaje de error C2855. Para desactivar los encabezados precompilados, cambie el valor de la opción **Crear o usar encabezados precompilados** en el cuadro de diálogo **\<Proyecto> Propiedades** (carpeta **Propiedades de configuración**, subcarpeta **C/C++**, categoría **Encabezados precompilados**).  
+   7. Si está utilizando una aplicación generada con el Asistente para aplicaciones, o dispone de encabezados precompilados, deberá desactivar los encabezados precompilados o volver a compilarlos antes de compilar los otros módulos. Si no lo hace así, recibirá la advertencia C4650 y el mensaje de error C2855. Para desactivar los encabezados precompilados, cambie el valor de la opción **Crear o usar encabezados precompilados** en el cuadro de diálogo **\<Proyecto> Propiedades** (carpeta **Propiedades de configuración**, subcarpeta **C/C++** , categoría **Encabezados precompilados**).  
   
 7. En el menú **Compilar** , seleccione **Compilar** para recompilar los archivos del proyecto que no estén actualizados.  
   
-   Como alternativa a la técnica descrita en este tema, se puede utilizar un archivo MAKE externo para definir opciones individuales para cada archivo. En ese caso, para vincular con las bibliotecas de depuración de MFC, deberá definir el marcador [_DEBUG](http://msdn.microsoft.com/library/a9901568-4846-4731-a404-399d947e2e7a) para cada módulo. Si desea utilizar las bibliotecas de lanzamiento de MFC, debe definir NDEBUG. Para obtener más información sobre cómo escribir archivos MAKE externos, vea [Referencia de NMAKE](http://msdn.microsoft.com/library/0421104d-8b7b-4bf3-86c1-928d9b7c1a8c).  
+   Como alternativa a la técnica descrita en este tema, se puede utilizar un archivo MAKE externo para definir opciones individuales para cada archivo. En ese caso, para vincular con las bibliotecas de depuración de MFC, deberá definir el marcador [_DEBUG](https://msdn.microsoft.com/library/a9901568-4846-4731-a404-399d947e2e7a) para cada módulo. Si desea utilizar las bibliotecas de lanzamiento de MFC, debe definir NDEBUG. Para obtener más información sobre cómo escribir archivos MAKE externos, vea [Referencia de NMAKE](https://msdn.microsoft.com/library/0421104d-8b7b-4bf3-86c1-928d9b7c1a8c).  
   
    [En este tema](#BKMK_In_this_topic)  
   

@@ -10,18 +10,28 @@ manager: jillfra
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 05551799a0f97178c5a52d7468f6c6abb505e4c3
-ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
+ms.openlocfilehash: cbb06ac800fd21e2354b04fb2e7e46306da7ed72
+ms.sourcegitcommit: 44e9b1d9230fcbbd081ee81be9d4be8a485d8502
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "59366704"
+ms.lasthandoff: 08/30/2019
+ms.locfileid: "70180346"
 ---
 # <a name="quickstart-create-your-first-python-web-app-using-visual-studio"></a>Inicio rápido: Creación de la primera aplicación web de Python con Visual Studio
 
 En esta introducción a Visual Studio como un IDE de Python, con una duración de entre 5 y 10 minutos, creará una sencilla aplicación web Python basada en el marco Flask. El proyecto se crea mediante discretos pasos que le ayudarán a conocer las características básicas de Visual Studio.
 
-Si todavía no ha instalado Visual Studio, vaya a la página [Descargas de Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017) para instalarlo de forma gratuita. En el instalador, asegúrese de seleccionar la carga de trabajo **Desarrollo de Python**.
+::: moniker range="vs-2017"
+
+Si todavía no ha instalado Visual Studio, vaya a la página de [descargas de Visual Studio](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download) para instalarlo de forma gratuita. En el instalador, asegúrese de seleccionar la carga de trabajo **Desarrollo de Python**.
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+Si todavía no ha instalado Visual Studio, vaya a la página de [descargas de Visual Studio](https://visualstudio.microsoft.com/downloads) para instalarlo de forma gratuita. En el instalador, asegúrese de seleccionar la carga de trabajo **Desarrollo de Python**.
+
+::: moniker-end
 
 ## <a name="create-the-project"></a>Crear el proyecto
 
@@ -65,11 +75,11 @@ Los pasos siguientes crean un proyecto vacío que actúa como un contenedor para
     ![Explorador de soluciones con el proyecto vacío recién creado](media/quickstart-python-01-empty-project-2019.png)
 ::: moniker-end
 
-**Pregunta: Estoy utilizando un certificado X.509 con mi servicio y obtengo un System.Security.Cryptography.CryptographicException. ¿Cuál es la ventaja de crear un proyecto en Visual Studio para una aplicación de Python?**
+**Pregunta: ¿Cuál es la ventaja de crear un proyecto en Visual Studio para una aplicación de Python?**
 
 **Respuesta**: Las aplicaciones Python se suelen definir mediante carpetas y archivos únicamente, pero esta estructura sencilla puede ser más pesada a medida que las aplicaciones aumentan de tamaño y se generan posibles archivos de forma automática, JavaScript para aplicaciones web, etc. Un proyecto de Visual Studio le ayuda a administrar esta complejidad. El proyecto (un archivo *.pyproj*) identifica todos los archivos de origen y de contenido asociados al proyecto, contiene información de compilación para cada archivo, mantiene la información para integrarse con sistemas de control de código fuente y le ayuda a organizar la aplicación en componentes lógicos.
 
-**Pregunta: Estoy utilizando un certificado X.509 con mi servicio y obtengo un System.Security.Cryptography.CryptographicException. ¿Qué es la "solución" que se muestra en el Explorador de soluciones?**
+**Pregunta: ¿Qué es la "solución" que se muestra en el Explorador de soluciones?**
 
 **Respuesta**: Una solución de Visual Studio es un contenedor que ayuda a administrar uno o más proyectos relacionados como un grupo y almacena los valores de configuración que no son específicos de un proyecto. Los proyectos de una solución también pueden hacerse referencia entre sí, de modo que la ejecución de un proyecto (una aplicación de Python) crea automáticamente un segundo proyecto (por ejemplo, una extensión de C++ usada en la aplicación de Python).
 
@@ -95,7 +105,7 @@ Aquí, utilice los pasos siguientes para instalar la biblioteca de Flask en el "
 
     ![Explorador de soluciones en el que se muestra el entorno predeterminado](media/quickstart-python-02-default-environment-2019.png)
 
-2. Haga clic con el botón derecho en el entorno y seleccione **Administrar paquetes de Python...**. Este comando abre la ventana **Entornos de Python** en la pestaña **Paquetes (PyPI)**.
+2. Haga clic con el botón derecho en el entorno y seleccione **Administrar paquetes de Python...** . Este comando abre la ventana **Entornos de Python** en la pestaña **Paquetes (PyPI)** .
 
 3. En el campo de búsqueda, escriba "flask". Si **Flask** aparece debajo del cuadro de búsqueda, puede omitir este paso. En caso contrario, seleccione **Comando de ejecución: pip install flask**. Acepte los mensajes de privilegios de administrador y observe el progreso en la ventana **Salida** de Visual Studio. (Se le pedirá confirmación de elevación cuando la carpeta de paquetes del entorno global esté ubicada en un área protegida, como *C:\Archivos de programa*).
 
@@ -114,7 +124,7 @@ Aquí, utilice los pasos siguientes para instalar la biblioteca de Flask en el "
 > [!Note]
 > En lugar de instalar las bibliotecas en el entorno global, los desarrolladores suelen crear un "entorno virtual" en el que se instalan las bibliotecas de un proyecto específico. Las plantillas de Visual Studio normalmente ofrecen esta opción, como se describe en [Inicio rápido: Crear un proyecto de Python desde una plantilla en Visual Studio](../python/quickstart-02-python-in-visual-studio-project-from-template.md).
 
-**Pregunta: Estoy utilizando un certificado X.509 con mi servicio y obtengo un System.Security.Cryptography.CryptographicException. ¿Dónde puedo obtener más información sobre otros paquetes de Python disponibles?**
+**Pregunta: ¿Dónde puedo obtener más información sobre otros paquetes de Python disponibles?**
 
 **Respuesta**: Visite el [índice de paquetes de Python](https://pypi.org/).
 
@@ -153,9 +163,9 @@ Ahora está listo para agregar un poco de código de Python para implementar una
 
 1. Puede haber observado que el cuadro de diálogo **Agregar > Nuevo elemento** muestra muchos otros tipos de archivos que puede agregar a un proyecto de Python, como una clase de Python, un paquete de Python, una prueba unitaria de Python, archivos *web.config*, etc. En general, estas plantillas de elemento, tal y como se denominan, son una excelente manera de crear rápidamente archivos con código reutilizable útil.
 
-**Pregunta: Estoy utilizando un certificado X.509 con mi servicio y obtengo un System.Security.Cryptography.CryptographicException. ¿Dónde puedo obtener más información sobre Flask?**
+**Pregunta: ¿Dónde puedo obtener más información sobre Flask?**
 
-**Respuesta**: Consulte la documentación de Flask, empezando por el [inicio rápido de Flask](http://flask.pocoo.org/docs/0.12/quickstart/#quickstart).
+**Respuesta**: Consulte la documentación de Flask, empezando por el [inicio rápido de Flask](https://flask.palletsprojects.com/en/1.1.x/quickstart/#quickstart).
 
 ## <a name="run-the-application"></a>Ejecutar la aplicación
 
@@ -167,8 +177,6 @@ Ahora está listo para agregar un poco de código de Python para implementar una
     ::: moniker range=">=vs-2019"
     ![Establecimiento del archivo de inicio para un proyecto en el Explorador de soluciones](media/quickstart-python-05-set-as-startup-file-2019.png)
     ::: moniker-end
-
-1. Haga clic con el botón derecho en *app.py* en el **Explorador de soluciones** y seleccione **Establecer como archivo de inicio**. Este comando identifica el archivo de código que se va a iniciar en Python cuando se ejecuta la aplicación.
 
 2. Haga clic con el botón derecho en el proyecto en el **Explorador de soluciones** y seleccione **Propiedades**. Después, haga clic en la pestaña **Depurar** y establezca la propiedad **Número de puerto** en `4449`. Este paso garantiza que Visual Studio inicia un explorador con `localhost:4449` para que coincida con los argumentos `app.run` en el código.
 
@@ -184,7 +192,7 @@ Ahora está listo para agregar un poco de código de Python para implementar una
 
 6. Cierre la ventana Comandos para detener la aplicación. Después, cierre la ventana del explorador.
 
-**Pregunta: Estoy utilizando un certificado X.509 con mi servicio y obtengo un System.Security.Cryptography.CryptographicException. ¿Cuál es la diferencia entre el comando Iniciar sin depurar e Iniciar depuración?**
+**Pregunta: ¿Cuál es la diferencia entre el comando Iniciar sin depurar e Iniciar depuración?**
 
 **Respuesta**: **Iniciar depuración** se usa para ejecutar la aplicación en el contexto del [depurador de Visual Studio](../python/debugging-python-in-visual-studio.md), lo que permite establecer puntos de interrupción, examinar las variables y recorrer el código línea por línea. Las aplicaciones se pueden ejecutar más lentamente en el depurador debido a los distintos enlaces que hacen posible la depuración. **Iniciar sin depurar**, en cambio, ejecuta la aplicación directamente como si la ejecutara desde la línea de comandos, sin contexto de depuración, y también inicia automáticamente un explorador y va a la dirección URL especificada en la pestaña **Depurar** de las propiedades del proyecto.
 

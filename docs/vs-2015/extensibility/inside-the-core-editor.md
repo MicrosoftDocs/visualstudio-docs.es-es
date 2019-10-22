@@ -11,13 +11,13 @@ caps.latest.revision: 22
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: cf9bc42aec3aac5acc996487f99c7e1f29ca252c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60083366"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68203954"
 ---
-# <a name="inside-the-core-editor"></a>En el Editor básico
+# <a name="inside-the-core-editor"></a>Dentro del editor principal
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 El [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] editor básico es un conjunto de varios componentes que le permiten modificar y consultar información textual. Si ha personalizado el editor básico mediante el uso de la API heredada, aún puede usar estas personalizaciones, que se enrutarán a través de adaptadores de editor. Sin embargo, se recomienda que adaptar sus personalizaciones al nuevo editor de API.  
@@ -65,7 +65,7 @@ El [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] editor básico es un conjunto de
  Describe la creación de instancias de un servicio de lenguaje decoraciones del código de control.  
   
 ## <a name="related-sections"></a>Secciones relacionadas  
- [Tutorial: Crear un Editor de núcleo y registrar un tipo de archivo del Editor](../extensibility/walkthrough-creating-a-core-editor-and-registering-an-editor-file-type.md)  
+ [Tutorial: Crear un editor principal y registrar un tipo de archivo del editor](../extensibility/walkthrough-creating-a-core-editor-and-registering-an-editor-file-type.md)  
  Proporciona instrucciones paso a paso sobre cómo iniciar el editor básico desde el código administrado.  
   
  [Barra desplegable](../extensibility/drop-down-bar.md)  
@@ -74,8 +74,8 @@ El [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] editor básico es un conjunto de
  [Uso de marcadores de texto con la API heredada](../extensibility/using-text-markers-with-the-legacy-api.md)  
  Explica el concepto de marcadores de texto y cómo se usan en el editor básico y enumera las interfaces que se usan para tener acceso y administrar marcadores de texto.  
   
- [Cómo: Agregar marcadores de texto estándar](../extensibility/how-to-add-standard-text-markers.md)  
+ [Procedimientos: Agregar marcadores de texto estándar](../extensibility/how-to-add-standard-text-markers.md)  
  Proporciona instrucciones paso a paso sobre cómo crear un marcador de texto y cómo agregar un comando personalizado a un menú contextual.  
   
- [Cómo: Crear marcadores de texto personalizado](../extensibility/how-to-create-custom-text-markers.md)  
+ [Procedimientos: Crear marcadores de texto personalizados](../extensibility/how-to-create-custom-text-markers.md)  
  Proporciona instrucciones paso a paso sobre cómo crear un marcador de texto personalizado y cómo proporcionar el tipo de marcador como un servicio.

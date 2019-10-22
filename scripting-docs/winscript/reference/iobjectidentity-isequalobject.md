@@ -1,5 +1,5 @@
 ---
-title: IObjectIdentity::IsEqualObject | Microsoft Docs
+title: 'IObjectIdentity (:: IsEqualObject | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c215a15a1239f07272079783366a1617c3a626e2
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 636dfa07b1fc94dfec2273220aa4101f5cd085b1
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58156039"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72571461"
 ---
 # <a name="iobjectidentityisequalobject"></a>IObjectIdentity::IsEqualObject
-Determina si un objeto es igual al objeto actual.  
+Determina si un objeto es igual que el objeto actual.  
   
 ## <a name="syntax"></a>Sintaxis  
   
@@ -37,7 +37,7 @@ HRESULT IsEqualObject(
   
 #### <a name="parameters"></a>Parámetros  
  `punk`  
- [in] Dirección del objeto que se compara con el objeto actual.  
+ de Dirección del objeto que se va a comparar con el objeto actual.  
   
 ## <a name="return-value"></a>Valor devuelto  
  El método devuelve un objeto `HRESULT`. Entre los valores posibles se incluyen los que se indican en la tabla siguiente, entre otros.  
@@ -48,7 +48,7 @@ HRESULT IsEqualObject(
 |`S_FALSE`|Los objetos no son iguales.|  
   
 ## <a name="remarks"></a>Comentarios  
- Una implementación de la `IsEqualObject` método debe devolver `S_OK` solo si los objetos son idénticos.  
+ Una implementación del método `IsEqualObject` solo debe devolver `S_OK` si los objetos son idénticos.  
   
 ## <a name="see-also"></a>Vea también  
  [IObjectIdentity (Interfaz)](../../winscript/reference/iobjectidentity-interface.md)

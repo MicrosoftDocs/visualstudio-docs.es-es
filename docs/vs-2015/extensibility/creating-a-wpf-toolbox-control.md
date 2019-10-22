@@ -13,11 +13,11 @@ caps.latest.revision: 17
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 768d9747635f2106d16f755db6799e356c890838
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60096405"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68197433"
 ---
 # <a name="creating-a-wpf-toolbox-control"></a>Creación de un control de cuadro de herramientas de WPF
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

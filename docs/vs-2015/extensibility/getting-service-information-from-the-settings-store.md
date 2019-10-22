@@ -9,11 +9,11 @@ caps.latest.revision: 5
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: cfe754203ae9b4e951de5beef8cd829f9d7716bb
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60116659"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68204314"
 ---
 # <a name="getting-service-information-from-the-settings-store"></a>Obtención de información de servicio desde el almacén de configuración
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

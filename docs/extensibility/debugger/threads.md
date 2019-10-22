@@ -6,17 +6,17 @@ helpviewer_keywords:
 - debugging [Debugging SDK], threads
 - threading [Debugging SDK]
 ms.assetid: 2243d24a-c3d2-41d1-abbb-6db21a2db9ee
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5d931568258099fa4a8fe8f3b82d3fe50d5a3e35
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: e9759536e1b27018a3361bbb723b4cde0f88269e
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60099778"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66333656"
 ---
 # <a name="threads"></a>Subprocesos
 En la arquitectura de depurador, un *subproceso*:

@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - source control plug-ins, functions
 ms.assetid: 4b0536dd-4f92-4ef2-9031-4548281f37aa
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c7d22e191eecb3c650744c6ddbaa815de479752a
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 9426d4f1f673d0d82c6ce3fd84c76a1c42d8ec4e
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56719787"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66331931"
 ---
 # <a name="source-control-plug-in-api-functions"></a>Funciones de API de complemento de control de código fuente
 La API de complemento de Control de código fuente proporciona las siguientes funciones, que deben implementarse mediante el complemento de acuerdo con esta API de control de código fuente. Las firmas de cada función y la semántica asociada con las marcas de bits y otros parámetros se describen en detalle en esta referencia.

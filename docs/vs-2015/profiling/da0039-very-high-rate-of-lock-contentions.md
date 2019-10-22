@@ -14,11 +14,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 14192551543bdfd5cc352ed4c7c45fa95630dcd3
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59657667"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68156427"
 ---
 # <a name="da0039-very-high-rate-of-lock-contentions"></a>DA0039: Frecuencia muy alta de contenciones de bloqueo
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,12 +30,12 @@ Para obtener la documentación más reciente de Visual Studio, consulte [DA0039:
 |Identificador de regla|DA0039|  
 |Categoría|Uso de .NET Framework|  
 |Métodos de generación de perfiles|Muestreo<br /><br /> Instrumentación<br /><br /> Memoria de .NET|  
-|Mensaje|Hay una frecuencia muy alta de contenciones de bloqueo de .NET. Investigue la razón de esta contención de bloqueo ejecutando un perfil de simultaneidad.|  
+|Message|Hay una frecuencia muy alta de contenciones de bloqueo de .NET. Investigue la razón de esta contención de bloqueo ejecutando un perfil de simultaneidad.|  
 |Tipo de regla|Advertencia|  
   
  Al generar perfiles mediante los métodos de muestreo, memoria de .NET o contención de recursos, debe reunir al menos 25 ejemplos para activar esta regla.  
   
-## <a name="cause"></a>Motivo  
+## <a name="cause"></a>Causa  
  Los datos de rendimiento del sistema recopilados con los datos de generación de perfiles indican que se produjo una tasa excesivamente alta de contenciones de bloqueo durante la ejecución de la aplicación. Considere la posibilidad de volver a generar perfiles con el método de generación de perfiles de simultaneidad para encontrar la causa de la contención.  
   
 ## <a name="rule-description"></a>Descripción de la regla  

@@ -11,12 +11,12 @@ dev_langs:
 - vb
 ms.workload:
 - multiple
-ms.openlocfilehash: bc943fe059850b024a5067d36bcc14d258ca5565
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: bb88c5b718c0f949825a2542b5a084d4e8ca15b9
+ms.sourcegitcommit: dc12a7cb66124596089f01d3e939027ae562ede9
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56635077"
+ms.lasthandoff: 10/04/2019
+ms.locfileid: "71962960"
 ---
 # <a name="wpf-overview"></a>Información general sobre WPF
 
@@ -24,13 +24,13 @@ Windows Presentation Foundation (WPF) le permite crear aplicaciones de cliente d
 
 ![Ejemplo Contoso Healthcare UI](../designers/media/wpfintrofigure24.png)
 
-El núcleo de WPF es un motor de representación basado en vectores e independiente de la resolución que está diseñado para sacar partido al moderno hardware gráfico. WPF amplía el núcleo con un conjunto completo de características de desarrollo de aplicaciones que incluyen Extensible Application Markup Language (XAML), controles, enlace de datos, diseño, gráficos en 2D y 3D, animación, estilos, plantillas, documentos, elementos multimedia, texto y tipografía. WPF se incluye en .NET Framework, lo que permite compilar aplicaciones que incorporan otros elementos de la biblioteca de clases de .NET Framework.
+El núcleo de WPF es un motor de representación basado en vectores e independiente de la resolución que está diseñado para sacar partido al moderno hardware gráfico. WPF amplía el núcleo con un conjunto completo de características de desarrollo de aplicaciones que incluyen Extensible Application Markup Language (XAML), controles, enlace de datos, diseño, gráficos en 2D y 3D, animación, estilos, plantillas, documentos, elementos multimedia, texto y tipografía. WPF es parte de. NET, así que permite compilar aplicaciones que incorporan otros elementos de la API de .NET.
 
 Esta introducción está dirigida a personas que aún no conocen WPF, y en ella se abordan sus conceptos y capacidades principales.
 
 ## <a name="program-with-wpf"></a>Programar con WPF
 
-WPF consisten en un subconjunto de tipos de .NET Framework en su mayoría ubicados en el espacio de nombres <xref:System.Windows> . Si ha compilado previamente aplicaciones con .NET Framework mediante tecnologías administradas como ASP.NET y Windows Forms, los conceptos básicos de la programación en WPF deben resultarle familiares; creará instancias de clases, definirá propiedades, llamará a métodos y controlará eventos con el lenguaje de programación de .NET Framework que prefiera, como C# o Visual Basic.
+WPF existe como un subconjunto de tipos de .NET que, en su mayoría, están ubicados en el espacio de nombres <xref:System.Windows>. Si ha compilado previamente aplicaciones con .NET mediante tecnologías administradas como ASP.NET y Windows Forms, la experiencia de programación fundamental en WPF debe resultarle familiar; cree instancias de clases, defina propiedades, llame a métodos y controle eventos con el lenguaje de programación de .NET que prefiera, como C# o Visual Basic.
 
 WPF incluye construcciones de programación adicionales que mejoran las propiedades y los eventos: las [propiedades de dependencia](/dotnet/framework/wpf/advanced/dependency-properties-overview) y los [eventos enrutados](/dotnet/framework/wpf/advanced/routed-events-overview).
 
@@ -224,9 +224,9 @@ En la siguiente ilustración se muestra el resultado del marcado XAML del ejempl
 
 La mayoría de las aplicaciones se crean para proporcionar a los usuarios recursos que les permitan ver y editar datos. Para las aplicaciones de WPF, el trabajo de almacenamiento de datos y el acceso a ellos ya se proporciona mediante tecnologías existentes, como SQL Server y ADO .NET. Una vez que se tiene acceso a los datos y se cargan en los objetos administrados de la aplicación, comienza la tarea ardua de las aplicaciones WPF. En esencia, esto implica dos cosas:
 
-1.  Copiar los datos de los objetos administrados a los controles, donde los datos se pueden mostrar y editar.
+1. Copiar los datos de los objetos administrados a los controles, donde los datos se pueden mostrar y editar.
 
-2.  Asegurarse de que los cambios realizados en los datos mediante los controles se vuelvan a copiar a los objetos administrados.
+2. Asegurarse de que los cambios realizados en los datos mediante los controles se vuelvan a copiar a los objetos administrados.
 
 Para simplificar el desarrollo de aplicaciones, WPF ofrece un motor de enlace de datos que sigue estos pasos automáticamente. La unidad que constituye el núcleo del motor de enlace de datos es la clase <xref:System.Windows.Data.Binding> , que se encarga de enlazar un control (el destino de enlace) a un objeto de datos (el origen de enlace). Esta relación se muestra en la ilustración siguiente:
 
@@ -239,7 +239,7 @@ En el ejemplo siguiente, se muestra cómo enlazar un control <xref:System.Window
 
 El siguiente marcado enlaza el control <xref:System.Windows.Controls.TextBox> a una instancia de un objeto `Person` personalizado.
 
- ```xaml
+```xaml
  <Window
      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
@@ -249,7 +249,7 @@ El siguiente marcado enlaza el control <xref:System.Windows.Controls.TextBox> a 
    <TextBox Name="personNameTextBox" Text="{Binding Path=Name}" />
 
  </Window>
- ```
+```
 
 [!code-vb[SimpleDataBindingSnippets#DataBindingCODEBEHIND](../designers/codesnippet/VisualBasic/introduction-to-wpf_6.vb)]
 [!code-csharp[SimpleDataBindingSnippets#DataBindingCODEBEHIND](../designers/codesnippet/CSharp/introduction-to-wpf_6.cs)]
@@ -428,7 +428,7 @@ Para obtener más información sobre los tipos de contenido admitidos por los di
 
 ### <a name="triggers"></a>Desencadenadores
 
-Aunque el propósito principal del marcado XAML es implementar la apariencia de la aplicación, también se puede usar XAML para implementar algunos aspectos del comportamiento de la aplicación. Un ejemplo es el uso de desencadenadores para cambiar la apariencia de una aplicación según las interacciones del usuario. Para obtener más información, vea [Aplicar estilos y plantillas](/dotnet/framework/wpf/controls/styling-and-templating).
+Aunque el propósito principal del marcado XAML es implementar la apariencia de la aplicación, también se puede usar XAML para implementar algunos aspectos del comportamiento de la aplicación. Un ejemplo es el uso de desencadenadores para cambiar la apariencia de una aplicación según las interacciones del usuario. Para más información, vea [Estilos y plantillas](/dotnet/desktop-wpf/fundamentals/styles-templates-overview).
 
 ### <a name="control-templates"></a>Plantillas de control
 
@@ -545,7 +545,7 @@ Dado que este estilo tiene como destino todos los controles <xref:System.Windows
 
 ![Dos botones de color naranja](../designers/media/wpfintrofigure20.png)
 
-Para obtener más información, vea [Aplicar estilos y plantillas](/dotnet/framework/wpf/controls/styling-and-templating).
+Para más información, vea [Estilos y plantillas](/dotnet/desktop-wpf/fundamentals/styles-templates-overview).
 
 ### <a name="resources"></a>Recursos
 
@@ -575,11 +575,11 @@ En el ejemplo siguiente se define un color de fondo común que comparten los con
 
 En este ejemplo se implementa un recurso de color de fondo mediante el elemento de propiedad `Window.Resources` . Este recurso está disponible para todos los elementos secundarios de <xref:System.Windows.Window>. Hay una gran variedad de ámbitos de recursos, incluidos los siguientes, que se muestran en el orden en que se resuelven:
 
-1.  Un control individual (mediante la propiedad <xref:System.Windows.FrameworkElement.Resources%2A?displayProperty=fullName> heredada).
+1. Un control individual (mediante la propiedad <xref:System.Windows.FrameworkElement.Resources%2A?displayProperty=fullName> heredada).
 
-2.  <xref:System.Windows.Window> o <xref:System.Windows.Controls.Page> (también mediante la propiedad <xref:System.Windows.FrameworkElement.Resources%2A?displayProperty=fullName> heredada).
+2. <xref:System.Windows.Window> o <xref:System.Windows.Controls.Page> (también mediante la propiedad <xref:System.Windows.FrameworkElement.Resources%2A?displayProperty=fullName> heredada).
 
-3.  <xref:System.Windows.Application> (mediante la propiedad <xref:System.Windows.Application.Resources%2A?displayProperty=fullName> ).
+3. <xref:System.Windows.Application> (mediante la propiedad <xref:System.Windows.Application.Resources%2A?displayProperty=fullName> ).
 
 La variedad de ámbitos aporta flexibilidad al desarrollador con respecto a la manera de definir y compartir los recursos.
 
@@ -597,7 +597,7 @@ Como alternativa para asociar directamente los recursos a un ámbito determinado
 </ResourceDictionary>
 ```
 
- En el ejemplo siguiente se hace referencia al diccionario de recursos definido en el ejemplo anterior para compartirlo en toda la aplicación.
+En el ejemplo siguiente se hace referencia al diccionario de recursos definido en el ejemplo anterior para compartirlo en toda la aplicación.
 
 ```xaml
 <Application

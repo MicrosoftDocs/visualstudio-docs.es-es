@@ -14,15 +14,15 @@ helpviewer_keywords:
 - command aliases
 ms.assetid: de8bb378-8c1c-4087-a9a5-537fa8314c19
 caps.latest.revision: 24
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 573c120aafdf520b137e3fb50251ed8606f5c43a
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 7e9419e64cd211490fc1d3785045b5de117d392e
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59654378"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72657853"
 ---
 # <a name="visual-studio-command-aliases"></a>Visual Studio Command Aliases
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -71,7 +71,7 @@ Los alias permiten escribir un comando en el cuadro **Buscar/Comando** o en la v
 |[Iniciar (Comando)](../../ide/reference/start-command.md)|e|Debug.Start|
 |[Ir a (Comando)](../../ide/reference/go-to-command.md)|GotoLn|Edit.GoTo|
 |Ir a llave|GotoBrace|Edit.GotoBrace|
-|F1Help|Help|Help.F1Help|
+|F1Help|Ayuda|Help.F1Help|
 |Modo Inmediato|immed|Tools.ImmediateMode|
 |Insertar archivo como texto|InsertFile|Edit.InsertFileAsText|
 |[Mostrar pila de llamadas (Comando)](../../ide/reference/list-call-stack-command.md)|kb|Debug.ListCallStack|
@@ -99,7 +99,7 @@ Los alias permiten escribir un comando en el cuadro **Buscar/Comando** o en la v
 |Paso a paso para salir|pr|Debug.StepOut|
 |Marcador anterior|PrevBook|Edit.PreviousBookmark|
 |Imprimir archivo|print|File.Print|
-|Ventana Propiedades|props|View.PropertiesWindow|
+|Propiedades (ventana)|props|View.PropertiesWindow|
 |Detener|q|Debug.StopDebugging|
 |Redo|redo|Edit.Redo|
 |Ventana Registros|registers|Debug.Registers|
@@ -128,4 +128,4 @@ Los alias permiten escribir un comando en el cuadro **Buscar/Comando** o en la v
 |[Mostrar subprocesos (Comando)](../../ide/reference/list-threads-command.md)|~ ~*k ~\*kb|Debug.ListThreads Debug.ListTheads /AllThreads|
 
 ## <a name="see-also"></a>Vea también
- [Comandos de Visual Studio](../../ide/reference/visual-studio-commands.md) [ventana de comandos](../../ide/reference/command-window.md) [cuadro Buscar/comando](../../ide/find-command-box.md)
+ Cuadro de comandos [Buscar/comando](../../ide/find-command-box.md) de la [ventana](../../ide/reference/command-window.md) comandos de [Visual Studio](../../ide/reference/visual-studio-commands.md)

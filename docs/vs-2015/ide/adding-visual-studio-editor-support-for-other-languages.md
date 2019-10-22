@@ -1,5 +1,5 @@
 ---
-title: Agregar compatibilidad con el editor para otros lenguajes | Microsoft Docs
+title: Agregar compatibilidad con el editor para otros idiomas | Microsoft Docs
 ms.date: 11/15/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,15 +12,15 @@ helpviewer_keywords:
 - language support
 ms.assetid: d78c43ee-4ef2-42e5-984e-d137de4e7e92
 caps.latest.revision: 20
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 366ec5de66c3070e30d7d4f98662732a7892437b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 7138784201a1ac036047e1c8df362727fa393b51
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54758820"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72620786"
 ---
 # <a name="adding-visual-studio-editor-support-for-other-languages"></a>Agregar compatibilidad con otros lenguajes en el editor de Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,7 +30,7 @@ Obtenga información sobre la manera en que el editor de Visual Studio admite la
 ## <a name="syntax-colorization-statement-completion-and-navigate-to-support"></a>Compatibilidad con el uso de colores para la sintaxis, la finalización de instrucciones y Navegar a
  Las características del editor de Visual Studio como el uso de colores para la sintaxis, la finalización de instrucciones y Navegar a pueden ayudarle a leer, crear y editar el código más fácilmente. En la captura de pantalla siguiente se muestra un ejemplo de cómo se edita un script Perl en Visual Studio. Se aplica color automáticamente a la sintaxis. Por ejemplo, los comentarios del código aparecen en color verde, el código en negro, las rutas de acceso en rojo y las instrucciones en azul. El editor de Visual Studio aplica color automáticamente a la sintaxis de todos los lenguajes que admite. Además, cuando se empieza a escribir un objeto o una palabra clave del lenguaje conocidos, la finalización de instrucciones muestra una lista de las posibles instrucciones y objetos. La finalización de instrucciones puede ayudarle a crear código de manera más rápida y fácil.
 
- ![Colores de sintaxis en script Perl](../ide/media/vside-perledit.png "VSIDE_PerlEdit")
+ ![Coloración de la sintaxis en el script Perl](../ide/media/vside-perledit.png "VSIDE_PerlEdit")
 
  Visual Studio actualmente ofrece compatibilidad con el uso de colores para la sintaxis y la finalización de instrucciones básicas para los lenguajes siguientes mediante [gramáticas TextMate](https://manual.macromates.com/en/language_grammars). Si su lenguaje favorito no está en la tabla, no se preocupe: puede agregarlo.
 
@@ -39,7 +39,7 @@ Obtenga información sobre la manera en que el editor de Visual Studio admite la
 |Bat|F#|Java|Markdown|Rust|Visual Basic|
 |Clojure|Ir|JavaDoc|Objective-C|ShaderLab|Visual C#|
 |CMake|Groovy|JSON|Perl|ShellScript|Visual C++|
-|CoffeeScript|HTML|LESS|Python|SQL|VBNet|
+|CoffeeScript|HTML|LESS|Plantillas de|SQL|VBNet|
 |CSS|INI|LUA|R|Swift|XML|
 |Docker|Jade|Make|Ruby|TypeScript|YAML|
 
@@ -74,13 +74,13 @@ Obtenga información sobre la manera en que el editor de Visual Studio admite la
 
 |Nombre de carpeta|Descripción|
 |-----------------|-----------------|
-|\\*\<nombre del lenguaje>*|Carpeta del lenguaje. Reemplace *\<nombre del lenguaje>* por el nombre del lenguaje. Por ejemplo, **\Matlab**.|
+|\\ *\<nombre del lenguaje>*|Carpeta del lenguaje. Reemplace *\<nombre del lenguaje>* por el nombre del lenguaje. Por ejemplo, **\Matlab**.|
 |\Syntaxes|Carpeta de la gramática. Contiene los archivos .json de la gramática para el lenguaje, como **Matlab.json**.|
 |\Snippets|Carpeta de fragmentos de código. Contiene fragmentos de código para el lenguaje.|
 
- En Windows, %userprofile% se resuelve como la ruta de acceso c:\Usuarios\\*\<nombre de usuario>*. Si la carpeta de extensiones no existe en el sistema, debe crearla. Si la carpeta ya existe, estará oculta.
+ En Windows, %userprofile% se resuelve como la ruta de acceso c:\Usuarios\\ *\<nombre de usuario>* . Si la carpeta de extensiones no existe en el sistema, debe crearla. Si la carpeta ya existe, estará oculta.
 
  Para obtener más información sobre cómo crear gramáticas TextMate, vea [TextMate – Introduction to Language Grammars: How to add source code syntax highlighting embedded in HTML](https://developmentality.wordpress.com/2011/02/08/textmate-introduction-to-language-grammars/) (TextMate. Introducción a las gramáticas de lenguaje: cómo agregar resaltado de sintaxis de código origen insertado en HTML) y [Notes on how to create a Language Grammar and Custom Theme for a Textmate Bundle](https://benparizek.com/notebook/notes-on-how-to-create-a-language-grammar-and-custom-theme-for-a-textmate-bundle) (Notas sobre cómo crear una gramática de lenguaje y un tema personalizado para un lote de Textmate).
 
 ## <a name="see-also"></a>Vea también
- [Visual Studio 2013 que se vaya a mejoras](https://blogs.msdn.microsoft.com/mvpawardprogram/2013/10/22/visual-studio-2013-navigate-to-improvements/) [Tutorial: crear un fragmento de código](../ide/walkthrough-creating-a-code-snippet.md) [Tutorial: mostrar la finalización de instrucciones](../extensibility/walkthrough-displaying-statement-completion.md)
+ [Visual Studio 2013 que se vaya a mejoras](https://blogs.msdn.microsoft.com/mvpawardprogram/2013/10/22/visual-studio-2013-navigate-to-improvements/) [Tutorial: Creación de un fragmento de código](../ide/walkthrough-creating-a-code-snippet.md) [Tutorial: Visualización de finalización de instrucciones](../extensibility/walkthrough-displaying-statement-completion.md)

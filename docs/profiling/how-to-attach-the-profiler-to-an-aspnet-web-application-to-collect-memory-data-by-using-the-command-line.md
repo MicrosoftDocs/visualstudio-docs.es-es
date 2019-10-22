@@ -9,18 +9,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - aspnet
-ms.openlocfilehash: e82e17a01e6cbfce82e270e25de16ee788a14878
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: b6caca91849727fa21fec0401c776e4c80f9a6b3
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56614212"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63439523"
 ---
 # <a name="how-to-attach-the-profiler-to-an-aspnet-web-application-to-collect-memory-data-by-using-the-command-line"></a>Procedimiento para adjuntar el generador de perfiles a una aplicación web ASP.NET para recopilar datos de memoria mediante la línea de comandos
 En este artículo se describe cómo usar las herramientas de línea de comandos de las Herramientas de generación de perfiles de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] para adjuntar el generador de perfiles a una aplicación web [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] y recopilar datos sobre el número y tamaño de asignaciones de memoria de .NET Framework. También puede recopilar datos sobre la duración de los objetos de memoria de .NET Framework.
 
 > [!NOTE]
->  Para obtener la ruta de acceso a las herramientas de generación de perfiles, vea [Especificar la ruta de acceso a las herramientas de línea de comandos](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md). En equipos de 64 bits, están disponibles las dos versiones de las herramientas, la de 64 bits y la de 32 bits. Para utilizar las herramientas de línea de comandos del generador de perfiles, debe agregar la ruta de acceso de las herramientas a la variable de entorno PATH de la ventana Símbolo del sistema o agregarla al propio comando.
+> Para obtener la ruta de acceso a las herramientas de generación de perfiles, vea [Especificar la ruta de acceso a las herramientas de línea de comandos](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md). En equipos de 64 bits, están disponibles las dos versiones de las herramientas, la de 64 bits y la de 32 bits. Para utilizar las herramientas de línea de comandos del generador de perfiles, debe agregar la ruta de acceso de las herramientas a la variable de entorno PATH de la ventana Símbolo del sistema o agregarla al propio comando.
 
  Para recopilar datos de rendimiento de una aplicación web [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)], debe usar la herramienta [VSPerfCLREnv.cmd](../profiling/vsperfclrenv.md) para inicializar las variables de entorno adecuadas en el equipo que hospeda la aplicación web [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)]. A continuación, debe reiniciar el equipo para configurar el servidor web para la generación de perfiles.
 
@@ -38,7 +38,7 @@ En este artículo se describe cómo usar las herramientas de línea de comandos 
 
     **VSPerfClrEnv** {**/globalsamplegc** &#124; **/globalsamplegclife**} [**/samplelineoff**]
 
-   -   Las opciones **/globalsamplegc** y **/globalsamplegclife** especifican el tipo de datos de memoria que se van a recopilar.
+   - Las opciones **/globalsamplegc** y **/globalsamplegclife** especifican el tipo de datos de memoria que se van a recopilar.
 
         Especifique una y solamente una de las siguientes opciones.
 
@@ -47,7 +47,7 @@ En este artículo se describe cómo usar las herramientas de línea de comandos 
        |**/globalsamplegc**|Habilita la recopilación de datos de asignación de memoria.|
        |**/globalsamplegclife**|Habilita la recopilación tanto de datos de asignación de memoria como de datos de duración de objetos.|
 
-   -   La opción **/samplelineoff** desactiva la asignación de los datos recopilados a líneas de código fuente específicas. Si se especifica esta opción, los datos se asignan al nivel de función.
+   - La opción **/samplelineoff** desactiva la asignación de los datos recopilados a líneas de código fuente específicas. Si se especifica esta opción, los datos se asignan al nivel de función.
 
 3. Reinicie el equipo para establecer la nueva configuración de entorno.
 
@@ -64,7 +64,7 @@ En este artículo se describe cómo usar las herramientas de línea de comandos 
      Puede usar cualquiera de las siguientes opciones con la opción **/start:sample**.
 
    > [!NOTE]
-   >  Normalmente, las opciones **/user** y **/crosssession** son necesarias para aplicaciones ASP.NET.
+   > Normalmente, las opciones **/user** y **/crosssession** son necesarias para aplicaciones ASP.NET.
 
    | Opción | Descripción |
    | - | - |
@@ -74,7 +74,6 @@ En este artículo se describe cómo usar las herramientas de línea de comandos 
    | [/wincounter](../profiling/wincounter.md) **:** `WinCounterPath` | Especifica un contador de rendimiento de Windows que se va a recopilar durante la generación de perfiles. |
    | [/automark](../profiling/automark.md) **:** `Interval` | Utilizar solo con **/wincounter**. Especifica el número de milisegundos entre eventos de recopilación de contadores de rendimiento de Windows. El valor predeterminado es 500 ms. |
    | [/events](../profiling/events-vsperfcmd.md) **:** `Config` | Especifica un evento de Seguimiento de eventos para Windows (ETW) que se va a recopilar durante la generación de perfiles. Los eventos ETW se recopilan en un archivo (.etl) independiente. |
-
 
 6. Inicie la aplicación web [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] de la manera habitual.
 
@@ -91,7 +90,7 @@ En este artículo se describe cómo usar las herramientas de línea de comandos 
 
 #### <a name="to-start-and-stop-data-collection"></a>Para iniciar y detener la recolección de datos
 
--   Los siguientes pares de opciones de **VSPerfCmd** inician y detienen la recolección de datos. Especifique cada opción en una línea de comandos diferente. Puede activar y desactivar la recolección de datos varias veces.
+- Los siguientes pares de opciones de **VSPerfCmd** inician y detienen la recolección de datos. Especifique cada opción en una línea de comandos diferente. Puede activar y desactivar la recolección de datos varias veces.
 
     |Opción|Descripción|
     |------------|-----------------|

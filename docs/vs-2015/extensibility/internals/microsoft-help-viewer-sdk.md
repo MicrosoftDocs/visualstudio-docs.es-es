@@ -8,12 +8,12 @@ ms.assetid: 620d7dcd-d462-475e-a449-fbfa06ff12c5
 caps.latest.revision: 34
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: e08a443513bb6043ec2f3841067021ffc65dd92d
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 226762ef355a83a2539fa1402a4369398f9f52a4
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60099017"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66263147"
 ---
 # <a name="microsoft-help-viewer-sdk"></a>SDK del Visor de Ayuda de Microsoft
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -145,7 +145,7 @@ En este artículo contiene las siguientes tareas para los integradores del Visor
 6. Agregar vínculos de página: `<a href="ms-xhelp://?Id=ContosoTopic1">Main Topic</a>`
 
 > [!NOTE]
->  Nota: para que no es compatible con nuevos "Idioma" (ejemplo, F#, Cobol, Fortran) el código en colores en el fragmento de código será monocromo.
+> Nota: para que no es compatible con nuevos "Idioma" (ejemplo, F#, Cobol, Fortran) el código en colores en el fragmento de código será monocromo.
 
  **Tema del Visor de Ayuda de ejemplo** el código muestra cómo definir los metadatos, un fragmento de código, un área contraíble y texto específicos del idioma.
 
@@ -694,7 +694,7 @@ some F# code
 
 1. [!INCLUDE[vs_dev12](../../includes/vs-dev12-md.md)]
 
-2. [Aislado de Visual Studio 2013 Shell Redist](http://www.microsoft.com/visualstudio/11/downloads#vs-shell)
+2. [Aislado de Visual Studio 2013 Shell Redist](https://aka.ms/VS2013/IsoShell-LP/all)
 
    **Información general**
 
@@ -820,7 +820,7 @@ some F# code
 
 ### <a name="additional-resources"></a>Recursos adicionales
 
-Para la API de tiempo de ejecución, consulte [API de Ayuda de Windows](http://msdn.microsoft.com/library/windows/desktop/hh447318\(v=vs.85\).aspx).
+Para la API de tiempo de ejecución, consulte [API de Ayuda de Windows](https://msdn.microsoft.com/library/windows/desktop/hh447318\(v=vs.85\).aspx).
 
 Para obtener más información sobre cómo aprovechar la API de ayuda, consulte [Visor de Ayuda de los ejemplos de código](http://visualstudiogallery.msdn.microsoft.com/f08f296f-7076-4aec-8da3-8f0fbe04461e).
 

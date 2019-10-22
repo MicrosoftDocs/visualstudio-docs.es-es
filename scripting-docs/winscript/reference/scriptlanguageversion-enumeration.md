@@ -1,5 +1,5 @@
 ---
-title: SCRIPTLANGUAGEVERSION (enumeración) | Documentos de Microsoft
+title: Enumeración SCRIPTLANGUAGEVERSION (| Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -11,15 +11,15 @@ caps.latest.revision: 3
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 6aab63989d1ae02f7c75fc9c20a14d59e8a05078
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 802a9f31cc7e3497c5e5fc54395d988552f75e84
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58144516"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72574360"
 ---
 # <a name="scriptlanguageversion-enumeration"></a>SCRIPTLANGUAGEVERSION (Enumeración)
-Especifica las posibles secuencias de comandos de versiones.  
+Especifica las versiones de scripting posibles.  
   
 ## <a name="syntax"></a>Sintaxis  
   
@@ -32,9 +32,9 @@ typedef enum tagSCRIPTLANGUAGEVERSION{    SCRIPTLANGUAGEVERSION_DEFAULT = 0,    
 |||  
 |-|-|  
 |SCRIPTLANGUAGEVERSION_DEFAULT|La versión predeterminada. El valor entero es 0.|  
-|SCRIPTLANGUAGEVERSION_5_7|La versión 5.7 de secuencias de comandos de Windows. El valor entero es 1.|  
-|SCRIPTLANGUAGEVERSION_5_8|Versión 5.8 de secuencias de comandos de Windows. El valor entero es 2.|  
-|SCRIPTLANGUAGEVERSION_MAX|La versión máxima. El valor entero es 255.|  
+|SCRIPTLANGUAGEVERSION_5_7|Windows Scripting versión 5,7. El valor entero es 1.|  
+|SCRIPTLANGUAGEVERSION_5_8|Windows Scripting versión 5,8. El valor entero es 2.|  
+|SCRIPTLANGUAGEVERSION_MAX|Versión máxima. El valor entero es 255.|  
   
 ## <a name="see-also"></a>Vea también  
  [Active Script (Constantes, Enumeraciones y Códigos de error)](../../winscript/reference/active-script-constants-enumerations-and-error-codes.md)

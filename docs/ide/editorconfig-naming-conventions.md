@@ -1,6 +1,6 @@
 ---
 title: Convenciones de nomenclatura .NET para archivos EditorConfig
-ms.date: 11/20/2017
+ms.date: 08/07/2019
 ms.topic: reference
 helpviewer_keywords:
 - naming conventions [EditorConfig]
@@ -10,22 +10,20 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2e99e07f2f39ef4e01a2b79e5a391c32f6510e3a
-ms.sourcegitcommit: 36f5ffd6ae3215fe31837f4366158bf0d871f7a9
+ms.openlocfilehash: 13da6cd34df3996fe837aee89ce4f379027dd409
+ms.sourcegitcommit: 7825d4163e52d724e59f6c0da209af5fbef673f7
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/08/2019
-ms.locfileid: "59232598"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "72000162"
 ---
 # <a name="net-naming-conventions-for-editorconfig"></a>Convenciones de nomenclatura .NET para EditorConfig
 
 Las convenciones de nomenclatura están relacionadas con los nombres de elementos de código como clases, propiedades y métodos. Por ejemplo, puede especificar que los miembros públicos deben escribirse en mayúsculas, o que los métodos asincrónicos deben terminar en "Async". Puede aplicar estas reglas si las especifica en un [archivo .editorconfig](../ide/create-portable-custom-editor-options.md). Las infracciones de reglas de nomenclatura aparecen en la **lista de errores** o como una sugerencia debajo del nombre, según la gravedad que elija para la regla. No es necesario compilar el proyecto para ver las infracciones.
 
-Las convenciones de nomenclatura deben ordenarse de la más específica a la menos específica en el archivo *.editorconfig*. La primera regla encontrada que se puede aplicar es la única que se aplica.
-
 Para cada convención de nomenclatura, debe especificar los símbolos a los que se aplica, un estilo de nomenclatura y una gravedad de aplicación de la convención, con las propiedades que se describen a continuación. El orden de las propiedades no es importante.
 
-Para comenzar, elija un título para la regla de nomenclatura que va a usar en cada una de las propiedades que se necesitan para describir completamente la regla. Por ejemplo, `public_members_must_be_capitalized` es un buen nombre descriptivo para una regla de nomenclatura. En las secciones siguientes se hará referencia al título que elija como **<TítuloDeLaReglaDeNomenclatura\>**.
+Para comenzar, elija un título para la regla de nomenclatura que va a usar en cada una de las propiedades que se necesitan para describir completamente la regla. Por ejemplo, `public_members_must_be_capitalized` es un buen nombre descriptivo para una regla de nomenclatura. En esta página se hará referencia al título que elija como **<namingRuleTitle\>** en las secciones siguientes.
 
 ## <a name="symbols"></a>Símbolos
 
@@ -116,7 +114,7 @@ Una regla de nomenclatura coincide con las firmas que tienen *todos* los modific
 
 ## <a name="style"></a>Estilo
 
-Ahora que se ha identificado el grupo de símbolos al que aplicar la regla de nomenclatura, se debe describir el estilo de nomenclatura. Un estilo puede ser que el nombre tenga un prefijo o sufijo determinado, o bien que palabras individuales del nombre se separen con un carácter determinado. También puede especificar un estilo de uso de mayúsculas. La propiedad de estilo tiene el formato siguiente:
+Ahora que ha identificado el grupo de símbolos al que aplicar la regla de nomenclatura, puede describir el estilo de nomenclatura. Un estilo puede ser que el nombre tenga un prefijo o sufijo determinado, o bien que palabras individuales del nombre se separen con un carácter determinado. También puede especificar un estilo de uso de mayúsculas. La propiedad de estilo tiene el formato siguiente:
 
 `dotnet_naming_rule.<namingRuleTitle>.style = <styleTitle>`
 
@@ -167,7 +165,8 @@ En la tabla siguiente se muestran los valores de gravedad permitidos y lo que si
 
 Gravedad | Efecto
 ------------ | -------------
-Ninguno o silencioso | Cuando no se sigue este estilo, no se muestra nada al usuario, pero el código generado automáticamente sigue este estilo.
+ninguna | La regla se suprime por completo.
+refactoring o silent | Cuando no se sigue este estilo, no se muestra nada al usuario, pero el código generado automáticamente sigue este estilo.
 suggestion | Cuando no se sigue este estilo, se muestra al usuario como una sugerencia (como puntos debajo de los dos primeros caracteres). No tiene ningún efecto en tiempo de compilación.
 warning | Cuando no se sigue este estilo, se muestra una advertencia del compilador en la **lista de errores**.
 error | Cuando no se sigue este estilo, se muestra un error del compilador en la **lista de errores**.
@@ -175,11 +174,35 @@ error | Cuando no se sigue este estilo, se muestra un error del compilador en la
 > [!NOTE]
 > No tiene que volver a compilar el proyecto para ver las infracciones de reglas de nomenclatura. Aparecen mientras se modifica el código, ya sea en la **lista de errores** o como una sugerencia.
 
+## <a name="rule-order"></a>Orden de las reglas
+
+::: moniker range="vs-2017"
+
+Las convenciones de nomenclatura deben ordenarse de la más específica a la menos específica en el archivo EditorConfig. La primera regla encontrada que se puede aplicar es la única que se aplica. Sin embargo, si hay varias *propiedades* de regla con el mismo nombre, la prioridad la tiene la última propiedad encontrada con ese nombre. Para más información, consulte [Prioridad y jerarquía de los archivos](create-portable-custom-editor-options.md#file-hierarchy-and-precedence).
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+A partir de la versión 16.2 de Visual Studio 2019, no importa el orden en el que se definan las reglas de nomenclatura de un archivo EditorConfig. Por el contrario, Visual Studio ordena las reglas de nomenclatura automáticamente según la definición de las propias reglas. La [extensión de servicio de lenguaje de EditorConfig](https://marketplace.visualstudio.com/items?itemName=MadsKristensen.EditorConfig) puede analizar un archivo EditorConfig y notificar los casos en los que el orden de las reglas del archivo es diferente al que va a usar el compilador en tiempo de ejecución.
+
+Si usa una versión anterior de Visual Studio, las convenciones de nomenclatura deben ordenarse de la más a la menos específica en el archivo EditorConfig. La primera regla encontrada que se puede aplicar es la única que se aplica. Sin embargo, si hay varias *propiedades* de regla con el mismo nombre, la prioridad la tiene la última propiedad encontrada con ese nombre. Para más información, consulte [Prioridad y jerarquía de los archivos](create-portable-custom-editor-options.md#file-hierarchy-and-precedence).
+
+::: moniker-end
+
+## <a name="default-naming-styles"></a>Estilos de nomenclatura predeterminados
+
+Si no especifica ninguna regla de nomenclatura personalizada, Visual Studio usa los siguientes estilos predeterminados:
+
+- Para clases, estructuras, enumeraciones, propiedades y eventos con accesibilidad `public`, `private`, `internal`, `protected` o `protected_internal`, el estilo de nomenclatura predeterminado es Pascal Case.
+
+- Para interfaces con accesibilidad `public`, `private`, `internal`, `protected` o `protected_internal`, el estilo de nomenclatura predeterminado es Pascal Case con el prefijo necesario **l**.
+
 ## <a name="example"></a>Ejemplo
 
 El archivo *.editorconfig* siguiente contiene una convención de nomenclatura que especifica que las propiedades, los métodos, los campos, los eventos y los delegados públicos deben escribirse en mayúsculas. Tenga en cuenta que esta convención de nomenclatura especifica varios tipos de símbolo a los que aplicar la regla, con una coma para separar los valores.
 
-```EditorConfig
+```ini
 # Public members must be capitalized (public_members_must_be_capitalized)
 [*.{cs,vb}]
 dotnet_naming_rule.public_members_must_be_capitalized.symbols   = public_symbols
@@ -199,16 +222,18 @@ En la captura de pantalla siguiente se muestra el efecto de esta convención de 
 
 Ahora se va a cambiar la gravedad de la infracción a `warning`:
 
-```EditorConfig
+```ini
 dotnet_naming_rule.public_members_must_be_capitalized.severity = warning
 ```
 
-Si cierra y vuelve a abrir el archivo de código, en lugar de ver la sugerencia debajo de la infracción de nombre, verá una línea ondulada de color verde y una advertencia en la **lista de errores**:
+Si cierra y vuelve a abrir el archivo de código, en lugar de ver la sugerencia debajo de la infracción de nombre, verá una línea ondulada de color verde y una advertencia en la lista de errores:
 
 ![Advertencia de regla de nomenclatura](media/editorconfig-naming-rule-warning.png)
 
 ## <a name="see-also"></a>Vea también
 
-- [Lenguaje .NET y convenciones de formato](../ide/editorconfig-code-style-settings-reference.md)
+- [Convenciones de lenguaje](editorconfig-language-conventions.md)
+- [Convenciones de formato](editorconfig-formatting-conventions.md)
+- [Roslyn naming conventions](https://github.com/dotnet/roslyn/blob/master/.editorconfig#L63) (Convenciones de nomenclatura de Roslyn)
 - [Crear opciones del editor personalizadas y portátiles](../ide/create-portable-custom-editor-options.md)
-- [Archivo .editorconfig de .NET Compiler Platform](https://github.com/dotnet/roslyn/blob/master/.editorconfig)
+- [Configuración de la convención de codificación de .NET para EditorConfig](editorconfig-code-style-settings-reference.md)

@@ -14,12 +14,12 @@ ms.assetid: d9011f5a-cb53-418f-9d8f-74b15b9fc5f5
 caps.latest.revision: 23
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: e71097bacd12e8e60690108a8dd62a370aed6f52
-ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
+ms.openlocfilehash: 1bfb2a7e30542977906fd71e168652aa661fcc8d
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "59002972"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65688734"
 ---
 # <a name="support-for-the-visual-studio-sdk"></a>Soporte técnico para Visual Studio SDK
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -46,7 +46,7 @@ Existen varias opciones de soporte técnico para los clientes que tengan pregunt
 ## <a name="included-support"></a>Soporte técnico incluido  
   
 ### <a name="visual-studio-product-support"></a>Soporte técnico de Visual Studio  
- Se incluye con la compra de cierta compatibilidad [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] productos. Para obtener más información, consulte [compatibilidad de Visual Studio](http://msdn.microsoft.com/vstudio/cc136615.aspx). Microsoft mantiene un equipo de soporte técnico dedicado para responder a preguntas sobre [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] extensibilidad.  
+ Se incluye con la compra de cierta compatibilidad [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] productos. Para obtener más información, consulte [compatibilidad de Visual Studio](https://msdn.microsoft.com/vstudio/cc136615.aspx). Microsoft mantiene un equipo de soporte técnico dedicado para responder a preguntas sobre [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] extensibilidad.  
   
 ### <a name="msdn-subscription-support"></a>Compatibilidad con la suscripción de MSDN  
  Paquetes de la suscripción de MSDN también pueden incluir cierta compatibilidad. Para obtener más información, consulte [soporte técnico para suscriptores MSDN](https://msdn.microsoft.com/subscriptions/aa718661.aspx).  

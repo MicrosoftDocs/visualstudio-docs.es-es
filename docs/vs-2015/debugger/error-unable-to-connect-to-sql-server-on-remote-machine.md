@@ -17,12 +17,12 @@ caps.latest.revision: 11
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: f2e5b19c26ff800b5edabd3bf21f57b21ed06bae
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: b148ad1abc4a74482f3ec5786b953c0a2c6ace36
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60083424"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65682609"
 ---
 # <a name="error-unable-to-connect-to-sql-server-on-remote-machine"></a>Error: No se puede conectar a SQL Server en el equipo remoto
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,4 +34,4 @@ No se puede conectar a SQL Server en el equipo remoto *nombre*. Acceso denegado.
 - Consulte [Depuración remota](../debugger/remote-debugging.md).  
   
 ## <a name="see-also"></a>Vea también  
- [Depuración de SQL](http://msdn.microsoft.com/f27c17e6-1d90-49f2-9fc0-d02e6a27f109)
+ [Depuración de SQL](https://msdn.microsoft.com/f27c17e6-1d90-49f2-9fc0-d02e6a27f109)

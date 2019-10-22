@@ -8,18 +8,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 57d89fec51cf73d310e3ad2e18b3d4270bd8ff74
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 47142e63976a743166e5211631e77a0c0878ad9c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60041986"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63406964"
 ---
 # <a name="how-to-include-prerequisites-with-a-clickonce-application"></a>Procedimiento Inclusión de requisitos previos con una aplicación ClickOnce
 Para poder distribuir el software necesario con una aplicación [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)], primero debe descargar los paquetes del instalador para esos requisitos previos en el equipo de desarrollo. Si publica una aplicación y elige **Descargar los requisitos previos desde la misma ubicación que mi aplicación**, se producirá un error si los paquetes del instalador no están en la carpeta **Packages**.
 
 > [!NOTE]
->  Para agregar un paquete de instalador para .NET Framework, vea [Guía de implementación de .NET Framework para desarrolladores](/dotnet/framework/deployment/deployment-guide-for-developers).
+> Para agregar un paquete de instalador para .NET Framework, vea [Guía de implementación de .NET Framework para desarrolladores](/dotnet/framework/deployment/deployment-guide-for-developers).
 
 ## <a name="Package"></a> Para agregar un paquete del instalador mediante Package.xml
 
@@ -31,13 +31,13 @@ Para poder distribuir el software necesario con una aplicación [!INCLUDE[ndptec
 
 3. En el Bloc de notas, abra el archivo *Package.xml*.
 
-4. Busque el **nombre** elemento que contiene **http://go.microsoft.com/fwlink**y copie la dirección URL. Incluya a la parte **LinkID**.
+4. Busque el **nombre** elemento que contiene **http://go.microsoft.com/fwlink** y copie la dirección URL. Incluya a la parte **LinkID**.
 
    > [!NOTE]
-   >  Si no hay ningún **nombre** contiene elemento **http://go.microsoft.com/fwlink**, abra el **Product.xml** de archivos en la carpeta raíz para el requisito previo y busque el **fwlink** cadena.
+   > Si no hay ningún **nombre** contiene elemento **http://go.microsoft.com/fwlink** , abra el **Product.xml** de archivos en la carpeta raíz para el requisito previo y busque el **fwlink** cadena.
 
    > [!IMPORTANT]
-   >  Algunos requisitos previos tienen varios paquetes de instalador (por ejemplo, para los sistemas de 32 o 64 bits). Si hay varios elementos **Name** que contienen **fwlink**, debe repetir los pasos restantes para cada uno de ellos.
+   > Algunos requisitos previos tienen varios paquetes de instalador (por ejemplo, para los sistemas de 32 o 64 bits). Si hay varios elementos **Name** que contienen **fwlink**, debe repetir los pasos restantes para cada uno de ellos.
 
 5. Pegue la dirección URL en la barra de direcciones del explorador y, después, cuando se le pregunte si desea ejecutar o guardar, elija **Guardar**.
 

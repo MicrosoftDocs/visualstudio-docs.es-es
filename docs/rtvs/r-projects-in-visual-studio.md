@@ -8,12 +8,12 @@ ms.author: kraigb
 manager: jillfra
 ms.workload:
 - data-science
-ms.openlocfilehash: c99d7d01009ef064056f0ca91688ad043880cffd
-ms.sourcegitcommit: d78821f8c353e0102b1554719f549f32dffac71b
+ms.openlocfilehash: bcdef95935c0522c8b93a972d7f44fbd7632c53b
+ms.sourcegitcommit: b02c40c1ba193e38b5ace14590a6d57590d3270f
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/27/2019
-ms.locfileid: "58515199"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71012619"
 ---
 # <a name="create-r-projects-in-visual-studio"></a>Crear proyectos de R en Visual Studio
 
@@ -37,7 +37,7 @@ Este comando crea un proyecto con un archivo *script.R* vacío abierto en el edi
 
 El archivo *rproject.rproj* mantiene determinadas opciones del proyecto específicas de R que, de lo contrario, no se administran en Visual Studio:
 
-| Propiedad. | Default | Descripción |
+| Propiedad. | Valor predeterminado | DESCRIPCIÓN |
 | --- | --- | --- |
 | Versión | 1.0 | La versión de Herramientas de R para Visual Studio usada para crear el proyecto. |
 | RestoreWorkspace | Default | Se cargan de forma automática las variables anteriores del área de trabajo desde el archivo `.RData` en el directorio del proyecto. |
@@ -48,7 +48,7 @@ El archivo *rproject.rproj* mantiene determinadas opciones del proyecto específ
 | NumSpacesForTab | 2 | El número de espacios que se insertan si UseSpacesForTab es Sí. |
 | Codificación | UTF-8 | La codificación predeterminada de los archivos `.R`. |
 | RnwWeave | Sweave | Paquete que se usará al entretejer un archivo Rnw. |
-| LaTeX | pdfLaTeX | Biblioteca que se usará al convertir RMarkdwon a PDF. |
+| LaTeX | pdfLaTeX | Biblioteca que se va a usar al convertir RMarkdown a PDF. |
 
 ### <a name="converting-a-folder-of-files-to-an-r-project"></a>Convertir una carpeta de archivos en un proyecto de R
 
@@ -61,23 +61,22 @@ Si dispone de una carpeta existente de archivos *.R* que quiera administrar en u
 
 ## <a name="project-properties"></a>Propiedades del proyecto
 
-Para abrir las páginas de propiedades del proyecto, haga clic con el botón derecho en el proyecto en el **Explorador de soluciones** y seleccione **Propiedades**, o bien seleccione el elemento de menú **Proyecto > Propiedades de (nombre del proyecto)**. La ventana que se abre muestra propiedades del proyecto:
+Para abrir las páginas de propiedades del proyecto, haga clic con el botón derecho en el proyecto en el **Explorador de soluciones** y seleccione **Propiedades**, o bien seleccione el elemento de menú **Proyecto > Propiedades de (nombre del proyecto)** . La ventana que se abre muestra propiedades del proyecto:
 
-
-| Tab | Propiedad. | Descripción |
+| Tab | Propiedad. | DESCRIPCIÓN |
 | --- | --- | --- |
 | Run | Archivo de inicio | El nombre del archivo que se ejecuta con el comando **Archivo de inicio de origen**, **F5**, **Depurar** > **Iniciar depuración** o **Depurar** > **Iniciar sin depurar**. También puede establecerlo como el archivo de inicio si hace clic con el botón derecho en el archivo del proyecto y selecciona **Establecer como script R de inicio**. |
 | | Reset R Interactive on Run (Restablecer R interactivo en ejecución) | Borra todas las variables del área de trabajo de la ventana interactiva al ejecutar el proyecto. Esto garantiza que no haya ningún contenido residual del área de trabajo de ejecuciones anteriores. |
 | | Remote Project Path (Ruta de acceso remota del proyecto) | Ruta de acceso a un área de trabajo remota. |
 | | Transfer files on run (Transferir archivos en ejecución) | Indica si los archivos del proyecto, sujetos al filtro en **Archivos que se transferirán**, deben copiarse en un área de trabajo remota con cada ejecución. |
 | | Files to transfer (Archivos que se transferirán) | Nombres de archivo y caracteres comodín que indican los archivos específicos que se copiarán en un área de trabajo remota si **Transferencia de archivos en ejecución** está seleccionada. |
-| Configuración | (Archivo Settings.R) | La configuración del proyecto de R procede de archivos *Settings.R* o **.Settings.R* que se encuentran dentro del proyecto. Si no hay ningún archivo de configuración, puede agregar variables, guardar la página y se creará un archivo *Settings.R* predeterminado. También puede agregar el archivo de configuración al proyecto mediante el comando de menú **Archivo** > **Agregar nuevo elemento**. <br/> La configuración se almacena como código de R y se puede especificar el origen del archivo antes de ejecutar otros módulos, rellenando previamente el entorno con la configuración predefinida. |
+| Configuración | (Archivo Settings.R) | La configuración del proyecto de R procede de archivos *Settings.R* o * *.Settings.R* que se encuentran dentro del proyecto. Si no hay ningún archivo de configuración, puede agregar variables, guardar la página y se creará un archivo *Settings.R* predeterminado. También puede agregar el archivo de configuración al proyecto mediante el comando de menú **Archivo** > **Agregar nuevo elemento**. <br/> La configuración se almacena como código de R y se puede especificar el origen del archivo antes de ejecutar otros módulos, rellenando previamente el entorno con la configuración predefinida. |
 
 ## <a name="r-specific-project-commands"></a>Comandos de proyecto específicos de R
 
 Los proyectos de Visual Studio admiten un número de comandos generales mediante el menú contextual y el menú **Proyecto**. Para obtener más información sobre estas capacidades generales, vea [Soluciones y proyectos en Visual Studio](../ide/solutions-and-projects-in-visual-studio.md). Pero recuerde que Herramientas de R para Visual Studio (RTVS) agrega un número de comandos propios al menú contextual de un proyecto de R y también archivos y carpetas en el proyecto.
 
-| Comando | Descripción |
+| Comando | DESCRIPCIÓN |
 | --- | --- |
 | Establecer el directorio de trabajo aquí | Establece el directorio de trabajo de la ventana de R interactivo en la carpeta del proyecto, que también se puede usar en cualquier subcarpeta dentro de un proyecto. |
 | Abrir carpeta Contenido | Abre el Explorador de Windows en la ubicación del archivo seleccionado. |
@@ -92,7 +91,7 @@ RTVS incluye una serie de plantillas para tipos de archivo específicos. Para ac
 > [!Note]
 > Los comandos **Agregar** > **Nuevo elemento** muestran también los tipos de archivos generales que no se enumeran en la tabla; con **Archivo** > **Nuevo** > **Archivo**, esos tipos están contenidos en su lugar en la pestaña **General**.
 
-| Tipo de archivo | Descripción |
+| Tipo de archivo | DESCRIPCIÓN |
 | --- | --- |
 | Script de R | Un archivo de texto que contiene los mismos comandos que se pueden escribir en la línea de comandos de R. |
 | R Markdown | Un archivo que contiene un documento de [R Markdown](rmarkdown-with-r-in-visual-studio.md). |
@@ -100,7 +99,7 @@ RTVS incluye una serie de plantillas para tipos de archivo específicos. Para ac
 | Documentación de R | Un archivo de documentación de R genérico que contiene solo el nombre, el alias y los campos de título. |
 | Documentación de R (función) | Un archivo de documentación de R que contiene varios campos con comentarios para describir una función. |
 | Documentación de R (conjunto de datos) | Un archivo de documentación de R que contiene varios campos con comentarios para describir un conjunto de datos. |
-| Consulta SQL | Y un archivo *.sql* vacío. Vea [Trabajar con SQL Server y R](integrating-sql-server-with-r.md). |
+| Consulta SQL | Un archivo *.sql* vacío. Vea [Trabajar con SQL Server y R](integrating-sql-server-with-r.md). |
 | Procedimiento almacenado con R | Archivo de R con un archivo de plantilla de procedimientos almacenados secundarios y consultas SQL secundarias. Vea [Trabajar con SQL Server y R](integrating-sql-server-with-r.md). |
 
 ## <a name="use-multiple-project-types-in-visual-studio"></a>Usar varios tipos de proyectos en Visual Studio

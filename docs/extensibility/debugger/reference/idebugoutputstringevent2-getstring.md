@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugOutputStringEvent2::GetString
 ms.assetid: f059f8e0-ad44-49ac-ba90-73576ada5e06
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d310df2e30a0c6e2b59bb561c2cfdcb8a7ac6254
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: c38b091a3a69752a31625d111cdc6725e806e7b1
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56718214"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66317163"
 ---
 # <a name="idebugoutputstringevent2getstring"></a>IDebugOutputStringEvent2::GetString
 Obtiene el mensaje que se puede mostrar.
@@ -36,10 +39,9 @@ int GetString( 
 );
 ```
 
-#### <a name="parameters"></a>Parámetros
- `pbstrString`
-
- [out] Devuelve el mensaje que se puede mostrar.
+## <a name="parameters"></a>Parámetros
+`pbstrString`\
+[out] Devuelve el mensaje que se puede mostrar.
 
 ## <a name="return-value"></a>Valor devuelto
  Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.

@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProperty2::SetValueAsString
 ms.assetid: 9e6a5054-41b7-4223-b509-b93689d366a5
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6acc3c0c0ec271793832783b2fb7eb9f2ff2309a
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 27b481165cf95a97d7674d52d8553426dfb6417c
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56686494"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66314603"
 ---
 # <a name="idebugproperty2setvalueasstring"></a>IDebugProperty2::SetValueAsString
 Establece el valor de una propiedad de una cadena determinada.
@@ -40,18 +43,15 @@ int SetValueAsString ( 
 );
 ```
 
-#### <a name="parameters"></a>Parámetros
- `pszValue`
+## <a name="parameters"></a>Parámetros
+`pszValue`\
+[in] Una cadena que contiene el valor debe establecerse.
 
- [in] Una cadena que contiene el valor debe establecerse.
+`nRadix`\
+[in] Una base de la que se usará en la interpretación de toda la información numérica. Esto puede ser 0 para intentar determinar automáticamente la base.
 
- `nRadix`
-
- [in] Una base de la que se usará en la interpretación de toda la información numérica. Esto puede ser 0 para intentar determinar automáticamente la base.
-
- `dwTimeout`
-
- [in] Especifica el tiempo máximo, en milisegundos para esperar antes de volver de este método. Use `INFINITE` para esperar indefinidamente.
+`dwTimeout`\
+[in] Especifica el tiempo máximo, en milisegundos para esperar antes de volver de este método. Use `INFINITE` para esperar indefinidamente.
 
 ## <a name="return-value"></a>Valor devuelto
  Si es correcto, devuelve `S_OK`; en caso contrario, devuelve el código de error. En la tabla siguiente se muestra otros posibles valores.

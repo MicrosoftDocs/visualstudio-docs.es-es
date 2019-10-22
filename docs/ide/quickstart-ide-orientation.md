@@ -8,18 +8,28 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e7c78ac8b3f6d25d601ae11bdcbb1aed4214cb8c
-ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
+ms.openlocfilehash: 4875d88f521917a038ae3d7257396c7db80a2a9c
+ms.sourcegitcommit: 44e9b1d9230fcbbd081ee81be9d4be8a485d8502
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58790906"
+ms.lasthandoff: 08/30/2019
+ms.locfileid: "70180104"
 ---
 # <a name="quickstart-first-look-at-the-visual-studio-ide"></a>Inicio rápido: Primer vistazo al IDE de Visual Studio
 
 En esta introducción al entorno de desarrollo integrado (IDE) de Visual Studio, de 5 a 10 minutos de duración, pasaremos por algunas de las ventanas, menús y otras funciones de la interfaz de usuario.
 
-Si todavía no ha instalado Visual Studio, vaya a la página de [descargas de Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017) para instalarlo de forma gratuita.
+::: moniker range="vs-2017"
+
+Si todavía no ha instalado Visual Studio, vaya a la página de [descargas de Visual Studio](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download) para instalarlo de forma gratuita.
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+Si todavía no ha instalado Visual Studio, vaya a la página de [descargas de Visual Studio](https://visualstudio.microsoft.com/downloads) para instalarlo de forma gratuita.
+
+::: moniker-end
 
 ::: moniker range="vs-2017"
 
@@ -41,7 +51,7 @@ Si cierra la **página de inicio** y quiere verla de nuevo, puede volver a abrir
 
 Lo primero que se ve al abrir Visual Studio es la ventana de inicio. La ventana de inicio está concebida para ayudar a "obtener código" más rápido. Tiene opciones para clonar o desproteger código, abrir una solución o un proyecto existente, crear un nuevo proyecto o simplemente abrir una carpeta que contiene algunos archivos de código.
 
-[![](media/vs-2019/start-window-labeled.png "Ventana de inicio de Visual Studio 2019")](media/vs-2019/start-window-labeled.png#lightbox)
+[![Ventana de inicio de Visual Studio 2019](media/vs-2019/start-window-labeled.png)](media/vs-2019/start-window-labeled.png#lightbox)
 
 Si es la primera vez que se usa Visual Studio, la lista de proyectos recientes está vacía.
 
@@ -61,7 +71,7 @@ Para seguir examinando las características de Visual Studio, se va a crear un n
 
    ![Búsqueda de plantillas de proyecto en la página de inicio de Visual Studio](media/start-page-search-templates.png)
 
-   Visual Studio proporciona varios tipos de plantillas de proyecto que ayudan a comenzar a codificar rápidamente. Elija una plantilla de proyecto **Console App (.NET Framework)** de C#. (Si es desarrollador de Visual Basic, C++, Javascript u otro lenguaje, también puede crear un proyecto en uno de esos lenguajes. La interfaz de usuario que se muestra es similar para todos los lenguajes de programación).
+   Visual Studio proporciona varios tipos de plantillas de proyecto que ayudan a comenzar a codificar rápidamente. Elija una plantilla del proyecto **Aplicación de consola (.NET Core)** en C#. (Si es desarrollador de Visual Basic, C++, Javascript u otro lenguaje, también puede crear un proyecto en uno de esos lenguajes. La interfaz de usuario que se muestra es similar para todos los lenguajes de programación).
 
 1. En el cuadro de diálogo **Nuevo proyecto** que aparece, acepte el nombre de proyecto predeterminado y haga clic en **Aceptar**.
 
@@ -77,13 +87,13 @@ Para seguir examinando las características de Visual Studio, se va a crear un n
 
    ![Cuadro de diálogo Nuevo proyecto de Visual Studio 2019](media/vs-2019/create-a-new-project.png)
 
-1. Si seleccionó C#, Visual Basic o F# como el lenguaje, seleccione la plantilla **Aplicación de consola (.NET Framework)** y haga clic en **Siguiente**. (Si seleccionó otro lenguaje, elija cualquier plantilla. La interfaz de usuario que se muestra es similar para todos los lenguajes de programación).
+1. Si seleccionó C#, Visual Basic o F# como lenguaje, seleccione la plantilla **Aplicación de consola (.NET Framework)** y, luego, elija **Siguiente**. (Si seleccionó otro lenguaje, elija cualquier plantilla. La interfaz de usuario que se muestra es similar para todos los lenguajes de programación).
 
 1. En la página **Configure su nuevo proyecto**, acepte el nombre y la ubicación predeterminados del proyecto y haga clic en **Crear**.
 
 ::: moniker-end
 
-   Se crea el proyecto y se abre un archivo denominado *Program.cs* en la ventana **Editor**. En el **Editor** se muestra el contenido de los archivos y es donde se va a realizar la mayor parte del trabajo de codificación en Visual Studio.
+   Se crea el proyecto y se abre un archivo denominado *Program.cs* en la ventana **Editor**. En el **Editor** se muestra el contenido de los archivos y es donde se va a realizar la mayor parte del trabajo de codificación en Visual Studio.
 
    ![Editor en Visual Studio](media/editor.png)
 

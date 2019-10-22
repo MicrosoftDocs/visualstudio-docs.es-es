@@ -11,13 +11,13 @@ caps.latest.revision: 19
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 3f045175eae165b75a887ada2716b19f34fc228b
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60088956"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68204078"
 ---
-# <a name="how-to-suppress-file-change-notifications"></a>Procedimiento Suprimir notificaciones de cambio de archivo
+# <a name="how-to-suppress-file-change-notifications"></a>Procedimiento Supresión de las notificaciones de cambios de archivos
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Cuando se ha cambiado el archivo físico que representa el búfer de texto, muestra un cuadro de diálogo con el mensaje **¿desea guardar los cambios en los siguientes elementos?** Esto se conoce como notificación de cambio de archivo. Si muchos cambios se van a estar en el archivo, sin embargo, este cuadro de diálogo muestra una y otra vez puede volverse rápidamente molesto.  

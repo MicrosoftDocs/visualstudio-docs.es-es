@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IPropertyProxyEESide::CreateReplacementObject
 ms.assetid: 0cfe79b8-c3f1-48b0-a225-e39dee2c92fe
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 03bfeeb30fad4f332a3a747dcf8468c4fb39ef56
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 5621a3f32d68374339df9a6987033e5fef5e44dd
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56704207"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66329586"
 ---
 # <a name="ipropertyproxyeesidecreatereplacementobject"></a>IPropertyProxyEESide::CreateReplacementObject
 Crea una copia de un objeto de datos específicos del evaluador de expresiones (EE).
@@ -38,14 +41,12 @@ int CreateReplacementObject(
 );
 ```
 
-#### <a name="parameters"></a>Parámetros
- `dataIn`
+## <a name="parameters"></a>Parámetros
+`dataIn`\
+[in] Un [IEEDataStorage](../../../extensibility/debugger/reference/ieedatastorage.md) objeto contiene los datos que se va a copiar.
 
- [in] Un [IEEDataStorage](../../../extensibility/debugger/reference/ieedatastorage.md) objeto contiene los datos que se va a copiar.
-
- `dataOut`
-
- [out] Devuelve un nuevo `IEEDataStorage` objeto.
+`dataOut`\
+[out] Devuelve un nuevo `IEEDataStorage` objeto.
 
 ## <a name="return-value"></a>Valor devuelto
  Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.

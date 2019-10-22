@@ -12,12 +12,12 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 823b853363e3044383da4673d7e88a96d9e5ea6a
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: d96330c01ab340d4db67694f358717a2dae0bce3
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59664341"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63439372"
 ---
 # <a name="msbuild-batching"></a>Procesamiento por lotes de MSBuild
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,7 +30,7 @@ ms.locfileid: "59664341"
  Para especificar que quiere que [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] realice el procesamiento por lotes en una tarea, debe utilizar la notación %(*ItemMetaDataName*) en uno de los atributos de la tarea. En el ejemplo siguiente, la lista de elementos `Example` se divide en lotes de acuerdo con el valor de los metadatos del elemento `Color` y pasa cada uno de los lotes a la tarea `MyTask` por separado.  
   
 > [!NOTE]
->  Si no hace referencia a la lista de elementos en ninguna otra parte de los atributos de la tarea, o si el nombre de los metadatos puede ser ambiguo, puede usar la notación %(*ItemCollection.ItemMetaDataName*) para calificar totalmente el valor de los metadatos del elemento que se utilizará para el procesamiento por lotes.  
+> Si no hace referencia a la lista de elementos en ninguna otra parte de los atributos de la tarea, o si el nombre de los metadatos puede ser ambiguo, puede usar la notación %(*ItemCollection.ItemMetaDataName*) para calificar totalmente el valor de los metadatos del elemento que se utilizará para el procesamiento por lotes.  
   
 ```  
 <Project  

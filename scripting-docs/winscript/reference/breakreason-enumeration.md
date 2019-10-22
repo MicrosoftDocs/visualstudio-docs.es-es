@@ -1,5 +1,5 @@
 ---
-title: BREAKREASON (enumeración) | Documentos de Microsoft
+title: Enumeración BREAKREASON (| Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,12 +17,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 939d9f36c9838f02e58bc433d1a7bb9bef43c28d
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 6f656bdf4e3bc85a014ff8d3011708799aa44bcd
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58160594"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72572628"
 ---
 # <a name="breakreason-enumeration"></a>Enumeración BREAKREASON
 Indica qué produjo la interrupción.  
@@ -46,14 +46,14 @@ typedef enum tagBREAKREASON {
   
 |Miembro|Descripción|  
 |------------|-----------------|  
-|BREAKREASON_STEP|El motor de lenguaje está en el modo de ejecución paso a paso.|  
-|BREAKREASON_BREAKPOINT|El motor de lenguaje detectó un punto de interrupción explícito.|  
-|BREAKREASON_DEBUGGER_BLOCK|El motor de lenguaje detectó un bloque de depurador en otro subproceso.|  
-|BREAKREASON_HOST_INITIATED|El host solicita un salto.|  
-|BREAKREASON_LANGUAGE_INITIATED|El motor de lenguaje había solicitado un salto.|  
-|BREAKREASON_DEBUGGER_HALT|El IDE del depurador solicita un salto.|  
-|BREAKREASON_ERROR|Un error de ejecución había producido la interrupción.|  
-|BREAKREASON_JIT|Causados por el inicio de depuración JIT.|  
+|BREAKREASON_STEP|El motor de lenguaje está en modo de ejecución paso a paso.|  
+|BREAKREASON_BREAKPOINT|El motor de lenguaje ha encontrado un punto de interrupción explícito.|  
+|BREAKREASON_DEBUGGER_BLOCK|El motor de lenguaje encontró un bloque del depurador en otro subproceso.|  
+|BREAKREASON_HOST_INITIATED|El host solicitó una interrupción.|  
+|BREAKREASON_LANGUAGE_INITIATED|El motor de lenguaje solicitó una interrupción.|  
+|BREAKREASON_DEBUGGER_HALT|El IDE del depurador solicitó una interrupción.|  
+|BREAKREASON_ERROR|Un error de ejecución provocó la interrupción.|  
+|BREAKREASON_JIT|Provocado por el inicio de la depuración JIT.|  
   
 ## <a name="see-also"></a>Vea también  
  [Active Script Debugger (Constantes, Enumeraciones y Estructuras)](../../winscript/reference/active-script-debugger-constants-enumerations-and-structures.md)

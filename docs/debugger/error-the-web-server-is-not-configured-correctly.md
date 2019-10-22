@@ -1,5 +1,5 @@
 ---
-title: 'Error: El servidor web no está configurado correctamente | Microsoft Docs'
+title: 'Error: El servidor web no está configurado correctamente | Documentos de Microsoft'
 ms.date: 09/20/2017
 ms.topic: troubleshooting
 f1_keywords:
@@ -17,11 +17,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: fc0c61b766b6f93fd1321b15861000d7c628f124
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56711610"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62850402"
 ---
 # <a name="error-the-web-server-is-not-configured-correctly"></a>Error: El servidor Web no está configurado correctamente
 

@@ -6,17 +6,20 @@ helpviewer_keywords:
 - GetAddressesInModuleFromPosition
 - IDebugComPlusSymbolProvider::GetAddressesInModuleFromPosition
 ms.assetid: f901c66e-f53c-4ea0-8004-d8fcbf46f916
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 153f891e9ab5497f90eeefc02191f9227c0108c6
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 3000b93a9ce7f3ba56325943d48c5ac686ddde38
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56723674"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66338709"
 ---
 # <a name="idebugcomplussymbolprovidergetaddressesinmodulefromposition"></a>IDebugComPlusSymbolProvider::GetAddressesInModuleFromPosition
 Asigna una posición de documento en el módulo especificado en una matriz de direcciones de depuración.
@@ -45,30 +48,24 @@ int GetAddressesInModuleFromPosition(
 );
 ```
 
-#### <a name="parameters"></a>Parámetros
- `ulAppDomainID`
+## <a name="parameters"></a>Parámetros
+`ulAppDomainID`\
+[in] Identificador de dominio de aplicación.
 
- [in] Identificador de dominio de aplicación.
+`guidModule`\
+[in] Identificador único del módulo.
 
- `guidModule`
+`pDocPos`\
+[in] La posición del documento.
 
- [in] Identificador único del módulo.
+`fStatmentOnly`\
+[in] Si `TRUE`, limita las direcciones de depuración para una sola instrucción.
 
- `pDocPos`
+`ppEnumBegAddresses`\
+[out] Devuelve un enumerador para las direcciones iniciales de depuración que están asociadas con esta instrucción o línea.
 
- [in] La posición del documento.
-
- `fStatmentOnly`
-
- [in] Si `TRUE`, limita las direcciones de depuración para una sola instrucción.
-
- `ppEnumBegAddresses`
-
- [out] Devuelve un enumerador para las direcciones iniciales de depuración que están asociadas con esta instrucción o línea.
-
- `ppEnumEndAddresses`
-
- [out] Devuelve un enumerador para las direcciones de depuración final que están asociadas con esta instrucción o línea.
+`ppEnumEndAddresses`\
+[out] Devuelve un enumerador para las direcciones de depuración final que están asociadas con esta instrucción o línea.
 
 ## <a name="return-value"></a>Valor devuelto
  Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.

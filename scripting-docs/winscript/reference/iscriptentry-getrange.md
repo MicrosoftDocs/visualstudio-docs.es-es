@@ -1,5 +1,5 @@
 ---
-title: IScriptEntry::GetRange | Microsoft Docs
+title: 'Iscriptentry (:: GetRange | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 7baa284be4fa7f45f247df7f4b3d140869f254b1
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 0a6e1b1600c93aa05bbe9669fb57a23a8c9344a1
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58151874"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72575430"
 ---
 # <a name="iscriptentrygetrange"></a>IScriptEntry::GetRange
-Devuelve la posición inicial y longitud de una entrada.  
+Devuelve la posición inicial y la longitud de una entrada.  
   
 ## <a name="syntax"></a>Sintaxis  
   
@@ -38,21 +38,21 @@ HRESULT GetRange(
   
 #### <a name="parameters"></a>Parámetros  
  `pichMin`  
- [out] Para `IScriptEntry` objetos que especifican un bloque de script, devuelve 0.  
+ enuncia Para `IScriptEntry` objetos que especifican un bloque de script, devuelve 0.  
   
- Para `IScriptEntry` objetos que especifican un objeto de función devuelve la posición inicial de la función en el bloque de script actual.  
+ Para `IScriptEntry` objetos que especifican un objeto de función, devuelve la posición inicial de la función en el bloque de script actual.  
   
- Para `IScriptScriptlet` los objetos, devuelve 0.  
+ Para los objetos `IScriptScriptlet`, devuelve 0.  
   
  `pcch`  
- [out] Para `IScriptEntry` objetos que especifican un bloque de script, se devuelve la longitud del texto.  
+ enuncia Para `IScriptEntry` objetos que especifican un bloque de script, devuelve la longitud del texto.  
   
- Para `IScriptEntry` objetos que especifican un objeto de función devuelve la longitud de la definición de función.  
+ Para `IScriptEntry` objetos que especifican un objeto de función, devuelve la longitud de la definición de función.  
   
- Para `IScriptScriptlet` los objetos, devuelve la longitud de la entrada.  
+ Para los objetos `IScriptScriptlet`, devuelve la longitud de la entrada.  
   
 ## <a name="return-value"></a>Valor devuelto  
- Una clase `HRESULT`. Entre los valores posibles se incluyen los que se indican en la tabla siguiente, entre otros.  
+ Interfaz `HRESULT`. Entre los valores posibles se incluyen los que se indican en la tabla siguiente, entre otros.  
   
 |Valor|Descripción|  
 |-----------|-----------------|  

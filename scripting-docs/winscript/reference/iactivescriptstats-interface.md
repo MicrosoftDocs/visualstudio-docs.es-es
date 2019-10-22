@@ -14,11 +14,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: e7a0e1e616fdee2dac58c8a5a1d24ed120b28bc2
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58152566"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62991974"
 ---
 # <a name="iactivescriptstats-interface"></a>IActiveScriptStats (Interfaz)
 Permite a un host consultar las estadísticas de un script en ejecución. El host puede utilizar esta información para determinar si script tardó demasiado tiempo en completarse.  

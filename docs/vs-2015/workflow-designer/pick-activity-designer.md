@@ -11,12 +11,12 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 7de5d9189906d72c96372acb1a361d315f973df6
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 15320289c3f668f2bc0a84d9653110d02536a32e
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58998717"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65694498"
 ---
 # <a name="pick-activity-designer"></a>Diseñador de actividades Pick
 La actividad <xref:System.Activities.Statements.Pick> proporciona un flujo de control basado en eventos. La actividad ejecuta una de las diversas bifurcaciones en respuesta a un evento desencadenador.  
@@ -40,5 +40,5 @@ La actividad <xref:System.Activities.Statements.Pick> proporciona un flujo de co
   
 ## <a name="see-also"></a>Vea también  
  [Flujo de control](../workflow-designer/control-flow-activity-designers.md)   
- [Actividad Pick](http://msdn.microsoft.com/library/b3e49b7f-0285-4720-8c09-11ae18f0d53e)   
- [Uso de la actividad Pick](http://msdn.microsoft.com/library/b89be812-a247-4025-b0e3-ffb20db027a6)
+ [Actividad Pick](https://msdn.microsoft.com/library/b3e49b7f-0285-4720-8c09-11ae18f0d53e)   
+ [Uso de la actividad Pick](https://msdn.microsoft.com/library/b89be812-a247-4025-b0e3-ffb20db027a6)

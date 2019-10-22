@@ -1,5 +1,5 @@
 ---
-title: 'CA1063: Implemente IDisposable correctamente | Documentos de Microsoft'
+title: 'CA1063: implemente IDisposable correctamente | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -12,76 +12,76 @@ helpviewer_keywords:
 - ImplementIDisposableCorrectly
 ms.assetid: 12afb1ea-3a17-4a3f-a1f0-fcdb853e2359
 caps.latest.revision: 19
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 822ad7bea622400bfabd5a96a42d81ed4eabf0c4
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 1fe2982ab9e1b3951583b268eadb44c97c8e4805
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60081403"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72663631"
 ---
-# <a name="ca1063-implement-idisposable-correctly"></a>CA1063: Implementar IDisposable correctamente
+# <a name="ca1063-implement-idisposable-correctly"></a>CA1063: Implemente IDisposable correctamente
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
 |-|-|
 |TypeName|ImplementIDisposableCorrectly|
 |Identificador de comprobación|CA1063|
-|Categoría|Microsoft.Design|
+|Categoría|Microsoft. Design|
 |Cambio problemático|Poco problemático|
 
 ## <a name="cause"></a>Motivo
- `IDisposable` no se implementa correctamente. Algunas de las razones para este problema son las siguientes:
+ `IDisposable` no se ha implementado correctamente. A continuación se enumeran algunas de las razones para este problema:
 
-- IDisposable se implementa de nuevo en la clase.
+- IDisposable se vuelve a implementar en la clase.
 
-- Finalizar se vuelve a reemplazar.
+- Finalize se vuelve a reemplazar.
 
-- Se invalida a Dispose.
+- Dispose se invalida.
 
-- Dispose() no es público, sellado o denominado Dispose.
+- Dispose () no es público, sellado o Dispose con nombre.
 
-- Dispose (bool) no está protegido, virtual o sin sellar.
+- Dispose (bool) no está protegido, virtual o no sellado.
 
-- En tipos no sellados, Dispose() debe llamar a Dispose (true).
+- En los tipos no sellados, Dispose () debe llamar a Dispose (true).
 
-- Para tipos no sellados, la implementación Finalize no llama a uno o ambos Dispose (bool) o el finalizador de la clase de caso.
+- En el caso de los tipos no sellados, la implementación de finalización no llama a ni a Dispose (bool) o al finalizador de la clase Case.
 
-  Infracción de cualquiera de estos patrones desencadenará esta advertencia.
+  Una infracción de cualquiera de estos patrones desencadenará esta advertencia.
 
-  Cada tipo IDisposable de raíz no sellada debe proporcionar su propio método Dispose (bool) void virtual protegido. Dispose() debe llamar a Dispose (true) y Finalize debe llamar a Dispose (false). Si va a crear un tipo IDisposable de raíz no sellada, debe definir Dispose (bool) y llamarlo. Para obtener más información, consulte [limpiar recursos no administrados](http://msdn.microsoft.com/library/a17b0066-71c2-4ba4-9822-8e19332fc213) en el [instrucciones de diseño de Framework](http://msdn.microsoft.com/library/5fbcaf4f-ea2a-4d20-b0d6-e61dee202b4b) sección de la documentación de .NET Framework.
+  Cada tipo IDisposable de raíz no sellado debe proporcionar su propio método protegido virtual void Dispose (bool). Dispose () debe llamar a Dispose (true) y Finalize debe llamar a Dispose (false). Si va a crear un tipo IDisposable raíz no sellado, debe definir Dispose (bool) y llamarlo. Para obtener más información, vea [limpiar recursos no administrados](https://msdn.microsoft.com/library/a17b0066-71c2-4ba4-9822-8e19332fc213) en la sección [directrices de diseño del marco](https://msdn.microsoft.com/library/5fbcaf4f-ea2a-4d20-b0d6-e61dee202b4b) de la documentación de .NET Framework.
 
 ## <a name="rule-description"></a>Descripción de la regla
  Todos los tipos IDisposable deben implementar el modelo de Dispose correctamente.
 
 ## <a name="how-to-fix-violations"></a>Cómo corregir infracciones
- Examine el código y determinar cuál de las siguientes resoluciones corregirá esta infracción.
+ Examine el código y Determine cuál de las siguientes soluciones corregirá esta infracción.
 
-- Quite IDisposable de la lista de interfaces implementadas por {0} e invalidar la implementación de Dispose de clase base en su lugar.
+- Quite IDisposable de la lista de interfaces implementadas por {0} e invalide la implementación de Dispose de clase base en su lugar.
 
-- Quite el finalizador del tipo {0}, invalide Dispose (bool disposing) y coloque la lógica de finalización en la ruta de acceso del código donde 'disposing' es false.
+- Quite el finalizador del tipo {0}, invalide Dispose (bool disposing) y coloque la lógica de finalización en la ruta de acceso del código donde "disposing" es false.
 
-- Quitar {0}, invalide Dispose (bool disposing) y coloque la lógica de dispose en la ruta de acceso del código donde 'disposing' es true.
+- Quite {0}, invalide Dispose (bool disposing) y coloque la lógica de Dispose en la ruta de código donde ' disposing ' es true.
 
-- Asegúrese de que {0} está declarado como público y sellado.
+- Asegúrese de que {0} se declara como Public y Sealed.
 
-- Cambiar el nombre {0} a 'Dispose' y asegúrese de que se declara como public y sealed.
+- Cambie el nombre de {0} a ' Dispose ' y asegúrese de que se declara como público y sellado.
 
-- Asegúrese de que {0} se declaró como protegido, virtual y no sellados.
+- Asegúrese de que {0} se declara como protegido, virtual y sin sellar.
 
-- Modificar {0} para que llame a Dispose (true), a continuación, llama a GC. SuppressFinalize en la instancia del objeto actual ('this' o 'Me' en [!INCLUDE[vbprvb](../includes/vbprvb-md.md)]) y, a continuación, se devuelve.
+- Modifique {0} para que llame a Dispose (true) y, a continuación, llame a GC. SuppressFinalize en la instancia de objeto actual (' this ' o ' me ' en [!INCLUDE[vbprvb](../includes/vbprvb-md.md)]) y, a continuación, devuelve.
 
-- Modificar {0} para que se llama a Dispose (false) y, a continuación, se devuelve.
+- Modifique {0} para que llame a Dispose (false) y, a continuación, devuelva.
 
-- Si está escribiendo una clase IDisposable de raíz no sellada, asegúrese de que la implementación de IDisposable sigue el patrón descrito anteriormente en esta sección.
+- Si está escribiendo una clase IDisposable raíz no sellada, asegúrese de que la implementación de IDisposable siga el patrón descrito anteriormente en esta sección.
 
 ## <a name="when-to-suppress-warnings"></a>Cuándo suprimir advertencias
  No suprima las advertencias de esta regla.
 
 ## <a name="pseudo-code-example"></a>Ejemplo de pseudocódigo
- El pseudocódigo siguiente proporciona un ejemplo general de cómo se debe implementar Dispose (bool) en una clase que utiliza managed y recursos nativos.
+ El siguiente pseudocódigo proporciona un ejemplo general de cómo se debe implementar Dispose (bool) en una clase que use recursos administrados y nativos.
 
 ```
 public class Resource : IDisposable

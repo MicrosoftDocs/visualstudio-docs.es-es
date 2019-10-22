@@ -17,65 +17,62 @@ helpviewer_keywords:
 - toolbar [Help Viewer 2.0]
 ms.assetid: 74e41666-2ce8-4ac0-a0e5-3723d1e322c2
 caps.latest.revision: 27
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 8572deb32ea5fab2ce8ad831deeaba783496cbc5
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 14bae318e052d0c1eb0e23638c0ad78b70e62f7d
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60104335"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72670407"
 ---
 # <a name="microsoft-help-viewer"></a>Visor de Ayuda de Microsoft
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Puede instalar y ver el contenido de distintos productos y tecnologías en el equipo local usando el Visor de Ayuda de Microsoft.  
-  
+Puede instalar y ver el contenido de distintos productos y tecnologías en el equipo local usando el Visor de Ayuda de Microsoft.
+
 > [!WARNING]
->  Cuando se instala Visual Studio, obtiene el Visor de Ayuda. Para empezar a leer temas de ayuda en el Visor de ayuda, en lugar de en el sitio de descarga MSDN, vaya a la **ayuda** menú en Visual Studio, seleccione **establecer preferencias de la Ayuda**y, a continuación, seleccione **iniciar en la Ayuda Visor de**. Los temas de ayuda sin conexión para una determinada versión de Visual Studio solo están disponibles tras el lanzamiento final de esa versión.  
-  
- Puede realizar lo siguiente:  
-  
-- Buscar y descargar conjuntos de contenido, que también se conocen como libros.  
-  
-- Examinar y buscar en la tabla de contenido para buscar temas por título.  
-  
-- Buscar temas en el índice.  
-  
-- Buscar información mediante la búsqueda de texto completo.  
-  
-- Ver, marcador e imprimir temas.  
-  
-## <a name="navigating-the-help-viewer"></a>Navegar por el Visor de Ayuda  
- Puede buscar información en el contenido instalado mediante las pestañas de navegación, ver contenido instalado en la pestaña o pestañas de tema y administrar contenido mediante el uso de la pestaña **Administrar contenido**. También puede realizar tareas adicionales mediante los botones en la barra de herramientas y encontrar información adicional en la esquina inferior derecha de la ventana.  
-  
-|||  
-|-|-|  
-|Navegación|Mediante el uso de la pestaña **Contenido**, puede mostrar contenido instalado como una jerarquía y especificar criterios para filtrar los títulos que aparecen.<br /><br /> Mediante el uso de la pestaña **Buscar**, puede buscar términos en cualquier lugar del contenido, incluidos los títulos de tema y el código.<br /><br /> Mediante el uso de la pestaña **Índice**, puede buscar en el índice, especificar criterios para filtrar las entradas y requerir que las entradas contengan o empiecen con el texto que se especifica.<br /><br /> Mediante el uso de la pestaña **Favoritos**, puede guardar vínculos a temas que se usan con frecuencia y puede mostrar una lista de temas que haya visto recientemente.|  
-|Visualización de temas|Cada tema aparece en una pestaña y puede abrir varios temas a la vez.|  
-|Administrar contenido|Puede instalar, actualizar, mover y eliminar contenido mediante la pestaña **Administrar contenido**. En la parte superior de la pestaña, puede usar el control **Origen de instalación** para especificar si quiere instalar los libros desde una ubicación de red o desde un disco o URI. El cuadro **Ruta de acceso del almacén local** muestra donde se instalarán los libros en el equipo local y puede moverlos a una ubicación diferente con el botón **Mover**.<br /><br /> La lista de contenido muestra qué libros puede instalar o ya instaló, si hay disponible alguna actualización y el tamaño de cada libro. Puede instalar o quitar uno o más libros pulsando los vínculos **Agregar** o **Quitar** y, después, seleccionando el botón **Actualizar** en el panel **Cambios pendientes**. Si hay actualizaciones disponibles para los libros que ya instaló, puede actualizar ese contenido seleccionando el vínculo **Haga clic aquí para descargar ahora** en la parte inferior de la ventana. Además, todos los libros instalados se actualizarán si hay actualizaciones disponibles cuando se instalen libros adicionales. **Nota:**  La funcionalidad de la pestaña **Administrar contenido** puede diferir si el administrador del Visor de Ayuda desactiva estas características o si no tiene acceso a Internet.|  
-  
- La barra de herramientas de la ventana del Visor de Ayuda contiene los siguientes botones:  
-  
-- El botón **Mostrar tema en contenido** muestra la ubicación del tema en la pestaña **Contenido**.  
-  
-- El botón **Agregar a favoritos** agrega el tema activo a la pestaña **Favoritos**.  
-  
-- El botón **Buscar en tema** resalta el texto de búsqueda en el tema activo.  
-  
-- El botón **Imprimir** imprime o muestra una vista previa del tema activo.  
-  
-- El botón **Opciones del Visor** muestra la configuración como la del tamaño de texto, cuántos resultados de búsqueda se devuelven, cuántos temas se muestran en el historial y si se debe comprobar si hay actualizaciones en línea.  
-  
-- El botón **Administrar contenido** activa la pestaña **Administrar contenido**.  
-  
-- El pequeño triángulo abre una lista de pestañas, incluidas las del tema y la correspondiente a **Administrar contenido**. Puede activar cualquiera de esas pestañas seleccionándola.  
-  
-  El área inferior de la ventana del Visor de Ayuda tiene información sobre el tamaño total de descargas pendientes, la cantidad de espacio en disco que necesitan y la cantidad de espacio en disco disponible. Esta área también contiene información sobre los errores que puedan producirse y un vínculo que puede elegir para actualizar el contenido instalado, si hay actualizaciones disponibles.  
-  
-## <a name="see-also"></a>Vea también  
- [Guía del administrador del Visor de Ayuda](../ide/help-viewer-administrator-guide.md)   
- [Instalar y administrar el contenido local](../ide/install-and-manage-local-content.md)   
- [Encontrar información](../ide/locate-information.md)   
- [Solución de problemas del Visor de Ayuda](../ide/troubleshooting-the-help-viewer.md)
+> Cuando se instala Visual Studio, obtiene el Visor de Ayuda. Para empezar a leer temas de ayuda en el visor de ayuda en lugar de en el sitio de descarga de MSDN, vaya al menú **ayuda** de Visual Studio, seleccione **establecer preferencias**de la ayuda y, a continuación, seleccione **iniciar en el visor de ayuda**. Los temas de ayuda sin conexión para una determinada versión de Visual Studio solo están disponibles tras el lanzamiento final de esa versión.
+
+ Puede realizar lo siguiente:
+
+- Buscar y descargar conjuntos de contenido, que también se conocen como libros.
+
+- Examinar y buscar en la tabla de contenido para buscar temas por título.
+
+- Buscar temas en el índice.
+
+- Buscar información mediante la búsqueda de texto completo.
+
+- Ver, marcador e imprimir temas.
+
+## <a name="navigating-the-help-viewer"></a>Navegar por el Visor de Ayuda
+ Puede encontrar información en el contenido instalado mediante las pestañas de navegación, ver contenido instalado en la pestaña o pestañas de tema y administrar contenido mediante la pestaña **administrar contenido** . También puede realizar tareas adicionales mediante los botones de la barra de herramientas y buscar información adicional en la esquina inferior derecha de la ventana.
+
+|||
+|-|-|
+|Navegación|Mediante el uso de la pestaña **Contenido**, puede mostrar contenido instalado como una jerarquía y especificar criterios para filtrar los títulos que aparecen.<br /><br /> Mediante el uso de la pestaña **Buscar**, puede buscar términos en cualquier lugar del contenido, incluidos los títulos de tema y el código.<br /><br /> Mediante el uso de la pestaña **Índice**, puede buscar en el índice, especificar criterios para filtrar las entradas y requerir que las entradas contengan o empiecen con el texto que se especifica.<br /><br /> Mediante el uso de la pestaña **Favoritos**, puede guardar vínculos a temas que se usan con frecuencia y puede mostrar una lista de temas que haya visto recientemente.|
+|Visualización de temas|Cada tema aparece en una pestaña y puede abrir varios temas a la vez.|
+|Administrar contenido|Puede instalar, actualizar, cambiar y eliminar contenido mediante la pestaña **administrar contenido** . En la parte superior de la pestaña, puede usar el control **origen de instalación** para especificar si desea instalar los libros desde una ubicación de red o desde un disco o URI. El cuadro **Ruta de acceso del almacén local** muestra donde se instalarán los libros en el equipo local y puede moverlos a una ubicación diferente con el botón **Mover**.<br /><br /> La lista de contenido muestra qué libros puede instalar o ya instaló, si hay disponible alguna actualización y el tamaño de cada libro. Puede instalar o quitar uno o más libros pulsando los vínculos **Agregar** o **Quitar** y, después, seleccionando el botón **Actualizar** en el panel **Cambios pendientes**. Si hay actualizaciones disponibles para los libros que ya instaló, puede actualizar ese contenido seleccionando el vínculo **Haga clic aquí para descargar ahora** en la parte inferior de la ventana. Además, todos los libros instalados se actualizarán si hay actualizaciones disponibles cuando se instalen libros adicionales. **Nota:** La función de la pestaña **Administrar contenido** puede diferir dependiendo de si el administrador del Visor de Ayuda desactiva estas características o si no tiene acceso a Internet.|
+
+ La barra de herramientas de la ventana del Visor de Ayuda contiene los siguientes botones:
+
+- El botón **Mostrar tema en contenido** muestra la ubicación del tema en la pestaña **Contenido**.
+
+- El botón **Agregar a favoritos** agrega el tema activo a la pestaña **Favoritos**.
+
+- El botón **Buscar en tema** resalta el texto de búsqueda en el tema activo.
+
+- El botón **Imprimir** imprime o muestra una vista previa del tema activo.
+
+- El botón **Opciones del Visor** muestra la configuración como la del tamaño de texto, cuántos resultados de búsqueda se devuelven, cuántos temas se muestran en el historial y si se debe comprobar si hay actualizaciones en línea.
+
+- El botón **Administrar contenido** activa la pestaña **Administrar contenido**.
+
+- El triángulo pequeño abre una lista de pestañas, incluidas las pestañas de tema y la pestaña **administrar contenido** . Puede activar cualquiera de esas pestañas seleccionándola.
+
+  El área inferior de la ventana del Visor de Ayuda tiene información sobre el tamaño total de descargas pendientes, la cantidad de espacio en disco que necesitan y la cantidad de espacio en disco disponible. Esta área también contiene información sobre los errores que puedan producirse y un vínculo que puede elegir para actualizar el contenido instalado, si hay actualizaciones disponibles.
+
+## <a name="see-also"></a>Vea también
+ [Guía del administrador del visor](../ide/help-viewer-administrator-guide.md) [de ayuda instalar y administrar el contenido local](../ide/install-and-manage-local-content.md) [localizar información](../ide/locate-information.md) [solución de problemas del visor de ayuda](../ide/troubleshooting-the-help-viewer.md)

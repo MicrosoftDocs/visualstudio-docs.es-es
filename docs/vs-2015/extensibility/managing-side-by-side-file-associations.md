@@ -11,11 +11,11 @@ caps.latest.revision: 18
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: b8ca68aec180c51a170fd6ecce58237a5b306705
-ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/27/2019
-ms.locfileid: "59002309"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68194396"
 ---
 # <a name="managing-side-by-side-file-associations"></a>Administración de asociaciones de archivos en paralelo
 
@@ -53,7 +53,7 @@ Si desea que varios VSPackages en paralelo para usar la misma extensión, debe e
 
   **Filas de tabla CustomAction que determinan la versión más reciente de Visual Studio**
 
-  |Acción|Tipo|Origen|Destino|
+  |.|Type|source|Destino|
   |------------|----------|------------|------------|
   |CA_SetDevenvLatest_2002|51|DEVENV_EXE_LATEST|[DEVENV_EXE_2002]|
   |CA_SetDevenvLatest_2003|51|DEVENV_EXE_LATEST|[DEVENV_EXE_2003]|
@@ -61,7 +61,7 @@ Si desea que varios VSPackages en paralelo para usar la misma extensión, debe e
 
   **Filas de tabla InstallExecuteSequence que determinan la versión más reciente de Visual Studio**
 
-  |Acción|Condición|Secuencia|
+  |.|Condición|Secuencia|
   |------------|---------------|--------------|
   |CA_SetDevenvLatest_2002|DEVENV_EXE_2002 Y NO (DEVENV_EXE_2003 O DEVENV_EXE_2005)|410|
   |CA_SetDevenvLatest_2003|DEVENV_EXE_2003 Y NO DEVENV_EXE_2005|420|

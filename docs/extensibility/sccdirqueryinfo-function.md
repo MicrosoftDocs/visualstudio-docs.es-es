@@ -7,17 +7,17 @@ f1_keywords:
 helpviewer_keywords:
 - SccDirQueryInfo function
 ms.assetid: 459e2d99-573d-47c4-b834-6d82c5e14162
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: cc42301901c6642a54dcb6b84de52a4acc198b4a
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: e19b65ea4b3c4cd87b1f9d6a3db9e6f8ae64d16d
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56720424"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66332242"
 ---
 # <a name="sccdirqueryinfo-function"></a>SccDirQueryInfo (función)
 Esta función examina una lista de directorios completos para su estado actual.
@@ -66,7 +66,7 @@ LPLONG  lpStatus
  El IDE usa esta función antes de que se cambia el nombre de un directorio para comprobar si el directorio está bajo control de código fuente mediante una consulta si tiene un proyecto correspondiente. Si el directorio no está bajo control de código fuente, el IDE puede proporcionar la advertencia adecuada al usuario.
 
 > [!NOTE]
->  Si elige no implementar uno o varios de los valores de estado un complemento de control de código fuente, bits no está implementadas deben establecerse en cero.
+> Si elige no implementar uno o varios de los valores de estado un complemento de control de código fuente, bits no está implementadas deben establecerse en cero.
 
 ## <a name="see-also"></a>Vea también
 - [Funciones de API de complemento de control de código fuente](../extensibility/source-control-plug-in-api-functions.md)

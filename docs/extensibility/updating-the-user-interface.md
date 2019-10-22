@@ -6,17 +6,17 @@ helpviewer_keywords:
 - user interfaces, updating
 - commands, updating UI
 ms.assetid: 376e2f56-e7bf-4e62-89f5-3dada84a404b
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d3745cd73e09031b747b6bd17973abb97196ce46
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 2cec2e3a1049f59fa585e4f3a7b0bd608740ccfa
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60105167"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66316345"
 ---
 # <a name="updating-the-user-interface"></a>Actualización de la interfaz de usuario
 Después de implementar un comando, puede agregar código para actualizar la interfaz de usuario con el estado de los nuevos comandos.

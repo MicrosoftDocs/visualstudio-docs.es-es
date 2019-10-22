@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugEngine3::SetJustMyCodeState
 ms.assetid: 8ec17fbf-df93-424a-b2ed-fd1e5ee51256
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 82c2834e7c368776f0ae91cf9106ec6331eed997
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: f53b0eb95a2a91f34917b05cadffda2f4aa9a8b1
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56695679"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66322324"
 ---
 # <a name="idebugengine3setjustmycodestate"></a>IDebugEngine3::SetJustMyCodeState
 Este método indica al motor de depuración sobre la información de estado de JustMyCode.
@@ -40,18 +43,15 @@ int SetJustMyCodeState(
 );
 ```
 
-#### <a name="parameters"></a>Parámetros
- `fUpdate`
+## <a name="parameters"></a>Parámetros
+`fUpdate`\
+[in] Distinto de cero (`TRUE`) para actualizar la información actual, cero (`FALSE`) para restablecer toda la información (se omite todo lo establecido anteriormente).
 
- [in] Distinto de cero (`TRUE`) para actualizar la información actual, cero (`FALSE`) para restablecer toda la información (se omite todo lo establecido anteriormente).
+`dwModules`\
+[in] Número de estructuras de información en `rgJMCSpec.`
 
- `dwModules`
-
- [in] Número de estructuras de información en `rgJMCSpec.`
-
- `rgJMCSpec`
-
- [in] Matriz de [JMC_CODE_SPEC](../../../extensibility/debugger/reference/jmc-code-spec.md) las estructuras deben utilizar.
+`rgJMCSpec`\
+[in] Matriz de [JMC_CODE_SPEC](../../../extensibility/debugger/reference/jmc-code-spec.md) las estructuras deben utilizar.
 
 ## <a name="return-value"></a>Valor devuelto
  Si es correcto, devuelve `S_OK`; en caso contrario, devuelve el código de error.

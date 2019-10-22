@@ -1,5 +1,5 @@
 ---
-title: IActiveScriptAuthor::ParseScriptText | Microsoft Docs
+title: Iactivescriptauthor (::P arseScriptText | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 15
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: fe6870f3b19c5727fdbea0418b8373b990cb671a
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 90d5ab0fa700ed29b5fb37b1c48617cedec871b9
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58144724"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72576152"
 ---
 # <a name="iactivescriptauthorparsescripttext"></a>IActiveScriptAuthor::ParseScriptText
-Analiza el texto de la secuencia de comandos, se agrega el texto para el motor de creación de script y crea un `IScriptEntry` objeto que se corresponde con el bloque de script.  
+Analiza el texto del script, agrega el texto al motor de creación de scripts y crea un objeto `IScriptEntry` que corresponde al bloque de script.  
   
 ## <a name="syntax"></a>Sintaxis  
   
@@ -41,22 +41,22 @@ HRESULT ParseScriptText(
   
 #### <a name="parameters"></a>Parámetros  
  `pszCode`  
- [in] Para analizar el texto del script.  
+ de Texto del script que se va a analizar.  
   
  `pszItemName`  
- [in] La dirección de búfer que contiene el nombre del elemento asociado con el bloque de script.  
+ de La dirección del búfer que contiene el nombre del elemento asociado al bloque de script.  
   
  `pszDelimiter`  
- [in] La dirección del delimitador final del bloque de script. Cuando `pszCode` se analiza desde una secuencia de texto, el host normalmente utiliza un delimitador (por ejemplo, dos comillas simples), para detectar el final del bloque de script. Establezca este parámetro en NULL si no hay ningún delimitador para identificar el final del bloque de script.  
+ de Dirección del delimitador de bloque de script final. Cuando `pszCode` se analiza desde un flujo de texto, el host normalmente usa un delimitador (como dos comillas simples) para detectar el final del bloque de script. Establezca este parámetro en NULL si no hay ningún delimitador para identificar el final del bloque de script.  
   
  `dwCookie`  
- [in] Un valor definido por la aplicación que está asociado con el nuevo `IScriptEntry` objeto.  
+ de Un valor definido por la aplicación que está asociado al nuevo objeto `IScriptEntry`.  
   
  `dwFlags`  
- [in] No se utiliza.  
+ de No se usa.  
   
 ## <a name="return-value"></a>Valor devuelto  
- Una clase `HRESULT`. Entre los valores posibles se incluyen los que se indican en la tabla siguiente, entre otros.  
+ Interfaz `HRESULT`. Entre los valores posibles se incluyen los que se indican en la tabla siguiente, entre otros.  
   
 |Valor|Descripción|  
 |-----------|-----------------|  

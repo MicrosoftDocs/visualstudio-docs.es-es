@@ -7,17 +7,17 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugArrayObject::GetDimensions method
 ms.assetid: 113e0aff-9028-49d6-b104-9fe7be4772d7
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 96079e3f82fccc958cc4b9123f8af4227393845f
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 781da7eadce78d5332befe91231131f02341574b
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56697031"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66319006"
 ---
 # <a name="idebugarrayobjectgetdimensions"></a>IDebugArrayObject::GetDimensions
 Obtiene las dimensiones de la matriz.
@@ -38,14 +38,12 @@ int GetDimensions(
 );
 ```
 
-#### <a name="parameters"></a>Parámetros
- `dwCount`
+## <a name="parameters"></a>Parámetros
+`dwCount`\
+[in] El número de dimensiones que se va a recuperar.
 
- [in] El número de dimensiones que se va a recuperar.
-
- `dwDimensions`
-
- [in, out] Una matriz que se rellena con los tamaños de cada dimensión. `dwCount` Especifica el tamaño máximo de la `dwDimensions` matriz.
+`dwDimensions`\
+[in, out] Una matriz que se rellena con los tamaños de cada dimensión. `dwCount` Especifica el tamaño máximo de la `dwDimensions` matriz.
 
 ## <a name="return-value"></a>Valor devuelto
  Si se realiza correctamente, devuelve S_OK; en caso contrario, devuelve un código de error.

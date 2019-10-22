@@ -5,12 +5,12 @@ author: conceptdev
 ms.author: crdun
 ms.date: 02/15/2018
 ms.assetid: E992FA1D-B2AD-4A28-ADC6-47E4FC471060
-ms.openlocfilehash: 17067e9b19a36f198a6653f0c354e6ce3004eaeb
-ms.sourcegitcommit: da73f7a0cf1795d5d400c0897ae3326191435dd0
+ms.openlocfilehash: a5a6dd04cd080f57d6a6ba97b3696b0351a0a8aa
+ms.sourcegitcommit: 7fbfb2a1d43ce72545096c635df2b04496b0be71
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/28/2019
-ms.locfileid: "58568507"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "67692995"
 ---
 # <a name="set-up-a-git-repository"></a>Configurar un repositorio Git
 
@@ -44,7 +44,7 @@ Para configurar un repositorio Git, ejecute los siguientes pasos:
 
 Si dispone de un proyecto que _aún no está_ en control de versiones, siga estos pasos para configurarlo en Git:
 
-1.  Seleccione el nombre de la solución en el Panel de solución de Visual Studio para Mac.
+1. Seleccione el nombre de la solución en el Panel de solución de Visual Studio para Mac.
 
 2. En la barra de menús, seleccione **Control de versiones > Publicar en control de versiones** para mostrar el cuadro de diálogo **Seleccionar repositorio**:
 
@@ -81,7 +81,7 @@ Si dispone de un proyecto que _aún no está_ en control de versiones, siga esto
 
     ![Menú Control de versiones](media/version-control-git10.png)
 
-10. Cuando empiece a realizar otros cambios, seleccione  **Insertar cambios**  para enviar los cambios realizados al repositorio  **remoto** . Esto permitirá a todos los usuarios adecuados verlo en github.com:
+10. Cuando empiece a realizar otros cambios, seleccione **Insertar cambios** para enviar los cambios realizados al repositorio **remoto**. Esto permitirá a todos los usuarios adecuados verlo en github.com:
 
     ![Enviar cambios al repositorio remoto](media/version-control-git11.png)
 

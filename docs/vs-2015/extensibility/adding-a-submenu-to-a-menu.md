@@ -14,11 +14,11 @@ caps.latest.revision: 44
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: f458d46395c3a902e62ba5dd4ac7d624c326700c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60096470"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68184888"
 ---
 # <a name="adding-a-submenu-to-a-menu"></a>Adición de un submenú a un menú
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

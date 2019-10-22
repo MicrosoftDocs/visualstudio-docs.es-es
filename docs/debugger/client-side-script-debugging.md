@@ -17,17 +17,17 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 1501cd0243d6dc17cc627715eda85e755aec4502
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56637105"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62564091"
 ---
 # <a name="client-side-script-debugging"></a>Depuración de secuencias de comandos en el cliente
 El depurador de Visual Studio proporciona un entorno de depuración completo para encontrar y corregir errores en los scripts de cliente en las páginas de ASP.NET.
 
 ## <a name="opening-script-documents"></a>Abrir documentos de script
-En el **Explorador de soluciones** , puede ver listas de documentos de script de cliente y servidor. Puede abrir cualquier documento de script en el **Explorador de soluciones**. Para obtener más información, consulta [How to: View Script Documents](../debugger/how-to-view-script-documents.md).
+En el **Explorador de soluciones** , puede ver listas de documentos de script de cliente y servidor. Puede abrir cualquier documento de script en el **Explorador de soluciones**. Para obtener más información, vea [Cómo: Visualización de documentos de script](../debugger/how-to-view-script-documents.md).
 
 ## <a name="breakpoint-mapping"></a>Asignación de puntos de interrupción
  En Visual Studio, no puede depurar directamente código de servidor, pero puede establecer un punto de interrupción en un archivo de servidor. Visual Studio asigna automáticamente el punto de interrupción a una ubicación correspondiente en el archivo de cliente y crea un punto de interrupción asignado en el código de cliente.
@@ -35,7 +35,7 @@ En el **Explorador de soluciones** , puede ver listas de documentos de script de
 ## <a name="manually-or-automatically-attaching-to-script"></a>Asociar a script manual o automáticamente
  Para empezar a depurar el script en [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], el depurador debe asociarse al script que se desea depurar. Esto se puede realizar manual o automáticamente.
 
- Puede establecer una asociación manualmente utilizando la interfaz del depurador de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] para elegir un proceso de script en ejecución al que desee asociarse. Para obtener más información, consulta [How to: Attach to Script](../debugger/how-to-attach-to-script.md).
+ Puede establecer una asociación manualmente utilizando la interfaz del depurador de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] para elegir un proceso de script en ejecución al que desee asociarse. Para obtener más información, vea [Cómo: Asociación a script](../debugger/how-to-attach-to-script.md).
 
  El depurador se asocia automáticamente al script cuando se produce una de las siguientes situaciones:
 

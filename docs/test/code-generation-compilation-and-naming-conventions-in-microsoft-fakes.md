@@ -1,5 +1,5 @@
 ---
-title: Generación de código, compilación y convenciones de nomenclatura en Microsoft Fakes
+title: 'Microsoft Fakes: generación y compilación de código; convenciones de nomenclatura'
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.author: gewarren
@@ -7,12 +7,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 5366e33da9af7a845a7f5e5a5e3a901b7d091fa3
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: d9d60db348be719c4fa45243d22ca6b617b72407
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55947347"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68918463"
 ---
 # <a name="code-generation-compilation-and-naming-conventions-in-microsoft-fakes"></a>Generación de código, compilación y convenciones de nomenclatura en Microsoft Fakes
 
@@ -20,8 +20,8 @@ En este artículo se explican las opciones y los problemas de generación y comp
 
 **Requisitos**
 
--   Visual Studio Enterprise
--   Un proyecto de .NET Framework
+- Visual Studio Enterprise
+- Un proyecto de .NET Framework
 
 > [!NOTE]
 > No se admiten los proyectos de .NET Standard.
@@ -62,23 +62,23 @@ Por ejemplo, el siguiente archivo *.fakes* genera stubs para los tipos en los es
 
 Las cadenas de filtro usan una gramática simple para definir cómo deben identificarse las coincidencias:
 
--   De forma predeterminada, los filtros no distinguen mayúsculas de minúsculas; detectan la coincidencia de subcadenas:
+- De forma predeterminada, los filtros no distinguen mayúsculas de minúsculas; detectan la coincidencia de subcadenas:
 
      `el` coincide con "hello"
 
--   Si se agrega `!` al final del filtro, detectará una coincidencia exacta que distingue entre mayúsculas y minúsculas:
+- Si se agrega `!` al final del filtro, detectará una coincidencia exacta que distingue entre mayúsculas y minúsculas:
 
      `el!` no coincide con "hello"
 
      `hello!` coincide con "hello"
 
--   Si se agrega `*` al final del filtro, detectará una coincidencia exacta con el prefijo de la cadena:
+- Si se agrega `*` al final del filtro, detectará una coincidencia exacta con el prefijo de la cadena:
 
      `el*` no coincide con "hello"
 
      `he*` coincide con "hello"
 
--   Varios filtros de una lista separada por punto y coma se combinan como una disyunción:
+- Varios filtros de una lista separada por punto y coma se combinan como una disyunción:
 
      `el;wo` coincide con "hello" y "world"
 
@@ -110,13 +110,13 @@ El generador de código de Fakes genera tipos de correcciones de compatibilidad 
 [assembly: InternalsVisibleTo("FileSystem.Tests")]
 ```
 
- **Tipos internos de ensamblados con nombre seguro**
+**Tipos internos de ensamblados con nombre seguro**
 
- Si el ensamblado corregido para compatibilidad tiene un nombre seguro y desea acceder a los tipos internos del ensamblado:
+Si el ensamblado corregido para compatibilidad tiene un nombre seguro y desea acceder a los tipos internos del ensamblado:
 
--   El ensamblado de prueba y el ensamblado de Fakes deben tener un nombre seguro.
+- El ensamblado de prueba y el ensamblado de Fakes deben tener un nombre seguro.
 
--   Agregue las claves públicas de la prueba y del ensamblado de Fakes a los atributos **InternalsVisibleToAttribute** de los ensamblados corregidos para compatibilidad. A continuación se muestra el aspecto que tendrán los atributos de ejemplo en el código del ensamblado corregido para compatibilidad cuando este tiene un nombre seguro:
+- Agregue las claves públicas de la prueba y del ensamblado de Fakes a los atributos **InternalsVisibleToAttribute** de los ensamblados corregidos para compatibilidad. A continuación se muestra el aspecto que tendrán los atributos de ejemplo en el código del ensamblado corregido para compatibilidad cuando este tiene un nombre seguro:
 
     ```csharp
     // FileSystem\AssemblyInfo.cs
@@ -161,29 +161,29 @@ La compilación de los ensamblados de Fakes puede aumentar considerablemente el 
 
 En los proyectos de prueba unitaria, agregue una referencia a los ensamblados de Fakes compilados que se encuentran en FakesAssemblies en la carpeta del proyecto.
 
-1.  Cree una nueva biblioteca de clases con la versión en tiempo de ejecución de .NET que coincida con los proyectos de prueba. Llamémosla Fakes.Prebuild. Quite el archivo *class1.cs* del proyecto, ya que no es necesario.
+1. Cree una nueva biblioteca de clases con la versión en tiempo de ejecución de .NET que coincida con los proyectos de prueba. Llamémosla Fakes.Prebuild. Quite el archivo *class1.cs* del proyecto, ya que no es necesario.
 
-2.  Agregue una referencia a todos los ensamblados del sistema y de terceros para los que necesitará Fakes.
+2. Agregue una referencia a todos los ensamblados del sistema y de terceros para los que necesitará Fakes.
 
-3.  Agregue un archivo *.fakes* para cada ensamblado y compilación.
+3. Agregue un archivo *.fakes* para cada ensamblado y compilación.
 
-4.  Desde el proyecto de prueba
+4. Desde el proyecto de prueba
 
-    -   Asegúrese de que tiene una referencia al archivo DLL de tiempo de ejecución de Fakes:
+    - Asegúrese de que tiene una referencia al archivo DLL de tiempo de ejecución de Fakes:
 
          *%ProgramFiles(x86)%\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\PublicAssemblies\Microsoft.QualityTools.Testing.Fakes.dll*
 
-    -   Para cada ensamblado para el que creó Fakes, agregue una referencia al archivo DLL correspondiente en la carpeta *Fakes.Prebuild\FakesAssemblies* del proyecto.
+    - Para cada ensamblado para el que creó Fakes, agregue una referencia al archivo DLL correspondiente en la carpeta *Fakes.Prebuild\FakesAssemblies* del proyecto.
 
 ### <a name="avoid-assembly-name-clashing"></a>Evitar conflictos de nombre de ensamblado
 
 En un entorno de Team Build, todos los resultados de la compilación se combinan en un solo directorio. Si varios proyectos utilizan Fakes, podría darse que los ensamblados de Fakes de una versión diferente se reemplacen entre sí. Por ejemplo, tanto TestProject1 fakes *mscorlib.dll* de .NET Framework 2.0 como TestProject2 fakes *mscorlib.dll* para .NET Framework 4 generarían un ensamblado de Fakes *mscorlib.Fakes.dll*.
 
- Para evitar este problema, Fakes debe crear automáticamente nombres de ensamblado de Fakes cualificados para la versión para las referencias que no son del proyecto al agregar los archivos *.fakes*. Un nombre de ensamblado de Fakes cualificado para la versión inserta un número de versión cuando se crea el nombre del ensamblado de Fakes:
+Para evitar este problema, Fakes debe crear automáticamente nombres de ensamblado de Fakes cualificados para la versión para las referencias que no son del proyecto al agregar los archivos *.fakes*. Un nombre de ensamblado de Fakes cualificado para la versión inserta un número de versión cuando se crea el nombre del ensamblado de Fakes:
 
- Dado un ensamblado MyAssembly y una versión 1.2.3.4, el nombre del ensamblado de Fakes es MyAssembly.1.2.3.4.Fakes.
+Dado un ensamblado MyAssembly y una versión 1.2.3.4, el nombre del ensamblado de Fakes es MyAssembly.1.2.3.4.Fakes.
 
- Puede cambiar o quitar esta versión modificando el atributo Version del elemento Assembly en el archivo *.fakes*:
+Puede cambiar o quitar esta versión modificando el atributo Version del elemento Assembly en el archivo *.fakes*:
 
 ```xml
 attribute of the Assembly element in the .fakes:
@@ -197,7 +197,7 @@ attribute of the Assembly element in the .fakes:
 
 ### <a name="shim-type-and-stub-type-naming-conventions"></a>Convenciones de nomenclatura del tipo de correcciones de compatibilidad (shim) y del tipo de stub
 
- **Espacios de nombres**
+**Espacios de nombres**
 
 - El sufijo .fakes se agrega al espacio de nombres.
 
@@ -270,9 +270,9 @@ attribute of the Assembly element in the .fakes:
 
 Las siguientes reglas se aplican de forma recursiva:
 
--   Dado que Fakes usa C# para generar sus ensamblados, se aplica la secuencia de escape "_" (subrayado) a cualquier carácter que pueda generar un token de C# no válido.
+- Dado que Fakes usa C# para generar sus ensamblados, se aplica la secuencia de escape "_" (subrayado) a cualquier carácter que pueda generar un token de C# no válido.
 
--   Si un nombre resultante entra en conflicto con algún miembro del tipo declarativo, se usa un esquema de numeración anexando un contador de dos dígitos que empieza en 01.
+- Si un nombre resultante entra en conflicto con algún miembro del tipo declarativo, se usa un esquema de numeración anexando un contador de dos dígitos que empieza en 01.
 
 ## <a name="see-also"></a>Vea también
 

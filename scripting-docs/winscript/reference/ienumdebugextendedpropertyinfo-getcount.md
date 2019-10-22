@@ -1,5 +1,5 @@
 ---
-title: IEnumDebugExtendedPropertyInfo::GetCount | Microsoft Docs
+title: 'Ienumdebugextendedpropertyinfo (:: GetCount | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 6e56f1def9d797cc67d0a71813a4dd4b35589d7e
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 3b51e4cd765a03226800af95b5de318862d87946
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58156286"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72576834"
 ---
 # <a name="ienumdebugextendedpropertyinfogetcount"></a>IEnumDebugExtendedPropertyInfo::GetCount
-Obtiene el número de `ExtendedDebugPropertyInfo` estructuras en el enumerador.  
+Obtiene el número de estructuras `ExtendedDebugPropertyInfo` en el enumerador.  
   
 ## <a name="syntax"></a>Sintaxis  
   
@@ -37,11 +37,11 @@ HRESULT GetCount (
   
 #### <a name="parameters"></a>Parámetros  
  `pcelt`  
- [out] Devuelve el número de `ExtendedDebugPropertyInfo` estructuras en el enumerador.  
+ enuncia Devuelve el número de estructuras `ExtendedDebugPropertyInfo` en el enumerador.  
   
 ## <a name="return-value"></a>Valor devuelto  
- Devuelve un válidas `HRESULT`, normalmente `S_OK`.  
+ Devuelve un `HRESULT` válido, normalmente `S_OK`.  
   
 ## <a name="see-also"></a>Vea también  
- [IEnumDebugExtendedPropertyInfo (interfaz)](../../winscript/reference/ienumdebugextendedpropertyinfo-interface.md)   
+ @No__t_1 de la [interfaz ienumdebugextendedpropertyinfo (](../../winscript/reference/ienumdebugextendedpropertyinfo-interface.md)  
  [ExtendedDebugPropertyInfo (Estructura)](../../winscript/reference/extendeddebugpropertyinfo-structure.md)

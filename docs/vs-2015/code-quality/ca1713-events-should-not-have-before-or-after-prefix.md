@@ -1,5 +1,5 @@
 ---
-title: 'CA1713: Los eventos no deberían tener prefijos antes ni después | Microsoft Docs'
+title: 'CA1713: los eventos no deben tener el prefijo before o After | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -12,17 +12,17 @@ helpviewer_keywords:
 - EventsShouldNotHaveBeforeOrAfterPrefix
 ms.assetid: 855772a4-aa9e-410b-88c1-c5fba1ca63da
 caps.latest.revision: 16
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 6a36f9c8ce788b30f14d8ca0ce9d565ab45975a5
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 7286272e121cf5054013576c4278f787c8423d79
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58997477"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72669152"
 ---
-# <a name="ca1713-events-should-not-have-before-or-after-prefix"></a>CA1713: Los eventos no deben tener prefijos antes ni después
+# <a name="ca1713-events-should-not-have-before-or-after-prefix"></a>CA1713: Los eventos no deberían tener prefijos antes ni después
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
@@ -33,15 +33,15 @@ ms.locfileid: "58997477"
 |Cambio problemático|Problemático|
 
 ## <a name="cause"></a>Motivo
- El nombre de un evento empieza por 'Before' o 'After'.
+ El nombre de un evento empieza por ' Before ' o ' After '.
 
 ## <a name="rule-description"></a>Descripción de la regla
- Los nombres de evento deben describir la acción que provoca el evento. Para nombrar los eventos relacionados que se provocan en una secuencia específica, utilice el tiempo presente o pasado para indicar la posición relativa en la secuencia de acciones. Por ejemplo, cuando asigne nombres a un par de eventos que se generan al cerrar un recurso, es posible que asígnele 'Closing' y 'Cerrado', en lugar de 'BeforeClose' y 'AfterClose'.
+ Los nombres de evento deben describir la acción que genera el evento. Para nombrar los eventos relacionados que se provocan en una secuencia específica, utilice el tiempo presente o pasado para indicar la posición relativa en la secuencia de acciones. Por ejemplo, al asignar un nombre a un par de eventos que se genera al cerrar un recurso, puede asignarle el nombre ' closing ' y ' Closed ', en lugar de ' BeforeClose ' y ' AfterClose '.
 
  Las convenciones de nomenclatura proporcionan una apariencia común para las bibliotecas destinadas a Common Language Runtime. Esto reduce la curva de aprendizaje necesaria para las nuevas bibliotecas de software y aumenta la confianza del cliente respecto a que la biblioteca se haya desarrollado por parte de un especialista en desarrollo de código administrado.
 
 ## <a name="how-to-fix-violations"></a>Cómo corregir infracciones
- Quite el prefijo del nombre de evento y considere la posibilidad de cambiar el nombre que se usará el tiempo presente o pasado de un verbo.
+ Quite el prefijo del nombre del evento y considere la posibilidad de cambiar el nombre para utilizar el pasador presente o pasado de un verbo.
 
 ## <a name="when-to-suppress-warnings"></a>Cuándo suprimir advertencias
  No suprima las advertencias de esta regla.

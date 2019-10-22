@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 65b06ada96387ac4bff022c92e4025718b0291d9
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 3d4339295c47ee6bc8915eecfb581d9a0e8a4bed
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60064302"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66747666"
 ---
 # <a name="trusted-application-deployment-overview"></a>Introducción a la implementación de aplicaciones de confianza
 En este tema se proporciona información general sobre cómo implementar aplicaciones [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] que disponen de permisos elevados usando la tecnología de implementación de aplicaciones de confianza.
@@ -29,7 +29,7 @@ En este tema se proporciona información general sobre cómo implementar aplicac
  La implementación de aplicaciones de confianza, que forma parte de la tecnología de implementación [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] , facilita a empresas de cualquier tamaño la concesión de permisos adicionales a una aplicación administrada, de forma más segura y sin intervención del usuario. Con la implementación de aplicaciones de confianza, una empresa puede simplemente configurar un equipo cliente para que disponga de una lista de editores de confianza identificados mediante certificados Authenticode. A partir de ese momento, toda aplicación [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] firmada por uno de estos editores de confianza recibirá un mayor nivel de confianza.
 
 > [!NOTE]
->  La implementación de aplicaciones de confianza requiere una configuración inicial del equipo de usuario. En entornos de escritorio administrados, esta configuración puede llevarse a cabo usando una directiva global. Si no es lo que desea para la aplicación, use en su lugar la elevación de permisos. Para más información, consulte [Proteger las aplicaciones ClickOnce](../deployment/securing-clickonce-applications.md).
+> La implementación de aplicaciones de confianza requiere una configuración inicial del equipo de usuario. En entornos de escritorio administrados, esta configuración puede llevarse a cabo usando una directiva global. Si no es lo que desea para la aplicación, use en su lugar la elevación de permisos. Para más información, consulte [Proteger las aplicaciones ClickOnce](../deployment/securing-clickonce-applications.md).
 
 ## <a name="trusted-application-deployment-basics"></a>Aspectos básicos de la implementación de aplicaciones de confianza
  En la tabla siguiente se muestran los objetos y los roles involucrados en la implementación de aplicaciones de confianza.
@@ -80,7 +80,7 @@ Siga estos pasos para aprovechar las ventajas de la implementación de aplicacio
 - *CertMgr.exe*, que es un componente de Internet Explorer y, por tanto, existe en Windows 98 y en todas las versiones posteriores. Para obtener más información, consulte [Certmgr.exe (herramienta de administrador de certificados)](/dotnet/framework/tools/certmgr-exe-certificate-manager-tool).
 
 ### <a name="create-a-clickonce-application"></a>Crear una aplicación ClickOnce
- Una aplicación [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] es una aplicación cliente [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] combinada con archivos de manifiesto que describen la aplicación y proporcionan parámetros de instalación. Puede convertir el programa en una aplicación [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] con el comando **Publicar** de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Otra opción es generar todos los archivos necesarios para la implementación de [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] mediante las herramientas incluidas en el [!INCLUDE[winsdklong](../deployment/includes/winsdklong_md.md)]. Para obtener pasos detallados sobre [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] implementación, consulte [Tutorial: Implementar manualmente una aplicación ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md).
+ Un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] trata de una aplicación de cliente de .NET Framework combinada con archivos de manifiesto que describen la aplicación y proporcionan los parámetros de instalación. Puede convertir el programa en una aplicación [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] con el comando **Publicar** de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Otra opción es generar todos los archivos necesarios para la implementación de [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] mediante las herramientas incluidas en el [!INCLUDE[winsdklong](../deployment/includes/winsdklong_md.md)]. Para obtener pasos detallados sobre [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] implementación, consulte [Tutorial: Implementar manualmente una aplicación ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md).
 
  La implementación de aplicaciones de confianza es específica de [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]y solo puede usarse con aplicaciones [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] .
 
@@ -88,7 +88,7 @@ Siga estos pasos para aprovechar las ventajas de la implementación de aplicacio
  Una vez obtenido el certificado, debe usarlo para firmar la implementación. Si está implementando la aplicación mediante el asistente para publicación de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] , el asistente generará automáticamente un certificado de prueba en caso de que no haya especificado ningún certificado. También puede usar la ventana Diseñador de proyectos de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] para suministrar un certificado proporcionado por una entidad de certificación.  Consulte también [Cómo: publicar una aplicación ClickOnce mediante el Asistente para publicación](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md).
 
 > [!CAUTION]
->  No le recomendamos implementar la aplicación con un certificado de prueba.
+> No le recomendamos implementar la aplicación con un certificado de prueba.
 
  También puede firmar la aplicación mediante las herramientas del SDK *Mage.exe* o *MageUI.exe*. Para obtener más información, vea [Tutorial: Implementar manualmente una aplicación ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md). Para obtener una lista completa de opciones de línea de comandos relacionadas con la firma de la implementación, consulte [Mage.exe (Manifest Generation and Editing Tool)](/dotnet/framework/tools/mage-exe-manifest-generation-and-editing-tool).
 

@@ -8,15 +8,15 @@ f1_keywords:
 - VS.ToolsOptionsPages.Environment.RoamingSettings
 ms.assetid: a3d2ea29-be5d-4012-9820-44b06adbb7dd
 caps.latest.revision: 13
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 416baf8988f8d17a336f9fbef1eb0f9d9a72046b
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 6459b6f65fd1e29fbadb01f6aa2fc51520b726b8
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60109015"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72646827"
 ---
 # <a name="synchronized-settings-in-visual-studio"></a>Configuración sincronizada en Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,21 +26,21 @@ Al usar la misma cuenta de personalización para iniciar sesión en Visual Studi
 ## <a name="synchronized-settings"></a>Configuración sincronizada
  De forma predeterminada, se sincroniza la siguiente configuración.
 
-- La configuración de desarrollo (Deberá seleccionar un conjunto de opciones la primera vez que ejecute Visual Studio, aunque puede cambiar la selección en cualquier momento. Para obtener más información, consulte [Personalizar la configuración de desarrollo en Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)).
+- La configuración de desarrollo (Deberá seleccionar un conjunto de opciones la primera vez que ejecute Visual Studio, aunque puede cambiar la selección en cualquier momento. Para obtener más información, consulte [Personalizar la configuración de desarrollo en Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)).
 
 - Las siguientes opciones de las páginas **Herramientas &#124; Opciones**:
 
-    - La configuración de uso de mayúsculas y minúsculas de la barra de menús y de **Tema**, en la página de opciones **Entorno**, **General**
+  - La configuración de uso de mayúsculas y minúsculas de la barra de menús y de **Tema**, en la página de opciones **Entorno**, **General**
 
-    - Todos los valores de la página de opciones **Entorno**, **Fuentes y colores**
+  - Todos los valores de la página de opciones **Entorno**, **Fuentes y colores**
 
-    - Todos los métodos abreviados de teclado, en la página de opciones **Entorno**, **Teclado**
+  - Todos los métodos abreviados de teclado, en la página de opciones **Entorno**, **Teclado**
 
-    - Todos los valores de la página de opciones **Entorno, Pestañas y ventanas**
+  - Todos los valores de la página de opciones **Entorno, Pestañas y ventanas**
 
-    - Todos los valores de la página de opciones **Entorno**, **Inicio**
+  - Todos los valores de la página de opciones **Entorno**, **Inicio**
 
-    - Todos los valores de las páginas de opciones **Editor de texto**
+  - Todos los valores de las páginas de opciones **Editor de texto**
 
 - Todos los valores de las páginas de opciones Diseñador XAML
 
@@ -55,7 +55,7 @@ Al usar la misma cuenta de personalización para iniciar sesión en Visual Studi
  La configuración se puede sincronizar en cualquier edición de Visual Studio 2015, incluidas las ediciones Express y Community. La configuración también se sincroniza en los productos de la familia Visual Studio como, por ejemplo, Blend. Sin embargo, es posible que estos productos de la familia tengan su propia configuración no compartida con Visual Studio. Por ejemplo, la configuración específica de Blend en el equipo A se compartirá con Blend en el equipo B, pero no con Visual Studio en el equipo A o B.
 
 > [!WARNING]
->  La configuración no se sincroniza entre Visual Studio 2013 y Visual Studio 2015. La primera vez que abra Visual Studio 2015, se migra la configuración desde Visual Studio 2013, pero no se puede volver a migrar a Visual Studio 2013 después de eso.
+> La configuración no se sincroniza entre Visual Studio 2013 y Visual Studio 2015. La primera vez que abra Visual Studio 2015, se migra la configuración desde Visual Studio 2013, pero no se puede volver a migrar a Visual Studio 2013 después de eso.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Otras referencias
  [Personalizar el IDE](../ide/personalizing-the-visual-studio-ide.md)

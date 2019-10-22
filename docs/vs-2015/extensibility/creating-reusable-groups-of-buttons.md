@@ -12,12 +12,12 @@ ms.assetid: 0c561617-fb86-476d-8bd1-c6e5e7464c65
 caps.latest.revision: 45
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 4978a2a8d176ecf3c270bad32a1ae9f82397a642
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 6ac1fd0dc242ae8b8979a3f420f5e1c4d837f62b
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60065810"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63405715"
 ---
 # <a name="creating-reusable-groups-of-buttons"></a>Creación de grupos reutilizables de botones
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -83,7 +83,7 @@ Un grupo de comandos es una colección de comandos que siempre aparecen juntas e
     ```  
   
     > [!NOTE]
-    >  El valor del campo prioridad determina la posición del comando en el nuevo grupo de comandos. Establecen prioridades en el CommandPlacement elemento reemplazan a las establecidas en la definición de elemento. Se muestran los comandos que tienen valores de prioridad inferior antes de ejecutar comandos que tienen los valores de prioridad más altos. Se permiten valores de prioridad duplicados, pero no se puede garantizar la posición relativa de los comandos que tienen el mismo valor de prioridad porque el orden en que el **devenv /setup** comando crea la interfaz de final del registro es posible que no sea coherente.  
+    > El valor del campo prioridad determina la posición del comando en el nuevo grupo de comandos. Establecen prioridades en el CommandPlacement elemento reemplazan a las establecidas en la definición de elemento. Se muestran los comandos que tienen valores de prioridad inferior antes de ejecutar comandos que tienen los valores de prioridad más altos. Se permiten valores de prioridad duplicados, pero no se puede garantizar la posición relativa de los comandos que tienen el mismo valor de prioridad porque el orden en que el **devenv /setup** comando crea la interfaz de final del registro es posible que no sea coherente.  
   
 ### <a name="to-put-a-reusable-group-of-buttons-on-a-menu"></a>Poner un grupo reutilizable de botones en un menú  
   

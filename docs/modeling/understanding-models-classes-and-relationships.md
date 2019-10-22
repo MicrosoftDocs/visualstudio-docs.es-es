@@ -4,149 +4,149 @@ ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - Domain-Specific Language, models
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d486ae5c056be37c0284d39fabaa6945f5c91659
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 42cbc0ea5694e462faf6d3995bc68723a3f522e7
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60045036"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72605842"
 ---
 # <a name="understanding-models-classes-and-relationships"></a>Introducción a los modelos, las clases y las relaciones
-Un lenguaje específico de dominio (DSL) se define mediante su archivo de definición de DSL, junto con cualquier código de programa personalizado que se haya escrito. La mayoría del código de programa en la solución de DSL se genera a partir de este archivo.
+Un lenguaje específico de dominio (DSL) se define mediante su archivo de definición de DSL, junto con cualquier código de programa personalizado que pueda escribir. La mayor parte del código de programa de la solución DSL se genera a partir de este archivo.
 
- En este tema se explica las características principales de la definición de DSL.
+ En este tema se explican las características centrales de la definición de DSL.
 
 ## <a name="the-dsl-definition"></a>La definición de DSL
- Al abrir `Dsl\DslDefinition.dsl`, la ventana de Visual Studio es similar a la siguiente imagen.
+ Al abrir `Dsl\DslDefinition.dsl`, la ventana de Visual Studio se asemeja a la siguiente imagen.
 
  ![diseñador dsl](../modeling/media/dsl_designer.png)
 
- La información más importante en la definición de DSL se muestra en el diagrama de definición de DSL. Obtener información adicional, que también forma parte de DslDefinition.dsl, se muestra en el Explorador de DSL, que normalmente aparece en el lado del diagrama. Trabajar con el diagrama para las tareas más frecuentes y con el Explorador de DSL para las personalizaciones más avanzadas.
+ La información más importante en la definición de DSL se muestra en el diagrama de definición de DSL. La información adicional, que también forma parte de DslDefinition. DSL, se muestra en el explorador de DSL, que normalmente aparece en el lateral del diagrama. Trabajará con el diagrama de las tareas más frecuentes y con DSL Explorer para realizar personalizaciones más avanzadas.
 
- El diagrama de definición de DSL muestra las clases de dominio que definen los elementos del modelo y las relaciones que definen vínculos entre elementos de modelo. También muestra las formas y conectores que se usan para mostrar los elementos del modelo al usuario.
+ En el diagrama de definición de DSL se muestran las clases de dominio que definen los elementos del modelo y las relaciones que definen los vínculos entre los elementos del modelo. También se muestran las formas y los conectores que se usan para mostrar los elementos del modelo al usuario.
 
  ![diseñador dsl con carril (cal](../modeling/media/dsl_desinger.png)
 
- Cuando se selecciona un elemento en la definición de DSL, en el diagrama o en el Explorador de DSL, se muestra información sobre él en la ventana Propiedades. Información adicional puede mostrarse en la ventana Detalles de DSL.
+ Al seleccionar un elemento de la definición de DSL, en el diagrama o en el explorador de DSL, se muestra información sobre él en el ventana Propiedades. Es posible que se muestre información adicional en la ventana detalles de DSL.
 
 ### <a name="models-are-instances-of-dsls"></a>Los modelos son instancias de DSL
- Un *modelo* es una instancia de DSL creada por un usuario. Un modelo contiene los elementos del modelo, que son instancias de las clases de dominio que definen y vínculos entre los elementos, que son instancias de las relaciones de dominio que defina. También puede tener un modelo de formas y conectores que mostrar los elementos del modelo y los vínculos en un diagrama. La definición de DSL incluye las clases de forma, las clases de conector y una clase para el diagrama.
+ Un *modelo* es una instancia de su DSL creada por un usuario. Un modelo contiene elementos del modelo, que son instancias de las clases de dominio que define, y vínculos entre los elementos, que son instancias de las relaciones de dominio que defina. Un modelo también puede tener formas y conectores, que muestran los elementos del modelo y los vínculos de un diagrama. La definición de DSL incluye las clases de forma, las clases de conector y una clase para el diagrama.
 
- Una definición de DSL es también se denomina un *modelo de dominio*. Un modelo de definición de DSL o de dominio es la representación en tiempo de diseño del lenguaje específico de dominio, mientras que el modelo es la creación de instancias de tiempo de ejecución del lenguaje específico de dominio.
+ Una definición de DSL también se conoce como *modelo de dominio*. Una definición de DSL o un modelo de dominio es la representación en tiempo de diseño del lenguaje específico del dominio, mientras que el modelo es la creación de instancias en tiempo de ejecución del lenguaje específico del dominio.
 
-## <a name="domain-classes-define-model-elements"></a>Las clases de dominio definen los elementos del modelo
- Clases de dominio se utilizan para crear los distintos elementos en el dominio y las relaciones de dominio son los vínculos entre los elementos. Son la representación en tiempo de diseño de los elementos y vínculos que se crearán instancias por los usuarios del lenguaje de diseño específicos al crear sus modelos.
+## <a name="domain-classes-define-model-elements"></a>Clases de dominio definir elementos de modelo
+ Las clases de dominio se usan para crear los distintos elementos del dominio y las relaciones de dominio son los vínculos entre los elementos. Son la representación en tiempo de diseño de los elementos y vínculos de los que se crearán instancias de los usuarios del lenguaje específico del diseño cuando creen sus modelos.
 
- En esta ilustración se muestra un modelo que se ha creado por el usuario de una biblioteca de música DSL. Álbumes de música se representan mediante los cuadros que contienen listas de canciones. Los artistas se representan mediante los cuadros de esquinas redondeadas y están conectados a los álbumes a la que han contribuido con.
+ En esta ilustración se muestra un modelo creado por el usuario de un DSL de biblioteca de música. Los álbumes de música se representan mediante cuadros que contienen listas de canciones. Los artistas se representan mediante cuadros con esquinas redondeadas y se conectan a los álbumes en los que han contribuido.
 
  ![Modelo de instancia de DSL generado](../modeling/media/music_instance.png)
 
- La definición de DSL separa dos aspectos. La apariencia de los elementos del modelo en el diagrama del modelo se define mediante el uso de las clases de formas y las clases de conector. La información que lleva en el modelo se define mediante las clases de dominio y relaciones de dominio.
+ La definición de DSL separa dos aspectos. La apariencia de los elementos del modelo en el diagrama del modelo se define mediante clases de forma y clases de conector. La información que se lleva a cabo en el modelo se define mediante clases de dominio y relaciones de dominio.
 
- La siguiente ilustración muestra las clases de dominio y relaciones en la definición de DSL de la biblioteca de música.
+ En la ilustración siguiente se muestran las clases de dominio y las relaciones de la definición de DSL de la biblioteca de música.
 
  ![Relaciones de incrustación y referencia](../modeling/media/music_classes.png)
 
- La ilustración muestra cuatro clases de dominio: Música, álbum, artista y canción. Las clases de dominio definen las propiedades de dominio como nombre, título y así sucesivamente. En el modelo de instancia, los valores de algunas de estas propiedades se muestran en el diagrama.
+ En la ilustración se muestran cuatro clases de dominio: música, álbum, artista y canción. Las clases de dominio definen propiedades de dominio como name, title, etc. En el modelo de instancia, los valores de algunas de estas propiedades se muestran en el diagrama.
 
- Entre las clases son las relaciones de dominio: MusicHasAlbums, MusicHasArtists, AlbumbHasSongs y ArtistAppearedOnAlbums. Las relaciones tienen multiplicidades como 1..1, 0.. *. Por ejemplo, todas las canciones deben estar relacionado con exactamente un álbum a través de la relación AlbumHasSongs. Cada álbum puede tener cualquier número de canciones.
+ Entre las clases están las relaciones de dominio: MusicHasAlbums, MusicHasArtists, AlbumbHasSongs y ArtistAppearedOnAlbums. Las relaciones tienen multiplicidades como 1.. 1, 0.. *. Por ejemplo, cada canción debe estar relacionada con exactamente un álbum a través de la relación AlbumHasSongs. Cada álbum puede tener cualquier número de canciones.
 
 ### <a name="rearranging-the-dsl-definition-diagram"></a>Reorganizar el diagrama de definición de DSL
- Tenga en cuenta que una clase de dominio puede aparecer varias veces en el diagrama de definición de DSL, como álbum en esta imagen. Siempre hay una vista principal, y puede haber algunos *referencia* vistas.
+ Tenga en cuenta que una clase de dominio puede aparecer varias veces en el diagrama de definición de DSL, como álbum en esta imagen. Siempre hay una vista principal y puede haber algunas vistas de *referencia* .
 
- Para reorganizar el diagrama de definición de DSL, hacer lo siguiente:
+ Para reorganizar el diagrama de definición de DSL, puede:
 
-- Intercambiar principal y hacer referencia a vistas mediante el **Traer árbol aquí** y **dividir árbol** comandos. Haga clic en una clase de dominio único para ver estos comandos.
+- Intercambie vistas principales y de referencia mediante los comandos **traer árbol aquí** y **dividir árbol** . Haga clic con el botón secundario en una sola clase de dominio para ver estos comandos.
 
-- Cambiar el orden de las clases de dominio y las clases de formas presionando Ctrl + arriba y Ctrl+flecha abajo.
+- Vuelva a ordenar las clases de dominio y las clases de formas presionando Ctrl + flecha arriba y Ctrl + flecha abajo.
 
-- Contraer o expandir las clases mediante el icono en la superior derecha de cada forma.
+- Contraer o expandir clases con el icono situado en la parte superior derecha de cada forma.
 
-- Contraer partes del árbol, haga clic en el signo menos (-) en la parte inferior de una clase de dominio.
+- Para contraer partes del árbol, haga clic en el signo menos (-) situado en la parte inferior de una clase de dominio.
 
 ## <a name="inheritance"></a>Herencia
- Clases de dominio se pueden definir mediante herencia. Para crear una derivación de herencia, haga clic en la herramienta de herencia, haga clic en la clase derivada y, a continuación, haga clic en la clase base. Un elemento de modelo tiene todas las propiedades que se definen en su propia clase de dominio, junto con todas las propiedades heredadas de la clase base. También hereda sus roles en las relaciones.
+ Las clases de dominio se pueden definir mediante la herencia. Para crear una derivación de herencia, haga clic en la herramienta herencia, haga clic en la clase derivada y, a continuación, haga clic en la clase base. Un elemento de modelo tiene todas las propiedades que se definen en su propia clase de dominio, junto con todas las propiedades heredadas de la clase base. También hereda sus roles en las relaciones.
 
- También puede utilizarse la herencia entre las relaciones, formas y conectores. Herencia debe mantener en el mismo grupo. Una forma no puede heredar de una clase de dominio.
+ La herencia también puede usarse entre relaciones, formas y conectores. La herencia debe mantenerse dentro del mismo grupo. Una forma no puede heredar de una clase de dominio.
 
 ## <a name="domain-relationships"></a>Relaciones de dominio
- Los elementos del modelo se pueden vincular mediante relaciones. Vínculos siempre son binarios; se vinculan exactamente dos elementos. Sin embargo, cualquier elemento puede tener muchos vínculos a otros objetos, y que incluso puede haber más de un vínculo entre el mismo par de elementos.
+ Los elementos de modelo se pueden vincular mediante relaciones. Los vínculos siempre son binarios; vinculan exactamente dos elementos. Sin embargo, cualquier elemento puede tener muchos vínculos a otros objetos y incluso puede haber más de un vínculo entre el mismo par de elementos.
 
- Tal como se puede definir diferentes clases de elementos, puede definir diferentes clases de vínculos. Se llama a la clase de un vínculo a un *relación de dominio*. Una relación de dominio especifica qué clases de elemento se pueden conectar sus instancias. Se llama a cada extremo de una relación de un *rol*, y la relación de dominio define los nombres de los dos roles, así como para la propia relación.
+ Del mismo modo que puede definir diferentes clases de elementos, puede definir diferentes clases de vínculos. La clase de un vínculo se denomina *relación de dominio*. Una relación de dominio especifica las clases de elemento a las que se pueden conectar sus instancias. Cada extremo de una relación se denomina *rol*y la relación de dominio define los nombres de los dos roles, así como la propia relación.
 
- Hay dos tipos de relaciones de dominio: inserción de relaciones y relaciones de referencia. En el diagrama de definición de DSL, las relaciones de incrustación tienen líneas sólidas en cada rol y las relaciones de referencia han líneas de guiones.
+ Hay dos tipos de relaciones de dominio: incrustar relaciones y relaciones de referencia. En el diagrama de definición de DSL, las relaciones de incrustación tienen líneas sólidas en cada rol y las relaciones de referencia tienen líneas discontinuas.
 
-### <a name="embedding-relationships"></a>Las relaciones de incrustación
- Todos los elementos de un modelo, excepto su raíz, es el destino de un vínculo de incrustación. Por lo tanto, todo el modelo conforma un único árbol de incrustación de vínculos. Una relación de incrustación representa la propiedad o contención. Dos elementos de modelo que están relacionados de esta manera son también conocido como primarios y secundarios. Se dice que el elemento secundario incrustado en el elemento primario.
+### <a name="embedding-relationships"></a>Incrustar relaciones
+ Todos los elementos de un modelo, excepto su raíz, son el destino de un vínculo de incrustación. Por lo tanto, todo el modelo forma un único árbol de vínculos de incrustación. Una relación de incrustación representa la contención o la propiedad. Dos elementos de modelo que se relacionan de esta manera también se conocen como primario y secundario. Se dice que el elemento secundario está incrustado en el elemento primario.
 
- Vínculos de incrustación no normalmente aparecen explícitamente como conectores en un diagrama. En su lugar, normalmente se representan por contención. La raíz del modelo se representa mediante el diagrama y elementos incrustados en ella se muestran como formas del diagrama.
+ Los vínculos de incrustación no se suelen mostrar explícitamente como conectores en un diagrama. En su lugar, normalmente se representan mediante contención. La raíz del modelo se representa mediante el diagrama y los elementos incrustados en ella se muestran como formas en el diagrama.
 
- En el ejemplo, la clase raíz Music tiene una relación de incrustación MusicHasAlbums al álbum, que tiene una incrustación AlbumHasSongs canción. Las canciones se muestran como elementos de una lista dentro de cada álbum. Música también tiene una incrustación MusicHasArtists a la clase del intérprete, cuyas instancias también aparecen como formas del diagrama.
+ En el ejemplo, la clase raíz Music tiene una relación de incrustación MusicHasAlbums a album, que tiene una incrustación AlbumHasSongs en Song. Las canciones se muestran como elementos en una lista dentro de cada álbum. La música también tiene un MusicHasArtists de inserción para la clase artista, cuyas instancias también aparecen como formas en el diagrama.
 
  De forma predeterminada, los elementos incrustados se eliminan automáticamente cuando se eliminan sus elementos primarios.
 
- Cuando se guarda un modelo de archivos en formato XML, elementos incrustados están anidados dentro de sus elementos primarios, a menos que haya personalizado la serialización.
+ Cuando se guarda un modelo en un archivo en formato XML, los elementos incrustados se anidan dentro de sus elementos primarios, a menos que haya personalizado la serialización.
 
 > [!NOTE]
->  Incrustación no es lo mismo que herencia. Los elementos secundarios en una relación de incrustación no heredan las propiedades del elemento primario. Una inclusión es un tipo de vínculo entre elementos de modelo. La herencia es una relación entre las clases y no crea vínculos entre elementos de modelo.
+> Incrustación no es lo mismo que herencia. Los elementos secundarios de una relación de incrustación no heredan las propiedades del elemento primario. Una inserción es un tipo de vínculo entre los elementos del modelo. La herencia es una relación entre las clases y no crea vínculos entre los elementos del modelo.
 
-### <a name="embedding-rules"></a>Reglas de incrustación
- Todos los elementos de un modelo de instancia deben ser el destino de exactamente un vínculo de incrustación, excepto la raíz del modelo.
+### <a name="embedding-rules"></a>Incrustar reglas
+ Cada elemento de un modelo de instancia debe ser el destino de exactamente un vínculo de incrustación, excepto la raíz del modelo.
 
- Por lo tanto, cada clase de dominio de no abstracta, excepto la clase raíz, debe ser el destino de al menos una relación de incrustación, o deben heredar de inclusión de una clase base. Una clase puede ser el destino de incrustaciones de dos o más, pero sus elementos de modelo de instancia solo pueden tener un elemento primario a la vez. La multiplicidad del destino al origen debe ser de 0.. 1 o 1.. 1.
+ Por lo tanto, todas las clases de dominio no abstractas, excepto la clase raíz, deben ser el destino de al menos una relación de incrustación, o debe heredar una inserción de una clase base. Una clase puede ser el destino de dos o más incrustaciones, pero sus elementos de modelo de instancia solo pueden tener un elemento primario a la vez. La multiplicidad del destino al origen debe ser 0.. 1 o 1.. 1.
 
 ### <a name="the-explorer-displays-the-embedding-tree"></a>El explorador muestra el árbol de incrustación
- La definición de DSL crea también un explorador, lo que ven los usuarios junto con su diagrama del modelo.
+ La definición de DSL también crea un explorador, que los usuarios ven junto con el diagrama del modelo.
 
  ![Explorador generado de DSL](../modeling/media/music_explorer.png)
 
- El explorador muestra todos los elementos en el modelo, incluso aquellos que no ha definido ninguna forma. Muestra los elementos y relaciones de incrustación, pero no hacer referencia a las relaciones.
+ En el explorador se muestran todos los elementos del modelo, incluso aquellos para los que no se han definido formas. Muestra los elementos y las relaciones de incrustación, pero no las relaciones de referencia.
 
- Para ver los valores de las propiedades de dominio de un elemento, el usuario selecciona un elemento, en el diagrama del modelo o en el Explorador de modelos y abre la ventana Propiedades. Muestra todas las propiedades de dominio, los que no se muestran en el diagrama incluidos. En el ejemplo, cada canción tiene un título y un género, pero solo el valor del título se muestra en el diagrama.
+ Para ver los valores de las propiedades de dominio de un elemento, el usuario selecciona un elemento, ya sea en el diagrama del modelo o en el explorador de modelos, y abre el ventana Propiedades. Muestra todas las propiedades de dominio, incluidas las que no se muestran en el diagrama. En el ejemplo, cada canción tiene un título y un género, pero solo el valor del título se muestra en el diagrama.
 
 ## <a name="reference-relationships"></a>Relaciones de referencia
- Una relación de referencia representa cualquier tipo de relación que no se insertan.
+ Una relación de referencia representa cualquier tipo de relación que no se incrusta.
 
- Las relaciones de referencia normalmente se muestran en un diagrama como conectores entre las formas.
+ Las relaciones de referencia se muestran normalmente en un diagrama como conectores entre formas.
 
- En la representación XML del modelo, un vínculo de referencia entre dos elementos que se representa mediante *monikers.* Es decir, los monikers son nombres que identifican de forma única cada elemento en el modelo. El nodo XML para cada elemento del modelo contiene un nodo que especifica el nombre de la relación y el moniker del otro elemento.
+ En la representación XML del modelo, se representa un vínculo de referencia entre dos elementos mediante *monikers.* Es decir, los monikers son nombres que identifican de forma única cada elemento del modelo. El nodo XML de cada elemento del modelo contiene un nodo que especifica el nombre de la relación y el moniker del otro elemento.
 
 ## <a name="roles"></a>Roles
- Cada relación de dominio tiene dos funciones, un rol de origen y un rol de destino.
+ Cada relación de dominio tiene dos roles, un rol de origen y un rol de destino.
 
- En la siguiente imagen, la línea entre el **Publisher** la clase de dominio y el **PublisherCatalog** relación de dominio es el rol de origen. La línea entre la relación de dominio y el **álbum** la clase de dominio es el rol de destino.
+ En la siguiente imagen, la línea entre la clase de dominio del **publicador** y la relación de dominio **PublisherCatalog** es el rol de origen. La línea entre la relación de dominio y la clase de dominio **album** es el rol de destino.
 
  ![Roles y propiedades.](../modeling/media/propertycode.png)
 
- Los nombres asociados con una relación son especialmente importantes al escribir código de programa que recorre el modelo. Por ejemplo, al compilar la solución de DSL, el publicador de la clase generada tiene una propiedad de catálogo que es una colección de álbumes. La clase álbum tiene una publicador que es una única instancia de la clase de publicador de la propiedad.
+ Los nombres asociados a una relación son especialmente importantes cuando se escribe código de programa que atraviesa el modelo. Por ejemplo, al compilar la solución DSL, el publicador de la clase generada tiene un catálogo de propiedades que es una colección de álbumes. La clase album tiene un publicador de propiedades que es una única instancia del publicador de clases.
 
- Al crear una relación en una definición de DSL, los nombres de propiedad y la relación se proporcionan los valores predeterminados. Sin embargo, puede cambiarlos.
+ Cuando se crea una relación en una definición de DSL, se proporcionan los valores predeterminados a los nombres de propiedad y de relación. Sin embargo, puede cambiarlos.
 
 ## <a name="multiplicities"></a>Multiplicidades
- Multiplicidades especifican cuántos elementos puede tener el mismo rol en una relación de dominio. En el ejemplo, el cero a varios (0..\*) valor de multiplicidad en el **catálogo** rol especifica que cualquier instancia de la **Publisher** la clase de dominio puede tener tantos  **PublisherCatalog** vínculos de relación como desee darle.
+ Las multiplicidades especifican el número de elementos que pueden tener el mismo rol en una relación de dominio. En el ejemplo, la configuración de multiplicidad de cero a varios (0.. \*) en el rol de **Catálogo** especifica que cualquier instancia de la clase de dominio del **publicador** puede tener tantos vínculos de relación **PublisherCatalog** como desee.
 
- Configurar la multiplicidad de un rol escribiendo en el diagrama o modificando el `Multiplicity` propiedad en el **propiedades** ventana. En la tabla siguiente se describe la configuración de esta propiedad.
+ Configure la multiplicidad de un rol; para ello, escriba en el diagrama o modifique la propiedad `Multiplicity` en la ventana **propiedades** . En la tabla siguiente se describe la configuración de esta propiedad.
 
 |Tipo de multiplicidad|Descripción|
 |-|-|
-|0.. * (de cero a muchos)|Cada instancia de la clase de dominio puede tener varias instancias de la relación o ninguna instancia de la relación.|
-|(De cero a uno) de 0.. 1|Cada instancia de la clase de dominio puede tener ninguna instancia de la relación o de no más de una instancia de la relación.|
-|1..1 (uno)|Cada instancia de la clase de dominio puede tener una instancia de la relación. No se puede crear más de una instancia de esta relación desde cualquier instancia de la clase de función. Si está habilitada la validación, aparecerá un error de validación cuando cualquier instancia de la clase de función no tiene ninguna instancia de la relación.|
-|1.. * (uno a varios)|Cada instancia de la clase en el rol que tiene esta multiplicidad puede tener varias instancias de la relación, y cada instancia debe tener al menos una instancia de la relación. Si está habilitada la validación, aparecerá un error de validación cuando cualquier instancia de la clase de función no tiene ninguna instancia de la relación.|
+|0.. * (de cero a varios)|Cada instancia de la clase de dominio puede tener varias instancias de la relación o ninguna instancia de la relación.|
+|0.. 1 (cero a uno)|Cada instancia de la clase de dominio no puede tener más de una instancia de la relación ni instancias de la relación.|
+|1.. 1 (uno)|Cada instancia de la clase de dominio puede tener una instancia de la relación. No se puede crear más de una instancia de esta relación desde cualquier instancia de la clase role. Si la validación está habilitada, aparecerá un error de validación cuando cualquier instancia de la clase de rol no tenga ninguna instancia de la relación.|
+|1.. * (uno a varios)|Cada instancia de la clase en el rol que tiene esta multiplicidad puede tener varias instancias de la relación, y cada instancia debe tener al menos una instancia de la relación. Si la validación está habilitada, aparecerá un error de validación cuando cualquier instancia de la clase de rol no tenga ninguna instancia de la relación.|
 
 ## <a name="domain-relationships-as-classes"></a>Relaciones de dominio como clases
- Un vínculo se representa en el Store como una instancia de LinkElement, que es una clase derivada de ModelElement. Puede definir estas propiedades en el diagrama del modelo de dominio en las relaciones de dominio.
+ Un vínculo se representa en el almacén como una instancia de LinkElement, que es una clase derivada de ModelElement. Puede definir estas propiedades en el diagrama del modelo de dominio en las relaciones de dominio.
 
- También puede establecer una relación el origen o destino de otras relaciones. En el diagrama de modelo de dominio, haga clic en la relación de dominio y, a continuación, haga clic en **mostrar como clase**. Se mostrará un cuadro de clase adicional. Las relaciones, a continuación, puede conectarse a él.
+ También puede establecer una relación entre el origen o el destino de otras relaciones. En el diagrama del modelo de dominio, haga clic con el botón secundario en la relación de dominio y, a continuación, haga clic en **Mostrar como clase**. Aparecerá un cuadro de clase adicional. Después, puede conectar relaciones con él.
 
- Puede definir una relación parte por herencia, se puede hacer con las clases de dominio. Seleccione la relación derivada y establezca **relación Base** en la ventana Propiedades.
+ Puede definir una relación en parte mediante herencia, del mismo modo que con las clases de dominio. Seleccione la relación derivada y establezca **relación base** en el ventana Propiedades.
 
- Una relación derivada especializa su relación base. El dominio de las clases que TI vínculos deben derivarse de o igual que las clases vinculadas mediante la relación base. Cuando se crea un vínculo de la relación derivada de un modelo, es una instancia de la clase derivada y las relaciones bases. En el código de programa, puede navegar con el extremo opuesto del vínculo mediante las propiedades generadas por la base o la clase derivada.
+ Una relación derivada especializa su relación base. Las clases de dominio a las que se vincula deben derivarse o ser iguales que las clases vinculadas por la relación base. Cuando se crea un vínculo de la relación derivada en un modelo, se trata de una instancia de las relaciones derivadas y base. En el código del programa, puede navegar hasta el final opuesto del vínculo mediante las propiedades generadas por la base o por la clase derivada.
 
 ## <a name="see-also"></a>Vea también
 

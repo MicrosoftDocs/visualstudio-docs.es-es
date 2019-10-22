@@ -1,5 +1,5 @@
 ---
-title: IScriptEntry::GetName | Microsoft Docs
+title: 'Iscriptentry (:: GetName | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d23843aa72ce5cf79f6442048b6493d17eb6ef64
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: c99cda48a20efb41b2535645ccdb50be8bb6d6bc
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58147922"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72575451"
 ---
 # <a name="iscriptentrygetname"></a>IScriptEntry::GetName
-Para las entradas que representan un único objeto (por ejemplo, una función), devuelve el nombre del objeto.  
+En el caso de las entradas que representan un único objeto (como una función), devuelve el nombre del objeto.  
   
 ## <a name="syntax"></a>Sintaxis  
   
@@ -37,12 +37,12 @@ HRESULT GetName(
   
 #### <a name="parameters"></a>Parámetros  
  `pbstr`  
- [out] El nombre del objeto representado por la `IScriptEntry` bloque de script. Si una entrada no representa un único objeto, se devuelve NULL.  
+ enuncia Nombre del objeto representado por el bloque de script de `IScriptEntry`. Si una entrada no representa un único objeto, se devuelve NULL.  
   
- Entradas secundarias representan un objeto de función única.  
+ Las entradas secundarias representan un único objeto de función.  
   
 ## <a name="return-value"></a>Valor devuelto  
- Una clase `HRESULT`. Entre los valores posibles se incluyen los que se indican en la tabla siguiente, entre otros.  
+ Interfaz `HRESULT`. Entre los valores posibles se incluyen los que se indican en la tabla siguiente, entre otros.  
   
 |Valor|Descripción|  
 |-----------|-----------------|  
@@ -51,5 +51,5 @@ HRESULT GetName(
 ## <a name="remarks"></a>Comentarios  
   
 ## <a name="see-also"></a>Vea también  
- [IScriptEntry (interfaz)](../../winscript/reference/iscriptentry-interface.md)   
+ @No__t_1 de la [interfaz iscriptentry (](../../winscript/reference/iscriptentry-interface.md)  
  [IScriptNode:: CreateChildEntry](../../winscript/reference/iscriptnode-createchildentry.md)

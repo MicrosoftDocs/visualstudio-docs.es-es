@@ -1,5 +1,5 @@
 ---
-title: Desactivar restricciones al llenar un conjunto de datos | Documentos de Microsoft
+title: Desactivar restricciones al llenar un conjunto de DataSet | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-data-tools
@@ -20,39 +20,38 @@ helpviewer_keywords:
 - constraints [Visual Basic], suspending during dataset update
 ms.assetid: 553f7d0c-2faa-4c17-b226-dd02855bf1dc
 caps.latest.revision: 21
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 8719b893bc8cb47f8a2d7b75b43592187c198289
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 6646f669bf2c465d8e0f705f8fba956b979952ee
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60057703"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72667163"
 ---
 # <a name="turn-off-constraints-while-filling-a-dataset"></a>Desactivar restricciones al llenar un conjunto de datos
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Si un conjunto de datos contiene restricciones (como las restricciones de clave externa), sino generar errores relacionados con el orden de las operaciones que se realizan en el conjunto de datos. Por ejemplo, el cargar registros secundarios antes de los registros primarios de loadingrelated puede infringen una restricción y producir un error. Tan pronto como se carga un registro secundario, la restricción comprueba el registro principal existente y produce un error.  
-  
- Si no hubiera ningún mecanismo para permitir la suspensión temporal de la restricción, se produciría un error cada vez que se intentara cargar un registro en la tabla secundaria. Otra manera de suspender todas las restricciones de un conjunto de datos es mediante las propiedades <xref:System.Data.DataRow.BeginEdit%2A> y <xref:System.Data.DataRow.EndEdit%2A>.  
-  
+Si un conjunto de DataSet contiene restricciones (como las restricciones Foreign Key), Theycan genera errores relacionados con el orden de las operaciones que se realizan en el conjunto de DataSet. Por ejemplo, la carga de registros secundarios antes de los registros primarios de loadingrelated puede infringir una restricción y producir un error. Tan pronto como se carga un registro secundario, la restricción comprueba el registro principal existente y produce un error.
+
+ Si no hubiera ningún mecanismo para permitir la suspensión temporal de la restricción, se produciría un error cada vez que se intentara cargar un registro en la tabla secundaria. Otra manera de suspender todas las restricciones de un conjunto de datos es mediante las propiedades <xref:System.Data.DataRow.BeginEdit%2A> y <xref:System.Data.DataRow.EndEdit%2A>.
+
 > [!NOTE]
->  Eventos de validación (por ejemplo, <xref:System.Data.DataTable.ColumnChanging> y<xref:System.Data.DataTable.RowChanging>) no se genera cuando las restricciones están desactivadas.  
-  
-### <a name="to-suspend-update-constraints-programmatically"></a>Para suspender las restricciones de actualización mediante programación  
-  
-- En el ejemplo siguiente se muestra cómo desactivar temporalmente la comprobación de restricciones de un conjunto de datos:  
-  
+> Los eventos de validación (por ejemplo, <xref:System.Data.DataTable.ColumnChanging> y <xref:System.Data.DataTable.RowChanging>) no se generarán cuando se desactiven las restricciones.
+
+### <a name="to-suspend-update-constraints-programmatically"></a>Para suspender las restricciones de actualización mediante programación
+
+- En el ejemplo siguiente se muestra cómo desactivar temporalmente la comprobación de restricciones de un conjunto de datos:
+
      [!code-csharp[VbRaddataEditing#10](../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataEditing/CS/Form1.cs#10)]
-     [!code-vb[VbRaddataEditing#10](../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataEditing/VB/Form1.vb#10)]  
-  
-### <a name="to-suspend-update-constraints-using-the-dataset-designer"></a>Para suspender las restricciones de actualización mediante el Diseñador de DataSet  
-  
-1. Abra el conjunto de datos en el Diseñador de Dataset. Para obtener más información, vea [Cómo: Abrir un conjunto de datos en el Diseñador de Dataset](http://msdn.microsoft.com/library/36fc266f-365b-42cb-aebb-c993dc2c47c3).  
-  
-2. En la ventana **Propiedades** , establezca la propiedad <xref:System.Data.DataSet.EnforceConstraints%2A> en `false`.  
-  
-## <a name="see-also"></a>Vea también  
- [Llenar conjuntos de datos mediante TableAdapters](../data-tools/fill-datasets-by-using-tableadapters.md)   
- [Relaciones en conjuntos de datos](../data-tools/relationships-in-datasets.md)
+     [!code-vb[VbRaddataEditing#10](../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataEditing/VB/Form1.vb#10)]
+
+### <a name="to-suspend-update-constraints-using-the-dataset-designer"></a>Para suspender las restricciones de actualización mediante el Diseñador de DataSet
+
+1. Abra el conjunto de los Diseñador de DataSet. Para obtener más información, consulte [Cómo: abrir un conjunto de datos en el diseñador de DataSet](https://msdn.microsoft.com/library/36fc266f-365b-42cb-aebb-c993dc2c47c3).
+
+2. En la ventana **Propiedades** , establezca la propiedad <xref:System.Data.DataSet.EnforceConstraints%2A> en `false`.
+
+## <a name="see-also"></a>Vea también
+ [Rellenar conjuntos de valores mediante](../data-tools/fill-datasets-by-using-tableadapters.md) [relaciones de TableAdapter en conjuntos de](../data-tools/relationships-in-datasets.md) objetos

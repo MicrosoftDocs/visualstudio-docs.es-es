@@ -17,11 +17,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: bdc7642911dfe73df86f5107966f101778aec742
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56644567"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62853903"
 ---
 # <a name="udt"></a>UDT
 Cada clase, estructura y unión se identifican mediante un `SymTagUDT` símbolos. Cada miembro, función o tipo anidado, datos y cada clase base, aparece como un elemento secundario de clase del tipo definido por el usuario (UDT).
@@ -29,7 +29,7 @@ Cada clase, estructura y unión se identifican mediante un `SymTagUDT` símbolos
 ## <a name="properties"></a>Propiedades
  La siguiente tabla muestra propiedades adicionales de válido para este tipo de símbolo.
 
-|Propiedad.|Tipo de datos|Descripción|
+|Propiedad|Tipo de datos|Descripción|
 |--------------|---------------|-----------------|
 |[IDiaSymbol::get_classParent](../../debugger/debug-interface-access/idiasymbol-get-classparent.md)|`IDiaSymbol*`|Símbolos para el elemento primario de clase, si existe.|
 |[IDiaSymbol::get_classParentId](../../debugger/debug-interface-access/idiasymbol-get-classparentid.md)|`DWORD`|Id. del símbolo de clase primaria.|

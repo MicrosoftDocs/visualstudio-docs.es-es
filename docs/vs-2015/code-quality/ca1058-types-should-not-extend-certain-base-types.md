@@ -1,5 +1,5 @@
 ---
-title: 'CA1058: Tipos no deben ampliar ciertos tipos base | Microsoft Docs'
+title: 'CA1058: los tipos no deben extender determinados tipos base | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -12,15 +12,15 @@ helpviewer_keywords:
 - TypesShouldNotExtendCertainBaseTypes
 ms.assetid: 8446ee40-beb1-49fa-8733-4d8e813471c0
 caps.latest.revision: 26
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 1ce67a70b6cbe955ef13bf6475a672bcbb687d95
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 9a4663fe3bc09b27bad9eeec05e325f07a3de6f3
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60046544"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72603066"
 ---
 # <a name="ca1058-types-should-not-extend-certain-base-types"></a>CA1058: Los tipos no deben ampliar ciertos tipos base
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,11 +29,11 @@ ms.locfileid: "60046544"
 |-|-|
 |TypeName|TypesShouldNotExtendCertainBaseTypes|
 |Identificador de comprobación|CA1058|
-|Categoría|Microsoft.Design|
+|Categoría|Microsoft. Design|
 |Cambio problemático|Problemático|
 
 ## <a name="cause"></a>Motivo
- Un tipo visible externamente extiende algunos tipos base. Actualmente, esta regla notifica los tipos que derivan de los siguientes tipos:
+ Un tipo visible externamente extiende algunos tipos base. Actualmente, esta regla notifica los tipos que se derivan de los siguientes tipos:
 
 - <xref:System.ApplicationException?displayProperty=fullName>
 
@@ -52,12 +52,12 @@ ms.locfileid: "60046544"
 - <xref:System.Collections.Stack?displayProperty=fullName>
 
 ## <a name="rule-description"></a>Descripción de la regla
- Para [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] versión 1, se recomienda derivar nuevas excepciones de <xref:System.ApplicationException>. La recomendación ha cambiado y deben derivar nuevas excepciones <xref:System.Exception?displayProperty=fullName> o uno de sus subclases en el <xref:System> espacio de nombres.
+ En [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] versión 1, se recomienda derivar nuevas excepciones de <xref:System.ApplicationException>. La recomendación ha cambiado y las nuevas excepciones deben derivarse de <xref:System.Exception?displayProperty=fullName> o de una de sus subclases en el espacio de nombres <xref:System>.
 
- No cree una subclase de <xref:System.Xml.XmlDocument> si desea crear una vista XML de un origen de datos o modelo de objeto subyacente.
+ No cree una subclase de <xref:System.Xml.XmlDocument> si desea crear una vista XML de un modelo de objetos o un origen de datos subyacente.
 
 ### <a name="non-generic-collections"></a>Colecciones no genéricas
- Usar o ampliar las colecciones genéricas, siempre que sea posible. No se extienden colecciones no genéricas en el código, a menos que envió previamente.
+ Use y/o extienda colecciones genéricas siempre que sea posible. No extienda colecciones no genéricas en el código, a menos que la haya enviado anteriormente.
 
  **Ejemplos de uso incorrecto**
 
@@ -87,4 +87,4 @@ public class MyReadOnlyCollection : ReadOnlyCollection<T>
  Para corregir una infracción de esta regla, derive el tipo de un tipo base diferente o una colección genérica.
 
 ## <a name="when-to-suppress-warnings"></a>Cuándo suprimir advertencias
- No suprima una advertencia de esta regla para las infracciones sobre <xref:System.ApplicationException>. Es seguro suprimir una advertencia de esta regla para las infracciones sobre <xref:System.Xml.XmlDocument>. Es seguro suprimir una advertencia sobre una colección no genérica si previamente se liberó el código.
+ No suprima una advertencia de esta regla para infracciones sobre <xref:System.ApplicationException>. Es seguro suprimir una advertencia de esta regla para las infracciones de <xref:System.Xml.XmlDocument>. Es seguro suprimir una advertencia sobre una colección no genérica si el código se liberó previamente.

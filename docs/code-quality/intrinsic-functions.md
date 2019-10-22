@@ -12,39 +12,39 @@ f1_keywords:
 ms.assetid: adf29f8c-89fd-4a5e-9804-35ac83e1c457
 author: mikeblome
 ms.author: mblome
-manager: wpickett
+manager: markl
 ms.workload:
 - multiple
-ms.openlocfilehash: 41ac8e38f501152d329e788572c500f68a8d2214
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: b9236a5135d1339f46aeb6f2dd1a11658adf01c2
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55907963"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72445707"
 ---
 # <a name="intrinsic-functions"></a>Funciones intrínsecas
-Una expresión de SAL puede ser una expresión de C o C++, siempre que sea una expresión que no tiene efectos secundarios, por ejemplo, ++,--y llamadas a función todas tienen efectos en este contexto.  Sin embargo, SAL proporciona algunos objetos de tipo función y algunos símbolos reservadas que se pueden usar en expresiones de SAL. Estos se conocen como *funciones intrínsecas*.
+Una expresión en SAL puede ser una expresión CC++ o siempre que se trata de una expresión que no tiene efectos secundarios; por ejemplo, + +,--, y las llamadas a función tienen efectos secundarios en este contexto.  Sin embargo, SAL proporciona algunos objetos similares a funciones y algunos símbolos reservados que se pueden usar en las expresiones SAL. Estas se conocen como *funciones intrínsecas*.
 
-## <a name="general-purpose"></a>Uso general
- Las siguientes anotaciones de la función intrínsecas proporcionan una utilidad general de SAL.
-
-|Anotación|Descripción|
-|----------------|-----------------|
-|`_Curr_`|Un sinónimo para el objeto que se anota actualmente.  Cuando el `_At_` anotación está en uso, `_Curr_` es el mismo que el primer parámetro `_At_`.  En caso contrario, es el parámetro o el valor completo o valor devuelto de función que está asociada léxicamente la anotación.|
-|`_Inexpressible_(expr)`|Expresa una situación donde el tamaño de un búfer es demasiado complejo para representar mediante una expresión de anotación, por ejemplo, cuando se calcula mediante el examen de un conjunto de datos de entrada y, a continuación, el recuento de miembros seleccionados.|
-|`_Nullterm_length_(param)`|`param` es el número de elementos en el búfer hasta, pero sin incluir un terminador nulo. Se puede aplicar a cualquier búfer de tipo que no son de agregado y distinto de void.|
-|`_Old_(expr)`|Cuando se evalúa en condición previa, `_Old_` devuelve el valor de entrada `expr`.  Cuando se evalúa de condición posterior, devuelve el valor `expr` tal como se habría evaluado en condición previa.|
-|`_Param_(n)`|El `n`parámetro a una función, contando desde 1 a `n`, y `n` es una literal constante integral. Si el parámetro se denomina, esta anotación es idéntica al acceder a los parámetros por nombre. **Nota:** `n` pueden hacer referencia a los parámetros posicionales se definen mediante puntos suspensivos, o se pueden usar en prototipos de función donde no se utilizan nombres.|
-|`return`|Palabra clave reservada de C o C++ `return` puede utilizarse en una expresión de SAL para indicar el valor devuelto de una función.  El valor sólo está disponible en el estado de publicación. es un error de sintaxis se utiliza en el estado previo.|
-
-## <a name="string-specific"></a>Cadena específica
- Las siguientes anotaciones de la función intrínseca permiten la manipulación de cadenas. Cuatro de estas funciones tienen el mismo propósito: para devolver el número de elementos del tipo que se encuentra antes de un terminador nulo. Las diferencias son los tipos de datos en los elementos que se hace referencia. Tenga en cuenta que si desea especificar la longitud de terminada en null de búferes que no está formado por caracteres, use el `_Nullterm_length_(param)` anotación de la sección anterior.
+## <a name="general-purpose"></a>De uso general
+Las siguientes anotaciones de la función intrínsecas proporcionan una utilidad general para SAL.
 
 |Anotación|Descripción|
 |----------------|-----------------|
-|`_String_length_(param)`|`param` es el número de elementos de la cadena hasta pero sin incluir un terminador nulo. Esta anotación está reservada para los tipos de cadena de caracteres.|
-|`strlen(param)`|`param` es el número de elementos de la cadena hasta pero sin incluir un terminador nulo. Esta anotación está reservada para uso en caracteres, matrices y es similar a la función en tiempo de ejecución de C [strlen()](/cpp/c-runtime-library/reference/strlen-wcslen-mbslen-mbslen-l-mbstrlen-mbstrlen-l).|
-|`wcslen(param)`|`param` es el número de elementos de la cadena hasta (pero no incluyendo) un terminador nulo. Esta anotación está reservada para uso en caracteres anchos, matrices y es similar a la función en tiempo de ejecución de C [wcslen()](/cpp/c-runtime-library/reference/strlen-wcslen-mbslen-mbslen-l-mbstrlen-mbstrlen-l).|
+|`_Curr_`|Sinónimo del objeto que se está anotando actualmente.  Cuando se utiliza la anotación `_At_`, `_Curr_` es igual que el primer parámetro que se va a `_At_`.  De lo contrario, es el parámetro o el valor completo de la función o devolución con el que está asociada léxicamente la anotación.|
+|`_Inexpressible_(expr)`|Expresa una situación en la que el tamaño de un búfer es demasiado complejo para representarlo mediante una expresión de anotación; por ejemplo, cuando se calcula examinando un conjunto de datos de entrada y contando a continuación los miembros seleccionados.|
+|`_Nullterm_length_(param)`|`param` es el número de elementos en el búfer hasta, pero sin incluir un terminador null. Se puede aplicar a cualquier búfer de tipo no agregado, no void.|
+|`_Old_(expr)`|Cuando se evalúa en condición previa, `_Old_` devuelve el valor de entrada `expr`.  Cuando se evalúa en una condición posterior, devuelve el valor `expr` tal y como se habría evaluado en condición previa.|
+|`_Param_(n)`|@No__t_0th parámetro a una función, contando entre 1 y `n` y `n` es una constante entera literal. Si el parámetro se denomina, esta anotación es idéntica a tener acceso al parámetro por su nombre. **Nota:** `n` puede hacer referencia a los parámetros posicionales definidos por puntos suspensivos o que se pueden usar en prototipos de función donde no se usan nombres.|
+|`return`|La palabra claveC++ C/reserved `return` se puede usar en una expresión sal para indicar el valor devuelto de una función.  El valor solo está disponible en post State; se trata de un error de sintaxis para usarlo en el estado anterior.|
+
+## <a name="string-specific"></a>Específico de cadena
+Las siguientes anotaciones de función intrínseca permiten la manipulación de cadenas. Las cuatro funciones tienen el mismo propósito: devolver el número de elementos del tipo que se encuentra antes de un terminador nulo. Las diferencias son los tipos de datos de los elementos a los que se hace referencia. Tenga en cuenta que si desea especificar la longitud de un búfer terminado en null que no está compuesto por caracteres, use la anotación `_Nullterm_length_(param)` de la sección anterior.
+
+|Anotación|Descripción|
+|----------------|-----------------|
+|`_String_length_(param)`|`param` es el número de elementos de la cadena hasta, pero sin incluir un terminador nulo. Esta anotación está reservada para tipos de cadena de caracteres.|
+|`strlen(param)`|`param` es el número de elementos de la cadena hasta, pero sin incluir un terminador nulo. Esta anotación se reserva para su uso en matrices de caracteres y se parece a la función en tiempo de ejecución de C [strlen ()](/cpp/c-runtime-library/reference/strlen-wcslen-mbslen-mbslen-l-mbstrlen-mbstrlen-l).|
+|`wcslen(param)`|`param` es el número de elementos de la cadena hasta un terminador null (pero sin incluirlo). Esta anotación se reserva para su uso en matrices de caracteres anchos y se parece a la función de tiempo de ejecución de C [wcslen ()](/cpp/c-runtime-library/reference/strlen-wcslen-mbslen-mbslen-l-mbstrlen-mbstrlen-l).|
 
 ## <a name="see-also"></a>Vea también
 

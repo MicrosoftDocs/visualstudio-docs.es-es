@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - debugging [Debugging SDK], exception handling
 ms.assetid: 7279dc16-db14-482c-86b8-7b3da5a581d2
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f48724ac57e23fc569bd244afdb3a205ed9c4ef7
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 7fdb309c01979985d1c00eedab9c496d0af44e07
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60079992"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66315265"
 ---
 # <a name="exception-handling-visual-studio-sdk"></a>Control de excepciones (Visual Studio SDK)
 El siguiente describe el proceso que se produce cuando se produzcan excepciones.

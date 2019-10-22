@@ -12,11 +12,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: c94624aaea629c087b552ee46266a44f534888d5
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59670269"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68192900"
 ---
 # <a name="item-functions"></a>Funciones de elementos
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -54,7 +54,7 @@ A partir de MSBuild 4.0, el código de las tareas y de los destinos puede llamar
 ## <a name="intrinsic-item-functions"></a>Funciones de elementos intrínsecas  
  En la tabla siguiente se enumeran las funciones intrínsecas disponibles para los elementos.  
   
-|Función|Ejemplo|Descripción|  
+|Función|Ejemplo|DESCRIPCIÓN|  
 |--------------|-------------|-----------------|  
 |`Count`|`@(MyItem->Count())`|Devuelve el número de elementos.|  
 |`DirectoryName`|`@(MyItem->DirectoryName())`|Devuelve el equivalente de `Path.DirectoryName` para cada elemento.|  
@@ -102,5 +102,5 @@ A partir de MSBuild 4.0, el código de las tareas y de los destinos puede llamar
   -->  
 ```  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Otras referencias  
  [Elementos](../msbuild/msbuild-items.md)

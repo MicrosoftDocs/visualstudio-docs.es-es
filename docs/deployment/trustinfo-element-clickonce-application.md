@@ -22,12 +22,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e3dd75e8c88f87991abbdaa74a711b8f3c7324b5
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 4d6ac13c6eb76bff5ffc07043fd20063700237fc
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60042243"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66745596"
 ---
 # <a name="lttrustinfogt-element-clickonce-application"></a>Elemento &lt;trustInfo&gt; (aplicación ClickOnce)
 Describe los permisos de seguridad mínimos necesarios para que la aplicación se ejecute en el equipo cliente.
@@ -87,7 +87,7 @@ Describe los permisos de seguridad mínimos necesarios para que la aplicación s
      Obligatorio. Identifica la versión del permiso. Normalmente, este valor es `1`.
 
 ## <a name="ipermission"></a>IPermission
- Opcional. Este elemento es un elemento secundario del elemento `PermissionSet` . El elemento `IPermission` identifica totalmente una clase de permiso en el [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]. El elemento `IPermission` tiene los atributos siguientes, pero puede tener atributos adicionales que corresponden a las propiedades de la clase de permiso. Para obtener la sintaxis de un permiso concreto, vea los ejemplos enumerados en el archivo Security.config.
+ Opcional. Este elemento es un elemento secundario del elemento `PermissionSet` . El `IPermission` elemento identifica totalmente una clase de permiso en .NET Framework. El elemento `IPermission` tiene los atributos siguientes, pero puede tener atributos adicionales que corresponden a las propiedades de la clase de permiso. Para obtener la sintaxis de un permiso concreto, vea los ejemplos enumerados en el archivo Security.config.
 
 - `class`
 

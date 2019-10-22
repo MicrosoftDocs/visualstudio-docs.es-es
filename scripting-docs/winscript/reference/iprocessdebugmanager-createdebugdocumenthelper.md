@@ -1,5 +1,5 @@
 ---
-title: IProcessDebugManager::CreateDebugDocumentHelper | Microsoft Docs
+title: 'IProcessDebugManager:: CreateDebugDocumentHelper | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 38de1e828ccd1715fb83cc76c06ba837818d2af0
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: a009fa5174ab897116c02b91e376e2dc41d67600
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58151978"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72577092"
 ---
 # <a name="iprocessdebugmanagercreatedebugdocumenthelper"></a>IProcessDebugManager::CreateDebugDocumentHelper
-Crea una nuevo auxiliar de documento de depuración para esta aplicación.  
+Crea una nueva aplicación auxiliar de documento de depuración para esta aplicación.  
   
 ## <a name="syntax"></a>Sintaxis  
   
@@ -38,10 +38,10 @@ HRESULT CreateDebugDocumentHelper(
   
 #### <a name="parameters"></a>Parámetros  
  `punkOuter`  
- [in] Si el objeto devuelto que se va a agregarse, `punkOuter` es un puntero de interfaz al control `IUnknown`. En caso contrario, es un puntero nulo.  
+ de Si el objeto devuelto se va a agregar, `punkOuter` es un puntero de interfaz al `IUnknown` de control. De lo contrario, es un puntero nulo.  
   
  `pddh`  
- [out] Objeto de aplicación auxiliar de documento de depuración para esta aplicación.  
+ enuncia Objeto auxiliar de documento de depuración para esta aplicación.  
   
 ## <a name="return-value"></a>Valor devuelto  
  El método devuelve un objeto `HRESULT`. Entre los valores posibles se incluyen los que se indican en la tabla siguiente, entre otros.  
@@ -51,7 +51,7 @@ HRESULT CreateDebugDocumentHelper(
 |`S_OK`|El método se realizó correctamente.|  
   
 ## <a name="remarks"></a>Comentarios  
- Este método crea una nuevo auxiliar de documento de depuración para esta aplicación.  
+ Este método crea una nueva aplicación auxiliar de documento de depuración para esta aplicación.  
   
 ## <a name="see-also"></a>Vea también  
  [IProcessDebugManager (Interfaz)](../../winscript/reference/iprocessdebugmanager-interface.md)

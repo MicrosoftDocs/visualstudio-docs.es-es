@@ -1,21 +1,21 @@
 ---
-title: 'CA3075: Procesamiento de DTD no seguro | Documentos de Microsoft'
+title: 'CA3075: procesamiento de DTD no seguro | Microsoft Docs'
 ms.date: 11/15/2016
 ms.technology: vs-ide-code-analysis
 ms.topic: reference
 ms.assetid: 65798d66-7a30-4359-b064-61a8660c1eed
 caps.latest.revision: 19
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 3664061cf8c1233f3aa25341b5c77c21de51d2c7
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 7cf9da2f295d94ac68c74039458f4cdbfda3ae5c
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58997141"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72661620"
 ---
-# <a name="ca3075-insecure-dtd-processing"></a>CA3075: Procesamiento no seguro de DTD
+# <a name="ca3075-insecure-dtd-processing"></a>CA3075: procesamiento no seguro de DTD
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
@@ -29,37 +29,37 @@ ms.locfileid: "58997141"
  Si usa instancias de <xref:System.Xml.XmlReaderSettings.DtdProcessing%2A> no seguras o hace referencia a orígenes de entidades externas, el analizador podría aceptar entradas que no sean de confianza y revelar información confidencial a atacantes.
 
 ## <a name="rule-description"></a>Descripción de la regla
- Una [definición de tipo de documento (DTD)](https://msdn.microsoft.com/library/aa468547.aspx) es una de las dos formas que tiene un analizador XML para determinar la validez de un documento, como se define en el  [lenguaje de marcado extensible (XML) 1.0 de World Wide Web Consortium (W3C)](http://www.w3.org/TR/2008/REC-xml-20081126/). Esta regla busca propiedades e instancias en las que se aceptan datos que no son de confianza para advertir a los desarrolladores de las posibles amenazas de [Information Disclosure](http://msdn.microsoft.com/library/4064c89f-afa6-444a-aa7e-807ef072131c) , lo que puede provocar ataques por [denegación de servicio (DoS)](http://msdn.microsoft.com/library/dfb150f3-d598-4697-a5e6-6779e4f9b600) . Esta regla se desencadena cuando:
+ Una [definición de tipo de documento (DTD)](https://msdn.microsoft.com/library/aa468547.aspx) es una de las dos formas que tiene un analizador XML para determinar la validez de un documento, como se define en el  [lenguaje de marcado extensible (XML) 1.0 de World Wide Web Consortium (W3C)](http://www.w3.org/TR/2008/REC-xml-20081126/). Esta regla busca propiedades e instancias en las que se aceptan datos que no son de confianza para advertir a los desarrolladores de las posibles amenazas de [Information Disclosure](https://msdn.microsoft.com/library/4064c89f-afa6-444a-aa7e-807ef072131c) , lo que puede provocar ataques por [denegación de servicio (DoS)](https://msdn.microsoft.com/library/dfb150f3-d598-4697-a5e6-6779e4f9b600) . Esta regla se desencadena cuando:
 
 - DtdProcessing está habilitado en la instancia <xref:System.Xml.XmlReader> , que resuelve entidades XML externas mediante <xref:System.Xml.XmlUrlResolver>.
 
 - Se ha establecido la propiedad <xref:System.Xml.XmlNode.InnerXml%2A> del XML.
 
-- <xref:System.Xml.XmlReaderSettings.DtdProcessing%2A> propiedad está establecida en el análisis.
+- <xref:System.Xml.XmlReaderSettings.DtdProcessing%2A> propiedad está establecida en Parse.
 
 - Las entradas que no son de confianza se procesan mediante <xref:System.Xml.XmlResolver> en lugar de con <xref:System.Xml.XmlSecureResolver> .
 
-- XmlReader.<xref:System.Xml.XmlReader.Create%2A> se invoca el método con una <xref:System.Xml.XmlReaderSettings> instancia o ninguna en absoluto.
+- XmlReader. <xref:System.Xml.XmlReader.Create%2A> el método se invoca con una instancia de <xref:System.Xml.XmlReaderSettings> no segura o sin ninguna instancia.
 
-- <xref:System.Xml.XmlReader> se crea con los valores predeterminados no seguros o valores.
+- <xref:System.Xml.XmlReader> se crea con valores o configuraciones predeterminados no seguros.
 
   En cada uno de estos casos, el resultado es el mismo: el contenido del sistema de archivos o de los recursos compartidos de red del equipo en el que se procesa el XML se expondrá al atacante, y posteriormente se podría usar como vector de denegación de servicio.
 
 ## <a name="how-to-fix-violations"></a>Cómo corregir infracciones
 
-- Detecte y procese todas las excepciones XmlTextReader correctamente para evitar la divulgación de información de ruta de acceso.
+- Detecte y procese todas las excepciones de XmlTextReader correctamente para evitar la divulgación de información de ruta de acceso.
 
-- Use el <xref:System.Xml.XmlSecureResolver> para restringir los recursos que puede obtener acceso XmlTextReader.
+- Use el  <xref:System.Xml.XmlSecureResolver> para restringir los recursos a los que puede tener acceso XmlTextReader.
 
-- No permitir la <xref:System.Xml.XmlReader> abra ningún recurso externo estableciendo la <xref:System.Xml.XmlResolver> propiedad **null**.
+- No permita que el  <xref:System.Xml.XmlReader> abra ningún recurso externo estableciendo la propiedad <xref:System.Xml.XmlResolver> en **null**.
 
 - Asegúrese de que la propiedad <xref:System.Data.DataViewManager.DataViewSettingCollectionString%2A> de <xref:System.Data.DataViewManager> se asigne desde un origen de confianza.
 
   .NET 3.5 y versiones anteriores
 
-- Deshabilite el procesamiento de DTD si trabaja con orígenes de confianza estableciendo el <xref:System.Xml.XmlReaderSettings.ProhibitDtd%2A> propiedad **true** .
+- Deshabilite el procesamiento de DTD si trabaja con orígenes que no son de confianza estableciendo la propiedad  <xref:System.Xml.XmlReaderSettings.ProhibitDtd%2A> en **true** .
 
-- La clase XmlTextReader tiene una petición de herencia de plena confianza. Consulte [peticiones de herencias](http://msdn.microsoft.com/28b9adbb-8f08-4f10-b856-dbf59eb932d9) para obtener más información.
+- La clase XmlTextReader tiene una petición de herencia de plena confianza. Vea [peticiones de herencia](https://msdn.microsoft.com/28b9adbb-8f08-4f10-b856-dbf59eb932d9) para obtener más información.
 
   .NET 4 y versiones posteriores
 
@@ -68,7 +68,7 @@ ms.locfileid: "58997141"
 - Asegúrese de que el método Load() tome una instancia XmlReader en todos los casos InnerXml.
 
 > [!NOTE]
->  Esta regla podría notificar falsos positivos en algunas instancias XmlSecureResolver válidas. Estamos trabajando para tener este problema resuelto a mediados del año 2016.
+> Esta regla podría notificar falsos positivos en algunas instancias XmlSecureResolver válidas. Estamos trabajando para tener este problema resuelto a mediados del año 2016.
 
 ## <a name="when-to-suppress-warnings"></a>Cuándo suprimir advertencias
  A menos que esté seguro de que la entrada es de un origen de confianza, no suprima ninguna regla de esta advertencia.

@@ -1,5 +1,5 @@
 ---
-title: Método Ijsdebugframe | Documentos de Microsoft
+title: 'IJsDebugFrame:: GetName (método) | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -15,12 +15,12 @@ caps.latest.revision: 5
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 314a365a76533343ef14db513856a7ab16168677
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: e78bd7c5b63737cd1a34d50ca6629eb173f40efb
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58160266"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72573877"
 ---
 # <a name="ijsdebugframegetname-method"></a>IJsDebugFrame::GetName (Método)
 Obtiene el nombre descriptivo del marco de pila.  
@@ -40,7 +40,7 @@ HRESULT GetName(
 ## <a name="return-value"></a>Valor devuelto  
   
 ## <a name="requirements"></a>Requisitos  
- **Encabezado:** jscript9diag.h  
+ **Encabezado:** jscript9diag. h  
   
 ## <a name="see-also"></a>Vea también  
  [IJsDebugFrame (Interfaz)](../../winscript/reference/ijsdebugframe-interface.md)

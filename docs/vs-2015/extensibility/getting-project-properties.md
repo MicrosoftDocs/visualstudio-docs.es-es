@@ -12,11 +12,11 @@ caps.latest.revision: 30
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: d0557d08c318eda47853ec69c6204739cbece560
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60044440"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68204324"
 ---
 # <a name="getting-project-properties"></a>Obtención de las propiedades del proyecto
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

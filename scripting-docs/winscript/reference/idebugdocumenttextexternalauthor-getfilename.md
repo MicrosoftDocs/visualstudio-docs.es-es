@@ -1,5 +1,5 @@
 ---
-title: IDebugDocumentTextExternalAuthor::GetFileName | Microsoft Docs
+title: 'Idebugdocumenttextexternalauthor (:: GetFileName | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,12 +17,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: edb988751b8a0c0e6450e1fa216a474df2e8c59d
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: c07752d357a261fbc4800c3217a63d3de9489d55
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58158716"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72575974"
 ---
 # <a name="idebugdocumenttextexternalauthorgetfilename"></a>IDebugDocumentTextExternalAuthor::GetFileName
 Devuelve el nombre del documento sin información de ruta de acceso.  
@@ -37,7 +37,7 @@ HRESULT GetFileName(
   
 #### <a name="parameters"></a>Parámetros  
  `pbstrShortName`  
- [out] Cadena que contiene el nombre corto del documento.  
+ enuncia Cadena que contiene el nombre corto del documento.  
   
 ## <a name="return-value"></a>Valor devuelto  
  El método devuelve un objeto `HRESULT`. Entre los valores posibles se incluyen los que se indican en la tabla siguiente, entre otros.  

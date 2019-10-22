@@ -1,5 +1,5 @@
 ---
-title: IActiveScript::AddNamedItem | Microsoft Docs
+title: 'IActiveScript:: AddNamedItem | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: db0a97c01d948a0c26850ebd1c3f47c6e3900614
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: a343e38b944ca36da221da39832046c19b332230
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58151861"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72575825"
 ---
 # <a name="iactivescriptaddnameditem"></a>IActiveScript::AddNamedItem
-Agrega el nombre de un elemento de nivel de raíz al espacio de nombres del motor de scripting. Un elemento de nivel de raíz es un objeto con propiedades y métodos, un origen de eventos o las tres.  
+Agrega el nombre de un elemento de nivel de raíz al espacio de nombres del motor de scripting. Un elemento de nivel de raíz es un objeto con propiedades y métodos, un origen de evento o los tres.  
   
 ## <a name="syntax"></a>Sintaxis  
   
@@ -38,29 +38,29 @@ HRESULT AddNamedItem(
   
 #### <a name="parameters"></a>Parámetros  
  `pstrName`  
- [in] Dirección de un búfer que contiene el nombre del elemento tal como se ve desde la secuencia de comandos. El nombre debe ser único y con persistencia.  
+ de Dirección de un búfer que contiene el nombre del elemento tal como se ve en el script. El nombre debe ser único y puede ser persistente.  
   
  `dwFlags`  
- [in] Marcas asociadas a un elemento. Puede ser una combinación de estos valores:  
+ de Marcas asociadas a un elemento. Puede ser una combinación de estos valores:  
   
 |Valor|Significado|  
 |-----------|-------------|  
-|SCRIPTITEM_CODEONLY|Indica que el elemento con nombre representa un objeto de sólo código, y que el host no tiene ningún `IUnknown` va a asociar a este objeto solo código. El host sólo tiene un nombre para este objeto. En los lenguajes orientados a objetos como C++, esta marca crearía una clase. No todos los lenguajes admiten esta marca.|  
-|SCRIPTITEM_GLOBALMEMBERS|Indica que el elemento es una colección de propiedades globales y los métodos asociados a la secuencia de comandos. Normalmente, un motor de scripting, se ignoraría el nombre de objeto (que no sea con el fin de utilizarlo como una cookie para el [GetItemInfo](../../winscript/reference/iactivescriptsite-getiteminfo.md) método, o para resolver el ámbito explícito) y exponer sus miembros como global las variables y métodos. Esto permite que el host extender la biblioteca (funciones de tiempo de ejecución y así sucesivamente) disponible para el script. Se deja al motor de scripting para tratar con el nombre entra en conflicto (por ejemplo, cuando dos elementos SCRIPTITEM_GLOBALMEMBERS tienen métodos del mismo nombre), aunque no se debe devolver un error debido a esta situación.|  
-|SCRIPTITEM_ISPERSISTENT|Indica que el elemento debe guardarse si se guarda el motor de scripting. De forma similar, al establecer esta marca indica que una transición al estado inicializado debe conservar información de nombre y el tipo del elemento (el motor de scripting no obstante, debe liberar todos los punteros a las interfaces del objeto real).|  
-|SCRIPTITEM_ISSOURCE|Indica que el elemento de origen de eventos que puede recibir la secuencia de comandos. Los objetos secundarios (propiedades del objeto que se encuentran en los propios objetos) también pueden obtener los eventos a la secuencia de comandos. Esto no es recursiva, pero proporciona un mecanismo conveniente para el caso común, por ejemplo, de creación de controles de un contenedor y todos sus miembros.|  
-|SCRIPTITEM_ISVISIBLE|Indica que el nombre del elemento está disponible en el espacio de nombres de la secuencia de comandos, permitiendo el acceso a las propiedades, métodos y eventos del elemento. Por convención, las propiedades del elemento son a elementos secundarios del elemento; por lo tanto, todas las propiedades del objeto secundario y métodos (y sus elementos secundarios, de forma recursiva) serán accesibles.|  
-|SCRIPTITEM_NOCODE|Indica que el elemento es simplemente un nombre que se agregan al espacio de nombres de la secuencia de comandos y no debe tratarse como un elemento para el que se debe asociar código. Por ejemplo, sin esta marca se establece, VBScript creará un módulo independiente para el elemento con nombre y C++ podría crear una clase de contenedor independiente para el elemento con nombre.|  
+|SCRIPTITEM_CODEONLY|Indica que el elemento con nombre representa un objeto de solo código y que el host no tiene ningún `IUnknown` que asociar a este objeto de solo código. El host solo tiene un nombre para este objeto. En los lenguajes orientados a C++objetos como, esta marca crearía una clase. No todos los lenguajes admiten esta marca.|  
+|SCRIPTITEM_GLOBALMEMBERS|Indica que el elemento es una colección de propiedades y métodos globales asociados con el script. Normalmente, un motor de scripting omitiría el nombre de objeto (distinto de para usarlo como una cookie para el método [IActiveScriptSite:: GetItemInfo](../../winscript/reference/iactivescriptsite-getiteminfo.md) o para resolver el ámbito explícito) y exponer sus miembros como variables y métodos globales. Esto permite al host extender la biblioteca (funciones en tiempo de ejecución, etc.) disponible para el script. Se deja al motor de scripting para tratar los conflictos de nombres (por ejemplo, cuando dos elementos SCRIPTITEM_GLOBALMEMBERS tienen métodos del mismo nombre), aunque no se debería devolver un error debido a esta situación.|  
+|SCRIPTITEM_ISPERSISTENT|Indica que se debe guardar el elemento si se guarda el motor de scripting. Del mismo modo, el establecimiento de esta marca indica que una transición de vuelta al estado inicializado debe conservar el nombre del elemento y la información de tipo (el motor de scripting debe, sin embargo, liberar todos los punteros a las interfaces en el objeto real).|  
+|SCRIPTITEM_ISSOURCE|Indica que el elemento origina eventos que el script puede recibir. Los objetos secundarios (propiedades del objeto que se encuentran en sí mismos objetos) también pueden incluir eventos en el script. Esto no es recursivo, pero proporciona un mecanismo conveniente para el caso común, por ejemplo, para crear un contenedor y todos sus controles miembro.|  
+|SCRIPTITEM_ISVISIBLE|Indica que el nombre del elemento está disponible en el espacio de nombres del script, lo que permite el acceso a las propiedades, los métodos y los eventos del elemento. Por Convención, las propiedades del elemento incluyen los elementos secundarios del elemento; por lo tanto, se podrá acceder a todas las propiedades y métodos de los objetos secundarios (y sus elementos secundarios, de forma recursiva).|  
+|SCRIPTITEM_NOCODE|Indica que el elemento es simplemente un nombre que se agrega al espacio de nombres del script y no debe tratarse como un elemento para el que se debe asociar el código. Por ejemplo, si no se establece esta marca, VBScript creará un módulo independiente para el elemento con nombre C++ y podría crear una clase contenedora independiente para el elemento con nombre.|  
   
 ## <a name="return-value"></a>Valor devuelto  
- Devuelve uno de los siguientes valores:  
+ Devuelve uno de los valores siguientes:  
   
 |Valor devuelto|Significado|  
 |------------------|-------------|  
 |`S_OK`|Correcto.|  
 |`E_INVALIDARG`|Un argumento no era válido.|  
-|`E_POINTER`|Se especificó un puntero no válido.|  
-|`E_UNEXPECTED`|No se esperaba la llamada (por ejemplo, el motor de scripting no se ha cargado o inicializado).|  
+|`E_POINTER`|Se ha especificado un puntero no válido.|  
+|`E_UNEXPECTED`|No se esperaba la llamada (por ejemplo, el motor de scripting aún no se ha cargado o inicializado).|  
   
 ## <a name="see-also"></a>Vea también  
  [IActiveScript](../../winscript/reference/iactivescript.md)

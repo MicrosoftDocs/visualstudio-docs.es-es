@@ -23,12 +23,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 517cd2230430bf0758b729f50b1d947685aaf6be
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: b94deacad38f40d76b4c8485186bfd563808d912
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60052784"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445526"
 ---
 # <a name="custom-xml-parts-overview"></a>Información general sobre elementos XML personalizados
   Puede insertar datos XML en documentos para algunas aplicaciones de Microsoft Office. Al incrustar datos XML en un documento, los datos se denominan un *elemento XML personalizado*.
@@ -38,7 +38,7 @@ ms.locfileid: "60052784"
  **Se aplica a:** La información de este tema se aplica a los proyectos de nivel de documento y los proyectos de complemento VSTO para Excel, PowerPoint y Word. Para obtener más información, consulte [características disponibles por tipo de aplicación y el proyecto de Office](../vsto/features-available-by-office-application-and-project-type.md).
 
 > [!NOTE]
->  Visual Studio también permite almacenar en memoria caché objetos de datos en las personalizaciones de nivel de documento. Esta característica difiere de los elementos XML personalizados, aunque hay algunas similitudes. Para obtener más información, consulte [en caché los datos en las personalizaciones de nivel de documento](../vsto/cached-data-in-document-level-customizations.md).
+> Visual Studio también permite almacenar en memoria caché objetos de datos en las personalizaciones de nivel de documento. Esta característica difiere de los elementos XML personalizados, aunque hay algunas similitudes. Para obtener más información, consulte [en caché los datos en las personalizaciones de nivel de documento](../vsto/cached-data-in-document-level-customizations.md).
 
 ## <a name="understand-custom-xml-parts"></a>Comprender los elementos XML personalizados
  Los elementos XML personalizados se introdujeron en 2007 Microsoft Office System, junto con los formatos Open XML. Estos formatos incluyen nuevos formatos de archivo basado en XML para Excel, PowerPoint y Word (como *.xlsx*, *.pptx*, y *.docx*). Los documentos en estos formatos constan de archivos XML (también denominado *elementos XML*) que se organizan en carpetas en un archivo ZIP. La mayoría de los elementos XML son elementos integrados que ayudan a definir la estructura y el estado del documento. Sin embargo, los documentos también pueden contener elementos XML personalizados, que puede usar para almacenar datos XML arbitrarios en los documentos.
@@ -56,7 +56,7 @@ ms.locfileid: "60052784"
 - [Creación de documentos de Word 2007 con formatos XML abiertos](/previous-versions/office/developer/office-2007/bb264572(v=office.12))
 
 > [!NOTE]
->  Excel, Word y PowerPoint también permiten usar elementos XML personalizados en documentos guardados en los formatos de archivo binario. Sin embargo, si se guarda un documento en un formato binario, no se puede agregar o modificar elementos XML personalizados sin iniciar la aplicación de Microsoft Office.
+> Excel, Word y PowerPoint también permiten usar elementos XML personalizados en documentos guardados en los formatos de archivo binario. Sin embargo, si se guarda un documento en un formato binario, no se puede agregar o modificar elementos XML personalizados sin iniciar la aplicación de Microsoft Office.
 
 ## <a name="create-and-modify-custom-xml-parts"></a>Crear y modificar elementos XML personalizados
  Puede crear o modificar elementos XML personalizados cuando el documento está abierto en la aplicación de Office o cuando está cerrado, incluso si no está instalado Microsoft Office.

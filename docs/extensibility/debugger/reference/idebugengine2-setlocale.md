@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugEngine2::SetLocale
 ms.assetid: cd0d2cf1-2aac-43da-a830-4bb3d696c219
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 28eb188ed5b388ac642399630b1891e165d6c9a2
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 62330b3002486969af563413cf6f7893c9d7881d
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56703401"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66322383"
 ---
 # <a name="idebugengine2setlocale"></a>IDebugEngine2::SetLocale
 Establece la configuración regional del motor de depuración (DE).
@@ -36,10 +39,9 @@ int SetLocale( 
 );
 ```
 
-#### <a name="parameters"></a>Parámetros
- `wLangID`
-
- [in] Especifica la configuración regional de idioma. Por ejemplo, 1033 para inglés.
+## <a name="parameters"></a>Parámetros
+`wLangID`\
+[in] Especifica la configuración regional de idioma. Por ejemplo, 1033 para inglés.
 
 ## <a name="return-value"></a>Valor devuelto
  Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.

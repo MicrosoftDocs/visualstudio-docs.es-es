@@ -1,52 +1,46 @@
 ---
-title: Propiedades de documento XML, ventana Propiedades | Documentos de Microsoft
+title: Propiedades de documento XML, ventana Propiedades | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-xml-tools
 ms.topic: conceptual
 ms.assetid: 9dbb34d9-02ea-4201-b445-c98a0eb0d6db
 caps.latest.revision: 9
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: d4b1441ef6547fe955734fd7556b27a08781461c
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: f620cc2bd189dccf067c6276f760d21cde5cf05e
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59660663"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72669519"
 ---
 # <a name="xml-document-properties-properties-window"></a>Propiedades de documentos XML, Ventana Propiedades
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-El **propiedades** ventana proporciona información básica sobre el documento que está activo en el Editor XML. Las propiedades disponibles pueden variar según el tipo de documento XML que esté actualmente activo.  
-  
+La ventana **propiedades** proporciona información básica sobre el documento que está activo en el editor XML. Las propiedades disponibles pueden variar según el tipo de documento XML que esté actualmente activo.
+
 > [!NOTE]
->  Todas las propiedades del documento XML se guardan en la solución. Por tanto, no es necesario que vuelva a escribir estos valores la próxima vez que abra la solución.  
-  
- **Codificación**  
- La codificación de caracteres del archivo. Si cambia esta propiedad también cambia el atributo de codificación de la declaración XML, y viceversa. La nueva codificación se utilizará para codificar el archivo cuando lo guarde.  
-  
- **Entrada**  
- El documento de entrada asociado con la hoja de estilos XSLT. Está usando el **ShowXSLT salida** comando. Se puede seleccionar un documento mediante el examen (**...** ) botón.  
-  
- Esta propiedad solo está visible cuando hay un archivo XSLT activo en ese momento en la ventana del editor.  
-  
- **Salida**  
- El archivo que se genera al transformar un documento XML.  
-  
- Si no se especifica un archivo, se genera un nombre de archivo predeterminado basado en el atributo `method` del elemento `xsl:output` que determina la extensión de archivo. El archivo predeterminado está ubicado en el directorio temporal del usuario actual.  
-  
- **Esquemas**  
- Los esquemas que se utilizan en la validación. El botón abre el **esquemas XSD** cuadro de diálogo que puede usarse para seleccionar los esquemas que se va a usar.  
-  
- También puede introducir la ruta a los esquemas. Si se especifican varios esquemas, cada una de las rutas debe ir entre comillas dobles.  
-  
- **Stylesheet**  
- El archivo XSLT que se utiliza para transformar el documento cuando el **Mostrar resultado XSLT** se usa el comando. Si este campo está en blanco cuando el **Mostrar resultado XSLT** es utilizar el comando, el editor utiliza el valor proporcionado en el `xml-stylesheet` procesamiento de instrucciones de documento, o bien le pedirá el nombre de archivo.  
-  
- Al editar un archivo XSLT, esta propiedad puede utilizarse para especificar que debe ser una hoja de estilos diferentes cuando usa el **Mostrar resultado XSLT** o **depurar XSLT** comando está seleccionado. Por ejemplo, podría hacer esto cuando edita una hoja de estilos que se incluye en una hoja de estilos principal.  
-  
-## <a name="see-also"></a>Vea también  
- [Editor XML](../xml-tools/xml-editor.md)   
- [Componentes del Editor XML](../xml-tools/xml-editor-components.md)
+> Todas las propiedades del documento XML se guardan en la solución. Por tanto, no es necesario que vuelva a escribir estos valores la próxima vez que abra la solución.
+
+ **Codificación** Codificación de caracteres del archivo. Si cambia esta propiedad también cambia el atributo de codificación de la declaración XML, y viceversa. La nueva codificación se utilizará para codificar el archivo cuando lo guarde.
+
+ **Entrada** de Documento de entrada asociado a la hoja de estilos XSLT. Lo usa el comando de **salida ShowXSLT** . Se puede seleccionar un documento mediante el botón Examinar ( **...** ).
+
+ Esta propiedad solo está visible cuando hay un archivo XSLT activo en ese momento en la ventana del editor.
+
+ **Salida** de El archivo que se genera al transformar un documento XML.
+
+ Si no se especifica un archivo, se genera un nombre de archivo predeterminado basado en el atributo `method` del elemento `xsl:output` que determina la extensión de archivo. El archivo predeterminado está ubicado en el directorio temporal del usuario actual.
+
+ **Esquemas** Esquemas que se van a usar para la validación. El botón abre el cuadro de diálogo **esquemas XSD** , que se puede usar para seleccionar los esquemas que se van a utilizar.
+
+ También puede introducir la ruta a los esquemas. Si se especifican varios esquemas, cada una de las rutas debe ir entre comillas dobles.
+
+ **Hoja de estilos** Archivo XSLT que se usa para transformar el documento cuando se usa el comando **Mostrar salida XSLT** . Si este campo está en blanco cuando se usa el comando **Mostrar salida XSLT** , el editor usa el valor proporcionado en la `xml-stylesheet` instrucción de procesamiento del documento o le pide el nombre de archivo.
+
+ Al editar un archivo XSLT, esta propiedad se puede utilizar para especificar que se debe utilizar una hoja de estilos diferente cuando se selecciona el comando **Mostrar salida XSLT** o **depurar XSLT** . Por ejemplo, podría hacer esto cuando edita una hoja de estilos que se incluye en una hoja de estilos principal.
+
+## <a name="see-also"></a>Vea también
+ [Componentes del editor XML](../xml-tools/xml-editor-components.md) del [Editor XML](../xml-tools/xml-editor.md)

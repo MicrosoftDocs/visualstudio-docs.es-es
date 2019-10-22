@@ -12,11 +12,11 @@ caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 0eae2fd7490269d713beb9950163071dd3ba32f5
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58987350"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68160560"
 ---
 # <a name="strings-element"></a>Strings (Elemento)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,13 +39,13 @@ El elemento de cadenas debe contener al menos un **ButtonText** elemento secunda
   
 ### <a name="attributes"></a>Atributos  
   
-|Atributo|Descripción|  
+|Atributo|DESCRIPCIÓN|  
 |---------------|-----------------|  
-|lenguaje|Opcional. Language = ".".|  
+|language|Opcional. Language = ".".|  
   
 ### <a name="child-elements"></a>Elementos secundarios  
   
-|Elemento|Descripción|  
+|Elemento|DESCRIPCIÓN|  
 |-------------|-----------------|  
 |ButtonText|Este campo y los cinco campos de texto siguiente en una definición de comando le permiten especificar el texto que aparece en varios menús. De forma predeterminada, el `ButtonText` campo aparece en los controladores de menú. El `ButtonText` campo también se convierte el valor predeterminado en si los demás campos de texto están en blanco. El `ButtonText` campo no puede estar en blanco, incluso si se especifican los demás campos de texto.|  
 |ToolTipText|El `ToolTipText` campo especifica el texto que aparece en la información sobre herramientas para un elemento de menú.<br /><br /> Si el `ToolTipText` campo está en blanco, el `ButtonText` se usa el campo.|  
@@ -56,7 +56,7 @@ El elemento de cadenas debe contener al menos un **ButtonText** elemento secunda
   
 ### <a name="parent-elements"></a>Elementos primarios  
   
-|Elemento|Descripción|  
+|Elemento|DESCRIPCIÓN|  
 |-------------|-----------------|  
 |[Button (Elemento)](../extensibility/button-element.md)|Define un elemento que el usuario puede interactuar con.|  
 |[Menu (Elemento)](../extensibility/menu-element.md)|Define un elemento de menú único.|  

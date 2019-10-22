@@ -6,17 +6,17 @@ helpviewer_keywords:
 - project properties, supporting with Visual Studio SDK
 - configuration properties, supporting with Visual Studio SDK
 ms.assetid: 9fcfaa0f-7b41-4b68-82ec-7a151dca5d7e
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d98755912674670d614d4b063075500427c1d996
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: f0428e2af6e273e961815ec2521ae26afb5e844d
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56604683"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66322401"
 ---
 # <a name="support-for-project-and-configuration-properties"></a>Compatibilidad con las propiedades de proyecto y configuración
 El **propiedades** ventana en la [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] el entorno de desarrollo integrado (IDE) puede mostrar las propiedades de configuración y el proyecto. Puede proporcionar una página de propiedades para su propio tipo de proyecto para que el usuario puede establecer las propiedades de la aplicación.
@@ -51,7 +51,7 @@ El **propiedades** ventana en la [!INCLUDE[vsprvs](../../code-quality/includes/v
  Es responsabilidad del proyecto para conservar las propiedades del proyecto y la configuración del archivo del proyecto.
 
 > [!NOTE]
->  Un proyecto puede optimizar la persistencia por conservar los valores de propiedad única que difieren de los valores predeterminados.
+> Un proyecto puede optimizar la persistencia por conservar los valores de propiedad única que difieren de los valores predeterminados.
 
 ## <a name="support-for-project-and-configuration-properties"></a>Compatibilidad con las propiedades de proyecto y configuración
  La `Microsoft.VisualStudio.Package.SettingsPage` clase implementa las páginas de propiedades de configuración y el proyecto. La implementación predeterminada de `SettingsPage` ofrece propiedades públicas a un usuario en una cuadrícula de propiedades genéricas. El `Microsoft.VisualStudio.Package.HierarchyNode.GetPropertyPageGuids` método selecciona las clases derivadas de `SettingsPage` para las cuadrículas de propiedades del proyecto. El `Microsoft.VisualStudio.Package.ProjectNode.GetConfigPropertyPageGuids` método selecciona las clases derivadas de `SettingsPage` para las cuadrículas de propiedades de configuración. El tipo de proyecto debe invalidar estos métodos para seleccionar las páginas de propiedades adecuado.
@@ -63,7 +63,7 @@ El **propiedades** ventana en la [!INCLUDE[vsprvs](../../code-quality/includes/v
 - `Microsoft.VisualStudio.Package.SettingsPage.GetConfigProperty` y `Microsoft.VisualStudio.Package.SettingsPage.SetConfigProperty` conservar las propiedades de configuración.
 
   > [!NOTE]
-  >  Las implementaciones de la `Microsoft.VisualStudio.Package.SettingsPage` y `Microsoft.VisualStudio.Package.ProjectNode` clases utilizan el `Microsoft.Build.BuildEngine` métodos (MSBuild) para obtener y establecer propiedades del proyecto y la configuración en el archivo de proyecto.
+  > Las implementaciones de la `Microsoft.VisualStudio.Package.SettingsPage` y `Microsoft.VisualStudio.Package.ProjectNode` clases utilizan el `Microsoft.Build.BuildEngine` métodos (MSBuild) para obtener y establecer propiedades del proyecto y la configuración en el archivo de proyecto.
 
   La clase se deriva de `SettingsPage` debe implementar `Microsoft.VisualStudio.Package.SettingsPage.ApplyChanges` y `Microsoft.VisualStudio.Package.SettingsPage.BindProperties` para conservar las propiedades de configuración del proyecto o del archivo del proyecto.
 
@@ -81,7 +81,7 @@ El **propiedades** ventana en la [!INCLUDE[vsprvs](../../code-quality/includes/v
  El <xref:System.ComponentModel.CategoryAttribute>, <xref:System.ComponentModel.DisplayNameAttribute>, y <xref:System.ComponentModel.DescriptionAttribute> atributos determinan el diseño, el etiquetado y la descripción de las propiedades de configuración y el proyecto en una página de propiedades genéricas. Estos atributos determinar la categoría, nombre para mostrar y descripción de la opción, respectivamente.
 
 > [!NOTE]
->  Atributos equivalentes, SRCategory, LocDisplayName y SRDescription, use los recursos de cadena para la localización y se definen en [MPF de proyectos: Visual Studio 2013](https://github.com/tunnelvisionlabs/MPFProj10).
+> Atributos equivalentes, SRCategory, LocDisplayName y SRDescription, use los recursos de cadena para la localización y se definen en [MPF de proyectos: Visual Studio 2013](https://github.com/tunnelvisionlabs/MPFProj10).
 
  Observe el fragmento de código siguiente:
 

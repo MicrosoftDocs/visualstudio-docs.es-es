@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f3f3537a56b746c9104898d68e40038fcd545910
-ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
+ms.openlocfilehash: 30c67bb85a7cf72090ea37680daa12933c44b0cb
+ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "58856465"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68870164"
 ---
 # <a name="get-started-with-unit-testing"></a>Introducción a las pruebas unitarias
 
@@ -24,10 +24,19 @@ Use Visual Studio para definir y ejecutar pruebas unitarias para conservar el es
 
 En esta sección se describe de forma general cómo se crea un proyecto de prueba unitaria.
 
-> [!TIP]
-> El proyecto que se va a probar, "HelloWorldCore", es un proyecto de ejemplo y no se mostrará ningún código relacionado con él. Si quiere crear un proyecto "Hola mundo" para probarlo, vea [Uso de Visual Studio para crear la primera aplicación de consola de C#](../ide/quickstart-csharp-console.md). Para obtener un artículo con un tutorial completo, vea [Crear y ejecutar pruebas unitarias en código administrado](walkthrough-creating-and-running-unit-tests-for-managed-code.md).
-
 1. Abra el proyecto que quiere probar en Visual Studio.
+
+   Para los fines de demostración de una prueba unitaria de ejemplo, en este artículo se prueba un proyecto "Hola mundo" sencillo. El código de ejemplo para dicho proyecto es el siguiente:
+
+   ```csharp
+   public class Program
+   {
+       public static void Main()
+       {
+           Console.WriteLine("Hello World!");
+       }
+   }
+   ```
 
 1. En el **Explorador de soluciones**, seleccione el nodo de la solución. Después, en la barra de menús superior, seleccione **Archivo** > **Agregar** > **Nuevo proyecto**.
 
@@ -62,6 +71,9 @@ En esta sección se describe de forma general cómo se crea un proyecto de prueb
 1. Agregue código al método de prueba unitaria.
 
    ![Incorporación de código al método de prueba unitaria en Visual Studio](media/vs-2019/unit-test-method.png)
+
+> [!TIP]
+> Para obtener un tutorial más detallado sobre la creación de pruebas unitarias, vea [Crear y ejecutar pruebas unitarias en código administrado](walkthrough-creating-and-running-unit-tests-for-managed-code.md).
 
 ## <a name="run-unit-tests"></a>Ejecutar pruebas unitarias
 
@@ -154,6 +166,8 @@ Para crear pruebas unitarias que usen [NUnit](https://nunit.org/):
 
 4. Agregue una referencia del proyecto de prueba al proyecto que contiene el código que quiera probar.
 
+   Haga clic con el botón derecho en el proyecto en el **Explorador de soluciones** y, luego, seleccione **Agregar** > **Referencia**. (También puede agregar una referencia del menú contextual del nodo **Referencias** o **Dependencias**).
+
 5. Agregue código a al método de prueba.
 
    ![Adición de código al archivo de prueba unitaria](media/vs-2019/unit-test-method.png)
@@ -164,6 +178,6 @@ Para crear pruebas unitarias que usen [NUnit](https://nunit.org/):
 
 * [Tutorial: Crear y ejecutar pruebas unitarias en código administrado](walkthrough-creating-and-running-unit-tests-for-managed-code.md)
 * [Crear un comando de pruebas unitarias](create-unit-tests-menu.md)
-* [Generate tests with IntelliTest (Generación de pruebas con IntelliTest)](generate-unit-tests-for-your-code-with-intellitest.md)
-* [Run tests with Test Explorer (Ejecución de pruebas con el Explorador de pruebas)](run-unit-tests-with-test-explorer.md)
+* [Generate tests with IntelliTest](generate-unit-tests-for-your-code-with-intellitest.md) (Generar pruebas con IntelliTest)
+* [Ejecutar pruebas con el Explorador de pruebas](run-unit-tests-with-test-explorer.md)
 * [Análisis de la cobertura de código](using-code-coverage-to-determine-how-much-code-is-being-tested.md)

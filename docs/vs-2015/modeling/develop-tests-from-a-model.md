@@ -11,12 +11,12 @@ caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 1cd9619eae1f0c74cb7b8096d6c51163157d934c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 9ab0d9ae382f9410418a98fea606eebbb236b157
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60042059"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67823331"
 ---
 # <a name="develop-tests-from-a-model"></a>Desarrollar pruebas en un modelo
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,7 +36,7 @@ Puede usar modelos arquitectónicos y modelos de requisitos que le ayuden a orga
   
  En las pruebas de los subsistemas se aplican los mismos principios a los componentes principales de un sistema. Cada componente se prueba por separado de los otros componentes. Las pruebas de los subsistemas se centran en el comportamiento visible de las interfaces de usuario o la API de los componentes.  
   
- Para obtener más información acerca de cómo ejecutar pruebas, vea [probar la aplicación](http://msdn.microsoft.com/library/796b7d6d-ad45-4772-9719-55eaf5490dac).  
+ Para obtener más información acerca de cómo ejecutar pruebas, vea [probar la aplicación](https://msdn.microsoft.com/library/796b7d6d-ad45-4772-9719-55eaf5490dac).  
   
 ## <a name="deriving-system-tests-from-a-requirements-model"></a>Derivar pruebas del sistema de un modelo de requisitos  
  Puede crear y mantener una relación entre las pruebas del sistema y un modelo de requisitos. Para establecer esta relación, escriba las pruebas que correspondan a los elementos principales del modelo de requisitos. Visual Studio le permitirá crear vínculos entre las pruebas y los elementos del modelo para ayudarle a mantener esa relación. Para obtener más información acerca de los modelos de requisitos, consulte [modelar los requisitos del usuario](../modeling/model-user-requirements.md).  
@@ -52,9 +52,9 @@ Puede usar modelos arquitectónicos y modelos de requisitos que le ayuden a orga
   
 - Cree pruebas independientes basadas en las distintas cláusulas de la condición posterior. Por ejemplo, cree pruebas distintas para notificar el pedido al restaurante y para realizar el pago del cliente. Esta separación tiene las siguientes ventajas:  
   
-    - Los cambios en los distintos aspectos de los requisitos suelen producirse de forma independiente. Al dividir las pruebas en diferentes aspectos de esta manera, resulta más sencillo actualizar las pruebas cuando cambian los requisitos.  
-  
-    - Si el plan de desarrollo implementa un aspecto del caso de uso antes que otro, puede habilitar las pruebas de forma independiente a medida que progresa el desarrollo.  
+  - Los cambios en los distintos aspectos de los requisitos suelen producirse de forma independiente. Al dividir las pruebas en diferentes aspectos de esta manera, resulta más sencillo actualizar las pruebas cuando cambian los requisitos.  
+
+  - Si el plan de desarrollo implementa un aspecto del caso de uso antes que otro, puede habilitar las pruebas de forma independiente a medida que progresa el desarrollo.  
   
 - Cuando diseñe las pruebas, separe los datos de la prueba que ha elegido del código o del script que determina si se ha logrado la condición posterior. Por ejemplo, una prueba de una función aritmética sencilla podría ser: Entrada 4; Compruebe que el resultado es 2. En su lugar, diseñe el script como: Elija una entrada; multiplique el resultado por sí mismo y compruebe que el resultado es la entrada original. Este estilo permite variar las entradas de prueba sin cambiar el cuerpo principal de la prueba.  
   
@@ -63,9 +63,9 @@ Puede usar modelos arquitectónicos y modelos de requisitos que le ayuden a orga
   
 ###### <a name="to-link-tests-to-a-use-case"></a>Para vincular las pruebas a un caso de uso  
   
-1. En [!INCLUDE[TCMlong](../includes/tcmlong-md.md)], cree un requisito y base en él un conjunto de pruebas. Para obtener información sobre cómo hacerlo, consulte [probar la aplicación](http://msdn.microsoft.com/library/796b7d6d-ad45-4772-9719-55eaf5490dac).  
+1. En [!INCLUDE[TCMlong](../includes/tcmlong-md.md)], cree un requisito y base en él un conjunto de pruebas. Para obtener información sobre cómo hacerlo, consulte [probar la aplicación](https://msdn.microsoft.com/library/796b7d6d-ad45-4772-9719-55eaf5490dac).  
   
-    El requisito que cree será un elemento de trabajo de [!INCLUDE[vstsTfsShort](../includes/vststfsshort-md.md)]. Puede ser un elemento de trabajo de caso de usuario, requisito o caso de uso según la plantilla de proceso que use el proyecto con [!INCLUDE[esprfound](../includes/esprfound-md.md)]. Para obtener más información, consulte [seguimiento del trabajo mediante Visual Studio Team Services o Team Foundation Server](http://msdn.microsoft.com/library/52aa8bc9-fc7e-4fae-9946-2ab255ca7503).  
+    El requisito que cree será un elemento de trabajo de [!INCLUDE[vstsTfsShort](../includes/vststfsshort-md.md)]. Puede ser un elemento de trabajo de caso de usuario, requisito o caso de uso según la plantilla de proceso que use el proyecto con [!INCLUDE[esprfound](../includes/esprfound-md.md)]. Para obtener más información, consulte [seguimiento del trabajo mediante Visual Studio Team Services o Team Foundation Server](https://msdn.microsoft.com/library/52aa8bc9-fc7e-4fae-9946-2ab255ca7503).  
   
 2. Vincule el elemento de trabajo de requisito a uno o varios casos de uso del modelo.  
   
@@ -106,7 +106,7 @@ Assert (countAfter == countBefore = 1);
   
  Muchos de los descriptores de acceso y actualizadores ya estarán disponibles a través de la API normal de la aplicación. Pero, para habilitar las pruebas, es posible que tenga que escribir algunas funciones adicionales. Estos descriptores de acceso adicionales y actualizadores a veces se conocen como “instrumentación de pruebas”. Dado que dependen del diseño interno del sistema, proporcionarlos es responsabilidad de los desarrolladores del mismo, mientras que los evaluadores escriben el código de las pruebas en términos del modelo de requisitos.  
   
- Al escribir pruebas automatizadas, puede usar pruebas genéricas para encapsular los descriptores de acceso y actualizadores. Para obtener más información, consulte [crear una prueba automatizada que ejecuta una aplicación ejecutable mediante pruebas genéricas](http://msdn.microsoft.com/library/b8dadaf4-4473-49c5-a0d9-46eca9e65d52).  
+ Al escribir pruebas automatizadas, puede usar pruebas genéricas para encapsular los descriptores de acceso y actualizadores. Para obtener más información, consulte [crear una prueba automatizada que ejecuta una aplicación ejecutable mediante pruebas genéricas](https://msdn.microsoft.com/library/b8dadaf4-4473-49c5-a0d9-46eca9e65d52).  
   
 ### <a name="tests-for-business-rules"></a>Pruebas para reglas de negocios  
  Algunos requisitos no están relacionados directamente con ningún caso de uso. Por ejemplo, el negocio DinnerNow permite a los clientes elegir entre un gran número de menús pero requiere que en cada pedido todos los elementos elegidos provengan de un único menú. Esta regla de negocios puede expresarse como una invariante acerca de las asociaciones entre pedidos, menús y elementos en el modelo de clase de requisitos.  
@@ -164,9 +164,9 @@ Assert (countAfter == countBefore = 1);
   
 #### <a name="to-link-tests-to-a-model-element-or-relationship"></a>Para vincular las pruebas a un elemento del modelo o la relación  
   
-1. En [!INCLUDE[TCMlong](../includes/tcmlong-md.md)], cree un requisito y base en él un conjunto de pruebas. Para obtener información sobre cómo hacerlo, consulte [probar la aplicación](http://msdn.microsoft.com/library/796b7d6d-ad45-4772-9719-55eaf5490dac).  
+1. En [!INCLUDE[TCMlong](../includes/tcmlong-md.md)], cree un requisito y base en él un conjunto de pruebas. Para obtener información sobre cómo hacerlo, consulte [probar la aplicación](https://msdn.microsoft.com/library/796b7d6d-ad45-4772-9719-55eaf5490dac).  
   
-     El requisito que cree será un elemento de trabajo de [!INCLUDE[vstsTfsShort](../includes/vststfsshort-md.md)]. Puede ser un elemento de trabajo de caso de usuario, requisito o caso de uso según la plantilla de proceso que use el proyecto con [!INCLUDE[esprfound](../includes/esprfound-md.md)]. Para obtener más información, consulte [seguimiento del trabajo mediante Visual Studio Team Services o Team Foundation Server](http://msdn.microsoft.com/library/52aa8bc9-fc7e-4fae-9946-2ab255ca7503).  
+     El requisito que cree será un elemento de trabajo de [!INCLUDE[vstsTfsShort](../includes/vststfsshort-md.md)]. Puede ser un elemento de trabajo de caso de usuario, requisito o caso de uso según la plantilla de proceso que use el proyecto con [!INCLUDE[esprfound](../includes/esprfound-md.md)]. Para obtener más información, consulte [seguimiento del trabajo mediante Visual Studio Team Services o Team Foundation Server](https://msdn.microsoft.com/library/52aa8bc9-fc7e-4fae-9946-2ab255ca7503).  
   
 2. Vincule el elemento de trabajo de requisito a uno o varios elementos del modelo.  
   

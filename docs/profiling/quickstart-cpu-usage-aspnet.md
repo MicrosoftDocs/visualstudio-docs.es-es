@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - aspnet
-ms.openlocfilehash: b21e9b1735f7d6e631d25cecb2923662625400c0
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: cbaaa53fe737761fdd938b7861c371e8e5619acc
+ms.sourcegitcommit: 53bc4c11b82882ab658e34c65ae374060f823531
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56634063"
+ms.lasthandoff: 09/19/2019
+ms.locfileid: "71128170"
 ---
 # <a name="quickstart-analyze-cpu-usage-data-in-visual-studio-aspnet"></a>Inicio rápido: Analizar datos de uso de la CPU en Visual Studio (ASP.NET)
 
@@ -31,7 +31,7 @@ Para ejecutar las herramientas de generación de perfiles con el depurador se re
 
 1. En Visual Studio, seleccione **Archivo** > **Nuevo proyecto**.
 
-1. En **Visual C#**, seleccione **Web** y, después, en el panel central, seleccione **Aplicación web ASP.NET (.NET Framework)**.
+1. En **Visual C#** , seleccione **Web** y, después, en el panel central, seleccione **Aplicación web ASP.NET (.NET Framework)** .
 
     Si no ve la plantilla de proyecto **Aplicación web de ASP.NET**, haga clic en el vínculo **Abrir el instalador de Visual Studio** en el panel izquierdo del cuadro de diálogo **Nuevo proyecto**. Se iniciará el Instalador de Visual Studio. Elija la carga de trabajo **Desarrollo de ASP.NET y web** y después elija **Modificar**.
 
@@ -153,30 +153,30 @@ Para ejecutar las herramientas de generación de perfiles con el depurador se re
     }
     ```
 
-##  <a name="step-1-collect-profiling-data"></a>Paso 1: Recopilar datos de generación de perfiles
+## <a name="step-1-collect-profiling-data"></a>Paso 1: Recopilar datos de generación de perfiles
 
-1.  En primer lugar, establezca un punto de interrupción en la aplicación en esta línea de código en el constructor `Simple`:
+1. En primer lugar, establezca un punto de interrupción en la aplicación en esta línea de código en el constructor `Simple`:
 
     `for (int i = 0; i < 200; i++)`
 
     Para establecer un punto de interrupción, haga clic en el margen interno a la izquierda de la línea de código.
 
-1.  Después, establezca un segundo punto de interrupción en la llave de cierre al final del constructor `Simple`:
+1. Después, establezca un segundo punto de interrupción en la llave de cierre al final del constructor `Simple`:
 
      ![Establecer puntos de interrupción para la generación de perfiles](../profiling/media/quickstart-cpu-usage-breakpoints-aspnet.png)
 
     > [!TIP]
     > Al establecer dos puntos de interrupción, puede limitar la recopilación de datos a las partes del código que quiere analizar.
 
-1.  La ventana **Herramientas de diagnóstico** ya es visible, a menos que se haya desactivado. Para que la ventana se vuelva a mostrar, haga clic en **Depurar** > **Windows** > **Mostrar Herramientas de diagnóstico**.
+1. La ventana **Herramientas de diagnóstico** ya es visible, a menos que se haya desactivado. Para que la ventana se vuelva a mostrar, haga clic en **Depurar** > **Windows** > **Mostrar Herramientas de diagnóstico**.
 
-1.  Haga clic en **Depurar** > **Iniciar depuración** (o en **Inicio** en la barra de herramientas, o presione **F5**).
+1. Haga clic en **Depurar** > **Iniciar depuración** (o en **Inicio** en la barra de herramientas, o presione **F5**).
 
-1.  Cuando la aplicación termine de cargarse, haga clic en el vínculo **Acerca de** en la parte superior de la página web para empezar a ejecutar el código nuevo.
+1. Cuando la aplicación termine de cargarse, haga clic en el vínculo **Acerca de** en la parte superior de la página web para empezar a ejecutar el código nuevo.
 
-1.  Mire la vista **Resumen** de las Herramientas de diagnóstico que aparece.
+1. Mire la vista **Resumen** de las Herramientas de diagnóstico que aparece.
 
-1.  Mientras el depurador está en pausa, habilite la recopilación de datos de uso de la CPU mediante la selección de **Registrar perfil CPU** y, después, abra la pestaña **Uso de CPU**.
+1. Mientras el depurador está en pausa, habilite la recopilación de datos de uso de la CPU mediante la selección de **Registrar perfil CPU** y, después, abra la pestaña **Uso de CPU**.
 
      ![Herramientas de diagnóstico para habilitar la generación de perfiles de CPU](../profiling/media/quickstart-cpu-usage-summary.png)
 
@@ -184,7 +184,7 @@ Para ejecutar las herramientas de generación de perfiles con el depurador se re
 
      Al seleccionar **Registrar perfil CPU**, Visual Studio iniciará la grabación de las funciones y cuánto tiempo se tardan en ejecutar, y también proporciona un gráfico de escala de tiempo que se puede usar para centrarse en segmentos específicos de la sesión de muestreo. Estos datos recopilados solo se pueden ver cuando la aplicación se detiene en un punto de interrupción.
 
-6.  Presione F5 para ejecutar la aplicación hasta el segundo punto de interrupción.
+6. Presione F5 para ejecutar la aplicación hasta el segundo punto de interrupción.
 
      Ahora tiene los datos de rendimiento de la aplicación específicamente para la región de código que se ejecuta entre los dos puntos de interrupción.
 
@@ -228,5 +228,5 @@ Se recomienda que, para empezar a analizar los datos, examine la lista de funcio
 
 ## <a name="see-also"></a>Vea también
 
-- [Generación de perfiles en Visual Studio](../profiling/index.md)
+- [Generación de perfiles en Visual Studio](../profiling/index.yml)
 - [Primer vistazo a la generación de perfiles](../profiling/profiling-feature-tour.md)

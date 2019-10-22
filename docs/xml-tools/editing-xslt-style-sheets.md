@@ -3,45 +3,45 @@ title: Editar hojas de estilos XSLT
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 080bed0f-0ca9-4be7-aecd-6bdaebc04007
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: dab4013bf3921a2af4f69d464c10d1e70f9407b3
-ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
+ms.openlocfilehash: 7fc987f8362d5daf435b7e9de860cc13f16a1aaf
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "57526209"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72646055"
 ---
 # <a name="edit-xslt-style-sheets"></a>Editar hojas de estilos XSLT
 
-También se puede usar el editor XML para editar hojas de estilos XSLT. Puede aprovechar las características predeterminadas del editor como IntelliSense, esquematización, fragmentos XML, etc. Además, se incluyen también nuevas características que facilitan la programación en XSLT.
+El editor XML también se puede utilizar para editar hojas de estilos XSLT. Puede aprovechar las características predeterminadas del editor como IntelliSense, esquematización, fragmentos XML, etc. Además, se incluyen también nuevas características que facilitan la programación en XSLT.
 
 ## <a name="xslt-features"></a>Características XSLT
 
 En la siguiente tabla se describen características específicas del trabajo con hojas de estilos XSLT.
 
-**Color de sintaxis**
+**Color de la sintaxis**
 
-Las palabras clave XSLT, como `template` y `match`, se muestran en el color de palabra clave XSLT especificado por el **fuentes y colores** configuración.
+Las palabras clave XSLT, como `template` y `match`, se muestran en el color de palabra clave XSLT especificado por la configuración de **fuentes y colores** .
 
-**Subrayado ondulado**
+**Subrayados ondulados**
 
-El editor XML utiliza el instalado *xslt.xsd* archivo para validar las hojas de estilos XSLT. Los errores de validación se muestran con un subrayado ondulado de color azul. El editor XML también compila la hoja de estilos en segundo plano y del compilador informa de los errores o advertencias con un subrayado ondulado adecuado.
+El editor XML utiliza el archivo *XSLT. xsd* instalado para validar las hojas de estilos XSLT. Los errores de validación se muestran con un subrayado ondulado de color azul. El editor XML también compila la hoja de estilos en segundo plano e informa de los errores o advertencias del compilador con el subrayado ondulado adecuado.
 
 **Compatibilidad con bloques de scripts**
 
 El depurador de XSLT admite el código en bloques de scripts, de modo que puede definir puntos de interrupción y examinar el código del bloque de script.
 
-**Ver el resultado XSLT**
+**Ver salida XSLT**
 
-Puede ejecutar una transformación XSL y ver la salida desde el editor XML. Para obtener más información, vea [Cómo: Ejecutar una transformación XSLT desde el editor XML](../xml-tools/how-to-execute-an-xslt-transformation-from-the-xml-editor.md).
+Puede ejecutar una transformación XSL y ver el resultado desde el editor XML. Para obtener más información, vea [Cómo: ejecutar una transformación XSLT desde el editor XML](../xml-tools/how-to-execute-an-xslt-transformation-from-the-xml-editor.md).
 
 **Depurar XSLT**
 
-Puede iniciar al depurador de XSLT desde un archivo XSLT en el editor XML. El depurador admite la definición de puntos de interrupción en el archivo XSLT, la visualización del estado de ejecución de XSLT, etc. Al mantener el mouse sobre una variable XSLT se muestra un cuadro de información sobre herramientas con el valor de la variable. El depurador se puede utilizar para depurar una hoja de estilos o para depurar una transformación XSL compilada invocada desde otra aplicación. Para obtener más información, consulte [depuración XSLT](../xml-tools/debugging-xslt.md).
+Puede iniciar el depurador de XSLT desde un archivo XSLT en el editor XML. El depurador admite la definición de puntos de interrupción en el archivo XSLT, la visualización del estado de ejecución de XSLT, etc. Al mantener el mouse sobre una variable XSLT se muestra un cuadro de información sobre herramientas con el valor de la variable. El depurador se puede utilizar para depurar una hoja de estilos o para depurar una transformación XSL compilada invocada desde otra aplicación. Para obtener más información, vea [depuración de XSLT](../xml-tools/debugging-xslt.md).
 
 ## <a name="see-also"></a>Vea también
 

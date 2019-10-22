@@ -13,11 +13,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 91a4a50ecc745c0b56167d6a5dbb1932af7ed2bf
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54752657"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68145420"
 ---
 # <a name="understanding-sampling-data-values"></a>Introducción a los valores de datos de muestreo
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -53,5 +53,5 @@ El método de generación de perfiles de *muestreo* de las herramientas de gener
  El porcentaje del número total de muestras exclusivas de la generación de perfiles que son muestras exclusivas de la función o el rango de datos.  
   
 ## <a name="see-also"></a>Vea también  
- [Cómo: Elegir métodos de recopilación](../profiling/how-to-choose-collection-methods.md)   
+ [Cómo: Elegir métodos de colección](../profiling/how-to-choose-collection-methods.md)   
  [Analizar datos de herramientas de rendimiento](../profiling/analyzing-performance-tools-data.md)

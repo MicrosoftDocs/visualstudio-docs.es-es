@@ -1,5 +1,5 @@
 ---
-title: IPerPropertyBrowsing2::MapPropertyToPage | Microsoft Docs
+title: 'Iperpropertybrowsing2 (:: MapPropertyToPage | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,12 +17,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 77270bbe963f281a43a085cb7d15724b7b2ec14e
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: e9e3f821d9e02be567f970d8db1c238ee5cebd29
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58144763"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72577126"
 ---
 # <a name="iperpropertybrowsing2mappropertytopage"></a>IPerPropertyBrowsing2::MapPropertyToPage
 Devuelve el CLSID de la página de propiedades que se puede usar para editar esta propiedad.  
@@ -38,13 +38,13 @@ HRESULT MapPropertyToPage(
   
 #### <a name="parameters"></a>Parámetros  
  `dispid`  
- [in] Identificador de envío de la propiedad de interés.  
+ de Identificador de envío de la propiedad de interés.  
   
  `pClsidPropPage`  
- [out] Puntero al CLSID que identifica la página de propiedades asociada con la propiedad. Si este método produce un error, *`pClsidPropPage` se establece en CLSID_NULL.  
+ enuncia Puntero al CLSID que identifica la página de propiedades asociada a la propiedad. Si se produce un error en este método, * `pClsidPropPage` se establece en CLSID_NULL.  
   
 ## <a name="return-value"></a>Valor devuelto  
- Devuelve un válidas `HRESULT`, normalmente `S_OK`.  
+ Devuelve un `HRESULT` válido, normalmente `S_OK`.  
   
 ## <a name="see-also"></a>Vea también  
  [IPerPropertyBrowsing2 (Interfaz) 1](../../winscript/reference/iperpropertybrowsing2-interface-1.md)

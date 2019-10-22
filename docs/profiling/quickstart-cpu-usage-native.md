@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 8245c8a3decdd9e9576d3a24b37df4971dbb9284
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 2f2587d621715e6e04edade779116e22d021072c
+ms.sourcegitcommit: 53bc4c11b82882ab658e34c65ae374060f823531
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56633712"
+ms.lasthandoff: 09/19/2019
+ms.locfileid: "71128181"
 ---
 # <a name="quickstart-analyze-cpu-usage-data-in-visual-studio-c"></a>Inicio rápido: Analizar datos de uso de CPU en Visual Studio (C++)
 
@@ -32,7 +32,7 @@ Para ejecutar las herramientas de generación de perfiles con el depurador se re
 
 1. En Visual Studio, seleccione **Archivo** > **Nuevo proyecto**.
 
-2. Bajo **Visual C++**, seleccione **Escritorio de Windows** y, después, elija **Aplicación de consola Windows** en el panel central.
+2. Bajo **Visual C++** , seleccione **Escritorio de Windows** y, después, elija **Aplicación de consola Windows** en el panel central.
 
     Si no ve la plantilla de proyecto **Aplicación de consola Windows**, haga clic en el vínculo **Abrir el instalador de Visual Studio** en el panel izquierdo del cuadro de diálogo **Nuevo proyecto**. Se iniciará el Instalador de Visual Studio. Seleccione la carga de trabajo **Desarrollo para el escritorio con C++** y, luego, elija **Modificar**.
 
@@ -115,26 +115,26 @@ Para ejecutar las herramientas de generación de perfiles con el depurador se re
 
 ## <a name="step-1-collect-profiling-data"></a>Paso 1: Recopilar datos de generación de perfiles
 
-1.  En primer lugar, establezca un punto de interrupción en la aplicación en esta línea de código en la función `main`:
+1. En primer lugar, establezca un punto de interrupción en la aplicación en esta línea de código en la función `main`:
 
     `for (int i = 0; i < 10; ++i) {`
 
     Para establecer un punto de interrupción, haga clic en el margen interno a la izquierda de la línea de código.
 
-2.  Después, establezca un segundo punto de interrupción en la llave de cierre al final de la función `main`:
+2. Después, establezca un segundo punto de interrupción en la llave de cierre al final de la función `main`:
 
      ![Establecer puntos de interrupción para la generación de perfiles](../profiling/media/quickstart-cpu-usage-breakpoints-cplusplus.png "Establecer puntos de interrupción para la generación de perfiles")
 
     > [!TIP]
     > Al establecer dos puntos de interrupción, puede limitar la recopilación de datos a las partes del código que quiere analizar.
 
-3.  La ventana **Herramientas de diagnóstico** ya es visible, a menos que se haya desactivado. Para que la ventana se vuelva a mostrar, haga clic en **Depurar** > **Windows** > **Mostrar Herramientas de diagnóstico**.
+3. La ventana **Herramientas de diagnóstico** ya es visible, a menos que se haya desactivado. Para que la ventana se vuelva a mostrar, haga clic en **Depurar** > **Windows** > **Mostrar Herramientas de diagnóstico**.
 
-4.  Haga clic en **Depurar** > **Iniciar depuración** (o en **Inicio** en la barra de herramientas, o presione **F5**).
+4. Haga clic en **Depurar** > **Iniciar depuración** (o en **Inicio** en la barra de herramientas, o presione **F5**).
 
      Cuando la aplicación termine de cargarse, se muestra la vista **Resumen** de las Herramientas de diagnóstico.
 
-5.  Mientras el depurador está en pausa, habilite la recopilación de datos de uso de la CPU mediante la selección de **Registrar perfil CPU** y, después, abra la pestaña **Uso de CPU**.
+5. Mientras el depurador está en pausa, habilite la recopilación de datos de uso de la CPU mediante la selección de **Registrar perfil CPU** y, después, abra la pestaña **Uso de CPU**.
 
      ![Herramientas de diagnóstico para habilitar la generación de perfiles de CPU](../profiling/media/quickstart-cpu-usage-summary.png "Herramientas de diagnóstico para habilitar la generación de perfiles de CPU")
 
@@ -142,7 +142,7 @@ Para ejecutar las herramientas de generación de perfiles con el depurador se re
 
      Al seleccionar **Registrar perfil CPU**, Visual Studio iniciará la grabación de las funciones y cuánto tiempo se tardan en ejecutar, y también proporciona un gráfico de escala de tiempo que se puede usar para centrarse en segmentos específicos de la sesión de muestreo. Estos datos recopilados solo se pueden ver cuando la aplicación se detiene en un punto de interrupción.
 
-6.  Presione F5 para ejecutar la aplicación hasta el segundo punto de interrupción.
+6. Presione F5 para ejecutar la aplicación hasta el segundo punto de interrupción.
 
      Ahora tiene los datos de rendimiento de la aplicación específicamente para la región de código que se ejecuta entre los dos puntos de interrupción.
 
@@ -186,5 +186,5 @@ Se recomienda que, para empezar a analizar los datos, examine la lista de funcio
 
 ## <a name="see-also"></a>Vea también
 
-- [Generación de perfiles en Visual Studio](../profiling/index.md)
+- [Generación de perfiles en Visual Studio](../profiling/index.yml)
 - [Primer vistazo a la generación de perfiles](../profiling/profiling-feature-tour.md)

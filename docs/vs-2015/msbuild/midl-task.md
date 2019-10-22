@@ -28,11 +28,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: c1404ae5fce31eb59d2bb484ce1d97956f4cfefc
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60062040"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68191560"
 ---
 # <a name="midl-task"></a>MIDL (tarea)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -54,7 +54,7 @@ Encapsula la herramienta compilador de lenguaje de definición de interfaz de Mi
   
      Parámetro **String** opcional.  
   
-     Una lista de opciones de la línea de comandos. Por ejemplo, **"**_/option1 /option2 /option#_". Utilice este parámetro para especificar opciones de la línea de comandos que no están representadas por ningún otro parámetro de la tarea MIDL.  
+     Una lista de opciones de la línea de comandos. Por ejemplo, **"** _/option1 /option2 /option#_ ". Utilice este parámetro para especificar opciones de la línea de comandos que no están representadas por ningún otro parámetro de la tarea MIDL.  
   
      Para obtener más información, consulte "Referencia de la línea de comandos de MIDL" en el sitio web de [MSDN](http://go.microsoft.com/fwlink/?LinkId=737).  
   
@@ -144,7 +144,7 @@ Encapsula la herramienta compilador de lenguaje de definición de interfaz de Mi
   
      Si `true`, comprueba que los valores de enumeración están en un intervalo permitido.  
   
-     Para obtener más información, consulte la opción **/error enum** en la Ayuda de la línea de comandos (**/?**) de midl.exe.  
+     Para obtener más información, consulte la opción **/error enum** en la Ayuda de la línea de comandos ( **/?** ) de midl.exe.  
   
 - **ErrorCheckRefPointers**  
   
@@ -260,7 +260,7 @@ Encapsula la herramienta compilador de lenguaje de definición de interfaz de Mi
   
      Parámetro **String[]** opcional.  
   
-     Especifica uno o más *defines*; es decir, un nombre y un valor opcional que se pasará al preprocesador de C como si lo hiciera una directiva de `#define`. El formato de cada define es *name[=value]*.  
+     Especifica uno o más *defines*; es decir, un nombre y un valor opcional que se pasará al preprocesador de C como si lo hiciera una directiva de `#define`. El formato de cada define es *name[=value]* .  
   
      Para obtener más información, consulte la opción **/D** en "Referencia de la línea de comandos de MIDL" en el sitio web de [MSDN](http://go.microsoft.com/fwlink/?LinkId=737). Consulte también el parámetro **UndefinePreprocessorDefinitions** en esta tabla.  
   
@@ -324,7 +324,7 @@ Encapsula la herramienta compilador de lenguaje de definición de interfaz de Mi
   
      Parámetro `Boolean` opcional.  
   
-     Si es `true`, evita que se muestre el copyright y el mensaje de número de versión cuando la tarea se inicia.   
+     Si es `true`, evita que se muestre el copyright y el mensaje de número de versión cuando la tarea se inicia.  
   
      Para obtener más información, consulte la opción **/nologo** en "Referencia de la línea de comandos de MIDL" en el sitio web de [MSDN](http://go.microsoft.com/fwlink/?LinkId=737).  
   
@@ -420,5 +420,5 @@ Encapsula la herramienta compilador de lenguaje de definición de interfaz de Mi
   
 ## <a name="remarks"></a>Comentarios  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Otras referencias  
  [Referencia de tareas](../msbuild/msbuild-task-reference.md)

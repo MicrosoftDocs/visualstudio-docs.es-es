@@ -6,17 +6,17 @@ helpviewer_keywords:
 - debug engines, attaching to programs
 - debug engines, detaching from programs
 ms.assetid: 79dcbb9b-c7f8-40fc-8a00-f37fe1934f51
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9fe89c6106ab1b411974e44bb05128b2bfc99fc6
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 9edbabb078bc46c55431276e9c1fe8d1f807d76f
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60089608"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66350912"
 ---
 # <a name="attaching-and-detaching-to-a-program"></a>Asociación y desasociación a un programa
 Asociar al depurador requiere el envío de la secuencia correcta de métodos y eventos con los atributos adecuados.

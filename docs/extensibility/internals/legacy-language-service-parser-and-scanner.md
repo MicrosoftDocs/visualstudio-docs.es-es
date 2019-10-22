@@ -6,17 +6,17 @@ helpviewer_keywords:
 - parsers, language services [managed package framework]
 - language services [managed package framework], Parsers
 ms.assetid: 1ac3de27-a23b-438d-9593-389e45839cfa
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a92554843c1bdde48123515cb2548b2c513ef756
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 7b8ed17e67246479772636d67bc8d9f218a3a3fc
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60092310"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66333474"
 ---
 # <a name="legacy-language-service-parser-and-scanner"></a>Escáner y analizador del servicio de lenguaje heredado
 El analizador es el corazón del servicio de lenguaje. Las clases de lenguaje de Managed Package Framework (MPF) requieren un analizador de lenguaje para seleccionar la información sobre el código que se va a mostrar. Un analizador separa el texto en tokens léxicos y, a continuación, identifica esos tokens por tipo y funcionalidad.
@@ -66,7 +66,7 @@ namespace MyNamespace
  A diferencia de un analizador que se usa como parte de un compilador (donde los tokens se convierten en algún tipo de código ejecutable), se puede llamar un analizador del servicio de lenguaje por muchas razones diferentes y en muchos contextos diferentes. Cómo implementar este enfoque en el <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> método en el <xref:Microsoft.VisualStudio.Package.LanguageService> clase depende de usted. Es importante tener en cuenta que el <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> es posible que se llama al método en un subproceso en segundo plano.
 
 > [!CAUTION]
->  El <xref:Microsoft.VisualStudio.Package.ParseRequest> estructura contiene una referencia a la <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> objeto. Esto <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> objeto no se puede usar en el subproceso en segundo plano. De hecho, muchas de las clases MPF bases no se puede usar en el subproceso en segundo plano. Estos incluyen el <xref:Microsoft.VisualStudio.Package.Source>, <xref:Microsoft.VisualStudio.Package.ViewFilter>, <xref:Microsoft.VisualStudio.Package.CodeWindowManager> clases y cualquier otra clase que directa o indirectamente se comunica con la vista.
+> El <xref:Microsoft.VisualStudio.Package.ParseRequest> estructura contiene una referencia a la <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> objeto. Esto <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> objeto no se puede usar en el subproceso en segundo plano. De hecho, muchas de las clases MPF bases no se puede usar en el subproceso en segundo plano. Estos incluyen el <xref:Microsoft.VisualStudio.Package.Source>, <xref:Microsoft.VisualStudio.Package.ViewFilter>, <xref:Microsoft.VisualStudio.Package.CodeWindowManager> clases y cualquier otra clase que directa o indirectamente se comunica con la vista.
 
  Normalmente, este analizador analiza la hora del archivo el primer origen completo que se llame o cuando el análisis del valor de motivo <xref:Microsoft.VisualStudio.Package.ParseReason> se proporciona. Las llamadas posteriores a la <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> método controlar una pequeña parte del código analizado y se pueden ejecutar mucho más rápidamente mediante el uso de los resultados de la operación de análisis completo anterior. El <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> método comunica los resultados de la operación de análisis a través de la <xref:Microsoft.VisualStudio.Package.AuthoringSink> y <xref:Microsoft.VisualStudio.Package.AuthoringScope> objetos. La <xref:Microsoft.VisualStudio.Package.AuthoringSink> objeto se usa para recopilar información para un motivo concreto de análisis, por ejemplo, información sobre los intervalos de coincidencia de llaves o las firmas de método que tienen listas de parámetros. El <xref:Microsoft.VisualStudio.Package.AuthoringScope> proporciona colecciones de declaraciones y las firmas de método y también compatibilidad para ir a avanzada edición opción (**ir a definición**, **ir a declaración**, **vaya a Hacer referencia a**).
 

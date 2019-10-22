@@ -18,11 +18,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 951d5f39fbf3929d094cc18de5fe108b46753b09
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60056450"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68176526"
 ---
 # <a name="how-to-step-into-wcf-services"></a>Procedimiento Depuración paso a paso por instrucciones de servicios WCF
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -46,4 +46,4 @@ En [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)], puede entrar en u
 ## <a name="see-also"></a>Vea también  
  [Depuración de servicios WCF](../debugger/debugging-wcf-services.md)   
  [Limitaciones de la depuración de WCF](../debugger/limitations-on-wcf-debugging.md)   
- [Cómo: Depuración de un servicio WCF autohospedado](../debugger/how-to-debug-a-self-hosted-wcf-service.md)
+ [Procedimientos: Depuración de un servicio WCF autohospedado](../debugger/how-to-debug-a-self-hosted-wcf-service.md)

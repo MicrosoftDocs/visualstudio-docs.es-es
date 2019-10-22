@@ -7,17 +7,17 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugPropertyField interface
 ms.assetid: b50edb2c-fb8d-4def-993d-17d23d2027c1
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5c3376a6b8d6d269cac1f376e3f7f3f6f8a036f0
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: ecaf93a563627306b9fd1ab2e3adad0a83b412ab
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56709634"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66322709"
 ---
 # <a name="idebugpropertyfield"></a>IDebugPropertyField
 Esta interfaz proporciona las funciones que permiten obtener y establecer una propiedad.

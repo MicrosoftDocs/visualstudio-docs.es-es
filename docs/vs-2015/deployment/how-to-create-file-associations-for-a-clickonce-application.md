@@ -1,5 +1,5 @@
 ---
-title: Filtrar Crear asociaciones de archivo para una aplicación ClickOnce | Microsoft Docs
+title: Procedimiento Crear asociaciones de archivo para una aplicación ClickOnce | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-deployment
@@ -16,14 +16,14 @@ caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 42c7a65625d8e21ceff1070ccbc66d5881af853d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 82ffecdc719dad2f38208de00dc95438b3ff36ef
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58998061"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65697699"
 ---
-# <a name="how-to-create-file-associations-for-a-clickonce-application"></a>Filtrar Crear asociaciones de archivo para una aplicación ClickOnce
+# <a name="how-to-create-file-associations-for-a-clickonce-application"></a>Procedimiento Crear asociaciones de archivo para una aplicación ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] las aplicaciones pueden asociarse con una o varias extensiones de nombre de archivo, por lo que la aplicación se iniciará automáticamente cuando el usuario abre un archivo de esos tipos. Agregar compatibilidad con extensión de nombre de archivo a un [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] aplicación es sencilla.  
@@ -54,9 +54,9 @@ ms.locfileid: "58998061"
   
     `mage -Sign WindowsFormsApp1.exe.manifest -CertFile mycert.pfx`  
   
-    Para más información, vea [Mage.exe (Herramienta de generación y edición de manifiestos)](http://msdn.microsoft.com/library/77dfe576-2962-407e-af13-82255df725a1).  
+    Para más información, vea [Mage.exe (Herramienta de generación y edición de manifiestos)](https://msdn.microsoft.com/library/77dfe576-2962-407e-af13-82255df725a1).  
   
 ## <a name="see-also"></a>Vea también  
  [\<fileAssociation > elemento](../deployment/fileassociation-element-clickonce-application.md)   
  [Manifiesto de aplicación ClickOnce](../deployment/clickonce-application-manifest.md)   
- [Mage.exe (Herramienta de generación y edición de manifiestos)](http://msdn.microsoft.com/library/77dfe576-2962-407e-af13-82255df725a1)
+ [Mage.exe (Herramienta de generación y edición de manifiestos)](https://msdn.microsoft.com/library/77dfe576-2962-407e-af13-82255df725a1)

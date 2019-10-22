@@ -16,12 +16,12 @@ caps.latest.revision: 42
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 7482fb99114b4a30281d84045faa14d1a6562471
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 8c1b8b10234e8b297be471f596cc1739deab317d
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60110907"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65674167"
 ---
 # <a name="summary-view"></a>Vista Resumen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -52,8 +52,8 @@ En la vista Resumen se muestra información sobre las funciones o los objetos m�
 |**Mostrar árbol de llamadas reducido**|Muestra las rutas de acceso de ejecución más exigentes en la vista Árbol de llamadas. Para obtener más información, consulte [Vista Árbol de llamadas](../profiling/call-tree-view.md).|  
 |**Mostrar líneas activas**|No está disponible para generar perfiles de datos que se han recopilado mediante el método de instrumentación. Muestra las líneas de código fuente más exigentes en la vista Líneas. Para obtener más información, consulte [Vista Líneas](../profiling/lines-view.md).|  
 |**Comparar informes**|Muestra el cuadro de diálogo **Seleccionar archivos de análisis para la comparación**, en el que puede especificar otro archivo de datos de generación de perfiles para compararlo con el archivo actual. Para obtener más información, consulte [Comparar archivos de datos de rendimiento](../profiling/comparing-performance-data-files.md).|  
-|**Exportar datos de informe**|Muestra el cuadro de diálogo **Exportar informe**, en el que puede especificar una o varias vistas de informe para guardar como archivos de valores separados por comas (.csv) o .xml. Para obtener más información, vea [Cómo: Informes de herramientas de generación de perfiles de exportación](http://msdn.microsoft.com/174b5bd3-df9b-4fd4-88d4-76032ab90451).|  
-|**Guardar informe analizado**|Guarda el archivo de datos de generación de perfiles actual como un archivo .vsps, que se abre más rápidamente en la interfaz para [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Para obtener más información, vea [Cómo: Guardar analizados de archivos de datos de generación de perfiles](http://msdn.microsoft.com/0340ddde-caf4-48ac-8af3-d15dcdade556).|  
+|**Exportar datos de informe**|Muestra el cuadro de diálogo **Exportar informe**, en el que puede especificar una o varias vistas de informe para guardar como archivos de valores separados por comas (.csv) o .xml. Para obtener más información, vea [Cómo: Informes de herramientas de generación de perfiles de exportación](https://msdn.microsoft.com/174b5bd3-df9b-4fd4-88d4-76032ab90451).|  
+|**Guardar informe analizado**|Guarda el archivo de datos de generación de perfiles actual como un archivo .vsps, que se abre más rápidamente en la interfaz para [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Para obtener más información, vea [Cómo: Guardar analizados de archivos de datos de generación de perfiles](https://msdn.microsoft.com/0340ddde-caf4-48ac-8af3-d15dcdade556).|  
 |**Filtrar datos del informe**|Muestra el panel de filtro del informe de generación de perfiles, en el que puede especificar criterios para restringir los datos de la vista Informe. Para obtener más información, consulte [Filtro de vista Informe de rendimiento](../profiling/performance-report-view-filter.md)|  
 |**Alternar pantalla completa**|Alterna el modo de pantalla completa para la vista Informe.|  
   

@@ -6,20 +6,20 @@ f1_keywords:
 - vs.dsltools.dsldesigner.editor
 helpviewer_keywords:
 - Domain-Specific Language Tools, user interface
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3bcc16b5287e4980d94a7cbcc4dff4d1f5f63d00
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: e9a99eef692eb776908c6b8c4a32eb361092855a
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55936918"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72658303"
 ---
 # <a name="overview-of-the-domain-specific-language-tools-user-interface"></a>Información general sobre la interfaz de usuario de las herramientas de los lenguajes específicos de dominio
-Primera vez que abra una solución de herramientas de lenguajes específicos de dominio (herramientas DSL) en Visual Studio, la interfaz de usuario será similar a la siguiente imagen.
+Al abrir por primera vez una solución de Herramientas del lenguaje específico de dominio (herramientas de DSL) en Visual Studio, la interfaz de usuario se parecerá a la siguiente imagen.
 
  ![diseñador dsl](../modeling/media/dsl_designer.png)
 
@@ -39,7 +39,7 @@ Primera vez que abra una solución de herramientas de lenguajes específicos de 
 
  En esta tabla se explican algunos de los elementos del diagrama de modelo de dominio.
 
-|**Term**|**Definición**|
+|**Término**|**Definición**|
 |-|-|
 |Clase de dominio|Las clases de dominio son los tipos de elementos de los modelos.<br /><br /> Una clase de dominio puede aparecer más de una vez en un diagrama, si es el destino de más de una relación.<br /><br /> Para agregar una clase de dominio, arrastre la herramienta de la clase de dominio desde el **Cuadro de herramientas** a la parte **Clases y relaciones** del diagrama.|
 |Relación de dominio|Las relaciones de dominio son los tipos de vínculos entre los elementos de los modelos.<br /><br /> Una *relación de inclusión* indica que el elemento de destino es propiedad del elemento de origen o está incluido en él y aparece como una línea sólida. Todos los elementos de un modelo deben ser el destino de una relación de inclusión para que el modelo forme un árbol. Una *relación de referencia* indica un vínculo general entre los elementos del modelo general y aparece como una línea discontinua. Cualquier elemento puede tener cualquier número de vínculos de referencia.<br /><br /> Cree una relación haciendo clic en la herramienta en el **Cuadro de herramientas**. Después, haga clic en la clase de dominio de origen y luego en la clase de destino.|

@@ -1,5 +1,5 @@
 ---
-title: IScriptEntry::GetItemName | Microsoft Docs
+title: 'Iscriptentry (:: GetItemName | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 9d8abc6d1264ce532adcbc59c262510a39ea7a91
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: dcd1b83fa6d22fafc2123645f1f252fa1325f7f1
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58157794"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72575463"
 ---
 # <a name="iscriptentrygetitemname"></a>IScriptEntry::GetItemName
-Devuelve el nombre del elemento que identifica un `IScriptEntry` objeto.  
+Devuelve el nombre de elemento que identifica un objeto `IScriptEntry`.  
   
 ## <a name="syntax"></a>Sintaxis  
   
@@ -37,17 +37,17 @@ HRESULT GetItemName(
   
 #### <a name="parameters"></a>Parámetros  
  `pbstr`  
- [out] La dirección de un búfer que contiene el nombre del elemento. El nombre del elemento se usa el host para identificar la entrada.  
+ enuncia Dirección de un búfer que contiene el nombre del elemento. El host usa el nombre del elemento para identificar la entrada.  
   
 ## <a name="return-value"></a>Valor devuelto  
- Una clase `HRESULT`. Entre los valores posibles se incluyen los que se indican en la tabla siguiente, entre otros.  
+ Interfaz `HRESULT`. Entre los valores posibles se incluyen los que se indican en la tabla siguiente, entre otros.  
   
 |Valor|Descripción|  
 |-----------|-----------------|  
 |`S_OK`|El método se realizó correctamente.|  
   
 ## <a name="remarks"></a>Comentarios  
- Para `IScriptScriptlet` objetos, establecer el nombre del elemento mediante [IActiveScriptAuthor::AddScriptlet](../../winscript/reference/iactivescriptauthor-addscriptlet.md). Para las demás interfaces, establecer el nombre del elemento mediante [IScriptEntry::SetItemName](../../winscript/reference/iscriptentry-setitemname.md).  
+ Para los objetos `IScriptScriptlet`, establezca el nombre del elemento mediante [iactivescriptauthor (:: AddScriptlet](../../winscript/reference/iactivescriptauthor-addscriptlet.md). Para otras interfaces, establezca el nombre del elemento mediante [iscriptentry (:: SetItemName](../../winscript/reference/iscriptentry-setitemname.md).  
   
 ## <a name="see-also"></a>Vea también  
  [IScriptEntry (Interfaz)](../../winscript/reference/iscriptentry-interface.md)

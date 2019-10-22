@@ -1,22 +1,22 @@
 ---
-title: Filtrar Compilación de varias configuraciones simultáneamente
+title: Procedimiento Compilación de varias configuraciones simultáneamente
 ms.date: 11/04/2016
 ms.technology: vs-ide-compile
 ms.topic: conceptual
 ms.assetid: ba830937-3317-4674-8cc2-c0cd565603c5
-author: gewarren
-ms.author: gewarren
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ac8d27397c6e4748546e21baf84abd7578ce8762
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 7f4abd95c2a37366b4f6dfabe141e6418d23301d
+ms.sourcegitcommit: 59e5758036223ee866f3de5e3c0ab2b6dbae97b6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55908912"
+ms.lasthandoff: 07/23/2019
+ms.locfileid: "68416759"
 ---
-# <a name="how-to-build-multiple-configurations-simultaneously"></a>Filtrar Compilación de varias configuraciones simultáneamente
+# <a name="how-to-build-multiple-configurations-simultaneously"></a>Procedimiento Compilación de varias configuraciones simultáneamente
 
 Puede compilar la mayoría de los tipos de proyectos con varias o incluso todas sus configuraciones de compilación al mismo tiempo usando el cuadro de diálogo **Compilación por lotes**. Sin embargo, no puede compilar los siguientes tipos de proyectos en varias configuraciones de compilación al mismo tiempo:
 

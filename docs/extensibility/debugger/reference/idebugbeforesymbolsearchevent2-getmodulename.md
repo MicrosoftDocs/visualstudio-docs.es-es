@@ -6,17 +6,20 @@ helpviewer_keywords:
 - GetModuleName
 - IDebugBeforeSymbolSearchEvent2::GetModuleName
 ms.assetid: 0b4abeac-2eaf-4b2e-a2d5-c9ec303bc869
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d30b9559ab26e4634b82332de538cfe181bb106b
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 026c0a297eed18b21692885f08af07bdc656e842
+ms.sourcegitcommit: d2b234e0a4a875c3cba09321cdf246842670d872
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56713573"
+ms.lasthandoff: 07/01/2019
+ms.locfileid: "66317546"
 ---
 # <a name="idebugbeforesymbolsearchevent2getmodulename"></a>IDebugBeforeSymbolSearchEvent2::GetModuleName
 Recupera el nombre del módulo que se está depurando actualmente.
@@ -35,10 +38,9 @@ public int GetModuleName (
 );
 ```
 
-#### <a name="parameters"></a>Parámetros
-`pbstrModuleName`
-
- [out] Nombre del módulo.
+## <a name="parameters"></a>Parámetros
+`pbstrModuleName`\
+[out] Nombre del módulo.
 
 ## <a name="return-value"></a>Valor devuelto
 Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.

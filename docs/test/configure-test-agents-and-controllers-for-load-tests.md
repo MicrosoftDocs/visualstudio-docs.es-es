@@ -7,19 +7,19 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 16686d3900b3db2656492f5049590eeff47eb93a
-ms.sourcegitcommit: 1c8e07b98fc0a44b5ab90bcef77d9fac7b3eb452
+ms.openlocfilehash: f7a912ff25e2782490b711d909a64c5d9438ed8f
+ms.sourcegitcommit: 9a3972eb85de5443ac2bc03964c5a251c39b2921
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/25/2019
-ms.locfileid: "56796356"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "71301704"
 ---
-# <a name="configure-test-agents-and-test-controllers-for-running-load-tests"></a>Configurar agentes y controladores de pruebas para ejecutar pruebas de carga
+# <a name="overview-of-test-agents-and-test-controllers-for-running-load-tests"></a>Información general sobre agentes y controladores de pruebas para ejecutar pruebas de carga
 
 Visual Studio puede generar cargas simuladas para una aplicación mediante máquinas virtuales o físicas. Dichas máquinas deben configurarse como un único controlador de pruebas y uno o varios agentes de prueba. Puede usar el controlador de pruebas y los agentes de prueba para generar más carga de la que un único equipo puede generar por sí solo.
 
 > [!NOTE]
-> También puede usar pruebas de carga basadas en la nube para proporcionar máquinas virtuales que generen la carga de muchos usuarios que acceden al sitio web al mismo tiempo. Obtenga más información sobre las pruebas de carga basadas en la nube en [Run load tests using Azure Test Plans](/azure/devops/test/load-test/get-started-simple-cloud-load-test?view=vsts) (Ejecutar pruebas de carga mediante Azure Test Plans).
+> También puede usar pruebas de carga basadas en la nube para proporcionar máquinas virtuales que generen la carga de muchos usuarios que acceden al sitio web al mismo tiempo. Sin embargo, no se admite el uso del programa de instalación del controlador de pruebas o agente de pruebas en máquinas virtuales hospedadas en la nube. Obtenga más información sobre las pruebas de carga basadas en la nube en [Run load tests using Azure Test Plans](/azure/devops/test/load-test/get-started-simple-cloud-load-test?view=vsts) (Ejecutar pruebas de carga mediante Azure Test Plans).
 
 [!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
@@ -27,11 +27,11 @@ Visual Studio puede generar cargas simuladas para una aplicación mediante máqu
 
 La arquitectura de simulación de carga está compuesta por un cliente de Visual Studio, un controlador de pruebas y agentes de prueba.
 
--   El cliente se utiliza para desarrollar pruebas, ejecutarlas y ver los resultados.
+- El cliente se utiliza para desarrollar pruebas, ejecutarlas y ver los resultados.
 
--   El controlador de pruebas se utiliza para administrar los agentes de prueba y recopilar los resultados de pruebas.
+- El controlador de pruebas se utiliza para administrar los agentes de prueba y recopilar los resultados de pruebas.
 
--   Los agentes de prueba se utilizan para ejecutar las pruebas y recopilar datos, que incluyen información del sistema y datos de generación de perfiles de ASP.NET definidos en la configuración de pruebas.
+- Los agentes de prueba se utilizan para ejecutar las pruebas y recopilar datos, que incluyen información del sistema y datos de generación de perfiles de ASP.NET definidos en la configuración de pruebas.
 
 Esta arquitectura proporciona las siguientes ventajas:
 
@@ -69,17 +69,17 @@ El controlador de pruebas proporciona una arquitectura general para ejecutar las
 
 El agente de prueba se ejecuta como un servicio que realiza escuchas de solicitudes del controlador de pruebas para iniciar una nueva prueba. Cuando el agente de prueba recibe una solicitud, el servicio del agente de prueba inicia un proceso en el que se ejecutan las pruebas. Todos los agentes de prueba ejecutan la misma prueba de carga.
 
- El administrador asigna un peso a los agentes de prueba y la carga se distribuye según el peso de cada uno de ellos. Por ejemplo, si el agente de prueba 1 tiene un peso de 30, el agente de prueba 2 tiene un peso de 70 y la carga se establece en 1000 usuarios, entonces el agente 1 simulará 300 usuarios virtuales, mientras que el agente 2 simulará 700 usuarios virtuales. Vea [Administrar controladores de pruebas y agentes de pruebas con Visual Studio](../test/manage-test-controllers-and-test-agents.md).
+El administrador asigna un peso a los agentes de prueba y la carga se distribuye según el peso de cada uno de ellos. Por ejemplo, si el agente de prueba 1 tiene un peso de 30, el agente de prueba 2 tiene un peso de 70 y la carga se establece en 1000 usuarios, entonces el agente 1 simulará 300 usuarios virtuales, mientras que el agente 2 simulará 700 usuarios virtuales. Vea [Administrar controladores de pruebas y agentes de pruebas con Visual Studio](../test/manage-test-controllers-and-test-agents.md).
 
- El agente de prueba toma como entrada un conjunto de pruebas y un conjunto de parámetros de simulación. Un concepto clave es que las pruebas son independientes del equipo donde se ejecutan.
+El agente de prueba toma como entrada un conjunto de pruebas y un conjunto de parámetros de simulación. Un concepto clave es que las pruebas son independientes del equipo donde se ejecutan.
 
 ## <a name="test-controller-and-test-agent-connection-points"></a>Puntos de conexión del controlador y el agente de pruebas
 
 La siguiente ilustración muestra los puntos de conexión entre el controlador de prueba, el agente de prueba y el cliente. Describe qué puertos se usan para las conexiones entrantes y salientes, así como las restricciones de seguridad empleadas en estos puertos.
 
- ![Puertos y seguridad del controlador y el agente de pruebas](./media/test-controller-agent-firewall.png)
+![Puertos y seguridad del controlador y el agente de pruebas](./media/test-controller-agent-firewall.png)
 
- Para obtener más información, vea [Configuración de los puertos para los controladores de pruebas y los agentes de pruebas](../test/configure-ports-for-test-controllers-and-test-agents.md).
+Para obtener más información, vea [Configuración de los puertos para los controladores de pruebas y los agentes de pruebas](../test/configure-ports-for-test-controllers-and-test-agents.md).
 
 ## <a name="test-controller-and-agent-installation-information"></a>Información de instalación del controlador y el agente de pruebas
 

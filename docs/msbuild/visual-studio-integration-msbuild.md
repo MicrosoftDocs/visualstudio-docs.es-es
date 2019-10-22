@@ -20,19 +20,19 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c5e3881bc346c5074c7fd4277708a16e22d4acd7
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 00d64b060b340302107ddffaf1d69cad802a283b
+ms.sourcegitcommit: b60a00ac3165364ee0e53f7f6faef8e9fe59ec4a
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56597860"
+ms.lasthandoff: 09/11/2019
+ms.locfileid: "70913288"
 ---
 # <a name="visual-studio-integration-msbuild"></a>Integración de Visual Studio (MSBuild)
 Visual Studio hospeda [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] para cargar y compilar proyectos administrados. Puesto que [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] es responsable del proyecto, prácticamente cualquier proyecto con el formato de [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] puede utilizarse correctamente en [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], aunque el proyecto lo haya creado una herramienta diferente y tenga un proceso de compilación personalizado.
 
  En este tema se describen los aspectos específicos del hospedaje de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] en [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] que deben tenerse en cuenta al personalizar los proyectos y los archivos *.targets* que se carguen y se compilen en [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Le ayudarán a garantizar que las características de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] como IntelliSense y la depuración funcionan para el proyecto personalizado.
 
- Para información sobre proyectos de C++, consulte [Archivos de proyecto](/cpp/ide/project-files).
+ Para información sobre proyectos de C++, consulte [Archivos de proyecto](/cpp/build/reference/project-files).
 
 ## <a name="project-file-name-extensions"></a>Extensiones de nombre de archivo de proyecto
  *MSBuild.exe* reconoce cualquier extensión de nombre de archivo de proyecto que coincida con el patrón *.\*proj*. Sin embargo, [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] solamente reconoce un subconjunto de estas extensiones de nombre de archivo de proyecto, que determinan el sistema de proyectos específico del lenguaje que cargará el proyecto. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] no dispone de ningún sistema de proyectos independiente del lenguaje basado en [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] .
@@ -63,7 +63,7 @@ Condition=" '$(Something)|$(Configuration)|$(SomethingElse)' == 'xxx|Debug|yyy' 
 ```
 
 > [!NOTE]
->  Algunos nombres de tipo de elemento son específicos de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] , pero no se muestran en esta lista desplegable.
+> Algunos nombres de tipo de elemento son específicos de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] , pero no se muestran en esta lista desplegable.
 
 ## <a name="in-process-compilers"></a>Compiladores activos
  Cuando sea posible, [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] intentará utilizar la versión activa del compilador de [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] con el fin de mejorar el rendimiento. (No es aplicable a [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]). Para que esto funcione correctamente, se deben cumplir las condiciones siguientes:
@@ -75,13 +75,13 @@ Condition=" '$(Something)|$(Configuration)|$(SomethingElse)' == 'xxx|Debug|yyy' 
 ## <a name="design-time-intellisense"></a>IntelliSense en tiempo de diseño
  Para obtener compatibilidad con IntelliSense en [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] antes de que una compilación haya generado un ensamblado de salida, se deben cumplir las condiciones siguientes:
 
--   Debe haber un destino denominado `Compile`.
+- Debe haber un destino denominado `Compile`.
 
--   El destino `Compile` o alguna de sus dependencias deben llamar a la tarea de compilador para el proyecto, como `Csc` o `Vbc`.
+- El destino `Compile` o alguna de sus dependencias deben llamar a la tarea de compilador para el proyecto, como `Csc` o `Vbc`.
 
--   El destino `Compile` o alguna de sus dependencias debe hacer que el compilador reciba todos los parámetros necesarios para IntelliSense, en particular todas las referencias.
+- El destino `Compile` o alguna de sus dependencias debe hacer que el compilador reciba todos los parámetros necesarios para IntelliSense, en particular todas las referencias.
 
--   Se deben cumplir las condiciones que aparecen en la sección [Compiladores activos](#in-process-compilers).
+- Se deben cumplir las condiciones que aparecen en la sección [Compiladores activos](#in-process-compilers).
 
 ## <a name="build-solutions"></a>Soluciones de compilación
  En [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], el propio [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] controla el archivo de solución y el orden de compilación de los proyectos. Al compilar una solución con *msbuild.exe* en la línea de comandos, [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] analiza el archivo de solución y ordena las compilaciones del proyecto. En ambos casos, los proyectos se compilan individualmente en orden de dependencia y no se recorren las referencias entre proyectos. Por el contrario, cuando los proyectos individuales se compilan con *msbuild.exe*, se recorren las referencias entre proyectos.
@@ -126,22 +126,22 @@ Condition=" '$(Something)|$(Configuration)|$(SomethingElse)' == 'xxx|Debug|yyy' 
 ## <a name="design-time-target-execution"></a>Ejecución del destino en tiempo de diseño
  [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] intenta ejecutar los destinos con algunos nombres cuando carga un proyecto. Estos destinos incluyen `Compile`, `ResolveAssemblyReferences`, `ResolveCOMReferences`, `GetFrameworkPaths` y `CopyRunEnvironmentFiles`. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ejecuta estos destinos para que el compilador pueda inicializarse con el fin de proporcionar IntelliSense, el depurador pueda inicializarse y las referencias mostradas en el Explorador de soluciones puedan resolverse. Si estos destinos no están presentes, el proyecto se cargará y se compilará correctamente pero la experiencia en tiempo de diseño de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] no será totalmente funcional.
 
-##  <a name="edit-project-files-in-visual-studio"></a>Edición de archivos de proyecto en Visual Studio
+## <a name="edit-project-files-in-visual-studio"></a>Edición de archivos de proyecto en Visual Studio
  Para editar directamente un proyecto de [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] , puede abrir el archivo del proyecto en el editor XML de Visual Studio.
 
 #### <a name="to-unload-and-edit-a-project-file-in-visual-studio"></a>Para descargar y editar un archivo de proyecto en Visual Studio
 
-1.  En el **Explorador de soluciones**, abra el menú contextual del proyecto y, a continuación, elija **Descargar el proyecto**.
+1. En el **Explorador de soluciones**, abra el menú contextual del proyecto y, a continuación, elija **Descargar el proyecto**.
 
-     El proyecto aparecerá marcado como **(no disponible)**.
+     El proyecto aparecerá marcado como **(no disponible)** .
 
-2.  En el **Explorador de soluciones**, abra el menú contextual del proyecto no disponible y seleccione **Editar\<Archivo de proyecto>**.
+2. En el **Explorador de soluciones**, abra el menú contextual del proyecto no disponible y seleccione **Editar\<Archivo de proyecto>** .
 
      El archivo de proyecto se abrirá en el Editor XML de Visual Studio.
 
-3.  Edite, guarde y, a continuación, cierre el archivo de proyecto.
+3. Edite, guarde y, a continuación, cierre el archivo de proyecto.
 
-4.  En el **Explorador de soluciones**, abra el menú contextual del proyecto no disponible y, a continuación, elija **Volver a cargar el proyecto**.
+4. En el **Explorador de soluciones**, abra el menú contextual del proyecto no disponible y, a continuación, elija **Volver a cargar el proyecto**.
 
 ## <a name="intellisense-and-validation"></a>IntelliSense y validación
  Al utilizar el editor XML para modificar archivos de proyecto, los archivos de esquema de [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] administran la validación e IntelliSense. Estos archivos se instalan en la caché del esquema, que se encuentra en *\<directorio de instalación de Visual Studio>\Xml\Schemas\1033\MSBuild*.
@@ -165,7 +165,7 @@ Condition=" '$(Something)|$(Configuration)|$(SomethingElse)' == 'xxx|Debug|yyy' 
 
   - `OriginalItemSpec`, que contiene la especificación del elemento original de la referencia.
 
-  - `ResolvedFrom`, establecido en "{TargetFrameworkDirectory}" si se ha resuelto en el directorio de [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] .
+  - `ResolvedFrom`, establecido en "{TargetFrameworkDirectory}" si se ha resuelto desde el directorio de .NET Framework.
 
 - Referencias COM:
 
@@ -176,7 +176,7 @@ Condition=" '$(Something)|$(Configuration)|$(SomethingElse)' == 'xxx|Debug|yyy' 
    El sistema de proyectos llama a un destino con el nombre conocido `ResolveNativeReferences`. Este destino debe generar elementos con el nombre de tipo `NativeReferenceFile`. Los elementos deben tener todos los metadatos de los elementos de entrada recorridos, además de un nuevo fragmento de metadatos denominado `OriginalItemSpec`, que contiene la especificación del elemento original de la referencia.
 
 ## <a name="performance-shortcuts"></a>Métodos abreviados de rendimiento
- Si inicia la depuración en la interfaz de usuario de Visual Studio (con la tecla F5 o la opción **Depurar** > **Iniciar depuración** en la barra de menús), el proceso de compilación utiliza una comprobación de actualización rápida para mejorar el rendimiento. En algunos casos en los que las compilaciones personalizadas crean archivos que, a su vez, se compilan, la comprobación de actualización rápida no identifica correctamente los archivos modificados. Los proyectos que necesitan otras comprobaciones de actualización más completas pueden desactivar la comprobación rápida estableciendo la variable de entorno `DISABLEFASTUPTODATECHECK=1`. O bien, los proyectos pueden establecerla como una propiedad de MSBuild en el proyecto o en un archivo que el proyecto importe.
+ Si usa el IDE de Visual Studio para iniciar la depuración (con la tecla F5 o la opción **Depurar** > **Iniciar depuración** en la barra de menús), o para compilar el proyecto (por ejemplo, **Compilar** > **Compilar solución**), el proceso de compilación utiliza una comprobación de actualización rápida para mejorar el rendimiento. En algunos casos en los que las compilaciones personalizadas crean archivos que, a su vez, se compilan, la comprobación de actualización rápida no identifica correctamente los archivos modificados. Los proyectos que necesitan otras comprobaciones de actualización más completas pueden desactivar la comprobación rápida estableciendo la variable de entorno `DISABLEFASTUPTODATECHECK=1`. O bien, los proyectos pueden establecerla como una propiedad de MSBuild en el proyecto o en un archivo que el proyecto importe.
 
  Para las compilaciones periódicas en Visual Studio, no se aplica la comprobación de actualización rápida y el proyecto se compilará como si se invocara la compilación en un símbolo del sistema.
 

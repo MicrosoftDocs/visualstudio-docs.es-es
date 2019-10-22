@@ -1,7 +1,7 @@
 ---
 title: Instalación de los certificados necesarios para la instalación sin conexión
 description: Obtenga información sobre cómo instalar certificados para una instalación sin conexión de Visual Studio.
-ms.date: 03/30/2019
+ms.date: 08/08/2019
 ms.custom: seodec18
 ms.topic: conceptual
 helpviewer_keywords:
@@ -15,12 +15,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 4ef5df077aabb02c9e9a4b46b0cfcbda76263b72
-ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
+ms.openlocfilehash: 11b05a7993d2fcd6bc52b53edfde2e97a566574c
+ms.sourcegitcommit: 535ef05b1e553f0fc66082cd2e0998817eb2a56a
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58789346"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "72018826"
 ---
 # <a name="install-certificates-required-for-visual-studio-offline-installation"></a>Instalar los certificados necesarios para la instalación sin conexión de Visual Studio
 
@@ -89,9 +89,9 @@ Si está creando el script de la implementación de Visual Studio en un entorno 
    Como alternativa, cree un archivo por lotes que utilice certutil.exe, distribuido con Windows, con los siguientes comandos:
    
       ```cmd
-   certutil.exe -addstore -f "Root" "[layout path]\certificates\manifestRootCertificate.cer
+   certutil.exe -addstore -f "Root" "[layout path]\certificates\manifestRootCertificate.cer"
 
-   certutil.exe -addstore -f "Root" [layout path]\certificates\manifestCounterSignRootCertificate.cer"
+   certutil.exe -addstore -f "Root" "[layout path]\certificates\manifestCounterSignRootCertificate.cer"
 
    certutil.exe -addstore -f "Root" "[layout path]\certificates\vs_installer_opc.RootCertificate.cer"
    ```
@@ -135,42 +135,36 @@ Si está creando el script de la implementación de Visual Studio en un entorno 
 Los tres archivos .P12 de esta carpeta contienen un certificado intermedio y un certificado raíz. La mayoría de los sistemas que están actualizados con Windows Update tienen estos certificados ya instalados.
 
 * **ManifestSignCertificates.p12** contiene:
-    * Certificado intermedio: **Firma de código de Microsoft PCA 2011**
-        * No es necesario. Mejora el rendimiento en algunos escenarios si está presente.
-    * Certificado raíz: **Entidad de certificación raíz de Microsoft de 2011**
-        * Necesario en sistemas de Windows 7 Service Pack 1 que no tienen las últimas actualizaciones de Windows instaladas.
+  * Certificado intermedio: **Firma de código de Microsoft PCA 2011**
+    * No es necesario. Mejora el rendimiento en algunos escenarios si está presente.
+  * Certificado raíz: **Entidad de certificación raíz de Microsoft de 2011**
+    * Necesario en sistemas de Windows 7 Service Pack 1 que no tienen las últimas actualizaciones de Windows instaladas.
 * **ManifestCounterSignCertificates.p12** contiene:
-    * Certificado intermedio: **Microsoft Time-Stamp PCA 2010**
-        * No es necesario. Mejora el rendimiento en algunos escenarios si está presente.
-    * Certificado raíz: **Entidad de certificación raíz de Microsoft de 2010**
-        * Necesario en sistemas de Windows 7 Service Pack 1 que no tienen las últimas actualizaciones de Windows instaladas.
+  * Certificado intermedio: **Microsoft Time-Stamp PCA 2010**
+    * No es necesario. Mejora el rendimiento en algunos escenarios si está presente.
+  * Certificado raíz: **Entidad de certificación raíz de Microsoft de 2010**
+    * Necesario en sistemas de Windows 7 Service Pack 1 que no tienen las últimas actualizaciones de Windows instaladas.
 * **Vs_installer_opc.SignCertificates.p12** contiene:
-    * Certificado intermedio: **Firma de código de Microsoft PCA**
-        * Necesario en todos los sistemas. Tenga en cuenta que los sistemas con todas las actualizaciones aplicadas de Windows Update puede que no tengan este certificado.
-    * Certificado raíz: **Entidad de certificación raíz de Microsoft**
-        * Obligatorio. Este certificado se proporciona con sistemas que ejecutan Windows 7 o versiones posteriores.
+  * Certificado intermedio: **Firma de código de Microsoft PCA**
+    * Necesario en todos los sistemas. Tenga en cuenta que los sistemas con todas las actualizaciones aplicadas de Windows Update puede que no tengan este certificado.
+  * Certificado raíz: **Entidad de certificación raíz de Microsoft**
+    * Obligatorio. Este certificado se proporciona con sistemas que ejecutan Windows 7 o versiones posteriores.
 
-**Actualización**: para Visual Studio 2017 versión 15.8 Preview 2 o versiones posteriores, el Instalador de Visual Studio solo requiere que se instalen en el sistema los certificados raíz.
+**Actualización**: para Visual Studio 2017 versión 15.8 Preview 2 o versiones posteriores, el Instalador de Visual Studio solo requiere que se instalen en el sistema los certificados raíz. Estos certificados se almacenan en archivos .cer en lugar de .p12.
 
 ::: moniker-end
 
 ::: moniker range="vs-2019"
 
-* **ManifestSignCertificates.p12** contiene:
-    * Certificado intermedio: **Firma de código de Microsoft PCA 2011**
-        * No es necesario. Mejora el rendimiento en algunos escenarios si está presente.
-    * Certificado raíz: **Entidad de certificación raíz de Microsoft de 2011**
-        * Necesario en sistemas de Windows 7 Service Pack 1 que no tienen las últimas actualizaciones de Windows instaladas.
-* **ManifestCounterSignCertificates.p12** contiene:
-    * Certificado intermedio: **Microsoft Time-Stamp PCA 2010**
-        * No es necesario. Mejora el rendimiento en algunos escenarios si está presente.
-    * Certificado raíz: **Entidad de certificación raíz de Microsoft de 2010**
-        * Necesario en sistemas de Windows 7 Service Pack 1 que no tienen las últimas actualizaciones de Windows instaladas.
-* **Vs_installer_opc.SignCertificates.p12** contiene:
-    * Certificado intermedio: **Firma de código de Microsoft PCA**
-        * Necesario en todos los sistemas. Tenga en cuenta que los sistemas con todas las actualizaciones aplicadas de Windows Update puede que no tengan este certificado.
-    * Certificado raíz: **Entidad de certificación raíz de Microsoft**
-        * Obligatorio. Este certificado se proporciona con sistemas que ejecutan Windows 7 o versiones posteriores.
+* **ManifestSignCertificates.cer** contiene:
+  * Certificado raíz: **Entidad de certificación raíz de Microsoft de 2011**
+    * Necesario en sistemas de Windows 7 Service Pack 1 que no tienen las últimas actualizaciones de Windows instaladas.
+* **ManifestCounterSignCertificates.cer** contiene:
+  * Certificado raíz: **Entidad de certificación raíz de Microsoft de 2010**
+    * Necesario en sistemas de Windows 7 Service Pack 1 que no tienen las últimas actualizaciones de Windows instaladas.
+* **Vs_installer_opc.SignCertificates.cer** contiene:
+  * Certificado raíz: **Entidad de certificación raíz de Microsoft**
+    * Obligatorio. Este certificado se proporciona con sistemas que ejecutan Windows 7 o versiones posteriores.
 
 El Instalador de Visual Studio solo requiere que se instalen en el sistema los certificados raíz.
 
@@ -188,7 +182,7 @@ Una manera de comprobar el sistema de instalación es seguir estos pasos:
   a. Haga clic en **Archivo** y seleccione **Agregar o quitar complemento**.<br/>
   b. Haga doble clic en **Certificados**, seleccione **Cuenta de equipo** y, después, haga clic en **Siguiente**.<br/>
   c. Seleccione **Equipo local**, haga clic en **Finalizar** y, después, en **Aceptar**.<br/>
-  d. Expanda **Certificados (equipo local)**.<br/>
+  d. Expanda **Certificados (equipo local)** .<br/>
   e. Expanda **Entidades de certificación raíz de confianza** y, después, seleccione **Certificados**.<br/>
     * Compruebe esta lista para ver los certificados raíz necesarios.<br/>
 

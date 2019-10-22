@@ -22,12 +22,12 @@ caps.latest.revision: 26
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: e913d67442d21cb1a0895721c22ede9b69363f53
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: e33233fd313cd6a73013ce55333a860663ddb601
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60068709"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65704522"
 ---
 # <a name="how-to-debug-an-executable-not-part-of-a-visual-studio-solution"></a>Procedimiento Depurar un archivo ejecutable que no es parte de una solución de Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -61,11 +61,11 @@ Es posible que haya ocasiones en las que desee depurar un archivo ejecutable que
 5. Inicie el archivo ejecutable eligiendo un comando de ejecución, como **iniciar**, desde el **depurar** menú.  
   
     > [!NOTE]
-    >  No todos los lenguajes de programación admiten proyectos EXE. Si necesita utilizar esta característica, instale [!INCLUDE[vcprvc](../includes/vcprvc-md.md)].  
+    > No todos los lenguajes de programación admiten proyectos EXE. Si necesita utilizar esta característica, instale [!INCLUDE[vcprvc](../includes/vcprvc-md.md)].  
   
      Cuando se depura un archivo ejecutable sin el código fuente, las características de depuración disponibles son limitadas, tanto si se asocia el depurador al archivo en ejecución como si se agrega el archivo ejecutable a una solución de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Si el archivo ejecutable se compiló sin información de depuración en un formato compatible, las características disponibles serán aún más limitadas. Si dispone del código fuente, lo más recomendable es que importe dicho código a [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] y que cree una versión de depuración del archivo ejecutable en [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
   
 ## <a name="see-also"></a>Vea también  
  [Preparación y configuración de la depuración](../debugger/debugger-settings-and-preparation.md)   
  [Seguridad del depurador](../debugger/debugger-security.md)   
- [DBG (archivos)](http://msdn.microsoft.com/91e449e9-8b65-4123-960f-2107cd1f1cfd)
+ [DBG (archivos)](https://msdn.microsoft.com/91e449e9-8b65-4123-960f-2107cd1f1cfd)

@@ -1,5 +1,5 @@
 ---
-title: Cómo conservar una dirección IP virtual constante para un servicio en la nube de Azure | Microsoft Docs
+title: Conservación de una dirección IP virtual constante para un servicio en la nube de Azure
 description: Obtenga información para garantizar que no cambia la dirección IP virtual (VIP) de su servicio en la nube de Azure.
 author: ghogen
 manager: jillfra
@@ -9,12 +9,12 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 03/21/2017
 ms.author: ghogen
-ms.openlocfilehash: e17e99b9a1270b3d6a99429bd24103a10d347d69
-ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
+ms.openlocfilehash: ae9064b6aba283c8d2fb8d1e5ec02ef1bd70e199
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/27/2019
-ms.locfileid: "56953799"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66260724"
 ---
 # <a name="retain-a-constant-virtual-ip-address-for-an-azure-cloud-service"></a>Conservación de una dirección IP virtual constante para un servicio en la nube de Azure
 Al actualizar un servicio en la nube que se hospeda en Azure, es posible que deba asegurarse de que no cambia la dirección IP virtual (VIP) del servicio. Muchos de los servicios de administración de dominio usan el Sistema de nombres de dominio (DNS) para registrar nombres de dominio. DNS solo funciona si la dirección VIP sigue siendo la misma. Puede usar el **Asistente para publicación** en Azure Tools para asegurarse de que la dirección VIP del servicio en la nube no cambia cuando la actualiza. Para más información sobre cómo usar la administración de dominios DNS para servicios en la nube, vea [Configuración de un nombre de dominio personalizado para un servicio en la nube de Azure](/azure/cloud-services/cloud-services-custom-domain-name-portal).

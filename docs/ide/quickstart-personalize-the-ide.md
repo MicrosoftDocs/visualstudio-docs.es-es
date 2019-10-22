@@ -7,18 +7,28 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 96234797efde518741182d93420914168e59ab2a
-ms.sourcegitcommit: b14b7a938a2aba9fcce4d5e813aadf2040b0dcda
+ms.openlocfilehash: 2e955c58be8d0df466ad102c95b0d1a8007588dc
+ms.sourcegitcommit: 44e9b1d9230fcbbd081ee81be9d4be8a485d8502
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "58646704"
+ms.lasthandoff: 08/30/2019
+ms.locfileid: "70180041"
 ---
 # <a name="personalize-the-visual-studio-ide-and-editor"></a>Personalización del IDE y el editor de Visual Studio
 
 En este tutorial de entre cinco y diez minutos se personaliza el tema de color de Visual Studio mediante la selección del tema oscuro. También se personalizarán los colores de dos tipos diferentes de texto en el editor de texto.
 
-Si todavía no ha instalado Visual Studio, vaya a la página de [descargas de Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017) para instalarlo de forma gratuita.
+::: moniker range="vs-2017"
+
+Si todavía no ha instalado Visual Studio, vaya a la página de [descargas de Visual Studio](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download) para instalarlo de forma gratuita.
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+Si todavía no ha instalado Visual Studio, vaya a la página de [descargas de Visual Studio](https://visualstudio.microsoft.com/downloads) para instalarlo de forma gratuita.
+
+::: moniker-end
 
 ## <a name="set-the-color-theme"></a>Establecimiento del tema de color
 
@@ -107,5 +117,5 @@ Hemos explorado solo un par de formas de personalizar los colores en Visual Stud
 
 ## <a name="see-also"></a>Vea también
 
-- [Personalizar el editor](../ide/customizing-the-editor.md)
+- [Personalizar el editor](../ide/how-to-change-text-case-in-the-editor.md)
 - [Información general sobre IDE de Visual Studio](../get-started/visual-studio-ide.md)

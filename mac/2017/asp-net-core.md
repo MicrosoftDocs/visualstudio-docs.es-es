@@ -6,12 +6,12 @@ ms.author: crdun
 ms.date: 07/13/2017
 ms.assetid: 6E8B0C90-33D6-4546-8207-CE0787584565
 ms.custom: video
-ms.openlocfilehash: 7544d3aa72bb981a35b3c7fc63db3f397f8f26dd
-ms.sourcegitcommit: da73f7a0cf1795d5d400c0897ae3326191435dd0
+ms.openlocfilehash: 6260233d564421ce3fc32c9700c4430989a4f53b
+ms.sourcegitcommit: d2b234e0a4a875c3cba09321cdf246842670d872
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/28/2019
-ms.locfileid: "58568407"
+ms.lasthandoff: 07/01/2019
+ms.locfileid: "67493722"
 ---
 # <a name="getting-started-with-aspnet-core"></a>Introducción a ASP.NET Core
 
@@ -63,6 +63,7 @@ public static void Main(string[] args)
     host.Run();
 }
 ```
+
 Una aplicación de ASP.NET Core crea un servidor web en su método principal, para lo que configura e inicia un host mediante una instancia de [`WebHostBuilder`](/aspnet/core/fundamentals/hosting). Este generador proporciona métodos que permiten configurar el host. En la aplicación de plantilla se usan las configuraciones siguientes:
 
 * `UseKestrel`: especifica que la aplicación usará el servidor Kestrel.
@@ -104,8 +105,8 @@ public class Startup
 
 La clase Startup siempre debe cumplir las reglas siguientes:
 
- - Siempre debe ser pública.
- - Debe contener los dos métodos públicos `ConfigureServices` y `Configure`.
+- Siempre debe ser pública.
+- Debe contener los dos métodos públicos `ConfigureServices` y `Configure`.
 
 El método `ConfigureServices` define los servicios que usará la aplicación.
 
@@ -219,7 +220,6 @@ Para agregar un controlador, haga lo siguiente:
 
     ![Aplicación en ejecución en el explorador con argumentos](media/asp-net-core-image10.png)
 
-
 ## <a name="troubleshooting"></a>Solución de problemas
 
 Si necesita instalar .NET Core manualmente en Mac OS 10.11 (El Capitan) y versiones posteriores, haga lo siguiente:
@@ -234,7 +234,7 @@ Complete los cuatro pasos correctamente para asegurarse de que .NET Core está i
 
 En esta guía, se le ha proporcionado una introducción a ASP.NET Core. Describe qué es, cuándo se usa y cómo se usa en Visual Studio para Mac.
 Para obtener más información sobre los pasos siguientes, vea las guías que se indican a continuación:
-- Documentos sobre [ASP.NET Core](/aspnet/core/?view=aspnetcore-2.1#build-web-ui-and-web-apis-using-aspnet-core-mvc).
+- Documentos sobre [ASP.NET Core](/aspnet/core/#build-web-apis-and-web-ui-using-aspnet-core-mvc).
 - [Creating Backend Services for Native Mobile Applications](/aspnet/core/mobile/native-mobile-backend) (Crear servicios back-end para aplicaciones móviles nativas), donde se muestra cómo compilar un servicio REST mediante ASP.NET Core para una aplicación de Xamarin.Forms.
 - [Laboratorio práctico de ASP.NET Core](https://github.com/Microsoft/vs4mac-labs/tree/master/Web/Getting-Started).
 

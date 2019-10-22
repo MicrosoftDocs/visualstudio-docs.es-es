@@ -18,11 +18,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: cc3d606bb890b5f95089bfc7b1e83b2d34cd56ba
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59650771"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68192608"
 ---
 # <a name="item-element-msbuild"></a>Elemento Item (MSBuild)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -50,7 +50,7 @@ Contiene un elemento definido por el usuario y sus metadatos. Cada elemento que 
   
 ### <a name="attributes"></a>Atributos  
   
-|Atributo|Descripción|  
+|Atributo|DESCRIPCIÓN|  
 |---------------|-----------------|  
 |`Include`|Atributo necesario.<br /><br /> El archivo o comodín que se incluirá en la lista de elementos.|  
 |`Exclude`|Atributo opcional.<br /><br /> El archivo o comodín que se excluirá de la lista de elementos.|  
@@ -62,13 +62,13 @@ Contiene un elemento definido por el usuario y sus metadatos. Cada elemento que 
   
 ### <a name="child-elements"></a>Elementos secundarios  
   
-|Elemento|Descripción|  
+|Elemento|DESCRIPCIÓN|  
 |-------------|-----------------|  
 |[ItemMetadata](../msbuild/itemmetadata-element-msbuild.md)|Una clave de metadatos de elemento definida por el usuario que contiene el valor de metadatos del elemento. Puede haber cero o más elementos `ItemMetadata` en un elemento.|  
   
 ### <a name="parent-elements"></a>Elementos primarios  
   
-|Elemento|Descripción|  
+|Elemento|DESCRIPCIÓN|  
 |-------------|-----------------|  
 |[ItemGroup](../msbuild/itemgroup-element-msbuild.md)|Elemento grouping de los elementos.|  
   
@@ -91,7 +91,7 @@ Contiene un elemento definido por el usuario y sus metadatos. Cada elemento que 
 </ItemGroup>  
 ```  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Otras referencias  
  [Elementos](../msbuild/msbuild-items.md)   
  [Propiedades de MSBuild](msbuild-properties1.md)   
  [Referencia de esquemas de archivo del proyecto](../msbuild/msbuild-project-file-schema-reference.md)

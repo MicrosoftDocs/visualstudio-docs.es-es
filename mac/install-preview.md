@@ -1,24 +1,23 @@
 ---
-title: Instalación de una versión preliminar o actualización para Visual Studio para Mac
+title: Instalación de una versión preliminar o una actualización
 description: Instrucciones para actualizar Visual Studio para Mac y acceder a versiones preliminares, incluidas las versiones preliminares de Visual Studio 2019 para Mac.
-author: conceptdev
-ms.author: crdun
-ms.date: 04/02/2019
-ms.topic: article
+author: asb3993
+ms.author: amburns
+ms.date: 09/18/2019
 ms.technology: vs-ide-install
 ms.assetid: 0E1EF257-9DE4-4653-9DF4-805CE007A1A1
-ms.openlocfilehash: fbd6f51ee2a4db7407bb96dff82e31d6dca7389d
-ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
+ms.openlocfilehash: 307344404128e9eabec9dc5aa27c29a17961a5b5
+ms.sourcegitcommit: ea182703e922c74725045afc251bcebac305068a
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "58856124"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71211350"
 ---
-# <a name="install-a-preview-or-update-for-visual-studio-for-mac"></a>Instalación de una versión preliminar o actualización para Visual Studio para Mac
+# <a name="install-a-preview-version-of-visual-studio-for-mac"></a>Instalación de la versión más reciente de Visual Studio para Mac
 
 Antes de lanzar oficialmente una nueva versión de Visual Studio para Mac, está disponible como versión preliminar. La versión preliminar le da la oportunidad de probar las nuevas características y obtener las últimas correcciones de errores antes de que se incorporen completamente al producto.
 
-Las versiones preliminares de Visual Studio para Mac se distribuyen como actualizaciones, y no mediante una descarga aparte. Visual Studio para Mac tiene dos canales de actualización, tal y como se describe en el artículo sobre [actualizaciones](update.md): **Estable** y **Versión preliminar**.
+Las versiones preliminares de Visual Studio para Mac se distribuyen como actualizaciones, y no mediante una descarga aparte. Visual Studio para Mac tiene dos canales de actualización, tal y como se describe en el artículo sobre [actualizaciones](update.md): **Estable** y **Versión preliminar**.
 
 La mayoría de las versiones preliminares estarán disponibles a través del canal **Versión preliminar**, pero consulte siempre las [Notas de la versión preliminar](/visualstudio/releasenotes/vs2019-mac-preview-relnotes) para obtener información más precisa.
 

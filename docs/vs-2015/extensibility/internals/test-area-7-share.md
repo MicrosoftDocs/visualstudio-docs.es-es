@@ -12,11 +12,11 @@ caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: a788eb73c65a84731dd5505af54f4dd78439d456
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60111641"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68203129"
 ---
 # <a name="test-area-7-share"></a>Área de prueba 7: Compartir
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -51,7 +51,7 @@ Esta área de prueba trata para compartir elementos entre las ubicaciones a trav
 ## <a name="test-cases"></a>Casos de prueba  
  Los siguientes son casos de prueba concretos para el área de prueba de recurso compartido.  
   
-|Acción|Pasos de prueba|Resultados esperados para comprobar|  
+|.|Pasos de prueba|Resultados esperados para comprobar|  
 |------------|----------------|--------------------------------|  
 |Compartir un archivo de un proyecto cargado en el control de código fuente a otro proyecto cargado|1.  Cree un nuevo proyecto.<br />2.  Agregar un segundo proyecto a la solución.<br />3.  Cree un archivo en el segundo proyecto con un nombre que no está en el primer proyecto.<br />4.  Agregue la solución al control de código fuente.<br />5.  Seleccione el primer proyecto.<br />6.  Abra **Share** cuadro de diálogo (**archivo** -> **Control de código fuente** -> **recurso compartido**).<br />7.  Comparta el archivo desde el segundo proyecto al primer proyecto.<br />8.  Aceptar **desproteger** si se le solicita.|Comportamiento esperado común.|  
 |Compartir un archivo de un proyecto a otro|1.  Cree un nuevo proyecto.<br />2.  Agréguelo al control de código fuente.<br />3.  Cierre la solución.<br />4.  Cree un segundo proyecto (nueva solución).<br />5.  Agregue la solución al control de código fuente.<br />6.  Seleccione el proyecto.<br />7.  Abra el **recurso compartido** cuadro de diálogo (**archivo** -> **Control de código fuente** -> **compartir**).<br />8.  Compartir un archivo desde el proyecto agregado previamente al proyecto abierto.<br />9. Aceptar **desproteger** si se le solicita.|Comportamiento esperado común.|  

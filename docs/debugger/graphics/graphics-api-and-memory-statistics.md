@@ -1,5 +1,5 @@
 ---
-title: API de gráficos y estadísticas de memoria | Microsoft Docs
+title: API de gráficos y estadísticas de memoria | Documentos de Microsoft
 ms.date: 03/02/2017
 ms.topic: conceptual
 f1_keywords:
@@ -12,14 +12,15 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 7810889d4af411477573c71aa694d797a90763f3
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56720606"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62896024"
 ---
 # <a name="graphics-api-and-memory-statistics"></a>API de gráficos y estadísticas de memoria
-<!-- VERSIONLESS --> Visual Studio 2017 y mayor compatibilidad con las estadísticas de la API de gráficos y herramientas de estadísticas de memoria.  Ambas herramientas le permiten ver los distintos bits de información en uso de la API de Direct3D, así como el consumo de memoria GPU de diversos recursos.
+<!-- VERSIONLESS -->
+Visual Studio 2017 y mayor compatibilidad con las estadísticas de la API de gráficos y herramientas de estadísticas de memoria.  Ambas herramientas le permiten ver los distintos bits de información en uso de la API de Direct3D, así como el consumo de memoria GPU de diversos recursos.
 
 ## <a name="graphics-api-statistics"></a>Estadísticas de la API de gráficos
 Las estadísticas de la API de gráficos en diagnóstico de gráficos de Visual Studio le permite ver todas las llamadas de Direct3D que se realizaron y el recuento de cada llamada.  Para ver la ventana, seleccione el **Vista > estadísticas de API** elemento de menú.

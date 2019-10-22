@@ -1,5 +1,5 @@
 ---
-title: Procedimiento Agregar un panel de acciones a documentos de Word o libros de Excel
+title: Agregar panel de acciones a documentos de Word o libros de Excel
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f1d72d3da8adeff7b8280bda84eb92b730679fea
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: aed3ace3765bb9f160117503deb7373e12e510ad
+ms.sourcegitcommit: 13ab9a5ab039b070b9cd9251d0b83dd216477203
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60085849"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66177772"
 ---
 # <a name="how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks"></a>Procedimiento Agregar un panel de acciones a documentos de Word o libros de Excel
   Para agregar un panel de acciones a un documento de Microsoft Office Word o un libro de Excel, cree primero un control de usuario de Windows Forms. A continuación, agregue el control de usuario para el <xref:Microsoft.Office.Tools.ActionsPane.Controls%2A> propiedad de la `ThisDocument.ActionsPane` campo (Word) o `ThisWorkbook.ActionsPane` campo (Excel) en el proyecto.
@@ -28,7 +28,7 @@ ms.locfileid: "60085849"
  [!INCLUDE[appliesto_alldoc](../vsto/includes/appliesto-alldoc-md.md)]
 
 > [!NOTE]
->  Es posible que el equipo muestre nombres o ubicaciones diferentes para algunos de los elementos de la interfaz de usuario de Visual Studio en las siguientes instrucciones. La edición de Visual Studio que se tenga y la configuración que se utilice determinan estos elementos. Para más información, vea [Personalizar el IDE de Visual Studio](../ide/personalizing-the-visual-studio-ide.md).
+> Es posible que el equipo muestre nombres o ubicaciones diferentes para algunos de los elementos de la interfaz de usuario de Visual Studio en las siguientes instrucciones. La edición de Visual Studio que se tenga y la configuración que se utilice determinan estos elementos. Para más información, vea [Personalizar el IDE de Visual Studio](../ide/personalizing-the-visual-studio-ide.md).
 
 ## <a name="creating-the-user-control"></a>Crear el control de usuario
  El siguiente procedimiento muestra cómo crear el control de usuario en una palabra o un proyecto de Excel. También agrega un botón al control de usuario que escribe texto en el documento o libro cuando se hace clic en.
@@ -42,12 +42,12 @@ ms.locfileid: "60085849"
 3. En el **Agregar nuevo elemento** cuadro de diálogo, seleccione **Control Panel de acciones**, asígnele el nombre **HelloControl**y haga clic en **agregar**.
 
     > [!NOTE]
-    >  Alternativamente, puede agregar un **Control de usuario** a su proyecto. Las clases generadas por el **Control Panel de acciones** y **Control de usuario** elementos son funcionalmente equivalentes.
+    > Alternativamente, puede agregar un **Control de usuario** a su proyecto. Las clases generadas por el **Control Panel de acciones** y **Control de usuario** elementos son funcionalmente equivalentes.
 
 4. Desde el **Windows Forms** pestaña de la **cuadro de herramientas,** arrastre un **botón** control en el control.
 
     > [!NOTE]
-    >  Si el control no está visible en el diseñador, haga doble clic en **HelloControl** en **el Explorador de soluciones**.
+    > Si el control no está visible en el diseñador, haga doble clic en **HelloControl** en **el Explorador de soluciones**.
 
 5. Agregue el código para el <xref:System.Windows.Forms.Control.Click> controlador de eventos del botón. El ejemplo siguiente muestra código de un documento de Microsoft Office Word.
 

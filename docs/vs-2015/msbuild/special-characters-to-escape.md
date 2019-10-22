@@ -18,11 +18,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: beeed84db240ecf57ca18dd9aef08622f14b06fc
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59659688"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68161353"
 ---
 # <a name="special-characters-to-escape"></a>Caracteres especiales de escape
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ Los caracteres especiales deben ser de escape únicamente si tienen un significa
   
  A continuación se enumera la lista completa de los caracteres especiales de escape:  
   
-|Carácter|Descripción|  
+|Carácter|DESCRIPCIÓN|  
 |---------------|-----------------|  
 |%|Signo de porcentaje, utilizado para hacer referencia a metadatos.|  
 |$|Signo de dólar, utilizado para hacer referencia a propiedades.|  

@@ -7,17 +7,17 @@ f1_keywords:
 helpviewer_keywords:
 - IPropertyProxyProvider interface
 ms.assetid: 52e9f7fc-6fe0-4d23-890b-5673dca8c3cb
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c1e9afbe99e6265e47bf033c7d4af8e93590aaf6
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: dbda02c26018adc4e5f1f3677b75bc2dce25a2e5
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56718266"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66339282"
 ---
 # <a name="ipropertyproxyprovider"></a>IPropertyProxyProvider
 Esta interfaz proporciona una interfaz de proxy para ver y cambiar datos de un objeto.

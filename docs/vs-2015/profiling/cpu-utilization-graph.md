@@ -14,11 +14,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 8058995c8ae45c40f202aaa1e788891da3eb985d
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60086792"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68180494"
 ---
 # <a name="cpu-utilization-graph"></a>Gráfico de utilización de la CPU
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,6 +35,6 @@ El gráfico de utilización de la CPU muestra el nivel de uso en una aplicación
   
 - El color blanco indica la disponibilidad de núcleos lógicos no usados en el sistema. Estos núcleos están disponibles para su proceso si puede encontrar más oportunidades de paralelismo.  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Otras referencias  
  [Vista Utilización](../profiling/utilization-view.md)   
  [Uso medio de la CPU](../profiling/average-cpu-utilization.md)

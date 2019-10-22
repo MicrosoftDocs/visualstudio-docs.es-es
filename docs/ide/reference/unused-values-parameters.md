@@ -10,12 +10,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 2d0875f9a298af24575cc05008713cbb6c3e2ead
-ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
+ms.openlocfilehash: ce2b0f1e0c0db45c478c3917306683b314da0564
+ms.sourcegitcommit: 614d5b99576ea27a41957cd94062dc95cbd29c1c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58414686"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "65531877"
 ---
 # <a name="unused-value-assignments-variables-and-parameters"></a>Parámetros, variables y asignaciones de valor sin usar
 
@@ -43,4 +43,4 @@ Esta refactorización se aplica a lo siguiente:
 ## <a name="see-also"></a>Vea también
 
 - [Refactorización](../refactoring-in-visual-studio.md)
-- [Sugerencias para desarrolladores de .NET](../../ide/visual-studio-2017-for-dotnet-developers.md)
+- [Sugerencias para desarrolladores de .NET](../csharp-developer-productivity.md)

@@ -12,12 +12,12 @@ ms.assetid: 34853412-ab8a-4caa-9601-7d0727b2985d
 caps.latest.revision: 30
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 0b7845d80b895d1b4c68afc59f2d2fe821be11f7
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 98838f09df3094e16d5f1a18263ffdad603ded0b
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60102801"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63440139"
 ---
 # <a name="adding-and-removing-property-pages"></a>Adición y eliminación de páginas de propiedades
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -205,7 +205,7 @@ El Diseñador de proyectos proporciona una ubicación centralizada para administ
     ```  
   
 > [!NOTE]
->  Todos los ejemplos de código proporcionados en este tema forman parte de un ejemplo más extenso, [muestras de VSSDK](../misc/vssdk-samples.md).  
+> Todos los ejemplos de código proporcionados en este tema forman parte de un ejemplo más extenso, [muestras de VSSDK](../misc/vssdk-samples.md).  
   
 ## <a name="see-also"></a>Vea también  
  [Subtipos de proyecto](../extensibility/internals/project-subtypes.md)

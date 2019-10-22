@@ -10,22 +10,22 @@ helpviewer_keywords:
 ms.assetid: 3bac375d-8bd5-41be-a8de-32eb33c5cfac
 caps.latest.revision: 20
 manager: jillfra
-ms.openlocfilehash: 833783267c70c0a201e4b84bc5031bce517dc0a2
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 15a3896f8a2010a063393d3a11c1ed3453a008d5
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60054487"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65689092"
 ---
 # <a name="support-for-settings-categories"></a>Compatibilidad con categorías de configuración
-Una categoría de configuración consta de un grupo de opciones que personalizan el entorno de desarrollo integrado (IDE). Por ejemplo, la configuración puede controlar el diseño de las ventanas de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] y el contenido de los menús. Para obtener más información, consulte [Personalizar la configuración de desarrollo en Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+Una categoría de configuración consta de un grupo de opciones que personalizan el entorno de desarrollo integrado (IDE). Por ejemplo, la configuración puede controlar el diseño de las ventanas de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] y el contenido de los menús. Para obtener más información, consulte [Personalizar la configuración de desarrollo en Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
  En el menú **Herramientas** , haga clic en **Importar y exportar configuraciones** para iniciar el **Asistente para importar y exportar configuraciones**. El asistente ofrece tres opciones: exportar, importar o restablecer la configuración. Por ejemplo, si selecciona exportar, se abre la página del asistente **Elija la configuración para exportar** .  
   
  En el control de árbol del panel de navegación de esta página se muestran las categorías. Una categoría es un grupo de valores de configuración relacionados que aparecen como "punto de configuración personalizada", es decir, como una casilla. Estas casillas se usan para seleccionar las categorías de modo que se conserven en un archivo .vsettings. El asistente permite asignar un nombre al archivo .vsettings y especificar su ruta de acceso.  
   
 > [!NOTE]
->  La configuración se guarda o se restaura como una categoría y los nombres de los valores de configuración individuales no se muestran en el asistente.  
+> La configuración se guarda o se restaura como una categoría y los nombres de los valores de configuración individuales no se muestran en el asistente.  
   
  El marco de trabajo de paquetes administrados (MPF) admite la creación de categorías de configuración con un mínimo de código adicional.  
   
@@ -48,7 +48,7 @@ Una categoría de configuración consta de un grupo de opciones que personalizan
  La ruta de acceso al Registro de la categoría de configuración se determina mediante la combinación de la propiedad <xref:Microsoft.VisualStudio.Shell.Package.ApplicationRegistryRoot%2A>, la palabra UserSettings, la categoría de configuración y el nombre del punto de configuración personalizada. Los nombres de la categoría de configuración y del punto de configuración personalizada se combinan y se separan con un carácter de subrayado para formar el nombre canónico no localizado que aparece en el Registro. Por ejemplo, si la categoría de configuración es "My Category", el nombre del punto de configuración personalizada es "My Settings" y la propiedad ApplicationRegistryRoot es HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0Exp, la categoría de configuración tiene la clave del Registro HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0Exp\UserSettings\My Category_My Settings.  
   
 > [!NOTE]
->  El nombre canónico no aparece en una interfaz de usuario. Se usa para asociar un nombre legible con la categoría de configuración, como si se tratase de un identificador de programación (ProgID).  
+> El nombre canónico no aparece en una interfaz de usuario. Se usa para asociar un nombre legible con la categoría de configuración, como si se tratase de un identificador de programación (ProgID).  
   
 ### <a name="settings-category-attribute"></a>Atributo de la categoría de configuración  
  El <xref:Microsoft.VisualStudio.Shell.ProvideProfileAttribute> determina la asignación de categorías a los puntos de una configuración personalizada en el **importar y exportar configuraciones** asociando una categoría con el VSPackage que lo proporciona. Observe el fragmento de código siguiente:  
@@ -64,4 +64,4 @@ Una categoría de configuración consta de un grupo de opciones que personalizan
  [Creación de una página de opciones](../extensibility/creating-an-options-page.md)   
  [Muestras de VSSDK](../misc/vssdk-samples.md)   
  [Estado de VSPackage](../misc/vspackage-state.md)   
- [Personalizar la configuración de desarrollo en Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)
+ [Personalizar la configuración de desarrollo en Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)

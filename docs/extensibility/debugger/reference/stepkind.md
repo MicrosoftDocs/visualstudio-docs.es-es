@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - STEPKIND enumeration
 ms.assetid: d3d8cf76-24bf-455e-803e-0e3e28f0b262
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: bb0ece36eba11b61f760552fe0559de46c1ce732
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 7adf835cd3809eeb3d4db664cf5febcfa2a0597b
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56715874"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66329156"
 ---
 # <a name="stepkind"></a>STEPKIND
 Especifica el tipo de paso de ejecución paso a paso.
@@ -43,14 +46,18 @@ public enum enum_STEPKIND { 
 };
 ```
 
-## <a name="members"></a>Miembros
- STEP_INTO pasos en una función.
+## <a name="fields"></a>Campos
+ `STEP_INTO`\
+ Pasos en una función.
 
- STEP_OVER pasos a través de una función.
+ `STEP_OVER`\
+ Pasos a través de una función.
 
- STEP_OUT sale paso a paso una función.
+ `STEP_OUT`\
+ Sale de una función paso a paso.
 
- STEP_BACKWARDS retroceder a una función.
+ `STEP_BACKWARDS`\
+ Retroceder a una función.
 
 ## <a name="remarks"></a>Comentarios
  Se pasa como argumento a la [paso](../../../extensibility/debugger/reference/idebugprocess3-step.md) método.

@@ -1,5 +1,5 @@
 ---
-title: Procedimiento Crear un Control de usuario para una página de aplicación de SharePoint o elemento Web | Documentos de Microsoft
+title: Crear el control de usuario para el elemento de página o web de aplicación de SharePoint
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 6e0cc6ee8df5285555760521b415ce8f6679fc2f
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 3a88a59e9b87a193329433e5eb0625afa1428026
+ms.sourcegitcommit: 25570fb5fb197318a96d45160eaf7def60d49b2b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60072050"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "66401478"
 ---
 # <a name="how-to-create-a-user-control-for-a-sharepoint-application-page-or-web-part"></a>Procedimiento Crear un control de usuario para un elemento de página o web de la aplicación de SharePoint
   Puede crear controles de usuario personalizados que proporcionan funcionalidad personalizada para la solución de SharePoint, y puede reutilizar esa funcionalidad dentro del proyecto. Puede incluir controles de usuario en un elemento web o página de aplicación, agregar más controles ASP.NET y controles de SharePoint, así como definir propiedades y métodos para el control. Para obtener más información acerca de los controles de usuario, consulte [crear controles reutilizables para elementos web o páginas de aplicación](../sharepoint/creating-reusable-controls-for-web-parts-or-application-pages.md) y [controles de usuario y controles de servidor de SharePoint](https://blogs.msdn.microsoft.com/kaevans/2011/04/28/user-controls-and-server-controls-in-sharepoint/).
@@ -37,10 +37,10 @@ ms.locfileid: "60072050"
 
 4. En el **instalado** panel, elija el **Office/SharePoint** nodo.
 
-5. En la lista de plantillas de SharePoint, elija **Control de usuario (solución de granja de servidores únicamente)**.
+5. En la lista de plantillas de SharePoint, elija **Control de usuario (solución de granja de servidores únicamente)** .
 
     > [!NOTE]
-    >  Los controles de usuario funcionan solo en soluciones de granja.
+    > Los controles de usuario funcionan solo en soluciones de granja.
 
 6. En el **nombre** cuadro, especifique un nombre para el control de usuario y, a continuación, elija el **agregar** botón.
 

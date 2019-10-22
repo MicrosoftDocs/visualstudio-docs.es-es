@@ -32,12 +32,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a753574e883872780446929f7c2349b0d726c71a
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: cd7be5aea136c901241ca66af485e76a39cd0ee5
+ms.sourcegitcommit: 5694c5236fa32ba7f5bc1236a853f725ec7557e9
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55925961"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "68681314"
 ---
 # <a name="options-text-editor-all-languages-scroll-bars"></a>Opciones, Editor de texto, Todos los idiomas, Barras de desplazamiento
 Este cuadro de diálogo le permite cambiar el comportamiento predeterminado de la barra de desplazamiento del Editor de código. Para mostrar estas opciones, seleccione **Opciones** desde el menú **Herramientas**. En la carpeta **Editor de texto**, expanda la subcarpeta **Todos los idiomas** y después seleccione **Barras de desplazamiento**.
@@ -59,7 +59,7 @@ Cuando está seleccionada, muestra una barra de desplazamiento vertical que le p
 
 Seleccione si la barra de desplazamiento vertical muestra las siguientes anotaciones:
 
-- trabajando
+- cambios
 - marcas
 - errores
 - posición del símbolo de intercalación
@@ -68,6 +68,8 @@ Seleccione si la barra de desplazamiento vertical muestra las siguientes anotaci
 > La opción **Mostrar marcas** incluye puntos de interrupción y marcadores.
 
 Para probarla, abra un archivo de código largo y reemplace texto que aparezca en distintos lugares del archivo. La barra de desplazamiento muestra el efecto de los reemplazos, por lo que puede revertir los cambios si ha reemplazado algo que no debería haber reemplazado.
+
+Consulte la entrada de blog [Barra de desplazamiento mejorada](https://blogs.msdn.microsoft.com/cdnstudents/2014/01/21/visual-studio-tips-and-tricks-enhanced-scroll-bar/) sobre qué significan los distintos colores y símbolos que se muestran al editar el código.
 
 ## <a name="behavior"></a>Comportamiento
 

@@ -1,5 +1,5 @@
 ---
-title: Referencia (captura mediante programación) | Microsoft Docs
+title: Referencia (captura mediante programación) | Documentos de Microsoft
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: ef60eb8d-1ac2-4e3a-9b4b-f6da0bdd9da8
@@ -9,11 +9,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: a462d22df9768d2ffc8b344933e9f5c1f556575a
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56713599"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62895526"
 ---
 # <a name="reference-programmatic-capture"></a>Referencia (captura mediante programación)
 Diagnóstico de gráficos admite el control mediante programación de sus características de captura a través de la API de captura mediante programación. Puede utilizar esta API para alternar y agregar mensajes al HUD (pantalla de visualización frontal) de diagnóstico de gráficos, inicializar y crear archivos de registro de gráficos, y capturar información de gráficos.
@@ -22,13 +22,13 @@ Diagnóstico de gráficos admite el control mediante programación de sus caract
 
 ### <a name="classes"></a>Clases
 
-|nombre|Descripción|
+|Name|Descripción|
 |----------|-----------------|
 |[Case VsgDbg](vsgdbg-class.md)|Representa la interfaz a través de la que se controla mediante programación el componente de aplicación de diagnóstico de gráficos.|
 
 ### <a name="preprocessor-symbols"></a>Símbolos de preprocesador
 
-|nombre|Descripción|
+|Name|Descripción|
 |----------|-----------------|
 |[DONT_SAVE_VSGLOG_TO_TEMP](dont-save-vsglog-to-temp.md)|Define por su presencia si el archivo de registro de gráficos se guarda en el directorio de archivos temporales del usuario.|
 |[VSG_DEFAULT_RUN_FILENAME](vsg-default-run-filename.md)|Define el nombre de archivo predeterminado del archivo de registro de gráficos.|
@@ -36,7 +36,7 @@ Diagnóstico de gráficos admite el control mediante programación de sus caract
 
 ## <a name="related-articles"></a>Artículos relacionados
 
-| Title | Descripción |
+| Título | Descripción |
 | - | - |
 | [Capturing Graphics Information](capturing-graphics-information.md) | Muestra cómo capturar información de gráficos desde la aplicación basada en DirectX para que pueda utilizar las herramientas de Diagnóstico de gráficos de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] con el fin de diagnosticar problemas de representación. |
 | [Información general](overview-of-visual-studio-graphics-diagnostics.md) | Muestra cómo Diagnóstico de gráficos puede ayudarle a depurar errores de representación en juegos y aplicaciones de DirectX. |

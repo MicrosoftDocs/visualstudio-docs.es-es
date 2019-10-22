@@ -6,12 +6,12 @@ ms.assetid: 9d9c7fbb-ebae-4b20-9dd8-3c9070c0d0d1
 caps.latest.revision: 7
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 93fa86fcac429b38c1e727f39f8c94611310119c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 97d634f97eb7a13cfa54b2c0d326b19f31fb7d9d
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60062613"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65685532"
 ---
 # <a name="image-library-viewer"></a>Visor de la biblioteca de imágenes
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -130,7 +130,7 @@ La herramienta Visor de biblioteca de imágenes de Visual Studio puede cargar y 
 |||  
 |-|-|  
 |**Attribute**|**Definición**|  
-|URI|[Obligatorio] Un URI que define dónde se puede cargar la imagen desde. Puede ser uno de los siguientes:<br /><br /> -A [Pack URI](http://msdn.microsoft.com/library/aa970069\(v=vs.100\).aspx) mediante la aplicación: / / / entidad<br /><br /> -Una referencia de recurso de componente absoluta<br /><br /> -Una ruta de acceso a un archivo que contiene un recurso nativo|  
+|URI|[Obligatorio] Un URI que define dónde se puede cargar la imagen desde. Puede ser uno de los siguientes:<br /><br /> -A [Pack URI](https://msdn.microsoft.com/library/aa970069\(v=vs.100\).aspx) mediante la aplicación: / / / entidad<br /><br /> -Una referencia de recurso de componente absoluta<br /><br /> -Una ruta de acceso a un archivo que contiene un recurso nativo|  
 |Fondo|[Opcional] Indica qué tipo de fondo que el origen está pensado para usarse.<br /><br /> Puede ser uno de los siguientes:<br /><br /> - *Luz*: El origen puede utilizarse en un fondo claro.<br /><br /> - *Oscuro*: El origen puede utilizarse en un fondo oscuro.<br /><br /> - *Contraste alto*: El origen puede utilizarse en cualquier en segundo plano en modo de contraste alto.<br /><br /> - *HighContrastLight*: El origen puede utilizarse en un fondo claro en modo de contraste alto.<br /><br /> -*HighContrastDark*: El origen puede utilizarse en un fondo oscuro en modo de contraste alto.<br /><br /> Si el **en segundo plano** se omite el atributo, el origen se puede usar en cualquier en segundo plano.<br /><br /> Si **en segundo plano** es *luz*, *oscuro*, *HighContrastLight*, o *HighContrastDark*, el nunca se invierten los colores de origen. Si **en segundo plano** se omite o se establece en *contraste alto*, la inversión de colores de origen se controla mediante la imagen **AllowColorInversion** atributo.|  
   
  Un \<origen > elemento puede tener exactamente uno de los siguientes subelementos opcionales:  

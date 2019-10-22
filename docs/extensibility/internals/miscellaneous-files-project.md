@@ -8,17 +8,17 @@ helpviewer_keywords:
 - Solution Items folder
 - files, opening with Miscellaneous Files project
 ms.assetid: 93a278a8-d4f4-400b-8945-4f1b0a2b5bac
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3a1d0530d6a7a759bfab557be1a3d80fcfc9df78
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: dd3cf792b10905d0f124266601e791dc91259ce2
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56630826"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66349286"
 ---
 # <a name="miscellaneous-files-project"></a>Proyecto de archivos varios
 Cuando un usuario abre elementos del proyecto, el IDE asigna al proyecto archivos varios los elementos que no son miembros de los proyectos de una solución.
@@ -39,7 +39,7 @@ Cuando un usuario abre elementos del proyecto, el IDE asigna al proyecto archivo
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject3>
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument>
 - <xref:Microsoft.VisualStudio.Shell.Interop.VSDOCUMENTPRIORITY>
-- [Cómo: Abrir editores específicos del proyecto](../../extensibility/how-to-open-project-specific-editors.md)
+- [Cómo: Abrir editores específicos de proyecto](../../extensibility/how-to-open-project-specific-editors.md)
 - [Cómo: Abrir editores estándar](../../extensibility/how-to-open-standard-editors.md)
 - [Adición de plantillas de proyecto y de elementos de proyecto](../../extensibility/internals/adding-project-and-project-item-templates.md)
 - [Adición de plantillas de proyecto y de elementos de proyecto](../../extensibility/internals/adding-project-and-project-item-templates.md)

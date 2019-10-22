@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - SYMBOL_SEARCH_INFO_FIELDS enumeration
 ms.assetid: bce35af0-722d-46d4-afa6-eaae598c51ff
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: fc50da1cec68103045365a021e039dd18eced85e
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 86a7fb7c891d0c22bc415920014e905cf3d9c6fa
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56717656"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66322362"
 ---
 # <a name="symbolsearchinfofields"></a>SYMBOL_SEARCH_INFO_FIELDS
 Especifica el tipo de información de símbolos para recuperar.
@@ -42,16 +45,18 @@ public enum enum_SYMBOL_SEARCH_INFO_FIELDS
 
 ```
 
-## <a name="members"></a>Miembros
- SSIF_NONE no indica ninguna marca
+## <a name="fields"></a>Campos
+ `SSIF_NONE`\
+ No indica ninguna marca
 
- SSIF_VERBOSE_SEARCH_INFO devuelve que todas las rutas de acceso para buscar los símbolos de búsqueda
+ `SSIF_VERBOSE_SEARCH_INFO`\
+ Devuelve que todas las rutas de acceso para buscar los símbolos de búsqueda
 
 ## <a name="remarks"></a>Comentarios
  Estas marcas se pasan como un parámetro a la [GetSymbolInfo](../../../extensibility/debugger/reference/idebugmodule3-getsymbolinfo.md) devuelto del método para determinar la cantidad de información.
 
 > [!NOTE]
->  Actualmente, solo `SSIF_VERBOSE_SEARCH_INFO` se admite, y se debe especificar como el `dwFlags` parámetro `IDebugModule3::GetSymbolInfo`. Todos los demás valores devuelven un error.
+> Actualmente, solo `SSIF_VERBOSE_SEARCH_INFO` se admite, y se debe especificar como el `dwFlags` parámetro `IDebugModule3::GetSymbolInfo`. Todos los demás valores devuelven un error.
 
 ## <a name="requirements"></a>Requisitos
  Encabezado: msdbg.h

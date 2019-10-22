@@ -11,18 +11,18 @@ ms.assetid: 66a2e00a-f558-4e87-96b8-5ecf5509e04c
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: ab81718837f6af8a230348d5e0a34f1da0a2c7bb
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 6e943fd7ba27fe21029bab4d818803186147476e
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60092050"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65704886"
 ---
 # <a name="sample-implementation-of-locals"></a>Implementación de ejemplo de variables locales
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 > [!IMPORTANT]
->  En Visual Studio 2015, esta forma de implementar los evaluadores de expresión está en desuso. Para obtener información sobre la implementación de evaluadores de expresión de CLR, vea [evaluadores de expresiones CLR](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) y [Managed expresión del evaluador de expresiones Sample](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).  
+> En Visual Studio 2015, esta forma de implementar los evaluadores de expresión está en desuso. Para obtener información sobre la implementación de evaluadores de expresión de CLR, vea [evaluadores de expresiones CLR](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) y [Managed expresión del evaluador de expresiones Sample](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).  
   
  Presentamos una visión general de cómo Visual Studio obtiene a las variables locales para un método desde el evaluador de expresiones (EE):  
   
@@ -66,7 +66,7 @@ ms.locfileid: "60092050"
  [Contexto de evaluación](../../extensibility/debugger/evaluation-context.md)  
  Proporciona los argumentos que se pasan cuando llama a la del evaluador de expresiones (EE).  
   
- [Ejemplo de MyCEE](http://msdn.microsoft.com/624a018b-9179-402f-9d48-3aec87b48f4f)  
+ [Ejemplo de MyCEE](https://msdn.microsoft.com/624a018b-9179-402f-9d48-3aec87b48f4f)  
  Se muestra un enfoque de implementación a la creación de un evaluador de expresiones del lenguaje MyC.  
   
 ## <a name="see-also"></a>Vea también  

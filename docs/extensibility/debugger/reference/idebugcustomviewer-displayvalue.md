@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugCustomViewer::DisplayValue
 ms.assetid: 7a538248-5ced-450e-97cd-13fabe35fb1c
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8734d97dfc8bcd7be2b12ce657071597deaea7a8
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 9d6ff987e12e70a9d3dd443cfafc45d2698469b8
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56717928"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66335702"
 ---
 # <a name="idebugcustomviewerdisplayvalue"></a>IDebugCustomViewer::DisplayValue
 Este método se llama para mostrar el valor especificado.
@@ -42,22 +45,18 @@ int DisplayValue(
 );
 ```
 
-#### <a name="parameters"></a>Parámetros
- `hwnd`
+## <a name="parameters"></a>Parámetros
+`hwnd`\
+[in] Ventana primaria
 
- [in] Ventana primaria
+`dwID`\
+[in] Identificador de los visores personalizados que admiten más de un tipo.
 
- `dwID`
+`pHostServices`\
+[in] Reservado. Siempre se establece en null.
 
- [in] Identificador de los visores personalizados que admiten más de un tipo.
-
- `pHostServices`
-
- [in] Reservado. Siempre se establece en null.
-
- `pDebugProperty`
-
- [in] Interfaz que puede usarse para recuperar el valor que se mostrará.
+`pDebugProperty`\
+[in] Interfaz que puede usarse para recuperar el valor que se mostrará.
 
 ## <a name="return-value"></a>Valor devuelto
  Si es correcto, devuelve `S_OK`; en caso contrario, devuelve el código de error.

@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugObject::IsEqual method
 ms.assetid: 4b76e663-ef2e-41ff-9be1-bf26d666a34a
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 49d909dc0896bcc1b130ce908699c04ad9543c73
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: cf592fa83a18c47bf676b84073c0be0e4cb476e8
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56691116"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66323586"
 ---
 # <a name="idebugobjectisequal"></a>IDebugObject::IsEqual
 Compara un objeto con este objeto.
@@ -38,14 +41,12 @@ int IsEqual(
 );
 ```
 
-#### <a name="parameters"></a>Parámetros
- `pObject`
+## <a name="parameters"></a>Parámetros
+`pObject`\
+[in] Un [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) que representa el objeto que se compara con el objeto.
 
- [in] Un [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) que representa el objeto que se compara con el objeto.
-
- `pfIsEqual`
-
- [out] Devuelve cero (`TRUE`) si los valores de los objetos son iguales; en caso contrario, devuelve cero (`FALSE`).
+`pfIsEqual`\
+[out] Devuelve cero (`TRUE`) si los valores de los objetos son iguales; en caso contrario, devuelve cero (`FALSE`).
 
 ## <a name="return-value"></a>Valor devuelto
  Si se realiza correctamente, devuelve S_OK; en caso contrario, devuelve un código de error.

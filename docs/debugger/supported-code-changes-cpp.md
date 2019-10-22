@@ -1,5 +1,5 @@
 ---
-title: Admite los cambios de código (C++) | Documentos de Microsoft
+title: Cambios de código admitidos (C++) | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -20,17 +20,17 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 7d029d5cb3deb886faa4423d24ae8d5282f80e6a
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 8e38123be6b780aa9f37dc2b329ec36e3f18e793
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60114592"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72430568"
 ---
 # <a name="supported-code-changes-c"></a>Cambios admitidos en el código (C++)
-Con Visual C++, Editar y continuar controla la mayoría de los tipos de cambios del código. Sin embargo, algunos cambios no se pueden aplicar durante la ejecución de programa. Para aplicar estos cambios, debe detener la ejecución y compilar una versión nueva del código.
+Editar y continuar para C++ proyectos controla la mayoría de los tipos de cambios de código. Sin embargo, algunos cambios no se pueden aplicar durante la ejecución de programa. Para aplicar estos cambios, debe detener la ejecución y compilar una versión nueva del código.
 
- Consulte [Edit and Continue (Visual C++)](../debugger/edit-and-continue-visual-cpp.md) para obtener información sobre el uso de Editar y continuar para C++ en Visual Studio.
+ Vea [Editar y continuar (C++)](../debugger/edit-and-continue-visual-cpp.md) para obtener información sobre cómo trabajar con editar y C++ continuar para en Visual Studio.
 
 ## <a name="BKMK_Unsupported_changes"></a> Cambios no admitidos
  Los cambios siguientes en C/C++ no se pueden aplicar durante una sesión de depuración:
@@ -66,7 +66,7 @@ Con Visual C++, Editar y continuar controla la mayoría de los tipos de cambios 
 
 - Depurar aplicaciones nativas compiladas con [/Zo (Mejorar la depuración optimizada)](/cpp/build/reference/zo-enhance-optimized-debugging)
 
-- En las versiones de Visual Studio anteriores a Visual Studio 2015 Update 1, depurar componentes o aplicaciones para UWP. A partir de Visual Studio 2015 Update 1, puede usar Editar y continuar en aplicaciones de C++ de UWP y aplicaciones de DirectX, ya que ahora admite la `/ZI` modificador del compilador con la `/bigobj` cambie. También puede usar Editar y continuar con binarios compilados con el modificador `/FASTLINK` .
+- En las versiones de Visual Studio anteriores a Visual Studio 2015 Update 1, depurar aplicaciones o componentes de UWP. A partir de Visual Studio 2015 Update 1, puede usar editar y continuar en aplicaciones C++ para UWP y aplicaciones de DirectX, ya que ahora admite el modificador de `/ZI` compilador con el modificador `/bigobj`. También puede usar Editar y continuar con binarios compilados con el modificador `/FASTLINK` .
 
 - Depurar en Windows 98.
 
@@ -137,4 +137,4 @@ Con Visual C++, Editar y continuar controla la mayoría de los tipos de cambios 
  Con el modo Editar y continuar no se pueden regenerar los archivos de definición de interfaz (IDL). Por tanto, los cambios realizados en los atributos IDL no se reflejarán durante la depuración. Para ver el resultado de los cambios en los atributos IDL, debe detener la depuración y recompilar la aplicación. Editar y continuar no genera ningún error o advertencia si cambian los atributos IDL. Para obtener más información, vea [Atributos IDL](/cpp/windows/idl-attributes).
 
 ## <a name="see-also"></a>Vea también
-- [Edit and Continue (Visual C++)](../debugger/edit-and-continue-visual-cpp.md)
+- [Editar y continuar (C++)](../debugger/edit-and-continue-visual-cpp.md)

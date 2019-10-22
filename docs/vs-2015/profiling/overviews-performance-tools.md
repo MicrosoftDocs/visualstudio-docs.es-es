@@ -10,11 +10,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 6429f9d9a94d74be48bd1a6305f1bb109a173b5a
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54773624"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68189345"
 ---
 # <a name="overviews-performance-tools"></a>Información general (herramientas de rendimiento)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,6 +49,6 @@ Esta sección proporciona información sobre los conceptos y la terminología re
  [Generar perfiles y seguridad en Windows Vista](../profiling/profiling-and-windows-vista-security.md)  
  Obtenga información acerca de los problemas y los pasos necesarios para recopilar datos de muestreo y generar perfiles de aplicaciones entre sesiones en [!INCLUDE[wiprlhext](../includes/wiprlhext-md.md)].  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Otras referencias  
  [Introducción](../profiling/getting-started-with-performance-tools.md)   
  [Explorador de rendimiento](../profiling/performance-explorer.md)

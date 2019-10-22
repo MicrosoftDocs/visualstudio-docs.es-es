@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1c34bd47dc3909fd165db265eb5a5a79920a03f9
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 4e5f7f21206953b8d99306a9b1da6935604c88b8
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "57869075"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62815487"
 ---
 # <a name="system-requirements-for-the-visual-studio-emulator-for-android"></a>Requisitos de sistema del Emulador de Visual Studio para Android
 
@@ -26,7 +26,7 @@ El programa de instalación intenta configurar estos requisitos previos de forma
 > [!IMPORTANT]
 > El programa de instalación del emulador comprueba si se cumplen los requisitos previos para la ejecución del emulador de Visual Studio para Android. Si esos requisitos no se cumplen, se muestran una serie de advertencias, pero no se exigirá su cumplimiento.
 
-##  <a name="Checklist"></a> Lista de comprobación rápida
+## <a name="Checklist"></a> Lista de comprobación rápida
 
 Esta lista de comprobación rápida muestra los requisitos para la ejecución del emulador de Visual Studio para Android. Para obtener información más detallada, vea las secciones posteriores de este tema.
 
@@ -50,11 +50,11 @@ Requisitos de Hyper-V
 
 - En el BIOS, deben admitirse las siguientes características:
 
-  -   Virtualización asistida por hardware
+  - Virtualización asistida por hardware
 
-  -   Traducción de direcciones de segundo nivel (SLAT)
+  - Traducción de direcciones de segundo nivel (SLAT)
 
-  -   Prevención de ejecución de datos (DEP) basada en hardware
+  - Prevención de ejecución de datos (DEP) basada en hardware
 
 - En Windows, Hyper-V debe estar habilitado y en ejecución.
 

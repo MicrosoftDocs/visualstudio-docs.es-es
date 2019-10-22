@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - source control [Visual Studio SDK], configuration details
 ms.assetid: adbee9fc-7a2e-4abe-a3b8-e6615bcd797f
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: db9a8abb2b1013a7d11a4013d602e33592beff70
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 917354534ee3dbb2b615ec031f0a41c31bd88235
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60070100"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66322580"
 ---
 # <a name="source-control-configuration-details"></a>Detalles de configuración del control de código fuente
 Para poder implementar el control de código fuente, es preciso configurar correctamente el sistema de proyecto o el editor para hacer lo siguiente:
@@ -41,7 +41,7 @@ Para poder implementar el control de código fuente, es preciso configurar corre
  Antes de que un proyecto o un editor guarde un archivo, debe llamar a <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2.QuerySaveFile%2A> o <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2.QuerySaveFiles%2A>. Los archivos de proyecto, estas llamadas se completan automáticamente mediante la solución, que se sabe cuándo se debe guardar un archivo de proyecto. Editores son responsables de realizar estas llamadas a menos que la implementación del editor de `IVsPersistDocData2` usa la función auxiliar <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.SaveDocDataToFile%2A>. Si el editor implementa `IVsPersistDocData2` en este modo, a continuación, la llamada a `IVsQueryEditQuerySave2::QuerySaveFile` o `IVsQueryEditQuerySave2::QuerySaveFiles` se llevan a cabo.
 
 > [!NOTE]
->  Siempre realice estas llamadas de forma preventiva, es decir, en un momento en el editor puede recibir una cancelación.
+> Siempre realice estas llamadas de forma preventiva, es decir, en un momento en el editor puede recibir una cancelación.
 
 ## <a name="request-permission-to-add-remove-or-rename-files-in-the-project"></a>Solicitar permiso para agregar, quitar o cambiar el nombre de los archivos del proyecto
  Antes de que un proyecto puede agregar, cambiar o quitar un archivo o directorio, debe llamar a la correspondiente `IVsTrackProjectDocuments2::OnQuery*` método para solicitar permiso desde el entorno. Si se concede permiso, entonces el proyecto debe completar la operación y, a continuación, llame al `IVsTrackProjectDocuments2::OnAfter*` método para notificar el entorno que la operación ha finalizado. El proyecto debe llamar a los métodos de la <xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackProjectDocuments2> interfaz para todos los archivos (por ejemplo, archivos especiales) y no solo los archivos principales. Las llamadas de archivos son obligatorias, pero las llamadas de directorio son opcionales. Si el proyecto tiene información de directorio, a continuación, debe llamar a la correspondiente <xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackProjectDocuments2> métodos, pero si no tiene esta información, el entorno deducirá información del directorio.

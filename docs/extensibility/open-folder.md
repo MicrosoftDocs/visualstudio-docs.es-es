@@ -9,11 +9,11 @@ manager: viveis
 ms.workload:
 - vssdk
 ms.openlocfilehash: 2bb74703f639848d643f536edf620e30b1836310
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53986016"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62806495"
 ---
 # <a name="open-folder-extensibility"></a>Extensibilidad de carpeta abierta
 
@@ -26,7 +26,7 @@ El [Abrir carpeta](../ide/develop-code-in-visual-studio-without-projects-or-solu
 
 Cuando se usa con las cargas de trabajo como en el caso de desarrollo .NET y C++, también se muestra:
 
-* Intellisense completo
+* Rich Intellisense
 * Funcionalidad específica del lenguaje
 
 Con Abrir carpeta, los autores de extensiones pueden crear características enriquecidas para cualquier lenguaje. Existen API para admitir la creación, depuración y búsqueda de símbolos para cualquier archivo de un usuario del código base. Los extensores actuales pueden actualizar sus características de Visual Studio existentes para entender el código sin el respaldo de una solución o proyectos.

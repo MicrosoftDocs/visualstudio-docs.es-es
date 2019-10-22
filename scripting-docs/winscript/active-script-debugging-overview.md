@@ -13,17 +13,17 @@ caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 31fb3f5bf88b0caf179a43d02358bb6a9f1a2831
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
-ms.translationtype: HT
+ms.openlocfilehash: a8c06477b7cd9d069e416cfd7d86a8cd0cb7bfd5
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58149658"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72572276"
 ---
 # <a name="active-script-debugging-overview"></a>Información general acerca de la depuración de Active Script
 Las interfaces de depuración de Active Script permiten la depuración independiente del idioma y del host, y admiten una amplia variedad de entornos de desarrollo.  
   
- ![Proceso de host de scripts](../winscript/media/scp56activdbgarchgif.gif "Scp56ActivDbgArchgif")  
+ ![Proceso de script host](../winscript/media/scp56activdbgarchgif.gif "Scp56ActivDbgArchgif")  
 Figura 1  
   
  Un entorno de depuración independiente del idioma puede admitir cualquier lenguaje de programación o una combinación de lenguajes de programación, sin necesidad de tener conocimientos específicos sobre cualquiera de estos lenguajes. El entorno de depuración también admite ejecutar instrucciones paso a paso entre lenguajes, así como puntos de interrupción. Esta información general se centra principalmente en la compatibilidad con lenguajes de scripting, como VBScript y [!INCLUDE[javascript](../javascript/includes/javascript-md.md)].  

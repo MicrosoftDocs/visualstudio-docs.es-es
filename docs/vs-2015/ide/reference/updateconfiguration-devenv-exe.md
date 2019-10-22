@@ -10,37 +10,36 @@ helpviewer_keywords:
 - updateconfiguration Devenv switch
 ms.assetid: 9a1084cc-8b68-4ccc-aaea-f95939164338
 caps.latest.revision: 7
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 9ffc9410d64f58fff771a0e9b251ee1131eaea5e
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 50773821b328ea81381744bc6f32b3907cd1c5bc
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59670036"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72657922"
 ---
 # <a name="updateconfiguration-devenvexe"></a>/Updateconfiguration (devenv.exe)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Notifica a [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] que combine los paquetes de [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] en el sistema y compruebe la caché de MEF para detectar cualquier cambio.  
-  
-## <a name="syntax"></a>Sintaxis  
-  
-```  
-devenv /updateconfiguration  
-```  
-  
-## <a name="remarks"></a>Comentarios  
- [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] ejecuta este comando automáticamente cuando instala un paquete de VSIX. Debe ejecutar `devenv.exe /updateconfiguration` después de revisar los archivos de manera que [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] actualice la caché de MEF. Esto le permite evaluar si la corrección es adecuada.  
-  
-## <a name="example"></a>Ejemplo  
- La siguiente línea de comandos hace que [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] combine los paquetes de [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] en el sistema y compruebe la caché de MEF para detectar cualquier cambio.  
-  
-```  
-Devenv.exe /updateconfiguration  
-```  
-  
-## <a name="see-also"></a>Vea también  
- [Personalizar la configuración de desarrollo en Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)   
- [Modificadores de línea de comandos para Devenv](../../ide/reference/devenv-command-line-switches.md)
+Notifica a [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] que combine los paquetes de [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] en el sistema y compruebe la caché de MEF para detectar cualquier cambio.
+
+## <a name="syntax"></a>Sintaxis
+
+```
+devenv /updateconfiguration
+```
+
+## <a name="remarks"></a>Comentarios
+ [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] ejecuta este comando automáticamente cuando instala un paquete de VSIX. Debe ejecutar `devenv.exe /updateconfiguration` después de revisar los archivos de manera que [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] actualice la caché de MEF. Esto le permite evaluar si la corrección es adecuada.
+
+## <a name="example"></a>Ejemplo
+ La siguiente línea de comandos hace que [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] combine los paquetes de [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] en el sistema y compruebe la caché de MEF para detectar cualquier cambio.
+
+```
+Devenv.exe /updateconfiguration
+```
+
+## <a name="see-also"></a>Otras referencias
+ [Personalizar la configuración de desarrollo en](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3) los [modificadores de línea de comandos de devenv](../../ide/reference/devenv-command-line-switches.md) de Visual Studio

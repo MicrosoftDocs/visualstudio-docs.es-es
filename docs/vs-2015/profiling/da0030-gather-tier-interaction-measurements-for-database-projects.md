@@ -1,5 +1,5 @@
 ---
-title: 'DA0030: Recopilar las medidas de interacción de capas para los proyectos de base de datos | Microsoft Docs'
+title: 'DA0030: Recopilar medidas de interacción de capas para proyectos de base de datos | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -14,13 +14,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 9a4b140c1859d3a3a17eb2f48eb02a60a3e9d50c
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54801484"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68152625"
 ---
-# <a name="da0030-gather-tier-interaction-measurements-for-database-projects"></a>DA0030: Recopilar las medidas de interacción de capas para los proyectos de base de datos
+# <a name="da0030-gather-tier-interaction-measurements-for-database-projects"></a>DA0030: Recopilación de medidas de interacción de capas para proyectos de base de datos
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Id. de regla | DA0030 |  
@@ -29,7 +29,7 @@ Id. de regla | DA0030 |
 | Mensaje | La recopilación de mediciones de interacción para aplicaciones de varios niveles tendrá ayudará a comprender los patrones de uso de la base de datos y datos clave de acceso a retrasos. Intente generar de nuevo el perfil de la aplicación con la opción de generación de perfiles de interacción de capas habilitada.|  
 | Tipo de regla | Información |  
   
-## <a name="cause"></a>Motivo  
+## <a name="cause"></a>Causa  
  Las llamadas a los métodos <xref:System.Data> constituyen una proporción considerable de los datos de generación de perfiles; además, no ha recopilado datos de interacción de capas en la generación de perfiles. Considere la opción de volver a generar los perfiles y agregar los datos de interacción de capas.  
   
 ## <a name="rule-description"></a>Descripción de la regla  

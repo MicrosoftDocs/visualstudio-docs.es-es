@@ -3,14 +3,15 @@ layout: HubPage
 hide_bc: true
 title: Productos de Visual Studio | Microsoft Docs
 description: Explore la familia de productos de Visual Studio.
-ms.topic: landing-page
+ms.topic: hub-page
+ms.date: 07/02/2019
 searchScope: []
-ms.openlocfilehash: 77d03ae304886be2e6c588ccea1c6e8be97efb15
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: c499b8f1ecf80fefe911d3f9fa2cb918e40f125e
+ms.sourcegitcommit: cf8c0fef2b9690595e99ce3802586cdd55fd37c2
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59017997"
+ms.lasthandoff: 08/28/2019
+ms.locfileid: "70107871"
 ---
 <!-- markdownlint-disable MD033 -->
 <div id="main" class="v2">
@@ -30,7 +31,7 @@ ms.locfileid: "59017997"
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage">
-                                                        <img data-scaleimage="./images/vs-ide-2019.svg" src="./images/vs-ide-2019.svg" alt="" />
+                                                        <img data-scaleimage="./images/vs-ide-2019.svg" src="./images/vs-ide-2019.svg" alt="Visual Studio 2019 logo" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -49,7 +50,7 @@ ms.locfileid: "59017997"
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage">
-                                                        <img data-scaleimage="./images/vs-mac-2019.svg" src="./images/vs-mac-2019.svg" alt="" />
+                                                        <img data-scaleimage="./images/vs-mac-2019.svg" src="./images/vs-mac-2019.svg" alt="Visual Studio for Mac" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -67,8 +68,8 @@ ms.locfileid: "59017997"
                                         <div class="cardPadding">
                                             <div class="card">
                                                 <div class="cardImageOuter">
-                                                    <div class="cardImage">
-                                                        <img data-scaleimage="./images/vs-code.svg" src="./images/vs-code.svg" alt="" />
+                                                    <div class="cardImage"> 
+                                                        <img data-scaleimage="./images/vs-code-logo.svg" src="./images/vs-code-logo.svg" alt="Visual Studio Code" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -81,13 +82,13 @@ ms.locfileid: "59017997"
                                 </a>
                             </li>
                             <li>
-                                <a href="/appcenter/" title="Centro de aplicaciones de Visual Studio">
+                                <a href="/appcenter/" title="Visual Studio App Center">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage">
-                                                        <img data-scaleimage="./images/vs-mobile-center.svg" src="./images/vs-mobile-center.svg" alt="" />
+                                                        <img data-scaleimage="./images/vs-mobile-center.svg" src="./images/vs-mobile-center.svg" alt="Visual Studio App Center" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -100,13 +101,13 @@ ms.locfileid: "59017997"
                                 </a>
                             </li>
                             <li>
-                                <a href="/visualstudio/subscriptions/" title="Suscripciones de Visual Studio">
+                                <a href="/visualstudio/subscriptions/" title="Suscripciones de Visual Studio">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage">
-                                                        <img data-scaleimage="./images/vs-subscription-temp.svg" src="./images/vs-subscription-temp.svg" alt="" />
+                                                        <img data-scaleimage="./images/vs-subscription-temp.svg" src="./images/vs-subscription-temp.svg" alt="Visual Studio Subscriptions" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -118,49 +119,10 @@ ms.locfileid: "59017997"
                                     </div>
                                 </a>
                             </li>
-                            <li>
-                                <a href="/azure/devops/" title="Azure DevOps Services">
-                                    <div class="cardSize">
-                                        <div class="cardPadding">
-                                            <div class="card">
-                                                <div class="cardImageOuter">
-                                                    <div class="cardImage">
-                                                        <img data-scaleimage="./images/vs-team-services.svg" src="./images/vs-team-services.svg" alt="" />
-                                                    </div>
-                                                </div>
-                                                <div class="cardText">
-                                                    <h3>Azure DevOps Services</h3>
-                                                    <p>Aumente la productividad del equipo con informes y herramientas de proyectos de Agile. Compile, pruebe e implemente proyectos a partir del control de código fuente con herramientas modernas de CI/CD.</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="/tfs/" title="Azure DevOps Server">
-                                    <div class="cardSize">
-                                        <div class="cardPadding">
-                                            <div class="card">
-                                                <div class="cardImageOuter">
-                                                    <div class="cardImage">
-                                                        <img data-scaleimage="./images/vs-team-services.svg" src="./images/vs-team-services.svg" alt="" />
-                                                    </div>
-                                                </div>
-                                                <div class="cardText">
-                                                    <h3>Azure DevOps Server</h3>
-                                                    <p>Instale, actualice y administre sus implementaciones locales.</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
                         </ul>
                     </li>
                 </ul>
             </li>
         </ul>
-        <p>Azure DevOps Services ha reemplazado a Visual Studio Team Services, y Team Foundation Server (TFS) ahora ha pasado a llamarse Azure DevOps Server. Consulte <a href="/azure/devops/user-guide/what-happened-vsts?view=vsts">What happened to Visual Studio Team Services?</a> (¿Qué ha ocurrido con Visual Studio Team Services?) y <a href="/tfs/server/tfs-is-now-azure-devops-server">Team Foundation Server is now Azure DevOps Server</a> (Team Foundation Server es ahora Azure DevOps Server).</p>
     </div>
 </div>

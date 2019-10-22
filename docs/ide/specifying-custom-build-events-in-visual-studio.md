@@ -6,35 +6,35 @@ ms.topic: conceptual
 helpviewer_keywords:
 - build events, customizing
 ms.assetid: 69e935a5-e208-4bcd-865c-3e5f9b047ca8
-author: gewarren
-ms.author: gewarren
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 66feaa25b9910a48e192e80798e50d80d861fb08
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 620ffa1ea23c2c892e8385bd9e81a07fb640411a
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55940612"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68918906"
 ---
 # <a name="specify-custom-build-events-in-visual-studio"></a>Especificar eventos de compilación personalizados en Visual Studio
 
 Mediante la especificación de un evento de compilación personalizado, puede ejecutar automáticamente comandos antes de que iniciar o finalizar una compilación. Por ejemplo, puede ejecutar un archivo *.bat* antes de iniciar una compilación o copiar archivos nuevos en una carpeta una vez finalizada la compilación. Los eventos de compilación se ejecutan solo si se alcanzan correctamente esos puntos en el proceso de compilación.
 
- Para obtener información específica sobre el lenguaje de programación que está usando, vea los temas siguientes:
+Para obtener información específica sobre el lenguaje de programación que está usando, vea los temas siguientes:
 
--   Visual Basic--[Cómo: Especificar eventos de compilación (Visual Basic)](../ide/how-to-specify-build-events-visual-basic.md).
+- Visual Basic--[Cómo: Especificar eventos de compilación (Visual Basic)](../ide/how-to-specify-build-events-visual-basic.md).
 
--   C# y F#--[Cómo: Especificar eventos de compilación (C#)](../ide/how-to-specify-build-events-csharp.md).
+- C# y F#--[Cómo: Especificar eventos de compilación (C#)](../ide/how-to-specify-build-events-csharp.md).
 
--   Visual C++: [Especificar eventos de compilación](/cpp/ide/specifying-build-events).
+- Visual C++: [Especificar eventos de compilación](/cpp/build/specifying-build-events).
 
 ## <a name="syntax"></a>Sintaxis
 
 Los eventos de compilación siguen la misma sintaxis que los comandos de DOS, pero puede usar macros para crear eventos más fácilmente. Para obtener una lista de las macros disponibles, vea [Pre-build Event/Post-build Event command line dialog box](../ide/reference/pre-build-event-post-build-event-command-line-dialog-box.md) (Línea de comandos del evento anterior/posterior a la compilación (Cuadro de diálogo)).
 
- Para obtener mejores resultados, siga estas sugerencias de formato:
+Para obtener mejores resultados, siga estas sugerencias de formato:
 
 - Agregue una instrucción `call` delante de todos los eventos de compilación que ejecutan archivos *.bat*.
 
@@ -53,7 +53,7 @@ Los eventos de compilación siguen la misma sintaxis que los comandos de DOS, pe
    Ejemplo: `for %I in (*.txt *.doc *.html) do copy %I c:\`*mydirectory*`\`
 
   > [!NOTE]
-  >  `%I` en el código anterior debe ser `%%I` en scripts por lotes.
+  > `%I` en el código anterior debe ser `%%I` en scripts por lotes.
 
 ## <a name="see-also"></a>Vea también
 

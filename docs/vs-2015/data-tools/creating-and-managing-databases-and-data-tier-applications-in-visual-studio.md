@@ -1,5 +1,5 @@
 ---
-title: Creación y administración de bases de datos y aplicaciones de capa de datos
+title: Crear y administrar bases de datos y aplicaciones de capa de datos
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-data-tools
@@ -11,33 +11,33 @@ helpviewer_keywords:
 - managing change, database servers
 ms.assetid: 40b51f5a-d52c-44ac-8f84-037a0917af33
 caps.latest.revision: 40
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 6b6ee9413a2394d0477cd1c7b1a0caf83dd6ad6d
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 2d6ed13f2e21ea6b9da82eb47afefdd16088e71d
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59651388"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72672464"
 ---
-# <a name="creating-and-managing-databases-and-data-tier-applications-in-visual-studio"></a>Creación y administración de bases de datos y aplicaciones de capa de datos en Visual Studio
+# <a name="creating-and-managing-databases-and-data-tier-applications-in-visual-studio"></a>Creación y administración de aplicaciones de capa de datos y bases de datos en Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 IMPORTANTE]
->  Los proyectos de base de datos que se incluyeron en versiones anteriores de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ahora se ofrecen en [!INCLUDE[sql_Denali_long](../includes/sql-denali-long-md.md)] herramientas. Para obtener más información, consulte [SQL Server Developer Tools](http://go.microsoft.com/fwlink/?LinkId=228126).
+> Los proyectos de base de datos que se incluyeron en versiones anteriores de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ahora se proporcionan en [!INCLUDE[sql_Denali_long](../includes/sql-denali-long-md.md)] herramientas. Para obtener más información, vea [herramientas de SQL Server Developer](http://go.microsoft.com/fwlink/?LinkId=228126).
 
- Puede usar proyectos de base de datos para crear nuevas bases de datos nuevas aplicaciones de capa de datos (DAC) y para actualizar bases de datos existentes y las aplicaciones de capa de datos. Los proyectos de base de datos y los proyectos DAC permiten aplicar técnicas de administración de proyecto y control de versión a sus esfuerzos de desarrollo de base de datos de la misma manera que se aplican esas técnicas para código administrado o nativo. Puede ayudar a su equipo de desarrollo de administrar los cambios en las bases de datos y servidores de base de datos mediante la creación de un *proyecto DAC*, *proyecto de base de datos*, o un *proyecto de servidor* y colocarla bajo control de versiones. Miembros del equipo, a continuación, pueden desproteger los archivos para realizar, compilar y probar los cambios en un *entorno de desarrollo aislado*, o espacio aislado, antes de compartirlos con el equipo. Para ayudar a garantizar la calidad del código, su equipo puede finalizar y pruebe todos los cambios para una versión concreta de la base de datos en un entorno de ensayo antes de implementar los cambios en producción.
+ Puede usar proyectos de base de datos para crear nuevas bases de datos, nuevas aplicaciones de capa de datos (DAC) y para actualizar las bases de datos y las aplicaciones de capa de datos existentes. Tanto los proyectos de base de datos como los proyectos DAC permiten aplicar técnicas de administración de proyectos y control de versiones a los esfuerzos de desarrollo de bases de datos de la misma manera que se aplican esas técnicas a código administrado o nativo. Puede ayudar a su equipo de desarrollo a administrar los cambios en las bases de datos y los servidores de bases de datos mediante la creación de un proyecto *DAC*, un *proyecto de base de datos*o un proyecto de *servidor* y colocarlo bajo el control de versiones. Después, los miembros del equipo pueden desproteger los archivos para realizar, compilar y probar los cambios en un *entorno de desarrollo aislado*, o espacio aislado, antes de compartirlos con el equipo. Para ayudar a garantizar la calidad del código, el equipo puede finalizar y probar todos los cambios de una versión determinada de la base de datos en un entorno de ensayo antes de implementar los cambios en producción.
 
- Para obtener una lista de las características de base de datos que son compatibles con las aplicaciones de capa de datos, vea [características compatibles con las aplicaciones de capa de datos](http://go.microsoft.com/fwlink/?LinkId=164239) en el sitio web de Microsoft. Si usa características de la base de datos que no son compatibles con las aplicaciones de capa de datos, debe usar en su lugar un proyecto de base de datos para administrar los cambios en la base de datos.
+ Para obtener una lista de las características de base de datos admitidas por las aplicaciones de capa de datos, vea [características compatibles con las aplicaciones de capa de datos](http://go.microsoft.com/fwlink/?LinkId=164239) en el sitio web de Microsoft. Si utiliza características en la base de datos que no son compatibles con las aplicaciones de capa de datos, en su lugar debe usar un proyecto de base de datos para administrar los cambios en la base de datos.
 
 ## <a name="common-high-level-tasks"></a>Tareas comunes de alto nivel
 
-|Tareas de alto nivel|Contenido adicional|
+|Tarea de alto nivel|Contenido adicional|
 |----------------------|------------------------|
-|**Iniciar el desarrollo de una aplicación de capa de datos:** Una DAC es un concepto nuevo introducido con [!INCLUDE[sskatmai_r2](../includes/sskatmai-r2-md.md)] que contiene la definición de un [!INCLUDE[ssNoVersion](../includes/ssnoversion-md.md)] objetos utilizados por un cliente / servidor o una aplicación de 3 niveles de instancia de base de datos y el correspondiente. Una DAC incluye objetos de base de datos, como tablas y vistas, junto con las entidades de la instancia, como los inicios de sesión. Puede usar [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] para crear un proyecto DAC, generar un archivo empaquetado DAC y enviar ese archivo de paquete DAC a un administrador de base de datos para la implementación en una instancia de la [!INCLUDE[ssNoVersion](../includes/ssnoversion-md.md)] motor de base de datos.|-   [Creación y administración de aplicaciones de capa de datos](http://go.microsoft.com/fwlink/?LinkId=160741) (sitio web de Microsoft)<br />-   [SQL Server Management Studio](http://go.microsoft.com/fwlink/?LinkId=227328)|
-|**Realizar el desarrollo iterativo de la base de datos:** Si es un desarrollador o evaluador, comprueba las partes del proyecto y, a continuación, actualizarlos en un entorno de desarrollo aislado. Mediante el uso de este tipo de entorno, puede probar los cambios sin que afecte a otros miembros del equipo. Una vez completados los cambios, compruebe los archivos al control de versiones, donde otros miembros del equipo pueden obtener los cambios y generar e implementarlas en un servidor de prueba.|-   [Editores de consultas y texto (SQL Server Management Studio)](http://go.microsoft.com/fwlink/?LinkId=227327) (sitio web de Microsoft)<br />-   [Depurador de Transact-SQL](http://go.microsoft.com/fwlink/?LinkId=227324) (sitio web de Microsoft)|
-|**Creación de prototipos, comprobar resultados de pruebas y modificar los scripts de base de datos y objetos:** Puede usar el [!INCLUDE[tsql](../includes/tsql-md.md)] editor para realizar cualquiera de estas tareas comunes.|-   [Editores de consultas y texto (SQL Server Management Studio)](http://go.microsoft.com/fwlink/?LinkId=227327) (sitio web de Microsoft)|
+|**Iniciar el desarrollo de una aplicación de capa de datos:** Una DAC es un nuevo concepto incluido en [!INCLUDE[sskatmai_r2](../includes/sskatmai-r2-md.md)] que contiene la definición de una base de datos de [!INCLUDE[ssNoVersion](../includes/ssnoversion-md.md)] y los objetos de instancia auxiliares que usa una aplicación cliente-servidor o de tres niveles. Una DAC incluye objetos de base de datos, como tablas y vistas, junto con entidades de instancia como inicios de sesión. Puede usar [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] para crear un proyecto DAC, compilar un archivo de paquete DAC y enviar ese archivo de paquete DAC a un administrador de base de datos para su implementación en una instancia del motor de base de datos de [!INCLUDE[ssNoVersion](../includes/ssnoversion-md.md)].|-   [crear y administrar aplicaciones de capa de datos](http://go.microsoft.com/fwlink/?LinkId=160741) (sitio web de Microsoft)<br />-   [SQL Server Management Studio](http://go.microsoft.com/fwlink/?LinkId=227328)|
+|**Desarrollo iterativo de bases de datos:** Si es un desarrollador o un evaluador, revise las partes del proyecto y, a continuación, actualícelo en un entorno de desarrollo aislado. Mediante este tipo de entorno, puede probar los cambios sin que afecte a otros miembros del equipo. Una vez completados los cambios, vuelva a proteger los archivos en el control de versiones, donde otros miembros del equipo pueden obtener los cambios y compilarlos e implementarlos en un servidor de prueba.|-   [editores de consultas y texto (SQL Server Management Studio)](http://go.microsoft.com/fwlink/?LinkId=227327) (sitio web de Microsoft)<br />-   [depurador de Transact-SQL](http://go.microsoft.com/fwlink/?LinkId=227324) (sitio web de Microsoft)|
+|**Prototipos, comprobación de resultados de pruebas y modificación de objetos y scripts de base de datos:** Puede usar el editor de [!INCLUDE[tsql](../includes/tsql-md.md)] para realizar cualquiera de estas tareas comunes.|-   [editores de consultas y texto (SQL Server Management Studio)](http://go.microsoft.com/fwlink/?LinkId=227327) (sitio web de Microsoft)|
 
 ## <a name="see-also"></a>Vea también
  [Visual Studio Data Tools para .NET](../data-tools/visual-studio-data-tools-for-dotnet.md)

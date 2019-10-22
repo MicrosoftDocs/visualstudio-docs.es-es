@@ -12,12 +12,12 @@ ms.assetid: b1d17f63-7146-4076-a588-034cfc6858b9
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 3cad86071904b2af4c22a2cb1a0ef67d7de95d84
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: d49173a4c1f10be1544cf07b0b01640321d6d181
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58996156"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65697294"
 ---
 # <a name="idebugprogrampublisher2"></a>IDebugProgramPublisher2
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -58,7 +58,7 @@ IDebugProgramPublisher2 : IUnknown
  Ensamblado: Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="example"></a>Ejemplo  
- En este ejemplo se muestra cómo crear una instancia del publicador de programa y registrar un nodo de programa. Esto procede del tutorial, [publicar el nodo de programa](http://msdn.microsoft.com/d0100e02-4e2b-4e72-9e90-f7bc11777bae).  
+ En este ejemplo se muestra cómo crear una instancia del publicador de programa y registrar un nodo de programa. Esto procede del tutorial, [publicar el nodo de programa](https://msdn.microsoft.com/d0100e02-4e2b-4e72-9e90-f7bc11777bae).  
   
 ```cpp#  
 // This is how m_srpProgramPublisher is defined in the class definition:  

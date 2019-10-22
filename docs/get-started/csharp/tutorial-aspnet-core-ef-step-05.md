@@ -17,17 +17,17 @@ ms.workload:
 - aspnet
 - dotnetcore
 ms.openlocfilehash: 2d995818ec5b8ac01c9776bbf2290da39d2cc40b
-ms.sourcegitcommit: b6177ce198c7c5a00030604c9d4faa735405d5df
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/04/2019
-ms.locfileid: "59018108"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62970954"
 ---
 # <a name="step-5-deploy-your-aspnet-core-app-to-azure"></a>Paso 5: Implementación de la aplicación de ASP.NET Core en Azure
 
 Siga estos pasos para implementar la aplicación de ASP.NET Core y su base de datos en Azure.
 
-_Vea este vídeo y siga el tutorial para implementar su primera aplicación de ASP.NET Core en Azure._
+_Vea este vídeo y siga el tutorial para implementar su primera aplicación de ASP.NET Core en Azure_.
 
 > [!VIDEO https://www.youtube.com/embed/n8wz_f5_4wI]
 

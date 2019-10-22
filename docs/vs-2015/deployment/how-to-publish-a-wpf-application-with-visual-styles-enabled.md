@@ -1,5 +1,5 @@
 ---
-title: Filtrar Publicar una aplicación de WPF con estilos visuales habilitados | Documentos de Microsoft
+title: Procedimiento Publicar una aplicación de WPF con estilos visuales habilitados | Documentos de Microsoft
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-deployment
@@ -9,18 +9,18 @@ caps.latest.revision: 5
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: e2eb9da0913b3ce77ea30fd58d5243d5a380d19f
-ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
+ms.openlocfilehash: c3691f782f317667b56f6bf3641c0f4c6a703eda
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/27/2019
-ms.locfileid: "59002372"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65697575"
 ---
-# <a name="how-to-publish-a-wpf-application-with-visual-styles-enabled"></a>Filtrar Publicar una aplicación WPF con estilos visuales habilitados
+# <a name="how-to-publish-a-wpf-application-with-visual-styles-enabled"></a>Procedimiento Publicar una aplicación WPF con estilos visuales habilitados
 
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Los estilos visuales permiten cambiar el aspecto de los controles comunes en función del tema elegido por el usuario. De forma predeterminada, los estilos visuales no están habilitados para las aplicaciones de Windows Presentation Foundation (WPF), por lo que es necesario habilitarlos manualmente. Sin embargo, habilitar los estilos visuales para una aplicación WPF y publicar después la solución produce un error. En este tema se describe cómo resolver este error y el proceso para publicar una aplicación WPF con estilos visuales habilitados. Para obtener más información sobre los estilos visuales, vea [Visual Styles Overview](http://msdn.microsoft.com/5b5d7bb6-684f-478d-bf5f-b8d18bbcff2e). Para obtener más información sobre el mensaje de error, consulte [errores específicos de solución de problemas en implementaciones ClickOnce](../deployment/troubleshooting-specific-errors-in-clickonce-deployments.md).
+Los estilos visuales permiten cambiar el aspecto de los controles comunes en función del tema elegido por el usuario. De forma predeterminada, los estilos visuales no están habilitados para las aplicaciones de Windows Presentation Foundation (WPF), por lo que es necesario habilitarlos manualmente. Sin embargo, habilitar los estilos visuales para una aplicación WPF y publicar después la solución produce un error. En este tema se describe cómo resolver este error y el proceso para publicar una aplicación WPF con estilos visuales habilitados. Para obtener más información sobre los estilos visuales, vea [Visual Styles Overview](https://msdn.microsoft.com/5b5d7bb6-684f-478d-bf5f-b8d18bbcff2e). Para obtener más información sobre el mensaje de error, consulte [errores específicos de solución de problemas en implementaciones ClickOnce](../deployment/troubleshooting-specific-errors-in-clickonce-deployments.md).
 
  Para resolver el error y publicar la solución, debe realizar las tareas siguientes:
 
@@ -125,7 +125,7 @@ Los estilos visuales permiten cambiar el aspecto de los controles comunes en fun
 
 1. Abra el **Símbolo del sistema de Visual Studio**.
 
-    Para obtener más información sobre cómo abrir el **Visual Studio Command Prompt**, consulte [símbolos](http://msdn.microsoft.com/library/94fcf524-9045-4993-bfb2-e2d8bad44219).
+    Para obtener más información sobre cómo abrir el **Visual Studio Command Prompt**, consulte [símbolos](https://msdn.microsoft.com/library/94fcf524-9045-4993-bfb2-e2d8bad44219).
 
    > [!NOTE]
    > Los pasos restantes realizan las suposiciones siguientes sobre la solución:
@@ -193,5 +193,5 @@ Los estilos visuales permiten cambiar el aspecto de los controles comunes en fun
 ## <a name="see-also"></a>Vea también
 
 [Solución de problemas de errores específicos en las implementaciones de ClickOnce](../deployment/troubleshooting-specific-errors-in-clickonce-deployments.md)
-[información general de los estilos visuales](http://msdn.microsoft.com/5b5d7bb6-684f-478d-bf5f-b8d18bbcff2e)
-[símbolos del sistema](http://msdn.microsoft.com/library/94fcf524-9045-4993-bfb2-e2d8bad44219)
+[información general de los estilos visuales](https://msdn.microsoft.com/5b5d7bb6-684f-478d-bf5f-b8d18bbcff2e)
+[símbolos del sistema](https://msdn.microsoft.com/library/94fcf524-9045-4993-bfb2-e2d8bad44219)

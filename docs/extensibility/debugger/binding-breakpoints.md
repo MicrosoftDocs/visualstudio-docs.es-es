@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - breakpoints, binding
 ms.assetid: 70737387-c52f-4dae-8865-77d4b203bf25
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5c36e5df52d4caa34d611f7f1c26b8a5187a637a
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 7f861875e15a9051ab05d1b7398ea5902189830b
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60077568"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66332568"
 ---
 # <a name="bind-breakpoints"></a>Enlazar los puntos de interrupción
 Si el usuario establece un punto de interrupción, quizás presionando **F9**, el IDE se formule la solicitud y se solicita la sesión de depuración para crear el punto de interrupción.

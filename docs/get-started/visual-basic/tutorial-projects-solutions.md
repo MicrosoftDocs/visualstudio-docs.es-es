@@ -11,19 +11,30 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 568742f1ef59eeb282cdf167096310c658c01c50
-ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
+ms.openlocfilehash: 37faf8dc0598a4e59c74e36da22df16119d5a001
+ms.sourcegitcommit: 44e9b1d9230fcbbd081ee81be9d4be8a485d8502
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58323271"
+ms.lasthandoff: 08/30/2019
+ms.locfileid: "70180159"
 ---
 # <a name="learn-about-projects-and-solutions-using-visual-basic"></a>Información sobre proyectos y soluciones con Visual Basic
 
 En este artículo introductorio se explica qué significa crear una *solución* y un *proyecto* en Visual Studio. Una solución es un contenedor que se usa para organizar uno o más proyectos de código relacionados, por ejemplo, un proyecto de biblioteca de clases y un proyecto de prueba correspondiente. Echaremos un vistazo a las propiedades de un proyecto y a algunos de los archivos que puede contener. También se crea una referencia de un proyecto a otro.
 
+::: moniker range="vs-2017"
+
 > [!TIP]
-> Si todavía no ha instalado Visual Studio, vaya a la página de [descargas de Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017) para instalarlo de forma gratuita.
+> Si todavía no ha instalado Visual Studio, vaya a la página de [descargas de Visual Studio](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download) para instalarlo de forma gratuita.
+
+::: moniker-end
+
+::: moniker range="vs-2019"
+
+> [!TIP]
+> Si todavía no ha instalado Visual Studio, vaya a la página de [descargas de Visual Studio](https://visualstudio.microsoft.com/downloads) para instalarlo de forma gratuita.
+
+::: moniker-end
 
 Se crean una solución y un proyecto desde cero como ejercicio educativo para comprender el concepto de proyecto. Cuando use Visual Studio, es probable que emplee alguna de las distintas *plantillas* de proyecto que Visual Studio ofrece al crear un nuevo proyecto.
 
@@ -62,6 +73,8 @@ Comenzaremos nuestro periplo creando una solución vacía. Cuando se familiarice
 
 3. En la página **Crear un proyecto nuevo**, escriba **solución en blanco** en el cuadro de búsqueda, seleccione la plantilla **Solución en blanco** y elija **Siguiente**.
 
+   ![Plantilla Solución en blanco de Visual Studio 2019](../media/vs-2019/tutorial-projects-blank-solution-template.png)
+
 4. Asígnele a la solución el nombre **QuickSolution** y elija **Crear**.
 
    Aparece una solución en el **Explorador de soluciones**, en el lado derecho de la ventana de Visual Studio. Seguramente use el **Explorador de soluciones** a menudo para examinar el contenido de los proyectos.
@@ -72,18 +85,43 @@ Comenzaremos nuestro periplo creando una solución vacía. Cuando se familiarice
 
 Ahora, agreguemos nuestro primer proyecto a la solución. Comenzaremos con un proyecto vacío y le agregaremos los elementos que necesitamos.
 
+::: moniker range="vs-2017"
+
 1. En el menú contextual que aparece al hacer clic con el botón derecho en **Solución "QuickSolution"** en el **Explorador de soluciones**, seleccione **Agregar** > **Nuevo proyecto**.
 
    Se abre el cuadro de diálogo **Agregar nuevo proyecto** .
 
-1. En el panel izquierdo, expanda **Visual Basic** y elija **Escritorio de Windows**. Luego, en el panel central, elija la plantilla **Proyecto vacío (.NET Framework)**. Asigne el nombre **QuickDate** al proyecto y luego haga clic en el botón **Aceptar**.
+1. En el panel izquierdo, expanda **Visual Basic** y elija **Escritorio de Windows**. Luego, en el panel central, elija la plantilla **Proyecto vacío (.NET Framework)** . Asigne el nombre **QuickDate** al proyecto y luego haga clic en el botón **Aceptar**.
 
    Un proyecto denominado QuickDate aparece debajo de la solución en el **Explorador de soluciones**. Actualmente solo contiene un archivo denominado *App.config*.
 
    > [!NOTE]
    > Si no ve **Visual Basic** en el panel izquierdo del cuadro de diálogo, debe instalar la *carga de trabajo* de **desarrollo de escritorio de .NET** de Visual Studio. Visual Studio usa la instalación basada en la carga de trabajo para instalar únicamente los componentes necesarios para el tipo de desarrollo que lleva a cabo. Una manera sencilla de instalar una nueva carga de trabajo es hacer clic en el vínculo **Abrir el instalador de Visual Studio** en la esquina inferior izquierda del cuadro de diálogo **Agregar nuevo proyecto**. Una vez que se abra el Instalador de Visual Studio, elija la carga de trabajo de **desarrollo de escritorio de .NET** y luego haga clic en el botón **Modificar**.
+   >
+   > ![Vínculo Abrir el instalador de Visual Studio](media/tutorial-projects-open-installer-vb.png)
 
-   ![Vínculo Abrir el instalador de Visual Studio](media/tutorial-projects-open-installer-vb.png)
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+1. En el menú contextual que aparece al hacer clic con el botón derecho en **Solución "QuickSolution"** en el **Explorador de soluciones**, seleccione **Agregar** > **Nuevo proyecto**.
+
+   Se abre un cuadro de diálogo de nombre **Agregar un nuevo proyecto**.
+
+1. Escriba el texto **vacío** en el cuadro de búsqueda de la parte superior y luego seleccione **Visual Basic** en **Lenguaje**.
+
+1. Seleccione la plantilla **Proyecto vacío (.NET Framework)** y luego **Siguiente**.
+
+1. Asigne el nombre **QuickDate** al proyecto y luego seleccione **Crear**.
+
+   Un proyecto denominado QuickDate aparece debajo de la solución en el **Explorador de soluciones**. Actualmente solo contiene un archivo denominado *App.config*.
+
+   > [!NOTE]
+   > Si no ve la plantilla **Proyecto vacío (.NET Framework)** , tiene que instalar la *carga de trabajo* **Desarrollo de escritorio de .NET** de Visual Studio. Visual Studio usa la instalación basada en la carga de trabajo para instalar únicamente los componentes necesarios para el tipo de desarrollo que lleva a cabo. Una manera fácil de instalar una nueva carga de trabajo al crear un nuevo proyecto es seleccionar el vínculo **Instalar más herramientas y características** debajo del texto que indica **¿No encuentra lo que busca?** . Una vez que se abra el Instalador de Visual Studio, elija la carga de trabajo de **desarrollo de escritorio de .NET** y luego haga clic en el botón **Modificar**.
+   >
+   > ![Vínculo del Instalador de Visual Studio 2019](../media/vs-2019/tutorial-projects-open-installer.png)
+
+::: moniker-end
 
 ## <a name="add-an-item-to-the-project"></a>Agregar un elemento al proyecto
 
@@ -121,13 +159,27 @@ Vamos a agregar un proyecto de prueba unitaria a la solución. Esta vez se empie
 
 1. En el menú contextual que aparece al hacer clic con el botón derecho en **Solución "QuickSolution"** en el **Explorador de soluciones**, seleccione **Agregar** > **Nuevo proyecto**.
 
-   Se abre el cuadro de diálogo **Agregar nuevo proyecto** .
+::: moniker range="Vs-2017"
 
-1. En el panel izquierdo, expanda **Visual Basic** y elija la categoría **Prueba**. En el panel central, elija la plantilla de proyecto **Proyecto de prueba unitaria (.NET Framework)**. Ponga el nombre **QuickTest** al proyecto y luego haga clic en el botón **Aceptar**.
+2. En el panel izquierdo, expanda **Visual Basic** y elija la categoría **Prueba**. En el panel central, elija la plantilla de proyecto **Proyecto de prueba unitaria (.NET Framework)** . Asigne el nombre **QuickTest** al proyecto y luego seleccione **Aceptar**.
 
    Se agregará un segundo proyecto al **Explorador de soluciones**, mientras que un archivo denominado *UnitTest1.vb* se abre en el editor.
 
    ![Explorador de soluciones de Visual Studio con dos proyectos](media/tutorial-projects-solution-explorer-vb.png)
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+2. En el cuadro de diálogo **Agregar un nuevo proyecto**, escriba el texto **prueba unitaria** en el cuadro de búsqueda de la parte superior y luego seleccione **Visual Basic** en **Lenguaje**.
+
+3. Seleccione la plantilla de proyecto **Proyecto de prueba unitaria (.NET Framework)** y luego seleccione **Siguiente**.
+
+4. Asigne el nombre **QuickTest** al proyecto y luego seleccione **Crear**.
+
+   Se agregará un segundo proyecto al **Explorador de soluciones**, mientras que un archivo denominado *UnitTest1.vb* se abre en el editor.
+
+::: moniker-end
 
 ## <a name="add-a-project-reference"></a>Agregar una referencia de proyecto
 
@@ -157,7 +209,7 @@ Usaremos el nuevo proyecto de prueba unitaria para probar nuestro método en el 
    End Class
    ```
 
-   Verá una línea ondulada de color rojo debajo de algunas partes del código. Solucionaremos este error cuando convirtamos el proyecto de prueba en un [ensamblado de confianza](/dotnet/visual-basic/programming-guide/concepts/assemblies-gac/friend-assemblies) del proyecto **QuickDate**.
+   Se ve una línea ondulada de color rojo debajo de algunas partes del código. Solucionaremos este error cuando convirtamos el proyecto de prueba en un [ensamblado de confianza](/dotnet/visual-basic/programming-guide/concepts/assemblies-gac/friend-assemblies) del proyecto **QuickDate**.
 
 1. En el proyecto **QuickDate**, abra el archivo *Calendar.vb*, si aún no está abierto, y agregue la siguiente [instrucción Imports](/dotnet/visual-basic/language-reference/statements/imports-statement-net-namespace-and-type) y el atributo <xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute> para resolver el error en el proyecto de prueba.
 

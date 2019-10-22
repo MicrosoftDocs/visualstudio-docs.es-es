@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugSymbolProvider::GetTypeByName method
 ms.assetid: b9d88d3b-8b75-484a-b9cc-dc8c0fbb4bc8
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 98ba8c20be22a6f6a9a990f9de042ac2dab4c72a
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: fca036da331795c0f7c17f848bbea1e682796894
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56695016"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66347406"
 ---
 # <a name="idebugsymbolprovidergettypebyname"></a>IDebugSymbolProvider::GetTypeByName
 Este método asigna un nombre de símbolo a un tipo de símbolo.
@@ -40,18 +43,15 @@ int GetTypeByName(
 );
 ```
 
-#### <a name="parameters"></a>Parámetros
- `pszClassName`
+## <a name="parameters"></a>Parámetros
+`pszClassName`\
+[in] El nombre del símbolo.
 
- [in] El nombre del símbolo.
+`nameMatch`\
+[in] Selecciona el tipo de coincidencia, por ejemplo, distingue mayúsculas de minúsculas. Un valor de la [NAME_MATCH](../../../extensibility/debugger/reference/name-match.md) enumeración.
 
- `nameMatch`
-
- [in] Selecciona el tipo de coincidencia, por ejemplo, distingue mayúsculas de minúsculas. Un valor de la [NAME_MATCH](../../../extensibility/debugger/reference/name-match.md) enumeración.
-
- `ppField`
-
- [out] Devuelve el tipo de símbolo como un [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) objeto.
+`ppField`\
+[out] Devuelve el tipo de símbolo como un [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) objeto.
 
 ## <a name="return-value"></a>Valor devuelto
  Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.

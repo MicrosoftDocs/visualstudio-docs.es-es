@@ -12,11 +12,11 @@ caps.latest.revision: 26
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: bbe65d1615603e4dc7546dbfe3530093c62528e5
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58999473"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68155032"
 ---
 # <a name="creating-project-types"></a>Creación de tipos de proyecto
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -27,7 +27,7 @@ Puede extender [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] mediante la creac
  [Decisiones de diseño del tipo de proyecto](../../extensibility/internals/project-type-design-decisions.md)  
  Describe el elemento, persistencia de archivo de proyecto y las decisiones de diseño mecánico de compromiso que se deben realizar antes de crear un nuevo tipo de proyecto.  
   
- [Lista de comprobación: Creación de nuevos tipos de proyecto](../../extensibility/internals/checklist-creating-new-project-types.md)  
+ [Lista de comprobación: Creación de tipos de proyectos](../../extensibility/internals/checklist-creating-new-project-types.md)  
  Proporciona información general de los pasos que debe seguir para crear un nuevo tipo de proyecto que admite tareas de programación como edición de código y compilar, compilar, depurar e implementar aplicaciones en el proyecto.  
   
  [Creación de instancias de proyecto mediante generadores de proyecto](../../extensibility/internals/creating-project-instances-by-using-project-factories.md)  

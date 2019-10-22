@@ -6,17 +6,17 @@ helpviewer_keywords:
 - source control [Visual Studio SDK], deleting items
 - source control plug-ins, deleting items
 ms.assetid: 6f2e872c-5ba2-4303-9f50-a90cef9a6225
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a1763e51a09ba797bd22c85ba998e1533aa18f97
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 935c735009d83274cc1a8ae126d46f8ee9dbe1ae
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60050765"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66327987"
 ---
 # <a name="test-area-6-delete"></a>Área de prueba 6: Eliminar
 Esta área de prueba de complemento de control de código fuente trata las acciones de eliminación.

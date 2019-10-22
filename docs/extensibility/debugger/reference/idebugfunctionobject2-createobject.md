@@ -6,17 +6,20 @@ helpviewer_keywords:
 - IDebugFunctionObject2::CreateObject
 - CreateObject
 ms.assetid: 148de615-941e-4b64-ab11-75b692aae465
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7004e57aaf659b90b5323105c6d2c2b80baa4d0f
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 87d1c2cd71b57136e26a2bc30004547dc4b8dee5
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56723128"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66313425"
 ---
 # <a name="idebugfunctionobject2createobject"></a>IDebugFunctionObject2::CreateObject
 Crea un objeto que se utiliza un constructor según los valores de marca de evaluación y un valor de tiempo de espera.
@@ -45,30 +48,24 @@ int CreateObject (
 );
 ```
 
-#### <a name="parameters"></a>Parámetros
- `pConstructor`
+## <a name="parameters"></a>Parámetros
+`pConstructor`\
+[in] Un [IDebugFunctionObject](../../../extensibility/debugger/reference/idebugfunctionobject.md) objeto que representa el constructor del objeto que se va a crear.
 
- [in] Un [IDebugFunctionObject](../../../extensibility/debugger/reference/idebugfunctionobject.md) objeto que representa el constructor del objeto que se va a crear.
+`dwArgs`\
+[in] El número de parámetros en el `pArg` matriz. Representa el número de parámetros pasados al constructor.
 
- `dwArgs`
+`pArgs`\
+[in] Una matriz de [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) objetos que representan los parámetros pasan al constructor.
 
- [in] El número de parámetros en el `pArg` matriz. Representa el número de parámetros pasados al constructor.
+`dwEvalFlags`\
+[in] Una combinación de marcas de la [EVALFLAGS](../../../extensibility/debugger/reference/evalflags.md) enumeración que especifican cómo se puede realizar la evaluación.
 
- `pArgs`
+`dwTimeout`\
+[in] Tiempo máximo, en milisegundos para esperar antes de volver de este método. Use **infinito** para esperar indefinidamente.
 
- [in] Una matriz de [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) objetos que representan los parámetros pasan al constructor.
-
- `dwEvalFlags`
-
- [in] Una combinación de marcas de la [EVALFLAGS](../../../extensibility/debugger/reference/evalflags.md) enumeración que especifican cómo se puede realizar la evaluación.
-
- `dwTimeout`
-
- [in] Tiempo máximo, en milisegundos para esperar antes de volver de este método. Use **infinito** para esperar indefinidamente.
-
- `ppObject`
-
- [out] Devuelve un **IDebugObject** que representa el objeto recién creado.
+`ppObject`\
+[out] Devuelve un **IDebugObject** que representa el objeto recién creado.
 
 ## <a name="return-value"></a>Valor devuelto
  Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.

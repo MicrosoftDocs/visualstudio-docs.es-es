@@ -9,12 +9,12 @@ ms.assetid: 2ada376d-f168-455d-9643-6acb535360c1
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 7f56491a8268e939f7bd455c4afef6813116ef9f
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: e6fad5424e74c8a65ea8ce889412b834cda6a790
+ms.sourcegitcommit: 44e9b1d9230fcbbd081ee81be9d4be8a485d8502
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55950609"
+ms.lasthandoff: 08/30/2019
+ms.locfileid: "70180148"
 ---
 # <a name="add-a-data-source-to-a-web-performance-test"></a>Agregar un origen de datos a una prueba de rendimiento web
 
@@ -34,7 +34,9 @@ La solución también debe incluir una prueba de rendimiento web que examine las
 
 ## <a name="create-a-sql-database"></a>Crear una base de datos SQL
 
-1. Si no tiene Visual Studio Enterprise, puede descargarlo desde la página [Descargas de Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017).
+::: moniker range="vs-2017"
+
+1. Si no tiene Visual Studio Enterprise, puede descargarlo desde la página [Descargas de Visual Studio](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download).
 
 2. Cree una base de datos SQL.
 
@@ -59,6 +61,38 @@ La solución también debe incluir una prueba de rendimiento web que examine las
 7. Agregue datos a los campos.
 
      ![Agregar datos a los campos](../test/media/web_test_databinding_sql_addnewfieldsadddata.png)
+
+::: moniker-end
+
+::: moniker range="vs-2019"
+
+1. Si no tiene Visual Studio Enterprise, puede descargarlo desde la página [Descargas de Visual Studio](https://visualstudio.microsoft.com/downloads).
+
+2. Cree una base de datos SQL.
+
+     ![Agregar una nueva base de datos SQL](../test/media/web_test_databinding_sql_addnewdb.png)
+
+3. Cree un proyecto de base de datos.
+
+     ![Crear nuevo proyecto a partir de una base de datos](../test/media/web_test_databinding_sql_addnewdbproject.png)
+
+4. Agregar una tabla al proyecto de base de datos.
+
+     ![Agregar una nueva tabla al proyecto de base de datos](../test/media/web_test_databinding_sql_addnewdbtablename.png)
+
+5. Agregue campos a la tabla.
+
+     ![Agregar campos a la tabla](../test/media/web_test_databinding_sql_addnewdbaddfields.png)
+
+6. Publique el proyecto de base de datos.
+
+     ![Publicar proyecto de base de datos del Explorador de soluciones](../test/media/web_test_databinding_sql_addnewdbpublish.png)
+
+7. Agregue datos a los campos.
+
+     ![Agregar datos a los campos](../test/media/web_test_databinding_sql_addnewfieldsadddata.png)
+
+::: moniker-end
 
 ## <a name="add-the-data-source"></a>Agregar el origen de datos
 

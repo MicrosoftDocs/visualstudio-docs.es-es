@@ -1,19 +1,18 @@
 ---
 title: Suscripciones de Visual Studio
-Author: evanwindom
-Ms.author: tglee
-Manager: lank
+author: evanwindom
+ms.author: lank
+manager: lank
 layout: LandingPage
-Ms.date: 06/25/2018
-Ms.topic: landing-page
-Description: Bienvenido a las suscripciones de Visual Studio
-Searchscope: VS Subscription
-ms.openlocfilehash: bac5cbd1ae0da5d4607b566af898c28efc0876ad
-ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
+ms.date: 06/25/2018
+ms.topic: landing-page
+description: Bienvenido a las suscripciones de Visual Studio
+ms.openlocfilehash: 5848ccca0468b6293f7e31785944f5cb8b14a17c
+ms.sourcegitcommit: 6244689e742e551e7b6933959bd42df56928ece3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58322603"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72516850"
 ---
 # <a name="visual-studio-subscriptions"></a>Suscripciones de Visual Studio
 
@@ -169,7 +168,7 @@ Para hacer que la suscripción resulte más útil, agregamos y actualizamos las 
                 <div class="card">
                     <div class="cardText">
                         <h3>Cloud Services</h3>
-                        <p>Con su suscripción de Visual Studio, puede recibir un crédito mensual de Azure y acceso gratuito a los servicios de Azure, además de tarifas con descuentos para desarrollo y pruebas, y acceso exclusivo a una galería de imágenes solo para suscriptores con máquinas virtuales preconfiguradas. En función de su suscripción, los servicios en la nube pueden incluir:</p>
+                        <p>Con su suscripción de Visual Studio, puede recibir un crédito mensual de Azure para acceder a los servicios de Azure, además de tarifas con descuentos para desarrollo y pruebas, y acceso exclusivo a una galería de imágenes solo para suscriptores con máquinas virtuales preconfiguradas. En función de su suscripción, los servicios en la nube pueden incluir:</p>
                         <ul>
                             <li><a href="/visualstudio/subscriptions/vs-azure">Azure</a></li>
                             <li><a href="/visualstudio/subscriptions/vs-visual-studio-app-center">Visual Studio App Center</a></li>
@@ -194,10 +193,7 @@ Para hacer que la suscripción resulte más útil, agregamos y actualizamos las 
                             <li><a href="/visualstudio/subscriptions/vs-linkedin-learning">LinkedIn Premium</a> (contenido empresarial, técnico y creativo)</li>
                             <li><a href="/visualstudio/subscriptions/vs-pluralsight">Pluralsight</a> (nube, diseño, móviles y datos)</li>
                             <li><a href="/visualstudio/subscriptions/vs-datacamp">Data Camp</a> (ciencia de datos e inteligencia artificial)</li>
-                            <li><a href="/visualstudio/subscriptions/vs-xamarin">Xamarin University</a> (desarrollo móvil)</li>
-                            <li><a href="/visualstudio/subscriptions/vs-opsgility">Aprendizaje en Opsgility</a> (centrado en la nube)</li>
                             <li><a href="/visualstudio/subscriptions/vs-tech-support">Incidentes de soporte técnico profesional de Microsoft</a></li>
-                            <li><a href="/visualstudio/subscriptions/vs-azure-advisory-chat">Chat de Azure Advisor</a></li>
                             <li><a href="/visualstudio/subscriptions/vs-azure-community">Comunidad Azure</a></li>
                         </ul>
                     </div>

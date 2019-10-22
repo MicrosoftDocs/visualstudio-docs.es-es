@@ -5,18 +5,18 @@ author: conceptdev
 ms.author: crdun
 ms.date: 05/06/2018
 ms.assetid: 5880BB10-0A12-47E2-8A82-7A2D59C4D579
-ms.openlocfilehash: b6f355dbe10cf250ec397cb817643984b438a92e
-ms.sourcegitcommit: da73f7a0cf1795d5d400c0897ae3326191435dd0
+ms.openlocfilehash: 00814f006c265a3c16cd3d4bd6bc004754016a27
+ms.sourcegitcommit: 7fbfb2a1d43ce72545096c635df2b04496b0be71
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/28/2019
-ms.locfileid: "58568467"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "67692424"
 ---
 # <a name="creating-new-projects-and-solutions"></a>Creación de nuevos proyectos y soluciones
 
 ## <a name="creating-new-projects-and-solutions-from-a-template"></a>Creación de nuevos proyectos y soluciones a partir de una plantilla
 
-Es posible crear soluciones en cualquier momento mediante una plantilla predefinida. Para crear una solución de esta manera, vaya a  **Archivo > Nueva solución**, seleccione las plataformas necesarias y luego la plantilla requerida:
+Es posible crear soluciones en cualquier momento mediante una plantilla predefinida. Para crear una solución de esta manera, vaya a **Archivo > Nueva solución**, seleccione las plataformas necesarias y luego la plantilla requerida:
 
 ![Creación de nuevas soluciones](media/projects-and-solutions-image0.png)
 

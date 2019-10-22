@@ -8,17 +8,17 @@ f1_keywords:
 helpviewer_keywords:
 - Hidden element [Visual Studio project template]
 ms.assetid: f37406b0-52e7-4f2c-aacf-bc8d7a4117b3
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c3fdeebabbb3f7a95886fed0a7e2c5eafa4d495b
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 7c00fa2c9aff8664c637219c59cb174f5a16e655
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60104439"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66341037"
 ---
 # <a name="hidden-element-visual-studio-templates"></a>Elemento oculto (plantillas de Visual Studio)
 

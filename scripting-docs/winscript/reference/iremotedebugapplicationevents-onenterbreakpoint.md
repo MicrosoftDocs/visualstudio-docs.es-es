@@ -1,5 +1,5 @@
 ---
-title: IRemoteDebugApplicationEvents::OnEnterBreakPoint | Microsoft Docs
+title: 'Iremotedebugapplicationevents (:: OnEnterBreakPoint | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 123476100076811534343763f0e9675a90fdea16
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: ad7b0dc3e4b6cd7e8779208121d7464e83e7bb3f
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58160396"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72571987"
 ---
 # <a name="iremotedebugapplicationeventsonenterbreakpoint"></a>IRemoteDebugApplicationEvents::OnEnterBreakPoint
-Controla un evento para escribir un punto de interrupción.  
+Controla un evento para entrar en un punto de interrupción.  
   
 ## <a name="syntax"></a>Sintaxis  
   
@@ -37,7 +37,7 @@ HRESULT OnEnterBreakPoint(
   
 #### <a name="parameters"></a>Parámetros  
  `prdat`  
- [in] El subproceso de aplicación que escribió el punto de interrupción.  
+ de El subproceso de aplicación que entró en el punto de interrupción.  
   
 ## <a name="return-value"></a>Valor devuelto  
  El método devuelve un objeto `HRESULT`. Entre los valores posibles se incluyen los que se indican en la tabla siguiente, entre otros.  
@@ -47,7 +47,7 @@ HRESULT OnEnterBreakPoint(
 |`S_OK`|El método se realizó correctamente.|  
   
 ## <a name="remarks"></a>Comentarios  
- Este método controla un evento para escribir un punto de interrupción.  
+ Este método controla un evento para entrar en un punto de interrupción.  
   
 ## <a name="see-also"></a>Vea también  
  [IRemoteDebugApplicationEvents (Interfaz)](../../winscript/reference/iremotedebugapplicationevents-interface.md)

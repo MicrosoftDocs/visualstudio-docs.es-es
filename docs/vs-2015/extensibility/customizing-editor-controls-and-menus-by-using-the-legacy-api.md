@@ -11,11 +11,11 @@ caps.latest.revision: 18
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: e2f6faa99ad0ff9d564522baad47f9d252157ff2
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58998920"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62556056"
 ---
 # <a name="customizing-editor-controls-and-menus-by-using-the-legacy-api"></a>Personalizar menús y controles de Editor mediante el uso de la API heredada
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ Un servicio de lenguaje o una vista de texto puede controlar los menús contextu
  [Menús contextuales](../extensibility/context-menus.md)  
  Describe los menús contextuales del editor.  
   
- [Cómo: Actualización de la barra de estado](../extensibility/how-to-update-the-status-bar.md)  
+ [Cómo: Actualizar la barra de estado](../extensibility/how-to-update-the-status-bar.md)  
  Proporciona instrucciones para actualizar el **barra de estado**.  
   
 ## <a name="related-sections"></a>Secciones relacionadas  

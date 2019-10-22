@@ -8,17 +8,20 @@ helpviewer_keywords:
 - GetSymbolInfo method
 - IDebugModule3::GetSymbolInfo method
 ms.assetid: dda5e8e1-6878-4aa9-9ee4-e7d0dcc11210
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c5fedebe6a8e411e09b527841bd0ded3854749ae
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: bd952242db8b7394fa8915319686ac431b84947d
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56717447"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66323946"
 ---
 # <a name="idebugmodule3getsymbolinfo"></a>IDebugModule3::GetSymbolInfo
 Recupera una lista de rutas de acceso que se buscan los símbolos, así como los resultados de búsqueda en cada ruta de acceso.
@@ -39,14 +42,12 @@ int GetSymbolInfo(
 );
 ```
 
-#### <a name="parameters"></a>Parámetros
-`dwFields`
+## <a name="parameters"></a>Parámetros
+`dwFields`\
+[in] Una combinación de marcas de la [SYMBOL_SEARCH_INFO_FIELDS](../../../extensibility/debugger/reference/symbol-search-info-fields.md) enumeración que especifica qué campos de `pInfo` deben rellenarse.
 
- [in] Una combinación de marcas de la [SYMBOL_SEARCH_INFO_FIELDS](../../../extensibility/debugger/reference/symbol-search-info-fields.md) enumeración que especifica qué campos de `pInfo` deben rellenarse.
-
-`pInfo`
-
- [out] Un [MODULE_SYMBOL_SEARCH_INFO](../../../extensibility/debugger/reference/module-symbol-search-info.md) estructura cuyos miembros se va a rellenar con la información especificada. Si este es un valor null, este método devuelve `E_INVALIDARG`.
+`pInfo`\
+[out] Un [MODULE_SYMBOL_SEARCH_INFO](../../../extensibility/debugger/reference/module-symbol-search-info.md) estructura cuyos miembros se va a rellenar con la información especificada. Si este es un valor null, este método devuelve `E_INVALIDARG`.
 
 ## <a name="return-value"></a>Valor devuelto
 Si el método se realiza correctamente, devuelve `S_OK`; en caso contrario, devuelve un código de error.
@@ -83,9 +84,9 @@ void ShowSymbolSearchResults(IDebugModule3 *pIDebugModule3)
 }
 ```
 
-**c:\symbols\user32.pdb... No se encontró el archivo. ** 
- **c:\winnt\symbols\user32.pdb... Versión no coincide. ** 
- ** \\\symbols\symbols\user32.dll\0a8sd0ad8ad\user32.pdb... Símbolos cargados.**
+**c:\symbols\user32.pdb... No se encontró el archivo.** 
+**c:\winnt\symbols\user32.pdb... Versión no coincide.** 
+ **\\\symbols\symbols\user32.dll\0a8sd0ad8ad\user32.pdb... Símbolos cargados.**
 
 ## <a name="see-also"></a>Vea también
 

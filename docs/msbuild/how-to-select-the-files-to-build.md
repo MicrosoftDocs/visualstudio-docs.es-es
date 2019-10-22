@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9942c680f93614a84da3502de4b3a26a08576fb7
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 7f8f582a0148f5fddd88393e008593d9ad9a05ce
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56610546"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63386184"
 ---
 # <a name="how-to-select-the-files-to-build"></a>Procedimiento Seleccionar los archivos que se van a compilar
 Cuando se compila un proyecto que contiene varios archivos, se puede enumerar cada archivo en el archivo de proyecto de forma independiente, o bien usar comodines para incluir todos los archivos de un directorio o un conjunto anidado de directorios.
@@ -42,7 +42,7 @@ Para incluir archivos para una compilación, deben estar incluidos en una lista 
 
 #### <a name="to-declare-multiple-items"></a>Para declarar varios elementos
 
--   Use atributos `Include` similares a los siguientes:
+- Use atributos `Include` similares a los siguientes:
 
     `<CSFile Include="form1.cs;form2.cs"/>`
 
@@ -97,7 +97,7 @@ En un archivo de proyecto, se puede usar la notación @() en las tareas para esp
     `<VBC Sources="@(VBFile)">...</VBC>`
 
 > [!NOTE]
->  Se deben usar comodines con los elementos para especificar las entradas de una compilación; no se pueden especificar las entradas mediante el atributo `Sources` en tareas de [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] como [Csc](../msbuild/csc-task.md) o [Vbc](../msbuild/vbc-task.md). El ejemplo siguiente no es válido en un archivo de proyecto:
+> Se deben usar comodines con los elementos para especificar las entradas de una compilación; no se pueden especificar las entradas mediante el atributo `Sources` en tareas de [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] como [Csc](../msbuild/csc-task.md) o [Vbc](../msbuild/vbc-task.md). El ejemplo siguiente no es válido en un archivo de proyecto:
 >
 > `<CSC Sources="*.cs">...</CSC>`
 

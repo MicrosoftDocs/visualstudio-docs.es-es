@@ -1,5 +1,5 @@
 ---
-title: Guardar un conjunto de datos como XML | Documentos de Microsoft
+title: Guardar un conjunto de DataSet como XML | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-data-tools
@@ -16,38 +16,38 @@ helpviewer_keywords:
 - saving data
 ms.assetid: 68b8327c-ae05-49ff-b9ba-99183e70b52c
 caps.latest.revision: 14
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 2e4331b59c532e681c7e10ab8e43b953e9f72b18
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: e64c3c17934e5cdc5d6ca1f510c7164b86a77c1a
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60059700"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72652861"
 ---
 # <a name="save-a-dataset-as-xml"></a>Guardar un conjunto de datos como XML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Los datos XML en un conjunto de datos pueden tener acceso mediante una llamada a los métodos XML disponibles en el conjunto de datos. Para guardar los datos en formato XML, puede llamar el <xref:System.Data.DataSet.GetXml%2A> método o la <xref:System.Data.DataSet.WriteXml%2A> método de un <xref:System.Data.DataSet>.  
-  
- Una llamada a la <xref:System.Data.DataSet.GetXml%2A> método devuelve una cadena que contiene los datos de todas las tablas de datos del conjunto de datos con formato XML.  
-  
- Una llamada a la <xref:System.Data.DataSet.WriteXml%2A> método envía los datos con formato XML en un archivo que especifique.  
-  
-### <a name="to-save-the-data-in-a-dataset-as-xml-to-a-variable"></a>Para guardar los datos en un conjunto de datos como XML en una variable  
-  
-- El <xref:System.Data.DataSet.GetXml%2A> método devuelve un <xref:System.String>. Esto significa que declarar una variable de tipo <xref:System.String> y asignarle los resultados de la <xref:System.Data.DataSet.GetXml%2A> método.  
-  
+Se puede tener acceso a los datos XML de un conjunto de datos mediante una llamada a los métodos XML disponibles en el conjunto de datos. Para guardar los datos en formato XML, puede llamar al método <xref:System.Data.DataSet.GetXml%2A> o al método <xref:System.Data.DataSet.WriteXml%2A> de una <xref:System.Data.DataSet>.
+
+ La llamada al método <xref:System.Data.DataSet.GetXml%2A> devuelve una cadena que contiene los datos de todas las tablas de datos del conjunto de datos con formato XML.
+
+ Al llamar al método <xref:System.Data.DataSet.WriteXml%2A> se envían los datos con formato XML a un archivo que se especifique.
+
+### <a name="to-save-the-data-in-a-dataset-as-xml-to-a-variable"></a>Para guardar los datos de un conjunto de datos como XML en una variable
+
+- El método <xref:System.Data.DataSet.GetXml%2A> devuelve un <xref:System.String>. Esto significa que se declara una variable de tipo <xref:System.String> y se le asignan los resultados del método <xref:System.Data.DataSet.GetXml%2A>.
+
      [!code-csharp[VbRaddataSaving#12](../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataSaving/CS/Class1.cs#12)]
-     [!code-vb[VbRaddataSaving#12](../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataSaving/VB/Class1.vb#12)]  
-  
-### <a name="to-save-the-data-in-a-dataset-as-xml-to-a-file"></a>Para guardar los datos en un conjunto de datos como XML en un archivo  
-  
-- El <xref:System.Data.DataSet.WriteXml%2A> método tiene varias sobrecargas. El código siguiente muestra cómo guardar los datos en un archivo. Declarar una variable y asigne una ruta válida a guardar el archivo.  
-  
+     [!code-vb[VbRaddataSaving#12](../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataSaving/VB/Class1.vb#12)]
+
+### <a name="to-save-the-data-in-a-dataset-as-xml-to-a-file"></a>Para guardar los datos de un conjunto de datos como XML en un archivo
+
+- El método <xref:System.Data.DataSet.WriteXml%2A> tiene varias sobrecargas. En el código siguiente se muestra cómo guardar los datos en un archivo. Declare una variable y asígnela una ruta de acceso válida para guardar el archivo.
+
      [!code-csharp[VbRaddataSaving#13](../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataSaving/CS/Class1.cs#13)]
-     [!code-vb[VbRaddataSaving#13](../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataSaving/VB/Class1.vb#13)]  
-  
-## <a name="see-also"></a>Vea también  
+     [!code-vb[VbRaddataSaving#13](../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataSaving/VB/Class1.vb#13)]
+
+## <a name="see-also"></a>Vea también
  [Guardar los datos de nuevo en la base de datos](../data-tools/save-data-back-to-the-database.md)

@@ -1,5 +1,5 @@
 ---
-title: IDispError::GetHresult | Documentos de Microsoft
+title: 'Idisperror (:: Gethresult (| Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 161c29d4be70c388003ffc80ec5d885b9bcc632b
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 62661e14c36881ca83763c277dbfd5385f192fb6
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58157833"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72573112"
 ---
 # <a name="idisperrorgethresult"></a>IDispError::GetHresult
-Recupera el código de error desde el `IDispError` objeto.  
+Recupera el código de error del objeto `IDispError`.  
   
 ## <a name="syntax"></a>Sintaxis  
   
@@ -37,7 +37,7 @@ HRESULT GetHresult(
   
 #### <a name="parameters"></a>Parámetros  
  `phr`  
- [out] Especifica el código de error.  
+ enuncia Especifica el código de error.  
   
 ## <a name="return-value"></a>Valor devuelto  
  El método devuelve un objeto `HRESULT`. Entre los valores posibles se incluyen los que se indican en la tabla siguiente, entre otros.  
@@ -47,10 +47,10 @@ HRESULT GetHresult(
 |`S_OK`|El método se realizó correctamente.|  
   
 ## <a name="remarks"></a>Comentarios  
- Este método recupera el código de error desde el `IDispError` objeto.  
+ Este método recupera el código de error del objeto `IDispError`.  
   
 > [!NOTE]
->  Este método no se implementa.  
+> Este método no se implementa.  
   
 ## <a name="see-also"></a>Vea también  
  [IDispError (Interfaz)](../../winscript/reference/idisperror-interface.md)

@@ -1,6 +1,6 @@
 ---
 title: Pruebas de cobertura de código
-ms.date: 09/18/2018
+ms.date: 07/23/2019
 ms.topic: conceptual
 helpviewer_keywords:
 - code coverage
@@ -11,14 +11,12 @@ dev_langs:
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.workload:
-- multiple
-ms.openlocfilehash: a76b40e2a9848b0f80e755d15a9bd6e65fcf51da
-ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
+ms.openlocfilehash: 1962a977cb282613405342f225d63140f1854453
+ms.sourcegitcommit: 689ba54ea14257d13031de881f5d4fe937a36f56
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57222914"
+ms.lasthandoff: 09/27/2019
+ms.locfileid: "71342421"
 ---
 # <a name="use-code-coverage-to-determine-how-much-code-is-being-tested"></a>Usar cobertura de código para determinar la cantidad de código que se está probando
 
@@ -28,36 +26,60 @@ El análisis de cobertura de código puede aplicarse al código administrado (CL
 
 La cobertura de código es una opción al ejecutar métodos de prueba mediante el Explorador de pruebas. La tabla de salida muestra el porcentaje de código que se ejecuta en cada ensamblado, clase y método. Además, el editor de código fuente muestra qué código se ha probado.
 
+::: moniker range="vs-2017"
+
 ![Resultados de cobertura de código con colores](../test/media/codecoverage1.png)
+
+::: moniker-end
 
 ## <a name="requirements"></a>Requisitos
 
 La característica de cobertura de código solo está disponible en la edición Visual Studio Enterprise.
 
-## <a name="to-analyze-code-coverage-on-unit-tests-in-test-explorer"></a>Para analizar la cobertura de código en pruebas unitarias en el Explorador de pruebas
+## <a name="analyze-code-coverage"></a>Análisis de la cobertura de código
+
+::: moniker range="vs-2017"
 
 1. En el menú **Prueba**, elija **Analizar cobertura de código**.
 
-2. Para ver qué líneas se han ejecutado, elija ![Icono Mostrar colores en cobertura de código](../test/media/codecoverage-showcoloringicon.png) **Mostrar colores en cobertura de código**.
+::: moniker-end
 
-   Para modificar los colores o usar la negrita, elija **Herramientas** > **Opciones** > **Entorno** > **Fuentes y colores** > **Mostrar valores para: Editor de texto**. En **Mostrar los elementos**, ajuste los elementos de cobertura.
+::: moniker range=">=vs-2019"
+
+1. En el menú **Prueba**, seleccione **Analizar cobertura de código para todas las pruebas**.
+
+   ![Menú Análisis de la cobertura de código en VS 2019](../test/media/vs-2019/analyze-code-coverage.png)
+
+   También puede ejecutar la cobertura de código desde la ventana de la herramienta Explorador de pruebas.
+
+::: moniker-end
+
+2. Después de que se hayan ejecutado las pruebas, para ver qué líneas se han ejecutado, elija ![Icono Mostrar colores en cobertura de código](../test/media/codecoverage-showcoloringicon.png) **Mostrar colores en cobertura de código** en la ventana **Resultados de cobertura de código**. De forma predeterminada, el código que se incluye en las pruebas se resalta en color azul claro.
+
+   > [!TIP]
+   > Para cambiar los colores o usar la negrita, elija **Herramientas** > **Opciones** > **Entorno** > **Fuentes y colores** > **Mostrar valores para: Editor de texto**. En **Mostrar los elementos**, ajuste la configuración de los elementos "Cobertura", por ejemplo, **Área de cobertura no modificada**.
+   >
+   > ![Fuentes y colores de cobertura de código](media/vs-2019/coverage-fonts-and-colors.png)
 
 3. Si los resultados muestran una cobertura baja, investigue qué partes del código no se están ensayando y escriba más pruebas para abarcarlas. Los equipos de desarrollo normalmente aspiran a una cobertura de código de un 80 %. En algunas situaciones, una cobertura menor es aceptable. Por ejemplo, una cobertura menor es aceptable cuando el código se genera a partir de una plantilla estándar.
 
 > [!TIP]
-> - Asegúrese de que la optimización del compilador está desactivada.
+> - Desactive la optimización del compilador.
 > - Si está trabajando con código no administrado (nativo), utilice una compilación de depuración.
-> - Asegúrese de que está generando los archivos .pdb (símbolo) para cada ensamblado.
+> - Genere archivos. pdb (símbolo) para cada ensamblado.
 
-Si no obtiene los resultados esperados, consulte [Solución de problemas de cobertura de código](../test/troubleshooting-code-coverage.md). No olvide ejecutar la cobertura de código de nuevo después de actualizar el código. Los resultados de cobertura y color de código no se actualizan automáticamente después de modificar el código o al ejecutar pruebas.
+Si no obtiene los resultados esperados, consulte [Solución de problemas de cobertura de código](../test/troubleshooting-code-coverage.md).
+
+No olvide ejecutar la cobertura de código de nuevo después de actualizar el código. Los resultados de cobertura y color de código no se actualizan automáticamente después de modificar el código o al ejecutar pruebas.
 
 ## <a name="report-in-blocks-or-lines"></a>Informar en bloques o líneas
 
 La cobertura de código se cuenta en *bloques*. Un bloque es un fragmento de código con un punto de entrada y de salida exactamente.  Si el flujo de control del programa pasa a través de un bloque durante una serie de pruebas, ese bloque se cuenta como cubierto. El número de veces que se utiliza el bloque no tiene ningún efecto en el resultado.
 
-También se pueden mostrar los resultados en líneas eligiendo **Agregar o quitar columnas** en el encabezado de tabla. Si la serie de pruebas probó todos los bloques de código en cualquier línea de código, se cuenta como una línea. Siempre que una línea contenga algunos bloques de código que se han ejecutado y otros que no, se cuenta como una línea parcial.
+También se pueden mostrar los resultados en líneas eligiendo **Agregar o quitar columnas** en el encabezado de tabla. Algunos usuarios prefieren un recuento de líneas porque los porcentajes corresponden más al tamaño de los fragmentos que aparece en el código fuente. Un bloque grande de cálculo contaría como un único bloque aunque ocupe muchas líneas.
 
-Algunos usuarios prefieren un recuento de líneas porque los porcentajes corresponden más al tamaño de los fragmentos que aparece en el código fuente. Un bloque grande de cálculo contaría como un único bloque aunque ocupe muchas líneas.
+> [!TIP]
+> Una línea de código puede contener más de un bloque de código. Si este es el caso y la serie de pruebas emplea todos los bloques de código en la línea, se cuenta como una línea. Si en la línea se emplean algunos bloques de código, pero no todos, se cuenta como una línea parcial.
 
 ## <a name="manage-code-coverage-results"></a>Administrar resultados de cobertura de código
 

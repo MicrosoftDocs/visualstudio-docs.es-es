@@ -4,15 +4,14 @@ description: Uso de Azure Functions en Visual Studio para Mac.
 author: conceptdev
 ms.author: crdun
 ms.date: 05/06/2018
-ms.topic: article
 ms.technology: vs-ide-install
 ms.assetid: 25CD47A4-5B32-4734-8EF3-E24A02AABF29
-ms.openlocfilehash: eaf6f82cdc40b174dcd1ca8deb12c412fe675d70
-ms.sourcegitcommit: da73f7a0cf1795d5d400c0897ae3326191435dd0
+ms.openlocfilehash: cf3fa0bf2c0e0ff112a176b10eb7e50e07f83d5a
+ms.sourcegitcommit: cf8c0fef2b9690595e99ce3802586cdd55fd37c2
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/28/2019
-ms.locfileid: "58568377"
+ms.lasthandoff: 08/28/2019
+ms.locfileid: "70107886"
 ---
 # <a name="introduction-to-azure-functions"></a>Introducción a Azure Functions
 
@@ -77,7 +76,7 @@ Con compatibilidad con Azure Functions en Visual Studio para Mac puede probar y 
 
 Las plantillas de función permiten crear rápidamente nuevas funciones mediante los desencadenadores y las plantillas más comunes. Para crear otro tipo de función, haga lo siguiente:
 
-1. Para agregar una nueva función, haga doble clic en el nombre del proyecto y seleccione **Agregar > Agregar función...**:
+1. Para agregar una nueva función, haga doble clic en el nombre del proyecto y seleccione **Agregar > Agregar función...** :
 
     ![acción contextual para agregar una nueva función](media/azure-functions-addnew.png)
 
@@ -96,7 +95,7 @@ Puede usar el procedimiento anterior para agregar más funciones a su proyecto d
 3. En el cuadro de diálogo **Publicar en Azure App Service**, puede seleccionar un servicio de aplicación existente o crear uno nuevo haciendo clic en **Nuevo**.
 4. En el cuadro de diálogo **Crear instancia de App Service**, especifique la configuración:  ![Opción de menú Publicar en Azure](media/azure-functions-image7.png)
 
-    |Parámetro  |Descripción  |
+    |Parámetro  |DESCRIPCIÓN  |
     |---------|---------|
     |**Nombre de App Service**|Un nombre único global que identifica la nueva instancia de Function App.|
     |**Suscripción**|La suscripción de Azure que se va a usar.|
@@ -140,18 +139,16 @@ Hay un valor importante que es posible que tenga que configurar: `FUNCTIONS_EXTE
 ## <a name="available-function-templates"></a>Plantillas de función disponibles
 
 - **Desencadenador de GitHub**: responder a los eventos que se producen en los repositorios de GitHub. Para obtener más información, vea la página [Creación de una función desencadenada por Webhook de GitHub](/azure/azure-functions/functions-create-github-webhook-triggered-function)
-    - Autor del comentario de GitHub: esta función se ejecutará cuando reciba un webhook de GitHub para un problema o solicitud de incorporación de cambios y agregue un comentario.
-    - WebHook de GitHub: esta función se ejecutará cuando reciba un WebHook de GitHub.
+  - Autor del comentario de GitHub: esta función se ejecutará cuando reciba un webhook de GitHub para un problema o solicitud de incorporación de cambios y agregue un comentario.
+  - WebHook de GitHub: esta función se ejecutará cuando reciba un WebHook de GitHub.
 
 - **HTTP**: desencadena la ejecución del código mediante una solicitud HTTP. Hay plantillas explícitas para los siguientes desencadenadores HTTP:
-    - Desencadenador HTTP
-    - Http GET CRUD
-    - Http POST CRUD
-    - Desencadenador HTTP con parámetros
-
+  - Desencadenador HTTP
+  - Http GET CRUD
+  - Http POST CRUD
+  - Desencadenador HTTP con parámetros
 
 - **Temporizador**: ejecutar una limpieza u otras tareas de lote en una programación predefinida. Esta plantilla tiene dos campos: un nombre y una programación, que es una expresión de CRON de seis campos. Para obtener más información, vea la página [Cree una función en Azure que se desencadena mediante un temporizador](/azure/azure-functions/functions-create-scheduled-function)
-
 
 - **Desencadenador de cola**: se trata de una función que responderá a los mensajes a medida que llegan a la cola de Azure Storage. Además del nombre de la función, esta plantilla toma una **ruta de acceso** (el nombre de la cola desde la que se leerá el mensaje) y una cuenta de almacenamiento **Conexión** (el nombre de la configuración de la aplicación que contiene la cadena de conexión de la cuenta de almacenamiento). Para obtener más información, vea la página [Crear una función desencadenada por Azure Queue Storage](/azure/azure-functions/functions-create-storage-queue-triggered-function).
 

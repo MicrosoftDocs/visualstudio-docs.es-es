@@ -6,17 +6,17 @@ helpviewer_keywords:
 - projects [Visual Studio SDK], adding
 - project items [Visual Studio], adding
 ms.assetid: 8c59217f-56e5-4540-a73b-cd10de189373
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ee61f388da8098c20c65be8859b336c1ab86bebd
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 38ab7a0a14c5a4e832aec330852546b64a41fd0c
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56620972"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66315859"
 ---
 # <a name="add-project-and-project-item-templates"></a>Agregar proyecto y plantillas de elemento de proyecto
 Al crear sus propios tipos de proyecto, debe proporcionar soporte técnico para agregar nuevos proyectos y elementos de proyecto mediante el estándar [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] integrado cuadros de diálogo (IDE) del entorno de desarrollo. Los temas siguientes describen las distintas técnicas para agregar proyectos y elementos de proyecto.

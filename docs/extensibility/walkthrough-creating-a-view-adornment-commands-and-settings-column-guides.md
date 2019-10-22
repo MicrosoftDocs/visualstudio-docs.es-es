@@ -3,17 +3,17 @@ title: Creación de un elemento de gráfico de vista, comandos y configuración 
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 4a2df0a3-42da-4f7b-996f-ee16a35ac922
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: dd5bfc24fcf1cd8a465bafe1e5bcf6c4df61308c
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: dd8a133623cdaa266591b7b23cba7fdc57ca284b
+ms.sourcegitcommit: 748d9cd7328a30f8c80ce42198a94a4b5e869f26
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56722296"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67890581"
 ---
 # <a name="walkthrough-create-a-view-adornment-commands-and-settings-column-guides"></a>Tutorial: Crear un elemento de gráfico de vista, comandos y configuración (guías de columnas)
 Puede ampliar el editor de texto y código de Visual Studio con los comandos y los efectos de la vista. Este artículo muestra cómo empezar a trabajar con una característica de extensión popular, guías de columnas. Guías de columnas son líneas visualmente clara dibujadas en la vista del editor de texto para ayudarle a administrar el código para los anchos de columna específicos. En concreto, con formato de código puede ser importante para los ejemplos se incluyen en los documentos, blogs, o los informes de errores.
@@ -28,9 +28,10 @@ En este tutorial, puede:
 
   Puede probar una versión de la característica de las guías de columna con esta galería de Visual Studio[extensión](https://marketplace.visualstudio.com/items?itemName=PaulHarrington.EditorGuidelines).
 
-  **NOTA**: En este tutorial, pega una gran cantidad de código en unos pocos archivos generados por las plantillas de extensión de Visual Studio. Sin embargo, pronto en este tutorial hará referencia a una solución completa en GitHub con otros ejemplos de extensión. El código completo es ligeramente diferente porque tiene iconos de comando real en lugar de usar generictemplate iconos.
+  > [!NOTE]
+  > En este tutorial, pega una gran cantidad de código en unos pocos archivos generados por las plantillas de extensión de Visual Studio. Sin embargo, pronto en este tutorial hará referencia a una solución completa en GitHub con otros ejemplos de extensión. El código completo es ligeramente diferente porque tiene iconos de comando real en lugar de usar generictemplate iconos.
 
-## <a name="get-started"></a>Primeros pasos
+## <a name="get-started"></a>Introducción
 A partir de Visual Studio 2015, no instale el SDK de Visual Studio desde el centro de descarga. Ha incluido como una característica opcional en el programa de instalación de Visual Studio. También puede instalar el SDK de VS más adelante. Para obtener más información, consulte [instalar el SDK de Visual Studio](../extensibility/installing-the-visual-studio-sdk.md).
 
 ## <a name="set-up-the-solution"></a>Configurar la solución

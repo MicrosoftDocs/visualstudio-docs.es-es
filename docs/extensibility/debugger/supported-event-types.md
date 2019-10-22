@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - debugging [Debugging SDK], supported events
 ms.assetid: a3c0386d-551e-4734-9a0c-368d1c2e6671
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d74448479fc71af493ef720586541d92d614b24f
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 9c4ee45e1a3a7efeb990fcb6f9073420a99dbe7c
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56696303"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66351088"
 ---
 # <a name="supported-event-types"></a>Tipos de evento compatibles
 Depuración de Visual Studio admite actualmente los siguientes tipos de evento:
@@ -43,7 +43,7 @@ Depuración de Visual Studio admite actualmente los siguientes tipos de evento:
     Las interfaces [IDebugBreakpointEvent2](../../extensibility/debugger/reference/idebugbreakpointevent2.md) y [IDebugExceptionEvent2](../../extensibility/debugger/reference/idebugexceptionevent2.md) son ejemplos de eventos de detención.
 
   > [!NOTE]
-  >  No se admiten los eventos de detención asincrónica. Es un error al enviar un evento de detención asincrónica.
+  > No se admiten los eventos de detención asincrónica. Es un error al enviar un evento de detención asincrónica.
 
 ## <a name="discussion"></a>Discusión
  La implementación real de los eventos depende del diseño de la DE. El tipo de cada evento enviado viene determinada por sus atributos, que se establecen cuando se diseña la DE. Por ejemplo, puede enviar uno DE un [IDebugProgramCreateEvent2](../../extensibility/debugger/reference/idebugprogramcreateevent2.md) como un evento asincrónico, mientras que otro puede enviar como un evento de detención.
@@ -51,7 +51,7 @@ Depuración de Visual Studio admite actualmente los siguientes tipos de evento:
  En la tabla siguiente especifica qué parámetros de programa y subproceso son necesarios para los eventos, así como tipos de eventos. Cualquier evento puede ser sincrónico. Ningún evento debe ser sincrónico.
 
 > [!NOTE]
->  El [IDebugEngine2](../../extensibility/debugger/reference/idebugengine2.md) interfaz es necesaria para todos los eventos.
+> El [IDebugEngine2](../../extensibility/debugger/reference/idebugengine2.md) interfaz es necesaria para todos los eventos.
 
 |evento|IDebugProgram2|IDebugThread2|Los eventos de parada|
 |-----------|--------------------|-------------------|---------------------|

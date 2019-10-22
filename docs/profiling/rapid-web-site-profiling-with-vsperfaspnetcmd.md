@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 228200a3439deefd44ba69b205c1fb7e27fb98ef
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 5f86ae2e14067a645bb39a1c8fdc0421f415a9e6
+ms.sourcegitcommit: 5694c5236fa32ba7f5bc1236a853f725ec7557e9
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56632620"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "68681134"
 ---
 # <a name="rapid-web-site-profiling-with-vsperfaspnetcmd"></a>Generación rápida de perfiles de sitio web con VSPerfASPNETCmd
 
@@ -27,7 +27,7 @@ La herramienta de línea de comandos **VSPerfASPNETCmd** le permite generar perf
  En algunos escenarios, como la recopilación de datos de simultaneidad o la pausa y reanudación de la generación de perfiles, **VSPerfCmd** es el método preferido de generación de perfiles.
 
 > [!NOTE]
->  Para obtener la ruta de acceso a las herramientas de generación de perfiles, vea [Especificar la ruta de acceso a las herramientas de línea de comandos](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md). En equipos de 64 bits, están disponibles las dos versiones de las herramientas, la de 64 bits y la de 32 bits. Para utilizar las herramientas de línea de comandos del generador de perfiles, debe agregar la ruta de acceso de las herramientas a la variable de entorno PATH de la ventana Símbolo del sistema o agregarla al propio comando.
+> Para obtener la ruta de acceso a las herramientas de generación de perfiles, vea [Especificar la ruta de acceso a las herramientas de línea de comandos](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md). En equipos de 64 bits, están disponibles las dos versiones de las herramientas, la de 64 bits y la de 32 bits. Para utilizar las herramientas de línea de comandos del generador de perfiles, debe agregar la ruta de acceso de las herramientas a la variable de entorno PATH de la ventana Símbolo del sistema o agregarla al propio comando.
 
 ## <a name="profile-an-aspnet-application"></a>Generar perfiles de una aplicación ASP.NET
 
@@ -40,6 +40,8 @@ Para generar perfiles de una aplicación web de [!INCLUDE[vstecasp](../code-qual
  El muestreo es el método predeterminado de generación de perfiles de la herramienta **VSPerfASPNETCmd** y no tiene que especificarse en la línea de comandos. La siguiente línea de comandos recopila estadísticas de aplicación de la aplicación web especificada:
 
  **vsperfaspnetcmd**  *websiteUrl*
+
+ Un ejemplo de una *websiteUrl* hospedada en un servidor local podría ser *http://localhost/MySite/default.aspx* . Un ejemplo de sitio externo es *http://www.contoso.com* . Para más información, consulte las direcciones URL de ejemplo en [Para generar perfiles de un sitio web sin tener que abrir un proyecto en Visual Studio](how-to-collect-performance-data-for-a-web-site.md#to-profile-a-web-site-without-opening-a-project-in-visual-studio).
 
 ## <a name="to-collect-detailed-timing-data-by-using-the-instrumentation-method"></a>Para recopilar datos de intervalos mediante el método de instrumentación
 
@@ -61,14 +63,14 @@ La opción **/Memory** recopila datos acerca de la asignación de objetos de mem
 
  También puede utilizar la opción **/Trace** para incluir información de tiempo detallada con los datos de memoria de .NET:
 
- **vsperfaspnetcmd /memory**[**:lifetime**] **/trace**`websiteUrl`
+ **vsperfaspnetcmd /memory**[ **:lifetime**] **/trace**`websiteUrl`
 
 ## <a name="to-collect-tier-interaction-data"></a>Para recopilar datos de interacción de capas
 
 > [!WARNING]
 > Los datos de generación de perfiles de interacción de capas (TIP) se pueden recopilar con cualquier edición de Visual Studio. Sin embargo, los datos de generación de perfiles de interacción de capas solo se pueden ver en Visual Studio Enterprise.
 >
-> Para recopilar datos de TIP en Windows 8 o Windows Server 2012, debe usar la opción de instrumentación (**/trace**).
+> Para recopilar datos de TIP en Windows 8 o Windows Server 2012, debe usar la opción de instrumentación ( **/trace**).
 
 Para recopilar datos de interacción de capas con datos de muestreo:
 
@@ -80,7 +82,7 @@ Para recopilar datos de interacción de capas con datos de instrumentación:
 
 Para recopilar datos de interacción de capas con datos de memoria de .NET:
 
-**vsperfaspnetcmd /memory**[**:lifetime**] **/tip**_websiteUrl_
+**vsperfaspnetcmd /memory**[ **:lifetime**] **/tip**_websiteUrl_
 
 ## <a name="use-the-nowait-option"></a>Usar la opción /NoWait
 
@@ -88,7 +90,7 @@ De forma predeterminada, el símbolo del sistema no se devuelve valores después
 
 Para iniciar la generación de perfiles:
 
-**vsperfaspnetcmd** [*/Options*] **/nowait**_websiteUrl_
+**vsperfaspnetcmd** [ */Options*] **/nowait**_websiteUrl_
 
 Para finalizar la generación de perfiles:
 
@@ -98,7 +100,7 @@ Para finalizar la generación de perfiles:
 
 Puede agregar cualquiera de las siguientes opciones para los comandos enumerados anteriormente en esta sección, excepto el comando **vsperfaspnetcmd /shutdown**.
 
-|Opción|Descripción|
+|Opción|DESCRIPCIÓN|
 |------------|-----------------|
 |**/Output:** `VspFile`|De forma predeterminada, el archivo de datos de generación de perfiles (.*vsp*) se crea en el directorio actual con el nombre de archivo **PerformanceReport.vsp**. Utilice la opción /output para cambiar la ubicación, el nombre de archivo o ambos.|
 |**/PackSymbols:Off**|De forma predeterminada, VsPerfASPNETCmd inserta símbolos (nombres de función y parámetro, etc.) en el archivo .*vsp*. Incrustar los símbolos puede hacer que el archivo de datos de generación de perfiles sea muy grande. Si va a acceder a los archivos .*pdb* que contienen los símbolos al analizar los datos, use la opción /packsymbols:off para deshabilitar la inserción de los símbolos.|

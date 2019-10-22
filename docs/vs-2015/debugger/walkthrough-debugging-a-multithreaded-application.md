@@ -17,12 +17,12 @@ caps.latest.revision: 42
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: aa74d6ca668203f7b13f11307ac59ef5270aac9b
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 33ce391523a256bcb195deccf0c14868b5eae707
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60117712"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65683094"
 ---
 # <a name="walkthrough-debugging-a-multithreaded-application"></a>Tutorial: Depurar una aplicación multiproceso
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -47,7 +47,7 @@ ms.locfileid: "60117712"
   
      Aparecerá un nuevo proyecto de consola. Una vez creado el proyecto, aparecerá un archivo de código fuente. Dependiendo del lenguaje elegido, el archivo de código fuente podría denominarse Module1.vb, Program.cs o MyThreadWalkthroughApp.cpp.  
   
-6. Elimine el código que aparece en el archivo de origen y reemplazarlo por el código de ejemplo que aparece en la sección "Crear un subproceso" del tema [crear subprocesos y pasar datos en tiempo de inicio](http://msdn.microsoft.com/library/52b32222-e185-4f42-91a7-eaca65c0ab6d).  
+6. Elimine el código que aparece en el archivo de origen y reemplazarlo por el código de ejemplo que aparece en la sección "Crear un subproceso" del tema [crear subprocesos y pasar datos en tiempo de inicio](https://msdn.microsoft.com/library/52b32222-e185-4f42-91a7-eaca65c0ab6d).  
   
 7. En el menú **Archivo**, haga clic en **Guardar todo**.  
   
@@ -124,7 +124,7 @@ Thread::Sleep(3000);
 2. Vaya a la **ubicación de depuración** barra de herramientas y haga clic en el **subprocesos** lista.  
   
     > [!NOTE]
-    >  Puede reconocer esta barra de herramientas mediante tres listas destacadas: **Proceso**, **subprocesos**, y **marco de pila**.  
+    > Puede reconocer esta barra de herramientas mediante tres listas destacadas: **Proceso**, **subprocesos**, y **marco de pila**.  
   
 3. Observe cuántos subprocesos aparecen en la lista.  
   

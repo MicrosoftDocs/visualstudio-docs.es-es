@@ -1,5 +1,5 @@
 ---
-title: IEnumRemoteDebugApplications::Reset | Microsoft Docs
+title: 'Ienumremotedebugapplications (:: RESET | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,12 +17,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8cf00fa40f00e511f56763e6a497ea477bf686d4
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 664bac2b89c9d22b2c5a2d60e50e033746ec1f4f
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58150246"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72575181"
 ---
 # <a name="ienumremotedebugapplicationsreset"></a>IEnumRemoteDebugApplications::Reset
 Restablece una secuencia de enumeración al principio.  

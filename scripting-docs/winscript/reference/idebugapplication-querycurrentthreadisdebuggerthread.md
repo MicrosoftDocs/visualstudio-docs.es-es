@@ -1,5 +1,5 @@
 ---
-title: IDebugApplication::QueryCurrentThreadIsDebuggerThread | Microsoft Docs
+title: 'Idebugapplication (:: QueryCurrentThreadIsDebuggerThread | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 2ed53bcdb5e0d613a757c0c60f4791b0c59e3476
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 0f70cde752506919d90bf963d010ebfc7abf5e88
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58154262"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72577212"
 ---
 # <a name="idebugapplicationquerycurrentthreadisdebuggerthread"></a>IDebugApplication::QueryCurrentThreadIsDebuggerThread
-Determina si el subproceso de ejecución actual es el subproceso del depurador.  
+Determina si el subproceso que se está ejecutando actualmente es el subproceso del depurador.  
   
 ## <a name="syntax"></a>Sintaxis  
   
@@ -41,11 +41,11 @@ HRESULT QueryCurrentThreadIsDebuggerThread();
   
 |Valor|Descripción|  
 |-----------|-----------------|  
-|`S_OK`|El método se realizó correctamente y el subproceso de ejecución actual es el subproceso del depurador.|  
-|`S_FALSE`|El subproceso de ejecución actual no es el subproceso del depurador.|  
+|`S_OK`|El método se realizó correctamente y el subproceso que se está ejecutando actualmente es el subproceso del depurador.|  
+|`S_FALSE`|El subproceso en ejecución actual no es el subproceso del depurador.|  
   
 ## <a name="remarks"></a>Comentarios  
- Este método determina si el subproceso de ejecución actual es el subproceso del depurador.  
+ Este método determina si el subproceso que se está ejecutando actualmente es el subproceso del depurador.  
   
 ## <a name="see-also"></a>Vea también  
  [IDebugApplication (Interfaz)](../../winscript/reference/idebugapplication-interface.md)

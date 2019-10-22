@@ -26,12 +26,12 @@ caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: b0489dec1c2d6cb3d7559a2bdd029ccab6c3ce5f
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 2882434f0638d565133efd9744a94d224d39d121
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60056814"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65692537"
 ---
 # <a name="save-data-back-to-the-database"></a>Guardar los datos de nuevo en la base de datos
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -96,7 +96,7 @@ Proceso de actualización en dos fases y rol de DataRowVersion en una actualizac
 |Current|Jim Wilson|James C. Wilson|  
   
 > [!CAUTION]
->  En el `preserveChanges = true` escenario, si la <xref:System.Data.DataSet.RejectChanges%2A> se llama al método en un registro en el conjunto de datos de destino y, después, vuelve a los datos originales de la *origen* conjunto de datos. Esto significa que si se intenta actualizar el origen de datos original con el conjunto de datos de destino, es posible que no pueda encontrar la fila original para actualizar. Puede evitar que una infracción de simultaneidad rellenando otro conjunto de datos con los registros actualizados del origen de datos y, a continuación, realizar una combinación para evitar una infracción de simultaneidad. (Una infracción de simultaneidad se produce cuando otro usuario modifica un registro del origen de datos después de que se ha rellenado el conjunto de datos.)  
+> En el `preserveChanges = true` escenario, si la <xref:System.Data.DataSet.RejectChanges%2A> se llama al método en un registro en el conjunto de datos de destino y, después, vuelve a los datos originales de la *origen* conjunto de datos. Esto significa que si se intenta actualizar el origen de datos original con el conjunto de datos de destino, es posible que no pueda encontrar la fila original para actualizar. Puede evitar que una infracción de simultaneidad rellenando otro conjunto de datos con los registros actualizados del origen de datos y, a continuación, realizar una combinación para evitar una infracción de simultaneidad. (Una infracción de simultaneidad se produce cuando otro usuario modifica un registro del origen de datos después de que se ha rellenado el conjunto de datos.)  
   
 ## <a name="update-constraints"></a>Restricciones de actualización  
  Para realizar cambios en una fila de datos existente, agregar o actualizar datos en las columnas individuales. Si el conjunto de datos contiene restricciones (como claves externas o restricciones que no aceptan valores NULL), es posible que el registro pueda encontrarse temporalmente en un estado de error como que la actualización. Es decir, puede ser en un estado de error cuando termine de actualizar una columna pero antes de pasar a la siguiente.  
@@ -110,7 +110,7 @@ Proceso de actualización en dos fases y rol de DataRowVersion en una actualizac
   Después de completar una actualización, puede volver a Habilitar comprobación de restricciones, que también vuelve a habilitar eventos de actualización e iniciarlos.  
   
 > [!NOTE]
->  En Windows Forms, la arquitectura de enlace de datos que está integrada en la cuadrícula de datos suspende hasta que el foco sale de una fila, y no es necesario llamar explícitamente a la comprobación de restricción del <xref:System.Data.DataRow.BeginEdit%2A>, <xref:System.Data.DataRow.EndEdit%2A>, o <xref:System.Data.DataRow.CancelEdit%2A> métodos.  
+> En Windows Forms, la arquitectura de enlace de datos que está integrada en la cuadrícula de datos suspende hasta que el foco sale de una fila, y no es necesario llamar explícitamente a la comprobación de restricción del <xref:System.Data.DataRow.BeginEdit%2A>, <xref:System.Data.DataRow.EndEdit%2A>, o <xref:System.Data.DataRow.CancelEdit%2A> métodos.  
   
  Las restricciones se deshabilitan automáticamente cuando se invoca el método <xref:System.Data.DataSet.Merge%2A> en un conjunto de datos. Cuando se complete, si no hay ninguna restricción en el conjunto de datos que no se puede habilitar la fusión mediante combinación un <xref:System.Data.ConstraintException> se produce. En esta situación, la propiedad <xref:System.Data.DataSet.EnforceConstraints%2A> se establece en `false,` y todas las infracciones de las restricciones se deben resolver antes de restablecer la propiedad <xref:System.Data.DataSet.EnforceConstraints%2A> a `true`.  
   
@@ -166,7 +166,7 @@ Proceso de actualización en dos fases y rol de DataRowVersion en una actualizac
   
  `GetChanges` por sí solo devuelve todos los registros modificados. En cambio, pasando el deseado <xref:System.Data.DataRowState> como un parámetro a la `GetChanges` método, puede especificar qué subconjunto de registros cambiados desea: recién agregado registros, registros marcados para su eliminación, registros desasociados o registros modificados.  
   
- Obtener un subconjunto de registros modificados es útil cuando desea enviar registros a otro componente para su procesamiento. En lugar de enviar todo el conjunto de datos, se puede reducir la sobrecarga de la comunicación con el otro componente al obtener únicamente los registros necesarios. Para obtener más información, vea [Cómo: Recuperar filas modificadas](http://msdn.microsoft.com/library/6ff0cbd0-5253-48e7-888a-144d56c2e0a9).  
+ Obtener un subconjunto de registros modificados es útil cuando desea enviar registros a otro componente para su procesamiento. En lugar de enviar todo el conjunto de datos, se puede reducir la sobrecarga de la comunicación con el otro componente al obtener únicamente los registros necesarios. Para obtener más información, vea [Cómo: Recuperar filas modificadas](https://msdn.microsoft.com/library/6ff0cbd0-5253-48e7-888a-144d56c2e0a9).  
   
 ## <a name="committing-changes-in-the-dataset"></a>Confirmar los cambios en el conjunto de datos  
  Cuando se realizan cambios en el conjunto de datos, se establece la propiedad <xref:System.Data.DataRow.RowState%2A> de las filas modificadas. Las versiones originales y actuales de registros se establezcan, mantienen y a su disposición mediante la <xref:System.Data.DataRowView.RowVersion%2A> propiedad. Los metadatos que se almacenan en las propiedades de estas filas cambiadas están necesario para enviar las actualizaciones correctas para el origen de datos.  
@@ -182,12 +182,12 @@ Proceso de actualización en dos fases y rol de DataRowVersion en una actualizac
 - Después de cargar el conjunto de datos. Si se carga un conjunto de datos mediante una llamada al método `Fill` del TableAdapter, este adaptador confirma los cambios automáticamente. Sin embargo, si carga un conjunto de datos mediante la combinación de otro conjunto de datos, los cambios se deben confirmar manualmente.  
   
   > [!NOTE]
-  >  Puede impedir que el adaptador confirme los cambios automáticamente al llamar a la `Fill` método estableciendo el `AcceptChangesDuringFill` propiedad del adaptador para `false`. Si se establece en `false`, el <xref:System.Data.DataRow.RowState%2A> de cada fila insertada durante el relleno se establece en <xref:System.Data.DataRowState>.  
+  > Puede impedir que el adaptador confirme los cambios automáticamente al llamar a la `Fill` método estableciendo el `AcceptChangesDuringFill` propiedad del adaptador para `false`. Si se establece en `false`, el <xref:System.Data.DataRow.RowState%2A> de cada fila insertada durante el relleno se establece en <xref:System.Data.DataRowState>.  
   
 - Después de enviar los cambios del conjunto de datos a otro proceso, como un servicio Web XML.  
   
   > [!CAUTION]
-  >  Si confirma el cambio de este modo, se borra la información sobre cambios existente. No confirmar los cambios hasta después de finalizar la realización de operaciones que requieren que la aplicación para saber qué cambios se realizaron en el conjunto de datos.  
+  > Si confirma el cambio de este modo, se borra la información sobre cambios existente. No confirmar los cambios hasta después de finalizar la realización de operaciones que requieren que la aplicación para saber qué cambios se realizaron en el conjunto de datos.  
   
   Este método realiza las funciones siguientes:  
   
@@ -208,7 +208,7 @@ Proceso de actualización en dos fases y rol de DataRowVersion en una actualizac
 |<xref:System.Data.DataSet.AcceptChanges%2A?displayProperty=fullName>|Los cambios se confirman en todas las filas de todas las tablas del conjunto de datos.|  
   
 > [!NOTE]
->  Si carga un conjunto de datos mediante una llamada a un TableAdapter `Fill` método, no tendrá que aceptar los cambios explícitamente. De forma predeterminada, el `Fill` llamadas al método el `AcceptChanges` método una vez que termine de rellenar la tabla de datos.  
+> Si carga un conjunto de datos mediante una llamada a un TableAdapter `Fill` método, no tendrá que aceptar los cambios explícitamente. De forma predeterminada, el `Fill` llamadas al método el `AcceptChanges` método una vez que termine de rellenar la tabla de datos.  
   
  Un método relacionado, `RejectChanges`, deshace el efecto de los cambios copiando la <xref:System.Data.DataRowVersion> versión en el <xref:System.Data.DataRowVersion> versión de registros. También establece la <xref:System.Data.DataRow.RowState%2A> de cada registro de nuevo en <xref:System.Data.DataRowState>.  
   
@@ -219,12 +219,12 @@ Proceso de actualización en dos fases y rol de DataRowVersion en una actualizac
   
 - En la capa de empresa, agregando código a la aplicación para validar los datos. Un lugar en el que puede hacerlo es en el conjunto de datos. El Diseñador de DataSet proporciona algunas de las ventajas de validación de back-end, como la capacidad para validar los cambios cuando se modifican los valores de columna y fila. Para obtener más información, consulte [validar datos en conjuntos de datos](../data-tools/validate-data-in-datasets.md).  
   
-- En la capa de presentación, agregando validación a los formularios. Para obtener más información, consulte [User Input Validation in Windows Forms](http://msdn.microsoft.com/library/4ec07681-1dee-4bf9-be5e-718f635a33a1).  
+- En la capa de presentación, agregando validación a los formularios. Para obtener más información, consulte [User Input Validation in Windows Forms](https://msdn.microsoft.com/library/4ec07681-1dee-4bf9-be5e-718f635a33a1).  
   
 - En el servidor de datos, al enviar los datos al origen de datos, por ejemplo la base de datos, y dejar que éste los acepte o los rechace. Si trabaja con una base de datos que incluye funciones sofisticadas para validar datos y proporcionar información sobre errores, puede ser un planteamiento práctico, porque los datos se pueden validar sea cual sea su procedencia. Sin embargo, este enfoque puede no adaptarse a los requisitos de validación específicos de la aplicación. Además, tener el origen de datos de validar los datos puede causar numerosas acciones de ida y en el origen de datos, dependiendo de cómo la aplicación facilita la resolución de errores de validación provocados por el back-end.  
   
   > [!IMPORTANT]
-  >  Cuando utilice comandos de datos con un <xref:System.Data.SqlClient.SqlCommand.CommandType%2A> propiedad que se establece en <xref:System.Data.CommandType>, cuidadosamente Compruebe la información que se envía desde un cliente antes de pasarla a la base de datos. Usuarios con malas intenciones podrían intentar enviar (inyectar) instrucciones de SQL modificadas o adicionales con el fin de obtener acceso no autorizado o dañar la base de datos. Antes de transferir la entrada del usuario a una base de datos, compruebe siempre que la información es válida. Es una práctica recomendada para que siempre utilice consultas parametrizadas o procedimientos almacenados cuando sea posible. Para más información, consulte [Información general sobre los ataques mediante scripts](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
+  > Cuando utilice comandos de datos con un <xref:System.Data.SqlClient.SqlCommand.CommandType%2A> propiedad que se establece en <xref:System.Data.CommandType>, cuidadosamente Compruebe la información que se envía desde un cliente antes de pasarla a la base de datos. Usuarios con malas intenciones podrían intentar enviar (inyectar) instrucciones de SQL modificadas o adicionales con el fin de obtener acceso no autorizado o dañar la base de datos. Antes de transferir la entrada del usuario a una base de datos, compruebe siempre que la información es válida. Es una práctica recomendada para que siempre utilice consultas parametrizadas o procedimientos almacenados cuando sea posible. Para más información, consulte [Información general sobre los ataques mediante scripts](https://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
   
   Después de modificar un conjunto de datos, se pueden transmitir los cambios a un origen de datos. Lo más frecuente será hacerlo mediante una llamada al método `Update` del TableAdapter (o adaptador de datos). El método recorre cada registro en una tabla de datos, determina qué tipo de actualización se requiere (actualizar, insertar o eliminar), si los hubiera, y, a continuación, se ejecuta el comando adecuado.  
   
@@ -256,7 +256,7 @@ Proceso de actualización en dos fases y rol de DataRowVersion en una actualizac
 - Incluye la cláusula SET para establecer los nuevos valores de las columnas modificadas.  
   
     > [!NOTE]
-    >  Si la propiedad `UpdateCommand` del TableAdapter se ha establecido en el nombre de un procedimiento almacenado, el adaptador no construye una instrucción SQL. En su lugar, invoca al procedimiento almacenado pasando los parámetros correspondientes.  
+    > Si la propiedad `UpdateCommand` del TableAdapter se ha establecido en el nombre de un procedimiento almacenado, el adaptador no construye una instrucción SQL. En su lugar, invoca al procedimiento almacenado pasando los parámetros correspondientes.  
   
 ## <a name="passing-parameters"></a>Pasar parámetros  
  Suelen usar parámetros para pasar los valores para los registros que se van a actualizarse en la base de datos.  Cuando el TableAdapter `Update` método ejecuta una instrucción UPDATE, debe rellenar los valores de parámetro. Dichos valores los obtiene de la colección `Parameters` del comando de datos correspondiente, en este caso, el objeto `UpdateCommand` de TableAdapter.  
@@ -268,10 +268,10 @@ Proceso de actualización en dos fases y rol de DataRowVersion en una actualizac
  En una instrucción UPDATE, deberá especificar los valores nuevos (los que se escribirán en el registro), así como los valores antiguos (para que el registro puede encontrarse en la base de datos). Por tanto, hay dos parámetros para cada valor: uno para la cláusula SET y otro diferente para la cláusula WHERE. Ambos parámetros leen los datos del registro que se está actualizando, pero obtienen versiones diferentes del valor de columna en función del parámetro [propiedad SqlParameter.SourceVersion](https://msdn.microsoft.com/library/system.data.sqlclient.sqlparameter.sourceversion.aspx). El parámetro de la cláusula SET obtiene la versión actual y el parámetro de la cláusula WHERE obtiene la versión original.  
   
 > [!NOTE]
->  También puede establecer los valores de la colección `Parameters` en el código; en ese caso, sería necesario hacerlo en un controlador de eventos para el evento <xref:System.Data.DataTable.RowChanging> del adaptador de datos.  
+> También puede establecer los valores de la colección `Parameters` en el código; en ese caso, sería necesario hacerlo en un controlador de eventos para el evento <xref:System.Data.DataTable.RowChanging> del adaptador de datos.  
   
 ## <a name="see-also"></a>Vea también  
  [Actualizar datos mediante un TableAdapter](../data-tools/update-data-by-using-a-tableadapter.md)   
- [Preparara la aplicación para recibir datos](http://msdn.microsoft.com/library/c17bdb7e-c234-4f2f-9582-5e55c27356ad)   
+ [Preparara la aplicación para recibir datos](https://msdn.microsoft.com/library/c17bdb7e-c234-4f2f-9582-5e55c27356ad)   
  [Enlazar controles a los datos en Visual Studio](../data-tools/bind-controls-to-data-in-visual-studio.md)   
- [Validar datos](http://msdn.microsoft.com/library/b3a9ee4e-5d4d-4411-9c56-c811f2b4ee7e)   
+ [Validar datos](https://msdn.microsoft.com/library/b3a9ee4e-5d4d-4411-9c56-c811f2b4ee7e)   

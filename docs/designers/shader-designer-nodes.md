@@ -8,40 +8,40 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9d5e27f6cc244580ac4f3c72724dd6fdb6d09999
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 775d447b3e513e15eeafb1bfd90c54e3ffa70770
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55928275"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68925753"
 ---
 # <a name="shader-designer-nodes"></a>Nodos del Diseñador de sombras
 Los artículos de esta sección de la documentación contienen información sobre los distintos nodos del Diseñador de sombras que puede usar para crear efectos gráficos.
 
 ## <a name="nodes-and-node-types"></a>Nodos y tipos de nodo
- El Diseñador de sombras representa los efectos visuales como un gráfico. Estos gráficos se compilan a partir de nodos que se eligen de manera específica y se conectan de forma precisa para lograr el efecto buscado. Cada nodo representa un fragmento de información o una función matemática, y las conexiones entre ellos representan cómo fluye la información a través del gráfico para generar el resultado. El Diseñador de sombras proporciona seis tipos de nodo diferentes (filtros, nodos de textura, parámetros, constantes, nodos de utilidad y nodos matemáticos) y varios nodos individuales pertenecen a cada tipo. En el resto de los artículos de esta sección se describen estos nodos y tipos de nodo. Para obtener más información, vea los vínculos del final de este documento.
+El Diseñador de sombras representa los efectos visuales como un gráfico. Estos gráficos se compilan a partir de nodos que se eligen de manera específica y se conectan de forma precisa para lograr el efecto buscado. Cada nodo representa un fragmento de información o una función matemática, y las conexiones entre ellos representan cómo fluye la información a través del gráfico para generar el resultado. El Diseñador de sombras proporciona seis tipos de nodo diferentes (filtros, nodos de textura, parámetros, constantes, nodos de utilidad y nodos matemáticos) y varios nodos individuales pertenecen a cada tipo. En el resto de los artículos de esta sección se describen estos nodos y tipos de nodo. Para obtener más información, vea los vínculos del final de este documento.
 
 ## <a name="node-structure"></a>Estructura de los nodos
- Todos los nodos se componen de una combinación de elementos comunes. Cada nodo tiene al menos un terminal de salida en el lado derecho (excepto el nodo de color final, que representa la salida del sombreador). Los nodos que representan cálculos o muestras de textura tienen terminales de entrada en el lado izquierdo, pero los nodos que representan información no tienen terminales de entrada. Las terminales de salida se conectan a las terminales de entrada para mover información de un nodo a otro.
+Todos los nodos se componen de una combinación de elementos comunes. Cada nodo tiene al menos un terminal de salida en el lado derecho (excepto el nodo de color final, que representa la salida del sombreador). Los nodos que representan cálculos o muestras de textura tienen terminales de entrada en el lado izquierdo, pero los nodos que representan información no tienen terminales de entrada. Las terminales de salida se conectan a las terminales de entrada para mover información de un nodo a otro.
 
 ### <a name="promotion-of-inputs"></a>Promoción de entradas
- Dado que en última instancia el Diseñador de sombras debe generar código fuente HLSL para que el efecto se pueda usar en un juego o aplicación, los nodos del Diseñador de sombras están sujetos a las reglas de promoción de tipos que se usan en HLSL. Como el hardware gráfico funciona principalmente sobre valores de punto flotante, no es habitual la promoción entre tipos diferentes, por ejemplo, de `int` a `float` o de `float` a `double`. En su lugar, como el hardware gráfico usa la misma operación en varios fragmentos de información a la vez, puede producirse un tipo de promoción diferente en la que la entrada más corta de varias entradas se alarga para que coincida con el tamaño de la entrada más larga. La forma en que se alargue depende del tipo de la entrada y también de la propia operación:
+Dado que en última instancia el Diseñador de sombras debe generar código fuente HLSL para que el efecto se pueda usar en un juego o aplicación, los nodos del Diseñador de sombras están sujetos a las reglas de promoción de tipos que se usan en HLSL. Como el hardware gráfico funciona principalmente sobre valores de punto flotante, no es habitual la promoción entre tipos diferentes, por ejemplo, de `int` a `float` o de `float` a `double`. En su lugar, como el hardware gráfico usa la misma operación en varios fragmentos de información a la vez, puede producirse un tipo de promoción diferente en la que la entrada más corta de varias entradas se alarga para que coincida con el tamaño de la entrada más larga. La forma en que se alargue depende del tipo de la entrada y también de la propia operación:
 
--   **Si el tipo más pequeño es un valor escalar, entonces:**
+- **Si el tipo más pequeño es un valor escalar, entonces:**
 
      el valor de la expresión escalar se replica en un vector que es del mismo tamaño que la entrada más grande. Por ejemplo, la entrada escalar 5,0 se convierte en el vector (5,0, 5,0, 5,0) cuando la entrada más grande de la operación es un vector de tres elementos, sea cual sea la operación.
 
--   **Si el tipo más pequeño es un vector y la operación es de multiplicación (\*, /, %, etc.), entonces:**
+- **Si el tipo más pequeño es un vector y la operación es de multiplicación (\*, /, %, etc.), entonces:**
 
      el valor del vector se copia en los elementos iniciales de un vector del mismo tamaño que la entrada más grande, y los elementos finales se establecen en 1,0. Por ejemplo, la entrada de vector (5,0, 5,0) se convierte en el vector (5,0, 5,0, 1,0, 1,0) cuando se multiplica por un vector de cuatro elementos. Esto conserva el tercer y cuarto elemento de la salida mediante el uso de la identidad de multiplicación, 1,0.
 
--   **Si el tipo más pequeño es un vector y la operación es de suma (+, -, etc.), entonces:**
+- **Si el tipo más pequeño es un vector y la operación es de suma (+, -, etc.), entonces:**
 
      el valor del vector se copia en los elementos iniciales de un vector del mismo tamaño que la entrada más grande, y los elementos finales se establecen en 0,0. Por ejemplo, la entrada de vector (5,0, 5,0) se convierte en el vector (5,0, 5,0, 0,0, 0,0) cuando se suma a un vector de cuatro elementos. Esto conserva el tercer y cuarto elemento de la salida mediante el uso de la identidad de suma, 0,0.
 
 ## <a name="related-topics"></a>Temas relacionados
 
-|Title|Descripción|
+|Title|DESCRIPCIÓN|
 |-----------|-----------------|
 |[Nodos de constante](../designers/constant-nodes.md)|Describe los nodos que se pueden usar para representar valores literales y la información de estado de vértice interpolada en los cálculos del sombreador. Como el estado de los vértices se interpola, y por tanto es diferente para cada píxel, cada instancia de sombreador de píxeles recibe una versión diferente de la constante.|
 |[Nodos de parámetros](../designers/parameter-nodes.md)|Describe los nodos que se pueden usar para representar la posición de la cámara, propiedades de los materiales, parámetros de iluminación, hora y otra información de estado de la aplicación en los cálculos del sombreador.|

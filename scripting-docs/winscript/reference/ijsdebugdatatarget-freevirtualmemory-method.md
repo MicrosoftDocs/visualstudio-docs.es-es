@@ -1,5 +1,5 @@
 ---
-title: FreeVirtualMemory (método) | Documentos de Microsoft
+title: 'IJsDebugDataTarget:: Freevirtualmemory ((método) | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -15,15 +15,15 @@ caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: bf450c03d996a47f9dcd00899ddee46b75d6df32
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 835302249e95c89625c07c6d1ef3d7cbaf2905e8
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58146310"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72577621"
 ---
 # <a name="ijsdebugdatatargetfreevirtualmemory-method"></a>IJsDebugDataTarget::FreeVirtualMemory (Método)
-Libera y/o anula una región de memoria en el espacio de direcciones virtuales del proceso de destino.  
+Libera o anula la confirmación de una región de memoria en el espacio de direcciones virtuales del proceso de destino.  
   
 ## <a name="syntax"></a>Sintaxis  
   
@@ -37,21 +37,21 @@ HRESULT FreeVirtualMemory(
   
 #### <a name="parameters"></a>Parámetros  
  `address`  
- [in] Dirección dentro del proceso de destino donde se debe liberar la memoria.  
+ de Dirección dentro del proceso de destino donde se debe liberar la memoria.  
   
  `size`  
- [in] Número de bytes a anular. Para liberar una región de memoria, este valor debe ser cero.  
+ de Número de bytes que se van a anular. Para liberar una región de memoria, este valor debe ser cero.  
   
  `freeType`  
- [in] Indica el tipo de operación libre a realizar. Esto suele ser MEM_RELEASE (0 x 8000), lo que libera la región especificada de páginas. Después de la operación, las páginas están en el estado libre. MEM_DECOMMIT (0 x 4000) se puede usar en su lugar para anular las páginas sin liberarlas.  
+ de Indica el tipo de operación gratuita que se va a realizar. Suele ser MEM_RELEASE (0x8000), que libera la región especificada de páginas. Después de la operación, las páginas se encuentran en el estado libre. En su lugar, se puede usar MEM_DECOMMIT (0x4000) para anular la confirmación de las páginas sin liberarlas.  
   
 ## <a name="return-value"></a>Valor devuelto  
   
 ## <a name="remarks"></a>Comentarios  
- Para obtener más información, vea la API VirtualFree de Win32.  
+ Para obtener más información, consulte la API de VirtualFree de Win32.  
   
 ## <a name="requirements"></a>Requisitos  
- **Encabezado:** jscript9diag.h  
+ **Encabezado:** jscript9diag. h  
   
 ## <a name="see-also"></a>Vea también  
  [IJsDebugDataTarget (Interfaz)](../../winscript/reference/ijsdebugdatatarget-interface.md)

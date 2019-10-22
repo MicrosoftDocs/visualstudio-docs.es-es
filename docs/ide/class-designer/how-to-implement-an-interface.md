@@ -1,5 +1,5 @@
 ---
-title: Filtrar Implementar una interfaz (Diseñador de clases)
+title: Procedimiento Implementar una interfaz (Diseñador de clases)
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,14 +11,14 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f070e3224dcc683d766da556512f285751c37ca4
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: e76aeea4c6779e97d882705e8680cd7a3b00d129
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55923922"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62975182"
 ---
-# <a name="how-to-implement-an-interface-in-class-designer"></a>Filtrar Implementar una interfaz en el Diseñador de clases
+# <a name="how-to-implement-an-interface-in-class-designer"></a>Procedimiento Implementar una interfaz en el Diseñador de clases
 
 En el **Diseñador de clases**, puede implementar una interfaz en el diagrama de clases si la conecta a una clase que proporcione código para los métodos de interfaz. El **Diseñador de clases** genera una implementación de interfaz y muestra la relación entre la interfaz y la clase como una relación de herencia. Para implementar una interfaz, dibuje una línea de herencia entre la interfaz y la clase, o bien arrastre la interfaz desde la Vista de clases.
 
@@ -27,9 +27,9 @@ En el **Diseñador de clases**, puede implementar una interfaz en el diagrama de
 
 ## <a name="to-implement-an-interface-by-drawing-an-inheritance-line"></a>Para implementar una interfaz mediante el dibujo de una línea de herencia
 
-1.  En el diagrama de clases, muestre la interfaz y la clase que implementará la interfaz.
+1. En el diagrama de clases, muestre la interfaz y la clase que implementará la interfaz.
 
-2.  Dibuje una línea de herencia entre la clase y la interfaz.
+2. Dibuje una línea de herencia entre la clase y la interfaz.
 
      Aparece un círculo conectado a la clase y una etiqueta con el nombre de interfaz identifica la relación de herencia. Visual Studio genera código auxiliar para todos los miembros de interfaz.
 
@@ -37,14 +37,14 @@ Para obtener más información, vea [Cómo: Crear herencia entre tipos](how-to-c
 
 ## <a name="to-implement-an-interface-from-the-class-view-window"></a>Para implementar una interfaz desde la ventana Vista de clases
 
-1.  En el diagrama de clases, muestre la clase que quiere que implemente la interfaz.
+1. En el diagrama de clases, muestre la clase que quiere que implemente la interfaz.
 
-2.  Abra la **Vista de clases** y busque la interfaz.
+2. Abra la **Vista de clases** y busque la interfaz.
 
     > [!TIP]
     > Si la **Vista de clases** no está abierta, abra la **Vista de clases** desde el menú **Ver** o presione **Ctrl**+**Mayús**+**C**.
 
-3.  Arrastre el nodo de interfaz a la forma de clase en el diagrama.
+3. Arrastre el nodo de interfaz a la forma de clase en el diagrama.
 
      Aparece un círculo conectado a la clase y una etiqueta con el nombre de interfaz identifica la relación de herencia. Visual Studio genera código auxiliar para todos los miembros de interfaz; en este momento, se implementa la interfaz.
 

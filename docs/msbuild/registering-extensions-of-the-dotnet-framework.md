@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: bf1eb0001ca7c8b87fa44b5ea861df9d9fcba84d
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: f1e780a67ee419a8cae661570802e5d85081f1fd
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56644346"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445810"
 ---
 # <a name="register-extensions-of-the-net-framework"></a>Registrar las extensiones de .NET Framework
 Puede desarrollar un ensamblado que extienda una versión concreta de .NET Framework. Para que el ensamblado se muestre en el cuadro de diálogo **Agregar referencias** de Visual Studio, debe agregar la carpeta que lo contiene al registro del sistema.
@@ -27,7 +27,7 @@ Puede desarrollar un ensamblado que extienda una versión concreta de .NET Frame
  Registre esta carpeta mediante esta clave: **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\\.NETFramework\v4.0.21006\AssemblyFoldersEx\TreyResearch\\**. Asigne a la clave este valor predeterminado: **C:\TreyResearch\Extensions4**.
 
 > [!NOTE]
->  El número de compilación de la versión de .NET Framework puede ser diferente.
+> El número de compilación de la versión de .NET Framework puede ser diferente.
 
  Para registrar un ensamblado de 32 bits en un equipo de 64 bits, use el nodo Wow6432, por ejemplo: **HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\\.NETFramework\v4.0.21006\AssemblyFoldersEx\TreyResearch\\**.
 

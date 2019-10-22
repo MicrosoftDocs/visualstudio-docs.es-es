@@ -18,12 +18,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: be29a8eff4e36df04721e8f946b9b2b0ebae3145
-ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
+ms.openlocfilehash: 3f1ddb1f1d39255c14e03d114891145c8f2dece5
+ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "58857585"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "69551180"
 ---
 # <a name="set-defaults-for-enterprise-deployments-of-visual-studio"></a>Establecimiento de valores predeterminados para implementaciones empresariales de Visual Studio
 
@@ -41,7 +41,7 @@ Hay varios lugares donde puede establecer valores predeterminados de empresa, pa
 
 1. `HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\VisualStudio\Setup`
 2. `HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\Setup`
-3. `HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\VisualStudio\Setup` (en sistemas operativos de 64 bits)
+3. `HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\VisualStudio\Setup` (en sistemas operativos de 64 bits)
 
 > [!IMPORTANT]
 > Si no establece la clave `HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\VisualStudio\Setup` y, en su lugar, establece una de las otras claves, debe establecer las otras claves en los sistemas operativos de 64 bits. Este problema se resuelve en una actualización futura del producto.
@@ -50,11 +50,12 @@ Si todavía no se han establecido, algunos valores del Registro se establecen au
 
 Puede establecer los siguientes valores del Registro:
 
-| **nombre** | **Tipo** | **Default** | **Descripción** |
+| **Name** | **Type** | **Predetermiado** | **Descripción** |
 | -------- | -------- | ----------- | --------------- |
 | `CachePath` | `REG_SZ` o `REG_EXPAND_SZ` | %ProgramData%\Microsoft\VisualStudio\Packages | El directorio donde se almacenan los manifiestos de paquete y, opcionalmente, las cargas. Para más información, vea la página [Deshabilitación o traslado de la caché de paquetes](disable-or-move-the-package-cache.md). |
 | `KeepDownloadedPayloads` | `REG_DWORD` | 1 | Mantenga instaladas las cargas de paquetes incluso después de estar instaladas. Puede cambiar el valor en cualquier momento. Al deshabilitar la directiva, se quitan las cargas de paquetes almacenadas en caché de la instancia reparada o modificada. Para más información, vea la página [Deshabilitación o traslado de la caché de paquetes](disable-or-move-the-package-cache.md). |
 | `SharedInstallationPath` | `REG_SZ` o `REG_EXPAND_SZ` | %ProgramFiles(x86)%\Microsoft Visual Studio\Shared | El directorio donde están instalados algunos paquetes compartidos entre versiones de instancias de Visual Studio. Puede cambiar el valor en cualquier momento, pero el cambio solo afectará a futuras instalaciones. Los productos que ya están instalados en la ubicación antigua no se deben mover, ya que es posible que dejen de funcionar correctamente. |
+| `BackgroundDownloadDisabled` |`REG_DWORD` | 1 | Impida que el programa de instalación descargue actualizaciones automáticamente relativas a cualquier producto de Visual Studio instalado. Puede cambiar el valor en cualquier momento. |
 
 > [!IMPORTANT]
 > Si cambia la directiva del registro `CachePath` después de una instalación, debe mover la caché de paquetes existente a la nueva ubicación y asegurarse de que esté protegida de forma que `SYSTEM` y `Administrators` tengan acceso de control total y `Everyone`, de lectura.
@@ -65,5 +66,5 @@ Puede establecer los siguientes valores del Registro:
 ## <a name="see-also"></a>Vea también
 
 - [Instalar Visual Studio](install-visual-studio.md)
-- [Deshabilitación o traslado de la caché de paquetes](disable-or-move-the-package-cache.md)
+- [Deshabilitar o mover la caché del paquete](disable-or-move-the-package-cache.md)
 - [Usar parámetros de la línea de comandos para instalar Visual Studio](use-command-line-parameters-to-install-visual-studio.md)

@@ -1,5 +1,5 @@
 ---
-title: Análisis de datos de uso de la CPU (código administrado)
+title: Análisis de los datos de uso de CPU (C#, Visual Basic)
 description: Medición del rendimiento de aplicación en C# y Visual Basic con la herramienta de diagnóstico de uso de CPU
 ms.custom: mvc
 ms.date: 08/06/2018
@@ -12,14 +12,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: b77ae405463496c5de703947de9b4429218d2435
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 7d13a97c3fb228cb72040313c98b70e14fc44099
+ms.sourcegitcommit: 53bc4c11b82882ab658e34c65ae374060f823531
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54935688"
+ms.lasthandoff: 09/19/2019
+ms.locfileid: "71128196"
 ---
-# <a name="quickstart-analyze-cpu-usage-data-in-visual-studio-managed-code"></a>Inicio rápido: Análisis de datos de uso de la CPU en Visual Studio (código administrado)
+# <a name="quickstart-analyze-cpu-usage-data-in-visual-studio-c-visual-basic"></a>Inicio rápido: Análisis de los datos de uso de CPU en Visual Studio (C#, Visual Basic)
 
 Visual Studio proporciona muchas características eficaces para ayudarle a analizar problemas de rendimiento de la aplicación. En este tema se proporciona una forma rápida de obtener información sobre las características básicas. A continuación, veremos la herramienta para identificar los cuellos de botella de rendimiento debido al uso elevado de la CPU. Se admiten las herramientas de diagnóstico para el desarrollo de .NET en Visual Studio, incluido ASP.NET, y para el desarrollo nativo de C++.
 
@@ -31,7 +31,7 @@ Para ejecutar las herramientas de generación de perfiles con el depurador se re
 
 1. En Visual Studio, seleccione **Archivo** > **Nuevo proyecto**.
 
-2. En **Visual C#** o **Visual Basic**, elija **Escritorio de Windows** y, después, en el panel central, elija **Aplicación de consola (.NET Framework)**.
+2. En **Visual C#** o **Visual Basic**, elija **Escritorio de Windows** y, después, en el panel central, elija **Aplicación de consola (.NET Framework)** .
 
     Si no ve la plantilla de proyecto **Aplicación de consola**, haga clic en el vínculo **Abrir el instalador de Visual Studio** en el panel izquierdo del cuadro de diálogo **Nuevo proyecto**. Se iniciará el Instalador de Visual Studio. Elija la carga de trabajo **Desarrollo de escritorio de .NET** y, luego, seleccione **Modificar**.
 
@@ -160,9 +160,9 @@ Para ejecutar las herramientas de generación de perfiles con el depurador se re
     > [!NOTE]
     > En Visual Basic, asegúrese de que el objeto de inicio se establece en `Sub Main` (**Propiedades** > **Aplicaciones** > **Objeto de inicio**).
 
-##  <a name="step-1-collect-profiling-data"></a>Paso 1: Recopilar datos de generación de perfiles
+## <a name="step-1-collect-profiling-data"></a>Paso 1: Recopilar datos de generación de perfiles
 
-1.  En primer lugar, establezca un punto de interrupción en la aplicación en esta línea de código en la función `Main`:
+1. En primer lugar, establezca un punto de interrupción en la aplicación en esta línea de código en la función `Main`:
 
     `for (int i = 0; i < 200; i++)`
 
@@ -172,20 +172,20 @@ Para ejecutar las herramientas de generación de perfiles con el depurador se re
 
     Para establecer un punto de interrupción, haga clic en el margen interno a la izquierda de la línea de código.
 
-2.  Después, establezca un segundo punto de interrupción en la llave de cierre al final de la función `Main`:
+2. Después, establezca un segundo punto de interrupción en la llave de cierre al final de la función `Main`:
 
      ![Establecer puntos de interrupción para la generación de perfiles](../profiling/media/quickstart-cpu-usage-breakpoints.png "Establecer puntos de interrupción para la generación de perfiles")
 
     > [!TIP]
     > Al establecer dos puntos de interrupción, puede limitar la recopilación de datos a las partes del código que quiere analizar.
 
-3.  La ventana **Herramientas de diagnóstico** ya es visible, a menos que se haya desactivado. Para que la ventana se vuelva a mostrar, haga clic en **Depurar** > **Windows** > **Mostrar Herramientas de diagnóstico**.
+3. La ventana **Herramientas de diagnóstico** ya es visible, a menos que se haya desactivado. Para que la ventana se vuelva a mostrar, haga clic en **Depurar** > **Windows** > **Mostrar Herramientas de diagnóstico**.
 
-4.  Haga clic en **Depurar** > **Iniciar depuración** (o en **Inicio** en la barra de herramientas, o presione **F5**).
+4. Haga clic en **Depurar** > **Iniciar depuración** (o en **Inicio** en la barra de herramientas, o presione **F5**).
 
      Cuando la aplicación termine de cargarse, se muestra la vista **Resumen** de las Herramientas de diagnóstico.
 
-5.  Mientras el depurador está en pausa, habilite la recopilación de datos de uso de la CPU mediante la selección de **Registrar perfil CPU** y, después, abra la pestaña **Uso de CPU**.
+5. Mientras el depurador está en pausa, habilite la recopilación de datos de uso de la CPU mediante la selección de **Registrar perfil CPU** y, después, abra la pestaña **Uso de CPU**.
 
      ![Herramientas de diagnóstico para habilitar la generación de perfiles de CPU](../profiling/media/quickstart-cpu-usage-summary.png "Herramientas de diagnóstico para habilitar la generación de perfiles de CPU")
 
@@ -193,7 +193,7 @@ Para ejecutar las herramientas de generación de perfiles con el depurador se re
 
      Al seleccionar **Registrar perfil CPU**, Visual Studio iniciará la grabación de las funciones y cuánto tiempo se tardan en ejecutar, y también proporciona un gráfico de escala de tiempo que se puede usar para centrarse en segmentos específicos de la sesión de muestreo. Estos datos recopilados solo se pueden ver cuando la aplicación se detiene en un punto de interrupción.
 
-6.  Presione **F5** para ejecutar la aplicación hasta el segundo punto de interrupción.
+6. Presione **F5** para ejecutar la aplicación hasta el segundo punto de interrupción.
 
      Ahora tiene los datos de rendimiento de la aplicación específicamente para la región de código que se ejecuta entre los dos puntos de interrupción.
 
@@ -237,5 +237,5 @@ Se recomienda que, para empezar a analizar los datos, examine la lista de funcio
 
 ## <a name="see-also"></a>Vea también
 
-- [Generación de perfiles en Visual Studio](../profiling/index.md)
+- [Generación de perfiles en Visual Studio](../profiling/index.yml)
 - [Primer vistazo a la generación de perfiles](../profiling/profiling-feature-tour.md)

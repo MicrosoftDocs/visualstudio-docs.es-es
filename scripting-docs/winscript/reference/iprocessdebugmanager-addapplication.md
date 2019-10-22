@@ -1,5 +1,5 @@
 ---
-title: 'Iprocessdebugmanager:: Addapplication | Documentos de Microsoft'
+title: 'IProcessDebugManager:: AddApplication | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 206baa92ae8d2803b2b07f4966565755a1785d61
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 47ad8132b9b51efa5f5c2f260e48441e5da64c42
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58147376"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72576809"
 ---
 # <a name="iprocessdebugmanageraddapplication"></a>IProcessDebugManager::AddApplication
-Agrega una aplicación a la lista del Administrador de máquina depuración de aplicaciones en ejecución.  
+Agrega una aplicación a la lista de aplicaciones en ejecución del administrador de depuración de máquinas.  
   
 ## <a name="syntax"></a>Sintaxis  
   
@@ -38,10 +38,10 @@ HRESULT AddApplication(
   
 #### <a name="parameters"></a>Parámetros  
  `pda`  
- [in] La aplicación de depuración para agregar a la lista de aplicaciones en ejecución.  
+ de Aplicación de depuración que se va a agregar a la lista de aplicaciones en ejecución.  
   
  `pdwAppCookie`  
- [out] Una cookie que se usa para quitar la aplicación desde el Administrador de depuración de la máquina.  
+ enuncia Cookie que se usa para quitar la aplicación del administrador de depuración del equipo.  
   
 ## <a name="return-value"></a>Valor devuelto  
  El método devuelve un objeto `HRESULT`. Entre los valores posibles se incluyen los que se indican en la tabla siguiente, entre otros.  
@@ -51,8 +51,8 @@ HRESULT AddApplication(
 |`S_OK`|El método se realizó correctamente.|  
   
 ## <a name="remarks"></a>Comentarios  
- Este método agrega una aplicación en el que se ejecuta la lista de aplicaciones en el Administrador de depuración de la máquina.  
+ Este método agrega una aplicación a la lista de aplicaciones en ejecución en el administrador de depuración del equipo.  
   
 ## <a name="see-also"></a>Vea también  
- [IProcessDebugManager (interfaz)](../../winscript/reference/iprocessdebugmanager-interface.md)   
+ @No__t_1 de la [interfaz IProcessDebugManager](../../winscript/reference/iprocessdebugmanager-interface.md)  
  [IProcessDebugManager::RemoveApplication](../../winscript/reference/iprocessdebugmanager-removeapplication.md)

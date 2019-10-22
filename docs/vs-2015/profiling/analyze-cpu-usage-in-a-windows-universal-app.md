@@ -15,22 +15,22 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 robots: noindex,nofollow
-ms.openlocfilehash: fcc31e2f7fb06f58f07b0af58a1375466b16cc23
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 105efab7a28f0a21bd7567262ff8ec214715b8ae
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60053057"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65704578"
 ---
 # <a name="analyze-cpu-usage-in-a-windows-universal-app"></a>Analizar el uso de CPU en una aplicación universal de Windows
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Se aplica a Windows y Windows Phone] (.. /Image/windows_and_phone_content.png "windows_and_phone_content")  
   
- Si necesita investigar problemas de rendimiento de la aplicación, un buen punto de partida es entender cómo utiliza la CPU. La herramienta **Uso de CPU** muestra que la CPU dedica tiempo a ejecutar código. Para centrarse en escenarios concretos, Uso de CPU se puede ejecutar con las herramientas [Capacidad de respuesta de la IU de XAML](http://msdn.microsoft.com/library/4ff84cd1-4e63-4fda-b34f-3ef862a6e480), [Consumo de energía](../profiling/analyze-energy-use-in-store-apps.md) o con ambas en una única sesión de diagnóstico.  
+ Si necesita investigar problemas de rendimiento de la aplicación, un buen punto de partida es entender cómo utiliza la CPU. La herramienta **Uso de CPU** muestra que la CPU dedica tiempo a ejecutar código. Para centrarse en escenarios concretos, Uso de CPU se puede ejecutar con las herramientas [Capacidad de respuesta de la IU de XAML](https://msdn.microsoft.com/library/4ff84cd1-4e63-4fda-b34f-3ef862a6e480), [Consumo de energía](../profiling/analyze-energy-use-in-store-apps.md) o con ambas en una única sesión de diagnóstico.  
   
 > [!NOTE]
->  La herramienta **Uso de CPU** no se puede utilizar con las aplicaciones de Windows Phone Silverlight 8.1.  
+> La herramienta **Uso de CPU** no se puede utilizar con las aplicaciones de Windows Phone Silverlight 8.1.  
   
  Este tutorial le ofrece información sobre la recopilación y el análisis de datos de Uso de CPU de una aplicación sencilla de XAML universal de Windows.  
   

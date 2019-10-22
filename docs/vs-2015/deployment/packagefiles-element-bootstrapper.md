@@ -17,11 +17,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 382689dada13adce1ee530e66fef6ba78452efaa
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58996941"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68188988"
 ---
 # <a name="ltpackagefilesgt-element-bootstrapper"></a>&lt;PackageFiles&gt; (elemento, arranque)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -47,18 +47,18 @@ El `PackageFiles` contiene elemento `PackageFile` elementos, que definen los paq
 ## <a name="elements-and-attributes"></a>Elementos y atributos  
  El elemento `PackageFiles` tiene los atributos siguientes:  
   
-|Atributo|Descripción|  
+|Atributo|DESCRIPCIÓN|  
 |---------------|-----------------|  
-|`CopyAllPackageFiles`|Opcional. Si establece en `false`, el instalador descargará sólo los archivos que se hace referencia desde el `Command` elemento. Si establece en `true`, se descargarán todos los archivos.<br /><br /> Si establece en `IfNotHomesite`, el instalador comportará igual como si `False` si `ComponentsLocation` está establecido en `HomeSite`y en caso contrario, se comportará igual como si `True`. Este valor puede ser útil para permitir que los paquetes que son programas previos ejecutar su propio comportamiento en un escenario de HomeSite.<br /><br /> De manera predeterminada, es `true`.|  
+|`CopyAllPackageFiles`|Opcional. Si establece en `false`, el instalador descargará sólo los archivos que se hace referencia desde el `Command` elemento. Si establece en `true`, se descargarán todos los archivos.<br /><br /> Si establece en `IfNotHomesite`, el instalador comportará igual como si `False` si `ComponentsLocation` está establecido en `HomeSite`y en caso contrario, se comportará igual como si `True`. Este valor puede ser útil para permitir que los paquetes que son programas previos ejecutar su propio comportamiento en un escenario de HomeSite.<br /><br /> El valor predeterminado es `true`.|  
   
 ## <a name="packagefile"></a>PackageFile  
  El `PackageFile` es un elemento secundario de la `PackageFiles` elemento. Un `PackageFiles` elemento debe tener al menos un `PackageFile` elemento.  
   
  `PackageFile` tiene los siguientes atributos.  
   
-|Atributo|Descripción|  
+|Atributo|DESCRIPCIÓN|  
 |---------------|-----------------|  
-|`Name`|Obligatorio. El nombre del archivo del paquete. Este es el nombre que el `Command` elemento hará referencia al define las condiciones en las que se instala un paquete. Este valor también se utiliza como clave en el `Strings` tabla para recuperar el nombre traducido que herramientas como [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] utilizará para describir el paquete.|  
+|`Name`|Necesario. El nombre del archivo del paquete. Este es el nombre que el `Command` elemento hará referencia al define las condiciones en las que se instala un paquete. Este valor también se utiliza como clave en el `Strings` tabla para recuperar el nombre traducido que herramientas como [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] utilizará para describir el paquete.|  
 |`HomeSite`|Opcional. La ubicación del paquete en el servidor remoto, si no se incluye con el programa de instalación.|  
 |`CopyOnBuild`|Opcional. Especifica si el programa previo debe copiar el archivo de paquete en el disco en tiempo de compilación. El valor predeterminado es true.|  
 |`PublicKey`|Cifrado clave pública del firmante del certificado del paquete. Es necesario si `HomeSite` se usa; en caso contrario, opcional.|  

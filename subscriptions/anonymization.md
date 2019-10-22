@@ -3,25 +3,22 @@ title: Anonimización de datos de suscriptor de Visual Studio | Microsoft Docs
 author: evanwindom
 ms.author: lank
 manager: lank
-ms.date: 10/31/2018
+ms.date: 07/19/2019
 ms.topic: conceptual
 description: Obtenga información sobre cómo se anonimizan los datos del suscriptor cuando se pierde el acceso a las suscripciones.
-searchscope: VS Subscription
-ms.openlocfilehash: a4249aa2520df6e9c1870fec121de2fdb2135308
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: d15fce8d5e1a64066a42cea69b770f55c9607f06
+ms.sourcegitcommit: 02acadb912faced7eaffe27c2c19104bf0428bcd
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56842551"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70936912"
 ---
 # <a name="anonymization-of-visual-studio-subscriber-information"></a>Anonimización de información de suscriptor de Visual Studio
-
 Cuando se produce un evento que bloquea el uso que realiza un suscriptor de una suscripción, como la expiración de una suscripción o la eliminación de la cuenta de inicio de sesión del suscriptor, la información personal del usuario como su nombre y la cuenta de inicio de sesión se desordenan para volverlos inutilizables.  Esto se hace para proteger la información personal del suscriptor.
 
 [!INCLUDE [GDPR-related guidance](includes/gdpr-intro-sentence.md)]
 
 ## <a name="when-does-anonymization-occur"></a>¿Cuando se produce la anonimización?
-
 Los eventos que inutilizan una suscripción para un suscriptor desencadenarán la anonimización.  La rapidez con la que se produce la anonimización depende del tipo de suscripción y del evento que la desencadene. Vea la tabla siguiente para obtener más información.
 
 | Tipo de suscripción                                                                                                                       | Evento que desencadena la anonimización                                                                                                     | Cuando se produce la anonimización |
@@ -33,13 +30,16 @@ Los eventos que inutilizan una suscripción para un suscriptor desencadenarán l
 | Todas las suscripciones                                                                                                                       | Se quita un suscriptor del inquilino al que está asociado con la cuenta de Azure Active Directory                                | Inmediatamente               |
 
 ## <a name="faq"></a>Preguntas más frecuentes
-
 ### <a name="q--does-the-anonymization-of-the-subscribers-personal-information-cause-them-to-lose-access-to-the-subscription"></a>P:  ¿La anonimización de datos personales del suscriptor causa que pierda el acceso a la suscripción?
 R:  No.  La anonimización se produce en respuesta a un evento que provoca la pérdida de acceso a la suscripción, pero no provoca la pérdida de acceso.
 
 ### <a name="q--im-an-administrator-for-my-organizations-subscriptions--if-one-of-my-subscribers-information-is-anonymized-can-that-subscription-be-reassigned-to-another-user"></a>P:  Soy administrador de suscripciones de mi organización.  ¿Si se anonimiza la información de uno de mis suscriptores, esa suscripción puede reasignarse a otro usuario?
 R:  Sí, siempre y cuando la suscripción no haya expirado, pueden reasignarse a otro suscriptor.
 
-## <a name="next-steps"></a>Pasos siguientes
+### <a name="q-how-can-i-prevent-anonymization-caused-by-deleting-a-sign-in-email-address"></a>P: ¿Cómo se puede evitar la anonimización que provoca la eliminación de una dirección de correo electrónico de inicio de sesión?
+R:  Hay dos maneras de impedir la incidencia:
+- Implemente un sistema de administración de identidad único, ya sea MSA o AAD, pero no ambos.  
+- Asocie las identidades de AAD y MSA a través de los inquilinos. 
 
-Obtenga información sobre cómo evitar la anonimización [vinculando las identidades de AAD y de MSA](/azure/active-directory/b2b/add-users-administrator).
+## <a name="next-steps"></a>Pasos siguientes
+Obtenga información sobre cómo evitar la anonimización [asociando las identidades de AAD y MSA](/azure/active-directory/b2b/add-users-administrator).

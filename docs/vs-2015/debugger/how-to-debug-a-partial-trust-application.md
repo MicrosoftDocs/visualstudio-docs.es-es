@@ -18,19 +18,19 @@ caps.latest.revision: 28
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 8340867406e99fd6c6f84d1dc84d89a395a338fb
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 030fef750cc1e0f0932de32fca1a0ffef56bc8f3
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60106870"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65704484"
 ---
 # <a name="how-to-debug-a-partial-trust-application"></a>Procedimiento Depurar una aplicación de confianza parcial
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Se aplica a Windows y aplicaciones de consola.  
   
- [Seguridad e implementación ClickOnce](../deployment/clickonce-security-and-deployment.md) facilita la implementación de aplicaciones de confianza parcial que aprovechan las ventajas de [Code Access Security](http://msdn.microsoft.com/library/859af632-c80d-4736-8d6f-1e01b09ce127) para limitar el acceso a los recursos en un equipo.  
+ [Seguridad e implementación ClickOnce](../deployment/clickonce-security-and-deployment.md) facilita la implementación de aplicaciones de confianza parcial que aprovechan las ventajas de [Code Access Security](https://msdn.microsoft.com/library/859af632-c80d-4736-8d6f-1e01b09ce127) para limitar el acceso a los recursos en un equipo.  
   
  La depuración de una aplicación de confianza parcial puede ser difícil porque estas aplicaciones tienen permisos de seguridad diferentes, por tanto, se comportan de manera diferente según la ubicación desde la que se instalen. Si una aplicación de confianza parcial se instala desde Internet, tendrá pocos permisos. Si se instala desde una intranet local, tendrá más permisos; si se instala desde el equipo local, tendrá todos los permisos. También puede haber zonas personalizadas con permisos personalizados. Tal vez sea necesario depurar una aplicación de confianza parcial si se cumple alguna de estas condiciones o todas ellas. Afortunadamente, Visual Studio también facilita esta tarea.  
   
@@ -41,7 +41,7 @@ Se aplica a Windows y aplicaciones de consola.
  Después, es posible regresar y ver los permisos agregados durante la depuración. Si hubo que agregar un permiso durante la depuración, posiblemente haya que agregar una solicitud de consentimiento del usuario en esa parte del código.  
   
 > [!NOTE]
->  Los visualizadores del depurador requieren más privilegios de los permitidos por una aplicación de confianza parcial. Los visualizadores no se cargarán cuando la ejecución se detenga en código con confianza parcial. Para depurar con un visualizador, debe ejecutar el código con plena confianza.  
+> Los visualizadores del depurador requieren más privilegios de los permitidos por una aplicación de confianza parcial. Los visualizadores no se cargarán cuando la ejecución se detenga en código con confianza parcial. Para depurar con un visualizador, debe ejecutar el código con plena confianza.  
   
 ### <a name="to-choose-a-zone-for-your-partial-trust-application"></a>Para elegir una zona para la aplicación de confianza parcial  
   

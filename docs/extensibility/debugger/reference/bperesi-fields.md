@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - BPERESI_FIELDS enumeration
 ms.assetid: dd7dd89c-1043-46a1-a929-099cc039c344
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 488c2b1a96d01e0e7dfa9868d2f7e5111adc4e2d
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: f9db96713ba8bb0f3cd421c48ef602e25c2d25a1
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56699436"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66350533"
 ---
 # <a name="bperesifields"></a>BPERESI_FIELDS
 Especifica la información que se va a recuperar acerca de una solución con errores de un punto de interrupción.
@@ -47,18 +50,24 @@ public enum enum_BPERESI_FIELDS {
 };
 ```
 
-## <a name="members"></a>Miembros
-PERESI_BPRESLOCATION Initialize o usar el `bpResLocation` campo (ubicación de la resolución de punto de interrupción) de la [BP_ERROR_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-error-resolution-info.md) estructura.
+## <a name="fields"></a>Campos
+`PERESI_BPRESLOCATION`\
+Inicializar o usar el `bpResLocation` campo (ubicación de la resolución de punto de interrupción) de la [BP_ERROR_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-error-resolution-info.md) estructura.
 
-BPERESI_PROGRAM Initialize o usar el `pProgram` campo de la `BP_ERROR_RESOLUTION_INFO` estructura.
+`BPERESI_PROGRAM`\
+Inicializar o usar el `pProgram` campo de la `BP_ERROR_RESOLUTION_INFO` estructura.
 
-BPERESI_THREAD Initialize o usar el `pThread` campo de la `BP_ERROR_RESOLUTION_INFO` estructura.
+`BPERESI_THREAD`\
+Inicializar o usar el `pThread` campo de la `BP_ERROR_RESOLUTION_INFO` estructura.
 
-BPERESI_MESSAGE Initialize o usar el `bstrMessage` campo de la `BP_ERROR_RESOLUTION_INFO` estructura.
+`BPERESI_MESSAGE`\
+Inicializar o usar el `bstrMessage` campo de la `BP_ERROR_RESOLUTION_INFO` estructura.
 
-BPERESI_TYPE Initialize o usar el `dwType` campo (tipo de punto de interrupción) de la `BP_ERROR_RESOLUTION_INFO` estructura.
+`BPERESI_TYPE`\
+Inicializar o usar el `dwType` campo (tipo de punto de interrupción) de la `BP_ERROR_RESOLUTION_INFO` estructura.
 
-BPERESI_ALLFIELDS Initialize o usar todos los campos de la `BP_ERROR_RESOLUTION_INFO` estructura.
+`BPERESI_ALLFIELDS`\
+Inicializar o usar todos los campos de la `BP_ERROR_RESOLUTION_INFO` estructura.
 
 ## <a name="remarks"></a>Comentarios
 Pasado como parámetro a la [GetResolutionInfo](../../../extensibility/debugger/reference/idebugerrorbreakpointresolution2-getresolutioninfo.md) método para indicar qué campos de la [BP_ERROR_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-error-resolution-info.md) estructura deben inicializarse.

@@ -4,36 +4,37 @@ ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - text templates, escape sequences
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9c88c9c8769051724855d292bfefb56f69cb8dee
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 4e03f5eafc00b8431725ed06da10371a93692fb5
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60053174"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72662918"
 ---
-# <a name="using-escape-sequences-in-text-templates"></a>Usar secuencias de escape en las plantillas de texto
-Puede utilizar secuencias de escape en las plantillas de texto para generar etiquetas de plantilla de texto y (en C# solo código) para los caracteres de escape de control y entre comillas.
+# <a name="use-escape-sequences-in-text-templates"></a>Usar secuencias de escape en las plantillas de texto
 
- Para imprimir las etiquetas de apertura y cierre de un bloque de código estándar para el archivo de salida, escape las etiquetas como sigue:
+Puede usar secuencias de escape en las plantillas de texto para generar etiquetas de plantilla de C# texto y (solo en código) para caracteres de control de escape y Comillas.
+
+Para imprimir etiquetas de apertura y cierre para un bloque de código estándar en el archivo de salida, escape de las etiquetas como se indica a continuación:
 
 ```
 \<# ... \#>
 ```
 
- Puede hacer lo mismo con otras etiquetas de bloque de código y directiva de plantilla de texto.
+Puede hacer lo mismo con otras directivas de plantilla de texto y etiquetas de bloque de código.
 
- Si un bloque de texto incluye cadenas utilizadas para las etiquetas de plantilla de texto de escape, se pueden utilizar las secuencias de escape siguientes:
+Si un bloque de texto incluye cadenas usadas para escapar etiquetas de plantilla de texto, puede usar las siguientes secuencias de escape:
 
-- Si una etiqueta de plantilla de texto está precedida por un número par de escape (\\) caracteres de la plantilla del analizador se incluyen la mitad de los caracteres de escape y se incluyen la secuencia como una etiqueta de plantilla de texto. Por ejemplo, si hay cuatro caracteres de escape en la plantilla de texto, habrá dos "\\" caracteres en el archivo generado.
+- Si una etiqueta de plantilla de texto va precedida por un número par de caracteres de escape (\\), el analizador de la plantilla incluirá la mitad de los caracteres de escape e incluirá la secuencia como una etiqueta de plantilla de texto. Por ejemplo, si hay cuatro caracteres de escape en la plantilla de texto, habrá dos caracteres "\\" en el archivo generado.
 
-- Si la etiqueta de la plantilla de texto está precedida por un número impar de escape (\\) caracteres, el analizador de plantilla incluirá la mitad de la "\\" caracteres además de la propia etiqueta (\<# o #>). La etiqueta no se considera una etiqueta de plantilla de texto.
+- Si la etiqueta de la plantilla de texto está precedida por un número impar de caracteres de escape (\\), el analizador de la plantilla incluirá la mitad de los caracteres "\\" más la propia etiqueta (\< # o # >). La etiqueta no se considera una etiqueta de plantilla de texto.
 
-- Si un carácter de escape (\\) carácter aparece en cualquier parte de cualquier secuencia que no sea de escape que aplica un carácter de control o una oferta (solo en C#), el carácter se generarán directamente.
+- Si aparece un carácter de escape (\\) en cualquier otra secuencia distinta de la que escapa a un carácter de control o a una comilla (solo en C# ), el carácter se generará directamente.
 
 ## <a name="see-also"></a>Vea también
 

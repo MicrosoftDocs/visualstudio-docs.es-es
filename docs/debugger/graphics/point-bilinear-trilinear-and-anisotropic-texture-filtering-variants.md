@@ -1,5 +1,5 @@
 ---
-title: Puntual, bilineal, trilineal y anisotrópico de textura variantes de filtrado | Microsoft Docs
+title: Variantes de filtro de punto o bilineal/trilineal y anisotrópico de textura
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 57d14fc9-b5f7-45ee-9717-48086886742d
@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8229a407c6326d097dd1c1413f3692a3781b40aa
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.openlocfilehash: 314ec61da7ed61cc8bdd573e201d98a53862a32c
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56701347"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66262933"
 ---
 # <a name="point-bilinear-trilinear-and-anisotropic-texture-filtering-variants"></a>Variantes de filtrado puntual, bilineal, trilineal y anisotrópico de textura
 Reemplaza el modo de filtrado en las muestras de textura adecuadas.

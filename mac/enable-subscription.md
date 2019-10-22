@@ -1,16 +1,16 @@
 ---
-title: Habilitación de suscripción para Visual Studio para Mac
+title: Habilitación de la suscripción
 description: En este artículo se describe cómo usar la cuenta Microsoft para habilitar la suscripción y desbloquear las características de Visual Studio para Mac.
-author: conceptdev
-ms.author: crdun
-ms.date: 05/06/2018
+author: asb3993
+ms.author: amburns
+ms.date: 09/18/2019
 ms.assetid: 898DFEB8-5757-4CCE-8AD2-8BC7706F5855
-ms.openlocfilehash: ce205b13537ee74bedee599e46c6e6006d9ceb77
-ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
+ms.openlocfilehash: 563b512b9ecf0114a6795d2541a5e8e7f53414de
+ms.sourcegitcommit: ea182703e922c74725045afc251bcebac305068a
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "58856411"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71213678"
 ---
 # <a name="enable-subscription"></a>Habilitación de la suscripción
 
@@ -46,4 +46,4 @@ Si ha adquirido Visual Studio Enterprise 2019 para Mac para equipos sin conex
 
 ## <a name="see-also"></a>Vea también
 
-- [Inicio de sesión en Visual Studio (en Windows)](/visualstudio/ide/signing-in-to-visual-studio)
+- [Iniciar sesión en Visual Studio (en Windows)](/visualstudio/ide/signing-in-to-visual-studio)

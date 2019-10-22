@@ -2,7 +2,7 @@
 title: 'Tutorial: Introducción a Visual Basic'
 description: Aprenda a crear aplicaciones de consola de Visual Basic en Visual Studio mediante un procedimiento paso a paso.
 ms.custom: seodec18, get-started
-ms.date: 03/23/2019
+ms.date: 09/11/2019
 ms.technology: vs-ide-general
 ms.prod: visual-studio-windows
 ms.topic: tutorial
@@ -14,12 +14,12 @@ dev_langs:
 - vb
 ms.workload:
 - multiple
-ms.openlocfilehash: f394ea2775eede3424e4d6995a8e2065c5d986ef
-ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
+ms.openlocfilehash: eb0bbc0cdf7aff548053c813cdf1b29ed1fed080
+ms.sourcegitcommit: b60a00ac3165364ee0e53f7f6faef8e9fe59ec4a
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "58857598"
+ms.lasthandoff: 09/11/2019
+ms.locfileid: "70913306"
 ---
 # <a name="tutorial-get-started-with-visual-basic-in-visual-studio"></a>Tutorial: Introducción a Visual Basic en Visual Studio
 
@@ -27,13 +27,13 @@ En este tutorial para Visual Basic (VB), podrá usar Visual Studio para crear y 
 
 ::: moniker range="vs-2017"
 
-Si todavía no ha instalado Visual Studio, vaya a la página de [descargas de Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017) para instalarlo de forma gratuita.
+Si todavía no ha instalado Visual Studio, vaya a la página de [descargas de Visual Studio](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download) para instalarlo de forma gratuita.
 
 ::: moniker-end
 
 ::: moniker range="vs-2019"
 
-Si todavía no ha instalado Visual Studio, vaya a la página de [descargas de Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019) para instalarlo de forma gratuita.
+Si todavía no ha instalado Visual Studio, vaya a la página de [descargas de Visual Studio](https://visualstudio.microsoft.com/downloads) para instalarlo de forma gratuita.
 
 ::: moniker-end
 
@@ -47,13 +47,13 @@ En primer lugar, se creará un proyecto de aplicación de Visual Basic. En el ti
 
 2. En la barra de menús superior, elija **Archivo** > **Nuevo** > **Proyecto**.
 
-3. En el panel de la izquierda del cuadro de diálogo **Nuevo proyecto**, expanda **Visual Basic** y seleccione **.NET Core**. En el panel central, elija **Aplicación de consola (.NET Core)**. Después, asigne el nombre *HelloWorld* al archivo.
+3. En el panel de la izquierda del cuadro de diálogo **Nuevo proyecto**, expanda **Visual Basic** y seleccione **.NET Core**. En el panel central, elija **Aplicación de consola (.NET Core)** . Luego, asigne el nombre *WhatIsYourName* al proyecto.
 
    ![Plantilla de proyecto Aplicación de consola (.NET Core) en el cuadro de diálogo Nuevo proyecto en el IDE de Visual Studio](media/new-project-vb-dotnetcore-whatisyourname-console-app.png)
 
 ### <a name="add-a-workload-optional"></a>Agregar una carga de trabajo (opcional)
 
-Si no ve la plantilla de proyecto **Aplicación de consola (.NET Core)**, puede obtenerla si agrega la carga de trabajo **Desarrollo multiplataforma de .NET Core**. Puede agregar esta carga de trabajo de una de las dos formas siguientes, según las actualizaciones de Visual Studio 2017 que estén instaladas en el equipo.
+Si no ve la plantilla de proyecto **Aplicación de consola (.NET Core)** , puede obtenerla si agrega la carga de trabajo **Desarrollo multiplataforma de .NET Core**. Puede agregar esta carga de trabajo de una de las dos formas siguientes, según las actualizaciones de Visual Studio 2017 que estén instaladas en el equipo.
 
 #### <a name="option-1-use-the-new-project-dialog-box"></a>Opción 1: Uso del cuadro de diálogo Nuevo proyecto
 
@@ -91,7 +91,7 @@ Si no ve la plantilla de proyecto **Aplicación de consola (.NET Core)**, puede 
    ![Elija la plantilla Visual Basic para la Aplicación de consola (.NET Framework).](./media/vs-2019/vb-create-new-project-search-console-net-core-filtered.png)
 
    > [!NOTE]
-   > Si no ve la plantilla **Aplicación de consola (.NET Core)**, puede instalarla desde la ventana **Crear un proyecto**. En el mensaje **¿No encuentra lo que busca?**, elija el vínculo **Instalar más herramientas y características**.
+   > Si no ve la plantilla **Aplicación de consola (.NET Core)** , puede instalarla desde la ventana **Crear un proyecto**. En el mensaje **¿No encuentra lo que busca?** , elija el vínculo **Instalar más herramientas y características**.
    >
    > ![Vínculo "Instalar más herramientas y características" del mensaje "¿No encuentra lo que busca?" que aparece en la ventana "Crear proyecto"](../../get-started/media/vs-2019/not-finding-what-looking-for.png) 
    > 
@@ -171,7 +171,7 @@ Vamos a crear una aplicación que le solicita el nombre y, después, lo muestra 
 
 1. Abra Visual Studio 2017 y, en la barra de menús superior, seleccione **Archivo**>**Nuevo**>**Proyecto**.
 
-1. En el panel de la izquierda del cuadro de diálogo **Nuevo proyecto**, expanda **Visual Basic** y seleccione **.NET Core**. En el panel central, elija **Aplicación de consola (.NET Core)**. Después, asigne el nombre *CalculateThis* al archivo.
+1. En el panel de la izquierda del cuadro de diálogo **Nuevo proyecto**, expanda **Visual Basic** y seleccione **.NET Core**. En el panel central, elija **Aplicación de consola (.NET Core)** . Después, asigne el nombre *CalculateThis* al archivo.
 
 1. Escriba el código siguiente entre las líneas `Module Program` y `End Module`:
 
@@ -262,10 +262,10 @@ Una aplicación de consola toma la entrada y muestra la salida en una ventana de
 Enhorabuena por completar este tutorial. Para más información, continúe con el tutorial siguiente.
 
 > [!div class="nextstepaction"]
-> [Creación de una biblioteca con Visual Basic y el SDK de .NET Core en Visual Studio](/dotnet/core/tutorials/vb-library-with-visual-studio)
+> [Creación de una biblioteca con Visual Basic y el SDK de .NET Core en Visual Studio](/dotnet/core/tutorials/vb-library-with-visual-studio)
 
 ## <a name="see-also"></a>Vea también
 
-* [Tutoriales sobre el lenguaje Visual Basic](/dotnet/visual-basic/walkthroughs)
-* [Referencia del lenguaje Visual Basic](/dotnet/visual-basic/language-reference/index)
+* [Tutoriales del lenguaje Visual Basic](/dotnet/visual-basic/walkthroughs)
+* [Referencia del lenguaje Visual Basic](/dotnet/visual-basic/language-reference/index)
 * [Archivos de código de IntelliSense para Visual Basic](../../ide/visual-basic-specific-intellisense.md)

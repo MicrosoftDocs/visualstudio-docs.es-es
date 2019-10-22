@@ -1,5 +1,5 @@
 ---
-title: Procedimiento Seleccionar mediante programación las hojas de cálculo
+title: Procedimiento Seleccionar hojas de cálculo mediante programación
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -13,22 +13,22 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 0b56df406049f3f4076f6e4d1efebcf0eb2abb18
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 20ebc8fea14b3dc52c802543f97318ec7fae7529
+ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60081416"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71255627"
 ---
-# <a name="how-to-programmatically-select-worksheets"></a>Procedimiento Seleccionar mediante programación las hojas de cálculo
+# <a name="how-to-programmatically-select-worksheets"></a>Procedimiento Seleccionar hojas de cálculo mediante programación
   El método <xref:Microsoft.Office.Tools.Excel.Worksheet.Select%2A> selecciona el objeto especificado, que mueve la selección del usuario al nuevo objeto. Use el método <xref:Microsoft.Office.Tools.Excel.Worksheet.Activate%2A> si desea llevar el foco al objeto sin cambiar la selección del usuario.
 
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]
 
- Si desea seleccionar una hoja de cálculo existente en un complemento de VSTO o si se ha creado la hoja de cálculo en tiempo de ejecución en una personalización de nivel de documento, debe tener acceso a él mediante el uso de Excel <xref:Microsoft.Office.Interop.Excel.Sheets> colección del libro de Excel; en caso contrario, puede tener acceso a la <xref:Microsoft.Office.Tools.Excel.Worksheet>directamente el elemento de host.
+ Si desea seleccionar una hoja de cálculo existente en un complemento de VSTO o si la hoja de cálculo se creó en tiempo de ejecución en una personalización de nivel de documento, debe acceder a dicha hoja de cálculo mediante la colección <xref:Microsoft.Office.Interop.Excel.Sheets> de Excel del libro de Excel; en caso contrario, puede acceder al elemento de host <xref:Microsoft.Office.Tools.Excel.Worksheet> directamente.
 
-## <a name="use-the-worksheet-host-item"></a>Utilice el elemento host worksheet
- En una personalización de nivel de documento, agregue el código siguiente al *Sheet1.vb* o *Sheet1.cs*.
+## <a name="use-the-worksheet-host-item"></a>Usar el elemento host Worksheet
+ En una personalización de nivel de documento, agregue el código siguiente a *Sheet1. VB* o *Sheet1.CS*.
 
 ### <a name="to-select-the-first-worksheet-in-a-workbook-using-a-host-item"></a>Para seleccionar la primera hoja de cálculo en un libro usando un elemento host
 
@@ -49,12 +49,12 @@ ms.locfileid: "60081416"
 
 ## <a name="see-also"></a>Vea también
 - [Trabajar con hojas de cálculo](../vsto/working-with-worksheets.md)
-- [Cómo: Imprimir mediante programación las hojas de cálculo](../vsto/how-to-programmatically-print-worksheets.md)
+- [Cómo: Imprimir hojas de cálculo mediante programación](../vsto/how-to-programmatically-print-worksheets.md)
 - [Cómo: Eliminar hojas de cálculo de libros mediante programación](../vsto/how-to-programmatically-delete-worksheets-from-workbooks.md)
-- [Cómo: Ocultar mediante programación las hojas de cálculo](../vsto/how-to-programmatically-hide-worksheets.md)
-- [Cómo: Proteger mediante programación las hojas de cálculo](../vsto/how-to-programmatically-protect-worksheets.md)
-- [Elemento host Worksheet](../vsto/worksheet-host-item.md)
-- [Acceso global a objetos en los proyectos de Office](../vsto/global-access-to-objects-in-office-projects.md)
-- [Limitaciones de programación de elementos host y controles host](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)
+- [Cómo: Ocultar hojas de cálculo mediante programación](../vsto/how-to-programmatically-hide-worksheets.md)
+- [Cómo: Proteger las hojas de cálculo mediante programación](../vsto/how-to-programmatically-protect-worksheets.md)
+- [Elemento host de hoja de cálculo](../vsto/worksheet-host-item.md)
+- [Acceso global a objetos en proyectos de Office](../vsto/global-access-to-objects-in-office-projects.md)
+- [Limitaciones de programación de elementos y controles host](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)
 - [Parámetros opcionales en las soluciones de Office](../vsto/optional-parameters-in-office-solutions.md)
-- [Elementos host y la información general sobre controles de host](../vsto/host-items-and-host-controls-overview.md)
+- [Información general sobre elementos y controles host](../vsto/host-items-and-host-controls-overview.md)

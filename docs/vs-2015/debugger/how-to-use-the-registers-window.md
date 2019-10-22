@@ -27,12 +27,12 @@ caps.latest.revision: 42
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: f622440c5bd0f0d09967eff56479459a4a3bfbb0
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 233092af638824c462a6d9a47865a1c6f5fd9397
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60042880"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65697466"
 ---
 # <a name="how-to-use-the-registers-window"></a>Procedimiento Utilice la ventana registros
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -46,7 +46,7 @@ La ventana registros sólo está disponible si la depuración de nivel de direcc
  Para obtener una introducción de alto nivel conceptos relacionados con los registros y la ventana registros, vea [Fundamentos de depuración: Ventana registros](../debugger/debugging-basics-registers-window.md).  
   
 > [!NOTE]
->  Los cuadros de diálogo y comandos de menú que se ven pueden diferir de los descritos en la Ayuda, en función de los valores de configuración o de edición activos. Para cambiar la configuración, elija la opción **Importar y exportar configuraciones** del menú **Herramientas** . Para obtener más información, consulte [Personalizar la configuración de desarrollo en Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+> Los cuadros de diálogo y comandos de menú que se ven pueden diferir de los descritos en la Ayuda, en función de los valores de configuración o de edición activos. Para cambiar la configuración, elija la opción **Importar y exportar configuraciones** del menú **Herramientas** . Para obtener más información, consulte [Personalizar la configuración de desarrollo en Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
 ### <a name="to-display-the-registers-window"></a>Para mostrar la ventana Registros  
   
@@ -55,7 +55,7 @@ La ventana registros sólo está disponible si la depuración de nivel de direcc
      El depurador debe encontrarse en modo de interrupción.  
   
     > [!NOTE]
-    >  La información de los registros no está disponible para las aplicaciones de script o SQL.  
+    > La información de los registros no está disponible para las aplicaciones de script o SQL.  
   
 ## <a name="see-also"></a>Vea también  
  [Fundamentos de la depuración: Ventana registros](../debugger/debugging-basics-registers-window.md)   

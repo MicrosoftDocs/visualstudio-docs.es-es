@@ -1,6 +1,6 @@
 ---
 title: Procedimiento Insertar texto en documentos de Word mediante programación
-ms.date: 02/02/2017
+ms.date: 08/14/2019
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: a24fde5f04a88de7eec34836df38bc1cca8669ab
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 8ff5e0314e9834bd3d0f048bc82780d7e4af073d
+ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60060638"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "69551806"
 ---
 # <a name="how-to-programmatically-insert-text-into-word-documents"></a>Procedimiento Insertar texto en documentos de Word mediante programación
   Existen tres maneras principales de insertar texto en documentos de Microsoft Office Word:
@@ -33,9 +33,11 @@ ms.locfileid: "60060638"
 - Usar el método <xref:Microsoft.Office.Interop.Word.Selection.TypeText%2A> de un objeto <xref:Microsoft.Office.Interop.Word.Selection> para insertar texto en el cursor o la selección.
 
 > [!NOTE]
->  También puede insertar texto en controles de contenido y marcadores. Para obtener más información, consulte [controles de contenido](../vsto/content-controls.md) y [Bookmark (control)](../vsto/bookmark-control.md).
+> También puede insertar texto en controles de contenido y marcadores. Para obtener más información, vea [controles de contenido](../vsto/content-controls.md) y control de [marcador](../vsto/bookmark-control.md).
 
  [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]
+
+[!include[Add-ins note](includes/addinsnote.md)]
 
 ## <a name="insert-text-in-a-range"></a>Insertar texto en un intervalo
  Use la propiedad <xref:Microsoft.Office.Interop.Word.Range.Text%2A> de un objeto <xref:Microsoft.Office.Interop.Word.Range> para insertar texto en un documento.
@@ -118,7 +120,7 @@ ms.locfileid: "60060638"
     [!code-vb[Trin_VstcoreWordAutomation#61](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#61)]
     [!code-csharp[Trin_VstcoreWordAutomation#61](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#61)]
 
-   También puede usar el <xref:Microsoft.Office.Interop.Word.Selection.TypeBackspace%2A> método de la <xref:Microsoft.Office.Interop.Word.Selection> objeto, que imita la funcionalidad de la **retroceso** en el teclado. Sin embargo, cuando se trata de insertar y manipular texto, el objeto <xref:Microsoft.Office.Interop.Word.Range> ofrece un mayor control.
+   También puede utilizar el <xref:Microsoft.Office.Interop.Word.Selection.TypeBackspace%2A> método <xref:Microsoft.Office.Interop.Word.Selection> del objeto, que imita la funcionalidad de la tecla **retroceso** del teclado. Sin embargo, cuando se trata de insertar y manipular texto, el objeto <xref:Microsoft.Office.Interop.Word.Range> ofrece un mayor control.
 
    El ejemplo siguiente muestra el código completo: Para usar este ejemplo, ejecute el código desde la clase `ThisDocument` o `ThisAddIn` del proyecto.
 
@@ -126,6 +128,6 @@ ms.locfileid: "60060638"
    [!code-csharp[Trin_VstcoreWordAutomation#56](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#56)]
 
 ## <a name="see-also"></a>Vea también
-- [Cómo: Dar formato al texto mediante programación en documentos](../vsto/how-to-programmatically-format-text-in-documents.md)
-- [Cómo: Definir y seleccionar rangos en documentos mediante programación](../vsto/how-to-programmatically-define-and-select-ranges-in-documents.md)
-- [Cómo: Mediante programación ampliar intervalos en documentos](../vsto/how-to-programmatically-extend-ranges-in-documents.md)
+- [Cómo: Dar formato al texto en documentos mediante programación](../vsto/how-to-programmatically-format-text-in-documents.md)
+- [Procedimientos: Definir y seleccionar intervalos en documentos mediante programación](../vsto/how-to-programmatically-define-and-select-ranges-in-documents.md)
+- [Cómo: Ampliar intervalos en documentos mediante programación](../vsto/how-to-programmatically-extend-ranges-in-documents.md)

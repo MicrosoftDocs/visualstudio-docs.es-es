@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugDocument2::GetDocumentClassID
 ms.assetid: 111c2b85-ebfa-487f-b896-2ec4a3eac4d1
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9e969d7c6f17aeaa8642b9988e741318ec1591d6
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 51a4ed842a2f65f37abf6f83ac70d6ce03b9a2e8
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56691259"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66310284"
 ---
 # <a name="idebugdocument2getdocumentclassid"></a>IDebugDocument2::GetDocumentClassID
 Obtiene el identificador de clase del documento.
@@ -36,10 +39,8 @@ int GetDocumentClassID( 
 );
 ```
 
-#### <a name="parameters"></a>Parámetros
- `pclsid`
-
- [out] Devuelve un GUID que es el identificador de clase del documento.
+## <a name="parameters"></a>Parámetros
+`pclsid` [out] Devuelve un GUID que es el identificador de clase del documento.
 
 ## <a name="return-value"></a>Valor devuelto
  Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.

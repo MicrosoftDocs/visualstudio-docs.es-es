@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a442ed4a81cac312c675d9dd6d83a8901e939f15
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 707d63d3ae5fb487f6232321a1d9d3128d379e06
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60093987"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "64816537"
 ---
 # <a name="0x2x4x-msaa-variants"></a>0x/2x/4x MSAA (Variantes)
 Reemplaza el suavizado de contorno de muestras múltiples (MSAA) en todos los objetivos de presentación y cadenas de intercambio.
@@ -26,7 +26,7 @@ Reemplaza el suavizado de contorno de muestras múltiples (MSAA) en todos los ob
  Si la aplicación todavía no tiene MSAA habilitado, las variantes 2x MSAA y 4x MSAA indican el coste de rendimiento relativo de habilitarlas en su aplicación. Cuando el coste es aceptablemente bajo, considere activar MSAA para aumentar la calidad de la imagen en su aplicación.
 
 > [!NOTE]
->  Es posible que su hardware no sea compatible totalmente con MSAA para todos los formatos. Si alguna de estas variantes encuentra una limitación de hardware que no puede solucionarse, su columna en la tabla de resumen del rendimiento estará en blanco y se producirá un mensaje de error.
+> Es posible que su hardware no sea compatible totalmente con MSAA para todos los formatos. Si alguna de estas variantes encuentra una limitación de hardware que no puede solucionarse, su columna en la tabla de resumen del rendimiento estará en blanco y se producirá un mensaje de error.
 
 ## <a name="remarks"></a>Comentarios
  Estas variantes reemplazan el recuento de muestra y los argumentos de calidad de la muestra en llamadas a `ID3DDevice::CreateTexture2D` que crean objetivos de presentación. En concreto, estos parámetros se sustituyen cuando:

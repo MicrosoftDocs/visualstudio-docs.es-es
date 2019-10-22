@@ -15,11 +15,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: f60c95418379399196c461e055645ae7c85a473e
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56597665"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62967401"
 ---
 # <a name="extend-sharepoint-project-items"></a>Extender elementos de proyecto de SharePoint
   Crear una extensión de elemento de proyecto cuando desea agregar funcionalidad a un tipo de elemento de proyecto de SharePoint que ya está instalada en Visual Studio. Por ejemplo, puede crear una extensión para integrado **receptor de eventos** o **definición de lista** los elementos de proyecto de Visual Studio, o puede crear una extensión para un tipo de elemento de proyecto personalizado. También puede crear una extensión para todos los tipos de elementos de proyecto de SharePoint.
@@ -43,7 +43,7 @@ ms.locfileid: "56597665"
 ## <a name="identifiers-for-sharepoint-project-items"></a>Identificadores para los elementos de proyecto de SharePoint
  Cada elemento de proyecto de SharePoint tiene un identificador de cadena correspondiente. Debe conocer el identificador para un elemento de proyecto si desea realizar las siguientes tareas:
 
-- Crear una extensión para el elemento de proyecto. En este caso, debe pasar el identificador del elemento de proyecto que desee extender al constructor de la <xref:Microsoft.VisualStudio.SharePoint.SharePointProjectItemTypeAttribute>. Para crear una extensión para todos los tipos de proyecto elemento, pase el **\\*** valor de cadena.
+- Crear una extensión para el elemento de proyecto. En este caso, debe pasar el identificador del elemento de proyecto que desee extender al constructor de la <xref:Microsoft.VisualStudio.SharePoint.SharePointProjectItemTypeAttribute>. Para crear una extensión para todos los tipos de proyecto elemento, pase el **\\** * valor de cadena.
 
 - Agregar el elemento de proyecto a un proyecto mediante programación. En este caso, debe pasar el identificador del elemento de proyecto para el <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemCollection.Add%2A> método.
 

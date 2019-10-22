@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: abc713af4c5d4ae30dda3e694a88227686dfcb50
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.openlocfilehash: b502d1504c5a61ed073ed77eed76dd5f7c139a35
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56644554"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "64784355"
 ---
 # <a name="idiasymbolgetmsil"></a>IDiaSymbol::get_msil
 Recupera una marca que especifica si el símbolo se refiere al código de lenguaje intermedio de Microsoft (MSIL).
@@ -39,7 +39,7 @@ HRESULT get_msil ( 
  Si es correcto, devuelve `S_OK`; en caso contrario, devuelve `S_FALSE` o un código de error.
 
 > [!NOTE]
->  Un valor devuelto de `S_FALSE` significa que la propiedad no está disponible para el símbolo.
+> Un valor devuelto de `S_FALSE` significa que la propiedad no está disponible para el símbolo.
 
 ## <a name="see-also"></a>Vea también
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

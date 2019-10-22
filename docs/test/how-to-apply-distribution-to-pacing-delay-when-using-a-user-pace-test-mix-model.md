@@ -9,13 +9,13 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: d3ef8ecfefd1d614570b4d73808d3e5736d77230
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55932565"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62979346"
 ---
-# <a name="how-to-apply-distribution-to-pacing-delay-for-a-user-pace-test-mix-model"></a>Filtrar Aplicar distribución a intervalo de velocidad en un modelo de combinación de pruebas basado en el ritmo del usuario
+# <a name="how-to-apply-distribution-to-pacing-delay-for-a-user-pace-test-mix-model"></a>Procedimiento Aplicar distribución a intervalo de velocidad en un modelo de combinación de pruebas basado en el ritmo del usuario
 
 Después de crear la prueba de carga con el **Asistente para prueba de carga nueva**, puede usar el Editor de pruebas de carga para cambiar las propiedades de los escenarios de modo que satisfagan las necesidades y los objetivos de la prueba.
 

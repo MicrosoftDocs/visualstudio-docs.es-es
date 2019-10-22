@@ -1,5 +1,5 @@
 ---
-title: IDispatchEx::GetMemberProperties | Documentos de Microsoft
+title: 'IDispatchEx:: GetMemberProperties | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,12 +17,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f607e06fe3c898a6839c0bbd2d51edee1f0ffb2c
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 8016eef7b6e0da9b9fc88695db845cba7f608ff3
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58160737"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72574097"
 ---
 # <a name="idispatchexgetmemberproperties"></a>IDispatchEx::GetMemberProperties
 Recupera las propiedades de un miembro.  
@@ -39,10 +39,10 @@ HRESULT GetMemberProperties(
   
 #### <a name="parameters"></a>Parámetros  
  `id`  
- Identifica el miembro. Usa `GetDispID` o `GetNextDispID` para obtener el identificador de envío.  
+ Identifica el miembro. Utiliza `GetDispID` o `GetNextDispID` para obtener el identificador de envío.  
   
  `grfdexFetch`  
- Determina qué propiedades se deben recuperar. Esto puede ser una combinación de los valores enumerados en `pgrfdex` o una combinación de los siguientes valores:  
+ Determina las propiedades que se van a recuperar. Puede ser una combinación de los valores enumerados en `pgrfdex` y/o una combinación de los siguientes valores:  
   
 |Valor|Significado|  
 |-----------|-------------|  
@@ -52,32 +52,32 @@ HRESULT GetMemberProperties(
 |grfdexPropAll|Combina grfdexPropCanAll, grfdexPropCannotAll y grfdexPropExtraAll.|  
   
  `pgrfdex`  
- Dirección de un `DWORD` que recibe las propiedades solicitadas. Esto puede ser una combinación de los siguientes valores:  
+ Dirección de un `DWORD` que recibe las propiedades solicitadas. Puede ser una combinación de los siguientes valores:  
   
 |Valor|Significado|  
 |-----------|-------------|  
-|fdexPropCanGet|El miembro puede obtenerse mediante DISPATCH_PROPERTYGET.|  
-|fdexPropCannotGet|El miembro no se puede obtener mediante DISPATCH_PROPERTYGET.|  
-|fdexPropCanPut|El miembro puede establecerse utilizando DISPATCH_PROPERTYPUT.|  
-|fdexPropCannotPut|El miembro no se puede establecer mediante DISPATCH_PROPERTYPUT.|  
-|fdexPropCanPutRef|El miembro puede establecerse utilizando DISPATCH_PROPERTYPUTREF.|  
-|fdexPropCannotPutRef|El miembro no se puede establecer mediante DISPATCH_PROPERTYPUTREF.|  
-|fdexPropNoSideEffects|El miembro no tiene efectos secundarios. Por ejemplo, un depurador puede con seguridad get/set/llamada este miembro sin cambiar el estado de la secuencia de comandos que se está depurando.|  
+|fdexPropCanGet|El miembro se puede obtener mediante DISPATCH_PROPERTYGET.|  
+|fdexPropCannotGet|No se puede obtener el miembro mediante DISPATCH_PROPERTYGET.|  
+|fdexPropCanPut|El miembro se puede establecer mediante DISPATCH_PROPERTYPUT.|  
+|fdexPropCannotPut|No se puede establecer el miembro mediante DISPATCH_PROPERTYPUT.|  
+|fdexPropCanPutRef|El miembro se puede establecer mediante DISPATCH_PROPERTYPUTREF.|  
+|fdexPropCannotPutRef|No se puede establecer el miembro mediante DISPATCH_PROPERTYPUTREF.|  
+|fdexPropNoSideEffects|El miembro no tiene efectos secundarios. Por ejemplo, un depurador podría obtener o establecer de forma segura este miembro sin cambiar el estado del script que se está depurando.|  
 |fdexPropDynamicType|El miembro es dinámico y puede cambiar durante la vigencia del objeto.|  
-|fdexPropCanCall|El miembro se puede llamar a un método mediante DISPATCH_METHOD.|  
-|fdexPropCannotCall|No se puede llamar al miembro como un método mediante DISPATCH_METHOD.|  
-|fdexPropCanConstruct|El miembro se puede llamar a un constructor con DISPATCH_CONSTRUCT.|  
-|fdexPropCannotConstruct|No se puede llamar al miembro como un constructor con DISPATCH_CONSTRUCT.|  
-|fdexPropCanSourceEvents|El miembro puede desencadenar eventos.|  
-|fdexPropCannotSourceEvents|El miembro no puede desencadenar eventos.|  
+|fdexPropCanCall|Se puede llamar al miembro como un método mediante DISPATCH_METHOD.|  
+|fdexPropCannotCall|No se puede llamar al miembro como método mediante DISPATCH_METHOD.|  
+|fdexPropCanConstruct|Se puede llamar al miembro como un constructor mediante DISPATCH_CONSTRUCT.|  
+|fdexPropCannotConstruct|No se puede llamar al miembro como un constructor mediante DISPATCH_CONSTRUCT.|  
+|fdexPropCanSourceEvents|El miembro puede activar eventos.|  
+|fdexPropCannotSourceEvents|El miembro no puede activar eventos.|  
   
 ## <a name="return-value"></a>Valor devuelto  
- Devuelve uno de los siguientes valores:  
+ Devuelve uno de los valores siguientes:  
   
 |||  
 |-|-|  
 |`S_OK`|Correcto.|  
-|`DISP_E_UNKNOWNNAME`|No se conoce el nombre.|  
+|`DISP_E_UNKNOWNNAME`|No se conocía el nombre.|  
   
 ## <a name="example"></a>Ejemplo  
   
@@ -97,6 +97,6 @@ BSTR bstrName;
 ```  
   
 ## <a name="see-also"></a>Vea también  
- [IDispatchEx (interfaz)](../../winscript/reference/idispatchex-interface.md)   
- [IDispatchEx::GetDispID](../../winscript/reference/idispatchex-getdispid.md)   
+ [IDispatchEx (interfaz](../../winscript/reference/idispatchex-interface.md) )    
+ [IDispatchEx:: GetDispID](../../winscript/reference/idispatchex-getdispid.md)    
  [IDispatchEx::GetNextDispID](../../winscript/reference/idispatchex-getnextdispid.md)

@@ -14,11 +14,11 @@ caps.latest.revision: 17
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: ab4389c936b71ba8ccbb21b22d0a5e533282026d
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60067448"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68156001"
 ---
 # <a name="test-area-3-check-outundo-checkout"></a>Área de prueba 3: Desproteger o deshacer desprotección
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -56,7 +56,7 @@ Esta área de prueba de complemento de control de código fuente trata los eleme
 ### <a name="case-3a-check-out"></a>Case 3a: Desproteger  
  En esta sección se centra en la operación del comando de desprotección.  
   
-|Acción|Pasos de prueba|Resultados esperados para comprobar|  
+|.|Pasos de prueba|Resultados esperados para comprobar|  
 |------------|----------------|--------------------------------|  
 |Comprobar salida exclusivo (COE) un proyecto de cliente|1.  Cree un proyecto de cliente.<br />2.  Agregue la solución al control de código fuente.<br />3.  Desproteger todo el proyecto en modo exclusivo (**archivo**, **desproteger**).|Se produce desprotección.|  
 |Desproteger en exclusiva (COE) un sistema de archivos o un proyecto Web de IIS local|1.  Establecer la conexión de servidor Web en el archivo de recurso compartido en **herramientas**, **opciones**, **proyectos**, **configuración Web**.<br />2.  Cree un proyecto web.<br />3.  Agregue la solución al control de código fuente.<br />4.  Desproteger todo el proyecto en modo exclusivo (**archivo**, **Control de código fuente**, **desproteger**).|Se produce desprotección.|  
@@ -78,7 +78,7 @@ Esta área de prueba de complemento de control de código fuente trata los eleme
   
 - **Compartido desproteger** comando funciona.  
   
-|Acción|Pasos de prueba|Resultados esperados para comprobar|  
+|.|Pasos de prueba|Resultados esperados para comprobar|  
 |------------|----------------|--------------------------------|  
 |Mientras está desconectado, desproteger un archivo y luego conectarse para la sincronización|1.  Desconectar un proyecto controlado mediante el cuadro de diálogo Cambiar Control de código (**archivo**, **Control de código fuente**, **Cambiar control de código fuente**l).<br />2.  Desproteger un archivo.<br />3.  Haga clic en Desproteger (sin conexión) en el cuadro de diálogo de advertencia.<br />4.  Edite el archivo.<br />5.  Conectarse mediante el cuadro de diálogo Cambiar Control de código fuente.<br />6.  Obtener la versión más reciente del archivo modificado.|Comportamiento esperado comunes|  
   
@@ -95,7 +95,7 @@ Esta área de prueba de complemento de control de código fuente trata los eleme
   
 - La copia local de la carpeta o archivo de destino es grabable.  
   
-|Acción|Pasos de prueba|Resultados esperados para comprobar|  
+|.|Pasos de prueba|Resultados esperados para comprobar|  
 |------------|----------------|--------------------------------|  
 |Editar el archivo de texto que está protegido|1.  Cree un nuevo proyecto que contiene un archivo de texto.<br />2.  Agregue la solución al control de código fuente.<br />3.  Establecer **herramientas**, **opciones**, **Control de código fuente**, **permitir que los archivos se puede editar mientras de solo lectura en disco** a desactivada.<br />4.  Establecer **herramientas**, **opciones**, **Control de código fuente**, **Preguntar para desproteger** en el **cuando está activada los archivos soneditado** cuadro combinado.<br />5.  Establecer **herramientas**, **opciones**, **Control de código fuente**, **Preguntar para desproteger** en el **cuando está activada los archivos se guardan** cuadro combinado.<br />6.  Abra el archivo de texto en el editor, intentar escribir texto nuevo en el archivo. Si este paso se realiza correctamente, vaya al paso siguiente.<br />7.  Haga clic en **cancelar** en el **desproteger para editar** cuadro de diálogo. Si este paso se realiza correctamente, vaya al paso siguiente.<br />8.  Establecer **herramientas**, **opciones**, **Control de código fuente**, **permitir que los archivos se puede editar mientras de solo lectura en disco** a activado.<br />9. Abra el archivo de proyecto en el editor, intentar escribir texto nuevo en el archivo. Si este paso se realiza correctamente, vaya al paso siguiente.<br />10. Haga clic en **editar** en el **desproteger para editar** cuadro de diálogo. Si este paso se realiza correctamente, vaya al paso siguiente.<br />11. Edite el archivo de texto e intentar guardarlo.|`Result of step 6:`<br /><br /> Desproteger para aparece el cuadro de diálogo de edición.<br /><br /> `Result of step 7:`<br /><br /> No se modifica el archivo.<br /><br /> `Result of step 9:`<br /><br /> Desproteger para aparece el cuadro de diálogo de edición.<br /><br /> `Result of step 10:`<br /><br /> Puede editar el archivo de proyecto en la memoria.<br /><br /> `Result of step 11:`<br /><br /> En Guardar, aparece la desprotección en cuadro de diálogo Guardar.|  
 |Editar un archivo de solución que está protegido|Repita los pasos tal como se describe en el anterior de prueba, pero en lugar de modificar un archivo de texto, modificar la solución cambiando las propiedades de la solución.|Igual que la prueba anterior|  
@@ -114,7 +114,7 @@ Esta área de prueba de complemento de control de código fuente trata los eleme
   
 - La copia local de la carpeta o archivo de destino es grabable.  
   
-|Acción|Pasos de prueba|Resultados esperados para comprobar|  
+|.|Pasos de prueba|Resultados esperados para comprobar|  
 |------------|----------------|--------------------------------|  
 |Retirada silenciosa para un archivo|1.  Establecer **herramientas**, **opciones**, **Control de código fuente** a **extraer archivos automáticamente en Editar**.<br />2.  Cree un nuevo proyecto con un archivo.<br />3.  Agregue la solución al control de código fuente.<br />4.  Desproteger el archivo.|Archivo se desprotege de forma silenciosa (sin interfaz de usuario).|  
 |Retirada silenciosa para un proyecto|1.  Establecer **herramientas**, **opciones**, **Control de código fuente** a **extraer archivos automáticamente en Editar**.<br />2.  Cree un nuevo proyecto.<br />3.  Agregue la solución al control de código fuente.<br />4.  Extraer del repositorio el proyecto.|Archivo se desprotege de forma silenciosa (sin interfaz de usuario).|  
@@ -128,7 +128,7 @@ Esta área de prueba de complemento de control de código fuente trata los eleme
   
 - Tras la aceptación de la fase de reversión, los iconos de **el Explorador de soluciones** se actualizan para afectados los archivos y el elemento se quita de la **protecciones pendientes** ventana.  
   
-|Acción|Pasos de prueba|Resultados esperados para comprobar|  
+|.|Pasos de prueba|Resultados esperados para comprobar|  
 |------------|----------------|--------------------------------|  
 |Deshacer desprotección de un único archivo que está desprotegido en exclusiva|1.  Cree un proyecto de cliente.<br />2.  Agregue la solución al control de código fuente.<br />3.  Desproteger un archivo de forma exclusiva.<br />4.  Modifique el archivo.<br />5.  Deshacer desprotección (**archivo**, **Control de código fuente**, **Deshacer desprotección**).|Comportamiento esperado común.|  
 |Deshacer desprotección de un único archivo que está desprotegido compartido|1.  Cree un proyecto de cliente.<br />2.  Agregue la solución al control de código fuente.<br />3.  Desproteger un archivo compartido.<br />4.  Modifique el archivo.<br />5.  Deshacer desprotección (**archivo**, **Control de código fuente**, **Deshacer desprotección**).|Comportamiento esperado común.|  

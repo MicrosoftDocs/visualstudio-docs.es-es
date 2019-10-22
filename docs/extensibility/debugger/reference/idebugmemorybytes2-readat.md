@@ -8,17 +8,20 @@ helpviewer_keywords:
 - IDebugMemoryBytes2::ReadAt method
 - ReadAt method
 ms.assetid: b413684d-4155-4bd4-ae30-ffa512243b5f
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f787ad06b4e7d612007b6448287b5062ae1b0efd
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: a1083239dbb00e5b953fe7a72c27a350ffe34cc2
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56718240"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66314301"
 ---
 # <a name="idebugmemorybytes2readat"></a>IDebugMemoryBytes2::ReadAt
 Lee una secuencia de bytes, empezando en una ubicación determinada.
@@ -45,26 +48,21 @@ int ReadAt(
 );
 ```
 
-#### <a name="parameters"></a>Parámetros
- `pStartContext`
+## <a name="parameters"></a>Parámetros
+`pStartContext`\
+[in] El [IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md) objeto que especifica dónde empezar a leer los bytes.
 
- [in] El [IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md) objeto que especifica dónde empezar a leer los bytes.
+`dwCount`\
+[in] El número de bytes que se leen. También especifica la longitud de la `rgbMemory` matriz.
 
- `dwCount`
+`rgbMemory`\
+[in, out] Matriz que se rellena con los bytes leídos realmente.
 
- [in] El número de bytes que se leen. También especifica la longitud de la `rgbMemory` matriz.
+`pdwRead`\
+[out] Devuelve el número de bytes contiguos leídos realmente.
 
- `rgbMemory`
-
- [in, out] Matriz que se rellena con los bytes leídos realmente.
-
- `pdwRead`
-
- [out] Devuelve el número de bytes contiguos leídos realmente.
-
- `pdwUnreadable`
-
- [in, out] Devuelve el número de bytes no se puede leer. Puede ser un valor null si el cliente no está interesado en el número de bytes no se puede leer.
+`pdwUnreadable`\
+[in, out] Devuelve el número de bytes no se puede leer. Puede ser un valor null si el cliente no está interesado en el número de bytes no se puede leer.
 
 ## <a name="return-value"></a>Valor devuelto
  Si se realiza correctamente, devuelve S_OK; en caso contrario, devuelve un código de error.

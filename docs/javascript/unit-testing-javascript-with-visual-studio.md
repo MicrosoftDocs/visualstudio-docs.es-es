@@ -11,12 +11,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 7ad0105cffc99894134dc58af7c71c9f95bceace
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: b1ef763295db7673896189ce000ed59d5da5becf
+ms.sourcegitcommit: a124076dfd6b4e5aecda4d01984fee7b0c034745
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54946703"
+ms.lasthandoff: 08/05/2019
+ms.locfileid: "68787975"
 ---
 # <a name="unit-testing-javascript-and-typescript-in-visual-studio"></a>Pruebas unitarias de JavaScript y TypeScript en Visual Studio
 
@@ -26,6 +26,7 @@ Los marcos admitidos son:
 * Mocha ([mochajs.org](http://mochajs.org/))
 * Jasmine ([Jasmine.github.io](https://jasmine.github.io/))
 * Tape ([github.com/substack/tape](https://github.com/substack/tape))
+* Jest ([jestjs.io](https://jestjs.io/))
 * Export Runner (este marco es específico de Herramientas de Node.js para Visual Studio)
 
 > [!WARNING]
@@ -164,5 +165,11 @@ Para habilitar esta opción, haga clic con el botón derecho en el nodo del proy
 
 Luego, agregue sus pruebas a la carpeta raíz de prueba que ha especificado y estarán disponibles para ejecutarse en la ventana Explorador de pruebas. Si no aparecen al principio, puede que tenga que recompilar el proyecto.
 
-> [!NOTE]
-> Actualmente, esto no funciona con proyectos de .NET Standard y .NET Core.
+### <a name="unit-test-net-core-and-net-standard"></a>Pruebas unitaria en .NET Core y .NET Standard
+Además de las propiedades mencionadas, también deberá instalar el paquete [Microsoft.JavaScript.UnitTest](https://www.nuget.org/packages/Microsoft.JavaScript.UnitTest/) de NuGet y establecer la propiedad:
+
+```xml
+<PropertyGroup>
+    <GenerateProgramFile>false</GenerateProgramFile>
+</PropertyGroup>
+```

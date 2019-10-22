@@ -13,14 +13,14 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cd3c5d9c1d17bd8a0dae4969c7203902747a8c8b
-ms.sourcegitcommit: b14b7a938a2aba9fcce4d5e813aadf2040b0dcda
+ms.openlocfilehash: c9cae68a0803b550d7184b0e06d6a043d76fa725
+ms.sourcegitcommit: ce1ab8a25c66a83e60eab80ed8e1596fe66dd85c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "58647159"
+ms.lasthandoff: 07/29/2019
+ms.locfileid: "68605470"
 ---
-# <a name="how-to-display-line-numbers-in-the-editor"></a>Procedimiento Visualización de los números de línea en el editor
+# <a name="how-to-display-line-numbers-in-the-editor"></a>Procedimientos para: Visualización de los números de línea en el editor
 
 Puede mostrar u ocultar la numeración de las líneas del código.
 
@@ -37,6 +37,4 @@ Puede mostrar u ocultar la numeración de las líneas del código.
 
 ## <a name="see-also"></a>Vea también
 
-- [Personalizar el editor](../../ide/customizing-the-editor.md)
-- [Editor de texto, Opciones (cuadro de diálogo)](../../ide/reference/text-editor-options-dialog-box.md)
 - [Características del editor de código](../../ide/writing-code-in-the-code-and-text-editor.md)

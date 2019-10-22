@@ -18,12 +18,12 @@ caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 7d7656d3b0ac887ec33cae5dad7c391fa0639fc3
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 47e27dbfa221a9476488d563ae2a48235a08f769
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59660689"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65703451"
 ---
 # <a name="markupcompilepass2-task"></a>MarkupCompilePass2 (Tarea)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -76,5 +76,5 @@ La tarea <xref:Microsoft.Build.Tasks.Windows.MarkupCompilePass2> realiza una com
  [Referencia de tareas](../msbuild/wpf-msbuild-task-reference.md)   
  [Referencia de MSBuild](../msbuild/msbuild-reference.md)   
  [Referencia de tareas](../msbuild/msbuild-task-reference.md)   
- [Compilar una aplicación de WPF (WPF)](http://msdn.microsoft.com/library/a58696fd-bdad-4b55-9759-136dfdf8b91c)   
- [Información general sobre las aplicaciones de explorador XAML de WPF](http://msdn.microsoft.com/library/3a7a86a8-75d5-4898-96b9-73da151e5e16)
+ [Compilar una aplicación de WPF (WPF)](https://msdn.microsoft.com/library/a58696fd-bdad-4b55-9759-136dfdf8b91c)   
+ [Información general sobre las aplicaciones de explorador XAML de WPF](https://msdn.microsoft.com/library/3a7a86a8-75d5-4898-96b9-73da151e5e16)

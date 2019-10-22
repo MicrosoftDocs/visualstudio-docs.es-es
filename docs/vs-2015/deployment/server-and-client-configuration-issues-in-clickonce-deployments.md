@@ -18,12 +18,12 @@ caps.latest.revision: 35
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 008e7991c8f88fb1c5a8b2eb99659ebe9134df26
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 8b8f81f22ffe566524e45a62330bc95c8ce00016
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58995868"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65686382"
 ---
 # <a name="server-and-client-configuration-issues-in-clickonce-deployments"></a>Problemas de configuración de servidor y cliente en implementaciones de ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,7 +42,7 @@ Si usa Internet Information Services (IIS) en Windows Server y la implementació
   
 - .deploy  
   
-  Sin embargo, puede deshabilitar esta opción si desactiva la **usar extensión de archivo ".deploy"** opción el [Publish Options Dialog Box](http://msdn.microsoft.com/fd9baa1b-7311-4f9e-8ffb-ae50cf110592), en cuyo caso debe configurar el servidor Web para desbloquear todas las extensiones de archivo se usa en la aplicación.  
+  Sin embargo, puede deshabilitar esta opción si desactiva la **usar extensión de archivo ".deploy"** opción el [Publish Options Dialog Box](https://msdn.microsoft.com/fd9baa1b-7311-4f9e-8ffb-ae50cf110592), en cuyo caso debe configurar el servidor Web para desbloquear todas las extensiones de archivo se usa en la aplicación.  
   
   Tendrá que configurar .manifest, .application y .deploy, por ejemplo, si está utilizando IIS donde no haya instalado el [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)], o si usa otro servidor Web (por ejemplo, Apache).  
   
@@ -54,13 +54,13 @@ Si usa Internet Information Services (IIS) en Windows Server y la implementació
   
  También puede aplicar una revisión para .NET Framework 2.0 para habilitar esta característica. Para obtener más información, consulta http://go.microsoft.com/fwlink/?LinkId=158730.  
   
- Para obtener más información, consulte [ \<defaultProxy > (configuración de red) del elemento](http://msdn.microsoft.com/library/9d663c4b-07b4-4f6f-9b12-efbd3630354f).  
+ Para obtener más información, consulte [ \<defaultProxy > (configuración de red) del elemento](https://msdn.microsoft.com/library/9d663c4b-07b4-4f6f-9b12-efbd3630354f).  
   
 ## <a name="clickonce-and-web-browser-compatibility"></a>ClickOnce y la compatibilidad del explorador Web  
  Actualmente, [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] instalaciones se inician solo si la dirección URL para el manifiesto de implementación se abre mediante Internet Explorer. Una implementación cuya dirección URL se inicia desde otra aplicación, como Microsoft Office Outlook, se iniciará correctamente sólo si Internet Explorer está configurado como el explorador Web predeterminado.  
   
 > [!NOTE]
->  Mozilla Firefox se admite si el proveedor de implementación no está en blanco o la extensión de Asistente de Microsoft .NET Framework está instalada. Esta extensión se empaqueta con .NET Framework 3.5 SP1. Para obtener soporte técnico de la aplicación XBAP, el complemento NPWPF cuando sea necesario.  
+> Mozilla Firefox se admite si el proveedor de implementación no está en blanco o la extensión de Asistente de Microsoft .NET Framework está instalada. Esta extensión se empaqueta con .NET Framework 3.5 SP1. Para obtener soporte técnico de la aplicación XBAP, el complemento NPWPF cuando sea necesario.  
   
 ## <a name="activating-clickonce-applications-through-browser-scripting"></a>Activar las aplicaciones ClickOnce mediante secuencias de comandos de explorador  
  Si ha desarrollado una página Web personalizada que se inicia un [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] aplicación utilizando Active Scripting, es posible que la aplicación no se iniciará en algunos equipos. Internet Explorer contiene una configuración denominada **Preguntar automáticamente para descargas de archivo**, lo que afecta a este comportamiento. Esta opción está disponible en el **seguridad** pestaña su **opciones** menú que afecta a este comportamiento. Se llama **Preguntar automáticamente para descargas de archivo**, y se enumera bajo el **descargas** categoría. La propiedad está establecida en **habilitar** de forma predeterminada para las páginas Web de intranet y a **deshabilitar** de forma predeterminada para las páginas Web de Internet. Cuando esta opción se establece en **deshabilitar**, cualquier intento activar un [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] aplicación mediante programación (por ejemplo, mediante la asignación de la dirección URL para el `document.location` propiedad) se bloquearán. En este caso, los usuarios pueden iniciar aplicaciones solo a través de una descarga iniciada por el usuario, por ejemplo, si hace clic en un hipervínculo que se establece en dirección URL de la aplicación.  
@@ -78,7 +78,7 @@ Si usa Internet Information Services (IIS) en Windows Server y la implementació
 ```  
   
 > [!NOTE]
->  Puede realizar la autenticación NTLM (NT desafío / respuesta) funcionará si el sitio solicita credenciales distintas de las credenciales predeterminadas y, en el cuadro de diálogo seguridad haga clic en **Aceptar** cuando se le pregunte si desea guardar proporcionado credenciales para sesiones futuras. Sin embargo, esta solución no funcionará para la autenticación básica.  
+> Puede realizar la autenticación NTLM (NT desafío / respuesta) funcionará si el sitio solicita credenciales distintas de las credenciales predeterminadas y, en el cuadro de diálogo seguridad haga clic en **Aceptar** cuando se le pregunte si desea guardar proporcionado credenciales para sesiones futuras. Sin embargo, esta solución no funcionará para la autenticación básica.  
   
 ## <a name="using-third-party-web-servers"></a>Con los servidores Web de terceros  
  Si está implementando un [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] aplicación desde un servidor Web que no sean IIS, puede experimentar un problema si el servidor devuelve el tipo de contenido incorrecto para la clave [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] archivos, como el manifiesto de implementación y el manifiesto de aplicación. Para resolver este problema, consulte la Ayuda de su servidor Web documentación acerca de cómo agregar nuevos tipos de contenido al servidor y asegúrese de que todas las asignaciones de extensión de nombre de archivo que aparece en la tabla siguiente están en su lugar.  
@@ -92,7 +92,7 @@ Si usa Internet Information Services (IIS) en Windows Server y la implementació
 |`.msp`|`application/octet-stream`|  
   
 ## <a name="clickonce-and-mapped-drives"></a>ClickOnce y unidades asignadas  
- Si usa Visual Studio para publicar una aplicación ClickOnce, no se puede especificar una unidad asignada como la ubicación de instalación. Sin embargo, puede modificar la aplicación ClickOnce para instalar desde una unidad asignada mediante el generador de manifiestos y el Editor (Mage.exe y MageUI.exe). Para obtener más información, consulte [Mage.exe (Manifest Generation and Editing Tool)](http://msdn.microsoft.com/library/77dfe576-2962-407e-af13-82255df725a1) y [MageUI.exe (Manifest Generation and Editing Tool, Graphical Client)](http://msdn.microsoft.com/library/f9e130a6-8117-49c4-839c-c988f641dc14).  
+ Si usa Visual Studio para publicar una aplicación ClickOnce, no se puede especificar una unidad asignada como la ubicación de instalación. Sin embargo, puede modificar la aplicación ClickOnce para instalar desde una unidad asignada mediante el generador de manifiestos y el Editor (Mage.exe y MageUI.exe). Para obtener más información, consulte [Mage.exe (Manifest Generation and Editing Tool)](https://msdn.microsoft.com/library/77dfe576-2962-407e-af13-82255df725a1) y [MageUI.exe (Manifest Generation and Editing Tool, Graphical Client)](https://msdn.microsoft.com/library/f9e130a6-8117-49c4-839c-c988f641dc14).  
   
 ## <a name="ftp-protocol-not-supported-for-installing-applications"></a>No se admite el protocolo FTP para la instalación de aplicaciones  
  [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] admite la instalación de aplicaciones desde cualquier servidor Web HTTP 1.1 o un servidor de archivos. FTP, el protocolo de transferencia de archivos, no se admite para la instalación de aplicaciones. Puede usar FTP para publicar solo las aplicaciones. En la tabla siguiente se resume estas diferencias:  

@@ -10,12 +10,12 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 30a20e5810d5c361fddf8cd934863fcb1186b5d0
-ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
+ms.openlocfilehash: 83ac401b67444d4fdd467d5aefeb46bccb5e7e84
+ms.sourcegitcommit: cd21b38eefdea2cdefb53e68e7a30b868e78dd6b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58415959"
+ms.lasthandoff: 05/22/2019
+ms.locfileid: "66037011"
 ---
 # <a name="project-and-item-templates"></a>Plantillas de proyecto y elemento
 
@@ -47,7 +47,7 @@ Todas las plantillas de proyecto y elemento, ya estén instaladas en Visual Stud
 
 ::: moniker-end
 
-   Para obtener más información sobre los archivos *.vstemplate*, vea [Parámetros de plantilla](../ide/template-parameters.md).
+   Para obtener más información sobre los archivos *.vstemplate*, vea [Template tags](template-tags.md) (Etiquetas de plantilla) y [Parámetros de plantilla](../ide/template-parameters.md).
 
 Cuando estos archivos se comprimen en un archivo *.zip* y se colocan en la carpeta correcta, Visual Studio los muestra de forma automática en estas ubicaciones:
 
@@ -71,6 +71,7 @@ Para obtener más información sobre las carpetas de plantillas, vea [Cómo: Loc
 
 - [Cómo: Crear plantillas de proyecto](../ide/how-to-create-project-templates.md)
 - [Cómo: Crear plantillas de elemento](../ide/how-to-create-item-templates.md)
+- [Template tags](template-tags.md) (Etiquetas de plantilla)
 - [Parámetros de plantilla](../ide/template-parameters.md)
 - [Personalizar plantillas](../ide/customizing-project-and-item-templates.md)
 - [Paquetes NuGet en plantillas de Visual Studio](/nuget/visual-studio-extensibility/visual-studio-templates)

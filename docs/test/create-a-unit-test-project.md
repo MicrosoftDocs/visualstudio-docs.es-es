@@ -7,12 +7,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: ca83689628f02a8c7a2e0166b390d5b277086c1d
-ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
+ms.openlocfilehash: f04e999681899bb101dc0aeb70cc6f47094dc1d7
+ms.sourcegitcommit: 0f5f7955076238742f2071d286ad8e896f3a6cad
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58416141"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "68483807"
 ---
 # <a name="create-a-unit-test-project"></a>Crear un proyecto de prueba unitaria
 
@@ -29,15 +29,19 @@ Las pruebas unitarias a menudo reflejan la estructura del código sometido a pru
 
 2. En el cuadro de diálogo **Nuevo proyecto**, expanda el nodo **Instalado**, elija el lenguaje que quiere usar para el proyecto de prueba y, después, elija **Probar**.
 
-3. Para usar uno de los marcos de pruebas unitarias de Microsoft, elija **Proyecto de prueba unitaria** en la lista de plantillas de proyecto. De lo contrario, elija la plantilla de proyecto del marco de pruebas unitarias que desea usar. Asigne un nombre al proyecto y, después, haga clic en **Aceptar**.
+3. Seleccione la plantilla de proyecto del marco de pruebas que desea usar, por ejemplo, **Proyecto de prueba de MSTest** o **Proyecto de prueba de NUnit**. Asigne un nombre al proyecto y, después, elija **Aceptar**.
+
+   ![Plantillas de proyecto de prueba de Visual Studio 2017](media/test-project-templates.png)
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-2. En el cuadro de búsqueda de la página **Crear un proyecto**, escriba **prueba unitaria**. Seleccione la plantilla de proyecto **Proyecto de prueba unitaria (.NET Framework)** y haga clic en **Siguiente**.
+2. En el cuadro de búsqueda de la página **Crear un proyecto**, escriba **prueba unitaria**. Seleccione la plantilla de proyecto del marco de pruebas que desea usar, por ejemplo, **Proyecto de prueba de MSTest** o **Proyecto de prueba de NUnit** y, luego, elija **Siguiente**.
 
-3. En la página **Configurar el nuevo proyecto**, escriba un nombre para el proyecto y haga clic en **Crear**.
+   ![Plantillas de proyecto de prueba de Visual Studio 2019](media/vs-2019/test-project-templates.png)
+
+3. En la página **Configurar el nuevo proyecto**, escriba un nombre para el proyecto y elija **Crear**.
 
 ::: moniker-end
 

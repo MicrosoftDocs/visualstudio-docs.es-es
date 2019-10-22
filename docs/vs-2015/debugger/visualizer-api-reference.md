@@ -19,11 +19,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: ef86bcca5e7b8b6fa8f2b6c5e7a0efe86ab5ba17
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60117452"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68197450"
 ---
 # <a name="visualizer-api-reference"></a>Referencia de la API del visualizador
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,5 +44,5 @@ Las API del visualizador se proporcionan a usuarios que desean escribir un visua
   
 ## <a name="see-also"></a>Vea también  
  [Tutorial: Escritura de un visualizador en C#](../debugger/walkthrough-writing-a-visualizer-in-csharp.md)   
- [Cómo: Escritura de un visualizador](../debugger/how-to-write-a-visualizer.md)   
+ [Procedimientos: Escritura de un visualizador](../debugger/how-to-write-a-visualizer.md)   
  [Create Custom Visualizers](../debugger/create-custom-visualizers-of-data.md) (Crear visualizadores personalizados)

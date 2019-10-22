@@ -6,17 +6,17 @@ helpviewer_keywords:
 - nested projects, implementing
 - projects [Visual Studio SDK], nesting
 ms.assetid: d20b8d6a-f0e0-4115-b3a3-edda893ae678
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 96df14cc6e337402761d89d7161094b513473a78
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: f7219824bf7cc13f8fe00ebc9be0320e557f0fcf
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60105000"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66328685"
 ---
 # <a name="how-to-implement-nested-projects"></a>Procedimiento Implementación de proyectos anidados
 

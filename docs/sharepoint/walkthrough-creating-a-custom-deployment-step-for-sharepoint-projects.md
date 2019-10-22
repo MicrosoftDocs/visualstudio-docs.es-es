@@ -1,5 +1,5 @@
 ---
-title: 'Tutorial: Creación de un paso de implementación personalizado para proyectos de SharePoint | Documentos de Microsoft'
+title: Crear el paso de implementación personalizado para proyectos de SharePoint
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 2d4f42793c061436fee83e007def9f1d7e1d8f7c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 4b209fad02cdcb3da230143a2c13ff4eaa648d76
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60040177"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67825631"
 ---
 # <a name="walkthrough-create-a-custom-deployment-step-for-sharepoint-projects"></a>Tutorial: Crear un paso de implementación personalizado para proyectos de SharePoint
   Al implementar un proyecto de SharePoint, Visual Studio ejecuta una serie de pasos de implementación en un orden específico. Visual Studio incluye muchos pasos de implementación integrados, pero también puede crear sus propios.
@@ -29,9 +29,9 @@ ms.locfileid: "60040177"
 
 - Crear una extensión Visual Studio que realiza dos tareas principales:
 
-    - La extensión define un paso de implementación personalizado para actualizar las soluciones de SharePoint.
+  - La extensión define un paso de implementación personalizado para actualizar las soluciones de SharePoint.
 
-    - La extensión crea una extensión de proyecto que define una nueva configuración de implementación, que es un conjunto de pasos de implementación que se ejecutan para un proyecto determinado. La nueva configuración de implementación incluye el paso de implementación personalizado y varios pasos de implementación integrados.
+  - La extensión crea una extensión de proyecto que define una nueva configuración de implementación, que es un conjunto de pasos de implementación que se ejecutan para un proyecto determinado. La nueva configuración de implementación incluye el paso de implementación personalizado y varios pasos de implementación integrados.
 
 - Cree dos comandos de SharePoint personalizados que llama el ensamblado de extensión. Comandos de SharePoint son métodos que pueden llamarse mediante ensamblados de extensión para usar las API en el modelo de objetos de servidor de SharePoint. Para obtener más información, consulte [llamar a los modelos de objetos de SharePoint](../sharepoint/calling-into-the-sharepoint-object-models.md).
 
@@ -74,7 +74,7 @@ ms.locfileid: "60040177"
 3. En el **nuevo proyecto** cuadro de diálogo, expanda el **Visual C#** o **Visual Basic** nodos y, a continuación, elija el **extensibilidad** nodo.
 
     > [!NOTE]
-    >  El **extensibilidad** nodo está disponible solo si instala el SDK de Visual Studio. Para obtener más información, vea la sección Requisitos previos, anteriormente en este tema.
+    > El **extensibilidad** nodo está disponible solo si instala el SDK de Visual Studio. Para obtener más información, vea la sección Requisitos previos, anteriormente en este tema.
 
 4. En la parte superior del cuadro de diálogo, elija **.NET Framework 4.5** en la lista de versiones de .NET Framework.
 
@@ -147,7 +147,7 @@ ms.locfileid: "60040177"
 1. En el **ExtensiónPasoImplementación** del proyecto, abra el archivo de código UpgradeStep y, a continuación, pegue el código siguiente en él.
 
     > [!NOTE]
-    >  Después de agregar este código, el proyecto tendrá algunos errores de compilación, pero desaparecerán cuando agregue código en pasos posteriores.
+    > Después de agregar este código, el proyecto tendrá algunos errores de compilación, pero desaparecerán cuando agregue código en pasos posteriores.
 
      [!code-csharp[SPExtensibility.ProjectExtension.UpgradeDeploymentStep#1](../sharepoint/codesnippet/CSharp/UpgradeDeploymentStep/deploymentstepextension/upgradestep.cs#1)]
      [!code-vb[SPExtensibility.ProjectExtension.UpgradeDeploymentStep#1](../sharepoint/codesnippet/VisualBasic/upgradedeploymentstep/deploymentstepextension/upgradestep.vb#1)]
@@ -205,7 +205,7 @@ ms.locfileid: "60040177"
 6. En el **tipo** elija **Microsoft.VisualStudio.MefComponent**.
 
     > [!NOTE]
-    >  Este valor corresponde al elemento `MefComponent` del archivo extension.vsixmanifest. Este elemento especifica el nombre de un ensamblado de extensión en el paquete VSIX. Para obtener más información, consulte [elemento MEFComponent (Esquema VSX)](/previous-versions/visualstudio/visual-studio-2010/dd393736\(v\=vs.100\)).
+    > Este valor corresponde al elemento `MefComponent` del archivo extension.vsixmanifest. Este elemento especifica el nombre de un ensamblado de extensión en el paquete VSIX. Para obtener más información, consulte [elemento MEFComponent (Esquema VSX)](/previous-versions/visualstudio/visual-studio-2010/dd393736\(v\=vs.100\)).
 
 7. En el **origen** elija **un proyecto de la solución actual**.
 
@@ -218,7 +218,7 @@ ms.locfileid: "60040177"
 10. En el **tipo** lista, escriba **SharePoint.Commands.v4**.
 
     > [!NOTE]
-    >  Este elemento especifica una extensión personalizada que se va a incluir en la extensión de Visual Studio. Para obtener más información, consulte [elemento activo (Esquema VSX)](https://msdn.microsoft.com/9fcfc098-edc7-484b-9d4c-acd17829d737).
+    > Este elemento especifica una extensión personalizada que se va a incluir en la extensión de Visual Studio. Para obtener más información, consulte [elemento activo (Esquema VSX)](https://msdn.microsoft.com/9fcfc098-edc7-484b-9d4c-acd17829d737).
 
 11. En el **origen** elija **un proyecto de la solución actual**.
 
@@ -262,7 +262,7 @@ ms.locfileid: "60040177"
 6. En **¿qué es el nivel de confianza para esta solución de SharePoint**, elija el **implementar como solución de granja de servidores** botón de opción.
 
    > [!NOTE]
-   >  El paso de implementación de actualización no es compatible con soluciones en espacio aislado.
+   > El paso de implementación de actualización no es compatible con soluciones en espacio aislado.
 
 7. Elija la **finalizar** botón.
 
@@ -290,7 +290,7 @@ ms.locfileid: "60040177"
 
     1. Nombre
 
-    2. Organización
+    2. Empresa
 
     3. Teléfono del trabajo
 

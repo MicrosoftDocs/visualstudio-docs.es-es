@@ -1,5 +1,5 @@
 ---
-title: Filtrar Detener cambios en el código | Documentos de Microsoft
+title: Procedimiento Detener cambios en el código | Documentos de Microsoft
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -20,20 +20,20 @@ caps.latest.revision: 21
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: ba3ee5d8ee04b4a0f2cd360d6b213c69c6f8d1bc
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 739538d82a478f182c06de0e34b13f8a1bd2b2e0
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58999245"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65690054"
 ---
-# <a name="how-to-stop-code-changes"></a>Filtrar Detención de los cambios en el código
+# <a name="how-to-stop-code-changes"></a>Procedimiento Detención de los cambios en el código
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Mientras Editar y continuar se encuentra en proceso de aplicar los cambios del código, puede detener la operación.  
   
 > [!CAUTION]
->  Detener los cambios de código en el código administrado puede dar lugar a resultados inesperados. La aplicación de cambios a código administrado suele ser un proceso rápido, por lo que normalmente no es necesario detener los cambios de código en el código administrado.  
+> Detener los cambios de código en el código administrado puede dar lugar a resultados inesperados. La aplicación de cambios a código administrado suele ser un proceso rápido, por lo que normalmente no es necesario detener los cambios de código en el código administrado.  
   
 ### <a name="to-stop-applying-code-changes"></a>Para detener la aplicación de los cambios en el código  
   
@@ -45,4 +45,4 @@ Mientras Editar y continuar se encuentra en proceso de aplicar los cambios del c
   
 ## <a name="see-also"></a>Vea también  
  [Editar y continuar](../debugger/edit-and-continue.md)   
- [Editar y continuar, Depuración, Opciones (Cuadro de diálogo)](http://msdn.microsoft.com/library/009d225f-ef65-463f-a146-e4c518f86103)
+ [Editar y continuar, Depuración, Opciones (Cuadro de diálogo)](https://msdn.microsoft.com/library/009d225f-ef65-463f-a146-e4c518f86103)

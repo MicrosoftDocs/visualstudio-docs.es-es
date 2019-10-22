@@ -1,5 +1,5 @@
 ---
-title: IDebugDocumentTextAuthor::InsertText | Documentos de Microsoft
+title: 'Idebugdocumenttextauthor (:: InsertText | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 678e2429e98f268d65f9c29704e2e9d5a1a8538c
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: ad927f417c44b471a3fcee96695a1109d33ed17e
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58160724"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72572065"
 ---
 # <a name="idebugdocumenttextauthorinserttext"></a>IDebugDocumentTextAuthor::InsertText
-Inserta el nuevo texto en el documento.  
+Inserta texto nuevo en el documento.  
   
 ## <a name="syntax"></a>Sintaxis  
   
@@ -39,13 +39,13 @@ HRESULT InsertText(
   
 #### <a name="parameters"></a>Parámetros  
  `cCharacterPosition`  
- [in] Ubicación para insertar texto.  
+ de Ubicación en la que se va a insertar texto.  
   
  `cNumToInsert`  
- [in] Número de caracteres que se va a insertar.  
+ de Número de caracteres que se van a insertar.  
   
  `pcharText[]`  
- [in] Un búfer que contiene los caracteres que se va a insertar.  
+ de Búfer que contiene los caracteres que se van a insertar.  
   
 ## <a name="return-value"></a>Valor devuelto  
  El método devuelve un objeto `HRESULT`. Entre los valores posibles se incluyen los que se indican en la tabla siguiente, entre otros.  
@@ -58,5 +58,5 @@ HRESULT InsertText(
  Este método inserta texto nuevo en el documento.  
   
 ## <a name="see-also"></a>Vea también  
- [IDebugDocumentTextAuthor (interfaz)](../../winscript/reference/idebugdocumenttextauthor-interface.md)   
+ @No__t_1 de la [interfaz idebugdocumenttextauthor (](../../winscript/reference/idebugdocumenttextauthor-interface.md)  
  [IDebugDocumentTextAuthor::RemoveText](../../winscript/reference/idebugdocumenttextauthor-removetext.md)

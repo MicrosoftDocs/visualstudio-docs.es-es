@@ -8,22 +8,22 @@ helpviewer_keywords:
 - Visual Studio ALM, developing the application
 ms.assetid: 535b9e67-ce9e-4a3e-8d28-9365f257036e
 caps.latest.revision: 19
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 43fd519cf242792d3a8b2a2ca453c1a353d4049a
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 3c48c2bad3594e716a363ff932bd041d27bca528
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58988761"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72662486"
 ---
 # <a name="troubleshooting-quality-tools"></a>Solucionar problemas de las herramientas de calidad
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Si tiene problemas al ejecutar las herramientas de calidad de Visual Studio, los temas que se incluyen en esta sección pueden ayudarle a diagnosticar y corregir el problema.  
-  
-## <a name="in-this-section"></a>En esta sección  
- [Solucionar problemas de análisis de código](../code-quality/troubleshooting-code-analysis-issues.md)  
-  
+Si tiene problemas al ejecutar las herramientas de calidad de Visual Studio, los temas que se incluyen en esta sección pueden ayudarle a diagnosticar y corregir el problema.
+
+## <a name="in-this-section"></a>En esta sección
+ [Solucionar problemas de análisis de código](../code-quality/troubleshooting-code-analysis-issues.md)
+
  [Solucionar problemas de métricas de código](../code-quality/troubleshooting-code-metrics-issues.md)

@@ -21,12 +21,12 @@ caps.latest.revision: 41
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: c6c6407c038c7d6847db073c1f00c103d9483e78
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: fd2c7bf67b5c2e7f25b4193462883b53cda8db87
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60039120"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65700106"
 ---
 # <a name="view-data-values-in-data-tips--in-the-code-editor"></a>Ver valores de datos en sugerencias de datos en el editor de código
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,7 +42,7 @@ La Información sobre datos es una manera útil de ver información sobre las va
     Aparece la Información sobre datos.  
   
    > [!NOTE]
-   >  Las informaciones sobre datos siempre se evalúan en el contexto en el que se suspende la ejecución, y no en el que el cursor se mantiene sobre un elemento. Si mantiene el cursor sobre una variable en otra función con el mismo nombre que una variable que está en el contexto actual, el valor de la variable de la otra función se mostrará como el valor de la variable del contexto actual.  
+   > Las informaciones sobre datos siempre se evalúan en el contexto en el que se suspende la ejecución, y no en el que el cursor se mantiene sobre un elemento. Si mantiene el cursor sobre una variable en otra función con el mismo nombre que una variable que está en el contexto actual, el valor de la variable de la otra función se mostrará como el valor de la variable del contexto actual.  
   
 2. La Información sobre datos desaparece al quitar el puntero del mouse. Para anclar la información sobre datos de modo que permanezca abierta, haga clic en el **anclar a origen** icono, o  
   
@@ -143,6 +143,6 @@ La Información sobre datos es una manera útil de ver información sobre las va
   
 ## <a name="see-also"></a>Vea también  
  [Ver datos en el depurador](../debugger/viewing-data-in-the-debugger.md)   
- [Cómo: Utilice el cuadro de diálogo Inspección rápida](http://msdn.microsoft.com/library/ffaee1dd-e5ce-4ef2-9401-d28329398867)   
+ [Cómo: Utilice el cuadro de diálogo Inspección rápida](https://msdn.microsoft.com/library/ffaee1dd-e5ce-4ef2-9401-d28329398867)   
  [Creación de visualizadores personalizados](../debugger/create-custom-visualizers-of-data.md)   
- [Cómo: Cambiar el formato numérico de Windows del depurador](http://msdn.microsoft.com/library/cd593847-a625-411d-a430-b798346ef18f)
+ [Cómo: Cambiar el formato numérico de Windows del depurador](https://msdn.microsoft.com/library/cd593847-a625-411d-a430-b798346ef18f)

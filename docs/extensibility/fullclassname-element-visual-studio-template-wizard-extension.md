@@ -1,5 +1,5 @@
 ---
-title: FullClassName (elemento) (extensión de Asistente de plantilla de Visual Studio) | Microsoft Docs
+title: FullClassName (elemento) (extensión de Asistente de plantilla de VS)
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: conceptual
@@ -8,17 +8,17 @@ f1_keywords:
 helpviewer_keywords:
 - FullClassName element [Visual Studio project template]
 ms.assetid: 651e1010-d529-4856-85ff-c77ceca5d2ed
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 028b936cafbae60a0f58a9579a64041955632e41
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 63b7e480944e8f5519db1c9cfd123c07a0cf6208
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56712013"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66342628"
 ---
 # <a name="fullclassname-element-visual-studio-template-wizard-extension"></a>FullClassName (elemento) (extensión de Asistente de plantilla de Visual Studio)
 El nombre completo de la clase que implementa el `IWizard` interfaz.

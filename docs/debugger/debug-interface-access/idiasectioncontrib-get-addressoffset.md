@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 7c0fa8b7a61a5b74558dc16bfea4726a763bf03f
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56625808"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62828281"
 ---
 # <a name="idiasectioncontribgetaddressoffset"></a>IDiaSectionContrib::get_addressOffset
 Recupera la parte del ajuste de la dirección de la contribución.

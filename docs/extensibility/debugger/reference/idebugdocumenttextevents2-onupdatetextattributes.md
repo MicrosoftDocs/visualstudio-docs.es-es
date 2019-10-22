@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugDocumentTextEvents2::onUpdateTextAttributes
 ms.assetid: eb68d69a-1ad9-4ce4-84e1-40979ef16634
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7b3e76c1eaf82763f461eb1a0b198a7653465970
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 3a1eb8d6d9f14fcad5358b4a358673e08f3395ff
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56718877"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66351369"
 ---
 # <a name="idebugdocumenttextevents2onupdatetextattributes"></a>IDebugDocumentTextEvents2::onUpdateTextAttributes
 Notifica el paquete de depuración que se han actualizado los atributos de texto en el documento.
@@ -38,14 +41,12 @@ int onUpdateTextAttributes( 
 );
 ```
 
-#### <a name="parameters"></a>Parámetros
- `pos`
+## <a name="parameters"></a>Parámetros
+`pos`\
+[in] Un [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md) estructura que indica dónde se actualizaron los atributos de texto.
 
- [in] Un [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md) estructura que indica dónde se actualizaron los atributos de texto.
-
- `dwNumToUpdate`
-
- [in] Especifica el número de caracteres de texto que se actualizaron.
+`dwNumToUpdate`\
+[in] Especifica el número de caracteres de texto que se actualizaron.
 
 ## <a name="return-value"></a>Valor devuelto
  Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.

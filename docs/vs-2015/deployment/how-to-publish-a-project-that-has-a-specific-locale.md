@@ -21,12 +21,12 @@ caps.latest.revision: 13
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 6d5bb4be34a6a476e975c240f8a9d99114b870f0
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 42fc6e45e0e32e9b165251c7ec61d3d67b924e1c
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60092921"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65697604"
 ---
 # <a name="how-to-publish-a-project-that-has-a-specific-locale"></a>Procedimiento Publicar un proyecto que tenga una configuración regional específica
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,7 +34,7 @@ ms.locfileid: "60092921"
 No es raro que una aplicación contenga componentes con diferentes configuraciones regionales. En este escenario, crearía una solución con varios proyectos para después publicar diferentes proyectos para cada configuración regional. En este procedimiento se muestra cómo usar una macro para publicar el primer proyecto en una solución usando la configuración regional 'en'. Si quiere intentar este procedimiento con una configuración regional que no sea 'en', asegúrese de establecer `localeString` de manera que coincida con la configuración regional que está usando (por ejemplo, 'de' o 'de-DE').  
   
 > [!NOTE]
->  Cuando se usa esta macro, la ubicación de publicación debe ser una dirección URL o un recurso compartido UNC (Convención de nomenclatura universal) válidos. Además, Internet Information Services (IIS) debe estar instalado en el equipo. Para instalar IIS, en el menú **Inicio**, haga clic en **Panel de control**. Haga doble clic en **Agregar o quitar programas**. En **Agregar o quitar programas**, haga clic en **Agregar o quitar componentes de Windows**. En el **Asistente para componentes de Windows**, active la casilla **Internet Information Services (IIS)** en la lista **Componentes**. Haga clic en **Finalizar** para cerrar el asistente.  
+> Cuando se usa esta macro, la ubicación de publicación debe ser una dirección URL o un recurso compartido UNC (Convención de nomenclatura universal) válidos. Además, Internet Information Services (IIS) debe estar instalado en el equipo. Para instalar IIS, en el menú **Inicio**, haga clic en **Panel de control**. Haga doble clic en **Agregar o quitar programas**. En **Agregar o quitar programas**, haga clic en **Agregar o quitar componentes de Windows**. En el **Asistente para componentes de Windows**, active la casilla **Internet Information Services (IIS)** en la lista **Componentes**. Haga clic en **Finalizar** para cerrar el asistente.  
   
 ### <a name="to-create-the-publishing-macro"></a>Para crear la macro de publicación  
   
@@ -166,6 +166,6 @@ No es raro que una aplicación contenga componentes con diferentes configuracion
   
 ## <a name="see-also"></a>Vea también  
  [Publicar aplicaciones ClickOnce](../deployment/publishing-clickonce-applications.md)   
- [Entorno de desarrollo de macros](http://msdn.microsoft.com/d23105d8-34fe-4ad9-8278-fae2c660aeac)   
- [Ventana Explorador de macros](http://msdn.microsoft.com/762169e6-f83f-44b4-bffa-d0f107cae9a3)   
- [Cómo: Editar y crear Macros mediante programación](http://msdn.microsoft.com/6716f820-1feb-48ad-a718-27eb6b473c5a)
+ [Entorno de desarrollo de macros](https://msdn.microsoft.com/d23105d8-34fe-4ad9-8278-fae2c660aeac)   
+ [Ventana Explorador de macros](https://msdn.microsoft.com/762169e6-f83f-44b4-bffa-d0f107cae9a3)   
+ [Cómo: Editar y crear Macros mediante programación](https://msdn.microsoft.com/6716f820-1feb-48ad-a718-27eb6b473c5a)

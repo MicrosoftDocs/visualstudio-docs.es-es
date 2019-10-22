@@ -25,11 +25,11 @@ author: Joe-Sewell-PreEmptive
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: cee876a3904d5c47b43b58793087c901e8444dd3
-ms.sourcegitcommit: 40393347a36779230d128f2355a911632a8d458e
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "58866684"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62557247"
 ---
 # <a name="upgrade-dotfuscator-community"></a>Actualización de Dotfuscator Community
 

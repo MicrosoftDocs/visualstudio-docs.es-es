@@ -11,12 +11,12 @@ ms.assetid: 777d0db5-0073-458a-a2a3-58b1c1f24c60
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: b0e71e499eb1920dd59ee47533855cf9f86cbbd0
-ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
+ms.openlocfilehash: 5e703ca3e1770d92a2dc01402acaaba0b4988e92
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58416102"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62970644"
 ---
 # <a name="how-to-specify-timeout-periods-for-test-controllers-and-test-agents"></a>Procedimiento para especificar periodos de tiempo de espera para controladores de pruebas y agentes de pruebas
 
@@ -26,7 +26,7 @@ Tanto el controlador de pruebas como el agente de prueba tienen varias configura
 
 Para editar diversas configuraciones de tiempo de espera de un controlador de pruebas o de un agente de prueba, modifique los siguientes archivos de configuración usando los nombres y valores de clave de las tablas:
 
--   Controlador de pruebas: *QTController.exe.config*
+- Controlador de pruebas: *QTController.exe.config*
 
     |Nombre de clave|Descripción|Valor|
     |-|-----------------|-|
@@ -35,7 +35,7 @@ Para editar diversas configuraciones de tiempo de espera de un controlador de pr
     |AgentInitializeTimeout|Número de segundos que se va a esperar para que todos los agentes y sus recopiladores de datos se inicialicen al principio de una ejecución de pruebas, antes de anular la ejecución de pruebas. Este valor debe ser bastante grande si se usan recopiladores de datos.|"n" segundos. Predeterminado: "120" (dos minutos).|
     |AgentCleanupTimeout|Número de segundos que se va a esperar para que todos los agentes y sus recopiladores de datos se limpien, antes de completar la ejecución de pruebas. Este valor debe ser bastante grande si se usan recopiladores de datos.|"n" segundos. Predeterminado: "120" (dos minutos).|
 
--   Agente de pruebas: *QTAgentService.exe.config*
+- Agente de pruebas: *QTAgentService.exe.config*
 
     |Nombre de clave|Descripción|Valor|
     |-|-----------------|-|

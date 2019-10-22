@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugPortEx2::GetProgram
 ms.assetid: cd83a111-bfd5-4eae-b576-526466c6b6ec
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d1fd56bf6705cb6e47e94422ab06261645d0d512
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 505823a6399cc605d8784a4dba88f2fa27ad6d72
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56687437"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66311196"
 ---
 # <a name="idebugportex2getprogram"></a>IDebugPortEx2::GetProgram
 Obtiene el programa asociado con un nodo de programa.
@@ -38,14 +41,10 @@ int GetProgram( 
 );
 ```
 
-#### <a name="parameters"></a>Parámetros
- `pProgramNode`
+## <a name="parameters"></a>Parámetros
+`pProgramNode` [in] Un [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md) objeto que representa el nodo del programa.
 
- [in] Un [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md) objeto que representa el nodo del programa.
-
- `ppProgram`
-
- [out] Devuelve un [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) objeto que representa el programa asociado con el nodo del programa.
+`ppProgram` [out] Devuelve un [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) objeto que representa el programa asociado con el nodo del programa.
 
 ## <a name="return-value"></a>Valor devuelto
  Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.

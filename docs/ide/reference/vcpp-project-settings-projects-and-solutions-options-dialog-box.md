@@ -1,5 +1,5 @@
 ---
-title: Configuración de proyecto de VC++, Proyectos y soluciones, Opciones (Cuadro de diálogo)
+title: Opciones de configuración del proyecto C++
 ms.date: 08/02/2017
 ms.topic: reference
 f1_keywords:
@@ -13,28 +13,30 @@ helpviewer_keywords:
 - extensions, files built by C or C++ compiler
 - BuildLog.htm
 ms.assetid: 56420efd-6a95-464e-b890-e2b38c48d66a
-author: gewarren
-ms.author: gewarren
-manager: jillfra
+author: corob-msft
+ms.author: corob
+manager: markl
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 2d3f81659930f75cda3c4ec0873837f7486e8b60
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c7acd0d8f9c6d15f9f20c42f59c3bd5562884ac3
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62789330"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68918884"
 ---
 # <a name="vc-project-settings-projects-and-solutions-options-dialog-box"></a>Configuración de proyecto de VC++, Proyectos y soluciones, Opciones (Cuadro de diálogo)
-Este cuadro de diálogo le permite definir la configuración del proyecto y la compilación de [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)] relacionada con el registro, el rendimiento y los tipos de archivos auxiliares.
 
-### <a name="to-access-this-dialog-box"></a>Para obtener acceso a este cuadro de diálogo
+Este cuadro de diálogo le permite definir la configuración del proyecto y la compilación de C++ relacionada con el registro, el rendimiento y los tipos de archivos auxiliares.
+
+## <a name="to-access-this-dialog-box"></a>Para obtener acceso a este cuadro de diálogo
 
 1. En el menú **Herramientas** , haga clic en **Opciones**.
 
-2. Seleccione **Proyectos y soluciones** y **Configuración de proyecto de VC++**.
+2. Seleccione **Proyectos y soluciones** y **Configuración de proyecto de VC++** .
 
 ## <a name="build-logging"></a>Registro de compilación
+
  **Sí**
 
   Habilita la generación del archivo de registro de compilación. Esta opción genera BuildLog.htm, que se encuentra en el directorio de archivos intermedios del proyecto. Cada compilación nueva sobrescribe el archivo BuildLog.htm anterior.
@@ -44,48 +46,56 @@ Este cuadro de diálogo le permite definir la configuración del proyecto y la c
   Desactiva la generación del archivo de registro de compilación.
 
 ## <a name="show-environment-in-log"></a>Mostrar entorno en el registro
+
  **Sí**
 
- Muestra las variables de entorno en el archivo de registro de compilación. Esta opción especifica que se muestren todas las variables de entorno en el archivo de registro de compilación durante las compilaciones de proyectos de [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)].
+Muestra las variables de entorno en el archivo de registro de compilación. Esta opción especifica que se muestren todas las variables de entorno en el archivo de registro de compilación durante las compilaciones de proyectos de C++.
 
  **No**
 
- Las variables de entorno se excluyen del archivo de registro de compilación.
+Las variables de entorno se excluyen del archivo de registro de compilación.
 
 ## <a name="build-timing"></a>Tiempo de compilación
+
  **Sí**
 
   Activa el registro de compilación. Si se selecciona, se muestra en la ventana de salida el tiempo que se tarda en completar la compilación. Para más información, vea [Ventana de salida](../../ide/reference/output-window.md).
 
  **No**
 
- Desactiva el registro de compilación.
+Desactiva el registro de compilación.
 
 ## <a name="maximum-concurrent-c-compilations"></a>Máximo de compilaciones de C++ concurrentes
-  Especifica el número máximo de núcleos de CPU que se usarán para la compilación paralela de C++.
+
+Especifica el número máximo de núcleos de CPU que se usarán para la compilación paralela de C++.
 
 ## <a name="extensions-to-include"></a>Extensiones para incluir
-  Especifica las extensiones de nombre de archivo de los archivos que se pueden importar al proyecto.
+
+Especifica las extensiones de nombre de archivo de los archivos que se pueden importar al proyecto.
 
 ## <a name="extensions-to-hide"></a>Extensiones para ocultar
-  Especifica las extensiones de nombre de archivo de los archivos que no aparecerán en el **Explorador de soluciones** cuando esté habilitada la opción **Mostrar todos los archivos**.
+
+Especifica las extensiones de nombre de archivo de los archivos que no aparecerán en el **Explorador de soluciones** cuando esté habilitada la opción **Mostrar todos los archivos**.
 
 ## <a name="build-customization-search-path"></a>Ruta de búsqueda de personalizaciones de compilación
-  Especifica la lista de directorios que contienen archivos .rules, que ayudan a definir reglas de compilación para los proyectos.
+
+Especifica la lista de directorios que contienen archivos .rules, que ayudan a definir reglas de compilación para los proyectos.
 
 ## <a name="solution-explorer-mode"></a>Modo Explorador de soluciones
- **Mostrar únicamente archivos del proyecto**
 
-  Configura el **Explorador de soluciones** de modo que solo muestre archivos del proyecto.
+**Mostrar únicamente archivos del proyecto**
 
- **Mostrar todos los archivos**
+Configura el **Explorador de soluciones** de modo que solo muestre archivos del proyecto.
 
-  Configura el **Explorador de soluciones** de modo que muestre tanto archivos del proyecto como archivos del disco en la carpeta del proyecto.
+**Mostrar todos los archivos**
+
+Configura el **Explorador de soluciones** de modo que muestre tanto archivos del proyecto como archivos del disco en la carpeta del proyecto.
 
 ## <a name="enable-project-caching"></a>Habilitar almacenamiento en caché de los proyectos
+
 **Sí**
 
-Permite que Visual Studio copie en caché los datos del proyecto para que, cuando lo abra la próxima vez, se carguen esos datos en lugar de volver a calcularlos desde los archivos de proyecto. Usar datos en caché puede acelerar de forma significativa el tiempo de carga de un proyecto.
+Permite que Visual Studio almacene en caché los datos del proyecto para que, cuando lo abra la próxima vez, se carguen esos datos en lugar de volver a calcularlos desde los archivos de proyecto. Usar datos en caché puede acelerar de forma significativa el tiempo de carga de un proyecto.
 
 **No**
 

@@ -1,10 +1,10 @@
 ---
 ms.openlocfilehash: 69f4f4c2b55670d510652b44a203b9f0eafcc53a
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
-ms.translationtype: MTE95
+ms.sourcegitcommit: 748d9cd7328a30f8c80ce42198a94a4b5e869f26
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "57874495"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "68143534"
 ---
 
 1. Cierre y vuelva a abrir la consola de administración de IIS para mostrar las opciones de configuración actualizadas en la interfaz de usuario.

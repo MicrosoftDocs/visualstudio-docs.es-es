@@ -36,8 +36,13 @@
       "feedback_github_repo": "MicrosoftDocs/visualstudio-docs.es-es",
       "feedback_product_url": "https://developercommunity.visualstudio.com/",
       "breadcrumb_path": "~/_breadcrumb/toc.yml",
+      "extendBreadcrumb": true,
+      "manager": "lank",
+      "ms.topic": "conceptual",
       "ms.prod": "visual-studio-family",
-      "ms.technology": "vs-subscriptions"
+      "ms.technology": "vs-subscriptions",
+      "disable_contribution_on_translation_quality": ["MT"],
+      "searchScope": ["VS Subscriptions"]
     },
     "fileMetadata": {},
     "template": [],

@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6398a28394c8918d574a3b3eca4cf54b21f3d7bd
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 2c5b0f4c748cd923ca02cb16ba374747c20d12d7
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55925727"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66747662"
 ---
 # <a name="secure-applications"></a>Proteger aplicaciones
 
@@ -40,7 +40,7 @@ La seguridad también es una consideración importante en el proceso de compilac
 
 ## <a name="see-also"></a>Vea también
 
-- [Seguridad en .NET Framework](/dotnet/standard/security/index)
+- [Seguridad en .NET](/dotnet/standard/security/index)
 - [Seguridad de Azure](/azure/security/)
 - [Guía de seguridad de Windows 10 Mobile](/windows/security/threat-protection/windows-10-mobile-security-guide)
 - [Características de seguridad de la plataforma Apache Cordova](/visualstudio/cross-platform/tools-for-cordova/security/best-practices?view=toolsforcordova-2017)

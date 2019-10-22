@@ -1,5 +1,5 @@
 ---
-title: Procedimiento Almacenar y recuperar valores de fecha en rangos de Excel mediante programación
+title: Store & recuperar valores de fecha en rangos de Excel mediante programación
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -19,12 +19,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 89c4a4598b92096d968225f7420d46244aeca3dc
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: d855ffd91ccdc07a2d69401d7a8611175cc60941
+ms.sourcegitcommit: 7eb2fb21805d92f085126f3a820ac274f2216b4e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60082911"
+ms.lasthandoff: 06/22/2019
+ms.locfileid: "67328921"
 ---
 # <a name="how-to-programmatically-store-and-retrieve-date-values-in-excel-ranges"></a>Procedimiento Almacenar y recuperar valores de fecha en rangos de Excel mediante programación
   Puede almacenar y recuperar los valores en un <xref:Microsoft.Office.Tools.Excel.NamedRange> control o un objeto nativo de rango de Excel.
@@ -34,7 +34,7 @@ ms.locfileid: "60082911"
  Si almacena un valor de fecha que se encuentre en o después de 1/1/1900 en un rango con herramientas de desarrollo de Office en Visual Studio, se almacena en formato de automatización OLE (OA). Debe usar el <xref:System.DateTime.FromOADate%2A> método para recuperar el valor de fechas de automatización OLE (OA). Si la fecha es anterior a 1/1/1900, se almacena como una cadena.
 
 > [!NOTE]
->  Las fechas de Excel se diferencian de las fechas de automatización OLE para los dos primeros meses de 1900. Hay también diferencias si el **sistema de fechas de 1904** opción está activada. Los ejemplos de código siguientes no tratan estas diferencias.
+> Las fechas de Excel se diferencian de las fechas de automatización OLE para los dos primeros meses de 1900. Hay también diferencias si el **sistema de fechas de 1904** opción está activada. Los ejemplos de código siguientes no tratan estas diferencias.
 
 ## <a name="use-a-namedrange-control"></a>Usar un control NamedRange
 

@@ -7,17 +7,17 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugBreakpointRequest2 interface
 ms.assetid: 01ac4013-96f9-4235-b289-f55f9e99558f
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6a984634dbba0fc1d732fe98214a07d8d6c339d4
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 55e7c73b720e326b823c3038928d7141ea732155
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56698110"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66352916"
 ---
 # <a name="idebugbreakpointrequest2"></a>IDebugBreakpointRequest2
 Esta interfaz representa la información necesaria para crear y enlazar cualquier tipo de punto de interrupción.

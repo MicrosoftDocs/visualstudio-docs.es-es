@@ -1,25 +1,25 @@
 ---
-title: Conjunto de reglas reglas mínimas nativas | Documentos de Microsoft
+title: Conjunto de reglas reglas mínimas nativas | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
 ms.topic: conceptual
 ms.assetid: 2d898bc4-fba5-472e-8f09-b0c6b511c5a3
 caps.latest.revision: 5
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 972f749d03ec81c40ed91a2fb40161ebdb8cd791
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 8e7f45122bab952eb60182423281e018705e33a5
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59650278"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72661076"
 ---
 # <a name="native-minimum-rules-rule-set"></a>Conjunto de reglas Reglas mínimas nativas
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Las reglas mínimas nativas de Microsoft se centran en los problemas más graves del código nativo, incluidas posibles vulnerabilidades de seguridad y bloqueos de la aplicación. Debe incluir este conjunto de reglas en todos los conjuntos de reglas personalizados que cree para sus proyectos nativos.  
+Las reglas mínimas nativas de Microsoft se centran en los problemas más críticos del código nativo, incluidas posibles vulnerabilidades de seguridad y bloqueos de la aplicación. Debe incluir este conjunto de reglas en todos los conjuntos de reglas personalizados que cree para sus proyectos nativos.
 
 |                                      Regla                                      |                                                  Descripción                                                  |
 |--------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------|
@@ -59,7 +59,7 @@ Las reglas mínimas nativas de Microsoft se centran en los problemas más graves
 |                       [C6504](../code-quality/c6504.md)                        |                                              Null en valores que no son de puntero                                              |
 |                       [C6505](../code-quality/c6505.md)                        |                                               MustCheck en valores void                                               |
 |                       [C6506](../code-quality/c6506.md)                        |                                      Tamaño de búfer en valores que no son de puntero o matriz                                      |
-| [C6507](http://msdn.microsoft.com/18f88cd1-d035-4403-a6a4-12dd0affcf21)  |                                       No coincidencia Null en desreferenciación cero                                       |
+| [C6507](https://msdn.microsoft.com/18f88cd1-d035-4403-a6a4-12dd0affcf21)  |                                       No coincidencia Null en desreferenciación cero                                       |
 |                       [C6508](../code-quality/c6508.md)                        |                                           Acceso de escritura en valores constantes                                            |
 |                       [C6509](../code-quality/c6509.md)                        |                                          Return usado en condición previa                                          |
 |                       [C6510](../code-quality/c6510.md)                        |                                        NullTerminated en valores que no son de puntero                                         |
@@ -70,12 +70,12 @@ Las reglas mínimas nativas de Microsoft se centran en los problemas más graves
 |                       [C6516](../code-quality/c6516.md)                        |                                          No hay propiedades del atributo                                           |
 |                       [C6517](../code-quality/c6517.md)                        |                                       Tamaño válido en búfer no legible                                       |
 |                       [C6518](../code-quality/c6518.md)                        |                                     Tamaño de escritura en búfer no modificable                                      |
-| [C6521](http://msdn.microsoft.com/e98d0ae3-6f13-47b2-9a15-15d4055af9ef)  |                                        Desreferenciación de cadena de tamaño no válida                                        |
+| [C6521](https://msdn.microsoft.com/e98d0ae3-6f13-47b2-9a15-15d4055af9ef)  |                                        Desreferenciación de cadena de tamaño no válida                                        |
 |                       [C6522](../code-quality/c6522.md)                        |                                           Tipo de cadena de tamaño no válido                                            |
-| [C6523](http://msdn.microsoft.com/11397a31-b224-46b0-afb7-d49ca576a3bb)  |                                         Parámetro de cadena de tamaño no válido                                         |
+| [C6523](https://msdn.microsoft.com/11397a31-b224-46b0-afb7-d49ca576a3bb)  |                                         Parámetro de cadena de tamaño no válido                                         |
 |                       [C6525](../code-quality/c6525.md)                        |                                   Cadena de tamaño no válida, ubicación inaccesible                                    |
-| [C6526](http://msdn.microsoft.com/59c590c7-0098-4166-a1ac-87f324596002)  |                                        Tipo de búfer de cadena de tamaño no válido                                        |
-|                       [C6527](../code-quality/c6527.md)                        |              Anotación no válida: Propiedad 'NeedsRelease' no puede usarse en los valores de tipo void               |
+| [C6526](https://msdn.microsoft.com/59c590c7-0098-4166-a1ac-87f324596002)  |                                        Tipo de búfer de cadena de tamaño no válido                                        |
+|                       [C6527](../code-quality/c6527.md)                        |              Anotación no válida: la propiedad 'NeedsRelease' no se puede usar en valores de tipo void               |
 |                       [C6530](../code-quality/c6530.md)                        |                                       Estilo de cadena de formato no reconocido                                        |
 |                       [C6540](../code-quality/c6540.md)                        | El uso de anotaciones de atributo en esta función invalidará todas las anotaciones __declspec existentes  |
 |                       [C6551](../code-quality/c6551.md)                        |                              Especificación de tamaño no válido: no se puede analizar la expresión                              |
@@ -101,7 +101,7 @@ Las reglas mínimas nativas de Microsoft se centran en los problemas más graves
 |                      [C28215](../code-quality/c28215.md)                       |                    typefix no se puede aplicar a un parámetro que ya tenga un typefix                    |
 |                      [C28216](../code-quality/c28216.md)                       |        La anotación checkReturn solamente se aplica a las condiciones posteriores del parámetro de la función específica.         |
 |                      [C28217](../code-quality/c28217.md)                       |            Para la función, el número de parámetros de la anotación no coincide con el encontrado en el archivo             |
-|                      [C28218](../code-quality/c28218.md)                       |             Para el parámetro de función, el parámetro de la anotación no coincide con el encontrado en el archivo              |
+|                      [C28218](../code-quality/c28218.md)                       |             En el caso del parámetro de función, el parámetro de la anotación no coincide con el que se encuentra en el archivo.              |
 |                      [C28219](../code-quality/c28219.md)                       |                 Se esperaba un miembro de enumeración para el parámetro de la anotación                 |
 |                      [C28220](../code-quality/c28220.md)                       |                  Se esperaba una expresión de entero para el parámetro de la anotación                   |
 |                      [C28221](../code-quality/c28221.md)                       |                        Se esperaba una expresión de cadena para el parámetro de la anotación                         |
@@ -146,7 +146,7 @@ Las reglas mínimas nativas de Microsoft se centran en los problemas más graves
 |                      [C28286](../code-quality/c28286.md)                       |                                    Para la función, error de sintaxis cerca del final                                    |
 |                      [C28287](../code-quality/c28287.md)                       |                Para la función, error de sintaxis en la anotación \_At\_() (nombre de parámetro no reconocido)                |
 |                      [C28288](../code-quality/c28288.md)                       |                  Para la función, error de sintaxis en la anotación \_At\_() (nombre de parámetro no válido)                   |
-|                      [C28289](../code-quality/c28289.md)                       |                Para que funcione: ReadableTo o WritableTo no tenía una especificación de límite como parámetro                |
+|                      [C28289](../code-quality/c28289.md)                       |                Para la función: ReadableTo o WritableTo no tenían una especificación de límite como parámetro                |
 |                      [C28290](../code-quality/c28290.md)                       |           la anotación de la función contiene más valores External que el número real de parámetros            |
 |                      [C28291](../code-quality/c28291.md)                       |                        El valor null/notnull posterior en el nivel 0 de desreferenciación carece de sentido para la función.                        |
 |                      [C28300](../code-quality/c28300.md)                       |                            Operandos de expresión de tipos no compatibles para el operador                             |

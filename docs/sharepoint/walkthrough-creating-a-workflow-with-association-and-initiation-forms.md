@@ -1,5 +1,5 @@
 ---
-title: 'Tutorial: Creación de un flujo de trabajo con la asociación y formularios de iniciación | Documentos de Microsoft'
+title: Crear flujo de trabajo con formularios de asociación e iniciación
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -17,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 43ee8d26338b6d15530c51191c3368d3fc556d2c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: b64d1c9fbbd81a21ab268dfa29287895bd355197
+ms.sourcegitcommit: 25570fb5fb197318a96d45160eaf7def60d49b2b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60081741"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "66401156"
 ---
 # <a name="walkthrough-create-a-workflow-with-association-and-initiation-forms"></a>Tutorial: Crear un flujo de trabajo con formularios de asociación e iniciación
   Este tutorial muestra cómo crear un flujo de trabajo secuencial básico que incorpora el uso de formularios de asociación e iniciación. Estos son los formularios ASPX que habilite los parámetros que se agregarán a un flujo de trabajo al que asociar primero el Administrador de SharePoint (el formulario de asociación), y cuando se inicia el flujo de trabajo por el usuario (el formulario de iniciación).
@@ -50,9 +50,9 @@ ms.locfileid: "60081741"
 - Iniciar manualmente el flujo de trabajo.
 
 > [!NOTE]
->  Aunque este tutorial usa un proyecto de flujo de trabajo secuencial, el proceso es el mismo para los flujos de trabajo de máquina de Estados.
+> Aunque este tutorial usa un proyecto de flujo de trabajo secuencial, el proceso es el mismo para los flujos de trabajo de máquina de Estados.
 >
->  Además, el equipo podría mostrar diferentes nombres o ubicaciones para algunos de los [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] elementos de interfaz de usuario en las instrucciones siguientes. El [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] edition que tiene y la configuración que utilice determina estos elementos. Para más información, vea [Personalizar el IDE de Visual Studio](../ide/personalizing-the-visual-studio-ide.md).
+> Además, el equipo podría mostrar diferentes nombres o ubicaciones para algunos de los [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] elementos de interfaz de usuario en las instrucciones siguientes. El [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] edition que tiene y la configuración que utilice determina estos elementos. Para más información, vea [Personalizar el IDE de Visual Studio](../ide/personalizing-the-visual-studio-ide.md).
 
 ## <a name="prerequisites"></a>Requisitos previos
  Necesita los componentes siguientes para completar este tutorial:
@@ -90,7 +90,7 @@ ms.locfileid: "60081741"
 
      El **Asistente de personalización de SharePoint** aparece.
 
-10. En el **especificar el nombre de flujo de trabajo de depuración** , acepte el nombre predeterminado (**ExpenseReport - Workflow1**). Mantenga el valor de tipo de plantilla de flujo de trabajo predeterminada (**flujo de trabajo de lista)**. Elija el botón **Siguiente**.
+10. En el **especificar el nombre de flujo de trabajo de depuración** , acepte el nombre predeterminado (**ExpenseReport - Workflow1**). Mantenga el valor de tipo de plantilla de flujo de trabajo predeterminada (**flujo de trabajo de lista)** . Elija el botón **Siguiente**.
 
 11. En el **desea que Visual Studio asocie automáticamente el flujo de trabajo en una sesión de depuración?** página, desactive la casilla que se asocia automáticamente la plantilla de flujo de trabajo si está activada.
 
@@ -134,7 +134,7 @@ ms.locfileid: "60081741"
 3. Expanda el **ExpenseReportAssocForm.aspx** archivo **el Explorador de soluciones** para mostrar sus archivos dependientes.
 
     > [!NOTE]
-    >  Si el proyecto está en [!INCLUDE[vbprvb](../sharepoint/includes/vbprvb-md.md)], debe elegir el **ver todos los archivos** botón para realizar este paso.
+    > Si el proyecto está en [!INCLUDE[vbprvb](../sharepoint/includes/vbprvb-md.md)], debe elegir el **ver todos los archivos** botón para realizar este paso.
 
 4. Abra el menú contextual para el archivo ExpenseReportAssocForm.aspx y elija **ver código**.
 
@@ -325,7 +325,7 @@ ms.locfileid: "60081741"
     ```
 
     > [!NOTE]
-    >  En el código, reemplace `somedomain\\someuser` con un nombre de usuario y dominio para el que se creará una tarea, como por ejemplo, "`Office\\JoeSch`". Para las pruebas es más fácil usar la cuenta que se va a desarrollar con.
+    > En el código, reemplace `somedomain\\someuser` con un nombre de usuario y dominio para el que se creará una tarea, como por ejemplo, "`Office\\JoeSch`". Para las pruebas es más fácil usar la cuenta que se va a desarrollar con.
 
 3. A continuación el `MethodInvoking` método, agregue el siguiente ejemplo:
 

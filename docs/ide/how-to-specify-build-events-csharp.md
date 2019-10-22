@@ -1,6 +1,7 @@
 ---
-title: Procedimiento Especificación de eventos de compilación (C#)
+title: 'Procedimientos para: Especificación de eventos de compilación (C#)'
 ms.date: 03/21/2019
+ms.technology: vs-ide-compile
 ms.topic: conceptual
 helpviewer_keywords:
 - pre-build events
@@ -9,19 +10,19 @@ helpviewer_keywords:
 - build events [Visual Studio]
 - builds [Visual Studio], events
 ms.assetid: b4ce1ad9-5215-4b6f-b6a2-798b249aa335
-author: gewarren
-ms.author: gewarren
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 28718a213e42f3db8c4beee5d45666044148601d
-ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
+ms.openlocfilehash: 9484d6977c6896253197215ce185579518448da8
+ms.sourcegitcommit: 0f5f7955076238742f2071d286ad8e896f3a6cad
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58355362"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "68483705"
 ---
-# <a name="how-to-specify-build-events-c"></a>Procedimiento Especificación de eventos de compilación (C#)
+# <a name="how-to-specify-build-events-c"></a>Procedimientos para: Especificación de eventos de compilación (C#)
 
 Use eventos de compilación para especificar comandos que se ejecutan antes de que se inicie la compilación o después de que esta finalice. Los eventos de compilación solo se ejecutan si se alcanzan correctamente esos puntos en el proceso de compilación.
 
@@ -37,27 +38,27 @@ Cuando se compila un proyecto, los eventos anteriores a la compilación se agreg
 
 4. En el cuadro **Línea de comandos del evento anterior a la compilación**, especifique la sintaxis del evento de compilación.
 
-    > [!NOTE]
-    > Los eventos anteriores a la compilación no se ejecutan si el proyecto está actualizado y no se desencadena ninguna compilación.
+   > [!NOTE]
+   > Los eventos anteriores a la compilación no se ejecutan si el proyecto está actualizado y no se desencadena ninguna compilación.
 
 5. En el cuadro **Línea de comandos del evento posterior a la compilación**, especifique la sintaxis del evento de compilación.
 
-    > [!NOTE]
-    > Agregue una instrucción `call` antes de todos los comandos posteriores a la compilación que ejecutan archivos *.bat*. Por ejemplo: `call C:\MyFile.bat` o `call C:\MyFile.bat call C:\MyFile2.bat`.
+   > [!NOTE]
+   > Agregue una instrucción `call` antes de todos los comandos posteriores a la compilación que ejecutan archivos *.bat*. Por ejemplo, `call C:\MyFile.bat` o `call C:\MyFile.bat call C:\MyFile2.bat`.
 
 6. En el cuadro **Ejecutar el evento posterior a la compilación**, especifique en qué condiciones se ejecuta el evento posterior a la compilación.
 
-    > [!NOTE]
-    > Para agregar una sintaxis más larga o para seleccionar cualquier macro de compilación desde el [cuadro de diálogo Línea de comandos del evento anterior/posterior a la compilación](../ide/reference/pre-build-event-post-build-event-command-line-dialog-box.md), haga clic en el botón de puntos suspensivos (**...**) para mostrar un cuadro de edición.
+   > [!NOTE]
+   > Para agregar una sintaxis más larga o para seleccionar cualquier macro de compilación desde el [cuadro de diálogo Línea de comandos del evento anterior/posterior a la compilación](../ide/reference/pre-build-event-post-build-event-command-line-dialog-box.md), haga clic en el botón de puntos suspensivos ( **...** ) para mostrar un cuadro de edición.
 
-     La sintaxis del evento de compilación puede incluir cualquier comando que sea válido en un símbolo del sistema o en un archivo *.bat*. El nombre de un archivo por lotes debe ir precedido por `call` para garantizar que todos los comandos posteriores se ejecuten.
+   La sintaxis del evento de compilación puede incluir cualquier comando que sea válido en un símbolo del sistema o en un archivo *.bat*. El nombre de un archivo por lotes debe ir precedido por `call` para garantizar que todos los comandos posteriores se ejecuten.
 
-    > [!NOTE]
-    > Si su evento anterior o posterior a la compilación no se completa correctamente, puede finalizar la compilación haciendo que la acción del evento salga con un código distinto de cero (0), que indica que la acción se ha realizado correctamente.
+   > [!NOTE]
+   > Si su evento anterior o posterior a la compilación no se completa correctamente, puede finalizar la compilación haciendo que la acción del evento salga con un código distinto de cero (0), que indica que la acción se ha realizado correctamente.
 
 ## <a name="example"></a>Ejemplo
 
-En el procedimiento siguiente se muestra cómo establecer la versión de sistema operativo mínima en el manifiesto de aplicación con un comando *.exe* que se llame desde un evento posterior a la compilación (el archivo *.exe.manifest* en el directorio del proyecto). La versión mínima del sistema operativo es un número de cuatro partes como 4.10.0.0. Para realizar esto, el comando cambiará la sección `<dependentOS>` del manifiesto:
+En el procedimiento siguiente se muestra cómo establecer la versión de sistema operativo mínima en el manifiesto de aplicación con un comando *.exe* que se llame desde un evento posterior a la compilación (el archivo *.exe.manifest* en el directorio del proyecto). La versión mínima del sistema operativo es un número de cuatro partes como 4.10.0.0. Para establecer la versión mínima del sistema operativo, el comando cambiará la sección `<dependentOS>` del manifiesto:
 
 ```xml
 <dependentOS>
@@ -83,11 +84,11 @@ En el procedimiento siguiente se muestra cómo establecer la versión de sistema
    class Program
    {
       /// <summary>
-      /// This function will set the minimum operating system version for a ClickOnce application.
+      /// This function sets the minimum operating system version for a ClickOnce application.
       /// </summary>
       /// <param name="args">
       /// Command Line Arguments:
-      /// 0 - Path to application manifest (.exe.manifest).
+      /// 0 - Path to application manifest (.exe.manifest)
       /// 1 - Version of OS
       ///</param>
       static void Main(string[] args)
@@ -135,7 +136,7 @@ En el procedimiento siguiente se muestra cómo establecer la versión de sistema
 
 5. Copie el archivo *.exe* en un directorio, por ejemplo, *C:\TEMP\ChangeOSVersionVB.exe*.
 
-   Después, invoque este comando en un evento posterior a la compilación para modificar el manifiesto de aplicación.
+Después, invoque este comando en un evento posterior a la compilación para modificar el manifiesto de aplicación.
 
 ### <a name="invoke-a-post-build-event-to-modify-the-application-manifest"></a>Invocación de un evento posterior a la compilación para modificar el manifiesto de aplicación
 
@@ -147,35 +148,35 @@ En el procedimiento siguiente se muestra cómo establecer la versión de sistema
 
 4. Publique el proyecto haciendo clic en **Publicar ahora**.
 
-     El archivo de manifiesto se compila y se guarda en *C:\TEMP\CSWinApp_1_0_0_0\CSWinApp.exe.manifest*. Para ver el manifiesto, haga clic con el botón derecho en el archivo, haga clic en **Abrir con**, seleccione **Seleccionar el programa de la lista** y, después, haga clic en **Bloc de notas**.
+   El archivo de manifiesto se compila y se guarda en *C:\TEMP\CSWinApp_1_0_0_0\CSWinApp.exe.manifest*. Para ver el manifiesto, haga clic con el botón derecho en el archivo, haga clic en **Abrir con**, seleccione **Seleccionar el programa de la lista** y, después, haga clic en **Bloc de notas**.
 
-     Busque el archivo para el elemento `<osVersionInfo>`. Por ejemplo, la versión puede ser:
+   Busque el archivo para el elemento `<osVersionInfo>`. Por ejemplo, la versión puede ser:
 
-    ```xml
-    <os majorVersion="4" minorVersion="10" buildNumber="0" servicePackMajor="0" />
-    ```
+   ```xml
+   <os majorVersion="4" minorVersion="10" buildNumber="0" servicePackMajor="0" />
+   ```
 
 5. En el **Diseñador de proyectos**, haga clic en la pestaña **Eventos de compilación** y luego, en **Edición posterior a la compilación**.
 
 6. En el cuadro **Línea de comandos del evento posterior a la compilación**, escriba el comando siguiente:
 
-     `C:\TEMP\ChangeOSVersionCS.exe "$(TargetPath).manifest" 5.1.2600.0`
+   `C:\TEMP\ChangeOSVersionCS.exe "$(TargetPath).manifest" 5.1.2600.0`
 
-     Al compilar el proyecto, este comando cambiará la versión mínima del sistema operativo en el manifiesto de aplicación a 5.1.2600.0.
+   Al compilar el proyecto, este comando cambiará la versión mínima del sistema operativo en el manifiesto de aplicación a 5.1.2600.0.
 
-     Como la macro `$(TargetPath)` expresa la ruta de acceso completa del archivo ejecutable que se crea, `$(TargetPath)`*.manifest* especificará el manifiesto de aplicación que se ha creado en el directorio *bin*. La publicación copiará este manifiesto en la ubicación de publicación que ha establecido anteriormente.
+   Como la macro `$(TargetPath)` expresa la ruta de acceso completa del archivo ejecutable que se crea, `$(TargetPath).manifest` especifica el manifiesto de aplicación que se ha creado en el directorio *bin*. La publicación copiará este manifiesto en la ubicación de publicación que ha establecido anteriormente.
 
 7. Vuelva a publicar el proyecto.
 
-     La versión del manifiesto debe ahora indicar:
+   La versión del manifiesto debe ahora indicar:
 
-    ```xml
-    <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
-    ```
+   ```xml
+   <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+   ```
 
 ## <a name="see-also"></a>Vea también
 
 - [Página Eventos de compilación, (Diseñador de proyectos) (C#)](../ide/reference/build-events-page-project-designer-csharp.md)
 - [Línea de comandos del evento anterior/posterior a la compilación (Cuadro de diálogo)](../ide/reference/pre-build-event-post-build-event-command-line-dialog-box.md)
-- [Cómo: Especificar eventos de compilación (Visual Basic)](../ide/how-to-specify-build-events-visual-basic.md)
+- [Uso de Especificar eventos de compilación (Visual Basic)](../ide/how-to-specify-build-events-visual-basic.md)
 - [Compilar y generar](../ide/compiling-and-building-in-visual-studio.md)

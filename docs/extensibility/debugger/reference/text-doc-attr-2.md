@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - TEXT_DOC_ATTR_2 enumeration
 ms.assetid: 2333b33b-042b-4ac6-9ebe-e66f95f52f51
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6167c5472f06e016fa45f17fb7cb493224f1668b
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 24c5bc4a25bae6da1831f242501fdf0d6b66ca26
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56700619"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66322313"
 ---
 # <a name="textdocattr2"></a>TEXT_DOC_ATTR_2
 Describe los atributos de un documento.
@@ -34,12 +37,13 @@ public const uint TEXT_DOC_ATTR_READONLY_2 = 0x00000001;
 ```
 
 ## <a name="members"></a>Miembros
- TEXT_DOC_ATTR_READONLY_2 indica que el documento es de solo lectura.
+ `TEXT_DOC_ATTR_READONLY_2`\
+ Indica que el documento es de solo lectura.
 
 ## <a name="remarks"></a>Comentarios
 
 > [!NOTE]
->  Este valor no está definido realmente en el ensamblado de C#. En su lugar, debe copiar la definición en el archivo de origen.
+> Este valor no está definido realmente en el ensamblado de C#. En su lugar, debe copiar la definición en el archivo de origen.
 
  Se pasa como argumento a la [onUpdateDocumentAttributes](../../../extensibility/debugger/reference/idebugdocumenttextevents2-onupdatedocumentattributes.md) método.
 

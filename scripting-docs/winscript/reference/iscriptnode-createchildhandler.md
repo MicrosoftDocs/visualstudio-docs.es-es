@@ -1,5 +1,5 @@
 ---
-title: IScriptNode::CreateChildHandler | Microsoft Docs
+title: 'Iscriptnode (:: CreateChildHandler | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: bca8b30021d39638f3755bace2625bb38a44242d
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 9e024bb7d6a81b35994edddfe9e71666b0ee8df0
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58149252"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72573596"
 ---
 # <a name="iscriptnodecreatechildhandler"></a>IScriptNode::CreateChildHandler
-Agrega un scriptlet como una instancia secundaria de un `IScriptNode`.  
+Agrega un Scriptlet como una instancia secundaria de un `IScriptNode`.  
   
 ## <a name="syntax"></a>Sintaxis  
   
@@ -46,49 +46,49 @@ HRESULT CreateChildHandler(
   
 #### <a name="parameters"></a>Parámetros  
  `pszDefaultName`  
- [in] La dirección del nombre predeterminado para asociar el scriptlet.  
+ de Dirección del nombre predeterminado que se va a asociar al Scriptlet.  
   
  `prgpszNames`  
- [in, size_is (`cpszNames`)] lista de identificadores de nombre completo del host.  
+ [in, size_is (`cpszNames`)] Una lista de identificadores del nombre completo en el host.  
   
  `cpszNames`  
- [in] El número de identificadores en el `prgpszNames` parámetro.  
+ de Número de identificadores en el parámetro `prgpszNames`.  
   
  `pszEvent`  
- [in] La dirección de búfer que identifica el nombre de evento asociado al scriptlet.  
+ de La dirección de búfer que identifica el nombre de evento asociado al Scriptlet.  
   
  `pszDelimiter`  
- [in] La dirección del delimitador final del bloque de script. Para el análisis, el host normalmente utiliza un delimitador (por ejemplo, dos comillas simples), para detectar el final del bloque de script.  
+ de Dirección del delimitador de bloque de script final. Para el análisis, el host normalmente usa un delimitador (como dos comillas simples) para detectar el final del bloque de script.  
   
- El delimitador permite por el motor de creación de script de preprocesamiento. Por ejemplo, el motor podría reemplazar una comilla simple con dos comillas simples para su uso como un delimitador. El motor determina cómo se usa el delimitador.  
+ El delimitador permite el preprocesamiento por parte del motor de creación de scripts. Por ejemplo, el motor podría reemplazar una comilla simple con dos comillas simples para su uso como delimitador. El motor determina cómo se usa el delimitador.  
   
- Se establece en NULL si no hay delimitador se utiliza para identificar el final del bloque de script.  
+ Se establece en NULL si no se usa ningún delimitador para identificar el final del bloque de script.  
   
  `ptiSignature`  
- [in] La información de tipo para un objeto de función.  
+ de Información de tipo para un objeto de función.  
   
  `iMethodSignature`  
- [in] El índice de la función en el `ITypeInfo``ptiSignature` parámetro.  
+ de Índice de la función en el parámetro `ITypeInfo``ptiSignature`.  
   
  `isn`  
- [in] El índice del elemento secundario en el elemento primario.  
+ de Índice del elemento secundario del elemento primario.  
   
  `dwCookie`  
- [in] Un valor definido por la aplicación que se usa para asociar la entrada con el objeto host.  
+ de Un valor definido por la aplicación que se utiliza para asociar la entrada con el objeto host.  
   
  `ppse`  
- [out] La dirección de una variable que recibe un puntero a la `IScriptEntry` interfaz de la instancia secundaria.  
+ enuncia Dirección de una variable que recibe un puntero a la interfaz `IScriptEntry` de la instancia secundaria.  
   
 ## <a name="return-value"></a>Valor devuelto  
- Una clase `HRESULT`. Entre los valores posibles se incluyen los que se indican en la tabla siguiente, entre otros.  
+ Interfaz `HRESULT`. Entre los valores posibles se incluyen los que se indican en la tabla siguiente, entre otros.  
   
 |Valor|Descripción|  
 |-----------|-----------------|  
 |`S_OK`|El método se realizó correctamente.|  
   
 ## <a name="remarks"></a>Comentarios  
- Scriptlet especifica un controlador de eventos. Este método crea un scriptlet si se llama un `IScriptNode` objeto que representa una página Web. Este método no se realiza correctamente si se llama mediante otras interfaces.  
+ Un Scriptlet especifica un controlador de eventos. Este método crea un Scriptlet si lo llama un objeto `IScriptNode` que representa una página web. Este método no se realiza correctamente si lo llaman otras interfaces.  
   
 ## <a name="see-also"></a>Vea también  
- [IScriptNode (interfaz)](../../winscript/reference/iscriptnode-interface.md)   
+ @No__t_1 de la [interfaz iscriptnode (](../../winscript/reference/iscriptnode-interface.md)  
  [IScriptEntry (Interfaz)](../../winscript/reference/iscriptentry-interface.md)

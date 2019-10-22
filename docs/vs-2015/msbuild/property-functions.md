@@ -11,12 +11,12 @@ caps.latest.revision: 35
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 85fb100e09dd61e836404ecf98f8f7292ff2ee86
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 4108e478e9e77a5ed5699b39dfae44884a6befd3
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60065187"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67826177"
 ---
 # <a name="property-functions"></a>Funciones de propiedad
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,13 +29,13 @@ En .NET Framework versiones 4 y 4.5, se pueden usar funciones de propiedad para 
   
 - [Sintaxis de las funciones de propiedad](#BKMK_Syntax)  
   
-    - [Funciones de propiedad de cadena](#BKMK_String)  
-  
-    - [Funciones de propiedad estática](#BKMK_Static)  
-  
-    - [Llamar a métodos de instancia en propiedades estáticas](#BKMK_InstanceMethods)  
-  
-    - [Funciones de propiedad de MSBuild](#BKMK_PropertyFunctions)  
+  - [Funciones de propiedad de cadena](#BKMK_String)  
+
+  - [Funciones de propiedad estática](#BKMK_Static)  
+
+  - [Llamar a métodos de instancia en propiedades estáticas](#BKMK_InstanceMethods)  
+
+  - [Funciones de propiedad de MSBuild](#BKMK_PropertyFunctions)  
   
 - [Funciones de propiedad anidada](#BKMK_Nested)  
   
@@ -188,7 +188,7 @@ En .NET Framework versiones 4 y 4.5, se pueden usar funciones de propiedad para 
   
  Esta es una lista de las funciones de propiedad de MSBuild:  
   
-|Firma de la función|Descripción|  
+|Firma de la función|DESCRIPCIÓN|  
 |------------------------|-----------------|  
 |double Add(double a, double b)|Suma dos valores double.|  
 |long Add(long a, long b)|Suma dos valores long.|  
@@ -332,6 +332,6 @@ Output:
 -->  
 ```
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Otras referencias
 [Propiedades de MSBuild](msbuild-properties1.md)   
 [Información general sobre MSBuild](msbuild.md)

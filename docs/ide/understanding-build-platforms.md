@@ -12,17 +12,17 @@ f1_keywords:
 helpviewer_keywords:
 - build platforms [Visual Studio]
 ms.assetid: c1e5da1b-cda1-4545-b46c-0440fba27485
-author: gewarren
-ms.author: gewarren
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3deab6ab77dabe981ada88d5d960c2fe3c8e2a1f
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: dbe00e53942827c96831889339f82d2f5e4dff7a
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55930277"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68925833"
 ---
 # <a name="understand-build-platforms"></a>Descripción de las plataformas de compilación
 
@@ -30,9 +30,11 @@ Puede almacenar versiones diferentes de las propiedades de solución y de proyec
 
 ## <a name="in-this-section"></a>En esta sección
 
- [Cómo: Configurar proyectos para plataformas de destino](../ide/how-to-configure-projects-to-target-platforms.md) Se explica cómo configurar un proyecto destinado a una plataforma específica.
+[Cómo: Configuración de proyectos para plataformas de destino](../ide/how-to-configure-projects-to-target-platforms.md)\
+Explica cómo configurar un proyecto destinado a una plataforma específica.
 
- [Cómo: Configurar proyectos para múltiples plataformas de destino](../ide/how-to-configure-projects-to-target-multiple-platforms.md) Se explica cómo configurar un proyecto destinado a varias plataformas.
+[Cómo: Configuración de proyectos para destinarlos a varias plataformas](../ide/how-to-configure-projects-to-target-multiple-platforms.md)\
+Explica cómo configurar un proyecto destinado a varias plataformas.
 
 ## <a name="see-also"></a>Vea también
 

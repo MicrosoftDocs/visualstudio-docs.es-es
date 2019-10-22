@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 55884fe34fda7f29370439d8a792a595763292b0
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: ed0f396613cea4ec2b6d9869e3ef1b121cac236b
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56624209"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66747374"
 ---
 # <a name="msbuild-task-reference"></a>Referencia de tareas de MSBuild
 
@@ -169,7 +169,7 @@ Además de los parámetros mostrados en los temas de esta sección, cada tarea t
 
 - [Tarea GetFrameworkPath](../msbuild/getframeworkpath-task.md)
 
- Recupera la ruta de acceso a los ensamblados de [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)].
+ Recupera la ruta de acceso a los ensamblados de .NET Framework.
 
 - [Tarea GetFrameworkSdkPath](../msbuild/getframeworksdkpath-task.md)
 

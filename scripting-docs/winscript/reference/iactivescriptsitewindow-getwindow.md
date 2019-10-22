@@ -1,5 +1,5 @@
 ---
-title: IActiveScriptSiteWindow::GetWindow | Microsoft Docs
+title: 'IActiveScriptSiteWindow:: GetWindow | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 7b6efa066765339375a8315695aa9c1de2f9c46b
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: d8263db447c7692ec7b0982127d63b4bea588a4b
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58154249"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72574352"
 ---
 # <a name="iactivescriptsitewindowgetwindow"></a>IActiveScriptSiteWindow::GetWindow
-Recupera el identificador de una ventana que puede actuar como el propietario de una ventana emergente que se debe mostrar el motor de scripting.  
+Recupera el identificador de una ventana que puede actuar como propietario de una ventana emergente que debe mostrar el motor de scripting.  
   
 ## <a name="syntax"></a>Sintaxis  
   
@@ -37,13 +37,13 @@ HRESULT GetWindow(
   
 #### <a name="parameters"></a>Parámetros  
  `phwnd`  
- [out] Dirección de una variable que recibe el identificador de ventana.  
+ enuncia Dirección de una variable que recibe el identificador de ventana.  
   
 ## <a name="return-value"></a>Valor devuelto  
- Devuelve `S_OK` si se realiza correctamente, o `E_FAIL` si se produjo un error.  
+ Devuelve `S_OK` si se realiza correctamente, o `E_FAIL` si se produce un error.  
   
 ## <a name="remarks"></a>Comentarios  
- Este método es similar a la `IOleWindow::GetWindow` método.  
+ Este método es similar al método `IOleWindow::GetWindow`.  
   
 ## <a name="see-also"></a>Vea también  
  [IActiveScriptSiteWindow](../../winscript/reference/iactivescriptsitewindow.md)

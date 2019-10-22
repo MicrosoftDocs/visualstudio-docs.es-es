@@ -1,5 +1,5 @@
 ---
-title: NameSearchOptions | Microsoft Docs
+title: Namesearchoptions (| Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e7dbb82946d185e8e5ec81b171f5d9943751eee4
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.openlocfilehash: f9c2b06e8d89405b38afe2b740ce860a78bc46cc
+ms.sourcegitcommit: 044bb54cb4552c8f4651feb11d62e52726117e75
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56639692"
+ms.lasthandoff: 07/30/2019
+ms.locfileid: "68661810"
 ---
 # <a name="namesearchoptions"></a>NameSearchOptions
-Especifica las opciones de búsqueda para los nombres de archivo y símbolos.
+Especifica las opciones de búsqueda para los nombres de símbolos y archivos.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -45,15 +45,15 @@ enum NameSearchOptions {
 ## <a name="elements"></a>Elementos
 `nsNone` No se especifica ninguna opción.
 
-`nsfCaseSensitive` Se aplica a una coincidencia de nombre distingue mayúsculas de minúsculas.
+`nsfCaseSensitive`Aplica una coincidencia de nombre que distingue entre mayúsculas y minúsculas.
 
-`nsfCaseInsensitive` Se aplica a una coincidencia de mayúsculas y minúsculas del nombre.
+`nsfCaseInsensitive`Aplica una coincidencia de nombre que no distingue mayúsculas de minúsculas.
 
-`nsfFNameExt` Trata los nombres como rutas de acceso y se aplica a la coincidencia de nombres nombreDeArchivo.ext.
+`nsfFNameExt`Trata los nombres como rutas de acceso y aplica una coincidencia de nombre de archivo. ext.
 
-`nsfRegularExpression` Se aplica a una coincidencia de mayúsculas y minúsculas del nombre con asteriscos (*) y signos de interrogación (?) como caracteres comodín.
+`nsfRegularExpression`Aplica una coincidencia de nombres que distingue entre mayúsculas y minúsculas mediante asteriscos (*) y signos de interrogación (?) como caracteres comodín. (No se admiten otros caracteres comunes de expresiones regulares).
 
-`nsfUndecoratedName` Solo se aplica a los símbolos que tienen tanto no representativos y nombres representativos.
+`nsfUndecoratedName`Solo se aplica a símbolos que tienen nombres no representativos y representativos.
 
 ## <a name="remarks"></a>Comentarios
 Los valores de esta enumeración se pasan a los métodos siguientes:
@@ -65,7 +65,7 @@ Los valores de esta enumeración se pasan a los métodos siguientes:
 - [IDiaSymbol::findChildren](../../debugger/debug-interface-access/idiasymbol-findchildren.md)
 
 ## <a name="requirements"></a>Requisitos
-Encabezado: dia2.h
+Encabezado: Dia2. h
 
 ## <a name="see-also"></a>Vea también
 - [Enumeraciones y estructuras](../../debugger/debug-interface-access/enumerations-and-structures.md)

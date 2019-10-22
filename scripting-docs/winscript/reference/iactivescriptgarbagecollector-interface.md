@@ -1,5 +1,5 @@
 ---
-title: IActiveScriptGarbageCollector (interfaz) | Documentos de Microsoft
+title: Interfaz IActiveScriptGarbageCollector | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -11,15 +11,15 @@ caps.latest.revision: 3
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b53a53c03a7b76050c8d4264048f0549f5142183
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 28e495f89f97ba645bb6131176fa15f1d2aa55c3
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58157677"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72573570"
 ---
 # <a name="iactivescriptgarbagecollector-interface"></a>IActiveScriptGarbageCollector (Interfaz)
-Proporciona un método para iniciar la recolección de elementos no utilizados. Esta interfaz debe implementarse mediante motores de Script activo que desean limpiar sus recursos.  
+Proporciona un método para iniciar la recolección de elementos no utilizados. Esta interfaz debe implementarse mediante motores de script activos que deseen limpiar sus recursos.  
   
 ## <a name="methods"></a>Métodos  
   

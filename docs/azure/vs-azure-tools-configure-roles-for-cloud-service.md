@@ -9,19 +9,19 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 03/21/2017
 ms.author: ghogen
-ms.openlocfilehash: 06914374169d3d6dab6dd5a489461c11ddbc66aa
-ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
-ms.translationtype: HT
+ms.openlocfilehash: ded315917fb0e40159aed327ed98f747bb31c4b1
+ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/27/2019
-ms.locfileid: "56953893"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71253599"
 ---
 # <a name="configure-azure-cloud-service-roles-with-visual-studio"></a>Configuración de los roles para un servicio de Azure con Visual Studio
 Un servicio en la nube de Azure puede tener uno o más roles web o de trabajo. Para cada rol, debe definir cómo se configura ese rol y cómo se ejecuta. Para obtener más información sobre los roles en servicios en la nube, vea el vídeo [Introducción a Azure Cloud Services](https://channel9.msdn.com/Series/Windows-Azure-Cloud-Services-Tutorials/Introduction-to-Windows-Azure-Cloud-Services).
 
 La información para su servicio en la nube se almacena en los siguientes archivos:
 
-- **ServiceDefinition.csdef**: el archivo de definición de servicio define la configuración del tiempo de ejecución de su servicio en la nube, incluidos los roles que se requieren, los puntos de conexión y el tamaño de la máquina virtual. Ninguno de los datos almacenados en `ServiceDefinition.csdef` se puede cambiar cuando se ejecuta el rol.
+- **ServiceDefinition. csdef** : el archivo de definición de servicio define la configuración en tiempo de ejecución para el servicio en la nube, incluidos los roles necesarios, los puntos de conexión y el tamaño de la máquina virtual. Ninguno de los datos almacenados en `ServiceDefinition.csdef` se puede cambiar cuando se ejecuta el rol.
 - **ServiceConfiguration.cscfg**: el archivo de configuración de servicio configura el número de instancias de un rol que se ejecutan y los valores de la configuración definida para un rol. Los datos almacenados en `ServiceConfiguration.cscfg` se pueden cambiar mientras se ejecuta el rol.
 
 Para almacenar diferentes valores de la configuración que controlan el funcionamiento de su rol, puede tener varias configuraciones del servicio. Puede usar una configuración de servicio diferente para cada entorno de implementación. Por ejemplo, puede establecer su cadena de conexión de la cuenta de almacenamiento para usar el Emulador de Azure Storage local en una configuración de servicio local y crear otra configuración del servicio para usar Azure Storage en la nube.
@@ -220,7 +220,7 @@ Puede agregar almacenamiento del sistema de archivos local para cada instancia d
     ![Nueva entrada de almacenamiento local](./media/vs-azure-tools-configure-roles-for-cloud-service/role-local-storage-tab-new-local-storage.png)
 
     - **Nombre**: escriba el nombre que desea utilizar para el nuevo almacenamiento local.
-    - **Tamaño (MB)**: especifique el tamaño en MB que necesita para el nuevo almacenamiento local.
+    - **Tamaño (MB)** : especifique el tamaño en MB que necesita para el nuevo almacenamiento local.
     - **Limpiar al reciclar rol**: seleccione esta opción para quitar los datos del almacenamiento local cuando se recicla la máquina virtual para este rol.
 
 1. Para eliminar una entrada de almacenamiento local, selecciónela y active **Remove Local Storage** (Quitar almacenamiento local).
@@ -235,27 +235,26 @@ En esta sección se indica cómo acceder mediante programación al almacenamient
 
 En el código siguiente se muestra un ejemplo de cómo escribir un archivo de texto en el almacenamiento local. Reemplace el marcador de posición &lt;LocalStorageName> por el valor adecuado.
 
-    ```csharp
-    // Retrieve an object that points to the local storage resource
-    LocalResource localResource = RoleEnvironment.GetLocalResource("<LocalStorageName>");
+```csharp
+// Retrieve an object that points to the local storage resource
+LocalResource localResource = RoleEnvironment.GetLocalResource("<LocalStorageName>");
 
-    //Define the file name and path
-    string[] paths = { localResource.RootPath, "MyLocalStorageTest.txt" };
-    String filePath = Path.Combine(paths);
+//Define the file name and path
+string[] paths = { localResource.RootPath, "MyLocalStorageTest.txt" };
+String filePath = Path.Combine(paths);
 
-    using (FileStream writeStream = File.Create(filePath))
-    {
-        Byte[] textToWrite = new UTF8Encoding(true).GetBytes("Testing Web role storage");
-        writeStream.Write(textToWrite, 0, textToWrite.Length);
-    }
-
-    ```
+using (FileStream writeStream = File.Create(filePath))
+{
+    Byte[] textToWrite = new UTF8Encoding(true).GetBytes("Testing Web role storage");
+    writeStream.Write(textToWrite, 0, textToWrite.Length);
+}
+```
 
 ### <a name="find-a-file-written-to-local-storage"></a>Búsqueda de un archivo escrito en el almacenamiento local
 
 Para ver el archivo creado por el código de la sección anterior, siga estos pasos:
 
-1.  En el área de notificación de Windows, haga clic con el botón derecho en el icono de Azure y, en el menú contextual, seleccione **Show Compute Emulator UI** (Mostrar la interfaz de usuario del emulador de proceso).
+1. En el área de notificación de Windows, haga clic con el botón derecho en el icono de Azure y, en el menú contextual, seleccione **Show Compute Emulator UI** (Mostrar la interfaz de usuario del emulador de proceso).
 
     ![Mostrar el emulador de proceso de Azure](./media/vs-azure-tools-configure-roles-for-cloud-service/show-compute-emulator.png)
 

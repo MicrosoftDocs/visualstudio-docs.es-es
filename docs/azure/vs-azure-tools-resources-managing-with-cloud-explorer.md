@@ -9,12 +9,12 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 03/25/2017
 ms.author: ghogen
-ms.openlocfilehash: 2abfb87ff4a97201246f9a9c284871db5e5f0068
-ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
+ms.openlocfilehash: a5be67673e6f806cb149b19b08244ca0da555ae2
+ms.sourcegitcommit: 44e9b1d9230fcbbd081ee81be9d4be8a485d8502
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "58857169"
+ms.lasthandoff: 08/30/2019
+ms.locfileid: "70179802"
 ---
 # <a name="manage-the-resources-associated-with-your-azure-accounts-in-visual-studio-cloud-explorer"></a>Administración de los recursos asociados con las cuentas de Azure en Visual Studio Cloud Explorer
 
@@ -24,7 +24,7 @@ Del mismo modo que [Azure Portal](http://go.microsoft.com/fwlink/p/?LinkID=52504
 
 ## <a name="prerequisites"></a>Requisitos previos
 
-* Visual Studio 2017 o versión posterior (consulte las [descargas de Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019)) con la **carga de trabajo de Azure** seleccionada. También puede usar una versión anterior de Visual Studio con [Microsoft Azure SDK para .NET 2.9](https://www.microsoft.com/download/details.aspx?id=51657).
+* Visual Studio 2017 o versión posterior (consulte las [descargas de Visual Studio](https://visualstudio.microsoft.com/downloads)) con la **carga de trabajo de Azure** seleccionada. También puede usar una versión anterior de Visual Studio con [Microsoft Azure SDK para .NET 2.9](https://www.microsoft.com/download/details.aspx?id=51657).
 * Cuenta de Microsoft Azure: si todavía no tiene ninguna cuenta, puede [registrarse para una evaluación gratuita](http://go.microsoft.com/fwlink/?LinkId=623901) o [activar las ventajas de suscriptor de Visual Studio](http://go.microsoft.com/fwlink/?LinkId=623901).
 
 > [!NOTE]

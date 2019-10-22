@@ -7,17 +7,17 @@ helpviewer_keywords:
 - UI element design [Visual Studio SDK], VSPackages
 - VSPackages, contributing UI elements
 ms.assetid: abc5d9d9-b267-48a1-92ad-75fbf2f4c1b9
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ca4e817ae33d3129259de619e07bf256e6f544bd
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 1109d6aecf2bc89f72377b282be0182c1e677ed0
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60092323"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66311954"
 ---
 # <a name="how-vspackages-add-user-interface-elements"></a>Cómo VSPackages agregar elementos de la interfaz de usuario
 Un VSPackage puede agregar elementos de interfaz de usuario, por ejemplo, menús, barras de herramientas y las ventanas en Visual Studio por medio de la *.vsct* archivo.
@@ -63,7 +63,7 @@ Un VSPackage puede agregar elementos de interfaz de usuario, por ejemplo, menús
  El elemento de nivel superior de la `Symbols` sección es la [GuidSymbol (elemento)](../../extensibility/guidsymbol-element.md). `GuidSymbol` elementos asignan nombres a los GUID que se usan por el IDE para identificar los paquetes y sus componentes.
 
 > [!NOTE]
->  Los GUID se generan automáticamente la plantilla de paquete de Visual Studio. También puede crear un GUID único haciendo **crear GUID** en el **herramientas** menú.
+> Los GUID se generan automáticamente la plantilla de paquete de Visual Studio. También puede crear un GUID único haciendo **crear GUID** en el **herramientas** menú.
 
  La primera `GuidSymbol` elemento, `guid<PackageName>Pkg`, es el GUID del propio paquete. Este es el GUID que se usa Visual Studio para cargar el paquete. Normalmente, no tiene elementos secundarios.
 

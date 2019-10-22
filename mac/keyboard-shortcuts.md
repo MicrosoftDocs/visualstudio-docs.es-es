@@ -1,22 +1,22 @@
 ---
-title: Métodos abreviados de teclado predeterminados de Visual Studio para Mac
+title: Métodos abreviados de teclado predeterminados
 description: En este artículo se muestran los métodos abreviados de teclado predeterminados de Visual Studio para Mac
 ms.date: 03/14/2019
-author: bytesguy
-ms.author: adhartle
+author: asb3993
+ms.author: amburns
 ms.assetid: 48E06A61-7294-4EC8-A09D-1763C32AD910
-ms.openlocfilehash: a19c63b2ce32095a3af4aa4586b8ab0d604a14dc
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: b569887005d22a4eab7289c4ab940c9d9539d040
+ms.sourcegitcommit: 528178a304e66c0cb7ab98b493fe3c409f87493a
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58157859"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71273316"
 ---
 # <a name="default-keyboard-shortcuts-in-visual-studio-for-mac"></a>Métodos abreviados de teclado predeterminados de Visual Studio para Mac
 
-Para información sobre la accesibilidad de teclado, consulte [Uso de la navegación mediante el teclado](~/accessibility.md#how-to-use-keyboard-navigation).
+Para información sobre la accesibilidad de teclado, consulte [Uso de la navegación mediante el teclado](~/accessibility-keyboard.md).
 
-Puede acceder a una variedad de comandos de Visual Studio para Mac si usa el método abreviado de teclado correspondiente. En este documento se muestran los métodos abreviados predeterminados para el esquema de enlace de teclado de **Visual Studio**. Para más información sobre cómo cambiar el esquema de enlace de teclado, consulte [Personalización del IDE](~/customizing-the-ide.md#key-bindings). También puede personalizar los métodos abreviados de un comando con el elemento de menú **Visual Studio para Mac** > **Preferencias** y eligiendo **Entorno** > **Enlaces de teclado** en la ventana **Preferencias**.
+Puede acceder a una variedad de comandos de Visual Studio para Mac si usa el método abreviado de teclado correspondiente. En este documento se muestran los métodos abreviados predeterminados para el esquema de enlace de teclado de **Visual Studio para Mac**. Para más información sobre cómo cambiar el esquema de enlace de teclado, consulte [Personalización del IDE](~/customizing-the-ide.md#key-bindings). También puede personalizar los métodos abreviados de un comando con el elemento de menú **Visual Studio para Mac** > **Preferencias** y eligiendo **Entorno** > **Enlaces de teclado** en la ventana **Preferencias**.
 
 > [!TIP]
 > Los métodos abreviados de teclado que se muestran en este documento y las preferencias de enlaces de teclado de Visual Studio para Mac se presentan con los símbolos comúnmente usados en macOS. Si no está seguro de lo que significa un símbolo, revise la [tabla de búsqueda de los símbolos de teclas de macOS](#macos-key-symbols-lookup).
@@ -36,7 +36,7 @@ Puede acceder a una variedad de comandos de Visual Studio para Mac si usa el mé
 
 |Comandos|Métodos abreviados de teclado|
 |-|-|
-|Habilitar o deshabilitar punto de interrupción|**⌥⌘/**, **⌘F9**|
+|Habilitar o deshabilitar punto de interrupción|**⌥⌘/** , **⌘F9**|
 |Pausar|**⌥⌘P**, **⌥⌘L5**|
 |Quitar|**⇧⌘F9**|
 |Ejecutar hasta el cursor|**⌘F10**|
@@ -45,7 +45,7 @@ Puede acceder a una variedad de comandos de Visual Studio para Mac si usa el mé
 |Paso a paso por instrucciones|**⇧⌘I**, **⌘F11**|
 |Paso a paso para salir|**⇧⌘U**, **⇧⌘F11**|
 |Paso a paso por procedimientos|**⇧⌘O**, **F10**|
-|Alternar punto de interrupción|**⌘\\**, **F9**|
+|Alternar punto de interrupción|**⌘\\** , **F9**|
 |Ver puntos de interrupción|**⌥⌘B**|
 
 ## <a name="designer"></a>Diseñador
@@ -225,8 +225,8 @@ Puede acceder a una variedad de comandos de Visual Studio para Mac si usa el mé
 |Mostrar siguiente|**⌥⌘↓**, **F8**|
 |Mostrar anterior|**⌥⌘↑**, **⇧F8**|
 |Dos columnas de editor|**⌥⌘2**|
-|Acercar|**⌘+**, **⌘=**|
-|Alejar|**⌘-**, **⌘_**|
+|Acercar|**⌘+** , **⌘=**|
+|Alejar|**⌘-** , **⌘_**|
 
 ## <a name="window"></a>Ventana
 
@@ -244,8 +244,8 @@ Puede acceder a una variedad de comandos de Visual Studio para Mac si usa el mé
 |Ocultar otros|**⌥⌘H**|
 |Ocultar Visual Studio|**⌘H**|
 |Minimizar|**⌘M**|
-|Documento siguiente|**⌘}**, **⌘F6**|
-|Documento anterior|**⌘{**, **⇧⌘F6**|
+|Documento siguiente|**⌘}** , **⌘F6**|
+|Documento anterior|**⌘{** , **⇧⌘F6**|
 |Cambiar al documento siguiente|**⌃⇥**|
 |Cambiar al relleno siguiente|**⌃⌥⇥**|
 |Cambiar al documento anterior|**⌃⇧⇥**|
@@ -259,8 +259,8 @@ Puede acceder a una variedad de comandos de Visual Studio para Mac si usa el mé
 |⌥|**Opción** (**alt**)|
 |⇧|**Mayús**|
 |⌃|**Control** (**ctrl**)
-|⇞|**Retroceder página** (**Re. pág.**)|
-|⇟|**Avanzar página** (**Av. pág.**)|
+|⇞|**Retroceder página** (**Re. pág.** )|
+|⇟|**Avanzar página** (**Av. pág.** )|
 |⌫|**Borrar** (**Retroceso**)|
 |⌦|**Borrar hacia adelante**|
 |⏎|**Return**|

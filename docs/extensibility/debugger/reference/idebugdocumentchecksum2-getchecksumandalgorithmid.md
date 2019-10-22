@@ -6,17 +6,20 @@ helpviewer_keywords:
 - IDebugDocumentChecksum2::GetChecksumAndAlgorithmI
 - GetChecksumAndAlgorithmI
 ms.assetid: 25efef99-0ef3-4332-a752-607605fc6e67
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0f1a00b34aa640f9198649552ad7f1620d9b026d
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 20cf33743d222e160458afcdcf186022a7405fa3
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56704623"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66350078"
 ---
 # <a name="idebugdocumentchecksum2getchecksumandalgorithmid"></a>IDebugDocumentChecksum2::GetChecksumAndAlgorithmId
 Recupera el identificador de suma de comprobación y el algoritmo de documento dado el número máximo de bytes que se utilizará.
@@ -41,22 +44,18 @@ public int GetChecksumAndAlgorithmId(
 );
 ```
 
-#### <a name="parameters"></a>Parámetros
-`pRetVal`
+## <a name="parameters"></a>Parámetros
+`pRetVal`\
+[out] Identificador único para el algoritmo de suma de comprobación.
 
- [out] Identificador único para el algoritmo de suma de comprobación.
+`cMaxBytes`\
+[in] Número máximo de bytes que se usará para la suma de comprobación.
 
-`cMaxBytes`
+`pChecksum`\
+[out] Valor de la suma de comprobación.
 
- [in] Número máximo de bytes que se usará para la suma de comprobación.
-
-`pChecksum`
-
- [out] Valor de la suma de comprobación.
-
-`pcNumBytes`
-
- [out] Número real de bytes utilizados por la suma de comprobación.
+`pcNumBytes`\
+[out] Número real de bytes utilizados por la suma de comprobación.
 
 ## <a name="return-value"></a>Valor devuelto
 Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.

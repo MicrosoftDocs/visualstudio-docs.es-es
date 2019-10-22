@@ -1,20 +1,28 @@
 ---
-title: Xamarin en Visual Studio para Mac
+title: Xamarin
 description: 'Xamarin en Visual Studio para Mac le permite crear aplicaciones multiplataforma destinadas a iOS, Mac, Android, tvOS y watchOS. '
-author: conceptdev
-ms.author: crdun
-ms.date: 02/12/2019
+author: therealjohn
+ms.author: johmil
+ms.date: 06/18/2019
 ms.assetid: 339F6051-5F90-48DC-8237-EBBC8A03A32B
-ms.openlocfilehash: 1a7ba3101713c4461f3d3558a97cdbea37eac604
-ms.sourcegitcommit: cdcbf254db737d42275e95de4ffc4f8c14e87e00
+ms.openlocfilehash: c8b6bddac92a9ec6b40ba08ebcdc3fe3577b0bc8
+ms.sourcegitcommit: ea182703e922c74725045afc251bcebac305068a
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57428575"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71211475"
 ---
 # <a name="xamarin-mobile-app-development"></a>Desarrollo de aplicaciones móviles con Xamarin
 
 La compatibilidad de primera clase con [Xamarin](/xamarin) le permite desarrollar experiencias nativas completas para Android, macOS, iOS, tvOS y watchOS. Las aplicaciones multiplataforma de Xamarin.Forms ayudan a compartir código de interfaz de usuario basado en XAML entre Android, iOS y macOS sin limitar el acceso a la funcionalidad nativa.
+
+## <a name="xamarinforms"></a>Xamarin.Forms
+
+La Recarga activa de XAML para Xamarin.Forms está integrada en Visual Studio para Mac, versión 8.3 y posteriores. Con esta característica habilitada, los cambios se reflejan inmediatamente en la aplicación en ejecución cada vez que se guarda el archivo.
+
+Para habilitar la Recarga activa de XAML, active la casilla **Enable Xamarin Hot Reload** (Habilitar la recarga activa de Xamarin) en **Visual Studio > Preferencias > Proyectos > Xamarin Hot Reload** (Recarga activa de Xamarin).
+
+Para obtener más información sobre la recarga activa, vea la [guía de Recarga activa de XAML para Xamarin.Forms](https://docs.microsoft.com/en-us/xamarin/xamarin-forms/xaml/hot-reload) dentro de la documentación.
 
 ## <a name="android"></a>Android
 
@@ -55,6 +63,6 @@ Xamarin Inspector proporciona una consola de C# interactiva con herramientas de 
 
 ![Xamarin Inspector](media/intro-inspector.png)
 
-Consta de una aplicación independiente que proporciona una consola de C# enriquecida que puede tener como destino varias plataformas de programación (Android, iOS, Mac y Windows), así como integrarse en el flujo de trabajo de depuración del IDE. 
+Consta de una aplicación independiente que proporciona una consola de C# enriquecida que puede tener como destino varias plataformas de programación (Android, iOS, Mac y Windows), así como integrarse en el flujo de trabajo de depuración del IDE.
 
 Para obtener más información, vea la guía de [Xamarin Inspector](/xamarin/tools/inspector/).

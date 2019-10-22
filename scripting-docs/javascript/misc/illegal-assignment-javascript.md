@@ -1,5 +1,5 @@
 ---
-title: Asignación no válida (JavaScript) | Documentos de Microsoft
+title: Asignación no válida (JavaScript) | Microsoft Docs
 ms.date: 01/18/2017
 ms.prod: visual-studio-windows
 ms.technology: vs-javascript
@@ -14,15 +14,15 @@ ms.assetid: abebe518-07d7-42cd-af50-00bfda17da08
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3fff0639659f7470b5f4baa69e4038b3544036c4
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 128eda12f555b4811b814801066bbb3effc4e374
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60044153"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72576558"
 ---
 # <a name="illegal-assignment-javascript"></a>Asignación no válida (JavaScript)
-Se intentó asignar un valor a un identificador de sólo lectura. No se puede asignar un valor a un identificador de solo lectura. Por ejemplo, el host define objetos y objetos COM externos.  
+Ha intentado asignar un valor a un identificador de solo lectura. No se puede asignar un valor a un identificador de solo lectura. Por ejemplo, objetos definidos por el host y objetos COM externos.  
   
 ### <a name="to-correct-this-error"></a>Para corregir este error  
   

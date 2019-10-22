@@ -1,5 +1,5 @@
 ---
-title: Filtrar Crear un sombreador Phong básico
+title: Procedimiento Crear un sombreador Phong básico
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: c7c69da8-142b-4d3b-9be9-4be0d5970b25
@@ -8,14 +8,14 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 131afbaf4fcbdf5456a6276a36c551a47b663eec
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 895b797ad07018a9f4d4bf4c14b7f358a26f8eaa
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55926144"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68924413"
 ---
-# <a name="how-to-create-a-basic-phong-shader"></a>Filtrar Crear un sombreador Phong básico
+# <a name="how-to-create-a-basic-phong-shader"></a>Procedimiento Crear un sombreador Phong básico
 
 En este artículo se muestra cómo usar el Diseñador de sombras y el lenguaje DGSL (Directed Graph Shader Language) para crear un sombreador de iluminación que implementa el modelo de iluminación Phong clásico.
 
@@ -44,20 +44,20 @@ Antes de empezar, asegúrese de que se muestran la ventana **Propiedades** y el 
 > [!NOTE]
 > Para demostrar mejor el efecto del sombreador en esta ilustración, se especificó un color naranja mediante el parámetro **MaterialDiffuse** del sombreador y un acabado de aspecto metálico mediante los parámetros **MaterialSpecular** y **MaterialSpecularPower**. Para obtener información sobre los parámetros de materiales, vea la sección Vista previa de sombreadores en [Diseñador de sombras](../designers/shader-designer.md).
 
- ![Gráfico de sombreador y vista previa de su efecto](../designers/media/digit-lighting-graph.png)
+![Gráfico de sombreador y vista previa de su efecto](../designers/media/digit-lighting-graph.png)
 
- Es posible que algunas formas proporcionen mejores vistas previas para algunos sombreadores. Para más información sobre cómo obtener una vista previa de los sombreadores en el Diseñador de sombras, vea la sección Vista previa de sombreadores en [Diseñador de sombras](../designers/shader-designer.md)
+Es posible que algunas formas proporcionen mejores vistas previas para algunos sombreadores. Para más información sobre cómo obtener una vista previa de los sombreadores en el Diseñador de sombras, vea la sección Vista previa de sombreadores en [Diseñador de sombras](../designers/shader-designer.md)
 
- La siguiente ilustración muestra el sombreador descrito en este documento aplicado a un modelo 3D. La propiedad **MaterialSpecular** se establece en (1,00, 0,50, 0,20, 0,00) y su propiedad **MaterialSpecularPower** se establece en 16.
+La siguiente ilustración muestra el sombreador descrito en este documento aplicado a un modelo 3D. La propiedad **MaterialSpecular** se establece en (1,00, 0,50, 0,20, 0,00) y su propiedad **MaterialSpecularPower** se establece en 16.
 
 > [!NOTE]
 > La propiedad **MaterialSpecular** determina el acabado aparente del material de la superficie. Una superficie muy brillante como el cristal o el plástico suele tener un color especular que es un tono brillante de blanco. Una superficie metálica suele tener un color especular próximo al color difuso. Una superficie con acabado satinado suele tener un color especular que es un tono oscuro de gris.
 >
 > La propiedad **MaterialSpecularPower** determina la intensidad de los reflejos especulares. Las potencias especulares altas simulan reflejos más opacos y localizados. Las potencias especulares muy bajas simulan reflejos intensos y circulares que pueden saturar en exceso y ocultar el color de toda la superficie.
 
- ![Iluminación Phong aplicada a un modelo](../designers/media/digit-lighting-model.png)
+![Iluminación Phong aplicada a un modelo](../designers/media/digit-lighting-model.png)
 
- Para obtener más información sobre cómo aplicar un sombreador a un modelo 3D, vea [Cómo: Aplicar un sombreador a un modelo en 3D](../designers/how-to-apply-a-shader-to-a-3-d-model.md).
+Para obtener más información sobre cómo aplicar un sombreador a un modelo 3D, vea [Cómo: Aplicar un sombreador a un modelo en 3D](../designers/how-to-apply-a-shader-to-a-3-d-model.md).
 
 ## <a name="see-also"></a>Vea también
 

@@ -11,12 +11,12 @@ ms.assetid: d1f985bd-743e-40b7-9458-d9af53647c91
 caps.latest.revision: 23
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 96e5bc47a12e838fb11aa82c18981805abc4ae7b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 8724c31accb26e478c2726dfe791256994fc95ca
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58997980"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65696857"
 ---
 # <a name="getting-font-and-color-information-for-text-colorization"></a>Obtención de información de fuente y Color para la coloración de texto
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,7 +26,7 @@ El proceso que se representa o muestra el texto con colores de elementos de inte
  La mayoría de las implementaciones que muestran texto con colores necesita el `T:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorDefaults` y asociados de interfaces para la configuración de pantalla de presentación, recuperar y almacenar texto.  
   
 > [!NOTE]
->  Al personalizar el editor básico (que admite el **texto EditorCategory**), se recomienda encarecidamente que utilice la tecnología de color en el servicio de lenguaje. Para obtener más información, consulte [información general de Color y fuente](../extensibility/font-and-color-overview.md).  
+> Al personalizar el editor básico (que admite el **texto EditorCategory**), se recomienda encarecidamente que utilice la tecnología de color en el servicio de lenguaje. Para obtener más información, consulte [información general de Color y fuente](../extensibility/font-and-color-overview.md).  
   
 ## <a name="getting-default-font-and-color-information"></a>Obtención de información de Color y fuente predeterminada  
  Todas las **fuentes y colores** se debe especificar la configuración de las ventanas de mostrar texto en el **elementos para mostrar** de uno **categoría**. Para obtener más información, consulte [fuentes y colores, entorno, cuadro de diálogo Opciones](../ide/reference/fonts-and-colors-environment-options-dialog-box.md).  
@@ -46,6 +46,6 @@ El proceso que se representa o muestra el texto con colores de elementos de inte
 ## <a name="see-also"></a>Vea también  
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorDefaultsProvider>   
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorDefaults>   
- [Utilizar fuentes y texto](http://msdn.microsoft.com/library/d43640f3-da94-4df2-a29d-a9d021a1c069)   
- [Trabajar con colores](http://msdn.microsoft.com/library/d34ff96f-241d-494f-abdd-13811ada8cd3)   
- [GDI (interfaz de dispositivo gráfico)](http://msdn.microsoft.com/7e1d4540-bb2e-4257-8eee-eee376acba83)
+ [Utilizar fuentes y texto](https://msdn.microsoft.com/library/d43640f3-da94-4df2-a29d-a9d021a1c069)   
+ [Trabajar con colores](https://msdn.microsoft.com/library/d34ff96f-241d-494f-abdd-13811ada8cd3)   
+ [GDI (interfaz de dispositivo gráfico)](https://msdn.microsoft.com/7e1d4540-bb2e-4257-8eee-eee376acba83)

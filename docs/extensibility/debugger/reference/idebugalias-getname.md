@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugAlias::GetName method
 ms.assetid: ac2d8891-56b5-40ef-9866-ed74f18bb043
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5858c5b559720486c24bf3fbc7562a13b9fb8372
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 037861ac9d4c1cfbf09b9fa45cd24e08318c036e
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56683888"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66338246"
 ---
 # <a name="idebugaliasgetname"></a>IDebugAlias::GetName
 Obtiene el nombre del alias.
@@ -36,10 +39,9 @@ int GetName(
 );
 ```
 
-#### <a name="parameters"></a>Parámetros
- `pbstrName`
-
- [out] Nombre del alias.
+## <a name="parameters"></a>Parámetros
+`pbstrName`\
+[out] Nombre del alias.
 
 ## <a name="return-value"></a>Valor devuelto
  Si se realiza correctamente, devuelve S_OK; en caso contrario, devuelve un código de error.

@@ -10,19 +10,19 @@ helpviewer_keywords:
 - Contents tab [Help Viewer]
 - table of contents filtering [Help Viewer]
 ms.assetid: 8b98464d-2b05-4710-ad68-5647e78c6b7b
-author: gewarren
-ms.author: gewarren
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: de77349ec3e8ddc4fd0b4716bc39bd84024d981c
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: bd55a95675505648179161ae3fb7cacea6a83104
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55942107"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67825074"
 ---
-# Filtrar para buscar temas en la tabla de contenido
+# Procedimiento para buscar temas en la tabla de contenido
 
 En la pestaña **Contenido**, puede usar la tabla de contenido (TDC) para buscar información. La tabla de contenido es una lista ampliable que contiene todos los temas en los libros instalados. Para obtener información de accesibilidad sobre cómo navegar por la TDC, vea [Teclas de método abreviado (Visor de Ayuda)](../help-viewer/shortcut-keys.md).
 
@@ -31,11 +31,11 @@ En la pestaña **Contenido**, puede usar la tabla de contenido (TDC) para buscar
 
 ## Filtrar la TDC
 
-Puede filtrar la TDC para limitar el ámbito de temas que aparecen en la pestaña **Contenido**. Los títulos se muestran en la lista solo si contienen la raíz del término que especifique. Por ejemplo, si especifica "solucionar" como un filtro, solo aparecerán los títulos que contengan "solucionar" o "solucionar problemas". Los nodos cuyos títulos no contienen el término se contraen en un único nodo con puntos suspensivos (**...**).
+Puede filtrar la TDC para limitar el ámbito de temas que aparecen en la pestaña **Contenido**. Los títulos se muestran en la lista solo si contienen la raíz del término que especifique. Por ejemplo, si especifica "solucionar" como un filtro, solo aparecerán los títulos que contengan "solucionar" o "solucionar problemas". Los nodos cuyos títulos no contienen el término se contraen en un único nodo con puntos suspensivos ( **...** ).
 
-1.  Elija la pestaña **Contenido**.
+1. Elija la pestaña **Contenido**.
 
-2.  En el cuadro de texto **Filtrar contenido**, escriba un término.
+2. En el cuadro de texto **Filtrar contenido**, escriba un término.
 
 > [!NOTE]
 > Si el filtro tarda mucho tiempo en ejecutarse, puede mostrar resultados más rápidamente mediante el operador de búsqueda avanzada `title:`.
@@ -44,9 +44,9 @@ Puede filtrar la TDC para limitar el ámbito de temas que aparecen en la pestañ
 
 Si abrió un tema mediante el índice o las características de búsqueda de texto completo, puede determinar dónde está este tema en la TDC sincronizándola con la ventana del tema.
 
-1.  Consulte un tema.
+1. Consulte un tema.
 
-2.  Haga clic en el botón **Mostrar tema en contenido** en la barra de herramientas o presione **Ctrl**+**S**.
+2. Haga clic en el botón **Mostrar tema en contenido** en la barra de herramientas o presione **Ctrl**+**S**.
 
      Se abre la pestaña **Contenido** y se muestra la ubicación del tema en la TDC.
 

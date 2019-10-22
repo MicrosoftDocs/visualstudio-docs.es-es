@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 18527e9b45726dbd76f1e76f5d63976278800f6f
-ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
+ms.openlocfilehash: 04a130528edbe8ab3aae0a24d69315b934b19d54
+ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58355346"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "69551428"
 ---
 # <a name="application-page-project-designer-c"></a>Página de aplicación, Diseñador de proyectos (C#)
 
@@ -50,14 +50,18 @@ Para obtener acceso a esta propiedad mediante programación, vea <xref:VSLangPro
 
 **Marco de destino**
 
-Especifica la versión de .NET Framework a la que se destina la aplicación. Esta opción puede tener valores diferentes dependiendo de qué versiones de .NET Framework están instaladas en el equipo.
+Especifica la versión de .NET a la que se destina la aplicación. Esta opción puede tener valores diferentes según las versiones de .NET instaladas en el equipo.
 
-El valor predeterminado corresponde a la plataforma de destino seleccionada al crear el proyecto.
+En los proyectos de .NET Framework, el valor predeterminado coincide con el marco de destino especificado al crear el proyecto.
+
+En un proyecto que tiene como destino .NET Core, las versiones disponibles pueden aparecer de este modo:
+
+![Versiones de marco de destino de un proyecto de .NET Core](../media/application-target-framework.png)
 
 > [!NOTE]
 > Los paquetes de requisitos previos incluidos en el [cuadro de diálogo Requisitos previos](../../ide/reference/prerequisites-dialog-box.md) se establecen automáticamente la primera vez que abre el cuadro de diálogo. Si posteriormente cambia la plataforma de destino del proyecto, debe seleccionar manualmente los requisitos previos para que coincidan con la nueva plataforma de destino.
 
-Para obtener más información, vea [Cómo: Usar como destino una versión de .NET Framework](../../ide/how-to-target-a-version-of-the-dotnet-framework.md) e [Información general sobre la compatibilidad con múltiples versiones (multi-targeting) en Visual Studio](../../ide/visual-studio-multi-targeting-overview.md).
+Para obtener más información, vea [Información general sobre destinos de Framework](../../ide/visual-studio-multi-targeting-overview.md).
 
 **Tipo de salida**
 
@@ -93,13 +97,15 @@ Las opciones **Recursos** ayudan a configurar los valores de recursos de la apli
 
 **Icono y manifiesto**
 
-De manera predeterminada, este botón de radio está seleccionado y las opciones **Icono** y **Manifiesto** están habilitadas. Esto le permite seleccionar su propio icono o seleccionar opciones de generación de manifiestos diferentes. Deje este botón de radio seleccionado a menos que vaya a proporcionar un archivo de recursos para el proyecto.
+De manera predeterminada, este botón de radio está seleccionado y las opciones **Icono** y **Manifiesto** están habilitadas. Esto permite seleccionar su propio icono o seleccionar otras opciones de generación de manifiestos. Deje este botón de radio seleccionado a menos que vaya a proporcionar un archivo de recursos para el proyecto.
 
 **Iconos**
 
 Establece el archivo *.ico* que quiere usar como icono del programa. Haga clic en **Examinar** para buscar un gráfico existente o escriba el nombre del archivo que quiere. Para obtener más información, vea [/win32icon (Opciones del compilador de C#)](/dotnet/csharp/language-reference/compiler-options/win32icon-compiler-option).
 
 Para obtener acceso a esta propiedad mediante programación, vea <xref:VSLangProj.ProjectProperties.ApplicationIcon%2A>.
+
+Para más información sobre cómo crear un icono, vea [Editor de imágenes para iconos](/cpp/windows/image-editor-for-icons).
 
 **Manifest**
 
@@ -116,3 +122,5 @@ Selecciona una opción de generación de manifiesto cuando la aplicación se eje
 Seleccione este botón de radio si va a proporcionar un archivo de recursos para el proyecto. Al seleccionar esta opción se deshabilitan las opciones **Icono** y **Manifiesto**.
 
 Escriba un nombre de ruta o use el botón Examinar (**...**) para agregar un archivo de recursos de Win32 al proyecto.
+
+Para más información, vea [Creación de archivos de recursos para aplicaciones .NET](/dotnet/framework/resources/creating-resource-files-for-desktop-apps).

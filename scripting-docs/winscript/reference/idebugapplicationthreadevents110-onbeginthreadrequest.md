@@ -1,5 +1,5 @@
 ---
-title: 'IDebugApplicationThreadEvents110:: OnBeginThreadRequest | Documentos de Microsoft'
+title: 'Idebugapplicationthreadevents110 (:: OnBeginThreadRequest | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -13,18 +13,18 @@ caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 47791151bcfe43966c166dfbd21e1135592d8249
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 8ee22f21b4e72f1018c4e11d23c355bfc682a8cb
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58152660"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72573368"
 ---
 # <a name="idebugapplicationthreadevents110-onbeginthreadrequest"></a>IDebugApplicationThreadEvents110 ::OnBeginThreadRequest
-Una llamada en el subproceso con el subproceso de PDM cambio ha comenzado.  
+Ha empezado una llamada al subproceso mediante el cambio de subprocesos de PDM.  
   
 > [!IMPORTANT]
->  [IDebugApplicationThreadEvents110 (interfaz)](../../winscript/reference/idebugapplicationthreadevents110-interface.md) es implementada por PDM v11.0 y versiones posteriores. Se encuentra en activdbg100.h.  
+> La [interfaz idebugapplicationthreadevents110 (](../../winscript/reference/idebugapplicationthreadevents110-interface.md) se implementa mediante PDM v 11.0 y versiones posteriores. Se encuentra en activdbg100.h.  
   
 ## <a name="syntax"></a>Sintaxis  
   

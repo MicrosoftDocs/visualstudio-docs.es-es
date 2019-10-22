@@ -8,12 +8,12 @@ ms.assetid: 3e893949-6398-42f1-9eab-a8d8c2b7f02d
 caps.latest.revision: 8
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 9644aeed1df42aa3a73af7d2cd7d7fa81bd27684
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 246464baea7e07e4d97e3483b423d200cf2b960c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60040836"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63430038"
 ---
 # <a name="common-control-patterns-for-visual-studio"></a>Patrones de Control comunes para Visual Studio
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -298,7 +298,7 @@ ms.locfileid: "60040836"
 
  Cuándo se debe usar el botón corto con solo puntos suspensivos:
 
-- Si hay más de un largo **[Examinar...]**  botón en un cuadro de diálogo, por ejemplo, al permitir que varios campos para la exploración. Utilice el breve **[...]**  cada uno evitar las claves de acceso confuso creadas esta situación (**& Examinar** y **e & xaminar** en el mismo cuadro de diálogo).
+- Si hay más de un largo **[Examinar...]**  botón en un cuadro de diálogo, por ejemplo, al permitir que varios campos para la exploración. Utilice el breve **[...]**  cada uno evitar las claves de acceso confuso creadas esta situación ( **& Examinar** y **e & xaminar** en el mismo cuadro de diálogo).
 
 - En un cuadro de diálogo estrecha, o cuando no hay ningún lugar razonable para colocar el botón de largo.
 
@@ -325,7 +325,7 @@ ms.locfileid: "60040836"
  Algunos de los botones deben utilizar siempre una imagen gráfica y nunca incluyen texto para ahorrar espacio y evitar problemas de localización. A menudo se usan en otras listas que se puede ordenar y selectores de campo.
 
 > [!NOTE]
->  Los usuarios tienen que tabulador para ir a estos botones (no hay ninguna clave de acceso), colóquelos en un orden significativo. Asignar la propiedad name del botón a la acción que realiza para que los lectores de pantalla interpretan correctamente la acción del botón.
+> Los usuarios tienen que tabulador para ir a estos botones (no hay ninguna clave de acceso), colóquelos en un orden significativo. Asignar la propiedad name del botón a la acción que realiza para que los lectores de pantalla interpretan correctamente la acción del botón.
 
 |||
 |-|-|
@@ -348,7 +348,7 @@ ms.locfileid: "60040836"
  Los hipervínculos son adecuados para las acciones basadas en la navegación, como la apertura de un tema de ayuda, cuadro de diálogo modal o el asistente. Si se usa un hipervínculo para un comando, siempre debería mostrar un cambio notable y visible para la interfaz de usuario. En general, las acciones que se compromete a una acción (por ejemplo, guardar, Cancelar y eliminar) se comunican mejor mediante un botón.
 
 #### <a name="writing-style"></a>Estilo de escritura
- Siga el [orientación de escritorio de Windows para el texto de la interfaz de usuario](https://msdn.microsoft.com/library/windows/desktop/dn742478\(v=vs.85\).aspx). No use "Aprender más acerca de," "Saber más acerca de" o "Get help con este" frases. En su lugar, frase de texto del vínculo de ayuda en cuanto a la pregunta principal por el contenido de ayuda. Por ejemplo, "**cómo agregar un servidor en el Explorador de servidores?**"
+ Siga el [orientación de escritorio de Windows para el texto de la interfaz de usuario](https://msdn.microsoft.com/library/windows/desktop/dn742478\(v=vs.85\).aspx). No use "Aprender más acerca de," "Saber más acerca de" o "Get help con este" frases. En su lugar, frase de texto del vínculo de ayuda en cuanto a la pregunta principal por el contenido de ayuda. Por ejemplo, "**cómo agregar un servidor en el Explorador de servidores?** "
 
 #### <a name="visual-style"></a>Estilo Visual
 
