@@ -51,4 +51,4 @@ El cuadro de diálogo **Información de ensamblado** se usa para especificar los
  **Crear ensamblado visible a través de COM** Especifica si los tipos del ensamblado están disponibles para COM. Se corresponde con <xref:System.Runtime.InteropServices.ComVisibleAttribute>.
 
 ## <a name="see-also"></a>Otras referencias
- [Página de aplicación, atributos del diseñador de proyectos (Visual Basic)](../../ide/reference/application-page-project-designer-visual-basic.md) [](https://msdn.microsoft.com/library/ae334cee-d96c-4243-a5e3-06dd7fcaf205)
+ [Página de aplicación, diseñador de proyectos (Visual Basic) ](../../ide/reference/application-page-project-designer-visual-basic.md) [Attributes](https://msdn.microsoft.com/library/ae334cee-d96c-4243-a5e3-06dd7fcaf205)
