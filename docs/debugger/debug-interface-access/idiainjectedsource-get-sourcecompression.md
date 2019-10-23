@@ -1,5 +1,5 @@
 ---
-title: Get_sourcecompression | Microsoft Docs
+title: 'IDiaInjectedSource:: get_sourceCompression | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 00c7783752a183e8afc580c4c74285add8a51041
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 9428b30df82d92a8c74511644aaf97f2166807a2
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62839919"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72743318"
 ---
-# <a name="idiainjectedsourcegetsourcecompression"></a>IDiaInjectedSource::get_sourceCompression
-Recupera el indicador de la compresión de origen utilizado.
+# <a name="idiainjectedsourceget_sourcecompression"></a>IDiaInjectedSource::get_sourceCompression
+Recupera el indicador de la compresión de origen utilizada.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -33,13 +33,13 @@ HRESULT get_sourceCompression ( 
 #### <a name="parameters"></a>Parámetros
  `pRetVal`
 
-[out] Devuelve el indicador de la compresión de origen utilizado. Un valor de cero indica que se ha utilizado ninguna compresión de origen.
+enuncia Devuelve el indicador de la compresión de origen utilizada. Un valor de cero indica que no se ha usado ninguna compresión de origen.
 
 ## <a name="return-value"></a>Valor devuelto
  Si la operación se realiza correctamente, devuelve `S_OK`. Devuelve `S_FALSE` si no se admite esta propiedad. De lo contrario, devuelve un código de error.
 
 ## <a name="remarks"></a>Comentarios
- El valor devuelto por este método es específico para el compilador usa. Por ejemplo, un compilador puede usar compresión Huffman estilo o codificación de longitud de ejecución.
+ El valor devuelto por este método es específico del compilador utilizado. Por ejemplo, un compilador puede utilizar codificación de longitud de ejecución o compresión de estilo Huffman.
 
 ## <a name="see-also"></a>Vea también
 - [IDiaInjectedSource](../../debugger/debug-interface-access/idiainjectedsource.md)

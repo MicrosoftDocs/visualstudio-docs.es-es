@@ -1,5 +1,5 @@
 ---
-title: 'Error: Equipo remoto no ha podido iniciar comunicaciones DCOM | Documentos de Microsoft'
+title: 'Error: el equipo remoto no pudo iniciar comunicaciones DCOM | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: troubleshooting
 f1_keywords:
@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7ceb796b3a4b3cbc2b239a09ac8c173e746f194c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 2d61fe145a8dc301c928b81f9b57f1a574865a1d
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62850898"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72737554"
 ---
 # <a name="error-remote-computer-could-not-initiate-dcom-communications"></a>Error: El equipo remoto no ha podido iniciar comunicaciones DCOM
 Se ha producido un error de DCOM cuando el equipo remoto ha intentado comunicarse con el equipo local. El equipo local es el equipo que está
@@ -32,7 +32,7 @@ Se ha producido un error de DCOM cuando el equipo remoto ha intentado comunicars
 
 ### <a name="to-correct-this-error"></a>Para corregir este error
 
-1. Si el equipo local tiene habilitado el Firewall de Windows, consulte [depuración remota](../debugger/remote-debugging.md) para obtener instrucciones sobre cómo configurar el firewall para la depuración local.
+1. Si el equipo local tiene el Firewall de Windows habilitado, vea [depuración remota](../debugger/remote-debugging.md) para obtener instrucciones sobre cómo configurar el firewall para la depuración local.
 
 2. Para comprobar la autenticación de Windows, abra un recurso compartido de archivos en el equipo local desde el servidor remoto.
 

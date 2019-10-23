@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: daf0b48aca06b404824059030052223a8545a6b0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 7db8b6a115acdafeca2e7e0adbe11be97834cd6d
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62839711"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72742964"
 ---
 # <a name="idialoadcallback2"></a>IDiaLoadCallback2
-Recibe las devoluciones de llamada desde el símbolo DIA localizar procedimiento, lo que permite a las restricciones a imponerse en el proceso de localización.
+Recibe las devoluciones de llamada del procedimiento de búsqueda de símbolos de DIA, lo que permite imponer restricciones en el proceso de búsqueda.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -29,22 +29,22 @@ IDiaLoadCallback2 : IDiaLoadCallback
 ```
 
 ## <a name="methods-in-vtable-order"></a>Métodos en orden de Vtable
- Además de los métodos en el [IDiaLoadCallback](../../debugger/debug-interface-access/idialoadcallback.md) interfaz, esta interfaz expone los métodos siguientes:
+ Además de los métodos de la interfaz [IDiaLoadCallback](../../debugger/debug-interface-access/idialoadcallback.md) , esta interfaz expone los siguientes métodos:
 
 |Método|Descripción|
 |------------|-----------------|
-|[IDiaLoadCallback2::RestrictOriginalPathAccess](../../debugger/debug-interface-access/idialoadcallback2-restrictoriginalpathaccess.md)|Determina si busca un archivo .pdb en el directorio de depuración original.|
-|[IDiaLoadCallback2::RestrictReferencePathAccess](../../debugger/debug-interface-access/idialoadcallback2-restrictreferencepathaccess.md)|Determina si se permite la búsqueda de un archivo .pdb en la ruta de acceso donde se encuentra el archivo .exe.|
-|[IDiaLoadCallback2::RestrictDBGAccess](../../debugger/debug-interface-access/idialoadcallback2-restrictdbgaccess.md)|Determina si se permite la búsqueda de información de depuración desde archivos .dbg.|
-|[IDiaLoadCallback2::RestrictSystemRootAccess](../../debugger/debug-interface-access/idialoadcallback2-restrictsystemrootaccess.md)|Determina si se permite la búsqueda de los archivos .pdb en el directorio raíz del sistema.|
+|[IDiaLoadCallback2::RestrictOriginalPathAccess](../../debugger/debug-interface-access/idialoadcallback2-restrictoriginalpathaccess.md)|Determina si se busca un archivo. pdb en el directorio de depuración original.|
+|[IDiaLoadCallback2::RestrictReferencePathAccess](../../debugger/debug-interface-access/idialoadcallback2-restrictreferencepathaccess.md)|Determina si se permite buscar un archivo. pdb en la ruta de acceso donde se encuentra el archivo. exe.|
+|[IDiaLoadCallback2::RestrictDBGAccess](../../debugger/debug-interface-access/idialoadcallback2-restrictdbgaccess.md)|Determina si se permite la información de depuración de los archivos. dbg.|
+|[IDiaLoadCallback2::RestrictSystemRootAccess](../../debugger/debug-interface-access/idialoadcallback2-restrictsystemrootaccess.md)|Determina si se permite la búsqueda de archivos. pdb en el directorio raíz del sistema.|
 
 ## <a name="remarks"></a>Comentarios
- La aplicación cliente implementa esta interfaz y proporciona una referencia a él en la llamada a la [Loaddataforexe](../../debugger/debug-interface-access/idiadatasource-loaddataforexe.md) método. Recuerde que debe implementar todos los métodos en el [IDiaLoadCallback](../../debugger/debug-interface-access/idialoadcallback.md) interfaz también.
+ La aplicación cliente implementa esta interfaz y proporciona una referencia a ella en la llamada al método [IDiaDataSource:: loadDataForExe](../../debugger/debug-interface-access/idiadatasource-loaddataforexe.md) . Recuerde implementar también todos los métodos en la interfaz [IDiaLoadCallback](../../debugger/debug-interface-access/idialoadcallback.md) .
 
 ## <a name="requirements"></a>Requisitos
- Encabezado: Dia2.h
+ Encabezado: Dia2. h
 
- Biblioteca: diaguids.lib
+ Biblioteca: diaguids. lib
 
  DLL: msdia80.dll
 

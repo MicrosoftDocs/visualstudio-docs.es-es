@@ -10,14 +10,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8880d207a41418e12cab4374578fea4f3c4f338c
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 3248721afd14ce46745e1eab40a3c4b4f9fbe76a
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "62837720"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72740937"
 ---
-# <a name="idiasymbolgetbasesymbolid"></a>IDiaSymbol::get_baseSymbolId
+# <a name="idiasymbolget_basesymbolid"></a>IDiaSymbol::get_baseSymbolId
 Recupera el identificador de símbolo desde el que se basa el puntero.
 
 ## <a name="syntax"></a>Sintaxis
@@ -30,10 +30,10 @@ HRESULT get_baseSymbolId(
 #### <a name="parameters"></a>Parámetros
  `pRetVal`
 
-[out] Un puntero a un `DWORD` que contiene el identificador de símbolo desde el que se basa el puntero.
+enuncia Puntero a una `DWORD` que contiene el identificador de símbolo desde el que se basa el puntero.
 
 ## <a name="return-value"></a>Valor devuelto
- Si es correcto, devuelve `S_OK`; en caso contrario, devuelve `S_FALSE` o un código de error.
+ Si se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve `S_FALSE` o un código de error.
 
 ## <a name="see-also"></a>Vea también
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

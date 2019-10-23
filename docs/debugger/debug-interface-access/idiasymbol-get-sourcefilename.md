@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 258abfc908a065f7f1854cb7b52d4c16afbdd314
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: eed1fd7b80beeda45664983249e4ef8b5034aa01
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64798996"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72739309"
 ---
-# <a name="idiasymbolgetsourcefilename"></a>IDiaSymbol::get_sourceFileName
-Recupera el nombre de archivo del archivo de origen de operación de compilación.
+# <a name="idiasymbolget_sourcefilename"></a>IDiaSymbol::get_sourceFileName
+Recupera el nombre de archivo del archivo de código fuente de la compilación.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -33,10 +33,10 @@ HRESULT get_sourceFileName ( 
 #### <a name="parameters"></a>Parámetros
  `pRetVal`
 
-[out] Devuelve el nombre de archivo del archivo de origen de operación de compilación.
+enuncia Devuelve el nombre de archivo del archivo de código fuente de la compilación.
 
 ## <a name="return-value"></a>Valor devuelto
- Si es correcto, devuelve `S_OK`; en caso contrario, devuelve `S_FALSE` o un código de error.
+ Si se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve `S_FALSE` o un código de error.
 
 > [!NOTE]
 > Un valor devuelto de `S_FALSE` significa que la propiedad no está disponible para el símbolo.

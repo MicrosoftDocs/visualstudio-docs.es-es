@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4ad241532454cf1a086f8e85c4f2e16c29c76b26
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d60a8c46c4a9e6f17e0123554ac25cb14bbf430b
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62828403"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72743299"
 ---
-# <a name="idiainjectedsourcegetvirtualfilename"></a>IDiaInjectedSource::get_virtualFilename
-Recupera el nombre dado no es un archivo de código; es decir, el código insertado.
+# <a name="idiainjectedsourceget_virtualfilename"></a>IDiaInjectedSource::get_virtualFilename
+Recupera el nombre dado a código fuente que no es de archivo; es decir, el código que se ha insertado.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -33,7 +33,7 @@ HRESULT get_virtualFilename ( 
 #### <a name="parameters"></a>Parámetros
  `pRetVal`
 
-[out] Devuelve el nombre dado al código de origen no es un archivo insertado.
+enuncia Devuelve el nombre dado al código fuente que no es de archivo insertado.
 
 ## <a name="return-value"></a>Valor devuelto
  Si la operación se realiza correctamente, devuelve `S_OK`. Devuelve `S_FALSE` si no se admite esta propiedad. De lo contrario, devuelve un código de error.

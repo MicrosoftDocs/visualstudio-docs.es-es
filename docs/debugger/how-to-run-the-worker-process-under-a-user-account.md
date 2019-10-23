@@ -20,22 +20,22 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: aebe1faf31d53fb44cf5efddbee154018e42a365
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 5905ad87eb534013bdfd786a79e40e46087dff55
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62847775"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72732817"
 ---
-# <a name="how-to-run-the-worker-process-under-a-user-account"></a>Procedimiento Ejecutar un proceso de trabajo en una cuenta de usuario
+# <a name="how-to-run-the-worker-process-under-a-user-account"></a>Cómo: Ejecutar el proceso de trabajo en una cuenta de usuario
 Para configurar el equipo de forma que pueda ejecutar el proceso de trabajo [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] (aspnet_wp.exe o w3wp.exe) bajo una cuenta de usuario, siga estos pasos.
 
  > [!IMPORTANT]
- > A partir de Windows Server 2008 R2, se recomienda el uso de la [ApplicationPoolIdentity](/iis/manage/configuring-security/application-pool-identities) como identidad para cada grupo de aplicaciones.
+ > A partir de Windows Server 2008 R2, se recomienda el uso de [ApplicationPoolIdentity](/iis/manage/configuring-security/application-pool-identities) como identidad para cada grupo de aplicaciones.
 
 ## <a name="procedure"></a>Procedimiento
 
-#### <a name="to-run-aspnetwpexe-under-a-user-account"></a>Para ejecutar aspnet_wp.exe en una cuenta de usuario
+#### <a name="to-run-aspnet_wpexe-under-a-user-account"></a>Para ejecutar aspnet_wp.exe en una cuenta de usuario
 
 1. Abra el archivo machine.config, ubicado en el equipo en la carpeta CONFIG, en la ruta de acceso en la que instaló el motor en tiempo de ejecución.
 
@@ -78,7 +78,7 @@ Para configurar el equipo de forma que pueda ejecutar el proceso de trabajo [!IN
 
     Aparecerá el cuadro de diálogo **Seleccionar usuarios, equipos o grupos** .
 
-10. Escriba el nombre del usuario en el cuadro **Escriba el nombre de objeto a seleccionar** y, a continuación, haga clic en **Aceptar**. El nombre de usuario debe seguir este formato: DomainName\UserName.
+10. Escriba el nombre del usuario en el cuadro **Escriba el nombre de objeto a seleccionar** y, a continuación, haga clic en **Aceptar**. El nombre de usuario debe seguir este formato: NombreDominio\NombreUsuario.
 
 11. En el cuadro de diálogo **Entrada de permiso para archivos temporales de ASP.NET** , dé al usuario **Control total**y, a continuación, haga clic en **Aceptar** para cerrar el cuadro de diálogo **Entrada de permiso para archivos temporales de ASP.NET** .
 
@@ -88,4 +88,4 @@ Para configurar el equipo de forma que pueda ejecutar el proceso de trabajo [!IN
 
 ## <a name="see-also"></a>Vea también
 - [Depurar aplicaciones ASP.NET](../debugger/how-to-enable-debugging-for-aspnet-applications.md)
-- [Depuración ASP.NET: Requisitos del sistema](../debugger/aspnet-debugging-system-requirements.md)
+- [Depuración ASP.NET: requisitos del sistema](../debugger/aspnet-debugging-system-requirements.md)

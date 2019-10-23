@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2ee8b08c724f88c2fcbde7e2001aa89b47442e61
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 489a50da8c5af4c7e63f0c8109c2810716d598e7
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64796113"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72739480"
 ---
-# <a name="idiasymbolgetpure"></a>IDiaSymbol::get_pure
-Recupera una marca que especifica si la función es pura virtual.
+# <a name="idiasymbolget_pure"></a>IDiaSymbol::get_pure
+Recupera una marca que especifica si la función es virtual pura.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -33,10 +33,10 @@ HRESULT get_pure ( 
 #### <a name="parameters"></a>Parámetros
  `pRetVal`
 
-[out] Devuelve `TRUE` si la función pura virtual; en caso contrario, devuelve `FALSE`.
+enuncia Devuelve `TRUE` si la función es virtual pura; de lo contrario, devuelve `FALSE`.
 
 ## <a name="return-value"></a>Valor devuelto
- Si es correcto, devuelve `S_OK`; en caso contrario, devuelve `S_FALSE` o un código de error.
+ Si se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve `S_FALSE` o un código de error.
 
 > [!NOTE]
 > Un valor devuelto de `S_FALSE` significa que la propiedad no está disponible para el símbolo.

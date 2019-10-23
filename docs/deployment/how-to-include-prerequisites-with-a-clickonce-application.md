@@ -1,5 +1,5 @@
 ---
-title: Procedimiento Incluir requisitos previos mediante una aplicación ClickOnce | Documentos de Microsoft
+title: 'Cómo: incluir requisitos previos con una aplicación ClickOnce | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: c66bf0a5-8c93-4e68-a224-3b29ac36fe4d
@@ -8,18 +8,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 47142e63976a743166e5211631e77a0c0878ad9c
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: c6826ae1f957778ac6eea556fdbbe9589ab3390b
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63406964"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72727908"
 ---
-# <a name="how-to-include-prerequisites-with-a-clickonce-application"></a>Procedimiento Inclusión de requisitos previos con una aplicación ClickOnce
+# <a name="how-to-include-prerequisites-with-a-clickonce-application"></a>Cómo: Incluir requisitos previos mediante una aplicación ClickOnce
 Para poder distribuir el software necesario con una aplicación [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)], primero debe descargar los paquetes del instalador para esos requisitos previos en el equipo de desarrollo. Si publica una aplicación y elige **Descargar los requisitos previos desde la misma ubicación que mi aplicación**, se producirá un error si los paquetes del instalador no están en la carpeta **Packages**.
 
 > [!NOTE]
-> Para agregar un paquete de instalador para .NET Framework, vea [Guía de implementación de .NET Framework para desarrolladores](/dotnet/framework/deployment/deployment-guide-for-developers).
+> Para agregar un paquete de instalador para el .NET Framework, consulte [Guía de implementación de .NET Framework para desarrolladores](/dotnet/framework/deployment/deployment-guide-for-developers).
 
 ## <a name="Package"></a> Para agregar un paquete del instalador mediante Package.xml
 
@@ -31,10 +31,10 @@ Para poder distribuir el software necesario con una aplicación [!INCLUDE[ndptec
 
 3. En el Bloc de notas, abra el archivo *Package.xml*.
 
-4. Busque el **nombre** elemento que contiene **http://go.microsoft.com/fwlink** y copie la dirección URL. Incluya a la parte **LinkID**.
+4. Busque el elemento **Name** que contiene **http://go.microsoft.com/fwlink** y copie la dirección URL. Incluya a la parte **LinkID**.
 
    > [!NOTE]
-   > Si no hay ningún **nombre** contiene elemento **http://go.microsoft.com/fwlink** , abra el **Product.xml** de archivos en la carpeta raíz para el requisito previo y busque el **fwlink** cadena.
+   > Si ningún elemento de **nombre** contiene **http://go.microsoft.com/fwlink** , abra el archivo **product. XML** en la carpeta raíz del requisito previo y busque la cadena **fwlink** .
 
    > [!IMPORTANT]
    > Algunos requisitos previos tienen varios paquetes de instalador (por ejemplo, para los sistemas de 32 o 64 bits). Si hay varios elementos **Name** que contienen **fwlink**, debe repetir los pasos restantes para cada uno de ellos.

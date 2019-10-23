@@ -12,14 +12,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 007dd4ad4d7c0c06abf3c235753ec55febf3bcc3
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 3f0249f4e228327666e03e1a402f7f9cf69ee929
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64800048"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72739082"
 ---
-# <a name="idiasymbolgettypeid"></a>IDiaSymbol::get_typeId
+# <a name="idiasymbolget_typeid"></a>IDiaSymbol::get_typeId
 Recupera el identificador de tipo del símbolo.
 
 ## <a name="syntax"></a>Sintaxis
@@ -33,16 +33,16 @@ HRESULT get_typeId ( 
 #### <a name="parameters"></a>Parámetros
  `pRetVal`
 
-[out] Devuelve el identificador de tipo del símbolo.
+enuncia Devuelve el identificador de tipo del símbolo.
 
 ## <a name="return-value"></a>Valor devuelto
- Si es correcto, devuelve `S_OK`; en caso contrario, devuelve `S_FALSE` o un código de error.
+ Si se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve `S_FALSE` o un código de error.
 
 > [!NOTE]
 > Un valor devuelto de `S_FALSE` significa que la propiedad no está disponible para el símbolo.
 
 ## <a name="remarks"></a>Comentarios
- El identificador es un valor único creado mediante el SDK de DIA para marcar todos los símbolos como único.
+ El identificador es un valor único creado por el SDK de DIA para marcar todos los símbolos como únicos.
 
 ## <a name="see-also"></a>Vea también
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

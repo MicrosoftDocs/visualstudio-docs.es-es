@@ -1,5 +1,5 @@
 ---
-title: 'Área de prueba 8: Cambio de complementos | Microsoft Docs'
+title: 'Área de prueba 8: cambio de complementos | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,46 +11,46 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6af0a0333131697526d1ffcc8394f7bfe81ca6b4
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: fb815a773351c1bb6212962a639e2758114a0e2c
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66327811"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72722431"
 ---
-# <a name="test-area-8-plug-in-switching"></a>Área de prueba 8: Cambio de los complementos
-El [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] el entorno de desarrollo integrado (IDE) tiene la interfaz de usuario (UI) para cambiar el complemento de control de código fuente actual. Esta área de prueba proporciona los casos de prueba para el proceso de seleccionar qué complemento que se usará para el control de código fuente de la solución.
+# <a name="test-area-8-plug-in-switching"></a>Área de prueba 8: cambio de complementos
+El entorno de desarrollo integrado (IDE) de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] tiene la interfaz de usuario (UI) para cambiar el complemento de control de código fuente actual. Esta área de prueba proporciona casos de prueba para el proceso de selección del complemento que se va a usar para el control de código fuente de la solución.
 
 ## <a name="command-menu-access"></a>Acceso al menú de comandos
- La siguiente [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] rutas de menú del entorno de desarrollo integrado que se usan en los casos de prueba.
+ En los casos de prueba se usan las siguientes rutas de menú del entorno de desarrollo integrado de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)].
 
-- Control de código fuente actual complemento: **Herramientas** -> **opciones** -> **Control de código fuente** -> **selección de complemento**.
+- Complemento de control de código fuente actual: **herramientas**  -> **Opciones**  -> **control de código fuente**  -> **selección del complemento**.
 
-- Cambiar origen de enlace de control: **Archivo** -> **Control de código fuente** -> **cambiar Control de código fuente**...
+- Cambiar enlace de control de código fuente: **archivo**  -> **control de código fuente**  -> **Cambiar control de código fuente**...
 
-## <a name="common-expected-behavior"></a>Comportamiento esperado comunes
- Es posible cambiar el complemento para una solución de control de origen sin salir de Visual Studio ni volver a cargar la solución. Además, el complemento de control de código fuente actual cambia automáticamente a la utilizada por una solución cuando se carga esa solución.
+## <a name="common-expected-behavior"></a>Comportamiento esperado común
+ Es posible cambiar el complemento de control de código fuente para una solución sin salir de Visual Studio ni volver a cargar la solución. Además, el complemento de control de código fuente actual cambia automáticamente al que usa una solución cuando se carga esa solución.
 
 ## <a name="test-cases"></a>Casos de prueba
- Los siguientes son casos de prueba concretos para el área de prueba de conmutación complemento.
+ Los siguientes son casos de prueba específicos para el área de prueba de cambio de complemento.
 
-### <a name="case-8a-automatic-change"></a>Case 8a: Cambio automático
+### <a name="case-8a-automatic-change"></a>Caso 8A: cambio automático
 
 #### <a name="expected-behavior"></a>Comportamiento esperado
- Cuando un usuario carga una solución que está bajo control de código fuente, la solución se carga automáticamente y el complemento de control de origen correspondiente se selecciona como actual.
+ Cuando un usuario carga una solución que está bajo control de código fuente, la solución se carga automáticamente y el complemento de control de código fuente adecuado se selecciona como actual.
 
-| Acción | Pasos de prueba | Resultados esperados para comprobar |
+| Acción | Pasos de prueba | Resultados esperados que se van a comprobar |
 | - | - | - |
-| Cambio de complemento de control de origen automática | 1.  Seleccione complemento bajo prueba como actual (**herramientas** -> **opciones** -> **Control de código fuente** -> **complemento Selección**.)<br />2.  Cree un nuevo proyecto.<br />3.  Agregue la solución al control de código fuente.<br />4.  Seleccione otro complemento (por ejemplo, [!INCLUDE[vsvss](../../extensibility/includes/vsvss_md.md)]).<br />5.  Acepte Descargando mensaje de solución.<br />6.  Vuelva a abrir la solución desde el disco. | Se abre la solución.<br /><br /> Complemento sometida a prueba es el complemento de control de código fuente actual. |
+| Cambio automático de complemento de control de código fuente | 1. Seleccione el complemento en probar como actual (**herramientas**  -> **Opciones**  -> **control de código fuente**  -> **selección de complemento**).<br />2. cree un nuevo proyecto.<br />3. agregar la solución al control de código fuente.<br />4. Seleccione otro complemento (por ejemplo, [!INCLUDE[vsvss](../../extensibility/includes/vsvss_md.md)]).<br />5. aceptar la solicitud de descarga de la solución.<br />6. Vuelva a abrir la solución desde el disco. | La solución está abierta.<br /><br /> El complemento en pruebas es el complemento de control de código fuente actual. |
 
-### <a name="case-8b-solution-based-change"></a>8b Case: Cambio de solución
+### <a name="case-8b-solution-based-change"></a>Caso 8B: cambio basado en la solución
 
 #### <a name="expected-behavior"></a>Comportamiento esperado
- La solución puede tener su complemento de control de código fuente asociado puede cambiar.
+ La solución puede tener el complemento de control de código fuente asociado cambiado.
 
-| Acción | Pasos de prueba | Resultados esperados para comprobar |
+| Acción | Pasos de prueba | Resultados esperados que se van a comprobar |
 |----------------------------------| - | - |
-| Cambio de complemento para una solución | 1.  Seleccione complemento bajo prueba como actual (**herramientas** -> **opciones** -> **Control de código fuente** -> **complemento Selección**).<br />2.  Cree un nuevo proyecto y solución.<br />3.  Agregue la solución al control de código fuente.<br />4.  Desenlazar la solución desde control de código fuente (mediante el **cambiar Control de código fuente** cuadro de diálogo).<br />5.  Seleccione otro complemento (por ejemplo, [!INCLUDE[vsvss](../../extensibility/includes/vsvss_md.md)]).<br />6.  Si descarga, vuelva a cargar la solución desde el disco.<br />7.  Agregue la solución al control de código fuente.<br />8.  Desenlazar la solución desde control de código fuente (mediante **cambiar Control de código fuente** cuadro de diálogo).<br />9. Seleccione el complemento sometida a prueba de nuevo.<br />10. Recargue la solución desde el disco si se descargan.<br />11. Enlazar la solución en la ubicación original (con el **cambiar Control de código fuente** cuadro de diálogo). | Solución se agrega al control de código fuente utilizando el complemento. |
+| Cambio de complemento para una solución | 1. Seleccione el complemento en probar como actual (**herramientas**  -> **Opciones**  -> **control de código fuente**  -> **selección de complemento**).<br />2. cree un nuevo proyecto y una solución.<br />3. agregar la solución al control de código fuente.<br />4. desenlazar la solución del control de código fuente (mediante el cuadro de diálogo **Cambiar control de código fuente** ).<br />5. Seleccione otro complemento (por ejemplo, [!INCLUDE[vsvss](../../extensibility/includes/vsvss_md.md)]).<br />6. Vuelva a cargar la solución desde el disco si se ha descargado.<br />7. agregar la solución al control de código fuente.<br />8. desenlazar la solución del control de código fuente (mediante el cuadro de diálogo **Cambiar control de código fuente** ).<br />9. Seleccione el complemento en prueba de nuevo.<br />10. Vuelva a cargar la solución desde el disco si se ha descargado.<br />11. enlazar la solución a la ubicación original (mediante el cuadro de diálogo **Cambiar control de código fuente** ). | La solución se agrega al control de código fuente mediante el complemento seleccionado. |
 
 ## <a name="see-also"></a>Vea también
 - [Guía de pruebas para los complementos de control de código fuente](../../extensibility/internals/test-guide-for-source-control-plug-ins.md)

@@ -11,22 +11,22 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c4b68d23211b0a6e1847c7cd22a79b44327e4aa6
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 44114ccdc4a0873887d48c3d191506f10cc3eaf3
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68924195"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72721998"
 ---
 # <a name="vspackage-registration"></a>Registro de VSPackage
-Los VSPackages deben [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] informar de que están instalados y deben cargarse. Este proceso se consigue escribiendo información en el registro. Es un trabajo típico de un instalador.
+Los VSPackages deben avisar [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] de que están instalados y deben cargarse. Este proceso se consigue escribiendo información en el registro. Es un trabajo típico de un instalador.
 
 > [!NOTE]
-> Se trata de una práctica aceptada durante el desarrollo de VSPackage para usar el registro automático. Sin embargo [!INCLUDE[vsipprvsip](../../extensibility/includes/vsipprvsip_md.md)] , los asociados no pueden enviar sus productos mediante el registro automático como parte de la instalación de.
+> Se trata de una práctica aceptada durante el desarrollo de VSPackage para usar el registro automático. Sin embargo, [!INCLUDE[vsipprvsip](../../extensibility/includes/vsipprvsip_md.md)] asociados no pueden enviar sus productos mediante el registro automático como parte de la instalación de.
 
  Las entradas del registro en un paquete de Windows Installer se suelen realizar en la tabla del registro. También puede registrar extensiones de archivo en la tabla del registro. Sin embargo, Windows Installer proporciona compatibilidad integrada a través de las tablas de identificador de programación (ProgId), clase, extensión y verbo. Para obtener más información, vea [tablas de base de datos](/windows/desktop/Msi/database-tables).
 
- Asegúrese de que las entradas del registro estén asociadas al componente que sea adecuado para la estrategia en paralelo elegida. Por ejemplo, las entradas del registro para un archivo compartido deben estar asociadas al componente de Windows Installer de ese archivo. Del mismo modo, las entradas del registro para un archivo específico de la versión deben estar asociadas al componente de ese archivo. De lo contrario, la instalación o desinstalación del VSPackage para una [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] versión de podría interrumpir el VSPackage en otras versiones. Para obtener más información, vea [compatibilidad con varias versiones de Visual Studio](../../extensibility/supporting-multiple-versions-of-visual-studio.md).
+ Asegúrese de que las entradas del registro estén asociadas al componente que sea adecuado para la estrategia en paralelo elegida. Por ejemplo, las entradas del registro para un archivo compartido deben estar asociadas al componente de Windows Installer de ese archivo. Del mismo modo, las entradas del registro para un archivo específico de la versión deben estar asociadas al componente de ese archivo. De lo contrario, la instalación o desinstalación del VSPackage para una versión de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] podría interrumpir el VSPackage en otras versiones. Para obtener más información, vea [compatibilidad con varias versiones de Visual Studio](../../extensibility/supporting-multiple-versions-of-visual-studio.md).
 
 > [!NOTE]
 > La forma más fácil de administrar el registro es usar los mismos datos en los mismos archivos para el registro del desarrollador y el registro en tiempo de instalación. Por ejemplo, algunas herramientas de desarrollo de instalador pueden consumir el archivo en formato. reg en tiempo de compilación. Si los desarrolladores mantienen archivos. reg para su propio desarrollo y depuración cotidianos, esos mismos archivos se pueden incluir automáticamente en el instalador. Si no puede compartir automáticamente los datos de registro, debe asegurarse de que la copia de los datos de registro del instalador es actual.
@@ -47,7 +47,7 @@ Los VSPackages deben [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)
 
 - La instalación correcta, desinstalación, reversión de la instalación y desinstalación de desinstalación requiere la creación de cuatro acciones personalizadas para cada VSPackage administrado que se registra automáticamente mediante una llamada a RegPkg.
 
-- Su enfoque para la compatibilidad en paralelo puede requerir que cree cuatro acciones personalizadas que invocan a RegSvr32 o RegPkg para cada versión admitida de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)].
+- Su enfoque para la compatibilidad en paralelo puede requerir que cree cuatro acciones personalizadas que invocan a RegSvr32 o RegPkg para cada versión compatible de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)].
 
 - Una instalación con módulos autoregistrados no se puede revertir de forma segura porque no hay ninguna manera de indicar si otras características o aplicaciones usan las claves registradas automáticamente.
 

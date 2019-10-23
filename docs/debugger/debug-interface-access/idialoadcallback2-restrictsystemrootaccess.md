@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 421581520f28037bc4b8fce9d546eaffad557f75
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 0cf1a29019de2d3ffdfdb3cc7b9006e964495aa9
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62839724"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72742970"
 ---
 # <a name="idialoadcallback2restrictsystemrootaccess"></a>IDiaLoadCallback2::RestrictSystemRootAccess
-Determina si se permite la búsqueda de los archivos .pdb en el directorio raíz del sistema.
+Determina si se permite la búsqueda de archivos. pdb en el directorio raíz del sistema.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -29,10 +29,10 @@ HRESULT RestrictSystemRootAccess();
 ```
 
 ## <a name="return-value"></a>Valor devuelto
- Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.
+ Si se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.
 
 ## <a name="remarks"></a>Comentarios
- Cualquier código de retorno distinto `S_OK` evita buscar la raíz del sistema de archivos. pdb.
+ Cualquier código de retorno distinto de `S_OK` impide buscar archivos. pdb en la raíz del sistema.
 
 ## <a name="see-also"></a>Vea también
 - [IDiaLoadCallback2](../../debugger/debug-interface-access/idialoadcallback2.md)

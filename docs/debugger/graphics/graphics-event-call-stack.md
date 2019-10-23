@@ -1,5 +1,5 @@
 ---
-title: Pila de llamadas de eventos de gráficos | Microsoft Docs
+title: Pila de llamadas de eventos gráficos | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -10,19 +10,19 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3cdaa6cdd3275fa7fda8df33cbdb09a8edae158c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c221a572264bf6a6aaed9edbec66fb3c0c3ff4b9
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62848779"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72735514"
 ---
 # <a name="graphics-event-call-stack"></a>Pila de llamadas de eventos de gráficos
 La pila de llamadas de eventos gráficos del Analizador de gráficos de Visual Studio le ayuda a establecer la relación entre los eventos de gráficos problemáticos y el código fuente de la aplicación.
 
  Esta es la ventana de la Pila de llamadas de eventos:
 
- ![La pila de llamadas que precede a un evento DrawIndexed. ](media/gfx_diag_demo_graphics_event_call_stack_orientation.png "gfx_diag_demo_graphics_event_call_stack_orientation")
+ ![La pila de llamadas que precede a un evento DrawIndexed.](media/gfx_diag_demo_graphics_event_call_stack_orientation.png "gfx_diag_demo_graphics_event_call_stack_orientation")
 
 ## <a name="understanding-the-graphics-event-call-stack"></a>Descripción de la pila de llamadas de eventos gráficos
  Puede utilizar la Pila de llamadas de eventos para comprender el flujo de ejecución que llevó a un determinado evento de Direct3D. Se asemeja a la ventana de la pila de llamadas de Visual Studio con la excepción de que, en lugar de mostrar la pila de llamadas actual del subproceso actual en una aplicación que se ejecuta, muestra la pila de llamadas tal y como se encontraba cuando se produjo el evento de Direct3D seleccionado. Desde la Pila de llamadas de eventos, puede ir directamente al sitio de llamada del evento de Direct3D seleccionado para inspeccionar el código que lo rodea.
@@ -34,7 +34,7 @@ La pila de llamadas de eventos gráficos del Analizador de gráficos de Visual S
 
 |Columna|Descripción|
 |------------|-----------------|
-|**Name**|Símbolo que identifica de forma única la función que contiene el sitio de llamada. El símbolo de depuración de la función se muestra cuando está disponible. Cuando no lo está, se muestra el desplazamiento de función.|
+|**Nombre**|Símbolo que identifica de forma única la función que contiene el sitio de llamada. El símbolo de depuración de la función se muestra cuando está disponible. Cuando no lo está, se muestra el desplazamiento de función.|
 |**Archivo**|El nombre de archivo del archivo de código fuente o el archivo de biblioteca que contiene el sitio de llamada.|
 |**Ubicación**|El número de línea del sitio de llamada.|
 

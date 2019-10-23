@@ -1,5 +1,5 @@
 ---
-title: Web Essentials del proyecto | Documentos de Microsoft
+title: Elementos esenciales del proyecto web | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,52 +10,52 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3ddc8bcef8612459ce9816e79250ba8b93194292
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 5f3d3069d8cc539deeda7c9d44f8d1cbf27e8821
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66323310"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72721673"
 ---
 # <a name="web-project-essentials"></a>Conceptos básicos del proyecto web
-Los proyectos Web creación aplicaciones Web. Puede usar un proyecto Web para crear una aplicación Web que tiene páginas Web inteligentes. Una página Web inteligente tiene código de servidor que representa la página Web a petición.
+Los proyectos web crean aplicaciones Web. Puede usar un proyecto web para crear una aplicación web que tiene páginas web inteligentes. Una página web inteligente tiene código del lado servidor que representa la página web a petición.
 
- Con los lenguajes de programación tradicionales, como [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] o [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)], puede crear las páginas Web inteligentes para recopilar y procesar información de un usuario, almacenarlo en una base de datos y así sucesivamente.
+ Mediante el uso de lenguajes de programación tradicionales, como [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] o [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)], puede crear páginas web inteligentes para recopilar y procesar información de un usuario, almacenarla en una base de datos, etc.
 
-- El modelo de código subyacente asocia los archivos de código fuente dependiente con páginas Web que tiene el archivo .aspx de extensión o .asmx. Por ejemplo, hello.aspx podría tener la hello.aspx.cs de archivo de código fuente dependiente.
+- El modelo de código subyacente asocia los archivos de código fuente dependientes con páginas web que tienen la extensión de archivo. aspx o. asmx. Por ejemplo, Hello. aspx podría tener el archivo de código fuente dependiente hello.aspx.cs.
 
-- El código de servidor asociado a una página Web inteligente se compila en un archivo ejecutable que se encuentra en la carpeta/bin del sitio Web.
+- El código del lado servidor asociado a una página web inteligente se compila en un archivo ejecutable que se encuentra en la carpeta del sitio web/bin.
 
-- Archivos de código de origen adicionales, como las clases auxiliares que no están asociados con una página Web específica, se encuentran en la carpeta /bin del sitio Web.
+- Los archivos de código fuente adicionales, como las clases auxiliares que no están asociadas a una página web específica, se encuentran en la carpeta/App_Code del sitio Web.
 
-  - Un proyecto de sitio Web (WSP) genera un archivo ejecutable para cada página Web inteligente. Se generan archivos ejecutables adicionales de los archivos de código fuente en la carpeta /bin.
+  - Un proyecto de sitio web (WSP) genera un archivo ejecutable para cada página web inteligente. Los archivos ejecutables adicionales se generan a partir de los archivos de código fuente de la carpeta/App_Code.
 
-  - Un proyecto de aplicación Web (WAP) genera un único archivo ejecutable que combina el código para todas las páginas Web inteligentes, así como todos los archivos de origen en la carpeta /bin.
+  - Un proyecto de aplicación web (WAP) genera un único archivo ejecutable que combina el código para todas las páginas web inteligentes, así como todos los archivos de origen de la carpeta/App_Code.
 
-- El archivo de solución para un proyecto Web se encuentra por separado desde el propio sitio Web. De forma predeterminada, los archivos de solución se encuentran en \Documents and Settings\\*suCuenta*documentos \My\\ *\<Visual Studio ### >* \Projects\\ *YourWebSite*.
+- El archivo de solución de un proyecto web se encuentra separado del propio sitio Web. De forma predeterminada, los archivos de solución se encuentran en \Documents and Settings \\*sucuenta*\My documents \\ *\<Visual Studio # # # # >* \projects \\*YourWebSite*.
 
   > [!NOTE]
-  > Si desea mantener el archivo de solución con el sitio Web, simplemente muévala ahí y vuelva a abrirlo.
+  > Si desea conservar el archivo de solución en el sitio web, simplemente muévalo y vuelva a abrirlo.
 
-- Si abre un sitio Web que no tiene ningún archivo de solución en Visual Studio, se genera automáticamente un nuevo archivo de solución para él.
+- Si abre un sitio web que no tiene ningún archivo de solución en Visual Studio, se genera automáticamente un nuevo archivo de solución.
 
-- Los proyectos Web no tienen ningún archivo de proyecto. Información del proyecto se almacena en el archivo de solución, el archivo web.config y en otros lugares.
+- Los proyectos web no tienen ningún archivo de proyecto. La información del proyecto se almacena en el archivo de solución, en el archivo Web. config y en cualquier otro lugar.
 
-- Agregar automáticamente las propiedades globales a un proyecto Web, crea un archivo de almacenamiento en la carpeta de solución de proyecto Web.
+- Al agregar propiedades globales a un proyecto Web, se crea automáticamente un archivo de almacenamiento en la carpeta de la solución de proyecto Web.
 
-- Una página Web inteligente puede asociarse con un lenguaje de programación del lado servidor mediante el uso de la directiva de página o el \<script runat = "server" > etiqueta.
+- Una página web inteligente se puede asociar con un lenguaje de programación del lado servidor mediante la Directiva de página o la etiqueta \<script runat = "Server" >.
 
-- Además, las páginas Web puede tener cualquier número de bloques de scripting del lado cliente escritas en cualquier lenguaje de scripting.
+- Además, las páginas web pueden tener cualquier número de bloques de scripting del lado cliente escritos en cualquier lenguaje de scripting.
 
-- Un sistema de proyectos de sitio Web se implementa mediante la adición de plantillas de proyecto y elemento y el registro para el [!INCLUDE[vwprvw](../../extensibility/internals/includes/vwprvw_md.md)] proyecto.
+- Un sistema de proyectos de sitio web se implementa agregando plantillas de proyecto y de elemento y registro al proyecto de [!INCLUDE[vwprvw](../../extensibility/internals/includes/vwprvw_md.md)].
 
-- Un sistema WAP se implementa como un subtipo de proyecto, que también se denomina un tipo de proyecto. El [!INCLUDE[vwprvw](../../extensibility/internals/includes/vwprvw_md.md)] es característico de proyecto para crear el sistema WAP el subtipo de WAP. Para obtener más información sobre los subtipos de proyecto, vea [subtipos de proyecto](../../extensibility/internals/project-subtypes.md).
+- Un sistema WAP se implementa como un subtipo de proyecto, también denominado tipo de proyecto. El proyecto [!INCLUDE[vwprvw](../../extensibility/internals/includes/vwprvw_md.md)] está calificado por el subtipo WAP para crear el sistema WAP. Para obtener más información sobre los subtipos de proyecto, vea [subtipos de proyecto](../../extensibility/internals/project-subtypes.md).
 
-- Una página Web inteligente combina HTML con un lenguaje de programación del lado servidor. El lenguaje de servidor se denomina lenguaje contenido. Para admitir un lenguaje contenido, debe implementar el sistema del proyecto Web el <xref:Microsoft.VisualStudio.TextManager.Interop.IVsContainedLanguage> familia de interfaces.
+- Una página web inteligente combina HTML con un lenguaje de programación del lado servidor. El lenguaje del lado servidor se denomina lenguaje contenido. Para admitir un lenguaje contenido, el sistema del proyecto web debe implementar la familia de interfaces <xref:Microsoft.VisualStudio.TextManager.Interop.IVsContainedLanguage>.
 
-  - Para admitir el lenguaje contenido en un editor, el servicio de lenguaje HTML debe aplazar la visualización de código de lenguaje contenido a un servicio de lenguaje contenido.
+  - Para admitir el lenguaje contenido en un editor, el servicio del lenguaje HTML debe aplazar la visualización del código de idioma contenido en un servicio de lenguaje contenido.
 
-  - Marcadores de error (rojo detectores) siempre deben crearse en el búfer principal del editor de código.
+  - Los marcadores de error (detectores rojos) siempre deben crearse en el búfer primario del editor de código.
 
 ## <a name="see-also"></a>Vea también
 - [Proyectos web](../../extensibility/internals/web-projects.md)

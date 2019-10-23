@@ -1,5 +1,5 @@
 ---
-title: Procedimiento Cambiar las fuentes | Documentos de Microsoft
+title: 'Cómo: cambiar fuentes | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,25 +10,25 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 33fee74bf2fd26cfe7af7f7bed90a06553c7fb27
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 2cf933dc7277f0f4c1533ca071a391b78413b029
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62848068"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72733940"
 ---
-# <a name="how-to-change-fonts"></a>Procedimiento Cambio de fuentes
-Puede cambiar la fuente, estilo de fuente y tamaño de fuente para ventanas de Spy ++.
+# <a name="how-to-change-fonts"></a>Cómo: Cambiar las fuentes
+Puede cambiar la fuente, el estilo de fuente y el tamaño de fuente de las ventanas de Spy + +.
 
 ### <a name="to-change-font-options"></a>Para cambiar las opciones de fuente
 
-1. Desde el **vista** menú, elija **fuente**.
+1. En el menú **Ver** , elija **fuente**.
 
-2. Elija una fuente, estilo de fuente y tamaño de fuente.
+2. Elija una fuente, un estilo de fuente y un tamaño de fuente.
 
 3. Haga clic en **Aceptar**.
 
-   Seleccionar **Guardar como predeterminada** hará que todas las futuras ventanas de Spy ++ usar esta fuente.
+   Si selecciona **Guardar fuente como predeterminada** , todas las ventanas futuras de Spy + + usarán esta fuente.
 
 ## <a name="see-also"></a>Vea también
 - [Usar Spy++](../debugger/using-spy-increment.md)

@@ -1,5 +1,5 @@
 ---
-title: SccGetUserOption (función) | Documentos de Microsoft
+title: Función SccGetUserOption | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -12,12 +12,12 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: eabf9cfc9d878d4d12096c8d264e8ee332031adf
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: cd024aa12b263eab7fea4bd80a0e77a3bbad5f1c
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66353650"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72721439"
 ---
 # <a name="sccgetuseroption-function"></a>SccGetUserOption (Función)
 Esta función recupera una variedad de opciones específicas del usuario.
@@ -35,22 +35,22 @@ SCCRTN SccGetUserOption(
 #### <a name="parameters"></a>Parámetros
  pContext
 
-[in] El puntero de contexto de complemento de control de código fuente.
+de Puntero de contexto del complemento de control de código fuente.
 
  nOption
 
-[in] Opción para recuperar (vea la sección Comentarios para las opciones posibles).
+de Opción para recuperar (vea la sección Comentarios para ver las posibles opciones).
 
  lpVal
 
-[out] Valor asociado con la opción.
+enuncia Valor asociado a la opción.
 
 ## <a name="return-value"></a>Valor devuelto
- La implementación de complemento de control de origen de esta función debe devolver uno de los valores siguientes:
+ Se espera que la implementación del complemento de control de código fuente de esta función devuelva uno de los siguientes valores:
 
 |Valor|Descripción|
 |-----------|-----------------|
-|SCC_OK|Opción se recuperó correctamente.|
+|SCC_OK|La opción se recuperó correctamente.|
 |SCC_E_OPNOTSUPPORTED|No se admite la opción.|
 |SCC_E_NONSPECIFICERROR|Se ha producido un error no especificado.|
 
@@ -59,7 +59,7 @@ SCCRTN SccGetUserOption(
 
 |Opción de usuario|Descripción|
 |-----------------|-----------------|
-|`SCC_USEROPT_CHECKOUT_LOCALVER`|Determina si el usuario desea desproteger versión local de archivos. `lpVal` se asigna `SCC_USEROPT_COLV_YES` (usuario desea desproteger los archivos locales) o `SCC_USEROPT_COLV_NO`.|
+|`SCC_USEROPT_CHECKOUT_LOCALVER`|Determina si el usuario desea desproteger la versión local de los archivos. `lpVal` está asignado `SCC_USEROPT_COLV_YES` (el usuario desea desproteger archivos locales) o `SCC_USEROPT_COLV_NO`.|
 
 ## <a name="see-also"></a>Vea también
 - [Funciones de API de complemento de control de código fuente](../extensibility/source-control-plug-in-api-functions.md)

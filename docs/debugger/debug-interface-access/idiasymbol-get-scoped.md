@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4c9c4864f09c4e66bada76f9d9b058c7d3660c96
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 862fa147b5f157760a93631d0e2c8addbd3bd1f2
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64790289"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72739372"
 ---
-# <a name="idiasymbolgetscoped"></a>IDiaSymbol::get_scoped
-Recupera una marca que especifica si el tipo de datos definido por el usuario aparece en un ámbito léxico no globales.
+# <a name="idiasymbolget_scoped"></a>IDiaSymbol::get_scoped
+Recupera una marca que especifica si el tipo de datos definido por el usuario aparece en un ámbito léxico no global.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -33,10 +33,10 @@ HRESULT get_scoped ( 
 #### <a name="parameters"></a>Parámetros
  `pRetVal`
 
-[out] Devuelve `TRUE` si el tipo de datos definido por el usuario aparece en un ámbito léxico no globales; en caso contrario, devuelve `FALSE`.
+enuncia Devuelve `TRUE` si el tipo de datos definido por el usuario aparece en un ámbito léxico no global; de lo contrario, devuelve `FALSE`.
 
 ## <a name="return-value"></a>Valor devuelto
- Si es correcto, devuelve `S_OK`; en caso contrario, devuelve `S_FALSE` o un código de error.
+ Si se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve `S_FALSE` o un código de error.
 
 > [!NOTE]
 > Un valor devuelto de `S_FALSE` significa que la propiedad no está disponible para el símbolo.

@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 896e26075780c0cbd7bf0b1762da141d5ba7d2d1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 2f803fac1439d384133f0819859f2917072a8790
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62828469"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72743199"
 ---
-# <a name="idialinenumbergetlength"></a>IDiaLineNumber::get_length
-Recupera el número de bytes en un bloque.
+# <a name="idialinenumberget_length"></a>IDiaLineNumber::get_length
+Recupera el número de bytes de un bloque.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -33,13 +33,13 @@ HRESULT get_length ( 
 #### <a name="parameters"></a>Parámetros
  `pRetVal`
 
-[out] Devuelve el número de bytes en un bloque.
+enuncia Devuelve el número de bytes de un bloque.
 
 ## <a name="return-value"></a>Valor devuelto
  Si la operación se realiza correctamente, devuelve `S_OK`. Devuelve `S_FALSE` si no se admite esta propiedad. De lo contrario, devuelve un código de error.
 
 ## <a name="remarks"></a>Comentarios
- El bloque es la longitud del código fuente en la línea representada por el [IDiaLineNumber](../../debugger/debug-interface-access/idialinenumber.md) objeto.
+ El bloque es la longitud del código fuente en la línea tal como se representa en el objeto [IDiaLineNumber](../../debugger/debug-interface-access/idialinenumber.md) .
 
 ## <a name="see-also"></a>Vea también
 - [IDiaLineNumber](../../debugger/debug-interface-access/idialinenumber.md)

@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3c76bd8da28742f0618dcd6ee68d46a1b4578580
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 7d75fbb5c556a730dc38b4c592b660c0a3a0e876
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64786322"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72739243"
 ---
-# <a name="idiasymbolgetsymindexid"></a>IDiaSymbol::get_symIndexId
-Recupera el identificador único símbolo.
+# <a name="idiasymbolget_symindexid"></a>IDiaSymbol::get_symIndexId
+Recupera el identificador de símbolo único.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -33,16 +33,16 @@ HRESULT get_symIndexId ( 
 #### <a name="parameters"></a>Parámetros
  `pRetVal`
 
-[out] Devuelve el identificador de símbolo del símbolo.
+enuncia Devuelve el identificador de símbolo del símbolo.
 
 ## <a name="return-value"></a>Valor devuelto
- Si es correcto, devuelve `S_OK`; en caso contrario, devuelve `S_FALSE` o código de error.
+ Si se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve `S_FALSE` o el código de error.
 
 > [!NOTE]
 > Un valor devuelto de `S_FALSE` significa que la propiedad no está disponible para el símbolo.
 
 ## <a name="remarks"></a>Comentarios
- El identificador es un valor único creado mediante el SDK de DIA para marcar todos los símbolos como único.
+ El identificador es un valor único creado por el SDK de DIA para marcar todos los símbolos como únicos.
 
 ## <a name="see-also"></a>Vea también
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

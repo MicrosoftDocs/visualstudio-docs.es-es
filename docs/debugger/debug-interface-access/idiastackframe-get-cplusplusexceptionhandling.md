@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3f0c2e07b5c9141b8cf31511405939fc65be6446
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d78a4c73d7954f48c87c1eafec4d0b35fc1292ef
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62839067"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72741754"
 ---
-# <a name="idiastackframegetcplusplusexceptionhandling"></a>IDiaStackFrame::get_cplusplusExceptionHandling
-Recupera una marca que indica si el control de excepciones de C++ está en vigor.
+# <a name="idiastackframeget_cplusplusexceptionhandling"></a>IDiaStackFrame::get_cplusplusExceptionHandling
+Recupera una marca que indica si C++ el control de excepciones está en vigor.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -33,15 +33,15 @@ HRESULT get_cplusplusExceptionHandling ( 
 #### <a name="parameters"></a>Parámetros
  `pRetVal`
 
-[out] Devuelve `TRUE` si C++ está vigente para este marco de control de excepciones; de lo contrario, devuelve `FALSE`.
+enuncia Devuelve `TRUE` si C++ el control de excepciones está en vigor para este marco; de lo contrario, devuelve `FALSE`.
 
 ## <a name="return-value"></a>Valor devuelto
  Si la operación se realiza correctamente, devuelve `S_OK`. Devuelve `S_FALSE` si no se admite la propiedad. De lo contrario, devuelve un código de error.
 
 ## <a name="remarks"></a>Comentarios
- Control de excepciones de C++ no es el mismo que estructurado o control de excepciones del sistema.
+ C++el control de excepciones no es el mismo que el control de excepciones estructurado o del sistema.
 
- Para determinar si la estructura de control de excepciones está en vigor, llame el [IDiaStackFrame::get_systemExceptionHandling](../../debugger/debug-interface-access/idiastackframe-get-systemexceptionhandling.md) método.
+ Para determinar si el control de excepciones estructurado está en vigor, llame al método [IDiaStackFrame:: get_systemExceptionHandling](../../debugger/debug-interface-access/idiastackframe-get-systemexceptionhandling.md) .
 
 ## <a name="see-also"></a>Vea también
 - [IDiaStackFrame](../../debugger/debug-interface-access/idiastackframe.md)

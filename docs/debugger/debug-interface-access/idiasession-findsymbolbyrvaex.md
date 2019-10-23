@@ -1,5 +1,5 @@
 ---
-title: Findsymbolbyrvaex | Documentos de Microsoft
+title: 'IDiaSession:: findSymbolByRVAEx | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0c6c8e3523a49bd4fc22a86c9ec86b1e8cd2038e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 8d9b27cee1c8df3eb26d64f4f860c33e0d4bf45f
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62839256"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72742038"
 ---
 # <a name="idiasessionfindsymbolbyrvaex"></a>IDiaSession::findSymbolByRVAEx
-Recupera un tipo de símbolo especificado que contiene, o más cercana a una dirección virtual relativa (RVA) especificado y el desplazamiento.
+Recupera un tipo de símbolo especificado que contiene o está más cerca de una dirección virtual relativa (RVA) y desplazamiento especificados.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -36,22 +36,22 @@ HRESULT findSymbolByRVAEx ( 
 #### <a name="parameters"></a>Parámetros
  `rva`
 
-[in] Especifica la dirección RVA.
+de Especifica la RVA.
 
  `symtag`
 
-[in] Tipo de símbolo que se encuentra. Los valores se toman de la [SymTagEnum (enumeración)](../../debugger/debug-interface-access/symtagenum.md) enumeración.
+de Tipo de símbolo que se va a buscar. Los valores se toman de la enumeración de [enumeración symtagenum (](../../debugger/debug-interface-access/symtagenum.md) .
 
  `ppSymbol`
 
-[out] Devuelve un [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) recupera el objeto que representa el símbolo.
+enuncia Devuelve un objeto [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) que representa el símbolo recuperado.
 
  `displacement`
 
-[out] Devuelve un valor que especifica un desplazamiento de la dirección virtual relativa especificada en `rva`.
+enuncia Devuelve un valor que especifica un desplazamiento a partir de la dirección virtual relativa especificada en `rva`.
 
 ## <a name="return-value"></a>Valor devuelto
- Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.
+ Si se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.
 
 ## <a name="example"></a>Ejemplo
 

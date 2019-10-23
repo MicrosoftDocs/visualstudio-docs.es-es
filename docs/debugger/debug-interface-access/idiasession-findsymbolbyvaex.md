@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 16b62c5efb520e90606d6311b60a839404359720
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 56dd91e76380bb4f43fae4f26d4124b2f9bc3ebf
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62832368"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72741985"
 ---
 # <a name="idiasessionfindsymbolbyvaex"></a>IDiaSession::findSymbolByVAEx
-Recupera un tipo de símbolo especificado que contiene, o más cercana a una dirección virtual especificado (VA) y el desplazamiento.
+Recupera un tipo de símbolo especificado que contiene o está más cerca de una dirección virtual especificada (VA) y el desplazamiento.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -36,22 +36,22 @@ HRESULT findSymbolByVAEx ( 
 #### <a name="parameters"></a>Parámetros
  `va`
 
-[in] Especifica el jefe
+de Especifica el VA.
 
  `symtag`
 
-[in] Tipo de símbolo que se encuentra. Los valores se toman de la [SymTagEnum (enumeración)](../../debugger/debug-interface-access/symtagenum.md) enumeración.
+de Tipo de símbolo que se va a buscar. Los valores se toman de la enumeración de [enumeración symtagenum (](../../debugger/debug-interface-access/symtagenum.md) .
 
  `ppSymbol`
 
-[out] Devuelve un [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) recupera el objeto que representa el símbolo.
+enuncia Devuelve un objeto [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) que representa el símbolo recuperado.
 
  `displacement`
 
-[out] Devuelve un valor que especifica un desplazamiento desde la dirección virtual proporcionada por `va`.
+enuncia Devuelve un valor que especifica un desplazamiento de la dirección virtual proporcionada por `va`.
 
 ## <a name="return-value"></a>Valor devuelto
- Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.
+ Si se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.
 
 ## <a name="example"></a>Ejemplo
 

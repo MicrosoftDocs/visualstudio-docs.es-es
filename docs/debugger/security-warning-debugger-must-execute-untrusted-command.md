@@ -1,5 +1,5 @@
 ---
-title: 'Advertencia de seguridad: El depurador debe ejecutar un comando que no se confía | Microsoft Docs'
+title: 'ADVERTENCIA de seguridad: el depurador debe ejecutar un comando que no es de confianza | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7c4ab45feeae409a1951e1a57e964eaaa5963896
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b0922461c4ca5366e6d1dc215f5711f5566d00ae
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62902589"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72729750"
 ---
 # <a name="security-warning-debugger-must-execute-untrusted-command"></a>Advertencia de seguridad: El depurador debe ejecutar un comando que no es de confianza
 Este cuadro de diálogo de advertencia aparece cuando utiliza un servidor de origen. Indica que el comando que el depurador debe ejecutar para obtener el código fuente no figura en la lista de comandos de confianza del servidor de origen incluida en el archivo srcsvr.ini. Si es un comando válido, se puede agregar al archivo srcsvr.ini. De lo contrario, no debe ejecutarse. Para obtener más información, consulte [Especificar archivos de código fuente y símbolos (.pdb)](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md).
@@ -33,11 +33,11 @@ Este cuadro de diálogo de advertencia aparece cuando utiliza un servidor de ori
  **¿Quiere ejecutar este comando?**
 
 ## <a name="uielement-list"></a>Lista de UIElement
- Comando de cuadro de texto desde el archivo .pdb para ejecutar.
+ Comando de cuadro de texto del archivo. pdb que se va a ejecutar.
 
- Permitir ejecutar el comando se ejecute.
+ Ejecutar permite ejecutar el comando.
 
- No ejecute detener la ejecución del comando y la descarga del archivo del servidor de origen.
+ No ejecute detener ejecución del comando y descargando el archivo del servidor de origen.
 
 ## <a name="see-also"></a>Vea también
 - [Especificar archivos de código fuente y símbolos (.pdb)](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)

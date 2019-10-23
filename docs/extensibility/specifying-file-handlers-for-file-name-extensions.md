@@ -1,5 +1,5 @@
 ---
-title: Especificar controladores de archivo para extensiones de nombre de archivo | Microsoft Docs
+title: Especificar controladores de archivos para las extensiones de nombre de archivo | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,20 +10,20 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7a80c17fc6de0efe691b1c36e4421cb2b62cbd00
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: fbc85a506b51a29f1c4809890eaeeb0dcecc99a3
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66331788"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72719563"
 ---
 # <a name="specifying-file-handlers-for-file-name-extensions"></a>Especificación de identificadores de archivo para extensiones de nombre de archivo
-Hay varias maneras de determinar la aplicación que administra un archivo que tiene una extensión de archivo determinada. Los verbos OpenWithList y OpenWithProgids son dos formas de especificar controladores de archivo bajo la entrada del registro de la extensión de archivo.
+Hay varias maneras de determinar la aplicación que controla un archivo que tiene una extensión de archivo determinada. Los verbos OpenWithList y OpenWithProgids son dos maneras de especificar controladores de archivo en la entrada del registro para la extensión de archivo.
 
-## <a name="openwithlist-verb"></a>Verbo OpenWithList
- Cuando hace clic en un archivo en el Explorador de Windows, verá el **abierto** comando. Si más de un producto está asociado con una extensión, verá un **abrir con** submenú.
+## <a name="openwithlist-verb"></a>OpenWithList verbo)
+ Al hacer clic con el botón secundario en un archivo en el explorador de Windows, verá el comando **abrir** . Si hay más de un producto asociado a una extensión, verá un submenú **abrir con** .
 
- Puede registrar aplicaciones diferentes para abrir una extensión mediante el establecimiento de la clave OpenWithList para la extensión de archivo en HKEY_CLASSES_ROOT. Las aplicaciones enumeradas en esta clave para una extensión de archivo aparecen bajo el **programas recomendado** encabezado en el **abrir con** cuadro de diálogo. El ejemplo siguiente muestra las aplicaciones registradas para abrir la extensión de archivo .vcproj.
+ Puede registrar distintas aplicaciones para abrir una extensión mediante el establecimiento de la clave OpenWithList para la extensión de archivo en HKEY_CLASSES_ROOT. Las aplicaciones que aparecen bajo esta clave para una extensión de archivo aparecen en el encabezado **Programas recomendados** del cuadro de diálogo **abrir con** . En el ejemplo siguiente se muestran las aplicaciones registradas para abrir la extensión de archivo. vcproj.
 
 ```
 HKEY_CLASSES_ROOT\
@@ -34,25 +34,25 @@ HKEY_CLASSES_ROOT\
 ```
 
 > [!NOTE]
-> Son las claves de la especificación de las aplicaciones en la lista HKEY_CLASSES_ROOT\Applications.
+> Las claves que especifican aplicaciones son de la lista en HKEY_CLASSES_ROOT\Applications.
 
- Al agregar una clave OpenWithList, declare que la aplicación admite una extensión de archivo, incluso si otra aplicación toma posesión de la extensión. Podría tratarse de una versión futura de la aplicación u otra aplicación.
+ Al agregar una clave OpenWithList, se declara que la aplicación admite una extensión de archivo incluso si otra aplicación toma posesión de la extensión. Puede tratarse de una versión futura de la aplicación o de otra aplicación.
 
 ## <a name="openwithprogids"></a>OpenWithProgIDs
- Identificadores programáticos (ProgID) son versiones descriptivas de ClassID que identifica una versión de una aplicación o un objeto COM. Cada objeto compartida que se puede crear debe tener su propio ProgID. Por ejemplo, VisualStudio.DTE.7.1 inicia Visual Studio .NET 2003 mientras se inicia VisualStudio.DTE.10.0 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Como propietario de un tipo de proyecto o el tipo de elemento de proyecto, debe crear un ProgID específico de la versión para la extensión de archivo. Estos ProgID pueden ser redundante en que más de un ProgID puede iniciar la aplicación misma. Para obtener más información, consulte [registrar verbos para extensiones de nombre de archivo](../extensibility/registering-verbs-for-file-name-extensions.md).
+ Los identificadores de programación (ProgID) son versiones descriptivas de ClassID que identifican una versión de una aplicación o un objeto COM. Cada objeto cocreatable debe tener su propio ProgID. Por ejemplo, VisualStudio. DTE. 7.1 inicia Visual Studio .NET 2003 mientras que VisualStudio. DTE. 10.0 inicia [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Como propietario de un tipo de proyecto o de un tipo de elemento de proyecto, debe crear un ProgID específico de la versión para la extensión de archivo. Estos ProgID pueden ser redundantes en que más de un ProgID puede iniciar la misma aplicación. Para obtener más información, vea [registrar verbos para las extensiones de nombre de archivo](../extensibility/registering-verbs-for-file-name-extensions.md).
 
- Use la siguiente convención de nomenclatura para archivos con control de versiones ProgID para evitar la duplicación con el registro de otros proveedores:
+ Utilice la siguiente Convención de nomenclatura para los identificadores de archivo con versión para evitar la duplicación con el registro de otros proveedores:
 
-|Extensión de archivo|Con control de versiones ProgID|
+|Extensión de archivo|ProgID con versión|
 |--------------------|----------------------|
-|transferidas|ProductName. extension.versionMajor.versionMinor|
+|. Extension|NombreDeProducto. extensión. propiedad versionmajor. versionMinor|
 
- Puede registrar las aplicaciones diferentes que pueden abrir una extensión de archivo determinada mediante la adición de ProgID con control de versiones como valores a HKEY_CLASSES_ROOT\\ *\<extensión >* \OpenWithProgids clave. Esta clave del registro contiene una lista de alternativas ProgID asociados con la extensión de archivo. Las aplicaciones asociadas con el ProgID de la lista aparecen en el **abrir con**_Product Name_ submenú. Si se especifica la misma aplicación tanto en el `OpenWithList` y `OpenWithProgids` claves, el sistema operativo combina los duplicados.
+ Puede registrar diferentes aplicaciones que pueden abrir una extensión de archivo determinada agregando los ProgID con versión como valores a la \\ HKEY_CLASSES_ROOT *\<extension >* clave \OpenWithProgids. Esta clave del registro contiene una lista de ProgID alternativos asociados a la extensión de archivo. Las aplicaciones asociadas a los ProgID enumerados aparecen en el submenú **abrir con**el_nombre del producto_ . Si se especifica la misma aplicación en las claves `OpenWithList` y `OpenWithProgids`, el sistema operativo combina los duplicados.
 
 > [!NOTE]
-> El `OpenWithProgids` clave solo se admite en Windows XP. Dado que otros sistemas operativos de pasar por alto esta clave, no usarlo como el registro solo para los controladores de archivo. Use esta clave para ofrecer una mejor experiencia de usuario en Windows XP.
+> La clave `OpenWithProgids` solo se admite en Windows XP. Dado que otros sistemas operativos omiten esta clave, no la use como único registro para los controladores de archivos. Use esta clave para proporcionar una mejor experiencia de usuario en Windows XP.
 
- Agregue los ProgID deseados como valores del tipo REG_NONE. El código siguiente proporciona un ejemplo de registro ProgID para una extensión de archivo (. *ext*).
+ Agregue los ProgID deseados como valores del tipo REG_NONE. El código siguiente proporciona un ejemplo de registro de los ProgID para una extensión de archivo (. *EXT*).
 
 ```
 HKEY_CLASSES_ROOT\
@@ -63,7 +63,7 @@ HKEY_CLASSES_ROOT\
          otherprogid   REG_NONE (zero-length binary value)
 ```
 
- El ProgID especificado como el valor predeterminado para la extensión de archivo es el controlador de archivo predeterminado. Si modifica el ProgID de una extensión de archivo que se incluye con una versión anterior de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] o que pueda hacerse cargo de otras aplicaciones, a continuación, debe registrar el `OpenWithProgids` la clave para la extensión de archivo y especificar el nuevo ProgID de la lista junto con el ProgID antiguos que admiten. Por ejemplo:
+ El identificador de programa (ProgID) especificado como valor predeterminado para la extensión de archivo es el controlador de archivos predeterminado. Si modifica el ID. de programa de una extensión de archivo que se incluye con una versión anterior de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] o que otras aplicaciones pueden tomar, debe registrar la clave de `OpenWithProgids` para la extensión de archivo y especificar el nuevo ProgID en la lista junto con los ProgID anteriores  admite. Por ejemplo:
 
 ```
 HKEY_CLASSES_ROOT\
@@ -75,7 +75,7 @@ HKEY_CLASSES_ROOT\
          VisualStudio.vcproj.14.0 //new progid
 ```
 
- Si la antigua ProgID tiene verbos asociados con él y, después, estos verbos también aparecerá bajo **abrir con** *Product Name* en el menú contextual.
+ Si el ProgID antiguo tiene verbos asociados, estos verbos también aparecerán en **abrir con** el *nombre del producto* en el menú contextual.
 
 ## <a name="see-also"></a>Vea también
 - [Acerca de las extensiones de nombre de archivo](../extensibility/about-file-name-extensions.md)

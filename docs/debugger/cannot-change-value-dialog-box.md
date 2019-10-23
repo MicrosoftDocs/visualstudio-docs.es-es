@@ -1,5 +1,5 @@
 ---
-title: No se puede cambiar el cuadro de diálogo valor | Documentos de Microsoft
+title: Cuadro de diálogo no se puede cambiar el valor | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -18,16 +18,16 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2f8f9dafe8ada8914591426dea9abc867de2236f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 97f057edefefd590c37b49d709ecf8a6e029b905
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62564156"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72745741"
 ---
 # <a name="cannot-change-value-dialog-box"></a>No se puede cambiar el valor (cuadro de diálogo)
 ## <a name="error"></a>Error
- `The value of this variable cannot be changed` &#124;`The name` *nombre* `does not exist in the current context` &#124; *otros mensajes*
+ `The value of this variable cannot be changed` &#124; `The name` *nombre* `does not exist in the current context` &#124; *otros mensajes*
 
  Este cuadro de mensaje aparece al intentar cambiar el contenido de una variable a un valor no válido en una ventana del depurador (ventanas Automático, Inspección o Variables locales) o en el cuadro de diálogo Inspección rápida. Por ejemplo, este cuadro de mensaje aparece si intenta establecer el valor de una variable entera a una cadena de caracteres.
 

@@ -1,5 +1,5 @@
 ---
-title: Validación de los puntos de interrupción en un servicio de lenguaje heredado | Documentos de Microsoft
+title: Validando puntos de interrupción en un servicio de lenguaje heredado | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,32 +11,32 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 177b0bb3fddebab6518a851bf8ce4c4d34d43897
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: e7c46473610c96779d0c54e06e82cf884216b13b
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66324573"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72722010"
 ---
 # <a name="validating-breakpoints-in-a-legacy-language-service"></a>Validación de puntos de interrupción en un servicio de lenguaje heredado
-Un punto de interrupción indica que debe detenerse la ejecución del programa en un momento determinado, mientras se está ejecutando en un depurador. Un usuario puede colocar un punto de interrupción en cualquier línea en el archivo de origen, ya que el editor no tiene ningún conocimiento de lo que constituye una ubicación válida para un punto de interrupción. Cuando se inicia el depurador, todos los puntos de interrupción marcadas (denominadas puntos de interrupción pendientes) están enlazados a la ubicación adecuada en el programa en ejecución. Al mismo tiempo que los puntos de interrupción se validan para asegurarse de que marcan las ubicaciones de código válido. Por ejemplo, un punto de interrupción en un comentario no es válido, porque no hay ningún código en esa ubicación en el código fuente. El depurador deshabilita los puntos de interrupción no válidos.
+Un punto de interrupción indica que la ejecución del programa se debe detener en un punto determinado mientras se ejecuta en un depurador. Un usuario puede colocar un punto de interrupción en cualquier línea del archivo de código fuente, ya que el editor no tiene ningún conocimiento de lo que constituye una ubicación válida para un punto de interrupción. Cuando se inicia el depurador, todos los puntos de interrupción marcados (denominados puntos de interrupción pendientes) se enlazan a la ubicación adecuada en el programa en ejecución. Al mismo tiempo, los puntos de interrupción se validan para asegurarse de que marcan ubicaciones de código válidas. Por ejemplo, un punto de interrupción en un comentario no es válido, ya que no hay ningún código en esa ubicación en el código fuente. El depurador deshabilita los puntos de interrupción no válidos.
 
- Puesto que el servicio de lenguaje sabe sobre el código fuente que se muestra, puede validar los puntos de interrupción antes de inicia el depurador. Puede invalidar el <xref:Microsoft.VisualStudio.Package.LanguageService.ValidateBreakpointLocation%2A> método devuelva un intervalo de especificar una ubicación válida para un punto de interrupción. La ubicación del punto de interrupción todavía se valida cuando se inicia el depurador, pero se notifica al usuario de puntos de interrupción no válido sin tener que esperar para que el depurador cargar.
+ Dado que el servicio de lenguaje conoce el código fuente que se muestra, puede validar los puntos de interrupción antes de que se inicie el depurador. Puede invalidar el método <xref:Microsoft.VisualStudio.Package.LanguageService.ValidateBreakpointLocation%2A> para devolver un intervalo que especifique una ubicación válida para un punto de interrupción. La ubicación del punto de interrupción todavía se valida cuando se inicia el depurador, pero se notifica al usuario de puntos de interrupción no válidos sin esperar a que se cargue el depurador.
 
-## <a name="implementing-support-for-validating-breakpoints"></a>Implementar la compatibilidad para validar los puntos de interrupción
+## <a name="implementing-support-for-validating-breakpoints"></a>Implementar compatibilidad para validar puntos de interrupción
 
-- El <xref:Microsoft.VisualStudio.Package.LanguageService.ValidateBreakpointLocation%2A> método se le asigna la posición del punto de interrupción. La implementación debe decidir si la ubicación es válida e indicar esto mediante la devolución de un intervalo de texto que identifica el código asociado a la posición de línea que el punto de interrupción.
+- Al método <xref:Microsoft.VisualStudio.Package.LanguageService.ValidateBreakpointLocation%2A> se le asigna la posición del punto de interrupción. La implementación debe decidir si la ubicación es válida o no, e indicar Esto devolviendo un intervalo de texto que identifique el código asociado a la posición de línea del punto de interrupción.
 
-- Devolver <xref:Microsoft.VisualStudio.VSConstants.S_OK> si la ubicación es válida, o <xref:Microsoft.VisualStudio.VSConstants.S_FALSE> si no es válido.
+- Devuelve <xref:Microsoft.VisualStudio.VSConstants.S_OK> si la ubicación es válida o <xref:Microsoft.VisualStudio.VSConstants.S_FALSE> si no es válida.
 
-- Si el punto de interrupción válido se resaltará el intervalo de texto junto con el punto de interrupción.
+- Si el punto de interrupción es válido, el intervalo de texto se resalta junto con el punto de interrupción.
 
 - Si el punto de interrupción no es válido, aparece un mensaje de error en la barra de estado.
 
 ### <a name="example"></a>Ejemplo
- En este ejemplo se muestra una implementación de la <xref:Microsoft.VisualStudio.Package.LanguageService.ValidateBreakpointLocation%2A> método al que llama el analizador para obtener el intervalo del código (si existe) en la ubicación especificada.
+ En este ejemplo se muestra una implementación del método <xref:Microsoft.VisualStudio.Package.LanguageService.ValidateBreakpointLocation%2A> que llama al analizador para obtener el intervalo de código (si existe) en la ubicación especificada.
 
- En este ejemplo se da por supuesto que ha agregado un `GetCodeSpan` método a la <xref:Microsoft.VisualStudio.Package.AuthoringSink> clase que valida el intervalo de texto y devuelve `true` si es una ubicación de punto de interrupción válido.
+ En este ejemplo se da por supuesto que ha agregado un método `GetCodeSpan` a la clase <xref:Microsoft.VisualStudio.Package.AuthoringSink> que valida el intervalo de texto y devuelve `true` si es una ubicación de punto de interrupción válida.
 
 ```csharp
 using Microsoft VisualStudio;

@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c5c021e74c758b6409d42deae6a7e6831368367e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: cca94c078bb2b2598ffbe8e8098ac635cb698288
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62829815"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72744210"
 ---
-# <a name="idiaenumsegmentsgetnewenum"></a>IDiaEnumSegments::get__NewEnum
-Recupera el <xref:System.Runtime.InteropServices.ComTypes.IEnumVARIANT> versión de este enumerador.
+# <a name="idiaenumsegmentsget__newenum"></a>IDiaEnumSegments::get__NewEnum
+Recupera la versión <xref:System.Runtime.InteropServices.ComTypes.IEnumVARIANT> de este enumerador.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -33,10 +33,10 @@ HRESULT get__NewEnum ( 
 #### <a name="parameters"></a>Parámetros
  pRetVal
 
-[out] Devuelve el `IUnknown` interfaz que representa el <xref:System.Runtime.InteropServices.ComTypes.IEnumVARIANT> versión de este enumerador.
+enuncia Devuelve la interfaz `IUnknown` que representa la versión <xref:System.Runtime.InteropServices.ComTypes.IEnumVARIANT> de este enumerador.
 
 ## <a name="return-value"></a>Valor devuelto
- Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.
+ Si se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.
 
 ## <a name="see-also"></a>Vea también
 - [IDiaEnumSegments](../../debugger/debug-interface-access/idiaenumsegments.md)

@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 14832698e186e23b33862ccb1c9f22f3792a6300
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: f0eeffba743d7fae1d473c45eb350fbfc8bcd0b9
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64793786"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72739572"
 ---
-# <a name="idiasymbolgetoffsetinudt"></a>IDiaSymbol::get_offsetInUdt
-Recupera el desplazamiento al principio de un tipo definido por el usuario (UDT) de un miembro en el UDT.
+# <a name="idiasymbolget_offsetinudt"></a>IDiaSymbol::get_offsetInUdt
+Recupera el desplazamiento hasta el principio de un tipo definido por el usuario (UDT) de un miembro del UDT.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -33,21 +33,21 @@ HRESULT get_offsetInUdt( 
 #### <a name="parameters"></a>Parámetros
  `pRetVal`
 
-[out] Devuelve el desplazamiento en bytes de la posición del símbolo.
+enuncia Devuelve el desplazamiento en bytes de la ubicación del símbolo.
 
 ## <a name="return-value"></a>Valor devuelto
- Si es correcto, devuelve `S_OK`; en caso contrario, devuelve `S_FALSE` o un código de error.
+ Si se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve `S_FALSE` o un código de error.
 
 > [!NOTE]
 > Un valor devuelto de `S_FALSE` significa que la propiedad no está disponible para el símbolo.
 
 ## <a name="remarks"></a>Comentarios
- Esta función se usa solo en los registros del equipo local en una versión optimizada.
+ Esta función solo se usa en los registros locales de una compilación optimizada.
 
 ## <a name="requirements"></a>Requisitos
- Encabezado: Dia2.h
+ Encabezado: Dia2. h
 
- Biblioteca: diaguids.lib
+ Biblioteca: diaguids. lib
 
  DLL: msdia100.dll
 

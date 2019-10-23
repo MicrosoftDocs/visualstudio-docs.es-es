@@ -1,5 +1,5 @@
 ---
-title: Escenarios de instalación de VSPackage | Microsoft Docs
+title: Escenarios de configuración de VSPackage | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -9,72 +9,72 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 433819e269e546b224dd34cf47b2f127ea9813aa
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: eddfc0aa9b8f5b3a169ce87b31a2221983f57aaa
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66332714"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72722184"
 ---
 # <a name="vspackage-setup-scenarios"></a>Escenarios de instalación de VSPackage
 
-Es importante diseñar al instalador de paquete VSPackage para mayor flexibilidad. Por ejemplo, es posible que deba liberar una revisión de seguridad en el futuro, o podría cambiar una estrategia de negocio que requiere compatibilidad con control de versiones en paralelo exhaustiva.
+Es importante diseñar el instalador de VSPackage para que sea más flexible. Por ejemplo, puede que tenga que publicar una revisión de seguridad en el futuro, o bien puede cambiar una estrategia empresarial que requiera compatibilidad exhaustiva con el control de versiones en paralelo.
 
-En [que admiten varias versiones de Visual Studio](../../extensibility/supporting-multiple-versions-of-visual-studio.md), puede leer sobre las ventajas y los problemas de compatibilidad con las instalaciones en paralelo de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] con compartida o en paralelo de las instalaciones del paquete de VS. En resumen, VSPackages side-by-side ofrecerle la máxima flexibilidad para admitir nuevas características de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)].
+En la [compatibilidad con varias versiones de Visual Studio](../../extensibility/supporting-multiple-versions-of-visual-studio.md), puede obtener información sobre las ventajas y los problemas de compatibilidad con instalaciones en paralelo de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] con instalaciones compartidas o en paralelo del VSPackage. En Resumen, los VSPackages en paralelo proporcionan la máxima flexibilidad para admitir las nuevas características de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)].
 
-Los escenarios descritos en este tema no son las únicas opciones, pero se presentan como sugieren procedimientos recomendados.
+Los escenarios descritos en este tema no son las únicas opciones, pero se presentan como prácticas recomendadas.
 
 ## <a name="components-privacy-and-sharing"></a>Componentes, privacidad y uso compartido
 
-### <a name="make-your-components-independent"></a>Hacer que los componentes independientes
+### <a name="make-your-components-independent"></a>Haga que sus componentes sean independientes
 
-Después de identificar y rellenar un componente, asignar un `GUID`e implementar el componente, no se puede cambiar su composición. Si cambia la composición de un componente, el componente resultante debe ser un nuevo componente con un nuevo `GUID`. Dados estos hechos, se permite la máxima flexibilidad de control de versiones mediante la realización de cada unidad de componente independiente, de manera autónoma. Para obtener más información acerca de las reglas que rigen los componentes, consulte [cambiando el código de componente](/windows/desktop/Msi/changing-the-component-code) y [¿qué ocurre si el componente de las reglas se dividen?](/windows/desktop/Msi/what-happens-if-the-component-rules-are-broken).
+Una vez que se identifica y rellena un componente, se asigna un `GUID` e implementa el componente, no se puede cambiar su composición. Si cambia la composición de un componente, el componente resultante debe ser un nuevo componente con una nueva `GUID`. Dados estos hechos, la mayor flexibilidad de control de versiones se proporciona al convertir cada componente en una unidad independiente y independiente. Para obtener más información acerca de las reglas que rigen los componentes, consulte [cambiar el código de componente](/windows/desktop/Msi/changing-the-component-code) y [Qué sucede si se interrumpen las reglas de componentes](/windows/desktop/Msi/what-happens-if-the-component-rules-are-broken).
 
-### <a name="do-not-mix-shared-and-private-resources-in-a-component"></a>No mezcle los recursos compartidos y privados en un componente
+### <a name="do-not-mix-shared-and-private-resources-in-a-component"></a>No mezclar recursos compartidos y privados en un componente
 
-Recuento de referencias se produce en el nivel de componente. Por lo tanto, mezclando recursos compartidos y privados en un componente hace imposible actualizar los recursos privados, como un archivo ejecutable, sin sobrescribir también los recursos compartidos. En este escenario crea problemas de compatibilidad con versiones anteriores y le impida crear funcionalidad en paralelo.
+El recuento de referencias se produce en el nivel de componente. Por lo tanto, la combinación de recursos compartidos y privados en un componente hace imposible actualizar los recursos privados, como un archivo ejecutable, sin sobrescribir también los recursos compartidos. En este escenario se crean problemas de compatibilidad con versiones anteriores y se restringe la creación de la funcionalidad en paralelo.
 
-Por ejemplo, los valores del registro se usan para registrar el VSPackage con el [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] deben conservarse en un componente independiente de uno se usa para registrar el VSPackage con Visual Studio. Archivos compartidos o los valores del registro van en otro componente.
+Por ejemplo, los valores del registro que se usan para registrar el VSPackage con el [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] deben mantenerse en un componente independiente de uno que se usa para registrar el VSPackage con Visual Studio. Los archivos compartidos o los valores del registro entran aún en otro componente.
 
 ## <a name="scenario-1-shared-vspackage"></a>Escenario 1: VSPackage compartido
 
-En este escenario, un VSPackage compartido (un archivo binario único que admite varias versiones de Visual Studio se incluye en un paquete de Windows Installer. Registrar con cada versión de Visual Studio se controla mediante las características seleccionables por el usuario. También significa que cuando se asigna para separar las características, cada componente se puede seleccionar individualmente para la instalación o desinstalación, colocar el usuario en el control de integrar el VSPackage en diferentes versiones de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. (Consulte [características de Windows Installer](/windows/desktop/Msi/windows-installer-features) para obtener más información sobre el uso de características en los paquetes de Windows Installer.)
+En este escenario, se incluye un VSPackage compartido (un solo binario que admite varias versiones de Visual Studio en un paquete de Windows Installer. El registro con cada versión de Visual Studio se controla mediante características seleccionables por el usuario. También significa que, cuando se asigna a características independientes, cada componente se puede seleccionar individualmente para su instalación o desinstalación, lo que permite al usuario controlar la integración del VSPackage en diferentes versiones de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. (Consulte [características de Windows Installer](/windows/desktop/Msi/windows-installer-features) para obtener más información sobre el uso de características en paquetes de Windows Installer).
 
-![Instalador de VS Shared VSPackage](../../extensibility/internals/media/vs_sharedpackage.gif "VS_SharedPackage")
+![Instalador del VSPackage compartido VS](../../extensibility/internals/media/vs_sharedpackage.gif "VS_SharedPackage")
 
-Como se muestra en la ilustración, los componentes compartidos se convierten en parte de la característica Feat_Common, que siempre se instala. Mediante la realización de las características de Feat_VS2002 y Feat_VS2003 visible, los usuarios pueden elegir en tiempo de instalación en las versiones de Visual Studio que desean integrar VSPackage. Los usuarios también pueden usar el modo de mantenimiento de Windows Installer para agregar o quitar características, que en este caso se agrega o quita la información de registro de VSPackage de diferentes versiones de Visual Studio.
+Como se muestra en la ilustración, los componentes compartidos forman parte de la característica Feat_Common, que siempre está instalada. Al hacer visibles las características Feat_VS2002 y Feat_VS2003, los usuarios pueden elegir en el momento de la instalación en qué versiones de Visual Studio desean que se integre el VSPackage. Los usuarios también pueden usar el modo de mantenimiento de Windows Installer para agregar o quitar características, que en este caso agrega o quita la información de registro de VSPackage de distintas versiones de Visual Studio.
 
 > [!NOTE]
-> Si la columna de presentación de una característica en 0 lo oculta. Un valor de columna de nivel bajo, como 1, garantiza que siempre se instalará. Para obtener más información, consulte [propiedad INSTALLLEVEL](/windows/desktop/Msi/installlevel) y [tabla de características](/windows/desktop/Msi/feature-table).
+> Si se establece la columna de presentación de una característica en 0, se oculta. Un valor de columna de nivel bajo, como 1, garantiza que siempre se instalará. Para obtener más información, vea [INSTALLLEVEL Property](/windows/desktop/Msi/installlevel) and [Feature Table](/windows/desktop/Msi/feature-table).
 
-## <a name="scenario-2-shared-vspackage-update"></a>Escenario 2: Actualizar compartida de VSPackage
+## <a name="scenario-2-shared-vspackage-update"></a>Escenario 2: actualización compartida de VSPackage
 
-En este escenario, se incluye una versión actualizada del instalador de VSPackage en el escenario 1. Para ilustrar la explicación, la actualización agrega compatibilidad para Visual Studio, pero podría también ser una revisión de seguridad más sencilla o paquete de servicio de corrección de errores. Las reglas del instalador de Windows para instalar los componentes más recientes requieren que los componentes sin cambios ya está en el sistema no se vuelven a copiar. En este caso, sobrescriba el componente actualizado Comp_MyVSPackage.dll y permitir que los usuarios a optar por agregar la nueva característica Feat_VS2005 a su componente Comp_VS2005_Reg un sistema con la versión 1.0 ya está presente.
+En este escenario, se envía una versión actualizada del instalador de VSPackage en el escenario 1. Por motivos de debate, la actualización agrega compatibilidad con Visual Studio, pero también podría ser una revisión de seguridad más sencilla o Service Pack de corrección de errores. Las reglas de Windows Installer para instalar componentes más recientes requieren que los componentes sin cambios que ya están en el sistema no se recopien. En este caso, un sistema con la versión 1,0 ya presente sobrescribirá el componente actualizado Comp_MyVSPackage. dll y permitirá a los usuarios elegir agregar la nueva característica Feat_VS2005 con su componente Comp_VS2005_Reg.
 
 > [!CAUTION]
-> Cada vez que un VSPackage se comparte entre varias versiones de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], es esencial que las versiones posteriores del VSPackage mantengan la compatibilidad con versiones anteriores de Visual Studio. Cuando no se puede mantener la compatibilidad con versiones anteriores, debe usar VSPackages side-by-side y privados. Para obtener más información, consulte [que admiten varias versiones de Visual Studio](../../extensibility/supporting-multiple-versions-of-visual-studio.md).
+> Cada vez que un VSPackage se comparte entre varias versiones de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], es fundamental que las versiones posteriores del VSPackage mantengan la compatibilidad con versiones anteriores de Visual Studio. Si no puede mantener la compatibilidad con versiones anteriores, debe usar los VSPackages privados en paralelo. Para obtener más información, vea [compatibilidad con varias versiones de Visual Studio](../../extensibility/supporting-multiple-versions-of-visual-studio.md).
 
-![Instalador de Visual Studio comparten VS Package Update](../../extensibility/internals/media/vs_sharedpackageupdate.gif "VS_SharedPackageUpdate")
+![Instalador de actualización VS compartido VS Package](../../extensibility/internals/media/vs_sharedpackageupdate.gif "VS_SharedPackageUpdate")
 
-Este escenario presenta a un nuevo instalador de VSPackage, que aprovecha la compatibilidad del instalador de Windows para las actualizaciones menores. Los usuarios simplemente instalar la versión 1.1 y actualiza la versión 1.0. Sin embargo, no es necesario tener la versión 1.0 en el sistema. El mismo instalador instalará la versión 1.1 en un sistema sin versión 1.0. La ventaja para proporcionar las actualizaciones menores de esta manera es que no es necesario pasar por el trabajo de desarrollo de un instalador de actualización y un instalador de producto completo. Una instalador realiza dos tareas. Una revisión de seguridad o service pack es posible que en su lugar, aproveche las ventajas de las revisiones de Windows Installer. Para obtener más información, consulte [aplicación de revisiones y actualizaciones](/windows/desktop/Msi/patching-and-upgrades).
+Este escenario presenta un nuevo instalador de VSPackage, que aprovecha la compatibilidad de Windows Installer con las actualizaciones secundarias. Los usuarios simplemente instalan la versión 1,1 y actualizan la versión 1,0. Sin embargo, no es necesario tener la versión 1,0 en el sistema. El mismo instalador instalará la versión 1,1 en un sistema sin la versión 1,0. La ventaja de proporcionar actualizaciones secundarias de esta manera es que no es necesario pasar por el trabajo de desarrollar un instalador de actualización y un instalador completo del producto. Un instalador realiza ambos trabajos. En su lugar, una corrección o Service Pack de seguridad puede aprovechar las revisiones de Windows Installer. Para obtener más información, consulte [revisiones y actualizaciones](/windows/desktop/Msi/patching-and-upgrades).
 
-## <a name="scenario-3-side-by-side-vspackage"></a>Escenario 3: Paquete de VS Side-by-Side
+## <a name="scenario-3-side-by-side-vspackage"></a>Escenario 3: VSPackage en paralelo
 
-Este escenario presenta dos instaladores de VSPackage, uno para cada versión de Visual Studio .NET 2003 y Visual Studio. Cada instalador instala un side-by-side o private, VSPackage (es decir, en concreto se compila y se instala una versión concreta de Visual Studio). Cada VSPackage está en su propio componente. Por lo tanto, cada uno de ellos pueden realizarse individualmente con revisiones o mantenimiento de versiones. Dado que la DLL de VSPackage ahora es específica de la versión, es seguro incluir la información de registro en el mismo componente que el archivo DLL.
+Este escenario presenta dos instaladores de VSPackage, uno para cada versión de Visual Studio .NET 2003 y Visual Studio. Cada instalador instala un VSPackage en paralelo o privado (uno que se crea e instala específicamente para una versión determinada de Visual Studio). Cada VSPackage está en su propio componente. Por lo tanto, cada una se puede atender individualmente con revisiones o versiones de mantenimiento. Dado que el archivo DLL de VSPackage es ahora específico de la versión, es seguro incluir su información de registro en el mismo componente que el archivo DLL.
 
-![Instalador de VS Side-by-Side VS Package](../../extensibility/internals/media/vs_sbys_package.gif "VS_SbyS_Package")
+![Instalador de vs paquete VS en paralelo](../../extensibility/internals/media/vs_sbys_package.gif "VS_SbyS_Package")
 
-Cada instalador también incluye código que se comparte entre los dos instaladores. Si el código compartido se instala en una ubicación común, instalar dos archivos .msi se instalará el código compartido una sola vez. El segundo instalador acaba incrementa un recuento de referencias en el componente. El recuento de referencias garantiza que si se desinstala uno de los VSPackages, seguirá siendo el código compartido para el VSPackage del otro. Si el segundo VSPackage se desinstala así, se quitará el código compartido.
+Cada instalador también incluye código que se comparte entre los dos instaladores. Si el código compartido se instala en una ubicación común, al instalar ambos archivos. msi se instalará el código compartido solo una vez. El segundo instalador solo incrementa un recuento de referencias en el componente. El recuento de referencias garantiza que, si se desinstala uno de los VSPackages, el código compartido permanecerá para el otro VSPackage. Si también se desinstala el segundo VSPackage, se quitará el código compartido.
 
-## <a name="scenario-4-side-by-side-vspackage-update"></a>Escenario 4: Actualización del paquete de VS Side-by-Side
+## <a name="scenario-4-side-by-side-vspackage-update"></a>Escenario 4: actualización de VSPackage en paralelo
 
-En este escenario, el VSPackage para Visual Studio tuvieron una vulnerabilidad de seguridad y que necesita para realizar una actualización. Como se muestra en el escenario 2, puede crear un nuevo archivo .msi que actualiza una instalación existente para incluir la corrección de seguridad, así como implementar las instalaciones nuevas con la corrección de seguridad ya en su lugar.
+En este escenario, el VSPackage para Visual Studio sufrió una vulnerabilidad de seguridad y debe emitir una actualización. Como en el escenario 2, puede crear un nuevo archivo. msi que actualice una instalación existente para incluir la corrección de seguridad, así como implementar nuevas instalaciones con la corrección de seguridad ya implementada.
 
-En este caso, el VSPackage es un VSPackage administrado instalado en la caché de ensamblados global (GAC). Cuando se recompile para incluir la corrección de seguridad, debe cambiar la parte del número de revisión del número de versión del ensamblado. La información de registro de nuevo el número de versión de ensamblado sobrescribe la versión anterior, lo que provocará [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] para cargar el ensamblado fijo.
+En este caso, el VSPackage es un VSPackage administrado instalado en la caché de ensamblados global (GAC). Cuando vuelva a generarlo para incluir la corrección de seguridad, debe cambiar la parte del número de revisión del número de versión del ensamblado. La información de registro del nuevo número de versión de ensamblado sobrescribe la versión anterior, lo que hace que [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] cargue el ensamblado fijo.
 
-![Instalador de VS Side-by-Side VS Package Update](../../extensibility/internals/media/vs_sbys_packageupdate.gif "VS_SbyS_PackageUpdate")
+![Instalador de la actualización en paralelo de VS Package](../../extensibility/internals/media/vs_sbys_packageupdate.gif "VS_SbyS_PackageUpdate")
 
-Para obtener más información sobre la implementación de ensamblados en paralelo, vea [lo que simplifica la implementación y resolver infierno de DLL con .NET Framework](https://msdn.microsoft.com/library/ms973843.aspx).
+Para obtener más información sobre la implementación de ensamblados en paralelo, consulte [simplificación de la implementación y solución de DLL Hell con el .NET Framework](https://msdn.microsoft.com/library/ms973843.aspx).
 
 ## <a name="see-also"></a>Vea también
 

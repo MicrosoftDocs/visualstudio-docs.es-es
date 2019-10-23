@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ddd5d6a99f0d5e2f0eb3bab87bbe7805b7d8588a
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 92d849860d4c91557f01a26f107782772c508caa
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64830738"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72739018"
 ---
-# <a name="idiasymbolgetunalignedtype"></a>IDiaSymbol::get_unalignedType
-Recupera una marca que especifica si el tipo de datos definido por el usuario es no alineado.
+# <a name="idiasymbolget_unalignedtype"></a>IDiaSymbol::get_unalignedType
+Recupera una marca que especifica si el tipo de datos definido por el usuario no está alineado.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -33,10 +33,10 @@ HRESULT get_unalignedType ( 
 #### <a name="parameters"></a>Parámetros
  `pRetVal`
 
-[out] Devuelve `TRUE` si el tipo de datos definido por el usuario no alineada; de lo contrario, devuelve `FALSE`.
+enuncia Devuelve `TRUE` si el tipo de datos definido por el usuario no está alineado; de lo contrario, devuelve `FALSE`.
 
 ## <a name="return-value"></a>Valor devuelto
- Si es correcto, devuelve `S_OK`; en caso contrario, devuelve `S_FALSE` o un código de error.
+ Si se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve `S_FALSE` o un código de error.
 
 > [!NOTE]
 > Un valor devuelto de `S_FALSE` significa que la propiedad no está disponible para el símbolo.

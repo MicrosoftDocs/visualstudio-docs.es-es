@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 25e6397b65c717be65a9a707dd0a53fc70321acb
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a2240ef2d20b46e50e36942553d76b83fce6232b
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62828506"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72743050"
 ---
 # <a name="idialoadcallbackrestrictregistryaccess"></a>IDiaLoadCallback::RestrictRegistryAccess
-Determina si las consultas del registro pueden usarse para buscar las rutas de búsqueda de símbolos.
+Determina si las consultas del registro se pueden usar para buscar rutas de acceso de búsqueda de símbolos.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -29,10 +29,10 @@ HRESULT RestrictRegistryAccess();
 ```
 
 ## <a name="return-value"></a>Valor devuelto
- Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.
+ Si se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.
 
 ## <a name="remarks"></a>Comentarios
- Cualquier código de retorno distinto `S_OK` impide que consulta el registro para las rutas de búsqueda de símbolos.
+ Cualquier código de retorno distinto de `S_OK` impide consultar el registro en busca de rutas de búsqueda de símbolos.
 
 ## <a name="see-also"></a>Vea también
 - [IDiaLoadCallback2](../../debugger/debug-interface-access/idialoadcallback2.md)

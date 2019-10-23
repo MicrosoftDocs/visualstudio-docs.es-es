@@ -1,5 +1,5 @@
 ---
-title: Esquematización en un servicio de lenguaje heredado | Documentos de Microsoft
+title: Esquematización en un servicio de lenguaje heredado | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,41 +12,41 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7af8ab4615cff7462a47dfb11b193660eb62274c
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: a6b2ba55a2e77a1f7261812a181ad780c2ef2b71
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66314883"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72726175"
 ---
 # <a name="outlining-in-a-legacy-language-service"></a>Esquematización en un servicio de lenguaje heredado
-Esquematización hace posible contraer un programa complejo en una descripción general o esquema. Por ejemplo, en C# se pueden contraer todos los métodos en una sola línea, que muestra solo la firma del método. Además, las estructuras y clases se pueden contraer para mostrar solo los nombres de las clases y estructuras. Dentro de un único método, se puede contraer una lógica compleja para mostrar el flujo general mostrando solo la primera línea de instrucciones como `foreach`, `if`, y `while`.
+La esquematización permite contraer un programa complejo en una introducción o un esquema. Por ejemplo, en C# todos los métodos se puede contraer en una sola línea, mostrando solo la firma del método. Además, las estructuras y las clases se pueden contraer para mostrar solo los nombres de las estructuras y las clases. Dentro de un único método, la lógica compleja se puede contraer para mostrar el flujo global mostrando solo la primera línea de instrucciones, como `foreach`, `if` y `while`.
 
- Servicios de lenguaje heredado se implementan como parte de un paquete VSPackage, pero la forma más reciente para implementar características de servicio de lenguaje es usar las extensiones MEF. Para obtener más información, consulte [Tutorial: Esquematización](../../extensibility/walkthrough-outlining.md).
+ Los servicios de lenguaje heredados se implementan como parte de un VSPackage, pero la forma más reciente de implementar las características del servicio de lenguaje es usar extensiones de MEF. Para obtener más información, vea [Tutorial: esquematización](../../extensibility/walkthrough-outlining.md).
 
 > [!NOTE]
-> Se recomienda que comience a usar el nuevo editor de API tan pronto como sea posible. Esto mejorará el rendimiento de su servicio de lenguaje y le permiten aprovechar las nuevas características del editor.
+> Le recomendamos que empiece a usar la nueva API del editor lo antes posible. Esto mejorará el rendimiento del servicio de lenguaje y le permitirá aprovechar las nuevas características del editor.
 
-## <a name="enabling-support-for-outlining"></a>Habilitar la compatibilidad para la esquematización
- El `AutoOutlining` entrada del registro se establece en 1 para habilitar la esquematización automática. Esquematizar automáticamente configura un análisis de todo el origen cuando se carga un archivo o se puede cambiar con el fin de identificar las regiones ocultas y mostrar los glifos de esquematización. Esquematización también puede controlarse manualmente por el usuario.
+## <a name="enabling-support-for-outlining"></a>Habilitar la compatibilidad con la esquematización
+ La entrada del registro `AutoOutlining` está establecida en 1 para habilitar la esquematización automática. La esquematización automática configura un análisis de todo el origen cuando se carga o se cambia un archivo con el fin de identificar regiones ocultas y mostrar los glifos de esquematización. El usuario también puede controlar manualmente la esquematización.
 
- El valor de la `AutoOutlining` entrada del registro puede obtenerse a través de la <xref:Microsoft.VisualStudio.Package.LanguagePreferences.AutoOutlining%2A> propiedad en el <xref:Microsoft.VisualStudio.Package.LanguagePreferences> clase. El `AutoOutlining` entrada del registro se puede inicializar con un parámetro con nombre para el <xref:Microsoft.VisualStudio.Shell.ProvideLanguageServiceAttribute> atributo (consulte [registrar un servicio de lenguaje heredado](../../extensibility/internals/registering-a-legacy-language-service1.md) para obtener más información).
+ El valor de la entrada del registro `AutoOutlining` se puede obtener a través de la propiedad <xref:Microsoft.VisualStudio.Package.LanguagePreferences.AutoOutlining%2A> de la clase <xref:Microsoft.VisualStudio.Package.LanguagePreferences>. La entrada del registro `AutoOutlining` se puede inicializar con un parámetro con nombre en el atributo <xref:Microsoft.VisualStudio.Shell.ProvideLanguageServiceAttribute> (consulte [registro de un servicio de lenguaje heredado](../../extensibility/internals/registering-a-legacy-language-service1.md) para obtener más información).
 
 ## <a name="the-hidden-region"></a>La región oculta
- Para proporcionar la esquematización, el servicio de lenguaje debe admitir las regiones ocultas. Estos son los intervalos de texto que puede expandir o contraer. Las regiones ocultas se pueden delimitar mediante símbolos de lenguaje estándar, como llaves, o símbolos personalizados. Por ejemplo, C# tiene un `#region` / `#endregion` par que delimita la región oculta.
+ Para proporcionar la esquematización, el servicio de lenguaje debe admitir regiones ocultas. Se trata de intervalos de texto que se pueden expandir o contraer. Las regiones ocultas se pueden delimitar mediante símbolos de lenguaje estándar, como llaves o símbolos personalizados. Por ejemplo, C# tiene un `#region` / `#endregion` par que delimita una región oculta.
 
- Las regiones ocultas son administradas por un administrador de la región oculta, que se expone como la <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextSession> interfaz.
+ Las regiones ocultas se administran mediante el administrador de regiones ocultas, que se expone como la interfaz de <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextSession>.
 
- Esquematizar regiones ocultas utiliza el <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenRegion> interfaz y contener el intervalo de la pancarta que se mostrará cuando se contrae el intervalo, el estado de visibilidad actual y la región oculta.
+ En la esquematización se usan regiones ocultas la interfaz <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenRegion> y contienen el intervalo de la región oculta, el estado visible actual y el banner que se va a mostrar cuando se contrae el intervalo.
 
- El analizador del servicio de lenguaje usa el <xref:Microsoft.VisualStudio.Package.AuthoringSink.AddHiddenRegion%2A> método para agregar una nueva región oculta con el comportamiento predeterminado para las regiones ocultas, mientras que el <xref:Microsoft.VisualStudio.Package.AuthoringSink.AddHiddenRegion%2A> método le permite personalizar la apariencia y comportamiento del contorno. Una vez que se asignan las regiones ocultas a la sesión de la región oculta, [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] administra las regiones ocultas para el servicio de lenguaje.
+ El analizador del servicio de lenguaje usa el método <xref:Microsoft.VisualStudio.Package.AuthoringSink.AddHiddenRegion%2A> para agregar una nueva región oculta con el comportamiento predeterminado para las regiones ocultas, mientras que el método <xref:Microsoft.VisualStudio.Package.AuthoringSink.AddHiddenRegion%2A> permite personalizar la apariencia y el comportamiento del contorno. Una vez que se proporcionan regiones ocultas a la sesión de la región oculta, [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] administra las regiones ocultas para el servicio de lenguaje.
 
- Si necesita determinar cuándo se destruye la sesión de región oculta, se cambia una región oculta, o deberá asegurarse de que una región oculta determinada es visible; debe derivar una clase de la <xref:Microsoft.VisualStudio.Package.Source> clase e invalidar los métodos adecuados, <xref:Microsoft.VisualStudio.Package.Source.OnBeforeSessionEnd%2A>, <xref:Microsoft.VisualStudio.Package.Source.OnHiddenRegionChange%2A>, y <xref:Microsoft.VisualStudio.Package.Source.MakeBaseSpanVisible%2A>, respectivamente.
+ Si tiene que determinar cuándo se destruye la sesión de la región oculta, se cambia una región oculta o debe asegurarse de que una región oculta determinada esté visible; debe derivar una clase de la <xref:Microsoft.VisualStudio.Package.Source> clase e invalidar los métodos adecuados, <xref:Microsoft.VisualStudio.Package.Source.OnBeforeSessionEnd%2A>, <xref:Microsoft.VisualStudio.Package.Source.OnHiddenRegionChange%2A> y <xref:Microsoft.VisualStudio.Package.Source.MakeBaseSpanVisible%2A>, respectivamente.
 
 ### <a name="example"></a>Ejemplo
- Este es un ejemplo simplificado de creación de las regiones ocultas para todos los pares de llaves. Se supone que el lenguaje proporciona coincidencia de llaves y que las llaves que se debe coincidir al menos incluyen entre llaves ({y}). Este enfoque es solo con fines ilustrativos. Una implementación completa tendría un tratamiento completo de casos de <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A>. En este ejemplo también muestra cómo establecer el <xref:Microsoft.VisualStudio.Package.LanguagePreferences.AutoOutlining%2A> preferencia `true` temporalmente. Una alternativa consiste en especificar el `AutoOutlining` con el nombre de parámetro en el `ProvideLanguageServiceAttribute` atributo en el paquete de idioma.
+ Este es un ejemplo simplificado de la creación de regiones ocultas para todos los pares de llaves. Se supone que el lenguaje proporciona coincidencia de llaves y que las llaves que deben coincidir incluyen al menos las llaves ({y}). Este enfoque se utiliza únicamente con fines ilustrativos. Una implementación completa tendría un control completo de los casos en <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A>. En este ejemplo también se muestra cómo establecer la preferencia <xref:Microsoft.VisualStudio.Package.LanguagePreferences.AutoOutlining%2A> en `true` temporalmente. Una alternativa consiste en especificar el `AutoOutlining` parámetro con nombre en el atributo de `ProvideLanguageServiceAttribute` en el paquete de idioma.
 
- En este ejemplo se da por supuesto reglas de C# para los comentarios, cadenas y literales.
+ En este ejemplo C# se da por supuesto reglas para comentarios, cadenas y literales.
 
 ```csharp
 using Microsoft.VisualStudio.Package;

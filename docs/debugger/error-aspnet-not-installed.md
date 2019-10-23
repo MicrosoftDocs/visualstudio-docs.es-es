@@ -1,5 +1,5 @@
 ---
-title: 'Error: ASP.NET no está instalado | Documentos de Microsoft'
+title: 'Error: no se ha instalado ASP.NET | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: troubleshooting
 f1_keywords:
@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - aspnet
-ms.openlocfilehash: 98db3475c7d83427eb516f696731a738e34bd7a1
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 7d754cc2bb7931cdcbdb42abeddd554390ba320c
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63399310"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72737920"
 ---
 # <a name="error-aspnet-not-installed"></a>Error: ASP.NET no está instalado
 Este error se produce si [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] no está correctamente instalado en el equipo en el que intenta depurar. Esto puede significar que nunca se instaló [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] o que se instaló [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] antes que IIS.
@@ -37,7 +37,7 @@ Este error se produce si [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_m
    \WINDOWS\Microsoft.NET\Framework\version\aspnet_regiis -i
    ```
 
-    donde *versión* representa el número de versión de .NET Framework instalada en el equipo, por ejemplo, v1.0.370. Puede determinar la versión de .NET framework consultando el `\WINDOWS\Microsoft.NET\Framework` directory.
+    donde *version* representa el número de versión del .NET Framework instalado en el equipo, como por ejemplo v 1.0.370. Puede determinar la versión del marco examinando el directorio de `\WINDOWS\Microsoft.NET\Framework`.
 
    > [!NOTE]
    > En Windows Server 2003, puede instalar [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] mediante el subprograma **Agregar o quitar programas** del Panel de control.

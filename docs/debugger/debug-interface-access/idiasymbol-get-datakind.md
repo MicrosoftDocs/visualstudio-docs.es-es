@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cf4a0324046383557c9c32afae2e6f05a41124ba
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 1291c57425b7250af46b3b02ba8f407fb4959a05
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64790382"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72740708"
 ---
-# <a name="idiasymbolgetdatakind"></a>IDiaSymbol::get_dataKind
-Recupera la clasificación de la variable de un símbolo de datos.
+# <a name="idiasymbolget_datakind"></a>IDiaSymbol::get_dataKind
+Recupera la clasificación de variables de un símbolo de datos.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -33,20 +33,20 @@ HRESULT get_dataKind ( 
 #### <a name="parameters"></a>Parámetros
  `pRetVal`
 
-[out] Devuelve un valor de la [DataKind (enumeración)](../../debugger/debug-interface-access/datakind.md) enumeración que especifica el tipo de datos como globales, estáticos o constante, por ejemplo.
+enuncia Devuelve un valor de la enumeración de la [enumeración de tipos](../../debugger/debug-interface-access/datakind.md) de datos que especifica el tipo de datos como global, static o Constant, por ejemplo.
 
 ## <a name="return-value"></a>Valor devuelto
- Si es correcto, devuelve `S_OK`; en caso contrario, devuelve `S_FALSE` o un código de error.
+ Si se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve `S_FALSE` o un código de error.
 
 > [!NOTE]
 > Un valor devuelto de `S_FALSE` significa que la propiedad no está disponible para el símbolo.
 
 ## <a name="requirements"></a>Requisitos
 
-|Requisito|DESCRIPCIÓN|
+|Requisito|Descripción|
 |-----------------|-----------------|
 |Encabezado:|dia2.h|
-|Versión:|SDK de DIA v7.0|
+|Versión:|SDK de DIA v 7.0|
 
 ## <a name="see-also"></a>Vea también
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

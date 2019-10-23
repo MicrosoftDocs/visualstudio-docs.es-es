@@ -1,5 +1,5 @@
 ---
-title: Las funciones de API de complemento de Control de origen | Documentos de Microsoft
+title: Funciones de la API del complemento de control de código fuente | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,80 +10,80 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9426d4f1f673d0d82c6ce3fd84c76a1c42d8ec4e
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 57e451ebb4693e7742208ab6a375fa7d50563a17
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66331931"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72719899"
 ---
 # <a name="source-control-plug-in-api-functions"></a>Funciones de API de complemento de control de código fuente
-La API de complemento de Control de código fuente proporciona las siguientes funciones, que deben implementarse mediante el complemento de acuerdo con esta API de control de código fuente. Las firmas de cada función y la semántica asociada con las marcas de bits y otros parámetros se describen en detalle en esta referencia.
+La API del complemento de control de código fuente proporciona las siguientes funciones, que debe implementar el complemento de control de código fuente de acuerdo con esta API. Las firmas de cada función y la semántica asociada a las marcas de bits y otros parámetros se describen en detalle en esta referencia.
 
-## <a name="initialization-and-housekeeping-functions"></a>Inicialización y funciones de mantenimiento
+## <a name="initialization-and-housekeeping-functions"></a>Funciones de inicialización y mantenimiento
 
 |Función|Descripción|
 |--------------|-----------------|
 |[SccCloseProject](../extensibility/scccloseproject-function.md)|Cierra un proyecto.|
-|[SccGetCommandOptions](../extensibility/sccgetcommandoptions-function.md)|Pide al usuario para las opciones avanzadas para el comando especificado.|
-|[SccGetVersion](../extensibility/sccgetversion-function.md)|Devuelve la versión del control de código fuente de complemento.|
+|[SccGetCommandOptions](../extensibility/sccgetcommandoptions-function.md)|Solicita al usuario opciones avanzadas para el comando especificado.|
+|[SccGetVersion](../extensibility/sccgetversion-function.md)|Devuelve la versión del complemento de control de código fuente.|
 |[SccInitialize](../extensibility/sccinitialize-function.md)|Inicializa el complemento de control de código fuente. Se llama una vez para cada instancia del complemento.|
 |[SccOpenProject](../extensibility/sccopenproject-function.md)|Abre un proyecto.|
-|[SccSetOption](../extensibility/sccsetoption-function.md)|Una función genérica que se usa para establecer una amplia variedad de opciones. Cada opción se inicia con `SCC_OPT_xxx` y tiene su propio conjunto definido de valores.|
-|[SccUninitialize](../extensibility/sccuninitialize-function.md)|Se llama una vez cuando se necesita un complemento de control de código fuente a desconectar.|
+|[SccSetOption](../extensibility/sccsetoption-function.md)|Función genérica que se usa para establecer una amplia variedad de opciones. Cada opción comienza con `SCC_OPT_xxx` y tiene su propio conjunto de valores definido.|
+|[SccUninitialize](../extensibility/sccuninitialize-function.md)|Se le llama una vez cuando es necesario desenchufar un complemento de control de código fuente.|
 
-## <a name="core-source-control-functions"></a>Funciones principales de Control de código fuente
+## <a name="core-source-control-functions"></a>Funciones de control de código fuente principales
 
 |Función|Descripción|
 |--------------|-----------------|
-|[SccAdd](../extensibility/sccadd-function.md)|Agrega una matriz de los archivos especificados por los nombres de ruta de acceso completa para el sistema de control de código fuente.|
-|[SccAddFromScc](../extensibility/sccaddfromscc-function.md)|Permite al usuario examinar los archivos que ya están en el sistema de control de código fuente y, a continuación, realizar esas partes de los archivos del proyecto actual.|
-|[SccCheckin](../extensibility/scccheckin-function.md)|Comprueba en una matriz de archivos.|
+|[SccAdd](../extensibility/sccadd-function.md)|Agrega una matriz de archivos especificados por nombres de ruta de acceso completos al sistema de control de código fuente.|
+|[SccAddFromScc](../extensibility/sccaddfromscc-function.md)|Permite al usuario buscar archivos que ya están en el sistema de control de código fuente y, a continuación, convertirlos en parte del proyecto actual.|
+|[SccCheckin](../extensibility/scccheckin-function.md)|Protege una matriz de archivos.|
 |[SccCheckout](../extensibility/scccheckout-function.md)|Desprotege una matriz de archivos.|
-|[SccDiff](../extensibility/sccdiff-function.md)|Muestra las diferencias entre los archivos del usuario local especificado por un nombre de ruta de acceso completa y la versión en el control de código fuente.|
+|[SccDiff](../extensibility/sccdiff-function.md)|Muestra las diferencias entre el archivo del usuario local especificado por un nombre de ruta de acceso completo y la versión bajo control de código fuente.|
 |[SccGet](../extensibility/sccget-function.md)|Recupera una copia de solo lectura de un conjunto de archivos.|
-|[SccGetEvents](../extensibility/sccgetevents-function.md)|Comprueba el estado de los archivos que el llamador pidió sobre (a través de `SccQueryInfo`).|
-|[SccGetProjPath](../extensibility/sccgetprojpath-function.md)|Hace que el complemento para preguntar al usuario para una ruta de acceso de proyecto que sea significativo para el complemento de control de código fuente.|
-|[SccHistory](../extensibility/scchistory-function.md)|Muestra el historial de una matriz de nombres de archivo local completa.|
-|[SccPopulateList](../extensibility/sccpopulatelist-function.md)|Examina la lista de archivos para su estado actual. Además, utiliza el `pfnPopulate` función para notificar al llamador cuando un archivo no coincide con los criterios para la `nCommand`.|
+|[SccGetEvents](../extensibility/sccgetevents-function.md)|Comprueba el estado de los archivos que el autor de la llamada ha solicitado (a través de `SccQueryInfo`).|
+|[SccGetProjPath](../extensibility/sccgetprojpath-function.md)|Hace que el complemento de control de código fuente solicite al usuario una ruta de acceso del proyecto que sea significativa para el complemento.|
+|[SccHistory](../extensibility/scchistory-function.md)|Muestra el historial de una matriz de nombres de archivo locales completos.|
+|[SccPopulateList](../extensibility/sccpopulatelist-function.md)|Examina la lista de archivos en busca de su estado actual. Además, utiliza la función `pfnPopulate` para notificar al llamador cuando un archivo no coincide con los criterios de la `nCommand`.|
 |[SccProperties](../extensibility/sccproperties-function.md)|Muestra las propiedades de un archivo completo.|
 |[SccQueryInfo](../extensibility/sccqueryinfo-function.md)|Examina una lista de archivos completos para su estado actual.|
-|[SccRemove](../extensibility/sccremove-function.md)|Quita la matriz de nombres de archivo completos del sistema de control de código fuente.|
+|[SccRemove](../extensibility/sccremove-function.md)|Quita la matriz de archivos completos del sistema de control de código fuente.|
 |[SccRename](../extensibility/sccrename-function.md)|Cambia el nombre del archivo dado a un nuevo nombre en el sistema de control de código fuente.|
-|[SccRunScc](../extensibility/sccrunscc-function.md)|Tiene acceso a toda la gama de características del sistema de control de origen.|
+|[SccRunScc](../extensibility/sccrunscc-function.md)|Obtiene acceso a toda la gama de características del sistema de control de código fuente.|
 |[SccUncheckout](../extensibility/sccuncheckout-function.md)|Deshace la desprotección de una matriz de archivos.|
 
-## <a name="functions-that-support-additional-capability-version-12-of-the-source-control-plug-in-api"></a>Funciones que admiten la capacidad adicional (versión 1.2 de la API de complemento de Control de código fuente)
- Este grupo de funciones que define la funcionalidad adicional que se incluye en la versión 1.2 de la API de complemento de Control de código fuente. Proporcionan acceso a características de control de código fuente y las capacidades más avanzadas.
+## <a name="functions-that-support-additional-capability-version-12-of-the-source-control-plug-in-api"></a>Funciones que admiten funcionalidad adicional (versión 1,2 de la API del complemento de control de código fuente)
+ Este grupo de funciones define la funcionalidad adicional incluida en la versión 1,2 de la API del complemento de control de código fuente. Proporcionan acceso a características y funciones de control de código fuente más avanzadas.
 
 |Función|Descripción|
 |--------------|-----------------|
 |[SccBeginBatch](../extensibility/sccbeginbatch-function.md)|Inicia una operación por lotes.|
-|[SccCreateSubProject](../extensibility/scccreatesubproject-function.md)|Crea un subproyecto con el nombre especificado en un proyecto existente del elemento primario.|
-|[SccDirDiff](../extensibility/sccdirdiff-function.md)|Muestra las diferencias entre el directorio local del usuario especificado por un nombre de ruta de acceso completa y la ubicación de base de datos de control de origen.|
+|[SccCreateSubProject](../extensibility/scccreatesubproject-function.md)|Crea un subproyecto con el nombre especificado en un proyecto primario existente.|
+|[SccDirDiff](../extensibility/sccdirdiff-function.md)|Muestra las diferencias entre el directorio del usuario local especificado por un nombre de ruta de acceso completo y la ubicación de la base de datos de control de código fuente.|
 |[SccDirQueryInfo](../extensibility/sccdirqueryinfo-function.md)|Examina una lista de directorios completos para su estado actual.|
 |[SccEndBatch](../extensibility/sccendbatch-function.md)|Finaliza una operación por lotes.|
-|[SccGetParentProjectPath](../extensibility/sccgetparentprojectpath-function.md)|Devuelve primarios ruta de acceso del proyecto especificado (el proyecto debe existir).|
-|[SccIsMultiCheckoutEnabled](../extensibility/sccismulticheckoutenabled-function.md)|Comprueba si se permiten las desprotecciones múltiples en un archivo.|
-|[SccWillCreateSccFile](../extensibility/sccwillcreatesccfile-function.md)|Comprueba si el complemento creará MSSCCPRJ. Archivos CCF.|
+|[SccGetParentProjectPath](../extensibility/sccgetparentprojectpath-function.md)|Devuelve la ruta de acceso primaria del proyecto dado (el proyecto debe existir).|
+|[SccIsMultiCheckoutEnabled](../extensibility/sccismulticheckoutenabled-function.md)|Comprueba si se permiten varias desprotecciones en un archivo.|
+|[SccWillCreateSccFile](../extensibility/sccwillcreatesccfile-function.md)|Comprueba si el complemento creará MSSCCPRJ. Archivos SCC.|
 
-## <a name="functions-that-support-advanced-capability-version-13-of-the-source-control-plug-in-api"></a>Funciones que admiten funcionalidad avanzada (versión 1.3 de la API de complemento de Control de código fuente)
- Este grupo de funciones que define la funcionalidad adicional que se incluye en la versión 1.3 de la API de complemento de Control de código fuente. Proporcionan acceso a características de control de código fuente y las capacidades más avanzadas.
+## <a name="functions-that-support-advanced-capability-version-13-of-the-source-control-plug-in-api"></a>Funciones que admiten la funcionalidad avanzada (versión 1,3 de la API del complemento de control de código fuente)
+ Este grupo de funciones define la funcionalidad adicional incluida en la versión 1,3 de la API del complemento de control de código fuente. Proporcionan acceso a características y funciones de control de código fuente más avanzadas.
 
 |Función|Descripción|
 |--------------|-----------------|
-|[SccAddFilesFromSCC](../extensibility/sccaddfilesfromscc-function.md)|Agrega una lista de archivos de control de código fuente al proyecto actual.|
-|[SccBackgroundGet](../extensibility/sccbackgroundget-function.md)|Recupera una lista de archivos de control de código fuente sin una interfaz de usuario.|
-|[SccEnumChangedFiles](../extensibility/sccenumchangedfiles-function.md)|Recupera una lista de archivos de control de código fuente que son diferentes de los archivos locales.|
-|[SccGetExtendedCapabilities](../extensibility/sccgetextendedcapabilities-function.md)|Recupera los marcadores que especifican las capacidades ampliadas compatibles con el complemento de control de código fuente.|
-|[SccGetUserOption](../extensibility/sccgetuseroption-function.md)|Recupera las opciones específicas del usuario.|
-|[SccPopulateDirList](../extensibility/sccpopulatedirlist-function.md)|Examina una lista de directorios y archivos en un proyecto o proyectos que están bajo control de código fuente. Cada nombre de archivo y directorio que se encuentra se pasa a una función de devolución de llamada.|
+|[SccAddFilesFromSCC](../extensibility/sccaddfilesfromscc-function.md)|Agrega una lista de archivos del control de código fuente al proyecto actual.|
+|[SccBackgroundGet](../extensibility/sccbackgroundget-function.md)|Recupera una lista de archivos del control de código fuente sin una interfaz de usuario.|
+|[SccEnumChangedFiles](../extensibility/sccenumchangedfiles-function.md)|Recupera una lista de archivos en el control de código fuente que son diferentes de los archivos locales.|
+|[SccGetExtendedCapabilities](../extensibility/sccgetextendedcapabilities-function.md)|Recupera las marcas que especifican funciones extendidas admitidas por el complemento de control de código fuente.|
+|[SccGetUserOption](../extensibility/sccgetuseroption-function.md)|Recupera opciones específicas del usuario.|
+|[SccPopulateDirList](../extensibility/sccpopulatedirlist-function.md)|Examina una lista de directorios y archivos de un proyecto o proyectos que están bajo control de código fuente. Cada nombre de archivo y directorio encontrado se pasa a una función de devolución de llamada.|
 |[SccQueryChanges](../extensibility/sccquerychanges-function.md)|Examina los cambios de nombre realizados en una lista de archivos. Cada nombre de archivo se pasa a una función de devolución de llamada con su estado de cambio.|
 
 ## <a name="requirements"></a>Requisitos
- Encabezado: scc.h
+ Encabezado: SCC. h
 
- (Suministrado en el SDK de entorno común incluye carpeta, de forma predeterminada *[unidad]* \Program Files\VSIP 8.0\EnvSDK\common\inc; también se proporcionan en la carpeta VSIP con el ejemplo MSSCCI *[unidad]* \Program Files\VSIP 8.0\MSSCCI).
+ (Se proporciona en la carpeta Common includes del SDK de entorno, de forma predeterminada *[unidad]* \Archivos de Files\VSIP 8.0 \ EnvSDK\common\inc; también se proporciona en la carpeta VSIP con el ejemplo MSSCCI, *[unidad]* \Archivos de Files\VSIP 8.0 \ MSSCCI).
 
 ## <a name="see-also"></a>Vea también
 - [Complementos de control de código fuente](../extensibility/source-control-plug-ins.md)

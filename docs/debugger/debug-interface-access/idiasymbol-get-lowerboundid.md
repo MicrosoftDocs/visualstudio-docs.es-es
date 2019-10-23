@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d0e84f50ce73fded7809478441e88649ff4f1d82
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 8d3685512521d5fc919f4c9b1752a039ae1085bc
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64802163"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72739822"
 ---
-# <a name="idiasymbolgetlowerboundid"></a>IDiaSymbol::get_lowerBoundId
-Recupera el identificador de símbolo de límite inferior de una dimensión de matriz de FORTRAN.
+# <a name="idiasymbolget_lowerboundid"></a>IDiaSymbol::get_lowerBoundId
+Recupera el identificador de símbolos del límite inferior de una dimensión de la matriz FORTRAN.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -33,16 +33,16 @@ HRESULT get_lowerBoundId ( 
 #### <a name="parameters"></a>Parámetros
  `pRetVal`
 
-[out] Devuelve el identificador de símbolo del símbolo que representa el límite inferior de una dimensión de matriz de FORTRAN.
+enuncia Devuelve el identificador de símbolo del símbolo que representa el límite inferior de una dimensión de matriz FORTRAN.
 
 ## <a name="return-value"></a>Valor devuelto
- Si es correcto, devuelve `S_OK`; en caso contrario, devuelve `S_FALSE` o un código de error.
+ Si se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve `S_FALSE` o un código de error.
 
 > [!NOTE]
 > Un valor devuelto de `S_FALSE` significa que la propiedad no está disponible para el símbolo.
 
 ## <a name="remarks"></a>Comentarios
- El identificador es un valor único creado mediante el SDK de DIA para marcar todos los símbolos como único.
+ El identificador es un valor único creado por el SDK de DIA para marcar todos los símbolos como únicos.
 
 ## <a name="see-also"></a>Vea también
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

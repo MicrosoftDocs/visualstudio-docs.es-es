@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c42cdfc5c3f3c0267fdcbdfca8ddc4bb30663384
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 872f7c594344af2c59ebe7f8d1fbd1a640dd2190
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68924527"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72728825"
 ---
 # <a name="unable-to-connect-to-the-microsoft-visual-studio-remote-debugging-monitor"></a>No se puede conectar al Monitor de depuración remota de Microsoft Visual Studio
 Este mensaje puede deberse a que el monitor de depuración remota no está correctamente configurado en el equipo remoto o a que no se puede obtener acceso al equipo remoto debido a problemas de red o a la presencia de un firewall.
@@ -30,7 +30,7 @@ Este mensaje puede deberse a que el monitor de depuración remota no está corre
 
 ## <a name="specificerrors"></a>¿Cuál es el mensaje de error detallado?
 
-El `Unable to Connect to the Microsoft Visual Studio Remote Debugging Monitor` mensaje es genérico. Normalmente, se incluye un mensaje más específico en la cadena de error que puede ayudarle a identificar la causa del problema o a buscar una corrección más exacta. Estos son algunos de los mensajes de error más comunes que se anexan al mensaje de error principal:
+El mensaje `Unable to Connect to the Microsoft Visual Studio Remote Debugging Monitor` es genérico. Normalmente, se incluye un mensaje más específico en la cadena de error que puede ayudarle a identificar la causa del problema o a buscar una corrección más exacta. Estos son algunos de los mensajes de error más comunes que se anexan al mensaje de error principal:
 
 - [El depurador no se puede conectar al equipo remoto. El depurador no pudo resolver el nombre de equipo especificado](#cannot_connect)
 - [El depurador remoto rechazó la solicitud de conexión](#rejected)
