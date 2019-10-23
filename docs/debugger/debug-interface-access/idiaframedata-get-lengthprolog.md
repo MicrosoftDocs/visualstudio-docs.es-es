@@ -12,14 +12,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ad162a8a29bd9432424ce64d00e820a0bfde1dd9
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 00b85d1db996487d76d396d6e4df9ea557e6aae5
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62839958"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72743563"
 ---
-# <a name="idiaframedatagetlengthprolog"></a>IDiaFrameData::get_lengthProlog
+# <a name="idiaframedataget_lengthprolog"></a>IDiaFrameData::get_lengthProlog
 Recupera el número de bytes del código de prólogo en el bloque.
 
 ## <a name="syntax"></a>Sintaxis
@@ -33,13 +33,13 @@ HRESULT get_lengthProlog ( 
 #### <a name="parameters"></a>Parámetros
  `pRetVal`
 
-[out] Devuelve el número de bytes del código de prólogo.
+enuncia Devuelve el número de bytes del código de prólogo.
 
 ## <a name="return-value"></a>Valor devuelto
  Si la operación se realiza correctamente, devuelve `S_OK`. Devuelve `S_FALSE` si no se admite esta propiedad. De lo contrario, devuelve un código de error.
 
 ## <a name="remarks"></a>Comentarios
- El código de prólogo es una secuencia de instrucciones que conserva los registros, Establece el estado de la CPU y establece la pila de la función.
+ El código de prólogo es una secuencia de instrucciones que conserva los registros, establece el estado de la CPU y establece la pila de la función.
 
 ## <a name="see-also"></a>Vea también
 - [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md)

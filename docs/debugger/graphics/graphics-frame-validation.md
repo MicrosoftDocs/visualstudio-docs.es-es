@@ -10,28 +10,28 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ce283e5cbab30b612a02ec447113ad11e206a7f3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 49248c6209f9e56e51551f6cd3d4af66ecac8b56
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62895875"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72735498"
 ---
 # <a name="graphics-frame-validation"></a>Validación de fotogramas de gráficos
 <!-- VERSIONLESS -->
-Visual Studio 2017 y mayor compatibilidad con la **validación de fotogramas** herramienta.  La ventana de validación de fotogramas muestra errores y advertencias asociadas con la lista de eventos.  Para ver esta ventana, seleccione el **Ver > validación de fotogramas** menú.
+Visual Studio 2017 y versiones posteriores admiten la herramienta de **validación de fotogramas** .  La ventana validación de fotogramas muestra errores y advertencias asociados a la lista de eventos.  Para ver esta ventana, seleccione el menú **ver > de validación de fotogramas** .
 
 ![Validación de fotogramas](media/gfx_diag_frame_validation.png)
 
-Haga clic en el **ejecutar validación** situado en la esquina superior izquierda para iniciar el análisis.  Pueden tardar varios minutos en completarse, según la complejidad del marco.  Los datos que aparece aquí es una combinación de dos orígenes: los mensajes que D3D propio cuando emite [capas del SDK](/windows/desktop/direct3d11/overviews-direct3d-11-devices-layers) está habilitada y los datos que se recopilan desde el estado interno de la herramienta de seguimiento. Una vez que haya terminado, verá varias columnas de datos:
+Haga clic en el botón **Ejecutar validación** situado en la esquina superior izquierda para iniciar el análisis.  Puede tardar varios minutos en completarse, en función de la complejidad del marco.  Los datos que aparecen aquí son una combinación de dos orígenes: los mensajes que D3D se emiten cuando se habilitan las [capas de SDK](/windows/desktop/direct3d11/overviews-direct3d-11-devices-layers) y los datos recopilados del seguimiento de estado interno de la herramienta. Una vez que haya finalizado, verá varias columnas de datos:
 
 | **Columna** | **Descripción** |
 |------------| - |
-| Id. de evento | Id. que se asigna a una entrada en el [lista de eventos](graphics-event-list.md) ventana. |
-| Severity | Daños, Error, advertencia, información o mensajes. |
-| Categoría | Aplicación definida, vario, inicialización, limpieza, compilación, creación de estado, configuración de estado, obteniendo el estado, ejecución, manipulación de recursos, sombreador, redundante o sin usar. |
-| Mensaje | El mensaje asociado al evento. |
-| evento | El evento asociado al error o advertencia. |
+| Id. de evento | IDENTIFICADOR que se asigna a una entrada en la ventana [lista de eventos](graphics-event-list.md) . |
+| Gravedad | Daños, errores, advertencias, información o mensaje. |
+| Categoría | Aplicación definida, varios, inicialización, limpieza, compilación, creación de estado, configuración de estado, obtención de estado, ejecución, manipulación de recursos, sombreador, redundante y sin usar. |
+| Mensaje | Mensaje asociado al evento. |
+| evento | Evento asociado con el error o la advertencia. |
 
 ## <a name="see-also"></a>Vea también
 [Diagnóstico de gráficos (Depurar gráficos de DirectX)](visual-studio-graphics-diagnostics.md)

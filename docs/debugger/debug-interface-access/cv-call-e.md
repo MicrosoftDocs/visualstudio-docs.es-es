@@ -12,18 +12,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ec5fea99994b891250dad85cfc43320848df98f9
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 5deb59d4bbee06e505ba10bf1d4f08b1b06aa62d
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62555109"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72745354"
 ---
-# <a name="cvcalle"></a>CV_call_e
-Especifica la convención de llamada para una función.
+# <a name="cv_call_e"></a>CV_call_e
+Especifica la Convención de llamada para una función.
 
 > [!NOTE]
-> Solo los valores de enumeración más comunes se documentan aquí. La enumeración completa está disponible en el archivo de encabezado cvconst.h.
+> Aquí solo se documentan los valores de enumeración más comunes. La enumeración complete está disponible en el archivo de encabezado cvconst. h.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -39,23 +39,23 @@ typedef enum CV_call_e {
 ```
 
 ## <a name="elements"></a>Elementos
-CV_CALL_NEAR_C especifica una convención de llamada a función mediante una inserción casi de derecha a izquierda. La función llamada borra la pila.
+CV_CALL_NEAR_C especifica una Convención de llamada de función mediante una inserciones casi de derecha a izquierda. La función de llamada borra la pila.
 
-Una convención de llamada de función usando un casi izquierda a derecha de inserción con registra CV_CALL_NEAR_FAST especifica. La función llamada utiliza la suma de bytes de parámetro para borrar la pila.
+CV_CALL_NEAR_FAST especifica una Convención de llamada de función mediante una inserciones casi de izquierda a derecha con registros. La función llamada usa la suma de bytes de parámetro para borrar la pila.
 
-CV_CALL_NEAR_STD especifica una convención de llamada a función mediante una llamada estándar casi (inserción de derecha a izquierda).
+CV_CALL_NEAR_STD especifica una Convención de llamada de función mediante una llamada casi estándar (inserciones de derecha a izquierda).
 
-Especifica CV_CALL_NEAR_SYS llamar una convención de llamada a función mediante un sistema de casi.
+CV_CALL_NEAR_SYS especifica una Convención de llamada de función mediante una llamada al sistema cercana.
 
-CV_CALL_THISCALL especifica una convención de llamada de función usando `this` llamar (`this` puntero pasa en el registro).
+CV_CALL_THISCALL especifica una Convención de llamada de función mediante `this` llamada (el puntero `this` pasado en el registro).
 
-CV_CALL_CLRCALL especifica una convención de llamada de función utilizada por el Common Language Runtime (CLR) (también conocido como un código administrado convención de llamada).
+CV_CALL_CLRCALL especifica una Convención de llamada de función utilizada por Common Language Runtime (CLR) (también conocida como Convención de llamada a código administrado).
 
 ## <a name="remarks"></a>Comentarios
-Los valores de esta enumeración se devuelven mediante una llamada a la [Get_callingconvention](../../debugger/debug-interface-access/idiasymbol-get-callingconvention.md) método.
+Los valores de esta enumeración son devueltos por una llamada al método [IDiaSymbol:: get_callingConvention](../../debugger/debug-interface-access/idiasymbol-get-callingconvention.md) .
 
 ## <a name="requirements"></a>Requisitos
-Encabezado: cvconst.h
+Encabezado: cvconst. h
 
 ## <a name="see-also"></a>Vea también
 - [Enumeraciones y estructuras](../../debugger/debug-interface-access/enumerations-and-structures.md)

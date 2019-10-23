@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e2865dbf3da103610407cd33eeeaf934caba3c7a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: f5929f6f36c183d3a580ab605d313695cb584664
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62838342"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72744849"
 ---
 # <a name="idiaenumdebugstreamdata"></a>IDiaEnumDebugStreamData
-Proporciona acceso a los registros en un flujo de datos de depuración.
+Proporciona acceso a los registros de un flujo de datos de depuración.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -29,11 +29,11 @@ IDiaEnumDebugStreamData : IUnknown
 ```
 
 ## <a name="methods-in-vtable-order"></a>Métodos en orden de Vtable
-La tabla siguiente muestran los métodos de `IDiaEnumDebugStreamData`.
+En la tabla siguiente se muestran los métodos de `IDiaEnumDebugStreamData`.
 
 |Método|Descripción|
 |------------|-----------------|
-|[IDiaEnumDebugStreamData::get__NewEnum](../../debugger/debug-interface-access/idiaenumdebugstreamdata-get-newenum.md)|Recupera el [interfaz IEnumVARIANT](/previous-versions/windows/desktop/api/oaidl/nn-oaidl-ienumvariant) versión de este enumerador.|
+|[IDiaEnumDebugStreamData::get__NewEnum](../../debugger/debug-interface-access/idiaenumdebugstreamdata-get-newenum.md)|Recupera la versión de la [interfaz IEnumVARIANT](/previous-versions/windows/desktop/api/oaidl/nn-oaidl-ienumvariant) de este enumerador.|
 |[IDiaEnumDebugStreamData::get_Count](../../debugger/debug-interface-access/idiaenumdebugstreamdata-get-count.md)|Recupera el número de registros en el flujo de datos de depuración.|
 |[IDiaEnumDebugStreamData::get_name](../../debugger/debug-interface-access/idiaenumdebugstreamdata-get-name.md)|Recupera el nombre del flujo de datos de depuración.|
 |[IDiaEnumDebugStreamData::Item](../../debugger/debug-interface-access/idiaenumdebugstreamdata-item.md)|Recupera el registro especificado.|
@@ -43,10 +43,10 @@ La tabla siguiente muestran los métodos de `IDiaEnumDebugStreamData`.
 |[IDiaEnumDebugStreamData::Clone](../../debugger/debug-interface-access/idiaenumdebugstreamdata-clone.md)|Crea un enumerador que contiene la misma secuencia enumerada que el enumerador actual.|
 
 ## <a name="remarks"></a>Comentarios
-Esta interfaz representa una secuencia de registros en un flujo de datos de depuración. El tamaño y la interpretación de cada registro es dependiente de la secuencia de datos que procede el registro. Esta interfaz, efectivamente, brinda acceso a los bytes de datos sin procesar en el archivo de símbolos.
+Esta interfaz representa una secuencia de registros en un flujo de datos de depuración. El tamaño y la interpretación de cada registro dependen del flujo de datos del que procede el registro. Esta interfaz proporciona eficazmente el acceso a los bytes de datos sin formato en el archivo de símbolos.
 
-## <a name="notes-for-callers"></a>Notas para los llamadores
-Llame a la [Idiaenumdebugstreams](../../debugger/debug-interface-access/idiaenumdebugstreams-item.md) o [Idiaenumdebugstreams](../../debugger/debug-interface-access/idiaenumdebugstreams-next.md) métodos para obtener un `IDiaEnumDebugStreamData` objeto.
+## <a name="notes-for-callers"></a>Notas para llamadores
+Llame a los métodos [IDiaEnumDebugStreams:: Item](../../debugger/debug-interface-access/idiaenumdebugstreams-item.md) o [IDiaEnumDebugStreams:: Next](../../debugger/debug-interface-access/idiaenumdebugstreams-next.md) para obtener un objeto `IDiaEnumDebugStreamData`.
 
 ## <a name="example"></a>Ejemplo
  En este ejemplo se muestra cómo obtener acceso a un único flujo de datos y sus registros.
@@ -103,9 +103,9 @@ void PrintStreamData(IDiaEnumDebugStreamData* pStream)
 ```
 
 ## <a name="requirements"></a>Requisitos
-Encabezado: Dia2.h
+Encabezado: Dia2. h
 
-Biblioteca: diaguids.lib
+Biblioteca: diaguids. lib
 
 DLL: msdia80.dll
 

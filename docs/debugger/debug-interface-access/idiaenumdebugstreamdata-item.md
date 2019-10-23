@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4f4a3e3f668789f98600cd649716413a57b13130
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: e221516198d186dd08c353123ce4236f0be1383c
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62838511"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72744819"
 ---
 # <a name="idiaenumdebugstreamdataitem"></a>IDiaEnumDebugStreamData::Item
 Recupera el registro especificado.
@@ -36,22 +36,22 @@ HRESULT Item ( 
 #### <a name="parameters"></a>Parámetros
  índice
 
-[in] Índice del registro que va a recuperar. El índice está en el intervalo de 0 a `count`-1, donde `count` devuelto por [Idiaenumdebugstreamdata](../../debugger/debug-interface-access/idiaenumdebugstreamdata-get-count.md).
+de Índice del registro que se va a recuperar. El índice está en el intervalo de 0 a `count`-1, donde [IDiaEnumDebugStreamData:: get_Count](../../debugger/debug-interface-access/idiaenumdebugstreamdata-get-count.md)devuelve `count`.
 
  cbData
 
-[in] Tamaño del búfer de datos, en bytes.
+de Tamaño del búfer de datos, en bytes.
 
  pcbData
 
-[out] Devuelve el número de bytes devueltos. Si `data` es `NULL`, a continuación, `pcbData` contiene el número total de bytes de datos disponibles en el registro especificado.
+enuncia Devuelve el número de bytes devueltos. Si se `NULL` `data`, `pcbData` contiene el número total de bytes de datos disponibles en el registro especificado.
 
  data[]
 
-[out] Un búfer que se rellena con los datos de registro de flujo de depuración.
+enuncia Búfer que se rellena con los datos de registro de flujo de depuración.
 
 ## <a name="return-value"></a>Valor devuelto
- Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error. Devuelve `E_INVALIDARG` de parámetros no válidos y si el `index` parámetro está fuera de los límites.
+ Si se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error. Devuelve `E_INVALIDARG` para los parámetros no válidos y si el parámetro `index` está fuera de los límites.
 
 ## <a name="see-also"></a>Vea también
 - [IDiaEnumDebugStreamData](../../debugger/debug-interface-access/idiaenumdebugstreamdata.md)

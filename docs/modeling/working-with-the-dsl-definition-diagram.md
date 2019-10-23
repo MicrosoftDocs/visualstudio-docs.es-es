@@ -16,12 +16,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 571a92adf4ebbdce12ec8ea45866835e3f6a6772
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: c0e65b47baba985012dccad0c838c65d2d8bf2ef
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72666920"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72748146"
 ---
 # <a name="working-with-the-dsl-definition-diagram"></a>Trabajar con diagramas de definición DSL
 El diagrama de una definición de [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] es una herramienta importante para definir el lenguaje específico del dominio. Puede agregar elementos al modelo del dominio y definir relaciones en el diagrama, y puede modificar el diseño del diagrama para hacerlo más legible.

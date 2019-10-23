@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 759972fa02c7645ae457e0b715d835b2d717e26f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 41679304986f5de948119a2958524b8f269ceb42
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62839178"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72741915"
 ---
 # <a name="idiasessiongetenumtables"></a>IDiaSession::getEnumTables
 Recupera un enumerador para todas las tablas contenidas en el almacén de símbolos.
@@ -33,13 +33,13 @@ HRESULT getEnumTables (
 #### <a name="parameters"></a>Parámetros
 `ppEnumTables`
 
-[out] Devuelve un [IDiaEnumTables](../../debugger/debug-interface-access/idiaenumtables.md) objeto. Utilice esta interfaz para enumerar las tablas en el almacén de símbolos.
+enuncia Devuelve un objeto [IDiaEnumTables](../../debugger/debug-interface-access/idiaenumtables.md) . Use esta interfaz para enumerar las tablas del almacén de símbolos.
 
 ## <a name="return-value"></a>Valor devuelto
-Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.
+Si se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.
 
 ## <a name="example"></a>Ejemplo
-En este ejemplo se presenta una función general que utiliza el `getEnumTables` método para obtener un objeto de enumerador específico. Si el enumerador se encuentra, la función devuelve un puntero que se puede convertir a la interfaz deseada; en caso contrario, devuelve la función `NULL`.
+En este ejemplo se presenta una función general que usa el método `getEnumTables` para obtener un objeto de enumerador específico. Si se encuentra el enumerador, la función devuelve un puntero que se puede convertir a la interfaz deseada; de lo contrario, la función devuelve `NULL`.
 
 ```C++
 IUnknown *GetTable(IDiaSession *pSession, REFIID iid)

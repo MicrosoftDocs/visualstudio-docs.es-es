@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2e609f59e0d72628be4233be52738ff244c6acca
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 47841f5fe4abeafe7c522784db337b1960081439
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64806760"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72738982"
 ---
-# <a name="idiasymbolgetunmodifiedtype"></a>IDiaSymbol::get_unmodifiedType
-Recupera el tipo original para este símbolo. Cuando utilice el [SymTagEnum (enumeración)](../../debugger/debug-interface-access/symtagenum.md) se establece en un tipo.
+# <a name="idiasymbolget_unmodifiedtype"></a>IDiaSymbol::get_unmodifiedType
+Recupera el tipo original de este símbolo. Se usa cuando la [enumeración symtagenum (](../../debugger/debug-interface-access/symtagenum.md) se establece en un tipo.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -33,21 +33,21 @@ HRESULT get_unmodifiedType( 
 #### <a name="parameters"></a>Parámetros
  `pRetVal`
 
-[out] Devuelve un [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) objeto que representa el tipo original de este símbolo.
+enuncia Devuelve un objeto [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) que representa el tipo original de este símbolo.
 
 ## <a name="return-value"></a>Valor devuelto
- Si es correcto, devuelve `S_OK`; en caso contrario, devuelve `S_FALSE` o un código de error.
+ Si se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve `S_FALSE` o un código de error.
 
 > [!NOTE]
 > Un valor devuelto de `S_FALSE` significa que la propiedad no está disponible para el símbolo.
 
 ## <a name="remarks"></a>Comentarios
- El tipo actual es una modificación del tipo devuelto original. Obteniendo primero el tipo del símbolo de y, a continuación, interrogar que devuelve el tipo para el tipo original, se puede determinar el tipo original para un símbolo. Tenga en cuenta que algunos símbolos pueden no tener un tipo modificado del tipo original.
+ El tipo actual es una modificación del tipo original devuelto. El tipo original de un símbolo se puede determinar obteniendo primero el tipo del símbolo y, a continuación, interrogando ese tipo devuelto para el tipo original. Tenga en cuenta que algunos símbolos no pueden tener un tipo modificado del tipo original.
 
 ## <a name="requirements"></a>Requisitos
- Encabezado: Dia2.h
+ Encabezado: Dia2. h
 
- Biblioteca: diaguids.lib
+ Biblioteca: diaguids. lib
 
  DLL: msdia100.dll
 

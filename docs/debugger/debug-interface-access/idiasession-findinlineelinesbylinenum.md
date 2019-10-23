@@ -10,15 +10,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 493e1a2f6df57019183f36daf246ef69e8f1a4d6
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: fe238f3bc66d6a7c5978c5d7cbebcd185fcd43d2
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63402607"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72742222"
 ---
 # <a name="idiasessionfindinlineelinesbylinenum"></a>IDiaSession::findInlineeLinesByLinenum
-Recupera una enumeración que permite que un cliente iterar por la información de número de línea de todas las funciones que están insertadas, directa o indirectamente, en el número de archivo y la línea de origen especificado.
+Recupera una enumeración que permite a un cliente recorrer en iteración la información del número de línea de todas las funciones insertadas, directa o indirectamente, en el archivo de código fuente y el número de línea especificados.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -35,29 +35,29 @@ HRESULT findInlineeLinesByVA ( 
 #### <a name="parameters"></a>Parámetros
  `compiland`
 
-[in] Un [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) objeto que representa la operación de compilación en el que se va a buscar los números de línea. Este parámetro no puede ser `NULL`.
+de Objeto [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) que representa la operación de compilación en la que se van a buscar los números de línea. Este parámetro no se puede `NULL`.
 
  `file`
 
-[in] Un [IDiaSourceFile](../../debugger/debug-interface-access/idiasourcefile.md) objeto que representa el archivo de origen en el que se va a buscar. Este parámetro no puede ser `NULL`.
+de Objeto [IDiaSourceFile](../../debugger/debug-interface-access/idiasourcefile.md) que representa el archivo de código fuente en el que se va a buscar. Este parámetro no se puede `NULL`.
 
  `linenum`
 
-[in] Especifica un número de línea basado en uno.
+de Especifica un número de línea basado en uno.
 
 > [!NOTE]
-> No se puede usar cero para especificar todas las líneas (usar la [Findlines](../../debugger/debug-interface-access/idiasession-findlines.md) método para buscar todas las líneas).
+> No se puede usar cero para especificar todas las líneas (use el método [IDiaSession:: findLines](../../debugger/debug-interface-access/idiasession-findlines.md) para buscar todas las líneas).
 
  `column`
 
-[in] Especifica el número de columna. Usar cero para especificar todas las columnas. Una columna es un desplazamiento de bytes en una línea.
+de Especifica el número de columna. Use cero para especificar todas las columnas. Una columna es un desplazamiento de bytes en una línea.
 
  `ppResult`
 
-[out] Devuelve un [IDiaEnumLineNumbers](../../debugger/debug-interface-access/idiaenumlinenumbers.md) objeto que contiene una lista de los números de línea que se han recuperado.
+enuncia Devuelve un objeto [IDiaEnumLineNumbers](../../debugger/debug-interface-access/idiaenumlinenumbers.md) que contiene una lista de los números de línea recuperados.
 
 ## <a name="return-value"></a>Valor devuelto
- Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.
+ Si se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.
 
 ## <a name="see-also"></a>Vea también
 - [IDiaSession](../../debugger/debug-interface-access/idiasession.md)

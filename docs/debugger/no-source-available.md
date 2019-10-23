@@ -1,5 +1,5 @@
 ---
-title: Ningún origen disponible | Documentos de Microsoft
+title: No hay ningún origen disponible | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -17,23 +17,23 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 85d1d1307a119fa23bf7ba015130ab9c7b6f69d5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 9f08ed499e61e54ffbc6508bc8353ea955d9a20c
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62905224"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72730871"
 ---
 # <a name="no-source-available"></a>No hay código fuente disponible
 El proyecto no contiene código fuente para el código que se está intentando ver. El motivo habitual es hacer doble clic en un módulo que no tiene código fuente en la **Ventana Pila de llamadas** o en la **Ventana Subprocesos**. Puede seguir depurando, pero no puede utilizar la ventana de código fuente para establecer puntos de interrupción y realizar otras acciones en dicha ubicación. Si necesita establecer un punto de interrupción, utilice la **Ventana Desensamblado** en su lugar.
 
- En las Páginas de propiedades de la solución, puede cambiar los directorios en los que el depurador busca archivos de código fuente e indicar al depurador que omita los archivos de código fuente seleccionados. Consulte [cuadro de diálogo de páginas de propiedad de origen archivos, propiedades comunes, solución de depuración](../debugger/debug-source-files-common-properties-solution-property-pages-dialog-box.md).
+ En las Páginas de propiedades de la solución, puede cambiar los directorios en los que el depurador busca archivos de código fuente e indicar al depurador que omita los archivos de código fuente seleccionados. Vea [depurar archivos de código fuente, propiedades comunes, páginas de propiedades de solución (cuadro de diálogo)](../debugger/debug-source-files-common-properties-solution-property-pages-dialog-box.md).
 
- **Busque el código fuente** haga clic en este vínculo para abrir un cuadro de diálogo donde puede examinar para buscar el código fuente.
+ **Examinar para buscar código fuente** Haga clic en este vínculo para abrir un cuadro de diálogo donde puede buscar el código fuente.
 
- **Mostrar desensamblado** inicia el **ventana Desensamblado**.
+ **Mostrar desensamblado** Inicia la **ventana Desensamblado**.
 
- **Mostrar siempre el desensamblado de los archivos de origen que faltan** Seleccione esta opción para mostrar el **ventana Desensamblado** automáticamente cuando no está disponible ningún origen. Esta configuración también se puede cambiar en el cuadro de diálogo **Opciones**, categoría **Depuración**, página **General**. Para ello active o desactive **Mostrar desensamblado si el código fuente no está disponible**.
+ **Mostrar siempre el desensamblado de los archivos de origen que faltan** Seleccione esta opción para mostrar la **ventana Desensamblado** automáticamente cuando no haya ningún origen disponible. Esta configuración también se puede cambiar en el cuadro de diálogo **Opciones**, categoría **Depuración**, página **General**. Para ello active o desactive **Mostrar desensamblado si el código fuente no está disponible**.
 
 ## <a name="see-also"></a>Vea también
 - [Depurar archivos de código fuente, Propiedades comunes, Cuadro de diálogo Páginas de propiedades de Solución](../debugger/debug-source-files-common-properties-solution-property-pages-dialog-box.md)

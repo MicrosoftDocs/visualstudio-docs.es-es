@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 85dc2d62134d57faf40162ff61b193b80b045e29
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: d9cc9f540b200ff6fdf4736b6a0bf64175a5ee3e
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "62837971"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72741237"
 ---
 # <a name="idiasymbolfindchildrenexbyva"></a>IDiaSymbol::findChildrenExByVA
-Recupera a los elementos secundarios del símbolo que son válidos en una dirección virtual especificada.
+Recupera los elementos secundarios del símbolo que son válidos en una dirección virtual especificada.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -37,34 +37,34 @@ HRESULT findChildrenExByVA ( 
 #### <a name="parameters"></a>Parámetros
  `symtag`
 
-[in] Especifica las etiquetas de símbolo de los elementos secundarios que se puede recuperar, tal como se define en el [SymTagEnum (enumeración)](../../debugger/debug-interface-access/symtagenum.md). Establecido en `SymTagNull` todos los elementos secundarios van a recuperar.
+de Especifica las etiquetas de símbolos de los elementos secundarios que se van a recuperar, tal como se define en la [enumeración symtagenum (](../../debugger/debug-interface-access/symtagenum.md). Se establece en `SymTagNull` para que se recuperen todos los elementos secundarios.
 
  `name`
 
-[in] Especifica el nombre de los elementos secundarios van a recuperar. Establecido en `NULL` todos los elementos secundarios van a recuperar.
+de Especifica el nombre de los elementos secundarios que se van a recuperar. Se establece en `NULL` para que se recuperen todos los elementos secundarios.
 
  `compareFlags`
 
-[in] Especifica las opciones de comparación que se aplicará a la coincidencia de nombres. Los valores de la [NameSearchOptions (enumeración)](../../debugger/debug-interface-access/namesearchoptions.md) enumeración puede usarse por sí solo o en combinación.
+de Especifica las opciones de comparación que se aplicarán a la coincidencia de nombres. Los valores de la enumeración [namesearchoptions (](../../debugger/debug-interface-access/namesearchoptions.md) se pueden usar solos o en combinación.
 
  `address`
 
-[in] Especifica la dirección virtual.
+de Especifica la dirección virtual.
 
  `ppResult`
 
-[out] Devuelve un [IDiaEnumSymbols](../../debugger/debug-interface-access/idiaenumsymbols.md) recupera el objeto que contiene una lista de los símbolos secundarios.
+enuncia Devuelve un objeto [IDiaEnumSymbols](../../debugger/debug-interface-access/idiaenumsymbols.md) que contiene una lista de los símbolos secundarios recuperados.
 
 ## <a name="return-value"></a>Valor devuelto
- Devuelve `S_OK` si se ha encontrado al menos un elemento secundario del símbolo, o devuelve `S_FALSE` si no se encuentra ningún elemento secundario; en caso contrario, devuelve un código de error.
+ Devuelve `S_OK` si se encontró al menos un elemento secundario del símbolo, o devuelve `S_FALSE` si no se encontraron elementos secundarios; de lo contrario, devuelve un código de error.
 
 ## <a name="remarks"></a>Comentarios
- Los símbolos locales que se devuelven incluyen información de rango en vivo.
+ Los símbolos locales que se devuelven incluyen información de intervalo en directo.
 
 ## <a name="requirements"></a>Requisitos
- Encabezado: Dia2.h
+ Encabezado: Dia2. h
 
- Biblioteca: diaguids.lib
+ Biblioteca: diaguids. lib
 
  DLL: msdia100.dll
 

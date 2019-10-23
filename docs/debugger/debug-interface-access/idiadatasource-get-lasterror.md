@@ -12,14 +12,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 34954cd32b350a7c5f9c176deffd9943f8e05100
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 48595dda70560f555533a1857f73db4d7bd20a86
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62554201"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72744975"
 ---
-# <a name="idiadatasourcegetlasterror"></a>IDiaDataSource::get_lastError
+# <a name="idiadatasourceget_lasterror"></a>IDiaDataSource::get_lastError
 Recupera el nombre de archivo para el último error de carga.
 
 ## <a name="syntax"></a>Sintaxis
@@ -33,10 +33,10 @@ HRESULT get_lastError (
 #### <a name="parameters"></a>Parámetros
  pRetVal
 
-[out] Devuelve una cadena que contiene el nombre del archivo .pdb asociado con el último error de carga.
+enuncia Devuelve una cadena que contiene el nombre del archivo. pdb asociado al último error de carga.
 
 ## <a name="return-value"></a>Valor devuelto
- Devuelve el último código de error causado por una operación de carga. Devuelve `E_INVALIDARG` si el `pRetVal` parámetro es `NULL`.
+ Devuelve el último código de error producido por una operación de carga. Devuelve `E_INVALIDARG` si el parámetro de `pRetVal` es `NULL`.
 
 ## <a name="example"></a>Ejemplo
 

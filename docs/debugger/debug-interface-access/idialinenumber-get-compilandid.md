@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9874dec57c873164ec1875f31fd15c817781bb7a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 9ab4776029f13a68746a6b4d6ca0343450f477a9
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62839932"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72743219"
 ---
-# <a name="idialinenumbergetcompilandid"></a>IDiaLineNumber::get_compilandId
-Recupera un identificador único para la operación de compilación que han contribuido a esta línea.
+# <a name="idialinenumberget_compilandid"></a>IDiaLineNumber::get_compilandId
+Recupera un identificador único para la compilación que ha contribuido a esta línea.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -33,7 +33,7 @@ HRESULT get_compilandId ( 
 #### <a name="parameters"></a>Parámetros
  `pRetVal`
 
-[out] Devuelve `DWORD` que contiene el identificador único para la operación de compilación que han contribuido a esta línea.
+enuncia Devuelve `DWORD` que contiene el identificador único para la operación de compilación que ha contribuido a esta línea.
 
 ## <a name="return-value"></a>Valor devuelto
  Si la operación se realiza correctamente, devuelve `S_OK`. Devuelve `S_FALSE` si no se admite esta propiedad. De lo contrario, devuelve un código de error.

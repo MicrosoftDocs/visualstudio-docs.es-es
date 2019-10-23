@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c5759d810bf9180522508a6be54e5c94ffcfadb3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: cca6778e5697c5f8821322c19d706d733d7f2b9f
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62839386"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72742300"
 ---
 # <a name="idiasessionfindchildren"></a>IDiaSession::findChildren
-Recupera a todos los elementos secundarios de un identificador de elemento primario especificado que coinciden con el tipo de nombre y el símbolo.
+Recupera todos los elementos secundarios de un identificador primario especificado que coinciden con el nombre y el tipo de símbolo.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -37,29 +37,29 @@ HRESULT findChildren ( 
 #### <a name="parameters"></a>Parámetros
  `parent`
 
-[in] Un [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) objeto que representa el elemento primario. Si este símbolo primario es una función, un módulo o un bloque, a continuación, se devuelven sus elementos secundarios léxicos en `ppResult`. Si el símbolo de elemento primario es un tipo, se devuelven sus elementos secundarios de la clase. Si este parámetro es `NULL`, a continuación, `symtag` debe establecerse en `SymTagExe` o `SymTagNull`, que devuelve el ámbito global (archivo .exe).
+de Un objeto [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) que representa el elemento primario. Si este símbolo primario es una función, módulo o bloque, se devuelven sus elementos secundarios léxicos en `ppResult`. Si el símbolo primario es un tipo, se devuelven los elementos secundarios de su clase. Si este parámetro es `NULL`, `symtag` debe establecerse en `SymTagExe` o `SymTagNull`, que devuelve el ámbito global (archivo. exe).
 
  `symtag`
 
-[in] Especifica la etiqueta del símbolo de los elementos secundarios van a recuperar. Los valores se toman de la [SymTagEnum (enumeración)](../../debugger/debug-interface-access/symtagenum.md) enumeración. Establecido en `SymTagNull` para recuperar todos los elementos secundarios.
+de Especifica la etiqueta Symbol de los elementos secundarios que se van a recuperar. Los valores se toman de la enumeración de [enumeración symtagenum (](../../debugger/debug-interface-access/symtagenum.md) . Establezca en `SymTagNull` para recuperar todos los elementos secundarios.
 
  `name`
 
-[in] Especifica el nombre de los elementos secundarios van a recuperar. Establecido en `NULL` todos los elementos secundarios van a recuperar.
+de Especifica el nombre de los elementos secundarios que se van a recuperar. Se establece en `NULL` para que se recuperen todos los elementos secundarios.
 
  `compareFlags`
 
-[in] Especifica las opciones de comparación que se aplica a la coincidencia de nombres. Los valores de la [NameSearchOptions (enumeración)](../../debugger/debug-interface-access/namesearchoptions.md) enumeración puede usarse por sí solo o en combinación.
+de Especifica las opciones de comparación aplicadas a la coincidencia de nombres. Los valores de la enumeración [namesearchoptions (](../../debugger/debug-interface-access/namesearchoptions.md) se pueden usar solos o en combinación.
 
  `ppResult`
 
-[out] Devuelve un [IDiaEnumSymbols](../../debugger/debug-interface-access/idiaenumsymbols.md) recupera el objeto que contiene la lista de símbolos secundarios.
+enuncia Devuelve un objeto [IDiaEnumSymbols](../../debugger/debug-interface-access/idiaenumsymbols.md) que contiene la lista de símbolos secundarios recuperados.
 
 ## <a name="return-value"></a>Valor devuelto
- Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.
+ Si se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.
 
 ## <a name="example"></a>Ejemplo
- En el ejemplo siguiente se muestra cómo buscar las variables locales de función `pFunc` ese nombre coincidencia `szVarName`.
+ En el ejemplo siguiente se muestra cómo buscar variables locales de la función `pFunc` que coincidan con el nombre `szVarName`.
 
 ```C++
 IDiaEnumSymbols* pEnum;

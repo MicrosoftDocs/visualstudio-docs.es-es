@@ -1,5 +1,5 @@
 ---
-title: 'Depuración ASP.NET: Requisitos del sistema | Documentos de Microsoft'
+title: 'Depuración de ASP.NET: requisitos del sistema | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -16,14 +16,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - aspnet
-ms.openlocfilehash: 63a94f9ae6c35ef304af334737a8f206da911afd
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 78f947c7ab9fcc1031d457526240ecdd7e9119a3
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63402712"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72745805"
 ---
-# <a name="aspnet-debugging-system-requirements"></a>Depuración ASP.NET: Requisitos del sistema
+# <a name="aspnet-debugging-system-requirements"></a>Depuración ASP.NET: requisitos del sistema
 En este tema se describen los requisitos de software y seguridad de los escenarios de depuración de [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] :
 
 - Depuración local, en la que [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] y la aplicación web se ejecutan en el mismo equipo. Existen dos versiones de este escenario:
@@ -37,14 +37,14 @@ En este tema se describen los requisitos de software y seguridad de los escenari
 ## <a name="security-requirements"></a>Requisitos de seguridad
  Para la depuración remota, los equipos locales y remotos deben estar en una configuración de dominio o una configuración de grupo de trabajo.
 
- Para depurar el [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] el proceso de trabajo (hospedado por un grupo de aplicaciones), debe tener permiso para depurar dicho proceso. De forma predeterminada, [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] aplicaciones anteriores a IIS 6.0 se ejecutan como la **ASPNET** usuario. En IIS 6.0 e IIS 7.0, el **NETWORK SERVICE** cuenta es el valor predeterminado. Si el proceso de trabajo se ejecuta con la cuenta **ASPNET**o **NETWORK SERVICE**, deberá tener privilegios de administrador para depurarlo.
+ Para depurar el proceso de trabajo de [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] (hospedado por un grupo de aplicaciones), debe tener permiso para depurar dicho proceso. De forma predeterminada, [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] aplicaciones anteriores a IIS 6,0 se ejecutan como el usuario **ASPNET** . En IIS 6,0 e IIS 7,0, la cuenta de **servicio de red** es el valor predeterminado. Si el proceso de trabajo se ejecuta con la cuenta **ASPNET**o **NETWORK SERVICE**, deberá tener privilegios de administrador para depurarlo.
 
  > [!IMPORTANT]
- > A partir de Windows Server 2008 R2, se recomienda el uso de la [ApplicationPoolIdentity](/iis/manage/configuring-security/application-pool-identities) como identidad para cada grupo de aplicaciones.
+ > A partir de Windows Server 2008 R2, se recomienda el uso de [ApplicationPoolIdentity](/iis/manage/configuring-security/application-pool-identities) como identidad para cada grupo de aplicaciones.
 
- El nombre del proceso de trabajo de [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] varía en función del escenario de depuración y de la versión de IIS. Para obtener más información, vea [Cómo: Búsqueda del nombre de un proceso de ASP.NET](../debugger/how-to-find-the-name-of-the-aspnet-process.md).
+ El nombre del proceso de trabajo de [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] varía en función del escenario de depuración y de la versión de IIS. Para obtener más información, consulta [Cómo: Buscar el nombre de un proceso de ASP.NET](../debugger/how-to-find-the-name-of-the-aspnet-process.md).
 
- Puede cambiar la cuenta de usuario en la que se ejecuta el proceso de trabajo de [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] editando el archivo machine.config en el servidor que ejecuta IIS. La mejor manera de hacerlo es mediante el **Administrador de Internet Information Services (IIS)**. Para obtener más información, vea [Cómo: Ejecución de un proceso de trabajo en una cuenta de usuario](../debugger/how-to-run-the-worker-process-under-a-user-account.md).
+ Puede cambiar la cuenta de usuario en la que se ejecuta el proceso de trabajo de [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] editando el archivo machine.config en el servidor que ejecuta IIS. La mejor manera de hacerlo es mediante el **Administrador de Internet Information Services (IIS)** . Para obtener más información, consulte [Cómo: ejecutar el proceso de trabajo en una cuenta de usuario](../debugger/how-to-run-the-worker-process-under-a-user-account.md).
 
  Si cambia el proceso de trabajo de [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] para que se ejecute en su propia cuenta de usuario, no tiene porqué ser administrador en el servidor que esté ejecutando IIS.
 
@@ -54,4 +54,4 @@ En este tema se describen los requisitos de software y seguridad de los escenari
 ## <a name="see-also"></a>Vea también
 
 - [Depurar aplicaciones ASP.NET](../debugger/how-to-enable-debugging-for-aspnet-applications.md)
-- [Cómo: Ejecución de un proceso de trabajo en una cuenta de usuario](../debugger/how-to-run-the-worker-process-under-a-user-account.md)
+- [Cómo: Ejecutar el proceso de trabajo en una cuenta de usuario](../debugger/how-to-run-the-worker-process-under-a-user-account.md)

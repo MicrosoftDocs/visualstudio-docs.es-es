@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 27e2edec7964e2105cd411321a6e7644e7835097
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 590603e0fd44d8ee6da84790a98cfd8ef8be0b98
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64796444"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72739549"
 ---
-# <a name="idiasymbolgetoptimizedcodedebuginfo"></a>IDiaSymbol::get_optimizedCodeDebugInfo
-Recupera una marca que indica si la función contiene información de depuración específica para código optimizado.
+# <a name="idiasymbolget_optimizedcodedebuginfo"></a>IDiaSymbol::get_optimizedCodeDebugInfo
+Recupera una marca que indica si la función contiene información de depuración específica del código optimizado.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -33,17 +33,17 @@ HRESULT get_optimizedCodeDebugInfo(
 #### <a name="parameters"></a>Parámetros
  `pFlag`
 
-[out] Devuelve `TRUE` si la función optimizada o etiqueta contiene información de depuración; en caso contrario, devuelve `FALSE`.
+enuncia Devuelve `TRUE` si la función o etiqueta optimizada contiene información de depuración; de lo contrario, devuelve `FALSE`.
 
 ## <a name="return-value"></a>Valor devuelto
- Si es correcto, devuelve `S_OK`; en caso contrario, devuelve `S_FALSE` o un código de error.
+ Si se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve `S_FALSE` o un código de error.
 
 > [!NOTE]
 > Un valor devuelto de `S_FALSE` significa que la propiedad no está disponible para el símbolo.
 
 ## <a name="requirements"></a>Requisitos
 
-|Requisito|DESCRIPCIÓN|
+|Requisito|Descripción|
 |-----------------|-----------------|
 |Encabezado:|dia2.h|
 

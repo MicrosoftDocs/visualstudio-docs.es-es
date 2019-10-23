@@ -1,5 +1,5 @@
 ---
-title: Descripción del directorio de plantilla (. Archivos VSDir) | Documentos de Microsoft
+title: Descripción del directorio de plantillas (. Archivos vsdir) | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,55 +12,55 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ad06428905f924e0e339882057ee4e657da47e8a
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: fb20a1fbc8d5edd9783521fa933dbddc74ac2a22
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66331113"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72722825"
 ---
 # <a name="template-directory-description-vsdir-files"></a>Archivos de descripción del directorio de plantilla (.Vsdir)
-Un archivo de descripción del directorio de plantilla (.vsdir) es un archivo de texto que permite que el entorno de desarrollo integrado (IDE) para mostrar las carpetas, archivos .vsz del asistente y archivos de plantilla que están asociados con el proyecto en los cuadros de diálogo. El contenido incluye un registro por cada archivo o carpeta. Se combinan todos los archivos .vsdir en una ubicación que se hace referencia, aunque generalmente se proporciona solo un archivo .vsdir para describir varias carpetas, los asistentes o los archivos de plantilla.
+Un archivo de Descripción del directorio de plantillas (. vsdir) es un archivo de texto que permite al entorno de desarrollo integrado (IDE) Mostrar carpetas, archivos. vsz del asistente y archivos de plantilla asociados al proyecto en los cuadros de diálogo. El contenido incluye un registro por archivo o carpeta. Se combinan todos los archivos. vsdir en una ubicación a la que se hace referencia, aunque en general solo se proporciona un archivo. vsdir para describir varias carpetas, asistentes o archivos de plantilla.
 
- Carpetas (subdirectorios), los archivos que se hace referencia en el archivo vsdir y el propio archivo .vsdir se encuentran en el mismo directorio. Cuando el IDE ejecuta un asistente o muestra una carpeta o archivo en el **nuevo proyecto** o **Agregar nuevo elemento** cuadros de diálogo, el IDE examina el directorio que contiene los archivos para determinar si es un archivo .vsdir ejecutados presente. Si se encuentra un archivo VSDir, el IDE lo lee para determinar si contiene una entrada para el archivo o carpeta ejecutada o que se muestran. Si se encuentra una entrada, el IDE usa la información de la ejecución del asistente o presentación del contenido.
+ Las carpetas (subdirectorios), los archivos a los que se hace referencia en el archivo. vsdir y el archivo. vsdir se encuentran en el mismo directorio. Cuando el IDE ejecuta un asistente o muestra una carpeta o un archivo en los cuadros de diálogo **nuevo proyecto** o **Agregar nuevo elemento** , el IDE examina el directorio que contiene los archivos ejecutados para determinar si hay un archivo. vsdir presente. Si se encuentra un archivo. vsdir, el IDE lo lee para determinar si contiene una entrada para la carpeta o el archivo ejecutados o mostrados. Si se encuentra una entrada, el IDE usa la información en la ejecución del asistente o la visualización del contenido.
 
- El siguiente ejemplo de código pertenece al archivo SourceFiles.vsdir en el \<EnvSDK > \BscPrj\BscPrj\BscPrjProjectItems\Source_Files clave de registro:
+ El siguiente ejemplo de código es del archivo SourceFiles. vsdir en la clave del registro \<EnvSDK > \BscPrj\BscPrj\BscPrjProjectItems\Source_Files:
 
 ```
 HeaderFile.h|{E59935A1-6156-11d1-87A6-00A0C91E2A46}|#125|130|#126|0|0|0|#127
 SourceFile.cpp|{E59935A1-6156-11d1-87A6-00A0C91E2A46}|#122|110|#123|0|0|0|#124
 ```
 
- En este caso, los dos registros están en un archivo. Una nueva línea (carácter de retorno de carro) separa cada registro. Cada línea representa un tipo de archivo diferente. Una canalización (&#124;) separa los campos de cada registro. Un único directorio puede contener varios archivos .vsdir que tienen nombres de archivo diferente, o puede tener un archivo VSDIR para cada tipo de archivo.
+ En este caso, dos registros se encuentran en un archivo. Una nueva línea (carácter de retorno de carro) separa cada registro. Cada línea representa un tipo de archivo diferente. Un carácter de&#124;barra vertical () separa los campos de cada registro. Un único directorio puede contener varios archivos. vsdir que tengan nombres de archivo diferentes, o bien puede tener un archivo. vsdir para cada tipo de archivo.
 
 ## <a name="fields"></a>Campos
- En la tabla siguiente se enumera los campos especificados para cada registro.
+ En la tabla siguiente se enumeran los campos especificados para cada registro.
 
 | Campo | Descripción |
 | - | - |
-| Nombre de ruta de acceso relativa (RelPathName) | El nombre del archivo .vsz, plantilla o carpeta, como HeaderFile.h o MyWizard.vsz. Este campo también puede ser un nombre que se utiliza para representar una carpeta. |
-| {clsidPackage} | El GUID del VSPackage que permite el acceso a las cadenas localizadas, como LocalizedName, descripción, IconResourceId y SuggestedBaseName, en recursos de biblioteca (DLL) de vínculos dinámicos de satélite de VSPackage. IconResourceId se aplica si no se proporciona DLLPath. **Nota:**  Este campo es opcional, a menos que uno o varios de los campos anteriores son un identificador de recurso. Este campo está normalmente en blanco para los archivos .vsdir que se corresponden con asistentes de terceros que no traduzca su texto. |
-| LocalizedName | El nombre localizado del asistente o archivo de plantilla. Este campo puede ser una cadena o un identificador de recursos de la forma "#ResID". Este nombre se muestra en el **Agregar nuevo elemento** cuadro de diálogo. **Nota:**  Si LocalizedName es un identificador de recurso, a continuación, se requiere {clsidPackage}. |
-| SortPriority | Entero que representa la prioridad relativa de este archivo de plantilla o el asistente. Por ejemplo, si este elemento tiene un valor de 1, este artículo se muestra junto a otros elementos con un valor de 1 y por delante de todos los elementos con un valor de ordenación de 2 o superior.<br /><br /> Prioridad de ordenación es relativo a los elementos en el mismo directorio. Puede haber más de un archivo VSDir en el mismo directorio. En ese caso, los elementos de todos los <em>.</em> se combinan archivos VSDir en ese directorio. Los elementos con la misma prioridad se muestran en orden lexicográfico entre mayúsculas y minúsculas del nombre mostrado. El `_wcsicmp` función se usa para ordenar los elementos.<br /><br /> Los elementos que no se describe en los archivos .vsdir incluyen un número de prioridad mayor que el número de prioridad más alto en los archivos .vsdir. El resultado es que estos elementos están al final de la lista mostrada, independientemente de su nombre. |
-| Descripción | La descripción localizada del archivo de plantilla o asistente. Este campo puede ser una cadena o un identificador de recursos de la forma "#ResID". Esta cadena aparece en la **nuevo proyecto** o **Agregar nuevo elemento** cuadro de diálogo cuando se selecciona el elemento. |
-| DLLPath o {clsidPackage} | Se usa para cargar un icono para el archivo de plantilla o el asistente. El icono se carga como un recurso fuera de un archivo .dll o .exe mediante la IconResourceId. Este archivo .dll o .exe puede identificarse mediante el uso de una ruta de acceso completa o mediante el uso de un GUID de un paquete VSPackage. La implementación del archivo DLL del VSPackage se usa para cargar el icono (no el archivo DLL de satélite). |
-| IconResourceId | El identificador de recurso en la implementación de VSPackage o DLL DLL que determina el icono para mostrar. |
-| Marcas (<xref:Microsoft.VisualStudio.Shell.Interop.__VSDIRFLAGS>) | Se utiliza para habilitar o deshabilitar la **nombre** y **ubicación** campos de la **Agregar nuevo elemento** cuadro de diálogo. El valor de la **marcas** campo es el equivalente decimal de la combinación de marcas de bits necesarios.<br /><br /> Cuando un usuario selecciona un elemento en el **New** ficha, el proyecto determina si el campo de nombre y el campo de ubicación se muestran cuando el **Agregar nuevo elemento** cuadro de diálogo se muestra por primera vez. Un elemento, mediante un archivo VSDir, puede controlar solo si están habilitados los campos frente a deshabilitado cuando se selecciona el elemento. |
-| SuggestedBaseName | Representa el nombre predeterminado para el archivo, el asistente o la plantilla. Este campo es una cadena o un identificador de recursos de la forma "#ResID". El IDE usa este valor para proporcionar un nombre predeterminado para el elemento. Este valor base se anexa con un valor entero y que el nombre sea único, como MyFile21.asp.<br /><br /> En la lista anterior, descripción, DLLPath, IconResourceId, indicadores y SuggestedBaseNumber solo se aplican a los archivos de plantilla y el asistente. Estos campos no se aplican a las carpetas. Este hecho se ilustra en el código en el archivo BscPrjProjectItems el \<EnvSDK > \BscPrj\BscPrj\BscPrjProjectItems clave de registro. Este archivo contiene tres registros (uno para cada carpeta) con cuatro campos para cada registro: RelPathName, {clsidPackage}, LocalizedName y SortPriority.<br /><br /> `General&#124;{E59935A1-6156-11d1-87A6-00A0C91E2A46}&#124;#110&#124;100`<br /><br /> `Source_Files&#124;{E59935A1-6156-11d1-87A6-00A0C91E2A46}&#124;#111&#124;110`<br /><br /> `Env&#124;{E59935A1-6156-11d1-87A6-00A0C91E2A46}&#124;#112&#124;120` |
+| Nombre de ruta de acceso relativa (RelPathName) | El nombre de la carpeta, plantilla o archivo. vsz, como HeaderFile. h o mi Wizard. vsz. Este campo también puede ser un nombre que se usa para representar una carpeta. |
+| {clsidPackage} | GUID del VSPackage que permite el acceso a cadenas localizadas, como LocalizedName, Description, IconResourceId y SuggestedBaseName, en los recursos de la biblioteca de vínculos dinámicos (DLL) satélite del VSPackage. IconResourceId se aplica si no se proporciona DLLPath. **Nota:**  Este campo es opcional a menos que uno o varios de los campos anteriores sean un identificador de recursos. Normalmente, este campo está en blanco para los archivos. vsdir que corresponden a asistentes de terceros que no localizan su texto. |
+| LocalizedName | Nombre localizado del archivo de plantilla o asistente. Este campo puede ser una cadena o un identificador de recursos con el formato "#ResID". Este nombre se muestra en el cuadro de diálogo **Agregar nuevo elemento** . **Nota:**  Si LocalizedName es un identificador de recursos, se requiere {clsidPackage}. |
+| SortPriority | Entero que representa la prioridad relativa de este archivo de plantilla o asistente. Por ejemplo, si este elemento tiene un valor de 1, este elemento se muestra junto a otros elementos con un valor de 1 y antes de todos los elementos con un valor de ordenación de 2 o más.<br /><br /> La prioridad de ordenación es relativa a los elementos del mismo directorio. Puede haber más de un archivo. vsdir en el mismo directorio. En ese caso, los elementos de All <em>.</em> se combinan los archivos vsdir de ese directorio. Los elementos con la misma prioridad se muestran en el orden lexicográfico sin distinción de mayúsculas y minúsculas del nombre mostrado. La función `_wcsicmp` se usa para ordenar los elementos.<br /><br /> Los elementos no descritos en los archivos. vsdir incluyen un número de prioridad mayor que el número de prioridad más alto enumerado en los archivos. vsdir. El resultado es que estos elementos se encuentran al final de la lista mostrada, independientemente de su nombre. |
+| Descripción | Descripción localizada del archivo de plantilla o del asistente. Este campo puede ser una cadena o un identificador de recursos con el formato "#ResID". Esta cadena aparece en el cuadro de diálogo **nuevo proyecto** o **Agregar nuevo elemento** cuando se selecciona el elemento. |
+| DLLPath o {clsidPackage} | Se usa para cargar un icono para el archivo de plantilla o el asistente. El icono se carga como un recurso fuera de un archivo. dll o. exe mediante IconResourceId. Este archivo. dll o. exe se puede identificar mediante una ruta de acceso completa o mediante un GUID de un VSPackage. La DLL de implementación del VSPackage se usa para cargar el icono (no el archivo DLL satélite). |
+| IconResourceId | El identificador de recurso en el archivo dll de implementación de DLL o VSPackage que determina el icono que se va a mostrar. |
+| Marcas (<xref:Microsoft.VisualStudio.Shell.Interop.__VSDIRFLAGS>) | Se utiliza para deshabilitar o habilitar los campos **nombre** y **Ubicación** en el cuadro de diálogo **Agregar nuevo elemento** . El valor del campo **Flags** es el decimal equivalente a la combinación de marcadores de bits necesarios.<br /><br /> Cuando un usuario selecciona un elemento en la pestaña **nuevo** , el proyecto determina si el campo Nombre y el campo Ubicación se muestran cuando se muestra por primera vez el cuadro de diálogo **Agregar nuevo elemento** . Un elemento, a través de un archivo. vsdir, solo puede controlar si los campos están habilitados o deshabilitados cuando se selecciona el elemento. |
+| SuggestedBaseName | Representa el nombre predeterminado del archivo, el asistente o la plantilla. Este campo es una cadena o un identificador de recursos con el formato "#ResID". El IDE usa este valor para proporcionar un nombre predeterminado para el elemento. Este valor base se anexa con un valor entero para que el nombre sea único, como MyFile21. asp.<br /><br /> En la lista anterior, Description, DLLPath, IconResourceId, flags y SuggestedBaseNumber se aplican únicamente a los archivos de plantilla y de asistente. Estos campos no se aplican a las carpetas. Este hecho se ilustra en el código del archivo BscPrjProjectItems de la clave del Registro > \BscPrj\BscPrj\BscPrjProjectItems de \<EnvSDK. Este archivo contiene tres registros (uno para cada carpeta) con cuatro campos para cada registro: RelPathName, {clsidPackage}, LocalizedName y SortPriority.<br /><br /> `General&#124;{E59935A1-6156-11d1-87A6-00A0C91E2A46}&#124;#110&#124;100`<br /><br /> `Source_Files&#124;{E59935A1-6156-11d1-87A6-00A0C91E2A46}&#124;#111&#124;110`<br /><br /> `Env&#124;{E59935A1-6156-11d1-87A6-00A0C91E2A46}&#124;#112&#124;120` |
 
- Cuando se crea un archivo de asistente, también debe considerar los siguientes problemas.
+ Al crear un archivo de asistente, también debe tener en cuenta los siguientes problemas.
 
 - Los campos opcionales para los que no existen datos significativos tienen que contener un cero (0) como marcador de posición.
 
-- Si se proporciona ningún nombre localizado, se usa el nombre de ruta de acceso relativa en el archivo del asistente.
+- Si no se proporciona ningún nombre traducido, se utiliza el nombre de la ruta de acceso relativa en el archivo del asistente.
 
 - DLLPath invalida clsidPackage para la ubicación del icono.
 
-- Si se define ningún icono, el IDE sustituye el icono predeterminado para un archivo que tiene esa extensión.
+- Si no se define ningún icono, el IDE sustituye el icono predeterminado de un archivo que tiene esa extensión.
 
-- Si no se proporciona ninguna sugerencia de nombre base, se utiliza 'Project'.
+- Si no se proporciona ningún nombre base sugerido, se utiliza ' proyecto '.
 
-- Si elimina los archivos .vsz, carpetas o archivos de plantilla, debe quitar también los registros asociados desde el archivo vsdir.
+- Si elimina los archivos. vsz, las carpetas o los archivos de plantilla, también debe quitar los registros asociados del archivo. vsdir.
 
 ## <a name="see-also"></a>Vea también
 - [Asistentes](../../extensibility/internals/wizards.md)

@@ -12,14 +12,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a2ed86bc9854d896578c7935cf446406589ea28b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 6c91f1e60b3cd003464f61942119828b1e64c222
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62833318"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72743975"
 ---
-# <a name="idiaenumsymbolsgetcount"></a>IDiaEnumSymbols::get_Count
+# <a name="idiaenumsymbolsget_count"></a>IDiaEnumSymbols::get_Count
 Recupera el número de símbolos.
 
 ## <a name="syntax"></a>Sintaxis
@@ -33,10 +33,10 @@ HRESULT get_Count ( 
 #### <a name="parameters"></a>Parámetros
  pRetVal
 
-[out] Devuelve el número de símbolos.
+enuncia Devuelve el número de símbolos.
 
 ## <a name="return-value"></a>Valor devuelto
- Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.
+ Si se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.
 
 ## <a name="see-also"></a>Vea también
 - [IDiaEnumSymbols](../../debugger/debug-interface-access/idiaenumsymbols.md)

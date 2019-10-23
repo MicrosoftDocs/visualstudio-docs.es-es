@@ -1,5 +1,5 @@
 ---
-title: Continuar la ejecución después de una excepción | Documentos de Microsoft
+title: Continuar la ejecución después de una excepción | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -25,20 +25,20 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d557fc0ec056cac22603338f95920e5c721f67dd
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: e7be214a950c8cc93d986f97834a848bd9ab824e
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62564104"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72745648"
 ---
 # <a name="continuing-execution-after-an-exception"></a>Continuar la ejecución después de una excepción
-Cuando el depurador interrumpe la ejecución debido a una excepción, verá el **aplicación auxiliar de excepciones**, de forma predeterminada. Si ha deshabilitado la **aplicación auxiliar de excepciones** en el **opciones** cuadro de diálogo, verá el **Asistente de excepciones** (C# o Visual Basic) o el **excepción**  cuadro de diálogo) (C++).
+Cuando el depurador interrumpa la ejecución debido a una excepción, verá la **aplicación auxiliar de excepciones**de forma predeterminada. Si ha deshabilitado la **aplicación auxiliar de excepciones** en el cuadro de diálogo **Opciones** , verá el Asistente deC# **excepciones** (o Visual Basic) o el cuadro deC++diálogo **excepción** ().
 
- Cuando el **aplicación auxiliar de excepciones** aparece, puede intentar corregir el problema que provocó la excepción.
+ Cuando aparezca la **aplicación auxiliar de excepciones** , puede intentar solucionar el problema que produjo la excepción.
 
 ## <a name="managed-and-native-code"></a>Código administrado y nativo
- En el código administrado y nativo, puede continuar la ejecución en el mismo subproceso después de una excepción no controlada. El **aplicación auxiliar de excepciones** se desenreda la pila de llamadas al punto donde se produjo la excepción.
+ En código administrado y nativo, puede continuar la ejecución en el mismo subproceso después de una excepción no controlada. La **aplicación auxiliar de excepciones** desenreda la pila de llamadas hasta el punto en que se produjo la excepción.
 
 ## <a name="mixed-code"></a>Código mixto
  Si se produce una excepción no controlada durante la depuración de código mixto nativo y administrado, las restricciones de sistema operativo impedirán que se desenrede la pila de llamadas. Si intenta rebobinar la pila de llamadas mediante el menú contextual, aparecerá un mensaje de error que indica que el depurador no puede desenredar la pila de llamadas si se ha producido una excepción no controlada durante la depuración de código mixto.

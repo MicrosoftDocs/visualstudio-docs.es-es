@@ -8,12 +8,12 @@ author: frozenpandaman
 ms.author: efessler
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 430d0e271f83332f7163c9c0c947f96756ca7a7d
-ms.sourcegitcommit: e95dd8cedcd180e0bce6a75c86cf861757918290
+ms.openlocfilehash: e226ac6c83839474b9d8ac6be7fb57e376de4a4f
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/09/2019
-ms.locfileid: "72165144"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72745993"
 ---
 # <a name="using-clang-tidy-in-visual-studio"></a>Uso de Clang-ordenado en Visual Studio
 
@@ -28,23 +28,23 @@ Clang: se ejecuta después de la compilación correcta; es posible que tenga que
 
 ## <a name="msbuild"></a>MSBuild
 
-Puede configurar Clang para que se ejecute como parte del análisis de código y compilar en la página**General** de **análisis de código** >  en el ventana Propiedades del proyecto. Las opciones para configurar la herramienta se pueden encontrar en el submenú Clang-ordenado.
+Puede configurar Clang-ordenado para que se ejecute como parte del análisis de código y compilar en la página **análisis de código**  > **General** en el ventana Propiedades del proyecto. Las opciones para configurar la herramienta se pueden encontrar en el submenú Clang-ordenado.
 
-Para obtener más información, vea [Cómo: Establezca las propiedades de análisis de códigoC++ para C/Projects @ no__t-1.
+Para obtener más información, vea [Cómo: establecer propiedades de análisis de código paraC++ proyectos de C/](../code-quality/how-to-set-code-analysis-properties-for-c-cpp-projects.md).
 
 ## <a name="cmake"></a>CMake
 
 En los proyectos de CMake, puede configurar las comprobaciones de Clang en `CMakeSettings.json`. Una vez abierto, haga clic en "editar JSON" en la esquina superior derecha del editor de configuración del proyecto CMake. Se reconocen las claves siguientes:
 
-- `enableMicrosoftCodeAnalysis`: Habilita el análisis de código de Microsoft
-- `enableClangTidyCodeAnalysis`: Habilita el análisis Clang
-- `clangTidyChecks`: Clang: configuración ordenada, especificada como una lista separada por comas, es decir, comprobaciones para habilitar o deshabilitar
+- `enableMicrosoftCodeAnalysis`: habilita el análisis de código de Microsoft
+- `enableClangTidyCodeAnalysis`: habilita el análisis Clang
+- `clangTidyChecks`: configuración Clang, especificada como una lista separada por comas, es decir, las comprobaciones para habilitar o deshabilitar
 
 Si no se especifica ninguna de las opciones "habilitar", Visual Studio seleccionará la herramienta de análisis que coincida con el conjunto de herramientas de la plataforma que se usa.
 
 ## <a name="warning-display"></a>Pantalla de advertencia
 
-Clang: las ejecuciones no ordenadas provocan que se muestren advertencias en el Lista de errores y como líneas de subrayado en el editor bajo las secciones de código pertinentes. Use la columna "categoría" en el Lista de errores para ordenar y organizar las advertencias de Clang. Puede configurar advertencias en el editor activando la opción "deshabilitar subrayados de análisis de código" en **herramientas** > **Opciones**.
+Clang: las ejecuciones no ordenadas provocan que se muestren advertencias en el Lista de errores y como líneas de subrayado en el editor bajo las secciones de código pertinentes. Use la columna "categoría" en el Lista de errores para ordenar y organizar las advertencias de Clang. Puede configurar las advertencias en el editor activando la opción "deshabilitar subrayados de análisis de código" en **herramientas**  > **Opciones**.
 
 ## <a name="clang-tidy-configuration"></a>Clang: configuración ordenada
 

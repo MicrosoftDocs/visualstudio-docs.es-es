@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 08baf81c327457ac250d91bcbb7d9951a0290459
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 014b7436f0439214062a8b19393269421a2dfcff
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62827750"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72742505"
 ---
-# <a name="idiasectioncontribgetuninitializeddata"></a>IDiaSectionContrib::get_uninitializedData
-Recupera una marca que indica si la sección contiene los datos sin inicializar.
+# <a name="idiasectioncontribget_uninitializeddata"></a>IDiaSectionContrib::get_uninitializedData
+Recupera una marca que indica si la sección contiene datos no inicializados.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -33,7 +33,7 @@ HRESULT get_uninitializedData ( 
 #### <a name="parameters"></a>Parámetros
  `pRetVal`
 
-[out] Devuelve `TRUE` si la sección contiene los datos sin inicializar; en caso contrario, devuelve `FALSE`.
+enuncia Devuelve `TRUE` si la sección contiene datos no inicializados; de lo contrario, devuelve `FALSE`.
 
 ## <a name="return-value"></a>Valor devuelto
  Si la operación se realiza correctamente, devuelve `S_OK`. Devuelve `S_FALSE` si no se admite esta propiedad. De lo contrario, devuelve un código de error.

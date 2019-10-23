@@ -13,32 +13,32 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ed505499efcabd7173fea9d668cd9afa5ed6d925
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b10ab87f056bc153ec41c125b0e01ddefa139b80
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62555083"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72745398"
 ---
 # <a name="constants-debug-interface-access-sdk"></a>Constantes (Debug Interface Access SDK)
-Estas constantes de cadena pueden utilizarse para identificar las distintas secciones de un archivo de base de datos (PDB) de depuración de programa a través del SDK de DIA.
+Estas constantes de cadena se pueden usar para identificar varias secciones de un archivo de la base de datos de depuración del programa (PDB) a través del SDK de DIA.
 
 ## <a name="constants"></a>Constantes
-El siguiente se declara como macros de C o C++.
+Los siguientes elementos se declaranC++ como C/macros.
 
 |Macro|Valor|
 |-----------|-----------|
-|`DiaTable_Symbols`|L "Símbolos"|
-|`DiaTable_Sections`|L "Secciones"|
+|`DiaTable_Symbols`|L "símbolos"|
+|`DiaTable_Sections`|L "secciones"|
 |`DiaTable_SrcFiles`|L "SourceFiles"|
 |`DiaTable_LineNums`|L"LineNumbers"|
 |`DiaTable_SegMap`|L "SegmentMap"|
-|`DiaTable_Dbg`|L "Dbg"|
+|`DiaTable_Dbg`|L "dbg"|
 |`DiaTable_InjSrc`|L "InjectedSource"|
 |`DiaTable_FrameData`|L "FrameData"|
 
 ## <a name="example"></a>Ejemplo
-Este es un ejemplo utilizando uno de estos símbolos:
+Este es un ejemplo de uso de uno de estos símbolos:
 
 ```C++
 HRESULT GetSymbolTable(IDiaEnumTables *pEnumTables, IDiaTable **pTable)
@@ -53,7 +53,7 @@ HRESULT GetSymbolTable(IDiaEnumTables *pEnumTables, IDiaTable **pTable)
 ```
 
 ## <a name="requirements"></a>Requisitos
-Encabezado: dia2.h
+Encabezado: Dia2. h
 
 ## <a name="see-also"></a>Vea también
 - [Referencia](../../debugger/debug-interface-access/debug-interface-access-sdk-reference.md)

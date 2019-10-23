@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a0b97b30b6f19e367cfbae72be29b6d8961f4e1a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: baf1fc45b69007d3fbe2393ec854ead447fac259
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62833420"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72743807"
 ---
 # <a name="idiaenumsymbolsbyaddrsymbolbyva"></a>IDiaEnumSymbolsByAddr::symbolByVA
 Coloca el enumerador realizando una búsqueda por dirección virtual (VA).
@@ -34,14 +34,14 @@ HRESULT symbolByVA ( 
 #### <a name="parameters"></a>Parámetros
  virtualAddress
 
-[in] Dirección virtual.
+de Dirección virtual.
 
  ppsymbol
 
-[out] Devuelve un [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) objeto que representa el símbolo se encuentra.
+enuncia Devuelve un objeto [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) que representa el símbolo encontrado.
 
 ## <a name="return-value"></a>Valor devuelto
- Si la operación se realiza correctamente, devuelve `S_OK`. Devuelve `S_FALSE` si no se encontró el símbolo. De lo contrario, devuelve un código de error.
+ Si la operación se realiza correctamente, devuelve `S_OK`. Devuelve `S_FALSE` si no se pudo encontrar el símbolo. De lo contrario, devuelve un código de error.
 
 ## <a name="see-also"></a>Vea también
 - [IDiaEnumSymbolsByAddr](../../debugger/debug-interface-access/idiaenumsymbolsbyaddr.md)

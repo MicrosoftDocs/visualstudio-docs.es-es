@@ -12,14 +12,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a7daec26817638be5338eb10dce83b59a1283d15
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 94958fb51f6742bf07cc5a4cd34da059c05adc23
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62839412"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72742358"
 ---
-# <a name="idiasegmentgetvirtualaddress"></a>IDiaSegment::get_virtualAddress
+# <a name="idiasegmentget_virtualaddress"></a>IDiaSegment::get_virtualAddress
 Recupera la dirección virtual (VA) del principio de la sección.
 
 ## <a name="syntax"></a>Sintaxis
@@ -33,7 +33,7 @@ HRESULT get_virtualAddress ( 
 #### <a name="parameters"></a>Parámetros
  `pRetVal`
 
-[out] Devuelve la evaluación de vulnerabilidad del principio de la sección.
+enuncia Devuelve el VA del comienzo de la sección.
 
 ## <a name="return-value"></a>Valor devuelto
  Si la operación se realiza correctamente, devuelve `S_OK`. Devuelve `S_FALSE` si no se admite esta propiedad. De lo contrario, devuelve un código de error.

@@ -10,15 +10,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a1a5af94d6a5d6100f8ffb6047f57ee59f780da5
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 57cb155d5cfcb4f2b59c101388dcc4907e1b6d80
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "62831729"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72741182"
 ---
 # <a name="idiasymbolfindinlineframesbyaddr"></a>IDiaSymbol::findInlineFramesByAddr
-Recupera una enumeración que permite que un cliente recorrer en iteración todos los marcos en línea en una dirección determinada.
+Recupera una enumeración que permite a un cliente recorrer en iteración todos los marcos insertados en una dirección determinada.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -33,18 +33,18 @@ HRESULT findInlineFramesByAddr ( 
 #### <a name="parameters"></a>Parámetros
  `isect`
 
-[in] Especifica el componente de la sección de la dirección.
+de Especifica el componente de sección de la dirección.
 
  `offset`
 
-[in] Especifica el componente de la dirección de desplazamiento.
+de Especifica el componente de desplazamiento de la dirección.
 
  `ppResult`
 
-[out] Contiene un `IDiaEnumSymbols` objeto que contiene la lista de fotogramas que se recuperan.
+enuncia Contiene un objeto `IDiaEnumSymbols` que contiene la lista de fotogramas que se recuperan.
 
 ## <a name="return-value"></a>Valor devuelto
- Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.
+ Si se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.
 
 ## <a name="see-also"></a>Vea también
 - [IDiaSession](../../debugger/debug-interface-access/idiasession.md)

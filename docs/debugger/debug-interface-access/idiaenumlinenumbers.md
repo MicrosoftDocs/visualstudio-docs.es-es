@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 49257aa3b9b51a1e8b62c867ced030b853deae9c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c779b82f0e62b2ba71a1ebed8ac695ab0cf0ac7e
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62833516"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72744349"
 ---
 # <a name="idiaenumlinenumbers"></a>IDiaEnumLineNumbers
-Enumera los distintos números de línea incluidos en el origen de datos.
+Enumera los distintos números de línea contenidos en el origen de datos.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -29,11 +29,11 @@ IDiaEnumLineNumbers : IUnknown
 ```
 
 ## <a name="methods-in-vtable-order"></a>Métodos en orden de Vtable
-La tabla siguiente muestran los métodos de `IDiaEnumLineNumbers`.
+En la tabla siguiente se muestran los métodos de `IDiaEnumLineNumbers`.
 
 |Método|Descripción|
 |------------|-----------------|
-|[IDiaEnumLineNumbers::get__NewEnum](../../debugger/debug-interface-access/idiaenumlinenumbers-get-newenum.md)|Recupera el [interfaz IEnumVARIANT](/previous-versions/windows/desktop/api/oaidl/nn-oaidl-ienumvariant) versión de este enumerador.|
+|[IDiaEnumLineNumbers::get__NewEnum](../../debugger/debug-interface-access/idiaenumlinenumbers-get-newenum.md)|Recupera la versión de la [interfaz IEnumVARIANT](/previous-versions/windows/desktop/api/oaidl/nn-oaidl-ienumvariant) de este enumerador.|
 |[IDiaEnumLineNumbers::get_Count](../../debugger/debug-interface-access/idiaenumlinenumbers-get-count.md)|Recupera el número de números de línea.|
 |[IDiaEnumLineNumbers::Item](../../debugger/debug-interface-access/idiaenumlinenumbers-item.md)|Recupera un número de línea por medio de un índice.|
 |[IDiaEnumLineNumbers::Next](../../debugger/debug-interface-access/idiaenumlinenumbers-next.md)|Recupera un número especificado de números de línea en la secuencia de enumeración.|
@@ -43,8 +43,8 @@ La tabla siguiente muestran los métodos de `IDiaEnumLineNumbers`.
 
 ## <a name="remarks"></a>Comentarios
 
-## <a name="notes-for-callers"></a>Notas para los llamadores
-Esta interfaz se obtiene llamando a uno de los métodos siguientes en el [IDiaSession](../../debugger/debug-interface-access/idiasession.md) interfaz:
+## <a name="notes-for-callers"></a>Notas para llamadores
+Esta interfaz se obtiene llamando a uno de los métodos siguientes en la interfaz [IDiaSession](../../debugger/debug-interface-access/idiasession.md) :
 
 - [IDiaSession::findLines](../../debugger/debug-interface-access/idiasession-findlines.md)
 
@@ -57,7 +57,7 @@ Esta interfaz se obtiene llamando a uno de los métodos siguientes en el [IDiaSe
 - [IDiaSession::findLinesByLinenum](../../debugger/debug-interface-access/idiasession-findlinesbylinenum.md)
 
 ## <a name="example"></a>Ejemplo
-En este ejemplo se muestra cómo obtener el `IDiaEnumLineNumbers` interfaz desde una sesión. En este caso, el ejemplo muestra cómo obtener la enumeración de números de línea para una función (representado por `pSymbol`). Para obtener un ejemplo más completo del uso de números de línea, consulte el [IDiaLineNumber](../../debugger/debug-interface-access/idialinenumber.md) interfaz.
+En este ejemplo se muestra cómo obtener la interfaz `IDiaEnumLineNumbers` de una sesión. En este caso, en el ejemplo se muestra cómo obtener la enumeración del número de línea de una función (representada por `pSymbol`). Para obtener un ejemplo más completo del uso de números de línea, vea la interfaz [IDiaLineNumber](../../debugger/debug-interface-access/idialinenumber.md) .
 
 ```C++
 void dumpFunctionLines( IDiaSymbol* pSymbol, IDiaSession* pSession )
@@ -86,9 +86,9 @@ void dumpFunctionLines( IDiaSymbol* pSymbol, IDiaSession* pSession )
 ```
 
 ## <a name="requirements"></a>Requisitos
-Encabezado: Dia2.h
+Encabezado: Dia2. h
 
-Biblioteca: diaguids.lib
+Biblioteca: diaguids. lib
 
 DLL: msdia80.dll
 

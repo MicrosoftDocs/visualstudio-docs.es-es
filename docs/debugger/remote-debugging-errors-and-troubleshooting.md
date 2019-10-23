@@ -1,5 +1,5 @@
 ---
-title: Errores de depuración remota y sus soluciones | Documentos de Microsoft
+title: Errores y solución de problemas de depuración remota | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -20,58 +20,58 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 078551111223f11b38f3192075caa9ddfabaf18c
-ms.sourcegitcommit: 9753c7544cec852ca5efd0834e0956d9e53a5734
+ms.openlocfilehash: f41292c22de1d9c76007ca44cb7accbf82359b3b
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "67043345"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72730026"
 ---
 # <a name="remote-debugging-errors-and-troubleshooting"></a>Errores de la depuración remota y sus soluciones
 
-Puede encontrarse los siguientes errores al intentar depurar de forma remota.
+Puede que se produzcan los siguientes errores al intentar depurar de forma remota.
 
-- [Error: No se puede depurar paso a paso por instrucciones al servidor de manera automática](../debugger/error-unable-to-automatically-step-into-the-server.md)
+- [Error: Unable to Automatically Step Into the Server](../debugger/error-unable-to-automatically-step-into-the-server.md)
 
-- [Error: El Monitor de depuración remota de Microsoft Visual Studio (MSVSMON.EXE) no parece estar ejecutándose en el equipo remoto.](/visualstudio/debugger/error-remote-debugging-monitor-msvsmon-exe-does-not-appear-to-be-running)
+- [Error: Parece que el Monitor de depuración remota de Microsoft Visual Studio (MSVSMON.EXE) no se está ejecutando en el equipo remoto.](/visualstudio/debugger/error-remote-debugging-monitor-msvsmon-exe-does-not-appear-to-be-running)
 
 - [Unable to Connect to the Microsoft Visual Studio Remote Debugging Monitor](../debugger/unable-to-connect-to-the-microsoft-visual-studio-remote-debugging-monitor.md)
 
-- [Error: La máquina remota no aparece en el cuadro de diálogo Conexiones remotas](../debugger/error-remote-machine-does-not-appear-in-a-remote-connections-dialog.md)
+- [Error: la máquina remota no aparece en el cuadro de diálogo Conexiones remotas](../debugger/error-remote-machine-does-not-appear-in-a-remote-connections-dialog.md)
 
-## <a name="run-the-remote-debugger-as-an-administrator"></a>Ejecutar al depurador remoto como administrador
+## <a name="run-the-remote-debugger-as-an-administrator"></a>Ejecutar el depurador remoto como administrador
 
-Puede encontrarse problemas si no ejecuta al depurador remoto como administrador. Por ejemplo, puede ver el error siguiente: "El Visual Studio Remote Debugger (MSVSMON. (EXE) tiene privilegios suficientes para depurar este proceso." Si se ejecuta el depurador remoto como una aplicación (no es un servicio), es posible que vea el [otra cuenta de usuario](error-the-microsoft-visual-studio-remote-debugging-monitor-on-the-remote-computer-is-running-as-a-different-user.md) error.
+Puede que surjan problemas si no ejecuta el depurador remoto como administrador. Por ejemplo, puede ver el siguiente error: "The Visual Studio Remote Debugger (MSVSMON. EXE) no tiene privilegios suficientes para depurar este proceso. " Si ejecuta el depurador remoto como una aplicación (no un servicio), es posible que vea el error de [cuenta de usuario diferente](error-the-microsoft-visual-studio-remote-debugging-monitor-on-the-remote-computer-is-running-as-a-different-user.md) .
 
-### <a name="when-running-the-remote-debugger-as-a-service"></a>Cuando se ejecuta al depurador remoto como un servicio
+### <a name="when-running-the-remote-debugger-as-a-service"></a>Al ejecutar el depurador remoto como servicio
 
-Cuando se ejecuta al depurador remoto como servicio s, se recomienda ejecutarlo como administrador por varias razones:
+Al ejecutar el depurador remoto como servicio de, se recomienda ejecutarlo como administrador por varias razones:
 
-- El servicio del depurador remoto solo permite conexiones a los administradores, por lo que hay **ningún** nuevos riesgos de seguridad introducidos por ejecutarlo como administrador.
+- El servicio del Depurador remoto solo permite conexiones de los administradores, por lo que no hay **ningún** riesgo de seguridad nuevo al ejecutarlo como administrador.
 
-- Puede evitar errores que realiza el resultado cuando el usuario de Visual Studio tiene más derechos para depurar un proceso que el propio depurador remoto.
+- Puede impedir que se produzcan errores cuando el usuario de Visual Studio tiene más derechos para depurar un proceso que el propio Depurador remoto.
 
-- Para simplificar la instalación y configuración del depurador remoto.
+- Para simplificar la instalación y configuración del Depurador remoto.
 
-Aunque es posible depurar sin ejecutar al depurador remoto como administrador, hay varios requisitos para llevarlo a cabo correctamente y a menudo requieren pasos de configuración de servicio más avanzados.
+Aunque es posible depurar sin ejecutar el depurador remoto como administrador, hay varios requisitos para que funcione correctamente y, a menudo, requieren pasos de configuración de servicio más avanzados.
 
-- La cuenta que está usando en el equipo remoto debe tener la **iniciar sesión como servicio** con privilegios. Consulte los pasos descritos en "Para agregar inicio de sesión como servicio" en el [no se puede conectar nuevo](error-the-visual-studio-remote-debugger-service-on-the-target-computer-cannot-connect-back-to-this-computer.md) artículo del error.
+- La cuenta que está usando en el equipo remoto debe tener el privilegio **iniciar sesión como servicio** . Consulte los pasos descritos en "para agregar inicio de sesión como servicio" en el artículo [no se puede volver a conectar](error-the-visual-studio-remote-debugger-service-on-the-target-computer-cannot-connect-back-to-this-computer.md) el error.
 
-- La cuenta debe tener derechos para depurar el proceso de destino. Para obtener estos derechos, debe ejecutar al depurador remoto en la misma cuenta que el proceso que se desea depurar. (La alternativa más sencilla es ejecutar el servicio como un administrador). 
+- La cuenta debe tener derechos para depurar el proceso de destino. Para obtener estos derechos, debe ejecutar el depurador remoto en la misma cuenta que el proceso que se va a depurar. (La alternativa más sencilla es ejecutar el servicio como administrador). 
 
-- La cuenta debe ser capaz de conectarse a volver a (es decir, se autentican con) el equipo de Visual Studio a través de la red. En un dominio, es más fácil conectarse si el depurador remoto se ejecuta en las cuentas Local System o Network Service integradas, o una cuenta de dominio. Las cuentas integradas tienen privilegios de seguridad que pueden presentar un riesgo de seguridad elevados.
+- La cuenta debe poder conectarse de nuevo a (es decir, autenticarse con) el equipo de Visual Studio a través de la red. En un dominio, es más fácil volver a conectarse si el depurador remoto se ejecuta en las cuentas de sistema local o de servicio de red integradas, o en una cuenta de dominio. Las cuentas integradas tienen privilegios de seguridad elevados que pueden suponer un riesgo para la seguridad.
 
-### <a name="when-running-the-remote-debugger-as-an-application-normal-mode"></a>Cuando se ejecuta al depurador remoto como una aplicación (modo normal)
+### <a name="when-running-the-remote-debugger-as-an-application-normal-mode"></a>Al ejecutar el depurador remoto como una aplicación (modo normal)
 
-Si está intentando conectar a su propio proceso sin privilegios elevados (por ejemplo, una aplicación normal), no importa si está ejecutando al depurador remoto como administrador.
+Si intenta asociar a su propio proceso sin privilegios elevados (como una aplicación normal), no importa si ejecuta el depurador remoto como administrador.
 
-Desea ejecutar al depurador remoto como administrador en varios escenarios:
+Desea ejecutar el depurador remoto como administrador en varios escenarios:
 
-- Que desea asociar a procesos que se ejecuta como otro usuario (por ejemplo, cuando la depuración de IIS), o
+- Desea asociar a procesos que se ejecutan como otro usuario (por ejemplo, al depurar IIS) o
 
 - Está intentando iniciar otro proceso y el proceso que desea iniciar es un administrador.
 
-De lo **no** desea ejecutar como administrador si desea iniciar los procesos, y el proceso que desea iniciar debe **no** ser un administrador.
+**No desea ejecutar** como administrador si desea iniciar procesos, y el proceso que desea iniciar **no** debe ser un administrador de.
 
 ## <a name="see-also"></a>Vea también
 - [Remote Debugging](../debugger/remote-debugging.md)

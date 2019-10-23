@@ -12,14 +12,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5840bbcc012fdcb209fbfb19c0119ad94f3073f2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 21697d53f0b221d3d5f94f85e3fb18a0a2c2692e
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62838446"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72744772"
 ---
-# <a name="idiaenumdebugstreamsgetcount"></a>IDiaEnumDebugStreams::get_Count
+# <a name="idiaenumdebugstreamsget_count"></a>IDiaEnumDebugStreams::get_Count
 Recupera el número de secuencias de depuración.
 
 ## <a name="syntax"></a>Sintaxis
@@ -33,10 +33,10 @@ HRESULT get_Count( 
 #### <a name="parameters"></a>Parámetros
  `pRetVal`
 
-[out] Devuelve el número de secuencias de depuración disponibles en este enumerador.
+enuncia Devuelve el número de secuencias de depuración disponibles en este enumerador.
 
 ## <a name="return-value"></a>Valor devuelto
- Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.
+ Si se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.
 
 ## <a name="see-also"></a>Vea también
 - [IDiaEnumDebugStreams](../../debugger/debug-interface-access/idiaenumdebugstreams.md)

@@ -1,5 +1,5 @@
 ---
-title: Estructuras y enumeraciones | Documentos de Microsoft
+title: Enumeraciones y estructuras | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -15,16 +15,16 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b8a38138b5688d0c6573b18f3b0d875abcf627c2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 6769af8a417c111de6c8dfc68cd7cda548eaa24c
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62554940"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72745226"
 ---
 # <a name="enumerations-and-structures"></a>Enumeraciones y estructuras
 
-Estas son las enumeraciones y estructuras utilizadas por el SDK de DIA.
+Estas son las enumeraciones y estructuras que usa el SDK de DIA.
 
 ## <a name="in-this-section"></a>En esta sección
 
@@ -40,11 +40,11 @@ Estas son las enumeraciones y estructuras utilizadas por el SDK de DIA.
 
 - [Enumeración CV_call_e](../../debugger/debug-interface-access/cv-call-e.md)
 
- Especifica la convención de llamada para una función.
+ Especifica la Convención de llamada para una función.
 
 - [Enumeración CV_CFL_LANG](../../debugger/debug-interface-access/cv-cfl-lang.md)
 
- Especifica el lenguaje de código fuente de la aplicación o un módulo vinculado.
+ Especifica el idioma del código fuente de la aplicación o del módulo vinculado.
 
 - [Enumeración CV_CPU_TYPE_e](../../debugger/debug-interface-access/cv-cpu-type-e.md)
 
@@ -56,7 +56,7 @@ Estas son las enumeraciones y estructuras utilizadas por el SDK de DIA.
 
 - [Enumeración DataKind](../../debugger/debug-interface-access/datakind.md)
 
- Indica el ámbito de un valor de datos determinado.
+ Indica el ámbito determinado de un valor de datos.
 
 - [Enumeración LocationType](../../debugger/debug-interface-access/locationtype.md)
 
@@ -64,11 +64,11 @@ Estas son las enumeraciones y estructuras utilizadas por el SDK de DIA.
 
 - [Enumeración MemoryTypeEnum](../../debugger/debug-interface-access/memorytypeenum.md)
 
- Especifica el tipo de memoria para tener acceso.
+ Especifica el tipo de memoria a la que se va a obtener acceso.
 
 - [Enumeración NameSearchOptions](../../debugger/debug-interface-access/namesearchoptions.md)
 
- Especifica las opciones de búsqueda para los nombres de archivo y símbolos.
+ Especifica las opciones de búsqueda para los nombres de símbolos y archivos.
 
 - [Enumeración StackFrameTypeEnum](../../debugger/debug-interface-access/stackframetypeenum.md)
 
@@ -80,11 +80,11 @@ Estas son las enumeraciones y estructuras utilizadas por el SDK de DIA.
 
 - [Enumeración THUNK_ORDINAL](../../debugger/debug-interface-access/thunk-ordinal.md)
 
- Designa los tipos de código thunk.
+ Designa tipos de código thunk.
 
 - [Enumeración UdtKind](../../debugger/debug-interface-access/udtkind.md)
 
- Describe la variedad de tipo definido por el usuario (UDT).
+ Describe la variedad de tipos definidos por el usuario (UDT).
 
 ### <a name="structures"></a>Estructuras
 

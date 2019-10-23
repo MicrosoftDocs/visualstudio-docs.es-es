@@ -12,14 +12,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fa4478788c820485ac3284e9533987ceb8e3492f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b9a2a433c33d46215168238e9956ce0427171b24
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62832123"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72741568"
 ---
-# <a name="idiastackframegettype"></a>IDiaStackFrame::get_type
+# <a name="idiastackframeget_type"></a>IDiaStackFrame::get_type
 Recupera el tipo de marco.
 
 ## <a name="syntax"></a>Sintaxis
@@ -33,7 +33,7 @@ HRESULT get_type ( 
 #### <a name="parameters"></a>Parámetros
  `pRetVal`
 
-[out] Devuelve un valor de la [StackFrameTypeEnum (enumeración)](../../debugger/debug-interface-access/stackframetypeenum.md) enumeración.
+enuncia Devuelve un valor de la enumeración de [enumeración stackframetypeenum (](../../debugger/debug-interface-access/stackframetypeenum.md) .
 
 ## <a name="return-value"></a>Valor devuelto
  Si la operación se realiza correctamente, devuelve `S_OK`. Devuelve `S_FALSE` si no se admite la propiedad. De lo contrario, devuelve un código de error.

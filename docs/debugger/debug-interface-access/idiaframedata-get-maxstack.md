@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b609ba9357e96d8e7ece4459e33991a599b47ee7
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: fc5eaa20c5167897ccb19d5e142656ed314a91e6
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62839971"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72743531"
 ---
-# <a name="idiaframedatagetmaxstack"></a>IDiaFrameData::get_maxStack
-Recupera el número máximo de bytes que se insertan en la pila en el marco.
+# <a name="idiaframedataget_maxstack"></a>IDiaFrameData::get_maxStack
+Recupera el número máximo de bytes insertados en la pila en el marco.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -33,13 +33,13 @@ HRESULT get_maxStack ( 
 #### <a name="parameters"></a>Parámetros
  `pRetVal`
 
-[out] Devuelve el número máximo de bytes que se insertan en la pila.
+enuncia Devuelve el número máximo de bytes insertados en la pila.
 
 ## <a name="return-value"></a>Valor devuelto
  Si la operación se realiza correctamente, devuelve `S_OK`. Devuelve `S_FALSE` si no se admite esta propiedad. De lo contrario, devuelve un código de error.
 
 ## <a name="remarks"></a>Comentarios
- El valor devuelto por este método se utiliza normalmente en la interpretación de una cadena de programa (consulte la [Get_program](../../debugger/debug-interface-access/idiaframedata-get-program.md) método para la definición de una cadena de programa).
+ El valor devuelto por este método se utiliza normalmente en la interpretación de una cadena de programa (vea el método [IDiaFrameData:: get_program](../../debugger/debug-interface-access/idiaframedata-get-program.md) para ver la definición de una cadena de programa).
 
 ## <a name="see-also"></a>Vea también
 - [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md)

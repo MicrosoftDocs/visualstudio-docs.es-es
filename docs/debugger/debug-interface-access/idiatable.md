@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 604c68ef82f66358238f94b43f000fae24a076f1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: bc7a573eb92d7c51079b0a7e97067abd155ae4fa
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62834157"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72738710"
 ---
 # <a name="idiatable"></a>IDiaTable
 Enumera una tabla de origen de datos DIA.
@@ -29,24 +29,24 @@ IDiaTable : IEnumUnknown
 ```
 
 ## <a name="methods-in-vtable-order"></a>Métodos en orden de Vtable
-La tabla siguiente muestran los métodos de `IDiaTable`.
+En la tabla siguiente se muestran los métodos de `IDiaTable`.
 
 |Método|Descripción|
 |------------|-----------------|
-|[IDiaTable::get__NewEnum](../../debugger/debug-interface-access/idiatable-get-newenum.md)|Recupera el [interfaz IEnumVARIANT](/previous-versions/windows/desktop/api/oaidl/nn-oaidl-ienumvariant) versión de este enumerador.|
+|[IDiaTable::get__NewEnum](../../debugger/debug-interface-access/idiatable-get-newenum.md)|Recupera la versión de la [interfaz IEnumVARIANT](/previous-versions/windows/desktop/api/oaidl/nn-oaidl-ienumvariant) de este enumerador.|
 |[IDiaTable::get_name](../../debugger/debug-interface-access/idiatable-get-name.md)|Recupera el nombre de la tabla.|
 |[IDiaTable::get_Count](../../debugger/debug-interface-access/idiatable-get-count.md)|Recupera el número de elementos de la tabla.|
-|[IDiaTable::Item](../../debugger/debug-interface-access/idiatable-item.md)|Recupera una referencia a un índice de la entrada determinada.|
+|[IDiaTable::Item](../../debugger/debug-interface-access/idiatable-item.md)|Recupera una referencia a un índice de entrada determinado.|
 
 ## <a name="remarks"></a>Comentarios
-Esta interfaz implementa la `IEnumUnknown` los métodos de enumeración en el espacio de nombres de ensamblados Microsoft.VisualStudio.OLE.Interop. El `IEnumUnknown` es mucho más eficaz para recorrer en iteración la tabla de contenido de la interfaz de enumeración el [Idiatable](../../debugger/debug-interface-access/idiatable-get-count.md) y [Idiatable](../../debugger/debug-interface-access/idiatable-item.md) métodos.
+Esta interfaz implementa los métodos de enumeración de `IEnumUnknown` en el espacio de nombres Microsoft. VisualStudio. OLE. Interop. La interfaz de enumeración de `IEnumUnknown` es mucho más eficaz para recorrer en iteración el contenido de la tabla que los métodos [IDiaTable:: get_Count](../../debugger/debug-interface-access/idiatable-get-count.md) y [IDiaTable:: Item](../../debugger/debug-interface-access/idiatable-item.md) .
 
-La interpretación de los `IUnknown` interfaz devuelto desde el `IDiaTable::Item` método o la `Next` método (en el espacio de nombres de ensamblados Microsoft.VisualStudio.OLE.Interop) es depende del tipo de tabla. Por ejemplo, si la `IDiaTable` interfaz representa una lista de orígenes insertados, el `IUnknown` se debe consultar la interfaz para el [IDiaInjectedSource](../../debugger/debug-interface-access/idiainjectedsource.md) interfaz.
+La interpretación de la interfaz `IUnknown` devuelta desde el método `IDiaTable::Item` o el método `Next` (en el espacio de nombres Microsoft. VisualStudio. OLE. Interop) depende del tipo de tabla. Por ejemplo, si la interfaz de `IDiaTable` representa una lista de orígenes insertados, se debe consultar la interfaz de `IUnknown` para la interfaz [IDiaInjectedSource](../../debugger/debug-interface-access/idiainjectedsource.md) .
 
-## <a name="notes-for-callers"></a>Notas para los llamadores
-Esta interfaz se obtiene mediante una llamada a la [Idiaenumtables](../../debugger/debug-interface-access/idiaenumtables-item.md) o [Idiaenumtables](../../debugger/debug-interface-access/idiaenumtables-next.md) métodos.
+## <a name="notes-for-callers"></a>Notas para llamadores
+Obtenga esta interfaz mediante una llamada a los métodos [IDiaEnumTables:: Item](../../debugger/debug-interface-access/idiaenumtables-item.md) o [IDiaEnumTables:: Next](../../debugger/debug-interface-access/idiaenumtables-next.md) .
 
-Las interfaces siguientes se implementan con la `IDiaTable` interfaz (es decir, puede consultar el `IDiaTable` interfaz para una de las interfaces siguientes):
+Las siguientes interfaces se implementan con la interfaz `IDiaTable` (es decir, se puede consultar la interfaz de `IDiaTable` para una de las interfaces siguientes):
 
 - [IDiaEnumSymbols](../../debugger/debug-interface-access/idiaenumsymbols.md)
 
@@ -63,10 +63,10 @@ Las interfaces siguientes se implementan con la `IDiaTable` interfaz (es decir, 
 - [IDiaEnumFrameData](../../debugger/debug-interface-access/idiaenumframedata.md)
 
 ## <a name="example"></a>Ejemplo
-La primera función, `ShowTableNames`, muestra los nombres de todas las tablas de la sesión. La segunda función, `GetTable`, busca en todas las tablas de una tabla que implementa la interfaz especificada. La tercera función, `UseTable`, se muestra cómo usar el `GetTable` función.
+La primera función, `ShowTableNames`, muestra los nombres de todas las tablas de la sesión. La segunda función, `GetTable`, busca en todas las tablas una tabla que implementa una interfaz especificada. La tercera función, `UseTable`, muestra cómo usar la función `GetTable`.
 
 > [!NOTE]
-> `CDiaBSTR` es una clase que encapsula un `BSTR` y controla automáticamente la liberación de la cadena de la creación de instancias se sale del ámbito.
+> `CDiaBSTR` es una clase que contiene un `BSTR` y controla automáticamente la liberación de la cadena cuando la creación de instancias sale del ámbito.
 
 ```C++
 void ShowTableNames(IDiaSession *pSession)
@@ -131,9 +131,9 @@ void UseTable(IDiaSession *pSession)
 ```
 
 ## <a name="requirements"></a>Requisitos
-Encabezado: Dia2.h
+Encabezado: Dia2. h
 
-Biblioteca: diaguids.lib
+Biblioteca: diaguids. lib
 
 DLL: msdia80.dll
 

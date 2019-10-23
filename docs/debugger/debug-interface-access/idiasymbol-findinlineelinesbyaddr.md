@@ -10,15 +10,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ede156a5416ca065a5271ae87abfcfd621f02b26
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 1709120dfa8e115f4b14a4ee4e2d1c7ffb293329
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "62837997"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72741219"
 ---
 # <a name="idiasymbolfindinlineelinesbyaddr"></a>IDiaSymbol::findInlineeLinesByAddr
-Recupera una enumeración que permite que un cliente iterar por la información de número de línea de todas las funciones que están insertadas, directa o indirectamente, en este símbolo en el intervalo de direcciones especificado.
+Recupera una enumeración que permite a un cliente recorrer en iteración la información del número de línea de todas las funciones insertadas, directa o indirectamente, en este símbolo dentro del intervalo de direcciones especificado.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -34,22 +34,22 @@ HRESULT findInlineeLinesByAddr ( 
 #### <a name="parameters"></a>Parámetros
  `isect`
 
-[in] Especifica el componente de la sección de la dirección.
+de Especifica el componente de sección de la dirección.
 
  `offset`
 
-[in] Especifica el componente de la dirección de desplazamiento.
+de Especifica el componente de desplazamiento de la dirección.
 
  `length`
 
-[in] Especifica el intervalo de direcciones, en el número de bytes, para cubrir con esta consulta.
+de Especifica el intervalo de direcciones, en número de bytes, que se va a cubrir con esta consulta.
 
  `ppResult`
 
-[out] Contiene un `IDiaEnumLineNumbers` objeto que contiene la lista de números de línea que se recuperan.
+enuncia Contiene un objeto `IDiaEnumLineNumbers` que contiene la lista de números de línea que se recuperan.
 
 ## <a name="return-value"></a>Valor devuelto
- Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.
+ Si se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.
 
 ## <a name="see-also"></a>Vea también
 - [IDiaSession](../../debugger/debug-interface-access/idiasession.md)

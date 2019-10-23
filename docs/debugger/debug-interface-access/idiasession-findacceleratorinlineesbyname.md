@@ -10,15 +10,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fb3caa5574605864a0dd16b59b6f451530b8e631
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 007477d3f0de3767b0c5ef0af977f969505884ed
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62827788"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72742312"
 ---
 # <a name="idiasessionfindacceleratorinlineesbyname"></a>IDiaSession::findAcceleratorInlineesByName
-Devuelve una enumeración de los símbolos para los marcos en línea que corresponde al nombre de función en línea especificada.
+Devuelve una enumeración de símbolos para los marcos insertados correspondientes al nombre de función insertada especificado.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -33,21 +33,21 @@ HRESULT findAcceleratorInlineeLinesByName ( 
 #### <a name="parameters"></a>Parámetros
  `name`
 
-[in] El nombre de función inlinee se va a buscar.
+de Nombre de la función insertada que se va a buscar.
 
  `option`
 
-[in] Las opciones de búsqueda de nombre que se utilizará al buscar en línea los marcos que corresponden a `name`. Para obtener más información, consulte [NameSearchOptions (enumeración)](../../debugger/debug-interface-access/namesearchoptions.md).
+de Las opciones de búsqueda de nombres que se usarán al buscar fotogramas insertados que se correspondan con `name`. Para obtener más información, vea [enumeración namesearchoptions (](../../debugger/debug-interface-access/namesearchoptions.md).
 
  `ppResult`
 
-[out] Un puntero a un `IDiaEnumSymbols` puntero de interfaz que se inicializa con el resultado.
+enuncia Puntero a un puntero de interfaz de `IDiaEnumSymbols` que se inicializa con el resultado.
 
 ## <a name="return-value"></a>Valor devuelto
- Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.
+ Si se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.
 
 ## <a name="remarks"></a>Comentarios
- Esta función busca inlinees solo dentro de las funciones de código auxiliar del acelerador. Omite los registros de procedimiento de C++ nativos.
+ Esta función busca Inlines solo dentro de las funciones de código auxiliar de acelerador. Omite los registros de C++ procedimientos nativos.
 
 ## <a name="see-also"></a>Vea también
 - [IDiaSession](../../debugger/debug-interface-access/idiasession.md)

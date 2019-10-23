@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 91e99da7832bb2a0e067de6eb3c09f90255eaf32
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 420ba5b56342b4b1d5b8e4c2756aa828e5fe53b4
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64785834"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72739525"
 ---
-# <a name="idiasymbolgetpacked"></a>IDiaSymbol::get_packed
-Recupera una marca que especifica si el tipo de datos definido por el usuario (UDT) se empaqueta.
+# <a name="idiasymbolget_packed"></a>IDiaSymbol::get_packed
+Recupera una marca que especifica si el tipo de datos definido por el usuario (UDT) está empaquetado.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -33,16 +33,16 @@ HRESULT get_packed ( 
 #### <a name="parameters"></a>Parámetros
  `pRetVal`
 
-[out] Devuelve `TRUE` si el UDT se empaqueta; en caso contrario, devuelve `FALSE`.
+enuncia Devuelve `TRUE` si el UDT está empaquetado; de lo contrario, devuelve `FALSE`.
 
 ## <a name="return-value"></a>Valor devuelto
- Si es correcto, devuelve `S_OK`; en caso contrario, devuelve `S_FALSE` o un código de error.
+ Si se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve `S_FALSE` o un código de error.
 
 > [!NOTE]
 > Un valor devuelto de `S_FALSE` significa que la propiedad no está disponible para el símbolo.
 
 ## <a name="remarks"></a>Comentarios
- Empaquetado significa que todos los miembros del UDT se colocan tan juntos como sea posible, sin relleno intermedio para alinearse con límites de memoria.
+ Empaquetado significa que todos los miembros del UDT están colocados lo más cerca posible, sin ningún relleno intermedio para alinear con los límites de memoria.
 
 ## <a name="see-also"></a>Vea también
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

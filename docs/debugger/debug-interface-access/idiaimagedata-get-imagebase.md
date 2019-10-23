@@ -12,14 +12,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: de8c333391530cd86c6fc66a8e6c36ce8cfecd5f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 7887fea30b04f4ebb6605169c58551122eccf73d
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62829062"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72743436"
 ---
-# <a name="idiaimagedatagetimagebase"></a>IDiaImageData::get_imageBase
+# <a name="idiaimagedataget_imagebase"></a>IDiaImageData::get_imageBase
 Recupera la ubicación de memoria donde se debe basar la imagen.
 
 ## <a name="syntax"></a>Sintaxis
@@ -33,13 +33,13 @@ HRESULT get_imageBase ( 
 #### <a name="parameters"></a>Parámetros
  `pRetVal`
 
-[out] Devuelve el valor de base de imagen sugerida.
+enuncia Devuelve el valor de base de la imagen sugerido.
 
 ## <a name="return-value"></a>Valor devuelto
- Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.
+ Si se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.
 
 ## <a name="remarks"></a>Comentarios
- Debido a conflictos de imagen base, una imagen puede reubicarse automáticamente en una ubicación de memoria no utilizada cuando se cargue. Este método devuelve la sugerencia base (ubicación de memoria recomendados) que se almacenó en el módulo en tiempo de compilación.
+ Debido a conflictos de base de la imagen, una imagen se puede rebasar automáticamente en una ubicación de memoria no utilizada cuando se carga. Este método devuelve la sugerencia base (ubicación de memoria sugerida) que se almacenó en el módulo en tiempo de compilación.
 
 ## <a name="see-also"></a>Vea también
 - [IDiaImageData](../../debugger/debug-interface-access/idiaimagedata.md)

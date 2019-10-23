@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 82ef0d25e796f9e04ecdcfd0c54a7312b9c9edad
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ae1201fca1fc25cce19b40b47d6435d02d80e1b4
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62837919"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72741481"
 ---
 # <a name="idiastackwalkframereadmemory"></a>IDiaStackWalkFrame::readMemory
-Lee de la imagen de memoria.
+Lee la memoria de la imagen.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -37,26 +37,26 @@ HRESULT readMemory ( 
 #### <a name="parameters"></a>Parámetros
  `type`
 
-[in] Uno de los [MemoryTypeEnum (enumeración)](../../debugger/debug-interface-access/memorytypeenum.md) valores de enumeración que especifica el tipo de memoria para tener acceso.
+de Uno de los valores de enumeración de la [enumeración memorytypeenum (](../../debugger/debug-interface-access/memorytypeenum.md) que especifica el tipo de memoria a la que se va a obtener acceso.
 
  `va`
 
-[in] Ubicación de dirección virtual de imagen a comenzar la lectura.
+de Ubicación de la dirección virtual de la imagen en la que se va a empezar a leer.
 
  `cbData`
 
-[in] Tamaño del búfer de datos, en bytes.
+de Tamaño del búfer de datos, en bytes.
 
  `pcbData`
 
-[out] Devuelve el número de bytes devueltos. Si `data` es `NULL`, a continuación, `pcbData` contiene el número total de bytes de datos disponibles.
+enuncia Devuelve el número de bytes devueltos. Si se `NULL` `data`, `pcbData` contiene el número total de bytes de datos disponibles.
 
  `data`
 
-[out] Un búfer que se va a rellenar con datos de la ubicación especificada.
+enuncia Búfer que se va a rellenar con los datos de la ubicación especificada.
 
 ## <a name="return-value"></a>Valor devuelto
- Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.
+ Si se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.
 
 ## <a name="see-also"></a>Vea también
 - [IDiaStackWalkFrame](../../debugger/debug-interface-access/idiastackwalkframe.md)
