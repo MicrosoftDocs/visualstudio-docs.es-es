@@ -5,15 +5,15 @@ ms.topic: conceptual
 helpviewer_keywords:
 - load tests, run settings
 ms.assetid: 51cbe7d6-5dfd-4842-bca3-f7f8a665dc84
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: c1e94bb6da2786b989208ea1104d509883bc0724
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 8ea68c2a4c643a9fc06d9d831008a7ee8b684c2e
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62970671"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72653363"
 ---
 # <a name="how-to-specify-the-sample-rate-for-a-load-test-run-setting"></a>Procedimiento Especificar la frecuencia de muestreo de los parámetros de ejecución de pruebas de carga
 

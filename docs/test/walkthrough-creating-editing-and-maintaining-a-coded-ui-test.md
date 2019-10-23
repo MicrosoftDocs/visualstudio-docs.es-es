@@ -2,17 +2,17 @@
 title: Creación de una prueba automatizada de IU
 ms.date: 11/04/2016
 ms.topic: conceptual
-ms.author: gewarren
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-author: gewarren
-ms.openlocfilehash: 54ebc36f9dd18010e07403c3b9692b62b2380d99
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+author: jillre
+ms.openlocfilehash: 268d170926e3a60ba0aa5131795f22bb31cd2ba9
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62976324"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72659646"
 ---
 # <a name="walkthrough-create-edit-and-maintain-a-coded-ui-test"></a>Tutorial: Crear, editar y mantener una prueba automatizada de IU
 
@@ -166,7 +166,7 @@ En este tutorial aprenderá a crear, editar y mantener una prueba automatizada d
 
 ## <a name="edit-and-rerun-the-coded-ui-test"></a>Editar y volver a ejecutar la prueba automatizada de IU
 
-1. En la ventana **Explorador de pruebas**, seleccione la prueba con errores en la sección **Seguimiento de la pila** y elija el primer vínculo a **UIMap.SimpleAppTest()**.
+1. En la ventana **Explorador de pruebas**, seleccione la prueba con errores en la sección **Seguimiento de la pila** y elija el primer vínculo a **UIMap.SimpleAppTest()** .
 
 2. Se abre el archivo *UIMap.Designer.cs* con el punto de error resaltado en el código:
 
@@ -249,7 +249,7 @@ En este tutorial aprenderá a crear, editar y mantener una prueba automatizada d
 
      La prueba no se supera porque la prueba de IU codificada no puede localizar el control de botón que se asignó originalmente en UIMap como button1. La refactorización puede impactar las pruebas de IU codificadas de esta manera.
 
-5. En el **Explorador de pruebas**, en la sección **Seguimiento de la pila**, elija el primer vínculo al lado de **UIMpa.ModifiedSimpleAppTest()**.
+5. En el **Explorador de pruebas**, en la sección **Seguimiento de la pila**, elija el primer vínculo al lado de **UIMpa.ModifiedSimpleAppTest()** .
 
      Se abrirá el archivo *UIMap.cs*. El punto de error se resalta en el código:
 
@@ -264,7 +264,7 @@ En este tutorial aprenderá a crear, editar y mantener una prueba automatizada d
 
 ## <a name="map-refactored-control-rerun-the-test"></a>Asignar el control refactorizado y volver a ejecutar la prueba
 
-1. En el archivo *CodedUITest1.cs*, en el método **CodedUITestMethod1()**, haga clic con el botón derecho, seleccione **Generar código para prueba automatizada de IU** y, después, elija **Usar generador de pruebas automatizadas de IU**.
+1. En el archivo *CodedUITest1.cs*, en el método **CodedUITestMethod1()** , haga clic con el botón derecho, seleccione **Generar código para prueba automatizada de IU** y, después, elija **Usar generador de pruebas automatizadas de IU**.
 
      Aparecerá **UIMap – Generador de pruebas automatizadas de IU**.
 

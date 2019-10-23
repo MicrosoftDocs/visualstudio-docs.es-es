@@ -5,17 +5,17 @@ ms.topic: reference
 apiname:
 - XElement.Xml
 ms.assetid: 69ab2a33-4fe7-4cfa-97f8-eaf063decb18
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7d58dea02a45ccc84e7829da2acdb479eb17dda3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c93aaf3b43a930fe88020738460ec131972a205a
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62843958"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72633516"
 ---
 # <a name="xml-xelement-dynamic-property"></a>Xml (propiedad dinámica de XElement)
 
@@ -37,5 +37,5 @@ Esta propiedad es equivalente al método <xref:System.Xml.Linq.XNode.ToString(Sy
 
 ## <a name="see-also"></a>Vea también
 
-- [Propiedades dinámicas de la clase XElement](../designers/xelement-class-dynamic-properties.md)
+- [Propiedades dinámicas de la clase XElement](../designers/attribute-xelement-dynamic-property.md)
 - [Valor](../designers/value-xelement-dynamic-property.md)

@@ -2,17 +2,17 @@
 title: Analizar pruebas de IU codificadas usando los registros de pruebas de IU codificadas
 ms.date: 11/04/2016
 ms.topic: conceptual
-ms.author: gewarren
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-author: gewarren
-ms.openlocfilehash: 76aac39d50dc724916bca3d863c71bacf53407d9
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+author: jillre
+ms.openlocfilehash: 73916d309fa0e070bf4b05ba0d5a8fc02bef29f8
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67824482"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72665326"
 ---
 # <a name="analyzing-coded-ui-tests-using-coded-ui-test-logs"></a>Análisis de pruebas automatizadas de IU mediante los registros de pruebas automatizadas de IU
 
@@ -27,11 +27,11 @@ En función de su escenario, use uno de los siguientes métodos para habilitar e
 - Si no hay ningún archivo *App.config* en el proyecto de prueba:
 
    1. Determine qué proceso *QTAgent\*.exe* se inicia al ejecutar la prueba. Una forma de hacerlo es ver la pestaña **Detalles** en el **Administrador de tareas** de Windows.
-   
+
    2. Abra el correspondiente archivo *.config* de archivos desde la carpeta *%ProgramFiles(x86)%\Microsoft Visual Studio\\\<version>\\\<edition>\Common7\IDE*. Por ejemplo, si el proceso que se ejecuta es *QTAgent_40.exe*, abra *QTAgent_40.exe.config*.
 
    2. Modifique el valor de **EqtTraceLevel** para que tenga el nivel de registro que quiera.
-   
+
       ```xml
       <!-- You must use integral values for "value".
            Use 0 for off, 1 for error, 2 for warn, 3 for info, and 4 for verbose. -->

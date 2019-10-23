@@ -2,17 +2,17 @@
 title: Administrar propiedades de soluciones y proyectos
 ms.date: 11/04/2016
 ms.topic: conceptual
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a3d5b1150c67eeb5d47741ed9331dcdc11a82582
-ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
+ms.openlocfilehash: 99786cc2b646c011a0398e973e0fd3d4dd97583f
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "66714952"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72603436"
 ---
 # <a name="manage-project-and-solution-properties"></a>Administrar propiedades de soluciones y proyectos
 

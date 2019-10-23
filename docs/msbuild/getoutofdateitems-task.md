@@ -11,18 +11,18 @@ dev_langs:
 - jsharp
 - C++
 helpviewer_keywords:
-- MSBuild (Visual C++), GetOutOfDateItems task
-- GetOutOfDateItems task (MSBuild (Visual C++))
+- MSBuild (C++), GetOutOfDateItems task
+- GetOutOfDateItems task (MSBuild (C++))
 author: mikeblome
 ms.author: mblome
 ms.workload:
 - multiple
-ms.openlocfilehash: e3393dd7e81fa98c49dd09a32457171286f88f18
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d3dc343c595606faf5bd31d7f087f7ba8d95f69e
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62977495"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72747319"
 ---
 # <a name="getoutofdateitems-task"></a>Tarea GetOutOfDateItems
 
@@ -32,15 +32,15 @@ Tarea asistente que lee TLog antiguos, escribe TLog nuevos y devuelve un conjunt
 
 En la tabla siguiente se describen los parámetros de la tarea **GetOutOfDateItems**.
 
-|Parámetro|Descripción|
+|Parámetro|DESCRIPCIÓN|
 |---------------|-----------------|
 |**CheckForInterdependencies**|Parámetro **bool** opcional.|
 |**CommandMetadataName**|Parámetro **string** opcional.|
 |**DependenciesMetadataName**|Parámetro **string** opcional.|
 |**HasInterdependencies**|Parámetro de salida **bool** opcional.|
-|**OutOfDateSources**|Parámetro de salida opcional de tipo **ITaskItem[]**.|
+|**OutOfDateSources**|Parámetro de salida opcional de tipo **ITaskItem[]** .|
 |**OutputsMetadataName**|Parámetro obligatorio de tipo **String**.|
-|**Sources**|Parámetro opcional de tipo **ITaskItem[]**.|
+|**Sources**|Parámetro opcional de tipo **ITaskItem[]** .|
 |**TLogDirectory**|Parámetro obligatorio de tipo **String**.|
 |**TLogNamePrefix**|Parámetro obligatorio de tipo **String**.|
 

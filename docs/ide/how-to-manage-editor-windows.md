@@ -8,17 +8,17 @@ helpviewer_keywords:
 - editors, windows management
 - Code Editor, windows management
 ms.assetid: 340143d4-8a71-490d-823e-162b276f4c6d
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8a8b6d1d4c39f09382dd0e4a12660bed31ad9b2d
-ms.sourcegitcommit: 614d5b99576ea27a41957cd94062dc95cbd29c1c
+ms.openlocfilehash: 3493a70bd1257194f8c95a58eb6c2890d83ed418
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/10/2019
-ms.locfileid: "65531939"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72645811"
 ---
 # <a name="how-to-manage-editor-windows"></a>Procedimiento Administrar las ventanas del editor
 

@@ -8,17 +8,17 @@ helpviewer_keywords:
 - Code Analysis page in Project Designer
 - Project Designer, Code Analysis page
 ms.assetid: 71743d26-4da5-4f7d-a403-7ab96cf2ef2e
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3c31617def66499e29c4c2fc3e2a1804e7446d9c
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: de941e6b1a07873c2c160351cce561721e845cdb
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68926258"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72609854"
 ---
 # <a name="code-analysis-project-designer"></a>Análisis de código, Diseñador de proyectos
 

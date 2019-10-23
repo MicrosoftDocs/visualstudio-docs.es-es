@@ -11,18 +11,18 @@ dev_langs:
 - jsharp
 - C++
 helpviewer_keywords:
-- MSBuild (Visual C++), FXC task
-- FXC task (MSBuild (Visual C++))
+- MSBuild (C++), FXC task
+- FXC task (MSBuild (C++))
 author: mikeblome
 ms.author: mblome
 ms.workload:
 - multiple
-ms.openlocfilehash: 65819f1625477effab024055828301b26ab5804a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 766a3dc35d72e21fc0aca9436ebff25dc3193a2e
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62931482"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72747323"
 ---
 # <a name="fxc-task"></a>Tarea FXC
 
@@ -32,7 +32,7 @@ Use los compiladores de sombreador de HLS en el proceso de compilación.
 
 En la tabla siguiente se describen los parámetros de la tarea **FXC**.
 
-|Parámetro|Descripción|
+|Parámetro|DESCRIPCIÓN|
 |---------------|-----------------|
 |**AdditionalIncludeDirectories**|Parámetro **string[]** opcional.<br/><br/>Especifica uno o más directorios que se agregarán a la ruta de acceso de inclusión; si hay más de uno, sepárelos mediante punto y coma.<br/><br/>Use `/I[path]`.|
 |**AdditionalOptions**|Parámetro **string** opcional.|

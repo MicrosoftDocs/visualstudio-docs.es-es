@@ -3,17 +3,17 @@ title: ¿Qué es WPF?
 ms.date: 04/16/2018
 ms.topic: conceptual
 ms.assetid: f3be98cb-870f-472c-9da5-cb815e4f6598
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bac2041e9338f4b8b95755221a44157e0c409c8f
-ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
+ms.openlocfilehash: f921ce292e34147d54af977567373634610becfd
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "66747282"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72637284"
 ---
 # <a name="get-started-with-wpf"></a>Introducción a WPF
 

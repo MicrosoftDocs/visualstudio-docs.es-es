@@ -7,15 +7,15 @@ helpviewer_keywords:
 - load test, iterations
 - load tests, scenarios
 ms.assetid: ac480fb7-f4f7-47dc-9ae5-98be3aca4fba
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: cce1da2d3cb20ca7f577c806d0506ffc0b947903
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: ae0f75ac19f858cba9de1e2d75d4ef5529da1d75
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68918273"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72665157"
 ---
 # <a name="configure-test-iterations-in-a-load-test-scenario"></a>Configurar iteraciones de prueba en un escenario de prueba de carga
 

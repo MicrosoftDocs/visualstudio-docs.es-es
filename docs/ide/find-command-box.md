@@ -6,23 +6,23 @@ f1_keywords:
 - vs.findcommandbox
 helpviewer_keywords:
 - Find/Command box
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 221c5fbbd3f0f82ac97d0c2a0fcc82657e0296c4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 024491180528dd4b8335c88623e7d261c0a2bbe2
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62977803"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72653729"
 ---
 # <a name="findcommand-box"></a>Buscar/Comando (cuadro)
 
 Puede buscar texto y ejecutar comandos de Visual Studio desde el cuadro **Buscar comando**. El cuadro **Comando/Buscar** todavía está disponible como un control de la barra de herramientas, pero ya está visible de manera predeterminada. Puede mostrar el cuadro **Comando/Buscar** pulsando **Agregar o quitar botones** en la barra de herramientas **Estándar** y, después, pulsar **Buscar**.
 
-Para ejecutar un comando de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], precédalo de un signo mayor que (**>**).
+Para ejecutar un comando de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], precédalo de un signo mayor que ( **>** ).
 
 El cuadro **Buscar comando** conserva los últimos 20 elementos escritos y los muestra en una lista desplegable. Puede navegar por la lista con las **teclas de dirección**.
 
@@ -34,7 +34,7 @@ Cuando se especifica texto en el cuadro **Buscar comando** y se presiona la tecl
 
 ## <a name="entering-commands"></a>Escribir comandos
 
-Para usar el cuadro **Buscar comando** para emitir un solo comando o alias de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] en lugar de buscar texto, escriba el comando precedido de un signo mayor que (**>**). Por ejemplo:
+Para usar el cuadro **Buscar comando** para emitir un solo comando o alias de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] en lugar de buscar texto, escriba el comando precedido de un signo mayor que ( **>** ). Por ejemplo:
 
 ```
 >File.NewFile c:\temp\MyFile /t:"General\Text File"
@@ -44,7 +44,7 @@ También puede usar la ventana **Comandos** para escribir y ejecutar uno o vario
 
 ## <a name="escape-characters"></a>Caracteres de escape
 
-Un carácter de intercalación (**^**) en un comando significa que el carácter que le sigue se interpreta literalmente, en lugar de interpretarse como un carácter de control. Esto se puede usar para insertar comillas rectas (**"**), espacios, barras diagonales iniciales, símbolos de intercalación o cualquier otro carácter literal en un valor de parámetro o modificador, con la excepción de los nombres de los modificadores. Por ejemplo:
+Un carácter de intercalación ( **^** ) en un comando significa que el carácter que le sigue se interpreta literalmente, en lugar de interpretarse como un carácter de control. Esto se puede usar para insertar comillas rectas ( **"** ), espacios, barras diagonales iniciales, símbolos de intercalación o cualquier otro carácter literal en un valor de parámetro o modificador, con la excepción de los nombres de los modificadores. Por ejemplo:
 
 ```
 >Edit.Find ^^t /regex

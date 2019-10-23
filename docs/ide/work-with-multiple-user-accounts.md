@@ -2,17 +2,17 @@
 title: Trabajar con varias cuentas de usuario
 ms.date: 07/23/2019
 ms.topic: conceptual
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a68b22b5a4fedb7d3548ac3aceda7c4dc109bebe
-ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
+ms.openlocfilehash: 5993d550d85cdc0bd1c9ce6b72553eda6fc280e5
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68870870"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72647076"
 ---
 # <a name="work-with-multiple-user-accounts"></a>Trabajar con varias cuentas de usuario
 

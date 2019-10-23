@@ -2,17 +2,17 @@
 title: Usar controles HTML5 en pruebas de IU codificada
 ms.date: 11/04/2016
 ms.topic: conceptual
-ms.author: gewarren
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-author: gewarren
-ms.openlocfilehash: c7087f08743e58426663734295339d9ca6550a0d
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+author: jillre
+ms.openlocfilehash: e9118dc94019f40289730be78c28777fb86d89db
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68926583"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72659779"
 ---
 # <a name="using-html5-controls-in-coded-ui-tests"></a>Usar controles HTML5 en pruebas automatizadas de IU
 

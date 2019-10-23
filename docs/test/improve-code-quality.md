@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - testing tools [Visual Studio]
 - unit tests [Visual Studio]
-ms.author: gewarren
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-author: gewarren
-ms.openlocfilehash: 153624ec6f0bdb13e4d89a92edf977d0badc7e62
-ms.sourcegitcommit: 3e74ec49a54e5c3da7631f4466128cdf4384af6b
+author: jillre
+ms.openlocfilehash: b68793e512cdb367375cc9f27d61ae5a85e4f078
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "68712216"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72653279"
 ---
 # <a name="testing-tools-in-visual-studio"></a>Herramientas de prueba de Visual Studio
 

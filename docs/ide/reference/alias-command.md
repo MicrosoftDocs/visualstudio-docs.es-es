@@ -11,17 +11,17 @@ helpviewer_keywords:
 - command aliases
 - alias command
 ms.assetid: bdf857df-b5d5-450f-8c10-a6fd4dccc130
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 396db6e08da211a801361328416d97622ee3eac8
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 8fdcc816510642c7800b6fbeacfa3fcdeff5e0b3
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68926336"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72748794"
 ---
 # <a name="alias-command"></a>Alias (Comando)
 Crea un nuevo alias para un comando completo, un comando completo con argumentos u otro alias.
@@ -75,7 +75,7 @@ Este ejemplo muestra una lista de todos los alias actuales y sus definiciones.
 >Tools.Alias
 ```
 
-## <a name="see-also"></a>Otras referencias
+## <a name="see-also"></a>Vea también
 
 - [Comandos de Visual Studio](../../ide/reference/visual-studio-commands.md)
 - [Ventana Comandos](../../ide/reference/command-window.md)

@@ -8,17 +8,17 @@ helpviewer_keywords:
 - Add New Item command
 - File.AddNewItem command
 ms.assetid: 63b7df32-db83-463b-bbe7-7ff011fe5298
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6a73bd7008e0058fe984fcb708c92c2bd983d427
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 683a65ab0c25a5daeb002a4eb3106006655a1b00
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68919367"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72748825"
 ---
 # <a name="add-new-item-command"></a>Agregar nuevo elemento (Comando)
 Agrega un nuevo elemento de solución (como un archivo .htm, .css o .txt o un conjunto de marcos) a la solución actual y lo abre.
@@ -63,7 +63,7 @@ En este ejemplo se agrega un elemento de solución nuevo, MyHTMLpg, a la soluci�
 >File.AddNewItem MyHTMLpg /t:"General\HTML Page"
 ```
 
-## <a name="see-also"></a>Otras referencias
+## <a name="see-also"></a>Vea también
 
 - [Comandos de Visual Studio](../../ide/reference/visual-studio-commands.md)
 - [Ventana Comandos](../../ide/reference/command-window.md)

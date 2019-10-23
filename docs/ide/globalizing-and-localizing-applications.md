@@ -10,17 +10,17 @@ helpviewer_keywords:
 - world-ready applications
 - international applications [Visual Studio]
 ms.assetid: 4d9815ae-3e80-4b4d-933d-f8309aee18d5
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 934427c2bfba769968b7aeb364625b71af47eca7
-ms.sourcegitcommit: 51dad3e11d7580567673e0d426ab3b0a17584319
+ms.openlocfilehash: 886c31eb76a2cd440f1f8189aaacf592e43d34fa
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/10/2019
-ms.locfileid: "66820871"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72603459"
 ---
 # <a name="develop-globalized-and-localized-apps"></a>Desarrollo de aplicaciones localizadas y globalizadas
 

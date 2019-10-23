@@ -18,20 +18,20 @@ dev_langs:
 - C++
 - jsharp
 helpviewer_keywords:
-- MSBuild (Visual C++), MIDL task
-- MIDL task (MSBuild (Visual C++))
+- MSBuild (C++), MIDL task
+- MIDL task (MSBuild (C++))
 ms.assetid: 727efa8c-3336-40b8-8bef-ae6cbd77a422
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 301ca4ee88368b9134bbbcd2dc41435590becaed
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b2c5f7e425a7a8c1220ee4b9b09831831c8f0a9a
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62817576"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72747252"
 ---
 # <a name="midl-task"></a>MIDL (tarea)
 Incluye la herramienta de compilación Lenguaje de definición de interfaz de Microsoft (MIDL), *midl.exe*. Para obtener más información, vea [MIDL command-line reference](https://docs.microsoft.com/windows/desktop/Midl/midl-command-line-reference) (Referencia de la línea de comandos de MIDL).
@@ -141,7 +141,7 @@ Incluye la herramienta de compilación Lenguaje de definición de interfaz de Mi
 
      Si `true`, comprueba que los valores de enumeración están en un intervalo permitido.
 
-     Para obtener más información, vea la opción **/error enum** en la ayuda de la línea de comandos (**/?**) de *midl.exe*.
+     Para obtener más información, vea la opción **/error enum** en la ayuda de la línea de comandos ( **/?** ) de *midl.exe*.
 
 - **ErrorCheckRefPointers**
 
@@ -201,7 +201,7 @@ Incluye la herramienta de compilación Lenguaje de definición de interfaz de Mi
 
      Parámetro **Boolean** opcional.
 
-     Si es `true`, no se genera ningún archivo de biblioteca de tipos (*.tlb*).
+     Si es `true`, no se genera ningún archivo de biblioteca de tipos ( *.tlb*).
 
      Para obtener más información, vea la opción **/notlb** en [MIDL command-line reference](https://docs.microsoft.com/windows/desktop/Midl/midl-command-line-reference) (Referencia de la línea de comandos de MIDL).
 
@@ -257,7 +257,7 @@ Incluye la herramienta de compilación Lenguaje de definición de interfaz de Mi
 
      Parámetro **String[]** opcional.
 
-     Especifica uno o más *defines*; es decir, un nombre y un valor opcional que se pasará al preprocesador de C como si lo hiciera una directiva de `#define`. El formato de cada define es *name[=value]*.
+     Especifica uno o más *defines*; es decir, un nombre y un valor opcional que se pasará al preprocesador de C como si lo hiciera una directiva de `#define`. El formato de cada define es *name[=value]* .
 
      Para obtener más información, vea la opción **/D** en [MIDL command-line reference](https://docs.microsoft.com/windows/desktop/Midl/midl-command-line-reference) (Referencia de la línea de comandos de MIDL). Consulte también el parámetro **UndefinePreprocessorDefinitions** en esta tabla.
 
@@ -321,7 +321,7 @@ Incluye la herramienta de compilación Lenguaje de definición de interfaz de Mi
 
      Parámetro `Boolean` opcional.
 
-     Si es `true`, evita que se muestre el copyright y el mensaje de número de versión cuando la tarea se inicia. 
+     Si es `true`, evita que se muestre el copyright y el mensaje de número de versión cuando la tarea se inicia.
 
      Para obtener más información, vea la opción **/nologo** en [MIDL command-line reference](https://docs.microsoft.com/windows/desktop/Midl/midl-command-line-reference) (Referencia de la línea de comandos de MIDL).
 

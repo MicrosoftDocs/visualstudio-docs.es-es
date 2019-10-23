@@ -3,17 +3,17 @@ title: 'Archivo XSD de muestra: Esquema de pedido de compra'
 ms.date: 11/04/2016
 ms.topic: sample
 ms.assetid: f92b63b5-ec61-43b5-ae1e-63432a7a7e30
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9bea23307c5d35e997f41e4ec9cbfd41fa41bdee
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: 9a81cae6bc91e480fb619afd647e8285b6efc410
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65455110"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72601806"
 ---
 # <a name="sample-xsd-file-purchase-order-schema"></a>Archivo XSD de muestra: Esquema de pedido de compra
 

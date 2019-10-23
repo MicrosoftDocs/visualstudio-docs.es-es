@@ -2,19 +2,19 @@
 title: Refactorizar código para reemplazar var por un tipo explícito
 ms.date: 05/15/2018
 ms.topic: reference
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 dev_langs:
 - CSharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: 2708bca578b613fac77e9b8ce77b1b2aff8f0945
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 566d064ac0ac1b9c48ee8e75697cef39b2ec4ee1
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62968162"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72661687"
 ---
 # <a name="refactoring-to-replace-var-with-an-explicit-type"></a>Refactorizar código para reemplazar var por un tipo explícito
 
@@ -38,7 +38,7 @@ Aunque debe usarse [var](/dotnet/csharp/language-reference/keywords/var) cuando 
 
 1. Coloque el símbolo de inserción en la palabra clave `var`.
 
-1. Presione **Ctrl**+**.** o haga clic en el icono del destornillador ![icono de destornillador](../media/screwdriver-icon.png) en el margen del archivo de código.
+1. Presione **Ctrl**+ **.** o haga clic en el icono del destornillador ![icono de destornillador](../media/screwdriver-icon.png) en el margen del archivo de código.
 
    ![Usar el menú de acciones rápidas de tipo explícito](media/use-explicit-type.png)
 

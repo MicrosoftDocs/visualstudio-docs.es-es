@@ -7,17 +7,17 @@ helpviewer_keywords:
 - bidirectional language support
 - Arabic, creating applications
 ms.assetid: b56f9795-ed8d-4452-9d49-8ca0b0145d86
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1271e5160920dc79decc9acc98aa1e5e3d936ca5
-ms.sourcegitcommit: 51dad3e11d7580567673e0d426ab3b0a17584319
+ms.openlocfilehash: 4fa91a1f3342039821dc1e0a2ea89c8b0e25f224
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/10/2019
-ms.locfileid: "66824151"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72647369"
 ---
 # <a name="support-for-bidirectional-languages-in-visual-studio"></a>Compatibilidad con idiomas bidireccionales en Visual Studio
 

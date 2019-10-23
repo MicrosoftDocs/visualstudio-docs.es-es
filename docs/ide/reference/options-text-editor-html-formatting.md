@@ -5,21 +5,21 @@ ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.HTML.Format
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 69a8d3f1b84bd59cec9e13bf50eb8eaa46795cdf
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 3d1e5f07a2b68d86051452a16ac0f42fc9b9acf0
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62779024"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72666191"
 ---
 # <a name="options-text-editor-html-web-forms-formatting"></a>Opciones, Editor de texto, HTML (formularios Web Forms), formato
 
-Use la página de opciones **Formato** para establecer las opciones de proyecto HTML para dar formato al código en el Editor de código. Para acceder a esta página, en la barra de menús elija **Herramientas** > **Opciones** y expanda **Editor de texto** > **HTML (formularios Web Forms)** > **Formato**.
+Use la página de opciones **Formato** para establecer las opciones de proyecto HTML para dar formato al código en el Editor de código. Para acceder a esta página, en la barra de menús elija **Herramientas** > **Opciones** y expanda **Editor de texto** > **HTML (formularios Web Forms)**  > **Formato**.
 
 ## <a name="capitalization"></a>Uso de mayúsculas
 
@@ -76,7 +76,7 @@ Estas opciones hacen que el Editor de vistas de código fuente agregue o quite s
 
 - **Insertar automáticamente etiqueta de cierre**
 
-   Cuando se selecciona esta opción, el editor crea automáticamente una etiqueta de cierre (por ejemplo, **\</b>**) cuando se cierra la etiqueta de apertura.
+   Cuando se selecciona esta opción, el editor crea automáticamente una etiqueta de cierre (por ejemplo, **\</b>** ) cuando se cierra la etiqueta de apertura.
 
 ## <a name="tag-wrapping"></a>Ajuste de etiquetas
 

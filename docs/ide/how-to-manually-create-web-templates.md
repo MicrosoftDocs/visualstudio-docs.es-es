@@ -7,15 +7,15 @@ helpviewer_keywords:
 - templates [Visual Studio], Web
 - Web templates [Visual Studio]
 - project templates [Visual Studio], Web
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 9af528cf92d4909bbe5c7d4ac114aa830e96162c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 7d121d9b970d8012aaf177c0a232cd21f6fe85d9
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62946900"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72645830"
 ---
 # <a name="how-to-manually-create-web-templates"></a>Procedimiento para crear plantillas web manualmente
 
@@ -52,7 +52,7 @@ La creación de una plantilla web es diferente de la creación de otros tipos de
      </TemplateData>
      ```
 
-7. Seleccione los archivos de la plantilla (incluido el archivo *vstemplate*), haga clic con el botón derecho en la selección y elija **Enviar a** > **Carpeta comprimida (en zip)**. Los archivos se comprimen en un archivo *.zip*.
+7. Seleccione los archivos de la plantilla (incluido el archivo *vstemplate*), haga clic con el botón derecho en la selección y elija **Enviar a** > **Carpeta comprimida (en zip)** . Los archivos se comprimen en un archivo *.zip*.
 
 8. Coloque el archivo de plantilla *.zip* en el directorio de plantillas de proyecto de Visual Studio. De forma predeterminada, este directorio es *%USERPROFILE%\Documentos\Visual Studio \<versión\>\ProjectTemplates*.
 

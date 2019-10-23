@@ -3,17 +3,17 @@ title: Propiedades dinámicas de LINQ to XML
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 0455f47c-4a68-4f2e-a3f8-dd1d85b99012
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 181e9e4fb86a0348c0b5adb1d26a0a4e4e1721bb
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 5993639a1bd6db1b814615bc75c1a57b64212185
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62893216"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72635263"
 ---
 # <a name="linq-to-xml-dynamic-properties"></a>Propiedades dinámicas de LINQ to XML
 

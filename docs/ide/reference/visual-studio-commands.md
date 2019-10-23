@@ -7,19 +7,19 @@ helpviewer_keywords:
 - commands, Visual Studio
 - command syntax
 ms.assetid: 76ffa394-ee89-4629-aba9-1a62b72e6cc1
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 294ca45123faf1625b6f09a638ddc089a31d85cc
-ms.sourcegitcommit: 9753c7544cec852ca5efd0834e0956d9e53a5734
+ms.openlocfilehash: 3af3685288c00e27bb63cd45c682ab8b6354f4e5
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "67043586"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72622117"
 ---
-# <a name="visual-studio-commands"></a>Comandos de Visual Studio
+# <a name="visual-studio-commands"></a>comandos de Visual Studio
 
 Puede escribir comandos de Visual Studio en la ventana **Comando**, la ventana **Inmediato** o el cuadro **Buscar/Comando**. En todos los casos, el signo mayor que (`>`) indica que se debe seguir un comando en lugar de una operación de búsqueda o de depuración.
 

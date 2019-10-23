@@ -6,17 +6,17 @@ helpviewer_keywords:
 - Assert classes
 - Assert methods
 - unit tests, Assert classes
-ms.author: gewarren
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-author: gewarren
-ms.openlocfilehash: d145734dc89faafcedbca6730f0a90da174376c4
-ms.sourcegitcommit: 51dad3e11d7580567673e0d426ab3b0a17584319
+author: jillre
+ms.openlocfilehash: 41be3aaa4967e4c5f975b43f7d8fec982f04c9b9
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/10/2019
-ms.locfileid: "66820313"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72659722"
 ---
 # <a name="use-assert-classes-for-unit-testing"></a>Utilice las clases Assert para realizar pruebas unitarias
 

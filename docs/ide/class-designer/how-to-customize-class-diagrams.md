@@ -8,17 +8,17 @@ helpviewer_keywords:
 - type shapes, removing from class diagrams
 - class diagrams, removing type shapes
 ms.assetid: e9030aea-c77d-4cc1-b8f6-b6ca469b692d
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c23e24c9e087ff8ca64f90db1714ca2569bf02c0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: eb2901d756e332a719fc56732a951257760ca03f
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62975221"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72647798"
 ---
 # <a name="how-to-customize-class-diagrams"></a>Procedimiento Personalizar diagramas de clases
 

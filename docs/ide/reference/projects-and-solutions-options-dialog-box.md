@@ -8,17 +8,17 @@ helpviewer_keywords:
 - Projects and Solutions Options dialog box
 - Options dialog box, Projects and Solutions
 ms.assetid: 2801f24e-a138-488a-ae3c-e1f99a678ac0
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 31d829a668a2c9690333315c30904623187fe51d
-ms.sourcegitcommit: f42b5318c5c93e2b5ecff44f408fab8bcdfb193d
+ms.openlocfilehash: 783cdf5cef127a39958f14a2dc5ece9a45fcee62
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2019
-ms.locfileid: "69976734"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72655719"
 ---
 # <a name="options-dialog-box-projects-and-solutions--general"></a>Cuadro de diálogo Opciones: Proyectos y soluciones \> General
 

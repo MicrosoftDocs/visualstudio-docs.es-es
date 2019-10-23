@@ -6,15 +6,15 @@ helpviewer_keywords:
 - Web performance tests, using the API
 - APIs, Web performance tests
 ms.assetid: 93a6a1dd-663b-4ab5-8760-7d6b081561d3
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: ab103b11659ee1e73537f6f41ff1fe0e6ed32076
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d22c1962727d22af965c879de3ae5fea6d4e54af
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62978567"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72653298"
 ---
 # <a name="how-to-use-the-web-performance-test-api"></a>Procedimiento para usar la API de prueba de rendimiento web
 

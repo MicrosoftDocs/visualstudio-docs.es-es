@@ -7,17 +7,17 @@ helpviewer_keywords:
 - snippets [Visual Studio], functions
 - IntelliSense code snippets, functions
 ms.assetid: c0a2bf21-8fa5-4457-9281-f599beb53e7d
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 60453b6842dd321b7c85c2837e12b1208adb18f9
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 85124837e378ea4377de0ca08c5a8680034240c2
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62974974"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72647540"
 ---
 # <a name="code-snippet-functions"></a>Funciones de los fragmentos de código
 
@@ -27,7 +27,7 @@ Hay tres funciones disponibles para utilizar con fragmentos de código de C#. La
 
 En la tabla siguiente se describen las funciones que puede utilizar con el elemento `Function` en fragmentos de código.
 
-|Función|Descripción|Lenguaje|
+|Función|DESCRIPCIÓN|Lenguaje|
 |--------------|-----------------|--------------|
 |`GenerateSwitchCases(EnumerationLiteral)`|Genera una instrucción switch y un conjunto de instrucciones case para los miembros de la enumeración especificada por el parámetro `EnumerationLiteral`. El parámetro `EnumerationLiteral` debe ser una referencia a un literal de enumeración o un tipo de enumeración.|C#|
 |`ClassName()`|Devuelve el nombre de la clase que contiene el fragmento de código insertado.|C#|

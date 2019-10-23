@@ -6,17 +6,17 @@ helpviewer_keywords:
 - editor options
 - configure editor
 - editor settings
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 750af5101dfdf9d040457873be9d40d4a9da55e1
-ms.sourcegitcommit: 7eb2fb21805d92f085126f3a820ac274f2216b4e
+ms.openlocfilehash: 3aa197a855b2a4f0c33520c6b8c1a01311ab6b72
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/22/2019
-ms.locfileid: "67328980"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72645288"
 ---
 # <a name="set-language-specific-editor-options"></a>Establecer opciones del editor específicas del lenguaje
 

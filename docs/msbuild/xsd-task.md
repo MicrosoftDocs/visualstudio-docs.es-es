@@ -12,20 +12,20 @@ dev_langs:
 - C++
 - jsharp
 helpviewer_keywords:
-- XSD task (MSBuild (Visual C++))
-- MSBuild (Visual C++), XSD task
+- XSD task (MSBuild (C++))
+- MSBuild (C++), XSD task
 ms.assetid: 15c99f5c-7124-4bbc-bc03-70c7bcce8893
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f6e96325edd3a17a09437e093590cc02a55504a5
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: ec51406aec9aec8981e5517480e4cd07bc80ffb1
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67825829"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72748013"
 ---
 # <a name="xsd-task"></a>XSD (tarea)
 Encapsula la herramienta de definición de esquema XML (*xsd.exe*), que genera archivos de esquema o clase desde un origen.

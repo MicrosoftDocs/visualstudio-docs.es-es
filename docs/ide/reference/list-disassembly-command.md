@@ -8,17 +8,17 @@ helpviewer_keywords:
 - Debug.ListDisassembly command
 - list disassembly command
 ms.assetid: eb363e35-e86a-4121-966f-991210c27e2a
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6dc4bddefe0240a8e53babeec1fdce4f83ce5ef1
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: aaeab2e65088b8f1bfce3a6a12f8cd66c3245b75
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68926222"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72747925"
 ---
 # <a name="list-disassembly-command"></a>Mostrar desensamblador (Comando)
 Inicia el proceso de depuración y le permite especificar cómo se deben tratar los errores.
@@ -64,7 +64,7 @@ Opcional. Permite la visualización de los números de línea asociados con el c
 >Debug.ListDisassembly
 ```
 
-## <a name="see-also"></a>Otras referencias
+## <a name="see-also"></a>Vea también
 
 - [Mostrar pila de llamadas (Comando)](../../ide/reference/list-call-stack-command.md)
 - [Mostrar subprocesos (Comando)](../../ide/reference/list-threads-command.md)

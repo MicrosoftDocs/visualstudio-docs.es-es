@@ -3,8 +3,8 @@ title: Conversión del método Get en propiedad y de propiedad en el método Get
 ms.date: 01/26/2018
 ms.topic: reference
 ms.devlang: csharp
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 f1_keywords:
 - vs.csharp.refactoring.convertmethodtoproperty
@@ -12,12 +12,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: 87fc623f781c54267fa70da7c5d2a341823e35ae
-ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.openlocfilehash: ac33db013a8cea11b373e4104bf2d58a1b22cef4
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "66263098"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72654523"
 ---
 # <a name="convert-get-method-to-property--convert-property-to-get-method-refactorings"></a>Refactorizaciones de conversión del método Get en propiedad y de propiedad en método Get
 

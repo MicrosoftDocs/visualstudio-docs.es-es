@@ -9,17 +9,17 @@ helpviewer_keywords:
 - types [Visual Studio], base
 - types [Visual Studio], derived
 ms.assetid: ea3f0ada-f53b-4fb1-9fb5-908286f5ec3e
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8d1a15765bff6d391afc7395be03172bf5d5fc32
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 9fd6d2ce365399550b5455ff8bf909e9cc56187b
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62975104"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72647685"
 ---
 # <a name="how-to-view-inheritance-between-types-in-class-designer"></a>Procedimiento Ver la herencia entre tipos en el Diseñador de clases
 

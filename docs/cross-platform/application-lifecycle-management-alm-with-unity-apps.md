@@ -9,12 +9,12 @@ ms.author: crdun
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: d52e02947a9148463396260afd3e389fa1d248ee
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 8d6cbdee57d2f1edf7d696ad9a4053ddcb08bce3
+ms.sourcegitcommit: 57bc1c3887838d707c13feff72a677b3bad3be4b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62824710"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72777733"
 ---
 # <a name="devops-with-unity-apps"></a>DevOps con aplicaciones de Unity
 
@@ -67,11 +67,11 @@ Comentario general: Aunque estas características de diseño son independientes 
 
 Consideraciones especiales para el control de versiones con Unity:
 
-1. Unity hace un seguimiento de los metadatos sobre los activos de juego en una única biblioteca opaca que está oculta de forma predeterminada. Para mantener sincronizados los archivos y metadatos, es necesario hacer visibles los metadatos y almacenarlos en fragmentos más fáciles de manejar. Para más detalles, vea [Using External Version Control Systems with Unity](http://docs.unity3d.com/Manual/ExternalVersionControlSystemSupport.html) (Uso de sistemas externos de control de versiones con Unity, documentación de Unity).
+1. Unity hace un seguimiento de los metadatos sobre los activos de juego en una única biblioteca opaca que está oculta de forma predeterminada. Para mantener sincronizados los archivos y metadatos, es necesario hacer visibles los metadatos y almacenarlos en fragmentos más fáciles de manejar. Para más detalles, vea [Using External Version Control Systems with Unity](https://docs.unity3d.com/Manual/ExternalVersionControlSystemSupport.html) (Uso de sistemas externos de control de versiones con Unity, documentación de Unity).
 
-2. No todos los archivos y carpetas de un proyecto de Unity son adecuados para el control de código fuente, tal y como se describe también en el tema anterior. Deben agregarse las carpetas Assets y ProjectSettings, pero no las carpetas Library y Temp. Para obtener una lista adicional de archivos generados que no sean adecuados para el control de código fuente, vea la explicación sobre [cómo usar Git para el control de código fuente en Unity3D](http://stackoverflow.com/questions/18225126/how-to-use-git-for-unity3d-source-control) de StackOverflow. Muchos desarrolladores también han escrito sobre este tema de forma independiente.
+2. No todos los archivos y carpetas de un proyecto de Unity son adecuados para el control de código fuente, tal y como se describe también en el tema anterior. Deben agregarse las carpetas Assets y ProjectSettings, pero no las carpetas Library y Temp. Para obtener una lista adicional de archivos generados que no sean adecuados para el control de código fuente, vea la explicación sobre [cómo usar Git para el control de código fuente en Unity3D](https://stackoverflow.com/questions/18225126/how-to-use-git-for-unity3d-source-control) de StackOverflow. Muchos desarrolladores también han escrito sobre este tema de forma independiente.
 
-3. Los activos binarios de un proyecto de Unity, como las texturas o los archivos de audio, pueden ocupar una gran cantidad de almacenamiento. Varios sistemas de control de código fuente como Git almacenan una única copia de un archivo por cada cambio realizado, incluso si el cambio afecta solo a una pequeña parte del archivo. Esto puede hacer que el repositorio Git se infle. Para solucionar este problema, los desarrolladores de Unity a menudo optan por agregar solo los activos finales al repositorio y usar varios métodos para mantener un historial de trabajo de sus activos, como OneDrive, DropBox o git-annex. Este enfoque funciona porque normalmente no es necesario crear versiones de dichos activos conforme se realizan cambios en el código fuente. Los desarrolladores también suelen establecer el modo de serialización de activos del editor del proyecto en Forzar texto para almacenar archivos de escenas como texto en lugar de hacerlo en formato binario, lo que permite hacer combinaciones en el control de código fuente. Para más detalles, vea [Editor Settings](http://docs.unity3d.com/Manual/class-EditorManager.html) (Configuración del editor, documentación de Unity).
+3. Los activos binarios de un proyecto de Unity, como las texturas o los archivos de audio, pueden ocupar una gran cantidad de almacenamiento. Varios sistemas de control de código fuente como Git almacenan una única copia de un archivo por cada cambio realizado, incluso si el cambio afecta solo a una pequeña parte del archivo. Esto puede hacer que el repositorio Git se infle. Para solucionar este problema, los desarrolladores de Unity a menudo optan por agregar solo los activos finales al repositorio y usar varios métodos para mantener un historial de trabajo de sus activos, como OneDrive, DropBox o git-annex. Este enfoque funciona porque normalmente no es necesario crear versiones de dichos activos conforme se realizan cambios en el código fuente. Los desarrolladores también suelen establecer el modo de serialización de activos del editor del proyecto en Forzar texto para almacenar archivos de escenas como texto en lugar de hacerlo en formato binario, lo que permite hacer combinaciones en el control de código fuente. Para más detalles, vea [Editor Settings](https://docs.unity3d.com/Manual/class-EditorManager.html) (Configuración del editor, documentación de Unity).
 
 ## <a name="build"></a>Compilar
 
@@ -79,7 +79,7 @@ Vínculo de referencia: **[Azure Pipelines](/azure/devops/pipelines/index?view=v
 
 |Característica|Compatible con Unity|Comentarios adicionales|
 |-------------|--------------------------|-------------------------|
-|Team Foundation Server (TFS) local|Posibilidad|Los proyectos de Unity se compilan a través del entorno de Unity y no a través del sistema de compilación de Visual Studio (la compilación de Visual Studio Tools para Unity compilará los scripts, pero no generará un archivo ejecutable). Es posible [compilar proyectos de Unity desde la línea de comandos](http://docs.unity3d.com/Manual/CommandLineArguments.html) (documentación de Unity), por lo que se puede configurar un proceso de MSBuild en un servidor TFS para ejecutar los comandos de Unity correspondientes siempre que Unity esté instalado en el equipo.<br /><br /> Unity también ofrece [Unity Cloud Build (Compilación en la nube de Unity)](https://build.cloud.unity3d.com/landing/), que supervisa un repositorio Git o SVN, y ejecuta compilaciones de forma periódica. Actualmente, no funciona con TFVC ni Azure DevOps Services.|
+|Team Foundation Server (TFS) local|Posibilidad|Los proyectos de Unity se compilan a través del entorno de Unity y no a través del sistema de compilación de Visual Studio (la compilación de Visual Studio Tools para Unity compilará los scripts, pero no generará un archivo ejecutable). Es posible [compilar proyectos de Unity desde la línea de comandos](https://docs.unity3d.com/Manual/CommandLineArguments.html) (documentación de Unity), por lo que se puede configurar un proceso de MSBuild en un servidor TFS para ejecutar los comandos de Unity correspondientes siempre que Unity esté instalado en el equipo.<br /><br /> Unity también ofrece [Unity Cloud Build (Compilación en la nube de Unity)](https://build.cloud.unity3d.com/landing/), que supervisa un repositorio Git o SVN, y ejecuta compilaciones de forma periódica. Actualmente, no funciona con TFVC ni Azure DevOps Services.|
 |Servidor de compilación local vinculado a Azure DevOps Services|Posibilidad|En las mismas condiciones anteriores, también es posible dirigir compilaciones desencadenadas a través de Azure DevOps Services para usar un equipo TFS local. Vea [Build and release agents](/azure/devops/pipelines/agents/agents?view=vsts) (Agentes de compilación y versiones) para obtener instrucciones.|
 |Servicio de controlador hospedado de Azure DevOps Services|No|Actualmente no se admiten las compilaciones de Unity.|
 |Compilar definiciones con scripts anteriores y posteriores|Sí|También se puede configurar una definición de compilación personalizada que use la línea de comandos de Unity para ejecutar una compilación en el caso de los scripts previos y posteriores a la compilación.|
@@ -105,7 +105,7 @@ Vínculo de referencia: **[Mejorar la calidad del código](../test/improve-code-
 |[Analizar la calidad del código administrado](../code-quality/code-analysis-for-managed-code-overview.md)|Sí|Se puede analizar el código de script de C# en Visual Studio.|
 |[Buscar código duplicado mediante la detección de clones de código](https://msdn.microsoft.com/library/hh205279.aspx)|Sí|Se puede analizar el código de script de C# en Visual Studio.|
 |[Medir la complejidad y el mantenimiento del código administrado](../code-quality/code-metrics-values.md)|Sí|Se puede analizar el código de script de C# en Visual Studio.|
-|[Explorador de rendimiento](../profiling/performance-explorer.md)|No|Use el [generador de perfiles de Unity](http://docs.unity3d.com/Manual/Profiler.html) (sitio web de Unity).|
+|[Explorador de rendimiento](../profiling/performance-explorer.md)|No|Use el [generador de perfiles de Unity](https://docs.unity3d.com/Manual/Profiler.html) (sitio web de Unity).|
 |[Analizar problemas de memoria de .NET Framework](https://msdn.microsoft.com/library/dn342825.aspx)|No|Las herramientas de Visual Studio no tienen enlaces al marco de trabajo de Mono (usado por Unity) para la generación de perfiles. Use el [generador de perfiles de Unity](http://docs.unity3d.com/Manual/Profiler.html) (documentación de Unity).|
 
 ## <a name="release-management"></a>Administración de versiones

@@ -5,15 +5,15 @@ ms.topic: conceptual
 helpviewer_keywords:
 - Web performance tests, recorder plug-in
 ms.assetid: 6fe13be1-aeb5-4927-9bff-35950e194da9
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: e49fbb3411aee98fce5899c522b9743b3f2afa33
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c8c1c2d5dd2b3ec656a774c10f8bb50ca556a39f
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62950259"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72653635"
 ---
 # <a name="how-to-create-a-recorder-plug-in"></a>Procedimiento Crear un complemento de grabadora
 
@@ -71,7 +71,7 @@ En los procedimientos siguientes se describe cómo crear el código rudimentario
 
 8. Agregue más código según lo que desee que el complemento de grabadora ejecute después de que se produzca la grabación web. Por ejemplo, puede agregar código para administrar la correlación personalizada como se muestra en el ejemplo siguiente. También puede crear un complemento de grabadora para tareas como convertir comentarios en transacciones o agregar reglas de validación a la prueba de rendimiento web.
 
-9. En el menú **Compilar**, elija **Compilar \<nombre de proyecto de biblioteca de clases>**.
+9. En el menú **Compilar**, elija **Compilar \<nombre de proyecto de biblioteca de clases>** .
 
 Después, implemente el complemento de grabadora para que se registre con Visual Studio.
 
@@ -101,7 +101,7 @@ Después de compilar el complemento de grabadora, coloque el archivo DLL resulta
     >
     > **Error en la solicitud: Excepción en el evento \<complemento>: no se pudo cargar el archivo o ensamblado "\<archivo "nombre_de_complemento".dll>, Version=\<n.n.n.n>, Culture=neutral, PublicKeyToken=null" o una de sus dependencias. El sistema no puede encontrar el archivo especificado.**
     >
-    > Esto ocurre si realiza cambios en el código de cualquier complemento y crea una nueva versión de DLL **(Version=0.0.0.0)**, pero el complemento sigue haciendo referencia a la versión original del complemento. Para corregir este problema, siga estos pasos:
+    > Esto ocurre si realiza cambios en el código de cualquier complemento y crea una nueva versión de DLL **(Version=0.0.0.0)** , pero el complemento sigue haciendo referencia a la versión original del complemento. Para corregir este problema, siga estos pasos:
     >
     > 1. En el proyecto de prueba de carga y rendimiento web, aparecerá una advertencia en las referencias. Quite y vuelva a agregar la referencia al archivo DLL del complemento.
     > 2. Quite el complemento de la prueba o de la ubicación apropiada y, a continuación, agréguelo de nuevo.

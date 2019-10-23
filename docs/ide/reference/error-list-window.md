@@ -10,17 +10,17 @@ helpviewer_keywords:
 - Error List window
 - errors [Visual Studio], Error List window
 ms.assetid: b7f6d45a-733b-4ad8-bc2f-737a37509e56
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 603faab80e185e7d22cba1ee544502d790afcdc0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d0921d89caa6428c45dc2522e78f58bde50f84be
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62790868"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72654449"
 ---
 # <a name="error-list-window"></a>Lista de errores (ventana)
 
@@ -41,7 +41,7 @@ La ventana **Lista de errores** permite realizar las siguientes tareas:
 
 - Buscar términos específicos y delimitar la búsqueda solo al proyecto o documento actual.
 
-Para mostrar la **Lista de errores**, elija **Ver** > **Lista de errores** o bien presione **Ctrl**+**\\**+**E**.
+Para mostrar la **Lista de errores**, elija **Ver** > **Lista de errores** o bien presione **Ctrl**+ **\\** +**E**.
 
 Puede seleccionar las pestañas **Errores**, **Advertencias** y **Mensajes** para ver diferentes niveles de información.
 
@@ -78,13 +78,13 @@ Puede copiar la lista de errores y guardarla en un archivo. Seleccione los error
 
 Gravedad
 
-Muestra los diferentes tipos de entrada de la **Lista de errores** (**Error**, **Mensaje**, **Advertencia**, **Advertencia (activa)** y **Advertencia (inactiva)**.
+Muestra los diferentes tipos de entrada de la **Lista de errores** (**Error**, **Mensaje**, **Advertencia**, **Advertencia (activa)** y **Advertencia (inactiva)** .
 
 Código
 
 Muestra el código del error.
 
-Descripción
+DESCRIPCIÓN
 
 Muestra el texto de la entrada.
 

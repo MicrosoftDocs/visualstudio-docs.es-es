@@ -8,15 +8,15 @@ helpviewer_keywords:
 - load tests, adding browsers
 - load tests, removing browsers
 ms.assetid: 47f981d9-3038-45cc-a486-82b9daf9a9a1
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 6694b850c7fee73e4b0891d37891e44a85f142f2
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: b3f80da91181e4cb555d0ce96a5b4d2fb797eb0d
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68918253"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72664985"
 ---
 # <a name="edit-the-test-mix-to-specify-which-web-browsers-types-in-a-load-test-scenario"></a>Edición de la combinación de pruebas para especificar tipos de exploradores web en un escenario de prueba de carga
 

@@ -2,20 +2,20 @@
 title: Uso de código auxiliar para aislar partes de la aplicación para pruebas
 ms.date: 11/04/2016
 ms.topic: conceptual
-ms.author: gewarren
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-author: gewarren
+author: jillre
 dev_langs:
 - CSharp
 - VB
-ms.openlocfilehash: b88905df0c99eb66c64e529610d6713801fceece
-ms.sourcegitcommit: 25570fb5fb197318a96d45160eaf7def60d49b2b
+ms.openlocfilehash: cbb47e07bbe3697f905a28d9771cf55fe6fcc74c
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/30/2019
-ms.locfileid: "66401712"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72659738"
 ---
 # <a name="use-stubs-to-isolate-parts-of-your-application-from-each-other-for-unit-testing"></a>Usar código auxiliar para aislar partes de la aplicación entre sí para las pruebas unitarias
 
@@ -338,7 +338,7 @@ stub.ValueSet = (value) => i = value;
 
 Si no proporciona métodos de código auxiliar para el establecedor o captador de una propiedad, Fakes genera código auxiliar que almacena valores, de modo que la propiedad de código auxiliar funcione como una variable simple.
 
-### <a name="events"></a>Eventos
+### <a name="events"></a>Events
 
 Los eventos se exponen como campos de delegado. Como resultado, cualquier evento procesado con stub se puede generar simplemente mediante una invocación al campo de respaldo de eventos. Veamos la interfaz siguiente que se procesa con stub:
 

@@ -10,12 +10,12 @@ ms.author: johmil
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: fa0884f024c51c76c6ed5e5d748c65e767b70d9d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d04f197b9114f87c0ebdfa54088d41a958d4584a
+ms.sourcegitcommit: 57bc1c3887838d707c13feff72a677b3bad3be4b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62815527"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72777694"
 ---
 # <a name="visual-studio-tools-for-unity"></a>Visual Studio Tools para Unity
 

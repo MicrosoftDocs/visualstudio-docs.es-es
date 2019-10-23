@@ -2,17 +2,17 @@
 title: Procedimiento para compilar y ejecutar el ejemplo LinqToXmlDataBinding
 ms.date: 11/04/2016
 ms.topic: conceptual
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d53f8d08222eb35660f7a4454164d6b821a976d9
-ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
+ms.openlocfilehash: 3b3999ae6fb602c9877bc3f997ab922bda08565b
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "66714832"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72636876"
 ---
 # <a name="how-to-build-and-run-the-linqtoxmldatabinding-example"></a>Procedimiento Compilar y ejecutar el ejemplo LinqToXmlDataBinding
 

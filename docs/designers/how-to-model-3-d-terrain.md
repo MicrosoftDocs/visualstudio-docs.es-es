@@ -3,17 +3,17 @@ title: Procedimiento Modelar un terreno en 3D
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: f779b1fd-82a9-4a11-8ab7-c1c9caabc883
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 41974aee19cf1e4919028d5ef0f0e9b53c6b369e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 82ee7791c8356f13ebfdce5ad5bd3ba8be0674d4
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62844464"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72635423"
 ---
 # <a name="how-to-model-3d-terrain"></a>Procedimiento Modelar un terreno en 3D
 

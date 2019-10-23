@@ -7,18 +7,18 @@ dev_langs:
 - VB
 helpviewer_keywords:
 - formatting conventions [EditorConfig]
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: ccebfc38d5170920fe3f3c37ee77aabaf660a3b8
-ms.sourcegitcommit: 8562a337cc9f674c756a4a0b2c7e288ebd61b51e
+ms.openlocfilehash: 42f1ab99a82f402ef6eced09ad5e47cf54122b86
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/19/2019
-ms.locfileid: "68345666"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72652797"
 ---
 # <a name="formatting-conventions"></a>Convenciones de formato
 
@@ -57,7 +57,7 @@ dotnet_sort_system_directives_first = true
 dotnet_separate_import_directive_groups = true
 ```
 
-#### <a name="dotnetsortsystemdirectivesfirst"></a>dotnet\_sort\_system\_directives_first
+#### <a name="dotnet_sort_system_directives_first"></a>dotnet\_sort\_system\_directives_first
 
 |||
 |-|-|
@@ -81,7 +81,7 @@ using Octokit;
 using System.Threading.Tasks;
 ```
 
-#### <a name="dotnetseparateimportdirectivegroups"></a>dotnet\_separate\_import\_directive\_groups
+#### <a name="dotnet_separate_import_directive_groups"></a>dotnet\_separate\_import\_directive\_groups
 
 |||
 |-|-|
@@ -170,7 +170,7 @@ csharp_new_line_before_members_in_anonymous_types = true
 csharp_new_line_between_query_expression_clauses = true
 ```
 
-#### <a name="csharpnewlinebeforeopenbrace"></a>csharp\_new\_line\_before\_open_brace
+#### <a name="csharp_new_line_before_open_brace"></a>csharp\_new\_line\_before\_open_brace
 
 Esta regla se refiere a si se debe colocar una llave de apertura `{` en la misma línea que el código anterior, o en una línea nueva. Para esta regla, se especifica **all**, **none** o uno o varios elementos de código como **methods** o **properties** para definir cuándo se debe aplicar esta regla. Para especificar varios elementos de código, sepárelos con una coma (,).
 
@@ -202,7 +202,7 @@ void MyMethod() {
 }
 ```
 
-#### <a name="csharpnewlinebeforeelse"></a>csharp\_new\_line\_before_else
+#### <a name="csharp_new_line_before_else"></a>csharp\_new\_line\_before_else
 
 |||
 |-|-|
@@ -231,7 +231,7 @@ if (...) {
 }
 ```
 
-#### <a name="csharpnewlinebeforecatch"></a>csharp\_new\_line\_before_catch
+#### <a name="csharp_new_line_before_catch"></a>csharp\_new\_line\_before_catch
 
 |||
 |-|-|
@@ -260,7 +260,7 @@ try {
 }
 ```
 
-#### <a name="csharpnewlinebeforefinally"></a>csharp\_new\_line\_before_finally
+#### <a name="csharp_new_line_before_finally"></a>csharp\_new\_line\_before_finally
 
 |||
 |-|-|
@@ -294,7 +294,7 @@ try {
 }
 ```
 
-#### <a name="csharpnewlinebeforemembersinobjectinitializers"></a>csharp\_new\_line\_before\_members\_in\_object_initializers
+#### <a name="csharp_new_line_before_members_in_object_initializers"></a>csharp\_new\_line\_before\_members\_in\_object_initializers
 
 |||
 |-|-|
@@ -321,7 +321,7 @@ var z = new B()
 }
 ```
 
-#### <a name="csharpnewlinebeforemembersinanonymoustypes"></a>csharp\_new\_line\_before\_members\_in\_anonymous_types
+#### <a name="csharp_new_line_before_members_in_anonymous_types"></a>csharp\_new\_line\_before\_members\_in\_anonymous_types
 
 |||
 |-|-|
@@ -348,7 +348,7 @@ var z = new
 }
 ```
 
-#### <a name="csharpnewlinebetweenqueryexpressionclauses"></a>csharp_new_line_between_query_expression_clauses
+#### <a name="csharp_new_line_between_query_expression_clauses"></a>csharp_new_line_between_query_expression_clauses
 
 |||
 |-|-|
@@ -388,7 +388,7 @@ csharp_indent_braces = false
 csharp_indent_case_contents_when_block = true
 ```
 
-#### <a name="csharpindentcasecontents"></a>csharp\_indent\_case_contents
+#### <a name="csharp_indent_case_contents"></a>csharp\_indent\_case_contents
 
 |||
 |-|-|
@@ -431,7 +431,7 @@ switch(c) {
 }
 ```
 
-#### <a name="csharpindentswitchlabels"></a>csharp\_indent\_switch_labels
+#### <a name="csharp_indent_switch_labels"></a>csharp\_indent\_switch_labels
 
 |||
 |-|-|
@@ -471,7 +471,7 @@ default:
 }
 ```
 
-#### <a name="csharpindentlabels"></a>csharp\_indent_labels
+#### <a name="csharp_indent_labels"></a>csharp\_indent_labels
 
 |||
 |-|-|
@@ -524,7 +524,7 @@ class C
 }
 ```
 
-#### <a name="csharpindentblockcontents"></a>csharp_indent_block_contents
+#### <a name="csharp_indent_block_contents"></a>csharp_indent_block_contents
 
 |||
 |-|-|
@@ -549,7 +549,7 @@ Console.WriteLine("Hello");
 }
 ```
 
-#### <a name="csharpindentbraces"></a>csharp_indent_braces
+#### <a name="csharp_indent_braces"></a>csharp_indent_braces
 
 |||
 |-|-|
@@ -574,7 +574,7 @@ static void Hello()
 }
 ```
 
-#### <a name="csharpindentcasecontentswhenblock"></a>csharp_indent_case_contents_when_block
+#### <a name="csharp_indent_case_contents_when_block"></a>csharp_indent_case_contents_when_block
 
 |||
 |-|-|
@@ -634,7 +634,7 @@ csharp_space_between_empty_square_brackets = false
 csharp_space_between_square_brackets = false
 ```
 
-#### <a name="csharpspaceaftercast"></a>csharp\_space\_after_cast
+#### <a name="csharp_space_after_cast"></a>csharp\_space\_after_cast
 
 |||
 |-|-|
@@ -654,7 +654,7 @@ int y = (int) x;
 int y = (int)x;
 ```
 
-#### <a name="csharpspaceafterkeywordsincontrolflowstatements"></a>csharp_space_after_keywords_in_control_flow_statements
+#### <a name="csharp_space_after_keywords_in_control_flow_statements"></a>csharp_space_after_keywords_in_control_flow_statements
 
 |||
 |-|-|
@@ -674,7 +674,7 @@ for (int i;i<x;i++) { ... }
 for(int i;i<x;i++) { ... }
 ```
 
-#### <a name="csharpspacebetweenparentheses"></a>csharp_space_between_parentheses
+#### <a name="csharp_space_between_parentheses"></a>csharp_space_between_parentheses
 
 |||
 |-|-|
@@ -699,7 +699,7 @@ var z = ( x * y ) - ( ( y - x ) * 3 );
 int y = ( int )x;
 ```
 
-#### <a name="csharpspacebeforecolonininheritanceclause"></a>csharp\_space\_before\_colon\_in\_inheritance_clause
+#### <a name="csharp_space_before_colon_in_inheritance_clause"></a>csharp\_space\_before\_colon\_in\_inheritance_clause
 
 |||
 |-|-|
@@ -735,7 +735,7 @@ class C: I
 }
 ```
 
-#### <a name="csharpspaceaftercolonininheritanceclause"></a>csharp\_space\_after\_colon\_in\_inheritance_clause
+#### <a name="csharp_space_after_colon_in_inheritance_clause"></a>csharp\_space\_after\_colon\_in\_inheritance_clause
 
 |||
 |-|-|
@@ -771,7 +771,7 @@ class C :I
 }
 ```
 
-#### <a name="csharpspacearoundbinaryoperators"></a>csharp\_space\_around\_binary_operators
+#### <a name="csharp_space_around_binary_operators"></a>csharp\_space\_around\_binary_operators
 
 |||
 |-|-|
@@ -796,7 +796,7 @@ return x*(x-y);
 return x  *  (x-y);
 ```
 
-#### <a name="csharpspacebetweenmethoddeclarationparameterlistparentheses"></a>csharp_space_between_method_declaration_parameter_list_parentheses
+#### <a name="csharp_space_between_method_declaration_parameter_list_parentheses"></a>csharp_space_between_method_declaration_parameter_list_parentheses
 
 |||
 |-|-|
@@ -816,7 +816,7 @@ void Bark( int x ) { ... }
 void Bark(int x) { ... }
 ```
 
-#### <a name="csharpspacebetweenmethoddeclarationemptyparameterlistparentheses"></a>csharp_space_between_method_declaration_empty_parameter_list_parentheses
+#### <a name="csharp_space_between_method_declaration_empty_parameter_list_parentheses"></a>csharp_space_between_method_declaration_empty_parameter_list_parentheses
 
 |||
 |-|-|
@@ -852,7 +852,7 @@ void Goo(int x)
 }
 ```
 
-#### <a name="csharpspacebetweenmethoddeclarationnameandopenparenthesis"></a>csharp_space_between_method_declaration_name_and_open_parenthesis
+#### <a name="csharp_space_between_method_declaration_name_and_open_parenthesis"></a>csharp_space_between_method_declaration_name_and_open_parenthesis
 
 |||
 |-|-|
@@ -871,7 +871,7 @@ void M () { }
 void M() { }
 ```
 
-#### <a name="csharpspacebetweenmethodcallparameterlistparentheses"></a>csharp_space_between_method_call_parameter_list_parentheses
+#### <a name="csharp_space_between_method_call_parameter_list_parentheses"></a>csharp_space_between_method_call_parameter_list_parentheses
 
 |||
 |-|-|
@@ -891,7 +891,7 @@ MyMethod( argument );
 MyMethod(argument);
 ```
 
-#### <a name="csharpspacebetweenmethodcallemptyparameterlistparentheses"></a>csharp_space_between_method_call_empty_parameter_list_parentheses
+#### <a name="csharp_space_between_method_call_empty_parameter_list_parentheses"></a>csharp_space_between_method_call_empty_parameter_list_parentheses
 
 |||
 |-|-|
@@ -927,7 +927,7 @@ void Goo(int x)
 }
 ```
 
-#### <a name="csharpspacebetweenmethodcallnameandopeningparenthesis"></a>csharp_space_between_method_call_name_and_opening_parenthesis
+#### <a name="csharp_space_between_method_call_name_and_opening_parenthesis"></a>csharp_space_between_method_call_name_and_opening_parenthesis
 
 |||
 |-|-|
@@ -963,7 +963,7 @@ void Goo(int x)
 }
 ```
 
-#### <a name="csharpspaceaftercomma"></a>csharp_space_after_comma
+#### <a name="csharp_space_after_comma"></a>csharp_space_after_comma
 
 |||
 |-|-|
@@ -982,7 +982,7 @@ int[] x = new int[] { 1, 2, 3, 4, 5 };
 int[] x = new int[] { 1,2,3,4,5 }
 ```
 
-#### <a name="csharpspacebeforecomma"></a>csharp_space_before_comma
+#### <a name="csharp_space_before_comma"></a>csharp_space_before_comma
 
 |||
 |-|-|
@@ -1001,7 +1001,7 @@ int[] x = new int[] { 1 , 2 , 3 , 4 , 5 };
 int[] x = new int[] { 1, 2, 3, 4, 5 };
 ```
 
-#### <a name="csharpspaceafterdot"></a>csharp_space_after_dot
+#### <a name="csharp_space_after_dot"></a>csharp_space_after_dot
 
 |||
 |-|-|
@@ -1020,7 +1020,7 @@ this. Goo();
 this.Goo();
 ```
 
-#### <a name="csharpspacebeforedot"></a>csharp_space_before_dot
+#### <a name="csharp_space_before_dot"></a>csharp_space_before_dot
 
 |||
 |-|-|
@@ -1039,7 +1039,7 @@ this .Goo();
 this.Goo();
 ```
 
-#### <a name="csharpspaceaftersemicoloninforstatement"></a>csharp_space_after_semicolon_in_for_statement
+#### <a name="csharp_space_after_semicolon_in_for_statement"></a>csharp_space_after_semicolon_in_for_statement
 
 |||
 |-|-|
@@ -1058,7 +1058,7 @@ for (int i = 0; i < x.Length; i++)
 for (int i = 0;i < x.Length;i++)
 ```
 
-##### <a name="csharpspacebeforesemicoloninforstatement"></a>csharp_space_before_semicolon_in_for_statement
+##### <a name="csharp_space_before_semicolon_in_for_statement"></a>csharp_space_before_semicolon_in_for_statement
 
 |||
 |-|-|
@@ -1077,7 +1077,7 @@ for (int i = 0 ; i < x.Length ; i++)
 for (int i = 0; i < x.Length; i++)
 ```
 
-#### <a name="csharpspacearounddeclarationstatements"></a>csharp_space_around_declaration_statements
+#### <a name="csharp_space_around_declaration_statements"></a>csharp_space_around_declaration_statements
 
 |||
 |-|-|
@@ -1096,7 +1096,7 @@ int    x    =    0   ;
 int x = 0;
 ```
 
-#### <a name="csharpspacebeforeopensquarebrackets"></a>csharp_space_before_open_square_brackets
+#### <a name="csharp_space_before_open_square_brackets"></a>csharp_space_before_open_square_brackets
 
 |||
 |-|-|
@@ -1115,7 +1115,7 @@ int [] numbers = new int [] { 1, 2, 3, 4, 5 };
 int[] numbers = new int[] { 1, 2, 3, 4, 5 };
 ```
 
-#### <a name="csharpspacebetweenemptysquarebrackets"></a>csharp_space_between_empty_square_brackets
+#### <a name="csharp_space_between_empty_square_brackets"></a>csharp_space_between_empty_square_brackets
 
 |||
 |-|-|
@@ -1134,7 +1134,7 @@ int[ ] numbers = new int[ ] { 1, 2, 3, 4, 5 };
 int[] numbers = new int[] { 1, 2, 3, 4, 5 };
 ```
 
-#### <a name="csharpspacebetweensquarebrackets"></a>csharp_space_between_square_brackets
+#### <a name="csharp_space_between_square_brackets"></a>csharp_space_between_square_brackets
 
 |||
 |-|-|
@@ -1166,7 +1166,7 @@ csharp_preserve_single_line_statements = true
 csharp_preserve_single_line_blocks = true
 ```
 
-#### <a name="csharppreservesinglelinestatements"></a>csharp_preserve_single_line_statements
+#### <a name="csharp_preserve_single_line_statements"></a>csharp_preserve_single_line_statements
 
 |||
 |-|-|
@@ -1187,7 +1187,7 @@ int i = 0;
 string name = "John";
 ```
 
-#### <a name="csharppreservesinglelineblocks"></a>csharp_preserve_single_line_blocks
+#### <a name="csharp_preserve_single_line_blocks"></a>csharp_preserve_single_line_blocks
 
 |||
 |-|-|

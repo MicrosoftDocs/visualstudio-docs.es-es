@@ -23,17 +23,17 @@ helpviewer_keywords:
 - WPF Designer, XAML formatting
 - XAML view settings, attribute spacing
 ms.assetid: 2a420e58-a408-4e8d-9220-44eeb4f67801
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: 9b124b86b98f86c775165d8fe33164a352d8e20a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 242daf82d405af4b3a1e529633fb82651aa6bdc9
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62969246"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72666626"
 ---
 # <a name="options-text-editor-xaml-miscellaneous"></a>Opciones, editor de texto, XAML y varios
 
@@ -47,7 +47,7 @@ Use esta opción para controlar cuándo se generan automáticamente etiquetas y 
 |-|-|
 |**Etiquetas de cierre**|Especifica si la etiqueta de cierre de un elemento se genera automáticamente cuando se cierra la etiqueta de apertura con el carácter mayor que (>).|
 |**Comillas de atributo**|Especifica si se generan comillas cuando se selecciona un valor de atributo en la lista desplegable de finalización de instrucciones.|
-|**Llaves de cierre para MarkupExtensions**|Especifica si la llave de cierre (**}**) de una extensión de marcado se genera automáticamente cuando se escribe el carácter de llave de apertura (**{**).|
+|**Llaves de cierre para MarkupExtensions**|Especifica si la llave de cierre ( **}** ) de una extensión de marcado se genera automáticamente cuando se escribe el carácter de llave de apertura ( **{** ).|
 |**Comas para separar parámetros de MarkupExtension**|Especifica si se generan comas al escribir más de un parámetro en una extensión de marcado.|
 
 ## <a name="errors-and-warnings"></a>Errores y advertencias

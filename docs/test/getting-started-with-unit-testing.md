@@ -4,17 +4,17 @@ ms.date: 04/01/2019
 ms.topic: conceptual
 helpviewer_keywords:
 - unit testing, create unit test plans
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 30c67bb85a7cf72090ea37680daa12933c44b0cb
-ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
+ms.openlocfilehash: 5ecddad721547fdb5689a26a192cf0580ddb44cb
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68870164"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72664916"
 ---
 # <a name="get-started-with-unit-testing"></a>Introducción a las pruebas unitarias
 

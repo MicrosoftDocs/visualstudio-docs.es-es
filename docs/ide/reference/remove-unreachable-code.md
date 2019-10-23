@@ -2,19 +2,19 @@
 title: Refactorización de retirada de código no accesible
 ms.date: 01/26/2018
 ms.topic: reference
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 dev_langs:
 - CSharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: b1c88fbeb9daf293df868a835247098e2ce999e3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 1e5bdab773cf70963e1d0f485a7779e57084c8a0
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62576033"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72655600"
 ---
 # <a name="remove-unreachable-code-refactoring"></a>Refactorización de retirada de código no accesible
 
@@ -37,7 +37,7 @@ Esta refactorización se aplica a lo siguiente:
 1. A continuación, realice alguno de los siguientes procedimientos:
 
    - **Teclado**
-      - Presione **Ctrl**+**.** para activar el menú **Acciones rápidas y refactorizaciones** y seleccione **Quitar código inaccesible** en el menú emergente de la ventana Vista previa.
+      - Presione **Ctrl**+ **.** para activar el menú **Acciones rápidas y refactorizaciones** y seleccione **Quitar código inaccesible** en el menú emergente de la ventana Vista previa.
    - **Mouse**
       - Haga clic con el botón derecho en el código, seleccione **Acciones rápidas y refactorizaciones** y elija **Quitar código inaccesible** en el menú emergente de la ventana Vista previa.
 

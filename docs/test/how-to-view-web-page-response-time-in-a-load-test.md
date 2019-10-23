@@ -7,15 +7,15 @@ helpviewer_keywords:
 - response times in load tests
 - load test results, response times
 ms.assetid: e61c49f3-3161-45b1-9220-08b5459065a2
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: ed1bd922b390d5b6e90c68b08683e1b9bdb46f32
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 5fbaa3f8f322bc6633e4f5081ba4cae38b581b95
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62821253"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72653294"
 ---
 # <a name="how-to-view-web-page-response-time-in-a-load-test-using-the-load-test-analyzer"></a>Procedimiento para ver el tiempo de respuesta de la página web en una prueba de carga mediante el Analizador de pruebas de carga
 
@@ -43,7 +43,7 @@ Si ejecuta una prueba de rendimiento web en condiciones de carga en una prueba d
 
 3. Los datos de cada página se muestran en la cuadrícula. Normalmente se muestran las columnas siguientes.
 
-   |Encabezado de columna|Descripción|
+   |Encabezado de columna|DESCRIPCIÓN|
    |-|-|
    |**Página**|El nombre de la página web.|
    |**Escenario**|El nombre del escenario. Importante si la prueba de rendimiento web contempla varios escenarios posibles.|

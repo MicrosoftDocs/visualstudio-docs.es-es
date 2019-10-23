@@ -3,17 +3,17 @@ title: Procedimiento Crear un sombreador de gradiente basado en geometría
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 4b204405-ba95-4c5e-bd51-ec033a3ebfb6
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5e138f253a734608140533de8019d2e5fb7577a7
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 3b34d51177e392b46c655c857b7015011818a888
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68924344"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72635639"
 ---
 # <a name="how-to-create-a-geometry-based-gradient-shader"></a>Procedimiento Crear un sombreador de degradado basado en geometría
 

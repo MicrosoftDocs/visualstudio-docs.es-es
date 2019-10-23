@@ -7,23 +7,23 @@ helpviewer_keywords:
 - Log switch [devenv.exe]
 - /Log Devenv switch
 ms.assetid: ae23c4ae-2376-4fe3-b8d2-81d34e61c8ba
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4b2e11cb36176aec94528019cdd19bb5fa86c92b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: bc37f4cd7441fc7945ca1762d16300c18d9ecbfe
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62946809"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72610373"
 ---
 # <a name="log-devenvexe"></a>/Log (devenv.exe)
 
 Registra toda la actividad en el archivo de registro para solucionar problemas. Este archivo aparece después de haber llamado a `devenv /log` por lo menos una vez. De forma predeterminada, el archivo de registro se encuentra aquí:
 
-**%APPDATA%\\Microsoft\\VisualStudio\\**\<Versión\>**\\ActivityLog.xml**
+**%APPDATA%\\Microsoft\\VisualStudio\\** \<Versión\> **\\ActivityLog.xml**
 
 en que \<Versión\> es la versión de Visual Studio. Sin embargo, puede especificar una ruta de acceso y un nombre de archivo distintos.
 

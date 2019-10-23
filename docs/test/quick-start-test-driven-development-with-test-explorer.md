@@ -2,17 +2,17 @@
 title: Tutorial de desarrollo controlado por pruebas
 ms.date: 07/24/2019
 ms.topic: conceptual
-ms.author: gewarren
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-author: gewarren
-ms.openlocfilehash: 17ee82630e75e0b0ea8b4a069249c2dccad9010e
-ms.sourcegitcommit: 9fc8b144d4ed1c46aba87c0b7e1d24454e0eea9d
+author: jillre
+ms.openlocfilehash: d62989ffe5444f94cf3b062cde16399c08322b16
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "68493144"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72646669"
 ---
 # <a name="walkthrough-test-driven-development-using-test-explorer"></a>Tutorial: Desarrollo controlado por pruebas con el Explorador de pruebas
 
@@ -28,7 +28,7 @@ En este tutorial se muestra cómo desarrollar un método probado en C# con el ma
 
    ![Nuevo código y proyectos de prueba](../test/media/test-driven-development-ide.png)
 
-3. Escriba un método de prueba simple que compruebe el resultado obtenido para una entrada específica. Agregue el siguiente código a la clase `UnitTest1`:
+3. Escriba un método de prueba simple que compruebe el resultado obtenido para una entrada específica. Agregue el código siguiente a la clase `UnitTest1`:
 
    ```csharp
    [TestMethod]

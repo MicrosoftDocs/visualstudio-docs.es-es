@@ -3,17 +3,17 @@ title: Trabajar con texturas e imágenes
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: b9fbc8fa-66d1-4055-8460-24d8b8fbe43e
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5642a2e84766758b5fdf50bc652fd32b585427bf
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d59b7c2c52cc0fe230a6e9c5c7c89db56d065aff
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62843981"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72633702"
 ---
 # <a name="work-with-textures-and-images"></a>Trabajar con texturas e imágenes
 
@@ -50,7 +50,7 @@ Los mapas de cubo pueden contener diferentes tipos de datos, por ejemplo, colore
 
 ## <a name="related-topics"></a>Temas relacionados
 
-|Title|Descripción|
+|Title|DESCRIPCIÓN|
 |-----------|-----------------|
 |[Image Editor](../designers/image-editor.md)|Se describe el uso del editor de imágenes para trabajar con texturas e imágenes.|
-|[Ejemplos del Editor de imágenes](../designers/image-editor-examples.md)|Se ofrecen vínculos a temas que muestran cómo usar el editor de imágenes para realizar tareas comunes de procesamiento de imágenes.|
+|[Ejemplos del Editor de imágenes](../designers/how-to-create-a-basic-texture.md)|Se ofrecen vínculos a temas que muestran cómo usar el editor de imágenes para realizar tareas comunes de procesamiento de imágenes.|

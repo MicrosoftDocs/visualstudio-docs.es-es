@@ -6,15 +6,15 @@ helpviewer_keywords:
 - load tests, reporting
 - load tests, results
 ms.assetid: 31874114-459a-45d5-9f8b-2ea503627db8
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: dcd7a3a6e3aca3320cfc016d9e3b5db4aa0991ba
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 0fe200f73d8053d3970236c831d3f82ab21dac8e
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62786346"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72665210"
 ---
 # <a name="report-load-tests-results-for-test-comparisons-or-trend-analysis"></a>Informar de los resultados de las pruebas de carga para las comparaciones de pruebas o los análisis de tendencias
 

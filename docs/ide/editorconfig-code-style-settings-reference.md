@@ -7,18 +7,18 @@ helpviewer_keywords:
 - EditorConfig coding conventions
 - language code style rules [EditorConfig]
 - formatting conventions [EditorConfig]
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: d8be11a8705686ade370a8107aad826b7cab9851
-ms.sourcegitcommit: 88f576ac32af31613c1a10c1548275e1ce029f4f
+ms.openlocfilehash: 99d83157e2b6d108eb87a701aa8bc05ca2c7b1e6
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/23/2019
-ms.locfileid: "71186556"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72653718"
 ---
 # <a name="net-coding-convention-settings-for-editorconfig"></a>Configuración de la convención de codificación de .NET para EditorConfig
 

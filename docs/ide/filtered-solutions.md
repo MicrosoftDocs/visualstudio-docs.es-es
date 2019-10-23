@@ -6,16 +6,16 @@ ms.topic: conceptual
 helpviewer_keywords:
 - filtered solution
 - solution filtering
-author: gewarren
+author: jillre
 ms.author: stsu
 manager: jillfra
 monikerRange: '>= vs-2019'
-ms.openlocfilehash: 2612770b760bec70ec9ee6c679c47804d4e69f42
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: 4c44d267ef5686d04e9549601e05866aabbfb62d
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63439851"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72650836"
 ---
 # <a name="filtered-solutions-in-visual-studio"></a>Soluciones filtradas en Visual Studio
 

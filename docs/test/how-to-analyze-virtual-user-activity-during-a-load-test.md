@@ -5,15 +5,15 @@ ms.topic: conceptual
 helpviewer_keywords:
 - virtual user activity chart, viewing
 ms.assetid: 8bda19b3-91c1-4daf-b6c7-09108bddadff
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: dadc35d09ad70986f728104396502f13a06c0995
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 97abfe3740ea9209768e82eca1b269cd0a381233
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62979424"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72644173"
 ---
 # <a name="how-to-analyze-what-virtual-users-are-doing-during-a-load-test-using-the-virtual-user-activity-chart"></a>Procedimiento para analizar lo que hacen los usuarios virtuales durante una prueba de carga mediante el diagrama de actividad de usuarios virtuales
 
@@ -29,7 +29,7 @@ Los siguientes procedimientos muestran cómo ver el **Diagrama de actividad del 
 
 2. Una vez que se ejecuta la prueba de carga, se muestra la página de resumen de los resultados de pruebas. Elija el botón **Detalles de usuario** de la barra de herramientas.
 
-     o bien
+     O bien
 
      Abra la vista Gráficos al elegir el botón **Gráficos** de la barra de herramientas. Haga clic con el botón derecho en un gráfico y, luego, seleccione **Ir a detalles de usuario**.
 
@@ -84,7 +84,7 @@ Los siguientes procedimientos muestran cómo ver el **Diagrama de actividad del 
 
     El **Diagrama de actividad del usuario virtual** permite filtrar pruebas, páginas y transacciones según diversos criterios. Puede quitar ciertas pruebas de la vista, quitar todas las pruebas superadas o bien quitar las pruebas no superadas en las que se produjeron determinados errores. También puede quitar todas las pruebas que no tienen registros.
 
-    Por ejemplo, puede seleccionar la opción **(Resaltar errores)**, que muestra todos los errores en el gráfico coloreados en rojo. También puede seleccionar la opción **(Resaltar resultados con registros)**, que muestra todos los resultados de pruebas que tienen registros coloreados en verde en el gráfico.
+    Por ejemplo, puede seleccionar la opción **(Resaltar errores)** , que muestra todos los errores en el gráfico coloreados en rojo. También puede seleccionar la opción **(Resaltar resultados con registros)** , que muestra todos los resultados de pruebas que tienen registros coloreados en verde en el gráfico.
 
     **Panel Resultados del filtro**
 

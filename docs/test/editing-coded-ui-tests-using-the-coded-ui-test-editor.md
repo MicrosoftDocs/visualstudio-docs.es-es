@@ -6,17 +6,17 @@ f1_keywords:
 - vs.codedUItest.testeditor
 helpviewer_keywords:
 - coded UI test, Coded UI Test Editor
-ms.author: gewarren
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-author: gewarren
-ms.openlocfilehash: 88002f4187883d55f22ec9f3dc80f3ceb65e7e48
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+author: jillre
+ms.openlocfilehash: 971b5d178a777b7a0021eda4bfccab06727981ee
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62784512"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72664999"
 ---
 # <a name="edit-coded-ui-tests-using-the-coded-ui-test-editor"></a>Editar pruebas automatizadas de IU con el Editor de pruebas automatizadas de IU
 
@@ -74,7 +74,7 @@ Con el editor de pruebas de IU codificadas puede localizar y ver rápidamente to
 
 Para modificar las propiedades de una acción de la interfaz de usuario, en el panel **Acción de IU** , expanda el método de prueba que contenga una acción de la interfaz de usuario de la que desee modificar las propiedades, seleccione la acción de la interfaz de usuario y, después, modifique las propiedades mediante la ventana Propiedades.
 
-Por ejemplo, si un servidor no está disponible y tiene una acción de la interfaz de usuario asociada al explorador web que indica **Ir a la página web "<http://Contoso1/default.aspx>"**, puede cambiar la dirección URL por `'http://Contoso2/default.aspx'`.
+Por ejemplo, si un servidor no está disponible y tiene una acción de la interfaz de usuario asociada al explorador web que indica **Ir a la página web "<http://Contoso1/default.aspx>"** , puede cambiar la dirección URL por `'http://Contoso2/default.aspx'`.
 
 ![Propiedades del control](../test/media/codeduitestcontrolprop.png)
 
@@ -125,7 +125,7 @@ Una vez que haya acabado de dividir el método, guarde los cambios en el archivo
 
 - Puede cambiar el nombre del método nuevo. Selecciónelo desde el panel **Acciones de IU** y elija el botón **Cambiar nombre** de la barra de herramientas del Editor de pruebas automatizadas de IU.
 
-   o bien
+   O bien
 
    Abra el menú contextual del nuevo método de prueba y elija **Cambiar nombre**.
 

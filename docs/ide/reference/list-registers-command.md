@@ -9,17 +9,17 @@ helpviewer_keywords:
 - Debug.ListRegisters command
 - ListRegisters command
 ms.assetid: 19a9d789-f6c9-46b3-b1f6-4934fc33e055
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 95edb5098d73e8fccb47f9f059473394afe5f542
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: a0e52f42e495c2bac5e80195d360096947210980
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68919112"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72748691"
 ---
 # <a name="list-registers-command"></a>Mostrar registros (Comando)
 Muestra el valor de los registros seleccionados y permite modificar la lista de registros que se van a mostrar.
@@ -65,7 +65,7 @@ En este ejemplo se usa el alias `r` de `Debug.ListRegisters` para mostrar los va
 r /Display Flags
 ```
 
-## <a name="see-also"></a>Otras referencias
+## <a name="see-also"></a>Vea también
 
 - [Comandos de Visual Studio](../../ide/reference/visual-studio-commands.md)
 - [Fundamentos de la depuración: Ventana Registros](../../debugger/debugging-basics-registers-window.md)

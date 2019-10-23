@@ -6,15 +6,15 @@ helpviewer_keywords:
 - load model, specifying
 - load test load model, specifying
 ms.assetid: b7fae849-0538-40d1-ab35-2bb3a0fe4393
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 167dc55e5df18033a9bf16e8aa66e37db9fc6fea
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: c3125a229faed10b141834565fec71e3b9f0a0d2
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68918338"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72664961"
 ---
 # <a name="test-mix-models-overview"></a>Información general sobre los modelos de combinación de pruebas
 

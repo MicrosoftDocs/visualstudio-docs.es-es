@@ -2,20 +2,20 @@
 title: Acciones rápidas, bombillas y destornilladores
 ms.date: 03/28/2018
 ms.topic: conceptual
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 dev_langs:
 - CSharp
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 71ec5cf14f4cd336b8f92c15b4f0859c7a613354
-ms.sourcegitcommit: 88f576ac32af31613c1a10c1548275e1ce029f4f
+ms.openlocfilehash: 18df1378218d2188ee78d1b1b2a991e35f5ed689
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/23/2019
-ms.locfileid: "71186810"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72666750"
 ---
 # <a name="quick-actions"></a>Acciones rápidas
 

@@ -11,12 +11,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 978313276865c15672a129db601543a0ca307d5b
-ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.openlocfilehash: 47f709ae086a32c0680fca060744898251a76afd
+ms.sourcegitcommit: 8a96a65676fd7a2a03b0803d7eceae65f3fa142b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "66263032"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72589147"
 ---
 # <a name="debug-a-javascript-or-typescript-app-in-visual-studio"></a>Depuración de una aplicación JavaScript o TypeScript en Visual Studio
 
@@ -90,7 +90,9 @@ Para asociar el depurador desde Visual Studio y alcanzar puntos de interrupción
 
     ![Asociar al proceso](../javascript/media/tutorial-nodejs-react-attach-to-process.png)
 
+    ::: moniker range="vs-2017"
     Sabrá que el depurador se ha asociado correctamente cuando el Explorador DOM y la Consola de JavaScript se abran correctamente en Visual Studio. Estas herramientas de depuración son similares a las herramientas de desarrollo de Chrome y a Herramientas F12 para Microsoft Edge.
+    ::: moniker-end
 
     > [!NOTE]
     > Si el depurador no se conecta y aparece el mensaje "No se puede asociar al proceso. Existe una operación que no es legal en el estado actual", utilice el Administrador de tareas para cerrar todas las instancias de Chrome antes de iniciar Chrome en modo de depuración. Es posible que las extensiones de Chrome se estén ejecutando y eviten el modo de depuración completa.
@@ -147,7 +149,7 @@ Si agrega un archivo *tsconfig.json* al proyecto, Visual Studio trata la raíz d
 
 * **inlineSourceMap**: emite un solo archivo con mapas de origen en lugar de crear un mapa de origen individual por cada archivo de origen.
 * **inlineSources**: emite el origen junto con los mapas de origen dentro de un mismo archivo. Requiere que se establezca *inlineSourceMap* o *sourceMap*.
-* **mapRoot**: especifica la ubicación donde el depurador debe encontrar los archivos de mapa de origen (*.map*) en lugar de la ubicación predeterminada. Use esta marca si los archivos *.map* en tiempo de ejecución deben estar en una ubicación diferente a la de los archivos *.js*. La ubicación especificada está insertada en el mapa de origen para dirigir al depurador a la ubicación de los archivos *.map*.
+* **mapRoot**: especifica la ubicación donde el depurador debe encontrar los archivos de mapa de origen ( *.map*) en lugar de la ubicación predeterminada. Use esta marca si los archivos *.map* en tiempo de ejecución deben estar en una ubicación diferente a la de los archivos *.js*. La ubicación especificada está insertada en el mapa de origen para dirigir al depurador a la ubicación de los archivos *.map*.
 * **sourceMap**: genera el archivo *.map* correspondiente.
 * **sourceRoot**: especifica la ubicación en la que el depurador debe encontrar los archivos TypeScript en lugar de las ubicaciones de origen. Use esta marca si los orígenes en tiempo de ejecución deben estar en una ubicación diferente a la ubicación en tiempo de diseño. La ubicación especificada está insertada en el mapa de origen para dirigir al depurador a la ubicación donde están los archivos de origen.
 
@@ -175,7 +177,7 @@ La depuración de archivos generados dinámicamente no es automática. Los punto
    En Chrome, vaya a **Explorador de soluciones > Documentos de Script > nombreDeLaPágina**.
 
     > [!NOTE]
-    > Al usar Chrome, podría obtener un mensaje de tipo **no hay código fuente disponible entre etiquetas \<script>**. Esto es normal, simplemente continúe con la depuración.
+    > Al usar Chrome, podría obtener un mensaje de tipo **no hay código fuente disponible entre etiquetas \<script>** . Esto es normal, simplemente continúe con la depuración.
 
    En Internet Explorer, vaya a **Explorador de soluciones > Documentos de Script > Windows Internet Explorer > nombreDeLaPágina**.
 

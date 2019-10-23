@@ -6,17 +6,17 @@ f1_keywords:
 - VS.CallHierarchy
 helpviewer_keywords:
 - Call Hierarchy
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ad95d1c48992b8ecac6715db41aa9d85791999bb
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 8a03a286d8b097fbd208a828411728aaa7a54690
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62791392"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72668206"
 ---
 # <a name="view-call-hierarchy"></a>Visualización de la jerarquía de llamadas
 
@@ -46,7 +46,7 @@ Luego puede expandir cada miembro que realiza llamadas para ver sus nodos **Llam
 
 ![Ventana Jerarquía de llamadas con varios niveles expandidos](media/call-hierarchy-csharp-expanded.png)
 
-Para los miembros que están definidos como virtuales o abstractos, se muestra un nodo **Invalida “nombre de método”**. Para los miembros de interfaz, se muestra un nodo **Implementa nombre de método**. Estos nodos expansibles aparecen en el mismo nivel que los nodos **Llamadas a** y **Llamadas desde**.
+Para los miembros que están definidos como virtuales o abstractos, se muestra un nodo **Invalida “nombre de método”** . Para los miembros de interfaz, se muestra un nodo **Implementa nombre de método**. Estos nodos expansibles aparecen en el mismo nivel que los nodos **Llamadas a** y **Llamadas desde**.
 
 El cuadro **Ámbito de búsqueda** en la barra de herramientas contiene opciones para **Mi solución**, **Proyecto actual** y **Documento actual**.
 
@@ -63,7 +63,7 @@ Al seleccionar un miembro secundario en el panel de vista de árbol **Jerarquía
 
 En la tabla siguiente, se describen varias opciones del menú contextual que están disponibles cuando hace clic con el botón derecho en un nodo en el panel de vista de árbol.
 
-|Elemento del menú contextual|Descripción|
+|Elemento del menú contextual|DESCRIPCIÓN|
 | - |-----------------|
 |**Agregar como nueva raíz**|Agrega el nodo seleccionado al panel de vista de árbol como un nuevo nodo raíz. Esto le permite centrar la atención en un subárbol específico.|
 |**Quitar raíz**|Quita el nodo raíz seleccionado del panel de vista de árbol. Esta opción solo está disponible desde un nodo raíz.<br /><br /> También puede usar el botón de la barra de herramientas **Quitar raíz** para quitar el nodo raíz seleccionado.|

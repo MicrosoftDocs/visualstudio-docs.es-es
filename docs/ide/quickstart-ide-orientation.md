@@ -3,17 +3,17 @@ title: Un paseo por el IDE de Visual Studio
 titleSuffix: ''
 ms.date: 02/21/2019
 ms.topic: quickstart
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4875d88f521917a038ae3d7257396c7db80a2a9c
-ms.sourcegitcommit: 44e9b1d9230fcbbd081ee81be9d4be8a485d8502
+ms.openlocfilehash: 072233bde233712024d01fa315e11c679d39e9e5
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/30/2019
-ms.locfileid: "70180104"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72667803"
 ---
 # <a name="quickstart-first-look-at-the-visual-studio-ide"></a>Inicio rápido: Primer vistazo al IDE de Visual Studio
 

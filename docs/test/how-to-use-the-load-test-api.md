@@ -7,15 +7,15 @@ helpviewer_keywords:
 - plug-ins, load test
 - APIs, load tests
 ms.assetid: e15567bc-1f21-4feb-b81d-f17ba35cfde5
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 47707e0430d51a754f7e458ebf68e08124c1e7b5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 571abf14b1e17d85e21667c0ef0dbc3894b3ae76
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62821501"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72653315"
 ---
 # <a name="how-to-use-the-load-test-api"></a>Procedimiento para usar la API de pruebas de carga
 

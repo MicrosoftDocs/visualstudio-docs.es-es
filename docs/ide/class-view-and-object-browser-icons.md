@@ -11,23 +11,23 @@ helpviewer_keywords:
 - icons, IntelliSense
 - symbols, Object Browser icons
 - Object Browser, icons in Class View
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9814b03d0a8cd8733c9fd48b4e49c2cf306a8a44
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 589ec840b49d250591e2c477989d4422273cac31
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62975822"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72647622"
 ---
 # <a name="class-view-and-object-browser-icons"></a>Iconos de la Vista de clases y del Examinador de objetos
 
 En **Vista de clases** y **Examinador de objetos** se muestran iconos que representan las entidades de código, por ejemplo, los espacios de nombres, las clases, las funciones y las variables. En la tabla siguiente se muestran y describen los iconos.
 
-|Iconos|Descripción|Iconos|Descripción|
+|Iconos|DESCRIPCIÓN|Iconos|DESCRIPCIÓN|
 |----------|-----------------|----------|-----------------|
 |![Símbolo de espacio de nombres](../ide/media/vxnamespace_icon.gif)|Espacio de nombres|![Símbolo de declaración](../ide/media/vxmethod_icon.gif)|Método o función|
 |![Icon Clase](../ide/media/vxclass_icon.gif)|Clase|![Símbolo de operador](../ide/media/vxoperator_icon.gif)|Operador|
@@ -47,7 +47,7 @@ En **Vista de clases** y **Examinador de objetos** se muestran iconos que repres
 
 Los siguientes iconos de señal se aplican a todos los iconos anteriores e indican su accesibilidad.
 
-|Iconos|Descripción|
+|Iconos|DESCRIPCIÓN|
 |----------|-----------------|
 |\<Icono Sin señal>|Público. Accesible desde cualquier lugar en este componente y desde cualquier componente que haga referencia a él.|
 |![Símbolo Protected de señal](../ide/media/vxsignal_icon_key.gif)|Protegido. Accesible desde la clase o el tipo contenedor o los derivados de la clase o el tipo contenedor.|

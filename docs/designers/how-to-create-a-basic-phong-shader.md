@@ -3,17 +3,17 @@ title: Procedimiento Crear un sombreador Phong básico
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: c7c69da8-142b-4d3b-9be9-4be0d5970b25
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 895b797ad07018a9f4d4bf4c14b7f358a26f8eaa
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 5141df9f7504229733a269c2f7b0f94903064d8f
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68924413"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72635939"
 ---
 # <a name="how-to-create-a-basic-phong-shader"></a>Procedimiento Crear un sombreador Phong básico
 

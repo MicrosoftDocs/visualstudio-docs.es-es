@@ -8,17 +8,17 @@ helpviewer_keywords:
 - Edit.Replace command
 - Replace command
 ms.assetid: a15767f1-5a3d-44f5-8c77-7b0f1157f340
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: edcff51428451b50dc149b7b55cee11cb9ede853
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: b13dee4ec87a0a4c2735d9523bff093046c5b38c
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68919043"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72747781"
 ---
 # <a name="replace-command"></a>Reemplazar (Comando)
 Reemplaza texto de los archivos mediante el uso de un subconjunto de las opciones disponibles en la pestaña **Reemplazar en archivos** de la ventana **Buscar y reemplazar**.
@@ -100,7 +100,7 @@ En este ejemplo se reemplaza `btnSend` por `btnSubmit` en todos los documentos a
 >Edit.Replace btnSend btnSubmit /open
 ```
 
-## <a name="see-also"></a>Otras referencias
+## <a name="see-also"></a>Vea también
 
 - [Buscar y reemplazar texto](../../ide/finding-and-replacing-text.md)
 - [Ventana Comandos](../../ide/reference/command-window.md)

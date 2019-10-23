@@ -6,15 +6,15 @@ helpviewer_keywords:
 - load tests, properties
 - load tests, run settings
 ms.assetid: 45a625db-b3e7-4d64-beda-b9a76248096d
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 277c2ad8ffa6ebad55de3957f3d98917a4765ee1
-ms.sourcegitcommit: ba5e072c9fedeff625a1332f22dcf3644d019f51
+ms.openlocfilehash: aa5de5f7f9c1bfef78ad3698886e8d7af43a4812
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/31/2019
-ms.locfileid: "66431978"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72653389"
 ---
 # <a name="how-to-specify-the-number-of-test-iterations-in-a-load-test-run-setting"></a>Procedimiento para especificar el número de iteraciones de prueba en los parámetros de ejecución de una prueba de carga
 

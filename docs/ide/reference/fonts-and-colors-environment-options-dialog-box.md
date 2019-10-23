@@ -20,17 +20,17 @@ helpviewer_keywords:
 - defaults, colors
 - printers, customizing
 ms.assetid: c767d302-51ed-47a8-a527-c07bce2aa485
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5b05d6651f865a300a0c065c5e0a275cb29fd309
-ms.sourcegitcommit: ce1ab8a25c66a83e60eab80ed8e1596fe66dd85c
+ms.openlocfilehash: 527c01629fbff856748a50d393ca5df2a413d056
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/29/2019
-ms.locfileid: "68605415"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72667018"
 ---
 # <a name="fonts-and-colors-environment-options-dialog-box"></a>Fuentes y colores, Entorno, Opciones (Cuadro de diálogo)
 
@@ -110,7 +110,7 @@ Entre los elementos para mostrar se incluyen:
 |**Marcador**|Líneas con marcadores. **Marcador** solo está visible si el margen del indicador está deshabilitado.|
 |**Coincidencia de llaves (resaltar)**|Resaltado que suele ser el formato de negrita para la coincidencia de llaves.|
 |**Coincidencia de llaves (rectángulo)**|Resaltado que suele ser un rectángulo gris en segundo plano.|
-|**Punto de interrupción (deshabilitado)**|No se usa.|
+|**Punto de interrupción (deshabilitado)**|No se utiliza.|
 |**Punto de interrupción (habilitado)**|Especifica el color de resaltado para las instrucciones o líneas que contienen puntos de interrupción simples. Esta opción solo es aplicable si los puntos de interrupción de nivel de instrucción están activos o si está seleccionada la opción **Resaltar la línea de código fuente para los puntos de interrupción o la instrucción actual** en [General, Depuración, Opciones (Cuadro de diálogo)](../../debugger/general-debugging-options-dialog-box.md).|
 |**Punto de interrupción (error)**|Especifica el color de resaltado para las instrucciones o líneas que contienen puntos de interrupción que están en un estado de error. Solo es aplicable si los puntos de interrupción de nivel de instrucción están activos o si está seleccionada la opción **Resaltar la línea de código fuente para los puntos de interrupción o la instrucción actual** en [General, Depuración, Opciones (Cuadro de diálogo)](../../debugger/general-debugging-options-dialog-box.md).|
 |**Punto de interrupción (advertencia)**|Especifica el color de resaltado para las instrucciones o líneas que contienen puntos de interrupción simples que están en un estado de advertencia. Solo es aplicable si los puntos de interrupción de nivel de instrucción están activos o si está seleccionada la opción **Resaltar la línea de código fuente para los puntos de interrupción o la instrucción actual** en [General, Depuración, Opciones (Cuadro de diálogo)](../../debugger/general-debugging-options-dialog-box.md).|
@@ -171,7 +171,7 @@ Entre los elementos para mostrar se incluyen:
 |**Cadena (C# @ Verbatim)**|Literales de cadena en C# que se interpretan literalmente. Por ejemplo:<br /><br /> @"x"|
 |**Error de sintaxis**|Errores de análisis.|
 |**Acceso directo de la Lista de tareas**|Si se agrega a una línea un acceso directo de la **Lista de tareas** y el margen del indicador está deshabilitado, se resaltará la línea.|
-|**Punto de seguimiento (deshabilitado)**|No se usa.|
+|**Punto de seguimiento (deshabilitado)**|No se utiliza.|
 |**Punto de seguimiento (habilitado)**|Especifica el color de resaltado para las instrucciones o líneas que contienen puntos de seguimiento simples. Esta opción solo es aplicable si los puntos de seguimiento de nivel de instrucción están activos o si está seleccionada la opción **Resaltar la línea de código fuente para los puntos de interrupción o la instrucción actual** en [General, Depuración, Opciones (Cuadro de diálogo)](../../debugger/general-debugging-options-dialog-box.md).|
 |**Punto de seguimiento (error)**|Especifica el color de resaltado para las instrucciones o líneas que contienen puntos de seguimiento que están en un estado de error. Esta opción solo es aplicable si los puntos de seguimiento de nivel de instrucción están activos o si está seleccionada la opción **Resaltar la línea de código fuente para los puntos de interrupción o la instrucción actual** en [General, Depuración, Opciones (Cuadro de diálogo)](../../debugger/general-debugging-options-dialog-box.md).|
 |**Punto de seguimiento (advertencia)**|Especifica el color de resaltado para las instrucciones o líneas que contienen puntos de seguimiento que están en un estado de advertencia. Esta opción solo es aplicable si los puntos de seguimiento de nivel de instrucción están activos o si está seleccionada la opción **Resaltar la línea de código fuente para los puntos de interrupción o la instrucción actual** en [General, Depuración, Opciones (Cuadro de diálogo)](../../debugger/general-debugging-options-dialog-box.md).|
@@ -216,11 +216,11 @@ Muestra los colores disponibles que puede seleccionar para el primer plano del e
 
 Los elementos pueden heredar el color de primer plano de otros elementos para mostrar como **Texto sin formato**. Con esta opción, al cambiar el color de un elemento para mostrar heredado, el color de los elementos mostrados relacionados también cambia automáticamente. Por ejemplo, si ha seleccionado el valor **Automático** para el **Error del compilador** y después ha cambiado el color del **Texto sin formato** a rojo, el **Error del compilador** también heredaría automáticamente el color rojo.
 
-**Valor predeterminado**
+**Predetermiado**
 
 Color que aparece para el elemento la primera vez que se abre Visual Studio. Al hacer clic en el botón **Usar valores predeterminados** restablece este color.
 
-**Personalizada**
+**Custom**
 
 Muestra el cuadro de diálogo Color para permitirle establecer un color personalizado para el elemento seleccionado en la lista Elementos para mostrar
 
@@ -235,11 +235,11 @@ Proporciona una paleta de colores de la que puede seleccionar un color de fondo 
 
 Los elementos pueden heredar el color de fondo de otros elementos para mostrar como **Texto sin formato**. Con esta opción, al cambiar el color de un elemento para mostrar heredado, el color de los elementos mostrados relacionados también cambia automáticamente. Por ejemplo, si ha seleccionado el valor **Automático** para el **Error del compilador** y después ha cambiado el color del **Texto sin formato** a rojo, el **Error del compilador** también heredaría automáticamente el color rojo.
 
-**Valor predeterminado**
+**Predetermiado**
 
 Color que aparece para el elemento la primera vez que se abre Visual Studio. Al hacer clic en el botón **Usar valores predeterminados** restablece este color.
 
-**Personalizada**
+**Custom**
 
 Muestra el cuadro de diálogo Color para permitirle establecer un color personalizado para el elemento seleccionado en la lista Elementos para mostrar
 
@@ -254,4 +254,4 @@ Muestra un ejemplo de la combinación de colores, del tamaño y del estilo de la
 ## <a name="see-also"></a>Vea también
 
 - [Opciones (cuadro de diálogo)](../../ide/reference/options-dialog-box-visual-studio.md)
-- [Uso de cambiar fuentes y colores](../../ide/how-to-change-fonts-and-colors-in-visual-studio.md)
+- [Cómo: cambiar fuentes y colores](../../ide/how-to-change-fonts-and-colors-in-visual-studio.md)

@@ -5,15 +5,15 @@ ms.topic: reference
 helpviewer_keywords:
 - load tests, run settings
 ms.assetid: de10dabb-02ed-403b-9e6f-0b735524988c
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 4d50303596cec88bd5463b2ad1df713991c8932c
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 7bea257e45b557fd157d68baf9e0229a602a7a6e
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68923674"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72652973"
 ---
 # <a name="load-test-run-settings-properties"></a>Propiedades de los parámetros de ejecución de las pruebas de carga
 

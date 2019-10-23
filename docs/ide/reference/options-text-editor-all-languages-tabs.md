@@ -36,17 +36,17 @@ helpviewer_keywords:
 - Code Editor, indenting
 - Code Editor, tabs
 ms.assetid: 7e208e1d-5e3a-4bf7-a27b-4417e3e049c7
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 09bf4f205b7fc200038b2aedfcf3a8318cb1c7a9
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 45cee31df08461731c14e2ac1fdef8456a882800
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62997157"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72666372"
 ---
 # <a name="options-text-editor-all-languages-tabs"></a>Opciones, editor de texto, todos los lenguajes, pestañas
 
@@ -59,7 +59,7 @@ Si están seleccionadas diferentes opciones en las páginas de opciones de pesta
 
 ## <a name="indenting"></a>Aplicar sangría
 
-Ninguna
+None
 
 Si está seleccionada esta opción, no se aplicará ninguna sangría a las líneas nuevas. El punto de inserción se coloca en la primera columna de una nueva línea.
 

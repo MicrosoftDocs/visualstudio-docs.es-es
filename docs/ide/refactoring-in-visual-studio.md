@@ -5,17 +5,17 @@ ms.date: 01/10/2018
 ms.topic: conceptual
 helpviewer_keywords:
 - refactoring [Visual Studio]
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6b9ce37df2999ac27f5bc8e5aeb7edfb1959b8cc
-ms.sourcegitcommit: 0f5f7955076238742f2071d286ad8e896f3a6cad
+ms.openlocfilehash: c79a85314313cffce26667be8dbaf99eaa67cebd
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "68483640"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72645359"
 ---
 # <a name="refactor-code"></a>Refactorizar código
 

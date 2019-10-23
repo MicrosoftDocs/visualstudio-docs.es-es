@@ -2,8 +2,8 @@
 title: Refactorización de cambio de nombre
 ms.date: 01/26/2018
 ms.topic: reference
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 f1_keywords:
 - vs.csharp.refactoring.rename
@@ -12,12 +12,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: d1b4ff448f04ff6f683fac06cbc0b31797edf587
-ms.sourcegitcommit: 88f576ac32af31613c1a10c1548275e1ce029f4f
+ms.openlocfilehash: 2991227b3c8d742da360465e6c506e7123259e2c
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/23/2019
-ms.locfileid: "71186575"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72655621"
 ---
 # <a name="rename-a-code-symbol-refactoring"></a>Refactorización de cambio de nombre de un símbolo de código
 
@@ -73,7 +73,7 @@ Esta refactorización se aplica a lo siguiente:
 - A partir de la versión 16.3 de Visual Studio 2019, cuando se cambia el nombre de un tipo que coincide con el nombre del archivo en el que se encuentra, aparece una casilla que permite cambiar el nombre del archivo al mismo tiempo. Esta opción aparece cuando se cambia el nombre de una clase, una interfaz o una enumeración. No es compatible con los tipos parciales con varias definiciones.
 
    ![Animación del cambio de nombre con un archivo en C#](media/rename-with-file-animated-cs.gif)
-   
+
 - Si usa un nombre que ya existe, lo cual produciría un conflicto, el cuadro **Cambiar nombre** se lo advertirá.
 
    ![Conflicto de cambio de nombre](media/rename-conflict-cs.png)

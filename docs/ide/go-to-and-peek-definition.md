@@ -8,17 +8,17 @@ helpviewer_keywords:
 - peek definition
 - type definition [Visual Studio]
 - member definition [Visual Studio]
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2c5235bc19c1b06ec2cae26e3fcffb6a7d061c9b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 2d78614966a33421aac707f370f2b18e62e4b3d9
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62549807"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72603543"
 ---
 # <a name="view-type-and-member-definitions"></a>Vista de definiciones de tipo y miembro
 
@@ -58,7 +58,7 @@ Para obtener más información, vea [Cómo: Ver y editar código mediante Ver la
 
 Al ver la definición de tipos o miembros de C# cuyo código fuente no está disponible, en su lugar se muestran los metadatos. Puede ver las declaraciones de los tipos y miembros, pero no sus implementaciones.
 
-Al ejecutar el comando **Ir a definición** o **Ver la definición** para un elemento cuyo código fuente no está disponible, un documento con pestañas que contiene una vista de los metadatos de ese elemento, que se muestra como código fuente, aparece en el editor de código. El nombre del tipo, seguido de **[desde metadatos]**, aparece en la pestaña del documento.
+Al ejecutar el comando **Ir a definición** o **Ver la definición** para un elemento cuyo código fuente no está disponible, un documento con pestañas que contiene una vista de los metadatos de ese elemento, que se muestra como código fuente, aparece en el editor de código. El nombre del tipo, seguido de **[desde metadatos]** , aparece en la pestaña del documento.
 
 Por ejemplo, si ejecuta el comando **Ir a definición** para <xref:System.Console>, los metadatos de <xref:System.Console> aparecen en el editor de código como código fuente de C#. El código es similar a su declaración, pero no muestra una implementación.
 
@@ -69,7 +69,7 @@ Por ejemplo, si ejecuta el comando **Ir a definición** para <xref:System.Consol
 
 ### <a name="view-decompiled-source-definitions-instead-of-metadata-c"></a>Visualización de definiciones de origen descompiladas en lugar de metadatos (C#)
 
-Puede configurar una opción para ver código fuente descompilado al ver la definición de un tipo o un miembro de C# cuyo código fuente no está disponible. Para activar esta característica, elija **Herramientas** > **Opciones** en la barra de menús. A continuación, expanda **Editor de texto** > **C#** > **Opciones avanzadas** y seleccione **Enable navigation to decompiled sources** (Habilitar la navegación a orígenes descompilados).
+Puede configurar una opción para ver código fuente descompilado al ver la definición de un tipo o un miembro de C# cuyo código fuente no está disponible. Para activar esta característica, elija **Herramientas** > **Opciones** en la barra de menús. A continuación, expanda **Editor de texto** > **C#**  > **Opciones avanzadas** y seleccione **Enable navigation to decompiled sources** (Habilitar la navegación a orígenes descompilados).
 
 ![Visualización de una definición descompilada](media/go-to-definition-decompiled-sources.png)
 

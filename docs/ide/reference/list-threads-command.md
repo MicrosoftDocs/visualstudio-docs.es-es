@@ -9,17 +9,17 @@ helpviewer_keywords:
 - list threads command
 - Debug.ListThreads command
 ms.assetid: 34b665c0-d46f-4c1a-a066-b678eba5ac54
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2b3ad3b30329d574145ce7de839a3e6c164df2d5
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 8c89f4e38d21e7dd66f53b8e768019a3e53c7a39
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68919079"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72747887"
 ---
 # <a name="list-threads-command"></a>Mostrar subprocesos (Comando)
 Muestra una lista de los subprocesos del programa actual.
@@ -44,7 +44,7 @@ Cuando se especifica, el argumento `index` marca el subproceso indicado como el 
 >Debug.ListThreads
 ```
 
-## <a name="see-also"></a>Otras referencias
+## <a name="see-also"></a>Vea también
 
 - [Mostrar pila de llamadas (Comando)](../../ide/reference/list-call-stack-command.md)
 - [Mostrar desensamblador (comando)](../../ide/reference/list-disassembly-command.md)

@@ -6,15 +6,15 @@ helpviewer_keywords:
 - load tests, creating Excel reports
 - load tests, reporting
 ms.assetid: b87fb196-9973-4512-a924-088788def4ea
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 6bd73c643cdc01be07d56857f65d3fb34c6346e0
-ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.openlocfilehash: af0afc61fcf7cb251836414ca474eb63da3bf2e9
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66747582"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72653560"
 ---
 # <a name="how-to-create-load-test-performance-reports-using-microsoft-excel"></a>Procedimiento para crear informes de rendimiento de pruebas de carga con Microsoft Excel
 

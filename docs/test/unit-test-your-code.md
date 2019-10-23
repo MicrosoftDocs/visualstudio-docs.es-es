@@ -6,17 +6,17 @@ helpviewer_keywords:
 - Visual Studio, unit tests
 - unit tests, verifying code with
 - testing code, automated tests
-ms.author: gewarren
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-author: gewarren
-ms.openlocfilehash: 5682d752ba2c1430d8ab708e3dadda754a1ba757
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+author: jillre
+ms.openlocfilehash: fd6d6dca2680dcfcaa42912333b080c428ba78d2
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65461382"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72659856"
 ---
 # <a name="unit-test-your-code"></a>Prueba unitaria del código
 
@@ -28,7 +28,7 @@ Las herramientas de pruebas unitarias incluyen:
 
 * **Marco de pruebas unitarias de Microsoft para código administrado**: el marco de pruebas unitarias de Microsoft para código administrado se instala con Visual Studio y proporciona un marco para probar el código .NET.
 
-* **Marco de pruebas unitarias de Microsoft para C++**: el marco de pruebas unitarias de Microsoft para C++ se instala como parte de la carga de trabajo **Desarrollo para el escritorio con C++**. Proporciona un marco para probar código nativo. También se incluyen los marcos de trabajo de Google Test, Boost.Test y CTest, y hay disponibles adaptadores de terceros si son necesarios para marcos de trabajo de prueba adicionales. Para más información, vea [Escribir pruebas unitarias para C/C++ en Visual Studio](../test/writing-unit-tests-for-c-cpp.md).
+* **Marco de pruebas unitarias de Microsoft para C++** : el marco de pruebas unitarias de Microsoft para C++ se instala como parte de la carga de trabajo **Desarrollo para el escritorio con C++** . Proporciona un marco para probar código nativo. También se incluyen los marcos de trabajo de Google Test, Boost.Test y CTest, y hay disponibles adaptadores de terceros si son necesarios para marcos de trabajo de prueba adicionales. Para más información, vea [Escribir pruebas unitarias para C/C++ en Visual Studio](../test/writing-unit-tests-for-c-cpp.md).
 
 * **Herramientas de cobertura de código**: puede determinar la cantidad de código de producto que utilizan las pruebas unitarias a partir de un comando en el Explorador de pruebas.
 

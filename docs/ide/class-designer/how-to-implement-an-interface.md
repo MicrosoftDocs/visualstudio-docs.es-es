@@ -6,17 +6,17 @@ helpviewer_keywords:
 - interfaces [Visual Studio], implementing
 - interfaces [Visual Studio]
 ms.assetid: 81d2cf46-7f60-448c-83e3-1d16bb88ca36
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e76aeea4c6779e97d882705e8680cd7a3b00d129
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: bf03046abcf79933044cfb01bf079aee64d09077
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62975182"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72647716"
 ---
 # <a name="how-to-implement-an-interface-in-class-designer"></a>Procedimiento Implementar una interfaz en el Diseñador de clases
 

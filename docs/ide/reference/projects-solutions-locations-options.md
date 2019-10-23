@@ -4,17 +4,17 @@ ms.date: 07/26/2019
 ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.Projects.Locations
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 60e375c558500c4daeefe3f5d24d46a17139252f
-ms.sourcegitcommit: ce1ab8a25c66a83e60eab80ed8e1596fe66dd85c
+ms.openlocfilehash: e20c584a5acecc06a9d04e79a7c70c088eacc15b
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/29/2019
-ms.locfileid: "68610633"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72655702"
 ---
 # <a name="options-dialog-box-projects-and-solutions--locations"></a>Cuadro de diálogo Opciones: Proyectos y soluciones \> Ubicaciones
 
@@ -28,11 +28,11 @@ Especifica la ubicación predeterminada donde Visual Studio crea las nuevas carp
 
 ## <a name="user-project-templates-location"></a>Ubicación de plantillas de proyecto de usuario
 
-Especifica la ubicación predeterminada que se usa para buscar plantillas de proyecto creadas por el usuario. Para obtener más información, consulte [Instrucciones: Buscar y organizar plantillas](../../ide/how-to-locate-and-organize-project-and-item-templates.md).
+Especifica la ubicación predeterminada que se usa para buscar plantillas de proyecto creadas por el usuario. Para obtener más información, vea [Cómo: Buscar y organizar plantillas](../../ide/how-to-locate-and-organize-project-and-item-templates.md).
 
 ## <a name="user-item-templates-location"></a>Ubicación de plantillas de elemento de usuario
 
-Especifica la ubicación predeterminada que se usa para buscar plantillas de elemento creadas por el usuario. Para obtener más información, consulte [Instrucciones: Buscar y organizar plantillas](../../ide/how-to-locate-and-organize-project-and-item-templates.md).
+Especifica la ubicación predeterminada que se usa para buscar plantillas de elemento creadas por el usuario. Para obtener más información, vea [Cómo: Buscar y organizar plantillas](../../ide/how-to-locate-and-organize-project-and-item-templates.md).
 
 ## <a name="see-also"></a>Vea también
 

@@ -16,17 +16,17 @@ helpviewer_keywords:
 - Options dialog box, Web settings
 - Internet Explorer, setting options
 ms.assetid: 586db4eb-032d-4cb5-93a6-a7c14de1ae49
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ad36a2c9c741cffdb1ad3da04f81a21ce68f7ebd
-ms.sourcegitcommit: ce1ab8a25c66a83e60eab80ed8e1596fe66dd85c
+ms.openlocfilehash: ae83add4db8e45fca1b97b9c4148cea5bcba0947
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/29/2019
-ms.locfileid: "68605623"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72621913"
 ---
 # <a name="options-dialog-box-environment--web-browser"></a>Cuadro de diálogo Opciones: Entorno \> Explorador web
 
