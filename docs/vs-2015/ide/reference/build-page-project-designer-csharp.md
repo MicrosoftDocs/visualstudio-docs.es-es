@@ -101,4 +101,4 @@ Use la página **Compilar** del **Diseñador de proyectos** para especificar las
  **Opciones avanzadas** Haga clic para mostrar el cuadro de diálogo [Configuración de compilación avanzada (C#)](../../ide/reference/advanced-build-settings-dialog-box-csharp.md).
 
 ## <a name="see-also"></a>Otras referencias
- [](../../ide/reference/project-properties-reference.md) [ C# Opciones del compilador referencia de las propiedades del proyecto](https://msdn.microsoft.com/library/d3403556-1816-4546-a782-e8223a772e44)
+ [Referencia de las propiedades delC# proyecto ](../../ide/reference/project-properties-reference.md) [ opciones del compilador](https://msdn.microsoft.com/library/d3403556-1816-4546-a782-e8223a772e44)

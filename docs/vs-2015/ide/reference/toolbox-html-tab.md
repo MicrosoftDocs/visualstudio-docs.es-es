@@ -186,7 +186,7 @@ La pestaña **HTML** del cuadro de herramientas proporciona componentes que resu
 
  Para obtener más información, consulte [Sintaxis declarativa del control de servidor HtmlTable](https://msdn.microsoft.com/625b06d8-0f69-4112-a1d4-8ef2a9fbcda9), [Table, TableRow, and TableCell Web Server Control Overview](https://msdn.microsoft.com/library/2fbd0582-cf69-4c8d-9e35-21f35e2cee1a) (Información general sobre los controles de servidor web Table, TableRow y TableCell), <xref:System.Web.UI.HtmlControls.HtmlTable> y <xref:System.Web.UI.WebControls.Table>.
 
- **** ![Elemento de imagen de página html](../../ide/reference/media/vximage.gif "|::ref13::|") de imagen
+ ![Elemento de imagen de página html](../../ide/reference/media/vximage.gif "|::ref13::|") de **imagen**
 
  Inserta un elemento `img`. Modifique este elemento para especificar su `src` y su texto `alt`.
 
@@ -224,7 +224,7 @@ La pestaña **HTML** del cuadro de herramientas proporciona componentes que resu
 
  Para obtener más información, consulte [Control de regla horizontal HTML](https://msdn.microsoft.com/library/bf6df0a8-9844-404d-8a9a-3455b0180f2f).
 
- **** ![Etiqueta de página html](../../ide/reference/media/vxlabel.gif "|::ref16::|") de div
+ ![Etiqueta de página html](../../ide/reference/media/vxlabel.gif "|::ref16::|") de **div**
 
  Inserta un elemento `div` que incluye un atributo `ms_positioning="FlowLayout"`. Excepto por el ancho y alto, este elemento es idéntico a un panel de diseño de flujo. Para dar formato al texto que se encuentra en el elemento `div`, agregue un atributo `class="stylename"` a la etiqueta de apertura.
 
