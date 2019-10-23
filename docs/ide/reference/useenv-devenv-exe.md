@@ -14,17 +14,17 @@ helpviewer_keywords:
 - /UseEnv Devenv switch
 - Devenv, /UseEnv
 ms.assetid: 2dd14603-a61b-42d2-ba31-427a0ee8a799
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 16443b30ccf6ba03a01df0234695d27e4cd909af
-ms.sourcegitcommit: 88f576ac32af31613c1a10c1548275e1ce029f4f
+ms.openlocfilehash: da7a5e1d3490ea8342e6a7b21e91552ae2e8fdf0
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/23/2019
-ms.locfileid: "71186489"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72622408"
 ---
 # <a name="useenv-devenvexe"></a>/UseEnv (devenv.exe)
 

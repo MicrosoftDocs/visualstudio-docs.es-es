@@ -4,15 +4,15 @@ ms.date: 01/02/2018
 ms.topic: conceptual
 helpviewer_keywords:
 - item templates [Visual Studio], creating
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: a861843da139701c23e38df11c7ad380c047a846
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d213ef7cd1c45043efbaad9fca4317f7a693bf4f
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62823935"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72655848"
 ---
 # <a name="how-to-create-item-templates"></a>Procedimiento Crear plantillas de elemento
 
@@ -119,7 +119,7 @@ En algunos casos es posible que quiera crear una plantilla de elementos manualme
 
 6. Guarde el archivo *.vstemplate* y ciérrelo.
 
-7. En el **Explorador de Windows**, seleccione los archivos que quiere incluir en la plantilla. Haga clic con el botón derecho en la selección y elija **Enviar a** > **Carpeta comprimida (en zip)**. Los archivos seleccionados se comprimen en un archivo *.zip*.
+7. En el **Explorador de Windows**, seleccione los archivos que quiere incluir en la plantilla. Haga clic con el botón derecho en la selección y elija **Enviar a** > **Carpeta comprimida (en zip)** . Los archivos seleccionados se comprimen en un archivo *.zip*.
 
 ::: moniker range="vs-2017"
 

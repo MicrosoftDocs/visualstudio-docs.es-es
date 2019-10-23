@@ -2,20 +2,20 @@
 title: Limpieza de código y opciones de estilo de código
 ms.date: 04/25/2019
 ms.topic: conceptual
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.CSharp.Code_Style.General
 - VS.ToolsOptionsPages.Text_Editor.Basic.Code_Style.General
 ms.workload:
 - multiple
-ms.openlocfilehash: 4c7bb8f3e94a761023a19a5ea3361073b73d9f3b
-ms.sourcegitcommit: 90c3187d804ad7544367829d07ed4b47d3f8a72d
+ms.openlocfilehash: 1d653898e6c6a8ab856a5b7763d12fd793708b9f
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/06/2019
-ms.locfileid: "68822432"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72631108"
 ---
 # <a name="code-style-preferences"></a>Preferencias de estilo del código
 

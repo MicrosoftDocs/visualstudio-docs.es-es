@@ -3,17 +3,17 @@ title: Procedimiento Exportar una textura que tiene valores alfa previamente mul
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 05348afa-f079-4f53-a05b-ecd91d13adab
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 16448a53064844f1c75db8b7eaa58c2cf909a968
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 84017bef80f42bd1848833b957abd88297d1e12d
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68924254"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72635482"
 ---
 # <a name="how-to-export-a-texture-that-has-premultiplied-alpha"></a>Procedimiento Exportar una textura que tiene valores alfa previamente multiplicados
 

@@ -12,20 +12,20 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 048e0409a5af77c512f0ee768d95d61259426fb9
-ms.sourcegitcommit: 9cfd3ef6c65f671a26322320818212a1ed5955fe
+ms.openlocfilehash: 5ec01bdc1f27d2ca7c8b2d20c901a224cbdbf19d
+ms.sourcegitcommit: 8a96a65676fd7a2a03b0803d7eceae65f3fa142b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/26/2019
-ms.locfileid: "68533367"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72589152"
 ---
 # <a name="tutorial-create-a-nodejs-and-react-app-in-visual-studio"></a>Tutorial: Crear una aplicación Node.js y React en Visual Studio
 
 Visual Studio permite crear fácilmente un proyecto de Node.js y usar IntelliSense y otras características integradas compatibles con Node.js. En este tutorial para Visual Studio, se crea un proyecto de aplicación web de Node.js a partir de una plantilla de Visual Studio. A continuación, se crea una aplicación sencilla con React.
 
-En este tutorial, aprenderá a:
+En este tutorial aprenderá a:
 > [!div class="checklist"]
-> * Creación de un proyecto Node.js
+> * Crear un proyecto de Node.js
 > * Agregar paquetes de npm
 > * Agregar código de React a la aplicación
 > * Transpilar JSX
@@ -82,7 +82,7 @@ En primer lugar, cree un proyecto de aplicación web de Node.js.
 
 1. Abra Visual Studio.
 
-1. Crear un nuevo proyecto.
+1. Cree un nuevo proyecto.
 
     ::: moniker range=">=vs-2019"
     Presione **Esc** para cerrar la ventana de inicio. Presione **Ctrl + Q** para abrir el cuadro de búsqueda, escriba **Node.js**, elija **Aplicación web en blanco de Node.js** (JavaScript). En el cuadro de diálogo que se abre, elija **Crear**.
@@ -113,7 +113,7 @@ Esta aplicación requiere una serie de módulos de npm para ejecutarse correctam
 * react
 * react-dom
 * express
-* path
+* ruta de acceso
 * ts-loader
 * typescript
 * webpack
@@ -332,7 +332,7 @@ A partir de Visual Studio 2019, se requiere un script de compilación. En luga
    }
    ```
 
-## <a name="run-the-app"></a>Ejecución de la aplicación
+## <a name="run-the-app"></a>Ejecutar la aplicación
 
 1. Seleccione Chrome como el destino de depuración actual.
 
@@ -412,7 +412,9 @@ En la sección anterior se asoció el depurador al código Node.jse del lado ser
 
     ![Asociar al proceso](../javascript/media/tutorial-nodejs-react-attach-to-process.png)
 
+    ::: moniker range="vs-2017"
     Sabrá que el depurador se ha asociado correctamente cuando el Explorador DOM y la Consola de JavaScript se abran correctamente en Visual Studio. Estas herramientas de depuración son similares a las herramientas de desarrollo de Chrome y a Herramientas F12 para Microsoft Edge.
+    ::: moniker-end
 
     > [!NOTE]
     > Si el depurador no se conecta y aparece el mensaje "No se puede asociar al proceso. Existe una operación que no es legal en el estado actual", utilice el Administrador de tareas para cerrar todas las instancias de Chrome antes de iniciar Chrome en modo de depuración. Es posible que las extensiones de Chrome se estén ejecutando y eviten el modo de depuración completa.

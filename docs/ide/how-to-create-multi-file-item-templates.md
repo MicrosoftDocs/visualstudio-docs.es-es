@@ -6,15 +6,15 @@ helpviewer_keywords:
 - Visual Studio templates, creating multi-file item templates
 - multi-file item templates
 - item templates, creating multi-file item templates
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 745f371fa0461c2dc0dcedac0e06d160bbf7e209
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 82047b4a49db4edbea4ce965d1987f87a799a9f7
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62428995"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72655944"
 ---
 # <a name="how-to-create-multi-file-item-templates"></a>Procedimiento Crear plantillas de elemento de varios archivos
 
@@ -53,7 +53,7 @@ Puede crear una plantilla de elementos de varios archivos igual que una plantill
      > [!NOTE]
      > Cuando se agrega un elemento derivado de esta plantilla a un proyecto, los nombres de archivo derivarán del nombre que el usuario escriba en el cuadro de diálogo **Agregar nuevo elemento**.
 
-1. Seleccione los archivos que se incluirán en la plantilla, haga clic con el botón derecho en la selección y elija **Enviar a** > **Carpeta comprimida (en zip)**.
+1. Seleccione los archivos que se incluirán en la plantilla, haga clic con el botón derecho en la selección y elija **Enviar a** > **Carpeta comprimida (en zip)** .
 
    Los archivos seleccionados se comprimen en un archivo *.zip*.
 

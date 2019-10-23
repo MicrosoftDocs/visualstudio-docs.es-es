@@ -9,18 +9,18 @@ helpviewer_keywords:
 - searching IDE
 - IDE, searching
 ms.assetid: 4200f297-d065-4723-9a30-d91ff2e26c9d
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
 monikerRange: vs-2017
-ms.openlocfilehash: 1f5026a014b5adc96f0729d130c4398474d6d413
-ms.sourcegitcommit: ce1ab8a25c66a83e60eab80ed8e1596fe66dd85c
+ms.openlocfilehash: f0cc6bcb59bf98a7416221115dbeeef8f24a5e74
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/29/2019
-ms.locfileid: "68605896"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72655662"
 ---
 # <a name="quick-launch-environment-options-dialog-box"></a>Inicio rápido, Entorno, Opciones (cuadro de diálogo)
 
@@ -34,12 +34,12 @@ Los resultados de búsqueda de inicio rápido aparecen recogidos en cuatro categ
 
 Puede utilizar los siguientes accesos directos para limitar la búsqueda a las categorías específicas.
 
-|Categoría|Método abreviado|Descripción del acceso directo|
+|Categoría|Acceso directo|Descripción del acceso directo|
 |--------------|--------------| - |
-|Usados más recientemente|@mru<br /><br /> Por ejemplo: `@mru font`|Muestra hasta cinco de los elementos que ha **usado más recientemente**.|
-|Menús|@menu<br /><br /> Por ejemplo: `@menu project`|Limita la búsqueda a los elementos de menú.|
-|Opciones|@opt<br /><br /> Por ejemplo: `@opt font`|Limita la búsqueda a la configuración del cuadro de diálogo **Opciones**.|
-|Documentos|@doc<br /><br /> Por ejemplo: `@doc program.cs`|Limita la búsqueda a los nombres de archivo y rutas de acceso de documentos abiertos para los criterios de búsqueda, pero no busca el texto dentro de los propios archivos.|
+|Usados más recientemente|@mru<br /><br /> Por ejemplo, `@mru font`.|Muestra hasta cinco de los elementos que ha **usado más recientemente**.|
+|Menús|@menu<br /><br /> Por ejemplo, `@menu project`.|Limita la búsqueda a los elementos de menú.|
+|Opciones|@opt<br /><br /> Por ejemplo, `@opt font`.|Limita la búsqueda a la configuración del cuadro de diálogo **Opciones**.|
+|Documentos|@doc<br /><br /> Por ejemplo, `@doc program.cs`.|Limita la búsqueda a los nombres de archivo y rutas de acceso de documentos abiertos para los criterios de búsqueda, pero no busca el texto dentro de los propios archivos.|
 
 > [!NOTE]
 > Puede cambiar las teclas de método abreviado en la página **General** > **Teclado** en el cuadro de diálogo **Opciones**.

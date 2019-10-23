@@ -6,15 +6,15 @@ helpviewer_keywords:
 - load test results graphs, creating
 - load test results graphs
 ms.assetid: 17fcafce-76f9-4411-9389-6e5376eab236
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 6df80340f57ba40597af67d57ba1bda3da778f4b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 9012fbea21f552b8057278b37f5d336718c0269f
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62949967"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72653580"
 ---
 # <a name="how-to-create-custom-graphs-in-load-test-results"></a>Procedimiento para crear gráficos personalizados en los resultados de pruebas de carga
 

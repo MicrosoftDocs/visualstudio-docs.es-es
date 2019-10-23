@@ -6,17 +6,17 @@ helpviewer_keywords:
 - editors, text case
 - text, case
 ms.assetid: b04d1327-a45e-4c12-a0d0-67672b3fa855
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5f01b16971c85a07923783e97f08a8b91512eef6
-ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
+ms.openlocfilehash: d390548537497272e3b67af4b2b8bc981962983b
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68870787"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72652762"
 ---
 # <a name="how-to-change-text-case-in-the-editor"></a>Procedimiento para cambiar las mayúsculas y minúsculas en el editor
 

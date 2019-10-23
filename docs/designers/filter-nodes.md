@@ -3,17 +3,17 @@ title: Nodos de filtro
 ms.date: 11/04/2016
 ms.topic: reference
 ms.assetid: f7cae2dc-e9a7-49d4-8be5-58b79868624e
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 95a8bfeedea11060cbf3a0aefbf2c11a30230060
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 7627a5df1b3fcc5d26e33353e91f525b8083ccdf
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62845073"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72637308"
 ---
 # <a name="filter-nodes"></a>Nodos de filtro
 

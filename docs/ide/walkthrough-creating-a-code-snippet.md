@@ -10,19 +10,19 @@ helpviewer_keywords:
 - code snippets, references
 - code snippets, imports
 ms.assetid: 0dcaae11-39cf-4463-9c90-2494321251c2
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 130f4a5d39c756587dcf479abe4461f64e9461cb
-ms.sourcegitcommit: b468d71052a1b8a697f477ab23a3644de139f1e9
+ms.openlocfilehash: fb76fd61cb06b2877ebe0cd1714610b25845ebc0
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/19/2019
-ms.locfileid: "67259816"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72647120"
 ---
 # <a name="walkthrough-create-a-code-snippet"></a>Tutorial: Crear un fragmento de código
 
@@ -76,9 +76,9 @@ El siguiente XML es la plantilla básica de fragmento de código:
        <![CDATA[Dim root = Math.Sqrt(16)]]>
    </Code>
    ```
-   
+
    > [!NOTE]
-   > No puede especificar cómo se debe aplicar sangría o formato a las líneas de código en la sección **CDATA** de un fragmento de código. Después de la inserción, el servicio de lenguaje aplica el formato automáticamente al código insertado. 
+   > No puede especificar cómo se debe aplicar sangría o formato a las líneas de código en la sección **CDATA** de un fragmento de código. Después de la inserción, el servicio de lenguaje aplica el formato automáticamente al código insertado.
 
 5. Guarde el fragmento de código como *SquareRoot.snippet* (puede guardarlo en cualquier lugar).
 
@@ -86,7 +86,7 @@ El siguiente XML es la plantilla básica de fragmento de código:
 
 1. Puede importar un fragmento de código a la instalación de Visual Studio mediante el **Administrador de fragmentos de código**. Para abrirlo, seleccione **Herramientas** > **Administrador de fragmentos de código**.
 
-2. Haga clic en el botón **Import** (Importar).
+2. Haga clic en el botón **Importar**.
 
 3. Vaya a la ubicación donde ha guardado el fragmento de código en el procedimiento anterior, selecciónelo y haga clic en **Abrir**.
 

@@ -8,17 +8,17 @@ f1_keywords:
 - VS.CHOOSEITEMS.UniversalWindowsComponents
 helpviewer_keywords:
 - Toolbox, Components tab
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 17f040b9bb64c2192bc6b376f5d0397ee5438071
-ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.openlocfilehash: bd9c6bf4d24a681c426a20f490dba2cc1d5080fc
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66747753"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72644605"
 ---
 # <a name="toolbox-components-tab"></a>Cuadro de herramientas, pestaña Componentes
 

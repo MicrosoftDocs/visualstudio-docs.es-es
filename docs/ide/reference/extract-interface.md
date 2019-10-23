@@ -2,8 +2,8 @@
 title: Refactorización de extracción de una interfaz
 ms.date: 01/26/2018
 ms.topic: reference
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 f1_keywords:
 - vs.csharp.refactoring.extractinterface
@@ -12,12 +12,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 8890bac11a37d64c2ace4ea23b92a6ad20a6cbb0
-ms.sourcegitcommit: 614d5b99576ea27a41957cd94062dc95cbd29c1c
+ms.openlocfilehash: 15da8bdf1a3df60a7ad4816ce578ec5672c85ecf
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/10/2019
-ms.locfileid: "65531686"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72654415"
 ---
 # <a name="extract-an-interface-refactoring"></a>Refactorización de extracción de una interfaz
 
@@ -49,7 +49,7 @@ Esta refactorización se aplica a lo siguiente:
 
    - **Teclado**
       - Presione **CTRL+R** y, a continuación, **CTRL+I**. (El método abreviado de teclado puede variar en función del perfil que se haya seleccionado).
-      - Presione **Ctrl**+**.** para activar el menú **Acciones rápidas y refactorizaciones** y seleccione **Extraer interfaz** en el menú emergente de la ventana Vista previa.
+      - Presione **Ctrl**+ **.** para activar el menú **Acciones rápidas y refactorizaciones** y seleccione **Extraer interfaz** en el menú emergente de la ventana Vista previa.
    - **Mouse**
       - Seleccione **Editar > Refactorizar > Extraer interfaz**.
       - Haga clic con el botón derecho en el nombre de la clase, seleccione el menú **Acciones rápidas y refactorizaciones** y elija **Extraer interfaz** en el menú emergente de la ventana Vista previa.
@@ -58,7 +58,7 @@ Esta refactorización se aplica a lo siguiente:
 
    ![Extraer interfaz](media/extractinterface-dialog-same-file.png)
 
-   | Campo | Descripción |
+   | Campo | DESCRIPCIÓN |
    | - | - |
    | **Nuevo nombre de interfaz** | Nombre de la interfaz que se va a crear. El nombre predeterminado es I*ClassName*, donde *ClassName* es el nombre de la clase seleccionada anteriormente. |
    | **Nuevo nombre de archivo** | Nombre del archivo generado que va a incluir la interfaz. Al igual que el nombre de interfaz, el nombre predeterminado es I*ClassName*, donde *ClassName* es el nombre de la clase seleccionada anteriormente. También puede seleccionar la opción **Agregar al archivo actual**. |

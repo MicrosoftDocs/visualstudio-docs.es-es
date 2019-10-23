@@ -5,20 +5,20 @@ ms.date: 03/19/2019
 ms.technology: vs-ide-general
 ms.topic: conceptual
 ms.custom: vs-get-started
-author: gewarren
+author: jillre
 f1_keywords:
 - vs.startpage
 - VS.StartPage.HowDoI
-ms.author: gewarren
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 323f941ddb4672de8d52d56cf4e07910531c3df8
-ms.sourcegitcommit: 6993bcb0d2b0067b1b7b7899bfba52c31c70b7e7
+ms.openlocfilehash: 21449c338024aa19d07c8bf7435c5e88c92c3988
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/18/2019
-ms.locfileid: "71095389"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72632438"
 ---
 # <a name="welcome-to-the-visual-studio-ide"></a>Le damos la bienvenida al IDE de Visual Studio
 

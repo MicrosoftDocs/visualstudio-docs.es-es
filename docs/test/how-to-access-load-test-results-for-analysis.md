@@ -11,15 +11,15 @@ helpviewer_keywords:
 - load tests, results
 - Load Test Viewer, viewing
 ms.assetid: b0a3e694-2894-479b-b270-7e61e9fafacd
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: e4b14be6df351a6975fb8a7cf6fa506a5d4f6041
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 6be8649ab611a44cb9d2791ae1f4a0e61e930d5b
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62979437"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72664880"
 ---
 # <a name="how-to-access-load-test-results-for-analysis"></a>Procedimiento para acceder a los resultados de pruebas de carga para el análisis
 

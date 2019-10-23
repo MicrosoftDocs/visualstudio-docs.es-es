@@ -11,21 +11,21 @@ helpviewer_keywords:
 - wavy underlines
 - Text Editor Options dialog box, IntelliSense
 ms.assetid: 3466dedb-e5f4-424c-8dd8-e4941b2f4fc2
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: d7e7e76e025c2c426a83f00c1cf2af830eb1c26a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 2d1e330788b72ff0b4395d1e5d531d1d233f59e7
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62778689"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72666240"
 ---
 # <a name="options-text-editor-c-intellisense"></a>Opciones, editor de texto, C#, IntelliSense
 
-Use la página de opciones de **IntelliSense** para modificar la configuración que afecta al comportamiento de IntelliSense en C#. Para obtener acceso a esta página de opciones, elija **Herramientas** > **Opciones** y, después, elija **Editor de texto** > **C#** > **IntelliSense**.
+Use la página de opciones de **IntelliSense** para modificar la configuración que afecta al comportamiento de IntelliSense en C#. Para obtener acceso a esta página de opciones, elija **Herramientas** > **Opciones** y, después, elija **Editor de texto** > **C#**  > **IntelliSense**.
 
 La página de opciones de **IntelliSense** contiene las siguientes opciones:
 
@@ -53,7 +53,7 @@ La página de opciones de **IntelliSense** contiene las siguientes opciones:
 
 - Incluir fragmentos de código cuando ?-Tab se escriba después de un identificador
 
-   Si esta opción está seleccionada, IntelliSense agrega a la lista de finalización alias relativos a los fragmentos de código de C# cuando se presione **?**+**TAB** después de un identificador.
+   Si esta opción está seleccionada, IntelliSense agrega a la lista de finalización alias relativos a los fragmentos de código de C# cuando se presione **?** +**TAB** después de un identificador.
 
 ## <a name="enter-key-behavior"></a>Comportamiento de la tecla Entrar
 

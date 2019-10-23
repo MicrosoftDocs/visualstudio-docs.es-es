@@ -8,17 +8,17 @@ helpviewer_keywords:
 - Debug.Goto command
 - Go To command
 ms.assetid: 201e1dd2-6701-467d-8cc1-faec2ef20511
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9bdc1c97d35b79fec40bbaf8994176cfbb27b8e8
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 5782f5e7dba8d18f9d6f48f345d5e133138e6eea
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68919217"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72748748"
 ---
 # <a name="go-to-command"></a>Ir a (Comando)
 Mueve el cursor a la línea especificada.
@@ -46,7 +46,7 @@ El alias de este comando es GoToLn.
 >Edit.GoTo 125
 ```
 
-## <a name="see-also"></a>Otras referencias
+## <a name="see-also"></a>Vea también
 
 - [Comandos de Visual Studio](../../ide/reference/visual-studio-commands.md)
 - [Ventana Comandos](../../ide/reference/command-window.md)

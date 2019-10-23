@@ -10,15 +10,15 @@ helpviewer_keywords:
 - counter sets
 - load tests, counter sets
 ms.assetid: 64315c2f-a0b2-4378-be16-0774b99beef5
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 4ca910038e35ee65e6d97999f08013f398eaec9e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: f781580f28c3b829483180d559851bc9730fa18e
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62950128"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72653494"
 ---
 # <a name="how-to-manage-counter-sets-using-the-load-test-editor"></a>Procedimiento para administrar conjuntos de contadores mediante el Editor de pruebas de carga
 

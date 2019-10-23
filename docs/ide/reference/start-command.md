@@ -8,17 +8,17 @@ helpviewer_keywords:
 - Start command
 - Debug.Start command
 ms.assetid: dc4e4aa2-b0ab-4e00-92db-6dc3058ddc21
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8f455306a87c82c5cd4fe55ccacdbba070b4467c
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 6f3179c223aef8226577fe726b6d91301d42572a
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68926027"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72748623"
 ---
 # <a name="start-command"></a>Iniciar (Comando)
 Empieza a depurar el proyecto de inicio.
@@ -44,7 +44,7 @@ En este ejemplo, se inicia al depurador y se pasa por alto cualquier excepción 
 >Debug.Start
 ```
 
-## <a name="see-also"></a>Otras referencias
+## <a name="see-also"></a>Vea también
 
 - [Comandos de Visual Studio](../../ide/reference/visual-studio-commands.md)
 - [Ventana Comandos](../../ide/reference/command-window.md)

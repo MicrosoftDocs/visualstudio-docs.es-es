@@ -8,17 +8,17 @@ helpviewer_keywords:
 - Set Current Thread command
 - Debug.SetCurrentThread command
 ms.assetid: 9917ed1d-6c30-4d94-b2f0-69acce74f1b2
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3ea652f04295871f9437d80555254caecab87a48
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 0d782a507d57e459aa5735cf34717f13e41d4cde
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68926062"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72748615"
 ---
 # <a name="set-current-thread-command"></a>Establecer subproceso actual (Comando)
 Establece el subproceso especificado como el subproceso actual.
@@ -40,7 +40,7 @@ Obligatorio. Selecciona un subproceso por su índice.
 >Debug.SetCurrentThread 1
 ```
 
-## <a name="see-also"></a>Otras referencias
+## <a name="see-also"></a>Vea también
 
 - [Comandos de Visual Studio](../../ide/reference/visual-studio-commands.md)
 - [Ventana Comandos](../../ide/reference/command-window.md)

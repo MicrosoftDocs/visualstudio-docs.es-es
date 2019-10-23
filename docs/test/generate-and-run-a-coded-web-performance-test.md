@@ -11,15 +11,15 @@ ms.assetid: 169e48f9-52fd-4d0b-83d9-54913bde506b
 dev_langs:
 - CSharp
 - VB
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 49691b2031d1d935871a73833924e9dc4aa46dcd
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 082412d6773bbe69306f3cf95d10716f5675f3bb
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68918407"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72664937"
 ---
 # <a name="generate-and-run-a-coded-web-performance-test"></a>Generar y ejecutar una prueba de rendimiento web codificada
 

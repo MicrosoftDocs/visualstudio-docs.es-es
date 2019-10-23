@@ -10,17 +10,17 @@ f1_keywords:
 - VC.Project.ShaderGraphContentTask.ContentOutput
 - VC.Project.ImageContentTask.GenerateMips
 ms.assetid: ea587909-e434-46a8-abf8-9b3e95a58b4f
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c595f4c8f344cfb9e8678d8f9c425a564baa9e4b
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: 400e69ddaf9ebd3596edf3b926484b623225d672
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65459111"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72634533"
 ---
 # <a name="how-to-use-3d-assets-in-your-game-or-app"></a>Procedimiento Usar recursos en 3D en un juego o una aplicación
 
@@ -36,7 +36,7 @@ Para poder implementar los recursos 3D como parte de la compilación, Visual Stu
 
 1. En el **Explorador de soluciones**, abra el menú contextual del proyecto y luego elija **Dependencias de compilación** > **Compilar personalizaciones**.
 
-   Aparece el cuadro de diálogo **Archivos de personalizaciones de compilación de Visual C++**.
+   Aparece el cuadro de diálogo **Archivos de personalizaciones de compilación de Visual C++** .
 
 2. En **Archivos de personalizaciones de compilación disponibles**, active las casillas correspondientes a los tipos de recursos que quiere usar en el proyecto, como se describe en la siguiente tabla:
 
@@ -71,9 +71,9 @@ Estos son los tres tipos de elemento de canalización de contenido y los tipos d
 
 |Tipo de elemento|Tipos de archivo de código fuente|Formato del archivo de salida|
 |---------------| - | - |
-|**Canalización de contenido de la imagen**|Formato PNG (Portable Network Graphics, *.png*)<br /><br /> JPEG (*.jpg*, *.jpeg*, *.jpe*, *.jfif*)<br /><br /> DirectDraw Surface (*.dds*)<br /><br /> Formato de intercambio de gráficos (*.gif*)<br /><br /> Mapa de bits (*.bmp*, *.dib*)<br /><br /> Tagged Image File Format (*.tif*, *.tiff*)<br /><br /> Targa (*.tga*)|DirectDraw Surface (*.dds*)|
-|**Canalización de contenido de mallas**|Archivo de intercambio FBX de Autodesk (*.fbx*)<br /><br /> Archivo DAE de Collada (*.dae*)<br /><br /> Archivo OBJ de Wavefront (*.obj*)|Archivo 3D de malla (*.cmo*)|
-|**Canalización de contenido del sombreador**|Gráfico de sombreador visual (*.dgsl*)|Resultado del sombreador compilado (*.cso*)|
+|**Canalización de contenido de la imagen**|Formato PNG (Portable Network Graphics, *.png*)<br /><br /> JPEG ( *.jpg*, *.jpeg*, *.jpe*, *.jfif*)<br /><br /> DirectDraw Surface ( *.dds*)<br /><br /> Formato de intercambio de gráficos ( *.gif*)<br /><br /> Mapa de bits ( *.bmp*, *.dib*)<br /><br /> Tagged Image File Format ( *.tif*, *.tiff*)<br /><br /> Targa ( *.tga*)|DirectDraw Surface ( *.dds*)|
+|**Canalización de contenido de mallas**|Archivo de intercambio FBX de Autodesk ( *.fbx*)<br /><br /> Archivo DAE de Collada ( *.dae*)<br /><br /> Archivo OBJ de Wavefront ( *.obj*)|Archivo 3D de malla ( *.cmo*)|
+|**Canalización de contenido del sombreador**|Gráfico de sombreador visual ( *.dgsl*)|Resultado del sombreador compilado ( *.cso*)|
 
 ## <a name="configure-asset-content-pipeline-properties"></a>Configurar las propiedades de la canalización de contenido de recursos
 
@@ -95,7 +95,7 @@ Se pueden establecer las propiedades de la canalización de contenido de cada ar
 
 Cuando se utiliza la herramienta de canalización de contenido de la imagen para compilar un activo de textura, se puede comprimir la textura de varias maneras, indicar si se deben generar niveles de MIP en tiempo de compilación y cambiar el nombre del archivo de salida.
 
-|Propiedad.|Descripción|
+|Propiedad.|DESCRIPCIÓN|
 |--------------|-----------------|
 |**Compress**|Especifica el tipo de compresión que se utiliza para el archivo de salida.<br /><br /> Las opciones disponibles son:<br /><br /> -   **Sin compresión**<br />-   **Compresión BC1_UNORM**<br />-   **Compresión BC1_UNORM_SRGB**<br />-   **Compresión BC2_UNORM**<br />-   **Compresión BC2_UNORM_SRGB**<br />-   **Compresión BC3_UNORM**<br />-   **Compresión BC3_UNORM_SRGB**<br />-   **Compresión BC4_UNORM**<br />-   **Compresión BC4_SNORM**<br />-   **Compresión BC5_UNORM**<br />-   **Compresión BC5_SNORM**<br />-   **Compresión BC6H_UF16**<br />-   **Compresión BC6H_SF16**<br />-   **Compresión BC7_UNORM**<br />-   **Compresión BC7_UNORM_SRGB**<br /><br /> Para obtener información sobre qué formatos de compresión se admiten en las diferentes versiones de DirectX, vea la [Guía de programación para DXGI](http://go.microsoft.com/fwlink/p/?LinkId=246265).|
 |Convertir a formato alpha premultiplicado|**Sí** para convertir la imagen al formato alfa premultiplicado en el archivo de salida, de lo contrario, **No**. Solo se cambia el archivo de salida, la imagen original no se cambia.|
@@ -106,7 +106,7 @@ Cuando se utiliza la herramienta de canalización de contenido de la imagen para
 
 Cuando se utiliza la herramienta de canalización de contenido de mallas para compilar un activo de malla, se puede cambiar el nombre del archivo de salida.
 
-|Propiedad.|Descripción|
+|Propiedad.|DESCRIPCIÓN|
 |--------------|-----------------|
 |**Salida de contenido**|Especifica el nombre del archivo de salida. **Importante:**  Cambiar la extensión del nombre del archivo de salida no tiene ningún efecto sobre el formato del archivo.|
 
@@ -114,7 +114,7 @@ Cuando se utiliza la herramienta de canalización de contenido de mallas para co
 
 Cuando se utiliza la herramienta de canalización de contenido del sombreador para compilar un activo de sombreador, se puede cambiar el nombre del archivo de salida.
 
-|Propiedad.|Descripción|
+|Propiedad.|DESCRIPCIÓN|
 |--------------|-----------------|
 |**Salida de contenido**|Especifica el nombre del archivo de salida. **Importante:**  Cambiar la extensión del nombre del archivo de salida no tiene ningún efecto sobre el formato del archivo.|
 
@@ -211,7 +211,7 @@ cbuffer MiscVars : register(b3)
 
 ## <a name="related-topics"></a>Temas relacionados
 
-|Title|Descripción|
+|Title|DESCRIPCIÓN|
 |-----------|-----------------|
 |[Cómo: Exportar una textura que contiene mapas MIP](../designers/how-to-export-a-texture-that-contains-mipmaps.md)|Describe cómo utilizar la canalización de contenido de la imagen para exportar una textura que contiene mapas MIP calculados previamente.|
 |[Cómo: Exportar una textura que tiene valores alfa previamente multiplicados](../designers/how-to-export-a-texture-that-has-premultiplied-alpha.md)|Describe cómo utilizar la canalización de contenido de imagen para exportar una textura que contiene valores alfa multiplicados previamente.|

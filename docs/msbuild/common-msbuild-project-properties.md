@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 38da720b63c8f5ba6d2ceb89fe8b414c6700cbcd
-ms.sourcegitcommit: e82baa50bf5a65858c410882c2e86a552c2c1921
+ms.openlocfilehash: 5fa726aa9f2055f7803f066607ee931550bdcafb
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72381358"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72747367"
 ---
 # <a name="common-msbuild-project-properties"></a>Propiedades comunes de proyectos de MSBuild
 En la tabla siguiente se enumeran las propiedades usadas con frecuencia definidas en los archivos de proyecto de Visual Studio o incluidas en archivos *.targets* que proporciona MSBuild.
@@ -89,7 +89,7 @@ En la tabla siguiente se enumeran las propiedades usadas con frecuencia definida
 | PathMap | Especifica cómo asignar rutas físicas a nombres de ruta de origen generados por el compilador. Esta propiedad es equivalente al modificador `/pathmap` del compilador de *csc.exe*. |
 | PdbFile | Nombre de archivo del archivo *.pdb* que va a emitir. Esta propiedad es equivalente al modificador `/pdb` del compilador de *csc.exe*. |
 | Plataforma | Sistema operativo para el que se está compilando. Los valores válidos son "Any CPU", "x 86" y "x 64". |
-| ProduceReferenceAssembly | Se trata de un valor booleano que cuando se establece en `true` permite la producción de [ensamblados de referencia](https://github.com/dotnet/roslyn/blob/master/docs/features/refout.md) para el ensamblado actual. `Deterministic` debe ser `true` cuando use esta característica. Esta propiedad corresponde al modificador `/refout` de los compiladores de *vbc.exe* y *csc.exe*. |
+| ProduceReferenceAssembly | Se trata de un valor booleano que cuando se establece en `true` permite la producción de [ensamblados de referencia](/dotnet/standard/assembly/reference-assemblies) para el ensamblado actual. `Deterministic` debe ser `true` cuando use esta característica. Esta propiedad corresponde al modificador `/refout` de los compiladores de *vbc.exe* y *csc.exe*. |
 | ProduceOnlyReferenceAssembly | Valor booleano que instruye al compilador que emita solo un ensamblado de referencia, en lugar de código compilado. No se puede usar con `ProduceReferenceAssembly`.  Esta propiedad corresponde al modificador `/refonly` de los compiladores de *vbc.exe* y *csc.exe*. |
 | RemoveIntegerChecks | Valor booleano que indica si se van a deshabilitar las comprobaciones de los errores de desbordamiento de enteros. El valor predeterminado es `false`. Esta propiedad es equivalente al modificador `/removeintchecks` del compilador de *vbc.exe*. |
 | SGenUseProxyTypes | Valor booleano que indica si *SGen.exe* debe generar los tipos de proxy. Esto únicamente se aplica si *GenerateSerializationAssemblies* está establecido en activado y solo para .NET Framework.<br /><br /> El destino de SGen usa esta propiedad para establecer la marca UseProxyTypes. Esta propiedad tiene el valor predeterminado true y no hay ninguna interfaz de usuario para cambiarlo. Para generar el ensamblado de serialización para tipos que no son de servicio web, agregue esta propiedad al archivo de proyecto y establézcala en false antes de importar *Microsoft.Common.Targets* o *C#/VB.targets*. |

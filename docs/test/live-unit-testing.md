@@ -4,16 +4,16 @@ ms.date: 03/07/2017
 ms.topic: conceptual
 helpviewer_keywords:
 - Live Unit Testing
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 646a8680211d7d79ea24a1b5b62d78eb6955b5f7
-ms.sourcegitcommit: 1a3c2ca995fd44fc72741b3a100c6e57f4f8702c
+ms.openlocfilehash: b5974819e9dca064655cf04eec3dd371f09ee15c
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/11/2019
-ms.locfileid: "72262328"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72653001"
 ---
 # <a name="how-to-configure-and-use-live-unit-testing"></a>Configuración y uso de Live Unit Testing
 

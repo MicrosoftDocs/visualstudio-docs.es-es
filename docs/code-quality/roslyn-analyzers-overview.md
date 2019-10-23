@@ -7,17 +7,17 @@ helpviewer_keywords:
 - analyzers
 - Roslyn analyzers
 - code analyzers
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 844b9475ea59ba15ac96d3cbe19523f5cba63c72
-ms.sourcegitcommit: 7825d4163e52d724e59f6c0da209af5fbef673f7
+ms.openlocfilehash: 388667485f27b59e46a1c39d95b37ddc413240ee
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71999988"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72649137"
 ---
 # <a name="overview-of-source-code-analyzers"></a>Información general de los analizadores de código fuente
 

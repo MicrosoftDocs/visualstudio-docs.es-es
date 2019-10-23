@@ -9,17 +9,17 @@ helpviewer_keywords:
 - types [Visual Studio], class diagrams
 - class diagrams, types
 ms.assetid: de110a4e-5b51-4a40-9dee-615df4d8f999
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ef2882fec8d213c38a2e125d4e3f0c3f22d1d581
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 386b62e278b1fbe8230af16b54f8b7bb95857c48
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62975169"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72631529"
 ---
 # <a name="how-to-view-existing-types-in-class-designer"></a>Procedimiento Ver los tipos existentes en el Diseñador de clases
 

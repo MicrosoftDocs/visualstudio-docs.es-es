@@ -2,17 +2,17 @@
 title: Inserción de comentarios de documentación XML
 ms.date: 01/26/2018
 ms.topic: reference
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: b258b456aa614c851be138c017b3378cc13984cc
-ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
+ms.openlocfilehash: e9153677b833a89a236923a971b511548b064142
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "66715378"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72668606"
 ---
 # <a name="how-to-insert-xml-comments-for-documentation-generation"></a>Procedimiento para insertar comentarios XML para la generación de documentación
 

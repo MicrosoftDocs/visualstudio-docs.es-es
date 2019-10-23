@@ -3,17 +3,17 @@ title: Código fuente de L2DBForm.xaml
 ms.date: 11/04/2016
 ms.topic: sample
 ms.assetid: 624e96d4-6d27-4195-8ac2-2f3835f6c57e
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b650c65eb81fb087b7783b41065445e1bbea20a0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 41796664d5456876edff81662cbab44edf7a82f2
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62844260"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72635283"
 ---
 # <a name="l2dbformxaml-source-code"></a>Código fuente de L2DBForm.xaml
 
@@ -85,7 +85,7 @@ La última sección de la interfaz de usuario, **Agregar nuevo libro**, no utili
 
 ## <a name="example"></a>Ejemplo
 
-### <a name="description"></a>Descripción
+### <a name="description"></a>DESCRIPCIÓN
 
 > [!NOTE]
 > Se recomienda copiar el código siguiente en un editor de código, como el editor de código fuente de C# de Visual Studio, de forma que sea más sencillo realizar un seguimiento de los números de línea.

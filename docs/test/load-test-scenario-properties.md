@@ -6,15 +6,15 @@ helpviewer_keywords:
 - load tests, properties
 - load tests, scenarios
 ms.assetid: 4414a638-1fa2-40ad-b1f4-b99f90b62e62
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 86ed8346a27a02eb7e04c1f7a9fa361b0e03431a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 54159ca7b0d99e0bba7e7b048138ffacf6ab5b0b
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62785961"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72652967"
 ---
 # <a name="load-test-scenario-properties"></a>Propiedades de los escenarios de pruebas de carga
 

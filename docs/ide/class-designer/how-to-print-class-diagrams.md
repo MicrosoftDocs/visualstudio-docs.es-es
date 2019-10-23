@@ -6,17 +6,17 @@ helpviewer_keywords:
 - printing [Visual Studio], class diagrams
 - class diagrams, printing
 ms.assetid: 62c87425-3446-41fb-943c-1f86397883c8
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cdc03624b2260870ca43643caa995db5621dbec9
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 211cb0aab89dd148b408efaef9c40f5bc25c41aa
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62975195"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72631553"
 ---
 # <a name="how-to-print-class-diagrams"></a>Procedimiento Imprimir diagramas de clases
 

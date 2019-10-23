@@ -6,17 +6,17 @@ helpviewer_keywords:
 - open folder [Visual Studio]
 - anycode [Visual Studio]
 - projects and solutions, develop code without
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7554d3f89547701e1a7cad0280a1655450520586
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a88bfb5f12ae707c98eedd1f57a4be14665aa83c
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62962502"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72652503"
 ---
 # <a name="develop-code-in-visual-studio-without-projects-or-solutions"></a>Desarrollo de código en Visual Studio sin proyectos o soluciones
 
@@ -83,7 +83,7 @@ La configuración del código que se ejecuta en Visual Studio difiere en funció
 Los códigos base basados en MSBuild pueden tener varias configuraciones de compilación que aparecen en la lista desplegable del botón **Inicio**. Seleccione el archivo que desea usar como el elemento de inicio y, luego, elija el botón **Inicio** para comenzar con la depuración.
 
 > [!NOTE]
-> En el caso de los códigos base de C# y Visual Basic, debe tener instalada la carga de trabajo **Desarrollo para el escritorio de .NET**. En el caso de los códigos base de C++, debe tener instalada la carga de trabajo **Desarrollo para el escritorio con C++**.
+> En el caso de los códigos base de C# y Visual Basic, debe tener instalada la carga de trabajo **Desarrollo para el escritorio de .NET**. En el caso de los códigos base de C++, debe tener instalada la carga de trabajo **Desarrollo para el escritorio con C++** .
 
 ### <a name="codebases-that-use-custom-build-tools"></a>Bases de código que usan herramientas de compilación personalizadas
 

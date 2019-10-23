@@ -11,18 +11,18 @@ dev_langs:
 - jsharp
 - C++
 helpviewer_keywords:
-- MSBuild (Visual C++), ParallelCustomBuild task
-- ParallelCustomBuild task (MSBuild (Visual C++))
+- MSBuild (C++), ParallelCustomBuild task
+- ParallelCustomBuild task (MSBuild (C++))
 author: mikeblome
 ms.author: mblome
 ms.workload:
 - multiple
-ms.openlocfilehash: 54623ab1c58d85de55c5b8a24384bf0be46f1a61
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c6ea14e61eb2d62f3fc9ccdac3a17010ccc9194f
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62963759"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72747219"
 ---
 # <a name="parallelcustombuild-task"></a>Tarea ParallelCustomBuild
 
@@ -32,12 +32,12 @@ Ejecute instancias en paralelo de la [tarea CustomBuild](../msbuild/custombuild-
 
 En la tabla siguiente se describen los parámetros de la tarea **ParallelCustomBuild**.
 
-|Parámetro|Descripción|
+|Parámetro|DESCRIPCIÓN|
 |---------------|-----------------|
 |**BreakOnFirstFailure**|Parámetro **bool** opcional.|
 |**MaxItemsInBatch**|Parámetro **int** opcional.|
 |**MaxProcesses**|Parámetro **int** opcional.|
-|**Sources**|Parámetro obligatorio de tipo **ITaskItem[]**.|
+|**Sources**|Parámetro obligatorio de tipo **ITaskItem[]** .|
 
 ## <a name="see-also"></a>Vea también
 

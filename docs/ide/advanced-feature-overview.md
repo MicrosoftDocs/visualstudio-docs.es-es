@@ -2,17 +2,17 @@
 title: Características avanzadas
 ms.date: 06/01/2018
 ms.topic: conceptual
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 29f7f0a94939f06b74443ae08a2ef5b226a1e494
-ms.sourcegitcommit: 44e9b1d9230fcbbd081ee81be9d4be8a485d8502
+ms.openlocfilehash: 3c54983ee9025cf3e1c4df0161a6be55ebf9b2fa
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/30/2019
-ms.locfileid: "70180359"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72631982"
 ---
 # <a name="features-of-visual-studio"></a>Características de Visual Studio
 

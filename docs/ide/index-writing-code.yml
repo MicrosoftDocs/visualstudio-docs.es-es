@@ -10,12 +10,12 @@ metadata:
   author: gewarren
   ms.author: gewarren
   ms.date: 10/15/2019
-  ms.openlocfilehash: 275ac40ff1c2edf70a8388b09e50fc3d496e8050
-  ms.sourcegitcommit: e82baa50bf5a65858c410882c2e86a552c2c1921
+  ms.openlocfilehash: 30345839ca1c5f4f07b3c36415f7aad277693069
+  ms.sourcegitcommit: 6244689e742e551e7b6933959bd42df56928ece3
   ms.translationtype: HT
   ms.contentlocale: es-ES
-  ms.lasthandoff: 10/16/2019
-  ms.locfileid: "72391530"
+  ms.lasthandoff: 10/17/2019
+  ms.locfileid: "72516829"
 landingContent:
 - title: Abrir o crear un proyecto
   linkLists:
@@ -45,6 +45,8 @@ landingContent:
       url: code-styles-and-code-cleanup.md
     - text: Análisis de código
       url: ../code-quality/roslyn-analyzers-overview.md
+    - text: IntelliCode
+      url: /visualstudio/intellicode/intellicode-visual-studio
 - title: Introducción a los lenguajes de programación
   linkLists:
   - linkListType: tutorial

@@ -2,16 +2,16 @@
 title: Deshabilitación del reconocimiento de PPP en Visual Studio
 description: Aquí se describen las limitaciones del Diseñador de Windows Forms en monitores HDPI y el procedimiento para ejecutar Visual Studio como un proceso sin reconocimiento de PPP.
 ms.date: 04/05/2019
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.topic: conceptual
-ms.openlocfilehash: fdcf255b8ad7c613a83284759a1f4859041acfc4
-ms.sourcegitcommit: b83fefa8177c5554cbe2c59c4d102cbc534f7cc6
+ms.openlocfilehash: a368108f1b8f9682151ed8c7b0a6d8b83b1b8a1f
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2019
-ms.locfileid: "69619977"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72637410"
 ---
 # <a name="disable-dpi-awareness-in-visual-studio"></a>Deshabilitación del reconocimiento de PPP en Visual Studio
 
@@ -77,7 +77,7 @@ Para marcar Visual Studio como sin reconocimiento de PPP, se puede modificar el 
 
 ### <a name="set-your-display-scaling-setting-to-100"></a>Establecer la configuración de ajuste de pantalla en el 100 %
 
-Para establecer la configuración de ajuste de pantalla en el 100 % en Windows 10, escriba **configuración de pantalla** en el cuadro de búsqueda de la barra de tareas y, después, seleccione **Cambiar configuración de pantalla**. En la ventana **Configuración**, establezca **Cambiar el tamaño del texto, las aplicaciones y otros elementos** en **100 %**.
+Para establecer la configuración de ajuste de pantalla en el 100 % en Windows 10, escriba **configuración de pantalla** en el cuadro de búsqueda de la barra de tareas y, después, seleccione **Cambiar configuración de pantalla**. En la ventana **Configuración**, establezca **Cambiar el tamaño del texto, las aplicaciones y otros elementos** en **100 %** .
 
 Puede que no sea conveniente establecer el tamaño de la pantalla en el 100 %, ya que puede hacer que la interfaz de usuario sea demasiado pequeña para usarla.
 

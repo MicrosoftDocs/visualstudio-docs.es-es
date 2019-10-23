@@ -6,15 +6,15 @@ helpviewer_keywords:
 - load tests, properties
 - load tests, run settings
 ms.assetid: 867a9c21-0909-4963-bc02-d41e9393008c
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: ec6ca0e39a7816d99377bc13e1274cbc96a663ea
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 4b8ef3edb592b003a8c42ef954129c3bafd3ffc8
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62970648"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72653341"
 ---
 # <a name="how-to-specify-the-timing-details-storage-property-for-a-load-test-run-setting"></a>Procedimiento para especificar la propiedad Almacenamiento de detalles de tiempo de los parámetros de ejecución de una prueba de carga
 
@@ -51,7 +51,7 @@ Puede editar el valor de la propiedad **Almacenamiento de detalles de tiempo** d
 
 2. Expanda el nodo **Parámetros de ejecución** de la prueba de carga.
 
-3. Elija el parámetro de ejecución que quiera configurar, por ejemplo, **Run Settings1[Active]**.
+3. Elija el parámetro de ejecución que quiera configurar, por ejemplo, **Run Settings1[Active]** .
 
 4. Abra la ventana **Propiedades**. En el menú **Ver**, seleccione la ventana **Propiedades**.
 

@@ -3,17 +3,17 @@ title: Procedimiento Crear un sombreador de textura de escala de grises
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 79181d81-44af-445e-9a18-03483dd70260
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4a8e0295864986ad5cfae2f304f5b0f802f2fb12
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: d8217cc83004be3d4a15ff26743724d553f70d44
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68924315"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72635560"
 ---
 # <a name="how-to-create-a-grayscale-texture-shader"></a>Procedimiento Crear un sombreador de textura de escala de grises
 

@@ -6,21 +6,21 @@ helpviewer_keywords:
 - icons [Visual Studio], application
 - application properties [Visual Studio], icons
 - application icons [Visual Studio]
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: f2903821c0e0843de43f68d67cc64c344ab95e02
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 1e137eda77f1807b80409872d9fe0c2966df2a41
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62547785"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72656603"
 ---
 # <a name="how-to-specify-an-application-icon-visual-basic-c"></a>Procedimiento Especificar un icono de aplicación (Visual Basic, C#)
 
-La propiedad `Icon` de un proyecto especifica el archivo de icono (*.ico*) que se mostrará para la aplicación compilada en el **Explorador de archivos** y en la barra de tareas de Windows.
+La propiedad `Icon` de un proyecto especifica el archivo de icono ( *.ico*) que se mostrará para la aplicación compilada en el **Explorador de archivos** y en la barra de tareas de Windows.
 
 Se puede acceder a la propiedad `Icon` desde el panel **Aplicación** del **Diseñador de proyectos**. Contiene una lista de iconos que se han agregado a un proyecto, como recursos o como archivos de contenido.
 
@@ -35,9 +35,9 @@ Se puede acceder a la propiedad `Icon` desde el panel **Aplicación** del **Dise
 
 1. Cuando aparezca **Diseñador de proyectos**, elija la pestaña **Aplicación**.
 
-1. **(Visual Basic)**&mdash;En la lista **Icono**, elija un archivo de icono (*.ico*).
+1. **(Visual Basic)** &mdash;En la lista **Icono**, elija un archivo de icono ( *.ico*).
 
-    **C#**&mdash;Cerca de la lista **Icono**, elija el botón **\<Examinar... >** y, después, vaya a la ubicación del archivo de icono que quiere.
+    **C#** &mdash;Cerca de la lista **Icono**, elija el botón **\<Examinar... >** y, después, vaya a la ubicación del archivo de icono que quiere.
 
 ## <a name="see-also"></a>Vea también
 

@@ -14,12 +14,12 @@ ms.author: mblome
 manager: markl
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 6c5399411998f4a03468f2dedccfd660eaf8de11
-ms.sourcegitcommit: 85d66dc9fea3fa49018263064876b15aeb6f9584
+ms.openlocfilehash: cbdbadd93eec07c43aba99e40072cb6173e0e83d
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68461818"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72747829"
 ---
 # <a name="options-text-editor-cc-advanced"></a>Opciones, editor de texto, C/C++, avanzado
 
@@ -206,6 +206,6 @@ Si esta opción está habilitada, se puede encerrar el texto seleccionado entre 
 
 Si esta opción está habilitada, se puede encerrar el texto seleccionado entre paréntesis al escribir "(" en el editor de texto.
 
-## <a name="see-also"></a>Otras referencias
+## <a name="see-also"></a>Vea también
 
 - [Opciones del editor específicas del lenguaje](../../ide/reference/setting-language-specific-editor-options.md)

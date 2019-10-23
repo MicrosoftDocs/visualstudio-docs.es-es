@@ -3,17 +3,17 @@ title: Procedimiento Modificar el punto de pivote de un modelo en 3D
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: c20b4ec8-29f5-4ca5-bc39-d4548ca6f573
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1b1baa6a42d0874cdefaa8cfb781f66e864d82b2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a2c49e42009c81f6932f76128f12fb37399a789b
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62897458"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72635472"
 ---
 # <a name="how-to-modify-the-pivot-point-of-a-3d-model"></a>Procedimiento Modificar el punto de pivote de un modelo en 3D
 

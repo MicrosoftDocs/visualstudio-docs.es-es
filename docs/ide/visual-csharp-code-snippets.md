@@ -7,17 +7,17 @@ helpviewer_keywords:
 - code snippets [C#]
 - Code Snippet Inserter [C#]
 - C#, code snippets
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 7a785623ea36fe25833f24f760c29f49ca40b459
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: e06e825779476489414ff200aba9cd43fce96e2f
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68918670"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72647260"
 ---
 # <a name="c-code-snippets"></a>Fragmentos de código de C#
 

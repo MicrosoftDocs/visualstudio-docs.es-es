@@ -7,17 +7,17 @@ helpviewer_keywords:
 - run-time errors, warnings
 - warnings, configuring
 ms.assetid: 99cf4781-bd4d-47b4-91b9-217933509f82
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3ba037dd93c64fc15d8d540880d075ea7005685b
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 2c71c352040898874cd90a397db6b8c7321ff39d
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68924112"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72652084"
 ---
 # <a name="configuring-warnings-in-visual-basic"></a>Configuración de advertencias in Visual Basic
 

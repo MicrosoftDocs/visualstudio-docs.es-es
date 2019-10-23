@@ -3,17 +3,17 @@ title: 'Archivo XSD de muestra: Esquema simple'
 ms.date: 11/04/2016
 ms.topic: sample
 ms.assetid: f7e1dde1-b4f6-4371-add4-935b68ec77d7
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0228ab75da15099aad3a6f60feca3d71f644b4ff
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: 0b6681e47ba33d16cd48f5f34389a5d113fc36ef
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65455087"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72651160"
 ---
 # <a name="sample-xsd-file-simple-schema"></a>Archivo XSD de muestra: Esquema simple
 

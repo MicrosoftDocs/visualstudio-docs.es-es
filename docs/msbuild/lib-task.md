@@ -17,20 +17,20 @@ dev_langs:
 - jsharp
 - C++
 helpviewer_keywords:
-- MSBuild (Visual C++), LIB task
-- LIB task (MSBuild (Visual C++))
+- MSBuild (C++), LIB task
+- LIB task (MSBuild (C++))
 ms.assetid: e062c7f9-cc69-4a83-9361-1bb5355e5fe8
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0c9d80da9fea46ddcc2afe2f935fa66a892d90c1
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.openlocfilehash: aa43cef2176d9b2197e16b46a50e153da135502e
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71254532"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72748095"
 ---
 # <a name="lib-task"></a>LIB (tarea)
 Incluye la herramienta de Microsoft Administrador de bibliotecas de 32 bits, *lib.exe*. El Administrador de bibliotecas crea y administra una biblioteca de archivos objeto con formato de archivo de objeto común (COFF). El Administrador de bibliotecas también puede crear archivos de exportación y bibliotecas de importación para hacer referencia a las definiciones que se exportan. Para obtener más información, vea [Referencia de LIB](/cpp/build/reference/lib-reference) y [Ejecutar LIB](/cpp/build/reference/running-lib).

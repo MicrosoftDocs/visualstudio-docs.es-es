@@ -8,17 +8,17 @@ helpviewer_keywords:
 - unit tests, generating
 - unit tests, running
 - unit tests, authoring
-ms.author: gewarren
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - dotnet
-author: gewarren
-ms.openlocfilehash: 4b9e30d70aa90645d05d3bf7b530056feec752ca
-ms.sourcegitcommit: 9f11537a721e69879a612979a1aca98f40bb4d4d
+author: jillre
+ms.openlocfilehash: 317b014ae0ef684dfc5f7ff73247d6186846a860
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/05/2019
-ms.locfileid: "70383720"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72659659"
 ---
 # <a name="walkthrough-create-and-run-unit-tests-for-managed-code"></a>Tutorial: Crear y ejecutar pruebas unitarias en código administrado
 

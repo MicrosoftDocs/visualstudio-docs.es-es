@@ -2,20 +2,20 @@
 title: Probar una aplicación de UWP con una prueba automatizada de IU
 ms.date: 05/31/2018
 ms.topic: conceptual
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 dev_langs:
 - CSharp
 - VB
 ms.workload:
 - uwp
-ms.openlocfilehash: d50972ccb68ba43e8ebefa0d69fdfff8f7fc5be4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 7000cb64a14510e972222d2d4dae30ceee593c43
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62430268"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72659965"
 ---
 # <a name="create-a-coded-ui-test-to-test-a-uwp-app"></a>Crear una prueba automatizada de IU para probar una aplicación de UWP
 
@@ -74,7 +74,7 @@ El primer paso es crear una aplicación sencilla de UWP para ejecutar la prueba.
    ::: moniker-end
 
    > [!NOTE]
-   > Si no ve la plantilla **Proyecto de prueba automatizada de IU (Windows universal)**, necesitará [instalar el componente de prueba automatizada de IU](../test/use-ui-automation-to-test-your-code.md#install-the-coded-ui-test-component).
+   > Si no ve la plantilla **Proyecto de prueba automatizada de IU (Windows universal)** , necesitará [instalar el componente de prueba automatizada de IU](../test/use-ui-automation-to-test-your-code.md#install-the-coded-ui-test-component).
 
 1. En el cuadro de diálogo **Generar código para prueba automatizada de IU**, seleccione **Editar la prueba manualmente**.
 
@@ -158,7 +158,7 @@ El primer paso es crear una aplicación sencilla de UWP para ejecutar la prueba.
    Reemplace el identificador de automatización en el código de ejemplo por el valor que copió en el portapapeles en el paso anterior.
 
    > [!IMPORTANT]
-   > Recorte el principio del identificador de automatización para quitar caracteres como **P ~**. Si no recorta estos caracteres, la prueba produce una `Microsoft.VisualStudio.TestTools.UITest.Extension.PlaybackFailureException` al intentar iniciar la aplicación.
+   > Recorte el principio del identificador de automatización para quitar caracteres como **P ~** . Si no recorta estos caracteres, la prueba produce una `Microsoft.VisualStudio.TestTools.UITest.Extension.PlaybackFailureException` al intentar iniciar la aplicación.
 
 1. A continuación, agregue código al método de prueba para hacer clic en el botón. En la línea siguiente a `XamlWindow.Launch`, agregue un gesto para pulsar el control de botón:
 

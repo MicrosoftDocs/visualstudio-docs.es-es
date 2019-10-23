@@ -7,15 +7,15 @@ helpviewer_keywords:
 - Web services [Visual Studio ALM], creating
 - service tests, Web
 ms.assetid: fbcd57ee-06ad-4260-8694-09f8e0f93e39
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 3fd640a79a81e2306c8abd1c3c5279b1fc8f335f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 4bbc7423c3f08665109c17d25d43ae6d9d652100
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62950142"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72653594"
 ---
 # <a name="how-to-create-a-web-service-test"></a>Procedimiento Crear una prueba de servicios web
 
@@ -35,7 +35,7 @@ Visual Studio Enterprise
 
 2. En el **Editor de pruebas de rendimiento web**, haga clic con el botón derecho en la prueba de rendimiento web y seleccione **Agregar solicitud de servicio web**.
 
-3. En la propiedad **Url** de la nueva solicitud, escriba el nombre del servicio web, por ejemplo, **http://localhost/storecsvs/InstantOrder.asmx**.
+3. En la propiedad **Url** de la nueva solicitud, escriba el nombre del servicio web, por ejemplo, **http://localhost/storecsvs/InstantOrder.asmx** .
 
 4. Abra una sesión independiente del explorador y escriba la dirección URL de la página *.asmx* en la barra de herramientas **Dirección**. Seleccione el método que desee probar y examine el mensaje SOAP. Contiene una `SOAPAction`.
 

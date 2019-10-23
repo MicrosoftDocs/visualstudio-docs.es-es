@@ -6,15 +6,15 @@ helpviewer_keywords:
 - load tests, run settings, adding
 - load tests, run settings
 ms.assetid: 257d2a24-d582-4cfe-8b2b-51f51ba9cc84
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: c1d7f9d0c9ad07223d0b59d7aeca585b53432280
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 7d4b22b0a1127af423e97e2dc88ebbea5bf1748e
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63002243"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72664874"
 ---
 # <a name="how-to-add-additional-run-settings-to-a-load-test"></a>Procedimiento para agregar más parámetros de ejecución a una prueba de carga
 

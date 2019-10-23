@@ -5,17 +5,17 @@ ms.topic: conceptual
 f1_keywords:
 - vs.graphics
 ms.assetid: 910d673b-c884-4eeb-9928-0e89f3d38cb6
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 94dc97766d4f04451910a43146587b27726b87e3
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: 55986a703bd53318f8c0f74b8cf661412a82b716
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65459083"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72633999"
 ---
 # <a name="work-with-3d-assets-for-games-and-apps"></a>Trabajar con recursos en 3D para juegos y aplicaciones
 
@@ -54,7 +54,7 @@ Visual Studio utiliza DirectX para representar recursos en 2D y 3D. Puede selecc
 
 ## <a name="related-topics"></a>Temas relacionados
 
-|Title|Descripción|
+|Title|DESCRIPCIÓN|
 |-----------|-----------------|
 |[Trabajar con texturas e imágenes](../designers/working-with-textures-and-images.md)|Describe cómo usar Visual Studio para trabajar con imágenes y texturas.|
 |[Trabajar con modelos 3D](../designers/working-with-3-d-models.md)|Describe cómo usar Visual Studio para trabajar con modelos 3D.|

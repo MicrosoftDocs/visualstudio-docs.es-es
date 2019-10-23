@@ -2,7 +2,7 @@
 title: Aumento de la productividad de desarrollo de .NET
 description: Información general sobre la navegación, el análisis de código, las pruebas unitarias y otras características para ayudarle a escribir código .NET mejor y más rápido.
 author: kuhlenh
-ms.author: gewarren
+ms.author: jillfra
 manager: jillfra
 ms.date: 04/25/2019
 ms.topic: conceptual
@@ -10,12 +10,12 @@ helpviewer_keywords:
 - editor
 ms.workload:
 - dotnet
-ms.openlocfilehash: bd36b75f3df640df0e1910fb3a7a52d17c37d30f
-ms.sourcegitcommit: 7eb2fb21805d92f085126f3a820ac274f2216b4e
+ms.openlocfilehash: 69dd92c2dae1a042e37601917bcdef628400d8bf
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/22/2019
-ms.locfileid: "67328777"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72652590"
 ---
 # <a name="visual-studio-productivity-guide-for-c-developers"></a>Guía de productividad de Visual Studio para desarrolladores de C#
 
@@ -41,7 +41,7 @@ Algunas extensiones también ofrecen combinaciones de teclado:
 
 Estos son accesos directos populares de Visual Studio:
 
-| Métodos abreviados (todos los perfiles) | Get-Help | DESCRIPCIÓN |
+| Métodos abreviados (todos los perfiles) | Comando | DESCRIPCIÓN |
 |-|-|-|
 | **Ctrl**+**T** | Ir a todo | Navegar a cualquier declaración de archivo, tipo, miembro o símbolo |
 | **F12** (también **CTRL**+**clic**) | Ir a definición | Navegar hasta donde se define un símbolo |
@@ -51,7 +51,7 @@ Estos son accesos directos populares de Visual Studio:
 | **Ctrl**+**D** | Línea duplicada | Duplica la línea de código en la que se encuentra el cursor (disponible en la **Visual Studio 2017, versión 15.6** y posteriores) |
 | **Mayús**+**Alt**+ **+** / **-** | Expandir o contraer la selección | Expande o contrae la selección actual en el editor (disponible en **Visual Studio 2017 versión 15.5** y posteriores). |
 | **Mayús** + **Alt** +  **.** | Inserción del siguiente símbolo de inserción coincidente | Permite agregar una selección y el símbolo de inserción en la ubicación siguiente que coincida con la actual (disponible en la **versión 15.8 de Visual Studio 2017** y versiones posteriores). |
-| **Ctrl**+**Q** | Search | Buscar todos los valores de Visual Studio |
+| **Ctrl**+**Q** | Buscar | Buscar todos los valores de Visual Studio |
 | **F5** | Iniciar depuración | Iniciar la depuración de la aplicación |
 | **CTRL**+**F5** | Ejecutar sin depurar | Ejecutar la aplicación localmente sin depuración |
 | **CTRL**+**K**,**D** (perfil predeterminado) o **CTRL**+**E**,**D** (perfil de C#) | Dar formato al documento | Limpiar el formato de las infracciones en el archivo según la configuración de nueva línea, espaciado y sangría |
@@ -149,7 +149,7 @@ Varios miembros de la comunidad han escrito extensiones gratuitas que agregan in
 
 Visual Studio tiene muchas características para ayudarle a buscar código base y [navegar por él](../ide/navigating-code.md).
 
-| Característica | Método abreviado | Detalles y mejoras |
+| Característica | Acceso directo | Detalles y mejoras |
 |- | - | -|
 | Buscar todas las referencias | **MAYÚS**+**F12**| Los resultados aparece en color y se pueden agrupar por proyecto, definición y tipo de referencia como lectura o escritura. También puede "bloquear" resultados. |
 | Ir a implementación | **CTRL**+**F12** | Puede usar Ir a definición en la palabra clave `override` para navegar al miembro reemplazado. |

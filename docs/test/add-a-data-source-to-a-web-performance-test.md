@@ -6,15 +6,15 @@ helpviewer_keywords:
 - Web performance tests, walkthroughs
 - Web performance tests, data binding (database)
 ms.assetid: 2ada376d-f168-455d-9643-6acb535360c1
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: e6fad5424e74c8a65ea8ce889412b834cda6a790
-ms.sourcegitcommit: 44e9b1d9230fcbbd081ee81be9d4be8a485d8502
+ms.openlocfilehash: 8c17a1ce7b2bf775933be6e9bea3dd299d9fe717
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/30/2019
-ms.locfileid: "70180148"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72665432"
 ---
 # <a name="add-a-data-source-to-a-web-performance-test"></a>Agregar un origen de datos a una prueba de rendimiento web
 

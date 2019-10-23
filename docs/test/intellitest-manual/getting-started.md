@@ -4,17 +4,17 @@ ms.date: 05/02/2017
 ms.topic: conceptual
 helpviewer_keywords:
 - IntelliTest, Get started
-ms.author: gewarren
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-author: gewarren
-ms.openlocfilehash: 92a5b5f6ffac7285dd1a22d7193ada74e3a90967
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+author: jillre
+ms.openlocfilehash: 0d0d681c59935bbbb4591438f538d0c800cba489
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62906852"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72653205"
 ---
 # <a name="get-started-with-microsoft-intellitest"></a>Introducción a Microsoft IntelliTest
 

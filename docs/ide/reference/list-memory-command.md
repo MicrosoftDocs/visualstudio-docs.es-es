@@ -9,17 +9,17 @@ helpviewer_keywords:
 - ListMemory command
 - list memory command
 ms.assetid: a84de361-a6a6-4f6d-96aa-a0d4a424371e
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d6d0b694f9703c6260d95ad03e085fcdf774dc52
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 7bb92f3ac3420f146fdcd39b5925f7b3a517959a
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68919138"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72748700"
 ---
 # <a name="list-memory-command"></a>Mostrar memoria (Comando)
 Muestra el contenido del intervalo de memoria especificado.
@@ -85,7 +85,7 @@ A continuación se muestra una lista de los alias disponibles para el comando **
 >Debug.ListMemory /Format:float /Count:30 /Unicode
 ```
 
-## <a name="see-also"></a>Otras referencias
+## <a name="see-also"></a>Vea también
 
 - [Mostrar pila de llamadas (Comando)](../../ide/reference/list-call-stack-command.md)
 - [Mostrar subprocesos (Comando)](../../ide/reference/list-threads-command.md)

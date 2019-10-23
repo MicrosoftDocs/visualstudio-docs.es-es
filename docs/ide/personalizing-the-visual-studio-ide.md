@@ -2,17 +2,17 @@
 title: Personalizar el IDE
 ms.date: 11/20/2017
 ms.topic: conceptual
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2961730594abd268ae130cf2c3d2b93df5322c14
-ms.sourcegitcommit: ce1ab8a25c66a83e60eab80ed8e1596fe66dd85c
+ms.openlocfilehash: e6bf00573febda06aba4d12184a416341879bac7
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/29/2019
-ms.locfileid: "68606083"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72666806"
 ---
 # <a name="personalize-the-visual-studio-ide"></a>Personalizar el IDE de Visual Studio
 
@@ -40,7 +40,7 @@ Muchas opciones de personalización se exponen en el cuadro de diálogo [Opcione
 
 Para cambiar el tema de color entre claro, oscuro y azul, escriba **entorno** en el cuadro de búsqueda y elija **Entorno > General**. En el cuadro de diálogo **Opciones**, cambie la opción **Tema de color**.
 
-Para cambiar las opciones de color en el editor, escriba **entorno** en el cuadro de búsqueda y elija **Entorno > Fuentes y colores**. Consulte [Configuración de los Cambiar fuentes y colores](../ide/how-to-change-fonts-and-colors-in-visual-studio.md).
+Para cambiar las opciones de color en el editor, escriba **entorno** en el cuadro de búsqueda y elija **Entorno > Fuentes y colores**. Vea [Cómo: Cambiar fuentes y colores](../ide/how-to-change-fonts-and-colors-in-visual-studio.md).
 
 ### <a name="main-menu-casing"></a>Mayúsculas y minúsculas en el menú principal
 

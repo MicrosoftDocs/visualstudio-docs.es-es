@@ -2,17 +2,17 @@
 title: Pruebas unitarias de código de Visual C#
 ms.date: 09/27/2019
 ms.topic: conceptual
-ms.author: gewarren
-author: gewarren
+ms.author: jillfra
+author: jillre
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: 0a724ab273401994faeb88ae197966ef538e842a
-ms.sourcegitcommit: 13decf878b33fc0c5d665a88067170c2861b261b
+ms.openlocfilehash: 309cf408167cc463db8cde9e39d5c0fe4dbe26d6
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "71681597"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72659843"
 ---
 # <a name="unit-test-c-code"></a>Código de C# de pruebas unitarias
 

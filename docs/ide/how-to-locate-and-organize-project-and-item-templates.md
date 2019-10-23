@@ -6,15 +6,15 @@ helpviewer_keywords:
 - project templates [Visual Studio], locations
 - item templates [Visual Studio], locations
 - template locations [Visual Studio]
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: db74d23cf42e371f00bf25c7edcd8c480f7649d4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: f9035e63fd172727f3bfae44e18a0727599d4edc
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62430281"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72645890"
 ---
 # <a name="how-to-locate-and-organize-project-and-item-templates"></a>Procedimiento Buscar y organizar plantillas de proyecto y elemento
 
@@ -60,7 +60,7 @@ Por ejemplo, el directorio siguiente contiene las plantillas de elemento de Visu
 
 ### <a name="user-templates"></a>Plantillas de usuario
 
-Si agrega un archivo comprimido (*.zip*) que incluye un archivo *.vstemplate* al directorio de plantillas de usuario, la plantilla aparece en los cuadros de diálogo de nuevo proyecto y de nuevo elemento. De manera predeterminada, las plantillas de usuario se encuentran en:
+Si agrega un archivo comprimido ( *.zip*) que incluye un archivo *.vstemplate* al directorio de plantillas de usuario, la plantilla aparece en los cuadros de diálogo de nuevo proyecto y de nuevo elemento. De manera predeterminada, las plantillas de usuario se encuentran en:
 
 ::: moniker range="vs-2017"
 
@@ -108,7 +108,7 @@ Las categorías de los cuadros de diálogo **Nuevo proyecto** y **Agregar nuevo 
 
 1. En el menú **Archivo**, elija **Nuevo** > **Proyecto**.
 
-   La categoría **HelloWorld** aparecerá en el cuadro de diálogo **Nuevo proyecto**, en **Instalado** > **Visual C#**.
+   La categoría **HelloWorld** aparecerá en el cuadro de diálogo **Nuevo proyecto**, en **Instalado** > **Visual C#** .
 
 ### <a name="create-new-user-item-template-categories"></a>Creación de categorías de plantillas de elemento de usuario
 
@@ -120,7 +120,7 @@ Las categorías de los cuadros de diálogo **Nuevo proyecto** y **Agregar nuevo 
 
 1. Cree un proyecto o abra uno existente. En el menú **Proyecto**, seleccione **Agregar nuevo elemento**.
 
-   La categoría **HelloWorld** aparecerá en el cuadro de diálogo **Agregar nuevo elemento**, en **Instalado**>**Elementos de Visual C#**.
+   La categoría **HelloWorld** aparecerá en el cuadro de diálogo **Agregar nuevo elemento**, en **Instalado**>**Elementos de Visual C#** .
 
 ### <a name="display-templates-in-parent-categories"></a>Visualización de plantillas en categorías primarias
 
@@ -146,7 +146,7 @@ Puede permitir que las plantillas contenidas en subcategorías se muestren en su
 
 1. Guarde y cierre el archivo *.vstemplate*.
 
-1. Seleccione los archivos de la plantilla, haga clic con el botón derecho en la selección y elija **Enviar a** > **Carpeta comprimida (en zip)**.
+1. Seleccione los archivos de la plantilla, haga clic con el botón derecho en la selección y elija **Enviar a** > **Carpeta comprimida (en zip)** .
 
    Los archivos se comprimen en un archivo *.zip*.
 

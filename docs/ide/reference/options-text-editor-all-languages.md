@@ -37,17 +37,17 @@ helpviewer_keywords:
 - line numbers
 - virtual space
 ms.assetid: 49ee7306-9d46-4170-850f-a1716171752d
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e15357220c9a9d74d4b08fdd97d4f808ff770b9a
-ms.sourcegitcommit: ce1ab8a25c66a83e60eab80ed8e1596fe66dd85c
+ms.openlocfilehash: 22ab23911baab30c7617525d318795b1be708bb9
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/29/2019
-ms.locfileid: "68606051"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72747848"
 ---
 # <a name="options-dialog-box-text-editor--all-languages"></a>Cuadro de diálogo Opciones: Editor de texto \> Todos los lenguajes
 
@@ -68,7 +68,7 @@ Cuando está seleccionada, IntelliSense muestra las listas emergentes de miembro
 
 Cuando está seleccionada, se acortan las listas emergentes de finalización de instrucciones mostrando solo los elementos que más se usan. Los demás elementos se filtran en la lista.
 
-**Información del parámetro**
+**Información de parámetros**
 
 Cuando está seleccionada esta casilla, la sintaxis completa del procedimiento o la declaración actual se muestra en el punto de inserción del editor, con todos los parámetros disponibles. El siguiente parámetro que se puede asignar aparecerá en negrita.
 
@@ -124,7 +124,7 @@ Esta opción no tiene ningún efecto en el comando Copiar o Cortar cuando la lí
 > [!TIP]
 > Con el fin de poder mostrar indicadores para los espacios, tabuladores y fines de la línea, y distinguir así las líneas con sangría de las que están completamente en blanco, en el menú **Edición** seleccione **Opciones avanzadas** y pulse **Ver espacios en blanco**.
 
-## <a name="see-also"></a>Otras referencias
+## <a name="see-also"></a>Vea también
 
 - [Opciones, editor de texto, todos los lenguajes, pestañas](../../ide/reference/options-text-editor-all-languages-tabs.md)
 - [General, Entorno, Opciones (Cuadro de diálogo)](../../ide/reference/general-environment-options-dialog-box.md)

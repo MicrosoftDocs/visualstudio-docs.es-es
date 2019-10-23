@@ -13,17 +13,17 @@ helpviewer_keywords:
 - Miscellaneous Files folder
 - files [Visual Studio], miscellaneous
 ms.assetid: 5b96640b-8efe-48a4-8d0a-1ae3f9587e44
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3787ce7cd6c7355c86b6e6ef077311c603265fc1
-ms.sourcegitcommit: 85d66dc9fea3fa49018263064876b15aeb6f9584
+ms.openlocfilehash: 6fb01d0ce09778866074cc8f303c3e4da60f0de1
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68461436"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72668966"
 ---
 # <a name="miscellaneous-files"></a>Archivos varios
 

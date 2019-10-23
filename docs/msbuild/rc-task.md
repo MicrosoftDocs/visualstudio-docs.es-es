@@ -14,28 +14,28 @@ dev_langs:
 - jsharp
 - C++
 helpviewer_keywords:
-- RC task (MSBuild (Visual C++))
-- MSBuild (Visual C++), RC task
+- RC task (MSBuild (C++))
+- MSBuild (C++), RC task
 ms.assetid: 2fd26c75-a056-4dda-9f7e-2f90d3748d88
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a69649a7babacb0fe08b483380214f17f2e582f8
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 6d217ba46f7b50851c8fe19f420195dcf9ee698a
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62974662"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72748036"
 ---
 # <a name="rc-task"></a>RC (tarea)
-Incluye la herramienta Compilador de recursos de Microsoft Windows *rc.exe*. La tarea **RC** compila recursos, como cursores, iconos, iconos, mapas de bits, cuadros de diálogo y fuentes, en un archivo de recursos (*.res*). Para más información, consulte [Compilador de recursos](https://docs.microsoft.com/windows/desktop/menurc/resource-compiler).
+Incluye la herramienta Compilador de recursos de Microsoft Windows *rc.exe*. La tarea **RC** compila recursos, como cursores, iconos, iconos, mapas de bits, cuadros de diálogo y fuentes, en un archivo de recursos ( *.res*). Para más información, consulte [Compilador de recursos](https://docs.microsoft.com/windows/desktop/menurc/resource-compiler).
 
 ## <a name="parameters"></a>Parámetros
  En la siguiente tabla se describen los parámetros de la tarea RC. La mayoría de los parámetros de tarea, así como algunos conjuntos de parámetros, corresponden a una opción de línea de comandos.
 
-|Parámetro|Descripción|
+|Parámetro|DESCRIPCIÓN|
 |---------------|-----------------|
 |**AdditionalIncludeDirectories**|Parámetro **String[]** opcional.<br /><br /> Agrega un directorio a la lista de directorios en que se buscan archivos de inclusión.<br /><br /> Para más información, consulte la opción **/I** en [Using RC (The RC Command Line)](http://go.microsoft.com/fwlink/?LinkId=155730) (Uso de RC [línea de comandos de RC]).|
 |**AdditionalOptions**|Parámetro **String** opcional.<br /><br /> Una lista de opciones de línea de comandos; por ejemplo, /\<option1> /\<option2> /\<option#>. Use este parámetro para especificar opciones de la línea de comandos que no están representadas por ningún otro parámetro de tarea **RC**.<br /><br /> Para más información, consulte las opciones de [Using RC (The RC Command Line)](http://go.microsoft.com/fwlink/?LinkId=155730) (Uso de RC [línea de comandos de RC]).|
@@ -46,7 +46,7 @@ Incluye la herramienta Compilador de recursos de Microsoft Windows *rc.exe*. La 
 |**ResourceOutputFileName**|Parámetro **String** opcional.<br /><br /> Especifica el nombre del archivo de recursos. Especifique un nombre de archivo de recursos.<br /><br /> Para más información, consulte la opción **/fo** en [Using RC (The RC Command Line)](http://go.microsoft.com/fwlink/?LinkId=155730) (Uso de RC [línea de comandos de RC]).|
 |**ShowProgress**|Parámetro **Boolean** opcional.<br /><br /> Si es `true`, muestra mensajes que informan del progreso del compilador.<br /><br /> Para más información, consulte la opción **/v** en [Using RC (The RC Command Line)](http://go.microsoft.com/fwlink/?LinkId=155730) (Uso de RC [línea de comandos de RC]).|
 |**Origen**|Parámetro `ITaskItem[]` requerido.<br /><br /> Define una matriz de elementos de archivo origen de MSBuild que las tareas pueden consumir y emitir.|
-|**SuppressStartupBanner**|Parámetro **Boolean** opcional.<br /><br /> Si es `true`, evita que se muestre el copyright y el mensaje de número de versión cuando la tarea se inicia. <br /><br /> Para obtener más información, escriba la opción de línea de comandos **/?** y consulte la opción **/nologo**.|
+|**SuppressStartupBanner**|Parámetro **Boolean** opcional.<br /><br /> Si es `true`, evita que se muestre el copyright y el mensaje de número de versión cuando la tarea se inicia.<br /><br /> Para obtener más información, escriba la opción de línea de comandos **/?** y consulte la opción **/nologo**.|
 |**TrackerLogDirectory**|Parámetro **String** opcional.<br /><br /> Especifica el directorio del registro de seguimiento.|
 |**UndefinePreprocessorDefinitions**|Anula la definición de un símbolo de preprocesador.<br /><br /> Para más información, consulte la opción **/u** en [Using RC (The RC Command Line)](http://go.microsoft.com/fwlink/?LinkId=155730) (Uso de RC [línea de comandos de RC]). Vea también **PreprocessorDefinitions** en esta tabla.|
 

@@ -6,17 +6,17 @@ f1_keywords:
 - VS.ToolsOptionsPages.Environment.PreviewFeatures
 helpviewer_keywords:
 - Preview Features Options dialog box
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cfdd4707b4396b7a4f1463fdd0e9659f2ec9b0fb
-ms.sourcegitcommit: ce1ab8a25c66a83e60eab80ed8e1596fe66dd85c
+ms.openlocfilehash: d53e232fd26f9986be63e332ee36d0740d66c94b
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/29/2019
-ms.locfileid: "68610613"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72654460"
 ---
 # <a name="options-dialog-box-environment--preview-features"></a>Cuadro de diálogo Opciones: Entorno \> Características en vista previa
 

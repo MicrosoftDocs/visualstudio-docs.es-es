@@ -2,17 +2,17 @@
 title: Habilitar pruebas de IU codificadas en los controles
 ms.date: 11/04/2016
 ms.topic: conceptual
-ms.author: gewarren
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-author: gewarren
-ms.openlocfilehash: 98eb2df0d846fa542ec01b30ad5abfffa62ff54f
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+author: jillre
+ms.openlocfilehash: ea58dc703c5ad860683017c39d9d37d9b5cccd04
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68918258"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72664944"
 ---
 # <a name="enable-coded-ui-testing-of-your-controls"></a>Habilitación de pruebas automatizadas de IU en los controles
 

@@ -5,17 +5,17 @@ ms.date: 07/11/2018
 ms.topic: reference
 helpviewer_keywords:
 - F# features [Visual Studio]
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: fef50748942aaa800cf1181e4c8f8b8a030f99ee
-ms.sourcegitcommit: ea182703e922c74725045afc251bcebac305068a
+ms.openlocfilehash: 176504ceb7c80a36028e7d5f1806aa598cdf708e
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71211304"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72645365"
 ---
 # <a name="develop-with-visual-f-in-visual-studio"></a>Desarrollar con Visual F# en Visual Studio
 
