@@ -6,15 +6,15 @@ helpviewer_keywords:
 - Visual Studio templates, creating multi-project
 - project templates, multi-project
 - multi-project templates
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: f24a7c0d07c804ca45bb31058061cda714ef6a51
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 8ad04a557ee4b0a359efebfbe7a70d8a85db4551
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62430502"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72655837"
 ---
 # <a name="how-to-create-multi-project-templates"></a>Procedimiento Crear plantillas de varios proyectos
 
@@ -113,7 +113,7 @@ El archivo raíz *vstemplate* de una plantilla de varios proyectos difiere de un
 
 8. En el directorio base, cree un archivo XML que tenga le extensión de archivo *.vstemplate*. Ese archivo contiene los metadatos de la plantilla de varios proyectos. Vea el ejemplo que se indica a continuación para saber la estructura del archivo. Debe especificar la ruta de acceso relativa de cada archivo *vstemplate* del proyecto.
 
-9. Seleccione todos los archivos del directorio base y, en el menú contextual, elija **Enviar a** > **Carpeta comprimida (en zip)**.
+9. Seleccione todos los archivos del directorio base y, en el menú contextual, elija **Enviar a** > **Carpeta comprimida (en zip)** .
 
    Los archivos y las carpetas se comprimen en un archivo *.zip*.
 

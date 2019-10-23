@@ -10,17 +10,17 @@ helpviewer_keywords:
 - Complete word
 - List members
 - IntelliSense [Visual Studio]
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 32e62131b2a66052ad4712b434c7b6f2b89065d0
-ms.sourcegitcommit: 9fc8b144d4ed1c46aba87c0b7e1d24454e0eea9d
+ms.openlocfilehash: 011542bc45680f6fb5b7bd2b83283605922189ee
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "68493289"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72647359"
 ---
 # <a name="intellisense-in-visual-studio"></a>IntelliSense en Visual Studio
 
@@ -83,7 +83,7 @@ Las opciones de IntelliSense están activadas de forma predeterminada. Para desa
 ## <a name="intellisense-icons"></a>Iconos de IntelliSense
 Los iconos de IntelliSense pueden transmitir un significado adicional con los modificadores de icono. Se trata de estrellas, corazones y candados superpuestos encima del icono del objeto que transmiten un significado de protegido, interno o privado, respectivamente.
 
-|    Icono    |    Accesibilidad    |    DESCRIPCIÓN    |
+|    Iconos    |    Accesibilidad    |    DESCRIPCIÓN    |
 |------------|--------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------|
 | ![Modificador de icono público](../ide/media/intellisensePublicNoModifier.png)       |    Clase pública    |    El acceso no está restringido.   |
 | ![Modificador de icono protegido](../ide/media/intellisenseProtectedModifier.png)       |    Clase protegida    |    El acceso está limitado a la clase contenedora o a los tipos derivados de la clase contenedora.    |

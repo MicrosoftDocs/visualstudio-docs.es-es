@@ -2,17 +2,17 @@
 title: Consejos para mejorar el rendimiento
 ms.date: 08/14/2018
 ms.topic: conceptual
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7fccae7d42d9e8f99c78fd55f74466e2f83e5dfa
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ccf785cec859290cac0ebcf5c9685861bd2887e4
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62581792"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72647151"
 ---
 # <a name="visual-studio-performance-tips-and-tricks"></a>Sugerencias y trucos de rendimiento de Visual Studio
 
@@ -57,7 +57,7 @@ Si es habitual que se quede sin memoria durante las sesiones de depuración, pue
 
 - **Especifique los símbolos que se van a cargar**
 
-    En la depuración nativa, la carga de archivos de símbolos (*.pdb*) resulta costosa en términos de recursos de memoria. Puede establecer la configuración de símbolos del depurador de modo que se ahorre memoria. Por lo general, la solución se configura para cargar únicamente los módulos del proyecto.
+    En la depuración nativa, la carga de archivos de símbolos ( *.pdb*) resulta costosa en términos de recursos de memoria. Puede establecer la configuración de símbolos del depurador de modo que se ahorre memoria. Por lo general, la solución se configura para cargar únicamente los módulos del proyecto.
 
     Para especificar la carga de símbolos, elija **Herramientas** > **Opciones** > **Depuración** > **Símbolos**.
 
@@ -88,7 +88,7 @@ Para más información sobre las consideraciones de rendimiento de .NET Compiler
 
     Visual Studio realiza un análisis de toda la solución con el fin de proporcionar una experiencia completa sobre errores antes de invocar una compilación. Esta característica es útil para identificar los errores lo antes posible. Sin embargo, en el caso de las soluciones de gran tamaño, esta característica puede consumir considerables recursos de memoria. Si experimenta problemas de memoria o similares, puede deshabilitar esta experiencia para liberar estos recursos. De forma predeterminada, esta opción está habilitada para Visual Basic y deshabilitada para C#.
 
-    Para deshabilitar **Análisis completo de la solución**, elija **Herramientas** > **Opciones** > **Editor de texto** y, a continuación seleccione **Visual Basic** o **C#**. Elija **Avanzadas** y desmarque la opción **Habilitar análisis de la solución completa**.
+    Para deshabilitar **Análisis completo de la solución**, elija **Herramientas** > **Opciones** > **Editor de texto** y, a continuación seleccione **Visual Basic** o **C#** . Elija **Avanzadas** y desmarque la opción **Habilitar análisis de la solución completa**.
 
 - **Deshabilite CodeLens**
 

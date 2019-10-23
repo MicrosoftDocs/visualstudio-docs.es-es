@@ -8,17 +8,17 @@ helpviewer_keywords:
 - command line [Visual Studio], switches
 - Devenv
 ms.assetid: e12bc6ed-74fd-4bea-8d7c-89b99c20bad8
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: db9aaeb48095b058abb0deefa342598eefeed1b9
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: cf7ebda1e661801995c17a81e658b4f638c2f8a1
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62970232"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72661645"
 ---
 # <a name="devenv-command-line-switches"></a>Modificadores de línea de comandos para Devenv
 
@@ -62,7 +62,7 @@ Las reglas de sintaxis de los modificadores de `devenv` son similares a las de o
 
 Los siguientes modificadores de línea de comandos muestran el IDE y realizan la tarea descrita.
 
-|Modificador de la línea de comandos|Descripción|
+|Modificador de la línea de comandos|DESCRIPCIÓN|
 | - |-----------------|
 |[/Command](command-devenv-exe.md)|Inicia el IDE y ejecuta el comando especificado.<br /><br /> `devenv /command "nav https://docs.microsoft.com/"`|
 |[/DebugExe](debugexe-devenv-exe.md)|Carga un archivo ejecutable de C++ bajo el control del depurador. Este modificador no está disponible para los archivos ejecutables de Visual Basic o C#. Para obtener más información, vea [Iniciar automáticamente un proceso en el depurador](../../debugger/debug-multiple-processes.md#BKMK_Automatically_start_an_process_in_the_debugger).<br /><br /> `devenv /debugexe mysln.exe`|
@@ -75,11 +75,11 @@ Los siguientes modificadores de línea de comandos muestran el IDE y realizan la
 |[/Run o /R](run-devenv-exe.md)|Compila y ejecuta la solución especificada.<br /><br /> `devenv /run mysln.sln`|
 |[/RunExit](runexit-devenv-exe.md)|Compila y ejecuta la solución especificada, minimiza el IDE cuando se ejecuta la solución y cierra el IDE una vez finalizada la ejecución de la solución.<br /><br /> `devenv /runexit mysln.sln`|
 |[/SafeMode](safemode-devenv-exe.md)|Inicia Visual Studio en modo seguro. Este modificador carga únicamente el entorno predeterminado, los servicios predeterminados y las versiones publicadas de paquetes de terceros.<br /><br /> Este modificador no toma ningún argumento.|
-|[/UseEnv](useenv-devenv-exe.md)|Hace que el IDE use las variables de entorno PATH, INCLUDE, LIBPATH y LIB para la compilación de C++. Este modificador se instala con la carga de trabajo **Desarrollo para el escritorio con C++**. Para obtener más información, vea [Establecer la ruta de acceso y las variables de entorno para compilar desde la línea de comandos](/cpp/build/setting-the-path-and-environment-variables-for-command-line-builds).|
+|[/UseEnv](useenv-devenv-exe.md)|Hace que el IDE use las variables de entorno PATH, INCLUDE, LIBPATH y LIB para la compilación de C++. Este modificador se instala con la carga de trabajo **Desarrollo para el escritorio con C++** . Para obtener más información, vea [Establecer la ruta de acceso y las variables de entorno para compilar desde la línea de comandos](/cpp/build/setting-the-path-and-environment-variables-for-command-line-builds).|
 
 Los siguientes modificadores de línea de comandos no muestran el IDE.
 
-|Modificador de la línea de comandos|Descripción|
+|Modificador de la línea de comandos|DESCRIPCIÓN|
 | - |-----------------|
 |[/?](q-devenv-exe.md)|Muestra la ayuda para los modificadores de `devenv` en la **ventana del símbolo del sistema**.<br /><br /> Este modificador no toma ningún argumento.|
 |[/Build](build-devenv-exe.md)|Compila la solución o el proyecto especificado según la configuración de la solución especificada.<br /><br /> `devenv mysln.sln /build`|
