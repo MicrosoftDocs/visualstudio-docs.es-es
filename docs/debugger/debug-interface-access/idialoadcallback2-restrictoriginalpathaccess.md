@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 26539d4217682b4d5357f13e9f9368c81297da78
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 6bcdaa7c1896a0ef29706e3650ad8ac56537f778
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62839750"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72742998"
 ---
 # <a name="idialoadcallback2restrictoriginalpathaccess"></a>IDiaLoadCallback2::RestrictOriginalPathAccess
-Determina si es correcto buscar un archivo .pdb en el directorio de depuración original.
+Determina si es correcto buscar un archivo. pdb en el directorio de depuración original.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -29,10 +29,10 @@ HRESULT RestrictOriginalPathAccess ();
 ```
 
 ## <a name="return-value"></a>Valor devuelto
- Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.
+ Si se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.
 
 ## <a name="remarks"></a>Comentarios
- Cualquier código de retorno distinto `S_OK` impide que busca un archivo .pdb en el directorio de depuración original. El directorio de depuración original es la ruta de acceso para el archivo de símbolos que se compilan en el archivo ejecutable cuando se activa la depuración. Esta ruta de acceso no es necesariamente el mismo que la ruta de acceso donde existe el archivo ejecutable.
+ Cualquier código de retorno distinto de `S_OK` impide buscar un archivo. pdb en el directorio de depuración original. El directorio de depuración original es la ruta de acceso al archivo de símbolos compilado en el ejecutable cuando la depuración está activada. Esta ruta de acceso no es necesariamente la misma que la ruta de acceso donde existe el archivo ejecutable.
 
 ## <a name="see-also"></a>Vea también
 - [IDiaLoadCallback2](../../debugger/debug-interface-access/idialoadcallback2.md)

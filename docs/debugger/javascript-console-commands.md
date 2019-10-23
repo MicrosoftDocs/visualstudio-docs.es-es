@@ -14,12 +14,12 @@ monikerRange: vs-2017
 ms.workload:
 - uwp
 - cordova
-ms.openlocfilehash: fead28e60116acb7b2ae311d98e5475c5da3ec35
-ms.sourcegitcommit: 8a96a65676fd7a2a03b0803d7eceae65f3fa142b
+ms.openlocfilehash: b30b59b95b09cac8308474b2b2963f9b96d58146
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "72588979"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72731697"
 ---
 # <a name="javascript-console-commands-in-visual-studio"></a>Comandos de la consola JavaScript en Visual Studio
 

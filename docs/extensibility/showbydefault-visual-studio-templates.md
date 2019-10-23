@@ -1,5 +1,5 @@
 ---
-title: ShowByDefault (elemento) (plantillas de Visual Studio)
+title: ShowByDefault (elemento, plantillas de Visual Studio)
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -14,17 +14,17 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c211f45423ce0f2166bbf8aa189d35ab386a7fee
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 2405e46a7f1ed8d2e4ae33b1b58ec44e06aa7d3b
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66331980"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72720102"
 ---
-# <a name="showbydefault-element-visual-studio-templates"></a>ShowByDefault (elemento) (plantillas de Visual Studio)
-Si `false`, especifica que solo se mostrará la plantilla en especificado [TemplateGroupID](../extensibility/templategroupid-element-visual-studio-templates.md).
+# <a name="showbydefault-element-visual-studio-templates"></a>ShowByDefault (elemento, plantillas de Visual Studio)
+Si `false`, especifica que la plantilla solo se mostrará en el [TemplateGroupID](../extensibility/templategroupid-element-visual-studio-templates.md)especificado.
 
- \<VSTemplate> \<TemplateData> \<ShowByDefault>
+ \<VSTemplate > \<TemplateData > \<ShowByDefault >
 
 ## <a name="syntax"></a>Sintaxis
 

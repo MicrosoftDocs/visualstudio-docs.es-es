@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4c75148fdf8453590be7eb0f9fbde95e4bb4b981
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: ece720a42b606640d02729951c11ae03d092aedf
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64791686"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72739357"
 ---
-# <a name="idiasymbolgetsealed"></a>IDiaSymbol::get_sealed
-Recupera una marca que especifica si la clase o método está sellado.
+# <a name="idiasymbolget_sealed"></a>IDiaSymbol::get_sealed
+Recupera una marca que especifica si la clase o el método están sellados.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -33,10 +33,10 @@ HRESULT get_sealed( 
 #### <a name="parameters"></a>Parámetros
  `pRetVal`
 
-[out] Devuelve `TRUE` si la clase o método está sellado; en caso contrario, devuelve `FALSE`.
+enuncia Devuelve `TRUE` si la clase o el método están sellados; de lo contrario, devuelve `FALSE`.
 
 ## <a name="return-value"></a>Valor devuelto
- Si es correcto, devuelve `S_OK`; en caso contrario, devuelve `S_FALSE` o un código de error.
+ Si se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve `S_FALSE` o un código de error.
 
 > [!NOTE]
 > Un valor devuelto de `S_FALSE` significa que la propiedad no está disponible para el símbolo.
@@ -45,9 +45,9 @@ HRESULT get_sealed( 
  Una clase sellada no se puede utilizar como clase base. Un método sellado no puede ser omitido.
 
 ## <a name="requirements"></a>Requisitos
- Encabezado: Dia2.h
+ Encabezado: Dia2. h
 
- Biblioteca: diaguids.lib
+ Biblioteca: diaguids. lib
 
  DLL: msdia100.dll
 

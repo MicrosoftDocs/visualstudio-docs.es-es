@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ddfc17d4f9bcb1f4f2585aa91319f06be6936e6f
-ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
+ms.openlocfilehash: e92e27b123102cb45069c47ebf9de3971039801d
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72431472"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72738130"
 ---
 # <a name="debugging-preparation-console-projects-c-c-visual-basic-f"></a>Preparación de la depuración:C#proyectos C++de consola ( F#,, Visual Basic,)
 

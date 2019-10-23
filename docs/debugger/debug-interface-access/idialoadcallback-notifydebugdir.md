@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ce251da3c1cb7b1da00971d46cc0801ad24b8985
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 6618440cab9b9042ec371383f6c809ca1d0d11f7
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62839828"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72743084"
 ---
 # <a name="idialoadcallbacknotifydebugdir"></a>IDiaLoadCallback::NotifyDebugDir
-Se llama cuando se encontró un directorio de depuración en el archivo .exe.
+Se le llama cuando se ha encontrado un directorio de depuración en el archivo. exe.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -35,25 +35,25 @@ HRESULT NotifyDebugDir ( 
 #### <a name="parameters"></a>Parámetros
  `fExecutable`
 
-[in] `TRUE` si el directorio de depuración se lee desde un archivo ejecutable (en lugar de un archivo DBG).
+[in] `TRUE` si el directorio de depuración se lee desde un ejecutable (en lugar de un archivo. dbg).
 
  `cbData`
 
-[in] Recuento de bytes de datos en el directorio de depuración.
+de Recuento de bytes de datos en el directorio de depuración.
 
  `data[]`
 
-[in] Una matriz que se rellena con el directorio de depuración.
+de Una matriz que se rellena con el directorio de depuración.
 
 ## <a name="return-value"></a>Valor devuelto
- Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error. Normalmente, se omite el código de retorno.
+ Si se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error. Normalmente, se omite el código de retorno.
 
 ## <a name="remarks"></a>Comentarios
- El [Loaddataforexe](../../debugger/debug-interface-access/idiadatasource-loaddataforexe.md) método invoca esta devolución de llamada cuando encuentra un directorio de depuración al procesar el archivo ejecutable.
+ El método [IDiaDataSource:: loadDataForExe](../../debugger/debug-interface-access/idiadatasource-loaddataforexe.md) invoca esta devolución de llamada cuando encuentra un directorio de depuración mientras procesa el archivo ejecutable.
 
- Este método quita la necesidad de información de depuración que no sea la que se encuentra en el archivo .pdb de soporte técnico para el cliente para el archivo ejecutable o depuración de ingeniería inversa. Con estos datos, el cliente puede reconocer el tipo de información de depuración disponible y si se encuentra en el archivo ejecutable o el archivo DBG.
+ Este método elimina la necesidad de que el cliente aplique ingeniería inversa al archivo ejecutable o de depuración para admitir información de depuración distinta de la que se encuentra en el archivo. pdb. Con estos datos, el cliente puede reconocer el tipo de información de depuración disponible y si reside en el archivo ejecutable o en el archivo. dbg.
 
- La mayoría de los clientes no necesitarán esta devolución de llamada porque el `IDiaDataSource::loadDataForExe` método transparente abre los archivos .pdb y .dbg cuando sea necesario atender los símbolos.
+ La mayoría de los clientes no necesitará esta devolución de llamada porque el método `IDiaDataSource::loadDataForExe` abre de forma transparente los archivos. PDB y. dbg cuando sea necesario para servir símbolos.
 
 ## <a name="see-also"></a>Vea también
 - [IDiaLoadCallback2](../../debugger/debug-interface-access/idialoadcallback2.md)

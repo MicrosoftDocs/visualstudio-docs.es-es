@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f807ca27598580beb011376e115025ab0c3168fe
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 30a393f2725b4924a02bbaed12aef8b60273ffd0
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64808370"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72740420"
 ---
-# <a name="idiasymbolgethfadouble"></a>IDiaSymbol::get_hfaDouble
-Recupera una marca que especifica si un tipo definido por el usuario (UDT) contiene el punto flotante agregado (HFA) datos homogéneos de tipo double.
+# <a name="idiasymbolget_hfadouble"></a>IDiaSymbol::get_hfaDouble
+Recupera una marca que especifica si un tipo definido por el usuario (UDT) contiene datos de agregado de punto flotante (HFA) homogéneos de tipo Double.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -33,10 +33,10 @@ HRESULT get_hfaDouble( 
 #### <a name="parameters"></a>Parámetros
  `pRetVal`
 
-[out] Devuelve `TRUE` si el UDT contiene datos HFA de tipo double; de lo contrario, devuelve `FALSE`.
+enuncia Devuelve `TRUE` si el UDT contiene datos HFA de tipo Double; de lo contrario, devuelve `FALSE`.
 
 ## <a name="return-value"></a>Valor devuelto
- Si es correcto, devuelve `S_OK`; en caso contrario, devuelve `S_FALSE` o un código de error.
+ Si se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve `S_FALSE` o un código de error.
 
 > [!NOTE]
 > Un valor devuelto de `S_FALSE` significa que la propiedad no está disponible para el símbolo.
@@ -44,9 +44,9 @@ HRESULT get_hfaDouble( 
 ## <a name="remarks"></a>Comentarios
 
 ## <a name="requirements"></a>Requisitos
- Encabezado: Dia2.h
+ Encabezado: Dia2. h
 
- Biblioteca: diaguids.lib
+ Biblioteca: diaguids. lib
 
  DLL: msdia100.dll
 

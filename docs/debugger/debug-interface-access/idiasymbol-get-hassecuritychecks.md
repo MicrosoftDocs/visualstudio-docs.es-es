@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f5a760389f589dc14e8a768991323c0419dac527
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 11fd7f70da9ae47b9858f8265d0608e3d6994ef7
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64808712"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72740468"
 ---
-# <a name="idiasymbolgethassecuritychecks"></a>IDiaSymbol::get_hasSecurityChecks
-Recupera una marca que especifica si la operación de compilación o la función se ha compilado con las comprobaciones de seguridad de saturación del búfer (por ejemplo, el [/GS (comprobación de seguridad del búfer)](/cpp/build/reference/gs-buffer-security-check) modificador del compilador).
+# <a name="idiasymbolget_hassecuritychecks"></a>IDiaSymbol::get_hasSecurityChecks
+Recupera una marca que especifica si la función compilar o se ha compilado con comprobaciones de seguridad de saturación del búfer (por ejemplo, el modificador de compilador [/GS (comprobación de seguridad del búfer)](/cpp/build/reference/gs-buffer-security-check) ).
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -33,20 +33,20 @@ HRESULT get_hasSecurityChecks(
 #### <a name="parameters"></a>Parámetros
  `pFlag`
 
-[out] Devuelve `TRUE` si la función no tiene ninguna comprobación de seguridad; en caso contrario, devuelve `FALSE`.
+enuncia Devuelve `TRUE` si la función tiene comprobaciones de seguridad; de lo contrario, devuelve `FALSE`.
 
 ## <a name="return-value"></a>Valor devuelto
- Si es correcto, devuelve `S_OK`; en caso contrario, devuelve `S_FALSE` o un código de error.
+ Si se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve `S_FALSE` o un código de error.
 
 > [!NOTE]
 > Un valor devuelto de `S_FALSE` significa que la propiedad no está disponible para el símbolo.
 
 ## <a name="requirements"></a>Requisitos
 
-|Requisito|DESCRIPCIÓN|
+|Requisito|Descripción|
 |-----------------|-----------------|
 |Encabezado:|dia2.h|
-|Versión:|SDK de DIA v8.0|
+|Versión:|SDK de DIA v 8.0|
 
 ## <a name="see-also"></a>Vea también
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

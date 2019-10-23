@@ -10,12 +10,12 @@ ms.author: midumont
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 6ced3448863d7236dc309dad3bb101cdead4837e
-ms.sourcegitcommit: 1507baf3a336bbb6511d4c3ce73653674831501b
-ms.translationtype: HT
+ms.openlocfilehash: ab1e0b890d6241742770ed38ff61fc1c2c0ed2f4
+ms.sourcegitcommit: 08c144d290da373df841f04fc799e3133540a541
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "72349469"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72535693"
 ---
 # <a name="walkthrough-use-static-code-analysis-to-find-code-defects"></a>Tutorial: usar el análisis de código estático para buscar defectos de código
 
@@ -93,23 +93,23 @@ Este artículo le guiará a través del proceso de uso del análisis heredado pa
 
 1. Use las siguientes sugerencias para corregir las advertencias:
 
-   [CA1014: Marque los ensamblados con CLSCompliantAttribute](../code-quality/ca1014-mark-assemblies-with-clscompliantattribute.md): agregue el código `[assembly: CLSCompliant(true)]` al final del archivo AssemblyInfo.cs.
+   [CA1014: Marque los ensamblados con CLSCompliantAttribute](../code-quality/ca1014.md): agregue el código `[assembly: CLSCompliant(true)]` al final del archivo AssemblyInfo.cs.
 
-   [CA1032: implementar constructores de excepción estándar](../code-quality/ca1032-implement-standard-exception-constructors.md): agregue el constructor `public demo (String s) : base(s) { }` a la clase `demo`.
+   [CA1032: implementar constructores de excepción estándar](../code-quality/ca1032.md): agregue el constructor `public demo (String s) : base(s) { }` a la clase `demo`.
 
-   [CA1032: implementar constructores de excepción estándar](../code-quality/ca1032-implement-standard-exception-constructors.md): agregue el constructor `public demo (String s, Exception e) : base(s, e) { }` a la clase `demo`.
+   [CA1032: implementar constructores de excepción estándar](../code-quality/ca1032.md): agregue el constructor `public demo (String s, Exception e) : base(s, e) { }` a la clase `demo`.
 
-   [CA1032: implementar constructores de excepción estándar](../code-quality/ca1032-implement-standard-exception-constructors.md): agregue el constructor `protected demo (SerializationInfo info, StreamingContext context) : base(info, context) { }` a la clase demo. También deberá agregar una instrucción de `using` para <xref:System.Runtime.Serialization?displayProperty=fullName>.
+   [CA1032: implementar constructores de excepción estándar](../code-quality/ca1032.md): agregue el constructor `protected demo (SerializationInfo info, StreamingContext context) : base(info, context) { }` a la clase demo. También deberá agregar una instrucción de `using` para <xref:System.Runtime.Serialization?displayProperty=fullName>.
 
-   [CA1032: implementar constructores de excepción estándar](../code-quality/ca1032-implement-standard-exception-constructors.md): agregue el constructor `public demo () : base() { }` a la clase `demo`.
+   [CA1032: implementar constructores de excepción estándar](../code-quality/ca1032.md): agregue el constructor `public demo () : base() { }` a la clase `demo`.
 
-   [CA1709: los identificadores deben usar mayúsculas y minúsculas correctamente](../code-quality/ca1709-identifiers-should-be-cased-correctly.md): cambie el uso de mayúsculas y minúsculas del espacio de nombres `testCode` a `TestCode`.
+   [CA1709: los identificadores deben usar mayúsculas y minúsculas correctamente](../code-quality/ca1709.md): cambie el uso de mayúsculas y minúsculas del espacio de nombres `testCode` a `TestCode`.
 
-   [CA1709: los identificadores deben usar mayúsculas y minúsculas correctamente](../code-quality/ca1709-identifiers-should-be-cased-correctly.md): cambie el nombre del miembro a `Demo`.
+   [CA1709: los identificadores deben usar mayúsculas y minúsculas correctamente](../code-quality/ca1709.md): cambie el nombre del miembro a `Demo`.
 
-   [CA1709: los identificadores deben usar mayúsculas y minúsculas correctamente](../code-quality/ca1709-identifiers-should-be-cased-correctly.md): cambie el nombre del miembro a `Item`.
+   [CA1709: los identificadores deben usar mayúsculas y minúsculas correctamente](../code-quality/ca1709.md): cambie el nombre del miembro a `Item`.
 
-   [CA1710: los identificadores deberían tener el sufijo correcto](../code-quality/ca1710-identifiers-should-have-correct-suffix.md): cambie el nombre de la clase y sus constructores a `DemoException`.
+   [CA1710: los identificadores deberían tener el sufijo correcto](../code-quality/ca1710.md): cambie el nombre de la clase y sus constructores a `DemoException`.
 
    [CA2237: Marque los tipos ISerializable con SerializableAttribute](../code-quality/ca2237.md): agregue el atributo `[Serializable ()]` a la clase `demo`.
 

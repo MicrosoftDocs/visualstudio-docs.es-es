@@ -1,5 +1,5 @@
 ---
-title: Procedimiento Probar y depurar un visualizador | Documentos de Microsoft
+title: 'Cómo: probar y depurar un visualizador | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -17,17 +17,17 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f0353234e5a266ca1a344ce7bc304f27d8c3af95
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 2a0d2fdcd0685b83f63e9354b96146c1c869b355
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62906289"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72732406"
 ---
-# <a name="how-to-test-and-debug-a-visualizer"></a>Procedimiento Prueba y depuración de un visualizador
+# <a name="how-to-test-and-debug-a-visualizer"></a>Cómo: Comprobar y depurar un visualizador
 Cuando se ha escrito un visualizador, es necesario depurarlo y comprobarlo.
 
-Una manera de comprobar un visualizador es instalarlo en Visual Studio y llamarlo desde una ventana del depurador. Vea [Cómo: Instalación de un visualizador](../debugger/how-to-install-a-visualizer.md). Si lo hace, será necesario usar una segunda instancia de Visual Studio para asociar y depurar el visualizador, que se ejecuta en la primera instancia del depurador.
+Una manera de comprobar un visualizador es instalarlo en Visual Studio y llamarlo desde una ventana del depurador. (Vea [Cómo: instalar un visualizador](../debugger/how-to-install-a-visualizer.md)). Si lo hace, tendrá que usar una segunda instancia de Visual Studio para adjuntar y depurar el visualizador, que se ejecuta en la primera instancia del depurador.
 
 Una manera más fácil de depurar un visualizador es ejecutarlo desde un controlador de prueba. Las API del visualizador facilitan la creación de este tipo de controlador, denominado *host de desarrollo del visualizador*.
 
@@ -51,9 +51,9 @@ Una manera más fácil de depurar un visualizador es ejecutarlo desde un control
     DebuggerSide.TestShowVisualizer(myString);
     ```
 
-    Para obtener un ejemplo más completo, vea [Tutorial: Escribir un visualizador en C#](../debugger/walkthrough-writing-a-visualizer-in-csharp.md).
+    Para obtener un ejemplo más completo, vea [Tutorial: escribir un visualizador en C# ](../debugger/walkthrough-writing-a-visualizer-in-csharp.md).
 
 ## <a name="see-also"></a>Vea también
-- [Tutorial: Escritura de un visualizador en C#](../debugger/walkthrough-writing-a-visualizer-in-csharp.md)
-- [Cómo: instalar un visualizador](../debugger/how-to-install-a-visualizer.md)
+- [Tutorial: Escribir un visualizador en C#](../debugger/walkthrough-writing-a-visualizer-in-csharp.md)
+- [Cómo: Instalar un visualizador](../debugger/how-to-install-a-visualizer.md)
 - [Create Custom Visualizers](../debugger/create-custom-visualizers-of-data.md) (Crear visualizadores personalizados)

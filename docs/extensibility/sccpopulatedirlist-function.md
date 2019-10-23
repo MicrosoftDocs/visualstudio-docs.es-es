@@ -1,5 +1,5 @@
 ---
-title: SccPopulateDirList (función) | Documentos de Microsoft
+title: Función SccPopulateDirList | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -12,15 +12,15 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9a6508b8cfde2f08eb40201973fec899ee11956b
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: f13c674e6374e826dc45343e5cd1f7edcc1f8100
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66353554"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72720896"
 ---
 # <a name="sccpopulatedirlist-function"></a>SccPopulateDirList (Función)
-Esta función determina qué directorios y archivos (opcionalmente) se almacenan en el control de código fuente, dada una lista de directorios que se va a examinar.
+Esta función determina qué directorios y archivos (opcionalmente) se almacenan en el control de código fuente, dada una lista de directorios que se van a examinar.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -38,30 +38,30 @@ SCCRTN SccPopulateDirList(
 #### <a name="parameters"></a>Parámetros
  pContext
 
-[in] El puntero de contexto de complemento de control de código fuente.
+de Puntero de contexto del complemento de control de código fuente.
 
  nDirs
 
-[in] Número de rutas de acceso de directorio en el `lpDirPaths` matriz.
+de Número de rutas de acceso de directorio en la matriz de `lpDirPaths`.
 
  lpDirPaths
 
-[in] Matriz de rutas de acceso de directorio para examinar.
+de Matriz de rutas de acceso del directorio que se va a examinar.
 
  pfnPopulate
 
-[in] Función de devolución de llamada para llamar para cada ruta de acceso de directorio y (opcionalmente) en el nombre de archivo `lpDirPaths` (consulte [POPDIRLISTFUNC](../extensibility/popdirlistfunc.md) para obtener más información).
+de Función de devolución de llamada a la que se llama para cada ruta de acceso de directorio y (opcionalmente) FILENAME en `lpDirPaths` (vea [POPDIRLISTFUNC](../extensibility/popdirlistfunc.md) para obtener más información).
 
  pvCallerData
 
-[in] Valor que se pasa sin cambios a la función de devolución de llamada.
+de Valor que se va a pasar sin cambiar a la función de devolución de llamada.
 
  Opciones
 
-[in] Una combinación de valores que controlan cómo se procesan los directorios (consulte la sección "PopulateDirList marcas" de [marcadores de bits utilizados por comandos específicos](../extensibility/bitflags-used-by-specific-commands.md) posibles valores).
+de Combinación de valores que controlan cómo se procesan los directorios (consulte la sección "PopulateDirList flags" de [marcadores que usan los comandos específicos](../extensibility/bitflags-used-by-specific-commands.md) para ver los valores posibles).
 
 ## <a name="return-value"></a>Valor devuelto
- La implementación de complemento de control de origen de esta función debe devolver uno de los valores siguientes:
+ Se espera que la implementación del complemento de control de código fuente de esta función devuelva uno de los siguientes valores:
 
 |Valor|Descripción|
 |-----------|-----------------|
@@ -69,7 +69,7 @@ SCCRTN SccPopulateDirList(
 |SCC_E_UNKNOWNERROR|Error.|
 
 ## <a name="remarks"></a>Comentarios
- Solo los directorios y (opcionalmente los nombres de archivo que se encuentran realmente en el repositorio de control de código fuente) se pasan a la función de devolución de llamada.
+ Solo los directorios y los nombres de archivo (opcionalmente) que se encuentran en el repositorio de control de código fuente se pasan a la función de devolución de llamada.
 
 ## <a name="see-also"></a>Vea también
 - [Funciones de API de complemento de control de código fuente](../extensibility/source-control-plug-in-api-functions.md)

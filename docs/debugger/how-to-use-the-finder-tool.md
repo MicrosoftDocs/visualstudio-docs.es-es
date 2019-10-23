@@ -1,5 +1,5 @@
 ---
-title: Procedimiento Utilice la herramienta de búsqueda | Documentos de Microsoft
+title: 'Cómo: usar la herramienta de búsqueda | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,44 +10,44 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5bf3fcf00486ebb8ec54f2d692d483a7f9cf18d7
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: f96fe87137c6b14e32fb2648e93c54a1c5b094a0
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63387654"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72732164"
 ---
-# <a name="how-to-use-the-finder-tool"></a>Procedimiento Uso de la herramienta de búsqueda
-Puede usar la herramienta de búsqueda en el **Buscar ventana** cuadro de diálogo para mostrar la ventana Propiedades o mensajes. La herramienta de búsqueda también puede encontrar ventanas secundarias deshabilitadas y discernir qué ventana resaltar si deshabilita ventanas secundarias se superponen.
+# <a name="how-to-use-the-finder-tool"></a>Cómo: Usar la herramienta de búsqueda
+Puede usar la herramienta de búsqueda en el cuadro de diálogo **Buscar ventana** para mostrar los mensajes o las propiedades de la ventana. La herramienta de búsqueda también puede buscar ventanas secundarias deshabilitadas y discernir qué ventana se resaltará si las ventanas secundarias deshabilitadas se superponen.
 
- ![Spy&#43; &#43; cuadro de diálogo Buscar ventana](../debugger/media/icon_spy--_find.png "Icon_Spy ++ _Find") herramienta de búsqueda en el cuadro de diálogo Buscar ventana
+ ![Cuadro&#43; &#43; de diálogo Buscar ventana de Spy](../debugger/media/icon_spy--_find.png "Icon_Spy + + _Find") Herramienta de búsqueda en el cuadro de diálogo Buscar ventana
 
- La ilustración anterior muestra el cuadro de diálogo Buscar ventana después del paso 3 siguiente.
+ En la ilustración anterior se muestra el cuadro de diálogo Buscar ventana después del paso 3 a continuación.
 
-### <a name="to-display-window-properties-or-messages"></a>Para mostrar la ventana Propiedades o mensajes
+### <a name="to-display-window-properties-or-messages"></a>Para mostrar los mensajes o las propiedades de la ventana
 
-1. Organizar las ventanas para que estén visibles Spy ++ y la ventana de destino.
+1. Organice las ventanas de modo que tanto Spy + + como la ventana de destino estén visibles.
 
-2. Desde el **Spy** menú, elija **Buscar ventana**.
+2. En el menú **Spy** , elija **Buscar ventana**.
 
-    El [cuadro de diálogo Buscar ventana](../debugger/find-window-dialog-box.md) se abre.
+    Se abre el [cuadro de diálogo Buscar ventana](../debugger/find-window-dialog-box.md) .
 
-3. Arrastre el **herramienta de búsqueda** a través de la ventana de destino.
+3. Arrastre la **herramienta de búsqueda** sobre la ventana de destino.
 
-    A medida que arrastra la herramienta, el **Buscar ventana** cuadro de diálogo muestra los detalles de la ventana seleccionada.
+    Al arrastrar la herramienta, el cuadro de diálogo **Buscar ventana** muestra detalles en la ventana seleccionada.
 
    - O
 
-     Si tiene el identificador de la ventana que desea examinar (por ejemplo, si se copian desde el depurador), escríbalo en el **controlar** cuadro de texto.
+     Si tiene el identificador de la ventana que desea examinar (por ejemplo, copiado desde el depurador), escríbalo en el cuadro de texto **identificador** .
 
    > [!TIP]
-   > Para reducir la confusión en la pantalla, seleccione el **Ocultar Spy** opción. Esta opción oculta la ventana principal de Spy ++, dejando sólo los **Buscar ventana** cuadro de diálogo visible encima de las otras aplicaciones. La ventana principal de Spy ++ se restaura al hacer clic en **Aceptar** o **cancelar**, o cuando se borra el **Ocultar Spy ++** opción.
+   > Para reducir el desorden de la pantalla, seleccione la opción **ocultar Spy** . Esta opción oculta la ventana principal de Spy + +, mientras que solo el cuadro de diálogo **Buscar ventana** está visible encima de las demás aplicaciones. La ventana principal de Spy + + se restaura al hacer clic en **Aceptar** o en **Cancelar**, o al desactivar la opción **ocultar Spy + +** .
 
-4. En **mostrar**, seleccione **propiedades** o **mensajes**.
+4. En **Mostrar**, seleccione **propiedades** o **mensajes**.
 
 5. Haga clic en **Aceptar**.
 
-    Si seleccionó **propiedades**, el [cuadro de diálogo de propiedades de ventana](../debugger/window-properties-dialog-box.md) se abre. Si seleccionó **mensajes**, un [vista mensajes](../debugger/messages-view.md) abre la ventana.
+    Si seleccionó **propiedades**, se abrirá el [cuadro de diálogo Propiedades](../debugger/window-properties-dialog-box.md) de la ventana. Si seleccionó **mensajes**, se abre una ventana [vista mensajes](../debugger/messages-view.md) .
 
 ## <a name="see-also"></a>Vea también
 - [Vistas de Spy++](../debugger/spy-increment-views.md)

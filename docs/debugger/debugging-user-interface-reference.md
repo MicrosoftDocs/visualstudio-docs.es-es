@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 28757580b7f45e3d63cba1782f17283ad01f26c6
-ms.sourcegitcommit: ea182703e922c74725045afc251bcebac305068a
+ms.openlocfilehash: 318ab9263b530ac283d210f59aa8ca29733c6e8d
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71211058"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72738054"
 ---
 # <a name="debugging-user-interface-reference"></a>Depuración: referencia de la interfaz de usuario
 Puede encontrar los cuadros de diálogo siguientes cuando depura la aplicación.

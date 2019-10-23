@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f114d14da44d782dbda9e9f792f9268ceb598e23
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: bfe5c047876b6e23c24ad850900cb0c66a4819d2
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62832336"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72741901"
 ---
 # <a name="idiasessiongetsymbolsbyaddr"></a>IDiaSession::getSymbolsByAddr
-Recupera un enumerador que busca los símbolos en el orden de sus direcciones.
+Recupera un enumerador que busca símbolos en el orden de sus direcciones.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -33,10 +33,10 @@ HRESULT getSymbolsByAddr( 
 #### <a name="parameters"></a>Parámetros
  `ppEnumbyAddr`
 
-[out] Devuelve un [IDiaEnumSymbolsByAddr](../../debugger/debug-interface-access/idiaenumsymbolsbyaddr.md) objeto. Utilice esta interfaz para buscar símbolos en el almacén de símbolos mediante la ubicación de memoria.
+enuncia Devuelve un objeto [IDiaEnumSymbolsByAddr](../../debugger/debug-interface-access/idiaenumsymbolsbyaddr.md) . Use esta interfaz para buscar símbolos en el almacén de símbolos por ubicación de memoria.
 
 ## <a name="return-value"></a>Valor devuelto
- Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.
+ Si se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.
 
 ## <a name="see-also"></a>Vea también
 - [IDiaSession](../../debugger/debug-interface-access/idiasession.md)

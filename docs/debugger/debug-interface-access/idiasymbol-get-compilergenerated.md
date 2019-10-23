@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e8cc1d59accb63ea7ef8b939e9e0912ee03dc4e8
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: c67a3ae78db3f91f25f69c1045856c5d167c2d34
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64808697"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72740827"
 ---
-# <a name="idiasymbolgetcompilergenerated"></a>IDiaSymbol::get_compilerGenerated
-Recupera una marca que indica si el símbolo se ha generado por el compilador.
+# <a name="idiasymbolget_compilergenerated"></a>IDiaSymbol::get_compilerGenerated
+Recupera una marca que indica si el símbolo fue generado por el compilador.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -33,20 +33,20 @@ HRESULT get_compilerGenerated ( 
 #### <a name="parameters"></a>Parámetros
  `pRetVal`
 
-[out] Devuelve `TRUE` si el compilador genera el símbolo; en caso contrario, devuelve `FALSE` si el símbolo se generó a partir de código fuente escrito por el usuario.
+enuncia Devuelve `TRUE` si el compilador generó el símbolo; de lo contrario, devuelve `FALSE` si el símbolo se generó a partir de un origen escrito por el usuario.
 
 ## <a name="return-value"></a>Valor devuelto
- Si es correcto, devuelve `S_OK`; en caso contrario, devuelve `S_FALSE` o código de error.
+ Si se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve `S_FALSE` o el código de error.
 
 > [!NOTE]
 > Un valor devuelto de `S_FALSE` significa que la propiedad no está disponible para el símbolo.
 
 ## <a name="requirements"></a>Requisitos
 
-|Requisito|DESCRIPCIÓN|
+|Requisito|Descripción|
 |-----------------|-----------------|
 |Encabezado:|dia2.h|
-|Versión:|SDK de DIA v7.0|
+|Versión:|SDK de DIA v 7.0|
 
 ## <a name="see-also"></a>Vea también
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

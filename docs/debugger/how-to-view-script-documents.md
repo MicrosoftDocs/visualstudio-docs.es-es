@@ -1,5 +1,5 @@
 ---
-title: Procedimiento Ver documentos de Script | Documentos de Microsoft
+title: 'Cómo: ver documentos de script | Microsoft Docs'
 ms.date: 01/08/2019
 ms.topic: conceptual
 dev_langs:
@@ -15,23 +15,23 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 821e3bc4abc379f0ed7fc1343867f88fefe54b17
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 7696122cc9f0d431f310b8d6efb10819af995823
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62906090"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72731862"
 ---
-# <a name="how-to-view-script-documents-javascript"></a>Procedimiento Ver documentos de Script (JavaScript)
+# <a name="how-to-view-script-documents-javascript"></a>Cómo: ver documentos de script (JavaScript)
 
-Archivos de script del lado servidor están visibles en el Explorador de soluciones. Los archivos de script de cliente sólo están visibles en modo de depuración o en modo de interrupción. Archivos de script de cliente aparecen en la **documentos de Script** nodo.
+Los archivos de script de servidor son visibles en Explorador de soluciones. Los archivos de script de cliente sólo están visibles en modo de depuración o en modo de interrupción. Los archivos de script del lado cliente aparecen en el nodo **documentos de script** .
 
 > [!NOTE]
-> Anterior a [!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)], los archivos de script de cliente generados a partir de script de servidor aparecían en la ventana Explorador de scripts.
+> Antes [!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)], los archivos de script de cliente generados a partir del script del lado servidor aparecían en la ventana Explorador de scripts.
 
 ### <a name="to-view-a-server-side-script-document"></a>Para ver un documento de script de servidor
 
-1. En el **Explorador de soluciones**, abra el nodo **\<Nombre de ruta de acceso del sitio web>**.
+1. En el **Explorador de soluciones**, abra el nodo **\<Nombre de ruta de acceso del sitio web>** .
 
 2. Haga doble clic en el archivo de script que desee ver.
 

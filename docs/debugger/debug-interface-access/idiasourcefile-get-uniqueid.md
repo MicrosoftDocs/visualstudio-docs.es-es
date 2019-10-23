@@ -12,14 +12,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c4a204e04c1c99dcbe8c6ba6d5e3457ca875dde4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 30a210c12384cbde55dafe6f3410b8fc840e8507
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62832258"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72741786"
 ---
-# <a name="idiasourcefilegetuniqueid"></a>IDiaSourceFile::get_uniqueId
+# <a name="idiasourcefileget_uniqueid"></a>IDiaSourceFile::get_uniqueId
 Recupera un valor de clave de entero simple que es único para esta imagen.
 
 ## <a name="syntax"></a>Sintaxis
@@ -33,13 +33,13 @@ HRESULT get_uniqueId ( 
 #### <a name="parameters"></a>Parámetros
  `pRetVal`
 
-[out] Devuelve un valor de clave de entero simple que es único para esta imagen.
+enuncia Devuelve un valor de clave de entero simple que es único para esta imagen.
 
 ## <a name="return-value"></a>Valor devuelto
- Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.
+ Si se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.
 
 ## <a name="remarks"></a>Comentarios
- Comparar las claves en lugar de cadenas pueden acelerar el proceso de número de línea.
+ La comparación de claves en lugar de cadenas puede acelerar el procesamiento de números de línea.
 
 ## <a name="see-also"></a>Vea también
 - [IDiaSourceFile](../../debugger/debug-interface-access/idiasourcefile.md)

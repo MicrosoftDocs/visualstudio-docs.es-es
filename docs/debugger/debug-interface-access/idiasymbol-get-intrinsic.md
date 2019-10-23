@@ -12,14 +12,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 511c359944bcd50da277d73d25f58e789735bf1f
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 7a300cd39e85e84ee3a008f3dc011ddcccb6ce5e
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64830808"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72740362"
 ---
-# <a name="idiasymbolgetintrinsic"></a>IDiaSymbol::get_intrinsic
+# <a name="idiasymbolget_intrinsic"></a>IDiaSymbol::get_intrinsic
 Recupera una marca que especifica si una clase es un tipo intrínseco.
 
 ## <a name="syntax"></a>Sintaxis
@@ -33,10 +33,10 @@ HRESULT get_intrinsic( 
 #### <a name="parameters"></a>Parámetros
  `pRetVal`
 
-[out] Devuelve `TRUE` si la clase es un tipo intrínseco; en caso contrario, devuelve `FALSE`.
+enuncia Devuelve `TRUE` si la clase es un tipo intrínseco; de lo contrario, devuelve `FALSE`.
 
 ## <a name="return-value"></a>Valor devuelto
- Si es correcto, devuelve `S_OK`; en caso contrario, devuelve `S_FALSE` o un código de error.
+ Si se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve `S_FALSE` o un código de error.
 
 > [!NOTE]
 > Un valor devuelto de `S_FALSE` significa que la propiedad no está disponible para el símbolo.
@@ -44,9 +44,9 @@ HRESULT get_intrinsic( 
 ## <a name="remarks"></a>Comentarios
 
 ## <a name="requirements"></a>Requisitos
- Encabezado: Dia2.h
+ Encabezado: Dia2. h
 
- Biblioteca: diaguids.lib
+ Biblioteca: diaguids. lib
 
  DLL: msdia100.dll
 

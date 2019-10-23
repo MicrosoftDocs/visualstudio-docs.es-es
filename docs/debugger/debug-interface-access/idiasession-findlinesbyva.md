@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 29f3f714cdcbe529dac98948f6568934a6f508af
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 2513825fd2b6f4e6035f9f23295f0c9f00385d0a
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62832411"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72742072"
 ---
 # <a name="idiasessionfindlinesbyva"></a>IDiaSession::findLinesByVA
-Recupera la información de número de línea para las líneas contenidas en un intervalo de direcciones virtual especificado (VA).
+Recupera la información del número de línea para las líneas contenidas en un intervalo de direcciones virtuales (VA) especificado.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -35,18 +35,18 @@ HRESULT findLinesByVA (
 #### <a name="parameters"></a>Parámetros
 `va`
 
-[in] Especifica la dirección como un jefe
+de Especifica la dirección como un VA.
 
 `length`
 
-[in] Especifica el número de bytes del intervalo de direcciones para cubrir con esta consulta.
+de Especifica el número de bytes del intervalo de direcciones que se va a cubrir con esta consulta.
 
 `ppResult`
 
-[out] Devuelve un [IDiaEnumLineNumbers](../../debugger/debug-interface-access/idiaenumlinenumbers.md) objeto que contiene una lista de la línea de todos los números que regulan el intervalo de direcciones especificado.
+enuncia Devuelve un objeto [IDiaEnumLineNumbers](../../debugger/debug-interface-access/idiaenumlinenumbers.md) que contiene una lista de todos los números de línea que cubren el intervalo de direcciones especificado.
 
 ## <a name="example"></a>Ejemplo
-En este ejemplo se muestra una función que obtiene todos los números de línea incluidos en una función mediante la dirección virtual de la función y la longitud.
+En este ejemplo se muestra una función que obtiene todos los números de línea contenidos en una función utilizando la dirección virtual y la longitud de la función.
 
 ```C++
 IDiaEnumLineNumbers *GetLineNumbersByVA(IDiaSymbol *pFunc, IDiaSession *pSession)

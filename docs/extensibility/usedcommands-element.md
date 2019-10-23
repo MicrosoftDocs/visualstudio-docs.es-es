@@ -1,5 +1,5 @@
 ---
-title: UsedCommands (elemento) | Documentos de Microsoft
+title: Elemento UsedCommands | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -13,17 +13,17 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e43834517855f72dd32c024c222089cf42c7c3ac
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 66361ad58c15e8539fcda6d0ec4468dd8b68289b
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66316281"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72718626"
 ---
 # <a name="usedcommands-element"></a>UsedCommands (Elemento)
-UsedCommands (elemento) agrupa elementos UsedCommand y otras agrupaciones UsedCommands.
+El elemento UsedCommands agrupa los elementos UsedCommand y otras agrupaciones UsedCommands.
 
- UsedCommands (elemento) es opcional. Si no se llama comandos definidos fuera de su paquete, no es necesario incluir en esta sección en el archivo .vsct.
+ El elemento UsedCommands es opcional. Si no llama a comandos definidos fuera del paquete, no tiene que incluir esta sección en el archivo. Vsct.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -40,19 +40,19 @@ UsedCommands (elemento) agrupa elementos UsedCommand y otras agrupaciones UsedCo
 
 |Atributo|Descripción|
 |---------------|-----------------|
-|Condición|Opcional. Consulte [atributos condicionales](../extensibility/vsct-xml-schema-conditional-attributes.md).|
+|Condición|Opcional. Vea [atributos condicionales](../extensibility/vsct-xml-schema-conditional-attributes.md).|
 
 ### <a name="child-elements"></a>Elementos secundarios
 
 |Elemento|Descripción|
 |-------------|-----------------|
-|[UsedCommand (Elemento)](../extensibility/usedcommand-element.md)|El comando que se implementa por otro código.|
+|[UsedCommand (Elemento)](../extensibility/usedcommand-element.md)|Comando implementado por otro código.|
 
 ### <a name="parent-elements"></a>Elementos primarios
 
 |Elemento|Descripción|
 |-------------|-----------------|
-|[CommandTable (Elemento)](../extensibility/commandtable-element.md)|Define todos los elementos que representan los comandos (por ejemplo, los elementos de menú, menús, barras de herramientas y cuadros combinados) que un paquete VSPackage proporciona al entorno de desarrollo integrado (IDE).|
+|[CommandTable (Elemento)](../extensibility/commandtable-element.md)|Define todos los elementos que representan comandos (por ejemplo, elementos de menú, menús, barras de herramientas y cuadros combinados) que un VSPackage proporciona al entorno de desarrollo integrado (IDE).|
 
 ## <a name="example"></a>Ejemplo
 

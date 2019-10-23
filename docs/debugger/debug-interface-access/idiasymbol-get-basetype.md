@@ -12,14 +12,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e1d38e39fd7687de3ff87737b49972cb389187aa
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 0a3d1bb8b2f3095fd35488c47f823e7b3603995b
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "62837612"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72740916"
 ---
-# <a name="idiasymbolgetbasetype"></a>IDiaSymbol::get_baseType
+# <a name="idiasymbolget_basetype"></a>IDiaSymbol::get_baseType
 Recupera el tipo base para este símbolo<em>.</em>
 
 ## <a name="syntax"></a>Sintaxis
@@ -33,16 +33,16 @@ HRESULT get_baseType (
 #### <a name="parameters"></a>Parámetros
 `pRetVal`
 
-[out] Devuelve un valor de la [BasicType (enumeración)](../../debugger/debug-interface-access/basictype.md) enumeración que especifica el tipo base del símbolo.
+enuncia Devuelve un valor de la enumeración de [enumeración basictype (](../../debugger/debug-interface-access/basictype.md) que especifica el tipo base del símbolo.
 
 ## <a name="return-value"></a>Valor devuelto
-Si es correcto, devuelve `S_OK`; en caso contrario, devuelve `S_FALSE` o un código de error.
+Si se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve `S_FALSE` o un código de error.
 
 > [!NOTE]
 > Un valor devuelto de `S_FALSE` significa que la propiedad no está disponible para el símbolo.
 
 ## <a name="remarks"></a>Comentarios
-Obteniendo primero el tipo del símbolo de y, a continuación, interrogar que devuelve el tipo para el tipo base se puede determinar el tipo básico para un símbolo. Tenga en cuenta que algunos símbolos pueden no tener un tipo base, por ejemplo, un nombre de la estructura.
+El tipo básico para un símbolo se puede determinar obteniendo primero el tipo del símbolo y, a continuación, interrogando ese tipo devuelto para el tipo base. Tenga en cuenta que algunos símbolos no pueden tener un tipo base, por ejemplo, un nombre de estructura.
 
 ## <a name="example"></a>Ejemplo
 
@@ -61,10 +61,10 @@ if (pType->get_type( &pBaseType ) == S_OK)
 
 ## <a name="requirements"></a>Requisitos
 
-|Requisito|DESCRIPCIÓN|
+|Requisito|Descripción|
 |-----------------|-----------------|
 |Encabezado:|dia2.h|
-|Versión:|SDK de DIA v7.0|
+|Versión:|SDK de DIA v 7.0|
 
 ## <a name="see-also"></a>Vea también
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

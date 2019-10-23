@@ -1,5 +1,5 @@
 ---
-title: Establece una inspección en Variables de subprocesos paralelos | Microsoft Docs
+title: Establecer un reloj en las variables de subprocesos paralelos | Microsoft Docs
 ms.date: 04/25/2017
 ms.topic: conceptual
 f1_keywords:
@@ -17,26 +17,26 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6026ab6d0d59fb3a8f945e554fda26f10d98f952
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 0628e75c54cf0da10dc5aecdf243ae1dda3485fb
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63388473"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72732011"
 ---
-# <a name="set-a-watch-on-variables-in-parallel-threads-in-visual-studio-c-visual-basic-c"></a>Establece una inspección en Variables en subprocesos en paralelo en Visual Studio (C#, Visual Basic, C++)
+# <a name="set-a-watch-on-variables-in-parallel-threads-in-visual-studio-c-visual-basic-c"></a>Establecer un reloj en las variables de subprocesos paralelosC#en Visual Studio C++(, Visual Basic,)
 En la ventana Inspección paralela, puede mostrar simultáneamente los valores que contiene una expresión en varios subprocesos. Cada fila representa un subproceso que se ejecuta en una aplicación, pero un subproceso puede representarse en varias filas. Para ser más exactos, cada fila representa una llamada de función cuya signatura de función coincide con la función en el marco de pila actual. Puede ordenar, reordenar, quitar y agrupar los elementos incluidos en las columnas. Puede marcar, quitar el marcador, inmovilizar (suspender) y retomar (reanudar) los subprocesos. Las siguientes columnas se muestran en la ventana **Inspección paralela**:
 
 - La columna de marcas, en la que puede marcar un subproceso al que desee prestar especial atención.
 
-- La columna del subproceso actual, en el que una flecha amarilla indica que el subproceso actual (una flecha verde con una cola rizada indica que un subproceso distinto del actual tiene el contexto actual del depurador).
+- La columna de subproceso actual, donde una flecha amarilla indica el subproceso actual (una flecha verde con una cola tipográfica indica que un subproceso no actual tiene el contexto del depurador actual).
 
 - Una columna configurable que puede mostrar el equipo, proceso, mosaico, tarea y subproceso.
 
   > [!TIP]
-  > Para mostrar información de la tarea en el **inspección paralela** ventana, primero debe abrir el **tarea** ventana.
+  > Para mostrar la información de la tarea en la ventana **inspección paralela** , primero debe abrir la ventana de **tareas** .
 
-- El espacio en blanco *Agregar inspección* columnas, donde puede escribir expresiones para inspeccionar.
+- Las columnas *Agregar inspección* en blanco, en la que puede escribir expresiones para inspeccionarlas.
 
   [!INCLUDE[note_settings_general](../data-tools/includes/note_settings_general_md.md)]
 
@@ -50,19 +50,19 @@ En la ventana Inspección paralela, puede mostrar simultáneamente los valores q
 
 ### <a name="to-add-a-watch-expression"></a>Para agregar una expresión de inspección
 
-- Seleccione uno del blanco *Agregar inspección* columnas y, a continuación, escriba una expresión de inspección.
+- Seleccione una de las columnas *Agregar inspección* en blanco y, a continuación, escriba una expresión de inspección.
 
 ### <a name="to-flag-or-unflag-a-thread"></a>Para marcar o quitar marcador de un subproceso
 
-- Seleccione la columna de marca de la fila (primera columna), o abra el menú contextual para el subproceso y elija **marca** o **Quitar marcador**.
+- Seleccione la columna de marca de la fila (primera columna) o abra el menú contextual del subproceso y elija **marcar o quitar** **marcador**.
 
 ### <a name="to-display-only-flagged-threads"></a>Para mostrar solo los subprocesos marcados
 
-- Elija la **mostrar marcadas únicamente** situado en la esquina superior izquierda de la **inspección paralela** ventana.
+- Elija el botón **Mostrar solo marcado** en la esquina superior izquierda de la ventana **inspección paralela** .
 
 ### <a name="to-switch-to-another-thread"></a>Para cambiar a otro subproceso
 
-- Haga doble clic en la columna del subproceso actual (segunda columna). (Teclado: Seleccione la fila y presione ENTRAR).
+- Haga doble clic en la columna subproceso actual (segunda columna). (Teclado: seleccione la fila y presione Entrar).
 
 ### <a name="to-sort-a-column"></a>Para ordenar una columna
 
@@ -86,5 +86,5 @@ En la ventana Inspección paralela, puede mostrar simultáneamente los valores q
 
 ## <a name="see-also"></a>Vea también
 - [Depuración de aplicaciones multiproceso](../debugger/debug-multithreaded-applications-in-visual-studio.md)
-- [Cómo: usar la ventana Subprocesos de GPU](../debugger/how-to-use-the-gpu-threads-window.md)
+- [Cómo: Usar la ventana Subprocesos de GPU](../debugger/how-to-use-the-gpu-threads-window.md)
 - [Tutorial: Depurar una aplicación de C++ AMP](/cpp/parallel/amp/walkthrough-debugging-a-cpp-amp-application)

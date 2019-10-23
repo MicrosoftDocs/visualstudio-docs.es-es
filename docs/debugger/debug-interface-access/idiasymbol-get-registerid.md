@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3e2b1cbb6837ca139e735bef17bc0c2712d9cae7
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 6ffd349b56c4292de04d5d7a38e82eeafed6775e
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64786576"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72739460"
 ---
-# <a name="idiasymbolgetregisterid"></a>IDiaSymbol::get_registerId
-Recupera el designador de registro de la ubicación cuando la [LocationType (enumeración)](../../debugger/debug-interface-access/locationtype.md) está establecido en `LocIsEnregistered`.
+# <a name="idiasymbolget_registerid"></a>IDiaSymbol::get_registerId
+Recupera el designador de registro de la ubicación cuando la [enumeración LocationType (](../../debugger/debug-interface-access/locationtype.md) se establece en `LocIsEnregistered`.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -33,16 +33,16 @@ HRESULT get_registerId ( 
 #### <a name="parameters"></a>Parámetros
  `pRetVal`
 
-[out] Devuelve el designador de registro de la ubicación.
+enuncia Devuelve el designador de registro de la ubicación.
 
 ## <a name="return-value"></a>Valor devuelto
- Si es correcto, devuelve `S_OK`; en caso contrario, devuelve `S_FALSE` o un código de error.
+ Si se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve `S_FALSE` o un código de error.
 
 > [!NOTE]
 > Un valor devuelto de `S_FALSE` significa que la propiedad no está disponible para el símbolo.
 
 ## <a name="remarks"></a>Comentarios
- Si el símbolo es relativa a un registro, es decir, si el símbolo [LocationType (enumeración)](../../debugger/debug-interface-access/locationtype.md) está establecido en `LocIsRegRel`, utilice el `get_registerId` método seguido por una llamada a la [Get_offset](../../debugger/debug-interface-access/idiasymbol-get-offset.md) método para obtener el desplazamiento desde el registro donde se encuentra el símbolo.
+ Si el símbolo es relativo a un registro, es decir, si la [enumeración LocationType (](../../debugger/debug-interface-access/locationtype.md) del símbolo está establecida en `LocIsRegRel`, use el método `get_registerId` seguido de una llamada al método [IDiaSymbol:: get_offset](../../debugger/debug-interface-access/idiasymbol-get-offset.md) para obtener el desplazamiento del registro donde el símbolo es. localizado.
 
 ## <a name="see-also"></a>Vea también
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

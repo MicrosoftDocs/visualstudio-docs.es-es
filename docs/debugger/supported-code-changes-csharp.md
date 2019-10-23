@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: c5f54a2b50447125b0abffd8cc62ba9c2a1d2b37
-ms.sourcegitcommit: 4dfe098ac0df294aad63e6b384d6575980798ca3
+ms.openlocfilehash: 44881035da14483c3ddf1f4c48cb3957a1ce8b50
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/11/2019
-ms.locfileid: "70887775"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72729086"
 ---
 # <a name="supported-code-changes-c-and-visual-basic"></a>Cambios de código admitidos (C# y Visual Basic)
 Editar y continuar controla la mayoría de los tipos de cambios de código dentro de los cuerpos de método. Ahora bien, durante la depuración, no es posible efectuar la mayoría de cambios fuera de los cuerpos de método y algunos cambios dentro de estos. Para efectuar dichos cambios no compatibles, es necesario detener la depuración y reiniciar con una versión nueva del código.
@@ -33,9 +33,9 @@ En la tabla siguiente se muestran los cambios que se pueden C# realizar y Visual
 |Elemento o característica de lenguaje|Operación de edición admitida|Limitaciones|
 |-|-|-|
 |Tipos|Agregar métodos, campos, constructores, et al|[Sí](https://github.com/dotnet/roslyn/wiki/EnC-Supported-Edits)|
-|Iterators|Agregar o modificar|Sin|
+|Iterators|Agregar o modificar|No|
 |Expresiones Async/Await|Agregar o modificar|[Sí](https://github.com/dotnet/roslyn/wiki/EnC-Supported-Edits)|
-|Objetos dinámicos|Agregar o modificar|Sin|
+|Objetos dinámicos|Agregar o modificar|No|
 |expresiones lambda|Agregar o modificar|[Sí](https://github.com/dotnet/roslyn/wiki/EnC-Supported-Edits)|
 |Expresiones LINQ|Agregar o modificar|[Igual que las expresiones lambda](https://github.com/dotnet/roslyn/wiki/EnC-Supported-Edits)|
 
@@ -79,7 +79,7 @@ En la tabla siguiente se muestran los cambios que se pueden C# realizar y Visual
 |Iterators|Modificar un iterador en un proyecto destinado a .NET Framework 4 y versiones inferiores (vea los [detalles](https://github.com/dotnet/roslyn/wiki/EnC-Supported-Edits))|
 
 ## <a name="unsafe-code"></a>Código no seguro
- Los cambios en el código no seguro tienen las mismas limitaciones que los cambios en el código seguro, con una restricción adicional: Editar y continuar no admite cambios en el código no seguro que salga dentro de un método que contenga `stackalloc` el operador.
+ Los cambios efectuados en el código no seguro tienen las mismas limitaciones que los cambios efectuados en el código seguro, con una restricción adicional: Editar y continuar no admite cambios en el código no seguro que esté dentro de un método que contenga el operador `stackalloc`.
 
 ## <a name="unsupported-app-scenarios"></a>Escenarios de aplicaciones no admitidos
 
@@ -107,4 +107,4 @@ Las aplicaciones y plataformas no compatibles incluyen ASP.NET 5, Silverlight 5 
 
 ## <a name="see-also"></a>Vea también
 - [Editar y continuar (Visual C#)](../debugger/edit-and-continue-visual-csharp.md)
-- [Cómo: Uso de Editar y continuar (C#)](../debugger/how-to-use-edit-and-continue-csharp.md)
+- [Cómo: Usar Editar y continuar (C#)](../debugger/how-to-use-edit-and-continue-csharp.md)

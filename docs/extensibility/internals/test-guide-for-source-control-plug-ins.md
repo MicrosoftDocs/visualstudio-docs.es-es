@@ -1,5 +1,5 @@
 ---
-title: Guía de pruebas para los complementos de Control de código fuente | Documentos de Microsoft
+title: Guía de pruebas para complementos de control de código fuente | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -14,92 +14,92 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 098aa9499dd4c1073377ed6aa5e8fa2a6fb37ca8
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 51595708bf30472fd001bde394c7d8c80e39ad45
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67823872"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72722403"
 ---
 # <a name="test-guide-for-source-control-plug-ins"></a>Guía de pruebas para los complementos de control de código fuente
-Esta sección proporciona instrucciones para probar su complemento con control de código fuente [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. Se proporciona una visión general amplia de las áreas más comunes de pruebas, así como algunas de las áreas más complicadas que pueden ser problemáticas. Esta información general no pretende ser una lista exhaustiva de casos de prueba.
+En esta sección se proporcionan instrucciones para probar el complemento de control de código fuente con [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. Se proporciona una amplia introducción a las áreas de pruebas más comunes, así como algunas de las áreas más complicadas que pueden ser problemáticas. Esta información general no pretende ser una lista exhaustiva de casos de prueba.
 
 > [!NOTE]
-> Algunas correcciones de errores y mejoras en la versión más reciente [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] IDE puede revelar problemas con origen control complementos existentes que previamente no han encontrado durante el uso de las versiones anteriores de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. Se recomienda encarecidamente que pruebe el control de código fuente existente complemento para las áreas que se enumeran en esta sección, incluso si no hay cambios realizados al complemento desde la versión anterior de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)].
+> Algunas correcciones de errores y mejoras en el IDE de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] más reciente pueden revelar problemas con complementos de control de código fuente existentes que no se han encontrado anteriormente al usar versiones anteriores de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. Se recomienda encarecidamente que pruebe el complemento de control de código fuente existente para las áreas enumeradas en esta sección, incluso si no se han realizado cambios en el complemento desde la versión anterior de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)].
 
-## <a name="common-preparation"></a>Preparación comunes
- Una máquina con [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] y el complemento de control de código fuente de destino instalado, es necesario. Una segunda máquina configurada de forma similar puede utilizarse para algunas de la de apertura desde las pruebas de Control de código fuente.
+## <a name="common-preparation"></a>Preparación común
+ Se requiere un equipo con [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] y el complemento de control de código fuente de destino instalado. Se puede usar una segunda máquina configurada de forma similar para algunas de las pruebas de control de código fuente abiertas.
 
 ## <a name="definition-of-terms"></a>Definición de términos
- Con el propósito de esta guía de prueba, use las siguientes definiciones de términos:
+ Para la finalidad de esta guía de pruebas, use las siguientes definiciones de términos:
 
- Proyecto de cliente disponibles en cualquier tipo de proyecto [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] que admite la integración de control de código fuente (por ejemplo, [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)], [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)], o [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)]).
+ Proyecto de cliente cualquier tipo de proyecto disponible en [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] que admita la integración de control de código fuente (por ejemplo, [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)], [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] o [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)]).
 
- No existe el proyecto de Web son los cuatro tipos de proyectos Web: Sistema de archivos, IIS Local, sitios remotos y FTP.
+ Proyecto web hay cuatro tipos de proyectos web: sistema de archivos, IIS local, sitios remotos y FTP.
 
-- Se crean proyectos de sistema de archivos en una ruta de acceso local, pero no requieren Internet Information Services (IIS) para instalarse cuando se tiene acceso internamente a través de una ruta de acceso UNC y pueden colocarse bajo control de código fuente desde el IDE, muy similar a los proyectos de cliente.
+- Los proyectos de sistema de archivos se crean en una ruta de acceso local, pero no requieren la instalación de Internet Information Services (IIS), ya que se accede a ellos internamente a través de una ruta de acceso UNC, y se pueden colocar bajo el control de código fuente desde el IDE, de forma muy similar a los proyectos de cliente.
 
-- Proyectos IIS locales funcionan con IIS que está instalado en el mismo equipo y se tiene acceso con una dirección URL que apunta a la máquina local.
+- Los proyectos locales de IIS funcionan con IIS que está instalado en el mismo equipo y a los que se tiene acceso con una dirección URL que apunta a la máquina local.
 
-- También se crean proyectos de sitios remotos en los servicios de IIS, pero están colocados bajo control de código fuente en el equipo del servidor IIS y no desde dentro de la [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] IDE.
+- Los proyectos de sitios remotos también se crean en los servicios de IIS, pero se colocan bajo control de código fuente en el equipo del servidor IIS y no desde dentro del IDE de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)].
 
-- Se tiene acceso a los proyectos FTP a través de un servidor FTP remoto pero no se puede colocar bajo control de código fuente.
+- El acceso a los proyectos FTP se realiza a través de un servidor FTP remoto, pero no se pueden colocar bajo control de código fuente.
 
-  Controlar el otro término de la solución o proyecto bajo el origen de la inscripción.
+  Inscripción otro término para la solución o proyecto bajo control de código fuente.
 
-  Store de la versión de la base de datos de control de código fuente que se accede a través de la API de complemento de Control de código fuente.
+  Versión almacene la base de datos de control de código fuente a la que se obtiene acceso a través de la API del complemento de control de código fuente.
 
-## <a name="test-areas-covered-in-this-section"></a>En esta sección tratadas de áreas de pruebas
+## <a name="test-areas-covered-in-this-section"></a>Áreas de prueba descritas en esta sección
 
-- [Área de prueba 1: Incorporación y apertura desde el control de código fuente](../../extensibility/internals/test-area-1-add-to-open-from-source-control.md)
+- [Área de prueba 1: agregar a/abrir desde control de código fuente](../../extensibility/internals/test-area-1-add-to-open-from-source-control.md)
 
-  - Case 1a: Agregar solución al Control de código fuente
+  - Caso 1A: Agregar solución al control de código fuente
 
-  - Escenario 1b: Abrir solución desde el Control de código fuente
+  - Caso 1B: abrir la solución desde el control de código fuente
 
-  - Caso 1C: Agregar solución desde Control de código fuente
+  - Caso 1C: Agregar solución desde el control de código fuente
 
-- [Área de prueba 2: Obtención desde el control de código fuente](../../extensibility/internals/test-area-2-get-from-source-control.md)
+- [Área de prueba 2: obtener de control de código fuente](../../extensibility/internals/test-area-2-get-from-source-control.md)
 
-- [Área de prueba 3: Extracción del repositorio y cancelación de la operación](../../extensibility/internals/test-area-3-check-out-undo-checkout.md)
+- [Área de prueba 3: extraer del repositorio/cancelar extracción del repositorio](../../extensibility/internals/test-area-3-check-out-undo-checkout.md)
 
-  - Caso 3: Desproteger o deshacer desprotección
+  - Caso 3: desproteger o deshacer la desprotección
 
-  - Case 3a: Desproteger
+  - Caso 3A: extraer del repositorio
 
-  - Escenario 3b: Desprotección sin conexión
+  - Caso 3B: desconexión desconectada
 
-  - Caso 3C: Edición de consulta o consulta guardar (QEQS)
+  - Caso 3C: editar consulta/guardar consulta (QEQS)
 
-  - Caso 3d: Retirada silenciosa
+  - Caso 3D: desprotección silenciosa
 
-  - Case 3e: Deshacer desprotección
+  - Caso 3e: deshacer la desprotección
 
-- [Área de prueba 4: Inserción en el repositorio](../../extensibility/internals/test-area-4-check-in.md)
+- [Área de prueba 4: insertar en el repositorio](../../extensibility/internals/test-area-4-check-in.md)
 
-  - Escenario 4a: Elementos modificados
+  - Caso 4A: elementos modificados
 
-  - Escenario 4b: Agregar archivos
+  - Caso 4B: agregar archivos
 
-  - Caso 4 núcleos: Agregar proyectos
+  - Caso 4C: agregar proyectos
 
-- [Área de prueba 5: Cambio del control de código fuente](../../extensibility/internals/test-area-5-change-source-control.md)
+- [Área de prueba 5: cambiar control de código fuente](../../extensibility/internals/test-area-5-change-source-control.md)
 
-  - Case 5a: Enlazar
+  - Caso 5A: enlace
 
-  - Case 5b: Desenlazar
+  - Caso 5B: desenlazar
 
-  - Mayúsculas y minúsculas 5c: volver a enlazar
+  - Caso 5C: reenlace
 
-- [Área de prueba 6: Eliminar](../../extensibility/internals/test-area-6-delete.md)
+- [Área de prueba 6: eliminar](../../extensibility/internals/test-area-6-delete.md)
 
-- [Área de prueba 7: Compartir](../../extensibility/internals/test-area-7-share.md)
+- [Área de prueba 7: compartir](../../extensibility/internals/test-area-7-share.md)
 
-- [Área de prueba 8: Cambio de los complementos](../../extensibility/internals/test-area-8-plug-in-switching.md)
+- [Área de prueba 8: cambio de complementos](../../extensibility/internals/test-area-8-plug-in-switching.md)
 
-  - Case 8a: Cambio automático
+  - Caso 8A: cambio automático
 
-  - 8b Case: Cambio de solución
+  - Caso 8B: cambio basado en la solución
 
 ## <a name="see-also"></a>Vea también
 - [Complementos de control de código fuente](../../extensibility/source-control-plug-ins.md)

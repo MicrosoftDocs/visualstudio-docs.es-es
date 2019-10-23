@@ -1,5 +1,5 @@
 ---
-title: 'Área de prueba 6: Delete | Microsoft Docs'
+title: 'Área de prueba 6: eliminar | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,46 +11,46 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 935c735009d83274cc1a8ae126d46f8ee9dbe1ae
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 1d75721a09615026cd10a42e4b6d8d8520b41239
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66327987"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72722442"
 ---
-# <a name="test-area-6-delete"></a>Área de prueba 6: Eliminar
-Esta área de prueba de complemento de control de código fuente trata las acciones de eliminación.
+# <a name="test-area-6-delete"></a>Área de prueba 6: eliminar
+Este área de prueba del complemento de control de código fuente cubre las acciones de eliminación.
 
- Para eliminar las acciones en que responde el control de código fuente **el Explorador de soluciones**.
+ El control de código fuente responde a las acciones de eliminación en **Explorador de soluciones**.
 
- Siguiente es una lista de elementos que se pueden eliminar:
+ A continuación se muestra una lista de los elementos que se pueden eliminar:
 
 - Archivos
 
-- Carpetas
+- Folder
 
 - Proyecto
 
-  Según el tipo de proyecto, tendrá la opción de **quitar** el proyecto (deja los archivos en disco) o **eliminar** el proyecto (elimina los archivos en disco). Cualquier acción quita el proyecto o elemento de **el Explorador de soluciones**.
+  Dependiendo del tipo de proyecto, puede que tenga la opción de **quitar** el proyecto (deja los archivos en disco) o **eliminar** el proyecto (quita los archivos en el disco). Cualquier acción quita el proyecto o el elemento de **Explorador de soluciones**.
 
 ## <a name="expected-behavior"></a>Comportamiento esperado
- Es el comportamiento esperado para los casos de prueba en el área de prueba de eliminación:
+ El comportamiento esperado para los casos de prueba en el área de prueba de eliminación es:
 
-- Elemento eliminado ya no está visible dentro de **el Explorador de soluciones**.
+- El elemento eliminado ya no está visible en **Explorador de soluciones**.
 
-- El elemento primario del proyecto eliminado o elemento está desprotegido según sea necesario (posiblemente con un símbolo del sistema.)
+- El elemento primario del proyecto o elemento eliminado se desprotege según sea necesario (posiblemente con un símbolo del sistema).
 
-- Después de eliminar un checked out o elemento agregado, no aparecen en la **protecciones pendientes** ventana.
+- Después de eliminar un elemento desprotegido o agregado, no aparece en la ventana **protecciones pendientes** .
 
-- El elemento aún existe en el almacén de control de código fuente, incluso después de la eliminación y se debe purgar manualmente.
+- El elemento todavía existe en el almacén de control de código fuente, incluso después de la eliminación, y se debe purgar manualmente.
 
-|Acción|Pasos de prueba|Resultados esperados para comprobar|
+|Acción|Pasos de prueba|Resultados esperados que se van a comprobar|
 |------------|----------------|--------------------------------|
-|Eliminar un proyecto de cliente|1.  Cree un proyecto de cliente.<br />2.  Agregue la solución al control de código fuente.<br />3.  Quitar todo el proyecto de solución|Comportamiento esperado común.|
-|Eliminar un archivo vacío|1.  Cree un proyecto de cliente.<br />2.  Agregue un archivo de cero bytes al proyecto.<br />3.  Agregue la solución al control de código fuente.<br />4.  Seleccione el archivo, elimínelo.|Comportamiento esperado común.|
-|Eliminar una carpeta con un solo archivo|1.  Crear solución de proyecto único.<br />2.  Agregue una carpeta.<br />3.  Agregue un archivo a la carpeta.<br />4.  Agregue la solución al control de código fuente.<br />5.  Extraer del repositorio el proyecto para evitar mensajes.<br />6.  Elimine la carpeta.|Comportamiento esperado común.|
-|Eliminar un proyecto Web de sistema de archivos|1.  Cree un proyecto Web de sistema de archivos (use el botón Examinar para especificar una ruta de acceso UNC).<br />2.  Agregue la solución al control de código fuente.<br />3.  Quitar todo el proyecto de la solución.<br />4.  Repita los pasos del 1 al 3 para un proyecto Web local (ejercita diferentes rutas de acceso a través del código, pero tiene la misma interfaz externa y el comportamiento).|Comportamiento esperado común.|
-|Eliminar un archivo de un proyecto Web de sistema de archivos|1.  Crear un proyecto Web de sistema de archivos.<br />2.  Agregue la solución al control de código fuente.<br />3.  Eliminar un archivo del proyecto.<br />4.  Repita los pasos del 1 al 3 para un proyecto Web local (ejercita diferentes rutas de acceso a través del código, pero tiene la misma interfaz externa y el comportamiento).|Comportamiento esperado común.|
+|Eliminar un proyecto de cliente|1. cree un proyecto de cliente.<br />2. Agregue la solución al control de código fuente.<br />3. quitar todo el proyecto de la solución|Comportamiento esperado común.|
+|Eliminar un archivo vacío|1. cree un proyecto de cliente.<br />2. Agregue un archivo de cero bytes al proyecto.<br />3. agregar la solución al control de código fuente.<br />4. Seleccione el archivo, elimínelo.|Comportamiento esperado común.|
+|Eliminar una carpeta con un archivo|1. cree una solución de proyecto único.<br />2. Agregue una carpeta.<br />3. Agregue un archivo a la carpeta.<br />4. Agregue la solución al control de código fuente.<br />5. Consulte el proyecto para evitar los mensajes.<br />6. Elimine la carpeta.|Comportamiento esperado común.|
+|Eliminar un proyecto web del sistema de archivos|1. crear un proyecto Web de sistema de archivos (use el botón Examinar para especificar una ruta de acceso UNC).<br />2. Agregue la solución al control de código fuente.<br />3. Quite todo el proyecto de la solución.<br />4. Repita los pasos 1 a 3 para un proyecto Web local (ejercita diferentes rutas de acceso a través del código, pero tiene la misma interfaz externa y el mismo comportamiento).|Comportamiento esperado común.|
+|Eliminar un archivo de un proyecto web del sistema de archivos|1. cree un proyecto Web de sistema de archivos.<br />2. Agregue la solución al control de código fuente.<br />3. eliminar un archivo del proyecto.<br />4. Repita los pasos 1 a 3 para un proyecto Web local (ejercita diferentes rutas de acceso a través del código, pero tiene la misma interfaz externa y el mismo comportamiento).|Comportamiento esperado común.|
 
 ## <a name="see-also"></a>Vea también
 - [Guía de pruebas para los complementos de control de código fuente](../../extensibility/internals/test-guide-for-source-control-plug-ins.md)

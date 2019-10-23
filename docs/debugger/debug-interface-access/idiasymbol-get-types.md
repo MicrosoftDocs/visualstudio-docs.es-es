@@ -12,14 +12,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 19642e6875e81220cb20109ce45e8dca40777a63
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 6d23ea3c4d885b3f7575c998999814d0808d03bc
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64786564"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72739053"
 ---
-# <a name="idiasymbolgettypes"></a>IDiaSymbol::get_types
+# <a name="idiasymbolget_types"></a>IDiaSymbol::get_types
 Recupera una matriz de tipos específicos del compilador para este símbolo.
 
 ## <a name="syntax"></a>Sintaxis
@@ -35,18 +35,18 @@ HRESULT get_types ( 
 #### <a name="parameters"></a>Parámetros
  `cTypes`
 
-[in] Tamaño del búfer para almacenar los datos.
+de Tamaño del búfer que va a contener los datos.
 
  `pcTypes`
 
-[out] Devuelve el número de tipos escritos, o bien, si la `types` parámetro es `NULL`, a continuación, el número total de tipos disponibles.
+enuncia Devuelve el número de tipos escritos, o bien, si el parámetro `types` es `NULL`, entonces el número total de tipos disponibles.
 
  `types[]`
 
-[out] Una matriz que se va a rellenar con el [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) objetos que representan todos los tipos de este símbolo.
+enuncia Matriz que se va a rellenar con los objetos [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) que representan todos los tipos de este símbolo.
 
 ## <a name="return-value"></a>Valor devuelto
- Si es correcto, devuelve `S_OK`; en caso contrario, devuelve `S_FALSE` o un código de error.
+ Si se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve `S_FALSE` o un código de error.
 
 > [!NOTE]
 > Un valor devuelto de `S_FALSE` significa que la propiedad no está disponible para el símbolo.

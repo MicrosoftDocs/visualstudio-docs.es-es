@@ -1,5 +1,5 @@
 ---
-title: 'Error: Depuración produjo un error porque no está habilitada la autenticación integrada de Windows | Documentos de Microsoft'
+title: 'Error: no se pudo realizar la depuración porque la autenticación integrada de Windows no está habilitada | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: troubleshooting
 f1_keywords:
@@ -17,14 +17,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2969e5c6e8e3a5fd5612fa843309e36f0dbc4c9b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ca4b4ee5bb254f952fb6eb02e255320a337f657c
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62850841"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72737806"
 ---
-# <a name="error-debugging-failed-because-integrated-windows-authentication-is-not-enabled"></a>Error: No se pudo realizar la depuración porque no está habilitada la autenticación integrada de Windows
+# <a name="error-debugging-failed-because-integrated-windows-authentication-is-not-enabled"></a>Error: La depuración produjo un error porque no está habilitada la autenticación de Windows integrada
 La autenticación del usuario que solicita la depuración no pudo realizarse debido a un error de autenticación. Esto problema puede producirse cuando intenta desplazarse a un aplicación web o a un servicio Web XML. Una causa de este error es que la autenticación de Windows integrada no esté habilitada. Para habilitarla, siga los pasos descritos en "Para habilitar la autenticación de Windows integrada".
 
  Si la autenticación de Windows integrada está habilitada y sigue apareciendo este error, entonces es posible que este causado porque la opción **Autenticación implícita para servidores de dominio Windows** esté deshabilitada. En este caso debe ponerse en contacto con su administrador de red.
@@ -67,7 +67,7 @@ La autenticación del usuario que solicita la depuración no pudo realizarse deb
 
 2. Active Autenticación de Windows y Compatibilidad con la administración de II6 si no lo hizo previamente; para ello, siga estos pasos:
 
-    1. Haga clic en **iniciar**, haga clic en **Panel de Control** y, a continuación, haga clic en **programas**.
+    1. Haga clic en **Inicio**y en **Panel de control** ; a continuación, haga clic en **programas**.
 
     2. En **Programas y características**, haga clic en **Activar o desactivar las características de Windows**.
 
@@ -97,7 +97,7 @@ La autenticación del usuario que solicita la depuración no pudo realizarse deb
 
 4. Haga clic en **Vista clásica** y, a continuación, haga doble clic en **Herramientas administrativas**.
 
-5. En la columna **Nombre**, haga doble clic en **Administrador de Internet Information Services (IIS)**.
+5. En la columna **Nombre**, haga doble clic en **Administrador de Internet Information Services (IIS)** .
 
 6. En la columna **Conexiones**, expanda el nodo del servidor.
 
@@ -111,9 +111,9 @@ La autenticación del usuario que solicita la depuración no pudo realizarse deb
 
 9. En el panel **Autenticación**, en la columna **nombre**, haga clic con el botón derecho del mouse en **Autenticación de Windows** y, a continuación, haga clic en **Habilitar**.
 
-10. Cierre la ventana **Administrador de Internet Information Services (IIS)**.
+10. Cierre la ventana **Administrador de Internet Information Services (IIS)** .
 
 ## <a name="see-also"></a>Vea también
 - [Depurar aplicaciones web: errores y solución de problemas](../debugger/debugging-web-applications-errors-and-troubleshooting.md)
 - [Autenticación implícita de Microsoft](http://go.microsoft.com/fwlink/?LinkId=77938)
-- [Ejecutar aplicaciones Web en Windows Vista con IIS 7.0 y Visual Studio](https://msdn.microsoft.com/Library/262a82ac-dd0e-4096-86c6-fb463e88be66)
+- [Ejecutar aplicaciones web en Windows Vista con IIS 7,0 y Visual Studio](https://msdn.microsoft.com/Library/262a82ac-dd0e-4096-86c6-fb463e88be66)

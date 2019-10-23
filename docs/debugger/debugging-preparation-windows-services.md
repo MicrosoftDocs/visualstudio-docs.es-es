@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e734a500d12c15022421383743c1fe1f45794d1b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 3161f6d2c328e8e33dd82ed206aa8aa20e654cc9
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62852581"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72738087"
 ---
 # <a name="debugging-preparation-windows-services"></a>Preparación de la depuración: servicios de Windows
 Un servicio de Windows es un programa que se ejecuta en segundo plano en Microsoft Windows. Como ejemplos pueden citarse el servicio Telnet y el servicio de hora de Windows (que actualiza el reloj visible del equipo). Un servicio de Windows no se puede ejecutar desde [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]; debe ejecutarse dentro del contexto del Administrador de control de servicios. Para obtener más información, vea [Crear servicios de Windows](/dotnet/framework/windows-services/how-to-create-windows-services), [Depurar aplicaciones de servicios de Windows](/dotnet/framework/windows-services/how-to-debug-windows-service-applications) y [Aplicaciones de servicios de Windows](/dotnet/framework/windows-services/index).
@@ -32,4 +32,4 @@ Un servicio de Windows es un programa que se ejecuta en segundo plano en Microso
 - [Tipos de proyectos de C#, F# y Visual Basic](../debugger/debugging-preparation-csharp-f-hash-and-visual-basic-project-types.md)
 - [Configuración del proyecto para configuraciones de depuración en C#](../debugger/project-settings-for-csharp-debug-configurations.md)
 - [Configuración del proyecto para una configuración de depuración de Visual Basic](../debugger/project-settings-for-a-visual-basic-debug-configuration.md)
-- [Cómo: depurar el método OnStart](../debugger/how-to-debug-the-onstart-method.md)
+- [Cómo: Depurar el método OnStart](../debugger/how-to-debug-the-onstart-method.md)

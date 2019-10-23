@@ -22,14 +22,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: dcc63eef048dd1e4ae205214ac62f8aa04d8a824
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.openlocfilehash: b2213da69561e8868c158a3b2cbcaa8efc6adfaf
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71252518"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72728597"
 ---
-# <a name="walkthrough-debugging-a-parallel-application-in-visual-studio-c-visual-basic-c"></a>Tutorial: Depurar una aplicación paralela en Visual StudioC#(, Visual Basic C++,)
+# <a name="walkthrough-debugging-a-parallel-application-in-visual-studio-c-visual-basic-c"></a>Tutorial: depurar una aplicación paralela en Visual StudioC#(, Visual Basic C++,)
 
 En este tutorial se muestra cómo utilizar las ventanas **Pilas paralelas** y **Tareas paralelas** para depurar una aplicación paralela. Estas ventanas le ayudan a entender y comprobar el comportamiento del código en tiempo de ejecución que usa la [biblioteca TPL](/dotnet/standard/parallel-programming/task-parallel-library-tpl) o el [Runtime de simultaneidad](/cpp/parallel/concrt/concurrency-runtime). En este tutorial se proporciona código de muestra con puntos de interrupción integrados. Una vez que el código se interrumpe, se muestra cómo utilizar las ventanas **Tareas paralelas** y **Pilas paralelas** para examinarlo.
 
@@ -98,7 +98,7 @@ En este tutorial se muestra cómo utilizar las ventanas **Pilas paralelas** y **
 
     Observe que hay cuatro llamadas a `Debugger.Break` (`DebugBreak` en el ejemplo de C++). Por tanto, no tiene que insertar puntos de interrupción; simplemente ejecutando la aplicación, el depurador se interrumpirá cuatro veces.
 
-## <a name="using-the-parallel-stacks-window-threads-view"></a>Uso de la ventana Pilas paralelas: Vista de subprocesos
+## <a name="using-the-parallel-stacks-window-threads-view"></a>Utilizar la ventana Pilas paralelas: vista de subprocesos
  En el menú **Depurar**, haga clic en **Iniciar depuración**. Espere a que se alcance el primer punto de interrupción.
 
 #### <a name="to-view-the-call-stack-of-a-single-thread"></a>Para ver la pila de llamadas de un subproceso
@@ -244,7 +244,7 @@ En este tutorial se muestra cómo utilizar las ventanas **Pilas paralelas** y **
 
      ![Dos tareas en espera en la ventana tareas](../debugger/media/pdb_walkthrough_7.png "PDB_Walkthrough_7")
 
-     La tarea 4, a su vez, está esperando a un monitor que pertenece al subproceso asignado a la tarea 2. (Haga clic con el botón derecho en la fila de encabezado y elija **columnas** > **asignación de subprocesos** para ver el valor de asignación de subprocesos para la tarea 2).
+     La tarea 4, a su vez, está esperando a un monitor que pertenece al subproceso asignado a la tarea 2. (Haga clic con el botón derecho en la fila de encabezado y elija **columnas**  > **asignación de subprocesos** para ver el valor de asignación de subprocesos para la tarea 2).
 
      ![Tarea en espera e información sobre herramientas en la ventana tareas](../debugger/media/pdb_walkthrough_7a.png "PDB_Walkthrough_7A")
 

@@ -10,15 +10,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 841fe2b1ae6f54b3bc7deea97b335790ca6dac5f
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 8e7717e6fbf19fdf8f14e7667db171991319fb3b
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "62841818"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72739635"
 ---
-# <a name="idiasymbolgetobjectfilename"></a>IDiaSymbol::get_objectFileName
-Recupera el nombre de archivo del objeto.
+# <a name="idiasymbolget_objectfilename"></a>IDiaSymbol::get_objectFileName
+Recupera el nombre del archivo objeto.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -30,10 +30,10 @@ HRESULT get_objectFilename(
 #### <a name="parameters"></a>Parámetros
  `pRetVal`
 
-[out] Un puntero a un `BSTR` que contiene el nombre del archivo objeto.
+enuncia Puntero a una `BSTR` que contiene el nombre del archivo objeto.
 
 ## <a name="return-value"></a>Valor devuelto
- Si es correcto, devuelve `S_OK`; en caso contrario, devuelve `S_FALSE` o un código de error.
+ Si se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve `S_FALSE` o un código de error.
 
 ## <a name="see-also"></a>Vea también
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

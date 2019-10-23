@@ -1,5 +1,5 @@
 ---
-title: Procedimiento Busque el archivo DLL que se bloqueó en el programa | Microsoft Docs
+title: 'Cómo: averiguar en qué archivo DLL se bloqueó el programa | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -22,14 +22,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b7a9421af9e0caf085feb1afb27b53befe837668
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: bff4f164e16a65efe4ec3d1f057025168eab8cd2
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62894052"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72733271"
 ---
-# <a name="how-to-find-which-dll-your-program-crashed-in-c-c-visual-basic-f"></a>Procedimiento Busque el archivo DLL que se bloqueó en el programa (C#, C++, Visual Basic, F#)
+# <a name="how-to-find-which-dll-your-program-crashed-in-c-c-visual-basic-f"></a>Cómo: averiguar en qué archivo dll se bloqueó el programaC#( C++,, Visual Basic F#,)
 
  Si la aplicación se bloquea durante una llamada a un archivo DLL del sistema o el código de un tercero, es necesario que encuentre qué archivo DLL estaba activo cuando ocurrió el bloqueo. Si se produce un bloqueo de un archivo DLL fuera de su programa, puede identificar la ubicación mediante la ventana **Módulos**.
 
@@ -37,7 +37,7 @@ ms.locfileid: "62894052"
 
 1. Anote la dirección donde se produjo el bloqueo.
 
-    Si la dirección no se muestra en el mensaje de error, deberá usar los métodos alternativos para identificar el archivo DLL. Si sospecha que una DLL del sistema, también puede [cargar símbolos](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md) desde los servidores de símbolos de Microsoft cuando se depura. En caso contrario, es posible que deba [crear un archivo de volcado](../debugger/using-dump-files.md) con el montón información en su lugar. Diversos [herramientas](https://blogs.msdn.microsoft.com/andrehal/2009/12/31/what-is-a-dump-and-how-do-i-create-one/) están disponibles para crear archivos de volcado.
+    Si la dirección no se muestra en el mensaje de error, puede que necesite utilizar métodos alternativos para identificar el archivo DLL. Si sospecha que hay un archivo DLL del sistema, puede [cargar los símbolos](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md) de los servidores de símbolos de Microsoft durante la depuración. De lo contrario, puede que necesite [crear un archivo de volcado](../debugger/using-dump-files.md) de memoria con información de montón en su lugar. Hay varias [herramientas](https://blogs.msdn.microsoft.com/andrehal/2009/12/31/what-is-a-dump-and-how-do-i-create-one/) disponibles para crear archivos de volcado de memoria.
 
 2. En el menú **Depurar**, elija **Ventanas** y haga clic en **Módulos**.
 
@@ -51,4 +51,4 @@ ms.locfileid: "62894052"
 
 ## <a name="see-also"></a>Vea también
 - [Depurar proyectos DLL](../debugger/debugging-dll-projects.md)
-- [Cómo: Uso de la ventana Módulos](../debugger/how-to-use-the-modules-window.md)
+- [Cómo: Usar la ventana Módulos](../debugger/how-to-use-the-modules-window.md)

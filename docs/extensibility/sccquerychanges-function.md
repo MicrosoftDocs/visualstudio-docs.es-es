@@ -1,5 +1,5 @@
 ---
-title: SccQueryChanges (función) | Documentos de Microsoft
+title: Función SccQueryChanges | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -12,15 +12,15 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5e2b1e504bef3ec9507afcddf4f75bc5f697e843
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 617f07a11f92ab65f079c7d1b41773494e3d0c8b
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66353512"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72720855"
 ---
 # <a name="sccquerychanges-function"></a>SccQueryChanges (Función)
-Esta función enumera una lista de archivos, que proporciona información sobre los cambios de nombre para cada archivo a través de una función de devolución de llamada especificada.
+Esta función enumera una lista determinada de archivos y proporciona información sobre los cambios de nombre de cada archivo a través de una función de devolución de llamada.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -37,36 +37,36 @@ SCCRTN SccQueryChanges(
 #### <a name="parameters"></a>Parámetros
  pContext
 
-[in] El puntero de contexto de complemento de control de código fuente.
+de Puntero de contexto del complemento de control de código fuente.
 
- nFiles
+ N archivos
 
-[in] Número de archivos en `lpFileNames` matriz.
+de Número de archivos de `lpFileNames` matriz.
 
  lpFileNames
 
-[in] Matriz de nombres de archivo para obtener información acerca de.
+de Matriz de nombres de archivo de los que se va a obtener información.
 
  pfnCallback
 
-[in] Función de devolución de llamada para llamar para cada nombre de archivo en la lista (consulte [QUERYCHANGESFUNC](../extensibility/querychangesfunc.md) para obtener más información).
+de Función de devolución de llamada a la que se llama para cada nombre de archivo de la lista (vea [QUERYCHANGESFUNC](../extensibility/querychangesfunc.md) para obtener más información).
 
  pvCallerData
 
-[in] Valor que se pasa sin cambios a la función de devolución de llamada.
+de Valor que se pasará sin modificar a la función de devolución de llamada.
 
 ## <a name="return-value"></a>Valor devuelto
- La implementación de complemento de control de origen de esta función debe devolver uno de los valores siguientes:
+ Se espera que la implementación del complemento de control de código fuente de esta función devuelva uno de los siguientes valores:
 
 |Valor|Descripción|
 |-----------|-----------------|
 |SCC_OK|El proceso de consulta se completó correctamente.|
-|SCC_E_PROJNOTOPEN|No se ha abierto el proyecto en control de código fuente.|
-|SCC_E_ACCESSFAILURE|Hubo un problema al obtener acceso el sistema de control de código fuente, probablemente debido a problemas de red o de contención.|
-|SCC_E_NONSPECIFICERROR|Se ha producido un error no especificado o general.|
+|SCC_E_PROJNOTOPEN|El proyecto no se ha abierto en el control de código fuente.|
+|SCC_E_ACCESSFAILURE|Hubo un problema al obtener acceso al sistema de control de código fuente, probablemente debido a problemas de red o de contención.|
+|SCC_E_NONSPECIFICERROR|Se produjo un error no especificado o general.|
 
 ## <a name="remarks"></a>Comentarios
- Son los cambios que se consulta al espacio de nombres: en concreto, el cambio de nombre, agregar y quitar un archivo.
+ Los cambios que se están consultando son el espacio de nombres: específicamente, el cambio de nombre, la adición y la eliminación de un archivo.
 
 ## <a name="see-also"></a>Vea también
 - [Funciones de API de complemento de control de código fuente](../extensibility/source-control-plug-in-api-functions.md)

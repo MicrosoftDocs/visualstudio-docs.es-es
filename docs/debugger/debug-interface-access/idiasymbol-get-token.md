@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: af0d9fc8a95c3efb0dcafcf20038d47e13deda5e
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: ffbe9e2d078a27a345fb35083646defb3fe271e4
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64813299"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72739123"
 ---
-# <a name="idiasymbolgettoken"></a>IDiaSymbol::get_token
-Recupera el token de metadatos de una variable o una función administrada.
+# <a name="idiasymbolget_token"></a>IDiaSymbol::get_token
+Recupera el símbolo (token) de metadatos de una función o variable administrada.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -33,10 +33,10 @@ HRESULT get_token ( 
 #### <a name="parameters"></a>Parámetros
  `pRetVal`
 
-[out] Devuelve el token de metadatos de una variable o una función administrada.
+enuncia Devuelve el símbolo (token) de metadatos de una función o variable administrada.
 
 ## <a name="return-value"></a>Valor devuelto
- Si es correcto, devuelve `S_OK`; en caso contrario, devuelve `S_FALSE` o un código de error.
+ Si se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve `S_FALSE` o un código de error.
 
 > [!NOTE]
 > Un valor devuelto de `S_FALSE` significa que la propiedad no está disponible para el símbolo.

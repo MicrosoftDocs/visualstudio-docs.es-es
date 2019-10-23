@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fcbe9e97eb429fa7427ae0e3da4dce77281b40a0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ae0bab8ec0561b65c22890c0e0bbfeb461364b5c
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62839282"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72742064"
 ---
 # <a name="idiasessionfindsymbolbyaddr"></a>IDiaSession::findSymbolByAddr
-Recupera un tipo de símbolo especificado que contiene, o más cercana a una dirección especificada.
+Recupera un tipo de símbolo especificado que contiene o está más cerca de una dirección especificada.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -36,22 +36,22 @@ HRESULT findSymbolByAddr ( 
 #### <a name="parameters"></a>Parámetros
  `isect`
 
-[in] Especifica el componente de la sección de la dirección.
+de Especifica el componente de sección de la dirección.
 
  `offset`
 
-[in] Especifica el componente de la dirección de desplazamiento.
+de Especifica el componente de desplazamiento de la dirección.
 
  `symtag`
 
-[in] Tipo de símbolo que se encuentra. Los valores se toman de la [SymTagEnum (enumeración)](../../debugger/debug-interface-access/symtagenum.md) enumeración.
+de Tipo de símbolo que se va a buscar. Los valores se toman de la enumeración de [enumeración symtagenum (](../../debugger/debug-interface-access/symtagenum.md) .
 
  `ppSymbol`
 
-[out] Devuelve un [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) recupera el objeto que representa el símbolo.
+enuncia Devuelve un objeto [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) que representa el símbolo recuperado.
 
 ## <a name="return-value"></a>Valor devuelto
- Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.
+ Si se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.
 
 ## <a name="example"></a>Ejemplo
 

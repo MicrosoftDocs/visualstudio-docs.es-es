@@ -1,5 +1,5 @@
 ---
-title: Las cadenas utilizadas como claves para buscar un Control de código fuente complemento | Documentos de Microsoft
+title: Cadenas usadas como claves para buscar un complemento de control de código fuente | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,21 +10,21 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 31c2b30fb41976cdbbab13fa22d438c63bddbbef
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 07962ff9e0f9371b1fc308a35600a6819602b4f5
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66331713"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72719451"
 ---
 # <a name="strings-used-as-keys-for-finding-a-source-control-plug-in"></a>Cadenas usadas como claves para buscar un complemento de control de código fuente
-Las siguientes cadenas son las claves de acceso al registro para obtener información sobre el control de código fuente complemento.
+Las siguientes cadenas son las claves para tener acceso al registro para buscar información sobre el complemento de control de código fuente.
 
- `STR_SCC_PROVIDER_REG_LOCATION`, `STR_PROVIDERREGKEY`, `STR_SCCPROVIDERPATH`, y `STR_SCCPROVIDERNAME` son valores que se usa para registrar un archivo DLL como un complemento de control de código fuente para Visual Studio o las claves del registro.
+ `STR_SCC_PROVIDER_REG_LOCATION`, `STR_PROVIDERREGKEY`, `STR_SCCPROVIDERPATH` y `STR_SCCPROVIDERNAME` son claves o valores del registro que se usan para registrar un archivo DLL como complemento de control de código fuente para Visual Studio.
 
- `SCC_PROJECTNAME_KEY`, `SCC_PROJECTAUX_KEY`, `SCC_KEY, SCC_FILE_SIGNATURE`, y `SCC_STATUS_FILE` se utilizan para describir el formato de la MSSCCPRJ. Archivo de control de código fuente.
+ `SCC_PROJECTNAME_KEY`, `SCC_PROJECTAUX_KEY`, `SCC_KEY, SCC_FILE_SIGNATURE` y `SCC_STATUS_FILE` se usan para describir el formato de MSSCCPRJ. Archivo SCC.
 
-## <a name="string-keys-and-values"></a>Claves de cadena y valores
+## <a name="string-keys-and-values"></a>Claves y valores de cadena
 
 |Key|Valor|
 |---------|-----------|
@@ -36,11 +36,11 @@ Las siguientes cadenas son las claves de acceso al registro para obtener informa
 |`STR_SCC_INI_KEY`|SourceCodeControlProvider|
 |`SCC_PROJECTNAME_KEY`|SCC_Project_Name|
 |`SCC_PROJECTAUX_KEY`|SCC_Aux_Path|
-|`SCC_STATUS_FILE`|MSSCCPRJ.SCC|
-|`SCC_KEY`|SCC|
+|`SCC_STATUS_FILE`|MSSCCPRJ. CCO|
+|`SCC_KEY`|CCO|
 |`SCC_FILE_SIGNATURE`|Un archivo de control de código fuente|
-|`SCC_NSE`|Extensión de Namespace|
-|`SCC_NSE_PREFIX`|Prefijo de protocolo|
+|`SCC_NSE`|Extensión de espacio de nombres|
+|`SCC_NSE_PREFIX`|Prefijo protocolo|
 |`SCC_NSE_DisableOpenSCC`|DisableOpenFromSourceControl|
 |`STR_SCCHELPCOLLECTION`|HelpCollection|
 |`STR_UI_LANGUAGE`|UILanguage|
@@ -48,5 +48,5 @@ Las siguientes cadenas son las claves de acceso al registro para obtener informa
 
 ## <a name="see-also"></a>Vea también
 - [Complementos de control de código fuente](../extensibility/source-control-plug-ins.md)
-- [Cómo: Instalar un complemento de control de código fuente](../extensibility/internals/how-to-install-a-source-control-plug-in.md)
+- [Instalación de un complemento de control de código fuente](../extensibility/internals/how-to-install-a-source-control-plug-in.md)
 - [Archivo MSSCCPRJ.SCC](../extensibility/mssccprj-scc-file.md)

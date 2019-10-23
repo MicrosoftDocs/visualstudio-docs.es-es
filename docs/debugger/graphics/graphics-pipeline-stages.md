@@ -1,5 +1,5 @@
 ---
-title: Etapas de canalización de gráficos | Documentos de Microsoft
+title: Fases de canalización de gráficos | Microsoft Docs
 ms.date: 02/09/2017
 ms.topic: conceptual
 f1_keywords:
@@ -10,19 +10,19 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 042eebc6d672000aa43425a30e96a8ac41bcd8af
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 1d697313289bbf00234764cc04603b7bc256f174
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63388539"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72735465"
 ---
 # <a name="graphics-pipeline-stages"></a>Etapas de canalización de gráficos
 La ventana Etapas de canalización de gráficos ayuda a entender cómo cada etapa de la canalización de gráficos Direct3D transforma una llamada a draw individual.
 
  Esta es la ventana Etapas de canalización:
 
- ![Un objeto 3D recorre las etapas de canalización.](media/gfx_diag_demo_pipeline_stages_orientation.png)
+ ![Un objeto 3D pasa por las fases de canalización.](media/gfx_diag_demo_pipeline_stages_orientation.png)
 
 ## <a name="understanding-the-graphics-pipeline-stages-window"></a>Descripción de la ventana Etapas de canalización de gráficos
  La ventana Etapas de canalización visualiza el resultado de cada etapa de la canalización de gráficos por separado, para cada llamada a draw. Normalmente, los resultados de las etapas en medio de la canalización están ocultos, lo que dificulta saber en qué momento comenzó un problema de representación. Al visualizar cada etapa por separado, la ventana Etapas de canalización hace que sea más fácil ver dónde comienza el problema. Por ejemplo, puede ver fácilmente si la etapa del sombreador de vértices hace inesperadamente que un objeto se dibuje fuera de la pantalla.
@@ -58,54 +58,54 @@ La ventana Etapas de canalización de gráficos ayuda a entender cómo cada etap
 > [!NOTE]
 > En la ventana **Etapas de canalización de gráficos**, no se admiten los sombreadores de cálculo.
 
- **Ensamblador de entrada** el ensamblador de entrada lee los datos de índice y del vértice especificados por la aplicación y los ensambla para el hardware gráfico.
+ **Ensamblador de entrada** El ensamblador de entrada Lee los datos de índice y vértice especificados por la aplicación y los ensambla para el hardware de gráficos.
 
  En la ventana Etapas de canalización, se muestra la salida del ensamblador de entrada como un modelo de tramas de alambres. Para examinar en detalle el resultado, seleccione **Ensamblador de entrada** en la ventana **Etapas de canalización de gráficos** para ver los vértices ensamblados en 3D mediante el Editor de modelos.
 
 > [!NOTE]
 > Si la semántica `POSITION` no aparece en el resultado del ensamblador de entrada, no se mostrará nada en la fase **Ensamblador de entrada**.
 
- **Sombreador de vértices** la etapa del sombreador de vértices procesa los vértices, normalmente realizando operaciones como transformaciones, máscaras e iluminación. Los sombreadores de vértices producen el mismo número de vértices que toman como entrada.
+ **Sombreador de vértices** La fase del sombreador de vértices procesa los vértices, que normalmente realizan operaciones como la transformación, la piel y la iluminación. Los sombreadores de vértices producen el mismo número de vértices que toman como entrada.
 
  En la ventana Etapas de canalización, la salida del sombreador de vértices se muestra como una imagen de tramas de alambres. Para examinar en detalle el resultado, seleccione **Sombreador de vértices** en la ventana **Etapas de canalización de gráficos** para ver los vértices procesados en el Editor de imágenes.
 
 > [!NOTE]
 > Si las semánticas `POSITION` o `SV_POSITION` no aparecen en la salida del sombreador de vértices, no se mostrará nada en la fase **Sombreador de vértices**.
 
- **Sombreador de casco** (Direct3D 11 y Direct3D 12 solo) la etapa del sombreador de casco procesa los puntos de control que definen una superficie de orden inferior, como una línea, triángulo o cuádruple. Como resultado produce una revisión de geometría de orden superior y constantes de revisión que se pasan a la etapa de teselación de funciones fijas.
+ **Sombreador de casco** (solo Direct3D 11 y Direct3D 12) la fase del sombreador de casco procesa los puntos de control que definen una superficie de orden inferior, como una línea, un triángulo o un cuádruple. Como resultado produce una revisión de geometría de orden superior y constantes de revisión que se pasan a la etapa de teselación de funciones fijas.
 
  La etapa del sombreador de casco no se visualiza en la ventana Etapas de canalización.
 
- **Etapa del teselador** (Direct3D 11 y Direct3D 12 solo) la etapa del teselador es una unidad de hardware de función fija (no programable) que preprocesa el dominio representado por la salida del sombreador de casco. Como salida, crean un patrón de muestreo del dominio y un conjunto de primitivas menores (puntos, líneas y triángulos) que conectan estos ejemplos.
+ **Fase de del teselador** (solo Direct3D 11 y Direct3D 12) la fase del teselador es una unidad de hardware de función fija (no programable) que preprocesa el dominio representado por la salida del sombreador de casco. Como salida, crean un patrón de muestreo del dominio y un conjunto de primitivas menores (puntos, líneas y triángulos) que conectan estos ejemplos.
 
  La etapa del teselador no se visualiza en la ventana Etapas de canalización.
 
- **Sombreador de dominios** (Direct3D 11 y Direct3D 12 solo) la etapa del sombreador de dominios procesa revisiones de geometría de orden superior del sombreador de casco, factores de teselación juntos desde la fase de teselación. Los factores de teselación pueden incluir factores de entrada de teselador, así como factores de salida. Como salida, calcula la posición del vértice de un punto de la revisión de salida según los factores del teselador.
+ **Sombreador de dominios** (solo Direct3D 11 y Direct3D 12) la fase del sombreador de dominios procesa revisiones de geometría de orden superior desde el sombreador de casco, juntos factores de teselación desde la fase de teselación. Los factores de teselación pueden incluir factores de entrada de teselador, así como factores de salida. Como salida, calcula la posición del vértice de un punto de la revisión de salida según los factores del teselador.
 
  La etapa del sombreador de dominios no se visualiza en la ventana Etapas de canalización.
 
- **Sombreador de geometría** la etapa del sombreador de geometría procesa primitivas completas, puntos, líneas o triángulos, junto con los datos de vértice opcional para primitivas adyacentes al borde. A diferencia de los sombreadores de vértices, los sombreadores de geometría pueden producir más o menos primitivas de las que toman como entrada.
+ **Sombreador de geometría** La fase del sombreador de geometría procesa primitivas completas (puntos, líneas o triángulos) junto con datos de vértices opcionales para los primitivos adyacentes perimetrales. A diferencia de los sombreadores de vértices, los sombreadores de geometría pueden producir más o menos primitivas de las que toman como entrada.
 
  En la ventana Etapas de canalización, la salida del sombreador de geometría se visualiza como una imagen de tramas de alambres. Para examinar en detalle el resultado, seleccione **Sombreador de geometría** en la ventana **Etapas de canalización de gráficos** para ver las primitivas procesadas en el Editor de imágenes.
 
- **Etapa de salida de Stream** la etapa de salida de flujo puede interceptar primitivas transformadas antes de la rasterización y escribirlas en memoria; a partir de ahí, los datos pueden volver a circular como entrada para etapas anteriores de la canalización de gráficos o ser leídos por la CPU.
+ **Fase de salida de flujo** La fase de salida de la secuencia puede interceptar primitivas transformadas antes de la rasterización y escribirlas en la memoria. a partir de ahí, los datos se pueden volver a reproducir como entrada para las fases anteriores de la canalización de gráficos o se pueden leer por la CPU.
 
  La etapa de salida de flujo no se visualiza en la ventana Etapas de canalización.
 
- **Etapa del rasterizador** la etapa del rasterizador es una unidad de hardware (no programable) de la función fija que convierte las primitivas de vector, puntos, líneas y triángulos, en una imagen de trama realizando conversión de línea de exploración. Durante la rasterización, los vértices se transforman en el espacio de recorte homogéneo y se recortan. Como salida, se asignan los sombreadores de píxeles y se interpolan los atributos por vértice en la primitiva, y se preparan para el sombreador de píxeles.
+ **Fase de rasterización** La fase de rasterizador es una unidad de hardware de función fija (no programable) que convierte los primitivos vectoriales (puntos, líneas y triángulos) en una imagen rasterizada mediante la conversión de la línea de exploración. Durante la rasterización, los vértices se transforman en el espacio de recorte homogéneo y se recortan. Como salida, se asignan los sombreadores de píxeles y se interpolan los atributos por vértice en la primitiva, y se preparan para el sombreador de píxeles.
 
  La etapa del rasterizador no se visualiza en la ventana Etapas de canalización.
 
- **Sombreador de píxeles** la etapa del sombreador de píxeles procesa las primitivas rasterizadas junto con los datos de vértice interpolados para generar valores por píxel, como el color y la profundidad.
+ **Sombreador de píxeles** La fase del sombreador de píxeles procesa los primitivos rasterizados junto con los datos de vértice interpolados para generar valores por píxel, como el color y la profundidad.
 
  En la ventana Etapas de canalización, la salida del sombreador de píxeles se visualiza como una imagen de trama a todo color. Para examinar en detalle el resultado, seleccione **Sombreador de píxeles** en la ventana **Etapas de canalización de gráficos** para ver las primitivas procesadas en el Editor de imágenes.
 
- **Fusión de salida** la etapa de fusión de salida combina el efecto de los píxeles recién representados junto con el contenido existente de los búferes correspondientes: color, profundidad y Galería de símbolos, para generar nuevos valores en estos búferes.
+ **Fusión de salida** La fase de fusión de salida combina el efecto de los píxeles recién representados junto con el contenido existente de sus búferes correspondientes (color, profundidad y estarcido) para generar nuevos valores en estos búferes.
 
  En la ventana Etapas de canalización, la salida de la fusión de salida se muestra como una imagen de trama a todo color. Para examinar en detalle los resultados, seleccione **Fusión de salida** en la ventana **Etapas de canalización de gráficos** para ver el búfer de fotogramas combinado.
 
-### <a name="vertex-and-geometry-shader-preview"></a>Vista previa del sombreador de geometría o de vértice
- Al seleccionar la etapa del sombreador de vértices o geometría en la **etapas de canalización** ventana, puede ver las entradas y salidas de sombreador en el siguiente panel.  En este caso, encontrará detalles acerca de la lista de vértices proporcionada a los sombreadores después de que se ensamblen en la etapa del ensamblador de entrada.
+### <a name="vertex-and-geometry-shader-preview"></a>Vista previa de sombreador de vértices y geometría
+ Al seleccionar la fase de sombreador de vértices o de geometría en la ventana **etapas de canalización** , puede ver las entradas y salidas del sombreador en el panel siguiente.  Aquí encontrará detalles sobre la lista de vértices que se proporcionan a los sombreadores una vez ensamblados por la etapa del ensamblador de entrada.
 
  ![El visor de búfer de entrada de la fase de sombreador de vértices](media/gfx_diag_vertex_shader_inbuffers.png)
 
@@ -115,4 +115,4 @@ La ventana Etapas de canalización de gráficos ayuda a entender cómo cada etap
 
 ## <a name="see-also"></a>Vea también
 - [Tutorial: Objetos ausentes debido al sombreado de vértices](walkthrough-missing-objects-due-to-vertex-shading.md)
-- [Tutorial: Depuración de errores de representación debidos al sombreado](walkthrough-debugging-rendering-errors-due-to-shading.md)
+- [Tutorial: Depurar errores de representación debidos al sombreado](walkthrough-debugging-rendering-errors-due-to-shading.md)

@@ -1,5 +1,5 @@
 ---
-title: TemplateData (elemento) (plantillas de Visual Studio) | Documentos de Microsoft
+title: TemplateData ((elemento, plantillas de Visual Studio) | Microsoft Docs
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -13,12 +13,12 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f9647330aaca2c2ae91aa7e461da17cf4dc3f8c3
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: b122857a4d916379c070e923ed0753b01287f08b
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66316670"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72718856"
 ---
 # <a name="templatedata-element-visual-studio-templates"></a>TemplateData (Elemento, Plantillas de Visual Studio)
 Clasifica la plantilla y define cómo se muestra en el cuadro de diálogo **Nuevo proyecto** o **Agregar nuevo elemento** .
@@ -47,42 +47,42 @@ Clasifica la plantilla y define cómo se muestra en el cuadro de diálogo **Nuev
 
 | Elemento | Descripción |
 | - | - |
-| [Name](../extensibility/name-element-visual-studio-templates.md) | Elemento necesario.<br /><br /> Especifica el nombre de la plantilla tal como aparece en el el **nuevo proyecto** o **Agregar nuevo elemento** cuadro de diálogo. |
-| [Descripción](../extensibility/description-element-visual-studio-templates.md) | Elemento necesario.<br /><br /> Especifica la descripción de la plantilla tal como aparece en el el **nuevo proyecto** o **Agregar nuevo elemento** cuadro de diálogo. |
-| [Iconos](../extensibility/icon-element-visual-studio-templates.md) | Elemento necesario.<br /><br /> Especifica la ruta de acceso y el nombre de archivo del archivo de imagen que actúa como el icono, que aparece en cualquiera de los **nuevo proyecto** o el **Agregar nuevo elemento** cuadro de diálogo, para la plantilla. |
-| [ProjectType](../extensibility/projecttype-element-visual-studio-templates.md) | Elemento necesario.<br /><br /> Clasifica la plantilla de proyecto para que aparezca en el grupo especificado en el **nuevo proyecto** cuadro de diálogo. |
-| [ProjectSubType](../extensibility/projectsubtype-element-visual-studio-templates.md) | Elemento opcional.<br /><br /> Clasifica la plantilla de proyecto para que aparezca bajo la subcategoría especificada en el **nuevo proyecto** cuadro de diálogo. |
+| [Nombre](../extensibility/name-element-visual-studio-templates.md) | Elemento necesario.<br /><br /> Especifica el nombre de la plantilla tal y como aparece en el cuadro de diálogo **nuevo proyecto** o **Agregar nuevo elemento** . |
+| [Descripción](../extensibility/description-element-visual-studio-templates.md) | Elemento necesario.<br /><br /> Especifica la descripción de la plantilla tal como aparece en el cuadro de diálogo **nuevo proyecto** o **Agregar nuevo elemento** . |
+| [Icono](../extensibility/icon-element-visual-studio-templates.md) | Elemento necesario.<br /><br /> Especifica la ruta de acceso y el nombre del archivo de imagen que sirve como icono, que aparece en el cuadro de diálogo **nuevo proyecto** o **Agregar nuevo elemento** de la plantilla. |
+| [ProjectType](../extensibility/projecttype-element-visual-studio-templates.md) | Elemento necesario.<br /><br /> Clasifica la plantilla de proyecto para que aparezca bajo el grupo especificado en el cuadro de diálogo **nuevo proyecto** . |
+| [ProjectSubType](../extensibility/projectsubtype-element-visual-studio-templates.md) | Elemento opcional.<br /><br /> Clasifica la plantilla de proyecto para que aparezca en la subcategoría especificada en el cuadro de diálogo **nuevo proyecto** . |
 | [TemplateID](../extensibility/templateid-element-visual-studio-templates.md) | Elemento opcional.<br /><br /> Especifica el identificador de plantilla. |
-| [TemplateGroupID](../extensibility/templategroupid-element-visual-studio-templates.md) | Elemento opcional.<br /><br /> Especifica el identificador de grupo de plantilla. |
-| [SortOrder](../extensibility/sortorder-element-visual-studio-templates.md) | Elemento opcional.<br /><br /> Especifica un valor que se utiliza para organizar la plantilla, entre otras plantillas en la misma categoría, tal como aparece en el el **nuevo proyecto** o **Agregar nuevo elemento** cuadro de diálogo. |
-| [CreateNewFolder](../extensibility/createnewfolder-element-visual-studio-templates.md) | Elemento opcional.<br /><br /> Especifica si se crea una carpeta que contiene en las instancias del proyecto. |
-| [DefaultName](../extensibility/defaultname-element-visual-studio-templates.md) | Elemento opcional.<br /><br /> Especifica el nombre que el sistema del proyecto de Visual Studio generará para el proyecto o elemento cuando se crea. |
-| [ProvideDefaultName](../extensibility/providedefaultname-element-visual-studio-templates.md) | Elemento opcional.<br /><br /> Especifica si el sistema del proyecto de Visual Studio generará el nombre predeterminado para un proyecto o elemento cuando se crea. |
-| [PromptForSaveOnCreation](../extensibility/promptforsaveoncreation-element-visual-studio-templates.md) | Elemento opcional.<br /><br /> Especifica si se puede crear el proyecto como un proyecto temporal (solo Visual Studio 2017). |
-| [EnableLocationBrowseButton](../extensibility/enablelocationbrowsebutton-element-visual-studio-templates.md) | Elemento opcional.<br /><br /> Especifica si el **examinar** botón está disponible en el **nuevo proyecto** cuadro de diálogo para que los usuarios puedan modificar fácilmente el directorio predeterminado donde se guarda un nuevo proyecto. |
-| [Hidden](../extensibility/hidden-element-visual-studio-templates.md) | Elemento opcional.<br /><br /> Especifica si la plantilla aparece en el el **nuevo proyecto** o **Agregar nuevo elemento** cuadro de diálogo. |
-| [NumberOfParentCategoriesToRollUp](../extensibility/numberofparentcategoriestorollup-visual-studio-templates.md) | Elemento opcional.<br /><br /> Especifica el número de categorías primarias que mostrará la plantilla en el **nuevo proyecto** cuadro de diálogo. |
-| [LocationFieldMRUPrefix](../extensibility/locationfieldmruprefix-element-visual-studio-templates.md) | Elemento opcional. |
-| [LocationField](../extensibility/locationfield-element-visual-studio-project-templates.md) | Elemento opcional.<br /><br /> Especifica si el **ubicación** cuadro de texto en el **nuevo proyecto** cuadro de diálogo está habilitado, deshabilitado u oculto para la plantilla de proyecto. |
-| [RequiredFrameworkVersion](../extensibility/requiredframeworkversion-element-visual-studio-templates.md) | Elemento opcional.<br /><br /> Utilice este elemento si la plantilla solo admite una versión mínima específica y versiones posteriores, si existe, de .NET Framework. |
-| [SupportsMasterPage](../extensibility/supportsmasterpage-element-visual-studio-templates.md) | Elemento opcional.<br /><br /> Especifica si la plantilla admite una página maestra para proyectos web. |
-| [SupportsCodeSeparation](../extensibility/supportscodeseparation-element-visual-studio-templates.md) | Elemento opcional.<br /><br /> Especifica si la plantilla admite la separación de código o el modelo de página de código subyacente para proyectos web. |
-| [SupportsLanguageDropDown](../extensibility/supportslanguagedropdown-element-visual-studio-templates.md) | Elemento opcional.<br /><br /> Especifica si la plantilla es idéntica para varios idiomas y si el **lenguaje** opción está disponible desde el **nuevo proyecto** cuadro de diálogo. |
+| [TemplateGroupID](../extensibility/templategroupid-element-visual-studio-templates.md) | Elemento opcional.<br /><br /> Especifica el identificador del grupo de plantillas. |
+| [Orden](../extensibility/sortorder-element-visual-studio-templates.md) | Elemento opcional.<br /><br /> Especifica un valor que se usa para organizar la plantilla, entre otras plantillas de la misma categoría, tal y como aparece en el cuadro de diálogo **nuevo proyecto** o **Agregar nuevo elemento** . |
+| [Createnewfolder (](../extensibility/createnewfolder-element-visual-studio-templates.md) | Elemento opcional.<br /><br /> Especifica si se crea una carpeta contenedora al crear la instancia del proyecto. |
+| [Defaultname (](../extensibility/defaultname-element-visual-studio-templates.md) | Elemento opcional.<br /><br /> Especifica el nombre que generará el sistema del proyecto de Visual Studio para el proyecto o elemento cuando se crea. |
+| [Providedefaultname (](../extensibility/providedefaultname-element-visual-studio-templates.md) | Elemento opcional.<br /><br /> Especifica si el sistema del proyecto de Visual Studio generará el nombre predeterminado para un proyecto o elemento cuando se crea. |
+| [PromptForSaveOnCreation (](../extensibility/promptforsaveoncreation-element-visual-studio-templates.md) | Elemento opcional.<br /><br /> Especifica si el proyecto se puede crear como un proyecto temporal (solo Visual Studio 2017). |
+| [EnableLocationBrowseButton](../extensibility/enablelocationbrowsebutton-element-visual-studio-templates.md) | Elemento opcional.<br /><br /> Especifica si el botón **examinar** está disponible en el cuadro de diálogo **nuevo proyecto** para que los usuarios puedan modificar fácilmente el directorio predeterminado en el que se guarda un nuevo proyecto. |
+| [Plusvalía](../extensibility/hidden-element-visual-studio-templates.md) | Elemento opcional.<br /><br /> Especifica si la plantilla aparece en el cuadro de diálogo **nuevo proyecto** o **Agregar nuevo elemento** . |
+| [NumberOfParentCategoriesToRollUp](../extensibility/numberofparentcategoriestorollup-visual-studio-templates.md) | Elemento opcional.<br /><br /> Especifica el número de categorías primarias que mostrarán la plantilla en el cuadro de diálogo **nuevo proyecto** . |
+| [Locationfieldmruprefix (](../extensibility/locationfieldmruprefix-element-visual-studio-templates.md) | Elemento opcional. |
+| [Locationfield (](../extensibility/locationfield-element-visual-studio-project-templates.md) | Elemento opcional.<br /><br /> Especifica si el cuadro de texto **Ubicación** del cuadro de diálogo **nuevo proyecto** está habilitado, deshabilitado u oculto para la plantilla de proyecto. |
+| [RequiredFrameworkVersion](../extensibility/requiredframeworkversion-element-visual-studio-templates.md) | Elemento opcional.<br /><br /> Use este elemento si la plantilla solo admite una versión mínima específica y versiones posteriores, si las hay, de la .NET Framework. |
+| [SupportsMasterPage (](../extensibility/supportsmasterpage-element-visual-studio-templates.md) | Elemento opcional.<br /><br /> Especifica si la plantilla admite una página maestra para los proyectos Web. |
+| [Supportscodeseparation (](../extensibility/supportscodeseparation-element-visual-studio-templates.md) | Elemento opcional.<br /><br /> Especifica si la plantilla admite la separación de código o el modelo de página de código subyacente para los proyectos Web. |
+| [SupportsLanguageDropDown (](../extensibility/supportslanguagedropdown-element-visual-studio-templates.md) | Elemento opcional.<br /><br /> Especifica si la plantilla es idéntica para varios idiomas y si la opción de **idioma** está disponible en el cuadro de diálogo **nuevo proyecto** . |
 | [TargetPlatformName](../extensibility/targetplatformname-element-visual-studio-templates.md) | Elemento opcional.<br /><br /> Especifica la plataforma a la que está orientada la plantilla del proyecto. Este elemento especifica que se usa una plantilla de proyecto para crear [!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)] aplicaciones. |
 
 ### <a name="parent-elements"></a>Elementos primarios
 
 |Elemento|Descripción|
 |-------------|-----------------|
-|[VSTemplate](../extensibility/vstemplate-element-visual-studio-templates.md)|Elemento necesario.<br /><br /> Contiene todos los metadatos de la plantilla de proyecto, la plantilla de elemento o el starter kit de.|
+|[Archivo](../extensibility/vstemplate-element-visual-studio-templates.md)|Elemento necesario.<br /><br /> Contiene todos los metadatos de la plantilla de proyecto, la plantilla de elemento o Starter Kit.|
 
 ## <a name="remarks"></a>Comentarios
- `TemplateData` es un elemento requerido.
+ `TemplateData` es un elemento necesario.
 
- Si no incluye un elemento opcional, se usa el valor predeterminado para ese elemento.
+ Si no incluye un elemento opcional, se utiliza el valor predeterminado de ese elemento.
 
 ## <a name="example"></a>Ejemplo
- El ejemplo siguiente muestra los metadatos para una plantilla de proyecto para un [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] aplicación.
+ En el ejemplo siguiente se muestran los metadatos de una plantilla de proyecto para una aplicación [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)].
 
 ```
 <VSTemplate Type="Project" Version="3.0.0"

@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5fa7521d569267d0ff070b54139fafe3befe0e96
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: c2dd1d3c7cefe76feec5c65176450d0e73a77a25
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64796611"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72740697"
 ---
-# <a name="idiasymbolgeteditandcontinueenabled"></a>IDiaSymbol::get_editAndContinueEnabled
-Recupera una marca que indica si el módulo se compiló con la [/Z7, / Zi, /ZI (formato de la información de depuración)](/cpp/build/reference/z7-zi-zi-debug-information-format) modificador del compilador.
+# <a name="idiasymbolget_editandcontinueenabled"></a>IDiaSymbol::get_editAndContinueEnabled
+Recupera una marca que indica si el módulo se compiló con el modificador de compilador [/Z7,/Zi,/Zi (formato de información de depuración)](/cpp/build/reference/z7-zi-zi-debug-information-format) .
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -33,20 +33,20 @@ HRESULT get_editAndContinueEnabled ( 
 #### <a name="parameters"></a>Parámetros
  `pRetVal`
 
-[out] Devuelve `TRUE` si Editar y continuar se habilitó en la compilación; de lo contrario, devuelve `FALSE`.
+enuncia Devuelve `TRUE` si se ha habilitado editar y continuar en la compilación; de lo contrario, devuelve `FALSE`.
 
 ## <a name="return-value"></a>Valor devuelto
- Si es correcto, devuelve `S_OK`; en caso contrario, devuelve `S_FALSE` o un código de error.
+ Si se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve `S_FALSE` o un código de error.
 
 > [!NOTE]
 > Un valor devuelto de `S_FALSE` significa que la propiedad no está disponible para el símbolo.
 
 ## <a name="requirements"></a>Requisitos
 
-|Requisito|DESCRIPCIÓN|
+|Requisito|Descripción|
 |-----------------|-----------------|
 |Encabezado:|dia2.h|
-|Versión:|SDK de DIA v7.0|
+|Versión:|SDK de DIA v 7.0|
 
 ## <a name="see-also"></a>Vea también
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

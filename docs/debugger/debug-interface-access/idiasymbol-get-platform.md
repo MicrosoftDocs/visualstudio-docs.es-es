@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6df21b974489004a27847e307089b1a65715b076
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 3a86e7b6b75e0689ccd98a2cab2ed9ef93188312
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64813436"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72739506"
 ---
-# <a name="idiasymbolgetplatform"></a>IDiaSymbol::get_platform
-Recupera el tipo de plataforma para la que se compiló la operación de compilación.
+# <a name="idiasymbolget_platform"></a>IDiaSymbol::get_platform
+Recupera el tipo de plataforma para el que se compiló la compilación.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -33,10 +33,10 @@ HRESULT get_platform ( 
 #### <a name="parameters"></a>Parámetros
  `pRetVal`
 
-[out] Devuelve un valor de la [CV_CPU_TYPE_e (enumeración)](../../debugger/debug-interface-access/cv-cpu-type-e.md) tipo de enumeración que especifica la plataforma para que se compiló la operación de compilación.
+enuncia Devuelve un valor de la enumeración de [enumeración CV_CPU_TYPE_e](../../debugger/debug-interface-access/cv-cpu-type-e.md) que especifica el tipo de plataforma para el que se compiló la compilación.
 
 ## <a name="return-value"></a>Valor devuelto
- Si es correcto, devuelve `S_OK`; en caso contrario, devuelve `S_FALSE` o un código de error.
+ Si se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve `S_FALSE` o un código de error.
 
 > [!NOTE]
 > Un valor devuelto de `S_FALSE` significa que la propiedad no está disponible para el símbolo.

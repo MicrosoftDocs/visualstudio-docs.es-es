@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7b17e79e1bfefd5b6b23695f2f49d694c7148ae0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 70e14e594b385a2fa93f51eed4dec36d74db347e
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62838150"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72744692"
 ---
 # <a name="idiaenumdebugstreams"></a>IDiaEnumDebugStreams
-Enumera los distintos flujos de depuración contenidos en el origen de datos.
+Enumera las diversas secuencias de depuración contenidas en el origen de datos.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -29,26 +29,26 @@ IDiaEnumDebugStreams : IUnknown
 ```
 
 ## <a name="methods-in-vtable-order"></a>Métodos en orden de Vtable
-La tabla siguiente muestran los métodos de `IDiaEnumDebugStreams`.
+En la tabla siguiente se muestran los métodos de `IDiaEnumDebugStreams`.
 
 |Método|Descripción|
 |------------|-----------------|
-|[IDiaEnumDebugStreams::get__NewEnum](../../debugger/debug-interface-access/idiaenumdebugstreams-get-newenum.md)|Recupera el `IEnumVARIANT` versión de este enumerador.|
+|[IDiaEnumDebugStreams::get__NewEnum](../../debugger/debug-interface-access/idiaenumdebugstreams-get-newenum.md)|Recupera la versión `IEnumVARIANT` de este enumerador.|
 |[IDiaEnumDebugStreams::get_Count](../../debugger/debug-interface-access/idiaenumdebugstreams-get-count.md)|Recupera el número de secuencias de depuración.|
-|[IDiaEnumDebugStreams::Item](../../debugger/debug-interface-access/idiaenumdebugstreams-item.md)|Recupera un flujo de depuración por medio de un índice.|
+|[IDiaEnumDebugStreams::Item](../../debugger/debug-interface-access/idiaenumdebugstreams-item.md)|Recupera una secuencia de depuración por medio de un índice.|
 |[IDiaEnumDebugStreams::Next](../../debugger/debug-interface-access/idiaenumdebugstreams-next.md)|Recupera un número especificado de secuencias de depuración en la secuencia de enumeración.|
 |[IDiaEnumDebugStreams::Skip](../../debugger/debug-interface-access/idiaenumdebugstreams-skip.md)|Omite un número especificado de secuencias de depuración en una secuencia de enumeración.|
 |[IDiaEnumDebugStreams::Reset](../../debugger/debug-interface-access/idiaenumdebugstreams-reset.md)|Restablece una secuencia de enumeración al principio.|
 |[IDiaEnumDebugStreams::Clone](../../debugger/debug-interface-access/idiaenumdebugstreams-clone.md)|Crea un enumerador que contiene el mismo estado de enumeración que el enumerador actual.|
 
 ## <a name="remarks"></a>Comentarios
-El contenido de secuencias de depuración está depende de la implementación y los formatos de datos se han documentado.
+El contenido de las secuencias de depuración depende de la implementación y los formatos de datos no están documentados.
 
-## <a name="notes-for-callers"></a>Notas para los llamadores
-Llame a la [Getenumdebugstreams](../../debugger/debug-interface-access/idiasession-getenumdebugstreams.md) método para obtener un `IDiaEnumDebugStreams` objeto.
+## <a name="notes-for-callers"></a>Notas para llamadores
+Llame al método [IDiaSession:: getEnumDebugStreams](../../debugger/debug-interface-access/idiasession-getenumdebugstreams.md) para obtener un objeto `IDiaEnumDebugStreams`.
 
 ## <a name="example"></a>Ejemplo
-En este ejemplo se muestra cómo obtener acceso a los flujos de datos disponibles desde esta interfaz. Consulte la [IDiaEnumDebugStreamData](../../debugger/debug-interface-access/idiaenumdebugstreamdata.md) interfaz para una implementación de la `PrintStreamData` función.
+En este ejemplo se muestra cómo obtener acceso a los flujos de datos disponibles desde esta interfaz. Vea la interfaz [IDiaEnumDebugStreamData](../../debugger/debug-interface-access/idiaenumdebugstreamdata.md) para obtener una implementación de la función `PrintStreamData`.
 
 ```C++
 void DumpAllDebugStreams( IDiaSession* pSession)
@@ -78,9 +78,9 @@ void DumpAllDebugStreams( IDiaSession* pSession)
 ```
 
 ## <a name="requirements"></a>Requisitos
-Encabezado: Dia2.h
+Encabezado: Dia2. h
 
-Biblioteca: diaguids.lib
+Biblioteca: diaguids. lib
 
 DLL: msdia80.dll
 

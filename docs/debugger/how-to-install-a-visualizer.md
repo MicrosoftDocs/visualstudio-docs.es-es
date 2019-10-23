@@ -1,5 +1,5 @@
 ---
-title: Procedimiento Instalar un visualizador | Documentos de Microsoft
+title: 'Cómo: instalar un visualizador | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -17,18 +17,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b9b09bc837cae4eaad2c0dbcb2bb82a7daa248eb
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 3c9c2fa8a8fb300c3b7eb702ae3efd216e17141a
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63389319"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72733106"
 ---
-# <a name="how-to-install-a-visualizer"></a>Procedimiento Instalación de un visualizador
+# <a name="how-to-install-a-visualizer"></a>Cómo: Instalar un visualizador
 Después de crear un visualizador, hay que instalarlo para que esté disponible en [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Instalar un visualizador es un proceso sencillo.
 
 > [!NOTE]
-> En aplicaciones UWP, sólo el texto estándar, se admiten los visualizadores HTML, XML y JSON. No se admiten los visualizadores personalizados (creados por el usuario).
+> En las aplicaciones para UWP, solo se admiten los visualizadores estándar de texto, HTML, XML y JSON. No se admiten los visualizadores personalizados (creados por el usuario).
 
 ### <a name="to-install-a-visualizer"></a>Para instalar un visualizador
 
@@ -46,4 +46,4 @@ Después de crear un visualizador, hay que instalarlo para que esté disponible 
 
 ## <a name="see-also"></a>Vea también
 - [Create Custom Visualizers](../debugger/create-custom-visualizers-of-data.md) (Crear visualizadores personalizados)
-- [Cómo: Escritura de un visualizador](/visualstudio/debugger/create-custom-visualizers-of-data)
+- [Cómo: Escribir un visualizador](/visualstudio/debugger/create-custom-visualizers-of-data)

@@ -1,5 +1,5 @@
 ---
-title: Procedimiento Marcar y desmarcar subprocesos | Documentos de Microsoft
+title: 'Cómo: Marcar y quitar marcadores de subprocesos | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -15,32 +15,32 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e63f081ff54a18bb4b5ca5c1cbdf947670f10a7e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 68a2ce8b6ec429b3f7f5cd782c3dac52602eff16
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62906730"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72733236"
 ---
-# <a name="how-to-flag-and-unflag-threads-c-visual-basic-c"></a>Procedimiento Marcar y desmarcar subprocesos (C#, Visual Basic, C++)
+# <a name="how-to-flag-and-unflag-threads-c-visual-basic-c"></a>Cómo: marcar y desmarcar subprocesos (C#, C++Visual Basic,)
 
-Puede marcar un subproceso que desea prestar atención especial con un icono en el **subprocesos**, **pilas paralelas** (vista de subprocesos), **inspección paralela**y  **Subprocesos de GPU** windows. Este icono ayuda a distinguir estos subprocesos marcados de otros.
+Puede marcar un subproceso al que desea prestar atención especial si lo marca con un icono **en las ventanas subprocesos**, **pilas paralelas** (vista de subproceso), **inspección paralela**y **subprocesos de GPU** . Este icono ayuda a distinguir estos subprocesos marcados de otros.
 
-Los subprocesos marcados también reciben un tratamiento especial en el **subprocesos** lista el **ubicación de depuración** barra de herramientas y en las otras ventanas de depuración multiproceso. Puede mostrar todos los subprocesos o solo subprocesos marcados en el **subprocesos** lista o en las otras ventanas.
+Los subprocesos marcados también reciben un tratamiento especial en la lista de **subprocesos** de la barra de herramientas de **Ubicación de depuración** y en las otras ventanas de depuración multiproceso. Puede mostrar todos los subprocesos o solo los subprocesos marcados en la lista de **subprocesos** o en las otras ventanas.
 
 ### <a name="to-flag-or-unflag-a-thread"></a>Para marcar o quitar marcador de un subproceso
 
-- En el **subprocesos** o **inspección paralela** , busque el subproceso que esté interesado y haga clic en el icono de marca para seleccionar o borrar la marca.
-- En el **pilas paralelas** ventana, el botón secundario en un subproceso o el grupo de subprocesos y seleccione **marca / \<subproceso >** o **Quitar marcador / \<subproceso >**.
+- En la ventana **subprocesos** o **inspección paralela** , busque el subproceso que le interese y haga clic en el icono de marca para activar o desactivar la marca.
+- En la ventana **pilas paralelas** , haga clic con el botón derecho en un subproceso o grupo de subprocesos y seleccione **Flag/\<thread >** o **Unflag/\<thread >** .
 
 ### <a name="to-unflag-all-threads"></a>Para quitar los marcadores de todos los subprocesos
 
 - En la ventana **Subprocesos**, haga clic con el botón derecho del mouse en cualquier subproceso y, a continuación, haga clic en **Quitar marca de todos los subprocesos**.
-- En el **inspección paralela** ventana, seleccione todos los subprocesos marcados y, a continuación, haga clic en y seleccione **Quitar marcador**.
+- En la ventana **inspección paralela** , seleccione todos los subprocesos marcados, haga clic con el botón derecho y seleccione **Quitar marcador**.
 
 ### <a name="to-display-only-flagged-threads"></a>Para mostrar solo los subprocesos marcados
 
-- Elija la **mostrar solo subprocesos de marcados** botón en una de las ventanas de depuración multiproceso.
+- Elija el botón **Mostrar solo subprocesos marcados** en una de las ventanas de depuración multiproceso.
 
 ### <a name="to-flag-just-my-code"></a>Para marcar Solo mi código
 
@@ -63,4 +63,4 @@ Los subprocesos marcados también reciben un tratamiento especial en el **subpro
 ## <a name="see-also"></a>Vea también
 - [Depuración de aplicaciones multiproceso](../debugger/debug-multithreaded-applications-in-visual-studio.md)
 - [Introducción a la depuración de aplicaciones multiproceso](../debugger/get-started-debugging-multithreaded-apps.md)
-- [Tutorial: Depurar aplicaciones multiproceso con la ventana subprocesos](../debugger/how-to-use-the-threads-window.md)
+- [Tutorial: depurar aplicaciones multiproceso mediante la ventana subprocesos](../debugger/how-to-use-the-threads-window.md)

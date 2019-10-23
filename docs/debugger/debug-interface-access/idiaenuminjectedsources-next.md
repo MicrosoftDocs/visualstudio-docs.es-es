@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: aea793f33eb78ee1637d7f22eb46ba34514e0e8f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 84dd3e1d107b8e55d5e94979627d1c1586534127
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62554043"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72744493"
 ---
 # <a name="idiaenuminjectedsourcesnext"></a>IDiaEnumInjectedSources::Next
 Recupera un número especificado de orígenes insertados en la secuencia de enumeración.
@@ -35,18 +35,18 @@ HRESULT Next ( 
 #### <a name="parameters"></a>Parámetros
  celt
 
-[in] El número de orígenes insertados en el enumerador que se va a recuperar.
+de El número de orígenes insertados en el enumerador que se va a recuperar.
 
  rgelt
 
-[out] Devuelve una matriz de [IDiaInjectedSource](../../debugger/debug-interface-access/idiainjectedsource.md) objetos que representan los orígenes insertados deseados.
+enuncia Devuelve una matriz de objetos [IDiaInjectedSource](../../debugger/debug-interface-access/idiainjectedsource.md) que representa los orígenes insertados deseados.
 
  pceltFetched
 
-[out] Devuelve el número de orígenes insertados en el enumerador capturado.
+enuncia Devuelve el número de orígenes insertados en el enumerador capturado.
 
 ## <a name="return-value"></a>Valor devuelto
- Si la operación se realiza correctamente, devuelve `S_OK`. Devuelve `S_FALSE` si no hay origen insertado no hay más. De lo contrario, devuelve un código de error.
+ Si la operación se realiza correctamente, devuelve `S_OK`. Devuelve `S_FALSE` si no hay más orígenes insertados. De lo contrario, devuelve un código de error.
 
 ## <a name="see-also"></a>Vea también
 - [IDiaEnumInjectedSources](../../debugger/debug-interface-access/idiaenuminjectedsources.md)

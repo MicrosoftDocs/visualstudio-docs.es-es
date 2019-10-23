@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4fed7653b5f1a270d2e297cdd2b59366b5b563c3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 2b23aff5cd5d2b94a44e3e9139ff4c97acb2225d
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62839191"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72741930"
 ---
-# <a name="idiasessiongetloadaddress"></a>IDiaSession::get_loadAddress
-Recupera la dirección de carga del archivo ejecutable que se corresponde con los símbolos de este almacén de símbolos.
+# <a name="idiasessionget_loadaddress"></a>IDiaSession::get_loadAddress
+Recupera la dirección de carga del archivo ejecutable que corresponde a los símbolos de este almacén de símbolos.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -33,13 +33,13 @@ HRESULT get_loadAddress ( 
 #### <a name="parameters"></a>Parámetros
  `pRetVal`
 
-[out] Devuelve una dirección virtual (VA) donde se ha cargado un archivo .exe o .dll.
+enuncia Devuelve una dirección virtual (VA) donde se carga un archivo. exe o. dll.
 
 ## <a name="return-value"></a>Valor devuelto
- Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.
+ Si se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.
 
 ## <a name="remarks"></a>Comentarios
- La dirección de carga devuelta siempre es cero, a menos que se establezcan específicamente mediante la [Put_loadaddress](../../debugger/debug-interface-access/idiasession-put-loadaddress.md) método.
+ La dirección de carga devuelta siempre es cero a menos que se establezca específicamente con el método [IDiaSession::P ut_loadaddress](../../debugger/debug-interface-access/idiasession-put-loadaddress.md) .
 
 ## <a name="see-also"></a>Vea también
 - [IDiaSession](../../debugger/debug-interface-access/idiasession.md)

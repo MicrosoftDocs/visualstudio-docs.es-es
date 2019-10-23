@@ -1,5 +1,5 @@
 ---
-title: Depurar un C++ infracción de acceso | Microsoft Docs
+title: Depurar una infracción de C++ acceso | Microsoft Docs
 ms.custom: seodec18
 ms.date: 02/05/2019
 ms.topic: conceptual
@@ -19,14 +19,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 2be6c13e2a3c83d31540399dd3387addb08e8686
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: eebbdfd7774018ecf49801c6b01b5867b7bd3408
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62895135"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72734541"
 ---
-# <a name="how-can-i-debug-a-c-access-violation"></a>¿Cómo se puede depurar una infracción de acceso de C++?
+# <a name="how-can-i-debug-a-c-access-violation"></a>Cómo depurar una C++ infracción de acceso
 
 ## <a name="problem-description"></a>Descripción del problema
 
