@@ -1,5 +1,5 @@
 ---
-title: 'Error: No tiene permiso para inspeccionar el proceso&#39;identidad s | Documentos de Microsoft'
+title: 'Error: no tiene permiso para inspeccionar la identidad del&#39;proceso s | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: troubleshooting
 dev_langs:
@@ -12,14 +12,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 437693b289723c44986f61cc65d644742cd8e77c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: cad229f80676c3d1f7a7d23ad7a29729c834929b
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62849929"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72736221"
 ---
-# <a name="error-you-do-not-have-permission-to-inspect-the-process39s-identity"></a>Error: No tiene permiso para inspeccionar el proceso&#39;identidad s
+# <a name="error-you-do-not-have-permission-to-inspect-the-process39s-identity"></a>Error: no tiene permiso para inspeccionar la identidad del&#39;proceso.
 No tiene permiso para inspeccionar la identidad del proceso. Probablemente se deba a la configuración del sistema.
 
  El depurador no pudo inspeccionar la identidad del proceso, información necesaria para depurar. La causa más probable es que se haya deshabilitado Terminal Services. Terminal Services está habilitado de forma predeterminada. Siga estos pasos para volver a habilitar Terminal Services.
@@ -40,7 +40,7 @@ No tiene permiso para inspeccionar la identidad del proceso. Probablemente se de
 
 6. En la lista **Servicios**, haga clic con el botón derecho en **Terminal Services** y después elija **Propiedades**.
 
-7. En el **propiedades de Terminal Services** ventana, vaya a la **General** pestaña y establezca **tipo de inicio** a **Manual**.
+7. En la ventana **propiedades de Terminal Services** , vaya a la pestaña **General** y establezca **tipo de inicio** en **manual**.
 
 8. Haga clic en **Aceptar**.
 

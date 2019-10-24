@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 2b9cd6f120d5699464c9e7311721898a727bf47e
-ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
+ms.openlocfilehash: 0173ed557afa47129e0cc92d9ef9b2d94a7b198f
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72450428"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72730325"
 ---
 # <a name="remote-debugging-a-c-project-in-visual-studio"></a>Depuración remota C++ de un proyecto en Visual Studio
 Para depurar una aplicación de Visual Studio en otro equipo, instale y ejecute las herramientas remotas en el equipo donde va a implementar la aplicación, configure el proyecto para que se conecte al equipo remoto desde Visual Studio y, a continuación, implemente y ejecute la aplicación.

@@ -10,14 +10,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9d74c2ba8317098212c7263ab049becc52f874e9
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 2e06a8605b38042773cfa60e4847ed3ace9c5954
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "62836585"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72740127"
 ---
-# <a name="idiasymbolgetispointertodatamember"></a>IDiaSymbol::get_isPointerToDataMember
+# <a name="idiasymbolget_ispointertodatamember"></a>IDiaSymbol::get_isPointerToDataMember
 Especifica si este símbolo es un puntero a un miembro de datos.
 
 ## <a name="syntax"></a>Sintaxis
@@ -30,10 +30,10 @@ HRESULT get_isPointerToDataMember(
 #### <a name="parameters"></a>Parámetros
  `pRetVal`
 
-[out] Un puntero a un `BOOL` que especifica si este símbolo es un puntero a un miembro de datos.
+enuncia Puntero a un `BOOL` que especifica si este símbolo es un puntero a un miembro de datos.
 
 ## <a name="return-value"></a>Valor devuelto
- Si es correcto, devuelve `S_OK`; en caso contrario, devuelve `S_FALSE` o un código de error.
+ Si se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve `S_FALSE` o un código de error.
 
 ## <a name="see-also"></a>Vea también
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9f85cd612dc2b45150745c17420d79a487c821ff
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 98ec604b11332913e53b1301452bcac9e80a8242
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62829802"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72744146"
 ---
 # <a name="idiaenumsegmentsreset"></a>IDiaEnumSegments::Reset
 Restablece una secuencia de enumeración al principio.

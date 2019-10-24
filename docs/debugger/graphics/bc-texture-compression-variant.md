@@ -1,5 +1,5 @@
 ---
-title: Variante de compresión de textura BC | Documentos de Microsoft
+title: Variante de compresión de textura BC | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 2d0f5305-585b-4b01-bc9a-7a32d6e991da
@@ -8,15 +8,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3a25411449c1b13b12f05819061847c252a76c9c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c5faf19632d746105deed3a36af6943627594175
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62848695"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72736159"
 ---
 # <a name="bc-texture-compression-variant"></a>BC (Variante de compresión de textura)
-Habilita la compresión de bloque en todas las texturas que tengan una variante de formato de píxel de B8G8R8X8, B8G8R8A8 o R8G8B8A8. 
+Habilita la compresión de bloque en todas las texturas que tengan una variante de formato de píxel de B8G8R8X8, B8G8R8A8 o R8G8B8A8.
 
 ## <a name="interpretation"></a>Interpretación
  Los formatos de compresión basados en bloque, como BC1, BC2 y BC3, ocupan mucha menos memoria que los formatos de imagen sin comprimir y, por lo tanto, consumen mucho menos ancho de banda de memoria. En comparación con un formato sin comprimir que utiliza 32 bits por píxel, BC1 (anteriormente denominado DXT1) alcanza una compresión de 8:1 y BC3 (anteriormente denominado DXT5), una de 4:1. La diferencia entre BC1 y BC3 es que BC1 no es compatible con un canal alfa, mientras que BC3 es compatible con un canal alfa con compresión de bloque. A pesar de las proporciones de alta compresión, solo hay una pequeña reducción en la calidad de la imagen para las texturas frecuentes. No obstante, la compresión de bloque de ciertos tipos de texturas, como, por ejemplo, las que tienen una gran variación del color en un área pequeña, pueden tener resultados inaceptables.

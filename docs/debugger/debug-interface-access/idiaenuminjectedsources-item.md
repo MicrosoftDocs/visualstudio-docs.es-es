@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2fd803520a6b6bb58679dd30dbf913450ce6066a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 91be2f4f437cfeed30b0741d10bf719ba0ed2b71
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62833575"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72744503"
 ---
 # <a name="idiaenuminjectedsourcesitem"></a>IDiaEnumInjectedSources::Item
 Recupera un origen insertado por medio de un índice.
@@ -34,14 +34,14 @@ HRESULT Item ( 
 #### <a name="parameters"></a>Parámetros
  índice
 
-[in] Índice de la [IDiaInjectedSource](../../debugger/debug-interface-access/idiainjectedsource.md) objeto va a recuperar. El índice es el intervalo de 0 a `count`-1, donde `count` devuelto por la [Idiaenuminjectedsources](../../debugger/debug-interface-access/idiaenuminjectedsources-get-count.md) método.
+de Índice del objeto [IDiaInjectedSource](../../debugger/debug-interface-access/idiainjectedsource.md) que se va a recuperar. El índice es el intervalo de 0 a `count`-1, donde el método [IDiaEnumInjectedSources:: get_Count](../../debugger/debug-interface-access/idiaenuminjectedsources-get-count.md) devuelve `count`.
 
  injectedSource
 
-[out] Devuelve un [IDiaInjectedSource](../../debugger/debug-interface-access/idiainjectedsource.md) objeto que representa el origen insertado.
+enuncia Devuelve un objeto [IDiaInjectedSource](../../debugger/debug-interface-access/idiainjectedsource.md) que representa el origen insertado.
 
 ## <a name="return-value"></a>Valor devuelto
- Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.
+ Si se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.
 
 ## <a name="see-also"></a>Vea también
 - [IDiaEnumInjectedSources](../../debugger/debug-interface-access/idiaenuminjectedsources.md)

@@ -10,12 +10,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 808eecab2b4f468b730b6c58cce32d08ca523d0d
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 74d64b4fe0c0aa5293e11daad13f632c4a487736
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72660324"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72747415"
 ---
 # <a name="rules-propagate-changes-within-the-model"></a>Las reglas propagan los cambios dentro del modelo
 Puede crear una regla de almacén para propagar un cambio de un elemento a otro en el SDK de visualización y modelado (VMSDK). Cuando se produce un cambio en cualquier elemento del almacén, se programan las reglas para que se ejecuten, normalmente cuando se confirma la transacción más externa. Hay diferentes tipos de reglas para diferentes tipos de eventos, como agregar un elemento o eliminarlo. Puede adjuntar reglas a tipos específicos de elementos, formas o diagramas. Muchas características integradas se definen mediante reglas: por ejemplo, las reglas garantizan que un diagrama se actualice cuando cambie el modelo. Puede personalizar el lenguaje específico de dominio agregando sus propias reglas.

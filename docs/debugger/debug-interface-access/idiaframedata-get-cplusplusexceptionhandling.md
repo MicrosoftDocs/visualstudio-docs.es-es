@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 31b386ff2c31937efc352049f7db068f49e4ba19
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d6d1e66cc7358bd086088199bf07a7320a0c8d07
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62832767"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72743636"
 ---
-# <a name="idiaframedatagetcplusplusexceptionhandling"></a>IDiaFrameData::get_cplusplusExceptionHandling
-Recupera una marca que indica si el control de excepciones de C++ está en vigor.
+# <a name="idiaframedataget_cplusplusexceptionhandling"></a>IDiaFrameData::get_cplusplusExceptionHandling
+Recupera una marca que indica si C++ el control de excepciones está en vigor.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -33,13 +33,13 @@ HRESULT get_cplusplusExceptionHandling ( 
 #### <a name="parameters"></a>Parámetros
  `pRetVal`
 
-[out] Devuelve `TRUE` si C++ control de excepciones está en vigor; de lo contrario, devuelve `FALSE`.
+enuncia Devuelve `TRUE` si C++ el control de excepciones está en vigor; de lo contrario, devuelve `FALSE`.
 
 ## <a name="return-value"></a>Valor devuelto
  Si la operación se realiza correctamente, devuelve `S_OK`. Devuelve `S_FALSE` si no se admite esta propiedad. De lo contrario, devuelve un código de error.
 
 ## <a name="remarks"></a>Comentarios
- Para determinar si de excepciones estructurado el control está en vigor (que es muy diferente de C++ control de excepciones), llame a la [Get_systemexceptionhandling](../../debugger/debug-interface-access/idiaframedata-get-systemexceptionhandling.md) método.
+ Para determinar si el control de excepciones estructurado está en vigor (que es muy C++ diferente del control de excepciones), llame al método [IDiaFrameData:: get_systemExceptionHandling](../../debugger/debug-interface-access/idiaframedata-get-systemexceptionhandling.md) .
 
 ## <a name="see-also"></a>Vea también
 - [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md)

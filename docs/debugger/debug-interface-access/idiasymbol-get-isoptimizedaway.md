@@ -10,15 +10,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b0f8910d35106574912e4a01f7995bfe0f503e3f
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 43ab9598262ba8dd73d6c0725e7bc8450f6ec218
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "62836243"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72740152"
 ---
-# <a name="idiasymbolgetisoptimizedaway"></a>IDiaSymbol::get_isOptimizedAway
-Especifica si la variable se ha optimizado fuera.
+# <a name="idiasymbolget_isoptimizedaway"></a>IDiaSymbol::get_isOptimizedAway
+Especifica si la variable está optimizada.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -30,10 +30,10 @@ HRESULT get_isOptimizedAway(
 #### <a name="parameters"></a>Parámetros
  `pRetVal`
 
-[out] Un puntero a un `BOOL` que especifica si la variable se ha optimizado fuera.
+enuncia Puntero a un `BOOL` que especifica si la variable está optimizada.
 
 ## <a name="return-value"></a>Valor devuelto
- Si es correcto, devuelve `S_OK`; en caso contrario, devuelve `S_FALSE` o un código de error.
+ Si se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve `S_FALSE` o un código de error.
 
 ## <a name="see-also"></a>Vea también
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

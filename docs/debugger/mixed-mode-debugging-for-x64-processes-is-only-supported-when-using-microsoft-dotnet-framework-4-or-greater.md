@@ -1,5 +1,5 @@
 ---
-title: Modo mixto depuración para x64 procesos solo se admite cuando se usa Microsoft.NET Framework 4 o posterior | Microsoft Docs
+title: La depuración en modo mixto para procesos x64 solo se admite cuando se usa Microsoft.NET Framework 4 o superior | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 821efec0beb26cea150fe0cfac20f0dc4c45d5f4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 64f079181ed7784de097d2bb22b8143cfe2415f4
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62845710"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72731025"
 ---
 # <a name="mixed-mode-debugging-for-x64-processes-is-only-supported-when-using-microsoftnet-framework-4-or-greater"></a>El modo de depuración mixto para procesos x64 solo se admite cuando se usa Microsoft .NET Framework 4 o posterior
 Las versiones de .NET Framework anteriores a la 4 no proporcionan compatibilidad para la depuración en modo mixto de procesos de 64 bits. Esto significa que no puede pasar de código administrado a código nativo, o de código nativo a código administrado, mientras está depurando.
@@ -29,11 +29,11 @@ Las versiones de .NET Framework anteriores a la 4 no proporcionan compatibilidad
 
 - Actualice el proyecto para usar Microsoft .NET Framework 4 o posterior.
 
-     -o bien-
+     o bien
 
      Depurar el código administrado y el código nativo en sesiones de depuración independientes.
 
-     -o bien-
+     o bien
 
      Depurar el código mixto como un proceso de 32 bits, tal y como se describe en los procedimientos siguientes.
 
@@ -55,7 +55,7 @@ Las versiones de .NET Framework anteriores a la 4 no proporcionan compatibilidad
 
 ### <a name="to-correct-this-error"></a>Para corregir este error
 
-- Consulte [configurar la depuración de SQL](/previous-versions/visualstudio/visual-studio-2010/s4sszxst(v=vs.100)).
+- Consulte [configuración de la depuración de SQL](/previous-versions/visualstudio/visual-studio-2010/s4sszxst(v=vs.100)).
 
 ## <a name="see-also"></a>Vea también
 - [Depurar aplicaciones de 64 bits](../debugger/debug-64-bit-applications.md)

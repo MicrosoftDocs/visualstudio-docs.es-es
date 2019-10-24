@@ -12,29 +12,29 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1524348bf94af681b5761ca42cb4fac911f359f7
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 9d078e8af5f579556fb865a4d92084220afecc83
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64803398"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72738435"
 ---
 # <a name="usingnamespace"></a>UsingNameSpace
-Algunos símbolos que se le redirija a por espacio de nombres y posteriormente sería identificados por un `SymTagUsingNameSpace` etiqueta.
+Es posible que se pueda hacer referencia a algunos símbolos mediante el espacio de nombres y, posteriormente, se identificaría mediante una etiqueta `SymTagUsingNameSpace`.
 
 > [!NOTE]
-> La etiqueta del símbolo UsingNamespace solo aparece en código administrado.
+> La etiqueta Symbol de Usingnamespace (solo aparece en código administrado.
 
-## <a name="properties"></a>Properties (Propiedades)
- En la tabla siguiente muestra las propiedades que son válidas para este tipo de símbolo.
+## <a name="properties"></a>Propiedades
+ En la tabla siguiente se muestran las propiedades que son válidas para este tipo de símbolo.
 
-|Propiedad|Tipo de datos|DESCRIPCIÓN|
+|Propiedad.|Tipo de datos|Descripción|
 |--------------|---------------|-----------------|
-|[IDiaSymbol::get_lexicalParent](../../debugger/debug-interface-access/idiasymbol-get-lexicalparent.md)|`IDiaSymbol*`|Símbolo de la operación de compilación, bloque o la función envolvente.|
-|[IDiaSymbol::get_lexicalParentId](../../debugger/debug-interface-access/idiasymbol-get-lexicalparentid.md)|`DWORD`|Id. del símbolo léxico primario.|
+|[IDiaSymbol::get_lexicalParent](../../debugger/debug-interface-access/idiasymbol-get-lexicalparent.md)|`IDiaSymbol*`|Símbolo de la operación de compilación, bloque o función envolvente.|
+|[IDiaSymbol::get_lexicalParentId](../../debugger/debug-interface-access/idiasymbol-get-lexicalparentid.md)|`DWORD`|IDENTIFICADOR del símbolo primario léxico.|
 |[IDiaSymbol::get_name](../../debugger/debug-interface-access/idiasymbol-get-name.md)|`BSTR`|Nombre del espacio de nombres.|
-|[IDiaSymbol::get_symIndexId](../../debugger/debug-interface-access/idiasymbol-get-symindexid.md)|`DWORD`|Id. de índice de símbolo.|
-|[IDiaSymbol::get_symTag](../../debugger/debug-interface-access/idiasymbol-get-symtag.md)|`DWORD`|Devuelve `SymTagNameSpace` (uno de los [SymTagEnum (enumeración)](../../debugger/debug-interface-access/symtagenum.md) valores).|
+|[IDiaSymbol::get_symIndexId](../../debugger/debug-interface-access/idiasymbol-get-symindexid.md)|`DWORD`|IDENTIFICADOR de índice del símbolo.|
+|[IDiaSymbol::get_symTag](../../debugger/debug-interface-access/idiasymbol-get-symtag.md)|`DWORD`|Devuelve `SymTagNameSpace` (uno de los valores de [enumeración symtagenum (](../../debugger/debug-interface-access/symtagenum.md) ).|
 
 ## <a name="see-also"></a>Vea también
 - [Jerarquía léxica de tipos de símbolos](../../debugger/debug-interface-access/lexical-hierarchy-of-symbol-types.md)

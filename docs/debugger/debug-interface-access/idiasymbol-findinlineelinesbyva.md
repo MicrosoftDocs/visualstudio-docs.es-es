@@ -10,15 +10,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 81ae02877b7e81e0d2240ab2c6eea68f22f0e2d2
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: de092109282506747606799b45b89059bf41fd8a
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "62837867"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72741190"
 ---
 # <a name="idiasymbolfindinlineelinesbyva"></a>IDiaSymbol::findInlineeLinesByVA
-Recupera una enumeración que permite que un cliente iterar por la información de número de línea de todas las funciones que están insertadas, directa o indirectamente, en este símbolo dentro de la dirección virtual especificada (VA).
+Recupera una enumeración que permite a un cliente recorrer en iteración la información del número de línea de todas las funciones insertadas, directa o indirectamente, en este símbolo dentro de la dirección virtual especificada (VA).
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -33,18 +33,18 @@ HRESULT findInlineeLinesByVA ( 
 #### <a name="parameters"></a>Parámetros
  `va`
 
-[in] Especifica la dirección como un jefe
+de Especifica la dirección como un VA.
 
  `length`
 
-[in] Especifica el intervalo de direcciones, en el número de bytes, para cubrir con esta consulta.
+de Especifica el intervalo de direcciones, en número de bytes, que se va a cubrir con esta consulta.
 
  `ppResult`
 
-[out] Contiene un `IDiaEnumLineNumbers` objeto que contiene la lista de números de línea que se recuperan.
+enuncia Contiene un objeto `IDiaEnumLineNumbers` que contiene la lista de números de línea que se recuperan.
 
 ## <a name="return-value"></a>Valor devuelto
- Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.
+ Si se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.
 
 ## <a name="see-also"></a>Vea también
 - [IDiaSession](../../debugger/debug-interface-access/idiasession.md)

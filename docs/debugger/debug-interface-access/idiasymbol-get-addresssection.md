@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f4ae24a194050868e1e2efbc5d29e7cf20e6cf5d
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 5a468fe6ee8a8d7d00bb2e6c261d50919a1dd764
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64830590"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72741076"
 ---
-# <a name="idiasymbolgetaddresssection"></a>IDiaSymbol::get_addressSection
-Recupera la parte de la sección de una dirección de ubicación. Cuando utilice el [LocationType (enumeración)](../../debugger/debug-interface-access/locationtype.md) está establecido en `LocIsStatic`.
+# <a name="idiasymbolget_addresssection"></a>IDiaSymbol::get_addressSection
+Recupera la parte de la sección de una ubicación de dirección. Se usa cuando la [enumeración LocationType (](../../debugger/debug-interface-access/locationtype.md) se establece en `LocIsStatic`.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -33,25 +33,25 @@ HRESULT get_addressSection ( 
 #### <a name="parameters"></a>Parámetros
  `pRetVal`
 
-[out] Devuelve la parte de la sección de una dirección de ubicación.
+enuncia Devuelve la parte de la sección de una ubicación de dirección.
 
 ## <a name="return-value"></a>Valor devuelto
- Si es correcto, devuelve `S_OK`; en caso contrario, devuelve `S_FALSE` o un código de error.
+ Si se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve `S_FALSE` o un código de error.
 
 > [!NOTE]
 > Un valor devuelto de `S_FALSE` significa que la propiedad no está disponible para el símbolo.
 
 ## <a name="remarks"></a>Comentarios
- Los miembros estáticos ubicados en un archivo DLL externo, la sección devuelta por este método puede ser 0 como este método se basa en obtener la dirección virtual del miembro. Las direcciones virtuales son válidas solo si el [Put_loadaddress](../../debugger/debug-interface-access/idiasession-put-loadaddress.md) método en el [IDiaSession](../../debugger/debug-interface-access/idiasession.md) interfaz se ha llamado con un parámetro distinto de cero que especifica la dirección de carga del archivo DLL.
+ En el caso de los miembros estáticos que se encuentran en un archivo DLL externo, la sección devuelta por este método puede ser 0, ya que este método se basa en obtener la dirección virtual del miembro. Las direcciones virtuales solo son válidas si se ha llamado al método [IDiaSession::P ut_loadaddress](../../debugger/debug-interface-access/idiasession-put-loadaddress.md) de la interfaz [IDiaSession](../../debugger/debug-interface-access/idiasession.md) con un parámetro distinto de cero que especifica la dirección de carga del archivo dll.
 
- Para obtener la parte de una dirección de desplazamiento, llame a la [Get_addressoffset](../../debugger/debug-interface-access/idiasymbol-get-addressoffset.md) método.
+ Para obtener la parte de desplazamiento de una dirección, llame al método [IDiaSymbol:: get_addressOffset](../../debugger/debug-interface-access/idiasymbol-get-addressoffset.md) .
 
 ## <a name="requirements"></a>Requisitos
 
-|Requisito|DESCRIPCIÓN|
+|Requisito|Descripción|
 |-----------------|-----------------|
 |Encabezado:|dia2.h|
-|Versión:|SDK de DIA v7.0|
+|Versión:|SDK de DIA v 7.0|
 
 ## <a name="see-also"></a>Vea también
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

@@ -10,15 +10,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: aeb9d7b9925e8708ab100e68f88b28310da68fce
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: dca26021909220f9bb68a6794c299ec6c5a3d75a
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62827325"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72742143"
 ---
 # <a name="idiasessionfindinlineframesbyva"></a>IDiaSession::findInlineFramesByVA
-Recupera una enumeración que permite que un cliente recorrer en iteración todos los marcos en línea en una dirección virtual especificado (VA).
+Recupera una enumeración que permite a un cliente recorrer en iteración todos los marcos insertados en una dirección virtual especificada (VA).
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -32,18 +32,18 @@ HRESULT findInlineFramesByVA ( 
 #### <a name="parameters"></a>Parámetros
  `parent`
 
-[in] Un `IDiaSymbol` objeto que representa el elemento primario.
+de Objeto `IDiaSymbol` que representa el elemento primario.
 
  `va`
 
-[in] Especifica la dirección como un jefe
+de Especifica la dirección como un VA.
 
  `ppResult`
 
-[out] Contiene un `IDiaEnumSymbols` objeto que contiene la lista de fotogramas que se recuperan.
+enuncia Contiene un objeto `IDiaEnumSymbols` que contiene la lista de fotogramas que se recuperan.
 
 ## <a name="return-value"></a>Valor devuelto
- Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.
+ Si se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.
 
 ## <a name="see-also"></a>Vea también
 - [IDiaSession](../../debugger/debug-interface-access/idiasession.md)

@@ -10,19 +10,19 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 710cc8cae2b1974529be1eded6c5148eedd1211e
-ms.sourcegitcommit: 283f2dbce044a18e9f6ac6398f6fc78e074ec1ed
+ms.openlocfilehash: 9fe890d5a2c88ea9d4d35a6bd01f6012d97e6ce0
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/16/2019
-ms.locfileid: "65805312"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72735549"
 ---
 # <a name="graphics-event-list"></a>Lista de eventos gráficos
 Use la lista de eventos gráficos del Analizador de gráficos de Visual Studio para explorar los eventos Direct3D que se registraron mientras se presentaba un fotograma de su juego o aplicación.
 
  Esta es la lista de eventos:
 
- ![Una lista de eventos que tienen "Índice" en su nombre. ](media/gfx_diag_demo_event_list_orientation.png "gfx_diag_demo_event_list_orientation")
+ ![Una lista de eventos que tienen "índice" en su nombre.](media/gfx_diag_demo_event_list_orientation.png "gfx_diag_demo_event_list_orientation")
 
 ## <a name="using-the-event-list"></a>Uso de la lista de eventos
  Cuando selecciona un evento de la lista de eventos, se refleja en la información que muestran otras herramientas de análisis de gráficos. Si usa la lista en sintonía con estas otras herramientas, puede examinar un problema de representación en detalle para determinar su causa. Para obtener más información sobre cómo solucionar problemas de presentación usando la lista de eventos junto con otras herramientas de Análisis de gráficos, consulte [Ejemplos](graphics-diagnostics-examples.md).
@@ -41,15 +41,15 @@ Use la lista de eventos gráficos del Analizador de gráficos de Visual Studio p
  Direct3D 11 no expone varias colas, de modo que los eventos no están codificados por colores en la lista de eventos cuando se trabaja con una captura de una aplicación de Direct3D 11.
 
 ### <a name="event-list-views"></a>Vistas de la lista de eventos
- La lista de eventos tiene dos vistas diferentes que organizan los eventos de gráficos de maneras diferentes, para adaptarse así a su flujo de trabajo y preferencias. La primera vista es la *vista de trabajo de GPU* que organiza jerárquicamente los eventos y su estado asociado. La segunda vista es la *vista de escala de tiempo* , que organiza los eventos cronológicamente, en una lista plana.
+ La lista de eventos tiene dos vistas diferentes que organizan los eventos de gráficos de maneras diferentes, para adaptarse así a su flujo de trabajo y preferencias. La primera vista es la *vista de trabajo de GPU* que organiza los eventos y su estado asociado de forma jerárquica. La segunda vista es la *vista de escala de tiempo* , que organiza los eventos cronológicamente, en una lista plana.
 
- El **trabajo de GPU** vista muestra eventos capturados y su estado en una jerarquía. El nivel superior de la jerarquía está hecho de eventos, como llamadas de dibujo, borrados, presentes y los relacionados con las vistas. En la lista de eventos, puede expandir las llamadas de dibujo para mostrar el estado del dispositivo en el momento de la llamada a draw y expandir el estado para mostrar los eventos que establecen sus valores. En este nivel, también puede ver si un estado concreto se estableció en un fotograma previo o si se ha establecido más de una vez desde la última llamada a draw.
+ La vista de **trabajo de GPU** muestra los eventos capturados y su estado en una jerarquía. El nivel superior de la jerarquía está hecho de eventos, como llamadas de dibujo, borrados, presentes y los relacionados con las vistas. En la lista de eventos, puede expandir las llamadas de dibujo para mostrar el estado del dispositivo en el momento de la llamada a draw y expandir el estado para mostrar los eventos que establecen sus valores. En este nivel, también puede ver si un estado concreto se estableció en un fotograma previo o si se ha establecido más de una vez desde la última llamada a draw.
 
- El **escala de tiempo** vista muestra todos los eventos capturados en orden cronológico. Esta manera de organizar la lista de eventos es la misma que en las versiones anteriores de Visual Studio.
+ La vista **escala de tiempo** muestra cada evento capturado en orden cronológico. Esta manera de organizar la lista de eventos es la misma que en las versiones anteriores de Visual Studio.
 
 ##### <a name="to-change-the-event-list-view-mode"></a>Cambio de la vista de la lista de eventos
 
-- En el **lista de eventos gráficos** ventana, encima de la lista de eventos, busque el **vista** lista desplegable y elija entre la **escala de tiempo** vista o la **detrabajodeGPU** vista.
+- En la ventana **lista de eventos gráficos** , encima de la lista de eventos, busque el cuadro desplegable **vista** y elija la vista **escala de tiempo** o la vista de trabajo de **GPU** .
 
 ### <a name="filtering-events"></a>Filtrado de eventos
  Puede utilizar el Cuadro de búsqueda, situado en la esquina superior derecha de la ventana **Lista de eventos gráficos** , para filtrar la lista de eventos de modo que incluya solo los eventos cuyo nombre contenga determinadas palabras clave. Puede especificar una palabra clave, como `Vertex`(como se muestra en la ilustración anterior), o varias palabras clave separadas por un punto y coma, como `Draw;Primitive`, lo que mostrará eventos que tengan tanto `Draw` como `Primitive` en sus nombres. Las búsquedas distinguen los espacios (por ejemplo, `VSSet` y `VS Set` son búsquedas diferentes, de modo que debe efectuarlas con cuidado).
@@ -66,9 +66,9 @@ Use la lista de eventos gráficos del Analizador de gráficos de Visual Studio p
 |Iconos|Descripción del evento|
 |----------|-----------------------|
 |(sin icono)|Evento general<br /> Cualquier evento que no sea un evento definido por el usuario, un grupo de eventos definido por el usuario o un evento de dibujo.|
-|![El icono de evento draw](media/vsg_eventlist_icon_draw.png "vsg_eventlist_icon_draw")|Evento de dibujo<br /> Marca un evento de dibujo que ha ocurrido durante el fotograma capturado.|
-|![El usuario&#45;definido por el icono de marcador de evento](media/vsg_eventlist_icon_user.png "vsg_eventlist_icon_user")|Grupo de eventos definido por el usuario<br /> Eventos relacionados con grupos, definidos por la aplicación.|
-|![El usuario&#45;definido por el icono de marcador de evento](media/vsg_eventlist_icon_user.png "vsg_eventlist_icon_user")|Marcador de eventos definido por el usuario<br /> Marca una ubicación específica, definida por la aplicación.|
+|![Icono de evento de dibujo](media/vsg_eventlist_icon_draw.png "vsg_eventlist_icon_draw")|Evento de dibujo<br /> Marca un evento de dibujo que ha ocurrido durante el fotograma capturado.|
+|![Icono de&#45;marcador de eventos definido por el usuario](media/vsg_eventlist_icon_user.png "vsg_eventlist_icon_user")|Grupo de eventos definido por el usuario<br /> Eventos relacionados con grupos, definidos por la aplicación.|
+|![Icono de&#45;marcador de eventos definido por el usuario](media/vsg_eventlist_icon_user.png "vsg_eventlist_icon_user")|Marcador de eventos definido por el usuario<br /> Marca una ubicación específica, definida por la aplicación.|
 
 ## <a name="marking-user-defined-events-in-your-app"></a>Marcar eventos definidos por el usuario en la aplicación
  Los eventos definidos por el usuario son específicos de la aplicación. Puede utilizarlos para correlacionar eventos importantes que ocurren en su aplicación con eventos de la Lista de eventos gráficos. Por ejemplo, puede crear grupos de eventos definidos por el usuario para organizar eventos relacionados, como los que presentan la interfaz de usuario, en grupos o jerarquías, para poder examinar la lista de eventos más fácilmente o crear marcadores cuando se dibujan ciertos tipos de objetos y así poder encontrar fácilmente sus eventos de gráficos en la lista de eventos.
@@ -99,17 +99,17 @@ Use la lista de eventos gráficos del Analizador de gráficos de Visual Studio p
 <!-- VERSIONLESS -->
 <a name="resource-history"></a>
 ## <a name="resource-history"></a>Historial de recursos
-Visual Studio 2017 y versiones posteriores contienen la **historial de recursos** ventana.  Seleccione el icono de inspección ![icono inspección](media/gfx_watch.png) junto a una entrada en el **lista de eventos** se abrirá la ventana la **historial de recursos** ventana se muestra a continuación:
+Visual Studio 2017 y versiones posteriores contienen la ventana **historial de recursos** .  Al seleccionar el icono de inspección ![watch icono ](media/gfx_watch.png) junto a una entrada en la ventana **lista de eventos** aparecerá la ventana **historial de recursos** que se muestra a continuación:
 
 ![Historial de recursos](media/gfx_diag_resource_history.png)
 
-Esta ventana le permite ver el historial del elemento seleccionado en la lista de eventos.  Sirve para seleccionar otros elementos para ver el historial de la lista desplegable en la parte superior.  La mitad superior de la ventana contiene los **eventos de configuración de marco**.  Estos son los eventos que pertenecen a la *crear* categoría de tipos y son las llamadas que suelen inicializaron y creación el recurso.  La parte inferior de la ventana de la mitad contiene el **eventos de fotogramas** sección.  Estos son la lectura normal y escriben los eventos que se producen durante el uso del recurso.
+Esta ventana le permite ver el historial del elemento seleccionado en la lista de eventos.  La lista desplegable de la parte superior se puede usar para seleccionar otros elementos para ver el historial de.  La mitad superior de la ventana contiene los **eventos de configuración del marco**.  Estos son los eventos que se encuentran en la categoría *Create* Type y son llamadas que normalmente inicializan y crean el recurso.  La mitad inferior de la ventana contiene la sección **eventos de marco** .  Estos son los eventos de lectura y escritura normales que se producen durante el uso del recurso.
 
 | Columna | Descripción |
 |-----------| - |
-| **Type** | Muestra el tipo de la entrada, normalmente *crear*, *lectura* y *escribir*. |
-| **Vista** | Muestra una vista en miniatura del recurso en ese momento.  Haga doble clic en la miniatura para abrir una vista de detalles del recurso en ese momento. |
-| **Event** | Se muestra la llamada de método que se produjeron que generó el evento.  Cualquier historial adicional en los elementos individuales se puede ver seleccionando el icono de inspección ![icono inspección](media/gfx_watch.png) en la línea adecuada.  Además, cualquier elemento que se dibuja en el texto azul, tales como `m_commandList` en la captura de pantalla anterior, se puede seleccionar para obtener más detalles. |
+| **ype** | Muestra el tipo de la entrada, normalmente *crear*, *leer* y *escribir*. |
+| **Vista** | Muestra una miniatura del recurso en ese momento en el tiempo.  Haga doble clic en la miniatura para abrir una vista de detalles del recurso en ese momento. |
+| **Event** | Muestra la llamada al método que ha generado el evento.  Para ver cualquier historial adicional en elementos individuales, seleccione el icono de inspección ![watch icono ](media/gfx_watch.png) en la línea adecuada.  Además, se puede seleccionar cualquier elemento que se dibuje en texto azul, como `m_commandList` en la captura de pantalla anterior, para obtener más detalles. |
 
 <!-- /VERSIONLESS -->
 

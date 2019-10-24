@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c86a0e995e3336bc217bcc9ad0e7ce28a6434478
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 2aee44ff3acc1d7423e19de8fd64be0e46d8e372
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62832518"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72742807"
 ---
 # <a name="idiareadexeatrvacallback"></a>IDiaReadExeAtRVACallback
-Permite que una aplicación cliente proporcionar los bytes de un archivo ejecutable especificado por una dirección virtual relativa.
+Permite que una aplicación cliente suministre bytes de un archivo ejecutable según lo especificado por una dirección virtual relativa.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -29,22 +29,22 @@ IDiaReadExeAtRVACallback : IUnknown
 ```
 
 ## <a name="methods-in-vtable-order"></a>Métodos en orden de Vtable
- La tabla siguiente muestran los métodos de `IDiaReadExeAtRVACallback`.
+ En la tabla siguiente se muestran los métodos de `IDiaReadExeAtRVACallback`.
 
 |Método|Descripción|
 |------------|-----------------|
-|[IDiaReadExeAtRVACallback::ReadExecutableAtRVA](../../debugger/debug-interface-access/idiareadexeatrvacallback-readexecutableatrva.md)|Lee el número especificado de bytes empezando en el especificado dirección virtual relativa (RVA) del archivo ejecutable.|
+|[IDiaReadExeAtRVACallback::ReadExecutableAtRVA](../../debugger/debug-interface-access/idiareadexeatrvacallback-readexecutableatrva.md)|Lee el número especificado de bytes a partir de la dirección virtual relativa (RVA) especificada del archivo ejecutable.|
 
 ## <a name="remarks"></a>Comentarios
- La aplicación cliente implementa esta interfaz para proporcionar los bytes del archivo ejecutable mediante una dirección virtual relativa en el archivo del ejecutable. Para usar un desplazamiento de archivo absoluta, implemente el [IDiaReadExeAtOffsetCallback](../../debugger/debug-interface-access/idiareadexeatoffsetcallback.md) interfaz.
+ La aplicación cliente implementa esta interfaz para proporcionar los bytes del ejecutable usando una dirección virtual relativa en el archivo del ejecutable. Para usar un desplazamiento de archivo absoluto, implemente la interfaz [IDiaReadExeAtOffsetCallback](../../debugger/debug-interface-access/idiareadexeatoffsetcallback.md) .
 
-## <a name="notes-for-callers"></a>Notas para los llamadores
- Este método es implementada por la aplicación cliente y pasa a la [Loaddataforexe](../../debugger/debug-interface-access/idiadatasource-loaddataforexe.md) método como un método alternativo para leer el archivo.
+## <a name="notes-for-callers"></a>Notas para llamadores
+ La aplicación cliente implementa este método y se pasa al método [IDiaDataSource:: loadDataForExe](../../debugger/debug-interface-access/idiadatasource-loaddataforexe.md) como un método alternativo para leer el archivo.
 
 ## <a name="requirements"></a>Requisitos
- Encabezado: Dia2.h
+ Encabezado: Dia2. h
 
- Biblioteca: diaguids.lib
+ Biblioteca: diaguids. lib
 
  DLL: msdia80.dll
 

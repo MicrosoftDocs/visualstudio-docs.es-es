@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f5dd923b9f7244bb42fdf8defb70b8ed5dc82ed0
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 0f4c3ab653c0a5540410d8e3e0b5426c4d0bcde5
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64825513"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72740086"
 ---
-# <a name="idiasymbolgetissafebuffers"></a>IDiaSymbol::get_isSafeBuffers
-Recupera una marca que especifica si se usa la directiva de preprocesador para un búfer seguro. Cuando utilice el [SymTagEnum (enumeración)](../../debugger/debug-interface-access/symtagenum.md) está establecido en `SymTagFunction`.
+# <a name="idiasymbolget_issafebuffers"></a>IDiaSymbol::get_isSafeBuffers
+Recupera una marca que especifica si se utiliza la Directiva de preprocesador para un búfer seguro. Se usa cuando la [enumeración symtagenum (](../../debugger/debug-interface-access/symtagenum.md) se establece en `SymTagFunction`.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -33,10 +33,10 @@ HRESULT get_isSafeBuffers( 
 #### <a name="parameters"></a>Parámetros
  `pRetVal`
 
-[out] Devuelve `TRUE` si el puntero usa una directiva de preprocesador para un búfer seguro; de lo contrario, devuelve `FALSE`.
+enuncia Devuelve `TRUE` si el puntero utiliza una directiva de preprocesador para un búfer seguro; de lo contrario, devuelve `FALSE`.
 
 ## <a name="return-value"></a>Valor devuelto
- Si es correcto, devuelve `S_OK`; en caso contrario, devuelve `S_FALSE` o un código de error.
+ Si se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve `S_FALSE` o un código de error.
 
 > [!NOTE]
 > Un valor devuelto de `S_FALSE` significa que la propiedad no está disponible para el símbolo.
@@ -44,9 +44,9 @@ HRESULT get_isSafeBuffers( 
 ## <a name="remarks"></a>Comentarios
 
 ## <a name="requirements"></a>Requisitos
- Encabezado: Dia2.h
+ Encabezado: Dia2. h
 
- Biblioteca: diaguids.lib
+ Biblioteca: diaguids. lib
 
  DLL: msdia100.dll
 

@@ -10,15 +10,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a353f9fc3605d1f2d26248b3ce907fb76b947c68
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 4eb6e1509a46c4e584e98403439188581df97c10
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "62836621"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72740176"
 ---
-# <a name="idiasymbolgetismultipleinheritance"></a>IDiaSymbol::get_isMultipleInheritance
-Especifica si el `this` puntero apunta a un miembro de datos con herencia múltiple.
+# <a name="idiasymbolget_ismultipleinheritance"></a>IDiaSymbol::get_isMultipleInheritance
+Especifica si el puntero `this` apunta a un miembro de datos con herencia múltiple.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -30,10 +30,10 @@ HRESULT get_isMultipleInheritance(
 #### <a name="parameters"></a>Parámetros
  `pRetVal`
 
-[out] Un puntero a un `BOOL` que especifica si el `this` puntero apunta a un miembro de datos con herencia múltiple.
+enuncia Puntero a un `BOOL` que especifica si el puntero de `this` apunta a un miembro de datos con herencia múltiple.
 
 ## <a name="return-value"></a>Valor devuelto
- Si es correcto, devuelve `S_OK`; en caso contrario, devuelve `S_FALSE` o un código de error.
+ Si se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve `S_FALSE` o un código de error.
 
 ## <a name="see-also"></a>Vea también
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

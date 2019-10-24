@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b1e3dd8c395c59bc3255c1c9ee55837466c1cef7
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 75a81ae23db90b06915e7090a9f2918be3ff18ae
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62828520"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72743405"
 ---
 # <a name="idiaimagedata"></a>IDiaImageData
-Expone los detalles de los desplazamientos de memoria y la ubicación bases del módulo o la imagen.
+Expone los detalles de la ubicación base y los desplazamientos de memoria del módulo o de la imagen.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -29,7 +29,7 @@ IDiaImageData : IUnknown
 ```
 
 ## <a name="methods-in-vtable-order"></a>Métodos en orden de Vtable
-La tabla siguiente muestran los métodos de `IDiaImageData`.
+En la tabla siguiente se muestran los métodos de `IDiaImageData`.
 
 |Método|Descripción|
 |------------|-----------------|
@@ -38,13 +38,13 @@ La tabla siguiente muestran los métodos de `IDiaImageData`.
 |[IDiaImageData::get_imageBase](../../debugger/debug-interface-access/idiaimagedata-get-imagebase.md)|Recupera la ubicación de memoria donde se debe basar la imagen.|
 
 ## <a name="remarks"></a>Comentarios
-Algunas secuencias de depuración (XDATA, PDATA) contienen copias de datos que también se almacenan en la imagen. Estos transmiten los datos se pueden consultar los objetos para el `IDiaImageData` interfaz. Consulte la sección "Notas para llamadores" en este tema para obtener más información.
+Algunas secuencias de depuración (XDATA, PDATA) contienen copias de los datos que también se almacenan en la imagen. Estos objetos de datos de flujo se pueden consultar para la interfaz `IDiaImageData`. Vea la sección "Notas para los autores de llamadas" de este tema para obtener más información.
 
-## <a name="notes-for-callers"></a>Notas para los llamadores
-Esta interfaz se obtiene mediante una llamada a `QueryInterface` en un [IDiaEnumDebugStreamData](../../debugger/debug-interface-access/idiaenumdebugstreamdata.md) objeto. Tenga en cuenta que no toda la depuración transmite la compatibilidad con la `IDiaImageData` interfaz. Por ejemplo, actualmente solo las secuencias de XDATA y PDATA admiten la `IDiaImageData` interfaz.
+## <a name="notes-for-callers"></a>Notas para llamadores
+Obtenga esta interfaz llamando a `QueryInterface` en un objeto [IDiaEnumDebugStreamData](../../debugger/debug-interface-access/idiaenumdebugstreamdata.md) . Tenga en cuenta que no todas las secuencias de depuración admiten la interfaz `IDiaImageData`. Por ejemplo, actualmente solo las secuencias XDATA y PDATA admiten la interfaz `IDiaImageData`.
 
 ## <a name="example"></a>Ejemplo
-Este ejemplo busca en todas las secuencias de depuración para cualquier secuencia que admita la `IDiaImageData` interfaz. Si se encuentra una secuencia de este tipo, se muestra información sobre ese flujo.
+En este ejemplo se buscan todas las secuencias de depuración de cualquier secuencia que admita la interfaz `IDiaImageData`. Si se encuentra este tipo de flujo, se muestra información sobre la secuencia.
 
 ```C++
 void ShowImageData(IDiaSession *pSession)
@@ -111,9 +111,9 @@ void ShowImageData(IDiaSession *pSession)
 ```
 
 ## <a name="requirements"></a>Requisitos
-Encabezado: Dia2.h
+Encabezado: Dia2. h
 
-Biblioteca: diaguids.lib
+Biblioteca: diaguids. lib
 
 DLL: msdia80.dll
 

@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 49502c0d693c7a309da9756f73c34df361b7d7bb
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ef38d5c4afcb065f7a095501e2bf5d95ee493789
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62832531"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72742728"
 ---
-# <a name="idiasectioncontribgetcomdat"></a>IDiaSectionContrib::get_comdat
-Recupera una marca que indica si la sección es un registro COMDAT.
+# <a name="idiasectioncontribget_comdat"></a>IDiaSectionContrib::get_comdat
+Recupera una marca que indica si la sección es un registro de COMDAT.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -33,13 +33,13 @@ HRESULT get_comdat ( 
 #### <a name="parameters"></a>Parámetros
  `pRetVal`
 
-[out] Devuelve `TRUE` si la sección es un registro COMDAT; de lo contrario, devuelve `FALSE`.
+enuncia Devuelve `TRUE` si la sección es un registro COMDAT; de lo contrario, devuelve `FALSE`.
 
 ## <a name="return-value"></a>Valor devuelto
  Si la operación se realiza correctamente, devuelve `S_OK`. Devuelve `S_FALSE` si no se admite esta propiedad. De lo contrario, devuelve un código de error.
 
 ## <a name="remarks"></a>Comentarios
- Un registro COMDAT es un formato de archivo de objeto común (COFF) que realiza funciones empaquetadas visibles para el vinculador.
+ Un registro COMDAT es un registro COFF (Common Object File Format) que hace que las funciones empaquetadas sean visibles para el vinculador.
 
 ## <a name="see-also"></a>Vea también
 - [IDiaSectionContrib](../../debugger/debug-interface-access/idiasectioncontrib.md)

@@ -11,12 +11,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fb1088dafea1c43e624d029de6b890c9b597b061
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: c00fdf25b29c8a122347cf5261dfcbcb07d9415d
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72658175"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72747454"
 ---
 # <a name="properties-of-geometry-shapes"></a>Propiedades de las formas geométricas
 Puede usar formas de geometría para especificar cómo se muestran las instancias de las clases de dominio en un lenguaje específico del dominio. Para obtener más información, consulte [cómo definir un lenguaje específico de dominio](../modeling/how-to-define-a-domain-specific-language.md). Para obtener más información sobre cómo usar estas propiedades, vea [personalizar y extender un lenguaje específico de dominio](../modeling/customizing-and-extending-a-domain-specific-language.md).
