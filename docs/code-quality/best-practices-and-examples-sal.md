@@ -7,12 +7,12 @@ ms.author: mblome
 manager: markl
 ms.workload:
 - multiple
-ms.openlocfilehash: ccb18a704c2e8a2c185d3751483736631b0bba68
-ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
+ms.openlocfilehash: eb95e793421ecede6d4583d8d7f4730eb56df1a0
+ms.sourcegitcommit: 58000baf528da220fdf7a999d8c407a4e86c1278
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72448646"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "72789780"
 ---
 # <a name="best-practices-and-examples-sal"></a>Procedimientos recomendados y ejemplos (SAL)
 Estas son algunas formas de sacar el máximo partido del lenguaje de anotación de código fuente (SAL) y evitar algunos problemas comunes.
@@ -188,15 +188,14 @@ La expresión `result` hace referencia a un valor posterior al estado que no est
 Si la función se ejecuta correctamente cuando el valor devuelto es distinto de cero, use `return != 0` como condición de éxito en lugar de `return == TRUE`. Distinto de cero no implica necesariamente la equivalencia con el valor real que proporciona el compilador para `TRUE`. El parámetro para `_Success_` es una expresión y las siguientes expresiones se evalúan como equivalentes: `return != 0`, `return != false`, `return != FALSE` y `return` sin parámetros o comparaciones.
 
 ```cpp
-
 // Incorrect
-_Success_(return == TRUE, _Acquires_lock_(*lpCriticalSection))
+_Success_(return == TRUE) _Acquires_lock_(*lpCriticalSection)
 BOOL WINAPI TryEnterCriticalSection(
   _Inout_ LPCRITICAL_SECTION lpCriticalSection
 );
 
 // Correct
-_Success_(return != 0, _Acquires_lock_(*lpCriticalSection))
+_Success_(return != 0) _Acquires_lock_(*lpCriticalSection)
 BOOL WINAPI TryEnterCriticalSection(
   _Inout_ LPCRITICAL_SECTION lpCriticalSection
 );
