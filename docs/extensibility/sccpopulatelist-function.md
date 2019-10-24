@@ -1,5 +1,5 @@
 ---
-title: SccPopulateList (función) | Documentos de Microsoft
+title: Función SccPopulateList | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -12,15 +12,15 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 64bcf6d443d1f96d650bde7fb92f69bbb12c5327
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 0a2cfdf5a617352d7ba0c2db00e7705343f1eb5e
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66353541"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72720868"
 ---
 # <a name="sccpopulatelist-function"></a>SccPopulateList (Función)
-Esta función actualiza una lista de archivos para un comando de control de código fuente concreto y proporciona el estado de control de código fuente en todos los archivos indicados.
+Esta función actualiza una lista de archivos para un comando de control de código fuente determinado y proporciona el estado del control de código fuente en todos los archivos especificados.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -40,38 +40,38 @@ SCCRTN SccPopulateList (
 #### <a name="parameters"></a>Parámetros
  pvContext
 
-[in] La estructura de contexto de complemento de control de origen.
+de Estructura de contexto del complemento de control de código fuente.
 
- nCommand
+ nlínea
 
-[in] El comando de control de código fuente que se aplicarán a todos los archivos en el `lpFileNames` matriz (consulte [código de comando](../extensibility/command-code-enumerator.md) para obtener una lista de comandos posibles).
+de Comando de control de código fuente que se aplicará a todos los archivos de la matriz de `lpFileNames` (vea el [código de comando](../extensibility/command-code-enumerator.md) para obtener una lista de los comandos posibles).
 
- nFiles
+ N archivos
 
-[in] Número de archivos en el `lpFileNames` matriz.
+de Número de archivos de la matriz de `lpFileNames`.
 
  lpFileNames
 
-[in] Una matriz de nombres de archivo que se sabe que el IDE.
+de Matriz de nombres de archivo que conoce el IDE.
 
  pfnPopulate
 
-[in] La función de devolución de llamada IDE al que llamar para agregar y quitar archivos (consulte [POPLISTFUNC](../extensibility/poplistfunc.md) para obtener más información).
+de Función de devolución de llamada IDE a la que se llama para agregar y quitar archivos (vea [POPLISTFUNC](../extensibility/poplistfunc.md) para obtener más información).
 
  pvCallerData
 
-[in] Valor que se pasa sin cambios a la función de devolución de llamada.
+de Valor que se va a pasar sin cambiar a la función de devolución de llamada.
 
  lpStatus
 
-[in, out] Una matriz para el complemento para devolver las marcas de estado para cada archivo de control de código fuente.
+[in, out] Una matriz para el complemento de control de código fuente para devolver las marcas de estado de cada archivo.
 
  Opciones
 
-[in] Indicadores de comandos (consulte la sección "PopulateList marca" de [marcadores de bits utilizados por comandos específicos](../extensibility/bitflags-used-by-specific-commands.md) para obtener más información).
+de Marcas de comandos (consulte la sección "PopulateList flag" de [marcadores que usan los comandos específicos](../extensibility/bitflags-used-by-specific-commands.md) para obtener más detalles).
 
 ## <a name="return-value"></a>Valor devuelto
- La implementación de complemento de control de origen de esta función debe devolver uno de los valores siguientes:
+ Se espera que la implementación del complemento de control de código fuente de esta función devuelva uno de los siguientes valores:
 
 |Valor|Descripción|
 |-----------|-----------------|
@@ -79,15 +79,15 @@ SCCRTN SccPopulateList (
 |SCC_E_NONSPECIFICERROR|Error no específico.|
 
 ## <a name="remarks"></a>Comentarios
- Esta función examina la lista de archivos para su estado actual. Usa el `pfnPopulate` función de devolución de llamada para notificar al llamador cuando un archivo no coincide con los criterios para la `nCommand`. Por ejemplo, si el comando es `SCC_COMMAND_CHECKIN` y no está desprotegido un archivo en la lista y, después, la devolución de llamada se usa para informar al autor de la llamada. En ocasiones, el complemento de control de código fuente puede encontrar otros archivos que podrían formar parte del comando y agregarlos. Esto permite, por ejemplo, un usuario de Visual Basic desproteger un archivo .bmp que utiliza su proyecto pero no aparece en el archivo de proyecto de Visual Basic. Un usuario elige el **obtener** comando en el IDE. El IDE mostrará una lista de todos los archivos que cree que puede obtener el usuario, pero antes de que se muestra la lista, el `SccPopulateList` función se invoca para asegurarse de que está actualizada la lista que se mostrará.
+ Esta función examina la lista de archivos en busca de su estado actual. Usa la función de devolución de llamada `pfnPopulate` para notificar al autor de la llamada cuando un archivo no coincide con los criterios de la `nCommand`. Por ejemplo, si el comando se `SCC_COMMAND_CHECKIN` y no se desprotege un archivo de la lista, la devolución de llamada se usa para informar al llamador. En ocasiones, el complemento de control de código fuente puede encontrar otros archivos que pueden formar parte del comando y agregarlos. Esto permite, por ejemplo, que un usuario de Visual Basic desproteja un archivo. bmp utilizado por su proyecto, pero que no aparece en el archivo de proyecto de Visual Basic. Un usuario elige el comando **Get** en el IDE. El IDE mostrará una lista de todos los archivos que considera que el usuario puede obtener, pero antes de que se muestre la lista, se llama a la función `SccPopulateList` para asegurarse de que la lista que se va a mostrar está actualizada.
 
 ## <a name="example"></a>Ejemplo
- El IDE compila una lista de archivos que cree que puede obtener el usuario. Antes de mostrar esta lista, llama a la `SccPopulateList` de función, el complemento de control de código fuente se proporciona la oportunidad de agregar y eliminar archivos de la lista. El complemento modifica la lista mediante una llamada a la función de devolución de llamada especificada (consulte [POPLISTFUNC](../extensibility/poplistfunc.md) para obtener más detalles).
+ El IDE crea una lista de los archivos que considera que el usuario puede obtener. Antes de que se muestre esta lista, llama a la función `SccPopulateList`, lo que permite que el complemento de control de código fuente tenga la oportunidad de agregar y eliminar archivos de la lista. El complemento modifica la lista mediante una llamada a la función de devolución de llamada dada (vea [POPLISTFUNC](../extensibility/poplistfunc.md) para obtener más detalles).
 
- El complemento sigue llamando al `pfnPopulate` función, que agrega y elimina los archivos, hasta que finalice y, a continuación, se devuelve desde el `SccPopulateList` función. El IDE, a continuación, puede mostrar su lista. El `lpStatus` matriz representa todos los archivos en la lista original pasada por el IDE. El complemento rellena el estado de todos estos archivos además de hacer que el uso de la función de devolución de llamada.
+ El complemento sigue llamando a la función `pfnPopulate`, que agrega y elimina archivos, hasta que termina y, a continuación, vuelve de la función `SccPopulateList`. Después, el IDE puede mostrar la lista. La matriz de `lpStatus` representa todos los archivos de la lista original pasados por el IDE. El complemento rellena el estado de todos estos archivos, además de hacer uso de la función de devolución de llamada.
 
 > [!NOTE]
-> Un complemento de control de código fuente siempre tiene la opción de simplemente devuelvan de inmediato de esta función, dejando la lista, ya que es. Si un complemento implementa esta función, puede indicar esto estableciendo la `SCC_CAP_POPULATELIST` indicador de capacidad en la primera llamada a la [SccInitialize](../extensibility/sccinitialize-function.md). De forma predeterminada, el complemento siempre debe asumir que todos los elementos que se pasan son archivos. Sin embargo, si el IDE se establece la `SCC_PL_DIR` marca en el `fOptions` parámetro, todos los elementos que se pasan tienen que considerarse directorios. El complemento debe agregar todos los archivos que pertenecen en los directorios. El IDE nunca pasarán una combinación de archivos y directorios.
+> Un complemento de control de código fuente siempre tiene la opción de devolver inmediatamente desde esta función, lo que sale de la lista. Si un complemento implementa esta función, puede indicarlo estableciendo el indicador de bits de capacidad de `SCC_CAP_POPULATELIST` en la primera llamada a [SccInitialize](../extensibility/sccinitialize-function.md). De forma predeterminada, el complemento siempre debe suponer que todos los elementos que se pasan son archivos. Sin embargo, si el IDE establece la marca `SCC_PL_DIR` en el parámetro `fOptions`, todos los elementos que se pasan se consideran directorios. El complemento debe agregar todos los archivos que pertenecen a los directorios. El IDE nunca pasará una mezcla de archivos y directorios.
 
 ## <a name="see-also"></a>Vea también
 - [Funciones de API de complemento de control de código fuente](../extensibility/source-control-plug-in-api-functions.md)
