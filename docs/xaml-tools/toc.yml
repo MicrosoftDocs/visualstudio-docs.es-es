@@ -107,8 +107,8 @@
     - name: Depuración de aplicaciones de WPF
       items:
         - name: Depurar WPF
-          href: ../debugger/debugging-wpf.md?toc=/visualstudio/xaml-tools/toc.json
+          href: ../debugger/debugging-wpf.md?toc=/visualstudio/xaml-tools/toc.json&bc=/visualstudio/xaml-tools/breadcrumb/toc.json
         - name: Usar el visualizador de árboles de WPF
-          href: ../debugger/how-to-use-the-wpf-tree-visualizer.md?toc=/visualstudio/xaml-tools/toc.json
+          href: ../debugger/how-to-use-the-wpf-tree-visualizer.md?toc=/visualstudio/xaml-tools/toc.json&bc=/visualstudio/xaml-tools/breadcrumb/toc.json
         - name: Mostrar información de seguimiento de WPF
-          href: ../debugger/how-to-display-wpf-trace-information.md?toc=/visualstudio/xaml-tools/toc.json
+          href: ../debugger/how-to-display-wpf-trace-information.md?toc=/visualstudio/xaml-tools/toc.json&bc=/visualstudio/xaml-tools/breadcrumb/toc.json

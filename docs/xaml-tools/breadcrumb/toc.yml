@@ -1,0 +1,22 @@
+- name: Docs
+  tocHref: /
+  topicHref: /
+  items:
+    - name: Programa para la mejora
+      tocHref: /visualstudio/
+      topicHref: /visualstudio/ide/
+      items:
+        - name: Herramientas XAML
+          tocHref: /visualstudio/xaml-tools/
+          topicHref: /visualstudio/xaml-tools/
+- name: Docs
+  tocHref: /
+  topicHref: /
+  items:
+    - name: Programa para la mejora
+      tocHref: /visualstudio/
+      topicHref: /visualstudio/ide/
+      items:
+        - name: Herramientas XAML
+          tocHref: /visualstudio/debugger/
+          topicHref: /visualstudio/xaml-tools/
