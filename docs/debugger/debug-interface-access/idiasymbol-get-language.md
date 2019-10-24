@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 97af3e1bcee89462b7060aaefa8f1fb452d2ab03
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: eb7a7fa688825ce341417f695766a37ddb00028b
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64825427"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72739999"
 ---
-# <a name="idiasymbolgetlanguage"></a>IDiaSymbol::get_language
-Recupera el idioma de origen.
+# <a name="idiasymbolget_language"></a>IDiaSymbol::get_language
+Recupera el idioma del origen.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -33,10 +33,10 @@ HRESULT get_language ( 
 #### <a name="parameters"></a>Parámetros
  `pRetVal`
 
-[out] Devuelve un valor de la [CV_CFL_LANG (enumeración)](../../debugger/debug-interface-access/cv-cfl-lang.md) enumeración que especifica el idioma de origen.
+enuncia Devuelve un valor de la enumeración de [enumeración CV_CFL_LANG](../../debugger/debug-interface-access/cv-cfl-lang.md) que especifica el lenguaje del origen.
 
 ## <a name="return-value"></a>Valor devuelto
- Si es correcto, devuelve `S_OK`; en caso contrario, devuelve `S_FALSE` o código de error.
+ Si se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve `S_FALSE` o el código de error.
 
 > [!NOTE]
 > Un valor devuelto de `S_FALSE` significa que la propiedad no está disponible para el símbolo.

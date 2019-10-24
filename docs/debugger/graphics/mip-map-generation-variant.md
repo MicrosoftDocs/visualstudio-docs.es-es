@@ -1,5 +1,5 @@
 ---
-title: Variante de generación MIP-map | Microsoft Docs
+title: Tipo de generación de mapa MIP | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 3b4b3583-0b01-4f5d-aacb-3f96d19111d9
@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 06017a3feb3faa667b469c0075e561b2104785b5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 422a68f4e33733aa2874c639f0dcc799cd3ec795
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62895604"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72734899"
 ---
 # <a name="mip-map-generation-variant"></a>Mip-map (Variante de generación)
 Habilita la asignación de MIP en las texturas que no son objetivos de presentación.
@@ -26,7 +26,7 @@ Para escenas 3D recomendamos la asignación de MIP cuando la memoria está dispo
 Si esta variante muestra un aumento significativo del rendimiento, indica que está utilizando texturas sin habilitar la asignación de MIP y, por lo tanto, no saca todo el partido de la caché de la textura.
 
 ## <a name="remarks"></a>Comentarios
-La generación de asignación de MIP se fuerza en todas las llamadas a `ID3D11Device::CreateTexture2D` que crean una textura de origen. En concreto, la generación de asignación de mip se fuerza cuando el objeto D3D11_TEXTURE2D_DESC pasado en `pDesc` describe un recurso de sombreador invariable, que es:
+La generación de asignación de MIP se fuerza en todas las llamadas a `ID3D11Device::CreateTexture2D` que crean una textura de origen. En concreto, la generación de mapas de MIP se fuerza cuando el objeto D3D11_TEXTURE2D_DESC pasado en `pDesc` describe un recurso de sombreador invariable. Es decir:
 
 - El miembro BindFlags solo tiene el conjunto de marcadores D3D11_BIND_SHADER_RESOURCE.
 
@@ -62,7 +62,7 @@ for (auto&& mip_level : initial_data)
 d3d_device->CreateTexture2D(&texture_description, initial_data.data(), &texture)
 ```
 
-Para crear una textura que tenga una cadena de MIP completa, establezca `D3D11_TEXTURE2D_DESC::MipLevels` en 0. El número de niveles de mip en una cadena de mip completa es floor(log2(n) + 1), donde n es la mayor dimensión de la textura.
+Para crear una textura que tenga una cadena de MIP completa, establezca `D3D11_TEXTURE2D_DESC::MipLevels` en 0. El número de niveles de MIP en una cadena de MIP completa es Floor (LOG2 (n) + 1), donde n es la dimensión más grande de la textura.
 
 Recuerde que cuando proporciona datos iniciales de `CreateTexture2D`, debe proporcionar un objeto D3D11_SUBRESOURCE_DATA para cada nivel de MIP.
 

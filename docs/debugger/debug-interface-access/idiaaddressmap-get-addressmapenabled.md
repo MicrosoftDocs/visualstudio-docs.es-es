@@ -12,14 +12,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7391010e409cc25a3151bb2abb806289c81288a1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b518cf3728279ea8db267d01867fa66ceae35b21
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62554420"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72745178"
 ---
-# <a name="idiaaddressmapgetaddressmapenabled"></a>IDiaAddressMap::get_addressMapEnabled
+# <a name="idiaaddressmapget_addressmapenabled"></a>IDiaAddressMap::get_addressMapEnabled
 Indica si se ha establecido un mapa de direcciones para una sesión determinada.
 
 ## <a name="syntax"></a>Sintaxis
@@ -33,15 +33,15 @@ HRESULT get_addressMapEnabled ( 
 #### <a name="parameters"></a>Parámetros
  pRetVal
 
-[out] Devuelve `TRUE` si está habilitada la asignación de dirección.
+enuncia Devuelve `TRUE` si está habilitada la asignación de direcciones.
 
 ## <a name="return-value"></a>Valor devuelto
- Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.
+ Si se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.
 
 ## <a name="remarks"></a>Comentarios
- Ejecutable procesadores posterior a la actualización a veces el archivo ejecutable. DIA contiene un mecanismo para admitir la traducción de símbolos para el nuevo diseño.
+ Los postprocesadores ejecutables a veces actualizan el archivo ejecutable. DIA contiene un mecanismo para admitir la traducción de símbolos al nuevo diseño.
 
- Las aplicaciones cliente pueden establecer la asignación de dirección para una sesión determinada mediante la obtención de la [IDiaAddressMap](../../debugger/debug-interface-access/idiaaddressmap.md) interfaz desde el [IDiaSession](../../debugger/debug-interface-access/idiasession.md) interfaz y una llamada a la [IDiaAddressMap::set_ addressMap](../../debugger/debug-interface-access/idiaaddressmap-set-addressmap.md) método seguido por una llamada a la [Put_addressmapenabled](../../debugger/debug-interface-access/idiaaddressmap-put-addressmapenabled.md) método. El `get_addressMapEnabled` método devuelve los resultados de llamar a la `put_addressMapEnabled` método.
+ Las aplicaciones cliente pueden establecer el mapa de direcciones para una sesión determinada obteniendo la interfaz [IDiaAddressMap](../../debugger/debug-interface-access/idiaaddressmap.md) de la interfaz [IDiaSession](../../debugger/debug-interface-access/idiasession.md) y llamando al método [IDiaAddressMap:: set_addressMap](../../debugger/debug-interface-access/idiaaddressmap-set-addressmap.md) seguido de una llamada a la [ IDiaAddressMap::p método ut_addressMapEnabled](../../debugger/debug-interface-access/idiaaddressmap-put-addressmapenabled.md) . El método `get_addressMapEnabled` devuelve el resultado de llamar al método `put_addressMapEnabled`.
 
 ## <a name="see-also"></a>Vea también
 - [IDiaAddressMap](../../debugger/debug-interface-access/idiaaddressmap.md)

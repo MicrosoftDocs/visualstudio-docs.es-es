@@ -12,14 +12,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a57c46bef62039241c7d0cc064753199440893e3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 4b8602cfefbd414561ebfbaee979e6af5711b879
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62839516"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72742541"
 ---
-# <a name="idiasectioncontribgetrelocationscrc"></a>IDiaSectionContrib::get_relocationsCrc
+# <a name="idiasectioncontribget_relocationscrc"></a>IDiaSectionContrib::get_relocationsCrc
 Recupera la comprobación de redundancia cíclica (CRC) de la información de reubicación de la sección.
 
 ## <a name="syntax"></a>Sintaxis
@@ -33,7 +33,7 @@ HRESULT get_relocationsCrc ( 
 #### <a name="parameters"></a>Parámetros
  `pRetVal`
 
-[out] Devuelve el CRC de la información de reubicación de la sección.
+enuncia Devuelve el CRC de la información de reubicación de la sección.
 
 ## <a name="return-value"></a>Valor devuelto
  Si la operación se realiza correctamente, devuelve `S_OK`. Devuelve `S_FALSE` si no se admite esta propiedad. De lo contrario, devuelve un código de error.

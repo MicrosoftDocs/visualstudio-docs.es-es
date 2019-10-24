@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 116ca69f890c37c84d4a31e2663d3c9ff1439f53
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 83e6adb3157b67b89ef2c05f59eaaf2c7084d9d8
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62833459"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72744015"
 ---
 # <a name="idiaenumstackframes"></a>IDiaEnumStackFrames
-Enumera los distintos marcos de pila disponible.
+Enumera los distintos marcos de pila disponibles.
 
 ## <a name="methods-in-vtable-order"></a>Métodos en orden de Vtable
 
@@ -31,11 +31,11 @@ Enumera los distintos marcos de pila disponible.
 
 ## <a name="remarks"></a>Comentarios
 
-## <a name="notes-for-callers"></a>Notas para los llamadores
-Esta interfaz se obtiene mediante una llamada a la [IDiaStackWalker::getEnumFrames](../../debugger/debug-interface-access/idiastackwalker-getenumframes.md) o [IDiaStackWalker::getEnumFrames2](../../debugger/debug-interface-access/idiastackwalker-getenumframes2.md) métodos.
+## <a name="notes-for-callers"></a>Notas para llamadores
+Obtenga esta interfaz mediante una llamada a los métodos [IDiaStackWalker:: getEnumFrames](../../debugger/debug-interface-access/idiastackwalker-getenumframes.md) o [IDiaStackWalker:: getEnumFrames2](../../debugger/debug-interface-access/idiastackwalker-getenumframes2.md) .
 
 ## <a name="example"></a>Ejemplo
-En este ejemplo se muestra cómo obtener y usar el `IDiaEnumStackFrames` interfaz. Consulte la [IDiaStackFrame](../../debugger/debug-interface-access/idiastackframe.md) interfaz para una implementación de la `PrintStackFrame` función.
+En este ejemplo se muestra cómo obtener y usar la interfaz `IDiaEnumStackFrames`. Vea la interfaz [IDiaStackFrame](../../debugger/debug-interface-access/idiastackframe.md) para obtener una implementación de la función `PrintStackFrame`.
 
 ```C++
 void DumpStackFrames(IDiaStackWalker*     pStackWalker,
@@ -63,9 +63,9 @@ void DumpStackFrames(IDiaStackWalker*     pStackWalker,
 ```
 
 ## <a name="requirements"></a>Requisitos
-Encabezado: Dia2.h
+Encabezado: Dia2. h
 
-Biblioteca: diaguids.lib
+Biblioteca: diaguids. lib
 
 DLL: msdia80.dll
 

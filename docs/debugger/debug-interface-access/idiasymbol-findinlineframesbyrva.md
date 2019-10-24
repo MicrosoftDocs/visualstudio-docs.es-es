@@ -10,15 +10,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d43863f44ec80dce283b1746be12f7a6f47cfe4f
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 3e174db264a7d8c3576054fcccf8da333d3e1e76
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "62838989"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72741163"
 ---
 # <a name="idiasymbolfindinlineframesbyrva"></a>IDiaSymbol::findInlineFramesByRVA
-Recupera una enumeración que permite que un cliente recorrer en iteración todos los marcos en línea en una dirección virtual relativa (RVA) especificado.
+Recupera una enumeración que permite a un cliente recorrer en iteración todos los marcos insertados en una dirección virtual relativa (RVA) especificada.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -31,14 +31,14 @@ HRESULT findInlineFramesByRVA (    DWORD             rva,
 #### <a name="parameters"></a>Parámetros
  `rva`
 
-[in] Especifica la dirección como una RVA.
+de Especifica la dirección como RVA.
 
  `ppResult`
 
-[out] Contiene un `IDiaEnumSymbols` objeto que contiene la lista de fotogramas que se recuperan.
+enuncia Contiene un objeto `IDiaEnumSymbols` que contiene la lista de fotogramas que se recuperan.
 
 ## <a name="return-value"></a>Valor devuelto
- Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.
+ Si se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.
 
 ## <a name="see-also"></a>Vea también
 - [IDiaSession](../../debugger/debug-interface-access/idiasession.md)

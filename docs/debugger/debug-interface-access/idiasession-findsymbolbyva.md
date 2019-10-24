@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ecb0db40f1179722b5ca315853dc3953a105b45b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: cf73c47234bb680ee107a2703e77b9259fb00040
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62827263"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72742016"
 ---
 # <a name="idiasessionfindsymbolbyva"></a>IDiaSession::findSymbolByVA
-Recupera un tipo de símbolo especificado que contiene, o más cercana a una dirección virtual especificada.
+Recupera un tipo de símbolo especificado que contiene o está más cerca de una dirección virtual especificada.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -35,18 +35,18 @@ HRESULT findSymbolByVA ( 
 #### <a name="parameters"></a>Parámetros
  `va`
 
-[in] Especifica la dirección virtual.
+de Especifica la dirección virtual.
 
  `symtag`
 
-[in] Tipo de símbolo que se encuentra. Los valores se toman de la [SymTagEnum (enumeración)](../../debugger/debug-interface-access/symtagenum.md) enumeración.
+de Tipo de símbolo que se va a buscar. Los valores se toman de la enumeración de [enumeración symtagenum (](../../debugger/debug-interface-access/symtagenum.md) .
 
  `ppSymbol`
 
-[out] Devuelve un [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) recupera el objeto que representa el símbolo.
+enuncia Devuelve un objeto [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) que representa el símbolo recuperado.
 
 ## <a name="return-value"></a>Valor devuelto
- Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.
+ Si se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.
 
 ## <a name="example"></a>Ejemplo
 

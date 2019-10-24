@@ -8,151 +8,151 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ef763f3142f41e63effa1f76bb6bebdc95f0ee3a
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 1dfafa26b314c35f81e5caf9c433b1b630d916f4
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66335345"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72747169"
 ---
-# <a name="layout-for-visual-studio"></a>Diseño para Visual Studio
-La mayoría de los cuadros de diálogo de Visual Studio son [diseño del cuadro de diálogo de utilidad](../../extensibility/ux-guidelines/layout-for-visual-studio.md#BKMK_UtilityDialogLayout), que son el unthemed dicho estándar de seguimiento de cuadros de diálogo [principios de diseño del cuadro de diálogo de Windows Desktop](/windows/desktop/uxguide/win-dialog-box). Cuando Visual Studio se desplaza al actualizar su interfaz de usuario, algunos de los cuadros de diálogo más destacados tienen un nuevo diseño que ellos establece experiencias como definición de producto. Estos [diseño del cuadro de diálogo con temas](../../extensibility/ux-guidelines/layout-for-visual-studio.md#BKMK_ThemedDialogLayout) tienen un aspecto con temas.
+# <a name="layout-for-visual-studio"></a>Diseño de Visual Studio
+La mayoría de los cuadros de diálogo de Visual Studio son el [diseño del cuadro de diálogo](../../extensibility/ux-guidelines/layout-for-visual-studio.md#BKMK_UtilityDialogLayout)de la utilidad, que son los cuadros de diálogo desvinculados que siguen los principios de diseño de diálogo estándar del escritorio de [Windows](/windows/desktop/uxguide/win-dialog-box). A medida que Visual Studio se mueve para actualizar su interfaz de usuario, algunos de los cuadros de diálogo más destacados tienen un nuevo diseño que los establece como experiencias de definición del producto. Estos [diseños de cuadro de diálogo](../../extensibility/ux-guidelines/layout-for-visual-studio.md#BKMK_ThemedDialogLayout) tienen una apariencia de los mismos.
 
-## <a name="BKMK_UtilityDialogLayout"></a> Diseño del cuadro de diálogo de utilidad
+## <a name="BKMK_UtilityDialogLayout"></a>Diseño del cuadro de diálogo de la utilidad
 
-- Todos los controles dentro de un cuadro de diálogo utilidad deben iniciar en la parte superior izquierda y fluyen hacia abajo.
+- Todos los controles de un cuadro de diálogo de la utilidad deben comenzar en la parte superior o izquierda y en el flujo hacia abajo.
 
-- Nunca center controles en un cuadro de diálogo para rellenar un área de gran tamaño.
+- No Centre nunca los controles en un cuadro de diálogo para rellenar un área grande.
 
-- Utilice la fuente del entorno para todo el texto de cuadro de diálogo. Al escribir una especificación visual, especifique la fuente del entorno en lugar de seleccionar una fuente concreta y el tamaño. Consulte [la fuente del entorno](../../extensibility/ux-guidelines/fonts-and-formatting-for-visual-studio.md#BKMK_TheEnvironmentFont).
+- Use la fuente del entorno para todo el texto del cuadro de diálogo. Al escribir una especificación visual, especifique la fuente del entorno en lugar de seleccionar una fuente y un tamaño determinados. Vea [la fuente del entorno](../../extensibility/ux-guidelines/fonts-and-formatting-for-visual-studio.md#BKMK_TheEnvironmentFont).
 
-- Espaciado de control coherente de uso y la ubicación para admitir el objetivo de calidad de artesano.
+- Utilice el espaciado y la ubicación de los controles coherentes para respaldar el objetivo de la calidad en el artesano.
 
-- Los cuadros de diálogo pueden ser más complejas de un mayor número de controles, un único juxtaposition de controles o ambos. Para estos casos complejos, permitir suficiente espacio entre las agrupaciones de control para proporcionar al usuario un flujo lógico a analizar.
+- Los cuadros de diálogo pueden ser más complejos desde un número mayor de controles, un juxtaposition único de controles o ambos. Para esas situaciones complejas, permita un espacio adecuado entre las agrupaciones de controles para proporcionar al usuario un flujo lógico para analizar.
 
-### <a name="utility-dialog-layout-examples"></a>Ejemplos de diseño del cuadro de diálogo Utilidad
+### <a name="utility-dialog-layout-examples"></a>Ejemplos de diseño de cuadro de diálogo de utilidad
  Todas las dimensiones se expresan como píxeles.
 
- ![Espaciado de cuadro de diálogo para etiquetas encima de los controles](../../extensibility/ux-guidelines/media/0801-a_utilityspacingabove.png "0801 a_UtilitySpacingAbove")
+ ![Espaciado del cuadro de diálogo para etiquetas por encima de los controles](../../extensibility/ux-guidelines/media/0801-a_utilityspacingabove.png "0801-a_UtilitySpacingAbove")
 
- **Figura 08.01-a: Directrices de espaciado para cuadros de diálogo de utilidad con etiquetas encima de los controles**
+ **Figura 08,01-a: instrucciones de espaciado para cuadros de diálogo de la utilidad con etiquetas por encima de los controles**
 
- ![Espaciado de cuadro de diálogo para etiquetas a la izquierda de los controles](../../extensibility/ux-guidelines/media/0801-b_utilityspacingleft.png "0801 b_UtilitySpacingLeft")
+ ![Espaciado del cuadro de diálogo para etiquetas a la izquierda de los controles](../../extensibility/ux-guidelines/media/0801-b_utilityspacingleft.png "0801-b_UtilitySpacingLeft")
 
- **Figura 08.01-b: Directrices de espaciado para cuadros de diálogo de utilidad con etiquetas a la izquierda de los controles**
+ **Figura 08,01-b: instrucciones de espaciado para cuadros de diálogo de la utilidad con etiquetas a la izquierda de los controles**
 
 ### <a name="layout-details"></a>Detalles de diseño
 
 #### <a name="margins"></a>Márgenes
 
-- Todos los cuadros de diálogo deben tener un borde de 12 píxeles en torno a todos los bordes.
+- Todos los cuadros de diálogo deben tener un borde de 12 píxeles alrededor de todos los bordes.
 
-- Los márgenes dentro de un marco de grupo deben ser 9 píxeles desde el borde del marco.
+- Los márgenes dentro de un marco de grupo deben ser de 9 píxeles desde el borde del marco.
 
-- Los márgenes dentro de un control de ficha deben ser 6 píxeles desde el borde del control de ficha.
+- Los márgenes de un control de ficha deben ser de 6 píxeles desde el borde del control de pestaña.
 
 #### <a name="command-buttons"></a>Botones de comando
 
-- Botones de comando funcionan en el marco de cuadro de diálogo, no en el contenido. Se debe colocarse en la parte inferior derecha y debe tener suficiente espacio de variables anterior para establecer los botones claramente separados.
+- Los botones de comando operan en el marco del cuadro de diálogo, no en el contenido. Deben colocarse en la parte inferior derecha y deben tener suficiente espacio variable antes para establecer los botones de forma distinta.
 
-- Si hay botones horizontales que funcionen dentro del cuadro de diálogo, la configuración del botón de comando alternativo es una pila vertical en la esquina superior derecha. Consulte [botones de comando interiores](../../extensibility/ux-guidelines/layout-for-visual-studio.md#BKMK_InteriorCommandButtons) a continuación.
+- Si hay botones horizontales que funcionan en el cuadro de diálogo, la configuración alternativa del botón de comando es una pila vertical en la esquina superior derecha. Vea [botones del comando interior](../../extensibility/ux-guidelines/layout-for-visual-studio.md#BKMK_InteriorCommandButtons) a continuación.
 
-- El espacio a la izquierda de los botones de comando (parte inferior izquierda/central del cuadro de diálogo) se considera parte de "banda" de los controles de la operación de cuadro de diálogo. Lo único que debe interfieren en la que el espacio es un vínculo de ayuda que es relevante para la tarea global o un cuadro de diálogo.
+- El espacio situado a la izquierda de los botones de comando (inferior izquierda/centro del cuadro de diálogo) se considera parte de la "banda" de los controles de operación de diálogo. Lo único que debe ser intrusión en ese espacio es un vínculo de ayuda que es relevante para la tarea o el cuadro de diálogo global.
 
-- Botones de comando deben ser de 75 x 23 píxeles.
+- Los botones de comando deben ser de 75x23 píxeles.
 
-- Botones de comando deben ser 6 píxeles.
+- Los botones de comando deben tener una separación de 6 píxeles.
 
-  ![Alineación de botón básica](../../extensibility/ux-guidelines/media/0801-c_buttonalign.png "0801 c_ButtonAlign")
+  ![Alineación de botón básica](../../extensibility/ux-guidelines/media/0801-c_buttonalign.png "0801-c_ButtonAlign")
 
-  **Figura 08.01-c: Alineación de botón básica**
+  **Figura 08,01-c: alineación básica del botón**
 
 #### <a name="labels"></a>Etiquetas
 
 - Alinear a la izquierda todas las etiquetas.
 
-- Para las etiquetas que se encuentran por encima de un control, debe alinear a la izquierda con precisión con el control debajo de él y la parte inferior de la etiqueta debe ser 5 píxeles por encima de la parte superior del otro control (por ejemplo, un cuadro combinado).
+- En el caso de las etiquetas que se encuentran sobre un control, se deben alinear a la izquierda con el control situado debajo y la parte inferior de la etiqueta debe ser 5 píxeles por encima de la parte superior del otro control (por ejemplo, un cuadro combinado).
 
-- Para las etiquetas que se encuentran a la izquierda de los controles, el ancho mínimo entre la etiqueta y el control de entrada es de 10 píxeles. Para alinear los cuadros de texto, cuadros combinados u otros controles, se debe establecer una segunda columna implícita.
+- Para las etiquetas que se encuentran a la izquierda de los controles, el ancho mínimo entre la etiqueta y el control de entrada es de 10 píxeles. Se debe establecer una segunda columna implícita para alinear los cuadros de texto, los cuadros combinados u otros controles.
 
-- Las etiquetas distinguen mayúsculas de la frase y seguidas de dos puntos. Consulte [estilo de texto](../../extensibility/ux-guidelines/fonts-and-formatting-for-visual-studio.md#BKMK_TextStyle).
+- Las etiquetas son mayúsculas y minúsculas y van seguidas de un signo de dos puntos. Vea [estilo de texto](../../extensibility/ux-guidelines/fonts-and-formatting-for-visual-studio.md#BKMK_TextStyle).
 
-#### <a name="distance-between-controls"></a>Distancia entre los controles
- Pila controles razonablemente. No hay ningún criterio absoluta para el espaciado entre controles apilados. El apriete entre los controles puede variar ligeramente entre los cuadros de diálogo. El espacio recomendado es 20 píxeles para los pares de etiqueta/control vertical y 9 píxeles para los pares de etiqueta/control horizontal. El espaciado mínimo de control para los pares horizontales es 6 píxeles.
+#### <a name="distance-between-controls"></a>Distancia entre controles
+ Controles de pila razonablemente. No hay ninguna instrucción absoluta para el espaciado entre los controles apilados. El grado de apriete entre los controles puede variar ligeramente entre los cuadros de diálogo. El espaciado recomendado es de 20 píxeles para los pares de control/etiqueta verticales y 9 píxeles para los pares de control/etiqueta horizontal. El espaciado de control mínimo para los pares horizontales es de 6 píxeles.
 
- ![Recomienda la distancia entre los controles](../../extensibility/ux-guidelines/media/0801-d_controldistance.png "0801 d_ControlDistance")
+ ![Distancia recomendada entre controles](../../extensibility/ux-guidelines/media/0801-d_controldistance.png "0801-d_ControlDistance")
 
- **Figura 08.01-d: Recomendaciones para la distancia entre los controles**
+ **Figura 08,01-d: recomendaciones para la distancia entre controles**
 
-#### <a name="control-indentation"></a>Sangría de control
- Cuando se anidan los controles, alinear controles internos horizontalmente, con el borde izquierdo del control anterior, normalmente la etiqueta.
+#### <a name="control-indentation"></a>Sangría de controles
+ Cuando los controles están anidados, alinea los controles internos horizontalmente con el borde izquierdo del control anterior, normalmente la etiqueta.
 
- ![Anidar la alineación del control](../../extensibility/ux-guidelines/media/0801-e_controlalign.png "0801 e_ControlAlign")
+ ![Alineación de controles anidados](../../extensibility/ux-guidelines/media/0801-e_controlalign.png "0801-e_ControlAlign")
 
- **Figura 08.01-e: Alineación de control anidadas**
+ **Figura 08,01-e: alineación de controles anidados**
 
 #### <a name="control-width"></a>Ancho del control
- El ancho de un cuadro de texto u otros controles similares debe ser no supere la entrada promedio del campo. La palabra inglesa promedio es de cinco caracteres. Por ejemplo, un cuadro de texto que se requiere un nombre de ruta de acceso larga debe ser siempre y cuando el diseño horizontal permite, mientras que una lista desplegable de nombres de plataforma solo deben tener una longitud que permite la entrada más larga.
+ El ancho de un cuadro de texto u otros controles similares no debe ser mayor que el promedio de entrada del campo. La palabra media inglesa es de cinco caracteres. Por ejemplo, un cuadro de texto que requiera un nombre de ruta de acceso largo debe tener el mismo tamaño que el diseño horizontal, mientras que una lista desplegable para los nombres de plataforma solo debe ser una longitud que permita la entrada más larga.
 
 #### <a name="helper-text"></a>Texto auxiliar
 
-- Un cuadro de diálogo puede mostrar texto de aplicación auxiliar que proporciona más información sobre la finalidad del cuadro de diálogo. Esto normalmente se encuentra en la parte superior y puede ser 1 o 2 oraciones.
+- Un cuadro de diálogo puede mostrar texto auxiliar que proporciona más información sobre el propósito del cuadro de diálogo. Normalmente se encuentra en la parte superior y puede ser de 1-2 oraciones.
 
-- La longitud de línea debe ser un ancho cómodo para un usuario analizar y leer. Un cuadro de diálogo medio debe ser no más de 550 píxeles de ancho.
+- La longitud de línea debe ser un ancho cómodo para que un usuario pueda analizar y leer. Un cuadro de diálogo medio no debe tener más de 550 píxeles de ancho.
 
-#### <a name="BKMK_InteriorCommandButtons"></a> Botones de comando interiores
- En los cuadros de diálogo más complejos, un control interno podría tener sus propios botones relacionados, lo que podrían afectar donde se encuentran los botones de confirmación del cuadro de diálogo.
+#### <a name="BKMK_InteriorCommandButtons"></a>Botones del comando interior
+ En cuadros de diálogo más complejos, un control interno podría tener sus propios botones relacionados, lo que podría afectar al lugar donde se encuentran los botones de confirmación del cuadro de diálogo.
 
-- Use una alineación vertical (columna) de interior botones cuando **Aceptar**/**cancelar** se orienta horizontalmente en la esquina inferior derecha.
+- Use una alineación vertical (columna) de botones interiores cuando el botón **aceptar** /**Cancelar** estén orientados horizontalmente en la esquina inferior derecha.
 
-- Use una alineación horizontal (fila) del interior botones cuando **Aceptar**/**cancelar** se orientan verticalmente en la esquina superior derecha. Esta situación es menos común.
+- Use una alineación horizontal (fila) de botones interiores cuando sea **correcto** /**Cancelar** estén orientados verticalmente en la esquina superior derecha. Esta situación es menos frecuente.
 
-- Tamaño de botón interiores debe tener como destino el tamaño de botón estándar de píxeles de 75 x 23, que coinciden con el tamaño de **Aceptar**/**cancelar** botones cuando sea posible. Si una etiqueta de botón hace que el botón superan el tamaño de botón estándar, los demás botones de dicho conjunto deben alinearse con ese ancho deseado.
+- El tamaño del botón interior debe tener como destino el tamaño de botón estándar de 75x23 píxeles, que coincide con el tamaño de los botones **aceptar** /**Cancelar** cuando sea posible. Si una etiqueta de botón hace que el botón supere el tamaño de botón estándar, los demás botones del conjunto deben alinearse con ese tamaño más amplio.
 
-  ![Botones horizontales Aceptar y cancelar](../../extensibility/ux-guidelines/media/0801-f_horizokcan.png "0801 f_HorizOKCan")
+  ![Botones horizontalmente aceptar y cancelar](../../extensibility/ux-guidelines/media/0801-f_horizokcan.png "0801-f_HorizOKCan")
 
-  **Figura 08.01-f: Botones verticales de interiores con horizontal Aceptar/Cancelar**
+  **Figura 08,01-f: botones interiores verticales con el botón Aceptar o cancelar horizontalmente**
 
-  ![Botones verticales Aceptar y cancelar](../../extensibility/ux-guidelines/media/0801-g_vertokcan.png "0801 g_VertOKCan")
+  ![Botones vertical para aceptar y cancelar](../../extensibility/ux-guidelines/media/0801-g_vertokcan.png "0801-g_VertOKCan")
 
-  **Figura 08.01-g: Botones horizontales de interiores con vertical Aceptar/Cancelar**
+  **Figura 08,01-g: botones interiores horizontales con aceptar o cancelar verticalmente**
 
 #### <a name="browse-button"></a>[Examinar...] botón
- **[Examinar...]**  botones que siguen un cuadro de texto deben detallar "Examinar..." en su totalidad, incluidos los puntos suspensivos. Si el espacio es ajustado o hay varios **[Examinar...]**  botones en la pantalla, el botón se pueden reducir a solo los puntos suspensivos.
+ **[Examinar...]** los botones que siguen a un cuadro de texto deben deletrear "examinar..." en su totalidad, incluidos los puntos suspensivos. Si el espacio es estrecho o hay varios botones **[examinar...]** en la pantalla, el botón se puede reducir solo a los puntos suspensivos.
 
-## <a name="BKMK_ThemedDialogLayout"></a> Diseño del cuadro de diálogo con temas
- Los cuadros de diálogo con temas en Visual Studio tienen una apariencia más clara y ofrecen más espacio en blanco. Tipografía proporciona más énfasis e intereses, ofreciendo interlineado más abierto y una variación de ponderaciones y los tamaños de fuente. Siempre que sea posible, barras de título y chrome se han reducido o eliminado. El diseño de estos cuadros de diálogo debe seguir este patrón básico:
+## <a name="BKMK_ThemedDialogLayout"></a>Diseño del cuadro de diálogo con la función
+ En Visual Studio, los cuadros de diálogo tienen una apariencia más clara y ofrecen más espacio en blanco. La tipografía proporciona más énfasis e interés, ofreciendo más interlineado y una variación de los tamaños y pesos de las fuentes. Siempre que sea posible, los cromos y las barras de título se han reducido o quitado. El diseño de estos cuadros de diálogo debe seguir este patrón básico:
 
 1. El fondo del cuadro de diálogo es blanco.
 
-2. Hay un borde de la regla 1 píxel en un valor intermedio color gris.
+2. Hay un borde de regla de 1 píxel en un gris de valor medio.
 
-3. El título del cuadro de diálogo ya no se encuentra en una barra de título, pero proporciona énfasis en un tamaño mayor de punto e interés visual. (Vea la sección de tamaño de fuente en [estilo de texto](../../extensibility/ux-guidelines/fonts-and-formatting-for-visual-studio.md#BKMK_TextStyle).)
+3. El título del cuadro de diálogo ya no se encuentra en una barra de título, pero proporciona interés visual y énfasis en un tamaño de punto mayor. (Vea la sección tamaño de fuente en [estilo de texto](../../extensibility/ux-guidelines/fonts-and-formatting-for-visual-studio.md#BKMK_TextStyle)).
 
-4. Las etiquetas junto con texto adicional, como una descripción, deben ser **fuente del entorno + negrita**.
+4. Las etiquetas Unidas con texto adicional, como una descripción, deben ser de **tipo entorno + negrita**.
 
-5. Interiores columnas se separan mediante una regla de 1 píxel en color gris claro.
+5. Las columnas interiores están separadas por una regla de 1 píxel en gris claro.
 
-6. Vínculos predeterminados no tengan ningún carácter de subrayado. Al mantener el mouse y los Estados presionados tienen un cambio de color más el carácter de subrayado.
+6. Los vínculos predeterminados no tienen un carácter de subrayado. Los Estados de mantener el mouse y presionado tienen un cambio de color más el carácter de subrayado.
 
-7. Confirmar botones (como **Aceptar**/**cancelar**) se colocan en la esquina inferior derecha.
+7. Los botones de confirmación (como **aceptar** /**Cancelar**) se encuentran en la esquina inferior derecha.
 
-### <a name="themed-dialog-layout-examples"></a>Ejemplos de diseño del cuadro de diálogo con temas
- ![Diseño del cuadro de diálogo con temas](../../extensibility/ux-guidelines/media/0801-h_themeddialog.png "0801 h_ThemedDialog")
+### <a name="themed-dialog-layout-examples"></a>Ejemplos de diseño de cuadro de diálogo con
+ ![Diseño del cuadro de diálogo con la función](../../extensibility/ux-guidelines/media/0801-h_themeddialog.png "0801-h_ThemedDialog")
 
- **Figura 08.01-h: Cuadro de diálogo con temas**
+ **Figura 08,01-h: cuadro de diálogo con los**
 
- ![Las dimensiones del cuadro de diálogo con temas](../../extensibility/ux-guidelines/media/0801-i_themeddialogdimensions.png "0801 i_ThemedDialogDimensions")
+ ![Dimensiones de cuadro de diálogo con el mismo](../../extensibility/ux-guidelines/media/0801-i_themeddialogdimensions.png "0801-i_ThemedDialogDimensions")
 
- **Figura 08.01-i: Cuadro de diálogo con temas - dimensiones**
+ **Figura 08,01-i: cuadro de diálogo con las dimensiones**
 
- ![Fuentes del cuadro de diálogo con temas](../../extensibility/ux-guidelines/media/0801-j_themeddialogfonts.png "0801 j_ThemedDialogFonts")
+ ![Fuentes de cuadro de diálogo con el mismo](../../extensibility/ux-guidelines/media/0801-j_themeddialogfonts.png "0801-j_ThemedDialogFonts")
 
- **Figura 08.01-j: Cuadro de diálogo con temas - fuentes**
+ **Figura 08,01-j: cuadro de diálogo con las mismas fuentes**
 
- ![Los colores del cuadro de diálogo con temas](../../extensibility/ux-guidelines/media/0801-k_themeddialogcolors.png "0801 k_ThemedDialogColors")
+ ![Colores de diálogo con la misma](../../extensibility/ux-guidelines/media/0801-k_themeddialogcolors.png "0801-k_ThemedDialogColors")
 
- **Figura 08.01-k: Cuadro de diálogo con temas - colores**
+ **Figura 08,01-k: colores de diálogo con la misma**
 
 ## <a name="see-also"></a>Vea también
 - [Patrones de aplicaciones para Visual Studio](../../extensibility/ux-guidelines/application-patterns-for-visual-studio.md)

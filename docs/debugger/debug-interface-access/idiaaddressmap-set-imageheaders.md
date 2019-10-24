@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 10835f422f8d2d116234eadd91da0d27c424f314
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ef17e1073c67ede75d075b18773129c287349c0d
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62554227"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72745011"
 ---
-# <a name="idiaaddressmapsetimageheaders"></a>IDiaAddressMap::set_imageHeaders
-Conjuntos de encabezados para habilitar la traducción de dirección virtual relativa de la imagen.
+# <a name="idiaaddressmapset_imageheaders"></a>IDiaAddressMap::set_imageHeaders
+Establece los encabezados de la imagen para habilitar la traducción de direcciones virtuales relativa.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -35,23 +35,23 @@ HRESULT set_imageHeaders ( 
 #### <a name="parameters"></a>Parámetros
  cbData
 
-[in] Número de bytes de datos de encabezado. Debe ser `n*sizeof(IMAGE_SECTION_HEADER)` donde `n` es el número de encabezados de sección en el archivo ejecutable.
+de Número de bytes de datos de encabezado. Debe ser `n*sizeof(IMAGE_SECTION_HEADER)` donde `n` es el número de encabezados de sección del archivo ejecutable.
 
  data[]
 
-[in] Una matriz de `IMAGE_SECTION_HEADER` estructuras que se usará como los encabezados de la imagen.
+de Matriz de estructuras `IMAGE_SECTION_HEADER` que se van a usar como encabezados de la imagen.
 
  originalHeaders
 
-[in] Establecido en `FALSE` si los encabezados de la imagen son de la nueva imagen, `TRUE` si reflejan la imagen original antes de una actualización. Normalmente, esto se establecería en `TRUE` sólo en combinación con llamadas a la [Set_addressmap](../../debugger/debug-interface-access/idiaaddressmap-set-addressmap.md) método.
+de Establezca en `FALSE` si los encabezados de la imagen son de la nueva imagen, `TRUE` si reflejan la imagen original antes de una actualización. Normalmente, esto se establecería en `TRUE` solo en combinación con llamadas al método [IDiaAddressMap:: set_addressMap](../../debugger/debug-interface-access/idiaaddressmap-set-addressmap.md) .
 
 ## <a name="return-value"></a>Valor devuelto
- Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.
+ Si se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.
 
 ## <a name="remarks"></a>Comentarios
- El `IMAGE_SECTION_HEADER` estructura se declara en Winnt.h y representa el formato de encabezado de sección de imagen del archivo ejecutable.
+ La estructura de `IMAGE_SECTION_HEADER` se declara en Winnt. h y representa el formato de encabezado de la sección de imagen del archivo ejecutable.
 
- Dependen de los cálculos de dirección virtual relativa del `IMAGE_SECTION_HEADER` valores. Normalmente, el DIA recupera desde el archivo de programa (.pdb) de la base de datos. Si faltan estos valores, el DIA no puede calcular direcciones virtuales relativas y el [Get_relativevirtualaddressenabled](../../debugger/debug-interface-access/idiaaddressmap-get-relativevirtualaddressenabled.md) devuelve del método `FALSE`. El cliente, a continuación, debe llamar a la [Put_relativevirtualaddressenabled](../../debugger/debug-interface-access/idiaaddressmap-put-relativevirtualaddressenabled.md) método para habilitar los cálculos de dirección virtual relativa después de proporcionar los encabezados que faltan de la imagen de la propia imagen.
+ Los cálculos de direcciones virtuales relativas dependen de los valores de `IMAGE_SECTION_HEADER`. Normalmente, el DIA los recupera del archivo de base de datos de programa (. pdb). Si faltan estos valores, DIA no puede calcular las direcciones virtuales relativas y el método [IDiaAddressMap:: get_relativeVirtualAddressEnabled](../../debugger/debug-interface-access/idiaaddressmap-get-relativevirtualaddressenabled.md) devuelve `FALSE`. Después, el cliente debe llamar al método [IDiaAddressMap::P ut_relativevirtualaddressenabled](../../debugger/debug-interface-access/idiaaddressmap-put-relativevirtualaddressenabled.md) para habilitar los cálculos de direcciones virtuales relativas después de proporcionar los encabezados de imagen que faltan de la propia imagen.
 
 ## <a name="see-also"></a>Vea también
 - [IDiaAddressMap](../../debugger/debug-interface-access/idiaaddressmap.md)

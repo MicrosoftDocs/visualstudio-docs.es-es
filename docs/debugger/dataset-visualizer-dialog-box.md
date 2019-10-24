@@ -1,5 +1,5 @@
 ---
-title: Cuadro de diálogo Visualizador del conjunto de datos | Documentos de Microsoft
+title: Cuadro de diálogo visualizador de DataSet | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e4086c473270befcf2213f003e516128b45c4227
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 1e215d4a52965b4e89bc3a01b15da57fc8919437
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62563551"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72745604"
 ---
 # <a name="dataset-visualizer-dialog-box"></a>Visualizador del conjunto de datos (cuadro de diálogo)
 El visualizador de conjuntos de datos permite ver el contenido de objetos DataSet, DataTable, DataView o DataViewManager. Puede tener acceso a este visualizador si hace clic en el icono de lupa que aparece junto al valor de uno de dichos objetos en una ventana de variables del depurador o en una información sobre datos.
@@ -32,7 +32,7 @@ El visualizador de conjuntos de datos permite ver el contenido de objetos DataSe
  En este visualizador puede realizar cambios en los objetos. Los cambios se guardarán cuando confirme una fila.
 
 ## <a name="uielement-list"></a>Lista de UIElement
- Tabla utilice este cuadro de lista desplegable para seleccionar una tabla del conjunto de datos que desea visualizar.
+ Tabla use este cuadro de lista desplegable para seleccionar una tabla del conjunto de elementos que desea visualizar.
 
 ## <a name="see-also"></a>Vea también
 

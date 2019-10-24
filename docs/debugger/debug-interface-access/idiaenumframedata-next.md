@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 55875d4ad964b958bf2fb38d259e7d4d68909cb5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 6fe478e503ed6e16ee570f309f91434c658ebd27
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62830110"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72744600"
 ---
 # <a name="idiaenumframedatanext"></a>IDiaEnumFrameData::Next
-Recupera un número especificado de elementos de datos de marco de la secuencia de enumeración.
+Recupera un número especificado de elementos de datos de marco en la secuencia de enumeración.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -35,15 +35,15 @@ HRESULT Next ( 
 #### <a name="parameters"></a>Parámetros
  celt
 
-[in] El número de elementos de datos de marco en el enumerador que se va a recuperar.
+de El número de elementos de datos de marco en el enumerador que se va a recuperar.
 
  rgelt
 
-[out] Una matriz de [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md) objetos que se rellena con los elementos de datos del marco solicitado.
+enuncia Matriz de objetos [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md) que se va a rellenar con los elementos de datos de marco solicitados.
 
  pceltFetched
 
-[out] Devuelve el número de elementos de datos del marco en el enumerador capturado.
+enuncia Devuelve el número de elementos de datos de marco en el enumerador capturado.
 
 ## <a name="return-value"></a>Valor devuelto
  Si la operación se realiza correctamente, devuelve `S_OK`. Devuelve `S_FALSE` si no hay más registros. De lo contrario, devuelve un código de error.

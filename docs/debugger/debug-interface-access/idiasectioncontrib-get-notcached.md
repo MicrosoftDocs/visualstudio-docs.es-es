@@ -12,14 +12,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: dd58933146cea4a953c0c4290cebb0d12af8f199
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 210f923c894c423fbdba75b1deb503ea83068a0d
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62839672"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72742595"
 ---
-# <a name="idiasectioncontribgetnotcached"></a>IDiaSectionContrib::get_notCached
+# <a name="idiasectioncontribget_notcached"></a>IDiaSectionContrib::get_notCached
 Recupera una marca que indica si la sección no se puede almacenar en caché.
 
 ## <a name="syntax"></a>Sintaxis
@@ -33,7 +33,7 @@ HRESULT get_notCached ( 
 #### <a name="parameters"></a>Parámetros
  `pRetVal`
 
-[out] Devuelve `TRUE` si no se puede almacenar en caché de la sección; en caso contrario, devuelve `FALSE`.
+enuncia Devuelve `TRUE` si la sección no se puede almacenar en caché; de lo contrario, devuelve `FALSE`.
 
 ## <a name="return-value"></a>Valor devuelto
  Si la operación se realiza correctamente, devuelve `S_OK`. Devuelve `S_FALSE` si no se admite esta propiedad. De lo contrario, devuelve un código de error.

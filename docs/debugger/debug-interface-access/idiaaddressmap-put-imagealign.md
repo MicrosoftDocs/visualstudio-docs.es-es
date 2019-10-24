@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4e07bdd71300ed485862a4a95f1f9cbc06b32772
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 2b1a6bf037dc87d84fab21622571158fb0682f60
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63402645"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72745048"
 ---
-# <a name="idiaaddressmapputimagealign"></a>IDiaAddressMap::put_imageAlign
-Establece la alineación de imagen.
+# <a name="idiaaddressmapput_imagealign"></a>IDiaAddressMap::put_imageAlign
+Establece la alineación de la imagen.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -33,18 +33,18 @@ HRESULT put_imageAlign ( 
 #### <a name="parameters"></a>Parámetros
  NewVal
 
-[in] El nuevo valor de alineación de imagen para el ejecutable.
+de Nuevo valor de alineación de imagen para el ejecutable.
 
 ## <a name="return-value"></a>Valor devuelto
- Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.
+ Si se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.
 
 ## <a name="remarks"></a>Comentarios
- Imágenes (cargar archivos ejecutables) se alinean en límites de memoria especificada. Esta alineación puede verse afectada por la arquitectura del sistema actual y por las opciones de tiempo de compilación y vinculación. Alineación de la imagen está siempre en límites de bytes. Los valores de alineación de imagen siguientes son válidos: límites de 1, 2, 4, 8, 16, 32 y 64 bytes.
+ Las imágenes (ejecutables cargados) se alinean con los límites de memoria especificados. Esta alineación puede verse afectada por la arquitectura actual del sistema y las opciones de tiempo de compilación y de vínculo. La alineación de la imagen siempre está en los límites de bytes. Los siguientes valores de alineación de imagen son válidos: 1, 2, 4, 8, 16, 32 y 64 bytes.
 
- La alineación de imagen actual se puede recuperar con una llamada a la [Get_imagealign](../../debugger/debug-interface-access/idiaaddressmap-get-imagealign.md) método.
+ La alineación de la imagen actual se puede recuperar con una llamada al método [IDiaAddressMap:: get_imageAlign](../../debugger/debug-interface-access/idiaaddressmap-get-imagealign.md) .
 
 > [!NOTE]
-> La imagen ya está cargada en el momento en que puede llamar a este método. El `put_imageAlign` método se utiliza normalmente cuando la imagen se ha movido o cambiado y se requiere una alineación de nuevo.
+> La imagen ya se ha cargado en el momento en que se puede llamar a este método. El método `put_imageAlign` se utiliza normalmente cuando la imagen se ha cambiado o se ha cambiado y se requiere una nueva alineación.
 
 ## <a name="see-also"></a>Vea también
 - [IDiaAddressMap](../../debugger/debug-interface-access/idiaaddressmap.md)

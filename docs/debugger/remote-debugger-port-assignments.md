@@ -1,5 +1,5 @@
 ---
-title: Las asignaciones de puerto del depurador remoto | Microsoft Docs
+title: Asignaciones de puerto del Depurador remoto | Microsoft Docs
 ms.custom: ''
 ms.date: 05/18/2018
 ms.topic: reference
@@ -9,12 +9,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 672d54b29e6de9302e88b1b95b4117783b8a0113
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: cf3d3ce704d517224452731c52a891ac2263f738
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62903049"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72730242"
 ---
 # <a name="remote-debugger-port-assignments"></a>Asignaciones de puertos del depurador remoto
 El depurador remoto de Visual Studio se puede ejecutar como una aplicación o como un servicio en segundo plano. Cuando se ejecuta como una aplicación, usa un puerto asignado de forma predeterminada como se muestra a continuación:
@@ -42,19 +42,19 @@ El depurador remoto de Visual Studio se puede ejecutar como una aplicación o co
 
  En la ventana del depurador remoto, haga clic en **Herramientas > Opciones** y establezca el número de puerto TCP/IP.
 
- En la línea de comandos, inicie el depurador remoto con el conmutador **/port**: **msvsmon /port\< número de puerto>**.
+ En la línea de comandos, inicie el depurador remoto con el conmutador **/port**: **msvsmon /port\< número de puerto>** .
 
  Puede encontrar información sobre todos los conmutadores de la línea de comandos del depurador remoto en la ayuda de depuración remota (presione **F1** o haga clic en **Ayuda <Uso** en la ventana del depurador remoto).
 
 ## <a name="the-remote-debugger-port-on-64-bit-operating-systems"></a>Puerto del depurador remoto en sistemas operativos de 64 bits
 ::: moniker range=">=vs-2019"
- Cuando se inicia la versión de 64 bits del depurador remoto, usa el método main (4024) de puerto de forma predeterminada.  Si depura un proceso de 32 bits, la versión de 64 bits del depurador remoto inicia una versión de 32 bits del depurador remoto en el puerto 4025 (el número de puerto principal incrementado en 1). Si ejecuta el depurador remoto de 32 bits, se usa el puerto 4024 y no el 4025.
+ Cuando se inicia la versión de 64 bits del Depurador remoto, usa de forma predeterminada el puerto principal (4024).  Si depura un proceso de 32 bits, la versión de 64 bits del Depurador remoto inicia una versión de 32 bits del Depurador remoto en el puerto 4025 (el número de puerto principal incrementado en 1). Si ejecuta el depurador remoto de 32 bits, se usa el puerto 4024 y no el 4025.
 ::: moniker-end
 ::: moniker range="vs-2017"
- Cuando se inicia la versión de 64 bits del depurador remoto, usa el método main (4022) de puerto de forma predeterminada.  Si depura un proceso de 32 bits, la versión de 64 bits del depurador remoto inicia una versión de 32 bits del depurador remoto en el puerto 4023 (el número de puerto principal incrementado en 1). Si ejecuta el depurador remoto de 32 bits, usa el puerto 4022 y no usa el puerto 4023.
+ Cuando se inicia la versión de 64 bits del Depurador remoto, usa de forma predeterminada el puerto principal (4022).  Si depura un proceso de 32 bits, la versión de 64 bits del Depurador remoto inicia una versión de 32 bits del Depurador remoto en el puerto 4023 (el número de puerto principal incrementado en 1). Si ejecuta el depurador remoto de 32 bits, usa el puerto 4022 y no usa el puerto 4023.
 :::moniker-end
 
- Este puerto es configurable desde la línea de comandos: **Msvsmon /wow64port \<número de puerto >**.
+ Este puerto se puede configurar desde la línea de comandos: **Msvsmon /wow64port \<número de puerto>** .
 
 ## <a name="the-discovery-port"></a>Puerto de detección
  UDP 3702 se usa para buscar instancias en ejecución del depurador remoto en la red (por ejemplo, el cuadro de diálogo **Buscar** en el cuadro de diálogo **Asociar al proceso** ). Se usa solo para detectar una máquina que ejecute el depurador remoto, por lo que es opcional si tiene alguna otra manera de conocer el nombre del equipo o la dirección IP del equipo de destino. Se trata de un puerto estándar para la detección, por lo que no es posible configurar el número de puerto.

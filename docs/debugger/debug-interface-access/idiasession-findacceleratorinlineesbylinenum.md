@@ -10,15 +10,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 12a2f23c42de99e0ea9a9d6c50e2d9aabed589d4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 6d08168a83b9bb635fd6a0e22dc22f91a454001f
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62839464"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72742323"
 ---
 # <a name="idiasessionfindacceleratorinlineesbylinenum"></a>IDiaSession::findAcceleratorInlineesByLinenum
-Devuelve una enumeración de los símbolos para los marcos flotantes que corresponden a la ubicación de origen especificado.
+Devuelve una enumeración de símbolos para los marcos insertados que corresponden a la ubicación de origen especificada.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -35,26 +35,26 @@ HRESULT findAcceleratorInlineeLinesByName ( 
 #### <a name="parameters"></a>Parámetros
  `parent`
 
-[in] Un `IDiaSymbol` que corresponde a la función de código auxiliar del acelerador que debe buscar.
+de @No__t_0 que corresponde a la función de código auxiliar del acelerador que se debe buscar.
 
  `file`
 
-[in] El `IDiaSourceFile` de la ubicación de origen.
+de @No__t_0 de la ubicación de origen.
 
  `linenum`
 
-[in] El número de línea de la ubicación de origen.
+de Número de línea de la ubicación de origen.
 
  `colnum`
 
-[in] El número de columna de la ubicación de origen.
+de El número de columna de la ubicación de origen.
 
  `ppResult`
 
-[out] Un puntero a un `IDiaEnumLineNumbers` puntero de interfaz que se inicializa con el resultado.
+enuncia Puntero a un puntero de interfaz de `IDiaEnumLineNumbers` que se inicializa con el resultado.
 
 ## <a name="return-value"></a>Valor devuelto
- Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.
+ Si se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.
 
 ## <a name="see-also"></a>Vea también
 - [IDiaSession](../../debugger/debug-interface-access/idiasession.md)

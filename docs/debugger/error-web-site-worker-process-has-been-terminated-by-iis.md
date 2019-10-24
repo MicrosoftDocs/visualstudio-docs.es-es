@@ -1,5 +1,5 @@
 ---
-title: 'Error: IIS ha interrumpido el proceso de trabajo del sitio Web | Microsoft Docs'
+title: 'Error: IIS ha finalizado el proceso de trabajo del sitio web | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: troubleshooting
 f1_keywords:
@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2d89eabec0c199b1b8df7eeb78d0e629d4a70b2e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 3231c8ba2835fb535d538e29ef7df7ea3d1c4a8a
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62850004"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72736353"
 ---
 # <a name="error-web-site-worker-process-has-been-terminated-by-iis"></a>Error: IIS ha interrumpido el proceso de trabajo del sitio web
 El depurador detuvo la ejecución del código en el sitio web. Esto hizo que Internet Information Services (IIS) creyera que el proceso de trabajo había dejado de responder. Por consiguiente, IIS finalizaron el proceso de trabajo.
@@ -34,7 +34,7 @@ El depurador detuvo la ejecución del código en el sitio web. Esto hizo que Int
 
    2. En el **Panel de control**, elija **Cambiar a Vista clásica** si es necesario y, a continuación, haga doble clic en **Herramientas administrativas**.
 
-2. En la ventana **Herramientas administrativas**, haga doble clic en **Administrador de Internet Information Services (IIS)**.
+2. En la ventana **Herramientas administrativas**, haga doble clic en **Administrador de Internet Information Services (IIS)** .
 
     Se abrirá el Administrador de IIS.
 

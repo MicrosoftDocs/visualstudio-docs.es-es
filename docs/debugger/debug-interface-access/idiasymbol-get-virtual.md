@@ -12,14 +12,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d7c4a4322b13f49abc31f772316ffb751d5d0d77
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 8747fb97249e5bba62d0b79a1a6ac0a24728826e
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64791742"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72738915"
 ---
-# <a name="idiasymbolgetvirtual"></a>IDiaSymbol::get_virtual
+# <a name="idiasymbolget_virtual"></a>IDiaSymbol::get_virtual
 Recupera una marca que especifica si la función es virtual.
 
 ## <a name="syntax"></a>Sintaxis
@@ -33,10 +33,10 @@ HRESULT get_virtual ( 
 #### <a name="parameters"></a>Parámetros
  `pRetVal`
 
-[out] Devuelve `TRUE` si la función es virtual; en caso contrario, devuelve `FALSE`.
+enuncia Devuelve `TRUE` si la función es virtual; de lo contrario, devuelve `FALSE`.
 
 ## <a name="return-value"></a>Valor devuelto
- Si es correcto, devuelve `S_OK`; en caso contrario, devuelve `S_FALSE` o un código de error.
+ Si se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve `S_FALSE` o un código de error.
 
 > [!NOTE]
 > Un valor devuelto de `S_FALSE` significa que la propiedad no está disponible para el símbolo.

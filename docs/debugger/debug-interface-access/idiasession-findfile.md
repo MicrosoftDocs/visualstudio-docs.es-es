@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 729b3c323ce2128b18af516ecbffb7b5157f0274
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d9751127007b4e7823cf6d2ae35ed2fe80cb83b8
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62839373"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72742279"
 ---
 # <a name="idiasessionfindfile"></a>IDiaSession::findFile
-Recupera los archivos de origen por la operación de compilación y el nombre.
+Recupera los archivos de código fuente mediante la operación de compilación y nombre.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -36,22 +36,22 @@ HRESULT findFile ( 
 #### <a name="parameters"></a>Parámetros
  `pCompiland`
 
-[in] Un [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) objeto que representa la operación de compilación que se usará como un contexto para la búsqueda. Establezca este parámetro en `NULL` para buscar archivos de código fuente en todos los elementos.
+de Objeto [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) que representa la operación de compilación que se va a usar como contexto de la búsqueda. Establezca este parámetro en `NULL` para buscar archivos de código fuente en todos los compilandos.
 
  `name`
 
-[in] Especifica el nombre del archivo de origen que se va a recuperar. Establezca este parámetro en `NULL` para todos los archivos que desea recuperar del origen.
+de Especifica el nombre del archivo de código fuente que se va a recuperar. Establezca este parámetro en `NULL` para todos los archivos de origen que se van a recuperar.
 
  `option`
 
-[in] Especifica las opciones de comparación que se aplica a la búsqueda de nombre. Los valores de la [NameSearchOptions (enumeración)](../../debugger/debug-interface-access/namesearchoptions.md) enumeración puede usarse por sí solo o en combinación.
+de Especifica las opciones de comparación aplicadas a la búsqueda de nombres. Los valores de la enumeración [namesearchoptions (](../../debugger/debug-interface-access/namesearchoptions.md) se pueden usar solos o en combinación.
 
  `ppResult`
 
-[out] Devuelve un [IDiaEnumSourceFiles](../../debugger/debug-interface-access/idiaenumsourcefiles.md) recupera el objeto que contiene una lista de los archivos de origen.
+enuncia Devuelve un objeto [IDiaEnumSourceFiles](../../debugger/debug-interface-access/idiaenumsourcefiles.md) que contiene una lista de los archivos de código fuente recuperados.
 
 ## <a name="return-value"></a>Valor devuelto
- Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.
+ Si se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.
 
 ## <a name="example"></a>Ejemplo
 

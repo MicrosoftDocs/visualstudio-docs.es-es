@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 24232878452082dd1769c9bc9f1cd22d081968f2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 48e4da48699bc9797c7ccbfb0f21bb0b2007c752
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62832696"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72743712"
 ---
 # <a name="idiaenumtablesskip"></a>IDiaEnumTables::Skip
-Omite un número especificado de las tablas de una secuencia de enumeración.
+Omite un número especificado de tablas en una secuencia de enumeración.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -33,10 +33,10 @@ HRESULT Skip ( 
 #### <a name="parameters"></a>Parámetros
  `celt`
 
-[in] El número de tablas en la secuencia de enumeración que se omitirán.
+de Número de tablas de la secuencia de enumeración que se van a omitir.
 
 ## <a name="return-value"></a>Valor devuelto
- Si es correcto, devuelve `S_OK`; en caso contrario, devuelve `S_FALSE` si no hay ningún más tablas que se omitirán.
+ Si se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve `S_FALSE` si no hay más tablas que omitir.
 
 ## <a name="see-also"></a>Vea también
 - [IDiaEnumTables](../../debugger/debug-interface-access/idiaenumtables.md)

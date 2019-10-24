@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f16040408def290536ac5dadfec77ade9577c821
-ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
+ms.openlocfilehash: dc2abb054a0e09d0715e708cc4d1d6fcbed476e0
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "72568924"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72728675"
 ---
 # <a name="tell-the-debugger-what-to-show-using-the-debuggerdisplay-attribute-c-visual-basic-f-ccli"></a>Indicar al depurador qué Mostrar mediante el atributo DebuggerDisplay (C#, Visual Basic, F#, C++/CLI)
 

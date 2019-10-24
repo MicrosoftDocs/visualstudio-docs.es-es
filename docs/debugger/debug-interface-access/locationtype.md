@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: faff61833cb130902efbd64d60a16f74c507a3e2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: dc40cc6cc8e821db7c28a4647e36e7bad241b29f
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62834135"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72738649"
 ---
 # <a name="locationtype"></a>LocationType
 Indica el tipo de información de ubicación contenida en un símbolo.
@@ -42,37 +42,37 @@ enum LocationType {
 ```
 
 ## <a name="elements"></a>Elementos
-`LocIsNull` Información de ubicación no está disponible.
+`LocIsNull` la información de ubicación no está disponible.
 
-`LocIsStatic` Ubicación es estática.
+`LocIsStatic` ubicación es estática.
 
-`LocIsTLS` Ubicación está en almacenamiento local de subprocesos.
+`LocIsTLS` ubicación está en el almacenamiento local del subproceso.
 
-`LocIsRegRel` Ubicación es relativa del registro.
+`LocIsRegRel` ubicación es el registro relativo.
 
-`LocIsThisRel` Ubicación es `this`-relativa.
+`LocIsThisRel` ubicación `this` relativa.
 
-`LocIsEnregistered` Ubicación está en un registro.
+`LocIsEnregistered` ubicación se encuentra en un registro.
 
-`LocIsBitField` Ubicación está en un campo de bits.
+`LocIsBitField` ubicación se encuentra en un campo de bits.
 
-`LocIsSlot` La ubicación es una ranura de lenguaje intermedio de Microsoft (MSIL).
+`LocIsSlot` ubicación es una ranura del lenguaje intermedio de Microsoft (MSIL).
 
-`LocIsIlRel` Ubicación es relativa a MSIL.
+`LocIsIlRel` ubicación es relativa a MSIL.
 
-`LocInMetaData` Ubicación está en los metadatos.
+`LocInMetaData` ubicación está en los metadatos.
 
-`LocIsConstant` Ubicación está en un valor constante.
+`LocIsConstant` ubicación se encuentra en un valor constante.
 
-`LocTypeMax` El número de tipos de ubicación de esta enumeración.
+`LocTypeMax` el número de tipos de ubicación en esta enumeración.
 
 ## <a name="remarks"></a>Comentarios
-Las propiedades disponibles para el [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) interfaz dependen de la ubicación del símbolo en el archivo de imagen. Para obtener más información, consulte [ubicaciones de símbolos](../../debugger/debug-interface-access/symbol-locations.md).
+Las propiedades disponibles para la interfaz [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) dependen de la ubicación del símbolo en el archivo de imagen. Para obtener más información, vea [ubicaciones de símbolos](../../debugger/debug-interface-access/symbol-locations.md).
 
-Los valores de esta enumeración se devuelven mediante una llamada a la [Get_locationtype](../../debugger/debug-interface-access/idiasymbol-get-locationtype.md) método.
+Los valores de esta enumeración son devueltos por una llamada al método [IDiaSymbol:: get_locationType](../../debugger/debug-interface-access/idiasymbol-get-locationtype.md) .
 
 ## <a name="requirements"></a>Requisitos
-Encabezado: cvconst.h
+Encabezado: cvconst. h
 
 ## <a name="see-also"></a>Vea también
 - [Enumeraciones y estructuras](../../debugger/debug-interface-access/enumerations-and-structures.md)

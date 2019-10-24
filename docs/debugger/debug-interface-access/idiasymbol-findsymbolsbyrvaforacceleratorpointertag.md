@@ -1,5 +1,5 @@
 ---
-title: IDiaSymbol::findSymbolsByRVAForAcceleratorPointerTag | Microsoft Docs
+title: 'IDiaSymbol:: findSymbolsByRVAForAcceleratorPointerTag | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -10,15 +10,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 673ca8137244fed933df0be3fa0221115951a9c1
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: f0d05946db816e6bd209e364e11d5091163941a4
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "62839002"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72741157"
 ---
 # <a name="idiasymbolfindsymbolsbyrvaforacceleratorpointertag"></a>IDiaSymbol::findSymbolsByRVAForAcceleratorPointerTag
-Dado un valor de la etiqueta correspondiente, este método devuelve una enumeración de los símbolos que se encuentran en esta función de código auxiliar en una dirección virtual relativa especificada.
+Dado un valor de etiqueta correspondiente, este método devuelve una enumeración de símbolos contenidos en esta función de código auxiliar en una dirección virtual relativa especificada.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -32,21 +32,21 @@ HRESULT findSymbolsByRVAForAcceleratorPointerTag (
 #### <a name="parameters"></a>Parámetros
  `tagValue`
 
-[in] El valor de etiqueta de puntero para el que se encuentran los registros de símbolos el puntero.
+de Valor de etiqueta de puntero para el que se encuentran los registros de símbolos de punto.
 
  `rva`
 
-[in] La rva que se utiliza para filtrar los símbolos que corresponden a la variable el puntero con el valor de etiqueta especificado.
+de RVA que se usa para filtrar los símbolos que corresponden a la variable de puntero con el valor de etiqueta especificado.
 
  `ppResult`
 
-[out] Un puntero a un `IDiaEnumSymbols` puntero de interfaz que se inicializa con el resultado.
+enuncia Puntero a un puntero de interfaz de `IDiaEnumSymbols` que se inicializa con el resultado.
 
 ## <a name="return-value"></a>Valor devuelto
- Si es correcto, devuelve `S_OK`; en caso contrario, devuelve `S_FALSE` o un código de error.
+ Si se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve `S_FALSE` o un código de error.
 
 ## <a name="remarks"></a>Comentarios
- Llame a este método solo en un `IDiaSymbol` interfaz que corresponde a una función de código auxiliar del acelerador.
+ Llame a este método solo en una interfaz de `IDiaSymbol` que se corresponda con una función de código auxiliar de acelerador.
 
 ## <a name="see-also"></a>Vea también
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

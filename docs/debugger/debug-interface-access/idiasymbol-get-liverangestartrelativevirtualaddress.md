@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 338775a2c36415d471d0d59176ce38f6df1827bb
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: ea82e9d1dee4b82e78ea3f6409acfdcfc30b2a27
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64806864"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72739891"
 ---
-# <a name="idiasymbolgetliverangestartrelativevirtualaddress"></a>IDiaSymbol::get_liveRangeStartRelativeVirtualAddress
-Devuelve el comienzo del intervalo de direcciones en el que el símbolo local es válido.
+# <a name="idiasymbolget_liverangestartrelativevirtualaddress"></a>IDiaSymbol::get_liveRangeStartRelativeVirtualAddress
+Devuelve el principio del intervalo de direcciones en el que el símbolo local es válido.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -33,20 +33,20 @@ HRESULT get_liveRangeStartRelativeVirtualAddress ( 
 #### <a name="parameters"></a>Parámetros
  `address`
 
-[out] Devuelve el inicio del intervalo de direcciones.
+enuncia Devuelve el inicio del intervalo de direcciones.
 
 ## <a name="return-value"></a>Valor devuelto
- Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error. La dirección virtual relativa devuelta es el principio del intervalo en el que el símbolo es válido.
+ Si se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error. La dirección virtual relativa devuelta es el principio del intervalo en el que el símbolo es válido.
 
 > [!NOTE]
-> Un código de error devuelto significa que el símbolo no tiene información de rango en vivo.
+> Un código de error devuelto significa que el símbolo no tiene información de intervalo en directo.
 
 ## <a name="remarks"></a>Comentarios
 
 ## <a name="requirements"></a>Requisitos
- Encabezado: Dia2.h
+ Encabezado: Dia2. h
 
- Biblioteca: diaguids.lib
+ Biblioteca: diaguids. lib
 
  DLL: msdia100.dll
 

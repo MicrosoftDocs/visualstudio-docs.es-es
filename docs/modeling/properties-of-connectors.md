@@ -9,12 +9,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2244b191bac2456886368992d1dc8f1c571dc227
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 8ba4a9b4ec2e0941b4f8ae924766e8c401342dfd
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72658260"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72748334"
 ---
 # <a name="properties-of-connectors"></a>Propiedades de los conectores
 Los conectores representan las relaciones de dominio en un diseñador generado.

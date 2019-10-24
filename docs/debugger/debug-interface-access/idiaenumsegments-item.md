@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 87751dcca1e2109db53c9d6dd4594bc969ffc684
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 101821e3c00d3aeac9b131ee5a11ab9a01e090a9
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62833277"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72744182"
 ---
 # <a name="idiaenumsegmentsitem"></a>IDiaEnumSegments::Item
 Recupera un segmento por medio de un índice.
@@ -34,14 +34,14 @@ HRESULT Item ( 
 #### <a name="parameters"></a>Parámetros
  índice
 
-[in] Índice de la [IDiaSegment](../../debugger/debug-interface-access/idiasegment.md) objeto va a recuperar. El índice está en el intervalo de 0 a `count`-1, donde `count` devuelto por la [Idiaenumsegments](../../debugger/debug-interface-access/idiaenumsegments-get-count.md) método.
+de Índice del objeto [IDiaSegment](../../debugger/debug-interface-access/idiasegment.md) que se va a recuperar. El índice está en el intervalo de 0 a `count`-1, donde el método [IDiaEnumSegments:: get_Count](../../debugger/debug-interface-access/idiaenumsegments-get-count.md) devuelve `count`.
 
  segment
 
-[out] Devuelve un [IDiaSegment](../../debugger/debug-interface-access/idiasegment.md) objeto que representa el segmento deseado.
+enuncia Devuelve un objeto [IDiaSegment](../../debugger/debug-interface-access/idiasegment.md) que representa el segmento deseado.
 
 ## <a name="return-value"></a>Valor devuelto
- Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.
+ Si se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.
 
 ## <a name="see-also"></a>Vea también
 - [IDiaEnumSegments](../../debugger/debug-interface-access/idiaenumsegments.md)

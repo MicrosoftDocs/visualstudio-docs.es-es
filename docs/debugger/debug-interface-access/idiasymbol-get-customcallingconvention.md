@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 733c18fd9fceaad6c976ab47a85420a27982cfbd
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 01fb33108c9952b8543d36b64b7743f4c0531be5
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64858489"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72740733"
 ---
-# <a name="idiasymbolgetcustomcallingconvention"></a>IDiaSymbol::get_customCallingConvention
-Recupera una marca que especifica si la función tiene una convención de llamada personalizada.
+# <a name="idiasymbolget_customcallingconvention"></a>IDiaSymbol::get_customCallingConvention
+Recupera una marca que especifica si la función tiene una Convención de llamada personalizada.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -33,20 +33,20 @@ HRESULT get_customCallingConvention(
 #### <a name="parameters"></a>Parámetros
  `pFlag`
 
-[out] Devuelve `TRUE` si la función tiene una convención de llamada personalizada; en caso contrario, devuelve `FALSE`, la función tiene una convención de llamada conocida.
+enuncia Devuelve `TRUE` si la función tiene una Convención de llamada personalizada; de lo contrario, devuelve `FALSE`, la función tiene una Convención de llamada conocida.
 
 ## <a name="return-value"></a>Valor devuelto
- Si es correcto, devuelve `S_OK`; en caso contrario, devuelve `S_FALSE` o un código de error.
+ Si se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve `S_FALSE` o un código de error.
 
 > [!NOTE]
 > Un valor devuelto de `S_FALSE` significa que la propiedad no está disponible para el símbolo.
 
 ## <a name="requirements"></a>Requisitos
 
-|Requisito|DESCRIPCIÓN|
+|Requisito|Descripción|
 |-----------------|-----------------|
 |Encabezado:|dia2.h|
-|Versión:|SDK de DIA v8.0|
+|Versión:|SDK de DIA v 8.0|
 
 ## <a name="see-also"></a>Vea también
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

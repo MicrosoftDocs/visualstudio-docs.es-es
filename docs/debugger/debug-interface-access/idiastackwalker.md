@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5ad74f92765ee449eab1e3089511a063e70d96a0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 2366c933bf072c295b29d06ff5610bd3735c0077
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62831938"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72741520"
 ---
 # <a name="idiastackwalker"></a>IDiaStackWalker
-Proporciona métodos para hacer una pila del recorrido con información en el archivo PDB.
+Proporciona métodos para realizar un recorrido de pila utilizando la información del archivo. pdb.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -29,21 +29,21 @@ IDiaStackWalker: IUnknown
 ```
 
 ## <a name="methods-in-vtable-order"></a>Métodos en orden de Vtable
-La tabla siguiente muestran los métodos de `IDiaStackWalker`.
+En la tabla siguiente se muestran los métodos de `IDiaStackWalker`.
 
 |Método|Descripción|
 |------------|-----------------|
-|[IDiaStackWalker::getEnumFrames](../../debugger/debug-interface-access/idiastackwalker-getenumframes.md)|Recupera un enumerador de marco de pila para x86 plataformas.|
-|[IDiaStackWalker::getEnumFrames2](../../debugger/debug-interface-access/idiastackwalker-getenumframes2.md)|Recupera un enumerador de marco de pila para un tipo específico de plataforma.|
+|[IDiaStackWalker::getEnumFrames](../../debugger/debug-interface-access/idiastackwalker-getenumframes.md)|Recupera un enumerador de marcos de pila para las plataformas x86.|
+|[IDiaStackWalker::getEnumFrames2](../../debugger/debug-interface-access/idiastackwalker-getenumframes2.md)|Recupera un enumerador de marcos de pila para un tipo de plataforma específico.|
 
 ## <a name="remarks"></a>Comentarios
-Esta interfaz se utiliza para obtener una lista de marcos de pila para un módulo cargado. Cada uno de los métodos se pasa un [IDiaStackWalkHelper](../../debugger/debug-interface-access/idiastackwalkhelper.md) objeto (implementado por la aplicación cliente) que proporciona la información necesaria para crear la lista de marcos de pila.
+Esta interfaz se usa para obtener una lista de marcos de pila para un módulo cargado. A cada uno de los métodos se le pasa un objeto [IDiaStackWalkHelper](../../debugger/debug-interface-access/idiastackwalkhelper.md) (implementado por la aplicación cliente) que proporciona la información necesaria para crear la lista de marcos de pila.
 
-## <a name="notes-for-callers"></a>Notas para los llamadores
-Esta interfaz se obtiene mediante una llamada a la `CoCreateInstance` método con el identificador de clase `CLSID_DiaStackWalker` y el identificador de interfaz de `IID_IDiaStackWalker`. El ejemplo muestra cómo se obtiene esta interfaz.
+## <a name="notes-for-callers"></a>Notas para llamadores
+Esta interfaz se obtiene llamando al método `CoCreateInstance` con el identificador de clase `CLSID_DiaStackWalker` y el ID. de interfaz de `IID_IDiaStackWalker`. En el ejemplo se muestra cómo se obtiene esta interfaz.
 
 ## <a name="example"></a>Ejemplo
-En este ejemplo se muestra cómo obtener el `IDiaStackWalker` interfaz.
+En este ejemplo se muestra cómo obtener la interfaz `IDiaStackWalker`.
 
 ```C++
 
@@ -60,9 +60,9 @@ if (FAILED(hr))
 ```
 
 ## <a name="requirements"></a>Requisitos
-Encabezado: Dia2.h
+Encabezado: Dia2. h
 
-Biblioteca: diaguids.lib
+Biblioteca: diaguids. lib
 
 DLL: msdia80.dll
 

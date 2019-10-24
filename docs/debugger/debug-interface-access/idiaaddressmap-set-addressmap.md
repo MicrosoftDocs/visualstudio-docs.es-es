@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 963ee64b639780bae60a4c2655db8b666d87c702
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 8414788af44d78943088b78b2d3e42a5a8d8c50b
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62554253"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72745025"
 ---
-# <a name="idiaaddressmapsetaddressmap"></a>IDiaAddressMap::set_addressMap
-Proporciona un mapa de direcciones para admitir las traducciones de diseño de imagen.
+# <a name="idiaaddressmapset_addressmap"></a>IDiaAddressMap::set_addressMap
+Proporciona un mapa de direcciones para admitir las traducciones del diseño de la imagen.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -35,21 +35,21 @@ HRESULT set_addressMap ( 
 #### <a name="parameters"></a>Parámetros
  `cbData`
 
-[in] El número de elementos de la `data` parámetro.
+de Número de elementos del parámetro `data`.
 
  `data[]`
 
-[in] Una matriz de [DiaAddressMapEntry estructura](../../debugger/debug-interface-access/diaaddressmapentry.md) estructuras que definen la asignación de traducción.
+de Matriz de estructuras de [estructura DiaAddressMapEntry](../../debugger/debug-interface-access/diaaddressmapentry.md) que definen el mapa de traslación.
 
  `imagetoSymbols`
 
-[in] `TRUE` si el `data` parámetro define una asignación desde el nuevo diseño de la imagen al diseño original (como se describe en los símbolos de depuración). `FALSE` Si `data` es un mapa para el nuevo diseño de imagen procedente del diseño original.
+[in] `TRUE` si el parámetro `data` define una asignación del nuevo diseño de imagen al diseño original (como se describe en los símbolos de depuración). `FALSE` si `data` es un mapa del nuevo diseño de imagen tomado del diseño original.
 
 ## <a name="return-value"></a>Valor devuelto
- Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.
+ Si se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.
 
 ## <a name="remarks"></a>Comentarios
- Normalmente, el DIA recupera asignaciones de traducción de direcciones desde el archivo de programa (.pdb) de la base de datos. Si faltan estos valores, el [Set_imageheaders](../../debugger/debug-interface-access/idiaaddressmap-set-imageheaders.md) se llama al método dos veces, una vez con el `imagetoSymbols` parámetro establecido en `TRUE` y una vez con el `imagetoSymbols` parámetro establecido en `FALSE`. Traducciones de asignación de direcciones no pueden habilitarse mediante la [Put_addressmapenabled](../../debugger/debug-interface-access/idiaaddressmap-put-addressmapenabled.md) método a menos que se proporcionan ambos mapas de traducción.
+ Normalmente, el DIA recupera las asignaciones de traducción de direcciones del archivo de base de datos de programa (. pdb). Si faltan estos valores, se llama al método [IDiaAddressMap:: set_imageHeaders](../../debugger/debug-interface-access/idiaaddressmap-set-imageheaders.md) dos veces, una vez con el parámetro `imagetoSymbols` establecido en `TRUE` y una vez con el parámetro `imagetoSymbols` establecido en `FALSE`. Las traducciones de mapa de direcciones no se pueden habilitar con el método [IDiaAddressMap::P ut_addressmapenabled](../../debugger/debug-interface-access/idiaaddressmap-put-addressmapenabled.md) , a menos que se proporcionen ambos mapas de traducción.
 
 ## <a name="see-also"></a>Vea también
 - [Estructura DiaAddressMapEntry](../../debugger/debug-interface-access/diaaddressmapentry.md)

@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f36cf93beb6b6c8b66ec25dc8008be7024e398b9
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b5fe5589b667054ee75e3b01743553a2d60bef92
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62554344"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72745063"
 ---
-# <a name="idiaaddressmapputaddressmapenabled"></a>IDiaAddressMap::put_addressMapEnabled
-Especifica si se debe usar la asignación de dirección para traducir las direcciones de símbolos.
+# <a name="idiaaddressmapput_addressmapenabled"></a>IDiaAddressMap::put_addressMapEnabled
+Especifica si se debe usar el mapa de direcciones para traducir direcciones de símbolos.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -33,17 +33,17 @@ HRESULT put_addressMapEnabled ( 
 #### <a name="parameters"></a>Parámetros
  NewVal
 
-[in] Establecido en `TRUE` para habilitar la traducción de símbolos, o `FALSE` a deshabilitar.
+de Establezca en `TRUE` para habilitar la traducción de símbolos o `FALSE` para deshabilitarlos.
 
 ## <a name="return-value"></a>Valor devuelto
- Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.
+ Si se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.
 
 ## <a name="remarks"></a>Comentarios
- Ejecutable procesadores posterior a la actualización a veces el archivo ejecutable. DIA contiene un mecanismo para admitir la traducción de símbolos para el nuevo diseño.
+ Los postprocesadores ejecutables a veces actualizan el archivo ejecutable. DIA contiene un mecanismo para admitir la traducción de símbolos al nuevo diseño.
 
- Cuando se carga un archivo PDB, se habilita la asignación de dirección almacenada en el archivo. Veces, sin embargo, cuando una aplicación cliente que necesite proporcionar su propio mapa de direcciones mediante una llamada a la [Set_addressmap](../../debugger/debug-interface-access/idiaaddressmap-set-addressmap.md) método. Si el `set_addressMap` método se realiza correctamente, la aplicación cliente debe llamar a la `put_addressMapEnabled` método con un `NewVal` parámetro de `TRUE` para habilitar el uso de esa asignación de dirección.
+ Cuando se carga un archivo PDB, se habilita la asignación de direcciones almacenada en el archivo. Sin embargo, hay ocasiones en las que una aplicación cliente puede necesitar proporcionar su propio mapa de direcciones llamando al método [IDiaAddressMap:: set_addressMap](../../debugger/debug-interface-access/idiaaddressmap-set-addressmap.md) . Si el método `set_addressMap` es correcto, la aplicación cliente debe llamar al método `put_addressMapEnabled` con un parámetro `NewVal` de `TRUE` para habilitar el uso de ese mapa de direcciones.
 
- Se puede recuperar el estado actual de la asignación de dirección está habilitada con una llamada a la [Get_addressmapenabled](../../debugger/debug-interface-access/idiaaddressmap-get-addressmapenabled.md) método.
+ Se puede recuperar el estado actual del mapa de direcciones que se está habilitando con una llamada al método [IDiaAddressMap:: get_addressMapEnabled](../../debugger/debug-interface-access/idiaaddressmap-get-addressmapenabled.md) .
 
 ## <a name="see-also"></a>Vea también
 - [IDiaAddressMap](../../debugger/debug-interface-access/idiaaddressmap.md)

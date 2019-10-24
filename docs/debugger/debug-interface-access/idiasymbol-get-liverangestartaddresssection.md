@@ -12,14 +12,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c99b5a14a321a28bdbe7337dcc7cdfa5febdad5d
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: a23f0661d8af6417d754fd7a71c66c5dd3ef1135
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64786532"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72739906"
 ---
-# <a name="idiasymbolgetliverangestartaddresssection"></a>IDiaSymbol::get_liveRangeStartAddressSection
+# <a name="idiasymbolget_liverangestartaddresssection"></a>IDiaSymbol::get_liveRangeStartAddressSection
 Devuelve la parte de la sección de la dirección inicial del intervalo en el que el símbolo local es válido.
 
 ## <a name="syntax"></a>Sintaxis
@@ -33,23 +33,23 @@ HRESULT get_liveRangeStartAddressSection ( 
 #### <a name="parameters"></a>Parámetros
  `section`
 
-[out] Devuelve la parte de la sección del intervalo de direcciones inicial.
+enuncia Devuelve la parte de la sección del intervalo de direcciones de inicio.
 
 ## <a name="return-value"></a>Valor devuelto
- Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.
+ Si se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.
 
 > [!NOTE]
-> Un código de error devuelto significa que el símbolo no tiene información de rango en vivo.
+> Un código de error devuelto significa que el símbolo no tiene información de intervalo en directo.
 
 ## <a name="remarks"></a>Comentarios
  La dirección formada por la sección y el desplazamiento es el principio del intervalo en el que el símbolo es válido.
 
- Para obtener la parte de la dirección de desplazamiento, use [IDiaSymbol::get_liveRangeStartAddressOffset](../../debugger/debug-interface-access/idiasymbol-get-liverangestartaddressoffset.md).
+ Para obtener la parte de desplazamiento de la dirección, use [IDiaSymbol:: get_liveRangeStartAddressOffset](../../debugger/debug-interface-access/idiasymbol-get-liverangestartaddressoffset.md).
 
 ## <a name="requirements"></a>Requisitos
- Encabezado: Dia2.h
+ Encabezado: Dia2. h
 
- Biblioteca: diaguids.lib
+ Biblioteca: diaguids. lib
 
  DLL: msdia100.dll
 

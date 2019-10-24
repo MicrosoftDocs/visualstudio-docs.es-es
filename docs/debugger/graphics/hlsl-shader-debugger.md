@@ -1,5 +1,5 @@
 ---
-title: Depurador de sombreador HLSL | Documentos de Microsoft
+title: Depurador de sombreador HLSL | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -10,19 +10,19 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 30211d773036bbe12c0e807e3be18f13793360b7
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 164c404f3bce6b8216092635e3489843039fb1eb
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63388627"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72735301"
 ---
 # <a name="hlsl-shader-debugger"></a>Depurador de sombreador HLSL
 El depurador de HLSL en el Analizador de gráficos de Visual Studio hace que sea más fácil entender cómo funciona el código del sombreador HLSL en condiciones reales de la aplicación.
 
  Este es el depurador de HLSL:
 
- ![Depurar HLSL mediante vea y llamar a las ventanas de la pila. ](media/gfx_diag_demo_hlsl_debugger_orientation.png "gfx_diag_demo_hlsl_debugger_orientation")
+ ![Depuración de HLSL con las ventanas de inspección y de pila de llamadas.](media/gfx_diag_demo_hlsl_debugger_orientation.png "gfx_diag_demo_hlsl_debugger_orientation")
 
 ## <a name="understanding-the-hlsl-debugger"></a>Introducción al depurador de HLSL
  El depurador de HLSL puede ayudarle a entender los problemas que surgen en el código del sombreador. Depurar código HLSL en [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] es similar a depurar código escrito en otros lenguajes, por ejemplo, en C++, C# o Visual Basic. Puede inspeccionar el contenido de las variables, establecer puntos de interrupción, ejecutar el código paso a paso y recorrer la pila de llamadas, exactamente igual que cuando depura otros lenguajes.
@@ -39,7 +39,7 @@ El depurador de HLSL en el Analizador de gráficos de Visual Studio hace que sea
 
   Sin embargo, el depurador de HLSL proporciona un uso mejor y más parecido a la depuración de tipo CPU que lo que sería posible de cualquier otra forma.
 
-## <a name="hlsl-shader-edit--apply"></a>Sombreador de HLSL, editar y aplicar
+## <a name="hlsl-shader-edit--apply"></a>& Aplicar el editor de sombreador HLSL
  El depurador del sombreador HLSL no admite Editar y continuar del mismo modo que el depurador de la CPU, porque el modelo de ejecución de la GPU no permite deshacer el estado del sombreador. En su lugar, el depurador HLSL admite Editar y aplicar, lo que le permite editar archivos de origen HLSL y, luego, elegir **Aplicar** para regenerar el marco y ver el efecto de los cambios. El código del sombreador modificado se almacena en un archivo independiente para preservar la integridad del archivo de origen HLSL del proyecto original, pero una vez que esté satisfecho con los cambios, puede elegir **Copiar a…** para copiar los cambios al proyecto. Con esta característica, puede iterar rápidamente sobre el código de sombreador que contiene errores y evitar los pasos de recompilación y captura del flujo de trabajo de depuración de HLSL, con el gran coste que conllevan.
 
 ## <a name="hlsl-disassembly"></a>Desensamblado de HLSL
@@ -70,9 +70,9 @@ El depurador de HLSL en el Analizador de gráficos de Visual Studio hace que sea
    > [!NOTE]
    > Este punto de entrada en el depurador de HLSL depura el subproceso del sombreador de píxeles que corresponde a la llamada de dibujo, primitivo y píxel elegidos, o los subprocesos del sombreador de vértices cuyos resultados están interpolados por la llamada de dibujo, primitivo y píxel elegidos. En el caso de los sombreadores de vértices, puede delimitar aún más el punto de entrada a un vértice concreto expandiendo los detalles del sombreador de vértices.
 
-   Para obtener ejemplos sobre cómo usar el depurador de HLSL para depurar errores del sombreador, vea [ejemplos](graphics-diagnostics-examples.md) o los tutoriales se indican en la sección Vea también.
+   Para obtener ejemplos sobre cómo usar el depurador de HLSL para depurar errores del sombreador, vea los [ejemplos](graphics-diagnostics-examples.md) o los tutoriales a los que se vinculan en la sección Vea también.
 
 ## <a name="see-also"></a>Vea también
 - [Tutorial: Objetos ausentes debido al sombreado de vértices](walkthrough-missing-objects-due-to-vertex-shading.md)
-- [Tutorial: Depuración de errores de representación debidos al sombreado](walkthrough-debugging-rendering-errors-due-to-shading.md)
-- [Tutorial: Uso de Diagnóstico de gráficos para depurar un sombreador de cálculo](walkthrough-using-graphics-diagnostics-to-debug-a-compute-shader.md)
+- [Tutorial: Depurar errores de representación debidos al sombreado](walkthrough-debugging-rendering-errors-due-to-shading.md)
+- [Tutorial: Usar diagnósticos de gráficos para depurar un sombreador de cálculo](walkthrough-using-graphics-diagnostics-to-debug-a-compute-shader.md)

@@ -1,5 +1,5 @@
 ---
-title: Guardar un documento estándar | Documentos de Microsoft
+title: Guardar un documento estándar | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,49 +12,49 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4f46d63e9f1145711bd3a32f6fd24e7b61814922
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: df93813d339a45689845b82fe4f5a185301b6c74
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66318678"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72724100"
 ---
 # <a name="saving-a-standard-document"></a>Guardado de un documento estándar
-El entorno controla los guardar, guardar como y guardar todos los comandos. Cuando un usuario selecciona **guardar**, **Guardar como**, o **guardar todo** desde el **archivo** menú o se cierra la solución, lo que resulta en un  **Guardar todo**, se produce el siguiente proceso.
+El entorno controla los comandos guardar, guardar como y guardar todo. Cuando un usuario selecciona **Guardar**, **Guardar como**o **guardar todo** en el menú **archivo** o cierra la solución, lo que da lugar a **guardar todo**, se produce el siguiente proceso.
 
- ![Editor estándar](../../extensibility/internals/media/public.gif "pública") guardar, guardar como y guardar todos los comandos de control para un editor estándar
+ ![Editor estándar](../../extensibility/internals/media/public.gif "Public") Guardar, guardar como y guardar todo el control de comandos para un editor estándar
 
- Este proceso se detalla en los pasos siguientes:
+ Este proceso se describe en los pasos siguientes:
 
-1. Cuando el **guardar** y **Guardar como** comandos están seleccionados, el entorno utiliza el <xref:Microsoft.VisualStudio.Shell.Interop.SVsShellMonitorSelection> de servicio para determinar la ventana de documento activo y, por tanto, se deben guardar qué elementos. Una vez que se conoce la ventana de documento activo, el entorno busca el puntero de la jerarquía y el identificador (ID) del elemento para el documento en la tabla de documentos en ejecución. Para obtener más información, consulte [tabla de documentos en ejecución](../../extensibility/internals/running-document-table.md).
+1. Cuando se seleccionan los comandos **Guardar** y **Guardar como** , el entorno utiliza el servicio de <xref:Microsoft.VisualStudio.Shell.Interop.SVsShellMonitorSelection> para determinar la ventana de documento activa y, por tanto, los elementos que se deben guardar. Una vez que se conoce la ventana de documento activa, el entorno busca el puntero de la jerarquía y el identificador de elemento (itemID) del documento en la tabla de documentos en ejecución. Para obtener más información, vea [ejecutar la tabla de documentos](../../extensibility/internals/running-document-table.md).
 
-    Cuando el **guardar todo** comando está activado, el entorno usa la información de la tabla de documentos en ejecución para compilar la lista de todos los elementos para guardar.
+    Cuando se selecciona el comando **guardar todo** , el entorno usa la información de la tabla de documentos en ejecución para compilar la lista de todos los elementos que se van a guardar.
 
-2. Cuando la solución recibe un <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> llamada, recorre en iteración el conjunto de elementos seleccionados (es decir, las selecciones múltiples expuestas por el <xref:Microsoft.VisualStudio.Shell.Interop.SVsShellMonitorSelection> service).
+2. Cuando la solución recibe una llamada <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A>, recorre en iteración el conjunto de elementos seleccionados (es decir, las selecciones múltiples expuestas por el servicio <xref:Microsoft.VisualStudio.Shell.Interop.SVsShellMonitorSelection>).
 
-3. En cada elemento de la selección, la solución utiliza el puntero de la jerarquía para llamar a la <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistHierarchyItem2.IsItemDirty%2A> método para determinar si el **guardar** debe habilitarse el comando de menú. Si uno o varios elementos están desfasados, la **guardar** comando está habilitado. Si la jerarquía usa un editor estándar, los delegados de la jerarquía consultar dirty estado en el editor mediante una llamada a la <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistDocData2.IsDocDataDirty%2A> método.
+3. En cada elemento de la selección, la solución usa el puntero de jerarquía para llamar al método <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistHierarchyItem2.IsItemDirty%2A> para determinar si el comando de menú **Guardar** debe estar habilitado. Si se han modificado uno o más elementos, el comando **Guardar** está habilitado. Si la jerarquía usa un editor estándar, la jerarquía delega la consulta del estado sucio en el editor llamando al método <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistDocData2.IsDocDataDirty%2A>.
 
-4. En cada elemento seleccionado que está desfasado, la solución utiliza el puntero de la jerarquía para llamar a la <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistHierarchyItem2.SaveItem%2A> método en las jerarquías adecuadas.
+4. En cada elemento seleccionado que está sucio, la solución usa el puntero de la jerarquía para llamar al método <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistHierarchyItem2.SaveItem%2A> en las jerarquías adecuadas.
 
-    Es común para la jerarquía para utilizar un editor estándar para editar el documento. En este caso, los datos del documento objeto de ese editor debe admitir la <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistDocData2> interfaz. Una vez recibida la <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistHierarchyItem2.SaveItem%2A> llamada al método, el proyecto debe informar el editor que se va a guardar el documento mediante una llamada a la <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistDocData2.SaveDocData%2A> método en el objeto de datos. El editor puede permitir que el entorno para controlar la **Guardar como** cuadro de diálogo, mediante una llamada a `Query Service` para el <xref:Microsoft.VisualStudio.Shell.Interop.SVsUIShell> interfaz. Esto devuelve un puntero a la <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell> interfaz. El editor, a continuación, debe llamar a la <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.SaveDocDataToFile%2A> método y pasa un puntero para el editor <xref:Microsoft.VisualStudio.Shell.Interop.IPersistFileFormat> implementación por medio de la `pPersistFile` parámetro. El entorno, a continuación, realiza la operación de guardar y proporciona el **Guardar como** cuadro de diálogo del Editor. El entorno llama, a continuación, vuelva al editor con <xref:Microsoft.VisualStudio.Shell.Interop.IPersistFileFormat>.
+    Es habitual que la jerarquía use un editor estándar para editar el documento. En este caso, el objeto de datos de documento de ese editor debe admitir la interfaz <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistDocData2>. Al recibir la llamada al método <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistHierarchyItem2.SaveItem%2A>, el proyecto debe informar al editor de que el documento se está guardando llamando al método <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistDocData2.SaveDocData%2A> en el objeto de datos del documento. El editor puede permitir que el entorno controle el cuadro de diálogo **Guardar como** , llamando `Query Service` para la interfaz <xref:Microsoft.VisualStudio.Shell.Interop.SVsUIShell>. Esto devuelve un puntero a la interfaz <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell>. A continuación, el editor debe llamar al método <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.SaveDocDataToFile%2A>, pasando un puntero a la implementación de <xref:Microsoft.VisualStudio.Shell.Interop.IPersistFileFormat> del editor por medio del parámetro `pPersistFile`. Después, el entorno realiza la operación de guardar y proporciona el cuadro de diálogo **Guardar como** para el editor. A continuación, el entorno llama de nuevo al editor con <xref:Microsoft.VisualStudio.Shell.Interop.IPersistFileFormat>.
 
-5. Si el usuario está intentando guardar un documento sin título (es decir, un documento no guardado anteriormente), realmente se realiza un comando Guardar como.
+5. Si el usuario está intentando guardar un documento sin título (es decir, un documento previamente no guardado), se realiza un comando Guardar como.
 
-6. El comando Guardar como, el entorno muestra el cuadro de diálogo Guardar como, preguntar al usuario un nombre de archivo.
+6. En el caso del comando Guardar como, el entorno muestra el cuadro de diálogo Guardar como y solicita al usuario un nombre de archivo.
 
-    Si ha cambiado el nombre del archivo, la jerarquía es responsable de actualizar el marco de documento información almacenada en caché mediante una llamada a <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame.SetProperty%2A>(VSFPROPID_MkDocument).
+    Si el nombre del archivo ha cambiado, la jerarquía es responsable de actualizar la información almacenada en caché del marco del documento llamando a <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame.SetProperty%2A> (VSFPROPID_MkDocument).
 
-   Si el **Guardar como** comando mueve la ubicación del documento y la jerarquía es sensible a la ubicación del documento y, a continuación, la jerarquía es responsable de entregar la propiedad de la ventana de documento a otra jerarquía. Por ejemplo, esto se produce si el proyecto controla si el archivo es un archivo externo o interno (archivos varios) en relación con el proyecto. Utilice el procedimiento siguiente para cambiar la propiedad de un archivo al proyecto archivos varios.
+   Si el comando **Guardar como** mueve la ubicación del documento y la jerarquía es sensible a la ubicación del documento, la jerarquía es responsable de entregar la propiedad de la ventana de documento abierta a otra jerarquía. Por ejemplo, esto ocurre si el proyecto realiza un seguimiento de si el archivo es un archivo interno o externo (archivo varios) en relación con el proyecto. Utilice el procedimiento siguiente para cambiar la propiedad de un archivo en el proyecto archivos varios.
 
-## <a name="changing-file-ownership"></a>Cambiar la propiedad de archivo
+## <a name="changing-file-ownership"></a>Cambiar la propiedad del archivo
 
-#### <a name="to-change-file-ownership-to-the-miscellaneous-files-project"></a>Para cambiar la propiedad de archivo al proyecto archivos varios
+#### <a name="to-change-file-ownership-to-the-miscellaneous-files-project"></a>Para cambiar la propiedad del archivo al proyecto archivos varios
 
-1. Consultar el servicio para el <xref:Microsoft.VisualStudio.Shell.Interop.SVsExternalFilesManager> interfaz.
+1. Servicio de consulta para la interfaz <xref:Microsoft.VisualStudio.Shell.Interop.SVsExternalFilesManager>.
 
-     Un puntero a <xref:Microsoft.VisualStudio.Shell.Interop.IVsExternalFilesManager2> se devuelve.
+     Se devuelve un puntero a <xref:Microsoft.VisualStudio.Shell.Interop.IVsExternalFilesManager2>.
 
-2. Llame a la <xref:Microsoft.VisualStudio.Shell.Interop.IVsExternalFilesManager2.TransferDocument%2A> (`pszMkDocumentNew`, `punkWindowFrame`) método para transferir el documento a la nueva jerarquía. Este método llama a la jerarquía de la ejecución del comando Guardar como.
+2. Llame al método <xref:Microsoft.VisualStudio.Shell.Interop.IVsExternalFilesManager2.TransferDocument%2A> (`pszMkDocumentNew`, `punkWindowFrame`) para transferir el documento a la nueva jerarquía. La jerarquía que realiza el comando Guardar como llama a este método.
 
 ## <a name="see-also"></a>Vea también
 - <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>

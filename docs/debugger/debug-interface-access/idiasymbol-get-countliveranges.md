@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b8cd86edee72f3d25763fd3d19dd9c789e152ed6
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 990673afdb01b1471ad75d65036610c486e735c4
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "62837468"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72740753"
 ---
-# <a name="idiasymbolgetcountliveranges"></a>IDiaSymbol::get_countLiveRanges
-Recupera el número de intervalos de direcciones válido asociado con los símbolos locales.
+# <a name="idiasymbolget_countliveranges"></a>IDiaSymbol::get_countLiveRanges
+Recupera el número de intervalos de direcciones válidos asociados al símbolo local.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -33,15 +33,15 @@ HRESULT get_countLiveRanges ( 
 #### <a name="parameters"></a>Parámetros
  `count`
 
-[out] Devuelve el número de intervalos de direcciones.
+enuncia Devuelve el número de intervalos de direcciones.
 
 ## <a name="return-value"></a>Valor devuelto
- Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.
+ Si se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.
 
 ## <a name="requirements"></a>Requisitos
- Encabezado: Dia2.h
+ Encabezado: Dia2. h
 
- Biblioteca: diaguids.lib
+ Biblioteca: diaguids. lib
 
  DLL: msdia100.dll
 

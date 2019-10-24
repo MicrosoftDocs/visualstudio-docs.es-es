@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 21630bea3022769d18748190c2a2d24c0e519a3c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 31be0615fd7d1da279ecf414260af21cb8239dc8
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62554927"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72745287"
 ---
 # <a name="datakind"></a>DataKind
-Indica el ámbito de un valor de datos determinado.
+Indica el ámbito determinado de un valor de datos.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -42,29 +42,29 @@ enum DataKind {
 ## <a name="elements"></a>Elementos
 No se puede determinar el símbolo de datos DataIsUnknown.
 
-Elemento de datos DataIsLocal es una variable local.
+El elemento de datos DataIsLocal es una variable local.
 
-Elemento de datos de DataIsStaticLocal es una variable local estática.
+El elemento de datos DataIsStaticLocal es una variable local estática.
 
-Elemento de datos de DataIsParam es un parámetro formal.
+El elemento de datos DataIsParam es un parámetro formal.
 
-Elemento de datos de DataIsObjectPtr es un puntero de objeto (`this`).
+El elemento de datos DataIsObjectPtr es un puntero de objeto (`this`).
 
-Elemento de datos DataIsFileStatic es una variable con ámbito de archivo.
+El elemento de datos DataIsFileStatic es una variable de ámbito de archivo.
 
-Elemento de datos DataIsGlobal es una variable global.
+El elemento de datos DataIsGlobal es una variable global.
 
-Elemento de datos de DataIsMember es una variable de miembro de objeto.
+El elemento de datos DataIsMember es una variable de miembro de objeto.
 
-Elemento de datos de DataIsStaticMember es una variable estática de la clase.
+El elemento de datos DataIsStaticMember es una variable estática de clase.
 
-Elemento de datos DataIsConstant es un valor constante.
+El elemento de datos DataIsConstant es un valor constante.
 
 ## <a name="remarks"></a>Comentarios
-Devuelven los valores de esta enumeración la [Get_datakind](../../debugger/debug-interface-access/idiasymbol-get-datakind.md) método.
+El método [IDiaSymbol:: get_dataKind](../../debugger/debug-interface-access/idiasymbol-get-datakind.md) devuelve los valores de esta enumeración.
 
 ## <a name="requirements"></a>Requisitos
-Encabezado: cvconst.h
+Encabezado: cvconst. h
 
 ## <a name="see-also"></a>Vea también
 - [Enumeraciones y estructuras](../../debugger/debug-interface-access/enumerations-and-structures.md)

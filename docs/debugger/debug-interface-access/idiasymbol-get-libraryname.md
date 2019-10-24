@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 638458c1365c015b54ca955e44041b856232f8b5
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 3b49c9ad6926b963345bc4c1341ab3c7db03c916
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64800443"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72739946"
 ---
-# <a name="idiasymbolgetlibraryname"></a>IDiaSymbol::get_libraryName
-Recupera el nombre de archivo del archivo de biblioteca u objeto desde el que se cargó el objeto.
+# <a name="idiasymbolget_libraryname"></a>IDiaSymbol::get_libraryName
+Recupera el nombre de archivo de la biblioteca o del archivo objeto desde el que se cargó el objeto.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -33,10 +33,10 @@ HRESULT get_libraryName ( 
 #### <a name="parameters"></a>Parámetros
  `pRetVal`
 
-[out] Devuelve el nombre de archivo del archivo de biblioteca u objeto desde el que se cargó el objeto.
+enuncia Devuelve el nombre de archivo de la biblioteca o el archivo objeto desde el que se cargó el objeto.
 
 ## <a name="return-value"></a>Valor devuelto
- Si es correcto, devuelve `S_OK`; en caso contrario, devuelve `S_FALSE` o un código de error.
+ Si se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve `S_FALSE` o un código de error.
 
 > [!NOTE]
 > Un valor devuelto de `S_FALSE` significa que la propiedad no está disponible para el símbolo.

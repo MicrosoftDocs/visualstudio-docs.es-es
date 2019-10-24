@@ -10,15 +10,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 72510e9e82c1ec6983075880d4335dee8c0ad23c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: da795770ad0f6f57697bc17a4ee8cf936cfc1183
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62839243"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72741973"
 ---
 # <a name="idiasessionfindsymbolsforacceleratorpointertag"></a>IDiaSession::findSymbolsForAcceleratorPointerTag
-Devuelve una enumeración de símbolos de la variable que el valor de etiqueta especificado corresponde de la principal función de código auxiliar del acelerador.
+Devuelve una enumeración de símbolos para la variable a la que corresponde el valor de etiqueta especificado en la función de código auxiliar del acelerador primario.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -33,18 +33,18 @@ HRESULT findSymbolsForAcceleratorPointerTag ( 
 #### <a name="parameters"></a>Parámetros
  `parent`
 
-[in] Un IDiaSymbol que corresponde a la función de código auxiliar de acelerador se va a buscar.
+de IDiaSymbol que corresponde a la función de código auxiliar de acelerador que se va a buscar.
 
  `tagValue`
 
-[in] El valor de etiqueta de puntero.
+de Valor de la etiqueta de puntero.
 
  `ppResult`
 
-[out] Un puntero a un `IDiaEnumSymbols` puntero de interfaz que se inicializa con el resultado.
+enuncia Puntero a un puntero de interfaz de `IDiaEnumSymbols` que se inicializa con el resultado.
 
 ## <a name="return-value"></a>Valor devuelto
- Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.
+ Si se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.
 
 ## <a name="see-also"></a>Vea también
 - [IDiaSession](../../debugger/debug-interface-access/idiasession.md)

@@ -12,18 +12,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4d3d1df772dc6fa4b1ad6e38a319532bea111e97
-ms.sourcegitcommit: ba5e072c9fedeff625a1332f22dcf3644d019f51
+ms.openlocfilehash: ccc83062427ac2ecd3f340d6e1dbbe4d988ab0af
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/31/2019
-ms.locfileid: "66431727"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72745322"
 ---
-# <a name="cvcputypee"></a>CV_CPU_TYPE_e
+# <a name="cv_cpu_type_e"></a>CV_CPU_TYPE_e
 Especifica el procesador de destino.
 
 > [!NOTE]
-> El procesador se identifica en el elemento de enumeración tras el `CV_CFL_*` prefijo.
+> El procesador se identifica en el elemento de enumeración después del prefijo `CV_CFL_*`.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -96,10 +96,10 @@ typedef enum CV_CPU_TYPE_e {
 ```
 
 ## <a name="remarks"></a>Comentarios
-Los valores de esta enumeración se devuelven mediante una llamada a la [Get_platform](../../debugger/debug-interface-access/idiasymbol-get-platform.md) método.
+Los valores de esta enumeración son devueltos por una llamada al método [IDiaSymbol:: get_platform](../../debugger/debug-interface-access/idiasymbol-get-platform.md) .
 
 ## <a name="requirements"></a>Requisitos
-Encabezado: cvconst.h
+Encabezado: cvconst. h
 
 ## <a name="see-also"></a>Vea también
 - [Enumeraciones y estructuras](../../debugger/debug-interface-access/enumerations-and-structures.md)
