@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 01c457947eb84859f2ce92378688dd03c624c86d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: f646616fddc0e7727ef9e8e80d9c29fbcba6ebc0
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62837893"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72741325"
 ---
 # <a name="idiastackwalkhelpersymbolforva"></a>IDiaStackWalkHelper::symbolForVA
 Recupera el símbolo que contiene la dirección virtual especificada.
@@ -34,14 +34,14 @@ HRESULT symbolForVA( 
 #### <a name="parameters"></a>Parámetros
  `va`
 
-[in] La dirección virtual que se encuentra en el símbolo solicitado. El símbolo debe ser un `SymTagFunctionType` (un valor de la [SymTagEnum (enumeración)](../../debugger/debug-interface-access/symtagenum.md) enumeración).
+de Dirección virtual contenida en el símbolo solicitado. El símbolo debe ser un `SymTagFunctionType` (un valor de la enumeración de [enumeración symtagenum (](../../debugger/debug-interface-access/symtagenum.md) ).
 
  `ppSymbol`
 
-[out] Un [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) objeto que representa el símbolo en la dirección especificada.
+enuncia Un objeto [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) que representa el símbolo en la dirección especificada.
 
 ## <a name="return-value"></a>Valor devuelto
- Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.
+ Si se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.
 
 ## <a name="see-also"></a>Vea también
 - [IDiaStackWalkHelper](../../debugger/debug-interface-access/idiastackwalkhelper.md)

@@ -9,12 +9,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3d5eac08833c534e9da3a998687992cca6bc47c2
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 110d357bd113913ab73990b8e3cfa12e4dd1cdae
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72653677"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72748526"
 ---
 # <a name="choosing-a-domain-specific-language-solution-template"></a>Elegir una plantilla de soluciones para lenguajes específicos de dominio
 Para crear una solución de lenguaje específico de dominio, elija una de las plantillas de solución que están disponibles en el Asistente para Diseñador de lenguaje específico de dominio. Al elegir la plantilla que mejor se asemeja al idioma que desea crear, puede minimizar las modificaciones que debe realizar en la solución de inicio.

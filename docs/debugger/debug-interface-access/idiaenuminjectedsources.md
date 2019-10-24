@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6a9b480a497953eebeef1918657ed901de10845a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: feaf5d372279c6ab24053058a14aba4b3a71fd78
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62829926"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72744471"
 ---
 # <a name="idiaenuminjectedsources"></a>IDiaEnumInjectedSources
 Enumerar los distintos orígenes insertados contenidos en el origen de datos.
@@ -29,11 +29,11 @@ IDiaEnumInjectedSources : IUnknown
 ```
 
 ## <a name="methods-in-vtable-order"></a>Métodos en orden de Vtable
-La tabla siguiente muestran los métodos de `IDiaEnumInjectedSources`.
+En la tabla siguiente se muestran los métodos de `IDiaEnumInjectedSources`.
 
 |Método|Descripción|
 |------------|-----------------|
-|[IDiaEnumInjectedSources::get__NewEnum](../../debugger/debug-interface-access/idiaenuminjectedsources-get-newenum.md)|Recupera el [interfaz IEnumVARIANT](/previous-versions/windows/desktop/api/oaidl/nn-oaidl-ienumvariant) versión de este enumerador.|
+|[IDiaEnumInjectedSources::get__NewEnum](../../debugger/debug-interface-access/idiaenuminjectedsources-get-newenum.md)|Recupera la versión de la [interfaz IEnumVARIANT](/previous-versions/windows/desktop/api/oaidl/nn-oaidl-ienumvariant) de este enumerador.|
 |[IDiaEnumInjectedSources::get_Count](../../debugger/debug-interface-access/idiaenuminjectedsources-get-count.md)|Recupera el número de orígenes insertados.|
 |[IDiaEnumInjectedSources::Item](../../debugger/debug-interface-access/idiaenuminjectedsources-item.md)|Recupera un origen insertado por medio de un índice.|
 |[IDiaEnumInjectedSources::Next](../../debugger/debug-interface-access/idiaenuminjectedsources-next.md)|Recupera un número especificado de orígenes insertados en la secuencia de enumeración.|
@@ -43,11 +43,11 @@ La tabla siguiente muestran los métodos de `IDiaEnumInjectedSources`.
 
 ## <a name="remarks"></a>Comentarios
 
-## <a name="notes-for-callers"></a>Notas para los llamadores
-Esta interfaz se obtiene mediante una llamada a la [Findinjectedsource](../../debugger/debug-interface-access/idiasession-findinjectedsource.md) método con el nombre de un archivo de origen específico o mediante una llamada a la [Getenumtables](../../debugger/debug-interface-access/idiasession-getenumtables.md) método con el GUID de la `IDiaEnumInjectedSources` interfaz.
+## <a name="notes-for-callers"></a>Notas para llamadores
+Esta interfaz se obtiene llamando al método [IDiaSession:: findInjectedSource](../../debugger/debug-interface-access/idiasession-findinjectedsource.md) con el nombre de un archivo de código fuente específico o llamando al método [IDiaSession:: GETENUMTABLES](../../debugger/debug-interface-access/idiasession-getenumtables.md) con el GUID de la interfaz `IDiaEnumInjectedSources`.
 
 ## <a name="example"></a>Ejemplo
-En este ejemplo se muestra cómo obtener (el `GetEnumInjectedSources` función) y usar (la `DumpAllInjectedSources` función) el `IDiaEnumInjectedSources` interfaz. Consulte la [IDiaPropertyStorage](../../debugger/debug-interface-access/idiapropertystorage.md) interfaz para una implementación de la `PrintPropertyStorage` función. Para una salida alternativa, consulte el [IDiaInjectedSource](../../debugger/debug-interface-access/idiainjectedsource.md) interfaz.
+En este ejemplo se muestra cómo obtener (la función `GetEnumInjectedSources`) y cómo usar (la función `DumpAllInjectedSources`) la interfaz `IDiaEnumInjectedSources`. Vea la interfaz [IDiaPropertyStorage](../../debugger/debug-interface-access/idiapropertystorage.md) para obtener una implementación de la función `PrintPropertyStorage`. Para obtener una salida alternativa, vea la interfaz [IDiaInjectedSource](../../debugger/debug-interface-access/idiainjectedsource.md) .
 
 ```C++
 
@@ -106,9 +106,9 @@ void DumpAllInjectedSources( IDiaSession* pSession)
 ```
 
 ## <a name="requirements"></a>Requisitos
-Encabezado: Dia2.h
+Encabezado: Dia2. h
 
-Biblioteca: diaguids.lib
+Biblioteca: diaguids. lib
 
 DLL: msdia80.dll
 

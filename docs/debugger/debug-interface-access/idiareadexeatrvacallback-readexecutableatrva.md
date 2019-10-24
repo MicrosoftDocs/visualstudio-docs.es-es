@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cf423ddc91926fb04adac849783b7c26b4c4f720
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ca1b1ec2bea56ad167951ad8b60cf849bd22e315
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62828478"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72742790"
 ---
 # <a name="idiareadexeatrvacallbackreadexecutableatrva"></a>IDiaReadExeAtRVACallback::ReadExecutableAtRVA
-Lee el número especificado de bytes empezando en el especificado dirección virtual relativa (RVA) del archivo ejecutable.
+Lee el número especificado de bytes a partir de la dirección virtual relativa (RVA) especificada del archivo ejecutable.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -36,22 +36,22 @@ HRESULT ReadExecutableAtRVA ( 
 #### <a name="parameters"></a>Parámetros
  `relativeVirtualAddress`
 
-[in] La RVA a comenzar la lectura en el archivo ejecutable.
+de RVA del archivo ejecutable que se va a empezar a leer.
 
  `cbData`
 
-[in] Número de bytes que se leen.
+de Número de bytes que se van a leer.
 
  `pcbData`
 
-[out] Devuelve el número de bytes leídos.
+enuncia Devuelve el número de bytes leídos.
 
  `data[]`
 
-[in, out] Una matriz que se rellena con los bytes leídos desde el archivo.
+[in, out] Matriz que se rellena con bytes leídos del archivo.
 
 ## <a name="remarks"></a>Comentarios
- Este método es invocado por el código de soporte técnico DIA para cargar los bytes de datos de una aplicación ejecutable mediante una dirección virtual relativa. Se llama a este método de apoyo del [Loaddataforexe](../../debugger/debug-interface-access/idiadatasource-loaddataforexe.md) método.
+ El código de soporte de DIA llama a este método para cargar bytes de datos de un ejecutable mediante una dirección virtual relativa. Se llama a este método en la compatibilidad del método [IDiaDataSource:: loadDataForExe](../../debugger/debug-interface-access/idiadatasource-loaddataforexe.md) .
 
 ## <a name="see-also"></a>Vea también
 - [IDiaReadExeAtRVACallback](../../debugger/debug-interface-access/idiareadexeatrvacallback.md)

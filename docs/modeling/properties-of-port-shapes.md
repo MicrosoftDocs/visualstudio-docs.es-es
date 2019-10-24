@@ -11,12 +11,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7a5fbe5dc38eaf029f0061c90c1ca37b1d9210b8
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 60498c57e80b474bae8d5c320183442bbc4fcfd4
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72658142"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72747443"
 ---
 # <a name="properties-of-port-shapes"></a>Propiedades de las formas de puerto
 Puede usar las formas de puerto para representar las clases de dominio en el diseñador generado.

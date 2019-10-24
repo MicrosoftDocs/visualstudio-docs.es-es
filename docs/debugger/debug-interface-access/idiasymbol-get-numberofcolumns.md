@@ -10,14 +10,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 49482c99f3d735618cb9caab02a04fea1e81ebc9
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: ca99493f136c1a932f45fe719c52a9d85a1a852e
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "62841880"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72739687"
 ---
-# <a name="idiasymbolgetnumberofcolumns"></a>IDiaSymbol::get_numberOfColumns
+# <a name="idiasymbolget_numberofcolumns"></a>IDiaSymbol::get_numberOfColumns
 Recupera el número de columnas de la matriz.
 
 ## <a name="syntax"></a>Sintaxis
@@ -30,10 +30,10 @@ HRESULT get_numberOfColumns(
 #### <a name="parameters"></a>Parámetros
  `pRetVal`
 
-[out] Un puntero a un `DWORD` que contiene el número de columnas de la matriz.
+enuncia Puntero a una `DWORD` que contiene el número de columnas de la matriz.
 
 ## <a name="return-value"></a>Valor devuelto
- Si es correcto, devuelve `S_OK`; en caso contrario, devuelve `S_FALSE` o un código de error.
+ Si se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve `S_FALSE` o un código de error.
 
 ## <a name="see-also"></a>Vea también
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

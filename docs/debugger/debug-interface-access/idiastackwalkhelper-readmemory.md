@@ -1,5 +1,5 @@
 ---
-title: IDiaStackWalkHelper::readMemory | Documentos de Microsoft
+title: 'IDiaStackWalkHelper:: ReadMemory (| Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 530b6c3f6873724f8a8ca06ea4228b017de281f9
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 57afd033b2d969a4ed57dc713b2c4266e0ead632
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62831811"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72741360"
 ---
 # <a name="idiastackwalkhelperreadmemory"></a>IDiaStackWalkHelper::readMemory
-Lee un bloque de datos de imagen del archivo ejecutable en la memoria.
+Lee un bloque de datos de la imagen del archivo ejecutable en la memoria.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -37,26 +37,26 @@ HRESULT readMemory( 
 #### <a name="parameters"></a>Parámetros
  `type`
 
-[in] Un valor de la [MemoryTypeEnum (enumeración)](../../debugger/debug-interface-access/memorytypeenum.md) enumeración que especifica el tipo de memoria para leer.
+de Un valor de la enumeración de [enumeración memorytypeenum (](../../debugger/debug-interface-access/memorytypeenum.md) que especifica el tipo de memoria que se va a leer.
 
  va
 
-[in] Dirección virtual en la imagen desde el que se va a comenzar la lectura.
+de Dirección virtual de la imagen de la que se va a empezar a leer.
 
  `cbData`
 
-[in] El tamaño del búfer de datos en bytes.
+de Tamaño del búfer de datos en bytes.
 
  `pcbData`
 
-[out] Devuelve el número de bytes leídos realmente. Si `pbData` es `NULL`, este es el número total de bytes de datos disponibles.
+enuncia Devuelve el número de bytes leídos realmente. Si `pbData` es `NULL`, es el número total de bytes de datos disponibles.
 
  `pbData`
 
-[in, out] Un búfer que se rellena con la memoria de lectura.
+[in, out] Búfer que se rellena con la lectura de memoria.
 
 ## <a name="return-value"></a>Valor devuelto
- Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.
+ Si se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.
 
 ## <a name="see-also"></a>Vea también
 - [IDiaStackWalkHelper](../../debugger/debug-interface-access/idiastackwalkhelper.md)

@@ -1,5 +1,5 @@
 ---
-title: Configuración de depuración de la configuración del proyecto de VB | Microsoft Docs
+title: Configuración del proyecto para una configuración de depuración de VB | Microsoft Docs
 ms.custom: seodec18
 ms.date: 11/04/2016
 ms.topic: reference
@@ -23,28 +23,28 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f6d948595dcf34bba32708f04e4bdf2f16ba1166
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: bcac88c2faf1af7378ce25597789700df61648a9
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63408664"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72730614"
 ---
 # <a name="project-settings-for-a-visual-basic-debug-configuration"></a>Configuración del proyecto para una configuración de depuración de Visual Basic
 Es posible cambiar la configuración del proyecto para una configuración de depuración de [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] en la ventana **Páginas de propiedades**, como se describe en [Configuraciones Debug y Release](../debugger/how-to-set-debug-and-release-configurations.md). En las siguientes tablas se muestra dónde encontrar valores relacionados con el depurador en la ventana **Páginas de propiedades**.
 
 > [!WARNING]
-> Este tema no se aplica a las aplicaciones de UWP. Consulte [iniciar una sesión de depuración (VB, C#, C++ y XAML)](../debugger/start-a-debugging-session-for-a-store-app-in-visual-studio-vb-csharp-cpp-and-xaml.md)
+> Este tema no se aplica a las aplicaciones de UWP. Vea [iniciar una sesión de depuración C#( C++ VB, y XAML)](../debugger/start-a-debugging-session-for-a-store-app-in-visual-studio-vb-csharp-cpp-and-xaml.md)
 
 ### <a name="debug-tab"></a>Ficha Depurar
 
 | Parámetro | Descripción |
 |------------------------------| - |
-| **Configuración** | Establece el modo para compilar la aplicación. Puede elegir entre **Activo (Depurar)**, **Depurar**, **Liberar** y **Todas las configuraciones**. |
-| **Acción de inicio** | Este grupo de controles especifica la acción que se produce cuando se elige Inicio en el menú Depurar.<br /><br /> -   **Proyecto de inicio** es el valor predeterminado y lanza el proyecto de inicio para la depuración. <br />-   **Programa externo de inicio** permite iniciar y asociar un programa que no forma parte de un proyecto de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Para obtener más información, consulte [adjuntar a procesos en ejecución](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md).<br />-   **Iniciar explorador en la dirección URL** permite depurar una aplicación web. |
+| **Configuración** | Establece el modo para compilar la aplicación. Puede elegir entre **Activo (Depurar)** , **Depurar**, **Liberar** y **Todas las configuraciones**. |
+| **Acción de inicio** | Este grupo de controles especifica la acción que se produce cuando se elige Inicio en el menú Depurar.<br /><br /> -   **Proyecto de inicio** es el valor predeterminado y lanza el proyecto de inicio para la depuración. <br />-   **Programa externo de inicio** permite iniciar y asociar un programa que no forma parte de un proyecto de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Para obtener más información, vea [asociar a procesos en ejecución](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md).<br />-   **Iniciar explorador en la dirección URL** permite depurar una aplicación web. |
 | **Argumentos de la línea de comandos** | Especifica los argumentos de la línea de comandos para el programa que se va a depurar. El nombre de comando es el nombre del programa especificado en Programa externo de inicio. Si Acción de inicio se establece en Dirección URL de inicio, se omiten los argumentos de la línea de comandos. |
 | **Directorio de trabajo** | Especifica el directorio de trabajo del programa que se depura. En [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)], el directorio de trabajo es el directorio desde el que se inicia la aplicación. El directorio de trabajo predeterminado es \bin\Debug o \bin\Release, dependiendo de la configuración actual. |
-| **Usar máquina remota** | Cuando esta casilla está activada, se habilita la depuración remota. En el cuadro de texto escriba el nombre del equipo remoto en el que se ejecutará la aplicación para depurarla o un [Nombre de servidor Msvsmon](../debugger/remote-debugging.md). La ubicación del archivo EXE en el equipo remoto se especifica mediante la propiedad Ruta de acceso de los resultados, en la pestaña Compilar. La ubicación debe ser un directorio que se pueda compartir en el equipo remoto. |
+| **Usar máquina remota** | Cuando esta casilla está activada, se habilita la depuración remota. En el cuadro de texto escriba el nombre del equipo remoto en el que se ejecutará la aplicación para depurarla o un [Nombre de servidor Msvsmon](../debugger/remote-debugging.md). La ubicación del archivo EXE en el equipo remoto se especifica mediante la propiedad ruta de acceso de salida de la pestaña compilar. La ubicación debe ser un directorio que se pueda compartir en el equipo remoto. |
 | **Depuración de código no administrado** | Permite depurar llamadas a código nativo Win32 (no administrado) desde una aplicación administrada. Esto tiene el mismo efecto que seleccionar Mixto para Tipo de depurador en un proyecto de [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)]. |
 | **Depuración de SQL Server** | Permite depurar objetos de la base de datos de SQL Server. |
 

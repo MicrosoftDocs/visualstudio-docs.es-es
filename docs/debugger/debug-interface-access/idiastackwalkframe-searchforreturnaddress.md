@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 40437dfe6d7b8d46a3850f55f181ecd0c3745b70
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: f1060d5ffce3abc8596b896ef227f72993219f57
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62831959"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72741465"
 ---
 # <a name="idiastackwalkframesearchforreturnaddress"></a>IDiaStackWalkFrame::searchForReturnAddress
-Busca el marco de pila especificado para la dirección de devolución de función más cercano.
+Busca la dirección de retorno de la función más cercana en el marco de pila especificado.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -34,14 +34,14 @@ HRESULT searchForReturnAddress ( 
 #### <a name="parameters"></a>Parámetros
  `frame`
 
-[in] Un [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md) objeto que representa el marco de pila actual.
+de Objeto [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md) que representa el marco de pila actual.
 
  `returnAddress`
 
-[out] Devuelve la dirección de devolución de función más cercana.
+enuncia Devuelve la dirección de devolución de la función más cercana.
 
 ## <a name="return-value"></a>Valor devuelto
- Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.
+ Si se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.
 
 ## <a name="see-also"></a>Vea también
 - [IDiaStackWalkFrame](../../debugger/debug-interface-access/idiastackwalkframe.md)

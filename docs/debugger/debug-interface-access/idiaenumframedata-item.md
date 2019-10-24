@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a8d083cea518032c121a5cb9e9213abbbd7eaaf8
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 9c15f395e7f4aa576c5f69b0f1c61f37ca808fb6
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62829864"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72744613"
 ---
 # <a name="idiaenumframedataitem"></a>IDiaEnumFrameData::Item
-Recupera un elemento de marco de datos por medio de un índice.
+Recupera un elemento de datos de marco por medio de un índice.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -34,14 +34,14 @@ HRESULT Item ( 
 #### <a name="parameters"></a>Parámetros
  índice
 
-[in] Índice de la [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md) objeto va a recuperar. El índice está en el intervalo de 0 a `count`-1, donde `count` devuelto por la [Idiaenumframedata](../../debugger/debug-interface-access/idiaenumframedata-get-count.md) método.
+de Índice del objeto [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md) que se va a recuperar. El índice está en el intervalo de 0 a `count`-1, donde el método [IDiaEnumFrameData:: get_Count](../../debugger/debug-interface-access/idiaenumframedata-get-count.md) devuelve `count`.
 
  section
 
-[out] Devuelve un [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md) objeto que representa el elemento de datos de fotograma deseada.
+enuncia Devuelve un objeto [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md) que representa el elemento de datos de marco deseado.
 
 ## <a name="return-value"></a>Valor devuelto
- Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.
+ Si se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.
 
 ## <a name="see-also"></a>Vea también
 - [IDiaEnumFrameData](../../debugger/debug-interface-access/idiaenumframedata.md)

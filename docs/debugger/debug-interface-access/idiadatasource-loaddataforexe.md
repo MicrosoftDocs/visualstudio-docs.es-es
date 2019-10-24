@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4f95e8a9321ff7ae518e72496289f8ad0c7b4682
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 7a86abb00ebc090c37f03a5533376ae0b9c3e8ae
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62829851"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72744957"
 ---
 # <a name="idiadatasourceloaddataforexe"></a>IDiaDataSource::loadDataForExe
-Se abre y prepara los datos de depuración asociados con el archivo.exe/.dll.
+Abre y prepara los datos de depuración asociados con el archivo. exe/. dll.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -35,40 +35,40 @@ HRESULT loadDataForExe (
 #### <a name="parameters"></a>Parámetros
 ejecutable
 
-[in] Ruta de acceso al archivo .exe o .dll.
+de Ruta de acceso al archivo. exe o. dll.
 
 searchPath
 
-[in] Ruta de acceso alternativo para buscar datos de depuración.
+de Ruta de acceso alternativa para buscar datos de depuración.
 
 pCallback
 
-[in] Un `IUnknown` interfaz para un objeto que admite una interfaz de devolución de llamada de depuración, como la [IDiaLoadCallback](../../debugger/debug-interface-access/idialoadcallback.md), [IDiaLoadCallback2](../../debugger/debug-interface-access/idialoadcallback2.md), [IDiaReadExeAtOffsetCallback](../../debugger/debug-interface-access/idiareadexeatoffsetcallback.md), o [IDiaReadExeAtRVACallback](../../debugger/debug-interface-access/idiareadexeatrvacallback.md) interfaces.
+de Interfaz `IUnknown` para un objeto que admite una interfaz de devolución de llamada de depuración, como [IDiaLoadCallback](../../debugger/debug-interface-access/idialoadcallback.md), [IDiaLoadCallback2](../../debugger/debug-interface-access/idialoadcallback2.md), [IDiaReadExeAtOffsetCallback](../../debugger/debug-interface-access/idiareadexeatoffsetcallback.md)y/o las interfaces [IDiaReadExeAtRVACallback](../../debugger/debug-interface-access/idiareadexeatrvacallback.md) .
 
 ## <a name="return-value"></a>Valor devuelto
-Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error. La siguiente tabla muestra algunos de los códigos de error posibles para este método.
+Si se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error. En la tabla siguiente se muestran algunos de los códigos de error posibles para este método.
 
 |Valor|Descripción|
 |-----------|-----------------|
 |E_PDB_NOT_FOUND|No se pudo abrir el archivo o el archivo tiene un formato no válido.|
-|E_PDB_FORMAT|Se ha intentado obtener acceso a un archivo con un formato obsoleto.|
-|E_PDB_INVALID_SIG|Firma no coincide.|
-|E_PDB_INVALID_AGE|Edad no coincide.|
+|E_PDB_FORMAT|Se intentó obtener acceso a un archivo con un formato obsoleto.|
+|E_PDB_INVALID_SIG|La firma no coincide.|
+|E_PDB_INVALID_AGE|Age no coincide.|
 |E_INVALIDARG|Parámetro no válido.|
-|E_UNEXPECTED|Ya se ha preparado el origen de datos.|
+|E_UNEXPECTED|El origen de datos ya se ha preparado.|
 
 ## <a name="remarks"></a>Comentarios
-El encabezado de depuración del archivo.exe/.dll nombres de la ubicación de datos de depuración.
+El encabezado de depuración del archivo. exe/. dll nombra la ubicación de los datos de depuración asociada.
 
-Este método lee el encabezado de depuración y, a continuación, busca y prepara los datos de depuración. El progreso de la búsqueda si lo desea, puede, se notifica y controla a través de las devoluciones de llamada. Por ejemplo, el [Idialoadcallback](../../debugger/debug-interface-access/idialoadcallback-notifydebugdir.md) se invoca cuando el `IDiaDataSource::loadDataForExe` método busca y procesa un directorio de depuración.
+Este método lee el encabezado de depuración y, a continuación, busca y prepara los datos de depuración. Es posible que el progreso de la búsqueda, de manera opcional, se notifique y controle mediante devoluciones de llamada. Por ejemplo, se invoca [IDiaLoadCallback:: NotifyDebugDir](../../debugger/debug-interface-access/idialoadcallback-notifydebugdir.md) cuando el método `IDiaDataSource::loadDataForExe` busca y procesa un directorio de depuración.
 
-El [IDiaReadExeAtOffsetCallback](../../debugger/debug-interface-access/idiareadexeatoffsetcallback.md) y [IDiaReadExeAtRVACallback](../../debugger/debug-interface-access/idiareadexeatrvacallback.md) interfaces permiten la aplicación cliente proporcionar métodos alternativos para leer los datos desde el archivo ejecutable de archivo cuando el archivo no son accesibles directamente a través de E/S de archivos estándar.
+Las interfaces [IDiaReadExeAtOffsetCallback](../../debugger/debug-interface-access/idiareadexeatoffsetcallback.md) y [IDiaReadExeAtRVACallback](../../debugger/debug-interface-access/idiareadexeatrvacallback.md) permiten a la aplicación cliente proporcionar métodos alternativos para leer datos del archivo ejecutable cuando no se puede tener acceso al archivo directamente mediante el estándar. e/s de archivos.
 
-Para cargar un archivo .pdb sin validación, utilice la [Loaddatafrompdb](../../debugger/debug-interface-access/idiadatasource-loaddatafrompdb.md) método.
+Para cargar un archivo. pdb sin validación, use el método [IDiaDataSource:: loadDataFromPdb](../../debugger/debug-interface-access/idiadatasource-loaddatafrompdb.md) .
 
-Para validar el archivo .pdb en criterios específicos, use el [Loadandvalidatedatafrompdb](../../debugger/debug-interface-access/idiadatasource-loadandvalidatedatafrompdb.md) método.
+Para validar el archivo. pdb con criterios concretos, use el método [IDiaDataSource:: loadAndValidateDataFromPdb](../../debugger/debug-interface-access/idiadatasource-loadandvalidatedatafrompdb.md) .
 
-Para cargar un archivo .pdb directamente desde la memoria, utilice el [Loaddatafromistream](../../debugger/debug-interface-access/idiadatasource-loaddatafromistream.md) método.
+Para cargar un archivo. pdb directamente desde la memoria, use el método [IDiaDataSource:: loadDataFromIStream](../../debugger/debug-interface-access/idiadatasource-loaddatafromistream.md) .
 
 ## <a name="example"></a>Ejemplo
 

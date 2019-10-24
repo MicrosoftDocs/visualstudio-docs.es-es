@@ -21,12 +21,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 701a0096e89123fc9c5445805bb43777735c0924
-ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
+ms.openlocfilehash: f6dc69a18aa09536e5735431aa451bc2dd3933ee
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72435918"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72745694"
 ---
 # <a name="com-and-activex-debugging"></a>Depurar COM y ActiveX
 Esta sección proporciona sugerencias sobre cómo depurar aplicaciones COM y controles ActiveX.

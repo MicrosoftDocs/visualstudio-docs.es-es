@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f0130ba9e893d5a4036df9ee1bc2ab22c8e18008
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c85c31cff5920ba3dc4b9356a1865d0db2323b2d
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62929876"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72731103"
 ---
 # <a name="mixed-mode-debugging-for-ia64-processes-is-unsupported"></a>No se admite la depuración en modo mixto para procesos IA64.
 Visual Studio no admite la depuración en modo mixto de código nativo y administrado en procesos IA64. Esto significa que no puede pasar de código administrado a código nativo, o de código nativo a código administrado, mientras está depurando.
@@ -29,7 +29,7 @@ Visual Studio no admite la depuración en modo mixto de código nativo y adminis
 
 - Depurar el código administrado y el código nativo en sesiones de depuración independientes.
 
-     -o bien-
+     o bien
 
      Depurar el código mixto como un proceso de 32 bits, tal y como se describe en los procedimientos siguientes.
 

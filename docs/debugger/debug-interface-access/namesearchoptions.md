@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f9c2b06e8d89405b38afe2b740ce860a78bc46cc
-ms.sourcegitcommit: 044bb54cb4552c8f4651feb11d62e52726117e75
+ms.openlocfilehash: 61905c0c6c40d893cc8723b711d67690133a7155
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/30/2019
-ms.locfileid: "68661810"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72738613"
 ---
 # <a name="namesearchoptions"></a>NameSearchOptions
 Especifica las opciones de búsqueda para los nombres de símbolos y archivos.
@@ -45,15 +45,15 @@ enum NameSearchOptions {
 ## <a name="elements"></a>Elementos
 `nsNone` No se especifica ninguna opción.
 
-`nsfCaseSensitive`Aplica una coincidencia de nombre que distingue entre mayúsculas y minúsculas.
+`nsfCaseSensitive` aplica una coincidencia de nombres que distingue entre mayúsculas y minúsculas.
 
-`nsfCaseInsensitive`Aplica una coincidencia de nombre que no distingue mayúsculas de minúsculas.
+`nsfCaseInsensitive` aplica una coincidencia de nombres que no distinguen mayúsculas de minúsculas.
 
-`nsfFNameExt`Trata los nombres como rutas de acceso y aplica una coincidencia de nombre de archivo. ext.
+`nsfFNameExt` trata los nombres como rutas de acceso y aplica una coincidencia de nombre de archivo. ext.
 
-`nsfRegularExpression`Aplica una coincidencia de nombres que distingue entre mayúsculas y minúsculas mediante asteriscos (*) y signos de interrogación (?) como caracteres comodín. (No se admiten otros caracteres comunes de expresiones regulares).
+`nsfRegularExpression` aplica una coincidencia de nombres que distingue entre mayúsculas y minúsculas mediante asteriscos (*) y signos de interrogación (?) como caracteres comodín. (No se admiten otros caracteres comunes de expresiones regulares).
 
-`nsfUndecoratedName`Solo se aplica a símbolos que tienen nombres no representativos y representativos.
+`nsfUndecoratedName` solo se aplica a símbolos que tienen nombres no representativos y representativos.
 
 ## <a name="remarks"></a>Comentarios
 Los valores de esta enumeración se pasan a los métodos siguientes:

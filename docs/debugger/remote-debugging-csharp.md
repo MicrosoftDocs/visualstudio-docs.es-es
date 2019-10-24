@@ -19,17 +19,17 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 3490cab7c902dcdf1a7d0095eb69dd44de47a727
-ms.sourcegitcommit: ea182703e922c74725045afc251bcebac305068a
+ms.openlocfilehash: 5f147acae956ad380c6e85984de29d5316394c0a
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71211125"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72730256"
 ---
 # <a name="remote-debugging-a-c-or-visual-basic-project-in-visual-studio"></a>Depuración remota C# de un proyecto de o Visual Basic en Visual Studio
 Para depurar una aplicación de Visual Studio que se ha implementado en otro equipo, instale y ejecute las herramientas remotas en el equipo en el que ha implementado la aplicación, configure el proyecto para que se conecte al equipo remoto desde Visual Studio y, a continuación, ejecute la aplicación.
 
-![Componentes del Depurador remoto] (../debugger/media/remote-debugger-client-apps.png "Remote_debugger_components")
+![Componentes del Depurador remoto](../debugger/media/remote-debugger-client-apps.png "Remote_debugger_components")
 
 Para obtener información sobre la depuración remota de aplicaciones universales de Windows (UWP), consulte [depurar un paquete de aplicaciones instalado](debug-installed-app-package.md).
 
@@ -102,7 +102,7 @@ El depurador no puede implementar aplicaciones de escritorio de Visual C# o Visu
 
 13. Si se le solicita, escriba las credenciales de red para conectarse a la máquina remota.
 
-     Las credenciales requeridas varían en función de la configuración de seguridad de la red. Por ejemplo, en un equipo de dominio, puede escribir el nombre de dominio y la contraseña. En una máquina que no es de dominio, puede escribir el nombre del equipo y un nombre de cuenta de <strong>MJO-DL\name@something.com</strong>usuario válido, como, junto con la contraseña correcta.
+     Las credenciales requeridas varían en función de la configuración de seguridad de la red. Por ejemplo, en un equipo de dominio, puede escribir el nombre de dominio y la contraseña. En una máquina que no es de dominio, puede escribir el nombre del equipo y un nombre de cuenta de usuario válido, como <strong>MJO-DL\name@something.com</strong>, junto con la contraseña correcta.
 
      Verá que la ventana principal de la aplicación de WPF está abierta en el equipo remoto.
 

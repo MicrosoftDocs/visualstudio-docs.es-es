@@ -12,14 +12,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0f7eee2acc1c131e146f115d75130eabbb5fd1a8
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: ea0a0a2df1687d965437a8977eea649f77ea1ce4
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "62834550"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72738928"
 ---
-# <a name="idiasymbolgetvalue"></a>IDiaSymbol::get_value
+# <a name="idiasymbolget_value"></a>IDiaSymbol::get_value
 Recupera el valor de una constante.
 
 ## <a name="syntax"></a>Sintaxis
@@ -33,16 +33,16 @@ HRESULT get_value (
 #### <a name="parameters"></a>Parámetros
 `pRetVal`
 
-[in, out] Un `VARIANT` objeto que se rellena con el valor de una constante.
+[in, out] @No__t_0 objeto que se rellena con el valor de una constante.
 
 ## <a name="return-value"></a>Valor devuelto
-Si es correcto, devuelve `S_OK`; en caso contrario, devuelve `S_FALSE` o un código de error.
+Si se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve `S_FALSE` o un código de error.
 
 > [!NOTE]
 > Un valor devuelto de `S_FALSE` significa que la propiedad no está disponible para el símbolo.
 
 ## <a name="remarks"></a>Comentarios
-La variante proporcionada debe inicializarse antes de pasarla a este método. Para obtener más información, vea el ejemplo.
+La variante proporcionada debe inicializarse antes de pasarse a este método. Para obtener más información, vea el ejemplo.
 
 ## <a name="example"></a>Ejemplo
 

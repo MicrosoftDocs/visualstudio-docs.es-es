@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cbdb525034016981c1f9030e6bce1f9590c45591
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: f0a6636b692a3017adb6d8b9242dca62f397bf40
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62838329"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72744671"
 ---
 # <a name="idiaenumframedataframebyrva"></a>IDiaEnumFrameData::frameByRVA
-Devuelve una trama de dirección virtual relativa (RVA).
+Devuelve un marco por dirección virtual relativa (RVA).
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -34,11 +34,11 @@ HRESULT frameByRVA( 
 #### <a name="parameters"></a>Parámetros
  relativeVirtualAddress
 
-[in] RVA del marco de interés.
+de RVA del marco de interés.
 
  marco
 
-[out] Devuelve un [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md) objeto que representa el marco que contiene la dirección proporcionada.
+enuncia Devuelve un objeto [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md) que representa el marco que contiene la dirección proporcionada.
 
 ## <a name="return-value"></a>Valor devuelto
  Si la operación se realiza correctamente, devuelve `S_OK`. Devuelve `S_FALSE` si ningún dato de marco coincide con la dirección especificada. De lo contrario, devuelve un código de error.

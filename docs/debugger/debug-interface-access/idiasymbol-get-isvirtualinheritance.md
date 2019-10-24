@@ -10,15 +10,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f5d1630b46ca2203e9f935517e96b11856b273b9
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 7716d9688677eb12d603b208decc0f737bb1c6ca
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "62842129"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72740009"
 ---
-# <a name="idiasymbolgetisvirtualinheritance"></a>IDiaSymbol::get_isVirtualInheritance
-Especifica si el `this` puntero apunta a un miembro de datos con herencia virtual.
+# <a name="idiasymbolget_isvirtualinheritance"></a>IDiaSymbol::get_isVirtualInheritance
+Especifica si el puntero `this` apunta a un miembro de datos con herencia virtual.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -30,10 +30,10 @@ HRESULT get_isVirtualInheritance(
 #### <a name="parameters"></a>Parámetros
  `pRetVal`
 
-[out] Un puntero a un `BOOL` que especifica si el `this` puntero apunta a un miembro de datos con herencia virtual.
+enuncia Puntero a un `BOOL` que especifica si el puntero de `this` apunta a un miembro de datos con herencia virtual.
 
 ## <a name="return-value"></a>Valor devuelto
- Si es correcto, devuelve `S_OK`; en caso contrario, devuelve `S_FALSE` o un código de error.
+ Si se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve `S_FALSE` o un código de error.
 
 ## <a name="see-also"></a>Vea también
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

@@ -21,12 +21,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7a9ab4300484e81e70abd36dbdba28521f91cd62
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b7daa58004b118d46a8248428e9a9d242dfccef8
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62903946"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72730596"
 ---
 # <a name="property-pages-settings-for-web-projects"></a>Configuración de páginas de propiedades para proyectos web
 Se pueden cambiar los valores de las propiedades para una configuración de depuración de sitio Web en el cuadro de diálogo **Páginas de propiedades**, como se describe en [Configuraciones Debug y Release](../debugger/how-to-set-debug-and-release-configurations.md). En las siguientes tablas se muestra dónde encontrar los valores relacionados con el depurador en el cuadro de diálogo **Páginas de propiedades**.
@@ -42,7 +42,7 @@ Se pueden cambiar los valores de las propiedades para una configuración de depu
 | **Argumentos de la línea de comandos:** | Especifica los argumentos del comando especificado arriba. |
 | **Directorio de trabajo:** | Especifica el directorio de trabajo del programa que se depura. En [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)], el directorio de trabajo es el directorio desde el que se inicia la aplicación: \bin\debug de forma predeterminada. |
 | **Dirección URL de inicio** | Especifica la ubicación de la aplicación Web que desea depurar. |
-| **No abra una página. Esperar solicitud de una aplicación externa** | Indica que espere una solicitud de una aplicación externa. Esta opción no inicia Internet Explorer u otra aplicación. Simplemente se prepara para la depuración cuando la llama una aplicación. |
+| **No abra una página. Esperar una solicitud de una aplicación externa** | Indica que espere una solicitud de una aplicación externa. Esta opción no inicia Internet Explorer u otra aplicación. Simplemente se prepara para la depuración cuando la llama una aplicación. |
 | **Servidor** | Encabezado que agrupa las opciones relacionadas con el servidor que se va a utilizar. |
 | **Usar servidor web predeterminado** | Indica que se utilice el servidor web predeterminado. |
 | **Usar servidor personalizado** | Permite especificar la dirección URL base que se utilizará como servidor. |

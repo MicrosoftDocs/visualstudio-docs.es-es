@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d435ff9970748e8debe5edfd15514cde4f531b86
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: b38dd994eca30bfee071f00431f3b111c2ea444a
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63389708"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72736174"
 ---
 # <a name="capturing-graphics-information"></a>Capturar información de gráficos
 Capture información de gráficos desde la aplicación basada en Direct3D para que pueda usar el Analizador de gráficos de Visual Studio con el fin de diagnosticar problemas de representación y de rendimiento.
@@ -27,15 +27,15 @@ Capture información de gráficos desde la aplicación basada en Direct3D para q
 
 ### <a name="to-run-your-app-under-graphics-diagnostics"></a>Para ejecutar la aplicación en Diagnóstico de gráficos
 
-- En la barra de menús, elija **depurar**, **gráficos**, **Iniciar depuración de gráficos**. (Teclado: presione Alt+F5)
+- En la barra de menús, elija **depurar**, **gráficos**, **iniciar depuración de gráficos**. (Teclado: presione Alt+F5)
 
-- En el **gráficos** barra de herramientas, elija la **Iniciar depuración de gráficos** botón.
+- En la barra de herramientas **gráficos** , elija el botón **iniciar depuración de gráficos** .
 
   Mientras se ejecuta una aplicación en Diagnóstico de gráficos, parte de la información de los gráficos se captura en todo momento; entre esta información se incluye la configuración del dispositivo, la creación de la cadena de intercambio, la creación de objetos gráficos y recursos y otros eventos importantes que afectan a varios fotogramas. Al mismo tiempo, puede capturar información detallada sobre fotogramas específicos, como llamadas de dibujo y envíos del sombreador de cálculo, así como los objetos Direct3D y los recursos subyacentes.
 
 ### <a name="to-capture-a-frame"></a>Para capturar un fotograma
 
-- En Visual Studio, en el **gráficos** barra de herramientas, haga clic en el **Capturar fotograma** botón ![icono de botón de captura de gráficos](media/debuggingdirectxgraphics.png "DebuggingDirectXGraphics").
+- En Visual Studio, en la barra de herramientas **gráficos** , haga clic en el ![icono del botón](media/debuggingdirectxgraphics.png "DebuggingDirectXGraphics")capturar **fotogramas** botón captura de gráficos.
 
 - En el teclado, presione la tecla Impr Pant.
 
@@ -61,23 +61,23 @@ Capture información de gráficos desde la aplicación basada en Direct3D para q
 
 2. En la lista de categorías de las opciones de la izquierda, elija Diagnóstico de gráficos y, a continuación, configure las opciones de diagnóstico de gráficos que quiera.
 
-     **Recopilar pilas de llamadas durante la captura (ralentiza la captura)** Active esta casilla para recopilar pilas de llamadas. Las pilas de llamadas no se recopilan de forma predeterminada. Para capturar las pilas de llamadas, asegúrese de que esté activada la casilla **Recopilar pilas de llamadas durante la captura (ralentiza la captura)** para habilitar la recopilación y, después, establezca la opción **para los marcadores draw, dispatch, present y perf** (valor predeterminado) para recopilar únicamente las pilas de llamadas más importantes, o la opción **para todo** para recopilar todas las pilas de llamadas. Para detener la recopilación de pilas de llamadas más adelante, desactive la casilla **Recopilar pilas de llamadas durante la captura (ralentiza la captura)**.
+     **Recopilar pilas de llamadas durante la captura (ralentiza la captura)** Active esta casilla para recopilar pilas de llamadas. Las pilas de llamadas no se recopilan de forma predeterminada. Para capturar las pilas de llamadas, asegúrese de que esté activada la casilla **Recopilar pilas de llamadas durante la captura (ralentiza la captura)** para habilitar la recopilación y, después, establezca la opción **para los marcadores draw, dispatch, present y perf** (valor predeterminado) para recopilar únicamente las pilas de llamadas más importantes, o la opción **para todo** para recopilar todas las pilas de llamadas. Para detener la recopilación de pilas de llamadas más adelante, desactive la casilla **Recopilar pilas de llamadas durante la captura (ralentiza la captura)** .
 
-     **Deshabilitar HUD de juego durante la captura** Active esta casilla para deshabilitar la HUD de superposición que una aplicación que se ejecuta en gráficos diagnósticos normalmente muestra. Desactívela para mostrar la superposición de HUD.
+     **Deshabilitar HUD en el juego durante la captura** Active esta casilla para deshabilitar la superposición de HUD que normalmente muestra una aplicación que se ejecuta en diagnóstico de gráficos. Desactívela para mostrar la superposición de HUD.
 
-     **Capturar en modo de compatibilidad** Active esta casilla para capturar información de gráficos en modo de compatibilidad. La configuración predeterminada es la captura en modo de compatibilidad. En el modo de compatibilidad, Direct3D no informa de que la GPU admite más funciones que las definidas en el nivel de características de base. Así, se evita que la aplicación que se está capturando utilice extensiones específicas del hardware de la GPU donde se captura, y se garantiza que el registro de gráficos se pueda reproducir con cualquier GPU que admita un nivel de características igual o mayor. Desactive esta casilla para deshabilitar el modo de compatibilidad. Los registros capturados con el modo de compatibilidad deshabilitado no se reproducirán correctamente en las GPU que no admitan las mismas características adicionales que usó la aplicación durante la captura.
+     **Captura en modo de compatibilidad** Active esta casilla para capturar información de gráficos en modo de compatibilidad. La configuración predeterminada es la captura en modo de compatibilidad. En el modo de compatibilidad, Direct3D no informa de que la GPU admite más funciones que las definidas en el nivel de características de base. Así, se evita que la aplicación que se está capturando utilice extensiones específicas del hardware de la GPU donde se captura, y se garantiza que el registro de gráficos se pueda reproducir con cualquier GPU que admita un nivel de características igual o mayor. Desactive esta casilla para deshabilitar el modo de compatibilidad. Los registros capturados con el modo de compatibilidad deshabilitado no se reproducirán correctamente en las GPU que no admitan las mismas características adicionales que usó la aplicación durante la captura.
 
-     **Detener captura si se encuentran errores en las capas SDK** Active esta casilla para detener la captura inmediatamente si se producen errores.
+     **Detener captura si se encuentran errores de capas de SDK** Active esta casilla para detener la captura inmediatamente si se producen errores.
 
 ## <a name="capturing-graphics-information-remotely"></a>Capturar información de gráficos de forma remota
  Se puede capturar información de gráficos desde una aplicación que se ejecute en el equipo local o en un dispositivo remoto. La captura remota se admite para los equipos [!INCLUDE[winblue_client_2](../includes/winblue_client_2_md.md)] y dispositivos [!INCLUDE[winblue_winrt_2](../includes/winblue_winrt_2_md.md)]. Para capturar información de gráficos desde una aplicación que se ejecute de forma remota, configure el proyecto para la depuración remota y después ejecute la aplicación en Diagnóstico de gráficos tal como se ha descrito anteriormente. La aplicación se ejecuta en el equipo remoto y la información de gráficos capturada se registra en el equipo de desarrollo.
 
- El modo en que configure el proyecto para la depuración remota dependerá del tipo de aplicación que esté desarrollando y del lenguaje de programación que utilice. Para obtener información acerca de cómo configurar la depuración remota para una aplicación UWP, vea [ejecutar aplicaciones para UWP en un equipo remoto](../run-windows-store-apps-on-a-remote-machine.md). Para obtener información acerca de cómo configurar la depuración remota para una aplicación de escritorio de Windows, consulte [depuración remota](../remote-debugging.md).
+ El modo en que configure el proyecto para la depuración remota dependerá del tipo de aplicación que esté desarrollando y del lenguaje de programación que utilice. Para obtener información sobre cómo configurar la depuración remota para una aplicación para UWP, consulte [ejecución de aplicaciones para UWP en un equipo remoto](../run-windows-store-apps-on-a-remote-machine.md). Para obtener información sobre cómo configurar la depuración remota para una aplicación de escritorio de Windows, vea [depuración remota](../remote-debugging.md).
 
- Posteriormente, podrá utilizar un equipo o un dispositivo remoto para reproducir la información de los gráficos, independientemente del lugar donde se haya capturado la información. Para obtener más información, vea [Cómo: Cambio de la máquina de reproducción de Diagnóstico de gráficos](how-to-change-the-graphics-diagnostics-playback-machine.md).
+ Posteriormente, podrá utilizar un equipo o un dispositivo remoto para reproducir la información de los gráficos, independientemente del lugar donde se haya capturado la información. Para más información, vea [Procedimientos para cambiar la máquina de reproducción de diagnóstico de gráficos](how-to-change-the-graphics-diagnostics-playback-machine.md).
 
 ## <a name="capturing-graphics-information-from-the-command-line"></a>Captura de información de gráficos desde la línea de comandos
  Se puede capturar información de los gráficos desde una aplicación con una herramienta de línea de comandos. Esta herramienta, DXCap.exe, puede capturar y reproducir rápidamente información de gráficos sin usar Visual Studio ni capturas de programación. En particular, puede utilizar DXCap.exe para la automatización o en un entorno de prueba. Para obtener más información sobre DXCap.exe, vea [Herramienta de captura de línea de comandos](command-line-capture-tool.md).
 
 ## <a name="see-also"></a>Vea también
-- [Tutorial: Captura de información de gráficos](walkthrough-capturing-graphics-information.md)
+- [Tutorial: Capturar información de gráficos](walkthrough-capturing-graphics-information.md)

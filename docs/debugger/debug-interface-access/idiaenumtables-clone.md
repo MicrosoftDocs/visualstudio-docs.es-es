@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2f9fc227983818aa1d1c91e147a5dce650844ad8
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 522ac4080331c869c32585dfed789378b1271542
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62832830"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72743792"
 ---
 # <a name="idiaenumtablesclone"></a>IDiaEnumTables::Clone
 Crea un enumerador que contiene el mismo estado de enumeración que el enumerador actual.
@@ -33,10 +33,10 @@ HRESULT Clone ( 
 #### <a name="parameters"></a>Parámetros
  `ppenum`
 
-[out] Devuelve un [IDiaEnumTables](../../debugger/debug-interface-access/idiaenumtables.md) objeto que contiene un duplicado del enumerador. No se duplican las tablas, solo el enumerador.
+enuncia Devuelve un objeto [IDiaEnumTables](../../debugger/debug-interface-access/idiaenumtables.md) que contiene un duplicado del enumerador. Las tablas no están duplicadas, solo el enumerador.
 
 ## <a name="return-value"></a>Valor devuelto
- Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.
+ Si se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.
 
 ## <a name="see-also"></a>Vea también
 - [IDiaEnumTables](../../debugger/debug-interface-access/idiaenumtables.md)
