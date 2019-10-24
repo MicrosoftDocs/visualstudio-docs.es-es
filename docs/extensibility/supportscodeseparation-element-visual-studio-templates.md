@@ -1,5 +1,5 @@
 ---
-title: SupportsCodeSeparation (elemento) (plantillas de Visual Studio) | Documentos de Microsoft
+title: Supportscodeseparation ((elemento, plantillas de Visual Studio) | Microsoft Docs
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -14,17 +14,17 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3a4a9e7ba92b9f48cf22999d53ecf6c7b7d832ab
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 9e68516a798bcd4d1437ab504c09b4cc529eb889
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66316945"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72719427"
 ---
 # <a name="supportscodeseparation-element-visual-studio-templates"></a>SupportsCodeSeparation (Elemento, Plantillas de Visual Studio)
-Especifica si el **colocar código en un archivo independiente** casilla de verificación está habilitada en el **Agregar nuevo elemento** cuadro de diálogo.
+Especifica si la casilla **colocar el código en un archivo independiente** está habilitada o no en el cuadro de diálogo **Agregar nuevo elemento** .
 
- \<VSTemplate> \<TemplateData> \<SupportsCodeSeparation>
+ \<VSTemplate > \<TemplateData > \<SupportsCodeSeparation >
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -45,22 +45,22 @@ Especifica si el **colocar código en un archivo independiente** casilla de veri
 
 |Elemento|Descripción|
 |-------------|-----------------|
-|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Elemento necesario.<br /><br /> Clasifica la plantilla y define cómo muestra en el **nuevo proyecto** o **nuevo elemento** cuadro de diálogo.|
+|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Elemento necesario.<br /><br /> Clasifica la plantilla y define cómo se muestra en el cuadro de diálogo **nuevo proyecto** o **nuevo elemento** .|
 
 ## <a name="text-value"></a>Valor de texto
  Se requiere un valor de texto.
 
- El texto debe ser `true` o `false`, lo que indica si el **colocar código en un archivo independiente** casilla de verificación está habilitada en el **Agregar nuevo elemento** cuadro de diálogo.
+ El texto debe ser `true` o `false`, lo que indica si la casilla **colocar el código en un archivo independiente** está habilitada en el cuadro de diálogo **Agregar nuevo elemento** .
 
 ## <a name="remarks"></a>Comentarios
  `SupportsCodeSeparation` es un elemento opcional. El valor predeterminado es `false`.
 
- El `SupportsCodeSeparation` elemento solo está disponible para plantillas de elementos Web.
+ El elemento `SupportsCodeSeparation` solo está disponible para las plantillas de elementos Web.
 
- Separación de código o el modelo de página de código subyacente, permite mantener el marcado en un archivo y el código de programación en otro archivo. [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] y otros lenguajes .NET utilizan este modelo.
+ La separación de código o el modelo de página de código subyacente le permiten mantener el marcado en un archivo y el código de programación en otro archivo. [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] y otros lenguajes .NET usan este modelo.
 
 ## <a name="example"></a>Ejemplo
- El ejemplo siguiente se especifica para mostrar el **colocar código en un archivo independiente** opción.
+ En el ejemplo siguiente se especifica que se muestra la opción **colocar el código en un archivo independiente** .
 
 ```
 <VSTemplate Version="3.0.0" Type="Project"

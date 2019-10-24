@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 70036cd8add5c9c72262f29ba92fa6c7eaf8977d
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 8fb1e23d252b7cb4f2685a9b07d6e3e92db801bd
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64817133"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72740497"
 ---
-# <a name="idiasymbolgethaslongjump"></a>IDiaSymbol::get_hasLongJump
-Recupera una marca que especifica si la función contiene un uso de la [longjmp](/cpp/c-runtime-library/reference/longjmp) comando (emparejado con un [setjmp](/cpp/c-runtime-library/reference/setjmp) comando, forman el método de estilo C de control de excepciones).
+# <a name="idiasymbolget_haslongjump"></a>IDiaSymbol::get_hasLongJump
+Recupera una marca que especifica si la función contiene un uso del comando [longjmp](/cpp/c-runtime-library/reference/longjmp) (emparejado con un comando [setjmp](/cpp/c-runtime-library/reference/setjmp) , estos forman el método de estilo C de control de excepciones).
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -33,20 +33,20 @@ HRESULT get_hasLongJump
 #### <a name="parameters"></a>Parámetros
  `pFlag`
 
-[out] Devuelve `TRUE` si la función contiene un `longjmp` comando; de lo contrario, devuelve `FALSE`.
+enuncia Devuelve `TRUE` si la función contiene un comando de `longjmp`; de lo contrario, devuelve `FALSE`.
 
 ## <a name="return-value"></a>Valor devuelto
- Si es correcto, devuelve `S_OK`; en caso contrario, devuelve `S_FALSE` o un código de error.
+ Si se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve `S_FALSE` o un código de error.
 
 > [!NOTE]
 > Un valor devuelto de `S_FALSE` significa que la propiedad no está disponible para el símbolo.
 
 ## <a name="requirements"></a>Requisitos
 
-|Requisito|DESCRIPCIÓN|
+|Requisito|Descripción|
 |-----------------|-----------------|
 |Encabezado:|dia2.h|
-|Versión:|SDK de DIA v8.0|
+|Versión:|SDK de DIA v 8.0|
 
 ## <a name="see-also"></a>Vea también
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

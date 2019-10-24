@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0de567f0417714e1246e11ba074c9b0134e92ce8
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 87d590af5162d3efd2ef2c9702a3fe9f45250993
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62839776"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72743020"
 ---
 # <a name="idialoadcallbackrestrictsymbolserveraccess"></a>IDiaLoadCallback::RestrictSymbolServerAccess
-Determina si se permite el acceso a un servidor de símbolos para resolver los símbolos.
+Determina si se permite el acceso a un servidor de símbolos para resolver símbolos.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -29,10 +29,10 @@ HRESULT RestrictSymbolServerAccess();
 ```
 
 ## <a name="return-value"></a>Valor devuelto
- Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.
+ Si se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.
 
 ## <a name="remarks"></a>Comentarios
- Cualquier código de retorno distinto `S_OK` impide el uso de un servidor de símbolos para resolver los símbolos.
+ Cualquier código de retorno distinto de `S_OK` impide el uso de un servidor de símbolos para resolver símbolos.
 
 ## <a name="see-also"></a>Vea también
 - [IDiaLoadCallback2](../../debugger/debug-interface-access/idialoadcallback2.md)

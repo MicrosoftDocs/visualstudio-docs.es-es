@@ -16,14 +16,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 78577f197f952b46d474fb3fd61c72008857c4be
-ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.openlocfilehash: 0d942c41aac873b775566efa4e128651a8830e92
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "66263324"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72727958"
 ---
-# <a name="how-to-debug-a-clickonce-application-with-restricted-permissions"></a>Procedimiento Depuración de una aplicación ClickOnce con permisos restringidos
+# <a name="how-to-debug-a-clickonce-application-with-restricted-permissions"></a>Cómo: depurar una aplicación ClickOnce con permisos restringidos
 Como desarrollador, probablemente esté ejecutando su equipo de desarrollo con permisos de plena confianza, por lo que no verá las mismas excepciones de seguridad al depurar una aplicación ClickOnce que las que podría ver el usuario final al ejecutarlo con permisos restringidos.
 
  Para detectar estas excepciones, debe depurar la aplicación con los mismos permisos que el usuario final. Se puede habilitar la depuración con permisos restringidos en la página **Seguridad** del **Diseñador de proyectos**.
@@ -59,7 +59,7 @@ Como desarrollador, probablemente esté ejecutando su equipo de desarrollo con p
 6. En el cuadro de texto **Depurar esta aplicación como si se hubiera descargado de la siguiente dirección URL** , indique una dirección URL o una ruta de acceso a la red.
 
 ## <a name="see-also"></a>Vea también
-- [Cómo: Establecer permisos personalizados para una aplicación ClickOnce](../deployment/how-to-set-custom-permissions-for-a-clickonce-application.md)
+- [Procedimientos para establecer permisos personalizados para una aplicación ClickOnce](../deployment/how-to-set-custom-permissions-for-a-clickonce-application.md)
 - [Proteger aplicaciones ClickOnce](../deployment/securing-clickonce-applications.md)
 - [Seguridad de acceso del código para aplicaciones ClickOnce](../deployment/code-access-security-for-clickonce-applications.md)
 - [Proteger aplicaciones ClickOnce](../deployment/securing-clickonce-applications.md)

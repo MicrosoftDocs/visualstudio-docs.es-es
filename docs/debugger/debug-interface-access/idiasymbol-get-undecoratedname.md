@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d9650c2ea67d847f225f047d62dd7d1867a61d4d
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 533fc28da8cdd500234e07d2294a9d503476568e
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64809172"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72739012"
 ---
-# <a name="idiasymbolgetundecoratedname"></a>IDiaSymbol::get_undecoratedName
-Recupera el nombre para un representativo, C++ o la vinculación, el nombre no representativo.
+# <a name="idiasymbolget_undecoratedname"></a>IDiaSymbol::get_undecoratedName
+Recupera el nombre no representativo de C++ un nombre representativo o de vinculación.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -33,10 +33,10 @@ HRESULT get_undecoratedName ( 
 #### <a name="parameters"></a>Parámetros
  `pRetVal`
 
-[out] Devuelve el nombre no representativo para un C++ nombre representativo.
+enuncia Devuelve el nombre no representativo C++ de un nombre representativo.
 
 ## <a name="return-value"></a>Valor devuelto
- Si es correcto, devuelve `S_OK`; en caso contrario, devuelve `S_FALSE` o un código de error.
+ Si se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve `S_FALSE` o un código de error.
 
 > [!NOTE]
 > Un valor devuelto de `S_FALSE` significa que la propiedad no está disponible para el símbolo.

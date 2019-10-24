@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9cf22bceedd026a641709640a6e29d1970000e3b
-ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
+ms.openlocfilehash: 9c7d223b9ea542177176045c9abd103958e5ae33
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72431413"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72738112"
 ---
 # <a name="debugging-preparation-c-project-types"></a>Preparación de la depuración: C++ tipos de proyecto
 En esta sección se describe cómo depurar los tipos de proyectos básicos creados mediante las plantillas de proyecto de [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)].

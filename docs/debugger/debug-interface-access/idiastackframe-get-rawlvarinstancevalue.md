@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a8ad236307360a96f64999313764424305980fc9
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 0b1118517988f6a790cd4f6732eba3bc8a9fc25a
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62838124"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72741632"
 ---
-# <a name="idiastackframegetrawlvarinstancevalue"></a>IDiaStackFrame::get_rawLVarInstanceValue
-Este método recupera el valor de la variable local indicada como bytes sin formato.
+# <a name="idiastackframeget_rawlvarinstancevalue"></a>IDiaStackFrame::get_rawLVarInstanceValue
+Este método recupera el valor de la variable local especificada como bytes sin formato.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -36,22 +36,22 @@ HRESULT get_rawLVarInstanceValue(
 #### <a name="parameters"></a>Parámetros
  `pInstance`
 
-[in] Un `IDiaLVarInstance` que representa una instancia de la variable local para obtener el valor para el objeto.
+de Objeto `IDiaLVarInstance` que representa una instancia de la variable local para la que obtener el valor.
 
  `cbDataMax`
 
-[in] Número máximo de bytes en el búfer señalado por `pbData`. Esto puede tener un máximo de 8 bytes (`sizeof(ULONGLONG)`).
+de Número máximo de bytes en el búfer al que apunta `pbData`. Puede tener un máximo de 8 bytes (`sizeof(ULONGLONG)`).
 
  `pcbData`
 
-[out] Devuelve el número real de bytes almacenados en el búfer.
+enuncia Devuelve el número real de bytes almacenados en el búfer.
 
  `pbData`
 
-[out] Un búfer que se va a rellenar con datos. No puede ser `NULL`.
+enuncia Búfer que se va a rellenar con datos. No puede ser `NULL`.
 
 ## <a name="return-value"></a>Valor devuelto
- Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.
+ Si se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.
 
 ## <a name="see-also"></a>Vea también
 - [IDiaStackFrame](../../debugger/debug-interface-access/idiastackframe.md)

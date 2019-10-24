@@ -1,5 +1,5 @@
 ---
-title: Usar ventanas del depurador mientras se depura una aplicación de primer plano | Microsoft Docs
+title: Usar ventanas del depurador durante la depuración de una aplicación en primer plano | Microsoft Docs
 ms.custom: seodec18
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -22,12 +22,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 11bd61cda8c92721fb42c640b0b5100b8054acdf
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 759d9a6a3beb55bf72a0f41a93cb26c8c15b0c5e
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62894871"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72734054"
 ---
 # <a name="how-can-i-use-debugger-windows-while-debugging-a-foreground-program"></a>Cómo utilizar ventanas del depurador mientras se depura un programa en primer plano
 ## <a name="problem-description"></a>Descripción del problema

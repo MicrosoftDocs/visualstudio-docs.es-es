@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 665e778fc0881ac05e165c85700d15285622c762
-ms.sourcegitcommit: 88f576ac32af31613c1a10c1548275e1ce029f4f
+ms.openlocfilehash: a4d11875a7ab2ca3f21f364308580a732b7516e6
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/23/2019
-ms.locfileid: "71186360"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72737925"
 ---
 # <a name="edit-and-continue-visual-c"></a>Editar y continuar (Visual C#)
  Con Editar y continuar para C#, puede realizar cambios en el código en modo de interrupción mientras depura. Los cambios pueden aplicarse sin necesidad de detener y reiniciar la sesión de depuración. En modo de ejecución, el editor de código fuente es de solo lectura.
@@ -36,9 +36,9 @@ ms.locfileid: "71186360"
 
  Si se habilita Editar y continuar, los cambios admitidos se aplican automáticamente cuando se utiliza un comando de ejecución del depurador, como **Continuar**, **Paso**, **Establecer instrucción siguiente**, o cuando se realiza una evaluación de función en una ventana del depurador.
 
- Para obtener más información, vea [Cómo: Uso de Editar y continuar (C#)](../debugger/how-to-use-edit-and-continue-csharp.md).
+ Para obtener más información, consulte [Cómo: utilizar editar y continuar (C#)](../debugger/how-to-use-edit-and-continue-csharp.md).
 
 ## <a name="see-also"></a>Vea también
-- [Cómo: Uso de Editar y continuar (C#)](../debugger/how-to-use-edit-and-continue-csharp.md)
+- [Cómo: Usar Editar y continuar (C#)](../debugger/how-to-use-edit-and-continue-csharp.md)
 - [Cambios de código admitidos (C# y Visual Basic)](../debugger/supported-code-changes-csharp.md)
 - [Escribir y depurar código XAML en ejecución con la recarga activa de XAML en Visual Studio](../debugger/xaml-hot-reload.md)

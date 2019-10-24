@@ -10,15 +10,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4fd03eaead008c4014b10f9390610c7e103a4a6c
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 307358522609659a8a95b94a0adf037026f5b948
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "62837854"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72740941"
 ---
-# <a name="idiasymbolgetbasesymbol"></a>IDiaSymbol::get_baseSymbol
-Recupera el símbolo desde el que se basa el puntero.
+# <a name="idiasymbolget_basesymbol"></a>IDiaSymbol::get_baseSymbol
+Recupera el símbolo del que se basa el puntero.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -30,10 +30,10 @@ HRESULT get_baseSymbol(
 #### <a name="parameters"></a>Parámetros
  `pRetVal`
 
-[out] Un puntero al símbolo desde el que se basa el puntero.
+enuncia Puntero al símbolo desde el que se basa el puntero.
 
 ## <a name="return-value"></a>Valor devuelto
- Si es correcto, devuelve `S_OK`; en caso contrario, devuelve `S_FALSE` o un código de error.
+ Si se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve `S_FALSE` o un código de error.
 
 ## <a name="see-also"></a>Vea también
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

@@ -1,5 +1,5 @@
 ---
-title: Información general del servicio de lenguaje heredado | Documentos de Microsoft
+title: Información general del servicio de lenguaje heredado | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,18 +10,18 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: dcc7fa218d5ee4ba92af5ad8316f95ceb268bdf6
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 8dfec9cc8b57dfb12b3977cc04e2e62ecc0dea96
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66344900"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72726864"
 ---
 # <a name="legacy-language-service-overview"></a>Información general del servicio de lenguaje heredado
-Un servicio de lenguaje proporciona compatibilidad con el editor que permite implementar determinados [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] características. Las clases de servicio de lenguaje de Managed Package Framework (MPF) proporcionan compatibilidad completa para las características usadas con frecuencia y compatibilidad parcial con otras características.
+Un servicio de lenguaje proporciona compatibilidad con el editor que permite implementar ciertas características de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. Las clases de servicio de lenguaje de Managed Package Framework (MPF) proporcionan compatibilidad completa con las características usadas con frecuencia y compatibilidad parcial con otras características.
 
-## <a name="fully-supported-features-in-the-mpf"></a>Totalmente compatible con características de MPF
- Las clases de servicio de lenguaje MPF admiten las siguientes características:
+## <a name="fully-supported-features-in-the-mpf"></a>Características totalmente compatibles en MPF
+ Las clases de servicio del lenguaje MPF admiten las siguientes características:
 
 - Resalte de sintaxis
 
@@ -33,29 +33,29 @@ Un servicio de lenguaje proporciona compatibilidad con el editor que permite imp
 
 - Fragmentos de código
 
-- Propiedades personalizadas del documento
+- Propiedades de documento personalizadas
 
 - Información de parámetros de IntelliSense
 
-- IntelliSense información rápida
+- Información rápida de IntelliSense
 
-- Finalizaciones de miembros de IntelliSense
+- Finalización de miembros de IntelliSense
 
 - Finalización de palabras de IntelliSense
 
 ## <a name="partially-supported-features-in-the-mpf"></a>Características admitidas parcialmente en MPF
- MPF proporciona compatibilidad parcial solo para las siguientes características. Esto significa que debe implementar los métodos que se llaman mediante MPF.
+ MPF solo proporciona compatibilidad parcial con las siguientes características. Esto significa que debe implementar los métodos a los que llama el MPF.
 
-- Cambiar el formato de código. Proporcione el código que implementa el nuevo formato.
+- Volver a dar formato al código. Debe proporcionar el código que implementa el nuevo formato.
 
-- Abarca la validación de los puntos de interrupción mediante la identificación de código válido. Proporcione el código que identifica los intervalos de código.
+- Validación de puntos de interrupción mediante la identificación de intervalos de código válidos. Debe proporcionar el código que identifica los intervalos de código.
 
-- Compatibilidad con el depurador **automático** ventana para mostrar las variables. Proporcione el código que determina qué se debe mostrar en la ventana.
+- Compatibilidad con la ventana **automático** del depurador para mostrar variables. Proporcione el código que determina lo que se va a mostrar en la ventana.
 
-- Compatibilidad con la **barra de navegación** para navegar rápidamente entre los tipos y miembros. Implementar y devolver una clase auxiliar que rellena las listas de la **barra de navegación** cuadros combinados.
+- Compatibilidad con la **barra de navegación** para una navegación rápida entre tipos y miembros. Implementa y devuelve una clase auxiliar que rellena las listas en los cuadros combinados de la **barra de navegación** .
 
 ## <a name="implementation"></a>Implementación
- Debe completar varios pasos para implementar el servicio de lenguaje propio y las características del servicio de lenguaje que desee admitir en su idioma. Estos pasos se describen en los temas siguientes:
+ Debe completar varios pasos para implementar el propio servicio de lenguaje y las características del servicio de lenguaje que desea admitir para su idioma. Estos pasos se describen en los temas siguientes:
 
 - [Implementación de un servicio de lenguaje heredado](../../extensibility/internals/implementing-a-legacy-language-service2.md)
 

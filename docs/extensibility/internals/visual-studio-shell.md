@@ -1,5 +1,5 @@
 ---
-title: Shell de Visual Studio | Documentos de Microsoft
+title: Shell de Visual Studio | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,64 +11,64 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8a147abd4655c923604dd9ca6696e97aac4944ec
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 60aa48da701857508f9b6fd7fc3d9d0c0603046e
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66332875"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72722052"
 ---
 # <a name="visual-studio-shell"></a>Visual Studio Shell
-El [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] shell es el agente de integración en principal [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. El shell proporciona la funcionalidad necesaria para habilitar los VSPackages compartir los servicios comunes. Dado que el objetivo de la arquitectura [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] es chaleco funcionalidad principal en los VSPackages, el shell es un marco de trabajo para proporcionar funcionalidad básica y admite la comunicación cruzada entre su componente VSPackages.
+El shell de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] es el agente principal de integración en [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. El Shell proporciona la funcionalidad necesaria para permitir que los VSPackages compartan servicios comunes. Dado que el objetivo arquitectónico de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] es atribuir la funcionalidad principal en los VSPackages, el Shell es un marco de trabajo para proporcionar la funcionalidad básica y admitir la comunicación cruzada entre sus componentes VSPackages.
 
-## <a name="shell-responsibilities"></a>Responsabilidades de shell
- El shell tiene las siguientes responsabilidades claves:
+## <a name="shell-responsibilities"></a>Responsabilidades del shell
+ El shell tiene las siguientes responsabilidades clave:
 
-- Admitir elementos básicos de la interfaz de usuario (IU) (a través de interfaces COM). Estos incluyen menús predeterminados y las barras de herramientas, marcos de ventana de documento o ventanas secundarias de interfaz de múltiples documentos (MDI) y marcos de ventana de herramienta y soporte técnico de acoplamiento.
+- Compatibilidad (a través de interfaces COM) elementos básicos de la interfaz de usuario (UI). Entre ellas se incluyen menús y barras de herramientas predeterminadas, marcos de ventanas de documento o ventanas secundarias de interfaz de múltiples documentos (MDI), y marcos de ventanas de herramientas y compatibilidad de acoplamiento.
 
-- Mantener un listado actualizado de todos los documentos abiertos actualmente en una tabla de documentos en ejecución (RDT) con el fin de coordinar la persistencia de los documentos y para garantizar que un documento no se puede abrir en más de una forma o de formas no compatibles.
+- Mantener una lista en ejecución de todos los documentos abiertos actualmente en una tabla de documentos en ejecución (RDT) para coordinar la persistencia de los documentos y garantizar que un documento no se puede abrir de más de una manera o de maneras incompatibles.
 
-- Compatibilidad con la interfaz de enrutamiento de comandos y control de comandos, `IOleCommandTarget`.
+- La compatibilidad con el enrutamiento de comandos y la interfaz de control de comandos `IOleCommandTarget`.
 
-- Al cargar VSPackages en los momentos adecuados. Un VSPackage de carga de retraso es necesaria para mejorar el rendimiento del shell.
+- Cargar VSPackages en los momentos adecuados. La carga retrasada de un VSPackage es necesaria para mejorar el rendimiento del shell.
 
-- Administrar determinados servicios compartidos, como <xref:Microsoft.VisualStudio.Shell.Interop.SVsShell>, lo que proporciona la funcionalidad básica de shell, y <xref:Microsoft.VisualStudio.Shell.Interop.SVsUIShell>, que proporciona la funcionalidad básica de ventanas.
+- Administrar determinados servicios compartidos, como <xref:Microsoft.VisualStudio.Shell.Interop.SVsShell>, que proporciona la funcionalidad básica de Shell y <xref:Microsoft.VisualStudio.Shell.Interop.SVsUIShell>, que proporciona la funcionalidad básica de ventanas.
 
-- Administración de los archivos de solución (.sln). Las soluciones contienen grupos de proyectos relacionados, similares a los archivos del área de trabajo (.dsw) en Visual C++ 6.0.
+- Administrar los archivos de solución (. sln). Las soluciones contienen grupos de proyectos relacionados, similares a los archivos del área de trabajo ( C++ . DSW) en Visual 6,0.
 
-- Selección de todo el shell de seguimiento, el contexto y la moneda. El shell realiza un seguimiento de los siguientes tipos de elementos:
+- Realizar un seguimiento de la selección, el contexto y la moneda de todo el shell. El shell realiza un seguimiento de los siguientes tipos de elementos:
 
   - El proyecto actual
 
-  - El elemento de proyecto actual o un ItemID actual <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy>
+  - Elemento de proyecto actual o ItemID el <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy> actual
 
-  - La selección actual para el **propiedades** ventana o `SelectionContainer`
+  - La selección actual de la ventana **propiedades** o `SelectionContainer`
 
-  - El contexto de interfaz de usuario, identificadores o CmdUIGuids que controlan la visibilidad de comandos, menús y barras de herramientas
+  - Los identificadores de contexto de la interfaz de usuario o CmdUIGuids que controlan la visibilidad de los comandos, menús y barras de herramientas.
 
-  - Los elementos actualmente activos, como la ventana activa, el documento y el Administrador de deshacer
+  - Los elementos activos actualmente, como la ventana activa, el documento y el administrador de deshacer
 
-  - Los atributos de contexto de usuario que controlan la Ayuda dinámica
+  - Los atributos de contexto de usuario que controlan la ayuda dinámica
 
-  El shell también Media en la comunicación entre VSPackages instalados y los servicios actuales. Admite las características principales del shell y pone a disposición de todos los VSPackages integrados en [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. Estas características principales incluyen los siguientes elementos:
+  El shell también media la comunicación entre los VSPackages instalados y los servicios actuales. Admite las características principales del shell y ponerlas a disposición de todos los VSPackages integrados en [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. Estas características principales incluyen los siguientes elementos:
 
-- **Acerca de** pantalla de presentación y de cuadro de diálogo
+- Cuadro **de diálogo acerca de** y pantalla de presentación
 
-- **Agregar nuevo y agregar elemento existente** cuadros de diálogo
+- Cuadro **de diálogo Agregar nuevo y Agregar elemento existente**
 
 - **Vista de clases** ventana y **Examinador de objetos**
 
-- **Referencias** cuadro de diálogo
+- Cuadro de diálogo **referencias**
 
-- **Esquema de documento** ventana
+- Ventana **esquema del documento**
 
-- **Ayuda dinámica** ventana
+- Ventana de **Ayuda dinámica**
 
 - **Buscar** y **reemplazar**
 
-- **Abrir proyecto** y **abrir archivo** cuadros de diálogo en el **New** menú
+- Cuadro de diálogo **Abrir proyecto** y **Abrir archivo** en el menú **nuevo**
 
-- **Opciones de** cuadro de diálogo en el **herramientas** menú
+- Cuadro de diálogo **Opciones** del menú **herramientas**
 
 - Ventana de **propiedades**
 
