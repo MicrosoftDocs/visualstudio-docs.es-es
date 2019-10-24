@@ -12,14 +12,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 03d24770c90ebd225fa37dd7f60d794781e79e7e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 6ac6eea93daf9b0ef7d8169a4f765c249f3b9ee4
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62828451"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72743256"
 ---
-# <a name="idialinenumbergetcolumnnumber"></a>IDiaLineNumber::get_columnNumber
+# <a name="idialinenumberget_columnnumber"></a>IDiaLineNumber::get_columnNumber
 Recupera el número de columna donde comienza la expresión o instrucción.
 
 ## <a name="syntax"></a>Sintaxis
@@ -33,13 +33,13 @@ HRESULT get_columnNumber ( 
 #### <a name="parameters"></a>Parámetros
  `pRetVal`
 
-[out] Devuelve el número de columna donde comienza la expresión o instrucción. Si el valor es cero, la información de columna no está presente.
+enuncia Devuelve el número de columna donde comienza la expresión o instrucción. Si el valor es cero, la información de la columna no está presente.
 
 ## <a name="return-value"></a>Valor devuelto
  Si la operación se realiza correctamente, devuelve `S_OK`. Devuelve `S_FALSE` si no se admite esta propiedad. De lo contrario, devuelve un código de error.
 
 ## <a name="remarks"></a>Comentarios
- El valor de columna devuelto por este método es un desplazamiento de bytes en la línea al primer carácter de la instrucción en la línea.
+ El valor de columna devuelto por este método es un desplazamiento de bytes en la línea hasta el primer carácter de la instrucción de la línea.
 
 ## <a name="see-also"></a>Vea también
 - [IDiaLineNumber](../../debugger/debug-interface-access/idialinenumber.md)

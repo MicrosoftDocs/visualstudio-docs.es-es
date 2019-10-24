@@ -1,5 +1,5 @@
 ---
-title: SccRemove (función) | Documentos de Microsoft
+title: Función SccRemove | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -12,15 +12,15 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 70413c2e446f8ed226a58eb8ddfe62ede4a1d61f
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 7ff7299868b96aedb7cc096b4e939a0f8015aeb8
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66338623"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72720773"
 ---
 # <a name="sccremove-function"></a>SccRemove (Función)
-Esta función elimina los archivos del sistema de control de código fuente.
+Esta función elimina archivos del sistema de control de código fuente.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -39,48 +39,48 @@ SCCRTN SccRemove(
 #### <a name="parameters"></a>Parámetros
  pvContext
 
-[in] La estructura de contexto de complemento de control de origen.
+de Estructura de contexto del complemento de control de código fuente.
 
- hWnd
+ Identificador
 
-[in] Identificador de la ventana del IDE que puede usar el complemento de control de código fuente como un elemento primario para los cuadros de diálogo que proporciona.
+de Identificador de la ventana del IDE que el complemento de control de código fuente puede utilizar como elemento primario para los cuadros de diálogo que proporciona.
 
- nFiles
+ N archivos
 
-[in] Número de archivos especificados en el `lpFileNames` matriz.
+de Número de archivos especificados en la matriz de `lpFileNames`.
 
  lpFileNames
 
-[in] Matriz de nombres de ruta de acceso local completa de archivos que se va a quitar.
+de Matriz de nombres de ruta de acceso local completa de los archivos que se van a quitar.
 
  lpComment
 
-[in] El comentario que se aplicará a cada archivo que se va a quitar.
+de Comentario que se va a aplicar a cada archivo que se va a quitar.
 
  Opciones
 
-[in] Marcas de comando (sin usar).
+de Marcas de comando (sin usar).
 
  pvOptions
 
-[in] Opciones de específicas del complemento de control de código fuente.
+de Opciones específicas del complemento de control de código fuente.
 
 ## <a name="return-value"></a>Valor devuelto
- La implementación de complemento de control de origen de esta función debe devolver uno de los valores siguientes:
+ Se espera que la implementación del complemento de control de código fuente de esta función devuelva uno de los siguientes valores:
 
 |Valor|Descripción|
 |-----------|-----------------|
-|SCC_OK|Eliminación fue correcta.|
+|SCC_OK|Eliminación correcta.|
 |SCC_E_FILENOTCONTROLLED|El archivo seleccionado no está bajo control de código fuente.|
 |SCC_E_OPNOTSUPPORTED|El sistema de control de código fuente no admite esta operación.|
-|SCC_E_ISCHECKEDOUT|No se puede quitar un archivo porque un usuario actualmente tiene desprotegido.|
-|SCC_E_ACCESSFAILURE|Hubo un problema al obtener acceso el sistema de control de código fuente, probablemente debido a problemas de red o de contención.|
-|SCC_E_NOTAUTHORIZED|El usuario no puede realizar esta operación.|
+|SCC_E_ISCHECKEDOUT|No se puede quitar un archivo porque un usuario tiene desprotegido.|
+|SCC_E_ACCESSFAILURE|Hubo un problema al obtener acceso al sistema de control de código fuente, probablemente debido a problemas de red o de contención.|
+|SCC_E_NOTAUTHORIZED|El usuario no tiene permiso para realizar esta operación.|
 |SCC_E_NONSPECIFICERROR|Error no específico; no se quitó el archivo.|
 |SCC_I_OPERATIONCANCELED|La operación se canceló antes de completarse.|
 
 ## <a name="remarks"></a>Comentarios
- Esta función quita los archivos del sistema de control de código fuente, pero no los elimina de la unidad de disco duro local del usuario.
+ Esta función quita los archivos del sistema de control de código fuente, pero no Los elimina del disco duro local del usuario.
 
 ## <a name="see-also"></a>Vea también
 - [Funciones de API de complemento de control de código fuente](../extensibility/source-control-plug-in-api-functions.md)

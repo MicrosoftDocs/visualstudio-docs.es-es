@@ -1,5 +1,5 @@
 ---
-title: Limitaciones sobre la depuración de WCF | Microsoft Docs
+title: Limitaciones de la depuración de WCF | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 34b69ac69c580fbd40278b5b7a0c9be26d672fa3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c70195cdc0a6a03395744c63f556ce8c2970aa30
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62905973"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72731505"
 ---
 # <a name="limitations-on-wcf-debugging"></a>Limitaciones de la depuración de WCF
 Hay tres maneras mediante las que puede empezar a depurar un servicio WCF:
@@ -74,11 +74,11 @@ Hay tres maneras mediante las que puede empezar a depurar un servicio WCF:
   ```
 
 ## <a name="self-hosting"></a>Autohospedaje
- Un *servicio que se hospeda a sí mismo* es un servicio WCF que no se ejecuta dentro de IIS, el host de servicio WCF o el servidor de desarrollo de [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)]. Para obtener información sobre cómo depurar un servicio autohospedado, vea [Cómo: Depurar un servicio WCF Autohospedado](../debugger/how-to-debug-a-self-hosted-wcf-service.md).
+ Un *servicio que se hospeda a sí mismo* es un servicio WCF que no se ejecuta dentro de IIS, el host de servicio WCF o el servidor de desarrollo de [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)]. Para obtener información sobre cómo depurar un servicio autohospedado, vea [Cómo: depurar un servicio WCF autohospedado](../debugger/how-to-debug-a-self-hosted-wcf-service.md).
 
 ## <a name="self-hosting"></a>Autohospedaje
- Para permitir la depuración de aplicaciones de [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 3.0 o 3.5, se debe instalar [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 3.0 o 3.5 antes de instalar [!INCLUDE[vs_dev10_long](../code-quality/includes/vs_dev10_long_md.md)]. Si [!INCLUDE[vs_dev10_long](../code-quality/includes/vs_dev10_long_md.md)] se instala antes de [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 3.0 o 3.5, se produce un error al intentar depurar una aplicación de [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 3.0 o 3.5. El mensaje de error es, "No se puede ir automáticamente al servidor". Para corregir este problema, use el Windows **Panel de Control** > **programas y características** para reparar su [!INCLUDE[vs_dev10_long](../code-quality/includes/vs_dev10_long_md.md)] instalación.
+ Para permitir la depuración de aplicaciones de [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 3.0 o 3.5, se debe instalar [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 3.0 o 3.5 antes de instalar [!INCLUDE[vs_dev10_long](../code-quality/includes/vs_dev10_long_md.md)]. Si [!INCLUDE[vs_dev10_long](../code-quality/includes/vs_dev10_long_md.md)] se instala antes de [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 3.0 o 3.5, se produce un error al intentar depurar una aplicación de [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 3.0 o 3.5. El mensaje de error es, "No se puede ir automáticamente al servidor". Para corregir este problema, use el **Panel de control** de Windows  > **programas y características** para reparar la instalación de [!INCLUDE[vs_dev10_long](../code-quality/includes/vs_dev10_long_md.md)].
 
 ## <a name="see-also"></a>Vea también
 - [Depurar servicios WCF](../debugger/debugging-wcf-services.md)
-- [Cómo: Depuración de un servicio WCF autohospedado](../debugger/how-to-debug-a-self-hosted-wcf-service.md)
+- [Cómo: Depurar un servicio WCF independiente](../debugger/how-to-debug-a-self-hosted-wcf-service.md)

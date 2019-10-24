@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 397873a65176024327f371e9727b15984cd7d03f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 0a37052944f74e36b488541074a0033f5b8aca9e
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62828393"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72743132"
 ---
-# <a name="idialinenumbergetstatement"></a>IDiaLineNumber::get_statement
-Recupera una marca que indica que esta información de línea describe el principio de una instrucción, en lugar de una expresión, en el código fuente del programa.
+# <a name="idialinenumberget_statement"></a>IDiaLineNumber::get_statement
+Recupera una marca que indica que esta información de línea describe el principio de una instrucción, en lugar de una expresión, en el origen del programa.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -33,13 +33,13 @@ HRESULT get_statement ( 
 #### <a name="parameters"></a>Parámetros
  `pRetVal`
 
-[out] Devuelve `TRUE` si esta información de línea describe al principio de una instrucción en el código fuente del programa.
+enuncia Devuelve `TRUE` si esta información de línea describe el principio de una instrucción en el origen del programa.
 
 ## <a name="return-value"></a>Valor devuelto
  Si la operación se realiza correctamente, devuelve `S_OK`. Devuelve `S_FALSE` si no se admite esta propiedad. De lo contrario, devuelve un código de error.
 
 ## <a name="remarks"></a>Comentarios
- Las instrucciones pueden abarcar varias líneas. Este método indica si el número de línea asociado marca el principio de este tipo en una instrucción multilínea.
+ Las instrucciones pueden abarcar varias líneas. Este método indica si el número de línea asociado marca el principio de esta instrucción de varias líneas.
 
 ## <a name="see-also"></a>Vea también
 - [IDiaLineNumber](../../debugger/debug-interface-access/idialinenumber.md)

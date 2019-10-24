@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2bec9b7f41051982bf0fee0fb0017af6c4fd3d4a
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: da52e72f218d7ef3207d13c843df7e1bc5f8c40b
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64792094"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72739339"
 ---
-# <a name="idiasymbolgetsignature"></a>IDiaSymbol::get_signature
-Recupera el valor de la firma del símbolo.
+# <a name="idiasymbolget_signature"></a>IDiaSymbol::get_signature
+Recupera el valor de firma del símbolo.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -33,10 +33,10 @@ HRESULT get_signature ( 
 #### <a name="parameters"></a>Parámetros
  `pRetVal`
 
-[out] Devuelve el valor de la firma del símbolo.
+enuncia Devuelve el valor de firma del símbolo.
 
 ## <a name="return-value"></a>Valor devuelto
- Si es correcto, devuelve `S_OK`; en caso contrario, devuelve `S_FALSE` o un código de error.
+ Si se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve `S_FALSE` o un código de error.
 
 > [!NOTE]
 > Un valor devuelto de `S_FALSE` significa que la propiedad no está disponible para el símbolo.

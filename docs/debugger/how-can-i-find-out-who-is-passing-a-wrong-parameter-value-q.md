@@ -1,5 +1,5 @@
 ---
-title: Averiguar quién está pasando un valor de parámetro erróneo | Microsoft Docs
+title: Averiguar quién está pasando un valor de parámetro incorrecto | Microsoft Docs
 ms.custom: seodec18
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -22,12 +22,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 548851a4e5811864e60d3a14368d6380f14f9e7e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 42884cd6498f00cfe2df2d0396ff9ea6b03c2f98
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62894884"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72734240"
 ---
 # <a name="how-can-i-find-out-who-is-passing-a-wrong-parameter-value"></a>Cómo averiguar quién está pasando un valor de parámetro erróneo
 ## <a name="problem-description"></a>Descripción del problema
@@ -41,7 +41,7 @@ ms.locfileid: "62894884"
 
 2. Haga clic con el botón derecho en el punto de interrupción y seleccione **Condición**.
 
-3. En el cuadro de diálogo **Condición del punto de interrupción**, active la casilla **Condición**. Consulte [avanzada de puntos de interrupción](../debugger/using-breakpoints.md#BKMK_Specify_a_breakpoint_condition_using_a_code_expression).
+3. En el cuadro de diálogo **Condición del punto de interrupción**, active la casilla **Condición**. Vea [puntos de interrupción avanzados](../debugger/using-breakpoints.md#BKMK_Specify_a_breakpoint_condition_using_a_code_expression).
 
 4. Escriba una expresión, como `Var==3`, en el cuadro de texto, donde `Var` es el nombre del parámetro que contiene el valor no válido, y `3` es el valor no válido que se le ha pasado.
 
@@ -49,7 +49,7 @@ ms.locfileid: "62894884"
 
 6. Ejecute el programa otra vez. El punto de interrupción hace que el programa se detenga al principio de la función cuando el parámetro `Var` sea `3`.
 
-7. Utilice la ventana Pila de llamadas para detectar la función que realizó la llamada y navegar hasta su código fuente. Para obtener más información, vea [Cómo: usar la ventana Pila de llamadas](../debugger/how-to-use-the-call-stack-window.md).
+7. Utilice la ventana Pila de llamadas para detectar la función que realizó la llamada y navegar hasta su código fuente. Para obtener más información, vea [Cómo: usar la ventana pila de llamadas](../debugger/how-to-use-the-call-stack-window.md).
 
 ## <a name="see-also"></a>Vea también
 - [Preguntas más frecuentes sobre la depuración de código nativo](../debugger/debugging-native-code-faqs.md)

@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 60f39b55ffc14d423d4197765ef89784940f137b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 6710a20bb5a01d3d342c31b48f1f96e7e2a2062a
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62832240"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72741764"
 ---
-# <a name="idiastackframegetallocatesbasepointer"></a>IDiaStackFrame::get_allocatesBasePointer
-Recupera una marca que indica si el puntero base se asigna para el código en este intervalo de direcciones.
+# <a name="idiastackframeget_allocatesbasepointer"></a>IDiaStackFrame::get_allocatesBasePointer
+Recupera una marca que indica si el puntero base está asignado para el código de este intervalo de direcciones.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -33,7 +33,7 @@ HRESULT get_allocatesBasePointer ( 
 #### <a name="parameters"></a>Parámetros
  `pRetVal`
 
-[out] Devuelve `TRUE` si se asigna un puntero de base para el código de este marco; de lo contrario, devuelve `FALSE`.
+enuncia Devuelve `TRUE` si se asigna un puntero base para el código de este marco; de lo contrario, devuelve `FALSE`.
 
 ## <a name="return-value"></a>Valor devuelto
  Si la operación se realiza correctamente, devuelve `S_OK`. Devuelve `S_FALSE` si no se admite la propiedad. De lo contrario, devuelve un código de error.

@@ -10,14 +10,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f714e5637776d6a0606246d339d3f9d2ccd9f19a
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: e849bea3bd5480f480001c091e5988fa5e6b5444
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "62835544"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72739438"
 ---
-# <a name="idiasymbolgetregistertype"></a>IDiaSymbol::get_registerType
+# <a name="idiasymbolget_registertype"></a>IDiaSymbol::get_registerType
 Recupera el tipo de registro.
 
 ## <a name="syntax"></a>Sintaxis
@@ -30,10 +30,10 @@ HRESULT get_registerType(
 #### <a name="parameters"></a>Parámetros
  `pRetVal`
 
-[out] Un puntero a un `DWORD` que contiene el tipo de registro.
+enuncia Puntero a una `DWORD` que contiene el tipo de registro.
 
 ## <a name="return-value"></a>Valor devuelto
- Si es correcto, devuelve `S_OK`; en caso contrario, devuelve `S_FALSE` o un código de error.
+ Si se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve `S_FALSE` o un código de error.
 
 ## <a name="see-also"></a>Vea también
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

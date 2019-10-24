@@ -10,15 +10,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 283533b20614ea727be620669ea5ab66cf00e5ed
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 47c5827348c7b7cb450017a0e6176d71f555c841
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "62835779"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72739696"
 ---
-# <a name="idiasymbolgetnumberofacceleratorpointertags"></a>IDiaSymbol::get_numberOfAcceleratorPointerTags
-Devuelve el número de etiquetas de puntero de acelerador en una función de código auxiliar de C++ AMP.
+# <a name="idiasymbolget_numberofacceleratorpointertags"></a>IDiaSymbol::get_numberOfAcceleratorPointerTags
+Devuelve el número de etiquetas de puntero de acelerador en una C++ función de código auxiliar de amp.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -30,13 +30,13 @@ HRESULT get_numberOfAcceleratorPointerTags(
 #### <a name="parameters"></a>Parámetros
  `count`
 
-[out] Un puntero a un `DWORD` que contiene el número del Acelerador de etiquetas de puntero en un C++ función de código auxiliar de AMP.
+enuncia Puntero a una `DWORD` que contiene el número de etiquetas de puntero de acelerador C++ en una función de código auxiliar de amp.
 
 ## <a name="return-value"></a>Valor devuelto
- Si es correcto, devuelve `S_OK`; en caso contrario, devuelve `S_FALSE` o un código de error.
+ Si se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve `S_FALSE` o un código de error.
 
 ## <a name="remarks"></a>Comentarios
- Se llama a este método en un `IDiaSymbol` interfaz que corresponde a una función de código auxiliar del Acelerador C++ AMP.
+ Se llama a este método en una interfaz de `IDiaSymbol` que corresponde C++ a una función de código auxiliar del acelerador amp.
 
 ## <a name="see-also"></a>Vea también
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

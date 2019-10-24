@@ -1,5 +1,5 @@
 ---
-title: JIT optimización y depuración | Documentos de Microsoft
+title: Optimización y depuración JIT | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -16,35 +16,35 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7346b6fd8fbd483021437638f9e134ead88a0b93
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 12752acf75da70fa30666f9b1780256c94bde859
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62846328"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72731620"
 ---
 # <a name="jit-optimization-and-debugging"></a>Optimización y depuración JIT
-**Funcionan de las optimizaciones en. NET:** Si intenta depurar código, resulta más fácil cuando que el código está **no** optimizado. Esto es porque cuando se optimiza el código, el compilador y el tiempo de ejecución realizar cambios en el código emitido de CPU para que se ejecuta más rápido, pero tiene una asignación menos directa al código fuente original. Esto significa que los depuradores son con frecuencia no se puede indicará el valor de las variables locales y desplazarse por el código y los puntos de interrupción no funcionen según lo esperado.
+**Cómo funcionan las optimizaciones en .net:** Si está intentando depurar código, es más fácil cuando ese código **no** está optimizado. Esto se debe a que cuando se optimiza el código, el compilador y el tiempo de ejecución realizan cambios en el código de CPU emitido para que se ejecute más rápido, pero tiene una asignación menos directa al código fuente original. Esto significa que los depuradores a menudo no pueden indicar el valor de las variables locales, y los puntos de interrupción y la ejecución de código pueden no funcionar como se espera.
 
-Normalmente, la configuración de compilación de lanzamiento crea código optimizado y la configuración de compilación de depuración no es así. El `Optimize` propiedad de MSBuild controla si se le indica al compilador que optimice el código.
+Normalmente, la configuración de compilación de versión crea código optimizado y la configuración de compilación de depuración no. La propiedad `Optimize` MSBuild controla si se indica al compilador que optimice el código.
 
-En el ecosistema de. NET, se activa código de origen a las instrucciones de CPU en un proceso en dos pasos: en primer lugar, el compilador de C# convierte el texto que escriba en un formato binario intermedio llamado MSIL y escribe en archivos DLL. Más adelante, el tiempo de ejecución .NET convierte este MSIL en instrucciones de CPU. Pueden optimizar ambos pasos hasta cierto punto, pero el segundo paso realizado por el Runtime de .NET realiza las optimizaciones más importantes.
+En el ecosistema de .NET, el código se convierte en instrucciones de origen a CPU en un proceso de dos pasos C# : en primer lugar, el compilador convierte el texto que se escribe en un formato binario intermedio denominado MSIL y lo escribe en los archivos. dll. Después, el tiempo de ejecución de .NET convierte este MSIL en instrucciones de CPU. Ambos pasos se pueden optimizar hasta cierto punto, pero el segundo paso realizado por el tiempo de ejecución de .NET realiza las optimizaciones más significativas.
 
-**La opción 'Suprimir optimización JIT cargar el módulo (solo administrado)':** El depurador expone una opción que controla lo que sucede cuando se carga un archivo DLL compilado con optimizaciones habilitadas dentro del proceso de destino. Si esta opción está desactivada (el estado predeterminado), a continuación, cuando el tiempo de ejecución de .NET se compila el código MSIL en código de la CPU, que deja las optimizaciones habilitadas. Si la opción está activada, el depurador solicita que se ha deshabilitado las optimizaciones.
+**La opción ' suprimir optimización JIT al cargar el módulo (solo administrado) ':** El depurador expone una opción que controla lo que ocurre cuando un archivo DLL compilado con optimizaciones habilitadas se carga dentro del proceso de destino. Si esta opción está desactivada (el estado predeterminado), cuando el tiempo de ejecución de .NET compila el código MSIL en el código de CPU, deja las optimizaciones habilitadas. Si la opción está activada, el depurador solicita que se deshabiliten las optimizaciones.
 
-Para buscar el **Suprimir optimización JIT cargar el módulo (solo administrado)** opción, seleccione **herramientas** > **opciones**y, a continuación, seleccione el  **General** página bajo la **depuración** nodo.
+Para encontrar la opción **suprimir optimización JIT al cargar el módulo (solo administrado)** , seleccione **herramientas**  > **Opciones**y, a continuación, seleccione la página **General** en el nodo **depuración** .
 
-**Cuando debe activar esta opción:** Active esta opción cuando se descargan los archivos DLL de otro origen, como un paquete de nuget, y desea depurar el código de este archivo DLL. En orden para que funcione, también debe encontrar el archivo de símbolos (.pdb) de este archivo DLL.
+**Cuando deba activar esta opción:** Active esta opción cuando descargó los archivos dll de otro origen, como un paquete Nuget, y desea depurar el código en este archivo DLL. Para que esto funcione, también debe buscar el archivo de símbolos (. pdb) para este archivo DLL.
 
-Si solo está interesado en depurar el código que se va a crear localmente, es mejor dejar esta opción no está activada, como en algunos casos, al habilitar esta opción se retrasan significativamente la depuración. Hay dos razones para esto ralentizar:
+Si solo le interesa depurar el código que está creando localmente, es mejor dejar esta opción desactivada, como en algunos casos, si habilita esta opción, se ralentizará considerablemente la depuración. Hay dos motivos para que esto sea más lento:
 
-* Código optimizado se ejecuta más rápido. Si desactiva las optimizaciones para una gran cantidad de código, puede agregar el impacto de rendimiento.
-* Si tiene habilitado solo mi código, el depurador ni siquiera intentar y cargar los símbolos para los archivos DLL que se han optimizado. Buscar símbolos puede tardar mucho tiempo.
+* El código optimizado se ejecuta más rápido. Si va a desactivar las optimizaciones de gran cantidad de código, se puede Agregar el impacto en el rendimiento.
+* Si ha habilitado Solo mi código, el depurador no probará ni cargará símbolos para los archivos dll optimizados. La búsqueda de símbolos puede tardar mucho tiempo.
 
-**Limitaciones de esta opción:** Existen dos situaciones donde esta opción se realizará **no** trabajar:
+**Limitaciones de esta opción:** Hay dos situaciones en las que esta opción **no** funcionará:
 
-1. En situaciones donde va a adjuntar el depurador a un proceso ya se está ejecutando, esta opción no tendrá ningún efecto sobre los módulos que ya estaban cargados en el momento en que se ha adjuntado el depurador.
-2. Esta opción no tiene ningún efecto en los archivos DLL que se han compilado previamente (conocidas también como ngen'ed) en código nativo. Sin embargo, puede deshabilitar el uso del código compilado previamente, inicie el proceso con el entorno de que variable 'COMPlus_ZapDisable' establecido en '1'.
+1. En situaciones en las que se asocia el depurador a un proceso que ya se está ejecutando, esta opción no tendrá ningún efecto en los módulos que ya se cargaron en el momento en que se adjuntó el depurador.
+2. Esta opción no tiene ningún efecto en los archivos DLL que se han compilado previamente (a. k. a ngen'ed) en el código nativo. Sin embargo, puede deshabilitar el uso de código precompilado iniciando el proceso con la variable de entorno "COMPlus_ZapDisable" establecida en "1".
 
 ## <a name="see-also"></a>Vea también
 - [Depurar código administrado](../debugger/debugging-managed-code.md)

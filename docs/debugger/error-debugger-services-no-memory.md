@@ -1,5 +1,5 @@
 ---
-title: Servicios que se está quedando sin memoria del depurador | Microsoft Docs
+title: Se está agotando la memoria de los servicios del depurador | Microsoft Docs
 ms.date: 07/10/2019
 ms.topic: troubleshooting
 f1_keywords:
@@ -16,21 +16,21 @@ ms.author: isgarcia
 manager: caslan
 ms.workload:
 - multiple
-ms.openlocfilehash: 05664ffd056f69215e6fb00d6d49a59382a3692f
-ms.sourcegitcommit: da4079f5b6ec884baf3108cbd0519d20cb64c70b
+ms.openlocfilehash: 12215f9c740e68c4f2749a51b06c09a1385dae1a
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "67854022"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72737840"
 ---
-# <a name="debugger-services-running-out-of-memory"></a>Servicios que se está quedando sin memoria del depurador
-Los servicios de depuración se quedó sin memoria y ha provocado la finalización de la sesión de depuración.
+# <a name="debugger-services-running-out-of-memory"></a>Servicios del depurador que se quedan sin memoria
+El servicio de depuración se quedó sin memoria y causó la finalización de la sesión de depuración.
 
 ## <a name="to-investigate-this-error-on-windows"></a>Para investigar este error en Windows
-- Puede comprobar el gráfico de memoria de proceso el **herramientas de diagnóstico** ventana para ver si la aplicación de destino está experimentando un enorme crecimiento en la memoria. Si es así, use el **uso de memoria** herramienta para diagnosticar lo que es el problema subyacente, vea [analizar el uso de memoria](../profiling/memory-usage.md).
+- Puede comprobar el gráfico de memoria del proceso en la ventana **herramientas de diagnóstico** para ver si la aplicación de destino está experimentando un crecimiento enorme en la memoria. Si es así, use la herramienta **uso de memoria** para diagnosticar el problema subyacente, consulte [analizar el uso de memoria](../profiling/memory-usage.md).
 
-- Si la aplicación de destino no parece estar consumiendo demasiada memoria, use el **el Administrador de tareas** ventana para comprobar el uso de memoria de Visual Studio (devenv.exe), el proceso de trabajo (msvsmon.exe), o de VS Code (vsdbg.exe/vsdbg-ui.exe) para determinar si se trata de un problema de depurador. Si el proceso que se está quedando sin memoria es devenv.exe, considere la posibilidad de reducir el número de extensiones de Visual Studio que se ejecutan.
+- Si la aplicación de destino no parece estar consumiendo mucha memoria, use la ventana Administrador de **tareas** para desproteger el uso de memoria de Visual Studio (devenv. exe), el proceso de trabajo (msvsmon. exe) o de vs Code (vsdbg. exe/vsdbg-UI. exe) para determinar si se trata de un problema del depurador. Si el proceso que se está quedando sin memoria es devenv. exe, considere la posibilidad de reducir el número de extensiones de Visual Studio en ejecución.
 
 ## <a name="see-also"></a>Vea también
-- [Entrada de blog: Analizar la CPU y memoria durante la depuración](https://devblogs.microsoft.com/visualstudio/analyze-cpu-memory-while-debugging/)
+- [Entrada de blog: Análisis de la CPU y la memoria durante la depuración](https://devblogs.microsoft.com/visualstudio/analyze-cpu-memory-while-debugging/)
 - [Acerca de la administración de memoria](/windows/win32/memory/about-memory-management)
