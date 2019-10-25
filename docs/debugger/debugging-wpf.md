@@ -1,6 +1,6 @@
 ---
 title: Depurar WPF | Microsoft Docs
-ms.date: 11/04/2016
+ms.date: 10/22/2019
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -16,20 +16,23 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1e0887169f6f46d481a970c1b6f77a3805234df9
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 5cfe148f67d7fe21bd98d2442a4427270b84d5dd
+ms.sourcegitcommit: 978df2feb5e64228d2e3dd430b299a5c234cda17
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72738003"
+ms.lasthandoff: 10/24/2019
+ms.locfileid: "72888434"
 ---
 # <a name="debugging-wpf"></a>Depurar WPF
+
 [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] proporciona características adicionales para facilitar la depuración de aplicaciones WPF.
 
 ## <a name="related-topics"></a>Temas relacionados
 
 | Title | Descripción |
 | - | - |
+| [Escribir y depurar código XAML en ejecución](../xaml-tools/xaml-hot-reload.md) | Puede usar la recarga activa de XAML para explorar el árbol visual de un objeto de WPF y ver las propiedades de dependencia de WPF para los objetos de ese árbol. En este tema se describe cómo usar la recarga activa de XAML. |
+| [Inspeccionar las propiedades XAML durante la depuración](../xaml-tools/xaml-hot-reload.md) | Puede usar el árbol visual dinámico para explorar el árbol visual de un objeto de WPF y ver las propiedades de dependencia de WPF para los objetos de ese árbol. |
 | [Cómo: Usar el visualizador de árboles de WPF](../debugger/how-to-use-the-wpf-tree-visualizer.md) | Puede usar el visualizador de árboles de WPF para explorar el árbol visual de un objeto de WPF y ver las propiedades de dependencia de WPF para los objetos contenidos en ese árbol. En este tema se describe la interfaz de usuario del visualizador de árboles de WPF. |
 | [Cómo: Mostrar información de seguimiento de WPF](../debugger/how-to-display-wpf-trace-information.md) | [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] puede recibir información de seguimiento de la depuración de las aplicaciones WPF y mostrar esa información en la ventana **Salida**. En este tema se describe cómo habilitar y personalizar la presentación de la información de seguimiento de WPF. |
 

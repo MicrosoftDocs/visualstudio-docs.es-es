@@ -16,17 +16,20 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0adcca4acd5fc72d301d707ccdd831c86ef3e48f
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: bbc705a20f8d878d85dc6aba14c64178c76041ac
+ms.sourcegitcommit: 978df2feb5e64228d2e3dd430b299a5c234cda17
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72731924"
+ms.lasthandoff: 10/24/2019
+ms.locfileid: "72888398"
 ---
 # <a name="how-to-use-the-wpf-tree-visualizer"></a>Cómo: Usar el visualizador de árboles de WPF
 Puede usar el visualizador de árboles de WPF para explorar el árbol visual de un objeto de WPF y ver las propiedades de dependencia de WPF para los objetos contenidos en ese árbol. Para obtener más información sobre los árboles visuales, vea [árboles en WPF](/dotnet/framework/wpf/advanced/trees-in-wpf). Para obtener más información sobre las propiedades de dependencia, consulte [información general sobre las propiedades de dependencia](/dotnet/framework/wpf/advanced/dependency-properties-overview).
 
  Al abrir el visualizador de árboles de WPF, verá dos paneles: el **árbol visual** a la izquierda y las **propiedades del** panel _nombre_ **:** _tipo_ de la derecha. Seleccione cualquier objeto en el panel del **árbol visual** y las **propiedades del** panel _nombre_ **:** _tipo_ se actualizan automáticamente para mostrar las propiedades de ese objeto.
+
+ > [!NOTE]
+ > También puede usar el [árbol visual dinámico y el explorador de propiedades en directo](../xaml-tools/inspect-xaml-properties-while-debugging.md) para examinar el árbol visual de objetos de WPF. El visualizador de árboles de WPF es una característica heredada y no está en desarrollo activo.
 
 ### <a name="to-open-the-wpf-tree-visualizer"></a>Para abrir el visualizador de árboles de WPF
 
