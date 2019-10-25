@@ -15,12 +15,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 4abe5047bd7d6f17bb0dc23f4d92a1a842ee273a
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 15a34fdc4486a013999a6b53e34117008396c955
+ms.sourcegitcommit: 8589d85cc10710ef87e6363a2effa5ee5610d46a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72648750"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "72807010"
 ---
 # <a name="bind-wpf-controls-to-a-wcf-data-service"></a>Enlazar controles de WPF a un servicio de datos de WCF
 
@@ -46,7 +46,7 @@ Necesita los componentes siguientes para completar este tutorial:
 
 - Programa para la mejora
 
-- Acceder a una instancia en ejecución de SQL Server o SQL Server Express que tenga asociada la base de datos de ejemplo AdventureWorksLT. Puede descargar la base de datos AdventureWorksLT desde el [sitio web de CodePlex](http://go.microsoft.com/fwlink/?linkid=87843).
+- Acceder a una instancia en ejecución de SQL Server o SQL Server Express que tenga asociada la base de datos de ejemplo AdventureWorksLT. Puede descargar la base de datos AdventureWorksLT desde el [sitio web de CodePlex](https://archive.codeplex.com/?p=SqlServerSamples).
 
 El conocimiento previo de los siguientes conceptos es útil, aunque no necesario, para completar el tutorial:
 

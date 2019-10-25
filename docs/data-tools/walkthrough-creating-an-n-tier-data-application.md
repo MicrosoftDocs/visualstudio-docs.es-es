@@ -14,12 +14,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 944825c00e55fcdb3a1a8f1f0c11d3a37a25025c
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 8fad79423465ac3d90c426862f93f09d721c7df3
+ms.sourcegitcommit: 8589d85cc10710ef87e6363a2effa5ee5610d46a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72639399"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "72806991"
 ---
 # <a name="walkthrough-create-an-n-tier-data-application"></a>Tutorial: crear una aplicación de datos de n niveles
 Las aplicaciones de datos con *n niveles* son aplicaciones que acceden a datos y que están separadas en varias capas lógicas o *niveles*. Al separar los componentes de la aplicación en estos niveles individuales, se aumenta la facilidad de mantenimiento y la escalabilidad de la aplicación. Esto se consigue mediante una integración más sencilla de nuevas tecnologías, que se pueden aplicar a un solo nivel sin necesidad de volver a diseñar la solución completa. Una arquitectura típica con n niveles incluye un nivel de presentación, un nivel intermedio y una capa de datos. El nivel intermedio incluye normalmente una capa de acceso a datos, una capa de la lógica empresarial y componentes compartidos, tales como autenticación y validación. La capa de datos incluye una base de datos relacional. Las aplicaciones con n niveles normalmente almacenan la información confidencial en la capa de acceso a datos del nivel intermedio para aislar esa información de los usuarios finales que obtienen acceso al nivel de presentación. Para obtener más información, vea [información general sobre aplicaciones de datos con N niveles](../data-tools/n-tier-data-applications-overview.md).
@@ -48,7 +48,7 @@ Durante este tutorial, realizará los pasos siguientes:
 
 - Escribir código para rellenar las tablas de datos.
 
-![vínculo a vídeo](../data-tools/media/playvideo.gif) para una versión en vídeo de este tema, consulte [vídeo sobre cómo: Crear una aplicación de datos de n niveles](http://go.microsoft.com/fwlink/?LinkId=115188).
+![vínculo a vídeo](../data-tools/media/playvideo.gif) para una versión en vídeo de este tema, consulte [vídeo sobre cómo: Crear una aplicación de datos de n niveles](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2008/cc178916(v=vs.90)).
 
 ## <a name="prerequisites"></a>Requisitos previos
 En este tutorial se usa SQL Server Express LocalDB y la base de datos de ejemplo Northwind.

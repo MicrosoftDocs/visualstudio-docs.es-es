@@ -128,12 +128,12 @@ ms.author: mblome
 manager: markl
 ms.workload:
 - multiple
-ms.openlocfilehash: ca1e66defbce50a9119e817155bcc2a98d01af9d
-ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
+ms.openlocfilehash: 8437a18bf2b732ee3f12774b04baedf12003d554
+ms.sourcegitcommit: 8589d85cc10710ef87e6363a2effa5ee5610d46a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72442413"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "72806809"
 ---
 # <a name="annotating-function-parameters-and-return-values"></a>Anotar parámetros de función y valores devueltos
 En este artículo se describen los usos habituales de las anotaciones para parámetros de funciones simples, escalares y punteros a estructuras y clases, y la mayoría de los tipos de búferes.  En este artículo también se muestran patrones de uso comunes para las anotaciones. Para obtener más anotaciones relacionadas con las funciones, consulte [anotar el comportamiento](../code-quality/annotating-function-behavior.md)de la función.
@@ -245,19 +245,19 @@ En el caso de las anotaciones de la tabla siguiente, cuando se anota un parámet
 
 - `_In_reads_to_ptr_(p)`
 
-     Un puntero a una matriz para la que la expresión `p`  -  `_Curr_` (es decir, `p` menos `_Curr_`) se define mediante el estándar de lenguaje adecuado.  Los elementos anteriores a `p` deben ser válidos en el estado anterior.
+     Un puntero a una matriz para la que la expresión `p` - `_Curr_` (es decir, `p` menos `_Curr_`) se define mediante el estándar de lenguaje adecuado.  Los elementos anteriores a `p` deben ser válidos en el estado anterior.
 
 - `_In_reads_to_ptr_z_(p)`
 
-     Un puntero a una matriz terminada en null para la que la expresión `p`  -  `_Curr_` (es decir, `p` menos `_Curr_`) se define mediante el estándar de lenguaje adecuado.  Los elementos anteriores a `p` deben ser válidos en el estado anterior.
+     Un puntero a una matriz terminada en null para la que la expresión `p` - `_Curr_` (es decir, `p` menos `_Curr_`) se define mediante el estándar de lenguaje adecuado.  Los elementos anteriores a `p` deben ser válidos en el estado anterior.
 
 - `_Out_writes_to_ptr_(p)`
 
-     Un puntero a una matriz para la que la expresión `p`  -  `_Curr_` (es decir, `p` menos `_Curr_`) se define mediante el estándar de lenguaje adecuado.  Los elementos anteriores a `p` no tienen que ser válidos en el estado anterior y deben ser válidos en post-State.
+     Un puntero a una matriz para la que la expresión `p` - `_Curr_` (es decir, `p` menos `_Curr_`) se define mediante el estándar de lenguaje adecuado.  Los elementos anteriores a `p` no tienen que ser válidos en el estado anterior y deben ser válidos en post-State.
 
 - `_Out_writes_to_ptr_z_(p)`
 
-     Un puntero a una matriz terminada en null para la que la expresión `p`  -  `_Curr_` (es decir, `p` menos `_Curr_`) se define mediante el estándar de lenguaje adecuado.  Los elementos anteriores a `p` no tienen que ser válidos en el estado anterior y deben ser válidos en post-State.
+     Un puntero a una matriz terminada en null para la que la expresión `p` - `_Curr_` (es decir, `p` menos `_Curr_`) se define mediante el estándar de lenguaje adecuado.  Los elementos anteriores a `p` no tienen que ser válidos en el estado anterior y deben ser válidos en post-State.
 
 ## <a name="optional-pointer-parameters"></a>Parámetros de puntero opcionales
 
@@ -288,7 +288,7 @@ Los parámetros de puntero de salida requieren una notación especial para elimi
 
    El parámetro puede ser NULL y en el estado posterior la ubicación señalada puede ser null.
 
-  En la tabla siguiente, se insertan subcadenas adicionales en el nombre de la anotación para calificar más el significado de la anotación.  Las diversas subcadenas son `_z`, `_COM_`, `_buffer_`, `_bytebuffer_` y `_to_`.
+  En la tabla siguiente, se insertan subcadenas adicionales en el nombre de la anotación para calificar más el significado de la anotación.  Las diversas subcadenas son `_z`, `_COM_`, `_buffer_`, `_bytebuffer_`y `_to_`.
 
 > [!IMPORTANT]
 > Si la interfaz que va a anotar es COM, utilice el formulario COM de estas anotaciones. No use las anotaciones COM con ninguna otra interfaz de tipo.
@@ -361,7 +361,7 @@ Los parámetros de puntero de salida requieren una notación especial para elimi
 
 ## <a name="output-reference-parameters"></a>Parámetros de referencia de salida
 
-Un uso común del parámetro de referencia es para los parámetros de salida.  En el caso de los parámetros de referencia de salida simples, por ejemplo, `int&`, `_Out_` proporciona la semántica correcta.  Sin embargo, cuando el valor de salida es un puntero (por ejemplo `int *&`), las anotaciones de puntero equivalentes como `_Outptr_ int **` no proporcionan la semántica correcta.  Para expresar de manera concisa la semántica de los parámetros de referencia de salida para los tipos de puntero, use estas anotaciones compuestas:
+Un uso común del parámetro de referencia es para los parámetros de salida.  En el caso de los parámetros de referencia de salida simples, por ejemplo, `int&`,`_Out_` proporciona la semántica correcta.  Sin embargo, cuando el valor de salida es un puntero (por ejemplo `int *&`), las anotaciones de puntero equivalentes como `_Outptr_ int **` no proporcionan la semántica correcta.  Para expresar de manera concisa la semántica de los parámetros de referencia de salida para los tipos de puntero, use estas anotaciones compuestas:
 
 **Anotaciones y descripciones**
 
@@ -517,7 +517,7 @@ El valor devuelto de una función es similar a un parámetro `_Out_` pero está 
 
 ## <a name="related-resources"></a>Recursos relacionados
 
-[Blog del equipo de análisis de código](http://go.microsoft.com/fwlink/?LinkId=251197)
+[Blog del equipo de análisis de código](https://blogs.msdn.microsoft.com/codeanalysis/)
 
 ## <a name="see-also"></a>Vea también
 

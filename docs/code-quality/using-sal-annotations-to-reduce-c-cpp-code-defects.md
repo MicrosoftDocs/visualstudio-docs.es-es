@@ -12,12 +12,12 @@ ms.author: mblome
 manager: markl
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 5b7d17b90ab195e41a5b3dacb3b2ab4985dce245
-ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
+ms.openlocfilehash: 506e8516c7a7bbc0ccc610b843763017ae90f547
+ms.sourcegitcommit: 8589d85cc10710ef87e6363a2effa5ee5610d46a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72448748"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "72807063"
 ---
 # <a name="using-sal-annotations-to-reduce-cc-code-defects"></a>Utilizar anotaciones SAL para reducir defectos de código de C/C++
 SAL es el lenguaje de anotación de código fuente de Microsoft. Mediante el uso de anotaciones de código fuente, puede hacer que la intención detrás del código sea explícita. Estas anotaciones también permiten que las herramientas de análisis estático automatizado analicen el código con más precisión, con menos falsos positivos y falsos negativos.
@@ -57,7 +57,7 @@ En los artículos de esta sección de la documentación se describen aspectos de
      Proporciona ejemplos que muestran cómo usar anotaciones SAL. También se explican los errores comunes.
 
 ## <a name="related-resources"></a>Recursos relacionados
-[Blog del equipo de análisis de código](http://go.microsoft.com/fwlink/?LinkId=251197)
+[Blog del equipo de análisis de código](https://blogs.msdn.microsoft.com/codeanalysis/)
 
 ## <a name="see-also"></a>Vea también
-[Anotaciones de SAL 2,0 para controladores de Windows](http://go.microsoft.com/fwlink/?LinkId=250979)
+[Anotaciones de SAL 2,0 para controladores de Windows](/windows-hardware/drivers/devtest/sal-2-annotations-for-windows-drivers)

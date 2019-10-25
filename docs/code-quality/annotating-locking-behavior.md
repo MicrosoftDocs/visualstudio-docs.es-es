@@ -32,12 +32,12 @@ ms.author: mblome
 manager: markl
 ms.workload:
 - multiple
-ms.openlocfilehash: 2460ca1c76eb43bdff89c87c880f405cdce12b48
-ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
+ms.openlocfilehash: 26c788319331d0da4024844b50b4c495ed2c3a37
+ms.sourcegitcommit: 8589d85cc10710ef87e6363a2effa5ee5610d46a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72446317"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "72806769"
 ---
 # <a name="annotating-locking-behavior"></a>Anotar comportamiento de bloqueo
 Para evitar errores de simultaneidad en el programa multiproceso, siga siempre una disciplina de bloqueo adecuada y use anotaciones SAL.
@@ -115,7 +115,7 @@ Normalmente, los bloqueos inteligentes encapsulan los bloqueos nativos y adminis
 |`_Moves_lock_(target, source)`|Describe `move constructor` operación que transfiere el estado de bloqueo del objeto de `source` a la `target`. El `target` se considera un objeto recién construido, por lo que cualquier Estado que tenía antes se pierde y se reemplaza por el estado `source`. El `source` también se restablece a un estado limpio sin recuentos de bloqueos o destinos de alias, pero los alias que apuntan a él permanecen inalterados.|
 |`_Replaces_lock_(target, source)`|Describe la semántica `move assignment operator` en la que se libera el bloqueo de destino antes de transferir el estado del origen. Esto puede considerarse como una combinación de `_Moves_lock_(target, source)` precedida por un `_Releases_lock_(target)`.|
 |`_Swaps_locks_(left, right)`|Describe el comportamiento de `swap` estándar, que presupone que los objetos `left` y `right` intercambiar su estado. El estado intercambiado incluye el recuento de bloqueos y el destino de alias, si está presente. Los alias que apuntan a los objetos `left` y `right` permanecen inalterados.|
-|`_Detaches_lock_(detached, lock)`|Describe un escenario en el que un tipo de contenedor de bloqueo permite la desasociación con su recurso contenido. Esto es similar a cómo funciona `std::unique_ptr` con su puntero interno: permite a los programadores extraer el puntero y dejar su contenedor de puntero inteligente en un estado limpio. @No__t_0 admite una lógica similar y se puede implementar en contenedores de bloqueo personalizados. El bloqueo separado conserva su estado (recuento de bloqueos y destino de alias, si existe), mientras que el contenedor se restablece para que contenga un recuento de bloqueos cero y ningún destino de alias, mientras se conservan sus propios alias. No hay ninguna operación en los recuentos de bloqueos (liberación y adquisición). Esta anotación se comporta exactamente como `_Moves_lock_`, salvo que el argumento desasociado debe ser `return` en lugar de `this`.|
+|`_Detaches_lock_(detached, lock)`|Describe un escenario en el que un tipo de contenedor de bloqueo permite la desasociación con su recurso contenido. Esto es similar a cómo funciona `std::unique_ptr` con su puntero interno: permite a los programadores extraer el puntero y dejar su contenedor de puntero inteligente en un estado limpio. `std::unique_lock` admite una lógica similar y se puede implementar en contenedores de bloqueo personalizados. El bloqueo separado conserva su estado (recuento de bloqueos y destino de alias, si existe), mientras que el contenedor se restablece para que contenga un recuento de bloqueos cero y ningún destino de alias, mientras se conservan sus propios alias. No hay ninguna operación en los recuentos de bloqueos (liberación y adquisición). Esta anotación se comporta exactamente como `_Moves_lock_`, salvo que el argumento desasociado debe ser `return` en lugar de `this`.|
 
 ## <a name="see-also"></a>Vea también
 
@@ -127,4 +127,4 @@ Normalmente, los bloqueos inteligentes encapsulan los bloqueos nativos y adminis
 - [Especificar cuándo y dónde se aplica una anotación](../code-quality/specifying-when-and-where-an-annotation-applies.md)
 - [Funciones intrínsecas](../code-quality/intrinsic-functions.md)
 - [Procedimientos recomendados y ejemplos](../code-quality/best-practices-and-examples-sal.md)
-- [Blog del equipo de análisis de código](http://go.microsoft.com/fwlink/p/?LinkId=251197)
+- [Blog del equipo de análisis de código](https://blogs.msdn.microsoft.com/codeanalysis/)

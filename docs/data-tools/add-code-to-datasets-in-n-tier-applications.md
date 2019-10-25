@@ -13,12 +13,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 3e5b3e44e1de085b5389ad0f50aed758f09a2759
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 0002339b0a1aa2200894d701f04f343193376c4b
+ms.sourcegitcommit: 8589d85cc10710ef87e6363a2effa5ee5610d46a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72648951"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "72807032"
 ---
 # <a name="add-code-to-datasets-in-n-tier-applications"></a>Adición de código a conjuntos de datos en aplicaciones de n niveles
 
