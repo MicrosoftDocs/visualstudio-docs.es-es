@@ -21,16 +21,16 @@ ms.author: mblome
 manager: markl
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 3a20637b7c7c3afcf594d1498b6030c685e4be72
-ms.sourcegitcommit: e95dd8cedcd180e0bce6a75c86cf861757918290
+ms.openlocfilehash: 515b9b7eb1b1a4d2dbee6329be782386b8370338
+ms.sourcegitcommit: 8589d85cc10710ef87e6363a2effa5ee5610d46a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/09/2019
-ms.locfileid: "72163064"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "72806311"
 ---
 # <a name="code-analysis-for-cc-overview"></a>Análisis de código para obtener información general de C/C++
 
-La herramienta deC++ análisis de código c/proporciona información sobre posibles defectos en elC++ código fuente de c/. Entre los errores de codificación más frecuentes notificados por esta herramienta se incluyen saturaciones de búfer, memoria sin inicializar, desreferencias de puntero NULL, y pérdidas de memoria y recursos. La herramienta también puede ejecutar comprobaciones en las [ C++ instrucciones básicas](http://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md).
+La herramienta deC++ análisis de código c/proporciona información sobre posibles defectos en elC++ código fuente de c/. Entre los errores de codificación más frecuentes notificados por esta herramienta se incluyen saturaciones de búfer, memoria sin inicializar, desreferencias de puntero NULL, y pérdidas de memoria y recursos. La herramienta también puede ejecutar comprobaciones en las [ C++ instrucciones básicas](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md).
 
 ## <a name="ide-integrated-development-environment-integration"></a>Integración del IDE (entorno de desarrollo integrado)
 
@@ -46,11 +46,11 @@ También puede usar la herramienta de análisis desde la línea de comandos, tal
 C:\>cl /analyze Sample.cpp
 ```
 
-**Visual Studio 2017, versión 15.7 y posteriores:** Puede ejecutar la herramienta desde la línea de comandos con cualquier sistema de compilación, incluido CMake.
+**Visual Studio 2017 versión 15,7 y versiones posteriores:** Puede ejecutar la herramienta desde la línea de comandos con cualquier sistema de compilación, incluido CMake.
 
 ## <a name="pragma-support"></a>compatibilidad con #pragma
 
-Puede usar la Directiva `#pragma` para tratar las advertencias como errores. habilitar o deshabilitar advertencias y suprimir advertencias para líneas de código individuales. Para obtener más información, vea [Directives pragma y la palabra clave __pragma](https://docs.microsoft.com/cpp/preprocessor/pragma-directives-and-the-pragma-keyword).
+Puede usar la Directiva `#pragma` para tratar las advertencias como errores. habilitar o deshabilitar advertencias y suprimir advertencias para líneas de código individuales. Para obtener más información, vea [Directives pragma y la palabra clave __pragma](/cpp/preprocessor/pragma-directives-and-the-pragma-keyword).
 
 ## <a name="annotation-support"></a>Compatibilidad con anotaciones
 
@@ -66,8 +66,8 @@ Puede usar las características integradas del sistema de compilación para ejec
 
 ## <a name="see-also"></a>Vea también
 
-- [Inicio rápido: Análisis de código para CC++/](quick-start-code-analysis-for-c-cpp.md)
-- [Tutorial: Analizar C/C++ code para los defectos @ no__t-1
+- [Inicio rápido: Análisis de código para C/C++](quick-start-code-analysis-for-c-cpp.md)
+- [Tutorial: analizar C/C++ code para detectar defectos](walkthrough-analyzing-c-cpp-code-for-defects.md)
 - [Análisis de código para advertencias de C/C++](code-analysis-for-c-cpp-warnings.md)
 - [Usar los comprobadores de C++ Core Guidelines](using-the-cpp-core-guidelines-checkers.md)
 - [C++Referencia del comprobador de directrices básicas](code-analysis-for-cpp-corecheck.md)

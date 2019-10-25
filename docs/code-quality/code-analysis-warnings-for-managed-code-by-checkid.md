@@ -263,12 +263,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 621615879f4e9ee61a2830fd93c53a2baf64b898
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: d8700d058c694afbea551e5b117a0e4a0461f2e8
+ms.sourcegitcommit: 8589d85cc10710ef87e6363a2effa5ee5610d46a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72622443"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "72806167"
 ---
 # <a name="code-analysis-warnings-for-managed-code-by-checkid"></a>Advertencias de análisis de código para código administrado por CheckId
 
@@ -339,7 +339,7 @@ En la tabla siguiente se enumeran las advertencias de análisis de código para 
 | CA1064 | [CA1064: Las excepciones deben ser públicas](../code-quality/ca1064.md) | Una excepción interna solo se ve dentro de su propio ámbito interno. Cuando la excepción esté fuera del ámbito interno, sólo se podrá usar la excepción base para detectarla. Si la excepción interna se hereda de <xref:System.Exception>, <xref:System.SystemException> o <xref:System.ApplicationException>, el código externo no tendrá información suficiente para saber qué hacer con la excepción. |
 | CA1065 | [CA1065: No producir excepciones en ubicaciones inesperadas](../code-quality/ca1065.md) | Un método que no se espera que produzca excepciones inicia una excepción. |
 | CA1068 | [CA1068: los parámetros de CancellationToken deben aparecer en último lugar](../code-quality/ca1068.md) | Un método tiene un parámetro CancellationToken que no es el último parámetro. |
-| CA1200 | [CA1200: evitar el uso de etiquetas CREF con un prefijo](../code-quality/ca1200.md) | El atributo [CREF](https://docs.microsoft.com/dotnet/csharp/programming-guide/xmldoc/cref-attribute) de una etiqueta de documentación XML significa "referencia de código". Especifica que el texto interno de la etiqueta es un elemento de código, como un tipo, un método o una propiedad. Evite el uso de etiquetas `cref` con prefijos, ya que impide que el compilador Compruebe las referencias. También impide que el entorno de desarrollo integrado (IDE) de Visual Studio busque y actualice estas referencias de símbolos durante las refactorizaciones. |
+| CA1200 | [CA1200: evitar el uso de etiquetas CREF con un prefijo](../code-quality/ca1200.md) | El atributo [CREF](/dotnet/csharp/programming-guide/xmldoc/cref-attribute) de una etiqueta de documentación XML significa "referencia de código". Especifica que el texto interno de la etiqueta es un elemento de código, como un tipo, un método o una propiedad. Evite el uso de etiquetas `cref` con prefijos, ya que impide que el compilador Compruebe las referencias. También impide que el entorno de desarrollo integrado (IDE) de Visual Studio busque y actualice estas referencias de símbolos durante las refactorizaciones. |
 | CA1300 | [CA1300: Especifique MessageBoxOptions](../code-quality/ca1300.md) | Para mostrar correctamente un cuadro de mensaje para las referencias culturales con escritura de derecha a izquierda, se deben pasar al método Show los miembros RightAlign y RtlReading de la enumeración MessageBoxOptions. |
 | CA1301 | [CA1301: Evitar aceleradores duplicados](../code-quality/ca1301.md) | Una tecla de acceso, también denominada acelerador, permite el acceso mediante teclado a un control utilizando la tecla ALT. Cuando varios controles tienen claves de acceso duplicadas, el comportamiento de la tecla de acceso no está bien definido. |
 | CA1302 | [CA1302: No codificar las cadenas específicas de configuración regional](../code-quality/ca1302.md) | La enumeración System.Environment.SpecialFolder contiene miembros que hacen referencia a carpetas del sistema especiales. La ubicación de estas carpetas puede tener diferentes valores en sistemas operativos distintos, el usuario puede cambiar alguna de estas ubicaciones y además, están adaptadas. El método Environment.GetFolderPath devuelve las ubicaciones asociadas a la enumeración Environment.SpecialFolder, adaptadas y adecuadas al equipo actualmente en ejecución. |
