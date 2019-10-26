@@ -29,18 +29,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 62fb77590a20b0e31648cab10f310851fd65820e
-ms.sourcegitcommit: 44e9b1d9230fcbbd081ee81be9d4be8a485d8502
+ms.openlocfilehash: 135c7c66c9c6602f8c2e32bbdc1ba6e2fd28f548
+ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/30/2019
-ms.locfileid: "70179994"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72911520"
 ---
 # <a name="create-a-visual-map-of-the-call-stack-while-debugging-c-visual-basic-c-javascript"></a>Crear un mapa visual de la pila de llamadas durante la depuraciónC#( C++, Visual Basic,, JavaScript)
 
 Cree un mapa de código para hacer un seguimiento visual de la pila de llamadas durante la depuración. Puede hacer anotaciones en el mapa para llevar a cabo el seguimiento de lo que hace el código y poder concentrarse en encontrar errores.
 
-Para ver un tutorial, vea este vídeo: [Vídeo: Depurar visualmente con la integración del depurador del mapa de código (Channel 9)](http://go.microsoft.com/fwlink/?LinkId=293418)
+Para ver un tutorial, vea este vídeo: [Vídeo: Depurar visualmente con la integración del depurador del mapa de código (Channel 9)](https://channel9.msdn.com/Series/Visual-Studio-2012-Premium-and-Ultimate-Overview/Visual-Studio-Ultimate-2012Debug-visually-with-Code-Map-debugger-integration)
 
 Para más información sobre los comandos y las acciones que se pueden usar con los mapas de código, vea [examinar y reorganizar mapas de código](../modeling/browse-and-rearrange-code-maps.md).
 
@@ -53,9 +53,9 @@ A continuación se muestra una vista rápida de un mapa de código:
 
 ## <a name="MapStack"></a> Asignar la pila de llamadas
 
-1. En un proyecto C#de Visual Studio Enterprise, C++Visual Basic, o JavaScript, inicie la depuración seleccionando depurar > **iniciar** depuración o presionando **F5**.
+1. En un proyecto C#de Visual Studio Enterprise, C++Visual Basic, o JavaScript, inicie la depuración seleccionando **depurar** > **iniciar depuración** o presionando **F5**.
 
-1. Después de que la aplicación entre en modo de interrupción o entre en una > función, seleccione el**mapa de código**de depuración o presione **Ctrl**+**MAYÚS**+ **`** .
+1. Después de que la aplicación entre en modo de interrupción o entre en una función, seleccione **Depurar** > **mapa de código**o presione **Ctrl**+**MAYÚS**+ **`** .
 
    La pila de llamadas actual aparece en naranja en un nuevo mapa de código:
 
@@ -77,7 +77,7 @@ De forma predeterminada, en el mapa solo se muestra su código. Para ver el cód
 - Haga clic con el botón secundario en la ventana **pila de llamadas** y seleccione **Mostrar código externo**:
 
   ![Mostrar código externo mediante la ventana pila de llamadas](../debugger/media/debuggermap_callstackmenu.png "DebuggerMap_CallStackMenu")
-- O bien, anule la selección de **Habilitar solo mi código** en Visual Studio **Tools** (o depurar) > **Opciones** > de depuración:
+- O bien, anule la selección de **habilitar solo mi código** en **herramientas** de Visual Studio (o **depurar**) > **Opciones** > **depuración**:
 
   ![Cuadro de diálogo Mostrar código externo mediante opciones](../debugger/media/debuggermap_debugoptions.png "DebuggerMap_DebugOptions")
 
@@ -90,16 +90,16 @@ Para controlar el diseño del mapa, seleccione el menú **diseño** en la barra 
 En el menú **diseño** , puede:
 
 - Cambie el diseño predeterminado.
-- Detener la reorganización automática del mapa, anulando la selección del **diseño automático durante**la depuración.
+- Detener la reorganización automática del mapa, anulando la selección del **diseño automático durante la depuración**.
 - Reorganice el mapa lo más bajo posible al agregar elementos, anulando la selección del **diseño incremental**.
 
 ## <a name="MakeNotes"></a> Hacer notas sobre el código
 
 Puede agregar comentarios para realizar un seguimiento de lo que ocurre en el código.
 
-Para agregar un comentario, haga clic con el botón derecho en el mapa de código y seleccione **Editar** > **nuevo comentario**y, a continuación, escriba el comentario.
+Para agregar un comentario, haga clic con el botón derecho en el mapa de código y seleccione **editar** > **nuevo comentario**y, a continuación, escriba el comentario.
 
-Para agregar una nueva línea a un comentario, presione **MAYÚS**+**entrar**.
+Para agregar una nueva línea a un comentario, presione **mayús**+**entrar**.
 
  ![Agregar un comentario a la pila de llamadas en el mapa de código](../debugger/media/debuggermap_addcomment.png "DebuggerMap_AddComment")
 
@@ -143,7 +143,7 @@ Continúe con la compilación del mapa para ver más código.
 
  Observe que todos los gestos de usuario en el mapa llaman a `Repaint`, salvo `undo`. Esto podría explicar por qué `undo` no funciona inmediatamente.
 
- Después de corregir el error y seguir ejecutando la aplicación, la asignación agrega la nueva llamada de `undo` a `Repaint`:
+ Después de corregir el error y seguir ejecutando la aplicación, el mapa agrega la nueva llamada desde `undo` a `Repaint`:
 
  ![Agregar nueva llamada de método a la pila de llamadas en el mapa de código](../debugger/media/debuggermap_addnewcallforrepaint.png "DebuggerMap_AddNewCallForRepaint")
 

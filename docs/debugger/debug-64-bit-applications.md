@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 849862f98fb90cdd742e1794ecb57c35a9aaca73
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 3a805942e85540b776ceacd972a09a71bb80cbb4
+ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72745585"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72911587"
 ---
 # <a name="debug-64-bit-applications"></a>Depurar aplicaciones de 64 bits
 Puede depurar una aplicación de 64 bits que se esté ejecutando en el equipo local o en un equipo remoto.
@@ -54,7 +54,7 @@ Puede depurar una aplicación de 64 bits que se esté ejecutando en el equipo lo
 
 ## <a name="see-also"></a>Vea también
 
-- [Aplicaciones de 64 bits](https://docs.microsoft.com/dotnet/framework/64-bit-apps)
+- [Aplicaciones de 64 bits](/dotnet/framework/64-bit-apps)
 - [Configurar programas de 64 bits](/cpp/build/configuring-programs-for-64-bit-visual-cpp)
 - [Compatibilidad de 64 bits del IDE de Visual Studio](../ide/visual-studio-ide-64-bit-support.md)
 - [Usar archivos de volcado de memoria](../debugger/using-dump-files.md)

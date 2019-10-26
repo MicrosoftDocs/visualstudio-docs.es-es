@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ceda2dd4e85c8db5b66ef753a748977204b8caab
-ms.sourcegitcommit: ea182703e922c74725045afc251bcebac305068a
+ms.openlocfilehash: 5e0d8839daac2d470f4275257bfcfbc83fc7a62f
+ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71211217"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72911406"
 ---
 # <a name="frequently-asked-questions-for-snapshot-debugging-in-visual-studio"></a>Preguntas frecuentes sobre depuración de instantáneas en Visual Studio
 
@@ -31,7 +31,7 @@ Si tiene varias instancias de la aplicación, los puntos de instantánea se apli
 
 #### <a name="how-does-the-snapshot-debugger-load-symbols"></a>¿Cómo Snapshot Debugger carga los símbolos?
 
-Snapshot Debugger requiere disponer de los símbolos correspondientes para la aplicación ya sea en el entorno local o implementados en Azure App Service. (Los archivos PDB insertados no son compatibles actualmente). Snapshot Debugger descarga los símbolos automáticamente de Azure App Service. A partir de Visual Studio 2017, versión 15.2, la implementación en Azure App Service también supone la implementación de los símbolos de la aplicación.
+Snapshot Debugger requiere disponer de los símbolos correspondientes para la aplicación ya sea en el entorno local o implementados en Azure App Service. (Los archivos PDB incrustados no se admiten actualmente). El Snapshot Debugger descarga automáticamente los símbolos del Azure App Service. A partir de Visual Studio 2017, versión 15.2, la implementación en Azure App Service también supone la implementación de los símbolos de la aplicación.
 
 #### <a name="does-the-snapshot-debugger-work-against-release-builds-of-my-application"></a>¿Snapshot Debugger funciona con las compilaciones de versión de mi aplicación?
 
@@ -125,7 +125,7 @@ En el caso de los conjuntos de escalado de máquinas virtuales o máquinas virtu
 
    - El certificado de servidor
       - La huella digital del certificado de servidor correspondiente se implementa como un secreto en Azure KeyVault. VS tratará de buscar o crear un KeyVault con el prefijo MSVSAZ * en la región correspondiente a la máquina virtual o al recurso de conjuntos de escalado de máquinas virtuales. Por lo tanto, todos los recursos de máquinas virtuales o conjuntos de escalado de máquinas virtuales implementados en esa región compartirán el mismo KeyVault.
-      - Para eliminar el secreto de huella digital del certificado de servidor, vaya al Azure Portal y busque el MSVSAZ * KeyVault en la misma región que hospeda el recurso. Eliminar el secreto que se debe etiquetar`remotedebugcert<<ResourceName>>`
+      - Para eliminar el secreto de huella digital del certificado de servidor, vaya al Azure Portal y busque el MSVSAZ * KeyVault en la misma región que hospeda el recurso. Elimine el secreto que se debe etiquetar `remotedebugcert<<ResourceName>>`
       - También tendrá que eliminar el secreto de servidor del recurso a través de PowerShell.
 
       Para las máquinas virtuales:
@@ -181,7 +181,7 @@ Hay varias maneras de deshabilitar el Snapshot Debugger:
 
 - Azure Portal > la hoja de recursos del conjunto de escalado de máquinas virtuales o máquinas virtuales > Extensiones > desinstalar la extensión Microsoft. Insights. VMDiagnosticsSettings
 
-- Cmdlets de PowerShell de [AZ PowerShell](https://docs.microsoft.com/powershell/azure/overview)
+- Cmdlets de PowerShell de [AZ PowerShell](/powershell/azure/overview)
 
    Máquina virtual:
 

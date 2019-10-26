@@ -28,12 +28,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9e2e6d69e4c621d6be81a00a61482b71199bc0fc
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: f7ac27b46252582b3982082a2a9a90a09223574f
+ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72745757"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72911614"
 ---
 # <a name="cc-assertions"></a>Aserciones de C/C++
 Una instrucción de aserción especifica una condición que se espera que sea cierta (valor true) en un punto del programa. Si esa condición no es "true", la aserción produce un error, la ejecución del programa se interrumpe y aparece el [cuadro de diálogo Error de aserción](../debugger/assertion-failed-dialog-box.md).
@@ -169,7 +169,7 @@ int x = SomeFunc(y);
 ASSERT(x >= 0);   //  Assertion fails if x is negative
 ```
 
-Se puede utilizar ASSERT con la función [IsKindOf](https://docs.microsoft.com/cpp/mfc/reference/cobject-class#iskindof) para proporcionar la comprobación de tipos de los argumentos de una función:
+Se puede utilizar ASSERT con la función [IsKindOf](/cpp/mfc/reference/cobject-class#iskindof) para proporcionar la comprobación de tipos de los argumentos de una función:
 
 ```cpp
 ASSERT( pObject1->IsKindOf( RUNTIME_CLASS( CPerson ) ) );
@@ -178,7 +178,7 @@ ASSERT( pObject1->IsKindOf( RUNTIME_CLASS( CPerson ) ) );
 La macro `ASSERT` no produce código en la versión de lanzamiento. Si necesita evaluar la expresión en la versión de lanzamiento, utilice la macro [VERIFY](https://msdn.microsoft.com/library/s8c29sw2.aspx#verify) en vez de ASSERT.
 
 ### <a name="BKMK_MFC_ASSERT_VALID_and_CObject__AssertValid"></a> MFC ASSERT_VALID y CObject::AssertValid
-El método [CObject::AssertValid](https://docs.microsoft.com/cpp/mfc/reference/cobject-class#assertvalid) proporciona comprobaciones en tiempo de ejecución del estado interno de un objeto. Aunque no es obligatorio reemplazar `AssertValid` al derivar la clase de `CObject`, puede conseguir una clase más confiable si lo hace. `AssertValid` debe realizar aserciones en todas variables miembro del objeto para comprobar que contienen valores válidos. Por ejemplo, debería comprobar que las variables miembro no sean NULL.
+El método [CObject::AssertValid](/cpp/mfc/reference/cobject-class#assertvalid) proporciona comprobaciones en tiempo de ejecución del estado interno de un objeto. Aunque no es obligatorio reemplazar `AssertValid` al derivar la clase de `CObject`, puede conseguir una clase más confiable si lo hace. `AssertValid` debe realizar aserciones en todas variables miembro del objeto para comprobar que contienen valores válidos. Por ejemplo, debería comprobar que las variables miembro no sean NULL.
 
 En el ejemplo siguiente, se muestra cómo declarar una función `AssertValid`:
 

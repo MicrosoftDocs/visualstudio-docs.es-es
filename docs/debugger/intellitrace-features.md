@@ -20,18 +20,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 852070c74a7e7171525a5feaa6cc7617fe83c00d
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: bcdb1b2b6dc4b64d180eb03fc76b26b4ef16e9d0
+ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68925358"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72911417"
 ---
 # <a name="intellitrace-features-c-visual-basic-c"></a>Características de IntelliTraceC#(, Visual Basic C++,)
 
-IntelliTrace le permite registrar eventos y llamadas de método de su aplicación, por lo que puede examinar el estado de la misma (pila de llamadas y valores de variables locales) en distintos puntos de la ejecución. Empiece la depuración como de costumbre: IntelliTrace está activado de forma predeterminada y la información que registra se puede ver en la nueva ventana **Herramientas de diagnóstico** de la pestaña **Eventos**. Seleccione un evento y haga clic en **Activar depuración histórica** para ver la pila de llamadas y las variables locales registradas para este evento.
+IntelliTrace le permite registrar eventos y llamadas de método de su aplicación, por lo que puede examinar el estado de la misma (pila de llamadas y valores de variables locales) en distintos puntos de la ejecución. Simplemente inicie la depuración como de costumbre: IntelliTrace está activado de forma predeterminada y puede ver la información que IntelliTrace está registrando en la ventana nuevo **herramientas de diagnóstico** en la pestaña **eventos** . Seleccione un evento y haga clic en **Activar depuración histórica.** para ver la pila de llamadas y las variables locales registradas para este evento.
 
-Para obtener una descripción paso a paso, vea [Tutorial: Usar IntelliTrace](../debugger/walkthrough-using-intellitrace.md).
+Para obtener una descripción paso a paso, consulte [Tutorial: Uso de IntelliTrace](../debugger/walkthrough-using-intellitrace.md).
 
 IntelliTrace está disponible en la edición Visual Studio Enterprise, pero no en las ediciones Professional o Community.
 
@@ -123,7 +123,7 @@ Al guardar los datos de IntelliTrace en un archivo, se crea un archivo .itrace p
 
 ## <a name="forums"></a>Foros
 
-[Depurador de Visual Studio](http://go.microsoft.com/fwlink/?LinkId=262263)
+[Depurador de Visual Studio](https://social.msdn.microsoft.com/Forums/en-US/home)
 
 ## <a name="videos"></a>Vídeos
 
