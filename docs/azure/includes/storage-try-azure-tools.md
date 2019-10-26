@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: 9584a26883b48ffb27a2e040784e997c2d9ed036
-ms.sourcegitcommit: 748d9cd7328a30f8c80ce42198a94a4b5e869f26
-ms.translationtype: HT
+ms.openlocfilehash: fbaef2430183841098d8c3eb53b3712322204c27
+ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/15/2019
-ms.locfileid: "68147203"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72911708"
 ---
 > [!TIP]
 > 
@@ -12,4 +12,4 @@ ms.locfileid: "68147203"
 > 
 > El [Explorador de Microsoft Azure Storage](/azure/vs-azure-tools-storage-manage-with-storage-explorer) es una aplicación de Microsoft gratuita e independiente. Puede usarla para trabajar visualmente con datos de Azure Storage en Windows, macOS y Linux.
 > 
-> 
+>

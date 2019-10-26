@@ -9,14 +9,14 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 11/11/2016
 ms.author: ghogen
-ms.openlocfilehash: cd19c619eca4505eab4c332783a678bf5e7ba87a
-ms.sourcegitcommit: 44e9b1d9230fcbbd081ee81be9d4be8a485d8502
-ms.translationtype: HT
+ms.openlocfilehash: 6ed003df875f7fdc75278210dc3010e93d280186
+ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/30/2019
-ms.locfileid: "70179794"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72911744"
 ---
-# <a name="using-windows-powershell-scripts-to-publish-to-dev-and-test-environments"></a>Utilizar scripts de Windows PowerShell para la publicación en entornos de desarrollo y pruebas
+# <a name="using-windows-powershell-scripts-to-publish-to-dev-and-test-environments"></a>Uso de scripts de Windows PowerShell para publicar en entornos de desarrollo y prueba
 
 Al crear una aplicación web en Visual Studio, puede generar un script de Windows PowerShell que puede usar posteriormente para automatizar la publicación de su sitio Web en Azure como aplicación web en Azure App Service o una máquina virtual. Puede editar y ampliar el script de Windows PowerShell en el editor de Visual Studio para adaptarse a sus requisitos o integrar el script con los scripts de compilación, pruebas y publicación existentes.
 
@@ -26,11 +26,11 @@ Mediante estos scripts, puede aprovisionar versiones personalizadas (también co
 
 * Visual Studio 2015 o posterior con la **carga de trabajo de Azure** instalada o Visual Studio 2013 y Azure SDK 2.3 o posterior. Vea las [descargas de Visual Studio](https://visualstudio.microsoft.com/downloads). (No necesita Azure SDK para generar los scripts para proyectos web. Esta característica es para proyectos web, no para los roles web de Cloud Services).
 * Azure PowerShell 0.7.4 o posterior. Consulte [Instalación y configuración de Azure PowerShell](/powershell/azure/overview).
-* [Windows PowerShell 3.0](http://go.microsoft.com/?linkid=9811175) o posterior.
+* [Windows PowerShell 3.0](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc770458(v=ws.10)) o posterior.
 
 ## <a name="additional-tools"></a>Herramientas adicionales
 
-Tiene a su disposición herramientas y recursos adicionales para trabajar con PowerShell en Visual Studio para el desarrollo de Azure. Vea [Herramientas de PowerShell para Visual Studio](http://go.microsoft.com/fwlink/?LinkId=404012).
+Tiene a su disposición herramientas y recursos adicionales para trabajar con PowerShell en Visual Studio para el desarrollo de Azure. Vea [Herramientas de PowerShell para Visual Studio](https://marketplace.visualstudio.com/items?itemName=AdamRDriscoll.PowerShellToolsforVisualStudio2015).
 
 ## <a name="generating-the-publish-scripts"></a>Generación de los scripts de publicación
 
@@ -154,7 +154,7 @@ Si nunca ha ejecutado un script de Windows PowerShell antes, debe establecer pri
 
    ![Crear paquete de implementación web](./media/vs-azure-tools-publishing-using-powershell-scripts/IC767885.png)
 
-   Para obtener más información, vea [Cómo: Creación de un paquete de implementación web en Visual Studio](https://msdn.microsoft.com/library/dd465323.aspx). También puede automatizar la creación de su paquete de Web Deploy, como se describe en [Personalización y ampliación de los scripts de publicación](#customizing-and-extending-the-publish-scripts).
+   Para obtener más información, vea [Cómo: crear un paquete de implementación web en Visual Studio](https://msdn.microsoft.com/library/dd465323.aspx). También puede automatizar la creación de su paquete de Web Deploy, como se describe en [Personalización y ampliación de los scripts de publicación](#customizing-and-extending-the-publish-scripts).
 
 1. En el **Explorador de soluciones**, abra el menú contextual para el script y luego elija **Abrir con PowerShell ISE**.
 1. Si ejecuta scripts de Windows PowerShell en este equipo por primera vez, abra una ventana de símbolo del sistema con privilegios de administrador y escriba el siguiente comando:
@@ -250,7 +250,7 @@ Para automatizar la creación de su proyecto, agregue código que llame a MSBuil
         #Write a function to build and package your web application
     ```
 
-    Para compilar la aplicación web, utilice MsBuild.exe. Para obtener ayuda, consulte la referencia de línea de comandos de MSBuild en: [http://go.microsoft.com/fwlink/?LinkId=391339](http://go.microsoft.com/fwlink/?LinkId=391339)
+    Para compilar la aplicación web, utilice MsBuild.exe. Para obtener ayuda, consulte la referencia de línea de comandos de MSBuild en: [http://go.microsoft.com/fwlink/?LinkId=391339](../msbuild/msbuild-command-line-reference.md)
 
     ```powershell
     Write-VerboseWithTime 'Build-WebDeployPackage: Start'
@@ -310,7 +310,7 @@ Para obtener ayuda para las funciones que puede usar en el símbolo del sistema 
 
 **AzureWebAppPublishModule**
 
-| Nombre de la función | DESCRIPCIÓN |
+| Nombre de la función | Descripción |
 | --- | --- |
 | Add-AzureSQLDatabase |Crea una nueva base de datos SQL de Azure. |
 | Add-AzureSQLDatabases |Crea las bases de datos SQL de Azure a partir de los valores en el archivo de configuración de JSON que Visual Studio genera. |
@@ -322,7 +322,7 @@ Para obtener ayuda para las funciones que puede usar en el símbolo del sistema 
 | Find-AzureVM |Obtiene la máquina virtual de Azure especificada. |
 | Format-DevTestMessageWithTime |Antepone la fecha y la hora a un mensaje. Esta función está diseñada para mensajes escritos en las secuencias de Error y Detallado. |
 | Get-AzureSQLDatabaseConnectionString |Ensambla una cadena de conexión para conectarse a una base de datos SQL de Azure. |
-| Get-AzureVMStorage |Devuelve el nombre de la primera cuenta de almacenamiento con el patrón de nombre "devtest *" (no distingue mayúsculas de minúsculas) en la ubicación especificada o el grupo de afinidad. Si la cuenta de almacenamiento "devtest*" no coincide con la ubicación o el grupo de afinidad, la función la omite. Especifique una ubicación o un grupo de afinidad. |
+| Get-AzureVMStorage |Devuelve el nombre de la primera cuenta de almacenamiento con el patrón de nombre "devtest *" (no distingue mayúsculas de minúsculas) en la ubicación especificada o en el grupo de afinidad. Si la cuenta de almacenamiento "devtest*" no coincide con la ubicación o el grupo de afinidad, la función la omite. Especifique una ubicación o un grupo de afinidad. |
 | Get-MSDeployCmd |Devuelve un comando para ejecutar la herramienta MsDeploy.exe. |
 | New-AzureVMEnvironment |Busca o crea una máquina virtual en la suscripción que coincida con los valores del archivo de configuración de JSON. |
 | Publish-WebPackage |Usa MsDeploy.exe y un archivo .zip de paquete de publicación web para implementar recursos en un sitio web. Esta función no genera ninguna salida. Si se produce un error en la llamada a MSDeploy.exe, la función genera una excepción. Para obtener una salida más detallada, use la opción **-Verbose** . |
@@ -339,7 +339,7 @@ Para obtener ayuda para las funciones que puede usar en el símbolo del sistema 
 
 **Publish-WebApplication**
 
-| Nombre de la función | DESCRIPCIÓN |
+| Nombre de la función | Descripción |
 | --- | --- |
 | New-AzureWebApplicationEnvironment |Crea recursos de Azure, como un sitio web o una máquina virtual. |
 | New-WebDeployPackage |Esta función no está implementada. Puede agregar comandos en esta función para generar su proyecto. |

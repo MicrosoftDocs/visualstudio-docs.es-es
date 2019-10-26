@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ca4b4ee5bb254f952fb6eb02e255320a337f657c
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: c508951a3b54a7f84f142c5029b5305c8ef579ea
+ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72737806"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72911548"
 ---
 # <a name="error-debugging-failed-because-integrated-windows-authentication-is-not-enabled"></a>Error: La depuración produjo un error porque no está habilitada la autenticación de Windows integrada
 La autenticación del usuario que solicita la depuración no pudo realizarse debido a un error de autenticación. Esto problema puede producirse cuando intenta desplazarse a un aplicación web o a un servicio Web XML. Una causa de este error es que la autenticación de Windows integrada no esté habilitada. Para habilitarla, siga los pasos descritos en "Para habilitar la autenticación de Windows integrada".
@@ -115,5 +115,5 @@ La autenticación del usuario que solicita la depuración no pudo realizarse deb
 
 ## <a name="see-also"></a>Vea también
 - [Depurar aplicaciones web: errores y solución de problemas](../debugger/debugging-web-applications-errors-and-troubleshooting.md)
-- [Autenticación implícita de Microsoft](http://go.microsoft.com/fwlink/?LinkId=77938)
+- [Autenticación implícita de Microsoft](/windows/win32/secauthn/microsoft-digest-authentication)
 - [Ejecutar aplicaciones web en Windows Vista con IIS 7,0 y Visual Studio](https://msdn.microsoft.com/Library/262a82ac-dd0e-4096-86c6-fb463e88be66)

@@ -9,12 +9,12 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 8/24/2017
 ms.author: ghogen
-ms.openlocfilehash: 22c266516a2810191f05bb3de1d7215ea65dd040
-ms.sourcegitcommit: 3cc73e74921a9ceb622542e0e263abeebc455c00
-ms.translationtype: HT
+ms.openlocfilehash: ad7d2ca7738d4ba0e05e3a75a2a4b6b155e46dbd
+ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/08/2019
-ms.locfileid: "67624103"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72911716"
 ---
 # <a name="browse-and-manage-storage-resources-by-using-server-explorer"></a>Examen y administración de los recursos de almacenamiento mediante el Explorador de servidores
 
@@ -120,7 +120,7 @@ De forma predeterminada, el blob se descarga en un directorio temporal. Para des
 
 Para cargar blobs, seleccione el botón **Cargar blob** cuando el contenedor esté abierto para verlo en la vista del contenedor de blobs.
 
-Puede elegir uno o varios archivos para cargar, así como cargar archivos de cualquier tipo. En la ventana **Registro de actividad de Azure** se muestra el progreso de la carga. Para más información sobre cómo trabajar con datos de blob, consulte [Uso de Azure Blob Storage en .NET](http://go.microsoft.com/fwlink/p/?LinkId=267911).
+Puede elegir uno o varios archivos para cargar, así como cargar archivos de cualquier tipo. En la ventana **Registro de actividad de Azure** se muestra el progreso de la carga. Para más información sobre cómo trabajar con datos de blob, consulte [Uso de Azure Blob Storage en .NET](/azure/storage/blobs/storage-quickstart-blobs-dotnet).
 
 ### <a name="to-view-logs-transferred-to-blobs"></a>Para ver los registros transferidos a blobs
 
@@ -155,10 +155,10 @@ En la siguiente imagen se muestra una cola que contiene dos mensajes:
 
 ![Visualización de una cola](./media/vs-azure-tools-storage-resources-server-explorer-browse-manage/IC651470.png)
 
-Para más información sobre las colas de servicios de almacenamiento, consulte [Introducción a Azure Queue Storage mediante .NET](http://go.microsoft.com/fwlink/?LinkID=264702). Para obtener información sobre el servicio web para colas de servicios de almacenamiento, vea [Conceptos del servicio Cola](http://go.microsoft.com/fwlink/?LinkId=264788). Para obtener información acerca de cómo enviar mensajes a una cola de servicios de almacenamiento mediante Visual Studio, vea [Enviar mensajes a una cola de servicios de almacenamiento](https://docs.microsoft.com/azure/visual-studio/vs-storage-cloud-services-getting-started-queues).
+Para más información sobre las colas de servicios de almacenamiento, consulte [Introducción a Azure Queue Storage mediante .NET](/azure/storage/queues/storage-dotnet-how-to-use-queues). Para obtener información sobre el servicio web para colas de servicios de almacenamiento, vea [Conceptos del servicio Cola](/rest/api/storageservices/Queue-Service-Concepts). Para obtener información acerca de cómo enviar mensajes a una cola de servicios de almacenamiento mediante Visual Studio, vea [Enviar mensajes a una cola de servicios de almacenamiento](/azure/visual-studio/vs-storage-cloud-services-getting-started-queues).
 
 > [!NOTE]
-> Las colas de servicios de almacenamiento son distintas de las colas de Azure Service Bus. Para más información sobre las colas de Service Bus, consulte [Colas, temas y suscripciones de Service Bus](https://docs.microsoft.com/azure/service-bus-messaging/service-bus-queues-topics-subscriptions).
+> Las colas de servicios de almacenamiento son distintas de las colas de Azure Service Bus. Para más información sobre las colas de Service Bus, consulte [Colas, temas y suscripciones de Service Bus](/azure/service-bus-messaging/service-bus-queues-topics-subscriptions).
 
 ## <a name="work-with-table-resources"></a>Uso de recursos de tabla
 
@@ -183,7 +183,7 @@ La tabla se organiza por entidades (mostradas en filas) y propiedades (mostradas
 
 En el Diseñador de tablas, abra el menú contextual de una entidad (una sola fila) o una propiedad (una sola celda) y seleccione **Editar**.
 
-![Adición o edición de una entidad de tabla](./media/vs-azure-tools-storage-resources-server-explorer-browse-manage/IC656238.png)
+![Agregar o editar una entidad de tabla](./media/vs-azure-tools-storage-resources-server-explorer-browse-manage/IC656238.png)
 
 No es necesario que las entidades de una sola tabla compartan el mismo conjunto de propiedades (columnas). Tenga en cuenta las siguientes restricciones sobre la visualización y la edición de los datos de tabla:
 
@@ -225,7 +225,7 @@ En la siguiente ilustración se muestra un ejemplo de una cadena de filtro váli
 
 ## <a name="refresh-storage-data"></a>Actualización de los datos de almacenamiento
 
-Cuando el Explorador de servidores se conecta a una cuenta de almacenamiento u obtiene datos de ella, la operación puede tardar hasta un minuto en completarse. Si el Explorador de servidores no se puede conectar, la operación puede agotar el tiempo de espera. Mientras se recuperan datos, puede continuar trabajando en otras zonas de Visual Studio. Para cancelar la operación si está tardando demasiado, seleccione el botón **Detener actualización** en la barra de herramientas del Explorador de servidores.
+Cuando el Explorador de servidores se conecta a una cuenta de almacenamiento u obtiene datos de ella, la operación puede tardar hasta un minuto en completarse. Si Explorador de servidores no se puede conectar, la operación podría agotar el tiempo de espera. Mientras se recuperan los datos, puede continuar trabajando en otras partes de Visual Studio. Para cancelar la operación si está tardando demasiado, seleccione el botón **Detener actualización** en la barra de herramientas del Explorador de servidores.
 
 ### <a name="to-refresh-blob-container-data"></a>Para actualizar los datos del contenedor de blobs
 

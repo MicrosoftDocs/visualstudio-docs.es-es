@@ -9,14 +9,14 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 11/11/2017
 ms.author: ghogen
-ms.openlocfilehash: 5314e92065cb29691aca75d424a331d10284a558
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.openlocfilehash: 7b9df8c5609c92a6b6631d1ed9fdda8d65e9b605
+ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71253428"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72911811"
 ---
-# <a name="configuring-your-azure-project-in-visual-studio-to-use-multiple-service-configurations"></a>Configuración de su proyecto de Azure en Visual Studio para usar varias configuraciones de servicio
+# <a name="configuring-your-azure-project-in-visual-studio-to-use-multiple-service-configurations"></a>Configuración del proyecto de Azure en Visual Studio para usar varias configuraciones de servicio
 
 Un proyecto de servicio en la nube de Azure en Visual Studio incluye tres archivos de configuración: `ServiceDefinition.csdef`, `ServiceConfiguration.Local.cscfg` y `ServiceConfiguration.Cloud.cscfg`:
 
@@ -55,7 +55,7 @@ De manera predeterminada, la funcionalidad de diagnóstico está habilitada para
 
 ## <a name="settings-page"></a>Página Configuración
 
-En la página **Configuración**, puede agregar la configuración como pares nombre-valor. El código que se ejecuta en el rol puede leer los valores de las opciones de configuración en tiempo de ejecución mediante las clases proporcionadas por la [biblioteca administrada de Azure](http://go.microsoft.com/fwlink?LinkID=171026), en concreto, el método [GetConfigurationSettingValue](https://msdn.microsoft.com/library/azure/microsoft.windowsazure.serviceruntime.roleenvironment.getconfigurationsettingvalue.aspx) .
+En la página **Configuración**, puede agregar la configuración como pares nombre-valor. El código que se ejecuta en el rol puede leer los valores de las opciones de configuración en tiempo de ejecución mediante las clases proporcionadas por la [biblioteca administrada de Azure](/previous-versions/azure/dn602775(v=azure.11)), en concreto, el método [GetConfigurationSettingValue](/previous-versions/azure/reference/ee772857(v=azure.100)) .
 
 ### <a name="configuring-a-connection-string-for-a-storage-account"></a>Configuración de una cadena de conexión para una cuenta de almacenamiento
 
@@ -95,7 +95,7 @@ Puede usar la página de propiedades **Almacenamiento local** para reservar uno 
 
 ## <a name="certificates-page"></a>Página Certificados
 
-La página de propiedades **Certificados** agrega información sobre los certificados a la configuración del servicio. Tenga en cuenta que sus certificados no se incluyen con el servicio, debe cargarlos por separado en Azure mediante [Azure Portal](http://portal.azure.com).
+La página de propiedades **Certificados** agrega información sobre los certificados a la configuración del servicio. Tenga en cuenta que sus certificados no se incluyen con el servicio, debe cargarlos por separado en Azure mediante [Azure Portal](https://portal.azure.com).
 
 Si incorpora un certificado aquí, se agrega información sobre los certificados a la configuración del servicio. Los certificados no se incluyen con el servicio; debe cargarlos por separado mediante Azure Portal.
 
