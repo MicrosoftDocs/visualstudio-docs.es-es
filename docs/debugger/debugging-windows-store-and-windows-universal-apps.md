@@ -1,7 +1,7 @@
 ---
 title: Depurar aplicaciones para UWP | Microsoft Docs
-ms.custom: seodec18
-ms.date: 03/28/2019
+ms.custom: ''
+ms.date: 10/22/2019
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: fe8348b342627cba861a9ceb67e74d0876752cdf
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: b008dd22b99e0024fcba479564c02cfad148f14a
+ms.sourcegitcommit: 978df2feb5e64228d2e3dd430b299a5c234cda17
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72738019"
+ms.lasthandoff: 10/24/2019
+ms.locfileid: "72888463"
 ---
 # <a name="debug-universal-windows-apps-uwp-in-visual-studio"></a>Depuración de aplicaciones universales de Windows (UWP) en Visual Studio
 
@@ -28,6 +28,8 @@ El depurador de Visual Studio proporciona compatibilidad completa con la depurac
 |-|-|
 |Ejecutar aplicaciones para UWP en un equipo local, un dispositivo remoto o conectado o un simulador de aplicaciones.|[Inicio de una sesión de depuración para una aplicación de UWP](../debugger/start-a-debugging-session-for-a-store-app-in-visual-studio-vb-csharp-cpp-and-xaml.md)|
 |Depure las aplicaciones implementadas, tanto locales como remotas.|[Depuración de un paquete de aplicaciones instalado](../debugger/debug-installed-app-package.md)|
+| [Escribir y depurar código XAML en ejecución](../xaml-tools/xaml-hot-reload.md) | Puede usar la recarga activa de XAML para explorar el árbol visual de un objeto XAML de UWP y ver las propiedades de dependencia de los objetos de ese árbol. En este tema se describe cómo usar la recarga activa de XAML. |
+| [Inspeccionar las propiedades XAML durante la depuración](../xaml-tools/xaml-hot-reload.md) | Puede usar el árbol visual dinámico para explorar el árbol visual de un objeto XAML de UWP y ver las propiedades de dependencia de los objetos de ese árbol. |
 |Analice el efecto de la clase ContentPrefetcher en aplicaciones de UWP.|[Captura previa de contenido para aplicaciones para UWP](../debugger/prefetch-content-for-windows-store-apps.md)|
 
 ## <a name="see-also"></a>Vea también
