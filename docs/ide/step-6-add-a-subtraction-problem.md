@@ -13,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8acc67aa82bb0d7cf81cf6794bfdbb4e0c912ebe
-ms.sourcegitcommit: 98b02f87c7aa1f5eb7f0d1c86bfa36efa8580c57
+ms.openlocfilehash: 4789248a129bcd41452af1184418f9f59ede7595
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "72314232"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72562579"
 ---
 # <a name="step-6-add-a-subtraction-problem"></a>Paso 6: Agregar un problema de resta
 En la sexta parte de este tutorial, agregará un problema de resta y aprenderá a realizar las tareas siguientes:
@@ -76,7 +76,7 @@ En la sexta parte de este tutorial, agregará un problema de resta y aprenderá 
      [!code-vb[VbExpressTutorial3Step5_6#14](../ide/codesnippet/VisualBasic/step-6-add-a-subtraction-problem_4.vb)]
      [!code-csharp[VbExpressTutorial3Step5_6#14](../ide/codesnippet/CSharp/step-6-add-a-subtraction-problem_4.cs)]
 
-     In Visual C#, `&&` es el operador `logical and`. En Visual Basic, el operador equivalente es `AndAlso`. Estos operadores indican "Si la suma de addend1 y addend2 es igual al valor de la suma NumericUpDown, y si el minuendo menos el sustraendo es igual al valor de la diferencia NumericUpDown". El método `CheckTheAnswer()` devuelve `true` solo si las respuestas a los problemas de suma y resta son correctos.
+     En C#, `&&` es el operador `logical and`. En Visual Basic, el operador equivalente es `AndAlso`. Estos operadores indican "Si la suma de addend1 y addend2 es igual al valor de la suma NumericUpDown, y si el minuendo menos el sustraendo es igual al valor de la diferencia NumericUpDown". El método `CheckTheAnswer()` devuelve `true` solo si las respuestas a los problemas de suma y resta son correctos.
 
 4. Reemplace la última parte del controlador del evento Tick del temporizador por el código siguiente para que rellene la respuesta correcta cuando se agote el tiempo.
 

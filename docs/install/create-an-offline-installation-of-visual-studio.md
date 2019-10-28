@@ -1,7 +1,7 @@
 ---
 title: Creación de una instalación sin conexión
 description: Obtenga información sobre cómo instalar Visual Studio sin conexión cuando la conexión a internet no sea de confianza o disponga de poco ancho de banda.
-ms.date: 10/11/2019
+ms.date: 10/22/2019
 ms.custom: seodec18
 ms.topic: conceptual
 f1_keywords:
@@ -16,12 +16,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 2268d71f9119cc36bdb18161a62fbe930a37b2ff
-ms.sourcegitcommit: e82baa50bf5a65858c410882c2e86a552c2c1921
+ms.openlocfilehash: c8b59ce38657bab157b966a25e0cd27109510215
+ms.sourcegitcommit: 58000baf528da220fdf7a999d8c407a4e86c1278
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72381091"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "72789985"
 ---
 # <a name="create-an-offline-installation-of-visual-studio"></a>Crear una instalación sin conexión de Visual Studio
 
@@ -164,9 +164,9 @@ Si quiere instalar un idioma distinto del inglés, cambie `en-US` a una configur
 > Cuando se trabaja desde una caché de instalación local, el programa de instalación usa las versiones locales de cada uno de estos archivos. Pero si selecciona componentes durante la instalación que no se encuentran en la memoria caché, el programa de instalación intentará descargarlos de Internet.
 
 ::: moniker range="vs-2019"
-
-> En el caso de las instalaciones y actualizaciones con 16.1 y versiones posteriores, si recibe un error que indica que no se encuentra un producto que coincida con los parámetros especificados en sistemas sin conexión, use el modificador --noweb con 16.3.5 o posterior.
-
+> [!IMPORTANT]
+> En el caso de las instalaciones sin conexión, si recibe un mensaje de error que indica que no se encuentra un producto que coincida con los parámetros especificados, asegúrese de que está usando el modificador `--noweb` con la versión 16.3.5 o posterior.
+>
 ::: moniker-end
 
 Para asegurarse de que solo instala los archivos que ha descargado previamente, use las mismas opciones de la línea de comandos que usó para crear la memoria caché de diseño. Por ejemplo, si creó una caché de diseño con el siguiente comando:
@@ -180,6 +180,8 @@ Después, use este comando para ejecutar la instalación:
 ```cmd
 c:\vslayout\vs_community.exe --add Microsoft.VisualStudio.Workload.ManagedDesktop --add Microsoft.VisualStudio.Workload.NetWeb --add Component.GitHub.VisualStudio --includeOptional
 ```
+
+Para más ejemplos de cómo usar los [parámetros de la línea de comandos](use-command-line-parameters-to-install-visual-studio.md), consulte la página [Ejemplos de parámetros de la línea de comandos para la instalación de Visual Studio](command-line-parameter-examples.md). 
 
 > [!NOTE]
 > Si se produce un error de una firma que no es válida, debe instalar certificados actualizados. Abra la carpeta de certificados en la caché sin conexión. Haga doble clic en cada uno de los archivos de certificado y, después, haga clic en el Asistente de administrador de certificados. Si se le solicita una contraseña, déjela en blanco.

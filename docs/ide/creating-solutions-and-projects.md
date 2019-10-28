@@ -9,17 +9,17 @@ f1_keywords:
 helpviewer_keywords:
 - solutions [Visual Studio], creating
 - projects [Visual Studio], creating
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 74694528f6380896d47b9665d9e617098ef28620
-ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.openlocfilehash: abe2cbd18e87c7045d44e597e3a5bb93a64a1c35
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66746865"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72747962"
 ---
 # <a name="create-solutions-and-projects"></a>Crear soluciones y proyectos
 
@@ -53,7 +53,7 @@ Si tiene una colección de archivos de código fuente, puede agregarlos fácilme
 1. En el asistente, vaya a la ubicación de los archivos y escriba un nombre para el nuevo proyecto en el cuadro **Nombre**. Cuando haya terminado, elija el botón **Finalizar**.
 
 > [!NOTE]
-> Esta opción funciona mejor con una recopilación de archivos relativamente simple. Actualmente, solo se admiten los tipos de proyecto de Visual C++, Apache Cordova, Visual Basic y C#.
+> Esta opción funciona mejor con una recopilación de archivos relativamente simple. Actualmente, solo se admiten los tipos de proyecto de C++, Apache Cordova, Visual Basic y C#.
 
 ## <a name="add-files-to-a-solution"></a>Agregar archivos a una solución
 

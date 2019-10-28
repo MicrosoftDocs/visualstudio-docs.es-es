@@ -1,6 +1,6 @@
 ---
 title: 'Tutorial 3: Crear un juego de formar parejas'
-ms.date: 11/04/2016
+ms.date: 10/16/2019
 ms.assetid: 525815c8-2845-45e8-be96-100d1f144725
 ms.topic: tutorial
 ms.technology: vs-ide-general
@@ -9,20 +9,25 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f8fafd46561b6a3628989b675b14c493b60da6fe
-ms.sourcegitcommit: 6eed0372976c0167b9a6d42ba443f9a474b8bb91
+ms.openlocfilehash: 5161f81aaf3edf654a5979f6226449bc52604167
+ms.sourcegitcommit: 6244689e742e551e7b6933959bd42df56928ece3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/19/2019
-ms.locfileid: "71118707"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72516581"
 ---
 # <a name="tutorial-3-create-a-matching-game"></a>Tutorial 3: Crear un juego de formar parejas
 
-En este tutorial, compilará un juego de formar parejas en el que el jugador debe buscar las coincidencias entre pares de iconos ocultos. Aprenderá a:
+En este tutorial, compilará un juego de formar parejas en el que el jugador debe buscar las coincidencias entre pares de iconos ocultos.
+
+> [!NOTE]
+> En este tutorial, se trata tanto C# como Visual Basic, por lo que deberá centrarse en la información específica del lenguaje de programación que use.
+
+Este tutorial le guiará por las tareas siguientes:
 
 - Almacenar objetos, como iconos, en un objeto <xref:System.Collections.Generic.List%601>.
 
-- Usar un bucle `foreach` en Visual C# o un bucle de `For Each` en Visual Basic para recorrer en iteración los elementos de una lista.
+- Use un bucle de `foreach` en C# o un bucle de `For Each` en Visual Basic para recorrer en iteración los elementos de una lista.
 
 - Realizar un seguimiento del estado de un formulario mediante variables de referencia.
 
@@ -30,20 +35,11 @@ En este tutorial, compilará un juego de formar parejas en el que el jugador deb
 
 - Crear un temporizador para la cuenta atrás y desencadenar un evento una y solo una vez después de iniciarse.
 
-Cuando termine este tutorial, el programa se parecerá al de la ilustración siguiente:
+Cuando termine, la aplicación debe ser similar a la de la imagen siguiente:
 
 ![Juego que creará en este tutorial](../ide/media/express_finishedgame.png)
 
 ## <a name="tutorial-links"></a>Vínculos del tutorial
-
-Para descargar una versión completa del ejemplo, consulte [Complete Matching Game tutorial sample](https://code.msdn.microsoft.com/Complete-Matching-Game-4cffddba) (Ejemplo del tutorial Crear un juego de formar parejas).
-
-> [!NOTE]
-> En este tutorial, se trata tanto Visual C# como Visual Basic, por lo que deberá centrarse en la información específica del lenguaje de programación que use.
-
-Si se bloquea o tiene preguntas de programación, envíe la pregunta a uno de los Foros de MSDN. Consulte el [Foro de Visual Basic](https://social.msdn.microsoft.com/Forums/vstudio/home?forum=vbgeneral) y el [Foro de Visual C#](https://social.msdn.microsoft.com/Forums/vstudio/home?forum=csharpgeneral). Además, dispone de excelentes recursos de aprendizaje en vídeo gratuitos. Para obtener más información sobre la programación en Visual Basic, vea [Visual Basic Fundamentals: Development for absolute beginners](https://channel9.msdn.com/Series/Visual-Basic-Development-for-Absolute-Beginners) (Fundamentos de Visual Basic: desarrollo para principiantes absolutos). Para obtener más información sobre la programación en Visual C#, vea [C# fundamentals: Development for absolute beginners](https://channel9.msdn.com/Series/C-Sharp-Fundamentals-Development-for-Absolute-Beginners) (Fundamentos de C#: desarrollo para principiantes absolutos).
-
-## <a name="related-topics"></a>Temas relacionados
 
 |Title|DESCRIPCIÓN|
 |-----------|-----------------|
@@ -56,3 +52,15 @@ Si se bloquea o tiene preguntas de programación, envíe la pregunta a uno de lo
 |[Paso 7: Mantener visibles los pares](../ide/step-7-keep-pairs-visible.md)|Mantendrá los pares de iconos visibles si se selecciona una pareja coincidente.|
 |[Paso 8: Agregar un método para comprobar si el jugador ganó](../ide/step-8-add-a-method-to-verify-whether-the-player-won.md)|Agregará un método `CheckForWinner()` para comprobar si el jugador ganó.|
 |[Paso 9: Probar otras características](../ide/step-9-try-other-features.md)|Probará otras características, como cambiar los iconos y colores, agregar una cuadrícula y agregar sonidos. Intentará aumentar el tamaño del tablero y ajustar el temporizador.|
+
+También dispone de excelentes recursos de aprendizaje en vídeo gratuitos. Para obtener más información sobre la programación en C#, vea [C# fundamentals: Development for absolute beginners](https://channel9.msdn.com/Series/C-Sharp-Fundamentals-Development-for-Absolute-Beginners) (Fundamentos de C#: desarrollo para principiantes absolutos). Para obtener más información sobre la programación en Visual Basic, vea [Visual Basic Fundamentals: Development for absolute beginners](https://channel9.msdn.com/Series/Visual-Basic-Development-for-Absolute-Beginners) (Fundamentos de C#: desarrollo para principiantes absolutos).
+
+## <a name="next-steps"></a>Pasos siguientes
+
+Para comenzar el tutorial, empiece por el **[Paso 1: Crear un proyecto y agregar una tabla a un formulario](../ide/step-1-create-a-project-and-add-a-table-to-your-form.md)** .
+
+## <a name="see-also"></a>Vea también
+
+* [Más tutoriales de C#](/visualstudio/get-started/csharp/)
+* [Tutoriales de Visual Basic](/visualstudio/get-started/visual-basic/)
+* [Tutoriales de C++](/cpp/get-started/tutorial-console-cpp)

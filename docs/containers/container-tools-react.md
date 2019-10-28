@@ -1,17 +1,17 @@
 ---
-title: Herramientas de contenedor de Visual Studio con ASP.NET Core
+title: Herramientas de contenedor de Visual Studio con ASP.NET Core y React.js
 author: ghogen
 description: Obtenga información sobre cómo usar las herramientas de contenedor de Visual Studio y Docker para Windows
 ms.author: ghogen
-ms.date: 06/06/2019
+ms.date: 10/16/2019
 ms.technology: vs-azure
 ms.topic: quickstart
-ms.openlocfilehash: bcc30ec13096b37d7540c187d11c846d6c575093
-ms.sourcegitcommit: 44e9b1d9230fcbbd081ee81be9d4be8a485d8502
+ms.openlocfilehash: 8083d2d6446c872791501f76cb0167a92a9ef660
+ms.sourcegitcommit: 6244689e742e551e7b6933959bd42df56928ece3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/30/2019
-ms.locfileid: "70179923"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72516447"
 ---
 # <a name="quickstart-use-docker-with-a-react-single-page-app-in-visual-studio"></a>Inicio rápido: Uso de Docker con una aplicación de página única de React en Visual Studio
 
@@ -23,12 +23,16 @@ Con Visual Studio, es muy fácil compilar, depurar y ejecutar aplicaciones ASP.
 * [Docker Desktop](https://hub.docker.com/editions/community/docker-ce-desktop-windows)
 * [Visual Studio 2017](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download) con las cargas de trabajo **Desarrollo web**, **Azure Tools** o **Desarrollo multiplataforma de .NET Core** instaladas
 * Para publicar en Azure Container Registry, una suscripción de Azure. [Regístrese para obtener una evaluación gratuita](https://azure.microsoft.com/offers/ms-azr-0044p/).
+* [Node.js](https://nodejs.org/en/download/)
+* Para los contenedores de Windows, Windows 10 versión 1903 o posterior, para usar las imágenes de Docker a las que se hace referencia en este artículo.
 ::: moniker-end
 ::: moniker range=">=vs-2019"
 * [Docker Desktop](https://hub.docker.com/editions/community/docker-ce-desktop-windows)
 * [Visual Studio 2019](https://visualstudio.microsoft.com/downloads) con las cargas de trabajo **Desarrollo web**, **Azure Tools** o **Desarrollo multiplataforma de .NET Core** instaladas
 * [Herramientas de desarrollo de .NET Core 2.2](https://dotnet.microsoft.com/download/dotnet-core/2.2) para el desarrollo con .NET Core 2.2
 * Para publicar en Azure Container Registry, una suscripción de Azure. [Regístrese para obtener una evaluación gratuita](https://azure.microsoft.com/offers/ms-azr-0044p/).
+* [Node.js](https://nodejs.org/en/download/)
+* Para los contenedores de Windows, Windows 10 versión 1903 o posterior, para usar las imágenes de Docker a las que se hace referencia en este artículo.
 ::: moniker-end
 
 ## <a name="installation-and-setup"></a>Instalación y configuración
@@ -47,7 +51,7 @@ Para instalar Docker, primero revise la información de [Docker Desktop for Wind
 
    ![Agregue compatibilidad con Docker](media/container-tools-react/vs2017/add-docker-support.png)
 
-1. Seleccione el tipo de contenedor Linux y haga clic en **Aceptar**.
+1. Seleccione el tipo de contenedor y haga clic en **Aceptar**.
 ::: moniker-end
 ::: moniker range=">=vs-2019"
 1. Cree un nuevo proyecto con la plantilla **Aplicación web ASP.NET Core**.
@@ -59,10 +63,12 @@ Para instalar Docker, primero revise la información de [Docker Desktop for Wind
 
    ![Agregue compatibilidad con Docker](media/container-tools-react/vs2017/add-docker-support.png)
 
-1. Seleccione Linux como tipo de contenedor.
+1. Seleccione el tipo de contenedor.
 ::: moniker-end
 
-## <a name="dockerfile-overview"></a>Información general sobre Dockerfile
+El siguiente paso es diferente en función de si usa contenedores de Linux o contenedores de Windows.
+
+## <a name="modify-the-dockerfile-linux-containers"></a>Modificación de Dockerfile (contenedores de Linux)
 
 Se agrega al proyecto un *Dockerfile*, la receta para crear una imagen de Docker final. Vea [Dockerfile reference (Referencia de Dockerfile)](https://docs.docker.com/engine/reference/builder/) para obtener una descripción de los comandos que contiene.
 
@@ -104,9 +110,74 @@ El elemento *Dockerfile* anterior se basa en la imagen [microsoft/aspnetcore](ht
 
 Si la casilla **Configurar para HTTPS** del cuadro de diálogo del nuevo proyecto está marcada, el *Dockerfile* expondrá dos puertos. Uno se utiliza para el tráfico HTTP, mientras que el otro se emplea para HTTPS. Si la casilla no está marcada, se expondrá un único puerto (80) para el tráfico HTTP.
 
+## <a name="modify-the-dockerfile-windows-containers"></a>Modificación de Dockerfile (contenedores de Windows)
+
+Abra el archivo de proyecto; para ello, haga doble clic en el nodo del proyecto y actualice el archivo de proyecto (*.csproj) agregando la siguiente propiedad como elemento secundario del elemento `<PropertyGroup>`:
+
+   ```xml
+    <DockerfileFastModeStage>base</DockerfileFastModeStage>
+   ```
+
+Actualice Dockerfile agregando las líneas siguientes. Esta acción copiará node y npm en el contenedor.
+
+   1. Agregue ``# escape=` `` a la primera línea de Dockerfile
+   1. Agregue las líneas siguientes delante de `FROM … base`
+
+      ```
+      FROM mcr.microsoft.com/powershell:nanoserver-1903 AS downloadnodejs
+      SHELL ["pwsh", "-Command", "$ErrorActionPreference = 'Stop';$ProgressPreference='silentlyContinue';"]
+      RUN Invoke-WebRequest -OutFile nodejs.zip -UseBasicParsing "https://nodejs.org/dist/v10.16.3/node-v10.16.3-win-x64.zip"; `
+      Expand-Archive nodejs.zip -DestinationPath C:\; `
+      Rename-Item "C:\node-v10.16.3-win-x64" c:\nodejs
+      ```
+
+   1. Agregue la línea siguiente delante y después de `FROM … build`
+
+      ```
+      COPY --from=downloadnodejs C:\nodejs\ C:\Windows\system32\
+      ```
+
+   1. El archivo Dockerfile completo debería tener ahora un aspecto similar al siguiente:
+
+      ```
+      # escape=`
+      #Depending on the operating system of the host machines(s) that will build or run the containers, the image specified in the FROM statement may need to be changed.
+      #For more information, please see https://aka.ms/containercompat
+      FROM mcr.microsoft.com/powershell:nanoserver-1903 AS downloadnodejs
+      SHELL ["pwsh", "-Command", "$ErrorActionPreference = 'Stop';$ProgressPreference='silentlyContinue';"]
+      RUN Invoke-WebRequest -OutFile nodejs.zip -UseBasicParsing "https://nodejs.org/dist/v10.16.3/node-v10.16.3-win-x64.zip"; `
+      RUN Expand-Archive nodejs.zip -DestinationPath C:\; `
+      RUN Rename-Item "C:\node-v10.16.3-win-x64" c:\nodejs
+
+      FROM mcr.microsoft.com/dotnet/core/aspnet:2.2-nanoserver-1903 AS base
+      WORKDIR /app
+      EXPOSE 80
+      EXPOSE 443
+      COPY --from=downloadnodejs C:\nodejs\ C:\Windows\system32\
+
+      FROM mcr.microsoft.com/dotnet/core/sdk:2.2-nanoserver-1903 AS build
+      COPY --from=downloadnodejs C:\nodejs\ C:\Windows\system32\
+      WORKDIR /src
+      COPY ["WebApplication7/WebApplication37.csproj", "WebApplication37/"]
+      RUN dotnet restore "WebApplication7/WebApplication7.csproj"
+      COPY . .
+      WORKDIR "/src/WebApplication37"
+      RUN dotnet build "WebApplication37.csproj" -c Release -o /app/build
+
+      FROM build AS publish
+      RUN dotnet publish "WebApplication37.csproj" -c Release -o /app/publish
+
+      FROM base AS final
+      WORKDIR /app
+      COPY --from=publish /app/publish .
+      ENTRYPOINT ["dotnet", "WebApplication37.dll"]
+      ```
+
+1. Actualice el archivo .dockerignore quitando `**/bin`.
+
 ## <a name="debug"></a>Depuración
 
-Seleccione **Docker** en la lista desplegable de depuración de la barra de herramientas y empiece a depurar la aplicación. Es posible que vea un mensaje que pregunte sobre cómo confiar en un certificado; elija la opción de confiar en el certificado para continuar.
+Seleccione **Docker** en la lista desplegable de depuración de la barra de herramientas y empiece a depurar la aplicación. Es posible que vea un mensaje que pregunte sobre cómo confiar en un certificado; elija la opción de confiar en el certificado para continuar.  La primera vez que compila, Docker descarga las imágenes base, por lo que puede tardar un poco más.
 
 La opción **Herramientas de contenedor** de la ventana **Salida** muestra las acciones que están teniendo lugar. Debería ver los pasos de instalación asociados con *npm.exe*.
 

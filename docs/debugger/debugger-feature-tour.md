@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 06665aa6a30d67e27f654e92029dcbd3d2aea2ef
-ms.sourcegitcommit: 1507baf3a336bbb6511d4c3ce73653674831501b
+ms.sourcegitcommit: 8a96a65676fd7a2a03b0803d7eceae65f3fa142b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/15/2019
+ms.lasthandoff: 10/18/2019
 ms.locfileid: "72349749"
 ---
 # <a name="first-look-at-the-visual-studio-debugger"></a>Primer vistazo al depurador de Visual Studio
@@ -31,9 +31,9 @@ Para depurar, tiene que iniciar la aplicación con el depurador asociado al proc
 
 Si tiene un archivo abierto en el editor de código, puede establecer un punto de interrupción si hace clic en el margen situado a la izquierda de una línea de código.
 
-![Establecimiento de un punto de interrupción](../debugger/media/dbg-tour-set-a-breakpoint.gif "Set a breakpoint")
+![Establecimiento de un punto de interrupción](../debugger/media/dbg-tour-set-a-breakpoint.gif "Establecer un punto de interrupción")
 
-Presione **F5** (**Depurar > Iniciar depuración**) o el botón **Iniciar depuración** ![Iniciar depuración](../debugger/media/dbg-tour-start-debugging.png "Start Debugging") en la barra de herramientas de depuración para que el depurador se ejecute hasta el primer punto de interrupción que encuentre. Si la aplicación todavía no se está ejecutando, F5 inicia el depurador y lo detiene en el primer punto de interrupción.
+Presione **F5** (**Depurar > Iniciar depuración**) o el botón **Iniciar depuración** ![Iniciar depuración](../debugger/media/dbg-tour-start-debugging.png "Iniciar depuración") en la barra de herramientas de depuración para que el depurador se ejecute hasta el primer punto de interrupción que encuentre. Si la aplicación todavía no se está ejecutando, F5 inicia el depurador y lo detiene en el primer punto de interrupción.
 
 Los puntos de interrupción son una característica de utilidad cuando se conoce la línea o la sección de código que se quiere examinar en detalle.
 
@@ -43,7 +43,7 @@ Se proporcionan métodos abreviados de teclado para la mayoría de los comandos 
 
 Para iniciar la aplicación con el depurador asociado, presione **F11** (**Depurar > Depurar paso a paso por instrucciones**). F11 es el comando **Depurar paso a paso por instrucciones** y permite avanzar la ejecución de la aplicación de instrucción en instrucción. Cuando se inicia la aplicación con F11, el depurador se interrumpe en la primera instrucción que se ejecuta.
 
-![F11 Depurar paso a paso por instrucciones](../debugger/media/dbg-tour-f11.png "F11 Step Into")
+![Paso a paso por instrucciones F11](../debugger/media/dbg-tour-f11.png "Paso a paso por instrucciones F11")
 
 La flecha amarilla representa la instrucción en la que el depurador se ha detenido, lo cual también suspende la ejecución de la aplicación en el mismo punto (esta instrucción todavía no se ha ejecutado).
 
@@ -64,17 +64,17 @@ Como se ha mencionado anteriormente, el depurador omite de forma predeterminada 
 
 Haga clic con el botón derecho en un campo o propiedad y elija **Ir a específico**. Luego elija una de las opciones disponibles.
 
-![Ir a específico](../debugger/media/dbg-tour-step-into-specific.png "Step Into Specific")
+![Ir a específico](../debugger/media/dbg-tour-step-into-specific.png "Ir a específico")
 
 En este ejemplo, **Ir a específico** lleva al código de `Path.set`.
 
-![Ir a específico](../debugger/media/dbg-tour-step-into-specific-2.png "Step Into Specific")
+![Ir a específico](../debugger/media/dbg-tour-step-into-specific-2.png "Ir a específico")
 
 ## <a name="run-to-a-point-in-your-code-quickly-using-the-mouse"></a>Ejecutar hasta un punto del código rápidamente con el mouse
 
 En el depurador, mantenga el puntero sobre una línea de código hasta que el botón **Run to Click** (Ejecutar hasta clic) (ejecutar hasta aquí) ![Ejecutar hasta clic](../debugger/media/dbg-tour-run-to-click.png "RunToClick") aparezca a la izquierda.
 
-![Ejecutar hasta clic](../debugger/media/dbg-tour-run-to-click-2.png "Run to click")
+![Ejecutar hasta clic](../debugger/media/dbg-tour-run-to-click-2.png "Icono para ejecutar hasta la línea")
 
 > [!NOTE]
 > El botón **Ejecutar hasta clic** (Ejecutar hasta aquí) está disponible a partir de [!include[vs_dev15](../misc/includes/vs_dev15_md.md)].
@@ -93,11 +93,11 @@ Este comando reanuda la ejecución de la aplicación (y hace avanzar el depurado
 
 ## <a name="run-to-cursor"></a>Ejecutar hasta el cursor
 
-Para detener el depurador, presione el botón rojo **Detener depuración** ![Detener depuración](../debugger/media/dbg-tour-stop-debugging.png "Stop Debugging") o **Mayús** + **F5**.
+Para detener el depurador, presione el botón rojo **Detener depuración** ![Detener depuración](../debugger/media/dbg-tour-stop-debugging.png "Habilitar herramientas de diagnóstico durante la depuración") o **Mayús** + **F5**.
 
 Haga clic con el botón derecho en una línea de código de la aplicación y elija **Ejecutar hasta el cursor**. Este comando inicia la depuración y establece un punto de interrupción temporal en la línea de código actual.
 
-![Ejecutar hasta el cursor](../debugger/media/dbg-tour-run-to-cursor.png "Run to Cursor")
+![Ejecutar hasta el cursor](../debugger/media/dbg-tour-run-to-cursor.png "Ejecutar hasta el cursor")
 
 Si ha establecido puntos de interrupción, el depurador se detiene en el primero que alcanza.
 
@@ -110,11 +110,11 @@ Este comando resulta útil cuando se edita código y se quiere establecer rápid
 
 ## <a name="restart-your-app-quickly"></a>Reiniciar la aplicación rápidamente
 
-Haga clic en el botón **Reiniciar** ![Reiniciar aplicación](../debugger/media/dbg-tour-restart.png "Restart App") de la barra de herramientas de depuración (**Ctrl + Mayús +F5**).
+Haga clic en el botón **Reiniciar** ![Reiniciar aplicación](../debugger/media/dbg-tour-restart.png "Reiniciar aplicación") de la barra de herramientas de depuración (**Ctrl + Mayús +F5**).
 
 El botón **Reiniciar** permite ahorrar tiempo, ya que hace que no sea necesario detener la aplicación y reiniciar el depurador. El depurador se detiene en el primer punto de interrupción que se alcanza al ejecutar el código.
 
-Si quiere detener el depurador y volver al editor de código, puede presionar el botón rojo ![Detener depuración](../debugger/media/dbg-tour-stop-debugging.png "Stop Debugging") en lugar de **Reiniciar**.
+Si quiere detener el depurador y volver al editor de código, puede presionar el botón rojo ![Detener depuración](../debugger/media/dbg-tour-stop-debugging.png "Habilitar herramientas de diagnóstico durante la depuración") en lugar de **Reiniciar**.
 
 ## <a name="edit-your-code-and-continue-debugging-c-vb-c-xaml"></a>Edición del código y continuación de la depuración (C#, VB, C++, XAML)
 
@@ -132,7 +132,7 @@ Ahora que sabe manejarse un poco, tiene una buena oportunidad de empezar a inspe
 
 Con el depurador detenido, mantenga el puntero sobre un objeto y vea su valor de propiedad predeterminado (en este ejemplo, el nombre de archivo `market 031.jpg` es el valor de propiedad predeterminado).
 
-![Visualización de información sobre datos](../debugger/media/dbg-tour-data-tips.gif "View a Data Tip")
+![Visualización de una sugerencia de datos](../debugger/media/dbg-tour-data-tips.gif "Visualización de una sugerencia de datos")
 
 Expanda el objeto para ver todas sus propiedades (como la propiedad `FullPath` en este ejemplo).
 
@@ -145,7 +145,7 @@ A menudo, al depurar, necesita poder comprobar rápidamente los valores de propi
 
 Mientras depura, mire la ventana **Automático** de la parte inferior del editor de código.
 
-![Ventana Automático](../debugger/media/dbg-tour-autos-window.png "Autos window")
+![Ventana Automático](../debugger/media/dbg-tour-autos-window.png "Ventana Automático")
 
 En la ventana **Automático** se ven las variables y su tipo y su valor actual. En la ventana **Automático** se muestran todas las variables que se usan en la línea actual o la anterior (en C++, la ventana muestra las variables de las tres líneas de código anteriores. Vea la documentación para obtener información sobre el comportamiento específico del lenguaje).
 
@@ -154,7 +154,7 @@ En la ventana **Automático** se ven las variables y su tipo y su valor actual. 
 
 A continuación, mire la ventana **Variables locales**. En la ventana **Variables locales** se muestran las variables del ámbito actual.
 
-![Ventana variables locales](../debugger/media/dbg-tour-locals-window.png "Locals window")
+![Ventana Locales](../debugger/media/dbg-tour-locals-window.png "Ventana Locales")
 
 En este ejemplo, el objeto `this` y el objeto `f` están en el ámbito. Para obtener más información, vea [Inspeccionar las variables en las ventanas automático y variables locales](../debugger/autos-and-locals-windows.md).
 
@@ -164,7 +164,7 @@ Puede usar una ventana **Inspección** para especificar una variable (o una expr
 
 Mientras depura, haga clic con el botón derecho en un objeto y elija **Agregar inspección**.
 
-![Ventana Inspección](../debugger/media/dbg-tour-watch-window.png "Watch window")
+![Ventana Inspección](../debugger/media/dbg-tour-watch-window.png "Ventana Inspección")
 
 En este ejemplo, hay una inspección establecida en el objeto `f` y puede ver cómo cambia su valor conforme avanza el depurador. A diferencia de las otras ventanas de variables, en la ventana **Inspección** siempre se muestran las variables que se están viendo (y se atenúan cuando están fuera del ámbito).
 
@@ -174,7 +174,7 @@ Para obtener más información, vea [Variables de inspección con ventanas Inspe
 
 Mientras depura, haga clic en la ventana **Pila de llamadas**, que está abierta de forma predeterminada en el panel inferior derecho.
 
-![Examen de la pila de llamadas](../debugger/media/dbg-tour-call-stack.png "Examine the call stack")
+![Examinar la pila de llamadas](../debugger/media/dbg-tour-call-stack.png "Examinar la pila de llamadas")
 
 En la ventana **Pila de llamadas** se muestra el orden en el que se llama a los métodos y las funciones. En la línea superior se muestra la función actual (el método `Update` en este ejemplo). En la segunda línea se muestra que se ha llamado a `Update` desde la propiedad `Path.set`, etc. La pila de llamadas es una buena forma de examinar y entender el flujo de ejecución de una aplicación.
 
@@ -189,7 +189,7 @@ También puede usar los menús contextuales de la ventana **Pila de llamadas** p
 
 Cuando la aplicación produce una excepción, el depurador le lleva a la línea de código que ha producido esa excepción.
 
-![Asistente de excepciones](../debugger/media/dbg-tour-exception-helper.png "Exception Helper")
+![Asistente de excepciones](../debugger/media/dbg-tour-exception-helper.png "Asistente de excepciones")
 
 En este ejemplo, el **Asistente de excepciones** muestra una excepción `System.Argument` y un mensaje de error que indica que la ruta de acceso no tiene un formato válido. Por lo tanto, se sabe que el error se ha producido en un argumento de método o función.
 
@@ -214,7 +214,7 @@ Las propiedades de depuración son específicas de cada tipo de proyecto. Por ej
 
 **Snapshot Debugger** toma una instantánea de las aplicaciones en producción cuando se ejecuta el código que le interesa. Para indicar al depurador que tome una instantánea, establezca puntos de acoplamiento y puntos de registro en el código. El depurador le permite ver exactamente qué salió mal, sin afectar el tráfico de la aplicación de producción. El Depurador de instantáneas puede permitirle disminuir considerablemente el tiempo que tarda en resolver los problemas que se producen en los entornos de producción.
 
-![Inicio de Snapshot Debugger](../debugger/media/snapshot-launch.png "Launch the snapshot debugger")
+![Iniciar Snapshot Debugger](../debugger/media/snapshot-launch.png "Iniciar Snapshot Debugger")
 
 La recopilación de instantáneas está disponible para las aplicaciones ASP.NET que se ejecutan en Azure App Service. Las aplicaciones ASP.NET deben ejecutarse en .NET Framework 4.6.1 o versiones posteriores y las aplicaciones ASP.NET Core en .NET Core 2.0 o versiones posteriores en Windows.
 
@@ -226,7 +226,7 @@ Para obtener más información, vea [Depurar aplicaciones de ASP.NET Azure activ
 
 Para poder navegar y ver las instantáneas, use los botones **Retroceder paso a paso** y **Avanzar paso a paso** en la barra de herramientas de depuración. Estos botones permiten navegar por los eventos que aparecen en la pestaña **Eventos** en la ventana **Herramientas de diagnóstico**.
 
-![Botones Retroceder paso a paso y Avanzar paso a paso](../debugger/media/intellitrace-step-back-icons-description.png  "Step Backward and Forward buttons")
+![Botones Retroceder paso a paso y Avanzar paso a paso](../debugger/media/intellitrace-step-back-icons-description.png  "Botones Retroceder paso a paso y Avanzar paso a paso")
 
 Para obtener más información, vea la página [Inspeccionar el estado de aplicación anterior mediante step-back de IntelliTrace en Visual Studio](../debugger/view-historical-application-state.md).
 

@@ -20,14 +20,14 @@ helpviewer_keywords:
 description: Aprenda a instalar la copia gratuita de Dotfuscator Community incluida en Visual Studio.
 ms.assetid: f2146651-e24a-4e24-ade8-8ddee8ff4e43
 author: Joe-Sewell-PreEmptive
-ms.author: gewarren
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 0a6945713d86c510112992be3fefd2d41280ef14
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: f4ff951ee202f706ab3b8553cff83519e36c86ed
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62557720"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72652419"
 ---
 # <a name="install-dotfuscator-community"></a>Instalación de Dotfuscator Community
 
@@ -36,7 +36,7 @@ En estas instrucciones se explica cómo instalarlo.
 
 > [!NOTE]
 > Además de las versiones de Dotfuscator Community incluidas en las versiones de Visual Studio, PreEmptive Solutions también ofrece periódicamente versiones actualizadas en su sitio web.
-> Si quiere descargar la **última versión** directamente en lugar de instalarla desde Visual Studio, **[haga clic aquí para ir a la página de descargas de Dotfuscator][download]**.
+> Si quiere descargar la **última versión** directamente en lugar de instalarla desde Visual Studio, **[haga clic aquí para ir a la página de descargas de Dotfuscator][download]** .
 
 ## <a name="within-visual-studio"></a>En Visual Studio
 
@@ -51,7 +51,7 @@ Puede instalar Dotfuscator Community desde el IDE de Visual Studio:
 
 3. Se abrirá una ventana del Instalador de Visual Studio, preconfigurada para la instalación de Dotfuscator Community.
    > [!NOTE]
-   > Para continuar tiene que proporcionar credenciales de administrador. 
+   > Para continuar tiene que proporcionar credenciales de administrador.
 
 4. En la ventana del instalador de Visual Studio, haga clic en *Instalar*. <br/> <br/> ![Haga clic en Instalar](media/install_in_vs19_34.png) <br/> <br/>
 
@@ -63,11 +63,11 @@ Puede instalar Dotfuscator Community desde el IDE de Visual Studio:
 
 1. En la barra de búsqueda **Inicio rápido** (CTRL+Q), escriba `dotfuscator`. <br/> <br/> ![Inicio rápido](media/install_from_vs_12.png) <br/> <br/>
 
-2. En Los resultados que aparecen en Inicio rápido, bajo el encabezado *Instalar*, seleccione **PreEmptive Protection - Dotfuscator (Componente Individual)**.
+2. En Los resultados que aparecen en Inicio rápido, bajo el encabezado *Instalar*, seleccione **PreEmptive Protection - Dotfuscator (Componente Individual)** .
    * Si en lugar de esto ve, bajo el encabezado *Menús*, **Herramientas - PreEmptive Protection - Dotfuscator**, significa que Dotfuscator CE ya está instalado. Seleccione esa opción para [comenzar][get-started].
 
 3. Se abrirá una ventana del Instalador de Visual Studio, preconfigurada para la instalación de Dotfuscator CE.
-   > [!NOTE] 
+   > [!NOTE]
    > Para continuar tiene que proporcionar credenciales de administrador.
 
 4. En la ventana del instalador de Visual Studio, haga clic en *Instalar*. <br/> <br/> ![Haga clic en Instalar](media/install_from_vs_345.png) <br/> <br/>
@@ -101,7 +101,7 @@ A continuación, puede instalar Dotfuscator Community como componente individua
 4. Configure opciones de instalación adicionales según corresponda a su entorno.
 5. Cuando esté listo para instalar Visual Studio, haga clic en el botón *Instalar*.
 
-Una vez completada la instalación, puede empezar a usar Dotfuscator Community. Para detalles, consulte [la página de introducción de la guía de usuario completa de Dotfuscator Community][get-started].
+Una vez completada la instalación, puede empezar a usar Dotfuscator Community. Para conocer los detalles, consulte [la página de introducción de la guía de usuario completa de Dotfuscator Community][get-started].
 
 ## <a name="see-also"></a>Vea también
 

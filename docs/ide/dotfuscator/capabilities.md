@@ -15,14 +15,14 @@ helpviewer_keywords:
 description: Obtenga información sobre las funcionalidades de la copia gratuita de Dotfuscator Community incluida en Visual Studio
 ms.assetid: 0ee89c58-c900-48fc-a6a2-65ace00e8bab
 author: Joe-Sewell-PreEmptive
-ms.author: gewarren
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 87d093a540e3c6fae6a80761a5b945c572bd890d
-ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.openlocfilehash: 249c039070246f27669f3a808cf607a649db1e59
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66744783"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72747937"
 ---
 # <a name="capabilities-of-dotfuscator"></a>Funcionalidades de Dotfuscator
 

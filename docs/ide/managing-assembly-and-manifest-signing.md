@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3add6e3e4f38b5ba73cd5154720d7b283189526e
-ms.sourcegitcommit: 85d66dc9fea3fa49018263064876b15aeb6f9584
+ms.openlocfilehash: 8cf721e9880ce7f0b7c3191f73f16366637f0704
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68461500"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72748871"
 ---
 # <a name="manage-assembly-and-manifest-signing"></a>Administración de la firma de ensamblados y manifiestos
 
@@ -29,7 +29,7 @@ Un nombre seguro se compone de la identidad del ensamblado (nombre de texto simp
 
 Para obtener información sobre cómo firmar ensamblados en proyectos de Visual Basic y C#, vea [Crear y utilizar ensamblados con nombre seguro](/dotnet/framework/app-domains/create-and-use-strong-named-assemblies).
 
-Para obtener información sobre cómo firmar ensamblados en proyectos de Visual C++, vea [Ensamblados de nombre seguro (C++/CLI)](/cpp/dotnet/strong-name-assemblies-assembly-signing-cpp-cli).
+Para información sobre cómo firmar ensamblados en proyectos de C++, vea [Ensamblados de nombre seguro (C++/CLI)](/cpp/dotnet/strong-name-assemblies-assembly-signing-cpp-cli).
 
 > [!NOTE]
 > La firma de nombre seguro no protege contra la ingeniería inversa del ensamblado. Para proteger contra las técnicas de ingeniería inversa, consulte [Dotfuscator Community](dotfuscator/index.md).

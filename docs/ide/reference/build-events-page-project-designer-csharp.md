@@ -1,6 +1,6 @@
 ---
 title: Eventos de compilación (Página, Diseñador de proyectos) (C#)
-ms.date: 11/04/2016
+ms.date: 10/17/2019
 ms.technology: vs-ide-compile
 ms.topic: reference
 f1_keywords:
@@ -16,16 +16,16 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: ba429c116d44a5d79d935fe3a1ad07b6d5f36f79
-ms.sourcegitcommit: 85d66dc9fea3fa49018263064876b15aeb6f9584
+ms.openlocfilehash: cca0ec0491d7a2c513f8bc52acaadf7c80d7fd22
+ms.sourcegitcommit: 58000baf528da220fdf7a999d8c407a4e86c1278
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68461850"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "72789825"
 ---
 # <a name="build-events-page-project-designer-c"></a>Eventos de compilación (Página, Diseñador de proyectos) (C#)
 
-Use la página **Eventos de compilación** del **Diseñador de proyectos** para especificar las instrucciones de configuración de compilación. También puede especificar las condiciones en las que se ejecutan los eventos posteriores a la compilación. Para obtener más información, consulte [Instrucciones: Especificar eventos de compilación (C#)](../../ide/how-to-specify-build-events-csharp.md) y [Cómo: Especificar eventos de compilación (Visual Basic)](../../ide/how-to-specify-build-events-visual-basic.md).
+Use la página **Eventos de compilación** del **Diseñador de proyectos** para especificar las instrucciones de configuración de compilación. También puede especificar las condiciones en las que se ejecutan los eventos posteriores a la compilación. Para obtener más información, vea [Cómo: Especificar eventos de compilación (C#)](../../ide/how-to-specify-build-events-csharp.md) y [Procedimientos: Especificar eventos de compilación (Visual Basic)](../../ide/how-to-specify-build-events-visual-basic.md).
 
 ## <a name="uielement-list"></a>Lista de UIElement
 
@@ -49,7 +49,7 @@ Especifica los comandos que se van a ejecutar antes de que empiece la compilaci�
 Especifica los comandos que se van a ejecutar después de que finalice la compilación. Para escribir comandos largos, haga clic en **Edición posterior a la compilación** para mostrar el cuadro de diálogo **Línea de comandos del evento anterior a la compilación/Línea de comandos del evento posterior a la compilación**.
 
 > [!NOTE]
-> Agregue una instrucción `call` antes de todos los comandos posteriores a la compilación que ejecutan archivos .bat. Por ejemplo, `call C:\MyFile.bat` o `call C:\MyFile.bat call C:\MyFile2.bat`.
+> Agregue una instrucción `call` antes de todos los comandos posteriores a la compilación que ejecutan archivos .bat. Por ejemplo: `call C:\MyFile.bat` o `call C:\MyFile.bat call C:\MyFile2.bat`.
 
 **Ejecutar el evento posterior a la compilación**
 
@@ -61,9 +61,36 @@ Especifica las condiciones siguientes para que se ejecute el evento posterior a 
 |**Si la compilación es correcta**|El evento posterior a la compilación se ejecuta si la compilación se realiza correctamente. Por lo tanto, el evento se ejecutará incluso para un proyecto actualizado, siempre y cuando la compilación se realice correctamente.|
 |**Cuando la compilación actualiza la salida del proyecto**|El evento posterior a la compilación solo se ejecuta si el archivo de salida del compilador (.exe o .dll) es diferente del anterior archivo de salida del compilador. Por lo tanto, un evento posterior a la compilación no se ejecuta si un proyecto está actualizado.|
 
+## <a name="in-the-project-file"></a>En el archivo del proyecto
+
+En versiones anteriores de Visual Studio, al cambiar las configuraciones de **PreBuildEvent** o **PostBuildEvent** en el IDE, Visual Studio agregaba una propiedad `PreBuildEvent` o `PostBuildEvent` al archivo del proyecto. Por ejemplo, si la configuración de la línea de comandos **PreBuildEvent** en el IDE es el siguiente:
+
+```input
+"$(ProjectDir)PreBuildEvent.bat" "$(ProjectDir)..\" "$(ProjectDir)" "$(TargetDir)"
+```
+
+entonces la configuración del archivo del proyecto es:
+
+```xml
+<PropertyGroup>
+    <PreBuildEvent>"$(ProjectDir)PreBuildEvent.bat" "$(ProjectDir)..\" "$(ProjectDir)" "$(TargetDir)" />
+</PropertyGroup>
+```
+
+Visual Studio 2019 (y Visual Studio 2017 en las actualizaciones más recientes) agrega un destino de MSBuild denominado `PreBuild` o `PostBuild` para las configuraciones de **PreBuildEvent** y **PostBuildEvent**. Por ejemplo, en el ejemplo anterior, Visual Studio genera ahora el siguiente código:
+
+```xml
+<Target Name="PreBuild" BeforeTargets="PreBuildEvent">
+    <Exec Command="&quot;$(ProjectDir)PreBuildEvent.bat&quot; &quot;$(ProjectDir)..\&quot; &quot;$(ProjectDir)&quot; &quot;$(TargetDir)&quot;" />
+</Target>
+```
+
+> [!NOTE]
+> Estos cambios en el archivo del proyecto se realizaron para admitir proyectos de estilo SDK. Si va a migrar manualmente un archivo del proyecto del formato anterior al formato de estilo SDK, debe eliminar las propiedades `PreBuildEvent` y `PostBuildEvent` y reemplazarlas por los destinos `PreBuild` y `PostBuild`, tal como se muestra en el código anterior. Para saber si el proyecto es un proyecto de estilo SDK, vea [Identificación del formato del proyecto](/nuget/resources/check-project-format).
+
 ## <a name="see-also"></a>Vea también
 
-- [Uso de Especificar eventos de compilación (Visual Basic)](../../ide/how-to-specify-build-events-visual-basic.md)
-- [Uso de Especificar eventos de compilación (C#)](../../ide/how-to-specify-build-events-csharp.md)
+- [Cómo: Especificar eventos de compilación (Visual Basic)](../../ide/how-to-specify-build-events-visual-basic.md)
+- [Cómo: Especificar eventos de compilación (C#)](../../ide/how-to-specify-build-events-csharp.md)
 - [Referencia de propiedades del proyecto](../../ide/reference/project-properties-reference.md)
 - [Compilar y generar en Visual Studio](../../ide/compiling-and-building-in-visual-studio.md)

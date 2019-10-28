@@ -13,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7b60f9bb1fffb9fb36311ad3fda504c1ff2260ce
-ms.sourcegitcommit: a5a54b147e772dc39e519da74ec41a0c25d99628
+ms.openlocfilehash: 0699faebfd210390eea11f8ad11b48d4c4bbd980
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2019
-ms.locfileid: "72289685"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72621427"
 ---
 # <a name="step-4-add-a-click-event-handler-to-each-label"></a>Paso 4: Agregar un controlador de eventos Click a cada etiqueta
 
@@ -38,7 +38,7 @@ El juego de formar parejas funciona como sigue:
 
 2. Elija el primer control de etiqueta para seleccionarlo. A continuación, mantenga presionada la tecla **CTRL** mientras elige cada una de las otras etiquetas para seleccionarlas. Asegúrese de que todas las etiquetas están seleccionadas.
 
-3. Elija el botón **Eventos** en la barra de herramientas de la ventana **Propiedades** para ver la página **Eventos** en la ventana **Propiedades**. Desplácese hacia abajo hasta el evento **Click** y escriba **label_Click** en el cuadro, como se muestra en la siguiente ilustración.
+3. Elija el botón **Eventos** en la barra de herramientas de la ventana **Propiedades** para ver la página **Eventos** en la ventana **Propiedades**. Desplácese hacia abajo hasta el evento **Click** y escriba **label_Click** en el cuadro, como se muestra en la siguiente captura de pantalla.
 
      ![Ventana Propiedades mostrando el evento Click](../ide/media/express_labelclick.png)
 
@@ -64,6 +64,6 @@ El juego de formar parejas funciona como sigue:
 
 ## <a name="to-continue-or-review"></a>Para continuar o revisar
 
-- Para ir al siguiente paso del tutorial, vea [Paso 5: Agregar referencias a etiquetas](../ide/step-5-add-label-references.md).
+- Para ir al siguiente paso del tutorial, vea **[Paso 5: Agregar referencias a etiquetas](../ide/step-5-add-label-references.md)** .
 
 - Para volver al paso anterior del tutorial, vea [Paso 3: Asignar un icono aleatorio a cada etiqueta](../ide/step-3-assign-a-random-icon-to-each-label.md).

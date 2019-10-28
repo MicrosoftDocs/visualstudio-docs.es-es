@@ -10,12 +10,12 @@ metadata:
   author: gewarren
   ms.author: gewarren
   ms.date: 10/10/2019
-  ms.openlocfilehash: 6f04176e3952d3b90fc31ba42a5e8d11c10ca456
-  ms.sourcegitcommit: 57bc1c3887838d707c13feff72a677b3bad3be4b
+  ms.openlocfilehash: 8daaad2dcabfb3636e91d81368e4d56666e37e30
+  ms.sourcegitcommit: 978df2feb5e64228d2e3dd430b299a5c234cda17
   ms.translationtype: HT
   ms.contentlocale: es-ES
-  ms.lasthandoff: 10/22/2019
-  ms.locfileid: "72777681"
+  ms.lasthandoff: 10/24/2019
+  ms.locfileid: "72888559"
 landingContent:
 - title: Más información sobre XAML
   linkLists:
@@ -37,12 +37,14 @@ landingContent:
     links:
     - text: Escribir y depurar código XAML en ejecución
       url: xaml-hot-reload.md
-    - text: Depurar XAML en Blend
-      url: debug-xaml-in-blend.md
+    - text: Inspección de propiedades XAML
+      url: inspect-xaml-properties-while-debugging.md
     - text: Depuración de aplicaciones de WPF
-      url: ../debugger/debugging-wpf.md?toc=/visualstudio/debugger/toc.json&bc=/visualstudio/debugger/breadcrumb/toc.json
+      url: ../debugger/debugging-wpf.md
     - text: Depurar aplicaciones para UWP
       url: ../debugger/debugging-windows-store-and-windows-universal-apps.md
+    - text: Depurar XAML en Blend
+      url: debug-xaml-in-blend.md
 - title: Desarrollo de aplicaciones de WPF
   linkLists:
   - linkListType: overview

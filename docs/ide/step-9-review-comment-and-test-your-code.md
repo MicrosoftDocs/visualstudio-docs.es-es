@@ -13,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 31a66556e9476631fa0372b14e73eb8c6241fc63
-ms.sourcegitcommit: 98b02f87c7aa1f5eb7f0d1c86bfa36efa8580c57
+ms.openlocfilehash: 39be6feffb70dd43823af2af0fce719daafc6f78
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "72314203"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72572487"
 ---
 # <a name="step-9-review-comment-and-test-your-code"></a>Paso 9: Revisar, comentar y probar el código
 
@@ -65,7 +65,7 @@ Acaba de compilar algo que funciona y, aunque todavía no está terminado, ya es
     > [!TIP]
     > El IDE se ha creado para facilitar la tarea de escribir código. Los *fragmentos de código* constituyen una manera de conseguirlo. Un fragmento de código es un acceso directo que se expande para crear un bloque pequeño de código.
     >
-    >  Puede ver todos los fragmentos de código disponibles. En la barra de menús, elija **Herramientas** > **Administrador de fragmentos de código**. En C#, el fragmento de código `if` está en **Visual C#** . En Visual Basic, los fragmentos de código `if` están en **Condicionales y bucles** > **Code Patterns** (Patrones de código). Este administrador se puede utilizar para examinar los fragmentos de código existentes o agregar los suyos propios.
+    >  Puede ver todos los fragmentos de código disponibles. En la barra de menús, elija **Herramientas** > **Administrador de fragmentos de código**. En C#, el fragmento de código `if` está en **Visual C#** . En Visual Basic, los fragmentos de código `if` están en **Code Patterns (Patrones de código)**  > **Condicionales y bucles**. Este administrador se puede utilizar para examinar los fragmentos de código existentes o agregar los suyos propios.
     >
     >  Para activar un fragmento de código mientras está especificando el código, escríbalo y elija la tecla **Tab**. Muchos fragmentos de código aparecen en la ventana **IntelliSense**, motivo por el cual la tecla **Tab** se elige dos veces: la primera para seleccionar el fragmento de código en la ventana **IntelliSense** y la segunda para indicarle al IDE que lo use. (IntelliSense admite el fragmento de código `if`, pero no el fragmento de código `ifelse`.)
 

@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 322c8d4b766619a6404a315fb83298bf5416fba4
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: cbeba8418b3364d4e3762643a78465158f80e6fc
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63445323"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72655449"
 ---
 # <a name="walkthrough-create-an-inline-task"></a>Tutorial: Creación de una tarea insertada
 Las tareas de MSBuild se crean normalmente compilando una clase que implementa la interfaz <xref:Microsoft.Build.Framework.ITask>. A partir de .NET Framework versión 4, se pueden crear tareas insertadas en el archivo del proyecto. No es necesario crear un ensamblado independiente para hospedar la tarea. Para más información, vea [Tareas insertadas](../msbuild/msbuild-inline-tasks.md).
@@ -46,7 +46,7 @@ Para crear y ejecutar las tareas, utilice Visual Studio y la **ventana del símb
 
 1. En el menú **Archivo** de Visual Studio, haga clic en **Nuevo** y, a continuación, **Proyecto**.
 
-2. En el cuadro de diálogo **Nuevo proyecto**, seleccione el tipo de proyecto de **Visual C#** y, a continuación, seleccione la plantilla **Aplicación de Windows Forms**. En el cuadro **Nombre** , escriba `InlineTasks`. Escriba una **ubicación** para la solución, por ejemplo, *D:\\*. Asegúrese de que la casilla **Crear directorio para la solución** esté activada, la opción **Agregar al control de código fuente** esté desactivada y el **Nombre de la solución** sea **InlineTasks**.
+2. En el cuadro de diálogo **Nuevo proyecto**, seleccione el tipo de proyecto de **Visual C#** y, a continuación, seleccione la plantilla **Aplicación de Windows Forms**. En el cuadro **Nombre** , escriba `InlineTasks`. Escriba una **ubicación** para la solución, por ejemplo, *D:\\* . Asegúrese de que la casilla **Crear directorio para la solución** esté activada, la opción **Agregar al control de código fuente** esté desactivada y el **Nombre de la solución** sea **InlineTasks**.
 
 3. Haga clic en **Aceptar** para crear el archivo del proyecto.
 
@@ -85,7 +85,7 @@ Para crear y ejecutar las tareas, utilice Visual Studio y la **ventana del símb
 
 3. Guarde el archivo de proyecto.
 
-   Este código crea una tarea insertada que se denomina Hello y no tiene parámetros, referencias o instrucciones `Using`. La tarea Hello contiene simplemente una línea de código, que muestra un mensaje de saludo en el dispositivo de registro predeterminado, normalmente la ventana de la consola.
+   Este código crea una tarea insertada que se denomina Hello y no tiene parámetros, referencias o directivas `Using`. La tarea Hello contiene simplemente una línea de código, que muestra un mensaje de saludo en el dispositivo de registro predeterminado, normalmente la ventana de la consola.
 
 ### <a name="run-the-hello-task"></a>Ejecución de la tarea Hello
  Ejecute MSBuild utilizando la **ventana del símbolo del sistema** para crear la tarea Hello y procesar el destino TestBuild que la invoca.
@@ -94,7 +94,7 @@ Para crear y ejecutar las tareas, utilice Visual Studio y la **ventana del símb
 
 1. Haga clic en **Inicio** y en **Todos los programas** y, a continuación, busque la carpeta **Visual Studio Tools** y haga clic en **Símbolo del sistema de Visual Studio**.
 
-2. En la **ventana del símbolo del sistema**, busque la carpeta que contiene el archivo del proyecto; en este caso, *D:\InlineTasks\InlineTasks\\*.
+2. En la **ventana del símbolo del sistema**, busque la carpeta que contiene el archivo del proyecto; en este caso, *D:\InlineTasks\InlineTasks\\* .
 
 3. Escriba **msbuild** sin modificadores de comando y, a continuación, presione **ENTRAR**. De forma predeterminada, esto compila el archivo *InlineTasks.csproj* y procesa el destino TestBuild predeterminado, que llama a la tarea Hello.
 

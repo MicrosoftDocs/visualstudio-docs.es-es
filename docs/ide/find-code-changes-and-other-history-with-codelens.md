@@ -4,17 +4,17 @@ ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.All_Languages.CodeLens
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 62ea3402a053ed57280ddbc946d79d27ab35f944
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: da45af92a11cfe61d5027d0710304e57ad657e48
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62980893"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72653844"
 ---
 # <a name="find-code-changes-and-other-history-with-codelens"></a>Buscar cambios en el código y otro historial con CodeLens
 
@@ -23,7 +23,7 @@ CodeLens le permite averiguar qué ocurrió con el código mientras sigue centra
 ::: moniker range=">=vs-2019"
 
 > [!NOTE]
-> Los indicadores de CodeLens del control de código fuente no están disponibles en la edición Visual Studio Community.
+> CodeLens está disponible en la edición Visual Studio Community. Sin embargo, los indicadores de *control de código fuente* no están disponibles en esta edición.
 
 ::: moniker-end
 
@@ -275,7 +275,7 @@ Active o desactive los indicadores de nivel de archivo de CodeLens con los icono
 ::: moniker range=">=vs-2019"
 
 > [!TIP]
-> Los indicadores del control de código fuente no están disponibles en la edición Visual Studio Community.
+> CodeLens está disponible en la edición Visual Studio Community. Sin embargo, los indicadores de *control de código fuente* no están disponibles en esta edición.
 
 ::: moniker-end
 

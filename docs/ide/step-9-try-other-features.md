@@ -10,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: aff87247afb79d62867da9e55f7a059192789d79
-ms.sourcegitcommit: 6eed0372976c0167b9a6d42ba443f9a474b8bb91
+ms.openlocfilehash: e5af132efde0c1a49e5404fa602363aab0554e6f
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/19/2019
-ms.locfileid: "71118850"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72572468"
 ---
 # <a name="step-9-try-other-features"></a>Paso 9: Probar otras características
 Para aprender más, pruebe a cambiar los iconos y los colores, y agregue un temporizador de juego y sonidos. Para que el juego sea más desafiante, pruebe a aumentar el tamaño del tablero y a ajustar el temporizador.
@@ -48,8 +48,6 @@ Para descargar una versión completa del ejemplo, consulte [Complete Matching Ga
 
 ## <a name="to-continue-or-review"></a>Para continuar o revisar
 
-- Si se bloquea o tiene preguntas de programación, envíe la pregunta a uno de los Foros de MSDN. Consulte el [Foro de Visual Basic](https://social.msdn.microsoft.com/Forums/vstudio/home?forum=vbgeneral) y el [Foro de Visual C#](https://social.msdn.microsoft.com/Forums/vstudio/home?forum=csharpgeneral).
-
-- Dispone de excelentes recursos de aprendizaje en vídeo gratuitos. Para obtener más información sobre la programación en Visual Basic, vea [Visual Basic Fundamentals: Development for absolute beginners](https://channel9.msdn.com/Series/Visual-Basic-Development-for-Absolute-Beginners) (Fundamentos de Visual Basic: desarrollo para principiantes absolutos). Para obtener más información sobre la programación en Visual C#, vea [C# fundamentals: Development for absolute beginners](https://channel9.msdn.com/Series/C-Sharp-Fundamentals-Development-for-Absolute-Beginners) (Fundamentos de C#: desarrollo para principiantes absolutos).
+- Dispone de excelentes recursos de aprendizaje en vídeo gratuitos. Para obtener más información sobre la programación en Visual Basic, vea [Visual Basic Fundamentals: Development for absolute beginners](https://channel9.msdn.com/Series/Visual-Basic-Development-for-Absolute-Beginners) (Fundamentos de C#: desarrollo para principiantes absolutos). Para obtener más información sobre la programación en C#, vea [C# fundamentals: Development for absolute beginners](https://channel9.msdn.com/Series/C-Sharp-Fundamentals-Development-for-Absolute-Beginners) (Fundamentos de C#: desarrollo para principiantes absolutos).
 
 - Para volver al paso anterior del tutorial, vea [Paso 8: Agregar un método para comprobar si el jugador ganó](../ide/step-8-add-a-method-to-verify-whether-the-player-won.md).

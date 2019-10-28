@@ -15,12 +15,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: da4da0a106d37b081e0a7c57fe905048f3314174
-ms.sourcegitcommit: e82baa50bf5a65858c410882c2e86a552c2c1921
+ms.openlocfilehash: fcc4a3d3d99deab62971c40b26c9a4252367438f
+ms.sourcegitcommit: 6244689e742e551e7b6933959bd42df56928ece3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72381076"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72516320"
 ---
 # <a name="create-a-network-installation-of-visual-studio"></a>Creación de una instalación de red de Visual Studio
 
@@ -229,9 +229,9 @@ Los administradores pueden implementar Visual Studio en estaciones de trabajo cl
 >
 
 ::: moniker range="vs-2019"
-
-> En el caso de las instalaciones sin conexión, si recibe un mensaje de error que indica que no se encuentra un proyecto que coincida con los parámetros especificados, asegúrese de que está usando el modificador --noweb con la versión 16.3.5 o posterior.
-
+> [!IMPORTANT]
+> En el caso de las instalaciones sin conexión, si recibe un mensaje de error que indica que no se encuentra un producto que coincida con los parámetros especificados, asegúrese de que está usando el modificador `--noweb` con la versión 16.3.5 o posterior.
+>
 ::: moniker-end
 
 Cuando realice la instalación desde un diseño, el contenido que está instalado se adquirirá del diseño. Sin embargo, si selecciona un componente que no está en el diseño, se obtendrá de Internet.  Si quiere evitar que la instalación de Visual Studio descargue cualquier contenido que no esté en su diseño, use la opción `--noWeb`. Si se usa `--noWeb` y al diseño le falta cualquier contenido seleccionado que se va a instalar, se produce un error en la instalación.

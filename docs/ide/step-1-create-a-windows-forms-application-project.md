@@ -10,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: be7b9bd67ed88b9f59ed279211bf15c96ae59569
-ms.sourcegitcommit: 6eed0372976c0167b9a6d42ba443f9a474b8bb91
+ms.openlocfilehash: 897c4ba0bfa46e73115f8288770d088346498dee
+ms.sourcegitcommit: 6244689e742e551e7b6933959bd42df56928ece3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/19/2019
-ms.locfileid: "71119016"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72516699"
 ---
 # <a name="step-1-create-a-windows-forms-app-project"></a>Paso 1: Creación de un proyecto de aplicación de Windows Forms
 
@@ -50,7 +50,7 @@ Al crear un visor de imagen, el primer paso consiste en crear un proyecto de apl
 
    Después de aplicar el filtro **Tipo de proyecto**, elija la plantilla **Aplicación de Windows Forms (.NET Framework)** para C# o Visual Basic, y después seleccione **Siguiente**.
 
-   ![Selección de la plantilla C# para la Aplicación de Windows Forms (.NET Framework)](./media/create-new-project-search-winforms-filtered.png)
+   ![Elección de la plantilla de C# o Visual Basic para la Aplicación de Windows Forms (.NET Framework)](./media/create-new-project-search-winforms-filtered.png)
 
    > [!NOTE]
    > Si no ve la plantilla **Aplicación de Windows Forms (.NET Framework)** , puede instalarla desde la ventana **Crear un proyecto nuevo**. En el mensaje **¿No encuentra lo que busca?** , elija el vínculo **Instalar más herramientas y características**.

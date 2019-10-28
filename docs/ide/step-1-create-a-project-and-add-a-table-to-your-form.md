@@ -1,6 +1,6 @@
 ---
 title: 'Paso 1: Crear un proyecto y agregar una tabla a un formulario'
-ms.date: 05/31/2019
+ms.date: 10/15/2019
 ms.topic: tutorial
 ms.prod: visual-studio-windows
 ms.technology: vs-ide-general
@@ -10,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0562588fe81780b7bb5787c4ec0b9861fd4c9408
-ms.sourcegitcommit: 6eed0372976c0167b9a6d42ba443f9a474b8bb91
+ms.openlocfilehash: b63a0b1801b0a3b559281959975a1faaa5bb99a5
+ms.sourcegitcommit: 6244689e742e551e7b6933959bd42df56928ece3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/19/2019
-ms.locfileid: "71119063"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72516784"
 ---
 # <a name="step-1-create-a-project-and-add-a-table-to-your-form"></a>Paso 1: Crear un proyecto y agregar una tabla a un formulario
 
@@ -44,11 +44,11 @@ El primer paso para crear un juego de formar parejas es crear el proyecto y agre
 
    ![Visualización de la ventana "Crear un proyecto"](../get-started/media/vs-2019/create-new-project-dark-theme.png)
 
-1. En el cuadro de búsqueda de la ventana **Crear un proyecto**, escriba *Windows Forms*.
+1. En el cuadro de búsqueda de la ventana **Crear un proyecto**, escriba *Windows Forms*. A continuación, elija **Escritorio** en la lista **Tipo de proyecto**.
 
-1. Elija la plantilla **Aplicación de Windows Forms (.NET Framework)** y, luego, seleccione **Siguiente**.
+   Después de aplicar el filtro **Tipo de proyecto**, elija la plantilla **Aplicación de Windows Forms (.NET Framework)** para C# o Visual Basic, y después seleccione **Siguiente**.
 
-   ![Elija la plantilla Visual Basic para la Aplicación de Windows Forms (.NET Framework).](../get-started/visual-basic/media/vs-2019/vb-create-new-project-search-winforms-filtered.png)
+   ![Elección de la plantilla de C# o Visual Basic para la Aplicación de Windows Forms (.NET Framework)](./media/create-new-project-search-winforms-filtered.png)
 
    > [!NOTE]
    > Si no ve la plantilla **Aplicación de Windows Forms (.NET Framework)** , puede instalarla desde la ventana **Crear un proyecto**. En el mensaje **¿No encuentra lo que busca?** , elija el vínculo **Instalar más herramientas y características**.

@@ -1,6 +1,6 @@
 ---
 title: 'Tutorial 2: Crear una prueba matemática cronometrada'
-ms.date: 11/04/2016
+ms.date: 10/16/2019
 ms.assetid: d7165d08-ace3-457d-b57d-fb8f80760a6f
 ms.topic: tutorial
 ms.technology: vs-ide-general
@@ -9,16 +9,21 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 39550eb3e2d5fe78e50257b51b52642740781600
-ms.sourcegitcommit: 6eed0372976c0167b9a6d42ba443f9a474b8bb91
+ms.openlocfilehash: e092e11474aa872903977e1b07c699b160bef8a2
+ms.sourcegitcommit: 6244689e742e551e7b6933959bd42df56928ece3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/19/2019
-ms.locfileid: "71118856"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72516597"
 ---
 # <a name="tutorial-2-create-a-timed-math-quiz"></a>Tutorial 2: Crear una prueba matemática cronometrada
 
-En este tutorial, se compila un juego de prueba matemática en el que el jugador debe responder a cuatro problemas aritméticos aleatorios en un tiempo especificado. Aprenderá a:
+En este tutorial, se compila un juego de prueba matemática en el que el jugador debe responder a cuatro problemas aritméticos aleatorios en un tiempo especificado.
+
+> [!NOTE]
+> En este tutorial, se trata tanto C# como Visual Basic, por lo que deberá centrarse en la información específica del lenguaje de programación que use.
+
+Este tutorial le guiará por las tareas siguientes:
 
 - Generar números aleatorios mediante la clase <xref:System.Random>.
 
@@ -34,13 +39,6 @@ Cuando termine, el cuestionario se parecerá a la siguiente captura de pantalla,
 
 ## <a name="tutorial-links"></a>Vínculos del tutorial
 
-Para descargar una versión completa de la prueba, vea [Complete Math Quiz tutorial sample](https://code.msdn.microsoft.com/Complete-Math-Quiz-8581813c) (Ejemplo completo del tutorial de prueba matemática).
-
-> [!NOTE]
-> En este tutorial, se trata tanto C# como Visual Basic, por lo que deberá centrarse en la información específica del lenguaje de programación que use.
-
-## <a name="related-topics"></a>Temas relacionados
-
 |Title|DESCRIPCIÓN|
 |-----------|-----------------|
 |[Paso 1: Crear un proyecto y agregar etiquetas al formulario](../ide/step-1-create-a-project-and-add-labels-to-your-form.md)|Comience creando el proyecto, cambiando las propiedades y agregando controles `Label`.|
@@ -51,3 +49,15 @@ Para descargar una versión completa de la prueba, vea [Complete Math Quiz tutor
 |[Paso 6: Agregar un problema de resta](../ide/step-6-add-a-subtraction-problem.md)|Agregue un problema de resta que genere números aleatorios, utilice el temporizador y compruebe si las respuestas son correctas.|
 |[Paso 7: Agregar problemas de multiplicación y división](../ide/step-7-add-multiplication-and-division-problems.md)|Agregue problemas de multiplicación y división que generen números aleatorios, utilicen el temporizador y se comprueban para ver si las respuestas son correctas.|
 |[Paso 8: Personalizar la prueba](../ide/step-8-customize-the-quiz.md)|Pruebe con otras características, como cambiar colores y agregar sugerencias.|
+
+También dispone de excelentes recursos de aprendizaje en vídeo gratuitos. Para obtener más información sobre la programación en C#, vea [C# fundamentals: Development for absolute beginners](https://channel9.msdn.com/Series/C-Sharp-Fundamentals-Development-for-Absolute-Beginners) (Fundamentos de C#: desarrollo para principiantes absolutos). Para obtener más información sobre la programación en Visual Basic, vea [Visual Basic Fundamentals: Development for absolute beginners](https://channel9.msdn.com/Series/Visual-Basic-Development-for-Absolute-Beginners) (Fundamentos de C#: desarrollo para principiantes absolutos).
+
+## <a name="next-steps"></a>Pasos siguientes
+
+Para comenzar el tutorial, empiece por el **[Paso 1: Crear un proyecto y agregar etiquetas al formulario](../ide/step-1-create-a-project-and-add-labels-to-your-form.md)** .
+
+## <a name="see-also"></a>Vea también
+
+* [Más tutoriales de C#](/visualstudio/get-started/csharp/)
+* [Tutoriales de Visual Basic](/visualstudio/get-started/visual-basic/)
+* [Tutoriales de C++](/cpp/get-started/tutorial-console-cpp)

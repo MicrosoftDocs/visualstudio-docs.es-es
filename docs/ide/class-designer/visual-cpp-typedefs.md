@@ -1,5 +1,5 @@
 ---
-title: Definiciones de tipos de Visual C++ en el Diseñador de clases
+title: Definiciones de tipo de C++ en el Diseñador de clases
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -8,19 +8,19 @@ f1_keywords:
 helpviewer_keywords:
 - Class Designer [Visual Studio], typedefs
 ms.assetid: c1984108-71fc-4d3a-b4d4-3eac2c6b4ebf
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ded9e1b6bea0a6f03dd9599b592bba5fba6f91fe
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 94dc4a6687a2aaede7fc901884c5d3acc6fbf56f
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62975141"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72748007"
 ---
-# <a name="visual-c-typedefs-in-class-designer"></a>Definiciones de tipo de Visual C++ en el Diseñador de clases
+# <a name="c-typedefs-in-class-designer"></a>Definiciones de tipo de C++ en el Diseñador de clases
 
 Las instrucciones [TypeDef](/cpp/cpp/aliases-and-typedefs-cpp#typedefs) crean una o varias capas de direccionamiento indirecto entre un nombre y su tipo subyacente. El **Diseñador de clases** admite los tipos de definición de tipo de C++, que se declaran con la palabra clave `typedef`; por ejemplo:
 
@@ -84,5 +84,5 @@ typedef class coord
 
 ## <a name="see-also"></a>Vea también
 
-- [Trabajar con código de Visual C++](working-with-visual-cpp-code.md)
+- [Trabajo con código de C++](working-with-visual-cpp-code.md)
 - [Typedefs](/cpp/cpp/aliases-and-typedefs-cpp#typedefs)
