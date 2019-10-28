@@ -11,22 +11,22 @@ dev_langs:
 - jsharp
 - C++
 helpviewer_keywords:
-- MSBuild (Visual C++), CustomBuild task
-- CustomBuild task (MSBuild (Visual C++))
+- MSBuild (C++), CustomBuild task
+- CustomBuild task (MSBuild (C++))
 author: mikeblome
 ms.author: mblome
 ms.workload:
 - multiple
-ms.openlocfilehash: 04f33f3852f051e1f492cb2b6dca44fcdb260e11
-ms.sourcegitcommit: 32144a09ed46e7223ef7dcab647a9f73afa2dd55
+ms.openlocfilehash: 678068d1b6acc055fa65e6d0305b07152ed28695
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/05/2019
-ms.locfileid: "67587018"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72748111"
 ---
 # <a name="custombuild-task"></a>Tarea CustomBuild
 
-Contiene la herramienta compiladora de Visual C++, cmd.exe. Esta clase deriva de [TrackedVCToolTask](../msbuild/trackedvctooltask-base-class.md), pero no usa seguimiento de archivos para detectar dependencias de archivos. Todas las dependencias se deben especificar de forma explícita como AdditionalDependencies para que la compilación incremental funcione correctamente.
+Incluye la herramienta del compilador de Microsoft C++, cmd.exe. Esta clase deriva de [TrackedVCToolTask](../msbuild/trackedvctooltask-base-class.md), pero no usa seguimiento de archivos para detectar dependencias de archivos. Todas las dependencias se deben especificar de forma explícita como AdditionalDependencies para que la compilación incremental funcione correctamente.
 
 ## <a name="parameters"></a>Parámetros
 

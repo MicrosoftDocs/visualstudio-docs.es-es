@@ -1,5 +1,5 @@
 ---
-title: 'Procedimientos para: Especificación de eventos de compilación (C#)'
+title: Procedimiento Especificación de eventos de compilación (C#)
 ms.date: 03/21/2019
 ms.technology: vs-ide-compile
 ms.topic: conceptual
@@ -15,14 +15,14 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 9484d6977c6896253197215ce185579518448da8
-ms.sourcegitcommit: 0f5f7955076238742f2071d286ad8e896f3a6cad
+ms.openlocfilehash: a28f491ea5af53546f66e066bf8f78575708bc57
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "68483705"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72656587"
 ---
-# <a name="how-to-specify-build-events-c"></a>Procedimientos para: Especificación de eventos de compilación (C#)
+# <a name="how-to-specify-build-events-c"></a>Procedimiento Especificación de eventos de compilación (C#)
 
 Use eventos de compilación para especificar comandos que se ejecutan antes de que se inicie la compilación o después de que esta finalice. Los eventos de compilación solo se ejecutan si se alcanzan correctamente esos puntos en el proceso de compilación.
 
@@ -44,7 +44,7 @@ Cuando se compila un proyecto, los eventos anteriores a la compilación se agreg
 5. En el cuadro **Línea de comandos del evento posterior a la compilación**, especifique la sintaxis del evento de compilación.
 
    > [!NOTE]
-   > Agregue una instrucción `call` antes de todos los comandos posteriores a la compilación que ejecutan archivos *.bat*. Por ejemplo, `call C:\MyFile.bat` o `call C:\MyFile.bat call C:\MyFile2.bat`.
+   > Agregue una instrucción `call` antes de todos los comandos posteriores a la compilación que ejecutan archivos *.bat*. Por ejemplo: `call C:\MyFile.bat` o `call C:\MyFile.bat call C:\MyFile2.bat`.
 
 6. En el cuadro **Ejecutar el evento posterior a la compilación**, especifique en qué condiciones se ejecuta el evento posterior a la compilación.
 
@@ -72,7 +72,7 @@ En el procedimiento siguiente se muestra cómo establecer la versión de sistema
 
 1. Cree un proyecto **Aplicación de consola** para el comando. Asigne al proyecto el nombre **ChangeOSVersionCS**.
 
-2. En *Program.cs*, agregue la línea siguiente a las demás instrucciones `using` de la parte superior del archivo:
+2. En *Program.cs*, agregue la línea siguiente a las demás directivas `using` de la parte superior del archivo:
 
    ```csharp
    using System.Xml;
@@ -178,5 +178,5 @@ Después, invoque este comando en un evento posterior a la compilación para mod
 
 - [Página Eventos de compilación, (Diseñador de proyectos) (C#)](../ide/reference/build-events-page-project-designer-csharp.md)
 - [Línea de comandos del evento anterior/posterior a la compilación (Cuadro de diálogo)](../ide/reference/pre-build-event-post-build-event-command-line-dialog-box.md)
-- [Uso de Especificar eventos de compilación (Visual Basic)](../ide/how-to-specify-build-events-visual-basic.md)
+- [Cómo: Especificar eventos de compilación (Visual Basic)](../ide/how-to-specify-build-events-visual-basic.md)
 - [Compilar y generar](../ide/compiling-and-building-in-visual-studio.md)

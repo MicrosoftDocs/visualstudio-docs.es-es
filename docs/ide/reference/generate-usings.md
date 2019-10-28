@@ -11,12 +11,12 @@ ms.workload:
 - dotnet
 helpviewer_keywords:
 - add missing usings
-ms.openlocfilehash: d971bcdaca4efdf587c7e441f1b0b28d21388dee
-ms.sourcegitcommit: 59e5758036223ee866f3de5e3c0ab2b6dbae97b6
+ms.openlocfilehash: 78786e6e6e7a8e5d8a8766138cb1a54a49416f9a
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "68416479"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72610889"
 ---
 # <a name="add-missing-usings-in-visual-studio"></a>Agregar instrucciones Using que faltan en Visual Studio
 
@@ -24,15 +24,15 @@ Esta generación de código se aplica a:
 
 - C#
 
-**Qué:** Permite agregar inmediatamente las instrucciones import o [using](/dotnet/csharp/language-reference/keywords/using-statement) necesarias del código copiado y pegado.
+**Qué:** Permite agregar inmediatamente las directivas import o [using](/dotnet/csharp/language-reference/keywords/using-directive) necesarias del código copiado y pegado.
 
-**Cuándo:** Es habitual copiar código de distintos lugares del proyecto u otros orígenes y pegarlo en el nuevo código. Esta acción rápida busca las instrucciones import que faltan en el código copiado y pegado y, luego, le pide que las agregue.
+**Cuándo:** Es habitual copiar código de distintos lugares del proyecto u otros orígenes y pegarlo en el nuevo código. Esta acción rápida busca las directivas de importaciones que faltan en el código copiado y pegado y, luego, le pide que las agregue.
 
-**Por qué:** Dado que la acción rápida agrega automáticamente las importaciones necesarias, no es necesario copiar manualmente las instrucciones `using` que necesita el código.
+**Por qué:** Dado que la acción rápida agrega automáticamente las importaciones necesarias, no es necesario copiar manualmente las directivas `using` que necesita el código.
 
 ## <a name="add-missing-usings-refactoring"></a>Agregar refactorización de instrucciones Using que faltan
 
-1. Copie el código de un archivo y péguelo en uno nuevo sin incluir las instrucciones `using` necesarias. El error resultante va acompañado de una corrección de código que agrega las instrucciones `using` que faltan.
+1. Copie el código de un archivo y péguelo en uno nuevo sin incluir las directivas `using` necesarias. El error resultante va acompañado de una corrección de código que agrega las directivas `using` que faltan.
 
     > [!NOTE]
     > Esta sugerencia debe activarse en **Herramientas > Opciones > Editor de texto > C# > Opciones avanzadas > Directivas Using**.

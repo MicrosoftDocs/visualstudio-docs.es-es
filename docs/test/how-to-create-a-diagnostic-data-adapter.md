@@ -5,15 +5,15 @@ ms.topic: conceptual
 helpviewer_keywords:
 - Diagnostic Data Adapter, creating
 ms.assetid: bd7ad36c-54cb-4d2a-9aea-9d10ad98d7ba
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 517d4e0558aeca1518316520191ae6c662b41a9e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a1940cda15d1ac5515e25b1e1e997f13a32d6e53
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62950732"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72653696"
 ---
 # <a name="how-to-create-a-diagnostic-data-adapter"></a>Procedimiento Crear un adaptador de datos de diagnóstico
 
@@ -32,7 +32,7 @@ Cuando ejecuta las pruebas, se generan eventos de modo que el adaptador de datos
 
 A continuación se muestra una lista parcial de eventos clave que puede usar al crear el adaptador de datos de diagnóstico. Para obtener una lista completa de los eventos del adaptador de datos de diagnóstico, vea la clase abstracta <xref:Microsoft.VisualStudio.TestTools.Execution.DataCollectionEvents>.
 
-|evento|Descripción|
+|evento|DESCRIPCIÓN|
 |-|-----------------|
 |<xref:Microsoft.VisualStudio.TestTools.Execution.DataCollectionEvents.SessionStart>|Inicio de la ejecución de pruebas|
 |<xref:Microsoft.VisualStudio.TestTools.Execution.DataCollectionEvents.SessionEnd>|Final de la ejecución de pruebas|
@@ -68,7 +68,7 @@ Para obtener un proyecto de adaptador de datos de diagnóstico de ejemplo comple
 
    3. Elija **Aceptar**.
 
-4. Agregue las instrucciones `using` siguientes al archivo de clase:
+4. Agregue las directivas `using` siguientes al archivo de clase:
 
    ```csharp
    using Microsoft.VisualStudio.TestTools.Common;

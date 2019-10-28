@@ -10,21 +10,21 @@ helpviewer_keywords:
 - code [Visual Studio], outlining
 - code [Visual Studio], hiding
 - outlining code
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d6451e835e44af23fbd41c9c1573e0bc5daed115
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 791663c04d1c1e79eebaed39d339d8d118ffeaae
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62811921"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72748867"
 ---
 # <a name="outlining"></a>esquematizar
 
-Se puede ocultar algún código de la vista si se contrae una región de código para que aparezca debajo de un signo más (**+**). Para expandir una región contraída hay que hacer clic en su signo más. Si prefiere usar el teclado, puede presionar **CTRL**+**M**+**M** para expandir o contraer. También se puede contraer una región de esquematización si se hace doble clic en cualquier línea de la región en el margen de esquematización, que aparece justo a la izquierda del código. Para ver el contenido de una región contraída como información sobre herramientas, hay que mantener el mouse sobre la región contraída.
+Se puede ocultar algún código de la vista si se contrae una región de código para que aparezca debajo de un signo más ( **+** ). Para expandir una región contraída hay que hacer clic en su signo más. Si prefiere usar el teclado, puede presionar **CTRL**+**M**+**M** para expandir o contraer. También se puede contraer una región de esquematización si se hace doble clic en cualquier línea de la región en el margen de esquematización, que aparece justo a la izquierda del código. Para ver el contenido de una región contraída como información sobre herramientas, hay que mantener el mouse sobre la región contraída.
 
 > [!NOTE]
 > Este tema se aplica a Visual Studio para Windows. En el caso de Visual Studio para Mac, vea [Editor de código fuente (Visual Studio para Mac)](/visualstudio/mac/source-editor).
@@ -48,8 +48,8 @@ El submenú **Edición** > **Esquematización** contiene los siguientes comandos
 |Detener esquematización|(**Ctrl**+**M**, **Ctrl**+**P**): quita toda la información de esquematización del documento completo.|
 |Detener ocultar actual|(**Ctrl**+**M**, **Ctrl**+**U**): quita la información de esquematización de la región definida por el usuario que está seleccionada actualmente. No está disponible en Visual Basic.|
 |Contraer a definiciones|(**Ctrl**+**M**, **Ctrl**+**O**): contrae los miembros de todos los tipos.|
-|Contraer bloque:\<límite lógico>|(Visual C++) Contrae una región en la función que contiene el punto de inserción. Por ejemplo, si el punto de inserción está dentro de un bucle, se oculta el bucle.|
-|Contraer todo el contenido de: \<estructuras lógicas>|(Visual C++) Contrae todas las estructuras dentro de la función.|
+|Contraer bloque:\<límite lógico>|(C++) Contrae una región en la función que contiene el punto de inserción. Por ejemplo, si el punto de inserción está dentro de un bucle, se oculta el bucle.|
+|Contraer todo el contenido de: \<estructuras lógicas>|(C++) Contrae todas las estructuras dentro de la función.|
 
 También puede utilizar Visual Studio SDK para definir las regiones de texto que desea expandir o contraer. Vea [Tutorial: Esquematización](../extensibility/walkthrough-outlining.md).
 

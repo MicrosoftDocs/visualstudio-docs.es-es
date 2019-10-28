@@ -1,6 +1,6 @@
 ---
 title: 'Tutorial 1: Crear un visor de imágenes'
-ms.date: 08/30/2019
+ms.date: 10/16/2019
 ms.assetid: 3071d6df-2b2f-4e95-ab68-bef727323136
 ms.topic: tutorial
 ms.prod: visual-studio-windows
@@ -10,19 +10,19 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7d9a525ef9da6583a37d5e4d26bfec7d0558cde4
-ms.sourcegitcommit: 6eed0372976c0167b9a6d42ba443f9a474b8bb91
+ms.openlocfilehash: 9c751f6b55bc50a064473468d95c07a54aba76ae
+ms.sourcegitcommit: 6244689e742e551e7b6933959bd42df56928ece3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/19/2019
-ms.locfileid: "71118664"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72516620"
 ---
 # <a name="tutorial-1-create-a-picture-viewer"></a>Tutorial 1: Crear un visor de imágenes
 
 En este tutorial, compilará una aplicación que carga una imagen de un archivo y la muestra en una ventana. Aprenderá a usar el **Diseñador de Windows Forms** para arrastrar controles como botones y cuadros de imagen al formulario, a establecer sus propiedades y a usar los contenedores para cambiar el tamaño del formulario de manera fluida. También empezará a escribir código.
 
 > [!NOTE]
-> En este tutorial, se trata tanto Visual C# como Visual Basic, por lo que deberá centrarse en la información específica del lenguaje de programación que use.
+> En este tutorial, se trata tanto C# como Visual Basic, por lo que deberá centrarse en la información específica del lenguaje de programación que use.
 
 Este tutorial le guiará por las tareas siguientes:
 
@@ -59,6 +59,8 @@ Cuando termine, la aplicación debe ser similar a la de la imagen siguiente:
 |[Paso 9: Revisar, comentar y probar el código](../ide/step-9-review-comment-and-test-your-code.md)|Revisar y probar el código. Agregar comentarios según sea necesario.|
 |[Paso 10: Escribir código para botones adicionales y una casilla](../ide/step-10-write-code-for-additional-buttons-and-a-check-box.md)|Escribir código para hacer que funcionen otros botones y una casilla mediante IntelliSense.|
 |[Paso 11: Ejecución de la aplicación y prueba de otras características](../ide/step-11-run-your-program-and-try-other-features.md)|Ejecutar la aplicación y establecer el color de fondo. Probar con otras características, como cambiar colores, fuentes y bordes.|
+
+También dispone de excelentes recursos de aprendizaje en vídeo gratuitos. Para obtener más información sobre la programación en C#, vea [C# fundamentals: Development for absolute beginners](https://channel9.msdn.com/Series/C-Sharp-Fundamentals-Development-for-Absolute-Beginners) (Fundamentos de C#: desarrollo para principiantes absolutos). Para obtener más información sobre la programación en Visual Basic, vea [Visual Basic Fundamentals: Development for absolute beginners](https://channel9.msdn.com/Series/Visual-Basic-Development-for-Absolute-Beginners) (Fundamentos de C#: desarrollo para principiantes absolutos).
 
 ## <a name="next-steps"></a>Pasos siguientes
 

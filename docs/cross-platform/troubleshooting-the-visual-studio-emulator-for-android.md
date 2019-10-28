@@ -10,12 +10,12 @@ ms.author: crdun
 manager: crdun
 ms.workload:
 - multiple
-ms.openlocfilehash: ebbbd2eb0cf47763868a6c23ef2637bdd4009b2e
-ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.openlocfilehash: 56978bfee49bc3a38e900eb41004307ef40d0403
+ms.sourcegitcommit: 57bc1c3887838d707c13feff72a677b3bad3be4b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "66261052"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72777815"
 ---
 # <a name="troubleshoot-the-visual-studio-emulator-for-android"></a>Solución de problemas del emulador de Visual Studio para Android
 Este tema contiene información para ayudarle a resolver problemas que puede experimentar cuando usa el Emulador de Visual Studio para Android.
@@ -23,7 +23,7 @@ Este tema contiene información para ayudarle a resolver problemas que puede exp
 > [!WARNING]
 > Cuando se instala el emulador, el programa de instalación comprueba los requisitos previos para ejecutar el software. Si estos requisitos no se cumplen se muestra una serie de advertencias, pero no se solicita su instalación.
 
- Este tema contiene las siguientes secciones:
+ En este tema se incluyen las siguientes secciones.
 
 - [Antes de empezar](#BeforeYouStart)
 
@@ -134,7 +134,7 @@ Este tema contiene información para ayudarle a resolver problemas que puede exp
 
      ![Android&#95;Emu&#95;V&#95;Switch&#95;Man](../cross-platform/media/android_emu_v_switch_man.png "Android_Emu_V_Switch_Man")
 
-     Si la instalación no es correcta y está usando Windows 10, debería intentar el paso [Vuelve a instalar los dispositivos de red mediante el comando netcfg –d](http://windows.microsoft.com/windows-10/fix-network-connection-issues) (sección 6).
+     Si la instalación no es correcta y está usando Windows 10, debería intentar el paso [Vuelve a instalar los dispositivos de red mediante el comando netcfg –d](https://support.microsoft.com/help/10741/windows-fix-network-connection-issues) (sección 6).
 
 - Si estos pasos no resuelven el problema, consulte [Emulator fails to start (first use)](#NoStart) para obtener información sobre software de terceros que puede interferir con el emulador.
 
@@ -209,7 +209,7 @@ Este tema contiene información para ayudarle a resolver problemas que puede exp
 
   2. Para el adaptador vEthernet (conmutador interno del emulador de Windows Phone para el puerto Ethernet interno), elija **Propiedades** en el menú contextual.
 
-      ![Adaptador virtual que usa Hyper-V](../cross-platform/media/android_emu_virtual_adapter.png "Android_Emu_Virtual_Adapter")
+      ![Adaptador virtual que Hyper&#45;V usa](../cross-platform/media/android_emu_virtual_adapter.png "Android_Emu_Virtual_Adapter")
 
       Aquí se muestran las propiedades del adaptador.
 
@@ -311,6 +311,6 @@ Este tema contiene información para ayudarle a resolver problemas que puede exp
 ## <a name="Support"></a> Recursos de soporte técnico
  Si el equipo host cumple los requisitos del sistema y detecta un problema que no se trata en esta guía de solución de problemas:
 
-- Formule una pregunta en StackOverflow con las etiquetas [android-emulator](http://stackoverflow.com/questions/tagged/android-emulator) y visual-studio.
+- Formule una pregunta en StackOverflow con las etiquetas [android-emulator](https://stackoverflow.com/questions/tagged/android-emulator) y visual-studio.
 
 - Notifique un problema con la herramienta Enviar una sonrisa en Visual Studio o en el administrador del emulador.

@@ -11,12 +11,12 @@ ms.author: mblome
 manager: markl
 ms.workload:
 - multiple
-ms.openlocfilehash: 648d00cd59d056e0874c91338a39667088d93e2e
-ms.sourcegitcommit: 535ef05b1e553f0fc66082cd2e0998817eb2a56a
+ms.openlocfilehash: 071c16267486e1dda1e183cad3c488345974a3cc
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "72018434"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72745922"
 ---
 # <a name="sample-c-project-for-code-analysis"></a>Proyecto de ejemplo de C++ para el análisis de código
 
@@ -34,7 +34,7 @@ Los procedimientos también proporcionan el código para el encabezado y los arc
 
 1. Haga clic en el menú **Archivo**, seleccione **Nuevo** y haga clic en **Nuevo proyecto**.
 
-2. En la lista de árbol **Tipos de proyecto**, si Visual C++ no es el lenguaje predeterminado en VS, expanda **Otros lenguajes**.
+2. En la lista de árbol **Tipos de proyecto**, si C++ no es el lenguaje predeterminado en VS, expanda **Otros lenguajes**.
 
 3. Expanda **Visual C++** y luego haga clic en **General**.
 

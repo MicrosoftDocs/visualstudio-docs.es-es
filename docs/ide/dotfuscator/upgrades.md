@@ -22,14 +22,14 @@ helpviewer_keywords:
 description: Aprenda a actualizar la copia gratuita de Dotfuscator Community incluida en Visual Studio.
 ms.assetid: c7c60904-27f9-4f1f-b79b-ddf65041b810
 author: Joe-Sewell-PreEmptive
-ms.author: gewarren
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: cee876a3904d5c47b43b58793087c901e8444dd3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 555b23f33ee1e3541afc6181a9ec6c4ece833b81
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62557247"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72748891"
 ---
 # <a name="upgrade-dotfuscator-community"></a>Actualización de Dotfuscator Community
 
@@ -62,7 +62,7 @@ Mientras que Dotfuscator Community proporciona un nivel básico de protección,
 Dotfuscator Professional es el [.NET Obfuscator][net-obfuscator] estándar del sector y es adecuado para los desarrolladores empresariales que necesitan actualizaciones de producto, mantenimiento y soporte de forma continua.
 Además, Dotfuscator Professional ofrece una mayor integración con Visual Studio y tiene licencia para uso comercial.
 
-Para obtener más información sobre las características avanzadas de protección de aplicaciones que ofrece Dotfuscator Professional, visite la [página de información general de Dotfuscator][product-about] de PreEmptive Solutions y [compárelo con Community Edition][product-compare].
+Para más información sobre las características avanzadas de protección de aplicaciones que ofrece Dotfuscator Professional, visite la [página de información general de Dotfuscator][product-about] de PreEmptive Solutions y [compárelo con Community Edition][product-compare].
 [En preemptive.com hay versiones de evaluación totalmente compatibles][eval].
 
 ## <a name="see-also"></a>Vea también

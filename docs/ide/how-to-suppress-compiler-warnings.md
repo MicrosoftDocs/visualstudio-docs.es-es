@@ -8,12 +8,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 764c488b659418dd409a5d83b1efcaac502f1e5e
-ms.sourcegitcommit: 59e5758036223ee866f3de5e3c0ab2b6dbae97b6
+ms.openlocfilehash: aec3dfb45471a3349e14419671ef1fb3b5e05db5
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "68415793"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72747946"
 ---
 # <a name="how-to-suppress-compiler-warnings"></a>Procedimiento Supresión de advertencias del compilador
 
@@ -33,7 +33,7 @@ Use la página de propiedades de **Compilación** para suprimir advertencias esp
 
 1. Recompilar la solución.
 
-## <a name="suppress-specific-warnings-for-visual-c"></a>Suprimir advertencias específicas de Visual C++
+## <a name="suppress-specific-warnings-for-c"></a>Supresión de advertencias específicas de C++
 
 Use la página de propiedades de **Propiedades de configuración** para suprimir advertencias específicas para proyectos de C++.
 

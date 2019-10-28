@@ -4,15 +4,15 @@ ms.date: 08/01/2018
 ms.topic: conceptual
 helpviewer_keywords:
 - editorconfig [Visual Studio]
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 6b8602dfb37b1cdad046b012d62f888e77ca5343
-ms.sourcegitcommit: a2df993dc5e11c5131dbfcba686f0028a589068f
+ms.openlocfilehash: cab93bcf60c5a4fb5034bfdfd7601e4f846996d0
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "71150164"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72652629"
 ---
 # <a name="create-portable-custom-editor-settings-with-editorconfig"></a>Crear opciones de configuración del editor personalizadas y portátiles con EditorConfig
 
@@ -24,15 +24,15 @@ La configuración de EditorConfig es compatible con varios IDE y editores de có
 
 Cuando se agrega un archivo EditorConfig al proyecto de Visual Studio, se aplica a las nuevas líneas de código el formato de la configuración de EditorConfig. El formato del código existente no cambia, a menos que ejecute uno de los comandos siguientes:
 
- - [Limpieza de código](../ide/code-styles-and-code-cleanup.md) (**Ctrl**+**K**, **Ctrl**+**E**), que aplica cualquier configuración de espacio en blanco, como el estilo de sangría, y la configuración de estilo de código seleccionada, como la manera de ordenar las instrucciones `using`.
+ - [Limpieza de código](../ide/code-styles-and-code-cleanup.md) (**Ctrl**+**K**, **Ctrl**+**E**), que aplica cualquier configuración de espacio en blanco, como el estilo de sangría, y la configuración de estilo de código seleccionada, como la manera de ordenar las directivas `using`.
  - **Editar** > **Opciones avanzadas** > **Dar formato al documento** (o **Ctrl**+**K**, **Ctrl**+**D** en el perfil predeterminado), que solo aplica la configuración de espacio en blanco, como el estilo de sangría.
- 
+
  ::: moniker-end
- 
+
 ::: moniker range="=vs-2017"
 
 Cuando se agrega un archivo EditorConfig al proyecto de Visual Studio, se aplica a las nuevas líneas de código el formato de la configuración de EditorConfig. El formato del código existente no cambia a menos que se dé formato al documento (**Editar** > **Opciones avanzadas** > **Dar formato al documento** o **Ctrl**+**K**, **Ctrl**+**D** en el perfil predeterminado). La aplicación de formato al documento solo afecta a la configuración de espacio en blanco, como el estilo de sangría, a menos que se haya configurado la opción Dar formato al documento de modo que [realice una limpieza de código adicional](../ide/code-styles-and-code-cleanup.md#apply-code-styles).
- 
+
  ::: moniker-end
 
 ::: moniker range="vs-2017"

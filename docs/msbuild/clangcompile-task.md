@@ -11,28 +11,28 @@ dev_langs:
 - jsharp
 - C++
 helpviewer_keywords:
-- MSBuild (Visual C++), ClangCompile task
-- ClangCompile task (MSBuild (Visual C++))
+- MSBuild (C++), ClangCompile task
+- ClangCompile task (MSBuild (C++))
 author: mikeblome
 ms.author: mblome
 ms.workload:
 - multiple
-ms.openlocfilehash: 218ef07fa3b086a2240362011067bf526088d1f4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 1bd1d749461c423d51e0f5b736563a9f9aa757c5
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62569711"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72747343"
 ---
 # <a name="clangcompile-task"></a>Tarea ClangCompile
 
-Contiene la herramienta de compilación de Visual C++, clang.exe.
+Incluye la herramienta del compilador de Microsoft C++, clang.exe.
 
 ## <a name="parameters"></a>Parámetros
 
 En la tabla siguiente se describen los parámetros de la tarea **ClangCompile**.
 
-|Parámetro|Descripción|
+|Parámetro|DESCRIPCIÓN|
 |---------------|-----------------|
 |**AdditionalIncludeDirectories**|Parámetro **string[]** opcional.<br/><br/>Especifica uno o más directorios que se agregarán a la ruta de acceso de inclusión; si hay más de uno, sepárelos mediante punto y coma.<br/><br/>Use `-I[path]`.|
 |**AdditionalOptions**|Parámetro **string** opcional.|
@@ -51,7 +51,7 @@ En la tabla siguiente se describen los parámetros de la tarea **ClangCompile**.
 |**FunctionLevelLinking**|Parámetro **bool** opcional.<br/><br/>Permite que el compilador empaquete las funciones individuales con formato de funciones empaquetadas (COMDATs). Es necesario para que funcione Editar y continuar.<br/><br/>Use `ffunction-sections`.|
 |**GccToolChain**|Parámetro **string** opcional.<br/><br/>Ruta de carpetas a la cadena de herramientas Gcc.|
 |**GNUMode**|Parámetro **bool** opcional.<br/><br/>|
-|**MSCompatibility**|Parámetro **bool** opcional.<br/><br/>Habilitar la compatibilidad total con Microsoft Visual C++.|
+|**MSCompatibility**|Parámetro **bool** opcional.<br/><br/>Habilitar la compatibilidad total con Microsoft C++.|
 |**MSCompatibilityVersion**|Parámetro **string** opcional.<br/><br/>Valor separado por puntos que representa el número de versión del compilador de Microsoft del que se informa en _MSC_VER (0 = no definirlo [valor predeterminado]).|
 |**MSExtensions**|Parámetro **bool** opcional.<br/><br/>Aceptar algunas construcciones no estándar que admita el compilador de Microsoft.|
 |**MSCompilerVersion**|Parámetro **string** opcional.<br/><br/>Número de versión del compilador de Microsoft del que se informa en _MSC_VER (0 = no definirlo [valor predeterminado]).|
@@ -68,7 +68,7 @@ En la tabla siguiente se describen los parámetros de la tarea **ClangCompile**.
 |**RuntimeLibrary**|Parámetro **string** opcional.<br/><br/>Especifique la biblioteca en tiempo de ejecución para la vinculación.<br/><br/>Use los conmutadores `MSVC /MT`, `/MTd`, `/MD`, `/MDd`.<br/><br/>**MultiThreaded**, hace que la aplicación use la versión estática multiproceso de la biblioteca en tiempo de ejecución.<br/>**MultiThreadedDebug**, define _DEBUG y _MT. Esta opción también hace que el compilador coloque el nombre de la biblioteca LIBCMTD.lib en el archivo .obj, así el vinculador usará LIBCMTD.lib para resolver los símbolos externos.<br/>**MultiThreadedDLL**, hace que la aplicación use la versión específica para multiproceso y la versión específica para DLL de la biblioteca en tiempo de ejecución. Define _MT y _DLL y hace que el compilador sitúe el nombre de la biblioteca MSVCRT.lib en el archivo .obj.<br/>**MultiThreadedDebugDLL**, define _DEBUG, _MT y _DLL y hace que la aplicación use la versión de depuración multiproceso y específica para DLL de la biblioteca en tiempo de ejecución. También hace que el compilador coloque el nombre de la biblioteca MSVCRTD.lib en el archivo .obj.|
 |**RuntimeTypeInfo**|Parámetro **bool** opcional.<br/><br/>Agrega código para comprobar los tipos de objetos de C++ en tiempo de ejecución (información de tipo en tiempo de ejecución).<br/><br/>Use `frtti`, `fno-rtti`.|
 |**ShowIncludes**|Parámetro **bool** opcional.<br/><br/>Genera una lista de archivos de inclusión con los resultados del compilador.<br/><br/>Use `-H`.|
-|**Sources**|Parámetro obligatorio de tipo **ITaskItem[]**.|
+|**Sources**|Parámetro obligatorio de tipo **ITaskItem[]** .|
 |**StrictAliasing**|Parámetro **bool** opcional.<br/><br/>Se da por supuesto que las reglas de alias son las más estrictas. Nunca se dará por supuesto que un objeto de un tipo se encuentra en la misma dirección que un objeto de un tipo distinto.|
 |**Sysroot**|Parámetro **string** opcional.<br/><br/>Ruta de carpetas al directorio raíz de encabezados y bibliotecas.|
 |**TargetArch**|Parámetro **string** opcional.<br/><br/>Arquitectura de destino.|

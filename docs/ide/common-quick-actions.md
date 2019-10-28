@@ -3,20 +3,20 @@ title: Acciones rápidas comunes
 description: Acciones rápidas de C# y Visual Basic más comunes, como la corrección de palabras clave o símbolos mal escritos, la resolución de conflictos de combinación, la eliminación de importaciones necesarias, la generación de tipos, la introducción de variables locales, etc.
 ms.date: 03/28/2018
 ms.topic: reference
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 dev_langs:
 - CSharp
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 600fb1b4abea2103c28e3a5067d640228d68b755
-ms.sourcegitcommit: 7825d4163e52d724e59f6c0da209af5fbef673f7
+ms.openlocfilehash: bad97ac5574afd65103263b2ce51a4dfba02741c
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "72000147"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72652247"
 ---
 # <a name="common-quick-actions"></a>Acciones rápidas comunes
 
@@ -96,7 +96,7 @@ private void MyMethod()
 
 ### <a name="remove-unnecessary-usingsimports"></a>Quitar instrucciones Using o Import innecesarias
 
-La acción rápida **Eliminar instrucciones Using innecesarias/Quitar instrucciones Import innecesarias** quita todas las instrucciones `using` y `Import` sin usar del archivo actual. Cuando se seleccione este elemento, las importaciones de espacios de nombres sin usar se quitarán.
+La acción rápida **Eliminar instrucciones Using innecesarias/Quitar instrucciones Import innecesarias** quita todas las directivas `using` y `Import` sin usar del archivo actual. Cuando se seleccione este elemento, las importaciones de espacios de nombres sin usar se quitarán.
 
 | Lenguajes aplicables | Versión compatible |
 | - | - |
@@ -184,7 +184,7 @@ Si usa tipos ubicados en otros proyectos de la solución, la acción rápida se 
 - Sugerir instrucciones Using o Import para tipos de ensamblados de referencia
 - Sugerir instrucciones Using o Import para tipos de paquetes NuGet
 
-Cuando está habilitado, si usa un tipo de un espacio de nombres que actualmente no se importa pero que existe en un ensamblado de referencia o un paquete NuGet, se creará la instrucción Using o Import.
+Cuando está habilitado, si usa un tipo de un espacio de nombres que actualmente no se importa pero que existe en un ensamblado de referencia o un paquete NuGet, se creará la directiva Using o Import.
 
 ```csharp
 // Before
@@ -204,7 +204,7 @@ Debug.WriteLine("Hello")
 
 ' Imports System.Diagnostics
 
-// After
+' After
 Imports System.Diagnostics
 
 Debug.WriteLine("Hello")

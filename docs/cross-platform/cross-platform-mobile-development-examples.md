@@ -1,7 +1,7 @@
 ---
 title: Ejemplos de desarrollo móvil multiplataforma | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 10/17/2019
 ms.technology: vs-ide-mobile
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,16 @@ ms.author: corob
 manager: jillfra
 ms.workload:
 - xplat-cplusplus
-ms.openlocfilehash: b3980273e746b5f6dacd2d8d612a5e5e7dfe2a8e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 8eb8b53da30f0c0896ac9576407d34f9a2f9bdbc
+ms.sourcegitcommit: 57bc1c3887838d707c13feff72a677b3bad3be4b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62819424"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72777707"
 ---
 # <a name="cross-platform-mobile-development-examples"></a>Ejemplos de desarrollo móvil multiplataforma
-Varias de las plantillas instaladas por Visual C++ para el desarrollo móvil multiplataforma generan ejemplos completos que pueden usarse como referencia para el aprendizaje. Además, el Centro de desarrollo de Windows tiene varias aplicaciones de ejemplo que se pueden descargar y probar en Visual Studio.
+
+Varias de las plantillas instaladas por la carga de trabajo **Desarrollo móvil con C++** generan ejemplos completos que pueden usarse como referencia para el aprendizaje. Además, el Centro de desarrollo de Windows tiene varias aplicaciones de ejemplo que se pueden descargar y probar en Visual Studio.
 
 - [Ejemplo de la aplicación hello-jni de Android](https://code.msdn.microsoft.com/hello-jni-Android-790ab73d)
 
@@ -36,7 +37,7 @@ Varias de las plantillas instaladas por Visual C++ para el desarrollo móvil mul
 
 - [Ejemplo de la biblioteca TwoLibs de Android](https://code.msdn.microsoft.com/TwoLibs-Android-Library-6396e5c4)
 
-   Este ejemplo se ha tomado de la muestra de TwoLibs del NDK de Android. Aquí se usa una biblioteca compartida cargada dinámicamente y una biblioteca nativa estática de Android en C++, que implementa un método invocado desde una aplicación de Java Native Interface. Este ejemplo es un buen punto de partida para que los desarrolladores aprendan a usar las bibliotecas compartidas estáticas o dinámicas y puedan compilar aplicaciones Android completas de JNI con Visual Studio 2015.
+   Este ejemplo se ha tomado de la muestra de TwoLibs del NDK de Android. Aquí se usa una biblioteca compartida cargada dinámicamente y una biblioteca nativa estática de Android en C++, que implementa un método invocado desde una aplicación de Java Native Interface. Este ejemplo es un buen punto de partida para que los desarrolladores aprendan a usar las bibliotecas compartidas estáticas o dinámicas y puedan compilar aplicaciones Android completas de JNI con Visual Studio.
 
 - [Ejemplo de la aplicación TeaPot de Android](https://code.msdn.microsoft.com/Tea-Pot-Android-Application-e7c05d73)
 
@@ -48,7 +49,7 @@ Varias de las plantillas instaladas por Visual C++ para el desarrollo móvil mul
 
 - [Ejemplo de la biblioteca test-libstdcpp de Android](https://code.msdn.microsoft.com/test-libstdcpp-Android-00b548f5)
 
-   Este ejemplo se ha tomado de la muestra de test-libstdc++ del NDK de Android, específicamente para su uso con Visual Studio 2015. Este ejemplo es un buen punto de partida para que los desarrolladores aprendan a usar la biblioteca estándar.
+   Este ejemplo se ha tomado de la muestra de test-libstdc++ del NDK de Android, específicamente para su uso con Visual Studio. Este ejemplo es un buen punto de partida para que los desarrolladores aprendan a usar la biblioteca estándar.
 
   Para abrir uno de los ejemplos en Visual Studio, descargue el archivo ZIP y abra la página **Propiedades** del archivo descargado en el Explorador. Elija el botón **Desbloquear** y luego **Aceptar**. Extraiga el contenido del archivo ZIP en una ubicación adecuada, abra la carpeta de C++ en el ejemplo extraído y luego abra el archivo de solución.
 
