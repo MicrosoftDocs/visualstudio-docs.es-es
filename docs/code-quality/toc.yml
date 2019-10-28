@@ -751,6 +751,8 @@
                   href: ca5397.md
                 - name: 'CA5398: Evitar valores SslProtocols codificados de forma rígida'
                   href: ca5398.md
+                - name: 'CA5403: No codificar el certificado de forma rígida'
+                  href: ca5403.md
             - name: Advertencias de uso
               items:
                 - name: Información general
