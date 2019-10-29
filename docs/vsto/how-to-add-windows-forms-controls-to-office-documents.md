@@ -1,5 +1,5 @@
 ---
-title: Procedimiento Agregar controles de Windows Forms a documentos de Office
+title: 'Cómo: agregar controles de Windows Forms a documentos de Office'
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -15,15 +15,15 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: a745794bb23902872f4b09c39eb8a3b3c1706137
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.openlocfilehash: c4484d07c5cfb77a5fa17460859972bc58b219fc
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71255877"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72986004"
 ---
-# <a name="how-to-add-windows-forms-controls-to-office-documents"></a>Procedimiento Agregar controles Windows Forms a documentos de Office
-  Puede agregar controles de Windows Forms a documentos de Microsoft Office Excel y Microsoft Office Word en tiempo de diseño en proyectos de nivel de documento. En tiempo de ejecución, puede agregar controles en personalizaciones de nivel de documento y en complementos de VSTO. Por ejemplo, puede agregar un control <xref:Microsoft.Office.Tools.Excel.Controls.ComboBox> a la hoja de cálculo para que los usuarios puedan seleccionar una de las opciones de una lista.
+# <a name="how-to-add-windows-forms-controls-to-office-documents"></a>Cómo: agregar controles Windows Forms a documentos de Office
+  Puede agregar controles de Windows Forms a documentos de Microsoft Office Excel y Microsoft Office Word en tiempo de diseño en proyectos de nivel de documento. En tiempo de ejecución, puede Agregar controles en las personalizaciones de nivel de documento y en los complementos de VSTO. Por ejemplo, puede Agregar un control <xref:Microsoft.Office.Tools.Excel.Controls.ComboBox> a la hoja de cálculo para que los usuarios puedan seleccionarlo en una lista de opciones.
 
  [!INCLUDE[appliesto_controls](../vsto/includes/appliesto-controls-md.md)]
 
@@ -35,8 +35,6 @@ ms.locfileid: "71255877"
 
 - [Agregar controles en tiempo de ejecución en complementos de VSTO](#runtimeaddin)
 
-  ![vínculo a vídeo](../vsto/media/playvideo.gif "vínculo a vídeo") Para ver una demostración en vídeo relacionada, vea [cómo: ¿Agregar controles a una superficie de documento en tiempo de ejecución? ](http://go.microsoft.com/fwlink/?LinkId=132782).
-
 ## <a name="designtime"></a>Agregar controles en tiempo de diseño
  Hay varias maneras de agregar controles de Windows Forms al documento en un proyecto de nivel de documento en tiempo de diseño.
 
@@ -44,7 +42,7 @@ ms.locfileid: "71255877"
 
 ### <a name="to-drag-a-windows-forms-control-to-the-document"></a>Para arrastrar un control de Windows Forms al documento
 
-1. Cree o abra un proyecto de libro de Excel o un proyecto de documento de Word en Visual Studio para que el documento esté visible en el diseñador. Para obtener información sobre cómo crear proyectos [, consulte Cómo: Cree proyectos de Office en Visual](../vsto/how-to-create-office-projects-in-visual-studio.md)Studio.
+1. Cree o abra un proyecto de libro de Excel o un proyecto de documento de Word en Visual Studio para que el documento esté visible en el diseñador. Para obtener información sobre cómo crear proyectos, vea [Cómo: crear proyectos de Office en Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).
 
 2. En la pestaña **controles comunes** del **cuadro de herramientas**, haga clic en el control que desee agregar y arrástrelo hasta el documento.
 
@@ -53,7 +51,7 @@ ms.locfileid: "71255877"
 
 ### <a name="to-draw-a-windows-forms-control-on-the-document"></a>Para dibujar un control de Windows Forms en el documento
 
-1. Cree o abra un proyecto de libro de Excel o un proyecto de documento de Word en Visual Studio para que el documento esté visible en el diseñador. Para obtener información sobre cómo crear proyectos [, consulte Cómo: Cree proyectos de Office en Visual](../vsto/how-to-create-office-projects-in-visual-studio.md)Studio.
+1. Cree o abra un proyecto de libro de Excel o un proyecto de documento de Word en Visual Studio para que el documento esté visible en el diseñador. Para obtener información sobre cómo crear proyectos, vea [Cómo: crear proyectos de Office en Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).
 
 2. En la pestaña **controles comunes** del **cuadro de herramientas**, haga clic en el control que desea agregar.
 
@@ -66,7 +64,7 @@ ms.locfileid: "71255877"
 
 ### <a name="to-add-a-windows-forms-control-to-the-document-by-single-clicking-the-control"></a>Para agregar un control de Windows Forms mediante un clic en el control
 
-1. Cree o abra un proyecto de libro de Excel o un proyecto de documento de Word en Visual Studio para que el documento esté visible en el diseñador. Para obtener información sobre cómo crear proyectos [, consulte Cómo: Cree proyectos de Office en Visual](../vsto/how-to-create-office-projects-in-visual-studio.md)Studio.
+1. Cree o abra un proyecto de libro de Excel o un proyecto de documento de Word en Visual Studio para que el documento esté visible en el diseñador. Para obtener información sobre cómo crear proyectos, vea [Cómo: crear proyectos de Office en Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).
 
 2. En la pestaña **controles comunes** del **cuadro de herramientas**, haga clic en el control que desea agregar.
 
@@ -79,7 +77,7 @@ ms.locfileid: "71255877"
 
 ### <a name="to-add-a-windows-forms-control-to-the-document-by-double-clicking-the-control"></a>Para agregar un control de Windows Forms al documento mediante un doble clic en el control
 
-1. Cree o abra un proyecto de libro de Excel o un proyecto de documento de Word en Visual Studio para que el documento esté visible en el diseñador. Para obtener información sobre cómo crear proyectos [, consulte Cómo: Cree proyectos de Office en Visual](../vsto/how-to-create-office-projects-in-visual-studio.md)Studio.
+1. Cree o abra un proyecto de libro de Excel o un proyecto de documento de Word en Visual Studio para que el documento esté visible en el diseñador. Para obtener información sobre cómo crear proyectos, vea [Cómo: crear proyectos de Office en Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).
 
 2. En la pestaña **controles comunes** del **cuadro de herramientas**, haga doble clic en el control que desea agregar.
 
@@ -90,7 +88,7 @@ ms.locfileid: "71255877"
 
 ### <a name="to-add-a-windows-forms-control-to-the-document-by-pressing-the-enter-key"></a>Para agregar un control de Windows Forms al documento presionando la tecla entrar
 
-1. Cree o abra un proyecto de libro de Excel o un proyecto de documento de Word en Visual Studio para que el documento esté visible en el diseñador. Para obtener información sobre cómo crear proyectos [, consulte Cómo: Cree proyectos de Office en Visual](../vsto/how-to-create-office-projects-in-visual-studio.md)Studio.
+1. Cree o abra un proyecto de libro de Excel o un proyecto de documento de Word en Visual Studio para que el documento esté visible en el diseñador. Para obtener información sobre cómo crear proyectos, vea [Cómo: crear proyectos de Office en Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).
 
 2. En la pestaña **controles comunes** del **cuadro de herramientas**, haga clic en el control que desee agregar y presione la tecla **entrar** .
 
@@ -100,15 +98,15 @@ ms.locfileid: "71255877"
     > Cuando seleccione un control en Excel, verá **=EMBED("WinForms.Control.Host","")** en la **Barra de fórmulas**. Este texto es necesario y no se debe eliminar.
 
 ## <a name="runtimedoclevel"></a>Agregar controles en tiempo de ejecución en proyectos de nivel de documento
- Puede agregar controles de Windows Forms mediante programación a documentos en tiempo de ejecución. En Word, use los métodos de la propiedad <xref:Microsoft.Office.Tools.Word.DocumentBase.Controls%2A> de la clase `ThisDocument`. En Excel, use los métodos de <xref:Microsoft.Office.Tools.Excel.WorksheetBase.Controls%2A> la propiedad de `Sheet`una clase *n* . Cada método tiene varias sobrecargas que permiten especificar la ubicación del control de maneras diferentes.
+ Puede agregar controles de Windows Forms mediante programación a documentos en tiempo de ejecución. En Word, use los métodos de la propiedad <xref:Microsoft.Office.Tools.Word.DocumentBase.Controls%2A> de la clase `ThisDocument`. En Excel, use los métodos de la propiedad <xref:Microsoft.Office.Tools.Excel.WorksheetBase.Controls%2A> de una clase `Sheet`*n* . Cada método tiene varias sobrecargas que permiten especificar la ubicación del control de maneras diferentes.
 
  Cuando se agrega un control de Windows Forms a un documento en tiempo de ejecución, el control no se conserva en el documento cuando éste se cierra. Puede volver a crear el control la próxima vez que se abra el documento. Para obtener más información, vea [Agregar controles a documentos de Office en tiempo de ejecución](../vsto/adding-controls-to-office-documents-at-run-time.md).
 
 ### <a name="to-add-a-windows-forms-control-at-run-time"></a>Para agregar un control de Windows Forms en tiempo de ejecución
 
-1. Use un método que tenga el nombre Add\<*control Class*> (donde *control Class* es el nombre de clase del control Windows Forms que <xref:Microsoft.Office.Tools.Word.ControlExtensions.AddButton%2A>desea agregar, como).
+1. Use un método que tenga el nombre Add\<*control class*> (donde *control Class* es el nombre de clase del control Windows Forms que desea agregar, como <xref:Microsoft.Office.Tools.Word.ControlExtensions.AddButton%2A>).
 
-     En el ejemplo de código siguiente se muestra cómo <xref:Microsoft.Office.Tools.Excel.Controls.Button> agregar una a la `Sheet1` celda **C5** de en un proyecto de nivel de documento para Excel.
+     En el ejemplo de código siguiente se muestra cómo agregar un <xref:Microsoft.Office.Tools.Excel.Controls.Button> a la celda **C5** de `Sheet1` en un proyecto de nivel de documento para Excel.
 
      [!code-vb[Trin_VstcoreProgrammingControlsExcel#4](../vsto/codesnippet/VisualBasic/my excel chart/Sheet1.vb#4)]
      [!code-csharp[Trin_VstcoreProgrammingControlsExcel#4](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsExcelCS/Sheet1.cs#4)]
@@ -122,10 +120,10 @@ ms.locfileid: "71255877"
 
 ### <a name="to-add-a-windows-forms-control-at-run-time"></a>Para agregar un control de Windows Forms en tiempo de ejecución
 
-1. Use un método que tenga el nombre Add\<*control Class*> (donde *control Class* es el nombre de clase del control Windows Forms que <xref:Microsoft.Office.Tools.Word.ControlExtensions.AddButton%2A>desea agregar, como).
+1. Use un método que tenga el nombre Add\<*control class*> (donde *control Class* es el nombre de clase del control Windows Forms que desea agregar, como <xref:Microsoft.Office.Tools.Word.ControlExtensions.AddButton%2A>).
 
     > [!NOTE]
-    > En los [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] proyectos de complemento de VSTO que tienen como destino o versiones posteriores, debe agregar una referencia al ensamblado *Microsoft. Office. Tools. Excel. v 4.0. Utilities. dll* o *Microsoft. Office. Tools. Word. v 4.0. Utilities. dll* para poder tener acceso al complemento métodos de > de *clase de control.* \<
+    > En los proyectos de complemento de VSTO que tienen como destino el [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] o posterior, debe agregar una referencia al ensamblado *Microsoft. Office. Tools. Excel. v 4.0. Utilities. dll* o *Microsoft. Office. Tools. Word. v 4.0. Utilities. dll* para poder tener acceso al complemento Add @no__ > métodos de la *clase de control*t_3_.
 
      En el siguiente ejemplo de código se muestra cómo agregar un <xref:Microsoft.Office.Tools.Word.Controls.Button> al primer párrafo del documento activo usando un complemento de VSTO de Word.
 
@@ -135,6 +133,6 @@ ms.locfileid: "71255877"
 ## <a name="see-also"></a>Vea también
 - [Información general sobre los controles de Windows Forms en documentos de Office](../vsto/windows-forms-controls-on-office-documents-overview.md)
 - [Agregar controles a documentos de Office en tiempo de ejecución](../vsto/adding-controls-to-office-documents-at-run-time.md)
-- [Cómo: Cambiar el tamaño de controles en celdas de hojas de cálculo](../vsto/how-to-resize-controls-within-worksheet-cells.md)
+- [Cómo: cambiar el tamaño de los controles dentro de las celdas de la hoja de cálculo](../vsto/how-to-resize-controls-within-worksheet-cells.md)
 - [Información general sobre elementos y controles host](../vsto/host-items-and-host-controls-overview.md)
 - [Parámetros opcionales en las soluciones de Office](../vsto/optional-parameters-in-office-solutions.md)

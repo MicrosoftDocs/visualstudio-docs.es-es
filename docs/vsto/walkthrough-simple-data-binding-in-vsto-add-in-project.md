@@ -1,5 +1,5 @@
 ---
-title: 'Tutorial: Enlace de datos simple en un proyecto de complemento de VSTO'
+title: 'Tutorial: enlace de datos simple en un proyecto de complemento de VSTO'
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -14,14 +14,14 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 0e174782c46d24b7743d50faa9fac69d38c3d6c6
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.openlocfilehash: bcfb150cc0b97b72fd0f6eac02f59ae1db3e9ca6
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71255181"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72985404"
 ---
-# <a name="walkthrough-simple-data-binding-in-vsto-add-in-project"></a>Tutorial: Enlace de datos simple en un proyecto de complemento de VSTO
+# <a name="walkthrough-simple-data-binding-in-vsto-add-in-project"></a>Tutorial: enlace de datos simple en un proyecto de complemento de VSTO
 
 Puede enlazar datos a controles host y controles de Windows Forms en proyectos de complemento de VSTO. En este tutorial se muestra cómo se agregan controles a un documento de Microsoft Office Word y cómo se enlazan los controles a datos en tiempo de ejecución.
 
@@ -45,11 +45,11 @@ Necesita los componentes siguientes para completar este tutorial:
 
 - [!INCLUDE[Word_15_short](../vsto/includes/word-15-short-md.md)] o [!INCLUDE[Word_14_short](../vsto/includes/word-14-short-md.md)].
 
-- Acceso a una instancia en ejecución de SQL Server 2005 o SQL Server 2005 Express que tenga asociada la base de datos de ejemplo `AdventureWorksLT` . Puede descargar la `AdventureWorksLT` base de datos desde el [sitio web de CodePlex](http://go.microsoft.com/fwlink/?LinkId=115611). Para obtener más información sobre cómo asociar una base de datos, vea los siguientes temas:
+- Acceso a una instancia en ejecución de SQL Server 2005 o SQL Server 2005 Express que tenga asociada la base de datos de ejemplo `AdventureWorksLT` . Puede descargar la base de datos de `AdventureWorksLT` desde el [repositorio de github de ejemplos de SQL Server](https://github.com/Microsoft/sql-server-samples/releases/tag/adventureworks). Para obtener más información sobre cómo asociar una base de datos, vea los siguientes temas:
 
-  - Para adjuntar una base de datos mediante SQL Server Management Studio o SQL Server Management Studio [Express, consulte Cómo: Adjunte una base de datos](/sql/relational-databases/databases/attach-a-database)(SQL Server Management Studio).
+  - Para adjuntar una base de datos mediante SQL Server Management Studio o SQL Server Management Studio Express, consulte [Cómo: adjuntar una base de datos (SQL Server Management Studio)](/sql/relational-databases/databases/attach-a-database).
 
-  - Para adjuntar una base de datos mediante la línea [de comandos, consulte Cómo: Adjunte un archivo de base](/previous-versions/sql/)de datos a SQL Server Express.
+  - Para adjuntar una base de datos mediante la línea de comandos, vea [Cómo: adjuntar un archivo de base de datos a SQL Server Express](/previous-versions/sql/).
 
 ## <a name="create-a-new-project"></a>Crear un proyecto nuevo
 
@@ -59,11 +59,11 @@ El primer paso es crear un proyecto de complemento de VSTO de Word.
 
 1. Cree un proyecto de complemento de VSTO para Word con el nombre **Rellenar documentos desde una base de datos**, mediante Visual Basic o C#.
 
-     Para obtener más información, vea [Cómo: Cree proyectos de Office en Visual](../vsto/how-to-create-office-projects-in-visual-studio.md)Studio.
+     Para obtener más información, vea [Cómo: crear proyectos de Office en Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).
 
      Visual Studio abre el archivo *ThisAddIn. VB* o *ThisAddIn.CS* y agrega el proyecto **rellenar documentos desde una base de datos** a **Explorador de soluciones**.
 
-2. Si el proyecto tiene como [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] destino [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)]o, agregue una referencia al ensamblado *Microsoft. Office. Tools. Word. v 4.0. Utilities. dll* . Esta referencia es obligatoria para agregar mediante programación controles de Windows Forms al documento más adelante en este tutorial.
+2. Si el proyecto tiene como destino el [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] o el [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)], agregue una referencia al ensamblado *Microsoft. Office. Tools. Word. v 4.0. Utilities. dll* . Esta referencia es obligatoria para agregar mediante programación controles de Windows Forms al documento más adelante en este tutorial.
 
 ## <a name="create-a-data-source"></a>Crear un origen de datos
 
@@ -71,7 +71,7 @@ Use la ventana **Orígenes de datos** para agregar un conjunto de datos con tipo
 
 ### <a name="to-add-a-typed-dataset-to-the-project"></a>Para agregar un conjunto de datos con tipo al proyecto
 
-1. Si la **ventana orígenes de datos** no está visible, puede mostrarla en la barra de menús y elegir **Ver** > otros**orígenes de datos**de**Windows** > .
+1. Si la **ventana orígenes de datos** no está visible, puede mostrarla en la barra de menús; para ello, elija **Ver** > **otras ventanas** > **orígenes de datos**.
 
 2. Elija **Agregar nuevo origen de datos** para iniciar el **Asistente para configuración de orígenes de datos**.
 
@@ -91,7 +91,7 @@ Use la ventana **Orígenes de datos** para agregar un conjunto de datos con tipo
 
    - Un conjunto de datos con tipo denominado `AdventureWorksLTDataSet`. Este conjunto de datos representa el contenido de la tabla **Customer (SalesLT)** de la base de datos AdventureWorksLT.
 
-   - Un TableAdapter denominado `CustomerTableAdapter`. Este TableAdapter se puede usar para leer y escribir datos en `AdventureWorksLTDataSet`. Para obtener más información, vea [información general de TableAdapter](../data-tools/fill-datasets-by-using-tableadapters.md#tableadapter-overview).
+   - Un TableAdapter denominado `CustomerTableAdapter`. Este TableAdapter se puede usar para leer y escribir datos en el `AdventureWorksLTDataSet`. Para obtener más información, vea [información general de TableAdapter](../data-tools/fill-datasets-by-using-tableadapters.md#tableadapter-overview).
 
      Estos dos objetos se usarán más adelante en este tutorial.
 
@@ -154,18 +154,18 @@ Cuando abre Word, el control de contenido muestra los datos del conjunto de dato
 
 - [Datos en soluciones de Office](../vsto/data-in-office-solutions.md)
 - [Enlazar datos a controles en soluciones de Office](../vsto/binding-data-to-controls-in-office-solutions.md)
-- [Cómo: Rellenar hojas de cálculo con datos de una base de datos](../vsto/how-to-populate-worksheets-with-data-from-a-database.md)
-- [Cómo: Rellenar documentos con datos de una base de datos](../vsto/how-to-populate-documents-with-data-from-a-database.md)
-- [Cómo: Rellenar documentos con datos de servicios](../vsto/how-to-populate-documents-with-data-from-services.md)
-- [Cómo: Rellenar documentos con datos de objetos](../vsto/how-to-populate-documents-with-data-from-objects.md)
-- [Cómo: Desplazarse por los registros de base de datos de una hoja de cálculo](../vsto/how-to-scroll-through-database-records-in-a-worksheet.md)
-- [Cómo: Actualizar un origen de datos con datos de un control host](../vsto/how-to-update-a-data-source-with-data-from-a-host-control.md)
-- [Tutorial: Enlace de datos simple en un proyecto de nivel de documento](../vsto/walkthrough-simple-data-binding-in-a-document-level-project.md)
-- [Tutorial: Enlace de datos complejo en un proyecto de nivel de documento](../vsto/walkthrough-complex-data-binding-in-a-document-level-project.md)
+- [Cómo: rellenar hojas de cálculo con datos de una base de datos](../vsto/how-to-populate-worksheets-with-data-from-a-database.md)
+- [Cómo: rellenar documentos con datos de una base de datos](../vsto/how-to-populate-documents-with-data-from-a-database.md)
+- [Cómo: rellenar documentos con datos de servicios](../vsto/how-to-populate-documents-with-data-from-services.md)
+- [Cómo: rellenar documentos con datos de objetos](../vsto/how-to-populate-documents-with-data-from-objects.md)
+- [Cómo: desplazarse por los registros de base de datos de una hoja de cálculo](../vsto/how-to-scroll-through-database-records-in-a-worksheet.md)
+- [Cómo: actualizar un origen de datos con datos de un control host](../vsto/how-to-update-a-data-source-with-data-from-a-host-control.md)
+- [Tutorial: enlace de datos simple en un proyecto de nivel de documento](../vsto/walkthrough-simple-data-binding-in-a-document-level-project.md)
+- [Tutorial: enlace de datos complejo en un proyecto de nivel de documento](../vsto/walkthrough-complex-data-binding-in-a-document-level-project.md)
 - [Usar archivos de base de datos local en información general sobre soluciones de Office](../vsto/using-local-database-files-in-office-solutions-overview.md)
 - [Agregar nuevos orígenes de datos](../data-tools/add-new-data-sources.md)
 - [Enlazar controles de Windows Forms a datos en Visual Studio](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)
-- [Cómo: Rellenar documentos con datos de objetos](../vsto/how-to-populate-documents-with-data-from-objects.md)
-- [Cómo: Actualizar un origen de datos con datos de un control host](../vsto/how-to-update-a-data-source-with-data-from-a-host-control.md)
+- [Cómo: rellenar documentos con datos de objetos](../vsto/how-to-populate-documents-with-data-from-objects.md)
+- [Cómo: actualizar un origen de datos con datos de un control host](../vsto/how-to-update-a-data-source-with-data-from-a-host-control.md)
 - [Usar archivos de base de datos local en información general sobre soluciones de Office](../vsto/using-local-database-files-in-office-solutions-overview.md)
 - [BindingSource component overview](/dotnet/framework/winforms/controls/bindingsource-component-overview) (Información general sobre el componente BindingSource)

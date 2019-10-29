@@ -1,5 +1,5 @@
 ---
-title: Solución de problemas de implementación y empaquetado de SharePoint | Microsoft Docs
+title: Solución de problemas de empaquetado e implementación de SharePoint | Microsoft Docs
 ms.date: 02/22/2017
 ms.topic: conceptual
 f1_keywords:
@@ -23,37 +23,37 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 0c949f9a5d8c56f44e0754715d056b4d3837f76a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 7eafac8015b7a2c51279b7a2d664f0e094d2397b
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63008408"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72981934"
 ---
-# <a name="troubleshoot-sharepoint-packaging-and-deployment"></a>Solucionar problemas de implementación y empaquetado de SharePoint
+# <a name="troubleshoot-sharepoint-packaging-and-deployment"></a>Solucionar problemas de empaquetado e implementación de SharePoint
   En este tema se tratan diversos problemas que pueden producirse al empaquetar e implementar soluciones de SharePoint.
 
-## <a name="enable-enhanced-debugging"></a>Habilitar la depuración mejorada
- Si desea realizar un diagnóstico entre Visual Studio, SharePoint y otras capas, puede usar la clave del Registro EnableDiagnostics para ver el seguimiento de la pila. Para obtener más información, consulte [soluciones de SharePoint depurar](../sharepoint/debugging-sharepoint-solutions.md).
+## <a name="enable-enhanced-debugging"></a>Habilitar depuración mejorada
+ Si desea realizar un diagnóstico entre Visual Studio, SharePoint y otras capas, puede usar la clave del Registro EnableDiagnostics para ver el seguimiento de la pila. Para obtener más información, vea [depurar soluciones de SharePoint](../sharepoint/debugging-sharepoint-solutions.md).
 
-## <a name="add-project-output-to-the-solution-package"></a>Agregar resultados del proyecto al paquete de solución
- Puede agregar la salida del proyecto a un paquete a través del Diseñador de paquetes. Sin embargo, cuando agregue la salida del proyecto, asegúrese de que la plataforma del proyecto coincide con la plataforma de la solución de SharePoint. Se recomienda que use el **cualquier CPU** plataforma de destino para los ensamblados que desea implementar en un servidor de SharePoint. Para obtener más información, consulte [página compilación, Diseñador de proyectos &#40;Visual Basic&#41; ](../ide/reference/compile-page-project-designer-visual-basic.md) y [cuadro de diálogo de configuración de compilador avanzada &#40;Visual Basic&#41;](../ide/reference/advanced-compiler-settings-dialog-box-visual-basic.md).
+## <a name="add-project-output-to-the-solution-package"></a>Agregar el resultado del proyecto al paquete de solución
+ Puede agregar la salida del proyecto a un paquete a través del Diseñador de paquetes. Sin embargo, cuando agregue la salida del proyecto, asegúrese de que la plataforma del proyecto coincide con la plataforma de la solución de SharePoint. Se recomienda usar el destino de la plataforma **any CPU** para los ensamblados que desee implementar en un servidor de SharePoint. Para obtener más información, vea la [Página compilar, el diseñador &#40;de proyectos Visual Basic&#41; ](../ide/reference/compile-page-project-designer-visual-basic.md) y el cuadro [ &#40;de diálogo Configuración avanzada del compilador Visual Basic&#41;](../ide/reference/advanced-compiler-settings-dialog-box-visual-basic.md).
 
-## <a name="validation-warnings-and-errors"></a>Errores y advertencias de validación
- Las herramientas de desarrollo de SharePoint de Visual Studio realizan pasos de validación para comprobar que el paquete de solución se crea de forma correcta. También puede crear pasos de validación personalizados para sus características y paquetes. Para obtener más información, vea [Cómo: Creación de reglas de validación para las soluciones de SharePoint de características y paquetes](../sharepoint/how-to-create-custom-feature-and-package-validation-rules-for-sharepoint-solutions.md).
+## <a name="validation-warnings-and-errors"></a>Advertencias y errores de validación
+ Las herramientas de desarrollo de SharePoint de Visual Studio realizan pasos de validación para comprobar que el paquete de solución se crea de forma correcta. También puede crear pasos de validación personalizados para sus características y paquetes. Para obtener más información, vea [Cómo: crear reglas personalizadas de validación de características y paquetes para soluciones de SharePoint](../sharepoint/how-to-create-custom-feature-and-package-validation-rules-for-sharepoint-solutions.md).
 
 ## <a name="deployment-conflict-resolution"></a>Resolución de conflictos de implementación
- Al implementar una solución de SharePoint, pueden producirse colisiones cuando un elemento del servidor tiene el mismo nombre, dirección URL o identificador que un elemento del paquete de solución. Puede cambiar el **Deployment Conflict Resolution** propiedad para resolver, notificar u omitir las colisiones de los módulos, partes Web, las instancias de lista y tipos de contenido.
+ Al implementar una solución de SharePoint, pueden producirse colisiones cuando un elemento del servidor tiene el mismo nombre, dirección URL o identificador que un elemento del paquete de solución. Puede cambiar la propiedad **resolución de conflictos de implementación** para resolver, notificar u omitir las colisiones de los módulos, elementos Web, instancias de lista y tipos de contenido.
 
- La tabla siguiente muestra la configuración de la **Deployment Conflict Resolution** propiedad.
+ En la tabla siguiente se muestran los valores para la propiedad de **resolución de conflictos de implementación** .
 
 |Valor|Descripción|
 |-----------|-----------------|
 |Automático|Detecta las colisiones y resuelve los conflictos automáticamente.|
 |Preguntar|Detecta las colisiones y las notifica al desarrollador de software antes de resolver los conflictos.|
-|Ninguna|No detecta las colisiones.|
+|Ninguno|No detecta las colisiones.|
 
-## <a name="differences-between-f5-deployment"></a>Diferencias entre la implementación y F5
+## <a name="differences-between-f5-deployment"></a>Diferencias entre la implementación F5
  Cuando se usa [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] para implementar un proyecto de SharePoint en el servidor de SharePoint local para su comprobación y depuración, hay algunos pasos adicionales que [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] realiza.
 
 1. Restablece Internet Información Services (IIS) durante el paso de implementación.
@@ -62,9 +62,9 @@ ms.locfileid: "63008408"
 
 3. Establece el orden de activación de características según la jerarquía del Diseñador de paquetes.
 
-   Puede agregar pasos de implementación personalizado para cambios adicionales la **F5** comportamiento. Para obtener más información, vea [Tutorial: Crear un paso de implementación personalizado para proyectos de SharePoint](../sharepoint/walkthrough-creating-a-custom-deployment-step-for-sharepoint-projects.md).
+   Puede Agregar pasos de implementación personalizados para cambiar aún más el comportamiento de **F5** . Para obtener más información, vea [Tutorial: crear un paso de implementación personalizado para proyectos de SharePoint](../sharepoint/walkthrough-creating-a-custom-deployment-step-for-sharepoint-projects.md).
 
-## <a name="delay-displaying-sharepoint-page-when-deploy-visual-web-part"></a>Retrasar la aparición de la página de SharePoint al implementar el elemento web visual
+## <a name="delay-displaying-sharepoint-page-when-deploy-visual-web-part"></a>Retrasar la visualización de la página de SharePoint al implementar el elemento Web Visual
  La página de SharePoint tarda mucho en aparecer cuando se implementa un elemento web visual en la carpeta Bin de [!INCLUDE[wiprlhext](../sharepoint/includes/wiprlhext-md.md)], [!INCLUDE[win7](../sharepoint/includes/win7-md.md)] o [!INCLUDE[winsvr08](../sharepoint/includes/winsvr08-md.md)]. Si se cambian los archivos de un directorio de [!INCLUDE[vstecasp](../sharepoint/includes/vstecasp-md.md)] de nivel superior, como el directorio Bin, se volverá a compilar toda la aplicación web. Esto puede generar un retraso de hasta 25 segundos en la presentación de la página de SharePoint.
 
 ### <a name="error-message"></a>Mensaje de error
@@ -73,7 +73,7 @@ ms.locfileid: "63008408"
 ### <a name="resolution"></a>Resolución
  Para evitar este problema, siga estos pasos:
 
-1. Instale la actualización KB967535 tal como se describe en el artículo de Microsoft Support [corregir: Hay disponible una revisión para solucionar dos problemas de ASP.NET en IIS 7.0 para Windows Vista y Windows Server 2008](http://go.microsoft.com/fwlink/?LinkId=179055).
+1. Instale Update KB967535 como se describe en el artículo Soporte técnico de Microsoft [corrección: hay disponible una revisión para corregir dos problemas en ASP.net en IIS 7,0 para Windows Vista y Windows Server 2008](https://support.microsoft.com/help/967535).
 
 2. Agregue la línea siguiente al archivo Web.config.
 
@@ -81,34 +81,34 @@ ms.locfileid: "63008408"
     <compilation batch="false" optimizeCompilations="true">
     ```
 
-## <a name="sharepoint-project-deployment-fails-with-error-failed-to-extract-the-cab-file-in-the-solution"></a>Implementación de proyectos de SharePoint se produce un error con el error "No se pudo extraer el archivo cab de la solución"
+## <a name="sharepoint-project-deployment-fails-with-error-failed-to-extract-the-cab-file-in-the-solution"></a>Error en la implementación del proyecto de SharePoint: "no se pudo extraer el archivo CAB de la solución"
  Si el nombre de algún elemento de proyecto de SharePoint contiene paréntesis, se produce un error en la implementación de la solución.
 
 ### <a name="error-message"></a>Mensaje de error
- Se ha producido un error en el paso 'Agregar solución' de implementación: No se pudo extraer el archivo cab de la solución.
+ En el paso 'Agregar solución' de la implementación se ha producido el siguiente error: "Error al extraer el archivo cab de la solución".
 
 ### <a name="resolution"></a>Resolución
  Para evitar este problema, quite los paréntesis de los nombres de elementos de proyecto de SharePoint.
 
-## <a name="error-appears-when-deploying-a-visual-web-part-to-a-site-on-a-different-web-application"></a>Aparece un error al implementar un elemento web visual a un sitio en una aplicación web diferente
+## <a name="error-appears-when-deploying-a-visual-web-part-to-a-site-on-a-different-web-application"></a>Aparece un error al implementar un elemento Web visual en un sitio en una aplicación web diferente
  La primera vez que implementa un elemento web visual en un sitio de otra aplicación web distinta de la que está implementando en la actualidad (mediante la modificación de la propiedad SiteUrl del elemento web visual), se produce un error.
 
 ### <a name="error-message"></a>Mensaje de error
- Se ha producido un error en el paso 'Agregar solución' de implementación: Una característica con el Id. [#####] ya se ha instalado en esta granja de servidores. Use el atributo fuerza para volver a agregar la característica de modo explícito".
+ En el paso 'Agregar solución' de la implementación se produce el siguiente error: "Ya se ha instalado una característica con Id. [#] en este conjunto de servidores. Use el atributo fuerza para volver a agregar la característica de modo explícito".
 
 ### <a name="resolution"></a>Resolución
- Este error se produce debido al modo en que se retractan las características de elementos web visuales en SharePoint. Para implementar correctamente el elemento Web visual, implementar la solución eligiendo la **F5** clave.
+ Este error se produce debido al modo en que se retractan las características de elementos web visuales en SharePoint. Para implementar correctamente el elemento Web visual, vuelva a implementar la solución eligiendo la tecla **F5** .
 
-## <a name="warning-appears-when-deploying-nested-user-controls"></a>Aparece la advertencia al implementar controles de usuario anidados
- Esta advertencia se produce al implementar una solución de SharePoint que contiene controles de usuario anidados, como un elemento web visual que incluye un control de usuario o un control de usuario que incluye un elemento web visual u otro control de usuario. Esta advertencia se produce si agrega un control a un diseñador arrastrándolo desde el cuadro de herramientas o mediante el @Register la directiva en la vista del origen.
+## <a name="warning-appears-when-deploying-nested-user-controls"></a>Aparece una advertencia al implementar controles de usuario anidados
+ Esta advertencia se produce al implementar una solución de SharePoint que contiene controles de usuario anidados, como un elemento web visual que incluye un control de usuario o un control de usuario que incluye un elemento web visual u otro control de usuario. Esta advertencia se produce si se agrega un control a un diseñador arrastrándolo desde el cuadro de herramientas o mediante la Directiva de @Register de la vista de código fuente.
 
 ### <a name="error-message"></a>Mensaje de error
- Advertencia 1 el elemento ' [*nombre del Control*]' no es un elemento conocido. Esto se puede producir si hay un error de compilación en el sitio web o no se encuentra el archivo web.config.
+ ADVERTENCIA 1 el elemento ' [*nombre del control*] ' no es un elemento conocido. Esto se puede producir si hay un error de compilación en el sitio web o no se encuentra el archivo web.config.
 
 ### <a name="resolution"></a>Resolución
- Si el [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] sistema del proyecto no es consciente de un control de usuario anidado, no puede proporcionar IntelliSense y emite la advertencia. El sistema del proyecto no tiene constancia de un control de usuario anidado si no se compila el proyecto y no se cierra y se vuelva a abrir el diseñador, o si la retracción automática está habilitada, lo que hace que el control de usuario se retire del subárbol de SharePoint después de la depuración.
+ Si el sistema del proyecto [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] no es consciente de un control de usuario anidado, no puede proporcionar IntelliSense y emite la advertencia. El sistema del proyecto no reconoce un control de usuario anidado si el proyecto no se compila y el diseñador no se cierra y se vuelve a abrir, o si la opción de retracción automática está habilitada, lo que hace que el control de usuario se retire del subárbol de SharePoint después de la depuración.
 
- Para quitar esta advertencia, compile el proyecto y, a continuación, cierre el diseñador y vuelva a abrirlo, o deshabilite la opción de retracción automática en el proyecto. Para ello, desactive la **retraer automáticamente después de depurar** casilla de verificación en la **SharePoint** ficha del cuadro de diálogo Propiedades del proyecto.
+ Para quitar esta advertencia, compile el proyecto y, a continuación, cierre el diseñador y vuelva a abrirlo, o deshabilite la opción de retracción automática en el proyecto. Para ello, desactive la casilla **retraer automáticamente después de depurar** en la pestaña **SharePoint** del cuadro de diálogo Propiedades del proyecto.
 
 ## <a name="see-also"></a>Vea también
 

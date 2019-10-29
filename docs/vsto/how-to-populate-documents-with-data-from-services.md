@@ -1,5 +1,5 @@
 ---
-title: Procedimiento Rellenar documentos con datos de servicios
+title: 'Cómo: rellenar documentos con datos de servicios'
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -14,24 +14,22 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 6239bc351872dc7a945c3fbff8ad1ed13817c3ef
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 4f53000f7d6aa8bdd8261bbe5658607918b6b449
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62967789"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72985867"
 ---
-# <a name="how-to-populate-documents-with-data-from-services"></a>Procedimiento Rellenar documentos con datos de servicios
+# <a name="how-to-populate-documents-with-data-from-services"></a>Cómo: rellenar documentos con datos de servicios
 
-El acceso a los datos funciona de la misma manera en los proyectos de nivel de documento de Microsoft Office Word y en los proyectos de Windows Forms. Se usan las mismas herramientas y el mismo código para llevar los datos a la solución; además, también es posible usar controles de Windows Forms para que se muestren los datos. Asimismo, puede aprovechar los controles denominados host, ya que son objetos nativos de Microsoft Office Excel y de Microsoft Office Word mejorados con eventos y capacidad de enlace de datos. Para obtener más información, consulte [elementos Host y hospedar información general sobre controles](../vsto/host-items-and-host-controls-overview.md).
+El acceso a los datos funciona de la misma manera en los proyectos de nivel de documento de Microsoft Office Word y en los proyectos de Windows Forms. Se usan las mismas herramientas y el mismo código para llevar los datos a la solución; además, también es posible usar controles de Windows Forms para que se muestren los datos. Asimismo, puede aprovechar los controles denominados host, ya que son objetos nativos de Microsoft Office Excel y de Microsoft Office Word mejorados con eventos y capacidad de enlace de datos. Para obtener más información, vea [información general sobre elementos y controles host](../vsto/host-items-and-host-controls-overview.md).
 
 [!INCLUDE[appliesto_alldoc](../vsto/includes/appliesto-alldoc-md.md)]
 
-En el ejemplo siguiente se muestra cómo agregar controles que están enlazados a los datos, a documentos en tiempo de diseño. Para obtener un ejemplo de cómo agregar controles enlazados a datos en los complementos VSTO en tiempo de ejecución, consulte [Tutorial: Enlazar a datos desde un servicio en un proyecto de complemento VSTO](../vsto/walkthrough-binding-to-data-from-a-service-in-a-vsto-add-in-project.md).
+En el ejemplo siguiente se muestra cómo agregar controles que están enlazados a los datos, a documentos en tiempo de diseño. Para obtener un ejemplo de cómo agregar controles enlazados a datos en complementos de VSTO en tiempo de ejecución, vea [Tutorial: enlazar a datos de un servicio en un proyecto de complemento de VSTO](../vsto/walkthrough-binding-to-data-from-a-service-in-a-vsto-add-in-project.md).
 
-![vínculo a vídeo](../vsto/media/playvideo.gif "vínculo al vídeo") para una demostración en vídeo relacionada, vea [¿cómo lo hago?: ¿Interactuar con servicios web de Microsoft Excel? ](http://go.microsoft.com/fwlink/?LinkID=130284).
-
-## <a name="to-populate-a-document-level-project-with-data-from-a-web-service"></a>Para rellenar un proyecto de nivel de documento con datos de un servicio web
+## <a name="to-populate-a-document-level-project-with-data-from-a-web-service"></a>Para rellenar un proyecto de nivel de documento con datos de un servicio Web
 
 1. Abra la ventana **Orígenes de datos** y cree un origen de datos de servicio para el proyecto. Para obtener más información, vea [Agregar nuevos orígenes de datos](../data-tools/add-new-data-sources.md).
 
@@ -39,15 +37,15 @@ En el ejemplo siguiente se muestra cómo agregar controles que están enlazados 
 
      Se crea un control en el documento; esto es, un <xref:System.Windows.Forms.BindingSource> se enlaza a la clase del objeto en el proyecto y se generan las clases para el servicio.
 
-3. En el código, cree una instancia de la clase de servicio web que se conectó en el paso 1.
+3. En el código, cree una instancia de la clase de servicio Web a la que se conectó en el paso 1.
 
-4. Si hay propiedades que son necesarias para la comunicación con el servicio web, cree instancias de esas propiedades.
+4. Si hay propiedades que son necesarias para la comunicación con el servicio Web, cree instancias de esas propiedades.
 
 5. Cree y envíe una solicitud de datos mediante los métodos expuestos por el servicio web y las instancias de las propiedades que creó en el paso 4.
 
-     Los métodos que usa dependen de lo que el servicio web ofrece.
+     Los métodos que utilice dependerán de lo que ofrezca el servicio Web.
 
-6. Asignar la respuesta de datos desde el servicio web para el <xref:System.Windows.Forms.BindingSource.DataSource%2A> propiedad de la <xref:System.Windows.Forms.BindingSource>.
+6. Asigne la respuesta de datos del servicio Web a la propiedad <xref:System.Windows.Forms.BindingSource.DataSource%2A> de la <xref:System.Windows.Forms.BindingSource>.
 
 Cuando ejecute el proyecto, los controles mostrarán el primer registro del origen de datos. Puede habilitar el desplazamiento por los registros si controla los eventos Currency que usan los objetos en <xref:System.Windows.Forms.BindingSource>.
 
@@ -56,7 +54,7 @@ Cuando ejecute el proyecto, los controles mostrarán el primer registro del orig
 - [Enlazar datos a controles en soluciones de Office](../vsto/binding-data-to-controls-in-office-solutions.md)
 - [Agregar nuevos orígenes de datos](../data-tools/add-new-data-sources.md)
 - [Enlazar controles de Windows Forms a datos en Visual Studio](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)
-- [Cómo: Rellenar hojas de cálculo con datos de una base de datos](../vsto/how-to-populate-worksheets-with-data-from-a-database.md)
-- [Cómo: Rellenar documentos con datos de objetos](../vsto/how-to-populate-documents-with-data-from-objects.md)
-- [Cómo: Rellenar documentos con datos de una base de datos](../vsto/how-to-populate-documents-with-data-from-a-database.md)
-- [Cómo: Actualizar un origen de datos con datos de un control host](../vsto/how-to-update-a-data-source-with-data-from-a-host-control.md)
+- [Cómo: rellenar hojas de cálculo con datos de una base de datos](../vsto/how-to-populate-worksheets-with-data-from-a-database.md)
+- [Cómo: rellenar documentos con datos de objetos](../vsto/how-to-populate-documents-with-data-from-objects.md)
+- [Cómo: rellenar documentos con datos de una base de datos](../vsto/how-to-populate-documents-with-data-from-a-database.md)
+- [Cómo: actualizar un origen de datos con datos de un control host](../vsto/how-to-update-a-data-source-with-data-from-a-host-control.md)

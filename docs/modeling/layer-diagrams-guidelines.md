@@ -12,16 +12,16 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 39da24dd0d8b7372c63609124ee0b9427fccb03d
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 8613633289189bec5e403ec76b78731d5e3ecc4f
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72661504"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72983743"
 ---
 # <a name="dependency-diagrams-guidelines"></a>Diagramas de dependencia: instrucciones
 
-Describa la arquitectura de la aplicación en un nivel alto mediante la creación de *diagramas de dependencia* en Visual Studio. Asegúrese de que el código sigue siendo coherente con este diseño mediante la validación del código con un diagrama de dependencia. También puede incluir la validación de capas en el proceso de compilación. Consulte [vídeo de Channel 9: diseñar y validar la arquitectura mediante diagramas de dependencia](http://go.microsoft.com/fwlink/?LinkID=252073).
+Describa la arquitectura de la aplicación en un nivel alto mediante la creación de *diagramas de dependencia* en Visual Studio. Asegúrese de que el código sigue siendo coherente con este diseño mediante la validación del código con un diagrama de dependencia. También puede incluir la validación de capas en el proceso de compilación. Consulte [vídeo de Channel 9: diseñar y validar la arquitectura mediante diagramas de dependencia](https://channel9.msdn.com/Series/Visual-Studio-2012-Premium-and-Ultimate-Overview/Visual-Studio-Ultimate-2012-Using-layer-diagrams-to-design-and-validate-your-architecture).
 
 Para ver qué ediciones de Visual Studio admiten esta característica, vea [compatibilidad de la edición con las herramientas de arquitectura y modelado](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
 
@@ -70,7 +70,7 @@ Vea [crear diagramas de dependencia desde el código](../modeling/create-layer-d
 
 Las capas representan grupos lógicos de *artefactos*, como proyectos, archivos de código, espacios de nombres, clases y métodos. Puede crear capas a partir de artefactos desde C# proyectos de Visual y Visual Basic, o puede adjuntar especificaciones o planes a una capa vinculando documentos, como archivos de Word o presentaciones de PowerPoint. Cada capa aparece como un rectángulo en el diagrama y muestra el número de artefactos vinculados a ella. Una capa puede contener capas anidadas que describan tareas más específicas.
 
-Como regla general, denomine las capas según su función, por ejemplo, "Presentación" o "Servicios." Si los artefactos tienen una estrecha interdependencia, colóquelos en la misma capa. Si los artefactos se pueden actualizar de forma independiente o usar en aplicaciones diferentes, sitúelos en capas distintas. Para obtener información sobre los patrones de capas, visite el sitio Patterns & Practices en [http://go.microsoft.com/fwlink/?LinkId=145794](http://go.microsoft.com/fwlink/?LinkId=145794).
+Como regla general, denomine las capas según su función, por ejemplo, "Presentación" o "Servicios." Si los artefactos tienen una estrecha interdependencia, colóquelos en la misma capa. Si los artefactos se pueden actualizar de forma independiente o usar en aplicaciones diferentes, sitúelos en capas distintas. Para obtener información sobre los patrones de capas, visite el sitio Patterns & Practices en [http://go.microsoft.com/fwlink/?LinkId=145794](https://archive.codeplex.com/?p=apparch).
 
 > [!TIP]
 > Existen ciertos tipos de artefactos que se pueden vincular a capas pero que no admiten la validación con el diagrama de dependencia. Para ver si el artefacto admite la validación, abra el **Explorador de capas** para examinar la propiedad **Supports Validation** del vínculo de artefacto. Consulte [detectar dependencias existentes entre capas](#Generate).
@@ -123,7 +123,7 @@ Si no es así, el código será más difícil de cambiar a lo largo de su vida y
 
 Cuando comience el desarrollo de un nuevo proyecto, o una nueva área de un nuevo proyecto, puede dibujar capas y dependencias que le ayuden a identificar los componentes primarios antes de empezar a desarrollar el código.
 
-- Si es posible, **muestre patrones arquitectónicos identificables** en los diagramas de dependencia. Por ejemplo, un diagrama de dependencia que describe una aplicación de escritorio podría incluir capas como presentación, lógica de dominio y almacén de datos. Un diagrama de dependencia que abarque una sola característica dentro de una aplicación podría tener capas como modelo, vista y controlador. Para obtener más información sobre estos patrones, consulte [patterns & Practices: arquitectura](http://go.microsoft.com/fwlink/?LinkId=145794)de la aplicación.
+- Si es posible, **muestre patrones arquitectónicos identificables** en los diagramas de dependencia. Por ejemplo, un diagrama de dependencia que describe una aplicación de escritorio podría incluir capas como presentación, lógica de dominio y almacén de datos. Un diagrama de dependencia que abarque una sola característica dentro de una aplicación podría tener capas como modelo, vista y controlador. Para obtener más información sobre estos patrones, consulte [patterns & Practices: arquitectura](https://archive.codeplex.com/?p=apparch)de la aplicación.
 
 - **Cree un artefacto de código para cada capa** , como un espacio de nombres, una clase o un componente. De este modo, le resultará más fácil hacer un seguimiento del código y vincular los artefactos de código a las capas. Tan pronto como cree cada uno de los artefactos, vincúlelo a la capa apropiada.
 

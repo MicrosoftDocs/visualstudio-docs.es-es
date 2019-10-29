@@ -1,5 +1,5 @@
 ---
-title: Procedimiento Relleno de controles ListObject con datos
+title: 'Cómo: rellenar los controles ListObject con datos'
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -17,19 +17,17 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: a0916ca11d4df5f6b69376d7223143afbb407f6e
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.openlocfilehash: 48af9145ce069b426b86f05bf0aadfc5386a6271
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71255891"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72985925"
 ---
-# <a name="how-to-fill-listobject-controls-with-data"></a>Procedimiento Relleno de controles ListObject con datos
+# <a name="how-to-fill-listobject-controls-with-data"></a>Cómo: rellenar los controles ListObject con datos
   Puede utilizar el enlace de datos como una manera de agregar datos rápidamente al documento. Después de enlazar datos a un objeto de lista, puede desconectar el objeto de lista para que muestre los datos, pero ya no esté enlazado al origen de datos.
 
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]
-
- ![vínculo a vídeo](../vsto/media/playvideo.gif "vínculo a vídeo") Para ver una demostración en vídeo relacionada, vea [cómo: ¿Desea crear una lista de Excel conectada a una lista de SharePoint? ](http://go.microsoft.com/fwlink/?LinkID=130263).
 
 ### <a name="to-bind-data-to-a-listobject-control"></a>Para enlazar datos a un control ListObject
 
@@ -62,9 +60,9 @@ ms.locfileid: "71255891"
 - [Ampliar documentos de Word y libros de Excel en complementos de VSTO en tiempo de ejecución](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)
 - [Controles en documentos de Office](../vsto/controls-on-office-documents.md)
 - [Agregar controles a documentos de Office en tiempo de ejecución](../vsto/adding-controls-to-office-documents-at-run-time.md)
-- [Cómo: Asignar columnas ListObject a datos](../vsto/how-to-map-listobject-columns-to-data.md)
+- [Cómo: asignar columnas ListObject a datos](../vsto/how-to-map-listobject-columns-to-data.md)
 - [Automatizar Excel usando objetos extendidos](../vsto/automating-excel-by-using-extended-objects.md)
 - [ListObject (control)](../vsto/listobject-control.md)
 - [Enlazar datos a controles en soluciones de Office](../vsto/binding-data-to-controls-in-office-solutions.md)
-- [Cómo: Rellenar hojas de cálculo con datos de una base de datos](../vsto/how-to-populate-worksheets-with-data-from-a-database.md)
-- [Cómo: Rellenar documentos con datos de servicios](../vsto/how-to-populate-documents-with-data-from-services.md)
+- [Cómo: rellenar hojas de cálculo con datos de una base de datos](../vsto/how-to-populate-worksheets-with-data-from-a-database.md)
+- [Cómo: rellenar documentos con datos de servicios](../vsto/how-to-populate-documents-with-data-from-services.md)

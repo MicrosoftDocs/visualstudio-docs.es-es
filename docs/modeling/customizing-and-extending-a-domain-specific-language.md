@@ -9,12 +9,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2e6346f960efe1cd3af6ad9cbd070227d9171f01
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: bd1e3c3769f30806f7430bd32ddcb82db378093d
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72654034"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72984268"
 ---
 # <a name="customize-and-extend-a-domain-specific-language"></a>Personalización y extensión de lenguajes específicos de dominio
 
@@ -40,7 +40,7 @@ El SDK de modelado y visualización de Visual Studio (VMSDK) proporciona varios 
 |El icono de la forma cambia para indicar el estado.|Establezca la visibilidad de la asignación de Decorator en la ventana detalles de DSL. Busque varios decoradores de imagen en la misma posición. Consulte [Actualizar formas y conectores para reflejar el modelo](../modeling/updating-shapes-and-connectors-to-reflect-the-model.md).<br /><br /> O bien, invalide `ImageField.GetDisplayImage()`. Vea el ejemplo de <xref:Microsoft.VisualStudio.Modeling.Diagrams.ImageField>.|
 |Establecer una imagen de fondo en cualquier forma|Reemplace InitializeInstanceResources () para agregar un ImageField delimitado.|
 |Anidar formas en cualquier profundidad|Configure un árbol de incrustación recursiva. Defina formas boundsrules para que contenga las formas.|
-|Adjunte conectores en puntos fijos en el límite de un elemento.|Definir elementos terminales incrustados, representados por puertos pequeños en el diagrama. Use formas boundsrules para corregir los puertos en su lugar. Vea el ejemplo de diagrama de circuitos en [SDK de visualización y modelado](http://go.microsoft.com/fwlink/?LinkID=186128).|
+|Adjunte conectores en puntos fijos en el límite de un elemento.|Definir elementos terminales incrustados, representados por puertos pequeños en el diagrama. Use formas boundsrules para corregir los puertos en su lugar. Vea el ejemplo de diagrama de circuitos en [SDK de visualización y modelado](https://code.msdn.microsoft.com/Visualization-and-Modeling-313535db).|
 |Campo de texto muestra un valor derivado de otros valores.|Asigne el elemento Decorator de texto a una propiedad de dominio de almacenamiento calculada o personalizada. Para obtener más información, consulte [propiedades de almacenamiento calculado y personalizado](../modeling/calculated-and-custom-storage-properties.md).|
 |Propagar los cambios entre los elementos del modelo o entre las formas|Consulte [validación en un lenguaje específico de dominio](../modeling/validation-in-a-domain-specific-language.md).|
 |Propagar los cambios a recursos como otras extensiones de Visual Studio fuera del almacén.|Vea [los controladores de eventos propagan los cambios fuera del modelo](../modeling/event-handlers-propagate-changes-outside-the-model.md).|

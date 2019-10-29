@@ -17,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f1b8ae7c56cf6f7cb20dd237c9106498a752e267
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.openlocfilehash: 71e66d6cda802b2b1243911e1927af751e2cdbe9
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71254966"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72985389"
 ---
 # <a name="word-object-model-overview"></a>Información general sobre el modelo de objetos de Word
   Cuando se desarrollan soluciones de Word en Visual Studio, se interactúa con el modelo de objetos de Word. Este modelo de objetos está compuesto de clases e interfaces que se proporcionan en el ensamblado de interoperabilidad primario de Word y que se definen en el espacio de nombres <xref:Microsoft.Office.Interop.Word> .
@@ -119,14 +119,14 @@ ms.locfileid: "71254966"
  Para obtener información completa sobre el modelo de objetos de Word, puede consultar la referencia del ensamblado de interoperabilidad primario (PIA) de Word y la referencia del modelo de objetos de Visual Basic para aplicaciones (VBA).
 
 ### <a name="primary-interop-assembly-reference"></a>Referencia de ensamblado de interoperabilidad primario
- La documentación de referencia de los PIA de Word describe los tipos del ensamblado de interoperabilidad primario para Word. Esta documentación está disponible en la siguiente ubicación: [Referencia de ensamblado de interoperabilidad primario de Word 2010](http://go.microsoft.com/fwlink/?LinkId=189588).
+ La documentación de referencia de los PIA de Word describe los tipos del ensamblado de interoperabilidad primario para Word. Esta documentación está disponible en la siguiente ubicación: [referencia de ensamblado de interoperabilidad primario de Word 2010](../vsto/office-primary-interop-assemblies.md).
 
- Para obtener más información sobre el diseño del PIA de Word, como las diferencias entre las clases y las interfaces en el PIA y cómo se implementan los eventos en el PIA, consulte [información general de las clases e interfaces de los ensamblados de interoperabilidad primarios de Office](http://go.microsoft.com/fwlink/?LinkId=189592).
+ Para obtener más información sobre el diseño del PIA de Word, como las diferencias entre las clases y las interfaces en el PIA y cómo se implementan los eventos en el PIA, consulte [información general de las clases e interfaces de los ensamblados de interoperabilidad primarios de Office](/previous-versions/office/office-12/ms247299(v=office.12)).
 
 ### <a name="vba-object-model-reference"></a>Referencia del modelo de objetos de VBA
- La referencia del modelo de objetos de VBA documenta el modelo de objetos de Word, tal como se expone en el código de VBA. Para obtener más información, vea [Referencia del modelo de objetos de Word 2010](http://go.microsoft.com/fwlink/?LinkId=199772).
+ La referencia del modelo de objetos de VBA documenta el modelo de objetos de Word, tal como se expone en el código de VBA. Para obtener más información, vea [Referencia del modelo de objetos de Word 2010](/office/vba/api/overview/Word/object-model).
 
- Todos los objetos y miembros de la referencia del modelo de objetos de VBA corresponden a tipos y miembros del PIA de Word. Por ejemplo, el objeto Document de la referencia del modelo de objetos VBA corresponde <xref:Microsoft.Office.Interop.Word.Document> al objeto del Pia de Word. Aunque la referencia del modelo de objetos VBA proporciona ejemplos de código para la mayoría de las propiedades, métodos y eventos, debe traducir el código VBA de esta referencia a Visual Basic o Visual C# si quiere usarlo en un proyecto de Word creado con Visual Studio.
+ Todos los objetos y miembros de la referencia del modelo de objetos de VBA corresponden a tipos y miembros del PIA de Word. Por ejemplo, el objeto Document de la referencia del modelo de objetos VBA corresponde al objeto <xref:Microsoft.Office.Interop.Word.Document> de la palabra PIA. Aunque la referencia del modelo de objetos VBA proporciona ejemplos de código para la mayoría de las propiedades, métodos y eventos, debe traducir el código VBA de esta referencia a Visual Basic o Visual C# si quiere usarlo en un proyecto de Word creado con Visual Studio.
 
 ## <a name="see-also"></a>Vea también
 - [Ensamblados de interoperabilidad primarios de Office](../vsto/office-primary-interop-assemblies.md)

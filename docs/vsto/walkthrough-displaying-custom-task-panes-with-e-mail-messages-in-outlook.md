@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 40ff277ff5102c436a6815af3b542894c8061e56
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.openlocfilehash: 9e94bedf95b58d9876d37eb496ede0c5ec9a8531
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71255602"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72985454"
 ---
 # <a name="walkthrough-display-custom-task-panes-with-email-messages-in-outlook"></a>Tutorial: Mostrar paneles de tareas personalizados con mensajes de correo electrónico en Outlook
   En este tutorial se muestra cómo mostrar una instancia única de un panel de tareas personalizado con cada mensaje de correo electrónico que se crea o se abre. Los usuarios pueden mostrar u ocultar el panel de tareas personalizado mediante un botón de la cinta de opciones de cada mensaje de correo.
@@ -48,7 +48,7 @@ ms.locfileid: "71255602"
 - Sincronizar el botón de alternancia de la cinta de opciones con el panel de tareas personalizado.
 
 > [!NOTE]
-> Es posible que el equipo muestre nombres o ubicaciones diferentes para algunos de los elementos de la interfaz de usuario de Visual Studio en las siguientes instrucciones. La edición de Visual Studio que se tenga y la configuración que se utilice determinan estos elementos. Para más información, vea [Personalizar el IDE de Visual Studio](../ide/personalizing-the-visual-studio-ide.md).
+> Es posible que tu equipo muestre nombres o ubicaciones diferentes para algunos de los elementos de la interfaz de usuario de Visual Studio en las siguientes instrucciones. La edición de Visual Studio que se tenga y la configuración que se utilice determinan estos elementos. Para más información, vea [Personalizar el IDE de Visual Studio](../ide/personalizing-the-visual-studio-ide.md).
 
 ## <a name="prerequisites"></a>Requisitos previos
  Necesita los componentes siguientes para completar este tutorial:
@@ -57,14 +57,12 @@ ms.locfileid: "71255602"
 
 - Microsoft [!INCLUDE[Outlook_15_short](../vsto/includes/outlook-15-short-md.md)] o Microsoft Outlook 2010.
 
-  ![vínculo a vídeo](../vsto/media/playvideo.gif "vínculo a vídeo") Para ver una demostración en vídeo relacionada, vea [cómo: ¿Usar paneles de tareas en Outlook? ](http://go.microsoft.com/fwlink/?LinkID=130309).
-
 ## <a name="create-the-project"></a>Crear el proyecto
- Los paneles de tareas personalizados se implementan en complementos de VSTO. Empiece por crear un proyecto de complemento de VSTO para Outlook.
+ Los paneles de tareas personalizados se implementan en complementos de VSTO. empiece por crear un proyecto de complemento de VSTO para Outlook.
 
 ### <a name="to-create-a-new-project"></a>Para crear un nuevo proyecto
 
-1. Crear un proyecto **Complemento de Outlook** con el nombre **OutlookMailItemTaskPane**. Use la plantilla de proyecto **Complemento de Outlook** . Para obtener más información, vea [Cómo: Cree proyectos de Office en Visual](../vsto/how-to-create-office-projects-in-visual-studio.md)Studio.
+1. Crear un proyecto **Complemento de Outlook** con el nombre **OutlookMailItemTaskPane**. Use la plantilla de proyecto **Complemento de Outlook** . Para obtener más información, vea [Cómo: crear proyectos de Office en Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).
 
      [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] abre el archivo de código *ThisAddIn.cs* o *ThisAddIn.vb* y agrega el proyecto **OutlookMailItemTaskPane** al **Explorador de soluciones**.
 
@@ -124,7 +122,7 @@ ms.locfileid: "71255602"
 
 - Cuando el usuario hace clic en el botón de alternancia de la cinta de opciones. En este caso, el complemento de VSTO debe ocultar o mostrar el panel de tareas correspondiente.
 
-  Para permitir que el complemento de VSTO realice un seguimiento de qué panel de tareas personalizado está asociado a cada mensaje de correo electrónico abierto, cree una clase personalizada que contenga <xref:Microsoft.Office.Tools.CustomTaskPane> pares de <xref:Microsoft.Office.Interop.Outlook.Inspector> objetos y. Esta clase crea un nuevo objeto de panel de tareas personalizado para cada mensaje de correo electrónico y elimina el panel de tareas personalizado cuando se cierra el mensaje de correo electrónico correspondiente.
+  Para permitir que el complemento de VSTO realice un seguimiento de qué panel de tareas personalizado está asociado a cada mensaje de correo electrónico abierto, cree una clase personalizada que contenga pares de <xref:Microsoft.Office.Interop.Outlook.Inspector> y <xref:Microsoft.Office.Tools.CustomTaskPane> objetos. Esta clase crea un nuevo objeto de panel de tareas personalizado para cada mensaje de correo electrónico y elimina el panel de tareas personalizado cuando se cierra el mensaje de correo electrónico correspondiente.
 
 ### <a name="to-create-a-class-to-manage-inspector-windows-and-custom-task-panes"></a>Para crear una clase para administrar ventanas de inspector y paneles de tareas personalizados
 
@@ -150,7 +148,7 @@ ms.locfileid: "71255602"
      [!code-csharp[Trin_OutlookMailItemTaskPane#5](../vsto/codesnippet/CSharp/Trin_OutlookMailItemTaskPane/ThisAddIn.cs#5)]
      [!code-vb[Trin_OutlookMailItemTaskPane#5](../vsto/codesnippet/VisualBasic/Trin_OutlookMailItemTaskPane/ThisAddIn.vb#5)]
 
-6. Agregue el método siguiente después del código que agregó en el paso anterior. Este método es un controlador de eventos para <xref:Microsoft.Office.Interop.Outlook.InspectorEvents_Event.Close> el evento <xref:Microsoft.Office.Interop.Outlook.Inspector> del objeto que contiene el mensaje de correo electrónico actual. El controlador de eventos libera los recursos cuando se cierra el mensaje de correo electrónico. El controlador de eventos también quita el panel de tareas personalizado actual desde la colección `CustomTaskPanes` . Esto ayuda a evitar varias instancias del panel de tareas personalizado cuando se abre el siguiente mensaje de correo electrónico.
+6. Agregue el método siguiente después del código que agregó en el paso anterior. Este método es un controlador de eventos para el evento <xref:Microsoft.Office.Interop.Outlook.InspectorEvents_Event.Close> del objeto <xref:Microsoft.Office.Interop.Outlook.Inspector> que contiene el mensaje de correo electrónico actual. El controlador de eventos libera los recursos cuando se cierra el mensaje de correo electrónico. El controlador de eventos también quita el panel de tareas personalizado actual desde la colección `CustomTaskPanes` . Esto ayuda a evitar varias instancias del panel de tareas personalizado cuando se abre el siguiente mensaje de correo electrónico.
 
      [!code-csharp[Trin_OutlookMailItemTaskPane#6](../vsto/codesnippet/CSharp/Trin_OutlookMailItemTaskPane/ThisAddIn.cs#6)]
      [!code-vb[Trin_OutlookMailItemTaskPane#6](../vsto/codesnippet/VisualBasic/Trin_OutlookMailItemTaskPane/ThisAddIn.vb#6)]
@@ -161,7 +159,7 @@ ms.locfileid: "71255602"
      [!code-vb[Trin_OutlookMailItemTaskPane#7](../vsto/codesnippet/VisualBasic/Trin_OutlookMailItemTaskPane/ThisAddIn.vb#7)]
 
 ## <a name="initialize-and-clean-up-resources-used-by-the-add-in"></a>Inicializar y limpiar los recursos usados por el complemento
- Agregue código a la clase `ThisAddIn` para inicializar el complemento de VSTO cuando este se cargue y para limpiar los recursos cuando dicho complemento se descargue. Para inicializar el complemento de VSTO, configure un controlador de eventos para <xref:Microsoft.Office.Interop.Outlook.InspectorsEvents_Event.NewInspector> el evento y pase todos los mensajes de correo electrónico existentes a este controlador de eventos. Una vez que se descargue el complemento de VSTO, desasocie el controlador de eventos y limpie los objetos utilizados por el complemento de VSTO.
+ Agregue código a la clase `ThisAddIn` para inicializar el complemento de VSTO cuando este se cargue y para limpiar los recursos cuando dicho complemento se descargue. Para inicializar el complemento de VSTO, configure un controlador de eventos para el evento <xref:Microsoft.Office.Interop.Outlook.InspectorsEvents_Event.NewInspector> y pase todos los mensajes de correo electrónico existentes a este controlador de eventos. Una vez que se descargue el complemento de VSTO, desasocie el controlador de eventos y limpie los objetos utilizados por el complemento de VSTO.
 
 ### <a name="to-initialize-and-clean-up-resources-used-by-the-vsto-add-in"></a>Para inicializar y limpiar los recursos usados por el complemento de VSTO
 
@@ -186,7 +184,7 @@ ms.locfileid: "71255602"
     [!code-csharp[Trin_OutlookMailItemTaskPane#10](../vsto/codesnippet/CSharp/Trin_OutlookMailItemTaskPane/ThisAddIn.cs#10)]
     [!code-vb[Trin_OutlookMailItemTaskPane#10](../vsto/codesnippet/VisualBasic/Trin_OutlookMailItemTaskPane/ThisAddIn.vb#10)]
 
-5. Agregue el siguiente controlador de eventos <xref:Microsoft.Office.Interop.Outlook.InspectorsEvents_Event.NewInspector> a la clase `ThisAddIn` . Si un nuevo <xref:Microsoft.Office.Interop.Outlook.Inspector> contiene un mensaje de correo electrónico, el método crea una instancia de `InspectorWrapper` un nuevo objeto para administrar la relación entre el mensaje de correo electrónico y el panel de tareas correspondiente.
+5. Agregue el siguiente controlador de eventos <xref:Microsoft.Office.Interop.Outlook.InspectorsEvents_Event.NewInspector> a la clase `ThisAddIn` . Si un nuevo <xref:Microsoft.Office.Interop.Outlook.Inspector> contiene un mensaje de correo electrónico, el método crea una instancia de un nuevo objeto `InspectorWrapper` para administrar la relación entre el mensaje de correo electrónico y el panel de tareas correspondiente.
 
     [!code-csharp[Trin_OutlookMailItemTaskPane#11](../vsto/codesnippet/CSharp/Trin_OutlookMailItemTaskPane/ThisAddIn.cs#11)]
     [!code-vb[Trin_OutlookMailItemTaskPane#11](../vsto/codesnippet/VisualBasic/Trin_OutlookMailItemTaskPane/ThisAddIn.vb#11)]
@@ -264,15 +262,15 @@ ms.locfileid: "71255602"
 
 - Cree un panel de tareas personalizado en un complemento de VSTO para una aplicación diferente. Para obtener más información sobre las aplicaciones que admiten paneles de tareas personalizados, vea [paneles de tareas personalizados](../vsto/custom-task-panes.md).
 
-- Automatizar una aplicación de Microsoft Office mediante un panel de tareas personalizado. Para obtener más información, vea [Tutorial: Automatizar una aplicación desde un panel](../vsto/walkthrough-automating-an-application-from-a-custom-task-pane.md)de tareas personalizado.
+- Automatizar una aplicación de Microsoft Office mediante un panel de tareas personalizado. Para obtener más información, vea [Tutorial: automatizar una aplicación desde un panel de tareas personalizado](../vsto/walkthrough-automating-an-application-from-a-custom-task-pane.md).
 
-- Crear un botón de cinta de opciones en Excel que se puede usar para ocultar o mostrar un panel de tareas personalizado. Para obtener más información, vea [Tutorial: Sincronizar un panel de tareas personalizado con un](../vsto/walkthrough-synchronizing-a-custom-task-pane-with-a-ribbon-button.md)botón de la cinta de opciones.
+- Crear un botón de cinta de opciones en Excel que se puede usar para ocultar o mostrar un panel de tareas personalizado. Para obtener más información, vea [Tutorial: sincronizar un panel de tareas personalizado con un botón de la cinta de opciones](../vsto/walkthrough-synchronizing-a-custom-task-pane-with-a-ribbon-button.md).
 
 ## <a name="see-also"></a>Vea también
 - [Paneles de tareas personalizados](../vsto/custom-task-panes.md)
-- [Cómo: Agregar un panel de tareas personalizado a una aplicación](../vsto/how-to-add-a-custom-task-pane-to-an-application.md)
-- [Tutorial: Automatizar una aplicación desde un panel de tareas personalizado](../vsto/walkthrough-automating-an-application-from-a-custom-task-pane.md)
-- [Tutorial: Sincronizar un panel de tareas personalizado con un botón de la cinta de opciones](../vsto/walkthrough-synchronizing-a-custom-task-pane-with-a-ribbon-button.md)
+- [Cómo: agregar un panel de tareas personalizado a una aplicación](../vsto/how-to-add-a-custom-task-pane-to-an-application.md)
+- [Tutorial: automatizar una aplicación desde un panel de tareas personalizado](../vsto/walkthrough-automating-an-application-from-a-custom-task-pane.md)
+- [Tutorial: sincronizar un panel de tareas personalizado con un botón de la cinta de opciones](../vsto/walkthrough-synchronizing-a-custom-task-pane-with-a-ribbon-button.md)
 - [Información general sobre la cinta](../vsto/ribbon-overview.md)
 - [Información general del modelo de objetos de Outlook](../vsto/outlook-object-model-overview.md)
 - [Obtener acceso a la cinta de opciones en tiempo de ejecución](../vsto/accessing-the-ribbon-at-run-time.md)

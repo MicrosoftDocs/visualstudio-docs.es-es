@@ -1,5 +1,5 @@
 ---
-title: XmlMappedRange (control)
+title: Control XmlMappedRange (
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -14,32 +14,30 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: cde5489d970de02afbce28ab9c60c677ab199c84
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 01417d9c08491edc882f7f758bb36e6184500e52
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62810764"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72985357"
 ---
-# <a name="xmlmappedrange-control"></a>XmlMappedRange (control)
-  El <xref:Microsoft.Office.Tools.Excel.XmlMappedRange> control es un intervalo que se crea solo cuando un elemento de esquema no es de repetición se asigna a una celda en Microsoft Office Excel. Por ejemplo, cuando el `maxOccurs` atributo de un elemento de esquema es igual a 1. Después de que Visual Studio crea el intervalo XML asignado, puede programar con él directamente sin tener que recorrer el modelo de objetos de Excel. Solo se puede eliminar un <xref:Microsoft.Office.Tools.Excel.XmlMappedRange> control dentro de Excel cuando se quita la asignación de elemento.
+# <a name="xmlmappedrange-control"></a>Control XmlMappedRange (
+  El control <xref:Microsoft.Office.Tools.Excel.XmlMappedRange> es un intervalo que solo se crea cuando se asigna un elemento de esquema que no es de repetición a una celda de Microsoft Office Excel. Por ejemplo, cuando el `maxOccurs` atributo de un elemento de esquema es igual a 1. Después de que Visual Studio cree el intervalo asignado XML, puede programar directamente sin tener que recorrer el modelo de objetos de Excel. Solo se puede eliminar un control de <xref:Microsoft.Office.Tools.Excel.XmlMappedRange> en Excel cuando se quita la asignación del elemento.
 
  [!INCLUDE[appliesto_xlalldoc](../vsto/includes/appliesto-xlalldoc-md.md)]
 
- ![vínculo a vídeo](../vsto/media/playvideo.gif "vínculo al vídeo") para una demostración en vídeo relacionada, vea [¿cómo lo hago?: ¿Usar la asignación de XML en Excel? ](http://go.microsoft.com/fwlink/?LinkID=130288).
-
 ## <a name="bind-data-to-the-control"></a>Enlazar datos al control
- Un <xref:Microsoft.Office.Tools.Excel.XmlMappedRange> control admite el enlace a un único campo de datos (enlace de datos simple). El <xref:Microsoft.Office.Tools.Excel.ListObject> can control admite el enlace de datos complejos y se crea automáticamente cuando se asigna un elemento de esquema repetitivo a una celda. Para obtener más información, consulte [control ListObject](../vsto/listobject-control.md).
+ Un control <xref:Microsoft.Office.Tools.Excel.XmlMappedRange> admite el enlace a un único campo de datos (enlace de datos simple). El control <xref:Microsoft.Office.Tools.Excel.ListObject> puede admitir el enlace de datos complejo y se crea automáticamente cuando se asigna un elemento de esquema repetido a una celda. Para obtener más información, vea [ListObject (control](../vsto/listobject-control.md)).
 
- El <xref:Microsoft.Office.Tools.Excel.XmlMappedRange> está enlazado a un origen de datos mediante el <xref:System.Windows.Forms.Control.DataBindings%2A> propiedad. Cuando un <xref:Microsoft.Office.Tools.Excel.XmlMappedRange> se agrega a una celda de la hoja de cálculo, Visual Studio genera un conjunto de datos de los datos en las celdas asignadas automáticamente y se enlaza el control a ese conjunto de datos. La propiedad de enlace de datos de forma predeterminada el <xref:Microsoft.Office.Tools.Excel.XmlMappedRange> es <xref:Microsoft.Office.Tools.Excel.XmlMappedRange.Value2%2A>.
+ El control <xref:Microsoft.Office.Tools.Excel.XmlMappedRange> se enlaza a un origen de datos mediante la propiedad <xref:System.Windows.Forms.Control.DataBindings%2A>. Cuando se agrega una <xref:Microsoft.Office.Tools.Excel.XmlMappedRange> a una celda de la hoja de cálculo, Visual Studio genera automáticamente un conjunto de datos a partir de los datos de las celdas asignadas y enlaza el control al conjunto de datos. La propiedad de enlace de datos predeterminada del <xref:Microsoft.Office.Tools.Excel.XmlMappedRange> es <xref:Microsoft.Office.Tools.Excel.XmlMappedRange.Value2%2A>.
 
- Si los datos en el conjunto de datos enlazado se actualizan mediante cualquier mecanismo, el <xref:Microsoft.Office.Tools.Excel.XmlMappedRange> control refleja los cambios.
+ Si los datos del conjunto de datos enlazado se actualizan mediante cualquier mecanismo, el control de <xref:Microsoft.Office.Tools.Excel.XmlMappedRange> reflejará los cambios.
 
 ## <a name="formatting"></a>Formato
- Puede aplicar el mismo formato a un <xref:Microsoft.Office.Tools.Excel.XmlMappedRange> control que se puede aplicar a un <xref:Microsoft.Office.Interop.Excel.Range>. Esto incluye bordes, fuentes, formato de número y estilos.
+ Puede aplicar el mismo formato a un control de <xref:Microsoft.Office.Tools.Excel.XmlMappedRange> que puede aplicar a un <xref:Microsoft.Office.Interop.Excel.Range>. Esto incluye bordes, fuentes, formato de número y estilos.
 
-## <a name="events"></a>Eventos
- Los eventos disponibles para el <xref:Microsoft.Office.Tools.Excel.XmlMappedRange> control son:
+## <a name="events"></a>Events
+ Los eventos disponibles para el control <xref:Microsoft.Office.Tools.Excel.XmlMappedRange> son:
 
 - <xref:Microsoft.Office.Tools.Excel.XmlMappedRange.BeforeDoubleClick>
 
@@ -59,7 +57,7 @@ ms.locfileid: "62810764"
 
 ## <a name="see-also"></a>Vea también
 - [Automatizar Excel usando objetos extendidos](../vsto/automating-excel-by-using-extended-objects.md)
-- [Cómo: Agregar controles XMLMappedRange a hojas de cálculo](../vsto/how-to-add-xmlmappedrange-controls-to-worksheets.md)
+- [Cómo: agregar controles XmlMappedRange (a hojas de cálculo](../vsto/how-to-add-xmlmappedrange-controls-to-worksheets.md)
 - [Enlazar datos a controles en soluciones de Office](../vsto/binding-data-to-controls-in-office-solutions.md)
-- [Cómo: Asignar esquemas a hojas de cálculo en Visual Studio](../vsto/how-to-map-schemas-to-worksheets-inside-visual-studio.md)
-- [Limitaciones de programación de elementos host y controles host](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)
+- [Cómo: asignar esquemas a hojas de cálculo en Visual Studio](../vsto/how-to-map-schemas-to-worksheets-inside-visual-studio.md)
+- [Limitaciones de programación de elementos y controles host](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)
