@@ -1,5 +1,5 @@
 ---
-title: Procedimiento Agregar comandos a menús contextuales
+title: 'Cómo: agregar comandos a menús contextuales'
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -13,15 +13,15 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 3b20b10a37908e2c9744aeac63bb3eda091da478
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 82c26022f0c88f1ce125c64f5ec3b2df8d20346e
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62826410"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72986026"
 ---
-# <a name="how-to-add-commands-to-shortcut-menus"></a>Procedimiento Agregar comandos a menús contextuales
-  En este tema se muestra cómo agregar comandos a un menú contextual en una aplicación de Office mediante el uso de un complemento de VSTO.
+# <a name="how-to-add-commands-to-shortcut-menus"></a>Cómo: agregar comandos a menús contextuales
+  En este tema se muestra cómo agregar comandos a un menú contextual en una aplicación de Office mediante un complemento de VSTO.
 
  [!INCLUDE[appliesto_all](../vsto/includes/appliesto-all-md.md)]
 
@@ -40,7 +40,7 @@ ms.locfileid: "62826410"
      [!code-csharp[Trin_WordAddIn_Menus#1](../vsto/codesnippet/CSharp/trin_wordaddin_menus.cs/thisaddin.cs#1)]
      [!code-vb[Trin_WordAddIn_Menus#1](../vsto/codesnippet/VisualBasic/trin_wordaddin_menus.vb/thisaddin.vb#1)]
 
-5. En el **Explorador de soluciones**, seleccione el archivo XML de cinta. De forma predeterminada, el archivo XML de cinta se denomina *Ribbon1.xml*.
+5. En el **Explorador de soluciones**, seleccione el archivo XML de cinta. De forma predeterminada, el archivo XML de la cinta de opciones se denomina *Ribbon1. XML*.
 
 6. En la barra de menús, elija **Ver** > **Código**.
 
@@ -48,7 +48,7 @@ ms.locfileid: "62826410"
 
 7. En el Editor de código, agregue el código XML que describe el menú contextual y el control que quiere agregar al menú contextual.
 
-     En el ejemplo siguiente se agrega un botón, un menú y un control de galería al menú contextual de un documento de Word. El id. del control de este menú contextual es ContextMenuText. Para obtener una lista completa de control de acceso directo de Office 2010 identificadores, vea [los archivos de Ayuda de Office 2010: Identificadores de control de interfaz de usuario fluent Office](http://go.microsoft.com/fwlink/?LinkID=181052).
+     En el ejemplo siguiente se agrega un botón, un menú y un control de galería al menú contextual de un documento de Word. El id. del control de este menú contextual es ContextMenuText. Para obtener una lista completa de los identificadores de control de acceso directo de Office 2010, consulte archivos de ayuda de Office [2010: identificadores de control de la interfaz de usuario de Office Fluent](https://www.microsoft.com/download/details.aspx?id=6627).
 
     ```xml
     <?xml version="1.0" encoding="UTF-8"?>
@@ -72,7 +72,7 @@ ms.locfileid: "62826410"
 
 8. En el **Explorador de soluciones**, elija **MyRibbon.cs** o **MyRibbon.vb**.
 
-9. Agregue un método de devolución de llamada a la `Ribbon1` clase para cada control que desea administrar.
+9. Agregue un método de devolución de llamada a la clase `Ribbon1` para cada control que desee controlar.
 
      El siguiente método de devolución de llamada controla el botón **Mi botón** . Este código agrega una cadena al documento activo en la posición actual del cursor.
 
@@ -81,6 +81,6 @@ ms.locfileid: "62826410"
 
 ## <a name="see-also"></a>Vea también
 - [Personalización de la interfaz de usuario de Office](../vsto/office-ui-customization.md)
-- [Tutorial: Crear menús contextuales para marcadores](../vsto/walkthrough-creating-shortcut-menus-for-bookmarks.md)
+- [Tutorial: crear menús contextuales para marcadores](../vsto/walkthrough-creating-shortcut-menus-for-bookmarks.md)
 - [Parámetros opcionales en las soluciones de Office](../vsto/optional-parameters-in-office-solutions.md)
-- [Personalizar los menús contextuales de Office 2010](http://go.microsoft.com/fwlink/?LinkId=182186)
+- [Personalizar menús contextuales en Office 2010](/previous-versions/office/developer/office-2010/ee691832(v=office.14))

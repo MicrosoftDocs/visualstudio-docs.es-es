@@ -7,12 +7,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bcbe7a132f7e2f6f7d72cfd2ba210e5edba21b57
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: e33ab59660263a5053642c95ec62ab36663f8e7b
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72654089"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72984304"
 ---
 # <a name="customizing-copy-behavior"></a>Personalizar comportamiento de copia
 En un lenguaje específico de dominio (DSL) creado con el SDK de visualización y modelado de Visual Studio, puede modificar lo que ocurre cuando el usuario copia y pega elementos.
@@ -86,7 +86,7 @@ Invalide *midsl* `ClipboardCommandSet.ProcessOnMenuCopyCommand()` en el proyecto
 Invalide *midsl* `ClipboardCommandSet.CopyModelElementsIntoElementGroupPrototype()` en el proyecto DslPackage.
 
  **Conservar el diseño de la forma mediante copiar y pegar.**
-Cuando el usuario copia varias formas, puede conservar su posición relativa cuando se peguen. Esta técnica se muestra en el ejemplo que se encuentra en [VMSDK: ejemplo de diagramas de circuitos](http://go.microsoft.com/fwlink/?LinkId=213879).
+Cuando el usuario copia varias formas, puede conservar su posición relativa cuando se peguen. Esta técnica se muestra en el ejemplo que se encuentra en [VMSDK: ejemplo de diagramas de circuitos](https://code.msdn.microsoft.com/Visualization-Modeling-SDK-763778e8).
 
  Para lograr este efecto, agregue las formas y conectores al ElementGroupPrototype copiado. El método más cómodo para invalidar es ElementOperations.CreateElementGroupPrototype(). Para ello, agregue el siguiente código al proyecto Dsl:
 
@@ -142,7 +142,7 @@ partial class MyDslDiagram // EDIT NAME
 ```
 
  **Pegar formas en la ubicación elegida, como la posición actual del cursor.**
-Cuando el usuario copia varias formas, puede conservar su posición relativa cuando se peguen. Esta técnica se muestra en el ejemplo que se encuentra en [VMSDK: ejemplo de diagramas de circuitos](http://go.microsoft.com/fwlink/?LinkId=213879).
+Cuando el usuario copia varias formas, puede conservar su posición relativa cuando se peguen. Esta técnica se muestra en el ejemplo que se encuentra en [VMSDK: ejemplo de diagramas de circuitos](https://code.msdn.microsoft.com/Visualization-Modeling-SDK-763778e8).
 
  Para lograr este efecto, invalide `ClipboardCommandSet.ProcessOnMenuPasteCommand()` para usar la versión específica de la ubicación de `ElementOperations.Merge()`. Para ello, agregue el siguiente código al proyecto DslPackage:
 
@@ -556,6 +556,6 @@ namespace Company.MyDsl
 
 - [Personalizar la creación y el movimiento de los elementos](../modeling/customizing-element-creation-and-movement.md)
 - [Cómo: Agregar un controlador para arrastrar y colocar](../modeling/how-to-add-a-drag-and-drop-handler.md)
-- [Ejemplo: ejemplo de diagramas de circuitos de VMSDK](http://go.microsoft.com/fwlink/?LinkId=213879)
+- [Ejemplo: ejemplo de diagramas de circuitos de VMSDK](https://code.msdn.microsoft.com/Visualization-Modeling-SDK-763778e8)
 
 [!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]

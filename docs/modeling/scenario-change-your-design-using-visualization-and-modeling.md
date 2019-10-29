@@ -15,12 +15,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 927b1105d0ab1234f63bd08a6f4a5ac0c078bb5e
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 3d332050538ca10d133a69f61a914338484fe799
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72670834"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72986374"
 ---
 # <a name="scenario-change-your-design-using-visualization-and-modeling"></a>Escenario: Cambiar el diseño usando modelado y visualización
 
@@ -240,7 +240,7 @@ Vea:
 
 - [Validar el sistema durante el desarrollo](../modeling/validate-your-system-during-development.md)
 
-- [Usar el control de versiones](http://go.microsoft.com/fwlink/?LinkID=525605)
+- [Usar el control de versiones](/azure/devops/repos/tfvc/overview?view=azure-devops)
 
 - [Azure Pipelines](/azure/devops/pipelines/index?view=vsts)
 
@@ -478,7 +478,7 @@ Los diagramas de dependencia ayudan a:
 
 |**Categoría**|**Links**|
 |-|-|
-|**Foros**|- [Herramientas de visualización y modelado de Visual Studio](http://go.microsoft.com/fwlink/?LinkId=184720)<br />- [SDK de visualización y modelado de Visual Studio (Herramientas ADSL)](http://go.microsoft.com/fwlink/?LinkId=184721)|
+|**Foros**|- [Herramientas de visualización y modelado de Visual Studio](https://social.msdn.microsoft.com/Forums/en-US/home?forum=vsarch)<br />- [SDK de visualización y modelado de Visual Studio (Herramientas ADSL)](https://social.msdn.microsoft.com/Forums/home?forum=dslvsarchx)|
 
 ## <a name="see-also"></a>Vea también
 

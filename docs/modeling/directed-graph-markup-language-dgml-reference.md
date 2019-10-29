@@ -7,12 +7,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b038acd9527cae197223e288349e431e81ea6dd6
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 3b5405afbcea1f80d19e3985da3d0781cd459e43
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72748408"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72985098"
 ---
 # <a name="directed-graph-markup-language-dgml-reference"></a>Referencia de Directed Graph Markup Language (DGML)
 
@@ -21,7 +21,7 @@ El formato DGML (Directed Graph Markup Language) describe la información que se
 Tenga en cuenta que algunas versiones de Visual Studio solo admiten un subconjunto de las funcionalidades de DGML, vea [compatibilidad de versiones con las herramientas de arquitectura y modelado](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
 
 > [!NOTE]
-> Al editar un archivo .dgml, IntelliSense le ayuda a identificar los atributos disponibles para cada elemento y sus valores. Para especificar color en un atributo, use nombres para los colores comunes, como "Blue", o valores hexadecimales de ARGB, como "#ffa0b1c3". DGML emplea un pequeño subconjunto de los formatos de definición de color de Windows Presentation Foundation (WPF). Para obtener más información, vea [colores (clase](http://go.microsoft.com/fwlink/?LinkId=182345)).
+> Al editar un archivo .dgml, IntelliSense le ayuda a identificar los atributos disponibles para cada elemento y sus valores. Para especificar color en un atributo, use nombres para los colores comunes, como "Blue", o valores hexadecimales de ARGB, como "#ffa0b1c3". DGML emplea un pequeño subconjunto de los formatos de definición de color de Windows Presentation Foundation (WPF). Para obtener más información, vea [colores (clase](/dotnet/api/system.windows.media.colors&view=netframework-4.8)).
 
 ## <a name="DGML"></a>Sintaxis de DGML
 

@@ -1,5 +1,5 @@
 ---
-title: Procedimiento Leer y escribir en las propiedades del documento
+title: 'Cómo: leer y escribir en propiedades de documento'
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -15,21 +15,19 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: ac0d81c9e42a5c3aa22a09d59f346e6127b1284f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 71a4b1a84c4544f4dc2b359e391f3c9f768e8eee
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62961571"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72985807"
 ---
-# <a name="how-to-read-from-and-write-to-document-properties"></a>Procedimiento Leer y escribir en las propiedades del documento
+# <a name="how-to-read-from-and-write-to-document-properties"></a>Cómo: leer y escribir en propiedades de documento
   Puede almacenar propiedades de documento junto con un documento. Las aplicaciones de Office proporcionan una serie de propiedades integradas, como author, title y subject. En este tema se muestra cómo establecer las propiedades de documento en Microsoft Office Excel y Microsoft Office Word.
-
- ![vínculo a vídeo](../vsto/media/playvideo.gif "vínculo al vídeo") para una demostración en vídeo relacionada, vea [¿cómo lo hago?: Obtener acceso y manipular propiedades personalizadas del documento en Microsoft Word? ](http://go.microsoft.com/fwlink/?LinkId=136772).
 
  [!INCLUDE[appliesto_docprops](../vsto/includes/appliesto-docprops-md.md)]
 
-## <a name="set-document-properties-in-excel"></a>Conjunto de propiedades de documento de Excel
+## <a name="set-document-properties-in-excel"></a>Establecer propiedades de documento en Excel
  Para trabajar con las propiedades integradas de Excel, use las siguientes propiedades:
 
 - En un proyecto de nivel de documento, use la propiedad <xref:Microsoft.Office.Tools.Excel.Workbook.BuiltinDocumentProperties%2A> de la clase `ThisWorkbook` .
@@ -81,6 +79,6 @@ ms.locfileid: "62961571"
  Aunque trabaje con Word y Excel y sus objetos, Microsoft Office proporciona una lista de propiedades de documento integradas. Si se intenta tener acceso a una propiedad sin definir, se produce una excepción.
 
 ## <a name="see-also"></a>Vea también
-- [Programar complementos VSTO](../vsto/programming-vsto-add-ins.md)
-- [Programar personalizaciones de nivel de documento](../vsto/programming-document-level-customizations.md)
-- [Cómo: Crear y modificar propiedades de documento personalizadas](../vsto/how-to-create-and-modify-custom-document-properties.md)
+- [Complementos de VSTO de programa](../vsto/programming-vsto-add-ins.md)
+- [Personalizaciones de nivel de documento de programa](../vsto/programming-document-level-customizations.md)
+- [Cómo: crear y modificar propiedades de documento personalizadas](../vsto/how-to-create-and-modify-custom-document-properties.md)

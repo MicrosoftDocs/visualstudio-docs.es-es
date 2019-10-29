@@ -7,12 +7,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4932a20fbcaee4d5aef6aac03252ee6062fbd035
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 410bc879ff4822f19436794d3cb99732be9d413e
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72606204"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72983703"
 ---
 # <a name="t4-template-directive"></a>Directiva de plantilla T4
 
@@ -235,7 +235,7 @@ Una plantilla de texto en tiempo de diseño es un archivo para el que la **herra
 
 Para una plantilla de texto en tiempo de diseño, puede especificar cualquier clase base que se derive de <xref:Microsoft.VisualStudio.TextTemplating.TextTransformation?displayProperty=fullName>. Utilice la directiva `<#@assembly#>` para cargar el ensamblado o proyecto que contiene la clase base.
 
-Para obtener más información, vea ["herencia en las plantillas de texto" en el blog de Gareth Jones](http://go.microsoft.com/fwlink/?LinkId=208373).
+Para obtener más información, vea ["herencia en las plantillas de texto" en el blog de Gareth Jones](https://blogs.msdn.microsoft.com/garethj/2011/01/03/vs2010-sp1-t4-template-inheritance-part-i-sample-metadata/).
 
 ## <a name="linepragmas-attribute"></a>atributo linePragmas
 

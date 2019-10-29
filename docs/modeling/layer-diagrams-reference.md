@@ -20,12 +20,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7711d0b0f369f43cc7becf92cbdcfc986cd3a6a8
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 07cba8f8ae813ae223ef3da110a046f65c81b091
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72661494"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72984084"
 ---
 # <a name="dependency-diagrams-reference"></a>Diagramas de dependencia: referencia
 
@@ -48,7 +48,7 @@ Use un diagrama de dependencias para ayudarle a realizar las siguientes tareas:
 
 - Reforzar la arquitectura planeada durante el desarrollo y el mantenimiento del código incluyendo la validación en las operaciones de protección y compilación.
 
-En este tema se describen los elementos que puede usar en un diagrama de dependencia. Para obtener información más detallada sobre cómo crear y dibujar diagramas de dependencia, vea [diagramas de dependencia: instrucciones](../modeling/layer-diagrams-guidelines.md). Para obtener más información sobre los patrones de capas, visite el [sitio patterns & Practices](http://go.microsoft.com/fwlink/?LinkId=145794).
+En este tema se describen los elementos que puede usar en un diagrama de dependencia. Para obtener información más detallada sobre cómo crear y dibujar diagramas de dependencia, vea [diagramas de dependencia: instrucciones](../modeling/layer-diagrams-guidelines.md). Para obtener más información sobre los patrones de capas, visite el [sitio patterns & Practices](https://archive.codeplex.com/?p=apparch).
 
 ## <a name="reading-dependency-diagrams"></a>Lectura de diagramas de dependencia
 

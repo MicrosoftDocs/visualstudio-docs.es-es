@@ -10,12 +10,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 79f1c4a55321a1b039cc2702b1040e2ab9d4ac9d
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.openlocfilehash: 564672e01eeffbdcb53bf1af08f329d2f6bf218f
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71255643"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72985784"
 ---
 # <a name="improve-the-performance-of-a-vsto-add-in"></a>Mejorar el rendimiento de un complemento de VSTO
   Puede ofrecer a los usuarios una mejor experiencia si optimiza los complementos de VSTO que cree para las aplicaciones de Office, de modo que se inicien, se cierren, abran elementos y realicen otras tareas rápidamente. Si el complemento de VSTO es para Outlook, también puede reducir la posibilidad de que se deshabilite debido a un bajo rendimiento. Puede aumentar el rendimiento del complemento de VSTO si implementa las estrategias siguientes:
@@ -28,7 +28,7 @@ ms.locfileid: "71255643"
 
 - [Realizar operaciones que consumen muchos recursos en un subproceso de ejecución independiente](#Perform).
 
-  Para obtener más información sobre cómo optimizar un complemento de VSTO para Outlook, vea [criterios de rendimiento para mantener los complementos de VSTO habilitados](http://go.microsoft.com/fwlink/?LinkID=266503).
+  Para obtener más información sobre cómo optimizar un complemento de VSTO para Outlook, vea [criterios de rendimiento para mantener los complementos de VSTO habilitados](/previous-versions/office/jj228679(v=office.15)#ol15WhatsNew_AddinDisabling).
 
 ## <a name="Load"></a> Cargar complementos de VSTO a petición
  Puede configurar un complemento de VSTO de modo que se cargue solo en las siguientes circunstancias:
@@ -51,13 +51,13 @@ ms.locfileid: "71255643"
 
 ### <a name="to-configure-a-windows-installer-solution-to-load-vsto-add-ins-on-demand"></a>Para configurar una solución de Windows Installer para cargar complementos de VSTO a petición
 
-1. En el registro, establezca la `LoadBehavior` entrada de la clave **_raíz_\Software\Microsoft\Office\\_applicationName_\Addins\\de_identificador de complemento_** en **0x10**.
+1. En el registro, establezca la entrada `LoadBehavior` de la **_raíz_\Software\Microsoft\Office\\_applicationName_\Addins\\** clave de identificador de complemento en **0x10**.
 
      Para obtener más información, vea [entradas del registro para complementos de VSTO](../vsto/registry-entries-for-vsto-add-ins.md).
 
 ### <a name="to-configure-a-solution-to-load-vsto-add-ins-on-demand-while-you-debug-the-solution"></a>Para configurar una solución para cargar complementos de VSTO a petición mientras se depura la solución
 
-1. Cree un script que establezca la `LoadBehavior` entrada de la clave **_raíz_\Software\Microsoft\Office\\_applicationName_\Addins\\de_identificador de complemento_** en **0x10**.
+1. Cree un script que establezca la entrada `LoadBehavior` de la **_raíz_\Software\Microsoft\Office\\_applicationName_\Addins\\** clave de identificador de complemento en **0x10**.
 
      El código siguiente muestra un ejemplo de este script.
 
@@ -79,9 +79,9 @@ ms.locfileid: "71255643"
 
     ```
 
-     Para obtener información sobre cómo crear un evento posterior a la compilación C# en un proyecto [de, consulte Cómo: Especifique &#40;eventos de compilación&#35;&#41;](../ide/how-to-specify-build-events-csharp.md)C.
+     Para obtener información sobre cómo crear un evento posterior a la compilación C# en un proyecto, vea [Cómo: especificar eventos &#40;de&#35;compilación C](../ide/how-to-specify-build-events-csharp.md).
 
-     Para obtener información sobre cómo crear un evento posterior a la compilación en un proyecto de Visual Basic [, consulte Cómo: Especifique eventos &#40;de compilación&#41;](../ide/how-to-specify-build-events-visual-basic.md)Visual Basic.
+     Para obtener información sobre cómo crear un evento posterior a la compilación en un proyecto de Visual Basic, vea [Cómo: especificar eventos &#40;de&#41;compilación Visual Basic](../ide/how-to-specify-build-events-visual-basic.md).
 
 ## <a name="Publish"></a>Publicar soluciones de Office mediante Windows Installer
  Si publica la solución mediante Windows Installer, el motor en tiempo de ejecución de Visual Studio 2010 Tools para Office omite los pasos siguientes cuando se carga el complemento de VSTO.
@@ -98,9 +98,9 @@ ms.locfileid: "71255643"
   Para obtener más información, vea [implementar una solución de Office mediante Windows Installer](../vsto/deploying-an-office-solution-by-using-windows-installer.md).
 
 ## <a name="Bypass"></a>Omitir reflexión de cinta
- Si compila una solución [!INCLUDE[vs_dev11_long](../sharepoint/includes/vs-dev11-long-md.md)]mediante, asegúrese de que los usuarios hayan instalado la versión más reciente del motor en tiempo de ejecución de las herramientas de Visual Studio 2010 para Office al implementar la solución. Las versiones anteriores del tiempo de ejecución de VSTO se reflejaban en los ensamblados de la solución para buscar las personalizaciones de la cinta. Este proceso puede hacer que el complemento de VSTO se cargue más lentamente.
+ Si compila una solución mediante [!INCLUDE[vs_dev11_long](../sharepoint/includes/vs-dev11-long-md.md)], asegúrese de que los usuarios hayan instalado la versión más reciente del motor en tiempo de ejecución de las herramientas de Visual Studio 2010 para Office al implementar la solución. Las versiones anteriores del tiempo de ejecución de VSTO se reflejaban en los ensamblados de la solución para buscar las personalizaciones de la cinta. Este proceso puede hacer que el complemento de VSTO se cargue más lentamente.
 
- Como alternativa, puede evitar que cualquier versión del motor en tiempo de ejecución de Visual Studio 2010 Tools para Office use la reflexión para identificar las personalizaciones de la cinta. Para seguir esta estrategia, invalide el método y devuelva explícitamente los `CreateRibbonExtensibility` objetos de la cinta de opciones. Si el complemento de VSTO no contiene ninguna personalización de la cinta de `null` opciones, devuelva dentro del método.
+ Como alternativa, puede evitar que cualquier versión del motor en tiempo de ejecución de Visual Studio 2010 Tools para Office use la reflexión para identificar las personalizaciones de la cinta. Para seguir esta estrategia, invalide el método `CreateRibbonExtensibility` y devuelva explícitamente los objetos de la cinta de opciones. Si el complemento de VSTO no contiene ninguna personalización de la cinta de opciones, devuelva `null` dentro del método.
 
  En el ejemplo siguiente se devuelve un objeto Ribbon basado en el valor de un campo.
 
