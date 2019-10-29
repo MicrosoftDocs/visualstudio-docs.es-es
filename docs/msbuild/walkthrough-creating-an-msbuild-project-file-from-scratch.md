@@ -10,17 +10,17 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bce461f4b120d1d9a37c5433b590ed1f7b227131
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: e13399d80e74f41774542da31d0edd8c36a42c7e
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63445315"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72748033"
 ---
 # <a name="walkthrough-create-an-msbuild-project-file-from-scratch"></a>Tutorial: Crear un archivo de proyecto de MSBuild desde cero
 Los lenguajes de programación destinados a .NET Framework usan archivos de proyecto de MSBuild para describir y controlar el proceso de compilación de aplicaciones. Cuando se usa Visual Studio para crear un archivo del proyecto de MSBuild, el XML adecuado se agrega al archivo automáticamente. Sin embargo, puede ser de utilidad comprender cómo se organiza el XML y cómo se puede cambiar para controlar una compilación.
 
- Para obtener información sobre cómo crear un archivo del proyecto para un proyecto de C++, consulte [MSBuild (Visual C++)](/cpp/build/msbuild-visual-cpp).
+ Para información sobre cómo crear un archivo del proyecto para un proyecto de C++, consulte [MSBuild (C++)](/cpp/build/msbuild-visual-cpp).
 
  Este tutorial muestra la forma de crear un archivo básico del proyecto de forma incremental, utilizando solo un editor de texto. El tutorial sigue estos pasos:
 
@@ -51,9 +51,9 @@ Para completar el tutorial, debe tener instalado .NET Framework (versión 2.0, 3
 
 #### <a name="to-create-the-minimal-application"></a>Para crear la aplicación mínima
 
-1. En el símbolo del sistema, vaya a la carpeta en la que quiere crear la aplicación, por ejemplo, *\My Documents\\* o *\Desktop\\*.
+1. En el símbolo del sistema, vaya a la carpeta en la que quiere crear la aplicación, por ejemplo, *\My Documents\\* o *\Desktop\\* .
 
-2. Escriba **md HelloWorld** para crear una subcarpeta denominada *\HelloWorld\\*.
+2. Escriba **md HelloWorld** para crear una subcarpeta denominada *\HelloWorld\\* .
 
 3. Escriba **cd HelloWorld** para cambiar a la nueva carpeta.
 
@@ -161,7 +161,7 @@ Las tareas en el destino Build se ejecutan secuencialmente. En este caso, la tar
 
 #### <a name="to-add-msbuild-to-your-path"></a>Para agregar MSBuild a su ruta de acceso
 
-- A partir de Visual Studio 2013, puede encontrar *MSBuild.exe* en la carpeta de MSBuild (*%ProgramFiles%\MSBuild* en un sistema operativo de 32 bits o *% ProgramFiles (x86) %\MSBuild* en un sistema operativo de 64 bits).
+- A partir de Visual Studio 2013, puede encontrar *MSBuild.exe* en la carpeta de MSBuild ( *%ProgramFiles%\MSBuild* en un sistema operativo de 32 bits o *% ProgramFiles (x86) %\MSBuild* en un sistema operativo de 64 bits).
 
      En el símbolo del sistema, escriba **set PATH=%PATH%;%ProgramFiles%\MSBuild** o **set PATH=%PATH%;%ProgramFiles(x86)%\MSBuild**.
 
@@ -336,7 +336,7 @@ Su archivo del proyecto debe ser ahora similar al código siguiente:
 
 1. En el símbolo del sistema, escriba **msbuild helloworld.csproj -p:AssemblyName=Greetings**.
 
-     Como no utilizó el modificador **-t** para establecer el destino explícitamente, MSBuild ejecutará el destino Build predeterminado. El modificador **-p** invalida la propiedad `AssemblyName` y le da el nuevo valor, `Greetings`. Esto hace que se cree una aplicación, *Greetings.exe*, en la carpeta *\Bin\\*.
+     Como no utilizó el modificador **-t** para establecer el destino explícitamente, MSBuild ejecutará el destino Build predeterminado. El modificador **-p** invalida la propiedad `AssemblyName` y le da el nuevo valor, `Greetings`. Esto hace que se cree una aplicación, *Greetings.exe*, en la carpeta *\Bin\\* .
 
 2. Para comprobar que la carpeta *\Bin\\* contiene la aplicación *MSBuildSample* y la nueva aplicación *Greetings*, escriba **dir Bin**.
 
@@ -356,7 +356,7 @@ Su archivo del proyecto debe ser ahora similar al código siguiente:
 
 7. Escriba **msbuild**.
 
-     Aunque no se especifica un archivo de proyecto, MSBuild compila el archivo *helloworld.csproj* porque solo hay un archivo de proyecto en la carpeta actual. Esto hace que se cree la aplicación *MSBuildSample* en la carpeta *\Bin\\*.
+     Aunque no se especifica un archivo de proyecto, MSBuild compila el archivo *helloworld.csproj* porque solo hay un archivo de proyecto en la carpeta actual. Esto hace que se cree la aplicación *MSBuildSample* en la carpeta *\Bin\\* .
 
      Para comprobar que la carpeta *\Bin\\* contiene la aplicación *MSBuildSample*, escriba **dir Bin**.
 
@@ -400,7 +400,7 @@ Su archivo del proyecto debe ser ahora similar al código siguiente:
 
 ## <a name="example"></a>Ejemplo
 
-### <a name="description"></a>Descripción
+### <a name="description"></a>DESCRIPCIÓN
  En el ejemplo siguiente se muestra un archivo del proyecto que compila una aplicación de [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] y registra un mensaje que contiene el nombre del archivo de salida.
 
 ### <a name="code"></a>Código
@@ -438,7 +438,7 @@ Su archivo del proyecto debe ser ahora similar al código siguiente:
 
 ## <a name="example"></a>Ejemplo
 
-### <a name="description"></a>Descripción
+### <a name="description"></a>DESCRIPCIÓN
  En el ejemplo siguiente se muestra un archivo del proyecto que compila una aplicación de [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] y registra un mensaje que contiene el nombre del archivo de salida.
 
 ### <a name="code"></a>Código
