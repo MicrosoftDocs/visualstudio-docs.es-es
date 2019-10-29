@@ -1,5 +1,5 @@
 ---
-title: Procedimiento Buscar texto en rangos de hoja de cálculo mediante programación
+title: 'Cómo: buscar texto en rangos de hojas de cálculo mediante programación'
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -14,58 +14,56 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 3e0befc61b39030bd7144cef10b54e70dc71e33a
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 0ffc06c2f50f7a304ef76ac1451ee47419143afb
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63419547"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72985817"
 ---
-# <a name="how-to-programmatically-search-for-text-in-worksheet-ranges"></a>Procedimiento Buscar texto mediante programación en intervalos de hoja de cálculo
-  El <xref:Microsoft.Office.Interop.Excel.Range.Find%2A> método de la <xref:Microsoft.Office.Interop.Excel.Range> objeto le permite buscar texto dentro del intervalo. Este texto puede ser cualquiera de las cadenas de error que pueden aparecer en una celda de la hoja de cálculo como `#NULL!` o `#VALUE!`. Para obtener más información acerca de las cadenas de error, consulte [los valores de error de celda](/office/vba/excel/Concepts/Cells-and-Ranges/cell-error-values).
+# <a name="how-to-programmatically-search-for-text-in-worksheet-ranges"></a>Cómo: buscar texto en rangos de hojas de cálculo mediante programación
+  El método <xref:Microsoft.Office.Interop.Excel.Range.Find%2A> del objeto <xref:Microsoft.Office.Interop.Excel.Range> permite buscar texto dentro del intervalo. Este texto también puede ser cualquiera de las cadenas de error que pueden aparecer en una celda de la hoja de cálculo, como `#NULL!` o `#VALUE!`. Para obtener más información acerca de las cadenas de error, consulte [valores de error de celda](/office/vba/excel/Concepts/Cells-and-Ranges/cell-error-values).
 
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]
 
- El ejemplo siguiente busca un rango denominado `Fruits` y modifica la fuente de las celdas que contienen la palabra "manzanas". Este procedimiento también utiliza el <xref:Microsoft.Office.Interop.Excel.Range.FindNext%2A> método, que usa previamente establecido valores para repetir la búsqueda de búsqueda. Especifique la celda después de que se va a buscar y el <xref:Microsoft.Office.Interop.Excel.Range.FindNext%2A> método encarga del resto.
+ En el ejemplo siguiente se busca un intervalo denominado `Fruits` y se modifica la fuente de las celdas que contienen la palabra "manzanas". Este procedimiento también utiliza el método <xref:Microsoft.Office.Interop.Excel.Range.FindNext%2A>, que usa la configuración de búsqueda establecida previamente para repetir la búsqueda. Especifique la celda después de la que se va a buscar y el método de <xref:Microsoft.Office.Interop.Excel.Range.FindNext%2A> controla el resto.
 
 > [!NOTE]
-> El <xref:Microsoft.Office.Interop.Excel.Range.FindNext%2A> búsqueda del método se ajusta al principio del intervalo de búsqueda una vez que ha llegado al final del intervalo. El código debe asegurarse de que la búsqueda no se ajusta alrededor de un bucle infinito. El procedimiento de ejemplo muestra una forma de controlar esto mediante la <xref:Microsoft.Office.Interop.Excel.Range.Address%2A> propiedad.
+> La búsqueda del método <xref:Microsoft.Office.Interop.Excel.Range.FindNext%2A> se ajusta al principio del intervalo de búsqueda una vez que se ha alcanzado el final del intervalo. El código debe asegurarse de que la búsqueda no se ajusta en un bucle infinito. En el procedimiento de ejemplo se muestra una manera de controlar esto mediante el <xref:Microsoft.Office.Interop.Excel.Range.Address%2A> propiedad.
 
- ![vínculo a vídeo](../vsto/media/playvideo.gif "vínculo al vídeo") para una demostración en vídeo relacionada, vea [¿cómo lo hago?: ¿Usar el método Find en un complemento de Excel? ](http://go.microsoft.com/fwlink/?LinkID=130294).
+## <a name="to-search-for-text-in-a-worksheet-range"></a>Para buscar texto en un intervalo de la hoja de cálculo
 
-## <a name="to-search-for-text-in-a-worksheet-range"></a>Para buscar texto en un intervalo de hoja de cálculo
-
-1. Declare las variables para el seguimiento de todo el rango, el primer intervalo se encuentra y el intervalo actual se encuentra.
+1. Declare las variables para realizar el seguimiento de todo el intervalo, el primer intervalo encontrado y el intervalo encontrado actual.
 
     [!code-csharp[Trin_VstcoreExcelAutomation#58](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#58)]
     [!code-vb[Trin_VstcoreExcelAutomation#58](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#58)]
 
-2. Busque la primera coincidencia, especificando todos los parámetros excepto la celda que se va a buscar después.
+2. Busque la primera coincidencia, especificando todos los parámetros excepto la celda en la que se va a buscar.
 
     [!code-csharp[Trin_VstcoreExcelAutomation#59](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#59)]
     [!code-vb[Trin_VstcoreExcelAutomation#59](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#59)]
 
-3. Continuar la búsqueda siempre y cuando no hay coincidencia.
+3. Siga buscando en el tiempo que haya coincidencias.
 
     [!code-csharp[Trin_VstcoreExcelAutomation#60](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#60)]
     [!code-vb[Trin_VstcoreExcelAutomation#60](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#60)]
 
-4. Compare el primer rango encontrado (`firstFind`) a **nada**. Si `firstFind` no contiene ningún valor, los almacenes de código fuera del intervalo se encuentra (`currentFind`).
+4. Compare el primer intervalo encontrado (`firstFind`) en **Nothing**. Si `firstFind` no contiene ningún valor, el código almacena el intervalo encontrado (`currentFind`).
 
     [!code-csharp[Trin_VstcoreExcelAutomation#61](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#61)]
     [!code-vb[Trin_VstcoreExcelAutomation#61](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#61)]
 
-5. Salir del bucle si la dirección del rango encontrado coincide con la dirección del primer intervalo se encuentra.
+5. Salga del bucle si la dirección del intervalo encontrado coincide con la dirección del primer intervalo encontrado.
 
     [!code-csharp[Trin_VstcoreExcelAutomation#62](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#62)]
     [!code-vb[Trin_VstcoreExcelAutomation#62](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#62)]
 
-6. Establecer el aspecto del rango encontrado.
+6. Establece la apariencia del intervalo encontrado.
 
     [!code-csharp[Trin_VstcoreExcelAutomation#63](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#63)]
     [!code-vb[Trin_VstcoreExcelAutomation#63](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#63)]
 
-7. Realizar otra búsqueda.
+7. Realice otra búsqueda.
 
     [!code-csharp[Trin_VstcoreExcelAutomation#64](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#64)]
     [!code-vb[Trin_VstcoreExcelAutomation#64](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#64)]
@@ -78,6 +76,6 @@ ms.locfileid: "63419547"
 
 ## <a name="see-also"></a>Vea también
 - [Trabajar con rangos](../vsto/working-with-ranges.md)
-- [Cómo: Aplicar estilos a rangos de libros mediante programación](../vsto/how-to-programmatically-apply-styles-to-ranges-in-workbooks.md)
-- [Cómo: Mediante programación hacen referencia a rangos de hoja de cálculo en el código](../vsto/how-to-programmatically-refer-to-worksheet-ranges-in-code.md)
+- [Cómo: aplicar estilos a rangos de libros mediante programación](../vsto/how-to-programmatically-apply-styles-to-ranges-in-workbooks.md)
+- [Cómo: hacer referencia a rangos de hojas de cálculo en el código mediante programación](../vsto/how-to-programmatically-refer-to-worksheet-ranges-in-code.md)
 - [Parámetros opcionales en las soluciones de Office](../vsto/optional-parameters-in-office-solutions.md)
