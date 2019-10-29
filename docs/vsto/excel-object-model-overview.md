@@ -19,12 +19,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 6d7371880c739e242bcdd70fb2bb9ac0cd92677b
-ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
+ms.openlocfilehash: 29ede9dd29952e87e7f1dd76875905973bada6a6
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69551587"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72986089"
 ---
 # <a name="excel-object-model-overview"></a>Información general del modelo de objetos de Excel
   Para desarrollar soluciones que usen Microsoft Office Excel, puede interactuar con los objetos proporcionados por el modelo de objetos de Excel. Este tema presenta los objetos más importantes:
@@ -47,8 +47,6 @@ ms.locfileid: "69551587"
 
   En este tema se proporciona una breve introducción del modelo de objetos de Excel. Para obtener más información sobre el modelo de objetos de Excel completo, vea [usar la documentación del modelo de objetos de Excel](#ExcelOMDocumentation).
 
-  ![vínculo a vídeo](../vsto/media/playvideo.gif "vínculo a vídeo") Para ver una demostración en vídeo relacionada, vea [cómo: ¿Usar controladores de eventos en un complemento de Excel 2007? ](http://go.microsoft.com/fwlink/?LinkID=130291) y[cómo: ¿Usar formas para crear un gráfico de burbujas en Excel? ](http://go.microsoft.com/fwlink/?LinkID=130313).
-
 ## <a name="access-objects-in-an-excel-project"></a>Obtener acceso a objetos en un proyecto de Excel
  Al crear un nuevo proyecto de complemento de VSTO para Excel, Visual Studio crea automáticamente un archivo de código *ThisAddIn. VB* o *ThisAddIn.CS* . Puede obtener acceso al objeto Application mediante `Me.Application` o `this.Application`.
 
@@ -61,14 +59,14 @@ ms.locfileid: "69551587"
 |Sheet2.vb|Sheet2.cs|
 |Sheet3.vb|Sheet3.cs|
 
- Puede utilizar la clase `Globals` en el proyecto para tener acceso a `ThisWorkbook`, `Sheet1`, `Sheet2` o `Sheet3` desde fuera de la clase correspondiente. Para obtener más información, consulte [acceso global a objetos en los proyectos de Office](../vsto/global-access-to-objects-in-office-projects.md). En el ejemplo siguiente se <xref:Microsoft.Office.Interop.Excel._Worksheet.PrintPreview%2A> llama al `Sheet1` método de independientemente de si el código se coloca en una `Sheet`de las clases *n* o en la `ThisWorkbook` clase.
+ Puede utilizar la clase `Globals` en el proyecto para tener acceso a `ThisWorkbook`, `Sheet1`, `Sheet2` o `Sheet3` desde fuera de la clase correspondiente. Para obtener más información, consulte [acceso global a objetos en los proyectos de Office](../vsto/global-access-to-objects-in-office-projects.md). En el ejemplo siguiente se llama al método <xref:Microsoft.Office.Interop.Excel._Worksheet.PrintPreview%2A> de `Sheet1` independientemente de si el código se coloca en una de las clases `Sheet`*n* o en la clase `ThisWorkbook`.
 
  [!code-csharp[Trin_VstcoreExcelAutomation#82](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#82)]
  [!code-vb[Trin_VstcoreExcelAutomation#82](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#82)]
 
  Puesto que los datos de un documento de Excel están muy estructurados, el modelo de objetos es jerárquico y sencillo. Excel proporciona centenares de objetos con los que es posible que desee interactuar, pero puede empezar a trabajar en el modelo de objetos centrándose en un pequeño subconjunto de los objetos disponibles. Entre estos objetos están los cuatro siguientes:
 
-- Application
+- Administración de
 
 - Libro
 
@@ -105,18 +103,18 @@ ms.locfileid: "69551587"
  Para obtener información completa sobre el modelo de objetos de Excel, puede consultar la referencia del ensamblado de interoperabilidad primario (PIA) de Excel y la referencia del modelo de objetos VBA.
 
 ### <a name="primary-interop-assembly-reference"></a>Referencia de ensamblado de interoperabilidad primario
- La documentación de referencia de los PIA de Excel describe los tipos Del ensamblado de interoperabilidad primario para Excel. Esta documentación está disponible en la siguiente ubicación: Referencia de ensamblado de interoperabilidad [primario de Excel 2010](http://go.microsoft.com/fwlink/?LinkId=189585).
+ La documentación de referencia de los PIA de Excel describe los tipos Del ensamblado de interoperabilidad primario para Excel. Esta documentación está disponible en la siguiente ubicación: [referencia de ensamblado de interoperabilidad primario de Excel 2010](/visualstudio/vsto/office-primary-interop-assemblies&view=vs-2019).
 
- Para obtener más información sobre el diseño del PIA de Excel, como las diferencias entre las clases y las interfaces en el PIA y cómo se implementan los eventos en el PIA, consulte [información general de las clases e interfaces de los ensamblados](http://go.microsoft.com/fwlink/?LinkId=189592)de interoperabilidad primarios de Office.
+ Para obtener más información sobre el diseño del PIA de Excel, como las diferencias entre las clases y las interfaces en el PIA y cómo se implementan los eventos en el PIA, consulte [información general de las clases e interfaces de los ensamblados de interoperabilidad primarios de Office](/previous-versions/office/office-12/ms247299(v=office.12)).
 
 ### <a name="vba-object-model-reference"></a>Referencia del modelo de objetos de VBA
- La referencia del modelo de objetos de VBA documenta el modelo de objetos de Excel tal como se expone al código de Visual Basic para Aplicaciones (VBA). Para obtener más información, vea [Referencia del modelo de objetos de Excel 2010](http://go.microsoft.com/fwlink/?LinkId=199768).
+ La referencia del modelo de objetos de VBA documenta el modelo de objetos de Excel tal como se expone al código de Visual Basic para Aplicaciones (VBA). Para obtener más información, vea [Referencia del modelo de objetos de Excel 2010](/office/vba/api/overview/Excel/object-model).
 
- Todos los objetos y miembros de la referencia del modelo de objetos de VBA corresponden a tipos y miembros del PIA de Excel. Por ejemplo, el objeto de hoja de cálculo de la referencia del modelo de <xref:Microsoft.Office.Interop.Excel.Worksheet> objetos VBA corresponde al objeto del Pia de Excel. Aunque la referencia del modelo de objetos VBA proporciona ejemplos de código para la mayoría de las propiedades, métodos y eventos, debe traducir el código VBA de esta referencia a Visual Basic o Visual C# si quiere usarlo en un proyecto de Excel creado con Visual Studio.
+ Todos los objetos y miembros de la referencia del modelo de objetos de VBA corresponden a tipos y miembros del PIA de Excel. Por ejemplo, el objeto de hoja de cálculo de la referencia del modelo de objetos VBA corresponde al objeto <xref:Microsoft.Office.Interop.Excel.Worksheet> del PIA de Excel. Aunque la referencia del modelo de objetos VBA proporciona ejemplos de código para la mayoría de las propiedades, métodos y eventos, debe traducir el código VBA de esta referencia a Visual Basic o Visual C# si quiere usarlo en un proyecto de Excel creado con Visual Studio.
 
 ### <a name="related-topics"></a>Temas relacionados
 
-|Título|DESCRIPCIÓN|
+|Title|Descripción|
 |-----------|-----------------|
 |[Soluciones de Excel](../vsto/excel-solutions.md)|Explica cómo crear personalizaciones de nivel de documento y complementos de VSTO para Microsoft Office Excel.|
 |[Trabajar con rangos](../vsto/working-with-ranges.md)|Proporciona ejemplos que muestran cómo realizar tareas habituales con rangos.|

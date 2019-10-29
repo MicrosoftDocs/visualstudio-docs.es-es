@@ -14,12 +14,12 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 41bffbc248d9004248a3552f335dccefaba72cca
-ms.sourcegitcommit: 90c3187d804ad7544367829d07ed4b47d3f8a72d
+ms.openlocfilehash: 4803fbb0887deaf140836263ca82d772b29112f7
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/06/2019
-ms.locfileid: "68822159"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72981698"
 ---
 # <a name="visual-studio-sdk"></a>Visual Studio SDK
 El SDK de Visual Studio le ayuda a ampliar las características de Visual Studio o a integrar las nuevas características en Visual Studio. Puede distribuir sus extensiones a otros usuarios, así como al Visual Studio Marketplace. Estas son algunas de las formas en que se puede ampliar Visual Studio:
@@ -67,16 +67,16 @@ El SDK de Visual Studio le ayuda a ampliar las características de Visual Studio
 
  Puede encontrar más información en el [blog de VSX Arcana](https://blogs.msdn.microsoft.com/vsx/) y varios blogs escritos por MVP de Microsoft:
 
-- [Extensiones de Visual Studio favoritas](http://geekswithblogs.net/sdorman/archive/2014/10/05/favorite-visual-studio-extensions.aspx)
+- [Extensiones de Visual Studio favoritas](https://scottdorman.blog/2014/10/05/favorite-visual-studio-extensions/)
 
 - [Extensibilidad de Visual Studio](http://www.visualstudioextensibility.com/overview/vs/)
 
-- [Extender Visual Studio](http://blog.slaks.net/2013-10-18/extending-visual-studio-part-1-getting-started/)
+- [Extender Visual Studio](https://blog.slaks.net/2013-10-18/extending-visual-studio-part-1-getting-started/)
 
 ## <a name="see-also"></a>Vea también
 - [Crear una extensión con un comando de menú](../extensibility/creating-an-extension-with-a-menu-command.md)
-- [Procedimientos: Migración de proyectos de extensibilidad a Visual Studio 2017](../extensibility/how-to-migrate-extensibility-projects-to-visual-studio-2017.md)
-- [Preguntas más frecuentes: Convertir complementos en extensiones de VSPackage](../extensibility/faq-converting-add-ins-to-vspackage-extensions.md)
+- [Cómo: migrar proyectos de extensibilidad a Visual Studio 2017](../extensibility/how-to-migrate-extensibility-projects-to-visual-studio-2017.md)
+- [Preguntas más frecuentes: convertir complementos en extensiones de VSPackage](../extensibility/faq-converting-add-ins-to-vspackage-extensions.md)
 - [Administrar varios subprocesos en código administrado](../extensibility/managing-multiple-threads-in-managed-code.md)
 - [Extender menús y comandos](../extensibility/extending-menus-and-commands.md)
 - [Agregar comandos a las barras de herramientas](../extensibility/adding-commands-to-toolbars.md)

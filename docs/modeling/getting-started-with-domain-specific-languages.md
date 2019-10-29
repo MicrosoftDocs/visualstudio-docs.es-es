@@ -7,12 +7,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cfdd1e1eb040960032cc04f8c47f3f28e929b678
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: c86383ddc833a6b76affa451f21180ed4941ad14
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72667296"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72985051"
 ---
 # <a name="get-started-with-domain-specific-languages"></a>Introducción a los lenguajes específicos de dominio
 
@@ -21,7 +21,7 @@ En este tema se explican los conceptos básicos de la definición y el uso de un
 > [!NOTE]
 > El SDK de transformación de plantillas de texto y el SDK de modelado de Visual Studio se instalan automáticamente al instalar características específicas de Visual Studio. Para obtener más información, consulte [esta entrada de blog](https://devblogs.microsoft.com/devops/the-visual-studio-modeling-sdk-is-now-available-with-visual-studio-2017/).
 
-Si no está familiarizado con los DSL, se recomienda que trabaje en el **laboratorio de herramientas de DSL**, que puede encontrar en este sitio: SDK de [visualización y modelado](http://go.microsoft.com/fwlink/?LinkID=186128)
+Si no está familiarizado con los DSL, se recomienda que trabaje en el **laboratorio de herramientas de DSL**, que puede encontrar en este sitio: SDK de [visualización y modelado](https://code.msdn.microsoft.com/Visualization-and-Modeling-313535db)
 
 ## <a name="what-can-you-do-with-a-domain-specific-language"></a>¿Qué puede hacer con un lenguaje específico de dominio?
 
@@ -43,8 +43,8 @@ Para definir un DSL, debe tener instalados los siguientes componentes:
 
 | | |
 |-|-|
-| Programa para la mejora | [http://go.microsoft.com/fwlink/?LinkId=185579](http://go.microsoft.com/fwlink/?LinkId=185579) |
-| [!INCLUDE[vssdk_current_short](../modeling/includes/vssdk_current_short_md.md)] | [http://go.microsoft.com/fwlink/?LinkId=185580](http://go.microsoft.com/fwlink/?LinkId=185580) |
+| Programa para la mejora | [http://go.microsoft.com/fwlink/?LinkId=185579](https://visualstudio.microsoft.com/) |
+| [!INCLUDE[vssdk_current_short](../modeling/includes/vssdk_current_short_md.md)] | [http://go.microsoft.com/fwlink/?LinkId=185580](/azure/devops/integrate/index) |
 | SDK de modelado para Visual Studio | |
 
 [!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]

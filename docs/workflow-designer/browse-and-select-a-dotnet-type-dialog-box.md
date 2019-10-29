@@ -11,12 +11,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: dfdbe972034920869908c1bac1cb349c98d96d3f
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 2efea8f23e42b9f4839c8a1ae0d74248738b9cf4
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72650723"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72985350"
 ---
 # <a name="browse-and-select-a-net-type-dialog-box"></a>Examinar y seleccionar un cuadro de diálogo de tipo .NET
 
@@ -31,7 +31,7 @@ Este cuadro de diálogo se emplea en varios escenarios de usuario, lo cual inclu
 - Cuando se agrega una instrucción catch en la actividad <xref:System.Activities.Statements.TryCatch>.
 
 > [!NOTE]
-> El explorador de tipo puede mostrar tipos de matrices escalonadas Visual Basic de matriz, pero no tipos de matrices multidimensionales. Vea [matrices escalonadas](http://go.microsoft.com/fwlink/?LinkId=195226) y [matrices multidimensionales](http://go.microsoft.com/fwlink/?LinkId=195227) para obtener más información.
+> El explorador de tipo puede mostrar tipos de matrices escalonadas Visual Basic de matriz, pero no tipos de matrices multidimensionales. Vea [matrices escalonadas](/previous-versions/visualstudio/visual-studio-2008/hkhhsz9t(v=vs.90)) y [matrices multidimensionales](/previous-versions/visualstudio/visual-studio-2008/d2de1t93(v=vs.90)) para obtener más información.
 
 ## <a name="selecting-a-value-or-reference-type-from-the-type-browser"></a>Seleccionar un tipo de valor y de referencia en el explorador de tipo
 

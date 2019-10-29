@@ -13,18 +13,18 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5cc42a5346498c04f759956b2ca00094ac1df119
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: aac250053f90d99e7db27a9862d2dc1b33fadbfb
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72718727"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72983038"
 ---
 # <a name="the-structure-of-the-content_typesxml-file"></a>Estructura del archivo [Content_types].xml
 Contiene información sobre los tipos de contenido de un paquete VSIX. Visual Studio usa el archivo [Content_Types]. XML para instalar el paquete, pero no instala el propio archivo.
 
 > [!NOTE]
-> Aunque este tema se aplica solo a los archivos [Content_Type]. XML que se usan en los paquetes VSIX, el tipo de archivo [Content_Types]. XML forma parte del estándar de *convenciones de empaquetado abierto (OPC)* . Para obtener más información, consulte [OPC: un nuevo estándar para empaquetar los datos](http://go.microsoft.com/fwlink/?LinkID=148207) en el sitio web de MSDN.
+> Aunque este tema se aplica solo a los archivos [Content_Type]. XML que se usan en los paquetes VSIX, el tipo de archivo [Content_Types]. XML forma parte del estándar de *convenciones de empaquetado abierto (OPC)* . Para obtener más información, consulte [OPC: un nuevo estándar para empaquetar los datos](https://msdn.microsoft.com/magazine/cc163372.aspx) en el sitio web de MSDN.
 
 ## <a name="attributes-and-elements"></a>Atributos y elementos
  En las secciones siguientes se describe el elemento raíz y sus atributos y elementos secundarios.
@@ -102,4 +102,4 @@ Contiene información sobre los tipos de contenido de un paquete VSIX. Visual St
 ## <a name="see-also"></a>Vea también
 - [Anatomía de un paquete VSIX](../extensibility/anatomy-of-a-vsix-package.md)
 - [Referencia del esquema de extensión VSIX 1,0](https://msdn.microsoft.com/library/76e410ec-b1fb-4652-ac98-4a4c52e09a2b)
-- [OPC: un nuevo estándar para empaquetar los datos](http://go.microsoft.com/fwlink/?LinkID=148207)
+- [OPC: un nuevo estándar para empaquetar los datos](https://msdn.microsoft.com/magazine/cc163372.aspx)

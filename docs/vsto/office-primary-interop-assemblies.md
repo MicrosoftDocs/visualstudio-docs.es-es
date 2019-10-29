@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 6a709a59e85f65cf2e0caa0551610dd496bedda5
-ms.sourcegitcommit: 689ba54ea14257d13031de881f5d4fe937a36f56
+ms.openlocfilehash: f4677cd2d178781d79b11ac3b1010a76fd6fcf00
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "71342501"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72985711"
 ---
 # <a name="office-primary-interop-assemblies"></a>ensamblados de interoperabilidad primarios de Office
 
@@ -63,10 +63,10 @@ A partir de Visual Studio 2017, estas copias de los PIA se instalan en las sigui
 
 - `%ProgramFiles%\Microsoft Visual Studio\Shared\Visual Studio Tools for Office\PIA\`
 
-- (o `%ProgramFiles(x86)%\Microsoft Visual Studio\Shared\Visual Studio Tools for Office\PIA\` en los sistemas operativos de 64 bits)
+- (o `%ProgramFiles(x86)%\Microsoft Visual Studio\Shared\Visual Studio Tools for Office\PIA\` en sistemas operativos de 64 bits)
 
 > [!NOTE]
-> En el caso de las versiones anteriores de Visual Studio, estos Pia se instalarán en la carpeta Visual Studio Tools for Office\PIA en la carpeta `%ProgramFiles%` para esa versión de Visual Studio.
+> En el caso de las versiones anteriores de Visual Studio, estos Pia se instalarán en la carpeta Visual Studio Tools para Office\PIA en la carpeta `%ProgramFiles%` de esa versión de Visual Studio.
 > Por ejemplo: `%ProgramFiles(x86)%\Microsoft Visual Studio 14.0\Visual Studio Tools for Office\PIA\`
 
 ### <a name="primary-interop-assemblies-in-the-global-assembly-cache"></a>Ensamblados de interoperabilidad primarios en la caché global de ensamblados
@@ -81,18 +81,18 @@ Los PIA de Office no son obligatorios en los equipos de los usuarios finales par
 
 Cada plantilla de proyecto de Office en Visual Studio está diseñada para funcionar con una sola aplicación de Microsoft Office. Para usar características de varias aplicaciones de Microsoft Office o para usar características de una aplicación o un componente que no tenga un proyecto en Visual Studio, debe agregar una referencia a los PIA necesarios.
 
-En la mayoría de los casos, debe agregar referencias a los PIA que instala Visual Studio en el `%ProgramFiles(x86)%\Microsoft Visual Studio\Shared\Visual Studio Tools for Office\PIA\` directorio. Estas versiones de los ensamblados aparecen en la pestaña **marco** del cuadro de diálogo **Administrador de referencias** . Para obtener más información, vea [Cómo: Aplicaciones de Office de destino a través](../vsto/how-to-target-office-applications-through-primary-interop-assemblies.md)de ensamblados de interoperabilidad primarios
+En la mayoría de los casos, debe agregar referencias a los PIA que instala Visual Studio en el directorio de `%ProgramFiles(x86)%\Microsoft Visual Studio\Shared\Visual Studio Tools for Office\PIA\`. Estas versiones de los ensamblados aparecen en la pestaña **marco** del cuadro de diálogo **Administrador de referencias** . Para obtener más información, vea [Cómo: establecer como destino aplicaciones de Office a través de ensamblados de interoperabilidad primarios](../vsto/how-to-target-office-applications-through-primary-interop-assemblies.md).
 
 Si ha instalado y registrado los PIA en la caché global de ensamblados, estas versiones de los ensamblados aparecen en la pestaña **COM** del cuadro de diálogo **Administrador de referencias** . Debe evitar agregar referencias a estas versiones de los ensamblados, puesto que se pueden producir algunos problemas de desarrollo al usarlas. Por ejemplo, si ha registrado distintas versiones de los PIA en la caché global de ensamblados, el proyecto se enlazará automáticamente a la última versión del ensamblado que se registró, aunque especifique una versión distinta en la pestaña **COM** del cuadro de diálogo **Administrador de referencias** .
 
 > [!NOTE]
-> Algunos ensamblados se agregan a un proyecto automáticamente cuando se agrega un ensamblado que hace referencia a ellos. Por ejemplo, las referencias a los ensamblados `Office.dll` y `Microsoft.Vbe.Interop.dll` se agregan automáticamente al agregar una referencia a los ensamblados de Word, Excel, Outlook, Microsoft Forms o Graph.
+> Algunos ensamblados se agregan a un proyecto automáticamente cuando se agrega un ensamblado que hace referencia a ellos. Por ejemplo, las referencias a los ensamblados de `Office.dll` y `Microsoft.Vbe.Interop.dll` se agregan automáticamente al agregar una referencia a los ensamblados de Word, Excel, Outlook, Microsoft Forms o Graph.
 
 <a name="pialist"></a>
 
 ## <a name="primary-interop-assemblies-for-microsoft-office-applications"></a>Ensamblados de interoperabilidad primarios para aplicaciones Microsoft Office
 
-En la tabla siguiente se enumeran los ensamblados de interoperabilidad [!INCLUDE[office14_long](../vsto/includes/office14-long-md.md)]primarios disponibles para [!INCLUDE[Office_16_short](../vsto/includes/office-16-short-md.md)] [!INCLUDE[Office_15_short](../vsto/includes/office-15-short-md.md)] y.
+En la tabla siguiente se enumeran los ensamblados de interoperabilidad primarios que están disponibles para [!INCLUDE[Office_16_short](../vsto/includes/office-16-short-md.md)], [!INCLUDE[Office_15_short](../vsto/includes/office-15-short-md.md)] y [!INCLUDE[office14_long](../vsto/includes/office14-long-md.md)].
 
 <br/>
 
@@ -100,23 +100,23 @@ En la tabla siguiente se enumeran los ensamblados de interoperabilidad [!INCLUDE
 |-------------------------------------|-----------------------------------|
 |Biblioteca de objetos de Microsoft Access 14.0<br /><br /> Biblioteca de objetos de Microsoft Access 15.0|Microsoft.Office.Interop.Access.dll|
 |Biblioteca de objetos del motor de base de datos de Access de Microsoft Office 14.0<br /><br /> Biblioteca de objetos del motor de base de datos de Access de Microsoft Office 15.0|Microsoft.Office.Interop.Access.Dao.dll|
-|Biblioteca de objetos de Microsoft Excel 14.0<br /><br /> Biblioteca de objetos de Microsoft Excel 15.0|[Microsoft.Office.Interop.Excel.dll](https://docs.microsoft.com/dotnet/api/microsoft.office.interop.excel?view=excel-pia)|
+|Biblioteca de objetos de Microsoft Excel 14.0<br /><br /> Biblioteca de objetos de Microsoft Excel 15.0|[Microsoft. Office. Interop. Excel. dll](/dotnet/api/microsoft.office.interop.excel?view=excel-pia)|
 |Biblioteca de objetos de Microsoft Graph 14.0 (usada por PowerPoint, Access y Word para gráficos)<br /><br /> Biblioteca de objetos de Microsoft Graph 15.0|Microsoft.Office.Interop.Graph.dll|
-|Biblioteca de tipos de Microsoft InfoPath 2.0 (solo para InfoPath 2007)|[Microsoft.Office.Interop.InfoPath.dll](https://docs.microsoft.com/dotnet/api/microsoft.office.interop.infopath?view=infopath-form)|
+|Biblioteca de tipos de Microsoft InfoPath 2.0 (solo para InfoPath 2007)|[Microsoft. Office. Interop. InfoPath. dll](/dotnet/api/microsoft.office.interop.infopath?view=infopath-form)|
 |Ensamblado de interoperabilidad XML de Microsoft InfoPath (solo para InfoPath 2007)|Microsoft.Office.Interop.InfoPath.Xml.dll|
 |Biblioteca de objetos de Microsoft Office 14.0 (funcionalidad compartida de Office)<br /><br /> Biblioteca de objetos de Microsoft Office 15.0 (funcionalidad compartida de Office)|office.dll|
 |Control de vistas de Microsoft Office Outlook (se puede usar en páginas web y aplicaciones para tener acceso a la Bandeja de entrada)|Microsoft.Office.Interop.OutlookViewCtl.dll|
-|Biblioteca de objetos de Microsoft Outlook 14.0<br /><br /> Biblioteca de objetos de Microsoft Outlook 15.0|[Microsoft.Office.Interop.Outlook.dll](https://docs.microsoft.com/dotnet/api/microsoft.office.interop.outlook?view=outlook-pia)|
+|Biblioteca de objetos de Microsoft Outlook 14.0<br /><br /> Biblioteca de objetos de Microsoft Outlook 15.0|[Microsoft. Office. Interop. Outlook. dll](/dotnet/api/microsoft.office.interop.outlook?view=outlook-pia)|
 |Biblioteca de objetos de Microsoft PowerPoint 14.0<br /><br /> Biblioteca de objetos de Microsoft PowerPoint 15.0|Microsoft.Office.Interop.PowerPoint.dll|
-|Biblioteca de objetos de Microsoft Project 14.0<br /><br /> Biblioteca de objetos de Microsoft Project 15.0|[Microsoft.Office.Interop.MSProject.dll](https://docs.microsoft.com/dotnet/api/microsoft.office.interop.msproject?view=office-project-server)|
+|Biblioteca de objetos de Microsoft Project 14.0<br /><br /> Biblioteca de objetos de Microsoft Project 15.0|[Microsoft. Office. Interop. MSProject. dll](/dotnet/api/microsoft.office.interop.msproject?view=office-project-server)|
 |Biblioteca de objetos de Microsoft Publisher 14.0<br /><br /> Biblioteca de objetos de Microsoft Publisher 15.0|Microsoft.Office.Interop.Publisher.dll|
 |Biblioteca de referencia de objetos web de Microsoft SharePoint Designer 14.0|Microsoft.Office.Interop.SharePointDesigner.dll|
 |Biblioteca de referencia de objetos de página de Microsoft SharePoint Designer 14.0|Microsoft.Office.Interop.SharePointDesignerPage.dll|
-|Biblioteca de tipos de Microsoft Smart Tags 2,0 **Nota:**  Las etiquetas inteligentes están desusadas en [!INCLUDE[Excel_14_short](../vsto/includes/excel-14-short-md.md)] y [!INCLUDE[Word_14_short](../vsto/includes/word-14-short-md.md)].|Microsoft.Office.Interop.SmartTag.dll|
+|Biblioteca de tipos de Microsoft Smart Tags 2,0 **Nota:** las etiquetas inteligentes están en desuso en [!INCLUDE[Excel_14_short](../vsto/includes/excel-14-short-md.md)] y [!INCLUDE[Word_14_short](../vsto/includes/word-14-short-md.md)].|Microsoft.Office.Interop.SmartTag.dll|
 |Biblioteca de tipos de Microsoft Visio 14.0<br /><br /> Biblioteca de tipos de Microsoft Visio 15.0|Microsoft.Office.Interop.Visio.dll|
 |Biblioteca de tipos Guardar como web de Microsoft Visio 14.0<br /><br /> Biblioteca de tipos Guardar como web de Microsoft Visio 15.0|Microsoft.Office.Interop.Visio.SaveAsWeb.dll|
 |Biblioteca de tipos de control de dibujo de Microsoft Visio 14.0<br /><br /> Biblioteca de tipos de control de dibujo de Microsoft Visio 15.0|Microsoft.Office.Interop.VisOcx.dll|
-|Biblioteca de objetos de Microsoft Word 14.0<br /><br /> Biblioteca de objetos de Microsoft Word 15.0|[Microsoft.Office.Interop.Word.dll](https://docs.microsoft.com/dotnet/api/microsoft.office.interop.word?view=word-pia)|
+|Biblioteca de objetos de Microsoft Word 14.0<br /><br /> Biblioteca de objetos de Microsoft Word 15.0|[Microsoft. Office. Interop. Word. dll](/dotnet/api/microsoft.office.interop.word?view=word-pia)|
 |Extensibilidad de Microsoft Visual Basic para Aplicaciones 5.3|Microsoft.Vbe.Interop.dll|
 
 ### <a name="binding-redirect-assemblies"></a>Enlazar ensamblados de redirección
@@ -125,11 +125,11 @@ Al instalar y registrar los PIA de Office en la caché global de ensamblados (co
 
 Por ejemplo, cuando una solución que hace referencia a un ensamblado de [!INCLUDE[office14_long](../vsto/includes/office14-long-md.md)] se ejecuta en un equipo con la versión de [!INCLUDE[Office_15_short](../vsto/includes/office-15-short-md.md)] del ensamblado de interoperabilidad primario, el ensamblado de redirección de enlace indica al tiempo de ejecución de [!INCLUDE[dnprdnshort](../sharepoint/includes/dnprdnshort-md.md)] que cargue la versión de [!INCLUDE[Office_15_short](../vsto/includes/office-15-short-md.md)] del ensamblado de interoperabilidad primario.
 
-Para obtener más información, vea [Cómo: Habilitar y deshabilitar la redirección](/dotnet/framework/configure-apps/how-to-enable-and-disable-automatic-binding-redirection)de enlace automática.
+Para obtener más información, vea [Cómo: habilitar y deshabilitar la redirección de enlace automática](/dotnet/framework/configure-apps/how-to-enable-and-disable-automatic-binding-redirection).
 
 ## <a name="see-also"></a>Vea también
 
-- [Cómo: Aplicaciones de Office de destino a través de ensamblados de interoperabilidad principales](../vsto/how-to-target-office-applications-through-primary-interop-assemblies.md)
+- [Cómo: dirigirse a aplicaciones de Office a través de ensamblados de interoperabilidad primarios](../vsto/how-to-target-office-applications-through-primary-interop-assemblies.md)
 - [Información general del modelo de objetos de Excel](../vsto/excel-object-model-overview.md)
 - [Soluciones de InfoPath](../vsto/infopath-solutions.md)
 - [Información general del modelo de objetos de Outlook](../vsto/outlook-object-model-overview.md)

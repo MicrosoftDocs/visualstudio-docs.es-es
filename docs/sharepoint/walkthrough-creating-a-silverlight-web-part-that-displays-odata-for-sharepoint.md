@@ -12,15 +12,15 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 859944c51be0abf2e6a326a06a5e4432a69ee4ee
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: bd2e42f48a6881b533a2f098e47ac92511b85aa3
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72655921"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72984826"
 ---
 # <a name="walkthrough-create-a-silverlight-web-part-that-displays-odata-for-sharepoint"></a>Tutorial: crear un elemento Web de Silverlight que muestre OData para SharePoint
-  SharePoint 2010 expone sus datos de lista por medio de OData. En SharePoint, el servicio de OData se implementa mediante el servicio RESTful ListData. SVC. En este tutorial se muestra cómo crear un elemento Web de SharePoint que hospeda una aplicación de Silverlight. La aplicación de Silverlight muestra información de la lista de anuncios de SharePoint mediante ListData. SVC. Para obtener más información, vea [interfaz de REST de SharePoint Foundation](http://go.microsoft.com/fwlink/?LinkId=225999) y [Open Data Protocol](http://go.microsoft.com/fwlink/?LinkId=226000).
+  SharePoint 2010 expone sus datos de lista por medio de OData. En SharePoint, el servicio de OData se implementa mediante el servicio RESTful ListData. SVC. En este tutorial se muestra cómo crear un elemento Web de SharePoint que hospeda una aplicación de Silverlight. La aplicación de Silverlight muestra información de la lista de anuncios de SharePoint mediante ListData. SVC. Para obtener más información, vea [interfaz de REST de SharePoint Foundation](/previous-versions/office/developer/sharepoint-2010/ff521587(v=office.14)) y [Open Data Protocol](https://www.odata.org/).
 
  [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]
 
@@ -228,7 +228,7 @@ ms.locfileid: "72655921"
      El elemento Web de Silverlight debería mostrar ahora los datos del anuncio del sitio de SharePoint. De forma predeterminada, la página se almacena en la lista páginas del sitio de SharePoint.
 
     > [!NOTE]
-    > Al tener acceso a los datos de Silverlight entre dominios, Silverlight protege frente a las vulnerabilidades de seguridad que se pueden usar para aprovechar las aplicaciones Web. Si tiene problemas al obtener acceso a datos remotos en Silverlight, consulte [hacer que un servicio esté disponible a través](http://go.microsoft.com/fwlink/?LinkId=223276)de los límites del dominio.
+    > Al tener acceso a los datos de Silverlight entre dominios, Silverlight protege frente a las vulnerabilidades de seguridad que se pueden usar para aprovechar las aplicaciones Web. Si tiene problemas al obtener acceso a datos remotos en Silverlight, consulte [hacer que un servicio esté disponible a través](/previous-versions/windows/silverlight/dotnet-windows-silverlight/cc197955(v=vs.95))de los límites del dominio.
 
 ## <a name="see-also"></a>Vea también
 - [Crear elementos Web para SharePoint](../sharepoint/creating-web-parts-for-sharepoint.md)

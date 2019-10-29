@@ -1,5 +1,5 @@
 ---
-title: Procedimiento Agregar un método Finder específico | Documentos de Microsoft
+title: 'Cómo: agregar un método Finder específico | Microsoft Docs'
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -17,80 +17,80 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 8fdd467f2b3a06398198f6fd8452c6a548bf0872
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 732921b021d7887faf31dd3f602f5400c1d06a59
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63431268"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72985261"
 ---
-# <a name="how-to-add-a-specific-finder-method"></a>Procedimiento Agregar un método Finder específico
-  Puede devolver una instancia de entidad única mediante la creación de un *buscador específico* método. El servicio de conectividad de datos profesionales (BDC) ejecuta el método de buscador específico cuando un usuario elige una entidad en un elemento web de datos de negocio o una lista externa. Para obtener más información, consulte [diseñar un modelo de conectividad a datos empresariales](../sharepoint/designing-a-business-data-connectivity-model.md).
+# <a name="how-to-add-a-specific-finder-method"></a>Cómo: agregar un método Finder específico
+  Puede devolver una única instancia de entidad creando un método de *buscador específico* . El servicio de conectividad a datos profesionales (BDC) ejecuta el método de buscador específico cuando un usuario elige una entidad en un elemento Web de datos profesionales o en una lista externa. Para obtener más información, vea [diseñar un modelo de conectividad a datos profesionales](../sharepoint/designing-a-business-data-connectivity-model.md).
 
 ### <a name="to-create-a-specific-finder-method"></a>Para crear un método Finder específico
 
-1. En el **Diseñador de BDC**, elegir una entidad.
+1. En el **Diseñador de BDC**, elija una entidad.
 
-    Para obtener información sobre cómo agregar una entidad a la **Diseñador de BDC** en Visual Studio, vea [Cómo: Agregar una entidad a un modelo](../sharepoint/how-to-add-an-entity-to-a-model.md).
+    Para obtener información sobre cómo agregar una entidad al **Diseñador de BDC** en Visual Studio, vea [Cómo: agregar una entidad a un modelo](../sharepoint/how-to-add-an-entity-to-a-model.md).
 
-2. En la barra de menús, elija **vista** > **Other Windows**, **detalles del método de BDC**.
+2. En la barra de menús, elija **ver** > **otras ventanas**, **detalles del método BDC**.
 
-    El **detalles del método de BDC** abre la ventana. Para obtener más información acerca de esta ventana, consulte [información general de las herramientas de diseño del modelo BDC](../sharepoint/bdc-model-design-tools-overview.md).
+    Se abre la ventana **detalles del método de BDC** . Para obtener más información acerca de esa ventana, consulte [información general sobre las herramientas de diseño del modelo BDC](../sharepoint/bdc-model-design-tools-overview.md).
 
-3. En el **agregue un método** elija **crear método Finder específico**.
+3. En la lista **Agregar un método** , elija **crear método de buscador específico**.
 
-    Visual Studio agrega los siguientes elementos al modelo. Estos elementos aparecen en la **detalles del método de BDC** ventana.
+    Visual Studio agrega los siguientes elementos al modelo. Estos elementos aparecen en la ventana **detalles del método de BDC** .
 
    - Un método
 
-   - Un parámetro de entrada para el método.
+   - Parámetro de entrada para el método.
 
-   - Un parámetro de valor devuelto del método.
+   - Parámetro devuelto para el método.
 
    - Un descriptor de tipo para cada parámetro.
 
-   - Una instancia de método para el método.
+   - Instancia de método para el método.
 
-     Para obtener más información, consulte [diseñar un modelo de conectividad a datos empresariales](../sharepoint/designing-a-business-data-connectivity-model.md).
+     Para obtener más información, vea [diseñar un modelo de conectividad a datos profesionales](../sharepoint/designing-a-business-data-connectivity-model.md).
 
-4. Abra Visual Studio **propiedades** ventana.
+4. Abra la ventana **propiedades** de Visual Studio.
 
-5. Configure el descriptor de tipo del parámetro devuelto como un descriptor de tipo de entidad. Para obtener información sobre cómo crear un descriptor de tipo de entidad, vea [Cómo: Definir el descriptor de tipo de un parámetro](../sharepoint/how-to-define-the-type-descriptor-of-a-parameter.md).
-
-   > [!NOTE]
-   > No tiene que realizar este paso si ha agregado un método Finder para la entidad. Visual Studio utiliza el descriptor de tipos que definió en el método Finder.
+5. Configure el descriptor de tipo del parámetro devuelto como un descriptor de tipo de entidad. Para obtener información sobre cómo crear un descriptor de tipo de entidad, consulte [Cómo: definir el descriptor de tipo de un parámetro](../sharepoint/how-to-define-the-type-descriptor-of-a-parameter.md).
 
    > [!NOTE]
-   > Si el campo de identificador del tipo de entidad representa un campo en una tabla de base de datos que se genera automáticamente, establezca la **de sólo lectura** propiedad del campo de identificador a **True**.
+   > No tiene que realizar este paso si ha agregado un método Finder a la entidad. Visual Studio usa el descriptor de tipos que definió en el método Finder.
 
-6. En el **detalles del método** ventana, elija la instancia de método del método.
+   > [!NOTE]
+   > Si el campo identificador del tipo de entidad representa un campo de una tabla de base de datos que se genera automáticamente, establezca la propiedad de **solo lectura** del campo identificador en **true**.
 
-7. En el **ventana propiedades**, establezca el **devolver el nombre del parámetro** propiedad en el nombre del parámetro devuelto del método. Para obtener más información acerca de las propiedades de la instancia de método, consulte [MethodInstance](http://go.microsoft.com/fwlink/?LinkID=169282).
+6. En la ventana **detalles del método** , elija la instancia de método del método.
 
-8. En **el Explorador de soluciones**, abra el menú contextual del servicio archivo de código que se generó para la entidad y, a continuación, elija **ver código**.
+7. En la **ventana Propiedades**, establezca la propiedad **nombre del parámetro devuelto** en el nombre del parámetro devuelto del método. Para obtener más información sobre las propiedades de instancia de método, vea [MethodInstance](/previous-versions/office/developer/sharepoint-2010/ee556838(v=office.14)).
 
-    El archivo de código del servicio de entidad se abre en el Editor de código. Para obtener más información sobre el archivo de código del servicio de entidad, vea [crear un modelo de conectividad a datos empresariales](../sharepoint/creating-a-business-data-connectivity-model.md).
+8. En **Explorador de soluciones**, abra el menú contextual del archivo de código de servicio que se generó para la entidad y, a continuación, elija **Ver código**.
 
-9. Agregue código al método Finder específico. Este código realiza las tareas siguientes:
+    El archivo de código de Entity Service se abre en el editor de código. Para obtener más información sobre el archivo de código de Entity Service, vea [crear un modelo de conectividad a datos profesionales](../sharepoint/creating-a-business-data-connectivity-model.md).
+
+9. Agregue código al método de buscador específico. Este código realiza las tareas siguientes:
 
    - Recupera un registro de un origen de datos.
 
-   - Devuelve una entidad para el servicio BDC.
+   - Devuelve una entidad al servicio BDC.
 
      En el ejemplo siguiente se devuelve un contacto de la base de datos de ejemplo AdventureWorks para SQL Server.
 
      > [!NOTE]
-     > Reemplace el valor de la `ServerName` campo con el nombre del servidor.
+     > Reemplace el valor del campo `ServerName` por el nombre del servidor.
 
      [!code-csharp[SP_BDC#3](../sharepoint/codesnippet/CSharp/SP_BDC/bdcmodel1/contactservice.cs#3)]
      [!code-vb[SP_BDC#3](../sharepoint/codesnippet/VisualBasic/sp_bdc/bdcmodel1/contactservice.vb#3)]
 
 ## <a name="see-also"></a>Vea también
-- [Diseñar un modelo de conectividad a datos empresariales](../sharepoint/designing-a-business-data-connectivity-model.md)
-- [Cómo: Agregar un método Finder](../sharepoint/how-to-add-a-finder-method.md)
-- [Cómo: Agregar un método Creator](../sharepoint/how-to-add-a-creator-method.md)
-- [Cómo: Agregar un método Deleter](../sharepoint/how-to-add-a-deleter-method.md)
-- [Cómo: Agregar un método Updater](../sharepoint/how-to-add-an-updater-method.md)
-- [Introducción a las herramientas de diseño de modelo BDC](../sharepoint/bdc-model-design-tools-overview.md)
-- [Cómo: Agregar un parámetro a un método](../sharepoint/how-to-add-a-parameter-to-a-method.md)
-- [Cómo: Definir una instancia de método](../sharepoint/how-to-define-a-method-instance.md)
+- [Diseñar un modelo de conectividad a datos profesionales](../sharepoint/designing-a-business-data-connectivity-model.md)
+- [Cómo: agregar un método Finder](../sharepoint/how-to-add-a-finder-method.md)
+- [Cómo: agregar un método Creator](../sharepoint/how-to-add-a-creator-method.md)
+- [Cómo: agregar un método de eliminación](../sharepoint/how-to-add-a-deleter-method.md)
+- [Cómo: agregar un método Updater](../sharepoint/how-to-add-an-updater-method.md)
+- [Introducción a las herramientas de diseño del modelo BDC](../sharepoint/bdc-model-design-tools-overview.md)
+- [Cómo: agregar un parámetro a un método](../sharepoint/how-to-add-a-parameter-to-a-method.md)
+- [Cómo: definir una instancia de método](../sharepoint/how-to-define-a-method-instance.md)

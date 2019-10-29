@@ -17,12 +17,12 @@ caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 5bd96732a905d3fc0732ccfeaf2b65ada82957f4
-ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
+ms.openlocfilehash: 0f4bbcc694b24ffafd4333f635c7cdf0c67793a7
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "72577224"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72985336"
 ---
 # <a name="iactivescriptauthoraddtypelib"></a>IActiveScriptAuthor::AddTypeLib
 Agrega una biblioteca de tipos al espacio de nombres para el script.  
@@ -62,6 +62,6 @@ HRESULT AddTypeLib(
  Este método llama a `LoadTypeLib` para cargar la biblioteca de tipos. Cuando se realiza correctamente, este método llama a `IActiveScriptAuthor::AddNamedItem` para agregar información de tipo.  
   
 ## <a name="see-also"></a>Vea también  
- @No__t_1 de la [interfaz iactivescriptauthor (](../../winscript/reference/iactivescriptauthor-interface.md)  
+   de la [interfaz iactivescriptauthor (](../../winscript/reference/iactivescriptauthor-interface.md)  
  [Iactivescriptauthor (:: AddNamedItem](../../winscript/reference/iactivescriptauthor-addnameditem.md)    
- [LoadTypeLib](https://docs.microsoft.com/previous-versions/windows/desktop/api/oleauto/nf-oleauto-loadtypelib)
+ [LoadTypeLib](/previous-versions/windows/desktop/api/oleauto/nf-oleauto-loadtypelib)

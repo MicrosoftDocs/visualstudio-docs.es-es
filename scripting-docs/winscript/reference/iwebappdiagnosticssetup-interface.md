@@ -1,5 +1,5 @@
 ---
-title: IWebAppDiagnosticsSetup (interfaz) | Documentos de Microsoft
+title: Interfaz Iwebappdiagnosticssetup (| Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -13,23 +13,23 @@ caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 71d4501fff04b62abe392c6684a4a0551dea9ee8
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 1e9bb3905da6227b978bc27b96493500f8d6d2ff
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63443665"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72984542"
 ---
 # <a name="iwebappdiagnosticssetup-interface"></a>IWebAppDiagnosticsSetup (Interfaz)
-Esta interfaz se implementa mediante una aplicación de depuración PDM para crear objetos COM en el proceso que se está depurando y habilitar los diagnósticos de web. Si el PDM depurar aplicación objeto implementa [IObjectWithSite](http://go.microsoft.com/fwlink/?LinkId=232438), Internet Explorer llama [SetSite](http://go.microsoft.com/fwlink/?LinkId=232439) en ella una vez que se ha creado y pasa una referencia a [IWebBrowser2](http://go.microsoft.com/fwlink/?LinkId=232449). Llama una aplicación WWA [SetSite](http://go.microsoft.com/fwlink/?LinkId=232439) y pasa el WWA interfaz IWebApplicationHost en su lugar. Si [SetSite](http://go.microsoft.com/fwlink/?LinkId=232439) ha sido llamado con un valor distinto de NULL, [IWebAppDiagnosticsSetup::DiagnosticsSupported](../../winscript/reference/iwebappdiagnosticssetup-diagnosticssupported.md) devuelve true. Si no, devuelve false y las llamadas a [IWebAppDiagnosticsSetup::CreateObjectWithSiteAtWebApp](../../winscript/reference/iwebappdiagnosticssetup-createobjectwithsiteatwebapp.md) producirá un error.  
+Esta interfaz se implementa mediante una aplicación de depuración de PDM para crear objetos COM en el proceso que se está depurando y para habilitar diagnósticos Web. Si el objeto de aplicación de depuración de PDM implementa [IObjectWithSite](/windows/win32/api/ocidl/nn-ocidl-iobjectwithsite), Internet Explorer llama a [SetSite](/windows/win32/api/ocidl/nf-ocidl-iobjectwithsite-setsite) en él una vez creado y pasa una referencia a [IWebBrowser2](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa752127(v=vs.85)). Una aplicación de WWA llama a [SetSite](/windows/win32/api/ocidl/nf-ocidl-iobjectwithsite-setsite) y pasa en la interfaz WWA IWebApplicationHost en su lugar. Si se ha llamado a [SetSite](/windows/win32/api/ocidl/nf-ocidl-iobjectwithsite-setsite) con un valor distinto de NULL, [Iwebappdiagnosticssetup (::D iagnosticssupported](../../winscript/reference/iwebappdiagnosticssetup-diagnosticssupported.md) devuelve true. Si no es así, devuelve false y se produce un error en las llamadas a [iwebappdiagnosticssetup (:: CreateObjectWithSiteAtWebApp](../../winscript/reference/iwebappdiagnosticssetup-createobjectwithsiteatwebapp.md) .  
   
 > [!IMPORTANT]
-> `IWebAppDiagnosticsSetup` se implementa mediante PDM v11.0 y versiones posteriores. Se encuentra en activdbg100.h.  
+> el `IWebAppDiagnosticsSetup` se implementa mediante PDM v 11.0 y versiones posteriores. Se encuentra en activdbg100.h.  
   
 ## <a name="methods"></a>Métodos  
  Esta interfaz expone los métodos siguientes.  
   
 |Método|Descripción|  
 |------------|-----------------|  
-|[IWebAppDiagnosticsSetup::CreateObjectWithSiteAtWebApp](../../winscript/reference/iwebappdiagnosticssetup-createobjectwithsiteatwebapp.md)|Obtiene los documentos de texto que están ocultos por el filtro especificado.|  
+|[IWebAppDiagnosticsSetup::CreateObjectWithSiteAtWebApp](../../winscript/reference/iwebappdiagnosticssetup-createobjectwithsiteatwebapp.md)|Obtiene los documentos de texto ocultos por el filtro especificado.|  
 |[IWebAppDiagnosticsSetup::DiagnosticsSupported](../../winscript/reference/iwebappdiagnosticssetup-diagnosticssupported.md)|Determina si el documento especificado pertenece a uno de los nodos secundarios de este nodo.|

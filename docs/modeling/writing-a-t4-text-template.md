@@ -11,12 +11,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 860f322724618ddb99bd9ab39eeefa488d9a71c5
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: df653dbd449429b6995c987328a401866751fd5e
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72666892"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72981250"
 ---
 # <a name="writing-a-t4-text-template"></a>Escribir una plantilla de texto T4
 Una plantilla de texto contiene el texto que se generará a partir de ella. Por ejemplo, una plantilla que crea una página web contendrá "\<html >..." y todas las demás partes estándar de una página HTML. Inserted en la plantilla son *bloques de control*, que son fragmentos de código de programa. Los bloques de control proporcionan valores variables y permiten que partes del texto sean condiciones y se repitan.
@@ -236,7 +236,7 @@ private void WriteSquareLine(int i)
 <# string fileContent = File.ReadAllText(@"C:\myData.txt"); ...
 ```
 
- **Cargar un archivo como modelo navegable**. Un método más eficaz consiste en leer los datos como un modelo, en el que el código de la plantilla de texto puede navegar. Por ejemplo, puede cargar un archivo XML y navegar en él con expresiones XPath. También puede utilizar [xsd. exe](http://go.microsoft.com/fwlink/?LinkId=178765) para crear un conjunto de clases con las que puede leer los datos XML.
+ **Cargar un archivo como modelo navegable**. Un método más eficaz consiste en leer los datos como un modelo, en el que el código de la plantilla de texto puede navegar. Por ejemplo, puede cargar un archivo XML y navegar en él con expresiones XPath. También puede utilizar [xsd. exe](/dotnet/standard/serialization/xml-schema-definition-tool-xsd-exe) para crear un conjunto de clases con las que puede leer los datos XML.
 
  **Edite el archivo de modelo en un diagrama o formulario.** [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] proporciona herramientas que permiten editar un modelo como un diagrama o Windows Forms. Así resulta más fácil analizar el modelo con los usuarios de la aplicación generada. [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] también crea un conjunto de clases fuertemente tipadas que reflejan la estructura del modelo. Para obtener más información, vea [generar código a partir de un lenguaje específico de dominio](../modeling/generating-code-from-a-domain-specific-language.md).
 

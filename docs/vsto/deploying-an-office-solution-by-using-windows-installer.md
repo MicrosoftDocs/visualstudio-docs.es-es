@@ -18,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 20df85952b4e76e60d6e93067c1f1e7838b692cd
-ms.sourcegitcommit: 8a96a65676fd7a2a03b0803d7eceae65f3fa142b
+ms.openlocfilehash: a44781c6fea0ecf75dcdb8a5ab2e2b3bed8e52e9
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "69551719"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72986148"
 ---
 # <a name="deploy-an-office-solution-by-using-windows-installer"></a>Implementar una solución de Office mediante Windows Installer
 
@@ -59,15 +59,15 @@ Al usar Visual Studio para crear un archivo de Windows Installer, puede implemen
 
 Para obtener más información sobre cómo implementar una solución de Office mediante ClickOnce, vea [implementar una solución de Office mediante ClickOnce](../vsto/deploying-an-office-solution-by-using-clickonce.md).
 
-Para obtener información sobre cómo crear un archivo de Windows Installer mediante [!INCLUDE[vs_dev10_long](../sharepoint/includes/vs-dev10-long-md.md)], consulte [implementar una solución de Visual Studio 2010 Tools para Office mediante Windows Installer](http://go.microsoft.com/fwlink/?LinkId=201807).
+Para obtener información sobre cómo crear un archivo de Windows Installer mediante [!INCLUDE[vs_dev10_long](../sharepoint/includes/vs-dev10-long-md.md)], consulte [implementar una solución de Visual Studio 2010 Tools para Office mediante Windows Installer](/previous-versions/visualstudio/visual-studio-2010/ff937654(v=msdn.10)).
 
 ## <a name="Download"></a>Descargar ejemplos
 Este tema hace referencia a los ejemplos descargables siguientes.
 
 |Ejemplo<br /><br />|Descripción<br /><br />|
 |----------|---------------|
-|[ExcelAddIn](http://go.microsoft.com/fwlink/?LinkID=275492)<br /><br />|Complemento VSTO de Excel que se puede instalar en un equipo que ejecute una versión de Office de 32 o de 64 bits.<br /><br />|
-|[ExcelWorkbook](http://go.microsoft.com/fwlink/?LinkID=275493)<br /><br />|Personalización de nivel de documento de Excel que se puede instalar en un equipo que ejecute una versión de Office de 32 o de 64 bits.<br /><br />|
+|[ExcelAddIn](https://code.msdn.microsoft.com/VSTO-Deploy-an-Office-fbcc09ad)<br /><br />|Complemento VSTO de Excel que se puede instalar en un equipo que ejecute una versión de Office de 32 o de 64 bits.<br /><br />|
+|[ExcelWorkbook](https://code.msdn.microsoft.com/VSTO-Deploy-a-Customization-f70fae33)<br /><br />|Personalización de nivel de documento de Excel que se puede instalar en un equipo que ejecute una versión de Office de 32 o de 64 bits.<br /><br />|
 
 ## <a name="ApplySecurity"></a>Decidir cómo conceder confianza a la solución
 Para que una solución pueda ejecutarse en los equipos de los usuarios, debe conceder confianza de una de las siguientes maneras, o los usuarios deben responder al mensaje relativo a la confianza cuando instalen la solución.
@@ -231,9 +231,9 @@ La página **Redistributables** contiene un elemento denominado **Microsoft VSTO
 
 10. En la carpeta **escritorio** , copie el archivo *Visual Studio 2010 Tools para Office Runtime. PRQ* en uno de los siguientes directorios del equipo.
 
-   Para sistemas operativos de 32 bits: *%ProgramFiles%\InstallShield\2013LE\SetupPrerequisites \\*
+   Para sistemas operativos de 32 bits: *%ProgramFiles%\InstallShield\2013LE\SetupPrerequisites\\*
 
-   Para sistemas operativos de 64 bits: *% ProgramFiles (x86)% \ 2013LE \ SetupPrerequisites \\*
+   Para sistemas operativos de 64 bits: *% ProgramFiles (x86)% \ 2013LE \ SetupPrerequisites\\*
 
 11. En la página **Redistributable** del proyecto de InstallShield, elija el botón de **actualizar** para actualizar la lista de componentes redistribuibles, como se muestra en la siguiente ilustración.
 
@@ -510,4 +510,4 @@ Para modificar las propiedades personalizadas, se crea un programa que quita la 
 - [Información general sobre propiedades personalizadas del documento](../vsto/custom-document-properties-overview.md)
 - [Conceder confianza a las soluciones de Office](../vsto/granting-trust-to-office-solutions.md)
 - [Conceder confianza a los documentos](../vsto/granting-trust-to-documents.md)
-- [Implementar una solución de Visual Studio 2010 Tools para Office con Windows Installer](http://go.microsoft.com/fwlink/?LinkId=201807)
+- [Implementar una solución de Visual Studio 2010 Tools para Office con Windows Installer](/previous-versions/visualstudio/visual-studio-2010/ff937654(v=msdn.10))

@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: c0fe4061fe6aefc1e6849bddea1dbab9551b9884
-ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
+ms.openlocfilehash: a98164488d548a15c07e67b9a02cad2341f7300b
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69551361"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72985643"
 ---
 # <a name="registry-entries-for-vsto-add-ins"></a>Entradas del registro para complementos de VSTO
   Debe crear un conjunto específico de entradas del registro al implementar complementos de VSTO creados con Visual Studio. Dichas entradas del registro proporcionan información que permite que la aplicación de Microsoft Office detecte y cargue el complemento de VSTO.
@@ -49,7 +49,7 @@ ms.locfileid: "69551361"
 ### <a name="microsoft-office-version"></a>Versión de Microsoft Office
  Las aplicaciones de Office pueden cargar complementos de VSTO que están registrados en **HKEY_LOCAL_MACHINE** o **HKEY_CURRENT_USER**.
 
- Para cargar los complementos de VSTO que están registrados en **HKEY_LOCAL_MACHINE**, los equipos deben tener instalado el paquete de actualización 976477. Para obtener más información, vea [http://go.microsoft.com/fwlink/?LinkId=184923](http://go.microsoft.com/fwlink/?LinkId=184923).
+ Para cargar los complementos de VSTO que están registrados en **HKEY_LOCAL_MACHINE**, los equipos deben tener instalado el paquete de actualización 976477. Para obtener más información, vea [http://go.microsoft.com/fwlink/?LinkId=184923](https://support.microsoft.com/help/976811/a-2007-office-system-application-does-not-load-an-add-in-that-is-devel).
 
 ### <a name="deployment-type"></a>Tipo de implementación
  Si usa ClickOnce para implementar un complemento de VSTO, el complemento de VSTO se puede registrar únicamente para el usuario actual. Esto se debe a que ClickOnce solo admite la creación de claves en **HKEY_CURRENT_USER**. Si desea registrar un complemento de VSTO para todos los usuarios de un equipo, debe usar Windows Installer para implementarlo. Para obtener más información sobre estos tipos de implementación, vea [implementar una solución de Office mediante ClickOnce](../vsto/deploying-an-office-solution-by-using-clickonce.md) e [implementar una solución de Office mediante Windows Installer](../vsto/deploying-an-office-solution-by-using-windows-installer.md).
@@ -61,42 +61,42 @@ ms.locfileid: "69551361"
 
 |Versión de Office|Ruta de acceso de configuración|
 |--------------------|------------------------|
-|32 bits|*Raíz*\Software\Microsoft\Office\\*nombre*de la\\aplicación \Addins*identificador del complemento*|
-|64 bits|*Raíz*\Software\Wow6432Node\Microsoft\Office\\*nombre*de la\\aplicación \Addins*identificador del complemento*|
+|32 bits|*Raíz*\Software\Microsoft\Office\\*nombre de aplicación*\Addins\\*identificador de complemento*|
+|64 bits|*Raíz*\Software\Wow6432Node\Microsoft\Office\\*nombre de aplicación*\Addins\\*identificador de complemento*|
 
  **Visio**
 
 |Versión de Office|Ruta de acceso de configuración|
 |--------------------|------------------------|
-|32 bits|*Identificador del complemento* *raíz*\Software\Microsoft\Visio\Addins\\|
-|64 bits|*Identificador del complemento* *raíz*\Software\Wow6432Node\Visio\Addins\\|
+|32 bits|*Identificador de complemento de*\\*raíz*\Software\Microsoft\Visio\Addins|
+|64 bits|*Identificador de complemento de*\\*raíz*\Software\Wow6432Node\Visio\Addins|
 
  En la tabla siguiente se enumeran las entradas que figuran en esta clave del Registro.
 
 |Entrada|Type|Valor|
 |-----------|----------|-----------|
-|**Descripción**|REG_SZ|Necesario. Breve descripción del complemento de VSTO.<br /><br /> Esta descripción se muestra cuando el usuario selecciona el complemento de VSTO en el panel **Complementos** del cuadro de diálogo **Opciones** de la aplicación de Microsoft Office.|
-|**FriendlyName**|REG_SZ|Necesario. Nombre descriptivo del complemento de VSTO que se muestra en el cuadro de diálogo **Complementos COM** de la aplicación de Microsoft Office. El valor predeterminado es el identificador del complemento de VSTO.|
-|**LoadBehavior**|REG_DWORD|Necesario. Valor que especifica cuándo la aplicación intenta cargar el complemento de VSTO y el estado actual del complemento de VSTO (cargado o sin cargar).<br /><br /> De forma predeterminada, esta entrada se establece en 3, lo que especifica que el complemento de VSTO se carga al inicio. Para obtener más información, consulte [valores de LoadBehavior](#LoadBehavior). **Nota:**  Si un usuario deshabilita el complemento de VSTO, esa acción modifica el valor **LoadBehavior** en el subárbol del registro **HKEY_CURRENT_USER** . Para cada usuario, el valor del valor **LoadBehavior** en el subárbol HKEY_CURRENT_USER invalida el **LoadBehavior** predeterminado definido en el subárbol **HKEY_LOCAL_MACHINE** .|
-|**Manifest**|REG_SZ|Necesario. Ruta de acceso completa del manifiesto de implementación para el complemento de VSTO. La ruta de acceso puede ser una ubicación en el equipo local, un recurso compartido de red (UNC) o un servidor web (HTTP).<br /><br /> Si usa Windows Installer para implementar la solución, debe agregar el prefijo **file:///** a la ruta de acceso del **manifiesto** . También debe anexar la cadena  **&#124;vstolocal** (es decir, el carácter **&#124;** de barra vertical seguido de **vstolocal**) al final de esta ruta de acceso. Esto garantiza que la solución se cargue desde la carpeta de instalación, no desde la memoria caché de ClickOnce. Para obtener más información, vea [implementar una solución de Office mediante Windows Installer](../vsto/deploying-an-office-solution-by-using-windows-installer.md). **Nota:**  Al compilar un complemento de VSTO en el equipo de desarrollo, Visual Studio anexa automáticamente la  **&#124;cadena vstolocal** a esta entrada del registro.|
+|**Descripción**|REG_SZ|Requerido. Breve descripción del complemento de VSTO.<br /><br /> Esta descripción se muestra cuando el usuario selecciona el complemento de VSTO en el panel **Complementos** del cuadro de diálogo **Opciones** de la aplicación de Microsoft Office.|
+|**FriendlyName**|REG_SZ|Requerido. Nombre descriptivo del complemento de VSTO que se muestra en el cuadro de diálogo **Complementos COM** de la aplicación de Microsoft Office. El valor predeterminado es el identificador del complemento de VSTO.|
+|**LoadBehavior**|REG_DWORD|Requerido. Valor que especifica cuándo la aplicación intenta cargar el complemento de VSTO y el estado actual del complemento de VSTO (cargado o sin cargar).<br /><br /> De forma predeterminada, esta entrada se establece en 3, lo que especifica que el complemento de VSTO se carga al inicio. Para obtener más información, consulte [valores de LoadBehavior](#LoadBehavior). **Nota:**  Si un usuario deshabilita el complemento de VSTO, esa acción modifica el valor **LoadBehavior** en el subárbol del registro **HKEY_CURRENT_USER** . Para cada usuario, el valor del valor **LoadBehavior** en el subárbol HKEY_CURRENT_USER invalida el **LoadBehavior** predeterminado definido en el subárbol **HKEY_LOCAL_MACHINE** .|
+|**Manifiesto**|REG_SZ|Requerido. Ruta de acceso completa del manifiesto de implementación para el complemento de VSTO. La ruta de acceso puede ser una ubicación en el equipo local, un recurso compartido de red (UNC) o un servidor web (HTTP).<br /><br /> Si usa Windows Installer para implementar la solución, debe agregar el prefijo **file:///** a la ruta de acceso del **manifiesto** . También debe anexar la cadena  **&#124;vstolocal** (es decir, el carácter **&#124;** de barra vertical seguido de **vstolocal**) al final de esta ruta de acceso. Esto garantiza que la solución se cargue desde la carpeta de instalación, no desde la memoria caché de ClickOnce. Para obtener más información, vea [implementar una solución de Office mediante Windows Installer](../vsto/deploying-an-office-solution-by-using-windows-installer.md). **Nota:**  Al compilar un complemento de VSTO en el equipo de desarrollo, Visual Studio anexa automáticamente la  **&#124;cadena vstolocal** a esta entrada del registro.|
 
 ### <a name="OutlookEntries"></a>Entradas del registro para las áreas de formulario de Outlook
  Si crea un área del formulario personalizada en un complemento de VSTO para Outlook, se usarán entradas del registro adicionales para registrar dicha área en Outlook. Estas entradas se crean en una clave del Registro diferente para cada clase de mensaje que sea compatible con el área del formulario. Estas claves del registro se encuentran en la siguiente ubicación, donde *raíz* es **HKEY_CURRENT_USER** o **HKEY_LOCAL_MACHINE**.
 
- Clase de\\*mensaje* *raíz*\Software\Microsoft\Office\Outlook\FormRegions
+ \Software\Microsoft\Office\Outlook\FormRegions *raíz*\\*clase de mensaje*
 
  Al igual que las demás entradas del registro compartidas por todos los complementos de VSTO, Visual Studio crea las entradas del registro de las áreas del formulario en el equipo de desarrollo al compilar el proyecto. Si usa ClickOnce para implementar el complemento de VSTO, las entradas del registro se crean automáticamente en el equipo del usuario final. Si usa Windows Installer para implementar el complemento de VSTO, debe configurar el proyecto de InstallShield Limited Edition para crear las entradas del registro en el equipo del usuario final.
 
  Para obtener más información sobre las entradas del registro del área de formulario, vea [especificar la ubicación de un área de formulario en un formulario personalizado](/office/vba/outlook/Concepts/Creating-Form-Regions/specify-the-location-of-a-form-region-in-a-custom-form). Para obtener más información sobre las áreas de formulario de Outlook, consulte [crear áreas de formulario de Outlook](../vsto/creating-outlook-form-regions.md).
 
 ## <a name="LoadBehavior"></a>Valores de LoadBehavior
- La entrada **LoadBehavior** en la clave *raíz*\Software\Microsoft\Office\\nombre de\\la*aplicación*\Addins*identificador del Complemento* contiene una combinación bit a bit de valores que especifican el comportamiento de tiempo de ejecución del Complemento de VSTO. El bit de ordenación más bajo (valores 0 y 1) indica si el complemento de VSTO está cargado o no. Otros bits indican el momento en que la aplicación intenta cargar el complemento de VSTO.
+ La entrada **LoadBehavior** en el *directorio raíz*\Software\Microsoft\Office\\*nombre de aplicación*\Addins\\clave de identificador del *complemento* contiene una combinación bit a bit de valores que especifican el comportamiento de tiempo de ejecución del complemento de VSTO. El bit de ordenación más bajo (valores 0 y 1) indica si el complemento de VSTO está cargado o no. Otros bits indican el momento en que la aplicación intenta cargar el complemento de VSTO.
 
  Normalmente, la entrada **LoadBehavior** está pensada para establecerse en 0, 3 o 16 (en formato decimal) cuando el complemento de VSTO está instalado en los equipos de los usuarios finales. De forma predeterminada, Visual Studio establece la entrada **LoadBehavior** del complemento de VSTO en 3 al compilarlo o publicarlo.
 
  En la siguiente tabla se enumeran todos los valores posibles de la entrada **LoadBehavior** . Algunas descripciones de esta tabla hacen referencia a cargar un complemento de VSTO manualmente o mediante programación. Para cargar un complemento de VSTO manualmente, active la casilla que encontrará junto al complemento de VSTO en el cuadro de diálogo **Complementos COM** de la aplicación. Para cargar un complemento de VSTO mediante programación, establezca la propiedad <xref:Microsoft.Office.Core.COMAddIn.Connect%2A> del objeto <xref:Microsoft.Office.Core.COMAddIn> que representa el complemento de VSTO en **true**.
 
-|Valor (en forma decimal)|Estado del complemento de VSTO|Comportamiento de carga de complementos de VSTO|DESCRIPCIÓN|
+|Valor (en forma decimal)|Estado del complemento de VSTO|Comportamiento de carga de complementos de VSTO|Descripción|
 |--------------------------|-------------------------|--------------------------------|-----------------|
 |0|Descargado|No cargar automáticamente|La aplicación nunca intenta cargar el complemento de VSTO automáticamente. El usuario puede intentar cargar manualmente el complemento de VSTO o el complemento de VSTO se puede cargar mediante programación.<br /><br /> Si el complemento de VSTO se carga correctamente, el valor **LoadBehavior** sigue siendo 0, pero el estado del complemento de VSTO en el cuadro de diálogo **Complementos COM** se actualiza para indicar que el complemento de VSTO está cargado.|
 |1|Cargado|No cargar automáticamente|La aplicación nunca intenta cargar el complemento de VSTO automáticamente. El usuario puede intentar cargar manualmente el complemento de VSTO o el complemento de VSTO se puede cargar mediante programación.<br /><br /> Aunque el cuadro de diálogo **Complementos com** indica que el complemento de VSTO se carga una vez iniciada la aplicación, el complemento de VSTO no se carga hasta que se carga manualmente o mediante programación.<br /><br /> Si la aplicación carga correctamente el complemento de VSTO, el valor **LoadBehavior** cambia a 0 y sigue siendo 0 una vez que se cierra la aplicación.|

@@ -1,5 +1,5 @@
 ---
-title: Crear lista externa en SharePoint con datos profesionales
+title: Crear una lista externa en SharePoint con datos económicos
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -19,26 +19,26 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: cf9c7d13e6aaac85d3bac4254247a3c07b39b5c3
-ms.sourcegitcommit: 25570fb5fb197318a96d45160eaf7def60d49b2b
+ms.openlocfilehash: d670215d6a46003315992201c64c23185be7d715
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/30/2019
-ms.locfileid: "66401065"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72984661"
 ---
-# <a name="walkthrough-create-an-external-list-in-sharepoint-by-using-business-data"></a>Tutorial: Crear una lista externa en SharePoint con datos profesionales
+# <a name="walkthrough-create-an-external-list-in-sharepoint-by-using-business-data"></a>Tutorial: crear una lista externa en SharePoint con datos económicos
 
-El servicio de conectividad de datos profesionales (BDC) permite a SharePoint mostrar los datos empresariales de aplicaciones de servidor back-end, servicios Web y bases de datos.
+El servicio de conectividad a datos profesionales (BDC) permite a SharePoint mostrar los datos empresariales de las aplicaciones de servidor back-end, los servicios web y las bases de datos.
 
-En este tutorial se muestra cómo crear un modelo para el servicio BDC que devuelve información acerca de los contactos de una base de datos de ejemplo. A continuación, creará una lista externa en SharePoint mediante el uso de este modelo.
+En este tutorial se muestra cómo crear un modelo para el servicio BDC que devuelve información sobre los contactos en una base de datos de ejemplo. A continuación, creará una lista externa en SharePoint mediante este modelo.
 
 En este tutorial se muestran las tareas siguientes:
 
-- Creación de un proyecto.
+- Crear un proyecto.
 - Agregar una entidad al modelo.
-- Agregar un método finder.
+- Agregar un método Finder.
 - Agregar un método Finder específico.
-- Probar el proyecto.
+- Prueba del proyecto.
 
 ## <a name="prerequisites"></a>Requisitos previos
 
@@ -46,141 +46,141 @@ Necesita los componentes siguientes para completar este tutorial:
 
 - Ediciones compatibles de Windows y SharePoint.
 
-- Acceso a la base de datos de ejemplo AdventureWorks. Para obtener más información sobre cómo instalar la base de datos de AdventureWorks, vea [bases de datos de ejemplo de SQL Server](http://go.microsoft.com/fwlink/?LinkID=117483).
+- Acceso a la base de datos de ejemplo AdventureWorks. Para obtener más información acerca de cómo instalar la base de datos AdventureWorks, vea [SQL Server bases](https://github.com/Microsoft/sql-server-samples/releases/tag/adventureworks)de datos de ejemplo.
 
-## <a name="create-a-project-that-contains-a-bdc-model"></a>Crear un proyecto que contiene un modelo BDC
+## <a name="create-a-project-that-contains-a-bdc-model"></a>Crear un proyecto que contenga un modelo BDC
 
-1. En la barra de menús de Visual Studio, elija **archivo** > **New** > **proyecto**.
+1. En la barra de menús de Visual Studio, elija **archivo** > **nuevo** **proyecto**de > .
 
      Aparece el cuadro de diálogo **Nuevo proyecto** .
 
-2. Bajo **Visual C#** o **Visual Basic**, expanda el **SharePoint** nodo y, a continuación, elija el **2010** elemento.
+2. En **Visual C#**  o **Visual Basic**, expanda el nodo **SharePoint** y, a continuación, elija el elemento **2010** .
 
-3. En el **plantillas** panel, elija **proyecto de SharePoint 2010**, denomine el proyecto **AdventureWorksTest**y, a continuación, elija el **Aceptar** botón .
+3. En el panel **plantillas** , elija **proyecto de SharePoint 2010**, asigne al proyecto el nombre **AdventureWorksTest**y, a continuación, elija el botón **Aceptar** .
 
-     El **Asistente de personalización de SharePoint** aparece. En este asistente, puede especificar el sitio que va a usar para depurar el proyecto y establecer el nivel de confianza de la solución.
+     Aparece el **Asistente para la personalización de SharePoint** . En este asistente, puede especificar el sitio que va a usar para depurar el proyecto y establecer el nivel de confianza de la solución.
 
-4. Elija la **implementar como solución de granja de servidores** botón de opción para establecer el nivel de confianza.
+4. Elija el botón de opción **implementar como solución de granja de servidores** para establecer el nivel de confianza.
 
-5. Elija la **finalizar** botón para aceptar el sitio local predeterminado de SharePoint.
+5. Elija el botón **Finalizar** para aceptar el sitio local predeterminado de SharePoint.
 
-6. En **el Explorador de soluciones**, elija el nodo de proyecto de SharePoint.
+6. En **Explorador de soluciones**, elija el nodo de proyecto de SharePoint.
 
 7. En la barra de menús, elija **Proyecto** >  **Agregar nuevo elemento**.
 
      Se abre el cuadro de diálogo **Agregar nuevo elemento**.
 
-8. En el **plantillas** panel, elija **(solución de granja de servidores únicamente) modelo de conectividad a datos empresariales**, denomine el proyecto **escriba AdventureWorksContacts**y, a continuación, elija el **Agregar** botón.
+8. En el panel **plantillas** , elija **modelo de conectividad a datos profesionales (solo solución de granja de servidores)** , asigne al proyecto el nombre **AdventureWorksContacts**y, a continuación, elija el botón **Agregar** .
 
 ## <a name="add-data-access-classes-to-the-project"></a>Agregar clases de acceso a datos al proyecto
 
-1. En la barra de menús, elija **herramientas** > **conectar con base de datos**.
+1. En la barra de menús, elija **herramientas** > **conectarse a la base de datos**.
 
      Se abrirá el cuadro de diálogo **Agregar conexión**.
 
-2. Agregar una conexión a la base de datos de ejemplo AdventureWorks de SQL Server.
+2. Agregue una conexión a la base de datos de ejemplo AdventureWorks de SQL Server.
 
-     Para obtener más información, consulte [agregar o modificar conexión (Microsoft SQL Server)](https://msdn.microsoft.com/fa400910-26c3-4df7-b9d1-115e688b4ea3).
+     Para obtener más información, vea [Agregar o modificar conexión (Microsoft SQL Server)](https://msdn.microsoft.com/fa400910-26c3-4df7-b9d1-115e688b4ea3).
 
 3. En el **Explorador de soluciones**, elija el nodo de proyecto.
 
 4. En la barra de menús, elija **Proyecto** >  **Agregar nuevo elemento**.
 
-5. En el **plantillas instaladas** panel, elija el **datos** nodo.
+5. En el panel **plantillas instaladas** , elija el nodo de **datos** .
 
-6. En el **plantillas** panel, elija **clases LINQ to SQL**.
+6. En el panel **plantillas** , elija **LINQ to SQL clases**.
 
-7. En el **nombre** , especifique **AdventureWorks**y, a continuación, elija el **agregar** botón.
+7. En el cuadro **nombre** , especifique **AdventureWorks**y, a continuación, elija el botón **Agregar** .
 
-     Un archivo .dbml se agrega al proyecto y abre el Object Relational Designer (Object Relational Designer).
+     Se agrega un archivo. dbml al proyecto y se abre el Object Relational Designer (Object Relational Designer).
 
-8. En la barra de menús, elija **vista** > **Explorador de servidores**.
+8. En la barra de menús, elija **ver** > **Explorador de servidores**.
 
-9. En **Explorador de servidores**, expanda el nodo que representa la base de datos de ejemplo AdventureWorks y, a continuación, expanda el **tablas** nodo.
+9. En **Explorador de servidores**, expanda el nodo que representa la base de datos de ejemplo AdventureWorks y, a continuación, expanda el nodo **tablas** .
 
-10. Agregar el **contacto (persona)** tabla hasta Object Relational Designer.
+10. Agregue la tabla **Contact (person)** en Object Relational Designer.
 
-     Se crea una clase de entidad, que aparece en la superficie de diseño. La clase de entidad tiene propiedades que se asignan a las columnas de la tabla Contact (Person).
+     Se crea una clase de entidad, que aparece en la superficie de diseño. La clase de entidad tiene propiedades que se asignan a las columnas de la tabla Contact (person).
 
 ## <a name="remove-the-default-entity-from-the-bdc-model"></a>Quitar la entidad predeterminada del modelo BDC
 
-El **modelo de conectividad a datos empresariales** proyecto agrega una entidad de predeterminada denominada Entity1 al modelo. Quite esta entidad. Más adelante, agregará una nueva entidad. A partir de un modelo vacío, reduce el número de pasos necesarios para completar el tutorial.
+El proyecto **modelo de conectividad a datos profesionales** agrega una entidad predeterminada denominada Entity1 al modelo. Quite esta entidad. Más adelante, agregará una nueva entidad. Comenzar con un modelo vacío reduce el número de pasos necesarios para completar el tutorial.
 
-1. En **el Explorador de soluciones**, expanda el **BdcModel1** nodo y, a continuación, abra el *BdcModel1.bdcm* archivo.
+1. En **Explorador de soluciones**, expanda el nodo **BdcModel1** y, a continuación, abra el archivo *BdcModel1. bdcm* .
 
-2. Se abre el archivo de modelo de conectividad a datos empresariales en el Diseñador de BDC.
+2. El archivo de modelo de conectividad a datos profesionales se abre en el diseñador de BDC.
 
 3. En el diseñador, abra el menú contextual de **Entity1**y, a continuación, elija **eliminar**.
 
-4. En **el Explorador de soluciones**, abra el menú contextual para *Entity1.vb* (en Visual Basic) o *Entity1.cs* (en C#) y, a continuación, elija **eliminar** .
+4. En **Explorador de soluciones**, abra el menú contextual de *Entity1. vb* (en Visual Basic) o *Entity1.CS* ( C#en) y, a continuación, elija **eliminar**.
 
-5. Abra el menú contextual para *Entity1Service.vb* (en Visual Basic) o *Entity1Service.cs* (en C#) y, a continuación, elija **eliminar**.
+5. Abra el menú contextual de *Entity1Service. VB* (en Visual Basic) o *Entity1Service.CS* ( C#en) y, a continuación, elija **eliminar**.
 
 ## <a name="add-an-entity-to-the-model"></a>Agregar una entidad al modelo
 
-Agregar una entidad al modelo. Puede agregar entidades de Visual Studio **cuadro de herramientas** en el Diseñador de BDC.
+Agregue una entidad al modelo. Puede Agregar entidades desde el **cuadro de herramientas** de Visual Studio al diseñador de BDC.
 
 1. En la barra de menús, elija **Ver** > **Cuadro de herramientas**.
 
-2. En el **BusinessDataConnectivity** pestaña de la **cuadro de herramientas**, agregue un **entidad** hasta el diseñador BDC.
+2. En la pestaña **BusinessDataConnectivity** del **cuadro de herramientas**, agregue una **entidad** al diseñador de BDC.
 
-     La nueva entidad aparece en el diseñador. Visual Studio agrega un archivo denominado *EntityService.vb* (en Visual Basic) o *EntityService.cs* (en C#) al proyecto.
+     La nueva entidad aparece en el diseñador. Visual Studio agrega un archivo denominado *EntityService. VB* (en Visual Basic) o *EntityService.CS* (en C#) al proyecto.
 
-3. En la barra de menús, elija **vista** > **propiedades** > **ventana**.
+3. En la barra de menús, elija **ver** > **propiedades** > **ventana**.
 
-4. En el **propiedades** ventana, establezca el **nombre** valor de propiedad **póngase en contacto con**.
+4. En la ventana **propiedades** , establezca el valor de la propiedad **Name** en **Contact**.
 
-5. En el diseñador, abra el menú contextual de la entidad, elija **agregar**y, a continuación, elija **identificador**.
+5. En el diseñador, abra el menú contextual de la entidad, elija **Agregar**y, a continuación, elija **identificador**.
 
-     Un nuevo identificador aparece en la entidad.
+     Aparece un nuevo identificador en la entidad.
 
-6. En el **propiedades** ventana, cambie el nombre del identificador para **ContactID**.
+6. En la ventana **propiedades** , cambie el nombre del identificador a **ContactID**.
 
-7. En el **nombre de tipo** elija **System.Int32**.
+7. En la lista **nombre de tipo** , elija **System. Int32**.
 
 ## <a name="add-a-specific-finder-method"></a>Agregar un método Finder específico
 
-Para habilitar el servicio BDC mostrar un contacto específico, debe agregar un método Finder específico. El servicio BDC llama al método de buscador específico cuando un usuario elige un elemento en una lista y, a continuación, elige el **ver elemento** botón en la cinta de opciones.
+Para permitir que el servicio BDC muestre un contacto específico, debe agregar un método Finder específico. El servicio BDC llama al método de buscador específico cuando un usuario elige un elemento en una lista y, a continuación, elige el botón **Ver elemento** de la cinta de opciones.
 
-Agregar un método Finder específico a la entidad Contact mediante el **detalles del método de BDC** ventana. Para devolver una entidad concreta, agregue código al método.
+Agregue un método Finder específico a la entidad Contact mediante la ventana **detalles del método de BDC** . Para devolver una entidad específica, agregue código al método.
 
-1. En el Diseñador de BDC, elija el **póngase en contacto con** entidad.
+1. En el diseñador de BDC, elija la entidad **contacto** .
 
-2. En la barra de menús, elija **vista** > **Other Windows** > **detalles del método de BDC**.
+2. En la barra de menús, elija **ver** > otros **detalles del método BDC**de **Windows** > .
 
-     Se abre la ventana de detalles del método de BDC.
+     Se abre la ventana detalles del método de BDC.
 
-3. En el **agregue un método** elija **crear método Finder específico**.
+3. En la lista **Agregar un método** , elija **crear método de buscador específico**.
 
-     Visual Studio agrega los siguientes elementos al modelo. Estos elementos aparecen en la **detalles del método de BDC** ventana.
+     Visual Studio agrega los siguientes elementos al modelo. Estos elementos aparecen en la ventana **detalles del método de BDC** .
 
     - Un método denominado ReadItem.
 
-    - Un parámetro de entrada para el método.
+    - Parámetro de entrada para el método.
 
-    - Un parámetro de valor devuelto del método.
+    - Parámetro devuelto para el método.
 
     - Un descriptor de tipo para cada parámetro.
 
-    - Una instancia de método para el método.
+    - Instancia de método para el método.
 
-4. En el **detalles del método de BDC** ventana, abra la lista que aparece para la **póngase en contacto con** descriptor de tipo y, a continuación, elija **editar**.
+4. En la ventana **detalles del método de BDC** , abra la lista que aparece para el descriptor de tipo de **contacto** y, a continuación, elija **Editar**.
 
-     El **Explorador de BDC** se abre y proporciona una vista jerárquica del modelo.
+     Se abre el **Explorador de BDC** y proporciona una vista jerárquica del modelo.
 
-5. En el **propiedades** ventana, abra la lista junto a la **TypeName** propiedad, elija el **proyecto actual** pestaña y, a continuación, elija el **póngase en contacto con**propiedad.
+5. En la ventana **propiedades** , abra la lista situada junto a la propiedad **TypeName** , elija la pestaña **proyecto actual** y, a continuación, elija la propiedad **contacto** .
 
-6. En el **Explorador de BDC**, abra el menú contextual de la **póngase en contacto con**y, a continuación, elija **agregar Descriptor de tipo**.
+6. En el **Explorador de BDC**, abra el menú contextual del **contacto**y, a continuación, elija **Agregar descriptor de tipos**.
 
-     Un nuevo descriptor de tipo que se denomina **TypeDescriptor1** aparece en el **Explorador de BDC**.
+     Aparece un nuevo descriptor de tipo denominado **TypeDescriptor1** en el **Explorador de BDC**.
 
-7. En el **propiedades** ventana, establezca el **nombre** valor de propiedad **ContactID**.
+7. En la ventana **propiedades** , establezca el valor de la propiedad **nombre** en **ContactID**.
 
-8. Abra la lista junto a la **TypeName** propiedad y, a continuación, elija **Int32**.
+8. Abra la lista situada junto a la propiedad **TypeName** y, a continuación, elija **Int32**.
 
-9. Abra la lista junto a la **identificador** propiedad y, a continuación, elija **ContactID**.
+9. Abra la lista situada junto a la propiedad **identificador** y, a continuación, elija **ContactID**.
 
-10. Repita el paso 6 para crear un descriptor de tipo para cada uno de los siguientes campos.
+10. Repita el paso 6 para crear un descriptor de tipo para cada uno de los campos siguientes.
 
     |Name|Nombre de tipo|
     |----------|---------------|
@@ -193,90 +193,90 @@ Agregar un método Finder específico a la entidad Contact mediante el **detalle
     |PasswordHash|System.String|
     |PasswordSalt|System.String|
 
-11. En el diseñador BDC, en la **póngase en contacto con** entidad, abra el **ReadItem** método.
+11. En el diseñador de BDC, en la entidad **Contact** , abra el método **ReadItem** .
 
-     El archivo de código del servicio de contacto se abre en el Editor de código.
+     El archivo de código de servicio de contacto se abre en el editor de código.
 
-12. En el `ContactService` class, reemplace el `ReadItem` método con el código siguiente. Este código realiza las tareas siguientes:
+12. En la clase `ContactService`, reemplace el método `ReadItem` por el código siguiente. Este código realiza las tareas siguientes:
 
     - Recupera un registro de la tabla Contact de la base de datos AdventureWorks.
 
     - Devuelve una entidad Contact al servicio BDC.
 
     > [!NOTE]
-    > Reemplace el valor de la `ServerName` campo con el nombre del servidor.
+    > Reemplace el valor del campo `ServerName` por el nombre del servidor.
 
      [!code-csharp[SP_BDC#3](../sharepoint/codesnippet/CSharp/SP_BDC/bdcmodel1/contactservice.cs#3)]
      [!code-vb[SP_BDC#3](../sharepoint/codesnippet/VisualBasic/sp_bdc/bdcmodel1/contactservice.vb#3)]
 
-## <a name="add-a-finder-method"></a>Agregar un método finder
+## <a name="add-a-finder-method"></a>Agregar un método Finder
 
-Para habilitar el servicio BDC mostrar los contactos en una lista, debe agregar un método Finder. Agregar un método Finder a la entidad Contact utilizando la **detalles del método de BDC** ventana. Para devolver una colección de entidades para el servicio BDC, agregue código al método.
+Para permitir que el servicio BDC muestre los contactos en una lista, debe agregar un método Finder. Agregue un método Finder a la entidad Contact mediante la ventana **detalles del método de BDC** . Para devolver una colección de entidades al servicio BDC, agregue código al método.
 
-1. En el diseñador BDC, elija el **póngase en contacto con** entidad.
+1. En el diseñador de BDC, elija la entidad **contacto** .
 
-2. En el **detalles del método de BDC** ventana, contraer los **ReadItem** nodo.
+2. En la ventana **detalles del método de BDC** , contraiga el nodo **ReadItem** .
 
-3. En el **agregue un método** lista bajo el **ReadList** método, elija **crear método Finder**.
+3. En la lista **Agregar un método** en el método **ReadList** , elija **crear método de buscador**.
 
      Visual Studio agrega un método, un parámetro de retorno y un descriptor de tipos.
 
-4. En el diseñador BDC, en la **póngase en contacto con** entidad, abra el **ReadList** método.
+4. En el diseñador de BDC, en la entidad **Contact** , abra el método **ReadList** .
 
-     El archivo de código para el servicio de contacto se abre en el Editor de código.
+     El archivo de código para el servicio de contacto se abre en el editor de código.
 
-5. En el `ContactService` class, reemplace el `ReadList` método con el código siguiente. Este código realiza las tareas siguientes:
+5. En la clase `ContactService`, reemplace el método `ReadList` por el código siguiente. Este código realiza las tareas siguientes:
 
-   - Recupera datos de la tabla de contactos de la base de datos AdventureWorks.
+   - Recupera datos de la tabla Contacts de la base de datos AdventureWorks.
 
-   - Devuelve una lista de entidades de contacto para el servicio BDC.
+   - Devuelve una lista de entidades Contact al servicio BDC.
 
      > [!NOTE]
-     > Reemplace el valor de la `ServerName` campo con el nombre del servidor.
+     > Reemplace el valor del campo `ServerName` por el nombre del servidor.
 
      [!code-csharp[SP_BDC#2](../sharepoint/codesnippet/CSharp/SP_BDC/bdcmodel1/contactservice.cs#2)]
      [!code-vb[SP_BDC#2](../sharepoint/codesnippet/VisualBasic/sp_bdc/bdcmodel1/contactservice.vb#2)]
 
-## <a name="test-the-project"></a>El proyecto de prueba
+## <a name="test-the-project"></a>Probar el proyecto
 
-Al ejecutar el proyecto, se abre el sitio de SharePoint y Visual Studio agrega el modelo para el servicio de conectividad a datos empresariales. Crear una lista externa en SharePoint que hace referencia a la entidad Contact. Los datos de contactos en la base de datos AdventureWorks aparecen en la lista.
+Al ejecutar el proyecto, se abre el sitio de SharePoint y Visual Studio agrega el modelo al servicio de conectividad a datos profesionales. Cree una lista externa en SharePoint que haga referencia a la entidad contact. Los datos para contactos en la base de datos AdventureWorks aparecen en la lista.
 
 > [!NOTE]
-> Es posible que deba modificar la configuración de seguridad en SharePoint antes de poder depurar la solución. Para obtener más información, consulte [diseñar un modelo de conectividad a datos empresariales](../sharepoint/designing-a-business-data-connectivity-model.md).
+> Es posible que tenga que modificar la configuración de seguridad en SharePoint antes de poder depurar la solución. Para obtener más información, vea [diseñar un modelo de conectividad a datos profesionales](../sharepoint/designing-a-business-data-connectivity-model.md).
 
-1. Elija la tecla **F5**.
+1. Presione la tecla **F5**.
 
      Se abre el sitio de SharePoint.
 
-2. En el **acciones del sitio** menú, elija la **más opciones** comando.
+2. En el menú **acciones del sitio** , elija el comando **más opciones** .
 
-3. En el **crear** página, elija el **lista externa** plantilla y, a continuación, elija el **crear** botón.
+3. En la página **crear** , elija la plantilla **lista externa** y, a continuación, elija el botón **crear** .
 
-4. Nombre de la lista personalizada de **contactos**.
+4. Asigne a la lista personalizada el nombre **contactos**.
 
-5. Elija el botón Examinar junto a la **tipo de contenido externo** campo.
+5. Elija el botón examinar situado junto al campo **tipo de contenido externo** .
 
-6. En el **selector de tipos de contenido externo** diálogo cuadro, elija el **AdventureWorksContacts.BdcModel1.Contact** elemento y, a continuación, elija el **crear** botón.
+6. En el cuadro de diálogo **selector de tipos de contenido externo** , elija el elemento **AdventureWorksContacts. BdcModel1. contact** y, a continuación, elija el botón **crear** .
 
-     SharePoint crea una lista externa que contiene los contactos de la base de datos de ejemplo AdventureWorks.
+     SharePoint crea una lista externa que contiene contactos de la base de datos de ejemplo AdventureWorks.
 
 7. Para probar el método de buscador específico, elija un contacto en la lista.
 
-8. En la cinta de opciones, elija la **elementos** pestaña y, a continuación, elija el **ver elemento** comando.
+8. En la cinta de opciones, elija la pestaña **elementos** y, a continuación, elija el comando **Ver elemento** .
 
-     Los detalles de contacto que eligió aparecen en un formulario.
+     Los detalles del contacto que ha elegido aparecen en un formulario.
 
 ## <a name="next-steps"></a>Pasos siguientes
 
-Puede obtener más información acerca de cómo diseñar modelos para el servicio BDC de SharePoint en los siguientes temas:
+Puede obtener más información sobre cómo diseñar modelos para el servicio BDC en SharePoint en estos temas:
 
-- [Cómo: Agregar un método Creator](../sharepoint/how-to-add-a-creator-method.md).
-- [Cómo: Agregar un método Updater](../sharepoint/how-to-add-an-updater-method.md).
-- [Cómo: Agregar un método Deleter](../sharepoint/how-to-add-a-deleter-method.md).
+- [Cómo: agregar un método Creator](../sharepoint/how-to-add-a-creator-method.md).
+- [Cómo: agregar un método Updater](../sharepoint/how-to-add-an-updater-method.md).
+- [Cómo: agregar un método de eliminación](../sharepoint/how-to-add-a-deleter-method.md).
 
 ## <a name="see-also"></a>Vea también
 
-[Diseñar un modelo de conectividad a datos empresariales](../sharepoint/designing-a-business-data-connectivity-model.md)
-[crear un modelo de conectividad a datos empresariales](../sharepoint/creating-a-business-data-connectivity-model.md)
-[información general de las herramientas de diseño del modelo BDC](../sharepoint/bdc-model-design-tools-overview.md) 
- [ Integrar datos profesionales en SharePoint](../sharepoint/integrating-business-data-into-sharepoint.md)
+[Diseñar un modelo de conectividad a datos profesionales](../sharepoint/designing-a-business-data-connectivity-model.md)
+[crear un modelo de conectividad a datos profesionales](../sharepoint/creating-a-business-data-connectivity-model.md)
+[información general sobre las herramientas de diseño del modelo BDC](../sharepoint/bdc-model-design-tools-overview.md)
+[integrar datos profesionales en SharePoint](../sharepoint/integrating-business-data-into-sharepoint.md)
