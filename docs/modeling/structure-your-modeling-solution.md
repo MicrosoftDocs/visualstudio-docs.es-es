@@ -7,12 +7,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 73a1c6458bf6afc5d6fce34208dd8c2c3ddda37f
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: fecf0d146c1116e6ec6376ffd9ad929cc9179d1c
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72748214"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72985216"
 ---
 # <a name="structure-your-modeling-solution"></a>Estructurar la solución de modelado
 
@@ -30,7 +30,7 @@ En un proyecto grande o mediano, la estructura del equipo se basa en la estructu
 
 ### <a name="to-divide-an-application-into-layers"></a>Para dividir una aplicación en capas
 
-1. Base la estructura de las soluciones en la estructura de la aplicación, como la aplicación web, aplicación de servicio o aplicación de escritorio. En la guía de arquitectura de aplicaciones de Microsoft se describe una variedad de arquitecturas comunes en [la aplicación arquetipos](http://go.microsoft.com/fwlink/?LinkId=196681).
+1. Base la estructura de las soluciones en la estructura de la aplicación, como la aplicación web, aplicación de servicio o aplicación de escritorio. En la guía de arquitectura de aplicaciones de Microsoft se describe una variedad de arquitecturas comunes en [la aplicación arquetipos](/previous-versions/msp-n-p/ee658107(v=pandp.10)).
 
 2. Cree una solución de Visual Studio, a la que llamaremos la solución de arquitectura. Esta solución se usará para crear el diseño general del sistema. Contendrá modelos, pero ningún código.
 
@@ -92,7 +92,7 @@ Por ejemplo, si usa soluciones que tienen capas de presentación, negocio y dato
 
 ### <a name="to-create-a-solution-template"></a>Para crear una plantilla de solución
 
-1. [Descargue e instale el Asistente para exportar plantillas](http://go.microsoft.com/fwlink/?LinkId=196686).
+1. [Descargue e instale el Asistente para exportar plantillas](https://marketplace.visualstudio.com/items?itemName=VisualStudioProductTeam.ExportTemplateWizard).
 
 2. Cree la estructura de solución que quiere usar como punto de partida para proyectos futuros.
 

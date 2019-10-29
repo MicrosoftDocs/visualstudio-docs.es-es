@@ -28,12 +28,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c294ce3c6dcf3a880cf5f57ca825064366e08e2b
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 736b203feb5b1a640d7865b92a6d3ad191397d26
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72668232"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72985044"
 ---
 # <a name="map-methods-on-the-call-stack-while-debugging-in-visual-studio"></a>Asignar métodos en la pila de llamadas durante la depuración en Visual Studio
 
@@ -59,7 +59,7 @@ Cree un mapa de código para hacer un seguimiento visual de la pila de llamadas 
 
   Vea:
 
-- [Vídeo: depurar visualmente con la integración del depurador del mapa de código (Channel 9)](http://go.microsoft.com/fwlink/?LinkId=293418)
+- [Vídeo: depurar visualmente con la integración del depurador del mapa de código (Channel 9)](https://channel9.msdn.com/Series/Visual-Studio-2012-Premium-and-Ultimate-Overview/Visual-Studio-Ultimate-2012Debug-visually-with-Code-Map-debugger-integration)
 
 - [Asignar la pila de llamadas](#MapStack)
 
@@ -178,7 +178,7 @@ Cree un mapa de código para hacer un seguimiento visual de la pila de llamadas 
 
 - **Cómo detener el mapa para agregar nuevas pilas de llamadas automáticamente?**
 
-   Elija ![Button &#45; Mostrar pila de llamadas en mapa de código automáticamente ](../debugger/media/debuggermap_automaticupdateicon.gif) en la barra de herramientas del mapa. Para agregar manualmente la pila de llamadas actual al mapa, presione **Ctrl**  + **MAYÚS**  +  **`** .
+   Elija ![botón &#45; Mostrar pila de llamadas en mapa de código automáticamente](../debugger/media/debuggermap_automaticupdateicon.gif)en la barra de herramientas del mapa. Para agregar manualmente la pila de llamadas actual al mapa, presione **Ctrl**  + **MAYÚS**  +  **`** .
 
    La asignación continuará resaltando las pilas de llamadas existentes en el mapa mientras realiza la depuración.
 

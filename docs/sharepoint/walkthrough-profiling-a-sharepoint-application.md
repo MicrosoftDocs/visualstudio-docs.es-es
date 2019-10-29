@@ -1,5 +1,5 @@
 ---
-title: 'Tutorial: Generación de perfiles de una aplicación de SharePoint | Microsoft Docs'
+title: 'Tutorial: generar perfiles de una aplicación de SharePoint | Microsoft Docs'
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -15,19 +15,19 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 3e10c76d40efefe28decd9efd554e928ffea20c5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d001edcd281a0c21d244704f0a068850804b8762
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62834016"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72981151"
 ---
-# <a name="walkthrough-profile-a-sharepoint-application"></a>Tutorial: Generar perfiles de una aplicación de SharePoint
-  En este tutorial se muestra cómo usar las herramientas de generación de perfiles de Visual Studio para optimizar el rendimiento de una aplicación de SharePoint. La aplicación de ejemplo es un receptor de eventos de características de SharePoint que contiene un bucle inactivo que merma el rendimiento del receptor de eventos de características. El generador de perfiles de Visual Studio le permite encontrar y eliminar la parte más cara (rendimiento más lento) del proyecto, también conocido como el *caliente*.
+# <a name="walkthrough-profile-a-sharepoint-application"></a>Tutorial: generar perfiles de una aplicación de SharePoint
+  En este tutorial se muestra cómo usar las herramientas de generación de perfiles de Visual Studio para optimizar el rendimiento de una aplicación de SharePoint. La aplicación de ejemplo es un receptor de eventos de características de SharePoint que contiene un bucle inactivo que merma el rendimiento del receptor de eventos de características. El generador de perfiles de Visual Studio le permite localizar y eliminar la parte más costosa (rendimiento más lento) del proyecto, también conocida como la *ruta de acceso activa*.
 
  En este tutorial se muestran las siguientes tareas:
 
-- [Addg una característica y un receptor de eventos de característica](#add-a-feature-and-feature-event-receiver).
+- [Addg una característica y un receptor de eventos de características](#add-a-feature-and-feature-event-receiver).
 
 - [Configurar e implementar la aplicación de SharePoint](#configure-and-deploy-the-sharepoint-application).
 
@@ -42,39 +42,39 @@ ms.locfileid: "62834016"
 
 - Ediciones compatibles de Microsoft Windows y SharePoint.
 
-- [!INCLUDE[vs_dev11_long](../sharepoint/includes/vs-dev11-long-md.md)].
+- [!INCLUDE[vs_dev11_long](../sharepoint/includes/vs-dev11-long-md.md)]Operador
 
 ## <a name="create-a-sharepoint-project"></a>Crear un proyecto de SharePoint
  Primero, cree un proyecto de SharePoint.
 
 ### <a name="to-create-a-sharepoint-project"></a>Para crear un proyecto de SharePoint
 
-1. En la barra de menús, elija **archivo** > **New** > **proyecto** para mostrar el **nuevo proyecto** cuadro de diálogo.
+1. En la barra de menús, elija **archivo**  > **nuevo**  > **proyecto** para mostrar el cuadro de diálogo **nuevo proyecto** .
 
-2. Expanda el **SharePoint** nodo bajo **Visual C#** o **Visual Basic**y, a continuación, elija el **2010** nodo.
+2. Expanda el nodo **SharePoint** en **Visual C#**  o en **Visual Basic**y, a continuación, elija el nodo **2010** .
 
-3. En el panel Plantillas, elija el **proyecto de SharePoint 2010** plantilla.
+3. En el panel plantillas, elija la plantilla de **proyecto de SharePoint 2010** .
 
-4. En el **nombre** , escriba **ProfileTest**y, a continuación, elija el **Aceptar** botón.
+4. En el cuadro **nombre** , escriba **profilete**y, a continuación, elija el botón **Aceptar** .
 
-    El **Asistente de personalización de SharePoint** aparece.
+    Aparece el **Asistente para la personalización de SharePoint** .
 
-5. En el **especificar el nivel de sitio y de seguridad para la depuración** página, escriba la dirección URL del sitio de SharePoint server donde desea depurar la definición de sitio o usar la ubicación predeterminada (http://<em>nombre del sistema</em>/) .
+5. En la página **especifique el sitio y el nivel de seguridad de la depuración** , escriba la dirección URL del sitio del servidor de SharePoint en el que desea depurar la definición del sitio o use la ubicación predeterminada (<em>nombre del sistema</em>http:///).
 
-6. En el **¿qué es el nivel de confianza para esta solución de SharePoint?** sección, elija el **implementar como solución de granja de servidores** botón de opción.
+6. En la sección **¿cuál es el nivel de confianza de esta solución de SharePoint?** , elija el botón de opción **implementar como solución de granja de servidores** .
 
-    De momento solo puede generar perfiles de soluciones de granja de servidores. Para obtener más información acerca de las soluciones en espacio aislado frente a soluciones de granja, vea [consideraciones sobre la solución en espacio aislado](../sharepoint/sandboxed-solution-considerations.md).
+    De momento solo puede generar perfiles de soluciones de granja de servidores. Para obtener más información sobre las soluciones en espacio aislado frente a las soluciones de granja, consulte [consideraciones sobre soluciones en espacio aislado](../sharepoint/sandboxed-solution-considerations.md).
 
-7. Elija la **finalizar** botón. El proyecto aparece en **el Explorador de soluciones**.
+7. Elija el botón **Finalizar** . El proyecto aparece en **Explorador de soluciones**.
 
-## <a name="add-a-feature-and-feature-event-receiver"></a>Agregar una característica y un receptor de eventos de característica
+## <a name="add-a-feature-and-feature-event-receiver"></a>Agregar una característica y un receptor de eventos de características
  A continuación, agregue una característica al proyecto junto con un receptor de eventos para esa característica. Este receptor de eventos contendrá el código cuyo perfil se va a generar.
 
 ### <a name="to-add-a-feature-and-feature-event-receiver"></a>Para agregar una característica y un receptor de eventos de características
 
-1. En **el Explorador de soluciones**, abra el menú contextual para el **características** nodo, elija **Agregar característica**y deje el nombre en el valor predeterminado, **Feature1**.
+1. En **Explorador de soluciones**, abra el menú contextual del nodo **características** , elija **Agregar característica**y deje el nombre en el valor predeterminado, **Feature1**.
 
-2. En **el Explorador de soluciones**, abra el menú contextual para **Feature1**y, a continuación, elija **agregar receptor de eventos**.
+2. En **Explorador de soluciones**, abra el menú contextual de **Feature1**y, a continuación, elija **Agregar receptor de eventos**.
 
      Esto agrega un archivo de código a la característica con varios controladores de eventos con comentarios y abre el archivo para edición.
 
@@ -151,7 +151,7 @@ ms.locfileid: "62834016"
     }
     ```
 
-5. Agregue el siguiente procedimiento a continuación el `FeatureActivated`procedimiento.
+5. Agregue el siguiente procedimiento debajo del procedimiento `FeatureActivated`.
 
     ```vb
 
@@ -178,11 +178,11 @@ ms.locfileid: "62834016"
     }
     ```
 
-6. En **el Explorador de soluciones**, abra el menú contextual del proyecto (**ProfileTest**) y, a continuación, elija **propiedades**.
+6. En **Explorador de soluciones**, abra el menú contextual del proyecto (**profilete**) y, a continuación, elija **propiedades**.
 
-7. En el **propiedades** diálogo cuadro, elija el **SharePoint** ficha.
+7. En el cuadro de diálogo **propiedades** , elija la pestaña **SharePoint** .
 
-8. En el **Active Deployment Configuration** elija **sin activación**.
+8. En la lista **configuración de implementación activa** , elija **sin activación**.
 
      La selección de esta configuración de implementación le permite activar manualmente la característica más adelante en SharePoint.
 
@@ -193,67 +193,67 @@ ms.locfileid: "62834016"
 
 ### <a name="to-configure-and-deploy-the-sharepoint-application"></a>Para configurar e implementar la aplicación de SharePoint
 
-1. En el **analizar** menú, elija **iniciar Asistente de rendimiento**.
+1. En el menú **analizar** , elija **iniciar el Asistente para rendimiento**.
 
-2. En la página uno de los **Asistente de rendimiento**, deje el método de generación de perfiles como **muestreo de la CPU** y elija el **siguiente** botón.
+2. En la página uno del **Asistente de rendimiento**, deje el método de generación de perfiles como muestreo de la **CPU** y elija el botón **siguiente** .
 
      Los demás métodos de generación de perfiles pueden utilizarse en situaciones más avanzadas de generación de perfiles. Para obtener más información, vea [Introducción a los métodos de generación de perfiles](/visualstudio/profiling/understanding-performance-collection-methods).
 
-3. En la página dos de los **Asistente de rendimiento**, deje el perfil de destino como **ProfileTest** y elija el **siguiente** botón.
+3. En la página dos del **Asistente de rendimiento**, deje el destino del perfil como **Profilet** y elija el botón **siguiente** .
 
      Si una solución tiene varios proyectos, aparecen en esta lista.
 
-4. En la página tres de los **Asistente de rendimiento**, desactive la **Habilitar generación de perfiles de interacción de capas** casilla de verificación y, a continuación, elija el **siguiente** botón.
+4. En la página tres del **Asistente de rendimiento**, desactive la casilla **Habilitar generación de perfiles de interacción de capas** y, a continuación, elija el botón **siguiente** .
 
      La característica de generación de perfiles de interacción de capa (TIP) es útil para medir el rendimiento de las aplicaciones que consultan a bases de datos y para mostrar el número de veces que se solicita una página web. Dado que esos datos no son necesarios para este ejemplo, no se habilitará esta característica.
 
-5. En la página cuatro de los **Asistente de rendimiento**, deje el **Iniciar generación de perfiles cuando finalice el asistente** casilla seleccionada y, a continuación, elija el **finalizar** botón.
+5. En la página cuatro del **Asistente de rendimiento**, deje activada la casilla **iniciar generación de perfiles cuando finalice el asistente** y, a continuación, elija el botón **Finalizar** .
 
-     El asistente permite generar perfiles de aplicación en el servidor, se muestra el **Explorador de rendimiento** ventana y, a continuación, compila, implementa y ejecuta la aplicación de SharePoint.
+     El asistente habilita la generación de perfiles de aplicaciones en el servidor, muestra la ventana de **Explorador de rendimiento** y, a continuación, compila, implementa y ejecuta la aplicación de SharePoint.
 
-## <a name="run-the-sharepoint-application"></a>Ejecute la aplicación de SharePoint
+## <a name="run-the-sharepoint-application"></a>Ejecutar la aplicación de SharePoint
  Active la característica en SharePoint, desencadenando el código de evento `FeatureActivation` para la ejecución.
 
 ### <a name="to-run-the-sharepoint-application"></a>Para ejecutar la aplicación de SharePoint
 
-1. En SharePoint, abra el **acciones del sitio** menú y, a continuación, elija **configuración del sitio**.
+1. En SharePoint, abra el menú **acciones del sitio** y, a continuación, elija Configuración del **sitio**.
 
-2. En el **acciones del sitio** lista, elija el **administrar características del sitio** vínculo.
+2. En la lista **acciones del sitio** , elija el vínculo **administrar las características del sitio** .
 
-3. En el **características** lista, elija el **activar** situado junto a **ProfileTest Feature1**.
+3. En la lista **características** , elija el botón **Activar** situado junto a la opción **Feature1 de Profilet**.
 
      Se produce una pausa al hacer esto, debido a que se llama al bucle inactivo en la función `FeatureActivated`.
 
-4. En el **inicio rápido** barra, elija **enumera** y, a continuación, en el **enumera** elija **anuncios**.
+4. En la barra **Inicio rápido** , elija **listas** y, a continuación, en la lista **listas** , elija **anuncios**.
 
      Observe que se ha agregado un nuevo anuncio a la lista que indica que se ha activado la característica.
 
 5. Cierre el sitio de SharePoint.
 
-     Después de cerrar SharePoint, el generador de perfiles crea y muestra un informe de generación de perfiles de ejemplo y lo guarda como un archivo .vsp en la **ProfileTest** carpeta del proyecto.
+     Después de cerrar SharePoint, el generador de perfiles crea y muestra un informe de generación de perfiles de ejemplo y lo guarda como un archivo. VSP en la carpeta del proyecto de **Profilet** .
 
 ## <a name="view-and-interpret-the-profile-results"></a>Ver e interpretar los resultados del perfil
  Ahora que ha ejecutado la aplicación de SharePoint y ha generado perfiles, vea los resultados de las pruebas.
 
 ### <a name="to-view-and-interpret-the-profile-results"></a>Para ver e interpretar los resultados del perfil
 
-1. En el **funciones que realizan la mayor parte del trabajo Individual** sección del informe de generación de perfiles de ejemplo, tenga en cuenta que `TimeCounter` está cerca de la parte superior de la lista.
+1. En la sección **funciones que realizan la mayor parte del trabajo individual** del informe de generación de perfiles de ejemplo, observe que `TimeCounter` está cerca de la parte superior de la lista.
 
      Esta ubicación indica que `TimeCounter` fue una de las funciones con el número más alto de muestras, lo que significa que es uno de los mayores cuellos de botella de rendimiento de la aplicación. Sin embargo, esta situación no es sorprendente, porque se diseñó deliberadamente de ese modo para fines de demostración.
 
-2. En el **funciones que realizan la mayor parte del trabajo Individual** sección, elija el `ProcessRequest` vínculo para mostrar la distribución del costo de la `ProcessRequest` función.
+2. En la sección **funciones que realizan la mayor parte del trabajo individual** , elija el vínculo `ProcessRequest` para mostrar la distribución del costo de la función `ProcessRequest`.
 
-     En el **denominadas funciones** sección `ProcessRequest`, tenga en cuenta que el **FeatureActivated** función aparece como la que más recursos consume llama a la función.
+     En la sección **funciones llamadas** de `ProcessRequest`, observe que la función **FeatureActivated** se muestra como la función más costosa llamada.
 
-3. En el **denominadas funciones** sección, elija el **FeatureActivated** botón.
+3. En la sección **funciones llamadas** , elija el botón **FeatureActivated** .
 
-     En el **denominadas funciones** sección **FeatureActivated**, el `TimeCounter` función aparece como la que más recursos consume llama a la función. En el **vista de código de función** panel, el código resaltado (`TimeCounter`) es el punto de conexión e indica que se necesita la corrección.
+     En la sección **funciones llamadas** de **FeatureActivated**, la función `TimeCounter` se muestra como la función más costosa llamada. En el panel **vista de código de función** , el código resaltado (`TimeCounter`) es la zona activa y indica dónde se necesita la corrección.
 
 4. Cierre el informe de generación de perfiles de muestreo.
 
-     Para ver el informe nuevo en cualquier momento, abra el archivo .vsp en la **Explorador de rendimiento** ventana.
+     Para volver a ver el informe en cualquier momento, abra el archivo. VSP en la ventana de **Explorador de rendimiento** .
 
-## <a name="fix-the-code-and-reprofile-the-application"></a>Corrija el código y regenerar los perfiles de la aplicación
+## <a name="fix-the-code-and-reprofile-the-application"></a>Corregir el código y regenerar el perfil de la aplicación
  Ahora que ha identificado la función de zona activa de la aplicación de SharePoint, corríjala.
 
 ### <a name="to-fix-the-code-and-reprofile-the-application"></a>Para corregir el código y regenerar los perfiles de la aplicación
@@ -262,13 +262,13 @@ ms.locfileid: "62834016"
 
 2. Guarde el proyecto.
 
-3. En **Explorador de rendimiento**, abra la carpeta destinos y, a continuación, elija el **ProfileTest** nodo.
+3. En **Explorador de rendimiento**, abra la carpeta destinos y, a continuación, elija el nodo de **Profilet** .
 
-4. En el **Explorador de rendimiento** barra de herramientas, en el **acciones** ficha, elija la **Iniciar generación de perfiles** botón.
+4. En la barra de herramientas **Explorador de rendimiento** , en la pestaña **acciones** , elija el botón **iniciar generación de perfiles** .
 
-     Si desea cambiar cualquiera de las propiedades de generación de perfiles antes de la regeneración de perfiles de la aplicación, elija el **iniciar Asistente de rendimiento** botón en su lugar.
+     Si desea cambiar cualquiera de las propiedades de generación de perfiles antes de regeneración la aplicación, elija en su lugar el botón **iniciar el Asistente de rendimiento** .
 
-5. Siga las instrucciones de la **ejecuta la aplicación SharePoint** sección anteriormente en este tema.
+5. Siga las instrucciones de la sección **ejecución de la aplicación de SharePoint** , anteriormente en este tema.
 
      La característica se debería activar mucho más rápido ahora que se ha eliminado la llamada al bucle inactivo. El informe de generación de perfiles de muestreo debería reflejarlo.
 
@@ -276,4 +276,4 @@ ms.locfileid: "62834016"
 - [Explorador de rendimiento](/visualstudio/profiling/performance-explorer)
 - [Información general sobre las sesiones de rendimiento](/visualstudio/profiling/performance-session-overview)
 - [Guía básica para la generación de perfiles de rendimiento](/visualstudio/profiling/beginners-guide-to-performance-profiling)
-- [Encontrar cuellos de botella de aplicación con Visual Studio Profiler](http://go.microsoft.com/fwlink/?LinkID=137266)
+- [Buscar cuellos de botella en la aplicación con Visual Studio Profiler](https://msdn.microsoft.com/magazine/cc337887.aspx)

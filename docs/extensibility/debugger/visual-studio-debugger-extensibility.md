@@ -11,15 +11,15 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9f8a1c2148f25a1e97cfd1369770e056d1cb907d
-ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
+ms.openlocfilehash: 58bfec6fa09f6450afb8170d60acad39edacd590
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "72568969"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72982452"
 ---
 # <a name="visual-studio-debugger-extensibility"></a>Extensibilidad del depurador de Visual Studio
-Visual Studio incluye un depurador de código fuente completamente interactivo, que proporciona una herramienta eficaz y fácil de usar para realizar un seguimiento de los errores del programa. El depurador es totalmente compatible con Visual Basic C#,, CC++/y JavaScript. Sin embargo, con el [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)], que está disponible en el [centro de descarga de Microsoft](http://go.microsoft.com/fwlink/?LinkId=214453), se pueden admitir otros lenguajes de programación en el depurador con las mismas características enriquecidas.
+Visual Studio incluye un depurador de código fuente completamente interactivo, que proporciona una herramienta eficaz y fácil de usar para realizar un seguimiento de los errores del programa. El depurador es totalmente compatible con Visual Basic C#,, CC++/y JavaScript. Sin embargo, con el [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)], que está disponible en el [centro de descarga de Microsoft](https://www.microsoft.com/download/details.aspx?id=21835), se pueden admitir otros lenguajes de programación en el depurador con las mismas características enriquecidas.
 
  El depurador de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] es el front-end común (es decir, la interfaz de usuario) para los componentes de depuración que, a su vez, son específicos del lenguaje que se depura. En el caso de los nuevos idiomas, todo lo que se necesita para la compatibilidad con el depurador de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] es crear los componentes de back-end necesarios, como un motor DE depuración (DE). Este punto es donde entra el [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)].
 

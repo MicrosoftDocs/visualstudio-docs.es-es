@@ -12,16 +12,16 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3e43c2b38d1da055a1a0a4533acc61cb3b8e6760
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: ea408640b47b04041e99b9a4bff2605b6231a92f
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66348294"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72981233"
 ---
 # <a name="visual-studio-debugging-samples"></a>Ejemplos de depuración de Visual Studio
-Dos ejemplos muestran cómo ampliar el depurador de Visual Studio mediante [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)].
+En dos ejemplos se muestra cómo ampliar el depurador de Visual Studio mediante [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)].
 
-- El ejemplo de evaluador de expresión de depurador, para lenguajes administrados, se incluye en el [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)]. En el [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] ventana, haga clic en el **ejemplos** , haga clic **todas** o **C#** en la lista de idiomas y, a continuación, haga clic en **depurador**.
+- El ejemplo de evaluador de expresiones del depurador, para los lenguajes administrados, se incluye en el [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)]. En la ventana de [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)], haga clic en la pestaña **ejemplos** , **C#** haga clic en **todos** o en la lista de idiomas y, a continuación, haga clic en **depurador**.
 
-- El Visual Studio depurar motor de ejemplo, para lenguajes nativos, está disponible en la Galería de código de MSDN. Para obtener más información, consulte [muestra de motor de depuración de Visual Studio](http://go.microsoft.com/fwlink/?LinkId=150236) en el sitio Web de Microsoft.
+- El ejemplo de motor de depuración de Visual Studio, para lenguajes nativos, está disponible en la galería de código de MSDN. Para obtener más información, vea [ejemplo del motor de depuración de Visual Studio](https://code.msdn.microsoft.com/Visual-Studio-Debug-Engine-c2e21c0e) en el sitio web de Microsoft.

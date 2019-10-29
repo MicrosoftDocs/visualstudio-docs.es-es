@@ -1,5 +1,5 @@
 ---
-title: IWebAppDiagnosticsSetup::CreateObjectWithSiteAtWebApp | Microsoft Docs
+title: 'Iwebappdiagnosticssetup (:: CreateObjectWithSiteAtWebApp | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -13,18 +13,18 @@ caps.latest.revision: 5
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 42f92cfe9245a5e3a6342c31fc996ae2db50ef70
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 253b995c200566868ac9ccc06b259e0a152e1676
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63443700"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72984607"
 ---
 # <a name="iwebappdiagnosticssetupcreateobjectwithsiteatwebapp"></a>IWebAppDiagnosticsSetup::CreateObjectWithSiteAtWebApp
-Este método crea comparte la clase cuyo identificador se pasa con `rclsid` mediante el `dwClsContext`. Esto es similar a la forma [IRemoteDebugApplication::CreateInstanceAtApplication](../../winscript/reference/iremotedebugapplication-createinstanceatapplication.md) funciona, salvo que en el caso de `CreateObjectWithSiteAtWebApp` el objeto se crea de forma asincrónica en el subproceso de interfaz de usuario de la aplicación web. El objeto especificado por el identificador de clase debe implementar [IWebAppDiagnosticsObjectInitialization (interfaz)](../../winscript/reference/iwebappdiagnosticsobjectinitialization-interface.md). Una vez creado el objeto, [IWebAppDiagnosticsObjectInitialization::Initialize](../../winscript/reference/iwebappdiagnosticsobjectinitialization-initialize.md) se llama con una referencia a la aplicación de depuración PDM y `hPassToObject` parámetro de `CreateObjectWithSiteAtWebApp`. Puede usar este método para pasar a la aplicación un identificador a una canalización anónima que ha copiado mediante [DuplicateHandle](http://go.microsoft.com/fwlink/?LinkId=232450).  
+Este método crea conjuntamente la clase cuyo identificador se pasa con `rclsid` mediante el `dwClsContext`. Esto es similar a la manera en que [iremotedebugapplication (:: CreateInstanceAtApplication](../../winscript/reference/iremotedebugapplication-createinstanceatapplication.md) funciona, salvo que en el caso de `CreateObjectWithSiteAtWebApp` el objeto se crea de forma asincrónica en el subproceso de la interfaz de usuario de la aplicación Web. El objeto especificado por el identificador de clase debe implementar la [interfaz iwebappdiagnosticsobjectinitialization (](../../winscript/reference/iwebappdiagnosticsobjectinitialization-interface.md). Una vez creado el objeto, se llama a [iwebappdiagnosticsobjectinitialization (:: Initialize](../../winscript/reference/iwebappdiagnosticsobjectinitialization-initialize.md) con una referencia a la aplicación de depuración de PDM y el parámetro `hPassToObject` de `CreateObjectWithSiteAtWebApp`. Puede usar este método para pasar a la aplicación un identificador a una canalización anónima que haya copiado mediante [DuplicateHandle](/windows/win32/api/handleapi/nf-handleapi-duplicatehandle).  
   
 > [!IMPORTANT]
-> [IWebAppDiagnosticsSetup (interfaz)](../../winscript/reference/iwebappdiagnosticssetup-interface.md) es implementada por PDM v11.0 y versiones posteriores. Se encuentra en activdbg100.h.  
+> La [interfaz iwebappdiagnosticssetup (](../../winscript/reference/iwebappdiagnosticssetup-interface.md) se implementa mediante PDM v 11.0 y versiones posteriores. Se encuentra en activdbg100.h.  
   
 ## <a name="syntax"></a>Sintaxis  
   
@@ -34,13 +34,13 @@ HRESULT CreateObjectWithSiteAtWebApp(        [in] REFCLSID rclsid,         [in] 
   
 #### <a name="parameters"></a>Parámetros  
  `rclsid`  
- El identificador de clase de la clase para crear.  
+ IDENTIFICADOR de clase de la clase que se va a crear.  
   
  `dwClsContext`  
- El contexto en que se ejecutará el código. En la mayoría de los casos es CLSCTX_INPROC_SERVER.  
+ Contexto en el que se ejecutará el código. En la mayoría de los casos, es CLSCTX_INPROC_SERVER.  
   
  `riid`  
  No se utiliza.  
   
  `hPassToObject`  
- Un valor que se pasará al objeto una vez que se crea en el subproceso de interfaz de usuario, si el objeto implementa [IWebAppDiagnosticsObjectInitialization (interfaz)](../../winscript/reference/iwebappdiagnosticsobjectinitialization-interface.md).
+ Un valor que se pasará al objeto una vez que se crea en el subproceso de la interfaz de usuario, si el objeto implementa la [interfaz iwebappdiagnosticsobjectinitialization (](../../winscript/reference/iwebappdiagnosticsobjectinitialization-interface.md).

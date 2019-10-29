@@ -19,12 +19,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4a2b972c3c275f3e43819220532ac0a3c4a597e3
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 9fc852b4d5003cf809248c72ca3ac42ad3a6bf23
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72662935"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72981131"
 ---
 # <a name="validate-code-with-dependency-diagrams"></a>Validación código con diagramas de dependencia
 
@@ -52,7 +52,7 @@ Para asegurarse de que el código no entra en conflicto con su diseño, valide e
 
 Para ver qué ediciones de Visual Studio admiten esta característica, vea [compatibilidad de la edición con las herramientas de arquitectura y modelado](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
 
-Puede validar el código manualmente desde un diagrama de dependencias abierto en Visual Studio o desde el símbolo del sistema. También puede validar el código automáticamente al ejecutar compilaciones locales o compilaciones Azure Pipelines. Consulte [vídeo de Channel 9: diseñar y validar la arquitectura mediante diagramas de dependencia](http://go.microsoft.com/fwlink/?LinkID=252073).
+Puede validar el código manualmente desde un diagrama de dependencias abierto en Visual Studio o desde el símbolo del sistema. También puede validar el código automáticamente al ejecutar compilaciones locales o compilaciones Azure Pipelines. Consulte [vídeo de Channel 9: diseñar y validar la arquitectura mediante diagramas de dependencia](https://channel9.msdn.com/Series/Visual-Studio-2012-Premium-and-Ultimate-Overview/Visual-Studio-Ultimate-2012-Using-layer-diagrams-to-design-and-validate-your-architecture).
 
 > [!IMPORTANT]
 > Si desea ejecutar la validación de capas mediante Team Foundation Server (TFS), también debe instalar la misma versión de Visual Studio en el servidor de compilación.

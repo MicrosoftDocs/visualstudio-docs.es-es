@@ -1,5 +1,5 @@
 ---
-title: 'Cómo: Agregar un comando a un menú contextual'
+title: 'Cómo: agregar un comando al menú contextual'
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,14 +10,14 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f7d873a3401e37a18b938cb5785f33eb0bc9b8fb
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: e476f1db1e30a04e67e6b53f593f55ee3867fae2
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72666714"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72985128"
 ---
-# <a name="how-to-add-a-command-to-the-shortcut-menu"></a>Cómo: Agregar un comando a un menú contextual
+# <a name="how-to-add-a-command-to-the-shortcut-menu"></a>Cómo: agregar un comando al menú contextual
 
 Puede agregar comandos de menú a su lenguaje específico de dominio (DSL) para que sus usuarios puedan realizar tareas específicas de su DSL. Los comandos aparecen en el menú contextual cuando los usuarios hacen clic con el botón secundario en el diagrama. Puede definir un comando para que solo aparezca en el menú en circunstancias específicas. Por ejemplo, puede hacer que el comando sea visible solo cuando el usuario haga clic en tipos específicos de elementos, o en elementos con unos estados determinados.
 
@@ -28,8 +28,6 @@ En Resumen, los pasos se realizan en el proyecto DslPackage de la siguiente mane
 2. [Actualice el número de versión del paquete en package.TT](#version). Tiene que hacerlo siempre que cambie Commands.vsct
 
 3. [Escriba los métodos en la clase CommandSet](#CommandSet) para que el comando sea visible y para definir lo que desea que haga el comando.
-
-   Para obtener ejemplos, vea el [sitio web del SDK de visualización y modelado](http://go.microsoft.com/fwlink/?LinkID=185579).
 
 > [!NOTE]
 > También puede modificar el comportamiento de algunos comandos existentes, como Cortar, Pegar, Seleccionar todo e Imprimir invalidando los métodos en CommandSet.cs. Para obtener más información, vea [Cómo: modificar un comando de menú estándar](../modeling/how-to-modify-a-standard-menu-command-in-a-domain-specific-language.md).
@@ -102,7 +100,7 @@ Use el método de este tema si:
     </VisibilityConstraints>
     ```
 
-4. Defina los nombres que usó para los GUID y los identificadores. Para ello, agregue un elemento `Symbols` en el elemento `CommandTable`, después del elemento `Commands`.
+4. Defina los nombres que usó para los GUID e identificadores. Para ello, agregue un elemento `Symbols` en el elemento `CommandTable`, después del elemento `Commands`.
 
     ```xml
     <Symbols>
@@ -362,8 +360,8 @@ protected override IList<MenuCommand> GetMenuCommands()
 ## <a name="see-also"></a>Vea también
 
 - [Escribir código para personalizar lenguajes específicos de dominio](../modeling/writing-code-to-customise-a-domain-specific-language.md)
-- [Cómo: Modificar comandos de menú estándar](../modeling/how-to-modify-a-standard-menu-command-in-a-domain-specific-language.md)
-- [Implementar soluciones de lenguajes específicos de dominio](msi-and-vsix-deployment-of-a-dsl.md)
+- [Cómo: modificar un comando de menú estándar](../modeling/how-to-modify-a-standard-menu-command-in-a-domain-specific-language.md)
+- [Implementación de soluciones de lenguajes específicos de dominio](msi-and-vsix-deployment-of-a-dsl.md)
 - [Código de ejemplo: diagramas de circuitos](https://code.msdn.microsoft.com/Visualization-Modeling-SDK-763778e8)
 
 [!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]

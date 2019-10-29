@@ -1,5 +1,5 @@
 ---
-title: 'Tutorial: Diseñar un área de formulario de Outlook'
+title: 'Tutorial: diseñar un área de formulario de Outlook'
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -12,14 +12,14 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 4a346686ee89862abef046c066614eddce1cf3a3
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.openlocfilehash: 01cfe55964a1d61c2ad200c9538ced9ff0aa5599
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71255757"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72985463"
 ---
-# <a name="walkthrough-design-an-outlook-form-region"></a>Tutorial: Diseñar un área de formulario de Outlook
+# <a name="walkthrough-design-an-outlook-form-region"></a>Tutorial: diseñar un área de formulario de Outlook
   Las áreas de formulario personalizadas extienden los formularios estándar o personalizados de Microsoft Office Outlook. En este tutorial diseñará un área de formulario personalizada que aparece como una nueva página en la ventana del inspector de un elemento de contacto. Esta área de formulario muestra una asignación de cada dirección incluida para el contacto, enviando la información de la dirección al sitio web de búsqueda local de Windows Live. Para obtener información sobre las áreas de formulario, consulte [crear áreas de formulario de Outlook](../vsto/creating-outlook-form-regions.md).
 
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]
@@ -37,16 +37,16 @@ ms.locfileid: "71255757"
 - Probar el área de formulario de Outlook.
 
 > [!NOTE]
-> Es posible que el equipo muestre nombres o ubicaciones diferentes para algunos de los elementos de la interfaz de usuario de Visual Studio en las siguientes instrucciones. La edición de Visual Studio que se tenga y la configuración que se utilice determinan estos elementos. Para más información, vea [Personalizar el IDE de Visual Studio](../ide/personalizing-the-visual-studio-ide.md).
+> Es posible que tu equipo muestre nombres o ubicaciones diferentes para algunos de los elementos de la interfaz de usuario de Visual Studio en las siguientes instrucciones. La edición de Visual Studio que se tenga y la configuración que se utilice determinan estos elementos. Para más información, vea [Personalizar el IDE de Visual Studio](../ide/personalizing-the-visual-studio-ide.md).
 
 ## <a name="prerequisites"></a>Requisitos previos
  Necesita los componentes siguientes para completar este tutorial:
 
 - [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]
 
-- [!INCLUDE[Outlook_14_short](../vsto/includes/outlook-14-short-md.md)]o posterior.
+- [!INCLUDE[Outlook_14_short](../vsto/includes/outlook-14-short-md.md)] o posterior.
 
-  ![vínculo a vídeo](../vsto/media/playvideo.gif "vínculo a vídeo") Para obtener una versión en vídeo de este tema [, consulte el vídeo sobre cómo: Diseñar un área](http://go.microsoft.com/fwlink/?LinkID=140824)de formulario de Outlook.
+  ![vínculo a vídeo](../vsto/media/playvideo.gif "vínculo a vídeo") Para obtener una versión en vídeo de este tema, vea [el vídeo cómo: diseñar un área de formulario de Outlook](/previous-versions/visualstudio/visual-studio-2008/cc837160(v=vs.90)).
 
 ## <a name="create-a-new-outlook-vsto-add-in-project"></a>Crear un nuevo proyecto de complemento de VSTO de Outlook
  En primer lugar, cree un proyecto básico de complemento de VSTO.
@@ -59,7 +59,7 @@ ms.locfileid: "71255757"
 
 3. Guarde el proyecto en cualquier directorio.
 
-     Para obtener más información, vea [Cómo: Cree proyectos de Office en Visual](../vsto/how-to-create-office-projects-in-visual-studio.md)Studio.
+     Para obtener más información, vea [Cómo: crear proyectos de Office en Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).
 
 ## <a name="add-a-form-region-to-the-outlook-vsto-add-in-project"></a>Agregar un área de formulario al proyecto de complemento de VSTO de Outlook
  Una solución de complemento de VSTO de Outlook puede contener uno o varios elementos de área de formulario de Outlook. Agregue un elemento de área de formulario al proyecto mediante el asistente **nueva área de formulario de Outlook** .
@@ -122,7 +122,7 @@ ms.locfileid: "71255757"
 
     Se expone la clase de generador de áreas de formulario llamada `MapItFactory`.
 
-3. Agregue el código siguiente al controlador de eventos `MapItFactory_FormRegionInitializing`. Se llama a este controlador de eventos cuando el usuario abre un elemento de contacto. El siguiente código determina si el elemento de contacto contiene una dirección. Si el elemento de contacto no contiene una dirección, este código establece la <xref:System.ComponentModel.CancelEventArgs.Cancel%2A> propiedad de la <xref:Microsoft.Office.Tools.Outlook.FormRegionInitializingEventArgs> clase en **true** y no se muestra el área de formulario. De lo contrario, el complemento de VSTO provoca el evento <xref:Microsoft.Office.Tools.Outlook.FormRegionControl.FormRegionShowing> y muestra el área de formulario.
+3. Agregue el código siguiente al controlador de eventos `MapItFactory_FormRegionInitializing`. Se llama a este controlador de eventos cuando el usuario abre un elemento de contacto. El siguiente código determina si el elemento de contacto contiene una dirección. Si el elemento de contacto no contiene una dirección, este código establece la propiedad <xref:System.ComponentModel.CancelEventArgs.Cancel%2A> de la clase <xref:Microsoft.Office.Tools.Outlook.FormRegionInitializingEventArgs> en **true** y no se muestra el área de formulario. De lo contrario, el complemento de VSTO provoca el evento <xref:Microsoft.Office.Tools.Outlook.FormRegionControl.FormRegionShowing> y muestra el área de formulario.
 
     [!code-csharp[Trin_Outlook_FR_Separate#1](../vsto/codesnippet/CSharp/Trin_Outlook_FR_Separate_O12/MapIt.cs#1)]
     [!code-vb[Trin_Outlook_FR_Separate#1](../vsto/codesnippet/VisualBasic/Trin_Outlook_FR_Separate_O12/MapIt.vb#1)]
@@ -176,8 +176,8 @@ ms.locfileid: "71255757"
 - [Obtener acceso a un área de formulario en tiempo de ejecución](../vsto/accessing-a-form-region-at-run-time.md)
 - [Crear áreas de formulario de Outlook](../vsto/creating-outlook-form-regions.md)
 - [Instrucciones para crear áreas de formulario de Outlook](../vsto/guidelines-for-creating-outlook-form-regions.md)
-- [Tutorial: Importar un área de formulario diseñada en Outlook](../vsto/walkthrough-importing-a-form-region-that-is-designed-in-outlook.md)
-- [Cómo: Agregar un área de formulario a un proyecto de complemento de Outlook](../vsto/how-to-add-a-form-region-to-an-outlook-add-in-project.md)
+- [Tutorial: importar un área de formulario diseñada en Outlook](../vsto/walkthrough-importing-a-form-region-that-is-designed-in-outlook.md)
+- [Cómo: agregar un área de formulario a un proyecto de complemento de Outlook](../vsto/how-to-add-a-form-region-to-an-outlook-add-in-project.md)
 - [Asociar un área de formulario a una clase de mensaje de Outlook](../vsto/associating-a-form-region-with-an-outlook-message-class.md)
 - [Acciones personalizadas en áreas de formulario de Outlook](../vsto/custom-actions-in-outlook-form-regions.md)
-- [Cómo: Impedir que Outlook muestre un área de formulario](../vsto/how-to-prevent-outlook-from-displaying-a-form-region.md)
+- [Cómo: impedir que Outlook muestre un área de formulario](../vsto/how-to-prevent-outlook-from-displaying-a-form-region.md)
