@@ -9,12 +9,12 @@ metadata:
   ms.author: mikejo
   manager: jillfra
   ms.date: 09/17/2019
-  ms.openlocfilehash: fcb3e40870d6f916cf754368359a90215ce1b665
-  ms.sourcegitcommit: 53bc4c11b82882ab658e34c65ae374060f823531
+  ms.openlocfilehash: b0fb7ff139ce91e981fa5fd5a9c43d1e335a1525
+  ms.sourcegitcommit: ab18c9d850192fc9ccec10961f1126e8b0cba8da
   ms.translationtype: HT
   ms.contentlocale: es-ES
-  ms.lasthandoff: 09/19/2019
-  ms.locfileid: "71130624"
+  ms.lasthandoff: 10/30/2019
+  ms.locfileid: "73061111"
 landingContent:
 - title: Acerca de la generación de perfiles
   linkLists:
@@ -41,7 +41,7 @@ landingContent:
     - text: Introducción al análisis del uso de CPU
       url: beginners-guide-to-performance-profiling.md
     - text: Introducción a la medición del uso de la memoria
-      url: beginners-guide-to-performance-profiling.md
+      url: memory-usage.md
 - title: Más herramientas de rendimiento
   linkLists:
   - linkListType: how-to-guide

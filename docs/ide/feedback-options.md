@@ -15,12 +15,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-ide-general
-ms.openlocfilehash: 79b369fdc4bed2489b997e59215264ebaca03c74
-ms.sourcegitcommit: 3fe6bed9ef8fb1478106645f655c7472009ae43a
+ms.openlocfilehash: 34fcf81b7c7314716144bc77202d7b98525a8e4f
+ms.sourcegitcommit: 4f82de3fb0cfae226aef1abb40c47e63d2036a5c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "64556763"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72919084"
 ---
 # <a name="visual-studio-feedback-options"></a>Opciones de comentarios de Visual Studio
 
@@ -75,7 +75,7 @@ Las versiones preliminares de Visual Studio tienen un elemento de menú **Valora
 Existen dos formas de ayudarnos a mejorar la documentación:
 
 * Elija el botón de comentarios **¿Le resultó útil esta página?** ubicado en la parte inferior de la página. Encontrará este botón en todas nuestras páginas de documentación.
-* Use su cuenta de GitHub para proporcionar comentarios sobre cualquier página de Visual Studio en [docs.microsoft.com](https://docs.microsoft.com/visualstudio/). Para ello, elija el botón **Enviar comentario sobre**  > **esta página**, que también está situado en la parte inferior de la página.
+* Use su cuenta de GitHub para proporcionar comentarios sobre cualquier página de Visual Studio en [docs.microsoft.com](/visualstudio/). Para ello, elija el botón **Enviar comentario sobre**  > **esta página**, que también está situado en la parte inferior de la página.
 
 ## <a name="contact-microsoft-support"></a>Ponerse en contacto con el soporte técnico de Microsoft
 

@@ -93,12 +93,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2741e86bdc8e59434472242210cd6de2ffa8cee9
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: c71b281a89d0465ac80f04de868b16cc5468429a
+ms.sourcegitcommit: 4f82de3fb0cfae226aef1abb40c47e63d2036a5c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72655554"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72919076"
 ---
 # <a name="resources-for-troubleshooting-integrated-development-environment-errors"></a>Recursos para solucionar problemas de errores en el entorno de desarrollo integrado
 
@@ -119,7 +119,7 @@ Puede acceder a foros, blogs, chats y otros recursos en el sitio web de las [com
 
 ## <a name="product-support"></a>Soporte técnico
 
-Si aún tiene preguntas después de recurrir a estos otros recursos, puede ponerse en contacto con los servicios de soporte técnico de Microsoft en el sitio web [Soporte técnico de Microsoft](http://go.microsoft.com/fwlink/?linkid=1782). Para obtener información sobre los servicios de soporte técnico disponibles en su área, vea [Opciones de comentarios de Visual Studio](../../ide/feedback-options.md).
+Si aún tiene preguntas después de recurrir a estos otros recursos, puede ponerse en contacto con los servicios de soporte técnico de Microsoft en el sitio web [Soporte técnico de Microsoft](https://support.microsoft.com/en-us). Para obtener información sobre los servicios de soporte técnico disponibles en su área, vea [Opciones de comentarios de Visual Studio](../../ide/feedback-options.md).
 
 ## <a name="see-also"></a>Vea también
 

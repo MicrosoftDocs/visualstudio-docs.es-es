@@ -11,20 +11,20 @@ ms.workload:
 - python
 - data-science
 - azure
-ms.openlocfilehash: 81dbe6189557f38daa23983a100c295654299a5d
-ms.sourcegitcommit: 3cda0d58c5cf1985122b8977b33a171c7359f324
+ms.openlocfilehash: 4d205ee2bbc0a6e9c44c34f3b0487abb4f22283e
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/29/2019
-ms.locfileid: "70154867"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72983661"
 ---
 # <a name="azure-cloud-service-projects-for-python"></a>Proyectos de servicio en la nube de Azure para Python
 
 Visual Studio proporciona plantillas para ayudarle a empezar a crear Azure Cloud Services con Python.
 
-Un [servicio en la nube](https://docs.microsoft.com/azure/cloud-services/) consta de cualquier número de *roles de trabajo* y *roles web*, cada uno de los cuales realiza una tarea conceptualmente independiente, pero se puede replicar por separado entre máquinas virtuales según sea necesario para escalar. Los roles web proporcionan hospedaje para aplicaciones web de front-end. En lo que se refiere a Python, se puede usar cualquier marco web que admita WSGI para escribir este tipo de aplicación (tal como admite la [plantilla Proyecto web](python-web-application-project-templates.md)). Los roles de trabajo están pensados para procesos de larga ejecución que no interactúan directamente con los usuarios. Suelen usar los paquetes del paquete "azure", que se instala con [`pip install azure`](https://pypi.org/project/azure).
+Un [servicio en la nube](/azure/cloud-services/) consta de cualquier número de *roles de trabajo* y *roles web*, cada uno de los cuales realiza una tarea conceptualmente independiente, pero se puede replicar por separado entre máquinas virtuales según sea necesario para escalar. Los roles web proporcionan hospedaje para aplicaciones web de front-end. En lo que se refiere a Python, se puede usar cualquier marco web que admita WSGI para escribir este tipo de aplicación (tal como admite la [plantilla Proyecto web](python-web-application-project-templates.md)). Los roles de trabajo están pensados para procesos de larga ejecución que no interactúan directamente con los usuarios. Suelen usar los paquetes del paquete "azure", que se instala con [`pip install azure`](https://pypi.org/project/azure).
 
-Este artículo contiene detalles sobre la plantilla de proyecto y otra compatibilidad en Visual Studio 2017 y versiones posteriores (las versiones anteriores son similares, pero con algunas diferencias). Para más información sobre el trabajo con Azure desde Python, visite el [Centro para desarrolladores de Python para Azure](https://docs.microsoft.com/azure/python/).
+Este artículo contiene detalles sobre la plantilla de proyecto y otra compatibilidad en Visual Studio 2017 y versiones posteriores (las versiones anteriores son similares, pero con algunas diferencias). Para más información sobre el trabajo con Azure desde Python, visite el [Centro para desarrolladores de Python para Azure](/azure/python/).
 
 ## <a name="create-a-project"></a>Crear un proyecto
 

@@ -10,12 +10,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: b111d3b0fe2f4af9098186aff3ef661045215473
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: eb3e3ca5d18429c60894c42bda12328836dc6fc8
+ms.sourcegitcommit: bb5425b9c6d8fd7135d9584c2963831754071347
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62959519"
+ms.lasthandoff: 10/29/2019
+ms.locfileid: "73024720"
 ---
 # <a name="edit-python-code"></a>Editar código de Python
 
@@ -31,7 +31,7 @@ También puede usar el **Examinador de objetos** de Visual Studio (**Ver** > **O
 
 IntelliSense ofrece [finalizaciones](#completions), [ayuda para la firma](#signature-help), [información rápida](#quick-info) y [coloración de código](#code-coloring). Visual Studio 2017 versión 15.7 y posteriores también admite [sugerencias de tipo](#type-hints).
 
-Para mejorar el rendimiento, IntelliSense en Visual Studio 2017, versión 15.5 y versiones anteriores, depende de la base de datos de finalizaciones que se genera para cada entorno de Python en el proyecto. Si agrega, quita o actualiza paquetes las bases de datos puede que necesiten actualizarse. El estado de la base de datos se muestra en la ventana **Entornos de Python** (un elemento relacionado del **Explorador de soluciones**) en la pestaña **IntelliSense** (vea [Referencia de pestañas de la ventana Entorno de Python](python-environments-window-tab-reference.md#intellisense-tab)).
+Para mejorar el rendimiento, IntelliSense en Visual Studio 2017, versión 15.5 y versiones anteriores, depende de la base de datos de finalizaciones que se genera para cada entorno de Python en el proyecto. Si agrega, quita o actualiza paquetes las bases de datos puede que necesiten actualizarse. El estado de la base de datos se muestra en la ventana **Entornos de Python** (un elemento relacionado del **Explorador de soluciones**) en la pestaña **IntelliSense** (vea [Referencia de pestañas de la ventana Entorno de Python](python-environments-window-tab-reference.md)).
 
 Visual Studio 2017, versión 15.6 y posteriores, se utiliza un medio diferente para proporcionar finalizaciones de IntelliSense que no dependen de la base de datos.
 
@@ -111,13 +111,13 @@ Al usar el comando **Ejecutar MyPy** en este código se genera el siguiente erro
 
 ::: moniker range="vs-2017"
 > [!Tip]
-> Para las versiones de Python anteriores a la 3.5, Visual Studio también muestra las sugerencias de tipo que proporcione a través de *archivos de código auxiliar* de Typeshed (*.pyi*). Puede usar archivos de código auxiliar siempre que no quiera incluir sugerencias de tipo directamente en el código o cuando quiera crear sugerencias de tipo para una biblioteca que no los usa directamente. Para obtener más información, vea [Create Stubs for Python Modules](https://github.com/python/mypy/wiki/Creating-Stubs-For-Python-Modules) (Creación de códigos auxiliares para los módulos de Python) en la wiki de proyecto de MyPy.
+> Para las versiones de Python anteriores a la 3.5, Visual Studio también muestra las sugerencias de tipo que proporcione a través de *archivos de código auxiliar* de Typeshed ( *.pyi*). Puede usar archivos de código auxiliar siempre que no quiera incluir sugerencias de tipo directamente en el código o cuando quiera crear sugerencias de tipo para una biblioteca que no los usa directamente. Para obtener más información, vea [Create Stubs for Python Modules](https://github.com/python/mypy/wiki/Creating-Stubs-For-Python-Modules) (Creación de códigos auxiliares para los módulos de Python) en la wiki de proyecto de MyPy.
 >
 > Actualmente Visual Studio no admite sugerencias de tipo en los comentarios.
 ::: moniker-end
 ::: moniker range=">=vs-2019"
 > [!Tip]
-> Para las versiones de Python anteriores a la 3.5, Visual Studio también muestra las sugerencias de tipo que proporcione a través de *archivos de código auxiliar* de Typeshed (*.pyi*). Puede usar archivos de código auxiliar siempre que no quiera incluir sugerencias de tipo directamente en el código o cuando quiera crear sugerencias de tipo para una biblioteca que no los usa directamente. Para obtener más información, vea [Create Stubs for Python Modules](https://github.com/python/mypy/wiki/Creating-Stubs-For-Python-Modules) (Creación de códigos auxiliares para los módulos de Python) en la wiki de proyecto de MyPy.
+> Para las versiones de Python anteriores a la 3.5, Visual Studio también muestra las sugerencias de tipo que proporcione a través de *archivos de código auxiliar* de Typeshed ( *.pyi*). Puede usar archivos de código auxiliar siempre que no quiera incluir sugerencias de tipo directamente en el código o cuando quiera crear sugerencias de tipo para una biblioteca que no los usa directamente. Para obtener más información, vea [Create Stubs for Python Modules](https://github.com/python/mypy/wiki/Creating-Stubs-For-Python-Modules) (Creación de códigos auxiliares para los módulos de Python) en la wiki de proyecto de MyPy.
 >
 > Visual Studio incluye un conjunto de agrupaciones de archivos Typeshed para Python 2 y 3, por lo que no se necesitan otras descargas. Sin embargo, si quiere usar un conjunto de archivos distinto, puede especificar la ruta en las opciones **Herramientas** > **Opciones** > **Python** > **Servidor de lenguaje**. Consulte [Opciones: servidor de lenguaje](python-support-options-and-settings-in-visual-studio.md#language-server-options).
 >
@@ -213,7 +213,7 @@ La barra de navegación se muestra en la parte superior de cada ventana del edit
 
 ### <a name="navigate-to"></a>Navegar a
 
-El comando **Editar** > **Navegar a** (**Ctrl**+**,**) muestra un cuadro de búsqueda en el editor donde puede escribir cualquier cadena y consultar las posibles coincidencias en el código que define una función, una clase o una variable que contiene la cadena. Esta característica proporciona una función similar a **Ir a definición**, pero sin tener que buscar un uso de un identificador.
+El comando **Editar** > **Navegar a** (**Ctrl**+ **,** ) muestra un cuadro de búsqueda en el editor donde puede escribir cualquier cadena y consultar las posibles coincidencias en el código que define una función, una clase o una variable que contiene la cadena. Esta característica proporciona una función similar a **Ir a definición**, pero sin tener que buscar un uso de un identificador.
 
 Haga doble clic en cualquier nombre, o seleccione con las teclas de dirección y **Entrar**, para navegar a la definición de ese identificador.
 

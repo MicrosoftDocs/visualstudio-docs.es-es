@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0f8956626d1ae03e52b9051730c3b7767532a5e7
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 2f5bebcaf9b6e69883f8876a10a99fefb81e6105
+ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62935944"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72911936"
 ---
 # <a name="da0504-maximum-working-set-in-bytes-for-the-process-being-profiled"></a>DA0504: Espacio de trabajo máximo en bytes para el proceso del que se está generando el perfil
 
@@ -36,7 +36,7 @@ ms.locfileid: "62935944"
 
  El valor notificado incluye páginas residentes de los segmentos de memoria compartida a las que el proceso ha hecho referencia. Los archivos DLL compartidos a los que el proceso hace referencia se incluyen en los segmentos de memoria compartida que se cuentan. El valor del espacio de trabajo del proceso puede ser mayor que la cantidad de memoria virtual que el proceso ha asignado debido a los segmentos de memoria compartida.
 
- El tamaño del espacio de trabajo del proceso refleja cuánta memoria virtual está usando activamente el proceso. También se ve afectado por la cantidad de memoria física (o RAM) disponible para ejecutar la aplicación y la contención para esa memoria física de otros procesos en ejecución. Para obtener más información sobre los espacios de trabajo del proceso, consulte [Espacio de trabajo](http://go.microsoft.com/fwlink/?LinkId=177830) en la documentación de administración de memoria de Windows de MSDN.
+ El tamaño del espacio de trabajo del proceso refleja cuánta memoria virtual está usando activamente el proceso. También se ve afectado por la cantidad de memoria física (o RAM) disponible para ejecutar la aplicación y la contención para esa memoria física de otros procesos en ejecución. Para obtener más información sobre los espacios de trabajo del proceso, consulte [Espacio de trabajo](/windows/win32/memory/working-set) en la documentación de administración de memoria de Windows de MSDN.
 
 ## <a name="how-to-use-rule-data"></a>Cómo utilizar datos de regla
  La regla recopila estos datos de medición de la utilidad de supervisión de rendimiento de Windows y los notifica únicamente con fines informativos. Utilícelos para comparar el rendimiento de distintas versiones o compilaciones del programa o para entender el rendimiento de la aplicación en otros escenarios de prueba diferentes.

@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 38cde5c1500168dcb36021c530799d1d8d1effb9
-ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.openlocfilehash: 867350c1a786971a25256bbe8f60ac2bfca14a19
+ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66745318"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72910324"
 ---
 # <a name="profile-on-hpc-high-performance-computing-clusters"></a>Generar perfiles en clústeres HPC (informática de alto rendimiento)
 
@@ -34,7 +34,7 @@ Puede generar perfiles en nodos de ejecución de clústeres de Microsoft Windows
 
 Para generar perfiles en un nodo de ejecución HPC, debe hacer lo siguiente:
 
-- Instale Microsoft HPC Pack 2008 en el mismo equipo en que está Visual Studio. El equipo no tiene que formar parte del clúster HPC. Puede instalar HPC Pack en el [Centro de descarga de Microsoft](http://go.microsoft.com/fwlink/?LinkID=177414).
+- Instale Microsoft HPC Pack 2008 en el mismo equipo en que está Visual Studio. El equipo no tiene que formar parte del clúster HPC. Puede instalar HPC Pack en el [Centro de descarga de Microsoft](https://www.microsoft.com/download/details.aspx?id=4812).
 
 - Instale .NET Framework 4 y la versión independiente de Herramientas de generación de perfiles en el nodo de ejecución de HPC. Los programas de instalación de .NET Framework y el generador de perfiles independiente están disponibles en los soportes de instalación de Visual Studio. **Nota** Debe reiniciar el equipo después de instalar .NET Framework y antes de hacer lo propio con Herramientas de generación de perfiles.
 
@@ -124,7 +124,7 @@ Puede cambiar las propiedades de la sesión de rendimiento que estableció en el
 
 ### <a name="hpc-launch-properties"></a>Propiedades de inicio de HPC
 
-|Propiedad.|Descripción|
+|Propiedad.|DESCRIPCIÓN|
 |--------------|-----------------|
 |**Nodo principal**|Especifica el equipo que actúa como el nodo principal de HPC en la generación de perfiles.|
 |**Número de procesos**|Especifica el número de instancias de la aplicación que se ejecutan en la aplicación perfilada.|
@@ -135,7 +135,7 @@ Puede cambiar las propiedades de la sesión de rendimiento que estableció en el
 
 ### <a name="advanced-properties"></a>Propiedades avanzadas
 
-| Propiedad. | Descripción |
+| Propiedad. | DESCRIPCIÓN |
 |---------------------------------------| - |
 | **Nombre del proyecto** | Muestra el nombre del proyecto o la solución de [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] actual. |
 | **Limpiar cuando se detenga el generador de perfiles** | Cuando es true, quita los binarios que se han implementado en el directorio de ejecución. Los archivos y directorios creados por el programa de usuario no se quitan en este paso. Si el directorio de ejecución y el de implementación fueron creados por el IDE, el IDE intentará quitarlos, pero no podrá hacerlo si tienen archivos no implementados por el IDE. |
