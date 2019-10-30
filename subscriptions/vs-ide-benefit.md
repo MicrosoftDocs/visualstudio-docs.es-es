@@ -6,12 +6,12 @@ manager: lank
 ms.date: 08/01/2019
 ms.topic: conceptual
 description: Obtenga información sobre cómo descargar e instalar el IDE de Visual Studio incluido en la suscripción a Visual Studio.
-ms.openlocfilehash: 62992b2c9dc21063d78c135894368c93f07f76a8
-ms.sourcegitcommit: a124076dfd6b4e5aecda4d01984fee7b0c034745
+ms.openlocfilehash: 5a5acda814739f907aaa36e9b3408527b5ece732
+ms.sourcegitcommit: bcdab788085bd9931d73883fe70cd5831317dca2
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2019
-ms.locfileid: "68787861"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "72816519"
 ---
 # <a name="the-visual-studio-2019-benefit"></a>La ventaja de Visual Studio 2019
 
@@ -82,5 +82,5 @@ Para descargar el IDE:
 ## <a name="next-steps"></a>Pasos siguientes
 Una vez que instale Visual Studio, no se olvide de activar estas otras ventajas importantes:
 - [Azure DevOps](vs-azure-devops.md)
-- [Créditos de Azure](vs-azure.md)
+- [Crédito individual de Azure DevTest](vs-azure.md)
 - [Cuenta de desarrollador de Windows](vs-windows-dev.md)

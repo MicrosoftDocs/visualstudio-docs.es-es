@@ -6,12 +6,12 @@ manager: lank
 ms.date: 08/02/2019
 ms.topic: conceptual
 description: Obtenga información sobre la ventaja de Office 365 que se incluye en algunas suscripciones de Visual Studio.
-ms.openlocfilehash: ae28df2f66ff976fffd44f42c3063f790db9feb3
-ms.sourcegitcommit: a124076dfd6b4e5aecda4d01984fee7b0c034745
+ms.openlocfilehash: 65a071cbfcdc31ca2ef8a36ac5a779fc99467c17
+ms.sourcegitcommit: bcdab788085bd9931d73883fe70cd5831317dca2
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2019
-ms.locfileid: "68787911"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "72816465"
 ---
 # <a name="office-365-proplus-in-visual-studio-subscriptions"></a>Office 365 ProPlus en suscripciones de Visual Studio
 
@@ -75,4 +75,4 @@ Si planea desarrollar aplicaciones para Office, querrá activar su [suscripción
 Asegúrese de activar estas ventajas excelentes para aprovechar al máximo su suscripción de Visual Studio:
 - [Visual Studio](vs-ide-benefit.md)
 - [Azure DevOps](vs-azure-devops.md)
-- [Créditos de Azure](vs-azure.md)
+- [Crédito individual de Azure DevTest](vs-azure.md)
