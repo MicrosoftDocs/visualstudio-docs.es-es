@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 53483979600093133c2b059d9ea921cdb8a08ab1
-ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
+ms.openlocfilehash: c38ff2fcc762ccc202e2a02ecd36e942db75ad3d
+ms.sourcegitcommit: ab18c9d850192fc9ccec10961f1126e8b0cba8da
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "72911624"
+ms.lasthandoff: 10/30/2019
+ms.locfileid: "73061081"
 ---
 # <a name="create-custom-views-of-c-objects-in-the-debugger-using-the-natvis-framework"></a>Crear vistas personalizadas de C++ objetos en el depurador mediante el marco Natvis
 
@@ -319,6 +319,10 @@ En el ejemplo siguiente, la visualización solo es aplicable para el tipo `Direc
   </Expand>
 </Type>
 ```
+
+No necesita `Min` y `Max`. Son atributos opcionales. No se admiten caracteres comodín.
+
+El atributo `Name` está en el formato *filename. ext*, como *Hello. exe* o *algún archivo. dll*. No se permiten nombres de ruta de acceso.
 
 ### <a name="BKMK_DisplayString"></a>Elemento DisplayString
 El elemento `DisplayString` especifica una cadena que se va a mostrar como el valor de una variable. Acepta cadenas arbitrarias mezcladas con expresiones. Todos los datos encerrados entre llaves se interpretan como una expresión. Por ejemplo, la siguiente entrada `DisplayString`:
