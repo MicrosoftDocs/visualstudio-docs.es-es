@@ -15,12 +15,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 400e69ddaf9ebd3596edf3b926484b623225d672
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 4df842f83f92afe8a8f747135632eb30a715d43f
+ms.sourcegitcommit: 978df2feb5e64228d2e3dd430b299a5c234cda17
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72634533"
+ms.lasthandoff: 10/24/2019
+ms.locfileid: "72888498"
 ---
 # <a name="how-to-use-3d-assets-in-your-game-or-app"></a>Procedimiento Usar recursos en 3D en un juego o una aplicación
 
@@ -97,7 +97,7 @@ Cuando se utiliza la herramienta de canalización de contenido de la imagen para
 
 |Propiedad.|DESCRIPCIÓN|
 |--------------|-----------------|
-|**Compress**|Especifica el tipo de compresión que se utiliza para el archivo de salida.<br /><br /> Las opciones disponibles son:<br /><br /> -   **Sin compresión**<br />-   **Compresión BC1_UNORM**<br />-   **Compresión BC1_UNORM_SRGB**<br />-   **Compresión BC2_UNORM**<br />-   **Compresión BC2_UNORM_SRGB**<br />-   **Compresión BC3_UNORM**<br />-   **Compresión BC3_UNORM_SRGB**<br />-   **Compresión BC4_UNORM**<br />-   **Compresión BC4_SNORM**<br />-   **Compresión BC5_UNORM**<br />-   **Compresión BC5_SNORM**<br />-   **Compresión BC6H_UF16**<br />-   **Compresión BC6H_SF16**<br />-   **Compresión BC7_UNORM**<br />-   **Compresión BC7_UNORM_SRGB**<br /><br /> Para obtener información sobre qué formatos de compresión se admiten en las diferentes versiones de DirectX, vea la [Guía de programación para DXGI](http://go.microsoft.com/fwlink/p/?LinkId=246265).|
+|**Compress**|Especifica el tipo de compresión que se utiliza para el archivo de salida.<br /><br /> Las opciones disponibles son:<br /><br /> -   **Sin compresión**<br />-   **Compresión BC1_UNORM**<br />-   **Compresión BC1_UNORM_SRGB**<br />-   **Compresión BC2_UNORM**<br />-   **Compresión BC2_UNORM_SRGB**<br />-   **Compresión BC3_UNORM**<br />-   **Compresión BC3_UNORM_SRGB**<br />-   **Compresión BC4_UNORM**<br />-   **Compresión BC4_SNORM**<br />-   **Compresión BC5_UNORM**<br />-   **Compresión BC5_SNORM**<br />-   **Compresión BC6H_UF16**<br />-   **Compresión BC6H_SF16**<br />-   **Compresión BC7_UNORM**<br />-   **Compresión BC7_UNORM_SRGB**<br /><br /> Para obtener información sobre qué formatos de compresión se admiten en las diferentes versiones de DirectX, vea la [Guía de programación para DXGI](/windows/win32/direct3ddxgi/dx-graphics-dxgi-overviews).|
 |Convertir a formato alpha premultiplicado|**Sí** para convertir la imagen al formato alfa premultiplicado en el archivo de salida, de lo contrario, **No**. Solo se cambia el archivo de salida, la imagen original no se cambia.|
 |**Generar MIP**|**Sí** para generar una cadena completa de mapas MIP en tiempo de compilación e incluirla en el archivo de salida; de lo contrario, **No**. Si es **No** y el archivo de código fuente ya contiene una cadena de mapas MIP, el archivo de salida tendrá una cadena de mapas MIP; de lo contrario, el archivo de salida no tendrá ninguna cadena de mapas MIP.|
 |**Salida de contenido**|Especifica el nombre del archivo de salida. **Importante:**  Cambiar la extensión del nombre del archivo de salida no tiene ningún efecto sobre el formato del archivo.|
@@ -122,7 +122,7 @@ Cuando se utiliza la herramienta de canalización de contenido del sombreador pa
 
 ### <a name="use-textures-and-images"></a>Utilizar texturas e imágenes
 
-Direct3D proporciona funciones para crear recursos de textura. En Direct3D 11, la biblioteca de utilidades D3DX11 proporciona funciones adicionales para crear recursos de texturas y vistas de recursos de textura directamente a partir de archivos de imagen. Para más información sobre cómo crear un recurso de textura en Direct3D 11, vea [Texturas](http://go.microsoft.com/fwlink/p/?LinkID=246267). Para obtener más información sobre cómo usar la biblioteca D3DX11 para crear un recurso o una vista de recursos de textura a partir de un archivo de imagen, vea [How to: Initialize a texture from a file](http://go.microsoft.com/fwlink/p/?LinkId=246268) (Cómo inicializar una textura a partir de un archivo).
+Direct3D proporciona funciones para crear recursos de textura. En Direct3D 11, la biblioteca de utilidades D3DX11 proporciona funciones adicionales para crear recursos de texturas y vistas de recursos de textura directamente a partir de archivos de imagen. Para más información sobre cómo crear un recurso de textura en Direct3D 11, vea [Texturas](/windows/win32/direct3d11/overviews-direct3d-11-resources-textures). Para obtener más información sobre cómo usar la biblioteca D3DX11 para crear un recurso o una vista de recursos de textura a partir de un archivo de imagen, vea [How to: Initialize a texture from a file](/windows/win32/direct3d11/overviews-direct3d-11-resources-textures-how-to) (Cómo inicializar una textura a partir de un archivo).
 
 ### <a name="use-3d-models"></a>Usar modelos 3D
 
@@ -130,7 +130,7 @@ Direct3D 11 no proporciona funciones para crear recursos a partir de modelos 3D.
 
 ### <a name="use-shaders"></a>Usar sombreadores
 
-Direct3D proporciona funciones para crear recursos de sombreador y enlazarlos a la canalización programable de gráficos. Para obtener más información sobre cómo crear un recurso de sombreador en Direct3D y enlazarlo a la canalización, vea [Programming guide for HLSL](http://go.microsoft.com/fwlink/p/?LinkID=261521) (Guía de programación para HLSL).
+Direct3D proporciona funciones para crear recursos de sombreador y enlazarlos a la canalización programable de gráficos. Para obtener más información sobre cómo crear un recurso de sombreador en Direct3D y enlazarlo a la canalización, vea [Programming guide for HLSL](/windows/win32/direct3dhlsl/dx-graphics-hlsl-pguide) (Guía de programación para HLSL).
 
 En la canalización programable de gráficos, cada fase de la canalización debe aportar a la siguiente fase de la canalización un resultado con formato de forma que se pueda entender. Puesto que el Diseñador de sombras solo puede crear sombreadores de píxeles, esto significa que depende de la aplicación el garantizar que los datos que recibe están en el formato que se espera. Hay varias fases del sombreador programables que tienen lugar antes que el sombreador de píxeles y que realizan transformaciones geométricas: el sombreador de vértices, el sombreador de casco, el sombreador de dominios y el sombreador de geometría. La fase de teselación no programable también tiene lugar antes que el sombreador de píxeles. Independientemente de cuál de estas fases preceda directamente al sombreador de píxeles, debe facilitar su resultado en este formato:
 

@@ -13,12 +13,12 @@ author: bowdenk7
 ms.author: wilkelly
 manager: jillfra
 monikerRange: vs-2017
-ms.openlocfilehash: c86dd5090d2cee6c49bd97f0895bba397e10c1ae
-ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.openlocfilehash: 653b2576b0076d02f2e18cedc6f9f9890fd98fe5
+ms.sourcegitcommit: 978df2feb5e64228d2e3dd430b299a5c234cda17
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "66263050"
+ms.lasthandoff: 10/24/2019
+ms.locfileid: "72888659"
 ---
 # <a name="javascript-in-visual-studio-2017"></a>JavaScript en Visual Studio 2017
 
@@ -34,7 +34,7 @@ Visual Studio admite ahora la sintaxis para actualizaciones del lenguaje ECMAScr
 ### <a name="what-is-ecmascript-2015"></a>¿Qué es ECMAScript 2015?
 
 JavaScript sigue aún evolucionando como un lenguaje de programación y [TC39](https://www.ecma-international.org/memento/tc39-m.htm) es el comité responsable de realizar actualizaciones.
-ECMAScript 2015 es una actualización del lenguaje JavaScript que incorpora funciones y sintaxis nuevas de gran utilidad. Para profundizar en las características de ES6, consulte [este](http://es6-features.org) sitio de referencia.
+ECMAScript 2015 es una actualización del lenguaje JavaScript que incorpora funciones y sintaxis nuevas de gran utilidad. Para profundizar en las características de ES6, consulte [este](http://es6-features.org/#Constants) sitio de referencia.
 
 Además, para la compatibilidad con ECMAScript 2015, Visual Studio también admite ECMAScript 2016 y tendrá compatibilidad con versiones futuras de ECMAScript cuando se publiquen. Para mantenerse informado con TC39 y los últimos cambios en ECMAScript, siga su trabajo en [Github](https://github.com/tc39).
 
@@ -238,7 +238,7 @@ Agregue más directorios como considere oportuno. Otros ejemplos incluyen los di
 Dado que [!include[vs_dev15](../../docs/misc/includes/vs_dev15_md.md)] presenta un servicio de lenguaje completamente nuevo, hay algunos comportamientos que serán diferentes o que anterior.
 Los cambios más importantes son el reemplazo de VSDoc por JSDoc, la eliminación de extensiones `.intellisense.js` personalizadas y la limitación de IntelliSense en algunos patrones de código específicos.
 
-### <a name="no-more-references-or-referencesjs"></a>No más `///<references/>` o `_references.js`
+### <a name="no-more-references-or-_referencesjs"></a>No más `///<references/>` o `_references.js`
 
 Antes era bastante difícil entender en cualquier momento dado qué archivos estaban en el ámbito de IntelliSense. En ocasiones, era recomendable tener todos los archivos en ámbito y otras veces no, y esto llevaba a configuraciones complejas que implicaban la administración manual de las referencias. En adelante, ya no necesita pensar en las administración de referencias, así que no necesita comentarios de referencias de tres barras diagonales o archivos `_references.js`.
 

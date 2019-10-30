@@ -14,12 +14,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6b91cc92abca856e3a23e7b1154e378c99923fcf
-ms.sourcegitcommit: 8a699df154464387f327691dce507d7c3d0e2aab
+ms.openlocfilehash: dbca6429c1cc1669345cda465ec9ecfe3af0ed06
+ms.sourcegitcommit: 4f82de3fb0cfae226aef1abb40c47e63d2036a5c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/27/2019
-ms.locfileid: "70060371"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72919188"
 ---
 # <a name="accessibility-features-of-visual-studio"></a>Características de accesibilidad de Visual Studio
 
@@ -51,7 +51,7 @@ Para obtener más información, vea los temas siguientes:
 - [Cómo: Cambiar las fuentes y los colores](../../ide/how-to-change-fonts-and-colors-in-visual-studio.md)
 
 > [!IMPORTANT]
-> La información de esta página podría aplicarse únicamente a los usuarios que obtengan la licencia de los productos Microsoft en Estados Unidos. Si adquirió este producto fuera de Estados Unidos, visite el sitio web [Accesibilidad de Microsoft](http://go.microsoft.com/fwlink/?LinkId=8431) para obtener una lista de los números de teléfono y las direcciones de los servicios de atención al cliente de Microsoft. Puede ponerse en contacto con la subsidiaria para averiguar si el tipo de productos y servicios que se describen en esta página están disponibles en su área. La información sobre accesibilidad también está disponible en otros idiomas.
+> La información de esta página podría aplicarse únicamente a los usuarios que obtengan la licencia de los productos Microsoft en Estados Unidos. Si adquirió este producto fuera de Estados Unidos, visite el sitio web [Accesibilidad de Microsoft](https://www.microsoft.com/accessibility/) para obtener una lista de los números de teléfono y las direcciones de los servicios de atención al cliente de Microsoft. Puede ponerse en contacto con la subsidiaria para averiguar si el tipo de productos y servicios que se describen en esta página están disponibles en su área. La información sobre accesibilidad también está disponible en otros idiomas.
 
 ::: moniker range="vs-2017"
 

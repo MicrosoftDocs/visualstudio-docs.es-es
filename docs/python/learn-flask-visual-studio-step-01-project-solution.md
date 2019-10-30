@@ -11,16 +11,16 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: d0ad3ac3c4efa6be136fa85ee0c8abbe3632e53f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 7707d993ac5fb6f73060d0f862c828e67c833872
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62958807"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72985213"
 ---
 # <a name="tutorial-get-started-with-the-flask-web-framework-in-visual-studio"></a>Tutorial: Introducción al marco web Flask en Visual Studio
 
-[Flask](http://flask.pocoo.org/) es un marco de Python ligero para aplicaciones web que proporciona los elementos básicos para el enrutamiento de direcciones URL y la representación de páginas.
+[Flask](https://palletsprojects.com/p/flask/) es un marco de Python ligero para aplicaciones web que proporciona los elementos básicos para el enrutamiento de direcciones URL y la representación de páginas.
 
 Flask es un "micromarco" porque no proporciona de forma directa características como la validación de formularios, la abstracción de bases de datos, la autenticación, etc. Dichas características se proporcionan en paquetes especiales de Python llamados *extensiones* de Flask. Las extensiones se integran perfectamente con Flask para que aparezcan como si formaran parte del mismo Flask. Por ejemplo, Flask por sí solo no proporciona un motor de plantillas de página. La creación de plantillas se proporciona mediante extensiones como Jinja y Jade, como se muestra en este tutorial.
 
@@ -126,9 +126,9 @@ Ahora que ha configurado el control de código fuente para el proyecto, puede cr
 
 1. Seleccione **Crear** para aceptar los valores predeterminados. (Puede cambiar el nombre del entorno virtual si lo desea, lo cual simplemente cambia el nombre de su subcarpeta, pero `env` es una convención estándar).
 
-1. Dé su consentimiento para los privilegios de administrador si se le solicita y tenga paciencia durante unos minutos mientras Visual Studio descarga e instala los paquetes, lo que para Flask y sus dependencias implica expandir cerca de miles de archivos en más de 100 subcarpetas. Puede ver el progreso en la ventana **Salida** de Visual Studio. Mientras espera, consulte la sección Preguntas a continuación. También puede ver una descripción de las dependencias de Flask en la página de [instalación de Flask](http://flask.pocoo.org/docs/1.0/installation/#installation) (flask.pcocoo.org).
+1. Dé su consentimiento para los privilegios de administrador si se le solicita y tenga paciencia durante unos minutos mientras Visual Studio descarga e instala los paquetes, lo que para Flask y sus dependencias implica expandir cerca de miles de archivos en más de 100 subcarpetas. Puede ver el progreso en la ventana **Salida** de Visual Studio. Mientras espera, consulte la sección Preguntas a continuación. También puede ver una descripción de las dependencias de Flask en la página de [instalación de Flask](https://flask.palletsprojects.com/en/1.0.x/installation/#installation) (flask.pcocoo.org).
 
-1. En los controles de Git de Visual Studio (en la barra de estado), seleccione el indicador de cambios (que muestra **99&#42;**) que abre la página **Cambios** en **Team Explorer**.
+1. En los controles de Git de Visual Studio (en la barra de estado), seleccione el indicador de cambios (que muestra **99&#42;** ) que abre la página **Cambios** en **Team Explorer**.
 
     La creación del entorno virtual implica cientos de cambios, pero no es necesario que incluya ninguno de ellos en el control de código fuente, dado que usted (o cualquier usuario que clone el proyecto) siempre puede volver a crear el entorno a partir de *requirements.txt*.
 
@@ -190,9 +190,9 @@ En segundo lugar, abra una ventana de comandos, vaya a la carpeta como *BasicPro
         return "Hello World!"
     ```
 
-### <a name="question-what-is-the-purpose-of-the-name-argument-to-the-flask-class"></a>Pregunta: Estoy utilizando un certificado X.509 con mi servicio y obtengo un System.Security.Cryptography.CryptographicException. ¿Cuál es el propósito del argumento __name__ para la clase de Flask?
+### <a name="question-what-is-the-purpose-of-the-__name__-argument-to-the-flask-class"></a>Pregunta: Estoy utilizando un certificado X.509 con mi servicio y obtengo un System.Security.Cryptography.CryptographicException. ¿Cuál es el propósito del argumento __name__ para la clase de Flask?
 
-Respuesta: El argumento es el nombre del módulo o del paquete de la aplicación e indica a Flask dónde se deben buscar plantillas, archivos estáticos y otros recursos que pertenecen a la aplicación. Para las aplicaciones incluidas en un solo módulo, `__name__` siempre es el valor adecuado. También es importante para las extensiones que necesitan información de depuración. Para obtener más información y argumentos adicionales, vea la [documentación sobre las clases de Flask](http://flask.pocoo.org/docs/1.0/api/#flask.Flask) (flask.pocoo.org).
+Respuesta: El argumento es el nombre del módulo o del paquete de la aplicación e indica a Flask dónde se deben buscar plantillas, archivos estáticos y otros recursos que pertenecen a la aplicación. Para las aplicaciones incluidas en un solo módulo, `__name__` siempre es el valor adecuado. También es importante para las extensiones que necesitan información de depuración. Para obtener más información y argumentos adicionales, vea la [documentación sobre las clases de Flask](https://flask.palletsprojects.com/en/1.0.x/api/#flask.Flask) (flask.pocoo.org).
 
 ### <a name="question-can-a-function-have-more-than-one-route-decorator"></a>Pregunta: Estoy utilizando un certificado X.509 con mi servicio y obtengo un System.Security.Cryptography.CryptographicException. ¿Una función puede tener más de un decorador de ruta?
 
@@ -218,9 +218,9 @@ def hello(name, msg):
     return "Hello " + name + "! Message is " + msg + "."
 ```
 
-Para cambiar el tipo, anteponga la variable con `int`, `float`, `path` (que acepta barras diagonales para delinear los nombres de las carpetas) y `uuid`. Para obtener información detallada, vea las [reglas de las variables](http://flask.pocoo.org/docs/1.0/quickstart/#variable-rules) en la documentación de Flask.
+Para cambiar el tipo, anteponga la variable con `int`, `float`, `path` (que acepta barras diagonales para delinear los nombres de las carpetas) y `uuid`. Para obtener información detallada, vea las [reglas de las variables](https://flask.palletsprojects.com/en/1.0.x/quickstart/#variable-rules) en la documentación de Flask.
 
-Los parámetros de consulta también están disponibles mediante la propiedad `request.args`, en concreto mediante el método `request.args.get`. Para obtener más información, vea la información sobre el [objeto Request](http://flask.pocoo.org/docs/1.0/quickstart/#the-request-object) de la documentación de Flask.
+Los parámetros de consulta también están disponibles mediante la propiedad `request.args`, en concreto mediante el método `request.args.get`. Para obtener más información, vea la información sobre el [objeto Request](https://flask.palletsprojects.com/en/1.0.x/quickstart/#the-request-object) de la documentación de Flask.
 
 ### <a name="question-can-visual-studio-generate-a-requirementstxt-file-from-a-virtual-environment-after-i-install-other-packages"></a>Pregunta: Estoy utilizando un certificado X.509 con mi servicio y obtengo un System.Security.Cryptography.CryptographicException. ¿Puede Visual Studio generar un archivo requirements.txt a partir de un entorno virtual después de instalar otros paquetes?
 
@@ -253,5 +253,5 @@ En este momento, el proyecto básico de Flask contiene el código de inicio y el
 
 ## <a name="go-deeper"></a>Profundizar un poco más
 
-- [Inicio rápido de Flask](http://flask.pocoo.org/docs/1.0/quickstart/) (flask.pocoo.org)
+- [Inicio rápido de Flask](https://flask.palletsprojects.com/en/1.0.x/quickstart/) (flask.pocoo.org)
 - Código fuente del tutorial en GitHub: [Microsoft/python-sample-vs-learning-flask](https://github.com/Microsoft/python-sample-vs-learning-flask)

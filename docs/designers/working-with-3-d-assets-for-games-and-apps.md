@@ -10,12 +10,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 55986a703bd53318f8c0f74b8cf661412a82b716
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 4269a6f17c83e7fe6f111c4e564ace0e40cfa7e6
+ms.sourcegitcommit: 978df2feb5e64228d2e3dd430b299a5c234cda17
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72633999"
+ms.lasthandoff: 10/24/2019
+ms.locfileid: "72888474"
 ---
 # <a name="work-with-3d-assets-for-games-and-apps"></a>Trabajar con recursos en 3D para juegos y aplicaciones
 
@@ -46,11 +46,11 @@ Los sombreadores son programas pequeños específicos del dominio que se ejecuta
 Puede usar el Diseñador de sombras de Visual Studio, que es una herramienta de diseño de sombreadores basada en gráficos, para crear efectos visuales personalizados sin conocer la programación de HLSL.
 
 > [!NOTE]
-> Para más información sobre cómo empezar con la programación de DirectX, vea [DirectX](http://go.microsoft.com/fwlink/p/?LinkId=224633). Para obtener más información sobre cómo depurar una aplicación basada en DirectX, vea [Diagnóstico de gráficos (Depurar gráficos de DirectX)](../debugger/graphics/visual-studio-graphics-diagnostics.md).
+> Para más información sobre cómo empezar con la programación de DirectX, vea [DirectX](/windows/win32/directx). Para obtener más información sobre cómo depurar una aplicación basada en DirectX, vea [Diagnóstico de gráficos (Depurar gráficos de DirectX)](../debugger/graphics/visual-studio-graphics-diagnostics.md).
 
 ## <a name="directx-version-compatibility"></a>Compatibilidad de versiones de DirectX
 
-Visual Studio utiliza DirectX para representar recursos en 2D y 3D. Puede seleccionar el representador de DirectX 11 o el representador de software Windows Advanced Rasterization Platform (WARP). El representador de DirectX 11 proporciona un procesamiento de alto rendimiento y acelerado mediante hardware en GPU de DirectX 11 y DirectX 10. El representador WARP ayuda a asegurarse de que los activos funcionen con una amplia gama de equipos (esto incluye equipos que no tienen hardware gráfico moderno y equipos con hardware gráfico integrado). Para obtener más información sobre WARP, vea [Windows Advanced Rasterization Platform (WARP) guide](http://go.microsoft.com/fwlink/p/?LinkId=224634) [Guía de Windows Advanced Rasterization Platform (WARP)].
+Visual Studio utiliza DirectX para representar recursos en 2D y 3D. Puede seleccionar el representador de DirectX 11 o el representador de software Windows Advanced Rasterization Platform (WARP). El representador de DirectX 11 proporciona un procesamiento de alto rendimiento y acelerado mediante hardware en GPU de DirectX 11 y DirectX 10. El representador WARP ayuda a asegurarse de que los activos funcionen con una amplia gama de equipos (esto incluye equipos que no tienen hardware gráfico moderno y equipos con hardware gráfico integrado). Para obtener más información sobre WARP, vea [Windows Advanced Rasterization Platform (WARP) guide](/windows/win32/direct3darticles/directx-warp) [Guía de Windows Advanced Rasterization Platform (WARP)].
 
 ## <a name="related-topics"></a>Temas relacionados
 

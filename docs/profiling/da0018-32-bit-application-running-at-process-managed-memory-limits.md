@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: da437b974eff9beb671f5fe889bec427f9f85f4c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: cadf5f605b78dd82ddf205ecfb5b0beded92a59f
+ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62989756"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72910514"
 ---
 # <a name="da0018-32-bit-application-running-at-process-managed-memory-limits"></a>DA0018: Aplicación de 32 bits ejecutándose con límites de memoria administrada de procesos
 
@@ -54,7 +54,7 @@ ms.locfileid: "62989756"
 
 - optimizar el uso de la aplicación de recursos de memoria administrada
 
-   o bien
+   O bien
 
 - tomar medidas para aligerar las restricciones arquitectónicas sobre el tamaño máximo de memoria virtual para un proceso de 32 bits
 
@@ -64,7 +64,7 @@ ms.locfileid: "62989756"
 
   Utilice la [vista Asignaciones](../profiling/dotnet-memory-allocations-view.md) para determinar la ruta de acceso de ejecución que dio lugar a estas asignaciones.
 
-  Para obtener más información sobre cómo mejorar el rendimiento de la recolección de elementos no utilizados, consulte el artículo técnico de .NET Framework [Aspectos básicos e indicaciones de rendimiento del recolector de elementos no utilizados](http://go.microsoft.com/fwlink/?LinkId=177946) en el sitio web de MSDN.
+  Para obtener más información sobre cómo mejorar el rendimiento de la recolección de elementos no utilizados, consulte el artículo técnico de .NET Framework [Aspectos básicos e indicaciones de rendimiento del recolector de elementos no utilizados](/previous-versions/dotnet/articles/ms973837(v=msdn.10)) en el sitio web de MSDN.
 
   Para aligerar desde un punto de vista arquitectónico las restricciones de memoria virtual en el tamaño de la parte privada de un espacio de direcciones de proceso, intente ejecutar este proceso de 32 bits en un equipo de 64 bits.  Un proceso de 32 bits en un equipo de 64 bits puede adquirir hasta 4 GB de memoria virtual privada.
 

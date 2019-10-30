@@ -7,12 +7,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cf2b8669fe9b516f3150829612d6999895cc69f8
-ms.sourcegitcommit: 034c503ae04e22cf840ccb9770bffd012e40fb2d
+ms.openlocfilehash: a891f6d18657bad65a1cf087da975849642b7aec
+ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/14/2019
-ms.locfileid: "72306252"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72912034"
 ---
 # <a name="update-an-existing-application-for-msbuild-15"></a>Actualización de una aplicación existente a MSBuild 15
 
@@ -38,7 +38,7 @@ El mecanismo para cambiar el proyecto para evitar la carga de MSBuild desde una 
 
 #### <a name="use-nuget-packages-preferred"></a>Uso de paquetes NuGet (preferido)
 
-En estas instrucciones se da por hecho que usa las [referencias NuGet de estilo PackageReference](https://docs.microsoft.com/nuget/consume-packages/package-references-in-project-files).
+En estas instrucciones se da por hecho que usa las [referencias NuGet de estilo PackageReference](/nuget/consume-packages/package-references-in-project-files).
 
 Cambie los archivos de proyecto para hacer referencia a ensamblados de MSBuild desde sus paquetes NuGet. Especifique `ExcludeAssets=runtime` para indicar a NuGet que los ensamblados son necesarios solo en tiempo de compilación y no deben copiarse en el directorio de salida.
 

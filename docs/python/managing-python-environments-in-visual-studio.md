@@ -9,12 +9,12 @@ manager: jillfra
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: d1826981f29ebfc29e7e5d28aa32fbff8c74ea5a
-ms.sourcegitcommit: b83fefa8177c5554cbe2c59c4d102cbc534f7cc6
+ms.openlocfilehash: a709c4b76f23529e0ffee7027bd1b6257ba00d84
+ms.sourcegitcommit: bb5425b9c6d8fd7135d9584c2963831754071347
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2019
-ms.locfileid: "69585381"
+ms.lasthandoff: 10/29/2019
+ms.locfileid: "73024710"
 ---
 # <a name="how-to-create-and-manage-python-environments-in-visual-studio"></a>Creación y administración de entornos de Python en Visual Studio
 
@@ -76,7 +76,7 @@ Use la lista desplegable situada debajo de la lista de entornos para cambiar de 
 
 La selección de un entorno no cambia su relación con los proyectos. El entorno predeterminado, que aparece en negrita en la lista, es el que usa Visual Studio para los proyectos nuevos. Para usar otro entorno con los proyectos nuevos, use el comando **Convertir este entorno en el predeterminado para nuevos proyectos**. En el contexto de un proyecto siempre puede seleccionar un entorno concreto. Para más información, vea [Selección de un entorno para un proyecto](selecting-a-python-environment-for-a-project.md).
 
-A la derecha de cada entorno de la lista figura un control que abre una ventana **interactiva** para ese entorno. (En Visual Studio 2017, versión 15.5 y anteriores, aparece otro control que actualiza la base de datos de IntelliSense para ese entorno. Vea [Referencia de pestañas de la ventana Entornos de Python](python-environments-window-tab-reference.md#intellisense-tab) para obtener información detallada sobre la base de datos).
+A la derecha de cada entorno de la lista figura un control que abre una ventana **interactiva** para ese entorno. (En Visual Studio 2017, versión 15.5 y anteriores, aparece otro control que actualiza la base de datos de IntelliSense para ese entorno. Vea [Referencia de pestañas de la ventana Entornos de Python](python-environments-window-tab-reference.md) para obtener información detallada sobre la base de datos).
 
 ::: moniker range="vs-2017"
 > [!Tip]
@@ -124,7 +124,7 @@ Por este motivo, los desarrolladores suelen crear un *entorno virtual* para un p
 
 Visual Studio permite crear directamente un entorno virtual para un proyecto. Por ejemplo, si abre un proyecto que contiene un archivo *requirements.txt* o crea un proyecto a partir de una plantilla que incluye ese archivo, Visual Studio le pide que cree automáticamente un entorno virtual e instale esas dependencias.
 
-En un proyecto abierto puede crear un nuevo entorno virtual en cualquier momento. En el **Explorador de soluciones**, expanda el nodo del proyecto, haga clic con el botón derecho en **Entornos de Python** y seleccione "Agregar entorno virtual". Para obtener más información, vea [Creación de un entorno virtual](selecting-a-python-environment-for-a-project.md#create-a-virtual-environment).
+En un proyecto abierto puede crear un nuevo entorno virtual en cualquier momento. En el **Explorador de soluciones**, expanda el nodo del proyecto, haga clic con el botón derecho en **Entornos de Python** y seleccione "Agregar entorno virtual". Para obtener más información, vea [Creación de un entorno virtual](selecting-a-python-environment-for-a-project.md#create-a-virtual-environment-1).
 
 Visual Studio además proporciona un comando para generar un archivo *requirements.txt* desde un entorno virtual, con lo que resulta sencillo volver a crear el entorno en otros equipos. Para obtener más información, vea [Use virtual environments](selecting-a-python-environment-for-a-project.md#use-virtual-environments) (Usar entornos virtuales).
 
@@ -160,7 +160,7 @@ Un entorno de Conda es el creado mediante la herramienta `conda` o con la admini
     | Campo | DESCRIPCIÓN |
     | --- | --- |
     | Proyecto | Proyecto en el que se creará el entorno (si tiene varios proyectos en la misma solución de Visual Studio). |
-    | nombre | Nombre del entorno de Conda. |
+    | Name | Nombre del entorno de Conda. |
     | Agregar paquetes desde | Elija **Archivo de entorno** si tiene un archivo *environment.yml* que describe las dependencias o elija **One or more Anaconda package names** (Uno o más nombres de paquetes de Anaconda) y muestre al menos un paquete de Python o una versión de Python en el campo a continuación. La lista de paquetes indica a Conda que cree un entorno de Python. Para instalar la versión más reciente de Python, use `python`; para instalar una versión específica, use `python=,major>.<minor>` como en `python=3.7`. También puede usar el botón del paquete para seleccionar las versiones de Python y los paquetes comunes en una serie de menús. |
     | Establecer como entorno actual | Activa el entorno nuevo en el proyecto seleccionado una vez que se crea el entorno. |
     | Establecer como entorno predeterminado para los nuevos proyectos | Establecer y activa automáticamente el entorno de Conda en los nuevos proyectos creados en Visual Studio. Esta opción es igual que usar el comando **Convertir este entorno en el predeterminado para nuevos proyectos** en la ventana **Entornos de Python**. |
@@ -215,7 +215,7 @@ Use los pasos siguientes para identificar un entorno instalado en una ubicación
 
 1. Escriba un nombre para el entorno en el campo **Descripción**.
 
-1. Escriba o busque (con **...**) la ruta de acceso del intérprete en el campo **Ruta de acceso de prefijo**.
+1. Escriba o busque (con **...** ) la ruta de acceso del intérprete en el campo **Ruta de acceso de prefijo**.
 
 1. Si Visual Studio detecta un intérprete de Python en esa ubicación (como la ruta de acceso que aparece a continuación para un entorno de conda), habilita el comando **Detección automática**. Cuando selecciona **Detección automática**, se completan los campos restantes. También puede completar estos campos de manera manual.
 
@@ -239,7 +239,7 @@ Use los pasos siguientes para identificar un entorno instalado en una ubicación
 
     ![Opción de entorno personalizado en el cuadro de diálogo Agregar entorno](media/environments/environments-custom-2-2019.png)
 
-1. En los campos que se proporcionan en el cuadro de diálogo, escriba o busque (con **...**) la ruta de acceso del intérprete en **Ruta de acceso del prefijo**, que se rellena en la mayoría de los otros campos. Después de revisar esos valores y modificarlos según sea necesario, seleccione **Agregar**. 
+1. En los campos que se proporcionan en el cuadro de diálogo, escriba o busque (con **...** ) la ruta de acceso del intérprete en **Ruta de acceso del prefijo**, que se rellena en la mayoría de los otros campos. Después de revisar esos valores y modificarlos según sea necesario, seleccione **Agregar**. 
 
     ![Campos para especificar detalles de la opción de un entorno personalizado en el cuadro de diálogo Agregar entorno](media/environments/environments-custom-3-2019.png)
 

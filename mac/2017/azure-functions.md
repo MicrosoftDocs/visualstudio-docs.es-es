@@ -6,12 +6,12 @@ ms.author: crdun
 ms.date: 05/06/2018
 ms.technology: vs-ide-install
 ms.assetid: 25CD47A4-5B32-4734-8EF3-E24A02AABF29
-ms.openlocfilehash: cf3fa0bf2c0e0ff112a176b10eb7e50e07f83d5a
-ms.sourcegitcommit: cf8c0fef2b9690595e99ce3802586cdd55fd37c2
+ms.openlocfilehash: 6755f6fd681dac87741b9de6a8d1fcd123a8ad9b
+ms.sourcegitcommit: bb5425b9c6d8fd7135d9584c2963831754071347
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/28/2019
-ms.locfileid: "70107886"
+ms.lasthandoff: 10/29/2019
+ms.locfileid: "73024700"
 ---
 # <a name="introduction-to-azure-functions"></a>Introducción a Azure Functions
 
@@ -160,4 +160,4 @@ Hay un valor importante que es posible que tenga que configurar: `FUNCTIONS_EXTE
 
 - **Redimensionador de imagen**: esta función crea imágenes redimensionadas cada vez que un blob se agrega a un contenedor. La plantilla toma la cadena de conexión y la ruta de acceso para el desencadenador, una salida de imagen pequeña y una salida de imagen media.
 
-- **Token de SAS**: esta función genera un token de SAS para un contenedor y nombre de blob de Azure Storage determinados. Además del nombre de función, esta plantilla también tiene una propiedad de ruta de acceso y de conexión. La propiedad de ruta de acceso es la ruta de acceso dentro de la cuenta de almacenamiento que el desencadenador supervisará. La cuenta de conexión es el nombre de la configuración de aplicación que contiene la cadena de conexión de la cuenta de almacenamiento. También se deben establecer los **derechos de acceso**. El nivel de autorización controla si la función requiere una clave de API y qué clave utilizar; Función usa una tecla de función; Administrador usa la clave maestra. Para obtener más información, vea el ejemplo [C# Azure Function for generating SAS tokens](https://azure.microsoft.com/resources/samples/functions-dotnet-sas-token/) (Función de Azure de C# para generar tokens de SAS).
+- **Token de SAS**: esta función genera un token de SAS para un contenedor y nombre de blob de Azure Storage determinados. Además del nombre de función, esta plantilla también tiene una propiedad de ruta de acceso y de conexión. La propiedad de ruta de acceso es la ruta de acceso dentro de la cuenta de almacenamiento que el desencadenador supervisará. La cuenta de conexión es el nombre de la configuración de aplicación que contiene la cadena de conexión de la cuenta de almacenamiento. También se deben establecer los **derechos de acceso**. El nivel de autorización controla si la función requiere una clave de API y qué clave utilizar; Función usa una tecla de función; Administrador usa la clave maestra. Para obtener más información, vea el ejemplo [C# Azure Function for generating SAS tokens](https://github.com/Azure-Samples/functions-dotnet-sas-token/) (Función de Azure de C# para generar tokens de SAS).

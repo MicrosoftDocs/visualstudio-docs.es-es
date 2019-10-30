@@ -12,12 +12,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: ca8aaf0af2ad7374137752783b242a40e94f706c
-ms.sourcegitcommit: 2bbcba305fd0f8800fd3d9aa16f7647ee27f3a4b
+ms.openlocfilehash: 4e84704d4ca37dd9e36da3838b5b1b23f068568c
+ms.sourcegitcommit: 978df2feb5e64228d2e3dd430b299a5c234cda17
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/17/2019
-ms.locfileid: "68300544"
+ms.lasthandoff: 10/24/2019
+ms.locfileid: "72888575"
 ---
 # <a name="update-visual-studio-while-on-a-servicing-baseline"></a>Actualización de Visual Studio mientras se encuentra en una base de referencia de mantenimiento
 
@@ -28,7 +28,7 @@ A lo largo de su ciclo de vida, Visual Studio se actualiza con frecuencia. Hay d
 
 Los administradores de empresa pueden elegir mantener sus clientes en una línea base de mantenimiento. Tras la publicación de una línea base de mantenimiento, es posible aplicar la anterior con las actualizaciones de mantenimiento durante un año.
 
-La opción de línea base de mantenimiento concede más flexibilidad a los desarrolladores y administradores para adoptar las nuevas características, las correcciones de errores o los componentes incluidos en las nuevas actualizaciones menores. La primera línea de base de mantenimiento es 16.0.x. Para obtener más información, vea [Opciones de soporte técnico para clientes de las versiones Enterprise y Professional](https://docs.microsoft.com/visualstudio/releases/2019/servicing#support-options-for-enterprise-and-professional-customers).
+La opción de línea base de mantenimiento concede más flexibilidad a los desarrolladores y administradores para adoptar las nuevas características, las correcciones de errores o los componentes incluidos en las nuevas actualizaciones menores. La primera línea de base de mantenimiento es 16.0.x. Para obtener más información, vea [Opciones de soporte técnico para clientes de las versiones Enterprise y Professional](/visualstudio/releases/2019/servicing#support-options-for-enterprise-and-professional-customers).
 
 ## <a name="how-to-get-onto-a-servicing-baseline"></a>Incorporación a una línea de base de mantenimiento
 

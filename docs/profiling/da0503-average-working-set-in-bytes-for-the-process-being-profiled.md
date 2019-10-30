@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5e2453b73d7dae0a6a53130156cdb1ce35d38d43
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 4f2f349c4ca2172ac2be6c22f3fe999ca0a3cff0
+ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62935993"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72910204"
 ---
 # <a name="da0503-average-working-set-in-bytes-for-the-process-being-profiled"></a>DA0503: Promedio de espacio de trabajo en bytes para el proceso del que se está generando el perfil
 
@@ -40,7 +40,7 @@ ms.locfileid: "62935993"
 
  El tamaño del espacio de trabajo del proceso refleja cuánta memoria virtual está usando activamente el proceso. También se ve afectado por la cantidad de memoria física (o RAM) disponible para ejecutar la aplicación y la contención para esa memoria física de otros procesos en ejecución. Si se limita la memoria física, el valor del espacio de trabajo del proceso tenderá a variar considerablemente a medida que los sistemas operativos recorten periódicamente las páginas relativamente inactivas de los espacios de trabajo del proceso para intentar equilibrar el uso de memoria entre los procesos activos.
 
- Para obtener más información sobre los espacios de trabajo del proceso, consulte [Espacio de trabajo](http://go.microsoft.com/fwlink/?LinkId=177830) en la documentación de administración de memoria de Windows de MSDN.
+ Para obtener más información sobre los espacios de trabajo del proceso, consulte [Espacio de trabajo](/windows/win32/memory/working-set) en la documentación de administración de memoria de Windows de MSDN.
 
 ## <a name="how-to-use-rule-data"></a>Cómo usar los datos de la regla
  Utilice el valor de la regla para comparar el rendimiento de distintas versiones o compilaciones del programa o para entender el rendimiento de la aplicación en otros escenarios de generación de perfiles diferentes.

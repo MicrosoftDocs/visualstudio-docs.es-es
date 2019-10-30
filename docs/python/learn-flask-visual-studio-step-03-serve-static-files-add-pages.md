@@ -11,12 +11,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: d9d6f94a81eb97cb06820381ba09e13d4bdeb9d8
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 5aa952a00075cdad262803140ab4c0360f0c62a0
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62957211"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72985182"
 ---
 # <a name="step-3-serve-static-files-add-pages-and-use-template-inheritance"></a>Paso 3: Proporcionar archivos estáticos, agregar páginas y usar la herencia de plantilla
 
@@ -44,7 +44,7 @@ Para usar una plantilla, seleccione la plantilla deseada, especifique un nombre 
 
 ### <a name="question-how-does-visual-studio-know-which-item-templates-to-offer"></a>Pregunta: Estoy utilizando un certificado X.509 con mi servicio y obtengo un System.Security.Cryptography.CryptographicException. ¿Cómo sabe Visual Studio qué plantillas de elemento debe ofrecer?
 
-Respuesta: El archivo de proyecto de Visual Studio (*.pyproj*) contiene un identificador de tipo de proyecto que lo marca como un proyecto de Python. Visual Studio utiliza este identificador de tipo para mostrar solo aquellas plantillas de elementos que sean adecuadas para el tipo de proyecto. De esta manera, Visual Studio puede proporcionar un amplio conjunto de plantillas de elemento para muchos tipos de proyecto sin pedirle que los ordene cada vez.
+Respuesta: El archivo de proyecto de Visual Studio ( *.pyproj*) contiene un identificador de tipo de proyecto que lo marca como un proyecto de Python. Visual Studio utiliza este identificador de tipo para mostrar solo aquellas plantillas de elementos que sean adecuadas para el tipo de proyecto. De esta manera, Visual Studio puede proporcionar un amplio conjunto de plantillas de elemento para muchos tipos de proyecto sin pedirle que los ordene cada vez.
 
 ## <a name="step-3-2-serve-static-files-from-your-app"></a>Paso 3-2: Proporcionar archivos estáticos desde la aplicación
 
@@ -286,6 +286,6 @@ Los pasos siguientes muestran la herencia:
 ## <a name="go-deeper"></a>Profundizar un poco más
 
 - [Publicación de la aplicación web en Azure App Service](publishing-python-web-applications-to-azure-from-visual-studio.md)
-- Para ver más funcionalidades de las plantillas de Jinja, como el flujo de control, vea la [documentación del diseñador de plantillas de Jinja](http://jinja.pocoo.org/docs/2.10/templates) (jinja.pocoo.org)
-- Para obtener información detallada sobre cómo usar `url_for`, vea [url_for](http://flask.pocoo.org/docs/1.0/api/?highlight=url_for#flask.url_for) en la documentación de objetos de aplicación de Flask (flask.pocoo.org)
+- Para ver más funcionalidades de las plantillas de Jinja, como el flujo de control, vea la [documentación del diseñador de plantillas de Jinja](http://jinja.palletsprojects.com/en/2.10.x/templates/) (jinja.pocoo.org)
+- Para obtener información detallada sobre cómo usar `url_for`, vea [url_for](https://flask.palletsprojects.com/en/1.0.x/api/#flask.url_for) en la documentación de objetos de aplicación de Flask (flask.pocoo.org)
 - Código fuente del tutorial en GitHub: [Microsoft/python-sample-vs-learning-flask](https://github.com/Microsoft/python-sample-vs-learning-flask)

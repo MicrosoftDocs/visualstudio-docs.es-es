@@ -30,12 +30,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f2241daa50a35a9714fd66b10966298279bc37fe
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 98bf3e143a3fcb6613752362acf83f5c2441b98b
+ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72747284"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72911264"
 ---
 # <a name="link-task"></a>Vincular tarea
 Incluye la herramienta del enlazador de Microsoft C++, *link.exe*. La herramienta del enlazador vincula bibliotecas y archivos de objeto de formato de archivo de objeto común (COFF) para crear un archivo ejecutable ( *.exe*) o una biblioteca de vínculos dinámicos (DLL). Para obtener más información, vea [Opciones del enlazador](/cpp/build/reference/linker-options).
@@ -65,7 +65,7 @@ Incluye la herramienta del enlazador de Microsoft C++, *link.exe*. La herramient
 
   Especifica los atributos que se colocarán en la sección `dependency` del archivo de manifiesto.
 
-  Para obtener más información, vea [/MANIFESTDEPENDENCY (Especificar las dependencias del manifiesto)](/cpp/build/reference/manifestdependency-specify-manifest-dependencies). Vea también [Publisher configuration files](https://docs.microsoft.com/windows/desktop/SbsCs/publisher-configuration-files) (Archivos de configuración del publicador).
+  Para obtener más información, vea [/MANIFESTDEPENDENCY (Especificar las dependencias del manifiesto)](/cpp/build/reference/manifestdependency-specify-manifest-dependencies). Vea también [Publisher configuration files](/windows/desktop/SbsCs/publisher-configuration-files) (Archivos de configuración del publicador).
 
 - **AdditionalOptions**
 
