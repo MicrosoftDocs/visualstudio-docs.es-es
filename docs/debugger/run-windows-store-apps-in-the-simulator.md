@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: ae0b559f4684fd4fd8b9eabff4b46b1defb5ef1f
-ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
+ms.openlocfilehash: 263759cc463bf21afa20877db320b4c83f1dc761
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "72911338"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73187527"
 ---
 # <a name="run-uwp-apps-in-the-simulator"></a>Ejecutar aplicaciones para UWP en el simulador
 
@@ -143,7 +143,9 @@ Para obtener más información acerca de la administración de conexiones de red
 
 [Ejemplo de información de red](https://code.msdn.microsoft.com/windowsapps/Network-Information-Sample-63aaa201)
 
+::: moniker range="vs-2017"
 [Analizar el uso de energía](../profiling/analyze-energy-use-in-store-apps.md)
+::: moniker-end
 
 [Windows.Networking.Connectivity](/uwp/api/windows.networking.connectivity)
 
@@ -159,4 +161,4 @@ Para apagar el simulador, presione **Ctrl + Alt + F4**.
 
 ## <a name="see-also"></a>Vea también
 
-- [Ejecutar aplicaciones desde Visual Studio](/visualstudio/debugger/debugging-windows-store-and-windows-universal-apps)
+- [Ejecutar aplicaciones desde Visual Studio](debugging-windows-store-and-windows-universal-apps.md)

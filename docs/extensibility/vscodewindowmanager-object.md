@@ -1,5 +1,5 @@
 ---
-title: VSCodeWindowManager (objeto) | Microsoft Docs
+title: Objeto VSCodeWindowManager | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -13,21 +13,19 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d1da94495019d30a8ba3df8bdaa7df0ccf2ae4d6
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: c67fb719c6ec87e7707a406e2e7f67cd71569b39
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66322931"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73189034"
 ---
-# <a name="vscodewindowmanager-object"></a>VSCodeWindowManager (objeto)
-El servicio de lenguaje implementa el Administrador de ventanas de código y es responsable de administrar los elementos gráficos (por ejemplo, la barra desplegable). Para obtener más información, consulte [personalizar Windows de código mediante la API heredada](../extensibility/customizing-code-windows-by-using-the-legacy-api.md).
+# <a name="vscodewindowmanager-object"></a>Objeto VSCodeWindowManager
 
- En la tabla siguiente se muestra las interfaces en el `VSCodeWindowManager` objeto.
+El servicio de lenguaje implementa el administrador de ventanas de código y es responsable de administrar los elementos gráficos (por ejemplo, la barra desplegable). Para obtener más información, vea [personalizar ventanas de código mediante la API heredada](/visualstudio/extensibility/customizing-code-windows-by-using-the-legacy-api?view=vs-2015).
+
+En la tabla siguiente se muestran las interfaces del objeto `VSCodeWindowManager`.
 
 |Interfaz|Descripción|
 |---------------|-----------------|
-|<xref:Microsoft.VisualStudio.TextManager.Interop.IVsCodeWindowManager>|Permite que los elementos gráficos (por ejemplo, las barras desplegables) se agregan o se quitan de una ventana de código.|
-
-## <a name="see-also"></a>Vea también
-- [Personalización de ventanas de código mediante la API heredada](../extensibility/customizing-code-windows-by-using-the-legacy-api.md)
+|<xref:Microsoft.VisualStudio.TextManager.Interop.IVsCodeWindowManager>|Permite agregar o quitar elementos gráficos (como barras desplegables) en una ventana de código.|

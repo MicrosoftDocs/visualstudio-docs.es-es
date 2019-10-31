@@ -11,12 +11,12 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3a22e867fe043437e76ebbf61220dd2adda89c12
-ms.sourcegitcommit: 90c3187d804ad7544367829d07ed4b47d3f8a72d
+ms.openlocfilehash: 186df377670ffec2c06e0214d25b8824679b6f83
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/06/2019
-ms.locfileid: "68822329"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73188868"
 ---
 # <a name="starting-to-develop-visual-studio-extensions"></a>Comienzo del desarrollo de extensiones de Visual Studio
 
@@ -51,7 +51,7 @@ En la práctica, hemos descubierto que las características que la mayoría de l
 
 - [Extender y personalizar ventanas de herramientas](../extensibility/extending-and-customizing-tool-windows.md): Extienda las ventanas de herramientas existentes o cree sus propias ventanas de herramientas. Por ejemplo, puede agregar nuevas propiedades a las **propiedades**o puede crear una nueva ventana de herramientas para agregar características adicionales.
 
-- [Extensiones del editor y del servicio de lenguaje](../extensibility/editor-and-language-service-extensions.md): agregue sus propias personalizaciones que IntelliSense proporcione para los lenguajes de Visual Studio o cree compatibilidad para los nuevos lenguajes de programación. Puede crear nuevas finalizaciones de instrucciones, sugerencias y nuevas informaciones sobre herramientas de QuickInfo. Con las bombillas, puede Agregar sugerencias de refactorización y correcciones de código para admitir nuevos lenguajes de programación.
+- [Extensiones del editor y del servicio de lenguaje](../extensibility/editor-and-language-service-extensions.md): agregue sus propias personalizaciones a IntelliSense proporcionado para los lenguajes de Visual Studio o cree compatibilidad para los nuevos lenguajes de programación. Puede crear nuevas finalizaciones de instrucciones, sugerencias y nuevas informaciones sobre herramientas de QuickInfo. Con las bombillas, puede Agregar sugerencias de refactorización y correcciones de código para admitir nuevos lenguajes de programación.
 
 - [Ampliación de proyectos](../extensibility/extending-projects.md)
 
@@ -72,15 +72,15 @@ En la práctica, hemos descubierto que las características que la mayoría de l
 
  La plantilla de Shell aislado se usa para empaquetar una extensión en una versión de Visual Studio Shell que se puede personalizar y distribuir como su propia. En los temas siguientes se muestra cómo empezar a trabajar con cada tipo de extensión:
 
-- Comandos de menú: [Creación de una extensión con un comando de menú](../extensibility/creating-an-extension-with-a-menu-command.md)
+- Comandos de menú: [crear una extensión con un comando de menú](../extensibility/creating-an-extension-with-a-menu-command.md)
 
-- Ventanas de herramientas: [Creación de una extensión con una ventana de herramientas](../extensibility/creating-an-extension-with-a-tool-window.md)
+- Ventanas de herramientas: [crear una extensión con una ventana de herramientas](../extensibility/creating-an-extension-with-a-tool-window.md)
 
-- Extensiones de editor: [Creación de una extensión con una plantilla de elemento de editor](../extensibility/creating-an-extension-with-an-editor-item-template.md)
+- Extensiones de editor: [crear una extensión con una plantilla de elemento de editor](../extensibility/creating-an-extension-with-an-editor-item-template.md)
 
-- VSPackages básico: [Creación de una extensión con un VSPackage](../extensibility/creating-an-extension-with-a-vspackage.md)
+- VSPackages básico: [crear una extensión con un VSPackage](../extensibility/creating-an-extension-with-a-vspackage.md)
 
-- Plantilla de proyecto de VSIX: [Introducción a la plantilla de proyecto VSIX](../extensibility/getting-started-with-the-vsix-project-template.md)
+- Plantilla de Proyecto VSIX: [Introducción con la plantilla de Proyecto VSIX](../extensibility/getting-started-with-the-vsix-project-template.md)
 
 ## <a name="how-do-i-get-my-extension-to-look-like-visual-studio"></a>Cómo obtener mi extensión para que tenga un aspecto similar a Visual Studio
  Obtenga excelentes sugerencias para diseñar la interfaz de usuario de su extensión en directrices de la [experiencia del usuario de Visual Studio](../extensibility/ux-guidelines/visual-studio-user-experience-guidelines.md).
@@ -91,7 +91,7 @@ En la práctica, hemos descubierto que las características que la mayoría de l
 ## <a name="how-can-i-distribute-my-extension"></a>¿Cómo se puede distribuir la extensión?
  Puede instalar la extensión en otro equipo o enviarla a sus amigos como archivo. vsix, que puede instalar haciendo doble clic en ella. Puede encontrar más información sobre los paquetes VSIX en el [envío de extensiones de Visual Studio](../extensibility/shipping-visual-studio-extensions.md).
 
- También puede publicar su extensión en el Visual Studio Marketplace, lo que hace que sea visible para un gran número de clientes de Visual Studio. Para obtener un ejemplo de cómo empaquetar una extensión en Marketplace [, consulte Tutorial: Publicar una extensión](../extensibility/walkthrough-publishing-a-visual-studio-extension.md)de Visual Studio. Para obtener más información sobre lo que debe hacer para publicar en Marketplace, consulte [Products and Extensions for Visual Studio](/azure/devops/extend/overview?view=vsts).
+ También puede publicar su extensión en el Visual Studio Marketplace, lo que hace que sea visible para un gran número de clientes de Visual Studio. Para obtener un ejemplo de cómo empaquetar una extensión en Marketplace, vea [Tutorial: publicar una extensión de Visual Studio](../extensibility/walkthrough-publishing-a-visual-studio-extension.md). Para obtener más información sobre lo que debe hacer para publicar en Marketplace, consulte [Products and Extensions for Visual Studio](/azure/devops/extend/overview?view=vsts).
 
 ## <a name="see-also"></a>Vea también
 

@@ -17,15 +17,15 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 2a0bf47afe3937d0c5550286efd50c8055ae5f47
-ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
+ms.openlocfilehash: 92cc0922a36d8c57b54b69ad984d18cf4742b823
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69551650"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73189701"
 ---
 # <a name="debug-office-projects"></a>Depurar proyectos de Office
-  Puede depurar proyectos de Office con las mismas herramientas de Microsoft [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] que usa para otros proyectos de [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] . Las características del depurador[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] , como la capacidad para insertar puntos de interrupción y ver variables en la ventana **Variables locales** , también están disponibles cuando se depuran proyectos de Office. Para obtener más información [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] sobre las herramientas de depuración, vea Depurar [en Visual Studio](../debugger/debugging-in-visual-studio.md).
+  Puede depurar proyectos de Office con las mismas herramientas de Microsoft [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] que usa para otros proyectos de [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] . Las características del depurador[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] , como la capacidad para insertar puntos de interrupción y ver variables en la ventana **Variables locales** , también están disponibles cuando se depuran proyectos de Office. Para obtener más información sobre [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] herramientas de depuración, vea [depurar en Visual Studio](../debugger/debugger-feature-tour.md).
 
 > [!TIP]
 > Para simplificar la depuración, cierre todas las instancias abiertas de la aplicación de Office antes de compilarla y depurarla.
@@ -35,7 +35,7 @@ ms.locfileid: "69551650"
 [!include[Add-ins note](includes/addinsnote.md)]
 
 ## <a name="start-and-stop-the-debugger"></a>Iniciar y detener el depurador
- Puede empezar a depurar un proyecto de Office de la misma manera que [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] inicia la depuración de otros proyectos; por ejemplo, puede presionar la tecla **F5** . Cuando se inicia la depuración de un proyecto de complemento de VSTO, se inicia un nuevo proceso para la aplicación de Office de destino y se carga el complemento de VSTO.
+ Puede empezar a depurar un proyecto de Office de la misma manera que inicia la depuración de otros proyectos de [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]; por ejemplo, puede presionar la tecla **F5** . Cuando se inicia la depuración de un proyecto de complemento de VSTO, se inicia un nuevo proceso para la aplicación de Office de destino y se carga el complemento de VSTO.
 
  Al iniciar la depuración de un proyecto de nivel de documento, el documento o libro se abre en un nuevo proceso de Word o Excel.
 
@@ -54,16 +54,16 @@ ms.locfileid: "69551650"
  Cuando se inicia la depuración de un proyecto de Office, **F10** y **F11** no tienen el mismo comportamiento que cuando se inicia la depuración de otros Visual Basic o C# proyectos. En los proyectos de Visual Basic o C#, el depurador se detiene en la función principal; en los proyectos de Office, Visual Studio no tiene control sobre la función principal de la aplicación de Office. Sin embargo, durante la depuración, **F10** y **F11** tienen las mismas funciones que en C# los proyectos de Visual Basic y.
 
 ## <a name="display-exceptions"></a>Mostrar excepciones
- Debido al modo en que el código administrado interactúa con el código no administrado, Visual Studio no muestra los errores que producen las aplicaciones de Microsoft Office. Por ejemplo, si un complemento de VSTO creado con las herramientas de desarrollo de Office en Visual Studio produce una excepción, la aplicación Microsoft Office continuará sin mostrar un error. Para ver estos errores, configure el depurador para que se interrumpa al aparecer excepciones de Common Language Runtime. Para obtener más información, vea [administrar excepciones con el](../debugger/managing-exceptions-with-the-debugger.md)depurador.
+ Debido al modo en que el código administrado interactúa con el código no administrado, Visual Studio no muestra los errores que producen las aplicaciones de Microsoft Office. Por ejemplo, si un complemento de VSTO creado con las herramientas de desarrollo de Office en Visual Studio produce una excepción, la aplicación Microsoft Office continuará sin mostrar un error. Para ver estos errores, configure el depurador para que se interrumpa al aparecer excepciones de Common Language Runtime. Para obtener más información, vea [administrar excepciones con el depurador](../debugger/managing-exceptions-with-the-debugger.md).
 
  Si configura el depurador para que se detenga al aparecer excepciones de Common Language Runtime, el depurador se interrumpirá con todas las excepciones, tanto las que se han controlado como algunas excepciones de primera oportunidad del tiempo de ejecución, que podrían no ser pertinentes para el proyecto. En todos los proyectos aparecen errores relacionados con msosec no encontrado, pero son seguros omitir. Las excepciones de msosec no afectarán a la solución.
 
  También puede utilizar instrucciones **Try...Catch** en torno a sus métodos para detectar excepciones.
 
- De forma predeterminada, Visual Studio tampoco muestra errores de depuración de Just-In-Time para proyectos de Office. Sin embargo, puede habilitar esta característica para ver los errores que se produzcan. Para obtener más información, vea depuración [Just-in-Time en Visual Studio](../debugger/just-in-time-debugging-in-visual-studio.md).
+ De forma predeterminada, Visual Studio tampoco muestra errores de depuración de Just-In-Time para proyectos de Office. Sin embargo, puede habilitar esta característica para ver los errores que se produzcan. Para obtener más información, vea [depuración Just-in-Time en Visual Studio](../debugger/just-in-time-debugging-in-visual-studio.md).
 
 ## <a name="command-line-arguments"></a>Argumentos de la línea de comandos
- Si la **acción de inicio** de la página de propiedades Depurar se establece en **iniciar proyecto**, Visual Studio no utiliza argumentos de línea de comandos al depurar el proyecto, aunque haya especificado argumentos de línea de comandos como opciones de inicio. Si desea usar argumentos de línea de comandos al iniciar la depuración, debe seleccionar una **acción de inicio** distinta de **iniciar proyecto**.
+ Si la **acción de inicio** de la página de propiedades **depurar** se establece en **iniciar proyecto**, Visual Studio no utiliza argumentos de línea de comandos al depurar el proyecto, aunque haya especificado argumentos de línea de comandos como opciones de inicio. Si desea usar argumentos de línea de comandos al iniciar la depuración, debe seleccionar una **acción de inicio** distinta de **iniciar proyecto**.
 
 ## <a name="source-control"></a>Control de código fuente
  Las propiedades de depuración no se comparten entre varios usuarios cuando se trabaja con control de código fuente. Los proyectos de Visual Basic y C# almacenan las propiedades de depuración en un archivo específico de cada usuario (*NombredeProyecto*.vbproj.user o *NombredeProyecto*.csproj.user), y este archivo no está bajo control de código fuente. Si hay más de una persona depurando, cada una debe introducir manualmente las propiedades de depuración.
@@ -72,33 +72,33 @@ ms.locfileid: "69551650"
  Cada vez que se compila un proyecto, el conjunto de datos se vacía y se vuelve a crear. Si desea depurar un conjunto de datos en caché, debe abrir el documento fuera de Visual Studio y, a continuación, asociar el depurador.
 
 ## <a name="debug-word-document-projects-based-on-the-word-97-2003-document-doc-format"></a>Depurar proyectos de documento de Word basados en el formato de documento de Word 97-2003 (*. doc)
- Para depurar un proyecto de documento de Word basado en */* el formato de documento de Word 97-2003 (. doc *), debe agregar la carpeta de proyecto a la lista de carpetas de confianza. Para obtener más información sobre cómo hacerlo, consulte [conceder confianza a los documentos](../vsto/granting-trust-to-documents.md).
+ Para depurar un proyecto de documento de Word basado en el formato de documento de Word 97-2003 ( */* . doc *), debe agregar la carpeta de proyecto a la lista de carpetas de confianza. Para obtener más información sobre cómo hacerlo, consulte [conceder confianza a los documentos](../vsto/granting-trust-to-documents.md).
 
 ## <a name="debug-disabled-add-ins"></a>Depurar complementos deshabilitados
- Las aplicaciones de Microsoft Office pueden deshabilitar los complementos de VSTO que se comporten de forma inesperada. La aplicación de Microsoft Office deshabilita los complementos de VSTO para evitar que se cargue código problemático cada vez que se inicie la aplicación. Sin embargo, esto también puede producir un comportamiento inesperado durante la depuración típica. Para obtener información acerca de cómo volver a habilitar los complementos de VSTO [, consulte Cómo: Vuelva a habilitar un complemento de VSTO que se haya deshabilitado](../vsto/how-to-re-enable-a-vsto-add-in-that-has-been-disabled.md).
+ Las aplicaciones de Microsoft Office pueden deshabilitar los complementos de VSTO que se comporten de forma inesperada. La aplicación de Microsoft Office deshabilita los complementos de VSTO para evitar que se cargue código problemático cada vez que se inicie la aplicación. Sin embargo, esto también puede producir un comportamiento inesperado durante la depuración típica. Para obtener información sobre cómo volver a habilitar los complementos de VSTO, consulte [Cómo: volver a habilitar un complemento de VSTO que se ha deshabilitado](../vsto/how-to-re-enable-a-vsto-add-in-that-has-been-disabled.md).
 
  Las aplicaciones de Microsoft Office usan dos tipos de deshabilitación para los complementos de VSTO: deshabilitación total y deshabilitación parcial.
 
 ### <a name="hard-disabling"></a>Deshabilitación de hardware
- La deshabilitación fuerte puede producirse cuando un complemento de VSTO hace que la aplicación se cierre de forma inesperada. También puede ocurrir en el equipo de desarrollo si detiene el depurador mientras se está ejecutando el controlador de eventos <xref:Microsoft.Office.Tools.AddIn.Startup> en el complemento de VSTO. Cuando un complemento de VSTO se deshabilita totalmente, aparece en la lista **elementos** deshabilitados de la aplicación.
+ La deshabilitación fuerte puede producirse cuando un complemento de VSTO hace que la aplicación se cierre de forma inesperada. También puede ocurrir en el equipo de desarrollo si detiene el depurador mientras se está ejecutando el controlador de eventos <xref:Microsoft.Office.Tools.AddIn.Startup> en el complemento de VSTO. Cuando un complemento de VSTO se deshabilita totalmente, aparece en la lista **elementos deshabilitados** de la aplicación.
 
  Si una aplicación de Office deshabilita un complemento de VSTO creado con las herramientas de desarrollo de Office en Visual Studio, la aplicación deshabilita únicamente el complemento de VSTO que produjo el error. Los demás complementos de VSTO creados con las herramientas de desarrollo de Office en Visual Studio para esa aplicación de Office continuarán cargándose.
 
 ### <a name="soft-disabling"></a>Deshabilitación parcial
- La deshabilitación parcial puede producirse cuando un complemento de VSTO genera un error que no hace que la aplicación se cierre inesperadamente. Por ejemplo, una aplicación podría deshabilitar parcialmente un complemento de VSTO si produce una excepción no controlada mientras se ejecuta el controlador de eventos <xref:Microsoft.Office.Tools.AddIn.Startup> . Cuando un complemento de VSTO está deshabilitado, aparece en la lista **Complementos de aplicación** inactivos de la aplicación y la aplicación cambia el valor de la entrada del registro **LoadBehavior** del complemento de VSTO para indicar que se ha descargado. Para obtener más información sobre la entrada del registro **LoadBehavior** , vea [entradas del registro para complementos de VSTO](../vsto/registry-entries-for-vsto-add-ins.md).
+ La deshabilitación parcial puede producirse cuando un complemento de VSTO genera un error que no hace que la aplicación se cierre inesperadamente. Por ejemplo, una aplicación podría deshabilitar parcialmente un complemento de VSTO si produce una excepción no controlada mientras se ejecuta el controlador de eventos <xref:Microsoft.Office.Tools.AddIn.Startup> . Cuando un complemento de VSTO está deshabilitado, aparece en la lista **Complementos de aplicación inactivos** de la aplicación y la aplicación cambia el valor de la entrada del registro **LoadBehavior** del complemento de VSTO para indicar que se ha descargado. Para obtener más información sobre la entrada del registro **LoadBehavior** , vea [entradas del registro para complementos de VSTO](../vsto/registry-entries-for-vsto-add-ins.md).
 
 ## <a name="troubleshoot-installation-errors-by-using-the-event-viewer"></a>Solucionar los errores de instalación mediante el Visor de eventos
  [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] escribe mensajes en el Visor de eventos de Windows para todas las excepciones que se producen cuando se instalan o desinstalan soluciones de Office. Puede utilizar estos mensajes para resolver problemas de implementación y de instalación.
 
 ## <a name="troubleshoot-startup-errors-by-using-a-log-file-and-error-messages"></a>Solucionar errores de inicio mediante un archivo de registro y mensajes de error
-           [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] puede escribir en un archivo de registro todos los errores que se producen durante el inicio o mostrar cada error en un cuadro de mensaje. Estas opciones están desactivadas de forma predeterminada. Puede activar las opciones creando variables de entorno.
+ ph x="1" /&gt; puede escribir en un archivo de registro todos los errores que se producen durante el inicio o mostrar cada error en un cuadro de mensaje. Estas opciones están desactivadas de forma predeterminada. Puede activar las opciones creando variables de entorno.
 
  Si desea mostrar cada error en un cuadro de mensaje, cree una variable de entorno denominada `VSTO_SUPPRESSDISPLAYALERTS` y establézcala en 0 (cero). Para suprimir los mensajes, puede eliminar la variable de entorno o establecerla en 1 (uno).
 
- Si desea escribir los errores en un archivo de registro, cree una variable de entorno denominada `VSTO_LOGALERTS` y establézcala en 1 (uno). [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] crea el archivo de registro en la carpeta que contiene el manifiesto de implementación del complemento de VSTO o en la carpeta que contiene el documento o libro asociado con la personalización. Si se produce un error [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] , crea el archivo de registro en la carpeta *% temp%* local. Para complementos de VSTO de nivel de aplicación, el nombre predeterminado es *nombre de complemento*.vsto.log. Para los proyectos de nivel de documento, el nombre del archivo de registro es *nombre de documento*.*extensión*.log, por ejemplo, ExcelWorkbook1.xlsx.log. Para detener el registro de errores, elimine la variable de entorno o establézcala en 0 (cero).
+ Si desea escribir los errores en un archivo de registro, cree una variable de entorno denominada `VSTO_LOGALERTS` y establézcala en 1 (uno). [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] crea el archivo de registro en la carpeta que contiene el manifiesto de implementación del complemento de VSTO o en la carpeta que contiene el documento o libro asociado con la personalización. Si se produce un error, el [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] crea el archivo de registro en la carpeta *% temp%* local. Para complementos de VSTO de nivel de aplicación, el nombre predeterminado es *nombre de complemento*.vsto.log. Para los proyectos de nivel de documento, el nombre del archivo de registro es *nombre de documento*.*extensión*.log, por ejemplo, ExcelWorkbook1.xlsx.log. Para detener el registro de errores, elimine la variable de entorno o establézcala en 0 (cero).
 
 ## <a name="see-also"></a>Vea también
 
 - [Compilar soluciones de Office](../vsto/building-office-solutions.md)
-- [Cómo: Volver a habilitar un complemento de VSTO que se ha deshabilitado](../vsto/how-to-re-enable-a-vsto-add-in-that-has-been-disabled.md)
+- [Cómo: volver a habilitar un complemento de VSTO que se ha deshabilitado](../vsto/how-to-re-enable-a-vsto-add-in-that-has-been-disabled.md)
 - [Complementos de VSTO de programa](../vsto/programming-vsto-add-ins.md)

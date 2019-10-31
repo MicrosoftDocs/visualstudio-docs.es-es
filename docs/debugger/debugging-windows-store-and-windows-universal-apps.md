@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: b008dd22b99e0024fcba479564c02cfad148f14a
-ms.sourcegitcommit: 978df2feb5e64228d2e3dd430b299a5c234cda17
+ms.openlocfilehash: 73b9b78be6a6325a422c945db8c51caa7a11b487
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/24/2019
-ms.locfileid: "72888463"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73188268"
 ---
 # <a name="debug-universal-windows-apps-uwp-in-visual-studio"></a>Depuración de aplicaciones universales de Windows (UWP) en Visual Studio
 
@@ -33,4 +33,4 @@ El depurador de Visual Studio proporciona compatibilidad completa con la depurac
 |Analice el efecto de la clase ContentPrefetcher en aplicaciones de UWP.|[Captura previa de contenido para aplicaciones para UWP](../debugger/prefetch-content-for-windows-store-apps.md)|
 
 ## <a name="see-also"></a>Vea también
-- [Analizar la calidad del código utilizando análisis de código estático](/visualstudio/code-quality/code-analysis-for-managed-code-overview)
+- [Analizar la calidad del código utilizando análisis de código estático](../code-quality/code-analysis-for-managed-code-overview.md)

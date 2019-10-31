@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ae62a380e4e0feb23a901a4fc6a2628fcd8c6a0c
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 0bf8cbcc699f015cae954400744d9bd724d70c57
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72734925"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73187913"
 ---
 # <a name="overview-of-visual-studio-graphics-diagnostics"></a>Información general de Diagnóstico de gráficos de Visual Studio
 El *Diagnóstico de gráficos* de Visual Studio es un conjunto de herramientas para grabar y analizar problemas de representación y rendimiento de las aplicaciones de Direct3D. Diagnóstico de gráficos puede usarse en aplicaciones que se ejecutan localmente en su PC Windows o en un dispositivo o equipo remoto.
@@ -52,7 +52,7 @@ El *Diagnóstico de gráficos* de Visual Studio es un conjunto de herramientas p
 ### <a name="gpu-usage"></a>Uso de GPU
  Diagnóstico de gráficos también puede generar un perfil de rendimiento de la aplicación Direct3D. Para evitar que los datos del perfil resulten sesgados a causa de la grabación de detalles de eventos gráficos, esta función está separada de la captura de fotogramas que se usará con el Analizador de gráficos.
 
- Vea [Uso de GPU](/visualstudio/profiling/gpu-usage) para obtener más información.
+ Vea [Uso de GPU](../../profiling/gpu-usage.md) para obtener más información.
 
 ### <a name="directx-control-panel"></a>Panel de control de DirectX
  El panel de control de DirectX es un componente de DirectX que puede utilizar para cambiar la forma en que DirectX se comporta; por ejemplo, puede habilitar la versión de depuración de los componentes de tiempo de ejecución de DirectX, seleccionar la clase de mensajes de depuración que se notifican e impedir el uso de ciertas funciones del hardware gráfico para emular el hardware menos eficaz. Este nivel de control sobre DirectX puede ayudarle a depurar y probar la aplicación DirectX. Puede acceder al panel de control de DirectX desde Visual Studio.

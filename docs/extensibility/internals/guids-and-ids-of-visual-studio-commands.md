@@ -14,53 +14,53 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 89274600d05b787182ac447902555f7d703851c2
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: f7670eacc875bf7c5437d9bb92cc1932753093bd
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66329186"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73186641"
 ---
-# <a name="guids-and-ids-of-visual-studio-commands"></a>Comandos de GUID e identificadores de Visual Studio
-Los valores GUID y el Id. de los comandos incluidos en el entorno de desarrollo integrado (IDE) de Visual Studio se definen en archivos de vsct que se instalan como parte del SDK de Visual Studio. Para obtener más información, consulte [grupos, menús y comandos definidos por el IDE](../../extensibility/internals/ide-defined-commands-menus-and-groups.md).
+# <a name="guids-and-ids-of-visual-studio-commands"></a>GUID e identificadores de comandos de Visual Studio
+Los valores de identificador y GUID de los comandos incluidos en el entorno de desarrollo integrado (IDE) de Visual Studio se definen en los archivos. Vsct que se instalan como parte del SDK de Visual Studio. Para obtener más información, vea [comandos, menús y grupos definidos por el IDE](../../extensibility/internals/ide-defined-commands-menus-and-groups.md).
 
- Para obtener más información sobre cómo trabajar con objetos IDE que se definen en *.vsct* archivos, consulte [amplían los menús y comandos](../../extensibility/extending-menus-and-commands.md).
+ Para obtener más información sobre cómo trabajar con objetos IDE definidos en archivos *. Vsct* , vea [extender menús y comandos](../../extensibility/extending-menus-and-commands.md).
 
 ## <a name="find-a-command-definition"></a>Buscar una definición de comando
- Dado que Visual Studio se define más de 1000 comandos, no resulta práctico para que aparezcan todas aquí. En su lugar, siga estos pasos para encontrar la definición de un comando.
+ Dado que Visual Studio define más de 1000 comandos, no es práctico enumerarlos aquí. En su lugar, siga estos pasos para buscar la definición de un comando.
 
 ### <a name="to-locate-a-command-definition"></a>Para buscar una definición de comando
 
-1. En Visual Studio, abra los archivos siguientes en el *< ruta de instalación del SDK de Visual Studio\>\VisualStudioIntegration\Common\Inc\\*  carpeta: *SharedCmdDef.vsct*, *ShellCmdDef.vsct*, *VsDbgCmdUsed.vsct*, *Venusmenu.vsct*.
+1. En Visual Studio, abra los siguientes archivos en la *< ruta de instalación del SDK de Visual studio\>carpeta \VisualStudioIntegration\Common\Inc\\* : *SharedCmdDef. Vsct*, *ShellCmdDef. Vsct*, *VsDbgCmdUsed. Vsct*, *Venusmenu. Vsct*.
 
-    La mayoría de los comandos de Visual Studio se definen en *SharedCmdDef.vsct* y *ShellCmdDef.vsct*. *VsDbgCmdUsed.vsct* define los comandos relacionados con el depurador, y *Venusmenu.vsct* define los comandos que son específicos para el desarrollo Web.
+    La mayoría de los comandos de Visual Studio se definen en *SharedCmdDef. Vsct* y *ShellCmdDef. Vsct*. *VsDbgCmdUsed. Vsct* define comandos que pertenecen al depurador y *Venusmenu. Vsct* define comandos específicos del desarrollo web.
 
-2. Si el comando es un elemento de menú, tenga en cuenta el texto exacto del elemento de menú. Si el comando es un botón en una barra de herramientas, tenga en cuenta el texto de información sobre herramientas que aparece cuando se coloca en él.
+2. Si el comando es un elemento de menú, tenga en cuenta el texto exacto del elemento de menú. Si el comando es un botón de una barra de herramientas, tenga en cuenta el texto de información sobre herramientas que aparece cuando se pausa en él.
 
-3. Presione **Ctrl**+**F** para abrir el **buscar** cuadro de diálogo.
+3. Presione **Ctrl**+**F** para abrir el cuadro de diálogo **Buscar** .
 
-4. En el **buscar** , escriba el texto que anotó en el paso 2.
+4. En el cuadro **Buscar** , escriba el texto que anotó en el paso 2.
 
-5. Compruebe que **todos los documentos abiertos** se muestra en el **buscar en** cuadro.
+5. Compruebe que **todos los documentos abiertos** se muestran en el cuadro **Buscar en** .
 
-6. Haga clic en el **Buscar siguiente** botón hasta que el texto seleccionado en el `<Strings>` sección de un [elemento Button](../../extensibility/button-element.md).
+6. Haga clic en el botón **Buscar siguiente** hasta que se seleccione el texto en la sección `<Strings>` de un [elemento de botón](../../extensibility/button-element.md).
 
-    El `<Button>` es de elemento que el comando aparezca en la definición de comando.
+    El elemento `<Button>` en el que aparece el comando es la definición del comando.
 
-   Cuando haya encontrado la definición de comando, puede colocar una copia del comando en otro menú o barra de herramientas mediante la creación de un [CommandPlacement (elemento)](../../extensibility/commandplacement-element.md) que tiene el mismo `guid` y `id` valores como el comando. Para obtener más información, consulte [crear grupos reutilizables de botones](../../extensibility/creating-reusable-groups-of-buttons.md).
+   Cuando haya encontrado la definición de comando, puede colocar una copia del comando en otro menú o barra de herramientas creando un [elemento CommandPlacement](../../extensibility/commandplacement-element.md) que tenga los mismos valores `guid` y `id` que el comando. Para obtener más información, vea [crear grupos reutilizables de botones](../../extensibility/creating-reusable-groups-of-buttons.md).
 
 ### <a name="special-cases"></a>Casos especiales
- En los casos siguientes, el texto de menú o el texto de información sobre herramientas puede no coincidir exactamente con lo que está en la definición de comando.
+ En los casos siguientes, el texto de menú o el texto de información sobre herramientas puede no coincidir exactamente con lo que hay en la definición de comando.
 
-- Los elementos de menú que incluyen un carácter subrayado, como el **impresión** comando el **archivo** menú, en el que el *P* está subrayada.
+- Elementos de menú que incluyen un carácter subrayado, como el comando **Imprimir** del menú **archivo** , en el que aparece subrayado *P* .
 
-     Carácter en los nombres de elemento de menú de caracteres que van precedidos por la y comercial (&) se muestran como subrayado. Sin embargo, *.vsct* archivos se escriben en XML, que usa el carácter de y comercial (&) para indicar los caracteres especiales y requiere que se debe escribir una y comercial que se mostrará como  *&amp;amp;* . Por lo tanto, en un *.vsct* archivo, el **impresión** comando aparece como  *&amp;amp; Impresión*.
+     Los caracteres precedidos por el carácter de y comercial (&) en los nombres de los elementos de menú se muestran como subrayados. Sin embargo, los archivos *. Vsct* se escriben en XML, que utiliza el carácter de y comercial (&) para indicar caracteres especiales y requiere que se escriba una y comercial como *&amp;amp;* . Por lo tanto, en un archivo *. Vsct* , el comando **Print** aparece como *&amp;amp; Imprimir*.
 
-- Los comandos que tienen texto dinámico, como **guardar** \<nombre de archivo actual\>y genera dinámicamente elementos de menú, como los elementos en el **archivos recientes** lista.
+- Comandos que tienen texto dinámico, como **guardar** \<nombre de archivo actual\>y elementos de menú generados dinámicamente, como los elementos de la lista de **archivos recientes** .
 
-     No hay ninguna forma confiable para realizar búsquedas de texto dinámico. En su lugar, buscar un grupo que hospeda el comando deseado consultando [menús GUID e identificadores de Visual Studio](../../extensibility/internals/guids-and-ids-of-visual-studio-menus.md) o [las barras de herramientas de GUID e identificadores de Visual Studio](../../extensibility/internals/guids-and-ids-of-visual-studio-toolbars.md)y busque el Id. de ese grupo. Si la definición de comando no tiene el grupo como su [elemento primario](../../extensibility/parent-element.md), búsqueda *SharedCmdPlace.vsct* y *ShellCmdPlace.vsct* (o  *VsDbgCmdPlace.vsct* para los comandos del depurador) para un `<CommandPlacement>` elemento que establece el elemento primario del comando. *SharedCmdPlace.vsct*, *ShellCmdPlace.vsct*, y *VsDbgCmdPlace.vsct* están en el *\<ruta de instalación de Visual Studio SDK\>\ VisualStudioIntegration\Common\Inc\\* carpeta.
+     No hay ninguna manera confiable de buscar en texto dinámico. En su lugar, busque un grupo que hospede el comando deseado consultando los [GUID e identificadores de los menús](../../extensibility/internals/guids-and-ids-of-visual-studio-menus.md) o GUID de Visual Studio, [así como los identificadores de las barras de herramientas de Visual Studio](../../extensibility/internals/guids-and-ids-of-visual-studio-toolbars.md), y busque en el identificador de ese grupo. Si la definición de comando no tiene el grupo como su [elemento primario](../../extensibility/parent-element.md), busque *SharedCmdPlace. Vsct* y *ShellCmdPlace. Vsct* (o *VsDbgCmdPlace. Vsct* para los comandos del depurador) para un elemento `<CommandPlacement>` que establece el elemento primario del Command. *SharedCmdPlace. Vsct*, *ShellCmdPlace. Vsct*y *VsDbgCmdPlace. vsct* se encuentran en la *\<ruta de instalación del SDK de Visual Studio\>carpeta \VisualStudioIntegration\Common\Inc\\* .
 
 ## <a name="see-also"></a>Vea también
-- [MenuCommands frente a OleMenuCommands](../../extensibility/menucommands-vs-olemenucommands.md)
-- [Archivos visuales Studio comando table (.vsct)](../../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
+
+- [Archivos de tabla de comandos de Visual Studio (. Vsct)](../../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
 - [Referencia del esquema XML de VSCT](../../extensibility/vsct-xml-schema-reference.md)

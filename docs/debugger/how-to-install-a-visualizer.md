@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3c9c2fa8a8fb300c3b7eb702ae3efd216e17141a
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 494287c6691d27eb636f92eff324eecf49daf5fa
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72733106"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73187579"
 ---
 # <a name="how-to-install-a-visualizer"></a>Cómo: Instalar un visualizador
 Después de crear un visualizador, hay que instalarlo para que esté disponible en [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Instalar un visualizador es un proceso sencillo.
@@ -46,4 +46,4 @@ Después de crear un visualizador, hay que instalarlo para que esté disponible 
 
 ## <a name="see-also"></a>Vea también
 - [Create Custom Visualizers](../debugger/create-custom-visualizers-of-data.md) (Crear visualizadores personalizados)
-- [Cómo: Escribir un visualizador](/visualstudio/debugger/create-custom-visualizers-of-data)
+- [Cómo: Escribir un visualizador](create-custom-visualizers-of-data.md)

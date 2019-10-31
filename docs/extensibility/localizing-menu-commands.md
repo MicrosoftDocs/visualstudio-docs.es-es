@@ -15,12 +15,12 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b2b42143c2971bcbb172958b8da42a1e887e4699
-ms.sourcegitcommit: 3e94d9fb6dc56fa8b23fbacd5d11cf8d6e7e18f1
+ms.openlocfilehash: 94f71014440c55da0151d0ebd817aac9f5d2c7ed
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/10/2019
-ms.locfileid: "72252645"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73186279"
 ---
 # <a name="localize-menu-commands"></a>Localizar comandos de menú
 
@@ -48,7 +48,7 @@ En VSPackages, los comandos de menú y los botones de barra de herramientas se d
 
       En el ejemplo siguiente se muestra el texto del botón en inglés y Español de un comando para abrir una ventana de herramientas del explorador de árbol de familia.
 
-      [*FamilyTree.en-US.vsct*]
+      [*Familytree. en-US. Vsct*]
 
    ```xml
    <Button guid="guidLocalizedPackageCmdSet" id="cmdidFamilyTree" priority="0x0100" type="Button">
@@ -61,7 +61,7 @@ En VSPackages, los comandos de menú y los botones de barra de herramientas se d
    </Button>
    ```
 
-    [*FamilyTree.es-ES.vsct*]
+    [*Familytree.es-es. Vsct*]
 
    ```xml
    <Button guid="guidLocalizedPackageCmdSet" id="cmdidFamilyTree" priority="0x0100" type="Button">
@@ -76,7 +76,7 @@ En VSPackages, los comandos de menú y los botones de barra de herramientas se d
 
 ## <a name="localize-other-text-resources"></a>Localizar otros recursos de texto
 
-Los recursos de texto que no sean nombres de comando se definen en archivos de recursos (*. resx*).
+Los recursos de texto que no sean nombres de comando se definen en archivos de recursos ( *. resx*).
 
 1. Cambie el nombre de *VSPackage. resx* a *VSPackage. en-US. resx*.
 
@@ -126,7 +126,7 @@ Debe modificar el archivo *AssemblyInfo.CS* y el archivo de proyecto para incorp
 
 4. Abra el archivo de proyecto en el editor.
 
-5. En el elemento raíz `Project`, agregue un elemento `PropertyGroup` con un elemento @no__t 2 que coincida con el idioma predeterminado.
+5. En el elemento `Project` raíz, agregue un elemento `PropertyGroup` con un elemento `UICulture` que coincida con el idioma predeterminado.
 
     ```xml
     <PropertyGroup>
@@ -136,7 +136,7 @@ Debe modificar el archivo *AssemblyInfo.CS* y el archivo de proyecto para incorp
 
      Esto establece el Inglés de EE. UU. como la referencia cultural predeterminada de la interfaz de usuario para los controles de Windows Presentation Foundation (WPF).
 
-6. Busque el elemento `ItemGroup` que contiene los elementos `EmbeddedResource`.
+6. Busque el elemento `ItemGroup` que contiene `EmbeddedResource` elementos.
 
 7. En el elemento `EmbeddedResource` que llama a *VSPackage. en-US. resx*, reemplace el elemento `ManifestResourceName` por un elemento `LogicalName` que esté establecido en `VSPackage.en-US.Resources`, como se indica a continuación:
 
@@ -147,9 +147,9 @@ Debe modificar el archivo *AssemblyInfo.CS* y el archivo de proyecto para incorp
     </EmbeddedResource>
     ```
 
-8. Para cada idioma localizado, copie el elemento `EmbeddedResource` para `VsPackage.en-US` y establezca el atributo **include** y el elemento **LogicalName** de la copia en la configuración regional de destino.
+8. Para cada idioma localizado, copie el elemento `EmbeddedResource` de `VsPackage.en-US`y establezca el atributo **include** y el elemento **LogicalName** de la copia en la configuración regional de destino.
 
-9. Agregue un elemento `ResourceName` que apunte a @no__t 2, tal como se muestra en el ejemplo siguiente, para cada elemento `VSCTCompile` localizado:
+9. Agregue un elemento `ResourceName` que apunte a `Menus.ctmenu`, tal y como se muestra en el ejemplo siguiente, a cada elemento `VSCTCompile` localizado:
 
     ```xml
     <ItemGroup>
@@ -166,6 +166,6 @@ Debe modificar el archivo *AssemblyInfo.CS* y el archivo de proyecto para incorp
      Esto crea un ensamblado principal y ensamblados de recursos para cada idioma. Para obtener información sobre la localización del proceso de implementación, consulte [localizar paquetes VSIX](../extensibility/localizing-vsix-packages.md)
 
 ## <a name="see-also"></a>Vea también
+
 - [Extender menús y comandos](../extensibility/extending-menus-and-commands.md)
-- [MenuCommands frente a OleMenuCommands](../extensibility/menucommands-vs-olemenucommands.md)
 - [Globalizar y localizar aplicaciones](../ide/globalizing-and-localizing-applications.md)

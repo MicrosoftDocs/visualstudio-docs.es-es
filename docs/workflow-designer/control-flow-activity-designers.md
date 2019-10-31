@@ -8,12 +8,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f1e7d7548eef3fd6ca6a21bb8c2fe5cb23e27df1
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 36c2790378f91c4217dbca2cf190ae6e649a03c3
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72650614"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73189766"
 ---
 # <a name="control-flow-activity-designers"></a>Diseñadores de actividades de flujos de control
 
@@ -47,7 +47,7 @@ Diseñador de flujo de trabajo incluye varias actividades proporcionadas por el 
 
 Para otros tipos de diseñadores de actividad, vea los temas siguientes:
 
- [Usar los diseñadores de actividad](../workflow-designer/using-the-activity-designers.md)
+ [Usar los diseñadores de actividad](control-flow-activity-designers.md)
 
  [Diagrama de flujo](../workflow-designer/flowchart-activity-designers.md)
 
@@ -65,4 +65,4 @@ Para otros tipos de diseñadores de actividad, vea los temas siguientes:
 
 ## <a name="external-resources"></a>Recursos externos
 
-- [Usar los diseñadores de actividad](../workflow-designer/using-the-activity-designers.md)
+- [Usar los diseñadores de actividad](control-flow-activity-designers.md)

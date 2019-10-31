@@ -1,5 +1,5 @@
 ---
-title: Aplicaciones de la ejecución de Windows Store en el simulador | Documentos de Microsoft
+title: Ejecutar aplicaciones de la tienda Windows en el simulador | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -14,12 +14,12 @@ caps.latest.revision: 45
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 77de4fea82e05f539c89a75178d93f985e5a0fb3
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 96224b522b17ff9da520386d56d4fae7a04bd981
+ms.sourcegitcommit: bdccab4c2dbd50ea8adaaf88c69c9ca32db88099
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67823855"
+ms.lasthandoff: 10/30/2019
+ms.locfileid: "73144779"
 ---
 # <a name="run-windows-store-apps-in-the-simulator"></a>Ejecutar aplicaciones de la Tienda Windows en el simulador
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,23 +38,23 @@ El simulador de Visual Studio para aplicaciones de la Tienda Windows es una apli
 ## <a name="BKMK_Set_the_simulator_as_the_target"></a> Establecer el simulador como destino  
  Para ejecutar la aplicación de la Tienda Windows en el simulador, selecciona **Simulador** en la lista desplegable que hay junto al botón **Iniciar depuración** en la barra de herramientas **Estándar** del depurador.  
   
- ![Que se ejecuta en el simulador](../debugger/media/vsrun-f5-simulator.png "VSRUN_F5_Simulator")  
+ ![Ejecutar en el simulador](../debugger/media/vsrun-f5-simulator.png "VSRUN_F5_Simulator")  
   
 ## <a name="BKMK_Choose_an_interaction_mode"></a> Elegir el modo de interacción  
  Puede elegir los siguientes modos de interacción:  
   
-- ![Botón de modo del mouse](../debugger/media/simulator-mousemodebtn.png "SIMULATOR_MouseModeBtn") modo del Mouse: establece el modo de interacción en los gestos del mouse. Los gestos del mouse son los clics, los doble clics y arrastrar.  
+- ![Botón de modo del mouse](../debugger/media/simulator-mousemodebtn.png "SIMULATOR_MouseModeBtn") Modo de mouse: establece el modo de interacción en los gestos del mouse. Los gestos del mouse son los clics, los doble clics y arrastrar.  
   
-- ![Botón de inicio de emulación táctil](../debugger/media/simulator-starttouchemulationbtn.png "SIMULATOR_StartTouchEmulationBtn") emulación táctil de inicio: establece el modo de interacción en gestos de un solo dedo toque con. Los eventos de un solo dedo son pulsar, arrastrar y deslizar rápidamente.  
+- ![Botón iniciar emulación táctil](../debugger/media/simulator-starttouchemulationbtn.png "SIMULATOR_StartTouchEmulationBtn") Iniciar emulación táctil: establece el modo de interacción en gestos táctiles de un solo dedo. Los eventos de un solo dedo son pulsar, arrastrar y deslizar rápidamente.  
   
-     ![Destino de un solo dedo simulador](../debugger/media/simulator-onefinger.png "SIMULATOR_OneFinger") el icono de destino único indica la ubicación de los eventos en el simulador. Usa el mouse para colocar el puntero.  
+     ![Objetivo del simulador de un dedo](../debugger/media/simulator-onefinger.png "SIMULATOR_OneFinger") El icono de destino único indica la ubicación de los eventos en el simulador. Usa el mouse para colocar el puntero.  
   
-     ![Destino de un solo dedo toque](../debugger/media/simulator-onefingerengaged.png "SIMULATOR_OneFingerEngaged") presione el botón primario del mouse para activar el modo táctil. Por ejemplo, haz clic en el botón para simular una pulsación, o mantenlo presionado para arrastrar o deslizar rápidamente.  
+     ![Destino táctil de un dedo](../debugger/media/simulator-onefingerengaged.png "SIMULATOR_OneFingerEngaged") Presione el botón primario del mouse para activar el modo táctil. Por ejemplo, haz clic en el botón para simular una pulsación, o mantenlo presionado para arrastrar o deslizar rápidamente.  
   
 ## <a name="pinch-and-zoom"></a>Modo táctil de acercar y alejar  
  Establece el modo de interacción en gestos táctiles de acercar y alejar utilizando dos dedos.  
   
-- ![Destino de simulador dos dedos](../debugger/media/simulator-twofinger.png "SIMULATOR_TwoFinger")  
+- ![Destino de dos dedos del simulador](../debugger/media/simulator-twofinger.png "SIMULATOR_TwoFinger")  
 
   - El icono de destino doble indica la ubicación de los dos dedos en la pantalla del dispositivo.  
 
@@ -62,7 +62,7 @@ El simulador de Visual Studio para aplicaciones de la Tienda Windows es una apli
 
   - Gira la rueda del mouse hacia atrás o hacia delante para cambiar la distancia simulada de los dos dedos antes de realizar la emulación táctil de acercar o alejar.  
 
-- ![Alejar, acercar y girar destinos](../debugger/media/simulator-twofingerengaged.png "SIMULATOR_TwoFingerEngaged")  
+- ![Desplazar, zoom y girar destinos](../debugger/media/simulator-twofingerengaged.png "SIMULATOR_TwoFingerEngaged")  
 
   - Presiona el botón primario y gira la rueda hacia atrás (hacia ti) para acercar (acercar los dedos).  
 
@@ -86,7 +86,7 @@ El simulador de Visual Studio para aplicaciones de la Tienda Windows es una apli
  Puedes cambiar la orientación del dispositivo entre vertical y horizontal rotándolo 90 grados en cualquier dirección.  
   
 > [!NOTE]
-> El simulador no respeta la propiedad [DisplayProperties.AutoRotationPreferences](http://go.microsoft.com/fwlink/?LinkId=249460) de un proyecto. Por ejemplo, si el proyecto establece la orientación en `Landscape`y, después, tú rotes el simulador para situarlo en orientación vertical, la imagen de la pantalla del simulador también se rotará y cambiará de tamaño. Debes probar la configuración en un dispositivo real.  
+> El simulador no respeta la propiedad [DisplayProperties.AutoRotationPreferences](https://go.microsoft.com/fwlink/?LinkId=249460) de un proyecto. Por ejemplo, si el proyecto establece la orientación en `Landscape`y, después, tú rotes el simulador para situarlo en orientación vertical, la imagen de la pantalla del simulador también se rotará y cambiará de tamaño. Debes probar la configuración en un dispositivo real.  
   
 > [!NOTE]
 > Si rotas el simulador de modo que su borde sea mayor que la pantalla en que aparece, su tamaño cambia para ajustarse automáticamente a la pantalla. Si lo vuelves a rotar, no recupera su tamaño original.  
@@ -109,10 +109,10 @@ El simulador de Visual Studio para aplicaciones de la Tienda Windows es una apli
   
 - Para configurar la ubicación donde se encuentran las capturas de pantalla, seleccione el botón **Configuración de captura de pantalla** y elija la ubicación en el menú contextual.  
   
-     ![Menú de contexto de configuración de captura de pantalla](../debugger/media/simulator-screenshotsettingscntxmnu.png "SIMULATOR_ScreenShotSettingsCntxMnu")  
+     ![Menú contextual de configuración de captura de pantalla](../debugger/media/simulator-screenshotsettingscntxmnu.png "SIMULATOR_ScreenShotSettingsCntxMnu")  
   
 ## <a name="BKMK_Simulate_network_connection_properties"></a> Simular propiedades de conexión de red  
- Puedes ayudar a los usuarios de la aplicación a administrar los costos de las conexiones de red de uso medido haciendo que tengan conocimiento de ellos o de los cambios de estado del plan de datos, y habilitando la aplicación para utilizar esta información y evitar incurrir así en gastos adicionales por uso en roaming o por superar un límite de transferencia de datos determinado. Las API de [Windows.Networking.Connectivity](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.aspx) le permiten responder a los eventos [NetworkStatusChanged](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.networkinformation.networkstatuschanged.aspx) y [TriggerType](https://msdn.microsoft.com/library/windows/apps/windows.applicationmodel.background.systemtrigger.triggertype.aspx) que firman. Consulte [Quickstart: Administrar las restricciones de costo de red de uso medido](https://msdn.microsoft.com/library/windows/apps/Hh750310.aspx).  
+ Puedes ayudar a los usuarios de la aplicación a administrar los costos de las conexiones de red de uso medido haciendo que tengan conocimiento de ellos o de los cambios de estado del plan de datos, y habilitando la aplicación para utilizar esta información y evitar incurrir así en gastos adicionales por uso en roaming o por superar un límite de transferencia de datos determinado. Las API de [Windows.Networking.Connectivity](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.aspx) le permiten responder a los eventos [NetworkStatusChanged](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.networkinformation.networkstatuschanged.aspx) y [TriggerType](https://msdn.microsoft.com/library/windows/apps/windows.applicationmodel.background.systemtrigger.triggertype.aspx) que firman. Vea [Inicio rápido: administrar los límites de costos de red de uso medido](https://msdn.microsoft.com/library/windows/apps/Hh750310.aspx).  
   
  Para depurar o probar el código con reconocimiento de costos de red, el simulador puede imitar las propiedades de una red que se exponen a través del objeto [ConnectionProfile](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.connectionprofile.aspx) devuelto por [GetInternetConnectionProfile](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.networkinformation.getinternetconnectionprofile.aspx).  
   
@@ -136,12 +136,12 @@ El simulador de Visual Studio para aplicaciones de la Tienda Windows es una apli
   
    **Más información sobre la administración de conexiones de red**  
   
-   [Inicio rápido: Administración de las restricciones de costo de red de uso medido](https://msdn.microsoft.com/library/windows/apps/Hh750310.aspx)  
+   [Inicio rápido: administrar los límites de costos de red de uso medido](https://msdn.microsoft.com/library/windows/apps/Hh750310.aspx)  
   
-   [Ejemplo de información de red](http://code.msdn.microsoft.com/windowsapps/Network-Information-Sample-63aaa201)  
+   [Ejemplo de información de red](https://code.msdn.microsoft.com/windowsapps/Network-Information-Sample-63aaa201)  
   
    [Analizar el uso de energía](../profiling/analyze-energy-use-in-store-apps.md)  
-  
+    
    [Windows.Networking.Connectivity](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.aspx)  
   
    [Cómo responder a eventos del sistema con tareas en segundo plano](https://msdn.microsoft.com/f7c86e86-a7ae-4abb-a923-76b03337a80a)  

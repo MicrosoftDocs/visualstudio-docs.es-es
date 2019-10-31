@@ -7,12 +7,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 78967c93a990aaef0d5863446433c286bdcf46b7
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 26435db42e3214bb19438226faba0db0e5ac0f4f
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72649595"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73188824"
 ---
 # <a name="rule-scope-options-for-fxcop-analyzers"></a>Opciones de ámbito de reglas para los analizadores de FxCop
 
@@ -21,9 +21,9 @@ Algunas reglas del analizador de FxCop permiten restringir qué partes del códi
 Estas opciones de configuración están disponibles a partir de la versión 2.6.3 del paquete NuGet [Microsoft. CodeAnalysis. FxCopAnalyzers](https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers) .
 
 > [!TIP]
-> Para ver la lista completa de las opciones disponibles para una versión determinada del paquete FxCopAnalyzers, examine el archivo Configuration.md del *analizador* en la carpeta de *documentación* del paquete. El archivo se encuentra en *% userprofile% \\. nuget\packages\microsoft.codeanalysis.fxcopanalyzers \\ \<version \> Configuration.MD \documentation\analyzer*. Este archivo de documentación de configuración se incluye con cada versión del paquete, a partir de la versión 2.6.5. Este es un ejemplo de cómo se documenta una opción en el archivo *Configuration.MD del analizador* :
+> Para ver la lista completa de las opciones disponibles para una versión determinada del paquete FxCopAnalyzers, examine el archivo Configuration.md del *analizador* en la carpeta de *documentación* del paquete. El archivo se encuentra en *% userprofile%\\. nuget\packages\microsoft.codeanalysis.fxcopanalyzers\\\<versión\>Configuration.MD \documentation\Analyzer*. Este archivo de documentación de configuración se incluye con cada versión del paquete, a partir de la versión 2.6.5. Este es un ejemplo de cómo se documenta una opción en el archivo *Configuration.MD del analizador* :
 >
-> Nombre de la opción: `sufficient_IterationCount_for_weak_KDF_algorithm` \
+> Nombre de la opción: `sufficient_IterationCount_for_weak_KDF_algorithm`\
 > Valores de opción: valores enteros \
 > Valor predeterminado: específico de cada regla configurable (' 100000 ' de forma predeterminada para la mayoría de las reglas) \
 > Ejemplo: `dotnet_code_quality.CA5387.sufficient_IterationCount_for_weak_KDF_algorithm = 100000`
@@ -38,7 +38,7 @@ Estas opciones de configuración están disponibles a partir de la versión 2.6.
 
 | Descripción | Valores permitidos | Valor predeterminado | Reglas configurables |
 | - | - | - | - |
-| Si se omiten los métodos asincrónicos que no devuelven un valor | `true`<br/>`false` | `false` | [CA2007](ca2007-do-not-directly-await-task.md) |
+| Si se omiten los métodos asincrónicos que no devuelven un valor | `true`<br/>`false` | `false` | [CA2007](ca2007.md) |
 
 > [!NOTE]
 > En la versión 2.6.3 y versiones anteriores del paquete de analizador, esta opción se denominaba `skip_async_void_methods`.
@@ -56,4 +56,4 @@ Estas opciones de configuración están disponibles a partir de la versión 2.6.
 
 | Descripción | Valores permitidos | Valor predeterminado | Reglas configurables |
 | - | - | - | - |
-| Especifica que debe analizarse el código de un proyecto que genera este tipo de ensamblado. | Uno o más campos de la enumeración <xref:Microsoft.CodeAnalysis.OutputKind><br/><br/>Separar varios valores con una coma (,) | Todos los tipos de salida | [CA2007](ca2007-do-not-directly-await-task.md) |
+| Especifica que debe analizarse el código de un proyecto que genera este tipo de ensamblado. | Uno o más campos de la enumeración <xref:Microsoft.CodeAnalysis.OutputKind><br/><br/>Separar varios valores con una coma (,) | Todos los tipos de salida | [CA2007](ca2007.md) |

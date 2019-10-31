@@ -8,12 +8,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0ba6aaaf0f6e77714af14e690d4944eac031e1d7
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: b58a4c6f369f9a5338365e215805c2379db8d2ba
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72650142"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73189739"
 ---
 # <a name="messaging-activity-designers"></a>Diseñadores de actividades de mensajería
 
@@ -41,7 +41,7 @@ Para otros tipos de diseñadores de actividad, vea los temas siguientes:
 
 - [Flujo de control](../workflow-designer/control-flow-activity-designers.md)
 
-- [Usar los diseñadores de actividad](../workflow-designer/using-the-activity-designers.md)
+- [Usar los diseñadores de actividad](control-flow-activity-designers.md)
 
 - [Diagrama de flujo](../workflow-designer/flowchart-activity-designers.md)
 
@@ -57,4 +57,4 @@ Para otros tipos de diseñadores de actividad, vea los temas siguientes:
 
 ## <a name="external-resources"></a>Recursos externos
 
-[Usar los diseñadores de actividad](../workflow-designer/using-the-activity-designers.md)
+[Usar los diseñadores de actividad](control-flow-activity-designers.md)

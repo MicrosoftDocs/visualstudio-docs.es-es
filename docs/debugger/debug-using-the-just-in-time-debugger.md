@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 32a3ebd6e9047271a21425ac5b7eaaf715955b61
-ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
+ms.openlocfilehash: b842fa4ce7c75e061a58d980cefe5648094c2ef7
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "72911392"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73188671"
 ---
 # <a name="debug-using-the-just-in-time-debugger-in-visual-studio"></a>Depurar mediante el depurador Just-in-Time en Visual Studio
 
@@ -104,7 +104,7 @@ Este ejemplo le guía a través de la depuración Just-in-Time cuando una aplica
 
 En este ejemplo, creará una C# aplicación de consola en Visual Studio que genere una [excepción NullReferenceException](/dotnet/api/system.nullreferenceexception).
 
-1. En Visual Studio, cree una C# aplicación de consola (**archivo** > **nuevo** > **proyecto** > **aplicación de consola**de **Visual C#**  > ) llamado *ThrowsNullException*. Para obtener más información sobre la creación de proyectos en Visual Studio, consulte [Tutorial: crear una aplicación sencilla](/visualstudio/get-started/csharp/tutorial-wpf).
+1. En Visual Studio, cree una C# aplicación de consola (**archivo** > **nuevo** > **proyecto** > **aplicación de consola**de **Visual C#**  > ) llamado *ThrowsNullException*. Para obtener más información sobre la creación de proyectos en Visual Studio, consulte [Tutorial: crear una aplicación sencilla](../get-started/csharp/tutorial-wpf.md).
 
 1. Cuando se abra el proyecto en Visual Studio, abra el archivo *Program.CS* . Reemplace el método Main () por el siguiente código, que imprime una línea en la consola y, a continuación, produce una excepción NullReferenceException:
 

@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: d001edcd281a0c21d244704f0a068850804b8762
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.openlocfilehash: 4d3afc8ff48355c74544edf123689495bfde1302
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72981151"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73189126"
 ---
 # <a name="walkthrough-profile-a-sharepoint-application"></a>Tutorial: generar perfiles de una aplicación de SharePoint
   En este tutorial se muestra cómo usar las herramientas de generación de perfiles de Visual Studio para optimizar el rendimiento de una aplicación de SharePoint. La aplicación de ejemplo es un receptor de eventos de características de SharePoint que contiene un bucle inactivo que merma el rendimiento del receptor de eventos de características. El generador de perfiles de Visual Studio le permite localizar y eliminar la parte más costosa (rendimiento más lento) del proyecto, también conocida como la *ruta de acceso activa*.
@@ -197,7 +197,7 @@ ms.locfileid: "72981151"
 
 2. En la página uno del **Asistente de rendimiento**, deje el método de generación de perfiles como muestreo de la **CPU** y elija el botón **siguiente** .
 
-     Los demás métodos de generación de perfiles pueden utilizarse en situaciones más avanzadas de generación de perfiles. Para obtener más información, vea [Introducción a los métodos de generación de perfiles](/visualstudio/profiling/understanding-performance-collection-methods).
+     Los demás métodos de generación de perfiles pueden utilizarse en situaciones más avanzadas de generación de perfiles. Para obtener más información, vea [Introducción a los métodos de generación de perfiles](../profiling/understanding-performance-collection-methods.md).
 
 3. En la página dos del **Asistente de rendimiento**, deje el destino del perfil como **Profilet** y elija el botón **siguiente** .
 
@@ -273,7 +273,7 @@ ms.locfileid: "72981151"
      La característica se debería activar mucho más rápido ahora que se ha eliminado la llamada al bucle inactivo. El informe de generación de perfiles de muestreo debería reflejarlo.
 
 ## <a name="see-also"></a>Vea también
-- [Explorador de rendimiento](/visualstudio/profiling/performance-explorer)
-- [Información general sobre las sesiones de rendimiento](/visualstudio/profiling/performance-session-overview)
-- [Guía básica para la generación de perfiles de rendimiento](/visualstudio/profiling/beginners-guide-to-performance-profiling)
+- [Explorador de rendimiento](../profiling/performance-explorer.md)
+- [Información general sobre las sesiones de rendimiento](../profiling/performance-session-overview.md)
+- [Guía básica para la generación de perfiles de rendimiento](../profiling/beginners-guide-to-performance-profiling.md)
 - [Buscar cuellos de botella en la aplicación con Visual Studio Profiler](https://msdn.microsoft.com/magazine/cc337887.aspx)

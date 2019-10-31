@@ -16,21 +16,21 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: af0d57e39fa8d1312032bacbbd9af95d44449ca1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: f77df2eae643b658e915662e0f50f6a376141d27
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62852475"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73188459"
 ---
 # <a name="debugging-and-the-hosting-process"></a>Depuración y proceso host
 El proceso host de Visual Studio mejora el rendimiento del depurador y permite ofrecer nuevas características de depuración, como la depuración de confianza parcial y la evaluación de expresiones en tiempo de diseño. Si es necesario, puede deshabilitar el proceso host. En las secciones siguientes se describen algunas diferencias entre la depuración con y sin el proceso host.
 
 > [!NOTE]
-> A partir de Visual Studio 2017, la opción de depuración mediante el proceso de hospedaje ya no es necesario y se ha quitado. Para obtener más información, consulte [depuración: Visual Studio 2017 pretende aumentar la velocidad de su trabajo favorito menos](https://vslive.com/Blogs/News-and-Tips/2017/02/Debugging-Visual-Studio-2017-aims-to-speed-up-your-least-favorite-job.aspx).
+> A partir de Visual Studio 2017, la opción para depurar con el proceso de hospedaje ya no es necesaria y se ha quitado. Para obtener más información, vea [depuración: Visual Studio 2017 pretende acelerar el trabajo menos favorito](https://vslive.com/Blogs/News-and-Tips/2017/02/Debugging-Visual-Studio-2017-aims-to-speed-up-your-least-favorite-job.aspx).
 
 ## <a name="partial-trust-debugging-and-click-once-security"></a>Depuración de confianza parcial y seguridad Click Once
- La depuración de confianza parcial requiere el proceso host. Si se deshabilita el proceso host, la depuración de confianza parcial no funcionará aunque la seguridad de confianza parcial esté habilitada en la página **Seguridad** de **Propiedades del proyecto**. Para obtener más información, vea [Cómo: Depuración de una aplicación de confianza parcial](/visualstudio/debugger/debugger-security).
+ La depuración de confianza parcial requiere el proceso host. Si se deshabilita el proceso host, la depuración de confianza parcial no funcionará aunque la seguridad de confianza parcial esté habilitada en la página **Seguridad** de **Propiedades del proyecto**. Para obtener más información, vea [Cómo: depurar una aplicación de confianza parcial](debugger-security.md).
 
 ## <a name="design-time-expression-evaluation"></a>Evaluación de expresiones en tiempo de diseño
  La expresión en tiempo de diseño siempre utiliza el proceso host. Al deshabilitar el proceso host en **Propiedades del proyecto** , se deshabilita la evaluación de expresiones en tiempo de diseño para los proyectos de biblioteca de clases. Para otros tipos de proyecto, la evaluación de expresiones en tiempo de diseño no se deshabilita. En vez de esto, Visual Studio inicia el archivo ejecutable real y lo utiliza para la evaluación en tiempo de diseño sin el proceso host. Esta diferencia podría generar resultados diferentes.
@@ -43,4 +43,4 @@ El proceso host de Visual Studio mejora el rendimiento del depurador y permite o
 
 ## <a name="see-also"></a>Vea también
 
-- [Cómo: Depuración de una aplicación de confianza parcial](/visualstudio/debugger/debugger-security)
+- [Cómo: Depurar una aplicación de confianza parcial](debugger-security.md)
