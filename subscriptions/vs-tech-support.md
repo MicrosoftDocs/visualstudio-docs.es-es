@@ -6,12 +6,12 @@ manager: lank
 ms.date: 07/29/2019
 ms.topic: conceptual
 description: Vea cómo activar la ventaja de soporte técnico que se incluye con la suscripción de Visual Studio.
-ms.openlocfilehash: 6474cf3322b878055053eaaf1f1943ebc546b206
-ms.sourcegitcommit: 02acadb912faced7eaffe27c2c19104bf0428bcd
+ms.openlocfilehash: 6d76fa3bdff63a31598fb9a977f6ed024d214af1
+ms.sourcegitcommit: ab18c9d850192fc9ccec10961f1126e8b0cba8da
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "70936906"
+ms.lasthandoff: 10/30/2019
+ms.locfileid: "73061144"
 ---
 # <a name="activate-and-use-the-technical-support-benefit-in-visual-studio-subscriptions"></a>Activación y uso de la ventaja de soporte técnico en suscripciones de Visual Studio
 La ventaja de soporte técnico en suscripciones de Visual Studio sirve para resolver problemas break-fix en **entornos de no producción** para productos que siguen en la fase de soporte técnico general del [ciclo de vida de soporte](https://support.microsoft.com/lifecycle/search). Las suscripciones de nube anuales y estándar de Visual Studio Enterprise reciben cuatro incidentes, mientras que las suscripciones de nube anuales y estándar de Visual Studio Professional reciben dos, con validez de un año a partir de la activación de la ventaja. La activación de la ventaja debe producirse mientras la suscripción está activa.
@@ -29,7 +29,7 @@ Las Herramientas de desarrollo como el IDE de Visual Studio y Azure DevOps Serve
 
 Los productos que no son de desarrollador (como SQL, Windows o SharePoint) descargados de las suscripciones de Visual Studio solo son válidos para soporte técnico estándar. Estos productos solo tienen licencia para entornos de desarrollo con el fin de diseñar, desarrollar, probar o demostrar aplicaciones. Estos productos no tienen licencia para entornos de producción.
 
-Descripciones de nivel de producto: expanda **Planes de soporte técnico no disponibles** si ve que el Plan de soporte técnico no se puede usar para el soporte técnico con el producto especificado (Código: 8). No se puede usar el contrato de soporte técnico para la versión de producto que se ha seleccionado.
+Descripciones de nivel de producto: Expanda **Planes de soporte técnico no disponibles**. Si ve **Support plan cannot be used for support on the specified product (Code: 8)** (No se puede usar el plan de soporte para soporte técnico en el producto especificado; código: 8), su contrato de soporte técnico no puede utilizarse con la versión de producto que ha seleccionado.
 
 ## <a name="how-to-activate-the-benefit"></a>Cómo activar la ventaja
 1. Vaya a https://my.visualstudio.com/Benefits, baje hasta la sección de soporte técnico y haga clic en **Chat para activar** en el icono de soporte técnico.

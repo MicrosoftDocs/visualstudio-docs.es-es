@@ -6,12 +6,12 @@ manager: lank
 ms.date: 07/30/2019
 ms.topic: conceptual
 description: Obtenga información sobre cómo configurar la cuenta Pago por uso de Azure.
-ms.openlocfilehash: 6a2d4eab9ecc0adb6a89d87ceccb45b1472142b9
-ms.sourcegitcommit: 5694c5236fa32ba7f5bc1236a853f725ec7557e9
+ms.openlocfilehash: 851ebd4a3218cada7af5ac139a7297094abde0c6
+ms.sourcegitcommit: bcdab788085bd9931d73883fe70cd5831317dca2
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "68681145"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "72816394"
 ---
 # <a name="azure-devtest-pay-as-you-go-subscriptions"></a>Suscripciones de Desarrollo/pruebas - Pago por uso de Azure
 Colabore con su equipo en la nube.  Cree varias suscripciones Desarrollo/pruebas - Pago por uso, al mismo tiempo que colabora con otros suscriptores y proporciona aislamiento entre los equipos y el entorno.  Recibirá tarifas por horas con descuentos exclusivos para desarrollo y pruebas y derechos de uso en la nube de su software de suscripción en Azure.
@@ -21,7 +21,7 @@ Colabore con su equipo en la nube.  Cree varias suscripciones Desarrollo/pruebas
    > [!div class="mx-imgBorder"]
    > ![Icono de Azure PAYG](_img/vs-azure-payg/vs-azure-payg-tile.png)
 
-2. Si ya ha activado una cuenta de Azure como parte de los beneficios de la suscripción (por ejemplo, si tiene una suscripción Enterprise y ha activado el crédito mensual de 150 dólares de Azure), vaya al paso 5.
+2. Si ya ha activado una cuenta de Azure como parte de las ventajas de la suscripción (por ejemplo, si tiene una suscripción Enterprise y ha activado el crédito individual mensual de Azure DevTest de 150 dólares de Azure), vaya al paso 5.
 
 3. En la página de registro de Microsoft Azure, tendrá la opción de configurar la oferta Desarrollo/pruebas - Pago por uso (PAYG) o actualizar a la oferta de Visual Studio Enterprise.  Si no quiere actualizar, haga clic en **Continuar con la oferta actual (Desarrollo/pruebas - Pago por uso)** .
 
@@ -44,7 +44,7 @@ R: Para modificar cualquiera de las suscripciones de Azure:
 4. Ahora tendrá opciones para administrar o cancelar la suscripción, cambiarle el nombre, cambiar el directorio o transferir la propiedad de la facturación.
 
 ## <a name="next-steps"></a>Pasos siguientes
-Muchas suscripciones incluyen ventajas adicionales relacionadas con Azure, como Azure DevOps y créditos de Azure.  Para más información sobre estas ventajas, consulte:
+Muchas suscripciones incluyen ventajas adicionales relacionadas con Azure, como Azure DevOps y crédito individual de Azure DevTest.  Para más información sobre estas ventajas, consulte:
 - [Azure DevOps](vs-azure-devops.md)
-- [Créditos de Azure](vs-azure.md)
+- [Crédito individual de Azure DevTest](vs-azure.md)
 

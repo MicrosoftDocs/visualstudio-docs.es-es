@@ -6,12 +6,12 @@ manager: lank
 ms.date: 07/29/2019
 ms.topic: conceptual
 description: Obtenga información sobre la ventaja Soporte técnico de la Comunidad de Azure incluida en las suscripciones de Visual Studio.
-ms.openlocfilehash: 0f03d269ab316801a75cbb3b1b618d722ec46b89
-ms.sourcegitcommit: 5694c5236fa32ba7f5bc1236a853f725ec7557e9
+ms.openlocfilehash: 128147833baf450c0d161f39628a0928e9118412
+ms.sourcegitcommit: bcdab788085bd9931d73883fe70cd5831317dca2
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "68681251"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "72816542"
 ---
 # <a name="azure-community-support-forum-in-visual-studio-subscriptions"></a>Foro de soporte técnico de la Comunidad de Azure en las suscripciones de Visual Studio
 Obtenga ayuda directamente del equipo de Azure en los foros de soporte seleccionados a través de la Comunidad Azure.  El beneficio de la Comunidad Azure proporciona acceso a una colección de foros que se centran en los temas relacionados con Azure.
@@ -69,4 +69,4 @@ La disponibilidad de la ventaja Comunidad Azure depende del nivel de suscripció
 - ¿Tiene alguna pregunta sobre el IDE de Visual Studio, Azure DevOps Services u otros productos o servicios de Visual Studio?  Visite el [soporte técnico de Visual Studio](https://visualstudio.microsoft.com/support/).
 
 ## <a name="next-steps"></a>Pasos siguientes
-¿Sabía que muchas de las suscripciones de Visual Studio incluyen créditos de Azure?  Descubra cómo [activar](vs-azure.md) los suyos.
+¿Sabía que muchas de las suscripciones de Visual Studio incluyen crédito individual de Azure DevTest?  Descubra cómo [activar](vs-azure.md) los suyos.

@@ -10,18 +10,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - azure
-ms.openlocfilehash: d1703fb5386c7b29446b621d2e83f9486e93dd3d
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 4bbff0c2d149afddc355afe5f6c93e9d0aea54c0
+ms.sourcegitcommit: 8589d85cc10710ef87e6363a2effa5ee5610d46a
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65679263"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "72806908"
 ---
 # <a name="publish-a-web-app-to-azure-app-service-using-visual-studio"></a>Publique una aplicación web en Azure App Service mediante Visual Studio
 
 Para las aplicaciones ASP.NET, ASP.NET Core, Node.js y .NET Core, publique en Azure App Service o Azure App Service para Linux (con contenedores) mediante uno de los métodos siguientes.
 
-* Para la implementación continua (o automática) de aplicaciones, use Azure DevOps con [Azure Pipelines](https://docs.microsoft.com/azure/devops/pipelines/get-started-yaml?view=azdevops).
+* Para la implementación continua (o automática) de aplicaciones, use Azure DevOps con [Azure Pipelines](/azure/devops/pipelines/get-started-yaml?view=azdevops).
 
 * Para la implementación de un solo uso (o manual) de aplicaciones, use la herramienta de **publicación** de Visual Studio para implementar aplicaciones ASP.NET, ASP.NET Core, Node.js y .NET Core en Azure App Service o App Service para Linux (con contenedores). En el caso de las aplicaciones de Python, siga los pasos de [Publicación en Azure App Service (Python)](../python/publishing-python-web-applications-to-azure-from-visual-studio.md).
 
@@ -35,15 +35,15 @@ En este artículo se describe cómo usar la herramienta de **publicación** para
 
     ![Comando Publicar en el menú contextual del proyecto del Explorador de soluciones](../deployment/media/quickstart-publish.png "Elección de Publicar")
 
-1. Si previamente ha configurado algún perfil de publicación, aparece el panel **Publicar**, en cuyo caso seleccione **Crear nuevo perfil**.
+1. Si previamente ha configurado algún perfil de publicación, aparecerá el panel **Publicar**, en cuyo caso seleccione **Crear nuevo perfil**.
 
 1. En el cuadro de diálogo **Elegir un destino de publicación**, elija **App Service**.
 
-    ![Elección de Azure App Service](../deployment/media/quickstart-publish-azure.png "Elección Azure App Service")
+    ![Elegir Azure App Service](../deployment/media/quickstart-publish-azure.png "Elegir Azure App Service")
 
 1. Seleccione **Publicar**. Aparecerá el cuadro de diálogo **Crear servicio de aplicaciones**. Inicie sesión con la cuenta de Azure, si fuera necesario; después la configuración predeterminada de App Service rellenará los campos.
 
-    ![Crear servicio de aplicaciones](../deployment/media/quickstart-publish-settings-app-service.png "Crear Azure App Service")
+    ![Crear servicio de aplicaciones](../deployment/media/quickstart-publish-settings-app-service.png "Crear una instancia de Azure App Service")
 
 1. Seleccione **Crear**. Visual Studio implementará la aplicación en Azure App Service y la aplicación web se cargará en el explorador. El panel de propiedades del proyecto **Publicar** muestra la dirección URL del sitio y otros detalles.
 
@@ -51,7 +51,7 @@ En este artículo se describe cómo usar la herramienta de **publicación** para
 
 ## <a name="clean-up-resources"></a>Limpiar los recursos
 
-En los pasos anteriores, ha creado recursos de Azure en un grupo de recursos. Si no prevé necesitar estos recursos en el futuro, puede eliminarlos mediante la eliminación del grupo de recursos.
+En los pasos anteriores, creó recursos de Azure en un grupo de recursos. Si no prevé necesitar estos recursos en el futuro, puede eliminarlos mediante la eliminación del grupo de recursos.
 En el menú izquierdo de Azure Portal, seleccione **Grupos de recursos** y luego **myResourceGroup**.
 En la página del grupo de recursos, asegúrese de que los recursos que aparecen son los que quiere eliminar.
 Seleccione **Eliminar**, escriba **myResourceGroup** en el cuadro de texto y luego seleccione **Eliminar**.

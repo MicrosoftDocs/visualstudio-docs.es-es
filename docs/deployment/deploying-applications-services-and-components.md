@@ -23,12 +23,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 02e8beae03dc2828d81b80813325300fe31b3cea
-ms.sourcegitcommit: 53bc4c11b82882ab658e34c65ae374060f823531
+ms.openlocfilehash: 006ecdffd7b109c32f7063fee5f454e43c6c4597
+ms.sourcegitcommit: 8589d85cc10710ef87e6363a2effa5ee5610d46a
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/19/2019
-ms.locfileid: "71128158"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "72806918"
 ---
 # <a name="first-look-at-deployment-in-visual-studio"></a>Primer vistazo a la implementación en Visual Studio
 
@@ -50,7 +50,7 @@ La implementación en una carpeta local se suele usar para las pruebas, o para i
 
 - **ASP.NET**, **ASP.NET Core**, **Python** y **Node.js**: Publique en Azure App Service o Azure App Service para Linux (con contenedores) mediante uno de los métodos siguientes.
 
-  - Para la implementación continua (o automática) de aplicaciones, use Azure DevOps con [Azure Pipelines](https://docs.microsoft.com/azure/devops/pipelines/get-started-yaml?view=azdevops).
+  - Para la implementación continua (o automática) de aplicaciones, use Azure DevOps con [Azure Pipelines](/azure/devops/pipelines/get-started-yaml?view=azdevops).
 
   - Para la implementación de un solo uso (o manual) de aplicaciones, use la herramienta de **publicación** de Visual Studio.
 
@@ -58,7 +58,7 @@ La implementación en una carpeta local se suele usar para las pruebas, o para i
 
   Para usar la herramienta de **publicación**, haga clic con el botón derecho en el proyecto en el Explorador de soluciones y seleccione **Publicar**. (Si anteriormente ha configurado algún perfil de publicación, debe hacer clic en **Crear nuevo perfil**). En el cuadro de diálogo Publicar, elija **App Service** o **Azure Virtual Machines** y luego siga los pasos de configuración.
 
-  ![Elección de Azure App Service](../deployment/media/quickstart-publish-azure.png "Elección Azure App Service")
+  ![Elegir Azure App Service](../deployment/media/quickstart-publish-azure.png "Elegir Azure App Service")
 
   A partir de Visual Studio 2017 versión 15.7, puede implementar aplicaciones ASP.NET Core en **App Service para Linux**.
 
@@ -81,7 +81,7 @@ La implementación en una carpeta local se suele usar para las pruebas, o para i
 
     Para obtener información sobre la importación de un perfil de publicación en Visual Studio, vea [Importación de una configuración de publicación e implementación en IIS](../deployment/tutorial-import-publish-settings-iis.md).
 
-    También puede implementar aplicaciones y servicios ASP.NET de más maneras. Para obtener más información, vea [Deploying ASP.NET web applications and services](http://www.asp.net/aspnet/overview/deployment) (Implementación de aplicaciones y servicios web ASP.NET).
+    También puede implementar aplicaciones y servicios ASP.NET de más maneras. Para obtener más información, vea [Deploying ASP.NET web applications and services](/aspnet/mvc/overview/deployment/) (Implementación de aplicaciones y servicios web ASP.NET).
 
 - **Escritorio de Windows**: puede publicar una aplicación de escritorio de Windows en un servidor web o en un recurso compartido de archivos de red mediante implementación de ClickOnce. A continuación, los usuarios podrán instalar la aplicación con un solo clic. Para más información, vea [Implementación de una aplicación de escritorio con ClickOnce](how-to-publish-a-clickonce-application-using-the-publish-wizard.md) (C# y Visual Basic). Para C++ y la CLI, vea [Implementación de ClickOnce para aplicaciones de Visual C++](/cpp/windows/clickonce-deployment-for-visual-cpp-applications), o bien, para C y C ++, vea [Implementación de una aplicación de Visual C++ mediante un proyecto de instalación](/cpp/windows/walkthrough-deploying-a-visual-cpp-application-by-using-a-setup-project).
 
@@ -118,7 +118,7 @@ Si necesita una instalación más compleja de una aplicación de escritorio de l
    En Visual Studio 2019, obtenga la [extensión WiX Toolset de Visual Studio 2019](https://marketplace.visualstudio.com/items?itemName=WixToolset.WixToolsetVisualStudio2019Extension).
    ::: moniker-end
 
-- Se puede crear un paquete de instalador EXE o MSI mediante [InstallShield](https://www.flexerasoftware.com/producer/products/software-installation/installshield-software-installer/tab/requirements) de Flexera Software. InstallShield se puede usar con Visual Studio 2017 y versiones posteriores (no se admite Community Edition). Tenga en cuenta que InstallShield Limited Edition ya no se incluye con Visual Studio y no se admite en Visual Studio 2017 y versiones posteriores; póngase en contacto con [Flexera Software](http://learn.flexerasoftware.com/content/IS-EVAL-InstallShield-Limited-Edition-Visual-Studio) para consultar sobre su disponibilidad futura.
+- Se puede crear un paquete de instalador EXE o MSI mediante [InstallShield](https://www.flexerasoftware.com/producer/products/software-installation/installshield-software-installer/tab/requirements) de Flexera Software. InstallShield se puede usar con Visual Studio 2017 y versiones posteriores (no se admite Community Edition). Tenga en cuenta que InstallShield Limited Edition ya no se incluye con Visual Studio y no se admite en Visual Studio 2017 y versiones posteriores; póngase en contacto con [Flexera Software](https://info.flexerasoftware.com/IS-EVAL-InstallShield-Limited-Edition-Visual-Studio) para consultar sobre su disponibilidad futura.
 
 - Un paquete de instalador EXE o MSI se puede crear mediante un proyecto de instalación (vdproj). Para usar esta opción, instale la [extensión de proyectos del Instalador de Visual Studio](https://marketplace.visualstudio.com/items?itemName=VisualStudioProductTeam.MicrosoftVisualStudio2017InstallerProjects#overview).
 

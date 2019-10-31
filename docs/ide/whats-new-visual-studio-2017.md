@@ -18,12 +18,12 @@ ms.topic: conceptual
 ms.workload:
 - multiple
 monikerRange: vs-2017
-ms.openlocfilehash: 4fd3bde36b81dde254f3447d46bd05ffc41c6cde
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 354d984ef8df7bd7c493a04eb0e27b439d82b0d1
+ms.sourcegitcommit: 4f82de3fb0cfae226aef1abb40c47e63d2036a5c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68925903"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72919145"
 ---
 # <a name="whats-new-in-visual-studio-2017"></a>Novedades de Visual Studio 2017
 
@@ -196,7 +196,7 @@ Para más información sobre las nuevas características de productividad, consu
 
 Verá varias mejoras en Visual Studio, como la distribución de C++ Core Guidelines con Visual Studio, la actualización del compilador mediante la incorporación de compatibilidad mejorada para características de C++11 y C++ y la adición y actualización de las funciones de las bibliotecas de C++. También hemos mejorado el rendimiento del IDE de C++ y las cargas de trabajo de la instalación, entre otros elementos.
 
-Además, hemos corregido más de 250 errores y problemas notificados en el compilador y las herramientas, muchos enviados por los usuarios a través de la [Comunidad de desarrolladores de C++](https://developercommunity.visualstudio.com/spaces/62/index.html "Developer Community for C++").
+Además, hemos corregido más de 250 errores y problemas notificados en el compilador y las herramientas, muchos de ellos enviados por los usuarios a través de la [Comunidad de desarrolladores de C++](https://developercommunity.visualstudio.com/spaces/62/index.html "Comunidad de desarrolladores de C++").
 
 Para información completa, consulte la página [Novedades de Visual C++ en Visual 2017](/cpp/top/what-s-new-for-visual-cpp-in-visual-studio).
 
@@ -222,7 +222,7 @@ Para obtener más información, vea la publicación del blog [Use the New Except
 
 Para poder navegar y ver las instantáneas, use los botones **Retroceder paso a paso** y **Avanzar paso a paso** en la barra de herramientas de **depuración**. Estos botones permiten navegar por los eventos que aparecen en la pestaña **Eventos** en la ventana **Herramientas de diagnóstico**. Retroceder o avanzar paso a paso a un evento activa de manera automática la depuración histórica del evento seleccionado.
 
-![Cuadro de diálogo Nuevo asistente de excepciones en Visual Studio](../debugger/media/intellitrace-step-back-icons-description.png  "Botones Retroceder paso a paso y Avanzar paso a paso")
+![Cuadro de diálogo Nuevo asistente de excepciones en Visual Studio](../debugger/media/intellitrace-step-back-icons-description.png  "Botones Retroceder paso a paso y Avanzar paso a paso")
 
 Para más información, consulte la página [Visualización de instantáneas mediante step-back de IntelliTrace](../debugger/view-historical-application-state.md).
 
@@ -243,7 +243,7 @@ Los contenedores proporcionan mayor densidad de aplicaciones y menores costos de
 
 Como parte de la carga de trabajo "Desarrollo de Azure", hemos incluido herramientas para ayudarle a desarrollar funciones de Azure con bibliotecas de clases de C# precompiladas. Ahora puede compilar, ejecutar y depurar en su equipo de desarrollo local y, después, publicar directamente en Azure desde Visual Studio.
 
-Para obtener más información, vea la página [Herramientas de Azure Functions para Visual Studio](https://docs.microsoft.com/azure/azure-functions/functions-develop-vs).
+Para obtener más información, vea la página [Herramientas de Azure Functions para Visual Studio](/azure/azure-functions/functions-develop-vs).
 
 ### <a name="debug-live-aspnet-apps-using-snappoints-and-logpoints-in-live-azure-applications"></a>Depuración de aplicaciones ASP.NET activas con puntos de acoplamiento y puntos de registro en aplicaciones Azure activas
 
@@ -269,7 +269,7 @@ Elija el lenguaje de desarrollo de su preferencia&mdash;desde C#, Visual Basic, 
 **Novedades de la versión 15.5**: La versión 15.5 de Visual Studio 2017 proporciona el mejor respaldo para el SDK de Windows 10 Fall Creators Update (10.0.16299.0). Windows 10 Fall Creators Update también ofrece muchas mejoras para los desarrolladores de UWP. A continuación, algunos de los cambios más importantes: 
 
 * **Compatibilidad con .NET Standard 2.0**<br/>Además de una implementación de aplicación optimizada, Windows 10 Fall Creators Update es la primera versión de Windows 10 que ofrece compatibilidad con .NET Standard 2.0. De hecho, [.NET Standard](https://devblogs.microsoft.com/dotnet/introducing-net-standard/) es una implementación de referencia de la biblioteca de clases base que cualquier plataforma .NET puede implementar. El objetivo de .NET Standard es que sea lo más sencillo posible que los desarrolladores de .NET compartan el código en cualquier plataforma .NET en la que elijan trabajar.
-* **Lo mejor de UWP y Win32**<br/>Mejoramos la plataforma Windows 10 con el [Puente de dispositivo de escritorio](https://docs.microsoft.com/windows/uwp/porting/desktop-to-uwp-root) para mejorar Windows 10 para todos los desarrolladores de .NET, sin importar si se centran en UWP, WPF, Windows Forms o Xamarin. Con el nuevo tipo de proyecto de paquetes de la implementación de la versión 15.5 de Visual Studio 2017, puede crear paquetes de aplicaciones de Windows para los proyectos de WPF o Windows Forms, exactamente igual que para los proyectos de UWP. Cuando empaqueta la aplicación, obtiene todos los beneficios de la implementación de la aplicación de Windows 10 y tiene la opción de una distribución a través de Microsoft Store (para aplicaciones de consumidor) o Microsoft Store para Empresas y para Educación. Como las aplicaciones empaquetadas tienen acceso tanto a la superficie de API UWP y las API Win32, ahora puede modernizar las aplicaciones de WPF y Windows Forms de manera gradual con las API UWP y las características de Windows 10. Además, puede incluir los componentes Win32 en las aplicaciones de UWP que funcionan en los equipos de escritorio con todas las funcionalidades Win32.
+* **Lo mejor de UWP y Win32**<br/>Mejoramos la plataforma Windows 10 con el [Puente de dispositivo de escritorio](/windows/uwp/porting/desktop-to-uwp-root) para mejorar Windows 10 para todos los desarrolladores de .NET, sin importar si se centran en UWP, WPF, Windows Forms o Xamarin. Con el nuevo tipo de proyecto de paquetes de la implementación de la versión 15.5 de Visual Studio 2017, puede crear paquetes de aplicaciones de Windows para los proyectos de WPF o Windows Forms, exactamente igual que para los proyectos de UWP. Cuando empaqueta la aplicación, obtiene todos los beneficios de la implementación de la aplicación de Windows 10 y tiene la opción de una distribución a través de Microsoft Store (para aplicaciones de consumidor) o Microsoft Store para Empresas y para Educación. Como las aplicaciones empaquetadas tienen acceso tanto a la superficie de API UWP y las API Win32, ahora puede modernizar las aplicaciones de WPF y Windows Forms de manera gradual con las API UWP y las características de Windows 10. Además, puede incluir los componentes Win32 en las aplicaciones de UWP que funcionan en los equipos de escritorio con todas las funcionalidades Win32.
 
 Para más información sobre UWP, consulte la página [Desarrollar aplicaciones para la Plataforma universal de Windows (UWP)](../cross-platform/develop-apps-for-the-universal-windows-platform-uwp.md).
 
@@ -323,12 +323,12 @@ Para ampliar las funcionalidades de DevOps para el desarrollo de bases de datos 
 
 Incluido con Visual Studio 2017 Enterprise:
 
-* [Redgate ReadyRoll Core](http://www.red-gate.com/products/sql-development/readyroll/entrypage/microsoft-and-readyroll?utm_source=microsoft&utm_medium=link&utm_campaign=readyroll&utm_term=docs-newinvs) le ayuda a desarrollar scripts de migración, administrar cambios en la base de datos a través del control de código fuente y automatizar de forma segura implementaciones de cambios en la base de datos de SQL Server junto con cambios en las aplicaciones.
-* [Redgate SQL Prompt Core](http://www.red-gate.com/products/sql-development/sql-prompt/entrypage/microsoft-and-sql-prompt?utm_source=microsoft&utm_medium=link&utm_campaign=sqlprompt&utm_term=docs-newinvs) le ayuda a escribir SQL con más rapidez y exactitud con la ayuda de la finalización de código inteligente. SQL Prompt completa automáticamente los objetos de base de datos y del sistema, así como las palabras clave, y ofrece sugerencias de columna a medida que escribe. Esto da como resultado un código más limpio con menos errores porque no es necesario recordar cada nombre o alias de columna.
+* [Redgate ReadyRoll Core](https://www.red-gate.com/products/sql-development/sql-change-automation/?utm_source=microsoft&utm_medium=link&utm_campaign=readyroll&utm_term=docs-newinvs) le ayuda a desarrollar scripts de migración, administrar cambios en la base de datos a través del control de código fuente y automatizar de forma segura implementaciones de cambios en la base de datos de SQL Server junto con cambios en las aplicaciones.
+* [Redgate SQL Prompt Core](https://www.red-gate.com/products/sql-development/sql-prompt/?utm_source=microsoft&utm_medium=link&utm_campaign=sqlprompt&utm_term=docs-newinvs) le ayuda a escribir SQL con más rapidez y exactitud con la ayuda de la finalización de código inteligente. SQL Prompt completa automáticamente los objetos de base de datos y del sistema, así como las palabras clave, y ofrece sugerencias de columna a medida que escribe. Esto da como resultado un código más limpio con menos errores porque no es necesario recordar cada nombre o alias de columna.
 
 Incluido con todas las ediciones de Visual Studio 2017:
 
-* [Búsqueda de SQL de Redgate](http://www.red-gate.com/products/sql-development/sql-search/?utm_source=microsoft&utm_medium=link&utm_campaign=sqlsearch&utm_term=docs-newinvs) aumenta la productividad al permitir encontrar rápidamente fragmentos y objetos de SQL en varias bases de datos.
+* [Búsqueda de SQL de Redgate](https://www.red-gate.com/products/sql-development/sql-search/?utm_source=microsoft&utm_medium=link&utm_campaign=sqlsearch&utm_term=docs-newinvs) aumenta la productividad al permitir encontrar rápidamente fragmentos y objetos de SQL en varias bases de datos.
 
 Para más información, consulte la entrada de blog [Redgate Data Tools en Visual Studio 2017](https://devblogs.microsoft.com/visualstudio/redgate-data-tools-in-visual-studio-2017/).
 

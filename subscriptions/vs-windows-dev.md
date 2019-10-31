@@ -6,12 +6,12 @@ manager: lank
 ms.date: 07/31/2019
 ms.topic: conceptual
 description: Obtenga información sobre la cuenta de desarrollador de Windows que se incluye con la suscripción de Visual Studio.
-ms.openlocfilehash: 506edeb75a2dba2831c57698a4259a09834633de
-ms.sourcegitcommit: a124076dfd6b4e5aecda4d01984fee7b0c034745
+ms.openlocfilehash: e7dc24fef7328dee38f9aca92f3676573b0143ef
+ms.sourcegitcommit: bcdab788085bd9931d73883fe70cd5831317dca2
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2019
-ms.locfileid: "68787794"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "72816422"
 ---
 # <a name="windows-developer-account-in-visual-studio-subscriptions"></a>Cuenta de desarrollador de Windows en suscripciones de Visual Studio
 Su cuenta de desarrollador de Windows, incluida con algunas suscripciones de Visual Studio, permite enviar a Microsoft Store aplicaciones Windows tanto gratuitas como de pago.
@@ -63,4 +63,4 @@ Se recomienda crear una ventana "privada" del explorador para este proceso.  Por
 - ¿Tiene alguna pregunta sobre el IDE de Visual Studio, Azure DevOps Services u otros productos o servicios de Visual Studio?  Visite el [soporte técnico de Visual Studio](https://visualstudio.microsoft.com/support/).
 
 ## <a name="next-steps"></a>Pasos siguientes
-Azure es su espacio aislado personal para desarrollo y prueba.  Puede aprovisionar máquinas virtuales, servicios en la nube y otros recursos de Azure. Asegúrese de activar su [ventaja de Azure](vs-azure.md) para empezar a usar Azure con créditos mensuales.
+Azure es su espacio aislado personal para desarrollo y prueba.  Puede aprovisionar máquinas virtuales, servicios en la nube y otros recursos de Azure. Asegúrese de activar su [ventaja de Azure](vs-azure.md) para empezar a usar el crédito individual de Azure DevTest.

@@ -5,16 +5,16 @@ ms.author: lank
 manager: lank
 ms.date: 07/29/2019
 ms.topic: conceptual
-description: Vea cómo activar el beneficio de Azure que se incluye con la suscripción de Visual Studio.
-ms.openlocfilehash: 923573b1079ddbfaa77837e57df1baa618db6e21
-ms.sourcegitcommit: 5694c5236fa32ba7f5bc1236a853f725ec7557e9
+description: Vea cómo activar el beneficio de crédito individual de Azure DevTest que se incluye con la suscripción de Visual Studio.
+ms.openlocfilehash: 7bd6313a0e6d52f9e461383fb04c9039f3b974ac
+ms.sourcegitcommit: bcdab788085bd9931d73883fe70cd5831317dca2
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "68681669"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "72816453"
 ---
 # <a name="use-microsoft-azure-in-visual-studio-subscriptions"></a>Usar Microsoft Azure en suscripciones de Visual Studio
-Como suscriptor de Visual Studio, puede usar Microsoft Azure sin cargo adicional.  Gracias a su [crédito de Azure mensual](https://azure.microsoft.com/pricing/member-offers/msdn-benefits-details/), dispone de Azure como espacio aislado personal para desarrollo y pruebas.  Puede aprovisionar máquinas virtuales, servicios en la nube y otros recursos de Azure.  La cantidad de crédito varía según el nivel de suscripción.
+Como suscriptor de Visual Studio, puede usar Microsoft Azure sin cargo adicional.  Gracias a su [crédito individual mensual de Azure DevTest](https://azure.microsoft.com/pricing/member-offers/msdn-benefits-details/), dispone de Azure como espacio aislado personal para desarrollo y pruebas.  Puede aprovisionar máquinas virtuales, servicios en la nube y otros recursos de Azure.  La cantidad de crédito varía según el nivel de suscripción.
 
 ## <a name="activation-steps"></a>Pasos para la activación
 1. Inicie sesión en [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs).
@@ -78,9 +78,9 @@ R:  Recibe este correo electrónico porque utiliza la ventaja de Azure asociada 
 
 **Acción recomendada:**
 
-Para seguir usando el crédito y los descuentos de Azure en Visual Studio, siga uno de los pasos siguientes:
+Para seguir usando los descuentos y el crédito individual de Azure DevTest en Visual Studio, siga uno de los pasos siguientes:
 
-Si alguien de su equipo u organización compra suscripciones en su nombre, póngase en contacto con el administrador de Visual Studio de su organización y solicite una suscripción de Visual Studio que le dé derecho a la cantidad de crédito mensual de Azure que necesita.   Solicite al administrador asignar la suscripción nueva al mismo identificador de usuario al que se asignó su suscripción anterior, de manera que no tenga que preocuparse de transferir su suscripción de Azure.
+Si alguien de su equipo u organización compra suscripciones en su nombre, póngase en contacto con el administrador de Visual Studio de su organización y solicite una suscripción de Visual Studio que le dé derecho a la cantidad de crédito individual de Azure DevTest que necesita.   Solicite al administrador asignar la suscripción nueva al mismo identificador de usuario al que se asignó su suscripción anterior, de manera que no tenga que preocuparse de transferir su suscripción de Azure.
 
 Si puede comprar una suscripción directamente, realice una de las acciones siguientes:
 1. Compre una suscripción de nube anual de Visual Studio [Enterprise](https://marketplace.visualstudio.com/items?itemName=ms.vs-enterprise-annual) o [Professional](https://marketplace.visualstudio.com/items?itemName=ms.vs-professional-annual) a través de Visual Studio Marketplace.
