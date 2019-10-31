@@ -17,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e6444f559902841c13a56265569a0bdc13a9ed26
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.openlocfilehash: 7bcd11d7860e1d191479d4a2ea5f9fac78dcdfe2
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72981713"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73189223"
 ---
 # <a name="localize-sharepoint-solutions"></a>Localizar soluciones de SharePoint
 
@@ -42,7 +42,7 @@ ms.locfileid: "72981713"
 |Independiente del idioma|Un archivo de recursos que contiene cadenas localizadas para un idioma, pero no una referencia cultural específica. Por ejemplo, "fr" para francés.|
 |Específico del idioma|Un archivo de recursos que contiene cadenas localizadas para un idioma y una referencia cultural. Por ejemplo, "FR-CA" para francés canadiense.|
 
- Para obtener más información, consulte [organización jerárquica de recursos para la localización](../ide/hierarchical-organization-of-resources-for-localization.md).
+ Para obtener más información, consulte [organización jerárquica de recursos para la localización](../ide/globalizing-and-localizing-applications.md).
 
  Para especificar los archivos de recursos predeterminados en los proyectos de SharePoint que desarrolle en [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], elija **idioma invariable (país invariable)** en la lista referencia cultural del cuadro de diálogo **Agregar recurso** cuando agregue un archivo de recursos.
 

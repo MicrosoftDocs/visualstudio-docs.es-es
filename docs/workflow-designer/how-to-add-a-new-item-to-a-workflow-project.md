@@ -8,12 +8,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a87efc24ef148600c31dbb07d7517f9235306102
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 5cdea5b3cbf99ab8213c320acc82665816062dca
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72650415"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73189631"
 ---
 # <a name="how-to-add-a-new-item-to-a-workflow-project"></a>Cómo: agregar un nuevo elemento a un proyecto de flujo de trabajo
 
@@ -26,7 +26,7 @@ En la tabla siguiente se enumeran los elementos de Windows Workflow Foundation (
 | Actividad | Actividad que va a estar formada por otras actividades. Al seleccionar este elemento, se agrega el mismo archivo XAML al proyecto que obtendría cuando se selecciona la plantilla **biblioteca de actividades** para un nuevo proyecto. Para obtener más información sobre este procedimiento, vea [crear un proyecto de flujo de trabajo](creating-a-workflow-project.md). |
 | Diseñador de actividad | Diseñador que se usa para personalizar la experiencia en tiempo de diseño de una actividad. Al seleccionar este elemento, se agregan los mismos archivos al proyecto que obtendría cuando se selecciona la plantilla **biblioteca del diseñador de actividad** para un nuevo proyecto. |
 | Actividad de código | Actividad con lógica de ejecución escrita en código. Ya se ha generado automáticamente un archivo de código fuente con invalidación del método <xref:System.Activities.CodeActivity.Execute%2A>. |
-| Servicio de flujo de trabajo WCF | Servicio de [!INCLUDE[indigo2](../workflow-designer/includes/indigo2_md.md)] compilado mediante actividades de flujo de trabajo. Al seleccionar este elemento, se agregan los mismos archivos al proyecto que obtendría cuando se selecciona la plantilla **aplicación de servicio de flujo de trabajo WCF** para un nuevo proyecto. Para obtener más información acerca de este procedimiento, consulte [Cómo: crear una aplicación de servicio de flujo de trabajo WCF](/visualstudio/workflow-designer/creating-a-workflow-project). |
+| Servicio de flujo de trabajo WCF | Servicio de [!INCLUDE[indigo2](../workflow-designer/includes/indigo2_md.md)] compilado mediante actividades de flujo de trabajo. Al seleccionar este elemento, se agregan los mismos archivos al proyecto que obtendría cuando se selecciona la plantilla **aplicación de servicio de flujo de trabajo WCF** para un nuevo proyecto. Para obtener más información acerca de este procedimiento, consulte [Cómo: crear una aplicación de servicio de flujo de trabajo WCF](creating-a-workflow-project.md). |
 
 ## <a name="to-add-a-new-item-to-a-workflow-project"></a>Para agregar un nuevo elemento a un proyecto de flujo de trabajo
 

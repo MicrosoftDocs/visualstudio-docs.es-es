@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7d53df0bc83e2068488c8a7c919f8b76258ad827
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: c1c18ec84a6a62da6cd564c69ef4b83ea76bcfd6
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72728382"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73187147"
 ---
 # <a name="visualizer-security-considerations"></a>Consideraciones de seguridad del visualizador
 Escribir datos en un visualizador implica poner en riesgo la seguridad. En la actualidad, no se conoce ningún tipo de ataque que intente aprovecharse de esta vulnerabilidad potencial, pero los desarrolladores deben tenerlo en cuenta y adoptar las debidas precauciones, tal y como se describe en este documento, para protegerse de futuros ataques.
@@ -39,6 +39,6 @@ Escribir datos en un visualizador implica poner en riesgo la seguridad. En la ac
 
 ## <a name="see-also"></a>Vea también
 - [Arquitectura de un visualizador](../debugger/visualizer-architecture.md)
-- [Cómo: Escribir un visualizador](/visualstudio/debugger/create-custom-visualizers-of-data)
+- [Cómo: Escribir un visualizador](create-custom-visualizers-of-data.md)
 - [Create Custom Visualizers](../debugger/create-custom-visualizers-of-data.md) (Crear visualizadores personalizados)
 - [Ver datos en el depurador](../debugger/viewing-data-in-the-debugger.md)

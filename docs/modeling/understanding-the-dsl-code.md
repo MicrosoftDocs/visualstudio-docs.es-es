@@ -9,12 +9,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 017c28af68efa98507286e8acdc2b4d694353aa1
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 44f66ed25ab43db2d08db3cb93263bd61ac3a907
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72747394"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73189448"
 ---
 # <a name="understanding-the-dsl-code"></a>Introducción al código DSL
 
@@ -58,7 +58,7 @@ Presione **F5** y experimente si no está familiarizado con esta plantilla de so
 ## <a name="generated-files-in-dsl"></a>Archivos generados en DSL
  Los siguientes archivos generados aparecen en el proyecto **DSL** .
 
- @No__t_1 *sudsl*
+ `Schema.xsd` *sudsl*
 
  Esquema de los archivos que contienen instancias de su DSL. Este archivo se copia en el directorio de compilación (**bin**). Al instalar DSL, puede copiar este archivo en **\Archivos de Programa\microsoft Visual Studio 11.0 \ Xml\Schemas** para que se puedan validar los archivos de modelo. Para obtener más información, vea [Implementación de soluciones de lenguaje específico de dominio](msi-and-vsix-deployment-of-a-dsl.md).
 
@@ -192,7 +192,7 @@ Presione **F5** y experimente si no está familiarizado con esta plantilla de so
 
  `CommandSet.cs`
 
- Los comandos de menú contextual que están visibles en el diagrama. Puede adaptar o ampliar este conjunto. Este archivo contiene el código de los comandos. El archivo Commands.vsct determina la ubicación de los comandos en los menús. Para obtener más información, consulte [escribir comandos y acciones de usuario](../modeling/writing-user-commands-and-actions.md).
+ Los comandos de menú contextual que están visibles en el diagrama. Puede adaptar o ampliar este conjunto. Este archivo contiene el código de los comandos. El archivo Commands.vsct determina la ubicación de los comandos en los menús. Para obtener más información, consulte [escribir comandos y acciones de usuario](how-to-modify-a-standard-menu-command-in-a-domain-specific-language.md).
 
  `Constants.cs`
 
@@ -282,7 +282,7 @@ namespace Company.EmbedInForm
 
  `GeneratedVSCT.vsct`
 
- Busca los comandos de menú estándar en los menús, como el menú de clic con el botón secundario (contexto), el menú **edición** , etc. El código de comandos está en CommandSet.cs. Puede reubicar o modificar los comandos estándar y puede agregar sus propios comandos. Para obtener más información, consulte [escribir comandos y acciones de usuario](../modeling/writing-user-commands-and-actions.md).
+ Busca los comandos de menú estándar en los menús, como el menú de clic con el botón secundario (contexto), el menú **edición** , etc. El código de comandos está en CommandSet.cs. Puede reubicar o modificar los comandos estándar y puede agregar sus propios comandos. Para obtener más información, consulte [escribir comandos y acciones de usuario](how-to-modify-a-standard-menu-command-in-a-domain-specific-language.md).
 
  `ModelExplorer.cs`
 

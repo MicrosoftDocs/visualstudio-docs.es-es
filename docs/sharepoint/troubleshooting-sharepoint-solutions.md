@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 4e8ccaaf877c04b3d58fc6d54bb658c2cef77b6f
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.openlocfilehash: 046f3bbca7b66d14e9b6a3eae96b613492292be0
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72985310"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73189189"
 ---
 # <a name="troubleshoot-sharepoint-solutions"></a>Solucionar problemas de soluciones de SharePoint
   Los siguientes problemas o alertas pueden producirse al depurar las soluciones de SharePoint mediante el depurador de [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]. Para obtener más información, vea [depurar soluciones de flujo de trabajo de SharePoint 2007](https://msdn.microsoft.com/3a5392f3-66f3-48be-956e-02de23fa6247).
@@ -281,4 +281,4 @@ ms.locfileid: "72985310"
 
 - [Solucionar problemas de empaquetado e implementación de SharePoint](../sharepoint/troubleshooting-sharepoint-packaging-and-deployment.md)
 - [Build and debug SharePoint solutions](../sharepoint/building-and-debugging-sharepoint-solutions.md) (Compilar y depurar las soluciones de SharePoint)
-- [Depurar en Visual Studio](../debugger/debugging-in-visual-studio.md)
+- [Depurar en Visual Studio](../debugger/debugger-feature-tour.md)

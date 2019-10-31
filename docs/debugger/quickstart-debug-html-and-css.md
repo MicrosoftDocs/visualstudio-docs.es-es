@@ -17,12 +17,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - uwp
-ms.openlocfilehash: 52235ab4770f5267de8507ff67fcda0aa1370392
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 12f66658cd8069f58355a96b2c3b3031a4cb6808
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72730554"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73187570"
 ---
 # <a name="debug-html-and-css-in-uwp-apps-in-visual-studio"></a>Depurar HTML y CSS en aplicaciones para UWP en Visual Studio
 
@@ -30,7 +30,7 @@ Para las aplicaciones de JavaScript, Visual Studio ofrece una experiencia de dep
 
 Con el modelo de depuración interactivo ofrecido por las herramientas de inspección de DOM, puede ver y modificar el código HTML y CSS presentado, y todo ello sin detener y reiniciar el depurador.
 
-Para obtener información sobre otras características de depuración de JavaScript, como el uso de la ventana consola JavaScript y el establecimiento de puntos de interrupción, consulte [Inicio rápido: depuración de JavaScript](../debugger/quickstart-debug-javascript-using-the-console.md) y [depuración de aplicaciones en Visual Studio](/visualstudio/debugger/debugging-windows-store-and-windows-universal-apps).
+Para obtener información sobre otras características de depuración de JavaScript, como el uso de la ventana consola JavaScript y el establecimiento de puntos de interrupción, consulte [Inicio rápido: depuración de JavaScript](../debugger/quickstart-debug-javascript-using-the-console.md) y [depuración de aplicaciones en Visual Studio](debugging-windows-store-and-windows-universal-apps.md).
 
 ## <a name="InspectingDOM"></a> Inspeccionar el DOM activo
 El Explorador DOM muestra una vista de la página presentada. Puedes utilizarlo para cambiar valores y ver inmediatamente los resultados. Eso permite probar los cambios sin necesidad de detener y reiniciar el depurador. El código fuente del proyecto no cambia cuando se interactúa con la página mediante este método. Así pues, cuando encuentre las correcciones de código deseadas, realice los cambios en el código fuente.
@@ -182,7 +182,7 @@ En el procedimiento siguiente, analizaremos el proceso de depurar de forma inter
 14. En la ventana principal, haga doble clic en `width: 100px;height: 100px;`, presione la tecla **Supr** y, a continuación, presione **entrar**. Después de presionar entrar, los nuevos valores se reflejan inmediatamente en la aplicación, aunque no haya detenido la sesión de depuración.
 
     > [!IMPORTANT]
-    > Al igual que puedes actualizar atributos en la ventana del Explorador DOM, también puede actualizar los valores que aparecen en las pestañas **Estilos**, **Calculado**y **Diseño** . Para obtener más información, vea [depurar estilos CSS con el explorador Dom](../debugger/debug-css-styles-using-dom-explorer.md) y [depurar el diseño mediante el explorador Dom](../debugger/debug-layout-using-dom-explorer.md).
+    > Al igual que puedes actualizar atributos en la ventana del Explorador DOM, también puede actualizar los valores que aparecen en las pestañas **Estilos**, **Calculado**y **Diseño** . Para obtener más información, vea [depurar estilos CSS con el explorador Dom](../debugger/debug-css-styles-using-dom-explorer.md) y [depurar el diseño mediante el explorador Dom](quickstart-debug-html-and-css.md).
 
 15. Cambie a la aplicación seleccionándola o con Alt + Tab.
 
@@ -255,7 +255,7 @@ Puedes seleccionar elementos DOM de tres maneras al depurar una aplicación:
 > El resaltado de elementos al pasar sobre ellos solo se admite en parte en el emulador de Windows Phone.
 
 ## <a name="see-also"></a>Vea también
-- [Depurar aplicaciones en Visual Studio](/visualstudio/debugger/debugging-windows-store-and-windows-universal-apps)
+- [Depurar aplicaciones en Visual Studio](debugging-windows-store-and-windows-universal-apps.md)
 - [Actualizar una aplicación (JavaScript)](../debugger/refresh-an-app-javascript.md)
 - [Depurar un control WebView](../debugger/debug-a-webview-control.md)
 - [Métodos abreviados de teclado](../debugger/keyboard-shortcuts-html-and-javascript.md?view=vs-2017)

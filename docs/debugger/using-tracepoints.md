@@ -1,6 +1,6 @@
 ---
-title: Usar puntos de seguimiento en el depurador | Microsoft Docs
-ms.date: 9/17/2019
+title: Información de registro con puntos de seguimiento | Microsoft Docs
+ms.date: 10/28/2019
 ms.topic: conceptual
 helpviewer_keywords:
 - tracepoints, about tracepoints
@@ -9,16 +9,16 @@ ms.author: sashe
 manager: AndSter
 ms.workload:
 - multiple
-ms.openlocfilehash: 263657213f1720eaca7a0462bb31585adaacf9bb
-ms.sourcegitcommit: 8a96a65676fd7a2a03b0803d7eceae65f3fa142b
+ms.openlocfilehash: fcc9f01315d3783af1a1f124785cd74fafb215bf
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "72516398"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73187301"
 ---
-# <a name="use-tracepoints-in-the-visual-studio-debugger"></a>Usar puntos de seguimiento en el depurador de Visual Studio
+# <a name="log-info-to-the-output-window-using-tracepoints-in-visual-studio"></a>Información de registro en la ventana de salida con puntos de seguimiento en Visual Studio
 
-Los puntos de seguimiento le permiten registrar información en la ventana de salida en condiciones configurables sin modificar o detener el código. Esta característica se admite tanto para código administrado como para código nativo, así como para varios lenguajes C#como JavaScript y.
+Los puntos de seguimiento le permiten registrar información en la ventana de salida en condiciones configurables sin modificar o detener el código. Esta característica es compatible con los lenguajes administrados (C#, F#Visual Basic,) y con el código nativo, así como con lenguajes como JavaScript y Python.
 
 ## <a name="let39s-take-an-example"></a>Dejar&#39;un ejemplo
 
@@ -75,9 +75,9 @@ También puede usar palabras clave especiales para mostrar información más esp
 | $CALLER | Nombre de la función de llamada |
 | $CALLSTACK | Pila de llamadas |
 | $FUNCTION | Nombre de la función actual |
-| $PID | Identificador de proceso |
+| $PID | Id. de proceso |
 | $PNAME | Nombre del proceso |
-| $TID | Identificador del subproceso |
+| $TID | Id. de subproceso |
 | $TNAME   | Nombre del subproceso |
 | $TICK | Recuento de pasos (de Windows GetTickCount) |
 
@@ -129,7 +129,7 @@ Incluya las cadenas (como nombres) entre comillas dobles. Los valores se pueden 
 
 Aunque los puntos de seguimiento están diseñados para que la depuración sea una experiencia más limpia y más fluida, hay algunas consideraciones que debe tener en cuenta cuando se trata de usarlas.
 
-A veces, al inspeccionar una propiedad o atributo de un objeto, su valor puede cambiar. Esto no es un error causado por la propia característica de punto de seguimiento, pero merece la pena mencionar que el uso de puntos de seguimiento para inspeccionar objetos no evita estas modificaciones accidentales.
+A veces, al inspeccionar una propiedad o atributo de un objeto, su valor puede cambiar. Si el valor cambia durante la inspección, no es un error causado por la propia característica de punto de seguimiento. Sin embargo, el uso de puntos de seguimiento para inspeccionar objetos no evita estas modificaciones accidentales.
 
 La forma en que se evalúan las expresiones en el cuadro de mensaje de **acción** puede ser diferente del lenguaje que se usa actualmente para el desarrollo. Por ejemplo, para generar una cadena, no es necesario ajustar un mensaje entre comillas, aunque normalmente se use `Debug.WriteLine()` o `console.log()`. Además, la sintaxis de la llave (`{ }`) en las expresiones de salida también puede ser diferente de la Convención para generar valores en el lenguaje de desarrollo. (Sin embargo, el contenido dentro de las llaves (`{ }`) todavía se debe escribir con la sintaxis del lenguaje de desarrollo.
 

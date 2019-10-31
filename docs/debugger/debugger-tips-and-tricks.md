@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 92d1c327c168bfd2881ad014b7f9ab87f771b95d
-ms.sourcegitcommit: 08c144d290da373df841f04fc799e3133540a541
+ms.openlocfilehash: bf8d6df020694bb10fe4f3f051551056549d5673
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72536079"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73188619"
 ---
 # <a name="learn-productivity-tips-and-tricks-for-the-debugger-in-visual-studio"></a>Obtenga información sobre sugerencias y trucos de productividad para el depurador en Visual Studio
 
@@ -35,13 +35,13 @@ Si con frecuencia mantiene el mouse sobre las sugerencias de datos durante la de
 
 En la mayoría de los lenguajes compatibles con Visual Studio, puede editar el código en medio de una sesión de depuración y continuar con la depuración. Para usar esta característica, haga clic en el código con el cursor mientras está en pausa en el depurador, realice las ediciones y presione **F5**, **F10** o **F11** para continuar con la depuración.
 
-![Editar y continuar depuración](../debugger/media/dbg-tips-edit-and-continue.gif "EditAndContinue")
+![Edición de código y depuración continua](../debugger/media/dbg-tips-edit-and-continue.gif "EditAndContinue")
 
 Para obtener más información sobre el uso de la característica y las limitaciones de esta, consulte [Editar y continuar](../debugger/edit-and-continue.md).
 
 ## <a name="edit-xaml-code-and-continue-debugging"></a>Editar código XAML y continuar la depuración
 
-Para modificar el código XAML durante una sesión de depuración, consulte [Escribir y depurar código XAML en ejecución con la recarga frecuente de XAML](xaml-hot-reload.md).
+Para modificar el código XAML durante una sesión de depuración, consulte [Escribir y depurar código XAML en ejecución con la recarga frecuente de XAML](../xaml-tools/xaml-hot-reload.md).
 
 ## <a name="debug-issues-that-are-hard-to-reproduce"></a>Problemas de depuración que son difíciles de reproducir
 
@@ -96,7 +96,7 @@ Para obtener más información, vea [crear un identificador de objeto](../debugg
 
 Para ver los valores devueltos de las funciones, examine las funciones que aparecen en la ventana **automático** mientras se recorre el código. Para ver el valor devuelto de una función, asegúrese de que ya se ha ejecutado la función que le interesa (presione **F10** una vez si está detenido actualmente en la llamada de función). Si la ventana está cerrada, use **Debug > Windows > automático** para abrir la ventana **automático** .
 
-![Ventana automático](../debugger/media/dbg-tips-autos-window.png "AutosWindow")
+![Ventana Automático](../debugger/media/dbg-tips-autos-window.png "AutosWindow")
 
 Además, puede escribir funciones en la ventana **inmediato** para ver los valores devueltos. (Ábralo mediante **Depurar > Windows > inmediato**).
 
@@ -140,6 +140,7 @@ Si necesita depurar los tipos de problemas comunes a las aplicaciones multiproce
 
     También puede ver la ubicación de los subprocesos en la [ventana pilas paralelas](../debugger/get-started-debugging-multithreaded-apps.md).
 
+::: moniker range="vs-2017"
 ## <a name="examine-payloads-for-web-services-and-network-resources-uwp"></a>Examen de cargas para servicios web y recursos de red (UWP)
 
 En las aplicaciones UWP, puede analizar las operaciones de red realizadas mediante la API de `Windows.Web.Http`. Puede usar esta herramienta para ayudar a depurar los servicios web y los recursos de red. Para usar la herramienta, seleccione **Depurar > generador de perfiles de rendimiento**. Seleccione **red**y, a continuación, elija **iniciar**. En la aplicación, recorra el escenario que use `Windows.Web.Http` y, después, seleccione **Detener recolección** para generar el informe.
@@ -151,6 +152,7 @@ Seleccione una operación en la vista de resumen para ver más detalles.
 ![Información detallada en la herramienta uso de red](../profiling/media/prof-tour-network-usage-details.png "DetailedViewNetworkUsage")
 
 Para obtener más información, vea [Network Usage](../profiling/network-usage.md) (Uso de red).
+::: moniker-end
 
 ## <a name="modules_window"></a>Familiarícese con el modo en que el depurador se asocia aC#la C++aplicación (, F#, Visual Basic)
 

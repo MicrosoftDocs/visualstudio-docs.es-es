@@ -21,12 +21,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f6dc69a18aa09536e5735431aa451bc2dd3933ee
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 0a818cfde2996b26bd9d5f31b128e41f2a9fe2e1
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72745694"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73188685"
 ---
 # <a name="com-and-activex-debugging"></a>Depurar COM y ActiveX
 Esta sección proporciona sugerencias sobre cómo depurar aplicaciones COM y controles ActiveX.
@@ -46,4 +46,4 @@ Esta sección proporciona sugerencias sobre cómo depurar aplicaciones COM y con
 - [Seguridad del depurador](../debugger/debugger-security.md)
 - [Introducción a COM](/cpp/atl/introduction-to-com)
 - [Controles ActiveX](/cpp/mfc/activex-controls)
-- [Aplicaciones de servidor SDI](../debugger/sdi-server-applications.md)
+- [Aplicaciones de servidor SDI](com-server-and-container-debugging.md)

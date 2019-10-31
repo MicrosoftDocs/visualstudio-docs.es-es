@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5e0f9b0fc0f2f4cd7c441f5f88e4220216c8d964
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 95f9885cc02333e4d8e9d42df4f52819a2099114
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72738035"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73188330"
 ---
 # <a name="debugging-web-applications"></a>Depurar aplicaciones web
 En esta sección se explica cómo depurar varios tipos de aplicaciones web.
@@ -35,7 +35,7 @@ En esta sección se explica cómo depurar varios tipos de aplicaciones web.
  [Depuración de aplicaciones ASP.net](../debugger/how-to-enable-debugging-for-aspnet-applications.md) Describe los pasos necesarios para habilitar la depuración de aplicaciones [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)].
 
 ## <a name="see-also"></a>Vea también
-- [Depurar script y aplicaciones web](/visualstudio/debugger/how-to-enable-debugging-for-aspnet-applications)
+- [Depurar script y aplicaciones web](how-to-enable-debugging-for-aspnet-applications.md)
 - [Configuración y preparación de la depuración](../debugger/debugger-settings-and-preparation.md)
 - [Primer vistazo al depurador](../debugger/debugger-feature-tour.md)
 - [Depurar en Visual Studio](../debugger/index.yml)

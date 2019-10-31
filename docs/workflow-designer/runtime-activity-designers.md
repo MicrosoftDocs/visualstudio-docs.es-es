@@ -8,12 +8,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fb62644b362a7630d454db2740b354c546b0155b
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 9c553b7069243d5a701b94fd1f5f011e4075d4c9
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72649986"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73188924"
 ---
 # <a name="runtime-activity-designers"></a>Diseñadores de actividades de tiempo de ejecución
 Los diseñadores de actividades de tiempo de ejecución se utilizan para hacer persistentes y finalizar las actividades de flujo de trabajo. Los temas contenidos en esta sección proporcionan instrucciones sobre cómo utilizar los diseñadores de actividades de Diseñador de flujo de trabajo.
@@ -35,4 +35,4 @@ Los diseñadores de actividades de tiempo de ejecución se utilizan para hacer p
 
 ## <a name="see-also"></a>Vea también
 
-- [Usar los diseñadores de actividad](../workflow-designer/using-the-activity-designers.md)
+- [Usar los diseñadores de actividad](control-flow-activity-designers.md)

@@ -11,12 +11,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 9e53cc877a4e462a458f3bfd455ed222c3b2e17b
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.openlocfilehash: c3b2fc34807be6ae03fe5aacab64439c918a0f5e
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72984668"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73189139"
 ---
 # <a name="walkthrough-create-a-site-column-project-item-with-a-project-template-part-2"></a>Tutorial: crear un elemento de proyecto de columna de sitio con una plantilla de proyecto, parte 2
   Después de definir un tipo personalizado de elemento de proyecto de SharePoint y asociarlo a una plantilla de proyecto en Visual Studio, es posible que desee proporcionar también un asistente para la plantilla. Puede usar el asistente con el fin de recopilar información de los usuarios cuando usan la plantilla para crear un nuevo proyecto que contiene el elemento de proyecto. La información que recopile puede usarse para inicializar el elemento de proyecto.
@@ -116,7 +116,7 @@ ms.locfileid: "72984668"
 
 3. Asegúrese de que la plataforma de destino se establezca en .NET Framework 4.5, no en .NET Framework 4.5 Client Profile.
 
-     Para obtener más información, consulte [Cómo: Usar como destino una versión de .NET Framework](../ide/how-to-target-a-version-of-the-dotnet-framework.md).
+     Para obtener más información, consulte [Cómo: Usar como destino una versión de .NET Framework](../ide/visual-studio-multi-targeting-overview.md).
 
 4. Abra el menú contextual del proyecto **ProjectTemplateWizard** , elija **Agregar**y, a continuación, elija **nuevo elemento**.
 
@@ -233,7 +233,7 @@ ms.locfileid: "72984668"
      [!code-xml[SPExtensibility.ProjectItem.SiteColumn#10](../sharepoint/codesnippet/Xaml/sitecolumnprojectitem/projecttemplatewizard/wizardwindow.xaml#10)]
 
     > [!NOTE]
-    > La ventana que se crea en este código XAML se deriva de la clase base <xref:Microsoft.VisualStudio.PlatformUI.DialogWindow>. Cuando se agrega un cuadro de diálogo de WPF personalizado en Visual Studio, se recomienda derivar el cuadro de diálogo de esta clase para que tenga un estilo coherente con otros cuadros de diálogo de Visual Studio y para evitar los problemas de cuadro de diálogo modal que pueden producirse en caso contrario. Para obtener más información, vea [crear y administrar cuadros de diálogo modales](/visualstudio/extensibility/creating-and-managing-modal-dialog-boxes).
+    > La ventana que se crea en este código XAML se deriva de la clase base <xref:Microsoft.VisualStudio.PlatformUI.DialogWindow>. Cuando se agrega un cuadro de diálogo de WPF personalizado en Visual Studio, se recomienda derivar el cuadro de diálogo de esta clase para que tenga un estilo coherente con otros cuadros de diálogo de Visual Studio y para evitar los problemas de cuadro de diálogo modal que pueden producirse en caso contrario. Para obtener más información, vea [crear y administrar cuadros de diálogo modales](../extensibility/creating-and-managing-modal-dialog-boxes.md).
 
 3. Si va a desarrollar un proyecto de Visual Basic, quite el espacio de nombres `ProjectTemplateWizard` del nombre de clase `WizardWindow` en el atributo `x:Class` del elemento `Window`. Este elemento aparece en la primera línea del código XAML. Cuando haya terminado, la primera línea debe ser similar a la del ejemplo siguiente.
 
@@ -403,7 +403,7 @@ ms.locfileid: "72984668"
     </WizardExtension>
     ```
 
-     Para obtener más información sobre el elemento `WizardExtension`, consulte [plantillas &#40;&#41;de Visual Studio de elementos WizardExtension](/visualstudio/extensibility/wizardextension-element-visual-studio-templates).
+     Para obtener más información sobre el elemento `WizardExtension`, consulte [plantillas &#40;&#41;de Visual Studio de elementos WizardExtension](../extensibility/wizardextension-element-visual-studio-templates.md).
 
 3. Guarde y cierre el archivo.
 
@@ -536,11 +536,11 @@ ms.locfileid: "72984668"
 
 4. Cierre tanto la instancia experimental de Visual Studio como la instancia en la que se abre la solución CustomActionProjectItem.
 
-     Para obtener información sobre cómo implementar extensiones de [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], vea [envío de extensiones de Visual Studio](/visualstudio/extensibility/shipping-visual-studio-extensions).
+     Para obtener información sobre cómo implementar extensiones de [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], vea [envío de extensiones de Visual Studio](../extensibility/shipping-visual-studio-extensions.md).
 
 ## <a name="see-also"></a>Vea también
 - [Tutorial: crear un elemento de proyecto de columna de sitio con una plantilla de proyecto, parte 1](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-1.md)
 - [Definir tipos de elementos de proyecto personalizados de SharePoint](../sharepoint/defining-custom-sharepoint-project-item-types.md)
 - [Creación de plantillas de elemento y plantillas de proyecto para los elementos de proyecto de SharePoint](../sharepoint/creating-item-templates-and-project-templates-for-sharepoint-project-items.md)
-- [Referencia de esquema de plantillas de Visual Studio](/visualstudio/extensibility/visual-studio-template-schema-reference)
+- [Referencia de esquema de plantillas de Visual Studio](../extensibility/visual-studio-template-schema-reference.md)
 - [Uso de asistentes con las plantillas de proyectos](../extensibility/how-to-use-wizards-with-project-templates.md)

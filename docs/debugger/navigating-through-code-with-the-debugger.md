@@ -15,44 +15,43 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e07e2612e01453115cf4cd6120d92bfd5b0168bd
-ms.sourcegitcommit: 8a96a65676fd7a2a03b0803d7eceae65f3fa142b
+ms.openlocfilehash: 6dfffdf0c12ea2a8f14769f26bb40a3943579248
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "70222655"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73187604"
 ---
 # <a name="navigate-through-code-with-the-visual-studio-debugger"></a>Desplazarse por el código con el depurador de Visual Studio
 
 El depurador de Visual Studio puede ayudarle a navegar por el código para inspeccionar el estado de una aplicación y mostrar su flujo de ejecución. Puede usar métodos abreviados de teclado, comandos de depuración, puntos de interrupción y otras características para obtener rápidamente el código que desea examinar. Familiarizarse con los comandos de navegación del depurador y los accesos directos permite encontrar y resolver problemas de la aplicación de forma más rápida y sencilla.  Si es la primera vez que intenta depurar código, puede que desee leer la [depuración para principiantes absolutos](../debugger/debugging-absolute-beginners.md) y [herramientas y técnicas de depuración](../debugger/write-better-code-with-visual-studio.md) antes de pasar a este artículo.
 
-## <a name="basic-debugging"></a>Depuración básica
+## <a name="get-into-break-mode"></a>Entrar en "modo de interrupción"
 
-Para iniciar la aplicación con el depurador asociado, presione **F5**, seleccione **depurar**  > **iniciar depuración**o seleccione la flecha verde en la barra de herramientas de Visual Studio.
+En el *modo de interrupción*, la ejecución de la aplicación se suspende mientras las funciones, variables y objetos permanecen en la memoria. Una vez que el depurador está en modo de interrupción, puede navegar por el código. Las formas más comunes de entrar en el modo de interrupción rápidamente es:
 
- ![Conceptos&#95;básicos de&#95;dbg&#95;iniciar depuración](../debugger/media/dbg_basics_start_debugging.png "DBG_Basics_Start_Debugging")
+- Comience a avanzar el código presionando **F10** o **F11**. Esto le permite encontrar rápidamente el punto de entrada de la aplicación. después, puede continuar presionando los comandos de paso para navegar por el código.
 
-Mientras realiza la depuración, un resaltado amarillo muestra la línea de código que se ejecutará a continuación.
+- [Ejecutar hasta una ubicación o función específica](#BKMK_Break_into_code_by_using_breakpoints_or_Break_All), por ejemplo, [estableciendo un punto de interrupción](using-breakpoints.md) e iniciando la aplicación.
 
- ![Modo&#95;de&#95;interrupción&#95;de conceptos básicos de dbg](../debugger/media/dbg_basics_break_mode.png "Modo de interrupción")
+   Por ejemplo, en el editor de código de Visual Studio, puede usar el comando **ejecutar hasta el cursor** para iniciar la aplicación, el depurador adjunto y entrar en el modo de interrupción y, a continuación, **F11** para navegar por el código.
 
-La mayoría de las ventanas del depurador, como los **módulos** y las ventanas de **inspección** , solo están disponibles mientras se ejecuta el depurador. Algunas características del depurador, como la visualización de valores de variable en la ventana **variables locales** o la evaluación de expresiones en la ventana **inspección** , solo están disponibles mientras el depurador está en pausa en un punto de interrupción, también denominado *modo de interrupción*.
+   ![Ejecutar hasta el cursor y depurar paso a paso por instrucciones](../debugger/media/navigate-code-code-stepping.gif "Ejecutar hasta el cursor y depurar paso a paso por instrucciones")
 
-En el modo de interrupción, la ejecución de la aplicación se suspende mientras las funciones, variables y objetos permanecen en la memoria. Puede examinar las posiciones y los Estados de los elementos para buscar infracciones o errores. En el caso de algunos tipos de proyecto, también puede realizar ajustes en la aplicación mientras está en modo de interrupción. Para ver un vídeo que muestra estas características, consulte [Introducción con el depurador](https://www.youtube.com/watch?v=FtGCi5j30YU&list=PLReL099Y5nRfw6VNvzMkv0sabT2crbSpK&index=6).
+Una vez en el modo de interrupción, puede usar diversos comandos para navegar por el código. En el modo de interrupción, puede examinar los valores de las variables para buscar infracciones o errores. En el caso de algunos tipos de proyecto, también puede realizar ajustes en la aplicación mientras está en modo de interrupción.
 
-Si interrumpe el código que no tiene archivos de código fuente o de símbolos ( *. pdb*) cargados, el depurador muestra la página **archivos de origen no encontrados** o **símbolos no encontrados** , que puede ayudarle a encontrar y cargar los archivos. Consulte [Specify symbol (.pdb) and source files](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md) (Especificación de símbolo (.pdb) y archivos de origen). Si no puede cargar los archivos de símbolos o de código fuente, todavía puede depurar las instrucciones de ensamblado en la ventana **Desensamblado** .
+La mayoría de las ventanas del depurador, como los **módulos** y las ventanas de **inspección** , solo están disponibles mientras el depurador está asociado a la aplicación. Algunas características del depurador, como la visualización de valores de variable en la ventana **variables locales** o la evaluación de expresiones en la ventana **inspección** , solo están disponibles mientras el depurador está en pausa (es decir, en modo de interrupción).
 
-No siempre tiene que iniciar la depuración iniciando una aplicación al principio. También puede presionar **F11** para depurar [paso a paso por instrucciones en el código](#BKMK_Step_into__over__or_out_of_the_code), presionar **F10** para [desplazarse por el código](#BKMK_Step_over_Step_out)o [ejecutar hasta una ubicación o función específica](#BKMK_Break_into_code_by_using_breakpoints_or_Break_All).
+> [!NOTE]
+> Si interrumpe el código que no tiene archivos de código fuente o de símbolos ( *. pdb*) cargados, el depurador muestra la página **archivos de código fuente no encontrado** o **símbolos no encontrados** , que puede ayudarle a encontrar y cargar los archivos. Consulte [Specify symbol (.pdb) and source files](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md) (Especificación de símbolo (.pdb) y archivos de origen). Si no puede cargar los archivos de símbolos o de código fuente, todavía puede depurar las instrucciones de ensamblado en la ventana **Desensamblado** .
 
 ## <a name="step-through-code"></a>Examinar el código
 
 Los comandos de paso del depurador le ayudan a inspeccionar el estado de la aplicación o a obtener más información sobre su flujo de ejecución.
 
-Si necesita encontrar el punto de entrada en la aplicación, empiece con **F10** o **F11**.
-
 ### <a name="BKMK_Step_into__over__or_out_of_the_code"></a>Ir al código línea por línea
 
-Para detenerse en cada línea de código o instrucción durante la depuración, use **Debug  >  depurar** **paso a paso**por instrucciones o presione **F11**.
+Para detenerse en cada instrucción durante la depuración, use **Debug** > **paso a paso**por instrucciones o presione **F11**.
 
 El depurador recorre las instrucciones de código, no las líneas físicas. Por ejemplo, una cláusula `if` se puede escribir en una línea:
 
@@ -73,11 +72,11 @@ Sin embargo, al entrar en esta línea, el depurador trata la condición como un 
 En una llamada a una función anidada, **Paso a paso por instrucciones** llega hasta la función más profundamente anidada. Por ejemplo, si usa **paso a paso por instrucciones** en una llamada como `Func1(Func2())`, el depurador se recorre en el `Func2` de la función.
 
 >[!TIP]
->Al ejecutar cada línea de código, puede mantener el mouse sobre las variables para ver sus valores o usar las ventanas [variables locales](autos-and-locals-windows.md) e [inspección](watch-and-quickwatch-windows.md) para ver los valores cambiados. También puede realizar un seguimiento visual de la pila de llamadas durante la ejecución paso a paso de las funciones. Vea [asignar métodos en la pila de llamadas durante la depuración](../debugger/map-methods-on-the-call-stack-while-debugging-in-visual-studio.md).
+>Al ejecutar cada línea de código, puede mantener el mouse sobre las variables para ver sus valores o usar las ventanas [variables locales](autos-and-locals-windows.md) e [inspección](watch-and-quickwatch-windows.md) para ver los valores cambiados. También puede realizar un seguimiento visual de la [pila de llamadas](how-to-use-the-call-stack-window.md) durante la ejecución paso a paso de las funciones. (Solo para Visual Studio Enterprise, vea [asignar métodos en la pila de llamadas durante la depuración](../debugger/map-methods-on-the-call-stack-while-debugging-in-visual-studio.md)).
 
 ### <a name="BKMK_Step_over_Step_out"></a>Recorrer el código y omitir algunas funciones
 
-Es posible que no le interese una función durante la depuración o sepa que funciona, como el código de biblioteca bien probado. Puede usar los siguientes comandos para omitir el código. Las funciones siguen ejecutándose, pero el depurador las omite.
+Es posible que no le interese una función durante la depuración o sepa que funciona, como el código de biblioteca bien probado. Puede usar los siguientes comandos para omitir el código mientras se está ejecutando el código. Las funciones siguen ejecutándose, pero el depurador las omite.
 
 |Comando de teclado|Comando de menú Depurar|Descripción|
 |----------------------|------------------|-----------------|

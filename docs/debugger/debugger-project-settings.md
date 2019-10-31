@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f6a4e3fde3d98b83f8b92ffe039e3bff5c8eae4f
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 77f5ca5dcc1b886ec56b7177dd0d6aa62a8ce4f0
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72738325"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73188634"
 ---
 # <a name="debugger-project-settings"></a>Configuración del proyecto para el depurador
 Ciertos valores de configuración del proyecto también afectan a la depuración. Estos valores determinan, por ejemplo, qué directorios consulta el depurador, el comando y los argumentos del comando utilizados para iniciar el programa y el tipo de información de depuración que se crea para el programa. Estos valores se pueden cambiar en el cuadro de diálogo **Páginas de propiedades** .
@@ -44,7 +44,7 @@ Ciertos valores de configuración del proyecto también afectan a la depuración
 ## <a name="related-sections"></a>Secciones relacionadas
  [Especificar archivos de código fuente y símbolos (. pdb)](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md) Describe cómo el depurador utiliza archivos de símbolos y archivos de código fuente para mostrar información para la depuración.
 
- [Depurar aplicaciones en Visual Studio](/visualstudio/debugger/debugging-windows-store-and-windows-universal-apps) Describe cómo depurar aplicaciones para UWP. (Centro de desarrollo de Windows)
+ [Depurar aplicaciones en Visual Studio](debugging-windows-store-and-windows-universal-apps.md) Describe cómo depurar aplicaciones para UWP. (Centro de desarrollo de Windows)
 
  [Preparación y configuración del depurador](../debugger/debugger-settings-and-preparation.md) Describe los valores de propiedades relacionados con el depurador y la preparación necesaria para depurar el programa con el depurador de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].
 

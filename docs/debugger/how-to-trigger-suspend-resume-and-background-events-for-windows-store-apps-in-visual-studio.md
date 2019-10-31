@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: d12c9848409f57b16c733b587edff193311bcfdd
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: da634246bfa9f800779c761458028f55b9317f6f
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72732271"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73187631"
 ---
 # <a name="how-to-trigger-suspend-resume-and-background-events-while-debugging-uwp-apps-in-visual-studio"></a>Cómo desencadenar eventos de suspensión, reanudación y en segundo plano durante la depuración de aplicaciones para UWP en Visual Studio
 
@@ -110,7 +110,7 @@ Para obtener más información sobre la administración de la duración del proc
 4. Elige el registro **Diagnóstico** .
 
 ## <a name="see-also"></a>Vea también
-- [Prueba de aplicaciones para UWP con Visual Studio](../test/testing-store-apps-with-visual-studio.md)
-- [Depurar aplicaciones en Visual Studio](/visualstudio/debugger/debugging-windows-store-and-windows-universal-apps)
+- [Prueba de aplicaciones para UWP con Visual Studio](/visualstudio/test/create-and-run-unit-tests-for-a-store-app-in-visual-studio)
+- [Depurar aplicaciones en Visual Studio](debugging-windows-store-and-windows-universal-apps.md)
 - [Ciclo de vida de la aplicación](/windows/uwp/launch-resume/app-lifecycle)
 - [Launching, resuming, and multitasking](/windows/uwp/launch-resume/index)

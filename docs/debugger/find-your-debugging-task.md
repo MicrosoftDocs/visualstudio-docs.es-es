@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a4667fc630d86691d95e9dc9cd205b29f7b0f525
-ms.sourcegitcommit: 1507baf3a336bbb6511d4c3ce73653674831501b
+ms.openlocfilehash: 8467463b5a97c5bf7de1c3864ee6a5e5fc4681d1
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "72349705"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73188099"
 ---
 # <a name="find-your-debugging-task-in-visual-studio"></a>Buscar la tarea de depuración en Visual Studio
 
@@ -43,11 +43,15 @@ En caso contrario C# , F# para y solo, puede [realizar el seguimiento de un iden
 
 ### <a name="pause-code-inside-a-loop-at-a-certain-iteration"></a>Pausar el código dentro de un bucle en una determinada iteración
 
-Establezca un punto de interrupción mediante el **número de llamadas** como una condición. Para obtener más información, consulte [número de llamadas](using-breakpoints.md#hit-count).
+Establezca un punto de interrupción mediante el **número de llamadas** como una condición. Para obtener más información, consulte [número de llamadas](using-breakpoints.md#set-a-hit-count-condition).
 
 ### <a name="pause-code-at-the-start-of-a-function-when-you-know-the-function-name-but-not-its-location"></a>Pausar el código al principio de una función cuando conozca el nombre de la función pero no su ubicación
 
 Puede hacerlo con un punto de interrupción de función. Para obtener más información, vea [establecer puntos de interrupción de función](using-breakpoints.md#BKMK_Set_a_breakpoint_in_a_source_file).
+
+### <a name="pause-code-at-the-start-of-multiple-functions-with-the-same-name"></a>Pausar el código al principio de varias funciones con el mismo nombre
+
+Si tiene varias funciones con el mismo nombre (funciones sobrecargadas o funciones en proyectos diferentes), puede usar un punto de [interrupción de función](using-breakpoints.md#BKMK_Set_a_breakpoint_in_a_source_file).
 
 ### <a name="manage-and-keep-track-of-your-breakpoints"></a>Administrar y realizar un seguimiento de los puntos de interrupción
 
@@ -101,11 +105,15 @@ Para configurar las opciones del depurador y la configuración del proyecto del 
 
 ### <a name="edit-code-during-a-debugging-session"></a>Editar código durante una sesión de depuración
 
-Use [Editar y continuar](edit-and-continue.md). Para XAML, use la [recarga activa de XAML](xaml-hot-reload.md).
+Use [Editar y continuar](edit-and-continue.md). Para XAML, use la [recarga activa de XAML](../xaml-tools/xaml-hot-reload.md).
 
 ### <a name="send-messages-to-the-output-window-without-modifying-code"></a>Enviar mensajes a la ventana de salida sin modificar el código
 
 Establezca un punto de seguimiento. Para obtener más información, vea [usar puntos de seguimiento](using-tracepoints.md).
+
+## <a name="view-the-order-in-which-functions-are-called"></a>Ver el orden en el que se llama a las funciones
+
+Vea [Cómo ver la pila de llamadas](how-to-use-the-call-stack-window.md).
 
 ### <a name="debug-on-remote-machines"></a>Depurar en equipos remotos
 

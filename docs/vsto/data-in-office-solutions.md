@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: bb8cf959d5f1d915f5614dc2b92d74a603493f7e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a5f0b85acfd45996dd00208aae820b24265be9f5
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62955981"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73189683"
 ---
 # <a name="data-in-office-solutions"></a>Datos en soluciones de Office
   Muchas soluciones de Office permiten a los usuarios recuperar o modificar datos. Al crear soluciones de Office con Visual Studio, hay varias maneras de trabajar con los datos.
@@ -29,15 +29,15 @@ ms.locfileid: "62955981"
 
  Describe cómo enlazar datos a controles en soluciones de Office.
 
-- [Información general sobre elementos XML personalizados](../vsto/custom-xml-parts-overview.md)
+- [Información general sobre los elementos XML personalizados](../vsto/custom-xml-parts-overview.md)
 
  Describe cómo usar elementos XML personalizados para trabajar con los datos en soluciones de Office.
 
-- [Datos almacenados en caché en las personalizaciones de nivel de documento](../vsto/cached-data-in-document-level-customizations.md)
+- [Datos almacenados en caché en personalizaciones de nivel de documento](../vsto/cached-data-in-document-level-customizations.md)
 
  Describe cómo almacenar datos en una isla de datos incrustada a la que se puede tener acceso sin iniciar la aplicación de Office.
 
-- [Esquemas y datos en las personalizaciones de nivel de documento XML](../vsto/xml-schemas-and-data-in-document-level-customizations.md)
+- [Esquemas y datos XML en personalizaciones de nivel de documento](../vsto/xml-schemas-and-data-in-document-level-customizations.md)
 
  Describe cómo usar esquemas XML en las personalizaciones de nivel de documento para crear controles enlazados a datos XML.
 
@@ -50,7 +50,7 @@ ms.locfileid: "62955981"
 
  Muestra una lista de temas en los que se describe cómo trabajar con los datos en Visual Studio.
 
-- [Guardar datos](../data-tools/saving-data.md)
+- [Guardar datos](../data-tools/save-data-back-to-the-database.md)
 
  Proporciona vínculos a temas sobre cómo trabajar con conjuntos de datos, en lo que se incluye modificar datos de un conjunto de datos y volver a escribir los cambios en el origen de datos.
 
