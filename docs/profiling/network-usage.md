@@ -9,12 +9,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 58f69d5188a82937c44552e8fd192ea2dba28d3e
-ms.sourcegitcommit: 53bc4c11b82882ab658e34c65ae374060f823531
+ms.openlocfilehash: 9d1b81e35cdf08aef82c6e9c070d7127cb2debd5
+ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/19/2019
-ms.locfileid: "71128136"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72911908"
 ---
 # <a name="analyze-network-usage-in-uwp-apps"></a>Análisis del uso de la red en aplicaciones UWP
 La herramienta de diagnóstico **Red** de Visual Studio recopila datos acerca de las operaciones de red realizadas mediante la [Windows.Web.Http API](/uwp/api/windows.web.http). Analizar los datos puede ayudarle a resolver problemas como los problemas de acceso y autenticación, uso incorrecto de la caché y rendimiento deficiente de visualización y descarga.
@@ -74,7 +74,7 @@ La herramienta de diagnóstico **Red** de Visual Studio recopila datos acerca de
 ## <a name="see-also"></a>Vea también
 
 - [Ejecución de herramientas de generación de perfiles con o sin el depurador](../profiling/running-profiling-tools-with-or-without-the-debugger.md)
-- [Visual Studio blog: Introducing Visual Studio's network inspector](http://go.microsoft.com/fwlink/?LinkId=535022) (Blog de Visual Studio: Introducción al inspector de red de Visual Studio)
+- [Visual Studio blog: Introducing Visual Studio's network inspector](https://devblogs.microsoft.com/visualstudio/) (Blog de Visual Studio: Introducción al inspector de red de Visual Studio)
 - [Vídeo de Channel 9: VS diagnostics tools - new Network Profiler](https://channel9.msdn.com/Series/ConnectOn-Demand/206) (Herramientas de diagnóstico de VS: nuevo generador de perfiles de red)
 - [Generación de perfiles en Visual Studio](../profiling/index.yml)
 - [Primer vistazo a la generación de perfiles](../profiling/profiling-feature-tour.md)

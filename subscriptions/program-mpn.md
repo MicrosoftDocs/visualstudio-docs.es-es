@@ -6,12 +6,12 @@ manager: lank
 ms.date: 07/28/2019
 ms.topic: conceptual
 description: Información detallada sobre qué suscripciones se ofrecen, las reglas que se aplican y cuántas suscripciones se ofrecen en MPN.
-ms.openlocfilehash: 063c0348af226f0cbe06256426352edac7124b11
-ms.sourcegitcommit: b761a4a457646d04adfda510c8837734ee4d8f17
+ms.openlocfilehash: e32ae547327c4e51b7d49f6dffe9130afa843c49
+ms.sourcegitcommit: bcdab788085bd9931d73883fe70cd5831317dca2
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "70929755"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "72816571"
 ---
 # <a name="visual-studio-subscriptions-offered-to-partners-in-the-microsoft-partner-network-mpn"></a>Suscripciones de Visual Studio ofrecidas a partners de Microsoft Partner Network (MPN)
 
@@ -57,7 +57,7 @@ Con el Action Pack, el partner obtiene **tres suscripciones de Visual Studio Pro
 
 Los suscriptores de Visual Studio Professional (MPN) también pueden descargar y usar software para su desarrollo, incluido SQL Server Developer Edition.
 
-La suscripción de Visual Studio Professional (MPN) no incluye ventajas de Azure DevOps Services, créditos mensuales de Azure, soporte técnico, cursos ni ninguna otra ventaja de suscriptor disponible con las suscripciones de Visual Studio que se encuentran en el mercado.
+La suscripción de Visual Studio Professional (MPN) no incluye ventajas de Azure DevOps Services, crédito individual de Azure DevTest, soporte técnico, cursos ni ninguna otra ventaja de suscriptor disponible con las suscripciones de Visual Studio que se encuentran en el mercado.
 
 ## <a name="internal-use-only-restriction"></a>Restricción de solo para uso interno
 

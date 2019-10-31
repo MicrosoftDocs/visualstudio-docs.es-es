@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 16b46d47ec5850a79d78667671c7eb671d859f3e
-ms.sourcegitcommit: 53bc4c11b82882ab658e34c65ae374060f823531
+ms.openlocfilehash: 56ecf4cb1d777362daf381646094c20f82f30f85
+ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/19/2019
-ms.locfileid: "71128234"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72910349"
 ---
 # <a name="analyze-memory-usage-without-the-debugger"></a>Análisis del uso de memoria sin el depurador
 
@@ -40,7 +40,7 @@ La herramienta **Uso de memorial** puede ejecutarse con o sin el depurador. En l
 
 1. Seleccione **Uso de memoria** y después **Iniciar**.
 
-   ![Iniciar una sesión de diagnóstico de Uso de memoria](../profiling/media/memuse_start_diagnosticssession.png "Start a Memory Usage diagnostic session")
+   ![Iniciar una sesión de diagnóstico de Uso de memoria](../profiling/media/memuse_start_diagnosticssession.png "Iniciar una sesión de diagnóstico de Uso de memoria")
 
 ### <a name="monitor-memory-use"></a>Supervisar el uso de memoria
 
@@ -60,13 +60,13 @@ Para recopilar instantáneas, elija **Tomar instantánea** cuando quiera captura
 
 Para detener una sesión de supervisión sin crear un informe, simplemente cierre la ventana de diagnóstico. Para generar un informe cuando haya terminado de recopilar o haya tomado instantáneas, haga clic en **Detener recopilación**.
 
-![Detener recopilación](../profiling/media/memuse__stopcollection.png "Stop Collection")
+![Detener recopilación](../profiling/media/memuse__stopcollection.png "Detener colección")
 
 ## <a name="memory-usage-reports"></a>Informes de uso de memoria
 
 Una vez detenida la recopilación de datos, la herramienta **Uso de memoria** detiene la aplicación y muestra la página de información general **Uso de memoria**.
 
-![Página de información general Uso de memoria](../profiling/media/memuse__reportoverview1.png "Memory Usage overview page")
+![Página de información general de Uso de memoria](../profiling/media/memuse__reportoverview1.png "Página de información general de Uso de memoria")
 
 ### <a name="BKMK_Memory_Usage_snapshot_views"></a> Instantáneas de uso de memoria
 
@@ -74,7 +74,7 @@ Los números de los paneles de **Instantánea** muestran los bytes y objetos en 
 
 Los números son vínculos que abren vistas de informes de **Uso de memoria** detalladas en nuevas ventanas de Visual Studio. Un [informe detallado de instantánea](#snapshot-details-reports) muestra los tipos y las instancias en una instantánea. Un [informe de diferencias de instantáneas (diff)](#snapshot-difference-diff-reports) compara los tipos y las instancias en las dos instantáneas.
 
-  ![Vínculos de vista Instantánea](../profiling/media/memuse__snapshotview_numbered.png "Snapshot view links")
+  ![Vínculos de vista de instantánea](../profiling/media/memuse__snapshotview_numbered.png "Vínculos de vista de instantánea")
 
 |||
 |-|-|
@@ -87,7 +87,7 @@ Los números son vínculos que abren vistas de informes de **Uso de memoria** de
 
 <a name="BKMK_Snapshot_report_trees"></a> Cuando hace clic en uno de los vínculos de instantánea en la página de información general **Uso de memoria**, se abre un informe de instantáneas en una página nueva.
 
-![Informe de instantáneas de Uso de memoria](../profiling/media/memuse_snapshotreport_all.png "Memory Usage snapshot report")
+![Informe de instantánea Uso de memoria](../profiling/media/memuse_snapshotreport_all.png "Informe de instantánea Uso de memoria")
 
 En un informe de instantáneas, puede expandir las entradas de **Tipo de objeto** para mostrar entradas secundarias. Los nombres de instancia son identificadores únicos generados por la herramienta Uso de memoria.
 
@@ -107,7 +107,7 @@ En el informe de instantáneas:
 
 Muchos tipos de aplicaciones no son muy interesantes para los desarrolladores de aplicaciones. Los filtros de informe de instantáneas pueden ocultar la mayoría de estos tipos en los árboles **Montón administrado** y **Rutas de acceso a la raíz**.
 
-![Opciones de ordenar y filtrar](../profiling/media/memuse_sortandfilter.png "MEMUSE_SortAndFilter")
+![Ordenar y filtrar opciones](../profiling/media/memuse_sortandfilter.png "MEMUSE_SortAndFilter")
 
 - <a name="BKMK_Filter"></a> Para filtrar un árbol por nombre de tipo, escriba el nombre en el cuadro **Filtro**. El filtro no distingue mayúsculas de minúsculas y reconoce la cadena especificada en cualquier parte de los nombres de tipo.
 
@@ -119,14 +119,14 @@ Muchos tipos de aplicaciones no son muy interesantes para los desarrolladores de
 
  Un informe de detalles de instantánea describe una instantánea de una sesión de diagnóstico. Para abrir el informe, haga clic en el vínculo de tamaño o de objetos en un panel de instantánea.
 
- ![Vínculos a un informe de instantánea en un panel de instantánea](../profiling/media/memuse_snapshotview_snapshotdetailslinks.png "Links to snapshot report in a snapshot pane")
+ ![Vínculos a informe de instantánea en un panel de instantánea](../profiling/media/memuse_snapshotview_snapshotdetailslinks.png "Vínculos a informe de instantánea en un panel de instantánea")
 
 Ambos vínculos abren el mismo informe. La única diferencia es el orden de inicio del árbol **Montón administrado**. El vínculo de tamaño ordena el informe por la columna **Tamaño inclusivo (bytes)** . El vínculo Objetos ordena el informe por la columna **Recuento**. Puede cambiar la columna por la que se ordena o el orden después de abrir el informe.
 
 ### <a name="BKMK_Managed_Heap_tree__Snapshot_details_"></a> Árbol Montón administrado (informes de detalles de instantánea)
  El árbol **Montón administrado** enumera los tipos de objetos retenidos en memoria. Expanda un nombre de tipo para ver las diez mayores instancias del tipo, ordenadas por tamaño. Haga clic en un tipo o una instancia para mostrar los árboles **Rutas de acceso al nodo raíz** y **Objetos a los que se hace referencia** para el elemento seleccionado.
 
- ![Árbol Montón administrado](../profiling/media/memuse__snapshotdetails_managedheaptree.png "Managed Heap tree")
+ ![Árbol Montón administrado](../profiling/media/memuse__snapshotdetails_managedheaptree.png "Árbol Montón administrado")
 
 El árbol **Montón administrado** en un informe de detalles de instantánea tiene las siguientes columnas:
 
@@ -143,12 +143,12 @@ El árbol **Ruta de acceso al nodo raíz** muestra la cadena de objetos que hace
 
 Para un tipo en el árbol **Rutas de acceso al nodo raíz**, el número de objetos que contienen referencias a ese tipo se muestra en la columna **Recuento de referencias**.
 
-![Árbol Rutas de acceso al nodo raíz para los tipos](../profiling/media/memuse_snapshotdetails_type_pathstoroottree.png "Paths to Root tree for types")
+![Árbol Rutas de acceso al nodo raíz para tipos](../profiling/media/memuse_snapshotdetails_type_pathstoroottree.png "Árbol Rutas de acceso al nodo raíz para tipos")
 
 ### <a name="BKMK_Referenced_Objects_tree__Snapshot_details_"></a> Árboles Tipos a los que se referencia u Objetos a los que se hace referencia (informes de detalles de instantánea)
 En el árbol **Tipos a los que se hace referencia** u **Objetos a los que se hace referencia** se muestran los objetos a los que hace referencia el tipo o instancia seleccionado.
 
-![Árbol de objetos a los que se hace referencia para instancias](../profiling/media/memuse_snapshotdetails_referencedobjects_instance.png "Referenced Objects tree for instances")
+![Árbol Objetos a los que se hacer referencia para instancias](../profiling/media/memuse_snapshotdetails_referencedobjects_instance.png "Árbol Objetos a los que se hace referencia para instancias")
 
 El árbol **Tipos a los que se hace referencia** en un informe de detalles de instantánea tiene las siguientes columnas. Un árbol **Objetos a los que se hace referencia** no tiene la columna **Recuento de referencias**.
 
@@ -166,13 +166,13 @@ Un informe de diferencias de instantánea muestra los cambios entre una instant�
 
 Ambos vínculos abren el mismo informe. La única diferencia es el orden de inicio del árbol **Montón administrado** en el informe. El vínculo de tamaño ordena el informe por la columna **Diferencias de tamaño inclusivo (bytes)** . El vínculo Objetos ordena el informe por la columna **Diferencias de recuento**. Puede cambiar la columna por la que se ordena o el orden después de abrir el informe.
 
- ![Vínculos a un informe de diferencias en un panel de instantánea](../profiling/media/memuse_snapshotview_snapshotdifflinks.png "Links to difference report in a snapshot pane")
+ ![Vínculos a informe de diferencias en un panel de instantánea](../profiling/media/memuse_snapshotview_snapshotdifflinks.png "Vínculos a informe de diferencias en un panel de instantánea")
 
 ### <a name="BKMK_Managed_Heap_tree__Snapshot_diff_"></a> Árbol Montón administrado (informes de diferencias de instantánea)
 
  El árbol **Montón administrado** enumera los tipos de objetos retenidos en memoria. Puede expandir un nombre de tipo para ver las diez mayores instancias del tipo, ordenadas por tamaño. Haga clic en un tipo o una instancia para mostrar los árboles **Rutas de acceso al nodo raíz** y **Objetos a los que se hace referencia** para el elemento seleccionado.
 
- ![Árbol Montón administrado para un tipo en el informe de diferencias](../profiling/media/memuse_snapshotdiff_type_heap.png "Managed Heap tree for a type in difference report")
+ ![Árbol Montón administrado para un tipo en un informe de diferencias](../profiling/media/memuse_snapshotdiff_type_heap.png "Árbol Montón administrado para un tipo en un informe de diferencias")
 
 El árbol **Montón administrado** en un informe de diferencias de instantánea tiene las siguientes columnas:
 
@@ -193,13 +193,13 @@ El árbol **Ruta de acceso al nodo raíz** muestra la cadena de objetos que hace
 
 Para un tipo en el árbol **Rutas de acceso al nodo raíz**, el número de objetos que contienen referencias a ese tipo se muestra en la columna **Recuento de referencias**. La diferencia de recuento con respecto a la instantánea anterior está en la columna **Diferencia de referencia**.
 
- ![Árbol Rutas de acceso al nodo raíz en un informe de diferencias](../profiling/media/memuse_snapshotdiff_pathstoroot_instance_all.png "Paths To Root tree in a diff report")
+ ![Árbol Rutas de acceso al nodo raíz en un informe de diferencias](../profiling/media/memuse_snapshotdiff_pathstoroot_instance_all.png "Árbol Rutas de acceso al nodo raíz en un informe de diferencias")
 
 ### <a name="BKMK_Referenced_Objects_tree__Snapshot_diff_"></a> Árboles Tipos a los que se referencia u Objetos a los que se hace referencia (informes de diferencias de instantánea)
 
 En el árbol **Tipos a los que se hace referencia** u **Objetos a los que se hace referencia** se muestran los objetos a los que hace referencia el tipo o instancia seleccionado.
 
-![Tipos a los que se hace referencia en un informe de diferencias](../profiling/media/memuse_snapshotdiff_referencedtypes.png "Referenced Types in a diff report")
+![Tipos a los que se hace referencia en un informe de diferencias](../profiling/media/memuse_snapshotdiff_referencedtypes.png "Tipos a los que se hace referencia en un informe de diferencias")
 
 El árbol **Tipos a los que se hace referencia** en un informe de diferencias de instantánea tiene las siguientes columnas. Un árbol **Objetos a los que se hacer referencia** tiene las columnas **Instancia**, **Tamaño (Bytes)** , **Tamaño inclusivo (Bytes)** y **Módulo**.
 
@@ -219,4 +219,4 @@ El árbol **Tipos a los que se hace referencia** en un informe de diferencias de
 - [Generación de perfiles en Visual Studio](../profiling/index.yml)
 - [Primer vistazo a la generación de perfiles](../profiling/profiling-feature-tour.md)
 - [Procedimientos recomendados de rendimiento para aplicaciones para UWP con C++, C# y Visual Basic](/previous-versions/windows/apps/hh750313\(v\=win.10\))
-- [Diagnosticar problemas de memoria con la nueva herramienta Uso de memoria en Visual Studio](http://go.microsoft.com/fwlink/p/?LinkId=394706)
+- [Diagnosticar problemas de memoria con la nueva herramienta Uso de memoria en Visual Studio](https://devblogs.microsoft.com/devops/diagnosing-memory-issues-with-the-new-memory-usage-tool-in-visual-studio/)
