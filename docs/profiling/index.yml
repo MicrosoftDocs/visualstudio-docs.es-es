@@ -8,13 +8,13 @@ metadata:
   author: mikejo5000
   ms.author: mikejo
   manager: jillfra
-  ms.date: 09/17/2019
-  ms.openlocfilehash: b0fb7ff139ce91e981fa5fd5a9c43d1e335a1525
-  ms.sourcegitcommit: ab18c9d850192fc9ccec10961f1126e8b0cba8da
+  ms.date: 10/30/2019
+  ms.openlocfilehash: c8a6adc0857924fb790231ccf5dd70635290b77e
+  ms.sourcegitcommit: 4b911e768601992ad42dd5911dc6a01e1fe48588
   ms.translationtype: HT
   ms.contentlocale: es-ES
-  ms.lasthandoff: 10/30/2019
-  ms.locfileid: "73061111"
+  ms.lasthandoff: 11/01/2019
+  ms.locfileid: "73413583"
 landingContent:
 - title: Acerca de la generación de perfiles
   linkLists:
@@ -56,5 +56,3 @@ landingContent:
       url: network-usage.md
     - text: Análisis del uso de la energía (UWP)
       url: analyze-energy-use-in-store-apps.md
-    - text: Explorador de rendimiento (heredado)
-      url: performance-explorer.md
