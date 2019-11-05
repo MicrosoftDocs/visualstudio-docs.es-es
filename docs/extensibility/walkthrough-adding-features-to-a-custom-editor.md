@@ -10,12 +10,12 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c5ea1c1bfa34399f4a2428aec2f51f97c9884216
-ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.openlocfilehash: 5fa926b21171c3e09b5a0f4d74e9415da090bf2f
+ms.sourcegitcommit: 97623fd6190c43fed0d2ee7af92b01c375282622
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73189063"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73569077"
 ---
 # <a name="walkthrough-add-features-to-a-custom-editor"></a>Tutorial: agregar características a un editor personalizado
 Después de crear un editor personalizado, puede agregarle más características.
@@ -38,7 +38,7 @@ Después de crear un editor personalizado, puede agregarle más características
 
 4. Decida si desea que el editor use la activación en contexto o la incrustación simplificada para administrar la ventana de objeto de vista de documento.
 
-     Una ventana del editor de incrustación simplificada hospeda una vista de documento estándar, mientras que una ventana del editor de activación en contexto hospeda un control ActiveX u otro objeto activo como su vista de documento. Para obtener más información, consulte [incrustación simplificada](../extensibility/simplified-embedding.md) y [activación en contexto](../extensibility/in-place-activation.md).
+     Una ventana del editor de incrustación simplificada hospeda una vista de documento estándar, mientras que una ventana del editor de activación en contexto hospeda un control ActiveX u otro objeto activo como su vista de documento. Para obtener más información, consulte [incrustación simplificada](../extensibility/simplified-embedding.md) y [activación en contexto](/visualstudio/misc/in-place-activation?view=vs-2015).
 
 5. Implemente la interfaz <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> para controlar los comandos.
 

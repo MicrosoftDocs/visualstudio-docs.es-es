@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8467463b5a97c5bf7de1c3864ee6a5e5fc4681d1
-ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.openlocfilehash: b833d8b68af418b727861226df41c700d582805e
+ms.sourcegitcommit: d55438841123aad56a524a65332a86ad67af386b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73188099"
+ms.lasthandoff: 11/05/2019
+ms.locfileid: "73599295"
 ---
 # <a name="find-your-debugging-task-in-visual-studio"></a>Buscar la tarea de depuración en Visual Studio
 
@@ -102,6 +102,10 @@ En el C++caso de Native, utilice el [marco NatVis](create-custom-views-of-native
 Para configurar las opciones del depurador y la configuración del proyecto del depurador, vea [configuración y preparación](debugger-settings-and-preparation.md)del depurador.
 
 ## <a name="additional-tasks"></a>Tareas adicionales
+
+### <a name="fix-an-exception"></a>Corregir una excepción
+
+Consulte [corregir una excepción](write-better-code-with-visual-studio.md#fix-an-exception).
 
 ### <a name="edit-code-during-a-debugging-session"></a>Editar código durante una sesión de depuración
 

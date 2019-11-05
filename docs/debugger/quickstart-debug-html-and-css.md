@@ -17,12 +17,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - uwp
-ms.openlocfilehash: 12f66658cd8069f58355a96b2c3b3031a4cb6808
-ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.openlocfilehash: 75bdfe55d516deb34872007a9461a286b4d742e0
+ms.sourcegitcommit: 97623fd6190c43fed0d2ee7af92b01c375282622
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73187570"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73568914"
 ---
 # <a name="debug-html-and-css-in-uwp-apps-in-visual-studio"></a>Depurar HTML y CSS en aplicaciones para UWP en Visual Studio
 
@@ -182,7 +182,7 @@ En el procedimiento siguiente, analizaremos el proceso de depurar de forma inter
 14. En la ventana principal, haga doble clic en `width: 100px;height: 100px;`, presione la tecla **Supr** y, a continuación, presione **entrar**. Después de presionar entrar, los nuevos valores se reflejan inmediatamente en la aplicación, aunque no haya detenido la sesión de depuración.
 
     > [!IMPORTANT]
-    > Al igual que puedes actualizar atributos en la ventana del Explorador DOM, también puede actualizar los valores que aparecen en las pestañas **Estilos**, **Calculado**y **Diseño** . Para obtener más información, vea [depurar estilos CSS con el explorador Dom](../debugger/debug-css-styles-using-dom-explorer.md) y [depurar el diseño mediante el explorador Dom](quickstart-debug-html-and-css.md).
+    > Al igual que puedes actualizar atributos en la ventana del Explorador DOM, también puede actualizar los valores que aparecen en las pestañas **Estilos**, **Calculado**y **Diseño** .
 
 15. Cambie a la aplicación seleccionándola o con Alt + Tab.
 
@@ -255,6 +255,7 @@ Puedes seleccionar elementos DOM de tres maneras al depurar una aplicación:
 > El resaltado de elementos al pasar sobre ellos solo se admite en parte en el emulador de Windows Phone.
 
 ## <a name="see-also"></a>Vea también
+
 - [Depurar aplicaciones en Visual Studio](debugging-windows-store-and-windows-universal-apps.md)
 - [Actualizar una aplicación (JavaScript)](../debugger/refresh-an-app-javascript.md)
 - [Depurar un control WebView](../debugger/debug-a-webview-control.md)
