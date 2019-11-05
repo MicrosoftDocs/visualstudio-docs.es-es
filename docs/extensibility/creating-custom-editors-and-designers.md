@@ -11,12 +11,12 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 08d9ee33d49985fed8e8c0180fa652aed39b25d9
-ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.openlocfilehash: 7a6cb0d70566eaabb2ba37cb209041e03684c958
+ms.sourcegitcommit: 97623fd6190c43fed0d2ee7af92b01c375282622
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73186805"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73568891"
 ---
 # <a name="create-custom-editors-and-designers"></a>Crear editores y diseñadores personalizados
 
@@ -59,7 +59,7 @@ Para obtener información sobre el editor principal de Visual Studio, vea [exten
 
 - ¿El editor necesita hospedar controles ActiveX?
 
-   Si el editor hospeda controles ActiveX, implemente un editor de activación en contexto, como se describe en [activación en contexto](../extensibility/in-place-activation.md). Si no hospeda controles ActiveX, use un editor de inserción simplificado o personalice el editor predeterminado de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].
+   Si el editor hospeda controles ActiveX, implemente un editor de activación en contexto, como se describe en [activación en contexto](/visualstudio/misc/in-place-activation?view=vs-2015). Si no hospeda controles ActiveX, use un editor de inserción simplificado o personalice el editor predeterminado de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].
 
 - ¿El editor admite varias vistas? Debe admitir varias vistas si desea que las vistas del editor sean visibles al mismo tiempo que el editor predeterminado.
 

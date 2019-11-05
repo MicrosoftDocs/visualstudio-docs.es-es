@@ -11,12 +11,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 37f208421079f77cadaf85556e00a8f8548c6182
-ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.openlocfilehash: 55f9904c95be45c7f293355340c814faafb5de2b
+ms.sourcegitcommit: 97623fd6190c43fed0d2ee7af92b01c375282622
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73188802"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73568840"
 ---
 # <a name="how-to-generate-code-metrics-data"></a>Cómo: generar datos de métricas de código
 
@@ -35,7 +35,7 @@ El [paquete NuGet de FxCopAnalyzers](https://www.nuget.org/packages/Microsoft.Co
 - [CA1501](ca1501-avoid-excessive-inheritance.md)
 - [CA1502](ca1502.md)
 - [CA1505](ca1505-avoid-unmaintainable-code.md)
-- [CA1506](ca1506-avoid-excessive-class-coupling.md)
+- [CA1506](ca1506.md)
 
 Estas reglas están deshabilitadas de forma predeterminada, pero se pueden habilitar desde [**Explorador de soluciones**](use-roslyn-analyzers.md#set-rule-severity-from-solution-explorer) o en un archivo de [conjunto de reglas](using-rule-sets-to-group-code-analysis-rules.md) . Por ejemplo, para habilitar la regla CA1502 como advertencia, el archivo. ruleset incluiría la entrada siguiente:
 
