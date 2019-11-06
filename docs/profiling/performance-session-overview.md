@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 350f6d6d087ebef07ff3113b081f1742db7012c2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 545a77791d7bc5318dc17d869c510fb4e8a0787f
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62798396"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73189348"
 ---
 # <a name="performance-session-overview"></a>Información general sobre las sesiones de rendimiento
 Esta introducción explica los conceptos básicos de la generación de perfiles. Los desarrolladores que no tienen experiencia en el trabajo de rendimiento verán cómo las herramientas de generación de perfiles de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] pueden ayudarles a ser productivos rápidamente y a aumentar el rendimiento de su código. Los desarrolladores con experiencia en la generación de perfiles pueden obtener una visión general de las características específicas y procesos de las herramientas.
@@ -75,4 +75,4 @@ Esta introducción explica los conceptos básicos de la generación de perfiles.
 
 ## <a name="see-also"></a>Vea también
 - [Información general](../profiling/overviews-performance-tools.md)
-- [Tutorial: Identificación de problemas de rendimiento](/visualstudio/profiling/beginners-guide-to-cpu-sampling)
+- [Tutorial: Identificación de problemas de rendimiento](beginners-guide-to-cpu-sampling.md)

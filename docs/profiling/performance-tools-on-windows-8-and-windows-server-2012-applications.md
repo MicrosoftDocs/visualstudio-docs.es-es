@@ -7,12 +7,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8a42651792848ffd4de9eccb40c2949d113b10b4
-ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
+ms.openlocfilehash: bb5442d12899436076f6b60e8fd7e807b19e4f82
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "72911885"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73189342"
 ---
 # <a name="performance-tools-on-windows-8-and-windows-server-2012-applications"></a>Herramientas de rendimiento en aplicaciones de Windows 8 y Windows Server 2012
 
@@ -37,7 +37,7 @@ Estas características y opciones de generación de perfiles no se admiten al ge
 
 Para más información sobre cómo generar perfiles de aplicaciones para UWP, consulte los artículos siguientes:
 
-- [Ejecución de aplicaciones para UWP en el equipo local](/visualstudio/debugger/start-a-debugging-session-for-a-store-app-in-visual-studio-vb-csharp-cpp-and-xaml)
+- [Ejecución de aplicaciones para UWP en el equipo local](../debugger/start-a-debugging-session-for-a-store-app-in-visual-studio-vb-csharp-cpp-and-xaml.md)
 - [Ejecución de aplicaciones para UWP en un equipo remoto](../debugger/run-windows-store-apps-on-a-remote-machine.md)
 - [Primer vistazo a la generación de perfiles](profiling-feature-tour.md)
 - [Memoria de JavaScript](../profiling/javascript-memory.md)

@@ -6,12 +6,12 @@ ms.author: ghogen
 ms.topic: conceptual
 ms.date: 03/20/2019
 ms.technology: vs-azure
-ms.openlocfilehash: f05eb5d92c0cdaa1242f0d98c3d877eebae27bb1
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.openlocfilehash: 0ae81ed19a7fa8a967a3f9c3fe83c9f0d9e3ae51
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71253201"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73188779"
 ---
 # <a name="how-to-configure-visual-studio-container-tools"></a>Cómo configurar las herramientas de contenedor de Visual Studio
 
@@ -71,4 +71,4 @@ En la siguiente tabla se describe la configuración de **Proyecto único** y **D
 
 ## <a name="next-steps"></a>Pasos siguientes
 
-Para obtener más información sobre cómo trabajar con contenedores en Visual Studio, consulte la [introducción](visual-studio-tools-for-docker.md).
+Para obtener más información sobre cómo trabajar con contenedores en Visual Studio, consulte la [introducción](overview.md).

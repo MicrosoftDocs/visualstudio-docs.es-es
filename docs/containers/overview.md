@@ -6,12 +6,12 @@ ms.author: ghogen
 ms.topic: overview
 ms.date: 03/20/2019
 ms.technology: vs-azure
-ms.openlocfilehash: badb06b8c3eea5158054ba4c32f72e51dae0d60d
-ms.sourcegitcommit: bcdab788085bd9931d73883fe70cd5831317dca2
+ms.openlocfilehash: b60e5df4d94c290ca8aa7bf56471b5fed6c1879a
+ms.sourcegitcommit: 97623fd6190c43fed0d2ee7af92b01c375282622
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "72816361"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73568907"
 ---
 # <a name="container-tools-in-visual-studio"></a>Herramientas de contenedor en Visual Studio
 
@@ -148,6 +148,6 @@ Para Kubernetes, consulte [Deploy a Docker container app to Azure Kubernetes Ser
 
 Para más información sobre los servicios de implementación y el uso de herramientas de Visual Studio para trabajar con contenedores, lea los artículos siguientes:
 
-[Depuración de aplicaciones en un contenedor de Docker local](vs-azure-tools-docker-edit-and-refresh.md)
+[Depuración de aplicaciones en un contenedor de Docker local](edit-and-refresh.md)
 
-[Implementación de un contenedor ASP.NET en un registro de contenedor con Visual Studio](vs-azure-tools-docker-hosting-web-apps-in-docker.md)
+[Implementación de un contenedor ASP.NET en un registro de contenedor con Visual Studio](hosting-web-apps-in-docker.md)

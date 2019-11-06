@@ -13,12 +13,12 @@ helpviewer_keywords:
 - updating templates [Visual Studio]
 - template tagging, updating
 - template tags, updating
-ms.openlocfilehash: 417b171a731224302e6dd2efa55b45d84455ca4b
-ms.sourcegitcommit: 748d9cd7328a30f8c80ce42198a94a4b5e869f26
+ms.openlocfilehash: 37fa5449847eb4c093475df11a07decb31168f1f
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/15/2019
-ms.locfileid: "67891135"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73189540"
 ---
 # <a name="add-tags-to-project-templates"></a>Adición de etiquetas en plantillas de proyecto
 
@@ -40,9 +40,9 @@ Para agregar etiquetas, actualice el archivo XML *.vstemplate*. Puede usar etiqu
 
 Es posible que quiera agregar o editar etiquetas en el archivo XML *.vstemplate* de la plantilla del proyecto al realizar las siguientes acciones:
 
-* [Crear una nueva plantilla de proyecto](/visualstudio/ide/how-to-create-project-templates) mediante el Asistente para exportar plantillas.
-* [Actualizar la plantilla de proyecto existente](/visualstudio/ide/how-to-update-existing-templates).
-* [Crear una nueva plantilla de proyecto VSIX](/visualstudio/extensibility/getting-started-with-the-vsix-project-template).
+* [Crear una nueva plantilla de proyecto](how-to-create-project-templates.md) mediante el Asistente para exportar plantillas.
+* [Actualizar la plantilla de proyecto existente](how-to-update-existing-templates.md).
+* [Crear una nueva plantilla de proyecto VSIX](../extensibility/getting-started-with-the-vsix-project-template.md).
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -147,7 +147,7 @@ El ejemplo siguiente muestra los metadatos de una plantilla de proyecto para una
 
 ## <a name="see-also"></a>Vea también
 
-- [Referencia de esquema de plantillas de Visual Studio](/visualstudio/extensibility/visual-studio-template-schema-reference)
-- [Creación de plantillas de proyecto y elemento](/visualstudio/ide/creating-project-and-item-templates)
-- [Personalización de plantillas de proyectos y elementos](/visualstudio/ide/customizing-project-and-item-templates)
-- [Introducción a la plantilla de proyecto VSIX](/visualstudio/extensibility/getting-started-with-the-vsix-project-template)
+- [Referencia de esquema de plantillas de Visual Studio](../extensibility/visual-studio-template-schema-reference.md)
+- [Creación de plantillas de proyecto y elemento](creating-project-and-item-templates.md)
+- [Personalización de plantillas de proyectos y elementos](customizing-project-and-item-templates.md)
+- [Introducción a la plantilla de proyecto VSIX](../extensibility/getting-started-with-the-vsix-project-template.md)

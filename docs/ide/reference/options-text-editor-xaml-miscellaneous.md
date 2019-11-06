@@ -28,12 +28,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: 242daf82d405af4b3a1e529633fb82651aa6bdc9
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 693e0d206455c2c430f8d723f131868fdf21eefc
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72666626"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73189556"
 ---
 # <a name="options-text-editor-xaml-miscellaneous"></a>Opciones, editor de texto, XAML y varios
 
@@ -52,7 +52,7 @@ Use esta opción para controlar cuándo se generan automáticamente etiquetas y 
 
 ## <a name="errors-and-warnings"></a>Errores y advertencias
 
-Use esta opción para controlar cuándo se generan automáticamente errores y advertencias. Para obtener más información, vea [Errores y advertencias de XAML](../../designers/xaml-errors-warnings.md).
+Use esta opción para controlar cuándo se generan automáticamente errores y advertencias. Para obtener más información, vea [Errores y advertencias de XAML](../../xaml-tools/xaml-errors-warnings.md).
 
 ## <a name="see-also"></a>Vea también
 
