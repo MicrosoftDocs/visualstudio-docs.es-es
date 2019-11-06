@@ -3,7 +3,7 @@ title: Primer vistazo al depurador
 description: Empiece a depurar aplicaciones mediante el depurador de Visual Studio
 ms.custom: ''
 ms.date: 04/08/2019
-ms.topic: conceptual
+ms.topic: tutorial
 helpviewer_keywords:
 - debugger
 ms.assetid: c763d706-3213-494f-b4d2-990b6e1ec456
@@ -12,16 +12,16 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8741d0815aa3e5478a7dcf93585fc0be6e266ae0
-ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
-ms.translationtype: MT
+ms.openlocfilehash: 89debcfdeec2c9d363c6935bd2cfdd1ebf403f76
+ms.sourcegitcommit: d55438841123aad56a524a65332a86ad67af386b
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73188708"
+ms.lasthandoff: 11/05/2019
+ms.locfileid: "73599299"
 ---
 # <a name="first-look-at-the-visual-studio-debugger"></a>Primer vistazo al depurador de Visual Studio
 
-En este tema se presentan las herramientas de depuración que proporciona Visual Studio. En el contexto de Visual Studio, *depurar la aplicación* normalmente significa ejecutar la aplicación con el depurador asociado (es decir, en modo depurador). Al hacerlo, el depurador ofrece muchas formas de ver lo que hace el código durante la ejecución. Puede recorrer el código y examinar los valores almacenados en variables. puede establecer inspecciones en variables para ver cuándo cambian los valores, puede examinar la ruta de acceso de ejecución del código, y al. Si es la primera vez que intenta depurar código, puede que desee leer la [depuración para principiantes absolutos antes de](../debugger/debugging-absolute-beginners.md) pasar por este tema.
+En este tema se presentan las herramientas de depuración que proporciona Visual Studio. En el contexto de Visual Studio, *depurar la aplicación* normalmente significa ejecutar la aplicación con el depurador asociado (es decir, en modo depurador). Al hacerlo, el depurador ofrece muchas formas de ver lo que hace el código durante la ejecución. Esto permite revisar el código y fijarse en los valores almacenados en las variables, establecer inspecciones en ellas para ver cuándo cambian esos valores, examinar la ruta de ejecución del código, etc. Si esta es la primera vez que intenta depurar código, es posible que quiera leer [Depuración para principiantes sin experiencia](../debugger/debugging-absolute-beginners.md) antes de continuar con este tema.
 
 Las características que se explican aquí son aplicables a C#, C++, Visual Basic, JavaScript y otros lenguajes compatibles con Visual Studio (a menos que se indique lo contrario).
 
@@ -47,7 +47,7 @@ Para iniciar la aplicación con el depurador asociado, presione **F11** (**Depur
 
 La flecha amarilla representa la instrucción en la que el depurador se ha detenido, lo cual también suspende la ejecución de la aplicación en el mismo punto (esta instrucción todavía no se ha ejecutado).
 
-F11 es una buena forma de examinar el flujo de ejecución con más detalle. (Para moverse más rápido a través del código, se muestran también algunas otras opciones). De forma predeterminada, el depurador omite el código que no es de usuario (si desea obtener más información, vea [solo mi código](../debugger/just-my-code.md)).
+F11 es una buena forma de examinar el flujo de ejecución con más detalle. (Además se muestran otras opciones para moverse más rápido por el código). De forma predeterminada, el depurador omite el código que no es de usuario (si quiere más detalles, vea [Solo mi código](../debugger/just-my-code.md)).
 
 >[!NOTE]
 > En código administrado, aparece un cuadro de diálogo que le pregunta si quiere recibir una notificación cuando salte automáticamente propiedades y operadores (comportamiento predeterminado). Si quiere cambiar el valor más adelante, deshabilite **Step over properties and operators** (Saltar propiedades y operadores) en el menú **Herramientas > Opciones**, en **Depuración**.
@@ -183,7 +183,7 @@ En la ventana **Pila de llamadas** se muestra el orden en el que se llama a los 
 
 Puede hacer doble clic en una línea de código para ver ese código fuente. De este modo, también puede cambiar el ámbito que el depurador va a inspeccionar. Eso no hace avanzar el depurador.
 
-También puede usar los menús contextuales de la ventana **Pila de llamadas** para hacer otras cosas. Por ejemplo, puede insertar puntos de interrupción en funciones concretas, reiniciar la aplicación mediante **Ejecutar hasta el cursor** y examinar el código fuente. Vea [Ver la pila de llamadas y usar la ventana Pila de llamadas en el depurador](../debugger/how-to-use-the-call-stack-window.md).
+También puede usar los menús contextuales de la ventana **Pila de llamadas** para hacer otras cosas. Por ejemplo, puede insertar puntos de interrupción en funciones concretas, reiniciar la aplicación mediante **Ejecutar hasta el cursor** y examinar el código fuente. Vea [Cómo: Examinar la pila de llamadas](../debugger/how-to-use-the-call-stack-window.md).
 
 ## <a name="exception"></a> Examinar una excepción
 

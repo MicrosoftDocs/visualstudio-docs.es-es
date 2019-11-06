@@ -8,12 +8,12 @@ manager: jillfra
 ms.technology: vs-azure
 ms.workload:
 - azure
-ms.openlocfilehash: 45397ddf21f1ea1d735c2753864e5954850a4d98
-ms.sourcegitcommit: 44e9b1d9230fcbbd081ee81be9d4be8a485d8502
+ms.openlocfilehash: 8b6aef437519a4fe92f11a3b21546b3dda9981bb
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/30/2019
-ms.locfileid: "71126116"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73188761"
 ---
 # <a name="get-started-with-visual-studio-kubernetes-tools"></a>Introducción a Visual Studio Tools para Kubernetes
 
@@ -137,7 +137,7 @@ Para ello, primero debe comprobar que ha instalado todo lo indicado en la secci�
 
    ![Captura de pantalla del elemento de menú Publicar](media/tutorial-kubernetes-tools/k8s-tools-publish-project.png)
 
-2. En la pantalla **Publicar**, seleccione **Registro de contenedor** como destino de publicación y siga las indicaciones para seleccionar el registro de contenedor. Si aún no tiene un registro de contenedor, seleccione **Crear una instancia de Azure Container Registry** para crear uno desde Visual Studio. Para obtener más información, vea [Publicación del contenedor en Azure Container Registry](vs-azure-tools-docker-hosting-web-apps-in-docker.md).
+2. En la pantalla **Publicar**, seleccione **Registro de contenedor** como destino de publicación y siga las indicaciones para seleccionar el registro de contenedor. Si aún no tiene un registro de contenedor, seleccione **Crear una instancia de Azure Container Registry** para crear uno desde Visual Studio. Para obtener más información, vea [Publicación del contenedor en Azure Container Registry](hosting-web-apps-in-docker.md).
 
    ![Captura de la pantalla para seleccionar un destino de publicación](media/tutorial-kubernetes-tools/k8s-tools-publish-to-acr.png)
 

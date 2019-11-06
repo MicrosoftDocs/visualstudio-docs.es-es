@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1c76fd1d18b41073bf92ed18dadeeeb3a90c9209
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: 20804e6ada568828ea1850ae249d9bf0d24855e0
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63433612"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73189287"
 ---
 # <a name="walkthrough-command-line-profiling-using-sampling"></a>Tutorial: Generar perfiles mediante muestreo desde la línea de comandos
 
@@ -33,7 +33,7 @@ En este tutorial realizará los siguientes pasos:
 
 - Conocimientos intermedios de [!INCLUDE[csharp_current_short](../misc/includes/csharp_current_short_md.md)]
 - Conocimientos intermedios del uso de herramientas de la línea de comandos
-- Una copia de la [muestra PeopleTrax](/visualstudio/profiling/performance-explorer)
+- Una copia de la [muestra PeopleTrax](performance-explorer.md)
 - Para trabajar con la información proporcionada por la generación de perfiles, es preferible disponer de la información de símbolos de depuración.
 
 ## <a name="command-line-profiling-using-the-sampling-method"></a>Generación de perfiles mediante el método de muestreo en la línea de comandos
