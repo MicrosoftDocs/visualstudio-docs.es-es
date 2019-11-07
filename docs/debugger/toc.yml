@@ -654,18 +654,8 @@
               href: javascript-console-commands.md
             - name: Métodos abreviados de teclado (HTML y JavaScript)
               href: keyboard-shortcuts-html-and-javascript.md
-            - name: Scripts del lado de cliente
-              items:
-                - name: Depuración de scripts en el cliente
-                  href: client-side-script-debugging.md
-                - name: Limitaciones de la depuración de scripts
-                  href: limitations-on-script-debugging.md
-                - name: Ajuntar (script)
-                  items:
-                    - name: Asociar a script
-                      href: how-to-attach-to-script.md
-                    - name: 'Advertencia: Depuración de scripts deshabilitada'
-                      href: warning-script-debugging-disabled.md
+            - name: 'Advertencia: Depuración de scripts deshabilitada'
+              href: warning-script-debugging-disabled.md
         - name: Servicios WCF
           items:
             - name: Depurar servicios WCF
