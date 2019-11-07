@@ -19,12 +19,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 29ede9dd29952e87e7f1dd76875905973bada6a6
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.openlocfilehash: cf81dea230c2cfc33eb19ca001d8c9ed06b0489c
+ms.sourcegitcommit: 77ef1dcc71057cd5fdc4733ff0cb6085bd6113e0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72986089"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "73661846"
 ---
 # <a name="excel-object-model-overview"></a>Información general del modelo de objetos de Excel
   Para desarrollar soluciones que usen Microsoft Office Excel, puede interactuar con los objetos proporcionados por el modelo de objetos de Excel. Este tema presenta los objetos más importantes:
@@ -103,7 +103,7 @@ ms.locfileid: "72986089"
  Para obtener información completa sobre el modelo de objetos de Excel, puede consultar la referencia del ensamblado de interoperabilidad primario (PIA) de Excel y la referencia del modelo de objetos VBA.
 
 ### <a name="primary-interop-assembly-reference"></a>Referencia de ensamblado de interoperabilidad primario
- La documentación de referencia de los PIA de Excel describe los tipos Del ensamblado de interoperabilidad primario para Excel. Esta documentación está disponible en la siguiente ubicación: [referencia de ensamblado de interoperabilidad primario de Excel 2010](/visualstudio/vsto/office-primary-interop-assemblies&view=vs-2019).
+ La documentación de referencia de los PIA de Excel describe los tipos Del ensamblado de interoperabilidad primario para Excel. Esta documentación está disponible en la siguiente ubicación: [referencia de ensamblado de interoperabilidad primario de Excel 2010](/visualstudio/vsto/office-primary-interop-assemblies).
 
  Para obtener más información sobre el diseño del PIA de Excel, como las diferencias entre las clases y las interfaces en el PIA y cómo se implementan los eventos en el PIA, consulte [información general de las clases e interfaces de los ensamblados de interoperabilidad primarios de Office](/previous-versions/office/office-12/ms247299(v=office.12)).
 

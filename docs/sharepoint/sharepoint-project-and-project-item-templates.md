@@ -20,12 +20,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 825e985820ac7a4d72bf321133491e312adb0a0e
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.openlocfilehash: 762fce80ad1e97f700af0768cdb68251a3ee8017
+ms.sourcegitcommit: 77ef1dcc71057cd5fdc4733ff0cb6085bd6113e0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72981951"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "73661860"
 ---
 # <a name="sharepoint-project-and-project-item-templates"></a>Plantillas de proyecto y de elemento de proyecto de SharePoint
   En las secciones siguientes se describen el proyecto de SharePoint y las plantillas de elemento de proyectos disponibles y cómo se utilizan.
@@ -132,7 +132,7 @@ ms.locfileid: "72981951"
  Un *flujo de trabajo de equipo de estado* es un conjunto de Estados, transiciones y acciones de lógica de negocios. Los pasos de un flujo de trabajo de máquina de estados no se siguen en secuencia, sino que se activan mediante acciones y estados. Como un flujo de trabajo secuencial, los flujos de trabajo de máquina de estados están asociados a elementos de SharePoint como son las listas y los documentos. También en este caso puede crear flujos de trabajo de nivel de sitio (globales) o flujos de trabajo de nivel de lista (locales). Y también puede seleccionar si un flujo de trabajo se inicia automática o manualmente. Este elemento de proyecto únicamente se puede usar en una solución de granja de servidores. Puede agregar este elemento de proyecto únicamente a las soluciones de granja de servidores. Para obtener más información, vea [crear soluciones de flujo de trabajo de SharePoint](../sharepoint/creating-sharepoint-workflow-solutions.md), [flujos de trabajo en SharePoint Server 2010](/previous-versions/office/developer/sharepoint-2010/ms549489(v=office.14))y [novedades: mejoras en el flujo de trabajo](/previous-versions/office/developer/sharepoint-2010/ee537015(v=office.14)).
 
 ### <a name="user-control-farm-solution-only"></a>Control de usuario (solo solución de granja de servidores)
- Un *control de usuario* es un control personalizado y reutilizable al que se pueden agregar otros controles ASP.net y controles de SharePoint. El control de usuario se puede agregar a las páginas de aplicación y elementos web que se ejecutan en SharePoint. Este elemento de proyecto únicamente se puede usar en una solución de granja de servidores. Puede agregar este elemento de proyecto únicamente a las soluciones de granja de servidores. Para obtener más información, vea [crear controles reutilizables para elementos Web o páginas de aplicación](/visualstudio/sharepoint/creating-reusable-controls-for-web-parts-or-application-pages&view=vs-2019).
+ Un *control de usuario* es un control personalizado y reutilizable al que se pueden agregar otros controles ASP.net y controles de SharePoint. El control de usuario se puede agregar a las páginas de aplicación y elementos web que se ejecutan en SharePoint. Este elemento de proyecto únicamente se puede usar en una solución de granja de servidores. Puede agregar este elemento de proyecto únicamente a las soluciones de granja de servidores. Para obtener más información, vea [crear controles reutilizables para elementos Web o páginas de aplicación](/visualstudio/sharepoint/creating-reusable-controls-for-web-parts-or-application-pages).
 
 ### <a name="visual-web-part"></a>Elemento Web Visual
  Un elemento de proyecto de *elemento Web visual* incluye un archivo de definición *Elements. XML* , un elemento de **elemento Web** y un elemento de **control de usuario** . Puede diseñar la apariencia del elemento Web visual arrastrando o copiando los controles del cuadro de herramientas de Visual Studio a la superficie del control de usuario. Para obtener más información, vea [Cómo: crear un elemento Web de SharePoint mediante un diseñador y un](../sharepoint/how-to-create-a-sharepoint-web-part-by-using-a-designer.md) [bloque de creación: elementos Web](/previous-versions/office/developer/sharepoint-2010/ee535520(v=office.14)).

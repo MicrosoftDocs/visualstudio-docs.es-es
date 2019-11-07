@@ -1,6 +1,6 @@
 ---
 title: 'Cómo: ver documentos de script | Microsoft Docs'
-ms.date: 01/08/2019
+ms.date: 11/05/2019
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -15,16 +15,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7696122cc9f0d431f310b8d6efb10819af995823
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 5e362e0504c4ed2584bbbbea687fe3c58fc79edb
+ms.sourcegitcommit: ba0fef4f5dca576104db9a5b702670a54a0fcced
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72731862"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73714442"
 ---
 # <a name="how-to-view-script-documents-javascript"></a>Cómo: ver documentos de script (JavaScript)
 
 Los archivos de script de servidor son visibles en Explorador de soluciones. Los archivos de script de cliente sólo están visibles en modo de depuración o en modo de interrupción. Los archivos de script del lado cliente aparecen en el nodo **documentos de script** .
+
+Para algunos tipos de aplicaciones que generan páginas dinámicamente, es más fácil entrar en modo de interrupción y depurar cuando se establece un punto de interrupción a partir de un documento de script que se carga en el explorador. De forma similar, puede Agregar la instrucción `debugger` desde un documento de script cargado para entrar en modo de interrupción. En este artículo se muestra cómo ver estos documentos.
 
 > [!NOTE]
 > Antes [!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)], los archivos de script de cliente generados a partir del script del lado servidor aparecían en la ventana Explorador de scripts.
