@@ -29,7 +29,7 @@ ms.locfileid: "71211335"
 >[!div class="button"]
 >[Descargar Visual Studio 2019](https://visualstudio.microsoft.com/downloads)
 
-Con Visual Studio 2019, recibirá las mejores herramientas y servicios para cualquier desarrollador, aplicación y plataforma. Independientemente de si usa Visual Studio por primera vez o si ya lo ha usado durante años, esta nueva versión le gustará mucho.
+Con Visual Studio 2019, recibirá las mejores herramientas y servicios para cualquier desarrollador, aplicación y plataforma. Independientemente de si esta utilizando Visual Studio por primera vez o si ya lo ha utilizado durante años, esta nueva versión le gustará mucho.
 
 Este es un resumen de alto nivel de todas las novedades:
 
