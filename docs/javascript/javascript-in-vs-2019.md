@@ -22,7 +22,7 @@ ms.locfileid: "72888619"
 
 ## <a name="overview"></a>Información general
 
-Visual Studio 2019 proporciona compatibilidad enriquecida para el desarrollo con JavaScript, tanto con el uso de JavaScript directamente como con el uso del [lenguaje de programación TypeScript](http://www.typescriptlang.org/), que se desarrolló para ofrecer una experiencia de desarrollo con JavaScript más productiva y entretenida, sobre todo al desarrollar proyectos a escala. Puede escribir código JavaScript o TypeScript en Visual Studio para muchos tipos de aplicaciones y servicios.
+Visual Studio 2019 proporciona compatibilidad enriquecida para el desarrollo de lenguajes de progración como JavaScript, tanto como el uso de JavaScript directamente como con el uso del [lenguaje de programación TypeScript](http://www.typescriptlang.org/), que se desarrolló para ofrecer una experiencia de desarrollo con JavaScript más productiva y entretenida, sobre todo al desarrollar proyectos a escala. Puede escribir código JavaScript o TypeScript en Visual Studio para muchos tipos de aplicaciones y servicios.
 
 ## <a name="javascript-language-service"></a>Servicio de lenguaje JavaScript
 
