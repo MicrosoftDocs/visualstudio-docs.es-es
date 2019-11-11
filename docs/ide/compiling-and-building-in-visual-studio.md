@@ -21,7 +21,7 @@ ms.locfileid: "71211260"
 ---
 # <a name="compile-and-build-in-visual-studio"></a>Compilar y generar en Visual Studio
 
-Al compilar código fuente, el motor de compilación crea ensamblados y aplicaciones ejecutables. En general, el proceso de compilación es muy parecido en numerosos tipos de proyectos diferentes, como Windows, ASP.NET, aplicaciones móviles y otros. El proceso de compilación también se parece en lenguajes de programación como C#, Visual Basic, C++ y F#.
+Al compilar código fuente, el motor de compilación crea y ensambla aplicaciones ejecutables. En general, el proceso de compilación es muy parecido en numerosos tipos de proyectos diferentes, como Windows, ASP.NET, aplicaciones móviles y otros. El proceso de compilación también se parece en lenguajes de programación como C#, Visual Basic, C++ y F#.
 
 Al compilar el código con frecuencia, se pueden identificar rápidamente errores en tiempo de compilación, como sintaxis incorrecta, palabras clave mal escritas y errores de coincidencia de tipos. También es posible detectar y corregir errores en tiempo de ejecución, como errores lógicos y semánticos, al compilar y ejecutar versiones de depuración del código.
 
