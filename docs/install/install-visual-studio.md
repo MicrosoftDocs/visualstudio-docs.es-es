@@ -31,7 +31,7 @@ ms.locfileid: "72018855"
 
 ::: moniker range="vs-2019"
 
-Bienvenido a Visual Studio 2019 En esta versión, resulta muy fácil elegir e instalar solo las características que se necesitan. Además, gracias a la mínima superficie de memoria que ocupa, se instala rápidamente y con menos impacto en el sistema.
+Bienvenido a Visual Studio 2019. En esta versión, resulta muy fácil elegir e instalar solo las características que se necesitan. Además, gracias a la mínima superficie de memoria que ocupa, se instala rápidamente y con menos impacto en el sistema.
 
 ::: moniker-end
 
