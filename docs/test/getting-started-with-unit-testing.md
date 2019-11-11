@@ -18,7 +18,7 @@ ms.locfileid: "72664916"
 ---
 # <a name="get-started-with-unit-testing"></a>Introducción a las pruebas unitarias
 
-Use Visual Studio para definir y ejecutar pruebas unitarias para conservar el estado del código, garantizar la cobertura del código y detectar errores y fallos antes de que lo hagan los clientes. Ejecute las pruebas unitarias con frecuencia para asegurarse de que el código funciona correctamente.
+Utilice Visual Studio para definir, ejecutar y realizar pruebas unitarias para conservar el estado del código, garantizar la cobertura del código,detectar fallos de compilación antes de que lo hagan los clientes. Ejecute las pruebas unitarias con frecuencia para asegurarse de que el código funciona correctamente.
 
 ## <a name="create-unit-tests"></a>Crear pruebas unitarias
 
