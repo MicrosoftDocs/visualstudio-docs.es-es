@@ -6,12 +6,12 @@ ms.author: crdun
 ms.date: 04/14/2017
 ms.technology: vs-ide-sdk
 ms.assetid: D5245AB0-8404-426B-B538-F49125E672B2
-ms.openlocfilehash: 26290a5e70a9f4b0f6eeb8df5727ef4f04662136
-ms.sourcegitcommit: 748d9cd7328a30f8c80ce42198a94a4b5e869f26
+ms.openlocfilehash: 87a4fae1bd5430037b34297f803a6d955a052f68
+ms.sourcegitcommit: ba0fef4f5dca576104db9a5b702670a54a0fcced
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/15/2019
-ms.locfileid: "67890637"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73716941"
 ---
 # <a name="extending-visual-studio-for-mac"></a>Extender Visual Studio para Mac
 
@@ -135,7 +135,7 @@ Esto enlaza Command y CommandItem y, cuando en el **menú Edición** se seleccio
 
 <!--The extension package detailed in the [Walkthrough](~/extending-visual-studio-mac-walkthrough.md) deals with the Text Editor in Visual Studio for Mac, but this is only one of many possible areas for customization. -->
 
-Para obtener información sobre el ámbito de las áreas disponibles para el desarrollo, vea [Extension Tree Reference](http://monodevelop.com/Developers/Articles/Extension_Tree_Reference) (Referencia del árbol de extensión) y [API Overview](http://monodevelop.com/Developers/Articles/API_Overview) (Introducción a la API). Al compilar paquetes de extensión avanzados, vea también los [artículos para desarrolladores](http://monodevelop.com/Developers/Articles). A continuación se muestra una lista parcial de las áreas que se pueden personalizar:
+Para obtener información sobre el ámbito de las áreas disponibles para el desarrollo, vea [Extension Tree Reference](https://www.monodevelop.com/developers/articles/extension-tree-reference/) (Referencia del árbol de extensión) y [API Overview](https://www.monodevelop.com/developers/articles/api-overview/) (Introducción a la API). Al compilar paquetes de extensión avanzados, vea también los [artículos para desarrolladores](https://www.monodevelop.com/developers/articles/). A continuación se muestra una lista parcial de las áreas que se pueden personalizar:
 
 * Paneles
 * Esquemas de enlace del teclado

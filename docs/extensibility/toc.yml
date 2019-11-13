@@ -202,8 +202,6 @@
               href: how-to-open-standard-editors.md
             - name: Abrir editores para documentos abiertos
               href: how-to-open-editors-for-open-documents.md
-        - name: Guía de migración de extensibilidad del Diseñador XAML
-          href: xaml-designer-extensibility-migration.md
 - name: Ampliación de proyectos
   items:
     - name: Ampliación de proyectos
