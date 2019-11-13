@@ -5,12 +5,12 @@ author: therealjohn
 ms.author: johmil
 ms.date: 06/18/2019
 ms.assetid: 339F6051-5F90-48DC-8237-EBBC8A03A32B
-ms.openlocfilehash: c8b6bddac92a9ec6b40ba08ebcdc3fe3577b0bc8
-ms.sourcegitcommit: ea182703e922c74725045afc251bcebac305068a
+ms.openlocfilehash: 31fb7fa4c2a87820285809d24b98fe8e59a6be01
+ms.sourcegitcommit: ba0fef4f5dca576104db9a5b702670a54a0fcced
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71211475"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73714482"
 ---
 # <a name="xamarin-mobile-app-development"></a>Desarrollo de aplicaciones móviles con Xamarin
 
@@ -22,7 +22,7 @@ La Recarga activa de XAML para Xamarin.Forms está integrada en Visual Studio pa
 
 Para habilitar la Recarga activa de XAML, active la casilla **Enable Xamarin Hot Reload** (Habilitar la recarga activa de Xamarin) en **Visual Studio > Preferencias > Proyectos > Xamarin Hot Reload** (Recarga activa de Xamarin).
 
-Para obtener más información sobre la recarga activa, vea la [guía de Recarga activa de XAML para Xamarin.Forms](https://docs.microsoft.com/en-us/xamarin/xamarin-forms/xaml/hot-reload) dentro de la documentación.
+Para obtener más información sobre la recarga activa, vea la [guía de Recarga activa de XAML para Xamarin.Forms](/xamarin/xamarin-forms/xaml/hot-reload) dentro de la documentación.
 
 ## <a name="android"></a>Android
 
@@ -40,7 +40,7 @@ iOS Designer está totalmente integrado con Visual Studio para Mac y permite la 
 
 ![Diseñador de guiones gráficos de iOS](media/intro-image30.png)
 
-Para obtener más información sobre cómo se usa iOS Designer, vea las guías de [Designer](https://docs.microsoft.com/xamarin/ios/user-interface/designer/?tabs=macos).
+Para obtener más información sobre cómo se usa iOS Designer, vea las guías de [Designer](/xamarin/ios/user-interface/designer/?tabs=macos).
 
 ### <a name="mac"></a>Mac
 

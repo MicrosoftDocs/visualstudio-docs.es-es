@@ -5,18 +5,18 @@ author: sayedihashimi
 ms.author: sayedha
 ms.date: 09/18/2019
 ms.assetid: a556f9d7-86a8-408e-aa54-392584845889
-ms.openlocfilehash: 7135dd05c687e3caed3ee64618ff71c093f4cd63
-ms.sourcegitcommit: 4d2620bee4688fb881e09a07ea4a264b99f0743e
+ms.openlocfilehash: d35bfed901dca960ae21b4e2cf2fa75067c1b3ee
+ms.sourcegitcommit: ba0fef4f5dca576104db9a5b702670a54a0fcced
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "71322579"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73715936"
 ---
 # <a name="launchsettingsjson"></a>launchSettings.json
 
 Al desarrollar proyectos de ASP.NET Core, puede configurar cómo se debe iniciar el proyecto en los escenarios de desarrollo mediante la personalización del contenido del archivo. En Visual Studio para Mac, puede actualizar este archivo mediante la interfaz de usuario de opciones del proyecto o editando directamente el archivo. Este archivo es el mismo archivo de configuración que se puede usar al ejecutar Visual Studio en Windows o desde la línea de comandos con `dotnet`. Este archivo se almacena en el proyecto en la carpeta Propiedades.
 
-Para más información, consulte [Usar varios entornos en ASP.NET Core](https://docs.microsoft.com/aspnet/core/fundamentals/environments). En este artículo, trataremos cómo actualizar este archivo en Visual Studio para Mac.
+Para más información, consulte [Usar varios entornos en ASP.NET Core](/aspnet/core/fundamentals/environments). En este artículo, trataremos cómo actualizar este archivo en Visual Studio para Mac.
 
 ## <a name="update-the-start-configuration-by-using-visual-studio-for-mac"></a>Actualización de la configuración de inicio mediante Visual Studio para Mac
 
@@ -35,7 +35,7 @@ Aquí configurará principalmente dos cosas:
 
 ## <a name="configure-environment-variables"></a>Configuración de las variables de entorno
 
-Puede usar la cuadrícula para especificar los valores de las variables de entorno. Estas variables de entorno se establecerán al iniciar la aplicación en Visual Studio para Mac. Al desarrollar aplicaciones de ASP.NET Core, debe tener en cuenta la variable de entorno especial `ASPNETCORE_ENVIRONMENT`. Para obtener más información, consulte [Usar varios entornos en ASP.NET Core](https://docs.microsoft.com/aspnet/core/fundamentals/environments).
+Puede usar la cuadrícula para especificar los valores de las variables de entorno. Estas variables de entorno se establecerán al iniciar la aplicación en Visual Studio para Mac. Al desarrollar aplicaciones de ASP.NET Core, debe tener en cuenta la variable de entorno especial `ASPNETCORE_ENVIRONMENT`. Para obtener más información, consulte [Usar varios entornos en ASP.NET Core](/aspnet/core/fundamentals/environments).
 
 
 ## <a name="configure-the-start-url"></a>Configuración de la dirección URL de inicio

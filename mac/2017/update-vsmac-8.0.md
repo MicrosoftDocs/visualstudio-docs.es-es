@@ -7,12 +7,12 @@ ms.date: 06/20/2018
 ms.technology: vs-ide-install
 ms.assetid: BC836802-CC65-41F7-BAEC-A42AED0371A9
 hide_comments: false
-ms.openlocfilehash: 26b943d94f11adbc4415e552d2a6b3a73bb95c81
-ms.sourcegitcommit: 7eb2fb21805d92f085126f3a820ac274f2216b4e
+ms.openlocfilehash: 66461beec5fa619c33e0d33aeb4e57bfefd43d96
+ms.sourcegitcommit: ba0fef4f5dca576104db9a5b702670a54a0fcced
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/22/2019
-ms.locfileid: "67328369"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73715687"
 ---
 # <a name="update-visual-studio-2017-for-mac-version-7-to-visual-studio-2019-for-mac-version-80"></a>Actualice Visual Studio 2017 para Mac (versión 7) a Visual Studio 2019 para Mac (versión 8.0)
 
@@ -22,9 +22,9 @@ Visual Studio 2019 para Mac ofrece una gran cantidad de nuevas mejoras: un edit
 - [Ya está disponible Visual Studio 2019 para Mac versión 8.1 (y una versión preliminar para 8.2)](https://devblogs.microsoft.com/visualstudio/visual-studio-2019-for-mac-version-8-1-is-now-available-and-a-preview-for-8-2/)
 
 > [!IMPORTANT]
-> Existe un problema conocido con Visual Studio 2017 para Mac **versión 7.7.3**, donde el actualizador continuamente muestra "Error al recuperar la información de actualizaciones". Si esto sucede, [descargue Visual Studio para Mac](https://visualstudio.microsoft.com/vs/mac/) y siga los pasos necesarios para [instalar](https://docs.microsoft.com/visualstudio/mac/installation?view=vsmac-2019) Visual Studio 2019 para Mac. Tenga en cuenta que esta acción sobrescribirá la instancia existente de Visual Studio 2017 para Mac.
+> Existe un problema conocido con Visual Studio 2017 para Mac **versión 7.7.3**, donde el actualizador continuamente muestra "Error al recuperar la información de actualizaciones". Si esto sucede, [descargue Visual Studio para Mac](https://visualstudio.microsoft.com/vs/mac/) y siga los pasos necesarios para [instalar](/visualstudio/mac/installation?view=vsmac-2019) Visual Studio 2019 para Mac. Tenga en cuenta que esta acción sobrescribirá la instancia existente de Visual Studio 2017 para Mac.
 
-Para obtener la versión más reciente, puede usar el [actualizador](https://docs.microsoft.com/visualstudio/mac/update?view=vsmac-2017); para ello, vaya a **Visual Studio > Buscar actualizaciones...** :
+Para obtener la versión más reciente, puede usar el [actualizador](/visualstudio/mac/update?view=vsmac-2017); para ello, vaya a **Visual Studio > Buscar actualizaciones...** :
 
 ![cuadro de diálogo del actualizador](media/update-vsmac-updater.png)
 
