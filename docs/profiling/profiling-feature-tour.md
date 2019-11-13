@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5dff10c90a51dffece1e93e575ab7ae3cbf75367
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 9cc8ab1ac26f4aa01342d9949243772edd3de91f
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65704514"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73189414"
 ---
 # <a name="quickstart-first-look-at-profiling-tools"></a>Inicio rápido: Un primer vistazo a las herramientas de generación de perfiles
 
@@ -29,7 +29,7 @@ Las herramientas de generación de perfiles a las que puede obtener acceso duran
 
 Durante la depuración, puede usar la ventana **Herramientas de diagnóstico** para analizar la CPU y el uso de memoria, y puede ver los eventos que muestran información relacionada con el rendimiento.
 
-![Vista de Resumen de Herramientas de diagnóstico](../profiling/media/prof-tour-cpu-and-memory-graph.gif "Resumen de Herramientas de diagnóstico")
+![Vista de resumen de Herramientas de diagnóstico](../profiling/media/prof-tour-cpu-and-memory-graph.gif "Resumen de Herramientas de diagnóstico")
 
 La ventana **Herramientas de diagnóstico** suele ser la mejor manera de generar perfiles de aplicaciones, pero en el caso de las compilaciones de versión, también puede hacer un análisis posterior de la aplicación. Para más información sobre los diferentes enfoques, vea [Running Profiling Tools With or Without the Debugger](../profiling/running-profiling-tools-with-or-without-the-debugger.md) (Ejecutar herramientas de generación de perfiles con o sin el depurador). Para ver la compatibilidad de la herramienta de generación de perfiles con los diferentes tipos de aplicaciones, consulte [¿Qué herramienta debo usar?](#which-tool-should-i-use)
 
@@ -42,17 +42,17 @@ La herramienta Uso de CPU es un buen lugar para empezar a analizar el rendimient
 
 En la vista **Resumen** de Herramientas de diagnóstico, seleccione **Habilitar generación de perfiles de CPU** (debe estar en una sesión de depuración).
 
-![Habilitar el uso de CPU en las Herramientas de diagnóstico](../profiling/media/prof-tour-enable-cpu-profiling.png "Habilitar uso de CPU en Herramientas de diagnóstico")
+![Habilitar el uso de CPU en Herramientas de diagnóstico](../profiling/media/prof-tour-enable-cpu-profiling.png "Habilitar el uso de CPU en Herramientas de diagnóstico")
 
 Para usar la herramienta de la forma más eficaz posible, establezca dos puntos de interrupción en el código, uno al principio y otro al final de la función o la región de código que quiere analizar. Examine los datos de generación de perfiles cuando se haya detenido en el segundo punto de interrupción.
 
 La vista **Uso de CPU** muestra una lista de funciones ordenadas por la ejecución más larga, con la función más larga que se está ejecutando en la parte superior. Esto le ayudará a detectar las funciones en las que se producen cuellos de botella de rendimiento.
 
-![Vista de Uso de CPU de Herramientas de diagnóstico](../profiling/media/prof-tour-cpu-usage.png "Uso de CPU de Herramientas de diagnóstico")
+![Vista Uso de CPU de Herramientas de diagnóstico](../profiling/media/prof-tour-cpu-usage.png "Uso de CPU de Herramientas de diagnóstico")
 
 Si hace doble clic en una función que le interese, verá una vista de "mariposa" de tres paneles más detallada, con la función seleccionada en el centro de la ventana, la función de llamada a la izquierda y las funciones llamadas a la derecha. En la sección **Cuerpo de la función** se muestra la cantidad total de tiempo (y el porcentaje de tiempo) empleado en el cuerpo de la función, excluido el tiempo invertido en las funciones de llamada y las funciones llamadas. Estos datos pueden ayudarle a evaluar si la función en sí es un cuello de botella de rendimiento.
 
-![Vista de "mariposa" de llamador y destinatario de Herramientas de diagnóstico](../profiling/media/prof-tour-cpu-usage-caller-callee.png "Vista de llamador y destinatario de Herramientas de diagnóstico")
+![Vista de "mariposa" Llamador y destinatario en Herramientas de diagnóstico](../profiling/media/prof-tour-cpu-usage-caller-callee.png "Vista Llamador y destinatario de Herramientas de diagnóstico")
 
 ## <a name="analyze-memory-usage"></a>Analizar el uso de memoria
 
@@ -60,11 +60,11 @@ La ventana **Herramientas de diagnóstico** permite evaluar el uso de memoria en
 
 Para analizar el uso de memoria, debe tomar al menos una instantánea de memoria durante la depuración. A menudo, la mejor manera de analizar la memoria consiste en tomar dos instantáneas: la primera justo antes de que se produzca un problema que sospecha que existe en la memoria y la segunda después de que se produzca el problema en cuestión. Después, puede ver las diferencias que existen entre las dos instantáneas y constatar qué es lo que ha cambiado exactamente.
 
-![Tomar una instantánea de las Herramientas de diagnóstico](../profiling/media/prof-tour-take-snapshots.gif "Tomar instantáneas de Herramientas de diagnóstico")
+![Toma de una instantánea en Herramientas de diagnóstico](../profiling/media/prof-tour-take-snapshots.gif "Tomar instantáneas en Herramientas de diagnóstico")
 
-Al seleccionar uno de los vínculos de flecha, aparece una vista diferencial del montón. Una flecha roja hacia arriba ![Aumento en el uso de memoria](../profiling/media/prof-tour-mem-usage-up-arrow.png "Aumento en el uso de memoria") muestra un número de objetos creciente (izquierda) o un tamaño de montón creciente (derecha). Si hace clic en el vínculo de la derecha, obtendrá una vista diferencial del montón ordenada por los objetos que más han aumentado en el tamaño del montón. Esto puede ayudarle a identificar problemas de memoria. Por ejemplo, en la ilustración siguiente, los bytes usados por los objetos `ClassHandlersStore` han aumentado 3,492 bytes en la segunda instantánea.
+Al seleccionar uno de los vínculos de flecha, aparece una vista diferencial del montón (una flecha hacia arriba de color rojo ![Aumento en el uso de memoria](../profiling/media/prof-tour-mem-usage-up-arrow.png "Aumento del uso de memoria") muestra un número de objetos creciente (izquierda) o un tamaño de montón creciente (derecha)). Si hace clic en el vínculo de la derecha, obtendrá una vista diferencial del montón ordenada por los objetos que más han aumentado en el tamaño del montón. Esto puede ayudarle a identificar problemas de memoria. Por ejemplo, en la ilustración siguiente, los bytes usados por los objetos `ClassHandlersStore` han aumentado 3,492 bytes en la segunda instantánea.
 
-![Vista de diferencia de montón en Herramientas de diagnóstico](../profiling/media/prof-tour-mem-usage-diff-heap.png "Vista de diferencia de montón en Herramientas de diagnóstico")
+![Vista de diferencias del montón en Herramientas de diagnóstico](../profiling/media/prof-tour-mem-usage-diff-heap.png "Vista de diferencias del montón en Herramientas de diagnóstico")
 
 En cambio, si hace clic en el vínculo de la izquierda en la vista **Uso de memoria**, la vista del montón se organiza por número de objetos y se muestran los objetos de un tipo determinado que más han aumentado en número en la parte superior (ordenados por la columna **Dif. de recuento**).
 
@@ -72,20 +72,20 @@ En cambio, si hace clic en el vínculo de la izquierda en la vista **Uso de memo
 
 La vista **Eventos** de Herramientas de diagnóstico muestra diversos eventos que se producen durante la depuración, como la configuración de un punto de interrupción o una operación de ejecución paso a paso de código. Puede comprobar información como la duración del evento, medida desde el momento en que el depurador se ha detenido por última vez o desde que se ha iniciado la aplicación. Por ejemplo, si recorre paso a paso el código (F10, F11), en la vista **Eventos** se muestra la duración en tiempo de ejecución de la aplicación desde la operación del paso anterior hasta el paso actual.
 
-![Ver eventos de Herramientas de diagnóstico](../profiling/media/prof-tour-events.png "Ver eventos de Herramientas de diagnóstico")
+![Vista de eventos en Herramientas de diagnóstico](../profiling/media/prof-tour-events.png "Vista de eventos en Herramientas de diagnóstico")
 
  > [!NOTE]
  > Si tiene Visual Studio Enterprise, también puede ver [Eventos de IntelliTrace](../debugger/intellitrace.md) en esta pestaña.
 
 En el editor de código también se muestran los mismos eventos, que puede ver como sugerencias de rendimiento.
 
-![Sugerencias de rendimiento en la guía de generación de perfiles](../profiling/media/prof-tour-perf-tips.png "Sugerencias de rendimiento en la guía de generación de perfiles")
+![Sugerencias de rendimiento en Paseo por la generación de perfiles](../profiling/media/prof-tour-perf-tips.png "Sugerencias de rendimiento en Paseo por la generación de perfiles")
 
 ## <a name="examine-ui-performance-and-accessibility-events-uwp"></a>Examinar eventos de accesibilidad y rendimiento de la interfaz de usuario (UWP)
 
 En las aplicaciones de UWP, puede habilitar **Análisis de UI** en la ventana **Herramientas de diagnóstico**. La herramienta busca problemas comunes de rendimiento o de accesibilidad y los muestra en la vista **Eventos** durante la depuración. Las descripciones de los eventos proporcionan información que puede ayudar a resolver problemas.
 
-![Ver eventos de análisis de UI en las herramientas de diagnóstico](../profiling/media/prof-tour-ui-analysis.png "Ver eventos de Análisis de UI de Herramientas de diagnóstico")
+![Vista de eventos de análisis de la interfaz de usuario en las herramientas de diagnóstico](../profiling/media/prof-tour-ui-analysis.png "Vista de eventos de análisis de la interfaz de usuario en Herramientas de diagnóstico")
 
 ## <a name="post_mortem"></a> Generar perfiles de compilaciones de versión sin el depurador
 
@@ -103,7 +103,7 @@ En las aplicaciones XAML (como las aplicaciones de WPF de escritorio de Windows 
 
 Los valores de framerate bajos en el gráfico **Rendimiento visual** podrían corresponderse con los problemas visuales que ve cuando se ejecuta la aplicación. De forma similar, los números elevados en el gráfico **Uso del subproceso de UI** podrían corresponderse con problemas en la capacidad de respuesta de la interfaz de usuario. En el informe, puede seleccionar un período de tiempo en el que sospecha que se produce un problema de rendimiento y, después, examinar las actividades detalladas del subproceso de interfaz de usuario en la vista Detalles de la escala de tiempo (panel inferior).
 
-![Herramienta de generación de perfiles en la Escala de tiempo de la aplicación](../profiling/media/prof-tour-application-timeline.gif "Escala de tiempo de la aplicación en la guía de generación de perfiles")
+![Herramienta de generación de perfiles de Escala de tiempo de la aplicación](../profiling/media/prof-tour-application-timeline.gif "Escala de tiempo de la aplicación en Paseo por la generación de perfiles")
 
 En la vista Detalles de la escala de tiempo, encontrará información como el tipo de actividad (o el elemento de la interfaz de usuario implicado) junto con la duración de la actividad. Por ejemplo, en la ilustración, un evento de **Diseño** para un control de cuadrícula tarda 57,53 ms.
 
@@ -111,11 +111,11 @@ Para obtener más información, vea [Application Timeline](../profiling/applicat
 
 ## <a name="analyze-gpu-usage-direct3d"></a>Análisis del uso de la GPU (Direct3D)
 
-En las aplicaciones Direct3D (los componentes Direct3D deben estar en C++), puede examinar la actividad de la GPU y analizar problemas de rendimiento. Para obtener más información, vea [GPU Usage](../debugger/gpu-usage.md) (Uso de GPU). Para usar la herramienta, seleccione **Uso de GPU** en el Generador de perfiles de rendimiento y, después, elija **Iniciar**. En la aplicación, recorra el escenario del que le interesa generar un perfil y, después, seleccione **Detener recolección** para generar un informe.
+En las aplicaciones Direct3D (los componentes Direct3D deben estar en C++), puede examinar la actividad de la GPU y analizar problemas de rendimiento. Para obtener más información, vea [GPU Usage](/visualstudio/debugger/graphics/gpu-usage) (Uso de GPU). Para usar la herramienta, seleccione **Uso de GPU** en el Generador de perfiles de rendimiento y, después, elija **Iniciar**. En la aplicación, recorra el escenario del que le interesa generar un perfil y, después, seleccione **Detener recolección** para generar un informe.
 
 Si elige un período de tiempo en los gráficos y selecciona **Ver detalles**, aparece una vista detallada en el panel inferior. En la vista detallada, puede examinar cuántas actividades se producen en cada CPU y GPU. Seleccione los eventos en el panel inferior para que aparezcan elementos emergentes en la escala de tiempo. Por ejemplo, seleccione el evento **Presente** para ver elementos emergentes de llamada **Presente**. (Las líneas de sincronización vertical de color gris claro se pueden usar como referencia para entender si alguna llamada **Presente** se ha perdido la sincronización vertical. Debe haber una llamada **Presente** entre cada dos sincronizaciones verticales para que la aplicación alcance constantemente los 60 FPS).
 
-![Herramienta de generación de perfiles de uso de GPU](../profiling/media/prof-tour-gpu-usage.png "Diagnóstico de uso de GPU")
+![Herramienta de generación de perfiles de uso de GPU](../profiling/media/prof-tour-gpu-usage.png "Diagrama de uso de GPU")
 
 También puede usar los gráficos para determinar si hay cuellos de botella de rendimiento relacionados con la CPU o con la GPU.
 
@@ -126,40 +126,55 @@ En el caso de las aplicaciones UWP, puede usar la herramienta Memoria de JavaScr
 
 La herramienta Memoria de JavaScript es similar a la herramienta Uso de memoria disponible para otros tipos de aplicaciones. Puede usar esta herramienta para entender el uso de memoria y buscar fugas de memoria en la aplicación. Para obtener más información sobre la herramienta, vea [JavaScript Memory](../profiling/javascript-memory.md) (Memoria de JavaScript).
 
-![Herramienta de generación de perfiles de Memoria de JavaScript](../profiling/media/diagjsmemory.png "Diagnóstico de Memoria de JavaScript")
+![Herramienta de generación de perfiles de Memoria de JavaScript](../profiling/media/diagjsmemory.png "DiagJSMemory")
 
 Para diagnosticar la capacidad de respuesta de la interfaz de usuario, el tiempo de carga lento y las actualizaciones visuales lentas en aplicaciones UWP, use la herramienta Capacidad de respuesta de la IU HTML. El uso es similar al de la herramienta Escala de tiempo de la aplicación para otros tipos de aplicaciones. Para obtener más información, vea [HTML UI responsiveness](../profiling/html-ui-responsiveness.md) (Capacidad de respuesta de IU HTML).
 
-![Herramienta de generación de perfiles de respuesta de UI de HTML](../profiling/media/diaghtmlresp.png "Diagnóstico de respuesta de HTML")
+![Herramienta de generación de perfiles de Respuesta de IU de HTML](../profiling/media/diaghtmlresp.png "DiagHTMLResp")
 ::: moniker-end
 
+::: moniker range="vs-2017"
 ## <a name="analyze-network-usage-uwp"></a>Análisis del uso de la red (UWP)
 
 En las aplicaciones UWP, puede analizar las operaciones de red realizadas mediante la API `Windows.Web.Http`. Esta herramienta puede ayudarle a resolver cuestiones como problemas de acceso y autenticación, uso incorrecto de la caché y rendimiento deficiente de visualización y descarga. Para usar la herramienta, seleccione **Red** en el Generador de perfiles de rendimiento y, después, elija **Iniciar**. En la aplicación, recorra el escenario que use `Windows.Web.Http` y, después, seleccione **Detener recolección** para generar el informe.
 
-![Herramienta de generación de perfiles de Uso de red](../profiling/media/prof-tour-network-usage.png "Diagnóstico de Uso de red")
+![Herramienta de generación de perfiles de uso de red](../profiling/media/prof-tour-network-usage.png "Diagrama de Uso de red")
 
 Seleccione una operación en la vista de resumen para ver más detalles.
 
-![Información detallada en la herramienta de Uso de red](../profiling/media/prof-tour-network-usage-details.png "Detalles del diagnóstico de Uso de red")
+![Información detallada en la herramienta Uso de red](../profiling/media/prof-tour-network-usage-details.png "Diagrama de Detalles de uso de la red")
 
 Para obtener más información, vea [Network Usage](../profiling/network-usage.md) (Uso de red).
+::: moniker-end
 
 ## <a name="analyze-performance-legacy-tools"></a>Análisis de rendimiento (herramientas heredadas)
 
 Si necesita características que no están actualmente presentes en las herramientas Uso de CPU o Uso de memoria, como la instrumentación, y ejecuta aplicaciones ASP.NET o de escritorio, puede usar el Explorador de rendimiento para la generación de perfiles. (No se admite en aplicaciones UWP). Para más información, vea [Explorador de rendimiento](../profiling/performance-explorer.md).
 
-![Herramienta de Explorador de rendimiento](../profiling/media/prof-tour-performance-explorer.png "Explorador de rendimiento")
+![Herramienta Explorador de rendimiento](../profiling/media/prof-tour-performance-explorer.png "Explorador de rendimiento")
 
 ## <a name="which-tool-should-i-use"></a>¿Qué herramienta debo usar?
 
 En esta tabla se muestra una lista de las distintas herramientas que ofrece Visual Studio y los tipos de proyecto con los que las puede usar:
 
+::: moniker range=">=vs-2019"
 |Herramienta de rendimiento|Escritorio de Windows|UWP|ASP.NET/ASP.NET Core|
 |----------------------|---------------------|-------------|-------------|
 |[Uso de CPU](../profiling/cpu-usage.md)|sí|sí|sí|
 |[Uso de memoria](../profiling/memory-usage.md)|sí|sí|sí|
-|[Uso de GPU](../debugger/gpu-usage.md)|sí|sí|no|
+|[Uso de GPU](/visualstudio/debugger/graphics/gpu-usage)|sí|sí|no|
+|[Escala de tiempo de la aplicación](../profiling/application-timeline.md)|sí|sí|No|
+|[Sugerencias de rendimiento](../profiling/perftips.md)|sí|sí para XAML, no para HTML|sí|
+|[Explorador de rendimiento](../profiling/performance-explorer.md)|sí|No|sí|
+|[IntelliTrace](../debugger/intellitrace.md)|Solo .NET con Visual Studio Enterprise|Solo .NET con Visual Studio Enterprise|Solo .NET con Visual Studio Enterprise|
+::: moniker-end
+
+::: moniker range="vs-2017"
+|Herramienta de rendimiento|Escritorio de Windows|UWP|ASP.NET/ASP.NET Core|
+|----------------------|---------------------|-------------|-------------|
+|[Uso de CPU](../profiling/cpu-usage.md)|sí|sí|sí|
+|[Uso de memoria](../profiling/memory-usage.md)|sí|sí|sí|
+|[Uso de GPU](/visualstudio/debugger/graphics/gpu-usage)|sí|sí|no|
 |[Escala de tiempo de la aplicación](../profiling/application-timeline.md)|sí|sí|No|
 |[Sugerencias de rendimiento](../profiling/perftips.md)|sí|sí para XAML, no para HTML|sí|
 |[Explorador de rendimiento](../profiling/performance-explorer.md)|sí|No|sí|
@@ -167,6 +182,8 @@ En esta tabla se muestra una lista de las distintas herramientas que ofrece Visu
 |[Uso de red](../profiling/network-usage.md)|No|sí|No|
 |[HTML UI responsiveness](../profiling/html-ui-responsiveness.md)|No|sí para HTML, no para XAML|No|
 |[Memoria de JavaScript](../profiling/javascript-memory.md)|No|sí para HTML, no para XAML|No|
+::: moniker-end
+
 
 ## <a name="see-also"></a>Vea también
-- [Depurar en Visual Studio](/visualstudio/debugger/debugger-feature-tour)
+- [Depurar en Visual Studio](../debugger/debugger-feature-tour.md)

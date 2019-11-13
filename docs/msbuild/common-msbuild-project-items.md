@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1271752a32a2f42eca93ae3f6861a923a6055cd2
-ms.sourcegitcommit: 5694c5236fa32ba7f5bc1236a853f725ec7557e9
+ms.openlocfilehash: cb759ba9571e16d0030f1fd6baf6d4feb03efb2e
+ms.sourcegitcommit: 510529f2f86a9897ed5767973e60c99c0d3a77a6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "68681275"
+ms.lasthandoff: 11/12/2019
+ms.locfileid: "73956144"
 ---
 # <a name="common-msbuild-project-items"></a>Elementos comunes de proyectos de MSBuild
 En [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)], un elemento es una referencia con nombre a uno o varios archivos. Los elementos contienen metadatos como nombres de archivo, rutas de acceso y números de versión. Todos los tipos de proyecto de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] tienen varios elementos en común. Estos elementos se definen en el archivo *Microsoft.Build.CommonTypes.xsd*.
@@ -34,7 +34,7 @@ En [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.m
 |Nombre de metadatos de elementos|DESCRIPCIÓN|
 |---------------|-----------------|
 |HintPath|Cadena opcional. Ruta de acceso absoluta o relativa del ensamblado.|
-|nombre|Cadena opcional. Nombre para mostrar del ensamblado, por ejemplo, "System.Windows.Forms".|
+|Name|Cadena opcional. Nombre para mostrar del ensamblado, por ejemplo, "System.Windows.Forms".|
 |FusionName|Cadena opcional. Especifica el nombre de fusión sencillo o seguro del elemento.<br /><br /> Cuando este atributo está presente se ahorra tiempo, ya que no es necesario abrir el archivo de ensamblado para obtener el nombre de fusión.|
 |SpecificVersion|Booleano opcional. Especifica si solo se debe hacer referencia a la versión del nombre de fusión.|
 |Alias|Cadena opcional. Cualquier alias de la referencia.|
@@ -45,7 +45,7 @@ En [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.m
 
 |Nombre de metadatos de elementos|DESCRIPCIÓN|
 |---------------|-----------------|
-|nombre|Cadena opcional. El nombre para mostrar del componente.|
+|Name|Cadena opcional. El nombre para mostrar del componente.|
 |GUID|Cadena necesaria. GUID del componente, con el formato {12345678-1234-1234-1234-1234567891234}.|
 |VersionMajor|Cadena necesaria. Parte principal del número de versión del componente. Por ejemplo, "5" si el número de versión completo es "5.46".|
 |VersionMinor|Cadena necesaria. Parte secundaria del número de versión del componente. Por ejemplo, "46" si el número de versión completo es "5.46".|
@@ -65,7 +65,7 @@ En [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.m
 
 |Nombre de metadatos de elementos|DESCRIPCIÓN|
 |---------------|-----------------|
-|nombre|Cadena necesaria. Nombre base del archivo de manifiesto.|
+|Name|Cadena necesaria. Nombre base del archivo de manifiesto.|
 |HintPath|Cadena necesaria. Ruta de acceso relativa del archivo de manifiesto.|
 
 ### <a name="projectreference"></a>ProjectReference
@@ -73,7 +73,7 @@ En [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.m
 
 |Nombre de metadatos de elementos|DESCRIPCIÓN|
 |---------------|-----------------|
-|nombre|Cadena opcional. Nombre para mostrar de la referencia.|
+|Name|Cadena opcional. Nombre para mostrar de la referencia.|
 |Proyecto|Cadena opcional. GUID de la referencia, con el formato {12345678-1234-1234-1234-1234567891234}.|
 |Package|Cadena opcional. Ruta de acceso del archivo de proyecto al que se hace referencia.|
 |ReferenceOutputAssembly|Booleano opcional. Si se establece en `false`, no incluye la salida del proyecto al que se hace referencia como una [Referencia](#reference) de este proyecto, pero garantiza que el otro proyecto realice compilaciones antes que este. Tiene como valor predeterminado `true`.|
@@ -130,6 +130,17 @@ En [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.m
 | Link | Cadena opcional. Ruta de acceso notacional que se mostrará si el archivo se encuentra físicamente fuera de la influencia del proyecto. |
 | Visible | Booleano opcional. Indica si se va a mostrar el archivo en el **Explorador de soluciones** de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. |
 | CopyToOutputDirectory | Cadena opcional. Determina si el archivo se va a copiar en el directorio de resultados. Los valores son:<br /><br /> 1.  Nunca<br />2.  Siempre<br />3.  PreserveNewest |
+
+### <a name="assemblymetadata"></a>AssemblyMetadata
+ Representa los atributos de ensamblado que se van a generar como `[AssemblyMetadata(key, value)]`.
+
+| Nombre de metadatos de elementos | DESCRIPCIÓN |
+|-----------------------| - |
+| Incluir | Se convierte en el primer parámetro (la clave) del constructor de atributo `AssemblyMetadataAttribute`. |
+| Valor | Cadena necesaria. Se convierte en el segundo parámetro (el valor) del constructor de atributo `AssemblyMetadataAttribute`. |
+
+> [!NOTE]
+> Esto solo se aplica a los proyectos que usan el SDK de .NET Core.
 
 ### <a name="baseapplicationmanifest"></a>BaseApplicationManifest
  Representa el manifiesto de aplicación base de la compilación y contiene información de seguridad de implementación de [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)].

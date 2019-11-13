@@ -6,16 +6,19 @@ manager: lank
 ms.date: 08/02/2019
 ms.topic: conceptual
 description: Obtenga información sobre la ventaja de Office 365 que se incluye en algunas suscripciones de Visual Studio.
-ms.openlocfilehash: 65a071cbfcdc31ca2ef8a36ac5a779fc99467c17
-ms.sourcegitcommit: bcdab788085bd9931d73883fe70cd5831317dca2
+ms.openlocfilehash: 58bfed3de99e3a3fa0a46e084ea566ae0451c47f
+ms.sourcegitcommit: bdccab4c2dbd50ea8adaaf88c69c9ca32db88099
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "72816465"
+ms.lasthandoff: 10/30/2019
+ms.locfileid: "73144706"
 ---
 # <a name="office-365-proplus-in-visual-studio-subscriptions"></a>Office 365 ProPlus en suscripciones de Visual Studio
 
 Cree su mejor obra. Trabaje en cualquier parte con aplicaciones siempre actualizadas. Office 365 ProPlus es una suscripción que se incluye con aplicaciones premium como Word, Excel, PowerPoint, OneNote, Outlook, Publisher y Access (Publisher y Access solo están disponibles para equipos PC). Las aplicaciones se pueden instalar en varios dispositivos, como equipos PC, Mac, iPad, iPhone, tabletas Android y teléfonos Android. Con una suscripción, obtiene las versiones más recientes de las aplicaciones y recibe, de manera automática, actualizaciones cuando se producen.
+
+> [!NOTE]
+> La suscripción a Visual Studio le da derecho a utilizar Office 365 para su uso en producción.  
 
 ## <a name="getting-started-with-office-365-proplus"></a>Introducción a Office 365 ProPlus
 
@@ -42,10 +45,6 @@ Siga estos pasos para descargar y activar Office 365 ProPlus:
    > ![Escriba la clave del producto de Office 365](_img/vs-office365/vs-office365-enter-key.png)
 0. Vuelva a hacer clic en **Siguiente**.
 0. Haga clic en **Instalar** para instalar las aplicaciones de Office.
-
-## <a name="next-steps"></a>Pasos siguientes
-
-Si planea desarrollar aplicaciones para Office, querrá activar su [suscripción de Office Developer](vs-office-dev.md)
 
 ## <a name="eligibility"></a>Elegibilidad
 
@@ -75,4 +74,4 @@ Si planea desarrollar aplicaciones para Office, querrá activar su [suscripción
 Asegúrese de activar estas ventajas excelentes para aprovechar al máximo su suscripción de Visual Studio:
 - [Visual Studio](vs-ide-benefit.md)
 - [Azure DevOps](vs-azure-devops.md)
-- [Crédito individual de Azure DevTest](vs-azure.md)
+- [Crédito individual de Azure DevTest](vs-azure.md) Si planea desarrollar aplicaciones para Office, querrá activar la [suscripción de Office Developer](vs-office-dev.md)

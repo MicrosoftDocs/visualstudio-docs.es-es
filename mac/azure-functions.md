@@ -6,12 +6,12 @@ ms.author: sayedha
 ms.date: 04/02/2019
 ms.technology: vs-ide-install
 ms.assetid: 25CD47A4-5B32-4734-8EF3-E24A02AABF29
-ms.openlocfilehash: 493e03ecd2a10d7cd9e81467d5886f863cd7229b
-ms.sourcegitcommit: 978df2feb5e64228d2e3dd430b299a5c234cda17
+ms.openlocfilehash: dac6a1c53cea8982a75c7b12661c98f2feb37f83
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/24/2019
-ms.locfileid: "72888594"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73189658"
 ---
 # <a name="introduction-to-azure-functions"></a>Introducción a Azure Functions
 
@@ -21,7 +21,7 @@ Azure Functions es una manera de crear y ejecutar fragmentos de código orientad
 
 Las herramientas de Azure Functions se incluyen en **Visual Studio para Mac 7.5** y versiones posteriores.
 
-Para crear e implementar funciones también necesita una suscripción de Azure, que está disponible de forma gratuita en [https://azure.com/free](https://azure.com/free).
+Para crear e implementar funciones también necesita una suscripción de Azure. Si no tiene una cuenta de Azure, puede suscribirse hoy mismo de forma gratuita y recibir 12 meses de servicios gratuitos, 200 USD de crédito gratuito y de más de 25 servicios gratuitos para siempre -> [https://azure.com/free](https://azure.com/free/dotnet).
 
 ## <a name="creating-your-first-azure-functions-project"></a>Crear su primer proyecto de Azure Functions
 

@@ -17,12 +17,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: ac150e20b505a5ef4446e77761790a6111fb6c10
-ms.sourcegitcommit: 9c07ae6fb18204ea080c8248994a683fa12e5c82
+ms.openlocfilehash: 12b8f29f80f80a4322dc6a4cf43061696db6f370
+ms.sourcegitcommit: 4b911e768601992ad42dd5911dc6a01e1fe48588
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/04/2019
-ms.locfileid: "70293509"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "73413561"
 ---
 # <a name="install-and-use-visual-studio-and-azure-services-behind-a-firewall-or-proxy-server"></a>Instalación y uso de Visual Studio y de servicios de Azure detrás de un firewall o servidor proxy
 
@@ -51,6 +51,7 @@ Debido a que el Instalador de Visual Studio descarga archivos de varios dominios
 | download.microsoft.com | Configurar ubicación de descarga de los paquetes |
 | download.visualstudio.com | Configurar ubicación de descarga de los paquetes |
 | dl.xamarin.com | Configurar ubicación de descarga de los paquetes |
+| xamarin-downloads.azureedge.net | Ubicación de la lista de descarga de paquetes de Android SDK |
 | marketplace.visualstudio.com | Ubicación de descarga de las extensiones de Visual Studio |
 | visualstudio.microsoft.com | Ubicación de la documentación |
 | docs.microsoft.com | Ubicación de la documentación |

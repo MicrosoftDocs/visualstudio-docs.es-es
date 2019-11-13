@@ -1,7 +1,7 @@
 ---
 title: Solución de problemas de errores de proxy o de red
 description: Busque soluciones para los errores relacionados con la red o con el proxy que puede experimentar al instalar o usar Visual Studio detrás de un firewall o un servidor proxy.
-ms.date: 05/22/2019
+ms.date: 10/29/2019
 ms.topic: troubleshooting
 helpviewer_keywords:
 - network installation, Visual Studio
@@ -17,12 +17,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 7879efca149c31fbe3114b0ddfcba2f2a347f5e6
-ms.sourcegitcommit: 2db01751deeee7b2bdb1db25419ea6706e6fcdf8
+ms.openlocfilehash: fbdacb265d39c9aff96fed37c69c684aa3f8503b
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/17/2019
-ms.locfileid: "71062786"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73189465"
 ---
 # <a name="troubleshoot-network-related-errors-when-you-install-or-use-visual-studio"></a>Solución de problemas de errores relacionados con la red al instalar o usar Visual Studio
 
@@ -132,6 +132,19 @@ Habilite las conexiones para las direcciones URL siguientes:
 
   > [!NOTE]
   > Es posible que las direcciones URL de servidores NuGet privados no se incluyan en la lista. Puede buscar los servidores NuGet que se utilizan en %APPData%\Nuget\NuGet.Config.
+
+## <a name="error-failed-to-parse-id-from-parent-process"></a>Error: "No se pudo analizar el identificador de un proceso primario"
+
+Es posible que encuentre este mensaje de error al usar un programa previo de Visual Studio y un archivo response.json en una unidad de red. El origen del error es el control de cuentas de usuario (UAC) de Windows.
+
+Este error se puede producir por este motivo: una unidad de red asignada o un recurso compartido de [UNC](/dotnet/standard/io/file-patch-formats#unc-paths) está vinculado al token de acceso de un usuario. Cuando se habilita UAC, se crean dos [tokens de acceso](/windows/win32/secauthz/access-tokens) de usuario: uno *con* acceso de administrador y otro *sin* acceso de administrador. Cuando se crea la unidad de red o el recurso compartido, el token de acceso actual del usuario está vinculado a él. Como el programa previo se debe ejecutar como administrador, no podrá acceder a la unidad de red o al recurso compartido si la unidad o el recurso compartido no están vinculados a un token de acceso de usuario con acceso de administrador.
+
+### <a name="to-fix-this-error"></a>Para corregir este error
+
+Puede usar el comando `net use` o cambiar la configuración de directiva de grupo de UAC. Para más información sobre estas soluciones alternativas y cómo implementarlas, vea los siguientes artículos de soporte técnico de Microsoft:
+
+* [Las unidades asignadas no están disponibles desde un símbolo del sistema con privilegios elevados si UAC está configurado para "Solicitar credenciales" en Windows](https://support.microsoft.com/help/3035277/mapped-drives-are-not-available-from-an-elevated-prompt-when-uac-is-co)
+* [Es posible que los programas no puedan acceder a algunas ubicaciones de red después de activar el Control de cuentas de usuario en sistemas operativos Windows](https://support.microsoft.com/en-us/help/937624/programs-may-be-unable-to-access-some-network-locations-after-you-turn)
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 

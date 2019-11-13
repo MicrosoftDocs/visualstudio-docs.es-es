@@ -20,12 +20,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: d210dba035c53ba5574bb470247db8b6714a5c97
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: cfbc0dcecbf9b30afdfb268117e34c2fcfc0341e
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67826097"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73189385"
 ---
 # <a name="analyze-javascript-memory-usage-in-uwp-apps"></a>Análisis del uso de memoria de JavaScript en aplicaciones de UWP
 El analizador de memoria de JavaScript está disponible en Visual Studio para ayudarle a entender el uso de memoria y a localizar fugas de memoria en las aplicaciones para UWP creadas para Windows con JavaScript. Las aplicaciones compatibles comprenden las aplicaciones universales de Windows.
@@ -99,7 +99,7 @@ El analizador de memoria de JavaScript está disponible en Visual Studio para ay
 - [Ver una diferencia de instantánea](#view-a-snapshot-diff). Muestra valores diferenciales entre las instantáneas. Estas vistas muestran diferencias respecto al tamaño del objeto y los recuentos de objetos.
 
 ## <a name="isolate-a-memory-leak"></a>Isolate a memory leak
- Estos pasos proporcionan un flujo de trabajo que puede ayudarte a usar el analizador de memoria de JavaScript de forma más eficaz. Estos pasos pueden resultar útiles si sospechas que tu aplicación tiene una pérdida de memoria. Para obtener un tutorial que le guíe a lo largo del proceso de identificación de una fuga de memoria en una aplicación en funcionamiento, vea [Tutorial: Buscar una fuga de memoria (JavaScript)](../profiling/walkthrough-find-a-memory-leak-javascript.md).
+ Estos pasos proporcionan un flujo de trabajo que puede ayudarte a usar el analizador de memoria de JavaScript de forma más eficaz. Estos pasos pueden resultar útiles si sospechas que tu aplicación tiene una pérdida de memoria. Para obtener un tutorial que le guíe a lo largo del proceso de identificación de una fuga de memoria en una aplicación en funcionamiento, vea [Tutorial: Buscar una fuga de memoria (JavaScript)](javascript-memory.md).
 
 1. Abre la aplicación en Visual Studio.
 
@@ -208,7 +208,7 @@ El analizador de memoria de JavaScript está disponible en Visual Studio para ay
 
  En esta ilustración se muestra la vista Tipos en un detalle de instantánea, con los datos de uso de memoria ordenados por tamaño retenido.
 
- ![Vista de detalles de instantánea que muestra posibles problemas](../profiling/media/js_mem_snapshot_details.png "JS_Mem_Snapshot_Details")
+ ![Vista de detalles de instantánea con posibles problemas](../profiling/media/js_mem_snapshot_details.png "JS_Mem_Snapshot_Details")
 
  En la vista de detalles de instantánea, puedes revisar los datos de uso de memoria por tipo, raíz o dominador mediante la elección de una opción de la barra de herramientas:
 
@@ -272,7 +272,7 @@ El analizador de memoria de JavaScript está disponible en Visual Studio para ay
 ## <a name="view-objects-by-dominator"></a>Ver objetos por dominador
  En las vistas Tipos y Dominadores, puede elegir si quiere ver los objetos incluidos en los dominadores (esta es la vista predeterminada en la pestaña **Dominadores**). Al seleccionar esta vista, solo se muestran los dominadores en la vista de nivel superior de los objetos. (Los objetos que son descendientes de objetos no globales se ocultan en la vista de nivel superior). Para algunas aplicaciones, esto puede aclarar qué objetos causan una pérdida de memoria mediante la reducción del ruido en los datos.
 
- Para alternar la vista de los objetos por dominador, elija el botón **Incluir objetos por dominador** . ![Doblar objetos en los dominadores](../profiling/media/js_mem_fold_objects.png "JS_Mem_Fold_Objects")
+ Para alternar la vista de los objetos por dominador, elija el botón **Incluir objetos por dominador** . ![Incorporación de objetos en sus dominadores](../profiling/media/js_mem_fold_objects.png "JS_Mem_Fold_Objects")
 
  Para obtener más información sobre los dominadores, consulte [Ver detalles de la instantánea](#view-snapshot-details).
 
@@ -343,7 +343,7 @@ if (performance && performance.mark) {
 
  A continuación se incluye un gráfico de memoria con varias marcas de usuario e información sobre herramientas para la marca de usuario seleccionada, para la que el argumento de cadena `performance.mark` está establecido en "datos generados":
 
- ![Mediante una marca de perfil](../profiling/media/js_mem_performance_marks.png "JS_Mem_Performance_Marks")
+ ![Uso de una marca de perfil](../profiling/media/js_mem_performance_marks.png "JS_Mem_Performance_Marks")
 
 ## <a name="tips-to-identify-memory-issues"></a>Sugerencias para identificar problemas de memoria
 
@@ -359,7 +359,7 @@ if (performance && performance.mark) {
 
   - Algunos objetos pueden proporcionar un método `dispose` y recomendaciones de uso. Por ejemplo, debería llamar a `dispose` en [WinJS.Binding.List](/previous-versions/windows/apps/hh700774\(v\=win.10\)) si llama al método `createFiltered` de la lista y luego sale de una página.
 
-  - Podrías tener que quitar uno o varios agentes de escucha de eventos. Para obtener más información, consulta [View DOM event listeners](/visualstudio/debugger/quickstart-debug-html-and-css).
+  - Podrías tener que quitar uno o varios agentes de escucha de eventos. Para obtener más información, consulta [View DOM event listeners](../debugger/quickstart-debug-html-and-css.md).
 
 - Mira la última parte de [este vídeo](https://channel9.msdn.com/Events/Build/2013/3-316) de la conferencia Build 2013 sobre el analizador de memoria de JavaScript.
 
