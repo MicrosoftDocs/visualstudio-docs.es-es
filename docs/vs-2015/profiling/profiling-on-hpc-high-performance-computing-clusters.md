@@ -21,22 +21,22 @@ caps.latest.revision: 27
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: e14ce5ac1e0596947e69d20e14a3dc1e7ff4f1e5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: eeb5375d636ef16fde658b88dbf662cdd9f1e27d
+ms.sourcegitcommit: 3a19319e2599bd193fb2ca32020ca53942974bfd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62421113"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "73983805"
 ---
 # <a name="profiling-on-hpc-high-performance-computing-clusters"></a>Generar perfiles en clústeres HPC (Sistemas de alto rendimiento)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Puede generar perfiles en nodos de ejecución de clústeres de Microsoft Windows HPC usando el método de muestreo de las herramientas de generación de perfiles de [!INCLUDE[vsPreExt](../includes/vspreext-md.md)] o [!INCLUDE[vsUltExt](../includes/vsultext-md.md)]. Para obtener más información sobre HPC vea [Big Compute: HPC y Batch](https://azure.microsoft.com/solutions/big-compute/) en el sitio Web de Microsoft.  
+Puede generar perfiles en nodos de ejecución de clústeres de Microsoft Windows HPC usando el método de muestreo de las herramientas de generación de perfiles de [!INCLUDE[vsPreExt](../includes/vspreext-md.md)] o [!INCLUDE[vsUltExt](../includes/vsultext-md.md)]. Para obtener más información sobre HPC, consulte [Big Compute: hpc & batch](https://azure.microsoft.com/solutions/big-compute/) en el sitio web de Microsoft.  
   
 ## <a name="prerequisites"></a>Requisitos previos  
  Para generar perfiles en un nodo de ejecución HPC, debe hacer lo siguiente:  
   
-- Instalar Microsoft HPC Pack 2008 en el mismo equipo que [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)]. El equipo no tiene que formar parte del clúster HPC. Puede instalar HPC Pack en el [Centro de descarga de Microsoft](http://go.microsoft.com/fwlink/?LinkID=177414).  
+- Instalar Microsoft HPC Pack 2008 en el mismo equipo que [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)]. El equipo no tiene que formar parte del clúster HPC. Puede instalar HPC Pack en el [Centro de descarga de Microsoft](https://www.microsoft.com/download/details.aspx?id=2800).  
   
 - Instale el [!INCLUDE[net_v40_long](../includes/net-v40-long-md.md)] y la versión independiente de las herramientas de generación de perfiles en el nodo de ejecución HPC. Los programas de instalación para el [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] y el generador de perfiles independiente están disponibles en los medios de instalación de [!INCLUDE[vsPreShort](../includes/vspreshort-md.md)]. **Nota** Debe reiniciar el proceso después de haber instalado [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] y antes de instalar las herramientas de generación de perfiles.  
   
@@ -55,8 +55,8 @@ Puede generar perfiles en nodos de ejecución de clústeres de Microsoft Windows
 |||  
 |-|-|  
 |*%HeadNode%*|Nombre del nodo principal del clúster.|  
-|*%FxPath%*|Ruta de acceso al instalador de [!INCLUDE[net_v40_long](../includes/net-v40-long-md.md)]. En el [!INCLUDE[vsPreShort](../includes/vspreshort-md.md)] es la ruta de acceso de medios de instalación: WCU\dotNetFramework\dotNetFx40_Full_x86_x64.exe|  
-|*%ProfilerPath%*|Ruta de acceso a la versión independiente del instalador de las herramientas de generación de perfiles. En el [!INCLUDE[vsPreShort](../includes/vspreshort-md.md)] es la ruta de acceso de medios de instalación: Standalone Profiler\x64\vs_profiler.exe|  
+|*%FxPath%*|Ruta de acceso al instalador de [!INCLUDE[net_v40_long](../includes/net-v40-long-md.md)]. En los medios de instalación de [!INCLUDE[vsPreShort](../includes/vspreshort-md.md)] la ruta de acceso es: WCU\dotNetFramework\dotNetFx40_Full_x86_x64.exe|  
+|*%ProfilerPath%*|Ruta de acceso a la versión independiente del instalador de las herramientas de generación de perfiles. En los medios de instalación de [!INCLUDE[vsPreShort](../includes/vspreshort-md.md)] la ruta de acceso es: Standalone Profiler\x64\vs_profiler.exe|  
   
 ## <a name="profiling-on-an-hpc-compute-node"></a>Generación de perfiles en un nodo de ejecución HPC  
  Configure una sesión de generación de perfiles mediante el Asistente de rendimiento HPC para especificar la información de destino y de clúster de HPC. Puede establecer opciones adicionales en las páginas de propiedades de la sesión de rendimiento. Las herramientas de generación de perfiles implementan los binarios de destino necesarios e inician el generador de perfiles y la aplicación HPC automáticamente.  
@@ -71,7 +71,7 @@ Puede generar perfiles en nodos de ejecución de clústeres de Microsoft Windows
   
     - Para generar perfiles de un proyecto que está abierto actualmente en [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)], seleccione la opción **Uno o más proyectos disponibles** y después el nombre del proyecto de la lista.  
   
-    - Para generar perfiles de un binario que no está en un proyecto abierto, seleccione la opción **Un archivo ejecutable (un archivo .EXE)**.  
+    - Para generar perfiles de un binario que no está en un proyecto abierto, seleccione la opción **Un archivo ejecutable (un archivo .EXE)** .  
   
 4. Haga clic en **Siguiente**.  
   
@@ -126,7 +126,7 @@ Puede generar perfiles en nodos de ejecución de clústeres de Microsoft Windows
   
 ### <a name="hpc-launch-properties"></a>Propiedades de inicio de HPC  
   
-|Propiedad|Descripción|  
+|Propiedad.|Descripción|  
 |--------------|-----------------|  
 |**Nodo principal**|Especifica el equipo que actúa como el nodo principal de HPC en la generación de perfiles.|  
 |**Número de procesos**|Especifica el número de instancias de la aplicación que se ejecutan en la aplicación perfilada.|  
@@ -137,11 +137,11 @@ Puede generar perfiles en nodos de ejecución de clústeres de Microsoft Windows
   
 ### <a name="advanced-properties"></a>Avanzadas (Propiedades)  
   
-|Propiedad|Descripción|  
+|Propiedad.|Descripción|  
 |--------------|-----------------|  
 |**Nombre del proyecto**|Muestra el nombre del proyecto o la solución de [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] actual.|  
 |**Limpiar cuando se detenga el generador de perfiles**|Cuando es true, quita los binarios que se han implementado en el directorio de ejecución. Los archivos y directorios creados por el programa de usuario no se quitan en este paso. Si el directorio de ejecución y el de implementación fueron creados por el IDE, el IDE intentará quitarlos, pero no podrá hacerlo si tienen archivos no implementados por el IDE.|  
-|**Archivos adicionales para implementar**|Especifica una lista separada por puntos y comas de los archivos adicionales para implementar en el nodo de ejecución. Puede hacer clic en el botón de puntos suspensivos (**...**) para seleccionar varios archivos mediante un cuadro de diálogo.|  
+|**Archivos adicionales para implementar**|Especifica una lista separada por puntos y comas de los archivos adicionales para implementar en el nodo de ejecución. Puede hacer clic en el botón de puntos suspensivos ( **...** ) para seleccionar varios archivos mediante un cuadro de diálogo.|  
 |**Comando Mpiexec**|Especifica la aplicación que inicia la aplicación de MPI. El valor predeterminado es **mpiexec.exe**|  
 |**Argumentos Mpiexec**|Especifica los argumentos para pasar al comando de mpiexec.exe.|  
 |**Nodos solicitados en el clúster**|Especifica el número de nodos en el clúster en los que se va a ejecutar la aplicación.|  

@@ -15,18 +15,18 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 16fb3e4a0e1aed14e4a3f1b3178dc753f5dc10b4
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.openlocfilehash: 6dc1449a40528670274ea5b275cca3f0a8d2f277
+ms.sourcegitcommit: 3a19319e2599bd193fb2ca32020ca53942974bfd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72984189"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "73983775"
 ---
 # <a name="security-for-sharepoint-solutions"></a>Seguridad para las soluciones de SharePoint
   [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] incorpora las siguientes características para ayudar a mejorar la seguridad de las aplicaciones de SharePoint.
 
 ## <a name="safe-control-entries"></a>Entradas de control seguras
- Cada elemento de proyecto de SharePoint creado en [!include[vsprvs](../sharepoint/includes/vsprvs-md.md)] tiene una propiedad **Safe control entries** que representa una colección de controles seguros. Su subpropiedad **Safe** le permite especificar los controles que considera seguros. Para obtener más información, vea [proporcionar información de paquete e implementación en los elementos del proyecto](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md) y [especificar el elementos Web seguro](/previous-versions/office/developer/sharepoint2003/dd583154(v=office.11)#sharepoint_northwindwebparts_topic19).
+ Cada elemento de proyecto de SharePoint creado en [!include[vsprvs](../sharepoint/includes/vsprvs-md.md)] tiene una propiedad **Safe control entries** que representa una colección de controles seguros. Su subpropiedad **Safe** le permite especificar los controles que considera seguros. Para obtener más información, vea [proporcionar información de paquete e implementación en los elementos del proyecto](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md) y [especificar el elementos Web seguro](/previous-versions/office/developer/sharepoint2003/dd583154(v=office.11)#specifying-safe-web-parts).
 
 ## <a name="allowpartiallytrustedcallers-attribute"></a>AllowPartiallyTrustedCallers (atributo)
  De forma predeterminada, solo las aplicaciones que son de plena confianza para el sistema de seguridad de acceso del código (CAS) en tiempo de ejecución pueden tener acceso a un ensamblado de código administrado compartido. Marcar un ensamblado de plena confianza con el atributo AllowPartiallyTrustedCallers permite a los ensamblados de confianza parcial tener acceso a él.
