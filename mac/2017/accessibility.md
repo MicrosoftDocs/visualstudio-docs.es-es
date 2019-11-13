@@ -5,12 +5,12 @@ author: conceptdev
 ms.author: crdun
 ms.date: 08/15/2017
 ms.assetid: 2C4AAC2E-3B4A-4496-8BE0-1F5A7F81D1CA
-ms.openlocfilehash: f90f5fca9d68ed00162fd746ddf291343c8d51f7
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 19104cb090ff2a115afefe994bd53c93d2baaf5d
+ms.sourcegitcommit: ba0fef4f5dca576104db9a5b702670a54a0fcced
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62988385"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73714423"
 ---
 # <a name="accessibility"></a>Accesibilidad
 
@@ -75,7 +75,7 @@ Para navegar por los comandos de VoiceOver de la interfaz de usuario, use los co
 Para más información sobre el uso de VoiceOver en macOS, consulte las guías siguientes:
 
 - [Getting Started with VoiceOver](https://help.apple.com/voiceover/info/guide/10.12/) (Introducción a VoiceOver)
-- [VoiceOver commands in macOS](http://lab.dotjay.com/notes/voiceover-commands/) (Comandos de VoiceOver en macOS)
+- [VoiceOver commands in macOS](https://lab.dotjay.com/notes/voiceover-commands/) (Comandos de VoiceOver en macOS)
 
 ## <a name="see-also"></a>Vea también
 

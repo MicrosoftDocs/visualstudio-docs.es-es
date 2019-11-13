@@ -5,12 +5,12 @@ author: conceptdev
 ms.author: crdun
 ms.date: 02/12/2019
 ms.assetid: 339F6051-5F90-48DC-8237-EBBC8A03A32B
-ms.openlocfilehash: c9b150c55e54b851e96e3bfb22e5e9a77646f7d7
-ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
+ms.openlocfilehash: 7d9cfbcafc90340d15172dd0d862ef9904fd6715
+ms.sourcegitcommit: ba0fef4f5dca576104db9a5b702670a54a0fcced
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68872254"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73716112"
 ---
 # <a name="xamarin-mobile-app-development"></a>Desarrollo de aplicaciones móviles con Xamarin
 
@@ -32,7 +32,7 @@ iOS Designer está totalmente integrado con Visual Studio para Mac y permite la 
 
 ![Diseñador de guiones gráficos de iOS](media/intro-image30.png)
 
-Para obtener más información sobre cómo se usa iOS Designer, vea las guías de [Designer](https://docs.microsoft.com/xamarin/ios/user-interface/designer/?tabs=macos).
+Para obtener más información sobre cómo se usa iOS Designer, vea las guías de [Designer](/xamarin/ios/user-interface/designer/?tabs=macos).
 
 ### <a name="mac"></a>Mac
 
