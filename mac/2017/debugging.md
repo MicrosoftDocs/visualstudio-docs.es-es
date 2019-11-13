@@ -6,24 +6,24 @@ ms.author: crdun
 ms.date: 05/06/2018
 ms.technology: vs-ide-debug
 ms.assetid: BB7A084D-9AC2-48B5-8076-6C8518796BBA
-ms.openlocfilehash: e184daa5271497e158c68989cb43889a03a98802
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 96474925c5411d76395cb60ab1ad4851c1cbfa19
+ms.sourcegitcommit: ba0fef4f5dca576104db9a5b702670a54a0fcced
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62932040"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73715943"
 ---
 # <a name="debugging-with-xamarin"></a>Depuración con Xamarin
 
 Visual Studio para Mac tiene un depurador nativo que proporciona compatibilidad de depuración con aplicaciones Xamarin.iOS, Xamarin.Mac y Xamarin.Android.
 
-Visual Studio para Mac usa [*Mono Soft Debugger*](http://www.mono-project.com/docs/advanced/runtime/docs/soft-debugger/), que está implementado en el entorno de ejecución Mono, lo que permite a Visual Studio para Mac depurar código administrado en todas las plataformas.
+Visual Studio para Mac usa [*Mono Soft Debugger*](https://www.mono-project.com/docs/advanced/runtime/docs/soft-debugger/), que está implementado en el entorno de ejecución Mono, lo que permite a Visual Studio para Mac depurar código administrado en todas las plataformas.
 
 ## <a name="the-debugger"></a>Depurador
 
-Visual Studio para Mac usa Mono Soft Debugger para depurar código administrado (C# o F#) en todas las aplicaciones de Xamarin. Mono Soft Debugger difiere de los depuradores normales en que se trata de un depurador cooperativo que está integrado en el entorno de ejecución Mono; el código generado y el entorno de ejecución Mono cooperan con el IDE para proporcionar una experiencia de depuración. El entorno de ejecución Mono expone la funcionalidad de depuración a través de un protocolo de conexión sobre el que puede leer más [en la documentación de Mono](http://www.mono-project.com/docs/advanced/runtime/docs/soft-debugger-wire-format/).
+Visual Studio para Mac usa Mono Soft Debugger para depurar código administrado (C# o F#) en todas las aplicaciones de Xamarin. Mono Soft Debugger difiere de los depuradores normales en que se trata de un depurador cooperativo que está integrado en el entorno de ejecución Mono; el código generado y el entorno de ejecución Mono cooperan con el IDE para proporcionar una experiencia de depuración. El entorno de ejecución Mono expone la funcionalidad de depuración a través de un protocolo de conexión sobre el que puede leer más [en la documentación de Mono](https://www.mono-project.com/docs/advanced/runtime/docs/soft-debugger-wire-format/).
 
-Los depuradores duros, como [LLDB]( http://lldb.llvm.org/index.html) o [GDB]( https://www.gnu.org/software/gdb/), controlan un programa sin el conocimiento ni la cooperación del programa depurado, aunque pueden resultar útiles al depurar aplicaciones de Xamarin en caso de que se necesite depurar código Android o iOS nativo.
+Los depuradores duros, como [LLDB](https://lldb.llvm.org/index.html) o [GDB](https://www.gnu.org/software/gdb/), controlan un programa sin el conocimiento ni la cooperación del programa depurado, aunque pueden resultar útiles al depurar aplicaciones de Xamarin en caso de que se necesite depurar código Android o iOS nativo.
 
 ## <a name="using-the-debugger"></a>Empleo del depurador
 

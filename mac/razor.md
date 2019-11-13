@@ -6,16 +6,16 @@ ms.author: sayedha
 ms.date: 05/03/2018
 ms.technology: vs-ide-general
 ms.assetid: F898CB6E-05ED-44CD-8DB6-427B2592CCC6
-ms.openlocfilehash: d9a9df56074cde8735b54c12bbbf15a79e727497
-ms.sourcegitcommit: dc12a7cb66124596089f01d3e939027ae562ede9
+ms.openlocfilehash: fe9ef921ccfc42b77bd08925805aeac6f4aec777
+ms.sourcegitcommit: ba0fef4f5dca576104db9a5b702670a54a0fcced
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/04/2019
-ms.locfileid: "71962922"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73715879"
 ---
 # <a name="create-razor-web-apps"></a>Creación de aplicaciones web de Razor
 
-Esta guía proporciona una introducción a la creación de su primera aplicación web de Razor. Para obtener instrucciones más detalladas, vea [Introducción a Razor Pages en ASP.NET Core](https://docs.microsoft.com/aspnet/core/razor-pages/index).
+Esta guía proporciona una introducción a la creación de su primera aplicación web de Razor. Para obtener instrucciones más detalladas, vea [Introducción a Razor Pages en ASP.NET Core](/aspnet/core/razor-pages/index).
 
 Visual Studio para Mac ofrece compatibilidad con la edición de Razor, lo que incluye IntelliSense y el resaltado de sintaxis en archivos *.cshtml*. Una novedad de Visual Studio 2019 para Mac 8.3+ consiste en que IntelliSense es compatible con el contexto dentro de un archivo Razor, de modo que recibe sugerencias de IntelliSense que coinciden con el lenguaje que está editando actualmente dentro de un documento.
 
@@ -36,7 +36,7 @@ Visual Studio para Mac ofrece compatibilidad con la edición de Razor, lo que i
    Visual Studio para Mac abrirá el proyecto en la ventana de diseño de código.
 1. Ejecute el proyecto sin depurarlo mediante **Comando+Opción+F5**.
 
-   Visual Studio inicia [Kestrel](https://docs.microsoft.com/aspnet/core/fundamentals/servers/kestrel), abre un explorador en `https://localhost:5001` y muestra su primera aplicación web de Razor.
+   Visual Studio inicia [Kestrel](/aspnet/core/fundamentals/servers/kestrel), abre un explorador en `https://localhost:5001` y muestra su primera aplicación web de Razor.
 
    ![Aplicación web de Razor en Safari](media/razor-webapp.png)
 
@@ -50,7 +50,7 @@ Esta carpeta contiene las páginas web de un proyecto, junto con el código suby
    - Un archivo *\*.cshtml* para el marcado HTML y la sintaxis Razor.
    - Un archivo *\*.cshtml.cs* para el código subyacente de C# para controlar los eventos de la página.
 
-Los archivos auxiliares tienen nombres que comienzan con un carácter de subrayado. Por ejemplo, el archivo _Layout.cshtml configura los elementos de la interfaz de usuario comunes a todas las páginas. Este archivo configura el menú de navegación de la parte superior de la página y el aviso de copyright de la parte inferior. Para obtener más información, consulte [Diseño en ASP.NET Core](https://docs.microsoft.com/aspnet/core/mvc/views/layout).
+Los archivos auxiliares tienen nombres que comienzan con un carácter de subrayado. Por ejemplo, el archivo _Layout.cshtml configura los elementos de la interfaz de usuario comunes a todas las páginas. Este archivo configura el menú de navegación de la parte superior de la página y el aviso de copyright de la parte inferior. Para obtener más información, consulte [Diseño en ASP.NET Core](/aspnet/core/mvc/views/layout).
 
 ### <a name="launch-settings"></a>Configuración de inicio
 
@@ -60,20 +60,20 @@ El archivo *launchSettings.json* contiene la configuración de IIS, la direcció
 
 El archivo *appSettings.json* contiene datos de configuración, como las cadenas de conexión.
 
-Para obtener más información sobre la configuración, consulte la [guía de configuración en ASP.NET](https://docs.microsoft.com/aspnet/core/fundamentals/configuration/index).
+Para obtener más información sobre la configuración, consulte la [guía de configuración en ASP.NET](/aspnet/core/fundamentals/configuration/index).
 
 ### <a name="wwwroot-folder"></a>Carpeta wwwroot
 
-Esta carpeta contiene archivos estáticos, como los archivos HTML, JavaScript y CSS. Para obtener más información, vea [Archivos estáticos en ASP.NET Core](https://docs.microsoft.com/aspnet/core/fundamentals/static-files).
+Esta carpeta contiene archivos estáticos, como los archivos HTML, JavaScript y CSS. Para obtener más información, vea [Archivos estáticos en ASP.NET Core](/aspnet/core/fundamentals/static-files).
 
 ### <a name="programcs"></a>Program.cs
 
-Este archivo contiene el punto de entrada del programa. Para obtener más información, consulte [Host web de ASP.NET Core](https://docs.microsoft.com/aspnet/core/fundamentals/host/web-host).
+Este archivo contiene el punto de entrada del programa. Para obtener más información, consulte [Host web de ASP.NET Core](/aspnet/core/fundamentals/host/web-host).
 
 ### <a name="startupcs"></a>Startup.cs
 
-Este archivo contiene código que configura el comportamiento de la aplicación, como, por ejemplo, si la aplicación requiere consentimiento para las cookies. Para obtener más información, vea [Inicio de la aplicación en ASP.NET Core](https://docs.microsoft.com/aspnet/core/fundamentals/startup).
+Este archivo contiene código que configura el comportamiento de la aplicación, como, por ejemplo, si la aplicación requiere consentimiento para las cookies. Para obtener más información, vea [Inicio de la aplicación en ASP.NET Core](/aspnet/core/fundamentals/startup).
 
 ## <a name="see-also"></a>Vea también
 
-Para obtener información más completa sobre la creación de aplicaciones web de Razor, consulte [Introducción a Razor Pages en ASP.NET Core](https://docs.microsoft.com/aspnet/core/razor-pages/index).
+Para obtener información más completa sobre la creación de aplicaciones web de Razor, consulte [Introducción a Razor Pages en ASP.NET Core](/aspnet/core/razor-pages/index).
