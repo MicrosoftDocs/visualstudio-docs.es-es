@@ -2,7 +2,7 @@
 title: Creación de una aplicación Node.js y React
 description: En este tutorial, creará una aplicación con Node.js Tools para Visual Studio.
 ms.custom: mvc
-ms.date: 11/01/2018
+ms.date: 11/01/2019
 ms.topic: tutorial
 ms.devlang: javascript
 author: mikejo5000
@@ -12,12 +12,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 6c7bec91f6a938a131f99abfd5ab9cbef6479a85
-ms.sourcegitcommit: 978df2feb5e64228d2e3dd430b299a5c234cda17
+ms.openlocfilehash: 2f14a5f2255f7ba1b077ead60147a6df407970fc
+ms.sourcegitcommit: f9f389e72787de30eb869a55ef7725a10a4011f0
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/24/2019
-ms.locfileid: "72888673"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "73636554"
 ---
 # <a name="tutorial-create-a-nodejs-and-react-app-in-visual-studio"></a>Tutorial: Crear una aplicación Node.js y React en Visual Studio
 
@@ -146,7 +146,9 @@ Esta aplicación requiere una serie de módulos de npm para ejecutarse correctam
     }
     ```
 
-    Si ya hay una sección `dependencies` en su versión de la plantilla en blanco, reemplácela por el código JSON anterior. Para obtener más información sobre cómo usar este archivo, consulte [package.json configuration](../javascript/configure-packages-with-package-json.md) (Configuración de package.json).
+    Si ya hay una sección `dependencies` en su versión de la plantilla en blanco, reemplácela por el código JSON anterior. Para más información sobre cómo usar este archivo, vea [Configuración de package.json](../javascript/configure-packages-with-package-json.md).
+
+1. Guarde los cambios.
 
 1. Haga clic con el botón derecho en el nodo **npm** del proyecto y seleccione **Actualizar los paquetes de NPM** .
 
@@ -172,7 +174,7 @@ Para esta sencilla aplicación, los nuevos archivos de proyecto se agregan en la
 
 1. En el Explorador de soluciones, haga clic con el botón derecho en el proyecto **NodejsWebAppBlank** y elija **Agregar** > **Nuevo elemento**.
 
-1. En el cuadro de diálogo **Agregar nuevo elemento**, elija **Archivo JSX de TypeScript**, escriba el nombre *app.tsx* y haga clic en **Aceptar**.
+1. En el cuadro de diálogo **Agregar nuevo elemento**, elija **Archivo JSX de TypeScript**, escriba el nombre *app.tsx* y seleccione **Agregar** o **Aceptar**.
 
 1. Repita estos pasos para agregar *webpack-config.js*. En lugar de un archivo de TypeScript JSX, elija **Archivo JavaScript**.
 
@@ -334,7 +336,7 @@ A partir de Visual Studio 2019, se requiere un script de compilación. En luga
 
 ## <a name="run-the-app"></a>Ejecutar la aplicación
 
-1. Seleccione Chrome como el destino de depuración actual.
+1. Seleccione Microsoft Edge o Chrome como destino de depuración actual.
 
     ::: moniker range=">=vs-2019"
     ![Seleccionar Chrome como destino de depuración](../javascript/media/vs-2019/tutorial-nodejs-react-debug-target.png)
@@ -343,7 +345,12 @@ A partir de Visual Studio 2019, se requiere un script de compilación. En luga
     ![Seleccionar Chrome como destino de depuración](../javascript/media/tutorial-nodejs-react-debug-target.png)
     ::: moniker-end
 
-    Si Chrome está disponible en el equipo, pero no aparece como opción, seleccione **Explorador web (nombre del explorador)**  > **Google Chrome** en la lista desplegable de destino de depuración y seleccione Chrome como destino de explorador predeterminado.
+    ::: moniker range=">=vs-2019"
+    Si Chrome está disponible en el equipo, pero no aparece como opción, seleccione **Explorador web (nombre del explorador)** > **Seleccionar explorador web** en la lista desplegable de destino de depuración y seleccione **Chrome** como destino de explorador predeterminado.
+    ::: moniker-end
+    ::: moniker range="vs-2017"
+    Si Chrome está disponible en el equipo, pero no aparece como opción, seleccione **Explorador web (nombre del explorador)** > **Google Chrome** en la lista desplegable de destino de depuración y seleccione **Chrome** como destino de explorador predeterminado.
+    ::: moniker-end
 
 1. Para ejecutar la aplicación, presione **F5** (**Depurar** > **Iniciar depuración**) o en el botón de flecha verde.
 
@@ -371,7 +378,7 @@ A partir de Visual Studio 2019, se requiere un script de compilación. En luga
 
 1. Presione **F5** para continuar la aplicación.
 
-1. Si quiere utilizar las herramientas de desarrollo de Chrome, presione **F12**. Puede usar estas herramientas para examinar el DOM e interactuar con la aplicación mediante la consola de JavaScript.
+1. Si quiere usar las herramientas de desarrollo de Chrome o Herramientas de F12 para Microsoft Edge, presione **F12**. Puede usar estas herramientas para examinar el DOM e interactuar con la aplicación mediante la consola de JavaScript.
 
 1. Cierre el explorador web y la consola.
 
@@ -379,60 +386,137 @@ A partir de Visual Studio 2019, se requiere un script de compilación. En luga
 
 En la sección anterior se asoció el depurador al código Node.jse del lado servidor. Para asociar el depurador de Visual Studio y establecer puntos de interrupción en el código React del cliente, el depurador necesita ayuda para identificar el proceso correcto. Esta es una manera de habilitar esta opción.
 
-1. Cierre todas las ventanas de Chrome.
+### <a name="prepare-the-browser-for-debugging"></a>Preparación del explorador para la depuración
 
-2. Abra el comando **Ejecutar** desde el botón **Inicio** de Windows (haga clic con el botón derecho y elija **Ejecutar**) y escriba el comando siguiente:
+::: moniker range=">=vs-2019"
+Para este escenario, use Microsoft Edge (Chromium), denominado actualmente **Microsoft Edge Beta** en el IDE, o bien Chrome.
+::: moniker-end
+::: moniker range="vs-2017"
+Para este escenario, use Chrome.
+::: moniker-end
 
-    `chrome.exe --remote-debugging-port=9222`
+1. Cierre todas las ventanas del explorador de destino.
 
-    Chrome se inicia con la depuración habilitada.
+   Otras instancias del explorador pueden impedir que el explorador se abra con la depuración habilitada. (Puede que las extensiones de explorador estén en ejecución e impidan el modo de depuración completa, por lo que es posible que tenga que abrir el Administrador de tareas para encontrar instancias inesperadas de Chrome).
+
+   ::: moniker range=">=vs-2019"
+   En el caso de Microsoft Edge (Chromium), cierre también todas las instancias de Chrome. Como los dos exploradores usan el código base de chromium, se obtiene el mejor resultado.
+   ::: moniker-end
+
+2. Inicie el explorador con la depuración habilitada.
 
     ::: moniker range=">=vs-2019"
+    A partir de Visual Studio 2019, puede establecer la marca `--remote-debugging-port=9222` al iniciar el explorador si selecciona **Explorar con...** > en la barra de herramientas **Depurar**, elige **Agregar** y, después, establece la marca en el campo **Argumentos**. Use otro nombre descriptivo para el explorador, como **Edge con depuración** o **Chrome con depuración**. Para obtener información detallada, vea las [notas de la versión](/visualstudio/releases/2019/release-notes-v16.2).
 
-    > [!NOTE]
-    > También puede establecer la marca `--remote-debugging-port` al iniciar el explorador si selecciona **Explorar con...** > en la barra de herramientas **Depurar**, elige **Agregar** y, después, configura la marca en el campo **Argumentos**. Use un nombre descriptivo distinto para el explorador, como **Chrome con depuración**. Para obtener información detallada, vea las [notas de la versión](/visualstudio/releases/2019/release-notes-preview).
+    ![Establezca el explorador para que se abra con la depuración habilitada.](../javascript/media/tutorial-nodejs-react-edge-with-debugging.png)
 
+    Como alternativa, abra el comando **Ejecutar** desde el botón **Inicio** de Windows (haga clic con el botón derecho y elija **Ejecutar**), y escriba el comando siguiente:
+
+    `msedge --remote-debugging-port=9222`
+
+    o bien,
+
+    `chrome.exe --remote-debugging-port=9222`
     ::: moniker-end
 
-3. Cambie a Visual Studio y establezca un punto de interrupción en el código *app-bundle.js* en la función `render()`, tal como se muestra en la siguiente ilustración:
+    ::: moniker range="vs-2017"
+    Abra el comando **Ejecutar** desde el botón **Inicio** de Windows (haga clic con el botón derecho y elija **Ejecutar**) y escriba el comando siguiente:
+
+    `chrome.exe --remote-debugging-port=9222`
+    ::: moniker-end
+
+    Esto inicia el explorador con la depuración habilitada.
+
+    La aplicación todavía no está en ejecución, por lo que se obtiene una página del explorador vacía.
+
+### <a name="attach-the-debugger-to-client-side-script"></a>Asociación del depurador al script del lado cliente
+
+1. Cambie a Visual Studio y, después, establezca un punto de interrupción en el código fuente, ya sea *app-bundle.js* o *app.tsx*.
+
+    Para *app-bundle.js*, establezca el punto de interrupción en la función `render()`, como se muestra en la ilustración siguiente:
 
     ![Establecer un punto de interrupción](../javascript/media/tutorial-nodejs-react-set-breakpoint-client-code.png)
 
-    Para buscar la función `render()` en *app-bundle.js*, use **Ctrl**+**F** (**Editar** > **Buscar y reemplazar** > **Búsqueda rápida**).
+    Para buscar la función `render()` en el archivo *app-bundle.js* transpilado, presione **Ctrl**+**F** (**Editar** > **Buscar y reemplazar** > **Búsqueda rápida**).
 
-4. Con Chrome seleccionado como destino de depuración en Visual Studio, presione **Ctrl**+**F5** (**Depurar** > **Iniciar sin depurar**) para ejecutar la aplicación en el explorador.
+    Para *app.tsx*, establezca el punto de interrupción dentro de la función `render()`, en la instrucción `return`.
+
+    ![Establecer un punto de interrupción](../javascript/media/tutorial-nodejs-react-set-breakpoint-in-tsx-file.png)
+
+2. Si va a establecer el punto de interrupción en el archivo *.tsx* (en lugar de *app-bundle.js*), tendrá que actualizar *webpack-config.js*. Reemplace el código siguiente:
+
+    ```javascript
+    output: {
+        filename: "./app-bundle.js",
+    },
+    ```
+
+    con este código:
+
+    ```javascript
+    output: {
+        filename: "./app-bundle.js",
+        devtoolModuleFilenameTemplate: '[resource-path]'  // removes the webpack:/// prefix
+    },
+    ```
+
+    Se trata de una configuración solo de desarrollo para habilitar la depuración en Visual Studio. Esta configuración permite invalidar las referencias generadas en el archivo de mapa de origen, *app-bundle.js.map*, al compilar la aplicación. De forma predeterminada, las referencias a webpack en el archivo de mapa de origen incluyen el prefijo *webpack:///* , lo que impide que Visual Studio encuentre el archivo de origen, *app.tsx*. En concreto, cuando realiza este cambio, la referencia al archivo de origen, *app.tsx*, cambia de *webpack:///./app.tsx* a *./app.tsx*, lo que permite la depuración.
+
+3. Seleccione el explorador de destino como destino de depuración en Visual Studio y después presione **Ctrl**+**F5** (**Depurar** > **Iniciar sin depurar**) para ejecutar la aplicación en el explorador.
+
+    ::: moniker range=">=vs-2019"
+    Si ha creado una configuración de explorador con un nombre descriptivo, elíjala como destino de depuración.
+    ::: moniker-end
 
     La aplicación se abre en una nueva pestaña del explorador.
 
-5. Elija **Depurar** > **Asociar al proceso**.
+4. Elija **Depurar** > **Asociar al proceso**.
 
-6. En el cuadro de diálogo **Asociar al proceso**, elija **Código Webkit** en el campo **Asociar a**, y escriba **chrome** en el cuadro de filtro para filtrar los resultados de la búsqueda.
+    > [!TIP]
+    > A partir de Visual Studio 2017, una vez que se siguen estos pasos para asociar al proceso la primera vez, puede volver a asociar rápidamente al mismo proceso si selecciona **Depurar** > **Reasociar al proceso**.
 
-7. Seleccione el proceso de Chrome con el puerto de host correcto (1337 en este ejemplo) y haga clic en **Asociar**.
+5. En el cuadro de diálogo **Asociar al proceso**, obtendrá una lista filtrada de las instancias del explorador a las que se puede asociar.
 
+    ::: moniker range=">=vs-2019"
+    En Visual Studio 2019, elija el depurador correcto para el explorador de destino, **JavaScript (Chrome)** o **JavaScript (Microsoft Edge - Chromium)** en el campo **Asociar a:** , escriba **chrome** o **edge** en el cuadro de filtro para filtrar los resultados de la búsqueda.
+    ::: moniker-end
+    ::: moniker range="vs-2017"
+    En Visual Studio 2017, elija **Código WebKit** en el campo **Asociar a** y escriba **chrome** en el cuadro de filtro para filtrar los resultados de la búsqueda.
+    ::: moniker-end
+
+6. Seleccione el proceso de explorador con el puerto de host correcto (localhost en este ejemplo) y seleccione **Asociar**.
+
+    Es posible que también aparezca el puerto (1337) en el campo **Título** para facilitar la selección de la instancia correcta del explorador.
+
+    ::: moniker range=">=vs-2019"
+    En el ejemplo siguiente se muestra qué aspecto tiene para el explorador Microsoft Edge (Chromium).
+
+    ![Asociar al proceso](../javascript/media/tutorial-nodejs-react-attach-to-process-edge.png)
+    ::: moniker-end
+    ::: moniker range="vs-2017"
     ![Asociar al proceso](../javascript/media/tutorial-nodejs-react-attach-to-process.png)
 
-    ::: moniker range="vs-2017"
     Sabrá que el depurador se ha asociado correctamente cuando el Explorador DOM y la Consola de JavaScript se abran correctamente en Visual Studio. Estas herramientas de depuración son similares a las herramientas de desarrollo de Chrome y a Herramientas F12 para Microsoft Edge.
     ::: moniker-end
 
-    > [!NOTE]
-    > Si el depurador no se conecta y aparece el mensaje "No se puede asociar al proceso. Existe una operación que no es legal en el estado actual", utilice el Administrador de tareas para cerrar todas las instancias de Chrome antes de iniciar Chrome en modo de depuración. Es posible que las extensiones de Chrome se estén ejecutando y eviten el modo de depuración completa.
+    > [!TIP]
+    > Si el depurador no se conecta y aparece el mensaje "No se puede asociar al proceso. Existe una operación que no es legal en el estado actual.", use el Administrador de tareas para cerrar todas las instancias del explorador de destino antes de iniciarlo en modo de depuración. Es posible que las extensiones del explorador estén en ejecución y eviten el modo de depuración completa.
 
-8. Dado que el código ya se ejecuta con el punto de interrupción, actualice la página del explorador para alcanzar el punto de interrupción.
+7. Dado que el código ya se ejecuta con el punto de interrupción, actualice la página del explorador para alcanzar el punto de interrupción.
 
-    Mientras está en pausa en el depurador, puede pasar el mouse sobre las variables y usar las ventanas del depurador para examinar el estado de la aplicación. Para avanzar el depurador, puede ejecutar el código paso a paso (**F5**, **F10** y **F11**).
+    Mientras está en pausa en el depurador, puede pasar el mouse sobre las variables y usar las ventanas del depurador para examinar el estado de la aplicación. Para avanzar el depurador, puede ejecutar el código paso a paso (**F5**, **F10** y **F11**). Para más información sobre las características de depuración básicas, vea [Primer vistazo al depurador](../debugger/debugger-feature-tour.md).
 
-    En función del estado del entorno y el explorador, puede alcanzar el punto de interrupción en *app-bundle.js* o su ubicación asignada en *app.tsx*. En cualquier caso, puede ejecutar paso a paso el código y examinar las variables.
+    Puede alcanzar el punto de interrupción en el archivo *app-bundle.js* o en su ubicación asignada en *app.tsx*, en función de los pasos que haya seguido antes, junto con el estado del explorador y el entorno. En cualquier caso, puede ejecutar paso a paso el código y examinar las variables.
 
-   * Si tiene que interrumpir el código en *app.tsx* y no puede hacerlo, use **Asociar al proceso** tal como se describe en los pasos anteriores para conectar el depurador. A continuación, abra desde el Explorador de soluciones el archivo *app.tsx* generado dinámicamente; para ello, abra **Documentos de Script** > **app.tsx**, establezca un punto de interrupción y actualice la página en el explorador. (Establezca el punto de interrupción en una línea de código que permita puntos de interrupción, como la instrucción `return` o una declaración `var`).
+   * Si tiene que interrumpir el código en *app.tsx* y no puede hacerlo, use **Asociar al proceso** tal como se describe en los pasos anteriores para conectar el depurador. Asegúrese de que el entorno está configurado correctamente:
 
-       Como alternativa, si tiene que interrumpir el código en un archivo *app.tsx* y no puede hacerlo, intente utilizar la instrucción `debugger;` de *app.tsx* o, en su lugar, establezca puntos de interrupción en las herramientas de desarrollo de Chrome.
+      * Ha cerrado todas las instancias del explorador, incluidas las extensiones de Chrome (mediante el Administrador de tareas), para que pueda ejecutar el explorador en modo de depuración. Asegúrese de iniciar el explorador en modo de depuración.
 
-   * Si tiene que interrumpir el código en *app-bundle.js* y no puede hacerlo, quite el archivo del mapa de origen, *app-bundle.js.map*.
+      * Asegúrese de que el archivo de mapa de origen incluye una referencia a *./app.tsx* y no a *webpack:///./app.tsx*, lo que impide que el depurador de Visual Studio encuentre *app.tsx*.
 
-     > [!TIP]
-     > Una vez que se asocia al proceso la primera vez siguiendo estos pasos, puede volver a asociar rápidamente al mismo proceso en Visual Studio 2017 si selecciona **Depurar** > **Reasociar al proceso**.
+       Como alternativa, si tiene que interrumpir el código en un archivo *app.tsx* y no puede hacerlo, intente usar la instrucción `debugger;` de *app.tsx* o, en su lugar, establezca puntos de interrupción en las herramientas de desarrollo de Chrome (o las Herramientas de F12 para Microsoft Edge).
+
+   * Si tiene que interrumpir el código en *app-bundle.js* y no puede hacerlo, quite el archivo de mapa de origen, *app-bundle.js.map*.
 
 ## <a name="next-steps"></a>Pasos siguientes
 

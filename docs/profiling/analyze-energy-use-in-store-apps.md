@@ -13,12 +13,13 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: 1259f92b89fc6d83bb0b7296cc07844bf25df705
-ms.sourcegitcommit: 53bc4c11b82882ab658e34c65ae374060f823531
+monikerRange: vs-2017
+ms.openlocfilehash: 0fc78a84d0c2f86e8db6c4703cc7404a32508d72
+ms.sourcegitcommit: bdccab4c2dbd50ea8adaaf88c69c9ca32db88099
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/19/2019
-ms.locfileid: "71128321"
+ms.lasthandoff: 10/30/2019
+ms.locfileid: "73144731"
 ---
 # <a name="analyze-energy-use-in-uwp-apps"></a>Análisis del uso de energía en las aplicaciones para UWP
 
@@ -90,7 +91,7 @@ if (performance && performance.mark) {
 
 1. En el menú **Depurar** , elija **Iniciar diagnóstico sin depurar**.
 
-     ![Elegir Consumo de energía en el concentrador de diagnósticos](../profiling/media/energyprof_diagnosticshub.png "ENERGYPROF_DiagnosticsHub")
+     ![Elección de Consumo de energía en el concentrador de diagnósticos](../profiling/media/energyprof_diagnosticshub.png "ENERGYPROF_DiagnosticsHub")
 
 2. Elija **Consumo de energía** y, a continuación, **Iniciar**.
 
@@ -101,7 +102,7 @@ if (performance && performance.mark) {
 
 4. Para detener la generación de perfiles, vuelve a Visual Studio (Alt + Tab) y elige **Detener colección** en la página del concentrador de diagnósticos.
 
-     ![Detener la recopilación de datos](../profiling/media/xamlprof_stopcollection.png "XAMLProf_StopCollection")
+     ![Detección de la recopilación de datos](../profiling/media/xamlprof_stopcollection.png "XAMLProf_StopCollection")
 
      Visual Studio analiza los datos recopilados y muestra los resultados.
 
@@ -139,7 +140,7 @@ if (performance && performance.mark) {
 ## <a name="optimize-energy-use"></a>Optimizar el uso de energía
  Además de transmitir datos, las conexiones de red incurren en ciertos costos de energía para inicializar, mantener y cerrar la conexión. Algunas redes mantienen la conexión durante un período de tiempo después de que los datos se hayan enviado o recibido para permitir que se transmitan más datos en una única conexión. Puedes utilizar el panel **Recursos (activados/desactivados)** para examinar la manera en que la aplicación interactúa con la conexión.
 
- ![Panel recursos &#40;activados&#47;desactivados&#41;](../profiling/media/energyprof_resources.png "ENERGYPROF_Resources")
+ ![Panel Recursos &#40;On&#47;Off&#41;](../profiling/media/energyprof_resources.png "ENERGYPROF_Resources")
 
  Si las barras **Red** y **Transferencia de datos** muestran que la conexión está abierta durante largos períodos para transmitir intermitentemente una serie de pequeños paquetes de datos, puedes procesar por lotes los datos para enviarlos en una transmisión, reduciendo así el tiempo que la red está abierta y los costos energéticos.
 

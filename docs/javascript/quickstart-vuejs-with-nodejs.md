@@ -1,11 +1,10 @@
 ---
 title: 'Inicio rápido: Creación de la primera aplicación Vue.js'
 description: En este inicio rápido se crea una aplicación Vue.js en Visual Studio mediante Herramientas de Node.js para Visual Studio
-ms.custom: seodec18
-ms.date: 09/24/2018
+ms.custom: ''
+ms.date: 10/31/2019
 ms.topic: quickstart
 ms.devlang: javascript
-ms.assetid: b0e4ebed-1a01-41ef-aad1-4d8465ce5322
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
@@ -13,12 +12,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 28e86068b2255d1796363405c0231c1fb6bdd480
-ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
+ms.openlocfilehash: 5f7b877d825a573b935a9bf0f2c907ec2ce6f808
+ms.sourcegitcommit: 2f64b3b231900018fceafb72b5a1c65140213a18
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65226498"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "73428771"
 ---
 # <a name="quickstart-use-visual-studio-to-create-your-first-vuejs-app"></a>Inicio rápido: Uso de Visual Studio para crear la primera aplicación Vue.js
 
@@ -104,9 +103,13 @@ En primer lugar se crea un proyecto de aplicación web Vue.js.
 
 1. (Solo proyecto de TypeScript) En Visual Studio, elija **Compilar** > **Limpiar solución**.
 
+    ::: moniker range=">=vs-2019"
+    En la plantilla de TypeScript incluida con Visual Studio 2019, omita este paso.
+    ::: moniker-end
+
 1. Luego elija **Compilar** > **Compilar solución** para compilar el proyecto. Consulte la ventana **Resultados** para ver los resultados de la compilación y elija **Compilar** en la lista **Mostrar salida de**.
 
-    La plantilla de proyecto Vue.js usa el script de npm `build` al configurar un evento posterior a la compilación. Si quiere modificar este valor, abra el archivo de proyecto (*\<projectname\>.njsproj*) desde el Explorador de Windows y busque esta línea de código:
+    En la plantilla de proyecto Vue.js de JavaScript (y las versiones anteriores de la plantilla de TypeScript) se usa el script `build` de npm mediante la configuración de un evento posterior a la compilación. Si quiere modificar este valor, abra el archivo de proyecto ( *\<projectname\>.njsproj*) desde el Explorador de Windows y busque esta línea de código:
 
     ```xml
     <PostBuildEvent>npm run build</PostBuildEvent>
@@ -119,6 +122,8 @@ En primer lugar se crea un proyecto de aplicación web Vue.js.
    En la consola, se ve un mensaje *Iniciando servidor de desarrollo*.
 
    Luego la aplicación se abre en un explorador.
+   
+   Si no ve la aplicación en ejecución, actualice la página.
 
    ![Aplicación Vue.js en ejecución en el explorador](../javascript/media/vuejs-running-app.png)
 
@@ -128,6 +133,6 @@ En primer lugar se crea un proyecto de aplicación web Vue.js.
 
 ## <a name="next-steps"></a>Pasos siguientes
 
-- Repasar el [Tutorial para Node.js y Express](../nodejs/tutorial-nodejs.md)
-- Repasar el [Tutorial para Node.js y React](/visualstudio/javascript/tutorial-nodejs-with-react-and-jsx)
+- Repasar el [Tutorial para Node.js y Express](tutorial-nodejs.md)
+- Repasar el [Tutorial para Node.js y React](tutorial-nodejs-with-react-and-jsx.md)
 - [Deploy the app to Linux App Service](../javascript/publish-nodejs-app-azure.md) (Implementar la aplicación en App Service de Linux)
