@@ -6,12 +6,12 @@ ms.author: ghogen
 ms.date: 08/12/2019
 ms.technology: vs-azure
 ms.topic: conceptual
-ms.openlocfilehash: 2178881c6ea0e597aef5e25074e3648162d3f6e9
-ms.sourcegitcommit: 6ae0a289f1654dec63b412bfa22035511a2ef5ad
+ms.openlocfilehash: 4ea1a936de215340cc13971e7a70a8d795d36cbb
+ms.sourcegitcommit: ba0fef4f5dca576104db9a5b702670a54a0fcced
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/04/2019
-ms.locfileid: "71950639"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73713931"
 ---
 # <a name="docker-compose-build-properties"></a>Propiedades de compilación de Docker Compose
 
@@ -35,6 +35,8 @@ En la tabla siguiente se muestran las propiedades de MSBuild disponibles para pr
 
 | Nombre de la propiedad | Ubicación | DESCRIPCIÓN | Valor predeterminado  |
 |---------------|----------|-------------|----------------|
+|AdditionalComposeFiles|dcproj|Esta opción permite especificar archivos de composición adicionales en una lista delimitada por signos de punto y coma que se envía a docker-compose.exe para todos los comandos. Se permiten las rutas de acceso relativas del archivo de proyecto docker-compose (dcproj).|-|
+|DockerComposeBaseFilePath|dcproj|Permite especificar la primera parte de los nombres de archivo de los archivos docker-compose, sin la extensión *.yml*. Por ejemplo: <br>1.  DockerComposeBaseFilePath = null/undefined: use la ruta de acceso del archivo base *docker-compose*; los archivos se denominarán *docker-compose.yml* y *docker-compose.override.yml*.<br>2.   DockerComposeBaseFilePath = *mydockercompose*: los archivos se denominarán *mydockercompose.yml* y *mydockercompose.override.yml*.<br> 3.  DockerComposeBaseFilePath = *..\mydockercompose*: los archivos se subirán un nivel. |docker-compose|
 |DockerComposeBuildArguments|dcproj|Especifica los parámetros adicionales que se van a pasar al comando `docker-compose build`. Por ejemplo, `--parallel --pull`. |
 |DockerComposeDownArguments|dcproj|Especifica los parámetros adicionales que se van a pasar al comando `docker-compose down`. Por ejemplo, `--timeout 500`.|-|  
 |DockerComposeProjectPath|csproj o vbproj|La ruta de acceso relativa al archivo del proyecto docker-compose (dcproj). Establezca esta propiedad al publicar el proyecto de servicio para buscar la configuración de compilación de la imagen asociada que se almacena en el archivo docker-compose.yml.|-|

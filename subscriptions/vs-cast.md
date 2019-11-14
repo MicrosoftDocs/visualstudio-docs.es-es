@@ -6,12 +6,12 @@ manager: lank
 ms.date: 07/30/2019
 ms.topic: conceptual
 description: Obtenga información sobre la ventaja de CAST Highlight disponible en las suscripciones de Visual Studio.
-ms.openlocfilehash: c55891b9aacb81c5169a9082f7e1fd1d922eda92
-ms.sourcegitcommit: bcdab788085bd9931d73883fe70cd5831317dca2
+ms.openlocfilehash: c985a4ae4c1cdcf5c034293d2848a764d6be3d24
+ms.sourcegitcommit: 3a19319e2599bd193fb2ca32020ca53942974bfd
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "72816442"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "73983737"
 ---
 # <a name="the-cast-highlight-benefit-in-visual-studio-subscriptions"></a>Ventaja de CAST Highlight para suscripciones de Visual Studio
 Los desarrolladores necesitan información clave sobre su software al realizar la migración a la nube. Con CAST Highlight, los suscriptores de Visual Studio Enterprise pueden examinar rápidamente su código fuente de aplicación para identificar la preparación de la nube de sus aplicaciones para la migración a Azure y supervisar el progreso de su aplicación tanto durante una migración como después.
@@ -76,7 +76,9 @@ Tras la aprobación de su solicitud, recibirá un segundo correo electrónico en
 | Nivel de suscripción                                                 |     Canales                                            | Prestación                                                          | ¿Renovable?    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
 | Visual Studio Enterprise (estándar)   | Licencia por volumen, Azure, venta directa | Evaluación de 5 aplicaciones durante 30 días|  No.  Disponible solo para nuevos suscriptores          |
+| Visual Studio Enterprise con GitHub Enterprise  | VL | Evaluación de 5 aplicaciones durante 30 días|  No.  Disponible solo para nuevos suscriptores          |
 | Visual Studio Professional (estándar) | Licencia por volumen, Azure, venta directa                                       | No disponible                                                             |  N/D          |
+| Visual Studio Professional con GitHub Enterprise | VL                                       | No disponible                                                             |  N/D          |
 | Visual Studio Test Professional (estándar)                         | Licencia por volumen, venta directa                                              | No disponible                                             |  N/D           |
 | Plataformas MSDN (estándar)                                          | Licencia por volumen, venta directa                                              | No disponible                                              |  N/D          |
 | Visual Studio Enterprise (estándar)  | NFR<sup>1</sup> |No disponible  | N/D |
@@ -98,6 +100,6 @@ Tras la aprobación de su solicitud, recibirá un segundo correo electrónico en
 - ¿Tiene alguna pregunta sobre el IDE de Visual Studio, Azure DevOps Services u otros productos o servicios de Visual Studio?  Visite el [soporte técnico de Visual Studio](https://visualstudio.microsoft.com/support/).
 
 ## <a name="next-steps"></a>Pasos siguientes
-Si todavía no ha activado la ventaja de Azure incluida en la suscripción, visite [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs) y haga clic en el icono de Azure de la categoría Herramientas para configurar la suscripción de Azure y canjear los créditos individuales de DevTest de Azure.
+Si todavía no ha activado la ventaja de crédito individual de Azure DevTest incluida en la suscripción, visite [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs) y haga clic en el icono de Azure de la categoría Herramientas para configurar la suscripción de Azure y canjear el crédito individual de Azure DevTest.
 
 Y no olvide consultar la demostración, el manual del usuario y los vídeos del tutorial que se mencionan en el correo electrónico de Greg.

@@ -11,12 +11,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 386a489faf859038cd0f529da74a0fbac07b7250
-ms.sourcegitcommit: f9f389e72787de30eb869a55ef7725a10a4011f0
+ms.openlocfilehash: 0405488f6f456f22711498e81789881ffc5a0a8a
+ms.sourcegitcommit: 308a2bdbea81df78bffc3a01afce4ab13131fabc
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "73636549"
+ms.lasthandoff: 11/11/2019
+ms.locfileid: "73913000"
 ---
 # <a name="debug-a-javascript-or-typescript-app-in-visual-studio"></a>Depuración de una aplicación JavaScript o TypeScript en Visual Studio
 
@@ -105,13 +105,13 @@ Para este escenario, use Chrome.
 
 Para asociar el depurador de Visual Studio y establecer puntos de interrupción en el código del lado cliente, el depurador necesita ayuda para identificar el proceso correcto. Esta es una manera de habilitar esta opción.
 
-1. Cambie a Visual Studio y, después, establezca un punto de interrupción en el código fuente, que puede ser un archivo de JavaScript, de TypeScript, *.vue* o JSX. (Establezca el punto de interrupción en una línea de código que los permita, como una instrucción return o una declaración var).
+1. Cambie a Visual Studio y, después, establezca un punto de interrupción en el código fuente, que puede ser un archivo de JavaScript, TypeScript o JSX. (Establezca el punto de interrupción en una línea de código que los permita, como una instrucción return o una declaración var).
 
     ![Establecer un punto de interrupción](../javascript/media/tutorial-nodejs-react-set-breakpoint-client-code.png)
 
     Para buscar el código específico en un archivo transpilado, presione **Ctrl**+**F** (**Editar** > **Buscar y reemplazar** > **Búsqueda rápida**).
 
-    En el código del lado cliente, para alcanzar un punto de interrupción en un archivo de TypeScript, *.vue* o JSX, normalmente es necesario usar [mapas de origen](#generate_source_maps). Un mapa de origen debe estar configurado correctamente para admitir la depuración en Visual Studio.
+    En el código del lado cliente, para alcanzar un punto de interrupción en un archivo de TypeScript o JSX, normalmente es necesario usar [mapas de origen](#generate_source_maps). Un mapa de origen debe estar configurado correctamente para admitir la depuración en Visual Studio.
 
 2. Seleccione el explorador de destino como destino de depuración en Visual Studio y después presione **Ctrl**+**F5** (**Depurar** > **Iniciar sin depurar**) para ejecutar la aplicación en el explorador.
 
@@ -157,7 +157,7 @@ Para asociar el depurador de Visual Studio y establecer puntos de interrupción
 
     Mientras está en pausa en el depurador, puede pasar el mouse sobre las variables y usar las ventanas del depurador para examinar el estado de la aplicación. Para avanzar el depurador, puede ejecutar el código paso a paso (**F5**, **F10** y **F11**). Para más información sobre las características de depuración básicas, vea [Primer vistazo al depurador](../debugger/debugger-feature-tour.md).
 
-    Puede alcanzar el punto de interrupción en el archivo *.js* transpilado o en el de código fuente, en función de los pasos que haya seguido antes, junto con el estado del explorador y el entorno. En cualquier caso, puede ejecutar paso a paso el código y examinar las variables.
+    Puede alcanzar el punto de interrupción en el archivo *.js* transpilado o en el de código fuente, en función del tipo de aplicación, de los pasos que haya seguido antes y de otros factores como el estado del explorador. En cualquier caso, puede ejecutar paso a paso el código y examinar las variables.
 
    * Si tiene que interrumpir el código en un archivo de origen TypeScript, JSX o *.vue*, y no puede hacerlo, asegúrese de que el entorno esté configurado correctamente, como se describe en la sección [Solución de problemas](#troubleshooting_source_maps).
 
@@ -165,13 +165,13 @@ Para asociar el depurador de Visual Studio y establecer puntos de interrupción
 
 ### <a name="troubleshooting_source_maps"></a> Solución de problemas de puntos de interrupción y mapas de origen
 
-Si tiene que interrumpir el código en un archivo de origen TypeScript, JSX o *.vue*, y no puede hacerlo, use **Asociar al proceso**, como se describe en los pasos anteriores para asociar el depurador. Asegúrese de que el entorno está configurado correctamente:
+Si tiene que interrumpir el código en un archivo de origen TypeScript o JSX y no puede hacerlo, use **Asociar al proceso**, como se describe en los pasos anteriores para asociar el depurador. Asegúrese de que el entorno está configurado correctamente:
 
 * Ha cerrado todas las instancias del explorador, incluidas las extensiones de Chrome (mediante el Administrador de tareas), para que pueda ejecutar el explorador en modo de depuración.
       
 * Asegúrese de [iniciar el explorador en modo de depuración](#prepare_the_browser_for_debugging).
 
-* Asegúrese de que el archivo de mapa de origen incluye la referencia correcta al archivo de código fuente y que no incluye prefijos no admitidos, como *webpack:///* , lo que impide que el depurador de Visual Studio busque un archivo de código fuente. Por ejemplo, una referencia como *webpack:///.app.tsx* se podría corregir como *./app.tsx*. Puede hacerlo manualmente en el archivo de mapa de origen o a través de una configuración de compilación personalizada. Para más información, vea [Generación de mapas de origen para la depuración](#generate_source_maps).
+* Asegúrese de que el archivo de mapa de origen incluye la ruta de acceso relativa correcta al archivo de código fuente y que no incluye prefijos no admitidos, como *webpack:///* , lo que impide que el depurador de Visual Studio busque un archivo de código fuente. Por ejemplo, una referencia como *webpack:///.app.tsx* se podría corregir como *./app.tsx*. Puede hacerlo manualmente en el archivo de mapa de origen (que es útil para las pruebas) o a través de una configuración de compilación personalizada. Para más información, vea [Generación de mapas de origen para la depuración](#generate_source_maps).
 
 Como alternativa, si tiene que interrumpir el código en un archivo de código fuente (por ejemplo, *app.tsx*) y no puede hacerlo, intente usar la instrucción `debugger;` en el archivo de código fuente, o bien establezca puntos de interrupción en las herramientas de desarrollo de Chrome (o las Herramientas de F12 para Microsoft Edge).
 
