@@ -17,12 +17,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: fbdacb265d39c9aff96fed37c69c684aa3f8503b
-ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.openlocfilehash: f1b928d04ae581b0df04ab74f3a756d359abc06f
+ms.sourcegitcommit: ba0fef4f5dca576104db9a5b702670a54a0fcced
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73189465"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73713962"
 ---
 # <a name="troubleshoot-network-related-errors-when-you-install-or-use-visual-studio"></a>Solución de problemas de errores relacionados con la red al instalar o usar Visual Studio
 
@@ -137,7 +137,7 @@ Habilite las conexiones para las direcciones URL siguientes:
 
 Es posible que encuentre este mensaje de error al usar un programa previo de Visual Studio y un archivo response.json en una unidad de red. El origen del error es el control de cuentas de usuario (UAC) de Windows.
 
-Este error se puede producir por este motivo: una unidad de red asignada o un recurso compartido de [UNC](/dotnet/standard/io/file-patch-formats#unc-paths) está vinculado al token de acceso de un usuario. Cuando se habilita UAC, se crean dos [tokens de acceso](/windows/win32/secauthz/access-tokens) de usuario: uno *con* acceso de administrador y otro *sin* acceso de administrador. Cuando se crea la unidad de red o el recurso compartido, el token de acceso actual del usuario está vinculado a él. Como el programa previo se debe ejecutar como administrador, no podrá acceder a la unidad de red o al recurso compartido si la unidad o el recurso compartido no están vinculados a un token de acceso de usuario con acceso de administrador.
+Este error se puede producir por este motivo: una unidad de red asignada o un recurso compartido de [UNC](/dotnet/standard/io/file-path-formats#unc-paths) está vinculado al token de acceso de un usuario. Cuando se habilita UAC, se crean dos [tokens de acceso](/windows/win32/secauthz/access-tokens) de usuario: uno *con* acceso de administrador y otro *sin* acceso de administrador. Cuando se crea una unidad de red o el recurso compartido, el token de acceso actual del usuario está vinculado a él. Como el programa previo se debe ejecutar como administrador, no podrá acceder a la unidad de red o al recurso compartido si la unidad o el recurso compartido no están vinculados a un token de acceso de usuario con acceso de administrador.
 
 ### <a name="to-fix-this-error"></a>Para corregir este error
 

@@ -9,12 +9,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 54e65c411afe9815696112dfbcc99bcb9433c4db
-ms.sourcegitcommit: 59e5758036223ee866f3de5e3c0ab2b6dbae97b6
+ms.openlocfilehash: e72b072ad2cabab643d64f149a31b1b8dbb2a054
+ms.sourcegitcommit: ba0fef4f5dca576104db9a5b702670a54a0fcced
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "68416868"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73713948"
 ---
 # <a name="how-to-exclude-projects-from-a-build"></a>Procedimiento Exclusión de proyectos de una compilación
 
@@ -53,6 +53,19 @@ Para obtener más información, vea [Descripción de las configuraciones de comp
 6. En la barra de herramientas **Estándar**, compruebe que la nueva configuración de soluciones sea la configuración activa en el cuadro **Configuraciones de soluciones**.
 
 7. En la barra de menús, elija **Compilación** > **Recompilar solución**.
+
+## <a name="skipped-projects"></a>Proyectos omitidos
+
+Los proyectos se pueden omitir durante la compilación porque no están actualizados o porque están excluidos de la configuración. Visual Studio usa MSBuild para compilar los proyectos. MSBuild solo compila un destino si la salida es más antigua que la entrada, en función de lo que determinen las marcas de tiempo del archivo. Para forzar una recompilación, use el comando **Compilar** > **Recompilar solución**.
+
+En el panel **Compilar** de la ventana **Salida** de Visual Studio se informa del número de proyectos actualizados, así como el número de proyectos compilados correctamente, con errores y omitidos. El recuento de proyectos omitidos no incluye los que no se compilaron porque estaban actualizados. Si los proyectos se excluyen de la configuración activa, se omitirán durante la compilación. En la salida de la compilación, verá un mensaje en el que se indica que el proyecto se ha omitido:
+
+```output
+2>------ Skipped Build: Project: ConsoleApp2, Configuration: Debug x86 ------
+2>Project not selected to build for this solution configuration
+```
+
+Para averiguar por qué se ha omitido un proyecto, tenga en cuenta la configuración activa (`Debug x86` en el ejemplo anterior) y elija **Compilar** > **Configuration Manager**. Puede ver o cambiar los proyectos que se omiten de cada configuración, tal como se describe en este artículo.
 
 ## <a name="see-also"></a>Vea también
 
