@@ -3,15 +3,15 @@ title: Incluir un paquete NuGet en el proyecto
 description: En este documento se explica cómo incluir un paquete NuGet en un proyecto mediante Visual Studio para Mac. Le guía a lo largo del proceso de búsqueda y descarga de un paquete, además de presentar las características de integración del IDE.
 author: jmatthiesen
 ms.author: jomatthi
-ms.date: 09/18/2019
+ms.date: 11/01/2019
 ms.assetid: 5C800815-0B13-4B27-B017-95FCEF1A0EA2
 ms.custom: conceptual
-ms.openlocfilehash: 55b4691a7adb03d4ee8fd5e05e7bd9d7daa28f13
-ms.sourcegitcommit: ea182703e922c74725045afc251bcebac305068a
+ms.openlocfilehash: 4200f466c079247d3efa036f4f7cca2fd2d6b5d2
+ms.sourcegitcommit: bbff780cda82bb64862d77fe8f407f1803beb876
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71213688"
+ms.lasthandoff: 11/16/2019
+ms.locfileid: "74127202"
 ---
 # <a name="install-and-manage-nuget-packages-in-visual-studio-for-mac"></a>Instalación y administración de paquetes NuGet en Visual Studio para Mac
 
@@ -27,7 +27,7 @@ Para obtener una introducción al uso de NuGet en Visual Studio para Mac, consul
 
     ![Acción contextual de adición de nuevo paquete NuGet](media/nuget-walkthrough-packages-menu.png)
 
-2. Se abre la ventana **Administrar paquetes NuGet**. Asegúrese de que la lista desplegable Origen de la esquina superior izquierda del cuadro de diálogo está establecida en `nuget.org`.
+2. Se abre la ventana **Administrar paquetes NuGet**. Asegúrese de que la lista desplegable Origen de la esquina superior izquierda del cuadro de diálogo esté establecida en `nuget.org`, de modo que pueda realizar la búsqueda en el repositorio de paquetes central de NuGet.
 
     ![Lista de paquetes NuGet](media/nuget-walkthrough-add-packages1.png)
 
@@ -71,6 +71,7 @@ Haga clic con el botón derecho en **Dependencias** para acceder al menú contex
 
 Las opciones Actualizar y Restaurar también están disponibles en el nivel de solución y afectan a todos los proyectos de esta.
 
+### <a name="locating-outdated-packages"></a>Búsqueda de paquetes obsoletos
 En el Panel de solución, puede ver la versión de un paquete que está instalada actualmente y hacer clic con el botón derecho en el paquete que se va a actualizar.
 
 ![Menú Paquetes con las opciones para Actualizar, Quitar y Refrescar.](media/nuget-walkthrough-PackageMenu.png)
@@ -83,6 +84,32 @@ En el menú que se muestra, tiene dos opciones:
 
 * **Actualizar**: comprueba el servidor de origen y descarga una versión más reciente (si la hubiera).
 * **Quitar**: quita el paquete de este proyecto y quita los ensamblados correspondientes de las referencias del proyecto.
+
+## <a name="manage-packages-for-the-solution"></a>Administración de paquetes para la solución
+
+Administrar los paquetes de una solución es un medio cómodo para trabajar con varios proyectos a la vez.
+
+1. Haga clic con el botón derecho en la solución y seleccione **Administrar paquetes NuGet...** :
+
+    ![Administrar paquetes NuGet para la solución](media/nuget-walkthrough-manage-packages-solution.png)
+
+1. Cuando administra paquetes para la solución, la interfaz de usuario le permite seleccionar los proyectos que se ven afectados por las operaciones:
+
+    ![Selector de proyectos al administrar los paquetes para la solución](media/nuget-walkthrough-add-to-projects.png)
+
+### <a name="consolidate-tab"></a>Pestaña Consolidar
+
+Al trabajar en una solución con varios proyectos, un procedimiento recomendado es asegurarse de que cualquier lugar en el que se use el mismo paquete NuGet en cada proyecto esté usando también el mismo número de versión de ese paquete. Visual Studio para Mac facilita esta tarea, ya que proporciona la pestaña **Consolidado** en la interfaz de usuario del Administrador de paquetes a la hora de administrar paquetes para una solución. Con esta pestaña, puede ver fácilmente dónde se usan los paquetes con números de versión diferentes en distintos proyectos de la solución:
+
+![Pestaña Consolidar de la interfaz de usuario del Administrador de paquetes](media/nuget-walkthrough-consolidate-tab.png)
+
+En este ejemplo, el proyecto NuGetDemo usa Microsoft.EntityFrameworkCore 2.20, mientras que NuGetDemo.Shared usa Microsoft.EntityFrameworkCore 2.2.6. Para consolidar las versiones de los paquetes, haga lo siguiente:
+
+- Seleccione los proyectos que se van a actualizar en la lista de proyectos.
+- Seleccione la versión que usará en todos los proyectos de la lista **Nueva versión**, como Microsoft.EntityFrameworkCore 3.0.0.
+- Seleccione el botón **Consolidar paquete**.
+
+El Administrador de paquetes instala la versión de paquete seleccionada en todos los proyectos seleccionados, después de lo cual el paquete deja de aparecer en la pestaña **Consolidar**.
 
 ## <a name="adding-package-sources"></a>Adición de orígenes de paquetes
 

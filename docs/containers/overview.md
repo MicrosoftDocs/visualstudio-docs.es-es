@@ -6,12 +6,12 @@ ms.author: ghogen
 ms.topic: overview
 ms.date: 03/20/2019
 ms.technology: vs-azure
-ms.openlocfilehash: b60e5df4d94c290ca8aa7bf56471b5fed6c1879a
-ms.sourcegitcommit: 97623fd6190c43fed0d2ee7af92b01c375282622
+ms.openlocfilehash: 312c827c3b748e10951b243070f43cce559e3a60
+ms.sourcegitcommit: bbff780cda82bb64862d77fe8f407f1803beb876
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73568907"
+ms.lasthandoff: 11/16/2019
+ms.locfileid: "74127192"
 ---
 # <a name="container-tools-in-visual-studio"></a>Herramientas de contenedor en Visual Studio
 
@@ -53,11 +53,13 @@ La compatibilidad con Docker está disponible para proyectos ASP.NET, proyectos 
 
 La compatibilidad con Docker en Visual Studio ha cambiado a lo largo de una serie de versiones en respuesta a las necesidades del cliente. Hay dos niveles de compatibilidad con Docker que puede agregar a un proyecto, y las opciones admitidas varían según el tipo de proyecto y la versión de Visual Studio. Con algunos tipos de proyectos admitidos, si simplemente quiere un contenedor para un único proyecto, sin usar la orquestación, puede hacerlo si agrega compatibilidad con Docker.  El siguiente nivel es la compatibilidad con la orquestación de contenedores, que agrega los archivos de compatibilidad adecuados para el orquestador determinado que elija.  
 
-
 Con Visual Studio 2019, puede usar Docker Compose, Kubernetes y Service Fabric como servicios de orquestación de contenedores.
 
 > [!NOTE]
 > Si va a usar la plantilla completa del proyecto de consola de .NET Framework, al agregar compatibilidad con Docker se agrega automáticamente compatibilidad con la orquestación mediante Docker Compose.
+
+Las versiones 16.4 y posteriores de Visual Studio 2019 incluyen la ventana **Contenedores**, en la que puede ver los contenedores en ejecución, examinar las imágenes disponibles, ver las variables de entorno, los registros y las asignaciones de puertos, inspeccionar el sistema de archivos, adjuntar un depurador o abrir una ventana de terminal dentro del entorno de un contenedor. Vea [Visualización y diagnóstico de contenedores e imágenes en Visual Studio](view-and-diagnose-containers.md).
+
 ::: moniker-end
 
 ### <a name="adding-docker-support"></a>Adición de compatibilidad con Docker
