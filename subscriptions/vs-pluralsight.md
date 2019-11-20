@@ -3,15 +3,15 @@ title: Ventaja de Pluralsight en las suscripciones de Visual Studio | Microsoft 
 author: evanwindom
 ms.author: lank
 manager: lank
-ms.date: 08/02/2019
+ms.date: 11/18/2019
 ms.topic: conceptual
 description: Obtenga información sobre la suscripción de aprendizaje de Pluralsight incluida en la suscripción de Visual Studio.
-ms.openlocfilehash: 25a699f0e97f88fefaaf5b62f752ef579c0cd736
-ms.sourcegitcommit: 689ba54ea14257d13031de881f5d4fe937a36f56
+ms.openlocfilehash: 7db7858b95ca0b78ea54cebc394c3d57de53305a
+ms.sourcegitcommit: 5c9ca18eadc7ed0ed095cc5a3e1df40bbc13e70c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "71342387"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "74161961"
 ---
 # <a name="pluralsight-training-benefits-in-visual-studio-subscriptions"></a>Ventajas de aprendizaje de Pluralsight en las suscripciones de Visual Studio
 
@@ -57,9 +57,11 @@ En la tabla siguiente se detallan los beneficios de la suscripción de Pluralsig
 |                          Nivel de suscripción                          |     Canales      |    Prestación    |   ¿Renovable?   |
 |----------------------------------------------------------------------|-------------------|---------------|----------------|
 |          Visual Studio Enterprise (estándar)           | Licencia por volumen, Azure, venta directa |   6 meses    | Sí<sup>2</sup> |
+|          Visual Studio Enterprise con GitHub Enterprise          | VL  |   6 meses    | Sí<sup>2</sup> |
 |         Visual Studio Professional (estándar)          | Licencia por volumen, Azure, venta directa |   3 meses    | Sí<sup>2</sup> |
-|              Visual Studio Test Professional (estándar)              |    Licencia por volumen, venta directa     |   3 meses    | No |
-|                      Plataformas MSDN (estándar)                       |    Licencia por volumen, venta directa     |   3 meses    | No |
+|         Visual Studio Professional con GitHub Enterprise          | VL  |   3 meses    | Sí<sup>2</sup> |
+|              Visual Studio Test Professional (estándar)              |    Licencia por volumen, venta directa     |   3 meses    | Sí<sup>2</sup>  |
+|                      Plataformas MSDN (estándar)                       |    Licencia por volumen, venta directa     |   3 meses    | Sí<sup>2</sup>  |
 | Visual Studio Enterprise, Visual Studio Professional (de nube mensual) |       Azure       | No disponible |       NA       |
 |             Visual Studio Enterprise (NFR<sup>1</sup>)              |      Programa      | No disponible |       NA       |
 ||
@@ -97,3 +99,5 @@ R:  Al final de su suscripción gratuita de Pluralsight, puede comprar una suscr
 
 ## <a name="next-steps"></a>Pasos siguientes
 Una vez que haya creado la cuenta, tendrá todo listo para iniciar el aprendizaje.  Visite [https://www.pluralsight.com](http://www.pluralsight.com) y pulse **Iniciar sesión** en la esquina superior derecha de la página para iniciar un nuevo curso, o vuelva a un curso que ya se ha iniciado.
+
+Para usar su propio espacio aislado de desarrollo, active sus [crédito individual de Azure DevTest](vs-azure.md). 

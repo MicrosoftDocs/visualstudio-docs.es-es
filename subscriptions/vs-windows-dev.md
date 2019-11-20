@@ -3,15 +3,15 @@ title: Beneficio de cuenta de desarrollador de Windows en suscripciones de Visua
 author: evanwindom
 ms.author: lank
 manager: lank
-ms.date: 07/31/2019
+ms.date: 11/18/2019
 ms.topic: conceptual
 description: Obtenga información sobre la cuenta de desarrollador de Windows que se incluye con la suscripción de Visual Studio.
-ms.openlocfilehash: e7dc24fef7328dee38f9aca92f3676573b0143ef
-ms.sourcegitcommit: bcdab788085bd9931d73883fe70cd5831317dca2
+ms.openlocfilehash: 662dc6d911903a4c0d2c0a77382647639bb25d07
+ms.sourcegitcommit: 5c9ca18eadc7ed0ed095cc5a3e1df40bbc13e70c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "72816422"
+ms.lasthandoff: 11/19/2019
+ms.locfileid: "74174115"
 ---
 # <a name="windows-developer-account-in-visual-studio-subscriptions"></a>Cuenta de desarrollador de Windows en suscripciones de Visual Studio
 Su cuenta de desarrollador de Windows, incluida con algunas suscripciones de Visual Studio, permite enviar a Microsoft Store aplicaciones Windows tanto gratuitas como de pago.
@@ -43,7 +43,9 @@ Se recomienda crear una ventana "privada" del explorador para este proceso.  Por
 | Nivel de suscripción                                                 |     Canales                                            | Prestación                                                          | ¿Renovable?    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
 | Visual Studio Enterprise (estándar)   | Licencia por volumen, Azure, venta directa, no para reventa<sup>1</sup> | Included       |  Sí|
+| Visual Studio Enterprise con GitHub Enterprise   | VL  | Included       |  Sí|
 | Visual Studio Professional (estándar) | Licencia por volumen, Azure, venta directa                                       | Included                                                            |Sí|
+| Visual Studio Professional con GitHub Enterprise | VL                                        | Included                                                            |Sí|
 | Visual Studio Test Professional (estándar)                         | Licencia por volumen, venta directa                                              | No disponible                                            |  NA|
 | Plataformas MSDN (estándar)                                          | Licencia por volumen, venta directa                                              |  No disponible                                            |  NA|
 | Visual Studio Enterprise, Visual Studio Professional (de nube mensual) | Azure                                       | No disponible                                                           |NA|
@@ -63,4 +65,7 @@ Se recomienda crear una ventana "privada" del explorador para este proceso.  Por
 - ¿Tiene alguna pregunta sobre el IDE de Visual Studio, Azure DevOps Services u otros productos o servicios de Visual Studio?  Visite el [soporte técnico de Visual Studio](https://visualstudio.microsoft.com/support/).
 
 ## <a name="next-steps"></a>Pasos siguientes
-Azure es su espacio aislado personal para desarrollo y prueba.  Puede aprovisionar máquinas virtuales, servicios en la nube y otros recursos de Azure. Asegúrese de activar su [ventaja de Azure](vs-azure.md) para empezar a usar el crédito individual de Azure DevTest.
+Asegúrese de activar estas ventajas excelentes para aprovechar al máximo su suscripción de Visual Studio:
+- [Visual Studio](vs-ide-benefit.md)
+- [Azure DevOps](vs-azure-devops.md)
+- [Crédito individual de Azure DevTest](vs-azure.md)
