@@ -3,15 +3,15 @@ title: Mejore sus aptitudes de ciencia de datos hoy mismo con el beneficio de Da
 author: evanwindom
 ms.author: lank
 manager: lank
-ms.date: 07/30/2019
+ms.date: 11/13/2019
 ms.topic: conceptual
 description: Obtenga información sobre la suscripción de aprendizaje de DataCamp incluida en la suscripción de Visual Studio seleccionada.
-ms.openlocfilehash: 64176f5a58641bf51434c99eee914a8ac176da56
-ms.sourcegitcommit: 5694c5236fa32ba7f5bc1236a853f725ec7557e9
+ms.openlocfilehash: ea889814373fa7c970e905bb4a845d5ca67c92e7
+ms.sourcegitcommit: 6f25855de9db455e6d38bc105057d2ed1e7454b9
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "68681637"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "74199878"
 ---
 # <a name="the-datacamp-training-benefit-in-visual-studio-subscriptions"></a>Beneficio de aprendizaje de DataCamp en suscripciones de Visual Studio
 Entre las suscripciones de Visual Studio válidas se incluyen las suscripciones a DataCamp.  Con DataCamp, puede obtener información sobre todas las aptitudes ciencia de datos que necesita cómodamente desde el explorador. Puede elegir cuándo y qué aprender. Al no tener que instalar ningún software ni cumplir ningún requisito de hardware en particular, ahora el aprendizaje de ciencia de datos es más fácil que nunca.
@@ -59,7 +59,9 @@ Puede parar en cualquier momento y reanudar el curso en la siguiente sesión.  S
 | Nivel de suscripción                                                 |     Canales                                            | Prestación                                                          | ¿Renovable?    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
 | Visual Studio Enterprise (estándar)   | Licencia por volumen, Azure, venta directa | 3 meses       |  No.  Disponible solo para nuevos suscriptores          |
+| Visual Studio Enterprise con GitHub Enterprise   | VL | 3 meses       |  No.  Disponible solo para nuevos suscriptores          |
 | Visual Studio Professional (estándar) | Licencia por volumen, Azure, venta directa                                       | 3 meses                                                            |  No.  Disponible solo para nuevos suscriptores           |
+| Visual Studio Professional con GitHub Enterprise| VL | 3 meses                                                            |  No.  Disponible solo para nuevos suscriptores           |
 | Visual Studio Test Professional (estándar)                         | Licencia por volumen, venta directa                                              | 3 meses                                             |  No.  Disponible solo para nuevos suscriptores           |
 | Plataformas MSDN (estándar)                                          | Licencia por volumen, venta directa                                              | 3 meses                                              |  No.  Disponible solo para nuevos suscriptores           |
 | Visual Studio Enterprise (estándar)  | NFR<sup>1</sup> |No disponible  | N/D |
@@ -84,4 +86,6 @@ Puede parar en cualquier momento y reanudar el curso en la siguiente sesión.  S
 Revise más oportunidades de desarrollo profesional en la suscripción:
 - [Pluralsight](vs-pluralsight.md)
 - [Aprendizaje de LinkedIn](vs-linkedin-learning.md)
-- [MSDN Magazine](vs-msdn.md)
+
+
+Si todavía no ha activado la ventaja de crédito individual de Azure DevTest incluida en la suscripción, visite [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs) y haga clic en el icono de Azure de la categoría Herramientas para configurar la suscripción de Azure y canjear el crédito individual de Azure DevTest.

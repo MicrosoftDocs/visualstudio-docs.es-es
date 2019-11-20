@@ -1,7 +1,7 @@
 ---
 title: Desarrollo móvil multiplataforma con C++ | Microsoft Docs
 ms.custom: ''
-ms.date: 10/17/2019
+ms.date: 11/14/2019
 ms.technology: vs-ide-mobile
 ms.topic: conceptual
 dev_langs:
@@ -12,12 +12,12 @@ ms.author: corob
 manager: jillfra
 ms.workload:
 - xplat-cplusplus
-ms.openlocfilehash: 61bb3e17b104759995852959a7396d5a76927cfb
-ms.sourcegitcommit: 8a96a65676fd7a2a03b0803d7eceae65f3fa142b
+ms.openlocfilehash: bc4164ec405aed2941e807934ee8d66b7ae72504
+ms.sourcegitcommit: ca3bb6db949f5e405f6ffe1afa5f430662c1173f
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "72589038"
+ms.lasthandoff: 11/15/2019
+ms.locfileid: "74098979"
 ---
 # <a name="cross-platform-mobile-development-with-c"></a>Desarrollo móvil multiplataforma con C++
 
@@ -42,10 +42,6 @@ Desarrollo móvil con C++ móviles es una carga de trabajo instalable que se pro
 Si tiene experiencia con el desarrollo Android o iOS, tenemos material excelente para que pueda empezar a trabajar. Visual Studio es un entorno de desarrollo expresivo y con capacidad. Para obtener información sobre cómo usarlo, pruebe con las guías [Introducción para desarrolladores de Android](/previous-versions/windows/apps/dn275875\(v=win.10\)) o [Introducción para desarrolladores de iOS](/previous-versions/windows/apps/jj657966\(v=win.10\)). Estos artículos presentan Visual Studio y los conceptos que necesitará para desarrollar aplicaciones multiplataforma para Windows y Windows Store. Para empezar a programar su primera aplicación multiplataforma para iOS y Android, vea [Crear una aplicación de OpenGL ES en Android e iOS](../cross-platform/build-an-opengl-es-application-on-android-and-ios.md).
 
 La carga de trabajo Desarrollo móvil con C++ incluye varias plantillas para ayudarle a iniciarse en sus aplicaciones:
-
-- Aplicación OpenGLES 2 (Android, iOS, Windows Universal)
-
-  Crea una solución que incluye un conjunto de proyectos para compilar una aplicación de actividad nativa de Android, una aplicación de iOS y una aplicación universal de Windows, junto con una biblioteca de código compartido de C++. Estas aplicaciones usan bibliotecas específicas de plataforma creadas con código C++ OpenGL ES común para diseñar el mismo cubo giratorio en cada aplicación. Para usar esta plantilla, incluya la carga de trabajo **Desarrollo de la plataforma universal de Windows** cuando instale Visual Studio.
 
 - Aplicación de actividad nativa (Android)
 
