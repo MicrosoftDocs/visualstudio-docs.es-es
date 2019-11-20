@@ -3,15 +3,15 @@ title: Beneficio de IDE de Visual Studio en las suscripciones de Visual Studio |
 author: evanwindom
 ms.author: lank
 manager: lank
-ms.date: 08/01/2019
+ms.date: 11/14/2019
 ms.topic: conceptual
 description: Obtenga información sobre cómo descargar e instalar el IDE de Visual Studio incluido en la suscripción a Visual Studio.
-ms.openlocfilehash: 5a5acda814739f907aaa36e9b3408527b5ece732
-ms.sourcegitcommit: bcdab788085bd9931d73883fe70cd5831317dca2
+ms.openlocfilehash: 74f7de0272130f88c683dcabefaecccf1554ab12
+ms.sourcegitcommit: ca3bb6db949f5e405f6ffe1afa5f430662c1173f
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "72816519"
+ms.lasthandoff: 11/15/2019
+ms.locfileid: "74099635"
 ---
 # <a name="the-visual-studio-2019-benefit"></a>La ventaja de Visual Studio 2019
 
@@ -62,7 +62,9 @@ Para descargar el IDE:
 | Nivel de suscripción                                                 |     Canales                                            | Prestación                                                          | ¿Renovable?    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
 | Visual Studio Enterprise (estándar, de nube mensual)   | Licencia por volumen, Azure, venta directa, no para reventa<sup>1</sup> | Disponible       |  Sí          |
+| Visual Studio Enterprise con GitHub Enterprise   | VL | Disponible       |  Sí          |
 | Visual Studio Professional (estándar, de nube mensual) | Licencia por volumen, Azure, venta directa                                       | Disponible                                                            |  Sí          |
+| Visual Studio Professional con GitHub Enterprise | VL   | Disponible              |  Sí          |
 | Visual Studio Test Professional (estándar)                         | Licencia por volumen, venta directa                                              | Disponible                                             |  Sí         |
 | Plataformas MSDN (estándar)                                          | Licencia por volumen, venta directa                                              | No disponible                                              |  N/D          |
 

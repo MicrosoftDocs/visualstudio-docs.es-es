@@ -7,12 +7,12 @@ ms.date: 02/01/2019
 ms.prod: visual-studio-dev16
 ms.technology: vs-azure
 ms.topic: include
-ms.openlocfilehash: 124f60a4a632115625524b4e30ab28f795d41660
-ms.sourcegitcommit: 44e9b1d9230fcbbd081ee81be9d4be8a485d8502
+ms.openlocfilehash: 7eae92f7c65208dfeda9cd19e14eaa627e12a22a
+ms.sourcegitcommit: bbff780cda82bb64862d77fe8f407f1803beb876
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/30/2019
-ms.locfileid: "71126122"
+ms.lasthandoff: 11/16/2019
+ms.locfileid: "74142218"
 ---
 Con Visual Studio, es muy fácil compilar, depurar y ejecutar aplicaciones ASP.NET Core en contenedores y publicarlas en Azure Container Registry (ACR), Docker Hub, Azure App Service o su propio registro de contenedor. En este artículo, realizaremos la publicación en ACR.
 
@@ -92,6 +92,18 @@ Ejecute el comando `docker ps` en la PMC. Tenga en cuenta que la aplicación se 
 CONTAINER ID        IMAGE                  COMMAND               CREATED             STATUS              PORTS                                           NAMES
 cf5d2ef5f19a        hellodockertools:dev   "tail -f /dev/null"   2 minutes ago       Up 2 minutes        0.0.0.0:52036->80/tcp, 0.0.0.0:44342->443/tcp   priceless_cartwright
 ```
+
+## <a name="containers-window"></a>Ventana Contenedores
+
+Si tiene la versión 16.4 u otra posterior de Visual Studio 2019, puede usar la ventana **Contenedores** para consultar los contenedores en ejecución en la máquina, así como las imágenes disponibles.
+
+Abra la ventana **Contenedores** mediante el cuadro de búsqueda del IDE (**Ctrl**+**Q**), escriba `container` y elija la ventana **Contenedores** de la lista.
+
+Puede colocar la ventana **Contenedores** en un lugar fácilmente accesible, como debajo del editor; para ello, muévala siguiendo las guías de colocación de ventanas.
+
+En la ventana, busque el contenedor y recorra cada pestaña para ver las variables de entorno, las asignaciones de puertos, los registros y el sistema de archivos.
+
+Para obtener más información, vea [Visualización y diagnóstico de contenedores e imágenes en Visual Studio](../../view-and-diagnose-containers.md).
 
 ## <a name="publish-docker-images"></a>Publicar imágenes de Docker
 

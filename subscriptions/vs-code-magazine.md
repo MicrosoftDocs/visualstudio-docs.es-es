@@ -3,15 +3,15 @@ title: Ventaja de CODE Magazine en las suscripciones de Visual Studio | Microsof
 author: evanwindom
 ms.author: lank
 manager: lank
-ms.date: 09/17/2019
+ms.date: 10/13/2019
 ms.topic: conceptual
 description: Obtenga información sobre el beneficio de CODE Magazine incluido en su suscripción de Visual Studio.
-ms.openlocfilehash: 80efa2c78b8780f319ab5e532d74b689d5998cef
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.openlocfilehash: 6f120bae88a7d613873a9d350e411842904e700e
+ms.sourcegitcommit: ca3bb6db949f5e405f6ffe1afa5f430662c1173f
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71256634"
+ms.lasthandoff: 11/15/2019
+ms.locfileid: "74099594"
 ---
 # <a name="code-magazine-included-in-visual-studio-subscriptions"></a>CODE Magazine incluido en suscripciones de Visual Studio
 
@@ -23,25 +23,25 @@ El proceso para configurar la suscripción a CODE Magazine es sencillo.  Tan sol
 1. Visite [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs).
 2. Busque el icono de CODE Magazine en la sección de desarrollo profesional o educación del portal y haga clic en **Get Code** (Obtener código).
    > [!div class="mx-imgBorder"]
-   > ![Icono de CODE Magazine](_img/vs-code-magazine/vs-code-magazine-tile.png "CODE Magazine tile")
+   > ![Icono de CODE Magazine](_img/vs-code-magazine/vs-code-magazine-tile.png "Icono de CODE Magazine")
 3. Verá un mensaje que indica que el código se ha recuperado.  Haga clic en **Activar** para continuar.  (Si no está listo para activarlo, no importa.  Siempre puede volver al icono para activarlo.  El vínculo "Get Code" se leerá "Activate" después de recuperar el código).
    > [!div class="mx-imgBorder"]
    > ![Código de CODE Magazine recuperado](_img/vs-code-magazine/vs-code-magazine-success.png "Código recuperado correctamente")
 4. Se le redirigirá a la página de aterrizaje de CODE Magazine. Seleccione su país y elija cómo le gustaría recibir la revista. 
-> [!NOTE]
-> Los miembros de Visual Studio Dev Essentials solo tienen acceso a la suscripción digital. 
+   > [!NOTE]
+   > Los miembros de Visual Studio Dev Essentials solo tienen acceso a la suscripción digital. 
 5. En función de sus selecciones, verá una nota en la que se muestra el precio de la suscripción junto con el importe del cupón que se ha aplicado.
-> [!NOTE]
-> Para las suscripciones impresas:
-> - Los suscriptores fuera de Estados Unidos pueden incurrir en gastos de envío. 
-> - Espere algunas semanas para la entrega de la primera edición impresa.
-   > [!div class="mx-imgBorder"]
-   > ![Detalles de la suscripción a CODE Magazine](_img/vs-code-magazine/vs-code-magazine-details.png "Detalles y precio de la suscripción")
+   > [!NOTE]
+   > Para las suscripciones impresas:
+   > - Los suscriptores fuera de Estados Unidos pueden incurrir en gastos de envío. 
+   > - Espere algunas semanas para la entrega de la primera edición impresa.
+      > [!div class="mx-imgBorder"]
+      > ![Detalles de la suscripción a CODE Magazine](_img/vs-code-magazine/vs-code-magazine-details.png "Detalles y precio de la suscripción")
 6. A continuación, deberá proporcionar su información de suscriptor y una dirección de entrega.  (La dirección de entrega es necesaria incluso para las suscripciones digitales, ya que respalda el cumplimiento, la selección de ofertas y los procesos de acceso digital).
 7. Si vive fuera de Estados Unidos y opta por recibir una suscripción de la revista impresa, es posible que se le pida que proporcione una dirección de facturación e información de pago para cubrir los costos de envío. 
 8. Si quiere recibir el boletín CODE HTML, haga clic en la casilla.
    > [!div class="mx-imgBorder"]
-   > ![Información de suscriptor de CODE Magazine](_img/vs-code-magazine/vs-code-magazine-subscriber-info.png "Información de suscriptor y dirección de entrega")
+   > ![Información de suscriptor a CODE Magazine](_img/vs-code-magazine/vs-code-magazine-subscriber-info.png "Información de suscriptor y dirección de entrega")
 9. Haga clic en **Realizar pedido** para completar la suscripción.  
 Tras completar su pedido de suscripción, verá una página de confirmación con un vínculo que puede usar para ver las ediciones que ha recibido: https://codemag.com/my/fulfillment. 
 
@@ -49,7 +49,9 @@ Tras completar su pedido de suscripción, verá una página de confirmación con
 | Nivel de suscripción                                                 |     Canales                                            | Prestación                                                          | ¿Renovable?    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
 | Visual Studio Enterprise (estándar)   | Licencia por volumen, Azure, venta directa, no para reventa<sup>1</sup> | Disponible       |  No          |
-| Visual Studio Professional (estándar<sup>2</sup>) | Licencia por volumen, Azure, venta directa                                       | Disponible                                                            |  No          |
+| Visual Studio Enterprise con GitHub Enterprise   | VL| Disponible       |  No          |
+| Visual Studio Professional (estándar) | Licencia por volumen, Azure, venta directa                                       | Disponible                                                            |  No          |
+| Visual Studio Professional con GitHub Enterprise | VL                                      | Disponible                                                            |  No          |
 | Visual Studio Test Professional (estándar)                         | Licencia por volumen, venta directa                                              | Disponible                                             |  No          |
 | Plataformas MSDN (estándar)                                          | Licencia por volumen, venta directa                                              | Disponible                                              |  No          |
 | Visual Studio Enterprise, Visual Studio Professional (de nube mensual) | Azure | No disponible | N/D |
@@ -76,3 +78,4 @@ R:  CODE Magazine recopila su dirección, independientemente de si se trata de u
 ## <a name="next-steps"></a>Pasos siguientes
 Consulte el resto de las increíbles ventajas que incluye su suscripción. Visite [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs).
 
+Si todavía no ha activado la ventaja de crédito individual de Azure DevTest incluida en la suscripción, visite [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs) y haga clic en el icono de Azure de la categoría Herramientas para configurar la suscripción de Azure y canjear el crédito individual de Azure DevTest.
