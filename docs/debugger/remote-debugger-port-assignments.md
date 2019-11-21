@@ -9,12 +9,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cf3d3ce704d517224452731c52a891ac2263f738
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 2d99a1aff2c241e81e8914a247d2f6d8981ee273
+ms.sourcegitcommit: 9c7d8693108ecd2042a70c04cebe3c44af657baf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72730242"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "74239454"
 ---
 # <a name="remote-debugger-port-assignments"></a>Asignaciones de puertos del depurador remoto
 El depurador remoto de Visual Studio se puede ejecutar como una aplicación o como un servicio en segundo plano. Cuando se ejecuta como una aplicación, usa un puerto asignado de forma predeterminada como se muestra a continuación:
@@ -29,7 +29,7 @@ El depurador remoto de Visual Studio se puede ejecutar como una aplicación o co
 
 - Visual Studio 2012: 4016
 
-  En otras palabras, el número de puerto asignado al depurador remoto se incrementa en 2 para cada versión. Puede establecer un número de puerto distinto según desee. Explicaremos cómo establecer números de puerto en una sección posterior.
+En otras palabras, el número de puerto asignado al depurador remoto se incrementa en 2 para cada versión. Puede establecer un número de puerto distinto según desee. Explicaremos cómo establecer números de puerto en una sección posterior.
 
 ## <a name="the-remote-debugger-port-on-32-bit-operating-systems"></a>Puerto del depurador remoto en sistemas operativos de 32 bits
 
@@ -57,9 +57,9 @@ El depurador remoto de Visual Studio se puede ejecutar como una aplicación o co
  Este puerto se puede configurar desde la línea de comandos: **Msvsmon /wow64port \<número de puerto>** .
 
 ## <a name="the-discovery-port"></a>Puerto de detección
- UDP 3702 se usa para buscar instancias en ejecución del depurador remoto en la red (por ejemplo, el cuadro de diálogo **Buscar** en el cuadro de diálogo **Asociar al proceso** ). Se usa solo para detectar una máquina que ejecute el depurador remoto, por lo que es opcional si tiene alguna otra manera de conocer el nombre del equipo o la dirección IP del equipo de destino. Se trata de un puerto estándar para la detección, por lo que no es posible configurar el número de puerto.
+ UDP 3702 se usa para buscar instancias en ejecución del depurador remoto en la red (por ejemplo, el cuadro de diálogo **Buscar** en el cuadro de diálogo **Asociar al proceso**). Se usa solo para detectar una máquina que ejecute el depurador remoto, por lo que es opcional si tiene alguna otra manera de conocer el nombre del equipo o la dirección IP del equipo de destino. Se trata de un puerto estándar para la detección, por lo que no es posible configurar el número de puerto.
 
- Si no desea habilitar la detección, puede iniciar msvsmon desde la línea de comandos con la detección deshabilitada:  **Msvsmon /nodiscovery**.
+ Si no desea habilitar la detección, puede iniciar msvsmon desde la línea de comandos con la detección deshabilitada: **Msvsmon /nodiscovery**.
 
 ## <a name="remote-debugger-ports-on-azure"></a>Puertos del depurador remoto en Azure
  El depurador remoto en Azure usa los puertos siguientes. Los puertos del servicio en la nube se asignan a los puertos en la máquina virtual individual. Todos los puertos son TCP.
@@ -72,4 +72,4 @@ El depurador remoto de Visual Studio se puede ejecutar como una aplicación o co
 |Microsoft.WindowsAzure.Plugins.RemoteDebugger.FileUpload|32400|32398|
 
 ## <a name="see-also"></a>Vea también
-- [Remote Debugging](../debugger/remote-debugging.md)
+- [Depuración remota](../debugger/remote-debugging.md)
