@@ -9,12 +9,12 @@ caps.latest.revision: 20
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: cb77271c37b02104a0e1695d5495ff085518acad
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: c65561f9a9a2ca287232b7a61bb0e07ca07a769d
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65675284"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74299661"
 ---
 # <a name="performance-tools-on-windows-8-and-windows-server-2012-applications"></a>Herramientas de rendimiento en aplicaciones de Windows 8 y Windows Server 2012
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -64,7 +64,7 @@ Las características de seguridad mejoradas en Windows 8 y Windows Server 2012 r
   
 - [Tiempo de función de JavaScript](https://msdn.microsoft.com/library/b2bf49fc-aea7-4d9c-8fcf-cff8b8dd0c03)  
   
-- [Tiempo de función de JavaScript en un dispositivo remoto](https://msdn.microsoft.com/library/d78812b6-a97e-46dc-8d99-e724d1d725d8)  
+- [JavaScript Function Timing on a Remote Device](https://msdn.microsoft.com/library/d78812b6-a97e-46dc-8d99-e724d1d725d8)  
   
 - [Analizar los datos de control de tiempo de función de JavaScript](https://msdn.microsoft.com/library/b5aea8d8-36df-47ba-a7ca-95406700ca9b)  
   
@@ -100,7 +100,7 @@ Las características de seguridad mejoradas en Windows 8 y Windows Server 2012 r
   
  Para generar perfiles de aplicaciones en dispositivos que no tienen Visual Studio instalado, realice alguno de los siguientes procedimientos:  
   
-- Descargue las herramientas como parte de las Herramientas remotas para Visual Studio desde el [sitio web de MSDN](http://go.microsoft.com/fwlink/?LinkID=219549).  
+- Descargue las herramientas como parte de las Herramientas remotas para Visual Studio desde el [sitio web de MSDN](https://go.microsoft.com/fwlink/?LinkID=219549).  
   
 - Copie y ejecute el programa de instalación independiente de las herramientas de generación de perfiles desde el equipo de Visual Studio. Los programas de instalación están en la carpeta *%VSInstallDir%* **\Team Tools\Performance Tools\Setups** . Elija el programa de instalación para el sistema operativo (x86/x64) del equipo remoto.  
   
@@ -136,7 +136,7 @@ Las características de seguridad mejoradas en Windows 8 y Windows Server 2012 r
   
    **Recopilación de datos de TIP en un equipo remoto**  
   
-   Para recopilar datos de interacción de capas en un equipo remoto, debe copiar el archivo **vs\_profiler\_**_\<plataforma>_**\_**_\<lenguaje>_**.exe** de la carpeta _%VSInstallDir%_**\Team Tools\Performance Tools\Setups** de un equipo de Visual Studio en el equipo remoto e instalarlo. Las herramientas de generación de perfiles no se pueden usar en el paquete de descarga de [Herramientas remotas para Visual Studio](https://msdn.microsoft.com/library/90f45630-0d26-4698-8c1f-63f85a12db9c) .  
+   Para recopilar datos de interacción de capas en un equipo remoto, debe copiar el archivo **vs\_profiler\_** _\<plataforma>_ **\_** _\<lenguaje>_ **.exe** de la carpeta _%VSInstallDir%_ **\Team Tools\Performance Tools\Setups** de un equipo de Visual Studio en el equipo remoto e instalarlo. Las herramientas de generación de perfiles no se pueden usar en el paquete de descarga de [Herramientas remotas para Visual Studio](https://msdn.microsoft.com/library/90f45630-0d26-4698-8c1f-63f85a12db9c) .  
   
    Puede usar [VSPerfCmd](../profiling/vsperfcmd.md) o [VSPerfASPNetCmd](../profiling/vsperfaspnetcmd.md) para recopilar los datos de generación de perfiles.  
   

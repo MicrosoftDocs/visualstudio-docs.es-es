@@ -11,14 +11,14 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 11/11/2017
 ms.author: ghogen
-ms.openlocfilehash: 3dfea05e38930cc4613335fa5b5bccbe228b71fe
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 70217cc4c83a1f281e8a2fdebec404fa9757bf01
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62422736"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74299023"
 ---
-# <a name="configuring-your-azure-project-in-visual-studio-to-use-multiple-service-configurations"></a>Configuración de su proyecto de Azure en Visual Studio para usar varias configuraciones de servicio
+# <a name="configuring-your-azure-project-in-visual-studio-to-use-multiple-service-configurations"></a>Configuración del proyecto de Azure en Visual Studio para usar varias configuraciones de servicio
 
 Un proyecto de servicio en la nube de Azure en Visual Studio incluye tres archivos de configuración: `ServiceDefinition.csdef`, `ServiceConfiguration.Local.cscfg` y `ServiceConfiguration.Cloud.cscfg`:
 
@@ -53,11 +53,11 @@ Si ya se ha agregado un extremo HTTPS, la opción de extremo HTTPS se habilita d
 
 ### <a name="diagnostics"></a>Diagnóstico
 
-De manera predeterminada, la funcionalidad de diagnóstico está habilitada para el rol web. El proyecto de servicio en la nube de Azure y la cuenta de almacenamiento se establecen para usar el emulador de almacenamiento local. Cuando esté listo para realizar la implementación en Azure, puede seleccionar el botón del generador (**…**) para usar Azure Storage en su lugar. Los datos de diagnóstico se pueden transferir a la cuenta de almacenamiento a petición o a intervalos programados automáticamente. Para más información sobre los diagnósticos de Azure, consulte [Habilitación de Diagnósticos en Azure Cloud Services y Azure Virtual Machines](/azure/cloud-services/cloud-services-dotnet-diagnostics).
+De manera predeterminada, la funcionalidad de diagnóstico está habilitada para el rol web. El proyecto de servicio en la nube de Azure y la cuenta de almacenamiento se establecen para usar el emulador de almacenamiento local. Cuando esté listo para realizar la implementación en Azure, puede seleccionar el botón del generador ( **…** ) para usar Azure Storage en su lugar. Los datos de diagnóstico se pueden transferir a la cuenta de almacenamiento a petición o a intervalos programados automáticamente. Para más información sobre los diagnósticos de Azure, consulte [Habilitación de Diagnósticos en Azure Cloud Services y Azure Virtual Machines](/azure/cloud-services/cloud-services-dotnet-diagnostics).
 
 ## <a name="settings-page"></a>Página Configuración
 
-En la página **Configuración**, puede agregar la configuración como pares nombre-valor. El código que se ejecuta en el rol puede leer los valores de sus valores de configuración en tiempo de ejecución mediante las clases proporcionadas por la [biblioteca administrada de Azure](http://go.microsoft.com/fwlink?LinkID=171026), en particular, el método [GetConfigurationSettingValue](https://msdn.microsoft.com/library/azure/microsoft.windowsazure.serviceruntime.roleenvironment.getconfigurationsettingvalue.aspx).
+En la página **Configuración**, puede agregar la configuración como pares nombre-valor. El código que se ejecuta en el rol puede leer los valores de sus valores de configuración en tiempo de ejecución mediante las clases proporcionadas por la [biblioteca administrada de Azure](https://go.microsoft.com/fwlink?LinkID=171026), en particular, el método [GetConfigurationSettingValue](https://msdn.microsoft.com/library/azure/microsoft.windowsazure.serviceruntime.roleenvironment.getconfigurationsettingvalue.aspx).
 
 ### <a name="configuring-a-connection-string-for-a-storage-account"></a>Configuración de una cadena de conexión para una cuenta de almacenamiento
 
@@ -70,7 +70,7 @@ Puede establecer la cadena de conexión para usar el almacenamiento local según
 
 Para crear una cadena de conexión, seleccione **Agregar configuración** y establezca el **Tipo** en "Cadena de conexión".
 
-Para cadenas de conexión nuevas o existentes, seleccione **...*** a la derecha del campo **Valor** para abrir el cuadro de diálogo **Crear cadena de conexión de almacenamiento**:
+Para cadenas de conexión nuevas o existentes, seleccione **...** * a la derecha del campo **Valor** para abrir el cuadro de diálogo **Crear cadena de conexión de almacenamiento**:
 
 1. En **Conectar mediante**, elija la opción **Su suscripción** para seleccionar una cuenta de almacenamiento de una suscripción. Después, Visual Studio obtiene las credenciales de la cuenta de almacenamiento automáticamente del archivo `.publishsettings`.
 1. Si selecciona **Credenciales escritas manualmente**, puede especificar el nombre de la cuenta y la clave directamente con la información de Azure Portal. Para copiar la clave de cuenta:
@@ -97,7 +97,7 @@ Puede usar la página de propiedades **Almacenamiento local** para reservar uno 
 
 ## <a name="certificates-page"></a>Página Certificados
 
-La página de propiedades **Certificados** agrega información sobre los certificados a la configuración del servicio. Tenga en cuenta que sus certificados no se incluyen con el servicio, debe cargarlos por separado en Azure mediante [Azure Portal](http://portal.azure.com).
+La página de propiedades **Certificados** agrega información sobre los certificados a la configuración del servicio. Tenga en cuenta que sus certificados no se incluyen con el servicio, debe cargarlos por separado en Azure mediante [Azure Portal](https://portal.azure.com).
 
 Si incorpora un certificado aquí, se agrega información sobre los certificados a la configuración del servicio. Los certificados no se incluyen con el servicio; debe cargarlos por separado mediante Azure Portal.
 

@@ -1,5 +1,5 @@
 ---
-title: 'Diagramas de componentes de UML: instrucciones | Microsoft Docs'
+title: 'UML Component Diagrams: Guidelines | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-modeling
@@ -15,23 +15,23 @@ caps.latest.revision: 37
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 7abc869ebebf4ca2ae8aa1776eaae75f1543176b
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 99f2b67d264edcaab5272d0224d4450ee2e8a6f6
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72652256"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74297164"
 ---
 # <a name="uml-component-diagrams-guidelines"></a>Diagramas de componentes de UML: Instrucciones
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-En Visual Studio, puede dibujar un *Diagrama de componentes* para mostrar la estructura de un sistema de software. Para ver una demostración en vídeo, vea [diseñar la estructura física mediante diagramas de componentes](http://channel9.msdn.com/posts/clinted/UML-with-VS-2010-Part-6-Designing-a-Projects-Physical-Structure/).
+In Visual Studio, you can draw a *component diagram* to show the structure a software system. For a video demonstration, see [Designing the Physical Structure by using Component Diagrams](https://channel9.msdn.com/blogs/clinted/uml-with-vs-2010-part-6-designing-a-projects-physical-structure).
 
  Para ver qué versiones de Visual Studio admiten esta característica, vea [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
 
- Para crear un diagrama de componentes UML, en el menú **arquitectura** , haga clic en **nuevo diagrama de UML o de capas**.
+ To create a UML component diagram, on the **Architecture** menu, click **New UML or Layer Diagram**.
 
- Un componente es una unidad modular que puede reemplazarse en su propio entorno. Sus elementos internos están ocultos, pero tienen una o varias *interfaces proporcionadas* bien definidas a través de las que se puede tener acceso a sus funciones. Un componente también puede tener *interfaces necesarias*. En una interfaz necesaria, se definen las funciones o servicios de otros componentes que son necesarios. Mediante la conexión de las interfaces proporcionadas y las interfaces necesarias de distintos componentes, puede construirse un componente mayor. Un sistema de software completo se puede concebir como un componente.
+ Un componente es una unidad modular que puede reemplazarse en su propio entorno. Its internals are hidden, but it has one or more well-defined *provided interfaces* through which its functions can be accessed. A component can also have *required interfaces*. En una interfaz necesaria, se definen las funciones o servicios de otros componentes que son necesarios. Mediante la conexión de las interfaces proporcionadas y las interfaces necesarias de distintos componentes, puede construirse un componente mayor. Un sistema de software completo se puede concebir como un componente.
 
  El uso de diagramas de componentes tiene algunas ventajas:
 
@@ -41,58 +41,58 @@ En Visual Studio, puede dibujar un *Diagrama de componentes* para mostrar la est
 
   Puede utilizar un diagrama de componentes para representar el diseño con independencia del lenguaje o plataforma que el diseño utiliza o va a utilizar.
 
-## <a name="OtherDiagrams"></a>Relación con otros diagramas
+## <a name="OtherDiagrams"></a> Relationship to Other Diagrams
  Puede utilizar un diagrama de componentes junto con otros diagramas.
 
 |Otro diagrama|Ayuda a debatir y transmitir los siguientes aspectos del diseño|
 |-------------------|--------------------------------------------------------------------|
-|Diagrama de secuencia UML|-Interacciones entre los componentes de un sistema<br />-Interacciones y entre los elementos dentro de un componente.<br /><br /> Para obtener más información, vea [diagramas de secuencia UML: instrucciones](../modeling/uml-sequence-diagrams-guidelines.md).|
-|Diagrama de clases de UML|-Las interfaces de un componente. El diagrama de clases permite detallar los métodos de la interfaz.<br />-Los datos enviados en parámetros entre las interfaces de los componentes.<br /><br /> Para obtener más información, vea [diagramas de clases de UML: instrucciones](../modeling/uml-class-diagrams-guidelines.md).|
-|Diagramas de actividades|-El procesamiento interno realizado por un componente en respuesta a los mensajes entrantes.<br /><br /> Para obtener más información, vea [diagramas de actividades UML: instrucciones](../modeling/uml-activity-diagrams-guidelines.md).|
-|Diagramas de capas|-Niveles de arquitectura lógica para los componentes.<br /><br /> Para obtener más información, vea [diagramas de capas: referencia](../modeling/layer-diagrams-reference.md).|
+|Diagrama de secuencia UML|-   Interactions between a system's components<br />-   Interactions and between the parts inside a component.<br /><br /> For more information, see [UML Sequence Diagrams: Guidelines](../modeling/uml-sequence-diagrams-guidelines.md).|
+|Diagrama de clases de UML|-   The interfaces of a component. El diagrama de clases permite detallar los métodos de la interfaz.<br />-   The data sent in parameters across the components' interfaces.<br /><br /> For more information, see [UML Class Diagrams: Guidelines](../modeling/uml-class-diagrams-guidelines.md).|
+|Diagramas de actividades|-   The internal processing performed by a component in response to incoming messages.<br /><br /> For more information, see [UML Activity Diagrams: Guidelines](../modeling/uml-activity-diagrams-guidelines.md).|
+|Diagramas de capas|-   Logical architectural tiers for your components.<br /><br /> For more information, see [Layer Diagrams: Reference](../modeling/layer-diagrams-reference.md).|
 
-## <a name="Basics"></a>Pasos básicos para dibujar diagramas de componentes
- Para obtener información de referencia sobre los elementos de los diagramas de componentes, vea [diagramas de componentes de UML: referencia](../modeling/uml-component-diagrams-reference.md).
+## <a name="Basics"></a> Basic Steps for Drawing Component Diagrams
+ For reference information about the elements on component diagrams, see [UML Component Diagrams: Reference](../modeling/uml-component-diagrams-reference.md).
 
- Para obtener más información sobre cómo usar los diagramas de componentes en el proceso de diseño, vea [modelar la arquitectura de la aplicación](../modeling/model-your-app-s-architecture.md).
+ For more information about how to use component diagrams in the process of design, see [Model your app's architecture](../modeling/model-your-app-s-architecture.md).
 
 > [!NOTE]
-> En [Editar modelos y diagramas UML,](../modeling/edit-uml-models-and-diagrams.md)se describen los pasos detallados para crear cualquiera de los diagramas de modelado.
+> Detailed steps for creating any of the modeling diagrams are described in [Edit UML models and diagrams](../modeling/edit-uml-models-and-diagrams.md).
 
 #### <a name="to-create-a-component-diagram"></a>Para crear un diagrama de componentes
 
-1. En el menú **arquitectura** , haga clic en **nuevo diagrama de UML o de capas**.
+1. On the **Architecture** menu, click **New UML or Layer Diagram**.
 
-2. En **plantillas**, haga clic en **Diagrama de componentes UML**.
+2. Under **Templates**, click **UML Component Diagram**.
 
 3. Especifique un nombre para el diagrama.
 
-4. En **Agregar a proyecto de modelado**, seleccione un proyecto de modelado existente en la solución o **cree un nuevo proyecto de modelado**y, a continuación, haga clic en **Aceptar**.
+4. In **Add to Modeling Project**, select an existing modeling project in your solution, or **Create a New Modeling Project**, and then click **OK**..
 
-     Aparece un nuevo diagrama de componentes con el cuadro de herramientas **Diagrama de componentes** UML. El cuadro de herramientas contiene las relaciones y elementos necesarios.
+     A new component diagram appears with the UML **Component Diagram** toolbox. El cuadro de herramientas contiene las relaciones y elementos necesarios.
 
 ### <a name="drawing-components"></a>Dibujar componentes
- ![Componentes con interfaces](../modeling/media/uml-compdrawing.png "UML_CompDrawing")
+ ![Components with interfaces](../modeling/media/uml-compdrawing.png "UML_CompDrawing")
 
- Cree un *componente* (1) para cada unidad funcional principal de su sistema o aplicación.
+ Create a *component* (1) for each major functional unit in your system or application.
 
  Algunos ejemplos pueden ser una aplicación, un dispositivo de hardware, un servicio Web, un ensamblado .NET, una clase o un grupo de clases de programa o cualquier segmento de un programa que se pueda separar.
 
 ##### <a name="to-create-components"></a>Para crear componentes
 
-1. Haga clic en **componente** en el cuadro de herramientas y, a continuación, haga clic en una parte en blanco del diagrama.
+1. Click **Component** in the toolbox, and then click a blank part of the diagram.
 
      \- o -
 
      Copie y pegue un componente existente.
 
-    1. Buscar un componente existente en un diagrama o en el **Explorador de modelos UML**.
+    1. Find an existing component in a diagram or in **UML Model Explorer**.
 
-    2. Haga clic con el botón secundario en el componente y, a continuación, haga clic en **copiar**.
+    2. Right-click the component and then click **Copy**.
 
     3. Abra el diagrama en el que desea que aparezca el componente copiado.
 
-    4. Haga clic con el botón secundario en una parte en blanco del diagrama y, a continuación, haga clic en **pegar**.
+    4. Right-click a blank part of the diagram and then click **Paste**.
 
          Aparece una copia del componente con un nombre nuevo.
 
@@ -101,13 +101,13 @@ En Visual Studio, puede dibujar un *Diagrama de componentes* para mostrar la est
 3. Haga clic en el botón de contenido adicional 5) si desea ver exclusivamente el encabezado del componente.
 
 ### <a name="showing-the-ports-of-a-component"></a>Mostrar los puertos de un componente
- Un *Puerto* (2, 3) representa un grupo de mensajes o llamadas de operación que pasan dentro o fuera de un componente. El grupo se describe mediante una interfaz, que define el tipo de puerto. Un puerto puede proporcionar o necesitar una interfaz.
+ A *port* (2, 3) represents a group of messages or operation calls that pass either into or out of a component. El grupo se describe mediante una interfaz, que define el tipo de puerto. Un puerto puede proporcionar o necesitar una interfaz.
 
- Un puerto con una *interfaz proporcionada* (2) proporciona operaciones implementadas por el componente y que pueden usar otros componentes.
+ A port with a *provided interface* (2) supplies operations that are implemented by the component, and that can be used by other components.
 
  Algunos ejemplos serían una interfaz de usuario, un servicio Web, una interfaz de .NET o una colección de funciones de cualquier lenguaje de programación.
 
- Un puerto con una *interfaz necesaria* (3) representa el requisito de un componente para que un grupo de operaciones o servicios sea proporcionado por otros componentes o sistemas externos.
+ A port with a *required interface* (3) represents a component's requirement for a group of operations or services to be provided by other components or external systems.
 
  Por ejemplo, un explorador web necesita servidores web o un complemento de la aplicación necesita los servicios de la aplicación.
 
@@ -115,13 +115,13 @@ En Visual Studio, puede dibujar un *Diagrama de componentes* para mostrar la est
 
 ##### <a name="to-add-ports-to-a-component"></a>Para agregar puertos a un componente
 
-1. En el cuadro de herramientas, haga clic en **interfaz proporcionada** o en **interfaz necesaria**.
+1. In the toolbox, click **Provided Interface** or **Required Interface**.
 
 2. Haga clic en el componente al que desea agregar los puertos.
 
     Aparecerá un puerto en el límite del componente.
 
-    Se crea una nueva interfaz como el tipo del puerto. Esta interfaz aparece en el **Explorador de modelos UML**.
+    Se crea una nueva interfaz como el tipo del puerto. This interface appears in **UML Model Explorer**.
 
 3. Arrastre el puerto situado en torno al límite del componente hasta situarlo donde desee.
 
@@ -136,7 +136,7 @@ En Visual Studio, puede dibujar un *Diagrama de componentes* para mostrar la est
 
 ##### <a name="to-show-that-a-provided-interface-can-satisfy-a-required-interface"></a>Para mostrar que una interfaz proporcionada puede satisfacer una interfaz necesaria
 
-1. En el cuadro de herramientas, haga clic en **dependencia**.
+1. In the toolbox, click **Dependency**.
 
 2. Haga clic en el puerto con la interfaz necesaria de un componente y, a continuación, haga clic en el puerto con la interfaz proporcionada de otro componente.
 
@@ -144,25 +144,25 @@ En Visual Studio, puede dibujar un *Diagrama de componentes* para mostrar la est
 
 ##### <a name="to-add-a-port-for-an-existing-interface-to-a-component"></a>Para agregar un puerto de una interfaz existente a un componente
 
-- Busque la interfaz en el **Explorador de modelos UML** y arrástrela desde allí hasta el componente.
+- Find the interface in **UML Model Explorer** and then drag it from there onto the component.
 
      o bien
 
 - Copie y pegue una referencia a una interfaz desde un diagrama.
 
-    1. En un diagrama de clases o un diagrama de componentes, haga clic con el botón secundario en la interfaz y, a continuación, haga clic en **copiar**.
+    1. On a class diagram or a component diagram, right-click the interface and then click **Copy**.
 
-    2. En el diagrama de componentes, haga clic con el botón secundario en el componente y, a continuación, haga clic en **pegar referencia**.
+    2. On the component diagram, right-click the component, and then click **Paste Reference**.
 
          En el componente aparece una interfaz proporcionada. Cerca aparece una etiqueta de acción.
 
         > [!NOTE]
-        > Si usa **pegar** en lugar de **pegar referencia**, se creará una nueva interfaz con un nuevo nombre.
+        > If you use **Paste** instead of **Paste Reference**, a new interface that has a new name will be created.
 
-    3. Si desea crear una interfaz necesaria, haga clic en la etiqueta de acción y, a continuación, haga clic en **convertir en interfaz necesaria**.
+    3. If you wanted to create a required interface, click the Action tag and then click **Convert to Required Interface**.
 
-## <a name="Parts"></a>Mostrar las partes internas de un componente
- ![Diagrama de componentes que muestra partes internas](../modeling/media/uml-compshowing.png "UML_CompShowing")
+## <a name="Parts"></a> Showing the Internal Parts of a Component
+ ![Component diagram showing internal parts](../modeling/media/uml-compshowing.png "UML_CompShowing")
 
  Puede incluir elementos (3) en un componente (1) para mostrar que está formado de componentes más pequeños que interactúan entre sí.
 
@@ -172,9 +172,9 @@ En Visual Studio, puede dibujar un *Diagrama de componentes* para mostrar la est
 
  `+ partName : TypeName`
 
- Dentro del componente primario, en cada elemento se muestran las interfaces proporcionadas y necesarias que se definieron para su tipo (4, 5). Las operaciones o servicios que necesita un elemento puede proporcionárselos otro. Puede usar conectores de **ensamblado de elementos** para mostrar cómo se conectan los elementos entre sí (6).
+ Dentro del componente primario, en cada elemento se muestran las interfaces proporcionadas y necesarias que se definieron para su tipo (4, 5). Las operaciones o servicios que necesita un elemento puede proporcionárselos otro. You can use **Part Assembly** connectors to show how parts are connected with one another (6).
 
- También puede mostrar que una interfaz del componente primario es una interfaz que uno de sus elementos proporciona o necesita. Puede conectar un puerto del elemento primario a un puerto de una parte interna mediante una relación de **delegación** (9). Los dos puertos tienen que ser del mismo tipo (proporcionados o necesarios) y sus tipos de interfaz tienen que ser compatibles.
+ También puede mostrar que una interfaz del componente primario es una interfaz que uno de sus elementos proporciona o necesita. You can connect a port of the parent to a port of an internal part using a **Delegation** relation (9). Los dos puertos tienen que ser del mismo tipo (proporcionados o necesarios) y sus tipos de interfaz tienen que ser compatibles.
 
  Puede crear un nuevo elemento con un nuevo tipo o a partir de un tipo existente.
 
@@ -182,11 +182,11 @@ En Visual Studio, puede dibujar un *Diagrama de componentes* para mostrar la est
 
 1. Cree un elemento para cada unidad funcional principal que cree que forma parte del componente primario.
 
-    1. Haga clic en **componente** en el cuadro de herramientas y, a continuación, haga clic dentro del componente primario (1).
+    1. Click **Component** in the toolbox, and then click inside the parent component (1).
 
          Aparece un nuevo elemento (3) dentro del componente primario.
 
-         Se crea un nuevo componente en el **Explorador de modelos UML**. Este es el nuevo tipo del elemento.
+         A new component is created in **UML Model Explorer**. Este es el nuevo tipo del elemento.
 
          \- o -
 
@@ -196,31 +196,31 @@ En Visual Studio, puede dibujar un *Diagrama de componentes* para mostrar la est
 
          \- o -
 
-         Haga clic con el botón secundario en un componente, ya sea en un diagrama o en el explorador de modelos UML y, a continuación, haga clic en **copiar**.
+         Right-click a component, either in a diagram or in UML Model Explorer, and then click **Copy**.
 
-         Haga clic con el botón secundario en el componente primario y, a continuación, haga clic en **pegar referencia**.
+         Right-click on the parent component, and then click **Paste Reference**.
 
          Aparece un nuevo elemento (3) dentro del componente primario. Su tipo es el componente que copió.
 
     2. Haga clic en el nombre del nuevo componente para cambiarlo. Su tipo no se puede modificar.
 
-    3. Puede agregar interfaces proporcionadas y necesarias (4, 5) al nuevo elemento. Haga clic en la **interfaz proporcionada** o en la herramienta de **interfaz necesaria** y, a continuación, haga clic en el elemento.
+    3. Puede agregar interfaces proporcionadas y necesarias (4, 5) al nuevo elemento. Click the **Provided Interface** or **Required Interface** tool, and then click in the part.
 
          \- o -
 
-         Arrastre una interfaz existente desde el **Explorador de modelos UML** hasta el elemento.
+         Drag an existing interface from **UML Model Explorer** onto the part.
 
          Las interfaces se agregan al tipo del elemento y aparecen en el propio elemento. El componente primario ajusta su tamaño, si es necesario.
 
 2. Conecte los elementos entre sí.
 
-    - Use la herramienta de **dependencia** para conectar los puertos de diferentes partes (6).
+    - Use the **Dependency** tool to connect the ports of different parts (6).
 
 3. Conecte los puertos a los puertos del componente primario:
 
-    1. Cree uno o varios puertos (7) en el componente primario. Haga clic en **interfaz necesaria** o en **interfaz proporcionada** en el cuadro de herramientas y, a continuación, haga clic en el componente primario.
+    1. Cree uno o varios puertos (7) en el componente primario. Click **Required Interface** or **Provided Interface** on the toolbox, and then click the parent component.
 
-    2. Cree delegados (9) del puerto en uno o varios elementos. Haga clic en la herramienta de **delegación** , en un puerto del componente primario y, a continuación, en un puerto de un elemento. A través de este mismo mecanismo, puede conectar puertos que proporcionan o necesitan interfaces.
+    2. Cree delegados (9) del puerto en uno o varios elementos. Click the **Delegation** tool, then a port on the parent component, and then a port on a part. A través de este mismo mecanismo, puede conectar puertos que proporcionan o necesitan interfaces.
 
 ### <a name="showing-the-parts-of-a-part"></a>Mostrar los elementos que conforman un elemento
  Después de descomponer un componente en elementos, puede descomponer cada uno de los tipos de elementos en sus propios elementos internos.
@@ -231,17 +231,17 @@ En Visual Studio, puede dibujar un *Diagrama de componentes* para mostrar la est
 
 1. Especifique el nombre completo del tipo de elemento.
 
-     Haga clic con el botón secundario en el elemento y, a continuación, haga clic en **propiedades**.
+     Right-click the part and then click **Properties**.
 
-     El nombre de tipo aparece en el campo de **tipo** de la ventana Propiedades.
+     The type name appears in the **Type** field of the Properties window.
 
-2. Busque el tipo del elemento en el **Explorador de modelos UML**.
+2. Locate the part's type in **UML Model Explorer**.
 
-     Haga clic en **Ver**, elija **otras ventanas**y, a continuación, haga clic en **Explorador de modelos UML**.
+     Click **View**, point to **Other Windows**, and then click **UML Model Explorer**.
 
      Expanda el proyecto y, si es necesario, los paquetes a los que pertenece el tipo.
 
-     El tipo se mostrará como un **componente**.
+     The type will be listed as a **Component**.
 
      Si lo desea, puede cambiar su nombre aquí.
 
@@ -255,7 +255,7 @@ En Visual Studio, puede dibujar un *Diagrama de componentes* para mostrar la est
 
      Ahora puede agregar otros elementos.
 
-## <a name="Designing"></a>Diseñar el componente
+## <a name="Designing"></a> Designing the Component
 
 ### <a name="describing-how-the-parts-collaborate"></a>Describir cómo colaboran los elementos
  Puede dibujar un diagrama de secuencia para mostrar el modo en que los elementos trabajan juntos en respuesta a un mensaje que llega al componente primario.
@@ -270,17 +270,17 @@ En Visual Studio, puede dibujar un *Diagrama de componentes* para mostrar la est
 
 - Si la carga de trabajo es demasiado escasa y se distribuye en muchas interacciones, el sistema podría tener un mal rendimiento y podría resultar difícil de entender.
 
-  ![Diagrama de secuencia que muestra las partes de colaboración](../modeling/media/uml-compdescparts.png "UML_CompDescParts")
+  ![Sequence diagram showing collaborating parts](../modeling/media/uml-compdescparts.png "UML_CompDescParts")
 
 ##### <a name="to-draw-a-sequence-diagram-that-shows-collaboration-between-parts"></a>Para dibujar un diagrama de secuencia en el que se muestre la colaboración entre los elementos
 
 1. Cree un nuevo diagrama de secuencia.
 
-     Para obtener más información, vea [diagramas de secuencia UML: instrucciones](../modeling/uml-sequence-diagrams-guidelines.md).
+     For more information, see [UML Sequence Diagrams: Guidelines](../modeling/uml-sequence-diagrams-guidelines.md).
 
 2. Cree una línea de vida en un componente externo, usuario, dispositivo u otro actor (1) que envíe mensajes a este componente.
 
-     Puede establecer la propiedad **actor** de esta línea de vida en true para indicar que es externa al componente en cuestión. Sobre la línea de vida aparece un dibujo esquemático.
+     You can set the **Actor** property of this lifeline to true, to indicate that it is external to the component under consideration. Sobre la línea de vida aparece un dibujo esquemático.
 
 3. Cree una línea de vida en la interfaz proporcionada (2) de este componente al que el actor seleccionado envía mensajes.
 
@@ -295,12 +295,12 @@ En Visual Studio, puede dibujar un *Diagrama de componentes* para mostrar la est
 ### <a name="is-the-component-more-than-its-parts"></a>¿Es el componente mayor que la suma de sus partes?
  En algunos casos, un componente no es más que un nombre que se asigna a una colección de elementos. Los elementos realizan todo el trabajo y no hay ningún código ni ningún otro artefacto en tiempo de ejecución que represente al componente.
 
- Puede indicarlo en el modelo estableciendo la propiedad **is indirectamente instanciad** del componente. En este caso, todas las interfaces del componente deben estar en los puertos, con delegaciones en los elementos internos.
+ You can indicate this in the model by setting the **Is Indirectly Instantiated** property of the component. En este caso, todas las interfaces del componente deben estar en los puertos, con delegaciones en los elementos internos.
 
 ### <a name="describing-the-process-inside-each-part"></a>Describir el proceso que tiene lugar en cada elemento
- Puede utilizar diagramas de actividades para mostrar cómo un componente procesa cada mensaje entrante. Para obtener más información, vea [diagramas de actividades UML: instrucciones](../modeling/uml-activity-diagrams-guidelines.md).
+ Puede utilizar diagramas de actividades para mostrar cómo un componente procesa cada mensaje entrante. For more information, see [UML Activity Diagrams: Guidelines](../modeling/uml-activity-diagrams-guidelines.md).
 
- ![Diagrama de actividades con búfer de datos](../modeling/media/uml-compdescribingproc.png "UML_CompDescribingProc")
+ ![Activity diagram with data buffer](../modeling/media/uml-compdescribingproc.png "UML_CompDescribingProc")
 
  Utilice una acción de evento de aceptación (1) para mostrar que un mensaje entrante inicia un nuevo subproceso.
 
@@ -318,9 +318,9 @@ En Visual Studio, puede dibujar un *Diagrama de componentes* para mostrar la est
 ### <a name="general-dependencies-between-components"></a>Dependencias generales entre componentes
  Puede utilizar un diagrama de componentes para mostrar exclusivamente los elementos principales del diseño y sus interdependencias.
 
- ![Una dependencia entre componentes](../modeling/media/uml-compdepend.png "UML_CompDepend")
+ ![A dependency between components](../modeling/media/uml-compdepend.png "UML_CompDepend")
 
- Use la herramienta de **dependencia** para dibujar una dependencia. Así indicará que el diseño de un componente se basa en otro.
+ Use the **Dependency** tool to draw a dependency. Así indicará que el diseño de un componente se basa en otro.
 
  Entre los tipos habituales de dependencia se incluyen los siguientes:
 
@@ -330,7 +330,7 @@ En Visual Studio, puede dibujar un *Diagrama de componentes* para mostrar la est
 
 - Un componente usa información creada por otro componente.
 
-  Puede utilizar el nombre de la flecha de dependencia para dar cuenta de un tipo de uso concreto. Para establecer el nombre, haga clic con el botón secundario en la flecha, haga clic en **propiedades**y establezca el campo **nombre** en la ventana Propiedades.
+  Puede utilizar el nombre de la flecha de dependencia para dar cuenta de un tipo de uso concreto. To set the name, right-click the arrow, then click **Properties**, and set the **Name** field in the properties window.
 
 ## <a name="see-also"></a>Vea también
- [Editar modelos y diagramas UML](../modeling/edit-uml-models-and-diagrams.md) [diagramas de componentes](../modeling/uml-component-diagrams-reference.md) de UML: referencia [diagramas de secuencia UML:](../modeling/uml-sequence-diagrams-reference.md) referencia diagramas de [casos de uso de UML: referencia](../modeling/uml-use-case-diagrams-reference.md) diagramas de clases de UML [:](../modeling/uml-class-diagrams-reference.md) referencia [diagramas de componentes de UML: referencia](../modeling/uml-component-diagrams-reference.md) [ Vídeo: diseñar la estructura física mediante diagramas de componentes](http://channel9.msdn.com/posts/clinted/UML-with-VS-2010-Part-6-Designing-a-Projects-Physical-Structure/)
+ [Edit UML models and diagrams](../modeling/edit-uml-models-and-diagrams.md) [UML Component Diagrams: Reference](../modeling/uml-component-diagrams-reference.md) [UML Sequence Diagrams: Reference](../modeling/uml-sequence-diagrams-reference.md) [UML Use Case Diagrams: Reference](../modeling/uml-use-case-diagrams-reference.md) [UML Class Diagrams: Reference](../modeling/uml-class-diagrams-reference.md) [UML Component Diagrams: Reference](../modeling/uml-component-diagrams-reference.md) [Video: Designing the Physical Structure by using Component Diagrams](https://channel9.msdn.com/blogs/clinted/uml-with-vs-2010-part-6-designing-a-projects-physical-structure)

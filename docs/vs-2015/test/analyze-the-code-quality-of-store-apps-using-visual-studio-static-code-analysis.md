@@ -1,5 +1,5 @@
 ---
-title: Analizar la calidad del código de las aplicaciones de la tienda mediante análisis de código estático
+title: Analyze the code quality of Store apps using static code analysis
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-test
@@ -9,12 +9,12 @@ caps.latest.revision: 13
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: fcaa8424e1b60375ec62bde31c5e22f3706641d0
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 4633b32c1d59a59c91848f72403571955263472f
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72660754"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74297553"
 ---
 # <a name="analyze-the-code-quality-of-store-apps-using-visual-studio-static-code-analysis"></a>Analizar la calidad del código de las aplicaciones de la Tienda utilizando análisis de código estático de Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,5 +35,5 @@ La herramienta de análisis de código de Visual Studio busca en el código un c
 
 |||
 |-|-|
-|[Análisis de código en MSDN Library](http://go.microsoft.com/fwlink/?LinkID=227580)|Encuentre más información sobre el empleo del análisis de código en Visual Studio Ultimate, Visual Studio Premium y Visual Studio Professional.|
-|[Blog del equipo de análisis de código de MSDN](http://go.microsoft.com/fwlink/?LinkId=227200)|Encuentre más información, incluidos artículos técnicos y ejemplos, en el blog del equipo de análisis de código.|
+|[Análisis de código en MSDN Library](https://go.microsoft.com/fwlink/?LinkID=227580)|Encuentre más información sobre el empleo del análisis de código en Visual Studio Ultimate, Visual Studio Premium y Visual Studio Professional.|
+|[Blog del equipo de análisis de código de MSDN](https://go.microsoft.com/fwlink/?LinkId=227200)|Encuentre más información, incluidos artículos técnicos y ejemplos, en el blog del equipo de análisis de código.|

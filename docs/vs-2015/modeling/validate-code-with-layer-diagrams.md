@@ -1,5 +1,5 @@
 ---
-title: Validar el código con diagramas de capas | Microsoft Docs
+title: Validate code with layer diagrams | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-modeling
@@ -21,12 +21,12 @@ caps.latest.revision: 84
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 45aa7c9807ba08751a354c336b646aa7f7ce641b
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 596711c5c59738d5356437bb761e80caeddfbd6b
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72659389"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74301358"
 ---
 # <a name="validate-code-with-layer-diagrams"></a>Validar código con diagramas de capas
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,59 +49,59 @@ Para asegurarse de que el código no entre en conflicto con el diseño, puede va
 
 - Visual Studio en el servidor de Team Foundation Build para validar código automáticamente con Team Foundation Build
 
-- Una solución que tenga un proyecto de modelado con un diagrama de capas. Este diagrama de capas debe vincularse a artefactos de proyectos de Visual C# .NET o Visual Basic .NET que desea validar. Vea [crear diagramas de capas desde el código](../modeling/create-layer-diagrams-from-your-code.md).
+- Una solución que tenga un proyecto de modelado con un diagrama de capas. Este diagrama de capas debe vincularse a artefactos de proyectos de Visual C# .NET o Visual Basic .NET que desea validar. See [Create layer diagrams from your code](../modeling/create-layer-diagrams-from-your-code.md).
 
   Para ver qué versiones de Visual Studio admiten esta característica, vea [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
 
-  Puede validar código manualmente desde un diagrama de capas abierto en Visual Studio o desde un símbolo del sistema. También puede validar código automáticamente al ejecutar compilaciones locales o Team Foundation Build. Consulte [vídeo de Channel 9: diseñar y validar la arquitectura mediante diagramas de capas](http://go.microsoft.com/fwlink/?LinkID=252073).
+  Puede validar código manualmente desde un diagrama de capas abierto en Visual Studio o desde un símbolo del sistema. También puede validar código automáticamente al ejecutar compilaciones locales o Team Foundation Build. See [Channel 9 Video: Design and validate your architecture using layer diagrams](https://go.microsoft.com/fwlink/?LinkID=252073).
 
 > [!IMPORTANT]
 > Si desea ejecutar la validación de capa con Team Foundation Build, debe instalar también la misma versión de Visual Studio en el servidor de compilación.
 
-- [Ver si un elemento admite la validación](#SupportsValidation)
+- [See if an item supports validation](#SupportsValidation)
 
-- [Incluir otros ensamblados .NET y proyectos para la validación](#IncludeReferences)
+- [Include other .NET assemblies and projects for validation](#IncludeReferences)
 
-- [Validar código manualmente](#ValidateManually)
+- [Validate code manually](#ValidateManually)
 
-- [Validar código automáticamente](#ValidateAuto)
+- [Validate code automatically](#ValidateAuto)
 
-- [Solucionar problemas de validación de capas](#TroubleshootingValidation)
+- [Troubleshoot layer validation issues](#TroubleshootingValidation)
 
-- [Comprender y resolver errores de validación de capas](#UnderstandingValidationErrors)
+- [Understand and resolve layer validation errors](#UnderstandingValidationErrors)
 
-## <a name="SupportsValidation"></a>Ver si un elemento admite la validación
+## <a name="SupportsValidation"></a> See if an item supports validation
  Puede vincular capas a sitios web, documentos de Office, archivos de texto sin formato y archivos de proyectos que se comparten entre varias aplicaciones, pero el proceso de validación no los incluirá. Los errores de validación no aparecerán para las referencias a proyectos o ensamblados que están vinculados a capas independientes cuando no aparece ninguna dependencia entre esas capas. Tales referencias no se consideran dependencias a menos que el código utilice esas referencias.
 
-1. En el diagrama de capas, seleccione una o varias capas, haga clic con el botón secundario en la selección y, a continuación, haga clic en **ver vínculos**.
+1. On the layer diagram, select one or more layers, right-click your selection, and then click **View Links**.
 
-2. En el **Explorador de capas**, examine la columna **admite validación** . Si el valor es false, el elemento no admite la validación.
+2. In **Layer Explorer**, look at the **Supports Validation** column. Si el valor es false, el elemento no admite la validación.
 
-## <a name="IncludeReferences"></a>Incluir otros ensamblados .NET y proyectos para la validación
- Al arrastrar elementos al diagrama de capas, las referencias a los ensamblados o proyectos .NET correspondientes se agregan automáticamente a la carpeta **referencias de capa** del proyecto de modelado. Esta carpeta contiene referencias a los ensamblados y proyectos que se analizan durante la validación. Puede incluir otros ensamblados y proyectos de .NET para validación sin arrastrarlos manualmente al diagrama de capas.
+## <a name="IncludeReferences"></a> Include other .NET assemblies and projects for validation
+ When you drag items to the layer diagram, references to the corresponding .NET assemblies or projects are added automatically to the **Layer References** folder in the modeling project. Esta carpeta contiene referencias a los ensamblados y proyectos que se analizan durante la validación. Puede incluir otros ensamblados y proyectos de .NET para validación sin arrastrarlos manualmente al diagrama de capas.
 
-1. En **Explorador de soluciones**, haga clic con el botón secundario en el proyecto de modelado o en la carpeta **referencias de capa** y, a continuación, haga clic en **Agregar referencia**.
+1. In **Solution Explorer**, right-click the modeling project or the **Layer References** folder, and then click **Add Reference**.
 
-2. En el cuadro de diálogo **Agregar referencia** , seleccione los ensamblados o proyectos y, a continuación, haga clic en **Aceptar**.
+2. In the **Add Reference** dialog box, select the assemblies or projects, and then click **OK**.
 
-## <a name="ValidateManually"></a>Validar código manualmente
- Si tiene un diagrama de capas abierto que está vinculado a elementos de la solución, puede ejecutar el comando **validar** acceso directo desde el diagrama. También puede usar el símbolo del sistema para ejecutar el comando **msbuild** con la propiedad personalizada **/p: pValidateArchitecture** establecida en **true**. Por ejemplo, cuando haga cambios en el código, realice la validación de capas con regularidad para detectar pronto los conflictos de dependencia.
+## <a name="ValidateManually"></a> Validate code manually
+ If you have an open layer diagram that is linked to solution items, you can run the **Validate** shortcut command from the diagram. You can also use the command prompt to run the **msbuild** command with the **/p:ValidateArchitecture** custom property set to **True**. Por ejemplo, cuando haga cambios en el código, realice la validación de capas con regularidad para detectar pronto los conflictos de dependencia.
 
 #### <a name="to-validate-code-from-an-open-layer-diagram"></a>Para validar el código de un diagrama de capas abierto
 
-1. Haga clic con el botón secundario en la superficie del diagrama y, a continuación, haga clic en **validar arquitectura**.
+1. Right-click the diagram surface, and then click **Validate Architecture**.
 
     > [!NOTE]
-    > De forma predeterminada, la propiedad **acción de compilación** en el archivo de diagrama de capas (. layerdiagram) se establece en **Validate** para que el diagrama se incluya en el proceso de validación.
+    > By default, the **Build Action** property on the layer diagram (.layerdiagram) file is set to **Validate** so that the diagram is included in the validation process.
 
-     La ventana **lista de errores** informa de los errores que se producen. Para obtener más información sobre los errores de validación, vea [comprender y resolver errores de validación de capas](#UnderstandingValidationErrors).
+     The **Error List** window reports any errors that occur. For more information about validation errors, see [Understand and resolve layer validation errors](#UnderstandingValidationErrors).
 
-2. Para ver el origen de cada error, haga doble clic en el error en la ventana **lista de errores** .
+2. To view the source of each error, double-click the error in the **Error List** window.
 
     > [!NOTE]
-    > [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] podría mostrar un mapa de código en lugar del origen del error. Esto se produce cuando el código tiene una dependencia en un ensamblado que el diagrama de capas no especifica, o al código le falta una dependencia que el diagrama de capas especifica. Revise el mapa de código o el código para determinar si debe existir la dependencia. Para obtener más información sobre los mapas de código, vea [asignar dependencias en las soluciones](../modeling/map-dependencies-across-your-solutions.md).
+    > [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] podría mostrar un mapa de código en lugar del origen del error. Esto se produce cuando el código tiene una dependencia en un ensamblado que el diagrama de capas no especifica, o al código le falta una dependencia que el diagrama de capas especifica. Revise el mapa de código o el código para determinar si debe existir la dependencia. For more information about code maps, see [Map dependencies across your solutions](../modeling/map-dependencies-across-your-solutions.md).
 
-3. Para administrar los errores, consulte [administrar errores de validación](#ManageErrors).
+3. To manage errors, see [Manage validation errors](#ManageErrors).
 
 #### <a name="to-validate-code-at-the-command-prompt"></a>Para validar código en el símbolo del sistema
 
@@ -137,11 +137,11 @@ Para asegurarse de que el código no entre en conflicto con el diseño, puede va
      msbuild /p:ValidateArchitecture=true
      ```
 
-     Se mostrará cualquier error que se produzca. Para obtener más información acerca de [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)], vea [msbuild](../msbuild/msbuild.md) y [msbuild (tarea](../msbuild/msbuild-task.md)).
+     Se mostrará cualquier error que se produzca. For more information about [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)], see [MSBuild](../msbuild/msbuild.md) and [MSBuild Task](../msbuild/msbuild-task.md).
 
-   Para obtener más información sobre los errores de validación, vea [comprender y resolver errores de validación de capas](#UnderstandingValidationErrors).
+   For more information about validation errors, see [Understand and resolve layer validation errors](#UnderstandingValidationErrors).
 
-### <a name="ManageErrors"></a>Administrar errores de validación
+### <a name="ManageErrors"></a> Manage validation errors
  Durante el proceso de desarrollo, puede que desee suprimir algunos de los conflictos notificados durante la validación. Por ejemplo, es posible que desee suprimir errores de los que ya se ha ocupado o que no son pertinentes para su escenario concreto. Cuando se suprime un error, conviene registrar un elemento de trabajo en [!INCLUDE[esprfound](../includes/esprfound-md.md)].
 
 > [!WARNING]
@@ -149,19 +149,19 @@ Para asegurarse de que el código no entre en conflicto con el diseño, puede va
 
 ##### <a name="to-create-a-work-item-for-a-validation-error"></a>Para crear un elemento de trabajo para un error de validación
 
-- En la ventana de **lista de errores** , haga clic con el botón secundario en el error, seleccione **crear elemento de trabajo**y, a continuación, haga clic en el tipo de elemento de trabajo que desea crear.
+- In the **Error List** window, right-click the error, point to **Create Work Item**, and then click the type of work item that you want to create.
 
-  Use estas tareas para administrar los errores de validación en la ventana de **lista de errores** :
+  Use these tasks to manage validation errors in the **Error List** window:
 
-|**En**|**Siga estos pasos**|
+|**En**|**Follow these steps**|
 |------------|----------------------------|
-|Suprimir los errores seleccionados durante la validación|Haga clic con el botón secundario en uno o varios errores seleccionados, seleccione **administrar errores de validación**y, a continuación, haga clic en **suprimir errores**.<br /><br /> Los errores suprimidos aparecen tachados. La próxima vez que ejecute la validación, estos errores no aparecerán.<br /><br /> El seguimiento de los errores suprimidos se lleva a cabo en un archivo .suppressions relacionado con el archivo de diagrama de capas correspondiente.|
-|Detener la supresión de los errores seleccionados|Haga clic con el botón secundario en el error o errores suprimidos seleccionados, elija **administrar errores de validación**y, a continuación, haga clic en **detener la supresión de errores**.<br /><br /> La próxima vez que ejecute la validación, los errores suprimidos aparecerán.|
-|Restaurar todos los errores suprimidos en la ventana de **lista de errores**|Haga clic con el botón secundario en cualquier lugar de la ventana de **lista de errores** , seleccione **administrar errores de validación**y, a continuación, haga clic en **Mostrar todos los errores suprimidos**.|
-|Ocultar todos los errores suprimidos en la ventana de **lista de errores**|Haga clic con el botón secundario en cualquier lugar de la ventana de **lista de errores** , seleccione **administrar errores de validación**y, a continuación, haga clic en **ocultar todos los errores suprimidos**.|
+|Suprimir los errores seleccionados durante la validación|Right-click the one or multiple selected errors, point to **Manage Validation Errors**, and then click **Suppress Errors**.<br /><br /> Los errores suprimidos aparecen tachados. La próxima vez que ejecute la validación, estos errores no aparecerán.<br /><br /> El seguimiento de los errores suprimidos se lleva a cabo en un archivo .suppressions relacionado con el archivo de diagrama de capas correspondiente.|
+|Detener la supresión de los errores seleccionados|Right-click the selected suppressed error or errors, point to **Manage Validation Errors**, and then click **Stop Suppressing Errors**.<br /><br /> La próxima vez que ejecute la validación, los errores suprimidos aparecerán.|
+|Restore all suppressed errors in the **Error List** window|Right-click anywhere in the **Error List** window, point to **Manage Validation Errors**, and then click **Show All Suppressed Errors**.|
+|Hide all suppressed errors from the **Error List** window|Right-click anywhere in the **Error List** window, point to **Manage Validation Errors**, and then click **Hide All Suppressed Errors**.|
 
-## <a name="ValidateAuto"></a>Validar código automáticamente
- Puede realizar la validación de capas cada vez que ejecute una compilación local. Si el equipo usa Team Foundation Build, podrá realizar la validación de capas con inserciones en el repositorio validadas, que se pueden especificar creando una tarea MSBuild personalizada, y usar informes de compilación para recopilar los errores de validación. Para crear compilaciones de protección controlada, consulte [usar un proceso de compilación de inserción en](https://msdn.microsoft.com/library/9cfc8b9c-1023-40fd-8ab5-1b1bd9c172ec)el repositorio validada para validar cambios.
+## <a name="ValidateAuto"></a> Validate code automatically
+ Puede realizar la validación de capas cada vez que ejecute una compilación local. Si el equipo usa Team Foundation Build, podrá realizar la validación de capas con inserciones en el repositorio validadas, que se pueden especificar creando una tarea MSBuild personalizada, y usar informes de compilación para recopilar los errores de validación. To create gated check-in builds, see [Use a gated check-in build process to validate changes](https://msdn.microsoft.com/library/9cfc8b9c-1023-40fd-8ab5-1b1bd9c172ec).
 
 #### <a name="to-validate-code-automatically-during-a-local-build"></a>Para validar código automáticamente durante una compilación local
 
@@ -173,48 +173,48 @@ Para asegurarse de que el código no entre en conflicto con el diseño, puede va
 
  \- o -
 
-1. En **Explorador de soluciones**, haga clic con el botón secundario en el proyecto de modelado que contiene los diagramas de capas y, a continuación, haga clic en **propiedades**.
+1. In **Solution Explorer**, right-click the modeling project that contains the layer diagram or diagrams, and then click **Properties**.
 
-2. En la ventana **propiedades** , establezca la propiedad **validar arquitectura** del proyecto de modelado en **true**.
+2. In the **Properties** window, set the modeling project's **Validate Architecture** property to **True**.
 
     Esto incluye el proyecto de modelado en el proceso de validación.
 
-3. En **Explorador de soluciones**, haga clic en el archivo de diagrama de capas (. layerdiagram) que desee usar para la validación.
+3. In **Solution Explorer**, click the layer diagram (.layerdiagram) file that you want to use for validation.
 
-4. En la ventana **propiedades** , asegúrese de que la propiedad **acción de compilación** del diagrama está establecida en **validar**.
+4. In the **Properties** window, make sure that the diagram's **Build Action** property is set to **Validate**.
 
     Esto incluye el diagrama de capas en el proceso de validación.
 
-   Para administrar los errores en la ventana de Lista de errores, vea [administrar errores de validación](#ManageErrors).
+   To manage errors in the Error List window, see [Manage Validation Errors](#ManageErrors).
 
 #### <a name="to-validate-code-automatically-during-a-team-foundation-build"></a>Para validar código automáticamente durante una compilación con Team Foundation Build
 
-1. En **Team Explorer**, haga doble clic en la definición de compilación y, a continuación, haga clic en **procesar**.
+1. In **Team Explorer**, double-click the build definition, and then click **Process**.
 
-2. En **parámetros del proceso de compilación**, expanda **compilación**y escriba lo siguiente en el parámetro **argumentos de MSBuild** :
+2. Under **Build process parameters**, expand **Compilation**, and type the following in the **MSBuild Arguments** parameter:
 
     `/p:ValidateArchitecture=true`
 
-   Para obtener más información sobre los errores de validación, vea [comprender y resolver errores de validación de capas](#UnderstandingValidationErrors). Para obtener más información acerca de [!INCLUDE[esprbuild](../includes/esprbuild-md.md)], vea:
+   For more information about validation errors, see [Understand and resolve layer validation errors](#UnderstandingValidationErrors). Para obtener más información acerca de [!INCLUDE[esprbuild](../includes/esprbuild-md.md)], vea:
 
 - [Compilar la aplicación](/azure/devops/pipelines/index)
 
-- [Usar la plantilla predeterminada para el proceso de compilación](https://msdn.microsoft.com/library/43930b12-c21b-4599-a980-2995e3d16e31)
+- [Use the Default Template for your build process](https://msdn.microsoft.com/library/43930b12-c21b-4599-a980-2995e3d16e31)
 
-- [Modificar una compilación heredada basada en UpgradeTemplate. Xaml](https://msdn.microsoft.com/library/ee1a8259-1dd1-4a10-9563-66c5446ef41c)
+- [Modify a Legacy Build that is Based on UpgradeTemplate.xaml](https://msdn.microsoft.com/library/ee1a8259-1dd1-4a10-9563-66c5446ef41c)
 
 - [Personalizar la plantilla de proceso de compilación](https://msdn.microsoft.com/library/b94c58f2-ae6f-4245-bedb-82cd114f6039)
 
-- [Supervisar el progreso de una compilación en ejecución](https://msdn.microsoft.com/library/e51e3bad-2d1d-4b7b-bfcc-c43439c6c8ef)
+- [Monitor Progress of a Running Build](https://msdn.microsoft.com/library/e51e3bad-2d1d-4b7b-bfcc-c43439c6c8ef)
 
-## <a name="TroubleshootingValidation"></a>Solucionar problemas de validación de capas
- En la siguiente tabla se describen problemas de validación de capas y su resolución. Estos problemas difieren de los errores que son resultado de conflictos entre el código y el diseño. Para obtener más información sobre estos errores, consulte [entender y resolver errores de validación de capas](#UnderstandingValidationErrors).
+## <a name="TroubleshootingValidation"></a> Troubleshoot layer validation issues
+ En la siguiente tabla se describen problemas de validación de capas y su resolución. Estos problemas difieren de los errores que son resultado de conflictos entre el código y el diseño. For more information about these errors, see [Understand and resolve layer validation errors](#UnderstandingValidationErrors).
 
-|**Problema**|**Causa posible**|**Resolución**|
+|**Problema**|**Possible Cause**|**Resolución**|
 |---------------|------------------------|--------------------|
 |Los errores de validación no se producen como se espera.|La validación no funciona en los diagramas de capas que se copian de otros diagramas de capas en el Explorador de soluciones y que están en el mismo proyecto de modelado. Los diagramas de capas que se copian de esta manera contienen las mismas referencias que el diagrama de capas original.|Agregue un nuevo diagrama de capas al proyecto de modelado.<br /><br /> Copie los elementos del diagrama de capas de origen en el nuevo diagrama.|
 
-## <a name="UnderstandingValidationErrors"></a>Descripción y resolución de errores de validación de capas
+## <a name="UnderstandingValidationErrors"></a> Understanding and Resolving Layer Validation Errors
  Cuando se valida el código con un diagrama de capas, se producen errores de validación si el código entra en conflicto con el diseño. Por ejemplo, las siguientes condiciones podrían producir errores de validación:
 
 - Un artefacto se ha asignado a la capa equivocada. En este caso, mueva el artefacto.
@@ -227,18 +227,18 @@ Para asegurarse de que el código no entre en conflicto con el diseño, puede va
 
 |**Sintaxis**|**Descripción**|
 |----------------|---------------------|
-|*Artefacton*(*ArtifactTypeN*)|*Artefacton* es un artefacto que está asociado a una capa del diagrama de capas.<br /><br /> *ArtifactTypeN* es el tipo de *artefacton*, como una **clase** o un **método**, por ejemplo:<br /><br /> MiSolución.MiProyecto.MiClase.MiMétodo(Método)|
+|*ArtifactN*(*ArtifactTypeN*)|*ArtifactN* is an artifact that is associated with a layer on the layer diagram.<br /><br /> *ArtifactTypeN* is the type of *ArtifactN*, such as a **Class** or **Method**, for example:<br /><br /> MiSolución.MiProyecto.MiClase.MiMétodo(Método)|
 |*NamespaceNameN*|Nombre de un espacio de nombres.|
 |*LayerNameN*|Nombre de una capa del diagrama de capas.|
-|*DependencyType*|El tipo de relación de dependencia entre *artefacto 1* y *artefacto 2*. Por ejemplo, *artefacto 1* tiene una relación de **llamadas** con *artefacto 2*.|
+|*DependencyType*|The type of dependency relationship between *Artifact1* and *Artifact2*. For example, *Artifact1* has a **Calls** relationship with *Artifact2*.|
 
-|**Sintaxis de error**|**Descripción del error**|
+|**Error Syntax**|**Error Description**|
 |----------------------|---------------------------|
-|AV0001: dependencia no válida: *artefacto 1*(*ArtifactType1*)--> *artefacto 2*(*ArtifactType2*)<br /><br /> Capas: *LayerName1*, *LayerName2* &#124; dependencies: *DependencyType*|*Artefacto 1* en *LayerName1* no debe tener una dependencia en *artefacto 2* en *LayerName2* porque *LayerName1* no tiene una dependencia directa en *LayerName2*.|
-|AV1001: espacio de nombres no válido: *artefacto*<br /><br /> Capa: *LayerName* &#124; espacio de nombres necesario: *NamespaceName1* &#124; espacio de nombres actual: *NamespaceName2*|*LayerName* requiere que sus artefactos asociados pertenezcan a *NamespaceName1*. El *artefacto* está en *NamespaceName2*, no en *NamespaceName1*.|
-|AV1002: depende de un espacio de nombres prohibido: *artefacto 1*(*ArtifactType1*) &#124; *artefacto 2*(*ArtifactType2*)<br /><br /> Capa: *LayerName* &#124; Forbidden namespace: *NamespaceName* &#124; dependencies: *DependencyType*|*LayerName* requiere que sus artefactos asociados no dependan de *NamespaceName*. *Artefacto 1* no puede depender de *artefacto 2* porque *artefacto 2* está en *NamespaceName*.|
-|AV1003: en espacio de nombres prohibido: *artefacto*(*ArtifactType*)<br /><br /> Capa: *LayerName* &#124; prohibido espacio de nombres: *NamespaceName*|*LayerName* requiere que sus artefactos asociados no pertenezcan a *NamespaceName*. El *artefacto* pertenece a *NamespaceName*.|
-|AV3001: falta un vínculo: la capa '*LayerName*' contiene vínculos a '*artefacto*' que no se encuentra. ¿Falta una referencia de ensamblado?|*LayerName* vincula a un artefacto que no se puede encontrar. Por ejemplo, es posible que falte un vínculo a una clase porque en el proyecto de modelado falta una referencia al ensamblado que contiene la clase.|
+|AV0001: Invalid Dependency: *Artifact1*(*ArtifactType1*) --> *Artifact2*(*ArtifactType2*)<br /><br /> Layers: *LayerName1*, *LayerName2* &#124; Dependencies: *DependencyType*|*Artifact1* in *LayerName1* should not have a dependency on *Artifact2* in *LayerName2* because *LayerName1* does not have a direct dependency on *LayerName2*.|
+|AV1001: Invalid Namespace: *Artifact*<br /><br /> Layer: *LayerName* &#124; Required Namespace: *NamespaceName1* &#124; Current Namespace: *NamespaceName2*|*LayerName* requires that its associated artifacts must belong to *NamespaceName1*. *Artifact* is in *NamespaceName2*, not *NamespaceName1*.|
+|AV1002: Depends on Forbidden Namespace: *Artifact1*(*ArtifactType1*) &#124; *Artifact2*(*ArtifactType2*)<br /><br /> Layer: *LayerName* &#124; Forbidden Namespace: *NamespaceName* &#124; Dependencies: *DependencyType*|*LayerName* requires that its associated artifacts must not depend on *NamespaceName*. *Artifact1* cannot depend on *Artifact2* because *Artifact2* is in *NamespaceName*.|
+|AV1003: In Forbidden Namespace: *Artifact*(*ArtifactType*)<br /><br /> Layer: *LayerName* &#124; Forbidden Namespace: *NamespaceName*|*LayerName* requires that its associated artifacts cannot belong to *NamespaceName*. *Artifact* belongs to *NamespaceName*.|
+|AV3001: Missing Link: Layer '*LayerName*' links to '*Artifact*' which cannot be found. ¿Falta una referencia de ensamblado?|*LayerName* links to an artifact that cannot be found. Por ejemplo, es posible que falte un vínculo a una clase porque en el proyecto de modelado falta una referencia al ensamblado que contiene la clase.|
 |AV9001: El análisis de arquitectura encontró errores internos. Puede que los resultados no estén completos. Vea el registro detallado de eventos de compilación o la ventana de salida para obtener más información.|Vea el registro de eventos de compilación o la ventana de salida para obtener más información.|
 
 ## <a name="security"></a>Seguridad

@@ -27,12 +27,12 @@ caps.latest.revision: 24
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 49f5d1d0cef7ec4d5a6f8ab61c785ea01f77d24b
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: ba8a37ac9e049455ffe19314dee0e228c3c14c97
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72652670"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74295601"
 ---
 # <a name="using-the-toolbox"></a>Usar el Cuadro de herramientas
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -67,4 +67,4 @@ Puede usar el cuadro de herramientas para agregar controles y otros elementos al
 - **Bajar**: mueve el elemento seleccionado hacia abajo.
 
 ## <a name="creating-and-distributing-custom-toolbox-controls"></a>Crear y distribuir controles personalizados del cuadro de herramientas
- Puede crear un control personalizado del cuadro de herramientas en Visual Basic o Visual C#, y puede partir de una plantilla de proyecto basada en [Windows Presentation Foundation](../extensibility/creating-a-wpf-toolbox-control.md) o [Windows Forms](../misc/how-to-create-a-toolbox-control-that-uses-windows-forms.md). Después, puede distribuir el control a sus compañeros de equipo o publicarlo en la web con el [Instalador de controles del cuadro de herramientas](http://download.microsoft.com/download/8/3/6/836657BD-9CCB-4ED4-B9D2-FB769473B284/TCI_whitepaper.docx).
+ Puede crear un control personalizado del cuadro de herramientas en Visual Basic o Visual C#, y puede partir de una plantilla de proyecto basada en [Windows Presentation Foundation](../extensibility/creating-a-wpf-toolbox-control.md) o [Windows Forms](../misc/how-to-create-a-toolbox-control-that-uses-windows-forms.md). Después, puede distribuir el control a sus compañeros de equipo o publicarlo en la web con el [Instalador de controles del cuadro de herramientas](http://www.unicode.org/versions/Unicode5.2.0/ch04.pdf).

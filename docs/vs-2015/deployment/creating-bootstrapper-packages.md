@@ -1,5 +1,5 @@
 ---
-title: Crear paquetes de arranque | Documentos de Microsoft
+title: Creating Bootstrapper Packages | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-deployment
@@ -21,12 +21,12 @@ caps.latest.revision: 47
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: ac304d695c13fde2b69aafbb903493ad9865bf87
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: f90344c156ea6c012c6ac086ffa40bf30e78a682
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68187808"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74300735"
 ---
 # <a name="creating-bootstrapper-packages"></a>Crear paquetes de arranque
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,7 +36,7 @@ El programa de instalación es un instalador genérico que se puede configurar p
  El programa previo detecta primero si los requisitos previos están ya instalados. Si no lo están, el programa previo muestra el contrato de licencia. Después de que el usuario acepta los contratos de licencia, comienza la instalación de los requisitos previos. Si se detectan todos los requisitos previos, el programa previo inicia el instalador de la aplicación.  
   
 ## <a name="creating-custom-packages"></a>Crear paquetes personalizados  
- Puede generar los manifiestos con el editor XML de Visual Studio. Para obtener más información, vea [Cómo: Crear un manifiesto del paquete](../deployment/how-to-create-a-package-manifest.md) y [Cómo: Crear un manifiesto de producto](../deployment/how-to-create-a-product-manifest.md). Para ver un ejemplo de cómo crear un paquete de arranque, consulte [Tutorial: Crear un arranque personalizado para mostrar un Privacy Prompt](../deployment/walkthrough-creating-a-custom-bootstrapper-to-show-a-privacy-prompt.md).  
+ Puede generar los manifiestos con el editor XML de Visual Studio. Para obtener más información, vea [How to: Create a Package Manifest](../deployment/how-to-create-a-package-manifest.md) y [How to: Create a Product Manifest](../deployment/how-to-create-a-product-manifest.md). Para obtener un ejemplo de cómo crear un paquete de programa previo, vea [Walkthrough: Creating a Custom Bootstrapper to Show a Privacy Prompt](../deployment/walkthrough-creating-a-custom-bootstrapper-to-show-a-privacy-prompt.md).  
   
  Para crear un paquete de programa previo, debe suministrar el redistribuible en forma de archivo EXE o MSI al generador de manifiestos de programa previo. Después, el generador de manifiestos de programa previo crea los siguientes archivos:  
   
@@ -70,7 +70,7 @@ El programa de instalación es un instalador genérico que se puede configurar p
   
   `package.xml`  
   
-  Por último, copie los archivos redistribuibles en la ubicación de la carpeta del programa previo. Para obtener más información, consulte [Cómo Crear un paquete de arranque localizado](../deployment/how-to-create-a-localized-bootstrapper-package.md).  
+  Por último, copie los archivos redistribuibles en la ubicación de la carpeta del programa previo. Para obtener más información, consulta [How to: Create a Localized Bootstrapper Package](../deployment/how-to-create-a-localized-bootstrapper-package.md).  
   
 ```  
 \Program Files\Microsoft Visual Studio 14.0\SDK\Bootstrapper\Packages  
@@ -100,7 +100,7 @@ HKLM\Software\Wow6432Node\Microsoft\GenericBootstrapper\11.0
   
  La tabla siguiente muestra las propiedades que el programa previo rellena automáticamente.  
   
-|Propiedad|DESCRIPCIÓN|  
+|Propiedad.|Descripción|  
 |--------------|-----------------|  
 |ApplicationName|El nombre de la aplicación.|  
 |ProcessorArchitecture|El procesador y los bits por palabra de la plataforma de destino de un ejecutable. Los valores son los siguientes:<br /><br /> -   Intel<br />-   IA64<br />-   AMD64|  
@@ -115,7 +115,7 @@ HKLM\Software\Wow6432Node\Microsoft\GenericBootstrapper\11.0
   
  `%ProgramFiles%\Microsoft.NET\RedistList`  
   
- La lista de redistribuibles es un archivo XML cuyo nombre debe seguir el formato siguiente: *Nombre de la empresa*. *Nombre del componente*. RedistList.xml. Por ejemplo, si el componente se llama Datawidgets y ha sido creado por Acme, use Acme.DataWidgets.RedistList.xml. El siguiente podría ser un ejemplo del contenido de la lista de redistribuibles:  
+ La lista de redistribuibles es un archivo XML cuyo nombre debe seguir el formato siguiente: *Nombre de la compañía*.*Nombre del componente*.RedistList.xml. Por ejemplo, si el componente se llama Datawidgets y ha sido creado por Acme, use Acme.DataWidgets.RedistList.xml. El siguiente podría ser un ejemplo del contenido de la lista de redistribuibles:  
   
 ```  
 <?xml version="1.0" encoding="UTF-8"?>  
@@ -127,5 +127,5 @@ HKLM\Software\Wow6432Node\Microsoft\GenericBootstrapper\11.0
 ## <a name="see-also"></a>Vea también  
  [Cómo: Instalar requisitos previos mediante una aplicación ClickOnce](../deployment/how-to-install-prerequisites-with-a-clickonce-application.md)   
  [Cuadro de diálogo Requisitos previos](../ide/reference/prerequisites-dialog-box.md)   
- [Referencia de esquemas de paquete y producto](../deployment/product-and-package-schema-reference.md)   
- [Usar el programa previo de Visual Studio 2005 para poner en marcha su instalación](http://go.microsoft.com/fwlink/?LinkId=107537)
+ [Product and Package Schema Reference](../deployment/product-and-package-schema-reference.md)   
+ [Usar el programa previo de Visual Studio 2005 para poner en marcha su instalación](https://go.microsoft.com/fwlink/?LinkId=107537)

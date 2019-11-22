@@ -14,17 +14,17 @@ caps.latest.revision: 19
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 5cc95418f392e3c771350428e26e1447dae3bcf5
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: af300bca2b1e679eae58a92962067fcd50fea78f
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72665557"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74297791"
 ---
 # <a name="resources-for-designing-accessible-applications"></a>Recursos para diseñar aplicaciones accesibles
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Use los siguientes vínculos para encontrar información sobre las tecnologías que admiten el diseño accesible, así como sugerencias y ejemplos para desarrollar sitios web y aplicaciones de Windows accesibles. Puede encontrar información general sobre accesibilidad en [http://www.microsoft.com/enable/](http://www.microsoft.com/enable/).
+Use los siguientes vínculos para encontrar información sobre las tecnologías que admiten el diseño accesible, así como sugerencias y ejemplos para desarrollar sitios web y aplicaciones de Windows accesibles. Puede encontrar información general sobre accesibilidad en [http://www.microsoft.com/enable/](https://www.microsoft.com/accessibility/).
 
 ## <a name="technologies"></a>Tecnologías
 
@@ -54,7 +54,7 @@ Use los siguientes vínculos para encontrar información sobre las tecnologías 
 
 ### <a name="third-party-resources"></a>Recursos de terceros
 
-- **Web Accessibility Initiative de World Wide Web Consortium (W3C)**  En este sitio web encontrará directrices y técnicas para el desarrollo de sitios web accesibles. Para obtener más información, vea [http://www.w3.org/WAI/GL/](http://www.w3.org/WAI/GL/).
+- **Web Accessibility Initiative de World Wide Web Consortium (W3C)**  En este sitio web encontrará directrices y técnicas para el desarrollo de sitios web accesibles. Para obtener más información, vea [http://www.w3.org/WAI/GL/](https://www.w3.org/WAI/GL/).
 
 ## <a name="see-also"></a>Vea también
  [Características de accesibilidad de Visual Studio](../../ide/reference/accessibility-features-of-visual-studio.md)

@@ -9,12 +9,12 @@ caps.latest.revision: 7
 author: conceptdev
 ms.author: crdun
 manager: jillfra
-ms.openlocfilehash: 6e1b34cbc2497bd70f65021c83db4f59480519f1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ad085cc6c41714a551fbb344274e6d0f164ab67e
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62573211"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74297661"
 ---
 # <a name="troubleshooting-and-known-issues-visual-studio-tools-for-unity"></a>Solución de problemas y problemas conocidos (Visual Studio Tools para Unity)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,7 +36,7 @@ En esta sección encontrará soluciones a problemas comunes con Visual Studio To
 3. Genere los nuevos archivos de solución y proyecto. Si quiere generarlos ahora, en el menú principal del Editor de Unity, elija **Visual Studio Tools**, **Generar archivos de proyecto**. De lo contrario, puede omitir este paso si lo desea; Visual Studio Tools para Unity generará los nuevos archivos automáticamente al elegir **Visual Studio Tools**, **Abrir en Visual Studio**.  
   
 ### <a name="visual-studio-wont-load-the-solution-that-visual-studio-tools-for-unity-created"></a>Visual Studio no cargará la solución que creó Visual Studio Tools para Unity  
- Para obtener más información, consulte [la respuesta a esta cuestión de StackOverFlow](http://stackoverflow.com/a/24035907/36702).  
+ Para obtener más información, consulte [la respuesta a esta cuestión de StackOverFlow](https://stackoverflow.com/questions/20086755/unityvs-visual-studio-can-not-open/24035907#24035907).  
   
 ### <a name="on-windows-8-visual-studio-asks-to-download-the-unity-target-framework"></a>En Windows 8, Visual Studio le pide que descargue el marco de destino de Unity  
  UnityVS necesita .NET Framework 3.5, que no instala de manera predeterminada en Windows 8. Para corregir este problema, siga las instrucciones para descargar e instalar .NET Framework 3.5.  

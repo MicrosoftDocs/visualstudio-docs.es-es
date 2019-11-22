@@ -1,5 +1,5 @@
 ---
-title: Solución de problemas del visor de ayuda | Microsoft Docs
+title: Troubleshooting the Help Viewer | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-help-viewer
@@ -12,12 +12,12 @@ caps.latest.revision: 15
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 490525cded11a4cddbbfb3f650d87c55b2fa196b
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 01049d5ecf8710cd680278dbf95dbe70767cd5bf
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72654769"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74299892"
 ---
 # <a name="troubleshooting-the-help-viewer"></a>Solución de problemas del Visor de Ayuda
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,9 +45,9 @@ En este tema se describen los problemas que pueden surgir con el Visor de Ayuda.
 ## <a name="additional-resources"></a>Recursos adicionales
  Puede obtener más información y proporcionar comentarios sobre el Visor de Ayuda mediante los siguientes recursos:
 
-- Para enviar comentarios, vea [Microsoft Connect](http://go.microsoft.com/fwlink/?linkid=243983) en el sitio web de Microsoft o envíe un correo a [hlpfdbk@microsoft.com](mailto:hlpfdbk@microsoft.com).
+- Para enviar comentarios, vea [Microsoft Connect](https://go.microsoft.com/fwlink/?linkid=243983) en el sitio web de Microsoft o envíe un correo a [hlpfdbk@microsoft.com](mailto:hlpfdbk@microsoft.com).
 
-- Para obtener más información, consulte la [documentación para desarrolladores y el foro del sistema de ayuda](http://go.microsoft.com/fwlink/?LinkId=232741) y el blog de [Help Guy](http://go.microsoft.com/fwlink/?LinkId=232743) .
+- For more information, see the [Developer Documentation and Help System](https://go.microsoft.com/fwlink/?LinkId=232741) forum and [The Help Guy](https://go.microsoft.com/fwlink/?LinkId=232743) blog.
 
 ## <a name="see-also"></a>Vea también
- [Guía del administrador del Visor de Ayuda 2.1](http://go.microsoft.com/fwlink/?LinkId=243985)
+ [Guía del administrador del Visor de Ayuda 2.1](https://go.microsoft.com/fwlink/?LinkId=243985)

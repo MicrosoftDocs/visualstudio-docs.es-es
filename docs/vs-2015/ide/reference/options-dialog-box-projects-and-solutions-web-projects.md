@@ -11,12 +11,12 @@ caps.latest.revision: 14
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: ddb8688822f4465d313130e5505ff67a93413956
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 5456ef4935feb2ad6f08e2a0b7ff24ad58089e1f
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72668864"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74297868"
 ---
 # <a name="options-dialog-box-projects-and-solutions-web-projects"></a>Cuadro de diálogo Opciones, Proyectos y soluciones, Proyectos web
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -29,6 +29,6 @@ Establece el servidor web que se va a usar para el desarrollo en [!INCLUDE[vsprv
 > Las opciones disponibles en los cuadros de diálogo, así como los nombres y las ubicaciones de los comandos de menú que se ven, podrían diferir de lo que se describe en la Ayuda, en función de los valores de configuración o de edición activos. Esta página de Ayuda se ha redactado teniendo en cuenta la **Configuración web**. Para ver o cambiar la configuración, elija **Importar y exportar configuraciones** en el menú **Herramientas**. Para obtener más información, vea [Personalizar la configuración de desarrollo en Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).
 
 ## <a name="settings"></a>Configuración
- **Usar la versión de 64 bits de IIS Express para proyectos y sitios web** Seleccione esta opción para usar IIS Express en lugar del Servidor de desarrollo de Visual Studio. Para obtener más información vea [Introducción de IIS Express](http://go.microsoft.com/?linkid=9747914) e [Información general de IIS Express](http://go.microsoft.com/?linkid=9747915). Esta opción está deshabilitada de forma predeterminada.
+ **Use the 64-bit version of IIS Express for web sites and projects** Select this option to use IIS Express instead of the Visual Studio Development Server. Para obtener más información vea [Introducción de IIS Express](https://weblogs.asp.net/scottgu/introducing-iis-express) e [Información general de IIS Express](https://docs.microsoft.com/iis/extensions/introduction-to-iis-express/iis-express-overview). Esta opción está deshabilitada de forma predeterminada.
 
- **Advertir antes de ejecutar aplicaciones web cuando haya errores en la lista de errores** Si esta casilla está activada, se le avisará si intenta ejecutar la aplicación web cuando no se compila sin errores.
+ **Warn before running web applications when there are errors in the error list** If this box is checked, you will be warned if you try to run your web application when it does not compile  without errors.

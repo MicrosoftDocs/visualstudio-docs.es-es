@@ -1,5 +1,5 @@
 ---
-title: Clases de Managed Package Framework | Documentos de Microsoft
+title: Managed Package Framework Classes | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: devlang-csharp
@@ -12,18 +12,18 @@ helpviewer_keywords:
 ms.assetid: 15aedcc3-c79a-460b-b620-43223f1ae81e
 caps.latest.revision: 24
 manager: jillfra
-ms.openlocfilehash: 75f7cb153a976614ff790095141a820af80b5834
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 2e9fe1abb82d3d64232e3e5e2a6d117c1068aa1c
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63422756"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74297703"
 ---
 # <a name="managed-package-framework-classes"></a>Clases de Managed Package Framework
 Las clases de Managed Package Framework (MPF) se pueden usar para crear paquetes VSPackage mediante código administrado. Proporcionan implementaciones predeterminadas para muchas interfaces de VSPackage. Al ocultar los detalles y las complejidades de la implementación, MPF permite crear productos de integración de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] con una cantidad mínima de código.  
   
 > [!WARNING]
-> La mayoría de los ensamblados que contienen clases de Managed Package Framework se incluyen con el SDK de Visual Studio. Puede descargar el código fuente de Managed Package Framework for Projects en [Managed Package Framework for Projects](http://mpfproj11.codeplex.com/).  
+> La mayoría de los ensamblados que contienen clases de Managed Package Framework se incluyen con el SDK de Visual Studio. Puede descargar el código fuente de Managed Package Framework for Projects en [Managed Package Framework for Projects](https://archive.codeplex.com/?p=mpfproj11).  
   
 ## <a name="mpf-namespaces"></a>Espacios de nombres de MPF  
  En la tabla siguiente se enumeran los espacios de nombres de MPF proporcionados por [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)].  
@@ -39,6 +39,6 @@ Las clases de Managed Package Framework (MPF) se pueden usar para crear paquetes
 |<xref:Microsoft.VisualStudio.Shell.Flavor>|Admite subtipos de proyectos (también conocidos como "tipos").|  
   
 ## <a name="see-also"></a>Vea también  
- [VSPackages y Managed Package Framework](../misc/vspackages-and-the-managed-package-framework.md)   
- [Mediante ensamblados de interoperabilidad de Visual Studio](../extensibility/internals/using-visual-studio-interop-assemblies.md)   
+ [VSPackages and the Managed Package Framework](../misc/vspackages-and-the-managed-package-framework.md)   
+ [Using Visual Studio Interop Assemblies](../extensibility/internals/using-visual-studio-interop-assemblies.md)   
  [VSPackages y marco de trabajo de paquetes administrados](../misc/vspackages-and-the-managed-package-framework.md)

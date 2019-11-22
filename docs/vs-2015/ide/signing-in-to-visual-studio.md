@@ -1,5 +1,5 @@
 ---
-title: Iniciar sesión en Visual Studio 2015 | Microsoft Docs
+title: Sign in to Visual Studio 2015 | Microsoft Docs
 titleSuffix: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -10,12 +10,12 @@ caps.latest.revision: 34
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 9c732f4011c4194ce95621cf49022c2b6a9fabf3
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 257c3e097f890cc5b3ceec03aca8b264695e1bd9
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72661221"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74301219"
 ---
 # <a name="signing-in-to-visual-studio"></a>Iniciar sesión en Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,13 +40,13 @@ Puede personalizar y optimizar la experiencia de desarrollo en Visual Studio est
 - **Se conecta automáticamente a distintos servicios, por ejemplo, Azure y Visual Studio Team Services,** en el IDE sin que se vuelvan a solicitar las credenciales de la misma cuenta.
 
 ## <a name="how-to-sign-in-to-visual-studio"></a>Cómo iniciar sesión en Visual Studio
- La primera vez que inicia Visual Studio, se le pide que inicie sesión y que proporcione información de registro básica. Debe elegir una cuenta Microsoft o una cuenta profesional o educativa que mejor le represente. Si no dispone de ninguna, puede crear una cuenta de Microsoft de forma gratuita. Vea [¿Cómo suscribirse para obtener una cuenta Microsoft?](http://windows.microsoft.com/windows-live/sign-up-create-account-how)
+ La primera vez que inicia Visual Studio, se le pide que inicie sesión y que proporcione información de registro básica. Debe elegir una cuenta Microsoft o una cuenta profesional o educativa que mejor le represente. Si no dispone de ninguna, puede crear una cuenta de Microsoft de forma gratuita. Vea [¿Cómo suscribirse para obtener una cuenta Microsoft?](https://support.microsoft.com/help/4026324/microsoft-account-how-to-create)
 
  A continuación, elija la configuración de UI y el tema de color que desea usar en Visual Studio. Visual Studio recordará la configuración y la sincronizará en todos los entornos de Visual Studio en los que ha iniciado sesión. Para obtener una lista de las configuraciones sincronizadas, vea [Configuración sincronizada](../ide/synchronized-settings-in-visual-studio.md). Puede cambiar la configuración más adelante desde el menú **Herramientas &#124; Opciones** en Visual Studio.
 
  Después de proporcionar la configuración, se inicia Visual Studio, y ya ha iniciado sesión y está listo para empezar. Para comprobar si ha iniciado sesión, busque su nombre en la esquina superior derecha del entorno de Visual Studio.
 
- ![Usuario que ha iniciado sesión en Currentlly](../ide/media/vs2015-username.png "VS2015_UserName")
+ ![Currentlly logged in user](../ide/media/vs2015-username.png "VS2015_UserName")
 
  A menos que cierre sesión, siempre que inicia Visual Studio se inicia sesión automáticamente y todos los cambios realizados en la configuración sincronizada se aplican automáticamente. Para cerrar sesión, elija la flecha abajo situada junto al nombre del perfil en el entorno de Visual Studio, elija el comando **Configuración de la cuenta** y, a continuación, elija el vínculo **Cerrar sesión** . Para volver a iniciar sesión, elija el comando **Iniciar sesión** situado en la esquina superior derecha del entorno de Visual Studio.
 

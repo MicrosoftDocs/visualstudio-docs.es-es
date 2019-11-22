@@ -8,12 +8,12 @@ ms.assetid: a859595f-6517-43f2-9d61-c706cb55a388
 caps.latest.revision: 25
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 31ca0fdbecf7ea3742fef60f99f2a0a25220f9cf
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: d9c86125d934c5165e3e8111fdd06631844ad1a6
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72657211"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74297961"
 ---
 # <a name="using-different-web-browsers-with-coded-ui-tests"></a>Usar diferentes exploradores web con las pruebas de IU codificadas
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,19 +38,19 @@ Las pruebas de IU codificadas pueden automatizar las pruebas para las aplicacion
 
   - Windows Internet Explorer 10
 
-  - Si quiere conocer las versiones de Mozilla Firefox y Google Chrome compatibles, vaya [aquí](http://visualstudiogallery.msdn.microsoft.com/11cfc881-f8c9-4f96-b303-a2780156628d/).
+  - Si quiere conocer las versiones de Mozilla Firefox y Google Chrome compatibles, vaya [aquí](https://marketplace.visualstudio.com/items?itemName=AtinBansal.SeleniumcomponentsforCodedUICrossBrowserTesting).
 
-- Instale los [componentes Selenium para pruebas automatizadas de interfaz de usuario en distintos exploradores](http://visualstudiogallery.msdn.microsoft.com/11cfc881-f8c9-4f96-b303-a2780156628d/).
+- Instale los [componentes Selenium para pruebas automatizadas de interfaz de usuario en distintos exploradores](https://marketplace.visualstudio.com/items?itemName=AtinBansal.SeleniumcomponentsforCodedUICrossBrowserTesting).
 
   **¿Qué se admite en todos los exploradores web?**
 
-- [Agregar código personalizado para controlar características](http://blogs.msdn.com/b/visualstudioalm/archive/2012/12/10/coded-ui-test-configuring-search-properties-while-recording-on-internet-explorer.aspx) como propiedades, búsqueda y objetos Waiter de reproducción
+- [Agregar código personalizado para controlar características](https://devblogs.microsoft.com/devops/coded-ui-test-configuring-search-properties-while-recording-on-internet-explorer/) como propiedades, búsqueda y objetos Waiter de reproducción
 
 - Elementos emergentes y cuadros de diálogo
 
-- [Ejecutar JavaScript básico sin tipo de valor devuelto](http://blogs.msdn.com/b/visualstudioalm/archive/2013/01/18/introducing-jscript-execution-on-internetexplorer-and-crossbrowser-in-coded-ui-test.aspx)
+- [Ejecutar JavaScript básico sin tipo de valor devuelto](https://devblogs.microsoft.com/devops/introducing-javascript-execution-on-internetexplorer-and-crossbrowser-in-coded-ui-test/)
 
-- Resistencia de búsqueda (mediante coincidencia inteligente) y [mejoras de rendimiento](http://blogs.msdn.com/b/visualstudioalm/archive/2012/02/01/guidelines-on-improving-performance-of-coded-ui-test-playback.aspx)
+- Resistencia de búsqueda (mediante coincidencia inteligente) y [mejoras de rendimiento](https://devblogs.microsoft.com/devops/guidelines-on-improving-performance-of-coded-ui-test-playback/)
 
 ## <a name="why-should-i-use-coded-ui-tests-across-multiple-web-browser-types"></a>¿Por qué se deben usar pruebas de IU codificadas en varios tipos de explorador web?
  Al probar la aplicación web en varios tipos de explorador web, se emula mejor la experiencia de los usuarios que pueden trabajar con exploradores diferentes. Por ejemplo, la aplicación puede incluir un control o código en Internet Explorer que no sean compatibles con otros exploradores web. Al ejecutar las pruebas codificadas de la interfaz de usuario en otros exploradores, puede detectar y corregir cualquier problema antes de que afecte a los clientes.
@@ -76,7 +76,7 @@ Las pruebas de IU codificadas pueden automatizar las pruebas para las aplicacion
 3. Resalte la extensión y seleccione **Descargar**.
 
    > [!TIP]
-   > También puede descargar los componentes Selenium para pruebas automatizadas de IU en distintos exploradores [aquí](http://visualstudiogallery.msdn.microsoft.com/11cfc881-f8c9-4f96-b303-a2780156628d/).
+   > También puede descargar los componentes Selenium para pruebas automatizadas de IU en distintos exploradores [aquí](https://marketplace.visualstudio.com/items?itemName=AtinBansal.SeleniumcomponentsforCodedUICrossBrowserTesting).
 
    Para más información sobre cómo crear y usar pruebas automatizadas de IU, vea la sección relativa a la [creación de pruebas automatizadas de IU](../test/use-ui-automation-to-test-your-code.md#VerifyingCodeUsingCUITCreate).
 
@@ -101,17 +101,17 @@ Las pruebas de IU codificadas pueden automatizar las pruebas para las aplicacion
  *¿Qué más debería saber?*
  **Notas**
 
-- ![Requisito previo](../test/media/prereq.png "Prereq") No se admite el explorador Web Apple Safari.
+- ![Prerequsite](../test/media/prereq.png "Prereq") Apple Safari web browser is not supported.
 
-- ![Requisito previo](../test/media/prereq.png "Prereq") La acción de iniciar el explorador Web debe formar parte de la prueba de IU codificada.
+- ![Prerequsite](../test/media/prereq.png "Prereq") The action of starting the web browser must be part of the coded UI test.
 
    Si tiene un explorador web abierto y desea ejecutar pasos en él, la reproducción producirá un error a menos que se utilice Internet Explorer. Por consiguiente, se recomienda incluir el inicio del explorador web como parte de las pruebas de IU codificadas.
 
-- ![Requisito previo](../test/media/prereq.png "Prereq") No se admite la automatización de acciones de IU específicas del explorador como maximizar, minimizar y restaurar.
+- ![Prerequsite](../test/media/prereq.png "Prereq") Automating browser specific based UI actions such as maximize, minimize and restore is not supported.
 
   **Sugerencias**
 
-- ![Sugerencia](../test/media/tip.png "Sugerencia") Puede configurar la salida para incluir capturas de pantallas en los registros de IU codificada. Para ello, debe establecer algunas opciones de configuración en el archivo QTAgent32.exe.config. De forma predeterminada, este archivo se instala en la siguiente ubicación:
+- ![Tip](../test/media/tip.png "Sugerencia") You can configure the output to include screenshots in the coded UI logs. Para ello, debe establecer algunas opciones de configuración en el archivo QTAgent32.exe.config. De forma predeterminada, este archivo se instala en la siguiente ubicación:
 
    **C:\Program Files (x86)\Microsoft Visual Studio 11.0\Common7\IDE**
 
@@ -139,17 +139,17 @@ Las pruebas de IU codificadas pueden automatizar las pruebas para las aplicacion
  [Solucionar problemas debidos a errores de pruebas en varios exploradores](https://skydrive.live.com/redir?resid=AE5CD7309CCCC43C!182&authkey=!AEpS48i295B49FI)
 
 ### <a name="guidance"></a>Orientación
- [Pruebas de entrega continua con Visual Studio 2012. Capítulo 2: Pruebas unitarias: Prueba del interior](http://go.microsoft.com/fwlink/?LinkID=255188)
+ [Pruebas de entrega continua con Visual Studio 2012. Capítulo 2: Pruebas unitarias: Prueba del interior](https://go.microsoft.com/fwlink/?LinkID=255188)
 
- [Comprobación de entregas continuas con Visual Studio 2012 – Capítulo 5 Automatización de las pruebas del sistema](http://go.microsoft.com/fwlink/?LinkID=255196)
+ [Comprobación de entregas continuas con Visual Studio 2012 – Capítulo 5 Automatización de las pruebas del sistema](https://go.microsoft.com/fwlink/?LinkID=255196)
 
 ### <a name="faq"></a>Preguntas más frecuentes
- [Preguntas más frecuentes sobre las pruebas de IU codificadas - 1](http://go.microsoft.com/fwlink/?LinkID=230576)
+ [Preguntas más frecuentes sobre las pruebas de IU codificadas - 1](https://go.microsoft.com/fwlink/?LinkID=230576)
 
- [Preguntas más frecuentes sobre las pruebas de IU codificadas - 2](http://go.microsoft.com/fwlink/?LinkID=230578)
+ [Preguntas más frecuentes sobre las pruebas de IU codificadas - 2](https://go.microsoft.com/fwlink/?LinkID=230578)
 
 ### <a name="forum"></a>Foro
- [Pruebas de automatización de IU de Visual Studio (incluyen pruebas automatizadas de IU)](http://go.microsoft.com/fwlink/?LinkID=224497)
+ [Pruebas de automatización de IU de Visual Studio (incluyen pruebas automatizadas de IU)](https://go.microsoft.com/fwlink/?LinkID=224497)
 
 ## <a name="see-also"></a>Vea también
- [Usar la automatización de la interfaz de usuario para probar las](../test/use-ui-automation-to-test-your-code.md) [configuraciones y plataformas compatibles con el código para las pruebas de IU codificadas y las grabaciones de acciones](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md) [analizar pruebas de IU codificadas mediante los registros de pruebas de IU codificadas](../test/analyzing-coded-ui-tests-using-coded-ui-test-logs.md)
+ [Use UI Automation To Test Your Code](../test/use-ui-automation-to-test-your-code.md) [Supported Configurations and Platforms for Coded UI Tests and Action Recordings](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md) [Analyzing Coded UI Tests Using Coded UI Test Logs](../test/analyzing-coded-ui-tests-using-coded-ui-test-logs.md)

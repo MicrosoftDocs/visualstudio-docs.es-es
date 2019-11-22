@@ -5,19 +5,19 @@ description: Una lista de las versiones de lanzamiento y los números de compila
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.date: 11/20/2019
+ms.date: 11/21/2019
 ms.topic: reference
 ms.custom: seodec18
 ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 234220dae4ca891e5cd7671d2fc7ded4a1912d71
-ms.sourcegitcommit: 9c7d8693108ecd2042a70c04cebe3c44af657baf
+ms.openlocfilehash: 1001fe2e22a924c9e47dc4188c45ba2a7674363e
+ms.sourcegitcommit: b04c603ce73b993d042ebdf7f3722cf4fe2ef7f4
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74261717"
+ms.lasthandoff: 11/22/2019
+ms.locfileid: "74316451"
 ---
 # <a name="visual-studio-build-numbers-and-release-dates"></a>Números de compilación y fechas de lanzamiento de Visual Studio
 
@@ -29,16 +29,17 @@ En la tabla siguiente se enumeran los números de compilación y las fechas de v
 
 | **Versión**| **Canal** | **Fecha de lanzamiento** | **Versión de compilación** |
 | ---------------------- | ----------- | ---------------- | ----------------- |
+| 16.4.0 | Versión preliminar 6 | 21 de noviembre de 2019 | 16.4.29519.161 |
 | 16.3.10 | Release | 20 de noviembre de 2019 | 16.3.29519.87 |
-| 16.4.0 | Preview 5 | 14 de noviembre de 2019 | 16.4.29512.175 |
+| 16.4.0 | Versión preliminar 5 | 14 de noviembre de 2019 | 16.4.29512.175 |
 | 16.3.9 | Release | 12 de noviembre de 2019 | 16.3.29509.3 |
-| 16.4.0 | Preview 4 | 6 de noviembre de 2019 | 16.4.29505.145 |
+| 16.4.0 | Versión preliminar 4 | 6 de noviembre de 2019 | 16.4.29505.145 |
 | 16.3.8 | Release | 5 de noviembre de 2019 | 16.3.29503.13 |
-| 16.4.0 | Preview 3 | 4 de noviembre de 2019 | 16.4.29430.225 |
+| 16.4.0 | Versión preliminar 3 | 4 de noviembre de 2019 | 16.4.29430.225 |
 | 16.3.7 | Release | 29 de octubre de 2019 | 16.3.29424.173 |
 | 16.3.6 | Release | 22 de octubre de 2019 | 16.3.29418.71 |
 | 16.3.5 | Release | 15 de octubre de 2019 | 16.3.29411.108 |
-| 16.4.0 | Preview 2 | 15 de octubre de 2019 | 16.4.29411.138 |
+| 16.4.0 | Versión preliminar 2 | 15 de octubre de 2019 | 16.4.29411.138 |
 | 16.0.9 | Release | 15 de octubre de 2019 | 16.0.28803.598 |
 | 16.3.4 | Release | 10 de octubre de 2019 | 16.3.29409.12 |
 | 16.3.3 | Release | 8 de octubre de 2019 | 16.3.29403.142 |
@@ -46,43 +47,43 @@ En la tabla siguiente se enumeran los números de compilación y las fechas de v
 | 16.3.1 | Release | 25 de septiembre de 2019 | 16.3.29324.140 |
 | 16.4.0 | Versión preliminar 1 | 23 de septiembre de 2019 | 16.4.29319.158 |
 | 16.3.0 | Release | 23 de septiembre de 2019 | 16.3.29318.209 |
-| 16.3.0 | Preview 4 | 16 de septiembre de 2019 | 16.3.29311.281 |
+| 16.3.0 | Versión preliminar 4 | 16 de septiembre de 2019 | 16.3.29311.281 |
 | 16.2.5 | Release | 10 de septiembre de 2019 | 16.2.29306.81 |
 | 16.0.8 | Release | 10 de septiembre de 2019 | 16.0.28803.584 |
 | 16.2.4 | Release | 5 de septiembre de 2019 | 16.2.29230.47 |
-| 16.3.0 | Preview 3 | 4 de septiembre de 2019 | 16.3.29230.61 |
+| 16.3.0 | Versión preliminar 3 | 4 de septiembre de 2019 | 16.3.29230.61 |
 | 16.2.3 | Release | 20 de agosto de 2019 | 16.2.29215.179 |
 | 16.2.2 | Release | 13 de agosto de 2019 | 16.2.29209.62 |
-| 16.3.0 | Preview 2 | 13 de agosto de 2019 | 16.3.29209.152 |
+| 16.3.0 | Versión preliminar 2 | 13 de agosto de 2019 | 16.3.29209.152 |
 | 16.0.7 | Release | 13 de agosto de 2019 | 16.0.28803.571 |
 | 16.2.1 | Release | 6 de agosto de 2019 | 16.2.29201.188 |
 | 16.2.0 | Release | 24 de julio de 2019 | 16.2.29123.88 |
 | 16.3.0 | Versión preliminar 1 | 24 de julio de 2019 | 16.3.29123.89 |
-| 16.2.0 | Preview 4 | 16 de julio de 2019 | 16.2.29111.141 |
+| 16.2.0 | Versión preliminar 4 | 16 de julio de 2019 | 16.2.29111.141 |
 | 16.1.6 | Release | 9 de julio de 2019 | 16.1.29102.190 |
 | 16.0.6 | Release | 9 de julio de 2019 | 16.0.28803.540 |
 | 16.1.5 | Release | 2 de julio de 2019 | 16.1.29025.244 |
 | 16.1.4 | Release | 25 de junio de 2019 | 16.1.29020.237 |
-| 16.2.0 | Preview 3 | 25 de junio de 2019 | 16.2.29021.104 |
+| 16.2.0 | Versión preliminar 3 | 25 de junio de 2019 | 16.2.29021.104 |
 | 16.1.3 | Release | 11 de junio de 2019 | 16.1.29009.5 |
-| 16.2.0 | Preview 2 | 11 de junio de 2019 | 16.2.29006.145 |
+| 16.2.0 | Versión preliminar 2 | 11 de junio de 2019 | 16.2.29006.145 |
 | 16.0.5 | Release | 11 de junio de 2019 | 16.0.28803.514 |
 | 16.1.2 | Release | 5 de junio de 2019 | 16.1.29001.49 |
 | 16.1.1 | Release | 24 de mayo de 2019 | 16.1.28922.388 |
 | 16.1.0 | Release | 21 de mayo de 2019 | 16.1.28917.181 |
 | 16.2.0 | Versión preliminar 1 | 21 de mayo de 2019 | 16.2.28917.182 |
 | 16.0.4 | Release | 14 de mayo de 2019 | 16.0.28803.452 |
-| 16.1.0 | Preview 3 | 6 de mayo de 2019 | 16.1.28902.138 |
+| 16.1.0 | Versión preliminar 3 | 6 de mayo de 2019 | 16.1.28902.138 |
 | 16.0.3 | Release | 30 de abril de 2019 | 16.0.28803.352 |
-| 16.1.0 | Preview 2 | 23 de abril de 2019 | 16.1.28822.285 |
+| 16.1.0 | Versión preliminar 2 | 23 de abril de 2019 | 16.1.28822.285 |
 | 16.0.2 | Release | 18 de abril de 2019 | 16.0.28803.202 |
 | 16.1.0 | Versión preliminar 1 | 10 de abril de 2019 | 16.1.28809.33 |
 | 16.0.1 | Release | 9 de abril de 2019 | 16.0.28803.156 |
 | 16.0.1 | Versión preliminar 1 | 9 de abril de 2019 | 16.0.28803.156 |
 | 16.0.0 | Release | 2 de abril de 2019 | 16.0.28729.10 |
-| 16.0.0 | Preview 5 | 2 de abril de 2019 | 16.0.28729.10 |
+| 16.0.0 | Versión preliminar 5 | 2 de abril de 2019 | 16.0.28729.10 |
 | 16.0.0 | Versión candidata para lanzamiento 4 (RC.4) | 26 de marzo de 2019 | 16.0.28721.148 |
-| 16.0.0 | Preview 4.4 | 26 de marzo de 2019 | 16.0.28721.148 |
+| 16.0.0 | Versión preliminar 4.4 | 26 de marzo de 2019 | 16.0.28721.148 |
 | 16.0.0 | Versión candidata para lanzamiento 3 (RC.3) | 19 de marzo de 2019 | 16.0.28714.193 |
 | 16.0.0 | Versión preliminar 4.3 | 19 de marzo de 2019 | 16.0.28714.193 |
 | 16.0.0 | Versión candidata para lanzamiento 2 (RC.2) | 12 de marzo de 2019 | 16.0.28711.60 |
@@ -96,7 +97,7 @@ En la tabla siguiente se enumeran los números de compilación y las fechas de v
 | 16.0.0 | Versión preliminar 3 | 13 de febrero de 2019 | 16.0.28608.199 |
 | 16.0.0 | Versión preliminar 2.2 | 5 de febrero de 2019 | 16.0.28602.52 |
 | 16.0.0 | Versión preliminar 2.1 | 31 de enero de 2019 | 16.0.28529.54 |
-| 16.0.0 | Preview 2 | 23 de enero de 2019 | 16.0.28522.59 |
+| 16.0.0 | Versión preliminar 2 | 23 de enero de 2019 | 16.0.28522.59 |
 | 16.0.0 | Versión preliminar 1.1 | 10 de diciembre de 2018 | 16.0.28408.50 |
 | 16.0.0 | Versión preliminar 1 | 4 de diciembre de 2018 | 16.0.28329.73 |
 

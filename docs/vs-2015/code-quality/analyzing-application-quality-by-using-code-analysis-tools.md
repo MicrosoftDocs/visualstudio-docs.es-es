@@ -1,5 +1,5 @@
 ---
-title: Analizar la calidad de la aplicación mediante herramientas de análisis de código | Microsoft Docs
+title: Analyzing Application Quality by Using Code Analysis Tools | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -15,34 +15,34 @@ caps.latest.revision: 26
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: c0b46c8efb681a067d5a9e74369ed73c43f1568f
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 8b85bbad909a05bacab361a49cc7e029482ad606
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72671098"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74291199"
 ---
 # <a name="analyzing-application-quality-by-using-code-analysis-tools"></a>Analizar la calidad de la aplicación mediante herramientas de análisis del código
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-En esta sección, [analizar la calidad del código administrado](../code-quality/analyzing-managed-code-quality-by-using-code-analysis.md) análisis de código de Visual Studio para código administrado proporciona información sobre los ensamblados administrados, como infracciones de las reglas de programación y diseño establecidas en el diseño de Microsoft .NET Framework Procedimientos. Los mensajes de advertencia identifican cualquier problema pertinente de programación y diseño y, cuando es posible, proporcionan información sobre la solución del problema.
+In This Section [Analyzing Managed Code Quality](../code-quality/analyzing-managed-code-quality-by-using-code-analysis.md) Visual Studio code analysis for managed code provides information about managed assemblies, such as violations of the programming and design rules set forth in the Microsoft .NET Framework Design Guidelines. Los mensajes de advertencia identifican cualquier problema pertinente de programación y diseño y, cuando es posible, proporcionan información sobre la solución del problema.
 
- [Analizar la calidadC++ de c/Code](../code-quality/analyzing-c-cpp-code-quality-by-using-code-analysis.md) mediante el análisis de códigoC++ la herramienta de análisis de código c/proporciona información a los desarrolladores sobreC++ los posibles defectos en su código de c/origen. Entre los errores de codificación más comunes detectados por esta herramienta, destacan las saturaciones de búfer, los casos de memoria no inicializada, la desreferenciación del puntero NULL, así como las pérdidas de memoria y recursos.
+ [Analyzing C/C++ Code Quality by Using Code Analysis](../code-quality/analyzing-c-cpp-code-quality-by-using-code-analysis.md) The C/C++ Code Analysis tool provides information to developers about possible defects in their C/C++ source code. Entre los errores de codificación más comunes detectados por esta herramienta, destacan las saturaciones de búfer, los casos de memoria no inicializada, la desreferenciación del puntero NULL, así como las pérdidas de memoria y recursos.
 
- [Usar conjuntos de reglas para agrupar reglas de análisis de código](../code-quality/using-rule-sets-to-group-code-analysis-rules.md) Seleccione y cree *conjuntos de reglas* para aplicarlos al proyecto.
+ [Using Rule Sets to Group Code Analysis Rules](../code-quality/using-rule-sets-to-group-code-analysis-rules.md) Select and create *rule sets* to apply to your project.
 
- [Errores de aplicación de análisis de código](../code-quality/code-analysis-application-errors.md) Corrija los errores de la funcionalidad de análisis de código.
+ [Code Analysis Application Errors](../code-quality/code-analysis-application-errors.md) Fix errors in the code analysis functionality.
 
- [Mejorar la calidad del código con directivas de protección del proyecto de equipo](../code-quality/enhancing-code-quality-with-team-project-check-in-policies.md) Al usar Control de versiones de Team Foundation (TFVC), puede crear directivas de protección para los proyectos de equipo que apliquen prácticas que conducen a un mejor código y un desarrollo de grupo más eficaz. Las directivas de protección son reglas que se establecen en el nivel del proyecto de equipo y cuya implantación es obligatoria en los equipos de los desarrolladores antes de que el código pueda protegerse.
+ [Enhancing Code Quality with Team Project Check-in Policies](../code-quality/enhancing-code-quality-with-team-project-check-in-policies.md) When you use Team Foundation Version Control (TFVC), you can create check-in policies for your team projects that enforce practices that lead to better code and more efficient group development. Las directivas de protección son reglas que se establecen en el nivel del proyecto de equipo y cuya implantación es obligatoria en los equipos de los desarrolladores antes de que el código pueda protegerse.
 
 ### <a name="code-analysis-for-drivers"></a>Análisis de código para controladores
  Las herramientas de análisis de código pueden ayudar a mejorar la estabilidad y confiabilidad del controlador analizando sistemáticamente el código fuente del controlador.
 
- [Analizar la calidad de los controladores mediante herramientas de análisis de código](/windows-hardware/drivers/devtest/tools-for-verifying-drivers) El análisis de código para controladores es una herramienta de comprobación estática en tiempo de compilación que detecta errores de codificación C++ básica en C y programas e incluye un módulo especializado diseñado para detectar errores en el código de controlador de modo kernel (principalmente). El comprobador de controladores estático (Static Driver Verifier, SDV) es una herramienta de comprobación estática que analiza sistemáticamente el código fuente de los controladores en modo kernel de Windows. El SDV determina si el controlador interactúa correctamente con el kernel del sistema operativo de Windows.
+ [Analyzing Driver Quality by Using Code Analysis Tools](/windows-hardware/drivers/devtest/tools-for-verifying-drivers) Code Analysis for Drivers is a compile-time static verification tool that detects basic coding errors in C and C++ programs and includes a specialized module that is designed to detect errors in (primarily) kernel-mode driver code. El comprobador de controladores estático (Static Driver Verifier, SDV) es una herramienta de comprobación estática que analiza sistemáticamente el código fuente de los controladores en modo kernel de Windows. El SDV determina si el controlador interactúa correctamente con el kernel del sistema operativo de Windows.
 
- [Advertencias de análisis de código para controladores](http://go.microsoft.com/fwlink/?LinkId=225920) Describe las advertencias que el análisis de código para los controladores genera cuando detecta un posible error en el código del controlador.
+ [Code Analysis for Drivers Warnings](https://go.microsoft.com/fwlink/?LinkId=225920) Describes the warnings that the Code Analysis for Drivers reports when it detects a possible error in driver code.
 
 ## <a name="related-tasks"></a>Tareas relacionadas
- [Medir la complejidad y el mantenimiento del código administrado](../code-quality/measuring-complexity-and-maintainability-of-managed-code.md) Inserte aquí la descripción.
+ [Measuring Complexity and Maintainability of Managed Code](../code-quality/measuring-complexity-and-maintainability-of-managed-code.md) Insert description here.
 
- [Prueba unitaria del código](../test/unit-test-your-code.md) Inserte aquí la descripción.
+ [Unit Test Your Code](../test/unit-test-your-code.md) Insert description here.

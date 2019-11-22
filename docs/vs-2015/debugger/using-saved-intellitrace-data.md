@@ -1,5 +1,5 @@
 ---
-title: Uso de los datos de IntelliTrace guardados | Microsoft Docs
+title: Using saved IntelliTrace data | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -16,12 +16,12 @@ caps.latest.revision: 112
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: e7c8f17bb454c7dc58a355774206b760aac2bdfe
-ms.sourcegitcommit: 748d9cd7328a30f8c80ce42198a94a4b5e869f26
+ms.openlocfilehash: 5b44ec3fcab0512e50af1debcf6010c1dc584ed0
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/15/2019
-ms.locfileid: "67891086"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74297137"
 ---
 # <a name="using-saved-intellitrace-data"></a>Uso de datos de IntelliTrace guardados
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,13 +30,13 @@ Inicie la depuración desde un archivo de registro de IntelliTrace (.iTrace) par
   
  Asegúrese de que tiene:  
   
-- Archivos de código fuente y archivos de símbolos (.pdb) que coincidan para el código de la aplicación. De lo contrario, Visual Studio no puede resolver las ubicaciones de origen y muestra el mensaje "Símbolos no encontrados". Consulte [especificar símbolos (.pdb) y archivos de código fuente](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md) y [diagnosticar problemas después de la implementación](../debugger/diagnose-problems-after-deployment.md).  
+- Archivos de código fuente y archivos de símbolos (.pdb) que coincidan para el código de la aplicación. De lo contrario, Visual Studio no puede resolver las ubicaciones de origen y muestra el mensaje "Símbolos no encontrados". See [Specify Symbol (.pdb) and Source Files](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md) and [Diagnose problems after deployment](../debugger/diagnose-problems-after-deployment.md).  
   
 - Visual Studio Enterprise (y no las versiones Professional o Community) el equipo de desarrollo o en otro equipo para abrir los archivos .iTrace  
   
 - Un archivo .iTrace de uno de estos orígenes:  
   
-    |**Origen**|**Vea**|  
+    |**Source**|**Vea**|  
     |----------------|-------------|  
     |Una sesión IntelliTrace en Visual Studio Enterprise (pero no en las ediciones Professional o Community).|[Características de IntelliTrace](../debugger/intellitrace-features.md)|  
     |Una sesión de prueba en Microsoft Test Manager. Se asociará un archivo .iTrace a un elemento de trabajo de Team Foundation Server.|[Recopilar más datos de diagnóstico en las pruebas manuales](https://msdn.microsoft.com/library/bb5a2cc0-84f5-4dfe-9560-ca3d313aefd2)|  
@@ -71,7 +71,7 @@ Inicie la depuración desde un archivo de registro de IntelliTrace (.iTrace) par
 ## <a name="Understand"></a> Obtener información sobre el registro de IntelliTrace  
  Algunas de las secciones siguientes del archivo .iTrace solo aparecen si recopiló datos de un origen determinado, por ejemplo, desde Test Manager o desde aplicaciones de SharePoint.  
   
-|**Sección**|**Contiene**|**Origen de la recopilación**|  
+|**Section**|**Contiene**|**Origen de la recopilación**|  
 |-----------------|------------------|---------------------------|  
 |[Infracciones de rendimiento](#Performance)|Eventos de rendimiento con llamadas de función que superan el umbral configurado|Microsoft Monitoring Agent, solo o con System Center 2012 R2 Operations Manager para aplicaciones web ASP.NET hospedadas en IIS|  
 |[Datos de excepción](#ExceptionData)|Excepciones, incluida la pila de llamadas completa de cada excepción|Todos los orígenes|  
@@ -100,7 +100,7 @@ Inicie la depuración desde un archivo de registro de IntelliTrace (.iTrace) par
   
 1. En **Infracciones de rendimiento**, consulte los eventos de rendimiento registrados, el tiempo de ejecución total y otra información del evento. A continuación, profundice más en los métodos que se llamaron durante un evento de rendimiento específico.  
   
-     ![Visualización de los detalles del evento de rendimiento](../debugger/media/ffr-itsummarypageperformance.png "FFR_ITSummaryPagePerformance")  
+     ![View performance event details](../debugger/media/ffr-itsummarypageperformance.png "FFR_ITSummaryPagePerformance")  
   
      También puede hacer doble clic en el evento.  
   
@@ -110,17 +110,17 @@ Inicie la depuración desde un archivo de registro de IntelliTrace (.iTrace) par
   
 3. Expanda esa llamada para revisar todas las llamadas anidadas y los valores de parámetro que se registraron en ese punto en el tiempo.  
   
-     (Teclado: Para mostrar u ocultar una llamada anidada, presione las teclas **Flecha derecha** o **Flecha izquierda**, respectivamente. Para mostrar y ocultar los valores de parámetro de una llamada anidada, presione la tecla **Barra espaciadora** ).  
+     (Teclado: para mostrar u ocultar una llamada anidada, presione las teclas **Flecha derecha** o **Flecha izquierda** , respectivamente. Para mostrar y ocultar los valores de parámetro de una llamada anidada, presione la tecla **Barra espaciadora** ).  
   
      Inicie la depuración desde la llamada.  
   
-     ![Inicio de la depuración desde una llamada al método](../debugger/media/ffr-itsummarypageperformancemethodscalled.png "FFR_ITSummaryPagePerformanceMethodsCalled")  
+     ![Start debugging from method call](../debugger/media/ffr-itsummarypageperformancemethodscalled.png "FFR_ITSummaryPagePerformanceMethodsCalled")  
   
      También puede hacer doble clic en la llamada o presionar la tecla **Entrar** .  
   
      Si el método está en el código de aplicación, Visual Studio va a ese método.  
   
-     ![Consulta del código de la aplicación a partir del evento de rendimiento](../debugger/media/ffr-itsummarypageperformancegotocode.png "FFR_ITSummaryPagePerformanceGoToCode")  
+     ![Go to application code from performance event](../debugger/media/ffr-itsummarypageperformancegotocode.png "FFR_ITSummaryPagePerformanceGoToCode")  
   
      Ahora puede revisar otros valores registrados, la pila de llamadas, recorrer el código o utilizar la ventana **IntelliTrace** para [moverse hacia atrás o hacia delante “en el tiempo” por otros métodos](../debugger/intellitrace.md) a los que se llamó durante este evento de rendimiento.  
   
@@ -131,19 +131,19 @@ Inicie la depuración desde un archivo de registro de IntelliTrace (.iTrace) par
   
 1. En **Datos de excepción**, revise los eventos de excepciones registrados, sus tipos, mensajes y cuándo se produjeron las excepciones. Para profundizar en el código, inicie la depuración desde el evento más reciente de un grupo de excepciones.  
   
-     ![Inicio de la depuración a partir del evento de excepción](../debugger/media/ffr-itsummarypageexception.png "FFR_ITSummaryPageException")  
+     ![Start debugging from exception event](../debugger/media/ffr-itsummarypageexception.png "FFR_ITSummaryPageException")  
   
      También puede hacer doble clic en el evento. Si los eventos no están agrupados, elija **Depurar este evento**.  
   
      Si se produjo una excepción en el código de la aplicación, Visual Studio va al lugar donde se ha producido la excepción.  
   
-     ![Consulta del código de la aplicación desde un evento de excepción](../debugger/media/ffr-itsummarypageexceptiongotocode.png "FFR_ITSummaryPageExceptionGoToCode")  
+     ![Go to application code from an exception event](../debugger/media/ffr-itsummarypageexceptiongotocode.png "FFR_ITSummaryPageExceptionGoToCode")  
   
      Ahora puede revisar otros valores registrados, la pila de llamadas o utilizar la ventana **IntelliTrace** para [moverse hacia atrás o hacia delante “en el tiempo” por otros eventos registrados](../debugger/intellitrace.md), código relacionado y los valores registrados en esos puntos en el tiempo.  
   
     |**Columna**|**Muestra**|  
     |----------------|-------------------|  
-    |**Tipo**|El tipo .NET de la excepción|  
+    |**ype**|El tipo .NET de la excepción|  
     |**Mensaje más reciente** para excepciones agrupadas o **Mensaje** para excepciones no agrupadas|El mensaje que proporciona la excepción|  
     |**Recuento** para excepciones agrupadas|El número de veces que se produjo la excepción|  
     |**Id. del subproceso** para excepciones no agrupadas|El identificador del subproceso que produjo la excepción|  
@@ -163,11 +163,11 @@ Inicie la depuración desde un archivo de registro de IntelliTrace (.iTrace) par
   
     Por ejemplo:  
   
-    ![IntelliTrace &#45; SharePoint error &#45; Id. de correlación](../debugger/media/sharepointerror-intellitrace.png "SharePointError_IntelliTrace")  
+    ![IntelliTrace &#45; SharePoint error &#45; correlation ID](../debugger/media/sharepointerror-intellitrace.png "SharePointError_IntelliTrace")  
   
 2. Abra el archivo .iTrace, después vaya a **Análisis** y especifique el identificador de correlación de SharePoint para revisar la solicitud web y los eventos registrados coincidentes.  
   
-    ![Registro de IntelliTrace &#45; Id. de correlación de SharePoint escriba](../debugger/media/entersharepointcorrelationid.png "EnterSharePointCorrelationID")  
+    ![IntelliTrace log &#45; Enter SharePoint correlation ID](../debugger/media/entersharepointcorrelationid.png "EnterSharePointCorrelationID")  
   
 3. En **Eventos de solicitud**, examine los eventos. Empezando por el principio, los eventos aparecen en el orden en que se produjeron.  
   
@@ -175,7 +175,7 @@ Inicie la depuración desde un archivo de registro de IntelliTrace (.iTrace) par
   
    2. Elija **Iniciar depuración** para iniciar la depuración en el punto donde se produjo el evento.  
   
-      ![Archivo de registro de IntelliTrace &#45; Ver solicitud de web &#43; eventos](../debugger/media/entersharepointcorrelationid2.png "EnterSharePointCorrelationID2")  
+      ![IntelliTrace log file &#45; View web request &#43; events](../debugger/media/entersharepointcorrelationid2.png "EnterSharePointCorrelationID2")  
   
    Puede ver estas clases de eventos de SharePoint junto con los eventos de IntelliTrace:  
   
@@ -194,7 +194,7 @@ Inicie la depuración desde un archivo de registro de IntelliTrace (.iTrace) par
     |**Identificador de categoría**|**Identificador de categoría**|  
     |**Categoría**|**Categoría**|  
     |**Área**|**Producto**|  
-    |**Salida**|**Mensaje**|  
+    |**Resultado**|**Mensaje**|  
     |**Id. de correlación**|**Id. de correlación**|  
   
 ##### <a name="start-debugging-from-an-unhandled-exception"></a>Iniciar la depuración desde una excepción no controlada  
@@ -205,9 +205,9 @@ Inicie la depuración desde un archivo de registro de IntelliTrace (.iTrace) par
   
 3. Elija **Depurar excepción** para iniciar la depuración en el punto en el que se produjo la excepción.  
   
-    ![Registro de IntelliTrace &#45; las excepciones no controladas de SharePoint](../debugger/media/sharepointunhandledexceptions-intellitrace.png "SharePointUnhandledExceptions_IntelliTrace")  
+    ![IntelliTrace log &#45; SharePoint unhandled exceptions](../debugger/media/sharepointunhandledexceptions-intellitrace.png "SharePointUnhandledExceptions_IntelliTrace")  
   
-   Para ver un tutorial, vea [Tutorial: Depurar una aplicación de SharePoint mediante IntelliTrace](https://msdn.microsoft.com/library/4bd80d2f-f680-4bf4-81c3-f14e8185f6a4). Para los tipos de datos que registra el agente, vea [las características de IntelliTrace](../debugger/intellitrace-features.md).  
+   For a walkthrough, see [Walkthrough: Debugging a SharePoint Application by Using IntelliTrace](https://msdn.microsoft.com/library/4bd80d2f-f680-4bf4-81c3-f14e8185f6a4). For the kinds of data that the agent records, see [IntelliTrace Features](../debugger/intellitrace-features.md).  
   
 ### <a name="ThreadsList"></a> Lista de subprocesos  
  Examine los subprocesos registrados que se ejecutaron en el proceso de destino. Puede iniciar la depuración desde el primer evento válido de IntelliTrace en un subproceso seleccionado.  
@@ -218,7 +218,7 @@ Inicie la depuración desde un archivo de registro de IntelliTrace (.iTrace) par
   
 2. En la parte inferior de **Lista de subprocesos**, elija **Iniciar depuración**. También puede hacer doble clic en un subproceso.  
   
-    Para iniciar la depuración desde donde se inicia la aplicación, haga doble clic en **Subproceso principal**. Consulte [las características de IntelliTrace](../debugger/intellitrace-features.md).  
+    Para iniciar la depuración desde donde se inicia la aplicación, haga doble clic en **Subproceso principal**. See [IntelliTrace Features](../debugger/intellitrace-features.md).  
   
    Los datos de subproceso que el usuario crea podrían ser más útiles que los subprocesos que un servidor crea y administra para las aplicaciones web hospedadas en IIS.  
   
@@ -270,7 +270,7 @@ Inicie la depuración desde un archivo de registro de IntelliTrace (.iTrace) par
  [IntelliTrace](../debugger/intellitrace.md)  
   
 #### <a name="forums"></a>Foros  
- [Depurador de Visual Studio](http://go.microsoft.com/fwlink/?LinkId=262263)  
+ [Depurador de Visual Studio](https://go.microsoft.com/fwlink/?LinkId=262263)  
   
-#### <a name="guidance"></a>Guía  
- [Pruebas para entrega continua con Visual Studio 2012 – capítulo 6: Un cuadro de herramientas de pruebas](http://go.microsoft.com/fwlink/?LinkID=255203)
+#### <a name="guidance"></a>Orientación  
+ [Pruebas para la distribución continua con Visual Studio 2012 – Capítulo 6: Cuadro de herramientas de pruebas](https://go.microsoft.com/fwlink/?LinkID=255203)

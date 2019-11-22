@@ -9,12 +9,12 @@ caps.latest.revision: 10
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: f96909d3051e18fe3992e68b44b2948d1e23ebd6
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: f2d9b958dacfb35877abc9ad1e83a349e43a7af0
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72670121"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74296868"
 ---
 # <a name="walkthrough-building-an-application"></a>Tutorial: Compilar una aplicación
 
@@ -24,7 +24,7 @@ Cuando complete este tutorial, estará más familiarizado con varias opciones qu
 
 Este tema contiene las siguientes secciones:
 
-[Instalar la aplicación de ejemplo](../ide/walkthrough-building-an-application.md#BKMK_installapp)
+[Instalar la aplicación de ejemplo](../ide/walkthrough-building-an-application.md)
 
 [Crear una configuración de compilación personalizada](../ide/walkthrough-building-an-application.md#BKMK_CreateBuildConfig)
 
@@ -34,11 +34,7 @@ Este tema contiene las siguientes secciones:
 
 [Mostrar detalles de compilación adicionales en la ventana de salida](../ide/walkthrough-building-an-application.md#BKMK_outputdetails)
 
-[Crear una compilación de versión](../ide/walkthrough-building-an-application.md#BKMK_releasebuild)
-
-## <a name="BKMK_installapp"></a> Instalar la aplicación de ejemplo
-
-Usará el cuadro de diálogo **Extensiones y actualizaciones** para buscar e instalar el ejemplo [Introduction to Building WPF Applications](http://code.msdn.microsoft.com/Introduction-to-Building-b8d16419?SRC=VSIDE) de la Galería de ejemplos del sitio web de Microsoft. La Galería de ejemplos proporciona diversos proyectos y código de ejemplo que puede descargar y revisar mientras planea y desarrolla aplicaciones.
+[Crear una compilación de versión](../ide/walkthrough-building-an-application.md)
 
 #### <a name="to-install-the-sample-application"></a>Para instalar la aplicación de ejemplo
 
@@ -48,7 +44,7 @@ Usará el cuadro de diálogo **Extensiones y actualizaciones** para buscar e ins
 
 3. Especifique `Introduction` en el cuadro de búsqueda para buscar el ejemplo.
 
-    ![Extensiones y actualizaciones (cuadro de diálogo)](../ide/media/buildwalk-extensionsdialogsampledownload.png "BuildWalk_ExtensionsDialogSampleDownload")
+    ![Extensions and Updates dialog box](../ide/media/buildwalk-extensionsdialogsampledownload.png "BuildWalk_ExtensionsDialogSampleDownload")
 
 4. En la lista de resultados, elija **Introduction to Building WPF Applications (Visual C#)** o **Introduction to Building WPF Applications (Visual Basic)** .
 
@@ -66,13 +62,13 @@ Usará el cuadro de diálogo **Extensiones y actualizaciones** para buscar e ins
 
 3. Asigne a la solución el nombre `IntroWPFcsharp` para Visual C#.
 
-     ![Cuadro de diálogo nuevo proyecto, ejemplos instalados](../ide/media/buildwalk-newprojectdlgintrotowpfsample.png "BuildWalk_NewProjectdlgIntrotoWPFsample")
+     ![New Project dialog box, Installed Samples](../ide/media/buildwalk-newprojectdlgintrotowpfsample.png "BuildWalk_NewProjectdlgIntrotoWPFsample")
 
      O
 
      Asigne a la solución el nombre `IntroWPFvb` para Visual Basic.
 
-     ![Cuadro de diálogo nuevo proyecto, Visual Basic ejemplo](../ide/media/buildwalk-newprojectdlgintrotowpfsamplevb.png "BuildWalk_NewProjectdlgIntrotoWPFsampleVB")
+     ![New Project dialog box, Visual Basic Sample](../ide/media/buildwalk-newprojectdlgintrotowpfsamplevb.png "BuildWalk_NewProjectdlgIntrotoWPFsampleVB")
 
 4. Elija el botón **Aceptar** .
 
@@ -86,29 +82,29 @@ Puede cambiar o crear configuraciones y opciones de plataforma mediante el cuadr
 
 1. Abra el cuadro de diálogo **Administrador de configuración**.
 
-    ![Menú compilar, comando Configuration Manager](../ide/media/buildwalk-configurationmanagerdialogbox.png "BuildWalk_ConfigurationManagerDialogBox")
+    ![Build menu, Configuration Manager command](../ide/media/buildwalk-configurationmanagerdialogbox.png "BuildWalk_ConfigurationManagerDialogBox")
 
 2. En la lista **Configuración de soluciones activas**, elija **Nueva**.
 
 3. En el cuadro de diálogo **Nueva configuración de la solución**, asigne a la nueva configuración el nombre `Test`, copie valores de la configuración de depuración existente y luego elija el botón **Aceptar**.
 
-    ![Cuadro de diálogo Nueva configuración de soluciones](../ide/media/buildwalk-newsolutionconfigdlgbox.png "BuildWalk_NewSolutionConfigDlgBox")
+    ![New Solution Configuration Dialog Box](../ide/media/buildwalk-newsolutionconfigdlgbox.png "BuildWalk_NewSolutionConfigDlgBox")
 
 4. En la lista **Plataforma de soluciones activas**, elija **Nueva**.
 
 5. En el cuadro de diálogo **Nueva plataforma de soluciones**, elija **x64** y no copie valores de la plataforma x86.
 
-    ![Cuadro de diálogo Nueva plataforma de solución](../ide/media/buildwalk-newsolutionplatform.png "BuildWalk_NewSolutionPlatform")
+    ![New Solution Platform Dialog Box](../ide/media/buildwalk-newsolutionplatform.png "BuildWalk_NewSolutionPlatform")
 
 6. Elija el botón **Aceptar** .
 
    La configuración de soluciones activa ha cambiado a Prueba y la plataforma de soluciones activas se ha establecido en x64.
 
-   ![Configuration Manager con configuración de prueba](../ide/media/buildwalk-configmanagertestconfig.png "BuildWalk_ConfigManagerTestconfig")
+   ![Configuration Manager with Test configuration](../ide/media/buildwalk-configmanagertestconfig.png "BuildWalk_ConfigManagerTestconfig")
 
    Puede comprobar o cambiar rápidamente la configuración de soluciones activas mediante la lista **Configuraciones de soluciones** de la barra de herramientas **Estándar**.
 
-   ![Barra de herramientas estándar de opciones de configuración de soluciones](../ide/media/buildwalk-standardtoolbarsolutioncongfig.png "BuildWalk_StandardToolbarSolutionCongfig")
+   ![Solution Configuration option Standard Toolbar](../ide/media/buildwalk-standardtoolbarsolutioncongfig.png "BuildWalk_StandardToolbarSolutionCongfig")
 
 ## <a name="BKMK_building"></a> Compilar la aplicación
 
@@ -122,11 +118,11 @@ A continuación, compilará la solución con la configuración de compilación p
 
   Figura 1: advertencias de Visual Basic
 
-  ![Ventana de salida Visual Basic](../ide/media/buildwalk-vbbuildoutputwnd.png "BuildWalk_VBBuildOutputWnd")
+  ![Output Window Visual Basic](../ide/media/buildwalk-vbbuildoutputwnd.png "BuildWalk_VBBuildOutputWnd")
 
   Figura 2: advertencias de Visual C#
 
-  ![Ventana de salida Visual C&#35;](../ide/media/buildwalk-csharpbuildoutputwnd.png "BuildWalk_CsharpBuildOutputWnd")
+  ![Output Window Visual C&#35;](../ide/media/buildwalk-csharpbuildoutputwnd.png "BuildWalk_CsharpBuildOutputWnd")
 
 ## <a name="BKMK_hidewarning"></a> Ocultar advertencias del compilador
 
@@ -142,7 +138,7 @@ Es posible ocultar temporalmente determinados mensajes de advertencia durante un
 
 3. Elija la página **Compilación** y después, en el cuadro **Suprimir advertencias**, especifique el número de advertencia `1762`.
 
-     ![Página compilar, diseñador de proyectos](../ide/media/buildwalk-csharpsuppresswarnings.png "BuildWalk_CsharpSuppressWarnings")
+     ![Build page, Project Designer](../ide/media/buildwalk-csharpsuppresswarnings.png "BuildWalk_CsharpSuppressWarnings")
 
      Para obtener más información, consulte [Compilar (Página, Diseñador de proyectos) (C#)](../ide/reference/build-page-project-designer-csharp.md).
 
@@ -150,7 +146,7 @@ Es posible ocultar temporalmente determinados mensajes de advertencia durante un
 
      La ventana **Salida** solo muestra información de resumen de la compilación.
 
-     ![Ventana de salida, advertencias de&#35; compilación de Visual C](../ide/media/buildwalk-visualcsharpbuildwarnings.png "BuildWalk_VisualCsharpBuildWarnings")
+     ![Output Window, Visual C&#35; Build Warnings](../ide/media/buildwalk-visualcsharpbuildwarnings.png "BuildWalk_VisualCsharpBuildWarnings")
 
 #### <a name="to-suppress-all-visual-basic-build-warnings"></a>Para suprimir todas las advertencias de compilación de Visual Basic
 
@@ -162,7 +158,7 @@ Es posible ocultar temporalmente determinados mensajes de advertencia durante un
 
 3. En la página **Compilación**, active la casilla **Deshabilitar todas las advertencias**.
 
-    ![Página compilar, diseñador de proyectos](../ide/media/buildwalk-vbsuppresswarnings.png "BuildWalk_VBSuppressWarnings")
+    ![Compile page, Project Designer](../ide/media/buildwalk-vbsuppresswarnings.png "BuildWalk_VBSuppressWarnings")
 
     Para obtener más información, vea [Configurar advertencias en Visual Basic](../ide/configuring-warnings-in-visual-basic.md).
 
@@ -170,7 +166,7 @@ Es posible ocultar temporalmente determinados mensajes de advertencia durante un
 
    La ventana **Salida** solo muestra información de resumen de la compilación.
 
-   ![Ventana de salida, Visual Basic advertencias de compilación](../ide/media/buildwalk-visualbasicbuildwarnings.png "BuildWalk_VisualBasicBuildWarnings")
+   ![Output Window, Visual Basic Build Warnings](../ide/media/buildwalk-visualbasicbuildwarnings.png "BuildWalk_VisualBasicBuildWarnings")
 
    Para obtener más información, consulte [Cómo: Suprimir advertencias del compilador](../ide/how-to-suppress-compiler-warnings.md).
 
@@ -185,7 +181,7 @@ Se puede cambiar la cantidad de información sobre el proceso de compilación qu
 
 1. Abra el cuadro de diálogo **Opciones**.
 
-    ![Comando opciones del menú herramientas](../ide/media/exploreide-toolsoptionsmenu.png "ExploreIDE-ToolsOptionsmenu")
+    ![Comando Opciones del menú Herramientas](../ide/media/exploreide-toolsoptionsmenu.png "ExploreIDE-ToolsOptionsmenu")
 
 2. Elija la categoría **Proyectos y soluciones** y luego elija la página **Compilar y ejecutar**.
 
@@ -206,7 +202,7 @@ Se puede cambiar la cantidad de información sobre el proceso de compilación qu
 
    Para obtener más información, consulte [Cómo: Ver, guardar y configurar archivos de registro de compilación](../ide/how-to-view-save-and-configure-build-log-files.md).
 
-## <a name="BKMK_releasebuild"></a> Crear una compilación de versión
+## <a name="create-a-release-build"></a>Crear una compilación de versión
 
 Se puede compilar una versión de la aplicación de ejemplo optimizada para su entrega. Para la compilación de versión, especificará que el ejecutable se copie a un recurso compartido de red antes de que se inicie la compilación.
 
@@ -216,7 +212,7 @@ Para obtener más información, consulte [Cómo: Cambiar el directorio de result
 
 1. Abra el **Diseñador de proyectos**.
 
-     ![Menú Ver, comando páginas de propiedades](../ide/media/buildwalk-viewpropertypages.png "BuildWalk_ViewPropertyPages")
+     ![View menu, Property Pages command](../ide/media/buildwalk-viewpropertypages.png "BuildWalk_ViewPropertyPages")
 
 2. Elija la página **Compilación**.
 
@@ -233,13 +229,13 @@ Para obtener más información, consulte [Cómo: Cambiar el directorio de result
 
 6. Compile la aplicación.
 
-     ![Comando compilar solución en el menú compilar](../ide/media/exploreide-buildsolution.png "ExploreIDE-BuildSolution")
+     ![Comando Compilar solución del menú Compilar](../ide/media/exploreide-buildsolution.png "ExploreIDE-BuildSolution")
 
-#### <a name="to-specify-a-release-build-for-visual-c"></a>Para especificar una compilación de versión para Visual C \#
+#### <a name="to-specify-a-release-build-for-visual-c"></a>To specify a release build for Visual C\#
 
 1. Abra el **Diseñador de proyectos**.
 
-    ![Menú Ver, comando páginas de propiedades](../ide/media/buildwalk-viewpropertypages.png "BuildWalk_ViewPropertyPages")
+    ![View menu, Property Pages command](../ide/media/buildwalk-viewpropertypages.png "BuildWalk_ViewPropertyPages")
 
 2. Seleccione la página **Compilación**.
 
@@ -256,7 +252,7 @@ Para obtener más información, consulte [Cómo: Cambiar el directorio de result
 
 6. Compile la aplicación.
 
-    ![Comando compilar solución en el menú compilar](../ide/media/exploreide-buildsolution.png "ExploreIDE-BuildSolution")
+    ![Comando Compilar solución del menú Compilar](../ide/media/exploreide-buildsolution.png "ExploreIDE-BuildSolution")
 
    El archivo ejecutable se copia a la ruta de acceso de red especificada. Su ruta de acceso sería \\\miServidor\compilaciones\\*NombreDeArchivo*.exe.
 

@@ -1,5 +1,5 @@
 ---
-title: Novedades de Visual Studio 2015 SDK | Microsoft Docs
+title: What's New in the Visual Studio 2015 SDK | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -8,39 +8,39 @@ ms.assetid: c64aac80-a411-463f-b7bd-8b7607a52ece
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 1d51474f2e242f764a84edaa9f2712418c859460
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 6735f929f52387f4cb40406d6918894e72bb40d3
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63408708"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74299682"
 ---
-# <a name="what39s-new-in-the-visual-studio-2015-sdk"></a>¿Qué&#39;s en el SDK Visual Studio 2015
+# <a name="what39s-new-in-the-visual-studio-2015-sdk"></a>What&#39;s New in the Visual Studio 2015 SDK
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-El SDK de Visual Studio tiene las siguientes características nuevas y actualizadas para Visual Studio 2015, actualizado de Visual Studio 2015 y Visual Studio 2017.
+The Visual Studio SDK has the following new and updated features for Visual Studio 2015, Visual Studio 2015 updated, and Visual Studio 2017.
 
 ## <a name="visual-studio-2017"></a>Visual Studio 2017
 
-A partir de Visual Studio 2017, análisis de proyecto personalizado y las plantillas de elemento ya no se realizará. En su lugar, la extensión debe proporcionar los archivos de manifiesto de plantilla que describen la ubicación de instalación de estas plantillas. Puede usar Visual Studio 2017 para actualizar las extensiones VSIX. Si implementa la extensión con un archivo MSI, debe generar manualmente los archivos de manifiesto de plantilla. Para obtener más información, consulte [actualización del proyecto personalizado y las plantillas de elemento para Visual Studio 2017](/visualstudio/extensibility/upgrading-custom-project-and-item-templates-for-visual-studio-2017?view=vs-2015). El esquema del manifiesto de plantilla está documentado en [referencia de esquema de manifiesto de Visual Studio plantilla](/visualstudio/extensibility/visual-studio-template-manifest-schema-reference).
+Starting in Visual Studio 2017, scanning for custom project and item templates will no longer be performed. Instead, the extension must provide template manifest files that describe the install location of these templates. You can use Visual Studio 2017 to update your VSIX extensions. If you deploy your extension using an MSI, you must generate the template manifest files by hand. For more information, see [Upgrading Custom Project and Item Templates for Visual Studio 2017](/visualstudio/extensibility/upgrading-custom-project-and-item-templates-for-visual-studio-2017?view=vs-2015). The template manifest schema is documented in [Visual Studio Template Manifest Schema Reference](/visualstudio/extensibility/visual-studio-template-manifest-schema-reference).
 
-## <a name="vs-2015-sdk-update-1"></a>SDK de VS 2015 Update 1
- Actualización 1 incluye herramientas para ayudar a su extensión funciona bien con los temas de color y el servicio de imágenes de Visual Studio.
+## <a name="vs-2015-sdk-update-1"></a>VS 2015 SDK Update 1
+ Update 1 includes tools to help your extension work well with color themes and the Visual Studio image service.
 
- Estos temas están bajo el [utilidades VSSDK](../extensibility/internals/vssdk-utilities.md) sección:
+ These topics are under the [VSSDK Utilities](../extensibility/internals/vssdk-utilities.md) section:
 
-- El [herramientas de creación de temas de Color](../extensibility/internals/color-theming-tools.md) le ayudarán a crear y editar los colores personalizados para Visual Studio.
+- The [Color Theming Tools](../extensibility/internals/color-theming-tools.md) help you create and edit custom colors for Visual Studio.
 
-- El [herramientas de servicio de imágenes](../extensibility/internals/image-service-tools.md) le permiten trabajar con archivos de manifiesto de imagen de Visual Studio.
+- The [Image Service Tools](../extensibility/internals/image-service-tools.md) let you work with Visual Studio image manifest files.
 
-## <a name="new-way-to-add-the-visual-studio-sdk-to-visual-studio"></a>Nueva forma de agregar el SDK de Visual Studio a Visual Studio
- A partir de Visual Studio 2015, no es necesario descargar el SDK de Visual Studio por separado. En su lugar, puede instalarlo como parte del proceso de instalación normal, o puede elegir instalarla más adelante. Al abrir o crear una solución VSIX, Visual Studio le pedirá que instale las herramientas de extensibilidad de Visual Studio. Para obtener más información, consulte [instalar el SDK de Visual Studio](../extensibility/installing-the-visual-studio-sdk.md).
+## <a name="new-way-to-add-the-visual-studio-sdk-to-visual-studio"></a>New Way to Add the Visual Studio SDK to Visual Studio
+ Starting in Visual Studio 2015, you don't need to download the Visual Studio SDK separately. Instead, you can install it as part of the normal installation process, or you can choose to install it later on. When you open or create  a VSIX solution, Visual Studio will ask you to install the Visual Studio Extensibility Tools. For more information, see [Installing the Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md).
 
-## <a name="new-ways-of-creating-extensions"></a>Nuevas formas de crear extensiones
- A partir de Visual Studio 2015 SDK, tienen diferentes opciones para crear extensiones, dependiendo del lenguaje de programación que usa.
+## <a name="new-ways-of-creating-extensions"></a>New Ways of Creating Extensions
+ Starting in the Visual Studio 2015 SDK, you have different options for creating extensions, depending on which programming language you’re using.
 
 ### <a name="visual-c-and-visual-basic"></a>Visual C# y Visual Basic
- Para C# y Visual Basic, hay una gama completa de plantillas de elemento de proyecto que le permiten crear paquetes VSPackage, comandos de menú, ventanas de herramientas, clasificadores de editor, elementos gráficos del editor y extensiones de editor de margen. Puede agregar alguno o todos ellos al proyecto VSIX estándar. Para obtener más información, consulte:
+ For C# and Visual Basic, there is a full range of project item templates that allow you to create VSPackages, menu commands, tool windows, editor classifiers, editor adornments, and editor margin extensions. You can add any or all of these to the standard VSIX project. Para obtener más información, consulte:
 
 - [Creación de una extensión con un comando de menú](../extensibility/creating-an-extension-with-a-menu-command.md)
 
@@ -50,27 +50,27 @@ A partir de Visual Studio 2017, análisis de proyecto personalizado y las planti
 
 - [Creación de una extensión con un VSPackage](../extensibility/creating-an-extension-with-a-vspackage.md)
 
-     El Asistente de VSPackage ya no crea las extensiones en C# o Visual Basic.
+     The VSPackage Wizard no longer creates extensions in C# or Visual Basic.
 
 ### <a name="c"></a>C++
- Para C++, el Asistente de VSPackage admite comandos de menú, ventanas de herramientas y editores personalizados. Busque en el **nuevo proyecto** cuadro de diálogo de **Visual C++ / extensibilidad**.
+ For C++, the VSPackage Wizard support menu commands, tool windows, and custom editors. Look for it in the **New Project** dialog in **Visual C++ / Extensibility**.
 
-## <a name="vs-sdk-reference-assemblies-via-nuget"></a>Ensamblados de referencia SDK de VS a través de NuGet
- Para una mayor movilidad y uso compartido de los proyectos de extensibilidad, puede usar las versiones de NuGet de los ensamblados de referencia de SDK de VS.  Están disponibles en [nuget.org](http://www.nuget.org) publicados por [VisualStudioExtensibility](http://www.nuget.org/profiles/VisualStudioExtensibility) y pueden agregarse fácilmente a su proyecto o solución a través de Visual Studio **hace referencia a y la administración de NuGet Paquetes** cuadro de diálogo. Puede agregar referencias individuales a los ensamblados de extensibilidad específicos o agregar todo el SDK de VS hace referencia a ensamblados a la vez mediante el SDK de VS [paquete Meta](http://www.nuget.org/packages/VSSDK_Reference_Assemblies). Para obtener más información sobre NuGet, consulte [información general sobre NuGet](http://docs.nuget.org/) y [administrar paquetes de NuGet mediante el cuadro de diálogo](http://docs.nuget.org/Consume/Package-Manager-Dialog).
+## <a name="vs-sdk-reference-assemblies-via-nuget"></a>VS SDK Reference Assemblies via NuGet
+ For increased portability and sharing of extensibility projects, you can use the NuGet versions of the VS SDK reference assemblies.  These are available on [nuget.org](https://www.nuget.org/) published by [VisualStudioExtensibility](https://www.nuget.org/profiles/VisualStudioExtensibility) and can be easily added to your project or solution through the Visual Studio **References / Manage NuGet Packages** dialog. You can add individual references to specific extensibility assemblies or add all the VS SDK references assemblies at once using the VS SDK [Meta package](https://www.nuget.org/packages/VSSDK_Reference_Assemblies). To learn more about NuGet, see [NuGet Overview](https://docs.microsoft.com/nuget/) and [Manage NuGet Packages Using the Dialog](https://docs.microsoft.com/nuget/consume-packages/install-use-packages-visual-studio).
 
- Cuando usa las versiones de NuGet de los ensamblados de referencia de SDK de VS, otro usuario no necesita instalar el SDK de VS para abrir y compilar el proyecto.  Los ensamblados de referencia de NuGet y herramientas de compilación del SDK de VS se instalarán automáticamente en su equipo para ese proyecto.
+ When you use the NuGet versions of the VS SDK reference assemblies, another user doesn’t need to install the VS SDK to open and build your project.  The NuGet reference assemblies and VS SDK build tools will automatically be installed on their computer for that project.
 
- Las plantillas de elementos de SDK de VS usar NuGet para sus referencias y herramientas de compilación para obtener las ventajas de NuGet de forma predeterminada.
+ The VS SDK item templates use NuGet for their references and build tools so you get the benefits of NuGet by default.
 
 > [!NOTE]
-> Aún puede usar los ensamblados de referencia de SDK de VS instalados con sus proyectos (ubicado en \<ubicación de instalación de Visual Studio > \ VSSDK\VisualStudioIntegration\Common\Assemblies) y los proyectos de extensibilidad existentes no necesitan ser actualizado para usar paquetes de NuGet.  El proyecto **hace referencia a / para agregar una referencia** diálogo sigue usando los ensamblados de referencia de SDK de VS instalados.
+> You can continue to use the VS SDK installed reference assemblies with your projects (located under \<Visual Studio Install Location>\ VSSDK\VisualStudioIntegration\Common\Assemblies) and existing extensibility projects do not need to be upgraded to use NuGet packages.  The project **References / Add Reference** dialog continues to use the VS SDK installed reference assemblies.
 >
-> Si desea modificar los proyectos existentes para usar NuGet, vea [Cómo: Migrar VSPackages a Visual Studio 2015](../extensibility/how-to-migrate-extensibility-projects-to-visual-studio-2015.md) que tiene una sección sobre la actualización de proyectos de extensibilidad a los paquetes de NuGet.
+> If you’d like to modify your existing projects to use NuGet, see [How to: Migrate VSPackages to Visual Studio 2015](../extensibility/how-to-migrate-extensibility-projects-to-visual-studio-2015.md) which has a section on updating extensibility projects to NuGet packages.
 
-## <a name="light-bulbs"></a>Bombillas
- Una de las nuevas formas más interesantes de escribir código de extensión se proporciona el proyecto Roslyn. Para obtener más información, consulte [Roslyn](https://github.com/dotnet/Roslyn).
+## <a name="light-bulbs"></a>Light Bulbs
+ One of the most exciting new ways of writing extension code is provided by the Roslyn project. For more information, see [Roslyn](https://github.com/dotnet/Roslyn).
 
- Las bombillas son una característica nueva que se incluye con el VSSDK. Son iconos que se usan en el editor de Visual Studio que se expanden para mostrar un conjunto de acciones de refactorización de código o soluciona los problemas identificados por los analizadores de código integrados. Para obtener más información, vea [Tutorial: Mostrar sugerencias de bombilla](../extensibility/walkthrough-displaying-light-bulb-suggestions.md).
+ Light bulbs are a new feature that ships with the VSSDK. They are icons used in the Visual Studio editor that expand to display a set of code refactoring actions or fixes for problems identified by the built-in code analyzers. For more information, see [Walkthrough: Displaying Light Bulb Suggestions](../extensibility/walkthrough-displaying-light-bulb-suggestions.md).
 
-## <a name="updated-user-experience-guidelines"></a>Instrucciones para la experiencia de usuario actualizada
- ¿Diseñar nuevas extensiones o características para Visual Studio? Consulte el valor actualizado y ampliado [directrices de experiencia de usuario de Visual Studio](../extensibility/ux-guidelines/visual-studio-user-experience-guidelines.md).  Encontrará el [tokens de color](../extensibility/ux-guidelines/shared-colors-for-visual-studio.md), [tamaños de fuente](../extensibility/ux-guidelines/fonts-and-formatting-for-visual-studio.md), [especificaciones de diseño del cuadro de diálogo](../extensibility/ux-guidelines/layout-for-visual-studio.md)y otra orientación que necesita para integrar sin problemas la nueva interfaz de usuario con Visual Studio.
+## <a name="updated-user-experience-guidelines"></a>Updated User Experience Guidelines
+ Designing new extensions or features for Visual Studio? Check out the updated and expanded [Visual Studio User Experience Guidelines](../extensibility/ux-guidelines/visual-studio-user-experience-guidelines.md).  You’ll find the [color tokens](../extensibility/ux-guidelines/shared-colors-for-visual-studio.md), [font sizes](../extensibility/ux-guidelines/fonts-and-formatting-for-visual-studio.md), [dialog layout specifications](../extensibility/ux-guidelines/layout-for-visual-studio.md), and other guidance you need to seamlessly integrate your new UI with Visual Studio.

@@ -13,25 +13,25 @@ caps.latest.revision: 13
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 820d74a9dced29dc237c4bf182419abcb7d503b3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 067544e6b97e2709ed217ae0232771e833800e52
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68194925"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74300115"
 ---
 # <a name="da0022-high-rate-of-gen-2-garbage-collections"></a>DA0022: Alta frecuencia de recolección de elementos no utilizados de gen 2
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Id. de regla | DA0022 |  
-| Categoría |. Uso de .NET Framework |  
-| Método de generación de perfiles | Todos los |  
-| Mensaje | Hay una frecuencia relativamente alta de elementos no utilizados de Gen 2 que se producen. Si, por diseño, la mayoría de las estructuras de datos del programa se asignan y se conservan durante mucho tiempo, esto no es normalmente un problema. Sin embargo, si este comportamiento no es intencionado, su aplicación puede estar anclando objetos. Si no está seguro, puede recopilar datos de asignación de memoria de .NET e información de duración de objetos para entender el patrón de asignación de memoria que usa la aplicación.|  
-| Tipo de regla | Advertencia |  
+Rule Id|DA0022|  
+|Category|.NET Framework Usage|  
+|Profiling method|All|  
+|Message|There is a fairly high rate of Gen 2 garbage collections occurring. Si, por diseño, la mayoría de las estructuras de datos del programa se asignan y se conservan durante mucho tiempo, esto no es normalmente un problema. Sin embargo, si este comportamiento no es intencionado, su aplicación puede estar anclando objetos. Si no está seguro, puede recopilar datos de asignación de memoria de .NET e información de duración de objetos para entender el patrón de asignación de memoria que usa la aplicación.|  
+|Rule type|Warning|  
   
  Al generar perfiles mediante los métodos de muestreo, memoria de .NET o contención de recursos, debe reunir al menos 10 ejemplos para activar esta regla.  
   
-## <a name="cause"></a>Causa  
+## <a name="cause"></a>Motivo  
  Los datos de rendimiento del sistema recopilados durante la generación de perfiles indican que se recuperó una proporción considerable de la memoria para los objetos de .NET Framework en la generación 2 de recolección de elementos no utilizados en comparación con la recolección de elementos no utilizados de las generaciones 0 y 1.  
   
 ## <a name="rule-description"></a>Descripción de la regla  
@@ -42,7 +42,7 @@ Id. de regla | DA0022 |
  Esta regla se desencadena cuando se ha producido proporcionalmente demasiada recolección de elementos no utilizados de la generación 2. En las aplicaciones .NET Framework que exhiben un buen comportamiento, la recolección de elementos no utilizados de la generación 1 se producirá 5 veces más que la colección de la generación 2. (Un factor 10x es probablemente ideal).  
   
 ## <a name="how-to-investigate-a-warning"></a>Cómo investigar una advertencia  
- Haga doble clic en el mensaje en la ventana Lista de errores para navegar a la [vista Marcas](../profiling/marks-view.md) de los datos de generación de perfiles. Busque las columnas **Memoria CLR de .NET\\N.º de colecciones de gen. 0** y **Memoria CLR de .NET\\N.º de colecciones de gen. 1**. Determine si hay fases concretas de ejecución del programa en que la recolección de datos no utilizados se produzca con mayor frecuencia. Compare estos valores con la columna **Porcentaje de tiempo del GC** para ver si el patrón de las asignaciones de memoria administrada está provocando una sobrecarga de administración de memoria excesiva.  
+ Haga doble clic en el mensaje en la ventana Lista de errores para navegar a la [vista Marcas](../profiling/marks-view.md) de los datos de generación de perfiles. Busque las columnas **Memoria CLR de .NET\\N.º de colecciones de gen. 0** y **Memoria CLR de .NET\\N.º de colecciones de gen. 1**. Determine si hay fases concretas de ejecución del programa en que la recolección de datos no utilizados se produzca con mayor frecuencia. Compare estos valores con la columna **% de tiempo del GC** para ver si el patrón de las asignaciones de memoria administrada está provocando una sobrecarga de administración de memoria excesiva.  
   
  Una proporción alta de recolección de elementos no utilizados de la generación 2 no siempre es un problema. Podría ser por diseño. Una aplicación que asigne estructuras de datos grandes que deban permanecer activas durante largos períodos durante la ejecución puede desencadenar esta regla. Cuando este tipo de aplicación está bajo presión de memoria, podría verse obligada a realizar con frecuencia la recolección de elementos no utilizados. Si la recolección de elementos no utilizados de las generaciones 0 y 1, menos costosa, puede reclamar solo una pequeña cantidad de memoria administrada, se programará con mayor frecuencia la recolección de elementos no utilizados de la generación 2.  
   
@@ -50,4 +50,4 @@ Id. de regla | DA0022 |
   
  Para entender el patrón de uso de memoria administrada de la aplicación, vuelva a generar perfiles de la aplicación mediante una ejecución de generación de perfiles de asignación de memoria de .NET y seleccione la opción de generación de perfiles de la vigencia del objeto.  
   
- Para obtener información sobre cómo mejorar el rendimiento de la recolección de elementos no utilizados, consulte [Aspectos básicos e indicaciones de rendimiento del recolector de elementos no utilizados](http://go.microsoft.com/fwlink/?LinkId=148226) en el sitio web de MSDN. Para obtener información sobre la sobrecarga de recolección de elementos no utilizados automática, consulte [Montón de objeto grande al descubierto](http://go.microsoft.com/fwlink/?LinkId=177836).
+ Para obtener información sobre cómo mejorar el rendimiento de la recolección de elementos no utilizados, consulte [Aspectos básicos e indicaciones de rendimiento del recolector de elementos no utilizados](https://go.microsoft.com/fwlink/?LinkId=148226) en el sitio web de MSDN. Para obtener información sobre la sobrecarga de recolección de elementos no utilizados automática, consulte [Montón de objeto grande al descubierto](https://go.microsoft.com/fwlink/?LinkId=177836).

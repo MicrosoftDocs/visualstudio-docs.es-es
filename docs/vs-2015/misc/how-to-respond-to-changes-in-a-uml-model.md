@@ -1,5 +1,5 @@
 ---
-title: 'Cómo: responder a cambios en un modelo UML | Microsoft Docs'
+title: 'How to: Respond to Changes in a UML Model | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: devlang-csharp
@@ -9,12 +9,12 @@ caps.latest.revision: 3
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: eff43f3c7547a46b75885448999335637e9fbc62
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 9eaaa1406591bc950dbbf95aff8dcd732eef3448
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72609805"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74293399"
 ---
 # <a name="how-to-respond-to-changes-in-a-uml-model"></a>Cómo: Responder a cambios en un modelo UML
 Es posible escribir código que se ejecute cada vez que se produzca un cambio en un modelo UML en Visual Studio. Responderá igualmente a los cambios realizados directamente por el usuario y por otras extensiones de Visual Studio. Para ver qué versiones de Visual Studio admiten esta característica, vea [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
@@ -22,7 +22,5 @@ Es posible escribir código que se ejecute cada vez que se produzca un cambio en
 > [!WARNING]
 > Estas técnicas son non compatible con la API de UML. Es posible no funcionen en futuras versiones de Visual Studio.
 
- El código de ejemplo está disponible en [UML: responder a los cambios en un modelo UML mediante el uso de eventos y reglas](http://code.msdn.microsoft.com/UML-Responding-to-changes-c024cd4b)
-
 ## <a name="see-also"></a>Vea también
- [Navegar por los controladores de eventos del modelo UML](../modeling/navigate-the-uml-model.md) [propagar los cambios fuera del modelo de](../modeling/event-handlers-propagate-changes-outside-the-model.md) [ejemplo: color por estereotipo](http://go.microsoft.com/fwlink/?LinkId=213841)
+ [Navigate the UML model](../modeling/navigate-the-uml-model.md) [Event Handlers Propagate Changes Outside the Model](../modeling/event-handlers-propagate-changes-outside-the-model.md) [Sample: Color by Stereotype](https://go.microsoft.com/fwlink/?LinkId=213841)

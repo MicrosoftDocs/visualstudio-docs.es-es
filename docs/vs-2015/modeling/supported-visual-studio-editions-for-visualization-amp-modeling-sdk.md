@@ -1,5 +1,5 @@
 ---
-title: Ediciones de Visual Studio compatibles con el SDK de visualización y modelado | Microsoft Docs
+title: Supported Visual Studio Editions for Visualization and Modeling SDK | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-modeling
@@ -11,26 +11,26 @@ caps.latest.revision: 29
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 89d65aab64ba82f152e2fe888ab10b88b73a7c42
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: b81aaba14acc2c050a770e810c57e99ee43c2ab3
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72672377"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74298157"
 ---
-# <a name="supported-visual-studio-editions-for-visualization-amp-modeling-sdk"></a>Ediciones de Visual Studio compatibles con el SDK de modelado de &amp; de visualización
+# <a name="supported-visual-studio-editions-for-visualization-amp-modeling-sdk"></a>Supported Visual Studio Editions for Visualization &amp; Modeling SDK
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A continuación se muestran las listas de las ediciones de Visual Studio compatibles con [!INCLUDE[dsl](../includes/dsl-md.md)] en los entornos de creación e implementación. Para obtener más información sobre estas ediciones, vea el [Centro para desarrolladores](http://go.microsoft.com/fwlink/?LinkId=75628)de Microsoft [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].
+The following are lists of the Visual Studio editions that are supported with [!INCLUDE[dsl](../includes/dsl-md.md)] in the authoring and deployment environments. For more information on these editions, see the Microsoft [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] [Developer Center](https://go.microsoft.com/fwlink/?LinkId=75628).
 
 ## <a name="authoring-edition"></a>Edición para creación
  Para definir un DSL, debe tener instalados los siguientes componentes:
 
 |||
 |-|-|
-|[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]|[http://go.microsoft.com/fwlink/?LinkId=185579](http://go.microsoft.com/fwlink/?LinkId=185579)|
-|Visual Studio SDK|[http://go.microsoft.com/fwlink/?LinkId=185580](http://go.microsoft.com/fwlink/?LinkId=185580)|
-|SDK de Visual Studio de visualización y modelado|[http://go.microsoft.com/fwlink/?LinkID=186128](http://go.microsoft.com/fwlink/?LinkID=186128)|
+|[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]|[http://go.microsoft.com/fwlink/?LinkId=185579](https://go.microsoft.com/fwlink/?LinkId=185579)|
+|Visual Studio SDK|[http://go.microsoft.com/fwlink/?LinkId=185580](https://go.microsoft.com/fwlink/?LinkId=185580)|
+|SDK de Visual Studio de visualización y modelado|[http://go.microsoft.com/fwlink/?LinkID=186128](https://go.microsoft.com/fwlink/?LinkID=186128)|
 
 ## <a name="deployment-editions"></a>Ediciones para implementación
  [!INCLUDE[dsl](../includes/dsl-md.md)] admite las siguientes configuraciones para implementar los lenguajes específicos del dominio que compile:
@@ -39,12 +39,12 @@ A continuación se muestran las listas de las ediciones de Visual Studio compati
 
 - Visual Studio Professional
 
-- Paquete redistribuible de Visual Studio Shell (modo integrado) Redistributable Package
+- Visual Studio Shell (integrated mode) redistributable package redistributable package
 
 - Paquete redistribuible de Visual Studio Shell (modo aislado) paquete redistribuible
 
 > [!NOTE]
-> Para que un DSL pueda ejecutarse en un producto de Shell, debe establecer el campo **compatible de vs Edition** en el manifiesto de la extensión. Para obtener más información, vea [Implementación de soluciones de lenguaje específico de dominio](../modeling/deploying-domain-specific-language-solutions.md).
+> To make a DSL able to run on a Shell product, you must set the **Supported VS Edition** field in the Extension Manifest. Para obtener más información, vea [Implementación de soluciones de lenguaje específico de dominio](../modeling/deploying-domain-specific-language-solutions.md).
 
 ## <a name="see-also"></a>Vea también
  [Glosario de las Herramientas del lenguaje específico de dominio](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)

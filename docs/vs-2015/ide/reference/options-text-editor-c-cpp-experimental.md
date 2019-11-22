@@ -11,12 +11,12 @@ caps.latest.revision: 15
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 7e9d1464481b33bc5fbf5e73bc09a6da4eb082c7
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 5979363f16f2e9d78a2f50ffbb6511d03146caaa
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72662350"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74297853"
 ---
 # <a name="options-text-editor-cc-experimental"></a>Opciones, editor de texto, C/C++, experimental
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -31,22 +31,22 @@ Al cambiar estas opciones, puede modificar el comportamiento relacionado con Int
 > Es posible que tu equipo muestre nombres o ubicaciones diferentes para algunos de los elementos de la interfaz de usuario de Visual Studio en las siguientes instrucciones. La edición de Visual Studio que se tenga y la configuración que se utilice determinan estos elementos. Vea [Personalizar la configuración de desarrollo en Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).
 
 ## <a name="browsingnavigation"></a>Exploración o navegación
- **Habilitar nueva motor de base de datos** Esto debe acelerar automáticamente el rellenado de la base de datos y realizar todas las operaciones de base de datos más rápido (sin pérdida de precisión) para operaciones tales como **ir a definición** y **Buscar todas las referencias**. (Para aplicar los cambios, solo cierre y vuelva a abrir la solución; no es necesario reiniciar Visual Studio).
+ **Enable New Database Engine** This should automatically speed up database population and make all database operations faster (with no loss in accuracy) for operations such as **Go To Definition** and **Find All References**. (Para aplicar los cambios, solo cierre y vuelva a abrir la solución; no es necesario reiniciar Visual Studio).
 
 ## <a name="intellisense"></a>IntelliSense
- **Punto a flecha de la lista de miembros** Reemplaza "." por "->" cuando es aplicable para la lista de miembros.
+ **Member List Dot-To-Arrow** Replaces '.' with '->' when applicable for Member List.
 
 ## <a name="refactoring"></a>Refactoring
- **Habilitar extraer función** Extraer el código seleccionado a su propia función y reemplazar el código por una llamada a la nueva función. Para obtener acceso a esta característica, haga clic con el botón derecho en el código seleccionado y seleccione **Acciones rápidas**o simplemente presione el método abreviado de teclado predeterminado Ctrl+punto [Ctrl+.].
+ **Enable Extract Function** Extract selected code to its own function and replace code with a call to the new function. Para obtener acceso a esta característica, haga clic con el botón derecho en el código seleccionado y seleccione **Acciones rápidas**o simplemente presione el método abreviado de teclado predeterminado Ctrl+punto [Ctrl+.].
 
- **Habilitar cambiar firma** Agregar, reordenar y eliminar parámetros de una función y propagar los cambios a todos los sitios de llamada. Para obtener acceso a esta característica, haga clic con el botón derecho en cualquier uso de la función y seleccione **Acciones rápidas**o simplemente presione el método abreviado predeterminado Ctrl+punto [Ctrl+.].
+ **Enable Change Signature** Add, reorder, and delete parameters of a function and propagate the changes to all call sites. Para obtener acceso a esta característica, haga clic con el botón derecho en cualquier uso de la función y seleccione **Acciones rápidas**o simplemente presione el método abreviado predeterminado Ctrl+punto [Ctrl+.].
 
 ## <a name="text-editor"></a>Editor de texto
- **Habilitar expandir ámbitos** Si está habilitada, puede escribir "{" en el editor de texto para encerrar el texto seleccionado entre llaves.
+ **Enable Expand Scopes** If enabled, you can surround selected text with curly braces by typing '{' into the text editor.
 
- **Habilitar expandir precedencia** Si está habilitada, puede escribir "(" en el editor de texto para rodear el texto seleccionado entre paréntesis.
+ **Enable Expand Precedence** If enabled, you can surround selected text with parentheses by typing '(' into the text editor.
 
- Para conocer las características adicionales del editor de texto de la Galería de Visual Studio, consulte la lista [aquí](http://go.microsoft.com/fwlink/?LinkId=692016). Un ejemplo es [C++ Quick Fixes](https://visualstudiogallery.msdn.microsoft.com/be91feef-8dc3-4f7a-ac9f-f34e7ca5918f), que admite lo siguiente:
+ Para conocer las características adicionales del editor de texto de la Galería de Visual Studio, consulte la lista [aquí](https://go.microsoft.com/fwlink/?LinkId=692016). Un ejemplo es [C++ Quick Fixes](https://visualstudiogallery.msdn.microsoft.com/be91feef-8dc3-4f7a-ac9f-f34e7ca5918f), que admite lo siguiente:
 
 - **Agregar #include faltante** : sugiere las directivas #include pertinentes para símbolos desconocidos en el código
 
@@ -59,4 +59,4 @@ Al cambiar estas opciones, puede modificar el comportamiento relacionado con Int
   Puede mantener el puntero sobre una línea ondulada para obtener una bombilla, o bien use el método abreviado de teclado predeterminado CTRL+punto (Ctrl+.). Tenga en cuenta que en el caso del método abreviado de teclado, no es necesario situar el símbolo de intercalación en el error o token específico. Simplemente puede estar en la misma línea que el error para invocar sugerencias para cualquier elemento incluido en esa línea.
 
 ## <a name="see-also"></a>Vea también
- [Configuración de las opciones del editor específicas del idioma](../../ide/reference/setting-language-specific-editor-options.md) [refactorización en C++ (blog de VC)](http://blogs.msdn.com/b/vcblog/archive/2014/11/14/all-about-c-refactoring-in-visual-studio-2015-preview.aspx)
+ [Setting Language-Specific Editor Options](../../ide/reference/setting-language-specific-editor-options.md) [Refactoring in C++ (VC Blog)](https://devblogs.microsoft.com/cppblog/all-about-c-refactoring-in-visual-studio-2015-preview/)

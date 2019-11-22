@@ -1,5 +1,5 @@
 ---
-title: Agregar extensiones a definiciones de DSL | Microsoft Docs
+title: Adding Extensions to DSL Definitions | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-modeling
@@ -9,33 +9,33 @@ caps.latest.revision: 8
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 447001a8aefa22fe15bce9158eddeb0cdb26e4e8
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: aeeac82b27b4b5bb71ed05ba658bf9ee048bd85d
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72654722"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74292151"
 ---
 # <a name="adding-extensions-to-dsl-definitions"></a>Agregar extensiones a definiciones DSL
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La extensión DSL Definition le permite crear un paquete de extensiones para un lenguaje específico del dominio (DSL). La extensión DSL, que se encuentra en una extensión de integración de Visual Studio (VSIX), se puede instalar en el equipo de un usuario de la misma manera que un DSL. Las características adicionales se pueden habilitar y deshabilitar dinámicamente en tiempo de ejecución. Los DSL no tienen que diseñarse explícitamente para la extensión, y las extensiones se pueden diseñar posteriormente o por terceros sin modificar el DSL extendido.
+DSL Definition extension allows you to create a package of extensions to a domain-specific language (DSL). The DSL extension, which is contained in a Visual Studio Integration Extension (VSIX), can be installed on a user's computer in the same manner as a DSL. The additional features can be dynamically enabled and disabled at run time. DSLs do not have to be explicitly designed for extension, and extensions can be designed later or by third parties without altering the extended DSL.
 
- Entre las características adicionales se incluyen las siguientes:
+ The additional features can include the following:
 
-- Propiedades de los elementos de modelo y presentación
+- Properties for model and presentation elements
 
-- Elementos Decorator para formas y conectores
+- Decorators for shapes and connectors
 
-- Clases, relaciones, formas y conectores
+- Classes, relationships, shapes and connectors
 
-- Restricciones de validación
+- Validation constraints
 
-- Elementos y pestañas del cuadro de herramientas
+- Toolbox items and tabs
 
-  Un usuario de un DSL extendido puede crear y guardar un modelo que contenga instancias de las características adicionales, y otros usuarios que hayan instalado la extensión adecuada podrán leerlos. Los usuarios que no han instalado la extensión no pueden usar las características adicionales, pero pueden actualizar y guardar un modelo sin perder las características adicionales.
+  A user of an extended DSL can create and save a model that contains instances of the additional features, and these can be read by other users who have installed the appropriate extension. Users who have not installed the extension cannot use the additional features, but they can update and save a model without losing the additional features.
 
-  Para obtener código de ejemplo y más información acerca de esta característica, vea el sitio web del [SDK de visualización y modelado de Visual Studio](http://go.microsoft.com/fwlink/?LinkID=186128) .
+  For sample code and more information about this feature, see the [Visual Studio Visualization and Modeling SDK](https://go.microsoft.com/fwlink/?LinkID=186128) Web site.
 
 ## <a name="see-also"></a>Vea también
- [SDK de visualización y modelado de Visual Studio](http://go.microsoft.com/fwlink/?LinkID=186128)
+ [Visual Studio Visualization and Modeling SDK](https://go.microsoft.com/fwlink/?LinkID=186128)

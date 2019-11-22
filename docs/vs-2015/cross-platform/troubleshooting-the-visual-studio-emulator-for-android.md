@@ -1,5 +1,5 @@
 ---
-title: Solución de problemas del emulador para Android | Microsoft Docs
+title: Troubleshooting the Emulator for Android | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: tgt-pltfrm-cross-plat
@@ -8,12 +8,12 @@ ms.assetid: f3fb5df4-3aae-40e4-9450-bbe15b0c5af5
 caps.latest.revision: 25
 ms.author: crdun
 manager: crdun
-ms.openlocfilehash: 4e9aa77848c3784b1df7a2c1f32651b8d00e5998
-ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.openlocfilehash: 380de9206b2dc4e78c3719919dfd78720de28129
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "66263385"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74297649"
 ---
 # <a name="troubleshooting-the-visual-studio-emulator-for-android"></a>Solución de problemas del emulador de Visual Studio para Android
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -23,7 +23,7 @@ Este tema contiene información para ayudarle a resolver problemas que puede exp
 > [!WARNING]
 > Cuando se instala el emulador, el programa de instalación comprueba los requisitos previos para ejecutar el software. Si estos requisitos no se cumplen se muestra una serie de advertencias, pero no se solicita su instalación.
 
- Este tema contiene las siguientes secciones:
+ En este tema se incluyen las siguientes secciones.
 
 - [Antes de empezar](#BeforeYouStart)
 
@@ -62,7 +62,7 @@ Este tema contiene información para ayudarle a resolver problemas que puede exp
 ## <a name="BeforeYouStart"></a> Antes de empezar
  Antes de empezar a solucionar problemas, puede ser útil revisar los temas siguientes:
 
-- [System Requirements for the Visual Studio Emulator for Android](../cross-platform/system-requirements-for-the-visual-studio-emulator-for-android.md)
+- [Requisitos de sistema del emulador de Visual Studio para Android](../cross-platform/system-requirements-for-the-visual-studio-emulator-for-android.md)
 
 ## <a name="NoInstall"></a> El emulador no se instala
  Si no tiene instalado Hyper-V, verá el siguiente mensaje cuando intente instalar el emulador. Debe tener una máquina que admita Hyper-v y debe estar habilitada.
@@ -132,9 +132,9 @@ Este tema contiene información para ayudarle a resolver problemas que puede exp
 
 - En el Administrador de Hyper-V, abra el administrador de conmutadores virtuales y compruebe que tiene dos conmutadores de red; compruebe que el primero es un conmutador interno y el segundo es externo.
 
-     ![Android&#95;Emu&#95;V&#95;Switch&#95;Man](../cross-platform/media/android-emu-v-switch-man.png "Android_Emu_V_Switch_Man")
+     ![Android&#95;Emu&#95;V&#95;Switch&#95;Man](../cross-platform/media/android-emu-v-switch-man.png "Android_Emu_V_Switch_ManAndroid_Emu_V_Switch_Man")
 
-     Si la instalación no es correcta y está usando Windows 10, debería intentar el paso [Vuelve a instalar los dispositivos de red mediante el comando netcfg –d](http://windows.microsoft.com/windows-10/fix-network-connection-issues) (sección 6).
+     Si la instalación no es correcta y está usando Windows 10, debería intentar el paso [Vuelve a instalar los dispositivos de red mediante el comando netcfg –d](https://support.microsoft.com/help/10741/windows-fix-network-connection-issues) (sección 6).
 
 - Si estos pasos no resuelven el problema, consulte [Emulator fails to start (first use)](#NoStart) para obtener información sobre software de terceros que puede interferir con el emulador.
 
@@ -173,7 +173,7 @@ Este tema contiene información para ayudarle a resolver problemas que puede exp
 
      - Deshabilitar Trusted Execution
 
-       Para obtener más información, vea este artículo: Technet: Hyper-V: How to Fix BIOS Errors Enabling Hyper-V (Solución de errores de BIOS con Hyper-V)
+       Para obtener más información, vea este artículo: Technet: Hyper-V: Cómo corregir errores de BIOS habilitando Hyper-V.
 
   5. Asegúrese de que tiene al menos 4 GB de memoria de sistema y de que no la consumen otros programas y procesos con un gran consumo de recursos.
 
@@ -209,7 +209,7 @@ Este tema contiene información para ayudarle a resolver problemas que puede exp
 
   2. Para el adaptador vEthernet (conmutador interno del emulador de Windows Phone para el puerto Ethernet interno), elija **Propiedades** en el menú contextual.
 
-      ![Adaptador virtual que usa Hyper-V](../cross-platform/media/android-emu-virtual-adapter.png "Android_Emu_Virtual_Adapter")
+      ![Adaptador virtual que Hyper&#45;V usa](../cross-platform/media/android-emu-virtual-adapter.png "Android_Emu_Virtual_Adapter")
 
       Aquí se muestran las propiedades del adaptador.
 
@@ -254,7 +254,7 @@ Este tema contiene información para ayudarle a resolver problemas que puede exp
 
   Para solucionar este problema, deshabilite USB3 en la configuración de la BIOS de la placa base y reinicie el equipo. Después, compruebe si Gigabyte ha publicado una actualización para la BIOS de su placa base.
 
-  Para obtener más información, consulte el artículo siguiente de Knowledge Base: [Error de arranque después de instalar el rol de Hyper-V en sistemas Gigabyte](https://support.microsoft.com/kb/2693144).
+  Para obtener más información, consulte el siguiente artículo de Knowledge Base: [Error de arranque después de instalar el rol Hyper-V en sistemas Gigabyte](https://support.microsoft.com/kb/2693144).
 
 ## <a name="ADB"></a> Visual Studio se queda bloqueado al intentar implementar la aplicación en el emulador o el emulador no aparece como destino de depuración en otros IDE.
  Si el emulador se está ejecutando, pero no parece estar conectado a ADB (Android Debug Bridge) o no aparece en las herramientas de Android que usan ADB (por ejemplo, Android Studio o Eclipse), puede que necesite ajustar la ubicación en la que el emulador busca ADB. El emulador usa una clave de registro para identificar la ubicación base del SDK de Android y busca el archivo \platform-tools\adb.exe en ese directorio. Para modificar la ruta de acceso del SDK de Android usada por el emulador:
@@ -268,7 +268,7 @@ Este tema contiene información para ayudarle a resolver problemas que puede exp
   Reinicie el emulador; ahora debería verlo conectado a ADB y a las herramientas Android asociadas.
 
 ## <a name="XamarinPlayer"></a> El emulador deja de responder porque no pudo configurar el puerto UDP.
- Puede experimentar este problema debido a una incompatibilidad con Xamarin Player. Si el emulador parece que deja de responder o ve este mensaje de error: "The emulator is unable to connect to the device operating system: No se pudo configurar el puerto UDP.  Some functionality might be disabled", es posible que esté experimentando este problema. Realice las acciones siguientes:
+ Puede experimentar este problema debido a una incompatibilidad con Xamarin Player. Si el emulador parece que deja de responder o ve este mensaje de error: "The emulator is unable to connect to the device operating system: Couldn’t set up the UDP port.  Some functionality might be disabled", es posible que esté experimentando este problema. Realice las acciones siguientes:
 
 1. Desinstale Xamarin Player.
 
@@ -311,6 +311,6 @@ Este tema contiene información para ayudarle a resolver problemas que puede exp
 ## <a name="Support"></a> Recursos de soporte técnico
  Si el equipo host cumple los requisitos del sistema y detecta un problema que no se trata en esta guía de solución de problemas:
 
-- Formule una pregunta en StackOverflow con las etiquetas [android-emulator](http://stackoverflow.com/questions/tagged/android-emulator) y visual-studio.
+- Formule una pregunta en StackOverflow con las etiquetas [android-emulator](https://stackoverflow.com/questions/tagged/android-emulator) y visual-studio.
 
 - Notifique un problema con la herramienta Enviar una sonrisa en Visual Studio o en el administrador del emulador.

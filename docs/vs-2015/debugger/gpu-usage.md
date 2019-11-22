@@ -9,12 +9,12 @@ caps.latest.revision: 7
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: b7dee579f726a1edfc81e1f3e1ec62bf7d8beba4
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: b2e827b180ae218f3dd42b124500e01260e72d82
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63437953"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74297392"
 ---
 # <a name="gpu-usage"></a>Uso de GPU
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -23,7 +23,7 @@ La herramienta Uso de GPU del concentrador de rendimiento y diagnóstico de Visu
   
  Esta es la ventana del **informe de Uso de GPU**:  
   
- ![El informe de uso de la GPU, con las escalas de tiempo de CPU y GPU](../debugger/media/gfx-diag-gpu-usage-report.png "gfx_diag_gpu_usage_report")  
+ ![The GPU Usage report, with CPU and GPU timelines](../debugger/media/gfx-diag-gpu-usage-report.png "gfx_diag_gpu_usage_report")  
   
 ## <a name="requirements"></a>Requisitos  
  Además de los requisitos de diagnóstico de gráficos, para usar la herramienta Uso de GPU deben cumplirse los requisitos siguientes:  
@@ -40,11 +40,11 @@ La herramienta Uso de GPU del concentrador de rendimiento y diagnóstico de Visu
   
 #### <a name="to-start-the-gpu-usage-tool"></a>Para iniciar la herramienta Uso de GPU:  
   
-1. En el menú principal, seleccione **Depurar** y **Rendimiento y diagnósticos** (teclado: Alt + F2).  
+1. En el menú principal, seleccione **Depurar** y **Rendimiento y diagnósticos** (teclado: presione Alt+F2).  
   
 2. En el concentrador de rendimiento y diagnóstico, active la casilla junto a **Uso de GPU**. Si lo prefiere, active las casillas situadas junto a otras herramientas que le interesen. Puede ejecutar varias herramientas de rendimiento y diagnóstico de forma simultánea para obtener una imagen más completa del rendimiento de la aplicación.  
   
-    ![Elija las herramientas de diagnóstico que quiere usar.](../debugger/media/gfx-diag-diagsession-tools.png "gfx_diag_diagsession_tools")  
+    ![Choose the diagnostic tools you want to use.](../debugger/media/gfx-diag-diagsession-tools.png "gfx_diag_diagsession_tools")  
   
    > [!NOTE]
    > No todas las herramientas de rendimiento y diagnóstico pueden usarse al mismo tiempo.  
@@ -63,15 +63,15 @@ La herramienta Uso de GPU del concentrador de rendimiento y diagnóstico de Visu
   
 1. Seleccione el vínculo **Detener colección** en la parte inferior de la ventana de sesión de diagnóstico, o presione **Detener** en la esquina superior izquierda.  
   
-    ![Recopile información de tiempo de la GPU y la CPU.](../debugger/media/gfx-diag-gpu-usage-collect.png "gfx_diag_gpu_usage_collect")  
+    ![Collect GPU and CPU timing information.](../debugger/media/gfx-diag-gpu-usage-collect.png "gfx_diag_gpu_usage_collect")  
   
 2. En la parte superior del informe, seleccione una sección en uno de los gráficos en los que se muestra el problema que desea investigar. Puede realizar una selección de tres segundos como máximo. Las secciones más largas se truncan al principio.  
   
-    ![Después de la recopilación, seleccione un intervalo para ver los detalles](../debugger/media/gfx-diag-gpu-usage-select1.png "gfx_diag_gpu_usage_select1")  
+    ![Post&#45;collection, select a range to view details](../debugger/media/gfx-diag-gpu-usage-select1.png "gfx_diag_gpu_usage_select1")  
   
 3. Si quiere ver una escala de tiempo detallada de la selección, seleccione el vínculo **ver detalles** en el mensaje **…click here to view details of GPU usage for that range** (… haga clic aquí para ver detalles de uso de la GPU del intervalo), en la parte inferior del informe.  
   
-    ![Después de la recopilación, con el intervalo seleccionado](../debugger/media/gfx-diag-gpu-usage-select2.png "gfx_diag_gpu_usage_select2")  
+    ![Post&#45;collection, with range selected](../debugger/media/gfx-diag-gpu-usage-select2.png "gfx_diag_gpu_usage_select2")  
   
    Se abrirá un nuevo documento con fichas que contiene el informe. El informe de uso de la GPU permite ver cuándo se inicia un evento de gráficos en la CPU, cuando este llega a la GPU y cuánto tiempo precisa la GPU para ejecutarlo. Esta información puede ayudarle a identificar los cuellos de botella y las oportunidades para incrementar el paralelismo del código.  
   
@@ -82,7 +82,7 @@ La herramienta Uso de GPU del concentrador de rendimiento y diagnóstico de Visu
   
  Esta es la ventana de **informe de Uso de GPU**:  
   
- ![El informe de uso de la GPU, con las escalas de tiempo de CPU y GPU](../debugger/media/gfx-diag-gpu-usage-report.png "gfx_diag_gpu_usage_report")  
+ ![The GPU Usage report, with CPU and GPU timelines](../debugger/media/gfx-diag-gpu-usage-report.png "gfx_diag_gpu_usage_report")  
   
  Si se selecciona uno de los eventos de la parte inferior del informe, se situará un marcador en los eventos correspondientes de las escalas de tiempo relevantes (por lo general, un evento en un subproceso de CPU que representa la llamada API, y otro evento en una de las escalas de tiempo de GPU que representa el momento en que la GPU ha completado la tarea). Del mismo modo, si se selecciona uno de los eventos en una escala de tiempo, se resaltará el evento correspondiente en la parte inferior del informe. En la medida en que se vaya alejando de las escalas de tiempo de la parte superior del informe, solo permanecerán visibles los eventos que precisen más tiempo. Para ver los eventos de menor duración, acérquese a las escalas de tiempo con Ctrl + rueda (del dispositivo señalador), o con el control de escalado de la esquina inferior izquierda del panel superior. También puede arrastrar el contenido del panel de la escala de tiempo para desplazarse por los eventos registrados.  
   
@@ -94,7 +94,7 @@ La herramienta Uso de GPU del concentrador de rendimiento y diagnóstico de Visu
 |--------------------|-----------------|  
 |**Process**|El nombre del proceso que le interesa. Este menú desplegable contiene todos los procesos que usan la GPU durante la sesión de diagnóstico. El color asocia con el proceso en este menú es el color de la actividad del subproceso en las escalas de tiempo que aparecen más abajo.|  
 |**Subproceso**|El identificador de subproceso que le interesa. En una aplicación multiproceso, este elemento puede ayudarle a aislar los subprocesos específicos del proceso que le interesa. En cada línea de tiempo se resaltan los eventos asociados con el subproceso seleccionado.|  
-|**Pantalla**|El número de la pantalla cuya frecuencia de actualización se muestra **Nota:**  Algunos controladores pueden configurarse para mostrar varias pantallas físicas como una única pantalla virtual más grande. En ese caso, solo aparecería una pantalla en la lista, incluso aunque la máquina esté conectada a varias pantallas.|  
+|**Pantalla**|Número de la pantalla cuya frecuencia de actualización se muestra. **Nota**: Algunos controladores pueden configurarse para mostrar varias pantallas físicas como una única pantalla virtual más grande. En ese caso, solo aparecería una pantalla en la lista, incluso aunque la máquina esté conectada a varias pantallas.|  
 |**Filtrar**|Las palabras clave que le interesan. Solo aparecerán en la parte inferior del informe los eventos que coincidan, total o parcialmente, con una palabra clave. Si desea especificar varias palabras clave, sepárelas con punto y coma (;).|  
 |**Orden de jerarquía**|Una casilla que indica si se deben conservar o ignorar las jerarquías de eventos que se han definido con marcadores de usuario.|  
   
@@ -117,13 +117,13 @@ La herramienta Uso de GPU del concentrador de rendimiento y diagnóstico de Visu
   
 #### <a name="to-postpone-profiling-from-the-start-of-the-app"></a>Para posponer la generación de perfiles de modo que no se produzca al iniciar la aplicación:  
   
-1. En el menú principal, seleccione **Depurar** y **Rendimiento y diagnósticos** (teclado: Alt + F2).  
+1. En el menú principal, seleccione **Depurar** y **Rendimiento y diagnósticos** (teclado: presione Alt+F2).  
   
 2. En el concentrador de rendimiento y diagnóstico, siga el vínculo de **configuración** situado junto a **Uso de GPU**.  
   
 3. En **GPU Profiling Configuration** (Configuración de generación de perfiles de GPU), vaya a la página de propiedades **General** y desactive la casilla **Begin profiling at app start** (Comenzar la generación de perfiles al iniciar la aplicación) para posponer la generación de perfiles.  
   
-     ![Configure cuándo se inicia la recopilación de uso de GPU](../debugger/media/gfx-diag-gpu-usage-config.png "gfx_diag_gpu_usage_config")  
+     ![Configure when GPU Usage collection starts](../debugger/media/gfx-diag-gpu-usage-config.png "gfx_diag_gpu_usage_config")  
   
 > [!IMPORTANT]
 > La generación de perfiles no se puede posponer en las aplicaciones de Direct3D 12.  
@@ -143,10 +143,10 @@ La herramienta Uso de GPU del concentrador de rendimiento y diagnóstico de Visu
   
 ## <a name="see-also"></a>Vea también  
   
-- [Solucionar los problemas de gráficos más relevantes de los juegos con las herramientas DirectX (vídeo)](http://channel9.msdn.com/Events/GDC/GDC-2015/Solve-the-Tough-Graphics-Problems-with-your-Game-Using-DirectX-Tools)  
+- [Solucionar los problemas de gráficos más relevantes de los juegos con las herramientas DirectX (vídeo)](https://channel9.msdn.com/Events/GDC/GDC-2015/Solve-the-Tough-Graphics-Problems-with-your-Game-Using-DirectX-Tools)  
   
-- [Herramienta Uso de GPU de Visual Studio (vídeo)](http://channel9.msdn.com/Events/Visual-Studio/Connect-event-2014/715)  
+- [Herramienta Uso de GPU de Visual Studio (vídeo)](https://channel9.msdn.com/Events/Visual-Studio/Connect-event-2014/715)  
   
-- [Herramienta Uso de GPU de Visual Studio 2013 Update 4 CTP1 (blog)](http://blogs.msdn.com/b/vcblog/archive/2014/09/05/gpu-usage-tool-in-visual-studio-2013-update-4-ctp1.aspx)  
+- [Herramienta Uso de GPU de Visual Studio 2013 Update 4 CTP1 (blog)](https://devblogs.microsoft.com/cppblog/gpu-usage-tool-in-visual-studio-2013-update-4-ctp1/)  
   
-- [Uso de GPU para DirectX en Visual Studio (blog)](http://blogs.msdn.com/b/ianhu/archive/2014/12/16/gpu-usage-for-directx-in-visual-studio.aspx)
+- [Uso de GPU para DirectX en Visual Studio (blog)](https://blogs.msdn.microsoft.com/ianhu/2014/12/16/gpu-usage-for-directx-in-visual-studio/)

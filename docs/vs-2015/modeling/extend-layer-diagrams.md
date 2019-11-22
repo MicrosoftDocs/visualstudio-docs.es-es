@@ -1,5 +1,5 @@
 ---
-title: Extender diagramas de capas | Microsoft Docs
+title: Extend layer diagrams | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-modeling
@@ -12,12 +12,12 @@ caps.latest.revision: 41
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 48fdddd8711086ff185e64df6981cd6848ad1f51
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: bfcec64f9401fdbf79e67bee5fe8430452632fbc
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72669632"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74301028"
 ---
 # <a name="extend-layer-diagrams"></a>Extend layer diagrams
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,9 +41,9 @@ Puede escribir código para crear y actualizar diagramas de capas y para validar
 
 - [Visual Studio SDK](../extensibility/visual-studio-sdk.md)
 
-- [SDK de modelado para Visual Studio 2015](http://www.microsoft.com/download/details.aspx?id=48148)
+- [Modeling SDK for Visual Studio 2015](https://www.microsoft.com/download/details.aspx?id=48148)
 
-  Debe tener una versión adecuada de Visual Studio instalada en el equipo donde desea ejecutar las extensiones de capas. Para obtener más información, vea [implementar una extensión de modelo de capas](../modeling/deploy-a-layer-model-extension.md).
+  Debe tener una versión adecuada de Visual Studio instalada en el equipo donde desea ejecutar las extensiones de capas. For more information, see [Deploy a layer model extension](../modeling/deploy-a-layer-model-extension.md).
 
   Para ver las versiones de Visual Studio que admiten los diagramas de capas, vea [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
 
@@ -61,4 +61,4 @@ Puede escribir código para crear y actualizar diagramas de capas y para validar
  [Solucionar problemas de extensiones de diagramas de capas](../modeling/troubleshoot-extensions-for-layer-diagrams.md)
 
 ## <a name="see-also"></a>Vea también
- [Definir e instalar una extensión de modelado](../modeling/define-and-install-a-modeling-extension.md) [diagramas de capas: referencia](../modeling/layer-diagrams-reference.md) [diagramas de capas: instrucciones](../modeling/layer-diagrams-guidelines.md) [crear diagramas de capas a partir](../modeling/create-layer-diagrams-from-your-code.md) del código [validar código con diagramas de capas](../modeling/validate-code-with-layer-diagrams.md) [generar archivos a partir de un modelo UML](../modeling/generate-files-from-a-uml-model.md) [ Apertura de un modelo UML mediante la API de Visual Studio](../modeling/open-a-uml-model-by-using-the-visual-studio-api.md)
+ [Define and install a modeling extension](../modeling/define-and-install-a-modeling-extension.md) [Layer Diagrams: Reference](../modeling/layer-diagrams-reference.md) [Layer Diagrams: Guidelines](../modeling/layer-diagrams-guidelines.md) [Create layer diagrams from your code](../modeling/create-layer-diagrams-from-your-code.md) [Validate code with layer diagrams](../modeling/validate-code-with-layer-diagrams.md) [Generate files from a UML model](../modeling/generate-files-from-a-uml-model.md) [Open a UML model by using the Visual Studio API](../modeling/open-a-uml-model-by-using-the-visual-studio-api.md)

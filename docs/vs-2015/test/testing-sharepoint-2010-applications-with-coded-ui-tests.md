@@ -8,12 +8,12 @@ ms.assetid: 51b53778-469c-4cc9-854c-4e4992d6389b
 caps.latest.revision: 32
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 2f9df50094676eea5694a29362772c9c44fa456b
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 73dd0e406e8e0a00260d922e38dee70135c3645d
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72660386"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74298012"
 ---
 # <a name="testing-sharepoint-2010-applications-with-coded-ui-tests"></a>Probar aplicaciones de SharePoint 2010 con pruebas de IU codificadas
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,18 +25,18 @@ Incluir pruebas de IU codificadas en una aplicación de SharePoint permite compr
 - Visual Studio Enterprise
 
 ## <a name="what-else-should-i-know-about-coded-ui-tests"></a>¿Qué más debería saber sobre las pruebas de IU codificadas?
- Para más información sobre las ventajas de usar pruebas de IU codificadas, vea [Usar la automatización de IU para probar el código](../test/use-ui-automation-to-test-your-code.md) y [Testing for Continuous Delivery with Visual Studio 2012 – Chapter 5 Automating System Tests](http://go.microsoft.com/fwlink/?LinkID=255196) (Comprobación de entregas continuas con Visual Studio 2012 – Capítulo 5 Automatización de las pruebas del sistema).
+ Para más información sobre las ventajas de usar pruebas de IU codificadas, vea [Usar la automatización de IU para probar el código](../test/use-ui-automation-to-test-your-code.md) y [Testing for Continuous Delivery with Visual Studio 2012 – Chapter 5 Automating System Tests](https://go.microsoft.com/fwlink/?LinkID=255196) (Comprobación de entregas continuas con Visual Studio 2012 – Capítulo 5 Automatización de las pruebas del sistema).
 
  **Notas**
 
-- ![Requisito previo](../test/media/prereq.png "Prereq") Las pruebas de IU codificadas para aplicaciones de SharePoint solo se admiten con SharePoint 2010.
+- ![Prerequsite](../test/media/prereq.png "Prereq") Coded UI tests for SharePoint applications are supported only with SharePoint 2010.
 
-- ![Requisito previo](../test/media/prereq.png "Prereq") No se admiten los controles de Visio y PowerPoint 2010 en la aplicación de SharePoint.
+- ![Prerequsite](../test/media/prereq.png "Prereq") Support for Visio and PowerPoint 2010 controls in your SharePoint application is not supported.
 
 ## <a name="creating-a-coded-ui-test-for-your-sharepoint-app"></a>Crear una prueba de IU codificada para la aplicación de SharePoint
  [Crear pruebas de IU codificadas](../test/use-ui-automation-to-test-your-code.md#VerifyingCodeUsingCUITCreate) para las aplicaciones de SharePoint 2010 es lo mismo que crear pruebas para otros tipos de aplicaciones. La grabación y la reproducción se admiten en todos los controles de la interfaz de edición web. La interfaz para seleccionar categorías y elementos web son todos los controles web estándar.
 
- ![Elementos Web de SharePoint](../test/media/cuit-sharepoint.png "CUIT_SharePoint")
+ ![SharePoint web parts](../test/media/cuit-sharepoint.png "CUIT_SharePoint")
 
 > [!NOTE]
 > Si se graba una acción, validar las acciones antes de generar código. Como hay varios comportamientos asociados con el desplazamiento del mouse, esta característica está activada de manera predeterminada. Tenga cuidado al quitar desplazamientos redundantes de las pruebas de IU codificadas. Puede hacerlo modificando el código de la prueba o usando el [editor de pruebas de IU codificadas](../test/editing-coded-ui-tests-using-the-coded-ui-test-editor.md).
@@ -104,7 +104,7 @@ uiGridKeyboardInputEdit.Text=value;
 
 1. Asegúrese de que tiene Visual Studio 2012.1 o posterior instalado.
 
-2. Instale el [complemento de la prueba de IU de Microsoft Visual Studio para Silverlight](http://visualstudiogallery.msdn.microsoft.com/28312a61-9451-451a-990c-c9929b751eb4).
+2. Instale el [complemento de la prueba de IU de Microsoft Visual Studio para Silverlight](https://marketplace.visualstudio.com/items?itemName=PrachiBoraMSFT.MicrosoftVisualStudioUITestPluginforSilverlight).
 
 3. Instale [Fiddler](http://www.fiddler2.com/fiddler2/). Se trata simplemente de una herramienta que captura y registra el tráfico HTTP.
 
@@ -124,24 +124,24 @@ uiGridKeyboardInputEdit.Text=value;
 
 5. Es preciso confirmar que el código generado hace referencia a Microsoft.VisualStudio.TestTools.UITest.Extension.Silverlight.dll.
 
-     Para más información, vea [Pruebas de IU de SharePoint 2010 con Visual Studio 2012](http://blogs.msdn.com/b/visualstudioalm/archive/2012/11/01/ui-testing-sharepoint-2010-with-visual-studio-2012.aspx).
+     Para más información, vea [Pruebas de IU de SharePoint 2010 con Visual Studio 2012](https://devblogs.microsoft.com/devops/ui-testing-sharepoint-2010-with-visual-studio-2012/).
 
 ## <a name="external-resources"></a>Recursos externos
 
 ### <a name="blogs"></a>Blogs
- [Pruebas de IU de SharePoint 2010 con Visual Studio 2012](http://blogs.msdn.com/b/visualstudioalm/archive/2012/11/01/ui-testing-sharepoint-2010-with-visual-studio-2012.aspx)
+ [Pruebas de IU de SharePoint 2010 con Visual Studio 2012](https://devblogs.microsoft.com/devops/ui-testing-sharepoint-2010-with-visual-studio-2012/)
 
- [Descripción de la lógica de búsqueda de controles de Silverlight en la prueba de IU codificada](http://blogs.msdn.com/b/tapas_sahoos_blog/archive/2010/11/16/understanding-the-search-logic-for-silverlight-controls-in-coded-ui-test.aspx)
+ [Descripción de la lógica de búsqueda de controles de Silverlight en la prueba de IU codificada](https://tapas-techsnips.blogspot.com/)
 
- [Captura de la propiedad de un control de Silverlight](http://blogs.msdn.com/b/tapas_sahoos_blog/archive/2010/11/16/fetching-property-of-a-silverlight-control.aspx)
+ [Captura de la propiedad de un control de Silverlight](https://tapas-techsnips.blogspot.com/)
 
- [Índice de contenido para la prueba de IU codificada](http://blogs.msdn.com/b/mathew_aniyan/archive/2010/02/11/content-index-for-coded-ui-test.aspx)
+ [Índice de contenido para la prueba de IU codificada](https://blogs.msdn.microsoft.com/mathew_aniyan/2013/02/18/content-index-for-coded-ui-test/)
 
 ### <a name="guidance"></a>Orientación
- [Comprobación de entregas continuas con Visual Studio 2012 – Capítulo 5 Automatización de las pruebas del sistema](http://go.microsoft.com/fwlink/?LinkID=255196)
+ [Comprobación de entregas continuas con Visual Studio 2012 – Capítulo 5 Automatización de las pruebas del sistema](https://go.microsoft.com/fwlink/?LinkID=255196)
 
 ### <a name="forum"></a>Foro
- [Blog de Visual Studio ALM + Team Foundation Server](http://go.microsoft.com/fwlink/?LinkID=254496)
+ [Blog de Visual Studio ALM + Team Foundation Server](https://go.microsoft.com/fwlink/?LinkID=254496)
 
 ## <a name="see-also"></a>Vea también
- [Usar la automatización de la interfaz de usuario para probar el](../test/use-ui-automation-to-test-your-code.md) [rendimiento web de código y probar la carga de las aplicaciones de sharepoint 2010 y 2013](https://msdn.microsoft.com/library/20c2e469-0e4e-4296-a739-c0e8fff36e54) [crear soluciones de SharePoint](https://msdn.microsoft.com/library/4bfb1e59-97c9-4594-93f8-3068b4eb9631) [comprobar y depurar](https://msdn.microsoft.com/library/b5f3bce2-6a51-41b1-a292-9e384bae420c) la [compilación y depuración de código de SharePoint SharePoint Soluciones](https://msdn.microsoft.com/library/c9e7c9ab-4eb3-40cd-a9b9-6c2a896f70ae) [que generan perfiles del rendimiento de las aplicaciones de SharePoint](https://msdn.microsoft.com/library/61ae02e7-3f37-4230-bae1-54a498c2fae8)
+ [Use UI Automation To Test Your Code](../test/use-ui-automation-to-test-your-code.md) [Web performance and load testing SharePoint 2010 and 2013 applications](https://msdn.microsoft.com/library/20c2e469-0e4e-4296-a739-c0e8fff36e54) [Create SharePoint Solutions](https://msdn.microsoft.com/library/4bfb1e59-97c9-4594-93f8-3068b4eb9631) [Verifying and Debugging SharePoint Code](https://msdn.microsoft.com/library/b5f3bce2-6a51-41b1-a292-9e384bae420c) [Building and Debugging SharePoint Solutions](https://msdn.microsoft.com/library/c9e7c9ab-4eb3-40cd-a9b9-6c2a896f70ae) [Profiling the Performance of SharePoint Applications](https://msdn.microsoft.com/library/61ae02e7-3f37-4230-bae1-54a498c2fae8)

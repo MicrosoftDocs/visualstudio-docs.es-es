@@ -11,17 +11,17 @@ caps.latest.revision: 34
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: ef686c001fe04dfd23d16685f8cee88df542c52d
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 89f43167a12bce77ef260fcf3d72764072f80143
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72647194"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74299940"
 ---
 # <a name="talk-to-us"></a>Talk to Us
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Para obtener la documentación más reciente sobre Visual Studio, vea [hable con nosotros](https://docs.microsoft.com/visualstudio/ide/feedback-options).
+For the latest documentation on Visual Studio, see [Talk to Us](https://docs.microsoft.com/visualstudio/ide/feedback-options).
 
 Si tiene ideas sobre cómo mejorar nuestra documentación, nos interesan. No podemos responder personalmente, pero nos aseguraremos de hacer llegar sus comentarios a la persona adecuada.
 
@@ -29,7 +29,7 @@ Si tiene ideas sobre cómo mejorar nuestra documentación, nos interesan. No pod
  Utilice el botón de comentarios ( **¿Le resultó útil esta página?** ) situado en la parte inferior de la página. Encontrará este botón en todas las páginas de MSDN. Si está buscando una respuesta y no la encuentra, díganos qué información está buscando.
 
 ## <a name="i-would-like-to-report-a-problem-with-visual-studio"></a>Me gustaría notificar un problema con Visual Studio
- Si tiene problemas con Visual Studio, como bloqueos, un rendimiento lento, un comportamiento inesperado, etc., notifique el problema para nosotros haciendo clic con el botón derecho en el icono de comentarios junto a **Inicio rápido**o eligiendo **ayuda &#124; y envío Los &#124; comentarios notifican un problema** desde el menú principal. Para más información, vea [Cómo notificar un problema con Visual Studio](../ide/how-to-report-a-problem-with-visual-studio-2015.md).
+ If you are running into issues using Visual Studio such as crashes, sluggish performance, unexpected behavior, and so on, please report the problem to us by right-clicking on the feedback icon next to **QuickLaunch**, or by choosing **Help &#124; Send Feedback &#124; Report a Problem** from the main menu. Para más información, vea [Cómo notificar un problema con Visual Studio](../ide/how-to-report-a-problem-with-visual-studio-2015.md).
 
 ## <a name="i-want-to-make-a-suggestion-about-visual-studio-features"></a>Quiero hacer una sugerencia relacionada con las características de Visual Studio
  Si hay algo que podamos mejorar, háganoslo saber. Elija **Ofrecer una sugerencia** para sugerir una característica o cambiar al equipo de Visual Studio.
@@ -38,20 +38,17 @@ Si tiene ideas sobre cómo mejorar nuestra documentación, nos interesan. No pod
  Las versiones preliminares de Visual Studio tienen un elemento de menú **Valorar este producto** que le permite enviar comentarios sobre la calidad de la compilación que está ejecutando. No verá esta opción en versiones publicadas del producto.
 
 ## <a name="i-need-help"></a>Necesito ayuda
- Vea el [Soporte técnico de Microsoft](http://go.microsoft.com/fwlink/?LinkID=99019) para obtener ayuda en línea.
+ Vea el [Soporte técnico de Microsoft](https://go.microsoft.com/fwlink/?LinkID=99019) para obtener ayuda en línea.
 
- El soporte técnico fuera de Estados Unidos y Canadá puede variar. Para obtener una lista de contactos regionales, vea [Sitios de Microsoft en todo el mundo](http://www.microsoft.com/worldwide/).
+ El soporte técnico fuera de Estados Unidos y Canadá puede variar. Para obtener una lista de contactos regionales, vea [Sitios de Microsoft en todo el mundo](https://www.microsoft.com/worldwide/).
 
- Para obtener más opciones, vea [Introducción al soporte técnico](http://www.visualstudio.com/support/support-overview-vs).
+ Para obtener más opciones, vea [Introducción al soporte técnico](https://visualstudio.microsoft.com/support/).
 
- Para las organizaciones grandes que requieren compatibilidad administrada de Microsoft directamente, los contratos están disponibles a través de las ofertas Premier Support. Para obtener más información, vea [Soporte técnico Premier de servicios Microsoft](http://go.microsoft.com/fwlink/?LinkId=258223).
+ Para las organizaciones grandes que requieren compatibilidad administrada de Microsoft directamente, los contratos están disponibles a través de las ofertas Premier Support. Para obtener más información, vea [Soporte técnico Premier de servicios Microsoft](https://go.microsoft.com/fwlink/?LinkId=258223).
 
  Si el producto viniera instalado con un nuevo equipo o dispositivo, el fabricante del hardware proporciona soporte técnico y ayuda para este software. Ponerse en contacto directamente con el fabricante para saber si es compatible.
 
  Los servicios de soporte técnico de Microsoft están sujetos a los precios, términos y condiciones en vigor. Dichos precios, términos y condiciones están sujetos a modificaciones sin previo aviso.
-
-## <a name="i-want-to-get-involved-in-the-developer-community"></a>Quiero participar en la comunidad de desarrolladores
- Si quiere compartir preguntas y respuestas con otros desarrolladores, puede usar el sitio de [Foros de MSDN](http://social.msdn.microsoft.com/Forums/home) o [StackOverflow](http://stackoverflow.com/). Puede ver el código de otros desarrolladores y compartir sus propios ejemplos en los sitios web [Muestras de código para desarrollador](http://code.msdn.microsoft.com/) y [CodePlex](http://www.codeplex.com/) .
 
 ## <a name="see-also"></a>Vea también
  [Cómo notificar un problema con Visual Studio 2015](../ide/how-to-report-a-problem-with-visual-studio-2015.md)

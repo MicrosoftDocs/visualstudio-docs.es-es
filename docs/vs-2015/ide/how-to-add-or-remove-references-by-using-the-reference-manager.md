@@ -23,12 +23,12 @@ caps.latest.revision: 48
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 04b6573b6cd04b5a061a40025a9872d9972e35cb
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 1ed9a341e1b0f7247175e62aceafc6051f83e8f9
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72645480"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74300158"
 ---
 # <a name="how-to-add-or-remove-references-by-using-the-reference-manager"></a>Procedimiento para agregar o quitar referencias mediante el Administrador de referencias
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -54,7 +54,7 @@ Puede usar el cuadro de diálogo **Administrador de referencias** para agregar y
 - Examinar, con el subgrupo Recientes.
 
 ## <a name="assemblies-tab"></a>Pestaña Ensamblados
- En la pestaña **Ensamblados** se muestran todos los ensamblados de .NET Framework a los que se puede hacer referencia. La pestaña **Ensamblados** no muestra ningún ensamblado de la caché global de ensamblados (GAC) porque los ensamblados de la GAC forman parte del entorno en tiempo de ejecución. Si implementa o copia una aplicación que contiene una referencia a un ensamblado registrado en la memoria caché global de ensamblados, el ensamblado no se implementará ni copiará con la aplicación, independientemente de la configuración de Copia local. Para más información, vea [Administrar referencias en un proyecto](http://go.microsoft.com/fwlink/?LinkId=238512).
+ En la pestaña **Ensamblados** se muestran todos los ensamblados de .NET Framework a los que se puede hacer referencia. La pestaña **Ensamblados** no muestra ningún ensamblado de la caché global de ensamblados (GAC) porque los ensamblados de la GAC forman parte del entorno en tiempo de ejecución. Si implementa o copia una aplicación que contiene una referencia a un ensamblado registrado en la memoria caché global de ensamblados, el ensamblado no se implementará ni copiará con la aplicación, independientemente de la configuración de Copia local. Para más información, vea [Administrar referencias en un proyecto](https://go.microsoft.com/fwlink/?LinkId=238512).
 
  Al agregar manualmente una referencia a cualquiera de los espacios de nombres EnvDTE (EnvDTE, EnvDTE80, EnvDTE90, EnvDTE90a o EnvDTE100), establezca la propiedad Incrustar tipos de interoperabilidad de la referencia en False en la ventana Propiedades. Si establece esta propiedad en True, se pueden producir problemas de compilación debido a ciertas propiedades EnvDTE que no se pueden insertar.
 
@@ -131,7 +131,7 @@ Puede usar el cuadro de diálogo **Administrador de referencias** para agregar y
 
     La creación de la clave del Registro en el nodo HKEY_LOCAL_MACHINE permite que todos los usuarios vean los ensamblados de la ubicación especificada en el cuadro de diálogo **Agregar referencia**. Crear la clave del Registro en el nodo HKEY_CURRENT_USER únicamente afecta a la configuración del usuario actual.
 
-    Abra de nuevo el cuadro de diálogo **Agregar referencia**. Los ensamblados deben aparecer en la pestaña **.net** . Si no es así, asegúrese de que los ensamblados se encuentren en el directorio *AssemblyLocation* especificado, reinicie Visual Studio e inténtelo de nuevo.
+    Abra de nuevo el cuadro de diálogo **Agregar referencia**. The assemblies should appear on the **.NET** tab. If they do not, make sure that the assemblies are located in the specified *AssemblyLocation* directory, restart Visual Studio, and try again.
 
 ## <a name="com-tab"></a>Pestaña COM
  La pestaña COM muestra todos los componentes COM a los que se puede hacer referencia. Si desea agregar una referencia a una DLL COM registrada que contiene un manifiesto interno, quite primero la DLL del Registro. Si no lo hace, Visual Studio agregará la referencia del ensamblado como un control ActiveX, en lugar de como una DLL nativa.
@@ -216,4 +216,4 @@ Puede usar el cuadro de diálogo **Administrador de referencias** para agregar y
  La barra de búsqueda del cuadro de diálogo **Administrador de referencias** funciona según la pestaña que tiene el foco. Por ejemplo, si el usuario escribe “System” en la barra de búsqueda mientras la pestaña **Solución** tiene el foco, la búsqueda no devuelve ningún resultado a menos que la solución conste de un nombre de proyecto que contenga “system”.
 
 ## <a name="see-also"></a>Vea también
- [NIB cómo: agregar o quitar referencias mediante el cuadro de diálogo Agregar referencia](https://msdn.microsoft.com/3bd75d61-f00c-47c0-86a2-dd1f20e231c9) [Administración de referencias en un proyecto](../ide/managing-references-in-a-project.md)
+ [NIB How to: Add or Remove References By Using the Add Reference Dialog Box](https://msdn.microsoft.com/3bd75d61-f00c-47c0-86a2-dd1f20e231c9) [Managing references in a project](../ide/managing-references-in-a-project.md)

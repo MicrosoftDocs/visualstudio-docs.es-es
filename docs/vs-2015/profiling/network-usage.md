@@ -9,12 +9,12 @@ caps.latest.revision: 12
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: d85b71c2ed54a8ab8bc85c93ce61e3ed274d86e0
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: eed389a3847145a0f37eb3141526a38e4374d368
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65673818"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74297912"
 ---
 # <a name="network-usage"></a>Uso de red
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -24,14 +24,14 @@ La herramienta de diagnóstico **Red** de Visual Studio recopila datos acerca de
  La herramienta de red admite solo las aplicaciones de plataforma universal de Windows. En este momento no se admiten otras plataformas.  
   
 > [!NOTE]
-> Para obtener una descripción más completa de la herramienta Red, consulte [Presentación de la herramienta de red de Visual Studio](http://blogs.msdn.com/b/visualstudio/archive/2015/05/04/introducing-visual-studio-s-network-tool.aspx).  
+> Para obtener una descripción más completa de la herramienta Red, consulte [Presentación de la herramienta de red de Visual Studio](https://devblogs.microsoft.com/visualstudio/?m=20155).  
   
 ## <a name="collecting-network-tool-data"></a>Recopilar datos de la herramienta de red  
  Debería ejecutar la herramienta **Red** con un proyecto de Visual Studio abierto en el equipo de Visual Studio.  
   
 1. Abra el proyecto en Visual Studio.  
   
-2. En el menú, haga clic en **Depurar / Generador de perfiles de rendimiento...** Elija **Red** y después **Iniciar**.  
+2. On the  menu, click **Debug / Performance Profiler...** . Choose **Network**, and then choose **Start**.  
   
 3. La herramienta de red comienza a recopilar el tráfico de red HTTP de la aplicación.  
   
@@ -74,6 +74,6 @@ La herramienta de diagnóstico **Red** de Visual Studio recopila datos acerca de
 3. El botón de impresión bonita (dentro de la pestaña Cuerpo) puede ayudarle a analizar cargas de respuesta JSON, XML, HTML, CSS, JavaScript y TypeScript al aumentar la legibilidad del contenido.  
   
 ## <a name="see-also"></a>Vea también  
- [Ejecutar herramientas de generación de perfiles sin depurar](https://msdn.microsoft.com/library/e97ce1a4-62d6-4b8e-a2f7-61576437ff01)   
- [Visual Studio blog: Presentación de inspector de red de Visual Studio](http://go.microsoft.com/fwlink/?LinkId=535022)   
- [Vídeo de Channel 9: Herramientas de diagnóstico de VS: nuevo Profiler de red](http://channel9.msdn.com/Series/ConnectOn-Demand/206)
+ [Run profiling tools without debugging](https://msdn.microsoft.com/library/e97ce1a4-62d6-4b8e-a2f7-61576437ff01)   
+ [Visual Studio blog: Introducing Visual Studio’s network inspector](https://go.microsoft.com/fwlink/?LinkId=535022)   
+ [Vídeo de Channel 9: "Herramientas de diagnóstico de VS: nuevo generador de perfiles de red"](https://channel9.msdn.com/Series/ConnectOn-Demand/206)

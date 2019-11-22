@@ -11,12 +11,12 @@ caps.latest.revision: 26
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 5f664b1bf2af89d8c3f6e06792039571f4211236
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 23c6f008050cc2695a5b86d2164093823726a7b2
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65692742"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74300652"
 ---
 # <a name="concurrency-visualizer-command-line-utility-cvcollectioncmd"></a>Utilidad de línea de comandos Visualizador de simultaneidad (CVCollectionCmd)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -24,10 +24,10 @@ ms.locfileid: "65692742"
 Se puede usar la utilidad de la línea de comandos (CVCollectionCmd.exe) del Visualizador de simultaneidad para recopilar seguimientos de la línea de comandos de manera que los pueda ver en el Visualizador de simultaneidad para Visual Studio. Las herramientas se pueden usar en equipos que no tengan instalado Visual Studio.  
   
 > [!NOTE]
-> Desde Visual Studio 2013, el Visualizador de simultaneidad es una extensión opcional. (Anteriormente se incluía en Visual Studio.) Puede descargar las [Herramientas de recolección del visualizador de simultaneidad para Visual Studio 2015](http://www.microsoft.com/download/details.aspx?id=49103) desde el Centro de descarga.  
+> Desde Visual Studio 2013, el Visualizador de simultaneidad es una extensión opcional. (Previously it had been included in Visual Studio.) You can download the [Concurrency Visualizer Collection Tools for Visual Studio 2015](https://www.microsoft.com/download/details.aspx?id=49103) from the Download Center.  
   
 ## <a name="download-the-concurrency-visualizer-command-line-utility"></a>Descarga de la utilidad de línea de comandos del Visualizador de simultaneidad  
- Para descargar e instalar la utilidad de línea de comandos, vaya a [Herramientas de recolección del visualizador de simultaneidad para Visual Studio 2015](http://www.microsoft.com/download/details.aspx?id=49103) y siga las instrucciones. De forma predeterminada, CVCollectionCmd.exe se instala en %ProgramFiles%\Microsoft Concurrency Visualizer Collection Tools\ (%ProgramFiles(x86)%\Microsoft Concurrency Visualizer Collection Tools\ en equipos x64).  
+ Para descargar e instalar la utilidad de línea de comandos, vaya a [Herramientas de recolección del visualizador de simultaneidad para Visual Studio 2015](https://www.microsoft.com/download/details.aspx?id=49103) y siga las instrucciones. De forma predeterminada, CVCollectionCmd.exe se instala en %ProgramFiles%\Microsoft Concurrency Visualizer Collection Tools\ (%ProgramFiles(x86)%\Microsoft Concurrency Visualizer Collection Tools\ en equipos x64).  
   
 ## <a name="collect-a-trace-with-cvcollectioncmd"></a>Recopile datos de un seguimiento con CVCollectionCmd  
  Para recopilar información de un seguimiento, inicie la aplicación con CVCollectionCmd o asóciela a ella. Consulte la siguiente referencia de comandos para conocer las opciones disponibles. Por ejemplo  
@@ -43,7 +43,7 @@ Se puede usar la utilidad de la línea de comandos (CVCollectionCmd.exe) del Vis
   
 |Opción|Descripción|Parámetros|Valores devueltos|  
 |------------|-----------------|----------------|-------------------|  
-|Consulta|Devuelve si la recolección se puede iniciar.|Ninguna|0 si la recolección está lista para comenzar.<br /><br /> 1 si la recolección ya está en curso.<br /><br /> 2 si la recolección no está en curso, pero una o más de las sesiones de [ETW](https://msdn.microsoft.com/library/ac99a063-e2d2-40cc-b659-d23c2f783f92) necesarias ya están habilitadas.|  
+|Consulta|Devuelve si la recolección se puede iniciar.|Ninguno|0 si la recolección está lista para comenzar.<br /><br /> 1 si la recolección ya está en curso.<br /><br /> 2 si la recolección no está en curso, pero una o más de las sesiones de [ETW](https://msdn.microsoft.com/library/ac99a063-e2d2-40cc-b659-d23c2f783f92) necesarias ya están habilitadas.|  
 |Launch|Ejecuta el proceso especificado en el Visualizador de simultaneidad.|Ruta de acceso del archivo ejecutable.|0 si la ejecución se realizó correctamente.<br /><br /> 1 si se produjo un error en la ejecución porque no se pudo iniciar la aplicación de destino.<br /><br /> 13 si se produjo un error en la ejecución porque CVCollectionCmd no tenía permisos suficientes para escribir en el directorio de salida especificado.|  
 |Attach|Comienza a recopilar un seguimiento de todo el sistema; de lo contrario, se asocia a un proceso si se ha especificado uno.|Ninguno.|0 si la asociación se realizó correctamente.<br /><br /> 1 si se produjo un error en la asociación porque el proceso especificado no era válido o era ambiguo.<br /><br /> 13 si se produjo un error en la asociación porque CVCollectionCmd no tenía permisos suficientes para escribir en el directorio de salida especificado.|  
 |Desasociar|Detiene la recolección.|Ninguno.|0 si la desasociación se realizó correctamente.<br /><br /> 1 si se produjo un error en la desasociación porque la recolección no estaba actualmente en curso.<br /><br /> 2 si se produjo un error en la desasociación porque no se pudo detener la recolección.|  
@@ -71,7 +71,7 @@ Se puede usar la utilidad de la línea de comandos (CVCollectionCmd.exe) del Vis
 |MinorVersion|Especifica la versión secundaria del archivo de configuración.|Debe ser 0 para los proyectos de [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] . Si no es 0, la utilidad no funcionará.|  
 |IncludeEnvSymbolPath|Establece un valor que determina si se usa la ruta de acceso de símbolo de entorno (_NT_SYMBOL_PATH).|-   True<br />-   False|  
 |DeleteEtlsAfterAnalysis|Establece un valor que determina si se eliminan los archivos ETL cuando se completa el análisis.|-   True<br />-   False|  
-|SymbolPath|Especifica la ruta de acceso del servidor de símbolos. Para más información, vea [Utilizar el servidor de símbolos de Microsoft para obtener archivos de símbolos de depuración](http://go.microsoft.com/fwlink/?LinkID=149389).|Nombre de directorio o dirección URL.|  
+|SymbolPath|Especifica la ruta de acceso del servidor de símbolos. Para más información, vea [Utilizar el servidor de símbolos de Microsoft para obtener archivos de símbolos de depuración](https://go.microsoft.com/fwlink/?LinkID=149389).|Nombre de directorio o dirección URL.|  
 |Markers|Contiene la lista de proveedores de marcadores.|Puede contener cero o más elementos MarkerProvider.|  
 |MarkerProvider|Especifica un proveedor de marcadores único.|Debe contener estos elementos:<br /><br /> -   Level<br />-   GUID<br />-   Name<br /><br /> Puede contener estos elementos:<br /><br /> -   Categories<br />-   IsEnabled|  
 |Nivel|Establece el nivel de importancia de un MarkerProvider.|-   Low<br />-   Normal<br />-   High<br />-   Critical<br />-   Everything|  

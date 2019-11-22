@@ -1,5 +1,5 @@
 ---
-title: Personalizar el modelo con perfiles y estereotipos | Microsoft Docs
+title: Customize your model with profiles and stereotypes | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-modeling
@@ -13,17 +13,17 @@ caps.latest.revision: 20
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 4f83fcf3ea500e0640a226b80d3d3c0e2c7ed869
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: b634b11418ef2d4220dc4eb07c825b514ab5494c
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72655099"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74301194"
 ---
 # <a name="customize-your-model-with-profiles-and-stereotypes"></a>Personalizar el modelo con perfiles y estereotipos
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-En Visual Studio, puede adaptar los elementos del modelo UML estándar, como las clases y los componentes, para personalizarlos con fines específicos. Puede aplicar un *estereotipo* a un elemento de modelo que puede cambiar la lista de propiedades del elemento. Los estereotipos se definen dentro de las colecciones denominados *perfiles*.
+En Visual Studio, puede adaptar los elementos del modelo UML estándar, como las clases y los componentes, para personalizarlos con fines específicos. You can apply a *stereotype* to a model element that can change the element's list of properties. Stereotypes are defined within collections called *profiles*.
 
  Para ver qué versiones de Visual Studio admiten esta característica, vea [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
 
@@ -31,7 +31,7 @@ En Visual Studio, puede adaptar los elementos del modelo UML estándar, como las
 
  Los estereotipos se pueden establecer en la lista de propiedades de un elemento. En el caso de los tipos de forma principales de un diagrama, los estereotipos aplicados aparecen también en la forma, como se muestra en el ejemplo.
 
- ![Una clase UML con un estereotipo.](../modeling/media/uml-class-stereotype.png "UML_class_stereotype")
+ ![A UML class with a stereotype.](../modeling/media/uml-class-stereotype.png "UML_class_stereotype")
 
 > [!NOTE]
 > Si usa un perfil para crear un modelo y, a continuación, comparte el modelo con otra persona, esta no podrá ver los estereotipos a menos que tenga instalado el mismo perfil en el equipo.
@@ -45,4 +45,3 @@ En Visual Studio, puede adaptar los elementos del modelo UML estándar, como las
 |[Definir un perfil para ampliar UML](../modeling/define-a-profile-to-extend-uml.md)|Puede definir sus propios estereotipos y herramientas de modo que estén adaptados a su propia área de aplicación.<br /><br /> Por ejemplo, si desarrolla un software de banca, puede definir un estereotipo "Cuenta" que pueda aplicarse a las clases. Posteriormente, podría usar los diagramas de clases para describir distintos tipos de cuentas y sus relaciones.|
 |[Instalar un perfil UML](../modeling/install-a-uml-profile.md)|Si alguien le ha proporcionado un perfil UML, puede instalarlo en el equipo.|
 |[Definir un elemento personalizado en un cuadro de herramientas de modelado](../modeling/define-a-custom-modeling-toolbox-item.md)|Un elemento personalizado en el cuadro de herramientas le evita tener que establecer varias veces un estereotipo en los elementos nuevos.|
-|[Clases UML de color por estereotipo](http://code.msdn.microsoft.com/UML-Color-Classes-by-07de2b70)|Este código de ejemplo amplía los diagramas UML. Establece automáticamente el color de una forma UML según el estereotipo del elemento.|

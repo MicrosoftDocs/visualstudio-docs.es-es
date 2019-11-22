@@ -1,24 +1,24 @@
 ---
-title: Obtenga información sobre los conceptos básicos de la compilación de aplicaciones con Xamarin.Forms
+title: Learn app-building basics with Xamarin.Forms
 ms.date: 11/15/2016
 ms.topic: conceptual
 ms.assetid: d22b5186-9e03-4e85-afc9-7cbe28522a6d
 caps.latest.revision: 14
 ms.author: crdun
 manager: crdun
-ms.openlocfilehash: 18ea10e25117ee5bf52c6369e575d70a989435db
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: bc7e46af7e29ef554b80bd9244910e0c67d373af
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63444525"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74299766"
 ---
 # <a name="learn-app-building-basics-with-xamarinforms-in-visual-studio"></a>Información sobre los conceptos básicos de la compilación de aplicaciones con Xamarin.Forms en Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Tras realizar los pasos [Setup and install](../cross-platform/setup-and-install.md) y [Verify your Xamarin environment](../cross-platform/verify-your-xamarin-environment.md), en este tutorial se muestra cómo compilar una aplicación básica (se muestra a continuación) con Xamarin.Forms. Con Xamarin.Forms, escribirá todo el código de interfaz de usuario una vez en una biblioteca de clases portable (PCL). Después, Xamarin representará de forma automática los controles de interfaz de usuario nativos para las plataformas iOS, Android y Windows. Se recomienda este enfoque porque la opción de PCL es la más compatible al usar solo esas API de .NET que son compatibles con todas las plataformas de destino, y porque Xamarin.Forms le permite compartir código de interfaz de usuario entre plataformas.
 
- ![La aplicación meteorológica de ejemplo en Android, iOS y Windows Phone](../cross-platform/media/crossplat-xamarin-formsguide-1.png "CrossPlat Xamarin FormsGuide 1")
+ ![The Weather App sample on Android, iOS, and Windows Phone](../cross-platform/media/crossplat-xamarin-formsguide-1.png "CrossPlat Xamarin FormsGuide 1")
 
  Deberá llevar a cabo estas operaciones para compilarla:
 
@@ -40,13 +40,13 @@ Tras realizar los pasos [Setup and install](../cross-platform/setup-and-install.
 
 1. En Visual Studio, cree una nueva solución de **Aplicación vacía (Xamarin.Forms Portable)** con el nombre **WeatherApp**. Puede encontrar esta plantilla con mayor facilidad si escribe **Xamarin.Forms** en el campo de búsqueda.
 
-     Si no la encuentra, es posible que tenga que instalar Xamarin o habilitar la característica de Visual Studio 2015. Vea [Configuración e instalación](../cross-platform/setup-and-install.md).
+     Si no la encuentra, es posible que tenga que instalar Xamarin o habilitar la característica de Visual Studio 2015; consulte [Setup and install](../cross-platform/setup-and-install.md).
 
-     ![Crear un nuevo proyecto de aplicación en blanco (Xamarin.Forms Portable)](../cross-platform/media/crossplat-xamarin-formsguide-2.png "CrossPlat Xamarin FormsGuide 2")
+     ![Creating a new Blank App &#40;Xamarin.Forms Portable&#41; project](../cross-platform/media/crossplat-xamarin-formsguide-2.png "CrossPlat Xamarin FormsGuide 2")
 
 2. Después de hacer clic en Aceptar para crear la solución, tendrá un número de proyectos individuales:
 
-    - **WeatherApp (Portable)**: la PCL en la que escribirá código que se comparte entre plataformas, incluida la lógica de negocios común y el código de interfaz de usuario con Xamarin.Forms.
+    - **WeatherApp (Portable)** : la PCL en la que escribirá código que se comparte entre plataformas, incluida la lógica de negocios común y el código de interfaz de usuario con Xamarin.Forms.
 
     - **WeatherApp.Droid**: el proyecto que contiene el código nativo de Android. Este se establece como el proyecto de inicio predeterminado.
 
@@ -54,9 +54,9 @@ Tras realizar los pasos [Setup and install](../cross-platform/setup-and-install.
 
     - **WeatherApp.UWP**: el proyecto que contiene el código nativo de Windows 10 UWP.
 
-    - **WeatherApp.Windows (Windows 8.1)**: el proyecto que contiene el código nativo de Windows 8.1.
+    - **WeatherApp.Windows (Windows 8.1)** : el proyecto que contiene el código nativo de Windows 8.1.
 
-    - **WeatherApp.WinPhone (Windows Phone 8.1)**: el proyecto que contiene el código nativo de Windows Phone.
+    - **WeatherApp.WinPhone (Windows Phone 8.1)** : el proyecto que contiene el código nativo de Windows Phone.
 
     > [!NOTE]
     > Puede eliminar cualquiera de los proyectos de una plataforma que no tenga como destino. A los efectos de este tutorial, nos referiremos a los proyectos de Android, iOS y Windows Phone 8.1. Trabajar con proyectos de UWP y Windows 8.1 es muy similar a trabajar con el proyecto de Windows Phone 8.1.
@@ -73,7 +73,7 @@ Tras realizar los pasos [Setup and install](../cross-platform/setup-and-install.
 
     - Haga clic en **Actualizar**.
 
-         ![Actualización del paquete NuGet Xamarin.Forms](../cross-platform/media/crossplat-xamarin-formsguide-4.png "CrossPlat Xamarin FormsGuide 4")
+         ![Updating the Xamarin.Forms NuGet package](../cross-platform/media/crossplat-xamarin-formsguide-4.png "CrossPlat Xamarin FormsGuide 4")
 
 4. Agregue **Newtonsoft.Json** y el paquete NuGet al proyecto PCL, que usará para procesar la información recuperada de un servicio de datos de tiempo:
 
@@ -87,7 +87,7 @@ Tras realizar los pasos [Setup and install](../cross-platform/setup-and-install.
 
     - Haga clic en **Instalar**.
 
-    - ![Localizar e instalar el paquete NuGet Newtonsoft.Json](../cross-platform/media/crossplat-xamarin-formsguide-5.png "CrossPlat Xamarin FormsGuide 5")
+    - ![Locating and installing the Newtonsoft.Json NuGet package](../cross-platform/media/crossplat-xamarin-formsguide-5.png "CrossPlat Xamarin FormsGuide 5")
 
 5. Repita el paso 4 para buscar e instalar el paquete **Microsoft.Net.Http** .
 
@@ -96,11 +96,11 @@ Tras realizar los pasos [Setup and install](../cross-platform/setup-and-install.
 ## <a name="dataservice"></a> Escribir código de servicio de datos compartidos
  El proyecto **WeatherApp (Portable)** es en el que escribirá el código de la biblioteca de clases portable (PCL) que se comparte entre todas las plataformas. La PCL se incluye de forma automática en la compilación de paquetes de la aplicación mediante los proyectos de iOS, Android y Windows Phone.
 
- Para ejecutar este ejemplo, primero debe registrarse para obtener una clave de API gratuita en [http://openweathermap.org/appid](http://openweathermap.org/appid).
+ Para ejecutar este ejemplo, primero debe registrarse para obtener una clave de API gratuita en [http://openweathermap.org/appid](https://openweathermap.org/appid).
 
  En los pasos siguientes, se agrega el código a la PCL para acceder y almacenar datos de ese servicio meteorológico:
 
-1. Haga clic con el botón derecho en el proyecto **WeatherApp** y seleccione **Agregar > Clase...**. En el cuadro de diálogo **Agregar nuevo elemento** , denomine al archivo **Weather.cs**. Esta clase se usará para almacenar los datos del servicio de datos meteorológicos.
+1. Haga clic con el botón derecho en el proyecto **WeatherApp** y seleccione **Agregar > Clase...** . En el cuadro de diálogo **Agregar nuevo elemento** , denomine al archivo **Weather.cs**. Esta clase se usará para almacenar los datos del servicio de datos meteorológicos.
 
 2. Reemplace todo el contenido de **Weather.cs** por lo siguiente:
 
@@ -215,11 +215,11 @@ Tras realizar los pasos [Setup and install](../cross-platform/setup-and-install.
 ## <a name="uicode"></a> Empezar a escribir código de interfaz de usuario compartido
  Xamarin.Forms le permite implementar el código de interfaz de usuario compartido en la PCL. En estos pasos, agregará una pantalla a la PCL con un botón que actualiza su texto con datos que devuelve el código del servicio de datos meteorológicos agregado en la sección anterior:
 
-1. Agregue una **Forms Xaml Page** denominada **WeatherPage.cs**. Para ello, haga clic con el botón derecho en el proyecto **WeatherApp** y seleccione **Agregar > Nuevo elemento...**. En el cuadro de diálogo **Agregar nuevo elemento** , busque "Forms", seleccione **Forms Xaml Page**, y denomínela **WeatherPage.cs**.
+1. Add a **Forms Xaml Page** named **WeatherPage.cs** by right-clicking the **WeatherApp** project and selecting **Add > New Item...** . In the **Add New Item** dialog, search on “Forms,” select **Forms Xaml Page**, and name it **WeatherPage.cs**.
 
      Xamarin.Forms está basado en XAML, por lo que, en este paso, se crea un archivo **WeatherPage.xaml** junto con el archivo de código subyacente anidado **WeatherPage.xaml.cs**. Esto le permite generar la interfaz de usuario mediante código o XAML. Realizará ambos en este tutorial.
 
-     ![Agregar una nueva página XAML de Xamarin.Forms](../cross-platform/media/crossplat-xamarin-formsguide-6.png "CrossPlat Xamarin FormsGuide 6")
+     ![Adding a new Xamarin.Forms XAML page](../cross-platform/media/crossplat-xamarin-formsguide-6.png "CrossPlat Xamarin FormsGuide 6")
 
 2. Para agregar un botón a la pantalla WeatherPage, reemplace el contenido de WeatherPage.xaml por lo siguiente:
 
@@ -281,16 +281,16 @@ Tras realizar los pasos [Setup and install](../cross-platform/setup-and-install.
 
 2. En la barra de herramientas de Visual Studio, verá que **WeatherApp.Droid** aparece como el proyecto de destino. Seleccione uno de los emuladores de Android para depurar y pulse **F5**. Se recomienda usar una de las opciones de **emulador de VS** que ejecutarán la aplicación en las opciones del emulador de Visual Studio para Android.
 
-     ![Seleccionar un destino de depuración del emulador de VS](../cross-platform/media/crossplat-xamarin-formsguide-7.png "CrossPlat Xamarin FormsGuide 7")
+     ![Selecting a VS Emulator debug target](../cross-platform/media/crossplat-xamarin-formsguide-7.png "CrossPlat Xamarin FormsGuide 7")
 
 3. Cuando se inicie la aplicación en el emulador, haga clic en el botón **Obtener tiempo** . Debería ver el texto del botón actualizado a **Chicago, IL**, que es la propiedad *Title* de los datos recuperados del servicio meteorológico.
 
-     ![Aplicación meteorológica antes y después de pulsar el botón](../cross-platform/media/crossplat-xamarin-formsguide-8.png "CrossPlat Xamarin FormsGuide 8")
+     ![Weather App before and after tapping the button](../cross-platform/media/crossplat-xamarin-formsguide-8.png "CrossPlat Xamarin FormsGuide 8")
 
 ## <a name="finish"></a> Finalizar la interfaz de usuario con una apariencia nativa en todas las plataformas
  Xamarin.Forms representa los controles de interfaz de usuario nativos de cada plataforma, para que la aplicación tenga una apariencia nativa de forma automática. Para ver esto de forma más clara, finalizaremos la interfaz de usuario con un campo de entrada para un código postal y, después, se mostrarán los datos meteorológicos que devuelve el servicio.
 
-1. Reemplace el contenido de **WeatherPage.xaml** por el código siguiente. Tenga en cuenta que cada elemento se denomina mediante el atributo **x:Name** tal y como se ha descrito anteriormente, para que se pueda hacer referencia al elemento desde el código. Xamarin.Forms también proporciona un número de [opciones de diseño](http://developer.xamarin.com/guides/xamarin-forms/controls/layouts/) (xamarin.com); en este caso, WeatherPage usa [StackLayout](http://developer.xamarin.com/api/type/Xamarin.Forms.StackLayout/) (xamarin.com).
+1. Reemplace el contenido de **WeatherPage.xaml** por el código siguiente. Tenga en cuenta que cada elemento se denomina mediante el atributo **x:Name** tal y como se ha descrito anteriormente, para que se pueda hacer referencia al elemento desde el código. Xamarin.Forms también proporciona un número de [opciones de diseño](https://docs.microsoft.com/xamarin/xamarin-forms/user-interface/controls/layouts) (xamarin.com); en este caso, WeatherPage usa [StackLayout](https://docs.microsoft.com/dotnet/api/Xamarin.Forms.StackLayout?view=xamarin-forms) (xamarin.com).
 
    ```xaml
    <?xml version="1.0" encoding="utf-8" ?>
@@ -380,7 +380,7 @@ Tras realizar los pasos [Setup and install](../cross-platform/setup-and-install.
    </ContentPage>
    ```
 
-    Fíjese en el uso de la etiqueta **OnPlatform** en Xamarin.Forms. **OnPlatform** selecciona un valor de propiedad que es específico de la plataforma actual en la que se ejecuta la aplicación (consulte [External XAML Syntax (Sintaxis XAML externa)](http://developer.xamarin.com/guides/xamarin-forms/user-interface/xaml-basics/essential_xaml_syntax/) (xamarin.com). Lo usamos aquí para establecer un color de texto diferente para los campos de datos: En blanco en Windows Phone, negro en iOS y Android. Puede usar **OnPlatform** en cualquier propiedad y tipo de datos para realizar ajustes específicos de la plataforma en cualquier lugar en el código XAML. En el archivo de código subyacente, puede usar la [API Device.OnPlatform](http://developer.xamarin.com/guides/xamarin-forms/platform-features/device/) para el mismo propósito.
+    Fíjese en el uso de la etiqueta **OnPlatform** en Xamarin.Forms. **OnPlatform** selecciona un valor de propiedad que es específico de la plataforma actual en la que se ejecuta la aplicación (consulte [External XAML Syntax (Sintaxis XAML externa)](https://docs.microsoft.com/xamarin/xamarin-forms/xaml/xaml-basics/essential-xaml-syntax) (xamarin.com). Lo usamos aquí para establecer un color de texto diferente para los campos de datos: blanco en Android y Windows Phone, negro en iOS. Puede usar **OnPlatform** en cualquier propiedad y tipo de datos para realizar ajustes específicos de la plataforma en cualquier lugar en el código XAML. En el archivo de código subyacente, puede usar la [API Device.OnPlatform](https://docs.microsoft.com/xamarin/xamarin-forms/platform/device) para el mismo propósito.
 
 2. En **WeatherPage.xaml.cs**, reemplace el controlador de eventos **GetWeatherBtn_Clicked** por el código siguiente. Este código comprueba que hay un código postal en el campo de entrada, recupera datos de ese código postal, establece el contexto de enlace de la pantalla completa para la instancia Weather resultante y, después, establece el texto del botón en "Buscar de nuevo". Tenga en cuenta que cada etiqueta de la interfaz de usuario enlaza a una propiedad de la clase Weather, así que cuando establece el contexto de enlace de la pantalla en una instancia **Weather** , esas etiquetas se actualizan de forma automática.
 
@@ -398,6 +398,6 @@ Tras realizar los pasos [Setup and install](../cross-platform/setup-and-install.
 
 3. Ejecute la aplicación en las tres plataformas: Android, iOS y Windows Phone. Para ello, haga clic con el botón derecho en el proyecto adecuado, seleccione Establecer como proyecto de inicio e inicie la aplicación en un dispositivo, en el emulador o en el simulador. Escriba un código postal de Estados Unidos válido (por ejemplo, 60601) y haga clic en el botón Obtener tiempo para mostrar los datos meteorológicos de esa región, como se muestra a continuación. Por supuesto, necesitará tener Visual Studio conectado a un equipo Mac OS X en la red para el proyecto de iOS.
 
-    ![La aplicación meteorológica de ejemplo en Android, iOS y Windows Phone](../cross-platform/media/crossplat-xamarin-formsguide-1.png "CrossPlat Xamarin FormsGuide 1")
+    ![The Weather App sample on Android, iOS, and Windows Phone](../cross-platform/media/crossplat-xamarin-formsguide-1.png "CrossPlat Xamarin FormsGuide 1")
 
    Puede encontrar el código fuente completo de este proyecto en el [repositorio xamarin-forms-samples en GitHub](https://github.com/xamarin/xamarin-forms-samples/tree/master/Weather).

@@ -1,5 +1,5 @@
 ---
-title: Escribir una plantilla de texto T4 | Microsoft Docs
+title: Writing a T4 Text Template | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-modeling
@@ -13,29 +13,29 @@ caps.latest.revision: 45
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: e529e0ed4407343a9e233a08293bfc1bbd8458d7
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: bcd5a4996db4a5e374baabe4f52d5fd1dbac2e5e
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72663015"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74301115"
 ---
 # <a name="writing-a-t4-text-template"></a>Escribir una plantilla de texto T4
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Una plantilla de texto contiene el texto que se generará a partir de ella. Por ejemplo, una plantilla que crea una página web contendrá "\<html >..." y todas las demás partes estándar de una página HTML. Inserted en la plantilla son *bloques de control*, que son fragmentos de código de programa. Los bloques de control proporcionan valores variables y permiten que partes del texto sean condiciones y se repitan.
+Una plantilla de texto contiene el texto que se generará a partir de ella. For example, a template that creates a web page will contain "\<html>…" and all the other standard parts of an HTML page. Inserted into the template are *control blocks*, which are fragments of program code. Los bloques de control proporcionan valores variables y permiten que partes del texto sean condiciones y se repitan.
 
  Esta estructura hace que una plantilla sea fácil de desarrollar, porque se puede comenzar con un prototipo del archivo generado e incrementalmente insertar bloques de control que modifican el resultado.
 
  Las plantillas de texto se componen de las siguientes partes:
 
-- **Directivas** : elementos que controlan cómo se procesa la plantilla.
+- **Directives** - elements that control how the template is processed.
 
-- **Bloques de texto** : contenido que se copia directamente en la salida.
+- **Text blocks** - content that is copied directly to the output.
 
-- **Bloque de control** : código del programa que inserta valores variables en el texto y controla partes condicionales o repetidas del texto.
+- **Control blocks** - program code that inserts variable values into the text, and controls conditional or repeated parts of the text.
 
-  Para probar los ejemplos de este tema, cópielos en un archivo de plantilla tal y como se describe en [generación de código en tiempo de diseño mediante el uso de plantillas de texto T4](../modeling/design-time-code-generation-by-using-t4-text-templates.md). Después de editar el archivo de plantilla, guárdelo y, a continuación, inspeccione el archivo Output **. txt** .
+  To try the examples in this topic, copy them into a template file as described in [Design-Time Code Generation by using T4 Text Templates](../modeling/design-time-code-generation-by-using-t4-text-templates.md). After editing the template file, save it, and then inspect the output **.txt** file.
 
 ## <a name="directives"></a>Directivas
  Las directivas de plantilla de texto proporcionan instrucciones generales al motor de creación de plantillas de texto sobre cómo generar el código de transformación y el archivo de salida.
@@ -47,7 +47,7 @@ Una plantilla de texto contiene el texto que se generará a partir de ella. Por 
 <#@ output extension=".txt" #>
 ```
 
- Para obtener más información sobre las directivas, vea [directivas de plantilla de texto T4](../modeling/t4-text-template-directives.md).
+ For more information about directives, see [T4 Text Template Directives](../modeling/t4-text-template-directives.md).
 
 ## <a name="text-blocks"></a>Bloques de texto
  Un bloque de texto inserta texto directamente en el archivo de salida. No existe ningún formato especial para los bloques de texto. Por ejemplo, la siguiente plantilla de texto generará un archivo de texto con la palabra "Hello":
@@ -84,7 +84,7 @@ Hello
 #> Hello!
 ```
 
- En lugar de utilizar instrucciones `Write()` explícitas, puede intercalar texto y código. En el ejemplo siguiente se imprime "Hello!" cuatro veces:
+ En lugar de utilizar instrucciones `Write()` explícitas, puede intercalar texto y código. The following example prints "Hello!" four times:
 
 ```
 <#
@@ -100,7 +100,7 @@ Hello!
  Puede insertar un bloque de texto en cualquier posición del código donde se podría incluir una instrucción `Write();`.
 
 > [!NOTE]
-> Al incrustar un bloque de texto dentro de una instrucción compuesta como un bucle o un condicional, use siempre llaves {...} para que contenga el bloque de texto.
+> When you embed a text block within a compound statement such as a loop or conditional, always use braces {...} to contain the text block.
 
 ### <a name="expression-control-blocks"></a>Bloques de control de expresiones
  Un bloque de control de expresiones da como resulta una expresión y la convierte en una cadena. Esta cadena se inserta en el archivo de salida.
@@ -113,7 +113,7 @@ Hello!
 <#= 2 + 3 #>
 ```
 
- Observe que el símbolo de apertura tiene tres caracteres "< # =".
+ Notice that the opening symbol has three characters "<#=".
 
  La expresión puede incluir cualquier variable que esté en el ámbito. Por ejemplo, este bloque imprime líneas con números:
 
@@ -130,7 +130,7 @@ This is hello number <#= i+1 #>: Hello!
 ```
 
 ### <a name="class-feature-control-blocks"></a>Bloques de control de características de clase
- Un bloque de control de características de clase define propiedades, métodos o cualquier otro código que no se debe incluir en la transformación principal. Los bloques de características de clase se utilizan con frecuencia para las funciones del asistente.  Normalmente, los bloques de características de clase se colocan en archivos independientes para que puedan [incluirse](#Include) en más de una plantilla de texto.
+ Un bloque de control de características de clase define propiedades, métodos o cualquier otro código que no se debe incluir en la transformación principal. Los bloques de características de clase se utilizan con frecuencia para las funciones del asistente.  Typically, class feature blocks are placed in separate files so that they can be [included](#Include) by more than one text template.
 
  Los bloques de control de características de clase se delimitan con los símbolos `<#+ ... #>`.
 
@@ -158,7 +158,7 @@ private int Square(int i)
 
  Las características de clase se deben colocar al final del archivo donde se escriben. Sin embargo, puede utilizar `<#@include#>` para un archivo que incluye una característica de clase, aunque la directiva `include` vaya seguida de bloques estándar y texto.
 
- Para obtener más información sobre los bloques de control, vea [bloques de control de plantillas de texto](../modeling/text-template-control-blocks.md).
+ For more information about control blocks, see [Text Template Control Blocks](../modeling/text-template-control-blocks.md).
 
 ### <a name="class-feature-blocks-can-contain-text-blocks"></a>Los bloques de características de clase pueden contener bloques de texto
  Puede escribir un método que genere texto. Por ejemplo:
@@ -197,11 +197,11 @@ private void WriteSquareLine(int i)
 <#@ assembly name="$(SolutionDir)library\MyAssembly.dll" #>
 ```
 
- Para obtener una lista de macros, vea [macros comunes para comandos y propiedades de compilación](https://msdn.microsoft.com/library/239bd708-2ea9-4687-b264-043f1febf98b).
+ For a list of macros, see [Common Macros for Build Commands and Properties](https://msdn.microsoft.com/library/239bd708-2ea9-4687-b264-043f1febf98b).
 
- La Directiva de ensamblado no tiene ningún efecto en una [plantilla de texto preprocesada](../modeling/run-time-text-generation-with-t4-text-templates.md).
+ The assembly directive has no effect in a [preprocessed text template](../modeling/run-time-text-generation-with-t4-text-templates.md).
 
- Para obtener más información, vea [Directiva de ensamblado T4](../modeling/t4-assembly-directive.md).
+ For more information, see [T4 Assembly Directive](../modeling/t4-assembly-directive.md).
 
 ### <a name="namespaces"></a>Espacios de nombres
  La directiva de importación es igual que la cláusula `using` en C# o la cláusula `imports` en Visual Basic. Permite hacer referencia a tipos del código sin utilizar un nombre completo:
@@ -212,44 +212,44 @@ private void WriteSquareLine(int i)
 
  Puede utilizar tantas directivas `assembly` e `import` como desee. Debe colocarlas antes de los bloques del texto y de control.
 
- Para obtener más información, vea [Directiva de importación T4](../modeling/t4-import-directive.md).
+ For more information, see [T4 Import Directive](../modeling/t4-import-directive.md).
 
-### <a name="Include"></a>Incluir código y texto
+### <a name="Include"></a> Including code and text
  La directiva `include` inserta texto de otro archivo de plantilla. Por ejemplo, esta directiva inserta el contenido de `test.txt`.
 
  `<#@ include file="c:\test.txt" #>`
 
  El contenido incluido se procesa casi como si formase parte de la plantilla de texto que lo incluye. Sin embargo, puede incluir un archivo que contenga un bloque de características de clase `<#+...#>` aunque la directiva de inclusión vaya seguida de texto normal y de bloques de control estándar.
 
- Para obtener más información, consulte [la Directiva de inclusión T4](../modeling/t4-include-directive.md).
+ For more information, see [T4 Include Directive](../modeling/t4-include-directive.md).
 
 ### <a name="utility-methods"></a>Métodos de utilidad
  Existen varios métodos como `Write()` que siempre están disponibles en un bloque de control. Incluyen métodos para ayudarle a aplicar sangría al resultado y para notificar errores.
 
  También puede escribir su propio conjunto de métodos de utilidad.
 
- Para obtener más información, vea [métodos de utilidad de plantilla de texto](../modeling/text-template-utility-methods.md).
+ For more information, see [Text Template Utility Methods](../modeling/text-template-utility-methods.md).
 
 ## <a name="transforming-data-and-models"></a>Transformar datos y modelos
  La aplicación más útil para una plantilla de texto consiste en generar material basado en el contenido de un origen como un modelo, una base de datos o un archivo de datos. La plantilla extrae y cambia el formato de los datos. Una colección de plantillas puede transformar este origen en varios archivos.
 
  Hay varios enfoques para leer el archivo de origen.
 
- **Leer un archivo en la plantilla de texto**. Esta es manera más sencilla de incluir los datos en la plantilla:
+ **Read a file in the text template**. Esta es manera más sencilla de incluir los datos en la plantilla:
 
 ```
 <#@ import namespace="System.IO" #>
 <# string fileContent = File.ReadAllText(@"C:\myData.txt"); ...
 ```
 
- **Cargar un archivo como modelo navegable**. Un método más eficaz consiste en leer los datos como un modelo, en el que el código de la plantilla de texto puede navegar. Por ejemplo, puede cargar un archivo XML y navegar en él con expresiones XPath. También puede utilizar [xsd. exe](http://go.microsoft.com/fwlink/?LinkId=178765) para crear un conjunto de clases con las que puede leer los datos XML.
+ **Load a file as a navigable model**. Un método más eficaz consiste en leer los datos como un modelo, en el que el código de la plantilla de texto puede navegar. Por ejemplo, puede cargar un archivo XML y navegar en él con expresiones XPath. You could also use [xsd.exe](https://go.microsoft.com/fwlink/?LinkId=178765) to create a set of classes with which you can read the XML data.
 
- **Edite el archivo de modelo en un diagrama o formulario.** [!INCLUDE[dsl](../includes/dsl-md.md)] proporciona herramientas que permiten editar un modelo como un diagrama o Windows Forms. Así resulta más fácil analizar el modelo con los usuarios de la aplicación generada. [!INCLUDE[dsl](../includes/dsl-md.md)] también crea un conjunto de clases fuertemente tipadas que reflejan la estructura del modelo. Para obtener más información, vea [generar código a partir de un lenguaje específico de dominio](../modeling/generating-code-from-a-domain-specific-language.md).
+ **Edit the model file in a diagram or form.** [!INCLUDE[dsl](../includes/dsl-md.md)] provides tools that let you edit a model as a diagram or Windows form. Así resulta más fácil analizar el modelo con los usuarios de la aplicación generada. [!INCLUDE[dsl](../includes/dsl-md.md)] también crea un conjunto de clases fuertemente tipadas que reflejan la estructura del modelo. For more information, see [Generating Code from a Domain-Specific Language](../modeling/generating-code-from-a-domain-specific-language.md).
 
- **Usar un modelo UML**. Puede generar código a partir de un modelo UML. Esto ofrece la ventaja de que el modelo se puede editar como un diagrama en una notación familiar. Además, no tiene que diseñar el diagrama. Para obtener más información, vea [generar archivos a partir de un modelo UML](../modeling/generate-files-from-a-uml-model.md).
+ **Use a UML model**. Puede generar código a partir de un modelo UML. Esto ofrece la ventaja de que el modelo se puede editar como un diagrama en una notación familiar. Además, no tiene que diseñar el diagrama. For more information, see [Generate files from a UML model](../modeling/generate-files-from-a-uml-model.md).
 
 ### <a name="relative-file-paths-in-design-time-templates"></a>Rutas de acceso de archivo relativas en plantillas en tiempo de diseño
- En una [plantilla de texto en tiempo de diseño](../modeling/design-time-code-generation-by-using-t4-text-templates.md), si desea hacer referencia a un archivo en una ubicación relativa a la plantilla de texto, use `this.Host.ResolvePath()`. También debe establecer `hostspecific="true"` en la directiva `template`:
+ In a [design-time text template](../modeling/design-time-code-generation-by-using-t4-text-templates.md), if you want to reference a file in a location relative to the text template, use `this.Host.ResolvePath()`. También debe establecer `hostspecific="true"` en la directiva `template`:
 
 ```csharp
 <#@ template hostspecific="true" language="C#" #>
@@ -264,22 +264,22 @@ Content of MyFile.txt is:
 
 ```
 
- Además, puede obtener otros servicios que proporciona el host. Para obtener más información, consulte [acceso a Visual Studio u otros hosts desde una plantilla](https://msdn.microsoft.com/0556f20c-fef4-41a9-9597-53afab4ab9e4).
+ Además, puede obtener otros servicios que proporciona el host. For more information, see [Accessing Visual Studio or other Hosts from a Template](https://msdn.microsoft.com/0556f20c-fef4-41a9-9597-53afab4ab9e4).
 
 ### <a name="design-time-text-templates-run-in-a-separate-appdomain"></a>Plantillas de texto en tiempo de diseño que se ejecutan en un AppDomain independiente
- Debe tener en cuenta que una [plantilla de texto en tiempo de diseño](../modeling/design-time-code-generation-by-using-t4-text-templates.md) se ejecuta en un AppDomain que es independiente de la aplicación principal. En la mayoría de los casos esto no es importante, pero se pueden detectar restricciones en ciertos casos complejos. Por ejemplo, si desea pasar datos dentro o fuera de la plantilla de un servicio independiente, el servicio debe proporcionar una API serializable.
+ You should be aware that a [design-time text template](../modeling/design-time-code-generation-by-using-t4-text-templates.md) runs in an AppDomain that is separate from the main application. En la mayoría de los casos esto no es importante, pero se pueden detectar restricciones en ciertos casos complejos. Por ejemplo, si desea pasar datos dentro o fuera de la plantilla de un servicio independiente, el servicio debe proporcionar una API serializable.
 
- (Esto no es cierto en el caso de una [plantilla de texto en tiempo de ejecución](../modeling/run-time-text-generation-with-t4-text-templates.md), que proporciona código que se compila junto con el resto del código).
+ (This isn’t true of a [run-time text template](../modeling/run-time-text-generation-with-t4-text-templates.md), which provides code that is compiled along with the rest of your code.)
 
 ## <a name="editing-templates"></a>Editar plantillas
- Se pueden descargar editores de plantillas del texto especializados de la Galería en línea del Administrador de extensiones. En el menú **herramientas** , haga clic en **Administrador de extensiones**. Haga clic en **Galería en línea**y, a continuación, use la herramienta de búsqueda.
+ Se pueden descargar editores de plantillas del texto especializados de la Galería en línea del Administrador de extensiones. On the **Tools** menu, click **Extension Manager**. Click **Online Gallery**, and then use the search tool.
 
 ## <a name="related-topics"></a>Temas relacionados
 
 |Tarea|Tema|
 |----------|-----------|
 |Escribir una plantilla.|[Instrucciones para escribir plantillas de texto T4](../modeling/guidelines-for-writing-t4-text-templates.md)|
-|Genere texto utilizando código de programa.|[Estructura de plantilla de texto](../modeling/writing-a-t4-text-template.md)|
+|Genere texto utilizando código de programa.|[Text Template Structure](../modeling/writing-a-t4-text-template.md)|
 |Genere archivos en una solución de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].|[Generación de código en tiempo de diseño mediante plantillas de texto T4](../modeling/design-time-code-generation-by-using-t4-text-templates.md)|
 |Ejecute la generación de texto fuera de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].|[Generar archivos con la utilidad TextTransform](../modeling/generating-files-with-the-texttransform-utility.md)|
 |Transforme los datos al formato de un lenguaje específico de dominio.|[Generar código a partir de lenguajes específicos de dominio](../modeling/generating-code-from-a-domain-specific-language.md)|
